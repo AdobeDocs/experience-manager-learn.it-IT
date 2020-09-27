@@ -10,7 +10,7 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -110,7 +110,7 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 
 **Per eseguire il test sul sistema locale, seguire le istruzioni seguenti:**
 
-* Imposta Tomcat come descritto in questo [articolo.](/help/forms/ic-print-channel-tutorial/partone.md) Tomcat ha il file di guerra che genera i dati di esempio.
+* Imposta Tomcat come descritto in questo [articolo.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat ha il file di guerra che genera i dati di esempio.
 * Configurate il servizio o l&#39;utente di sistema come descritto in questo [articolo](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
 Assicurarsi che l&#39;utente di sistema disponga delle autorizzazioni di lettura per il nodo seguente. Per assegnare le autorizzazioni di accesso all&#39;amministratore [di](https://localhost:4502/useradmin) utente e cercare &quot;dati&quot; per l&#39;utente di sistema e assegnare le autorizzazioni di lettura sul nodo seguente con il tasto di tabulazione sulla scheda delle autorizzazioni
    * /content/dam/formsanddocuments
