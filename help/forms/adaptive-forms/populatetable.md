@@ -10,7 +10,7 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: 4f51f7bf00827210d2631b9335768a9980f6655c
+source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
@@ -26,5 +26,5 @@ La riga1 è configurata in modo che cresca a seconda dei dati restituiti dalla c
 
 ## Distribuisci sul server
 
-[Installare Tomcat come specificato qui](/help/forms/ic-print-channel-tutorial/partone.md)[Distribuire il file](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)SampleRest.war[Installare le risorse ](assets/amortizationschedule.zip) utilizzando AEM gestoreAprire il modulo[](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)Programma di ammortamentoImmettere il valore appropriato e fare clic su calculateProgramma di ammortamento deve essere compilato nel modulo
+[Installare Tomcat come specificato qui](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)[Distribuire il file](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)SampleRest.war[Installare le risorse ](assets/amortizationschedule.zip) utilizzando AEM gestoreAprire il modulo[](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)Programma di ammortamentoImmettere il valore appropriato e fare clic su calculateProgramma di ammortamento deve essere compilato nel modulo
 
