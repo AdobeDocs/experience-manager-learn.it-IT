@@ -10,10 +10,10 @@ doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 3%
+source-wordcount: '224'
+ht-degree: 2%
 
 ---
 
@@ -37,18 +37,4 @@ Al termine di questa esercitazione, avrete appreso quanto segue:
 * Creare frammenti di documento
 * Configurare tabelle e grafici
 * Utilizzare le cartelle esaminate per generare documenti in modalità batch
-
-## Esercitazione
-
-* [Imposta Tomcat](partone.md)
-* [Crea origine dati](parttwo.md)
-* [Crea modello dati modulo](partthree.md)
-* [Creare un layout XDP utilizzando Forms Designer](partfour.md)
-* [Crea frammento di documento](partfive.md)
-* [Crea documento canale di stampa](partsix.md)
-* [Aggiunta di contenuto alle aree di destinazione](partseven.md)
-* [Configurazione grafico a linee](parteight.md)
-* [Aggiunta di una tabella al canale di stampa](partnine.md)
-* [Utilizzo della cartella esaminata per generare documenti di stampa](partten.md)
-* [Apertura dell&#39;interfaccia utente agente all&#39;invio del modulo](parteleven.md)
 
