@@ -11,7 +11,7 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Il bundle di esempio utilizza l&#39;alias &quot;ares&quot; per certificare i doc
    **DevelopingWithServiceUser.core:getformsresources ceresolver=fd-service** come mostrato nella schermata seguente
    ![User-Mapper](assets/user-mapper-service.PNG)
 * [Importa modulo adattivo di esempio](assets/certify-pdf-af.zip)
-* [Importa libreria client e invio personalizzato](assets/certify-document-assets.zip)
+* [Importa e installa invio personalizzato](assets/custom-submit-certify.zip)
 * [Aprire il modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/certifypdf/jcr:content?wcmmode=disabled)
 * Caricare un documento PDF da certificare
    **facoltativo** - Specificare il campo firma da utilizzare per la certificazione del documento
