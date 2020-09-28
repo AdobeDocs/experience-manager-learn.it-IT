@@ -10,7 +10,7 @@ doc-type: tutorial
 activity: understand
 version: 6.5
 translation-type: tm+mt
-source-git-commit: c7ae9a51800bb96de24ad577863989053d53da6b
+source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 0%
@@ -133,7 +133,7 @@ Poiché si utilizza l&#39;oggetto Document specifico per  AEM Forms, è necessar
 
 #### Creazione e implementazione
 
-[Creare il bundle come descritto qui](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)[Verificare che il bundle sia distribuito e in stato attivo](http://localhost:450/system/console/bundles)
+[Creare il bundle come descritto qui](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)[Verificare che il bundle sia distribuito e in stato attivo](http://localhost:4502/system/console/bundles)
 
 Creare un modello di workflow. Trascinate e rilasciate il passaggio del processo nel modello di workflow. Associare il passaggio del processo a &quot;Salva allegati di moduli adattivi nel file system&quot;.
 
