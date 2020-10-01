@@ -1,0 +1,82 @@
+---
+title: Personalizzazione mediante Visual Experience Composer (Compositore esperienza visivo)
+description: Scoprite come creare un'attività Adobe Target  utilizzando Visual Experience Composer (Compositore esperienza visivo).
+feature: targeting
+topics: integrations, authoring, personalization, activity, offers
+audience: all
+doc-type: feature video
+activity: use
+version: cloud-service
+kt: 6352
+thumbnail: 6352-personalization-using-vec.jpg
+translation-type: tm+mt
+source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+workflow-type: tm+mt
+source-wordcount: '438'
+ht-degree: 0%
+
+---
+
+
+# Personalizzazione mediante Visual Experience Composer (Compositore esperienza visivo) {#personalization-vec}
+
+Scoprite come creare un&#39;attività A/B Test Target utilizzando Visual Experience Composer (VEC).
+
+
+## Panoramica scenario
+
+La home page del sito WKND mostra le attività locali o la cosa migliore da fare intorno a una città sotto forma di schede informative. Come esperto di marketing, ti è stato assegnato il compito di modificare la pagina principale, apportando modifiche testuali al teaser della sezione avventura e comprendendo come migliora la conversione.
+
+## Passaggi per creare un test A/B utilizzando Visual Experience Composer (VEC)
+
+1. Accedi a  Adobe Target e passa alla scheda Attività
+2. Fate clic sul pulsante **Crea attività** e scegliete Attività test **** A/B
+
+   ![Attività A/B](assets/ab-target-activity.png)
+
+3. Selezionate l&#39;opzione **Visual Experience Composer (Compositore esperienza visivo)** , fornite l&#39;URL dell&#39;attività, quindi fate clic su **Next (Avanti)**
+
+   ![URL attività](assets/ab-test-url.png)
+
+4. In Visual Experience Composer (Compositore esperienza visivo) sono visualizzate due schede a sinistra dopo la creazione di una nuova attività: *Esperienza A* ed *Esperienza B*. Selezionate un&#39;esperienza dall&#39;elenco. Puoi aggiungere nuove esperienze all&#39;elenco tramite il pulsante **Aggiungi esperienza** .
+
+   ![Esperienza A](assets/experience.png)
+
+5. Selezionate un’immagine o un testo sulla pagina per iniziare a modificarlo o utilizzate l’editor di codice per selezionare e usare l’elemento HTML.
+
+   ![Elemento](assets/select-element.png)
+
+6. Cambia il testo da *Campeggio in Australia* occidentale a *Avventure dell&#39;Australia*. Un elenco delle modifiche aggiunte a un&#39;esperienza verrà visualizzato in Modifiche. Potete fare clic sull’elemento modificato e modificarlo per visualizzarne il selettore CSS e il nuovo contenuto ad esso aggiunto.
+
+   ![Avventure](assets/adventures.png)
+
+7. Rinomina *Esperienza A* in *avventura*
+8. Allo stesso modo, aggiornate il testo sull&#39; *Esperienza B* da *Campeggio in Australia* occidentale per *Esplorare la Selvaggia* Australiana.
+
+   ![Esplora](assets/explore.png)
+
+9. Fate clic su **Avanti** per passare a Targeting e manteniamo un&#39;allocazione manuale del traffico di 50-50 tra le due esperienze.
+
+   ![Impostazione destinazione](assets/targeting.png)
+
+10. Per Obiettivi e impostazioni, scegli l&#39;origine di reporting come  Adobe Target e seleziona la metrica Obiettivo come Conversione con un&#39;azione di visualizzazione della pagina.
+
+   ![Obiettivi](assets/goals.png)
+
+11. Specificate un nome per l&#39;attività e Salva.
+12. Attivate l&#39;attività salvata per rendere attive le modifiche.
+
+   ![Obiettivi](assets/activate.png)
+
+13. Aprite la pagina del sito (URL attività dal passaggio 3) in una nuova scheda e dovreste essere in grado di visualizzare una delle esperienze (Avventura o Esplora) dalla nostra attività di test A/B.
+
+   ![Obiettivi](assets/publish.png)
+
+## Riepilogo
+
+In questo capitolo, un esperto di marketing è stato in grado di creare un&#39;esperienza utilizzando Visual Experience Composer (Compositore esperienza visivo) trascinando, scambiando e modificando il layout e il contenuto di una pagina Web senza modificare il codice per eseguire un test.
+
+## Collegamenti di supporto
+
+* [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
+* [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
