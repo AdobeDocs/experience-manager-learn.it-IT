@@ -10,7 +10,7 @@ version: cloud-service
 kt: 6352
 thumbnail: 6352-personalization-using-vec.jpg
 translation-type: tm+mt
-source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -30,45 +30,45 @@ La home page del sito WKND mostra le attività locali o la cosa migliore da fare
 ## Passaggi per creare un test A/B utilizzando Visual Experience Composer (VEC)
 
 1. Accedi a  Adobe Target e passa alla scheda Attività
-2. Fate clic sul pulsante **Crea attività** e scegliete Attività test **** A/B
+1. Fate clic sul pulsante **Crea attività** e scegliete Attività test **** A/B
 
    ![Attività A/B](assets/ab-target-activity.png)
 
-3. Selezionate l&#39;opzione **Visual Experience Composer (Compositore esperienza visivo)** , fornite l&#39;URL dell&#39;attività, quindi fate clic su **Next (Avanti)**
+1. Selezionate l&#39;opzione **Visual Experience Composer (Compositore esperienza visivo)** , fornite l&#39;URL dell&#39;attività, quindi fate clic su **Next (Avanti)**
 
    ![URL attività](assets/ab-test-url.png)
 
-4. In Visual Experience Composer (Compositore esperienza visivo) sono visualizzate due schede a sinistra dopo la creazione di una nuova attività: *Esperienza A* ed *Esperienza B*. Selezionate un&#39;esperienza dall&#39;elenco. Puoi aggiungere nuove esperienze all&#39;elenco tramite il pulsante **Aggiungi esperienza** .
+1. In Visual Experience Composer (Compositore esperienza visivo) sono visualizzate due schede a sinistra dopo la creazione di una nuova attività: *Esperienza A* ed *Esperienza B*. Selezionate un&#39;esperienza dall&#39;elenco. Puoi aggiungere nuove esperienze all&#39;elenco tramite il pulsante **Aggiungi esperienza** .
 
    ![Esperienza A](assets/experience.png)
 
-5. Selezionate un’immagine o un testo sulla pagina per iniziare a modificarlo o utilizzate l’editor di codice per selezionare e usare l’elemento HTML.
+1. Selezionate un’immagine o un testo sulla pagina per iniziare a modificarlo o utilizzate l’editor di codice per selezionare e usare l’elemento HTML.
 
    ![Elemento](assets/select-element.png)
 
-6. Cambia il testo da *Campeggio in Australia* occidentale a *Avventure dell&#39;Australia*. Un elenco delle modifiche aggiunte a un&#39;esperienza verrà visualizzato in Modifiche. Potete fare clic sull’elemento modificato e modificarlo per visualizzarne il selettore CSS e il nuovo contenuto ad esso aggiunto.
+1. Cambia il testo da *Campeggio in Australia* occidentale a *Avventure dell&#39;Australia*. Un elenco delle modifiche aggiunte a un&#39;esperienza verrà visualizzato in Modifiche. Potete fare clic sull’elemento modificato e modificarlo per visualizzarne il selettore CSS e il nuovo contenuto ad esso aggiunto.
 
    ![Avventure](assets/adventures.png)
 
-7. Rinomina *Esperienza A* in *avventura*
-8. Allo stesso modo, aggiornate il testo sull&#39; *Esperienza B* da *Campeggio in Australia* occidentale per *Esplorare la Selvaggia* Australiana.
+1. Rinomina *Esperienza A* in *avventura*
+1. Allo stesso modo, aggiornate il testo sull&#39; *Esperienza B* da *Campeggio in Australia* occidentale per *Esplorare la Selvaggia* Australiana.
 
    ![Esplora](assets/explore.png)
 
-9. Fate clic su **Avanti** per passare a Targeting e manteniamo un&#39;allocazione manuale del traffico di 50-50 tra le due esperienze.
+1. Fate clic su **Avanti** per passare a Targeting e manteniamo un&#39;allocazione manuale del traffico di 50-50 tra le due esperienze.
 
    ![Impostazione destinazione](assets/targeting.png)
 
-10. Per Obiettivi e impostazioni, scegli l&#39;origine di reporting come  Adobe Target e seleziona la metrica Obiettivo come Conversione con un&#39;azione di visualizzazione della pagina.
+1. Per Obiettivi e impostazioni, scegli l&#39;origine di reporting come  Adobe Target e seleziona la metrica Obiettivo come Conversione con un&#39;azione di visualizzazione della pagina.
 
    ![Obiettivi](assets/goals.png)
 
-11. Specificate un nome per l&#39;attività e Salva.
-12. Attivate l&#39;attività salvata per rendere attive le modifiche.
+1. Specificate un nome per l&#39;attività e Salva.
+1. Attivate l&#39;attività salvata per rendere attive le modifiche.
 
    ![Obiettivi](assets/activate.png)
 
-13. Aprite la pagina del sito (URL attività dal passaggio 3) in una nuova scheda e dovreste essere in grado di visualizzare una delle esperienze (Avventura o Esplora) dalla nostra attività di test A/B.
+1. Aprite la pagina del sito (URL attività dal passaggio 3) in una nuova scheda e dovreste essere in grado di visualizzare una delle esperienze (Avventura o Esplora) dalla nostra attività di test A/B.
 
    ![Obiettivi](assets/publish.png)
 
