@@ -10,7 +10,7 @@ version: cloud-service
 kt: 6353
 thumbnail: 6353-personalization-web-page.jpg
 translation-type: tm+mt
-source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
@@ -29,40 +29,40 @@ Il sito WKND ha riprogettato la propria pagina principale e desidera reindirizza
 ## Passaggi per creare un test A/B utilizzando Visual Experience Composer (VEC)
 
 1. Accedi a  Adobe Target e passa alla scheda Attività
-2. Fate clic sul pulsante **Crea attività** e scegliete Attività test **** A/B
+1. Fate clic sul pulsante **Crea attività** e scegliete Attività test **** A/B
 
    ![Attività A/B](assets/ab-target-activity.png)
 
-3. Selezionate l&#39;opzione **Visual Experience Composer (Compositore esperienza visivo)** , fornite l&#39;URL dell&#39;attività, quindi fate clic su **Next (Avanti)**
+1. Selezionate l&#39;opzione **Visual Experience Composer (Compositore esperienza visivo)** , fornite l&#39;URL dell&#39;attività, quindi fate clic su **Next (Avanti)**
 
    ![URL attività](assets/ab-test-url.png)
 
-4. In Visual Experience Composer (Compositore esperienza visivo) sono visualizzate due schede a sinistra dopo la creazione di una nuova attività: *Esperienza A* ed *Esperienza B*. Selezionate un&#39;esperienza dall&#39;elenco. Puoi aggiungere nuove esperienze all&#39;elenco tramite il pulsante **Aggiungi esperienza** .
+1. In Visual Experience Composer (Compositore esperienza visivo) sono visualizzate due schede a sinistra dopo la creazione di una nuova attività: *Esperienza A* ed *Esperienza B*. Selezionate un&#39;esperienza dall&#39;elenco. Puoi aggiungere nuove esperienze all&#39;elenco tramite il pulsante **Aggiungi esperienza** .
 
    ![Opzioni esperienza](assets/experience-options.png)
 
-5. Visualizzate le opzioni disponibili per l&#39;Esperienza A, quindi selezionate l&#39;opzione **Reindirizza a URL** e fornite un URL per la nuova home page del sito WKND.
+1. Visualizzate le opzioni disponibili per l&#39;Esperienza A, quindi selezionate l&#39;opzione **Reindirizza a URL** e fornite un URL per la nuova home page del sito WKND.
 
    ![URL di reindirizzamento](assets/redirect-url.png)
 
-6. Rinomina *Esperienza A* in *nuova home page* WKND e *Esperienza B* in *WKND Home Page*
+1. Rinomina *Esperienza A* in *nuova home page* WKND e *Esperienza B* in *WKND Home Page*
 
    ![Avventure](assets/new-experiences.png)
 
-7. Fate clic su **Avanti** per passare a Targeting e mantenere un&#39;allocazione manuale del traffico di 50-50 tra le due esperienze.
+1. Fate clic su **Avanti** per passare a Targeting e mantenere un&#39;allocazione manuale del traffico di 50-50 tra le due esperienze.
 
    ![Impostazione destinazione](assets/targeting.png)
 
-8. Per Obiettivi e impostazioni, scegli l&#39;origine di reporting come  Adobe Target e seleziona la metrica Obiettivo come Conversione con un&#39;azione di visualizzazione della pagina.
+1. Per Obiettivi e impostazioni, scegli l&#39;origine di reporting come  Adobe Target e seleziona la metrica Obiettivo come Conversione con un&#39;azione di visualizzazione della pagina.
 
    ![Obiettivi](assets/goals.png)
 
-9. Specificate un nome per l&#39;attività e Salva.
-10. Attivate l&#39;attività salvata per rendere attive le modifiche.
+1. Specificate un nome per l&#39;attività e Salva.
+1. Attivate l&#39;attività salvata per rendere attive le modifiche.
 
    ![Obiettivi](assets/activate.png)
 
-11. Aprite la pagina del sito (URL attività dal passaggio 3) in una nuova scheda e dovreste essere in grado di visualizzare una delle esperienze (pagina iniziale WKND o nuova pagina iniziale WKND) dalla nostra attività di test A/B. `us/en.html` reindirizza a `us/home.html`.
+1. Aprite la pagina del sito (URL attività dal passaggio 3) in una nuova scheda e dovreste essere in grado di visualizzare una delle esperienze (pagina iniziale WKND o nuova pagina iniziale WKND) dalla nostra attività di test A/B. `us/en.html` reindirizza a `us/home.html`.
 
    ![Obiettivi](assets/redirect-test.png)
 
