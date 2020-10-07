@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
 translation-type: tm+mt
-source-git-commit: a71c61304bbc9d54490086b3313c823225fbe2e0
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Asset Compute Development Tool è un cablaggio Web locale che consente agli svil
 
 ## Eseguire lo strumento di sviluppo del calcolo delle risorse
 
-Lo strumento di sviluppo del calcolo delle risorse può essere eseguito dalla radice del progetto dell’applicazione Asset Compute tramite il comando terminale:
+Lo strumento di sviluppo del calcolo delle risorse può essere eseguito dalla radice del progetto Asset Compute tramite il comando terminale:
 
 ```
 $ aio app run
@@ -42,9 +42,9 @@ Questo attiverà lo strumento di sviluppo all&#39;indirizzo __http://localhost:9
 1. __Definizione del profilo di calcolo risorsa:__ Definisce il lavoratore Asset Compute da eseguire, compresi i parametri: incluso il punto finale dell&#39;URL del lavoratore, il nome della rappresentazione risultante ed eventuali parametri
 1. __Esegui:__ Il pulsante Esegui esegue il profilo di calcolo delle risorse come definito nell’editor del profilo di configurazione di Asset Compute
 1. __Interrompi:__ Il pulsante Interrompi annulla un&#39;esecuzione avviata toccando il pulsante Esegui
-1. __Richiesta/Risposta:__ Fornisce la richiesta HTTP e la risposta a/dall’applicazione Asset Compute in esecuzione in  Adobe Runtime. Può essere utile per il debug
-1. __Registri di attivazione:__ Registri che descrivono l’esecuzione dell’applicazione Asset Compute, con eventuali errori. Queste informazioni sono disponibili anche nella `aio app run` versione standard
-1. __Rappresentazioni:__ Visualizza tutte le rappresentazioni generate dall&#39;esecuzione dell&#39;applicazione Asset Compute
+1. __Richiesta/Risposta:__ Fornisce la richiesta HTTP e la risposta a/da Asset Compute Worker in esecuzione in Adobe I/O Runtime. Può essere utile per il debug
+1. __Registri di attivazione:__ Registri che descrivono l&#39;esecuzione del lavoratore di calcolo delle risorse, con eventuali errori. Queste informazioni sono disponibili anche nella `aio app run` versione standard
+1. __Rappresentazioni:__ Visualizza tutte le rappresentazioni generate dall&#39;esecuzione del lavoratore Asset Compute
 1. __parametro di query devToolToken:__ Il token dello strumento di sviluppo di elaborazione risorse richiede la presenza di un parametro di `devToolToken` query valido. Questo token viene generato automaticamente ogni volta che viene visualizzato un nuovo strumento di sviluppo
 
 ### Eseguire un lavoratore personalizzato
@@ -89,9 +89,9 @@ Lo strumento di sviluppo del calcolo delle risorse può inserire uno stato in cu
 
 + __Errore:__ Il menu a discesa del file di origine visualizza elementi non corretti.
 + __Causa:__ Lo stato del browser memorizzato nella cache non è valido
-+ __Risoluzione:__ Nel browser cancellare completamente lo stato dell&#39;applicazione della scheda del browser, la cache del browser, l&#39;archiviazione locale e il lavoratore del servizio.
++ __Risoluzione:__ Nel browser cancellare completamente lo &quot;stato applicazione&quot; della scheda del browser, la cache del browser, l&#39;archiviazione locale e il lavoratore del servizio.
 
-### Parametro query devToolToken mancante{#troubleshooting__devtooltoken}
+### Parametro di query devToolToken mancante o non valido{#troubleshooting__devtooltoken}
 
 + __Errore:__ Notifica &quot;non autorizzata&quot; nello strumento di sviluppo del calcolo delle risorse
 + __Causa:__ `devToolToken` è mancante o non valido
@@ -101,6 +101,6 @@ Lo strumento di sviluppo del calcolo delle risorse può inserire uno stato in cu
 
 + __Errore:__ Non è possibile rimuovere i file sorgente aggiunti dall&#39;interfaccia utente di Strumenti di sviluppo
 + __Causa:__ Questa funzionalità non è stata implementata
-+ __Risoluzione:__ Accedi al provider di archiviazione cloud utilizzando le credenziali definite in `.env`. Individuate il contenitore utilizzato da Strumenti di sviluppo (specificato anche in `.env`), individuate la cartella __sorgente__ ed eliminate eventuali immagini sorgente. È possibile che sia necessario eseguire i passaggi descritti nel menu a discesa File [sorgente non corretti](#troubleshooting__dev-tool-application-cache) se i file sorgente eliminati continuano a essere visualizzati nel menu a discesa in quanto possono essere memorizzati nella cache locale nello stato dell&#39;applicazione Strumenti di sviluppo.
++ __Risoluzione:__ Accedi al provider di archiviazione cloud utilizzando le credenziali definite in `.env`. Individuate il contenitore utilizzato da Strumenti di sviluppo (specificato anche in `.env`), individuate la cartella __sorgente__ ed eliminate eventuali immagini sorgente. È possibile che sia necessario eseguire i passaggi descritti nel menu a discesa File [sorgente non corretti](#troubleshooting__dev-tool-application-cache) se i file sorgente eliminati continuano a essere visualizzati nel menu a discesa, in quanto possono essere memorizzati nella cache localmente nello &quot;stato applicazione&quot; degli strumenti di sviluppo.
 
    ![Archiviazione BLOB di Microsoft Azure](./assets/development-tool/troubleshooting__remove-source-files.png)
