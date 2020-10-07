@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6264
 thumbnail: 40377.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Tutti i servizi  Adobe devono essere accessibili tramite la stessa organizzazion
 
 ## AEM as a Cloud Service{#aem-as-a-cloud-service}
 
-È necessario accedere a un AEM come ambiente di Cloud Service per configurare  profili di elaborazione AEM Assets per richiamare l’applicazione personalizzata Asset Compute.
+È necessario accedere a un AEM come ambiente di Cloud Service per configurare  profili di elaborazione AEM Assets in modo da richiamare il lavoratore personalizzato di elaborazione risorse.
 
 Idealmente è disponibile per l&#39;uso un programma sandbox o un ambiente di sviluppo non sandbox.
 
@@ -47,7 +47,7 @@ Un SDK AEM locale non è sufficiente per completare questa esercitazione, in qua
 
 ##  progetto Adobe{#adobe-project-firefly}
 
-Il framework [Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly.html) viene utilizzato per creare e distribuire applicazioni personalizzate ad Adobe I/O Runtime,  Adobe piattaforma senza server. AEM le applicazioni Asset Compute sono applicazioni Firefly appositamente costruite che si integrano con  AEM Assets tramite Profili di elaborazione e forniscono la possibilità di accedere ed elaborare i file binari di risorse.
+Il framework [Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly.html) Adobe viene utilizzato per creare e distribuire azioni personalizzate ad Adobe I/O Runtime,  Adobe piattaforma senza server. AEM Asset Compute i progetti Firefly appositamente creati che si integrano con  AEM Assets tramite Profili di elaborazione e forniscono la possibilità di accedere ed elaborare i file binari delle risorse.
 
 Per accedere a Project Firefly, registratevi per l&#39;anteprima.
 
@@ -57,9 +57,9 @@ Per accedere a Project Firefly, registratevi per l&#39;anteprima.
 
 ## Archiviazione cloud
 
-L&#39;archiviazione cloud è necessaria per lo sviluppo locale delle applicazioni Asset Compute.
+L&#39;archiviazione cloud è necessaria per lo sviluppo locale di progetti Asset Compute.
 
-Quando le applicazioni Asset Compute vengono distribuite sull’Adobe I/O Runtime per l’uso diretto da AEM come Cloud Service, l’archiviazione cloud non è strettamente necessaria in quanto AEM fornisce l’archiviazione cloud da cui la risorsa viene letta e trasformata.
+Quando i lavoratori di elaborazione risorse vengono distribuiti sull’Adobe I/O Runtime per l’uso diretto da AEM come Cloud Service, l’archiviazione cloud non è strettamente necessaria in quanto AEM fornisce l’archiviazione cloud da cui la risorsa viene letta e trasformata.
 
 ### Archiviazione BLOB di Microsoft Azure{#azure-blob-storage}
 
