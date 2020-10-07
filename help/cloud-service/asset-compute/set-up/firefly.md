@@ -1,6 +1,6 @@
 ---
 title: Impostazione  progetto Adobe Firefly per l'estensibilità di calcolo risorse
-description: Le applicazioni Asset Compute sono specifiche per le applicazioni Project Firefly  Adobe e, come tale, richiedono l'accesso a  Project Firefly in  Adobe Developer Console per configurarle e distribuirle.
+description: I progetti Asset Compute sono progetti  Project Firefly appositamente definiti e, come tali, richiedono l'accesso a  Project Firefly in  Adobe Developer Console per configurarli e distribuirli.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6268
 thumbnail: 40183.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Imposta  progetto Adobe Firefly
 
-Le applicazioni Asset Compute sono specifiche per le applicazioni Project Firefly  Adobe e, come tale, richiedono l&#39;accesso a  Project Firefly in  Adobe Developer Console per configurarle e distribuirle.
+I progetti Asset Compute sono progetti  Project Firefly appositamente definiti e, come tali, richiedono l&#39;accesso a  Project Firefly in  Adobe Developer Console per configurarli e distribuirli.
 
 ## Creazione e configurazione  progetto Adobe Firefly in  Adobe Developer Console{#set-up}
 
@@ -34,8 +34,8 @@ _Click-through della configurazione  progetto Adobe Firefly (nessun audio)_
 
    + __Titolo__ del progetto: `WKND AEM Asset Compute`
    + __Nome__ app: `wkndAemAssetCompute<YourName>`
-      + Il nome __dell&#39;__ app deve essere univoco in tutte le applicazioni Firefly e non può essere modificato in seguito. È consigliabile anteporre il nome della società o dell’organizzazione e postfissaggio con suffisso significativo, ad esempio: `wkndAemAssetCompute`.
-      + Per l&#39;autoabilitazione è spesso consigliabile posticipare il nome al nome __dell&#39;__ app, ad esempio `wkndAemAssetComputeJaneDoe` per evitare conflitti con altre applicazioni di Project Firefly.
+      + Il nome __dell&#39;__ app deve essere univoco per tutti i progetti Firefly e non può essere modificato in seguito. È consigliabile anteporre il nome della società o dell’organizzazione e postfissaggio con suffisso significativo, ad esempio: `wkndAemAssetCompute`.
+      + Per l&#39;autoabilitazione è spesso consigliabile posticipare il nome al nome __dell&#39;__ app, ad esempio `wkndAemAssetComputeJaneDoe` per evitare conflitti con altri progetti di Project Firefly.
    + In __Workspaces__ aggiungere un nuovo ambiente denominato `Development`
    + In __Adobe I/O Runtime__ accertati che sia selezionata l&#39;opzione __Includi runtime con ogni area di lavoro__
    + Toccate __Salva__ per salvare il progetto
@@ -58,7 +58,7 @@ Quando si configura l&#39;integrazione [API](#set-up) Asset Compute, viene gener
 
 ## Verifica credenziali account di servizio (JWT)
 
-Le credenziali di questo progetto di I/O  Adobe vengono utilizzate dallo strumento [](../develop/development-tool.md) di sviluppo di calcolo risorse locale per interagire con Adobe I/O Runtime e dovranno essere incorporate nel progetto dell&#39;applicazione Asset Compute. Acquisisci familiarità con le credenziali di Service Account (JWT).
+Le credenziali di questo progetto di I/O  Adobe vengono utilizzate dallo strumento [](../develop/development-tool.md) di sviluppo di calcolo risorse locale per interagire con Adobe I/O Runtime e dovranno essere incorporate nel progetto Asset Compute. Acquisisci familiarità con le credenziali di Service Account (JWT).
 
 ![credenziali account del servizio per sviluppatori di Adobi](./assets/firefly/service-account.png)
 
