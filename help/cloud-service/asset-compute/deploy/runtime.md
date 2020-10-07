@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6286
 thumbnail: KT-6286.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Poiché il progetto è stato generato utilizzando `aio app init` l’ `Developme
 
 Per distribuire nell&#39;area di lavoro, definire nel `.env` file dei progetti:
 
-1. Aprite la riga di comando nella directory principale del progetto dell’applicazione Asset Compute
+1. Aprite la riga di comando nella directory principale del progetto Asset Compute
 1. Esegui il comando `aio app deploy`
 1. Eseguite il comando `aio app get-url` per ottenere l&#39;URL del lavoratore da utilizzare nell&#39;AEM come profilo di elaborazione Cloud Service per fare riferimento a questo lavoratore personalizzato di elaborazione risorse. Se il progetto contiene più lavoratori, vengono elencati gli URL discreti per ciascun lavoratore.
 
@@ -54,7 +54,7 @@ L&#39;impostazione di variabili di ambiente vere sostituisce i valori per le var
 L&#39;approccio generale, generalmente automatizzato da un sistema CI/CD, per l&#39;implementazione in ambienti Stage e Production è:
 
 1. Verificare che il modulo npm [I/O CLI di Adobe e il plug-in](../set-up/development-environment.md#aio) Asset Compute siano installati
-1. Verificare l’applicazione Asset Compute per distribuire da Git
+1. Estrarre il progetto Asset Compute da Git
 1. Impostare le variabili di ambiente con i valori corrispondenti all&#39;area di lavoro di destinazione (Fase o Produzione)
    + Le due variabili richieste sono `AIO_runtime_namespace` e `AIO_runtime_auth` vengono ottenute per area di lavoro in  Adobe I/O Developer Console tramite la funzione __Scarica tutto__ di Workspace.
 
@@ -74,7 +74,7 @@ Se i lavoratori di elaborazione risorse richiedono altre variabili, ad esempio l
 1. Gli URL del lavoratore a cui fa riferimento il AEM come profilo di elaborazione Cloud Service sono disponibili anche tramite:
    + `aio app get-url`.
 
-Se la versione dell’applicazione Asset Compute modifica anche gli URL del lavoratore in modo da riflettere la nuova versione, e l’URL dovrà essere aggiornato nei profili di elaborazione.
+Se la versione del progetto Asset Compute modifica anche gli URL del lavoratore in modo da riflettere la nuova versione, e l&#39;URL dovrà essere aggiornato nei profili di elaborazione.
 
 ## Provisioning delle API Workspace{#workspace-api-provisioning}
 
