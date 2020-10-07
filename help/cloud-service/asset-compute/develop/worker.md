@@ -1,6 +1,6 @@
 ---
 title: Sviluppare un lavoratore di elaborazione risorse
-description: I lavoratori di elaborazione risorse sono il nucleo di un'applicazione Asset Compute per la compilazione e forniscono funzionalità personalizzate che eseguono, o orchestrano, il lavoro eseguito su una risorsa per creare una nuova rappresentazione.
+description: I lavoratori di calcolo delle risorse sono il nucleo di un progetto di calcolo delle risorse e forniscono funzionalità personalizzate che eseguono, o orchestrano, il lavoro eseguito su una risorsa per creare una nuova rappresentazione.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1508'
 ht-degree: 0%
 
 ---
@@ -20,26 +20,28 @@ ht-degree: 0%
 
 # Sviluppare un lavoratore di elaborazione risorse
 
-I lavoratori di elaborazione risorse sono il nucleo di un&#39;applicazione Asset Compute per la compilazione e forniscono funzionalità personalizzate che eseguono, o orchestrano, il lavoro eseguito su una risorsa per creare una nuova rappresentazione.
+I lavoratori di calcolo delle risorse sono il nucleo di un progetto di elaborazione delle risorse e forniscono funzionalità personalizzate che eseguono, o orchestrano, il lavoro eseguito su una risorsa per creare una nuova rappresentazione.
 
 Il progetto Asset Compute genera automaticamente un semplice lavoratore che copia il binario originale della risorsa in una rappresentazione con nome, senza alcuna trasformazione. In questa esercitazione modificheremo questo lavoratore per creare una rappresentazione più interessante, per illustrare il potere dei lavoratori di calcolo delle risorse.
 
-Verrà creato un lavoratore di elaborazione risorse che genera una nuova rappresentazione immagine orizzontale, che copre lo spazio vuoto a sinistra e a destra della rappresentazione della risorsa con una versione sfocata della risorsa. Larghezza, altezza e sfocatura della rappresentazione finale verranno parametrizzati.
+Verrà creato un lavoratore Asset Compute che genera una nuova rappresentazione immagine orizzontale, che copre lo spazio vuoto a sinistra e a destra della rappresentazione della risorsa con una versione sfocata della risorsa. Larghezza, altezza e sfocatura della rappresentazione finale verranno parametrizzati.
 
-## Informazioni sull&#39;esecuzione di un lavoratore di elaborazione risorse
+## Flusso logico di una chiamata al lavoro di calcolo risorse
 
-I lavoratori di calcolo delle risorse implementano il contratto API del lavoratore di Asset Compute SDK, che è semplicemente:
+I lavoratori di calcolo delle risorse implementano il contratto API del lavoratore SDK di calcolo delle risorse, nella `renditionCallback(...)` funzione, concettualmente:
 
 + __Ingresso:__ Parametri e binari della risorsa AEM
 + __Output:__ Una o più rappresentazioni da aggiungere alla risorsa AEM
 
-![Flusso di esecuzione del lavoratore del calcolo risorse](./assets/worker/execution-flow.png)
+![Flusso logico lavoratore di calcolo risorsa](./assets/worker/logical-flow.png)
 
 1. Quando un lavoratore di elaborazione risorse viene richiamato dal servizio AEM Author, viene confrontato con una risorsa AEM tramite un profilo di elaborazione. Il binario originale della risorsa __(1a)__ viene passato al lavoratore tramite il `source` parametro della funzione di callback di rappresentazione, e __(1b)__ eventuali parametri definiti nel profilo di elaborazione tramite l&#39;insieme di `rendition.instructions` parametri.
-1. Il codice Asset Compute Worker trasforma il binario di origine fornito in __(1a)__ in base a eventuali parametri forniti da __(1b)__ per generare una rappresentazione del binario di origine.
+1. Il livello Asset Compute SDK accetta la richiesta dal profilo di elaborazione e orchestra l&#39;esecuzione della `renditionCallback(...)` funzione personalizzata Asset Compute Worker, trasformando il binario di origine fornito in __(1a)__ in base ai parametri forniti da __(1b)__ per generare una rappresentazione del binario di origine.
    + In questa esercitazione la rappresentazione viene creata &quot;in processo&quot;, ovvero il lavoratore compone la rappresentazione, ma il binario di origine può essere inviato ad altre API del servizio Web per la generazione della rappresentazione.
 1. Il lavoratore di elaborazione risorse salva la rappresentazione binaria della rappresentazione in `rendition.path` modo da renderla disponibile per il salvataggio nel servizio AEM Author.
-1. Al termine, i dati binari scritti in `rendition.path` vengono esposti tramite AEM Author Service come rappresentazione per la risorsa AEM alla quale è stato richiamato Asset Compute Worker.
+1. Al termine, i dati binari scritti in `rendition.path` vengono trasportati tramite l’SDK di calcolo risorse ed esposti tramite AEM Author Service come rappresentazione disponibile nell’interfaccia AEM.
+
+Il diagramma riportato sopra descrive i problemi affrontati dagli sviluppatori di Asset Compute e il flusso logico verso l&#39;invocazione di Asset Compute Worker. Per curiosi, sono disponibili i dettagli [interni dell’esecuzione](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) di Asset Compute, ma devono essere utilizzati solo i contratti API SDK per calcolo risorse pubbliche.
 
 ## Anatomia di un lavoratore
 
@@ -106,7 +108,7 @@ Questo è il file JavaScript di lavoro che verrà modificato in questa esercitaz
 
 ## Installazione e importazione di moduli npm
 
-Come applicazioni Node.js, le applicazioni Asset Compute beneficiano del solido ecosistema [del modulo](https://npmjs.com)npm. Per utilizzare i moduli npm, dobbiamo prima installarli nel nostro progetto applicativo Asset Compute.
+Essendo basati su Node.js, i progetti Asset Compute beneficiano del solido ecosistema [del modulo](https://npmjs.com)npm. Per utilizzare i moduli npm, dobbiamo prima installarli nel nostro progetto Asset Compute.
 
 In questo lavoro, utilizziamo lo [jimp](https://www.npmjs.com/package/jimp) per creare e manipolare l&#39;immagine di rappresentazione direttamente nel codice Node.js.
 
@@ -380,6 +382,12 @@ Queste sono lette nel lavoratore `index.js` tramite:
    ![Rappresentazioni PNG con parametri](./assets/worker/parameterized-rendition.png)
 
 1. Caricate altre immagini nel menu a discesa del file __di__ origine e provate a eseguire il processo di lavoro con parametri diversi.
+
+## Worker index.js su Github
+
+La finale `index.js` è disponibile su Github al seguente indirizzo:
+
++ [aem-guides-wknd-asset-compute/actions/worker/index.js](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/actions/worker/index.js)
 
 ## Risoluzione dei problemi
 
