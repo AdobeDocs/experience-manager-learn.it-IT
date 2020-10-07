@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
 translation-type: tm+mt
-source-git-commit: 06632b90e5cdaf80b9343e5a69ab9c735d4a70f1
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -109,6 +109,12 @@ Questo test case verifica in modo che il lavoratore generi l&#39;errore appropri
    + Termina tutte le istanze dello strumento di sviluppo in esecuzione
 
 ![Test - Contrasto errore](./assets/test/error-contrast/result.png)
+
+## Casi di test su Github
+
+I casi finali di prova sono disponibili su Github al seguente indirizzo:
+
++ [aem-guide-wknd-asset-compute/test/asset-computing/Worker](https://github.com/adobe/aem-guides-wknd-asset-compute/tree/master/test/asset-compute/worker)
 
 ## Risoluzione dei problemi
 
