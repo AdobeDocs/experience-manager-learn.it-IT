@@ -11,7 +11,7 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
@@ -49,8 +49,10 @@ Potete creare un pacchetto OSGi personalizzato e utilizzare l&#39;SDK client AEM
 * [Usa API Document Service](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
 
 Oppure puoi usare il bundle di esempio incluso in questa esercitazione.
+
 >[!NOTE]
-Il bundle di esempio utilizza l&#39;alias &quot;ares&quot; per certificare i documenti. Quindi, assicurarsi che il vostro alias sia chiamato &quot;ares&quot; quando si utilizza questo bundle
+>
+>Il bundle di esempio utilizza l&#39;alias &quot;ares&quot; per certificare i documenti. Quindi, assicurarsi che il vostro alias sia chiamato &quot;ares&quot; quando si utilizza questo bundle
 
 ## Verifica del campione sul sistema locale
 
