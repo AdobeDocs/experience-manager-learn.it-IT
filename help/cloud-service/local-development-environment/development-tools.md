@@ -10,7 +10,7 @@ audience: developer
 kt: 4267
 thumbnail: 25907.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: cb5f3c323c433c9321ba26ac1194be0cd225a405
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 1%
@@ -88,8 +88,10 @@ Se si utilizza l’opzione per l’uso in lingua ebraica, seguire le istruzioni 
 ![Node.js e npm](./assets/development-tools/nodejs-and-npm.png)
 
 >[!TIP]
-> [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)-based AEM Projects installare una versione isolata di Node.js al momento della creazione. È opportuno mantenere la versione del sistema di sviluppo locale sincronizzata (o vicina) con le versioni Node.js e npm specificate nel reattore pom.xml del progetto AEM Maven.
-Consultate questo esempio [AEM Project Reactor pom.xml](https://github.com/adobe/aem-guides-wknd/blob/9ac94f3f40c978a53ec88fae79fbc17dd2db72f2/pom.xml#L117-L118) per individuare le versioni Node.js e npm build.
+>
+>[AEM Project Archetype](https://github.com/adobe/aem-project-archetype)-based AEM Projects installare una versione isolata di Node.js al momento della creazione. È opportuno mantenere la versione del sistema di sviluppo locale sincronizzata (o vicina) con le versioni Node.js e npm specificate nel reattore pom.xml del progetto AEM Maven.
+>
+>Consultate questo esempio [AEM Project Reactor pom.xml](https://github.com/adobe/aem-guides-wknd/blob/9ac94f3f40c978a53ec88fae79fbc17dd2db72f2/pom.xml#L117-L118) per individuare le versioni Node.js e npm build.
 
 ## Installazione di Maven
 
