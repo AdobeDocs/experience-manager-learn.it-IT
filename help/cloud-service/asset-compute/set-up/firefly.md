@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6268
 thumbnail: 40183.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
@@ -25,6 +25,7 @@ I progetti Asset Compute sono progetti  Project Firefly appositamente definiti e
 ## Creazione e configurazione  progetto Adobe Firefly in  Adobe Developer Console{#set-up}
 
 >[!VIDEO](https://video.tv.adobe.com/v/40183/?quality=12&learn=on)
+
 _Click-through della configurazione  progetto Adobe Firefly (nessun audio)_
 
 1. Accedete a [console](https://console.adobe.io) Sviluppatore di Adobe utilizzando l&#39;Adobe ID  associato agli [account e ai servizi](./accounts-and-services.md)predisposti. Accertatevi di essere un amministratore __di__ sistema o nel ruolo ____ sviluppatore per l&#39;organizzazione  Adobe corretta.
