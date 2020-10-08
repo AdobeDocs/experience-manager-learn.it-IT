@@ -9,7 +9,7 @@ doc-type: setup
 activity: use
 version: 6.3, 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 0%
@@ -22,6 +22,7 @@ ht-degree: 0%
 I frammenti esperienza consentono agli esperti di marketing di pubblicare esperienze create in AEM alle piattaforme di social media. Il video seguente illustra la configurazione e la configurazione necessarie per pubblicare i frammenti esperienza su Facebook e Pinterest.
 
 >[!VIDEO](https://video.tv.adobe.com/v/20592/?quality=9&learn=on)
+
 *[Frammenti]esperienza - Configurazione e configurazione per i post social su Facebook e Pinterest*
 
 ## Elenco di controllo per la configurazione di frammenti esperienza da pubblicare su Facebook e Pinterest
