@@ -12,7 +12,7 @@ activity: implement
 version: 6.4,6.5
 discoiquuid: 1a7cf095-c5d8-4d92-a018-883cda76fe70
 translation-type: tm+mt
-source-git-commit: 4f51f7bf00827210d2631b9335768a9980f6655c
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 1%
@@ -68,5 +68,7 @@ Accedete a  AEM Forms.
 * [Open getad.html](http://localhost:4502/content/getad.html)
 
 * Il codice associato a questo URL ottiene il numero di account dell&#39;utente che ha effettuato l&#39;accesso. Questo numero di conto viene quindi passato come attributo request al file FDM. FDM recupererà quindi i dati associati a questo numero di conto e compilerà il documento del canale Web.
+
 >[!NOTE]
-Consulta il file **/apps/AEMForms/fetchad/GET.jsp** in crx. Assicurarsi che la variabile String webChannelDocument indichi un percorso di documento di comunicazione valido.
+>
+>Consulta il file **/apps/AEMForms/fetchad/GET.jsp** in crx. Assicurarsi che la variabile String webChannelDocument indichi un percorso di documento di comunicazione valido.
