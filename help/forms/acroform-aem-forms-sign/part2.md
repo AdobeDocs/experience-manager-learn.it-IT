@@ -8,7 +8,7 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4
 translation-type: tm+mt
-source-git-commit: 1ba56ad44df4dc327cf37d39ac72539b5c7af4a2
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 2%
@@ -32,4 +32,5 @@ Il passaggio successivo consiste nel creare uno schema dall&#39;Acroform creato 
 Affinché questa demo funzioni sul sistema, dovrete creare una cartella denominata `acroforms` in  AEM Assets. Caricate l’Acroform in questa `acroforms` cartella.
 
 >[!NOTE]
-Il codice di esempio cerca l’acroform in questa cartella. L&#39;acroform è necessario per unire i dati inviati dal modulo adattivo.
+>
+>Il codice di esempio cerca l’acroform in questa cartella. L&#39;acroform è necessario per unire i dati inviati dal modulo adattivo.
