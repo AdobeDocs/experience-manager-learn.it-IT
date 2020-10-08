@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
@@ -45,6 +45,7 @@ Le seguenti istruzioni di registro sono disponibili per la revisione in modo div
 Il modulo npm [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) supporta l&#39;associazione di un debugger ai lavoratori di calcolo delle risorse, inclusa la possibilità di impostare punti di interruzione nel codice VS e di scorrere il codice.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40383/?quality=12&learn=on)
+
 _Click-through del debug di un lavoratore di elaborazione risorse con wskdebug (nessun audio)_
 
 1. Verificare che i moduli [wskdebug](../set-up/development-environment.md#wskdebug) e [ngrok](../set-up/development-environment.md#ngork) npm siano installati
