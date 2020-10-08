@@ -11,7 +11,7 @@ audience: developer
 kt: 4679
 thumbnail: 30603.jpg
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '1508'
 ht-degree: 2%
@@ -74,6 +74,7 @@ La versione di Dispatcher Tools è diversa da quella dell’SDK AEM. Assicurati 
 Tenere presente che tutti i comandi riportati di seguito presuppongono che la directory di lavoro corrente contenga il contenuto Espansione di Strumenti Dispatcher.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30601/?quality=12&learn=on)
+
 *Questo video utilizza macOS per scopi illustrativi. I comandi Windows/Linux equivalenti possono essere utilizzati per ottenere risultati simili*
 
 ## Informazioni sui file di configurazione del dispatcher
@@ -86,6 +87,7 @@ Dispatcher Tools fornisce un set di file di configurazione del server Web Apache
 Questi file sono destinati a essere copiati in un progetto  Experience Manager Maven nella `dispatcher/src` cartella, se non esistono già nel progetto  Experience Manager Maven.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30602/?quality=12&learn=on)
+
 *Questo video utilizza macOS per scopi illustrativi. I comandi Windows/Linux equivalenti possono essere utilizzati per ottenere risultati simili*
 
 Una descrizione completa dei file di configurazione è disponibile negli strumenti Dispatcher come `dispatcher-sdk-x.x.x/docs/Config.html`.
@@ -142,6 +144,7 @@ Per eseguire Dispatcher Tools rispetto alla configurazione Dispatcher di un prog
    ```
 
 >[!VIDEO](https://video.tv.adobe.com/v/30603/?quality=12&learn=on)
+
 *Questo video utilizza macOS per scopi illustrativi. I comandi Windows/Linux equivalenti possono essere utilizzati per ottenere risultati simili*
 
 ## Dispatcher Tools logs
@@ -177,6 +180,7 @@ I parametri utili per il debug del dispatcher includono:
    ```
 
 >[!VIDEO](https://video.tv.adobe.com/v/30604/?quality=12&learn=on)
+
 *Questo video utilizza macOS per scopi illustrativi. I comandi Windows/Linux equivalenti possono essere utilizzati per ottenere risultati simili*
 
 ## Quando aggiornare gli strumenti del dispatcher{#dispatcher-tools-version}
