@@ -8,7 +8,7 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4
 translation-type: tm+mt
-source-git-commit: 1e615d1c51fa0c4c0db335607c29a8c284874c8d
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 0%
@@ -38,8 +38,12 @@ I moduli Acrobat sono moduli creati utilizzando  Acrobat. È possibile creare un
 [documento tag di testo Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html)
 
 >[!NOTE]
-Verificate che il nome del file acroform non contenga spazi. Il codice di esempio corrente non gestisce gli spazi.
-I nomi dei campi modulo possono contenere solo i seguenti
-* spazio singolo
-* sottolineatura singola
-* caratteri alfanumerici
+>
+>Verificate che il nome del file acroform non contenga spazi. Il codice di esempio corrente non gestisce gli spazi.
+>
+>I nomi dei campi modulo possono contenere solo i seguenti elementi:
+>
+>* spazio singolo
+>* sottolineatura singola
+>* caratteri alfanumerici
+
