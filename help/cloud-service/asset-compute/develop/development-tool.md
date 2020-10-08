@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -50,6 +50,7 @@ Questo attiverà lo strumento di sviluppo all&#39;indirizzo __http://localhost:9
 ### Eseguire un lavoratore personalizzato
 
 >[!VIDEO](https://video.tv.adobe.com/v/40241?quality=12&learn=on)
+
 _Click-through dell’esecuzione di un lavoro di elaborazione risorse in Strumento di sviluppo (nessun audio)_
 
 1. Assicurarsi che Asset Compute Development Tool sia avviato dalla directory principale del progetto utilizzando il `aio app run` comando.
