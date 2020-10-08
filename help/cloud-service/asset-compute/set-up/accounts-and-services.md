@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6264
 thumbnail: 40377.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 1%
@@ -68,6 +68,7 @@ Se non si dispone già dell&#39;accesso a Microsoft Azure Blob Storage, registra
 Questa esercitazione utilizzerà Azure Blob Storage, tuttavia [Amazon S3](#amazon-s3) può essere utilizzato e solo lievi varianti dell&#39;esercitazione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40377/?quality=12&learn=on)
+
 _Click-through del provisioning di Azure Blob Storage (nessun audio)_
 
 
