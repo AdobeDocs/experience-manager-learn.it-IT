@@ -1,19 +1,19 @@
 ---
-user-guide-title: ' video e Tutorials AEM Assets'
-user-guide-description: A collection of videos and tutorials for Adobe Experience Manager Assets.
-breadcrumb-title: AEM Assets Tutorials
+user-guide-title: Video e tutorial di AEM Assets
+user-guide-description: Raccolta di video e tutorial per Adobe Experience Manager Assets.
+breadcrumb-title: Tutorial di AEM Assets
 sub-product: assets
 team: TM
 translation-type: tm+mt
 source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 25%
+source-wordcount: '253'
+ht-degree: 33%
 
 ---
 
 
-#  video e Tutorials AEM Assets {#assets}
+# Video e tutorial di AEM Assets {#assets}
 
 + [Panoramica](overview.md)
 
