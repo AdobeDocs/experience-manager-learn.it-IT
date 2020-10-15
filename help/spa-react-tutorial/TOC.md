@@ -5,24 +5,24 @@ version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
-user-guide-title: Guida introduttiva all'editor SPA AEM e alle reazioni
-user-guide-description: Create your first React Single Page Application (SPA) that is editable in AEM with the WKND SPA.
-breadcrumb-title: AEM SPA Editor and React Tutorial
+user-guide-title: Guida introduttiva ad AEM SPA Editor e React
+user-guide-description: Crea la prima Single Page Application (SPA) per React modificabile in AEM con l’SPA WKND.
+breadcrumb-title: Tutorial di AEM SPA Editor e React
 translation-type: tm+mt
 source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
 workflow-type: tm+mt
-source-wordcount: '36'
-ht-degree: 2%
+source-wordcount: '59'
+ht-degree: 71%
 
 ---
 
 
-# Guida introduttiva all&#39;editor SPA AEM e alle reazioni {#spa-react-tutorial}
+# Guida introduttiva ad AEM SPA Editor e React {#spa-react-tutorial}
 
 + [Panoramica](overview.md)
-+ [Progetto SPA Editor](create-project.md)
-+ [Integrare l&#39;SPA](integrate-spa.md)
-+ [Mappa componenti SPA](map-components.md)
++ [Progetto Editor SPA](create-project.md)
++ [Integrare il SPA](integrate-spa.md)
++ [Mappa SPA componenti](map-components.md)
 + [Navigazione e routing](navigation-routing.md)
 + [Componente personalizzato](custom-component.md)
 + [Estendi, componente](extend-component.md)
