@@ -10,9 +10,9 @@ version: cloud-service
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
 translation-type: tm+mt
-source-git-commit: 97fe98c8c62f5472f7771bbc803b2a47dc97044d
+source-git-commit: 096cdccdf1675480aa0a35d46ce7b62a3906dad1
 workflow-type: tm+mt
-source-wordcount: '2402'
+source-wordcount: '2414'
 ht-degree: 2%
 
 ---
@@ -271,6 +271,10 @@ Quindi aggiungi l’estensione Analytics alla proprietà Launch. Dobbiamo inviar
    >
    >È consigliabile utilizzare l&#39;opzione *Gestisci la libreria per* me come impostazione Gestione libreria, in quanto consente di mantenere la `AppMeasurement.js` libreria aggiornata molto più facilmente.
 
+1. Selezionare la casella per abilitare **Usa  Activity Map**.
+
+   ![Abilita  Activity Map](assets/track-clicked-component/analytic-track-click.png)
+
 1. In **Generale** > Server **di** tracciamento, immetti il server di tracciamento, ad esempio `tmd.sc.omtrdc.net`. Inserire il server di tracciamento SSL se il sito supporta `https://`
 
    ![Immissione dei server di tracciamento](assets/collect-data-analytics/analytics-config-trackingServer.png)
@@ -304,7 +308,7 @@ Attualmente la regola **Pagina caricata** genera semplicemente un&#39;istruzione
    ![Rimuovi azione codice personalizzata](assets/collect-data-analytics/remove-console-statements.png)
 
 1. In Azioni, fare clic su **Aggiungi** per aggiungere una nuova azione.
-1. Impostate il tipo di **estensione** su **Adobe Analytics** e impostate Tipo **azione** su **Imposta variabili**
+1. Impostate il tipo di **estensione** su **Adobe Analytics** e impostate Tipo **** azione su **Imposta variabili**
 
    ![Imposta estensione azione su variabili di set di Analytics](assets/collect-data-analytics/analytics-set-variables-action.png)
 
