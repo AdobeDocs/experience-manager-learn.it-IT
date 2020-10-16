@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6296
 thumbnail: KT-6296.jpg
 translation-type: tm+mt
-source-git-commit: 97fe98c8c62f5472f7771bbc803b2a47dc97044d
+source-git-commit: 096cdccdf1675480aa0a35d46ce7b62a3906dad1
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1831'
 ht-degree: 1%
 
 ---
@@ -255,9 +255,13 @@ Attualmente la regola **CTA Click** genera semplicemente un&#39;istruzione conso
 
    * `evar8` - `%Component ID%`
    * `prop8` - `%Component ID%`
-   * `event8` - `CTA Clicked`
+   * `event8`
 
    ![Impostare  Prop e gli eventi](assets/track-clicked-component/set-evar-prop-event.png)
+
+   >[!NOTE]
+   >
+   > Viene `%Component ID%` utilizzato in quanto garantisce un identificatore univoco per il CTA su cui è stato fatto clic. Un potenziale lato negativo dell&#39;utilizzo `%Component ID%` è rappresentato dal fatto che il report di Analytics conterrà valori come `button-2e6d32893a`. Utilizzando `%Component Title%` darebbe un nome più umano, ma il valore potrebbe non essere univoco.
 
 1. Quindi, aggiungi un’altra azione a destra della **Adobe Analytics - Imposta variabili** toccando l’icona **più** :
 
@@ -265,9 +269,11 @@ Attualmente la regola **CTA Click** genera semplicemente un&#39;istruzione conso
 
 1. Impostate il tipo di **estensione** su **Adobe Analytics** e impostate Tipo **** azione su **Invia beacon**.
 1. In **Tracciamento** impostare il pulsante di scelta su **`s.tl()`**.
-1. Per Tipo **di** collegamento scegliete Collegamento **** personalizzato e per Nome **** collegamento impostate il valore su Titolo **** componente elemento dati:
+1. Per Tipo **di** collegamento scegliete Collegamento **** personalizzato e per Nome **** collegamento impostate il valore su: **`%Component Title%: CTA Clicked`**:
 
    ![Configurazione per Send Link beacon](assets/track-clicked-component/analytics-send-beacon-link-track.png)
+
+   In questo modo si combinano la variabile dinamica dell’elemento dati Titolo **** componente e la stringa statica **CTA Selezionata**.
 
 1. Salva le modifiche. La regola **CTA Click** ora deve avere la seguente configurazione:
 
