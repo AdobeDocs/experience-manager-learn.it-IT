@@ -4,9 +4,9 @@ user-guide-description: Raccolta di video e tutorial per Adobe Experience Manage
 breadcrumb-title: Tutorial di AEM Sites
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+source-git-commit: 55beee99b91c44f96cd37d161bb3b4ffe38d2687
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '476'
 ht-degree: 16%
 
 ---
@@ -101,6 +101,7 @@ ht-degree: 16%
    + Analisi {#analytics}
       + [Raccolta di dati di pagina con  Adobe Analytics](integrations/analytics/collect-data-analytics.md)
       + [Tenere traccia del componente su cui è stato fatto clic con  Adobe Analytics](integrations/analytics/track-clicked-component.md)
+      + [Analizzare i dati con  Analysis Workspace](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
       + [Panoramica](integrations/adobe-target/overview.md)
       + [Aggiungi estensione Target alla proprietà Launch](integrations/adobe-target/add-target-launch-extension.md)
