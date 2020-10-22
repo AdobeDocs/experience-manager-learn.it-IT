@@ -8,9 +8,9 @@ topics: development, authoring, configuring, renditions, images
 audience: all
 activity: use
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: 317fb625e7af57b7ad0079014c341eab9adda376
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '694'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ La funzione di imaging avanzato funziona con immagini distribuite tramite HTTP, 
 
 La funzione Smart Imaging è inclusa nella licenza esistente di Dynamic Media Classic. Non sono previsti costi aggiuntivi per questa funzione. Per sfruttarlo, è necessario soddisfare due requisiti: dispongono di un CDN  Adobe e di un dominio dedicato. A questo punto, è necessario attivarlo per il proprio account perché non è attivato automaticamente.
 
-L’attivazione di Smart Imaging inizia con l’invio di una richiesta di assistenza tecnica tramite e-mail a [s7support@adobe.com](mailto:s7support@adobe.com). Vi aiuteranno a configurare un dominio personalizzato che verrà associato a Smart Imaging. Modificherete un parametro relativo alla memorizzazione nella cache (Time To Live, o TTL) e il supporto cancellerà la cache. È inoltre possibile eseguire un passaggio di staging facoltativo se lo si desidera prima di passare alla produzione. Quando la funzione Smart Imaging è attivata, i clienti potranno ottenere immagini di dimensioni ridotte, ma con la stessa qualità richiesta. Ciò significa che i tempi di caricamento delle pagine sono più rapidi, e tutto questo viene fatto automaticamente perché  Adobe Sensei aiuta a scegliere le dimensioni più efficienti.
+L&#39;abilitazione di Smart Imaging inizia con l&#39;invio di un&#39;assistenza tecnica tramite |creazione di un caso di supporto| [https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Il supporto vi consentirà di impostare un dominio personalizzato che verrà associato a Smart Imaging. Modificherete un parametro relativo alla memorizzazione nella cache (Time To Live, o TTL) e il supporto cancellerà la cache. È inoltre possibile eseguire un passaggio di staging facoltativo se lo si desidera prima di passare alla produzione. Quando la funzione Smart Imaging è attivata, i clienti potranno ottenere immagini di dimensioni ridotte, ma con la stessa qualità richiesta. Ciò significa che i tempi di caricamento delle pagine sono più rapidi, e tutto questo viene fatto automaticamente perché  Adobe Sensei aiuta a scegliere le dimensioni più efficienti.
 
 Dopo aver attivato Smart Imaging, è necessario verificare che funzioni come previsto.
 
