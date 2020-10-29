@@ -4,9 +4,9 @@ seo-title: Guida introduttiva a AEM Content Services - Capitolo 2 - Definizione 
 description: Il capitolo 2 dell'esercitazione AEM Headless descrive come abilitare e definire i modelli di frammenti di contenuto utilizzati per definire una struttura dati normalizzata e un'interfaccia di authoring per la creazione di eventi.
 seo-description: Il capitolo 2 dell'esercitazione AEM Headless descrive come abilitare e definire i modelli di frammenti di contenuto utilizzati per definire una struttura dati normalizzata e un'interfaccia di authoring per la creazione di eventi.
 translation-type: tm+mt
-source-git-commit: 885e30dea2a21dff789c98bdc5beb2f758b806f3
+source-git-commit: 1faf22f2e664b775c11e16cb1dfa18b363a7316b
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '994'
 ht-degree: 7%
 
 ---
@@ -25,9 +25,9 @@ Questo capitolo descrive l&#39;abilitazione e la definizione dei modelli di fram
 
 ## Abilita modelli di frammenti di contenuto
 
-I modelli di frammento di contenuto **devono** essere attivati tramite **AEM[!UICONTROL browser]** di configurazione.
+I modelli di frammento di contenuto **devono** essere attivati tramite **[AEM [!UICONTROL browser]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)** di configurazione.
 
-Se i modelli di frammento di contenuto **non** sono abilitati per una configurazione, il pulsante **[!UICONTROL Crea]> Frammento[!UICONTROL di]** contenuto non verrà visualizzato per la configurazione AEM pertinente.
+Se i modelli di frammento di contenuto **non** sono abilitati per una configurazione, il pulsante **[!UICONTROL Crea] > Frammento [!UICONTROL di]** contenuto non verrà visualizzato per la configurazione AEM pertinente.
 
 >[!NOTE]
 >
@@ -36,11 +36,13 @@ Se i modelli di frammento di contenuto **non** sono abilitati per una configuraz
 >Affinché una configurazione influisca sulla gerarchia del contenuto, è necessario fare riferimento alla configurazione tramite la `cq:conf` proprietà nella gerarchia del contenuto. (Questo viene ottenuto per la [!DNL WKND Mobile] configurazione nel **passaggio 5** seguente).
 >
 >Quando si utilizza la `global` configurazione, questa si applica a tutto il contenuto e non `cq:conf` è necessario impostarla.
+>
+>See the [[!UICONTROL Configuration Browser] documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html) for more information.
 
 1. Accedete ad AEM Author come utente con le autorizzazioni appropriate per modificare la configurazione pertinente.
    * Per questa esercitazione, è possibile utilizzare l&#39;utente **admin** .
-1. Passa a **[!UICONTROL Strumento]>[!UICONTROL Generale]> Browser[!UICONTROL di configurazione]**
-1. Toccate l’icona **della** cartella accanto a **[!DNL WKND Mobile]** per selezionarla, quindi toccate il pulsante **Modifica** in alto a sinistra.
+1. Passa a **[!UICONTROL Strumento] > [!UICONTROL Generale] > Browser [!UICONTROL di configurazione]**
+1. Toccate l’icona **della** cartella accanto a **[!DNL WKND Mobile]** per selezionarla, quindi toccate il pulsante ** Modifica** in alto a sinistra.
 1. Selezionate Modelli **[!UICONTROL di frammenti di]** contenuto e toccate **[!UICONTROL Salva e chiudi]** in alto a destra.
 
    Questo consente di visualizzare i modelli di frammenti di contenuto nelle strutture di contenuto delle cartelle di risorse a cui è stata applicata la [!DNL WKND Mobile] configurazione.
@@ -58,7 +60,7 @@ Se i modelli di frammento di contenuto **non** sono abilitati per una configuraz
 
 1. Applica la **[!DNL WKND Mobile]** configurazione alla cartella **[!DNL WKND Mobile]** Assets per consentire la creazione di frammenti di contenuto dai modelli di frammenti di contenuto all’interno della gerarchia delle cartelle Assets:
 
-   1. Passa a **[!UICONTROL AEM]>[!UICONTROL Risorse]>[!UICONTROL File]**
+   1. Passa a **[!UICONTROL AEM] > [!UICONTROL Risorse] > [!UICONTROL File]**
    1. Selezionate la cartella **[!UICONTROL WKND Mobile]**
    1. Toccate il pulsante **[!UICONTROL Proprietà]** nella barra delle azioni superiore per aprire Proprietà [!UICONTROL cartella]
    1. In Proprietà cartella, toccate la scheda **[!UICONTROL Cloud Services]**
@@ -79,7 +81,7 @@ Con la mappatura è possibile definire il frammento di contenuto che verrà util
 
 ## Creazione di un modello di frammento di contenuto
 
-1. Passa a **[!UICONTROL Strumenti]>[!UICONTROL Risorse]> Modelli di frammenti di[!UICONTROL contenuto]**.
+1. Passa a **[!UICONTROL Strumenti] > [!UICONTROL Risorse] > Modelli di frammenti di [!UICONTROL contenuto]**.
 1. Toccate la **[!DNL WKND Mobile]** cartella per aprirla.
 1. Toccate **[!UICONTROL Crea]** per aprire la procedura guidata di creazione del modello di frammento di contenuto.
 1. Immettete **[!DNL Event]** come Titolo **** modello *(la descrizione è facoltativa)* e toccate **[!UICONTROL Crea]** per salvare.
@@ -88,10 +90,10 @@ Con la mappatura è possibile definire il frammento di contenuto che verrà util
 
 ## Definizione della struttura del modello di frammento di contenuto
 
-1. Passa a **[!UICONTROL Strumenti]>[!UICONTROL Risorse]> Modelli[!UICONTROL frammenti di]contenuto >[!DNL WKND]**.
+1. Passa a **[!UICONTROL Strumenti] > [!UICONTROL Risorse] > Modelli [!UICONTROL frammenti di] contenuto >[!DNL WKND]**.
 1. Selezionare il modello di frammento di **[!DNL Event]** contenuto e toccare **[!UICONTROL Modifica]** nella barra delle azioni superiore.
-1. Dalla scheda **[!UICONTROL Tipi]di dati** a destra, trascina il testo della riga **[!UICONTROL singola]** nella zona di rilascio a sinistra per definire il **[!DNL Question]** campo.
-1. Verificare che la nuova immissione **[!UICONTROL di testo su riga]** singola sia selezionata a sinistra, mentre la scheda **Proprietà** sia selezionata a destra. Compilare i campi Proprietà come segue:
+1. Dalla scheda **[!UICONTROL Tipi] di dati** a destra, trascina il testo della riga **[!UICONTROL singola]** nella zona di rilascio a sinistra per definire il **[!DNL Question]** campo.
+1. Verificare che la nuova immissione **[!UICONTROL di testo su riga]** singola sia selezionata a sinistra, mentre la scheda ** Proprietà** sia selezionata a destra. Compilare i campi Proprietà come segue:
 
    * [!UICONTROL Rendering come] : `textfield`
    * [!UICONTROL Etichetta campo] : `Event Title`
