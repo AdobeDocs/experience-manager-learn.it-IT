@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '630'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ Creare innanzitutto un nuovo profilo di elaborazione che richiamerà il lavorato
    + __Estensione:__ `png`
       + Estensione della rappresentazione che verrà generata. Impostato su `png` in quanto questo è il formato di output supportato supportato dal servizio Web del lavoratore e restituisce uno sfondo trasparente dietro il cerchio tagliato.
    + __Endpoint:__ `https://...adobeioruntime.net/api/v1/web/wkndAemAssetCompute-0.0.1/worker`
-      + Questo è l&#39;URL del lavoratore ottenuto tramite `aio app get-url`. Assicurati che l’URL punti nell’area di lavoro corretta in base al AEM come ambiente Cloud Service in cui è configurato il profilo di elaborazione. Questo sottodominio corrisponde all’ `development` area di lavoro.
+      + Questo è l&#39;URL del lavoratore ottenuto tramite `aio app get-url`. Assicuratevi che l’URL punti nell’area di lavoro corretta in base al AEM come ambiente di Cloud Service.
       + Accertatevi che l’URL del lavoratore faccia riferimento all’area di lavoro corretta. AEM come fase Cloud Service deve utilizzare l’URL dell’area di lavoro dello stage e AEM come produzione Cloud Service deve utilizzare l’URL dell’area di lavoro Produzione.
    + __Parametri del servizio__
       + Toccate __Aggiungi parametro__
@@ -54,7 +54,7 @@ Creare innanzitutto un nuovo profilo di elaborazione che richiamerà il lavorato
       + Queste coppie chiave/valore che vengono trasmesse al lavoratore di calcolo delle risorse e sono disponibili tramite l&#39;oggetto `rendition.instructions` JavaScript.
    + __Tipi mime__
       + __Include:__ `image/jpeg`, `image/png`, `image/gif`, `image/bmp`, `image/tiff`
-         + Questi tipi MIME sono gli unici supportati dal servizio Web del lavoratore, il che limita le risorse che possono essere elaborate dal lavoratore personalizzato.
+         + Questi tipi MIME sono gli unici moduli npm del lavoratore. Questo elenco limita le risorse che verranno elaborate dal lavoratore personalizzato.
       + __Esclude:__ `Leave blank`
          + Non elaborare mai le risorse con questi tipi MIME utilizzando questa configurazione del servizio. In questo caso, utilizziamo solo un elenco consentiti .
 1. Toccate __Salva__ in alto a destra
@@ -83,26 +83,9 @@ Il progetto definitivo Asset Compute è disponibile su Github all&#39;indirizzo:
 
 + [aem-guide-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
-_Github contiene lo stato finale del progetto, popolato completamente con i casi di lavoro e test, ma non contiene credenziali, ad esempio.`.env`,`.config.json`o`.aio`._
+_Github contiene lo stato finale del progetto, popolato completamente con i casi di lavoro e test, ma non contiene credenziali, ad esempio. `.env`, `.config.json` o `.aio`._
 
 ## Risoluzione dei problemi
 
-### Rendering personalizzato mancante dalla risorsa
-
-+ __Errore:__ Elaborazione delle risorse nuove e rielaborate completata, ma manca la rappresentazione personalizzata
-
-#### Profilo di elaborazione non applicato alla cartella antenata
-
-+ __Causa:__ La risorsa non esiste in una cartella con il profilo di elaborazione che utilizza il lavoratore personalizzato
-+ __Risoluzione:__ Applica il profilo di elaborazione a una cartella antenata della risorsa
-
-#### Profilo di elaborazione sostituito dal profilo di elaborazione inferiore
-
-+ __Causa:__ La risorsa esiste sotto una cartella a cui è applicato il profilo di elaborazione del lavoratore personalizzato, ma tra tale cartella e la risorsa è stato applicato un altro profilo di elaborazione che non utilizza il lavoratore cliente.
-+ __Risoluzione:__ Combinare o comunque riconciliare i due profili di elaborazione e rimuovere il profilo di elaborazione intermedio
-
-### Elaborazione risorsa non riuscita
-
-+ __Errore:__ Il contrassegno Elaborazione risorsa non riuscita viene visualizzato sulla risorsa
-+ __Causa:__ Errore durante l&#39;esecuzione del lavoratore personalizzato
-+ __Risoluzione:__ Seguite le istruzioni sul [debug delle attivazioni](../test-debug/debug.md#aio-app-logs) Adobe I/O Runtime utilizzando `aio app logs`.
++ [Rendering personalizzato mancante dalla risorsa in AEM](../troubleshooting.md#custom-rendition-missing-from-asset)
++ [Elaborazione risorsa non riuscita in AEM](../troubleshooting.md#asset-processing-fails)
