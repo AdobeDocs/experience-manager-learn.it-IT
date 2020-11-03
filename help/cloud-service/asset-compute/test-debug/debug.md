@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -103,40 +103,9 @@ _Click-through del debug di un lavoratore di elaborazione risorse con wskdebug (
 
 ## Risoluzione dei problemi
 
-### Il debugger non si collega
-
-+ __Errore__: Errore durante l&#39;elaborazione dell&#39;avvio: Errore: Impossibile connettersi alla destinazione di debug in...
-+ __Causa__: Docker Desktop non è in esecuzione sul sistema locale. Verifica questo problema esaminando la console di debug del codice VS (Visualizza > Console di debug), confermando che l&#39;errore viene segnalato.
-+ __Risoluzione__: Avviate [Docker Desktop e confermate che le immagini Docker necessarie siano installate](../set-up/development-environment.md#docker).
-
-### Punti di interruzione non in pausa
-
-+ __Errore__: Quando si esegue il lavoratore Asset Compute dallo strumento di sviluppo debug, VS Code non si ferma ai punti di interruzione.
-
-#### Il debugger del codice VS non è collegato
-
-+ __Causa:__ Il debugger del codice VS è stato arrestato/disconnesso.
-+ __Risoluzione:__ Riavviare il debugger del codice VS e verificare che sia collegato guardando la console Output di debug del codice VS (Visualizza > Console di debug)
-
-#### Debugger codice VS collegato dopo l&#39;avvio dell&#39;esecuzione del lavoro
-
-+ __Causa:__ Il debugger del codice VS non si è collegato prima di toccare __Run__ in Development Tool.
-+ __Risoluzione:__ Verificare che il debugger sia collegato rivedendo la console Debug del codice VS (Visualizza > Console di debug), quindi eseguire nuovamente il lavoratore di calcolo risorse dallo strumento di sviluppo.
-
-### Timeout del lavoro durante il debug
-
-+ __Errore__: Report della console di debug: &quot;L&#39;azione verrà timeout in -XXX millisecondi&quot; o l&#39;anteprima del rendering dello strumento di sviluppo del calcolo delle [risorse](../develop/development-tool.md) vieneeseguita a tempo indeterminato o
-+ __Causa__: Il timeout del lavoratore come definito nel file [manifest.yml](../develop/manifest.md) viene superato durante il debug.
-+ __Risoluzione__: Aumenta temporaneamente il timeout del lavoratore nel file [manifest.yml](../develop/manifest.md) o accelera le attività di debug.
-
-### Impossibile terminare il processo di debug
-
-+ __Errore__: `Ctrl-C` nella riga di comando non interrompe il processo di debugger (`npx adobe-asset-compute devtool`).
-+ __Causa__: Un bug nella `@adobe/aio-cli-plugin-asset-compute` versione 1.3.x `Ctrl-C` non viene riconosciuto come comando terminante.
-+ __Risoluzione__: Aggiornamento `@adobe/aio-cli-plugin-asset-compute` alla versione 1.4.1+
-
-   ```
-   $ aio update
-   ```
-
-   ![Risoluzione dei problemi - aggiornamento aio](./assets/debug/troubleshooting__terminate.png)
++ [Il debugger non si collega](../troubleshooting.md#debugger-does-not-attach)
++ [Punti di interruzione non in pausa](../troubleshooting.md#breakpoints-no-pausing)
++ [Debug codice VS non collegato](../troubleshooting.md#vs-code-debugger-not-attached)
++ [Debugger codice VS collegato dopo l&#39;avvio dell&#39;esecuzione del lavoro](../troubleshooting.md#vs-code-debugger-attached-after-worker-execution-began)
++ [Timeout del lavoro durante il debug](../troubleshooting.md#worker-times-out-while-debugging)
++ [Impossibile terminare il processo di debug](../troubleshooting.md#cannot-terminate-debugger-process)
