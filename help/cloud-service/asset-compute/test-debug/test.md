@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ La struttura dei test in un progetto Asset Compute è la seguente:
 ...
 /test/
   asset-compute/
-    <worker-name>/           <--- Test suite for the worker
+    <worker-name>/           <--- Test suite for the worker, must match the yaml key for this worker in manifest.yml
         <test-case-1>/       <--- Specific test case 
             file.jpg         <--- Input file (ie. `source.path` or `source.url`)
             params.json      <--- Parameters (ie. `rendition.instructions`)
@@ -118,21 +118,5 @@ I casi finali di prova sono disponibili su Github al seguente indirizzo:
 
 ## Risoluzione dei problemi
 
-### Nessuna rappresentazione generata
-
-Il test case non riesce senza generare una rappresentazione.
-
-+ __Errore:__ Errore: Nessuna rappresentazione generata.
-+ __Causa:__ Il lavoratore non è riuscito a generare una rappresentazione a causa di un errore imprevisto, ad esempio un errore di sintassi JavaScript.
-+ __Risoluzione:__ Controllare l&#39;esecuzione del test `test.log` in `/build/test-results/test-worker/test.log`. Individuare la sezione in questo file corrispondente al test case non riuscito e verificare la presenza di errori.
-
-   ![Risoluzione dei problemi - Nessuna rappresentazione generata](./assets/test/troubleshooting__no-rendition-generated.png)
-
-### Test genera rendering non corretto
-
-Il test case non genera un rendering non corretto.
-
-+ __Errore:__ Errore: La rappresentazione &#39;rendition.xxx&#39; non è come previsto.
-+ __Causa:__ Il lavoratore genera un rendering che non era uguale a quello `rendition.<extension>` fornito nel caso di prova.
-   + Se il `rendition.<extension>` file previsto non viene creato esattamente nello stesso modo del rendering generato localmente nel caso di test, il test potrebbe non riuscire in quanto potrebbero esserci differenze nei bit. Se la rappresentazione prevista nel test case viene salvata dallo strumento di sviluppo, ovvero generata in Adobe I/O Runtime, i bit possono essere tecnicamente diversi, causando il fallimento del test, anche se da un punto di vista umano i file di rappresentazione previsti e effettivi sono identici.
-+ __Risoluzione:__ Esaminare l&#39;output della rappresentazione dal test andando al file di rappresentazione previsto `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`e confrontarlo con il file di rappresentazione previsto nel caso di test.
++ [Nessuna rappresentazione generata durante l&#39;esecuzione del test](../troubleshooting.md#test-no-rendition-generated)
++ [Test genera rendering non corretto](../troubleshooting.md#tests-generates-incorrect-rendition)
