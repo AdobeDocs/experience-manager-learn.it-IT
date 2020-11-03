@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6281
 thumbnail: KT-6281.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -122,14 +122,5 @@ Per avviare lo strumento di sviluppo del calcolo delle risorse per il progetto A
 
 ## Risoluzione dei problemi
 
-### Rientro YAML errato
-
-+ __Errore:__ YAMLException: rientro errato di una voce di mappatura alla riga X, colonna Y:(via standard out dal `aio app run` comando)
-+ __Causa:__ I file Yaml sono sensibili alla spaziatura bianca. È probabile che il rientro non sia corretto.
-+ __Risoluzione:__ Controlla `manifest.yml` e assicurati che tutti i rientri siano corretti.
-
-### il limite memorySize è impostato su low
-
-+ __Errore:__  OpenWhiskError per Dev Server locale: PUT https://adobeioruntime.net/api/v1/namespaces/xxx-xxx-xxx/actions/xxx-0.0.1/__secured_workeroverwrite=true Restituito HTTP 400 (Richiesta non valida) —> &quot;Il contenuto della richiesta non è corretto:requisito non riuscito: memoria 64 MB inferiore alla soglia consentita di 134217728 B&quot;
-+ __Causa:__ Un `memorySize` limite nel manifesto è stato impostato al di sotto della soglia minima consentita, come segnalato dal messaggio di errore in byte.
-+ __Risoluzione:__  Rivedete i `memorySize` limiti in `manifest.yml` e accertatevi che siano tutti grandi oltre la soglia minima consentita.
++ [Rientro YAML errato](../troubleshooting.md#incorrect-yaml-indentation)
++ [il limite memorySize è impostato su low](../troubleshooting.md#memorysize-limit-is-set-too-low)
