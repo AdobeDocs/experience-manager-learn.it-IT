@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Questo attiverà lo strumento di sviluppo all&#39;indirizzo __http://localhost:9
 1. __File di origine:__ La selezione del file di origine viene utilizzata per:
    + Selezionato il binario della risorsa che sarà il `source` binario passato al lavoratore Asset Compute
    + Caricare i file sorgente
-1. __Definizione del profilo di calcolo risorsa:__ Definisce il lavoratore Asset Compute da eseguire, compresi i parametri: incluso il punto finale dell&#39;URL del lavoratore, il nome della rappresentazione risultante ed eventuali parametri
+1. __Definizione dei profili di calcolo delle risorse:__ Definisce il lavoratore Asset Compute da eseguire, compresi i parametri: incluso il punto finale dell&#39;URL del lavoratore, il nome della rappresentazione risultante ed eventuali parametri
 1. __Esegui:__ Il pulsante Esegui esegue il profilo di calcolo delle risorse come definito nell’editor del profilo di configurazione di Asset Compute
 1. __Interrompi:__ Il pulsante Interrompi annulla un&#39;esecuzione avviata toccando il pulsante Esegui
 1. __Richiesta/Risposta:__ Fornisce la richiesta HTTP e la risposta a/da Asset Compute Worker in esecuzione in Adobe I/O Runtime. Può essere utile per il debug
@@ -84,24 +84,10 @@ Se si apporta modifiche al codice del lavoratore mentre è in esecuzione lo stru
 
 ## Risoluzione dei problemi
 
-### File di origine non corretti{#troubleshooting__dev-tool-application-cache}
-
-Lo strumento di sviluppo del calcolo delle risorse può inserire uno stato in cui vengono estratti dati non aggiornati, ed è più evidente nel menu a discesa del file ____ di origine che visualizza elementi non corretti.
-
-+ __Errore:__ Il menu a discesa del file di origine visualizza elementi non corretti.
-+ __Causa:__ Lo stato del browser memorizzato nella cache non è valido
-+ __Risoluzione:__ Nel browser cancellare completamente lo &quot;stato applicazione&quot; della scheda del browser, la cache del browser, l&#39;archiviazione locale e il lavoratore del servizio.
-
-### Parametro di query devToolToken mancante o non valido{#troubleshooting__devtooltoken}
-
-+ __Errore:__ Notifica &quot;non autorizzata&quot; nello strumento di sviluppo del calcolo delle risorse
-+ __Causa:__ `devToolToken` è mancante o non valido
-+ __Risoluzione:__ Chiudete la finestra del browser Strumento di sviluppo di calcolo risorse, interrompete eventuali processi dello strumento di sviluppo in esecuzione avviati tramite il `aio app run` comando e riavviate lo strumento di sviluppo (utilizzando `aio app run`).
-
-### Impossibile rimuovere i file sorgente{#troubleshooting__remove-source-files}
-
-+ __Errore:__ Non è possibile rimuovere i file sorgente aggiunti dall&#39;interfaccia utente di Strumenti di sviluppo
-+ __Causa:__ Questa funzionalità non è stata implementata
-+ __Risoluzione:__ Accedi al provider di archiviazione cloud utilizzando le credenziali definite in `.env`. Individuate il contenitore utilizzato da Strumenti di sviluppo (specificato anche in `.env`), individuate la cartella __sorgente__ ed eliminate eventuali immagini sorgente. È possibile che sia necessario eseguire i passaggi descritti nel menu a discesa File [sorgente non corretti](#troubleshooting__dev-tool-application-cache) se i file sorgente eliminati continuano a essere visualizzati nel menu a discesa, in quanto possono essere memorizzati nella cache localmente nello &quot;stato applicazione&quot; degli strumenti di sviluppo.
-
-   ![Archiviazione BLOB di Microsoft Azure](./assets/development-tool/troubleshooting__remove-source-files.png)
++ [Rientro YAML errato](../troubleshooting.md#incorrect-yaml-indentation)
++ [il limite memorySize è impostato su low](../troubleshooting.md#memorysize-limit-is-set-too-low)
++ [Impossibile avviare lo strumento di sviluppo a causa di private.key mancante](../troubleshooting.md#missing-private-key)
++ [File di origine non corretti](../troubleshooting.md#source-files-dropdown-incorrect)
++ [Parametro di query devToolToken mancante o non valido](../troubleshooting.md#missing-or-invalid-devtooltoken-query-parameter)
++ [Impossibile rimuovere i file sorgente](../troubleshooting.md#unable-to-remove-source-files)
++ [Rendering restituito parzialmente disegnato/danneggiato](../troubleshooting.md#rendition-returned-partially-drawn-or-corrupt)
