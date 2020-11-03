@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6270
 thumbnail: KT-6270.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -113,8 +113,4 @@ Per avviare lo strumento di sviluppo del calcolo delle risorse per il progetto A
 
 ## Risoluzione dei problemi
 
-### Impossibile avviare gli strumenti di sviluppo locale di calcolo risorse a causa di private.key mancante
-
-+ __Errore:__ Errore Dev Server Locale: File obbligatori mancanti in validatePrivateKeyFile.... (tramite uscita standard dal `aio app run` comando)
-+ __Causa:__ Il `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` valore nel `.env` file non indica `private.key` o non `private.key` è leggibile dall&#39;utente corrente.
-+ __Risoluzione:__ Rivedete il `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` valore nel `.env` file e accertatevi che contenga il percorso completo e assoluto del file system `private.key` .
++ [Impossibile avviare lo strumento di sviluppo a causa di private.key mancante](../troubleshooting.md#missing-private-key)
