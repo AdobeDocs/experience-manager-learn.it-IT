@@ -10,9 +10,9 @@ audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,7 @@ I lavoratori di elaborazione delle risorse forniscono vari livelli di debugging 
 
 ## Implementa
 
-Scoprite come integrare i lavoratori di calcolo delle risorse personalizzati con AEM come Cloud Service, distribuendoli in Adobe I/O Runtime e quindi richiamandoli da AEM come Autore Cloud Service tramite  Profili di elaborazione AEM Assets.
+Scopri come integrare i lavoratori di calcolo delle risorse personalizzati con AEM come Cloud Service, distribuendoli in Adobe I/O Runtime e quindi richiamandoli da AEM come Autore Cloud Service tramite i profili di elaborazione di AEM Assets.
 
 ### Distribuisci in Adobe I/O Runtime
 
@@ -122,13 +122,19 @@ I lavoratori di calcolo delle risorse devono essere distribuiti in Adobe I/O Run
 
 ### Integrare i lavoratori tramite AEM profili di elaborazione
 
-Una volta distribuiti in Adobe I/O Runtime, i lavoratori di elaborazione delle risorse possono essere registrati in AEM come Cloud Service tramite i profili di elaborazione delle [risorse](../../assets/configuring/processing-profiles.md). I profili di elaborazione vengono, a loro volta, applicati alle cartelle Risorse che si applicano alle risorse in essi contenute.
+Una volta distribuiti in Adobe I/O Runtime, i lavoratori di elaborazione delle risorse possono essere registrati in AEM come Cloud Service tramite i profili di elaborazione delle [risorse](../../assets/configuring/processing-profiles.md). I profili di elaborazione vengono, a loro volta, applicati alle cartelle di risorse che si applicano alle risorse in essi contenute.
 
 + [Integrazione con AEM profili di elaborazione](./deploy/processing-profiles.md)
 
-## Codebase di esercitazione su Github
+## Avanzate 
 
-Il codice di esercitazione è disponibile su Github all&#39;indirizzo:
+Queste esercitazioni abbreviate consentono di gestire casi di utilizzo più avanzati sulla base delle conoscenze di base stabilite nei capitoli precedenti.
+
++ [Sviluppare un lavoratore](./advanced/metadata.md) di metadati Asset Compute in grado di scrivere nuovamente i metadati nel pannello
+
+## Codebase su Github
+
+Il codice dell&#39;esercitazione è disponibile su Github all&#39;indirizzo:
 
 + [adobe/aem-guide-wknd-asset-computer](https://github.com/adobe/aem-guides-wknd-asset-compute) @ ramo principale
 
@@ -142,14 +148,13 @@ Di seguito sono riportate diverse risorse  Adobe che forniscono ulteriori inform
 
 + [Documentazione servizio di calcolo risorse](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)
 + [Leggimi dello strumento di sviluppo di calcolo risorse](https://github.com/adobe/asset-compute-devtool)
-
-### Altri esempi di codice
-
 + [Lavoratori esempio di calcolo risorse](https://github.com/adobe/asset-compute-example-workers)
 
 ### API e SDK
 
 + [SDK per elaborazione risorse](https://github.com/adobe/asset-compute-sdk)
    + [Asset Compute Commons](https://github.com/adobe/asset-compute-commons)
+   + [XMP di calcolo risorse](https://github.com/adobe/asset-compute-xmp#readme)
 + [Libreria Wrapper Blobstore Cloud di Adobe](https://github.com/adobe/node-cloud-blobstore-wrapper)
 + [libreria Ritiro nodo di Adobe](https://github.com/adobe/node-fetch-retry)
++ [Lavoratori esempio di calcolo risorse](https://github.com/adobe/asset-compute-example-workers)
