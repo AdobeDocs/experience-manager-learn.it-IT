@@ -2,7 +2,7 @@
 title: Capitolo 5 - Authoring delle pagine di Content Services
 description: Il capitolo 5 dell’esercitazione AEM Headless copre la creazione delle pagine dai modelli definiti nel capitolo 4. Queste pagine fungeranno da endpoint HTTP JSON.
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Il capitolo 5 dell’esercitazione AEM Headless copre la creazione della pagina 
 
 ## Creazione della pagina API evento
 
-1. Andate a **[!UICONTROL AEM]>[!UICONTROL Siti]>[!DNL WKND Mobile]>[!DNL English]>[!DNL API]**.
+1. Andate a **[!UICONTROL AEM] > [!UICONTROL Siti] > [!DNL WKND Mobile] > [!DNL English] >[!DNL API]**.
 1. **Toccate l&#39;etichetta della pagina** API, quindi toccate il pulsante **Crea** nella barra delle azioni superiore e create una nuova pagina API per gli eventi nella pagina API.
    1. Toccate **Crea** nella barra delle azioni superiore
    1. Seleziona modello API **** eventi
@@ -44,7 +44,7 @@ Il capitolo 5 dell’esercitazione AEM Headless copre la creazione della pagina 
 1. Aggiungete una riga **di** tag per visualizzarla sopra gli eventi.
    1. Modificare il componente **Testo**
    1. Inserite il testo:
-      1. `The WKND is here.`
+      * `The WKND is here.`
 
 1. Selezionate gli **eventi** da visualizzare:
    1. Impostate la seguente configurazione nella scheda **Proprietà** :
