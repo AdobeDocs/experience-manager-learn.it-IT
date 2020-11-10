@@ -1,6 +1,6 @@
 ---
-title: Sviluppare un lavoratore metadati Asset Compute
-description: Scoprite come creare un lavoratore di metadati Asset Compute che ricava i colori più comunemente utilizzati in una risorsa immagine e riscrive i nomi dei colori nei metadati della risorsa in AEM.
+title: 'Sviluppare un lavoratore metadati Asset compute '
+description: Scoprite come creare un lavoratore di metadati  Asset compute che ricava i colori più comunemente utilizzati in una risorsa immagine e reinserisce i nomi dei colori nei metadati della risorsa in AEM.
 feature: asset-compute
 topics: metadata, development
 version: cloud-service
@@ -10,17 +10,17 @@ doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: c2a8e6c3ae6dcaa45816b1d3efe569126c6c1e60
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1434'
 ht-degree: 1%
 
 ---
 
 
-# Sviluppare un lavoratore metadati Asset Compute
+# Sviluppare un lavoratore metadati Asset compute 
 
-Risorse personalizzate I lavoratori di elaborazione possono produrre dati XMP (XML) che vengono rispediti a AEM e memorizzati come metadati su una risorsa.
+I lavoratori  Asset compute personalizzati possono produrre dati XMP (XML) che vengono reinviati a AEM e memorizzati come metadati in una risorsa.
 
 I casi d’uso più comuni includono:
 
@@ -32,27 +32,27 @@ I casi d’uso più comuni includono:
 
 >[!VIDEO](https://video.tv.adobe.com/v/327313?quality=12&learn=on)
 
-Con questa esercitazione verrà creato un lavoratore di metadati Asset Compute che ricava i colori più comunemente utilizzati in una risorsa immagine e riscrive i nomi dei colori nei metadati della risorsa in AEM. Anche se il lavoratore è di base, questa esercitazione lo utilizza per esplorare come i lavoratori di elaborazione risorse possono essere utilizzati per scrivere i metadati alle risorse in AEM come Cloud Service.
+In questa esercitazione verrà creato un  Asset compute per metadati che ricava i colori più comunemente utilizzati in una risorsa immagine e riscrive i nomi dei colori nei metadati della risorsa in AEM. Anche se il lavoratore è di base, questa esercitazione lo utilizza per scoprire in che modo  Asset compute possono essere utilizzati per scrivere i metadati alle risorse in AEM come Cloud Service.
 
-## Flusso logico di una chiamata al lavoro metadati Calcolo risorsa
+## Flusso logico della chiamata di un lavoratore metadati Asset compute 
 
-La chiamata dei lavoratori di metadati Asset Compute è pressoché identica a quella dei lavoratori [che generano rappresentazioni](../develop/worker.md)binarie, con la differenza principale rappresentata dal tipo restituito è una rappresentazione XMP (XML) i cui valori sono anche scritti nei metadati della risorsa.
+La chiamata di  lavoratori di metadati Asset compute è pressoché identica a quella dei lavoratori [che generano rappresentazioni](../develop/worker.md)binarie, con la differenza principale rappresentata dal tipo restituito è una rappresentazione XMP (XML) i cui valori sono anche scritti nei metadati della risorsa.
 
-I lavoratori di calcolo delle risorse implementano il contratto API del lavoratore SDK di calcolo delle risorse, nella `renditionCallback(...)` funzione, concettualmente:
+ Asset compute implementano il contratto di  Asset compute API lavoratore, nella `renditionCallback(...)` funzione, concettualmente:
 
 + __Ingresso:__ Parametri binari e profilo di elaborazione originali di una risorsa AEM
 + __Output:__ Una rappresentazione XMP (XML) persistente nella risorsa AEM come rappresentazione e nei metadati della risorsa
 
-![Flusso logico del lavoratore metadati del calcolo risorse](./assets/metadata/logical-flow.png)
+![Flusso logico del lavoratore metadati del Asset compute](./assets/metadata/logical-flow.png)
 
-1. Il servizio AEM Author richiama il lavoratore metadati Asset Compute, fornendo il binario originale della risorsa __(1a)__ e __(1b)__ eventuali parametri definiti nel profilo di elaborazione.
-1. L’SDK Asset Compute orchestra l’esecuzione della `renditionCallback(...)` funzione personalizzata Asset Compute del lavoratore metadati, derivando una rappresentazione XMP (XML), basata sul binario della risorsa __(1a)__ e su eventuali parametri di profilo di elaborazione __(1b)__.
-1. Il lavoratore di elaborazione risorse salva la rappresentazione XMP (XML) in `rendition.path`.
-1. I dati XMP (XML) scritti in `rendition.path` vengono trasportati tramite Asset Compute SDK a AEM Author Service e esposti come __(4a)__ una rappresentazione di testo e __(4b)__ persistenti nel nodo di metadati della risorsa.
+1. Il servizio AEM Author richiama il lavoratore metadati del Asset compute , fornendo il binario originale della risorsa __(1a)__ e __(1b)__ eventuali parametri definiti nel profilo di elaborazione.
+1. L&#39;SDK del Asset compute  orchestra l&#39;esecuzione della `renditionCallback(...)` funzione del lavoratore di metadati del Asset compute  personalizzato, derivando una rappresentazione XMP (XML), basata sul binario della risorsa __(1a)__ e su eventuali parametri del profilo di elaborazione __(1b)__.
+1. Il Asset compute  salva la rappresentazione XMP (XML) in `rendition.path`.
+1. I dati XMP (XML) scritti in `rendition.path` vengono trasportati tramite l’SDK del Asset compute  in AEM Author Service ed esposti come __(4a)__ una rappresentazione di testo e __(4b)__ persistenti nel nodo di metadati della risorsa.
 
 ## Configurare manifest.yml{#manifest}
 
-Tutti i lavoratori di elaborazione risorse devono essere registrati nel file [manifest.yml](../develop/manifest.md).
+Tutti  lavoratori Asset compute devono essere registrati nel file [manifest.yml](../develop/manifest.md).
 
 Aprite il progetto `manifest.yml` e aggiungete una voce di lavoro che configuri il nuovo lavoratore, in questo caso `metadata-colors`.
 
@@ -87,11 +87,11 @@ L&#39; `limits` e `require-adobe-auth` sono configurati in modo discreto per lav
 
 ## Sviluppare un lavoratore metadati{#metadata-worker}
 
-Create un nuovo file JavaScript del lavoratore metadati nel progetto Asset Compute in corrispondenza del percorso manifest.yml [definito per il nuovo lavoratore](#manifest), in `/actions/metadata-colors/index.js`
+Crea un nuovo file JavaScript del lavoratore metadati nel progetto di Asset compute  nel percorso manifest.yml [definito per il nuovo lavoratore](#manifest), in `/actions/metadata-colors/index.js`
 
 ### Installare i moduli npm
 
-Installate i moduli npm aggiuntivi ([@adobe/asset-compute-xmp](https://www.npmjs.com/package/@adobe/asset-compute-xmp?activeTab=versions), [get-image-color](https://www.npmjs.com/package/get-image-colors)e [color-name](https://www.npmjs.com/package/color-namer)) che verranno utilizzati in questo processo di elaborazione risorse.
+Installate i moduli npm aggiuntivi ([@adobe/asset-compute-xmp](https://www.npmjs.com/package/@adobe/asset-compute-xmp?activeTab=versions), [get-image-color](https://www.npmjs.com/package/get-image-colors)e [color-name](https://www.npmjs.com/package/color-namer)) che verranno utilizzati in questo  Asset compute di lavoro.
 
 ```
 $ npm install @adobe/asset-compute-xmp
@@ -180,14 +180,14 @@ function getColorName(colorsFamily, color) {
 
 ## Eseguire il lavoro metadati localmente{#development-tool}
 
-Una volta completato il codice del lavoratore, può essere eseguito utilizzando lo strumento di sviluppo di calcolo risorse locale.
+Una volta completato il codice del lavoratore, può essere eseguito utilizzando lo strumento di sviluppo  Asset compute locale.
 
-Poiché il nostro progetto Asset Compute contiene due lavoratori (la rappresentazione [del](../develop/worker.md) cerchio precedente e questo `metadata-colors` lavoratore), la definizione del profilo dello strumento [Asset Compute Development Tool](../develop/development-tool.md) elenca i profili di esecuzione per entrambi i lavoratori. La seconda definizione del profilo punta al nuovo `metadata-colors` lavoratore.
+Poiché il nostro progetto di Asset compute  contiene due lavoratori (la rappresentazione [di](../develop/worker.md) cerchio precedente e questo `metadata-colors` lavoratore), la definizione del profilo dello strumento di sviluppo di Asset compute [](../develop/development-tool.md) elenca i profili di esecuzione per entrambi i lavoratori. La seconda definizione del profilo punta al nuovo `metadata-colors` lavoratore.
 
 ![Rendering dei metadati XML](./assets/metadata/metadata-rendition.png)
 
-1. Dal livello principale del progetto Asset Compute
-1. Esegui `aio app run` per avviare lo strumento di sviluppo del calcolo risorse
+1. Dal livello principale del progetto del Asset compute 
+1. Esegui `aio app run` per avviare lo strumento di sviluppo Asset compute 
 1. In __Selezionare un file...__ a discesa, scegliete un’immagine [](../assets/samples/sample-file.jpg) campione da elaborare
 1. Nella seconda configurazione di definizione del profilo, che punta al `metadata-colors` lavoratore, aggiornate `"name": "rendition.xml"` quando questo lavoratore genera una rappresentazione XMP (XML). Facoltativamente, aggiungete un `colorsFamily` parametro (valori supportati `basic`, `hex`, `html`, `ntc`, `pantone`, `roygbiv`).
 
@@ -208,9 +208,9 @@ Poiché il nostro progetto Asset Compute contiene due lavoratori (la rappresenta
 
 ## Test del lavoratore{#test}
 
-I lavoratori di metadati possono essere testati utilizzando [lo stesso framework di test Asset Compute come rappresentazioni](../test-debug/test.md)binarie. L&#39;unica differenza è rappresentata dal `rendition.xxx` file nel test case, che deve essere il rendering previsto XMP (XML).
+I lavoratori di metadati possono essere testati utilizzando [lo stesso framework di test Asset compute  delle rappresentazioni](../test-debug/test.md)binarie. L&#39;unica differenza è rappresentata dal `rendition.xxx` file nel test case, che deve essere il rendering previsto XMP (XML).
 
-1. Crea la struttura seguente nel progetto Asset Compute:
+1. Create la struttura seguente nel progetto di Asset compute :
 
    ```
    /test/asset-compute/metadata-colors/success-pantone/
@@ -239,7 +239,7 @@ I lavoratori di metadati possono essere testati utilizzando [lo stesso framework
    <?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:wknd="https://wknd.site/assets/1.0/"><rdf:Description><wknd:colors><rdf:Seq><rdf:li>Silver</rdf:li><rdf:li>Black</rdf:li><rdf:li>Outer Space</rdf:li></rdf:Seq></wknd:colors><wknd:colorsFamily>pantone</wknd:colorsFamily></rdf:Description></rdf:RDF>
    ```
 
-5. Eseguite `aio app test` dal livello principale del progetto Asset Compute per eseguire tutte le suite di test.
+5. Eseguite `aio app test` dal livello principale del progetto del Asset compute  per eseguire tutte le suite di test.
 
 ### Distribuzione del lavoratore in Adobe I/O Runtime{#deploy}
 
@@ -304,15 +304,15 @@ Per esaminare i metadati dei colori, mappate due nuovi campi sullo schema dei me
 1. Andate alla cartella o sottocartella a cui è applicato il profilo di elaborazione
 1. Caricate una nuova immagine (JPEG, PNG, GIF o SVG) nella cartella oppure rielaborate le immagini esistenti utilizzando il profilo di [elaborazione aggiornato](#processing-profile)
 1. Al termine dell’elaborazione, selezionate la risorsa e toccate __le proprietà__ nella barra delle azioni superiore per visualizzarne i metadati
-1. Esaminate i campi `Colors Family` e `Colors` i campi [di](#metadata-schema) metadati per i metadati riscritti dal lavoratore metadati di calcolo risorse personalizzato.
+1. Esaminate i campi `Colors Family` e `Colors` i campi [di](#metadata-schema) metadati per i metadati riscritti dal lavoratore di metadati del Asset compute  personalizzato.
 
-Questi metadati di colore sono ora disponibili per essere riscritti nel binario come dati XMP (al successivo XMP riscrittura) così come strumenti con la possibilità di scoprire le risorse tramite la ricerca full-text.
+Con i metadati di colore scritti nei metadati della risorsa, sulla `[dam:Asset]/jcr:content/metadata` risorsa, questi metadati sono indicizzati per consentire l’individuazione delle risorse tramite la ricerca e possono persino essere riscritti nel flusso di lavoro binario della risorsa se viene richiamato il __DAM Metadata Writeback__ .
 
 ### Rappresentazioni di metadati in  AEM Assets
 
 ![file di rendering dei metadati AEM Assets](./assets/metadata/cqdam-metadata-rendition.png)
 
-Anche il file XMP effettivo generato dal lavoratore metadati Asset Compute viene memorizzato come rappresentazione discreta sulla risorsa. In genere questo file non viene utilizzato, ma vengono utilizzati i valori applicati al nodo di metadati della risorsa, mentre l&#39;output XML non elaborato del lavoratore è disponibile in AEM.
+Anche il file XMP effettivo generato dal lavoratore metadati del Asset compute  viene memorizzato come rappresentazione discreta sulla risorsa. In genere questo file non viene utilizzato, ma vengono utilizzati i valori applicati al nodo di metadati della risorsa, mentre l&#39;output XML non elaborato del lavoratore è disponibile in AEM.
 
 ## metadata-color codice lavoratore su Github
 
