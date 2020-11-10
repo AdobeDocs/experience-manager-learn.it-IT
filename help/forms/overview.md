@@ -1,14 +1,14 @@
 ---
 title: ' Tutorials e video AEM Forms'
 seo-title: ' Tutorials e video AEM Forms'
-description: Raccolta di  risorse AEM Forms per principianti e sviluppatori esperti  AEM Forms
-seo-description: Raccolta di  risorse AEM Forms per principianti e sviluppatori esperti  AEM Forms
+description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms
+seo-description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms
 sub-product: forms
 translation-type: tm+mt
-source-git-commit: b085a2c75f8e0b4860d503774ea01a108773ad09
+source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 1%
+ht-degree: 14%
 
 ---
 
@@ -21,18 +21,15 @@ Adobe Experience Manager (AEM) offre una soluzione semplice per creare, gestire,
 
 * **[Gestione dei messaggi di errore nel passaggio del servizio del modello dati del modulo di chiamata](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
 
-   <br>
    *Una variabile in un modello di workflow è un modo per memorizzare un valore in base al tipo di dati*
 
 * **[Grafici multiserie nei documenti di comunicazione interattiva (video)](./interactive-communications/multiseriescharts.md)**
 
-   <br>
    *Traccia più serie nello stesso grafico.I grafici a serie multiple sono generalmente utilizzati in associazione con il tipo di grafico a linee, barre, colonne.*
 
 * **[Creazione di modelli di flusso di lavoro riutilizzabili](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
 
-   <br>
-   _Creare modelli di flusso di lavoro non collegati a un modulo specifico_
+   *Creare modelli di flusso di lavoro non collegati a un modulo specifico*
 
 ## Prezzi del personale
 
@@ -87,7 +84,7 @@ Adobe Experience Manager (AEM) offre una soluzione semplice per creare, gestire,
 * [Documentazione sullo sviluppo di  AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
 * [Documentazione  di amministrazione AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
 * [Documentazione  distribuzione AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
-* [AEM come Tutorials Cloud Service](/help/cloud-service/overview.md)
-* [Tutorials AEM Assets](/help/assets/overview.md)
-* [Tutorials AEM Forms](/help/forms/overview.md)
-* [AEM Foundation Tutorials](/help/foundation/overview.md)
+* [Tutorial di AEM as a Cloud Service](/help/cloud-service/overview.md)
+* [Tutorial di AEM Assets](/help/assets/overview.md)
+* [Tutorial di AEM Forms](/help/forms/overview.md)
+* [Tutorial di AEM Foundation](/help/foundation/overview.md)
