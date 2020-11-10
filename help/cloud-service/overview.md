@@ -4,7 +4,7 @@ description: Raccolta di esercitazioni per Adobe Experience Manager (AEM) come C
 sub-product: siti, gestione cloud, fondazione, risorse
 kt: 3289
 translation-type: tm+mt
-source-git-commit: 06632b90e5cdaf80b9343e5a69ab9c735d4a70f1
+source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 8%
@@ -20,29 +20,24 @@ Adobe Experience Manager (AEM) ora è disponibile come Cloud Service. AEM come C
 
 ## Novità
 
-* **[Estensibilità dei microservizi di calcolo risorse (esercitazione)](./asset-compute/overview.md)**
+* **[Estensibilità dei microservizi  Asset compute (esercitazione)](./asset-compute/overview.md)**
 
-   <br>
-   *Scoprite come sviluppare i lavoratori di calcolo delle risorse per generare rappresentazioni delle risorse personalizzate*
+   *Scoprite come sviluppare  Asset compute di lavoro per generare rappresentazioni delle risorse personalizzate*
 
 * **[Configurazione dell&#39;accesso a AEM come Cloud Service (esercitazione)](./accessing/overview.md)**
 
-   <br>
    *Scopri come configurare gli utenti IMS in Adobe Admin Console in modo che possano accedere ai AEM*
 
 * **[Debug di AEM come Cloud Service (esercitazione)](./debugging/cloud-service/overview.md)**
 
-   <br>
    *Scopri come eseguire il debug dei AEM come Cloud Service*
 
 * **[Debug AEM SDK (esercitazione)](./debugging/aem-sdk-local-quickstart/overview.md)**
 
-   <br>
    *Esplora i vari strumenti utilizzati per eseguire il debug dell’applicazione sul AEM come quickstart locale dell’SDK di Cloud Service*
 
 * **[Ambiente di sviluppo locale impostato (esercitazione)](./local-development-environment/overview.md)**
 
-   <br>
    *Scoprite come configurare il computer di sviluppo locale per AEM come sviluppo Cloud Service*
 
 ## Prezzi del personale
