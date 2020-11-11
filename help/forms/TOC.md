@@ -6,9 +6,9 @@ user-guide-description: Raccolta di risorse AEM Forms per sviluppatori principia
 breadcrumb-title: Tutorial di AEM Forms
 index: y
 translation-type: tm+mt
-source-git-commit: 8aed732a0488aa9303ddf35f6c2065eb08ec0c4c
+source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '898'
 ht-degree: 6%
 
 ---
@@ -94,7 +94,18 @@ ht-degree: 6%
    + [Aggiungi colonna personalizzata](inbox-customization/add-married-column.md)
    + [Utilizzo di un modello visivo](inbox-customization/use-sightly-template.md)
 
-
++ Memorizzazione e recupero del modulo adattivo{#store-and-retrieve-af-with-2fa}
+   + [Introduzione](store-and-retrieve-af-with-2fa/introduction.md)
+   + [Configura origine dati](store-and-retrieve-af-with-2fa/configure-data-source.md)
+   + [Allegati modulo store](store-and-retrieve-af-with-2fa/store-form-attachments.md)
+   + [Archivia dati modulo](store-and-retrieve-af-with-2fa/store-form-data.md)
+   + [Crea servlet](store-and-retrieve-af-with-2fa/create-servlet.md)
+   + [Rendering del modulo con i dati salvati](store-and-retrieve-af-with-2fa/retrieve-saved-form.md)
+   + [Crea libreria client](store-and-retrieve-af-with-2fa/create-client-lib.md)
+   + [Integrazione con il servizio OTP](store-and-retrieve-af-with-2fa/verify-users-with-otp.md)
+   + [Creare il modulo principale](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
+   + [Creare il modulo MyAccount](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
+   + [Distribuzione dell’esempio](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
 + Esportazione dei dati inviati in formato CSV{#export-submitted-data-csv-format}
    + [Esporta dati inviati](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + Moduli HTML5{#html5-forms}
@@ -109,7 +120,7 @@ ht-degree: 6%
    + [Creazione e configurazione di un modulo adattivo](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
    + [Configurare il modulo adattivo per il singolo firmatario](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
    + [Configurare il modulo adattivo per due firmatari](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
-   + [Configurare Automated Forms Conversion Service](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
+   + [Configurare il servizio Automated forms conversion](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
    + [Converti modulo PDF in modulo adattivo](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Configurare il modulo adattivo convertito](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Utilizzo di modelli XDP con  Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
