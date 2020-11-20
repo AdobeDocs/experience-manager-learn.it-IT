@@ -12,7 +12,7 @@ activity: setup
 version: 6.4
 discoiquuid: 548fb2ec-cfcf-4fe2-a02a-14f267618d68
 translation-type: tm+mt
-source-git-commit: f07680e73316efb859a675f4b2212d8c3e03f6a0
+source-git-commit: 233ad7184cb48098253a78c07a3913356ac9e774
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Per distribuire le risorse sul sistema locale:
 
 * [Download e implementazione di DevelopingWitheServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-*[Scaricare e distribuire il bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue. Si tratta del pacchetto OSGI personalizzato che consente di impostare i valori di un elemento nei dati json inviati.
+* [Scaricate e distribuite il bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue. Si tratta del pacchetto OSGI personalizzato che consente di impostare i valori di un elemento nei dati json inviati.
 
 * [Scaricare ed estrarre il contenuto del file zip](assets/set-value-jsondata.zip)
    * Impostate il browser su [Package Manager](http://localhost:4502/crx/packmgr/index.jsp)
@@ -63,10 +63,8 @@ Per distribuire le risorse sul sistema locale:
 * I campi del primo pannello sono disattivati.
 * Il pannello per approvare o rifiutare la richiesta è ora visibile.
 
-
-
 >[!NOTE]
-
+>
 >Poiché il modulo adattivo viene precompilato utilizzando il profilo utente, assicurarsi che le informazioni relative al profilo [utente amministratore ](http://localhost:4502/security/users.html). Come minimo, accertatevi di aver impostato i valori dei campi Nome, Cognome e E-mail.
 >Potete abilitare la registrazione di debug abilitando logger per com.aemforms.setvalue.core.SetValueInJson [da qui](http://localhost:4502/system/console/slinglog)
 
