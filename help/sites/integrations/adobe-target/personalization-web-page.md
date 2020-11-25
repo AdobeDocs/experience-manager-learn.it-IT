@@ -1,6 +1,6 @@
 ---
 title: Personalizzazione dell'esperienza della pagina Web completa
-description: Scoprite come creare un'attività per reindirizzare le pagine del sito ospitate su AEM a una nuova pagina utilizzando  Adobe Target.
+description: Scopri come creare un'attività Target per reindirizzare le pagine del sito Web AEM a nuove pagine utilizzando  Adobe Target.
 feature: targeting
 topics: integrations, authoring, personalization, activity, offers
 audience: all
@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6353
 thumbnail: 6353-personalization-web-page.jpg
 translation-type: tm+mt
-source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,14 @@ ht-degree: 0%
 
 Scoprite come creare un&#39;attività per reindirizzare le pagine del sito ospitate su AEM a una nuova pagina utilizzando  Adobe Target.
 
-Prima di creare un&#39;attività in Target, è necessario eseguire la configurazione:
+## Prerequisiti
 
-1. [Integrare Experience Platform Launch e AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
+Per personalizzare le pagine intere di un sito Web AEM, è necessario completare la seguente configurazione:
 
-## Panoramica scenario
+1. [Aggiungere  Adobe Target al sito Web AEM](./add-target-launch-extension.md)
+1. [Attivazione di una chiamata Adobe Target  da Launch](./load-and-fire-target.md)
+
+## Panoramica dello scenario
 
 Il sito WKND ha riprogettato la propria pagina principale e desidera reindirizzare i visitatori della pagina principale corrente alla nuova pagina principale. Allo stesso tempo, puoi comprendere anche in che modo la nuova home page consente di migliorare il coinvolgimento e le entrate degli utenti. In qualità di esperto di marketing, vi è stata assegnata l&#39;attività di creazione di un&#39;attività per reindirizzare i visitatori alla nuova home page. Esaminate la home page del sito WKND e scoprite come creare un&#39;attività utilizzando  Adobe Target.
 
