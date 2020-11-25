@@ -1,6 +1,6 @@
 ---
-title: Crea  account di Cloud Service Adobe Target
-description: Procedura dettagliata sull'integrazione di Adobe Experience Manager come Cloud Service con  Adobe Target mediante l'autenticazione Cloud Service e  Adobe IMS
+title: Crea  account Cloud Service Adobe Target in AEM
+description: Integrate Adobe Experience Manager come Cloud Service con  Adobe Target utilizzando l'autenticazione IMS di Cloud Service e  Adobe.
 feature: cloud-services
 topics: integrations, administration, development
 audience: administrator, developer
@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6044
 thumbnail: 41244.jpg
 translation-type: tm+mt
-source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '143'
 ht-degree: 0%
 
 ---
@@ -20,30 +20,13 @@ ht-degree: 0%
 
 # Crea  account di Cloud Service Adobe Target {#adobe-target-cloud-service}
 
-Procedura dettagliata sull&#39;integrazione di Adobe Experience Manager come Cloud Service con  Adobe Target mediante l&#39;autenticazione IMS di Cloud Service e  Adobe.
+Il seguente video illustra come collegare AEM come un Cloud Service con  Adobe Target.
+
+Questa integrazione consente al servizio AEM Author di comunicare direttamente con  Adobe Target e di inviare i frammenti esperienza da AEM a Target come offerte.  Questa integrazione *non* aggiunge  Adobe Target JavaScript (AT.js) alle  pagine Web di AEM Sites, per integrare [AEM con Launch utilizzando l&#39;estensione](../experience-platform-launch/connect-aem-launch-adobe-io.md)Target.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41244?quality=12&learn=on)
 
 >[!CAUTION]
 >
->Esiste un problema noto  configurazione dei Cloud Services Adobe Target mostrato nel video. È invece consigliabile seguire gli stessi passaggi nel video, ma utilizzare la configurazione [Cloud Services](https://docs.adobe.com/content/help/en/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html)precedenti  Adobe Target.
+>Esiste un problema noto  configurazione dei Cloud Services Adobe Target mostrato nel video. Fino a quando questo problema non verrà risolto, seguite gli stessi passaggi nel video ma utilizzate la configurazione [dei Cloud Services Adobe Target](https://docs.adobe.com/content/help/en/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html)precedenti .
 
-## Problemi comuni
-
-Quando si esporta un frammento esperienza in  destinazione Adobe, se l&#39;integrazione di Target nella console di amministrazione non dispone dell&#39;autorizzazione appropriata, potrebbe essere visualizzato un errore come mostrato di seguito.
-
-**Errore** interfaccia utente API![Target errore interfaccia utente](assets/error-target-offer.png)
-
-**Errore** di registro della console API![Target](assets/target-console-error.png)
-
-
-**Soluzione**
-
-1. Passa a [Admin Console](https://adminconsole.adobe.com/)
-2. Selezionate Products (Prodotti) >  Adobe Target > Product Profile (Profilo di prodotto)
-3. Nella scheda Integrazioni, seleziona il progetto di integrazione ( progetto I/O del Adobe)
-4. Assegnare il ruolo di Editor o Approver.
-
-![Errore API di Target](assets/target-permissions.png)
-
-L&#39;aggiunta dell&#39;autorizzazione giusta all&#39;integrazione con Target ti aiuterà a risolvere il problema di cui sopra.
