@@ -6,9 +6,9 @@ user-guide-description: Raccolta di risorse AEM Forms per sviluppatori principia
 breadcrumb-title: Tutorial di AEM Forms
 index: y
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 787a79663472711b78d467977d633e3d410803e5
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '896'
 ht-degree: 6%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 6%
    + [Aggiunta di una tabella al pannello dei redditi](creating-your-first-adaptive-form/adding-table-to-income-panel.md)
    + [Configurazione del pannello delle risorse](creating-your-first-adaptive-form/configuring-assets-panel.md)
    + [Utilizzo di funzioni e editor di codice personalizzati](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
-+ Gestione degli invii dei moduli {#handling-af-form-submissions}
++ Gestione degli invii di moduli {#handling-af-form-submissions}
    + [Creazione di un flusso di lavoro di revisione](handling-form-submissions/creating-a-review-workflow.md)
    + [Configurazione del modulo adattivo per attivare il flusso di lavoro](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
    + [Visualizzazione della pagina di ringraziamento](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
@@ -38,7 +38,7 @@ ht-degree: 6%
    + [Flusso di lavoro con tempo pagato disattivato](handling-form-submissions/paid-time-off-request-workflow.md)
    + [Configurazione del modulo adattivo per attivare AEM flusso di lavoro - video](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
    + [Personalizza assegnazione notifica attività](handling-form-submissions/customize-assign-task-notification.md)
-+ Integrazioni Utili{#some-useful-integrations}
++ Integrazioni utili{#some-useful-integrations}
    + [Autenticazione a due fattori](some-useful-integrations/two-factor-authentication.md)
 
 + Moduli adattivi {#adaptive-forms}
@@ -83,18 +83,18 @@ ht-degree: 6%
    + [Pre-compilazione di Forms HTML5](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Modello dati modulo con Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Aggiunta dinamica di elementi al componente Scelta](adaptive-forms/choice-group-items-adding-dynamically-article.md)
-+ Precompilazione del modulo adattivo con il modello dati del modulo{#prefill-fdm-db}
++ Precompilazione del modulo adattivo utilizzando il modello dati del modulo{#prefill-fdm-db}
    + [Introduzione](prefill-fdm-db/introduction.md)
    + [Creazione di tabelle di database](prefill-fdm-db/create-database-tables.md)
    + [Configurazione del modello dati del modulo](prefill-fdm-db/configuring-form-data-model.md)
    + [Ottieni parametro di richiesta](prefill-fdm-db/get-request-parameter.md)
    + [Creare un modulo adattivo](prefill-fdm-db/create-adaptive-form.md)
-+ Personalizzazione Inbox{#inbox-customization}
++ Personalizzazione inbox{#inbox-customization}
    + [Introduzione](inbox-customization/introduction.md)
    + [Aggiungi colonna personalizzata](inbox-customization/add-married-column.md)
    + [Utilizzo di un modello visivo](inbox-customization/use-sightly-template.md)
 
-+ Memorizzazione e recupero del modulo adattivo{#store-and-retrieve-af-with-2fa}
++ Memorizzazione e recupero di moduli adattivi{#store-and-retrieve-af-with-2fa}
    + [Introduzione](store-and-retrieve-af-with-2fa/introduction.md)
    + [Configura origine dati](store-and-retrieve-af-with-2fa/configure-data-source.md)
    + [Allegati modulo store](store-and-retrieve-af-with-2fa/store-form-attachments.md)
@@ -132,15 +132,15 @@ ht-degree: 6%
    + [Variabile ArrayList](variables-aem-workflow/part4.md)
    + [Variabile del modello dati modulo](variables-aem-workflow/form-data-model.md)
    + [Editor di regole in AEM flusso di lavoro](variables-aem-workflow/part5.md)
-+ Memorizzazione e recupero dei dati del modulo nel database MySQL{#storing-and-retrieving-form-data}
++ Memorizzazione e recupero dei dati del modulo in MySQL DB{#storing-and-retrieving-form-data}
    + [Introduzione](storing-retrieving-form-data/introduction.md)
    + [Configura origine dati](storing-retrieving-form-data/part1.md)
-   + [Servlet per memorizzare i dati](storing-retrieving-form-data/part2.md)
-   + [Servizio per il recupero dei dati](storing-retrieving-form-data/part3.md)
+   + [Servizio per la memorizzazione dei dati](storing-retrieving-form-data/part3.md)
+   + [Crea servlet](storing-retrieving-form-data/part2.md)
    + [Libreria client](storing-retrieving-form-data/part4.md)
    + [Modello modulo adattivo](storing-retrieving-form-data/part5.md)
    + [Distribuire risorse di esempio](storing-retrieving-form-data/part6.md)
-+ Attivazione AEM flusso di lavoro dall&#39;invio del modulo per dispositivi mobili{#offline-mobile-form-submission}
++ Attivazione AEM flusso di lavoro dall&#39;invio del modulo mobile{#offline-mobile-form-submission}
    + [Introduzione](offline-mobile-form-submission/introduction.md)
    + [Profilo personalizzato](offline-mobile-form-submission/part-one.md)
    + [Gestione invio PDF](offline-mobile-form-submission/part-two.md)
@@ -155,7 +155,7 @@ ht-degree: 6%
 + Elenco dei tipi di risorse personalizzate in Forms Portal{#listing-custom-asset-types}
    + [Part1 - Registrazione dei tipi di risorse personalizzate](listing-custom-asset-types/part1.md)
    + [Parte2 - Creazione di un modello personalizzato](listing-custom-asset-types/part2.md)
-+  AEM Forms Con Marketo{#aem-forms-with-marketo}
++  AEM Forms con Marketo{#aem-forms-with-marketo}
    + [Parte1 - Introduzione](aem-forms-with-marketo/part1.md)
    + [Parte2 - Autenticazione personalizzata](aem-forms-with-marketo/part2.md)
    + [Parte3 - Origine dati](aem-forms-with-marketo/part3.md)
@@ -204,7 +204,7 @@ ht-degree: 6%
    + [Utilizzo del componente Tabella  documento canale di stampa AEM Forms](interactive-communications/table-in-print-channel-documents-video-use.md)
    + [Generazione di documenti di comunicazione interattiva per il canale di stampa mediante le cartelle esaminate](interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
 
-+ Interactive Communications For Web Channel {#ic-web-channel-tutorial}
++ Comunicazioni interattive per il canale Web {#ic-web-channel-tutorial}
    + [Introduzione](ic-web-channel-tutorial/introduction.md)
    + [Imposta Tomcat](ic-web-channel-tutorial/partone.md)
    + [Crea origine dati](ic-web-channel-tutorial/parttwo.md)
