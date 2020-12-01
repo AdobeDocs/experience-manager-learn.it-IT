@@ -8,18 +8,34 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
 translation-type: tm+mt
-source-git-commit: 6ae8110d4f4bc80682c35b0dab3fe7a62cad88f3
+source-git-commit: 787a79663472711b78d467977d633e3d410803e5
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 0%
+source-wordcount: '197'
+ht-degree: 1%
 
 ---
 
 # Configura origine dati
 
-Esistono diversi modi con cui AEM l&#39;integrazione con il database esterno. Una delle pratiche più comuni e standard dell&#39;integrazione del database è l&#39;utilizzo delle proprietà di configurazione DataSource pool di Apache Sling Connection tramite [configMgr](http://localhost:4502/system/console/configMgr).
-Il primo passaggio consiste nel scaricare e distribuire i driver [](https://mvnrepository.com/artifact/mysql/mysql-connector-java) My SQL appropriati in AEM.
-Quindi impostare le proprietà DataSource del pool di connessioni Sling. Queste proprietà sono specifiche del database. La schermata seguente mostra le impostazioni utilizzate per questa esercitazione. Lo schema del database viene fornito come parte di questa esercitazione.
-![data-source](assets/data-source.png)
+Esistono diversi modi con cui AEM l&#39;integrazione con il database esterno. Una delle procedure più comuni e standard per l&#39;integrazione del database è l&#39;utilizzo delle proprietà di configurazione DataSource in pool di connessioni Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
+Il primo passaggio consiste nel scaricare e distribuire i driver [MySql](https://mvnrepository.com/artifact/mysql/mysql-connector-java) appropriati in AEM.
+Create Apache Sling Connection Pooled DataSource e fornite le proprietà come specificato nella schermata sottostante. Lo schema del database viene fornito come parte di questa esercitazione.
 
-Nel database è presente una tabella denominata formdata con le 3 colonne come mostrato nella schermata sottostante![data-base](assets/data-base-tables.PNG)
+![data-source](assets/save-continue.PNG)
+
+Nel database è presente una tabella denominata formdata con le 3 colonne come mostrato nella schermata sottostante.
+
+![banca dati](assets/data-base-tables.PNG)
+
+Il file sql per creare lo schema può essere [scaricato da qui](assets/form-data-db.sql). È necessario importare il file utilizzando WorkbenchSql per creare lo schema e la tabella.
+
+>[!NOTE]
+>Assicurarsi di assegnare un nome all&#39;origine dati **SaveAndContinue**. Il codice di esempio utilizza il nome per connettersi al database.
+
+| Nome proprietà | Valore |
+------------------------|---------------------------------------
+| Nome origine dati | SaveAndContinue |
+| Classe driver JDBC | com.mysql.cj.jdbc.Driver |
+| URI di connessione JDBC | jdbc:mysql://localhost:3306/aemformstutorial |
+
+
