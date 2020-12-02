@@ -20,8 +20,8 @@ ht-degree: 1%
 
 # Configura origine dati
 
-Esistono diversi modi con cui AEM l&#39;integrazione con il database esterno. Una delle pratiche più comuni e standard dell&#39;integrazione del database è l&#39;utilizzo delle proprietà di configurazione DataSource pool di Apache Sling Connection tramite [configMgr](http://localhost:4502/system/console/configMgr).
-Il primo passaggio consiste nel scaricare e distribuire i driver [](https://mvnrepository.com/artifact/mysql/mysql-connector-java) MySQL appropriati da AEM.
+Esistono diversi modi con cui AEM l&#39;integrazione con il database esterno. Una delle procedure più comuni e standard per l&#39;integrazione del database è l&#39;utilizzo delle proprietà di configurazione DataSource in pool di connessioni Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
+Il primo passaggio consiste nel scaricare e distribuire i driver [MySQL](https://mvnrepository.com/artifact/mysql/mysql-connector-java) appropriati per AEM.
 Quindi impostare le proprietà DataSource del pool di connessioni Sling specifiche per il database. La schermata seguente mostra le impostazioni utilizzate per questa esercitazione. Lo schema del database viene fornito come parte di questa esercitazione.
 
 ![data-source](assets/data-source.JPG)
@@ -37,20 +37,21 @@ Quindi impostare le proprietà DataSource del pool di connessioni Sling specific
 ## Crea database
 
 
-Il seguente database è stato utilizzato per questo caso d&#39;uso. Il database ha una tabella chiamata `formdatawithattachments` con le 4 colonne come mostrato nella schermata sottostante.
+Il seguente database è stato utilizzato per questo caso d&#39;uso. Il database ha una tabella denominata `formdatawithattachments` con le 4 colonne come mostrato nella schermata seguente.
 ![banca dati](assets/table-schema.JPG)
 
-* I dati **della colonna** contengono i dati del modulo adattivo.
-* La colonna **attachmentsInfo** contiene le informazioni sugli allegati del modulo.
+* La colonna **afdata** contiene i dati del modulo adattivo.
+* La colonna **attachmentsInfo** contiene le informazioni relative agli allegati del modulo.
 * Le colonne **phoneNumber** contengono il numero di cellulare della persona che compila il modulo.
 
-Creare il database importando lo schema [del](assets/data-base-schema.sql)database tramite WorkbenchSQL.
+Creare il database importando lo [schema del database](assets/data-base-schema.sql)
+utilizzo del workbench MySQL.
 
 ## Crea modello dati modulo
 
 Creare un modello dati modulo e basarlo sull&#39;origine dati creata nel passaggio precedente.
 Configurare il servizio **get** di questo modello di dati del modulo come mostrato nella schermata sottostante.
-Assicurarsi di non restituire array nel servizio **get** .
+Assicurarsi di non restituire array nel servizio **get**.
 
 Questo servizio **get** viene utilizzato per recuperare il numero di telefono associato all&#39;ID applicazione.
 
