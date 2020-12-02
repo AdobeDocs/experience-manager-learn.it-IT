@@ -203,5 +203,5 @@ public class MarketoConfigurationService {
 ```
 
 1. Create e distribuite il bundle sul server AEM.
-1. [Individuate il browser per configurareMgr](http://localhost:4502/system/console/configMgr) e cercate &quot;Configurazione del servizio Marketo Credentials&quot;
+1. [Individuate il browser in ](http://localhost:4502/system/console/configMgr) configMgrand search per &quot;Marketo Credentials Service Configuration&quot;
 1. Specificare le proprietà appropriate specifiche per l&#39;istanza di Marketo
