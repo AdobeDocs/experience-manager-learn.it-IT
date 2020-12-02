@@ -31,7 +31,7 @@ Di seguito è riportata la FileMap inviata al servlet. La chiave è il campo mod
 }
 ```
 
-Di seguito è riportato il codice che estrae gli allegati dalla richiesta e li memorizza nella cartella **/content/afattachments** .
+Di seguito è riportato il codice che estrae gli allegati dalla richiesta e li memorizza nella cartella **/content/afattachments**
 
 ```java
 public String storeAFAttachments(JSONObject fileMap, SlingHttpServletRequest request) {
