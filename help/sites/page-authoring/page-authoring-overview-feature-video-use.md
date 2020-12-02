@@ -20,7 +20,7 @@ ht-degree: 11%
 ---
 
 
-# Authoring a page {#authoring-page-aem-sites}
+# Creazione di una pagina {#authoring-page-aem-sites}
 
 Scoprite come creare una pagina in  Adobe Experience Manager Sites utilizzando l&#39;interfaccia utente di Editor sito.
 
