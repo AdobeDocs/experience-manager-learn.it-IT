@@ -35,7 +35,7 @@ I moduli Acrobat sono moduli creati utilizzando  Acrobat. È possibile creare un
 >
 >Se si invia un documento basato su XFA, è necessario appiattire il documento e i tag firma Adobe Sign  devono essere presenti come testo statico nel documento.
 
-[documento tag di testo Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html)
+[ documento tag di testo Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html)
 
 >[!NOTE]
 >
