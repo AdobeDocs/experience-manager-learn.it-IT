@@ -20,13 +20,13 @@ ht-degree: 0%
 ---
 
 
-# Generazione del token Web e del token di accesso JSON {#generating-json-web-token-and-access-token}
+# Generazione token Web JSON e token di accesso {#generating-json-web-token-and-access-token}
 
 In questo articolo viene illustrato il codice necessario per generare JWT e Token di accesso necessari per effettuare chiamate REST a  Adobe Campaign Standard
 
 ## Genera token Web JSON {#generate-json-web-token}
 
-Il primo passaggio nell&#39;utilizzo  API Adobe Campaign consiste nel generare JWT. Sono disponibili numerosi esempi di codice per la generazione di JWT per ACS. Potete seguire questo esempio di codice [Java](https://github.com/AdobeDocs/adobeio-auth/tree/stage/JWT/samples/adobe-jwt-java) per generare JWT.
+Il primo passaggio nell&#39;utilizzo  API Adobe Campaign consiste nel generare JWT. Sono disponibili numerosi esempi di codice per la generazione di JWT per ACS. Potete seguire questo [codice Java esempio](https://github.com/AdobeDocs/adobeio-auth/tree/stage/JWT/samples/adobe-jwt-java) per generare JWT.
 
 Per utilizzare l&#39;API ACS con  AEM Forms, è necessario creare JWT all&#39;interno di un bundle OSGi. Il frammento di codice seguente è stato utilizzato per generare JWT in questo bundle OSGI di esempio. I dettagli relativi all&#39;istanza ACS sono ricavati dalle proprietà di configurazione OSGI, impostate come mostrato sopra.
 
