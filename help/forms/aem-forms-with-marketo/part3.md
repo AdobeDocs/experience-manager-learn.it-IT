@@ -22,13 +22,13 @@ ht-degree: 1%
 
  Integrazione dei dati AEM Forms consente di configurare e connettersi a origini dati diverse. I seguenti tipi sono supportati out-of-the-box. Tuttavia, con una piccola personalizzazione, è possibile integrarsi anche con altre origini dati.
 
-1. Database relazionali - MySQL, Microsoft SQL Server, IBM DB2 e Oracle RDBMS
+1. Database relazionali - MySQL, Microsoft SQL Server, IBM DB2 e  Oracle RDBMS
 1. AEM profilo utente
 1. Servizi Web RESTful
 1. Servizi Web basati su SOAP
 1. Servizi OData
 
-Per l&#39;integrazione  AEM Forms con Marketo, utilizzeremo i servizi web RESTful. Il primo passo nell&#39;integrazione è configurare un&#39;origine [dati.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Utilizzate il file swagger fornito nell&#39;ambito di questa esercitazione. La schermata seguente mostra le proprietà importanti che è necessario specificare durante la configurazione dell&#39;origine dati.
+Per l&#39;integrazione  AEM Forms con Marketo, utilizzeremo i servizi web RESTful. Il primo passo nell&#39;integrazione è configurare un&#39;origine dati [.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Utilizzate il file swagger fornito nell&#39;ambito di questa esercitazione. La schermata seguente mostra le proprietà importanti che è necessario specificare durante la configurazione dell&#39;origine dati.
 ![datasource](assets/datasource.jfif)
 
 &quot;marketo.json&quot; è il file swagger e viene fornito come parte delle risorse di questa esercitazione.
@@ -39,7 +39,7 @@ Il tipo di autenticazione è personalizzato e l&#39;implementazione dell&#39;aut
 
 Dopo, la configurazione dell&#39;origine dati il passaggio successivo consiste nella creazione di un modello dati modulo basato sull&#39;origine dati configurata nel passaggio precedente. Per creare un modello dati modulo, procedere come segue:
 
-Posiziona il browser sulla pagina delle integrazioni [dati.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Vengono elencate tutte le integrazioni di dati create nell&#39;istanza AEM.
+Posizionare il browser sulla pagina [integrazioni di dati.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Vengono elencate tutte le integrazioni di dati create nell&#39;istanza AEM.
 
 1. Fate clic su Crea | Modello dati modulo
 1. Fornire un titolo significativo, ad esempio FormsAndMarketo e fare clic su Avanti
