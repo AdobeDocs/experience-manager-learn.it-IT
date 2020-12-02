@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Invio Della Pagina Di Ringraziamento {#submitting-to-thank-you-page}
+# Invio Alla Pagina Di Ringraziamento {#submitting-to-thank-you-page}
 
 L&#39;opzione Invia a endpoint REST passa i dati compilati nel modulo a una pagina di conferma configurata come parte della richiesta di GET HTTP. Potete aggiungere il nome dei campi da richiedere. Il formato della richiesta è:
 
@@ -39,8 +39,8 @@ Potete anche inviare l&#39;endpoint esterno tramite POST. A tal fine, è suffici
 
 Per testare questa funzionalità sul server, seguire le istruzioni riportate di seguito:
 
-* Importa in AEM il file di [risorse associato a questo articolo utilizzando il gestore pacchetti](assets/submittingtorestendpoint.zip)
-* Posizionate il browser sul modulo [Time Off (Tempo di disattivazione)](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Importa il file di risorse [associato a questo articolo in AEM utilizzando il gestore pacchetti](assets/submittingtorestendpoint.zip)
+* Puntare il browser sul [Modulo di richiesta di ora di disattivazione](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Compilare il campo richiesto e inviare il modulo
 * Dovresti ottenere la pagina di ringraziamento con le tue informazioni popolate sulla pagina
 
