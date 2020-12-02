@@ -28,7 +28,7 @@ Adobe Experience Manager Style System consente variazioni visive dei componenti 
 
 Questo video illustra come sfruttare il sistema di stile per creare aspetti visivi straordinariamente diversi per un singolo componente, utilizzando solo CSS.
 
-Gli stili mostrati sono forniti dall&#39;applicazione [](https://github.com/adobe/aem-guides-wknd)WKND. Questi stili sono definiti come CSS e non richiedono modifiche alla logica di back-end del componente, allo script HTL o al modello Sling.
+Gli stili mostrati sono forniti dall&#39;applicazione [WKND](https://github.com/adobe/aem-guides-wknd). Questi stili sono definiti come CSS e non richiedono modifiche alla logica di back-end del componente, allo script HTL o al modello Sling.
 
 ## Risorse aggiuntive {#additional-resources}
 
