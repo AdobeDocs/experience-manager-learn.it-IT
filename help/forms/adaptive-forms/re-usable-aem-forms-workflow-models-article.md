@@ -27,7 +27,7 @@ A partire  versione AEM Forms 6.5, ora è possibile creare modelli di flussi di 
 Per progettare un flusso di lavoro di questo tipo, effettuare le seguenti operazioni
 
 1. Accedi a AEM
-1. Posizionare il browser sul modello di [workflow](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
+1. Posizionare il browser sul [modello di flusso di lavoro](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
 1. Fate clic su Crea | Crea modello per aggiungere il modello di workflow
 1. Specificare il nome e il titolo appropriati per il modello di workflow, quindi fare clic su Fine
 1. Aprire il modello appena creato in modalità di modifica
@@ -39,7 +39,8 @@ Per progettare un flusso di lavoro di questo tipo, effettuare le seguenti operaz
 Sono disponibili 3 modi per specificare il percorso del modulo
 
 1. Disponibile su un percorso assoluto: il flusso di lavoro verrà associato strettamente al modulo adattivo. Questo non è quello che vogliamo qui
-1. **Inviato al flusso di lavoro** - Questo significa che quando il modulo adattivo viene inviato, il motore del flusso di lavoro estrae il nome del modulo dai dati inviati. Questa è l&#39;opzione che deve essere selezionata
-1. Disponibile su un percorso in una variabile. Questo significa che il modulo adattivo verrà prelevato dalla variabile del flusso di lavoro. La schermata seguente mostra l&#39;opzione corretta che è necessario scegliere per il flusso di lavoro di sganciamento dal modulo adattivo.
+1. **Inviato al flusso di lavoro**  - Questo significa che quando il modulo adattivo viene inviato, il motore del flusso di lavoro estrae il nome del modulo dai dati inviati. Questa è l&#39;opzione che deve essere selezionata
+1. Disponibile in un percorso in una variabile. Questo significa che il modulo adattivo verrà prelevato dalla variabile del flusso di lavoro.
+La schermata seguente mostra l’opzione corretta che è necessario scegliere per sganciare il flusso di lavoro dal modulo adattivo
 
 ![workflowmodel](assets/workflomodel.PNG)
