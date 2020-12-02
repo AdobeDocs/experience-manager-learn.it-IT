@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Download e caricamento {#download-and-upload}
+# Download e caricamento di {#download-and-upload}
 
 Scoprite come scaricare e caricare i file di risorse da e per  AEM Assets mediante il pannello Collegamento risorse.
 
