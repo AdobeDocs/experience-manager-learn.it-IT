@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Un amministratore può configurare una cartella di rete, nota come Cartella esaminata, in modo che quando un utente inserisce un file (ad esempio un file PDF) nella cartella esaminata, venga avviato un flusso di lavoro, un servizio o un&#39;operazione script preconfigurata per l&#39;elaborazione del file aggiunto. Dopo che il servizio ha eseguito l&#39;operazione specificata, salva il file dei risultati in una cartella di output specificata. Per ulteriori informazioni su flusso di lavoro, servizio e script.
 
-Per ulteriori informazioni sulla creazione di una cartella esaminata, [fate clic qui](https://helpx.adobe.com/experience-manager/6-4/forms/using/Creating-Configure-watched-folder.html)
+Per ulteriori informazioni sulla creazione di una cartella esaminata, [fare clic qui](https://helpx.adobe.com/experience-manager/6-4/forms/using/Creating-Configure-watched-folder.html)
 
 Cartelle esaminate vengono utilizzate per generare documenti in modalità batch. Utilizzando il meccanismo delle cartelle esaminate, potete generare comunicazioni interattive per il canale di stampa oppure utilizzare il servizio di output per unire i dati con il modello.
 
@@ -34,7 +34,7 @@ Il servizio di output è un servizio OSGi che fa parte di AEM Document Services.
 
 Per ulteriori informazioni sul servizio di output, [fare clic qui](https://helpx.adobe.com/aem-forms/6/output-service.html).
 Per configurare la cartella esaminata sul sistema, attenetevi alla procedura seguente:
-* [Scaricate ed estraete il contenuto del file](assets/outputservicewatchedfolderkt.zip)zip. Questo file zip contiene il pacchetto per la creazione di cartelle esaminate e file di esempio per testare il servizio di output utilizzando il meccanismo delle cartelle esaminate
+* [Scaricate ed estraete il contenuto del file](assets/outputservicewatchedfolderkt.zip) zip. Questo file zip contiene il pacchetto per la creazione di cartelle esaminate e file di esempio per testare il servizio di output utilizzando il meccanismo delle cartelle esaminate
    * Sistema Windows
 
       * Importa outputservicewatchedfolder.zip in AEM utilizzando il gestore pacchetti
