@@ -67,10 +67,16 @@ La riga 6 esporta i dati xml dal file PDF
 1. /content/AemFormsSamples/exportdata
 1. /content/AemFormsSamples/outputservice
 1. Cerca &quot;Filtro Sling Referrer&quot;
-1. Selezionare la casella di controllo &quot;Consenti valori nulli&quot;. (Questa impostazione deve essere utilizzata solo a scopo di test)Esistono diversi modi per testare il codice di esempio. La più rapida e semplice è utilizzare l&#39;app Postman. Postman consente di effettuare richieste POST al server. Installate l&#39;app Postman nel sistema.
+1. Selezionare la casella di controllo &quot;Consenti valori nulli&quot;. (Questa impostazione deve essere solo a scopo di test)
+Esistono diversi modi per testare il codice di esempio. La più rapida e semplice è utilizzare l&#39;app Postman. Postman consente di effettuare richieste POST al server. Installate l&#39;app Postman nel sistema.
 Avviate l&#39;app e immettete il seguente URL per verificare l&#39;API dei dati di esportazione
 
-Accertatevi di aver selezionato &quot;POST&quot; dall’elenco a discesahttp://localhost:4502/content/AemFormsSamples/exportdata.htmlAccertatevi di specificare &quot;Autorizzazione&quot; come &quot;Autenticazione di base&quot;. Specificare il nome utente AEM server e la passwordPassare alla scheda &quot;Body&quot; e specificare i parametri di richiesta come mostrato nell&#39;immagine sotto![export](assets/postexport.png)Quindi fare clic sul pulsante Invia
+Accertatevi di aver selezionato &quot;POST&quot; dall&#39;elenco a discesa
+http://localhost:4502/content/AemFormsSamples/exportdata.html
+Accertatevi di specificare &quot;Autorizzazione&quot; come &quot;Autenticazione di base&quot;. Specificare il nome utente e la password del server AEM
+Andate alla scheda &quot;Body&quot; e specificate i parametri della richiesta come mostrato nell&#39;immagine seguente
+![export](assets/postexport.png)
+Quindi fate clic sul pulsante Invia
 
 Il pacchetto contiene 3 campioni. I paragrafi seguenti spiegano quando utilizzare il servizio di output o Forms Service, l&#39;url del servizio, i parametri di input previsti da ogni servizio
 
@@ -86,7 +92,7 @@ Il pacchetto contiene 3 campioni. I paragrafi seguenti spiegano quando utilizzar
 
 **Importa dati in file PDF:**
 * Uso di FormsService per importare dati in un file PDF
-* **URL** POST - http://localhost:4502/content/AemFormsSamples/mergedata.html
+* **URL**  POST- http://localhost:4502/content/AemFormsSamples/mergedata.html
 * **Parametri richiesta:**
 
    * pdffile : Il file pdf con cui si desidera unire i dati
