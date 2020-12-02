@@ -18,7 +18,7 @@ ht-degree: 14%
 ---
 
 
-# Informazioni sui componenti core{#understanding-core-components}
+# Nozioni di base sui componenti{#understanding-core-components}
 
 AEM Componenti di base è un set di componenti standard da utilizzare con Adobe Experience Manager. Realizzati con  Adobi  best practice e standard, i componenti core forniscono una serie di funzionalità di base per l&#39;implementazione di Siti.
 
