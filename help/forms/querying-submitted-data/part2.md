@@ -29,7 +29,7 @@ Per memorizzare i dati inviati nel database, scriveremo un servlet per estrarre 
 
 È stato creato un invio personalizzato per gestire l&#39;invio del modulo. In questo post.POST.jsp di invio personalizzato inoltreremo la richiesta al nostro servlet.
 
-Per ulteriori informazioni sull&#39;invio personalizzato leggete questo [articolo](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
+Per ulteriori informazioni sull&#39;invio personalizzato, leggete questo [articolo](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,&quot;/bin/storeafsubmit&quot;,null,null);
 
