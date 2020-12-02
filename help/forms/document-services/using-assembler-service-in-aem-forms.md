@@ -107,19 +107,19 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 Per utilizzare questa funzionalità sul server AEM
 
-* Scaricate [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) nel sistema locale.
+* Scaricate il file [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) nel sistema locale.
 * Caricate e installate il pacchetto utilizzando il gestore [pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
-* [Download del pacchetto Document Services personalizzato](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* Download [dello sviluppo con Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* Distribuzione e avvio dei bundle tramite la console Web [felix](http://localhost:4502/system/console/bundles)
-* Impostate il browser su [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
+* Download di [pacchetto Document Services](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* Download di [Sviluppo con Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* Distribuire e avviare i bundle utilizzando la [console Web dei file ](http://localhost:4502/system/console/bundles)
+* Posizionare il browser su [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
 * Trascinamento di un paio di file PDF
 
 >[!NOTE]
 >
 >Verificate che l&#39;installazione  AEM Forms sia completa. Tutti i bundle devono essere in stato attivo.
 >
->Accertatevi di aver aggiunto - Boot delegate RSA e BouncyCastle librerie come indicato in questa [installazione  AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>Accertatevi di aver aggiunto - Boot delegate RSA e BouncyCastle librerie come indicato in questo [Installazione  AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
 >**Le avventure di questa demo**
 >
