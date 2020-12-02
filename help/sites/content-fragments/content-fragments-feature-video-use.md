@@ -23,23 +23,23 @@ I frammenti di contenuto sono un&#39;astrazione di contenuto in AEM che consente
 
 >[!NOTE]
 >
->La funzionalità AEM frammento di contenuto di questi video è stata introdotta per la prima volta in [AEM 6.3 + FP 1908 e FP19614](https://helpx.adobe.com/experience-manager/6-3/release-notes/content-services-fragments-featurepack.html).
+>La funzionalità AEM frammento di contenuto di questi video è stata introdotta per la prima volta in [AEM 6.3 + FP 19008 e FP19614](https://helpx.adobe.com/experience-manager/6-3/release-notes/content-services-fragments-featurepack.html).
 
 
 AEM Frammenti di contenuto sono contenuti editoriali basati su testo che possono includere alcuni elementi di dati strutturati associati ma considerati contenuti puri, senza informazioni sulla progettazione o sul layout. I frammenti di contenuto vengono generalmente creati come contenuti che non riguardano i canali, destinati ad essere utilizzati e riutilizzati tra i canali, che a loro volta racchiudono il contenuto in un&#39;esperienza specifica per il contesto.
 
-Questa serie video illustra il ciclo di vita per l’authoring dei frammenti di contenuto in AEM. Informazioni dettagliate sulla [distribuzione dei frammenti di contenuto sono disponibili qui](content-fragments-delivery-feature-video-use.md).
+Questa serie video illustra il ciclo di vita per l’authoring dei frammenti di contenuto in AEM. Informazioni dettagliate sulla [distribuzione di frammenti di contenuto sono disponibili qui](content-fragments-delivery-feature-video-use.md).
 
 1. Abilitazione e definizione di modelli di frammenti di contenuto
 2. Creazione di frammenti di contenuto
 3. Download di frammenti di contenuto
 4. Funzionalità editoriali
 
-## Defining Content Fragment Models {#defining-content-fragment-models}
+## Definizione dei modelli di frammento di contenuto {#defining-content-fragment-models}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
-AEM Modelli di frammenti di contenuto, gli schemi di dati dei frammenti di contenuto, devono essere attivati tramite AEM browser [[!UICONTROL di]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)configurazione, che consente di definire i modelli di frammenti di contenuto in base alla configurazione.
+AEM Modelli di frammenti di contenuto, gli schemi di dati dei frammenti di contenuto, devono essere attivati tramite AEM [[!UICONTROL Browser di configurazione]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html), che consente di definire i modelli di frammenti di contenuto in base alla configurazione.
 
 ## Creazione di frammenti di contenuto {#creating-content-fragments}
 
@@ -67,11 +67,11 @@ AEM frammenti di contenuto possono essere scaricati da AEM Author come file ZIP 
 
 >[!NOTE]
 >
-> Il confronto tra le annotazioni e le versioni per i frammenti di contenuto è stato introdotto in [AEM 6.4 Service Pack 2](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html) e [AEM 6.3 Service Pack 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html).
+> Il confronto delle versioni e delle annotazioni per i frammenti di contenuto è stato introdotto in [AEM 6.4 Service Pack 2](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html) e [AEM 6.3 Service Pack 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html).
 
 ## Passaggi successivi
 
-Informazioni sulla [distribuzione di frammenti](content-fragments-delivery-feature-video-use.md)di contenuto.
+Informazioni su [distribuzione di frammenti di contenuto](content-fragments-delivery-feature-video-use.md).
 
 ## Risorse aggiuntive {#additional-resources}
 
