@@ -69,7 +69,7 @@ ht-degree: 17%
    + [Esercitazione di Hello World](spa-editor/spa-editor-helloworld-tutorial-use.md)
    + [Guida introduttiva ad AEM Editor e React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
    + [Guida introduttiva a AEM editor SPA e Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
-+ Multi Site Management {#multi-site-management}
++ Gestione multisito {#multi-site-management}
    + [Introduzione alla copia per lingua](./multi-site-management/language-copy-overview.md)
    + [Live Copy e Blueprint](./multi-site-management/live-copy-and-blueprint.md)
    + [Creare una Live Copy](./multi-site-management/create-live-copy.md)
@@ -93,11 +93,11 @@ ht-degree: 17%
    + Experience Platform Launch {#experience-platform-launch}
       + [Panoramica](integrations/experience-platform-launch/overview.md)
       + [Creare una proprietà Launch](integrations/experience-platform-launch/create-launch-property.md)
-      + [AEM Connect con Launch mediante  I/O Adobe](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
+      + [Connect AEM with Launch using  Adobe I/O](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
       + [Creare un Cloud Service Launch](integrations/experience-platform-launch/create-launch-cloud-service.md)
       + [Debug di un&#39;implementazione di Launch](integrations/experience-platform-launch/debug-launch-implementation.md)
-   + Livello dati client Adobe  {#adobe-client-data-layer}
-      + [Utilizzo del livello dati client del Adobe](integrations/adobe-client-data-layer/data-layer-overview.md)
+   + Livello dati client  Adobe {#adobe-client-data-layer}
+      + [Utilizzo del livello dati client del Adobe ](integrations/adobe-client-data-layer/data-layer-overview.md)
    + Analisi {#analytics}
       + [Raccolta di dati di pagina con  Adobe Analytics](integrations/analytics/collect-data-analytics.md)
       + [Tenere traccia del componente su cui è stato fatto clic con  Adobe Analytics](integrations/analytics/track-clicked-component.md)
