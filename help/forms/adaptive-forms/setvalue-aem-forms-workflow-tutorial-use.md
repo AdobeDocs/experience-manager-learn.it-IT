@@ -44,18 +44,18 @@ Per distribuire le risorse sul sistema locale, effettuate le seguenti operazioni
 
 * [Distribuzione del bundle Developingwithservice](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Distribuite il bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)di esempio. Questo è il pacchetto OSGI personalizzato che consente di impostare i valori di un elemento nei dati XML inviati
+* [Distribuite il bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) di esempio. Questo è il pacchetto OSGI personalizzato che consente di impostare i valori di un elemento nei dati XML inviati
 
 * [Scaricare ed estrarre il contenuto del file zip](assets/setvalueassets.zip)
-* Impostate il browser su [Package Manager](http://localhost:4502/crx/packmgr/index.jsp)
+* Posizionare il browser su [gestore pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 * Importa e installa setValueWorkflow.zip. Questo include il modello di flusso di lavoro di esempio.
-* Indirizzare il browser ad [Forms e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Posizionare il browser su [Forms e Documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Fate clic su Crea | Caricamento file
 * Caricate TimeOfRequestForm.zip
-* Aprire il modulo [TimeOffRequest](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
+* Aprire la [TimeOffRequest](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
 * Compilate i 3 campi richiesti e inviate
 * Accedi come amministratore in AEM (se non hai ancora effettuato l’accesso)
-* Vai a [&quot;AEM Posta in arrivo&quot;](http://localhost:4502/aem/inbox)
+* Vai a [&quot;AEM Inbox&quot;](http://localhost:4502/aem/inbox)
 * Aprire il modulo &quot;Ora di revisione della richiesta&quot;
 * I campi del primo pannello sono disattivati. Questo perché il modulo viene aperto dal revisore. Inoltre, il pannello per approvare o rifiutare la richiesta è ora visibile
 
