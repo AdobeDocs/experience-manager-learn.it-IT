@@ -25,11 +25,12 @@ Al termine del corso avrai imparato quanto segue.
 
 * Crea modello dati modulo basato su RDBMS
 * Crea associazione tra 2 entità
-* Compilare una tabella con i dati restituiti dal _servizio get_ del modello dati modulo
+* Compilare la tabella con i dati restituiti dal servizio _get_ del modello dati del modulo
 * Usa attributo richiesta del modello dati modulo
 
 
-[Fai clic per vedere la dimostrazione live della funzionalità](https://forms.enablementadobe.com/content/dam/formsanddocuments/fdmwithrequestparameterinurl/jcr:content?wcmmode=disabled&amp;empID=207)Il seguente video offre una panoramica del corso
+[Fate clic per visualizzare la dimostrazione dal vivo della ](https://forms.enablementadobe.com/content/dam/formsanddocuments/fdmwithrequestparameterinurl/jcr:content?wcmmode=disabled&amp;empID=207)
+funzionalitàIl seguente video offre una panoramica del corso
 >[!VIDEO](https://video.tv.adobe.com/v/36387/quality=9)
 
 ## Prerequisiti
