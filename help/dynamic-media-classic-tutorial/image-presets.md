@@ -38,8 +38,8 @@ Un predefinito per immagini ha un simbolo di dollaro ($) su entrambi i lati del 
 >
 >Create un predefinito per immagini per ciascuna dimensione di immagine univoca sul sito. Ad esempio, se avete bisogno di un&#39;immagine da 350x350 per la pagina dei dettagli del prodotto, un&#39;immagine da 120x120 per le pagine di ricerca e ricerca e un&#39;immagine da 90x90 per un elemento di cross-selling/featured, avete bisogno di tre predefiniti per immagini, che siano 500 immagini o 500000000000000000000000000000000000000000000000000000000000000000000000000000
 
-- Ulteriori informazioni sui predefiniti per [immagini](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
-- Scoprite come [creare un predefinito](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset)per immagini.
+- Ulteriori informazioni su [Predefiniti immagine](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
+- Scoprite come [creare un predefinito per immagini](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
 
 ## Predefiniti immagine e nitidezza
 
@@ -61,12 +61,12 @@ L’immagine seguente mostra tre livelli di nitidezza. Da destra a sinistra non 
 
 Dynamic Media Classic consente tre tipi di nitidezza: Nitidezza semplice, modalità di ricampionamento e Maschera di contrasto.
 
-Ulteriori informazioni sulle opzioni di nitidezza [Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
+Ulteriori informazioni sulle [opzioni di nitidezza per contenuti multimediali dinamici classici](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
 
 ## Risorse aggiuntive
 
-[Guida](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf)ai predefiniti per immagini. Impostazioni da usare per ottimizzare la qualità dell’immagine e la velocità di caricamento.
+[Guida](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf) ai predefiniti per immagini. Impostazioni da usare per ottimizzare la qualità dell’immagine e la velocità di caricamento.
 
 [L&#39;Immagine È Tutto Parte 2: Non è mai solo una sfocatura — Qualità contro velocità](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Post di blog sull’utilizzo dei predefiniti per immagini per la distribuzione di immagini di alta qualità e a caricamento rapido.
 
-[L&#39;Immagine È Tutti I Webinar](https://dynamicmediaseries2019.enterprise.adobeevents.com/). I collegamenti alle registrazioni di tutti e tre i webinar della serie _Image Is All (Immagine)_ . [Il webinar 2](https://seminars.adobeconnect.com/p6lqaotpjnd3) descrive i predefiniti per immagini.
+[L&#39;Immagine È Tutti I Webinar](https://dynamicmediaseries2019.enterprise.adobeevents.com/). Collegamenti alle registrazioni di tutti e tre i webinar della serie _Image Is Tutto_. [Webinar 2 ](https://seminars.adobeconnect.com/p6lqaotpjnd3) descrive i predefiniti per immagini.
