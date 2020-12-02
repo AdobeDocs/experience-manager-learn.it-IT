@@ -20,7 +20,7 @@ ht-degree: 6%
 ---
 
 
-# Utilizzo dell’Editor pagina {#using-page-editor-with-aem-sites}
+# Utilizzo dell&#39;Editor pagina {#using-page-editor-with-aem-sites}
 
 AEM Editor pagina del sito è uno strumento potente per la creazione e la modifica di contenuti Web. Gli strumenti e le funzionalità dell’Editor pagina sono accessibili dalla barra degli strumenti dell’interfaccia utente dell’Editor pagina.
 
