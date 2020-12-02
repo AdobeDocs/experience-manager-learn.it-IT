@@ -11,7 +11,7 @@ doc-type: tutorial
 translation-type: tm+mt
 source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -19,27 +19,27 @@ ht-degree: 0%
 
 # Sviluppo per CORS (Cross-Origin Resource Sharing)
 
-Un breve esempio di utilizzo [!DNL CORS] per accedere AEM contenuto da un&#39;applicazione Web esterna tramite JavaScript lato client.
+Un breve esempio di utilizzo di [!DNL CORS] per accedere AEM contenuto da un&#39;applicazione Web esterna tramite JavaScript lato client.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837/?quality=12&learn=on)
 
 In questo video:
 
-* **www.example.com** Maps to localhost via `/etc/hosts`
-* **aem-publish.local** mappa a localhost tramite `/etc/hosts`
-* [SimpleHTTPServer](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12) (un wrapper di [[!DNL Python]&#39;s SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)) distribuisce la pagina HTML tramite la porta 8000.
-* [!DNL AEM Dispatcher] è in esecuzione su [!DNL Apache HTTP Web Server] 2.4 e inverte la richiesta `aem-publish.local` a `localhost:4503`.
+* **www.example.** commaps to localhost tramite  `/etc/hosts`
+* **aem-publish.** localmap su localhost tramite  `/etc/hosts`
+* [SimpleHTTPServer](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12) (un wrapper per  [[!DNL Python]SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)) distribuisce la pagina HTML tramite la porta 8000.
+* [!DNL AEM Dispatcher] è in esecuzione su  [!DNL Apache HTTP Web Server] 2.4 e la richiesta  `aem-publish.local` di inoltro invertito su  `localhost:4503`.
 
-Per ulteriori dettagli, consulta [Informazioni sulla condivisione delle risorse tra le origini (CORS) in AEM](./understand-cross-origin-resource-sharing.md).
+Per ulteriori dettagli, vedere [Informazioni sulla condivisione delle risorse tra le origini (CORS) in AEM](./understand-cross-origin-resource-sharing.md).
 
 ## www.example.com HTML e JavaScript
 
 Questa pagina Web ha una logica che
 
 1. Quando si fa clic sul pulsante
-1. Invia una [!DNL AJAX GET] richiesta a `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`
-1. Recupera il `jcr:title` modulo della risposta JSON
-1. Consente di inserire il `jcr:title` DOM
+1. Invia una richiesta [!DNL AJAX GET] a `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`
+1. Recupera la `jcr:title` dalla risposta JSON
+1. Inserisce il `jcr:title` nel DOM
 
 ```xml
 <html>
@@ -74,7 +74,7 @@ Questa pagina Web ha una logica che
 
 ## Configurazione di fabbrica OSGi
 
-Il modulo di configurazione OSGi per [!DNL Cross-Origin Resource Sharing] è disponibile tramite:
+La fabbrica di configurazione OSGi per [!DNL Cross-Origin Resource Sharing] è disponibile tramite:
 
 * `http://<host>:<port>/system/console/configMgr > [!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]`
 
@@ -94,9 +94,9 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 />
 ```
 
-## Dispatcher configuration {#dispatcher-configuration}
+## Configurazione del dispatcher {#dispatcher-configuration}
 
-Per consentire la memorizzazione nella cache e la gestione delle [!DNL CORS] intestazioni nel contenuto memorizzato nella cache, aggiungete la seguente configurazione a tutti i file AEM Publish `dispatcher.any` che supportano tale funzione.
+Per consentire il caching e la gestione delle intestazioni [!DNL CORS] sui contenuti memorizzati nella cache, aggiungete la seguente configurazione a tutti i file AEM Publish `dispatcher.any` che supportano.
 
 ```
 /cache { 
@@ -113,9 +113,9 @@ Per consentire la memorizzazione nella cache e la gestione delle [!DNL CORS] int
 }
 ```
 
-**Riavviate l’applicazione** server Web dopo aver apportato le modifiche al `dispatcher.any` file.
+**Riavviate l&#39;** applicazione server Web dopo aver apportato le modifiche al  `dispatcher.any` file.
 
-È probabile che la cancellazione completa della cache sia necessaria per garantire che le intestazioni siano correttamente memorizzate nella cache sulla richiesta successiva dopo un aggiornamento `/headers` della configurazione.
+È probabile che la cancellazione completa della cache sia necessaria per garantire che le intestazioni siano correttamente memorizzate nella cache sulla richiesta successiva dopo un aggiornamento di configurazione `/headers`.
 
 ## Materiali di supporto {#supporting-materials}
 
