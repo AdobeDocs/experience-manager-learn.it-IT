@@ -27,7 +27,7 @@ Adobe Experience Manager (AEM) I frammenti di contenuto sono contenuti editorial
 
 I frammenti di contenuto, indipendenti dal layout, possono essere utilizzati direttamente in  AEM Sites con i componenti core oppure possono essere distribuiti in modo headless ai canali a valle.
 
-Questa serie video illustra le opzioni di distribuzione per l’utilizzo dei frammenti di contenuto. Per informazioni sulla definizione e la [creazione di frammenti di contenuto, consultate](content-fragments-feature-video-use.md).
+Questa serie video illustra le opzioni di distribuzione per l’utilizzo dei frammenti di contenuto. Informazioni dettagliate sulla definizione e la creazione di frammenti di contenuto sono disponibili qui[.](content-fragments-feature-video-use.md)
 
 1. Utilizzo di frammenti di contenuto nelle pagine Web
 2. Esposizione di frammenti di contenuto come JSON tramite AEM Content Services
@@ -37,7 +37,7 @@ Questa serie video illustra le opzioni di distribuzione per l’utilizzo dei fra
 
 >[!VIDEO](https://video.tv.adobe.com/v/22449/?quality=12&learn=on)
 
-I frammenti di contenuto possono essere utilizzati  pagine AEM Sites, o in modo simile, in frammenti esperienza, utilizzando il componente [Frammento di](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)contenuto dei componenti core AEM WCM.
+I frammenti di contenuto possono essere utilizzati  pagine AEM Sites, o in modo simile, in frammenti esperienza, utilizzando il componente [Frammento di contenuto ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) dei componenti core di AEM WCM.
 
 I componenti frammento di contenuto possono essere formattati utilizzando AEM Sistema di stile per visualizzare il contenuto come necessario.
 
@@ -47,7 +47,7 @@ I componenti frammento di contenuto possono essere formattati utilizzando AEM Si
 
 AEM Content Services semplifica la creazione di AEM endpoint HTTP basati su pagina che eseguono il rendering del contenuto in un formato JSON normalizzato.
 
-Il video precedente utilizza il componente [frammento di](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) contenuto per esporre singoli frammenti di contenuto. Il componente [Elenco frammenti di](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-list.html) contenuto è un nuovo componente che consente all’autore di definire una query per la compilazione dinamica della pagina con un elenco di frammenti di contenuto. Il componente Elenco frammenti di contenuto è preferibile se è necessario esporre più frammenti di contenuto.
+Il video precedente utilizza il [componente Frammento di contenuto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) per esporre singoli frammenti di contenuto. Il [componente Elenco frammenti di contenuto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-list.html) è un nuovo componente che consente all&#39;autore di definire una query per la compilazione dinamica della pagina con un elenco di frammenti di contenuto. Il componente Elenco frammenti di contenuto è preferibile se è necessario esporre più frammenti di contenuto.
 
 *Esempio di payload JSON end point di Content Services:*\
 **[atleti.json](assets/athletes.json)**
@@ -58,7 +58,7 @@ Il video precedente utilizza il componente [frammento di](https://docs.adobe.com
 
 La prima è stata introdotta nella AEM 6.5, con il supporto migliorato per i frammenti di contenuto con l&#39;API HTTP Assets. Questo fornisce agli sviluppatori un modo semplice per eseguire operazioni di creazione, lettura, aggiornamento ed eliminazione (CRUD) rispetto ai frammenti di contenuto.
 
-*Esempio di richieste POSTMAN:*
+*Richieste POSTMAN di esempio:*
 **[CRUD-CFM-API-We.Retail.postman_collection.json](assets/CRUD-CFM-API-We.Retail.postman_collection.json)**
 
 ## Quale metodo di consegna utilizzare
