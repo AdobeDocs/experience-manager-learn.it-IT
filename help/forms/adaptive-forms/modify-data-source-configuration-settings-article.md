@@ -30,5 +30,7 @@ Le schermate riportate di seguito mostrano le impostazioni di configurazione del
 
 **Configurazione origine dati in AEM 6.4**
 
-![Configurazione](assets/64release.gif)dell&#39;origine dati **modificabile 64DataSource in AEM 6.5 e versioni successive**![65DataSource Configuration](assets/modifiabledatasource.jfif)
+![64Configurazione ](assets/64release.gif)
+**dell&#39;origine datiConfigurazione dell&#39;origine dati modificabile in AEM 6.5 e superiore**
+![a 65Configurazione dell&#39;origine dati](assets/modifiabledatasource.jfif)
 
