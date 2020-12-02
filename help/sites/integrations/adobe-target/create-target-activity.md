@@ -18,7 +18,7 @@ ht-degree: 6%
 ---
 
 
-# Creazione  attività Adobe Target tramite Offerte frammenti esperienza {#target-activity-experience-fragment}
+# Creare  attività Adobe Target utilizzando offerte di frammenti esperienza {#target-activity-experience-fragment}
 
 Scoprite come creare e testare un&#39;attività Adobe Target  utilizzando AEM Offerte frammenti esperienza.
 
