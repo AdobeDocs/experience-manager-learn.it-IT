@@ -66,16 +66,16 @@ L’utente che ha avviato il flusso di lavoro è tenuto in considerazione. Quind
 
 A seconda di come la proprietà manager è memorizzata nel LDAP, potrebbe essere necessario modificare le stringhe per ottenere l’ID manager.
 
-Leggete questo articolo per implementare il vostro [ ParticipantChooser .](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+Leggere questo articolo per implementare il proprio [ ParticipantChooser .](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
 Per eseguire il test sul sistema (per  dipendenti di Adobe è possibile utilizzare questo esempio)
 
-* [Scaricate e distribuite il bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue. Questo è il bundle OSGI personalizzato per l&#39;impostazione della proprietà del manager.
+* [Scaricate e distribuite il bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) setvalue. Questo è il bundle OSGI personalizzato per l&#39;impostazione della proprietà del manager.
 * [Download e installazione di DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* [Importa le risorse associate a questo articolo in AEM utilizzando il gestore](assets/aem-forms-ldap.zip)pacchetti. Incluso come parte di questo pacchetto sono i file di configurazione LDAP, il flusso di lavoro e un modulo adattivo.
+* [Importa le risorse associate a questo articolo in AEM utilizzando il gestore](assets/aem-forms-ldap.zip) pacchetti. Incluso come parte di questo pacchetto sono i file di configurazione LDAP, il flusso di lavoro e un modulo adattivo.
 * Configurare AEM con LDAP utilizzando le credenziali LDAP appropriate.
 * Effettuate il login per AEM utilizzando le credenziali LDAP.
-* Aprire il modulo [timeoffrequest](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Aprire la [timeoffrequest](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Compila il modulo e invia.
 * Il responsabile dell&#39;utente che ha posto la domanda deve ottenere il modulo per la revisione.
 
