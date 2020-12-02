@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Utilizzo dei modelli di dati di servizio con  AEM Forms{#using-service-data-models-with-aem-forms}
+# Utilizzo di modelli dati di servizio con  AEM Forms{#using-service-data-models-with-aem-forms}
 
 L&#39;editor di regole AEM per Forms adattivo può sfruttare i Servizi creati nel modello dati modulo.
 
