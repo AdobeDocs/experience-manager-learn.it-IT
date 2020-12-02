@@ -30,14 +30,14 @@ $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar a
 ```
 
 + `address` specifica la porta AEM ascolto per le connessioni di debug remote e può essere modificata in qualsiasi porta disponibile nel computer di sviluppo locale.
-+ L&#39;ultimo parametro (ad esempio `aem-author-p4502.jar`) è la AEM SKD QuickStart Jar. Può trattarsi del servizio AEM Author (`aem-author-p4502.jar`) o AEM Publish (`aem-publish-p4503.jar`).
++ L&#39;ultimo parametro (ad esempio `aem-author-p4502.jar`) è la AEM SKD QuickStart Jar. Può trattarsi del servizio AEM Author (`aem-author-p4502.jar`) o del servizio AEM Publish (`aem-publish-p4503.jar`).
 
 ## Istruzioni per l&#39;impostazione dell&#39;IDE
 
 La maggior parte degli IDE Java fornisce il supporto per il debug remoto dei programmi Java, ma i passaggi esatti di configurazione di ogni IDE variano. Controlla le istruzioni di configurazione del debug remoto dell&#39;IDE per i passaggi esatti. In genere, le configurazioni IDE richiedono:
 
-+ L&#39;AEM locale dell&#39;SDK dell&#39;host è in ascolto, ovvero `localhost`.
-+ La porta AEM&#39;avvio rapido locale dell&#39;SDK è in ascolto per la connessione di debug remota, che è la porta specificata dal `address` parametro quando si avvia AEM&#39;avvio rapido locale dell&#39;SDK.
++ Il servizio di avvio rapido locale AEM SDK dell&#39;host è in ascolto, ovvero `localhost`.
++ La porta AEM&#39;avvio rapido locale dell&#39;SDK è in ascolto per la connessione di debug remota, che è la porta specificata dal parametro `address` quando si avvia AEM&#39;avvio rapido locale dell&#39;SDK.
 + Occasionalmente, devono essere specificati i progetti Maven che forniscono il codice sorgente al debug remoto; questo è il vostro progetto o progetti di aggregazione OSGi.
 
 ### Configurare le istruzioni
