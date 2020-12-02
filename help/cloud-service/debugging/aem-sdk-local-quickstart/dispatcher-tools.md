@@ -28,9 +28,9 @@ Il debug dei registri e dei contenuti della cache di Dispatcher Tools può esser
 
 ## Dispatcher Tools logs
 
-I registri degli strumenti del dispatcher sono disponibili tramite il `stdout` comando o il `bin/docker_run` , oppure con maggiori dettagli, nel contenitore Docker all&#39;indirizzo `/etc/https/logs`.
+I registri degli strumenti del dispatcher sono disponibili tramite il comando `stdout` o `bin/docker_run`, oppure con maggiori dettagli, disponibile nel contenitore Docker all&#39;indirizzo `/etc/https/logs`.
 
-Per istruzioni su come accedere direttamente ai registri del contenitore [Dispatcher Tools&#39;s Docker, vedere Registri](./logs.md#dispatcher-logs) del dispatcher.
+Per istruzioni su come accedere direttamente ai registri del contenitore Docker degli strumenti di Dispatcher, vedere [Registri del dispatcher](./logs.md#dispatcher-logs).
 
 ## Cache degli strumenti del dispatcher
 
@@ -56,7 +56,7 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 
 ### Copia dei log del Docker nel file system locale
 
-I registri del dispatcher possono essere copiati dal contenitore Docker `/mnt/var/www/html` al file system locale per l&#39;ispezione utilizzando i vostri strumenti preferiti. Si tratta di una copia point-in-time e non fornisce aggiornamenti in tempo reale alla cache.
+I registri del dispatcher possono essere copiati dal contenitore Docker in `/mnt/var/www/html` al file system locale per essere esaminati utilizzando i tuoi strumenti preferiti. Si tratta di una copia point-in-time e non fornisce aggiornamenti in tempo reale alla cache.
 
 ```shell
 $ docker ps
