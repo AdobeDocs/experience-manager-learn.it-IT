@@ -46,7 +46,7 @@ tagManager.setTags(metadata, tagArray, true);
 Per far funzionare questo esempio sul sistema, segui i passaggi elencati di seguito:
 * [Distribuzione del bundle Developingwithservice](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Scaricate e distribuite il bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue. Si tratta del pacchetto OSGI personalizzato che imposta i tag dai dati del modulo inviati.
+* [Scaricate e distribuite il bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) setvalue. Si tratta del pacchetto OSGI personalizzato che imposta i tag dai dati del modulo inviati.
 
 * [Download del modulo adattivo di esempio](assets/tag-and-store-in-dam-assets.zip)
 
@@ -54,12 +54,12 @@ Per far funzionare questo esempio sul sistema, segui i passaggi elencati di segu
 
 * Fate clic su Crea | Caricamento del file e caricamento del file sampleadaptiveform.zip
 
-* [Importare le risorse](assets/tag-and-store-in-dam-assets.zip) dell&#39;articolo utilizzando AEM gestore pacchetti
-* Aprire il modulo di [esempio in modalità](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled)di anteprima. Compila la sezione Persone e invia il modulo.
+* [Importare la ](assets/tag-and-store-in-dam-assets.zip) risorsa articolo utilizzando AEM gestore pacchetti
+* Aprire il modulo di esempio [in modalità di anteprima](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled). Compila la sezione Persone e invia il modulo.
 * [Passa alla cartella Picco in DAM](http://localhost:4502/assets.html/content/dam/Peak). Nella cartella Picco dovrebbe essere visualizzato DoR. Verificare le proprietà del documento. Deve essere contrassegnato in modo appropriato.
 Congratulazioni!! Installazione dell&#39;esempio nel sistema completata
 
-* Esaminiamo il [flusso](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) di lavoro che viene attivato all&#39;invio del modulo.
+* Esaminiamo il [flusso di lavoro](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) che viene attivato all&#39;invio del modulo.
 * Il primo passaggio del flusso di lavoro crea un nome di file univoco concatenando il nome del candidato e la contea di residenza.
 * Il secondo passaggio del flusso di lavoro supera la gerarchia di tag e gli elementi dei campi modulo che devono essere contrassegnati. Il passaggio del processo estrae il valore dai dati inviati e crea il titolo del tag che deve essere applicato al documento.
 * Se si desidera memorizzare il DoR in un&#39;altra cartella del DAM, è possibile specificare il percorso della cartella utilizzando le proprietà di configurazione specificate nella schermata seguente.
