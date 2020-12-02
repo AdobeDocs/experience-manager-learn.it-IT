@@ -26,13 +26,13 @@ Ogni AEM come ambiente di Cloud Service dispone di una propria console per svilu
 
 ## Accesso alla console per sviluppatori
 
-Per accedere e utilizzare la Developer Console, è necessario assegnare le seguenti autorizzazioni all&#39;Adobe ID  dello sviluppatore tramite [Adobe   Admin Console](https://adminconsole.adobe.com).
+Per accedere e utilizzare la Developer Console, è necessario assegnare le seguenti autorizzazioni all&#39; Adobe ID dello sviluppatore tramite [ Adobe   Admin Console](https://adminconsole.adobe.com).
 
 1. Assicurati che l’organizzazione  Adobe che ha influenzato Cloud Manager e AEM come prodotti Cloud Service sia attiva nello switcher di organizzazione  Adobe.
-1. Lo sviluppatore deve essere un membro del profilo di prodotto __Sviluppatore - Cloud Service__ del prodotto di Cloud Manager.
+1. Lo sviluppatore deve essere membro del profilo di prodotto __Sviluppatore - Cloud Service__ di Cloud Manager.
    + Se l&#39;iscrizione non esiste, lo sviluppatore non sarà in grado di accedere a Developer Console.
-1. Lo sviluppatore deve essere membro del profilo di prodotto di AEM Author e Publish Service __AEM Amministratori__ .
-   + Se l&#39;iscrizione non esiste, i [raccordi di stato](#status) scadranno con un errore 401 non autorizzato.
+1. Lo sviluppatore deve essere membro del profilo di prodotto __AEM Administrators__ di AEM Author and Publish Service.
+   + Se l&#39;iscrizione non esiste, i gattini [status](#status) scadranno con un errore 401 non autorizzato.
 
 ### Risoluzione dei problemi di accesso alla console per sviluppatori
 
@@ -72,7 +72,7 @@ Lo stato fornisce opzioni per l&#39;output AEM stato di runtime specifico nel te
 
 ### Bundle
 
-I pacchetti elencano tutti i bundle OSGi in AEM. Questa funzionalità è simile ai pacchetti OSGi di [AEM dell’SDK](http://localhost:4502/system/console/bundles) locali disponibili all’indirizzo `/system/console/bundles`.
+I pacchetti elencano tutti i bundle OSGi in AEM. Questa funzionalità è simile a [AEM Bundle OSGi dell&#39;SDK locale in &lt;a0/>`/system/console/bundles` all&#39;indirizzo &lt;a2/>.](http://localhost:4502/system/console/bundles)
 
 I bundle consentono di eseguire il debug tramite:
 
@@ -82,7 +82,7 @@ I bundle consentono di eseguire il debug tramite:
 
 ### Componenti
 
-I componenti elencano tutti i componenti OSGi in AEM. Questa funzionalità è simile a quella dei componenti OSGi locali dell’SDK [AEM](http://localhost:4502/system/console/components) `/system/console/components`.
+I componenti elencano tutti i componenti OSGi in AEM. Questa funzionalità è simile a [AEM componenti OSGi locali dell&#39;SDK &lt;a0/>in `/system/console/components` all&#39;indirizzo &lt;a2/>.](http://localhost:4502/system/console/components)
 
 I componenti sono utili per eseguire il debug:
 
@@ -93,7 +93,7 @@ I componenti sono utili per eseguire il debug:
 
 ### Configurazioni
 
-Configurazioni elenca tutte le configurazioni del componente OSGi (proprietà e valori OSGi). Questa funzionalità è simile a quella di [AEM QuickStart locale OSGi Configuration Manager](http://localhost:4502/system/console/configMgr) dell&#39;SDK all&#39;indirizzo `/system/console/configMgr`.
+Configurazioni elenca tutte le configurazioni del componente OSGi (proprietà e valori OSGi). Questa funzionalità è simile a [AEM QuickStart locale OSGi Configuration Manager dell&#39;SDK ](http://localhost:4502/system/console/configMgr) all&#39;indirizzo `/system/console/configMgr`.
 
 Le configurazioni sono utili per il debug:
 
@@ -102,7 +102,7 @@ Le configurazioni sono utili per il debug:
 
 ### Indici Oak
 
-Gli indici Oak forniscono un&#39;immagine dei nodi definiti sotto di `/oak:index`. Tenere presente che questo non mostra indici uniti, che si verifica quando viene modificato un indice AEM.
+Gli indici Oak forniscono un dump dei nodi definiti sotto `/oak:index`. Tenere presente che questo non mostra indici uniti, che si verifica quando viene modificato un indice AEM.
 
 Gli indici Oak consentono di eseguire il debug:
 
@@ -110,7 +110,7 @@ Gli indici Oak consentono di eseguire il debug:
 
 ### OSGi Services
 
-I componenti elencano tutti i servizi OSGi. Questa funzionalità è simile a quella dei servizi OSGi locali dell’SDK [AEM](http://localhost:4502/system/console/services) `/system/console/services`.
+I componenti elencano tutti i servizi OSGi. Questa funzionalità è simile a [AEM servizi OSGi locali dell&#39;SDK &lt;a0/>`/system/console/services` all&#39;indirizzo &lt;a2/>.](http://localhost:4502/system/console/services)
 
 I servizi OSGi consentono di eseguire il debug tramite:
 
@@ -118,7 +118,7 @@ I servizi OSGi consentono di eseguire il debug tramite:
 
 ### Processi Sling
 
-In Processi Sling sono elencate tutte le code dei processi Sling. Questa funzionalità è simile a quella di Processi [locali dell’SDK all’indirizzo](http://localhost:4502/system/console/slingevent) AEM `/system/console/slingevent`.
+In Processi Sling sono elencate tutte le code dei processi Sling. Questa funzionalità è simile a quella di [AEM Processi di avvio rapido dell&#39;SDK ](http://localhost:4502/system/console/slingevent) all&#39;indirizzo `/system/console/slingevent`.
 
 La guida di Sling Jobs consente di eseguire il debug tramite:
 
@@ -127,7 +127,7 @@ La guida di Sling Jobs consente di eseguire il debug tramite:
 
 ## Pacchetti Java
 
-Java Packages consente di verificare se un pacchetto Java e una versione sono disponibili per l&#39;uso in AEM come Cloud Service. Questa funzionalità è identica a quella del [AEM del Finder](http://localhost:4502/system/console/depfinder) dipendenza dell&#39;SDK in `/system/console/depfinder`.
+Java Packages consente di verificare se un pacchetto Java e una versione sono disponibili per l&#39;uso in AEM come Cloud Service. Questa funzionalità è identica a quella di [AEM QuickStart nel Finder dipendenza dell&#39;SDK ](http://localhost:4502/system/console/depfinder) in `/system/console/depfinder`.
 
 ![Console per sviluppatori - Pacchetti Java](./assets/developer-console/java-packages.png)
 
@@ -136,11 +136,11 @@ I pacchetti Java vengono utilizzati per evitare l&#39;avvio dei pacchetti di rip
 + Assicurati che la versione della dipendenza AEM API maven del progetto corrisponda alla versione AEM Release dell&#39;ambiente (e, se possibile, aggiorna tutto alla versione più recente).
 + Se ulteriori dipendenze Paradiso vengono utilizzate nel progetto Paradiso
    + Determinate se è invece possibile utilizzare un&#39;API alternativa fornita dalla dipendenza dell&#39;API SDK AEM.
-   + Se la dipendenza supplementare è necessaria, accertatevi che sia fornita come pacchetto OSGi (anziché come Jar normale) e sia incorporata nel pacchetto di codice del progetto, (`ui.apps`), in modo simile al modo in cui il pacchetto OSGi di base è incorporato nel `ui.apps` pacchetto.
+   + Se la dipendenza supplementare è necessaria, accertatevi che sia fornita come bundle OSGi (anziché come Jar normale) e sia incorporata nel pacchetto di codice del progetto (`ui.apps`), in modo simile al modo in cui il pacchetto OSGi di base è incorporato nel pacchetto `ui.apps`.
 
 ## Servlet
 
-Servlets viene utilizzato per fornire informazioni su come AEM risolve un URL a un servlet o script Java (HTL, JSP) che in ultima istanza gestisce la richiesta. Questa funzionalità è la stessa di [AEM Sling Servlet Resolver](http://localhost:4502/system/console/servletresolver) dell&#39;SDK `/system/console/servletresolver`.
+Servlets viene utilizzato per fornire informazioni su come AEM risolve un URL a un servlet o script Java (HTL, JSP) che in ultima istanza gestisce la richiesta. Questa funzionalità è la stessa di Sling Servlet Resolver [AEM SDK locale di &lt;a0/>`/system/console/servletresolver` all&#39;indirizzo &lt;a2/>.](http://localhost:4502/system/console/servletresolver)
 
 ![Console per sviluppatori - Servlet](./assets/developer-console/servlets.png)
 
@@ -151,7 +151,7 @@ Servlet aiuta a determinare il debug:
 
 ## Query
 
-Le query forniscono informazioni approfondite su cosa e come vengono eseguite le query di ricerca in AEM. Questa funzionalità è la stessa della [AEM console QuickStart locale dell&#39;SDK > Prestazioni query ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) .
+Le query forniscono informazioni approfondite su cosa e come vengono eseguite le query di ricerca in AEM. Questa funzionalità è la stessa della console [AEM QuickStart locale dell&#39;SDK > Prestazioni query ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html).
 
 Le query funzionano solo quando è selezionato un contenitore specifico, poiché apre la console Web Prestazioni query del contenitore, per cui lo sviluppatore deve avere accesso al servizio AEM.
 
