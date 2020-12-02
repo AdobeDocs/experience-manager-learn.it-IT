@@ -33,7 +33,7 @@ La configurazione delle cartelle e lo script ECMA controllati fanno parte delle 
 
 Il file di input rilasciato nella cartella esaminata ha la struttura seguente. Lo script ECMA legge i numeri di conto e genera il documento del canale di stampa per ciascuno di questi account.
 
-Per ulteriori dettagli sullo script ECMA per la generazione di documenti, [consultare questo articolo](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
+Per ulteriori dettagli sullo script ECMA per la generazione di documenti, consultare [questo articolo](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
 
 ```xml
 <accountnumbers>
