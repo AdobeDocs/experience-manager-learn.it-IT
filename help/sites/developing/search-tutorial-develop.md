@@ -15,9 +15,9 @@ ht-degree: 1%
 ---
 
 
-# Guida all’implementazione della ricerca semplice{#simple-search-implementation-guide}
+# Guida all&#39;implementazione della ricerca semplice{#simple-search-implementation-guide}
 
-L&#39;implementazione di ricerca semplice sono i materiali provenienti dal Adobe **Summit Lab AEM Search Demystified**. Questa pagina contiene i materiali di questo laboratorio. Per una visita guidata del laboratorio, vedere la cartella di lavoro Lab nella sezione Presentazione di questa pagina.
+L&#39;implementazione della ricerca semplice è costituita dai materiali del **Adobe Summit lab AEM Search Demystified**. Questa pagina contiene i materiali di questo laboratorio. Per una visita guidata del laboratorio, vedere la cartella di lavoro Lab nella sezione Presentazione di questa pagina.
 
 ![Panoramica sull&#39;architettura di ricerca](assets/l4080/simple-search-application.png)
 
@@ -39,7 +39,7 @@ L&#39;implementazione di ricerca semplice sono i materiali provenienti dal Adobe
 
 ### Capitoli {#chapters}
 
-*I collegamenti ai capitoli riportati di seguito presuppongono l&#39;installazione dei pacchetti[iniziali](#initialpackages)in AEM Author all&#39;indirizzo`http://localhost:4502`*
+*I collegamenti ai capitoli riportati di seguito presuppongono l&#39;installazione dei  [pacchetti ](#initialpackages) iniziali in AEM Author all&#39;indirizzo`http://localhost:4502`*
 
 * [Capitolo 1](http://localhost:4502/editor.html/content/summit/l4080/chapter-1.html)
 * [Capitolo 2](http://localhost:4502/editor.html/content/summit/l4080/chapter-2.html)
@@ -75,7 +75,7 @@ L&#39;implementazione di ricerca semplice sono i materiali provenienti dal Adobe
 * [Modelli Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Esportatore modello Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
 * [API QueryBuilder](https://docs.adobe.com/docs/en/aem/6-2/develop/search/querybuilder-api.html)
-* [AEM Chrome Plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) (pagina[](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/)Documentazione)
+* [AEM Chrome Plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) (pagina[ ](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/)Documentazione)
 
 ## Correzioni e follow-up {#corrections-and-follow-up}
 
@@ -83,18 +83,18 @@ Correzioni e chiarimenti dalle discussioni di laboratorio e risposte alle domand
 
 1. **Come interrompere la reindicizzazione?**
 
-   È possibile interrompere la reindicizzazione tramite l&#39;MBean IndexStats disponibile tramite [AEM console Web > JMX](http://localhost:4502/system/console/jmx)
+   È possibile arrestare la reindicizzazione tramite l&#39;opzione IndexStats MBean disponibile tramite [AEM console Web > JMX](http://localhost:4502/system/console/jmx)
 
    * [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
-      * Esegui `abortAndPause()` per interrompere la reindicizzazione. In questo modo l’indice viene bloccato per ulteriori reindicizzazioni finché non `resume()` viene richiamato.
-      * L&#39;esecuzione `resume()` riavvia il processo di indicizzazione.
+      * Eseguire `abortAndPause()` per interrompere la reindicizzazione. In questo modo l&#39;indice verrà bloccato per un&#39;ulteriore reindicizzazione fino a quando non verrà richiamato `resume()`.
+      * L&#39;esecuzione di `resume()` riavvia il processo di indicizzazione.
    * Documentazione: [https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean](https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean)
 
 2. **Come possono gli indici di quercia supportare più locatari?**
 
    Oak supporta l&#39;inserimento di indici nella struttura del contenuto, che verranno indicizzati solo all&#39;interno della sottostruttura. Ad esempio, **`/content/site-a/oak:index/cqPageLucene`** potrebbe essere creato per indicizzare il contenuto solo sotto **`/content/site-a`.**
 
-   Un approccio equivalente consiste nell&#39;utilizzare le proprietà **`includePaths`** e **`queryPaths`** in un indice sotto **`/oak:index`**. Esempio:
+   Un approccio equivalente consiste nell&#39;utilizzare le proprietà **`includePaths`** e **`queryPaths`** su un indice in **`/oak:index`**. Esempio:
 
    * `/oak:index/siteAcqPageLucene@includePaths=/content/site-a`
    * `/oak:index/siteAcqPageLucene@queryPaths=/content/site-a`
@@ -118,7 +118,7 @@ Correzioni e chiarimenti dalle discussioni di laboratorio e risposte alle domand
 
 4. **Come cercare pagine e risorse nella stessa query?**
 
-   La novità di AEM 6.3 è la capacità di eseguire query per più tipi di nodi nella stessa query fornita. La seguente query QueryBuilder. Ogni &quot;sub-query&quot; può essere risolta in un proprio indice, pertanto in questo esempio la `cq:Page` sub-query si risolve in `/oak:index/cqPageLucene` e la `dam:Asset` sub-query si risolve in `/oak:index/damAssetLucene`.
+   La novità di AEM 6.3 è la capacità di eseguire query per più tipi di nodi nella stessa query fornita. La seguente query QueryBuilder. Ogni &quot;sub-query&quot; può essere risolta in base al proprio indice, pertanto in questo esempio la sottoquery `cq:Page` viene risolta in `/oak:index/cqPageLucene` e la sottoquery `dam:Asset` in `/oak:index/damAssetLucene` viene risolta in &lt;a3/>.
 
    ```plain
    group.p.or=true
