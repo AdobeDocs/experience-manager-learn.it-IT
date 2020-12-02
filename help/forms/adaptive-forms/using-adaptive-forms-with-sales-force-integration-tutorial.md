@@ -45,13 +45,13 @@ Prerequisiti per questa esercitazione:
 
 In questo esempio gbedekar -w7-1:6443 è il nome del server e la porta su cui AEM in esecuzione.
 
-Dopo aver creato la nota dell&#39;app connessa, la nota **Consumatore e la chiave** Segreta. Ne avrete bisogno al momento della creazione dell&#39;origine dati in  AEM Forms.
+Una volta creata la nota dell&#39;app connessa, **Chiave del consumatore e Chiave segreta**. Ne avrete bisogno al momento della creazione dell&#39;origine dati in  AEM Forms.
 
 Dopo aver creato l&#39;app connessa, dovrete creare un file swagger per le operazioni da eseguire in Salesforce. Un file swagger di esempio è incluso come parte delle risorse scaricabili. Questo file swagger consente di creare un oggetto &quot;Lead&quot; per l&#39;invio del modulo adattivo. Esplora questo file swagger.
 
 Il passaggio successivo consiste nel creare un&#39;origine dati in  AEM Forms. Attenetevi alla procedura seguente in base alla versione  AEM Forms
 
-## AEM Forms 6.3 {#aem-forms}
+##  AEM Forms 6.3 {#aem-forms}
 
 * Effettuate il login a  AEM Forms utilizzando il protocollo https
 * Andate ai servizi cloud digitando in https://&lt;nomeserver>:&lt;porta_servizio> /etc/cloudservices.html, ad esempio https://gbedekar-w7-1:6443/etc/cloudservices.html
@@ -70,14 +70,14 @@ Il passaggio successivo consiste nel creare un&#39;origine dati in  AEM Forms. A
 * Selezionate &quot;File&quot; come opzione per il file sorgente swagger. Individuate il file scaricato in precedenza
 * Seleziona tipo di autenticazione come OAuth2.0
 * Fornire i valori ClientID e Segreto cliente
-* Url OAuth: **https://login.salesforce.com/services/oauth2/authorize**
-* Aggiorna Url Token - **https://na5.salesforce.com/services/oauth2/token**
+* Url OAuth è - **https://login.salesforce.com/services/oauth2/authorize**
+* Aggiorna URL token - **https://na5.salesforce.com/services/oauth2/token**
 * **Url Del Token Di Accesso - https://na5.salesforce.com/services/oauth2/token**
-* Ambito di autorizzazione: ** api chatter_api full id aperid refresh_token visualizzazione web***
+* Ambito di autorizzazione: ** api   chatter_api full id   open id   refresh_token visualforce web**
 * Gestore autenticazione: Titolare dell&#39;autorizzazione
 * Fare clic su &quot;Connetti a OAUTH&quot;. Se tutto va bene, non si dovrebbero vedere errori
 
-Dopo aver creato il modello dati del modulo con Salesforce, è possibile creare l&#39;integrazione dati del modulo utilizzando l&#39;origine dati appena creata. La documentazione ufficiale per la creazione dell&#39;integrazione dei dati del modulo è [disponibile qui](https://helpx.adobe.com/aem-forms/6-3/data-integration.html).
+Dopo aver creato il modello dati del modulo con Salesforce, è possibile creare l&#39;integrazione dati del modulo utilizzando l&#39;origine dati appena creata. La documentazione ufficiale per la creazione dell&#39;integrazione dei dati del modulo è [qui](https://helpx.adobe.com/aem-forms/6-3/data-integration.html).
 
 Configurare il modello dati modulo per includere il servizio POST per creare un oggetto Lead in SFDC.
 
@@ -85,7 +85,7 @@ Sarà inoltre necessario configurare il servizio di lettura e scrittura per l&#3
 
 Dopo aver creato il modello dati modulo, è possibile creare un Forms adattivo basato su questo modello e utilizzare i metodi di invio del modello dati modulo per creare un lead in SFDC.
 
-## AEM Forms 6.4 {#aem-forms-1}
+##  AEM Forms 6.4 {#aem-forms-1}
 
 * Crea origine dati
 
@@ -102,15 +102,15 @@ Dopo aver creato il modello dati modulo, è possibile creare un Forms adattivo b
    * Individuate e selezionate il file swagger scaricato nel passaggio precedente
    * Tipo di autenticazione: OAuth 2.0. Specificare i valori seguenti
    * Fornire i valori ClientID e Segreto cliente
-   * Url OAuth: **https://login.salesforce.com/services/oauth2/authorize**
-   * Aggiorna Url Token - **https://na5.salesforce.com/services/oauth2/token**
-   * Access Token **Url - https://na5.salesforce.com/services/oauth2/token**
+   * Url OAuth è - **https://login.salesforce.com/services/oauth2/authorize**
+   * Aggiorna URL token - **https://na5.salesforce.com/services/oauth2/token**
+   * Token di accesso Ur **l - https://na5.salesforce.com/services/oauth2/token**
    * Ambito di autorizzazione: ** api chatter_api full id aperid refresh_token visualizzazione web***
    * Gestore autenticazione: Titolare dell&#39;autorizzazione
    * Fate clic sul pulsante &quot;Connetti a OAuth&quot;. In caso di errori, controlla i passaggi precedenti per verificare che tutte le informazioni siano state immesse con precisione.
 
 
-Dopo aver creato l&#39;origine dati tramite SalesForce, è possibile creare l&#39;integrazione dei dati del modulo utilizzando l&#39;origine dati appena creata. Il collegamento della documentazione è [disponibile qui](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)
+Dopo aver creato l&#39;origine dati tramite SalesForce, è possibile creare l&#39;integrazione dei dati del modulo utilizzando l&#39;origine dati appena creata. Il collegamento della documentazione è [qui](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)
 
 Configurare il modello dati modulo per includere il servizio POST per creare un oggetto Lead in SFDC.
 
