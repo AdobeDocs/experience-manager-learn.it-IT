@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# Aggiunta di componenti al pannello Entrate {#adding-components-to-income-panel}
+# Aggiunta di componenti al pannello Redditi {#adding-components-to-income-panel}
 
 Aggiungeremo una tabella al pannello Reddito. Configurare le righe della tabella e utilizzare l&#39;editor di regole per calcolare il totale complessivo.
 
@@ -34,7 +34,7 @@ Aggiungeremo una tabella al pannello Reddito. Configurare le righe della tabella
 
 ## Imposta tabella redditi dinamica {#make-the-income-table-dynamic}
 
-**Accertatevi di essere in modalità di modifica. Il pulsante Modifica si trova nella parte superiore destra del browser.**
+**Accertatevi di essere in modalità di modifica. Il pulsante Modifica si trova in alto a destra nel browser.**
 
 * Per impostazione predefinita, quando si inserisce una tabella in Modulo adattivo, la tabella non è dinamica e non è quindi possibile aggiungere nuove righe alla tabella in fase di esecuzione.
 
