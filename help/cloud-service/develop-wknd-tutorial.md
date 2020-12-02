@@ -26,11 +26,11 @@ L&#39;obiettivo di questa esercitazione con più parti è insegnare a uno svilup
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
-L&#39;esercitazione è progettata per lavorare con **AEM come Cloud Service** ed è compatibile con le versioni precedenti con **AEM 6.5+** e **AEM 6.4.2+**.
+L&#39;esercitazione è progettata per funzionare con **AEM come Cloud Service** ed è retrocompatibile con **AEM 6.5+** e **AEM 6.4.2+**.
 
 **[Guarda l&#39;esercitazione qui!](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)**
 
-## Deploying WKND to AEM as a Cloud Service{#deploying-wknd-to-aem-as-a-cloud-service}
+## Distribuzione di WKND in AEM come Cloud Service{#deploying-wknd-to-aem-as-a-cloud-service}
 
 Dopo aver completato l&#39;esercitazione WKND, guardate il video seguente per una panoramica su come distribuire il progetto WKND da AEM come Cloud Service.
 
@@ -42,4 +42,4 @@ Il video mostra come il progetto WKND Site può essere:
 2. Inviato a un archivio Git di  Adobe Cloud Manager a monte registrato con un AEM come programma Cloud Service
 3. Implementata tramite pipeline di Cloud Manager per AEM come ambienti di Cloud Service
 
-Per una panoramica completa su come distribuire AEM progetto AEM come servizio cloud, guarda la serie video su come [integrare Git con  Adobe Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
+Per una panoramica completa su come distribuire AEM progetto in AEM come servizio Cloud, guarda la serie video su come [integrare Git con  Manager Adobe Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
