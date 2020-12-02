@@ -1,18 +1,18 @@
 ---
-title: Guida introduttiva ad AEM e  Adobe Target
-seo-title: Guida introduttiva ad AEM e  Adobe Target
+title: Guida introduttiva ad AEM e Adobe Target
+seo-title: Guida introduttiva ad AEM e Adobe Target
 description: Un'esercitazione completa che mostra come creare e distribuire esperienze personalizzate utilizzando Adobe Experience Manager e  Adobe Target. Questa esercitazione illustra anche le diverse persone coinvolte nel processo finale e come collaborano tra di loro
 seo-description: Un'esercitazione completa che mostra come creare e distribuire esperienze personalizzate utilizzando Adobe Experience Manager e  Adobe Target. Questa esercitazione illustra anche le diverse persone coinvolte nel processo finale e come collaborano tra di loro
 translation-type: tm+mt
 source-git-commit: c4ddafe392f74be8401f3ef6e07fc9d463d7620a
 workflow-type: tm+mt
 source-wordcount: '889'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Guida introduttiva ad AEM e  Adobe Target {#getting-started-with-aem-target}
+# Guida introduttiva ad AEM e Adobe Target {#getting-started-with-aem-target}
 
 AEM e Target sono entrambe soluzioni potenti con funzionalità apparentemente sovrapposte. A volte i clienti hanno difficoltà a comprendere come e quando utilizzare questi prodotti insieme per offrire esperienze personalizzate. Per offrire un&#39;esperienza ottimizzata a ogni utente finale, i diversi team all&#39;interno dell&#39;organizzazione dovrebbero collaborare strettamente e definire chi esegue cosa.
 
@@ -24,13 +24,13 @@ Questa esercitazione illustra tre scenari diversi per AEM e Target, per consenti
 
 ## Personalizzazione mediante AEM frammenti esperienza {#personalization-using-aem-experience-fragment}
 
-Per questo scenario, utilizzeremo AEM e Target. Chiaramente, entrambi i prodotti hanno i propri punti di forza e, quando si tratta di offrire esperienze personalizzate agli utenti del sito, è necessario disporre di contenuti **personalizzati (contenuti da AEM)** e di un metodo **intelligente (Target)** per distribuire questi contenuti in base a un utente specifico.
+Per questo scenario, utilizzeremo AEM e Target. Ovviamente, entrambi i prodotti hanno i propri punti di forza e, quando si tratta di offrire esperienze personalizzate agli utenti del sito, è necessario **contenuto personalizzato (contenuto da AEM)** e un **modo intelligente (Target)** per distribuire questi contenuti in base a un utente specifico.
 
 AEM consente di creare contenuti personalizzati, riunendo tutti i contenuti e le risorse in una posizione centrale per rafforzare la strategia di personalizzazione. AEM consente di creare facilmente contenuti per desktop, tablet e dispositivi mobili in un&#39;unica posizione senza scrivere codice. Non è necessario creare pagine per ogni dispositivo: AEM regola automaticamente ogni esperienza utilizzando il contenuto. Potete anche esportare i contenuti da AEM a  Adobe Target come offerte con un pulsante.
 
 Ora disponiamo di contenuti personalizzati sotto forma di Offerte AEM in Target. Target consente di distribuire queste offerte su scala basata su una combinazione di approcci di machine learning basati su regole e basati su AI che includono variabili comportamentali, contestuali e offline.  Con Target potete facilmente impostare ed eseguire attività A/B e multivariato (MVT) per determinare le migliori offerte, contenuti ed esperienze.
 
-**I frammenti** di esperienza rappresentano un enorme passo in avanti per collegare i creatori di contenuti/esperienze ai professionisti della personalizzazione che stanno portando i risultati aziendali utilizzando Target.
+**I** frammenti di esperienza rappresentano un enorme passo in avanti per collegare i creatori di contenuti/esperienze ai professionisti della personalizzazione che stanno portando i risultati aziendali utilizzando Target.
 
 * AEM autori di editor di contenuti contenuti personalizzati come frammenti esperienza e relative varianti
 * AEM esporta HTML frammento esperienza in Target &#x200B;
@@ -41,10 +41,10 @@ Ora disponiamo di contenuti personalizzati sotto forma di Offerte AEM in Target.
 
 **Per implementare questo scenario, è necessario:**
 
-* [Integrare AEM e  Adobe Target con Launch e  I/O Adobe](./implementation.md#integrating-aem-target-options)
+* [Integrare AEM e  Adobe Target con Launch e  Adobe I/O](./implementation.md#integrating-aem-target-options)
 * [AEM e  Adobe Target con Cloud Services legacy](./implementation.md#integrating-aem-target-options)
 
-***Dopo aver implementato le integrazioni di cui sopra, è possibile esaminare[lo scenario nel dettaglio](./personalization-use-case-1.md).***
+***Dopo aver implementato le integrazioni di cui sopra, è possibile esaminare  [lo scenario nel dettaglio](./personalization-use-case-1.md).***
 
 ## Personalizzazione mediante Visual Experience Composer (Compositore esperienza visivo)
 
@@ -62,9 +62,9 @@ VEC è una delle caratteristiche principali di  Adobe Target. Il VEC consente ag
 
 **Per implementare questo scenario, è necessario:**
 
-* [Integrare AEM e  Adobe Target con Launch e  I/O Adobe](./implementation.md#integrating-aem-target-options)
+* [Integrare AEM e  Adobe Target con Launch e  Adobe I/O](./implementation.md#integrating-aem-target-options)
 
-***Dopo aver implementato l&#39;integrazione di cui sopra, consente di esaminare in dettaglio[lo scenario.](./personalization-use-case-3.md)***
+***Dopo aver implementato l&#39;integrazione di cui sopra, consente di esaminare in dettaglio  [lo scenario.](./personalization-use-case-3.md)***
 
 ## Personalizzazione di esperienze con pagine Web complete
 
@@ -80,6 +80,6 @@ L&#39;integrazione di Adobe Experience Manager con  Adobe Target consente di off
 
 **Per implementare questo scenario, è necessario:**
 
-* [Integrare AEM e  Adobe Target con Launch e  I/O Adobe](./implementation.md#integrating-aem-target-options)
+* [Integrare AEM e  Adobe Target con Launch e  Adobe I/O](./implementation.md#integrating-aem-target-options)
 
-***Dopo aver implementato l&#39;integrazione di cui sopra, consente di esaminare in dettaglio[lo scenario.](./personalization-use-case-2.md)***
+***Dopo aver implementato l&#39;integrazione di cui sopra, consente di esaminare in dettaglio  [lo scenario.](./personalization-use-case-2.md)***
