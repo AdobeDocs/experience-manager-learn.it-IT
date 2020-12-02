@@ -21,7 +21,7 @@ ht-degree: 13%
 ---
 
 
-# Gestione del colore con AEM elementi multimediali dinamici{#understanding-color-management-with-aem-dynamic-media}
+# Gestione del colore con AEM elemento multimediale dinamico{#understanding-color-management-with-aem-dynamic-media}
 
 Questo video illustra la gestione dinamica del colore per i file multimediali e come possono essere utilizzati per fornire funzionalità di anteprima per la correzione del colore in  AEM Assets.
 
@@ -29,7 +29,7 @@ Questo video illustra la gestione dinamica del colore per i file multimediali e 
 
 >[!NOTE]
 >
->[Abilita Dynamic Media](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) in AEM per utilizzare questa funzione.
+>[Abilitare il ](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) supporto dinamico AEM utilizzare questa funzione.
 
 Questa funzione è disponibile nelle versioni AEM 6.1 e 6.2 come Feature Pack.
 
@@ -91,7 +91,7 @@ Di seguito è riportato il modello XML per il nodo di configurazione Gestione co
 />
 ```
 
-### Elenco dei profili colore  Adobe predefiniti elencati di seguito {#list-of-default-adobe-color-profiles-are-listed-below}
+### Elenco dei profili colore  Adobe predefiniti elencati di seguito{#list-of-default-adobe-color-profiles-are-listed-below}
 
 | Nome | Spazio colore | Descrizione |
 | ------------------- | ---------- | ------------------------------------- |
@@ -120,7 +120,7 @@ Di seguito è riportato il modello XML per il nodo di configurazione Gestione co
 | FogliettoNon patinato | CMYK | U.S. SheetFeed non patinato v2 |
 | SMPTE | RGB | SMPTE-C |
 | sRGB | RGB sRGB | IEC61966-2.1 |
-| UncoatedFogra29 | CMYK | FOGRA29 non patinata (ISO 12647-2:2004) |
+| Fogra29 non patinata | CMYK | FOGRA29 non patinata (ISO 12647-2:2004) |
 | WebCoated | CMYK | Stati Uniti Web Coated (SWOP) v2 |
 | WebCoatedFogra28 | CMYK | Web Coated FOGRA28 (ISO 12647-2:2004) |
 | WebCoatedGrade3 | CMYK | Carta SWOP 2006 con rivestimento Web 3 |
