@@ -40,7 +40,7 @@ Le funzionalità per le differenze di pagina di AEM Sites consentono di visualiz
 * **Rosso**: Componente rimosso
 * **Blu**: Componente modificato
 
-## Confronto delle pagine lancio {#comparing-launch-pages}
+## Confronto delle pagine di lancio {#comparing-launch-pages}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17746/?quality=9&learn=on)
 
