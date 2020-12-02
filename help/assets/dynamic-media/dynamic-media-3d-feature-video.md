@@ -23,12 +23,12 @@ Il supporto Dynamic Media 3D per Adobe Experience Manager consente di personaliz
 
 >[!VIDEO](https://video.tv.adobe.com/v/35156/?quality=9&learn=on)
 
-Guardate qui il visualizzatore [](http://s7d1.scene7.com/s7viewers/html5/DimensionalViewer.html?asset=DynamicmediaNA1/canBlue-2&amp;config=DynamicmediaNA1/Dimensional&amp;serverUrl=http://s7d1.scene7.com/is/image/&amp;contenturl=http://s7d1.scene7.com/is/content/) dimensionale 3D.
+Consultate il 3D [Visualizzatore dimensionale](http://s7d1.scene7.com/s7viewers/html5/DimensionalViewer.html?asset=DynamicmediaNA1/canBlue-2&amp;config=DynamicmediaNA1/Dimensional&amp;serverUrl=http://s7d1.scene7.com/is/image/&amp;contenturl=http://s7d1.scene7.com/is/content/) qui.
 
 
 ## Utilizzo di 3D Experience Viewer
 
-* **Girare la fotocamera** : Per orbitare intorno all&#39;oggetto - Fare clic con il pulsante sinistro del mouse + trascinare o premere + trascinare
+* **Ruota fotocamera** : Per orbitare intorno all&#39;oggetto - Fare clic con il pulsante sinistro del mouse + trascinare o premere + trascinare
 * **Pan Camera** : Per scorrere (visualizzare sinistra, destra, in alto e in basso) - Clic destro + Trascinate / Ctrl + Trascinate / Due dita Premete + Trascinate
-* **Telecamera** zoom: Per ingrandire - Ruota di scorrimento o pollice
+* **Zoom fotocamera** : Per ingrandire - Ruota di scorrimento o pollice
 * **Ripristina/Centra fotocamera** : Per centrare l&#39;oggetto: doppio clic o doppio tocco
