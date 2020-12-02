@@ -29,12 +29,12 @@ Questo articolo fornisce un pacchetto OSGI di esempio per certificare i document
 
 Per certificare i documenti utilizzando  AEM Forms, è necessario seguire i passaggi seguenti
 
-## Aggiunta di un certificato all&#39;archivio attendibili {#adding-certificate-to-trust-store}
+## Aggiunta del certificato all&#39;archivio certificati {#adding-certificate-to-trust-store}
 
 Segui i passaggi indicati di seguito per aggiungere il certificato al keystore in AEM
 
 * [Inizializzazione archivio trust globale](http://localhost:4502/libs/granite/security/content/truststore.html)
-* [Cerca utente fd-service](http://localhost:4502/security/users.html)
+* [Cercare fd-](http://localhost:4502/security/users.html) serviceuser
 * **Sarà necessario scorrere la pagina dei risultati per caricare tutti gli utenti per trovare l&#39;utente del servizio fd**
 * Fate doppio clic sull’utente del servizio fd per aprire la finestra delle impostazioni utente
 * Fare clic su &quot;Aggiungi chiave privata dal file dell&#39;archivio di chiavi&quot;.Specificare l&#39;alias e la password specifici per il certificato
@@ -56,17 +56,17 @@ Oppure puoi usare il bundle di esempio incluso in questa esercitazione.
 
 ## Verifica del campione sul sistema locale
 
-* Download e installazione di Document Services Bundle [personalizzato](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* Scaricare e installare [Developing with Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* Download e installazione di [Custom Document Services Bundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* Download e installazione di [Sviluppo con Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [Assicuratevi di aver aggiunto la seguente voce nel servizio Apache Sling Service User Mapper Service](http://localhost:4502/system/console/configMgr)
 
-   **DevelopingWithServiceUser.core:getformsresources ceresolver=fd-service** come mostrato nella schermata seguente
+   **DevelopingWithServiceUser.core:getformsresources ceresolver=fd-** servicecome mostrato nella schermata seguente
    ![User-Mapper](assets/user-mapper-service.PNG)
 * [Importa modulo adattivo di esempio](assets/certify-pdf-af.zip)
 * [Importa e installa invio personalizzato](assets/custom-submit-certify.zip)
 * [Aprire il modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/certifypdf/jcr:content?wcmmode=disabled)
 * Caricare un documento PDF da certificare
-   **facoltativo** - Specificare il campo firma da utilizzare per la certificazione del documento
+   **facoltativo** : specificare il campo firma da utilizzare per la certificazione del documento
 * Fate clic su Invia.
 * Il PDF certificato deve essere restituito.
 
