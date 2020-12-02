@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Servizio Codice A Barre Con Forms Adattivo{#barcode-service-with-adaptive-forms}
+# Servizio codice a barre con Forms{#barcode-service-with-adaptive-forms} adattivo
 
 Questo articolo illustra l&#39;utilizzo del servizio codice a barre per compilare il modulo adattivo. Il caso di utilizzo è il seguente:
 
@@ -31,7 +31,7 @@ Questo articolo illustra l&#39;utilizzo del servizio codice a barre per compilar
 
 Il codice seguente decodifica il codice a barre e compila un oggetto JSON con i valori decodificati. Il servlet quindi restituisce l&#39;oggetto JSON nella risposta all&#39;applicazione chiamante.
 
-Puoi vedere questa funzionalità live, visita il portale [di](https://forms.enablementadobe.com/content/samples/samples.html?query=0) esempi e cerca la demo del servizio Codice a barre
+Questa funzionalità è disponibile dal vivo. Visitare il [portale di esempi](https://forms.enablementadobe.com/content/samples/samples.html?query=0) e cercare la demo del servizio Codice a barre
 
 ```java
 public JSONObject extractBarCode(Document pdfDocument) {
@@ -146,11 +146,11 @@ Riga 23 - Chiama il metodo estrazioneBarCode di DocumentServices per inserire l&
 
 Per eseguire questa operazione sul sistema, attenetevi alla seguente procedura
 
-1. [Scaricate BarcodeService.zip](assets/barcodeservice.zip) e importateli in AEM utilizzando il gestore pacchetti
+1. [Scaricate BarcodeService.](assets/barcodeservice.zip) zip importate in AEM utilizzando il gestore pacchetti
 1. [Scaricare e installare il pacchetto Document Services personalizzato](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Download e installazione del pacchetto DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [Download del modulo PDF di esempio](assets/barcode.pdf)
-1. Indirizzare il browser al modulo [di esempio](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
+1. Posizionare il browser sul [modulo adattivo di esempio](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
 1. Caricare il PDF di esempio fornito
 1. È necessario visualizzare i moduli compilati con i dati
 
