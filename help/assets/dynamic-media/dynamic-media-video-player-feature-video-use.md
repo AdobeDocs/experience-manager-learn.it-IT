@@ -21,13 +21,13 @@ ht-degree: 5%
 ---
 
 
-# Utilizzo del lettore video in AEM file multimediali dinamici{#using-the-video-player-in-aem-dynamic-media}
+# Utilizzo del lettore video in AEM elemento multimediale dinamico{#using-the-video-player-in-aem-dynamic-media}
 
 AEM lettore video Dynamic Media utilizzato per basarsi sul runtime di Flash per supportare lo streaming di video adattivi su client e browser desktop è diventato più aggressivo con lo streaming di contenuti basati su Flash. Con l&#39;introduzione di HLS (il protocollo di distribuzione video HTTP Live Streaming di Apple), ora è possibile trasmettere in streaming i contenuti senza ricorrere al flash.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16791/?quality=9&learn=on)
 
-## Ricerca rapida del lettore video non Flash {#quick-look-into-non-flash-video-player}
+## Panoramica rapida del lettore video non Flash {#quick-look-into-non-flash-video-player}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17429/?quality=9&learn=on)
 
