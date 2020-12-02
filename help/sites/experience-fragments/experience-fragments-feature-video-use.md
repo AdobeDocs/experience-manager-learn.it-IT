@@ -56,5 +56,5 @@ AEM 6.5 ora supporta funzionalità di ricerca full-text per i frammenti esperien
 
 >[!VIDEO](https://video.tv.adobe.com/v/27720/?quality=9&learn=on)
 
-* **Gli autori** dei contenuti (ricerca interna) ora possono cercare una parte di testo all&#39;interno di un frammento esperienza e il risultato includerebbe i frammenti esperienza contenenti il testo e la pagina che fa riferimento al frammento esperienza.
-* **Gli utenti** del sito (ricerca esterna) possono ora eseguire una ricerca full-text utilizzando il componente di ricerca e il risultato include pagine del sito che fanno riferimento al frammento esperienza contenente la parola chiave search.
+* **Gli autori**  dei contenuti (ricerca interna) ora possono cercare una parte di testo all&#39;interno di un frammento esperienza e il risultato includerebbe i frammenti esperienza contenenti il testo e la pagina che fa riferimento al frammento esperienza.
+* **Gli utenti**  del sito (ricerca esterna) possono ora eseguire una ricerca full-text utilizzando il componente di ricerca e il risultato include pagine del sito che fanno riferimento al frammento esperienza contenente la parola chiave search.
