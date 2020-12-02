@@ -37,7 +37,7 @@ Esistono tre set di regole dinamiche che possono essere attivati per un determin
 >
 >Le regole di sovrapposizione possono essere create SOLO in base ai valori di un campo a discesa. È possibile applicare tutti e tre i set di regole allo stesso campo di metadati, ma come procedura ottimale si consiglia di fare in modo che ciascun set di regole dipenda dallo stesso elenco a discesa di metadati.
 
-Download del pacchetto [di metadati personalizzati](assets/cascade-metadata-values-001.zip)
+Scarica [pacchetto di metadati personalizzati](assets/cascade-metadata-values-001.zip)
 
 ## Risorse aggiuntive{#additional-resources}
 
