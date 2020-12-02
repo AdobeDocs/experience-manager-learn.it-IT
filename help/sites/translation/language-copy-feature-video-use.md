@@ -15,7 +15,7 @@ ht-degree: 3%
 ---
 
 
-# Utilizzo della copia per lingua {#using-language-copy}
+# Utilizzo della copia della lingua {#using-language-copy}
 
 Con AEM 6.3 Creazione guidata Copia lingua traduzione del sito migliorato, gli utenti possono creare una copia della lingua dalla lingua principale senza dover creare una pagina principale.
 
