@@ -24,4 +24,4 @@ Il video illustra i vari passaggi necessari per configurare un modulo adattivo c
 
 Le risorse correlate a questo video possono essere scaricate dal seguente collegamento
 
-* [Modifica Della Forma Del Beneficiario ](assets/change-of-beneficiary-form.zip)
+* [Modifica Della Forma Del Beneficiario  ](assets/change-of-beneficiary-form.zip)
