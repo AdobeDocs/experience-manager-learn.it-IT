@@ -20,7 +20,7 @@ ht-degree: 2%
 ---
 
 
-# Registrazione di tipi di risorse personalizzati {#registering-custom-asset-types}
+# Registrazione dei tipi di risorse personalizzate {#registering-custom-asset-types}
 
 Abilitazione di tipi di risorse personalizzati per l&#39;elenco in AEMForms Portal
 
@@ -28,14 +28,14 @@ Abilitazione di tipi di risorse personalizzati per l&#39;elenco in AEMForms Port
 >
 >Assicurarsi di avere AEM 6.3 con SP1 e il corrispondente AEM Forms Add On  installato. Questa funzione funziona solo con  AEM Forms 6.3 SP1 e versioni successive
 
-## Specifica percorso di base {#specify-base-path}
+## Specificare il percorso di base {#specify-base-path}
 
-Il percorso di base è il percorso del repository di livello principale che include tutte le risorse che un utente potrebbe desiderare elencare nel componente Cerca e ascolta. Se necessario, l&#39;utente può anche configurare posizioni specifiche all&#39;interno del percorso di base della finestra di dialogo di modifica del componente, in modo che la ricerca venga attivata in posizioni specifiche anziché cercare tutti i nodi all&#39;interno del percorso di base. Per impostazione predefinita, il percorso di base è utilizzato come criterio del percorso di ricerca per recuperare le risorse, a meno che l’utente non configuri un set di percorsi specifici dall’interno di tale posizione. È importante avere un valore ottimale di questo percorso per effettuare una ricerca performante. Il valore predefinito del percorso di base resterà impostato su **_/content/dam/formsanddocuments_** perché tutte  risorse AEM Forms risiedono in documenti **_/content/dam/formsanddocumenti._**
+Il percorso di base è il percorso del repository di livello principale che include tutte le risorse che un utente potrebbe desiderare elencare nel componente Cerca e ascolta. Se necessario, l&#39;utente può anche configurare posizioni specifiche all&#39;interno del percorso di base della finestra di dialogo di modifica del componente, in modo che la ricerca venga attivata in posizioni specifiche anziché cercare tutti i nodi all&#39;interno del percorso di base. Per impostazione predefinita, il percorso di base è utilizzato come criterio del percorso di ricerca per recuperare le risorse, a meno che l’utente non configuri un set di percorsi specifici dall’interno di tale posizione. È importante avere un valore ottimale di questo percorso per effettuare una ricerca performante. Il valore predefinito del percorso di base rimarrà uguale a **_/content/dam/formsanddocuments_**, perché tutte  risorse AEM Forms risiedono in **_/content/dam/formsanddocuments._**
 
 Passaggi per configurare il percorso di base
 
 1. Login a crx
-1. Navigare **/libs/fd/fp/extensions/querybuilder/basepath**
+1. Passare a **/libs/fd/fp/extensions/querybuilder/basepath**
 
 1. Fare clic su &quot;Overlay Node&quot; nella barra degli strumenti
 1. Verificate che il percorso della sovrapposizione sia &quot;/apps/&quot;
@@ -61,7 +61,7 @@ Specificando la proprietà path su **&quot;/content/dam&quot;** si sta fondament
 
 **Passaggi per registrare il tipo di risorsa personalizzata**
 
-1. Creare un nodo di sovrapposizione di tipo **/libs/fd/fp/extensions/querybuilder/assettypes**
+1. Creare il nodo di sovrapposizione **/libs/fd/fp/extensions/querybuilder/assettypes**
 
 1. Impostate il percorso della sovrapposizione su &quot;/apps&quot;
 1. Andate alla nuova struttura creata in **/apps/fd/fp/extensions/querybuilder/assettypes **
@@ -87,7 +87,7 @@ Dopo aver eseguito i passaggi indicati, il nuovo tipo di risorsa (File Mp4) verr
 
 ![mp4files](assets/mp4files.png)
 
-[In caso di problemi durante il funzionamento, potete importare il pacchetto seguente.](assets/assettypeskt1.zip) Per il pacchetto sono definiti due tipi di risorse personalizzate. File Mp4 e documenti Worddocuments. Suggerisci di dare un&#39;occhiata a **/apps/fd/fp/extensions/querybuilder/assettypes**
+[In caso di problemi durante il funzionamento, potete importare il pacchetto seguente.](assets/assettypeskt1.zip) Per il pacchetto sono definiti due tipi di risorse personalizzate. File Mp4 e documenti Worddocuments. Consigliamo di dare un&#39;occhiata a **/apps/fd/fp/extensions/querybuilder/assettypes**
 
-[Installate il pacchetto](assets/customportalpage.zip)customPortal. Questo pacchetto contiene la pagina del portale di esempio. Questa pagina verrà utilizzata nella seconda parte dell&#39;esercitazione
+[Installate il pacchetto](assets/customportalpage.zip) customPortal. Questo pacchetto contiene la pagina del portale di esempio. Questa pagina verrà utilizzata nella seconda parte dell&#39;esercitazione
 
