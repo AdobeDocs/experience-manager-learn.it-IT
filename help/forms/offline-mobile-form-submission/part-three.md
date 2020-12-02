@@ -28,7 +28,7 @@ La schermata seguente mostra i passaggi coinvolti nel flusso di lavoro.
 
 ## Passaggio del flusso di lavoro Genera PDF non interattivo
 
-Il modello XDP e i dati da unire con il modello sono specificati qui. I dati da unire sono i dati inviati dal PDF. Questi dati inviati vengono memorizzati sotto il nodo `/content/pdfsubmissions`.
+Il modello XDP e i dati da unire con il modello sono specificati qui. I dati da unire sono i dati inviati dal PDF. I dati inviati vengono memorizzati nel nodo `/content/pdfsubmissions`.
 
 ![workflow](assets/generate-pdf1.PNG)
 
