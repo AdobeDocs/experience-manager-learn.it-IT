@@ -26,9 +26,9 @@ Un frammento è una parte riutilizzabile di un modulo. Ad esempio, un frammento 
 
 
 
-Per ulteriori informazioni, fare riferimento alla documentazione relativa [ai modelli di modulo](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) adattivo
+Per ulteriori informazioni, fare riferimento alla [documentazione relativa al modello di modulo adattivo](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html)
 
-Se necessario, potete scaricare il frammento [Spouse-details- ](assets/spouse-details-fragment.zip) e importarlo in AEM utilizzando il gestore [pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+Se necessario, è possibile scaricare il frammento [Spouse-details-fragment ](assets/spouse-details-fragment.zip) e importarlo in AEM utilizzando il gestore [package](http://localhost:4502/crx/packmgr/index.jsp)
 
 
 
