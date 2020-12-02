@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Creare un sito paese {#create-country-site}
+# Creare un sito del paese {#create-country-site}
 
 Scoprite come creare un sito di un paese da Copie di lingua esistenti utilizzando la procedura guidata Crea sito.
 
