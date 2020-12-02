@@ -25,13 +25,13 @@ I flussi di lavoro vengono generalmente utilizzati per indirizzare i dati inviat
 
 ## Prerequisito
 
-Verificare di disporre di un&#39;istanza funzionante di  AEM Forms. Seguite la guida [all&#39;](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) installazione per installare e configurare  AEM Forms
+Verificare di disporre di un&#39;istanza funzionante di  AEM Forms. Seguire la [guida all&#39;installazione](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) per installare e configurare  AEM Forms
 
 Il seguente video illustra la creazione del flusso di lavoro di revisione e approvazione tramite  componenti AEM Forms
 >[!VIDEO](https://video.tv.adobe.com/v/40242/?quality=9&learn=on)
 
 
-Se per qualche motivo non è possibile generare il flusso di lavoro, potete scaricare il flusso di lavoro completato da [qui](assets/review-submitted-data-workflow.zip) e importare lo stesso utilizzando [il gestore](http://localhost:4502/crx/packmgr/index.jsp) pacchetti nell’istanza AEM.
+Se per qualche motivo non è possibile generare il flusso di lavoro, è possibile scaricare il flusso di lavoro completato da [qui](assets/review-submitted-data-workflow.zip) e importare lo stesso utilizzando [package manager](http://localhost:4502/crx/packmgr/index.jsp) nell&#39;istanza AEM.
 
 
 
