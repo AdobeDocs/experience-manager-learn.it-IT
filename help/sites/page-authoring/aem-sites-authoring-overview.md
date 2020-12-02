@@ -20,7 +20,7 @@ ht-degree: 15%
 ---
 
 
-# Panoramica sull’authoring {#authoring-overview}
+# Panoramica sull&#39;authoring {#authoring-overview}
 
 Il seguente video offre una panoramica dei concetti di base relativi all’authoring in un ambiente AEM di authoring per  AEM Sites.
 
