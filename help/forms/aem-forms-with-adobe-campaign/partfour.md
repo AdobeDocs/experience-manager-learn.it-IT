@@ -118,7 +118,8 @@ Il file di swagger di esempio viene fornito come parte della risorsa correlata a
 Per testare la soluzione, attenetevi alla seguente procedura:
 * [Accertatevi di aver seguito i passaggi descritti qui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Scaricate e decomprimete il file per ottenere il file swagger](assets/create-acs-profile-swagger-file.zip)
-* Crea origine dati utilizzando il file swaggerCrea modello dati modulo e basalo sull&#39;origine dati creata nel passaggio precedente
+* Crea origine dati utilizzando il file swagger
+Crea modello dati modulo e basalo sull&#39;origine dati creata nel passaggio precedente
 * Creare un modulo adattivo basato sul modello dati del modulo creato nel passaggio precedente.
 * Trascinare i seguenti elementi dalla scheda origini dati al modulo adattivo
 
