@@ -6,7 +6,7 @@ seo-description: Capitolo 1 dell'AEM senza titolo l'impostazione della linea di 
 translation-type: tm+mt
 source-git-commit: ecbd4d21c5f41b2bc6db3b409767b767f00cc5d1
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
@@ -18,16 +18,16 @@ ht-degree: 0%
 
 * AEM 6.5 o versione successiva
 * AEM WCM Core Components 2.4.0 o versioni successive
-   * Incluso nel pacchetto [WKND Mobile AEM contenuto dell&#39;applicazione:](#wknd-mobile-application-packages)
+   * Incluso nel [pacchetto di contenuti dell&#39;applicazione per AEM mobile WKND riportato di seguito](#wknd-mobile-application-packages)
 
-Prima di avviare questa esercitazione, assicurarsi che le seguenti istanze AEM siano [installate ed eseguite sul computer](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install)locale:
+Prima di avviare questa esercitazione, verificare che le seguenti istanze di AEM siano [installate ed eseguite nel computer locale](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install):
 
-* **AEM Author** sulla **porta 4502**
-* **AEM Publish** sulla **porta 4503**
+* **AEM** Porta  **di authoron 4502**
+* **AEM** Porta  **di pubblicazione 4503**
 
 ## Pacchetti di applicazioni mobili WKND{#wknd-mobile-application-packages}
 
-Installate i seguenti pacchetti di AEM contenuti su AEM Author **e AEM Publish, utilizzando** [!DNL AEM Package Manager].
+Installate i seguenti pacchetti di AEM contenuto su **sia** AEM Author che su AEM Publish, utilizzando [!DNL AEM Package Manager].
 
 * [ui.apps: GitHub > Risorse > com.adobe.aem.guides.wknd-mobile.ui.apps-x.x.x.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
    * [!DNL WKND Mobile Empty Template Type]
@@ -38,9 +38,9 @@ Installate i seguenti pacchetti di AEM contenuti su AEM Author **e AEM Publish, 
    * [!DNL WKND Mobile] Struttura delle cartelle DAM
    * [!DNL WKND Mobile] risorse immagine
 
-Nel [capitolo 7](./chapter-7.md) eseguiremo l&#39;app mobile [!DNL WKND Mobile] Android utilizzando [Android Studio](https://developer.android.com/studio) e l&#39;APK fornito (pacchetto applicazione Android):
+In [Capitolo 7](./chapter-7.md) verrà eseguita l&#39;app mobile Android [!DNL WKND Mobile] utilizzando [Android Studio](https://developer.android.com/studio) e il pacchetto di applicazione Android fornito:
 
-* [[!DNL Android Mobile App: GitHub > Risorse > wknd-mobile.x.x.x.apk]](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
+* [[!DNL Android Mobile App: GitHub > Assets > wknd-mobile.x.x.x.apk]](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
 
 ## Capitolo AEM pacchetti di contenuti
 
@@ -53,13 +53,13 @@ Questo set di pacchetti di contenuti crea il contenuto e la configurazione descr
 
 ## Codice origine
 
-Il codice sorgente sia per il progetto AEM che per il progetto [!DNL Android Mobile App] sono disponibili nel [[!DNL AEM Guide - WKND Mobile GitHub Project]](https://github.com/adobe/aem-guides-wknd-mobile). Il codice sorgente non deve essere creato o modificato per questa esercitazione, ma viene fornito per consentire la trasparenza completa nella creazione di tutti gli aspetti dell&#39;esercitazione.
+Il codice sorgente sia per il progetto AEM che per il progetto [!DNL Android Mobile App] è disponibile in [[!DNL AEM Guides - WKND Mobile GitHub Project]](https://github.com/adobe/aem-guides-wknd-mobile). Il codice sorgente non deve essere creato o modificato per questa esercitazione, ma viene fornito per consentire la trasparenza completa nella creazione di tutti gli aspetti dell&#39;esercitazione.
 
-Se si verifica un problema con l&#39;esercitazione o il codice, lasciare un problema [](https://github.com/adobe/aem-guides-wknd-mobile/issues)GitHub.
+Se si verifica un problema con l&#39;esercitazione o il codice, lasciare un [problema GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
 
 ## Passa alla fine
 
-Per terminare l&#39;esercitazione, il pacchetto di contenuti [com.adobe.aem.guide.wknd-mobile.content.Chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) può essere installato su **** AEM Author e AEM Publish. Tenete presente che il contenuto e la configurazione non saranno visualizzati come pubblicati in AEM Author, tuttavia a causa della distribuzione manuale, tutti i contenuti e la configurazione richiesti saranno disponibili in AEM Publish, consentendo [!DNL WKND Mobile App] all&#39;utente di accedere ai contenuti.
+Per terminare l&#39;esercitazione, il pacchetto di contenuti [com.adobe.aem.guide.wknd-mobile.content.Chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) può essere installato sia su **sia su** AEM Author che su AEM Publish. Tenete presente che il contenuto e la configurazione non saranno visualizzati come pubblicati in AEM Author, tuttavia a causa della distribuzione manuale, tutti i contenuti e la configurazione richiesti saranno disponibili in AEM Publish, consentendo a [!DNL WKND Mobile App] di accedere ai contenuti.
 
 
 ## Passaggio successivo
