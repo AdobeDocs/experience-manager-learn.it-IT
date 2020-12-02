@@ -22,7 +22,7 @@ La personalizzazione dei campi di metadati per Proprietà pagina è un requisito
 
 >[!VIDEO](https://video.tv.adobe.com/v/25173?quality=9&learn=on)
 
-Il video riportato sopra mostra la personalizzazione delle proprietà della pagina per l’applicazione We.Retail in **AEM 6.4** utilizzando diverse funzioni di Sling Resource Merger. Attiva le seguenti personalizzazioni:
+Il video precedente mostra la personalizzazione delle proprietà della pagina per l&#39;applicazione We.Retail in **AEM 6.4** utilizzando diverse funzioni di Sling Resource Merger. Attiva le seguenti personalizzazioni:
 
 * Scheda personalizzata inserita prima della scheda Base.
 * Nuovo campo di testo inserito come parte della scheda Base.
