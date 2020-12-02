@@ -29,8 +29,8 @@ Questa esercitazione spiega come impostare un ambiente di sviluppo locale per Ad
 L&#39;ambiente di sviluppo locale per AEM può essere suddiviso in tre gruppi logici:
 
 + Il __AEM Project__ contiene il codice, la configurazione e il contenuto personalizzati dell&#39;applicazione AEM personalizzata.
-+ Runtime __AEM__ locale che esegue localmente una versione locale dei servizi AEM Author e Publish.
-+ Il runtime __del dispatcher__ locale che esegue una versione locale del server Web Apache HTTP e del dispatcher.
++ Il __Runtime AEM locale__ che esegue localmente una versione locale dei servizi AEM Author e Publish.
++ Il __Local Dispatcher Runtime__ che esegue una versione locale di Apache HTTP Web Server e Dispatcher.
 
 Questa esercitazione spiega come installare e impostare gli elementi evidenziati nel diagramma precedente, fornendo un ambiente di sviluppo locale stabile per lo sviluppo AEM.
 
@@ -44,7 +44,7 @@ Questa esercitazione ha stabilito la posizione del AEM come artefatti SDK di Clo
 + `~/aem-sdk/dispatcher` contiene gli strumenti Dispatcher
 + `~/code/<project name>` contiene il codice sorgente AEM progetto personalizzato
 
-Nota `~` abbreviata per la directory dell&#39;utente. In Windows, questo è l&#39;equivalente di `%HOMEPATH%`;
+Tenere presente che `~` è una abbreviazione per la directory dell&#39;utente. In Windows, questo è l&#39;equivalente di `%HOMEPATH%`;
 
 ## Strumenti di sviluppo per progetti AEM
 
@@ -53,7 +53,7 @@ Il progetto AEM è la base di codice personalizzata contenente il codice, la con
 Questa sezione dell&#39;esercitazione mostra come:
 
 + Installare la versione [!DNL Java]
-+ Installazione [!DNL Node.js] (e npm)
++ Installazione di [!DNL Node.js] (e npm)
 + Installare la versione [!DNL Maven]
 + Installare la versione [!DNL Git]
 
@@ -61,25 +61,25 @@ Questa sezione dell&#39;esercitazione mostra come:
 
 ## Runtime AEM locale
 
-L’AEM come SDK per Cloud Service fornisce una versione [!DNL QuickStart Jar] che esegue una versione locale di AEM. Può [!DNL QuickStart Jar] essere utilizzato per eseguire localmente AEM Author Service o AEM Publish Service. Mentre [!DNL QuickStart Jar] fornisce un&#39;esperienza di sviluppo locale, non tutte le funzioni disponibili in AEM come Cloud Service sono incluse nel [!DNL QuickStart Jar].
+L&#39;AEM come SDK di Cloud Service fornisce una [!DNL QuickStart Jar] che esegue una versione locale di AEM. [!DNL QuickStart Jar] può essere utilizzato per eseguire localmente AEM Author Service o AEM Publish Service. Tenere presente che, mentre [!DNL QuickStart Jar] fornisce un&#39;esperienza di sviluppo locale, non tutte le funzioni disponibili in AEM come Cloud Service sono incluse nella [!DNL QuickStart Jar].
 
 Questa sezione dell&#39;esercitazione mostra come:
 
 + Installare la versione [!DNL Java]
 + Download dell’SDK AEM
-+ Eseguire il [!DNL AEM Author Service]
-+ Eseguire il [!DNL AEM Publish Service]
++ Eseguire il comando [!DNL AEM Author Service]
++ Eseguire il comando [!DNL AEM Publish Service]
 
 [Configurare il runtime AEM locale](./aem-runtime.md)
 
 ## Runtime [!DNL Dispatcher] locale
 
-AEM come strumenti Dispatcher dell&#39;SDK di Cloud Service, fornisce tutto il necessario per configurare il [!DNL Dispatcher] runtime locale. [!DNL Dispatcher] Gli strumenti sono [!DNL Docker]basati su e forniscono strumenti della riga di comando per trasferire [!DNL Apache HTTP] Web Server e file di configurazione in formati compatibili e distribuirli [!DNL Dispatcher] in esecuzione nel [!DNL Dispatcher] [!DNL Docker] contenitore.
+AEM come strumenti Dispatcher dell&#39;SDK di Cloud Service, fornisce tutto il necessario per configurare il runtime [!DNL Dispatcher] locale. [!DNL Dispatcher] Gli strumenti sono  [!DNL Docker]basati su e forniscono strumenti della riga di comando per trasferire i file  [!DNL Apache HTTP] Web Server e  [!DNL Dispatcher] di configurazione in formati compatibili e distribuirli in  [!DNL Dispatcher] esecuzione nel  [!DNL Docker] contenitore.
 
 Questa sezione dell&#39;esercitazione mostra come:
 
 + Download dell’SDK AEM
-+ Installare [!DNL Dispatcher] gli strumenti
-+ Eseguire il runtime locale [!DNL Dispatcher]
++ Installazione di [!DNL Dispatcher] Strumenti
++ Eseguire il runtime [!DNL Dispatcher] locale
 
-[Configurare [!DNL Dispatcher] LocalRuntime](./dispatcher-tools.md)
+[Configurare  [!DNL Dispatcher] LocalRuntime](./dispatcher-tools.md)
