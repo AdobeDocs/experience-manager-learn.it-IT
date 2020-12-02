@@ -28,7 +28,7 @@ ht-degree: 0%
 Ai fini di questo articolo, verrà creato un modello personalizzato per visualizzare i tipi di risorse personalizzate e i tipi di risorse OOOTB sulla stessa pagina. Per creare un modello personalizzato, attenetevi alle seguenti istruzioni
 
 1. Creare una fionda: in /apps. Denominatelo &quot; myportalcomponent &quot;
-1. Aggiungete una proprietà &quot;fpContentType&quot;. Impostate il relativo valore su &quot;**/libs/fd/ fp/formTemplate&quot;.**
+1. Aggiungete una proprietà &quot;fpContentType&quot;. Impostate il valore su &quot;**/libs/fd/ fp/formTemplate&quot;.**
 1. Aggiungete una proprietà &quot;title&quot; e impostatene il valore su &quot;custom template&quot;. Nome visualizzato nell’elenco a discesa del componente Ricerca e Ricerca
 1. Create un &quot;template.html&quot; sotto questa cartella. Questo file contiene il codice per lo stile e visualizza i vari tipi di risorse.
 
@@ -76,9 +76,9 @@ Il codice seguente elenca i vari tipi di risorse che utilizzano il componente Ce
 >
 >Per elencare l&#39;Forms adattivo in questo modello, create un nuovo div e impostate l&#39;attributo del tipo di dati su &quot;guide&quot;. È possibile copiare e incollare il div i cui dati-type=&quot;printForm e impostare il tipo di dati del div appena copiato su &quot;guide&quot;
 
-## Configurare Il Componente Ricerca E Registrazione {#configure-search-and-lister-component}
+## Configurare il componente Ricerca e Archivia {#configure-search-and-lister-component}
 
-Una volta definito il modello personalizzato, ora è necessario associare questo modello personalizzato al componente &quot;Cerca e chiudi&quot;. Indicate il browser [a questo URL ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
+Una volta definito il modello personalizzato, ora è necessario associare questo modello personalizzato al componente &quot;Cerca e chiudi&quot;. Posizionare il browser [su questo URL ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
 
 Passate alla modalità Progettazione e configurate il sistema di paragrafi per includere il componente Cerca e nascondi nel gruppo di componenti consentito. Il componente Ricerca e filtro fa parte del gruppo Document Services.
 
@@ -108,10 +108,11 @@ La schermata seguente mostra i tipi di risorse configurati per l’elenco
 
 ![assettypes](assets/assettypes.png)
 
-Ora che hai configurato il componente Ricerca e Lister Portal, è ora di vedere il listener in azione. Indicate il browser [a questo URL ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). I risultati dovrebbero essere simili all’immagine mostrata di seguito.
+Ora che hai configurato il componente Ricerca e Lister Portal, è ora di vedere il listener in azione. Posizionare il browser [su questo URL ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). I risultati dovrebbero essere simili all’immagine mostrata di seguito.
 
 >[!NOTE]
 >
 >Se il portale elenca tipi di risorse personalizzate su un server di pubblicazione, accertatevi di concedere l&#39;autorizzazione di lettura per l&#39;utente &quot;fd-service&quot; al nodo **/apps/fd/fp/extensions/querybuilder**
 
-![assettypes](assets/assettypeslistings.png)[Scaricate e installate il pacchetto utilizzando il gestore pacchetti.](assets/customassettypekt1.zip) Contiene esempi di documenti mp4 e Word e file xdp che verranno utilizzati come tipi di risorse da elencare utilizzando il componente Cerca e Lister
+![](assets/assettypeslistings.png)
+[assettypesScaricate e installate il pacchetto utilizzando il gestore pacchetti.](assets/customassettypekt1.zip) Contiene esempi di documenti mp4 e Word e file xdp che verranno utilizzati come tipi di risorse da elencare utilizzando il componente Cerca e Lister
