@@ -18,13 +18,14 @@ ht-degree: 2%
 
 # Utilizzo di un modello visivo per visualizzare i dati della inbox
 
-Potete utilizzare un modello visivo per formattare i dati da visualizzare nelle colonne della inbox. In questo esempio verranno visualizzate le icone coral-ui a seconda del valore della colonna reddito. La schermata seguente mostra l&#39;uso delle icone nella colonna![reddito-icone](assets/income-column.PNG)
+Potete utilizzare un modello visivo per formattare i dati da visualizzare nelle colonne della inbox. In questo esempio verranno visualizzate le icone coral-ui a seconda del valore della colonna reddito. La schermata seguente mostra l&#39;utilizzo di icone nella colonna reddito
+![icone di reddito](assets/income-column.PNG)
 
-[Il modello](assets/sightly-template.zip) scelto per visualizzare le icone dell&#39;interfaccia utente di corallo personalizzato è disponibile in questo articolo.
+[Il ](assets/sightly-template.zip) modello miope utilizzato per visualizzare le icone di interfaccia di corallo personalizzato è fornito come parte di questo articolo.
 
 ## Modello Sightly
 
-Di seguito è riportato il modello per vedute. Il codice nel modello visualizza l&#39;icona a seconda del reddito. Le icone sono disponibili come parte della libreria [di icone](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) coral ui che viene fornita con AEM.
+Di seguito è riportato il modello per vedute. Il codice nel modello visualizza l&#39;icona a seconda del reddito. Le icone sono disponibili come parte della [libreria di icone di corallo ui](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) che viene fornita con AEM.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
@@ -78,7 +79,7 @@ return val;
 
 >[!NOTE]
 >
->Questo articolo presuppone che sia stato installato il flusso di lavoro [di](assets/review-workflow.zip) esempio e il modulo [di](assets/snap-form.zip) esempio dall&#39;articolo [](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/inbox-customization/add-married-column.md) precedente di questa serie.
+>Questo articolo presuppone che sia stato installato il [flusso di lavoro di esempio](assets/review-workflow.zip) e il [modulo di esempio](assets/snap-form.zip) dall&#39; [articolo precedente](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/inbox-customization/add-married-column.md) in questa serie.
 
 * [Login per crx come utente amministratore](http://localhost:4502/crx/de/index.jsp)
 * [importa modello visivo](assets/sightly-template.zip)
@@ -88,7 +89,7 @@ return val;
 * Apri Admin Control facendo clic su List View (Visualizzazione elenco) accanto al pulsante Create (Crea)
 * Aggiungi colonna reddito a Posta in arrivo e salva le modifiche
 * [Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Selezionare lo stato _civile_ e inviare il modulo
+* Selezionare lo _stato civile_ e inviare il modulo
 * [Visualizza inbox](http://localhost:4502/aem/inbox)
 
 L&#39;invio del modulo attiverà il flusso di lavoro e un&#39;attività verrà assegnata all&#39;utente &quot;admin&quot;. Nella colonna reddito dovrebbe essere visualizzata l&#39;icona appropriata
