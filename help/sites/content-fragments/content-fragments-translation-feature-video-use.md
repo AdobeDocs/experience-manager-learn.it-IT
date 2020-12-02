@@ -23,7 +23,7 @@ AEM 6.3 introduce la possibilità di tradurre i frammenti di contenuto. È inolt
 
 >[!VIDEO](https://video.tv.adobe.com/v/18131/?quality=9&learn=on)
 
-## Casi di utilizzo di conversione di frammento di contenuto {#content-fragment-translation-use-cases}
+## Casi di utilizzo di conversione dei frammenti di contenuto {#content-fragment-translation-use-cases}
 
 I frammenti di contenuto sono un tipo di contenuto riconosciuto che AEM verrà estratto per essere inviato a un servizio di traduzione esterno. Sono supportati diversi casi di utilizzo:
 
@@ -34,7 +34,7 @@ I frammenti di contenuto sono un tipo di contenuto riconosciuto che AEM verrà e
 
 ## Opzioni di configurazione della traduzione {#translation-config-options}
 
-La configurazione di traduzione out-of-box supporta diverse opzioni per la traduzione di frammenti di contenuto. Per impostazione predefinita, le risorse multimediali in linea e le raccolte di risorse associate NON sono convertite. Per aggiornare la configurazione di conversione, andate a [http://localhost:4502/etc/cloudservices/translation/default_translation.html](http://localhost:4502/etc/cloudservices/translation/default_translation.html).
+La configurazione di traduzione out-of-box supporta diverse opzioni per la traduzione di frammenti di contenuto. Per impostazione predefinita, le risorse multimediali in linea e le raccolte di risorse associate NON sono convertite. Per aggiornare la configurazione della conversione, andate a [http://localhost:4502/etc/cloudservices/translation/default_translation.html](http://localhost:4502/etc/cloudservices/translation/default_translation.html).
 
 Sono disponibili quattro opzioni per tradurre le risorse Frammento di contenuto:
 
