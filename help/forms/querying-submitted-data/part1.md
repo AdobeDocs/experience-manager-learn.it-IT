@@ -21,7 +21,7 @@ ht-degree: 0%
 # Creare un modulo adattivo basato sullo schema JSON
 
 
-La possibilità di creare un Forms adattivo basato sullo schema JSON è stata introdotta con  versione AEM Forms 6.3. I dettagli sulla creazione di Forms adattivo con lo schema JSON sono illustrati in dettaglio in questo [articolo](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-form-json-schema-form-model.html).
+La possibilità di creare un Forms adattivo basato sullo schema JSON è stata introdotta con  versione AEM Forms 6.3. I dettagli sulla creazione di Forms adattivo con schema JSON sono descritti in dettaglio in questo [articolo](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-form-json-schema-form-model.html).
 
 Dopo aver creato un modulo adattivo basato sullo schema JSON, il passaggio successivo consiste nell&#39;archiviare i dati inviati nel database. A questo scopo utilizzeremo il nuovo tipo di dati JSON introdotto da diversi fornitori di database. Ai fini di questo articolo, verrà utilizzato il database MySql 8 per memorizzare i dati inviati.
 
