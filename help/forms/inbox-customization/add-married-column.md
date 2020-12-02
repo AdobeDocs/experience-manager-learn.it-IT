@@ -82,12 +82,12 @@ return isMarried(inboxItem);
 * [Accedere AEM console Web](http://localhost:4502/system/console/bundles)
 * [Distribuzione e avvio del bundle di personalizzazione della inbox](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
 * [Aprite la inbox](http://localhost:4502/aem/inbox)
-* Per aprire Admin Control, fai clic sull’icona Visualizzazione __ elenco accanto al pulsante _Crea_
+* Aprire Admin Control facendo clic sull&#39;icona _Visualizzazione elenco_ accanto al pulsante _Crea_
 * Aggiungi colonna sposata a Posta in arrivo e salva le modifiche
 * [Vai all&#39;interfaccia utente di FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Importa il modulo](assets/snap-form.zip) di esempio selezionando _Carica_ file dal menu _Crea_
+* [Importa il ](assets/snap-form.zip) modulo di esempio selezionando  _File_ caricato da  __ Createmenu
 * [Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Selezionare lo stato _civile_ e inviare il modulo
+* Selezionare lo _stato civile_ e inviare il modulo
    [casella in entrata](http://localhost:4502/aem/inbox)
 
 L&#39;invio del modulo attiverà il flusso di lavoro e un&#39;attività verrà assegnata all&#39;utente &quot;admin&quot;. Dovresti visualizzare un valore sotto la colonna Sposato come mostrato in questa schermata
