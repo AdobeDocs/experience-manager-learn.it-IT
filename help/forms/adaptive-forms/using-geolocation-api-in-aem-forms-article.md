@@ -20,15 +20,15 @@ ht-degree: 0%
 ---
 
 
-# Utilizzo delle API di geolocalizzazione in Forms adattivo{#using-geolocation-api-s-in-adaptive-forms}
+# Utilizzo delle API di geolocalizzazione in Forms {#using-geolocation-api-s-in-adaptive-forms} adattivo
 
-Visitate la [pagina di esempi](https://forms.enablementadobe.com/content/samples/samples.html?query=0) AEM Forms per un collegamento a una dimostrazione live di questa funzionalità.
+Visitate la pagina [ AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) per un collegamento a una dimostrazione live di questa funzionalità.
 
 In questo articolo verrà illustrato come utilizzare l&#39;API di geolocalizzazione di Google per compilare i campi di un modulo adattivo. Questo caso d’uso è comunemente utilizzato per compilare i campi indirizzo correnti in un modulo.
 
 Sono stati seguiti i passaggi seguenti per utilizzare l&#39;API Geolocation in Forms adattivo.
 
-1. [Ottenere la chiave](https://developers.google.com/maps/documentation/javascript/get-api-key) API da Google per utilizzare la piattaforma Google Maps. È possibile ottenere una chiave di prova valida per 1 anno.
+1. [Scaricate API ](https://developers.google.com/maps/documentation/javascript/get-api-key) Keyda Google per utilizzare la piattaforma Google Maps. È possibile ottenere una chiave di prova valida per 1 anno.
 
 1. Il frammento di modulo adattivo è stato creato con campi che contengono l&#39;indirizzo corrente
 
@@ -102,7 +102,7 @@ Per scaricare questa funzionalità sul server, attenetevi alla seguente procedur
 * Installate e avviate  server AEM Forms.
 
 >!![NOTE] Questa funzionalità è stata testata su  AEM Forms 6.3 e versioni successive
-* [Ottieni chiave](https://developers.google.com/maps/documentation/javascript/get-api-key)API Google.
+* [Ottieni chiave](https://developers.google.com/maps/documentation/javascript/get-api-key) API Google.
 * [Importa in AEM le risorse correlate a questo articolo.](assets/geolocationapi.zip)
 * [Aprire il frammento Modulo adattivo in modalità di modifica.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
 * Aprite l’editor delle regole per il componente Scelta immagine.
