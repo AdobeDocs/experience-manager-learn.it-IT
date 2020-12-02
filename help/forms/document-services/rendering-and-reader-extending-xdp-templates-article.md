@@ -26,7 +26,7 @@ Un caso comune è rappresentato dal rendering di xdp in PDF e dall’applicazion
 
 Ad esempio, nel portale moduli di  AEM Forms, quando un utente fa clic su XDP, è possibile eseguire il rendering XDP come PDF e l&#39;utente può estendere il PDF.
 
-Per verificare questa funzionalità, puoi provare questo [collegamento](https://forms.enablementadobe.com/content/samples/samples.html?query=0). Il nome di esempio è &quot;Rendering XDP con RE&quot;
+Per verificare questa funzionalità, provare questo [collegamento](https://forms.enablementadobe.com/content/samples/samples.html?query=0). Il nome di esempio è &quot;Rendering XDP con RE&quot;
 
 Per ottenere questo caso di utilizzo, è necessario eseguire le operazioni seguenti.
 
@@ -203,7 +203,7 @@ Per eseguire il test sul server locale, procedere come segue
 1. [Scaricate e importate in AEM le risorse correlate a questo articolo utilizzando il gestore pacchetti](assets/renderandextendxdp.zip)
    * Questo pacchetto contiene un portale di esempio e un file xdp
 1. Aggiungi certificato di estensione Reader a utente &quot;servizio fd&quot;
-1. Posizionare il browser sulla pagina Web del [portale](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
+1. Posizionare il browser su [pagina Web del portale](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
 1. Fate clic sull&#39;icona pdf per eseguire il rendering dell&#39;xdp e ottenere il pdf corrispondente all&#39;Reader esteso
 
 
