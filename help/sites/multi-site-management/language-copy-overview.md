@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Introduzione alla copia per lingua {#introduction-language-copy}
+# Introduzione alla copia della lingua {#introduction-language-copy}
 
 Ottenete una panoramica su come creare un sito multilingue utilizzando la funzione Copia lingua in  AEM Sites.
 
