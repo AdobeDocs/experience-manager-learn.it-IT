@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Utilizzo della conversione dei file di origine con  AEM Assets {#using-source-file-translation-with-aem-assets}
+# Utilizzo della conversione del file di origine con  AEM Assets {#using-source-file-translation-with-aem-assets}
 
 Risorse Adobe Experience Manager (AEM) consente di identificare le risorse che condividono attributi comuni e di contrassegnarle come correlate tramite la nuova funzione Risorse correlate. Consente inoltre agli utenti di definire una relazione origine/derivata tra le risorse, facilitando l’identificazione dell’origine di una risorsa da parte degli utenti. L’esecuzione di un flusso di lavoro di traduzione su una risorsa derivata recupera tutte le risorse a cui fa riferimento il file di origine e le include per la traduzione, riducendo così gli sforzi per mantenere più siti.
 
