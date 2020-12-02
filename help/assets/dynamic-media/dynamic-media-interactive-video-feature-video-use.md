@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# Utilizzo di video interattivi con AEM file multimediali dinamici{#using-interactive-video-with-aem-dynamic-media}
+# Utilizzo di video interattivi con AEM elemento multimediale dinamico{#using-interactive-video-with-aem-dynamic-media}
 
 Risorse AEM’ ora è in grado di creare video interattivi in cui gli utenti possono dividere un video in segmenti più piccoli o combinare segmenti di piccole dimensioni per creare un segmento di grandi dimensioni, consentendo agli utenti di associare le chiamate all’azione.
 
