@@ -35,19 +35,19 @@ La home page del sito WKND mostra le attività locali o la cosa migliore da fare
 
 ## Passaggi per creare un test A/B utilizzando Visual Experience Composer (VEC)
 
-1. Accedi ad [Adobe Experience Cloud](https://experience.adobe.com/), tocca __Target__, vai alla scheda __Attività__
+1. Accedi a [Adobe Experience Cloud](https://experience.adobe.com/), tocca __Target__, vai alla scheda __Activities__
 
-   + Se non visualizzate __Target__ nel dashboard di Experience Cloud , accertatevi che l&#39;organizzazione  Adobe corretta sia selezionata nello switcher di organizzazione in alto a destra e che all&#39;utente sia stato concesso l&#39;accesso a Target in [Adobe Admin Console](https://adminconsole.adobe.com/).
+   + Se non vedete __Target__ nel dashboard del Experience Cloud di , verificate che l&#39;organizzazione  Adobe corretta sia selezionata nello switcher di organizzazione in alto a destra e che all&#39;utente sia stato concesso l&#39;accesso a Target in [Adobe Admin Console](https://adminconsole.adobe.com/).
 
-1. Fate clic sul pulsante **Crea attività** e scegliete Attività test **** A/B
+1. Fare clic sul pulsante **Crea attività**, quindi scegliere l&#39;attività **A/B Test**
 
    ![Attività A/B](assets/ab-target-activity.png)
 
-1. Selezionate l&#39;opzione **Visual Experience Composer (Compositore esperienza visivo)** , fornite l&#39;URL dell&#39;attività, quindi fate clic su **Next (Avanti)**
+1. Selezionate l&#39;opzione **Visual Experience Composer (Compositore esperienza visivo)**, fornite l&#39;URL attività, quindi fate clic su **Next**
 
    ![URL attività](assets/ab-test-url.png)
 
-1. In Visual Experience Composer (Compositore esperienza visivo) sono visualizzate due schede a sinistra dopo la creazione di una nuova attività: *Esperienza A* ed *Esperienza B*. Selezionate un&#39;esperienza dall&#39;elenco. Puoi aggiungere nuove esperienze all&#39;elenco tramite il pulsante **Aggiungi esperienza** .
+1. In Visual Experience Composer (Compositore esperienza visivo) sono visualizzate due schede a sinistra dopo la creazione di una nuova attività: *Esperienza A* e *Esperienza B*. Selezionate un&#39;esperienza dall&#39;elenco. Puoi aggiungere nuove esperienze all&#39;elenco utilizzando il pulsante **Aggiungi esperienza**.
 
    ![Esperienza A](assets/experience.png)
 
@@ -55,16 +55,16 @@ La home page del sito WKND mostra le attività locali o la cosa migliore da fare
 
    ![Elemento](assets/select-element.png)
 
-1. Cambia il testo da *Campeggio in Australia* occidentale a *Avventure dell&#39;Australia*. Un elenco delle modifiche aggiunte a un&#39;esperienza verrà visualizzato in Modifiche. Potete fare clic sull’elemento modificato e modificarlo per visualizzarne il selettore CSS e il nuovo contenuto ad esso aggiunto.
+1. Modificate il testo da *Campeggio in Australia Occidentale* a *Avventure dell&#39;Australia*. Un elenco delle modifiche aggiunte a un&#39;esperienza verrà visualizzato in Modifiche. Potete fare clic sull’elemento modificato e modificarlo per visualizzarne il selettore CSS e il nuovo contenuto ad esso aggiunto.
 
    ![Avventure](assets/adventures.png)
 
-1. Rinomina *Esperienza A* in *avventura*
-1. Allo stesso modo, aggiornate il testo sull&#39; *Esperienza B* da *Campeggio in Australia* occidentale per *Esplorare la Selvaggia* Australiana.
+1. Rinominare *Esperienza A* in *Avventura*
+1. Allo stesso modo, aggiornate il testo sull&#39; *Esperienza B* da *Campeggio in Australia Occidentale* a *Esplorare la Wilderness Australiana*.
 
    ![Esplora](assets/explore.png)
 
-1. Fate clic su **Avanti** per passare a Targeting e manteniamo un&#39;allocazione manuale del traffico di 50-50 tra le due esperienze.
+1. Fare clic su **Next** per passare al Targeting e mantenere un&#39;allocazione manuale del traffico di 50-50 tra le due esperienze.
 
    ![Impostazione destinazione](assets/targeting.png)
 
