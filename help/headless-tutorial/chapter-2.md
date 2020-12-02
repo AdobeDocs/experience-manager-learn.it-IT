@@ -25,46 +25,46 @@ Questo capitolo descrive l&#39;abilitazione e la definizione dei modelli di fram
 
 ## Abilita modelli di frammenti di contenuto
 
-I modelli di frammento di contenuto **devono** essere attivati tramite **[AEM [!UICONTROL browser]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)** di configurazione.
+I modelli di frammenti di contenuto **devono essere abilitati** tramite **[AEM [!UICONTROL Browser di configurazione]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)**.
 
-Se i modelli di frammento di contenuto **non** sono abilitati per una configurazione, il pulsante **[!UICONTROL Crea] > Frammento [!UICONTROL di]** contenuto non verrà visualizzato per la configurazione AEM pertinente.
+Se i modelli di frammento di contenuto sono **non** abilitati per una configurazione, il pulsante **[!UICONTROL Crea] > [!UICONTROL Frammento di contenuto]** non verrà visualizzato per la configurazione AEM pertinente.
 
 >[!NOTE]
 >
->AEM configurazioni rappresentano una serie di configurazioni [tenant basate sul](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) contesto memorizzate in `/conf`. In genere AEM configurazioni si correlano a un particolare sito Web gestito in  AEM Sites o in un&#39;unità aziendale responsabile di un sottoinsieme di contenuti (risorse, pagine, ecc.) in AEM.
+>AEM configurazioni rappresentano un insieme di [configurazioni tenant basate sul contesto](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) memorizzate in `/conf`. In genere AEM configurazioni si correlano a un particolare sito Web gestito in  AEM Sites o in un&#39;unità aziendale responsabile di un sottoinsieme di contenuti (risorse, pagine, ecc.) in AEM.
 >
->Affinché una configurazione influisca sulla gerarchia del contenuto, è necessario fare riferimento alla configurazione tramite la `cq:conf` proprietà nella gerarchia del contenuto. (Questo viene ottenuto per la [!DNL WKND Mobile] configurazione nel **passaggio 5** seguente).
+>Affinché una configurazione influisca sulla gerarchia del contenuto, è necessario fare riferimento alla configurazione tramite la proprietà `cq:conf` nella gerarchia del contenuto. (Questo è possibile per la configurazione [!DNL WKND Mobile] in **Passo 5** qui sotto).
 >
->Quando si utilizza la `global` configurazione, questa si applica a tutto il contenuto e non `cq:conf` è necessario impostarla.
+>Quando si utilizza la configurazione `global`, questa viene applicata a tutto il contenuto e `cq:conf` non è necessario impostare.
 >
->See the [[!UICONTROL Configuration Browser] documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html) for more information.
+>Per ulteriori informazioni, consultare la documentazione del [[!UICONTROL browser di configurazione]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html).
 
 1. Accedete ad AEM Author come utente con le autorizzazioni appropriate per modificare la configurazione pertinente.
-   * Per questa esercitazione, è possibile utilizzare l&#39;utente **admin** .
-1. Passa a **[!UICONTROL Strumento] > [!UICONTROL Generale] > Browser [!UICONTROL di configurazione]**
-1. Toccate l’icona **della** cartella accanto a **[!DNL WKND Mobile]** per selezionarla, quindi toccate il pulsante ** Modifica** in alto a sinistra.
-1. Selezionate Modelli **[!UICONTROL di frammenti di]** contenuto e toccate **[!UICONTROL Salva e chiudi]** in alto a destra.
+   * Per questa esercitazione, è possibile utilizzare l&#39;utente **admin**.
+1. Passare a **[!UICONTROL Tool] > [!UICONTROL Generale] > [!UICONTROL Browser di configurazione]**
+1. Toccate l&#39;icona **cartella** accanto a **[!DNL WKND Mobile]** per selezionare, quindi toccate il pulsante **[!UICONTROL Modifica]** in alto a sinistra.
+1. Selezionare **[!UICONTROL Modelli di frammenti di contenuto]**, quindi toccare **[!UICONTROL Salva e chiudi]** in alto a destra.
 
-   Questo consente di visualizzare i modelli di frammenti di contenuto nelle strutture di contenuto delle cartelle di risorse a cui è stata applicata la [!DNL WKND Mobile] configurazione.
+   Questo consente di visualizzare modelli di frammenti di contenuto nelle strutture di contenuto delle cartelle di risorse a cui è stata applicata la configurazione [!DNL WKND Mobile].
 
    >[!NOTE]
    >
-   >Questa modifica alla configurazione non è reversibile dall&#39;interfaccia utente Web di configurazione  AEM. Per annullare questa configurazione:
+   >Questa modifica alla configurazione non è reversibile dall&#39;interfaccia utente Web [!UICONTROL AEM Configuration]. Per annullare questa configurazione:
    >    
-   >    1. Open [CRXDE Lite](http://localhost:4502/crx/de)
+   >    1. Aprire [CRXDE Lite](http://localhost:4502/crx/de)
    >    1. Accedi a `/conf/wknd-mobile/settings/dam/cfm`
-   >    1. Elimina il `models` nodo
+   >    1. Eliminare il nodo `models`
 
    >    
-   >Eventuali modelli di frammento di contenuto esistenti creati in questa configurazione verranno eliminati e le relative definizioni verranno memorizzate in `/conf/wknd-mobile/settings/dam/cfm/models`.
+   >Tutti i modelli di frammento di contenuto esistenti creati in questa configurazione verranno eliminati e le relative definizioni saranno memorizzate in `/conf/wknd-mobile/settings/dam/cfm/models`.
 
-1. Applica la **[!DNL WKND Mobile]** configurazione alla cartella **[!DNL WKND Mobile]** Assets per consentire la creazione di frammenti di contenuto dai modelli di frammenti di contenuto all’interno della gerarchia delle cartelle Assets:
+1. Applica la configurazione **[!DNL WKND Mobile]** alla **[!DNL WKND Mobile]cartella risorse** per consentire la creazione di frammenti di contenuto dai modelli di frammenti di contenuto all&#39;interno della gerarchia di cartelle Risorse:
 
-   1. Passa a **[!UICONTROL AEM] > [!UICONTROL Risorse] > [!UICONTROL File]**
-   1. Selezionate la cartella **[!UICONTROL WKND Mobile]**
-   1. Toccate il pulsante **[!UICONTROL Proprietà]** nella barra delle azioni superiore per aprire Proprietà [!UICONTROL cartella]
-   1. In Proprietà cartella, toccate la scheda **[!UICONTROL Cloud Services]**
-   1. Verifica che il campo Configurazione **** cloud sia impostato su **/conf/wknd-mobile**
+   1. Passare a **[!UICONTROL AEM] > [!UICONTROL Risorse] > [!UICONTROL File]**
+   1. Selezionare la cartella **[!UICONTROL WKND Mobile]**
+   1. Toccate il pulsante **[!UICONTROL Proprietà]** nella barra delle azioni superiore per aprire [!UICONTROL Proprietà cartella]
+   1. In [!UICONTROL Proprietà cartella], toccare la scheda **[!UICONTROL Cloud Services]**
+   1. Verifica che il campo **[!UICONTROL Configurazione cloud]** sia impostato su **/conf/wknd-mobile**
    1. Toccate **[!UICONTROL Salva e chiudi]** in alto a destra per salvare le modifiche
 
 >[!VIDEO](https://video.tv.adobe.com/v/28336/?quality=12&learn=on)
@@ -81,31 +81,31 @@ Con la mappatura è possibile definire il frammento di contenuto che verrà util
 
 ## Creazione di un modello di frammento di contenuto
 
-1. Passa a **[!UICONTROL Strumenti] > [!UICONTROL Risorse] > Modelli di frammenti di [!UICONTROL contenuto]**.
-1. Toccate la **[!DNL WKND Mobile]** cartella per aprirla.
+1. Accedete a **[!UICONTROL Strumenti] > [!UICONTROL Risorse] > [!UICONTROL Modelli di frammenti di contenuto]**.
+1. Toccate la cartella **[!DNL WKND Mobile]** per aprirla.
 1. Toccate **[!UICONTROL Crea]** per aprire la procedura guidata di creazione del modello di frammento di contenuto.
-1. Immettete **[!DNL Event]** come Titolo **** modello *(la descrizione è facoltativa)* e toccate **[!UICONTROL Crea]** per salvare.
+1. Immettere **[!DNL Event]** come **[!UICONTROL Titolo modello]** *(la descrizione è facoltativa)* e toccare **[!UICONTROL Crea]** per salvare.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28337/?quality=12&learn=on)
 
 ## Definizione della struttura del modello di frammento di contenuto
 
-1. Passa a **[!UICONTROL Strumenti] > [!UICONTROL Risorse] > Modelli [!UICONTROL frammenti di] contenuto >[!DNL WKND]**.
-1. Selezionare il modello di frammento di **[!DNL Event]** contenuto e toccare **[!UICONTROL Modifica]** nella barra delle azioni superiore.
-1. Dalla scheda **[!UICONTROL Tipi] di dati** a destra, trascina il testo della riga **[!UICONTROL singola]** nella zona di rilascio a sinistra per definire il **[!DNL Question]** campo.
-1. Verificare che la nuova immissione **[!UICONTROL di testo su riga]** singola sia selezionata a sinistra, mentre la scheda ** Proprietà** sia selezionata a destra. Compilare i campi Proprietà come segue:
+1. Andate su **[!UICONTROL Strumenti] > [!UICONTROL Risorse] > [!UICONTROL Modelli di frammenti di contenuto] >[!DNL WKND]**.
+1. Selezionare il modello di frammento di contenuto **[!DNL Event]** e toccare **[!UICONTROL Modifica]** nella barra delle azioni superiore.
+1. Dalla scheda **[!UICONTROL Tipi di dati] a destra, trascinare l&#39;**[!UICONTROL  immissione di testo a riga singola ]**nella zona di rilascio a sinistra per definire il campo **[!DNL Question]**.**
+1. Assicurarsi che il nuovo **[!UICONTROL testo di riga singola]** sia selezionato a sinistra, e che la scheda **[!UICONTROL Proprietà]** sia selezionata a destra. Compilare i campi Proprietà come segue:
 
    * [!UICONTROL Rendering come] : `textfield`
    * [!UICONTROL Etichetta campo] : `Event Title`
    * [!UICONTROL Nome proprietà] : `eventTitle`
-   * [!UICONTROL Lunghezza] massima : 25
+   * [!UICONTROL Lunghezza]  massima: 25
    * [!UICONTROL Obbligatorio] : `Yes`
 
 Ripetete questi passaggi utilizzando le definizioni di input definite di seguito per creare il resto del modello di frammento di contenuto evento.
 
 >[!NOTE]
 >
-> I campi Nome **** proprietà DEVONO corrispondere esattamente, in quanto l&#39;applicazione Android è programmata per chiave di questi nomi.
+> I campi **Property Name** DEVONO corrispondere esattamente, in quanto l&#39;applicazione Android è programmata per chiave di questi nomi.
 
 ### Descrizione evento
 
@@ -126,7 +126,7 @@ Ripetete questi passaggi utilizzando le definizioni di input definite di seguito
 * [!UICONTROL Tipo di dati] : `Enumeration`
 * [!UICONTROL Etichetta campo] : `Event Type`
 * [!UICONTROL Nome proprietà] : `eventType`
-* [!UICONTROL Opzioni] : `Art,Music,Performance,Photography`
+* [!UICONTROL Opzioni] :  `Art,Music,Performance,Photography`
 
 ### Prezzo biglietto
 
@@ -152,7 +152,7 @@ Ripetete questi passaggi utilizzando le definizioni di input definite di seguito
 * [!UICONTROL Rendering come] : `textfield`
 * [!UICONTROL Etichetta campo] : `Venue Name`
 * [!UICONTROL Nome proprietà] : `venueName`
-* [!UICONTROL Lunghezza] massima : 20
+* [!UICONTROL Lunghezza]  massima: 20
 * [!UICONTROL Obbligatorio] : `Yes`
 
 ### Città di Venue
@@ -160,13 +160,13 @@ Ripetete questi passaggi utilizzando le definizioni di input definite di seguito
 * [!UICONTROL Tipo di dati] : `Enumeration`
 * [!UICONTROL Etichetta campo] : `Venue City`
 * [!UICONTROL Nome proprietà] : `venueCity`
-* [!UICONTROL Opzioni] : `Basel,London,Los Angeles,Paris,New York,Tokyo`
+* [!UICONTROL Opzioni] :  `Basel,London,Los Angeles,Paris,New York,Tokyo`
 
 >[!VIDEO](https://video.tv.adobe.com/v/28335/?quality=12&learn=on)
 
 >[!NOTE]
 >
->Il Nome **** proprietà indica **sia** il nome della proprietà JCR in cui verrà memorizzato il valore, sia la chiave nel file JSON. Deve essere un nome semantico che non verrà modificato per tutta la durata del modello di frammento di contenuto.
+>Il **[!UICONTROL nome proprietà]** indica il **sia** il nome della proprietà JCR in cui verrà memorizzato questo valore, sia la chiave nel file JSON. Deve essere un nome semantico che non verrà modificato per tutta la durata del modello di frammento di contenuto.
 
 Dopo aver completato la creazione del modello di frammento di contenuto, è necessario terminare con una definizione simile a:
 
