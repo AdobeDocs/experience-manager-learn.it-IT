@@ -24,7 +24,7 @@ ht-degree: 0%
 
 # Aggiunta di pannelli secondari al pannello principale {#adding-child-panels-to-root-panel}
 
-Quando aggiungete pannelli secondari al pannello principale, **accertatevi di essere in modalità di modifica. Il pulsante Modifica si trova nella parte superiore destra del browser.**
+Quando aggiungete pannelli secondari al pannello principale, **Accertatevi di essere in modalità di modifica. Il pulsante Modifica si trova in alto a destra nel browser.**
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28536?quality=9&learn=on)
