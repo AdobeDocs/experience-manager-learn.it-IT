@@ -20,7 +20,7 @@ ht-degree: 34%
 
 # Introduzione a [!DNL Dispatcher] {#introduction-dispatcher}
 
-Un&#39;introduzione alle funzionalità e caratteristiche dell&#39;architettura [!DNL dispatcher] AEM.
+Un&#39;introduzione alle funzionalità e funzionalità di [!DNL dispatcher] come parte dell&#39;architettura AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32029/?quality=12&learn=on)
 
