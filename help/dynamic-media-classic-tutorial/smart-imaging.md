@@ -34,7 +34,7 @@ Poiché le immagini costituiscono la maggior parte del tempo di caricamento di u
 
 Come già detto, Smart Imaging sfrutta  funzionalità di Adobe Sensei AI e utilizza i predefiniti per immagini esistenti per convertire automaticamente le immagini in formati di immagine di nuova generazione ottimali, come il WebP, mantenendo al contempo la fedeltà visiva.
 
-Scoprite [come funziona](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work)l’imaging avanzato, con dettagli quali i formati immagine supportati (e cosa accade se non usate tali formati) e il relativo impatto sui predefiniti per immagini esistenti in uso.
+Ulteriori informazioni su [Come funziona l&#39;imaging intelligente](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), inclusi dettagli quali i formati immagine supportati (e cosa accade se non si utilizzano tali formati) e il relativo impatto sui predefiniti per immagini esistenti in uso.
 
 ## Impatto delle immagini intelligenti
 
@@ -52,8 +52,8 @@ L&#39;abilitazione di Smart Imaging inizia con l&#39;invio di un&#39;assistenza 
 
 Dopo aver attivato Smart Imaging, è necessario verificare che funzioni come previsto.
 
-Probabilmente avete ulteriori domande su Smart Imaging. Abbiamo compilato un elenco delle domande frequenti con le risposte. Leggete le [domande frequenti](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html).
+Probabilmente avete ulteriori domande su Smart Imaging. Abbiamo compilato un elenco delle domande frequenti con le risposte. Leggere le [FAQ](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html).
 
 ## Risorse aggiuntive
 
-Guardate il webinar [Dynamic Media Classic Optimizing Page Performance Performance Builder](https://seminars.adobeconnect.com/pzc1gw0cihpv) on-demand per saperne di più sull&#39;imaging intelligente.
+Guardate il webinar on-demand [Dynamic Media Classic Optimizing Page Performance Performance Builder](https://seminars.adobeconnect.com/pzc1gw0cihpv) per saperne di più sull&#39;imaging intelligente.
