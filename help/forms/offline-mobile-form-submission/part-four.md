@@ -28,13 +28,13 @@ Per utilizzare questo caso di utilizzo sul sistema locale, procedere come segue:
 
 * Installa l’istanza di AEM Author sulla porta 4502 e l’istanza di AEM Publish sulla porta 4503
 * [Seguite le istruzioni specificate nello sviluppo con gli utenti del servizio in  AEM Forms](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html). Assicuratevi di creare l&#39;utente del servizio e distribuire il bundle nell&#39;istanza di AEM Author e Publish.
-* [Aprite la configurazione osgi ](http://localhost:4503/system/console/configMgr).
-* Cercate il filtro **di riferimento** Apache Sling. Assicurarsi che la casella di controllo Consenti valori vuoti sia selezionata.
-* [Distribuisci il pacchetto](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)AEMFormDocumentService personalizzato. Questo bundle deve essere distribuito nell’istanza AEM Publish. Questo bundle contiene il codice che consente di generare PDF interattivi dal modulo mobile.
+* [Aprite la configurazione osgi  ](http://localhost:4503/system/console/configMgr).
+* Cercare il **filtro di riferimento Apache Sling**. Assicurarsi che la casella di controllo Consenti valori vuoti sia selezionata.
+* [Distribuisci il pacchetto](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar) AEMFormDocumentService personalizzato. Questo bundle deve essere distribuito nell’istanza AEM Publish. Questo bundle contiene il codice che consente di generare PDF interattivi dal modulo mobile.
 * [Scaricate e decomprimete il file ZIP delle risorse correlate a questo articolo.](assets/offline-pdf-submission-assets.zip) Verranno fornite le seguenti informazioni
-   * **offline-submit-profile.zip** - Questo pacchetto di AEM contiene il profilo personalizzato che consente di scaricare il pdf interattivo nel file system locale. Distribuite questo pacchetto nell&#39;istanza AEM Publish.
-   * **xdp-form-and-workflow.zip** - Questo pacchetto AEM contiene XDP, un flusso di lavoro di esempio, il lancio configurato sul nodo content/pdfinvii. Distribuite questo pacchetto sia sull&#39;istanza di AEM Author che su Publish.
-   * **HandlePDFSubmission.HandlePDFSubmission.core-1.0-SNAPSHOT.jar** - Questo è il bundle AEM che esegue la maggior parte del lavoro. Questo pacchetto contiene il servlet montato su `/bin/startworkflow`. Questo servlet salva i dati del modulo inviati sotto `/content/pdfsubmissions` il nodo AEM repository. Distribuite questo bundle sia sull&#39;istanza AEM Author che su AEM Publish.
+   * **offline-submit-profile.zip**  - Questo pacchetto di AEM contiene il profilo personalizzato che consente di scaricare il pdf interattivo nel file system locale. Distribuite questo pacchetto nell&#39;istanza AEM Publish.
+   * **xdp-form-and-workflow.zip** : questo pacchetto AEM contiene XDP, un flusso di lavoro di esempio, un avvio configurato su nodi content/pdfinvii. Distribuite questo pacchetto sia sull&#39;istanza di AEM Author che su Publish.
+   * **HandlePDFSubmission.HandlePDFSubmission.core-1.0-SNAPSHOT.jar** - Si tratta del bundle AEM che esegue la maggior parte del lavoro. Questo bundle contiene il servlet montato su `/bin/startworkflow`. Questo servlet salva i dati del modulo inviati sotto il nodo `/content/pdfsubmissions` AEM repository. Distribuite questo bundle sia sull&#39;istanza AEM Author che su AEM Publish.
 * [Anteprima del modulo mobile](http://localhost:4503/content/dam/formsanddocuments/testsubmision.xdp/jcr:content)
 * Compilate diversi campi e fate clic sul pulsante nella barra degli strumenti per scaricare il PDF interattivo.
 * Compilate il PDF scaricato utilizzando  Acrobat e fate clic sul pulsante Invia.
