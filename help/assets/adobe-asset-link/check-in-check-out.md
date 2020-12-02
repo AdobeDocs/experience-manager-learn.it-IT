@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Check-In Check-Out {#check-in-check-out}
+# Check-in Check-Out {#check-in-check-out}
 
  risorsa Adobe consente di estrarre  AEM Assets direttamente dall’app creativa su cui state lavorando e di iniziare subito a apportare modifiche. Dopo aver completato la modifica delle risorse nell’app di Creative Cloud, potete facilmente archiviare nuovamente  AEM Assets con versioni e commenti appropriati.
 
