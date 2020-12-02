@@ -28,4 +28,4 @@ La funzione Risorse collegate consente a un autore  AEM Sites di condividere fac
 * 03:30 — Utilizzo di un’immagine dalle risorse connesse
 * 04:42 — Configurazioni amministratore per abilitare la funzione Risorse connesse
 
-Controlla le distribuzioni [supportate per le risorse](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html#prerequisites) connesse per comprendere se la distribuzione AEM può supportare le risorse collegate.
+Controlla le [distribuzioni supportate per le risorse connesse](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html#prerequisites) per capire se la distribuzione AEM può supportare le risorse collegate.
