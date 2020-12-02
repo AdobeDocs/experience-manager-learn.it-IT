@@ -20,11 +20,18 @@ ht-degree: 0%
 
 # Compilazione di una tabella modulo adattiva con i risultati dell&#39;invito al servizio del modello dati modulo
 
-[Il modulo Live è ospitato qui](https://forms.enablementadobe.com/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)In questo articolo viene illustrato come compilare la tabella dei moduli adattivi recuperando i dati dalla chiamata al servizio del modello dati del modulo. Stiamo per creare un programma di ammortamento in una tabella che elenca ogni pagamento regolare su un mutuo nel tempo. I risultati dell&#39;ammortamento vengono restituiti dal modello dati modulo. Il servizio del modello dati modulo viene richiamato sull&#39;evento click del pulsante calculate, come mostrato nella schermata. I parametri di input e di output della chiamata del servizio sono mappati correttamente come mostrato nella schermata. L&#39;output è mappato alle colonne di Row1![clickevent](assets/amortization.PNG)
+[Il modulo Live è ospitato ](https://forms.enablementadobe.com/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
+quiIn questo articolo viene illustrato come compilare la tabella dei moduli adattivi recuperando i dati dalla chiamata al servizio del modello dati del modulo. Stiamo per creare un programma di ammortamento in una tabella che elenca ogni pagamento regolare su un mutuo nel tempo. I risultati dell&#39;ammortamento vengono restituiti dal modello dati modulo. Il servizio del modello dati modulo viene richiamato sull&#39;evento click del pulsante calculate, come mostrato nella schermata. I parametri di input e di output della chiamata del servizio sono mappati correttamente come mostrato nella schermata. L&#39;output è mappato alle colonne di Row1
+![click event](assets/amortization.PNG)
 
-La riga1 è configurata in modo che cresca a seconda dei dati restituiti dalla chiamata del servizio. Notate le impostazioni di ripetizione specificate qui. Il valore -1 indica un numero illimitato di righe nella tabella![Riga1](assets/rowconfiguration.PNG)
+La riga1 è configurata in modo che cresca a seconda dei dati restituiti dalla chiamata del servizio. Notate le impostazioni di ripetizione specificate qui. Il valore -1 indica un numero illimitato di righe nella tabella
+![Riga1](assets/rowconfiguration.PNG)
 
 ## Distribuisci sul server
 
-[Installare Tomcat come specificato qui](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)[Distribuire il file](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)SampleRest.war[Installare le risorse ](assets/amortizationschedule.zip) utilizzando AEM gestoreAprire il modulo[](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)Programma di ammortamentoImmettere il valore appropriato e fare clic su calculateProgramma di ammortamento deve essere compilato nel modulo
+[Installa Tomcat come specificato ](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
+[quiDistribuisci il ](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
+[file SampleRest.warInstalla le risorse  ](assets/amortizationschedule.zip) utilizzando AEM gestore pacchetti 
+[Apri il ](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
+modulo di pianificazione dell&#39;ammortamentoImmetti il valore appropriato e fai clic su Calcola programma di ammortamento.
 
