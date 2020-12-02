@@ -27,11 +27,11 @@ Il modulo **StoreAFWithAttachments** è il modulo adattivo principale. Questo mo
 Questo modulo è associato alle librerie client **bootboxjs540,storeAFWithAttachments** create in precedenza nel corso e a un flusso di lavoro AEM che viene attivato all&#39;invio del modulo.
 
 
-* I moduli di esempio si basano su un modello [di modulo adattivo](assets/custom-template-with-page-component.zip) personalizzato che è necessario importare in AEM per consentire il corretto rendering dei moduli di esempio.
+* I moduli di esempio si basano su [modello di modulo adattivo personalizzato](assets/custom-template-with-page-component.zip) che è necessario importare in AEM affinché il rendering dei moduli di esempio sia corretto.
 
-* È possibile scaricare e importare il modulo [](assets/store-af-with-attachments-form.zip) StoreAfWithAttachments completato nell&#39;istanza AEM.
+* È possibile scaricare e importare nell&#39;istanza AEM il modulo [StoreAfWithAttachments Form](assets/store-af-with-attachments-form.zip) completato.
 
-* Affinché il modulo funzioni, è necessario importare il flusso di lavoro [AEM associato](assets/workflow-model-store-af-with-attachments.zip) all&#39;istanza AEM.
+* Affinché il modulo funzioni, è necessario importare il flusso di lavoro [AEM associato a questo modulo](assets/workflow-model-store-af-with-attachments.zip) nell&#39;istanza AEM.
 
 
 
