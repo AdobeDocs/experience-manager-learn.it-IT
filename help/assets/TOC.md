@@ -69,7 +69,7 @@ ht-degree: 32%
       + [Contenuti comuni per condivisione risorse Theming](./sharing/asset-share-commons-feature-video-theming.md)
    + [Risorse collegate](./sharing/connected-assets.md)
 
-+ Integrazione con i flussi di lavoro creativi{#creative-workflows}
++ Integrazione con Creative Workflows{#creative-workflows}
    + [AEM desktop](./creative-workflows/aem-desktop-app.md)
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
