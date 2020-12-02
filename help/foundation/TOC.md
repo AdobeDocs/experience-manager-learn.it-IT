@@ -23,7 +23,7 @@ ht-degree: 19%
    + [Utilizzare il Pannello Panoramica di sistema](./administration/use-the-system-overview-dashboard.md)
 + Autenticazione {#authentication}
    + [Autenticazione OAuth](authentication/oauth-code-sample-develop.md)
-   + [Impostare le chiavi pubbliche/private da utilizzare con  Adobe I/O](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
+   + [Configurare le chiavi pubbliche/private da usare con  Adobe I/O](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
    + [Informazioni sull&#39;autenticazione](authentication/authentication-support-article-understand.md)
    + [Comprendere l&#39;autenticazione IMS su AMS](authentication/adobe-ims-authentication-technical-video-understand.md)
 +  Adobe Cloud Manager{#cloud-manager}
