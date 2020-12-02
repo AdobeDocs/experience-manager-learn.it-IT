@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# Utilizzo dell’applicazione desktop Dynamic Media Classic{#using-dynamic-media-desktop-application}
+# Utilizzo dell&#39;applicazione desktop Dynamic Media Classic{#using-dynamic-media-desktop-application}
 
  Adobe introduce un’applicazione desktop per Dynamic Media Classic che offre un’esperienza simile a un browser e un’interfaccia funzionalmente equivalente che non dipende  lettore Flash Adobe.
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 ## Materiali di supporto
 
-* [Adobe Documentazione applicazione Dynamic Media Classic Desktop](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
-* [Adobe Dynamic Media Domande frequenti](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/new-ui-2020.html)
+* [ Adobe Documentazione applicazione Dynamic Media Classic Desktop](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
+* [ Adobe Dynamic Media Domande frequenti](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/new-ui-2020.html)
 * [Download - File immagine disco per macOS (.dmg)](http://download.macromedia.com/dynamic-media-classic/20.20.1/adobe-dynamic-media-classic-20.20.1.dmg)
 * [Download - File eseguibile per Windows (.exe)](http://download.macromedia.com/dynamic-media-classic/20.20.1/adobe-dynamic-media-classic-20.20.1.exe)
