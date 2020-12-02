@@ -410,11 +410,11 @@ $(document).ready(function()
 
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=9&learn=on)
 
-### Dimostrazione della capacità {#capability-demo}
+### Dimostrazione della funzionalità {#capability-demo}
 
 >[!VIDEO](https://video.tv.adobe.com/v/27829?quality=9&learn=on)
 
-#### Implementazione sul server {#deploy-on-your-server}
+#### Implementare sul server {#deploy-on-your-server}
 
 Per testare questa funzionalità nell&#39;istanza di AEM Forms , attenetevi alla seguente procedura
 
