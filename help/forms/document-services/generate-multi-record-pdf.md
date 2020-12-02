@@ -23,7 +23,8 @@ Di seguito è riportata la schermata del file xml contenente più record.
 
 ![multi-record-xml](assets/multi-record-xml.PNG)
 
-Il file xml dei dati ha 2 record. Ciascun record è rappresentato dall’elemento form1. Questo xml viene passato al metodo [OutputService](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) generatePDFOutputBatch e otteniamo l&#39;elenco dei documenti pdf (uno per record)La firma del metodo generatePDFOutputBatch prende i seguenti parametri
+Il file xml dei dati ha 2 record. Ciascun record è rappresentato dall’elemento form1. Questo xml viene passato a OutputService [generatePDFOutputBatch metodo](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) otteniamo l&#39;elenco dei documenti pdf (uno per record)
+La firma del metodo generatePDFOutputBatch accetta i seguenti parametri
 
 * modelli - Mappa contenente il modello, identificato da una chiave
 * data - Mappa contenente documenti di dati xml, identificati dalla chiave
@@ -32,7 +33,7 @@ Il file xml dei dati ha 2 record. Ciascun record è rappresentato dall’element
 
 >[!NOTE]
 >
->Questo caso d’uso è disponibile come esempio dal vivo in questo [sito Web](https://forms.enablementadobe.com/content/samples/samples.html?query=0).
+>Questo caso di utilizzo è disponibile come esempio live in questo [sito Web](https://forms.enablementadobe.com/content/samples/samples.html?query=0).
 
 ## Dettagli caso di utilizzo{#use-case-details}
 
@@ -124,13 +125,13 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 }
 ```
 
-### Implementazione sul server{#Deploy-on-your-server}
+### Distribuisci sul server{#Deploy-on-your-server}
 
 Per testare questa funzionalità sul server, seguire le istruzioni riportate di seguito:
 
 * [Scaricate ed estraete il contenuto del file zip nel file system](assets/mult-records-template-and-xml-file.zip). Questo file zip contiene il modello e il file di dati xml.
 * [Posizionare il browser sulla console Web Felix](http://localhost:4502/system/console/bundles)
-* [Distribuisci il pacchetto](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)DevelopingWithServiceUser.
+* [Distribuisci il pacchetto](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar) DevelopingWithServiceUser.
 * [Distribuzione di pacchetti AEMFormsDocumentServices Bundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).Custom che genera i file pdf utilizzando l&#39;API OutputService
 * [Impostate il browser per il gestore pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 * [Importa e installa il pacchetto](assets/generate-multiple-pdf-from-xml.zip). Questo pacchetto contiene la pagina html che consente di rilasciare il modello e i file di dati.
