@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Gestire l&#39;ereditarietà Live Copy su un componente {#manage-live-copy-component}
+# Gestisci ereditarietà Live Copy su un componente {#manage-live-copy-component}
 
 Come gestire l&#39;ereditarietà tra Live Copy e la sua Blueprint a livello di componente.
 
