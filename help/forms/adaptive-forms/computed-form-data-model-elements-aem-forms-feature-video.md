@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Creazione di elementi del modello dati per moduli calcolati in  AEM Forms{#creating-computed-form-data-model-elements-in-aem-forms}
+# Creazione di elementi del modello dati del modulo calcolato in  AEM Forms{#creating-computed-form-data-model-elements-in-aem-forms}
 
 Gli elementi del modello dati del modulo calcolato consentono di memorizzare il risultato della manipolazione su uno o più elementi del modello dati del modulo. Ad esempio, è possibile calcolare e memorizzare lo stipendio mensile eseguendo un&#39;operazione matematica nel campo dello stipendio. A tal fine, dividerete lo stipendio per 12 e archivierete il risultato in un elemento del modello dati modulo calcolato denominato mensileSalary.
 
