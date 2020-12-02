@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: null
 thumbnail: null
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 64d88ef98ec1fe3e2dbe727fc59b350bb0a2134b
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -37,12 +37,6 @@ Questa esercitazione tratterà i seguenti argomenti:
 * Scopri in che modo è possibile interrogare i frammenti di contenuto in AEM utilizzando lo strumento di sviluppo GraphiQL integrato.
 * Consumo AEM GraphQL API da un&#39;app WKND GraphQL React di esempio
 * Creazione di modelli di dati avanzati con i riferimenti ai frammenti
-
-## GraphQL Overview
-
-Il video seguente presenta una panoramica dell’API GraphQL implementata in AEM. L&#39;API GraphQL in AEM è progettata principalmente per distribuire i dati dei frammenti di contenuto alle applicazioni a valle come parte di un&#39;implementazione senza precedenti.
-
->[!VIDEO](https://video.tv.adobe.com/v/328618/?quality=12&learn=on)
 
 ## GraphQL Overview
 
