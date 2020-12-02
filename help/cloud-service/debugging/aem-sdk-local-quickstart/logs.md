@@ -31,25 +31,25 @@ Il [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) confi
 
 `ui.apps/src/main/content/jcr_root/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
 
-che accede al `error.log`.
+che esegue il login al `error.log`.
 
-Se la registrazione predefinita non è sufficiente per lo sviluppo locale, è possibile configurare la registrazione ad hoc tramite AEM console Web di assistenza rapida locale dell’SDK, all’indirizzo ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)). Tuttavia, non è consigliabile che le modifiche ad hoc siano persistenti in Git a meno che le stesse configurazioni di registro siano necessarie anche in AEM come ambienti Cloud Service Dev. Le modifiche effettuate tramite la console di supporto registro vengono memorizzate direttamente nell’archivio locale dell’SDK AEM.
+Se la registrazione predefinita non è sufficiente per lo sviluppo locale, è possibile configurare la registrazione ad hoc tramite AEM console Web del supporto di registro dell&#39;SDK, all&#39;indirizzo ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)). Tuttavia, non è consigliabile che le modifiche ad hoc siano persistenti in Git, a meno che le stesse configurazioni di registro siano necessarie anche in AEM come ambienti Cloud Service Dev. Le modifiche effettuate tramite la console di supporto registro vengono memorizzate direttamente nell’archivio locale dell’SDK AEM.
 
-Le istruzioni di registro Java possono essere visualizzate nel `error.log` file:
+Le istruzioni di registro Java possono essere visualizzate nel file `error.log`:
 
 ```
 $ ~/aem-sdk/author/crx-quickstart/logs/error.log
 ```
 
-Spesso è utile &quot;coda&quot; il `error.log` quale trasmette la sua uscita al terminale.
+Spesso è utile &quot;tagliare&quot; la `error.log` che trasmette la sua uscita al terminale.
 
 + macOS/Linux
    + `$ tail -f ~/aem-sdk/author/crx-quickstart/logs/error.log`
-+ Windows richiede applicazioni [di coda di](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) terze parti o l&#39;utilizzo del comando [Get-Content di](https://stackoverflow.com/a/46444596/133936)PowerShell.
++ Windows richiede [applicazioni di coda di terze parti](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) o l&#39;utilizzo del comando Get-Content di PowerShell](https://stackoverflow.com/a/46444596/133936).[
 
 ## Registri del dispatcher
 
-I registri del dispatcher vengono inviati a stdout quando `bin/docker_run` viene richiamato, ma i registri possono essere utilizzati direttamente con nel Docker.
+I registri del dispatcher vengono inviati a stdout quando si richiama `bin/docker_run`, tuttavia i registri possono essere utilizzati direttamente nel Docker.
 
 ### Accesso ai registri nel contenitore Docker
 
@@ -75,7 +75,7 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 
 ### Copia dei log del Docker nel file system locale
 
-I registri del dispatcher possono essere copiati dal contenitore Docker `/etc/httpd/logs` al file system locale per l&#39;ispezione utilizzando il tuo strumento di analisi dei log preferito. Si tratta di una copia point-in-time e non fornisce aggiornamenti in tempo reale ai registri.
+I registri del dispatcher possono essere copiati dal contenitore Docker all&#39;indirizzo `/etc/httpd/logs` nel file system locale per l&#39;ispezione utilizzando il vostro strumento di analisi dei log preferito. Si tratta di una copia point-in-time e non fornisce aggiornamenti in tempo reale ai registri.
 
 ```shell
 $ docker ps
