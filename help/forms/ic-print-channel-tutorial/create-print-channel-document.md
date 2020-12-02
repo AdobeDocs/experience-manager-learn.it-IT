@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# Creazione Di Comunicazione Interattiva Per Il Canale Di Stampa {#create-interactive-communication-for-print-channel}
+# Creazione di comunicazioni interattive per il canale di stampa {#create-interactive-communication-for-print-channel}
 
 In questa parte, viene creato il documento di comunicazione interattiva per il canale Stampa.
 
