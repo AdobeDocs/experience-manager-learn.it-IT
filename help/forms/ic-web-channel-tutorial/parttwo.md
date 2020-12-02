@@ -20,10 +20,10 @@ ht-degree: 0%
 ---
 
 
-# Creazione della configurazione DataSource in  AEM Forms{#creating-datasource-configuration-in-aem-forms}
+# Creazione della configurazione dell&#39;origine dati in  AEM Forms{#creating-datasource-configuration-in-aem-forms}
 
 In questa parte, creeremo un&#39;origine dati basata su REST.  Il seguente video illustra i passaggi necessari per creare l&#39;origine dati.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22344/?quality=9&learn=on)
 
-Utilizzate il file swagger fornito come parte delle risorse correlate a questa esercitazione. Le risorse sono disponibili nell’ [introduzione](introduction.md) di questa esercitazione.
+Utilizzate il file swagger fornito come parte delle risorse correlate a questa esercitazione. Le risorse sono disponibili in [introduzione](introduction.md) di questa esercitazione.
