@@ -20,7 +20,7 @@ ht-degree: 60%
 ---
 
 
-# Interfaccia  AEM Sites e navigazione {#basic-handling-aem-sites}
+# Interfaccia utente  AEM Sites e navigazione {#basic-handling-aem-sites}
 
 Il seguente video fornisce una panoramica delle operazioni di base quando si utilizza l’ambiente di authoring AEM. Usa la console Sites come base.
 
