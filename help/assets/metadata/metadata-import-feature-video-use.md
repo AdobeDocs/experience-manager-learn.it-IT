@@ -19,7 +19,7 @@ ht-degree: 3%
 ---
 
 
-# Utilizzo dell’importazione e dell’esportazione di metadati in  AEM Assets{#using-metadata-import-and-export-in-aem-assets}
+# Utilizzo dell&#39;importazione e dell&#39;esportazione di metadati in  AEM Assets{#using-metadata-import-and-export-in-aem-assets}
 
  funzionalità di importazione ed esportazione dei metadati AEM Assets consentono agli autori di contenuti di spostare facilmente i metadati delle risorse in AEM e sfruttare la potenza di Microsoft Excel per manipolare i metadati in scala, facilitando l&#39;aggiornamento in massa dei metadati per le risorse esistenti in AEM.
 
@@ -31,9 +31,9 @@ ht-degree: 3%
 
 >[!VIDEO](https://video.tv.adobe.com/v/21374/?quality=9&learn=on)
 
-Scarica la cartella sportiva [WeRetail](assets/we-retail-sports.zip)
+Scarica [cartella sportiva WeRetail](assets/we-retail-sports.zip)
 
-Download del pacchetto di metadati [delle risorse](assets/we-retail-sports-asset-metadata.zip)
+Scarica [pacchetto di metadati delle risorse](assets/we-retail-sports-asset-metadata.zip)
 
 ## Formato file metadati {#metadata-file-format}
 
@@ -42,7 +42,7 @@ Download del pacchetto di metadati [delle risorse](assets/we-retail-sports-asset
 #### Prima riga
 
 * La prima riga del file CSV definisce lo schema di metadati.
-* Per impostazione predefinita, la prima colonna `assetPath`contiene il percorso JCR assoluto di una risorsa.
+* Per impostazione predefinita, la prima colonna è `assetPath`, che contiene il percorso JCR assoluto per una risorsa.
 
 * Le colonne successive nella prima riga indicano le altre proprietà di metadati di una risorsa.
 
@@ -59,7 +59,7 @@ Download del pacchetto di metadati [delle risorse](assets/we-retail-sports-asset
    * Scorretto: `Dc:Ttle {{String}}`
 
 * Il tipo di proprietà non fa distinzione tra maiuscole e minuscole
-* Sono supportati tutti i tipi [di proprietà](https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) JCR validi
+* Sono supportati tutti i tipi di proprietà [JCR ](https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) validi
 
 * Formato proprietà multivalore - `<metadata property name> {{<property type : MULTI }}`
 
