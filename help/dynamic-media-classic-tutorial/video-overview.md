@@ -115,7 +115,7 @@ Prima di iniziare, discutiamo alcuni termini con i quali devi avere familiarità
 - **Proporzioni di visualizzazione.** Proporzioni di larghezza di un video fino all’altezza di un video. Quando le proporzioni del video non corrispondono al rapporto del lettore, è possibile che vengano visualizzate delle &quot;barre nere&quot; o uno spazio vuoto. Due proporzioni comuni utilizzate per visualizzare i video sono:
 
    - 4:3 (1.33:1). Utilizzata per quasi tutti i contenuti di trasmissione TV a definizione standard.
-   - 16:9 (1.78:1). Utilizzata per quasi tutti i contenuti e filmati TV ad alta definizione (HDTV) a schermo intero.
+   - 16:9 (1,78:1). Utilizzata per quasi tutti i contenuti e filmati TV ad alta definizione (HDTV) a schermo intero.
 
 - **Bitrate/velocità dati.** La quantità di dati codificati per creare un secondo di riproduzione video (in kilobit al secondo).
 
@@ -136,8 +136,8 @@ Quando lavorate con i video in Dynamic Media Classic, seguite un flusso di lavor
 
 ![immagine](assets/video-overview/video-overview-2.png)
 
-1. Per iniziare, caricate i file video in Dynamic Media Classic. A questo scopo, aprite il menu **** Strumenti nella parte inferiore del pannello delle estensioni di Dynamic Media Classic e scegliete **Carica in Dynamic Media Classic > File in nome** cartella oppure **Carica in Dynamic Media Classic > Cartelle in nome** cartella. &quot;Nome cartella&quot; è la cartella che si sta attualmente sfogliando con l’estensione. I file video possono essere di grandi dimensioni, pertanto consigliamo di utilizzare l&#39;FTP per caricare file di grandi dimensioni. Come parte del caricamento, scegliete uno o più predefiniti per video per la codifica dei video. Il video può essere transcodificato in video MP4 al momento del caricamento. Per ulteriori informazioni sull’uso e la creazione dei predefiniti di codifica, consultate l’argomento Predefiniti per video di seguito. Scopri come [caricare e codificare i video](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html).
-2. Selezionate o selezionate e modificate un predefinito per visualizzatori video e visualizzate l’anteprima del video. Potete scegliere un predefinito per visualizzatori predefinito o personalizzarne uno personalizzato. Se utilizzate come destinazione gli utenti di dispositivi mobili, non è necessario eseguire alcuna operazione perché le piattaforme mobili non richiedono un visualizzatore o un predefinito. Ulteriori informazioni sulla [visualizzazione in anteprima dei video in un visualizzatore](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/previewing-videos-video-viewer.html) video e sull’ [aggiunta o la modifica di un predefinito](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/previewing-videos-video-viewer.html#adding-or-editing-a-video-viewer-preset)per visualizzatori video.
+1. Per iniziare, caricate i file video in Dynamic Media Classic. A questo scopo, aprite il **menu Strumenti** nella parte inferiore del pannello di estensione Dynamic Media Classic e scegliete **Carica in Dynamic Media Classic > File to folder name** oppure **Carica in Dynamic Media Classic > Folders to name** (Carica in file multimediali dinamici classici > Cartelle come nome cartella). &quot;Nome cartella&quot; è la cartella che si sta attualmente sfogliando con l’estensione. I file video possono essere di grandi dimensioni, pertanto consigliamo di utilizzare l&#39;FTP per caricare file di grandi dimensioni. Come parte del caricamento, scegliete uno o più predefiniti per video per la codifica dei video. Il video può essere transcodificato in video MP4 al momento del caricamento. Per ulteriori informazioni sull’uso e la creazione dei predefiniti di codifica, consultate l’argomento Predefiniti per video di seguito. Informazioni su [Caricamento e codifica di video](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html).
+2. Selezionate o selezionate e modificate un predefinito per visualizzatori video e visualizzate l’anteprima del video. Potete scegliere un predefinito per visualizzatori predefinito o personalizzarne uno personalizzato. Se utilizzate come destinazione gli utenti di dispositivi mobili, non è necessario eseguire alcuna operazione perché le piattaforme mobili non richiedono un visualizzatore o un predefinito. Per ulteriori informazioni su [Anteprima dei video in un visualizzatore video](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/previewing-videos-video-viewer.html) e [Aggiunta o modifica di un predefinito per visualizzatori video](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/previewing-videos-video-viewer.html#adding-or-editing-a-video-viewer-preset).
 3. Eseguite una pubblicazione video, ottenete l’URL e integrate. La differenza principale tra questo passaggio per il flusso di lavoro del video e il flusso di lavoro dell’immagine sta nel fatto che verrà eseguita una pubblicazione video speciale invece (o forse anche) della pubblicazione standard di Image Server. L’integrazione del visualizzatore video sul desktop funziona esattamente come l’integrazione del visualizzatore di immagini, ma per i dispositivi mobili è ancora più semplice: tutto ciò di cui avete bisogno è l’URL del video stesso.
 
 ### Informazioni sulla transcodifica
@@ -172,15 +172,15 @@ Infine, per proteggere i file multimediali da problemi di proprietà intellettua
 
 Quando caricate il video, potete scegliere tra uno o più predefiniti che contengono le impostazioni per la conversione del video principale in un formato Web mediante codifica. I predefiniti per video sono disponibili in due versioni: Predefiniti video adattati e Predefiniti codifica singola.
 
-Consultate Predefiniti per video [disponibili](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
+Consultate [Predefiniti video disponibili](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
 
 I predefiniti per video adattivi sono attivati per impostazione predefinita, il che significa che sono disponibili per la codifica. Se desiderate usare un predefinito codifica singola, l’amministratore dovrà attivarlo per visualizzarlo nell’elenco dei predefiniti per video.
 
-Scoprite come [attivare o disattivare i predefiniti](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html#activating-or-deactivating-video-encoding-presets)per video.
+Scoprite come [Attivare o disattivare i predefiniti per video](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html#activating-or-deactivating-video-encoding-presets).
 
 Potete scegliere uno dei numerosi predefiniti pregenerati forniti con Dynamic Media Classic oppure creare dei predefiniti personalizzati; tuttavia, per impostazione predefinita non è selezionato alcun predefinito per il caricamento. In altre parole, **se non selezionate un predefinito per video al momento del caricamento, il video non verrà convertito e potrebbe non essere pubblicato**. Tuttavia potete convertire il video offline e caricarlo e pubblicarlo correttamente. I predefiniti per video sono richiesti solo se desiderate che sia possibile eseguire la conversione da Dynamic Media Classic.
 
-Al momento del caricamento, selezionate un predefinito per video scegliendo Opzioni **** video nel pannello Opzioni processo. Potete quindi scegliere se eseguire la codifica per Computer, Mobile o Tablet.
+Al momento del caricamento, selezionate un predefinito per video scegliendo **Opzioni video** nel pannello Opzioni processo. Potete quindi scegliere se eseguire la codifica per Computer, Mobile o Tablet.
 
 - Il computer è per l&#39;uso desktop. In questo esempio vengono generalmente individuati predefiniti più grandi (ad esempio HD) che richiedono maggiore larghezza di banda.
 - Mobile e Tablet creano video MP4 per dispositivi quali iPhone e smartphone Android. L&#39;unica differenza tra Mobile e Tablet è che i predefiniti Tablet in genere dispongono di una larghezza di banda più elevata, perché sono basati sull&#39;utilizzo WiFi. I predefiniti per dispositivi mobili sono ottimizzati per un utilizzo 3G più lento.
@@ -217,7 +217,7 @@ A volte può essere necessario un predefinito per video speciale che non corrisp
 
 ### Flusso di lavoro predefinito per video
 
-1. I predefiniti per video si trovano in **Configurazione > Impostazione applicazione > Predefiniti** per video. Qui trovate un elenco di tutti i predefiniti di codifica disponibili per la vostra società.
+1. I predefiniti per video si trovano in **Configurazione > Impostazione applicazione > Predefiniti per video**. Qui trovate un elenco di tutti i predefiniti di codifica disponibili per la vostra società.
 
    - Ogni account video in streaming dispone di decine di predefiniti e se create dei predefiniti personalizzati, potete visualizzarli anche qui.
    - Potete filtrare in base al tipo utilizzando il menu a discesa. I predefiniti sono suddivisi in Computer, Mobile e Tablet.
@@ -225,26 +225,26 @@ A volte può essere necessario un predefinito per video speciale che non corrisp
 
 2. La colonna Attivo consente di scegliere se visualizzare tutti i predefiniti al momento del caricamento o solo quelli scelti. Se siete negli Stati Uniti, potete deselezionare i predefiniti PAL europei e, se siete nella regione UK/EMEA, deselezionate i predefiniti NTSC.
 3. Fate clic sul pulsante **Aggiungi** per creare un predefinito personalizzato. Viene aperto il pannello Aggiungi predefinito per video. La procedura in questo caso è simile alla creazione di un predefinito per immagini.
-4. Innanzitutto, specificate un nome **** predefinito da visualizzare nell’elenco dei predefiniti. Nell’esempio precedente, questo predefinito è per i video di esercitazione sull’acquisizione dello schermo.
-5. La **descrizione** è facoltativa, ma offre agli utenti una descrizione che descrive lo scopo di questo predefinito.
-6. Il suffisso **** Codifica file verrà aggiunto alla fine del nome del video che state creando. Tenete presente che avrete anche un video principale e un video codificato, derivato dal master, e che nessuna due risorse in Dynamic Media Classic può avere lo stesso ID risorsa.
-7. **Dispositivo** di riproduzione consente di scegliere il formato di file video desiderato (Computer, Mobile o Tablet). Mobile e Tablet producono lo stesso formato MP4. Dynamic Media Classic deve sapere in quale categoria inserire il predefinito; tuttavia, la differenza teorica è che i predefiniti Tablet sono generalmente per una connessione Internet più veloce, perché tutti supportano il WiFi.
-8. **Velocità** dati di destinazione è qualcosa che dovrete trovare per voi stessi, ma potete vedere un intervallo suggerito sull&#39;immagine qui sotto. In alternativa, potete trascinare il cursore sulla larghezza di banda di destinazione approssimativa. Per una figura più precisa, utilizzate un calcolatore del bitrate. Ci sono un po&#39; di tentativi ed errori coinvolti.
+4. Innanzitutto, specificate un **nome predefinito** da visualizzare nell&#39;elenco dei predefiniti. Nell’esempio precedente, questo predefinito è per i video di esercitazione sull’acquisizione dello schermo.
+5. La **Descrizione** è facoltativa, ma fornirà agli utenti una descrizione che descriverà lo scopo di questo predefinito.
+6. Il **Suffisso file di codifica** verrà aggiunto alla fine del nome del video che si sta creando qui. Tenete presente che avrete anche un video principale e un video codificato, derivato dal master, e che nessuna due risorse in Dynamic Media Classic può avere lo stesso ID risorsa.
+7. **Il** dispositivo di riproduzione consente di scegliere il formato di file video desiderato (Computer, Mobile o Tablet). Mobile e Tablet producono lo stesso formato MP4. Dynamic Media Classic deve sapere in quale categoria inserire il predefinito; tuttavia, la differenza teorica è che i predefiniti Tablet sono generalmente per una connessione Internet più veloce, perché tutti supportano il WiFi.
+8. **Target Data** Rate è una cosa che dovrai trovare per te, ma puoi vedere un intervallo suggerito sull&#39;immagine sottostante. In alternativa, potete trascinare il cursore sulla larghezza di banda di destinazione approssimativa. Per una figura più precisa, utilizzate un calcolatore del bitrate. Ci sono un po&#39; di tentativi ed errori coinvolti.
 
    ![immagine](assets/video-overview/video-overview-5.jpg)
 
-9. Impostare le **proporzioni** del file sorgente. Questa impostazione è direttamente legata alle dimensioni, sotto. Se scegliete _Personalizzato_, dovrete immettere manualmente sia la larghezza che l&#39;altezza.
-10. Se scegliete una proporzione, impostate un valore per Dimensione **** risoluzione e Dynamic Media Classic inserirà automaticamente l’altro valore. Tuttavia, per le proporzioni personalizzate, inserite entrambi i valori. Le dimensioni devono essere in linea con la velocità dati. Se si imposta una velocità dati molto bassa e una dimensione elevata, la qualità risulterebbe scarsa.
+9. Impostare le **Proporzioni** del file di origine. Questa impostazione è direttamente legata alle dimensioni, sotto. Se scegliete _Personalizzato_, dovrete immettere manualmente sia la larghezza che l&#39;altezza.
+10. Se scegliete una proporzione, impostate un valore per **Dimensione risoluzione** e Dynamic Media Classic inserirà automaticamente l’altro valore. Tuttavia, per le proporzioni personalizzate, inserite entrambi i valori. Le dimensioni devono essere in linea con la velocità dati. Se si imposta una velocità dati molto bassa e una dimensione elevata, la qualità risulterebbe scarsa.
 11. Fate clic su **Salva** per salvare il predefinito. A differenza di ogni altro predefinito, a questo punto non è necessario pubblicare i predefiniti, perché sono solo per caricare i file. Successivamente, sarà necessario pubblicare i video codificati, ma i predefiniti sono solo per uso interno di Dynamic Media Classic.
-12. Per verificare che il predefinito video sia nell’elenco di caricamento, accedete a **Carica**.Scegliete Opzioni **** processo ed espandete Opzioni **** video. Il predefinito verrà elencato nella categoria relativa al dispositivo di riproduzione selezionato (Computer, Mobile o Tablet).
+12. Per verificare che il predefinito video sia nell&#39;elenco di caricamento, andate a **Carica**.Scegliete **Opzioni processo** ed espandete **Opzioni video**. Il predefinito verrà elencato nella categoria relativa al dispositivo di riproduzione selezionato (Computer, Mobile o Tablet).
 
-Ulteriori informazioni sull’ [aggiunta o la modifica di un predefinito](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html#adding-or-editing-a-video-encoding-preset)per video.
+Ulteriori informazioni sull&#39;[aggiunta o modifica di un predefinito per video](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html#adding-or-editing-a-video-encoding-preset).
 
 ## Aggiungere sottotitoli al video
 
 In alcuni casi può essere utile aggiungere sottotitoli al video — ad esempio, quando è necessario fornire il video agli utenti in più lingue, ma non si desidera duplicare l’audio in un’altra lingua o registrare nuovamente il video in lingue diverse. Inoltre, l&#39;aggiunta di didascalie offre una maggiore accessibilità per chi ha problemi di udito e utilizza sottotitoli codificati. Dynamic Media Classic semplifica l’aggiunta di didascalie ai video.
 
-Scoprite come [aggiungere sottotitoli a un video](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/adding-captions-video.html).
+Scoprite come [aggiungere sottotitoli a video](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/adding-captions-video.html).
 
 ## Aggiungere marcatori capitolo al video
 
@@ -260,20 +260,20 @@ L’ultimo passaggio del flusso di lavoro per Dynamic Media Classic consiste nel
 
 ![immagine](assets/video-overview/video-overview-6.jpg)
 
-Scoprite come [pubblicare il video](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#publishing-video).
+Scoprite come [Pubblicare il video](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#publishing-video).
 
 Una volta eseguita la pubblicazione di un video, potrete ottenere un URL per accedere ai video e a eventuali predefiniti per visualizzatori Dynamic Media Classic preconfigurati in un browser Web. Tuttavia, se personalizzate o create un predefinito per visualizzatori video personalizzato, dovrete comunque eseguire una pubblicazione separata sul server immagini.
 
-- Scoprite come [collegare un URL a un sito mobile o a un sito Web](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#linking-a-video-url-to-a-mobile-site-or-a-website).
-- Scoprite come [incorporare il visualizzatore video in una pagina](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#embedding-the-video-viewer-on-a-web-page)Web.
+- Scoprite come [Collegare un URL a un sito mobile o a un sito Web](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#linking-a-video-url-to-a-mobile-site-or-a-website).
+- Scoprite come [incorporare il visualizzatore video in una pagina Web](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#embedding-the-video-viewer-on-a-web-page).
 
 Potete anche distribuire il video utilizzando un lettore video personalizzato o di terze parti.
 
-Scoprite come [distribuire i video mediante un lettore](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#deploying-video-using-a-third-party-video-player)video di terze parti.
+Scoprite come [Implementare i video con un lettore video di terze parti](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#deploying-video-using-a-third-party-video-player).
 
 Inoltre, se desiderate utilizzare anche le miniature video — l&#39;immagine estratta dal video — sarà inoltre necessario eseguire una pubblicazione su Image Server. Questo perché l’immagine in miniatura del video si trova sul server immagini, mentre il video stesso si trova sul server video. Le miniature video possono essere usate nei risultati di ricerca video, nelle playlist video e come &quot;fotogramma poster&quot; iniziale che appare nel visualizzatore video prima della riproduzione del video.
 
-Ulteriori informazioni sull’ [utilizzo delle miniature](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#working-with-video-thumbnails)video.
+Ulteriori informazioni sull&#39;utilizzo di [Miniature video](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#working-with-video-thumbnails).
 
 ### Selezione e personalizzazione di un predefinito per visualizzatori
 
@@ -308,25 +308,25 @@ Il flusso di lavoro consigliato consiste nell’incorporare questi dati nei vide
 
 Seguendo questo metodo, non dovrete immettere manualmente questi dati utilizzando Dynamic Media Classic. Tuttavia, potete anche usare i predefiniti per metadati in Dynamic Media Classic, per immettere rapidamente gli stessi dati ogni volta.
 
-Per ulteriori informazioni sull’argomento, consultate [Visualizzazione, aggiunta ed esportazione di metadati](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html).
+Per ulteriori informazioni sull&#39;argomento, consultate [Visualizzazione, aggiunta ed esportazione di metadati](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html).
 
 ![immagine](assets/video-overview/video-overview-7.jpg)
 
 Una volta compilati i metadati, potrete visualizzarli nella visualizzazione Dettagli della risorsa video. Anche le parole chiave possono essere presenti, ma si trovano nella scheda Parole chiave.
 
-- Ulteriori informazioni sull&#39; [aggiunta di parole chiave](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html#add-or-edit-keywords).
+- Ulteriori informazioni sull&#39; [Aggiunta di parole chiave](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html#add-or-edit-keywords).
 - Ulteriori informazioni su [Video SEO](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html).
-- Ulteriori informazioni sulle [impostazioni per Video SEO](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html#choosing-video-seo-settings).
+- Informazioni su [Impostazioni per Video SEO](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html#choosing-video-seo-settings).
 
 #### Impostazione di Video SEO
 
 L’impostazione di Video SEO inizia con la scelta del tipo di formato desiderato, del metodo di generazione e dei campi di metadati da inserire nel file.
 
-1. Selezionate **Configurazione > Impostazione applicazione > Video SEO > Impostazioni**.
-2. Nel menu Modalità **** generazione, scegliete un formato di file. Il valore predefinito è Disattivato, quindi per attivarlo scegliete Video Sitemap, mRSS o Entrambi.
-3. Scegliete se generare automaticamente o manualmente. Per semplicità, si consiglia di impostarlo su Modalità **** automatica. Se scegliete Automatico, impostate anche l’opzione **Contrassegna per pubblicazione** , altrimenti i file non verranno pubblicati. I file Sitemap e RSS sono tipi di documento XML e devono essere pubblicati come qualsiasi altra risorsa. Utilizzate una delle modalità manuali se non avete tutte le informazioni pronte ora, o se desiderate eseguire una sola generazione.
-4. Compilate i tag di metadati che verranno utilizzati nei file. Questo passaggio non è facoltativo. Come minimo, è necessario includere tre campi contrassegnati da un asterisco (\*): **Pagina** di destinazione, **Titolo** e **Descrizione**. Per utilizzare i metadati per queste attività, trascinare i campi dal pannello Metadati a destra in un campo corrispondente del modulo. Dynamic Media Classic comporrà automaticamente il campo segnaposto con i dati effettivi provenienti da ciascun video. Non è necessario utilizzare i campi di metadati. In questo caso potete digitare del testo statico, ma per ciascun video verrà visualizzato lo stesso testo.
-5. Dopo aver inserito le informazioni nei tre campi richiesti, Dynamic Media Classic abilita i pulsanti **Salva** e **Salva e genera** . Fate clic su uno per salvare le impostazioni. Utilizzate **Salva** se siete in modalità automatica e desiderate che i file vengano generati in un secondo momento da Dynamic Media Classic. Utilizzate **Salva e genera** per creare il file immediatamente.
+1. Andate a **Configurazione > Impostazione applicazione > Video SEO > Impostazioni**.
+2. Scegliere un formato di file dal menu **Modalità generazione**. Il valore predefinito è Disattivato, quindi per attivarlo scegliete Video Sitemap, mRSS o Entrambi.
+3. Scegliete se generare automaticamente o manualmente. Per semplicità, si consiglia di impostarlo su **Modalità automatica**. Se scegliete Automatico, impostate anche l&#39;opzione **Contrassegna per pubblicazione**, altrimenti i file non andranno in diretta. I file Sitemap e RSS sono tipi di documento XML e devono essere pubblicati come qualsiasi altra risorsa. Utilizzate una delle modalità manuali se non avete tutte le informazioni pronte ora, o se desiderate eseguire una sola generazione.
+4. Compilate i tag di metadati che verranno utilizzati nei file. Questo passaggio non è facoltativo. Come minimo, è necessario includere tre campi contrassegnati da un asterisco (\*): **Pagina di destinazione**, **Titolo** e **Descrizione**. Per utilizzare i metadati per queste attività, trascinare i campi dal pannello Metadati a destra in un campo corrispondente del modulo. Dynamic Media Classic comporrà automaticamente il campo segnaposto con i dati effettivi provenienti da ciascun video. Non è necessario utilizzare i campi di metadati. In questo caso potete digitare del testo statico, ma per ciascun video verrà visualizzato lo stesso testo.
+5. Dopo aver inserito le informazioni nei tre campi richiesti, Dynamic Media Classic abilita i pulsanti **Salva** e **Salva e genera**. Fate clic su uno per salvare le impostazioni. Utilizzare **Save** se si è in modalità automatica e si desidera che i file vengano generati in un secondo momento da Dynamic Media Classic. Utilizzare **Save &amp; Generate** per creare il file immediatamente.
 
 ### Verifica e pubblicazione di Video Sitemap, feed mRSS o entrambi i file
 
@@ -348,11 +348,11 @@ Esempio:
 
 La fase finale del processo consiste nell’inviare i file e/o gli URL ai motori di ricerca. Dynamic Media Classic non può eseguire questo passaggio per voi; tuttavia, se inviate l’URL e non il file XML stesso, il feed dovrebbe essere aggiornato al successivo generazione del file e al verificarsi di una pubblicazione.
 
-Il metodo di invio al motore di ricerca varia, tuttavia per Google si utilizza Google Webmaster Tools. Una volta raggiunta tale impostazione, accedete a Configurazione **sito > Mappe** sito e fate clic sul pulsante **Invia una mappa** sito. Qui puoi inserire l’URL Dynamic Media Classic nei file SEO.
+Il metodo di invio al motore di ricerca varia, tuttavia per Google si utilizza Google Webmaster Tools. Una volta raggiunta tale posizione, andate a **Configurazione sito > Sitemap** e fate clic sul pulsante **Invia un Sitemap**. Qui puoi inserire l’URL Dynamic Media Classic nei file SEO.
 
 ### Video SEO Report
 
-Dynamic Media Classic fornisce un rapporto che mostra quanti video sono stati inclusi correttamente nei file e, cosa più importante, che non sono stati inclusi a causa di errori. Per accedere al rapporto, passate a **Configurazione > Impostazione applicazione > Video SEO > Rapporto**.
+Dynamic Media Classic fornisce un rapporto che mostra quanti video sono stati inclusi correttamente nei file e, cosa più importante, che non sono stati inclusi a causa di errori. Per accedere al rapporto, passate a **Configurazione > Impostazione applicazione > Video SEO > Report**.
 
 ![immagine](assets/video-overview/video-overview-9.jpg)
 
@@ -386,4 +386,4 @@ In alternativa, potete incorporare il video Dynamic Media Classic MP4 nel codice
 
 ## Risorse aggiuntive
 
-Guardate [Dynamic Media Experience Builder: Video nel webinar di Dynamic Media Classic](https://seminars.adobeconnect.com/p2ueiaswkuze) on-demand per scoprire come usare le funzioni video in Dynamic Media Classic.
+Guardate il Generatore di competenze per contenuti multimediali dinamici: Video in Dynamic Media Classic[ webinar on-demand per scoprire come usare le funzioni video in Dynamic Media Classic.](https://seminars.adobeconnect.com/p2ueiaswkuze)
