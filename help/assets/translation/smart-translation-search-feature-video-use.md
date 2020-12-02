@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Utilizzo di Smart Translation Search con  AEM Assets{#using-smart-translation-search-with-aem-assets}
+# Utilizzo della ricerca di traduzione intelligente con  AEM Assets{#using-smart-translation-search-with-aem-assets}
 
 Smart Translation Search consente di effettuare ricerche e individuare automaticamente in più lingue tra AEM contenuto, sia Risorse che Pagine, supportando più di 50 lingue e riducendo la necessità di tradurre manualmente i contenuti.
 
@@ -29,7 +29,7 @@ AEM Smart Translation Search consente agli utenti di eseguire ricerche di conten
 
 Smart Translation Search è un complimento perfetto per AEM Smart Tags che vengono applicati alle risorse in inglese.
 
-Questo video presuppone che [AEM sia stata configurata la ricerca](smart-translation-search-technical-video-setup.md) di traduzione intelligente.
+Questo video presuppone che [AEM Smart Translation Search](smart-translation-search-technical-video-setup.md) sia stata impostata.
 
 ## Come funziona la ricerca di traduzione intelligente {#how-smart-translation-search-works}
 
