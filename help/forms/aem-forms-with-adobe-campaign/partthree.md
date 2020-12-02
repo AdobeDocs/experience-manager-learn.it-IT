@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Precompilazione del modulo adattivo tramite profilo ACS {#prefilling-adaptive-form-using-acs-profile}
+# Precompilazione del modulo adattivo con profilo ACS {#prefilling-adaptive-form-using-acs-profile}
 
 In questa parte, precompileremo il modulo adattivo con le informazioni di profilo recuperate da ACS.  AEM Forms è in grado di precompilare i moduli adattivi.
 
