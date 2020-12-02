@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Utilizzo di modelli di dati di associazione con  AEM Forms{#using-association-data-models-with-aem-forms}
+# Utilizzo di modelli dati di associazione con  AEM Forms{#using-association-data-models-with-aem-forms}
 
 Creare associazioni tra 2 entità nel modello dati modulo
 
