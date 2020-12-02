@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Live Copy, console {#live-copy-console}
+# Console Live Copy {#live-copy-console}
 
 Scoprite come visualizzare o gestire l&#39;ereditarietà in un sito o eseguire operazioni di rollout tramite la console Panoramica di Live Copy.
 
