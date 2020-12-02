@@ -29,8 +29,8 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Per utilizzare AEM frammenti esperienza con  AEM Assets Dynamic Media Hotspot è necessario eseguire [AEM in modalità Dynamic Media](https://docs.adobe.com/docs/en/aem/6-3/administer/content/dynamic-media/config-dynamic.html) .
+>Per utilizzare AEM frammenti esperienza con  AEM Assets Dynamic Media Hotspot è necessario eseguire [AEM in modalità Dynamic Media](https://docs.adobe.com/docs/en/aem/6-3/administer/content/dynamic-media/config-dynamic.html).
 
 La variante del frammento esperienza popup mostrata nel video è disponibile come pacchetto AEM di seguito.
 
-Download di [frammenti esperienza di risorse multimediali dinamiche](assets/experience-fragmentsdynamic-mediaassets-100.zip)
+Scarica [Frammenti esperienza Risorse multimediali dinamiche](assets/experience-fragmentsdynamic-mediaassets-100.zip)
