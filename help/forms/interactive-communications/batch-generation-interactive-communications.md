@@ -26,8 +26,8 @@ Questo articolo fornisce risorse di esempio per generare documenti di comunicazi
 
 ## Generazione batch con cartella esaminata
 
-* Importa il modello [di comunicazione](assets/Beneficiaries-confirmation.zip) interattiva nel server AEM Forms .
-* Importa la configurazione [della cartella](assets/batch-generation-api.zip)controllata. In questo modo verrà creata una cartella chiamata `batchAPI` nell&#39;unità C.
+* Importare il [modello di comunicazione interattiva](assets/Beneficiaries-confirmation.zip) nel server AEM Forms .
+* Importare la [configurazione cartella controllata](assets/batch-generation-api.zip). In questo modo si crea una cartella denominata `batchAPI` nell&#39;unità C.
 
 **Se si esegue  AEM Forms su un sistema operativo non Windows, seguire i 3 passaggi indicati di seguito:**
 
@@ -37,14 +37,14 @@ Questo articolo fornisce risorse di esempio per generare documenti di comunicazi
 
 ![path](assets/watched-folder-batch-api-basic.PNG)
 
-* Scaricate ed estraete il contenuto del file [](assets/jsonfile.zip)zip. Il file zip contiene una cartella denominata `jsonfile` che contiene `beneficiaries.json` il file. Questo file ha i dati per generare 3 documenti.
+* Scaricare ed estrarre il contenuto di [file zip](assets/jsonfile.zip). Il file zip contiene la cartella `jsonfile` che contiene il file `beneficiaries.json`. Questo file ha i dati per generare 3 documenti.
 
-* Trascinate la `jsonfile` cartella nella cartella di input della cartella esaminata.
+* Trascina la cartella `jsonfile` nella cartella di input della cartella esaminata.
 * Una volta che la cartella è stata scelta per l’elaborazione, controllate la cartella dei risultati della cartella esaminata. Dovresti vedere 3 file PDF generati
 
 ## Generazione batch con richieste REST
 
-Potete richiamare l&#39;API [](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) Batch tramite richieste REST. Potete esporre gli endpoint REST per altre applicazioni affinché richiamino l&#39;API per generare documenti.
+È possibile richiamare l&#39; [Batch API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) tramite richieste REST. Potete esporre gli endpoint REST per altre applicazioni affinché richiamino l&#39;API per generare documenti.
 Le risorse di esempio fornite espongono l’endpoint REST per la generazione di documenti di comunicazione interattiva. Il servlet accetta i seguenti parametri:
 
 * fileName - Posizione del file di dati nel file system.
@@ -53,12 +53,13 @@ Le risorse di esempio fornite espongono l’endpoint REST per la generazione di 
 * channelType - Stampa, Web o entrambi
 * recordId - percorso JSON all&#39;elemento per impostare il nome di una comunicazione interattiva
 
-La schermata seguente mostra i parametri e i relativi valori![di richiesta di esempio](assets/generate-ic-batch-servlet.PNG)
+La schermata seguente mostra i parametri e i relativi valori
+![richiesta di esempio](assets/generate-ic-batch-servlet.PNG)
 
 ## Distribuzione di risorse campione sul server
 
-* Importare [ICTemplate](assets/ICTemplate.zip) utilizzando [Package Manager](http://localhost:4502/crx/packmgr/index.jsp)
-* Importa gestore [invio](assets/BatchAPICustomSubmit.zip) personalizzato tramite [gestore pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
-* Importa modulo [](assets/BatchGenerationAPIAF.zip) adattivo utilizzando l&#39;interfaccia [Forms e Document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Implementare e avviare il bundle OSGI [personalizzato](assets/batchgenerationapi.batchgenerationapi.core-1.0-SNAPSHOT.jar) utilizzando la console Web [Felix](http://localhost:4502/system/console/bundles)
+* Importa [ICTemplate](assets/ICTemplate.zip) utilizzando [package manager](http://localhost:4502/crx/packmgr/index.jsp)
+* Importa [gestore di invio personalizzato](assets/BatchAPICustomSubmit.zip) utilizzando [gestore pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+* Importa [modulo adattivo](assets/BatchGenerationAPIAF.zip) utilizzando l&#39;interfaccia [Forms e Document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Implementare e avviare [il bundle OSGI personalizzato](assets/batchgenerationapi.batchgenerationapi.core-1.0-SNAPSHOT.jar) utilizzando [la console Web Felix](http://localhost:4502/system/console/bundles)
 * [Attiva generazione batch inviando il modulo](http://localhost:4502/content/dam/formsanddocuments/batchgenerationapi/jcr:content?wcmmode=disabled)
