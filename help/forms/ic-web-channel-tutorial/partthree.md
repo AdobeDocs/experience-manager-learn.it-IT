@@ -34,6 +34,6 @@ Il modello dati modulo dipende da un&#39;origine dati configurata correttamente.
 
 Modello dati modulo è la base per tutte le comunicazioni interattive. L&#39;operazione Get/Read del modello dati modulo recupererà i dati dall&#39;origine dati di back-end e verrà utilizzata per compilare il documento di comunicazione interattiva.
 
-Per maggiori informazioni sulla configurazione di Origini dati, segui questo [collegamento.](parttwo.md)
+Per maggiori informazioni sulla configurazione delle Origini dati, segui questo [collegamento`](parttwo.md)
 
 Dopo aver creato il modello dati modulo, è possibile utilizzarlo come base per la creazione di frammenti di documento e documenti di comunicazione interattiva.
