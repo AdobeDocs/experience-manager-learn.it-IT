@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Versioni e commenti del file{#file-versioning-and-comments}
+# Versioni file e commenti{#file-versioning-and-comments}
 
 Utilizzando il pannello Collegamento risorse  Adobe, potete accedere ai dettagli dei file per le risorse in  AEM Assets, ad esempio miniature, metadati di base e versioni direttamente dal pannello. Scoprite come creare, visualizzare in anteprima e confrontare le versioni dei file.
 
