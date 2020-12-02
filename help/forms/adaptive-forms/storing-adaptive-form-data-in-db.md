@@ -35,7 +35,7 @@ Il caso d’uso consiste nell’attivare un flusso di lavoro AEM per l’invio d
    * Cercate &quot;JDBC Connection Pool&quot;. Crea un nuovo pool di connessioni JDBC Day Commons. Specificate le impostazioni specifiche del database.
 
    * ![pool di connessioni jdbc](assets/jdbc-connection-pool.png)
-   * Cerca &quot;**Inserisci dati modulo nel database**&quot;
+   * Cercare &quot;**Inserisci dati modulo in DB**&quot;
    * Specificate le proprietà specifiche del database.
       * DataSourceName:nome dell&#39;origine dati configurata in precedenza.
       * TableName - Nome della tabella in cui si desidera memorizzare i dati AF
@@ -54,7 +54,7 @@ Il caso d’uso consiste nell’attivare un flusso di lavoro AEM per l’invio d
 
 * Visualizzare l&#39;anteprima del modulo e inviare
 
-* Se tutto è andato bene, è necessario visualizzare i dati del modulo memorizzati nella tabella e nella colonna specificata dall&#39;utente
+* Se tutto è andato bene, è necessario visualizzare i dati modulo memorizzati nella tabella e nella colonna specificata dall&#39;utente
 
 
 
