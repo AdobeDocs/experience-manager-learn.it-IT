@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# Publishing pages {#using-publication-management-with-aem-sites}
+# Pubblicazione di pagine {#using-publication-management-with-aem-sites}
 
  AEM Sites offre diverse opzioni per la pubblicazione e l&#39;annullamento della pubblicazione di contenuti. Questo video illustra i vari metodi e le relative funzionalità.
 
