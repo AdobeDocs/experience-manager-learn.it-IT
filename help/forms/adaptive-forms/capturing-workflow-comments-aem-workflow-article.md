@@ -28,7 +28,7 @@ Una richiesta comune è la possibilità di includere i commenti immessi dal revi
 
 Per soddisfare questo requisito, viene fornito un pacchetto OSGi di esempio che può essere utilizzato per acquisire commenti e memorizzarli come proprietà di metadati del flusso di lavoro.
 
-La schermata seguente mostra come utilizzare il passaggio di processo in [AEM Flusso di lavoro](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html) per acquisire i commenti e memorizzarli come proprietà di metadati. Il nome della classe Java che deve essere utilizzata nella fase di processo è &quot;Capture Workflow Comments&quot; (Commenti flusso di lavoro di acquisizione). È necessario passare il nome della proprietà dei metadati che contiene i commenti. Nella schermata seguente, managerComments è la proprietà di metadati che memorizzerà i commenti.
+La schermata seguente mostra come utilizzare il passaggio del processo in [AEM Workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html) per acquisire i commenti e memorizzarli come proprietà di metadati. Il nome della classe Java che deve essere utilizzata nella fase di processo è &quot;Capture Workflow Comments&quot; (Commenti flusso di lavoro di acquisizione). È necessario passare il nome della proprietà dei metadati che contiene i commenti. Nella schermata seguente, managerComments è la proprietà di metadati che memorizzerà i commenti.
 
 ![workflowcomments1](assets/workflowcomments1.gif)
 
@@ -37,9 +37,9 @@ Per testare questa funzionalità sul sistema, attenetevi alla seguente procedura
 
 * [Distribuzione del bundle Developingwithservice](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Distribuire il bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)SetValue. Questo pacchetto contiene il codice di esempio per acquisire i commenti e memorizzarlo come proprietà di metadati
+* [Distribuire il bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) SetValue. Questo pacchetto contiene il codice di esempio per acquisire i commenti e memorizzarlo come proprietà di metadati
 
-* [Scaricare e decomprimere le risorse correlate a questo articolo nel file system](assets/capturecomments.zip) . Le risorse contengono un modello di flusso di lavoro ed un esempio di modulo adattivo.
+* [Scaricate e decomprimete le risorse correlate a questo articolo nel ](assets/capturecomments.zip) sistema di fileLe risorse contengono il modello di flusso di lavoro e un esempio di modulo adattivo.
 
 * Importare due file ZIP in AEM utilizzando il gestore pacchetti
 
