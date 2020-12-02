@@ -17,14 +17,14 @@ ht-degree: 0%
 ---
 
 
-# Informazioni  autenticazione IMS Adobe con AEM sui servizi gestiti Adobe{#understanding-adobe-ims-authentication-with-aem-on-adobe-managed-services}
+# Informazioni  autenticazione IMS Adobe con AEM su Adobe Managed Services{#understanding-adobe-ims-authentication-with-aem-on-adobe-managed-services}
 
 Adobe Experience Manager introduce  Admin Console di supporto per AEM istanze e  Adobe di autenticazione basata su IMS ( Identity Management System) per AEM su Managed Services.   Questa integrazione consente AEM clienti Managed Services di gestire tutti  utenti Experienci Cloud in un&#39;unica console Web unificata. Gli utenti e i gruppi possono essere assegnati ai profili di prodotto associati alle istanze AEM, garantendo l&#39;accesso gestito centralmente alle istanze AEM specifiche.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26170?quality=12&learn=on)
 
 * Il supporto per l&#39;autenticazione Adobe Experience Manager IMS è riservato solo agli utenti &quot;interni&quot; (autori, revisori, amministratori, sviluppatori, ecc.) e non agli utenti finali esterni, ad esempio i visitatori del sito Web.
-* [Admin Console](https://adminconsole.adobe.com/) rappresenterà AEM clienti Managed Services come organizzazioni IMS e le istanze AEM come contesti di prodotto.  Admin Console di amministratori di sistema e prodotti possono definire e gestire.
+* [Admin ](https://adminconsole.adobe.com/) Console rappresenterà AEM clienti Managed Services come organizzazioni IMS e le istanze AEM come contesti di prodotto.  Admin Console di amministratori di sistema e prodotti possono definire e gestire.
 * AEM Managed Services sincronizza la topologia con  Admin Console, creando una mappatura da 1 a 1 tra un contesto prodotto e AEM istanza.
 * Profilo di prodotto in  Admin Console determinerà AEM istanze a cui un utente può accedere.
 * Il supporto per l&#39;autenticazione include gli IDPs conformi a SAML2 per l&#39;SSO.
@@ -32,7 +32,7 @@ Adobe Experience Manager introduce  Admin Console di supporto per AEM istanze e 
 
 ** Questa funzione è supportata per AEM 6.4 SP3 e versioni successive per i clienti di Adobe Managed Services.*
 
-## Best practices {#best-practices}
+## Best practice {#best-practices}
 
 ### Applicazione delle autorizzazioni in  Admin Console
 
@@ -46,4 +46,4 @@ In  Admin Console agli utenti dovrebbe essere consentito l&#39;accesso tramite G
 
 ### Applicazione delle autorizzazioni in Adobe Experience Manager
 
-In Adobe Experience Manager, i gruppi di utenti sincronizzati da  Adobe IMS devono essere aggiunti in futuro ai gruppi [di utenti forniti da](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/security.html)AEM, che vengono preconfigurati con le autorizzazioni appropriate per eseguire specifici set di attività in AEM. Gli utenti sincronizzati da  Adobe IMS non devono essere aggiunti direttamente ai gruppi [di utenti forniti da](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/security.html)AEM.
+In Adobe Experience Manager, i gruppi di utenti sincronizzati da  Adobe IMS devono essere aggiunti in termini a [AEM gruppi di utenti forniti](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/security.html), preconfigurati con le autorizzazioni appropriate per eseguire specifici set di attività in AEM. Gli utenti sincronizzati da  Adobe IMS non devono essere aggiunti direttamente ai gruppi di utenti [AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/security.html).
