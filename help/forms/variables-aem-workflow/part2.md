@@ -37,7 +37,7 @@ Quando si crea una variabile di tipo JSON per acquisire i dati inviati nel model
 Per utilizzare le risorse sul sistema, effettuate le seguenti operazioni:
 
 * [Scaricate e importate le risorse in AEM utilizzando il gestore pacchetti](assets/jsonandstringvariable.zip)
-* [Esplora il modello](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) di workflow per comprendere le variabili utilizzate nel flusso di lavoro
+* [Esplora il ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) modello di flusso di lavoro per comprendere le variabili utilizzate nel flusso di lavoro
 * [Configurare il servizio e-mail](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Aprire il modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/afbasedonjson/jcr:content?wcmmode=disabled)
 * Compila i dettagli e invia il modulo
