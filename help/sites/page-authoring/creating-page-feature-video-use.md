@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Creating a Page {#creating-page-aem-sites}
+# Creazione di una pagina {#creating-page-aem-sites}
 
 Scoprite come creare pagine del sito utilizzando i modelli di pagina in Adobe Experience Manager.
 
