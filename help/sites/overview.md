@@ -19,11 +19,11 @@ Adobe Experience Manager (AEM) Sites è una piattaforma leader per la gestione d
 
 ## Novità
 
-* **[Guida introduttiva AEM editor SPA e React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html) (esercitazione)**
+* **[Guida introduttiva AEM editor SPA e React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)  (esercitazione)**
 
    *Guida introduttiva per gli sviluppatori per l’integrazione di applicazioni a pagina singola (SPA) con AEM mediante React*
 
-* **[Guida introduttiva AEM editor SPA e angolare](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html) (esercitazione)**
+* **[Guida introduttiva AEM editor SPA e angolare](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)  (esercitazione)**
 
    *Guida introduttiva per gli sviluppatori per l&#39;integrazione di applicazioni a pagina singola (SPA) con AEM utilizzando Angular*
 
@@ -91,12 +91,12 @@ Adobe Experience Manager (AEM) Sites è una piattaforma leader per la gestione d
 
 ## Risorse aggiuntive
 
-* [Experience League - Esplora AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [ Experience League - Esplora AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [Documentazione sull’authoring  AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
 * [Documentazione sullo sviluppo di  AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
 * [Documentazione  di amministrazione AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
 * [Documentazione  distribuzione AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
-* [Tutorial di AEM as a Cloud Service](/help/cloud-service/overview.md)
+* [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutorial di AEM Assets](/help/assets/overview.md)
 * [Tutorial di AEM Forms](/help/forms/overview.md)
 * [Tutorial di AEM Foundation](/help/foundation/overview.md)
