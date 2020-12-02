@@ -32,7 +32,7 @@ Aprite l&#39;istruzione 401KS in modalità di modifica.
 
  AEM Forms 6.4 ha reso molto semplice la visualizzazione dei dati utilizzando vari tipi di grafici. Usiamo un grafico a linee per visualizzare i saldi per anno.
 
-Toccate l&#39;area di destinazione **Account Progress** sul lato destro e fate clic sull&#39;icona &quot;+&quot; per visualizzare la finestra di dialogo Inserisci componente.
+Toccate l&#39;area di destinazione **Avanzamento account** sul lato destro e fate clic sull&#39;icona &quot;+&quot; per visualizzare la finestra di dialogo Inserisci componente.
 
 Selezionare Grafico per inserire il componente grafico.
 
