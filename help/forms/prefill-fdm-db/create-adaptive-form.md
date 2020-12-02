@@ -26,26 +26,26 @@ Finora abbiamo creato i seguenti
 * Origine dati pool connessione Apache Sling configurata
 * Modello dati modulo basato su RDBMS
 
-Il passaggio successivo consiste nel creare e configurare un modulo adattivo per l&#39;utilizzo del modello dati del modulo.  Per iniziare, è possibile [scaricare e importare](assets/fdm-demo-af.zip) un modulo di esempio. Nel modulo di esempio è presente una sezione che mostra i dettagli del dipendente e un&#39;altra sezione che elenca i beneficiari del dipendente.
+Il passaggio successivo consiste nel creare e configurare un modulo adattivo per l&#39;utilizzo del modello dati del modulo.  Per ottenere l&#39;inizio dell&#39;attività, è possibile [scaricare e importare il modulo di esempio ](assets/fdm-demo-af.zip). Nel modulo di esempio è presente una sezione che mostra i dettagli del dipendente e un&#39;altra sezione che elenca i beneficiari del dipendente.
 
 ## Associazione di un modulo al modello dati del modulo
 
 Il modulo di esempio fornito con questo corso non è associato ad alcun modello dati del modulo. Per configurare il modulo in modo che utilizzi il modello dati modulo, è necessario effettuare le seguenti operazioni:
 
 * Selezionare il modulo FDMDemo
-* Fare clic su _Proprietà_->Modello _modulo_
+* Fare clic su _Properties_->_Form Model_
 * Seleziona Modello dati modulo dall&#39;elenco a discesa
 * Cercare e selezionare il modello dati del modulo creato nella lezione precedente.
-* Click on _Save &amp; Close_
+* Fare clic su _Save &amp; Close_
 
 ## Configura servizio di precompilazione
 
 Il primo passaggio consiste nell&#39;associare il servizio di precompilazione al modulo. Per associare il servizio di precompilazione, seguire i passaggi indicati di seguito
 
-* Selezionare il `FDMDemo` modulo
+* Selezionare il modulo `FDMDemo`
 * Fare clic su _Modifica_ per aprire il modulo in modalità di modifica
 * Selezionare Contenitore modulo nella gerarchia del contenuto e fare clic sull&#39;icona chiave inglese per aprire il relativo foglio delle proprietà
-* Selezionare il servizio _di precompilazione modello dati_ modulo dall&#39;elenco a discesa Servizio di precompilazione
+* Selezionare _Servizio di precompilazione modello dati modulo_ dall&#39;elenco a discesa Precompila servizio
 * Fate clic su ☑ blu per salvare le modifiche
 
 * ![servizio di precompilazione](assets/fdm-prefill.png)
@@ -71,7 +71,7 @@ Il passo successivo è quello di mostrare i beneficiari del dipendente in modo t
 * Aprire il modulo in modalità di modifica.
 * Espandi pannello principale->Beneficiari->Tabella
 * Selezionare Riga1 e fare clic sull&#39;icona chiave inglese per aprire il relativo foglio delle proprietà.
-* Imposta il riferimento del binding su **/newhire/GetDipendeBeneficiaries**
+* Impostare il riferimento del binding su **/newhire/GetDipendentBeneficiaries**
 * Impostate le impostazioni di ripetizione - Conteggio minimo su 1 e Conteggio massimo su 5.
 * La configurazione Row1 deve essere simile a quella della schermata sottostante
    ![row-configure](assets/configure-row.PNG)
@@ -95,7 +95,9 @@ Infine, è necessario eseguire il binding delle celle Riga con gli elementi del 
 
 ## Verificare il modulo
 
-Ora è necessario aprire il modulo con empID appropriato nell’URL. I seguenti 2 collegamenti compileranno i moduli con informazioni provenienti dal[modulo del database con empID=207](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)[Modulo con empID=208](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
+Ora è necessario aprire il modulo con empID appropriato nell’URL. I seguenti 2 collegamenti compileranno i moduli con informazioni provenienti dal database
+[Modulo con empID=207](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)
+[Modulo con empID=208](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
 
 ## Risoluzione dei problemi
 
