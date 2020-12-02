@@ -36,7 +36,9 @@ Il primo passo è quello di creare un progetto di corvo utilizzando il Adobe app
 
 ### Crea classe che implementa WorkflowProcess
 
-Aprite il progetto &quot;lievito&quot; nella vostra eclisse IDE. Espandete **project name** > cartella **core** . Espandete la cartella src/main/java. Dovresti vedere un pacchetto che termina con &quot;core&quot;. Crea una classe Java che implementa WorkflowProcess in questo pacchetto. Sarà necessario sostituire il metodo execute. La firma del metodo execute è come segue: void execute(WorkItem workItem, WorkflowSessionSession, MetaDataMap processArguments) genera WorkflowExceptionIl metodo execute dà accesso alle 3 variabili seguenti
+Aprite il progetto &quot;lievito&quot; nella vostra eclisse IDE. Espandete la cartella **project name** > **core**. Espandete la cartella src/main/java. Dovresti vedere un pacchetto che termina con &quot;core&quot;. Crea una classe Java che implementa WorkflowProcess in questo pacchetto. Sarà necessario sostituire il metodo execute. La firma del metodo execute è la seguente
+public void execute(WorkItem workItem, WorkflowSessionWorkflowSession, MetaDataMap processArguments)genera WorkflowException
+Il metodo execute permette di accedere alle 3 variabili seguenti
 
 **Elemento** di lavoro: La variabile workItem consente di accedere ai dati relativi al flusso di lavoro. La documentazione API pubblica è disponibile [qui.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
@@ -134,7 +136,8 @@ Il resto del codice crea oggetti Document eseguendo un&#39;iterazione attraverso
 
 #### Creazione e implementazione
 
-[Creare il bundle come descritto qui](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)[Verificare che il bundle sia distribuito e in stato attivo](http://localhost:4502/system/console/bundles)
+[Creare il bundle come descritto ](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)
+[quiVerificare che il bundle sia distribuito e in stato attivo](http://localhost:4502/system/console/bundles)
 
 Creare un modello di workflow. Trascinate e rilasciate il passaggio del processo nel modello di workflow. Associare il passaggio del processo a &quot;Salva allegati di moduli adattivi nel file system&quot;.
 
