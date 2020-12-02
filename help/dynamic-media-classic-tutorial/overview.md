@@ -64,7 +64,7 @@ _Interfaccia Dynamic Media Classic_
 
 >[!IMPORTANT]
 >
->Accanto a ciascun ID risorsa si trova lo switch **Contrassegna per pubblicazione** . Quando l’opzione è attivata (verde), significa che la risorsa è contrassegnata per la pubblicazione.
+>Accanto a ciascun ID risorsa si trova l&#39;interruttore **Contrassegna per pubblicazione**. Quando l’opzione è attivata (verde), significa che la risorsa è contrassegnata per la pubblicazione.
 
 ![immagine](assets/overview/overview-mark-for-publish.png)
 
@@ -72,4 +72,4 @@ _Interfaccia Dynamic Media Classic_
 >
 >Selezionate la casella di controllo **Pubblica dopo il caricamento** nella finestra di dialogo Carica per pubblicare automaticamente le risorse al momento del caricamento.
 
-Ulteriori informazioni sulla [navigazione nell’interfaccia utente di Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html).
+Ulteriori informazioni su [Navigazione nell&#39;interfaccia utente di Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html).
