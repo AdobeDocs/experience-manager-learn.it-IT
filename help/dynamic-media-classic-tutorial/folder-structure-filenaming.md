@@ -30,7 +30,7 @@ La gerarchia delle cartelle è importante per voi e per la vostra azienda solo a
 
 Un’altra considerazione importante riguarda il numero di risorse o cartelle da memorizzare in ciascuna cartella. Se molte risorse sono memorizzate in una cartella, le prestazioni peggioreranno quando si visualizzano le risorse in Dynamic Media Classic. Non archiviate migliaia di risorse in una cartella. Al contrario, sviluppate una gerarchia organizzativa con meno di 500 risorse o cartelle all’interno di un determinato ramo della gerarchia. Questo non è un requisito rigoroso, ma contribuirà a mantenere tempi di risposta accettabili durante la visualizzazione o la ricerca delle risorse. In effetti, la raccomandazione consiste nel creare gerarchie ampie e superficiali, anziché strette e profonde.
 
-Il modo più semplice per creare le cartelle è caricare l’intera struttura di cartelle mediante FTP e attivare l’opzione **Includi sottocartelle**. Questa opzione fa sì che Dynamic Media Classic ricrei la struttura delle cartelle sul sito FTP in Dynamic Media Classic.
+Il modo più semplice per creare le cartelle consiste nel caricare l&#39;intera struttura di cartelle mediante FTP e attivare l&#39;opzione **Includi sottocartelle**. Questa opzione fa sì che Dynamic Media Classic ricrei la struttura delle cartelle sul sito FTP in Dynamic Media Classic.
 
 Prima di caricare tutti i file, è consigliabile tenere in considerazione la struttura delle cartelle, in quanto l’organizzazione e la gestione locale dei file e delle cartelle sul computer risulta molto più semplice rispetto all’interno di Dynamic Media Classic. Ad esempio, all’interno di Dynamic Media Classic è possibile trascinare e rilasciare solo i file, ma non intere cartelle.
 
@@ -46,7 +46,7 @@ Per la strategia delle cartelle, considera gli elementi rilevanti per l’organi
 
 La scelta di assegnare un nome ai file è forse la decisione iniziale più importante per quanto riguarda Dynamic Media Classic. Questo perché tutte le risorse in Dynamic Media Classic devono avere nomi univoci, indipendentemente dalla posizione in cui sono memorizzate nell’account.
 
-Tutti gli URL e le transazioni in Dynamic Media Classic sono guidati da un ID risorsa, che è l’identificatore univoco di una risorsa nel database. Quando caricate un file, l’ID risorsa viene creato prendendo il nome del file e rimuovendo l’estensione. Ad esempio, _896649.jpg_ ottiene l’ _ID risorsa 896649_.
+Tutti gli URL e le transazioni in Dynamic Media Classic sono guidati da un ID risorsa, che è l’identificatore univoco di una risorsa nel database. Quando caricate un file, l’ID risorsa viene creato prendendo il nome del file e rimuovendo l’estensione. Ad esempio, _896649.jpg_ ottiene la risorsa _ID 896649_.
 
 Regole relative agli ID risorsa:
 
@@ -78,7 +78,7 @@ Questo è un sistema molto semplice, e buono se avete bisogni modesti. Tuttavia 
 | AA123 | Visualizzazioni Alt | AA123_1.tif AA123_2.tif AA123_3.tif | AA123_1 AA123_2 AA123_3 |
 |  | Viste colorate | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |
 |  | Campioni | AA123_BLU_SW.tif | AA123_BLU_SW |
-|  | Set di immagini o set di campioni |  | AA123 o AA123_SET | -- |
+|  | Set di immagini o set di campioni |  | AA123 o AA123_SET | — |
 
 Quando si tratta di raccolte di set, ad esempio set di immagini e set di campioni, anche il set stesso deve avere un nome univoco. In questo caso, al set potrebbe essere assegnato lo SKU di base come nome, o lo SKU con estensione &quot;_SET&quot;.
 
