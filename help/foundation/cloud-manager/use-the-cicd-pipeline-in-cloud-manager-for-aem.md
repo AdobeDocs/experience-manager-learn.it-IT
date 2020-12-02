@@ -44,15 +44,15 @@ Questo video esplora l&#39;esecuzione della pipeline CI/CD utilizzando codice ch
 
 ## Esecuzione pipeline completata
 
-Questo video esplora la corretta esecuzione della pipeline CI/CD utilizzando il codice che supera i controlli di qualità richiesti da Cloud Manager, utilizzando il ramo **[!DNL master]** del repository.
+Questo video esplora l&#39;esecuzione corretta della pipeline CI/CD utilizzando il codice che supera i controlli di qualità richiesti da Cloud Manager, utilizzando il ramo **[!DNL master]** del repository.
 
-Questo video è disponibile anche per la console [!UICONTROL Attività] in Cloud Manager, che consente di rientrare nelle esecuzioni attive o di rivedere le esecuzioni completate o non riuscite.
+Questo video tocca anche la console [!UICONTROL Attività] in Cloud Manager, che consente di rientrare nelle esecuzioni attive o di rivedere le esecuzioni completate o non riuscite.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23085/?quality=12&learn=on)
 
 ## Materiali di supporto
 
 * [Guida utente di Cloud Manager](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html)
-* [Download [!DNL SonarQube] di programmi di scansione del codice](https://helpx.adobe.com/experience-manager/cloud-manager/using/understand-your-test-results.html#CodeQualityTesting)
+* [Download  [!DNL SonarQube] di programmi di scansione del codice](https://helpx.adobe.com/experience-manager/cloud-manager/using/understand-your-test-results.html#CodeQualityTesting)
    * *XLSX disponibile nella parte inferiore della sezione collegata*
 * [[!DNL SonarQube] Indice regole Java](https://rules.sonarsource.com/java/)
