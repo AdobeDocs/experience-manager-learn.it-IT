@@ -14,18 +14,18 @@ ht-degree: 22%
 
 # Panoramica {#overview}
 
-Adobe Experience Manager offre un set comune di funzionalità disponibili per gli utenti di  AEM Sites [!DNL Assets] e [!DNL Forms].
+Adobe Experience Manager offre un set comune di funzionalità disponibili per gli utenti di  AEM Sites, [!DNL Assets] e [!DNL Forms].
 
 ## Novità
 
 * **[Utilizzo della gestione del flusso di lavoro in AEM (video)](./workflow/use-workflow-management.md)**
-   *AEM offre visibilità ai flussi di lavoro in esecuzione e semplifica la gestione delle [!DNL Workflow] definizioni.*
+   *AEM la visibilità dei flussi di lavoro in esecuzione e facilita la gestione delle  [!DNL Workflow] definizioni.*
 
 * **[Comprendere Cloud Manager per AEM (video)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
    *Cloud Manager per AEM consente di gestire, ispezionare e self-service in modo semplice gli ambienti AEM.*
 
 * **[Configurare le chiavi pubbliche e private da utilizzare con  Adobe I/O (esercitazione)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
-   *Scoprite come vengono generati i tasti e i keystore utilizzando [!DNL openssl] l&#39;I/O AEM e  Adobe.*
+   *Scoprite come vengono generati i tasti e i keystore utilizzando  [!DNL openssl] che funzionano con AEM e  Adobe I/O.*
 
 * **[Utilizzo della pipeline CI/CD di Cloud Manager (video)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
    *Scopri come utilizzare la pipeline CI/CD di Cloud Manager per garantire distribuzioni sicure e coerenti.*
@@ -78,8 +78,8 @@ Adobe Experience Manager offre un set comune di funzionalità disponibili per gl
 
 ## Risorse aggiuntive
 
-* [Experience League - Esplora AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [Tutorial di AEM as a Cloud Service](/help/cloud-service/overview.md)
+* [ Experience League - Esplora AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Video e tutorial di AEM Sites](/help/sites/overview.md)
 * [Video e tutorial di AEM Assets](/help/assets/overview.md)
 * [Video e tutorial di AEM Forms](/help/forms/overview.md)
