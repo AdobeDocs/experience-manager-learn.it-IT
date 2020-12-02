@@ -46,27 +46,27 @@ Per distribuire le risorse sul sistema locale:
 
 * [Download e implementazione di DevelopingWitheServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Scaricate e distribuite il bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue. Si tratta del pacchetto OSGI personalizzato che consente di impostare i valori di un elemento nei dati json inviati.
+* [Scaricate e distribuite il bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) setvalue. Si tratta del pacchetto OSGI personalizzato che consente di impostare i valori di un elemento nei dati json inviati.
 
 * [Scaricare ed estrarre il contenuto del file zip](assets/set-value-jsondata.zip)
-   * Impostate il browser su [Package Manager](http://localhost:4502/crx/packmgr/index.jsp)
+   * Posizionare il browser su [gestore pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
       * Importa e installa SetValueOfElementInJSONDataWorkflow.zip. Questo pacchetto include il modello di flusso di lavoro di esempio e il modello di dati modulo associati al modulo.
 
-* Indirizzare il browser ad [Forms e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Posizionare il browser su [Forms e Documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Fate clic su Crea | Caricamento file
 * Tempo di caricamento del fileOffRequestForm.zip
    **Questo modulo è stato creato utilizzando  AEM Forms 6.4. Verificate di essere su  AEM Forms 6.4 o versione successiva**
 * Aprire il [modulo](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
 * Compilare le date di inizio e di fine e inviare il modulo.
-* Vai a [&quot;Posta in arrivo&quot;](http://localhost:4502/aem/inbox)
+* Vai a [&quot;Inbox&quot;](http://localhost:4502/aem/inbox)
 * Aprire il modulo associato all&#39;attività.
 * I campi del primo pannello sono disattivati.
 * Il pannello per approvare o rifiutare la richiesta è ora visibile.
 
 >[!NOTE]
 >
->Poiché il modulo adattivo viene precompilato utilizzando il profilo utente, assicurarsi che le informazioni relative al profilo [utente amministratore ](http://localhost:4502/security/users.html). Come minimo, accertatevi di aver impostato i valori dei campi Nome, Cognome e E-mail.
->Potete abilitare la registrazione di debug abilitando logger per com.aemforms.setvalue.core.SetValueInJson [da qui](http://localhost:4502/system/console/slinglog)
+>Poiché il modulo adattivo viene precompilato utilizzando il profilo utente, assicurarsi che le informazioni relative al profilo utente [admin ](http://localhost:4502/security/users.html) siano &lt;a1/>. Come minimo, accertatevi di aver impostato i valori dei campi Nome, Cognome e E-mail.
+>È possibile abilitare la registrazione di debug abilitando logger per com.aemforms.setvalue.core.SetValueInJson [da qui](http://localhost:4502/system/console/slinglog)
 
 >[!NOTE]
 >
