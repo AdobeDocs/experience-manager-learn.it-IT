@@ -44,7 +44,7 @@ Le tabelle vengono utilizzate per visualizzare i dati in modo tabulare. Le righe
    * Documento di comunicazione interattiva
    * sampleretirementaccountdata.json
 
-* Aprite il documento di comunicazione interattiva in modalità di [modifica](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
+* Aprire il documento di comunicazione interattiva in [modalità di modifica](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
 
 * Aggiungere il frammento di layout TabellaDemo alla sezione dei contributi.
 * Eseguire un binding delle celle della tabella con gli elementi del modello dati modulo appropriati, come illustrato nel video
