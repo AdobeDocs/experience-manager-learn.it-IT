@@ -20,7 +20,7 @@ ht-degree: 6%
 
 #  utenti IMS Adobe
 
-Gli utenti che richiedono l&#39;accesso al servizio AEM Author vengono gestiti come utenti [IMS](https://helpx.adobe.com/it/enterprise/using/set-up-identity.html) Adobe in [Adobe   Admin Console](https://adminconsole.adobe.com). Scoprite  utenti IMS del Adobe e come accedervi e gestirli in  Admin Console.
+Gli utenti che richiedono l&#39;accesso al servizio AEM Author vengono gestiti come [utenti IMS  Adobe](https://helpx.adobe.com/it/enterprise/using/set-up-identity.html) in [ Adobe   Admin Console](https://adminconsole.adobe.com). Scoprite  utenti IMS del Adobe e come accedervi e gestirli in  Admin Console.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39149/?quality=12&learn=on)
 
