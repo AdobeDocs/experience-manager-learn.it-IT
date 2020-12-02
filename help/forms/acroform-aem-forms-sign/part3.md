@@ -18,11 +18,12 @@ ht-degree: 1%
 
 # Verificare questa funzionalità nel sistema
 
-[Scaricate e importate il pacchetto in AEM](assets/acro-form-aem-form.zip)Questo pacchetto contiene il flusso di lavoro di esempio e la pagina html che consente di creare lo schema dall&#39;Acroform caricato.
+[Scaricate e importate il pacchetto in ](assets/acro-form-aem-form.zip)
+AEMTil pacchetto contiene il flusso di lavoro di esempio e la pagina html che consente di creare lo schema dall’Acroform caricato.
 
 ## Configura flusso di lavoro
 
-1. [Aprire il modello di workflow in modalità](http://localhost:4502/editor.html/conf/global/settings/workflow/models/MergeAcroformData.html)di modifica.
+1. [Aprire il modello di workflow in modalità](http://localhost:4502/editor.html/conf/global/settings/workflow/models/MergeAcroformData.html) di modifica.
 2. Aprire le proprietà di configurazione del passaggio MergeAcroformData.
 3. Fare clic sulla scheda Processo.
 4. Verificate che gli argomenti che state passando siano una cartella valida sul server.
