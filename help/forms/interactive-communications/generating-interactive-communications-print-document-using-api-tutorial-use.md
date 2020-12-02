@@ -28,7 +28,7 @@ Quando rilasciate un file nella cartella esaminata, viene eseguito uno script as
 
 Il file rilasciato nella cartella esaminata ha la struttura seguente. Il codice genererà istruzioni per tutti i numeri di conto elencati nel documento XML.
 
-&lt;accountnumber>
+&lt;accountnumbers>
 
 &lt;accountnumber>509840&lt;/accountnumber>
 
@@ -38,7 +38,7 @@ Il file rilasciato nella cartella esaminata ha la struttura seguente. Il codice 
 
 &lt;accountnumber>291723&lt;/accountnumber>
 
-&lt;/accountnumber>
+&lt;/accountnumbers>
 
 L&#39;elenco di codici riportato di seguito effettua le seguenti operazioni:
 
@@ -111,8 +111,8 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 **Per eseguire il test sul sistema locale, seguire le istruzioni seguenti:**
 
 * Imposta Tomcat come descritto in questo [articolo.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat ha il file di guerra che genera i dati di esempio.
-* Configurate il servizio o l&#39;utente di sistema come descritto in questo [articolo](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
-Assicurarsi che l&#39;utente di sistema disponga delle autorizzazioni di lettura per il nodo seguente. Per assegnare le autorizzazioni di accesso all&#39;amministratore [di](https://localhost:4502/useradmin) utente e cercare &quot;dati&quot; per l&#39;utente di sistema e assegnare le autorizzazioni di lettura sul nodo seguente con il tasto di tabulazione sulla scheda delle autorizzazioni
+* Configurare il servizio o l&#39;utente del sistema come descritto in questo [articolo](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
+Assicurarsi che l&#39;utente di sistema disponga delle autorizzazioni di lettura per il nodo seguente. Per assegnare le autorizzazioni di accesso a [utente admin](https://localhost:4502/useradmin) e cercare &quot;dati&quot; dell&#39;utente di sistema e assegnare le autorizzazioni di lettura per il nodo seguente mediante il tasto di tabulazione sulla scheda delle autorizzazioni
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af
