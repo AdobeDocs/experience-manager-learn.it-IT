@@ -42,9 +42,9 @@ Ci auguriamo che i contenuti di questa guida sulle best practice siano stati uti
 
 Per ulteriori informazioni su Dynamic Media Classic, consulta le risorse seguenti:
 
-- [Dynamic Media Classic su Experience League - Ottieni valore](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
-- [Dynamic Media Classic su Experience League - Fai di più](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
+- [Dynamic Media Classic su  Experience League - Ottieni valore](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
+- [Dynamic Media Classic su  Experience League - Fai di più](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
 - [Archivio Dynamic Media Newsletter](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
 - [Pagina iscrizione per newsletter multimediale dinamica](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
-- [Documentazione su Dynamic Media Classic](https://docs.adobe.com/content/help/it-IT/dynamic-media-classic/using/home.html)
+- [Documentazione su Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/home.html)
 - [Post di blog per contenuti multimediali avanzati](https://theblog.adobe.com/tag/dynamic-media)
