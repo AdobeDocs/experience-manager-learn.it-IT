@@ -26,7 +26,7 @@ In questo articolo, diamo un&#39;occhiata alle e-mail come un meccanismo di cons
 
 Diamo un&#39;occhiata al frammento di codice seguente. Questo codice fa parte di GET.jsp che viene attivato quando l&#39;utente fa clic sul collegamento nell&#39;e-mail per visualizzare il documento del canale Web. L&#39;utente che ha eseguito l&#39;accesso viene incluso nell&#39;account UserManager del coniglio. Una volta ottenuto l&#39;utente che ha effettuato l&#39;accesso, viene visualizzato il valore della proprietà accountNumber associata al profilo dell&#39;utente.
 
-Quindi associamo il valore accountNumber a una chiave denominata accountnumber nella mappa. Il **numero** contabile chiave è definito nel modale dei dati del modulo come attributo di richiesta. Il valore di questo attributo viene passato come parametro di input al metodo del servizio di lettura Form Data Modal.
+Quindi associamo il valore accountNumber a una chiave denominata accountnumber nella mappa. La chiave **accountnumber** è definita nella modale dei dati del modulo come Attributo richiesta. Il valore di questo attributo viene passato come parametro di input al metodo del servizio di lettura Form Data Modal.
 
 Linea 7: La richiesta ricevuta viene inviata a un altro servlet, in base al tipo di risorsa identificato dall&#39;URL del documento di comunicazione interattiva. La risposta restituita da questo secondo servlet è inclusa nella risposta del primo servlet.
 
