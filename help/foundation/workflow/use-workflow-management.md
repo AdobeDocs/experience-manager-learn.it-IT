@@ -29,11 +29,11 @@ Questo video illustra i seguenti aspetti della gestione del flusso di lavoro, in
 + Semplicità di navigazione nella timeline del flusso di lavoro dalla vista a elenco
 + Copiare e incollare un flusso di lavoro OOTB esistente per personalizzare o ignorare le funzionalità predefinite
 + Eseguire una pubblicazione rapida per [!DNL Workflow Models] e [!DNL Launchers]
-+ Gestione della pubblicazione per [!DNL Workflow Models] e [!DNL Launchers].
++ Gestire la pubblicazione per [!DNL Workflow Models] e [!DNL Launchers].
 + Informare gli utenti con una descrizione comandi di avviso, quando tentano di modificare un modello di flusso di lavoro OOTB o un avvio.
 + Possibilità di ripristinare le modifiche apportate a un modello di flusso di lavoro OOTB o ai lanciatori.
 
-Questo video utilizza [!DNL Workflow models] per dimostrare che questo set di funzionalità è applicabile anche a [!DNL AEM Launchers].
+Questo video utilizza [!DNL Workflow models] per dimostrare che questo insieme di funzionalità è valido anche per [!DNL AEM Launchers].
 
 
 >[!NOTE]
