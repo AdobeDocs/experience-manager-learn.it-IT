@@ -40,7 +40,7 @@ ht-degree: 0%
 
 * Selezionate l&#39;icona &quot;matita&quot; per modificare il testo predefinito.
 
-* Sostituire il testo predefinito con &quot;**Your Retirement Income Outlook&quot;**
+* Sostituire il testo predefinito con &quot;**Prospettive del reddito pensionabile&quot;**
 
 **Configurare l&#39;area di destinazione del pannello destro**
 
@@ -52,15 +52,15 @@ ht-degree: 0%
 
 * Selezionate l&#39;icona &quot;matita&quot; per modificare il testo predefinito.
 
-* Sostituisce il testo predefinito con &quot;**Estimated Monthly Retirement Income&quot; (Entrate mensili stimate).**
+* Sostituisce il testo predefinito con &quot;**Stima reddito mensile&quot;**
 
 ## Aggiungi frammento di documento di Outlook reddito pensione {#add-retirement-income-outlook-document-fragment}
 
 * Fai clic sull’icona Risorse e applica il filtro per visualizzare le risorse di tipo &quot;Frammenti documento&quot;. Trascinare il frammento di documento RetirementIncomeOutlook nell&#39;area di destinazione del pannello sinistro.
 
-* È possibile fare riferimento [a questa pagina](https://helpx.adobe.com/experience-manager/kt/forms/using/interactive-communication-web-channel-aem-forms/9.html) per l&#39;aggiunta di frammenti di documento alle aree contenuto.
+* È possibile fare riferimento a [questa pagina](https://helpx.adobe.com/experience-manager/kt/forms/using/interactive-communication-web-channel-aem-forms/9.html) quando si aggiunge un frammento di documento alle aree contenuto.
 
-## Aggiunta di una stima del reddito mensile {#adding-estimated-monthly-income-chart}
+## Aggiunta della figura del reddito mensile stimato {#adding-estimated-monthly-income-chart}
 
 * Fate clic sull’area di destinazione del pannello destro sul lato destro. Fare clic sull&#39;icona &quot;+&quot; per inserire il componente del grafico. Utilizzeremo un grafico a colonne per visualizzare il reddito mensile stimato. Toccate delicatamente il componente grafico appena inserito. Seleziona l&#39;icona &quot;chiave inglese&quot; per aprire il foglio delle proprietà di configurazione.Configura il grafico con le seguenti proprietà come mostrato nella schermata seguente.
 
