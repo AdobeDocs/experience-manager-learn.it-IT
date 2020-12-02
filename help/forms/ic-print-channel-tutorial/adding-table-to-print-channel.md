@@ -25,7 +25,7 @@ ht-degree: 0%
 # Aggiunta di una tabella alla sezione dei contributi
 
 In questa parte, verrà aggiunta una tabella alla sezione dei contributi.
-Per ulteriori informazioni sull&#39;uso delle tabelle nel documento del canale di stampa, vedere [Uso delle tabelle nel canale](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) di stampa.
+Fare riferimento a [Utilizzo delle tabelle nel canale di stampa](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) per ulteriori informazioni sull&#39;utilizzo delle tabelle nel documento del canale di stampa.
 
 Accedete a  AEM Forms e andate a Adobe Experience Manager > Forms > Forms &amp; Documents.
 
