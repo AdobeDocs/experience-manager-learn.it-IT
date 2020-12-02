@@ -83,9 +83,9 @@ Adobe Experience Manager Assets è uno strumento di gestione delle risorse digit
 
 ## Risorse aggiuntive
 
-* [Experience League - Esplora AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [documentazione AEM Assets](https://helpx.adobe.com/it/experience-manager/6-5/assets/user-guide.html)
-* [Tutorial di AEM as a Cloud Service](/help/cloud-service/overview.md)
+* [ Experience League - Esplora AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [ documentazione AEM Assets](https://helpx.adobe.com/it/experience-manager/6-5/assets/user-guide.html)
+* [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutorial di AEM Sites](/help/sites/overview.md)
 * [Tutorial di AEM Forms](/help/forms/overview.md)
 * [Tutorial di AEM Foundation](/help/foundation/overview.md)
