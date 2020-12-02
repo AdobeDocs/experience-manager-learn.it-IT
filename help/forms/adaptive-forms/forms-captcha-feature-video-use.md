@@ -20,11 +20,11 @@ ht-degree: 0%
 ---
 
 
-# Utilizzo di CAPTCHA con AEM Forms adattivo{#using-captchas-with-aem-adaptive-forms}
+# Utilizzo di CAPTCHA con AEM Forms {#using-captchas-with-aem-adaptive-forms} adattivo
 
 Aggiunta e utilizzo di un CAPTCHA con AEM Forms adattivo.
 
-Visitate la [pagina di esempi](https://forms.enablementadobe.com/content/samples/samples.html?query=0) AEM Forms per un collegamento a una dimostrazione live di questa funzionalità.
+Visitate la pagina [ AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) per un collegamento a una dimostrazione live di questa funzionalità.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336/?quality=9&learn=on)
 
@@ -40,7 +40,7 @@ Visitate la [pagina di esempi](https://forms.enablementadobe.com/content/samples
 >
 >Configurare il recuperoCaptach sull’istanza di creazione
 >
->aprire la console [](http://localhost:4502/system/console/bundles) Web felix nell’istanza di creazione
+>aprire la console Web [felix](http://localhost:4502/system/console/bundles) nell&#39;istanza di creazione
 >
 >cerca il bundle com.adobe.granite.crypto.file
 >
@@ -51,9 +51,9 @@ Visitate la [pagina di esempi](https://forms.enablementadobe.com/content/samples
 >* &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
 * Copiare i file HMAC e master
 
-Aprite la console [Web](http://localhost:4502/system/console/bundles) felix nell’istanza di pubblicazione. Cercate il bundle com.adobe.granite.crypto.file. Notate l’ID bundle
+Aprite la [console Web del file ](http://localhost:4502/system/console/bundles) nell’istanza di pubblicazione. Cercate il bundle com.adobe.granite.crypto.file. Notate l’ID bundle
 Andate al bundle id nel file system dell’istanza di pubblicazione
-* &lt;direct-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
+* &lt;publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
 * eliminare i file HMAC e master esistenti.
 * incollare i file HMAC e master copiati dall’istanza di creazione
 
