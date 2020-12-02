@@ -68,12 +68,15 @@ Di seguito sono riportati i dati provenienti dall&#39;invio del modulo adattivo.
 ```
 
 Per inizializzare la variabile ArrayList della stringa del sottotipo, è possibile utilizzare la modalità di mappatura JSON Dot Notation o XPath. La schermata seguente mostra la compilazione di una variabile ArrayList denominata CustomRoutes tramite la notazione punto JSON. Assicurarsi di puntare a un elemento in un oggetto array, come mostrato nella schermata sottostante. Stiamo compilando l&#39;ArrayList CustomRoutes con i nomi dell&#39;oggetto array managerchain.
-L&#39;ArrayList CustomRoutes viene quindi utilizzato per comporre i cicli nel componente![AssignTask cicli](assets/arraylist.jpg)personalizzati Una volta inizializzata la variabile ArrayList CustomRoutes con i valori dei dati inviati, i cicli del componente AssignTask vengono compilati utilizzando la variabile CustomRoutes. La schermata seguente mostra i percorsi personalizzati in un&#39;attività![AssegnaAttività](assets/customactions.jpg)
+L&#39;ArrayList CustomRoutes viene quindi utilizzato per compilare i cicli nel componente AssignTask
+![percorsi personalizzati](assets/arraylist.jpg)
+Una volta inizializzata la variabile ArrayList CustomRoutes con i valori dei dati inviati, i cicli del componente AssignTask vengono compilati utilizzando la variabile CustomRoutes. La schermata seguente mostra i percorsi personalizzati in un oggetto AssignTask
+![asingtask](assets/customactions.jpg)
 
 Per testare il flusso di lavoro sul sistema, attenetevi alla seguente procedura
 
 * Scaricare e salvare il file ArrayListVariable.zip nel file system
-* [Importare il file](assets/arraylistvariable.zip) zip utilizzando AEM Package Manager
+* [Importare il ](assets/arraylistvariable.zip) file zip tramite Gestione pacchetti AEM
 * [Aprire il modulo TravelExpenseReport](http://localhost:4502/content/dam/formsanddocuments/helpx/travelexpensereport/jcr:content?wcmmode=disabled)
 * Inserire un paio di spese e i nomi dei 2 manager
 * Premi il pulsante Invia
