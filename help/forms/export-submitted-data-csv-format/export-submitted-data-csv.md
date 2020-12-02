@@ -22,14 +22,18 @@ Generalmente, i clienti desiderano esportare i dati del modulo inviato in format
 >
 >Questo esempio funziona solo con Forms adattivo non basato su schema o modello dati modulo
 
-![Struttura](assets/tablestructure.PNG)tabella Il nome dello schema è aemformstutorial.All&#39;interno di questo schema sono definiti i moduli di tabella inviati con le colonne seguenti
+![Struttura ](assets/tablestructure.PNG)
+tabellaCome è possibile vedere il nome dello schema è aemformstutorial.All&#39;interno di questo schema è possibile specificare i moduli di tabella inviati con le colonne seguenti
 
 * formdata: Questa colonna contiene i dati del modulo inviati
 * formname: Questa colonna contiene il nome del modulo inviato
 * id: Questa è la chiave primaria e viene impostata su incremento automatico
 
 Il nome della tabella e i nomi delle due colonne sono esposti come proprietà di configurazione OSGi come mostrato nella schermata seguente:
-![osgi-configuration](assets/configuration.PNG)Il codice leggerà questi valori e costruirà la query SQL appropriata da eseguire. Ad esempio, verrà eseguita la seguente query in base ai valori **SELECT formdata FROM aemformstutorial.formsubmit dove formname=timeoffrequest** Nella query precedente il nome del form(timeoffrequest) verrà passato al servlet come parametro di richiesta.
+![osgi-configuration](assets/configuration.PNG)
+Il codice leggerà questi valori e costruirà la query SQL appropriata da eseguire. Ad esempio, verrà eseguita la seguente query in base ai valori riportati sopra
+**SELECT formdata FROM aemformstutorial.formsubmit where formname=timeoffrequestform**
+Nella query precedente il nome del form(timeoffrequest) verrà passato al servlet come parametro di richiesta.
 
 ## **Crea servizio OSGi**
 
@@ -257,7 +261,7 @@ public @interface StoreAndExportConfiguration {
 
 ## Servlet
 
-Di seguito è riportato il codice servlet che richiama il `getCSVFile(..)` metodo del servizio. Il servizio restituisce l&#39;oggetto StringBuffer che viene quindi inviato in streaming all&#39;applicazione chiamante
+Di seguito è riportato il codice servlet che richiama il metodo `getCSVFile(..)` del servizio. Il servizio restituisce l&#39;oggetto StringBuffer che viene quindi inviato in streaming all&#39;applicazione chiamante
 
 ```java
 package com.aemforms.storeandexport.core.servlets;
@@ -299,6 +303,6 @@ public class StreamCSVFile extends SlingAllMethodsServlet {
 
 ### Implementazione sul server
 
-* Importare il file [](assets/formsubmissions.sql) SQL in MySQL Server utilizzando MySQL Workbench. Questo crea uno schema denominato **aemformstutorial** e una tabella denominata **form, inviando** con alcuni dati di esempio.
-* Implementare [OSGi Bundle](assets/store-export.jar) tramite la console Web Felix
-* [Per ottenere gli invii](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform)TimeOffRequest. Dovreste ricevere un file CSV inviato in streaming di nuovo.
+* Importare il file [SQL](assets/formsubmissions.sql) in MySQL Server utilizzando MySQL Workbench. Questo crea uno schema denominato **aemformstutorial** e una tabella denominata **formentitlement** con alcuni dati di esempio.
+* Implementare [OSGi Bundle](assets/store-export.jar) utilizzando la console Web di Felix
+* [Per ottenere gli invii](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform) TimeOffRequest. Dovreste ricevere un file CSV inviato in streaming di nuovo.
