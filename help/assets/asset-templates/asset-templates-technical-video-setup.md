@@ -24,11 +24,11 @@ I modelli di risorse consentono agli esperti di marketing di creare, gestire e d
 
 >[!NOTE]
 >
->AEM **deve** essere connesso a un server di InDesign  in esecuzione quando il modello INDD viene caricato. Parte dell&#39;elaborazione iniziale sul file INDD richiede  server InDesign.
+>AEM **deve** essere connesso a un server di InDesign  in esecuzione quando viene caricato il modello INDD. Parte dell&#39;elaborazione iniziale sul file INDD richiede  server InDesign.
 
 ## Scarica  versione di prova InDesign Server {#download-indesign-server-trial}
 
-Scarica [versione di prova InDesign Server download Sito Web](https://www.adobe.com/devnet/indesign/indesign-server-trial-downloads.html)
+Download di [ versione di prova InDesign Server download Sito Web](https://www.adobe.com/devnet/indesign/indesign-server-trial-downloads.html)
 
 ## Avvio  InDesign Server {#starting-indesign-server}
 
