@@ -71,4 +71,4 @@ Accedete a  AEM Forms.
 
 >[!NOTE]
 >
->Consulta il file **/apps/AEMForms/fetchad/GET.jsp** in crx. Assicurarsi che la variabile String webChannelDocument indichi un percorso di documento di comunicazione valido.
+>Date un&#39;occhiata al file **/apps/AEMForms/fetchad/GET.jsp** in crx. Assicurarsi che la variabile String webChannelDocument indichi un percorso di documento di comunicazione valido.
