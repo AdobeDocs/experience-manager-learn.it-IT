@@ -1,7 +1,7 @@
 ---
-user-guide-title: Esercitazioni su Adobe Experience Manager as a Cloud Service
+user-guide-title: Tutorial su Adobe Experience Manager as a Cloud Service
 user-guide-description: Una raccolta di tutorial per Adobe Experience Manager as a Cloud Service.
-breadcrumb-title: Tutorial di AEM as a Cloud Service
+breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: servizio cloud
 team: TM
 translation-type: tm+mt
@@ -13,23 +13,23 @@ ht-degree: 33%
 ---
 
 
-# Esercitazioni su Adobe Experience Manager as a Cloud Service {#cloud-service}
+# Tutorial su Adobe Experience Manager as a Cloud Service {#cloud-service}
 
 + [Panoramica](./overview.md)
-+ Tecnologia sottostante {#underlying-technology}
++ Tecnologia di base {#underlying-technology}
    + [Introduzione all&#39;architettura AEM](./underlying-technology/introduction-architecture.md)
    + [Introduzione a OSGi](./underlying-technology/introduction-osgi.md)
    + [Introduzione a Java Content Repository](./underlying-technology/introduction-jcr.md)
    + [Introduzione alla Sling](./underlying-technology/introduction-sling.md)
    + [Introduzione a Author and Publish Tier](./underlying-technology/introduction-author-publish.md)
    + [Introduzione a Dispatcher](./underlying-technology/introduction-dispatcher.md)
-+ Ambiente di sviluppo locale impostato {#local-development-environment-set-up}
++ Ambiente di sviluppo locale Configurato {#local-development-environment-set-up}
    + [Panoramica](./local-development-environment/overview.md)
    + [Strumenti di sviluppo](./local-development-environment/development-tools.md)
    + [Runtime AEM locale](./local-development-environment/aem-runtime.md)
    + [Strumenti per il dispatcher locale](./local-development-environment/dispatcher-tools.md)
-+ AEM di debug{#debugging}
-   + Debug dell’SDK AEM{#debugging-aem-sdk}
++ Debug AEM{#debugging}
+   + Debug dell&#39;SDK AEM{#debugging-aem-sdk}
       + [Panoramica](./debugging/aem-sdk-local-quickstart/overview.md)
       + [Registri](./debugging/aem-sdk-local-quickstart/logs.md)
       + [Debug remoto](./debugging/aem-sdk-local-quickstart/remote-debugging.md)
@@ -42,23 +42,23 @@ ht-degree: 33%
       + [Creazione e implementazione](./debugging/cloud-service/build-and-deployment.md)
       + [Console per sviluppatori](./debugging/cloud-service/developer-console.md)
       + [CRXDE Lite](./debugging/cloud-service/crxde-lite.md)
-+ Accesso AEM{#accessing}
++ Accesso a AEM{#accessing}
    + [Panoramica](./accessing/overview.md)
-   + [utenti IMS Adobe](./accessing/adobe-ims-users.md)
+   + [ utenti IMS Adobe](./accessing/adobe-ims-users.md)
    + [Gruppi di utenti  Adobe IMS](./accessing/adobe-ims-user-groups.md)
-   + [profili di prodotto IMS Adobe](./accessing/adobe-ims-product-profiles.md)
+   + [ profili di prodotto IMS Adobe](./accessing/adobe-ims-product-profiles.md)
    + [AEM utenti, gruppi e autorizzazioni](./accessing/aem-users-groups-and-permissions.md)
    + [Configurazione dell&#39;accesso alla AEM dettagliata](./accessing/walk-through.md)
 + Migrazione {#migration}
    + [Strumento Content Transfer (Trasferimento contenuti) ](./migration/content-transfer-tool.md)
-+ Estensibilità calcolo risorse{#asset-compute}
++ Estensibilità  Asset compute{#asset-compute}
    + [Panoramica](./asset-compute/overview.md)
-   + Configurare{#set-up}
+   + Imposta{#set-up}
       + [Provisioning di account e servizi](./asset-compute/set-up/accounts-and-services.md)
       + [Ambiente di sviluppo locale](./asset-compute/set-up/development-environment.md)
-      + [progetto Adobe](./asset-compute/set-up/firefly.md)
+      + [ progetto Adobe](./asset-compute/set-up/firefly.md)
    + Sviluppa{#develop}
-      + [Creazione di un progetto di calcolo risorse](./asset-compute/develop/project.md)
+      + [Creare un progetto di Asset compute ](./asset-compute/develop/project.md)
       + [Configurare le variabili di ambiente](./asset-compute/develop/environment-variables.md)
       + [Configurare manifest.yml](./asset-compute/develop/manifest.md)
       + [Sviluppare un lavoratore](./asset-compute/develop/worker.md)
