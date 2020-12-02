@@ -38,9 +38,9 @@ I dati del modulo adattivo vengono memorizzati sotto l’elemento dati come most
 
 >[!NOTE]
 >
->**AEM Forms 6.5.0** - Quando si crea una variabile di tipo XML per acquisire i dati inviati nel modello di workflow, non associare XSD alla variabile. Questo perché quando si invia un modulo adattivo basato su XSD, i dati inviati non sono conformi a XSD. I dati del reclamo XSD sono racchiusi nell&#39;elemento /afData/afBoundData/.
+>**AEM Forms 6.5.0**  - Quando si crea una variabile di tipo XML per acquisire i dati inviati nel modello di workflow, non associare XSD alla variabile. Questo perché quando si invia un modulo adattivo basato su XSD, i dati inviati non sono conformi a XSD. I dati del reclamo XSD sono racchiusi nell&#39;elemento /afData/afBoundData/.
 >
->**AEM Forms 6.5.1** - Se si associa XSD alla variabile XML, è possibile esplorare gli elementi dello schema per eseguire la mappatura della variabile. Non sarà possibile accedere ai dati del modulo non associati agli elementi dello schema. Se il caso d&#39;uso è quello di accedere ai dati associati a elementi dello schema e ai dati non associati, non eseguire il binding dello schema con la variabile XML nel flusso di lavoro. Sarà necessario utilizzare l&#39;espressione XPath appropriata per ottenere i dati necessari
+>**AEM Forms 6.5.1**  - Se si associa XSD alla variabile XML, è possibile esplorare gli elementi dello schema per eseguire la mappatura della variabile. Non sarà possibile accedere ai dati del modulo non associati agli elementi dello schema. Se il caso d&#39;uso è quello di accedere ai dati associati a elementi dello schema e ai dati non associati, non eseguire il binding dello schema con la variabile XML nel flusso di lavoro. Sarà necessario utilizzare l&#39;espressione XPath appropriata per ottenere i dati necessari
 
 ## Creazione di variabili XML
 
@@ -48,7 +48,7 @@ I dati del modulo adattivo vengono memorizzati sotto l’elemento dati come most
 
 ### Uso dello schema con la variabile XML
 
-**Mappatura di una variabile XML con schema. Utilizzate questa funzionalità a partire da  AEM Forms 6.5.1**
+**Mappatura di una variabile XML con schema. Utilizzate questa funzionalità con  AEM Forms 6.5.1 a partire da**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28098?quality=9&learn=on)
 
@@ -59,7 +59,7 @@ I dati del modulo adattivo vengono memorizzati sotto l’elemento dati come most
 Per utilizzare le risorse sul sistema, effettuate le seguenti operazioni:
 
 * [Scaricate e importate le risorse in AEM utilizzando il gestore pacchetti](assets/xmlandstringvariable.zip)
-* [Esplora il modello](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) di workflow per comprendere le variabili utilizzate nel flusso di lavoro
+* [Esplora il ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) modello di flusso di lavoro per comprendere le variabili utilizzate nel flusso di lavoro
 * [Configurare il servizio e-mail](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Aprire il modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)
 * Compila i dettagli e invia il modulo.
