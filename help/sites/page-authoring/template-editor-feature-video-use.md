@@ -27,15 +27,15 @@ I modelli modificabili consentono agli autori specializzati di creare e aggiorna
 
 I modelli modificabili sono la raccomandazione per la creazione  nuovo AEM Sites.
 
-**Esperienza** di authoring coerente: i miglioramenti apportati  authoring AEM Sites vengono trasferiti alla modifica dei modelli, inclusa la modalità di layout in linea e il pannello Struttura contenuto.
+**Esperienza**  dell&#39;autore coerente: i miglioramenti apportati  authoring AEM Sites vengono trasferiti alla modifica dei modelli, inclusa la modalità Layout in linea e il pannello Struttura contenuto.
 
-**Configurazioni** avanzate per i criteri - Di seguito vengono evidenziate alcune configurazioni avanzate per i criteri rese disponibili con Modelli modificabili:
+**Configurazioni**  avanzate per i criteri - Di seguito vengono evidenziate alcune configurazioni avanzate per i criteri rese disponibili con Modelli modificabili:
 
-* **Contenitore** di layout: possibilità di configurare i componenti consentiti, gestire la mappatura Trascina + Rilascia delle risorse e le colonne Griglia reattiva.
-* **Componente** testo: possibilità di configurare i plug-in Editor Rich Text con una nuova interfaccia utente e di riutilizzare i criteri RTE tra i modelli.
-* **Componente** immagine: possibilità di attivare/disattivare funzioni quali il ritaglio, il caricamento di file desktop con una nuova interfaccia utente e di riutilizzare i criteri immagine tra i modelli.
+* **Contenitore**  di layout: possibilità di configurare i componenti consentiti, gestire la mappatura Trascina + Rilascia delle risorse e le colonne Griglia reattiva.
+* **Componente**  testo: possibilità di configurare i plug-in Editor Rich Text con una nuova interfaccia utente e di riutilizzare i criteri RTE tra i modelli.
+* **Componente**  immagine: possibilità di attivare/disattivare funzioni quali il ritaglio, il caricamento di file desktop con una nuova interfaccia utente e di riutilizzare i criteri immagine tra i modelli.
 
-I modelli modificabili si trovano in **Strumenti** `>` Generali ****`>` Modelli ****.\
+I modelli modificabili si trovano in **Strumenti** `>` **Generale** `>` **Modelli**.\
 URL modelli modificabili (istanza AEM locale): [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 ## Risorse aggiuntive {#additional-resources}
