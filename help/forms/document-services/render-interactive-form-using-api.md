@@ -67,6 +67,6 @@ Linea 11: Restituisce il pdf interattivo generato all&#39;applicazione chiamante
 1. Il pdf interattivo deve essere scaricato nel sistema locale
 
 
-Il pacchetto di esempio contiene il profilo personalizzato associato al modulo mobile. Esplora il file [custom toolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp) . Questo jsp estrae i dati dal modulo mobile ed effettua una richiesta POST al servlet montato sul percorso ***/bin/generateinteractivepdf*** . Il servlet restituisce il pdf interattivo all’applicazione chiamante. Il codice nella barra degli strumenti personalizzata.jsp quindi scarica il file nel sistema locale
+Il pacchetto di esempio contiene il profilo personalizzato associato al modulo mobile. Esplora il file [customtoolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp). Questo jsp estrae i dati dal modulo mobile ed effettua una richiesta POST al servlet montato sul percorso ***/bin/generateinteractivepdf***. Il servlet restituisce il pdf interattivo all’applicazione chiamante. Il codice nella barra degli strumenti personalizzata.jsp quindi scarica il file nel sistema locale
 
 
