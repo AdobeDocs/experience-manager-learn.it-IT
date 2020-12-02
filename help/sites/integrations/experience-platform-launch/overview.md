@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: d1ab6e59d817ef103b76960b260b7958d1fa5953
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 1%
+ht-degree: 10%
 
 ---
 
 
-# Integrazione di Experienci Platform Launch e AEM {#overview}
+# Integrazione di Experience Platform Launch e AEM {#overview}
 
 Il Experience Platform Launch è  piattaforma di gestione tag  di nuova generazione e il modo migliore per distribuire  Adobe Analytics, Target,  Audience Manager e molte altre soluzioni. Ottenete una panoramica di Launch e dell&#39;integrazione consigliata con Adobe Experience Manager.
 
@@ -31,5 +31,5 @@ Il Experience Platform Launch è  piattaforma di gestione tag  di nuova generazi
 ## Risorse aggiuntive {#additional-resources}
 
 * [Integrazioni  Experience Platform con applicazioni  Experience Cloud](https://docs.adobe.com/content/help/en/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
-* [Guida utente Experience Platform Launch](https://docs.adobe.com/content/help/en/launch/using/overview.html)
-* [Implementazione del Experience Cloud  in Siti Web con Launch](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/index.html)
+* [Guida utente di Experience Platform Launch](https://docs.adobe.com/content/help/en/launch/using/overview.html)
+* [Implementazione di Experience Cloud nei siti web tramite Launch](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/index.html)
