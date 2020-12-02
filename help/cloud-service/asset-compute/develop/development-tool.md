@@ -1,6 +1,6 @@
 ---
-title: Strumento di sviluppo del calcolo delle risorse
-description: Asset Compute Development Tool è un cablaggio Web locale che consente agli sviluppatori di configurare ed eseguire i lavoratori Risorse per computer localmente, al di fuori del contesto dell’SDK AEM rispetto alle risorse Asset Compute di Adobe I/O Runtime.
+title: ' Strumento di sviluppo Asset compute'
+description: ' Asset compute Development Tool è un cablaggio Web locale che consente agli sviluppatori di configurare ed eseguire i lavoratori Risorse per computer localmente, al di fuori del contesto dell’SDK AEM rispetto alle risorse Asset compute  in Adobe I/O Runtime.'
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -18,48 +18,48 @@ ht-degree: 0%
 ---
 
 
-# Strumento di sviluppo del calcolo delle risorse
+#  Strumento di sviluppo Asset compute
 
-Asset Compute Development Tool è un cablaggio Web locale che consente agli sviluppatori di configurare ed eseguire i lavoratori Risorse per computer localmente, al di fuori del contesto dell’SDK AEM rispetto alle risorse Asset Compute di Adobe I/O Runtime.
+ Asset compute Development Tool è un cablaggio Web locale che consente agli sviluppatori di configurare ed eseguire i lavoratori Risorse per computer localmente, al di fuori del contesto dell’SDK AEM rispetto alle risorse Asset compute  in Adobe I/O Runtime.
 
-## Eseguire lo strumento di sviluppo del calcolo delle risorse
+## Eseguire lo strumento di sviluppo del Asset compute 
 
-Lo strumento di sviluppo del calcolo delle risorse può essere eseguito dalla radice del progetto Asset Compute tramite il comando terminale:
+Lo strumento di sviluppo Asset compute  può essere eseguito dalla radice del progetto di Asset compute  tramite il comando terminale:
 
 ```
 $ aio app run
 ```
 
-Questo attiverà lo strumento di sviluppo all&#39;indirizzo __http://localhost:9000__ e lo aprirà automaticamente in una finestra del browser. Affinché lo strumento di sviluppo possa essere eseguito, è necessario fornire [un devToolToken generato automaticamente e valido tramite un parametro](#troubleshooting__devtooltoken)di query.
+Verrà avviato lo strumento di sviluppo all&#39;indirizzo __http://localhost:9000__ e verrà automaticamente aperto in una finestra del browser. Affinché lo strumento di sviluppo possa essere eseguito, [è necessario fornire un elemento devToolToken generato automaticamente e valido tramite un parametro di query](#troubleshooting__devtooltoken).
 
-## Comprendere l’interfaccia Strumenti di sviluppo di calcolo risorse{#interface}
+## Informazioni sull&#39;interfaccia  Asset compute Development Tools{#interface}
 
-![Strumento di sviluppo del calcolo delle risorse](./assets/development-tool/asset-compute-dev-tool.png)
+![ Strumento di sviluppo Asset compute](./assets/development-tool/asset-compute-dev-tool.png)
 
 1. __File di origine:__ La selezione del file di origine viene utilizzata per:
-   + Selezionato il binario della risorsa che sarà il `source` binario passato al lavoratore Asset Compute
+   + Selezionato il binario della risorsa che sarà il binario `source` passato al lavoratore del Asset compute 
    + Caricare i file sorgente
-1. __Definizione dei profili di calcolo delle risorse:__ Definisce il lavoratore Asset Compute da eseguire, compresi i parametri: incluso il punto finale dell&#39;URL del lavoratore, il nome della rappresentazione risultante ed eventuali parametri
-1. __Esegui:__ Il pulsante Esegui esegue il profilo di calcolo delle risorse come definito nell’editor del profilo di configurazione di Asset Compute
-1. __Interrompi:__ Il pulsante Interrompi annulla un&#39;esecuzione avviata toccando il pulsante Esegui
-1. __Richiesta/Risposta:__ Fornisce la richiesta HTTP e la risposta a/da Asset Compute Worker in esecuzione in Adobe I/O Runtime. Può essere utile per il debug
-1. __Registri di attivazione:__ Registri che descrivono l&#39;esecuzione del lavoratore di calcolo delle risorse, con eventuali errori. Queste informazioni sono disponibili anche nella `aio app run` versione standard
-1. __Rappresentazioni:__ Visualizza tutte le rappresentazioni generate dall&#39;esecuzione del lavoratore Asset Compute
-1. __parametro di query devToolToken:__ Il token dello strumento di sviluppo di elaborazione risorse richiede la presenza di un parametro di `devToolToken` query valido. Questo token viene generato automaticamente ogni volta che viene visualizzato un nuovo strumento di sviluppo
+1. __definizione dei profili di Asset compute:__ Definisce il lavoratore del Asset compute  da eseguire, compresi i parametri: incluso il punto finale dell&#39;URL del lavoratore, il nome della rappresentazione risultante ed eventuali parametri
+1. __Esecuzione:__ Il pulsante Esegui esegue il profilo del Asset compute  come definito nell&#39;editor del profilo di configurazione del Asset compute
+1. __Interrompi:__ il pulsante Interrompi annulla un&#39;esecuzione avviata toccando il pulsante Esegui
+1. __Richiesta/Risposta:__ Fornisce la richiesta HTTP e la risposta a/dal lavoratore del Asset compute  in esecuzione in Adobe I/O Runtime. Può essere utile per il debug
+1. __Registri di attivazione:__ i registri che descrivono l&#39;esecuzione del lavoratore del Asset compute , con eventuali errori. Queste informazioni sono disponibili anche nella versione `aio app run` standard
+1. __Rappresentazioni:__ visualizza tutte le rappresentazioni generate dall&#39;esecuzione del lavoratore del Asset compute
+1. __parametro di query devToolToken:__ il token dello strumento di sviluppo Asset compute  richiede la presenza di un parametro di  `devToolToken` query valido. Questo token viene generato automaticamente ogni volta che viene visualizzato un nuovo strumento di sviluppo
 
 ### Eseguire un lavoratore personalizzato
 
 >[!VIDEO](https://video.tv.adobe.com/v/40241?quality=12&learn=on)
 
-_Click-through dell’esecuzione di un lavoro di elaborazione risorse in Strumento di sviluppo (nessun audio)_
+_Click-through dell&#39;esecuzione di un lavoro Asset compute  in Strumento di sviluppo (nessun audio)_
 
-1. Assicurarsi che Asset Compute Development Tool sia avviato dalla directory principale del progetto utilizzando il `aio app run` comando.
-1. Nello strumento di sviluppo del calcolo delle risorse, caricate o selezionate un file immagine [di esempio](../assets/samples/sample-file.jpg)
-   + Verificare che il file sia selezionato nel menu a discesa del file ____ di origine
-1. Esaminare l&#39;area di testo della definizione __del profilo di calcolo della__ risorsa
-   + La `worker` chiave definisce l&#39;URL del lavoratore Asset Compute distribuito
-   + La `name` chiave definisce il nome della rappresentazione da generare
-   + In questo oggetto JSON possono essere fornite altre chiavi/valori e saranno disponibili nel lavoratore sotto l&#39; `rendition.instructions` oggetto
+1. Assicurarsi che  Strumento di sviluppo Asset compute sia avviato dalla directory principale del progetto utilizzando il comando `aio app run`.
+1. In  Asset compute Development Tool, caricate o selezionate un file di immagine di esempio [](../assets/samples/sample-file.jpg)
+   + Assicurarsi che il file sia selezionato nel menu a discesa __File di origine__
+1. Rivedete l&#39;area di testo __definizione del profilo di Asset compute__
+   + La chiave `worker` definisce l&#39;URL del lavoratore del Asset compute  distribuito
+   + La chiave `name` definisce il nome della rappresentazione da generare
+   + In questo oggetto JSON è possibile fornire altre chiavi/valori e sarà disponibile nel processo di lavoro sotto l&#39;oggetto `rendition.instructions`
       + È possibile aggiungere valori per `size`, `contrast` e `brightness`:
 
          ```json
@@ -76,8 +76,8 @@ _Click-through dell’esecuzione di un lavoro di elaborazione risorse in Strumen
          }
          ```
 
-1. Tap the __Run__ button
-1. La sezione ____ Rappresentazioni verrà compilata con un segnaposto per la rappresentazione
+1. Toccate il pulsante __Esegui__
+1. La sezione __Rappresentazioni__ verrà compilata con un segnaposto per la rappresentazione
 1. Una volta completato il lavoratore, il segnaposto della rappresentazione visualizzerà la rappresentazione generata
 
 Se si apporta modifiche al codice del lavoratore mentre è in esecuzione lo strumento di sviluppo, le modifiche verranno implementate a caldo. La &quot;distribuzione a caldo&quot; richiede diversi secondi, pertanto l&#39;implementazione può essere completata prima di eseguire nuovamente il lavoratore da Development Tool.
