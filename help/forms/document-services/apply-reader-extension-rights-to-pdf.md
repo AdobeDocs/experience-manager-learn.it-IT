@@ -22,7 +22,7 @@ ht-degree: 0%
 # Applicazione delle estensioni di Reader
 
 Estensioni Reader consente di manipolare i diritti di utilizzo sui documenti PDF. I diritti di utilizzo si riferiscono alle funzionalità disponibili in  Acrobat ma non in  Adobe Reader. La funzionalità controllata da Estensioni di Reader include la possibilità di aggiungere commenti a un documento, compilare moduli e salvare il documento. I documenti PDF ai quali sono stati aggiunti diritti di utilizzo sono denominati documenti con diritti di utilizzo. Un utente che apre un documento PDF con diritti in  Adobe Reader può eseguire le operazioni abilitate per tale documento.
-Per verificare questa funzionalità, puoi provare questo [collegamento](https://forms.enablementadobe.com/content/samples/samples.html?query=0). Il nome di esempio è &quot;Rendering XDP con RE&quot;
+Per verificare questa funzionalità, provare questo [collegamento](https://forms.enablementadobe.com/content/samples/samples.html?query=0). Il nome di esempio è &quot;Rendering XDP con RE&quot;
 
 Per eseguire questo caso di utilizzo, è necessario effettuare le seguenti operazioni:
 * Aggiungete il certificato delle estensioni di Reader all&#39;utente &quot;fd-service&quot;. I passaggi per aggiungere le credenziali delle estensioni di Reader sono elencati [qui](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)
@@ -71,7 +71,7 @@ public Document applyUsageRights(Document pdfDocument,UsageRights usageRights) {
 
 Il passaggio successivo consiste nel creare un servlet con un metodo POST per restituire all’utente il PDF esteso del lettore. In questo caso, all&#39;utente verrà chiesto di salvare il PDF nel proprio file system. Questo perché il PDF viene rappresentato come PDF dinamico e i visualizzatori PDF forniti con i browser non gestiscono i PDF dinamici.
 
-Di seguito è riportato il codice per il servlet. Il servlet viene richiamato dall&#39;azione **customsubmit** del modulo adattivo.
+Di seguito è riportato il codice per il servlet. Il servlet verrà richiamato dall&#39;azione **customsubmit** del modulo adattivo.
 Servlet crea l&#39;oggetto UsageRights e le imposta le proprietà in base ai valori immessi dall&#39;utente nel modulo adattivo. Il servlet chiama quindi il metodo **applyUsageRights** del servizio creato a questo scopo.
 
 ```java
@@ -191,7 +191,7 @@ try {
 
 Per eseguire il test sul server locale, procedere come segue:
 1. [Download e installazione del pacchetto DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [Scaricate e installate il pacchetto](assets/ares.ares.core-ares.jar)ares.ares.core-ares. Questo include il servizio personalizzato e il servlet per applicare i diritti di utilizzo e riprodurre in streaming il pdf
+1. [Scaricate e installate il pacchetto](assets/ares.ares.core-ares.jar) ares.ares.core-ares. Questo include il servizio personalizzato e il servlet per applicare i diritti di utilizzo e riprodurre in streaming il pdf
 1. [Importare le librerie client e l&#39;invio personalizzato](assets/applyaresdemo.zip)
 1. [Importare il modulo adattivo](assets/applyaresform.zip)
 1. Aggiungi certificato di estensione Reader a utente &quot;servizio fd&quot;
