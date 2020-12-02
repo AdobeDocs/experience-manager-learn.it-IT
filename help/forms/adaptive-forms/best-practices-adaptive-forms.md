@@ -33,10 +33,10 @@ I moduli Adobe Experience Manager (AEM) consentono di trasformare transazioni co
    * I nomi possono contenere lettere, cifre, caratteri di sottolineatura e simboli di dollaro.
    * I nomi devono iniziare con una lettera
    * I nomi sono sensibili alle maiuscole/minuscole
-   * Le parole riservate (come le parole chiave JavaScript) non possono essere utilizzate come nomi. Attenzione alle altre parole riservate specifiche per AF, ad esempio &quot;panel&quot;, &quot;name&quot;.
+   * Le parole riservate (come le parole chiave JavaScript) non possono essere utilizzate come nomi. Attenzione alle altre parole riservate specifiche AF, ad esempio   come &quot;panel&quot;, &quot;name&quot;.
    * Non includete trattini &quot;-&quot; nei vostri nomi
 * **Sviluppo di Forms**
-   * Durante lo sviluppo di moduli di grandi dimensioni è necessario tenere in considerazione i frammenti di modulo. Caricamento dei frammenti di modulo lento per tempi di caricamento più rapidi
+   * Durante lo sviluppo di moduli di grandi dimensioni è necessario tenere in considerazione i frammenti di modulo. Caricamento lento dei frammenti di modulo per un caricamento più rapido   time
    * **DataModel**
       * È consigliabile associare il modulo adattivo al modello dati appropriato
    * **Eventi oggetto**
