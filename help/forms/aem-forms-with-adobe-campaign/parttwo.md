@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Creazione di un profilo campagna per l&#39;invio di moduli adattivi {#creating-campaign-profile-on-adaptive-form-submission}
+# Creazione di un profilo campagna per l&#39;invio del modulo adattivo {#creating-campaign-profile-on-adaptive-form-submission}
 
 Questo articolo illustra i passaggi necessari per creare un profilo in  Adobe Campaign Standard per l’invio di un modulo adattivo. Questo processo utilizza il meccanismo di invio personalizzato per gestire l&#39;invio del modulo adattivo.
 
@@ -245,11 +245,11 @@ return null;
 }
 ```
 
-## Custom Submit {#custom-submit}
+## Invio personalizzato {#custom-submit}
 
 Creare un gestore di invio personalizzato per gestire l&#39;invio del modulo adattivo. In questo handler di invio personalizzato effettueremo una chiamata al metodo createProfile di CampaignService. Il metodo createProfile accetta un oggetto JSONObject che rappresenta il profilo da creare.
 
-Per ulteriori informazioni sul gestore di invio personalizzato in  AEM Forms, seguire questo [collegamento](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
+Per saperne di più sul gestore di invio personalizzato in  AEM Forms, seguire questo [link](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
 
 Di seguito è riportato il codice nell&#39;invio personalizzato
 
@@ -270,7 +270,7 @@ Una volta definiti il servizio e l&#39;azione di invio personalizzata, siamo pro
 
 
 * [Accertatevi di aver seguito i passaggi descritti qui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Importa modulo adattivo e gestore di invio personalizzato utilizzando il gestore](assets/create-acs-profile-on-af-submission.zip)pacchetti. Questo pacchetto contiene un modulo adattivo configurato per l&#39;invio a un&#39;azione di invio personalizzata.
-* Preview the [form](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
+* [Importa modulo adattivo e gestore di invio personalizzato utilizzando il gestore](assets/create-acs-profile-on-af-submission.zip) pacchetti. Questo pacchetto contiene un modulo adattivo configurato per l&#39;invio a un&#39;azione di invio personalizzata.
+* Visualizzare l&#39;anteprima del [modulo](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
 * Compilare tutti i campi e inviare
 * Verrà creato un nuovo profilo nell&#39;istanza ACS
