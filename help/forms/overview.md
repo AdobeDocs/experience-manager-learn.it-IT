@@ -58,7 +58,7 @@ Adobe Experience Manager (AEM) offre una soluzione semplice per creare, gestire,
     </a>
     </div>
     <p>
-    <em>Le comunicazioni interattive centralizzano e gestiscono la creazione, l'assemblaggio e la distribuzione di corrispondenze sicure, personalizzate e interattive quali corrispondenza aziendale, documenti, dichiarazioni, note sui benefit, e-mail di marketing, fatture e kit di benvenuto. </em>
+    <em>Le comunicazioni interattive centralizzano e gestiscono la creazione, l'assemblaggio e la distribuzione di corrispondenze sicure, personalizzate e interattive quali corrispondenza aziendale, documenti, dichiarazioni, note sui benefit, e-mail di marketing, fatture e kit di benvenuto.  </em>
     <p>
   </td>
   <td>
@@ -79,12 +79,12 @@ Adobe Experience Manager (AEM) offre una soluzione semplice per creare, gestire,
 
 ## Risorse aggiuntive
 
-* [Experience League - Esplora AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [ Experience League - Esplora AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [Documentazione sull’authoring  AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
 * [Documentazione sullo sviluppo di  AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
 * [Documentazione  di amministrazione AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
 * [Documentazione  distribuzione AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
-* [Tutorial di AEM as a Cloud Service](/help/cloud-service/overview.md)
+* [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutorial di AEM Assets](/help/assets/overview.md)
 * [Tutorial di AEM Forms](/help/forms/overview.md)
 * [Tutorial di AEM Foundation](/help/foundation/overview.md)
