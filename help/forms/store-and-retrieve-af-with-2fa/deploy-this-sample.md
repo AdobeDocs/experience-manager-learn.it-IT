@@ -29,7 +29,7 @@ Per fare in modo che questo caso d&#39;uso funzioni sul vostro sistema, seguite 
 
 ## Crea database
 
-Questo esempio utilizza il database MySQL per memorizzare i dati del modulo adattivo. Sarà necessario creare lo schema del [database importando il file](assets/data-base-schema.sql) dello schema nel workbench MySQL.
+Questo esempio utilizza il database MySQL per memorizzare i dati del modulo adattivo. Sarà necessario creare lo schema di database [importando il file di schema](assets/data-base-schema.sql) in Workbench MySQL.
 
 ## Crea origine dati
 
@@ -37,7 +37,7 @@ Questo esempio utilizza il database MySQL per memorizzare i dati del modulo adat
 
 ## Crea modello dati modulo
 
-È necessario creare il modello dati modulo in base a questa origine dati denominata **StoreAndRetrieveAfData**. Questo modello di dati del modulo viene utilizzato per recuperare il numero di telefono cellulare associato all&#39;ID applicazione. È possibile [scaricare il modello dati del modulo da qui.](assets/2-Factor-Authentication-DataSource-and-FDM.zip)
+È necessario creare il modello dati del modulo in base a questa origine dati denominata **StoreAndRetrieveAfData**. Questo modello di dati del modulo viene utilizzato per recuperare il numero di telefono cellulare associato all&#39;ID applicazione. Il modello dati modulo può essere [scaricato da qui.](assets/2-Factor-Authentication-DataSource-and-FDM.zip)
 
 ## Creazione di un account sviluppatore con
 
@@ -45,25 +45,27 @@ Create un account sviluppatore con [Nexmo](https://dashboard.nexmo.com/) per l&#
 
 ## Distribuzione dei seguenti bundle OSGi
 
-Distribuire il bundle contenente il [codice per memorizzare e recuperare i dati dal database](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)Distribuire il pacchetto [DevelopingWithServiceUser](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
+Distribuire il bundle con il codice [per memorizzare e recuperare i dati dal database](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)
+Distribuire il pacchetto [DevelopingWithServiceUser](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
 
 ## Distribuzione della libreria client
 
-Nell&#39;esempio vengono utilizzate 2 librerie client. Importa queste librerie [](assets/client-libraries.zip) client in AEM.
+Nell&#39;esempio vengono utilizzate 2 librerie client. Importa queste [librerie client](assets/client-libraries.zip) in AEM.
 
 ## Importare il modello di modulo adattivo personalizzato
 
-I moduli di esempio utilizzati in questa demo si basano su un modello personalizzato. Importare il modello [personalizzato in AEM](assets/custom-template-with-page-component.zip)
+I moduli di esempio utilizzati in questa demo si basano su un modello personalizzato. Importa il modello personalizzato [in AEM](assets/custom-template-with-page-component.zip)
 
 ## Importare i moduli adattivi di esempio
 
 È necessario importare in AEM i due moduli che compongono questo esempio. I moduli di esempio possono essere [scaricati da qui](assets/sample-forms.zip)
 
-Open the [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) in edit mode. Specificate i valori Chiave API e Segreto API nei campi appropriati del modulo adattivo.
+Aprire il modulo [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) in modalità di modifica. Specificate i valori Chiave API e Segreto API nei campi appropriati del modulo adattivo.
 
 ## Verificare la soluzione
 
-Visualizza in anteprima [StoreAFWithAttachments](http://localhost:4502/content/dam/formsanddocuments/storeafwithattachments/jcr:content?wcmmode=disabled)Inserisci il numero di cellulare incluso il codice del paese, compila i tuoi dettagli utente e aggiungi alcuni allegati. Fare clic sul pulsante &quot;Salva ed esci&quot; per salvare il modulo adattivo e i relativi allegati
+Visualizzare l&#39;anteprima di [StoreAFWithAttachments](http://localhost:4502/content/dam/formsanddocuments/storeafwithattachments/jcr:content?wcmmode=disabled)
+Inserisci il tuo numero di cellulare incluso il codice del paese, compila i tuoi dettagli utente e aggiungi alcuni allegati. Fare clic sul pulsante &quot;Salva ed esci&quot; per salvare il modulo adattivo e i relativi allegati
 
 
 ## Dimostrazione del caso di utilizzo
