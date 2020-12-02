@@ -1,6 +1,6 @@
 ---
-title: Integrazione di un'area SPA | Guida introduttiva all'editor SPA AEM e Angular
-description: Scoprite come il codice sorgente per un’applicazione SPA (Single Page Application) scritta in Angular può essere integrato con un progetto Adobe Experience Manager (AEM). Scopri come utilizzare i moderni strumenti front-end, come lo strumento CLI di Angular, per sviluppare rapidamente l'SPA rispetto all'API AEM modello JSON.
+title: Integrare un SPA | Guida introduttiva all'editor SPA AEM e Angular
+description: Scoprite come il codice sorgente per un’applicazione a pagina singola (SPA) scritta in Angolare può essere integrato con un progetto Adobe Experience Manager (AEM). Scopri come utilizzare i moderni strumenti front-end, come lo strumento CLI di Angular, per sviluppare rapidamente il SPA rispetto all'API del modello AEM JSON.
 sub-product: sites
 feature: SPA Editor
 topics: development
@@ -19,9 +19,9 @@ ht-degree: 0%
 ---
 
 
-# Integrazione di un&#39;area SPA {#integrate-spa}
+# Integrare un SPA {#integrate-spa}
 
-Scoprite come il codice sorgente per un’applicazione SPA (Single Page Application) scritta in Angular può essere integrato con un progetto Adobe Experience Manager (AEM). Scoprite come utilizzare i moderni strumenti front-end, come un server di sviluppo webpack, per sviluppare rapidamente l&#39;SPA rispetto all&#39;API AEM modello JSON.
+Scoprite come il codice sorgente per un’applicazione a pagina singola (SPA) scritta in Angolare può essere integrato con un progetto Adobe Experience Manager (AEM). Scoprite come utilizzare i moderni strumenti front-end, come un server di sviluppo webpack, per sviluppare rapidamente il SPA rispetto all&#39;API del modello AEM JSON.
 
 ## Obiettivo
 
@@ -31,15 +31,15 @@ Scoprite come il codice sorgente per un’applicazione SPA (Single Page Applicat
 
 ## Cosa verrà creato
 
-In questo capitolo verrà aggiunto un semplice `Header` componente all&#39;area di protezione. Nel processo di costruzione di questo `Header` componente statico saranno utilizzati diversi approcci allo sviluppo AEM SPA.
+In questo capitolo verrà aggiunto un semplice componente `Header` al SPA. Nel processo di creazione di questo componente statico `Header` verranno utilizzati diversi approcci per AEM sviluppo SPA.
 
 ![Nuova intestazione in AEM](./assets/integrate-spa/final-header-component.png)
 
-*L’area SPA è estesa per aggiungere un`Header`componente statico*
+*Il SPA è esteso per aggiungere un  `Header` componente statico*
 
 ## Prerequisiti
 
-Esaminare le istruzioni e gli strumenti necessari per configurare un ambiente [di sviluppo](overview.md#local-dev-environment)locale.
+Esaminare le istruzioni e gli strumenti necessari per configurare un ambiente di sviluppo locale [](overview.md#local-dev-environment).
 
 ### Ottenere il codice
 
@@ -57,7 +57,7 @@ Esaminare le istruzioni e gli strumenti necessari per configurare un ambiente [d
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-   Se utilizzate [AEM 6.x](overview.md#compatibility) , aggiungete il `classic` profilo:
+   Se si utilizza [AEM 6.x](overview.md#compatibility) aggiungere il profilo `classic`:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
@@ -69,25 +69,25 @@ Esaminare le istruzioni e gli strumenti necessari per configurare un ambiente [d
 
 Nel progetto AEM sono stati creati due moduli: `ui.apps` e `ui.frontend`.
 
-Il `ui.frontend` modulo è un progetto [webpack](https://webpack.js.org/) che contiene tutto il codice sorgente SPA. La maggior parte delle attività di sviluppo e test SPA sarà realizzata nel progetto webpack. Quando viene attivata una build di produzione, l&#39;SPA viene creata e compilata utilizzando il webpack. Gli artifact compilati (CSS e Javascript) vengono copiati nel `ui.apps` modulo che viene quindi distribuito al runtime AEM.
+Il modulo `ui.frontend` è un progetto [webpack](https://webpack.js.org/) che contiene tutto il codice sorgente SPA. La maggior parte dello sviluppo SPA e dei test sarà fatto nel progetto webpack. Quando viene attivata una build di produzione, la SPA viene creata e compilata utilizzando il webpack. Gli artifact compilati (CSS e Javascript) vengono copiati nel modulo `ui.apps` che viene quindi distribuito nel runtime AEM.
 
 ![architettura di alto livello ui.frontend](assets/integrate-spa/ui-frontend-architecture.png)
 
 *Una rappresentazione di alto livello dell&#39;integrazione SPA.*
 
-Ulteriori informazioni sulla build Front-end sono [disponibili qui](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
+Ulteriori informazioni sulla build front-end sono disponibili [qui](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
 
-##  l&#39;integrazione SPA di Inspect {#inspect-spa-integration}
+##  Inspect l&#39;integrazione SPA {#inspect-spa-integration}
 
-Quindi, ispezionate il `ui.frontend` modulo per comprendere la SPA generata automaticamente dal [AEM archetipo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html)del progetto.
+Quindi, ispezionare il modulo `ui.frontend` per comprendere il SPA generato automaticamente dal [AEM Project archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
 
-1. Nell’IDE di vostra scelta, aprite il progetto AEM per l’area SPA WKND. Questa esercitazione utilizzerà l&#39;IDE [di codice di](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)Visual Studio.
+1. Nell’IDE di vostra scelta, aprite il progetto AEM per il SPA WKND. Questa esercitazione utilizza il codice [Visual Studio Code IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
    ![VSCode - AEM progetto SPA WKND](./assets/integrate-spa/vscode-ide-openproject.png)
 
-2. Espandete e ispezionate la `ui.frontend` cartella. Aprire il file `ui.frontend/package.json`
+2. Espandete ed esaminate la cartella `ui.frontend`. Aprire il file `ui.frontend/package.json`
 
-3. Sotto la sezione `dependencies` dovrebbero essere visualizzate diverse informazioni correlate a `@angular`:
+3. Sotto `dependencies` dovrebbero essere visualizzate diverse informazioni relative a `@angular`:
 
    ```json
    "@angular/animations": "~9.1.11",
@@ -100,7 +100,7 @@ Quindi, ispezionate il `ui.frontend` modulo per comprendere la SPA generata auto
    "@angular/router": "~9.1.10",
    ```
 
-   Il `ui.frontend` modulo è un&#39;applicazione [](https://angular.io) angolare generata utilizzando lo strumento [CLI](https://angular.io/cli) angolare che include il routing.
+   Il modulo `ui.frontend` è un [applicazione angolare](https://angular.io) generata utilizzando lo [strumento CLI angolare](https://angular.io/cli) che include il routing.
 
 4. Sono inoltre presenti tre dipendenze con il prefisso `@adobe`:
 
@@ -110,9 +110,9 @@ Quindi, ispezionate il `ui.frontend` modulo per comprendere la SPA generata auto
    "@adobe/cq-spa-page-model-manager": "^1.1.3",
    ```
 
-   I moduli di cui sopra costituiscono l’SDK [JS di](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-blueprint.html) AEM SPA Editor e forniscono le funzionalità necessarie per la mappatura dei componenti SPA su AEM componenti.
+   I moduli di cui sopra costituiscono l&#39; [AEM SPA Editor JS SDK](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-blueprint.html) e forniscono le funzionalità necessarie per la mappatura SPA Componenti su AEM Componenti.
 
-5. Nel `package.json` file `scripts` sono definiti diversi elementi:
+5. Nel file `package.json` sono definiti diversi `scripts`:
 
    ```json
    "scripts": {
@@ -124,17 +124,17 @@ Quindi, ispezionate il `ui.frontend` modulo per comprendere la SPA generata auto
    }
    ```
 
-   Questi script sono basati su comandi [CLI](https://angular.io/cli/build) angolare comuni, ma sono stati leggermente modificati per lavorare con il progetto AEM più grande.
+   Questi script si basano su comandi [CLI angolare](https://angular.io/cli/build) comuni, ma sono stati leggermente modificati per lavorare con il progetto AEM più grande.
 
    `start` - esegue l&#39;app Angular localmente utilizzando un server Web locale. È stato aggiornato per il proxy del contenuto dell&#39;istanza AEM locale.
 
-   `build` - compila l&#39;app Angular per la distribuzione di produzione. L&#39;aggiunta di `&& clientlib` è responsabile della copia dell&#39;SPA compilata nel `ui.apps` modulo come libreria lato client durante una build. Il modulo npm [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) è utilizzato per facilitare questo.
+   `build` - compila l&#39;app Angular per la distribuzione di produzione. L&#39;aggiunta di `&& clientlib` è responsabile della copia del SPA compilato nel modulo `ui.apps` come libreria lato client durante una build. Il modulo npm [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) è utilizzato per facilitare questo processo.
 
-   More details about the available scripts can be found [here](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
+   Per ulteriori dettagli sugli script disponibili, vedere [qui](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
 
-6.  Inspect il file `ui.frontend/clientlib.config.js`. Questo file di configurazione viene utilizzato da [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) per determinare come generare la libreria client.
+6.  Inspect il file `ui.frontend/clientlib.config.js`. Questo file di configurazione è utilizzato da [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) per determinare come generare la libreria client.
 
-7.  Inspect il file `ui.frontend/pom.xml`. Questo file trasforma la `ui.frontend` cartella in un modulo [](http://maven.apache.org/guides/mini/guide-multiple-modules.html)Paradiso. Il `pom.xml` file è stato aggiornato per utilizzare il plugin [frontend-maven](https://github.com/eirslett/frontend-maven-plugin) per **testare** e **costruire** l&#39;SPA durante una build Maven.
+7.  Inspect il file `ui.frontend/pom.xml`. Questo file trasforma la cartella `ui.frontend` in un [modulo Paradiso](http://maven.apache.org/guides/mini/guide-multiple-modules.html). Il file `pom.xml` è stato aggiornato per utilizzare il [front-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) a **test** e **build** il SPA durante una build Maven.
 
 8.  Inspect il file `app.component.ts` in `ui.frontend/src/app/app.component.ts`:
 
@@ -163,19 +163,19 @@ Quindi, ispezionate il `ui.frontend` modulo per comprendere la SPA generata auto
    }
    ```
 
-   `app.component.js` è il punto di ingresso della SPA. `ModelManager` è fornito dall’SDK JS AEM SPA Editor. È responsabile della chiamata e dell&#39;inserimento del `pageModel` (il contenuto JSON) nell&#39;applicazione.
+   `app.component.js` è il punto di ingresso del SPA. `ModelManager` è fornito dall’SDK JS dell’editor SPA AEM. È responsabile della chiamata e dell&#39;invio di `pageModel` (il contenuto JSON) nell&#39;applicazione.
 
 ## Aggiunta di un componente Intestazione {#header-component}
 
-Quindi, aggiungete un nuovo componente all’area di protezione e distribuite le modifiche a un’istanza AEM locale per visualizzare l’integrazione.
+Quindi, aggiungete un nuovo componente al SPA e distribuite le modifiche a un’istanza AEM locale per visualizzare l’integrazione.
 
-1. Aprite una nuova finestra del terminale e passate alla `ui.frontend` cartella:
+1. Apri una nuova finestra del terminale e passa alla cartella `ui.frontend`:
 
    ```shell
    $ cd aem-guides-wknd-spa/ui.frontend
    ```
 
-2. Installare [Angular CLI](https://angular.io/cli#installing-angular-cli) a livello globale Questo viene utilizzato per generare componenti Angular e per creare e servire l&#39;applicazione Angular tramite il comando **ng** .
+2. Installare [CLI angolare](https://angular.io/cli#installing-angular-cli) globalmente Questo viene utilizzato per generare componenti Angular e per creare e servire l&#39;applicazione Angular tramite il comando **ng**.
 
    ```shell
    $ npm install -g @angular/cli
@@ -185,7 +185,7 @@ Quindi, aggiungete un nuovo componente all’area di protezione e distribuite le
    >
    > La versione di **@angular/cli** utilizzata da questo progetto è **9.1.7**. Si consiglia di mantenere sincronizzate le versioni CLI angolare.
 
-3. Crea un nuovo `Header` componente eseguendo il comando CLI angolare `ng generate component` dall’interno della `ui.frontend` cartella.
+3. Create un nuovo componente `Header` eseguendo il comando CLI angolare `ng generate component` dall&#39;interno della cartella `ui.frontend`.
 
    ```shell
    $ ng generate component components/header
@@ -199,7 +199,7 @@ Quindi, aggiungete un nuovo componente all’area di protezione e distribuite le
 
    In questo modo verrà creato uno scheletro per il nuovo componente Intestazione angolare in `ui.frontend/src/app/components/header`.
 
-4. Apri il `aem-guides-wknd-spa` progetto nell’IDE desiderato. Passate alla `ui.frontend/src/app/components/header` cartella.
+4. Apri il progetto `aem-guides-wknd-spa` nell&#39;IDE di tua scelta. Andate alla cartella `ui.frontend/src/app/components/header`.
 
    ![Percorso componente intestazione nell’IDE](assets/integrate-spa/header-component-path.png)
 
@@ -216,16 +216,16 @@ Quindi, aggiungete un nuovo componente all’area di protezione e distribuite le
 
    Notate che viene visualizzato contenuto statico, pertanto questo componente Angular non richiede alcuna regolazione per il contenuto generato predefinito `header.component.ts`.
 
-6. Apri il file **app.component.html** in `ui.frontend/src/app/app.component.html`. Aggiungete `app-header`:
+6. Apri il file **app.component.html** in `ui.frontend/src/app/app.component.html`. Aggiungete il simbolo `app-header`:
 
    ```html
    <app-header></app-header>
    <router-outlet></router-outlet>
    ```
 
-   Questo include il `header` componente al di sopra di tutto il contenuto della pagina.
+   Questo includerà il componente `header` sopra tutto il contenuto della pagina.
 
-7. Aprite un nuovo terminale, individuate la `ui.frontend` cartella ed eseguite il `npm run build` comando:
+7. Aprite un nuovo terminale e accedete alla cartella `ui.frontend`, quindi eseguite il comando `npm run build`:
 
    ```shell
    $ cd ui.frontend
@@ -237,11 +237,11 @@ Quindi, aggiungete un nuovo componente all’area di protezione e distribuite le
    ES5 bundle generation complete.
    ```
 
-8. Passate alla `ui.apps` cartella. Sotto di `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/clientlibs/clientlib-angular` seguito dovresti vedere che i file SPA compilati sono stati copiati dalla`ui.frontend/build` cartella.
+8. Andate alla cartella `ui.apps`. Sotto `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/clientlibs/clientlib-angular` è possibile vedere i file SPA compilati copiati dalla cartella`ui.frontend/build`.
 
    ![Libreria client generata in ui.apps](assets/integrate-spa/compiled-spa-uiapps.png)
 
-9. Tornate al terminale e individuate la `ui.apps` cartella. Eseguite il seguente comando Maven:
+9. Tornate al terminale e individuate la cartella `ui.apps`. Eseguite il seguente comando Maven:
 
    ```shell
    $ cd ../ui.apps
@@ -255,21 +255,21 @@ Quindi, aggiungete un nuovo componente all’area di protezione e distribuite le
    [INFO] ------------------------------------------------------------------------
    ```
 
-   Questo distribuirà il `ui.apps` pacchetto in un&#39;istanza locale in esecuzione di AEM.
+   Questo distribuirà il pacchetto `ui.apps` in un&#39;istanza locale in esecuzione di AEM.
 
-10. Aprite una scheda del browser e andate a [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). È ora possibile visualizzare il contenuto del `Header` componente nell’area di protezione.
+10. Aprite una scheda del browser e andate a [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). È ora necessario visualizzare il contenuto del componente `Header` nel SPA.
 
    ![Implementazione intestazione iniziale](assets/integrate-spa/initial-header-implementation.png)
 
-   I passaggi **7-9** vengono eseguiti automaticamente quando si attiva una build Maven dalla radice del progetto (ovvero `mvn clean install -PautoInstallSinglePackage`). È ora necessario comprendere le basi dell&#39;integrazione tra SPA e AEM librerie lato client. È comunque possibile modificare e aggiungere `Text` componenti in AEM, ma il `Header` componente non è modificabile.
+   I passaggi **7-9** vengono eseguiti automaticamente quando si attiva una build Maven dalla radice del progetto (ovvero `mvn clean install -PautoInstallSinglePackage`). È ora necessario comprendere le basi dell&#39;integrazione tra le librerie lato SPA e AEM lato client. È comunque possibile modificare e aggiungere componenti `Text` in AEM, ma il componente `Header` non è modificabile.
 
 ## Webpack Dev Server - Proxy API JSON {#proxy-json}
 
 Come mostrato negli esercizi precedenti, l&#39;esecuzione di una build e la sincronizzazione della libreria client con un&#39;istanza locale di AEM richiede alcuni minuti. Questo è accettabile per il test finale, ma non è ideale per la maggior parte dello sviluppo SPA.
 
-Un server [di sviluppo](https://webpack.js.org/configuration/dev-server/) webpack può essere utilizzato per sviluppare rapidamente l&#39;SPA. La SPA è guidata da un modello JSON generato da AEM. In questo esercizio il contenuto JSON da un&#39;istanza in esecuzione di AEM verrà **proxy** nel server di sviluppo configurato dal progetto [](https://angular.io/guide/build)Angular.
+Per sviluppare rapidamente il SPA è possibile utilizzare un server di sviluppo per [webpack](https://webpack.js.org/configuration/dev-server/). Il SPA è guidato da un modello JSON generato da AEM. In questo esercizio il contenuto JSON da un&#39;istanza in esecuzione di AEM sarà **proxy** nel server di sviluppo configurato dal [progetto angolare](https://angular.io/guide/build).
 
-1. Tornate all&#39;IDE e aprite il file **proxy.conf.json** all&#39;indirizzo `ui.frontend/proxy.conf.json`.
+1. Tornare all&#39;IDE e aprire il file **proxy.conf.json** all&#39;indirizzo `ui.frontend/proxy.conf.json`.
 
    ```json
    [
@@ -285,17 +285,17 @@ Un server [di sviluppo](https://webpack.js.org/configuration/dev-server/) webpac
    ]
    ```
 
-   L&#39;app [](https://angular.io/guide/build#proxying-to-a-backend-server) Angular fornisce un meccanismo semplice per le richieste API proxy. I pattern specificati in `context` vengono proxy attraverso `localhost:4502`, il AEM rapido locale.
+   L&#39; [app angolare](https://angular.io/guide/build#proxying-to-a-backend-server) fornisce un meccanismo semplice per le richieste API proxy. I pattern specificati in `context` vengono proxy tramite `localhost:4502`, il AEM rapido locale.
 
-2. Aprite il file **index.html** in `ui.frontend/src/index.html`. Si tratta del file HTML principale utilizzato dal server di sviluppo.
+2. Aprire il file **index.html** in `ui.frontend/src/index.html`. Si tratta del file HTML principale utilizzato dal server di sviluppo.
 
-   Nota: è presente una voce per `base href="/"`. Il tag [](https://angular.io/guide/deployment#the-base-tag) base è fondamentale perché l&#39;app risolva gli URL relativi.
+   Nota: è presente una voce relativa a `base href="/"`. Il tag [base](https://angular.io/guide/deployment#the-base-tag) è fondamentale perché l&#39;app risolva gli URL relativi.
 
    ```html
    <base href="/">
    ```
 
-3. Aprite una finestra del terminale e passate alla `ui.frontend` cartella. Eseguire il comando `npm start`:
+3. Aprite una finestra del terminale e passate alla cartella `ui.frontend`. Eseguire il comando `npm start`:
 
    ```shell
    $ cd ui.frontend
@@ -317,8 +317,8 @@ Un server [di sviluppo](https://webpack.js.org/configuration/dev-server/) webpac
 
    Dovresti visualizzare lo stesso contenuto come in AEM, ma senza che nessuna delle funzionalità di authoring sia abilitata.
 
-5. Tornate all’IDE e create una nuova cartella denominata `img` in `ui.frontend/src/assets`.
-6. Scaricate e aggiungete il seguente logo WKND alla `img` cartella:
+5. Tornate all&#39;IDE e create una nuova cartella denominata `img` in `ui.frontend/src/assets`.
+6. Scaricate e aggiungete il seguente logo WKND alla cartella `img`:
 
    ![Logo WKND](./assets/integrate-spa/wknd-logo-dk.png)
 
@@ -334,21 +334,21 @@ Un server [di sviluppo](https://webpack.js.org/configuration/dev-server/) webpac
    </header>
    ```
 
-   Save the changes to **header.component.html**.
+   Salvare le modifiche in **header.component.html**.
 
 8. Tornate al browser. Dovresti vedere immediatamente le modifiche all&#39;app riflesse.
 
    ![Logo aggiunto all’intestazione](assets/integrate-spa/added-logo-localhost.png)
 
-   È possibile continuare a eseguire aggiornamenti di contenuto in **AEM** e visualizzarli visualizzati nel server **di sviluppo** webpack, dal momento che il contenuto viene proxy. Le modifiche al contenuto sono visibili solo nel server **di sviluppo** webpack.
+   È possibile continuare a eseguire aggiornamenti di contenuto in **AEM** e visualizzarli visualizzati nel server di sviluppo dei webpack **WebPack**, dal momento che il contenuto viene proxy. Le modifiche al contenuto sono visibili solo nel server di sviluppo **webpack**.
 
-9. Arrestate il server Web locale con `ctrl+c` il terminale.
+9. Arrestate il server Web locale con `ctrl+c` nel terminale.
 
-## Webpack Dev Server - API Mock JSON {#mock-json}
+## Webpack Dev Server - Mock JSON API {#mock-json}
 
 Un altro approccio al rapido sviluppo consiste nell&#39;utilizzare un file JSON statico per agire come modello JSON. &quot;prendendo in giro&quot; il JSON, rimuoviamo la dipendenza da un&#39;istanza AEM locale. Consente inoltre a uno sviluppatore front-end di aggiornare il modello JSON al fine di testare la funzionalità e di apportare modifiche all&#39;API JSON che sarebbe poi implementata da uno sviluppatore back-end.
 
-La configurazione iniziale del JSON fittizio non **richiede un&#39;istanza** AEM locale.
+L&#39;impostazione iniziale del JSON fittizio **richiede un&#39;istanza AEM locale**.
 
 1. Nel browser, andate a [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json).
 
@@ -363,11 +363,11 @@ La configurazione iniziale del JSON fittizio non **richiede un&#39;istanza** AEM
                |-- json
    ```
 
-3. Create a new file named **en.model.json** beneath `ui.frontend/public/mocks/json`. Incolla qui l&#39;output JSON dal **passaggio 1** .
+3. Create un nuovo file denominato **en.model.json** sotto `ui.frontend/public/mocks/json`. Incollate l&#39;output JSON da **Passo 1** qui.
 
    ![File Json modello Mock](assets/integrate-spa/mock-model-json-created.png)
 
-4. Create a new file **proxy.mock.conf.json** beneath `ui.frontend`. Compilate il file con le seguenti opzioni:
+4. Create un nuovo file **proxy.mock.conf.json** sotto `ui.frontend`. Compilate il file con le seguenti opzioni:
 
    ```json
    [
@@ -382,13 +382,13 @@ La configurazione iniziale del JSON fittizio non **richiede un&#39;istanza** AEM
    ]
    ```
 
-   Questa configurazione proxy riscrive le richieste che iniziano con `/content/wknd-spa-angular/us` e `/mocks/json` servono il file JSON statico corrispondente, ad esempio:
+   Questa configurazione proxy riscrive le richieste che iniziano con `/content/wknd-spa-angular/us` con `/mocks/json` e distribuiscono il file JSON statico corrispondente, ad esempio:
 
    ```plain
    /content/wknd-spa-angular/us/en.model.json -> /mocks/json/en.model.json
    ```
 
-5. Apri il file **angular.json**. Aggiungete una nuova configurazione **dev** con un array di **risorse** aggiornato per fare riferimento alla cartella **mocks** creata.
+5. Aprire il file **angular.json**. Aggiungete una nuova configurazione **dev** con un array **assets** aggiornato per fare riferimento alla cartella **mocks** creata.
 
    ```json
     "dev": {
@@ -405,9 +405,9 @@ La configurazione iniziale del JSON fittizio non **richiede un&#39;istanza** AEM
 
    ![Cartella di aggiornamento per le risorse per sviluppatori JSON angolare](assets/integrate-spa/dev-assets-update-folder.png)
 
-   La creazione di una configurazione **dev** dedicata garantisce che la cartella **mocks** venga utilizzata solo durante lo sviluppo e non venga mai distribuita per AEM in una build di produzione.
+   La creazione di una configurazione **dev** dedicata garantisce che la cartella **mocks** sia utilizzata solo durante lo sviluppo e non sia mai distribuita per AEM in una build di produzione.
 
-6. Nel file **angular.json** , aggiorna di nuovo la configurazione **browserTarget** per utilizzare la nuova configurazione **dev** :
+6. Nel file **angular.json**, aggiornare la configurazione **browserTarget** per utilizzare la nuova configurazione **dev**:
 
    ```diff
      ...
@@ -422,7 +422,7 @@ La configurazione iniziale del JSON fittizio non **richiede un&#39;istanza** AEM
 
    ![Angular JSON build dev update](assets/integrate-spa/angular-json-build-dev-update.png)
 
-7. Aprite il file `ui.frontend/package.json` e aggiungete un nuovo comando **start:mock** per fare riferimento al file **proxy.mock.conf.json** .
+7. Aprire il file `ui.frontend/package.json` e aggiungere un nuovo comando **start:mock** per fare riferimento al file **proxy.mock.conf.json**.
 
    ```diff
        "scripts": {
@@ -437,7 +437,7 @@ La configurazione iniziale del JSON fittizio non **richiede un&#39;istanza** AEM
 
    L&#39;aggiunta di un nuovo comando facilita l&#39;alternanza tra le configurazioni proxy.
 
-8. Se è in esecuzione, arrestare il server **di sviluppo** webpack. Avviate il server **di sviluppo** webpack utilizzando lo script **start:mock** :
+8. Se è in esecuzione, arrestare il server di sviluppo del **webpack**. Avviare il server di sviluppo dei webpack **webpack** utilizzando lo script **start:mock**:
 
    ```shell
    $ npm run start:mock
@@ -446,26 +446,26 @@ La configurazione iniziale del JSON fittizio non **richiede un&#39;istanza** AEM
    > ng serve --open --proxy-config ./proxy.mock.conf.json
    ```
 
-   Andate a [http://localhost:4200/content/wknd-spa-angular/us/en/home.html](http://localhost:4200/content/wknd-spa-angular/us/en/home.html) e dovreste visualizzare lo stesso SPA, ma il contenuto ora viene estratto dal file JSON **fittizio** .
+   Andate a [http://localhost:4200/content/wknd-spa-angular/us/en/home.html](http://localhost:4200/content/wknd-spa-angular/us/en/home.html) e dovreste vedere lo stesso SPA, ma il contenuto viene ora estratto dal file JSON **mock**.
 
-9. Apportate una piccola modifica al file **en.model.json** creato in precedenza. Il contenuto aggiornato deve riflettersi immediatamente nel server **di sviluppo** webpack.
+9. Apportate una piccola modifica al file **en.model.json** creato in precedenza. Il contenuto aggiornato deve riflettersi immediatamente nel server di sviluppo **webpack**.
 
    ![aggiornamento json modello](./assets/integrate-spa/webpack-mock-model.gif)
 
-   La possibilità di manipolare il modello JSON e visualizzare gli effetti su un&#39;app SPA live può aiutare uno sviluppatore a comprendere l&#39;API del modello JSON. Consente inoltre lo sviluppo front-end e back-end in parallelo.
+   La possibilità di manipolare il modello JSON e visualizzare gli effetti su un SPA live può aiutare uno sviluppatore a comprendere l&#39;API del modello JSON. Consente inoltre lo sviluppo front-end e back-end in parallelo.
 
 ## Aggiungi stili con ass
 
-Successivamente, al progetto verrà aggiunto uno stile aggiornato. Questo progetto aggiunge il supporto [Sass](https://sass-lang.com/) per alcune funzioni utili come le variabili.
+Successivamente, al progetto verrà aggiunto uno stile aggiornato. Questo progetto aggiungerà il supporto [Sass](https://sass-lang.com/) per alcune funzioni utili come le variabili.
 
-1. Aprire una finestra terminale e arrestare il server **di sviluppo** webpack se avviato. Dall’interno della `ui.frontend` cartella immettete il comando seguente per aggiornare l’app Angular ai file **.scss** .
+1. Aprire una finestra terminale e arrestare il server di sviluppo **webpack** se avviato. Dall&#39;interno della cartella `ui.frontend` immettete il comando seguente per aggiornare l&#39;app angolare per elaborare i file **.scss**.
 
    ```shell
    $ cd ui.frontend
    $ ng config schematics.@schematics/angular:component.styleext scss
    ```
 
-   Il `angular.json` file verrà aggiornato con una nuova voce nella parte inferiore del file:
+   Questo aggiornerà il file `angular.json` con una nuova voce nella parte inferiore del file:
 
    ```json
    "schematics": {
@@ -481,8 +481,8 @@ Successivamente, al progetto verrà aggiunto uno stile aggiornato. Questo proget
    $ npm install normalize-scss --save
    ```
 
-3. Tornate all’IDE e `ui.frontend/src` create una nuova cartella denominata `styles`.
-4. Create un nuovo file sotto `ui.frontend/src/styles` nome `_variables.scss` e compilatelo con le seguenti variabili:
+3. Tornate all&#39;IDE e, sotto `ui.frontend/src`, create una nuova cartella denominata `styles`.
+4. Create un nuovo file sotto `ui.frontend/src/styles` denominato `_variables.scss` e compilatelo con le seguenti variabili:
 
    ```scss
    //_variables.scss
@@ -527,7 +527,7 @@ Successivamente, al progetto verrà aggiunto uno stile aggiornato. Questo proget
    $gutter-padding: 12px;
    ```
 
-5. Rinominare l&#39;estensione del file **Styles.css** in corrispondenza `ui.frontend/src/styles.css` di **Styles.scss**. Sostituite il contenuto con quanto segue:
+5. Rinominare l&#39;estensione del file **Styles.css** in `ui.frontend/src/styles.css` in **Styles.scss**. Sostituite il contenuto con quanto segue:
 
    ```scss
    /* styles.scss * /
@@ -556,7 +556,7 @@ Successivamente, al progetto verrà aggiunto uno stile aggiornato. Questo proget
    }
    ```
 
-6. Aggiorna **angular.json** e rinomina tutti i riferimenti a **style.css** con **Styles.scss**. Ci dovrebbero essere 3 riferimenti.
+6. Aggiornare **angular.json** e rinominare tutti i riferimenti a **style.css** con **Styles.scss**. Ci dovrebbero essere 3 riferimenti.
 
    ```diff
      "styles": [
@@ -567,15 +567,15 @@ Successivamente, al progetto verrà aggiunto uno stile aggiornato. Questo proget
 
 ## Aggiorna stili di intestazione
 
-Quindi aggiungere al componente **Intestazione** stili specifici per il marchio utilizzando Sass.
+Aggiungere quindi alcuni stili specifici per il marchio al componente **Header** utilizzando Sass.
 
-1. Avviate il server **di sviluppo** webpack per visualizzare gli stili aggiornati in tempo reale:
+1. Avviare il server di sviluppo **webpack** per visualizzare gli stili aggiornati in tempo reale:
 
    ```shell
    $ npm run start:mock
    ```
 
-2. In `ui.frontend/src/app/components/header` ri-name **header.component.css** to **header.component.scss**. Compilate il file con le seguenti opzioni:
+2. In `ui.frontend/src/app/components/header` rinominare **header.component.css** in **header.component.scss**. Compilate il file con le seguenti opzioni:
 
    ```scss
    @import "~src/styles/variables";
@@ -610,7 +610,7 @@ Quindi aggiungere al componente **Intestazione** stili specifici per il marchio 
    }
    ```
 
-3. Aggiorna **header.component.js** per fare riferimento a **header.component.scss**:
+3. Aggiornare **header.component.js** per fare riferimento a **header.component.scss**:
 
    ```diff
    ...
@@ -623,36 +623,36 @@ Quindi aggiungere al componente **Intestazione** stili specifici per il marchio 
    ...
    ```
 
-4. Tornate al browser e al server **di sviluppo** webpack:
+4. Tornare al browser e al server di sviluppo **webpack**:
 
    ![Intestazione con stile - webpack dev server](assets/integrate-spa/styled-header.png)
 
-   È ora possibile visualizzare gli stili aggiornati aggiunti al componente **Intestazione** .
+   È ora possibile visualizzare gli stili aggiornati aggiunti al componente **Header**.
 
-## Implementare gli aggiornamenti SPA per AEM
+## Implementare SPA aggiornamenti a AEM
 
-Le modifiche apportate a **Header** sono attualmente visibili solo attraverso il server **di sviluppo del** webpack. Distribuite l&#39;app SPA aggiornata per AEM vedere le modifiche.
+Le modifiche apportate a **Header** sono attualmente visibili solo attraverso il server di sviluppo dei webpack **webpack**. Distribuite il SPA aggiornato per AEM per visualizzare le modifiche.
 
-1. Arrestate il server **di sviluppo** webpack.
-2. Andate alla radice del progetto `/aem-guides-wknd-spa` e distribuite il progetto da AEM utilizzando Maven:
+1. Arrestate il server di sviluppo **webpack**.
+2. Andate alla directory principale del progetto `/aem-guides-wknd-spa` e distribuite il progetto da AEM utilizzando Maven:
 
    ```shell
    $ cd ..
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-3. Andate a [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). Dovresti vedere l’ **intestazione** aggiornata con il logo e gli stili applicati:
+3. Andate a [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). Dovresti vedere la **Intestazione** aggiornata con il logo e gli stili applicati:
 
    ![Intestazione aggiornata in AEM](assets/integrate-spa/final-header-component.png)
 
-   Ora che l’app SPA aggiornata è AEM, l’authoring può continuare.
+   Ora che la SPA aggiornata è AEM, l’authoring può continuare.
 
 ## Congratulazioni! {#congratulations}
 
-Congratulazioni, avete aggiornato l&#39;SPA ed esplorato l&#39;integrazione con AEM! Ora conoscete due approcci diversi per lo sviluppo dell&#39;SPA rispetto all&#39;API modello JSON AEM utilizzando un server **di sviluppo** webpack.
+Congratulazioni, avete aggiornato il SPA ed esplorato l&#39;integrazione con AEM! Ora conoscete due approcci diversi per sviluppare il SPA rispetto all&#39;API del modello AEM JSON utilizzando un server di sviluppo di webpack ****.
 
 È sempre possibile visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/integrate-spa-solution) o estrarre il codice localmente passando al ramo `Angular/integrate-spa-solution`.
 
 ### Passaggi successivi {#next-steps}
 
-[Mappatura di componenti SPA a componenti](map-components.md) AEM - Scoprite come mappare componenti Angular a componenti Adobe Experience Manager (AEM) con l’SDK JS AEM SPA Editor. La mappatura dei componenti consente agli autori di effettuare aggiornamenti dinamici ai componenti SPA nell’editor AEM SPA, in modo simile all’authoring AEM tradizionale.
+[Mappatura SPA componenti a AEM componenti](map-components.md)  - Scoprite come mappare componenti Angular a componenti Adobe Experience Manager (AEM) con l’SDK JS AEM Editor. La mappatura dei componenti consente agli autori di effettuare aggiornamenti dinamici SPA componenti all’interno dell’editor SPA AEM, simili all’authoring AEM tradizionale.
