@@ -28,7 +28,7 @@ La console dei componenti offre le seguenti funzionalità:
 * [!UICONTROL Criteri]: visualizza eventuali criteri esistenti per un determinato componente e il modello associato
 * [!UICONTROL Live Usage]: visualizza un elenco di pagine in cui il componente è incluso
 
-La console dei componenti si trova in **[!UICONTROL Strumenti]** > **[!UICONTROL Generali]** > **[!UICONTROL Componenti]**.
+La console dei componenti si trova in **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Componenti]**.
 URL console del componente (AEM Author locale): [http://localhost:4502/libs/wcm/core/content/sites/components.html](http://localhost:4502/libs/wcm/core/content/sites/components.html)
 
 ## Risorse aggiuntive {#additional-resources}
