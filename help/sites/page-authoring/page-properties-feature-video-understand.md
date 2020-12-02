@@ -20,7 +20,7 @@ ht-degree: 29%
 ---
 
 
-# Informazioni sulle proprietà di pagina {#understanding-page-properties-aem-sites}
+# Informazioni sulle proprietà pagina {#understanding-page-properties-aem-sites}
 
 Nel seguente video vengono introdotte le proprietà di pagina associate a una pagina in Adobe Experience Manager.
 
