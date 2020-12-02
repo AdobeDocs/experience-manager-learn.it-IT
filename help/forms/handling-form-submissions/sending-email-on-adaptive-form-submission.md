@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Invio di e-mail per l&#39;invio del modulo adattivo {#sending-email-on-adaptive-form-submission}
+# Invio di e-mail all&#39;invio del modulo adattivo {#sending-email-on-adaptive-form-submission}
 
 Una delle azioni più comuni consiste nell’inviare un messaggio e-mail di conferma all’autore del modulo adattivo al momento dell’invio corretto. A tal fine, selezioneremo l&#39;azione &quot;Invia e-mail&quot; come azione di invio.
 
@@ -33,7 +33,7 @@ Quando viene inviato il modulo adattivo, il destinatario riceve un messaggio e-m
 
 ## Configurazioni necessarie {#configurations-needed}
 
-Sarà necessario configurare il servizio Day CQ Mail. Questa configurazione può essere effettuata puntando il browser a [Felix Configuration Manager](http://localhost:4502/system/console/configMgr)
+Sarà necessario configurare il servizio Day CQ Mail. Questa configurazione può essere effettuata puntando il browser su [Felix Configuration Manager](http://localhost:4502/system/console/configMgr)
 
 Lo screenshot mostra le proprietà di configurazione per il server di posta Adobe.
 
@@ -41,9 +41,9 @@ Lo screenshot mostra le proprietà di configurazione per il server di posta Adob
 
 Per provare a eseguire questa operazione sul server, attenersi alle istruzioni riportate di seguito.
 
-* [Importa le risorse](assets/timeoffrequest.zip) associate a questo articolo in AEM utilizzando il gestore pacchetti.
+* [Importa le ](assets/timeoffrequest.zip) risorse associate a questo articolo in AEM utilizzando il gestore pacchetti.
 
-* Aprire [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
+* Aprire il [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
 
 * Compila i dettagli.Assicurati di fornire un indirizzo e-mail valido nel campo e-mail.
 
