@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: null
 thumbnail: null
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 64d88ef98ec1fe3e2dbe727fc59b350bb0a2134b
 workflow-type: tm+mt
-source-wordcount: '1441'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -208,40 +208,40 @@ Quindi, modificate l&#39;app React per eseguire query GraphQL con parametri che 
 1. Nell’IDE, apri il file: `src/components/Adventures.js`. Questo file rappresenta il componente &quot;Avventure&quot; dell&#39;esperienza principale, che richiede e visualizza le schede &quot;Avventures&quot;.
 1.  Inspect la funzione `filterQuery(activity)`, che non è utilizzata, ma è stata preparata per formulare una query GraphQL che filtra le avventure di `activity`.
 
-Notate che il parametro `activity` viene inserito nella query GraphQL come parte di un campo `filter` nel campo `adventureActivity`, per cui il valore di quel campo deve corrispondere al valore del parametro.
+   Notate che il parametro `activity` viene inserito nella query GraphQL come parte di un campo `filter` nel campo `adventureActivity`, per cui il valore di quel campo deve corrispondere al valore del parametro.
 
-    &quot;
-    javascriptfunction filterQuery(activity) {
-    return `
-    {
-    adventures (filter): {
-    adventureActivity: {
-    _espressioni: [
-    {
-    value: &quot;${activity}&quot;
-    }
-    ]
-    }
-    }){
-    items {
-    _
-    
-    
-    
-    pathadventureTitleadventurePriceadventureTripLengthadventurePrimaryImage {
-    ... su ImageRef {
-    _
-    
-    
-    pathmimeTypewidthheight
-    }
-    }
-    }
-    }
-    `;
-    }
-     
-    &quot;
+   ```javascript
+   function filterQuery(activity) {
+       return `
+           {
+           adventures (filter: {
+               adventureActivity: {
+               _expressions: [
+                   {
+                   value: "${activity}"
+                   }
+                 ]
+               }
+           }){
+               items {
+               _path
+               adventureTitle
+               adventurePrice
+               adventureTripLength
+               adventurePrimaryImage {
+               ... on ImageRef {
+                   _path
+                   mimeType
+                   width
+                   height
+               }
+               }
+             }
+         }
+       }
+       `;
+   }
+   ```
 
 1. Aggiornare l&#39;istruzione `return` del componente React Adventures per aggiungere pulsanti che richiamano il nuovo `filterQuery(activity)` con parametri per fornire le avventure da elencare.
 
