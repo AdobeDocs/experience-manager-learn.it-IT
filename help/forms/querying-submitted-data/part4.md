@@ -23,9 +23,9 @@ ht-degree: 0%
 
 Il passaggio successivo consiste nell&#39;eseguire una query sui dati inviati e visualizzare i risultati in modo tabulare. A tal fine, utilizzeremo il seguente software
 
-[QueryBuilder](https://querybuilder.js.org/) - Componente interfaccia utente per creare query
+[QueryBuilder](https://querybuilder.js.org/)  - Componente interfaccia utente per creare query
 
-[Tabelle](https://datatables.net/)dati - Per visualizzare i risultati della query in modo tabulare.
+[Tabelle](https://datatables.net/) dati - Per visualizzare i risultati della query in modo tabulare.
 
 La seguente interfaccia utente è stata creata per abilitare la query dei dati inviati. Solo gli elementi contrassegnati come obbligatori nello schema JSON sono messi a disposizione per la query. Nella schermata sottostante, stiamo interrogando per tutti gli invii in cui il recapito pref è SMS.
 
