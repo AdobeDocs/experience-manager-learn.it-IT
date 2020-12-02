@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Utilizzo Del Modello Dati Modulo Per Pubblicare Dati Binari{#using-form-data-model-to-post-binary-data}
+# Utilizzo del modello dati modulo per inviare dati binari{#using-form-data-model-to-post-binary-data}
 
 A partire da  AEM Forms 6.4, ora è possibile richiamare il servizio Form Data Model Service come passaggio AEM Workflow. Questo articolo illustra un esempio di utilizzo per la pubblicazione del documento di registrazione tramite il servizio Form Data Model Service.
 
@@ -46,15 +46,15 @@ Input servizio
 
 >[!NOTE]
 >
->Suggerimenti per la ripresa di problemi - Se per qualche motivo il file DOR.pdf non viene creato in DAM, reimpostare le impostazioni di autenticazione dell&#39;origine dati facendo clic [qui](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam). Queste sono le impostazioni di autenticazione AEM, che per impostazione predefinita sono admin/admin.
+>Suggerimenti per la ripresa di problemi - Se per qualche motivo il file DOR.pdf non viene creato in DAM, reimpostare le impostazioni di autenticazione dell&#39;origine dati facendo clic su [qui](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam). Queste sono le impostazioni di autenticazione AEM, che per impostazione predefinita sono admin/admin.
 
 Per testare questa funzionalità sul server, attenetevi alla procedura indicata di seguito:
 
-1.[Distribuzione del bundle Developingwithservice](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+1.[Implementare il bundle Developingwithservice_user](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-1. [Scaricate e distribuite il bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue.Questo bundle OSGI personalizzato viene utilizzato per creare la proprietà dei metadati e impostarne il valore dai dati del modulo inviati.
+1. [Scaricate e distribuite il bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) setvalue.Questo bundle OSGI personalizzato viene utilizzato per creare la proprietà dei metadati e impostarne il valore dai dati del modulo inviati.
 
-1. [Importa le risorse](assets/postdortodam.zip) associate a questo articolo in AEM utilizzando il gestore pacchetti. Verranno fornite le seguenti informazioni
+1. [Importa le ](assets/postdortodam.zip) risorse associate a questo articolo in AEM utilizzando il gestore pacchetti. Verranno fornite le informazioni seguenti
 
    1. Modello flusso di lavoro
    1. Modulo adattivo configurato per l’invio al flusso di lavoro AEM
@@ -66,4 +66,4 @@ Per testare questa funzionalità sul server, attenetevi alla procedura indicata 
 1. Controlla l’applicazione Risorse se il documento di registrazione viene creato e memorizzato.
 
 
-[Il file](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) Swagger utilizzato per creare l&#39;origine dati è disponibile per il riferimento
+[Il ](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) file Swagger utilizzato per creare l&#39;origine dati è disponibile per il riferimento
