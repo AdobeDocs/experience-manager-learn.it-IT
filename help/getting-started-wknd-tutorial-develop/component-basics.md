@@ -22,11 +22,11 @@ ht-degree: 2%
 
 # Nozioni di base sui componenti {#component-basics}
 
-Questo capitolo illustra la tecnologia alla base di un componente di Adobe Experience Manager (AEM) Sites attraverso un semplice `HelloWorld` esempio. Verranno apportate piccole modifiche a un componente esistente, con argomenti quali authoring, HTL, Sling Models e librerie lato client.
+Questo capitolo illustra la tecnologia di base di un componente di siti Adobe Experience Manager (AEM) attraverso un semplice esempio `HelloWorld`. Verranno apportate piccole modifiche a un componente esistente, con argomenti quali authoring, HTL, Sling Models e librerie lato client.
 
 ## Prerequisiti {#prerequisites}
 
-Esaminate le istruzioni e gli strumenti necessari per configurare un ambiente [di sviluppo](overview.md#local-dev-environment)locale.
+Esaminare le istruzioni e gli strumenti necessari per configurare un ambiente di sviluppo locale [](overview.md#local-dev-environment).
 
 ## Obiettivo {#objective}
 
@@ -36,17 +36,17 @@ Esaminate le istruzioni e gli strumenti necessari per configurare un ambiente [d
 
 ## Cosa verrà creato {#what-you-will-build}
 
-In questo capitolo verranno apportate diverse modifiche a un `HelloWorld` componente molto semplice. Durante il processo di aggiornamento del `HelloWorld` componente, verranno fornite informazioni sulle aree chiave dello sviluppo AEM componente.
+In questo capitolo verranno apportate diverse modifiche a un semplice componente `HelloWorld`. Durante il processo di aggiornamento del componente `HelloWorld`, verranno fornite informazioni sulle aree chiave dello sviluppo AEM componente.
 
 ## Progetto iniziale capitolo {#starter-project}
 
-Questo capitolo si basa su un progetto generico generato da Project Archetype [](https://github.com/adobe/aem-project-archetype)AEM. Guardate il video seguente e controllate i [prerequisiti](#prerequisites) per iniziare!
+Questo capitolo si basa su un progetto generico generato da [AEM Project Archetype](https://github.com/adobe/aem-project-archetype). Guardate il video seguente e controllate i [prerequisiti](#prerequisites) per iniziare!
 
 >[!VIDEO](https://video.tv.adobe.com/v/30154/?quality=12&learn=on)
 
 Aprite un nuovo terminale della riga di comando ed eseguite le seguenti operazioni.
 
-1. In una directory vuota, clonate l&#39;archivio [aem-guide-wknd](https://github.com/adobe/aem-guides-wknd) :
+1. In una directory vuota, clonate il repository [aem-guide-wknd](https://github.com/adobe/aem-guides-wknd):
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd.git
@@ -55,15 +55,15 @@ Aprite un nuovo terminale della riga di comando ed eseguite le seguenti operazio
 
    >[!NOTE]
    >
-   > Facoltativamente, potete scaricare direttamente il [`component-basics/start`](https://github.com/adobe/aem-guides-wknd/archive/component-basics/start.zip) ramo.
+   > Facoltativamente, è possibile scaricare direttamente il ramo [`component-basics/start`](https://github.com/adobe/aem-guides-wknd/archive/component-basics/start.zip).
 
-1. Andate nella `aem-guides-wknd` directory:
+1. Andate nella directory `aem-guides-wknd`:
 
    ```shell
    $ cd aem-guides-wknd
    ```
 
-1. Passate al `component-basics/start` ramo:
+1. Passate al ramo `component-basics/start`:
 
    ```shell
    $ git checkout component-basics/start
@@ -93,7 +93,7 @@ Aprite un nuovo terminale della riga di comando ed eseguite le seguenti operazio
    [INFO] ------------------------------------------------------------------------
    ```
 
-1. Importa il progetto nell&#39;IDE desiderato seguendo le istruzioni per configurare un ambiente [di sviluppo](overview.md#local-dev-environment)locale.
+1. Importa il progetto nell&#39;IDE desiderato seguendo le istruzioni per impostare un [ambiente di sviluppo locale](overview.md#local-dev-environment).
 
 ## Authoring dei componenti {#component-authoring}
 
@@ -103,11 +103,11 @@ I componenti possono essere considerati come piccoli elementi di base modulari d
 
 Di seguito sono riportati i passaggi di alto livello eseguiti nel video precedente.
 
-1. Create una nuova pagina denominata **Component Basics** (Nozioni di base sui **componenti) sotto il sito** `>` WKND **US** `>`**it**.
-1. Aggiungete il componente **Hello World** alla pagina appena creata.
+1. Create una nuova pagina denominata **Component Basics** sotto **WKND Site** `>` **US** `>` **en**.
+1. Aggiungete il **componente Hello World** alla pagina appena creata.
 1. Aprire la finestra di dialogo del componente e immettere del testo. Salvare le modifiche per visualizzare il messaggio sulla pagina.
 1. Passate alla modalità sviluppatore e visualizzate il Percorso contenuto in CRXDE-Lite, quindi controllate le proprietà dell’istanza del componente.
-1. Utilizzare CRXDE-Lite per visualizzare lo `cq:dialog` script e `helloworld.html` situato in `/apps/wknd/components/content/helloworld`.
+1. Utilizzare CRXDE-Lite per visualizzare lo script `cq:dialog` e `helloworld.html` situato in `/apps/wknd/components/content/helloworld`.
 
 ## HTML Template Language (HTL) {#htl-templates}
 
@@ -119,14 +119,14 @@ Successivamente verrà aggiornato lo script `HelloWorld` HTL per visualizzare un
 
 Di seguito sono riportati i passaggi di alto livello eseguiti nel video precedente.
 
-1. Passate all&#39;IDE Eclipse e aprite il progetto al `ui.apps` modulo.
-1. Aprite il `.content.xml` file che definisce la finestra di dialogo per il `HelloWorld` componente in:
+1. Passate all&#39;IDE Eclipse e aprite il progetto nel modulo `ui.apps`.
+1. Aprire il file `.content.xml` che definisce la finestra di dialogo per il componente `HelloWorld` in:
 
    ```plain
    <code>/aem-guides-wknd/ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/_cq_dialog/.content.xml
    ```
 
-1. Aggiornate la finestra di dialogo per aggiungere un altro campo di testo denominato **Saluto** con un nome di `./greeting`:
+1. Aggiornate la finestra di dialogo per aggiungere un campo di testo aggiuntivo denominato **Saluto** con un nome di `./greeting`:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -159,13 +159,13 @@ Di seguito sono riportati i passaggi di alto livello eseguiti nel video preceden
    </jcr:root>
    ```
 
-1. Aprite il file `helloworld.html`, che rappresenta lo script HTL principale responsabile per il rendering del `HelloWorld` componente, ubicato in:
+1. Aprite il file `helloworld.html`, che rappresenta lo script HTL principale responsabile del rendering del componente `HelloWorld`, ubicato in:
 
    ```plain
        <code>/aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html
    ```
 
-1. Aggiorna `helloworld.html` per eseguire il rendering del valore del campo di testo **Saluto** come parte di un `H1` tag:
+1. Aggiornate `helloworld.html` per eseguire il rendering del valore del campo di testo **Greeting** come parte di un tag `H1`:
 
    ```html
    <h1 data-sly-test="${properties.text && properties.greeting}">${properties.greeting} ${properties.text}</h1>
@@ -181,17 +181,17 @@ Di seguito sono riportati i passaggi di alto livello eseguiti nel video preceden
 
 I modelli Sling sono modelli Java &quot;POJO&quot; basati su annotazioni (Plain Old Java Objects) che semplificano la mappatura dei dati dalle variabili JCR a Java e forniscono una serie di altre caratteristiche quando si sviluppano nel contesto di AEM.
 
-Verranno quindi introdotti alcuni aggiornamenti al modello `HelloWorldModel` Sling per applicare una qualche logica di business ai valori memorizzati nel JCR prima di inviarli alla pagina.
+Verranno quindi eseguiti alcuni aggiornamenti al modello `HelloWorldModel` Sling per applicare una qualche logica di business ai valori memorizzati nel JCR prima di inviarli alla pagina.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30189/?quality=12&learn=on)
 
-1. Aprire il file `HelloWorldModel.java`, ovvero il modello Sling utilizzato con il `HelloWorld` componente.
+1. Aprire il file `HelloWorldModel.java`, ovvero il modello Sling utilizzato con il componente `HelloWorld`.
 
    ```plain
    <code>/aem-guides-wknd.core/src/main/java/com/adobe/aem/guides/wknd/core/models/HelloWorldModel.java
    ```
 
-1. Aggiungete le seguenti righe alla `HelloWorldModel` classe per mappare i valori delle proprietà JCR del componente `greeting` e `text` alle variabili Java:
+1. Aggiungere le righe seguenti alla classe `HelloWorldModel` per mappare i valori delle proprietà JCR del componente `greeting` e `text` alle variabili Java:
 
    ```java
    ...
@@ -211,7 +211,7 @@ Verranno quindi introdotti alcuni aggiornamenti al modello `HelloWorldModel` Sli
                ...
    ```
 
-1. Aggiungete il seguente metodo `getGreeting()` alla `HelloWorldModel` classe, che restituisce il valore della proprietà denominata `greeting`. Questo metodo aggiunge la logica aggiuntiva per restituire un valore String &quot;Hello&quot; se la proprietà `greeting` è null o blank:
+1. Aggiungete il seguente metodo `getGreeting()` alla classe `HelloWorldModel`, che restituisce il valore della proprietà denominata `greeting`. Questo metodo aggiunge la logica aggiuntiva per restituire un valore String &quot;Hello&quot; se la proprietà `greeting` è null o vuota:
 
    ```java
    /***
@@ -223,7 +223,7 @@ Verranno quindi introdotti alcuni aggiornamenti al modello `HelloWorldModel` Sli
    }
    ```
 
-1. Aggiungete il seguente metodo `getTextUpperCase()` alla `HelloWorldModel` classe, che restituisce il valore della proprietà denominata `text`. Questo metodo trasforma la stringa in tutti i caratteri maiuscoli.
+1. Aggiungete il seguente metodo `getTextUpperCase()` alla classe `HelloWorldModel`, che restituisce il valore della proprietà denominata `text`. Questo metodo trasforma la stringa in tutti i caratteri maiuscoli.
 
    ```java
        /***
@@ -235,7 +235,7 @@ Verranno quindi introdotti alcuni aggiornamenti al modello `HelloWorldModel` Sli
    }
    ```
 
-1. Aggiornare il file `helloworld.html` in `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html` modo da utilizzare i metodi appena creati del `HelloWorld` modello:
+1. Aggiornare il file `helloworld.html` in `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html` per utilizzare i metodi appena creati del modello `HelloWorld`:
 
    ```html
    <div class="cmp-helloworld" data-sly-use.hello="com.adobe.aem.guides.wknd.core.models.HelloWorldModel">
@@ -253,14 +253,14 @@ Verranno quindi introdotti alcuni aggiornamenti al modello `HelloWorldModel` Sli
 
 Client-Side Libraries, clientlibs in breve, fornisce un meccanismo per organizzare e gestire i file CSS e JavaScript necessari per un&#39;implementazione  AEM Sites. Le librerie lato client sono il metodo standard per includere CSS e JavaScript in una pagina di AEM.
 
-Verranno quindi inclusi alcuni stili CSS per il `HelloWorld` componente, al fine di comprendere le nozioni di base delle librerie lato client.
+A questo punto, includeremo alcuni stili CSS per il componente `HelloWorld` per comprendere le nozioni di base delle librerie lato client.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30190/?quality=12&learn=on)
 
 Di seguito sono riportati i passaggi di alto livello eseguiti nel video precedente.
 
-1. sotto `/aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld` creare un nuovo nodo denominato `clientlibs` con un tipo di nodo `cq:ClientLibraryFolder`.
-1. Creare una struttura di cartelle e file come segue `clientlibs`
+1. in `/aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld` creare un nuovo nodo denominato `clientlibs` con un tipo di nodo `cq:ClientLibraryFolder`.
+1. Crea una struttura di cartelle e file come segue sotto `clientlibs`
 
    ```plain
    /helloworld
@@ -271,7 +271,7 @@ Di seguito sono riportati i passaggi di alto livello eseguiti nel video preceden
                +css.txt
    ```
 
-1. Compilate `helloworld/clientlibs/css/helloworld.css` con le seguenti opzioni:
+1. Compilare `helloworld/clientlibs/css/helloworld.css` con i seguenti elementi:
 
    ```css
    .cmp-helloworld h1 {
@@ -279,27 +279,27 @@ Di seguito sono riportati i passaggi di alto livello eseguiti nel video preceden
    }
    ```
 
-1. Compilate `helloworld/clientlibs/css.txt` con le seguenti opzioni:
+1. Compilare `helloworld/clientlibs/css.txt` con i seguenti elementi:
 
    ```plain
    #base=css
    helloworld.css
    ```
 
-1. Compilate `helloworld/clientlibs/js/helloworld.js` con le seguenti opzioni:
+1. Compilare `helloworld/clientlibs/js/helloworld.js` con i seguenti elementi:
 
    ```js
    console.log("hello world!");
    ```
 
-1. Compilate `helloworld/clientlibs/js.txt` con le seguenti opzioni:
+1. Compilare `helloworld/clientlibs/js.txt` con i seguenti elementi:
 
    ```plain
    #base=js
    helloworld.js
    ```
 
-1. Aggiorna le proprietà del `clientlibs` nodo per includere le due proprietà seguenti:
+1. Aggiornare le proprietà del nodo `clientlibs` in modo da includere le due seguenti proprietà:
 
    | Nome | Tipo | Valore |
    |------|------|-------|
@@ -326,7 +326,7 @@ Congratulazioni, hai appena imparato le basi dello sviluppo di componenti in Ado
 
 Acquisisci familiarità con le pagine e i modelli Adobe Experience Manager nel capitolo successivo [Pagine e modelli](pages-templates.md). Scopri in che modo i componenti core sono associati al progetto e impara le configurazioni di criteri avanzate dei modelli modificabili per creare un modello di pagina articolo ben strutturato.
 
-Visualizzate il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd) oppure rivedete e distribuite il codice localmente in Git brach `component-basics/solution`.
+Visualizzate il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd) oppure rivedete e distribuite il codice localmente in corrispondenza del blocco Git `component-basics/solution`.
 
-1. Duplicate l&#39;archivio [github.com/adobe/aem-wknd-guides](https://github.com/adobe/aem-guides-wknd) .
-1. Estrarre il `component-basics/solution` ramo
+1. Duplicare il repository [github.com/adobe/aem-wknd-guides](https://github.com/adobe/aem-guides-wknd).
+1. Estrarre il ramo `component-basics/solution`
