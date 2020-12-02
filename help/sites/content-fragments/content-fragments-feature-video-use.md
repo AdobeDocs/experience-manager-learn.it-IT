@@ -7,12 +7,12 @@ topics: authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: cloud-service
 translation-type: tm+mt
-source-git-commit: 1faf22f2e664b775c11e16cb1dfa18b363a7316b
+source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 5%
+source-wordcount: '374'
+ht-degree: 6%
 
 ---
 
@@ -20,11 +20,6 @@ ht-degree: 5%
 # Creazione di frammenti di contenuto {#authoring-content-fragments}
 
 I frammenti di contenuto sono un&#39;astrazione di contenuto in AEM che consente la creazione e la gestione di contenuto basato su testo indipendentemente dai canali supportati.
-
->[!NOTE]
->
->La funzionalità AEM frammento di contenuto di questi video è stata introdotta per la prima volta in [AEM 6.3 + FP 19008 e FP19614](https://helpx.adobe.com/experience-manager/6-3/release-notes/content-services-fragments-featurepack.html).
-
 
 AEM Frammenti di contenuto sono contenuti editoriali basati su testo che possono includere alcuni elementi di dati strutturati associati ma considerati contenuti puri, senza informazioni sulla progettazione o sul layout. I frammenti di contenuto vengono generalmente creati come contenuti che non riguardano i canali, destinati ad essere utilizzati e riutilizzati tra i canali, che a loro volta racchiudono il contenuto in un&#39;esperienza specifica per il contesto.
 
