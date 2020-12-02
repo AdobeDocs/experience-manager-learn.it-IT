@@ -39,7 +39,7 @@ In questa parte, creeremo Comunicazione interattiva per il Canale Web.
 
    1. Deselezionare la casella di controllo Canale di stampa. Non stiamo creando il documento per il canale di stampa.
    1. Web: Selezionare questa opzione per generare il documento per il canale Web
-   1. Comunicazione interattiva: Modello: **global>** RetirementAccountStatement(Modello creato nel passaggio precedente)
+   1. Comunicazione interattiva: Modello: **global>RetirementAccountStatemen** t(Modello creato nel passaggio precedente)
    1. Tema:** Tema di riferimento ->Canvas 2.0**
 
 1. Tocca Crea
