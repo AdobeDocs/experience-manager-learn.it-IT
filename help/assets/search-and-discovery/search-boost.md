@@ -15,7 +15,7 @@ ht-degree: 4%
 ---
 
 
-# Ricerca di incremento con i metadati delle risorse {#search-boost-asset}
+# Ricerca Incremento con metadati risorsa {#search-boost-asset}
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=12&learn=on)
 
