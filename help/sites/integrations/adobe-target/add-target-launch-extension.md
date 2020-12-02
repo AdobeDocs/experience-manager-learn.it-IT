@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Aggiungere l&#39;estensione Target a una proprietà Launch {#adobe-target-extension}
+# Aggiungi estensione Target a una proprietà Launch {#adobe-target-extension}
 
-Per seguire questo video, dovete già avere un Experience Platform Launch [integrato con AEM](../experience-platform-launch/overview.md).
+Per seguire questo video, è necessario disporre già di un Experience Platform Launch [integrato con AEM](../experience-platform-launch/overview.md).
 
 Scoprite come abilitare  Adobe Target al sito Web AEM utilizzando Experience Platform Launch.
 
