@@ -27,7 +27,7 @@ Per eseguire questo caso di utilizzo, è necessario eseguire i seguenti passaggi
 * Gestione dell’invio PDF da  Acrobat/Reader
 * Avvia flusso di lavoro Adobe Experience Manager (AEM) per esaminare il PDF inviato
 
-Questa esercitazione descrive i passaggi necessari per eseguire le operazioni descritte sopra. Il codice di esempio e le risorse correlate a questa esercitazione sono [disponibili qui.](part-four.md)
+Questa esercitazione descrive i passaggi necessari per eseguire le operazioni descritte sopra. Il codice di esempio e le risorse relative a questa esercitazione sono [disponibili qui.](part-four.md)
 
 Il seguente video offre una panoramica del caso d’uso
 
