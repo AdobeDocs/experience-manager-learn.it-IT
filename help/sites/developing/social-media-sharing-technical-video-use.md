@@ -22,22 +22,22 @@ Scoprite come impostare e usare il componente Condivisione social media.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18897/?quality=9&learn=on)
 
-Questo video esplora le seguenti funzionalità del componente Condivisione social media (parte di [AEM Componenti](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)principali) mediante il sito Web di esempio [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail) .
+Questo video esplora le seguenti funzionalità del componente Condivisione social media (parte di [AEM Componenti principali](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)) utilizzando il sito Web di esempio [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail).
 
 * 0:00 - Aggiunta e configurazione del componente Condivisione social media
 * 1:00 - Condivisione su Facebook
 * 3:10 - Condivisione su Pinterest
 * 6:25 - Utilizzo del componente Condivisione social media in una pagina di prodotto
 
-## Configurazione di Externalizer {#externalizer-setup}
+## Impostazione di Externalizer {#externalizer-setup}
 
 ![Day CQ Link Externalizer](assets/externalizer.png)
 
 [http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl](http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl)
 
-[AEM esternalizzatore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) deve essere configurato sia su AEM Author che su AEM Publish, per mappare la modalità di pubblicazione sul dominio accessibile al pubblico utilizzato per accedere a AEM Publish.
+[AEM&#39;](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) esternalizzatore deve essere configurato sia su AEM Author che su AEM Publish, per mappare la modalità di pubblicazione sul dominio accessibile al pubblico utilizzato per accedere a AEM Publish.
 
-In questo video utilizziamo `/etc/hosts` per individuare *www.example.com* e per risolvere il problema dell&#39;host locale, e per consentire www.example.com davanti a AEM Publish usiamo una configurazione [di supporto per AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) di base.
+In questo video utilizziamo `/etc/hosts` per individuare *www.example.com* localhost e per utilizzare una [configurazione di base del dispatcher AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) per consentire a www.example.com di iniziare a pubblicare AEM.
 
 ## Materiali di supporto {#supporting-materials}
 
