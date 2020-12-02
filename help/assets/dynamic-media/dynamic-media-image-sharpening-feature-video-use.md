@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# Utilizzo della nitidezza delle immagini con AEM elementi multimediali dinamici{#using-image-sharpening-with-aem-dynamic-media}
+# Utilizzo della nitidezza immagine con AEM elemento multimediale dinamico{#using-image-sharpening-with-aem-dynamic-media}
 
 Questo video spiega perché la nitidezza di un’immagine è fondamentale per mantenere la fedeltà delle immagini e come utilizzare impostazioni avanzate per creare l’immagine perfetta.
 
