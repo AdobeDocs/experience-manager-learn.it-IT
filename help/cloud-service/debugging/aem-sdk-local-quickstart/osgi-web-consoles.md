@@ -32,7 +32,7 @@ La console Bundles è un catalogo dei bundle OSGi e dei relativi dettagli, distr
 La console Bundles si trova in:
 
 + Strumenti > Operazioni > Console Web > OSGi > Bundle
-+ Or directly at: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
++ O direttamente da: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
 Facendo clic su ciascun bundle, vengono forniti i dettagli utili per il debug dell&#39;applicazione.
 
@@ -49,7 +49,7 @@ La console Componenti è un catalogo di tutti i componenti OSGi distribuiti per 
 La console Componenti si trova in:
 
 + Strumenti > Operazioni > Console Web > OSGi > Componenti
-+ Or directly at: [http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
++ O direttamente da: [http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
 
 Aspetti chiave che aiutano con le attività di debug:
 
@@ -66,7 +66,7 @@ Aspetti chiave che aiutano con le attività di debug:
 La console Sling Models si trova in:
 
 + Strumenti > Operazioni > Console Web > Stato > Modelli Sling
-+ Or directly at: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
++ O direttamente da: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
 
 Aspetti chiave che aiutano con le attività di debug:
 
