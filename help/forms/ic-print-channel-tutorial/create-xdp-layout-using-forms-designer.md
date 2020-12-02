@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# Creare un layout con Forms Designer {#create-layout-using-forms-designer}
+# Creare un layout utilizzando Forms Designer {#create-layout-using-forms-designer}
 
 In questa parte viene esaminato il file di layout creato utilizzando  AEM Forms Designer.
 
