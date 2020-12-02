@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Guida Introduttiva All’Forms Adattivo {#getting-started-with-adaptive-forms}
+# Guida introduttiva ad Forms adattivo {#getting-started-with-adaptive-forms}
 
 Questa esercitazione illustra i passaggi necessari per creare un modulo adattivo con più schede. Scoprirai come utilizzare Tabelle, Layout a soffietto e Editor regole per creare regole aziendali.
 
@@ -36,8 +36,8 @@ Sarà necessario quanto segue:
 
 * **Si presume che  AEM Forms versione 6.4 o successiva sia in esecuzione su localhost:4502.**
 
-* [Scaricate il client-libs-and-logo](assets/client-libs-and-logo.zip) e il [primo frammento](assets/getting-started-fragment.zip) sul disco rigido.
+* [Scaricate sul disco rigido il ](assets/client-libs-and-logo.zip) frammento client-libs-and- [logoe guida introduttiva ](assets/getting-started-fragment.zip) all&#39;applicazione.
 
-* Importare i file ZIP in AEM utilizzando [Gestione pacchetti ](http://localhost:4502/crx/packmgr/index.jsp)
+* Importare i file ZIP in AEM utilizzando [gestore pacchetti ](http://localhost:4502/crx/packmgr/index.jsp)
 
 
