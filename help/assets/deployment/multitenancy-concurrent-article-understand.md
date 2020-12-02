@@ -96,7 +96,7 @@ Ciò non elimina la necessità che più team dipendano da e possano aggiornare l
 
 Per garantire che le modifiche apportate a questo pacchetto di base non interferiscano con la funzionalità del sistema, si consiglia a uno sviluppatore senior o a un team di sviluppatori di mantenere la sorveglianza. Un&#39;opzione consiste nell&#39;avere un unico team che gestisca tutte le modifiche apportate al pacchetto; un altro è far sì che i team inviino richieste pull riviste e unite da tali risorse. È importante che un modello di governance sia progettato e concordato dai team e che gli sviluppatori lo seguano.
 
-## Gestione dell&#39;ambito di distribuzione {#managing-deployment-scope}
+## Gestione dell&#39;ambito di distribuzione&amp;nbsp {#managing-deployment-scope}
 
 Poiché i diversi team implementano il codice nello stesso repository, è importante che non sovrascrivano le rispettive modifiche. AEM dispone di un meccanismo per controllare questo problema quando si distribuiscono pacchetti di contenuto, il filtro. file xml. È importante che non vi sia sovrapposizione tra i filtri.  file xml, altrimenti la distribuzione di un team potrebbe eliminare la distribuzione precedente di un altro team. Per illustrare questo punto, consultate i seguenti esempi di file di filtro ben elaborati e problematici:
 
