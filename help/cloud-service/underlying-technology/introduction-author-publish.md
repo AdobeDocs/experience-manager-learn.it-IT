@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Introduzione a Author and Publish Tier {#introduction-author-publish}
+# Introduzione al livello di creazione e pubblicazione {#introduction-author-publish}
 
 Introduzione ai livelli Autore e Pubblica come parte dell’architettura in Adobe Experience Manager.
 
