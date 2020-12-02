@@ -30,13 +30,13 @@ Gruppi di utenti chiusi (CUG) è una funzione utilizzata per limitare l’access
 * I criteri CUG vengono ereditati automaticamente dalle sottocartelle e dalle risorse applicate.
 * I criteri CUG possono essere sostituiti dalle sottocartelle impostando un nuovo criterio CUG. Questo dovrebbe essere utilizzato con cautela e non è considerata una best practice.
 
-## Rappresentazione CUG nel JCR {#cug-representation-in-the-jcr}
+## Rappresentazione CUG in JCR {#cug-representation-in-the-jcr}
 
 ![Rappresentazione CUG nel JCR](assets/closed-user-groups/folder-properties-closed-user-groups.png)
 
 We.Retail Members Group aggiunto come gruppo di utenti chiuso alla cartella: /content/dam/we-retail/en/beta-products
 
-Un mix di **rep:CugMixin** viene applicato alla cartella **/content/dam/we-retail/en/beta-products** . Un nodo di **rep:cugPolicy** viene aggiunto sotto la cartella e noi-retail-members viene specificato come entità. Un altro mix di **granite:AuthenticationRequired** viene applicato alla cartella beta-products e la proprietà** granite:loginPath** specifica la pagina di login da utilizzare se un utente non è autenticato e tenta di richiedere una risorsa sotto la cartella **beta-products** .
+Un mixin di **rep:CugMixin** viene applicato alla cartella **/content/dam/we-retail/en/beta-products**. Un nodo di **rep:cugPolicy** viene aggiunto sotto la cartella e i membri di commercio al dettaglio vengono specificati come entità. Un altro mix di **granite:AuthenticationRequired** viene applicato alla cartella beta-products e la proprietà** granite:loginPath** specifica la pagina di login da utilizzare se un utente non è autenticato e tenta di richiedere una risorsa sotto la cartella **beta-products**.
 
 Descrizione JCR seguente:
 
@@ -56,7 +56,7 @@ Sia i gruppi di utenti chiusi (CUG) che gli elenchi di controllo degli accessi (
 
 |  | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Uso previsto | Configura e applica le autorizzazioni per il contenuto nell’istanza di AEM **corrente** . | Configurare i criteri CUG per il contenuto nell’istanza AEM’ **autore** . Applicate criteri CUG per il contenuto nelle istanze di **pubblicazione** AEM. |
+| Uso previsto | Configura e applica le autorizzazioni per il contenuto nell&#39;istanza di AEM **corrente**. | Configurare i criteri CUG per il contenuto nell&#39;istanza AEM **author**. Applicate criteri CUG per il contenuto nelle istanze AEM **publish**. |
 | Livelli di autorizzazione | Definisce le autorizzazioni concesse/negate per utenti/gruppi per tutti i livelli: Lettura, Modifica, Crea, Elimina, Lettura ACL, Modifica ACL, Replica. | Consente l&#39;accesso in lettura a un set di utenti/gruppi. Rifiuta l’accesso in lettura a tutti gli altri utenti/gruppi. |
 | Replica | Gli ACL non vengono replicati con il contenuto. | I criteri CUG vengono replicati con il contenuto. |
 
