@@ -25,7 +25,7 @@ ht-degree: 0%
 
 È possibile precompilare i campi di un modulo adattivo utilizzando i dati esistenti. Quando un utente apre un modulo, i valori di tali campi vengono precompilati. Esistono diversi modi per precompilare i campi modulo adattivo. In questo articolo verrà analizzata la precompilazione del modulo adattivo utilizzando  servizio di precompilazione AEM Forms.
 
-Per ulteriori informazioni sui vari metodi per precompilare i moduli adattivi, [consultare la presente documentazione](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
+Per ulteriori informazioni sui vari metodi per precompilare i moduli adattivi, [seguire questa documentazione](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
 Per precompilare il modulo adattivo utilizzando il servizio precompila, sarà necessario creare una classe che implementa l&#39;interfaccia DataProvider. Il metodo getPrefillData avrà la logica per creare e restituire i dati che il modulo adattivo utilizzerà per precompilare i campi. In questo metodo, è possibile recuperare i dati da qualsiasi origine e restituire il flusso di input del documento dati. Il codice di esempio seguente recupera le informazioni del profilo utente dell&#39;utente connesso e crea un documento XML il cui flusso di input viene restituito per essere utilizzato dai moduli adattivi.
 
@@ -88,8 +88,8 @@ public class PrefillAdaptiveForm implements DataProvider {
 Per testare questa funzionalità sul server, effettuare le seguenti operazioni
 
 * [Scaricare ed estrarre il contenuto del file zip sul computer](assets/prefillservice.zip)
-* Assicuratevi che le informazioni sul profilo [dell&#39;](http://localhost:4502/libs/granite/security/content/useradmin) utente che ha effettuato l&#39;accesso siano complete. Questo è un requisito necessario per il funzionamento del campione. Nell&#39;esempio non è presente alcun controllo degli errori per rilevare le proprietà del profilo utente mancanti.
-* Distribuzione del bundle tramite la console [AEM Web](http://localhost:4502/system/console/bundles)
+* Assicurati che le informazioni sul profilo [dell&#39;utente che ha eseguito l&#39;accesso ](http://localhost:4502/libs/granite/security/content/useradmin) siano compilate completamente. Questo è un requisito necessario per il funzionamento del campione. Nell&#39;esempio non è presente alcun controllo degli errori per rilevare le proprietà del profilo utente mancanti.
+* Distribuire il bundle utilizzando la [AEM console Web](http://localhost:4502/system/console/bundles)
 * Creazione di moduli adattivi con XSD
 * Associate &quot;Custom Aem Form Pre Fill Service&quot; come servizio di precompilazione per il modulo adattivo
 * Trascinare gli elementi dello schema sul modulo
@@ -99,5 +99,5 @@ Per testare questa funzionalità sul server, effettuare le seguenti operazioni
 >
 >Se il modulo adattivo è basato su XSD, assicurarsi che il documento XML restituito dal servizio di precompilazione corrisponda al file XSD su cui si basa il modulo adattivo.
 >
->Se il modulo adattivo non è basato su XSD, sarà necessario eseguire il binding manuale dei campi. Ad esempio, per eseguire un binding di un campo modulo adattivo con un elemento nome nei dati XML, utilizzare `/data/fname` il riferimento Binding del campo modulo adattivo.
+>Se il modulo adattivo non è basato su XSD, sarà necessario eseguire il binding manuale dei campi. Ad esempio, per eseguire un binding di un campo modulo adattivo con un elemento nome nei dati XML, utilizzare `/data/fname` nel riferimento del binding del campo modulo adattivo.
 
