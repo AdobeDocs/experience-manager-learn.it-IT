@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Questo articolo illustra i passaggi necessari per generare un pdf da un invio di moduli HTML5 (alias Forms Mobile). Questa demo spiega anche i passaggi necessari per aggiungere un’immagine al modulo HTML5 e unire l’immagine al PDF finale.
 
-Per una dimostrazione live di questa funzionalità, visitare il server [di](https://forms.enablementadobe.com/content/samples/samples.html?query=0) esempio e cercare &quot;Modulo mobile in PDF&quot;.
+Per una dimostrazione live di questa funzionalità, visitare il [server di esempio](https://forms.enablementadobe.com/content/samples/samples.html?query=0) e cercare &quot;Modulo mobile in PDF&quot;.
 
 Per unire i dati inviati nel modello xdp, eseguire le operazioni seguenti
 
@@ -84,7 +84,7 @@ $("#file1").click();
 });
 ```
 
-[Profilo](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles)personalizzato. L&#39;utilizzo di un profilo personalizzato facilita la manipolazione degli oggetti DOM HTML del modulo mobile. Un elemento file nascosto viene aggiunto a HTML.jsp. Quando l&#39;utente fa clic su &quot;Add Your Photo&quot;, viene attivato l&#39;evento click dell&#39;elemento file. Questo consente all&#39;utente di sfogliare e selezionare la foto da allegare. Quindi si utilizza l&#39;oggetto FileReader javascript per ottenere la stringa codificata base64 dell&#39;immagine. La stringa di immagine base64 è memorizzata nel campo di testo del modulo. Quando il modulo viene inviato, estraiamo questo valore e lo inseriamo nell’elemento img del codice XML. Questo XML viene quindi utilizzato per unire con il file xdp per generare il pdf finale.
+[Profilo](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles) personalizzato. L&#39;utilizzo di un profilo personalizzato facilita la manipolazione degli oggetti DOM HTML del modulo mobile. Un elemento file nascosto viene aggiunto a HTML.jsp. Quando l&#39;utente fa clic su &quot;Add Your Photo&quot;, viene attivato l&#39;evento click dell&#39;elemento file. Questo consente all&#39;utente di sfogliare e selezionare la foto da allegare. Quindi si utilizza l&#39;oggetto FileReader javascript per ottenere la stringa codificata base64 dell&#39;immagine. La stringa di immagine base64 è memorizzata nel campo di testo del modulo. Quando il modulo viene inviato, estraiamo questo valore e lo inseriamo nell’elemento img del codice XML. Questo XML viene quindi utilizzato per unire con il file xdp per generare il pdf finale.
 
 Il profilo personalizzato utilizzato per questo articolo è stato reso disponibile come parte delle risorse di questo articolo.
 
@@ -121,7 +121,7 @@ Per testare questa funzionalità sul vostro server, attenetevi alla seguente pro
 
 * [Scaricate e installate il pacchetto associato a questo articolo.](assets/pdf-from-mobile-form-submission.zip)
 
-* Assicuratevi che il profilo di invio URL e rendering HTML sia impostato correttamente visualizzando la pagina delle proprietà dell&#39; [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
+* Assicuratevi che il profilo di invio URL e rendering HTML sia impostato correttamente visualizzando la pagina delle proprietà della [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
 
 * [Anteprima XDP come HTML](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
 
