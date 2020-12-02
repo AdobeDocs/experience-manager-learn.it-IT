@@ -33,4 +33,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->È necessario eseguire l&#39;istanza [AEM in modalità Dynamic Media](https://docs.adobe.com/docs/en/aem/6-3/administer/content/dynamic-media/config-dynamic.html)
+>Eseguire l&#39;istanza [AEM in modalità Dynamic Media](https://docs.adobe.com/docs/en/aem/6-3/administer/content/dynamic-media/config-dynamic.html)
