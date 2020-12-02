@@ -27,14 +27,14 @@ Nelle versioni precedenti di Adobe Experience Manager (AEM), il risolutore delle
 
 In questo articolo viene descritta la creazione di un utente di sistema e la configurazione delle proprietà del mappatore utente.
 
-1. Andate a [http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)
+1. Passa a [http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)
 1. Login come &#39; admin &#39;
 1. Fare clic su &#39; Amministrazione utente &#39;
 1. Fare clic su &quot; Crea utente di sistema &quot;
 1. Impostate il tipo userid come &#39; data &#39; e fate clic sull&#39;icona verde per completare il processo di creazione dell&#39;utente del sistema
 1. [Open configMgr](http://localhost:4502/system/console/configMgr)
 1. Cercare &#39; Apache Sling Service User Mapper Service &#39; e fare clic per aprire le proprietà
-1. Fai clic sull&#39;icona *+* (più) per aggiungere la seguente mappatura dei servizi
+1. Fate clic sull&#39;icona *+* (più) per aggiungere la mappatura dei servizi seguente
 
    * DevelopingWithServiceUser.core:getresourceresolver=data
    * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
@@ -46,10 +46,10 @@ Nell’impostazione di configurazione sopra riportata, DevelopingWithServiceUser
 È inoltre possibile ottenere il risolutore delle risorse per conto dell&#39;utente fd-service. Questo utente del servizio viene utilizzato per document services. Ad esempio, se desiderate certificare/applicare diritti di utilizzo ecc., utilizzeremo il risolutore delle risorse dell&#39;utente del servizio fd per eseguire le operazioni
 
 1. [Scaricate e decomprimete il file zip associato a questo articolo.](assets/developingwithserviceuser.zip)
-1. Andate a [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
+1. Passa a [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 1. Caricare e avviare il bundle OSGi
 1. Verificare che il bundle sia in stato attivo
-1. È stato creato un utente *di* sistema e distribuito il bundle *Utente* servizio.
+1. È stato creato un *utente di sistema* e distribuito anche il *pacchetto utente di servizio*.
 
    Per fornire l&#39;accesso a /content, assegnate all&#39;utente di sistema (&#39; dati &#39;) le autorizzazioni di lettura sul nodo del contenuto.
 
