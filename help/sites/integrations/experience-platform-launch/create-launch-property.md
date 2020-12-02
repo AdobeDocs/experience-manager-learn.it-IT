@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Creare una proprietà Launch {#create-launch-property}
+# Creare una proprietà di avvio {#create-launch-property}
 
 Scopri come creare una proprietà Launch con la configurazione minima necessaria per impostare il resto dell’integrazione con Adobe Experience Manager. Gli utenti saranno introdotti nell’interfaccia utente di Launch e avranno informazioni su estensioni, regole e flussi di lavoro di pubblicazione.
 
@@ -26,7 +26,7 @@ Scopri come creare una proprietà Launch con la configurazione minima necessaria
 
 ## Passaggi successivi
 
-[AEM Connect con Launch mediante  I/O Adobe](connect-aem-launch-adobe-io.md)
+[Connect AEM with Launch using  Adobe I/O](connect-aem-launch-adobe-io.md)
 
 ## Risorse aggiuntive {#additional-resources}
 
