@@ -17,13 +17,13 @@ ht-degree: 2%
 ---
 
 
-# Rapporti sulle risorse{#using-reports-in-aem-assets}
+# Rapporti risorse{#using-reports-in-aem-assets}
 
  AEM Assets offre un framework di reporting a livello aziendale che consente di ridimensionare i repository di grandi dimensioni attraverso un&#39;esperienza utente intuitiva.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22140/?quality=12&learn=on)
 
-## Formule di Microsoft Excel {#excel-formulas}
+## Formule Microsoft Excel {#excel-formulas}
 
 Nel video vengono utilizzate le formule seguenti per generare il grafico Risorse per dimensione in Microsoft Excel.
 
@@ -54,7 +54,7 @@ Nel video vengono utilizzate le formule seguenti per generare il grafico Risorse
 =COUNTIFS(E2:E1000,">= 200000", E2:E1000,"<= 500000")
 ```
 
-#### Superiore a 500 KB {#greater-than-kb}
+#### Maggiore di 500 KB {#greater-than-kb}
 
 ```
 =COUNTIFS(E2:E1000,"> 500000")
@@ -62,4 +62,4 @@ Nel video vengono utilizzate le formule seguenti per generare il grafico Risorse
 
 ## Risorse aggiuntive{#additional-resources}
 
-Scarica [tutti i file Excel delle risorse con grafico](./assets/asset-reports/all-assets.xlsx)
+Scarica [tutti i file Excel delle risorse con Chart](./assets/asset-reports/all-assets.xlsx)
