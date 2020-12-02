@@ -24,7 +24,7 @@ ht-degree: 0%
 
  Integrazione dei dati AEM Forms consente di configurare e connettersi a origini dati diverse. I seguenti sono supportati out-of-the-box. Tuttavia, con poca personalizzazione, è possibile integrare anche altre origini dati.
 
-Database relazionali - MySQL, Microsoft SQL Server, IBM DB2 e Oracle RDBMS
+Database relazionali - MySQL, Microsoft SQL Server, IBM DB2 e  Oracle RDBMS
 1. AEM profilo utente
 1. Servizi Web RESTful
 1. Servizi Web basati su SOAP
