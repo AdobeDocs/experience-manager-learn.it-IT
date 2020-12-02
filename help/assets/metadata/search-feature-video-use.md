@@ -16,16 +16,16 @@ ht-degree: 0%
 ---
 
 
-# Utilizzo della funzione di ricerca in  AEM Assets{#using-search-in-aem-assets}
+# Utilizzo della ricerca in  AEM Assets{#using-search-in-aem-assets}
 
 In questi video, sono stati introdotti alcuni miglioramenti nella ricerca delle risorse in AEM. Gli autori possono incrementare determinate risorse nei risultati della ricerca per parole chiave aggiornando le rispettive proprietà dei metadati. Vengono inoltre esaminate alcune configurazioni avanzate per i predicati di Risorse OmniSearch.
 
-## Ricerca di incremento con i metadati delle risorse {#search-boost-asset}
+## Ricerca Incremento con metadati risorsa {#search-boost-asset}
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=9&learn=on)
 
 ## Configurazione avanzata di Predicati di ricerca per più valori e tag {#multi-value-tag-predicates}
 
-Il predicato **di ricerca** multivalore è reso disponibile per una semplice corrispondenza del testo nei risultati della ricerca. Sono stati apportati diversi miglioramenti al predicato Tag per un filtraggio più efficiente dei risultati di ricerca delle risorse.
+Il **predicato di ricerca multivalore** è disponibile per consentire una semplice corrispondenza del testo nei risultati di ricerca. Sono stati apportati diversi miglioramenti al predicato Tag per un filtraggio più efficiente dei risultati di ricerca delle risorse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16457/?quality=9&learn=on)
