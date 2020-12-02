@@ -35,13 +35,13 @@ Per impostazione predefinita, la registrazione della transazione è disabilitata
 
 Una volta attivato il reporting delle transazioni, è possibile inviare l&#39;Forms adattivo, generare documenti utilizzando document services o eseguire il rendering dei documenti di comunicazione interattiva per visualizzare il reporting delle transazioni in azione.
 
-## Visualizzazione del rapporto sulle transazioni {#viewing-transaction-report}
+## Visualizzazione del report delle transazioni {#viewing-transaction-report}
 
 Per visualizzare il rapporto sulla transazione, accedi a  AEM Forms come amministratore. Solo i membri del gruppo fd-Administrator possono visualizzare il rapporto sulle transazioni.
 
 Seleziona strumenti | Forms | Visualizza rapporto transazione
 
-o visualizzare il rapporto sulla transazione facendo clic [qui](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
+o visualizzare il rapporto sulla transazione facendo clic su [qui](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 
 ![TransctionReporting](assets/transactionreporting.gif)
 
@@ -53,5 +53,5 @@ Azioni come l&#39;invio di un modulo PDF, l&#39;utilizzo dell&#39;interfaccia ut
 
 Se visualizzi il rapporto sulle transazioni nell’istanza di creazione, accertati che la replica inversa sia configurata in tutte le istanze di pubblicazione.
 
-Per saperne di più sul reporting delle transazioni [fare clic qui](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
+Per ulteriori informazioni sulla segnalazione delle transazioni [fare clic qui](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
 
