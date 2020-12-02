@@ -1,16 +1,16 @@
 ---
-title: Guida introduttiva a AEM senza testa
-description: Un'esercitazione completa che illustra come creare ed esporre contenuti utilizzando AEM headless.
+title: Guida introduttiva ad AEM Headless
+description: Un tutorial completo che illustra come creare ed esporre contenuti utilizzando AEM Headless.
 translation-type: tm+mt
 source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
-# Guida introduttiva a AEM senza testa
+# Guida introduttiva ad AEM Headless
 
 Un&#39;esercitazione completa che illustra come creare ed esporre contenuti utilizzando AEM e utilizzati da un&#39;app mobile nativa, in uno scenario CMS headless.
 
@@ -28,6 +28,6 @@ Questa esercitazione tratterà i seguenti argomenti:
 
 ## Progetto GitHub
 
-Il codice sorgente e i pacchetti di contenuto sono disponibili nel progetto [GitHub](https://github.com/adobe/aem-guides-wknd-mobile)AEM Guide - WKND Mobile.
+Il codice sorgente e i pacchetti di contenuto sono disponibili nel [AEM Guide - WKND Mobile GitHub Project](https://github.com/adobe/aem-guides-wknd-mobile).
 
-Se si verifica un problema con l&#39;esercitazione o il codice, lasciare un problema [](https://github.com/adobe/aem-guides-wknd-mobile/issues)GitHub.
+Se si verifica un problema con l&#39;esercitazione o il codice, lasciare un [problema GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
