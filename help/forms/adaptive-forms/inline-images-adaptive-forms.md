@@ -67,7 +67,7 @@ function consumeImage (file) {
 
 ### Implementazione sul server
 
-* Scaricate e installate la libreria [](assets/inline-image-client-library.zip) client nell&#39;istanza AEM utilizzando AEM gestore pacchetti.
-* Scaricate e installate il modulo [di](assets/inline-image-af.zip) esempio nell&#39;istanza AEM utilizzando AEM gestore pacchetti.
-* Posizionate il browser per [aggiungere un’immagine in linea](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
+* Scaricate e installate la [libreria client](assets/inline-image-client-library.zip) nell&#39;istanza AEM utilizzando AEM gestore pacchetti.
+* Scaricate e installate il [modulo di esempio](assets/inline-image-af.zip) nell&#39;istanza AEM utilizzando AEM gestore pacchetti.
+* Posizionare il browser su [Aggiungi immagine in linea](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
 * Fate clic sul pulsante &quot;Allega la foto&quot; per aggiungere l&#39;immagine
