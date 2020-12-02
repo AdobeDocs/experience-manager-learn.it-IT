@@ -25,20 +25,20 @@ Questa esercitazione video illustra come definire un file InDesign  e tutte le r
 >[!VIDEO](https://video.tv.adobe.com/v/19293/?quality=9&learn=on)
 
 1. Scaricare e aprire il modello di file InDesign [****](assets/asset-templates-tutorial-video--supporting-files.zip)
-2. **Aprite il pannello Tag,** controllate la convenzione di denominazione dei tag e tenete presente che gli elementi modificabili nel file InDesign  sono già dotati di tag. In AEM è possibile modificare solo gli elementi con tag.
+2. **Aprite il pannello Tag,** controllate la convenzione di denominazione dei tag e prendete nota del fatto che gli elementi modificabili nel file InDesign  sono già dotati di tag. In AEM è possibile modificare solo gli elementi con tag.
 
    * **Finestra > Utility > Tag**
 
-3. Sulla pagina, aggiungere un nuovo elemento di testo, fornire il testo &quot;Intestazione&quot; e applicare lo stile paragrafo **Intestazione** .
+3. Sulla pagina, aggiungere un nuovo elemento di testo, fornire il testo &quot;Header&quot; e applicare lo stile di paragrafo **Intestazione**.
 
    * **Finestra > Stili > Stili paragrafo**
 
    Quindi, create e applicate un nuovo tag denominato **Page2Heading.**
 
-4. Aggiungete l’immagine Logo FPO ([fornita nel file ZIP](assets/asset-templates-tutorial-video--supporting-files.zip)) all’elemento Logo nella pagina master.
+4. Aggiungete l&#39;immagine logo FPO ([fornita nel file ZIP](assets/asset-templates-tutorial-video--supporting-files.zip)) all&#39;elemento Logo nella pagina master.
 
-   * **Fare clic con il pulsante destro del mouse** e selezionare **Adatta > Opzioni adattamento cornice... > Adatta contenuto > Riempi cornice proporzionalmente**
-   [Ulteriori informazioni sulle opzioni](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames)di Adatta cornice, e che è adatto al caso d&#39;uso.
+   * **Fare clic con il pulsante destro del mouse** e **selezionare Adatta > Opzioni adattamento cornice... > Adatta contenuto > Riempi cornice proporzionalmente**
+   [Ulteriori informazioni sulle opzioni](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames) di Adatta cornice, e che è adatto al caso d&#39;uso.
 
 5. Copiate l’intestazione (Logo e Nome società) dal modello principale in Pagina e Pagina tramite Incolla nella stessa posizione.
 
@@ -56,24 +56,24 @@ Questa esercitazione video illustra come definire un file InDesign  e tutte le r
 
 >[!VIDEO](https://video.tv.adobe.com/v/19294/?quality=9&learn=on)
 
-1. **Avviate  InDesign Server** sulla porta 8080.
-2. Verifica che l&#39;istanza di **AEM Author sia configurata per interagire con il tuo InDesign Server** (e viceversa).
+1. **Avviate  porta InDesign** Serveron 8080.
+2. Verifica che l&#39;istanza di **AEM Author sia configurata per interagire con il tuo InDesign Server**(e viceversa).
 
    * [Configurazione Cloud Service di lavoro IDS](http://localhost:4502/etc/cloudservices/proxy/ids.html)
    * [Configurazione Cloud Service proxy cloud](http://localhost:4502/etc/cloudservices/proxy.html)
    * [Configurazione AEM Externalizer OSGi](http://localhost:4502/system/console/configMgr)
 
-3. **È stato caricato il file  InDesign in  AEM Assets** e AEM Workflow e  InDesign Server per elaborare completamente le risorse.
-4. **Crea un nuovo modello** in **Risorse > Modelli** e seleziona il file InDesign  caricato in AEM al passaggio 4.
-5. **Modificate il Modello** risorse creato al passaggio 5 e create i campi modificabili.
-6. Fate clic su **Fine** per generare le rappresentazioni finali ad alta fedeltà del Modello risorsa.
+3. **Caricato il file InDesign  in AEM** Risorse e AEM Workflow e  InDesign Server per elaborare completamente le risorse.
+4. **Create un nuovo** modello in  **Risorse >** Modelli, quindi selezionate il file InDesign  caricato in AEM al passaggio #4.
+5. **Modificate il** modello di risorsa creato al passaggio 5 e create i campi modificabili.
+6. Fate clic su **Fine** per generare le rappresentazioni finali ad alta fedeltà del modello di risorse.
 7. Fate clic sulla scheda Modello risorse per aprire e rivedere le rappresentazioni delle risorse per scaricare le rappresentazioni ad alta fedeltà.
 
 ## Risorse aggiuntive {#additional-resources}
 
  file di modello InDesign e immagini di supporto
 
-Scaricare [file modello InDesign e le immagini di supporto](assets/asset-templates-tutorial-video--supporting-files-1.zip)
+Download del file di modello di InDesign [ e supporto di Images](assets/asset-templates-tutorial-video--supporting-files-1.zip)
 
 * [Download  versione di prova InDesign CC](https://creative.adobe.com/products/download/indesign)
-* [Download della versione di prova InDesign Server](https://www.adobe.com/devnet/indesign/indesign-server-trial-downloads.html)
+* [Download della versione di prova InDesign Server ](https://www.adobe.com/devnet/indesign/indesign-server-trial-downloads.html)
