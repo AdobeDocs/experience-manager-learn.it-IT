@@ -47,7 +47,7 @@ Spiega query si trova in:
 
 ![Debugger QueryBuilder](./assets/other-tools/query-debugger.png)
 
-QueryBuilder Debugger è uno strumento basato sul Web che consente di eseguire il debug e comprendere le query di ricerca utilizzando AEM sintassi [QueryBuilder](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) .
+QueryBuilder Debugger è uno strumento basato sul Web che consente di eseguire il debug e comprendere le query di ricerca utilizzando AEM sintassi [QueryBuilder](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
 
 Il debugger di QueryBuilder si trova in:
 
@@ -57,9 +57,9 @@ Il debugger di QueryBuilder si trova in:
 
 ![Sling Log Tracer e AEM plug-in Chrome](./assets/other-tools/log-tracer.png)
 
-[Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html), fornito con il servizio QuickStart locale AEM SDK, consente di tracciare in modo approfondito le richieste HTTP, esponendo informazioni di debug dettagliate per ogni richiesta. Per abilitare questa funzione è necessario configurare [la configurazione OSGi](https://sling.apache.org/documentation/bundles/log-tracers.html#configuration-1) Log Tracer.
+[Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html), fornito con il servizio QuickStart locale AEM SDK, consente di tracciare in modo approfondito le richieste HTTP, esponendo informazioni di debug dettagliate per ogni richiesta. Per abilitare questa funzione, è necessario configurare la configurazione [Log Tracer OSGi](https://sling.apache.org/documentation/bundles/log-tracers.html#configuration-1).
 
-Il plug-in [open source](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US) AEM Chrome per il browser [Web](https://www.google.com/chrome/)Google Chrome, si integra con Log Tracer, esponendo le informazioni di debug direttamente in Chrome&#39;s Dev Tools.
+Il [AEM plug-in Chrome ](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US) open source per il [browser Web Google Chrome](https://www.google.com/chrome/), si integra con Log Tracer, esponendo le informazioni di debug direttamente in Chrome&#39;s Dev Tools.
 
 _Il plug-in AEM Chrome è uno strumento open source e  Adobe non fornisce supporto per esso._
 
