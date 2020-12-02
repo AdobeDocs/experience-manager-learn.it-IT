@@ -19,7 +19,8 @@ ht-degree: 3%
 # Casella in entrata AEM
 
 AEM Inbox riunisce le notifiche e le attività di vari componenti AEM, compresi i flussi di lavoro Forms. Quando viene attivato un flusso di lavoro dei moduli contenente un passaggio dell&#39;attività Assegna, l&#39;applicazione associata viene elencata come un&#39;attività nella Casella in entrata dell&#39;assegnatario.
-L&#39;interfaccia utente Inbox fornisce le viste elenco e calendario per visualizzare le attività. Potete anche configurare le impostazioni di visualizzazione. È possibile filtrare le attività in base a vari parametri. È possibile personalizzare una casella in entrata di un Experience Manager  per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare colonne aggiuntive in base ai dati di un flusso di lavoro
+L&#39;interfaccia utente Inbox fornisce le viste elenco e calendario per visualizzare le attività. Potete anche configurare le impostazioni di visualizzazione. È possibile filtrare le attività in base a diversi parametri
+È possibile personalizzare una casella in entrata  Experience Manager per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare colonne aggiuntive in base ai dati di un flusso di lavoro
 
 
 >[!NOTE]
@@ -28,7 +29,8 @@ L&#39;interfaccia utente Inbox fornisce le viste elenco e calendario per visuali
 
 ## Personalizzazione delle colonne
 
-[Avvia AEM inbox](http://localhost:4502/aem/inbox)Apri l&#39;Admin Control facendo clic sull&#39;icona Visualizzazione __ elenco e quindi selezionando _Admin Control_ come mostrato nella schermata seguente
+[Avvia AEM ](http://localhost:4502/aem/inbox)
+inboxApri l’Admin Control facendo clic sull’icona  _Elenco_ visualizzatori, quindi selezionando  _Admin_ Controlas (Controlli amministratore) nella schermata sottostante
 
 ![admin-control](assets/open-customization.png)
 
