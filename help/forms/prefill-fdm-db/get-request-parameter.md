@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Ottenere il parametro empID
 
-Il passaggio successivo consiste nell’accedere al parametro empID dall’URL. Il valore del parametro della richiesta empID viene quindi passato all&#39;operazione **_get_** service del modello dati del modulo.
+Il passaggio successivo consiste nell’accedere al parametro empID dall’URL. Il valore del parametro di richiesta empID viene quindi passato all&#39;operazione di servizio **_get_** del modello dati del modulo.
 Ai fini di questo corso abbiamo creato e fornito quanto segue
 
 * Modello di modulo adattivo denominato **_FDMDemo_**
@@ -31,7 +31,7 @@ Ai fini di questo corso abbiamo creato e fornito quanto segue
 
 In questo modo, il nostro codice nel jsp personalizzato verrà eseguito solo quando verrà eseguito il rendering del modulo adattivo basato su questo modello personalizzato
 
-* [Importare il pacchetto](assets/template-page-component.zip) utilizzando Gestione [pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+* [Importare il ](assets/template-page-component.zip) pacchetto utilizzando Gestione  [pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 * [Open fdmrequest.jsp](http://localhost:4502/crx/de/index.jsp#/apps/fdmdemo/component/page/fdmdemo/fdmrequest.jsp)
 * Rimuovete il commento dalle righe.
 * Salvare le modifiche
