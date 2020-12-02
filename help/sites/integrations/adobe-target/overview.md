@@ -34,7 +34,7 @@ In questo video, discutiamo tre approcci per l&#39;utilizzo di AEM e Target e ti
    1. [Esporta Frammenti esperienza AEM in Adobe Target](./export-experience-fragment-target.md)
    1. [Personalizzare una parte di una pagina Web utilizzando Offerte frammento esperienza](./create-target-activity.md)
 
-* __Scenario 2:__ Personalizzazione mediante Visual Experience Composer (VEC)
+* __Scenario 2:__ Personalizzazione con Visual Experience Composer (VEC)
 
    1. [Aggiungere  Adobe Target al sito Web AEM](./add-target-launch-extension.md)
    1. [Attivazione di una chiamata Adobe Target  da Launch](./load-and-fire-target.md)
