@@ -24,13 +24,13 @@ ContextHub è un framework per la memorizzazione, la manipolazione e la presenta
 
 >[!NOTE]
 >
->Utilizziamo il sito di riferimento WKND per questo video e non fa parte di AEM release. Puoi scaricare la versione [più recente qui](https://github.com/adobe/aem-guides-wknd/releases).
+>Utilizziamo il sito di riferimento WKND per questo video e non fa parte di AEM release. È possibile scaricare la [versione più recente qui](https://github.com/adobe/aem-guides-wknd/releases).
 
 Aggiungete ContextHub alle pagine per abilitare le funzionalità ContextHub e per collegarvi alle librerie JavaScript ContextHub. L&#39;API JavaScript ContextHub fornisce l&#39;accesso ai dati contestuali gestiti da ContextHub.
 
-## Aggiunta di ContextHub a un componente Pagina {#adding-contexthub-to-a-page-component}
+## Aggiunta di ContextHub a un componente pagina {#adding-contexthub-to-a-page-component}
 
-Per abilitare le funzionalità ContextHub e per collegarsi alle librerie JavaScript ContextHub, includi il `contexthub` componente nella `<head>` sezione della pagina Web. Il codice HTL per il componente pagina è simile al seguente esempio:
+Per abilitare le funzioni ContextHub e per collegarsi alle librerie JavaScript ContextHub, includete il componente `contexthub` nella sezione `<head>` della pagina Web. Il codice HTL per il componente pagina è simile al seguente esempio:
 
 ```java
 <!--/* Include Context Hub */-->
@@ -38,15 +38,15 @@ Per abilitare le funzionalità ContextHub e per collegarsi alle librerie JavaScr
 */-->
 ```
 
-## Configurazione del sito e segmenti ContextHub {#site-configuration-and-contexthub-segments}
+## Segmenti di configurazione del sito e ContextHub {#site-configuration-and-contexthub-segments}
 
-ContextHub include un motore di segmentazione che gestisce i segmenti e determina quali segmenti vengono risolti per il contesto corrente. Sono definiti diversi segmenti. Puoi utilizzare l&#39;API Javascript per [determinare i segmenti](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments)risolti. Attiva i segmenti ContextHub per il tuo sito in Browser [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)di configurazione.
+ContextHub include un motore di segmentazione che gestisce i segmenti e determina quali segmenti vengono risolti per il contesto corrente. Sono definiti diversi segmenti. Puoi utilizzare l&#39;API Javascript per [determinare i segmenti risolti](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments). Abilita i segmenti ContextHub per il tuo sito in [[!UICONTROL Browser di configurazione]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html).
 
-## Creazione di segmenti {#create-segments}
+## Crea segmenti {#create-segments}
 
 Creare segmenti AEM che fungono da regole per i teaser. In altre parole, definiscono quando il contenuto all’interno di un teaser viene visualizzato su una pagina Web. Il contenuto può quindi essere mirato per le esigenze e gli interessi del visitatore, a seconda dei segmenti di corrispondenza.
 
-## Assegnazione della configurazione cloud, del percorso del segmento e del percorso ContextHub al sito {#assigning-cloud-configuration-segment-path-and-contexthub-path-to-your-site}
+## Assegnazione di configurazione cloud, percorso segmento e percorso ContextHub al sito {#assigning-cloud-configuration-segment-path-and-contexthub-path-to-your-site}
 
 Assegnazione del percorso di configurazione di Cloud, del percorso di segmentazione e del percorso ContextHub al nodo principale del sito per creare un&#39;esperienza personalizzata per il pubblico. Utilizzando ContextHub, puoi manipolare i dati contestuali e testare i segmenti risolti.
 
