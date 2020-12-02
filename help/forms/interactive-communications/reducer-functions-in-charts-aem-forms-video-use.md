@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Utilizzo delle funzioni di riduzione in  AEM Forms - Grafici{#using-reducer-functions-in-aem-forms-charts}
+# Utilizzo delle funzioni di riduzione in  AEM Forms - Charts{#using-reducer-functions-in-aem-forms-charts}
 
 Le funzioni di riduzione sono utilizzate per aggregare o raggruppare i valori visualizzati nel grafico.
 
