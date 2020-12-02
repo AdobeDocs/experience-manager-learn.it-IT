@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Autorizzazioni di base
 
-Gestire l’accesso degli utenti nelle cartelle [delle risorse](./baseline-folders.md) di base è un aspetto fondamentale per la governance e garantisce che i processi possano essere supportati correttamente.
+Gestire l&#39;accesso degli utenti nelle cartelle delle risorse [baseline](./baseline-folders.md) è un aspetto fondamentale per la governance e garantisce che i processi possano essere supportati correttamente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37696/?quality=12&learn=on&hidetitle=true)
