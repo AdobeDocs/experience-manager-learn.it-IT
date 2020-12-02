@@ -35,9 +35,9 @@ Asset Sourcing di Brand Portal viene utilizzato per raccogliere le risorse da ag
 
 *Experience Manager Per utilizzare Asset Sourcing è richiesto Author 6.5 SP2 (6.5.2) o versione successiva*
 
-Per istruzioni su come configurare e impostare l&#39;origine delle risorse in  Experience Manager autore, consultate [Abilita autore Experience Manager per l&#39;origine](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/configure-asset-sourcing-in-aem/brand-portal-enable-asset-sourcing.html) delle risorse.
+Per istruzioni su come configurare e impostare l&#39;origine delle risorse in  Experience Manager, consultate [Abilita autore  Experience Manager per l&#39;origine delle risorse](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/configure-asset-sourcing-in-aem/brand-portal-enable-asset-sourcing.html).
 
-## Brand Portal febbraio 2019 Funzionalità e miglioramenti{#brand-portal-features-and-enhancements-644}
+## Brand Portal febbraio 2019 Feature e miglioramenti{#brand-portal-features-and-enhancements-644}
 
 >[!VIDEO](https://video.tv.adobe.com/v/26354/?quality=9&learn=on)
 
@@ -53,7 +53,7 @@ Continua a leggere per saperne di più sulla ricerca parziale di testo e caratte
 
 È ora possibile cercare le risorse specificando solo una parte, ovvero una parola o due, della frase ricercata nel riquadro di filtraggio.
 
-**Caso** di utilizzo: La ricerca di frasi parziali è utile quando non si è sicuri della combinazione esatta di parole che si verificano nella frase cercata.
+**Caso**  di utilizzo: La ricerca di frasi parziali è utile quando non si è sicuri della combinazione esatta di parole che si verificano nella frase cercata.
 
 Ad esempio, se il modulo di ricerca in Brand Portal utilizza Property Predicate per la ricerca parziale sul titolo delle risorse, specificando il termine camp vengono restituite tutte le risorse con la parola camp nella frase del titolo.
 
@@ -61,7 +61,7 @@ Ad esempio, se il modulo di ricerca in Brand Portal utilizza Property Predicate 
 
 Il Portale marchio consente di utilizzare l&#39;asterisco (*) nella query di ricerca insieme a una parte della parola nella frase cercata.
 
-**Caso** di utilizzo: se non si è sicuri delle parole esatte che si trovano nella frase ricercata, è possibile utilizzare una ricerca con caratteri jolly per riempire gli spazi vuoti nella query di ricerca.
+**Caso**  di utilizzo:se non sei sicuro delle parole esatte che si trovano nella frase ricercata, puoi usare una ricerca con caratteri jolly per riempire gli spazi vuoti nella query di ricerca.
 
 Ad esempio, se specificate climb*, tutte le risorse con parole che iniziano con i caratteri che salgono nella frase del titolo se nel modulo di ricerca in Brand Portal viene utilizzato Predicato proprietà per la ricerca parziale sul titolo delle risorse.
 
@@ -73,12 +73,12 @@ Analogamente, specificando:
 #### Abilita gerarchia cartelle
 
 Gli amministratori possono ora configurare il modo in cui le cartelle vengono visualizzate agli utenti non amministratori (editor, visualizzatori e utenti ospiti) al momento dell&#39;accesso.
-[Abilita configurazione gerarchia](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) cartelle viene aggiunta in Impostazioni generali, nel pannello degli strumenti di amministrazione. Se la configurazione è:
+[Abilita configurazione ](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) gerarchia cartelle viene aggiunta in Impostazioni generali, nel pannello degli strumenti di amministrazione. Se la configurazione è:
 
 * Attivata, la struttura delle cartelle che inizia dalla cartella principale è visibile agli utenti non amministratori. Pertanto, gli viene concessa un&#39;esperienza di navigazione simile agli amministratori.
 * Disattivato, solo le cartelle condivise vengono visualizzate sulla pagina di destinazione.
 
-[Abilita la funzionalità Gerarchia](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) cartelle (se abilitata) consente di distinguere le cartelle con gli stessi nomi condivisi da gerarchie diverse. Al momento dell&#39;accesso, gli utenti non amministratori ora visualizzano le cartelle padre (e antenati) virtuali delle cartelle condivise.
+[Abilita la funzionalità ](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) Gerarchia cartelle (se abilitata) consente di distinguere le cartelle con gli stessi nomi condivisi da gerarchie diverse. Al momento dell&#39;accesso, gli utenti non amministratori ora visualizzano le cartelle padre (e antenati) virtuali delle cartelle condivise.
 
 Le cartelle condivise sono organizzate nelle rispettive directory nelle cartelle virtuali. È possibile riconoscere queste cartelle virtuali con un&#39;icona a forma di lucchetto.
 
@@ -103,7 +103,7 @@ Le codifiche video per contenuti multimediali dinamici possono essere scaricate 
 
 ### Pubblicazione pianificata su Brand Portal
 
-Il flusso di lavoro di pubblicazione delle risorse (e delle cartelle) da [AEM (6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) Istanza autore a Brand Portal può essere pianificato per una data e un’ora successive.
+Il flusso di lavoro di pubblicazione delle risorse (e delle cartelle) da [AEM (6.4.2.0)](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) Istanza autore a Brand Portal può essere pianificato per una data e un&#39;ora successive.
 
 Allo stesso modo, le risorse pubblicate possono essere rimosse dal portale in una data (ora) successiva, pianificando il flusso di lavoro Annulla pubblicazione da Brand Portal.
 
@@ -112,13 +112,13 @@ Allo stesso modo, le risorse pubblicate possono essere rimosse dal portale in un
 Le organizzazioni possono personalizzare l’URL del proprio portale utilizzando un prefisso alternativo nell’URL. Per ottenere un alias per il nome del tenant nell&#39;URL del portale esistente, le organizzazioni devono contattare  supporto del Adobe.
 
 Tenete presente che è possibile personalizzare solo il prefisso dell’URL del Portale marchio e non l’intero URL.
-Ad esempio, un&#39;organizzazione con un dominio esistente `wknd.brand-portal.adobe.com` può essere `wkndinc.brand-portal.adobe.com` creata su richiesta.
+Ad esempio, un&#39;organizzazione con un dominio esistente `wknd.brand-portal.adobe.com` può ottenere `wkndinc.brand-portal.adobe.com` creato su richiesta.
 
-Tuttavia, l&#39;istanza di AEM Author può essere [configurata](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) solo con l&#39;URL dell&#39;ID tenant e non con l&#39;alias del tenant (alternativo).
+Tuttavia, l&#39;istanza di AEM Author può essere [configurata](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) solo con l&#39;URL tenant e non con l&#39;URL tenant (alternativo).
 
-**Caso** di utilizzo: Le organizzazioni possono soddisfare le proprie esigenze di branding personalizzando l&#39;URL del portale, invece di attingere all&#39;URL fornito dal  Adobe.
+**Caso**  di utilizzo: Le organizzazioni possono soddisfare le proprie esigenze di branding personalizzando l&#39;URL del portale, invece di attingere all&#39;URL fornito dal  Adobe.
 
-## Brand Portal - dicembre 2018 Funzionalità e miglioramenti{#brand-portal-features-and-enhancements-642}
+## Brand Portal dicembre 2018 Feature e miglioramenti{#brand-portal-features-and-enhancements-642}
 
 >[!VIDEO](https://video.tv.adobe.com/v/23707/?quality=9&learn=on)
 
@@ -156,14 +156,14 @@ Sono state aggiunte sei nuove configurazioni per consentire agli amministratori 
 
 ### Altri miglioramenti
 
-* *Percorso della gerarchia delle cartelle nelle viste* scheda ed elenco — consente agli utenti di conoscere il percorso delle cartelle memorizzate in un’istanza di Brand Portal. Consente agli utenti di distinguere le cartelle con lo stesso nome all’interno di una gerarchia di cartelle diversa.
-* *Opzione* Panoramica — fornisce metadati agli utenti non amministratori sulla risorsa o sulla cartella selezionando la risorsa o la cartella, quindi selezionando l’opzione della panoramica dalla barra degli strumenti. Attualmente, visualizza titolo, data di creazione e percorso
+* *Percorso della gerarchia delle cartelle nelle viste*  scheda ed elenco consente agli utenti di conoscere il percorso delle cartelle memorizzate in un’istanza di Brand Portal. Consente agli utenti di distinguere le cartelle con lo stesso nome all’interno di una gerarchia di cartelle diversa.
+* *Opzione*  Panoramica: fornisce metadati agli utenti non amministratori sulla risorsa o sulla cartella selezionando la risorsa o la cartella, quindi selezionando l’opzione della panoramica dalla barra degli strumenti. Attualmente, visualizza titolo, data di creazione e percorso
 
-###  interfaccia utente host di I/O Adobe per configurare le integrazioni di autenticazione
+###  interfaccia utente host Adobe I/O per configurare le integrazioni di autenticazione
 
-Brand Portal utilizza &#39;interfaccia I/O Adobe [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) per creare un&#39;applicazione JWT, che consente di configurare integrazioni Auth per consentire &#39;integrazione AEM Assets con Brand Portal. In precedenza, l&#39;interfaccia utente per la configurazione delle integrazioni OAuth era ospitata in `https://marketing.adobe.com/developer/`. Per ulteriori informazioni sull’integrazione  AEM Assets con Brand Portal per la pubblicazione di risorse e raccolte in Brand Portal, consultate [Configurare ’integrazione AEM Assets con Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
+Brand Portal utilizza &#39;interfaccia Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) per creare un&#39;applicazione JWT, che consente di configurare integrazioni Auth per consentire &#39;integrazione AEM Assets con Brand Portal. In precedenza, l&#39;interfaccia utente per la configurazione delle integrazioni OAuth era ospitata in `https://marketing.adobe.com/developer/`. Per ulteriori informazioni sull&#39;integrazione  AEM Assets con Brand Portal per la pubblicazione di risorse e raccolte in Brand Portal, consultate [Configurare &#39;integrazione AEM Assets con Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
 
-## Brand Portal febbraio 2018 Funzionalità e miglioramenti{#brand-portal-features-and-enhancements-632}
+## Brand Portal febbraio 2018 Feature e miglioramenti{#brand-portal-features-and-enhancements-632}
 
 Nuove funzionalità migliorate orientate all&#39;allineamento del Portale del marchio con AEM.
 
@@ -210,7 +210,7 @@ Nuove funzionalità migliorate orientate all&#39;allineamento del Portale del ma
 * [Novità in Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/whats-new.html)
 * [Agenti di replica di AEM Author](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [Guida al download accelerato](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
-* [AEM Assets Brand Portal  Adobi Docs](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
-* [AEM Assets Dynamic Media  Adobe Docs](https://docs.adobe.com/docs/it/aem/6-3/author/assets/dynamic-media.html)
+* [ AEM Assets Brand Portal  Adobi Docs](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
+* [ AEM Assets Dynamic Media  Adobe Docs](https://docs.adobe.com/docs/it/aem/6-3/author/assets/dynamic-media.html)
 * [Download di Aspera Connect](https://downloads.asperasoft.com/connect2/)
 * [Aspera Connect Test Server](https://test-connect.asperasoft.com/)
