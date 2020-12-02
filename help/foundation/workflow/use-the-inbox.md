@@ -31,5 +31,5 @@ In questo video vengono trattati gli elementi di rilievo di AEM Inbox.
 * Console informazioni sul flusso di lavoro
 * Creazione di attività ad hoc
 * Visibilità attività e elemento di lavoro
-* [!DNL Inbox] e [!DNL Omnisearch] integrazione
-* [!DNL Inbox] e [!DNL AEM Projects] integrazione
+* [!DNL Inbox] e  [!DNL Omnisearch] integrazione
+* [!DNL Inbox] e  [!DNL AEM Projects] integrazione
