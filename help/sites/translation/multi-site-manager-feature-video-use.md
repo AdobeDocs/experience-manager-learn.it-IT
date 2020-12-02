@@ -22,13 +22,13 @@ ht-degree: 4%
 
 # Utilizzo di Multi-Site Manager {#using-multi-site-manager-with-aem-sites}
 
-[!UICONTROL Panoramica] di Live Copy e [!UICONTROL Blueprint Configuration Manager] sono interfacce AEM Author per l&#39;utilizzo della funzione Multi Site Manager di  Adobe Experience Manager Sites.
+[!UICONTROL Live Copy ] Overviewfinder e  [!UICONTROL Blueprint Configuration ] Manager sono interfacce AEM Author per l&#39;utilizzo della funzione Multi Site Manager di  Adobe Experience Manager Sites.
 
 ## Panoramica Live Copy {#live-copy-overview}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17054/?quality=9&learn=on)
 
-*Panoramica di Live Copy è un&#39;interfaccia utente touch utilizzata per gestire le copie live e i rispettivi blueprint. Questa funzione, introdotta nella AEM 6.3, sostituisce il centro di controllo Blueprint dell’interfaccia classica.*
+*Panoramica di Live Copy è un&#39;interfaccia utente touch utilizzata per gestire le copie live e i rispettivi blueprint. Questa funzione, introdotta in AEM 6.3, sostituisce il centro di controllo Blueprint dell&#39;interfaccia classica.*
 
 ## Gestione configurazione Blueprint - Interfaccia touch {#blueprint-config-mgr}
 
