@@ -23,12 +23,12 @@ ht-degree: 0%
 
  AEM Forms 6.5 ha introdotto la possibilità di aggiungere dinamicamente elementi a un componente di gruppo di scelta Forms adattivo come caselle di controllo, pulsanti di scelta e elenco immagini.
 
-[Questa funzionalità è disponibile dal vivo sul server](https://forms.enablementadobe.com/content/samples/samples.html?query=0)Samples. Cerca elementi casella di controllo dinamica e clicca su &quot;Prova&quot;
+[Questa funzionalità è disponibile dal vivo sul server](https://forms.enablementadobe.com/content/samples/samples.html?query=0) Samples. Cerca elementi casella di controllo dinamica e clicca su &quot;Prova&quot;
 
 
 È possibile aggiungere elementi utilizzando l&#39;editor visivo e l&#39;editor di codice, a seconda del caso d&#39;uso.
 
-**Utilizzo dell’editor visivo:** È possibile compilare gli elementi del gruppo di scelta dai risultati di una chiamata di funzione o di un servizio. Ad esempio, potete impostare gli elementi del gruppo di scelta utilizzando la risposta di una chiamata REST API.
+**Utilizzando l&#39;editor visivo:** è possibile compilare gli elementi del gruppo di scelta dai risultati di una chiamata di funzione o di un servizio. Ad esempio, potete impostare gli elementi del gruppo di scelta utilizzando la risposta di una chiamata REST API.
 
 Nella schermata seguente, stiamo impostando le opzioni del periodo di prestito (anni) sui risultati di una chiamata di servizio chiamata getLoanPeriods.
 
