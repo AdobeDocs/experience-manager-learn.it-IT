@@ -19,6 +19,6 @@ ht-degree: 4%
 
 # Introduzione a [!DNL Sling] {#introduction-sling}
 
-Un&#39;introduzione a [!DNL Sling], un framework web open-source [!DNL RESTful] che fa parte dello stack di tecnologia sottostante di Adobe Experience Manager.
+Introduzione a [!DNL Sling], un framework Web open-source [!DNL RESTful] che fa parte dello stack di tecnologia sottostante di Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32032/?quality=12&learn=on)
