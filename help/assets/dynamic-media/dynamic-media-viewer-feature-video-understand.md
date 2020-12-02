@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# Il visualizzatore delle risorse con AEM elementi multimediali dinamici{#understanding-the-asset-viewer-with-aem-dynamic-media}
+# Il visualizzatore delle risorse con AEM elemento multimediale dinamico{#understanding-the-asset-viewer-with-aem-dynamic-media}
 
 AEM miglioramenti al visualizzatore per contenuti multimediali dinamici consentono agli autori AEM definire e personalizzare le risorse esperienza da presentare agli utenti del sito Web.
 
