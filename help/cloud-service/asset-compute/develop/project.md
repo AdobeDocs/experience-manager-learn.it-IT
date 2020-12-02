@@ -1,6 +1,6 @@
 ---
-title: Creazione di un progetto Asset Compute per l'estensibilità di Asset Compute
-description: I progetti Asset Compute sono progetti Node.js, generati utilizzando l'interfaccia CLI I/O del Adobe , che aderiscono a una determinata struttura che consente loro di essere distribuiti in Adobe I/O Runtime e integrati con AEM come Cloud Service.
+title: Creare un progetto di Asset compute  per  estensibilità del Asset compute
+description: ' progetti di Asset compute sono progetti Node.js, generati utilizzando l''interfaccia CLI di Adobe I/O , che aderiscono a una determinata struttura che consente loro di essere distribuiti in Adobe I/O Runtime e integrati con AEM come Cloud Service.'
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -18,29 +18,29 @@ ht-degree: 0%
 ---
 
 
-# Creazione di un progetto di calcolo risorse
+# Creare un progetto di Asset compute 
 
-I progetti Asset Compute sono progetti Node.js, generati utilizzando l&#39;interfaccia CLI I/O del Adobe , che aderiscono a una determinata struttura che consente loro di essere distribuiti in Adobe I/O Runtime e integrati con AEM come Cloud Service. Un singolo progetto Asset Compute può contenere uno o più lavoratori Asset Compute, ciascuno dei quali dispone di un punto finale HTTP separato a cui fa riferimento un AEM come profilo di elaborazione Cloud Service.
+ progetti di Asset compute sono progetti Node.js, generati utilizzando l&#39;interfaccia CLI di Adobe I/O , che aderiscono a una determinata struttura che consente loro di essere distribuiti in Adobe I/O Runtime e integrati con AEM come Cloud Service. Un singolo progetto di Asset compute  può contenere uno o più Asset compute , ciascuno dei quali dispone di un punto finale HTTP separato a cui viene fatto riferimento da un AEM come profilo di elaborazione Cloud Service.
 
 ## Generare un progetto
 
 >[!VIDEO](https://video.tv.adobe.com/v/40197/?quality=12&learn=on)
 
-_Click-through per la generazione di un progetto Asset Compute (nessun audio)_
+_Click-through della generazione di un progetto di Asset compute  (nessun audio)_
 
 
-Utilizzate il plug-in [di calcolo risorse CLI I/O di](../set-up/development-environment.md#aio-cli) Adobe per generare un nuovo progetto di calcolo risorse vuoto.
+Utilizzate il plug-in di Asset compute [ CLI  Adobe I/O ](../set-up/development-environment.md#aio-cli) per generare un nuovo progetto Asset compute  vuoto.
 
 1. Dalla riga di comando, andate alla cartella in cui si trova il progetto.
 1. Dalla riga di comando, eseguire `aio app init` per iniziare la generazione interattiva di CLI.
-   + Questo potrebbe generare un browser Web che richiede l&#39;autenticazione per  I/O Adobe. In caso affermativo, fornite le credenziali del vostro Adobe  associato ai servizi e ai prodotti [di Adobe ](../set-up/accounts-and-services.md)richiesti. Se non riuscite ad accedere, seguite [queste istruzioni su come generare un progetto](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user).
+   + Questo potrebbe generare un browser Web che richiede l&#39;autenticazione per  Adobe I/O. In caso contrario, fornisci le credenziali  Adobe associate ai [servizi e prodotti  Adobe richiesti](../set-up/accounts-and-services.md). Se non è possibile effettuare l&#39;accesso, seguire [queste istruzioni su come generare un progetto](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user).
 1. __Seleziona organizzazione__
    + Selezionare l&#39;organizzazione  Adobe che ha AEM come Cloud Service, Project Firefly è registrato a
 1. __Seleziona un progetto__
-   + Individuate e selezionate il progetto. Questo è il titolo [del](../set-up/firefly.md) progetto creato dal modello del progetto Firefly, in questo caso `WKND AEM Asset Compute`
+   + Individuate e selezionate il progetto. Si tratta del [Titolo del progetto](../set-up/firefly.md) creato dal modello del progetto Firefly, in questo caso `WKND AEM Asset Compute`
 1. __Seleziona area di lavoro__
-   + Selezionare l&#39; `Development` area di lavoro
-1. __Quali  funzionalità dell&#39;app I/O di Adobe vuoi abilitare per questo progetto? Selezione dei componenti da includere__
+   + Selezionare l&#39;area di lavoro `Development`
+1. __Quali funzionalità  app Adobe I/O desiderate abilitare per questo progetto? Selezionare i componenti da includere__
    + Seleziona `Actions: Deploy runtime actions`
    + Utilizzare i tasti freccia per selezionare e lo spazio per deselezionare/selezionare, quindi premere Invio per confermare la selezione
 1. __Selezionare il tipo di azioni da generare__
@@ -52,43 +52,43 @@ Utilizzate il plug-in [di calcolo risorse CLI I/O di](../set-up/development-envi
 
 ## Generate console.json
 
-Dal livello principale del progetto Asset Compute appena creato, eseguite il comando seguente per generare un `console.json`.
+Dal livello principale del progetto di Asset compute  appena creato, eseguite il comando seguente per generare un `console.json`.
 
 ```
 $ aio app use
 ```
 
-Verificate che i dettagli dell’area di lavoro corrente siano corretti e fate clic `Y` o immettete per generare un `console.json`. Se `.env` e `.aio` vengono rilevati come già esistenti, toccate `x` per ignorarne la creazione.
+Verificate che i dettagli dell&#39;area di lavoro corrente siano corretti e fate abbastanza `Y` o immettete per generare un `console.json`. Se `.env` e `.aio` vengono rilevati come già esistenti, toccate `x` per ignorarne la creazione.
 
 ## Rivedere l&#39;anatomia del progetto
 
-Il progetto Asset Compute generato è un progetto Node.js per progetti Firefly di progetti di progetti  Adobe specializzati. Di seguito sono riportati i progetti idiosincratici di Asset Compute:
+Il progetto  Asset compute generato è un progetto Node.js per un progetto  Adobe specializzato Firefly, i seguenti sono idiosincratici per  progetto Asset compute:
 
-+ `/actions` contiene sottocartelle e ciascuna sottocartella definisce un lavoratore di elaborazione risorse.
++ `/actions` contiene sottocartelle e ogni sottocartella definisce un lavoratore Asset compute .
    + `/actions/<worker-name>/index.js` definisce il codice JavaScript eseguito per eseguire il lavoro del lavoratore.
-      + Il nome della cartella `worker` è un valore predefinito e può essere qualsiasi cosa, purché sia registrato nel `manifest.yml`.
-      + È possibile definire più cartelle di lavoro `/actions` in base alle esigenze, ma queste devono essere registrate nel `manifest.yml`.
-+ `/test/asset-compute` contiene le suite di test per ciascun lavoratore. Come per la `/actions` cartella, `/test/asset-compute` possono contenere più sottocartelle, ciascuna corrispondente al lavoro che verifica.
+      + Il nome della cartella `worker` è un valore predefinito e può essere qualsiasi cosa, purché sia registrato in `manifest.yml`.
+      + È possibile definire più cartelle di lavoro in `/actions` in base alle esigenze, ma devono essere registrate nella cartella `manifest.yml`.
++ `/test/asset-compute` contiene le suite di test per ciascun lavoratore. Come per la cartella `/actions`, `/test/asset-compute` può contenere più sottocartelle, ciascuna corrispondente al lavoro di cui esegue il test.
    + `/test/asset-compute/worker`, che rappresenta una suite di test per un lavoratore specifico, contiene sottocartelle che rappresentano un caso di test specifico, insieme all&#39;input di test, ai parametri e all&#39;output previsto.
-+ `/build` contiene l’output, i registri e gli artefatti delle esecuzioni di test case per il calcolo delle risorse.
-+ `/manifest.yml` Definisce i lavoratori Asset Compute forniti dal progetto. Ogni implementazione del lavoratore deve essere enumerata in questo file per renderle disponibili per AEM come Cloud Service.
-+ `/console.json` definisce  configurazioni I/O Adobe
-   + Questo file può essere generato/aggiornato utilizzando il `aio app use` comando.
++ `/build` contiene l&#39;output, i file di registro e gli artefatti &#39;esecuzione di test case Asset compute.
++ `/manifest.yml` Definisce  lavoratori Asset compute forniti dal progetto. Ogni implementazione del lavoratore deve essere enumerata in questo file per renderle disponibili per AEM come Cloud Service.
++ `/console.json` definisce  configurazioni Adobe I/O
+   + Questo file può essere generato/aggiornato utilizzando il comando `aio app use`.
 + `/.aio` contiene configurazioni utilizzate dallo strumento CLI aio.
-   + Questo file può essere generato/aggiornato utilizzando il `aio app use` comando.
-+ `/.env` definisce le variabili di ambiente in una `key=value` sintassi e contiene segreti che non devono essere condivisi. Questo può essere generato o Per proteggere questi segreti, questo file NON deve essere archiviato in Git e viene ignorato tramite il `.gitignore` file predefinito del progetto.
-   + Questo file può essere generato/aggiornato utilizzando il `aio app use` comando.
-   + Le variabili definite in questo file possono essere sostituite [esportando le variabili](../deploy/runtime.md) dalla riga di comando.
+   + Questo file può essere generato/aggiornato utilizzando il comando `aio app use`.
++ `/.env` definisce le variabili di ambiente in una  `key=value` sintassi e contiene segreti che non devono essere condivisi. Questo può essere generato o Per proteggere questi segreti, questo file NON deve essere archiviato in Git e viene ignorato tramite il file `.gitignore` predefinito del progetto.
+   + Questo file può essere generato/aggiornato utilizzando il comando `aio app use`.
+   + Le variabili definite in questo file possono essere sostituite da [esportando variabili](../deploy/runtime.md) nella riga di comando.
 
-Per maggiori dettagli sulla revisione della struttura del progetto, consulta l&#39; [Anatomia di un progetto](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application)Firefly  Adobe.
+Per ulteriori dettagli sulla revisione della struttura del progetto, vedere l&#39; [Anatomia di un progetto Firefly del Adobe ](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application).
 
-La maggior parte dello sviluppo viene eseguita nella `/actions` cartella che sta sviluppando le implementazioni dei lavoratori e in `/test/asset-compute` scrittura dei test per i lavoratori di calcolo delle risorse personalizzati.
+La maggior parte dello sviluppo avviene nella cartella `/actions` che sta sviluppando implementazioni dei lavoratori e in `/test/asset-compute` test di scrittura per i lavoratori dei Asset compute  personalizzati.
 
-## Progetto Asset Compute su Github
+## Progetto di Asset compute  su Github
 
-Il progetto definitivo Asset Compute è disponibile su Github all&#39;indirizzo:
+Il progetto finale del Asset compute  è disponibile su Github all&#39;indirizzo:
 
 + [aem-guide-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
-_Github contiene lo stato finale del progetto, popolato completamente con i casi di lavoro e test, ma non contiene credenziali, ad esempio. `.env`, `console.json` o `.aio`._
+_Github contiene lo stato finale del progetto, popolato completamente con i casi di lavoro e test, ma non contiene credenziali, ad esempio. `.env`,  `console.json` o  `.aio`._
 
