@@ -22,11 +22,11 @@ ht-degree: 0%
 ---
 
 
-# Utilizzo di funzioni e editor di codice personalizzati {#using-functions-and-code-editor}
+# Utilizzo di funzioni personalizzate ed editor di codice {#using-functions-and-code-editor}
 
 In questa parte, utilizzeremo funzioni personalizzate e l&#39;editor di codice per creare regole aziendali.
 
-in questa esercitazione hai già installato [ClientLib con una funzione](assets/client-libs-and-logo.zip) personalizzataprecedente.
+in questa esercitazione è già stata installata la [ClientLib con funzione personalizzata](assets/client-libs-and-logo.zip) precedente.
 
 In genere, una libreria client è costituita da file CSS e Javascript. Questa libreria client contiene un file javascript che espone una funzione per la compilazione dei valori degli elenchi a discesa.
 
@@ -39,7 +39,7 @@ In genere, una libreria client è costituita da file CSS e Javascript. Questa li
 
 >[!VIDEO](https://video.tv.adobe.com/v/28387?quality=9&learn=on)
 
-#### Convalida, pannello {#validate-panels-using-rule-editor}
+#### Convalida pannello {#validate-panels-using-rule-editor}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28409?quality=9&learn=on)
 
