@@ -19,7 +19,7 @@ ht-degree: 6%
 
 # Crea lib client
 
-Create [client lib](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/introduction/clientlibs.html) che includerà il codice per richiamare il metodo `doAjaxSubmitWithFileAttachment` dell&#39; `guideBridge` API sull&#39;evento click del pulsante identificato dal **savebutton** della classe CSS.  Trasmettiamo i dati del modulo adattivo `fileMap`e l&#39; `mobileNumber` ascolto all&#39;endpoint `**/bin/storeafdatawithattachments`
+Creare [client lib](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/introduction/clientlibs.html) che includerà il codice per richiamare il metodo `doAjaxSubmitWithFileAttachment` dell&#39;API `guideBridge` sull&#39;evento click del pulsante identificato dalla classe CSS **savebutton**.  I dati del modulo adattivo, `fileMap`, e la `mobileNumber` vengono passati all&#39;endpoint in ascolto a `**/bin/storeafdatawithattachments`
 
 Una volta salvati i dati del modulo, viene generato un ID applicazione univoco che viene presentato all&#39;utente in una finestra di dialogo. Quando si chiude la finestra di dialogo, l&#39;utente viene indirizzato al modulo che consente di recuperare il modulo adattivo salvato utilizzando l&#39;ID applicazione univoco.
 
@@ -67,6 +67,6 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> È stata utilizzata la libreria [javascript](http://bootboxjs.com/examples.html) di avvio per visualizzare la finestra di dialogo
+> Abbiamo utilizzato [libreria javascript di avvio](http://bootboxjs.com/examples.html) per visualizzare la finestra di dialogo
 
 Le librerie client utilizzate in questo esempio possono essere [scaricate da qui](assets/client-libraries.zip)
