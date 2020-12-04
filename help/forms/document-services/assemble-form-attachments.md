@@ -10,9 +10,9 @@ version: 6.4,6.5
 kt: 6406
 thumbnail: kt-6406.jpg
 translation-type: tm+mt
-source-git-commit: a9fbd73f128998bb201ef8715e5e725e94ee1ede
+source-git-commit: 3e8b820939c2d39ef9a17f7d7aaef87cd9cdbbbb
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ String  []attachmentNames  = arg2.get("PROCESS_ARGS","string").toString().split(
 
 ### Crea DDX dai nomi degli allegati
 
-È quindi necessario creare un documento [Document Description XML (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) che viene utilizzato dal servizio Assembler per assemblare i documenti. Di seguito è riportato il DDX creato dagli argomenti del processo. Tenere presente che gli elementi di origine PDF sono nell&#39;ordine corretto, come specificato negli argomenti di processo.
+È quindi necessario creare un documento [Document Description XML (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) che viene utilizzato dal servizio Assembler per assemblare i documenti. Di seguito è riportato il DDX creato dagli argomenti del processo. L&#39;elemento NoForms consente di appiattire i documenti basati su XFA prima che vengano assemblati. Tenere presente che gli elementi di origine PDF sono nell&#39;ordine corretto, come specificato negli argomenti di processo.
 
-![ddx-xml](assets/ddx-xml.JPG)
+![ddx-xml](assets/ddx.PNG)
 
 ### Creare una mappa dei documenti
 
