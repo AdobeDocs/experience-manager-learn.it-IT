@@ -84,19 +84,19 @@ Le cartelle condivise sono organizzate nelle rispettive directory nelle cartelle
 
 La miniatura predefinita delle cartelle virtuali è la miniatura della prima cartella condivisa.
 
-### Supporto delle rappresentazioni video per contenuti multimediali dinamici
+### Supporto delle rappresentazioni video Dynamic Media
 
-Gli utenti la cui istanza di AEM Author è attivata dalla modalità Dynamic Media ibrida possono visualizzare in anteprima e scaricare le rappresentazioni per contenuti multimediali dinamici, oltre ai file video originali.
+Gli utenti la cui istanza di AEM Author è in modalità ibrida Dynamic Media possono visualizzare l&#39;anteprima e scaricare le rappresentazioni per contenuti multimediali dinamici, oltre ai file video originali.
 
-Per consentire l’anteprima e il download delle rappresentazioni multimediali dinamiche su account tenant specifici, gli amministratori devono specificare la configurazione di elementi multimediali dinamici (URL del servizio video (URL DM-Gateway) e l’ID di registrazione per recuperare il video dinamico) nella configurazione video dal pannello degli strumenti di amministrazione.
+Per consentire l’anteprima e il download delle rappresentazioni multimediali dinamiche su account tenant specifici, gli amministratori devono specificare Dynamic Media Configuration (URL del servizio video (URL DM-Gateway) e ID di registrazione per recuperare il video dinamico) nella configurazione video dal pannello degli strumenti di amministrazione.
 
-È possibile visualizzare in anteprima i video per elementi multimediali dinamici su:
+I video Dynamic Media possono essere visualizzati in anteprima su:
 
 * Pagina dei dettagli della risorsa
 * Vista a schede della risorsa
 * Pagina di anteprima della condivisione dei collegamenti
 
-Le codifiche video per contenuti multimediali dinamici possono essere scaricate da:
+Le codifiche video Dynamic Media possono essere scaricate da:
 
 * Brand Portal
 * Collegamento condiviso
