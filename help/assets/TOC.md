@@ -5,9 +5,9 @@ breadcrumb-title: Tutorial di AEM Assets
 sub-product: assets
 team: TM
 translation-type: tm+mt
-source-git-commit: 159e9d7ea363768f202db91a1d0555c2e57ebb13
+source-git-commit: aa349fba9e0f1df97316105ada62ff9b32501573
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '257'
 ht-degree: 32%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 32%
    + [Ricerca risorse](./adobe-asset-link/asset-search.md)
 
 + Dynamic Media{#dynamic-media}
-   + [Panoramica elemento multimediale dinamico](dynamic-media/dynamic-media-overview-feature-video-use.md)
+   + [Panoramica di Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Ritaglio avanzato](dynamic-media/smart-crop-feature-video-use.md)
    + [Frammenti esperienza](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
    + [Video interattivo](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
@@ -101,7 +101,8 @@ ht-degree: 32%
    + [Visualizzatori con  Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
    + [Applicazione desktop Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
    + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + [Video Dynamic Media Smart Crop](dynamic-media/dynamic-media-smart-crop-video.md)
+   + [Video di ritaglio avanzato Dynamic Media](dynamic-media/dynamic-media-smart-crop-video.md)
+   + [Componenti di base di Dynamic Media](dynamic-media/dynamic-media-core-components.md)
 
 + Traduzione {#translation}
    + [Traduzione file di origine](translation/source-file-translation-feature-video-use.md)
