@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6261
 thumbnail: 41195.jpg
 translation-type: tm+mt
-source-git-commit: e13a5171fbeb9e1eb5f78d1c691bc8b4b896a998
+source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '788'
 ht-degree: 1%
 
 ---
@@ -174,6 +174,8 @@ Il  Adobe Client Data Layer introduce un metodo standard per raccogliere e archi
 ## Passaggi successivi
 
 Per informazioni su come utilizzare il livello Dati client del Adobe basato sull&#39;evento per [raccogliere i dati della pagina e inviarli a  Adobe Analytics](../analytics/collect-data-analytics.md), consulta la seguente esercitazione.
+
+In alternativa, scopri come [personalizzare il livello dati client  Adobe con i componenti AEM](./data-layer-customize.md)
 
 
 ## Risorse aggiuntive {#additional-resources}
