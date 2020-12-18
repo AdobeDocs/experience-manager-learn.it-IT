@@ -4,9 +4,9 @@ user-guide-description: Raccolta di video e tutorial per Adobe Experience Manage
 breadcrumb-title: Tutorial di AEM Sites
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: 16c73d19584eefff3c9551d2a3174b5b8ed6d427
+source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '447'
 ht-degree: 23%
 
 ---
@@ -98,6 +98,7 @@ ht-degree: 23%
       + [Debug di un&#39;implementazione di Launch](integrations/experience-platform-launch/debug-launch-implementation.md)
    + Livello dati client  Adobe {#adobe-client-data-layer}
       + [Utilizzo del livello dati client del Adobe ](integrations/adobe-client-data-layer/data-layer-overview.md)
+      + [Personalizzare il livello dati client del Adobe ](integrations/adobe-client-data-layer/data-layer-customize.md)
    + Analisi {#analytics}
       + [Raccolta di dati di pagina con  Adobe Analytics](integrations/analytics/collect-data-analytics.md)
       + [Tenere traccia del componente su cui è stato fatto clic con  Adobe Analytics](integrations/analytics/track-clicked-component.md)
