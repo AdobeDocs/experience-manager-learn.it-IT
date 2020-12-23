@@ -6,9 +6,9 @@ user-guide-description: Raccolta di risorse AEM Forms per sviluppatori principia
 breadcrumb-title: Tutorial di AEM Forms
 index: y
 translation-type: tm+mt
-source-git-commit: c0db84f25334106c798d555c754d550113e91eac
+source-git-commit: 243e26e2403e3d7816a0dd024ffbe73743827c7c
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '902'
 ht-degree: 6%
 
 ---
@@ -169,7 +169,7 @@ ht-degree: 6%
    + [Parte3 - Pre-compilazione del modulo con informazioni sul profilo ACS](aem-forms-with-adobe-campaign/partthree.md)
    + [Parte4 - Crea profilo ACS utilizzando il modello dati modulo](aem-forms-with-adobe-campaign/partfour.md)
 
-+ Servizi basati su documenti {#document-services}
++ Servizi documentali {#document-services}
    + [Utilizzo di Assembler Service in  AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
    + [Utilizzo della cartella esaminata in  AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Utilizzo del servizio codice a barre in  AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
@@ -182,6 +182,7 @@ ht-degree: 6%
    + [Applica diritti di utilizzo al PDF caricato](document-services/apply-reader-extension-rights-to-pdf.md)
    + [Certifica documenti](document-services/certifying-documents-aem-forms-tutorial.md)
    + [Assembla allegati modulo](document-services/assemble-form-attachments.md)
+   + [Servizi di utilità](document-services/useful-utility-services.md)
 + Comunicazioni interattive per il canale di stampa
 {#ic-print-channel-tutorial}
    + [Introduzione](ic-print-channel-tutorial/introduction.md)
