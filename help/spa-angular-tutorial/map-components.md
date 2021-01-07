@@ -11,7 +11,7 @@ audience: developer
 kt: 5311
 thumbnail: 5311-spa-angular.jpg
 translation-type: tm+mt
-source-git-commit: ab5b92dd9c901075347cc521bf0abe0dfc0e5319
+source-git-commit: 28b5522e094a41d81116acb923dc0390478e2308
 workflow-type: tm+mt
 source-wordcount: '2387'
 ht-degree: 1%
@@ -481,7 +481,7 @@ I passaggi successivi saranno effettuati utilizzando l&#39;IDE di codice di Visu
 
    ![Modello di importazione VSCode](assets/map-components/import-aem-servervscode.png)
 
-4. Ripetere i passaggi per importare il contenuto, ma selezionare la cartella **policy** che si trova in `/conf/wknd-spa-angular/settings/wcm/templates/policies`.
+4. Ripetere i passaggi per importare il contenuto, ma selezionare la cartella **policy** che si trova in `/conf/wknd-spa-angular/settings/wcm/policies`.
 
 5.  Inspect il file `filter.xml` che si trova in `ui.content/src/main/content/META-INF/vault/filter.xml`.
 
