@@ -9,9 +9,9 @@ audience: architect, developer, implementer
 doc-type: tutorial
 kt: 2450
 translation-type: tm+mt
-source-git-commit: c85a59a8bd180d5affe2a5bf5939dabfb2776d73
+source-git-commit: 3f973e36531a2d04cbaf6bb8dd70b39fef7d8b2f
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ AEM utilizza la **chiave privata** generata per comunicare in modo sicuro con  A
 
 Andate a **AEM > [!UICONTROL Strumenti] > [!UICONTROL Sicurezza] > [!UICONTROL Utenti]** e **modificate l&#39;utente** con cui deve essere associata la chiave privata.
 
-### Creare un archivio di chiavi AEM {#create-an-aem-keystore}
+### Creare un AEM keystore {#create-an-aem-keystore}
 
 ![Crea KeyStore in ](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/aem--create-keystore.png)
 *AEMAEM >  [!UICONTROL Strumenti] >  [!UICONTROL Protezione] >  [!UICONTROL Utenti] > Modifica utente*
@@ -114,10 +114,14 @@ Se viene richiesto di creare un archivio di chiavi, eseguire questa operazione. 
 Nella console dell&#39;archivio chiavi dell&#39;utente, fare clic su **[!UICONTROL Aggiungi chiave privata dal file KeyStore]** e aggiungere le seguenti informazioni:
 
 * **[!UICONTROL Nuovo alias]**: l&#39;alias della chiave in AEM. Può essere qualsiasi cosa e non deve corrispondere al nome dell&#39;archivio di chiavi creato con il comando openssl.
-* **[!UICONTROL File]** archivio chiavi: l&#39;output del comando openssl pkcs12 (keystore.p12)
-* **[!UICONTROL Alias]** chiave privata: La password impostata nel comando openssl pkcs12 tramite  `-  passout` argomento.
+* **[!UICONTROL File]** KeyStore: l&#39;output del comando openssl pkcs12 (keystore.p12)
+* **[!UICONTROL Password]** file archivio chiavi: La password impostata nel comando openssl pkcs12 tramite  `-passout` argomento.
+* **[!UICONTROL Alias]** chiave privata: Il valore fornito all&#39; `-name` argomento nel comando openssl pkcs12 precedente (ovvero  `my-key`).
+* **[!UICONTROL Password]** chiave privata: La password impostata nel comando openssl pkcs12 tramite  `-passout` argomento.
 
-* **[!UICONTROL Password]** chiave privata: La password impostata nel comando openssl pkcs12 tramite  `-  passout` argomento.
+>[!CAUTION]
+>
+>La password del file KeyStore e la password della chiave privata sono uguali per entrambi gli input. Se si immette una password non corrispondente, la chiave non verrà importata.
 
 ### Verificare che la chiave privata sia caricata nell&#39;archivio di chiavi AEM {#verify-the-private-key-is-loaded-into-the-aem-keystore}
 
