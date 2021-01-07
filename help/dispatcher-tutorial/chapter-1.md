@@ -4,7 +4,7 @@ seo-title: Guida introduttiva a AEM Content Services - Capitolo 1 - Configurazio
 description: Capitolo 1 dell'AEM senza titolo l'impostazione della linea di base per l'istanza AEM per l'esercitazione.
 seo-description: Capitolo 1 dell'AEM senza titolo l'impostazione della linea di base per l'istanza AEM per l'esercitazione.
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 52824c178ddf930df134608ecb01bb661d6c514c
 workflow-type: tm+mt
 source-wordcount: '17502'
 ht-degree: 0%
@@ -599,7 +599,7 @@ Di nuovo, questo si basa sull&#39;esperienza reale. Abbiamo già visto tutti que
 >
 >Questo è un anti-modello. Non la usi. Mai.
 
-Hai mai visto parametri di query come `?ck=398547283745`? Sono chiamati cache-killer (&quot;ck&quot;). L&#39;idea è che se aggiungete un parametro di query la risorsa non verrà inserita nella cache. Inoltre, se aggiungete un numero casuale come valore del parametro (come &quot;398547283745&quot;) l’URL diventa univoco e accertatevi che nessun’altra cache tra il sistema AEM e lo schermo sia in grado di memorizzare nella cache. Solitamente, i sospetti intermedi sono una cache &quot;Varnish&quot; davanti al Dispatcher, una CDN o persino la cache del browser. Ancora: Non farlo. Desiderate che le risorse siano memorizzate nella cache il più a lungo possibile. La cache è tua amica. Non uccidere gli amici.
+Hai mai visto parametri di query come `?ck=398547283745`? Sono chiamati cache-killer (&quot;ck&quot;). L&#39;idea è che se aggiungete un parametro di query, la risorsa non verrà memorizzata nella cache. Inoltre, se aggiungete un numero casuale come valore del parametro (come &quot;398547283745&quot;) l’URL diventa univoco e accertatevi che nessun’altra cache tra il sistema AEM e lo schermo sia in grado di memorizzare nella cache. Solitamente, i sospetti intermedi sono una cache &quot;Varnish&quot; davanti al Dispatcher, una CDN o persino la cache del browser. Ancora: Non farlo. Desiderate che le risorse siano memorizzate nella cache il più a lungo possibile. La cache è tua amica. Non uccidere gli amici.
 
 #### Annullamento automatico
 
