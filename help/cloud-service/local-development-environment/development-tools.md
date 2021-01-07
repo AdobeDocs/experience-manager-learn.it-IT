@@ -10,10 +10,10 @@ audience: developer
 kt: 4267
 thumbnail: 25907.jpg
 translation-type: tm+mt
-source-git-commit: cb5f3c323c433c9321ba26ac1194be0cd225a405
+source-git-commit: debf13d8e376979548bcbf55f71661d8cb8eb823
 workflow-type: tm+mt
-source-wordcount: '1366'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -132,7 +132,7 @@ Il plug-in  Adobe I/O Cloud Manager consente all&#39;interfaccia CLI di aio di i
 
 Il plug-in  Adobe I/O Cloud Manager consente all&#39;interfaccia CLI di aio di generare ed eseguire  Asset compute tramite il comando `aio asset-compute`.
 
-1. Eseguire `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` per installare il plug-in per Asset compute [aio ](https://github.com/adobe/aio-cli-plugin-asset-compute).
+1. Eseguire `aio plugins:install @adobe/aio-cli-plugin-asset-compute` per installare il plug-in per Asset compute [aio ](https://github.com/adobe/aio-cli-plugin-asset-compute).
 
 ### Configurare l&#39;autenticazione  Adobe I/O CLI
 
