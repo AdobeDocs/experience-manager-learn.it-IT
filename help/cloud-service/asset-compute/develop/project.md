@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: 676d4bfceaaec3ae8d4feb9f66294ec04e1ecd2b
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,6 @@ ht-degree: 0%
 >[!VIDEO](https://video.tv.adobe.com/v/40197/?quality=12&learn=on)
 
 _Click-through della generazione di un progetto di Asset compute  (nessun audio)_
-
 
 Utilizzate il plug-in di Asset compute [ CLI  Adobe I/O ](../set-up/development-environment.md#aio-cli) per generare un nuovo progetto Asset compute  vuoto.
 
@@ -58,7 +57,21 @@ Dal livello principale del progetto di Asset compute  appena creato, eseguite il
 $ aio app use
 ```
 
-Verificate che i dettagli dell&#39;area di lavoro corrente siano corretti e fate abbastanza `Y` o immettete per generare un `console.json`. Se `.env` e `.aio` vengono rilevati come già esistenti, toccate `x` per ignorarne la creazione.
+Verificare che i dettagli dell&#39;area di lavoro corrente siano corretti, premere `Y` o immettere per generare un `console.json`. Se `.env` e `.aio` vengono rilevati come già esistenti, toccate `x` per ignorarne la creazione.
+
+Se si crea una nuova, o si sovrascrive `.env`, aggiungere di nuovo chiavi/valori mancanti alla nuova `.env`:
+
+```
+## please provide the following environment variables for the Asset Compute devtool. You can use AWS or Azure, not both:
+#ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
+#S3_BUCKET=
+#AWS_ACCESS_KEY_ID=
+#AWS_SECRET_ACCESS_KEY=
+#AWS_REGION=
+#AZURE_STORAGE_ACCOUNT=
+#AZURE_STORAGE_KEY=
+#AZURE_STORAGE_CONTAINER_NAME=
+```
 
 ## Rivedere l&#39;anatomia del progetto
 
