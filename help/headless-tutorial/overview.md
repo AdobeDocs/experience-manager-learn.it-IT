@@ -2,9 +2,9 @@
 title: AEM Esercitazioni senza titolo
 description: Una raccolta di esercitazioni su come utilizzare Adobe Experience Manager come CMS headless.
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '373'
 ht-degree: 5%
 
 ---
@@ -18,8 +18,8 @@ Adobe Experience Manager offre diverse opzioni per definire endpoint headless e 
 
 >[!CAUTION]
 >
-> L&#39;API AEM GraphQL per la distribuzione dei frammenti di contenuto verrà rilasciata all&#39;inizio del 2021.
-> La documentazione correlata è disponibile a scopo di anteprima.
+> L&#39;API AEM GraphQL per la distribuzione dei frammenti di contenuto è disponibile su richiesta.
+> Per abilitare l&#39;API per il AEM come programma di Cloud Service, contattate  supporto di Adobe.
 
 AEM GraphQL API per frammenti di contenuto
 supporta scenari CMS headless in cui le applicazioni client esterne eseguono il rendering delle esperienze utilizzando contenuto gestito in AEM.
