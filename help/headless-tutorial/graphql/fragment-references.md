@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6718
 thumbnail: KT-6718.jpg
 translation-type: tm+mt
-source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '858'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
-> L&#39;API AEM GraphQL per la distribuzione dei frammenti di contenuto verrà rilasciata all&#39;inizio del 2021.
-> La documentazione correlata è disponibile a scopo di anteprima.
+> L&#39;API AEM GraphQL per la distribuzione dei frammenti di contenuto è disponibile su richiesta.
+> Per abilitare l&#39;API per il AEM come programma di Cloud Service, contattate  supporto di Adobe.
 
 È possibile fare riferimento a un frammento di contenuto dall&#39;interno di un altro frammento di contenuto. Questo consente all&#39;utente di creare complessi modelli di dati con relazioni tra frammenti.
 
