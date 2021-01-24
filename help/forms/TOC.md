@@ -6,9 +6,9 @@ user-guide-description: Raccolta di risorse AEM Forms per sviluppatori principia
 breadcrumb-title: Tutorial di AEM Forms
 index: y
 translation-type: tm+mt
-source-git-commit: 243e26e2403e3d7816a0dd024ffbe73743827c7c
+source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '938'
 ht-degree: 6%
 
 ---
@@ -125,6 +125,18 @@ ht-degree: 6%
    + [Converti modulo PDF in modulo adattivo](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Configurare il modulo adattivo convertito](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Utilizzo di modelli XDP con  Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
++ Sign Multiple Forms{#sign-multiple-documents}
+   + [Introduzione](sign-multiple-documents/introduction.md)
+   + [Configura origine dati](sign-multiple-documents/configure-data-source.md)
+   + [Crea servizio OSGi](sign-multiple-documents/create-osgi-service.md)
+   + [Crea flusso di lavoro principale](sign-multiple-documents/create-main-workflow.md)
+   + [Aggiorna stato firma](sign-multiple-documents/update-signature-status.md)
+   + [Personalizza componente Riepilogo](sign-multiple-documents/customize-summary-component.md)
+   + [Crea libreria client](sign-multiple-documents/create-client-lib.md)
+   + [Crea modello di modulo](sign-multiple-documents/create-af-template.md)
+   + [Crea modulo iniziale](sign-multiple-documents/create-initial-form.md)
+   + [Creazione di Forms per la firma](sign-multiple-documents/create-forms-for-signing.md)
+   + [Verifica della soluzione](sign-multiple-documents/testing-and-trouble-shooting.md)
 + Variabili nel flusso di lavoro AEM{#variables-aem-workflow}
    + [Introduzione - Variabili nel flusso di lavoro](variables-aem-workflow/introduction.md)
    + [Variabili XML](variables-aem-workflow/part1.md)
@@ -169,7 +181,7 @@ ht-degree: 6%
    + [Parte3 - Pre-compilazione del modulo con informazioni sul profilo ACS](aem-forms-with-adobe-campaign/partthree.md)
    + [Parte4 - Crea profilo ACS utilizzando il modello dati modulo](aem-forms-with-adobe-campaign/partfour.md)
 
-+ Servizi documentali {#document-services}
++ Document Services {#document-services}
    + [Utilizzo di Assembler Service in  AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
    + [Utilizzo della cartella esaminata in  AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Utilizzo del servizio codice a barre in  AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
