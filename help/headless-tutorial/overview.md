@@ -2,10 +2,10 @@
 title: AEM Esercitazioni senza titolo
 description: Una raccolta di esercitazioni su come utilizzare Adobe Experience Manager come CMS headless.
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 5%
+source-wordcount: '460'
+ht-degree: 4%
 
 ---
 
@@ -31,7 +31,13 @@ Una moderna API per la distribuzione dei contenuti è fondamentale per l&#39;eff
 
 Per superare queste sfide, GraphQL fornisce un&#39;API basata su query che consente ai client di eseguire query AEM solo per il contenuto necessario e di ricevere utilizzando una singola chiamata API.
 
-* Scoprite come utilizzare AEM API GraphQL seguendo l&#39;esercitazione [Guida introduttiva alle API AEM GraphQL](./graphql/overview.md)
+* Scoprite come utilizzare AEM GraphQL API nella [Esercitazione iniziale con AEM GraphQL APIs tutorial](./graphql/overview.md)
+
+## Esercitazione di autenticazione basata su token
+
+AEM espone una varietà di endpoint HTTP con cui è possibile interagire in modo headless, da GraphQL, AEM Content Services all&#39;API HTTP Assets. Spesso, questi consumatori headless potrebbero dover autenticarsi per AEM per accedere ai contenuti o alle azioni protetti. Per facilitare questa fase, AEM supporta l&#39;autenticazione basata su token delle richieste HTTP da applicazioni, servizi o sistemi esterni.
+
+* Scoprite come autenticarsi per AEM tramite HTTP utilizzando i token di accesso in [Autenticazione per AEM come Cloud Service da un&#39;esercitazione di applicazione esterna](./authentication/overview.md)
 
 ## Esercitazione su AEM Content Services
 
@@ -39,7 +45,7 @@ AEM Content Services sfrutta AEM pagine tradizionali per comporre endpoint API R
 
 AEM Content Services consente le stesse astrazioni di contenuto utilizzate per la creazione di pagine Web in  AEM Sites, per definire il contenuto e gli schemi di queste API HTTP. L&#39;utilizzo di AEM pagine e componenti AEM consente agli esperti di marketing di comporre e aggiornare rapidamente API JSON flessibili in grado di alimentare qualsiasi applicazione.
 
-* Scoprite come utilizzare AEM Content Services per seguire l&#39;esercitazione [Guida introduttiva AEM Content Services](./content-services/overview.md)
+* Scoprite come utilizzare AEM Content Services nella [Guida introduttiva a AEM Content Services tutorial](./content-services/overview.md)
 
 ## AEM GraphQL e AEM Content Services
 
