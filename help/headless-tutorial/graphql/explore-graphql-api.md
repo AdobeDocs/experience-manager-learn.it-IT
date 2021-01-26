@@ -11,7 +11,7 @@ mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: bfcc9dbb70753f985a2e47f329dbb9f43f5805e2
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 0%
@@ -73,7 +73,7 @@ Un requisito comune consiste nel richiedere più frammenti di contenuto.
 
    `fullName` e  `occupation` sono proprietà semplici. Ricordate dal capitolo [Defining Content Fragment Models](./content-fragment-models.md) che `fullName` e `occupation` sono i valori utilizzati per definire la **Property Name** dei rispettivi campi.
 
-1. `pictureReference` e  `biography` rappresentano campi più complessi. Aggiornate la query con quanto segue per restituire i dati relativi ai campi `pictureReference` e `biography`.
+1. `pictureReference` e  `biographyText` rappresentano campi più complessi. Aggiornate la query con quanto segue per restituire i dati relativi ai campi `pictureReference` e `biographyText`.
 
    ```graphql
    {
@@ -82,7 +82,7 @@ Un requisito comune consiste nel richiedere più frammenti di contenuto.
          _path
          fullName
          occupation
-         biography {
+         biographyText {
            html
          }
          pictureReference {
@@ -97,7 +97,7 @@ Un requisito comune consiste nel richiedere più frammenti di contenuto.
    }
    ```
 
-   `biography` è un campo di testo a più righe e l&#39;API GraphQL ci consente di scegliere diversi formati per i risultati come  `html`,  `markdown`o  `json`   `plaintext`.
+   `biographyText` è un campo di testo a più righe e l&#39;API GraphQL ci consente di scegliere diversi formati per i risultati come  `html`,  `markdown`o  `json`   `plaintext`.
 
    `pictureReference` è un riferimento di contenuto e si prevede che sia un&#39;immagine, pertanto viene utilizzato  `ImageRef` l&#39;oggetto incorporato. Questo consente di richiedere dati aggiuntivi sul riferimento dell&#39;immagine, come i `width` e `height`.
 
