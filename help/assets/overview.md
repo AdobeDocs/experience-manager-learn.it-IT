@@ -3,9 +3,9 @@ title: Video e tutorial di AEM Assets
 description: Raccolta di video e tutorial per Adobe Experience Manager Assets
 sub-product: risorse, elementi multimediali dinamici
 translation-type: tm+mt
-source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
+source-git-commit: 94ea85d4a96bf9da62c5658961474a12663ac77b
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '227'
 ht-degree: 19%
 
 ---
@@ -16,6 +16,11 @@ ht-degree: 19%
 Adobe Experience Manager Assets è uno strumento di gestione delle risorse digitali AEM piattaforma che consente agli utenti di creare, gestire e condividere le proprie risorse digitali (immagini, video, documenti e clip audio) in un archivio basato su Web. Questa guida utente contiene video ed esercitazioni sulle numerose funzioni e funzionalità di  AEM Assets.
 
 ## Novità
+
+
+* **[Pubblica risorse (video)](./sharing/publish.md)**
+
+   *Scopri i vantaggi e i vantaggi della pubblicazione di risorse da AEM Author a AEM Publish*
 
 * **[Filigrane (video)](./advanced/watermarks.md)**
 
@@ -32,10 +37,6 @@ Adobe Experience Manager Assets è uno strumento di gestione delle risorse digit
 * **[Profili di elaborazione (video)](./configuring/processing-profiles.md)**
 
    *Scopri come richiamare i microservizi di Assets per rappresentare le risorse*
-
-* **[Utilizzo delle raccolte di risorse (video)](./search-and-discovery/collections.md)**
-
-   *Scoprite come le raccolte in  AEM Assets forniscono nuovi metodi per organizzare e scoprire le risorse*
 
 ## Prezzi del personale
 
@@ -68,11 +69,11 @@ Adobe Experience Manager Assets è uno strumento di gestione delle risorse digit
 </td>
 <td>
    <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-   <img alt="Panoramica elemento multimediale dinamico" src="./assets/overview/dynamic-media.png" />
+   <img alt="Panoramica di Dynamic Media" src="./assets/overview/dynamic-media.png" />
    </a>
    <div>
       <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-      <strong>Panoramica elemento multimediale dinamico</strong>
+      <strong>Panoramica di Dynamic Media</strong>
       </a>
    </div>
    <p>
