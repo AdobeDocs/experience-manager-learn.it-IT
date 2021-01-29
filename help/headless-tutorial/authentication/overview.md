@@ -10,9 +10,9 @@ audience: developer
 kt: 6785
 thumbnail: 330460.jpg
 translation-type: tm+mt
-source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
+source-git-commit: c4f3d437b5ecfe6cb97314076cd3a5e31b184c79
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Prima di seguire questa esercitazione, accertatevi che siano presenti le seguent
 
 1. L&#39;accesso all&#39;am AEM come ambiente Cloud Service (preferibilmente un ambiente di sviluppo o un programma sandbox)
 1. Iscrizione al AEM come servizi di authoring dell&#39;ambiente di Cloud Service AEM profilo di prodotto Amministratore
-1. Iscrizione o accesso al proprio amministratore di organizzazione IMS del Adobe  (dovrà eseguire un&#39;inizializzazione una tantum di [Service Credentials](./service-credentials.md))
+1. Iscrizione o accesso al proprio amministratore di organizzazione IMS del Adobe  (dovrà eseguire un&#39;inizializzazione una tantum delle [Credenziali del servizio](./service-credentials.md))
 1. Ultimo [sito WKND](https://github.com/adobe/aem-guides-wknd) implementato nell&#39;ambiente di Cloud Service
 
 ## Panoramica dell’applicazione esterna
@@ -41,29 +41,29 @@ Il flusso di esecuzione dell&#39;applicazione Node.js è il seguente:
 
 ![Applicazione esterna](./assets/overview/external-application.png)
 
-1. Applicazione Node.js richiamata dalla riga di comando
+1. L&#39;applicazione Node.js viene chiamata dalla riga di comando
 1. I parametri della riga di comando definiscono:
-   + AEM come host di Cloud Service a cui connettersi (`aem`)
+   + Il AEM come host del servizio Autore di Cloud Service a cui connettersi (`aem`)
    + La cartella di risorse AEM le cui risorse verranno aggiornate (`folder`)
    + Proprietà e valore dei metadati da aggiornare (`propertyName` e `propertyValue`)
    + Percorso locale del file che fornisce le credenziali necessarie per accedere AEM come Cloud Service (`file`)
-1. Il token di accesso utilizzato per l&#39;autenticazione a AEM è derivato dal file JSON delle credenziali fornito dai parametri della riga di comando
+1. Il token di accesso utilizzato per l&#39;autenticazione a AEM è derivato dal file JSON fornito tramite il parametro della riga di comando `file`
 
-   a. Se le credenziali di servizio utilizzate per lo sviluppo non locale vengono fornite nel JSON delle credenziali, il token di accesso viene recuperato  API IMS Adobe
-1. L&#39;applicazione utilizza il token di accesso per accedere AEM e elencare tutte le risorse nella cartella specificata nei parametri della riga di comando
-1. Per ogni risorsa della cartella, l&#39;applicazione aggiorna i metadati in base al nome e al valore della proprietà specificati nei parametri della riga di comando
+   a. Se le credenziali di servizio utilizzate per lo sviluppo non locale vengono fornite nel file JSON (`file`), il token di accesso viene recuperato  API IMS Adobe
+1. L&#39;applicazione utilizza il token di accesso per accedere AEM ed elencare tutte le risorse nella cartella specificata nel parametro della riga di comando `folder`
+1. Per ogni risorsa nella cartella, l&#39;applicazione aggiorna i metadati in base al nome e al valore della proprietà specificati nei parametri della riga di comando `propertyName` e `propertyValue`
 
 Sebbene questa applicazione di esempio sia Node.js, queste interazioni possono essere sviluppate utilizzando linguaggi di programmazione diversi ed eseguite da altri sistemi esterni.
 
 ## Token di accesso allo sviluppo locale
 
-I token di accesso allo sviluppo locale vengono generati per un AEM specifico come ambiente di Cloud Service e forniscono l&#39;accesso ai servizi Autore e Pubblica.  Questi token di accesso sono temporanei e possono essere utilizzati solo per lo sviluppo di applicazioni o sistemi esterni che interagiscono con AEM via HTTP. Invece di dover ottenere e gestire le credenziali di assistenza, uno sviluppatore può generare rapidamente e facilmente un token di accesso temporaneo che consenta loro di sviluppare la propria integrazione.
+I token di accesso allo sviluppo locale vengono generati per un AEM specifico come ambiente di Cloud Service e forniscono l&#39;accesso ai servizi Autore e Pubblica.  Questi token di accesso sono temporanei e devono essere utilizzati solo durante lo sviluppo di applicazioni o sistemi esterni che interagiscono con AEM via HTTP. Invece di dover ottenere e gestire le credenziali di assistenza, uno sviluppatore può generare rapidamente e facilmente un token di accesso temporaneo che consenta loro di sviluppare la propria integrazione.
 
 + [Come utilizzare il token di accesso allo sviluppo locale](./local-development-access-token.md)
 
 ## Credenziali del servizio
 
-Le credenziali del servizio sono le credenziali unificate utilizzate in qualsiasi scenario non di sviluppo (ovviamente produzione) che facilitano l&#39;autenticazione e l&#39;interazione di un&#39;applicazione esterna o del sistema con AEM come Cloud Service su HTTP. Le credenziali del servizio non vengono inviate direttamente a AEM autenticate, ma l&#39;applicazione esterna le utilizza per generare un JWT, che viene scambiato con  API IMS del Adobe _per_ un token di accesso protetto, che può essere utilizzato per autenticare le richieste HTTP da AEM come Cloud Service.
+Le credenziali del servizio sono le credenziali unificate utilizzate in qualsiasi scenario non di sviluppo (ovviamente produzione) che facilitano l&#39;autenticazione e l&#39;interazione di un&#39;applicazione esterna o del sistema AEM come Cloud Service su HTTP. Le credenziali del servizio non vengono inviate a AEM per l&#39;autenticazione, ma l&#39;applicazione esterna le utilizza per generare un JWT, che viene scambiato con  API IMS del Adobe _per_ un token di accesso, che può essere utilizzato per autenticare le richieste HTTP da AEM come Cloud Service.
 
 + [Come utilizzare le credenziali del servizio](./service-credentials.md)
 
