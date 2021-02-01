@@ -12,9 +12,9 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
 workflow-type: tm+mt
-source-wordcount: '4011'
+source-wordcount: '3961'
 ht-degree: 0%
 
 ---
@@ -32,27 +32,32 @@ Esaminare le istruzioni e gli strumenti necessari per configurare un ambiente di
 
 >[!NOTE]
 >
-> Se avete seguito le istruzioni nelle parti precedenti dell&#39;esercitazione, noterete che il progetto iniziale per questo capitolo accelera l&#39;implementazione. Include alcuni altri modelli e molto altro contenuto. Inoltre, è possibile esplorare liberamente i nuovi contenuti e altre aree dell&#39;implementazione, al di fuori dello sviluppo di componenti personalizzati.
+> Se il capitolo precedente è stato completato correttamente, è possibile riutilizzare il progetto e ignorare i passaggi per il check-out del progetto iniziale.
 
 Controlla il codice della riga di base su cui si basa l&#39;esercitazione:
 
-1. Duplicare il repository [github.com/adobe/aem-guides-wknd](https://github.com/adobe/aem-guides-wknd).
-1. Estrarre il ramo `custom-component/start`
+1. Estrarre il ramo `tutorial/custom-component-start` da [GitHub](https://github.com/adobe/aem-guides-wknd)
 
    ```shell
-   $ git clone git@github.com:adobe/aem-guides-wknd.git ~/code/aem-guides-wknd
-   $ cd ~/code/aem-guides-wknd
-   $ git checkout custom-component/start
+   $ cd aem-guides-wknd
+   $ git checkout tutorial/custom-component-start
    ```
 
 1. Distribuisci la base di codice in un&#39;istanza AEM locale utilizzando le tue competenze Paradiso:
 
    ```shell
-   $ cd ~/code/aem-guides-wknd
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-È sempre possibile visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd/tree/custom-component/solution) o estrarre il codice localmente passando al ramo `custom-component/solution`.
+   >[!NOTE]
+   >
+   > Se utilizzate AEM 6.5 o 6.4, aggiungete il profilo `classic` a qualsiasi comando Maven.
+
+   ```shell
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
+   ```
+
+È sempre possibile visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/custom-component-solution) o estrarre il codice localmente passando al ramo `tutorial/custom-component-solution`.
 
 ## Obiettivo
 
@@ -62,13 +67,11 @@ Controlla il codice della riga di base su cui si basa l&#39;esercitazione:
 
 ## Cosa verrà creato {#byline-component}
 
->[!VIDEO](https://video.tv.adobe.com/v/30181/?quality=12&learn=on)
-
 In questa parte dell&#39;esercitazione WKND, viene creato un componente autore che verrà utilizzato per visualizzare le informazioni create sul collaboratore di un articolo.
 
-![esempio componente byline](./assets/custom-component/byline-design.png)
+![esempio componente byline](assets/custom-component/byline-design.png)
 
-*Byline component video design fornito dal team di progettazione WKND*
+*Componente autore*
 
 L&#39;implementazione del componente Byline include una finestra di dialogo che raccoglie il contenuto del byline e un modello Sling personalizzato che recupera i valori del byline:
 
@@ -76,55 +79,40 @@ L&#39;implementazione del componente Byline include una finestra di dialogo che 
 * Immagine
 * Occupazioni
 
-per la visualizzazione da parte di uno script HTL, che esegue il rendering dell&#39;HTML visualizzato dal browser alla fine.
-
-![scomposizione per riga](./assets/custom-component/byline-decomposition.png)
-
-*Scomposizione componente autore*
-
 ## Crea componente Byline {#create-byline-component}
 
 Innanzitutto, creare la struttura del nodo del componente autore e definire una finestra di dialogo. Rappresenta il componente in AEM e definisce implicitamente il tipo di risorsa del componente in base alla sua posizione nel JCR.
 
 La finestra di dialogo presenta l’interfaccia con la quale gli autori dei contenuti possono fornire informazioni. Per questa implementazione, il componente **Image** del componente core di AEM WCM verrà sfruttato per gestire l&#39;authoring e il rendering dell&#39;immagine del componente Byline, in modo che venga impostato come `sling:resourceSuperType` del componente.
 
-### Crea nodo componente {#create-component-node}
+### Crea definizione componente {#create-component-definition}
 
-1. Nel modulo **ui.apps**, andate a `/apps/wknd/components/content` e create un nuovo nodo denominato **byline** di tipo `cq:Component`.
+1. Nel modulo **ui.apps**, andate a `/apps/wknd/components` e create una nuova cartella denominata `byline`.
+1. Sotto la cartella `byline` aggiungere un nuovo file denominato `.content.xml`
 
-   ![finestra di dialogo per la creazione del nodo](./assets/custom-component/byline-node-creation.png)
+   ![finestra di dialogo per la creazione del nodo](assets/custom-component/byline-node-creation.png)
 
-1. Aggiungete le seguenti proprietà al nodo `cq:Component` del componente Byline.
-
-   ```plain
-   jcr:title = Byline
-   jcr:description = Displays a contributor's byline.
-   componentGroup = WKND.Content
-   sling:resourceSuperType =  core/wcm/components/image/v2/image
-   ```
-
-   ![Proprietà del componente autore](./assets/custom-component/byline-component-properties.png)
-
-   Il che determina il seguente codice XML `.content.xml`:
+1. Compilare il file `.content.xml` con le seguenti caratteristiche:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
-   <jcr:root
-       xmlns:sling="https://sling.apache.org/jcr/sling/1.0" xmlns:jcr="https://www.jcp.org/jcr/1.0"
+       <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
        jcr:primaryType="cq:Component"
        jcr:title="Byline"
        jcr:description="Displays a contributor's byline."
-       componentGroup="WKND.Content"
+       componentGroup="WKND Sites Project - Content"
        sling:resourceSuperType="core/wcm/components/image/v2/image"/>
    ```
 
+   Il file XML di cui sopra fornisce la definizione del componente, inclusi titolo, descrizione e gruppo. Il `sling:resourceSuperType` punta a `core/wcm/components/image/v2/image`, che è il componente [immagine principale](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html).
+
 ### Creare lo script HTL {#create-the-htl-script}
 
-1. Sotto il nodo `byline`, aggiungete un nuovo file `byline.html`, responsabile della presentazione HTML del componente. È importante denominare il file come il nodo `cq:Component`, in quanto diventa lo script predefinito che Sling utilizzerà per eseguire il rendering di questo tipo di risorsa.
+1. Sotto la cartella `byline`, aggiungete un nuovo file `byline.html`, responsabile della presentazione HTML del componente. È importante denominare il file come cartella, poiché diventa lo script predefinito che Sling utilizzerà per eseguire il rendering di questo tipo di risorsa.
 
 1. Aggiungete il codice seguente alla cartella `byline.html`.
 
-   ```xml
+   ```html
    <!--/* byline.html */-->
    <div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
    </div>
@@ -141,13 +129,12 @@ Quindi, definire una finestra di dialogo per il componente Autore con i campi se
 * **Immagine**: un riferimento alla biografia del collaboratore.
 * **Occupazioni**: un elenco di occupazioni attribuite al collaboratore. Le occupazioni devono essere ordinate in ordine alfabetico in ordine crescente (da a a z).
 
-1. Sotto il nodo del componente `byline` create un nuovo nodo denominato `cq:dialog` di tipo `nt:unstructured`.
-1. Aggiornate il file `cq:dialog` con il seguente XML. È più semplice aprire il `.content.xml` e copiare/incollare il seguente XML in esso.
+1. Sotto la cartella `byline`, create una nuova cartella denominata `_cq_dialog`.
+1. Sotto `byline/_cq_dialog` aggiungete un nuovo file denominato `.content.xml`. Definizione XML per la finestra di dialogo. Aggiungete il seguente codice XML:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
-   <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
-           xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+   <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
            jcr:primaryType="nt:unstructured"
            jcr:title="Byline"
            sling:resourceType="cq/gui/components/authoring/dialog">
@@ -214,16 +201,16 @@ Quindi, definire una finestra di dialogo per il componente Autore con i campi se
    </jcr:root>
    ```
 
-   Queste definizioni di nodo utilizzano [Sling Resource Merger](https://sling.apache.org/documentation/bundles/resource-merger.html) per controllare quali schede di dialogo vengono ereditate dal componente `sling:resourceSuperType`, in questo caso il componente Immagine **Componenti di base**.
+   Queste definizioni dei nodi di dialogo utilizzano il [Sling Resource Merger](https://sling.apache.org/documentation/bundles/resource-merger.html) per controllare quali schede di dialogo vengono ereditate dal componente `sling:resourceSuperType`, in questo caso il componente Immagine **Componenti di base**.
 
-   ![finestra di dialogo completata per autore](./assets/custom-component/byline-dialog-created.png)
+   ![finestra di dialogo completata per autore](assets/custom-component/byline-dialog-created.png)
 
 ### Crea la finestra di dialogo Criterio {#create-the-policy-dialog}
 
 Seguendo lo stesso approccio utilizzato per la creazione della finestra di dialogo, creare una finestra di dialogo Criteri (precedentemente nota come finestra di dialogo Progettazione) per nascondere i campi indesiderati nella configurazione Criteri ereditata dal componente Immagine dei componenti core.
 
-1. Sotto il nodo `byline` `cq:Component`, creare un nuovo nodo denominato `cq:design_dialog` di tipo `nt:unstructured`.
-1. Aggiornate il file `cq:design_dialog` con il seguente XML. È più semplice aprire il `.content.xml` e copiare/incollare il codice XML sottostante.
+1. Sotto la cartella `byline`, create una nuova cartella denominata `_cq_design_dialog`.
+1. Sotto `byline/_cq_design_dialog` create un nuovo file denominato `.content.xml`. Aggiornate il file con i seguenti elementi: con il seguente XML. È più semplice aprire il `.content.xml` e copiare/incollare il codice XML sottostante.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -299,26 +286,33 @@ Seguendo lo stesso approccio utilizzato per la creazione della finestra di dialo
 1. Distribuisci la base di codice aggiornata in un&#39;istanza AEM locale utilizzando le tue competenze Paradiso:
 
    ```shell
-   $ cd ~/code/aem-guides-wknd
-   $ mvn clean install -PautoInstallPackage
+   $ cd aem-guides-wknd
+   $ mvn clean install -PautoInstallSinglePackage
    ```
 
-### Aggiungere il componente a una pagina {#add-the-component-to-a-page}
+## Aggiungere il componente a una pagina {#add-the-component-to-a-page}
 
 Per semplificare e concentrarsi sullo sviluppo AEM componente, verrà aggiunto il componente Autore nello stato corrente a una pagina Articolo per verificare che la definizione del nodo `cq:Component` sia distribuita e corretta, AEM riconosce la nuova definizione del componente e la finestra di dialogo del componente funziona per la creazione.
 
-Poiché abbiamo [aggiunto il componente Byline al **WKND.Content** Gruppo di componenti](#create-component-node), tramite la proprietà `/apps/wknd/components/content/byline@componentGroup=WKND.Content`, è automaticamente disponibile per qualsiasi **Contenitore di layout** il cui **Policy** consente il **WKND.Content** gruppo di componenti , che è il contenitore di layout della pagina dell&#39;articolo.
+### Aggiungere un&#39;immagine all&#39;AEM Assets 
 
-#### Trascinare il componente sulla pagina {#drag-and-drop-the-component-onto-the-page}
+Innanzitutto, caricate una ripresa testa di esempio su  AEM Assets da usare per comporre l’immagine nel componente Autore.
 
-1. **Modificate** la pagina dell&#39;articolo in  **AEM > Siti > WKND Site > Language Master > English > Magazine > Ultimate Guide to LA Skateparks**.
+1. Andate alla cartella Los Skateparks in  AEM Assets: [http://localhost:4502/assets.html/content/dam/wknd/en/magazine/la-skateparks](http://localhost:4502/assets.html/content/dam/wknd/en/magazine/la-skateparks).
+
+1. Caricate la foto dell&#39;intestazione per **[stack-roswells.jpg](assets/custom-component/stacey-roswells.jpg)** nella cartella.
+
+   ![Cuffia caricata](assets/custom-component/stacey-roswell-headshot-assets.png)
+
+### Creazione del componente {#author-the-component}
+
+Quindi, aggiungere il componente Autore a una pagina in AEM. Poiché il componente Byline è stato aggiunto al **progetto WKND Sites - Content** Component Group, tramite la definizione `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/.content.xml`, è automaticamente disponibile per qualsiasi **contenitore** il cui **Policy** consente il gruppo di componenti **WKND Sites Project - Content**, che il contenitore Layout della pagina Articolo è .
+
+1. Andate all&#39;articolo LO Skatepark all&#39;indirizzo: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
+
 1. Dalla barra laterale sinistra, trascinate un **componente autore** sul **fondo** del Contenitore di layout della pagina dell&#39;articolo aperta.
 
    ![aggiunta di un componente per riga alla pagina](assets/custom-component/add-to-page.png)
-
-#### Creazione del componente {#author-the-component}
-
-AEM autori configurano e creano i componenti tramite le finestre di dialogo. A questo punto nello sviluppo del componente Byline le finestre di dialogo sono incluse per la raccolta dei dati, tuttavia la logica per il rendering del contenuto creato non è ancora stata aggiunta.
 
 1. Assicurarsi che la barra laterale sinistra sia aperta **e visibile, e che sia selezionato** Asset Finder **.**
 
@@ -330,8 +324,6 @@ AEM autori configurano e creano i componenti tramite le finestre di dialogo. A q
 
 1. Con la finestra di dialogo aperta e la prima scheda (Risorsa) attiva, aprite la barra laterale sinistra, quindi trascinate un’immagine nella zona di rilascio Immagine da Content Finder. Cercate &quot;stack&quot; per trovare Stacey Roswells bio picture fornito nel pacchetto ui.content WKND.
 
-   **[stacey-roswells.jpg](assets/custom-component/stacey-roswells.jpg)**
-
    ![aggiungi immagine alla finestra di dialogo](assets/custom-component/add-image.png)
 
 1. Dopo aver aggiunto un&#39;immagine, fare clic sulla scheda **Proprietà** per inserire il **Nome** e **Occupazioni**.
@@ -342,17 +334,17 @@ AEM autori configurano e creano i componenti tramite le finestre di dialogo. A q
 
    ![popolamento delle proprietà del componente byline](assets/custom-component/add-properties.png)
 
-1. Dopo aver salvato la finestra di dialogo, andate a [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/responsivegrid/responsivegrid/byline) e controllate in che modo il contenuto del componente viene memorizzato nel nodo del contenuto del componente secondario sotto la pagina AEM.
+   AEM autori configurano e creano i componenti tramite le finestre di dialogo. A questo punto nello sviluppo del componente Byline le finestre di dialogo sono incluse per la raccolta dei dati, tuttavia la logica per il rendering del contenuto creato non è ancora stata aggiunta. Viene visualizzato solo il segnaposto.
 
-   Individuare il nodo di contenuto del componente Byline sotto il nodo `jcr:content/root/responsivegrid/responsivegrid`, ovvero `/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/responsivegrid/responsivegrid/byline`.
+1. Dopo aver salvato la finestra di dialogo, andate a [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent/root/container/container/byline) e controllate in che modo il contenuto del componente viene memorizzato nel nodo del contenuto del componente secondario sotto la pagina AEM.
+
+   Individua il nodo del contenuto del componente Byline sotto la pagina Skate Parks della LA, ovvero `/content/wknd/us/en/magazine/guide-la-skateparks/jcr:content/root/container/container/byline`.
 
    Notate che i nomi delle proprietà `name`, `occupations` e `fileReference` sono memorizzati nel nodo **byline**.
 
    Inoltre, notate che la `sling:resourceType` del nodo è impostata su `wknd/components/content/byline`, che è ciò che vincola questo nodo di contenuto all&#39;implementazione del componente Byline.
 
    ![proprietà del byline in CRXDE](assets/custom-component/byline-properties-crxde.png)
-
-   */content/wknd/language-masters/it/magazine/guide-la-skateparks/jcr:content/root/responsivegrid/responsivegrid/byline*
 
 ## Crea modello Sling byline {#create-sling-model}
 
@@ -362,10 +354,21 @@ I modelli Sling sono modelli Java &quot;POJO&quot; basati su annotazioni (Plain 
 
 ### Rivedere le dipendenze del cielo {#maven-dependency}
 
-Il modello Byline Sling si basa su diverse API Java fornite da AEM. Queste API sono rese disponibili tramite `dependencies` elencato nel file POM del modulo `core`.
+Il modello Byline Sling si basa su diverse API Java fornite da AEM. Queste API sono rese disponibili tramite `dependencies` elencato nel file POM del modulo `core`. Il progetto utilizzato per questa esercitazione è stato creato per AEM come Cloud Service. Tuttavia è unico in quanto è retrocompatibile con AEM 6.5/6.4. Pertanto sono incluse entrambe le dipendenze per Cloud Service e AEM 6.x.
 
 1. Aprire il file `pom.xml` sotto `<src>/aem-guides-wknd/core/pom.xml`.
-1. Trovare la dipendenza per la `uber-jar` nella sezione delle dipendenze del file pom:
+1. Trovare la dipendenza per `aem-sdk-api` - **AEM come solo Cloud Service**
+
+   ```xml
+   <dependency>
+       <groupId>com.adobe.aem</groupId>
+       <artifactId>aem-sdk-api</artifactId>
+   </dependency>
+   ```
+
+   [aem-sdk-api](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#building-for-the-sdk) contiene tutte le API Java pubbliche esposte da AEM. Il `aem-sdk-api` viene utilizzato per impostazione predefinita durante la creazione del progetto. La versione viene mantenuta nel contenitore del reattore principale, situato alla radice del progetto in `aem-guides-wknd/pom.xml`.
+
+1. Trovare la dipendenza per `uber-jar` - **AEM 6.5/6.4 Only**
 
    ```xml
    ...
@@ -377,7 +380,9 @@ Il modello Byline Sling si basa su diverse API Java fornite da AEM. Queste API s
    ...
    ```
 
-   [uber-jar](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) contiene tutte le API Java pubbliche esposte da AEM. Notate che una versione non è specificata nel file `core/pom.xml`. La versione viene invece mantenuta nel contenitore del reattore principale, situato alla radice del progetto `aem-guides-wknd/pom.xml`.
+   Il `uber-jar` è incluso solo quando viene richiamato il profilo `classic`, ovvero `mvn clean install -PautoInstallSinglePackage -Pclassic`. Anche in questo caso, questo è unico per questo progetto. In un progetto reale, generato da AEM Project Archetype, il valore predefinito è `uber-jar` se la versione di AEM specificata è 6.5 o 6.4.
+
+   [uber-jar](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) contiene tutte le API Java pubbliche esposte da AEM 6.x. La versione viene mantenuta nel contenitore del reattore principale situato nella directory principale del progetto `aem-guides-wknd/pom.xml`.
 
 1. Trovare la dipendenza per `core.wcm.components.core`:
 
@@ -389,7 +394,7 @@ Il modello Byline Sling si basa su diverse API Java fornite da AEM. Queste API s
        </dependency>
    ```
 
-   Si tratta di tutte le API Java pubbliche esposte da AEM componenti core. AEM Componenti di base è un progetto mantenuto al di fuori di AEM e ha quindi un ciclo di rilascio separato. Per questo motivo si tratta di una dipendenza che deve essere inclusa separatamente ed è **non** inclusa con l&#39;uber-jar.
+   Si tratta di tutte le API Java pubbliche esposte da AEM componenti core. AEM Componenti di base è un progetto mantenuto al di fuori di AEM e ha quindi un ciclo di rilascio separato. Per questo motivo si tratta di una dipendenza che deve essere inclusa separatamente ed è **non** inclusa con `uber-jar` o `aem-sdk-api`.
 
    Come l&#39;uber-jar, la versione di questa dipendenza viene mantenuta nel file pom del reattore principale che si trova in `aem-guides-wknd/pom.xml`.
 
@@ -399,7 +404,7 @@ Il modello Byline Sling si basa su diverse API Java fornite da AEM. Queste API s
 
 Create un&#39;interfaccia Java pubblica per il nome autore. `Byline.java` definisce i metodi pubblici necessari per eseguire lo script  `byline.html` HTL.
 
-1. Nel modulo `aem-guides-wknd.core` sotto `src/main/java,` create una nuova interfaccia Java denominata `Byline.java` facendo clic con il pulsante destro del mouse sul `com.adobe.aem.guides.wknd.core.models` **pacchetto > Nuovo > Interfaccia**. Immettere **Nome autore** come nome dell&#39;interfaccia e fare clic su Fine.
+1. All&#39;interno del modulo `aem-guides-wknd.core` sotto `core/src/main/java/com/adobe/aem/guides/wknd/core/models` creare un nuovo file denominato `Byline.java`
 
    ![crea interfaccia per riga](assets/custom-component/create-byline-interface.png)
 
@@ -443,13 +448,41 @@ Create un&#39;interfaccia Java pubblica per il nome autore. `Byline.java` defini
 
 `BylineImpl.java` è l&#39;implementazione del modello Sling che implementa l&#39; `Byline.java` interfaccia definita in precedenza. Il codice completo di `BylineImpl.java` si trova nella parte inferiore di questa sezione.
 
-1. Nel modulo `core` sotto `src/main/java`, create un nuovo file di classe denominato **BylineImpl.java** facendo clic con il pulsante destro del mouse sul pacchetto `com.adobe.aem.guides.wknd.core.models.impl` e selezionando **Nuovo > Classe**.
+1. Create una nuova cartella denominata `impl` sotto `core/src/main/java/com/adobe/aem/guides/core/models`.
+1. Nella cartella `impl` creare un nuovo file `BylineImpl.java`.
 
-   Per il nome, immettere **BylineImpl**. Aggiungete l&#39; **Interfaccia autore** come interfaccia di implementazione.
+   ![File Impl autore](assets/custom-component/byline-impl-file.png)
 
-   ![creazione dell&#39;implementazione byline](assets/custom-component/create-byline-impl.png)
+1. Apri `BylineImpl.java`. Specifica che implementa l&#39;interfaccia `Byline`. Utilizzare le funzioni di completamento automatico dell&#39;IDE o aggiornare manualmente il file per includere i metodi necessari per implementare l&#39;interfaccia `Byline`:
 
-1. Apri `BylineImpl.java`. Viene compilato automaticamente con tutti i metodi definiti nell&#39;interfaccia `Byline.java`. Aggiungete le annotazioni del modello Sling aggiornando `BylineImpl.java` con le seguenti annotazioni a livello di classe. Questa `@Model(..)`annotazione è ciò che trasforma la classe in un modello Sling.
+   ```java
+   package com.adobe.aem.guides.wknd.core.models.impl;
+   import java.util.List;
+   import com.adobe.aem.guides.wknd.core.models.Byline;
+   
+   public class BylineImpl implements Byline {
+   
+       @Override
+       public String getName() {
+           // TODO Auto-generated method stub
+           return null;
+       }
+   
+       @Override
+       public List<String> getOccupations() {
+           // TODO Auto-generated method stub
+           return null;
+       }
+   
+       @Override
+       public boolean isEmpty() {
+           // TODO Auto-generated method stub
+           return false;
+       }
+   }
+   ```
+
+1. Aggiungete le annotazioni del modello Sling aggiornando `BylineImpl.java` con le seguenti annotazioni a livello di classe. Questa `@Model(..)`annotazione è ciò che trasforma la classe in un modello Sling.
 
    ```java
    import org.apache.sling.api.SlingHttpServletRequest;
@@ -483,13 +516,12 @@ Il primo metodo che utilizzeremo è `getName()` che restituisce semplicemente il
 
 A questo scopo, l&#39;annotazione `@ValueMapValue` Modello Sling viene utilizzata per inserire il valore in un campo Java utilizzando il ValueMap della risorsa Request.
 
+
 ```java
-...
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
-...
+
 public class BylineImpl implements Byline {
     ...
-
     @ValueMapValue
     private String name;
 
@@ -512,16 +544,18 @@ Utilizzando la stessa tecnica esplorata in `getName()` il valore della propriet�
 
 Una volta che i valori delle proprietà JCR sono disponibili nel modello Sling tramite il campo Java iniettato `occupations`, la logica aziendale di ordinamento può essere applicata nel metodo `getOccupations()`.
 
+
 ```java
 import java.util.ArrayList;
 import java.util.Collections;
-...
+  ...
 
 public class BylineImpl implements Byline {
     ...
     @ValueMapValue
     private List<String> occupations;
     ...
+    @Override
     public List<String> getOccupations() {
         if (occupations != null) {
             Collections.sort(occupations);
@@ -532,8 +566,9 @@ public class BylineImpl implements Byline {
     }
     ...
 }
-...
+  ...
 ```
+
 
 #### isEmpty() {#implementing-is-empty}
 
@@ -541,9 +576,10 @@ L&#39;ultimo metodo pubblico è `isEmpty()` che determina quando il componente d
 
 Per questo componente, i requisiti aziendali prevedono che tutti e tre i campi, nome, immagine e occupazioni debbano essere compilati *prima di poter eseguire il rendering del componente.*
 
+
 ```java
 import org.apache.commons.lang3.StringUtils;
-...
+  ...
 public class BylineImpl implements Byline {
     ...
     @Override
@@ -566,16 +602,16 @@ public class BylineImpl implements Byline {
 }
 ```
 
+
 #### Gestione del &quot;problema immagine&quot; {#tackling-the-image-problem}
 
 Controllare il nome e le condizioni di occupazione sono banali (e l&#39;Apache Commons Lang3 fornisce la sempre pratica classe [StringUtils](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/StringUtils.html)), tuttavia, non è chiaro come la **presenza dell&#39;immagine** possa essere convalidata, dal momento che il componente Immagine Componenti di base viene utilizzato per la superficie dell&#39;immagine.
 
 Esistono due modi per affrontare il problema:
 
-1. Verificate che la proprietà `fileReference` JCR corrisponda a una risorsa.
-1. Converti questa risorsa in un modello Sling di immagini per componenti core e assicurati che il metodo `getSrc()` non sia vuoto.
+Verificate che la proprietà `fileReference` JCR corrisponda a una risorsa. ** ORConverti la risorsa in un modello Sling immagine componente principale e accertati che il  `getSrc()` metodo non sia vuoto.
 
-   Sceglieremo l&#39;approccio **secondo**. Il primo approccio è probabilmente sufficiente, ma in questa esercitazione quest&#39;ultimo sarà utilizzato per consentirci di esplorare altre caratteristiche di Sling Models.
+Sceglieremo l&#39;approccio **secondo**. Il primo approccio è probabilmente sufficiente, ma in questa esercitazione quest&#39;ultimo sarà utilizzato per consentirci di esplorare altre caratteristiche di Sling Models.
 
 1. Create un metodo privato per ottenere l’immagine. Questo metodo viene lasciato privato perché non è necessario esporre l’oggetto Immagine nello stesso HTL, e viene utilizzato solo per l’unità `isEmpty().`
 
@@ -687,12 +723,21 @@ Esistono due modi per affrontare il problema:
    ```java
    @Override
    public boolean isEmpty() {
-       ...
-       } else if (getImage() == null || StringUtils.isBlank(getImage().getSrc())) {
+      final Image componentImage = getImage();
+   
+       if (StringUtils.isBlank(name)) {
+           // Name is missing, but required
+           return true;
+       } else if (occupations == null || occupations.isEmpty()) {
+           // At least one occupation is required
+           return true;
+       } else if (componentImage == null || StringUtils.isBlank(componentImage.getSrc())) {
            // A valid image is required
            return true;
        } else {
-       ...
+           // Everything is populated, so this component is not considered empty
+           return false;
+       }
    }
    ```
 
@@ -700,15 +745,14 @@ Esistono due modi per affrontare il problema:
 
 1. L&#39;aspetto finale `BylineImpl.java` dovrebbe essere:
 
+
    ```java
    package com.adobe.aem.guides.wknd.core.models.impl;
    
    import java.util.ArrayList;
    import java.util.Collections;
    import java.util.List;
-   
    import javax.annotation.PostConstruct;
-   
    import org.apache.commons.lang3.StringUtils;
    import org.apache.sling.api.SlingHttpServletRequest;
    import org.apache.sling.models.annotations.DefaultInjectionStrategy;
@@ -717,7 +761,6 @@ Esistono due modi per affrontare il problema:
    import org.apache.sling.models.annotations.injectorspecific.Self;
    import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
    import org.apache.sling.models.factory.ModelFactory;
-   
    import com.adobe.aem.guides.wknd.core.models.Byline;
    import com.adobe.cq.wcm.core.components.models.Image;
    
@@ -766,7 +809,7 @@ Esistono due modi per affrontare il problema:
    
        @Override
        public boolean isEmpty() {
-           final Image image = getImage();
+           final Image componentImage = getImage();
    
            if (StringUtils.isBlank(name)) {
                // Name is missing, but required
@@ -774,7 +817,7 @@ Esistono due modi per affrontare il problema:
            } else if (occupations == null || occupations.isEmpty()) {
                // At least one occupation is required
                return true;
-           } else if (image == null || StringUtils.isBlank(image.getSrc())) {
+           } else if (componentImage == null || StringUtils.isBlank(componentImage.getSrc())) {
                // A valid image is required
                return true;
            } else {
@@ -792,9 +835,10 @@ Esistono due modi per affrontare il problema:
    }
    ```
 
+
 ## Byline HTL {#byline-htl}
 
-Nel modulo `ui.apps`, aprire `/apps/wknd/components/content/byline/byline.html` creato nella precedente configurazione del componente AEM.
+Nel modulo `ui.apps`, aprire `/apps/wknd/components/byline/byline.html` creato nella precedente configurazione del componente AEM.
 
 ```html
 <div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html">
@@ -812,7 +856,7 @@ Vediamo cosa fa finora questo script HTL:
 
 1. Aggiornate **byline.html** con la seguente struttura HTML scheletrica:
 
-   ```xml
+   ```html
    <div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
        class="cmp-byline">
            <div class="cmp-byline__image">
@@ -826,7 +870,7 @@ Vediamo cosa fa finora questo script HTL:
 
    Le classi CSS seguono la [convenzione di denominazione BEM](https://getbem.com/naming/). Anche se l&#39;uso delle convenzioni BEM non è obbligatorio, BEM è consigliato in quanto è utilizzato nelle classi CSS dei componenti core e generalmente produce regole CSS pulite e leggibili.
 
-#### Creazione di un&#39;istanza di oggetti modello Sling in HTL {#instantiating-sling-model-objects-in-htl}
+### Creazione di un&#39;istanza di oggetti modello Sling in HTL {#instantiating-sling-model-objects-in-htl}
 
 L&#39;istruzione [Use block istruzione](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#221-use) viene utilizzata per creare un&#39;istanza degli oggetti modello Sling nello script HTL e assegnarla a una variabile HTL.
 
@@ -842,7 +886,7 @@ L&#39;istruzione [Use block istruzione](https://github.com/adobe/htl-spec/blob/m
    </div>
    ```
 
-#### Accesso ai metodi del modello Sling {#accessing-sling-model-methods}
+### Accesso ai metodi del modello Sling {#accessing-sling-model-methods}
 
 HTL prende in prestito da JSTL e utilizza lo stesso accorciamento dei nomi dei metodi getter Java.
 
@@ -858,7 +902,7 @@ I metodi Java che richiedono un parametro **non possono essere utilizzati** in H
    <h2 class="cmp-byline__name">${byline.name}</h2>
    ```
 
-#### Utilizzo delle opzioni di espressione HTL {#using-htl-expression-options}
+### Utilizzo delle opzioni di espressione HTL {#using-htl-expression-options}
 
 [Le ](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#12-available-expression-options) opzioni delle espressioni HTL agiscono da modificatori di contenuto in HTL e variano dalla formattazione delle date alla traduzione i18n. Le espressioni possono essere utilizzate anche per unire elenchi o array di valori, che è ciò che è necessario per visualizzare le occupazioni in un formato delimitato da virgole.
 
@@ -870,7 +914,7 @@ Le espressioni vengono aggiunte tramite l&#39;operatore `@` nell&#39;espressione
    <p class="cmp-byline__occupations">${byline.occupations @ join=', '}</p>
    ```
 
-#### Visualizzazione condizionale del segnaposto {#conditionally-displaying-the-placeholder}
+### Visualizzazione condizionale del segnaposto {#conditionally-displaying-the-placeholder}
 
 La maggior parte degli script HTL per AEM componenti utilizza il **paradigma segnaposto** per fornire un segnale visivo agli autori **indicando che un componente non è stato creato correttamente e non verrà visualizzato in AEM Publish**. La convenzione per guidare questa decisione è di implementare un metodo sul modello Sling di supporto del componente, nel nostro caso: `Byline.isEmpty()`.
 
@@ -897,24 +941,9 @@ La maggior parte degli script HTL per AEM componenti utilizza il **paradigma seg
    <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
    ```
 
-#### Visualizzare l&#39;immagine utilizzando i componenti core {#using-the-core-components-image}
+### Visualizzare l&#39;immagine utilizzando i componenti core {#using-the-core-components-image}
 
 Lo script HTL per `byline.html` è quasi completo e manca solo l&#39;immagine.
-
-```html
-<!--/* current progress of byline.html */-->
-<div data-sly-use.byline="com.adobe.aem.guides.wknd.core.models.Byline"
-     data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
-     data-sly-test.hasContent="${!byline.empty}"
-     class="cmp-byline">
-    <div class="cmp-byline__image">
-        <!-- Include the Core Components Image component -->
-    </div>
-    <h2 class="cmp-byline__name">${byline.name}</h2>
-    <p class="cmp-byline__occupations">${byline.occupations @ join=', '}</p>
-</div>
-<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
-```
 
 Poiché il componente Immagine componenti core viene utilizzato `sling:resourceSuperType` per creare l’immagine, è possibile utilizzare anche il componente Immagine componente core per eseguire il rendering dell’immagine!
 
@@ -934,45 +963,42 @@ A tal fine, è necessario includere la risorsa corrente per riga, ma forzare il 
 2. Completato `byline.html` di seguito:
 
    ```html
-   <div data-sly-use.byline="com.adobe.aem.guides.wknd.core.models.Byline"
+   <!--/* byline.html */-->
+   <div data-sly-use.byline="com.adobe.aem.guides.wknd.core.models.Byline" 
        data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
        data-sly-test.hasContent="${!byline.empty}"
        class="cmp-byline">
        <div class="cmp-byline__image"
-            data-sly-resource="${ '.' @ resourceType = 'core/wcm/components/image/v2/image' }">
+           data-sly-resource="${ '.' @ resourceType = 'core/wcm/components/image/v2/image' }">
        </div>
-           <h2 class="cmp-byline__name">${byline.name}</h2>
-           <p class="cmp-byline__occupations">${byline.occupations @ join=','}</p>
+       <h2 class="cmp-byline__name">${byline.name}</h2>
+       <p class="cmp-byline__occupations">${byline.occupations @ join=', '}</p>
    </div>
    <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>
    ```
 
 3. Distribuire la base di codice in un&#39;istanza AEM locale. Poiché sono state apportate modifiche importanti ai file POM, eseguire una build Maven completa dalla directory principale del progetto.
 
-   >[!WARNING]
-   >
-   > Il progetto WKND è configurato in modo tale che `ui.content` sovrascriverà tutte le modifiche nel JCR. Pertanto, desideriamo assicurarci di distribuire solo il progetto `ui.apps` per evitare di cancellare il componente Byline aggiunto alla pagina dell&#39;articolo in precedenza.
-
    ```shell
-   $ cd ~/code/aem-guides-wknd/ui.apps
-   $ mvn -PautoInstallPackage clean install
-   ...
-   Package imported.
-   Package installed in 338ms.
-   [INFO] ------------------------------------------------------------------------
-   [INFO] BUILD SUCCESS
-   [INFO] ------------------------------------------------------------------------
+   $ cd aem-guides-wknd/
+   $ mvn clean install -PautoInstallSinglePackage
    ```
 
-#### Analisi del componente Byline senza stile {#reviewing-the-unstyled-byline-component}
+   Se la distribuzione in AEM 6.5/6.4 richiama il profilo `classic`:
 
-1. Dopo aver distribuito l&#39;aggiornamento, andate alla pagina [Ultimate Guide to LA Skateparks ](http://localhost:4502/editor.html/content/wknd/language-masters/en/magazine/guide-la-skateparks.html) o ovunque avete aggiunto il componente Byline prima nel capitolo.
+   ```shell
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
+   ```
+
+### Analisi del componente Byline senza stile {#reviewing-the-unstyled-byline-component}
+
+1. Dopo aver distribuito l&#39;aggiornamento, andate alla pagina [Ultimate Guide to LA Skateparks ](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) o ovunque avete aggiunto il componente Byline prima nel capitolo.
 
 1. Viene ora visualizzata l&#39; **immagine**, **nome** e **occupazioni** e il componente Byline non è formattato ma funziona.
 
    ![componente non formattato](assets/custom-component/unstyled.png)
 
-#### Revisione della registrazione del modello Sling {#reviewing-the-sling-model-registration}
+### Revisione della registrazione del modello Sling {#reviewing-the-sling-model-registration}
 
 La [AEM Visualizzazione stato modelli Sling della console Web ](http://localhost:4502/system/console/status-slingmodels) visualizza tutti i modelli Sling registrati in AEM. Il modello Byline Sling può essere convalidato come installato e riconosciuto revisionando questo elenco.
 
@@ -986,30 +1012,13 @@ Se il **BylineImpl** non è visualizzato in questo elenco, è probabile che si s
 
 Il componente Byline deve essere formattato in modo da essere allineato al design creativo per il componente Byline. Ciò sarà ottenuto utilizzando SCSS, che AEM il supporto per il **ui.frontend** sottoprogetto Maven.
 
-Dopo lo stile, il componente Byline deve adottare la seguente estetica.
-
-![stili di battuta](./assets/custom-component/byline-design.png)
-
-*Progettazione di componenti per autore come definito dal team creativo WKND*
-
 ### Aggiungere uno stile predefinito
 
-Aggiungere stili predefiniti per il componente Autore. Nel progetto **ui.frontend** in `/src/main/webpack/components/content`:
+Aggiungere stili predefiniti per il componente Autore. Nel progetto **ui.frontend** in `/src/main/webpack/components`:
 
-1. Create una nuova cartella denominata `byline`.
-1. Create una nuova cartella sotto la cartella `byline` denominata `scss`.
-1. Create un nuovo file sotto la cartella `byline/scss` denominata `byline.scss`.
-1. Create una nuova cartella sotto la cartella `byline/scss` denominata `styles`.
-1. Create un nuovo file sotto la cartella `byline/scss/styles` denominata `default.scss`.
+1. Create un nuovo file denominato `_byline.scss`.
 
    ![byline project explorer](assets/custom-component/byline-style-project-explorer.png)
-
-1. Iniziate compilando **byline.scss** per includere lo stile predefinito:
-
-   ```scss
-    /* WKND Byline styles */
-   @import 'styles/default';
-   ```
 
 1. Aggiungete i CSS per le implementazioni Byline (scritti come SCSS) in `default.scss`:
 
@@ -1030,7 +1039,7 @@ Aggiungere stili predefiniti per il componente Autore. Nel progetto **ui.fronten
        }
    
        .cmp-byline__name {
-           font-size: $font-size-large;
+           font-size: $font-size-medium;
            font-family: $font-family-serif;
            padding-top: 0.5rem;
            margin-left: $imageSize + 25px;
@@ -1047,25 +1056,26 @@ Aggiungere stili predefiniti per il componente Autore. Nel progetto **ui.fronten
    }
    ```
 
-1. Aprire il file `main.scss` nel progetto **ui.frontend** in `/src/main/webpack/site` e aggiungere la riga seguente nella sezione `/* Components */`:
+1. Rivedete `main.scss` in `ui.frontend/src/main/webpack/site/main.scss`:
 
    ```scss
-   @import '../components/content/byline/scss/byline.scss';
+   @import 'variables';
+   @import 'wkndicons';
+   @import 'base';
+   @import '../components/**/*.scss';
+   @import './styles/*.scss';
    ```
 
-1. Create e compilate il modulo `ui.frontend` utilizzando NPM:
+   `main.scss` è il punto di ingresso principale per gli stili inclusi nel  `ui.frontend` modulo. L&#39;espressione regolare `'../components/**/*.scss'` includerà tutti i file al di sotto della cartella `components/`.
+
+1. Crea e distribuisci il progetto completo per AEM:
 
    ```shell
-    $ cd ~/code/aem-guides-wknd/ui.frontend
-    $ npm run dev
+   $ cd aem-guides-wknd/
+   $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. Crea e distribuisci il progetto `ui.apps`, che includerà transitivamente il progetto `ui.frontend`, in un&#39;istanza AEM locale utilizzando Maven:
-
-   ```shell
-    $ cd ~/code/aem-guides-wknd/ui.apps
-    $ mvn clean install -PautoInstallPackage
-   ```
+   Se utilizzate AEM 6.4/6.5, aggiungete il profilo `-Pclassic`.
 
    >[!TIP]
    >
@@ -1077,10 +1087,6 @@ Di seguito è riportato l’aspetto del componente autore e del componente Bylin
 
 ![componente per riga finale](assets/custom-component/final-byline-component.png)
 
-Guardate il video qui sotto per una rapida panoramica di ciò che è stato creato in questa esercitazione.
-
->[!VIDEO](https://video.tv.adobe.com/v/30174/?quality=12&learn=on)
-
 ## Congratulazioni! {#congratulations}
 
 Congratulazioni, hai appena creato un componente personalizzato da zero utilizzando Adobe Experience Manager!
@@ -1091,21 +1097,7 @@ Continua a conoscere AEM sviluppo di componenti esplorando come scrivere test JU
 
 * [Creazione di test di unità o componenti AEM](unit-testing.md)
 
-Visualizzate il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd) oppure rivedete e distribuite il codice localmente in corrispondenza del blocco Git `custom-component/solution`.
+Visualizzate il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd) oppure rivedete e distribuite il codice localmente in corrispondenza del blocco Git `tutorial/custom-component-solution`.
 
 1. Duplicare il repository [github.com/adobe/aem-guides-wknd](https://github.com/adobe/aem-guides-wknd).
-1. Estrarre il ramo `custom-component/solution`
-
-## Risoluzione dei problemi {#troubleshooting}
-
-### Cartelle sorgente mancanti
-
-Se in Eclipse non viene visualizzata la cartella di origine `src/main/java`, è possibile aggiungere le cartelle facendo clic con il pulsante destro del mouse su src e aggiungendo le cartelle per la cartella principale e per la cartella Java. Dopo aver aggiunto le cartelle, viene visualizzato il pacchetto `src/main/java`.
-
-### Pacchetti non risolti
-
-![risoluzione dei problemi relativi ai pacchetti non risolti](assets/custom-component/troubleshoot-unresolved-packages.png)
-
->[!NOTE]
->
-> Se avete importazioni di pacchetti non risolte per alcune delle nuove dipendenze aggiunte al progetto principale, provate ad aggiornare il progetto aem-guide-wknd maven, che a sua volta aggiornerà tutti i sottoprogetti. A tale scopo, fare clic con il pulsante destro del mouse su **aem-guide-wknd > Maven > Update Project** (Aggiorna progetto).
+1. Estrarre il ramo `tutorial/custom-component-solution`
