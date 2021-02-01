@@ -11,20 +11,15 @@ mini-toc-levels: 1
 kt: 6713
 thumbnail: 22451.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
 
 
 # Authoring frammento di contenuto {#authoring-content-fragments}
-
->[!CAUTION]
->
-> L&#39;API AEM GraphQL per la distribuzione dei frammenti di contenuto è disponibile su richiesta.
-> Per abilitare l&#39;API per il AEM come programma di Cloud Service, contattate  supporto di Adobe.
 
 In questo capitolo verrà creato e modificato un nuovo frammento di contenuto basato sul [modello di frammento di contenuto del collaboratore appena definito](./content-fragment-models.md). Verrà inoltre illustrato come creare varianti di frammenti di contenuto.
 
