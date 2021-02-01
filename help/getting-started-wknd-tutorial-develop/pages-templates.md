@@ -13,10 +13,10 @@ mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
 translation-type: tm+mt
-source-git-commit: 836ef9b7f6a9dcb2ac78f5d1320797897931ef8c
+source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
 workflow-type: tm+mt
-source-wordcount: '2226'
-ht-degree: 2%
+source-wordcount: '1724'
+ht-degree: 1%
 
 ---
 
@@ -31,25 +31,34 @@ Esaminare le istruzioni e gli strumenti necessari per configurare un ambiente di
 
 ### Progetto iniziale
 
+>[!NOTE]
+>
+> Se il capitolo precedente è stato completato correttamente, è possibile riutilizzare il progetto e ignorare i passaggi per il check-out del progetto iniziale.
+
 Controlla il codice della riga di base su cui si basa l&#39;esercitazione:
 
-1. Duplicare il repository [github.com/adobe/aem-guides-wknd](https://github.com/adobe/aem-guides-wknd).
-1. Estrarre il ramo `pages-templates/start`.
+1. Estrarre il ramo `tutorial/pages-templates-start` da [GitHub](https://github.com/adobe/aem-guides-wknd)
 
    ```shell
-   $ git clone git@github.com:adobe/aem-guides-wknd.git ~/code/aem-guides-wknd
    $ cd ~/code/aem-guides-wknd
-   $ git checkout pages-templates/start
+   $ git checkout tutorial/pages-templates-start
    ```
 
 1. Distribuisci la base di codice in un&#39;istanza AEM locale utilizzando le tue competenze Paradiso:
 
    ```shell
-   $ cd ~/code/aem-guides-wknd
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-È sempre possibile visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd/tree/pages-templates/solution) o estrarre il codice localmente passando al ramo `pages-templates/solution`.
+   >[!NOTE]
+   >
+   > Se utilizzate AEM 6.5 o 6.4, aggiungete il profilo `classic` a qualsiasi comando Maven.
+
+   ```shell
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
+   ```
+
+È sempre possibile visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd/tree/pages-templates/solution) o estrarre il codice localmente passando al ramo `tutorial/pages-templates-solution`.
 
 ## Obiettivo
 
@@ -69,124 +78,43 @@ Nella maggior parte dei casi, la pianificazione di un nuovo sito Web inizia con 
 
 >[!VIDEO](https://video.tv.adobe.com/v/30214/?quality=12&learn=on)
 
-Scaricate il [file WKND Article Design File](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd).
-
-## Creare un&#39;intestazione e un piè di pagina con frammenti esperienza {#experience-fragments}
-
-Durante la creazione di contenuto globale, ad esempio un&#39;intestazione o un piè di pagina, è pratica comune utilizzare un [frammento esperienza](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). I frammenti esperienza consentono di combinare più componenti per creare un singolo componente che possa essere utilizzato come riferimento. I frammenti esperienza hanno il vantaggio di supportare la gestione multisito e ci consentono di gestire intestazioni/piè di pagina diversi per lingua.
-
-Quindi, aggiorneremo il frammento esperienza da utilizzare come intestazione e piè di pagina per aggiungere il logo WKND.
-
->[!VIDEO](https://video.tv.adobe.com/v/30215/?quality=12&learn=on)
-
->[!NOTE]
->
-> I tuoi frammenti esperienza sono diversi rispetto al video? Provate a eliminarli e reinstallare la base di codice del progetto iniziale.
-
-Di seguito sono riportati i passaggi di alto livello eseguiti nel video precedente.
-
-1. Aggiornate l&#39;intestazione del frammento esperienza in [http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/header/master.html](http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/header/master.html) per includere il logo WKND Dark.
-
-   ![Logo WKND Dark](assets/pages-templates/wknd-logo-dk.png)
-
-   *Logo WKND Dark*
-
-1. Aggiornate l&#39;intestazione del frammento esperienza [http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/footer/master.html](http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/footer/master.html) per includere il logo WKND Light.
-
-   ![Logo WKND Light](assets/pages-templates/wknd-logo-light.png)
-
-   *Logo WKND Light*
+**Scaricate il file [ ](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)** WKND Article Design.
 
 ## Creare il modello di pagina dell&#39;articolo
 
 Quando si crea una pagina, è necessario selezionare un modello da utilizzare come base per la creazione della nuova pagina. Il modello definisce la struttura della pagina risultante, il contenuto iniziale e i componenti consentiti.
 
-Esistono 3 aree principali di [Modelli modificabili](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/platform/templates/page-templates-editable.html):
+Esistono 3 aree principali di [Modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html):
 
 1. **Struttura** : definisce i componenti che fanno parte del modello. Gli autori dei contenuti non potranno modificarli.
 1. **Contenuto**  iniziale: definisce i componenti con i quali il modello inizierà, che possono essere modificati e/o eliminati dagli autori dei contenuti
 1. **Criteri** : definisce le configurazioni relative al funzionamento dei componenti e alle opzioni che gli autori avranno a disposizione.
 
-La prossima operazione da eseguire è creare il Modello pagina articolo. Ciò si verificherà in un&#39;istanza locale di AEM.
+Quindi, create un nuovo modello in AEM che corrisponda alla struttura dei modelli. Ciò si verificherà in un&#39;istanza locale di AEM. Seguite i passaggi descritti nel video seguente:
 
->[!VIDEO](https://video.tv.adobe.com/v/30217/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330991/?quality=12&learn=on)
 
-Di seguito sono riportati i passaggi di alto livello eseguiti nel video precedente.
+## Aggiornare l&#39;intestazione e il piè di pagina con i frammenti esperienza {#experience-fragments}
 
-1. Andate alla cartella Modello Siti WKND: **Strumenti** > **Generale** > **Modelli** > **Sito WKND**
-1. Create un nuovo modello utilizzando il tipo di modello **WKND Site Empty Page** con un titolo di **Article Page Template**
-1. In modalità **Struttura**, configurate il modello in modo che includa i seguenti elementi:
+Durante la creazione di contenuto globale, ad esempio un&#39;intestazione o un piè di pagina, è pratica comune utilizzare un [frammento esperienza](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Frammenti esperienza, consente agli utenti di combinare più componenti per creare un singolo componente che possa essere utilizzato come riferimento. I frammenti esperienza hanno il vantaggio di supportare la gestione multisito e la [localizzazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
 
-   * Intestazione frammento esperienza
-   * Immagine
-   * Breadcrumb
-   * Contenitore - largo 8 colonne Desktop, largo 12 colonne Tablet, Mobile
-   * Contenitore - largo 4 colonne, largo 12 colonne Tablet, Mobile
-   * Frammento esperienza Piè di pagina
+Il tipo di archivio AEM progetti generava un&#39;intestazione e un piè di pagina. Quindi, aggiornate i frammenti esperienza in modo che corrispondano ai modelli. Seguite i passaggi descritti nel video seguente:
 
-   ![Modello di pagina articolo della modalità Struttura](assets/pages-templates/article-page-template-structure.png)
+>[!VIDEO](https://video.tv.adobe.com/v/330992/?quality=12&learn=on)
 
-   *Struttura - Modello pagina articolo*
-
-1. Passate alla modalità **Contenuto iniziale** e aggiungete i seguenti componenti come contenuto iniziale:
-
-   * **Contenitore principale**
-      * Titolo - Dimensione predefinita di H1
-      * Titolo - *&quot;Per nome autore&quot;* con dimensioni H4
-      * Testo - vuoto
-   * **Contenitore laterale**
-      * Titolo - *&quot;Condividi questa storia&quot;* con una dimensione di H5
-      * Condivisione social media
-      * Separatore
-      * Scarica
-      * Elenco
-
-   ![Modello pagina articolo modalità contenuto iniziale](assets/pages-templates/article-page-template-initialcontent.png)
-
-   *Contenuto iniziale - Modello pagina articolo*
-
-1. Aggiornate le **Proprietà pagina iniziale** per consentire la condivisione da parte dell&#39;utente sia per **Facebook** che per **Pinterest**.
-1. Caricate un&#39;immagine nelle proprietà **Modello pagina articolo** per identificarla facilmente:
-
-   ![Miniatura modello pagina articolo](assets/pages-templates/article-page-template-thumbnail.png)
-
-   *Miniatura modello pagina articolo*
-
-1. Attivate **Modello pagina articolo** nella cartella [Modelli sito WKND](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd/settings/wcm/templates).
+Scaricate e installate il pacchetto di contenuti di esempio **[WKND-PagesTemplates-Content-Assets.zip](assets/pages-templates/WKND-PagesTemplates-Content-Assets.zip)**.
 
 ## Creare una pagina articolo
 
-Ora che abbiamo un modello, creiamo una nuova pagina utilizzando quel modello.
+Quindi, create una nuova pagina utilizzando il modello Pagina articolo. Creare il contenuto della pagina in modo che corrisponda ai modelli del sito. Seguite i passaggi descritti nel video seguente:
 
-1. Scaricate il seguente pacchetto zip, [WKND-PagesTemplates-DAM-Assets.zip](assets/pages-templates/WKND-PagesTemplates-DAM-Assets.zip), quindi installatelo tramite [CRX Package Manager](http://localhost:4502/crx/packmgr/index.jsp).
-
-   Il pacchetto precedente installa diverse immagini e risorse sotto `/content/dam/wknd/en/magazine/la-skateparks` da utilizzare per compilare una pagina di articolo nei passaggi successivi.
-
-   *Le immagini e le risorse del pacchetto sopra sono licenze gratuite per gentile concessione di  [Unsplash.com](https://unsplash.com/).*
-
-   ![Risorse DAM di esempio](assets/pages-templates/sample-assets-la-skatepark.png)
-
-1. Create una nuova pagina, sotto **WKND** > **US** > **en**, denominata **Magazine**. Utilizzate il modello **Content Page**.
-
-   Questa pagina aggiungerà una struttura al sito e ci consentirà di vedere il componente Breadcrumb in azione.
-
-1. Create quindi una nuova pagina, sotto **WKND** > **US** > **en** > **Magazine**. Utilizzate il modello **Article Page**. Utilizzate un titolo di **Guida finale a LA Skateparks** e un nome di **guide-la-skateparks**.
-
-   ![Pagina dell&#39;articolo creata all&#39;inizio](assets/pages-templates/create-article-page-nocontent.png)
-
-1. Compilare la pagina con il contenuto per far corrispondere i modelli esaminati in [UI Planning with AdobeXD](#adobexd) porzione. Il testo dell&#39;articolo di esempio può essere [scaricato qui](assets/pages-templates/la-skateparks-copy.txt). Dovrebbe essere possibile creare qualcosa di simile a questo:
-
-   ![Pagina articolo compilata](assets/pages-templates/article-page-unstyled.png)
-
-   >[!NOTE]
-   >
-   > Il componente Immagine nella parte superiore della pagina può essere modificato ma non rimosso. Il componente breadcrumb viene visualizzato sulla pagina ma non può essere modificato o rimosso.
+>[!VIDEO](https://video.tv.adobe.com/v/330993/?quality=12&learn=on)
 
 ##  Inspect la struttura del nodo {#node-structure}
 
-A questo punto la pagina dell&#39;articolo è chiaramente priva di stile. Tuttavia, la struttura di base è in atto. Esamineremo quindi la struttura dei nodi della pagina dell&#39;articolo per comprendere meglio il ruolo del modello e del componente della pagina responsabile per il rendering del contenuto.
+A questo punto la pagina dell&#39;articolo è chiaramente priva di stile. Tuttavia, la struttura di base è in atto. Quindi, esaminate la struttura dei nodi della pagina dell&#39;articolo per comprendere meglio il ruolo del modello, della pagina e dei componenti.
 
-Possiamo farlo usando lo strumento CRXDE-Lite su un&#39;istanza AEM locale.
+Utilizzare lo strumento CRXDE-Lite su un&#39;istanza AEM locale per visualizzare la struttura del nodo sottostante.
 
 1. Aprire [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent) e utilizzare la struttura di navigazione per passare a `/content/wknd/us/en/magazine/guide-la-skateparks`.
 
@@ -196,44 +124,59 @@ Possiamo farlo usando lo strumento CRXDE-Lite su un&#39;istanza AEM locale.
 
    Notate il valore di `cq:template`, che indica `/conf/wknd/settings/wcm/templates/article-page`, il Modello pagina articolo creato in precedenza.
 
-   Notate anche il valore di `sling:resourceType`, che punta a `wknd/components/structure/page`. Si tratta del componente pagina creato dall&#39;archetipo AEM progetto ed è responsabile del rendering della pagina in base al modello.
+   Notate anche il valore di `sling:resourceType`, che punta a `wknd/components/page`. Si tratta del componente pagina creato dall&#39;archetipo AEM progetto ed è responsabile del rendering della pagina in base al modello.
 
 1. Espandere il nodo `jcr:content` sotto `/content/wknd/us/en/magazine/guide-la-skateparks/jcr:content` e visualizzare la gerarchia dei nodi:
 
    ![JCR Content LA Skatepars](assets/pages-templates/page-jcr-structure.png)
 
-   È necessario essere in grado di mappare liberamente ciascuno dei nodi ai componenti creati. Verificare se è possibile identificare i diversi Contenitori di layout utilizzati dall&#39;analisi dei nodi con il prefisso `responsivegrid`.
+   È necessario essere in grado di mappare liberamente ciascuno dei nodi ai componenti creati. Verificare se è possibile identificare i diversi Contenitori di layout utilizzati dall&#39;analisi dei nodi con il prefisso `container`.
 
-1. Quindi ispezionare il componente pagina in `/apps/wknd/components/structure/page`. Visualizzare le proprietà del componente in CRXDE Lite:
+1. Quindi ispezionare il componente pagina in `/apps/wknd/components/page`. Visualizzare le proprietà del componente in CRXDE Lite:
 
    ![Proprietà dei componenti pagina](assets/pages-templates/page-component-properties.png)
 
-   Il componente pagina si trova sotto una cartella denominata **structure**. Si tratta di una convenzione che corrisponde alla modalità struttura Editor modello e viene utilizzata per indicare che il componente pagina non è qualcosa con cui gli autori interagiscono direttamente.
+   Al di sotto del componente della pagina sono presenti solo 2 script HTL, `customfooterlibs.html` e `customheaderlibs.html`. *Quindi, in che modo questo componente esegue il rendering della pagina?*
 
-   Al di sotto del componente della pagina sono presenti solo 2 script HTL, `customfooterlibs.html` e `customheaderlibs.html`. Quindi, in che modo questo componente esegue il rendering della pagina?
+   La proprietà `sling:resourceSuperType` punta a `core/wcm/components/page/v2/page`. Questa proprietà consente al componente pagina del WKND di ereditare **all** la funzionalità del componente pagina del componente core. Questo è il primo esempio di un elemento chiamato modello di componente proxy](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). [ Ulteriori informazioni sono disponibili [qui.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html).
 
-   Notare la proprietà `sling:resourceSuperType` e il valore di `core/wcm/components/page/v2/page`. Questa proprietà consente al componente pagina del WKND di ereditare tutte le funzionalità del componente Pagina del componente Core. Questo è il primo esempio di un elemento chiamato modello di componente proxy[. ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern) Ulteriori informazioni sono disponibili [qui.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html).
+1.  Inspect un altro componente all’interno dei componenti WKND, il componente `Breadcrumb` che si trova in: `/apps/wknd/components/breadcrumb`. Notate che è possibile trovare la stessa proprietà `sling:resourceSuperType`, ma questa volta indica `core/wcm/components/breadcrumb/v2/breadcrumb`. Si tratta di un altro esempio di utilizzo del pattern del componente Proxy per includere un componente Core. Infatti, tutti i componenti della base di codice WKND sono proxy di componenti core AEM (ad eccezione del nostro famoso componente HelloWorld). È consigliabile provare a riutilizzare il maggior numero possibile di funzionalità dei componenti core *prima di* per scrivere codice personalizzato.
 
-1.  Inspect un altro componente all’interno dei componenti WKND, il componente `Breadcrumb` che si trova in: `/apps/wknd/components/content/breadcrumb`. Notate che è possibile trovare la stessa proprietà `sling:resourceSuperType`, ma questa volta indica `core/wcm/components/breadcrumb/v2/breadcrumb`. Si tratta di un altro esempio di utilizzo del pattern del componente Proxy per includere un componente Core. Infatti, tutti i componenti della base di codice WKND sono proxy di componenti core AEM (ad eccezione del nostro famoso componente HelloWorld). È consigliabile provare a riutilizzare il maggior numero possibile di funzionalità dei componenti core *prima di* per scrivere codice personalizzato.
+1. Quindi ispezionare la pagina del componente di base in `/libs/core/wcm/components/page/v2/page` utilizzando CRXDE Lite:
 
-1. Quindi ispezionare la pagina del componente di base in `/apps/core/wcm/components/page/v2/page` utilizzando CRXDE Lite:
+   >[!NOTE]
+   >
+   > Nella AEM 6.5/6.4 i componenti core si trovano in `/apps/core/wcm/components`. In AEM come Cloud Service, i componenti core si trovano in `/libs` e vengono aggiornati automaticamente.
 
    ![Pagina componente di base](assets/pages-templates/core-page-component-properties.png)
 
    Si noti che sotto questa pagina sono inclusi molti altri script. La pagina dei componenti core contiene molte funzionalità. Questa funzionalità è suddivisa in più script per semplificare la manutenzione e la leggibilità. Per tracciare l&#39;inclusione degli script HTL, aprire `page.html` e cercare `data-sly-include`:
 
    ```html
-   <!--/* /apps/core/wcm/components/page/v2/page/page.html */-->
+   <!--/* /libs/core/wcm/components/page/v2/page/page.html */-->
    <!DOCTYPE HTML>
    <html data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page" lang="${page.language}"
-           data-sly-use.head="head.html"
-           data-sly-use.footer="footer.html"
-           data-sly-use.redirect="redirect.html">
+       data-sly-use.head="head.html"
+       data-sly-use.footer="footer.html"
+       data-sly-use.redirect="redirect.html">
        <head data-sly-call="${head.head @ page = page}"></head>
-       <body class="${page.cssClassNames}">
+       <body class="${page.cssClassNames}"
+           id="${page.id}"
+           data-cmp-data-layer-enabled="${page.data ? true : false}">
+           <script data-sly-test.dataLayerEnabled="${page.data}">
+           window.adobeDataLayer = window.adobeDataLayer || [];
+           adobeDataLayer.push({
+               page: JSON.parse("${page.data.json @ context='scriptString'}"),
+               event:'cmp:show',
+               eventInfo: {
+                   path: 'page.${page.id @ context="scriptString"}'
+               }
+           });
+           </script>
            <sly data-sly-test.isRedirectPage="${page.redirectTarget && (wcmmode.edit || wcmmode.preview)}"
                data-sly-call="${redirect.redirect @ redirectTarget = page.redirectTarget}"></sly>
            <sly data-sly-test="${!isRedirectPage}">
+               <sly data-sly-include="body.skiptomaincontent.html"></sly>
                <sly data-sly-include="body.socialmedia_begin.html"></sly>
                <sly data-sly-include="body.html"></sly>
                <sly data-sly-call="${footer.footer @ page = page}"></sly>
@@ -245,35 +188,35 @@ Possiamo farlo usando lo strumento CRXDE-Lite su un&#39;istanza AEM locale.
 
    L&#39;altro motivo per suddividere l&#39;HTL in più script è consentire ai componenti proxy di ignorare i singoli script per implementare la logica aziendale personalizzata. Gli script HTL, `customfooterlibs.html` e `customheaderlibs.html`, vengono creati affinché lo scopo esplicito sia ignorato dall&#39;implementazione dei progetti.
 
-   Per saperne di più su come i fattori di modello modificabile possono essere utilizzati per il rendering della pagina di contenuto [leggendo questo articolo](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html#resultant-content-pages).
+   Per saperne di più su come i fattori di modello modificabile possono essere utilizzati per il rendering della pagina di contenuto [leggendo questo articolo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html).
 
-1.  Inspect come altro componente core, come Breadcrumb in `/apps/core/wcm/components/breadcrumb/v2/breadcrumb`. Visualizzare lo script `breadcrumb.html` per comprendere in che modo viene generata la marcatura per il componente Breadcrumb.
+1.  Inspect come altro componente core, come Breadcrumb in `/libs/core/wcm/components/breadcrumb/v2/breadcrumb`. Visualizzare lo script `breadcrumb.html` per comprendere in che modo viene generata la marcatura per il componente Breadcrumb.
 
 ## Salvataggio delle configurazioni nel controllo del codice sorgente {#configuration-persistence}
 
 In molti casi, specialmente all&#39;inizio di un progetto AEM, è utile mantenere configurazioni, come modelli e relativi criteri di contenuto, al controllo del codice sorgente. In questo modo tutti gli sviluppatori lavorano con lo stesso set di contenuti e configurazioni e possono garantire un&#39;ulteriore coerenza tra gli ambienti. Una volta raggiunto un certo livello di maturità, la gestione dei modelli può essere affidata a un gruppo speciale di utenti.
 
-Per ora i modelli saranno trattati come altri elementi di codice e sincronizzeremo il **Modello pagina articolo** verso il basso come parte del progetto. Fino ad ora abbiamo **inviato** il codice dal nostro progetto AEM a un&#39;istanza locale di AEM. Il **Modello pagina articolo** è stato creato direttamente su un&#39;istanza locale di AEM, quindi è necessario **pull** o importare il modello nel progetto AEM. Il modulo **ui.content** è incluso nel progetto AEM per questo scopo specifico.
+Per ora i modelli saranno trattati come altri elementi di codice e sincronizzeremo il **Modello pagina articolo** verso il basso come parte del progetto. Fino ad ora abbiamo **inviato** il codice dal nostro progetto AEM a un&#39;istanza locale di AEM. Il **Modello pagina articolo** è stato creato direttamente su un&#39;istanza locale di AEM, quindi è necessario **importare** il modello nel nostro progetto AEM. Il modulo **ui.content** è incluso nel progetto AEM per questo scopo specifico.
 
-I passaggi successivi verranno eseguiti utilizzando l&#39;IDE Eclipse, ma potrebbe essere possibile utilizzare qualsiasi IDE configurato per **pull** o importare contenuto da un&#39;istanza locale di AEM.
+I passaggi successivi verranno eseguiti utilizzando l&#39;IDE VSCode utilizzando il plug-in [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync&amp;ssr=false#overview), ma potrebbe essere possibile utilizzare qualsiasi IDE configurato per **importare** o importare contenuti da un&#39;istanza locale di AEM.
 
-1. Nell&#39;IDE Eclipse, assicurarsi che un server sia stato avviato il plug-in dello strumento di sviluppo AEM che si collega all&#39;istanza locale di AEM e che il modulo **ui.content** sia stato aggiunto alla configurazione Server.
+1. In VSCode aprire il progetto `aem-guides-wknd`.
 
-   ![Connessione Eclipse Server](assets/pages-templates/eclipse-server-started.png)
+1. Espandete il modulo **ui.content** in Project Explorer. Espandete la cartella `src` e passate a `/conf/wknd/settings/wcm/templates`.
 
-1. Espandete il modulo **ui.content** in Project Explorer. Espandete la cartella `src` (quella con l&#39;icona GLOS piccola) e passate a `/conf/wknd/settings/wcm/templates`.
+1. [!UICONTROL Fate ] clic con il pulsante destro del mouse sulla  `templates` cartella e selezionate  **Importa da AEM server**:
 
-1. [!UICONTROL Fare clic con il pulsante destro del ] mouse sul  `templates` nodo e selezionare  **Importa dal server...**:
+   ![Modello di importazione VSCode](assets/pages-templates/vscode-import-templates.png)
 
-   ![Modello di importazione Eclipse](assets/pages-templates/eclipse-import-templates.png)
+   È necessario importare i `article-page` e aggiornare anche i modelli `page-content` `xf-web-variation`.
 
-   Confermare la finestra di dialogo **Importa da repository** e fare clic su **Fine**. A questo punto, sotto la cartella `templates` è visibile la cartella `article-page-template`.
+   ![Modelli aggiornati](assets/pages-templates/updated-templates.png)
 
-1. Ripetere i passaggi per importare il contenuto, ma selezionare il nodo **policy** che si trova in `/conf/wknd/settings/wcm/policies`.
+1. Ripetere i passaggi per importare il contenuto, ma selezionare la cartella **policy** che si trova in `/conf/wknd/settings/wcm/policies`.
 
-   ![Criteri di importazione Eclipse](assets/pages-templates/policies-article-page-template.png)
+   ![Criteri di importazione VSCode](assets/pages-templates/policies-article-page-template.png)
 
-1.  Inspect il file `filter.xml` che si trova in `src/main/content/META-INF/vault/filter.xml`.
+1.  Inspect il file `filter.xml` che si trova in `ui.content/src/main/content/META-INF/vault/filter.xml`.
 
    ```xml
    <!--ui.content filter.xml-->
@@ -302,7 +245,7 @@ Congratulazioni, hai appena creato un nuovo modello e una nuova pagina con  Adob
 
 A questo punto la pagina dell&#39;articolo è chiaramente priva di stile. Seguite l&#39;esercitazione [Client-Side Libraries and Front-end Workflow](client-side-libraries.md) per apprendere le procedure ottimali per l&#39;inclusione di CSS e Javascript per applicare stili globali al sito e integrare una build front-end dedicata.
 
-Visualizzate il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd) oppure rivedete e distribuite il codice localmente in corrispondenza del blocco Git `pages-templates/solution`.
+Visualizzate il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd) oppure rivedete e distribuite il codice localmente in corrispondenza del blocco Git `tutorial/pages-templates-solution`.
 
 1. Duplicare il repository [github.com/adobe/aem-wknd-guides](https://github.com/adobe/aem-guides-wknd).
-1. Estrarre il ramo `pages-templates/solution`.
+1. Estrarre il ramo `tutorial/pages-templates-solution`.
