@@ -10,10 +10,10 @@ user-guide-description: Un tutorial in più parti per sviluppatori che non hanno
 breadcrumb-title: Tutorial WKND di AEM Sites
 index: y
 translation-type: tm+mt
-source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
+source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
 workflow-type: tm+mt
 source-wordcount: '56'
-ht-degree: 76%
+ht-degree: 66%
 
 ---
 
@@ -21,10 +21,10 @@ ht-degree: 76%
 # Guida introduttiva ad AEM Sites: tutorial WKND {#getting-started-wknd-tutorial-develop}
 
 + [Panoramica delle esercitazioni WKND](overview.md)
-+ [Configurazione del progetto](project-setup.md)
-+ [Nozioni di base sui componenti](component-basics.md)
-+ [Pagine e modelli](pages-templates.md)
-+ [Librerie lato client](client-side-libraries.md)
-+ [Sistema di stili](style-system.md)
-+ [Componente personalizzato](custom-component.md)
-+ [Test di unità](unit-testing.md)
++ [1 - Impostazione progetto](project-setup.md)
++ [2 - Nozioni di base sui componenti](component-basics.md)
++ [3 - Pagine e modelli](pages-templates.md)
++ [4 - Librerie lato client](client-side-libraries.md)
++ [5 - Sistema di stile](style-system.md)
++ [6 - Componente personalizzato](custom-component.md)
++ [7 - Prova di unità](unit-testing.md)
