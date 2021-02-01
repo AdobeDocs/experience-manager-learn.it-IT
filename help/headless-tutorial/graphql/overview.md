@@ -11,20 +11,15 @@ mini-toc-levels: 1
 kt: 6678
 thumbnail: 328618.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
 
 
 # Guida introduttiva a AEM headless - GraphQL
-
->[!CAUTION]
->
-> L&#39;API AEM GraphQL per la distribuzione dei frammenti di contenuto è disponibile su richiesta.
-> Per abilitare l&#39;API per il AEM come programma di Cloud Service, contattate  supporto di Adobe.
 
 Un&#39;esercitazione end-to-end che illustra come creare ed esporre contenuti utilizzando AEM API GraphQL e utilizzati da un&#39;app esterna, in uno scenario CMS headless.
 
