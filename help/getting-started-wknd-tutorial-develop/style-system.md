@@ -12,9 +12,9 @@ kt: 4128
 mini-toc-levels: 1
 thumbnail: 30386.jpg
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
 workflow-type: tm+mt
-source-wordcount: '3077'
+source-wordcount: '1996'
 ht-degree: 1%
 
 ---
@@ -32,25 +32,34 @@ Si consiglia inoltre di consultare le [librerie lato client e l&#39;esercitazion
 
 ### Progetto iniziale
 
+>[!NOTE]
+>
+> Se il capitolo precedente è stato completato correttamente, è possibile riutilizzare il progetto e ignorare i passaggi per il check-out del progetto iniziale.
+
 Controlla il codice della riga di base su cui si basa l&#39;esercitazione:
 
-1. Duplicare il repository [github.com/adobe/aem-guides-wknd](https://github.com/adobe/aem-guides-wknd).
-1. Estrarre il ramo `style-system/start`
+1. Estrarre il ramo `tutorial/style-system-start` da [GitHub](https://github.com/adobe/aem-guides-wknd)
 
    ```shell
-   $ git clone git@github.com:adobe/aem-guides-wknd.git ~/code/aem-guides-wknd
-   $ cd ~/code/aem-guides-wknd
-   $ git checkout style-system/start
+   $ cd aem-guides-wknd
+   $ git checkout tutorial/style-system-start
    ```
 
 1. Distribuisci la base di codice in un&#39;istanza AEM locale utilizzando le tue competenze Paradiso:
 
    ```shell
-   $ cd ~/code/aem-guides-wknd
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-È sempre possibile visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd/tree/style-system/solution) o estrarre il codice localmente passando al ramo `style-system/solution`.
+   >[!NOTE]
+   >
+   > Se utilizzate AEM 6.5 o 6.4, aggiungete il profilo `classic` a qualsiasi comando Maven.
+
+   ```shell
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
+   ```
+
+È sempre possibile visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/style-system-solution) o estrarre il codice localmente passando al ramo `tutorial/style-system-solution`.
 
 ## Obiettivo
 
@@ -60,9 +69,11 @@ Controlla il codice della riga di base su cui si basa l&#39;esercitazione:
 
 ## Cosa verrà creato {#what-you-will-build}
 
-In questo capitolo verrà utilizzata la [funzione Style System](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) per creare diverse varianti di componenti utilizzati nella pagina Articolo. Verrà inoltre utilizzato il sistema di stile per creare varianti per elementi strutturali quali il contenitore Intestazione/Piè di pagina e Layout.
+In questo capitolo utilizzeremo la funzione [Style System](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) per creare varianti dei componenti **Title** e **Text** utilizzati nella pagina Articolo.
 
->[!VIDEO](https://video.tv.adobe.com/v/30386/?quality=12&learn=on)
+![Stili disponibili per il titolo](assets/style-system/styles-added-title.png)
+
+*Stile sottolineato disponibile per il componente Titolo*
 
 ## Sfondo {#background}
 
@@ -70,29 +81,21 @@ In questo capitolo verrà utilizzata la [funzione Style System](https://docs.ado
 
 L’idea generale del sistema di stile è che gli autori possono scegliere vari stili per l’aspetto di un componente. Gli &quot;stili&quot; sono supportati da ulteriori classi CSS inserite nel div esterno di un componente. Nelle librerie client le regole CSS vengono aggiunte in base a queste classi di stile in modo che il componente cambi aspetto.
 
-È possibile trovare la [documentazione dettagliata per Style System qui](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/style-system.html). C&#39;è anche un ottimo [video tecnico per capire il sistema Style](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
+È possibile trovare la [documentazione dettagliata per Style System qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html). C&#39;è anche un ottimo [video tecnico per capire il sistema Style](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
 
-## Stile componente titolo {#title-component}
+## Stile sottolineatura - Titolo {#underline-style}
 
-A questo punto, il [Componente titolo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/title.html) è stato incluso nel progetto in `/apps/wknd/components/content/title` come parte del modulo **ui.apps**. Gli stili predefiniti degli elementi Titolo (`H1`, `H2`, `H3`...) sono già stati implementati nel modulo **ui.frontend** nel file `_elements.scss` in `ui.frontend/src/main/webpack/base/sass/_elements.scss`.
-
-### Stile sottolineatura
+Il componente [Titolo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/title.html) è stato proxy nel progetto in `/apps/wknd/components/title` come parte del modulo **ui.apps**. Gli stili predefiniti degli elementi Titolo (`H1`, `H2`, `H3`...) sono già stati implementati nel modulo **ui.frontend**.
 
 Le [progettazioni di articoli WKND](assets/pages-templates/wknd-article-design.xd) contengono uno stile univoco per il componente Titolo con una sottolineatura. Anziché creare due componenti o modificare la finestra di dialogo dei componenti, il sistema di stile può essere utilizzato per consentire agli autori di aggiungere uno stile di sottolineatura.
 
 ![Stile sottolineatura - Componente titolo](assets/style-system/title-underline-style.png)
 
-###  Inspect Title Component Markup
+### Marcatura titolo  Inspect
 
 Come sviluppatore front-end, il primo passo per definire lo stile di un componente core consiste nel comprendere il codice generato dal componente.
 
-Come parte del progetto generato, il progetto **Core Component Examples** integrato archetype. Per gli sviluppatori e gli autori di contenuti, questo contiene un riferimento semplice per comprendere tutte le funzioni disponibili con i componenti core. Una versione live è anche [disponibile](https://opensource.adobe.com/aem-core-wcm-components/library.html).
-
-1. Aprite un nuovo browser e visualizzate il componente Titolo:
-
-   Istanza AEM locale: [http://localhost:4502/editor.html/content/core-components-examples/library/title.html](http://localhost:4502/editor.html/content/core-components-examples/library/title.html)
-
-   Live example: [https://opensource.adobe.com/aem-core-wcm-components/library/title.html](https://opensource.adobe.com/aem-core-wcm-components/library/title.html)
+1. Aprite un nuovo browser e visualizzate il componente Titolo sul sito AEM Libreria componenti core: [https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/title.html](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/title.html)
 
 1. Di seguito è riportata la marcatura per il componente Titolo:
 
@@ -121,7 +124,7 @@ Come parte del progetto generato, il progetto **Core Component Examples** integr
 
 ### Implementa lo stile sottolineatura - ui.frontend
 
-Successivamente verrà implementato lo stile Sottolineato utilizzando il modulo **ui.frontend** del nostro progetto. Verrà utilizzato il server di sviluppo webpack fornito con il modulo **ui.frontend** per visualizzare in anteprima gli stili *prima di* distribuire in un&#39;istanza locale di AEM.
+Quindi, implementate lo stile Sottolineato utilizzando il modulo **ui.frontend** del nostro progetto. Verrà utilizzato il server di sviluppo webpack fornito con il modulo **ui.frontend** per visualizzare in anteprima gli stili *prima di* distribuire in un&#39;istanza locale di AEM.
 
 1. Avviare il server di sviluppo webpack eseguendo il comando seguente dall&#39;interno del modulo **ui.frontend**:
 
@@ -141,37 +144,24 @@ Successivamente verrà implementato lo stile Sottolineato utilizzando il modulo 
 
    ![Server di sviluppo webpack](assets/style-system/static-webpack-server.png)
 
-1. In Eclipse o nell&#39;IDE di vostra scelta, aprite il file `index.html` situato in: `ui.frontend/src/main/webpack/static/index.html`. Si tratta del markup statico utilizzato dal server di sviluppo webpack.
+1. Nell&#39;IDE aprire il file `index.html` situato in: `ui.frontend/src/main/webpack/static/index.html`. Si tratta del markup statico utilizzato dal server di sviluppo webpack.
 1. In `index.html` trovare un&#39;istanza del componente Titolo a cui aggiungere lo stile sottolineato ricercando nel documento *cmp-title*. Scegliete il componente Titolo con il testo *&quot;Vans off the Wall Skatepark&quot;* (riga 218). Aggiungete la classe `cmp-title--underline` al div circostante:
 
-   ```html
-    <!-- before -->
-    <div class="title aem-GridColumn aem-GridColumn--default--8">
-        <div class="cmp-title">
-            <h2 class="cmp-title__text">Vans off the Wall Skatepark</h2>
-        </div>
-    </div>
-   ```
-
-   ```html
-    <!-- After -->
-    <div class="cmp-title--underline title aem-GridColumn aem-GridColumn--default--8">
-        <div class="cmp-title">
-            <h2 class="cmp-title__text">Vans off the Wall Skatepark</h2>
+   ```diff
+   - <div class="title aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--8">
+   + <div class="cmp-title--underline title aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--8">
+        <div data-cmp-data-layer="{&#34;title-8bea562fa0&#34;:{&#34;@type&#34;:&#34;wknd/components/title&#34;,&#34;repo:modifyDate&#34;:&#34;2021-01-22T18:54:20Z&#34;,&#34;dc:title&#34;:&#34;Vans Off the Wall&#34;}}" id="title-8bea562fa0" class="cmp-title">
+            <h2 class="cmp-title__text">Vans Off the Wall</h2>
         </div>
     </div>
    ```
 
 1. Tornate al browser e verificate che la classe supplementare sia riflessa nella marcatura.
-1. Tornate al modulo **ui.frontend** e aggiornate il file `title.scss` che si trova in: `ui.frontend/src/main/webpack/components/content/title/scss/title.scss`:
+1. Tornate al modulo **ui.frontend** e aggiornate il file `title.scss` che si trova in: `ui.frontend/src/main/webpack/components/_title.scss`:
 
    ```css
    /* Add Title Underline Style */
    .cmp-title--underline {
-   
-       .cmp-title {
-       }
-   
        .cmp-title__text {
            &:after {
            display: block;
@@ -207,7 +197,7 @@ Successivamente è necessario aggiungere un nuovo criterio per i componenti Tito
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. Andate alla **pagina articolo Modello**, che si trova in: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
+1. Andate al modello **Article Page** che si trova in: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)
 
 1. In modalità **Struttura**, nella **Contenitore di layout** principale, selezionare l&#39;icona **Policy** accanto al componente **Titolo** elencato in *Componenti consentiti*:
 
@@ -221,7 +211,7 @@ Successivamente è necessario aggiungere un nuovo criterio per i componenti Tito
 
    **Sottolineato** :  `cmp-title--underline`
 
-   ![Configurazione dei criteri di stile per il titolo](assets/style-system/title-style-policy.gif)
+   ![Configurazione dei criteri di stile per il titolo](assets/style-system/title-style-policy.png)
 
    Fare clic su **Fine** per salvare le modifiche al criterio Titolo.
 
@@ -246,11 +236,9 @@ Infine, come autore, possiamo scegliere di applicare lo stile sottolineato ad al
 
    Utilizzate gli strumenti di sviluppo del browser per verificare che la marcatura intorno al componente Titolo sia applicata alla classe CSS `cmp-title--underline`.
 
-## Stile componente testo {#text-component}
+## Stile blocco preventivo - Testo {#text-component}
 
-Quindi, ripeteremo passaggi simili per applicare uno stile univoco al [componente di testo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html). Il componente Testo è stato proxy nel progetto in `/apps/wknd/components/content/text` come parte del modulo **ui.apps**. Gli stili predefiniti degli elementi di paragrafo sono già stati implementati nel modulo **ui.frontend** nel file `_elements.scss` in `ui.frontend/src/main/webpack/base/sass/_elements.scss`.
-
-### Stile blocco preventivo
+Ripetere quindi i passaggi simili per applicare uno stile univoco al [componente di testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html). Il componente Testo è stato proxy nel progetto in `/apps/wknd/components/text` come parte del modulo **ui.apps**. Gli stili predefiniti degli elementi di paragrafo sono già stati implementati in **ui.frontend**.
 
 Le [progettazioni di articoli WKND](assets/pages-templates/wknd-article-design.xd) contengono uno stile univoco per il componente Testo con un blocco di virgolette:
 
@@ -260,22 +248,19 @@ Le [progettazioni di articoli WKND](assets/pages-templates/wknd-article-design.x
 
 Anche in questo caso, verrà esaminata la marcatura del componente Testo.
 
-1. Apri un nuovo browser e visualizza il componente Testo come parte della Libreria componenti core:
-Istanza AEM locale: [http://localhost:4502/editor.html/content/core-components-examples/library/text.html](http://localhost:4502/editor.html/content/core-components-examples/library/text.html)
-
-   Live example: [https://opensource.adobe.com/aem-core-wcm-components/library/text.html](https://opensource.adobe.com/aem-core-wcm-components/library/text.html)
+1. Rivedete la marcatura per il componente Testo in: [https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/text.html](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/text.html)
 
 1. Di seguito è riportata la marcatura per il componente Testo:
 
    ```html
-   <div class="cmp-text">
-       <p><b>Bold </b>can be used to emphasize a word or phrase, as can <u>underline</u> and <i>italics.&nbsp;</i><sup>Superscript</sup> and <sub>subscript</sub> are useful for mathematical (E = mc<sup>2</sup>) or scientific (h<sub>2</sub>O) expressions. Paragraph styles can provide alternative renderings, such as quote sections:</p>
-       <blockquote>"<i>Be yourself; everyone else is already taken"</i></blockquote>
-       <b>- Oscar Wilde</b>
+   <div class="text">
+       <div class="cmp-text" data-cmp-data-layer="{&quot;text-2d9d50c5a7&quot;:{&quot;@type&quot;:&quot;core/wcm/components/text/v2/text&quot;,&quot;repo:modifyDate&quot;:&quot;2019-01-22T11:56:17Z&quot;,&quot;xdm:text&quot;:&quot;<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Varius morbi enim nunc faucibus a pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.</p>\n&quot;}}" id="text-2d9d50c5a7">
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Varius morbi enim nunc faucibus a pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.</p>
+       </div>
    </div>
    ```
 
-   Notazione BEM del componente Titolo:
+   Notazione BEM del componente Testo:
 
    ```plain
    BLOCK cmp-text
@@ -285,11 +270,9 @@ Istanza AEM locale: [http://localhost:4502/editor.html/content/core-components-e
 1. Il sistema Style aggiunge una classe CSS al div esterno che circonda il componente. Di conseguenza, il markup a cui verrà indirizzato il targeting sarà simile a quanto segue:
 
    ```html
-   <div class="STYLE-SYSTEM-CLASS-HERE"> <!-- Custom CSS class - implementation gets to define this -->
-       <div class="cmp-text">
-           <p><b>Bold </b>can be used to emphasize a word or phrase, as can <u>underline</u> and <i>italics.&nbsp;</i><sup>Superscript</sup> and <sub>subscript</sub> are useful for mathematical (E = mc<sup>2</sup>) or scientific (h<sub>2</sub>O) expressions. Paragraph styles can provide alternative renderings, such as quote sections:</p>
-           <blockquote>"<i>Be yourself; everyone else is already taken"</i></blockquote>
-           <b>- Oscar Wilde</b>
+   <div class="text STYLE-SYSTEM-CLASS-HERE"> <!-- Custom CSS class - implementation gets to define this -->
+       <div class="cmp-text" data-cmp-data-layer="{&quot;text-2d9d50c5a7&quot;:{&quot;@type&quot;:&quot;core/wcm/components/text/v2/text&quot;,&quot;repo:modifyDate&quot;:&quot;2019-01-22T11:56:17Z&quot;,&quot;xdm:text&quot;:&quot;<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Varius morbi enim nunc faucibus a pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.</p>\n&quot;}}" id="text-2d9d50c5a7">
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu mi bibendum neque egestas congue quisque egestas. Varius morbi enim nunc faucibus a pellentesque. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.</p>
        </div>
    </div>
    ```
@@ -303,42 +286,26 @@ Successivamente verrà implementato lo stile Blocco preventivo utilizzando il mo
    ```shell
    $ cd ~/code/aem-guides-wknd/ui.frontend/
    $ npm start
-   
-   > aem-maven-archetype@1.0.0 start code/aem-guides-wknd/ui.frontend
-   > webpack-dev-server --open --config ./webpack.dev.js
    ```
 
-1. In Eclipse o nell&#39;IDE di vostra scelta, aprite il file `index.html` situato in: `ui.frontend/src/main/webpack/static/index.html`. Si tratta del markup statico utilizzato dal server di sviluppo webpack.
+1. Nell&#39;IDE, aprire il file `index.html` che si trova in: `ui.frontend/src/main/webpack/static/index.html`.
 1. In `index.html` trovare un&#39;istanza del componente di testo cercando il testo *&quot;Jacob Wester&quot;* (riga 210). Aggiungete la classe `cmp-text--quote` al div circostante:
 
-   ```html
-    <!-- before -->
-    <div class="text aem-GridColumn aem-GridColumn--default--8">
-        <div class="cmp-text">
-            <blockquote>"There is no better place to shred then Los Angeles"</blockquote>
-            <p>Jacob Wester - Pro Skater</p>
+   ```diff
+   - <div class="text aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--8">
+   + <div class="cmp-text--quote text aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--8">
+        <div data-cmp-data-layer="{&#34;text-a15f39a83a&#34;:{&#34;@type&#34;:&#34;wknd/components/text&#34;,&#34;repo:modifyDate&#34;:&#34;2021-01-22T00:23:27Z&#34;,&#34;xdm:text&#34;:&#34;&lt;blockquote>&amp;quot;There is no better place to shred then Los Angeles.”&lt;/blockquote>\r\n&lt;p>- Jacob Wester, Pro Skater&lt;/p>\r\n&#34;}}" id="text-a15f39a83a" class="cmp-text">
+            <blockquote>&quot;There is no better place to shred then Los Angeles.”</blockquote>
+            <p>- Jacob Wester, Pro Skater</p>
         </div>
     </div>
    ```
 
-   ```html
-    <!-- After -->
-    <div class="cmp-text--quote text aem-GridColumn aem-GridColumn--default--8">
-        <div class="cmp-text">
-            <blockquote>"There is no better place to shred then Los Angeles"</blockquote>
-            <p>Jacob Wester - Pro Skater</p>
-        </div>
-    </div>
-   ```
-
-1. Tornate al browser e verificate che la classe supplementare sia riflessa nella marcatura.
-1. Tornate al modulo **ui.frontend** e aggiornate il file `text.scss` che si trova in: `ui.frontend/src/main/webpack/components/content/text/scss/text.scss`:
+1. Aggiorna il file `text.scss` che si trova in: `ui.frontend/src/main/webpack/components/_text.scss`:
 
    ```css
    /* WKND Text Quote style */
-   
    .cmp-text--quote {
-   
        .cmp-text {
            background-color: $brand-third;
            margin: 1em 0em;
@@ -346,7 +313,7 @@ Successivamente verrà implementato lo stile Blocco preventivo utilizzando il mo
    
            blockquote {
                border: none;
-               font-size: $font-size-h2;
+               font-size: $font-size-large;
                font-family: $font-family-serif;
                padding: 14px 14px;
                margin: 0;
@@ -361,9 +328,7 @@ Successivamente verrà implementato lo stile Blocco preventivo utilizzando il mo
                    width: 80px;
                }
            }
-   
            p {
-               font-size:    $font-size-large;
                font-family:  $font-family-serif;
            }
        }
@@ -391,15 +356,15 @@ Aggiungere quindi un nuovo criterio per i componenti Testo.
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. Andate alla **pagina articolo Modello**, che si trova in: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
+1. Andate alla **pagina articolo Modello**, che si trova in: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)).
 
 1. In modalità **Struttura**, nella **Contenitore di layout** principale, selezionare l&#39;icona **Policy** accanto al componente **Testo** elencato in *Componenti consentiti*:
 
    ![Configurazione criteri di testo](assets/style-system/article-template-text-policy-icon.png)
 
-1. Create un nuovo criterio per il componente Testo con i seguenti valori:
+1. Aggiornare il criterio del componente Testo con i seguenti valori:
 
-   *Titolo criterio **:  **Testo WKND**
+   *Titolo criterio **:  **Testo contenuto**
 
    *Plugins* >  *Stili*  paragrafo >  *Abilita stili paragrafo*
 
@@ -426,317 +391,35 @@ Aggiungere quindi un nuovo criterio per i componenti Testo.
 
    In qualità di autore, potete attivare/disattivare lo stile.
 
-## Contenitore di layout {#layout-container}
+## Larghezza fissa - Contenitore (Bonus) {#layout-container}
 
-I Contenitori di layout sono stati utilizzati per creare la struttura di base del Modello pagina articolo e fornire le zone di rilascio per consentire agli autori di contenuti di aggiungere contenuto in una pagina. I Contenitori di layout possono anche sfruttare il sistema di stile, fornendo agli autori dei contenuti ulteriori opzioni per la progettazione dei layout.
+I componenti Contenitore sono stati utilizzati per creare la struttura di base del Modello pagina articolo e fornire le zone di rilascio per consentire agli autori di contenuti di aggiungere contenuto a una pagina. I contenitori possono anche sfruttare lo Style System, fornendo agli autori dei contenuti ulteriori opzioni per la progettazione dei layout.
 
-Attualmente una regola CSS viene applicata all&#39;intera pagina applicando una larghezza fissa. Al contrario, un approccio più flessibile consiste nel creare uno stile **Larghezza fissa** che gli autori dei contenuti possano attivare/disattivare.
+Il **Contenitore principale** del modello Pagina articolo contiene i due contenitori modificabili e ha una larghezza fissa.
 
-### Implementare lo stile a larghezza fissa - ui.frontend
+![Contenitore principale](assets/style-system/main-container-article-page-template.png)
 
-Inizieremo ad implementare lo stile Larghezza fissa nel modulo **ui.frontend** del nostro progetto.
+*Contenitore principale nel modello* pagina articolo.
 
-1. Avviare il server di sviluppo webpack eseguendo il comando seguente dall&#39;interno del modulo **ui.frontend**:
+Il criterio del **Contenitore principale** imposta l&#39;elemento predefinito come `main`:
 
-   ```shell
-   $ cd ~/code/aem-guides-wknd/ui.frontend/
-   $ npm start
-   ```
+![Criteri contenitore principale](assets/style-system/main-container-policy.png)
 
-1. Apri il file `index.html` che si trova in: `ui.frontend/src/main/webpack/static/index.html`.
-1. Vogliamo che il corpo del nostro Modello pagina articolo abbia una larghezza fissa, lasciando l&#39;Intestazione e il Piè di pagina liberi di espandersi. Pertanto, si desidera eseguire il targeting del secondo `<div class='responsivegrid aem-GridColumn aem-GridColumn--default--12'` (Contenitore di layout) tra i due frammenti esperienza (riga 136)
+Il CSS che rende fisso il **Contenitore principale** è impostato nel modulo **ui.frontend** in `ui.frontend/src/main/webpack/site/styles/container_main.scss` :
 
-   ![Div contenitore layout corpo principale](assets/style-system/main-body-layoutContainer.png)
+```SCSS
+main.container {
+    padding: .5em 1em;
+    max-width: $max-content-width;
+    float: unset!important;
+    margin: 0 auto!important;
+    clear: both!important;
+}
+```
 
-1. Aggiungete la classe `cmp-layout-container--fixed` alla `div` identificata nel passaggio precedente.
+Invece di impostare come destinazione l&#39;elemento HTML `main`, il sistema di stile può essere utilizzato per creare uno stile **Larghezza fissa** come parte del criterio Contenitore. Il sistema di stile potrebbe offrire agli utenti la possibilità di alternare tra contenitori **Larghezza fissa** e **Larghezza fluida**.
 
-   ```html
-   <!-- Experience Fragment Header -->
-   <div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
-       ...
-   </div>
-   <!-- Main body Layout Container -->
-   <div class="responsivegrid cmp-layout-container--fixed aem-GridColumn aem-GridColumn--default--12">
-       ...
-   </div>
-   <!-- Experience Fragment Footer -->
-   <div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
-       ...
-   </div>
-   ```
-
-1. Aggiorna il file `container.scss` che si trova in: `ui.frontend/src/main/webpack/components/content/container/scss/container.scss`:
-
-   ```css
-   /* WKND Layout Container - Fixed Width */
-   
-   .cmp-layout-container--fixed {
-       @media (min-width: $screen-medium + 1) {
-           display:block;
-           max-width:  $max-width !important;
-           float: unset !important;
-           margin: 0 auto !important;
-           padding: 0 $gutter-padding;
-           clear: both !important;
-       }
-   }
-   ```
-
-1. Aggiorna il file `_elements.scss` che si trova in: `ui.frontend/src/main/webpack/base/sass/_elements.scss` e modificare la regola `.root` in modo che la nuova larghezza massima sia impostata sulla variabile `$max-body-width`.
-
-   ```css
-    /* Before */
-    body {
-        ...
-   
-        .root {
-            max-width: $max-width;
-            margin: 0 auto;
-            padding-top: 12px;
-        }
-    }
-   ```
-
-   ```css
-    /* After */
-    body {
-        ...
-   
-        .root {
-            max-width: $max-body-width;
-            margin: 0 auto;
-            padding-top: 12px;
-        }
-    }
-   ```
-
-   >[!NOTE]
-   >
-   > L&#39;elenco completo delle variabili e dei valori è disponibile all&#39;indirizzo: `ui.frontend/src/main/webpack/base/sass/_variables.scss`.
-
-1. Tornando al browser, il contenuto principale della pagina appare lo stesso ma le intestazioni e i piè di pagina si estendono molto più in là. Questo è previsto.
-
-   ![Contenitore di layout fisso - Server webpack](assets/style-system/fixed-layout-container-webpack-server.png)
-
-### Aggiornamento dei criteri per i contenitori di layout
-
-Successivamente verrà aggiunto lo stile Larghezza fissa aggiornando i criteri Contenitore di layout in AEM.
-
-1. Distribuisci la base di codice in un&#39;istanza AEM locale utilizzando le tue competenze Paradiso:
-
-   ```shell
-   $ cd ~/code/aem-guides-wknd
-   $ mvn clean install -PautoInstallSinglePackage
-   ```
-
-1. Andate alla **pagina articolo Modello**, che si trova in: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
-
-1. In modalità **Struttura**, selezionare il contenitore di layout principale **a3/> (tra l&#39;intestazione e il piè di pagina del frammento esperienza), quindi selezionare l&#39;icona** Policy **.**
-
-   ![Configurare il criterio contenitore del layout del corpo principale](assets/style-system/layout-container-article-template-policy-icon.png)
-
-1. Aggiornate il criterio **WKND Site Default** per includere uno stile aggiuntivo per **Fixed Width** con un valore di `cmp-layout-container--fixed`:
-
-   ![Aggiornamento dei criteri predefiniti del sito WKND  ](assets/style-system/wknd-site-default-policy-update-fixed-width.png)
-
-   Salvate le modifiche e fate riferimento alla pagina Modello pagina articolo.
-
-1. Selezionate di nuovo il contenitore di layout principale **Contenitore di layout** (tra l&#39;intestazione del frammento esperienza e il piè di pagina). Questa volta viene visualizzata l&#39;icona **pennello** e potete selezionare **Larghezza fissa** dal menu a discesa dello stile.
-
-   ![Applica contenitore layout a larghezza fissa](assets/style-system/apply-fixed-width-layout-container.png)
-
-   Dovrebbe essere possibile attivare/disattivare gli stili.
-
-1. Andate all&#39;articolo **La Skateparks** nell&#39;editor AEM Sites  all&#39;indirizzo: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). Dovresti vedere il contenitore a larghezza fissa in azione.
-
-## Intestazione/Piè di pagina - Frammento esperienza {#experience-fragment}
-
-Quindi, aggiungeremo gli stili a Intestazione e Piè di pagina per completare il Modello pagina articolo. Intestazione e piè di pagina sono stati implementati come frammento esperienza, ovvero un raggruppamento di componenti all’interno di un contenitore. Possiamo applicare una classe CSS univoca ai componenti Frammento esperienza, come altri componenti di base con il sistema di stile.
-
-### Implementa lo stile dell&#39;intestazione - ui.frontend
-
-I componenti all&#39;interno del componente Intestazione sono già formattati in modo che corrispondano alle [progettazioni AdobeXD](assets/pages-templates/wknd-article-design.xd). Sono necessarie solo alcune piccole modifiche al layout.
-
-1. Avviare il server di sviluppo webpack eseguendo il comando seguente dall&#39;interno del modulo **ui.frontend**:
-
-   ```shell
-   $ cd ~/code/aem-guides-wknd/ui.frontend/
-   $ npm start
-   ```
-
-1. Apri il file `index.html` che si trova in: `ui.frontend/src/main/webpack/static/index.html`.
-1. Trovate la **prima** istanza del componente Frammento esperienza cercando *class=&quot;experiencefragment* (riga 48).
-1. Aggiungete la classe `cmp-experiencefragment--header` alla `div` identificata nel passaggio precedente.
-
-   ```html
-       ...
-       <div class="root responsivegrid">
-           <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
-   
-           <!-- add cmp-experiencefragment--header -->
-           <div class="experiencefragment cmp-experiencefragment--header aem-GridColumn aem-GridColumn--default--12">
-               ...
-   ```
-
-1. Apri il file `experiencefragment.scss` che si trova in: `ui.frontend/src/main/webpack/components/content/experiencefragment/scss/experiencefragment.scss`. Aggiungete i seguenti stili al file:
-
-   ```css
-   /* Header Style */
-   .cmp-experiencefragment--header {
-   
-       .cmp-experiencefragment {
-           max-width: $max-width;
-           margin: 0 auto;
-       }
-   
-       /* Logo Image */
-       .cmp-image__image {
-           max-width: 8rem;
-           margin-top: $gutter-padding / 2;
-           margin-bottom: $gutter-padding / 2;
-       }
-   
-       @media (max-width: $screen-medium) {
-   
-           .cmp-experiencefragment {
-               padding-top: 1rem;
-               padding-bottom: 1rem;
-           }
-           /* Logo Image */
-           .cmp-image__image {
-               max-width: 6rem;
-               margin-top: .75rem;
-           }
-       }
-   }
-   ```
-
-   >[!CAUTION]
-   >
-   > Stiamo prendendo un po&#39; di scorciatoia per stilare il Logo all&#39;interno dell&#39;intestazione. Il logo è solo un componente Immagine che si trova all’interno del frammento esperienza. Diciamo che in seguito abbiamo dovuto aggiungere un&#39;altra immagine all&#39;intestazione, non saremmo stati in grado di distinguere tra le due. Se necessario, al componente Immagine potrebbe sempre essere aggiunta una classe &quot;logo&quot;.
-
-1. Tornate al browser e visualizzate il server di sviluppo webpack. Gli stili di intestazione dovrebbero essere aggiornati per essere più allineati al resto del contenuto. Quando si riduce la larghezza del browser a un tablet o dispositivo mobile, è necessario notare che il logo è stato ridimensionato in modo più appropriato.
-
-   ![Intestazione frammento esperienza](assets/style-system/header-experience-fragment-webpack.png)
-
-### Implementare lo stile piè di pagina - ui.frontend
-
-Il piè di pagina nelle [progettazioni AdobeXD](assets/pages-templates/wknd-article-design.xd) include uno sfondo nero con testo chiaro. Per riflettere questo aspetto, sarà necessario formattare il contenuto all’interno del piè di pagina del frammento esperienza.
-
-1. Apri il file `index.html` che si trova in: `ui.frontend/src/main/webpack/static/index.html`.
-
-1. Trovate la **seconda** istanza del componente Frammento esperienza cercando *class=&quot;experiencefragment* (riga 385).
-
-1. Aggiungete la classe `cmp-experiencefragment--footer` alla `div` identificata nel passaggio precedente.
-
-   ```html
-   <!-- add cmp-experiencefragment--footer -->
-   <div class="experiencefragment cmp-experiencefragment--footer aem-GridColumn aem-GridColumn--default--12">
-   ```
-
-1. Apri di nuovo il file `experiencefragment.scss` che si trova in: `ui.frontend/src/main/webpack/components/content/experiencefragment/scss/experiencefragment.scss`. **Aggiungere al file** i seguenti stili:
-
-   ```css
-   /* Footer Style */
-   .cmp-experiencefragment--footer {
-   
-       background-color: $black;
-       color: $gray-light;
-       margin-top: 5rem;
-   
-       p {
-           font-size: $font-size-small;
-       }
-   
-       .cmp-experiencefragment {
-           max-width: $max-width;
-           margin: 0 auto;
-           padding-bottom: 0rem;
-       }
-   
-       /* Separator */
-       .cmp-separator {
-           margin-top: 2rem;
-           margin-bottom: 2rem;
-       }
-   
-       .cmp-separator__horizontal-rule {
-           border: 0;
-       }
-   
-       /* Navigation */
-       .cmp-navigation__item-link {
-           color: $nav-link-inverse;
-           &:hover,
-           &:focus {
-               background-color: unset;
-               text-decoration: underline;
-           }
-       }
-   
-       .cmp-navigation__item--level-1.cmp-navigation__item--active .cmp-navigation__item-link {
-           background-color: unset;
-           color: $gray-lighter;
-           text-decoration: underline;
-       }
-   
-   }
-   ```
-
-   >[!CAUTION]
-   >
-   > Anche in questo caso stiamo prendendo una scorciatoia ignorando gli stili predefiniti del componente Navigazione dall’interno del CSS piè di pagina del frammento esperienza. È improbabile che all’interno del piè di pagina siano presenti più componenti di navigazione ed è altrettanto improbabile che un autore di contenuto desideri attivare o disattivare uno stile di navigazione. È consigliabile creare uno stile piè di pagina solo per il componente Navigazione.
-
-1. Tornate al server di sviluppo del browser e del webpack. Gli stili dei piè di pagina dovrebbero essere aggiornati in modo che corrispondano alle strutture XD.
-
-   ![Piè di pagina](assets/style-system/footer-webpack-style.png)
-
-1. Arrestate il server di sviluppo del webpack.
-
-### Aggiorna criterio frammento esperienza
-
-Successivamente verranno aggiunti gli stili di intestazione e piè di pagina aggiornando il criterio del componente Frammento esperienza in AEM.
-
-1. Distribuisci la base di codice in un&#39;istanza AEM locale utilizzando le tue competenze Paradiso:
-
-   ```shell
-   $ cd ~/code/aem-guides-wknd
-   $ mvn clean install -PautoInstallSinglePackage
-   ```
-
-1. Andate alla **pagina articolo Modello**, che si trova in: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
-
-1. In modalità **Struttura**, selezionare Intestazione **Frammento esperienza**, quindi selezionare l&#39;icona **Policy**.
-
-   ![Configurare i criteri per i frammenti esperienza](assets/style-system/experience-fragment-click-policy.png)
-
-1. Aggiornate il criterio **Frammento esperienza sito WKND - Header** per aggiungere una **classe CSS predefinita** con un valore di `cmp-experiencefragment--header`:
-
-   ![Frammento esperienza sito WKND - Aggiornamento intestazione](assets/style-system/experience-fragment-header-policy-configure.png)
-
-   Salvate le modifiche e dovreste ora vedere applicati gli stili CSS di intestazione corretti.
-
-   >[!NOTE]
-   >
-   > Poiché non è necessario attivare o disattivare lo stile di intestazione diverso da quello del modello, possiamo semplicemente impostarlo come stile CSS predefinito.
-
-1. Quindi, selezionate Piè di pagina **Frammento esperienza** e fate clic sull&#39;icona **Criterio** per aprire la configurazione del criterio.
-
-1. Aggiornate il criterio **Frammento esperienza sito WKND - Footer** per aggiungere una **classe CSS predefinita** con un valore di `cmp-experiencefragment--footer`:
-
-   ![Frammento esperienza sito WKND - Aggiornamento piè di pagina](assets/style-system/experience-fragment-footer-policy-configure.png)
-
-   Salvate le modifiche e dovreste visualizzare gli stili CSS piè di pagina applicati.
-
-   ![Modello articolo WKND - Stili finali](assets/style-system/final-header-footer-applied.png)
-
-1. Andate all&#39;articolo **La Skateparks** nell&#39;editor AEM Sites  all&#39;indirizzo: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). Verranno applicate le intestazioni e i piè di pagina aggiornati.
-
-## Recensione {#review}
-
-Esaminate gli stili e le funzioni implementati come parte del capitolo.
-
->[!VIDEO](https://video.tv.adobe.com/v/30378/?quality=12&learn=on)
+1. **Bonus Challenge**  - utilizzare le lezioni apprese dagli esercizi precedenti e utilizzare il sistema di stile per implementare uno stile di  **larghezza** fissa e  **fluido** per il componente Contenitore.
 
 ## Congratulazioni! {#congratulations}
 
@@ -746,7 +429,7 @@ Congratulazioni, la pagina dell&#39;articolo è quasi completamente stilizzata e
 
 Scopri i passaggi end-to-end per creare un [componente AEM personalizzato](custom-component.md) che visualizza il contenuto creato in una finestra di dialogo ed esplora lo sviluppo di un modello Sling per racchiudere logica aziendale che compone l&#39;HTL del componente.
 
-Visualizzate il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd) oppure rivedete e distribuite il codice localmente in corrispondenza del blocco Git `style-system/solution`.
+Visualizzate il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd) oppure rivedete e distribuite il codice localmente in corrispondenza del blocco Git `tutorial/style-system-solution`.
 
 1. Duplicare il repository [github.com/adobe/aem-wknd-guides](https://github.com/adobe/aem-guides-wknd).
-1. Estrarre il ramo `style-system/solution`.
+1. Estrarre il ramo `tutorial/style-system-solution`.
