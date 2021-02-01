@@ -1,6 +1,7 @@
 ---
 title: Acrobat con  AEM Forms
 seo-title: Unisci dati modulo adattivo con Acrobat
+description: Parte 2 dell'integrazione di Acroformi con  AEM Forms. Creare uno schema da un modulo.
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -8,9 +9,9 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 451ca39511b52e90a44bba25c6739280f49a0aac
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '183'
 ht-degree: 2%
 
 ---
