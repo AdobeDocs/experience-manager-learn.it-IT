@@ -11,20 +11,15 @@ mini-toc-levels: 1
 kt: 6712
 thumbnail: 22452.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '950'
 ht-degree: 1%
 
 ---
 
 
 # Definizione dei modelli di frammento di contenuto {#content-fragment-models}
-
->[!CAUTION]
->
-> L&#39;API AEM GraphQL per la distribuzione dei frammenti di contenuto è disponibile su richiesta.
-> Per abilitare l&#39;API per il AEM come programma di Cloud Service, contattate  supporto di Adobe.
 
 In questo capitolo viene illustrato come modellare il contenuto e creare uno schema con **Modelli di frammenti di contenuto**. Verranno esaminati i modelli esistenti e verrà creato un nuovo modello. Verranno inoltre illustrati i diversi tipi di dati che è possibile utilizzare per definire uno schema come parte del modello.
 
