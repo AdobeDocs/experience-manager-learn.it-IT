@@ -1,6 +1,6 @@
 ---
 title: Acrobat con  AEM Forms
-seo-title: Unisci dati modulo adattivo con Acrobat
+description: Esercitazione che illustra come creare un modulo adattivo utilizzando Acrobat e unire i dati per ottenere un PDF. Il PDF con i dati uniti può quindi essere inviato per la firma tramite  Adobe Sign.
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -8,9 +8,9 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: 451ca39511b52e90a44bba25c6739280f49a0aac
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
