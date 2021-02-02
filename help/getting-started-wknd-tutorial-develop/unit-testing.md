@@ -206,9 +206,9 @@ I test di unità generalmente mappano 1 a 1 con classi Java. In questo capitolo,
 
    * `src/test/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.java`
 
-2. ma anche differenziare il file di test    Il suffisso `Test` sul file di unit test, `BylineImplTest.java` è una convenzione, che ci consente di
-1. Identificarlo facilmente come file di prova _per_ `BylineImpl.java`
-2. ma anche differenziare il file di test _da_ la classe in fase di test, `BylineImpl.java`
+   ma anche differenziare il file di test    Il suffisso `Test` sul file di unit test, `BylineImplTest.java` è una convenzione, che ci consente di
+      1. Identificarlo facilmente come file di prova _per_ `BylineImpl.java`
+      2. ma anche differenziare il file di test _da_ la classe in fase di test, `BylineImpl.java`
 
 ## Analisi di BylineImplTest.java {#reviewing-bylineimpltest-java}
 
