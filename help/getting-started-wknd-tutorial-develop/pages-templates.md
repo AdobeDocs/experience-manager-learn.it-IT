@@ -13,10 +13,10 @@ mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
 workflow-type: tm+mt
-source-wordcount: '1724'
-ht-degree: 1%
+source-wordcount: '3074'
+ht-degree: 0%
 
 ---
 
@@ -94,6 +94,66 @@ Quindi, create un nuovo modello in AEM che corrisponda alla struttura dei modell
 
 >[!VIDEO](https://video.tv.adobe.com/v/330991/?quality=12&learn=on)
 
+Passi di alto livello per il video seguente:
+
+### Configurazioni struttura
+
+1. Create un nuovo modello utilizzando il **Tipo di modello di pagina**, denominato **Pagina articolo**.
+1. Passare alla modalità **Struttura**.
+1. Aggiungete un componente **Frammento esperienza** per agire come **Header** nella parte superiore del modello.
+   * Configurare il componente in modo che punti a `/content/experience-fragments/wknd/us/en/site/header/master`.
+   * Impostare il criterio su **Intestazione pagina** e assicurarsi che l&#39; **Elemento predefinito** sia impostato su `header`. L&#39;elemento `header`verrà indirizzato con CSS nel capitolo successivo.
+1. Aggiungete un componente **Frammento esperienza** per agire come **Piè di pagina** nella parte inferiore del modello.
+   * Configurare il componente in modo che punti a `/content/experience-fragments/wknd/us/en/site/footer/master`.
+   * Impostare il criterio su **Page Footer** e assicurarsi che l&#39; **Default Element** sia impostato su `footer`. L&#39;elemento `footer` verrà indirizzato a CSS nel capitolo successivo.
+1. Bloccare il contenitore **principale** che era incluso quando il modello era stato creato inizialmente.
+   * Impostare il criterio su **Page Main** e assicurarsi che l&#39; **Default Element** sia impostato su `main`. L&#39;elemento `main` verrà indirizzato a CSS nel capitolo successivo.
+1. Aggiungete un componente **Image** al contenitore **main**.
+   * Sbloccare il componente **Immagine**.
+1. Aggiungete un componente **Breadcrumb** sotto il componente **Image** nel contenitore principale.
+   * Create un nuovo criterio per il componente **Breadcrumb** denominato **Article Page - Breadcrumb**. Impostare il **livello iniziale di navigazione** su **4**.
+1. Aggiungete un componente **Contenitore** sotto il componente **Breadcrumb** e all&#39;interno del contenitore **principale**. Questo fungerà da **Contenitore di contenuto** per il modello.
+   * Sbloccare il contenitore **Content**.
+   * Impostare il criterio su **Contenuto pagina**.
+1. Aggiungete un altro componente **Contenitore** sotto il **Contenitore contenuto**. Questo fungerà da contenitore **Barra laterale** per il modello.
+   * Sbloccare il contenitore **Barra laterale**.
+   * Create un nuovo criterio denominato **Pagina articolo - Barra laterale**.
+   * Configurare i **Componenti consentiti** in **WKND Sites Project - Content** in modo da includere: **Pulsante**, **Scarica**, **Immagine**, **Elenco**, **Separatore**, **Condivisione social media**, **Testo** e **Titolo**.
+1. Aggiornare il criterio del contenitore Page Root. Questo è il contenitore più esterno del modello. Impostare il criterio su **Page Root**.
+   * In **Impostazioni contenitore**, impostare **Layout** su **Griglia reattiva**.
+1. Attiva modalità di layout per il **Contenitore di contenuto**. Trascinate la maniglia da destra a sinistra e riducete il contenitore in modo che abbia una larghezza di 8 colonne.
+1. Attivare la modalità di layout per il **Contenitore della barra laterale**. Trascinate la maniglia da destra a sinistra e riducete il contenitore in modo che abbia una larghezza di 4 colonne. Trascinate quindi la maniglia sinistra da sinistra a destra 1 colonna per estendere il contenitore di 3 colonne e lasciare uno spazio di 1 colonna tra il **Contenitore di contenuto**.
+1. Aprite l’emulatore mobile e passate a un punto di interruzione mobile. Riattivare la modalità di layout e fare in modo che il **Contenitore di contenuto** e il **Contenitore barra laterale** abbiano la larghezza completa della pagina. In questo modo i contenitori verranno sovrapposti verticalmente nel punto di interruzione mobile.
+1. Aggiornare il criterio del componente **Testo** nel contenitore **Contenuto**.
+   * Impostare il criterio su **Contenuto testo**.
+   * In **Plugins** > **Stili di paragrafo**, selezionare **Abilita stili di paragrafo** e assicurarsi che il **Blocco di preventivo** sia attivato.
+
+### Configurazioni contenuto iniziali
+
+1. Passate alla modalità **Contenuto iniziale**.
+1. Aggiungete un componente **Titolo** al contenitore **Contenuto**. Questo fungerà da titolo dell&#39;articolo. Quando viene lasciato vuoto, viene visualizzato automaticamente il Titolo della pagina corrente.
+1. Aggiungete un secondo componente **Titolo** sotto il primo componente Titolo.
+   * Configura il componente con il testo: &quot;Per autore&quot;. Questo sarà un segnaposto di testo.
+   * Impostare il tipo su `H4`.
+1. Aggiungete un componente **Testo** sotto il componente **Per autore** Titolo.
+1. Aggiungete un componente **Titolo** al contenitore **Barra laterale**.
+   * Configura il componente con il testo: &quot;Condividi questa storia&quot;.
+   * Impostare il tipo su `H5`.
+1. Aggiungete un componente **Condivisione social media** sotto il componente **Condividi questo brano** Titolo.
+1. Aggiungete un componente **Separatore** sotto il componente **Condivisione social media**.
+1. Aggiungete un componente **Download** sotto il componente **Separatore**.
+1. Aggiungete un componente **List** sotto il componente **Download**.
+1. Aggiornate le **Proprietà pagina iniziale** per il modello.
+   * In **Social Media** > **Condivisione social media**, selezionare **Facebook** e **Pinterest**
+
+### Abilitare il modello e aggiungere una miniatura
+
+1. Visualizzare il modello nella console Modello accedendo a [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd)
+1. **Abilita** il modello Pagina articolo.
+1. Modificate le proprietà del modello Pagina articolo e caricate la seguente miniatura per identificare rapidamente le pagine create utilizzando il modello Pagina articolo:
+
+   ![Miniatura modello pagina articolo](assets/pages-templates/article-page-template-thumbnail.png)
+
 ## Aggiornare l&#39;intestazione e il piè di pagina con i frammenti esperienza {#experience-fragments}
 
 Durante la creazione di contenuto globale, ad esempio un&#39;intestazione o un piè di pagina, è pratica comune utilizzare un [frammento esperienza](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Frammenti esperienza, consente agli utenti di combinare più componenti per creare un singolo componente che possa essere utilizzato come riferimento. I frammenti esperienza hanno il vantaggio di supportare la gestione multisito e la [localizzazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
@@ -102,13 +162,73 @@ Il tipo di archivio AEM progetti generava un&#39;intestazione e un piè di pagin
 
 >[!VIDEO](https://video.tv.adobe.com/v/330992/?quality=12&learn=on)
 
-Scaricate e installate il pacchetto di contenuti di esempio **[WKND-PagesTemplates-Content-Assets.zip](assets/pages-templates/WKND-PagesTemplates-Content-Assets.zip)**.
+Passi di alto livello per il video seguente:
+
+1. Scaricate il pacchetto di contenuti di esempio **[WKND-PagesTemplates-Content-Assets.zip](assets/pages-templates/WKND-PagesTemplates-Content-Assets.zip)**.
+1. Caricate e installate il pacchetto di contenuti utilizzando Package Manager all&#39;indirizzo [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp)
+1. Aggiorna il modello Variazione Web, che è il modello utilizzato per i frammenti esperienza in [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/xf-web-variation/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/xf-web-variation/structure.html)
+   * Aggiornare il criterio del componente **Container** nel modello.
+   * Impostare il criterio su **XF Root**.
+   * In **Componenti consentiti** selezionare il gruppo di componenti **WKND Sites Project - Structure** per includere i componenti **Navigazione lingua**, **Navigazione** e **Ricerca rapida**.
+
+### Aggiorna frammento esperienza intestazione
+
+1. Apri il frammento esperienza che esegue il rendering dell&#39;intestazione in [http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/header/master.html](http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/header/master.html)
+1. Configurare il **Contenitore** principale del frammento. Questo è il contenitore più esterno **Contenitore**.
+   * Impostare **Layout** su **Griglia reattiva**
+1. Aggiungete il logo **WKND Dark** come immagine nella parte superiore del **contenitore**. Il logo è stato incluso nel pacchetto installato in un passaggio precedente.
+   * Modificare il layout del logo oscuro **WKND** in modo che sia largo **2**. Trascinate le maniglie da destra a sinistra.
+   * Configurate il logo con **Testo alternativo** di &quot;Logo WKND&quot;.
+   * Configurare il logo su **Collega** alla `/content/wknd/us/en` home page.
+1. Configurare il componente **Navigazione** già inserito nella pagina.
+   * Impostare **Exclude Root Levels** su **1**.
+   * Impostare la **Profondità struttura di navigazione** su **1**.
+   * Modificare il layout del componente **Navigazione** in modo che sia largo **8**. Trascinate le maniglie da destra a sinistra.
+1. Rimuovere il componente **Navigazione lingua**.
+1. Modificare il layout del componente **Cerca** in modo che sia largo **2**. Trascinate le maniglie da destra a sinistra. Tutti i componenti devono ora essere allineati orizzontalmente su una singola riga.
+
+### Aggiorna frammento esperienza piè di pagina
+
+1. Apri il frammento esperienza che esegue il rendering del piè di pagina in [http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/footer/master.html](http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/footer/master.html)
+1. Configurare il **Contenitore** principale del frammento. Questo è il contenitore più esterno **Contenitore**.
+   * Impostare **Layout** su **Griglia reattiva**
+1. Aggiungete il logo **WKND Light** come immagine nella parte superiore del **contenitore**. Il logo è stato incluso nel pacchetto installato in un passaggio precedente.
+   * Modificare il layout del logo **WKND Light** in modo che sia largo **2**. Trascinate le maniglie da destra a sinistra.
+   * Configurare il logo con **Testo alternativo** di &quot;Luce logo WKND&quot;.
+   * Configurare il logo su **Collega** alla `/content/wknd/us/en` home page.
+1. Aggiungete un componente **Navigazione** sotto il logo. Configurare il componente **Navigazione**:
+   * Impostare **Exclude Root Levels** su **1**.
+   * Deselezionare **Raccolta di tutte le pagine figlie**.
+   * Impostare la **Profondità struttura di navigazione** su **1**.
+   * Modificare il layout del componente **Navigazione** in modo che sia largo **8**. Trascinate le maniglie da destra a sinistra.
 
 ## Creare una pagina articolo
 
 Quindi, create una nuova pagina utilizzando il modello Pagina articolo. Creare il contenuto della pagina in modo che corrisponda ai modelli del sito. Seguite i passaggi descritti nel video seguente:
 
 >[!VIDEO](https://video.tv.adobe.com/v/330993/?quality=12&learn=on)
+
+Passi di alto livello per il video seguente:
+
+1. Andate alla console Siti all&#39;indirizzo [http://localhost:4502/sites.html/content/wknd/us/en/magazine](http://localhost:4502/sites.html/content/wknd/us/en/magazine).
+1. Create una nuova pagina sotto **WKND** > **US** > **EN** > **Magazine**.
+   * Scegliete il modello **Pagina articolo**.
+   * In **Properties** impostare **Title** su &quot;Ultimate Guide to LA Skateparks&quot;
+   * Impostate **Name** su &quot;guide-la-skateparks&quot;
+1. Sostituire il titolo **Per autore** con il testo &quot;Per stacey Roswells&quot;.
+1. Aggiornate il componente **Testo** in modo da includere un paragrafo per compilare l&#39;articolo. Potete usare il seguente file di testo come copia: [la-skate-parks-copy.txt](assets/pages-templates/la-skateparks-copy.txt).
+1. Aggiungere un altro componente **Testo**.
+   * Aggiornate il componente per includere il preventivo: &quot;Non c&#39;è un posto migliore per distruggere Los Angeles.&quot;
+   * Modificate l&#39;Editor Rich Text in modalità a schermo intero e modificate le virgolette per utilizzare l&#39;elemento **Blocco preventivo**.
+1. Continuate a compilare il corpo dell&#39;articolo in modo che corrisponda ai modelli.
+1. Configurate il componente **Download** per utilizzare una versione PDF dell&#39;articolo.
+   * In **Scarica** > **Proprietà**, fare clic sulla casella di controllo per **Ottenere il titolo dalla risorsa DAM**.
+   * Impostare **Description** su: &quot;Ottieni la storia completa&quot;.
+   * Impostare **Action Text** su: &quot;Scarica PDF&quot;.
+1. Configurare il componente **List**.
+   * In **Impostazioni elenco** > **Genera elenco utilizzando**, selezionare **Pagine figlie**.
+   * Impostare la **Pagina padre** su `/content/wknd/us/en/magazine`.
+   * In **Impostazioni elemento** selezionare **Collega elementi** e selezionare **Mostra data**.
 
 ##  Inspect la struttura del nodo {#node-structure}
 
