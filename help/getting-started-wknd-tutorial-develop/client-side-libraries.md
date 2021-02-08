@@ -10,9 +10,9 @@ audience: developer
 kt: 4083
 thumbnail: 30359.jpg
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
 workflow-type: tm+mt
-source-wordcount: '3257'
+source-wordcount: '3291'
 ht-degree: 3%
 
 ---
@@ -144,7 +144,7 @@ Le librerie lato client presentano alcune limitazioni per quanto riguarda il sup
 
    Ogni file viene mappato su un componente core come il [componente Accordion](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/accordion.html?lang=en#components). Ogni componente di base è creato con la notazione [Modificatore elemento blocco](https://getbem.com/) o BEM per facilitare il targeting di classi CSS specifiche con regole di stile. I file sotto `/components` sono stati sovrapposti dal AEM Project Archetype con le diverse regole BEM per ciascun componente.
 
-1. Scaricate il file di stili di base WKND **[wknd-base-Styles-src.zip](./assets/client-side-libraries/wknd-base-styles-src.zip)** e **decomprimete**.
+1. Scaricate il file di stili di base WKND **[wknd-base-Styles-src.zip](./assets/client-side-libraries/wknd-base-styles-srcv2.zip)** e **decomprimete**.
 
    ![Stili base WKND](assets/client-side-libraries/wknd-base-styles-unzipped.png)
 
@@ -307,6 +307,10 @@ Quindi, vediamo in che modo i clientlibs vengono citati nella pagina AEM. Una pr
    ...
    </body>
    ```
+
+   >[!NOTE]
+   >
+   > Se si segue il 6.5/6.4, le librerie lato client non verranno ridotte automaticamente. Per abilitare la funzionalità di gestione (consigliato), consultare la documentazione in [HTML Library Manager (Gestione libreria HTML)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors).
 
    >[!WARNING]
    >
