@@ -12,9 +12,9 @@ mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1145'
 ht-degree: 1%
 
 ---
@@ -27,6 +27,8 @@ Questo capitolo illustra la tecnologia di base di un componente di siti Adobe Ex
 ## Prerequisiti {#prerequisites}
 
 Esaminare le istruzioni e gli strumenti necessari per configurare un ambiente di sviluppo locale [](overview.md#local-dev-environment).
+
+L&#39;IDE utilizzato nei video è [Visual Studio Code](https://code.visualstudio.com/) e il [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) plug-in.
 
 ## Obiettivo {#objective}
 
@@ -110,7 +112,7 @@ Di seguito sono riportati i passaggi di alto livello eseguiti nel video preceden
 
 1. Passate all&#39;IDE e aprite il progetto nel modulo `ui.apps`.
 1. Aprite il file `helloworld.html` e apportate una modifica al codice HTML.
-1. Utilizzate gli strumenti IDE per sincronizzare la modifica del file con l&#39;istanza AEM locale.
+1. Utilizzate gli strumenti IDE come [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) per sincronizzare la modifica del file con l&#39;istanza AEM locale.
 1. Tornate al browser e osservate che il rendering del componente è cambiato.
 1. Aprire il file `.content.xml` che definisce la finestra di dialogo per il componente `HelloWorld` in:
 
@@ -209,14 +211,14 @@ Verranno quindi eseguiti alcuni aggiornamenti al modello `HelloWorldModel` Sling
        ...
    
        @ValueMapValue
-       protected String title;
+       private String title;
    
        @ValueMapValue
-       protected String text;
+       private String text;
    
-           @PostConstruct
-           protected void init() {
-               ...
+       @PostConstruct
+       protected void init() {
+           ...
    ```
 
 1. Aggiungete il seguente metodo `getTitle()` alla classe `HelloWorldModel`, che restituisce il valore della proprietà denominata `title`. Questo metodo aggiunge la logica aggiuntiva per restituire un valore String &quot;Default Value here!&quot; se la proprietà `title` è null o vuota:
@@ -349,6 +351,10 @@ Di seguito sono riportati i passaggi di alto livello eseguiti nel video preceden
    ```
 
 1. Distribuite le modifiche in un&#39;istanza locale di AEM utilizzando il plug-in sviluppatore o utilizzando le vostre abilità Paradiso.
+
+   >[!NOTE]
+   >
+   > I CSS e JavaScript vengono spesso memorizzati nella cache dal browser per motivi di prestazioni. Se la modifica per la libreria client non viene immediatamente visualizzata, eseguite un aggiornamento fisso e cancellate la cache del browser. Potrebbe essere utile utilizzare una finestra incognito per garantire una nuova cache.
 
 ## Congratulazioni! {#congratulations}
 
