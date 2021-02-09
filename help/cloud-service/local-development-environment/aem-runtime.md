@@ -10,9 +10,9 @@ audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
 translation-type: tm+mt
-source-git-commit: 398b9f855556fc425b034986a7f21159297dcba5
+source-git-commit: 39ea3dd6133477a52fd91ee696936cd226fce5ea
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1652'
 ht-degree: 1%
 
 ---
@@ -180,6 +180,10 @@ La modifica di questi parametri potrebbe richiedere modifiche AEM configurazioni
 ## Arresto di un runtime AEM locale
 
 Per arrestare un runtime AEM locale, AEM Author o Publish, aprite la finestra della riga di comando utilizzata per avviare il runtime di AEM e toccate `Ctrl-C`. Attendi AEM spegnimento. Al termine del processo di arresto, sarà disponibile il prompt della riga di comando.
+
+## Attività di configurazione AEM esecuzione locali facoltative
+
++ __Le variabili dell&#39;ambiente di configurazione OSGi e__ le variabili segrete sono  [specificatamente impostate per il runtime](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development) locale AEM, anziché gestirle utilizzando l&#39;interfaccia CLI di aio.
 
 ## Quando aggiornare la Jar di Quickstart
 
