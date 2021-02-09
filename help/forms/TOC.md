@@ -6,10 +6,10 @@ user-guide-description: Raccolta di risorse AEM Forms per sviluppatori principia
 breadcrumb-title: Tutorial di AEM Forms
 index: y
 translation-type: tm+mt
-source-git-commit: 48060b4d8c4b502e0c099ae8081695f97b423037
+source-git-commit: 1e945afddda3d7735005029952a9d7ec46828bc6
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 6%
 
 + [Panoramica](overview.md)
 + [Best practice da seguire](adaptive-forms/best-practices-adaptive-forms.md)
-+ [Configurare l&#39;autenticazione OKTA con AEM Author](adaptive-forms/single-sign-on-with-okta.md)
-+ [Creare il primo bundle OSGi](adaptive-forms/create-your-first-osgi-bundle.md)
++ [Impostazione dell&#39;autenticazione OKTA con AEM Author](adaptive-forms/single-sign-on-with-okta.md)
++ [Creazione del primo bundle OSGi](adaptive-forms/create-your-first-osgi-bundle.md)
 + Creazione del primo modulo adattivo {#creating-your-first-adaptive-form}
    + [Introduzione e configurazione](creating-your-first-adaptive-form/introduction-and-setup.md)
    + [Creare un modello di modulo adattivo](creating-your-first-adaptive-form/create-adaptive-form-template.md)
@@ -91,7 +91,7 @@ ht-degree: 6%
    + [Configurazione del modello dati del modulo](prefill-fdm-db/configuring-form-data-model.md)
    + [Ottieni parametro di richiesta](prefill-fdm-db/get-request-parameter.md)
    + [Creare un modulo adattivo](prefill-fdm-db/create-adaptive-form.md)
-+ Personalizzazione inbox{#inbox-customization}
++ Personalizzazione della inbox{#inbox-customization}
    + [Introduzione](inbox-customization/introduction.md)
    + [Aggiungi colonna personalizzata](inbox-customization/add-married-column.md)
    + [Utilizzo di un modello visivo](inbox-customization/use-sightly-template.md)
@@ -183,6 +183,7 @@ ht-degree: 6%
    + [Parte4 - Crea profilo ACS utilizzando il modello dati modulo](aem-forms-with-adobe-campaign/partfour.md)
 
 + Document Services {#document-services}
+   + [Tipi di PDF forms](document-services/pdf-forms-and-documents.md)
    + [Utilizzo di Assembler Service in  AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
    + [Utilizzo della cartella esaminata in  AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Utilizzo del servizio codice a barre in  AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
