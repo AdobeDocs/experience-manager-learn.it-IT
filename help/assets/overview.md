@@ -3,9 +3,9 @@ title: Video e tutorial di AEM Assets
 description: Raccolta di video e tutorial per Adobe Experience Manager Assets
 sub-product: risorse, elementi multimediali dinamici
 translation-type: tm+mt
-source-git-commit: 94ea85d4a96bf9da62c5658961474a12663ac77b
+source-git-commit: d89cd051f9fc8800d94ad11851ceaf4212f3c797
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '230'
 ht-degree: 19%
 
 ---
@@ -17,6 +17,9 @@ Adobe Experience Manager Assets è uno strumento di gestione delle risorse digit
 
 ## Novità
 
+* **[Collega e scollega (video)](./authoring/relate-unrelate.md)**
+
+   *Scoprite come stabilire e gestire le relazioni tra le risorse in AEM*
 
 * **[Pubblica risorse (video)](./sharing/publish.md)**
 
@@ -33,10 +36,6 @@ Adobe Experience Manager Assets è uno strumento di gestione delle risorse digit
 * **[Flussi di lavoro di avvio automatico (video)](./configuring/auto-start-workflows.md)**
 
    *Scoprite come richiamare automaticamente AEM flusso di lavoro sulle risorse caricate o rielaborate*
-
-* **[Profili di elaborazione (video)](./configuring/processing-profiles.md)**
-
-   *Scopri come richiamare i microservizi di Assets per rappresentare le risorse*
 
 ## Prezzi del personale
 
