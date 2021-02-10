@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 doc-type: tutorial
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: c657eefa69b383c1b1a9e2845276245d3db00e6f
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -96,12 +96,12 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ## Configurazione del dispatcher {#dispatcher-configuration}
 
-Per consentire il caching e la gestione delle intestazioni [!DNL CORS] sui contenuti memorizzati nella cache, aggiungete la seguente configurazione a tutti i file AEM Publish `dispatcher.any` che supportano.
+Per consentire la memorizzazione nella cache e la gestione delle intestazioni CORS nei contenuti memorizzati nella cache, aggiungete i seguenti file di configurazione [/clientheaders](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) a tutti i file di supporto di AEM Publish `dispatcher.any`.
 
 ```
 /cache { 
   ...
-  /headers {
+  /clientheaders {
       "Access-Control-Allow-Origin",
       "Access-Control-Expose-Headers",
       "Access-Control-Max-Age",
@@ -115,7 +115,7 @@ Per consentire il caching e la gestione delle intestazioni [!DNL CORS] sui conte
 
 **Riavviate l&#39;** applicazione server Web dopo aver apportato le modifiche al  `dispatcher.any` file.
 
-È probabile che la cancellazione completa della cache sia necessaria per garantire che le intestazioni siano correttamente memorizzate nella cache sulla richiesta successiva dopo un aggiornamento di configurazione `/headers`.
+È probabile che la cancellazione completa della cache sia necessaria per garantire che le intestazioni siano correttamente memorizzate nella cache sulla richiesta successiva dopo un aggiornamento di configurazione `/clientheaders`.
 
 ## Materiali di supporto {#supporting-materials}
 
