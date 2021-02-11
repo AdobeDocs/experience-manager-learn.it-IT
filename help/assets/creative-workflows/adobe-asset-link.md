@@ -8,9 +8,9 @@ doc-type: feature video
 activity: use
 version: 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 9102505bbd826e17bf924cec719d7a430eea5095
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1094'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Le risorse Adobe Experience Manager ora possono essere utilizzate da designer e 
 
 >[!NOTE]
 >
->Utilizzate solo l&#39;Enterprise ID Adobe Creative Cloud  o il Federated ID. Assicuratevi di [configurare AEM per  collegamento risorsa Adobe](https://helpx.adobe.com/enterprise/using/configure-aem-for-aal-prerelease.html).
+>Utilizzate solo l&#39;Enterprise ID Adobe Creative Cloud  o il Federated ID. Assicuratevi di [configurare AEM per  collegamento risorsa Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html).
 
 
 ###  collegamento risorse Adobe
@@ -73,8 +73,6 @@ Le rappresentazioni FPO sono sostituti leggeri delle risorse originali. Hanno le
 * BMP
 
 Se una rappresentazione FPO non è disponibile per una risorsa specifica in  AEM Assets, viene fatto riferimento alla risorsa originale ad alta risoluzione. Per le immagini FPO, lo stato FPO viene visualizzato nel pannello Collegamenti InDesign .
-
-
 
 ## Informazioni ’autenticazione dei collegamenti alle risorse di Adobe con  AEM Assets{#understanding-adobe-asset-link-authentication-with-aem-assets}
 
