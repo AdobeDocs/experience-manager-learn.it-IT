@@ -10,15 +10,20 @@ doc-type: feature video
 kt: 4999
 thumbnail: 39150.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: f30d15f0578b7e529e4acefb8e1d2e29157ab359
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '92'
 ht-degree: 0%
 
 ---
 
 
 # Gruppi di utenti  Adobe IMS
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_adobeims_usergroups"
+>title="Gruppi di utenti  Adobe IMS"
+>abstract=" Adobe di gruppi di utenti IMS stabiliscono set logici di utenti esposti a AEM, in cui possono essere utilizzati per definire le autorizzazioni di ottimizzazione per AEM utenti."
 
   Adobe di gruppi di utenti IMS stabiliscono set logici di utenti esposti a AEM, in cui possono essere utilizzati per definire le autorizzazioni di ottimizzazione per AEM utenti.
 
