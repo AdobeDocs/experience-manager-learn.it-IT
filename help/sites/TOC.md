@@ -4,9 +4,9 @@ user-guide-description: Raccolta di video e tutorial per Adobe Experience Manage
 breadcrumb-title: Tutorial di AEM Sites
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
+source-git-commit: ac2e937613eba4857d0f9bf8c5a39d5611157cbd
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '448'
 ht-degree: 23%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 23%
    + [Modelli modificabili](page-authoring/template-editor-feature-video-use.md)
    + [Sistema di stili](page-authoring/style-system-feature-video-use.md)
    + [Timewarp  ](page-authoring/timewarp-feature-video-use.md)
+   + [Lanci](page-authoring/launches.md)
 + Componenti {#components}
    + [Sviluppo di componenti](components/component-development.md)
    + [Componenti core](components/core-components-feature-video-understand.md)
