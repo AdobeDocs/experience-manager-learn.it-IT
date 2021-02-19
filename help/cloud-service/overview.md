@@ -4,10 +4,10 @@ description: Raccolta di esercitazioni per Adobe Experience Manager (AEM) come C
 sub-product: siti, gestione cloud, fondazione, risorse
 kt: 3289
 translation-type: tm+mt
-source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
+source-git-commit: 3e719ffd035623803c92ec814911413ec571ab30
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Experience Manager (AEM) ora è disponibile as a Cloud Service. AEM come C
 
 ## Novità
 
-* **[Autenticazione per AEM come Cloud Service da un&#39;applicazione esterna (esercitazione)](../headless-tutorial/authentication/overview.md)**
+* **[Autenticazione basata su token (esercitazione)](../headless-tutorial/authentication/overview.md)**
 
    *Scoprite come utilizzare l&#39;autenticazione basata su token per interagire con AEM come Cloud Service su HTTP*
 
