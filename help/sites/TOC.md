@@ -4,9 +4,9 @@ user-guide-description: Raccolta di video e tutorial per Adobe Experience Manage
 breadcrumb-title: Tutorial di AEM Sites
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: ac2e937613eba4857d0f9bf8c5a39d5611157cbd
+source-git-commit: fcfb33f93e57d40b08e0527d38cfce8553095e65
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '447'
 ht-degree: 23%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 23%
    + [Frammenti di contenuto e frammenti esperienza](content-fragments/understand-content-fragments-and-experience-fragments.md)
 + Frammenti esperienza {#experience-fragments}
    + [Utilizzo di Frammenti esperienza](experience-fragments/experience-fragments-feature-video-use.md)
-   + [Informazioni sui frammenti esperienza](experience-fragments/experience-fragments-feature-video-understand.md)
+   + [Blocchi predefiniti](experience-fragments/building-blocks.md)
    + [Impostazione della pubblicazione per social network con i frammenti esperienza](experience-fragments/experience-fragments-social-technical-video-setup.md)
    + [Frammenti di contenuto e frammenti esperienza](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 + Sviluppo {#developing}
@@ -52,7 +52,7 @@ ht-degree: 23%
    + [Guida introduttiva di AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Guida introduttiva ad AEM Headless](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)
    + [Guida introduttiva ad AEM Editor e React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [Guida introduttiva a AEM editor SPA e Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [Guida introduttiva a AEM editor SPA e Angular ](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
    + [Estensione delle proprietà pagina](developing/page-properties-technical-video-develop.md)
    + [Sviluppo con il sistema di stili](developing/style-system-technical-video-understand.md)
    + [Best practice per i sistemi di stile](developing/style-organization-style-system-understand-article.md)
@@ -69,7 +69,7 @@ ht-degree: 23%
    + [Utilizzo dell&#39;editor SPA](spa-editor/spa-editor-framework-feature-video-use.md)
    + [Esercitazione di Hello World](spa-editor/spa-editor-helloworld-tutorial-use.md)
    + [Guida introduttiva ad AEM Editor e React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [Guida introduttiva a AEM editor SPA e Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [Guida introduttiva a AEM editor SPA e Angular ](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
 + Gestione multisito {#multi-site-management}
    + [Introduzione alla copia per lingua](./multi-site-management/language-copy-overview.md)
    + [Live Copy e Blueprint](./multi-site-management/live-copy-and-blueprint.md)
