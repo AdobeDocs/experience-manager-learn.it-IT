@@ -1,6 +1,6 @@
 ---
 title: Modellazione dati avanzata con riferimenti a frammenti - Guida introduttiva a AEM senza titolo - GraphQL
-description: Guida introduttiva ad Adobe Experience Manager (AEM) e GraphQL. Scopri come utilizzare la funzione Riferimento frammento per la modellazione avanzata dei dati e per creare una relazione tra due diversi frammenti di contenuto. Scoprite come modificare una query GraphQL per includere un campo da un modello di riferimento.
+description: Guida introduttiva ad Adobe Experience Manager (AEM) e GraphQL. Scoprite come utilizzare la funzione Riferimento frammento per la modellazione avanzata dei dati e per creare una relazione tra due diversi frammenti di contenuto. Scoprite come modificare una query GraphQL per includere un campo da un modello di riferimento.
 sub-product: assets
 topics: headless
 version: cloud-service
@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6718
 thumbnail: KT-6718.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '848'
 ht-degree: 1%
 
 ---
@@ -234,13 +234,10 @@ Quindi, aggiorna le query utilizzate dall’applicazione React per includere il 
 
    ![Collaboratore aggiunto nell&#39;app](assets/fragment-references/contributor-added-detail.png)
 
-## Risorse aggiuntive
-
-Per ulteriori dettagli sui frammenti di contenuto e GraphQL, consulta le risorse seguenti:
-
-* [Distribuzione di contenuti headless con frammenti di contenuto con GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
-* [AEM GraphQL API per l&#39;utilizzo con frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
-
 ## Congratulazioni!{#congratulations}
 
 Congratulazioni! È stato aggiornato un modello di frammento di contenuto esistente per fare riferimento a un frammento di contenuto nidificato utilizzando il campo **Riferimento frammento**. È stato inoltre appreso come modificare una query GraphQL per includere campi da un modello di riferimento.
+
+## Passaggi successivi {#next-steps}
+
+Nel capitolo successivo, [Implementazione produzione tramite un ambiente AEM Publish](./production-deployment.md), scopri i servizi AEM Author e Publish e il pattern di distribuzione consigliato per le applicazioni headless. Aggiornerete un&#39;applicazione esistente per utilizzare le variabili di ambiente per modificare in modo dinamico un endpoint GraphQL in base all&#39;ambiente di destinazione. Inoltre verrà illustrato come configurare AEM per la condivisione delle risorse tra le origini (CORS).
