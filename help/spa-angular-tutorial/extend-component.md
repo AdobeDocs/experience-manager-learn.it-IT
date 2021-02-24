@@ -1,8 +1,8 @@
 ---
-title: Estendi un componente | Guida introduttiva all'editor SPA AEM e Angular
+title: 'Estendi un componente | Guida introduttiva all''editor SPA AEM e Angular '
 description: Scoprite come estendere un componente core esistente da utilizzare con l'editor SPA AEM. La comprensione di come aggiungere proprietà e contenuto a un componente esistente è una tecnica potente per espandere le capacità di un’implementazione di AEM SPA Editor. Scopri come utilizzare il linguaggio di delega per estendere i modelli Sling e le funzionalità di Sling Resource Merger.
 sub-product: sites
-feature: SPA Editor
+feature: Editor SPA
 doc-type: tutorial
 topics: development
 version: cloud-service
@@ -13,7 +13,7 @@ thumbnail: 5871-spa-angular.jpg
 translation-type: tm+mt
 source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
 workflow-type: tm+mt
-source-wordcount: '1984'
+source-wordcount: '1986'
 ht-degree: 2%
 
 ---
@@ -129,7 +129,7 @@ Un componente scheda iniziale è stato fornito dal codice iniziale del capitolo.
 
 6. Nel passaggio IDE al modulo `ui.frontend`, passare a `ui.frontend/src/app/components/card`:
 
-   ![Inizio componente angolare](assets/extend-component/angular-card-component-start.png)
+   ![Inizio componente Angular ](assets/extend-component/angular-card-component-start.png)
 
 7.  Inspect il file `card.component.ts`.
 
@@ -139,7 +139,7 @@ Un componente scheda iniziale è stato fornito dal codice iniziale del capitolo.
    MapTo('wknd-spa-angular/components/card')(CardComponent, CardEditConfig);
    ```
 
-   Esaminare i tre parametri `@Input` della classe per `src`, `alt` e `title`. Questi sono valori JSON previsti dal componente AEM che verrà mappato sul componente Angular.
+   Esaminare i tre parametri `@Input` della classe per `src`, `alt` e `title`. Questi sono valori JSON previsti dal componente AEM che verrà mappato sul componente Angular .
 
 8. Aprire il file `card.component.html`:
 
@@ -149,7 +149,7 @@ Un componente scheda iniziale è stato fornito dal codice iniziale del capitolo.
    </div>
    ```
 
-   In questo esempio abbiamo scelto di riutilizzare il componente Immagine angolare esistente `app-image` semplicemente passando i parametri `@Input` da `card.component.ts`. Più avanti nell&#39;esercitazione verranno aggiunte e visualizzate ulteriori proprietà.
+   In questo esempio abbiamo scelto di riutilizzare il componente Immagine Angular  esistente `app-image` semplicemente passando i parametri `@Input` da `card.component.ts`. Più avanti nell&#39;esercitazione verranno aggiunte e visualizzate ulteriori proprietà.
 
 ## Aggiornare i criteri dei modelli
 
@@ -199,7 +199,7 @@ Quindi, create il componente `Card` utilizzando l&#39;editor SPA AEM.
 
 6. Aggiornate la scheda **Metadati risorsa** per aggiungere valori per **Testo alternativo** e **Didascalia**.
 
-   Al momento non vengono visualizzate altre modifiche dopo l’aggiornamento della finestra di dialogo. Per esporre i nuovi campi al componente Angular, è necessario aggiornare il modello Sling per il componente `Card`.
+   Al momento non vengono visualizzate altre modifiche dopo l’aggiornamento della finestra di dialogo. Per esporre i nuovi campi al componente Angular  è necessario aggiornare il modello Sling per il componente `Card`.
 
 7. Aprite una nuova scheda e andate a [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd-spa-angular/us/en/home/jcr%3Acontent/root/responsivegrid/card).  i nodi di contenuto sotto `/content/wknd-spa-angular/us/en/home/jcr:content/root/responsivegrid` per trovare il contenuto del componente `Card`.
 
@@ -209,7 +209,7 @@ Quindi, create il componente `Card` utilizzando l&#39;editor SPA AEM.
 
 ## Aggiorna modello Sling scheda
 
-Per esporre i valori dalla finestra di dialogo dei componenti al componente Angular, è necessario aggiornare il modello Sling che popola il JSON per il componente `Card`. Abbiamo anche l&#39;opportunità di implementare due elementi di business logic:
+Per esporre i valori dalla finestra di dialogo dei componenti al componente Angular , è necessario aggiornare il modello Sling che popola il JSON per il componente `Card`. Abbiamo anche l&#39;opportunità di implementare due elementi di business logic:
 
 * Se da `titleFromPage` a **true**, restituire il titolo della pagina specificata da `cardPath` in caso contrario restituisce il valore di `cardTitle` textfield.
 * Restituisce la data dell&#39;ultima modifica della pagina specificata da `cardPath`.
@@ -258,7 +258,7 @@ Tornate all&#39;IDE di vostra scelta e aprite il modulo `core`.
    }
    ```
 
-   Questi metodi saranno esposti tramite l&#39;API del modello JSON e passati al componente Angular.
+   Questi metodi saranno esposti tramite l&#39;API del modello JSON e passati al componente Angular .
 
 3. Apri `CardImpl.java`. Questa è l&#39;implementazione dell&#39;interfaccia `Card.java`. Questa implementazione è già stata parzialmente bloccata per accelerare l&#39;esercitazione.  Notate l&#39;utilizzo delle annotazioni `@Model` e `@Exporter` per garantire che il modello Sling possa essere serializzato come JSON tramite Sling Model Exporter.
 
@@ -379,9 +379,9 @@ Tornate all&#39;IDE di vostra scelta e aprite il modulo `core`.
 
    Notate che il modello JSON viene aggiornato con ulteriori coppie chiave/valore dopo l&#39;aggiornamento dei metodi nel modello Sling `CardImpl`.
 
-## Aggiorna componente angolare
+## Aggiorna  componente Angular
 
-Ora che il modello JSON è popolato con nuove proprietà per `ctaLinkURL`, `ctaText`, `cardTitle` e `cardLastModified`, è possibile aggiornare il componente Angular per visualizzarli.
+Ora che il modello JSON è popolato con nuove proprietà per `ctaLinkURL`, `ctaText`, `cardTitle` e `cardLastModified`, è possibile aggiornare il componente Angular  per visualizzarli.
 
 1. Tornare all&#39;IDE e aprire il modulo `ui.frontend`. Facoltativamente, avviare il server di sviluppo webpack da una nuova finestra terminale per visualizzare le modifiche in tempo reale:
 
@@ -449,7 +449,7 @@ Ora che il modello JSON è popolato con nuove proprietà per `ctaLinkURL`, `ctaT
 
    >[!NOTE]
    >
-   > È possibile visualizzare il codice del componente per schede angolari finito [qui](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/extend-component-solution/ui.frontend/src/app/components/card).
+   > È possibile visualizzare il codice finale del componente della scheda di Angular [ qui](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/extend-component-solution/ui.frontend/src/app/components/card).
 
 5. Distribuisci le modifiche complete a AEM dalla radice del progetto utilizzando Maven:
 
