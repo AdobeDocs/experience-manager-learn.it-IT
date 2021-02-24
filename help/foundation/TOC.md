@@ -5,10 +5,10 @@ user-guide-description: 'Raccolta di video e tutorial per Adobe Experience Manag
 sub-product: foundation
 index: y
 translation-type: tm+mt
-source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
+source-git-commit: 2760064642002a684b3fd70337a81a7d6e28a343
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 19%
+source-wordcount: '147'
+ht-degree: 21%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 19%
    + [Utilizzare il Pannello Panoramica di sistema](./administration/use-the-system-overview-dashboard.md)
 + Autenticazione {#authentication}
    + [Autenticazione OAuth](authentication/oauth-code-sample-develop.md)
-   + [Configurare le chiavi pubbliche/private da usare con  Adobe I/O](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
+   + [Impostare le chiavi pubbliche/private da usare con  Adobe I/O](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
    + [Informazioni sull&#39;autenticazione](authentication/authentication-support-article-understand.md)
    + [Comprendere l&#39;autenticazione IMS su AMS](authentication/adobe-ims-authentication-technical-video-understand.md)
 +  Adobe Cloud Manager{#cloud-manager}
@@ -46,6 +46,5 @@ ht-degree: 19%
 + Flusso di lavoro {#workflow}
    + [Utilizzo dell’Editor flussi di lavoro](./workflow/use-the-workflow-editor.md)
    + [Utilizzo della gestione dei flussi di lavoro](./workflow/use-workflow-management.md)
-   + [Usare la visualizzazione Calendario con AEM progetti e inbox](./workflow/use-the-calendar-view-with-aem-projects-and-inbox.md)
    + [Usa casella in entrata](./workflow/use-the-inbox.md)
 
