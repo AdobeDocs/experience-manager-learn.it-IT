@@ -4,10 +4,10 @@ description: Raccolta di esercitazioni per Adobe Experience Manager (AEM) come C
 sub-product: siti, gestione cloud, fondazione, risorse
 kt: 3289
 translation-type: tm+mt
-source-git-commit: 3e719ffd035623803c92ec814911413ec571ab30
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '275'
+ht-degree: 8%
 
 ---
 
@@ -20,9 +20,13 @@ Adobe Experience Manager (AEM) ora è disponibile as a Cloud Service. AEM come C
 
 ## Novità
 
-* **[Autenticazione basata su token (esercitazione)](../headless-tutorial/authentication/overview.md)**
+* **[Autenticazione basata su token (esercitazione)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
 
    *Scoprite come utilizzare l&#39;autenticazione basata su token per interagire con AEM come Cloud Service su HTTP*
+
+* **[GraphQL headless (esercitazione)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
+
+   *Scopri come utilizzare AEM GraphQL API per sviluppare esperienze in un&#39;applicazione esterna.*
 
 * **[Importazione in blocco (video)](./migration/bulk-import.md)**
 
@@ -35,11 +39,6 @@ Adobe Experience Manager (AEM) ora è disponibile as a Cloud Service. AEM come C
 * **[Estensibilità dei microservizi  Asset compute (esercitazione)](./asset-compute/overview.md)**
 
    *Scoprite come sviluppare  Asset compute di lavoro per generare rappresentazioni delle risorse personalizzate*
-
-* **[Configurazione dell&#39;accesso a AEM come Cloud Service (esercitazione)](./accessing/overview.md)**
-
-   *Scopri come configurare gli utenti IMS in Adobe Admin Console in modo che possano accedere ai AEM*
-
 
 ## Prezzi del personale
 
