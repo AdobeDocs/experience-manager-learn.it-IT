@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6712
 thumbnail: 22452.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '966'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Definizione dei modelli di frammento di contenuto {#content-fragment-models}
 
-In questo capitolo viene illustrato come modellare il contenuto e creare uno schema con **Modelli di frammenti di contenuto**. Verranno esaminati i modelli esistenti e verrà creato un nuovo modello. Verranno inoltre illustrati i diversi tipi di dati che è possibile utilizzare per definire uno schema come parte del modello.
+In questo capitolo viene illustrato come modellare il contenuto e creare uno schema con **Modelli di frammenti di contenuto**. Verranno esaminati i modelli esistenti e verrà creato un nuovo modello. Vengono inoltre illustrati i diversi tipi di dati che è possibile utilizzare per definire uno schema come parte del modello.
 
 In questo capitolo verrà creato un nuovo modello per un **Collaboratore**, che è il modello dati per gli utenti che creano contenuti di rivista e avventura come parte del marchio WKND.
 
@@ -133,13 +133,13 @@ Quindi, create un nuovo modello per un **Collaboratore**, che è il modello dati
 
 ## Abilita modello collaboratore
 
-I modelli di frammento di contenuto vengono impostati per impostazione predefinita allo stato **Bozza** al momento della prima creazione. Questo consente agli utenti di definire meglio il modello di frammento di contenuto **prima**, consentendo agli autori di utilizzarlo. Ricordare che la modifica di **Property Name** di un campo nel modello modifica lo schema di dati sottostante e può avere effetti a valle significativi sui frammenti esistenti e sulle applicazioni esterne. Si consiglia di pianificare con attenzione la convenzione di denominazione utilizzata per i campi **Nome proprietà**.
+I modelli di frammenti di contenuto devono essere **abilitati** prima che gli autori di contenuti possano utilizzarli. È possibile **Disattivare** un modello di frammento di contenuto, vietando così agli autori di utilizzarlo. Ricordare che la modifica di **Property Name** di un campo nel modello modifica lo schema di dati sottostante e può avere effetti a valle significativi sui frammenti esistenti e sulle applicazioni esterne. È consigliabile pianificare attentamente la convenzione di denominazione utilizzata per i campi **Nome proprietà** prima di attivare il modello di frammento di contenuto per gli utenti.
 
-1. Tenere presente che il modello **Collaboratore** è attualmente in stato **Bozza**.
+1. Assicurarsi che il modello **Collaboratore** sia attualmente in uno stato **Abilitato**.
 
-1. Abilita il **modello collaboratore** posizionando il puntatore del mouse sulla scheda e facendo clic sull&#39;icona **Abilita**:
+   ![Modello collaboratore abilitato](assets/content-fragment-models/enable-contributor-model.png)
 
-   ![Abilita modello collaboratore](assets/content-fragment-models/enable-contributor-model.png)
+   È possibile attivare o disattivare lo stato di un modello di frammento di contenuto posizionando il puntatore del mouse sulla scheda e facendo clic sull&#39;icona **Disable** / **Enable**.
 
 ## Congratulazioni! {#congratulations}
 
