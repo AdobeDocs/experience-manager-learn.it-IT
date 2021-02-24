@@ -5,17 +5,17 @@ breadcrumb-title: Tutorial di AEM Headless
 version: cloud-service
 sub-product: content-services
 doc-type: tutorial
-feature: content-fragment, core-components
+feature: frammento di contenuto, componenti core
 topics: content-delivery
 audience: architect, developer, implementer
 activity: develop, understand
 kt: 2963
 index: y
 translation-type: tm+mt
-source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 31%
+source-wordcount: '107'
+ht-degree: 29%
 
 ---
 
@@ -40,6 +40,7 @@ ht-degree: 31%
    + [4 - Esplora le API GraphQL](./graphql/explore-graphql-api.md)
    + [5 - Query da un&#39;app esterna](./graphql/graphql-and-external-app.md)
    + [6 - Modellazione avanzata dei dati con riferimenti ai frammenti](./graphql/fragment-references.md)
+   + [7 - Implementazione produzione](./graphql/production-deployment.md)
 + Autenticazione basata su token {#authentication}
    + [Panoramica](./authentication/overview.md)
    + [1 - Token di accesso allo sviluppo locale](./authentication/local-development-access-token.md)
