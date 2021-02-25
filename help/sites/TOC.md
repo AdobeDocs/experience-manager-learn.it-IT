@@ -4,9 +4,9 @@ user-guide-description: Raccolta di video e tutorial per Adobe Experience Manage
 breadcrumb-title: Tutorial di AEM Sites
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: fcfb33f93e57d40b08e0527d38cfce8553095e65
+source-git-commit: 4620acc18a08d71994753903b79247a8ed3fd8f5
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '446'
 ht-degree: 23%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 23%
 + Frammenti di contenuto {#content-fragments}
    + [Creazione di frammenti di contenuto](content-fragments/content-fragments-feature-video-use.md)
    + [Distribuzione di frammenti di contenuto](content-fragments/content-fragments-delivery-feature-video-use.md)
-   + [Conversione con frammenti di contenuto](content-fragments/content-fragments-translation-feature-video-use.md)
+   + [Traduzione di frammenti di contenuto](content-fragments/content-fragments-translation-feature-video-use.md)
    + [Frammenti di contenuto e frammenti esperienza](content-fragments/understand-content-fragments-and-experience-fragments.md)
 + Frammenti esperienza {#experience-fragments}
    + [Utilizzo di Frammenti esperienza](experience-fragments/experience-fragments-feature-video-use.md)
