@@ -21,12 +21,12 @@ ht-degree: 46%
 # Introduzione a Dynamic Media Classic {#dynamic-media-classic-tutorial}
 
 + [Panoramica di Dynamic Media Classic](./overview.md)
-+ [Flusso di lavoro risorse e anteprima](./main-workflow.md)
-+ [Definizione della struttura delle cartelle e della convenzione di denominazione dei file](./folder-structure-filenaming.md)
++ [Flusso di lavoro e anteprima delle risorse](./main-workflow.md)
++ [Determinare la struttura delle cartelle e la convenzione per la denominazione dei file](./folder-structure-filenaming.md)
 + [Predefiniti immagini](./image-presets.md)
-+ [Set di file multimediali diversi per immagini, campioni, set 360 gradi](./media-sets.md)
++ [Set di file multimediali diversi, immagine, campione, rotazione](./media-sets.md)
 + [Ritaglio, immagini regolate e destinazioni di zoom](./crop-adjusted-zoom-targets.md)
 + [Introduzione ai modelli di base](./basic-templates.md)
 + [Panoramica video](./video-overview.md)
 + [Imaging avanzato](./smart-imaging.md)
-+ [Report validi per gli amministratori](./valuable-reports.md)
++ [Rapporti preziosi per gli amministratori](./valuable-reports.md)
