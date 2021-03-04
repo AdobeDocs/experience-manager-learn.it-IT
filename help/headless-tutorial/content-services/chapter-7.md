@@ -1,14 +1,10 @@
 ---
 title: Capitolo 7 - Utilizzo di AEM Content Services da un’app mobile - Content Services
 description: Il capitolo 7 dell’esercitazione esegue l’app mobile Android per utilizzare contenuti creati da AEM Content Services.
-feature: '"Frammenti di contenuto, API"'
-topic: '"Headless, gestione dei contenuti"'
-role: Developer (Sviluppatore)
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1408'
 ht-degree: 0%
 
 ---
