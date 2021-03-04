@@ -4,20 +4,17 @@ seo-title: Passaggi semplificati per l’installazione di AEM Forms su Windows
 description: Passaggi semplici e rapidi per installare AEM Forms in Windows
 seo-description: Passaggi semplici e rapidi per installare AEM Forms in Windows
 uuid: a148b8f0-83db-47f6-89d3-c8a9961be289
-feature: Moduli adattivi
+feature: moduli adattivi
 topics: administration
 audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
 discoiquuid: 1182ef4d-5838-433b-991d-e24ab805ae0e
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '614'
 ht-degree: 4%
 
 ---
