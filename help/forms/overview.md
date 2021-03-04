@@ -1,37 +1,39 @@
 ---
-title: ' Tutorials e video AEM Forms'
-seo-title: ' Tutorials e video AEM Forms'
+title: Tutorial e video su AEM Forms
+seo-title: Tutorial e video su AEM Forms
 description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms
 seo-description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms
 sub-product: forms
+topic: Sviluppo
+role: Developer (Sviluppatore)
 translation-type: tm+mt
-source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 14%
+source-wordcount: '305'
+ht-degree: 17%
 
 ---
 
 
 # Panoramica {#overview}
 
-Adobe Experience Manager (AEM) offre una soluzione semplice per creare, gestire, pubblicare e aggiornare moduli digitali complessi, integrandosi con processi back-end, regole aziendali e dati. Questa guida utente contiene video ed esercitazioni sulle numerose funzioni e funzionalità di  AEM Forms
+Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, gestire, pubblicare e aggiornare moduli digitali complessi, da integrare con processi di back-end, regole aziendali e dati. Questa guida utente contiene video ed esercitazioni sulle numerose funzioni e funzionalità di AEM Forms
 
 ## Novità
 
-* **[Gestione dei messaggi di errore nel passaggio del servizio del modello dati del modulo di chiamata](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
+* **[Gestione dei messaggi di errore nel passaggio del servizio di chiamata del modello dati del modulo](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
 
-   *Una variabile in un modello di workflow è un modo per memorizzare un valore in base al tipo di dati*
+   *Una variabile in un modello di flusso di lavoro è un modo per memorizzare un valore in base al suo tipo di dati*
 
-* **[Grafici multiserie nei documenti di comunicazione interattiva (video)](./interactive-communications/multiseriescharts.md)**
+* **[Grafici multiserie in documenti di comunicazione interattiva (video)](./interactive-communications/multiseriescharts.md)**
 
-   *Traccia più serie nello stesso grafico.I grafici a serie multiple sono generalmente utilizzati in associazione con il tipo di grafico a linee, barre, colonne.*
+   *Traccia più di una serie nello stesso grafico.I grafici a serie multiple sono generalmente utilizzati in associazione con il tipo di grafico a linee, barre, a colonne.*
 
 * **[Creazione di modelli di flusso di lavoro riutilizzabili](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
 
-   *Creare modelli di flusso di lavoro non collegati a un modulo specifico*
+   *Creare modelli di flusso di lavoro non legati a un modulo specifico*
 
-## Prezzi del personale
+## Scelte dello staff
 
 <table>
 <tr>
@@ -45,7 +47,7 @@ Adobe Experience Manager (AEM) offre una soluzione semplice per creare, gestire,
     </a>
     </div>
     <p>
-    <em>I moduli adattivi sono moduli di nuova generazione dinamici e reattivi. È possibile utilizzare i moduli adattivi per distribuire esperienze personalizzate</em>
+    <em>I moduli adattivi sono moduli di nuova generazione dinamici e reattivi. Puoi utilizzare i moduli adattivi per fornire esperienze personalizzate</em>
     <p>
   </td>
    <td>
@@ -71,7 +73,7 @@ Adobe Experience Manager (AEM) offre una soluzione semplice per creare, gestire,
     </a>
     </div>
     <p>
-    <em>Richiama il servizio del modello dati modulo come passaggio nel flusso di lavoro AEM</em>
+    <em>Richiama del servizio del modello dati modulo come passaggio nel flusso di lavoro AEM</em>
     <p>
   </td>
 </tr>
@@ -79,11 +81,11 @@ Adobe Experience Manager (AEM) offre una soluzione semplice per creare, gestire,
 
 ## Risorse aggiuntive
 
-* [ Experience League - Esplora AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [Documentazione sull’authoring  AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
-* [Documentazione sullo sviluppo di  AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
-* [Documentazione  di amministrazione AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
-* [Documentazione  distribuzione AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
+* [Experience League - Esplorare AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Documentazione sull’authoring di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
+* [Documentazione sullo sviluppo di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
+* [Documentazione sull’amministrazione di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
+* [Documentazione sulla distribuzione di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
 * [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutorial di AEM Assets](/help/assets/overview.md)
 * [Tutorial di AEM Forms](/help/forms/overview.md)
