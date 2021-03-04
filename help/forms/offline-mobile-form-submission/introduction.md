@@ -1,35 +1,38 @@
 ---
-title: Attivazione AEM flusso di lavoro per l’invio di moduli HTML5
-seo-title: Attiva AEM flusso di lavoro per l’invio di moduli HTML5
-description: Continuare a compilare il modulo per dispositivi mobili in modalità offline e inviare il modulo per dispositivi mobili per attivare AEM flusso di lavoro
-seo-description: Continuare a compilare il modulo per dispositivi mobili in modalità offline e inviare il modulo per dispositivi mobili per attivare AEM flusso di lavoro
-feature: mobile-forms
+title: Attiva flusso di lavoro AEM per l’invio di moduli HTML5
+seo-title: Attiva flusso di lavoro AEM sull’invio di moduli HTML5
+description: Continua a compilare il modulo mobile in modalità offline e invia il modulo mobile per attivare il flusso di lavoro AEM
+seo-description: Continua a compilare il modulo mobile in modalità offline e invia il modulo mobile per attivare il flusso di lavoro AEM
+feature: Forms Mobile
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 0%
+source-wordcount: '231'
+ht-degree: 1%
 
 ---
 
 
 # Download del modulo mobile completato parzialmente e invio al flusso di lavoro AEM
 
-Un caso d’uso comune è la capacità di rappresentare l’XDP come HTML per le attività di acquisizione dei dati. Questo funziona bene quando i moduli sono semplici e possono essere compilati e inviati online. Tuttavia, se il modulo è complesso e gli utenti potrebbero non essere in grado di completarlo online, è necessario consentire agli utenti che compilano il modulo di scaricare la versione interattiva del modulo da compilare utilizzando  Acrobat/Reader in modalità offline. Una volta compilato il modulo, l&#39;utente può essere online per inviare il modulo.
-Per eseguire questo caso di utilizzo, è necessario eseguire i seguenti passaggi:
+Un caso d’uso comune è quello di avere la capacità di eseguire il rendering XDP come HTML per le attività di acquisizione dei dati. Questo funziona bene quando i moduli sono semplici e possono essere compilati e inviati online. Tuttavia, se il modulo è complesso e gli utenti potrebbero non essere in grado di completarlo online, è necessario fornire la possibilità di consentire ai compilatori di scaricare la versione interattiva del modulo da compilare utilizzando Acrobat/Reader in modalità offline. Una volta compilato il modulo, l’utente può essere online per inviarlo.
+Per eseguire questo caso d’uso è necessario eseguire i seguenti passaggi:
 
-* Generazione di PDF interattivi/compilabili con i dati immessi nel modulo per dispositivi mobili
-* Gestione dell’invio PDF da  Acrobat/Reader
-* Avvia flusso di lavoro Adobe Experience Manager (AEM) per esaminare il PDF inviato
+* Possibilità di generare PDF interattivi/compilabili con i dati immessi nel modulo mobile
+* Gestire l’invio dei PDF da Acrobat/Reader
+* Attiva il flusso di lavoro Adobe Experience Manager (AEM) per esaminare il PDF inviato
 
-Questa esercitazione descrive i passaggi necessari per eseguire le operazioni descritte sopra. Il codice di esempio e le risorse relative a questa esercitazione sono [disponibili qui.](part-four.md)
+Questa esercitazione descrive i passaggi necessari per eseguire il caso d’uso precedente. Il codice di esempio e le risorse relative a questa esercitazione sono [disponibili qui.](part-four.md)
 
-Il seguente video offre una panoramica del caso d’uso
+Il video seguente offre una panoramica del caso d’uso
 
 >[!VIDEO](https://video.tv.adobe.com/v/29677?quality=9&learn=on)
 
