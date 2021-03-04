@@ -1,47 +1,50 @@
 ---
-title: Convenzioni di denominazione e procedure ottimali da seguire per la creazione di moduli adattivi
-seo-title: Convenzioni di denominazione e procedure ottimali da seguire per la creazione di moduli adattivi
-description: Convenzioni di denominazione e procedure ottimali da seguire per la creazione di moduli adattivi
-seo-description: Convenzioni di denominazione e procedure ottimali da seguire per la creazione di moduli adattivi
-feature: adaptive-forms
+title: Convenzioni di denominazione e best practice da seguire per la creazione di moduli adattivi
+seo-title: Convenzioni di denominazione e best practice da seguire per la creazione di moduli adattivi
+description: Convenzioni di denominazione e best practice da seguire per la creazione di moduli adattivi
+seo-description: Convenzioni di denominazione e best practice da seguire per la creazione di moduli adattivi
+feature: Moduli adattivi
 topics: best-practices
 audience: developer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 5b05dbe45babfcfcfc81995d9d48bc9b26b9b6c8
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 1%
+source-wordcount: '316'
+ht-degree: 2%
 
 ---
 
 # Best practice  
 
-I moduli Adobe Experience Manager (AEM) consentono di trasformare transazioni complesse in esperienze digitali semplici e coinvolgenti. Il seguente documento descrive alcune best practice aggiuntive da seguire nello sviluppo di Forms adattivo. Questo documento deve essere utilizzato insieme a [questo documento](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
+I moduli di Adobe Experience Manager (AEM) consentono di trasformare transazioni complesse in esperienze digitali semplici e accattivanti. Il documento seguente descrive alcune best practice aggiuntive da seguire per lo sviluppo di moduli adattivi. Questo documento deve essere utilizzato in combinazione con [questo documento](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
 
 ## Convenzioni di denominazione
 
 * **Pannelli**
-   * I nomi dei pannelli sono lettere maiuscole/minuscole che iniziano con il carattere maiuscolo.
+   * I nomi dei pannelli sono maiuscole in minuscole e viceversa.
 
 * **Campi modulo**
-   * I nomi dei campi sono lettere maiuscole/minuscole che iniziano con un carattere minuscolo.
+   * I nomi dei campi sono maiuscole/minuscole che iniziano con un carattere minuscolo.
    * Non iniziare i nomi dei campi con numeri
-   * Non includete trattini &quot;-&quot; nei vostri nomi. Equivale a un segno meno nel codice e fungerà da operatori nel codice.
+   * Non includere trattini &quot;-&quot; nei tuoi nomi. Questo equivale a un segno meno nel codice e agisce come operatore nel codice.
    * I nomi possono contenere lettere, cifre, caratteri di sottolineatura e simboli di dollaro.
    * I nomi devono iniziare con una lettera
-   * I nomi sono sensibili alle maiuscole/minuscole
-   * Le parole riservate (come le parole chiave JavaScript) non possono essere utilizzate come nomi. Attenzione alle altre parole riservate specifiche AF, ad esempio   come &quot;panel&quot;, &quot;name&quot;.
-   * Non includete trattini &quot;-&quot; nei vostri nomi
-* **Sviluppo di Forms**
-   * Durante lo sviluppo di moduli di grandi dimensioni è necessario tenere in considerazione i frammenti di modulo. Caricamento lento dei frammenti di modulo per un caricamento più rapido   time
+   * I nomi sono sensibili all’uso di maiuscole e minuscole
+   * Le parole riservate (come le parole chiave JavaScript) non possono essere utilizzate come nomi. Fai attenzione ad altre parole riservate specifiche AF come   come &quot;pannello&quot;, &quot;nome&quot;.
+   * Non includere trattini &quot;-&quot; nei tuoi nomi
+* **Sviluppo di moduli**
+   * Quando si sviluppano moduli di grandi dimensioni, è necessario tenere in considerazione i frammenti di modulo. Caricamento lento dei frammenti di modulo per un caricamento più rapido   times
    * **DataModel**
-      * È consigliabile associare il modulo adattivo al modello dati appropriato
+      * Si consiglia di associare il modulo adattivo al modello dati appropriato
    * **Eventi oggetto**
-      * Il codice relativo alla visibilità di un oggetto deve sempre essere inserito nell&#39;evento di visibilità di tale oggetto.
+      * Il codice relativo alla visibilità di un oggetto deve sempre essere posizionato nell&#39;evento di visibilità di tale oggetto.
    * **Script**
-      * Se il codice scritto all&#39;interno di un modulo adattivo supera le 5 righe visibili, è necessario spostare il codice in una libreria client. È consigliabile aggiungere la funzione alla libreria client, quindi aggiungere i tag jsdoc appropriati per rendere la funzione visibile nell&#39;editor delle regole per i moduli adattivi.
+      * Se il codice che si sta scrivendo all’interno di un modulo adattivo si estende oltre le 5 righe visibili, è necessario spostare il codice in una libreria client. Idealmente, aggiungi la tua funzione alla libreria client e quindi aggiungi i tag jsdoc appropriati per consentire alla funzione di essere visibile nell’editor di regole per i moduli adattivi.
 
 
