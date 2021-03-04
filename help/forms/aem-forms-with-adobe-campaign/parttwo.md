@@ -1,38 +1,41 @@
 ---
-title: Creazione di un profilo campagna per l'invio di moduli adattivi
-seo-title: Creazione di un profilo campagna per l'invio di moduli adattivi
-description: Questo articolo illustra i passaggi necessari per creare un profilo in  Adobe Campaign Standard per l’invio di un modulo adattivo. Questo processo utilizza il meccanismo di invio personalizzato per gestire l'invio del modulo adattivo.
-seo-description: Questo articolo illustra i passaggi necessari per creare un profilo in  Adobe Campaign Standard per l’invio di un modulo adattivo. Questo processo utilizza il meccanismo di invio personalizzato per gestire l'invio del modulo adattivo.
+title: Creazione di un profilo di campagna per l’invio di moduli adattivi
+seo-title: Creazione di un profilo di campagna per l’invio di moduli adattivi
+description: Questo articolo illustra i passaggi necessari per creare un profilo in Adobe Campaign Standard per l’invio di un modulo adattivo. Questo processo utilizza un meccanismo di invio personalizzato per gestire l’invio di moduli adattivi.
+seo-description: Questo articolo illustra i passaggi necessari per creare un profilo in Adobe Campaign Standard per l’invio di un modulo adattivo. Questo processo utilizza un meccanismo di invio personalizzato per gestire l’invio di moduli adattivi.
 uuid: f3cb7b3c-1a1c-49eb-9447-a9e52c675244
-feature: adaptive-forms, form-data-model
+feature: '"Moduli adattivi, modello dati modulo"'
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 46ec4136-4898-4b01-86bb-ac638a29b242
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
 
 
-# Creazione di un profilo campagna per l&#39;invio del modulo adattivo {#creating-campaign-profile-on-adaptive-form-submission}
+# Creazione di un profilo di campagna per l’invio di moduli adattivi {#creating-campaign-profile-on-adaptive-form-submission}
 
-Questo articolo illustra i passaggi necessari per creare un profilo in  Adobe Campaign Standard per l’invio di un modulo adattivo. Questo processo utilizza il meccanismo di invio personalizzato per gestire l&#39;invio del modulo adattivo.
+Questo articolo illustra i passaggi necessari per creare un profilo in Adobe Campaign Standard per l’invio di un modulo adattivo. Questo processo utilizza un meccanismo di invio personalizzato per gestire l’invio di moduli adattivi.
 
-Questa esercitazione illustra i passaggi necessari per creare il profilo Campaign per l&#39;invio di moduli adattivi. Per ottenere questo caso di utilizzo, è necessario effettuare le seguenti operazioni
+Questa esercitazione illustra i passaggi necessari per creare un profilo Campaign per l’invio di moduli adattivi. Per eseguire questo caso d’uso, è necessario effettuare le seguenti operazioni
 
-* Creare un servizio AEM (CampaignService) per creare  profilo Adobe Campaign Standard utilizzando REST API
-* Creazione di un&#39;azione di invio personalizzata per la gestione dell&#39;invio del modulo adattivo
-* Richiama il metodo createProfile di CampaignService
+* Crea un servizio AEM (CampaignService) per creare un profilo Adobe Campaign Standard utilizzando l’API REST
+* Creare un’azione di invio personalizzata per la gestione dell’invio di moduli adattivi
+* Richiamare il metodo createProfile di CampaignService
 
 ## Crea servizio AEM {#create-aem-service}
 
-Crea AEM servizio per creare un  profilo Adobe Campaign. Questo servizio AEM recupererà le  credenziali Adobe Campaign dalla configurazione OSGI. Una volta ottenute le credenziali della campagna, viene generato il token di accesso e viene eseguita la chiamata al token di accesso HTTP Post per creare il profilo in  Adobe Campaign. Di seguito è riportato il codice per la creazione del profilo.
+Crea un servizio AEM per creare un profilo Adobe Campaign. Questo servizio AEM recupererà le credenziali di Adobe Campaign dalla configurazione OSGI. Una volta ottenute le credenziali della campagna, viene generato il token di accesso e viene effettuata la chiamata al token di accesso HTTP Post per creare il profilo in Adobe Campaign. Di seguito è riportato il codice per la creazione del profilo .
 
 ```java
 package aemformwithcampaign.core.services.impl;
@@ -245,13 +248,13 @@ return null;
 }
 ```
 
-## Invio personalizzato {#custom-submit}
+## Invia personalizzato {#custom-submit}
 
-Creare un gestore di invio personalizzato per gestire l&#39;invio del modulo adattivo. In questo handler di invio personalizzato effettueremo una chiamata al metodo createProfile di CampaignService. Il metodo createProfile accetta un oggetto JSONObject che rappresenta il profilo da creare.
+Creare un gestore di invio personalizzato per gestire l’invio del modulo adattivo. In questo gestore di invio personalizzato effettueremo una chiamata al metodo createProfile di CampaignService. Il metodo createProfile accetta un oggetto JSONObject che rappresenta il profilo da creare.
 
-Per saperne di più sul gestore di invio personalizzato in  AEM Forms, seguire questo [link](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
+Per ulteriori informazioni sul gestore di invio personalizzato in AEM Forms, segui questo [link](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
 
-Di seguito è riportato il codice nell&#39;invio personalizzato
+Di seguito è riportato il codice nell’invio personalizzato
 
 ```java
 aemforms.campaign.core.CampaignService addNewProfile = sling.getService(aemforms.campaign.core.CampaignService.class);
@@ -264,13 +267,13 @@ profile.addProperty("mobilePhone",request.getParameter("phone"));
 String pkey = addNewProfile.createProfile(profile);
 ```
 
-## Verificare la soluzione {#test-the-solution}
+## Verifica la soluzione {#test-the-solution}
 
-Una volta definiti il servizio e l&#39;azione di invio personalizzata, siamo pronti a testare la nostra soluzione. Per testare la soluzione, eseguire le operazioni seguenti
+Una volta definiti il servizio e l’azione di invio personalizzata, siamo pronti per testare la nostra soluzione. Per testare la soluzione, effettua le seguenti operazioni
 
 
-* [Accertatevi di aver seguito i passaggi descritti qui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Importa modulo adattivo e gestore di invio personalizzato utilizzando il gestore](assets/create-acs-profile-on-af-submission.zip) pacchetti. Questo pacchetto contiene un modulo adattivo configurato per l&#39;invio a un&#39;azione di invio personalizzata.
-* Visualizzare l&#39;anteprima del [modulo](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
-* Compilare tutti i campi e inviare
-* Verrà creato un nuovo profilo nell&#39;istanza ACS
+* [Assicurati di aver seguito i passaggi descritti qui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [Importa modulo adattivo e gestore di invio personalizzato utilizzando il gestore di pacchetti](assets/create-acs-profile-on-af-submission.zip). Questo pacchetto contiene il modulo adattivo configurato per l’invio all’azione di invio personalizzata.
+* Visualizza in anteprima il [modulo](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
+* Compila tutti i campi e invia
+* Verrà creato un nuovo profilo nella tua istanza ACS
