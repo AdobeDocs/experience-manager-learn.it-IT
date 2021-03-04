@@ -1,26 +1,25 @@
 ---
-title: Panoramica del pannello Collegamento risorse  Adobe
-description: ' Collegamento risorse di Adobe offre agli utenti creativi la possibilità di sfogliare, cercare, estrarre e archiviare le risorse memorizzate  AEM Assets mediante il pannello in-app  InDesign, Photoshop e  Illustrator. Scopri ’interfaccia utente del pannello Collegamento risorse di Adobe e le sue funzionalità. '
+title: Panoramica del pannello Adobe Asset Link
+description: 'Adobe Asset Link consente ai creativi di sfogliare, cercare, estrarre e archiviare le risorse memorizzate in AEM Assets tramite il pannello in-app in InDesign, Photoshop e Illustrator. Scopri l’interfaccia utente e le funzionalità del pannello Adobe Asset Link. '
 sub-product: assets
-feature: adobe-asset-link
-topics: authoring, collaboration, operations, sharing, metadata, images
-audience: all
-doc-type: feature video
-activity: use
-version: null
+feature: Adobe Asset Link
+version: cloud-service
 kt: 4905
 thumbnail: 33734.jpg
+topic: Gestione dei contenuti
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 0%
+source-wordcount: '103'
+ht-degree: 4%
 
 ---
 
 
-# Panoramica del pannello Collegamento risorse  Adobe {#adobe-asset-link-panel-overview}
+# Panoramica del pannello Adobe Asset Link {#adobe-asset-link-panel-overview}
 
- Collegamento risorse di Adobe offre agli utenti creativi la possibilità di sfogliare, cercare, estrarre e archiviare le risorse memorizzate  AEM Assets mediante il pannello in-app  InDesign, Photoshop e  Illustrator. Scopri ’interfaccia utente del pannello Collegamento risorse di Adobe e le sue funzionalità.
+Adobe Asset Link consente ai creativi di sfogliare, cercare, estrarre e archiviare le risorse memorizzate in AEM Assets tramite il pannello in-app in InDesign, Photoshop e Illustrator. Scopri l’interfaccia utente e le funzionalità del pannello Adobe Asset Link.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33734/?quality=12)
