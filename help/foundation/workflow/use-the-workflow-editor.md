@@ -1,24 +1,29 @@
 ---
-title: Come creare flussi di lavoro in AEM
-description: Il flusso di lavoro consente la gestione dei processi aziendali in  Experience Manager, e viene utilizzato per l'elaborazione automatica dei contenuti e per facilitare la governance e il processo che richiede il processo decisionale umano.
-version: 6.4, 6.5, cloud-service
+title: Utilizza l’editor di flussi di lavoro in AEM
+description: Il flusso di lavoro consente la gestione dei processi aziendali in Experience Manager e viene utilizzato per l’elaborazione automatica dei contenuti e per facilitare la governance e il processo decisionale. Il flusso di lavoro è definito tramite Modelli di flusso di lavoro , costituiti da una serie di passaggi e creati e gestiti nell’Editor modello flusso di lavoro.
+version: 6.4, 6.5, Cloud Service
+sub-product: fondazione, siti, risorse
 feature: Flusso di lavoro
-topic: Gestione dei contenuti
-level: Intermedio
-role: Amministratore, sviluppatore
+topics: governance, collaboration
+activity: use
+audience: administrator, implementer
+doc-type: feature video
+topic: Collaborazione
+role: Developer (Sviluppatore)
+level: Principiante
 kt: 657
 thumbnail: 22201.jpg
 translation-type: tm+mt
-source-git-commit: a08b1dd31d27284b9cfa128b68e5b8739ad9eab0
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 3%
+source-wordcount: '117'
+ht-degree: 2%
 
 ---
 
 
-# Utilizzo dell’Editor flussi di lavoro
+# Utilizzare l’Editor flussi di lavoro
 
-Il flusso di lavoro consente la gestione dei processi aziendali in  Experience Manager, e viene utilizzato per l&#39;elaborazione automatica dei contenuti e per facilitare la governance e il processo che richiede il processo decisionale umano. Il flusso di lavoro è definito tramite i modelli di flusso di lavoro, composti di una serie di passaggi e creati e gestiti in [!UICONTROL Workflow Model Editor].
+Il flusso di lavoro consente la gestione dei processi aziendali in Experience Manager e viene utilizzato per l’elaborazione automatica dei contenuti e per facilitare la governance e il processo decisionale. Il flusso di lavoro è definito tramite Modelli di flusso di lavoro composti da una serie di passaggi e creati e gestiti in [!UICONTROL Editor modelli di flusso di lavoro].
 
 >[!VIDEO](https://video.tv.adobe.com/v/22201/?quality=12&learn=on)
