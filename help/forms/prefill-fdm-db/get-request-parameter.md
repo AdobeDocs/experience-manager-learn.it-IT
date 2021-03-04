@@ -1,7 +1,7 @@
 ---
 title: Ottieni parametro di richiesta
-description: Accedere al parametro request del servizio di precompilazione di un modello dati modulo
-feature: adaptive-forms
+description: Accedere al parametro di richiesta del servizio di precompilazione di un modello di dati modulo
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: article
@@ -9,32 +9,35 @@ activity: implement
 version: 6.4,6.5
 kt: 5815
 thumbnail: kt-5815.jpg
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 0%
+source-wordcount: '184'
+ht-degree: 4%
 
 ---
 
 # Ottieni parametro di richiesta
 
-## Ottenere il parametro empID
+## Ottieni il parametro empID
 
-Il passaggio successivo consiste nell’accedere al parametro empID dall’URL. Il valore del parametro di richiesta empID viene quindi passato all&#39;operazione di servizio **_get_** del modello dati del modulo.
-Ai fini di questo corso abbiamo creato e fornito quanto segue
+Il passaggio successivo consiste nell’accedere al parametro empID dall’url. Il valore del parametro di richiesta empID viene quindi passato all&#39;operazione del servizio **_get_** del modello di dati del modulo.
+Per questo corso abbiamo creato e fornito quanto segue
 
 * Modello di modulo adattivo denominato **_FDMDemo_**
 * Componente pagina denominato **_fdmdemo_**
 * Incluso il nostro jsp personalizzato con il componente pagina
-* Associato il modello di modulo adattivo al componente pagina
+* È stato associato il modello di modulo adattivo al componente pagina
 
-In questo modo, il nostro codice nel jsp personalizzato verrà eseguito solo quando verrà eseguito il rendering del modulo adattivo basato su questo modello personalizzato
+In questo modo il nostro codice nel jsp personalizzato verrà eseguito solo quando viene eseguito il rendering di un modulo adattivo basato su questo modello personalizzato
 
-* [Importare il ](assets/template-page-component.zip) pacchetto utilizzando Gestione  [pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
-* [Open fdmrequest.jsp](http://localhost:4502/crx/de/index.jsp#/apps/fdmdemo/component/page/fdmdemo/fdmrequest.jsp)
-* Rimuovete il commento dalle righe.
-* Salvare le modifiche
+* [Importa il ](assets/template-page-component.zip) pacchetto utilizzando il gestore  [dei pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+* [Apri fdmrequest.jsp](http://localhost:4502/crx/de/index.jsp#/apps/fdmdemo/component/page/fdmdemo/fdmrequest.jsp)
+* Rimuovi il commento dalle righe commentate.
+* Salva le modifiche
 
 ```java
 if(request.getParameter("empID")!=null)
@@ -50,4 +53,4 @@ Il valore di empID è associato alla chiave denominata empID in paraMap. Questa 
 
 >[!NOTE]
 >
->L&#39;empID chiave deve corrispondere al valore di binding del servizio get delle entità nuove
+>L&#39;empID chiave deve corrispondere al valore di binding del servizio get entità successive
