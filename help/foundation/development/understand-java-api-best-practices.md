@@ -3,15 +3,18 @@ title: Comprendere le best practice per le API Java in AEM
 description: AEM è basato su uno stack software open-source ricco che espone molte API Java da utilizzare durante lo sviluppo. Questo articolo esplora le API principali e spiega quando e perché dovrebbero essere utilizzate.
 version: 6.2, 6.3, 6.4, 6.5
 sub-product: base, risorse, siti
-feature: null
+feature: API
 topics: best-practices, development
 activity: develop
 audience: developer
 doc-type: article
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '2027'
 ht-degree: 2%
 
 ---
@@ -128,7 +131,7 @@ L’API preferita è [AEM Query Builder](https://helpx.adobe.com/experience-mana
 * Blocchi predefiniti per l’elaborazione del lavoro asincrono
 
    * [Gestori di eventi e processi](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)
-   * [Pianificazioni](https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html)
+   * [Scheduler](https://sling.apache.org/documentation/bundles/scheduler-service-commons-scheduler.html)
    * [Modelli Sling](https://sling.apache.org/documentation/bundles/models.html)
 
 * [Utenti del servizio](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-service-users.html)
