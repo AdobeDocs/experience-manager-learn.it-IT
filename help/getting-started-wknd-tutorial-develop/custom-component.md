@@ -2,7 +2,7 @@
 title: Componente personalizzato
 description: Copre la creazione end-to-end di un componente personalizzato per riga che visualizza il contenuto creato. Include lo sviluppo di un modello Sling per incapsulare la logica di business per popolare il componente byline e l’HTL corrispondente per eseguire il rendering del componente.
 sub-product: sites
-feature: '"Componenti core, API"'
+feature: modelli sling
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -11,13 +11,10 @@ audience: developer
 kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
-topic: '"Gestione dei contenuti, sviluppo"'
-role: Developer (Sviluppatore)
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '3969'
+source-wordcount: '3962'
 ht-degree: 0%
 
 ---
