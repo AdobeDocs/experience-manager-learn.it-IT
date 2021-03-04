@@ -4,20 +4,17 @@ seo-title: Assegnazione di tag e archiviazione dei documenti DoR di AEM Forms in
 description: Questo articolo illustra il caso d’uso per l’archiviazione e l’assegnazione di tag al DO generato da AEM Forms in AEM DAM. L’assegnazione tag al documento viene eseguita in base ai dati del modulo inviati.
 seo-description: Questo articolo illustra il caso d’uso per l’archiviazione e l’assegnazione di tag al DO generato da AEM Forms in AEM DAM. L’assegnazione tag al documento viene eseguita in base ai dati del modulo inviati.
 uuid: b9ba13ed-52d5-4389-a7d5-bf85e58fea49
-feature: '"Moduli adattivi, Flusso di lavoro"'
+feature: moduli adattivi, flusso di lavoro
 topics: developing
 audience: implementer
 doc-type: article
 activity: develop
 version: 6.4,6.5
 discoiquuid: 53961454-633b-4cd8-aef7-e64ab4e528e4
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Esperienza
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '657'
 ht-degree: 0%
 
 ---
