@@ -1,7 +1,7 @@
 ---
-title: Utilizzo  Adobe Cloud Manager - pipeline di produzione CI/CD
-description: 'La pipeline di produzione CI/CD viene utilizzata per creare e distribuire il codice attraverso Stage all''ambiente di produzione, riducendo il tempo al valore. La configurazione della pipeline di produzione CI/CD definisce il trigger che avvierà la pipeline, i parametri che controllano la distribuzione di produzione e i parametri di test delle prestazioni. '
-sub-product: gestore di cloud
+title: Utilizzo di Adobe Cloud Manager - Pipeline di produzione CI/CD
+description: 'La pipeline di produzione CI/CD viene utilizzata per generare e distribuire il codice tramite Stage nell’ambiente di produzione, riducendo il tempo al valore. La configurazione della pipeline di produzione CI/CD definisce il trigger che avvierà la pipeline, i parametri che controllano la distribuzione di produzione e i parametri del test delle prestazioni. '
+sub-product: cloud manager
 topics: Administration
 audience: administrator
 doc-type: feature video
@@ -9,25 +9,28 @@ activity: use
 version: cloud-service
 kt: 6872, 6875
 thumbnail: 26317.jpg
+topic: Architettura
+role: Architetto, Sviluppatore, Amministratore
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 81c704240f163ccd151a61643f589f825a288705
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 0%
+source-wordcount: '129'
+ht-degree: 1%
 
 ---
 
 
-# Utilizzo  Adobe Cloud Manager - pipeline di produzione CI/CD
+# Utilizzo di Adobe Cloud Manager - Pipeline di produzione CI/CD
 
 ## Configurazione
 
-La configurazione [CI/CD Production Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) definisce il trigger che avvierà la pipeline, i parametri che controllano i parametri di distribuzione della produzione e di test delle prestazioni.
+La configurazione [CI/CD Production Pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) definisce il trigger che avvierà la pipeline, i parametri che controllano la distribuzione di produzione e i parametri del test delle prestazioni.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314/?quality=12&learn=on)
 
-### Esecuzione pipeline
+### Esecuzione della pipeline
 
-La [pipeline di produzione CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) viene utilizzata per creare e distribuire il codice attraverso Stage all&#39;ambiente di produzione, riducendo il tempo necessario per il valore.
+La [pipeline di produzione CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) viene utilizzata per generare e distribuire il codice attraverso Stage nell&#39;ambiente di produzione, riducendo il tempo al valore.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317/?quality=12&learn=on)
