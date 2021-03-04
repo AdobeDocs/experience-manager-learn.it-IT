@@ -1,9 +1,9 @@
 ---
-title: Operazioni di base in  AEM Sites
-seo-title: Creare una nuova pagina in  Adobe Experience Manager Sites
-description: Il seguente video fornisce una panoramica delle operazioni di base quando si utilizza l’ambiente di authoring AEM. Usa la console Sites come base.
-seo-description: Il seguente video fornisce una panoramica delle operazioni di base quando si utilizza l’ambiente di authoring AEM. Usa la console Sites come base.
-feature: page-editor, template-editor
+title: Operazioni di base in AEM Sites
+seo-title: Creare una nuova pagina in Adobe Experience Manager Sites
+description: Il video seguente offre una panoramica delle operazioni di base nell’ambiente di authoring di AEM. Usa la console Sites come base.
+seo-description: Il video seguente offre una panoramica delle operazioni di base nell’ambiente di authoring di AEM. Usa la console Sites come base.
+feature: Editor pagina, Modelli modificabili
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
@@ -11,31 +11,34 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4495
 thumbnail: 31784.jpg
+topic: Gestione dei contenuti
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 26760a76cfa523d28399c8e44c8db070cac49496
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 60%
+source-wordcount: '379'
+ht-degree: 59%
 
 ---
 
 
-# Interfaccia utente  AEM Sites e navigazione {#basic-handling-aem-sites}
+# Interfaccia utente e navigazione di AEM Sites {#basic-handling-aem-sites}
 
-Il seguente video fornisce una panoramica delle operazioni di base quando si utilizza l’ambiente di authoring AEM. Usa la console Sites come base.
+Il video seguente offre una panoramica delle operazioni di base nell’ambiente di authoring di AEM. Usa la console Sites come base.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31784?quality=12&learn=on)
 
-In questo video, vengono descritte le seguenti funzionalità:
+In questo video vengono descritte le seguenti funzionalità o funzionalità:
 
 * Interfaccia touch
-* Il pannello di navigazione globale è costituito da:
+* Il pannello di navigazione globale è costituito da :
    * Navigazione: rappresentata da una bussola 
 
       | Console | Scopo |
       |---|---|
-      | Assets | Queste console consentono di importare e gestire risorse digitali come immagini, video, documenti e file audio. Tali risorse possono essere usate in qualsiasi sito Web in esecuzione sulla stessa istanza AEM | Communities | Questa console permette di creare e gestire siti di community a scopo di coinvolgimento e abilitazione degli utenti | Commerce | Questa console consente di gestire prodotti, cataloghi di prodotti e ordini relativi ai siti Commerce |
-      | Frammenti esperienza | Un frammento di esperienza è un’esperienza autonoma che può essere riutilizzata su tutti i canali, supporta le varianti e non richiede di copiare e incollare le esperienze o parti di esse |
+      | Assets | Queste console consentono di importare e gestire le risorse digitali quali immagini, video, documenti e file audio. Queste risorse possono quindi essere utilizzate da qualsiasi sito web in esecuzione sulla stessa istanza di AEM | Communities | Questa console permette di creare e gestire siti di community a scopo di coinvolgimento e abilitazione degli utenti | Commerce | Questa console consente di gestire prodotti, cataloghi di prodotti e ordini relativi ai siti Commerce |
+      | Frammenti di esperienza | Un frammento di esperienza è un’esperienza autonoma che può essere riutilizzata su tutti i canali, supporta le varianti e non richiede di copiare e incollare le esperienze o parti di esse |
       | Forms | Questa console permette di creare, gestire ed elaborare moduli e documenti |
       | Personalizzazione | Questa console fornisce un set di strumenti per la creazione e modifica di contenuti mirati e la presentazione di esperienze personali |
       | Progetti | La console Progetti consente di accedere direttamente ai progetti . I progetti sono dashboard virtuali. Possono essere usati per creare un team di persone con obiettivi comuni e consentire al team di accedere a risorse, flussi di lavoro e attività |
@@ -43,12 +46,12 @@ In questo video, vengono descritte le seguenti funzionalità:
 
    * Strumenti: rappresentati da un martello
 * Ricerca Omni
-* Switcher di soluzioni
+* Switcher di soluzione
 * Aiuto
 * Notifiche
 * Proprietà utente
 * Selettore della barra
-* AEM della console del sito
+* Visualizzazioni della console del sito AEM
    * Vista a elenco 
    * Vista a colonne
    * Vista a schede
@@ -60,5 +63,5 @@ In questo video, vengono descritte le seguenti funzionalità:
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Modifica della documentazione sul contenuto della pagina](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
+* [Modifica della documentazione del contenuto di una pagina](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
 * [Guida rapida all’authoring delle pagine](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
