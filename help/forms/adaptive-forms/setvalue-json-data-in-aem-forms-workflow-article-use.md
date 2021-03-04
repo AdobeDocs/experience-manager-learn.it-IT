@@ -4,20 +4,17 @@ seo-title: Impostazione del valore di Json Data Element nel flusso di lavoro di 
 description: Poiché in Flusso di lavoro AEM un modulo adattivo viene indirizzato a diversi utenti, è necessario nascondere o disattivare alcuni campi o pannelli in base alla persona che sta esaminando il modulo. Per soddisfare questi casi d’uso, in genere viene impostato un valore di un campo nascosto. In base al valore delle regole business di questo campo nascosto può essere creato per nascondere/disabilitare pannelli o campi appropriati.
 seo-description: Poiché in Flusso di lavoro AEM un modulo adattivo viene indirizzato a diversi utenti, è necessario nascondere o disattivare alcuni campi o pannelli in base alla persona che sta esaminando il modulo. Per soddisfare questi casi d’uso, in genere viene impostato un valore di un campo nascosto. In base al valore delle regole business di questo campo nascosto può essere creato per nascondere/disabilitare pannelli o campi appropriati.
 uuid: a4ea6aef-a799-49e5-9682-3fa3b7a442fb
-feature: Moduli adattivi
+feature: moduli adattivi, flusso di lavoro
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.4
 discoiquuid: 548fb2ec-cfcf-4fe2-a02a-14f267618d68
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Esperienza
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '764'
 ht-degree: 1%
 
 ---
