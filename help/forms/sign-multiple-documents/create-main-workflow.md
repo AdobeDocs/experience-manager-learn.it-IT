@@ -1,7 +1,7 @@
 ---
 title: Crea flusso di lavoro principale per attivare il processo di firma
-description: Crea flusso di lavoro per memorizzare i moduli per la firma nel database
-feature: adaptive-forms
+description: Crea un flusso di lavoro per memorizzare i moduli per la firma nel database
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,26 +9,29 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 6887.jpg
 kt: 6887
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 0%
+source-wordcount: '167'
+ht-degree: 2%
 
 ---
 
 
 # Crea flusso di lavoro principale
 
-Il flusso di lavoro principale viene attivato quando l&#39;utente invia il modulo iniziale (**RefinanceForm**). Esempio di flusso di lavoro
+Il flusso di lavoro principale viene attivato quando l’utente invia il modulo iniziale (**RefinanceForm**). Il flusso di lavoro seguente
 
 ![flusso di lavoro principale](assets/main-workflow.PNG)
 
-**Store Forms To** Signis è un processo personalizzato.
+**Archiviare i moduli per** firmare è un passaggio del processo personalizzato.
 
-La motivazione per l&#39;implementazione di un processo personalizzato è di estendere un flusso di lavoro AEM. Il codice seguente implementa un passaggio di processo personalizzato. Il codice estrae i nomi dei moduli da firmare e trasmette i dati del modulo inviato al metodo `insertData` nel servizio SignMultipleForms. Il metodo `insertData` inserisce quindi le righe nel database identificato dall&#39;origine dati **aemformstutorial**.
+L’implementazione di un passaggio di processo personalizzato è motivata dall’estensione di un flusso di lavoro AEM. Il codice seguente implementa un passaggio di processo personalizzato. Il codice estrae i nomi dei moduli da firmare e trasmette i dati del modulo inviati al metodo `insertData` nel servizio SignMultipleForms. Il metodo `insertData` inserisce quindi le righe nel database identificato dall&#39;origine dati **aemformstutorial**.
 
-Il codice in questo passaggio del processo personalizzato fa riferimento al servizio `SignMultipleForms`.
+Il codice in questo passaggio del processo personalizzato fa riferimento al servizio `SignMultipleForms` .
 
 
 
@@ -119,7 +122,7 @@ public class StoreFormsToSignWorkflowStep implements WorkflowProcess {
 
 ## Assets
 
-Il flusso di lavoro Sign Multiple Forms utilizzato in questo articolo può essere [scaricato da qui](assets/sign-multiple-forms-workflows.zip)
+Il flusso di lavoro Firma più moduli utilizzato in questo articolo può essere [scaricato da qui](assets/sign-multiple-forms-workflows.zip)
 
 >[!NOTE]
-> Accertatevi di configurare Day CQ Mail Service per inviare la notifica e-mail. Il modello e-mail viene fornito anche nel pacchetto precedente.
+> Assicurati di configurare Day CQ Mail Service per inviare le notifiche via e-mail. Il modello di posta elettronica viene fornito anche nel pacchetto di cui sopra.
