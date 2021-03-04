@@ -3,20 +3,17 @@ title: Aggiunta di elementi al componente gruppo di scelta
 seo-title: Aggiunta di elementi al componente gruppo di scelta
 description: Aggiunta dinamica di elementi al componente gruppo di scelta
 seo-description: Aggiunta dinamica di elementi al componente gruppo di scelta
-feature: Moduli adattivi
+feature: moduli adattivi
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
-topic: Sviluppo
-role: Professionista
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 1%
+source-wordcount: '528'
+ht-degree: 0%
 
 ---
 
