@@ -1,6 +1,6 @@
 ---
-title: Guida introduttiva a AEM headless - GraphQL
-description: Un'esercitazione end-to-end che illustra come creare ed esporre il contenuto utilizzando AEM API GraphQL.
+title: Guida introduttiva di AEM Headless - GraphQL
+description: Un tutorial end-to-end che illustra come creare ed esporre contenuti utilizzando le API GraphQL di AEM.
 sub-product: sites
 topics: headless
 version: cloud-service
@@ -10,41 +10,45 @@ audience: developer
 mini-toc-levels: 1
 kt: 6678
 thumbnail: 328618.jpg
+feature: '"Frammenti di contenuto, API GraphQL"'
+topic: '"Headless, gestione dei contenuti"'
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
 
 
-# Guida introduttiva a AEM headless - GraphQL
+# Guida introduttiva di AEM Headless - GraphQL
 
-Un&#39;esercitazione end-to-end che illustra come creare ed esporre contenuti utilizzando AEM API GraphQL e utilizzati da un&#39;app esterna, in uno scenario CMS headless.
+Un tutorial end-to-end che illustra come creare ed esporre contenuti utilizzando le API GraphQL di AEM e utilizzati da un’app esterna, in uno scenario CMS headless.
 
-Questa esercitazione esplora come AEM GraphQL API e funzionalità headless possono essere utilizzate per fornire energia alle esperienze emerse in un&#39;app esterna.
+Questa esercitazione esplora come le API GraphQL di AEM e le funzionalità headless possono essere utilizzate per sviluppare le esperienze emerse in un’app esterna.
 
 Questa esercitazione tratterà i seguenti argomenti:
 
 * Creare modelli di frammenti di contenuto per modellare i collaboratori in AEM
-* Frammenti di contenuto autore e collaboratore tramite il modello di frammento di contenuto appena creato
-* Scopri in che modo è possibile interrogare i frammenti di contenuto in AEM utilizzando lo strumento di sviluppo GraphiQL integrato.
-* Consumo AEM GraphQL API da un&#39;app WKND GraphQL React di esempio
-* Creazione di modelli di dati avanzati con i riferimenti ai frammenti
+* Creare frammenti di contenuto da collaboratore utilizzando il modello di frammento di contenuto appena creato
+* Scopri come è possibile eseguire query sui frammenti di contenuto in AEM utilizzando lo strumento di sviluppo GraphiQL integrato.
+* Utilizza le API GraphQL di AEM da un’app React WKND GraphQL di esempio
+* Esecuzione di modelli di dati avanzati con riferimenti a frammenti
 
-## GraphQL Overview
+## Panoramica di GraphQL
 
-Il video seguente presenta una panoramica dell’API GraphQL implementata in AEM. L&#39;API GraphQL in AEM è progettata principalmente per distribuire i dati dei frammenti di contenuto alle applicazioni a valle come parte di un&#39;implementazione senza precedenti.
+Il video seguente presenta una panoramica dell’API GraphQL implementata in AEM. L’API GraphQL in AEM è progettata principalmente per distribuire dati di frammento di contenuto alle applicazioni downstream come parte di un’implementazione headless.
 
 >[!VIDEO](https://video.tv.adobe.com/v/328618/?quality=12&learn=on)
 
 ## Cominciamo!
 
-Avviate l&#39;esercitazione AEM GraphQL entrando nel capitolo [Quick Setup](./setup.md)!
+Avvia l&#39;esercitazione AEM GraphQL entrando nel capitolo [Configurazione rapida](./setup.md) .
 
 ## Progetto GitHub
 
-Il codice sorgente e i pacchetti di contenuto sono disponibili nel [AEM Guide - WKND GraphQL GitHub Project](https://github.com/adobe/aem-guides-wknd-graphql).
+Il codice sorgente e i pacchetti di contenuto sono disponibili nel [Progetto GitHub ](https://github.com/adobe/aem-guides-wknd-graphql) Guide AEM - WKND GraphQL.
 
-Se si verifica un problema con l&#39;esercitazione o il codice, lasciare un [problema GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
+Se trovi un problema con l&#39;esercitazione o il codice, lascia un [problema GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
