@@ -1,26 +1,25 @@
 ---
 title: Commenti e annotazioni
-description: Scoprite come usare commenti e annotazioni in AEM per comunicare e collaborare sulle risorse.
+description: Scopri come utilizzare commenti e annotazioni in AEM per comunicare e collaborare sulle risorse.
 sub-product: assets
-feature: null
-topics: authoring, collaboration
-audience: author
-doc-type: feature video
-activity: use
+feature: Collaborazione
 version: cloud-service
 kt: 4541
 thumbnail: 32049.jpg
+topic: Collaborazione
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 0%
+source-wordcount: '42'
+ht-degree: 4%
 
 ---
 
 
 # Commenti e annotazioni
 
-Scoprite come usare commenti e annotazioni in AEM per comunicare e collaborare sulle risorse.
+Scopri come utilizzare commenti e annotazioni in AEM per comunicare e collaborare sulle risorse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32049/?quality=12&learn=on&hidetitle=true)
