@@ -1,64 +1,68 @@
 ---
-title: AEM Esercitazioni senza titolo
-description: Una raccolta di esercitazioni su come utilizzare Adobe Experience Manager come CMS headless.
+title: Tutorial su AEM Headless
+description: Raccolta di esercitazioni sull’utilizzo di Adobe Experience Manager as a Headless CMS.
+feature: '"Frammenti di contenuto, API"'
+topic: '"Headless, gestione dei contenuti"'
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '468'
 ht-degree: 4%
 
 ---
 
 
-# AEM Esercitazioni senza titolo
+# Tutorial su AEM Headless
 
-Adobe Experience Manager offre diverse opzioni per definire endpoint headless e distribuire il contenuto come JSON. Utilizzate le esercitazioni pratiche per scoprire come usare le varie opzioni e scegliere quello che fa al caso vostro.
+Adobe Experience Manager offre diverse opzioni per definire endpoint headless e distribuire il relativo contenuto come JSON. Utilizza i tutorial pratici per scoprire come utilizzare le varie opzioni e scegliere ciò che fa per te.
 
-## Esercitazione sulle API AEM GraphQL
+## Esercitazione sulle API di AEM GraphQL
 
 >[!CAUTION]
 >
-> L&#39;API AEM GraphQL per la distribuzione dei frammenti di contenuto è disponibile su richiesta.
-> Per abilitare l&#39;API per il AEM come programma di Cloud Service, contattate  supporto di Adobe.
+> L’API GraphQL di AEM per la distribuzione di frammenti di contenuto è disponibile su richiesta.
+> Contatta il supporto Adobe per abilitare l’API per il tuo programma AEM as a Cloud Service.
 
-AEM GraphQL API per frammenti di contenuto
-supporta scenari CMS headless in cui le applicazioni client esterne eseguono il rendering delle esperienze utilizzando contenuto gestito in AEM.
+API GraphQL di AEM per frammenti di contenuto
+supporta scenari CMS headless in cui le applicazioni client esterne eseguono il rendering delle esperienze utilizzando contenuti gestiti in AEM.
 
-Una moderna API per la distribuzione dei contenuti è fondamentale per l&#39;efficienza e le prestazioni delle applicazioni frontend basate su JavaScript. L&#39;utilizzo di un&#39;API REST presenta delle problematiche:
+Un’API di distribuzione dei contenuti moderna è fondamentale per l’efficienza e le prestazioni delle applicazioni front-end basate su Javascript. L’utilizzo di un’API REST comporta delle sfide:
 
-* Numero elevato di richieste per il recupero di un oggetto alla volta
-* Spesso il contenuto viene &quot;consegnato in eccesso&quot;, ovvero l&#39;applicazione riceve più di quanto necessario
+* Numerose richieste per il recupero di un oggetto alla volta
+* Spesso il contenuto viene &quot;consegnato in eccesso&quot;, il che significa che l’applicazione riceve più di quanto necessario
 
-Per superare queste sfide, GraphQL fornisce un&#39;API basata su query che consente ai client di eseguire query AEM solo per il contenuto necessario e di ricevere utilizzando una singola chiamata API.
+Per superare queste sfide, GraphQL fornisce un’API basata su query che consente ai clienti di eseguire query su AEM solo per il contenuto necessario e di ricevere utilizzando una singola chiamata API.
 
-* Scoprite come utilizzare AEM GraphQL API nella [Esercitazione iniziale con AEM GraphQL APIs tutorial](./graphql/overview.md)
+* Scopri come utilizzare le API GraphQL di AEM nell’ esercitazione [Guida introduttiva alle API GraphQL di AEM](./graphql/overview.md)
 
-## Esercitazione di autenticazione basata su token
+## Esercitazione sull’autenticazione basata su token
 
-AEM espone una varietà di endpoint HTTP con cui è possibile interagire in modo headless, da GraphQL, AEM Content Services all&#39;API HTTP Assets. Spesso, questi consumatori headless potrebbero dover autenticarsi per AEM per accedere ai contenuti o alle azioni protetti. Per facilitare questa fase, AEM supporta l&#39;autenticazione basata su token delle richieste HTTP da applicazioni, servizi o sistemi esterni.
+AEM espone una varietà di endpoint HTTP con cui è possibile interagire in modo headless, da GraphQL, AEM Content Services all’API HTTP Assets. Spesso, questi consumatori headless possono dover eseguire l’autenticazione in AEM per accedere a contenuti o azioni protetti. Per facilitare questa fase, AEM supporta l’autenticazione basata su token delle richieste HTTP provenienti da applicazioni, servizi o sistemi esterni.
 
-* Scoprite come autenticarsi per AEM tramite HTTP utilizzando i token di accesso in [Autenticazione per AEM come Cloud Service da un&#39;esercitazione di applicazione esterna](./authentication/overview.md)
+* Scopri come eseguire l’autenticazione in AEM tramite HTTP utilizzando i token di accesso in [Autenticazione in AEM as a Cloud Service tramite un’esercitazione su un’applicazione esterna](./authentication/overview.md)
 
 ## Esercitazione su AEM Content Services
 
-AEM Content Services sfrutta AEM pagine tradizionali per comporre endpoint API REST headless, e AEM componenti definiscono, o fanno riferimento, il contenuto da esporre su questi endpoint.
+I Content Services di AEM sfruttano le pagine AEM tradizionali per comporre endpoint API REST headless e i componenti AEM definiscono, o fanno riferimento, i contenuti da esporre su questi endpoint.
 
-AEM Content Services consente le stesse astrazioni di contenuto utilizzate per la creazione di pagine Web in  AEM Sites, per definire il contenuto e gli schemi di queste API HTTP. L&#39;utilizzo di AEM pagine e componenti AEM consente agli esperti di marketing di comporre e aggiornare rapidamente API JSON flessibili in grado di alimentare qualsiasi applicazione.
+AEM Content Services consente di definire il contenuto e gli schemi di queste API HTTP mediante le stesse astrazioni di contenuto utilizzate per la creazione di pagine web in AEM Sites. L’utilizzo di AEM Pages e dei componenti AEM consente agli addetti al marketing di comporre e aggiornare rapidamente API JSON flessibili che possono alimentare qualsiasi applicazione.
 
-* Scoprite come utilizzare AEM Content Services nella [Guida introduttiva a AEM Content Services tutorial](./content-services/overview.md)
+* Scopri come utilizzare i Content Services di AEM nell’ esercitazione [Guida introduttiva ad AEM Content Services](./content-services/overview.md)
 
-## AEM GraphQL e AEM Content Services
+## Confronto tra AEM GraphQL e AEM Content Services
 
-|  | AEM GraphQL API | AEM Content Services |
+|  | API GraphQL di AEM | AEM Content Services |
 |--------------------------------|:-----------------|:---------------------|
-| Definizione dello schema | Modelli di frammenti di contenuto strutturati | Componenti AEM |
+| Definizione dello schema | Modelli per frammenti di contenuto strutturati | Componenti AEM |
 | Contenuto | Frammenti di contenuto | Componenti AEM |
-| Rilevamento dei contenuti | Per query GraphQL | Per AEM pagina |
-| Formato di consegna | GraphQL JSON | AEM ComponentExporter JSON |
+| Ricerca dei contenuti | Per query GraphQL | Per pagina AEM |
+| Formato di consegna | JSON GraphQL | JSON AEM ComponentExporter |
 
-## Altre utili esercitazioni
+## Altre esercitazioni utili
 
-Altre AEM esercitazioni relative ai concetti headless includono:
+Altre esercitazioni di AEM relative a concetti headless includono:
 
 * [Guida introduttiva ad AEM SPA Editor e Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
 * [Guida introduttiva ad AEM SPA Editor e React](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
