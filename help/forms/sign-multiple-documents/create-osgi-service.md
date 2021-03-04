@@ -1,7 +1,7 @@
 ---
 title: Crea servizio OSGi
-description: Creare il servizio OSGi per memorizzare i moduli da firmare
-feature: adaptive-forms
+description: Crea il servizio OSGi per memorizzare i moduli da firmare
+feature: Flusso di lavoro
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,22 +9,25 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 6886.jpg
 kt: 6886
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 0%
+source-wordcount: '356'
+ht-degree: 1%
 
 ---
 
 
 # Crea servizio OSGi
 
-Il codice seguente è stato scritto per memorizzare i moduli da firmare. Ciascun modulo da firmare è associato a un GUID univoco e a un ID cliente. È quindi possibile associare uno o più moduli allo stesso ID cliente, ma al modulo sarà assegnato un GUID univoco.
+Il codice seguente è stato scritto per memorizzare i moduli che devono essere firmati. Ciascun modulo da firmare è associato a un GUID univoco e a un ID cliente. È quindi possibile associare uno o più moduli allo stesso ID cliente, ma al modulo sarà assegnato un GUID univoco.
 
 ## Interfaccia
 
-Di seguito è riportata la dichiarazione di interfaccia utilizzata
+Di seguito è riportata la dichiarazione dell’interfaccia utilizzata
 
 ```java
 package com.aem.forms.signmultipleforms;
@@ -43,7 +46,7 @@ public interface SignMultipleForms
 
 ## Inserisci dati
 
-Il metodo insert data inserisce una riga nel database identificato dall&#39;origine dati. Ogni riga nel database corrisponde a un modulo ed è identificata in modo univoco da un GUID e un ID cliente. Anche i dati del modulo e l&#39;URL del modulo sono memorizzati in questa riga. La colonna dello stato indica se il modulo è stato compilato e firmato. Il valore 0 indica che il modulo deve ancora essere firmato.
+Il metodo insert data inserisce una riga nel database identificato dall&#39;origine dati. Ogni riga del database corrisponde a un modulo ed è identificata in modo univoco da un GUID e un ID cliente. Anche i dati del modulo e l’URL del modulo sono memorizzati in questa riga. La colonna di stato indica se il modulo è stato compilato e firmato. Il valore 0 indica che il modulo deve ancora essere firmato.
 
 ```java
 @Override
@@ -132,7 +135,7 @@ public String getFormData(String guid) {
 
 ## Aggiorna stato firma
 
-Il completamento della cerimonia di firma attiva un flusso di lavoro AEM associato al modulo. Il primo passaggio del flusso di lavoro è un passaggio di processo che aggiorna lo stato nel database per la riga identificata dal GUID e dall&#39;ID cliente. È inoltre possibile impostare il valore dell&#39;elemento firmato nei dati del modulo su Y per indicare che il modulo è stato compilato e firmato. Il modulo adattivo verrà compilato con questi dati e il valore dell&#39;elemento dati firmato nei dati xml verrà utilizzato per visualizzare il messaggio appropriato. Il codice updateSignatureStatus viene richiamato dal passaggio del processo personalizzato.
+Il completamento della cerimonia di firma attiva un flusso di lavoro AEM associato al modulo. Il primo passaggio nel flusso di lavoro è un passaggio del processo che aggiorna lo stato nel database per la riga identificata dal GUID e dall’ID cliente. Inoltre, è stato impostato il valore dell’elemento firmato nei dati del modulo su Y per indicare che il modulo è stato compilato e firmato. Il modulo adattivo sarà compilato con questi dati e il valore dell’elemento dati firmato nei dati xml sarà utilizzato per visualizzare il messaggio appropriato. Il codice updateSignatureStatus viene richiamato dal passaggio del processo personalizzato.
 
 
 ```java
@@ -164,9 +167,9 @@ public void updateSignatureStatus(String formData, String guid) {
 }
 ```
 
-## Ottenere il modulo successivo da firmare
+## Ottieni il modulo successivo da firmare
 
-Il codice seguente è stato utilizzato per ottenere il modulo successivo per la firma per un dato ID cliente con stato 0. Se la query SQL non restituisce righe, viene restituita la stringa **&quot;AllDone&quot;** che indica che non esistono più moduli per la firma per l&#39;ID cliente specificato.
+Il codice seguente è stato utilizzato per ottenere il modulo successivo per la firma per un dato customerID con lo stato 0. Se la query sql non restituisce alcuna riga, viene restituita la stringa **&quot;AllDone&quot;** che indica che non esistono più moduli per la firma per l&#39;ID cliente specificato.
 
 ```java
 @Override
@@ -206,4 +209,4 @@ public String getNextFormToSign(int customerID) {
 
 ## Assets
 
-Il bundle OSGi con i servizi di cui sopra può essere [scaricato da qui](assets/sign-multiple-forms.jar)
+Il bundle OSGi con i servizi sopra menzionati può essere [scaricato da qui](assets/sign-multiple-forms.jar)
