@@ -1,39 +1,34 @@
 ---
-title: Gestione del colore con AEM elementi multimediali dinamici
-seo-title: Gestione del colore con AEM elementi multimediali dinamici
-description: Questo video illustra la gestione dinamica del colore per i file multimediali e come possono essere utilizzati per fornire funzionalità di anteprima per la correzione del colore in  AEM Assets.
-seo-description: Questo video illustra la gestione dinamica del colore per i file multimediali e come possono essere utilizzati per fornire funzionalità di anteprima per la correzione del colore in  AEM Assets.
-uuid: dc14d067-11a2-4662-acfd-f9f6f1d738ee
-discoiquuid: b2b9ccc9-96b5-4bea-9995-2e6b353c469d
+title: Informazioni sulla gestione del colore con AEM Dynamic Media
+description: Questo video illustra Dynamic Media Color Management e come può essere utilizzato per fornire funzionalità di anteprima per la correzione del colore in per AEM Assets.
 sub-product: dynamic-media
-feature: image-profiles, video-profiles
-topics: images, videos, renditions, authoring, integrations, publishing, metadata
-audience: developer, architect, administrator
-doc-type: technical video
-activity: setup
+feature: Profili immagine, Profili video
 version: 6.3, 6.4, 6.5
+topic: Gestione dei contenuti
+role: Developer (Sviluppatore)
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 13%
+source-wordcount: '330'
+ht-degree: 15%
 
 ---
 
 
-# Gestione del colore con AEM elemento multimediale dinamico{#understanding-color-management-with-aem-dynamic-media}
+# Informazioni sulla gestione del colore con AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
 
-Questo video illustra la gestione dinamica del colore per i file multimediali e come possono essere utilizzati per fornire funzionalità di anteprima per la correzione del colore in  AEM Assets.
+Questo video illustra Dynamic Media Color Management e come può essere utilizzato per fornire funzionalità di anteprima per la correzione del colore in per AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16792/?quality=9&learn=on)
 
 >[!NOTE]
 >
->[Abilitare il ](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) supporto dinamico AEM utilizzare questa funzione.
+>[Abilita Dynamic ](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) Media AEM per utilizzare questa funzione.
 
-Questa funzione è disponibile nelle versioni AEM 6.1 e 6.2 come Feature Pack.
+Questa funzione è disponibile per le versioni AEM 6.1 e 6.2 come Feature Pack.
 
-## Modello XML per il nodo di configurazione Gestione colore {#xml-template-for-the-color-management-configuration-node}
+## Modello XML per il nodo di configurazione della gestione del colore {#xml-template-for-the-color-management-configuration-node}
 
 Di seguito è riportato il modello XML per il nodo di configurazione Gestione colore. Questo modello XML può essere copiato nel progetto di sviluppo AEM e configurato con le configurazioni appropriate per il progetto.
 
@@ -91,43 +86,43 @@ Di seguito è riportato il modello XML per il nodo di configurazione Gestione co
 />
 ```
 
-### Elenco dei profili colore  Adobe predefiniti elencati di seguito{#list-of-default-adobe-color-profiles-are-listed-below}
+### Elenco dei profili di colore predefiniti di Adobe elencati di seguito {#list-of-default-adobe-color-profiles-are-listed-below}
 
 | Nome | Spazio colore | Descrizione |
 | ------------------- | ---------- | ------------------------------------- |
-| AdobeRGB | RGB |  Adobe RGB (1998) |
+| AdobeRGB | RGB | Adobe RGB (1998) |
 | AppleRGB | RGB | Apple RGB |
 | CIERGB | RGB | CIE RGB |
-| CoatedFogra27 | CMYK | Coated FOGRA27 (ISO 12647-2:2004) |
-| CoatedFogra39 | CMYK | Coated FOGRA39 (ISO 12647-2:2004) |
-| CoatedGraCol | CMYK | GRACoL 2006 rivestito (ISO 12647-2:2004) |
+| Fogra27 rivestito | CMYK | Rivestito FOGRA27 (ISO 12647-2:2004) |
+| Fogra39 rivestito | CMYK | Rivestito FOGRA39 (ISO 12647-2:2004) |
+| ColGraCoated | CMYK | GRACoL 2006 rivestito (ISO 12647-2:2004) |
 | ColorMatchRGB | RGB | ColorMatch RGB |
-| EuropeISOCoated | CMYK | Europe ISO Coated FOGRA27 |
+| EuropaISOCoated | CMYK | Europa ISO rivestito FOGRA27 |
 | EuroscaleCoated | CMYK | Euroscale Coated v2 |
-| EuroscaleUnprotected | CMYK | Euroscale non patinata v2 |
-| JapanColorCoated | CMYK | Japan Color 2001 Coated |
+| EuroscaleNon rivestito | CMYK | Euroscala non rivestita v2 |
+| JapanColorCoated | CMYK | Giappone Colore 2001 Rivestito |
 | JapanColorNewspaper | CMYK | Japan Color 2002 Newspaper |
-| JapanColorUnprotected | CMYK | Japan Color 2001 Non patinato |
+| JapanColorNon patinato | CMYK | Giappone Colore 2001 non patinato |
 | JapanColorWebCoated | CMYK | Japan Color 2003 Web Coated |
 | JapanWebCoated | CMYK | Japan Web Coated (Ad) |
 | NewsprintSNAP2007 | CMYK | Newsprint USA (SNAP 2007) |
 | NTSC | RGB | NTSC (1953) |
 | PAL | RGB | PAL/SECAM |
 | ProPhoto | RGB | ProPhoto RGB |
-| PS4Default | CMYK | CMYK predefinito per Photoshop 4 |
-| PS5Default | CMYK | CMYK predefinito per Photoshop 5 |
-| FogliettoCoated | CMYK | U.S. SheetFeed Coated v2 |
-| FogliettoNon patinato | CMYK | U.S. SheetFeed non patinato v2 |
+| PS4Default | CMYK | CMYK predefinito di Photoshop 4 |
+| PS5Default | CMYK | CMYK predefinito di Photoshop 5 |
+| Foglietto | CMYK | U.S. Sheetfed Coated v2 |
+| FogliameNon rivestito | CMYK | U.S. Sheetfeed non rivestito v2 |
 | SMPTE | RGB | SMPTE-C |
 | sRGB | RGB sRGB | IEC61966-2.1 |
-| Fogra29 non patinata | CMYK | FOGRA29 non patinata (ISO 12647-2:2004) |
-| WebCoated | CMYK | Stati Uniti Web Coated (SWOP) v2 |
+| Fogra29 non rivestito | CMYK | FOGRA29 non rivestito (ISO 12647-2:2004) |
+| WebCoated | CMYK | U.S. Web Coated (SWOP) v2 |
 | WebCoatedFogra28 | CMYK | Web Coated FOGRA28 (ISO 12647-2:2004) |
-| WebCoatedGrade3 | CMYK | Carta SWOP 2006 con rivestimento Web 3 |
-| WebCoatedGrade5 | CMYK | Carta SWOP 2006 con rivestimento Web |
-| WebNon patinato | CMYK | U.S. Web non patinata v2 |
-| WideGamutRGB | RGB | Ampia gamma RGB |
+| WebCoatedGrade3 | CMYK | Carta SWOP 2006 di grado 3 rivestita sul web |
+| WebCoatedGrade5 | CMYK | Carta SWOP 2006 di grado 5 rivestita sul web |
+| WebNon rivestito | CMYK | U.S. Web non rivestito v2 |
+| WideGamutRGB | RGB | Wide Gamut RGB |
 
 ## Risorse aggiuntive{#additional-resources}
 
-* [Configurazione della gestione del colore per elementi multimediali dinamici](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
+* [Configurazione della Dynamic Media Color Management](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
