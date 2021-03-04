@@ -1,8 +1,8 @@
 ---
-title: Personalizza assegnazione notifica attività
-description: Includi i dati del modulo nelle e-mail di notifica delle attività assegnate
+title: Personalizzare la notifica di assegnazione attività
+description: Includi i dati del modulo nelle e-mail di notifica delle attività di assegnazione
 sub-product: forms
-feature: workflow
+feature: Flusso di lavoro
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,28 +10,31 @@ activity: setup
 version: 6.4,6.5
 kt: 6279
 thumbnail: KT-6279.jpg
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: c7ae9a51800bb96de24ad577863989053d53da6b
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 0%
+source-wordcount: '450'
+ht-degree: 2%
 
 ---
 
 
-# Personalizza assegnazione notifica attività
+# Personalizzare la notifica di assegnazione attività
 
-Il componente Assegna attività viene utilizzato per assegnare le attività ai partecipanti al flusso di lavoro. Quando un&#39;attività viene assegnata a un utente o a un gruppo, una notifica e-mail viene inviata all&#39;utente o ai membri del gruppo definiti.
-Questa notifica e-mail in genere contiene dati dinamici correlati all&#39;attività. Questi dati dinamici vengono recuperati utilizzando le proprietà dei metadati [generate dal sistema](https://docs.adobe.com/content/help/en/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification).
+Il componente Assegna attività viene utilizzato per assegnare le attività ai partecipanti del flusso di lavoro. Quando un’attività viene assegnata a un utente o a un gruppo, viene inviata una notifica e-mail all’utente o ai membri del gruppo definiti.
+Questa notifica di posta elettronica contiene in genere dati dinamici relativi all&#39;attività. Questi dati dinamici vengono recuperati utilizzando le proprietà dei metadati [generate dal sistema](https://docs.adobe.com/content/help/en/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification).
 Per includere i valori dei dati del modulo inviati nella notifica e-mail, è necessario creare una proprietà di metadati personalizzata e quindi utilizzare queste proprietà di metadati personalizzate nel modello e-mail
 
 
 
 ## Creazione di una proprietà di metadati personalizzata
 
-L&#39;approccio consigliato consiste nel creare un componente OSGI che implementa il metodo getUserMetadata del [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
+L&#39;approccio consigliato è quello di creare un componente OSGI che implementa il metodo getUserMetadata del [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
 
-Il codice seguente crea 4 proprietà di metadati (_firstName_,_lastName_,_reason_ e _amountRequired_) e ne imposta il valore dai dati inviati. Ad esempio, il valore della proprietà di metadati _firstName_ è impostato sul valore dell&#39;elemento denominato firstName dai dati inviati. Il codice seguente presuppone che i dati inviati dal modulo adattivo siano in formato xml. Forms adattivo basato su schema JSON o modello dati modulo genera dati in formato JSON.
+Il codice seguente crea 4 proprietà di metadati (_firstName_,_lastName_,_reason_ e _amountRequested_) e imposta il suo valore dai dati inviati. Ad esempio, il valore della proprietà metadati _firstName_ viene impostato sul valore dell&#39;elemento denominato firstName dai dati inviati. Il codice seguente presuppone che i dati inviati del modulo adattivo siano in formato xml. I moduli adattivi basati sullo schema JSON o sul modello dati del modulo generano dati in formato JSON.
 
 
 ```java
@@ -111,28 +114,28 @@ return customMetadataMap;
 }
 ```
 
-## Utilizzare le proprietà di metadati personalizzate nel modello e-mail di notifica delle attività
+## Utilizzare le proprietà dei metadati personalizzati nel modello e-mail di notifica delle attività
 
-Nel modello e-mail potete includere la proprietà metadata utilizzando la sintassi seguente, dove amountRequest è la proprietà dei metadati `${amountRequested}`
+Nel modello e-mail puoi includere la proprietà dei metadati utilizzando la seguente sintassi dove amountRequested è la proprietà dei metadati `${amountRequested}`
 
-## Configurare Assegna attività per utilizzare la proprietà dei metadati personalizzata
+## Configura l’attività di assegnazione per utilizzare la proprietà dei metadati personalizzati
 
-Dopo che il componente OSGi è stato integrato e distribuito AEM server, configurate il componente Assegna attività come illustrato di seguito per utilizzare le proprietà dei metadati personalizzate.
+Dopo aver generato e distribuito il componente OSGi nel server AEM, configura il componente Assegna attività come mostrato di seguito per utilizzare le proprietà dei metadati personalizzate.
 
 
 ![Notifica attività](assets/task-notification.PNG)
 
-## Abilitare l&#39;uso di proprietà di metadati personalizzate
+## Abilita l’utilizzo di proprietà di metadati personalizzate
 
-![Proprietà metadati personalizzate](assets/custom-meta-data-properties.PNG)
+![Proprietà dei metadati personalizzati](assets/custom-meta-data-properties.PNG)
 
-## Per provare questo sul server
+## Per provare sul server
 
-* [Configura servizio di posta CQ Day](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
-* Associare un ID e-mail valido a [utente amministratore](http://localhost:4502/security/users.html)
-* Scaricare e installare [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) utilizzando [package manager](http://localhost:4502/crx/packmgr/index.jsp)
-* Scaricate [Modulo adattivo](assets/request-travel-authorization.zip) e importate in AEM dai moduli e dai documenti ui](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).[
-* Distribuire e avviare il [pacchetto personalizzato](assets/work-items-user-service-bundle.jar) utilizzando la [console Web](http://localhost:4502/system/console/bundles)
+* [Configura il servizio di posta CQ Day](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
+* Associa un ID e-mail valido a [utente amministratore](http://localhost:4502/security/users.html)
+* Scarica e installa [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) utilizzando [package manager](http://localhost:4502/crx/packmgr/index.jsp)
+* Scarica [Modulo adattivo](assets/request-travel-authorization.zip) e importalo in AEM dall’ [interfaccia utente di moduli e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Distribuisci e avvia il [bundle personalizzato](assets/work-items-user-service-bundle.jar) utilizzando la [console web](http://localhost:4502/system/console/bundles)
 * [Anteprima e invio del modulo](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
 
 Al momento dell’invio del modulo, la notifica di assegnazione dell’attività viene inviata all’ID e-mail associato all’utente amministratore. La schermata seguente mostra un esempio di notifica di assegnazione delle attività
@@ -140,8 +143,8 @@ Al momento dell’invio del modulo, la notifica di assegnazione dell’attività
 ![Notifica](assets/task-nitification-email.png)
 
 >[!NOTE]
->Il modello e-mail per la notifica dell&#39;attività di assegnazione deve essere nel seguente formato.
+>Il modello e-mail per la notifica dell’attività di assegnazione deve essere nel seguente formato.
 >
-> oggetto=Attività assegnata - `${workitem_title}`
+> subject=Task assegnato - `${workitem_title}`
 >
-> message=Stringa che rappresenta il modello e-mail senza nuovi caratteri di riga.
+> message=String che rappresenta il modello e-mail senza nuovi caratteri di riga.
