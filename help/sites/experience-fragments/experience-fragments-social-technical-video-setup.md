@@ -1,42 +1,45 @@
 ---
-title: Impostazione della registrazione tramite social network con AEM frammenti esperienza
-description: I frammenti esperienza consentono agli esperti di marketing di pubblicare esperienze create in AEM alle piattaforme di social media. Il video seguente illustra la configurazione e la configurazione necessarie per pubblicare i frammenti esperienza su Facebook e Pinterest.
-sub-product: siti, servizi di contenuto
-feature: experience-fragments
+title: Configurare la pubblicazione social con frammenti esperienza AEM
+description: I frammenti esperienza consentono agli addetti al marketing di pubblicare esperienze create in AEM su piattaforme di social media. Il video seguente descrive la configurazione e la configurazione necessarie per pubblicare Frammenti esperienza su Facebook e Pinterest.
+sub-product: siti, content-services
+feature: Frammenti di esperienza
 topics: integrations, content-delivery
 audience: administrator, implementer, developer
 doc-type: setup
 activity: use
 version: 6.3, 6.4, 6.5
+topic: Gestione dei contenuti
+role: Amministratore, sviluppatore
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 0%
+source-wordcount: '175'
+ht-degree: 2%
 
 ---
 
 
-# Impostazione della pubblicazione social network con frammenti esperienza {#set-up-social-posting-with-experience-fragments}
+# Configurare la pubblicazione social con frammenti esperienza {#set-up-social-posting-with-experience-fragments}
 
-I frammenti esperienza consentono agli esperti di marketing di pubblicare esperienze create in AEM alle piattaforme di social media. Il video seguente illustra la configurazione e la configurazione necessarie per pubblicare i frammenti esperienza su Facebook e Pinterest.
+I frammenti esperienza consentono agli addetti al marketing di pubblicare esperienze create in AEM su piattaforme di social media. Il video seguente descrive la configurazione e la configurazione necessarie per pubblicare Frammenti esperienza su Facebook e Pinterest.
 
 >[!VIDEO](https://video.tv.adobe.com/v/20592/?quality=9&learn=on)
 
-*[Frammenti]  esperienza - Configurazione e configurazione per il post social su Facebook e Pinterest*
+*[Frammenti esperienza] : configurazione e configurazione per il post social su Facebook e Pinterest*
 
-## Elenco di controllo per la configurazione di frammenti esperienza da pubblicare su Facebook e Pinterest
+## Elenco di controllo per la configurazione dei frammenti esperienza da pubblicare su Facebook e Pinterest
 
-1. L&#39;istanza di AEM Author è in esecuzione su HTTPS
-2. Account Facebook + app sviluppatore Facebook
+1. L’istanza di authoring di AEM è in esecuzione su HTTPS
+2. Account Facebook + app per sviluppatori Facebook
 3. Account Pinterest + App per sviluppatori Pinterest
-4. [!UICONTROL AEM Cloud ] ServicesConfiguration - Facebook
-5. [!UICONTROL AEM Cloud ] ServicesConfiguration - Pinterest
-6. AEM Frammento esperienza con Cloud Services per Facebook + Pinterest
-7. Variazione frammento esperienza tramite il modello Facebook
-8. Variazione dei frammenti esperienza utilizzando il modello Pinterest
+4. [!UICONTROL Configurazione di AEM Cloud ] Services - Facebook
+5. [!UICONTROL Configurazione di AEM Cloud ] Services - Pinterest
+6. Frammento esperienza AEM con Cloud Services per Facebook + Pinterest
+7. Variante di frammento esperienza utilizzando il modello di Facebook
+8. Variazione di frammento esperienza con il modello Pinterest
 
-## URI di reindirizzamento frammento esperienza
+## URI di reindirizzamento per frammento esperienza
 
 Questo URI viene utilizzato per le app Facebook e Pinterest come parte del flusso Oauth.
 
