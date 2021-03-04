@@ -4,20 +4,17 @@ seo-title: Invio di e-mail con invio di moduli adattivi
 description: Invia e-mail di conferma per l’invio di moduli adattivi utilizzando il componente Invia e-mail
 seo-description: Invia e-mail di conferma per l’invio di moduli adattivi utilizzando il componente Invia e-mail
 uuid: 6c9549ba-cb56-4d69-902c-45272a8fd17e
-feature: Moduli adattivi
+feature: moduli adattivi
 topics: authoring, integrations
 audience: developer
 doc-type: article
 activity: use
 discoiquuid: 1187357f-2f36-4a04-b708-44bb9c174fb5
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 1%
+source-wordcount: '233'
+ht-degree: 0%
 
 ---
 
