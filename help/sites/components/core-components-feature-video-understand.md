@@ -1,7 +1,7 @@
 ---
 title: Informazioni sui componenti core
-description: 'AEM Componenti di base è un set di componenti standard da utilizzare con Adobe Experience Manager. Realizzati con  Adobi  best practice e standard, i componenti core forniscono una serie di funzionalità di base per l''implementazione di Siti. '
-feature: core-components
+description: 'I componenti core di AEM sono set di componenti standard da utilizzare con Adobe Experience Manager. Basati sulle best practice e sugli standard di Adobe, i componenti core forniscono un set di funzionalità di base per qualsiasi implementazione di Sites. '
+feature: Componenti core
 topics: authoring
 audience: all
 activity: use
@@ -9,18 +9,21 @@ doc-type: feature video
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4676
 thumbnail: 18926.jpg
+topic: Sviluppo
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 14%
+source-wordcount: '104'
+ht-degree: 16%
 
 ---
 
 
-# Nozioni di base sui componenti{#understanding-core-components}
+# Informazioni sui componenti core{#understanding-core-components}
 
-AEM Componenti di base è un set di componenti standard da utilizzare con Adobe Experience Manager. Realizzati con  Adobi  best practice e standard, i componenti core forniscono una serie di funzionalità di base per l&#39;implementazione di Siti.
+I componenti core di AEM sono set di componenti standard da utilizzare con Adobe Experience Manager. Basati sulle best practice e sugli standard di Adobe, i componenti core forniscono un set di funzionalità di base per qualsiasi implementazione di Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18926/?quality=12&learn=on)
 
@@ -28,6 +31,6 @@ AEM Componenti di base è un set di componenti standard da utilizzare con Adobe 
 
 * [Progetto GitHub](https://github.com/adobe/aem-core-wcm-components)
 * [Esempi di componenti core](https://www.aemcomponents.dev/)
-* [Documentazione sui componenti core](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/introduction.html)
+* [Documentazione sui componenti core](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/introduction.html)
 
 
