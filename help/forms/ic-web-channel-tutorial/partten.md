@@ -1,74 +1,77 @@
 ---
-title: Configurazione del pannello di Outlook per la pensione
-seo-title: Configurazione del pannello di Outlook per la pensione
-description: Questa è la parte 10 di un'esercitazione con più passaggi per creare il primo documento di comunicazione interattiva. In questa parte, configureremo il Pannello di Outlook di pensione aggiungendo testo e componenti grafico.
-seo-description: Questa è la parte 10 di un'esercitazione con più passaggi per creare il primo documento di comunicazione interattiva. In questa parte, configureremo il Pannello di Outlook di pensione aggiungendo testo e componenti grafico.
+title: Configurazione del pannello di Outlook per la ritirata
+seo-title: Configurazione del pannello di Outlook per la ritirata
+description: Questa è la parte 10 di un tutorial in più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte, configureremo il pannello di Outlook Retirement aggiungendo testo e componenti grafico.
+seo-description: Questa è la parte 10 di un tutorial in più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte, configureremo il pannello di Outlook Retirement aggiungendo testo e componenti grafico.
 uuid: 1d5119b5-e797-4bf0-9b10-995b3f051f92
-feature: interactive-communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 2ee2cea2-aefa-4d21-a258-248648f73a68
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: f6a9c0522219614b87c483504c9c64875f2e4286
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 0%
+source-wordcount: '383'
+ht-degree: 1%
 
 ---
 
 
-# Configurazione del pannello di Outlook per la pensione{#configuring-retirement-outlook-panel}
+# Configurazione del pannello di Outlook per la ritirata{#configuring-retirement-outlook-panel}
 
-* Questa è la parte 10 di un&#39;esercitazione con più passaggi per creare il primo documento di comunicazione interattiva. In questa parte, configureremo il Pannello di Outlook di pensione aggiungendo testo e componenti grafico.
+* Questa è la parte 10 di un tutorial in più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte, configureremo il pannello di Outlook Retirement aggiungendo testo e componenti grafico.
 
-* Accedete a  AEM Forms e andate a Adobe Experience Manager > Forms > Forms &amp; Documents.
+* Accedi a AEM Forms e passa a Adobe Experience Manager > Moduli > Moduli e documenti.
 
-* Aprite la cartella 401KStatement.
+* Apri la cartella 401KStatement .
 
-* Aprite il documento 401KStatement in modalità di modifica.
+* Apri il documento 401KStatement in modalità di modifica.
 
-**Configurare l&#39;area di destinazione del pannello sinistro**
+**Configurare l’area di destinazione del pannello sinistro**
 
-* Toccate l’area di destinazione del pannello sinistro sul lato destro e fate clic sull’icona &quot;+&quot; per visualizzare la finestra di dialogo Inserisci componente.
+* Toccare l’area di destinazione del pannello sinistro sul lato destro e fare clic sull’icona &quot;+&quot; per visualizzare la finestra di dialogo inserisci componente.
 
-* Inserisci componente Testo.
+* Inserisci componente Testo .
 
-* Toccate delicatamente il componente di testo appena aggiunto per visualizzare la barra degli strumenti del componente
+* Tocca delicatamente il componente di testo appena aggiunto per visualizzare la barra degli strumenti del componente
 
-* Selezionate l&#39;icona &quot;matita&quot; per modificare il testo predefinito.
+* Seleziona l’icona &quot;matita&quot; per modificare il testo predefinito.
 
-* Sostituire il testo predefinito con &quot;**Prospettive del reddito pensionabile&quot;**
+* Sostituisci il testo predefinito con &quot;**Prospettive sul reddito da pensione&quot;**
 
-**Configurare l&#39;area di destinazione del pannello destro**
+**Configurare l’area di destinazione del pannello destro**
 
-* Toccate l’area di destinazione del pannello destro sul lato destro e fate clic sull’icona &quot;+&quot; per visualizzare la finestra di dialogo Inserisci componente.
+* Toccare l’area di destinazione del pannello destro sul lato destro e fare clic sull’icona &quot;+&quot; per visualizzare la finestra di dialogo inserisci componente.
 
-* Inserisci componente Testo.
+* Inserisci componente Testo .
 
-* Toccate delicatamente il componente di testo appena aggiunto per visualizzare la barra degli strumenti del componente.
+* Tocca delicatamente il componente di testo appena aggiunto per visualizzare la barra degli strumenti del componente.
 
-* Selezionate l&#39;icona &quot;matita&quot; per modificare il testo predefinito.
+* Seleziona l’icona &quot;matita&quot; per modificare il testo predefinito.
 
-* Sostituisce il testo predefinito con &quot;**Stima reddito mensile&quot;**
+* Sostituisci il testo predefinito con &quot;**Reddito mensile stimato&quot;**
 
-## Aggiungi frammento di documento di Outlook reddito pensione {#add-retirement-income-outlook-document-fragment}
+## Aggiungi frammento di documento di Outlook per la pensione {#add-retirement-income-outlook-document-fragment}
 
-* Fai clic sull’icona Risorse e applica il filtro per visualizzare le risorse di tipo &quot;Frammenti documento&quot;. Trascinare il frammento di documento RetirementIncomeOutlook nell&#39;area di destinazione del pannello sinistro.
+* Fai clic sull’icona Risorse e applica il filtro per visualizzare le risorse di tipo &quot;Frammenti documento&quot;. Trascinare il frammento di documento RetirementIncomeOutlook sull&#39;area di destinazione del pannello a sinistra.
 
-* È possibile fare riferimento a [questa pagina](https://helpx.adobe.com/experience-manager/kt/forms/using/interactive-communication-web-channel-aem-forms/9.html) quando si aggiunge un frammento di documento alle aree contenuto.
+* È possibile fare riferimento a [a questa pagina](https://helpx.adobe.com/experience-manager/kt/forms/using/interactive-communication-web-channel-aem-forms/9.html) all&#39;aggiunta di frammenti di documento alle aree contenuto.
 
-## Aggiunta della figura del reddito mensile stimato {#adding-estimated-monthly-income-chart}
+## Aggiunta della tabella del reddito mensile stimato {#adding-estimated-monthly-income-chart}
 
-* Fate clic sull’area di destinazione del pannello destro sul lato destro. Fare clic sull&#39;icona &quot;+&quot; per inserire il componente del grafico. Utilizzeremo un grafico a colonne per visualizzare il reddito mensile stimato. Toccate delicatamente il componente grafico appena inserito. Seleziona l&#39;icona &quot;chiave inglese&quot; per aprire il foglio delle proprietà di configurazione.Configura il grafico con le seguenti proprietà come mostrato nella schermata seguente.
+* Fai clic sull’area di destinazione del pannello destro sul lato destro. Fai clic sull’icona &quot;+&quot; per inserire il componente grafico. Utilizzeremo un grafico a colonne per visualizzare il reddito mensile stimato. Tocca delicatamente il nuovo componente grafico inserito. Seleziona l&#39;icona &quot;Chiave&quot; per aprire il foglio delle proprietà di configurazione.Configura il grafico con le seguenti proprietà come mostrato nella schermata sottostante.
 
-**AEM Forms 6.4 - Configurazione della colonna Stima del reddito mensile**
+**AEM Forms 6.4 - Configurazione della colonna del reddito mensile stimato**
 
 ![form64](assets/estimatedmonthlyincomechart.png)
 
-**AEM Forms 6.5 - Configurazione della colonna Stima del reddito mensile**
+**AEM Forms 6.5 - Configurazione della colonna del reddito mensile stimato Grafico**
 
 ![forms65](assets/estimatedmonthlyincomechart65.PNG)
 
