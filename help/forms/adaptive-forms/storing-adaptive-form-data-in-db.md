@@ -3,16 +3,19 @@ title: Memorizzazione dei dati dei moduli adattivi
 seo-title: Memorizzazione dei dati dei moduli adattivi
 description: Memorizzazione di dati di moduli adattivi in DataBase come parte del flusso di lavoro AEM
 seo-description: Memorizzazione di dati di moduli adattivi in DataBase come parte del flusso di lavoro AEM
-feature: moduli adattivi, flusso di lavoro
+feature: Moduli adattivi, Flusso di lavoro, Modello dati modulo
 topics: integrations
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
