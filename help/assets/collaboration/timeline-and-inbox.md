@@ -1,26 +1,25 @@
 ---
-title: Timeline e Inbox
-description: Acquisisci familiarità con le console Web chiave di  AEM Assets, utilizzate per la collaborazione.
+title: Timeline e casella in entrata
+description: Acquisisci familiarità con le principali console web in AEM Assets utilizzate per la collaborazione.
 sub-product: assets
-feature: inbox
-topics: authoring, collaboration
-audience: author
-doc-type: feature video
-activity: use
+feature: Flusso di lavoro
 version: cloud-service
 kt: 4540
 thumbnail: 32051.jpg
+topic: Collaborazione
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 0%
+source-wordcount: '42'
+ht-degree: 4%
 
 ---
 
 
-# Timeline e Inbox
+# Timeline e casella in entrata
 
-Acquisisci familiarità con le console Web chiave di  AEM Assets, utilizzate per la collaborazione.
+Acquisisci familiarità con le principali console web in AEM Assets utilizzate per la collaborazione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32051/?quality=12&learn=on&hidetitle=true)
