@@ -3,7 +3,7 @@ title: Utilizzo di ldap con Flusso di lavoro di Aem Forms
 seo-title: Utilizzo di ldap con Flusso di lavoro di Aem Forms
 description: Assegnazione dell’attività del flusso di lavoro di AEM Forms al responsabile del mittente
 seo-description: Assegnazione dell’attività del flusso di lavoro di AEM Forms al responsabile del mittente
-feature: moduli adattivi, flusso di lavoro
+feature: Moduli adattivi, Flusso di lavoro
 topics: integrations
 audience: developer
 doc-type: article
@@ -11,10 +11,13 @@ activity: setup
 version: 6.3,6.4,6.5
 uuid: 3e32c3a7-387f-4652-8a94-4e6aa6cd5ab8
 discoiquuid: 671872b3-3de0-40da-9691-f8b7e88a9443
+topic: Sviluppo
+role: Administrator
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
