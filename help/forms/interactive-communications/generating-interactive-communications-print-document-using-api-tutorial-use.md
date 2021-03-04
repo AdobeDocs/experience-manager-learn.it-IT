@@ -3,17 +3,20 @@ title: Generazione del documento di comunicazione interattiva per il canale di s
 seo-title: Generazione del documento di comunicazione interattiva per il canale di stampa tramite il meccanismo di cartelle dell'orologio
 description: Utilizzare la cartella controllata per generare documenti del canale di stampa
 seo-description: Utilizzare la cartella controllata per generare documenti del canale di stampa
-feature: comunicazione interattiva
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 0%
+source-wordcount: '487'
+ht-degree: 1%
 
 ---
 
