@@ -1,37 +1,32 @@
 ---
-title: Utilizzo del lettore video in AEM file multimediali dinamici
-seo-title: Utilizzo del lettore video in AEM file multimediali dinamici
-description: AEM lettore video Dynamic Media utilizzato per basarsi sul runtime di Flash per supportare lo streaming di video adattivi su client e browser desktop è diventato più aggressivo con lo streaming di contenuti basati su Flash. Con l'introduzione di HLS (il protocollo di distribuzione video HTTP Live Streaming di Apple), ora è possibile trasmettere in streaming i contenuti senza ricorrere al flash.
-seo-description: AEM lettore video Dynamic Media utilizzato per basarsi sul runtime di Flash per supportare lo streaming di video adattivi su client e browser desktop è diventato più aggressivo con lo streaming di contenuti basati su Flash. Con l'introduzione di HLS (il protocollo di distribuzione video HTTP Live Streaming di Apple), ora è possibile trasmettere in streaming i contenuti senza ricorrere al flash.
-uuid: aac6f471-4bed-4773-890f-0dd2ceee381d
-discoiquuid: b01cc46b-ef64-4db9-b3b4-52d3f27bddf5
+title: Utilizzo del lettore video in AEM Dynamic Media
+description: Il lettore video AEM Dynamic Media utilizzato per basarsi sul runtime Flash per supportare lo streaming video adattivo su client e browser desktop è diventato più aggressivo nello streaming di contenuti basato su flash. Con l’introduzione di HLS (protocollo di distribuzione video HTTP Live Streaming di Apple), ora è possibile inviare in streaming i contenuti senza ricorrere al flash.
 sub-product: dynamic-media
-feature: media-player, video-profiles
-topics: videos, renditions, authoring, best-practices
-doc-type: feature video
-audience: all
-activity: use
+feature: Profili video
 version: 6.3, 6.4, 6.5
+topic: Gestione dei contenuti
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 5%
+source-wordcount: '221'
+ht-degree: 8%
 
 ---
 
 
-# Utilizzo del lettore video in AEM elemento multimediale dinamico{#using-the-video-player-in-aem-dynamic-media}
+# Utilizzo del lettore video in AEM Dynamic Media{#using-the-video-player-in-aem-dynamic-media}
 
-AEM lettore video Dynamic Media utilizzato per basarsi sul runtime di Flash per supportare lo streaming di video adattivi su client e browser desktop è diventato più aggressivo con lo streaming di contenuti basati su Flash. Con l&#39;introduzione di HLS (il protocollo di distribuzione video HTTP Live Streaming di Apple), ora è possibile trasmettere in streaming i contenuti senza ricorrere al flash.
+Il lettore video AEM Dynamic Media utilizzato per basarsi sul runtime Flash per supportare lo streaming video adattivo su client e browser desktop è diventato più aggressivo nello streaming di contenuti basato su flash. Con l’introduzione di HLS (protocollo di distribuzione video HTTP Live Streaming di Apple), ora è possibile inviare in streaming i contenuti senza ricorrere al flash.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16791/?quality=9&learn=on)
 
-## Panoramica rapida del lettore video non Flash {#quick-look-into-non-flash-video-player}
+## Ricerca rapida sul lettore video non Flash {#quick-look-into-non-flash-video-player}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17429/?quality=9&learn=on)
 
-Il supporto del browser HLS è il seguente: per i browser non supportati, si torna alla distribuzione progressiva dei video
+Il supporto del browser HLS è il seguente: per i browser non supportati si basa sulla distribuzione progressiva dei video
 
 <table> 
  <thead> 
@@ -64,7 +59,7 @@ Il supporto del browser HLS è il seguente: per i browser non supportati, si tor
   </tr>
   <tr> 
    <td> <p>Desktop</p> </td>
-   <td> <p>Effetto cromatura</p> </td>
+   <td> <p>Chrome</p> </td>
    <td> <p>Streaming video HLS</p> </td>
   </tr>
   <tr> 
@@ -74,7 +69,7 @@ Il supporto del browser HLS è il seguente: per i browser non supportati, si tor
   </tr>
   <tr> 
    <td> <p>Mobile</p> </td>
-   <td> <p>Chrome (Android 6 o versione precedente)</p> </td>
+   <td> <p>Chrome (Android 6 o precedente)</p> </td>
    <td> <p>Download progressivo</p> </td>
   </tr>
   <tr> 
