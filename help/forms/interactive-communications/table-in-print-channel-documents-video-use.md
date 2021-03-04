@@ -2,17 +2,20 @@
 title: Utilizzo del componente Tabella nel documento del canale di stampa di AEM Forms
 seo-title: Utilizzo del componente Tabella nel documento del canale di stampa di AEM Forms
 description: Il video seguente illustra i passaggi necessari per utilizzare il componente tabella nelle comunicazioni interattive per la stampa dei documenti del canale.
-feature: comunicazione interattiva
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: technical video
 activity: implement
 version: 6.4,6.5
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 0%
+source-wordcount: '281'
+ht-degree: 2%
 
 ---
 
