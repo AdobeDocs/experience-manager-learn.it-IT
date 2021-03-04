@@ -4,20 +4,17 @@ seo-title: Genera PDF da invio modulo HTML5
 description: Genera PDF dall’invio di moduli per dispositivi mobili
 seo-description: Genera PDF dall’invio di moduli per dispositivi mobili
 uuid: 61f07029-d440-44ec-98bc-f2b5eef92b59
-feature: Forms Mobile
+feature: moduli mobili
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: 816f1a75-6ceb-457b-ba18-daf229eed057
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Esperienza
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
