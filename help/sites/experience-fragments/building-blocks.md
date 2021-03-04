@@ -1,17 +1,17 @@
 ---
-title: Come utilizzare i blocchi predefiniti di frammenti esperienza
-description: I blocchi di generazione sono una sottofunzione dei frammenti esperienza che consente il riutilizzo di componenti creati tra le varianti di frammenti esperienza.
-sub-product: siti, servizi di contenuto
+title: Come utilizzare i blocchi predefiniti dei frammenti esperienza
+description: I blocchi predefiniti sono una sottofunzione dei frammenti esperienza che consente di riutilizzare i componenti creati tra le varianti dei frammenti esperienza.
+sub-product: siti, content-services
 version: cloud-service
-feature: Frammenti esperienza
+feature: Frammenti di esperienza
 topic: Gestione dei contenuti
-level: principiante, intermedio
+level: Principiante, intermedio
 role: Architetto, Sviluppatore, Amministratore, Business Practices
 doc-type: feature video
 kt: 660
 thumbnail: 331786.jpg
 translation-type: tm+mt
-source-git-commit: fcfb33f93e57d40b08e0527d38cfce8553095e65
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 3%
@@ -21,13 +21,13 @@ ht-degree: 3%
 
 # Blocchi predefiniti con frammenti esperienza {#building-blocks}
 
-I blocchi di generazione sono una sottofunzione dei frammenti esperienza. I blocchi predefiniti consentono agli autori di contenuti di riutilizzare i componenti tra diverse varianti di frammenti esperienza.
+I blocchi predefiniti sono una sottofunzione dei frammenti esperienza. I blocchi predefiniti consentono agli autori di contenuti di riutilizzare i componenti tra diverse varianti di Frammenti esperienza.
 
->[!VIDEO](https://video.tv.adobe.com/v/331786/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331786/?quality=12&learn=on)
 
 >[!NOTE]
 >
-> Il modello utilizzato per i frammenti esperienza deve includere **Blocchi predefiniti** come componente consentito.
+> Il modello utilizzato per Frammenti esperienza deve includere **Blocchi predefiniti** come componente consentito.
 
-* I blocchi di generazione semplificano il riutilizzo dei componenti tra diverse varianti.
-* Le modifiche al blocco predefinito principale vengono automaticamente applicate a tutti i riferimenti. Le modifiche al layout del blocco predefinito non vengono modificate.
+* I blocchi predefiniti semplificano il riutilizzo dei componenti tra le diverse varianti.
+* Le modifiche al blocco predefinito principale vengono automaticamente applicate a qualsiasi riferimento. Le modifiche al layout del blocco predefinito non vengono modificate.
