@@ -1,18 +1,21 @@
 ---
-title: Memorizzazione dei dati del modulo adattivo
-seo-title: Memorizzazione dei dati del modulo adattivo
-description: Memorizzazione di dati modulo adattivi in DataBase come parte del flusso di lavoro AEM
-seo-description: Memorizzazione di dati modulo adattivi in DataBase come parte del flusso di lavoro AEM
-feature: adaptive-forms,workflow
+title: Memorizzazione dei dati dei moduli adattivi
+seo-title: Memorizzazione dei dati dei moduli adattivi
+description: Memorizzazione di dati di moduli adattivi in DataBase come parte del flusso di lavoro AEM
+seo-description: Memorizzazione di dati di moduli adattivi in DataBase come parte del flusso di lavoro AEM
+feature: '"Moduli adattivi, Flusso di lavoro, Modello dati modulo"'
 topics: integrations
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: 3d54a8158d0564a3289a2100bbbc59e5ae38f175
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
@@ -20,41 +23,41 @@ ht-degree: 0%
 
 # Memorizzazione di invii di moduli adattivi nel database
 
-Esistono diversi modi per memorizzare i dati del modulo inviato nel database di tua scelta. Un&#39;origine dati JDBC può essere utilizzata per archiviare direttamente i dati nel database. È possibile scrivere un bundle OSGI personalizzato per memorizzare i dati nel database. In questo articolo viene utilizzato un processo personalizzato nel flusso di lavoro AEM per memorizzare i dati.
-Il caso d’uso consiste nell’attivare un flusso di lavoro AEM per l’invio di un modulo adattivo e un passaggio nel flusso di lavoro memorizza i dati inviati nel database.
+Sono disponibili diversi modi per memorizzare i dati del modulo inviati nel database desiderato. Un’origine dati JDBC può essere utilizzata per memorizzare direttamente i dati nel database. È possibile scrivere un bundle OSGI personalizzato per memorizzare i dati nel database. Questo articolo utilizza un passaggio di processo personalizzato nel flusso di lavoro AEM per memorizzare i dati.
+Il caso d’uso è quello di attivare un flusso di lavoro AEM in un modulo adattivo e un passaggio nel flusso di lavoro memorizza i dati inviati nel database.
 
 **Segui i passaggi indicati di seguito per far sì che questo funzioni sul tuo sistema**
 
 * [Scaricare il file Zip ed estrarne il contenuto sul disco rigido](assets/storeafdataindb.zip)
 
-   * Importa StoreAFInDBWorkflow.zip in AEM utilizzando il gestore pacchetti. Il pacchetto include un flusso di lavoro di esempio che memorizza i dati AF in DB. Aprire il modello di workflow. Il flusso di lavoro ha un solo passaggio. Questo passaggio richiama il codice scritto nel bundle per memorizzare i dati AF nel database. Passo un solo argomento al processo. Si tratta del nome del modulo adattivo i cui dati vengono salvati.
-   * Distribuite insertdata.core-0.0.1-SNAPSHOT.jar utilizzando la console Web di Felix. Questo bundle ha il codice per scrivere i dati del modulo inviati nel database
+   * Importa StoreAFInDBWorkflow.zip in AEM utilizzando il gestore di pacchetti. Il pacchetto dispone di un flusso di lavoro di esempio che memorizza i dati AF in DB. Apri il modello di flusso di lavoro . Il flusso di lavoro ha un solo passaggio. Questo passaggio chiama il codice scritto nel bundle per memorizzare i dati AF nel database. Passo un solo argomento al processo. Si tratta del nome del modulo adattivo di cui vengono salvati i dati.
+   * Distribuisci insertdata.core-0.0.1-SNAPSHOT.jar utilizzando la console web Felix. Questo bundle ha il codice per scrivere i dati del modulo inviati al database
 
 * Vai a [ConfigMgr](http://localhost:4502/system/console/configMgr)
 
-   * Cercate &quot;JDBC Connection Pool&quot;. Crea un nuovo pool di connessioni JDBC Day Commons. Specificate le impostazioni specifiche del database.
+   * Cerca &quot;JDBC Connection Pool&quot;. Crea un nuovo pool di connessioni JDBC Day Commons. Specifica le impostazioni specifiche del database.
 
    * ![pool di connessioni jdbc](assets/jdbc-connection-pool.png)
-   * Cercare &quot;**Inserisci dati modulo in DB**&quot;
-   * Specificate le proprietà specifiche del database.
-      * DataSourceName:nome dell&#39;origine dati configurata in precedenza.
+   * Cerca &quot;**Inserisci dati modulo in DB**&quot;
+   * Specifica le proprietà specifiche del database.
+      * DataSourceName:Nome dell&#39;origine dati configurata in precedenza.
       * TableName - Nome della tabella in cui si desidera memorizzare i dati AF
-      * FormName - Nome della colonna in cui inserire il nome del modulo
-      * NomeColonna - Nome colonna per contenere i dati AF
+      * FormName - Nome della colonna che deve contenere il nome del modulo
+      * ColumnName - Nome della colonna in cui sono contenuti i dati AF
 
    ![insertdata](assets/insertdata.PNG)
 
 * Creare un modulo adattivo.
 
-* Associate il modulo adattivo a AEM Workflow (StoreAFValuesinDB) come mostrato nella schermata sottostante.
+* Associa il modulo adattivo a AEM Workflow(StoreAFValuesinDB) come mostrato nella schermata sottostante.
 
-* Accertatevi di specificare &quot;data.xml&quot; nel percorso del file di dati come mostrato nella schermata sottostante
+* Assicurati di specificare &quot;data.xml&quot; nel percorso del file di dati come mostrato nella schermata sottostante
 
-   ![submit](assets/submissionafforms.png)
+   ![presentazione](assets/submissionafforms.png)
 
-* Visualizzare l&#39;anteprima del modulo e inviare
+* Anteprima del modulo e invio
 
-* Se tutto è andato bene, è necessario visualizzare i dati modulo memorizzati nella tabella e nella colonna specificata dall&#39;utente
+* Se tutto è andato bene, è necessario visualizzare i dati del modulo memorizzati nella tabella e nella colonna specificate dall’utente
 
 
 
