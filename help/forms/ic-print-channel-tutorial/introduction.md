@@ -1,40 +1,43 @@
 ---
 title: Creazione della prima comunicazione interattiva per il canale di stampa
 seo-title: Creazione della prima comunicazione interattiva per il canale di stampa
-description: Le comunicazioni interattive sono nuove per  AEM Forms 6.4. Questo documento illustra i passaggi necessari per creare una comunicazione interattiva per il canale di stampa.
-seo-description: Le comunicazioni interattive sono nuove per  AEM Forms 6.4. Questo documento illustra i passaggi necessari per creare una comunicazione interattiva per il canale di stampa.
-feature: interactive-communication
+description: Le comunicazioni interattive sono novità di AEM Forms 6.4. Questo documento illustra i passaggi necessari per creare una comunicazione interattiva per il canale di stampa.
+seo-description: Le comunicazioni interattive sono novità di AEM Forms 6.4. Questo documento illustra i passaggi necessari per creare una comunicazione interattiva per il canale di stampa.
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 2%
+source-wordcount: '229'
+ht-degree: 3%
 
 ---
 
 
 # Creazione della prima comunicazione interattiva per il canale di stampa
 
-Le comunicazioni interattive sono nuove per  AEM Forms 6.4. Questo documento illustra i passaggi necessari per creare una comunicazione interattiva per il canale di stampa.
+Le comunicazioni interattive sono novità di AEM Forms 6.4. Questo documento illustra i passaggi necessari per creare una comunicazione interattiva per il canale di stampa.
 
-Visitate la pagina [ AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) per un collegamento a una dimostrazione live di questa funzionalità.
+Visita la pagina [Esempi di AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0) per un collegamento a una demo in tempo reale di questa funzionalità.
 
 ## Prerequisiti {#prerequistes}
 
-[Scaricate e importate in AEM la risorsa correlata a questa esercitazione utilizzando il gestore pacchetti.](assets/gettingstartedassets.zip)Questo file zip contiene immagini, frammenti di documento, la configurazione delle cartelle esaminate e il file di layout (xdp) come parte del pacchetto delle risorse
+[Scarica e importa la risorsa correlata a questa esercitazione in AEM utilizzando il gestore di pacchetti.](assets/gettingstartedassets.zip)Questo file zip contiene immagini, frammenti di documento, la configurazione delle cartelle controllate e il file di layout (xdp) come parte del pacchetto risorse
 
-[Scaricate e decomprimete il file.](assets/warfileandswaggerfile.zip) Questo file contiene il file SampleRest.war che deve essere distribuito sul file Tomcat e swagger che deve essere utilizzato per configurare l&#39;origine dati.
+[Scarica e decomprimi il file.](assets/warfileandswaggerfile.zip) Questo file contiene il file SampleRest.war che deve essere distribuito su Tomcat e sul file swagger che deve essere utilizzato per configurare la tua origine dati.
 
-Al termine di questa esercitazione, avrete appreso quanto segue:
+Al termine di questa esercitazione, avrai appreso quanto segue:
 
 * Crea origine dati
 * Crea modello dati modulo
-* Creare frammenti di documento
+* Crea frammenti di documento
 * Configurare tabelle e grafici
-* Utilizzare le cartelle esaminate per generare documenti in modalità batch
+* Usa cartelle controllate per generare documenti in modalità batch
 
