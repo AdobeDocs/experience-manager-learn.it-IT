@@ -1,6 +1,6 @@
 ---
 title: Introduzione a OSGi
-description: Introduzione a OSGi, un'architettura modulare dinamica per le applicazioni Java alla base di Adobe Experience Manager.
+description: Introduzione a OSGi, architettura modulare dinamica per le applicazioni Java alla base di Adobe Experience Manager.
 topics: osgi, architecture
 audience: administrator, developer
 doc-type: technical video
@@ -8,17 +8,20 @@ activity: understand
 version: cloud-service
 kt: 4642
 thumbnail: 32031.jpg
+topic: Architettura
+role: Architetto, sviluppatore
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '41'
-ht-degree: 4%
+source-wordcount: '45'
+ht-degree: 6%
 
 ---
 
 
 # Introduzione a [!DNL OSGi] {#introduction-osgi}
 
-Introduzione a [!DNL OSGi], un&#39;architettura modulare dinamica per le applicazioni [!DNL Java] alla base di Adobe Experience Manager.
+Introduzione a [!DNL OSGi], architettura modulare dinamica per le applicazioni [!DNL Java] alla base di Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32031/?quality=12&learn=on)
