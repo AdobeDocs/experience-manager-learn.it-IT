@@ -1,25 +1,24 @@
 ---
-title: Versioni e commenti del file
-description: 'Utilizzando il pannello Collegamento risorse  Adobe, potete accedere ai dettagli dei file per le risorse in  AEM Assets, ad esempio miniature, metadati di base e versioni direttamente dal pannello. Scoprite come creare, visualizzare in anteprima e confrontare le versioni dei file.  '
+title: Controllo delle versioni e commenti dei file
+description: 'Tramite il pannello Adobe Asset Link è possibile accedere ai dettagli dei file delle risorse in AEM Assets, ad esempio miniature, metadati di base e versioni direttamente dal pannello. Scopri come creare, visualizzare in anteprima e confrontare versioni di file.  '
 sub-product: assets
-feature: adobe-asset-link
-topics: authoring, collaboration, operations, sharing, metadata, images, operations
-audience: all
-doc-type: feature video
-activity: use
-version: null
+feature: Adobe Asset Link
+version: 6.4, 6.5, cloud-service
 thumbnail: 34048.jpg
+topic: Gestione dei contenuti
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 0%
+source-wordcount: '89'
+ht-degree: 5%
 
 ---
 
 
-# Versioni file e commenti{#file-versioning-and-comments}
+# Controllo delle versioni e commenti dei file{#file-versioning-and-comments}
 
-Utilizzando il pannello Collegamento risorse  Adobe, potete accedere ai dettagli dei file per le risorse in  AEM Assets, ad esempio miniature, metadati di base e versioni direttamente dal pannello. Scoprite come creare, visualizzare in anteprima e confrontare le versioni dei file.
+Tramite il pannello Adobe Asset Link è possibile accedere ai dettagli dei file delle risorse in AEM Assets, ad esempio miniature, metadati di base e versioni direttamente dal pannello. Scopri come creare, visualizzare in anteprima e confrontare versioni di file.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34048/?quality=12)
