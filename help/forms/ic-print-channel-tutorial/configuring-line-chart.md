@@ -4,7 +4,7 @@ seo-title: Configurazione del grafico a linee per il primo documento di comunica
 description: Questa è la parte 8 dell'esercitazione su più passaggi per creare il primo documento di comunicazione interattivo per il canale di stampa. In questa parte verrà aggiunto un grafico a linee per visualizzare il saldo del conto.
 seo-description: Questa è la parte 8 dell'esercitazione su più passaggi per creare il primo documento di comunicazione interattivo per il canale di stampa. In questa parte verrà aggiunto un grafico a linee per visualizzare il saldo del conto.
 uuid: a4394874-a080-4b6a-a3eb-ffc71504919d
-feature: comunicazione interattiva
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,11 +13,14 @@ version: 6.4,6.5
 discoiquuid: 9110e5c6-50ee-4c3e-a779-b680ff49ef23
 kt: 5993
 thumbnail: 22386.jpg
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 0%
+source-wordcount: '175'
+ht-degree: 2%
 
 ---
 
