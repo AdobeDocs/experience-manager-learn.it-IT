@@ -1,26 +1,25 @@
 ---
 title: Versioni
-description: Scoprite come AEM creare e gestire le versioni delle risorse.
+description: Scopri come AEM crea e gestisce le versioni delle risorse.
 sub-product: assets
-feature: null
-topics: authoring, collaboration
-audience: author
-doc-type: feature video
-activity: use
+feature: Gestione risorse
 version: cloud-service
 kt: 4671
 thumbnail: 32052.jpg
+topic: Gestione dei contenuti
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 8d0e6f2c4c979e6704cae08e766300baf7ef8ad0
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '19'
-ht-degree: 10%
+source-wordcount: '26'
+ht-degree: 15%
 
 ---
 
 
 # Versioni
 
-Scoprite come AEM creare e gestire le versioni delle risorse.
+Scopri come AEM crea e gestisce le versioni delle risorse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32052/?quality=12&learn=on&hidetitle=true)
