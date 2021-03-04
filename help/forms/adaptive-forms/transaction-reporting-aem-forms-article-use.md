@@ -4,17 +4,20 @@ seo-title: Utilizzo del reporting delle transazioni in AEM Forms
 description: I rapporti sulle transazioni in AEM Forms ti consentono di tenere un conteggio di tutte le transazioni effettuate da una data specificata nell’implementazione di AEM Forms.
 seo-description: I rapporti sulle transazioni in AEM Forms ti consentono di tenere un conteggio di tutte le transazioni effettuate da una data specificata nell’implementazione di AEM Forms.
 uuid: e6133f7e-c79c-4006-89e7-3bebf7b8229e
-feature: moduli adattivi
+feature: Moduli adattivi
 topics: developing
 audience: administrator
 doc-type: article
 activity: setup
 version: 6.4.1,6.5
 discoiquuid: 1abdf07a-b9f0-4c58-a1c6-08ae57db2014
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
