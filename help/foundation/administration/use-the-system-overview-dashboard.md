@@ -1,34 +1,36 @@
 ---
-title: Utilizzare il Pannello Panoramica di sistema in AEM
-description: Nelle versioni precedenti degli amministratori AEM era necessario esaminare diverse posizioni per ottenere un quadro completo dell'istanza AEM. La Panoramica del sistema mira a risolvere questo problema fornendo una visualizzazione di alto livello della configurazione, dell'hardware e dello stato dell'istanza AEM, il tutto da un'unica dashboard.
+title: Utilizzare la dashboard Panoramica del sistema in AEM
+description: Nelle versioni precedenti degli amministratori AEM era necessario esaminare diverse posizioni per ottenere un’immagine completa dell’istanza AEM. La Panoramica del sistema mira a risolvere questo problema fornendo una visione di alto livello della configurazione, dell’hardware e dello stato dell’istanza AEM da un’unica dashboard.
 version: 6.4, 6.5
-feature: null
 topics: administration, operations, monitoring
 activity: use
 audience: administrator, architect, developer, implementer
 doc-type: technical video
 contentOwner: dgordon
+topic: Amministrazione
+role: Administrator
+level: Principiante
 translation-type: tm+mt
-source-git-commit: c9a11bcb01a5ec9f7390deab68e6d0e1dec273de
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 0%
+source-wordcount: '145'
+ht-degree: 1%
 
 ---
 
 
-# Utilizzare il Pannello Panoramica di sistema
+# Utilizzare la dashboard Panoramica del sistema
 
-Adobe Experience Manager (AEM) [!UICONTROL System Overview] offre una visualizzazione di alto livello della configurazione, dell&#39;hardware e dello stato dell&#39;istanza AEM da un&#39;unica dashboard.
+La [!UICONTROL Panoramica del sistema] di Adobe Experience Manager (AEM) offre una visualizzazione di alto livello della configurazione, dell&#39;hardware e dello stato dell&#39;istanza AEM da un singolo dashboard.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
 
-1. È possibile accedere alla Panoramica del sistema da: **AEM Start** > **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Panoramica del sistema]**
+1. È possibile accedere alla Panoramica del sistema da: **Avvio AEM** > **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Panoramica del sistema]**
 
    Direttamente a **`<server-host>/libs/granite/operations/content/systemoverview.html`**
 
-1. Per esportare le informazioni contenute in [!UICONTROL System Overview], fare clic sul pulsante [!UICONTROL Download]. Le informazioni sono inoltre esposte tramite il seguente [!DNL REST] endpoint:
-1. Di seguito è riportato un esempio di output del JSON esportato da [!UICONTROL System Overview]:
+1. Per esportare le informazioni contenute in [!UICONTROL Panoramica del sistema], fai clic sul pulsante [!UICONTROL Scarica] . Le informazioni sono inoltre esposte tramite il seguente [!DNL REST] endpoint:
+1. Di seguito è riportato un esempio di output del JSON esportato da [!UICONTROL Panoramica del sistema]:
 
    ```json
    {
