@@ -1,7 +1,7 @@
 ---
-title: Archivia dati modulo
-description: Memorizzare i dati del modulo insieme alla nuova mappa allegati nel database
-feature: adaptive-forms
+title: Archiviare i dati del modulo
+description: Archiviare i dati del modulo insieme alla nuova mappa allegati nel database
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,24 +9,27 @@ activity: implement
 version: 6.3,6.4,6.5
 kt: 6538
 thumbnail: 6538.jpg
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 0%
+source-wordcount: '74'
+ht-degree: 5%
 
 ---
 
-# Archivia dati modulo
+# Archiviare i dati del modulo
 
-Il passo successivo consiste nel creare un servizio per inserire una nuova riga nel database per memorizzare i dati del modulo adattivo e le relative informazioni sugli allegati.
-Nella schermata seguente viene visualizzata una riga nel database.
+Il passaggio successivo consiste nel creare un servizio per inserire una nuova riga nel database per memorizzare i dati del modulo adattivo e le informazioni sugli allegati associati.
+La schermata seguente mostra una riga nel database.
 
 
 ![riga di esempio](assets/sample-row.JPG)
 
 
-Il codice seguente inserisce una nuova riga nel database con i dati appropriati
+Nel codice seguente viene inserita una nuova riga nel database con i dati appropriati
 
 ```java
 public String storeFormData(String formData, String attachmentsInfo, String telephoneNumber) {
