@@ -1,21 +1,18 @@
 ---
 title: Personalizzazione della casella in entrata
 description: 'Personalizzare la casella in entrata aggiungendo nuove colonne in base ai dati del flusso di lavoro '
-feature: Moduli adattivi
+feature: moduli adattivi
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
 kt: 5830
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Esperienza
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 5%
+source-wordcount: '202'
+ht-degree: 3%
 
 ---
 
