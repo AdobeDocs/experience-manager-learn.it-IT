@@ -1,10 +1,12 @@
 ---
 title: Capitolo 2 - Definizione dei modelli di frammento di contenuto dell’evento
+seo-title: Guida introduttiva di AEM Content Services - Capitolo 2 - Definizione dei modelli di frammenti di contenuto evento
 description: Il capitolo 2 dell’esercitazione AEM Headless riguarda l’abilitazione e la definizione dei modelli di frammenti di contenuto utilizzati per definire una struttura dati normalizzata e un’interfaccia di authoring per la creazione di eventi.
+seo-description: Il capitolo 2 dell’esercitazione AEM Headless riguarda l’abilitazione e la definizione dei modelli di frammenti di contenuto utilizzati per definire una struttura dati normalizzata e un’interfaccia di authoring per la creazione di eventi.
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1917'
 ht-degree: 0%
 
 ---
