@@ -1,18 +1,21 @@
 ---
 title: Creazione di un frammento di modulo
-description: AEM moduli offre un pratico meccanismo per creare segmenti di modulo come un pannello o un gruppo di campi una sola volta e riutilizzarli nei diversi moduli adattivi.
-feature: adaptive-forms
+description: AEM forms offre un comodo meccanismo per creare segmenti di modulo una sola volta, ad esempio un pannello o un gruppo di campi, e riutilizzarli nei moduli adattivi.
+feature: Moduli adattivi
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 kt: 5862
 thumbnail: 37325.jpg
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 33%
+source-wordcount: '112'
+ht-degree: 40%
 
 ---
 
@@ -26,9 +29,9 @@ Un frammento è una parte riutilizzabile di un modulo. Ad esempio, un frammento 
 
 
 
-Per ulteriori informazioni, fare riferimento alla [documentazione relativa al modello di modulo adattivo](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html)
+Per ulteriori informazioni, consulta la [documentazione sul modello di modulo adattivo](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html)
 
-Se necessario, è possibile scaricare il frammento [Spouse-details-fragment ](assets/spouse-details-fragment.zip) e importarlo in AEM utilizzando il gestore [package](http://localhost:4502/crx/packmgr/index.jsp)
+Se necessario, puoi scaricare il frammento [Spouse-details-fragment ](assets/spouse-details-fragment.zip) e importarlo in AEM utilizzando il [gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 
 
 
