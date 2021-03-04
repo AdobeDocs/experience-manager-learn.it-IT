@@ -1,7 +1,7 @@
 ---
-title: Caricamento e attivazione di una chiamata Target
-description: Scopri come caricare, trasmettere parametri alla richiesta di pagina e attivare una chiamata Target dalla pagina del sito utilizzando una regola di lancio. Le informazioni di pagina vengono recuperate e trasmesse come parametri utilizzando il Livello dati client del Adobe  che consente di raccogliere e archiviare dati sull'esperienza dei visitatori in una pagina Web e quindi di semplificare l'accesso a tali dati.
-feature: launch, core-components, data-layer
+title: Caricare e attivare una chiamata Target
+description: Scopri come caricare, trasmettere parametri alla richiesta di pagina e attivare una chiamata Target dalla pagina del sito utilizzando una regola Launch. Le informazioni di pagina vengono recuperate e trasmesse come parametri utilizzando Adobe Client Data Layer, che consente di raccogliere e archiviare dati sull’esperienza dei visitatori in una pagina web e quindi di semplificare l’accesso a tali dati.
+feature: Componenti core, Adobe Client Data Layer
 topics: integrations, administration, development
 audience: administrator, developer
 doc-type: technical video
@@ -9,36 +9,39 @@ activity: setup
 version: cloud-service
 kt: 6133
 thumbnail: 41243.jpg
+topic: Integrations (Integrazioni)
+role: Developer (Sviluppatore)
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 9102505bbd826e17bf924cec719d7a430eea5095
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '622'
 ht-degree: 3%
 
 ---
 
 
-# Carica e attiva una chiamata Target {#load-fire-target}
+# Caricare e attivare una chiamata Target {#load-fire-target}
 
-Scopri come caricare, trasmettere parametri alla richiesta di pagina e attivare una chiamata Target dalla pagina del sito utilizzando una regola di lancio. Le informazioni della pagina Web vengono recuperate e trasmesse come parametri utilizzando il Livello dati client del Adobe  che consente di raccogliere e archiviare i dati sull&#39;esperienza dei visitatori in una pagina Web e quindi semplificare l&#39;accesso a tali dati.
+Scopri come caricare, trasmettere parametri alla richiesta di pagina e attivare una chiamata Target dalla pagina del sito utilizzando una regola Launch. Le informazioni della pagina web vengono recuperate e trasmesse come parametri utilizzando Adobe Client Data Layer, che consente di raccogliere e archiviare dati sull’esperienza dei visitatori in una pagina web e quindi di semplificare l’accesso a tali dati.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41243?quality=12&learn=on)
 
-## Regola di caricamento della pagina
+## Regola di caricamento pagina
 
-Il livello dati client del Adobe  è un livello dati basato sull&#39;evento. Quando viene caricato il livello dati AEM pagina, viene attivato un evento `cmp:show` . Nel video, la regola `Launch Library Loaded` viene chiamata utilizzando un evento personalizzato. Di seguito sono riportati gli snippet di codice utilizzati nel video per l&#39;evento personalizzato e per gli elementi di dati.
+Adobe Client Data Layer è un livello dati basato su eventi. Quando viene caricato il livello di dati della pagina AEM, viene attivato un evento `cmp:show` . Nel video, la regola `Launch Library Loaded` viene richiamata utilizzando un evento personalizzato. Di seguito sono riportati gli snippet di codice utilizzati nel video per l’evento personalizzato e per gli elementi di dati.
 
-### Evento pagina personalizzata visualizzata{#page-event}
+### Evento di visualizzazione pagina personalizzata{#page-event}
 
-![Configurazione evento mostrata dalla pagina e codice personalizzato](assets/load-and-fire-target-call.png)
+![Pagina mostrata configurazione evento e codice personalizzato](assets/load-and-fire-target-call.png)
 
-Nella proprietà Launch, aggiungere una nuova **Event** alla **Rule**
+Nella proprietà Launch, aggiungi un nuovo **Evento** alla **Regola**
 
 + __Estensione:__ Core
-+ __Tipo Evento:Codice__ Personalizzato
-+ __Nome:Gestore evento__ Page Show (o qualcosa di descrittivo)
++ __Tipo evento:__ Codice personalizzato
++ __Nome:__ Gestore eventi visualizzazione pagina (o qualcosa di descrittivo)
 
-Toccate il pulsante __Open Editor__ e incollate nello snippet di codice seguente. Questo codice __deve essere aggiunto__ alla __Configurazione evento__ e a un __Azione__ successivo.
+Tocca il pulsante __Apri editor__ e incolla il seguente frammento di codice. Questo codice __deve__ essere aggiunto alla __Configurazione evento__ e a una successiva __Azione__.
 
 ```javascript
 // Define the event handler function
@@ -78,20 +81,20 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Una funzione personalizzata definisce il `pageShownEventHandler` e ascolta gli eventi emessi dai componenti core AEM, ottiene le informazioni pertinenti sul componente core, le crea un pacchetto in un oggetto evento e attiva l&#39;evento Launch con le informazioni sull&#39;evento derivato al suo payload.
+Una funzione personalizzata definisce il `pageShownEventHandler` e ascolta gli eventi emessi dai componenti core di AEM, derivati le informazioni rilevanti dal componente core, le crea in un oggetto evento e attiva l’evento Launch con le informazioni sull’evento derivato al suo payload.
 
-La regola di avvio viene attivata utilizzando la funzione di avvio `trigger(...)` che è __solo__ disponibile dall&#39;interno della definizione dello snippet di codice personalizzato dell&#39;evento di una regola.
+La regola Launch viene attivata utilizzando la funzione di Launch `trigger(...)` che è __solo__ disponibile all&#39;interno della definizione dello snippet di codice personalizzato dell&#39;evento di una regola.
 
-La funzione `trigger(...)` prende un oggetto evento come parametro che a sua volta viene esposto in Launch Data Elements, con un altro nome riservato in Launch denominato `event`. Gli elementi dati in Launch possono ora fare riferimento ai dati di questo oggetto evento dall&#39;oggetto `event` utilizzando una sintassi come `event.component['someKey']`.
+La funzione `trigger(...)` prende un oggetto evento come parametro che a sua volta è esposto in Elementi dati di Launch, con un altro nome riservato in Launch denominato `event`. Gli elementi dati in Launch possono ora fare riferimento ai dati di questo oggetto evento dall&#39;oggetto `event` utilizzando una sintassi come `event.component['someKey']`.
 
-Se `trigger(...)` è utilizzato al di fuori del contesto del tipo di evento Codice personalizzato di un evento (ad esempio, in un&#39;azione), l&#39;errore JavaScript `trigger is undefined` viene generato sul sito Web integrato con la proprietà Launch.
+Se `trigger(...)` viene utilizzato al di fuori del contesto di un tipo di evento Codice personalizzato di un evento (ad esempio, in un&#39;azione), l&#39;errore JavaScript `trigger is undefined` viene generato sul sito Web integrato con la proprietà Launch.
 
 
 ### Elementi dati
 
 ![Elementi dati](assets/data-elements.png)
 
- Adobe Launch Data Elements esegue la mappatura dei dati dall&#39;oggetto evento [attivato nell&#39;evento Page Shown personalizzato](#page-event) alle variabili disponibili in  Adobe Target, tramite il Custom Code Data Element Type dell&#39;estensione Core.
+Gli elementi dati di Adobe Launch mappano i dati dall’oggetto evento [attivato nell’evento personalizzato Page Shown](#page-event) alle variabili disponibili in Adobe Target, tramite il tipo di elemento dati codice personalizzato dell’estensione Core.
 
 #### Elemento dati ID pagina
 
@@ -131,7 +134,7 @@ Questo codice restituisce il titolo della pagina AEM.
 
 ## Risoluzione dei problemi
 
-### Perché le mbox non vengono attivate sulle pagine Web?
+### Perché le mie mbox non vengono lanciate sulle mie pagine web?
 
 #### Messaggio di errore quando il cookie mboxDisable non è impostato
 
@@ -143,8 +146,8 @@ Questo codice restituisce il titolo della pagina AEM.
 
 #### Soluzione
 
-A volte i clienti di Target utilizzano istanze basate su cloud con Target per eseguire il test o per scopi semplici come prova del concetto. Questi domini, e molti altri, fanno parte del Public Suffix List.
-I browser moderni non salvano i cookie se utilizzi questi domini a meno che non personalizzate l&#39;impostazione `cookieDomain` utilizzando `targetGlobalSettings()`.
+I clienti di Target utilizzano talvolta istanze basate su cloud con Target per test o semplici prove di concetto. Questi domini e molti altri sono parte dell’ elenco dei suffissi pubblici .
+I browser moderni non salvano i cookie se si utilizzano questi domini a meno che non si personalizzi l&#39;impostazione `cookieDomain` utilizzando `targetGlobalSettings()`.
 
 ```
 window.targetGlobalSettings = {  
@@ -154,12 +157,12 @@ window.targetGlobalSettings = {
 
 ## Passaggi successivi
 
-+ [Esporta frammento esperienza in  Adobe Target](./export-experience-fragment-target.md)
++ [Esportare frammenti esperienza in Adobe Target](./export-experience-fragment-target.md)
 
 ## Collegamenti di supporto
 
-+ [Documentazione sul livello dei dati del cliente  Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
++ [Documentazione di Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki)
 + [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
 + [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
-+ [Utilizzo della documentazione sul livello dati client e sui componenti core del Adobe ](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/data-layer/overview.html)
-+ [Introduzione ad Adobe Experience Platform Debugger](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html)
++ [Utilizzo della documentazione di Adobe Client Data Layer e Core Components](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/data-layer/overview.html)
++ [Introduzione al debugger di Adobe Experience Platform](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html)
