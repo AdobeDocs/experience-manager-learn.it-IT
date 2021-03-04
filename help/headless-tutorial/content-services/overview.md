@@ -1,20 +1,16 @@
 ---
 title: Guida introduttiva di AEM Headless - Content Services
 description: Un tutorial completo che illustra come creare ed esporre contenuti utilizzando AEM Headless.
-feature: '"Frammenti di contenuto, API"'
-topic: '"Headless, gestione dei contenuti"'
-role: Developer (Sviluppatore)
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 6%
+source-wordcount: '215'
+ht-degree: 9%
 
 ---
 
 
-# Guida introduttiva di AEM Headless - Content Services
+# Guida introduttiva ad AEM Headless - Content Services
 
 Un tutorial end-to-end che illustra come creare ed esporre contenuti utilizzando AEM e utilizzati da un’app mobile nativa, in uno scenario CMS headless.
 
