@@ -1,21 +1,18 @@
 ---
 title: Creare e configurare un modulo adattivo
 description: Crea e configura un modulo adattivo. Il video seguente illustra i passaggi necessari per creare e configurare un modulo adattivo per la generazione automatica del DoR. Il video illustra anche i passaggi necessari per configurare un modulo adattivo per attivare un flusso di lavoro AEM.
-feature: '"Moduli adattivi, Adobe Sign"'
+feature: moduli adattivi
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 38348.jpg
 kt: 6039
-topic: Sviluppo
-role: Professionista
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 1%
+source-wordcount: '86'
+ht-degree: 0%
 
 ---
 
