@@ -1,10 +1,10 @@
 ---
 title: Utilizzo di funzioni e editor di codice
 seo-title: Utilizzo di funzioni e editor di codice
-description: Utilizzo di funzioni ed editor di codice per la creazione di regole aziendali
-seo-description: Utilizzo di funzioni ed editor di codice per la creazione di regole aziendali
+description: Utilizzo di funzioni e editor di codice per creare regole di business
+seo-description: Utilizzo di funzioni e editor di codice per creare regole di business
 uuid: 578e91f8-0d93-4192-b7af-1579df2feaf8
-feature: adaptive-forms
+feature: Moduli adattivi
 topics: authoring
 audience: developer
 doc-type: tutorial
@@ -13,29 +13,32 @@ version: 6.4,6.5
 discoiquuid: f480ef3e-7e38-4a6b-a223-c102787aea7f
 kt: 4270
 thumbnail: 22282.jpg
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 0%
+source-wordcount: '155'
+ht-degree: 2%
 
 ---
 
 
-# Utilizzo di funzioni personalizzate ed editor di codice {#using-functions-and-code-editor}
+# Utilizzo di funzioni personalizzate e editor di codice {#using-functions-and-code-editor}
 
-In questa parte, utilizzeremo funzioni personalizzate e l&#39;editor di codice per creare regole aziendali.
+In questa parte utilizzeremo funzioni personalizzate e l’editor di codice per creare regole di business.
 
-in questa esercitazione è già stata installata la [ClientLib con funzione personalizzata](assets/client-libs-and-logo.zip) precedente.
+hai già installato [ClientLib con funzione personalizzata](assets/client-libs-and-logo.zip) in precedenza in questa esercitazione.
 
-In genere, una libreria client è costituita da file CSS e Javascript. Questa libreria client contiene un file javascript che espone una funzione per la compilazione dei valori degli elenchi a discesa.
+In genere una libreria client è costituita da file CSS e Javascript. Questa libreria client contiene un file javascript che espone una funzione per compilare i valori degli elenchi a discesa.
 
 
-## Funzione per popolare l&#39;elenco a discesa {#function-to-populate-drop-down-list}
+## Funzione per popolare elenco a discesa {#function-to-populate-drop-down-list}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22282?quality=9&learn=on)
 
-### Imposta titolo riepilogo del pannello {#set-the-summary-title-of-panels}
+### Imposta il titolo di riepilogo del pannello {#set-the-summary-title-of-panels}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28387?quality=9&learn=on)
 
@@ -66,12 +69,12 @@ else
   }
 ```
 
-È possibile rimuovere il commento dalla riga 1 per eseguire il debug del codice nella finestra del browser.
+È possibile rimuovere il commento alla riga 1 per eseguire il debug del codice nella finestra del browser.
 
-Linea 4 - Ottenere il pannello corrente
+Linea 4 - Ottieni il pannello corrente
 
-Linea 5 - Convalida del pannello corrente.
+Linea 5 - Convalida il pannello corrente.
 
 Linea 9 - Se non si verificano errori, passare al pannello successivo
 
-Visualizzare l&#39;anteprima del modulo e verificare la nuova funzionalità abilitata.
+Visualizzare l’anteprima del modulo e verificare la nuova funzionalità abilitata.
