@@ -1,6 +1,6 @@
 ---
-title: Introduzione a Author and Publish Tier
-description: Introduzione ai livelli Autore e Pubblica come parte dell’architettura in Adobe Experience Manager.
+title: Introduzione ai livelli Author e Publish
+description: Introduzione ai livelli Author e Publish , parte dell’architettura di Adobe Experience Manager.
 topics: publishing, architecture
 audience: administrator, developer
 doc-type: technical video
@@ -8,17 +8,21 @@ activity: understand
 version: cloud-service
 kt: 4639
 thumbnail: 32033.jpg
+feature: Pubblicazione
+topic: Architettura
+role: Architetto, sviluppatore
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '46'
-ht-degree: 0%
+source-wordcount: '51'
+ht-degree: 3%
 
 ---
 
 
-# Introduzione al livello di creazione e pubblicazione {#introduction-author-publish}
+# Introduzione ai livelli Author e Publish {#introduction-author-publish}
 
-Introduzione ai livelli Autore e Pubblica come parte dell’architettura in Adobe Experience Manager.
+Introduzione ai livelli Author e Publish , parte dell’architettura di Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32033/?quality=12&learn=on)
