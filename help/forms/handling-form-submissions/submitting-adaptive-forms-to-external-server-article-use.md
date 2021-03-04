@@ -1,40 +1,43 @@
 ---
 title: Invio del modulo adattivo al server esterno
 seo-title: Invio del modulo adattivo al server esterno
-description: Invio del modulo adattivo all'endpoint REST in esecuzione su server esterno
-seo-description: Invio del modulo adattivo all'endpoint REST in esecuzione su server esterno
+description: Invio del modulo adattivo all’endpoint REST in esecuzione su server esterno
+seo-description: Invio del modulo adattivo all’endpoint REST in esecuzione su server esterno
 uuid: 1a46e206-6188-4096-816a-d59e9fb43263
-feature: adaptive-forms
+feature: Moduli adattivi
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 9e936885-4e10-4c05-b572-b8da56fcac73
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 0%
+source-wordcount: '367'
+ht-degree: 1%
 
 ---
 
 
 # Invio del modulo adattivo al server esterno {#submitting-adaptive-form-to-external-server}
 
-Utilizzare l&#39;azione Invia a endpoint REST per inviare i dati inviati a un URL REST. L&#39;URL può essere di un server interno (il server su cui viene eseguito il rendering del modulo) o di un server esterno.
+Utilizzare l’azione Invia a endpoint REST per inviare i dati inviati a un URL REST. L’URL può essere di un server interno (il server su cui viene eseguito il rendering del modulo) o di un server esterno.
 
-In genere, i clienti desiderano inviare i dati del modulo a un server esterno per un&#39;ulteriore elaborazione.
+In genere, i clienti desiderano inviare i dati del modulo a un server esterno per un’ulteriore elaborazione.
 
-Per inviare i dati a un server interno, specificare il percorso della risorsa. I dati vengono inviati nel percorso della risorsa. Ad esempio, &lt;/content/restEndPoint> . Per tali richieste di post, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
+Per inviare dati a un server interno, fornisci un percorso della risorsa. I dati vengono inviati nel percorso della risorsa. Ad esempio, &lt;/content/restEndPoint> . Per tali richieste post, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
 
-Per inviare dati a un server esterno, immetti un URL. Il formato dell&#39;URL è <http://host:port/path_to_rest_end_point>. Verificate di aver configurato il percorso per gestire la richiesta di POST in modo anonimo.
+Per inviare dati a un server esterno, specifica un URL. Il formato dell’URL è <http://host:port/path_to_rest_end_point>. Assicurati di aver configurato il percorso per gestire la richiesta POST in modo anonimo.
 
-Per lo scopo di questo articolo, ho scritto un semplice file di guerra che può essere distribuito sulla vostra istanza tomcat. Se il vostro gatto è in esecuzione sulla porta 8080, l&#39;URL POST sarà
+Per lo scopo di questo articolo, ho scritto un semplice file di guerra che può essere distribuito sulla tua istanza tomcat. Supponendo che il tuo gatto sia in esecuzione sulla porta 8080, l&#39;url POST sarà
 
 <http://localhost:8080/AemFormsEnablement/HandleFormSubmission>
 
-quando si configura il modulo adattivo per l&#39;invio a questo endpoint, i dati del modulo e gli eventuali allegati possono essere estratti nel servlet dal seguente codice
+quando si configura il modulo adattivo per l’invio a questo endpoint, i dati del modulo e gli eventuali allegati possono essere estratti nel servlet dal seguente codice
 
 ```java
 System.out.println("form was submitted");
@@ -52,14 +55,14 @@ String data = request.getParameter(paramName);System.out.println("The data  is "
 }
 ```
 
-![form:](assets/formsubmission.gif)
-submitPer eseguire il test sul server, effettuare le seguenti operazioni
+![](assets/formsubmission.gif)
+modulo:Per eseguire il test sul server, effettua le seguenti operazioni
 
-1. Installate Tomcat se non lo avete già. [Le istruzioni per installare tomcat sono disponibili qui](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html)
-1. Scaricate il [file ZIP](assets/aemformsenablement.zip) associato a questo articolo. Decomprimete il file per ottenere il file di guerra.
-1. Distribuire il file di guerra nel server Tomcat.
-1. Crea un semplice modulo adattivo con un componente per l’allegato del file e configurane l’azione di invio come mostrato nella schermata precedente. L&#39;URL del POST è <http://localhost:8080/AemFormsEnablement/HandleFormSubmission>. Se il AEM e il gatto non sono in esecuzione su localhost, modificare l&#39;URL di conseguenza.
-1. Per abilitare l&#39;invio di dati del modulo multiparte a tomcat, aggiungere l&#39;attributo seguente all&#39;elemento contestuale di &lt;tomcatInstallDir>\conf\context.xml e riavviare il server Tomcat.
+1. Installa Tomcat se non lo hai già. [Le istruzioni per l&#39;installazione di tomcat sono disponibili qui](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html)
+1. Scarica il [file zip](assets/aemformsenablement.zip) associato a questo articolo. Decomprimere il file per ottenere il file WAR.
+1. Distribuisci il file war nel server tomcat.
+1. Crea un modulo adattivo semplice con un componente file allegato e configurane l’azione di invio come mostrato nella schermata precedente. L&#39;URL POST è <http://localhost:8080/AemFormsEnablement/HandleFormSubmission>. Se il tuo AEM e tomcat non sono in esecuzione su localhost, modifica l&#39;URL di conseguenza.
+1. Per abilitare l’invio di dati modulo multiparte a tomcat, aggiungi il seguente attributo all’elemento contestuale di &lt;tomcatInstallDir>\conf\context.xml e riavvia il server Tomcat.
 1. **&lt;context allowCasualMultipartParsing=&quot;true&quot;>**
-1. Visualizzare l’anteprima del modulo adattivo, aggiungere un allegato e inviare il modulo. Controlla se sono presenti messaggi nella finestra della console Tomcat.
+1. Visualizzare in anteprima il modulo adattivo, aggiungere un allegato e inviare. Controlla la finestra della console tomcat per i messaggi.
 
