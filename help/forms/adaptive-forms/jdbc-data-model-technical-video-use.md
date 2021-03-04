@@ -4,21 +4,18 @@ seo-title: Utilizzo di modelli di dati per moduli basati su JDBC con AEM Forms
 description: Questo video illustra come creare un modello dati modulo basato su un’origine dati JDBC, un modulo adattivo basato sul modello dati del modulo e come utilizzare l’operazione "INSERT" utilizzando il modello dati del modulo.
 seo-description: Questo video illustra come creare un modello dati modulo basato su un’origine dati JDBC, un modulo adattivo basato sul modello dati del modulo e come utilizzare l’operazione "INSERT" utilizzando il modello dati del modulo.
 uuid: 5c664b16-c089-48ad-8bf6-9766d0ddc3c4
-feature: Moduli adattivi
+feature: integrazioni
 topics: form-data-model
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.4,6.5
 discoiquuid: 4e5f947c-b49a-423e-9139-51c0c5648318
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 2%
+source-wordcount: '171'
+ht-degree: 0%
 
 ---
 
