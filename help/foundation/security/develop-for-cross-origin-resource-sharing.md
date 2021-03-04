@@ -3,15 +3,18 @@ title: Sviluppa per CORS (Cross-Origin Resource Sharing) con AEM
 description: Un breve esempio di utilizzo di CORS per accedere al contenuto AEM da un’applicazione web esterna tramite JavaScript lato client.
 version: 6.3, 6,4, 6.5
 sub-product: fondazione, content-services, siti
-feature: null
 topics: security, development, content-delivery
 activity: develop
 audience: developer
 doc-type: tutorial
+topic: Sicurezza
+role: Developer (Sviluppatore)
+level: Principiante
+feature: null
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
