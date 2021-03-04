@@ -1,25 +1,25 @@
 ---
-title: Utilizzo dell’importazione e dell’esportazione di metadati in  AEM Assets
-description: Scopri come importare ed esportare le funzioni di metadati di Adobe Experience Manager Assets. Le funzionalità di importazione ed esportazione consentono agli autori di contenuti di aggiornare in blocco i metadati per le risorse esistenti.
+title: Utilizzo dell’importazione e dell’esportazione di metadati in AEM Assets
+description: Scopri come utilizzare le funzioni di importazione ed esportazione dei metadati di Adobe Experience Manager Assets. Le funzionalità di importazione ed esportazione consentono agli autori di contenuti di aggiornare in blocco i metadati per le risorse esistenti.
 version: 6.3, 6.4, 6.5, cloud-service
-topics: Content Management
+topic: Gestione dei contenuti
 feature: Metadati
 role: Amministratore
 level: Intermedio
 kt: 647, 917
 thumbnail: 22132.jpg
 translation-type: tm+mt
-source-git-commit: 0d012d61b7740e461e641dddd6c5255a022305ea
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 4%
+source-wordcount: '265'
+ht-degree: 5%
 
 ---
 
 
-# Utilizzo dell&#39;importazione e dell&#39;esportazione di metadati in  AEM Assets {#metadata-import-and-export}
+# Utilizzo dell’importazione e dell’esportazione di metadati in AEM Assets {#metadata-import-and-export}
 
-Scopri come importare ed esportare le funzioni di metadati di Adobe Experience Manager Assets. Le funzionalità di importazione ed esportazione consentono agli autori di contenuti di aggiornare in blocco i metadati per le risorse esistenti.
+Scopri come utilizzare le funzioni di importazione ed esportazione dei metadati di Adobe Experience Manager Assets. Le funzionalità di importazione ed esportazione consentono agli autori di contenuti di aggiornare in blocco i metadati per le risorse esistenti.
 
 ## Esportazione metadati {#metadata-export}
 
@@ -31,22 +31,22 @@ Scopri come importare ed esportare le funzioni di metadati di Adobe Experience M
 
 >[!NOTE]
 >
-> Quando preparate un file CSV da importare, è più semplice generare un CSV con l’elenco delle risorse utilizzando la funzione Esportazione metadati. Potete quindi modificare il file CSV generato e importarlo utilizzando la funzione Importa.
+> Durante la preparazione di un file CSV da importare, è più semplice generare un CSV con l’elenco delle risorse utilizzando la funzione Esportazione metadati . Puoi quindi modificare il file CSV generato e importarlo utilizzando la funzione Importa.
 
-## Formato file CSV metadati {#metadata-file-format}
+## Formato del file CSV dei metadati {#metadata-file-format}
 
 ### Prima riga
 
-* La prima riga del file CSV definisce lo schema di metadati.
-* Per impostazione predefinita, la prima colonna è `assetPath`, che contiene il percorso JCR assoluto per una risorsa.
+* La prima riga del file CSV definisce lo schema dei metadati.
+* Per impostazione predefinita, la prima colonna è impostata su `assetPath`, che contiene il percorso JCR assoluto di una risorsa.
 
-* Le colonne successive nella prima riga indicano le altre proprietà di metadati di una risorsa.
+* Le colonne successive nella prima riga indicano altre proprietà di metadati di una risorsa.
    * Esempio : `dc:title, dc:description, jcr:title`
 
-* Formato proprietà valore singolo
+* Formato proprietà a valore singolo
 
    * `<metadata property name> {{<property type}}`
-   * Se il tipo di proprietà non è specificato, per impostazione predefinita è Stringa.
+   * Se il tipo di proprietà non è specificato, viene impostato automaticamente su String.
    * Esempio: `dc:title {{String}}`
 
 * Il nome della proprietà fa distinzione tra maiuscole e minuscole
@@ -61,4 +61,4 @@ Scopri come importare ed esportare le funzioni di metadati di Adobe Experience M
 ### Seconda riga a N righe
 
 * La prima colonna contiene il percorso JCR assoluto di una risorsa. Ad esempio: /content/dam/asset1.jpg
-* La proprietà dei metadati per una risorsa potrebbe presentare valori mancanti nel file CSV. Le proprietà di metadati mancanti per quella particolare risorsa non vengono aggiornate.
+* Nel file CSV potrebbe mancare il valore della proprietà metadati per una risorsa. Le proprietà di metadati mancanti per quella particolare risorsa non vengono aggiornate.
