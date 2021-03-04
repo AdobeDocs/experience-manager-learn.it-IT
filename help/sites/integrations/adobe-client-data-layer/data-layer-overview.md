@@ -1,7 +1,7 @@
 ---
-title: Utilizzo del livello dati client del Adobe  con AEM componenti core
-description: Il  Adobe Client Data Layer introduce un metodo standard per raccogliere e archiviare dati su un'esperienza visitatore in una pagina Web e semplificare l'accesso a tali dati. Il livello dati client del Adobe  è agnostico della piattaforma, ma è completamente integrato nei componenti core per l'utilizzo con AEM.
-feature: core-component
+title: Utilizzo di Adobe Client Data Layer con i componenti core di AEM
+description: Adobe Client Data Layer introduce un metodo standard per raccogliere e memorizzare dati sull’esperienza di un visitatore su una pagina web e semplificarne l’accesso. Adobe Client Data Layer è indipendente dalla piattaforma, ma è completamente integrato nei componenti core per l’utilizzo con AEM.
+feature: componente principale
 topics: integrations
 audience: developer
 doc-type: feature video
@@ -9,45 +9,48 @@ activity: use
 version: cloud-service
 kt: 6261
 thumbnail: 41195.jpg
+topic: Integrations (Integrazioni)
+role: Developer (Sviluppatore)
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '792'
 ht-degree: 1%
 
 ---
 
 
-# Utilizzo del livello dati client del Adobe  con AEM componenti core {#overview}
+# Utilizzo di Adobe Client Data Layer con i componenti core di AEM {#overview}
 
-Il  Adobe Client Data Layer introduce un metodo standard per raccogliere e archiviare dati su un&#39;esperienza visitatore in una pagina Web e semplificare l&#39;accesso a tali dati. Il livello dati client del Adobe  è agnostico della piattaforma, ma è completamente integrato nei componenti core per l&#39;utilizzo con AEM.
+Adobe Client Data Layer introduce un metodo standard per raccogliere e memorizzare dati sull’esperienza di un visitatore su una pagina web e semplificarne l’accesso. Adobe Client Data Layer è indipendente dalla piattaforma, ma è completamente integrato nei componenti core per l’utilizzo con AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41195?quality=12&learn=on)
 
 >[!NOTE]
 >
-> Vuoi attivare il  Adobe Client Data Layer sul tuo sito AEM? [Consulta le istruzioni qui](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
+> Vuoi abilitare Adobe Client Data Layer sul tuo sito AEM? [Vedi le istruzioni qui](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
 
-## Esplora il livello dati
+## Esplorare il livello dati
 
-È possibile ottenere un&#39;idea delle funzionalità integrate del Livello dati client del Adobe  utilizzando gli strumenti di sviluppo del browser e il sito di riferimento Live [WKND](https://wknd.site/).
+Puoi ottenere un&#39;idea delle funzionalità integrate di Adobe Client Data Layer semplicemente utilizzando gli strumenti per sviluppatori del browser e il [sito di riferimento WKND ](https://wknd.site/) live.
 
 >[!NOTE]
 >
-> Screenshot di seguito scattato dal browser Chrome.
+> Screenshot qui sotto tratto dal browser Chrome.
 
 1. Passa a [https://wknd.site](https://wknd.site)
-1. Aprite gli strumenti per sviluppatori e immettete il comando seguente nella **Console**:
+1. Apri gli strumenti per sviluppatori e immetti il seguente comando nella **Console**:
 
    ```js
    window.adobeDataLayer.getState();
    ```
 
-    Inspect la risposta per visualizzare lo stato corrente del livello dati su un sito AEM. Vengono visualizzate informazioni sulla pagina e sui singoli componenti.
+   Ispeziona la risposta per visualizzare lo stato corrente del livello di dati su un sito AEM. Dovresti visualizzare informazioni sulla pagina e sui singoli componenti.
 
-   ![ risposta livello dati Adobe](assets/data-layer-state-response.png)
+   ![Risposta Adobe Data Layer](assets/data-layer-state-response.png)
 
-1. Inviate un oggetto dati sul livello dati immettendo quanto segue nella console:
+1. Invia un oggetto dati a un livello dati immettendo quanto segue nella console:
 
    ```js
    window.adobeDataLayer.push({
@@ -60,20 +63,20 @@ Il  Adobe Client Data Layer introduce un metodo standard per raccogliere e archi
    });
    ```
 
-1. Eseguire di nuovo il comando `adobeDataLayer.getState()` e trovare la voce per `training-data`.
-1. Quindi aggiungete un parametro di percorso per restituire solo lo stato specifico di un componente:
+1. Esegui di nuovo il comando `adobeDataLayer.getState()` e trova la voce per `training-data`.
+1. Quindi aggiungi un parametro di percorso per restituire solo lo stato specifico di un componente:
 
    ```js
    window.adobeDataLayer.getState('component.training-data');
    ```
 
-   ![Restituire una sola voce di dati componente](assets/return-just-single-component.png)
+   ![Restituire una sola immissione di dati di un componente](assets/return-just-single-component.png)
 
 ## Utilizzo degli eventi
 
-È consigliabile attivare qualsiasi codice personalizzato basato su un evento presente nel livello dati. Quindi, provate a registrare e ascoltare diversi eventi.
+È consigliabile attivare qualsiasi codice personalizzato basato su un evento dal livello dati. Quindi, esplora la registrazione e l&#39;ascolto di eventi diversi.
 
-1. Immettete il seguente metodo helper nella console:
+1. Immetti il seguente metodo helper nella console:
 
    ```js
    function getDataObjectHelper(event, filter) {
@@ -92,13 +95,13 @@ Il  Adobe Client Data Layer introduce un metodo standard per raccogliere e archi
    }
    ```
 
-   Il codice riportato sopra controllerà l&#39;oggetto `event` e utilizzerà il metodo `adobeDataLayer.getState` per ottenere lo stato corrente dell&#39;oggetto che ha attivato l&#39;evento. Il metodo helper quindi ispezionerà i criteri `filter` e solo se il `dataObject` corrente soddisfa il filtro verrà restituito.
+   Il codice riportato sopra controllerà l&#39;oggetto `event` e utilizzerà il metodo `adobeDataLayer.getState` per ottenere lo stato corrente dell&#39;oggetto che ha attivato l&#39;evento. Il metodo helper esaminerà quindi i criteri `filter` e verrà restituito solo se l&#39;elemento `dataObject` corrente soddisfa il filtro.
 
    >[!CAUTION]
    >
-   > Sarà importante **not** aggiornare il browser durante l&#39;esercizio, altrimenti il JavaScript della console verrà perso.
+   > Sarà importante **non** aggiornare il browser durante questo esercizio, altrimenti il JavaScript della console verrà perso.
 
-1. Quindi, immettere un gestore eventi che verrà chiamato quando un componente **Teaser** viene visualizzato all&#39;interno di un **Carosello**.
+1. Quindi, immetti un gestore eventi che verrà chiamato quando un componente **Teaser** viene visualizzato all’interno di un **Carosello**.
 
    ```js
    function teaserShownHandler(event) {
@@ -112,7 +115,7 @@ Il  Adobe Client Data Layer introduce un metodo standard per raccogliere e archi
 
    Il `teaserShownHandler` chiamerà il metodo `getDataObjectHelper` e trasmetterà un filtro di `wknd/components/teaser` come `@type` per filtrare gli eventi attivati da altri componenti.
 
-1. Quindi, inviate un listener di eventi al livello dati per ascoltare l&#39;evento `cmp:show`.
+1. Quindi, invia un listener di eventi sul livello dati per ascoltare l&#39;evento `cmp:show`.
 
    ```js
    window.adobeDataLayer.push(function (dl) {
@@ -120,13 +123,13 @@ Il  Adobe Client Data Layer introduce un metodo standard per raccogliere e archi
    });
    ```
 
-   L&#39;evento `cmp:show` viene attivato da molti componenti diversi, come quando una nuova diapositiva viene visualizzata nel componente **Carosello** o quando viene selezionata una nuova scheda nel componente **Tab**.
+   L’evento `cmp:show` viene attivato da molti componenti diversi, ad esempio quando una nuova diapositiva viene visualizzata nel componente **Carosello** o quando è selezionata una nuova scheda nel componente **Tab** .
 
-1. Passate alla pagina e osservate le istruzioni della console nelle diapositive del carosello:
+1. Nella pagina attiva le diapositive del carosello e osserva le istruzioni della console:
 
    ![Attiva/disattiva il carosello e visualizza il listener di eventi](assets/teaser-console-slides.png)
 
-1. Rimuovere il listener di eventi dal livello dati per interrompere l&#39;ascolto dell&#39;evento `cmp:show`:
+1. Rimuovi il listener di eventi dal livello dati per interrompere l&#39;ascolto dell&#39;evento `cmp:show`:
 
    ```js
    window.adobeDataLayer = window.adobeDataLayer || [];
@@ -135,9 +138,9 @@ Il  Adobe Client Data Layer introduce un metodo standard per raccogliere e archi
    });
    ```
 
-1. Tornate alla pagina e attivate le diapositive del carosello. Osservate che non vengono registrate altre istruzioni e che l&#39;evento non viene ascoltato.
+1. Torna alla pagina e attiva le diapositive del carosello. Osserva che non vengono più registrate istruzioni e che l’evento non viene ascoltato.
 
-1. Quindi, immettere un gestore eventi che verrà chiamato quando viene attivato l&#39;evento pageShow:
+1. Quindi, immetti un gestore di eventi che verrà chiamato quando l&#39;evento di visualizzazione della pagina viene attivato:
 
    ```js
    function pageShownHandler(event) {
@@ -149,9 +152,9 @@ Il  Adobe Client Data Layer introduce un metodo standard per raccogliere e archi
    }
    ```
 
-   Il tipo di risorsa `wknd/components/page` viene utilizzato per filtrare l&#39;evento.
+   Il tipo di risorsa `wknd/components/page` viene utilizzato per filtrare l’evento.
 
-1. Inviate quindi un listener di eventi sul livello dati per ascoltare l&#39;evento `cmp:show`, chiamando `pageShownHandler`.
+1. Quindi, invia un listener di eventi sul livello dati per ascoltare l&#39;evento `cmp:show`, chiamando `pageShownHandler`.
 
    ```js
    window.adobeDataLayer = window.adobeDataLayer || [];
@@ -160,25 +163,25 @@ Il  Adobe Client Data Layer introduce un metodo standard per raccogliere e archi
    });
    ```
 
-1. È consigliabile visualizzare immediatamente un&#39;istruzione console attivata con i dati della pagina:
+1. Dovresti visualizzare immediatamente un’istruzione console attivata con i dati della pagina:
 
-   ![Dati della visualizzazione della pagina](assets/page-show-console-data.png)
+   ![Visualizzazione dei dati della pagina](assets/page-show-console-data.png)
 
-   L&#39;evento `cmp:show` per la pagina viene attivato su ogni caricamento di pagina nella parte superiore della pagina. È possibile chiedere, perché il gestore eventi è stato attivato quando la pagina è già stata caricata?
+   L&#39;evento `cmp:show` per la pagina viene attivato su ogni caricamento di pagina nella parte superiore della pagina. Potresti chiedere, perché il gestore eventi è stato attivato, quando la pagina è chiaramente già stata caricata?
 
-   Si tratta di una delle caratteristiche uniche del Livello dati client  Adobe, in quanto è possibile registrare i listener di eventi **prima** o **dopo** che il Livello dati è stato inizializzato. Questa è una caratteristica fondamentale per evitare le condizioni della razza.
+   Questa è una delle caratteristiche uniche di Adobe Client Data Layer, in quanto puoi registrare i listener di eventi **prima** o **dopo** che il livello dati è stato inizializzato. Questa è una caratteristica fondamentale per evitare le condizioni di razza.
 
-   Il livello dati mantiene un array di coda di tutti gli eventi che si sono verificati in sequenza. Per impostazione predefinita, il livello dati attiva il callback di eventi per gli eventi che si sono verificati in **passato** nonché per gli eventi in **futuro**. È possibile filtrare gli eventi solo in passato o in futuro. [Ulteriori informazioni sono disponibili nella documentazione](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
+   Il livello dati mantiene una matrice di coda di tutti gli eventi che si sono verificati in sequenza. Per impostazione predefinita, il Livello dati attiva i callback degli eventi per gli eventi che si sono verificati in **passato** e per gli eventi in **futuro**. È possibile filtrare gli eventi solo in passato o in futuro. [Ulteriori informazioni sono disponibili nella documentazione](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
 
 
 ## Passaggi successivi
 
-Per informazioni su come utilizzare il livello Dati client del Adobe basato sull&#39;evento per [raccogliere i dati della pagina e inviarli a  Adobe Analytics](../analytics/collect-data-analytics.md), consulta la seguente esercitazione.
+Consulta la seguente esercitazione per scoprire come utilizzare il livello dati client Adobe basato sugli eventi per [raccogliere i dati di pagina e inviarli ad Adobe Analytics](../analytics/collect-data-analytics.md).
 
-In alternativa, scopri come [personalizzare il livello dati client  Adobe con i componenti AEM](./data-layer-customize.md)
+Oppure scopri come [personalizzare Adobe Client Data Layer con i componenti AEM](./data-layer-customize.md)
 
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Documentazione sul livello dei dati del cliente  Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
-* [Utilizzo della documentazione sul livello dati client e sui componenti core del Adobe ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
+* [Documentazione di Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki)
+* [Utilizzo della documentazione di Adobe Client Data Layer e Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
