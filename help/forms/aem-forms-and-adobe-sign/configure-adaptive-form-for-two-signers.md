@@ -1,21 +1,18 @@
 ---
 title: Accordo di noleggio con 2 firmatari
 description: Accordo di noleggio con 2 firmatari. Il video illustra i vari passaggi necessari per configurare un modulo adattivo con 2 firmatari.
-feature: '"Moduli adattivi, Adobe Sign"'
+feature: moduli adattivi
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 39294.jpg
 kt: 6071
-topic: Sviluppo
-role: Administrator
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 7%
+source-wordcount: '59'
+ht-degree: 5%
 
 ---
 
