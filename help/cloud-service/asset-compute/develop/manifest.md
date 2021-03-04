@@ -1,7 +1,7 @@
 ---
-title: 'Configurare manifest.yml di un progetto di Asset compute '
-description: Il file manifest.yml del progetto del Asset compute  descrive tutti i lavoratori del progetto da distribuire.
-feature: asset-compute
+title: Configurare il file manifest.yml di un progetto Asset Compute
+description: Il file manifest.yml del progetto Asset Compute descrive tutti i processi di lavoro di questo progetto da distribuire.
+feature: Microservizi Asset Compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,28 +9,31 @@ audience: developer
 doc-type: tutorial
 kt: 6281
 thumbnail: KT-6281.jpg
+topic: Integrazioni, Sviluppo
+role: Developer (Sviluppatore)
+level: Intermedio, esperienza
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
 
 
-# Configurare manifest.yml
+# Configura il file manifest.yml
 
-La `manifest.yml`, situata nella directory principale del progetto del Asset compute , descrive tutti i lavoratori del progetto da distribuire.
+Il `manifest.yml`, che si trova nella directory principale del progetto Asset Compute, descrive tutti i processi di lavoro di questo progetto da distribuire.
 
 ![manifest.yml](./assets/manifest/manifest.png)
 
-## Definizione di lavoratore predefinita
+## Definizione predefinita del processo di lavoro
 
-I lavoratori sono definiti come voci dell&#39;azione Adobe I/O Runtime in `actions` e sono composti di un insieme di configurazioni.
+I processi di lavoro sono definiti come voci di azione Adobe I/O Runtime in `actions` e comprendono un set di configurazioni.
 
-I lavoratori che accedono ad altre  integrazioni Adobe I/O devono impostare la proprietà `annotations -> require-adobe-auth` su `true`, in quanto [espone le credenziali Adobe I/O  del lavoratore](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) tramite l&#39;oggetto `params.auth`. Questo è in genere richiesto quando il lavoratore chiama  le API Adobe I/O, come le API Adobe Photoshop , Lightroom o Sensei, e può essere attivato per ogni lavoratore.
+I lavoratori che accedono ad altre integrazioni Adobe I/O devono impostare la proprietà `annotations -> require-adobe-auth` su `true` in quanto questo [espone le credenziali Adobe I/O del lavoratore](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) tramite l&#39;oggetto `params.auth` . Questo è tipicamente necessario quando il lavoratore chiama le API di Adobe I/O come Adobe Photoshop, Lightroom o Sensei e può essere attivato per lavoratore.
 
-1. Aprire e rivedere il lavoratore generato automaticamente `manifest.yml`. I progetti che contengono più lavoratori  Asset compute devono definire una voce per ciascun lavoratore nell&#39;array `actions`.
+1. Apri e rivedi il processo di lavoro generato automaticamente `manifest.yml`. I progetti che contengono più processi di lavoro Asset Compute devono definire una voce per ciascun processo di lavoro sotto la matrice `actions`.
 
 ```yml
 packages:
@@ -49,11 +52,11 @@ packages:
 
 ## Definire i limiti
 
-Ogni lavoratore può configurare i [limiti](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) per il proprio contesto di esecuzione in Adobe I/O Runtime. Questi valori devono essere sintonizzati per fornire un dimensionamento ottimale per il lavoratore, in base al volume, al tasso e al tipo di risorse che elaborerà, nonché al tipo di lavoro che esegue.
+Ogni processo di lavoro può configurare i [limiti](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) per il proprio contesto di esecuzione in Adobe I/O Runtime. Questi valori devono essere regolati in modo da fornire un dimensionamento ottimale per il lavoratore, in base al volume, al tasso e al tipo di risorse che elabora, nonché al tipo di lavoro che esegue.
 
-Rivedete [ guida al ridimensionamento del Adobe](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#sizing-workers) prima di impostare i limiti.  lavoratori Asset compute possono esaurire la memoria durante l&#39;elaborazione delle risorse, causando l&#39;arresto dell&#39;esecuzione Adobe I/O Runtime, pertanto accertatevi che il lavoratore sia ridimensionato in modo appropriato per gestire tutte le risorse candidate.
+Rivedi [Guida alle dimensioni di Adobe](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#sizing-workers) prima di impostare i limiti. I processi di lavoro di Asset Compute possono esaurire la memoria durante l’elaborazione delle risorse, causando l’arresto dell’esecuzione di Adobe I/O Runtime, pertanto assicurati che il processo di lavoro sia dimensionato in modo appropriato per gestire tutte le risorse candidate.
 
-1. Aggiungete una sezione `inputs` alla nuova voce di azioni `wknd-asset-compute`. Questo consente di ottimizzare le prestazioni complessive del lavoratore del Asset compute  e l&#39;allocazione delle risorse.
+1. Aggiungi una sezione `inputs` alla nuova voce di azioni `wknd-asset-compute`. Ciò consente di ottimizzare le prestazioni complessive del processo di lavoro Asset Compute e l’allocazione delle risorse.
 
 ```yml
 packages:
@@ -73,9 +76,9 @@ packages:
            
 ```
 
-## manifest.yml completato
+## Il file manifest.yml finito
 
-L&#39;aspetto finale `manifest.yml` è simile a:
+L&#39;aspetto finale `manifest.yml` è il seguente:
 
 ```yml
 packages:
@@ -96,31 +99,31 @@ packages:
 
 ## manifest.yml su Github
 
-L&#39;ultima `.manifest.yml` è disponibile su Github all&#39;indirizzo:
+L’ ultima versione `.manifest.yml` è disponibile su Github all’indirizzo:
 
 + [aem-guides-wknd-asset-compute/manifest.yml](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/manifest.yml)
 
 
 ## Convalida del file manifest.yml
 
-Una volta aggiornato l&#39;Asset compute  generato `manifest.yml`, eseguire lo strumento di sviluppo locale e assicurarsi che venga avviato correttamente con le impostazioni `manifest.yml` aggiornate.
+Una volta aggiornato Asset Compute `manifest.yml` generato, esegui lo strumento di sviluppo locale e assicurati che venga avviato con successo con le impostazioni `manifest.yml` aggiornate.
 
-Per avviare  Strumento di sviluppo Asset compute per il progetto del Asset compute :
+Per avviare Asset Compute Development Tool per il progetto Asset Compute:
 
-1. Aprite una riga di comando nella radice del progetto del Asset compute  (in Codice VS questo può essere aperto direttamente nell&#39;IDE tramite Terminal > Nuovo terminale) ed eseguite il comando:
+1. Apri una riga di comando nella directory principale del progetto Asset Compute (in Codice VS che può essere aperta direttamente nell’IDE tramite Terminal > Nuovo terminale) ed esegui il comando:
 
    ```
    $ aio app run
    ```
 
-1. Lo strumento di sviluppo  Asset compute locale si aprirà nel browser Web predefinito all&#39;indirizzo __http://localhost:9000__.
+1. Lo strumento di sviluppo di Asset Compute si aprirà nel browser Web predefinito all’indirizzo __http://localhost:9000__.
 
-   ![avvio app aio](assets/environment-variables/aio-app-run.png)
+   ![esecuzione di app aio](assets/environment-variables/aio-app-run.png)
 
-1. Osservate l&#39;output della riga di comando e il browser Web per visualizzare i messaggi di errore durante l&#39;inizializzazione dello strumento di sviluppo.
-1. Per arrestare lo strumento di sviluppo  Asset compute, toccare `Ctrl-C` nella finestra che ha eseguito `aio app run` per terminare il processo.
+1. Osserva l’output della riga di comando e il browser Web per verificare la presenza di messaggi di errore durante l’inizializzazione dello strumento di sviluppo.
+1. Per arrestare lo strumento di sviluppo di Asset Compute, tocca `Ctrl-C` nella finestra che ha eseguito `aio app run` per terminare il processo.
 
 ## Risoluzione dei problemi
 
-+ [Rientro YAML errato](../troubleshooting.md#incorrect-yaml-indentation)
-+ [il limite memorySize è impostato su low](../troubleshooting.md#memorysize-limit-is-set-too-low)
++ [rientro YAML errato](../troubleshooting.md#incorrect-yaml-indentation)
++ [il limite memorySize è impostato troppo basso](../troubleshooting.md#memorysize-limit-is-set-too-low)
