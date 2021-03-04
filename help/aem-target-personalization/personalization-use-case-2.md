@@ -1,84 +1,88 @@
 ---
-title: Personalizzazione tramite  Adobe Target
-seo-title: Personalizzazione tramite  Adobe Target
-description: Un'esercitazione completa che mostra come creare e distribuire esperienze personalizzate utilizzando  Adobe Target.
-seo-description: Un'esercitazione completa che mostra come creare e distribuire esperienze personalizzate utilizzando  Adobe Target.
+title: Personalizzazione tramite Adobe Target
+seo-title: Personalizzazione tramite Adobe Target
+description: Un tutorial end-to-end che mostra come creare e distribuire esperienze personalizzate utilizzando Adobe Target.
+seo-description: Un tutorial end-to-end che mostra come creare e distribuire esperienze personalizzate utilizzando Adobe Target.
+feature: Frammenti di esperienza
+topic: Personalizzazione
+role: Developer (Sviluppatore)
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 0443c8ff42e773021ff8b6e969f5c1c31eea3ae4
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 2%
+source-wordcount: '611'
+ht-degree: 3%
 
 ---
 
 
-# Personalizzazione di esperienze con pagine Web complete tramite  Adobe Target
+# Personalizzazione di esperienze di pagine web complete con Adobe Target
 
-Nel capitolo precedente, abbiamo imparato a creare un&#39;attività basata sulla geolocalizzazione in  Adobe Target utilizzando il contenuto creato come frammenti esperienza ed esportato da AEM come offerte HTML.
+Nel capitolo precedente, abbiamo imparato a creare un’attività basata sulla geolocalizzazione all’interno di Adobe Target utilizzando il contenuto creato come Frammenti esperienza ed esportato da AEM come Offerte HTML.
 
-In questo capitolo, esploreremo la creazione di attività per reindirizzare le pagine del sito ospitate su AEM a una nuova pagina utilizzando  Adobe Target.
+In questo capitolo, esploreremo la creazione di attività per reindirizzare le pagine del sito ospitate su AEM a una nuova pagina utilizzando Adobe Target.
 
-## Panoramica scenario
+## Panoramica dello scenario
 
-Il sito WKND ha riprogettato la propria pagina principale e desidera reindirizzare i visitatori della pagina principale corrente alla nuova pagina principale. Allo stesso tempo, puoi comprendere anche in che modo la nuova home page consente di migliorare il coinvolgimento e le entrate degli utenti. In qualità di esperto di marketing, vi è stata assegnata l&#39;attività di creazione di un&#39;attività per reindirizzare i visitatori alla nuova home page. Esaminate la home page del sito WKND e scoprite come creare un&#39;attività utilizzando  Adobe Target.
+Il sito WKND ha riprogettato la propria home page e desidera reindirizzare i visitatori della home page corrente alla nuova home page. Allo stesso tempo, è inoltre importante comprendere in che modo la home page riprogettata contribuisce a migliorare il coinvolgimento e i ricavi degli utenti. In qualità di addetto al marketing, ti è stata assegnata l’attività di creazione di un’attività per reindirizzare i visitatori alla nuova home page. Esploriamo la home page del sito WKND e impariamo a creare un’attività utilizzando Adobe Target.
 
 ### Utenti coinvolti
 
-Per questo esercizio, è necessario coinvolgere i seguenti utenti e per eseguire alcune attività potrebbe essere necessario l&#39;accesso amministrativo.
+Per questo esercizio è necessario coinvolgere i seguenti utenti ed eseguire alcune attività, potrebbe essere necessario un accesso amministrativo.
 
 * **Content Producer/Content Editor**  (Adobe Experience Manager)
-* **Marketing** ( Adobe Target / Gruppo di ottimizzazione)
+* **Addetto al marketing**  (Adobe Target / Team di ottimizzazione)
 
 ### Home page sito WKND
 
-![AEM Target 1](assets/personalization-use-case-2/aem-target-use-case-2.png)
+![Scenario 1 di AEM Target](assets/personalization-use-case-2/aem-target-use-case-2.png)
 
 ### Prerequisiti
 
 * **AEM**
-   * [AEM creare e pubblicare ](./implementation.md#getting-aem) le istanze rispettivamente su localhost 4502 e 4503.
-   * [AEM integrato con  Adobe Target mediante  Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
+   * [AEM crea e pubblica ](./implementation.md#getting-aem) instancerunning rispettivamente su localhost 4502 e 4503.
+   * [AEM integrato con Adobe Target tramite Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
-   * Accesso alle organizzazioni Adobe Experience Cloud - <https://>`<yourcompany>`.experienceecCloud.adobe.com
-   *  Experience Cloud fornito con le seguenti soluzioni
+   * Accesso alle organizzazioni Adobe Experience Cloud - <https://>`<yourcompany>`.experiencecloud.adobe.com
+   * Experience Cloud con le seguenti soluzioni
       * [Adobe Target](https://experiencecloud.adobe.com)
 
-## Attività Editor contenuto
+## Attività dell’editor di contenuti
 
-1. L’addetto al marketing avvia la discussione sulla riprogettazione della pagina principale WKND con AEM Content Editor e descrive dettagliatamente i requisiti.
-   * ***Requisito*** : Riprogettare la home page del sito WKND con un design basato su schede.
-2. In base ai requisiti, AEM Content Editor crea quindi una nuova home page del sito WKND con un design basato su scheda e pubblica la nuova home page.
+1. L’addetto al marketing avvia la discussione sulla riprogettazione della home page WKND con AEM Content Editor e descrive i requisiti.
+   * ***Requisito*** : Consente di riprogettare la home page del sito WKND con un design basato su schede.
+2. In base ai requisiti, AEM Content Editor crea quindi una nuova home page del sito WKND con una progettazione basata su scheda e pubblica la nuova home page.
 
 ## Attività di marketing
 
-1. L&#39;esperto di marketing crea un&#39;attività target A/B con l&#39;offerta di reindirizzamento come Esperienza e il traffico del sito Web al 100% assegnato alla nuova pagina principale con l&#39;aggiunta dell&#39;obiettivo di successo e delle metriche.
-   1. Dalla finestra  Adobe Target, passare alla scheda **Attività**.
-   2. Fare clic sul pulsante **Crea attività** e selezionare il tipo di attività come **A/B Test**
+1. L’addetto al marketing crea un’attività di destinazione A/B con l’offerta di reindirizzamento come esperienza e il 100% di traffico del sito web assegnato alla nuova home page con obiettivo di successo e metriche aggiunte.
+   1. Dalla finestra di Adobe Target, passa alla scheda **Attività** .
+   2. Fai clic sul pulsante **Crea attività** e seleziona il tipo di attività come **Test A/B**
 
-      ![ Adobe Target - Crea attività](assets/personalization-use-case-2/create-ab-activity.png)
-   3. Selezionate il canale **Web** e scegliete **Visual Experience Composer (Compositore esperienza visivo)**.
-   4. Inserite l&#39; **URL attività** e fate clic su **Avanti** per aprire Visual Experience Composer (Compositore esperienza visivo).
-      ![ Adobe Target - Crea attività](assets/personalization-use-case-2/create-activity-ab-name.png)
-   5. Per consentire il caricamento di **Visual Experience Composer**, abilitate **Allow Load Unsafe scripts** nel browser e ricaricate la pagina.
-      ![Attività di targeting delle esperienze](assets/personalization-use-case-1/load-unsafe-scripts.png)
-   6. Notate che la home page del sito WKND si apre nell&#39;editor di Visual Experience Composer (Compositore esperienza visivo).
+      ![Adobe Target - Creare un’attività](assets/personalization-use-case-2/create-ab-activity.png)
+   3. Seleziona il canale **Web** e scegli il **Compositore esperienza visivo**.
+   4. Inserisci l&#39; **URL attività** e fai clic su **Avanti** per aprire il Compositore esperienza visivo.
+      ![Adobe Target - Creare un’attività](assets/personalization-use-case-2/create-activity-ab-name.png)
+   5. Affinché **Compositore esperienza visivo** possa essere caricato, abilita **Consenti il caricamento di script non sicuri** nel browser e ricarica la pagina.
+      ![Attività Targeting esperienze](assets/personalization-use-case-1/load-unsafe-scripts.png)
+   6. Osserva la home page del sito WKND aperta nell’editor del Compositore esperienza visivo.
       ![VEC](assets/personalization-use-case-2/vec.png)
-   7. Passa il puntatore del mouse sull&#39; **Esperienza B** e seleziona Visualizza altre opzioni.
+   7. Passa il puntatore del mouse su **Esperienza B** e seleziona visualizza altre opzioni.
       ![Esperienza B](assets/personalization-use-case-2/redirect-url.png)
-   8. Selezionate l&#39;opzione **Reindirizza a URL** e immettete l&#39;URL per la nuova home page WKND. (http://localhost:4503/content/wknd/en1.html)
+   8. Seleziona l’opzione **Reindirizza all’URL** e immetti l’URL nella nuova home page WKND. (http://localhost:4503/content/wknd/en1.html)
       ![Esperienza B](assets/personalization-use-case-2/redirect-url-2.png)
-   9. **** Salvare le modifiche e continuare con i passaggi successivi della creazione di attività.
-   10. Selezionare il **Metodo di allocazione del traffico** come manuale e assegnare il 100% del traffico a **Esperienza B**.
-      ![Experience B Traffic](assets/personalization-use-case-2/traffic.png)
+   9. **** Salva le modifiche e continua con i passaggi successivi della Creazione di attività.
+   10. Seleziona il **Metodo di allocazione del traffico** come manuale e assegna il 100% del traffico a **Esperienza B**.
+      ![Traffico B](assets/personalization-use-case-2/traffic.png)
    11. Fai clic su **Avanti**.
-   12. Fornire **Metriche obiettivo** per l&#39;attività e salvare e chiudere il test A/B.
-      ![Metrica obiettivo test A/B](assets/personalization-use-case-2/goal-metric.png)
-   13. Immettete un nome (**WKND Home Page Redesign**) per l&#39;attività e salvate le modifiche.
-   14. Dalla schermata Dettagli attività, accertatevi di **Attivare** l&#39;attività.
+   12. Fornisci **Metriche obiettivo** per la tua attività e Salva e chiudi il test A/B.
+      ![Metrica per obiettivo di test A/B](assets/personalization-use-case-2/goal-metric.png)
+   13. Specifica un nome (**WKND Home Page Redesign**) per l&#39;attività e salva le modifiche.
+   14. Dalla schermata dei dettagli dell&#39;attività, assicurati di **Attivare** l&#39;attività.
       ![Attiva attività](assets/personalization-use-case-2/ab-activate.png)
-   15. Passate alla home page WKND (http://localhost:4503/content/wknd/en.html) e verrete reindirizzati alla home page del sito WKND riprogettata (http://localhost:4503/content/wknd/en1.html).
+   15. Passa alla home page WKND (http://localhost:4503/content/wknd/en.html) e verrai reindirizzato alla home page del sito WKND riprogettata (http://localhost:4503/content/wknd/en1.html).
       ![Home page WKND riprogettata](assets/personalization-use-case-2/WKND-home-page-redesign.png)
 
 ## Riepilogo
 
-In questo capitolo, un esperto di marketing è stato in grado di creare un&#39;attività per reindirizzare le pagine del sito ospitate su AEM a una nuova pagina utilizzando  Adobe Target.
+In questo capitolo, un addetto al marketing è stato in grado di creare un’attività per reindirizzare le pagine del sito ospitate su AEM a una nuova pagina utilizzando Adobe Target.
