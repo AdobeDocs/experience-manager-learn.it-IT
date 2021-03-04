@@ -2,15 +2,18 @@
 title: Utilizza oak-run.jar per gestire gli indici
 description: Il comando dell'indice di oak-run.jar consolida una serie di funzioni per gestire gli indici Oak in AEM, dalla raccolta delle statistiche sull'indice, all'esecuzione dei controlli di coerenza dell'indice e alla reindicizzazione degli indici stessi.
 version: 6.4, 6.5
-feature: quercia
+feature: Ricerca
 topics: search
 activity: use
 audience: architect, developer, implementer
 doc-type: technical video
+topic: Spettacolo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
