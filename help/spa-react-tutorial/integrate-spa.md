@@ -1,46 +1,49 @@
 ---
-title: Integrare un SPA | Guida introduttiva all'editor SPA AEM e React
-description: Scoprite come il codice sorgente per un’applicazione a pagina singola (SPA) scritta in React può essere integrato con un progetto Adobe Experience Manager (AEM). Scoprite come utilizzare i moderni strumenti front-end, come un server di sviluppo webpack, per sviluppare rapidamente il SPA rispetto all'API del modello AEM JSON.
+title: Integrare un’applicazione a pagina singola | Guida introduttiva dell’Editor SPA di AEM e React
+description: Scopri come il codice sorgente per un’applicazione a pagina singola scritta in React può essere integrato con un progetto Adobe Experience Manager (AEM). Scopri come utilizzare strumenti front-end moderni, come un server di sviluppo di webpack, per sviluppare rapidamente l’applicazione a pagina singola rispetto all’API del modello JSON di AEM.
 sub-product: sites
-feature: maven-archetype, SPA Editor
+feature: Editor SPA
 topics: development
 version: cloud-service
 activity: develop
 audience: developer
 kt: 4853
 thumbnail: 4853-spa-react.jpg
+topic: SPA
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: ff75a9d10e9d00510e4c49dea0dcc36e68ca46c4
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2104'
+source-wordcount: '2109'
 ht-degree: 1%
 
 ---
 
 
-# Integrare un SPA {#integrate-spa}
+# Integrare un&#39;applicazione a pagina singola {#integrate-spa}
 
-Scoprite come il codice sorgente per un’applicazione a pagina singola (SPA) scritta in React può essere integrato con un progetto Adobe Experience Manager (AEM). Scoprite come utilizzare i moderni strumenti front-end, come un server di sviluppo webpack, per sviluppare rapidamente il SPA rispetto all&#39;API del modello AEM JSON.
+Scopri come il codice sorgente per un’applicazione a pagina singola scritta in React può essere integrato con un progetto Adobe Experience Manager (AEM). Scopri come utilizzare strumenti front-end moderni, come un server di sviluppo di webpack, per sviluppare rapidamente l’applicazione a pagina singola rispetto all’API del modello JSON di AEM.
 
 ## Obiettivo
 
-1. Scoprite come il progetto SPA è integrato con AEM con librerie lato client.
-2. Scoprite come utilizzare un server di sviluppo webpack per lo sviluppo front-end dedicato.
-3. Esplorare l&#39;utilizzo di un file **proxy** e **mock** statico per lo sviluppo rispetto all&#39;API AEM modello JSON
+1. Scopri come il progetto SPA è integrato con AEM con le librerie lato client.
+2. Scopri come utilizzare un server di sviluppo webpack per lo sviluppo front-end dedicato.
+3. Esplorare l&#39;utilizzo di un file **proxy** e di un file statico **mock** per lo sviluppo rispetto all&#39;API del modello JSON di AEM
 
 ## Cosa verrà creato
 
-In questo capitolo verrà aggiunto un semplice componente `Header` al SPA. Nel processo di creazione di questo componente statico `Header` verranno utilizzati diversi approcci per AEM sviluppo SPA.
+Questo capitolo aggiunge un semplice componente `Header` all’applicazione a pagina singola. Durante il processo di creazione di questo componente statico `Header` verranno utilizzati diversi approcci allo sviluppo di AEM SPA.
 
 ![Nuova intestazione in AEM](./assets/integrate-spa/final-header-component.png)
 
-*Il SPA è esteso per aggiungere un  `Header` componente statico*
+*L’applicazione a pagina singola viene estesa per aggiungere un  `Header` componente statico*
 
 ## Prerequisiti
 
-Esaminare le istruzioni e gli strumenti necessari per configurare un ambiente di sviluppo locale [](overview.md#local-dev-environment).
+Rivedi gli strumenti e le istruzioni necessari per configurare un [ambiente di sviluppo locale](overview.md#local-dev-environment).
 
-### Ottenere il codice
+### Ottieni il codice
 
 1. Scarica il punto di partenza per questa esercitazione tramite Git:
 
@@ -50,43 +53,43 @@ Esaminare le istruzioni e gli strumenti necessari per configurare un ambiente di
    $ git checkout React/integrate-spa-start
    ```
 
-2. Distribuire la base di codice in un&#39;istanza AEM locale utilizzando Maven:
+2. Distribuisci la base di codice in un’istanza AEM locale utilizzando Maven:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-   Se si utilizza [AEM 6.x](overview.md#compatibility) aggiungere il profilo `classic`:
+   Se utilizzi [AEM 6.x](overview.md#compatibility) aggiungi il profilo `classic`:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-È sempre possibile visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/React/integrate-spa-solution) o estrarre il codice localmente passando al ramo `React/integrate-spa-solution`.
+Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/React/integrate-spa-solution) o estrarre il codice localmente passando al ramo `React/integrate-spa-solution`.
 
 ## Metodo di integrazione {#integration-approach}
 
-Nel progetto AEM sono stati creati due moduli: `ui.apps` e `ui.frontend`.
+Sono stati creati due moduli come parte del progetto AEM: `ui.apps` e `ui.frontend`.
 
-Il modulo `ui.frontend` è un progetto [webpack](https://webpack.js.org/) che contiene tutto il codice sorgente SPA. La maggior parte dello sviluppo SPA e dei test sarà fatto nel progetto webpack. Quando viene attivata una build di produzione, la SPA viene creata e compilata utilizzando il webpack. Gli artifact compilati (CSS e Javascript) vengono copiati nel modulo `ui.apps` che viene quindi distribuito nel runtime AEM.
+Il modulo `ui.frontend` è un progetto [webpack](https://webpack.js.org/) che contiene tutto il codice sorgente SPA. La maggior parte dello sviluppo e dei test SPA verrà effettuata nel progetto webpack. Quando viene attivata una build di produzione, l’applicazione a pagina singola viene creata e compilata utilizzando un webpack. Gli artefatti compilati (CSS e Javascript) vengono copiati nel modulo `ui.apps` che viene quindi distribuito al runtime AEM.
 
 ![architettura di alto livello ui.frontend](assets/integrate-spa/ui-frontend-architecture.png)
 
-*Una rappresentazione di alto livello dell&#39;integrazione SPA.*
+*Una rappresentazione di alto livello dell’integrazione SPA.*
 
 Ulteriori informazioni sulla build front-end sono disponibili [qui](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
 
-##  Inspect l&#39;integrazione SPA {#inspect-spa-integration}
+## Ispezionare l’integrazione SPA {#inspect-spa-integration}
 
-Quindi, ispezionare il modulo `ui.frontend` per comprendere il SPA generato automaticamente dal [AEM Project archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
+Quindi, controlla il modulo `ui.frontend` per comprendere l’applicazione a pagina singola generata automaticamente dall’ [archetipo di progetto AEM](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
 
-1. Nell’IDE di vostra scelta, aprite il progetto AEM per il SPA WKND. Questa esercitazione utilizza il codice [Visual Studio Code IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+1. Nell’IDE che preferisci, apri il progetto AEM per l’applicazione a pagina singola WKND. Questa esercitazione utilizzerà [Visual Studio Code IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
-   ![VSCode - AEM progetto SPA WKND](./assets/integrate-spa/vscode-ide-openproject.png)
+   ![VSCode - Progetto SPA AEM WKND](./assets/integrate-spa/vscode-ide-openproject.png)
 
-2. Espandete ed esaminate la cartella `ui.frontend`. Aprire il file `ui.frontend/package.json`
+2. Espandi ed esamina la cartella `ui.frontend`. Aprire il file `ui.frontend/package.json`
 
-3. Sotto la `dependencies` dovrebbero essere visualizzate diverse informazioni correlate a `react` incluso `react-scripts`
+3. Sotto `dependencies` dovresti vedere diversi elementi correlati a `react` tra cui `react-scripts`
 
    ```json
    "react": "^16.12.0",
@@ -96,9 +99,9 @@ Quindi, ispezionare il modulo `ui.frontend` per comprendere il SPA generato auto
    "react-scripts": "3.4.1"
    ```
 
-   `ui.frontend` è un&#39;applicazione React basata su [Create React App](https://create-react-app.dev/) o CRA per farla breve. La versione `react-scripts` indica quale versione di CRA viene utilizzata.
+   L’ `ui.frontend` è un’applicazione React basata su [Crea app React](https://create-react-app.dev/) o CRA in breve. La versione `react-scripts` indica quale versione di CRA viene utilizzata.
 
-4. Sono inoltre presenti tre dipendenze con il prefisso `@adobe`:
+4. Ci sono anche tre dipendenze con prefisso `@adobe`:
 
    ```json
    "@adobe/aem-react-editable-components": "^1.0.0",
@@ -106,9 +109,9 @@ Quindi, ispezionare il modulo `ui.frontend` per comprendere il SPA generato auto
    "@adobe/aem-spa-page-model-manager": "^1.0.0",
    ```
 
-   I moduli di cui sopra costituiscono l&#39; [AEM SPA Editor JS SDK](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-blueprint.html) e forniscono le funzionalità necessarie per la mappatura SPA Componenti su AEM Componenti.
+   I moduli di cui sopra costituiscono l’ [SDK JS per AEM SPA Editor](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-blueprint.html) e forniscono la funzionalità per consentire la mappatura dei componenti SPA sui componenti AEM.
 
-5. Nel file `package.json` sono definiti diversi `scripts`:
+5. Nel file `package.json` sono definiti diversi elementi `scripts`:
 
    ```json
    "scripts": {
@@ -119,17 +122,17 @@ Quindi, ispezionare il modulo `ui.frontend` per comprendere il SPA generato auto
    }
    ```
 
-   Si tratta di script di build standard resi [disponibili](https://create-react-app.dev/docs/available-scripts) dall&#39;app Create React.
+   Si tratta di script di build standard resi [disponibili](https://create-react-app.dev/docs/available-scripts) dall’app Create React.
 
-   L&#39;unica differenza è l&#39;aggiunta di `&& clientlib` allo script `build`. Questa istruzione aggiuntiva è responsabile della copia del SPA compilato nel modulo `ui.apps` come libreria lato client durante una build.
+   L&#39;unica differenza è l&#39;aggiunta di `&& clientlib` allo script `build`. Questa istruzione aggiuntiva è responsabile della copia dell’applicazione a pagina singola compilata nel modulo `ui.apps` come libreria lato client durante una build.
 
-   Il modulo npm [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) è utilizzato per facilitare questo processo.
+   Il modulo npm [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) viene utilizzato per facilitare questo processo.
 
-6.  Inspect il file `ui.frontend/clientlib.config.js`. Questo file di configurazione è utilizzato da [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) per determinare come generare la libreria client.
+6. Ispeziona il file `ui.frontend/clientlib.config.js`. Questo file di configurazione viene utilizzato da [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) per determinare come generare la libreria client.
 
-7.  Inspect il file `ui.frontend/pom.xml`. Questo file trasforma la cartella `ui.frontend` in un [modulo Paradiso](http://maven.apache.org/guides/mini/guide-multiple-modules.html). Il file `pom.xml` è stato aggiornato per utilizzare il [front-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) a **test** e **build** il SPA durante una build Maven.
+7. Ispeziona il file `ui.frontend/pom.xml`. Questo file trasforma la cartella `ui.frontend` in un modulo [Maven](http://maven.apache.org/guides/mini/guide-multiple-modules.html). Il file `pom.xml` è stato aggiornato per utilizzare [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) in **test** e **build** l’applicazione a pagina singola durante una build Maven.
 
-8.  Inspect il file `index.js` in `ui.frontend/src/index.js`:
+8. Ispeziona il file `index.js` in `ui.frontend/src/index.js`:
 
    ```js
    //ui.frontend/src/index.js
@@ -154,18 +157,18 @@ Quindi, ispezionare il modulo `ui.frontend` per comprendere il SPA generato auto
    });
    ```
 
-   `index.js` è il punto di ingresso del SPA. `ModelManager` è fornito dall’SDK JS dell’editor SPA AEM. È responsabile della chiamata e dell&#39;invio di `pageModel` (il contenuto JSON) nell&#39;applicazione.
+   `index.js` è il punto di ingresso della SPA. `ModelManager` è fornito dall’SDK JS di AEM SPA Editor. È responsabile della chiamata e dell’inserimento di `pageModel` (il contenuto JSON) nell’applicazione.
 
-## Aggiunta di un componente Intestazione {#header-component}
+## Aggiungi un componente Intestazione {#header-component}
 
-Quindi, aggiungete un nuovo componente al SPA e distribuite le modifiche a un’istanza AEM locale.
+Quindi, aggiungi un nuovo componente all’applicazione a pagina singola e implementa le modifiche in un’istanza AEM locale.
 
-1. Nel modulo `ui.frontend`, sotto `ui.frontend/src/components` create una nuova cartella denominata `Header`.
-2. Create un file denominato `Header.js` sotto la cartella `Header`.
+1. Nel modulo `ui.frontend`, sotto `ui.frontend/src/components` crea una nuova cartella denominata `Header`.
+2. Crea un file denominato `Header.js` sotto la cartella `Header` .
 
    ![Cartella e file di intestazione](assets/integrate-spa/header-folder-js.png)
 
-3. Compilare `Header.js` con i seguenti elementi:
+3. Popolare `Header.js` con quanto segue:
 
    ```js
    //Header.js
@@ -185,10 +188,10 @@ Quindi, aggiungete un nuovo componente al SPA e distribuite le modifiche a un’
    }
    ```
 
-   Sopra è presente un componente React standard che genera una stringa di testo statica.
+   Sopra c&#39;è un componente React standard che genera una stringa di testo statica.
 
 4. Aprire il file `ui.frontend/src/App.js`. Questo è il punto di ingresso dell&#39;applicazione.
-5. Effettuate i seguenti aggiornamenti a `App.js` per includere la `Header` statica:
+5. Effettua i seguenti aggiornamenti a `App.js` per includere l&#39;elemento statico `Header`:
 
    ```diff
      import { Page, withModel } from '@adobe/aem-react-editable-components';
@@ -206,7 +209,7 @@ Quindi, aggiungete un nuovo componente al SPA e distribuite le modifiche a un’
         </div>
    ```
 
-6. Aprite un nuovo terminale e accedete alla cartella `ui.frontend`, quindi eseguite il comando `npm run build`:
+6. Apri un nuovo terminale e passa alla cartella `ui.frontend` ed esegui il comando `npm run build` :
 
    ```shell
    $ cd aem-guides-wknd-spa
@@ -223,11 +226,11 @@ Quindi, aggiungete un nuovo componente al SPA e distribuite le modifiche a un’
    451 B              build/static/css/main.e57bbe8a.chunk.css
    ```
 
-7. Andate alla cartella `ui.apps`. Sotto `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/clientlibs/clientlib-react` è possibile vedere i file SPA compilati copiati dalla cartella`ui.frontend/build`.
+7. Passa alla cartella `ui.apps` . Sotto `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/clientlibs/clientlib-react` dovresti vedere che i file SPA compilati sono stati copiati dalla cartella`ui.frontend/build`.
 
    ![Libreria client generata in ui.apps](./assets/integrate-spa/compiled-spa-uiapps.png)
 
-8. Tornate al terminale e individuate la cartella `ui.apps`. Eseguite il seguente comando Maven:
+8. Torna al terminale e passa alla cartella `ui.apps` . Esegui il seguente comando Maven:
 
    ```shell
    $ cd ../ui.apps
@@ -241,31 +244,31 @@ Quindi, aggiungete un nuovo componente al SPA e distribuite le modifiche a un’
    [INFO] ------------------------------------------------------------------------
    ```
 
-   Questo distribuirà il pacchetto `ui.apps` in un&#39;istanza locale in esecuzione di AEM.
+   Questo distribuirà il pacchetto `ui.apps` a un&#39;istanza in esecuzione locale di AEM.
 
-9. Aprite una scheda del browser e andate a [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). È ora necessario visualizzare il contenuto del componente `Header` nel SPA.
+9. Apri una scheda del browser e passa a [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Ora dovresti vedere il contenuto del componente `Header` visualizzato nell’applicazione a pagina singola.
 
-   ![Implementazione intestazione iniziale](./assets/integrate-spa/initial-header-implementation.png)
+   ![Implementazione dell’intestazione iniziale](./assets/integrate-spa/initial-header-implementation.png)
 
-   I passaggi da 6 a 8 vengono eseguiti automaticamente quando si attiva una build Maven dalla radice del progetto (ovvero `mvn clean install -PautoInstallSinglePackage`). È ora necessario comprendere le basi dell&#39;integrazione tra le librerie lato SPA e AEM lato client. È comunque possibile modificare e aggiungere componenti `Text` in AEM sotto il componente statico `Header`.
+   I passaggi 6-8 vengono eseguiti automaticamente quando si attiva una build Maven dalla directory principale del progetto (ovvero `mvn clean install -PautoInstallSinglePackage`). È ora necessario comprendere le nozioni di base dell’integrazione tra le librerie lato client SPA e AEM. Tieni presente che puoi comunque modificare e aggiungere componenti `Text` in AEM sotto il componente statico `Header` .
 
-## Webpack Dev Server - Proxy API JSON {#proxy-json}
+## Webpack Dev Server - Proxy dell&#39;API JSON {#proxy-json}
 
-Come mostrato negli esercizi precedenti, l&#39;esecuzione di una build e la sincronizzazione della libreria client con un&#39;istanza locale di AEM richiede alcuni minuti. Questo è accettabile per il test finale, ma non è ideale per la maggior parte dello sviluppo SPA.
+Come visto negli esercizi precedenti, l’esecuzione di una build e la sincronizzazione della libreria client con un’istanza locale di AEM richiede alcuni minuti. Questo è accettabile per il test finale, ma non è ideale per la maggior parte dello sviluppo SPA.
 
-Per sviluppare rapidamente il SPA è possibile utilizzare un [webpack-dev-server](https://webpack.js.org/configuration/dev-server/). Il SPA è guidato da un modello JSON generato da AEM. In questo esercizio il contenuto JSON da un&#39;istanza in esecuzione di AEM sarà **proxy** nel server di sviluppo.
+Un [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) può essere utilizzato per sviluppare rapidamente l&#39;applicazione a pagina singola. L’applicazione a pagina singola è guidata da un modello JSON generato da AEM. In questo esercizio il contenuto JSON da un&#39;istanza in esecuzione di AEM sarà **proxy** nel server di sviluppo.
 
-1. Tornare all&#39;IDE e aprire il file `ui.frontend/package.json`.
+1. Torna all’IDE e apri il file `ui.frontend/package.json`.
 
-   Cercare una linea come la seguente:
+   Cerca una riga come la seguente:
 
    ```json
    "proxy": "http://localhost:4502",
    ```
 
-   [Create React App](https://create-react-app.dev/docs/proxying-api-requests-in-development) fornisce un meccanismo semplice per le richieste API proxy. Tutte le richieste sconosciute verranno proxy tramite `localhost:4502`, il AEM rapido locale.
+   Il [Create React App](https://create-react-app.dev/docs/proxying-api-requests-in-development) fornisce un meccanismo semplice per proxy delle richieste API. Tutte le richieste sconosciute verranno proxy tramite `localhost:4502`, l’avvio rapido AEM locale.
 
-2. Aprite una finestra del terminale e passate alla cartella `ui.frontend`. Eseguire il comando `npm start`:
+2. Apri una finestra terminale e passa alla cartella `ui.frontend` . Esegui il comando `npm start`:
 
    ```shell
    $ cd ui.frontend
@@ -282,29 +285,29 @@ Per sviluppare rapidamente il SPA è possibile utilizzare un [webpack-dev-server
    To create a production build, use npm run build.
    ```
 
-3. Aprite una nuova scheda del browser (se non è già aperta) e andate a [http://localhost:3000/content/wknd-spa-react/us/en/home.html](http://localhost:3000/content/wknd-spa-react/us/en/home.html).
+3. Apri una nuova scheda del browser (se non è già aperta) e passa a [http://localhost:3000/content/wknd-spa-react/us/en/home.html](http://localhost:3000/content/wknd-spa-react/us/en/home.html).
 
-   ![Server di sviluppo webpack - json proxy](./assets/integrate-spa/webpack-dev-server-1.png)
+   ![Server di sviluppo del webpack - json proxy](./assets/integrate-spa/webpack-dev-server-1.png)
 
-   Dovresti visualizzare lo stesso contenuto come in AEM, ma senza che nessuna delle funzionalità di authoring sia abilitata.
+   Dovresti visualizzare lo stesso contenuto di AEM, ma senza che sia abilitata alcuna delle funzionalità di authoring.
 
    >[!NOTE]
    >
-   > A causa dei requisiti di sicurezza di AEM, dovrete accedere all&#39;istanza AEM locale (http://localhost:4502) nello stesso browser, ma in una scheda diversa.
+   > A causa dei requisiti di sicurezza di AEM, dovrai aver effettuato l’accesso all’istanza AEM locale (http://localhost:4502) nello stesso browser ma in una scheda diversa.
 
-4. Tornate all&#39;IDE e create una nuova cartella denominata `media` in `ui.frontend/src/media`.
-5. Scaricate e aggiungete il seguente logo WKND alla cartella `media`:
+4. Torna all’IDE e crea una nuova cartella denominata `media` in `ui.frontend/src/media`.
+5. Scarica e aggiungi il seguente logo WKND alla cartella `media` :
 
    ![Logo WKND](./assets/integrate-spa/wknd-logo-dk.png)
 
-6. Aprite `Header.js` in `ui.frontend/src/components/Header/Header.js` e importate il logo:
+6. Apri `Header.js` in `ui.frontend/src/components/Header/Header.js` e importa il logo:
 
    ```diff
      import React, {Component} from 'react';
    + import wkndLogoDark from '../../media/wknd-logo-dk.png';
    ```
 
-7. Effettuate i seguenti aggiornamenti a `Header.js` per includere il logo nell&#39;intestazione:
+7. Effettua i seguenti aggiornamenti a `Header.js` per includere il logo come parte dell’intestazione:
 
    ```js
     export default class Header extends Component {
@@ -331,30 +334,30 @@ Per sviluppare rapidamente il SPA è possibile utilizzare un [webpack-dev-server
 
    Salva le modifiche apportate a `Header.js`.
 
-8. Tornate al browser all&#39;indirizzo [http://localhost:3000/content/wknd-spa-react/us/en/home.html](http://localhost:3000/content/wknd-spa-react/us/en/home.html). Dovresti vedere immediatamente le modifiche all&#39;app riflesse.
+8. Torna al browser all&#39;indirizzo [http://localhost:3000/content/wknd-spa-react/us/en/home.html](http://localhost:3000/content/wknd-spa-react/us/en/home.html). Dovresti vedere immediatamente le modifiche apportate all’app.
 
    ![Logo aggiunto all’intestazione](./assets/integrate-spa/added-logo-localhost.png)
 
-   È possibile continuare a eseguire aggiornamenti dei contenuti in AEM e visualizzarli visualizzati in **webpack-dev-server**, dal momento che il contenuto viene proxy.
+   È possibile continuare a eseguire aggiornamenti dei contenuti in AEM e visualizzarli riflessi in **webpack-dev-server**, in quanto il contenuto viene sottoposto a proxy.
 
-9. Arrestate il server di sviluppo webpack con `ctrl+c` nel terminale.
+9. Arrestare il server di sviluppo del webpack con `ctrl+c` nel terminale.
 
-## Webpack Dev Server - Mock JSON API {#mock-json}
+## Webpack Dev Server - Mock API JSON {#mock-json}
 
-Un altro approccio al rapido sviluppo consiste nell&#39;utilizzare un file JSON statico per agire come modello JSON. &quot;prendendo in giro&quot; il JSON, rimuoviamo la dipendenza da un&#39;istanza AEM locale. Consente inoltre a uno sviluppatore front-end di aggiornare il modello JSON al fine di testare la funzionalità e di apportare modifiche all&#39;API JSON che sarebbe poi implementata da uno sviluppatore back-end.
+Un altro approccio per un rapido sviluppo è quello di utilizzare un file JSON statico per agire come modello JSON. &quot;prendendo in giro&quot; il JSON, rimuoviamo la dipendenza da un’istanza AEM locale. Consente inoltre a uno sviluppatore front-end di aggiornare il modello JSON per testare la funzionalità e apportare modifiche all’API JSON che verranno implementate in seguito da uno sviluppatore back-end.
 
-L&#39;impostazione iniziale del JSON fittizio **richiede un&#39;istanza AEM locale**.
+La configurazione iniziale del JSON fittizio **richiede un&#39;istanza AEM locale**.
 
-1. Nel browser, andate a [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json).
+1. Nel browser passa a [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json).
 
-   È il JSON esportato da AEM che guida l&#39;applicazione. Copiate l’output JSON.
+   Si tratta del JSON esportato da AEM che guida l’applicazione. Copia l’output JSON.
 
-2. Tornate all&#39;IDE, andate a `ui.frontend/public` e aggiungete una nuova cartella denominata `mock-content`.
-3. Crea un nuovo file denominato `mock.model.json` sotto a `ui.frontend/public/mock-content`. Incollate l&#39;output JSON da **Passo 1** qui.
+2. Torna all’IDE passa a `ui.frontend/public` e aggiungi una nuova cartella denominata `mock-content`.
+3. Crea un nuovo file denominato `mock.model.json` sotto a `ui.frontend/public/mock-content`. Incolla l’output JSON da **Passaggio 1** qui.
 
-   ![File Json modello Mock](./assets/integrate-spa/mock-model-json-created.png)
+   ![File Json modello maschera](./assets/integrate-spa/mock-model-json-created.png)
 
-4. Aprire il file `index.html` in `ui.frontend/public/index.html`. Aggiornare la proprietà metadata per il modello di pagina AEM in modo che punti a una variabile `%REACT_APP_PAGE_MODEL_PATH%`:
+4. Apri il file `index.html` in `ui.frontend/public/index.html`. Aggiorna la proprietà metadati per il modello di pagina AEM in modo che punti a una variabile `%REACT_APP_PAGE_MODEL_PATH%`:
 
    ```html
        <!-- AEM page model -->
@@ -364,9 +367,9 @@ L&#39;impostazione iniziale del JSON fittizio **richiede un&#39;istanza AEM loca
        />
    ```
 
-   L&#39;utilizzo di una variabile per il valore di `cq:pagemodel_root_url` renderà più semplice passare dal modello proxy a quello json.
+   L&#39;utilizzo di una variabile per il valore di `cq:pagemodel_root_url` renderà più facile passare dal modello proxy al modello json fittizio.
 
-5. Apri il file `ui.frontend/.env.development` ed effettua i seguenti aggiornamenti per commentare il valore precedente per `REACT_APP_PAGE_MODEL_PATH`:
+5. Apri il file `ui.frontend/.env.development` e apporta i seguenti aggiornamenti per commentare il valore precedente per `REACT_APP_PAGE_MODEL_PATH`:
 
    ```plain
    PUBLIC_URL=/
@@ -384,15 +387,15 @@ L&#39;impostazione iniziale del JSON fittizio **richiede un&#39;istanza AEM loca
    $ npm start
    ```
 
-   Andate a http://localhost:3000/content/wknd-spa-react/us/en/home.html[ e visualizzate il SPA con lo stesso contenuto utilizzato nel file json ](http://localhost:3000/content/wknd-spa-react/us/en/home.html)proxy **.**
+   Passa a [http://localhost:3000/content/wknd-spa-react/us/en/home.html](http://localhost:3000/content/wknd-spa-react/us/en/home.html) e dovresti visualizzare l&#39;applicazione a pagina singola con lo stesso contenuto utilizzato nel file json **proxy**.
 
-7. Apportate una piccola modifica al file `mock.model.json` creato in precedenza. Dovresti vedere il contenuto aggiornato immediatamente riflesso nel **webpack-dev-server**.
+7. Apporta una piccola modifica al file `mock.model.json` creato in precedenza. Dovresti visualizzare il contenuto aggiornato immediatamente riportato nel **webpack-dev-server**.
 
-   ![aggiornamento json modello](./assets/integrate-spa/webpack-mock-model.gif)
+   ![aggiornamento json del modello fittizio](./assets/integrate-spa/webpack-mock-model.gif)
 
-La possibilità di manipolare il modello JSON e visualizzare gli effetti su un SPA live può aiutare uno sviluppatore a comprendere l&#39;API del modello JSON. Consente inoltre lo sviluppo front-end e back-end in parallelo.
+La possibilità di manipolare il modello JSON e visualizzare gli effetti su un’applicazione a pagina singola live può aiutare uno sviluppatore a comprendere l’API del modello JSON. Consente inoltre lo sviluppo front-end e back-end in parallelo.
 
-Ora potete attivare o disattivare la posizione di utilizzo del contenuto JSON attivando le voci nel file `env.development`:
+Ora puoi alternare il punto in cui utilizzare il contenuto JSON attivando le voci nel file `env.development` :
 
 ```plain
 # JSON API via proxy to AEM
@@ -404,37 +407,37 @@ REACT_APP_PAGE_MODEL_PATH=/mock-content/mock.model.json
 
 ## Aggiungi stili con ass
 
-Una best practice React consiste nel mantenere ogni componente modulare e autonomo. Una raccomandazione generale consiste nell&#39;evitare di riutilizzare lo stesso nome di classe CSS tra i componenti, il che rende l&#39;uso dei preprocessori meno potente. Questo progetto utilizzerà [Sass](https://sass-lang.com/) per alcune funzioni utili come le variabili. Questo progetto seguirà inoltre le [convenzioni di denominazione CSS SUIT](https://github.com/suitcss/suit/blob/master/doc/components.md). SUIT è una variante di notazione BEM, Modificatore elemento blocco, utilizzata per creare regole CSS coerenti.
+Una best practice React consiste nel mantenere ogni componente modulare e indipendente. Una raccomandazione generale è quella di evitare di riutilizzare lo stesso nome della classe CSS tra i componenti, che rendono l’uso dei preprocessori meno potente. Questo progetto utilizzerà [Sass](https://sass-lang.com/) per alcune funzioni utili come le variabili. Questo progetto seguirà inoltre liberamente le [convenzioni di denominazione CSS SUIT](https://github.com/suitcss/suit/blob/master/doc/components.md). SUIT è una variante della notazione BEM, modificatore elemento blocco, utilizzata per creare regole CSS coerenti.
 
-1. Aprire una finestra del terminale e arrestare il **webpack-dev-server** se avviato. Dall&#39;interno della cartella `ui.frontend` immettere il comando seguente per [installare Sass](https://create-react-app.dev/docs/adding-a-sass-stylesheet):
+1. Apri una finestra terminale e arresta il **webpack-dev-server** se avviato. Dall&#39;interno della cartella `ui.frontend` inserisci il seguente comando in [installa Sass](https://create-react-app.dev/docs/adding-a-sass-stylesheet):
 
    ```shell
    $ cd ui.frontend
    $ npm install node-sass --save
    ```
 
-   Installate `sass` come dipendenza peer:
+   Installa `sass` come dipendenza peer:
 
    ```shell
    $ npm install sass --save
    ```
 
-2. Installate `normalize-scss` per normalizzare gli stili tra i vari browser:
+2. Installa `normalize-scss` per normalizzare gli stili tra i browser:
 
    ```shell
    $ npm install normalize-scss
    ```
 
-3. Avviare il **webpack-dev-server** in modo da visualizzare gli stili aggiornati in tempo reale:
+3. Avvia il **webpack-dev-server** in modo da visualizzare gli stili aggiornati in tempo reale:
 
    ```shell
    $ npm start
    ```
 
-   Utilizzate l&#39;approccio Proxy of Mock per gestire l&#39;API del modello JSON.
+   Utilizza l’approccio Proxy of Mock per gestire l’API del modello JSON.
 
-4. Tornate all&#39;IDE e, sotto `ui.frontend/src`, create una nuova cartella denominata `styles`.
-5. Create un nuovo file sotto `ui.frontend/src/styles` denominato `_variables.scss` e compilatelo con le seguenti variabili:
+4. Torna all’IDE e, sotto `ui.frontend/src`, crea una nuova cartella denominata `styles`.
+5. Crea un nuovo file sotto `ui.frontend/src/styles` denominato `_variables.scss` e popolalo con le seguenti variabili:
 
    ```scss
    //_variables.scss
@@ -478,7 +481,7 @@ Una best practice React consiste nel mantenere ogni componente modulare e autono
    $gutter-padding: 12px;
    ```
 
-6. Rinominare l&#39;estensione del file `index.css` in `ui.frontend/src/index.css` in **`index.scss`**. Sostituite il contenuto con quanto segue:
+6. Rinomina l’estensione del file `index.css` in `ui.frontend/src/index.css` in **`index.scss`**. Sostituisci il contenuto con quanto segue:
 
    ```scss
    /* index.scss * /
@@ -505,7 +508,7 @@ Una best practice React consiste nel mantenere ogni componente modulare e autono
    }
    ```
 
-7. Aggiornate `ui.frontend/src/index.js` per includere il `index.scss` rinominato:
+7. Aggiorna `ui.frontend/src/index.js` per includere il `index.scss` rinominato:
 
    ```diff
     ...
@@ -514,7 +517,7 @@ Una best practice React consiste nel mantenere ogni componente modulare e autono
     ....
    ```
 
-8. Crea un nuovo file denominato `Header.scss` sotto a `ui.frontend/src/components/Header`. Compilate il file con le seguenti opzioni:
+8. Crea un nuovo file denominato `Header.scss` sotto a `ui.frontend/src/components/Header`. Compila il file con le seguenti caratteristiche:
 
    ```scss
    @import '../../styles/variables';
@@ -549,7 +552,7 @@ Una best practice React consiste nel mantenere ogni componente modulare e autono
    }
    ```
 
-9. Includere `Header.scss` aggiornando `Header.js`:
+9. Includi `Header.scss` aggiornando `Header.js`:
 
    ```js
    import React, {Component} from 'react';
@@ -559,44 +562,44 @@ Una best practice React consiste nel mantenere ogni componente modulare e autono
    ...
    ```
 
-10. Tornate al browser e al **webpack-dev-server**: [http://localhost:3000/content/wknd-spa-react/us/en/home.html](http://localhost:3000/content/wknd-spa-react/us/en/home.html)
+10. Torna al browser e al **webpack-dev-server**: [http://localhost:3000/content/wknd-spa-react/us/en/home.html](http://localhost:3000/content/wknd-spa-react/us/en/home.html)
 
-   ![Intestazione con stile - webpack dev server](./assets/integrate-spa/styled-header.png)
+   ![Intestazione con stile - server di sviluppo del webpack](./assets/integrate-spa/styled-header.png)
 
-   È ora possibile visualizzare gli stili aggiornati aggiunti al componente `Header`.
+   Ora dovresti vedere gli stili aggiornati aggiunti al componente `Header` .
 
-## Implementare SPA aggiornamenti a AEM
+## Distribuzione di aggiornamenti SPA in AEM
 
-Le modifiche apportate alla `Header` sono attualmente visibili solo attraverso il **webpack-dev-server**. Distribuite il SPA aggiornato per AEM per visualizzare le modifiche.
+Le modifiche apportate a `Header` sono attualmente visibili solo tramite il **webpack-dev-server**. Distribuisci l’applicazione a pagina singola aggiornata in AEM per visualizzare le modifiche.
 
-1. Andate alla directory principale del progetto (`aem-guides-wknd-spa`) e distribuite il progetto da AEM utilizzando Maven:
+1. Passa alla directory principale del progetto (`aem-guides-wknd-spa`) e distribuisci il progetto in AEM utilizzando Maven:
 
    ```shell
    $ cd ..
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-2. Andate a [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Dovresti vedere la `Header` aggiornata con il logo e gli stili applicati.
+2. Passa a [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Dovresti visualizzare il `Header` aggiornato con logo e stili applicati.
 
    ![Intestazione aggiornata in AEM](./assets/integrate-spa/final-header-component.png)
 
-   Ora che la SPA aggiornata è AEM, l’authoring può continuare.
+   Ora che l’applicazione a pagina singola aggiornata è in AEM, l’authoring può continuare.
 
-## Risoluzione di errori nodo-sass
+## Risoluzione dei problemi relativi all&#39;errore del nodo
 
-Nel corso dello sviluppo è possibile che si verifichi il seguente errore:
+Durante lo sviluppo, potresti riscontrare il seguente errore:
 
 ```
 Error: Missing binding aem-guides-wknd-spa/ui.frontend/node_modules/node-sass/vendor/darwin-x64-72/binding.node
 Node Sass could not find a binding for your current environment: macOS 64-bit with Node.js 12.x
 ```
 
-Ciò può verificarsi quando la versione locale di **Node.js** e **npm** è diversa da quella utilizzata dal [front-maven-plugin](https://github.com/eirslett/frontend-maven-plugin). L&#39;esecuzione del comando `npm rebuild node-sass` può risolvere temporaneamente il problema o rimuovere la cartella `ui.frontend/node_modules` e reinstallare.
+Questo può verificarsi quando la versione locale di **Node.js** e **npm** è diversa da quella utilizzata da [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin). L&#39;esecuzione del comando `npm rebuild node-sass` può risolvere temporaneamente il problema o rimuovere la cartella `ui.frontend/node_modules` e reinstallare.
 
 Ci sono anche alcuni modi per affrontare questo problema in modo più permanente.
 
-* Assicurarsi che la versione locale di npm e Node.js corrisponda alle versioni utilizzate dalla build [Maven](https://github.com/adobe/aem-guides-wknd-spa/blob/React/latest/pom.xml#L118)
-* Aggiungete il seguente passaggio di esecuzione a `ui.frontend/pom.xml` prima del passaggio `npm run build`:
+* Assicurati che la versione locale di npm e Node.js corrisponda alle versioni utilizzate da [Maven build](https://github.com/adobe/aem-guides-wknd-spa/blob/React/latest/pom.xml#L118)
+* Aggiungi il seguente passaggio di esecuzione al passaggio `ui.frontend/pom.xml` prima di `npm run build` :
 
    ```xml
    <execution>
@@ -612,10 +615,10 @@ Ci sono anche alcuni modi per affrontare questo problema in modo più permanente
 
 ## Congratulazioni! {#congratulations}
 
-Congratulazioni, avete aggiornato il SPA ed esplorato l&#39;integrazione con AEM! Ora conoscete due approcci diversi per sviluppare il SPA rispetto all&#39;API del modello AEM JSON utilizzando un **webpack-dev-server**.
+Congratulazioni, hai aggiornato l’applicazione a pagina singola ed esplorato l’integrazione con AEM! Ora conosci due diversi approcci per lo sviluppo dell’applicazione a pagina singola rispetto all’API del modello JSON di AEM utilizzando un **webpack-dev-server**.
 
-È sempre possibile visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/React/integrate-spa-solution) o estrarre il codice localmente passando al ramo `React/integrate-spa-solution`.
+Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/React/integrate-spa-solution) o estrarre il codice localmente passando al ramo `React/integrate-spa-solution`.
 
 ### Passaggi successivi {#next-steps}
 
-[Mappatura SPA componenti a AEM componenti](map-components.md)  - Scoprite come mappare i componenti React a componenti Adobe Experience Manager (AEM) con l’SDK JS AEM Editor. La mappatura dei componenti consente agli utenti di effettuare aggiornamenti dinamici ai componenti SPA nell’editor SPA AEM, in modo simile all’authoring AEM tradizionale.
+[Mappatura di componenti SPA su componenti AEM](map-components.md)  - Scopri come mappare i componenti React su componenti Adobe Experience Manager (AEM) con l’SDK JS per AEM SPA Editor. La mappatura dei componenti consente agli utenti di effettuare aggiornamenti dinamici ai componenti SPA all’interno dell’Editor SPA di AEM, in modo simile alla tradizionale creazione di AEM.
