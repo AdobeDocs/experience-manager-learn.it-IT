@@ -1,12 +1,14 @@
 ---
-title: Capitolo 1 - Configurazione e download delle esercitazioni
-seo-title: Guida introduttiva di AEM Content Services - Capitolo 1 - Configurazione delle esercitazioni
-description: Capitolo 1 dell’esercitazione AEM Headless sulla configurazione della linea di base per l’istanza AEM per l’esercitazione.
-seo-description: Capitolo 1 dell’esercitazione AEM Headless sulla configurazione della linea di base per l’istanza AEM per l’esercitazione.
+title: '"Capitolo 1 - Concetti, schemi e modelli di Dispatcher"'
+description: Questo capitolo fornisce una breve introduzione alla cronologia e alla meccanica di Dispatcher e illustra come questo influenzi il modo in cui uno sviluppatore AEM progetterebbe i suoi componenti.
+feature: Dispatcher
+topic: Architettura
+role: Architetto
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '17502'
+source-wordcount: '17489'
 ht-degree: 0%
 
 ---
