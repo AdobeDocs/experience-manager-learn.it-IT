@@ -1,18 +1,21 @@
 ---
 title: Modulo adattivo con singolo firmatario
 description: Modulo adattivo con singolo firmatario. Il video illustra i vari passaggi necessari per configurare un modulo adattivo con un singolo firmatario.
-feature: moduli adattivi
+feature: Moduli adattivi, Adobe Sign
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 39475.jpg
 kt: 6103
+topic: Sviluppo
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 0%
+source-wordcount: '69'
+ht-degree: 1%
 
 ---
 
