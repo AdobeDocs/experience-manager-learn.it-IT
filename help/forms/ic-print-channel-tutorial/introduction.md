@@ -3,20 +3,17 @@ title: Creazione della prima comunicazione interattiva per il canale di stampa
 seo-title: Creazione della prima comunicazione interattiva per il canale di stampa
 description: Le comunicazioni interattive sono novità di AEM Forms 6.4. Questo documento illustra i passaggi necessari per creare una comunicazione interattiva per il canale di stampa.
 seo-description: Le comunicazioni interattive sono novità di AEM Forms 6.4. Questo documento illustra i passaggi necessari per creare una comunicazione interattiva per il canale di stampa.
-feature: Comunicazione interattiva
+feature: comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 3%
+source-wordcount: '225'
+ht-degree: 2%
 
 ---
 
