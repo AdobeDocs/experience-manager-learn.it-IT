@@ -1,31 +1,26 @@
 ---
-title: Utilizzo della funzione di ricerca in  AEM Assets
-seo-title: Utilizzo della funzione di ricerca in  AEM Assets
-description: In questi video, sono stati introdotti alcuni miglioramenti nella ricerca delle risorse in AEM. Gli autori possono incrementare determinate risorse nei risultati della ricerca per parole chiave aggiornando le rispettive proprietà dei metadati. Vengono inoltre esaminate alcune configurazioni avanzate per i predicati di Risorse OmniSearch.
-seo-description: In questi video, sono stati introdotti alcuni miglioramenti nella ricerca delle risorse in AEM. Gli autori possono incrementare determinate risorse nei risultati della ricerca per parole chiave aggiornando le rispettive proprietà dei metadati. Vengono inoltre esaminate alcune configurazioni avanzate per i predicati di Risorse OmniSearch.
-uuid: d4074602-a68d-4f44-b9f3-47a02c6420a0
-topics: metadata, search
-activity: use
+title: Utilizzo della funzione Ricerca in AEM Assets
+description: In questi video, esaminiamo alcuni miglioramenti alla ricerca delle risorse introdotti in AEM. Gli autori possono incrementare determinate risorse nei risultati della ricerca per parola chiave aggiornando le rispettive proprietà dei metadati. Sono inoltre disponibili alcune configurazioni avanzate per i predicati Asset OmniSearch.
 version: 6.3, 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '133'
 ht-degree: 0%
 
 ---
 
 
-# Utilizzo della ricerca in  AEM Assets{#using-search-in-aem-assets}
+# Utilizzo della funzione Ricerca in AEM Assets{#using-search-in-aem-assets}
 
-In questi video, sono stati introdotti alcuni miglioramenti nella ricerca delle risorse in AEM. Gli autori possono incrementare determinate risorse nei risultati della ricerca per parole chiave aggiornando le rispettive proprietà dei metadati. Vengono inoltre esaminate alcune configurazioni avanzate per i predicati di Risorse OmniSearch.
+In questi video, esaminiamo alcuni miglioramenti alla ricerca delle risorse introdotti in AEM. Gli autori possono incrementare determinate risorse nei risultati della ricerca per parola chiave aggiornando le rispettive proprietà dei metadati. Sono inoltre disponibili alcune configurazioni avanzate per i predicati Asset OmniSearch.
 
-## Ricerca Incremento con metadati risorsa {#search-boost-asset}
+## Incremento della ricerca con i metadati delle risorse {#search-boost-asset}
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=9&learn=on)
 
 ## Configurazione avanzata di Predicati di ricerca per più valori e tag {#multi-value-tag-predicates}
 
-Il **predicato di ricerca multivalore** è disponibile per consentire una semplice corrispondenza del testo nei risultati di ricerca. Sono stati apportati diversi miglioramenti al predicato Tag per un filtraggio più efficiente dei risultati di ricerca delle risorse.
+Il **predicato di ricerca con più valori** è reso disponibile per una semplice corrispondenza del testo nei risultati di ricerca. Sono stati apportati diversi miglioramenti al predicato Tag anche per filtrare in modo più efficiente i risultati della ricerca delle risorse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16457/?quality=9&learn=on)
