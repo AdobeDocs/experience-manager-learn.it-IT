@@ -1,35 +1,28 @@
 ---
-title: Introduzione a Theming in Asset Share Commons
-seo-title: Introduzione a Theming in Asset Share Commons
-description: Materiali per l'interpretazione funzionale e tecnica di Assets Share Commons
-seo-description: Materiali per l'interpretazione funzionale e tecnica di Assets Share Commons
-uuid: 5991a015-392a-4bb5-8332-192681505b07
-discoiquuid: 08a5a394-c62b-4748-b303-33117f283612
-contentOwner: dgonzale
-feature: asset-share, brand-portal
-topics: authoring, sharing, collaboration, search, integrations, publishing, metadata, images, renditions
-audience: developer, architect, administrator
-doc-type: technical video
-activity: setup
+title: Introduzione al tema in Asset Share Commons
+description: Materiali per la comprensione funzionale e tecnica di Assets Share Commons
 version: 6.3, 6.4, 6.5
+topic: Gestione dei contenuti
+role: Developer (Sviluppatore)
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 1%
+source-wordcount: '117'
+ht-degree: 4%
 
 ---
 
 
-# Introduzione a Theming in Asset Share Commons {#asset-share-commons-theme}
+# Introduzione al tema in Asset Share Commons {#asset-share-commons-theme}
 
 Breve introduzione al tema in Asset Share Commons. Il video illustra il processo di creazione di un nuovo tema con una combinazione di colori personalizzata.
 
 >[!VIDEO](https://video.tv.adobe.com/v/20572/?quality=9&learn=on)
 
-In questo video verrà creato un nuovo tema basato sul tema Scuro di Asset Share Commons. La combinazione di colori corrisponderà a un logo personalizzato per dare al sito un aspetto e un aspetto uniformi.
+In questo video verrà creato un nuovo tema basato sul tema scuro di Asset Share Commons. La combinazione di colori corrisponderà a un logo personalizzato per dare al sito un aspetto e un aspetto coerente.
 
-## Variabili tema
+## Variabili di tema
 
 ```java
 /*******************************
@@ -85,4 +78,4 @@ Scarica [Tema libreria client personalizzato](assets/asc-theme-demo.zip)
 ## Risorse aggiuntive{#additional-resources}
 
 * [Download delle versioni di Asset Share Commons](https://github.com/Adobe-Marketing-Cloud/asset-share-commons/releases)
-* [Download delle versioni di ACS AEM Commons 3.11.0+](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)
+* [Download della versione di ACS AEM Commons 3.11.0+](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)
