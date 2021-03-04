@@ -1,24 +1,26 @@
 ---
-title: Utilizzo della pulizia delle revisioni online
-description: 'Breve introduzione alla funzione Pulizia revisioni online. Pulizia revisioni online mitiga la necessità di una frequente pulizia delle revisioni offline. '
+title: Utilizzare il cleanup delle revisioni online
+description: 'Breve introduzione alla Pulizia revisioni online. Pulizia revisioni online attenua la necessità di un''applicazione frequente di pulizia revisioni offline. '
 version: 6.3, 6.4, 6.5
-feature: oak, compaction
 topics: operations, authoring, performance
 activity: use
 audience: administrator, architect, implementer
 doc-type: technical video
+topic: Amministrazione
+role: Administrator
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 1%
+source-wordcount: '77'
+ht-degree: 2%
 
 ---
 
 
-# Utilizzo della pulizia delle revisioni online
+# Utilizzare il cleanup delle revisioni online
 
-Breve introduzione al Pulizia della revisione online che riduce la necessità di frequenti operazioni di pulizia delle revisioni offline.
+Breve introduzione al Clean-up delle revisioni online che mitiga la necessità di frequenti operazioni di pulizia delle revisioni offline.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17004/?quality=12&learn=on)
 
@@ -26,5 +28,5 @@ Breve introduzione al Pulizia della revisione online che riduce la necessità di
 
 * [AEM [!DNL JMX MBean - SegmentRevisionGarbageCollection]](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+revision+garbage+collection%2Ctype%3DSegmentRevisionGarbageCollection)
 
-* [AEM [!DNL OSGi Configuration] - Servizio  [!UICONTROL Oak Segment NodeStore]](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService)
+* [AEM [!DNL OSGi Configuration]  - Servizio NodeStore del segmento  [!UICONTROL Oak]](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService)
 
