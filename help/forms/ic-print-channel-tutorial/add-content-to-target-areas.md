@@ -1,10 +1,10 @@
 ---
-title: Aggiunta di testo e contenuti immagine al documento del canale di stampa
-seo-title: Aggiunta di testo e contenuti immagine al documento del canale di stampa
-description: 'Questa è la parte 7 di un''esercitazione con più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte, verranno aggiunte immagini e contenuto di testo alle aree di destinazione definite nel layout(xdp). '
-seo-description: 'Questa è la parte 7 di un''esercitazione con più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte, verranno aggiunte immagini e contenuto di testo alle aree di destinazione definite nel layout(xdp). '
+title: Aggiunta di testo e immagine al documento del canale di stampa
+seo-title: Aggiunta di testo e immagine al documento del canale di stampa
+description: 'Questa è la parte 7 di un tutorial in più passaggi per la creazione del primo documento di comunicazione interattivo. In questa parte verranno aggiunte immagini e contenuti di testo alle aree di destinazione definite nel layout (xdp). '
+seo-description: 'Questa è la parte 7 di un tutorial in più passaggi per la creazione del primo documento di comunicazione interattivo. In questa parte verranno aggiunte immagini e contenuti di testo alle aree di destinazione definite nel layout (xdp). '
 uuid: f20d6974-6faf-4b90-a7ff-8aa8a620fcaa
-feature: interactive-communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,26 +13,29 @@ version: 6.4,6.5
 discoiquuid: a79bf219-2423-4819-89fc-dcfe976e08b7
 kt: 5992
 thumbnail: 22379.jpg
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 0%
+source-wordcount: '201'
+ht-degree: 1%
 
 ---
 
 
-# Aggiunta di testo e contenuti immagine al documento del canale di stampa
+# Aggiunta di testo e immagine al documento del canale di stampa
 
-In questa parte, verranno aggiunte immagini e contenuto di testo alle aree di destinazione definite nel layout(xdp).
+In questa parte verranno aggiunte immagini e contenuti di testo alle aree di destinazione definite nel layout (xdp).
 
-Dopo aver creato il primo frammento di documento contenente il nome e l&#39;indirizzo del destinatario, sarà necessario aggiungere il frammento di documento al documento del canale di stampa.
+Dopo aver creato il primo frammento di documento contenente il nome e l’indirizzo del destinatario, sarà necessario aggiungere il frammento di documento al documento del canale di stampa.
 
-È possibile aggiungere al documento del canale di stampa contenuti di vario tipo, ad esempio frammenti di documento, immagini, frammenti di layout e così via.
+È possibile aggiungere al documento del canale di stampa contenuti di vari tipi, ad esempio Frammenti documento, Immagini, Frammenti di layout e così via.
 
 Per aggiungere contenuti al documento del canale di stampa, seguire il video seguente.
 
-Il video illustra i passaggi necessari per aggiungere contenuto alle aree di destinazione appropriate nel documento del canale di stampa.
+Il video illustra i passaggi necessari per aggiungere contenuti alle aree di destinazione appropriate nel documento del canale di stampa.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22379t2/?quality=9&learn=on)
 
