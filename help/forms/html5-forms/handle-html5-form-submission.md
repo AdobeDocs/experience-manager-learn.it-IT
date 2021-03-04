@@ -1,7 +1,7 @@
 ---
-title: Gestione invio modulo HTML5
-description: Crea gestore di invio modulo HTML5
-feature: mobile-forms
+title: Gestire l’invio di moduli HTML5
+description: Crea handler per l’invio di moduli HTML5
+feature: Forms Mobile
 topics: development
 audience: developer
 doc-type: article
@@ -9,24 +9,27 @@ activity: implement
 version: 6.4,6.5
 kt: 5269
 thumbnail: kt-5269.jpg
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 0%
+source-wordcount: '282'
+ht-degree: 3%
 
 ---
 
 
-# Gestione invio modulo HTML5
+# Gestire l’invio di moduli HTML5
 
-I moduli HTML5 possono essere inviati al servlet ospitato in AEM. I dati inviati sono accessibili nel servlet come flusso di input. Per inviare il modulo HTML5, è necessario aggiungere il &quot;Pulsante Invia per HTTP&quot; al modello di modulo utilizzando  AEM Forms Designer
+I moduli HTML5 possono essere inviati al servlet ospitato in AEM. I dati inviati sono accessibili nel servlet come flusso di input. Per inviare il modulo HTML5 è necessario aggiungere il &quot;Pulsante Invia per HTTP&quot; al modello di modulo utilizzando AEM Forms Designer
 
 ## Creare il gestore di invio
 
-È possibile creare un semplice servlet per gestire l’invio del modulo HTML5. I dati inviati possono quindi essere estratti utilizzando il seguente codice. Questo [servlet](assets/html5-submit-handler.zip) è disponibile come parte di questa esercitazione. Installare il [servlet](assets/html5-submit-handler.zip) utilizzando [package manager](http://localhost:4502/crx/packmgr/index.jsp)
+È possibile creare un semplice servlet per gestire l’invio del modulo HTML5. I dati inviati possono quindi essere estratti utilizzando il seguente codice. Questo [servlet](assets/html5-submit-handler.zip) è disponibile come parte di questa esercitazione. Installa il [servlet](assets/html5-submit-handler.zip) utilizzando [package manager](http://localhost:4502/crx/packmgr/index.jsp)
 
-Il codice della riga 9 può essere utilizzato per richiamare il processo J2EE. Accertatevi di aver configurato [ configurazione SDK client LiveCycle Adobe](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) se intendete utilizzare il codice per richiamare il processo J2EE.
+Il codice della riga 9 può essere utilizzato per richiamare il processo J2EE. Assicurati di aver configurato [Configurazione SDK client Adobe LiveCycle](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) se intendi usare il codice per richiamare il processo J2EE.
 
 ```java
 StringBuffer stringBuffer = new StringBuffer();
@@ -60,28 +63,28 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 ![submit-url](assets/submit-url.PNG)
 
-* Toccate il file xdp e fate clic su _Proprietà_->_Avanzate_
-* copiate http://localhost:4502/content/AemFormsSamples/handlehml5formsubmission.html e incollatelo nel campo di testo Invia URL
-* Fare clic sul pulsante _SaveAndClose_.
+* Tocca l’xdp e fai clic su _Proprietà_->_Avanzate_
+* copia http://localhost:4502/content/AemFormsSamples/handlehml5formsubmission.html e incolla questo nel campo di testo Invia URL
+* Fare clic sul pulsante _SaveAndClose_ .
 
-### Aggiungere una voce nei percorsi di esclusione
+### Aggiungi una voce nei percorsi di esclusione
 
-* Passare a [configMgr](http://localhost:4502/system/console/configMgr).
-* Cerca _Adobe Granite CSRF Filter_
-* Aggiungere la seguente voce nella sezione Percorsi esclusi
+* Passa a [configMgr](http://localhost:4502/system/console/configMgr).
+* Cerca _Filtro Adobe Granite CSRF_
+* Aggiungi la seguente voce nella sezione Percorsi esclusi
 * _/content/AemFormsSamples/handlehml5formsubmit_
-* Salvare le modifiche
+* Salva le modifiche
 
 ### Verificare il modulo
 
-* Toccate il modello xdp.
-* Fare clic su _Preview_->Preview as HTML
-* Inserire alcuni dati nel modulo e fare clic su Invia
+* Tocca il modello xdp.
+* Fare clic su _Anteprima_->Anteprima come HTML
+* Immettere alcuni dati nel modulo e fare clic su Invia
 * Dovresti vedere i dati inviati scritti nel file stdout.log del tuo server
 
 ### Lettura aggiuntiva
 
-Si consiglia inoltre di inserire [articolo](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) per la generazione di PDF dall&#39;invio di moduli HTML5.
+È inoltre consigliato questo [articolo](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) sulla generazione di PDF dall’invio di moduli HTML5.
 
 
 
