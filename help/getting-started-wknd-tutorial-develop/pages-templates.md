@@ -3,7 +3,7 @@ title: Guida introduttiva di AEM Sites - Pagine e modelli
 seo-title: Guida introduttiva di AEM Sites - Pagine e modelli
 description: Scopri la relazione tra un componente della pagina di base e modelli modificabili. Scopri in che modo i componenti core vengono trasmessi in modo approssimativo al progetto e apprendi configurazioni di policy avanzate di modelli modificabili per creare un modello Pagina articoli ben strutturato basato su una simulazione di Adobe XD.
 sub-product: sites
-feature: '"Componenti core, modelli modificabili"'
+feature: editor modelli, componenti core
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -12,13 +12,10 @@ audience: developer
 mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
-topic: '"Gestione dei contenuti, sviluppo"'
-role: Developer (Sviluppatore)
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '3083'
+source-wordcount: '3076'
 ht-degree: 1%
 
 ---
