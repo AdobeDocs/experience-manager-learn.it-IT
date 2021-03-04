@@ -4,21 +4,18 @@ seo-title: Utilizzo dell’integrazione dei dati del profilo utente con AEM Form
 description: Integrazione delle informazioni sul profilo utente di AEM con i moduli adattivi
 seo-description: Integrazione delle informazioni sul profilo utente di AEM con i moduli adattivi
 uuid: c8cfe575-8732-4d8b-99de-fb09e7c2497d
-feature: Moduli adattivi
+feature: moduli adattivi, modello dati modulo
 topics: integrations
 audience: developer
 doc-type: feature video
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: ca01dfce-abab-4bc1-9c5e-3bafdbed4836
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 3%
+source-wordcount: '115'
+ht-degree: 0%
 
 ---
 
