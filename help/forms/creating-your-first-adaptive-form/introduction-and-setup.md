@@ -4,18 +4,21 @@ seo-title: Guida Introduttiva Ai Moduli Adattivi
 description: 'Questa esercitazione illustra i passaggi necessari per creare un modulo adattivo con più schede. Scoprirai come utilizzare le tabelle, il layout a soffietto e l’editor di regole per creare regole di business. '
 seo-description: 'Questa esercitazione illustra i passaggi necessari per creare un modulo adattivo con più schede. Scoprirai come utilizzare le tabelle, il layout a soffietto e l’editor di regole per creare regole di business. '
 uuid: 6f73cb1c-94e2-4ac7-89e5-a72141a06bbe
-feature: moduli adattivi
+feature: Moduli adattivi
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.3,6.4,6.5
 discoiquuid: b6863d3d-8528-4a96-ae37-c8d1aa62d443
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 2%
+source-wordcount: '246'
+ht-degree: 4%
 
 ---
 
