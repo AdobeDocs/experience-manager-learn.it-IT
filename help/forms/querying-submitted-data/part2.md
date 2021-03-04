@@ -1,19 +1,22 @@
 ---
-title: ' AEM Forms con schema JSON e dati[Parte2]'
-seo-title: ' AEM Forms con schema JSON e dati[Parte2]'
-description: Esercitazione con più parti per illustrare i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
-seo-description: Esercitazione con più parti per illustrare i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
-feature: adaptive-forms
+title: AEM Forms con schema JSON e dati[Parte2]
+seo-title: AEM Forms con schema JSON e dati[Parte2]
+description: Esercitazione in più parti per illustrarti i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
+seo-description: Esercitazione in più parti per illustrarti i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 0%
+source-wordcount: '376'
+ht-degree: 1%
 
 ---
 
@@ -23,13 +26,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Si consiglia di utilizzare MySQL 8 come database in quanto supporta il tipo di dati JSON. Sarà inoltre necessario installare il driver appropriato per MySQL DB. Ho utilizzato il driver disponibile in questa posizione https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.12
+>Si consiglia di utilizzare MySQL 8 come database in quanto dispone del supporto per il tipo di dati JSON. Sarà inoltre necessario installare il driver appropriato per MySQL DB. Ho usato il driver disponibile in questa posizione https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.12
 
-Per memorizzare i dati inviati nel database, scriveremo un servlet per estrarre i dati associati e il nome e l&#39;archivio del modulo. Di seguito è riportato il codice completo per gestire l&#39;invio del modulo e memorizzare afBoundData nel database.
+Per memorizzare i dati inviati nel database, scriveremo un servlet per estrarre i dati associati, il nome e l’archivio del modulo. Di seguito è riportato il codice completo per gestire l&#39;invio del modulo e memorizzare i afBoundData nel database.
 
-È stato creato un invio personalizzato per gestire l&#39;invio del modulo. In questo post.POST.jsp di invio personalizzato inoltreremo la richiesta al nostro servlet.
+È stato creato un invio personalizzato per gestire l’invio del modulo. In questo post.POST.jsp di invio personalizzato inoltriamo la richiesta al nostro servlet.
 
-Per ulteriori informazioni sull&#39;invio personalizzato, leggete questo [articolo](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
+Per ulteriori informazioni sull&#39;invio personalizzato, leggere questo [articolo](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,&quot;/bin/storeafsubmit&quot;,null,null);
 
@@ -141,14 +144,14 @@ public class HandleAdaptiveFormSubmission extends SlingAllMethodsServlet {
 
 ![connection pool](assets/connectionpooled.gif)
 
-Per far funzionare il sistema, attenetevi alla seguente procedura
+Per far funzionare questo sistema, segui i seguenti passaggi
 
-* [Scaricate e decomprimete il file zip](assets/aemformswithjson.zip)
-* Creare AdaptiveForm con lo schema JSON. Potete utilizzare lo schema JSON fornito come parte di queste risorse articolo. Verificare che l&#39;azione di invio del modulo sia configurata correttamente. L&#39;azione di invio deve essere configurata con &quot;CustomSubmitHelpx&quot;.
-* Creare uno schema nell&#39;istanza MySQL importando il file schema.sql tramite lo strumento Workbench MySQL. Anche il file schema.sql viene fornito come parte di questa esercitazione.
-* Configurare l’origine dati pool di connessioni Apache Sling dalla console Web di Felix
-* Accertatevi di assegnare al nome dell&#39;origine dati il nome &quot;aemformswithjson&quot;. Nome utilizzato dal bundle OSGi di esempio fornito all’utente
-* Per le proprietà, fare riferimento all&#39;immagine precedente. Ciò presuppone che sia possibile utilizzare MySQL come database.
-* Distribuite i bundle OSGi forniti come parte delle risorse dell&#39;articolo.
-* Visualizzare l&#39;anteprima del modulo e inviare il modulo.
-* I dati JSON verranno memorizzati nel database creato al momento dell&#39;importazione del file &quot;schema.sql&quot;.
+* [Scarica e decomprimi il file zip](assets/aemformswithjson.zip)
+* Crea AdaptiveForm con lo schema JSON. Puoi utilizzare lo schema JSON fornito come parte di questa risorsa articolo. Verificare che l’azione di invio del modulo sia configurata in modo appropriato. L’azione di invio deve essere configurata in &quot;CustomSubmitHelpx&quot;.
+* Creare uno schema nell&#39;istanza MySQL importando il file schema.sql tramite lo strumento Workbench MySQL. Il file schema.sql viene fornito anche come parte di questa esercitazione risorse.
+* Configura l&#39;origine dati in pool di connessione Apache Sling dalla console web Felix
+* Assicurati di assegnare un nome alla tua origine dati &quot;aemformswithjson&quot;. Questo è il nome utilizzato dal bundle OSGi di esempio fornito all&#39;utente
+* Fai riferimento all&#39;immagine precedente per le proprietà. Si presume che verrà utilizzato MySQL come database.
+* Distribuisci i bundle OSGi forniti come parte delle risorse di questo articolo.
+* Visualizzare l’anteprima del modulo e inviare il modulo.
+* I dati JSON verranno memorizzati nel database creato al momento dell’importazione del file &quot;schema.sql&quot;.
