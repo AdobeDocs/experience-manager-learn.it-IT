@@ -1,42 +1,44 @@
 ---
-title: Sviluppo per CORS (Cross Origin Resource Sharing) con AEM
-description: Un breve esempio di utilizzo di CORS per accedere AEM contenuto da un'applicazione Web esterna tramite JavaScript lato client.
+title: Sviluppa per CORS (Cross-Origin Resource Sharing) con AEM
+description: Un breve esempio di utilizzo di CORS per accedere al contenuto AEM da un’applicazione web esterna tramite JavaScript lato client.
 version: 6.3, 6,4, 6.5
-sub-product: servizi di base, servizi di contenuto, siti
-feature: null
+sub-product: fondazione, content-services, siti
 topics: security, development, content-delivery
 activity: develop
 audience: developer
 doc-type: tutorial
+topic: Sicurezza
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: bc14783840a47fb79ddf1876aca1ef44729d097e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
 
 
-# Sviluppo per CORS (Cross-Origin Resource Sharing)
+# Sviluppa per la condivisione delle risorse tra le origini (CORS, Cross-Origin Resource Sharing)
 
-Un breve esempio di utilizzo di [!DNL CORS] per accedere AEM contenuto da un&#39;applicazione Web esterna tramite JavaScript lato client.
+Un breve esempio di utilizzo di [!DNL CORS] per accedere ai contenuti AEM da un’applicazione web esterna tramite JavaScript lato client.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837/?quality=12&learn=on)
 
 In questo video:
 
-* **www.example.** commaps to localhost tramite  `/etc/hosts`
+* **www.example.** effettua il comaps su localhost tramite  `/etc/hosts`
 * **aem-publish.** localmap su localhost tramite  `/etc/hosts`
-* [SimpleHTTPServer](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12) (un wrapper per  [[!DNL Python]SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)) distribuisce la pagina HTML tramite la porta 8000.
-* [!DNL AEM Dispatcher] è in esecuzione su  [!DNL Apache HTTP Web Server] 2.4 e la richiesta  `aem-publish.local` di inoltro invertito su  `localhost:4503`.
+* [SimpleHTTPServer](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12)  (un wrapper per  [[!DNL Python]SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)) distribuisce la pagina HTML tramite la porta 8000.
+* [!DNL AEM Dispatcher] è in esecuzione su  [!DNL Apache HTTP Web Server] 2.4 e la richiesta di reverse-proxy  `aem-publish.local` a  `localhost:4503`.
 
-Per ulteriori dettagli, vedere [Informazioni sulla condivisione delle risorse tra le origini (CORS) in AEM](./understand-cross-origin-resource-sharing.md).
+Per ulteriori dettagli, consulta [Informazioni sulla condivisione delle risorse tra le origini (CORS) in AEM](./understand-cross-origin-resource-sharing.md).
 
 ## www.example.com HTML e JavaScript
 
 Questa pagina Web ha una logica che
 
-1. Quando si fa clic sul pulsante
+1. Facendo clic sul pulsante
 1. Invia una richiesta [!DNL AJAX GET] a `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`
 1. Recupera la `jcr:title` dalla risposta JSON
 1. Inserisce il `jcr:title` nel DOM
@@ -96,7 +98,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ## Configurazione del dispatcher {#dispatcher-configuration}
 
-Per consentire la memorizzazione nella cache e la gestione delle intestazioni CORS nei contenuti memorizzati nella cache, aggiungete i seguenti file di configurazione [/clientheaders](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) a tutti i file di supporto di AEM Publish `dispatcher.any`.
+Per consentire il caching e il serving delle intestazioni CORS sui contenuti memorizzati nella cache, aggiungi la seguente [/clientheaders configuration](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) a tutti i file AEM Publish `dispatcher.any` che supportano.
 
 ```
 /cache { 
@@ -113,17 +115,17 @@ Per consentire la memorizzazione nella cache e la gestione delle intestazioni CO
 }
 ```
 
-**Riavviate l&#39;** applicazione server Web dopo aver apportato le modifiche al  `dispatcher.any` file.
+**Riavvia l&#39;** applicazione del server web dopo aver apportato modifiche al  `dispatcher.any` file.
 
-È probabile che la cancellazione completa della cache sia necessaria per garantire che le intestazioni siano correttamente memorizzate nella cache sulla richiesta successiva dopo un aggiornamento di configurazione `/clientheaders`.
+È probabile che cancelli la cache interamente necessaria per garantire che le intestazioni siano correttamente memorizzate nella cache nella richiesta successiva dopo un `/clientheaders` aggiornamento della configurazione.
 
 ## Materiali di supporto {#supporting-materials}
 
-* [AEM fabbrica di configurazione OSGi per i criteri di condivisione delle risorse tra origini](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
+* [Fabbrica di configurazione AEM OSGi per i criteri di condivisione delle risorse tra origini diverse](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
 * [SimpleHTTPServer per macOS](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12)
-* [Python SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html) (compatibile con Windows/macOS/Linux)
+* [Python SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)  (compatibile con Windows/macOS/Linux)
 
-* [Informazioni sulla condivisione delle risorse tra le origini (CORS) in AEM](./understand-cross-origin-resource-sharing.md)
+* [Informazioni sulla condivisione delle risorse tra le origini (Cross-Origin Resource Sharing, CORS) in AEM](./understand-cross-origin-resource-sharing.md)
 * [Condivisione risorse tra le origini (W3C)](https://www.w3.org/TR/cors/)
-* [Controllo degli accessi HTTP (MDN Mozilla)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
+* [Controllo degli accessi HTTP (Mozilla MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
 
