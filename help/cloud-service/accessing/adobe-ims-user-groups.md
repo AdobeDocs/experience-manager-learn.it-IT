@@ -1,7 +1,7 @@
 ---
-title: ' Adobe IMS gruppi utenti e AEM'
-description:   Adobe di gruppi di utenti IMS stabiliscono set logici di utenti esposti a AEM, in cui possono essere utilizzati per definire le autorizzazioni di ottimizzazione per AEM utenti.
-feature: users-and-groups
+title: Gruppi di utenti di Adobe IMS e AEM
+description:  I gruppi di utenti di Adobe IMS stabiliscono set logici di utenti esposti ad AEM, dove possono essere utilizzati per definire le autorizzazioni di ottimizzazione per gli utenti AEM.
+feature: 'Utenti e gruppi '
 topics: authentication
 version: cloud-service
 activity: setup
@@ -9,22 +9,25 @@ audience: administrator
 doc-type: feature video
 kt: 4999
 thumbnail: 39150.jpg
+topic: Amministrazione, sicurezza
+role: Administrator
+level: Principiante
 translation-type: tm+mt
-source-git-commit: f30d15f0578b7e529e4acefb8e1d2e29157ab359
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 0%
+source-wordcount: '99'
+ht-degree: 4%
 
 ---
 
 
-# Gruppi di utenti  Adobe IMS
+# Gruppi di utenti di Adobe IMS
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_usergroups"
->title="Gruppi di utenti  Adobe IMS"
->abstract=" Adobe di gruppi di utenti IMS stabiliscono set logici di utenti esposti a AEM, in cui possono essere utilizzati per definire le autorizzazioni di ottimizzazione per AEM utenti."
+>title="Gruppi di utenti di Adobe IMS"
+>abstract="I gruppi di utenti di Adobe IMS stabiliscono set logici di utenti esposti ad AEM, dove possono essere utilizzati per definire le autorizzazioni di ottimizzazione per gli utenti AEM."
 
-  Adobe di gruppi di utenti IMS stabiliscono set logici di utenti esposti a AEM, in cui possono essere utilizzati per definire le autorizzazioni di ottimizzazione per AEM utenti.
+ I gruppi di utenti di Adobe IMS stabiliscono set logici di utenti esposti ad AEM, dove possono essere utilizzati per definire le autorizzazioni di ottimizzazione per gli utenti AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39150/?quality=12&learn=on)
