@@ -1,26 +1,29 @@
 ---
-title: Attivazione AEM flusso di lavoro per l’invio di moduli HTML5
-seo-title: Attiva AEM flusso di lavoro per l’invio di moduli HTML5
-description: Continuare a compilare il modulo per dispositivi mobili in modalità offline e inviare il modulo per dispositivi mobili per attivare AEM flusso di lavoro
-seo-description: Continuare a compilare il modulo per dispositivi mobili in modalità offline e inviare il modulo per dispositivi mobili per attivare AEM flusso di lavoro
-feature: mobile-forms
+title: Attiva flusso di lavoro AEM per l’invio di moduli HTML5
+seo-title: Attiva flusso di lavoro AEM sull’invio di moduli HTML5
+description: Continua a compilare il modulo mobile in modalità offline e invia il modulo mobile per attivare il flusso di lavoro AEM
+seo-description: Continua a compilare il modulo mobile in modalità offline e invia il modulo mobile per attivare il flusso di lavoro AEM
+feature: Forms Mobile
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: c56942831614b981684861ea78f1bd15f3bb1ab9
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 2%
+source-wordcount: '194'
+ht-degree: 4%
 
 ---
 
 
-# Flusso di lavoro per esaminare e approvare il PDF inviato
+# Flusso di lavoro per rivedere e approvare il PDF inviato
 
-L&#39;ultimo passaggio consiste nel creare AEM flusso di lavoro che genererà un PDF statico, o non interattivo, da sottoporre a revisione e approvazione. Il flusso di lavoro verrà attivato tramite un AEM Launcher configurato sul nodo `/content/pdfsubmissions`.
+L’ultimo e ultimo passaggio consiste nel creare un flusso di lavoro AEM che genererà un PDF statico o non interattivo da rivedere e approvare. Il flusso di lavoro verrà attivato tramite un modulo di avvio AEM configurato sul nodo `/content/pdfsubmissions`.
 
 La schermata seguente mostra i passaggi coinvolti nel flusso di lavoro.
 
@@ -28,7 +31,7 @@ La schermata seguente mostra i passaggi coinvolti nel flusso di lavoro.
 
 ## Passaggio del flusso di lavoro Genera PDF non interattivo
 
-Il modello XDP e i dati da unire con il modello sono specificati qui. I dati da unire sono i dati inviati dal PDF. I dati inviati vengono memorizzati nel nodo `/content/pdfsubmissions`.
+Il modello XDP e i dati da unire con il modello sono specificati qui. I dati da unire sono i dati inviati dal PDF. I dati inviati vengono memorizzati sotto il nodo `/content/pdfsubmissions`.
 
 ![workflow](assets/generate-pdf1.PNG)
 
@@ -38,6 +41,6 @@ Il PDF generato viene assegnato alla variabile del flusso di lavoro denominata `
 
 ### Assegnare il pdf generato per la revisione e l&#39;approvazione
 
-Il componente per l’assegnazione del flusso di lavoro attività viene utilizzato qui per assegnare il PDF generato per la revisione e l’approvazione. La variabile `submittedPDF` viene utilizzata nella scheda Forms e Documenti del componente Flusso di lavoro Assegna attività.
+Il componente Flusso di lavoro di assegnazione viene utilizzato qui per assegnare il PDF generato per la revisione e l’approvazione. La variabile `submittedPDF` viene utilizzata nella scheda Moduli e documenti del componente del flusso di lavoro Assegna attività .
 
 ![workflow](assets/assign-task.PNG)
