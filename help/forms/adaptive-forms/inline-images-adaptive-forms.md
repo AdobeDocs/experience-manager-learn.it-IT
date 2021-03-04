@@ -1,30 +1,33 @@
 ---
-title: Visualizzazione di immagini in linea in Forms adattivo
-seo-title: Visualizzazione di immagini in linea in Forms adattivo
-description: Visualizzare le immagini caricate in linea in Forms adattivo
-seo-description: Visualizzare le immagini caricate in linea in Forms adattivo
-feature: adaptive-forms
+title: Visualizzazione di immagini in linea nei moduli adattivi
+seo-title: Visualizzazione di immagini in linea nei moduli adattivi
+description: Visualizzare le immagini caricate in linea nei moduli adattivi
+seo-description: Visualizzare le immagini caricate in linea nei moduli adattivi
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 0%
+source-wordcount: '243'
+ht-degree: 1%
 
 ---
 
 
-# Immagini in linea in Forms adattivo
+# Immagini in linea nei moduli adattivi
 
-Un caso d’uso comune consiste nel visualizzare l’immagine caricata come immagine in linea nel modulo adattivo. Per impostazione predefinita, l&#39;immagine caricata è visualizzata come collegamento e questa esperienza può essere migliorata visualizzando l&#39;immagine in Modulo adattivo. Questo articolo illustra i passaggi necessari per visualizzare le immagini in linea.
+Un caso d’uso comune è la visualizzazione dell’immagine caricata come immagine in linea in Modulo adattivo. Per impostazione predefinita, l’immagine caricata viene visualizzata come collegamento e questa esperienza può essere migliorata visualizzando l’immagine in Modulo adattivo. Questo articolo illustra i passaggi necessari per visualizzare le immagini in linea.
 
 ## Aggiungi immagine segnaposto
 
-Il primo passaggio consiste nell’anteporre un div segnaposto al componente di allegato del file. Nel codice sotto il componente allegato file è identificato dal nome della classe CSS del file di caricamento foto. La funzione JavaScript fa parte della libreria client associata ai moduli adattivi. Questa funzione viene chiamata nell&#39;evento initialize del componente file allegato.
+Il primo passo è quello di anteporre un div segnaposto al componente file allegato. Nel codice sottostante il componente allegato file è identificato dal nome della classe CSS del file di caricamento foto. La funzione JavaScript fa parte della libreria client associata ai moduli adattivi. Questa funzione viene chiamata nell&#39;evento initialize del componente file allegato.
 
 ```javascript
 /**
@@ -39,7 +42,7 @@ function addTempImage(){
 
 ### Visualizza immagine in linea
 
-Dopo che l’utente ha caricato l’immagine, la funzione elencata di seguito viene richiamata in corrispondenza dell’evento commit del componente file allegato. La funzione riceve l&#39;oggetto file caricato come argomento.
+Dopo che l&#39;utente ha caricato l&#39;immagine, la funzione elencata di seguito viene richiamata nell&#39;evento commit del componente file allegato. La funzione riceve l&#39;oggetto file caricato come argomento.
 
 ```javascript
 /**
@@ -65,9 +68,9 @@ function consumeImage (file) {
 }
 ```
 
-### Implementazione sul server
+### Distribuisci sul server
 
-* Scaricate e installate la [libreria client](assets/inline-image-client-library.zip) nell&#39;istanza AEM utilizzando AEM gestore pacchetti.
-* Scaricate e installate il [modulo di esempio](assets/inline-image-af.zip) nell&#39;istanza AEM utilizzando AEM gestore pacchetti.
-* Posizionare il browser su [Aggiungi immagine in linea](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
-* Fate clic sul pulsante &quot;Allega la foto&quot; per aggiungere l&#39;immagine
+* Scarica e installa la [libreria client](assets/inline-image-client-library.zip) nella tua istanza AEM utilizzando il gestore di pacchetti AEM.
+* Scarica e installa il [modulo di esempio](assets/inline-image-af.zip) sulla tua istanza AEM utilizzando il gestore di pacchetti AEM.
+* Posiziona il browser su [Aggiungi immagine in linea](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
+* Fai clic sul pulsante &quot;Allega la tua foto&quot; per aggiungere l&#39;immagine
