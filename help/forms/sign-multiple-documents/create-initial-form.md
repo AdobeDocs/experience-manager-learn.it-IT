@@ -1,7 +1,7 @@
 ---
 title: Creare il modulo iniziale per attivare il processo
 description: Creare un modulo iniziale per attivare la notifica via e-mail e avviare il processo di firma.
-feature: Moduli adattivi
+feature: moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,14 +9,11 @@ activity: implement
 version: 6.4,6.5
 kt: 6892
 thumbnail: 6892.jpg
-topic: Sviluppo
-role: Professionista
-level: Intermedio
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 6%
+source-wordcount: '169'
+ht-degree: 5%
 
 ---
 
