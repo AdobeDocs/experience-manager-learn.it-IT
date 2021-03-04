@@ -3,15 +3,17 @@ title: Comprendere la condivisione di risorse tra le origini (CORS) con AEM
 description: La condivisione delle risorse tra le origini di Adobe Experience Manager (CORS) facilita le proprietà web non AEM per effettuare chiamate lato client ad AEM, sia autenticate che non autenticate, per recuperare contenuti o per interagire direttamente con AEM.
 version: 6.3, 6,4, 6.5
 sub-product: fondazione, content-services, siti
-feature: null
 topics: security, development, content-delivery
 activity: understand
 audience: architect, developer
 doc-type: article
+topic: Sicurezza
+role: Developer (Sviluppatore)
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '920'
 ht-degree: 1%
 
 ---
@@ -132,7 +134,7 @@ Generalmente, le stesse considerazioni per la memorizzazione in cache del conten
 |-----------|-------------|-----------------------|-------------|
 | No | AEM Publish | Autenticato | Il caching del Dispatcher su AEM Author è limitato alle risorse statiche e non create. Questo rende difficile e poco pratico memorizzare nella cache la maggior parte delle risorse su AEM Author, comprese le intestazioni di risposta HTTP. |
 | No | Pubblicazione AEM | Autenticato | Evita di memorizzare in cache le intestazioni CORS sulle richieste autenticate. Questo si allinea alle linee guida comuni per non memorizzare in cache le richieste autenticate, in quanto è difficile determinare in che modo lo stato di autenticazione/autorizzazione dell’utente richiedente influirà sulla risorsa consegnata. |
-| Sì | Pubblicazione AEM | Anonimo | Le richieste anonime che possono essere memorizzate nella cache del dispatcher possono avere anche le loro intestazioni di risposta memorizzate nella cache, garantendo che le future richieste CORS possano accedere al contenuto memorizzato nella cache. Eventuali modifiche alla configurazione CORS in AEM Publish **devono essere seguite da un&#39;invalidazione delle risorse memorizzate nella cache interessate.** Le best practice determinano le implementazioni di codice o di configurazione che la cache del dispatcher viene eliminata, in quanto è difficile determinare quale contenuto memorizzato nella cache può essere eseguito. |
+| Sì | Pubblicazione AEM | Anonimo | Le richieste anonime che possono essere memorizzate nella cache del dispatcher possono avere anche le loro intestazioni di risposta memorizzate nella cache, garantendo che le future richieste CORS possano accedere al contenuto memorizzato nella cache. Eventuali modifiche alla configurazione CORS in AEM Publish **devono essere seguite da un&#39;invalidazione delle risorse memorizzate nella cache interessate.** Le best practice determinano le implementazioni di codice o di configurazione che la cache del dispatcher viene eliminata, in quanto è difficile determinare quale contenuto in cache può essere eseguito. |
 
 Per consentire il caching delle intestazioni CORS, aggiungi la seguente configurazione a tutti i file AEM Publish dispatcher.any che supportano.
 
