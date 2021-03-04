@@ -1,72 +1,76 @@
 ---
-title: Personalizzazione mediante  Adobe Target Visual Experience Composer
-seo-title: Personalizzazione mediante  Adobe Target Visual Experience Composer (VEC)
-description: Un'esercitazione end-to-end che mostra come creare e distribuire esperienze personalizzate utilizzando  Adobe Target Visual Experience Composer (VEC).
-seo-description: Un'esercitazione end-to-end che mostra come creare e distribuire esperienze personalizzate utilizzando  Adobe Target Visual Experience Composer (VEC).
+title: Personalizzazione tramite il Compositore esperienza visivo di Adobe Target
+seo-title: Personalizzazione tramite Compositore esperienza visivo (VEC) di Adobe Target
+description: Un tutorial end-to-end che mostra come creare e distribuire esperienze personalizzate utilizzando il Compositore esperienza visivo di Adobe Target.
+seo-description: Un tutorial end-to-end che mostra come creare e distribuire esperienze personalizzate utilizzando il Compositore esperienza visivo di Adobe Target.
+feature: Frammenti di esperienza
+topic: Personalizzazione
+role: Developer (Sviluppatore)
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 0443c8ff42e773021ff8b6e969f5c1c31eea3ae4
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 2%
+source-wordcount: '615'
+ht-degree: 3%
 
 ---
 
 
-# Personalizzazione mediante Visual Experience Composer (Compositore esperienza visivo)
+# Personalizzazione tramite Compositore esperienza visivo
 
-In questo capitolo, esploreremo la creazione di esperienze utilizzando **Visual Experience Composer** trascinando, rilasciando, scambiando e modificando il layout e il contenuto di una pagina Web dall&#39;interno di Target.
+In questo capitolo, esploreremo la creazione di esperienze utilizzando **Compositore esperienza visivo** trascinando, rilasciando, scambiando e modificando il layout e il contenuto di una pagina web dall&#39;interno di Target.
 
-## Panoramica scenario
+## Panoramica dello scenario
 
-La home page del sito WKND mostra le attività locali o la cosa migliore da fare intorno a una città sotto forma di layout di scheda. Come esperto di marketing, ti è stata assegnata l&#39;attività di modificare la pagina principale, ridisponendo i layout della scheda per vedere in che modo ciò influenzi il coinvolgimento degli utenti e stimola la conversione.
+La home page del sito WKND mostra le attività locali o la cosa migliore da fare intorno a una città sotto forma di layout di carte. In qualità di addetto al marketing, ti è stato assegnato il compito di modificare la home page riorganizzando i layout delle schede per vedere in che modo influisce sul coinvolgimento dell’utente e favorisce la conversione.
 
 ### Utenti coinvolti
 
-Per questo esercizio, è necessario coinvolgere i seguenti utenti e per eseguire alcune attività potrebbe essere necessario l&#39;accesso amministrativo.
+Per questo esercizio è necessario coinvolgere i seguenti utenti ed eseguire alcune attività, potrebbe essere necessario un accesso amministrativo.
 
 * **Content Producer/Content Editor**  (Adobe Experience Manager)
-* **Marketing** ( Adobe Target / Gruppo di ottimizzazione)
+* **Addetto al marketing**  (Adobe Target / Team di ottimizzazione)
 
 ### Home page sito WKND
 
-![AEM Target 1](assets/personalization-use-case-3/aem-target-use-case-3.png)
+![Scenario 1 di AEM Target](assets/personalization-use-case-3/aem-target-use-case-3.png)
 
 ### Prerequisiti
 
 * **AEM**
-   * [AEM ](./implementation.md#getting-aem) istancerunning di pubblicazione su 4503
-   * [AEM integrato con  Adobe Target mediante  Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
+   * [AEM pubblica ](./implementation.md#getting-aem) instancerunning il 4503
+   * [AEM integrato con Adobe Target tramite Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
-   * Accesso alle organizzazioni Adobe Experience Cloud - <https://>`<yourcompany>`.experienceecCloud.adobe.com
-   *  Experience Cloud fornito con [ Adobe Target](https://experiencecloud.adobe.com)
+   * Accesso alle organizzazioni Adobe Experience Cloud - <https://>`<yourcompany>`.experiencecloud.adobe.com
+   * Provisioning di Experience Cloud con [Adobe Target](https://experiencecloud.adobe.com)
 
 ## Attività di marketing
 
-1. L&#39;esperto di marketing crea un&#39;attività target A/B in  Adobe Target.
-   1. Dalla finestra  Adobe Target, passare alla scheda **Attività**.
-   2. Fare clic sul pulsante **Crea attività** e selezionare il tipo di attività come **A/B Test**
+1. L’addetto al marketing crea un’attività di destinazione A/B all’interno di Adobe Target.
+   1. Dalla finestra di Adobe Target, passa alla scheda **Attività** .
+   2. Fai clic sul pulsante **Crea attività** e seleziona il tipo di attività come **Test A/B**
 
-      ![ Adobe Target - Crea attività](assets/personalization-use-case-2/create-ab-activity.png)
-   3. Selezionate il canale **Web** e scegliete **Visual Experience Composer (Compositore esperienza visivo)**.
-   4. Inserite l&#39; **URL attività** e fate clic su **Avanti** per aprire Visual Experience Composer (Compositore esperienza visivo).
-      ![ Adobe Target - Crea attività](assets/personalization-use-case-2/create-activity-ab-name.png)
-   5. Per consentire il caricamento di **Visual Experience Composer**, abilitate **Allow Load Unsafe scripts** nel browser e ricaricate la pagina.
-      ![Attività di targeting delle esperienze](assets/personalization-use-case-1/load-unsafe-scripts.png)
-   6. Notate che la home page del sito WKND si apre nell&#39;editor di Visual Experience Composer (Compositore esperienza visivo).
+      ![Adobe Target - Creare un’attività](assets/personalization-use-case-2/create-ab-activity.png)
+   3. Seleziona il canale **Web** e scegli il **Compositore esperienza visivo**.
+   4. Inserisci l&#39; **URL attività** e fai clic su **Avanti** per aprire il Compositore esperienza visivo.
+      ![Adobe Target - Creare un’attività](assets/personalization-use-case-2/create-activity-ab-name.png)
+   5. Affinché **Compositore esperienza visivo** possa essere caricato, abilita **Consenti il caricamento di script non sicuri** nel browser e ricarica la pagina.
+      ![Attività Targeting esperienze](assets/personalization-use-case-1/load-unsafe-scripts.png)
+   6. Osserva la home page del sito WKND aperta nell’editor del Compositore esperienza visivo.
       ![VEC](assets/personalization-use-case-2/vec.png)
-   7. **Experience** Fornisce la home page WKND predefinita e modifichiamo il layout del contenuto per l&#39; **Esperienza B**.
+   7. **Experience** fornisce la home page WKND predefinita e modifichiamo il layout del contenuto per  **Experience B**.
       ![Esperienza B](assets/personalization-use-case-3/use-case3-experience-b.png)
-   8. Fate clic su uno dei contenitori di layout scheda (*Migliori Roasters*) e selezionate l&#39;opzione **Ridisponi**.
-      ![Selezione contenitore](assets/personalization-use-case-3/container-selection.png)
-   9. Fate clic sul contenitore che desiderate ridisporre e trascinatelo nella posizione desiderata. Ridisponiamo il contenitore *Migliori Roasters* dalla prima riga alla prima riga terza colonna. Ora il contenitore *Best Roasters* sarà accanto al contenitore *Photography Exhibitions*.
+   8. Fai clic su uno dei contenitori di layout della scheda (*Best Roasters*) e seleziona l&#39;opzione **Ridisponi**.
+      ![Selezione del contenitore](assets/personalization-use-case-3/container-selection.png)
+   9. Fai clic sul contenitore che desideri ridisporre e trascinalo nella posizione desiderata. Ridisponiamo il contenitore *Best Roasters* dalla prima riga prima colonna alla prima riga terza colonna. Ora il contenitore *Best Roasters* si trova accanto al contenitore *Mostra fotografia* .
       ![Scambio contenitore](assets/personalization-use-case-3/container-swap.png)
 
       **Dopo lo scambio**
       ![Contenitore scambiato](assets/personalization-use-case-3/after-swap-1-3.png)
-   10. Allo stesso modo, ridisponete le posizioni per gli altri contenitori della scheda.
+   10. Analogamente, ridisporre le posizioni per gli altri contenitori di carte.
       ![Contenitore scambiato](assets/personalization-use-case-3/after-swap-all.png)
-   11. Aggiungete anche un testo di intestazione sotto il componente carosello e sopra il layout della scheda.
-   12. Fate clic sul contenitore del carosello e selezionate l&#39;opzione **Inserisci dopo > HTML** per aggiungere il codice HTML.
+   11. Aggiungiamo anche un testo di intestazione sotto il componente carosello e sopra il layout di scheda.
+   12. Fai clic sul contenitore del carosello e seleziona l’opzione **Inserisci dopo > HTML** per aggiungere il codice HTML.
       ![Aggiungi testo](assets/personalization-use-case-3/add-text.png)
 
       ```html
@@ -74,20 +78,20 @@ Per questo esercizio, è necessario coinvolgere i seguenti utenti e per eseguire
       ```
 
       ![Aggiungi testo](assets/personalization-use-case-3/after-changes.png)
-   13. Fare clic su **Next** per continuare con l&#39;attività.
-   14. Selezionare il **Metodo di allocazione del traffico** come manuale e assegnare il 100% del traffico a **Esperienza B**.
-      ![Experience B Traffic](assets/personalization-use-case-2/traffic.png)
+   13. Fai clic su **Avanti** per continuare l&#39;attività.
+   14. Seleziona il **Metodo di allocazione del traffico** come manuale e assegna il 100% del traffico a **Esperienza B**.
+      ![Traffico B](assets/personalization-use-case-2/traffic.png)
    15. Fai clic su **Avanti**.
-   16. Fornire **Metriche obiettivo** per l&#39;attività e salvare e chiudere il test A/B.
-      ![Metrica obiettivo test A/B](assets/personalization-use-case-2/goal-metric.png)
-   17. Immettete un nome (**Aggiornamento pagina iniziale WKND**) per l&#39;attività e salvate le modifiche.
-   18. Dalla schermata Dettagli attività, accertatevi di **Attivare** l&#39;attività.
+   16. Fornisci **Metriche obiettivo** per la tua attività e Salva e chiudi il test A/B.
+      ![Metrica per obiettivo di test A/B](assets/personalization-use-case-2/goal-metric.png)
+   17. Specifica un nome (**Aggiorna home page WKND**) per l&#39;attività e salva le modifiche.
+   18. Dalla schermata dei dettagli dell&#39;attività, assicurati di **Attivare** l&#39;attività.
       ![Attiva attività](assets/personalization-use-case-3/save-activity.png)
-   19. Passate alla home page WKND (http://localhost:4503/content/wknd/en.html) e notate le modifiche aggiunte all&#39;attività di test A/B di aggiornamento pagina iniziale WKND.
+   19. Passa alla home page WKND (http://localhost:4503/content/wknd/en.html) e noterai le modifiche aggiunte all’attività Test A/B di aggiornamento pagina Home WKND.
       ![Home page WKND aggiornata](assets/personalization-use-case-3/activity-result.png)
-   20. Aprite la console del browser e ispezionate la scheda di rete per cercare la risposta di destinazione per l&#39;attività di test A/B di aggiornamento pagina iniziale WKND.
+   20. Apri la console del browser e controlla la scheda di rete per cercare la risposta di destinazione per l’attività Test A/B di aggiornamento pagina iniziale WKND.
       ![Attività di rete](assets/personalization-use-case-3/activity-result.png)
 
 ## Riepilogo
 
-In questo capitolo, un esperto di marketing è stato in grado di creare un&#39;esperienza utilizzando Visual Experience Composer (Compositore esperienza visivo) trascinando, scambiando e modificando il layout e il contenuto di una pagina Web senza modificare il codice per eseguire un test.
+In questo capitolo, un addetto al marketing è stato in grado di creare un’esperienza utilizzando Visual Experience Composer (Compositore esperienza visivo) trascinando e rilasciando, scambiando e modificando il layout e il contenuto di una pagina web senza modificare il codice necessario per eseguire un test.
