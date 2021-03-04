@@ -1,31 +1,34 @@
 ---
-title: Personalizzazione Inbox
-description: Aggiunta di colonne personalizzate per visualizzare dati aggiuntivi sul flusso di lavoro
-feature: adaptive-forms
+title: Personalizzazione della casella in entrata
+description: Aggiungi colonne personalizzate per visualizzare i dati aggiuntivi del flusso di lavoro
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5.5
 kt: 5830
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: ecbd4d21c5f41b2bc6db3b409767b767f00cc5d1
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 2%
+source-wordcount: '311'
+ht-degree: 3%
 
 ---
 
 
-# Aggiungere colonne personalizzate
+# Aggiungi colonne personalizzate
 
-Per visualizzare i dati del flusso di lavoro nella inbox, è necessario definire e compilare le variabili nel flusso di lavoro. Il valore della variabile deve essere impostato prima che un&#39;attività venga assegnata a un utente. Per iniziare, abbiamo fornito un esempio di flusso di lavoro pronto per essere implementato sul server AEM.
+Per visualizzare i dati del flusso di lavoro nella inbox, dobbiamo definire e popolare le variabili nel flusso di lavoro. Il valore della variabile deve essere impostato prima che un&#39;attività venga assegnata a un utente. Per fornirti un primo avvio, abbiamo fornito un flusso di lavoro di esempio pronto per essere implementato sul tuo server AEM.
 
-* [Accedi a AEM](http://localhost:4502/crx/de/index.jsp)
-* [Importazione del flusso di lavoro di revisione](assets/review-workflow.zip)
-* [Revisione del flusso di lavoro](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
+* [Accedi ad AEM](http://localhost:4502/crx/de/index.jsp)
+* [Importa il flusso di lavoro di revisione](assets/review-workflow.zip)
+* [Rivedi il flusso di lavoro](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
 
-Questo flusso di lavoro presenta due variabili definite (isMarried e Income) e i relativi valori sono impostati utilizzando il componente della variabile set. Queste variabili saranno rese disponibili come colonne da aggiungere AEM casella in entrata
+Questo flusso di lavoro ha due variabili definite (isMarried e Revenue) e i suoi valori sono impostati utilizzando il componente della variabile impostata. Queste variabili saranno rese disponibili come colonne da aggiungere alla inbox AEM
 
 ## Crea servizio
 
@@ -73,23 +76,23 @@ return isMarried(inboxItem);
 
 >[!NOTE]
 >
->Affinché il codice riportato sopra funzioni, è necessario includere AEM 6.5.5 Uber.jar nel progetto
+>Affinché il codice di cui sopra funzioni, devi includere AEM 6.5.5 Uber.jar nel tuo progetto
 
 ![uber-jar](assets/uber-jar.PNG)
 
-## Eseguire il test sul server
+## Test sul server
 
-* [Accedere AEM console Web](http://localhost:4502/system/console/bundles)
-* [Distribuzione e avvio del bundle di personalizzazione della inbox](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
-* [Aprite la inbox](http://localhost:4502/aem/inbox)
-* Aprire Admin Control facendo clic sull&#39;icona _Visualizzazione elenco_ accanto al pulsante _Crea_
-* Aggiungi colonna sposata a Posta in arrivo e salva le modifiche
-* [Vai all&#39;interfaccia utente di FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Importa il ](assets/snap-form.zip) modulo di esempio selezionando  _File_ caricato da  __ Createmenu
+* [Accedi alla console web AEM](http://localhost:4502/system/console/bundles)
+* [Distribuzione e avvio del bundle di personalizzazione della casella in entrata](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
+* [Apri la inbox](http://localhost:4502/aem/inbox)
+* Apri Admin Control facendo clic sull&#39;icona _Vista a elenco_ accanto al pulsante _Crea_
+* Aggiungi colonna selezionata alla casella in entrata e salva le modifiche
+* [Passa all’interfaccia utente di FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Importa il ](assets/snap-form.zip) modulo di esempio selezionando  _File_ Uploadfrom  __ Createmenu.
 * [Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
 * Selezionare lo _stato civile_ e inviare il modulo
-   [casella in entrata](http://localhost:4502/aem/inbox)
+   [visualizza casella in entrata](http://localhost:4502/aem/inbox)
 
-L&#39;invio del modulo attiverà il flusso di lavoro e un&#39;attività verrà assegnata all&#39;utente &quot;admin&quot;. Dovresti visualizzare un valore sotto la colonna Sposato come mostrato in questa schermata
+L’invio del modulo attiverà il flusso di lavoro e un’attività verrà assegnata all’utente &quot;amministratore&quot;. Dovresti visualizzare un valore nella colonna Sposato come mostrato in questa schermata
 
-![matrimoniale](assets/married-column.PNG)
+![colonna](assets/married-column.PNG)
