@@ -1,9 +1,9 @@
 ---
-title: Crea Modelli Di Flusso Di Lavoro AEM Forms  Riutilizzabili.
-seo-title: Crea Modelli Di Flusso Di Lavoro AEM Forms  Riutilizzabili.
-description: modelli di workflow indipendenti da Forms adattivo.
-seo-description: Modelli di flussi di lavoro indipendenti da Forms adattivo.
-feature: workflow
+title: Crea modelli di flusso di lavoro AEM Forms riutilizzabili.
+seo-title: Crea modelli di flusso di lavoro AEM Forms riutilizzabili.
+description: modelli di flusso di lavoro indipendenti da Moduli adattivi.
+seo-description: Modelli di flusso di lavoro indipendenti da Moduli adattivi.
+feature: Flusso di lavoro
 topics: development
 audience: developer
 doc-type: article
@@ -11,36 +11,39 @@ activity: setup
 version: 6.5
 uuid: 3a082743-3e56-42f4-a44b-24fa34165926
 discoiquuid: 9f18c314-39d1-4c82-b1bc-d905ea472451
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 3d54a8158d0564a3289a2100bbbc59e5ae38f175
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 0%
+source-wordcount: '294'
+ht-degree: 1%
 
 ---
 
 
-# Crea modelli di flussi di lavoro AEM Forms  riutilizzabili{#create-re-usable-aem-forms-workflow-models}
+# Crea modelli di flussi di lavoro AEM Forms riutilizzabili{#create-re-usable-aem-forms-workflow-models}
 
-A partire  versione AEM Forms 6.5, ora è possibile creare modelli di flussi di lavoro non associati a un modulo adattivo specifico. Grazie a questa funzionalità, è ora possibile creare un modello di flusso di lavoro che può essere richiamato per diversi invii di moduli adattivi. Grazie a questa funzionalità, è possibile disporre di un flusso di lavoro generico per gestire tutte le invii di moduli adattivi per la revisione e l&#39;approvazione.
+A partire dalla versione 6.5 di AEM Forms, ora è possibile creare modelli di flusso di lavoro non legati a un modulo adattivo specifico. Grazie a questa funzionalità, ora puoi creare un modello di flusso di lavoro che può essere richiamato su diversi invii di moduli adattivi. Grazie a questa funzionalità, è possibile disporre di un flusso di lavoro generico per gestire tutti gli invii di moduli adattivi per la revisione e l’approvazione.
 
-Per progettare un flusso di lavoro di questo tipo, effettuare le seguenti operazioni
+Per progettare un flusso di lavoro di questo tipo, effettua le seguenti operazioni
 
-1. Accedi a AEM
-1. Posizionare il browser sul [modello di flusso di lavoro](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
-1. Fate clic su Crea | Crea modello per aggiungere il modello di workflow
-1. Specificare il nome e il titolo appropriati per il modello di workflow, quindi fare clic su Fine
-1. Aprire il modello appena creato in modalità di modifica
-1. Trascinare il componente Assegna attività sul modello di workflow
-1. Aprire le proprietà di configurazione del componente Assegna attività
-1. Passare alla scheda Forms e Documenti
-1. Selezionare il tipo - Modulo adattivo o Modulo adattivo di sola lettura.
+1. Accedi ad AEM
+1. Posiziona il browser sul [modello di flusso di lavoro](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
+1. Fai clic su Crea | Crea modello per aggiungere un modello di flusso di lavoro
+1. Fornisci il Nome e il Titolo appropriati al modello di flusso di lavoro, quindi fai clic su Fine
+1. Apri il modello appena creato in modalità di modifica
+1. Trascina il componente Assegna attività sul modello di flusso di lavoro
+1. Apri le proprietà di configurazione del componente Assegna attività
+1. Passare alla scheda Moduli e documenti
+1. Selezionare il tipo Modulo adattivo o Modulo adattivo di sola lettura.
 
 Sono disponibili 3 modi per specificare il percorso del modulo
 
-1. Disponibile su un percorso assoluto: il flusso di lavoro verrà associato strettamente al modulo adattivo. Questo non è quello che vogliamo qui
-1. **Inviato al flusso di lavoro**  - Questo significa che quando il modulo adattivo viene inviato, il motore del flusso di lavoro estrae il nome del modulo dai dati inviati. Questa è l&#39;opzione che deve essere selezionata
-1. Disponibile in un percorso in una variabile. Questo significa che il modulo adattivo verrà prelevato dalla variabile del flusso di lavoro.
-La schermata seguente mostra l’opzione corretta che è necessario scegliere per sganciare il flusso di lavoro dal modulo adattivo
+1. Disponibile in un percorso assoluto : il flusso di lavoro sarà strettamente associato al modulo adattivo. Questo non è quello che vogliamo qui
+1. **Inviato al flusso di lavoro**  - Questo significa che quando il modulo adattivo viene inviato, il motore del flusso di lavoro estrarrà il nome del modulo dai dati inviati. Questa è l’opzione che deve essere selezionata
+1. Disponibile in un percorso in una variabile - Questo significa che il modulo adattivo verrà prelevato dalla variabile del flusso di lavoro
+La schermata seguente mostra l’opzione corretta che è necessario scegliere per il flusso di lavoro di disaccoppiamento da modulo adattivo
 
-![workflowmodel](assets/workflomodel.PNG)
+![modello workflow](assets/workflomodel.PNG)
