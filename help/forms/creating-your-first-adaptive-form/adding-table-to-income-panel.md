@@ -1,10 +1,10 @@
 ---
-title: Aggiunta di componenti al pannello Entrate
-seo-title: Aggiunta di componenti al pannello Entrate
-description: Aggiungeremo una tabella al pannello Reddito. Configurare le righe della tabella e utilizzare l'editor di regole per calcolare il totale complessivo.
-seo-description: Aggiungeremo una tabella al pannello Reddito. Configurare le righe della tabella e utilizzare l'editor di regole per calcolare il totale complessivo.
+title: Aggiunta di componenti al pannello Reddito
+seo-title: Aggiunta di componenti al pannello Reddito
+description: Aggiungeremo una tabella al pannello Reddito. Configura le righe della tabella e utilizza l’editor di regole per calcolare il totale complessivo.
+seo-description: Aggiungeremo una tabella al pannello Reddito. Configura le righe della tabella e utilizza l’editor di regole per calcolare il totale complessivo.
 uuid: d5c98561-c559-4624-976a-7a1486da7e69
-feature: adaptive-forms
+feature: Moduli adattivi
 topics: authoring
 audience: developer
 doc-type: tutorial
@@ -13,38 +13,41 @@ version: 6.4,6.5
 thumbnail: 22198.jpg
 kt: 4211
 discoiquuid: fa483260-38ff-40d8-96a7-1de11d8b792b
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 0%
+source-wordcount: '216'
+ht-degree: 1%
 
 ---
 
 
-# Aggiunta di componenti al pannello Redditi {#adding-components-to-income-panel}
+# Aggiunta di componenti al pannello Reddito {#adding-components-to-income-panel}
 
-Aggiungeremo una tabella al pannello Reddito. Configurare le righe della tabella e utilizzare l&#39;editor di regole per calcolare il totale complessivo.
+Aggiungeremo una tabella al pannello Reddito. Configura le righe della tabella e utilizza l’editor di regole per calcolare il totale complessivo.
 
-**Aggiungi e configura componente tabella**
+**Aggiungi e configura componente Tabella**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22198?quality=9&learn=on)
 
 
 
-## Imposta tabella redditi dinamica {#make-the-income-table-dynamic}
+## Rendere la tabella dei redditi dinamica {#make-the-income-table-dynamic}
 
-**Accertatevi di essere in modalità di modifica. Il pulsante Modifica si trova in alto a destra nel browser.**
+**Assicurati di essere in modalità di modifica. Il pulsante di modifica si trova in alto a destra del browser.**
 
-* Per impostazione predefinita, quando si inserisce una tabella in Modulo adattivo, la tabella non è dinamica e non è quindi possibile aggiungere nuove righe alla tabella in fase di esecuzione.
+* Per impostazione predefinita, quando si inserisce una tabella in Modulo adattivo, la tabella non è dinamica, il che significa che non è possibile aggiungere nuove righe alla tabella in fase di esecuzione.
 
 * Aggiorna il browser.
 
 * Selezionare Riga1 nella gerarchia del contenuto.
 
-* Fare clic sull&#39;icona chiave inglese per aprire il foglio delle proprietà.
+* Fai clic sull&#39;icona a forma di chiave inglese per aprire il foglio delle proprietà.
 
-* Per impostare il conteggio minimo e massimo su 1 e 5 sotto Impostazioni ripetizione e salvare le modifiche facendo clic sull’icona blu del segno di spunta. Ciò significa che la tabella può avere un massimo di 5 righe. Per avere un numero indefinito di righe, impostare il conteggio massimo su -1.
+* Imposta il conteggio minimo e massimo a 1 e 5 sotto le Impostazioni ripetute e salva le modifiche facendo clic sull&#39;icona del segno di spunta blu. Ciò significa che la tabella può avere un massimo di 5 righe. Per avere un numero indefinito di righe, imposta il conteggio massimo su -1.
 
 ## Crea regola per calcolare il totale complessivo {#create-rule-to-calculate-grand-total}
 
