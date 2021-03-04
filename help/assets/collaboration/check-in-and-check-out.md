@@ -1,27 +1,26 @@
 ---
-title: Check-in e check-out
-description: Scoprite come utilizzare AEM funzioni di check-in e check-out per facilitare la collaborazione tra più utenti sulle risorse.
+title: Consegna e ritiro
+description: Scopri come utilizzare le funzioni di check-in e check-out di AEM per facilitare la collaborazione multiutente sulle risorse.
 sub-product: assets
-feature: null
-topics: authoring, collaboration
-audience: author
-doc-type: feature video
-activity: use
+feature: Gestione risorse
 version: cloud-service
 kt: 4542
 thumbnail: 32048.jpg
+topic: Collaborazione
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '45'
-ht-degree: 0%
+source-wordcount: '51'
+ht-degree: 1%
 
 ---
 
 
-# Check-in e check-out
+# Consegna e ritiro
 
-Scoprite come utilizzare AEM funzioni di check-in e check-out per facilitare la collaborazione tra più utenti sulle risorse.
+Scopri come utilizzare le funzioni di check-in e check-out di AEM per facilitare la collaborazione multiutente sulle risorse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32048/?quality=12&learn=on&hidetitle=true)
 
