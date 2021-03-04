@@ -1,50 +1,53 @@
 ---
-title: Invio di e-mail per l'invio del modulo adattivo
-seo-title: Invio di e-mail per l'invio del modulo adattivo
-description: Invio di un messaggio e-mail di conferma per l’invio di un modulo adattivo tramite il componente Invia e-mail
-seo-description: Invio di un messaggio e-mail di conferma per l’invio di un modulo adattivo tramite il componente Invia e-mail
+title: Invio di e-mail con invio di moduli adattivi
+seo-title: Invio di e-mail con invio di moduli adattivi
+description: Invia e-mail di conferma per l’invio di moduli adattivi utilizzando il componente Invia e-mail
+seo-description: Invia e-mail di conferma per l’invio di moduli adattivi utilizzando il componente Invia e-mail
 uuid: 6c9549ba-cb56-4d69-902c-45272a8fd17e
-feature: adaptive-forms
+feature: Moduli adattivi
 topics: authoring, integrations
 audience: developer
 doc-type: article
 activity: use
 discoiquuid: 1187357f-2f36-4a04-b708-44bb9c174fb5
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 272e43ee4aeb756a3a1fd0ce55eaca94a9553fa4
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 0%
+source-wordcount: '237'
+ht-degree: 1%
 
 ---
 
 
-# Invio di e-mail all&#39;invio del modulo adattivo {#sending-email-on-adaptive-form-submission}
+# Invio di e-mail all’invio di moduli adattivi {#sending-email-on-adaptive-form-submission}
 
-Una delle azioni più comuni consiste nell’inviare un messaggio e-mail di conferma all’autore del modulo adattivo al momento dell’invio corretto. A tal fine, selezioneremo l&#39;azione &quot;Invia e-mail&quot; come azione di invio.
+Una delle azioni comuni consiste nell’inviare un messaggio e-mail di conferma al mittente in seguito all’invio del modulo adattivo. A tal fine, selezioneremo l’azione &quot;Invia e-mail&quot; come azione di invio.
 
-Potete usare il modello e-mail o semplicemente digitare il corpo dell’e-mail come mostrato in questa schermata.
+Puoi utilizzare il modello e-mail o semplicemente digitare il corpo dell’e-mail come mostrato nella schermata seguente.
 
-Osservare la sintassi per l&#39;inserimento dei valori dei campi del modulo nel messaggio e-mail.Abbiamo anche la possibilità di includere allegati del modulo nel messaggio e-mail, selezionando la casella di controllo &quot;Includi allegati&quot; nelle proprietà di configurazione.
+Osserva la sintassi per inserire i valori del campo modulo nell&#39;e-mail. Abbiamo anche la possibilità di includere gli allegati del modulo nell&#39;e-mail, selezionando la casella di controllo &quot;include allegati&quot; nelle proprietà di configurazione.
 
-Quando viene inviato il modulo adattivo, il destinatario riceve un messaggio e-mail.
+All’invio del modulo adattivo, il destinatario riceverà un’e-mail.
 
-![SendEmail](assets/sendemailaction.gif)
+![InviaE-mail](assets/sendemailaction.gif)
 
 ## Configurazioni necessarie {#configurations-needed}
 
-Sarà necessario configurare il servizio Day CQ Mail. Questa configurazione può essere effettuata puntando il browser su [Felix Configuration Manager](http://localhost:4502/system/console/configMgr)
+Sarà necessario configurare il servizio Day CQ Mail. Questo può essere configurato puntando il browser su [Felix Configuration Manager](http://localhost:4502/system/console/configMgr)
 
-Lo screenshot mostra le proprietà di configurazione per il server di posta Adobe.
+La schermata mostra le proprietà di configurazione per adobe mail server.
 
 ![mailservice](assets/mailservice.png)
 
-Per provare a eseguire questa operazione sul server, attenersi alle istruzioni riportate di seguito.
+Per provare questo sul tuo server segui queste istruzioni:
 
-* [Importa le ](assets/timeoffrequest.zip) risorse associate a questo articolo in AEM utilizzando il gestore pacchetti.
+* [Importa le ](assets/timeoffrequest.zip) risorse associate a questo articolo in AEM utilizzando il gestore dei pacchetti.
 
-* Aprire il [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
+* Apri [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
 
 * Compila i dettagli.Assicurati di fornire un indirizzo e-mail valido nel campo e-mail.
 
-* Inviare il modulo.
+* Invia il modulo.
