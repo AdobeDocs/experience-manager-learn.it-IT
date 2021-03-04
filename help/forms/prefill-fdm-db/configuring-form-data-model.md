@@ -1,7 +1,7 @@
 ---
-title: Configurazione del modello dati del modulo
-description: Creare un modello dati modulo basato su un'origine dati RDBMS
-feature: adaptive-forms
+title: Configurazione del modello dati modulo
+description: Creazione di un modello dati modulo basato su un’origine dati RDBMS
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: article
@@ -9,27 +9,30 @@ activity: implement
 version: 6.4,6.5
 kt: 5812
 thumbnail: kt-5812.jpg
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 0%
+source-wordcount: '497'
+ht-degree: 1%
 
 ---
 
 
 
-# Configurazione del modello dati del modulo
+# Configurazione del modello dati modulo
 
-## Origine dati pool di connessione Apache Sling
+## Origine dati in pool di connessione Apache Sling
 
-Il primo passaggio nella creazione del modello dati del modulo basato su RDBMS consiste nella configurazione di Apache Sling Connection Pooled DataSource. Per configurare l&#39;origine dati, attenetevi alla procedura indicata di seguito:
+Il primo passaggio nella creazione del modello dati del modulo basato su RDBMS consiste nella configurazione dell’origine dati in pool di connessione Apache Sling. Per configurare l’origine dati, segui i passaggi elencati di seguito:
 
-* Posizionare il browser su [configMgr](http://localhost:4502/system/console/configMgr)
-* Cerca **Apache Sling Connection Pooled DataSource**
-* Aggiungete una nuova voce e fornite i valori come mostrato nella schermata.
-* ![data-source](assets/data-source.png)
-* Salvare le modifiche
+* Posiziona il browser su [configMgr](http://localhost:4502/system/console/configMgr)
+* Cerca **Origine dati in pool di connessione Apache Sling**
+* Aggiungi una nuova voce e fornisci i valori come mostrato nella schermata .
+* ![sorgente dati](assets/data-source.png)
+* Salva le modifiche
 
 >[!NOTE]
 >L&#39;URI di connessione JDBC, il nome utente e la password cambieranno a seconda della configurazione del database MySQL.
@@ -37,54 +40,54 @@ Il primo passaggio nella creazione del modello dati del modulo basato su RDBMS c
 
 ## Creazione di un modello dati modulo
 
-* Posizionare il browser su [Integrazioni dati](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)
+* Posiziona il browser in [Integrazioni dati](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)
 * Fare clic su _Crea_->_Modello dati modulo_
-* Fornire un nome e un titolo significativi al modello dati del modulo, ad esempio **Dipendente**
+* Fornire un nome e un titolo significativi al modello di dati del modulo, ad esempio **Dipendente**
 * Fai clic su _Avanti_
-* Seleziona l&#39;origine dati creata nelle sezioni precedenti (forum)
+* Seleziona l’origine dati creata nella sezione (forum) precedente
 * Fare clic su _Crea_->Modifica per aprire il modello dati del modulo appena creato in modalità di modifica
-* Espandere il nodo _forum_ per visualizzare lo schema del dipendente. Espandi il nodo dipendente per visualizzare le 2 tabelle
+* Espandi il nodo _forum_ per visualizzare lo schema del dipendente. Espandi il nodo dipendente per visualizzare le 2 tabelle
 
-## Aggiunta di entità al modello
+## Aggiungere entità al modello
 
-* Assicurarsi che il nodo dipendente sia espanso
-* Selezionare le entità nuove e beneficiarie e fare clic su _Aggiungi selezionati_
+* Assicurati che il nodo dipendente sia espanso
+* Seleziona le entità newhire e beneficiarie e fai clic su _Aggiungi selezionati_
 
-## Aggiungi servizio di lettura a entità nuova
+## Aggiungi servizio di lettura all&#39;entità successiva
 
-* Seleziona nuova entità
-* Fare clic su _Modifica proprietà_
-* Selezionare Ottieni dall&#39;elenco a discesa Servizio di lettura
-* Fate clic sull&#39;icona + per aggiungere il parametro al servizio get
-* Specificate i valori come mostrato nello screenshot
+* Seleziona entità nuova
+* Fai clic su _Modifica proprietà_
+* Seleziona Ottieni dall’elenco a discesa Servizio di lettura .
+* Fai clic sull’icona + per aggiungere il parametro al servizio get
+* Specifica i valori come mostrato nella schermata
 * ![get-service](assets/get-service.png)
 >[!NOTE]
-> Il servizio get prevede un valore mappato alla colonna empID della nuova entità. Esistono diversi modi per trasmettere questo valore e in questa esercitazione l&#39;empID verrà trasmesso tramite il parametro di richiesta denominato empID.
-* Fare clic su _Fine_ per salvare gli argomenti per il servizio get
-* Fare clic su _Fine_ per salvare le modifiche apportate al modello dati del modulo
+> Il servizio get prevede un valore mappato alla colonna empID di una nuova entità. Esistono diversi modi per trasmettere questo valore e in questa esercitazione l&#39;empID verrà trasmesso tramite il parametro di richiesta denominato empID.
+* Fai clic su _Fine_ per salvare gli argomenti per il servizio get
+* Fai clic su _Fine_ per salvare le modifiche al modello dati del modulo
 
 ## Aggiungi associazione tra 2 entità
 
-Le associazioni definite tra le entità di database non vengono create automaticamente nel modello dati del modulo. Le associazioni tra entità devono essere definite utilizzando l&#39;editor del modello dati del modulo. Ogni nuova entità può avere uno o più beneficiari, dobbiamo definire un&#39;associazione uno-a-molti tra gli enti di nuova generazione e quelli beneficiari.
-I passaggi seguenti illustrano il processo di creazione dell&#39;associazione uno-a-molti
+Le associazioni definite tra le entità di database non vengono create automaticamente nel modello dati del modulo. Le associazioni tra entità devono essere definite utilizzando l’editor del modello dati del modulo. Ogni nuova entità può avere uno o più beneficiari, dobbiamo definire un&#39;associazione uno-a-molti tra gli enti di nuova generazione e quelli beneficiari.
+La procedura seguente illustra il processo di creazione dell’associazione uno-a-molti
 
-* Selezionare la nuova entità e fare clic su _Aggiungi associazione_
-* Fornire un titolo significativo e un identificatore all&#39;associazione e ad altre proprietà come mostrato nella schermata seguente
-   ![Association](assets/association-entities-1.png)
+* Seleziona un&#39;entità nuova e fai clic su _Aggiungi associazione_
+* Fornisci un titolo e un identificatore significativi all&#39;associazione e ad altre proprietà come mostrato nella schermata seguente
+   ![associazione](assets/association-entities-1.png)
 
-* Fare clic sull&#39;icona _edit_ nella sezione Argomenti
+* Fai clic sull&#39;icona _modifica_ nella sezione Argomenti .
 
-* Specificare i valori come mostrato nella schermata
-* ![Association-2](assets/association-entities.png)
-* **Stiamo collegando le due entità utilizzando la colonna empID dei beneficiari e delle entità nuove.**
-* Fare clic su _Fine_ per salvare le modifiche
+* Specifica i valori come mostrato in questa schermata
+* ![associazione-2](assets/association-entities.png)
+* **Stiamo collegando le due entità utilizzando la colonna empID dei beneficiari e delle entità successive.**
+* Fai clic su _Fine_ per salvare le modifiche
 
 ## Verificare il modello dati del modulo
 
-Il nostro modello di dati del modulo ora include il servizio **_get_** che accetta empID e restituisce i dettagli del nuovo e dei relativi beneficiari. Per testare il servizio get, attenetevi alla procedura indicata di seguito.
+Il nostro modello dati modulo ora dispone del servizio **_get_** che accetta empID e restituisce i dettagli del nuovo e dei relativi beneficiari. Per testare il servizio get, segui i passaggi elencati di seguito.
 
-* Seleziona nuova entità
-* Fare clic su _Test Model Object_
-* Immettete un empID valido e fate clic su _Test_
-* Dovreste ottenere risultati come mostrato nella schermata seguente
+* Seleziona entità nuova
+* Fai clic su _Test Model Object_
+* Fornisci un empID valido e fai clic su _Test_
+* Dovresti ottenere risultati come mostrato nella schermata sottostante
 * ![test-fdm](assets/test-form-data-model.png)
