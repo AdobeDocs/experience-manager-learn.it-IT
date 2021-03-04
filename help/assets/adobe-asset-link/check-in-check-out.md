@@ -1,25 +1,25 @@
 ---
-title: Check-In Check-Out
-description: ' Collegamento risorse di Adobe consente di estrarre  AEM Assets direttamente dall’app creativa su cui state lavorando e di iniziare subito a apportare modifiche. Dopo aver completato la modifica delle risorse nell’app di Creative Cloud, potete facilmente archiviare nuovamente  AEM Assets con versioni e commenti appropriati.'
+title: Consegna e ritiro
+description: Adobe Asset Link consente di estrarre AEM Assets direttamente dall’app creativa su cui stai lavorando e di iniziare immediatamente a apportare modifiche. Puoi facilmente archiviare le risorse in AEM Assets con il controllo delle versioni e i commenti appropriati dopo averle modificate nell’app Creative Cloud.
 sub-product: assets
-feature: adobe-asset-link
-topics: authoring, collaboration, operations, sharing, metadata, images, operations
-audience: all
-doc-type: feature video
-activity: use
-version: null
+feature: Adobe Asset Link
+version: 6.4, 6.5, cloud-service
+kt: 4910
 thumbnail: 33886.jpg
+topic: Gestione dei contenuti
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 0%
+source-wordcount: '112'
+ht-degree: 4%
 
 ---
 
 
 # Check-in Check-Out {#check-in-check-out}
 
- risorsa Adobe consente di estrarre  AEM Assets direttamente dall’app creativa su cui state lavorando e di iniziare subito a apportare modifiche. Dopo aver completato la modifica delle risorse nell’app di Creative Cloud, potete facilmente archiviare nuovamente  AEM Assets con versioni e commenti appropriati.
+Adobe Asset consente di estrarre AEM Assets direttamente dall’app creativa su cui stai lavorando e può iniziare immediatamente a apportare modifiche. Puoi facilmente archiviare le risorse in AEM Assets con il controllo delle versioni e i commenti appropriati dopo averle modificate nell’app Creative Cloud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33886/?quality=12)
