@@ -3,20 +3,17 @@ title: Consegna del documento di comunicazione interattiva - Moduli AEM per il c
 seo-title: Consegna del documento di comunicazione interattiva - Moduli AEM per il canale web
 description: Consegna del documento del canale web tramite link in email
 seo-description: Consegna del documento del canale web tramite link in email
-feature: Comunicazione interattiva
+feature: comunicazione interattiva
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 1%
+source-wordcount: '294'
+ht-degree: 0%
 
 ---
 
