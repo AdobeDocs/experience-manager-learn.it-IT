@@ -1,7 +1,7 @@
 ---
 title: Creazione di tabelle di database
-description: Creare un database da utilizzare per il modello dati del modulo
-feature: adaptive-forms
+description: Crea database da utilizzare per il modello dati del modulo
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: article
@@ -9,26 +9,29 @@ activity: implement
 version: 6.4,6.5
 kt: 5811
 thumbnail: kt-5811.jpg
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b085a2c75f8e0b4860d503774ea01a108773ad09
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 0%
+source-wordcount: '104'
+ht-degree: 3%
 
 ---
 
 
-# Crea tabelle di database
+# Creare tabelle di database
 
-Il modello dati modulo può essere basato su origini RDBMS, RESTfull, SOAP o OData. Questo corso è incentrato sulla precompilazione del modulo adattivo tramite il modello dati del modulo supportato dall&#39;origine dati RDBMS. Per questa esercitazione è stato utilizzato il database MYSQL. Sono state create le due tabelle seguenti per illustrare il caso di utilizzo
+Il modello dati del modulo può essere basato su origini RDBMS, RESTfull, SOAP o OData. Questo corso si concentra sulla pre-archiviazione di Moduli adattivi utilizzando il modello dati del modulo supportato dall&#39;origine dati RDBMS. Ai fini di questa esercitazione è stato utilizzato il database MYSQL. Abbiamo creato le due tabelle seguenti per illustrare il caso d’uso
 
-* **** newhiretable - Questa tabella memorizza le informazioni sul nuovo
+* **** newhiretable - Questa tabella memorizza le informazioni necessarie
 
    ![newhire](assets/newhire-table.png)
 
 
-* **** vantaggioso - Questo memorizza i nuovi beneficiari
+* **** fruibile - Consente di archiviare i nuovi beneficiari
 
-   ![Beneficiari](assets/beneficiaries-table.png)
+   ![beneficiari](assets/beneficiaries-table.png)
 
-È possibile importare il file [sql](assets/db-schema.sql) utilizzando il workbench MySQL per creare tabelle con alcuni dati di esempio.
+È possibile importare il file [sql](assets/db-schema.sql) utilizzando MySQL workbench per creare tabelle con alcuni dati di esempio.
