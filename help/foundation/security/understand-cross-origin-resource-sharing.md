@@ -3,17 +3,15 @@ title: Comprendere la condivisione di risorse tra le origini (CORS) con AEM
 description: La condivisione delle risorse tra le origini di Adobe Experience Manager (CORS) facilita le proprietà web non AEM per effettuare chiamate lato client ad AEM, sia autenticate che non autenticate, per recuperare contenuti o per interagire direttamente con AEM.
 version: 6.3, 6,4, 6.5
 sub-product: fondazione, content-services, siti
+feature: null
 topics: security, development, content-delivery
 activity: understand
 audience: architect, developer
 doc-type: article
-topic: Sicurezza
-role: Developer (Sviluppatore)
-level: Intermedio
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '917'
 ht-degree: 1%
 
 ---
