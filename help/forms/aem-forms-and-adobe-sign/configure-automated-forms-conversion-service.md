@@ -1,21 +1,18 @@
 ---
 title: Servizio di conversione automatica dei moduli
 description: Servizio di conversione automatica dei moduli. Questo articolo descrive come un amministratore AEM può configurare il servizio di conversione automatica dei moduli per automatizzare la conversione dei moduli PDF in moduli adattivi. Questa guida è per gli amministratori IT e AEM della tua organizzazione.
-feature: Moduli adattivi
+feature: moduli adattivi
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 39493.jpg
 kt: 6114
-topic: Sviluppo
-role: Administrator
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 1%
+source-wordcount: '254'
+ht-degree: 0%
 
 ---
 
