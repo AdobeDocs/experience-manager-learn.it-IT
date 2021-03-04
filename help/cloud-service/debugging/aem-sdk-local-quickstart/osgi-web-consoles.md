@@ -1,62 +1,65 @@
 ---
-title: Debug AEM SDK tramite la console Web OSGi
-description: L’avvio rapido locale dell’SDK AEM dispone di una console Web OSGi che fornisce una serie di informazioni e introspettive nel runtime AEM locale utili per comprendere in che modo l’applicazione viene riconosciuta e funziona all’interno di AEM.
-feature: null
+title: Debug dell’SDK AEM tramite la console web OSGi
+description: L’avvio rapido locale dell’SDK AEM dispone di una console web OSGi che fornisce una varietà di informazioni e introspezioni nel runtime AEM locale utili per comprendere in che modo l’applicazione viene riconosciuta da e funziona all’interno di AEM.
+feature: Strumenti per gli sviluppatori
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5265, 5366, 5267
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante, intermedio
 translation-type: tm+mt
-source-git-commit: a3d3612713decefb5c7e1cf5b2d4d21afff0a2f5
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 1%
+source-wordcount: '399'
+ht-degree: 3%
 
 ---
 
 
-# Debug AEM SDK tramite la console Web OSGi
+# Debug dell’SDK AEM tramite la console web OSGi
 
-L’avvio rapido locale dell’SDK AEM dispone di una console Web OSGi che fornisce una serie di informazioni e introspettive nel runtime AEM locale utili per comprendere in che modo l’applicazione viene riconosciuta e funziona all’interno di AEM.
+L’avvio rapido locale dell’SDK AEM dispone di una console web OSGi che fornisce una varietà di informazioni e introspezioni nel runtime AEM locale utili per comprendere in che modo l’applicazione viene riconosciuta da e funziona all’interno di AEM.
 
-AEM diverse console OSGi, ciascuna delle quali fornisce informazioni chiave su diversi aspetti dei AEM, tuttavia i seguenti sono in genere i più utili per il debug dell’applicazione.
+AEM fornisce molte console OSGi, ognuna delle quali fornisce informazioni chiave su diversi aspetti di AEM. Tuttavia, i seguenti sono in genere i più utili per il debug dell’applicazione.
 
 ## Bundle
 
 >[!VIDEO](https://video.tv.adobe.com/v/34335/?quality=12&learn=on)
 
-La console Bundles è un catalogo dei bundle OSGi e dei relativi dettagli, distribuiti per AEM, insieme alla possibilità ad hoc di avviarli e arrestarli.
+La console Bundles è un catalogo dei bundle OSGi e dei loro dettagli, implementati in AEM, insieme alla possibilità ad hoc di avviarli e arrestarli.
 
-La console Bundles si trova in:
+La console Bundle si trova in:
 
-+ Strumenti > Operazioni > Console Web > OSGi > Bundle
-+ O direttamente da: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
++ Strumenti > Operazioni > Console web > OSGi > Bundle
++ Oppure direttamente da: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
-Facendo clic su ciascun bundle, vengono forniti i dettagli utili per il debug dell&#39;applicazione.
+Facendo clic su ogni bundle, vengono forniti dettagli utili per il debug dell&#39;applicazione.
 
 + Convalida del bundle OSGi presente
 + Convalida se un bundle OSGi è attivo
-+ Determinare se un bundle OSGi ha importazioni non soddisfatte e non è possibile avviarlo
++ Determinare se un bundle OSGi ha effettuato importazioni non soddisfatte impedendo l&#39;avvio di tale bundle
 
 ## Componenti
 
 >[!VIDEO](https://video.tv.adobe.com/v/34336/?quality=12&learn=on)
 
-La console Componenti è un catalogo di tutti i componenti OSGi distribuiti per AEM e fornisce tutte le informazioni su di essi, dal loro ciclo di vita dei componenti OSGi definito, ai servizi OSGi a cui possono fare riferimento
+La console Componenti è un catalogo di tutti i componenti OSGi implementati in AEM e fornisce tutte le informazioni su di essi, dal loro ciclo di vita del componente OSGi definito, ai servizi OSGi a cui possono fare riferimento.
 
 La console Componenti si trova in:
 
-+ Strumenti > Operazioni > Console Web > OSGi > Componenti
-+ O direttamente da: [http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
++ Strumenti > Operazioni > Console web > OSGi > Componenti
++ Oppure direttamente da: [http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
 
-Aspetti chiave che aiutano con le attività di debug:
+Aspetti chiave delle attività di debug:
 
 + Convalida del bundle OSGi presente
 + Convalida se un bundle OSGi è attivo
-+ Determinare se un bundle OSGi ha importazioni non soddisfatte e non è possibile avviarlo
-+ Ottenimento del PID del componente, per creare configurazioni OSGi per essi in Git
++ Determinare se un bundle OSGi ha effettuato importazioni non soddisfatte impedendo l&#39;avvio di tale bundle
++ Ottenere il PID del componente, per creare configurazioni OSGi per loro in Git
 + Identificazione dei valori delle proprietà OSGi associati alla configurazione OSGi attiva
 
 ## Modelli Sling
@@ -65,11 +68,11 @@ Aspetti chiave che aiutano con le attività di debug:
 
 La console Sling Models si trova in:
 
-+ Strumenti > Operazioni > Console Web > Stato > Modelli Sling
-+ O direttamente da: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
++ Strumenti > Operazioni > Console web > Stato > Modelli Sling
++ Oppure direttamente da: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
 
-Aspetti chiave che aiutano con le attività di debug:
+Aspetti chiave delle attività di debug:
 
 + Convalida dei modelli Sling registrati nel tipo di risorsa appropriato
 + La convalida dei modelli Sling è adattabile dagli oggetti corretti (Resource o SlingHttpRequestServlet)
-+ Convalida degli esportatori di modelli Sling corretta
++ La convalida degli esportatori di modelli Sling è registrata correttamente
