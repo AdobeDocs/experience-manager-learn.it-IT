@@ -1,36 +1,39 @@
 ---
-title: Memorizzazione e recupero dei dati del modulo dal database MySQL
-description: Esercitazione con più parti per illustrare i passaggi necessari per memorizzare e recuperare i dati dei moduli
-feature: adaptive-forms
+title: Memorizzazione e recupero dei dati dei moduli dal database MySQL
+description: Esercitazione in più parti per illustrare i passaggi necessari per memorizzare e recuperare i dati dei moduli
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: 787a79663472711b78d467977d633e3d410803e5
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 1%
+source-wordcount: '202'
+ht-degree: 3%
 
 ---
 
 # Configura origine dati
 
-Esistono diversi modi con cui AEM l&#39;integrazione con il database esterno. Una delle procedure più comuni e standard per l&#39;integrazione del database è l&#39;utilizzo delle proprietà di configurazione DataSource in pool di connessioni Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
-Il primo passaggio consiste nel scaricare e distribuire i driver [MySql](https://mvnrepository.com/artifact/mysql/mysql-connector-java) appropriati in AEM.
-Create Apache Sling Connection Pooled DataSource e fornite le proprietà come specificato nella schermata sottostante. Lo schema del database viene fornito come parte di questa esercitazione.
+AEM consente l’integrazione con database esterno in diversi modi. Una delle pratiche più comuni e standard dell&#39;integrazione del database è l&#39;utilizzo delle proprietà di configurazione DataSource in pool di connessione Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
+Il primo passaggio consiste nel scaricare e distribuire i [driver MySql ](https://mvnrepository.com/artifact/mysql/mysql-connector-java) appropriati in AEM.
+Crea un’origine dati in pool di connessione Apache Sling e fornisci le proprietà specificate nella schermata sottostante. Lo schema di database viene fornito come parte di questa esercitazione risorse.
 
-![data-source](assets/save-continue.PNG)
+![sorgente dati](assets/save-continue.PNG)
 
-Nel database è presente una tabella denominata formdata con le 3 colonne come mostrato nella schermata sottostante.
+Nel database è presente una tabella denominata formdata con le 3 colonne mostrate nella schermata sottostante.
 
-![banca dati](assets/data-base-tables.PNG)
+![base dati](assets/data-base-tables.PNG)
 
-Il file sql per creare lo schema può essere [scaricato da qui](assets/form-data-db.sql). È necessario importare il file utilizzando WorkbenchSql per creare lo schema e la tabella.
+Il file sql per creare lo schema può essere [scaricato da qui](assets/form-data-db.sql). Per creare lo schema e la tabella, è necessario importare il file utilizzando Workbench di MySql.
 
 >[!NOTE]
->Assicurarsi di assegnare un nome all&#39;origine dati **SaveAndContinue**. Il codice di esempio utilizza il nome per connettersi al database.
+>Assicurati di denominare la tua origine dati **SaveAndContinue**. Il codice di esempio utilizza il nome per connettersi al database.
 
 | Nome proprietà | Valore |
 ------------------------|---------------------------------------
