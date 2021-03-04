@@ -1,19 +1,16 @@
 ---
 title: Esportazione dei dati del modulo inviati in formato CSV
 description: Esportare i dati dei moduli adattivi inviati in formato CSV
-feature: Moduli adattivi
+feature: moduli adattivi
 topics: development
 audience: developer
 doc-type: article
 activity: implement
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Esperienza
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 1%
+source-wordcount: '399'
+ht-degree: 0%
 
 ---
 
