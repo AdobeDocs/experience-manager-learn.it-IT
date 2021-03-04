@@ -1,51 +1,54 @@
 ---
-title: Configurazione del grafico a linee per il primo documento di comunicazione interattiva
-seo-title: Configurazione del grafico a linee per il primo documento di comunicazione interattiva
-description: Questa è la parte 8 dell'esercitazione multistep per la creazione del primo documento di comunicazione interattiva. In questa parte, verrà aggiunto un grafico a linee al pannello di avanzamento del conto.
-seo-description: Questa è la parte 8 dell'esercitazione multistep per la creazione del primo documento di comunicazione interattiva. In questa parte, verrà aggiunto un grafico a linee al pannello di avanzamento del conto.
+title: Configurazione del grafico a linee per il primo documento di comunicazione interattivo
+seo-title: Configurazione del grafico a linee per il primo documento di comunicazione interattivo
+description: Questa è la parte 8 dell'esercitazione su più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte verrà aggiunto un grafico a linee al pannello di avanzamento dell'account.
+seo-description: Questa è la parte 8 dell'esercitazione su più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte verrà aggiunto un grafico a linee al pannello di avanzamento dell'account.
 uuid: 08c3e7af-e3cb-4ee0-bdc1-d112bfa70e40
-feature: interactive-communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 4292303c-3ef4-4df2-b537-fdb011412670
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 4f51f7bf00827210d2631b9335768a9980f6655c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 0%
+source-wordcount: '233'
+ht-degree: 2%
 
 ---
 
 
-# Configurazione del grafico a linee per il primo documento di comunicazione interattiva
+# Configurazione del grafico a linee per il primo documento di comunicazione interattivo
 
-In questa parte, verrà aggiunto un grafico a linee al pannello di avanzamento del conto.
+In questa parte verrà aggiunto un grafico a linee al pannello di avanzamento dell&#39;account.
 
-Accedete a  AEM Forms e andate a Adobe Experience Manager > Forms > Forms &amp; Documents.
+Accedi a AEM Forms e passa a Adobe Experience Manager > Moduli > Moduli e documenti.
 
-Aprite la cartella 401KStatement.
+Apri la cartella 401KStatement .
 
-Aprite l&#39;istruzione 401KS in modalità di modifica.
+Apri l&#39;istruzione 401KSin modalità di modifica.
 
- AEM Forms 6.4 ha reso molto semplice la visualizzazione dei dati utilizzando vari tipi di grafici. Usiamo un grafico a linee per visualizzare i saldi per anno.
+AEM Forms 6.4 ha semplificato notevolmente la visualizzazione dei dati utilizzando vari tipi di grafici. Useremo un grafico a linee per visualizzare i saldi per anno.
 
-Toccate l&#39;area di destinazione **Avanzamento account** sul lato destro e fate clic sull&#39;icona &quot;+&quot; per visualizzare la finestra di dialogo Inserisci componente.
+Tocca l’area di destinazione **Avanzamento account** sul lato destro e fai clic sull’icona &quot;+&quot; per visualizzare la finestra di dialogo inserisci componente.
 
 Selezionare Grafico per inserire il componente grafico.
 
-Configura il componente grafico in base alle impostazioni specificate nella schermata sottostante e salva le impostazioni facendo clic sull’icona del segno di spunta blu.
+Configura il componente grafico in base alle impostazioni nella schermata seguente e salva le impostazioni facendo clic sull&#39;icona del segno di spunta blu.
 
-Assicurarsi di selezionare l&#39;elemento del modello dati modulo corretto sull&#39;asse x e y.
+Assicurarsi di selezionare l&#39;elemento corretto del modello dati del modulo asse x e y.
 
-**Impostazioni grafico a linee in  AEM Forms 6.4**
+**Impostazioni grafico a linee in AEM Forms 6.4**
 
-![linechart64](assets/linechart.png)
+![lineare64](assets/linechart.png)
 
-**Impostazioni grafico a linee in  AEM Forms 6.5**
+**Impostazioni grafico a linee in AEM Forms 6.5**
 
-![linechart64](assets/linechart65.PNG)
+![lineare64](assets/linechart65.PNG)
 
 
