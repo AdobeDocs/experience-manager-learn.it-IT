@@ -3,17 +3,20 @@ title: Utilizzo del servizio Form Data Model come passaggio nel flusso di lavoro
 seo-title: Utilizzo del servizio Form Data Model come passaggio nel flusso di lavoro AEM 6.5
 description: AEM Forms 6.5 ha introdotto la possibilità di creare variabili nel flusso di lavoro AEM. Con questa nuova funzionalità che utilizza il "Invoke Form Data Model Service" in AEM Workflow è diventato molto semplice. Il video seguente illustra i passaggi necessari per utilizzare il servizio Invoke Form Data Model in AEM Workflow.
 seo-description: AEM Forms 6.5 ha introdotto la possibilità di creare variabili nel flusso di lavoro AEM. Con questa nuova funzionalità che utilizza il "Invoke Form Data Model Service" in AEM Workflow è diventato molto semplice. Il video seguente illustra i passaggi necessari per utilizzare il servizio Invoke Form Data Model in AEM Workflow.
-feature: workflow.
+feature: Flusso di lavoro
 topics: workflow.
 audience: developer.
 doc-type: technical video.
 activity: setup.
 version: 6.5.
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 0%
+source-wordcount: '338'
+ht-degree: 1%
 
 ---
 
