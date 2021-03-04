@@ -1,74 +1,77 @@
 ---
-title: Impostazione della distribuzione del documento del canale Web
-seo-title: Impostazione della distribuzione del documento del canale Web
-description: Questa è l'ultima parte di un'esercitazione multistep per la creazione del primo documento di comunicazione interattiva. In questa parte, esaminiamo la consegna di documenti per canali web via e-mail.
-seo-description: Questa è l'ultima parte di un'esercitazione multistep per la creazione del primo documento di comunicazione interattiva. In questa parte, esaminiamo la consegna di documenti per canali web via e-mail.
+title: Impostazione della consegna del documento del canale web
+seo-title: Impostazione della consegna del documento del canale web
+description: Questa è la parte finale di un'esercitazione su più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte esaminiamo la consegna del documento del canale web via e-mail.
+seo-description: Questa è la parte finale di un'esercitazione su più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte esaminiamo la consegna del documento del canale web via e-mail.
 uuid: c1066600-1abd-4401-b04f-b93c28603cc7
-feature: interactive-communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 1a7cf095-c5d8-4d92-a018-883cda76fe70
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 1%
+source-wordcount: '394'
+ht-degree: 2%
 
 ---
 
 
-# Impostazione della distribuzione del documento del canale Web {#setting-up-the-delivery-of-web-channel-document}
+# Impostazione della consegna del documento del canale Web {#setting-up-the-delivery-of-web-channel-document}
 
 
-In questa parte, esaminiamo la consegna di documenti per canali web via e-mail.
+In questa parte esaminiamo la consegna del documento del canale web via e-mail.
 
-Dopo aver definito e verificato il documento di comunicazione interattiva per il canale Web, è necessario un meccanismo di distribuzione per distribuire il documento per il canale Web al destinatario.
+Una volta definito e verificato il documento di comunicazione interattiva del canale web, è necessario un meccanismo di consegna per consegnare il documento del canale web al destinatario.
 
-Per poter utilizzare l&#39;e-mail come meccanismo di consegna per il documento del canale Web, è necessario apportare una lieve modifica al modello dati del modulo.
+Per poter utilizzare l’e-mail come meccanismo di consegna per il documento del canale web, è necessario apportare una modifica minore al modello di dati del modulo.
 
-[Per saperne di più sulla distribuzione dei canali web tramite e-mail](/help/forms/interactive-communications/delivery-of-web-channel-document-tutorial-use.md)
+[Per ulteriori informazioni sulla consegna dei canali web tramite e-mail](/help/forms/interactive-communications/delivery-of-web-channel-document-tutorial-use.md)
 
-Accedete a  AEM Forms.
+Accedi a AEM Forms.
 
 * Passa a Forms ->Integrazioni dati
 
-* Aprire il modello dati RetirementAccountStatement in modalità di modifica.
+* Apri il modello dati RetirementAccountStatement in modalità di modifica.
 
-* Selezionare l&#39;oggetto balances e fare clic sul pulsante Modifica.
+* Selezionare l&#39;oggetto balance e fare clic sul pulsante modifica.
 
-* Selezionate l&#39;icona &quot;matita&quot; per aprire l&#39;argomento id in modalità di modifica.
+* Seleziona l’icona &quot;matita&quot; per aprire l’argomento id in modalità di modifica.
 
-* Modificate il binding in &quot;RequestAttribute&quot;.
+* Modificare il binding in &quot;RequestAttribute&quot;.
 
 * Impostare il numero di conto nel valore di binding come illustrato di seguito.
 
-* In questo modo passeremo il numero di conto attraverso l&#39;attributo request al modello dati del modulo
+* In questo modo passiamo il numero di conto attraverso l’attributo di richiesta al modello di dati del modulo
 
-* Assicuratevi di salvare le modifiche.
+* Assicurati di salvare le modifiche.
    ![fdm](assets/requestattribute.gif)
 
-## Verifica distribuzione e-mail del documento canale Web {#test-email-delivery-of-web-channel-document}
+## Verifica consegna e-mail del documento del canale Web {#test-email-delivery-of-web-channel-document}
 
-* [Installare le risorse di esempio mediante il gestore pacchetti](assets/webchanneldelivery.zip)
-* [Login a crx](http://localhost:4502/crx/de/index.jsp#)
+* [Installare le risorse di esempio utilizzando Gestione pacchetti](assets/webchanneldelivery.zip)
+* [Accedi a crx](http://localhost:4502/crx/de/index.jsp#)
 
 * Passa a /home/users
 
-* Cercare l&#39;utente admin nel nodo dell&#39;utente.
+* Cerca l&#39;utente amministratore sotto il nodo dell&#39;utente.
 
-* Selezionate il nodo del profilo dell&#39;utente amministratore.
+* Seleziona il nodo del profilo dell&#39;utente amministratore.
 
-* Create una proprietà denominata &quot;accountnumber&quot;. Assicurarsi che il tipo di proprietà sia una stringa.
+* Crea una proprietà denominata &quot;numero contabile&quot;. Assicurati che il tipo di proprietà sia una stringa.
 
-* Impostate il valore di questa proprietà accountnumber su &quot;3059827&quot;. Potete impostare questo valore su qualsiasi numero casuale desiderato.
+* Impostare il valore di questa proprietà account number su &quot;3059827&quot;. Puoi impostare questo valore su qualsiasi numero casuale desiderato.
 
-* [Open getad.html](http://localhost:4502/content/getad.html)
+* [Apri getad.html](http://localhost:4502/content/getad.html)
 
-* Il codice associato a questo URL ottiene il numero di account dell&#39;utente che ha effettuato l&#39;accesso. Questo numero di conto viene quindi passato come attributo request al file FDM. FDM recupererà quindi i dati associati a questo numero di conto e compilerà il documento del canale Web.
+* Il codice associato a questo URL ottiene il numero di account dell’utente connesso. Questo numero di account viene quindi passato come requestattribute all’FDM. FDM recupererà quindi i dati associati a questo numero di account e compilerà il documento del canale web.
 
 >[!NOTE]
 >
->Date un&#39;occhiata al file **/apps/AEMForms/fetchad/GET.jsp** in crx. Assicurarsi che la variabile String webChannelDocument indichi un percorso di documento di comunicazione valido.
+>Guarda il file **/apps/AEMForms/fetchad/GET.jsp** in crx. Assicurati che la variabile String webChannelDocument punti a un percorso di documento di comunicazione valido.
