@@ -1,7 +1,7 @@
 ---
 title: CRXDE Lite
-description: 'CRXDE Lite è uno strumento classico ma potente per il debug dei AEM come ambienti per sviluppatori Cloud Service. CRXDE Lite fornisce una suite di funzionalità che facilita il debug dall''ispezione di tutte le risorse e proprietà, dalla manipolazione delle parti modificabili del JCR e dalle autorizzazioni di indagine. '
-feature: null
+description: 'CRXDE Lite è uno strumento classico ma potente per il debug degli ambienti per sviluppatori di AEM as a Cloud Service. CRXDE Lite fornisce una suite di funzionalità che facilita il debug dall''ispezione di tutte le risorse e proprietà, dalla manipolazione delle parti mutabili del JCR e dalle indagini sulle autorizzazioni. '
+feature: Strumenti per gli sviluppatori
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,75 +9,78 @@ activity: develop
 audience: developer
 kt: KT-5481
 thumbnail: kt-5481.jpg
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 10d0970c1b0debfec7cf94cc106bcae414fb55f6
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
 
 
-# Debug AEM come Cloud Service con CRXDE Lite
+# Debug di AEM as a Cloud Service con CRXDE Lite
 
-CRXDE Lite è __ONLY__ disponibile su AEM come ambienti di sviluppo Cloud Service (così come l&#39;SDK AEM locale).
+CRXDE Lite è __ONLY__ disponibile negli ambienti di sviluppo di AEM as a Cloud Service (e nell’SDK locale di AEM).
 
-## Accesso ai CRXDE Lite in AEM Author
+## Accesso a CRXDE Lite su AEM Author
 
-CRXDE Lite __è accessibile solo__ in AEM come ambiente di sviluppo Cloud Service ed è __non__ disponibile in ambienti Stage o Produzione.
+CRXDE Lite è __accessibile solo__ negli ambienti di sviluppo di AEM as a Cloud Service ed è __non__ disponibile negli ambienti Stage o Production.
 
-Per accedere al CRXDE Lite su AEM Author:
+Per accedere a CRXDE Lite su AEM Author:
 
-1. Accedete al AEM come servizio di Cloud Service AEM Author.
+1. Accedi al servizio AEM as a Cloud Service Author.
 1. Passa a Strumenti > Generale > CRXDE Lite
 
-Questo aprirà il CRXDE Lite utilizzando le credenziali e le autorizzazioni utilizzate per accedere ad AEM Author.
+Verrà aperto CRXDE Lite utilizzando le credenziali e le autorizzazioni utilizzate per accedere ad AEM Author.
 
 ## Debug del contenuto
 
-CRXDE Lite fornisce l&#39;accesso diretto al JCR. Il contenuto visibile tramite CRXDE Lite è limitato dalle autorizzazioni concesse all&#39;utente, il che significa che potrebbe non essere possibile visualizzare o modificare tutto nel JCR a seconda dell&#39;accesso.
+CRXDE Lite fornisce l&#39;accesso diretto al JCR. Il contenuto visibile tramite CRXDE Lite è limitato dalle autorizzazioni concesse all&#39;utente, il che significa che potresti non essere in grado di vedere o modificare tutto nel JCR a seconda del tuo accesso.
 
-Tenere presente che `/apps`, `/libs` e `/oak:index` sono immutabili, il che significa che non possono essere modificati in fase di esecuzione da alcun utente. Tali posizioni nel JCR possono essere modificate solo tramite distribuzioni di codice.
+Tieni presente che `/apps`, `/libs` e `/oak:index` non sono modificabili, il che significa che non possono essere modificate in fase di runtime da alcun utente. Queste posizioni nel JCR possono essere modificate solo tramite distribuzioni di codice.
 
-+ La struttura JCR viene esplorata e manipolata utilizzando il riquadro di navigazione a sinistra
-+ Quando si seleziona un nodo nel riquadro di navigazione a sinistra, vengono visualizzate le proprietà del nodo nel riquadro inferiore.
++ La struttura JCR viene navigata e manipolata utilizzando il riquadro di navigazione a sinistra
++ Selezionando un nodo nel riquadro di navigazione a sinistra, espone le proprietà del nodo nel riquadro in basso.
    + Le proprietà possono essere aggiunte, rimosse o modificate dal riquadro
-+ Facendo doppio clic sul nodo di un file nella barra di navigazione a sinistra, si apre il contenuto del file nel riquadro in alto a destra
-+ Toccate il pulsante Salva tutto in alto a sinistra per mantenere le modifiche, oppure la freccia in basso accanto a Salva tutto per ripristinare le modifiche non salvate.
++ Facendo doppio clic su un nodo di file nel menu di navigazione a sinistra, si apre il contenuto del file nel riquadro in alto a destra
++ Tocca il pulsante Salva tutto in alto a sinistra per mantenere le modifiche, oppure la freccia rivolta verso il basso accanto a Salva tutto per ripristinare le modifiche non salvate.
 
-![CRXDE Lite - Debugging del contenuto](./assets/crxde-lite/debugging-content.png)
+![CRXDE Lite - Debug del contenuto](./assets/crxde-lite/debugging-content.png)
 
-È necessario apportare con cautela modifiche ai contenuti modificabili in fase di esecuzione in AEM come ambienti di sviluppo Cloud Service tramite CRXDE Lite.
-Qualsiasi modifica apportata direttamente a AEM tramite CRXDE Lite può essere difficile da monitorare e governare. Se necessario, accertatevi che le modifiche effettuate tramite CRXDE Lite tornino ai pacchetti di contenuto modificabile del progetto AEM (`ui.content`) e si impegnino in Git, al fine di garantire la risoluzione del problema. Idealmente, tutte le modifiche al contenuto dell&#39;applicazione derivano dalla base di codice e fluiscono in AEM tramite distribuzioni, anziché apportare modifiche direttamente al AEM tramite CRXDE Lite.
+È necessario fare con attenzione le modifiche apportate al contenuto mutabile in fase di runtime negli ambienti di sviluppo di AEM as a Cloud Service tramite CRXDE Lite.
+Qualsiasi modifica apportata direttamente ad AEM tramite CRXDE Lite può essere difficile da monitorare e gestire. Se appropriato, assicurati che le modifiche effettuate tramite CRXDE Lite facciano il loro ritorno ai pacchetti di contenuto variabile del progetto AEM (`ui.content`) e si impegnino per Git, al fine di garantire che il problema sia risolto. Idealmente, tutte le modifiche al contenuto dell’applicazione provengono dalla base di codice e scorrono in AEM tramite implementazioni, anziché apportare modifiche direttamente all’AEM tramite CRXDE Lite.
 
 ### Debug dei controlli di accesso
 
-CRXDE Lite fornisce un modo per testare e valutare il controllo di accesso su un nodo specifico per un utente o un gruppo specifico (alias entità).
+CRXDE Lite fornisce un modo per testare e valutare il controllo di accesso su un nodo specifico per un utente o un gruppo specifico (aka principal).
 
-Per accedere alla console Test Access Control in CRXDE Lite, passare a:
+Per accedere alla console di controllo degli accessi di prova in CRXDE Lite, passa a:
 
 + CRXDE Lite > Strumenti > Controllo accesso di prova ...
 
 ![CRXDE Lite - Controllo dell&#39;accesso ai test](./assets/crxde-lite/permissions__test-access-control.png)
 
-1. Utilizzando il campo Percorso, selezionare un percorso JCR da valutare
-1. Utilizzando il campo Principal, selezionate l’utente o il gruppo con cui valutare il percorso
-1. Toccate il pulsante Test
+1. Utilizzando il campo Percorso, seleziona un percorso JCR da valutare
+1. Utilizzando il campo Principale, selezionare l&#39;utente o il gruppo con cui valutare il percorso
+1. Toccare il pulsante Test
 
 Di seguito sono riportati i risultati:
 
-+ __Pathrema__ ribadisce il percorso che è stato valutato
-+ ____ Principalribadisce all&#39;utente o al gruppo che il percorso è stato valutato
-+ ____ Principalselenca tutte le entità di cui l&#39;entità selezionata fa parte.
-   + Questo è utile per comprendere le appartenenze di gruppo transitive che possono fornire le autorizzazioni tramite l&#39;ereditarietà
-+ __Privilegi in__ Pathlist tutte le autorizzazioni JCR di cui dispone l&#39;entità selezionata sul percorso valutato
++ ____ Pathribadisce il percorso valutato
++ ____ Principalribadisce all’utente o al gruppo per cui è stato valutato il percorso
++ ____ Principalselenca tutti i principals di cui fa parte l&#39;entità selezionata.
+   + È utile per comprendere le appartenenze al gruppo transitorio che possono fornire autorizzazioni tramite ereditarietà
++ __Privilegi in__ percorsi elenca tutte le autorizzazioni JCR di cui dispone l&#39;entità selezionata sul percorso valutato
 
 ### Attività di debug non supportate
 
-Di seguito sono riportate le attività di debug che è possibile eseguire in CRXDE Lite __not__.
+Di seguito sono riportate le attività di debug che possono essere eseguite in CRXDE Lite __not__ .
 
 ### Debug delle configurazioni OSGi
 
-Le configurazioni OSGi distribuite non possono essere riviste tramite CRXDE Lite. Le configurazioni OSGi vengono conservate nel pacchetto di codice `ui.apps` del progetto AEM in `/apps/example/config.xxx`, tuttavia, al momento della distribuzione in AEM come ambienti Cloud Service, le risorse delle configurazioni OSGi non sono persistenti nel JCR, pertanto non sono visibili tramite CRXDE Lite.
+Le configurazioni OSGi implementate non possono essere riviste tramite CRXDE Lite. Le configurazioni OSGi vengono mantenute nel pacchetto di codice `ui.apps` del progetto AEM in `/apps/example/config.xxx`. Tuttavia, dopo l’implementazione in ambienti AEM as a Cloud Service, le risorse di configurazione OSGi non vengono mantenute nel JCR, quindi non sono visibili tramite CRXDE Lite.
 
-Utilizzate invece [Developer Console > Configurazioni](./developer-console.md#configurations) per esaminare le configurazioni OSGi distribuite.
+Utilizza invece [Console per sviluppatori > Configurazioni](./developer-console.md#configurations) per rivedere le configurazioni OSGi distribuite.
