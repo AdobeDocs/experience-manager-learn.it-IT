@@ -1,20 +1,17 @@
 ---
 title: Servizi di utilità
 description: Alcuni utili servizi di utilità per gli sviluppatori di AEM Forms
-feature: Moduli adattivi
+feature: document-services
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Intermedio
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 3%
+source-wordcount: '156'
+ht-degree: 0%
 
 ---
 
