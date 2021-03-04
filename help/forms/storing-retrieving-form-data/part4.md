@@ -1,27 +1,30 @@
 ---
-title: Memorizzazione e recupero dei dati del modulo dal database MySQL
-description: Esercitazione con più parti per illustrare i passaggi necessari per memorizzare e recuperare i dati dei moduli
-feature: adaptive-forms
+title: Memorizzazione e recupero dei dati dei moduli dal database MySQL
+description: Esercitazione in più parti per illustrare i passaggi necessari per memorizzare e recuperare i dati dei moduli
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: 787a79663472711b78d467977d633e3d410803e5
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 0%
+source-wordcount: '149'
+ht-degree: 2%
 
 ---
 
-# Crea libreria client
+# Creare una libreria client
 
-AEM libreria client gestisce tutto il codice JavaScript lato client. Per questo articolo, ho creato un semplice JavaScript per recuperare i dati del modulo adattivo utilizzando l&#39;API del bridge guida. Una volta recuperati i dati del modulo adattivo, la chiamata POST viene eseguita sul servlet per inserire o aggiornare i dati del modulo adattivo nel database. La funzione getALLUrlParams restituisce i parametri nell’URL. Se il parametro guid è presente nell&#39;URL, è necessario eseguire l&#39;operazione di aggiornamento, se non si tratta di un&#39;operazione di inserimento. Il resto della funzionalità è gestito nel codice associato all&#39;evento click della classe savebutton.
+La libreria client AEM gestisce tutto il codice JavaScript lato client. Per questo articolo, ho creato un semplice JavaScript per recuperare i dati del modulo adattivo utilizzando l’API del bridge guida. Una volta recuperati i dati del modulo adattivo, la chiamata POST viene effettuata al servlet per inserire o aggiornare i dati del modulo adattivo nel database. La funzione getALLUrlParams restituisce i parametri nell&#39;URL. Se il parametro guid è presente nell&#39;URL, è necessario eseguire l&#39;operazione di aggiornamento, se non si tratta di un&#39;operazione di inserimento. Il resto della funzionalità viene gestito nel codice associato all&#39;evento click della classe savebutton.
 
 >[!NOTE]
 >
->La libreria client viene fornita come parte di questa risorsa di esercitazione
+>La libreria client viene fornita come parte di questa esercitazione risorse
 
 ```javascript
 function getAllUrlParams(url) {
