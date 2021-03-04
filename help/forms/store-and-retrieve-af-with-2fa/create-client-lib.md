@@ -1,7 +1,7 @@
 ---
 title: Creare librerie client
 description: Crea clientlibrary per gestire l'evento click del pulsante "Save and Exit"
-feature: adaptive-forms
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,19 +9,22 @@ activity: implement
 version: 6.4,6.5
 kt: 6597
 thumbnail: 6597.pg
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 6%
+source-wordcount: '146'
+ht-degree: 8%
 
 ---
 
-# Crea lib client
+# Creare una libreria client
 
-Creare [client lib](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/introduction/clientlibs.html) che includerà il codice per richiamare il metodo `doAjaxSubmitWithFileAttachment` dell&#39;API `guideBridge` sull&#39;evento click del pulsante identificato dalla classe CSS **savebutton**.  I dati del modulo adattivo, `fileMap`, e la `mobileNumber` vengono passati all&#39;endpoint in ascolto a `**/bin/storeafdatawithattachments`
+Crea [client lib](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/introduction/clientlibs.html) che includerà il codice per richiamare il metodo `doAjaxSubmitWithFileAttachment` dell’ API `guideBridge` sull’evento clic del pulsante identificato dalla classe CSS **savebutton**.  Trasmettiamo i dati del modulo adattivo `fileMap` e il `mobileNumber` all’endpoint in ascolto su `**/bin/storeafdatawithattachments`
 
-Una volta salvati i dati del modulo, viene generato un ID applicazione univoco che viene presentato all&#39;utente in una finestra di dialogo. Quando si chiude la finestra di dialogo, l&#39;utente viene indirizzato al modulo che consente di recuperare il modulo adattivo salvato utilizzando l&#39;ID applicazione univoco.
+Una volta salvati i dati del modulo, viene generato un ID applicazione univoco che viene presentato all’utente in una finestra di dialogo. Quando si chiude la finestra di dialogo, l’utente viene portato al modulo che consente loro di recuperare il modulo adattivo salvato utilizzando l’ID applicazione univoco.
 
 ```java
 $(document).ready(function () {
@@ -67,6 +70,6 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> Abbiamo utilizzato [libreria javascript di avvio](http://bootboxjs.com/examples.html) per visualizzare la finestra di dialogo
+> Abbiamo utilizzato [libreria javascript di bootbox](http://bootboxjs.com/examples.html) per visualizzare la finestra di dialogo
 
 Le librerie client utilizzate in questo esempio possono essere [scaricate da qui](assets/client-libraries.zip)
