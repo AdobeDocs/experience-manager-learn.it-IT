@@ -2,17 +2,19 @@
 title: Utilizzare la dashboard Panoramica del sistema in AEM
 description: Nelle versioni precedenti degli amministratori AEM era necessario esaminare diverse posizioni per ottenere un’immagine completa dell’istanza AEM. La Panoramica del sistema mira a risolvere questo problema fornendo una visione di alto livello della configurazione, dell’hardware e dello stato dell’istanza AEM da un’unica dashboard.
 version: 6.4, 6.5
-feature: null
 topics: administration, operations, monitoring
 activity: use
 audience: administrator, architect, developer, implementer
 doc-type: technical video
 contentOwner: dgordon
+topic: Amministrazione
+role: Administrator
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 0%
+source-wordcount: '145'
+ht-degree: 1%
 
 ---
 
