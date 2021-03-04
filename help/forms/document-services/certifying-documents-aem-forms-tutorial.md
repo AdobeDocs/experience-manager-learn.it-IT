@@ -4,16 +4,19 @@ seo-title: Documento di certificazione in AEM Forms
 description: Utilizzo del servizio DocAssurance per la certificazione di documenti PDF in AEM Forms
 seo-description: Utilizzo del servizio DocAssurance per la certificazione di documenti PDF in AEM Forms
 uuid: ecb1f9b6-bbb3-43a3-a0e0-4c04411acc9f
-feature: document-security
+feature: Sicurezza dei documenti
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
