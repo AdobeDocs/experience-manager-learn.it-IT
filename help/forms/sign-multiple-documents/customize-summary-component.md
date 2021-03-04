@@ -1,7 +1,7 @@
 ---
-title: Personalizza componente Riepilogo
-description: Estende il componente passo di riepilogo per includere la possibilità di passare al modulo successivo nel pacchetto.
-feature: adaptive-forms
+title: Personalizza componente di riepilogo
+description: Estendi il componente del passaggio di riepilogo per includere la possibilità di passare al modulo successivo nel pacchetto.
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,19 +9,22 @@ activity: implement
 version: 6.4,6.5
 kt: 6894
 thumbnail: 6894.jpg
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 0%
+source-wordcount: '182'
+ht-degree: 2%
 
 ---
 
 
 # Personalizza passaggio di riepilogo
 
-Il componente Passo di riepilogo viene utilizzato per visualizzare il riepilogo dell’invio del modulo con un collegamento per scaricare il modulo firmato. Il passaggio di riepilogo viene in genere posizionato nell&#39;ultimo pannello del modulo.
-Ai fini di questo caso d’uso, abbiamo creato un nuovo componente basato sul componente Riepilogo out-of-the-box ed esteso la capacità di includere clientlib personalizzate.
+Il componente Passaggio di riepilogo viene utilizzato per visualizzare il riepilogo dell’invio del modulo con un collegamento per scaricare il modulo firmato. Il passaggio di riepilogo viene in genere posizionato nell’ultimo pannello del modulo.
+Ai fini di questo caso d’uso abbiamo creato un nuovo componente basato sul componente Riepilogo preconfigurato e abbiamo esteso la funzionalità per includere clientlib personalizzate.
 
 Questo componente è identificato dall’etichetta Firma più moduli
 
@@ -29,13 +32,13 @@ La schermata seguente mostra il nuovo componente creato per visualizzare il mess
 
 ![componente di riepilogo](assets/summary.PNG)
 
-Il nuovo componente è basato sul componente di riepilogo out-of-the-box.
+Il nuovo componente si basa sul componente di riepilogo predefinito.
 ![component-prop](assets/componentprop.PNG)
 
 È stato aggiunto un pulsante per passare al modulo successivo per la firma
 ![template-code](assets/template-code.PNG)
 
-Il file summary.jsp ha il seguente codice: Contiene un riferimento alla libreria client identificata dalla categoria id **getnextform**
+Il summary.jsp ha il seguente codice. Fa riferimento alla libreria client identificata dalla categoria id **getnextform**
 
 ```java
 <%--
