@@ -2,15 +2,18 @@
 title: Sviluppare progetti in AEM
 description: Un’esercitazione sullo sviluppo che illustra come sviluppare per i progetti AEM.  In questa esercitazione verrà creato un modello di progetto personalizzato che può essere utilizzato per creare nuovi progetti all’interno di AEM per gestire flussi di lavoro e attività di creazione dei contenuti.
 version: 6.3, 6.4, 6.5
-feature: progetti, flusso di lavoro
+feature: Progetti, Flusso di lavoro
 topics: collaboration, development, governance
 activity: develop
 audience: developer, implementer, administrator
 doc-type: tutorial
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '4651'
+source-wordcount: '4654'
 ht-degree: 0%
 
 ---
