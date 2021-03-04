@@ -1,10 +1,14 @@
 ---
 title: Capitolo 5 - Authoring delle pagine dei servizi di contenuti - Content Services
 description: Il capitolo 5 dell’esercitazione AEM Headless copre la creazione di pagine dai modelli definiti nel capitolo 4. Queste pagine fungeranno da endpoint HTTP JSON.
+feature: Frammenti di contenuto, API
+topic: Senza testa, gestione dei contenuti
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
