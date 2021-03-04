@@ -1,7 +1,7 @@
 ---
 title: Verificare gli utenti con OTP
 description: Verifica il numero di cellulare associato al numero di applicazione utilizzando OTP.
-feature: integrazioni
+feature: Moduli adattivi
 topics: adaptive forms
 audience: developer
 doc-type: article
@@ -9,11 +9,14 @@ activity: use
 version: 6.4,6.5
 kt: 6594
 thumbnail: 6594.jpg
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 0%
+source-wordcount: '430'
+ht-degree: 1%
 
 ---
 
