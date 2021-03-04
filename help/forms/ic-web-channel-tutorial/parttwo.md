@@ -4,21 +4,18 @@ seo-title: Creazione della configurazione dell’origine dati in AEM Forms
 description: Questa è la parte 2 dell’esercitazione su più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte, creeremo un’origine dati basata su REST.  Il video seguente illustra i passaggi necessari per creare l’origine dati.
 seo-description: Questa è la parte 2 dell’esercitazione su più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte, creeremo un’origine dati basata su REST.  Il video seguente illustra i passaggi necessari per creare l’origine dati.
 uuid: f20abc8d-3512-4a48-9688-524a0dfe732c
-feature: Comunicazione interattiva
+feature: comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 0e1760ad-c412-4a55-a51a-d0875c55768e
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 2%
+source-wordcount: '140'
+ht-degree: 0%
 
 ---
 
