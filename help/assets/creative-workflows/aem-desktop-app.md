@@ -1,39 +1,37 @@
 ---
-title: AEM desktop
-description: Utilizzate AEM Desktop App per semplificare l'accesso a qualsiasi risorsa gestita in AEM sul desktop, per qualsiasi applicazione e formato di file.
+title: App desktop AEM
+description: Utilizza AEM Desktop App per semplificare l’accesso a qualsiasi risorsa gestita in AEM sul desktop, per qualsiasi applicazione e formato di file.
 kt: 2551
 sub-product: assets
-feature: desktop-app
-topics: authoring, collaboration, content-velocity
+feature: App desktop Experience Manager
 version: 6.5, 6.4, 6.3
-doc-type: feature video
-activity: use
-team: TM
-audience: author, marketer
+topic: Gestione dei contenuti
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 7%
+source-wordcount: '146'
+ht-degree: 10%
 
 ---
 
 
-# Usa AEM&#39;app desktop
+# Usare l’app desktop AEM
 
-Utilizzate AEM Desktop App per semplificare l&#39;accesso a qualsiasi risorsa gestita in AEM sul desktop, per qualsiasi applicazione e formato di file.
+Utilizza AEM Desktop App per semplificare l’accesso a qualsiasi risorsa gestita in AEM sul desktop, per qualsiasi applicazione e formato di file.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28868/?quality=12&learn=on)
 
 + Scopri le risorse in AEM tramite Sfoglia e cerca utilizzando un’applicazione desktop dedicata
-+ La gestione della larghezza di banda ottimizzata consente di caricare e scaricare molte risorse di grandi dimensioni
-+ Caricare e scaricare in massa cartelle e risorse
-+ Accesso alle risorse sincronizzate offline
++ La gestione ottimizzata della larghezza di banda consente il caricamento e il download di molte risorse di grandi dimensioni
++ Caricamento e download in blocco di cartelle e risorse
++ Accedere alle risorse sincronizzate offline
 
 >[!NOTE]
 >
-> [ Adobe Asset ](./adobe-asset-link.md) Linkis  Adobe  soluzione dedicata per lavorare con AEM risorse all&#39;interno delle applicazioni Adobe Creative Cloud: Photoshop,  Illustrator,  InDesign. Quando si utilizza  AEM Assets in queste applicazioni,  collegamento risorsa Adobe è preferibile rispetto AEM app desktop.
+> [Adobe Asset ](./adobe-asset-link.md) Link è la soluzione dedicata di Adobe per lavorare con le risorse AEM all’interno delle applicazioni Adobe Creative Cloud: Photoshop, Illustrator, InDesign. Quando si utilizza AEM Assets in queste applicazioni, Adobe Asset Link è preferito rispetto all’app desktop AEM.
 
 ## Risorse aggiuntive
 
-+ [Scarica la versione più recente AEM Desktop App](https://docs.adobe.com/content/help/it-IT/experience-manager-desktop-app/using/release-notes.html)
++ [Scarica l’app desktop AEM più recente](https://docs.adobe.com/content/help/it/experience-manager-desktop-app/using/release-notes.html)
