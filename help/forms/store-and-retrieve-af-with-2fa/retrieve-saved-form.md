@@ -1,7 +1,7 @@
 ---
-title: Recupero del modulo adattivo salvato
+title: Recupera modulo adattivo salvato
 description: Servlet per eseguire il rendering del modulo adattivo con i dati salvati
-feature: adaptive-forms
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,18 +9,21 @@ activity: implement
 version: 6.4,6.5
 kt: 6553
 thumbnail: 6553.jpg
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 0%
+source-wordcount: '108'
+ht-degree: 3%
 
 ---
 
-# Recupero del modulo salvato
+# Recupera modulo salvato
 
-Il passo successivo consiste nel creare un servlet che esegua il rendering del modulo adattivo con i dati salvati e i relativi allegati.
-Il seguente codice servlet viene eseguito dopo la verifica del codice OTP. I dati del modulo adattivo e il relativo mapping di allegati associati all&#39;ID applicazione univoco vengono recuperati dal database. L&#39;oggetto request viene compilato con i dati del modulo adattivo salvato e con il mapping degli allegati del file. La richiesta viene quindi inoltrata per eseguire il rendering del modulo &quot;storeafwith attachments&quot; precompilato con i dati originali e i relativi allegati.
+Il passaggio successivo consiste nel creare un servlet che esegua il rendering del modulo adattivo con i dati salvati e i relativi allegati.
+Il seguente codice del servlet viene eseguito dopo la verifica del codice OTP. I dati del modulo adattivo e la relativa mappa di allegati file associata all’ID applicazione univoco vengono recuperati dal database. L’oggetto di richiesta viene compilato con i dati del modulo adattivo salvato e la mappa degli allegati del file. La richiesta viene quindi inoltrata per eseguire il rendering del modulo &quot;storeafwithattachment&quot; precompilato con i dati originali e i relativi allegati.
 
 ```java
 package store.and.fetch.core.servlets;
