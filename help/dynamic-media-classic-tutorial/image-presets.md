@@ -1,16 +1,19 @@
 ---
 title: Predefiniti immagini
-description: I predefiniti per immagini di Dynamic Media Classic contengono tutte le impostazioni necessarie per creare un’immagine con dimensioni, formato, qualità e nitidezza specifiche. I predefiniti per immagini sono un componente chiave del ridimensionamento dinamico. Se osservate un URL in Dynamic Media Classic, potete verificare facilmente se è in uso un predefinito per immagini. Scoprite i predefiniti per immagini, il motivo per cui sono così utili e come crearli.
+description: I predefiniti per immagini in Dynamic Media Classic contengono tutte le impostazioni necessarie per creare un’immagine con dimensioni, formato, qualità e nitidezza specifici. I predefiniti per immagini sono un componente chiave del dimensionamento dinamico. Quando osservi un URL in Dynamic Media Classic, puoi facilmente vedere se è in uso un predefinito per immagini. Scopri i predefiniti per immagini, perché sono così utili e come crearne uno.
 sub-product: dynamic-media
-feature: image-presets
+feature: Dynamic Media Classic, predefiniti per immagini
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
+topic: Gestione dei contenuti
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '715'
 ht-degree: 1%
 
 ---
@@ -18,55 +21,55 @@ ht-degree: 1%
 
 # Predefiniti immagini {#image-presets}
 
-Un predefinito per immagini è essenzialmente una ricetta che contiene tutte le impostazioni necessarie per creare un’immagine con dimensioni, formato, qualità e nitidezza specifiche. I predefiniti per immagini sono un componente chiave del ridimensionamento dinamico.
+Un predefinito per immagini è essenzialmente una ricetta che contiene tutte le impostazioni necessarie per creare un’immagine con dimensioni, formato, qualità e nitidezza specifiche. I predefiniti per immagini sono un componente chiave del dimensionamento dinamico.
 
-Se osservate gli URL di qualsiasi cliente di Dynamic Media Classic, probabilmente vedrete un predefinito per immagini in uso. Cerca $name$ alla fine dell’URL (con qualsiasi parola o parola sostituita da name).
+Se osservi gli URL di quasi tutti i clienti di Dynamic Media Classic, probabilmente vedrai un predefinito per immagini in uso. Cerca $name$ alla fine dell’URL (con qualsiasi parola o parola sostituita da name).
 
-I predefiniti per immagini riducono l’URL e, invece di compilare diverse istruzioni Image Serving per ogni richiesta, potete scrivere un singolo predefinito per immagini. Ad esempio, questi due URL producono la stessa immagine JPEG da 300 x 300 con nitidezza, ma il secondo utilizza un predefinito per immagini:
+I predefiniti per immagini accorciano l’URL; pertanto, invece di scrivere diverse istruzioni Image Serving per richiesta, puoi scrivere un singolo predefinito per immagini. Ad esempio, questi due URL producono la stessa immagine JPEG 300 x 300 con nitidezza, ma il secondo utilizza un predefinito immagine:
 
 ![immagine](assets/image-presets/image-preset-2.png)
 
-Il valore effettivo dei predefiniti per immagini è che l’amministratore società può aggiornare la definizione di tale predefinito per immagini e influenzare ogni immagine che utilizza tale formato: senza modificare alcun codice Web. I risultati delle modifiche apportate a un predefinito per immagini verranno visualizzati dopo che la cache dell’URL sarà stata cancellata.
+Il vero valore di Image Preset è che l&#39;amministratore aziendale può aggiornare la definizione di tale Image Preset e influenzare ogni immagine che utilizza quel formato, senza modificare alcun codice web. Dopo la cancellazione della cache per l’URL, visualizzerai i risultati di qualsiasi modifica apportata a un predefinito immagine.
 
 >[!IMPORTANT]
 >
->Quando si ridimensiona un’immagine, le proporzioni, il rapporto tra la larghezza e l’altezza dell’immagine, devono sempre essere proporzionali in modo che l’immagine non venga distorta.
+>Quando si ridimensiona un’immagine, le proporzioni, il rapporto tra la larghezza dell’immagine e l’altezza devono sempre essere proporzionali in modo che l’immagine non venga distorta.
 
-Un predefinito per immagini ha un simbolo di dollaro ($) su entrambi i lati del nome e segue il punto interrogativo (?) separatore.
+Un predefinito per immagini ha un simbolo del dollaro ($) su entrambi i lati del suo nome e segue il punto interrogativo (?) separatore.
 
 >[!TIP]
 >
->Create un predefinito per immagini per ciascuna dimensione di immagine univoca sul sito. Ad esempio, se avete bisogno di un&#39;immagine da 350x350 per la pagina dei dettagli del prodotto, un&#39;immagine da 120x120 per le pagine di ricerca e ricerca e un&#39;immagine da 90x90 per un elemento di cross-selling/featured, avete bisogno di tre predefiniti per immagini, che siano 500 immagini o 500000000000000000000000000000000000000000000000000000000000000000000000000000
+>Crea un predefinito per immagini per dimensione immagine univoca sul sito. Ad esempio, se hai bisogno di un&#39;immagine 350 X 350 per la pagina dei dettagli del prodotto, un&#39;immagine 120 X 120 per le pagine di ricerca e ricerca e un&#39;immagine 90 X 90 per un articolo di cross-selling/featured, allora hai bisogno di tre predefiniti immagine, che tu abbia 500 immagini o 500.00.
 
-- Ulteriori informazioni su [Predefiniti immagine](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
-- Scoprite come [creare un predefinito per immagini](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
+- Ulteriori informazioni su [Predefiniti immagini](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
+- Scopri come [Creare un predefinito per immagini](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
 
 ## Predefiniti immagine e nitidezza
 
-In genere, i predefiniti per immagini ridimensionano un’immagine e ogni volta che ridimensionate un’immagine dalle dimensioni originali, occorre aggiungere la nitidezza. Questo perché il ridimensionamento causa l’unione di molti pixel e la loro fusione in uno spazio più piccolo, rendendo l’immagine più morbida e sfocata. La nitidezza aumenta il contrasto tra i bordi e le aree di contrasto elevato di un’immagine.
+In genere, i predefiniti per immagini ridimensionano un’immagine e ogni volta che ne ridimensiona una dalle dimensioni originali, è necessario aggiungere nitidezza. Questo perché il ridimensionamento fa sì che molti pixel si uniscano e si fondano in uno spazio più piccolo, rendendo l&#39;immagine morbida e sfocata. La nitidezza aumenta il contrasto dei bordi e delle aree a contrasto elevato di un&#39;immagine.
 
-Prevediamo che le immagini ad alta risoluzione caricate in Dynamic Media Classic non necessitano di nitidezza se visualizzate a dimensioni intere. quando viene applicato lo zoom in. Tuttavia, con qualsiasi dimensione ridotta, in genere è consigliabile applicare la nitidezza.
+Ci aspettiamo che le immagini ad alta risoluzione caricate in Dynamic Media Classic non abbiano bisogno di nitidezza quando vengono visualizzate a dimensioni reali, quando vengono ingrandite in. Tuttavia, con qualsiasi dimensione più piccola, una certa nitidezza è solitamente auspicabile.
 
 >[!TIP]
 >
->Rendere le immagini sempre più nitide! Dovrete quindi aggiungere la nitidezza a ogni predefinito per immagini (e al predefinito per visualizzatori, di cui parleremo più avanti).
+>Nitidezza sempre durante il ridimensionamento delle immagini! Ciò significa che dovrai aggiungere nitidezza a ogni predefinito per immagini (e al predefinito per visualizzatori, di cui discuteremo più avanti).
 >
->Se le immagini non hanno un aspetto positivo, è possibile che siano state rese più nitide o che la qualità iniziale sia stata scarsa.
+>Se le tue immagini non sembrano buone, le possibilità sono che abbiano bisogno di nitidezza o forse la qualità era scarsa per cominciare.
 
-L’entità della nitidezza da aggiungere è completamente soggettiva. Ad alcune persone piacciono le immagini più morbide, mentre ad altre piacciono molto nitide. È facile migliorare un’immagine eseguendo una combinazione di filtri di nitidezza su un’immagine. Tuttavia, è anche facile esagerare e rendere un&#39;immagine troppo nitida.
+Quanto nitidezza aggiungere è completamente soggettiva. Ad alcune persone piacciono le immagini più morbide, mentre ad altre piacciono molto nitide. È facile migliorare un&#39;immagine utilizzando una combinazione di filtri di nitidezza su un&#39;immagine. Tuttavia, è anche facile superare e rendere un&#39;immagine troppo nitida.
 
-L’immagine seguente mostra tre livelli di nitidezza. Da destra a sinistra non è disponibile nitidezza, ma solo la giusta quantità e troppo.
+L’immagine seguente mostra tre livelli di nitidezza. Da destra a sinistra non si ha nitidezza, solo la quantità destra, e troppo.
 
 ![immagine](assets/image-presets/image-presets-1.jpg)
 
-Dynamic Media Classic consente tre tipi di nitidezza: Nitidezza semplice, modalità di ricampionamento e Maschera di contrasto.
+Dynamic Media Classic consente tre tipi di nitidezza: Nitidezza semplice, modalità di campionamento e Maschera definizione dettagli.
 
-Ulteriori informazioni sulle [opzioni di nitidezza per contenuti multimediali dinamici classici](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
+Ulteriori informazioni sulle [opzioni di nitidezza di Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
 
 ## Risorse aggiuntive
 
-[Guida](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf) ai predefiniti per immagini. Impostazioni da usare per ottimizzare la qualità dell’immagine e la velocità di caricamento.
+[Guida ai predefiniti per immagini](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf). Impostazioni da utilizzare per ottimizzare la qualità delle immagini e la velocità di caricamento.
 
-[L&#39;Immagine È Tutto Parte 2: Non è mai solo una sfocatura — Qualità contro velocità](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Post di blog sull’utilizzo dei predefiniti per immagini per la distribuzione di immagini di alta qualità e a caricamento rapido.
+[L&#39;Immagine È Tutto Parte 2: Non è mai solo una sfocatura — Qualità e velocità](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Un post sul blog che parla dell&#39;utilizzo di Image Preset per la distribuzione di immagini di alta qualità e a caricamento rapido.
 
-[L&#39;Immagine È Tutti I Webinar](https://dynamicmediaseries2019.enterprise.adobeevents.com/). Collegamenti alle registrazioni di tutti e tre i webinar della serie _Image Is Tutto_. [Webinar 2 ](https://seminars.adobeconnect.com/p6lqaotpjnd3) descrive i predefiniti per immagini.
+[L&#39;Immagine È Tutti I Webinar](https://dynamicmediaseries2019.enterprise.adobeevents.com/). Link alle registrazioni di tutti e tre i webinar della serie _Image Is Everything_. [Il webinar 2](https://seminars.adobeconnect.com/p6lqaotpjnd3) illustra i predefiniti per immagini.
