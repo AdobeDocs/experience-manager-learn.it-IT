@@ -4,7 +4,7 @@ seo-title: Utilizzo di funzioni e editor di codice
 description: Utilizzo di funzioni e editor di codice per creare regole di business
 seo-description: Utilizzo di funzioni e editor di codice per creare regole di business
 uuid: 578e91f8-0d93-4192-b7af-1579df2feaf8
-feature: moduli adattivi
+feature: Moduli adattivi
 topics: authoring
 audience: developer
 doc-type: tutorial
@@ -13,11 +13,14 @@ version: 6.4,6.5
 discoiquuid: f480ef3e-7e38-4a6b-a223-c102787aea7f
 kt: 4270
 thumbnail: 22282.jpg
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 0%
+source-wordcount: '155'
+ht-degree: 2%
 
 ---
 
