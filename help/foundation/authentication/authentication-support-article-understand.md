@@ -1,88 +1,91 @@
 ---
-title: Comprendere il supporto dell'autenticazione in AEM
-description: 'Una visione consolidata dei meccanismi di autenticazione (e di autorizzazione occasionalmente) supportati da AEM. '
+title: Comprendere il supporto per l’autenticazione in AEM
+description: 'Una visualizzazione consolidata dei meccanismi di autenticazione (e di autorizzazione occasionalmente) supportati da AEM. '
 version: 6.3, 6.4, 6.5
-feature: authentication
+feature: 'Utenti e gruppi '
 topics: authentication, security
 activity: understand
 audience: architect, developer, implementer
 doc-type: article
 kt: 406
+topic: Architettura
+role: Architetto
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: 703321483454435e33c0aa26d66110271fc095d8
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 2%
+source-wordcount: '144'
+ht-degree: 5%
 
 ---
 
 
-# Informazioni sul supporto dell&#39;autenticazione in AEM 6.x
+# Comprendere il supporto per l’autenticazione in AEM 6.x
 
-Una visione consolidata dei meccanismi di autenticazione (e di autorizzazione occasionalmente) supportati da AEM.
+Una visualizzazione consolidata dei meccanismi di autenticazione (e di autorizzazione occasionalmente) supportati da AEM.
 
-*La tabella seguente descrive come gli utenti possono effettuare l&#39;autenticazione in AEM.*
+*La tabella seguente descrive come gli utenti possono eseguire l’autenticazione in AEM.*
 
 <table>
     <tbody>
         <tr>
             <td><strong>Autenticazione</strong></td>
             <td><strong>AEM 6.3</strong></td>
-            <td><strong>AEM 6.4  </strong></td>
+            <td><strong>AEM 6.4</strong></td>
             <td><strong>AEM 6.5</strong></td>
         </tr>
         <tr>
-            <td><strong>AEM come provider di identità canonico</strong></td>
+            <td><strong>AEM come provider di identità canonica</strong></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td>Autenticazione di base</td>
-            <td>③</td>
-            <td>③</td>
-            <td>③</td>
+            <td>↓</td>
+            <td>↓</td>
+            <td>↓</td>
         </tr>
         <tr>
-            <td>Basato su Forms</td>
-            <td>③</td>
-            <td>③</td>
-            <td>③</td>
+            <td>Basato su moduli</td>
+            <td>↓</td>
+            <td>↓</td>
+            <td>↓</td>
         </tr>
         <tr>
             <td>Basato su token (con <a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">token incapsulato</a>)</td>
-            <td>③</td>
-            <td>③</td>
-            <td>③</td>
+            <td>↓</td>
+            <td>↓</td>
+            <td>↓</td>
         </tr>
         <tr>
-            <td><strong>Sistema non AEM come provider di identità canonico</strong></td>
+            <td><strong>Sistema non AEM come fornitore di identità canonica</strong></td>
             <td></td>
             <td></td>
             <td></td>
             <tr>
                 <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/ldap-config.html" target="_blank">LDAP</a></td>
-                <td>③</td>
-                <td>③</td>
-                <td>③</td>
+                <td>↓</td>
+                <td>↓</td>
+                <td>↓</td>
             </tr>
             <tr>
                 <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/single-sign-on.html" target="_blank">SSO</a></td>
-                <td>③</td>
-                <td>③</td>
-                <td>③</td>
+                <td>↓</td>
+                <td>↓</td>
+                <td>↓</td>
             </tr>
             <tr>
                 <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html" target="_blank">SAML 2.0</a></td>
-                <td>③</td>
-                <td>③</td>
-                <td>③</td>
+                <td>↓</td>
+                <td>↓</td>
+                <td>↓</td>
             </tr>
             <tr>
                 <td><a href="https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html" target="_blank">OAuth 1.0a e 2.0</a></td>
-                <td>③</td>
-                <td>③</td>
-                <td>③</td>
+                <td>↓</td>
+                <td>↓</td>
+                <td>↓</td>
             </tr>
             <tr>
                 <td><a href="https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-authenticationhandler/openid-authenticationhandler.html" target="_blank">OpenID</a></td>
@@ -93,4 +96,4 @@ Una visione consolidata dei meccanismi di autenticazione (e di autorizzazione oc
     </tbody>
 </table>
 
-⁕ *Fornita tramite progetti della community, ma non direttamente supportata dal Adobe .*
+⁕ *Forniti tramite progetti della community, ma non direttamente supportati da Adobe.*
