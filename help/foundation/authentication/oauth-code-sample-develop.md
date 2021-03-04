@@ -1,26 +1,29 @@
 ---
 title: Sviluppo di ambiti OAuth in AEM
-description: Gli ambiti OAuth estensibili di Adobe Experience Manager consentono il controllo dell'accesso alle risorse da un'applicazione client autorizzata da un utente finale. Il diagramma seguente illustra il flusso di richieste nel contesto di AEM.
+description: Gli ambiti OAuth estensibili di Adobe Experience Manager consentono il controllo degli accessi alle risorse da un’applicazione client autorizzata da un utente finale. Il diagramma seguente illustra il flusso di richieste nel contesto di AEM.
 version: 6.3, 6.4, 6.5
-feature: authentication
+feature: 'Utenti e gruppi '
 topics: authentication, security
 activity: develop
 audience: developer
 doc-type: code
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: b351a57e6e5be0fe5696dc09842fa77fdd036a27
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 1%
+source-wordcount: '185'
+ht-degree: 3%
 
 ---
 
 
 # Sviluppo di ambiti OAuth
 
-Gli ambiti OAuth estensibili di Adobe Experience Manager consentono il controllo dell&#39;accesso per le risorse da un&#39;applicazione client autorizzata da un utente finale. Il diagramma seguente illustra il flusso di richieste nel contesto di AEM.
+Gli ambiti OAuth estensibili di Adobe Experience Manager consentono il controllo degli accessi per le risorse da un’applicazione client autorizzata da un utente finale. Il diagramma seguente illustra il flusso di richieste nel contesto di AEM.
 
-![Flusso Oauth Scopes](./assets/oauth-code-sample-develop/oauth-scopes-flow.png)
+![Flusso degli ambiti oauth](./assets/oauth-code-sample-develop/oauth-scopes-flow.png)
 
 AEM fornisce tre ambiti:
 
@@ -28,8 +31,8 @@ AEM fornisce tre ambiti:
 * Accesso offline
 * Replica
 
-AEM ambiti OAuth estensibili consentono di definire altri ambiti personalizzati. Ad esempio, un ambito personalizzato può essere sviluppato e distribuito per AEM che consente a un&#39;app mobile autorizzata tramite OAuth di essere limitata alla lettura, ma non alla scrittura di risorse.
+Gli ambiti estensibili OAuth di AEM consentono di definire altri ambiti personalizzati. Ad esempio, è possibile sviluppare e distribuire un ambito personalizzato in AEM che consente a un’app mobile autorizzata tramite OAuth di essere limitata alla lettura, ma non alla scrittura di risorse.
 
-OAuth è il metodo preferito per l&#39;autorizzazione di un&#39;applicazione client, in quanto utilizza un token di accesso invece di richiedere che le credenziali di un utente AEM siano fornite a tale applicazione.
+OAuth è il metodo preferito per autorizzare un’applicazione client in quanto utilizza un token di accesso invece di richiedere che le credenziali di un utente AEM vengano fornite a tale applicazione.
 
-* [Visualizzare il codice](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/legacy/bundle/src/main/java/com/adobe/acs/samples/authentication/oauth/impl/SampleScopeWithPrivileges.java)
+* [Visualizza il codice](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/legacy/bundle/src/main/java/com/adobe/acs/samples/authentication/oauth/impl/SampleScopeWithPrivileges.java)
