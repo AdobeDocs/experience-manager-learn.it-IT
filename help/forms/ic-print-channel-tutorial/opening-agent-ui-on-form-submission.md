@@ -4,7 +4,7 @@ seo-title: Apertura dell'interfaccia utente dell'agente all'invio POST
 description: Questa è la parte 11 dell'esercitazione su più passaggi per creare il primo documento di comunicazione interattivo per il canale di stampa. In questa parte verrà avviata l’interfaccia dell’interfaccia dell’agente per la creazione di corrispondenza ad-hoc all’invio del modulo.
 seo-description: Questa è la parte 11 dell'esercitazione su più passaggi per creare il primo documento di comunicazione interattivo per il canale di stampa. In questa parte verrà avviata l’interfaccia dell’interfaccia dell’agente per la creazione di corrispondenza ad-hoc all’invio del modulo.
 uuid: 96f34986-a5c3-400b-b51b-775da5d2cbd7
-feature: Comunicazione interattiva
+feature: comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,14 +12,11 @@ activity: implement
 version: 6.4,6.5
 kt: 6168
 thumbnail: 40122.jpg
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Intermedio
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 1%
+source-wordcount: '365'
+ht-degree: 0%
 
 ---
 
