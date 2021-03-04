@@ -1,32 +1,31 @@
 ---
-title: Filigrane in  AEM Assets
-description: AEM come funzionalità di Cloud Service  filigrana, le rappresentazioni personalizzate delle immagini possono essere filigrane utilizzando qualsiasi immagine PNG.
-feature: watermark
-topics: images
-audience: all
-doc-type: feature video
-activity: use
+title: Filigrane in AEM Assets
+description: Le funzionalità di watermarking di AEM as a Cloud Service consentono alle rappresentazioni personalizzate delle immagini di essere filigrate utilizzando qualsiasi immagine PNG.
+feature: Microservizi Asset Compute
 version: cloud-service
 kt: 6357
 thumbnail: 41536.jpg
+topic: Gestione dei contenuti
+role: Developer (Sviluppatore)
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '58'
-ht-degree: 0%
+source-wordcount: '65'
+ht-degree: 4%
 
 ---
 
 
 # Filigrane
 
-AEM come funzionalità di Cloud Service  filigrana, le rappresentazioni personalizzate delle immagini possono essere filigrane utilizzando qualsiasi immagine PNG.
+Le funzionalità di watermarking di AEM as a Cloud Service consentono alle rappresentazioni personalizzate delle immagini di essere filigrate utilizzando qualsiasi immagine PNG.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41536/?quality=12&learn=on)
 
 ## Configurazione OSGi
 
-Il seguente stub di configurazione OSGi può essere aggiornato e aggiunto al progetto secondario `ui.config` del progetto AEM.
+Il seguente stub di configurazione OSGi può essere aggiornato e aggiunto al sottoprogetto del progetto AEM `ui.config` .
 
 `/apps/example/osgiconfig/config.author/com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json`
 
