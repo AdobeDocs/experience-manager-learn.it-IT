@@ -1,10 +1,14 @@
 ---
 title: Capitolo 6 - Esposizione dei contenuti su AEM Publish as JSON - Content Services
 description: Il capitolo 6 dell’esercitazione AEM Headless tratta la garanzia che tutti i pacchetti, le configurazioni e i contenuti necessari siano disponibili su AEM Publish per consentire il consumo dall’app mobile.
+feature: Frammenti di contenuto, API
+topic: Senza testa, gestione dei contenuti
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
