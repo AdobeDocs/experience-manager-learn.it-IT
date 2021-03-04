@@ -1,21 +1,18 @@
 ---
 title: Autenticazione a due fattori SMS
 description: Aggiungi un ulteriore livello di sicurezza per confermare l’identità di un utente quando desidera eseguire determinate attività
-feature: Moduli adattivi
+feature: integrazioni
 topics: adaptive forms
 audience: developer
 doc-type: article
 activity: use
 version: 6.4,6.5
 kt: 6317
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Esperienza
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 2%
+source-wordcount: '604'
+ht-degree: 1%
 
 ---
 
