@@ -1,48 +1,44 @@
 ---
-title: Configurare la ricerca per la traduzione intelligente con  AEM Assets
-seo-title: Configurare la ricerca per la traduzione intelligente con  AEM Assets
-description: Smart Translation Search consente l'utilizzo di termini di ricerca non inglesi per la risoluzione al contenuto inglese. Per impostare AEM per Smart Translation Search, il bundle Apache Oak Search Machine Translation OSGi deve essere installato e configurato, così come i relativi pacchetti linguistici Apache Joshua gratuiti e open source che contengono le regole di traduzione.
-seo-description: Smart Translation Search consente l'utilizzo di termini di ricerca non inglesi per la risoluzione al contenuto inglese. Per impostare AEM per Smart Translation Search, il bundle Apache Oak Search Machine Translation OSGi deve essere installato e configurato, così come i relativi pacchetti linguistici Apache Joshua gratuiti e open source che contengono le regole di traduzione.
-uuid: b0e8dab2-6bc4-4158-91a1-4b9811359798
-discoiquuid: 4db1b4db-74f4-4646-b5de-cb891612cc90
-topics: authoring, search, metadata, localization
-audience: administrator, developer
-doc-type: technical video
-activity: setup
+title: Configurare la ricerca di traduzione avanzata con AEM Assets
+description: La funzione Ricerca di traduzione intelligente consente di utilizzare termini di ricerca non inglesi per risolvere i contenuti in inglese. Per impostare AEM per Smart Translation Search, è necessario installare e configurare il bundle Apache Oak Search Machine Translation OSGi, nonché i pacchetti linguistici Apache Joshua gratuiti e open source che contengono le regole di traduzione.
 version: 6.3, 6.4, 6.5
+feature: Ricerca
+topic: Gestione dei contenuti
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 0%
+source-wordcount: '872'
+ht-degree: 1%
 
 ---
 
 
-# Imposta la ricerca per le traduzioni intelligenti con  AEM Assets{#set-up-smart-translation-search-with-aem-assets}
+# Configurare la ricerca per la traduzione avanzata con AEM Assets{#set-up-smart-translation-search-with-aem-assets}
 
-Smart Translation Search consente l&#39;utilizzo di termini di ricerca non inglesi per la risoluzione al contenuto inglese. Per impostare AEM per Smart Translation Search, il bundle Apache Oak Search Machine Translation OSGi deve essere installato e configurato, così come i relativi pacchetti linguistici Apache Joshua gratuiti e open source che contengono le regole di traduzione.
+La funzione Ricerca di traduzione intelligente consente di utilizzare termini di ricerca non inglesi per risolvere i contenuti in inglese. Per impostare AEM per Smart Translation Search, è necessario installare e configurare il bundle Apache Oak Search Machine Translation OSGi, nonché i pacchetti linguistici Apache Joshua gratuiti e open source che contengono le regole di traduzione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21291/?quality=9&learn=on)
 
 >[!NOTE]
 >
->È necessario impostare la ricerca per le traduzioni intelligenti su ogni istanza AEM che lo richiede.
+>La ricerca per la traduzione avanzata deve essere impostata su ogni istanza di AEM che la richiede.
 
-1. Scaricare e installare il bundle Oak Search Machine Translation OSGi
-   * [Scaricate il ](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.jackrabbit%22%20AND%20a%3A%22oak-search-mt%22) bundle Oak Search Machine Translation OSGi che corrisponde AEM versione Oak.
-   * Installate il bundle Oak Search Machine Translation OSGi scaricato in AEM tramite [ `/system/console/bundles`](http://localhost:4502/system/console/bundles).
+1. Scarica e installa il bundle OSGi di Oak Search Machine Translation
+   * [Scarica il ](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.jackrabbit%22%20AND%20a%3A%22oak-search-mt%22) bundle OSGi di Oak Search Machine Translation che corrisponde alla versione Oak di AEM.
+   * Installa il bundle OSGi scaricato Oak Search Machine Translation in AEM tramite [ `/system/console/bundles`](http://localhost:4502/system/console/bundles).
 
-2. Download e aggiornamento dei pacchetti linguistici Apache Joshua
-   * Scaricate e decomprimete i [Language Pack Apache Joshua](https://cwiki.apache.org/confluence/display/JOSHUA/Language+Packs) desiderati.
-   * Modificare il file `joshua.config` e commentare le 2 righe che iniziano con:
+2. Scarica e aggiorna i Language Pack di Apache Joshua
+   * Scarica e decomprimi i [Language Pack Apache Joshua](https://cwiki.apache.org/confluence/display/JOSHUA/Language+Packs) desiderati.
+   * Modifica il file `joshua.config` e commenta le 2 righe che iniziano con:
 
       ```
       feature-function = LanguageModel ...
       ```
 
-   * Determinare e registrare la dimensione della cartella del modello del Language Pack, in quanto questo influenza la quantità di spazio heap supplementare AEM richiederà.
-   * Spostate la cartella del Language Pack Apache Joshua decompressa (con le `joshua.config` modifiche) in
+   * Determina e registra le dimensioni della cartella del modello del Language Pack, in quanto questo influenza lo spazio heap aggiuntivo richiesto da AEM.
+   * Sposta la cartella del Language Pack Apache Joshua decompressa (con le `joshua.config` modifiche) in
 
       ```
       .../crx-quickstart/opt/<source_language-target_language>
@@ -58,54 +54,54 @@ Smart Translation Search consente l&#39;utilizzo di termini di ricerca non ingle
    * Interrompi AEM
    * Determinare la nuova dimensione heap richiesta per AEM
 
-      * AEM dimensione dell&#39;heap pre-lingua-mancanza + la dimensione della directory del modello arrotondata al più vicino 2 GB
-      * Ad esempio: Se l&#39;installazione dei pacchetti pre-lingua richiede 8 GB di heap per essere eseguita e la cartella del modello del Language Pack non è compressa da 3,8 GB, la nuova dimensione dell&#39;heap è:
+      * Dimensione heap pre-language-lack di AEM + la dimensione della directory del modello arrotondata al più vicino 2 GB
+      * Ad esempio: Se l&#39;installazione di AEM richiede 8 GB di heap per essere eseguita e la cartella del modello del Language Pack non è compressa da 3,8 GB, la nuova dimensione dell&#39;heap è:
 
-         L&#39;originale `8GB` + ( `3.75GB` arrotondato all&#39;unità `2GB`, che è `4GB`) per un totale di `12GB`
-   * Verificare che la macchina disponga di questa quantità di memoria supplementare disponibile.
-   * Aggiornare AEM script di avvio per regolare la nuova dimensione dell&#39;heap
+         L&#39;originale `8GB` + ( `3.75GB` arrotondato all&#39;originale `2GB`, che è `4GB`) per un totale di `12GB`
+   * Verificare che il computer disponga di questa quantità di memoria disponibile aggiuntiva.
+   * Aggiorna gli script di avvio di AEM per regolare la nuova dimensione dell&#39;heap
 
       * Esempio. `java -Xmx12g -jar cq-author-p4502.jar`
-   * Riavviate AEM con la dimensione heap aumentata.
+   * Riavvia AEM con la dimensione dell&#39;heap aumentata.
 
    >[!NOTE]
    >
-   >Lo spazio richiesto per i Language Pack può aumentare notevolmente, soprattutto se vengono utilizzati più Language Pack.
+   >Lo spazio heap necessario per i Language Pack può aumentare, specialmente quando vengono utilizzati più Language Pack.
    >
    >
-   >Assicurarsi sempre che **l&#39;istanza disponga di memoria sufficiente** per contenere gli incrementi nello spazio heap allocato.
+   >Assicurati sempre che **l&#39;istanza abbia memoria sufficiente** per adattarsi agli aumenti dello spazio heap allocato.
    >
    >
-   >Il **heap di base deve essere sempre calcolato per supportare prestazioni accettabili senza l&#39;installazione di Language Pack**.
+   >L&#39; **heap di base deve sempre essere calcolato per supportare prestazioni accettabili senza l&#39;installazione di Language Pack**.
 
-4. Registrare i Language Pack tramite Apache Jackrabbit Oak Machine Translation Completo di testo Query Termini Fornitori OSGi configurazioni
+4. Registrare i Language Pack tramite Apache Jackrabbit Oak Machine Translation Configurazioni Full-text Query Termini Provider OSGi
 
-   * Per ciascun Language Pack, [creare un nuovo Apache Jackrabbit Oak Machine Translation Completo di testo Query Termini provider OSGi configurazione](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.plugins.index.mt.MTFulltextQueryTermsProviderFactory) tramite il gestore di configurazione della console Web AEM.
+   * Per ogni Language Pack, [crea una nuova configurazione Apache Jackrabbit Oak Machine Translation Full-text Query Termini Provider OSGi ](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.plugins.index.mt.MTFulltextQueryTermsProviderFactory) tramite il Configuration Manager di AEM Web Console.
 
-      * `Joshua Config Path` è il percorso assoluto del file joshua.config. Il processo di AEM deve essere in grado di leggere tutti i file presenti nella cartella del Language Pack.
-      * `Node types` sono i tipi di nodo candidati per i quali la ricerca full-text coinvolgerà questo Language Pack per la traduzione.
-      * `Minimum score` è il punteggio minimo di confidenza per un termine convertito da utilizzare.
+      * `Joshua Config Path` è il percorso assoluto del file joshua.config. Il processo AEM deve essere in grado di leggere tutti i file nella cartella del Language Pack.
+      * `Node types` sono i tipi di nodo candidati la cui ricerca full-text coinvolgerà questo Language Pack per la traduzione.
+      * `Minimum score` è il punteggio minimo di affidabilità per un termine tradotto da utilizzare.
 
-         * Ad esempio, hombre (spagnolo per &quot;uomo&quot;) può tradurre in inglese la parola &quot;uomo&quot; con un punteggio di confidenza di `0.9` e anche tradurre in inglese la parola &quot;umano&quot; con un punteggio di confidenza `0.2`. Regolare il punteggio minimo su `0.3`, manterrebbe la traduzione &quot;hombre&quot; su &quot;uomo&quot;, ma scartare la traduzione &quot;hombre&quot; su &quot;umano&quot;, in quanto questo punteggio di traduzione di `0.2` è inferiore al punteggio minimo di `0.3`.
+         * Per esempio, hombre (spagnolo per &quot;uomo&quot;) può tradurre alla parola inglese &quot;uomo&quot; con un punteggio di affidabilità di `0.9` e anche tradurre alla parola inglese &quot;umano&quot; con un punteggio di affidabilità `0.2`. Regolare il punteggio minimo su `0.3`, manterrebbe la traduzione &quot;hombre&quot; su &quot;uomo&quot;, ma scarta la traduzione &quot;hombre&quot; su &quot;umano&quot;, in quanto questo punteggio di traduzione di `0.2` è inferiore al punteggio minimo di `0.3`.
 
-5. Eseguire una ricerca full-text rispetto alle risorse
-   * Poiché dam:Asset è il tipo di nodo che questo Language Pack è registrato di nuovo, è necessario cercare  AEM Assets utilizzando la ricerca full-text per convalidarlo.
-   * Andate a AEM > Risorse e aprite Omnisearch. Cercare un termine nella lingua di cui è stato installato il Language Pack.
-   * Se necessario, regolate il punteggio minimo nelle configurazioni OSGi per garantire la precisione dei risultati.
+5. Eseguire una ricerca full-text sulle risorse
+   * Poiché dam:Asset è il tipo di nodo che questo Language Pack viene registrato nuovamente, per convalidarlo è necessario cercare AEM Assets utilizzando la ricerca full-text.
+   * Passa a AEM > Risorse e apri Omnisearch. Cercare un termine nella lingua di cui è stato installato il Language Pack.
+   * Se necessario, regola il punteggio minimo nelle configurazioni OSGi per garantire la precisione dei risultati.
 
 6. Aggiornamento dei Language Pack
-   * I pacchetti linguistici Apache Joshua sono completamente mantenuti dal progetto Apache Joshua, e il loro aggiornamento o la loro correzione è come la discrezione del progetto Apache Joshua.
-   * Se un Language Pack viene aggiornato, per installare gli aggiornamenti in AEM, devono essere seguiti i passaggi da 2 a 4 indicati sopra, regolando la dimensione dell&#39;heap in alto o in basso secondo necessità.
+   * I pacchetti linguistici Apache Joshua sono interamente mantenuti dal progetto Apache Joshua, e il loro aggiornamento o correzione è come la discrezione del progetto Apache Joshua.
+   * Se un Language Pack viene aggiornato, per installare gli aggiornamenti in AEM, è necessario seguire i passaggi da 2 a 4 di cui sopra, regolando le dimensioni dell’heap in alto o in basso secondo necessità.
 
-      * Quando si sposta il Language Pack decompresso nella cartella crx-quickstart/opt, spostare qualsiasi cartella esistente del Language Pack prima di copiarlo nel nuovo file.
-   * Se AEM non richiede un riavvio, le configurazioni Apache Jackrabbit Oak Machien Translation FullText Query Termini provider OSGi relative ai Language Pack aggiornati devono essere salvate nuovamente in modo AEM elaborare i file aggiornati.
+      * Tieni presente che quando scomprimi il Language Pack decompresso nella cartella crx-quickstart/opt , sposta qualsiasi cartella esistente del Language Pack prima di copiarlo nel nuovo.
+   * Se AEM non richiede un riavvio, le configurazioni OSGi pertinenti Apache Jackrabbit Oak Machien Translation Fulltext Query Provider che riguardano i Language Pack aggiornati devono essere nuovamente salvate in modo che AEM elabori i file aggiornati.
 
 
 ## Aggiornamento dell&#39;indice damAssetLucene {#updating-damassetlucene-index}
 
-Affinché [AEM Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html) sia influenzato AEM Smart Translation, AEM `/oak   :index  /damAssetLucene` indice deve essere aggiornato per contrassegnare i predettiTags (il nome di sistema per &quot;Smart Tags&quot;) come parte dell&#39;indice Lucene aggregato della risorsa.
+Affinché [AEM Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html) sia interessato dalla traduzione avanzata di AEM, l’indice `/oak   :index  /damAssetLucene` di AEM deve essere aggiornato per contrassegnare i predictedTags (il nome di sistema per &quot;Smart Tags&quot;) come parte dell’indice Lucene aggregato della risorsa.
 
-In `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predicatedTags`, verificare che la configurazione sia la seguente:
+Alla voce `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predicatedTags`, assicurati che la configurazione sia la seguente:
 
 ```xml
  <damAssetLucene jcr:primaryType="oak:QueryIndexDefinition">
@@ -125,7 +121,7 @@ In `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predicatedTags`, v
 
 ## Risorse aggiuntive{#additional-resources}
 
-* [Apache Oak Search Machine Translation OSGi bundle](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.jackrabbit%22%20AND%20a%3A%22oak-search-mt%22)
-* [Pacchetti linguistici Apache Joshua](https://cwiki.apache.org/confluence/display/JOSHUA/Language+Packs)
-* [AEM smart tag](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html)
+* [Bundle OSGi di Apache Oak Search Machine Translation](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22org.apache.jackrabbit%22%20AND%20a%3A%22oak-search-mt%22)
+* [Apache Joshua Language Pack](https://cwiki.apache.org/confluence/display/JOSHUA/Language+Packs)
+* [Tag avanzati AEM](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html)
 * [Best practice per query e indicizzazione](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/best-practices-for-queries-and-indexing.html)
