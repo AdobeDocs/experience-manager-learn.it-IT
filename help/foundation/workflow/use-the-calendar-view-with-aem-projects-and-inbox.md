@@ -1,35 +1,38 @@
 ---
-title: Usare la visualizzazione Calendario con AEM progetti e inbox
-seo-title: Usa visualizzazione calendario con progetti AEM e inbox
-description: 'AEM Visualizzazione calendario tiene traccia di progetti e attività in una vista calendario per semplificare la gestione e la pianificazione dei progetti. Con la vista Calendario, l''utente avrebbe una visibilità complessiva sui progetti e sulle attività in corso, pianificati, in scadenza a breve e in scadenza. '
-seo-description: AEM Visualizzazione calendario tiene traccia di progetti e attività in una vista calendario per semplificare la gestione e la pianificazione dei progetti. Con la vista Calendario, l'utente avrebbe una visibilità complessiva sui progetti e sulle attività in corso, pianificati, in scadenza a breve e in scadenza.
+title: Utilizzare la Vista calendario con Progetti AEM e Casella in entrata
+seo-title: Utilizzare la Vista calendario con Progetti AEM e Casella in entrata
+description: 'La Vista calendario di AEM tiene traccia dei progetti e delle attività in una vista calendario per facilitarne la gestione e la pianificazione. Nella vista Calendario, l’utente avrà una visibilità complessiva sui progetti e le attività attualmente in corso, pianificate, in scadenza a breve e in scadenza. '
+seo-description: La Vista calendario di AEM tiene traccia dei progetti e delle attività in una vista calendario per facilitarne la gestione e la pianificazione. Nella vista Calendario, l’utente avrà una visibilità complessiva sui progetti e le attività attualmente in corso, pianificate, in scadenza a breve e in scadenza.
 version: 6.3, 6.4, 6.5
-feature: inbox, projects, workflow
+feature: '"Flusso di lavoro, progetti"'
 topics: governance, collaboration
 activity: use
 audience: author, analyst
 doc-type: feature video
 uuid: 3dc9999c-eddf-4e42-9aa9-87a37a47699d
 discoiquuid: 5ad21858-a4a2-486c-98dc-4f5ba46a3bc1
+topic: Collaborazione
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
 
 
-# Usare la visualizzazione Calendario con AEM progetti e inbox
+# Utilizzare la Vista calendario con Progetti AEM e Casella in entrata
 
-AEM Visualizzazione calendario tiene traccia di progetti e attività in una vista calendario per semplificare la gestione e la pianificazione dei progetti. Con la vista Calendario, l&#39;utente avrebbe una visibilità complessiva sui progetti e sulle attività in corso, pianificati, in scadenza a breve e in scadenza.
+La Vista calendario di AEM tiene traccia dei progetti e delle attività in una vista calendario per facilitarne la gestione e la pianificazione. Nella vista Calendario, l’utente avrà una visibilità complessiva sui progetti e le attività attualmente in corso, pianificate, in scadenza a breve e in scadenza.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16804/?quality=12&learn=on)
 
-La visualizzazione Calendario consente di gestire meglio progetti e attività con le seguenti funzionalità:
+La Vista calendario consente di gestire meglio progetti e attività con le seguenti funzionalità:
 
-* l’utente può visualizzare l’elenco dei progetti a lui assegnati e può passare al progetto dalla visualizzazione calendario. L&#39;amministratore può visualizzare tutti i progetti.
-* possibilità di personalizzare l&#39;intervallo di date per monitorare l&#39;avanzamento dei progetti in un determinato intervallo di tempo.
-* l’utente può contrassegnare un progetto o un’attività come completato, ritardato o in orario.
-* l&#39;utente può aggiungere una descrizione a un progetto nella visualizzazione Calendario.
-* l&#39;utente può aggiungere un livello di priorità a progetti e attività.
+* L’utente può visualizzare l’elenco dei progetti a lui assegnati e consente di passare dalla visualizzazione calendario al progetto. L’amministratore può visualizzare tutti i progetti.
+* possibilità di personalizzare l’intervallo di date per monitorare l’avanzamento dei progetti in un determinato intervallo di tempo.
+* L&#39;utente può contrassegnare un progetto o un&#39;attività come completato, ritardato o in tempo.
+* l&#39;utente può aggiungere una descrizione a un progetto nella visualizzazione calendario.
+* l’utente può aggiungere un livello di priorità a progetti e attività.
