@@ -1,9 +1,9 @@
 ---
-title: Informazioni sulle proprietà pagina in  AEM Sites
-seo-title: Informazioni sulle proprietà pagina in  Adobe Experience Manager Sites
-description: Nel seguente video vengono introdotti i metadati delle proprietà di pagina associati a una pagina in Adobe Experience Manager.
-seo-description: 'Nel seguente video vengono introdotti i metadati delle proprietà di pagina associati a una pagina in Adobe Experience Manager. '
-feature: page-editor
+title: Informazioni sulle proprietà pagina in AEM Sites
+seo-title: Informazioni sulle proprietà pagina in Adobe Experience Manager Sites
+description: Il video seguente introduce i metadati delle proprietà della pagina associati a una pagina in Adobe Experience Manager.
+seo-description: 'Il video seguente introduce i metadati delle proprietà della pagina associati a una pagina in Adobe Experience Manager. '
+feature: Editor pagina
 topics: authoring, metadata
 audience: author, marketer
 doc-type: feature video
@@ -11,22 +11,25 @@ activity: understand
 version: 6.3, 6.4, 6.5
 kt: 4321
 thumbnail: 32192.jpg
+topic: Gestione dei contenuti
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 29%
+source-wordcount: '177'
+ht-degree: 30%
 
 ---
 
 
-# Informazioni sulle proprietà pagina {#understanding-page-properties-aem-sites}
+# Informazioni sulle proprietà della pagina {#understanding-page-properties-aem-sites}
 
-Nel seguente video vengono introdotte le proprietà di pagina associate a una pagina in Adobe Experience Manager.
+Il video seguente introduce le proprietà della pagina associate a una pagina in Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32192?quality=12&learn=on)
 
-In questo video, sono trattati i seguenti elementi delle proprietà pagina:
+In questo video sono trattati i seguenti elementi di proprietà della pagina:
 
 * Base
    * Titolo e tag
@@ -56,10 +59,10 @@ In questo video, sono trattati i seguenti elementi delle proprietà pagina:
 * Personalizzazione
    * Configurazioni ContextHub
    * Configurazione targeting
-* Autorizzazioni 
+* Autorizzazioni
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Modifica della documentazione relativa alle proprietà della pagina](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-page-properties.html)
-* [Modifica della documentazione sul contenuto della pagina](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guida utente per l’authoring dei siti](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/home.html?topic=/experience-manager/6-5/sites/authoring/morehelp/page-authoring.ug.js)
+* [Modifica della documentazione delle proprietà di una pagina](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-page-properties.html)
+* [Modifica della documentazione del contenuto di una pagina](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-content.html)
+* [Guida utente all’authoring di siti](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/home.html?topic=/experience-manager/6-5/sites/authoring/morehelp/page-authoring.ug.js)
