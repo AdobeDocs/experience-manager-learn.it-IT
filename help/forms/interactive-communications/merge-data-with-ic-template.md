@@ -3,19 +3,16 @@ title: Generazione del documento del canale di stampa mediante unione dei dati
 seo-title: Generazione del documento del canale di stampa mediante unione dei dati
 description: Scopri come generare il documento del canale di stampa unendo i dati contenuti nel flusso di input
 seo-description: Scopri come generare il documento del canale di stampa unendo i dati contenuti nel flusso di input
-feature: Comunicazione interattiva
+feature: comunicazione interattiva
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Intermedio
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '502'
 ht-degree: 1%
 
 ---
