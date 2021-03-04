@@ -1,7 +1,7 @@
 ---
 title: Crea flusso di lavoro principale per attivare il processo di firma
 description: Crea un flusso di lavoro per memorizzare i moduli per la firma nel database
-feature: Moduli adattivi
+feature: moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,14 +9,11 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 6887.jpg
 kt: 6887
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Intermedio
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 2%
+source-wordcount: '163'
+ht-degree: 0%
 
 ---
 
