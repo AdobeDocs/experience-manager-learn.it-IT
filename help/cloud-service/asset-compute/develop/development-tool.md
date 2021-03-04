@@ -1,7 +1,7 @@
 ---
-title: ' Strumento di sviluppo Asset compute'
-description: ' Asset compute Development Tool è un cablaggio Web locale che consente agli sviluppatori di configurare ed eseguire i lavoratori Risorse per computer localmente, al di fuori del contesto dell’SDK AEM rispetto alle risorse Asset compute  in Adobe I/O Runtime.'
-feature: asset-compute
+title: Strumento di sviluppo Asset Compute
+description: Asset Compute Development Tool è un cablaggio web locale che consente agli sviluppatori di configurare ed eseguire in locale i processi di lavoro Asset Computer, al di fuori del contesto dell’SDK AEM, in base alle risorse Asset Compute in Adobe I/O Runtime.
+feature: Microservizi Asset Compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,58 +9,61 @@ audience: developer
 doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
+topic: Integrazioni, Sviluppo
+role: Developer (Sviluppatore)
+level: Intermedio, esperienza
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
 
 
-#  Strumento di sviluppo Asset compute
+# Strumento di sviluppo Asset Compute
 
- Asset compute Development Tool è un cablaggio Web locale che consente agli sviluppatori di configurare ed eseguire i lavoratori Risorse per computer localmente, al di fuori del contesto dell’SDK AEM rispetto alle risorse Asset compute  in Adobe I/O Runtime.
+Asset Compute Development Tool è un cablaggio web locale che consente agli sviluppatori di configurare ed eseguire in locale i processi di lavoro Asset Computer, al di fuori del contesto dell’SDK AEM, in base alle risorse Asset Compute in Adobe I/O Runtime.
 
-## Eseguire lo strumento di sviluppo del Asset compute 
+## Esegui lo strumento di sviluppo Asset Compute
 
-Lo strumento di sviluppo Asset compute  può essere eseguito dalla radice del progetto di Asset compute  tramite il comando terminale:
+Lo strumento di sviluppo di Asset Compute può essere eseguito dalla directory principale del progetto Asset Compute tramite il comando del terminale:
 
 ```
 $ aio app run
 ```
 
-Verrà avviato lo strumento di sviluppo all&#39;indirizzo __http://localhost:9000__ e verrà automaticamente aperto in una finestra del browser. Affinché lo strumento di sviluppo possa essere eseguito, [è necessario fornire un elemento devToolToken generato automaticamente e valido tramite un parametro di query](#troubleshooting__devtooltoken).
+Verrà avviato lo strumento di sviluppo all&#39;indirizzo __http://localhost:9000__ e lo verrà automaticamente aperto in una finestra del browser. Affinché lo strumento di sviluppo possa essere eseguito, è necessario fornire [un devToolToken valido e generato automaticamente tramite un parametro di query](#troubleshooting__devtooltoken).
 
-## Informazioni sull&#39;interfaccia  Asset compute Development Tools{#interface}
+## Interfaccia degli strumenti di sviluppo di Asset Compute{#interface}
 
-![ Strumento di sviluppo Asset compute](./assets/development-tool/asset-compute-dev-tool.png)
+![Strumento di sviluppo Asset Compute](./assets/development-tool/asset-compute-dev-tool.png)
 
-1. __File di origine:__ La selezione del file di origine viene utilizzata per:
-   + Selezionato il binario della risorsa che sarà il binario `source` passato al lavoratore del Asset compute 
-   + Caricare i file sorgente
-1. __definizione dei profili di Asset compute:__ Definisce il lavoratore del Asset compute  da eseguire, compresi i parametri: incluso il punto finale dell&#39;URL del lavoratore, il nome della rappresentazione risultante ed eventuali parametri
-1. __Esecuzione:__ Il pulsante Esegui esegue il profilo del Asset compute  come definito nell&#39;editor del profilo di configurazione del Asset compute
-1. __Interrompi:__ il pulsante Interrompi annulla un&#39;esecuzione avviata toccando il pulsante Esegui
-1. __Richiesta/Risposta:__ Fornisce la richiesta HTTP e la risposta a/dal lavoratore del Asset compute  in esecuzione in Adobe I/O Runtime. Può essere utile per il debug
-1. __Registri di attivazione:__ i registri che descrivono l&#39;esecuzione del lavoratore del Asset compute , con eventuali errori. Queste informazioni sono disponibili anche nella versione `aio app run` standard
-1. __Rappresentazioni:__ visualizza tutte le rappresentazioni generate dall&#39;esecuzione del lavoratore del Asset compute
-1. __parametro di query devToolToken:__ il token dello strumento di sviluppo Asset compute  richiede la presenza di un parametro di  `devToolToken` query valido. Questo token viene generato automaticamente ogni volta che viene visualizzato un nuovo strumento di sviluppo
+1. __File di origine:__ la selezione del file di origine viene utilizzata per:
+   + Selezionato il binario della risorsa che sarà il binario `source` passato al processo di lavoro Asset Compute
+   + Caricare file di origine
+1. __Definizione dei profili Asset Compute:__ definisce il processo di lavoro Asset Compute da eseguire, inclusi i parametri: inclusi il punto finale dell’URL del processo di lavoro, il nome della rappresentazione risultante ed eventuali parametri
+1. __Esegui:__ il pulsante Esegui esegue il profilo Asset Compute definito nell’editor dei profili di configurazione di Asset Compute
+1. __Interrompi:__ il pulsante Interrompi annulla un&#39;esecuzione iniziata toccando il pulsante Esegui
+1. __Richiesta/risposta:__ fornisce la richiesta e la risposta HTTP a/dal processo di lavoro Asset Compute in esecuzione in Adobe I/O Runtime. Può essere utile per il debug
+1. __Registri di attivazione:__ i registri che descrivono l’esecuzione del processo di lavoro Asset Compute, insieme a eventuali errori. Queste informazioni sono disponibili anche nell’ uscita standard `aio app run`
+1. __Rappresentazioni:__ visualizza tutte le rappresentazioni generate dall’esecuzione del processo di lavoro Asset Compute
+1. __Parametro di query devToolToken:__ il token dello strumento di sviluppo di Asset Compute richiede un parametro di  `devToolToken` query valido per essere presente. Questo token viene generato automaticamente ogni volta che viene generato un nuovo strumento di sviluppo
 
-### Eseguire un lavoratore personalizzato
+### Eseguire un processo di lavoro personalizzato
 
 >[!VIDEO](https://video.tv.adobe.com/v/40241?quality=12&learn=on)
 
-_Click-through dell&#39;esecuzione di un lavoro Asset compute  in Strumento di sviluppo (nessun audio)_
+_Click-through dell’esecuzione di un lavoro Asset Compute nello strumento di sviluppo (nessun audio)_
 
-1. Assicurarsi che  Strumento di sviluppo Asset compute sia avviato dalla directory principale del progetto utilizzando il comando `aio app run`.
-1. In  Asset compute Development Tool, caricate o selezionate un file di immagine di esempio [](../assets/samples/sample-file.jpg)
-   + Assicurarsi che il file sia selezionato nel menu a discesa __File di origine__
-1. Rivedete l&#39;area di testo __definizione del profilo di Asset compute__
-   + La chiave `worker` definisce l&#39;URL del lavoratore del Asset compute  distribuito
-   + La chiave `name` definisce il nome della rappresentazione da generare
-   + In questo oggetto JSON è possibile fornire altre chiavi/valori e sarà disponibile nel processo di lavoro sotto l&#39;oggetto `rendition.instructions`
-      + È possibile aggiungere valori per `size`, `contrast` e `brightness`:
+1. Assicurati che Asset Compute Development Tool sia avviato dalla directory principale del progetto utilizzando il comando `aio app run` .
+1. Nello strumento di sviluppo di Asset Compute, carica o seleziona un [file immagine di esempio](../assets/samples/sample-file.jpg)
+   + Assicurati che il file sia selezionato nel menu a discesa __File di origine__
+1. Rivedi l’area di testo __Definizione profilo Asset Compute__
+   + La chiave `worker` definisce l’URL del processo di lavoro Asset Compute implementato
+   + La chiave `name` definisce il nome del rendering da generare
+   + È possibile fornire altri valori/chiave in questo oggetto JSON e sarà disponibile nel processo di lavoro sotto l&#39;oggetto `rendition.instructions`
+      + Facoltativamente aggiungere valori per `size`, `contrast` e `brightness`:
 
          ```json
          {
@@ -76,18 +79,18 @@ _Click-through dell&#39;esecuzione di un lavoro Asset compute  in Strumento di s
          }
          ```
 
-1. Toccate il pulsante __Esegui__
-1. La sezione __Rappresentazioni__ verrà compilata con un segnaposto per la rappresentazione
-1. Una volta completato il lavoratore, il segnaposto della rappresentazione visualizzerà la rappresentazione generata
+1. Tocca il pulsante __Esegui__
+1. La sezione __Rappresentazioni__ verrà compilata con un segnaposto per il rendering
+1. Al termine del processo di lavoro, il segnaposto del rendering visualizza il rendering generato
 
-Se si apporta modifiche al codice del lavoratore mentre è in esecuzione lo strumento di sviluppo, le modifiche verranno implementate a caldo. La &quot;distribuzione a caldo&quot; richiede diversi secondi, pertanto l&#39;implementazione può essere completata prima di eseguire nuovamente il lavoratore da Development Tool.
+Apportare modifiche al codice del lavoratore durante l&#39;esecuzione dello strumento di sviluppo renderà &quot;hot deploy&quot; le modifiche. La &quot;distribuzione rapida&quot; richiede diversi secondi, quindi consenti al processo di distribuzione di completare prima di eseguire nuovamente il processo di lavoro dallo strumento di sviluppo.
 
 ## Risoluzione dei problemi
 
-+ [Rientro YAML errato](../troubleshooting.md#incorrect-yaml-indentation)
-+ [il limite memorySize è impostato su low](../troubleshooting.md#memorysize-limit-is-set-too-low)
-+ [Impossibile avviare lo strumento di sviluppo a causa di private.key mancante](../troubleshooting.md#missing-private-key)
-+ [File di origine non corretti](../troubleshooting.md#source-files-dropdown-incorrect)
++ [rientro YAML errato](../troubleshooting.md#incorrect-yaml-indentation)
++ [il limite memorySize è impostato troppo basso](../troubleshooting.md#memorysize-limit-is-set-too-low)
++ [Impossibile avviare lo strumento di sviluppo a causa della mancanza di private.key](../troubleshooting.md#missing-private-key)
++ [Elenco a discesa dei file di origine errato](../troubleshooting.md#source-files-dropdown-incorrect)
 + [Parametro di query devToolToken mancante o non valido](../troubleshooting.md#missing-or-invalid-devtooltoken-query-parameter)
-+ [Impossibile rimuovere i file sorgente](../troubleshooting.md#unable-to-remove-source-files)
++ [Impossibile rimuovere i file di origine](../troubleshooting.md#unable-to-remove-source-files)
 + [Rendering restituito parzialmente disegnato/danneggiato](../troubleshooting.md#rendition-returned-partially-drawn-or-corrupt)
