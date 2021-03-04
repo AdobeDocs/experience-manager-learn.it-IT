@@ -1,32 +1,35 @@
 ---
-title: Limitazione dell'Editor regole a gruppi specifici in  AEM Forms
-seo-title: Limitazione dell'Editor regole a gruppi specifici in  AEM Forms
-description: Limitazione dell'Editor regola modulo adattivo a gruppi specifici in AEM
-seo-description: Limitazione dell'Editor regola modulo adattivo a gruppi specifici in AEM
+title: Limitazione dell’editor di regole a gruppi specifici in AEM Forms
+seo-title: Limitazione dell’editor di regole a gruppi specifici in AEM Forms
+description: Limitazione dell’Editor di regole per i moduli adattivi a gruppi specifici in AEM
+seo-description: Limitazione dell’Editor di regole per i moduli adattivi a gruppi specifici in AEM
 uuid: b50f3736-b72e-4154-9ca5-95e10606f4ad
-feature: adaptive-forms
+feature: Moduli adattivi
 topics: authoring
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 5aa35204-1c6d-4a1e-b8cd-79170653471a
+topic: Amministrazione
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 0%
+source-wordcount: '95'
+ht-degree: 3%
 
 ---
 
 
-# Limitazione dell&#39;Editor regole a gruppi specifici in  AEM Forms {#restricting-the-rule-editor-to-specific-groups-in-aem-forms}
+# Limitazione dell’editor di regole a gruppi specifici in AEM Forms {#restricting-the-rule-editor-to-specific-groups-in-aem-forms}
 
-Limitazione dell&#39;Editor regola modulo adattivo a gruppi specifici in AEM
+Limitazione dell’Editor di regole per i moduli adattivi a gruppi specifici in AEM
 
 >[!VIDEO](https://video.tv.adobe.com/v/19470?quality=9&learn=on)
 
-*In questo video viene descritto come limitare l’editor delle regole del modulo adattivo a specifici gruppi di AEM.*
+*Questo video illustra il processo di limitazione dell’editor di regole del modulo adattivo a gruppi specifici in AEM.*
 
 >[!NOTE]
 >
