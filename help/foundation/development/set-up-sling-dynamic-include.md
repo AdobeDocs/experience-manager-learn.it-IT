@@ -1,36 +1,39 @@
 ---
-title: Imposta Sling Dynamic Include per AEM
-description: Video introduttivo sull’installazione e l’utilizzo di Apache Sling Dynamic Include con AEM Dispatcher in esecuzione sul server Web Apache HTTP.
+title: Configurare Sling Dynamic Include per AEM
+description: Una guida dettagliata all’installazione e all’utilizzo di Apache Sling Dynamic Include con AEM Dispatcher in esecuzione su Apache HTTP Web Server.
 version: 6.3, 6.4, 6.5
 sub-product: fondazione, siti
-feature: core-components, dispatcher
+feature: API
 topics: caching
 activity: develop
 audience: architect, developer
 doc-type: technical video
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 3%
+source-wordcount: '267'
+ht-degree: 6%
 
 ---
 
 
 # Imposta [!DNL Sling Dynamic Include]
 
-Video sull&#39;installazione e l&#39;utilizzo di [!DNL Apache Sling Dynamic Include] con [AEM Dispatcher](https://docs.adobe.com/content/help/it-IT/experience-manager-dispatcher/using/dispatcher.html) in esecuzione su [!DNL Apache HTTP Web Server].
+Video introduttivo sull’installazione e l’utilizzo di [!DNL Apache Sling Dynamic Include] con [AEM Dispatcher](https://docs.adobe.com/content/help/it-IT/experience-manager-dispatcher/using/dispatcher.html) in esecuzione su [!DNL Apache HTTP Web Server].
 
 >[!VIDEO](https://video.tv.adobe.com/v/17040/?quality=12&learn=on)
 
 >[!NOTE]
 >
-> Verificare che la versione più recente di AEM Dispatcher sia installata localmente.
+> Assicurati che la versione più recente di AEM Dispatcher sia installata localmente.
 
-1. Scaricate e installate il [[!DNL Sling Dynamic Include] bundle](https://sling.apache.org/downloads.cgi).
-1. Configurare [!DNL Sling Dynamic Include] tramite [!DNL OSGi Configuration Factory] all&#39;indirizzo **http://&lt;host>:&lt;porta>/system/console/configMgr/org.apache.sling.dynamicinclude.Configuration**.
+1. Scarica e installa il [[!DNL Sling Dynamic Include] bundle](https://sling.apache.org/downloads.cgi).
+1. Configura [!DNL Sling Dynamic Include] tramite [!DNL OSGi Configuration Factory] all&#39;indirizzo **http://&lt;host>:&lt;port>/system/console/configMgr/org.apache.sling.dinamicinclude.Configuration**.
 
-   Oppure, per aggiungere a una base di codice AEM, create il nodo **sling:OsgiConfig** appropriato all&#39;indirizzo:
+   Oppure, per aggiungere a una base di codice AEM, crea il nodo appropriato **sling:OsgiConfig** in:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -54,7 +57,7 @@ Video sull&#39;installazione e l&#39;utilizzo di [!DNL Apache Sling Dynamic Incl
    -->
    ```
 
-1. (Facoltativo) Ripetete l&#39;ultimo passaggio per consentire la distribuzione tramite [!DNL SDI] anche dei componenti con contenuto [bloccato (iniziale) di modelli modificabili](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html). La ragione per la configurazione aggiuntiva è che il contenuto bloccato dei modelli modificabili viene distribuito da `/conf` invece di `/content`.
+1. (Facoltativo) Ripeti l’ultimo passaggio per consentire la distribuzione dei componenti anche tramite [!DNL SDI] sul contenuto bloccato (iniziale) dei modelli modificabili](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/page-templates-editable.html). [ La ragione della configurazione aggiuntiva è che il contenuto bloccato dei modelli modificabili viene servito da `/conf` invece di `/content`.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -78,7 +81,7 @@ Video sull&#39;installazione e l&#39;utilizzo di [!DNL Apache Sling Dynamic Incl
    -->
    ```
 
-1. Aggiornare il file [!DNL Apache HTTPD Web server] di `httpd.conf` per abilitare il modulo [!DNL Include].
+1. Aggiorna il file `httpd.conf` di [!DNL Apache HTTPD Web server] per abilitare il modulo [!DNL Include].
 
    ```shell
    $ sudo vi .../httpd.conf
@@ -88,7 +91,7 @@ Video sull&#39;installazione e l&#39;utilizzo di [!DNL Apache Sling Dynamic Incl
    LoadModule include_module libexec/apache2/mod_include.so
    ```
 
-1. Aggiornate il file [!DNL vhost] per rispettare le direttive di inclusione.
+1. Aggiorna il file [!DNL vhost] per rispettare le direttive di inclusione.
 
    ```shell
    $ sudo vi .../vhosts/aem-publish.local.conf
@@ -113,7 +116,7 @@ Video sull&#39;installazione e l&#39;utilizzo di [!DNL Apache Sling Dynamic Incl
    </VirtualHost>
    ```
 
-1. Aggiornate il file di configurazione dispatcher.any per supportare (1) `nocache` selettori e (2) abilitare il supporto TTL.
+1. Aggiorna il file di configurazione dispatcher.any per supportare i selettori (1) `nocache` e (2) abilita il supporto TTL.
 
    ```shell
    $ sudo vi .../conf/dispatcher.any
@@ -131,7 +134,7 @@ Video sull&#39;installazione e l&#39;utilizzo di [!DNL Apache Sling Dynamic Incl
 
    >[!TIP]
    >
-   > Se si esce dalla regola `*` finale nella regola di tipo `*.nocache.html*`, è possibile che si verifichino problemi di [richieste di risorse secondarie](https://github.com/AdobeDocs/experience-manager-learn.en/issues/16).
+   > Lasciando fuori la coda `*` nella regola glob `*.nocache.html*` di cui sopra, può causare problemi [nelle richieste per risorse secondarie](https://github.com/AdobeDocs/experience-manager-learn.en/issues/16).
 
    ```shell
    /cache {
@@ -140,7 +143,7 @@ Video sull&#39;installazione e l&#39;utilizzo di [!DNL Apache Sling Dynamic Incl
    }
    ```
 
-1. Riavviare sempre [!DNL Apache HTTP Web Server] dopo aver apportato modifiche ai relativi file di configurazione o al `dispatcher.any`.
+1. Riavvia sempre [!DNL Apache HTTP Web Server] dopo aver apportato modifiche ai relativi file di configurazione o al `dispatcher.any`.
 
    ```shell
    $ sudo apachectl restart
@@ -148,7 +151,7 @@ Video sull&#39;installazione e l&#39;utilizzo di [!DNL Apache Sling Dynamic Incl
 
 >[!NOTE]
 >
->Se si utilizza [!DNL Sling Dynamic Includes] per la trasmissione di include sul lato periferico (ESI), assicurarsi di memorizzare nella cache le intestazioni di risposta [rilevanti nella cache del dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders). Le intestazioni possibili sono le seguenti:
+>Se utilizzi [!DNL Sling Dynamic Includes] per il server edge-side include (ESI), assicurati di memorizzare nella cache le intestazioni di risposta [pertinenti nella cache del dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders). Le intestazioni possibili includono:
 >
 >* &quot;Cache-Control&quot;
 >* &quot;Content-Disposition&quot;
@@ -165,5 +168,5 @@ Video sull&#39;installazione e l&#39;utilizzo di [!DNL Apache Sling Dynamic Incl
 
 ## Materiali di supporto
 
-* [Download del bundle Sling Dynamic Include](https://sling.apache.org/downloads.cgi)
+* [Scarica il bundle Sling Dynamic Include](https://sling.apache.org/downloads.cgi)
 * [Documentazione di Apache Sling Dynamic Include](https://github.com/Cognifide/Sling-Dynamic-Include)
