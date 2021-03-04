@@ -1,10 +1,10 @@
 ---
-title: Creazione della configurazione DataSource in  AEM Forms
-seo-title: Creazione della configurazione DataSource in  AEM Forms
-description: Questa è parte 2 di un'esercitazione multistep per la creazione del primo documento di comunicazione interattiva. In questa parte, creeremo un'origine dati basata su REST.  Il seguente video illustra i passaggi necessari per creare l'origine dati.
-seo-description: Questa è parte 2 di un'esercitazione multistep per la creazione del primo documento di comunicazione interattiva. In questa parte, creeremo un'origine dati basata su REST.  Il seguente video illustra i passaggi necessari per creare l'origine dati.
+title: Creazione della configurazione dell’origine dati in AEM Forms
+seo-title: Creazione della configurazione dell’origine dati in AEM Forms
+description: Questa è la parte 2 dell’esercitazione su più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte, creeremo un’origine dati basata su REST.  Il video seguente illustra i passaggi necessari per creare l’origine dati.
+seo-description: Questa è la parte 2 dell’esercitazione su più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte, creeremo un’origine dati basata su REST.  Il video seguente illustra i passaggi necessari per creare l’origine dati.
 uuid: b9d5c220-3e86-4e7d-8ea0-a7f604dde925
-feature: interactive-communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,19 +13,22 @@ version: 6.4,6.5
 targetaudience: target-audience ongoing
 thumbnail: 27765.jpg
 kt: 5954
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 0%
+source-wordcount: '144'
+ht-degree: 2%
 
 ---
 
 
-# Creazione della configurazione dell&#39;origine dati in  AEM Forms{#creating-datasource-configuration-in-aem-forms}
+# Creazione della configurazione dell&#39;origine dati in AEM Forms{#creating-datasource-configuration-in-aem-forms}
 
-In questa parte, creeremo un&#39;origine dati basata su REST.  Il seguente video illustra i passaggi necessari per creare l&#39;origine dati.
+In questa parte, creeremo un’origine dati basata su REST.  Il video seguente illustra i passaggi necessari per creare l’origine dati.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27765/?quality=9&learn=on)
 
-Utilizzate il file swagger fornito come parte delle risorse correlate a questa esercitazione. Le risorse sono disponibili in [introduzione](introduction.md) di questa esercitazione.
+Utilizza il file swagger fornito come parte delle risorse relative a questa esercitazione. Le risorse sono disponibili in [introduzione](introduction.md) di questa esercitazione.
