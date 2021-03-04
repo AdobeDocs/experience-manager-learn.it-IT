@@ -1,75 +1,79 @@
 ---
-title: Esercitazione sulle best practice per Dynamic Media Classic
-description: Dynamic Media Classic è il punto di riferimento per la creazione, l'authoring e la distribuzione di contenuti multimediali avanzati da parte dei clienti. Questa esercitazione sulle best practice è stata creata per aiutare gli utenti attuali e nuovi di Dynamic Media Classic a comprendere meglio cosa possono fare con questa potente soluzione multimediale da  Adobe. In questa parte dell'esercitazione, scoprirai cos'è Dynamic Media Classic e consulta brevemente le sue funzionalità principali e l'interfaccia utente.
+title: Tutorial sulle best practice di Dynamic Media Classic
+description: Dynamic Media Classic è l’hub intorno al quale i clienti creano, creano e distribuiscono contenuti rich media. Questa esercitazione sulle best practice è stata creata per aiutare gli utenti attuali e nuovi di Dynamic Media Classic a comprendere meglio cosa possono fare con questa potente soluzione rich media di Adobe. In questa parte dell’esercitazione, scoprirai cos’è Dynamic Media Classic e consulta le sue funzionalità principali e l’interfaccia utente di .
 sub-product: dynamic-media
 doc-type: tutorial
 topics: best-practices, development, authoring, configuring
 audience: all
 activity: develop, use
+feature: Dynamic Media Classic
+topic: Gestione dei contenuti
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '904'
 ht-degree: 1%
 
 ---
 
 
-# Esercitazione sulle best practice per Dynamic Media Classic
+# Tutorial sulle best practice di Dynamic Media Classic
 
-Questa guida è destinata ad aiutare gli utenti di Dynamic Media Classic e i suoi nuovi utenti a comprendere meglio le possibilità di utilizzo della loro potente soluzione multimediale avanzata  Adobe. Lo faremo tramite:
+Questa guida ha lo scopo di aiutare gli utenti attuali e nuovi di Dynamic Media Classic a comprendere meglio cosa possono fare con la loro potente soluzione rich media di Adobe. Lo faremo:
 
-- Presentazione di Dynamic Media Classic, descrizione di ciò che si tratta e panoramica delle sue funzionalità principali e dell’interfaccia utente (interfaccia utente).
-- Illustra il flusso di lavoro generale Crea, Crea e Distribuisci che seguirai quando lavorerai con le risorse della soluzione.
+- Introduzione a Dynamic Media Classic, descrizione di ciò che è e panoramica delle sue funzionalità principali e dell’interfaccia utente (UI).
+- Spiegazione del flusso di lavoro generale Creazione, authoring e consegna da seguire quando si lavora con le risorse nella soluzione.
 - Discussione di elementi importanti da configurare prima di entrare e utilizzare la soluzione.
-- Approfondisci l&#39;uso di diverse funzionalità fondamentali della soluzione.
+- Approfondisci l&#39;utilizzo di diverse funzionalità di base della soluzione.
 
-In tutta la guida verranno forniti esempi, suggerimenti e best practice. Verranno inoltre illustrati termini e concetti importanti con cui acquisire familiarità quando si utilizza Dynamic Media Classic. E quando sarà disponibile per un determinato argomento, vi indicheremo i webinar, i post di blog e la documentazione online rilevanti.
+In tutta la guida verranno forniti esempi, suggerimenti e best practice. Verranno inoltre illustrati termini e concetti importanti con i quali dovresti essere a conoscenza quando lavori con Dynamic Media Classic. E quando disponibile per un dato argomento, ti indicheremo webinar rilevanti, post di blog e documentazione online.
 
-Ci auguriamo che questa guida fornisca le informazioni necessarie per sfruttare al meglio la soluzione Dynamic Media Classic. Per navigare più facilmente nei capitoli di questa guida, fare clic sull&#39;icona del segnalibro a sinistra della guida per visualizzarne il contenuto.
+Speriamo che questa guida ti fornisca le informazioni necessarie per sfruttare al massimo il valore della tua soluzione Dynamic Media Classic. Per spostarti più facilmente nei capitoli di questa guida, fai clic sull’icona segnalibro a sinistra della guida per visualizzarne i contenuti.
 
 ## Panoramica di Dynamic Media Classic
 
-Dynamic Media Classic è il punto di riferimento per la creazione, l&#39;authoring e la distribuzione di contenuti multimediali avanzati da parte dei clienti. Dynamic Media Classic è un ambiente integrato per la gestione, la pubblicazione e la distribuzione di contenuti multimediali avanzati. I contenuti multimediali possono essere distribuiti a tutti i canali di marketing e vendita, inclusi web, materiale stampato, campagne e-mail, applicazioni Web, desktop e dispositivi.
+Dynamic Media Classic è l’hub intorno al quale i clienti creano, creano e distribuiscono contenuti rich media. Dynamic Media Classic è un ambiente integrato di gestione, pubblicazione e distribuzione di contenuti multimediali. I contenuti rich media possono essere distribuiti a tutti i canali di marketing e vendita, compresi il web, il materiale per la stampa, le campagne e-mail, le applicazioni web, i desktop e i dispositivi.
 
-La trasmissione delle immagini è forse la funzione più utilizzata di Dynamic Media Classic. Infatti, la maggior parte dei clienti utilizza Dynamic Media Classic per distribuire tutte le immagini sui propri siti Web, incluse le immagini per lo zoom o i contenuti multimediali. Tuttavia, può essere utilizzato anche per molti altri scopi, tra cui la distribuzione di video e l&#39;uso di AI per ottimizzare le immagini distribuite.
+Il servizio immagini è forse la funzione più utilizzata di Dynamic Media Classic. Infatti, la maggior parte dei clienti utilizza Dynamic Media Classic per distribuire tutte le immagini sui propri siti web, incluse le immagini per zoom o rich media. Tuttavia, può essere utilizzato anche per molti altri scopi, tra cui la distribuzione di video e l’utilizzo di AI per ottimizzare le immagini consegnate.
 
-## Funzionalità principali di Dynamic Media Classic
+## Funzionalità di base di Dynamic Media Classic
 
-Questa guida illustra le seguenti funzionalità di base di Dynamic Media Classic.
+In questa guida verranno illustrate le seguenti funzionalità di base di Dynamic Media Classic.
 
-- **Imaging dinamico.** Il termine ombrello per l’editing, la formattazione e il ridimensionamento in tempo reale, nonché per lo zoom e la panoramica interattivi; campioni colore e texture; 360 gradi; modelli di immagini; e visualizzatori multimediali.
-- **Video.** Caricate i video finali, pubblicateli e scaricateli progressivamente in visualizzatori video configurabili.
-- **Imaging avanzato.** Tecnologia che sfrutta  funzionalità di Adobe Sensei AI e che funziona con i &quot;predefiniti per immagini&quot; esistenti per migliorare le prestazioni di distribuzione delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
+- **Imaging dinamico.** Il termine ombrello per la modifica in tempo reale, la formattazione e il dimensionamento, lo zoom e la panoramica interattivi; campioni colore e texture; 360 gradi centigradi; modelli di immagini; e visualizzatori multimediali.
+- **Video.** Carica i video finali, pubblicali e progressivamente scaricali in visualizzatori video configurabili.
+- **Imaging avanzato.** Tecnologia che sfrutta le funzionalità di Adobe Sensei AI e funziona con i &quot;predefiniti immagine&quot; esistenti per migliorare le prestazioni di distribuzione delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
 
-Per scoprire ulteriori funzionalità della soluzione, visita la [Documentazione per Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/introduction.html).
+Per scoprire le funzionalità aggiuntive della soluzione, visita la [Documentazione per Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/introduction.html).
 
 ## Interfaccia utente di Dynamic Media Classic
 
-L’interfaccia principale di Dynamic Media Classic è composta da tre aree principali: barra di navigazione globale, Libreria risorse e pannello Sfoglia/Genera.
+L’interfaccia principale di Dynamic Media Classic è composta da tre aree principali: la barra di navigazione globale, la libreria delle risorse e il pannello Sfoglia/Genera.
 
 ![immagine](assets/overview/overview-dmc-ui-ew.png)
 
-_Interfaccia Dynamic Media Classic_
+_Interfaccia utente di Dynamic Media Classic_
 
-**Barra di navigazione globale.** Nella parte superiore dello schermo, i pulsanti di questa barra consentono di accedere alle aree chiave e alle funzionalità della soluzione. Ad esempio, lo userete per accedere alle funzionalità di caricamento, aprire diverse aree di creazione delle risorse (set di immagini, set 360 gradi, ecc.), eseguire attività importanti come l’impostazione di predefiniti per immagini e per visualizzatori e pubblicare le risorse. Da qui potete anche monitorare i vostri processi, vedere le attività recenti e scegliere tra diverse opzioni di aiuto.
+**Barra di navigazione globale.** Nella parte superiore dello schermo, puoi utilizzare i pulsanti presenti in questa barra per accedere alle aree chiave e alle funzionalità della soluzione. Ad esempio, lo utilizzerai per accedere alle funzionalità di caricamento, aprire varie aree di creazione delle risorse (set di immagini, set 360 gradi, ecc.), eseguire attività importanti come la configurazione di predefiniti immagine e visualizzatore e pubblicare le risorse. Da qui puoi anche monitorare i tuoi lavori, vedere le attività recenti e scegliere tra diverse opzioni di aiuto.
 
-**Libreria risorse.** Nella parte sinistra dello schermo è disponibile la Libreria risorse, un pannello che consente di organizzare le risorse in cartelle e sottocartelle create dall’utente. Nella parte superiore del pannello sono disponibili i filtri e la ricerca per individuare le risorse. Ricerca avanzata consente di effettuare ricerche specificando più opzioni come criteri di ricerca, inclusi i campi di metadati nascosti associati alla risorsa. Nella parte inferiore del pannello potete visualizzare gli elementi eliminati facendo clic sull’icona Cestino. Inizialmente, non iniziate con alcuna cartella, ad eccezione della cartella di livello principale, che ha lo stesso nome del vostro account.
+**Libreria risorse.** Nella parte sinistra della schermata è disponibile la Libreria risorse , un pannello che consente di organizzare le risorse in cartelle e sottocartelle create dall’utente. Nella parte superiore del pannello sono disponibili ricerca e filtri per individuare le risorse. La funzione Ricerca avanzata consente di effettuare ricerche specificando più opzioni come criteri per la ricerca, inclusi i campi di metadati nascosti associati alla risorsa. Nella parte inferiore del pannello, puoi visualizzare gli elementi eliminati facendo clic sull’icona Elimina . Inizialmente, non si inizia con alcuna cartella, ad eccezione della cartella di livello superiore, che ha lo stesso nome del tuo account.
 
 >[!NOTE]
 >
->Le risorse nel cestino verranno automaticamente eliminate definitivamente sette giorni dopo che sono state inserite nel cestino, a meno che tu non le ripristinassi.
+>Le risorse nel Cestino verranno automaticamente eliminate definitivamente sette giorni dopo che sono state messe lì, a meno che tu non le ripristini.
 
-**Pannello Sfoglia/Genera.** Questo è il centro dell’interfaccia utente, dove potete sfogliare le risorse in modalità Sfoglia oppure, se in modalità Genera, usarle come area di lavoro per creare risorse come parte di un flusso di lavoro. Al primo accesso, verrà visualizzato il pannello Sfoglia. Al centro della schermata sono visualizzate le miniature delle immagini in visualizzazione Griglia. Potete passare a una visualizzazione Elenco oppure selezionare una risorsa e visualizzarne i dettagli utilizzando la visualizzazione Dettagli.
+**Pannello Sfoglia/genera.** Questo è il centro dell’interfaccia utente, dove puoi sfogliare le risorse in modalità Sfoglia oppure, se in modalità Genera, utilizzarle come area di lavoro per creare le risorse come parte di un flusso di lavoro. Al primo accesso verrà visualizzato il pannello Sfoglia. Al centro della schermata sono disponibili le miniature delle immagini in una vista Griglia. Puoi passare a una vista Elenco oppure selezionare una risorsa e visualizzare i dettagli relativi utilizzando la vista Dettaglio.
 
 >[!IMPORTANT]
 >
->Accanto a ciascun ID risorsa si trova l&#39;interruttore **Contrassegna per pubblicazione**. Quando l’opzione è attivata (verde), significa che la risorsa è contrassegnata per la pubblicazione.
+>Accanto a ogni ID risorsa è presente l’opzione **Contrassegna per pubblicazione** . Quando l’opzione è attivata (verde), indica che la risorsa è contrassegnata per la pubblicazione.
 
 ![immagine](assets/overview/overview-mark-for-publish.png)
 
 >[!TIP]
 >
->Selezionate la casella di controllo **Pubblica dopo il caricamento** nella finestra di dialogo Carica per pubblicare automaticamente le risorse al momento del caricamento.
+>Seleziona la casella di controllo **Pubblica dopo il caricamento** nella finestra di dialogo Carica per pubblicare automaticamente le risorse al momento del caricamento.
 
 Ulteriori informazioni su [Navigazione nell&#39;interfaccia utente di Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html).
