@@ -1,36 +1,34 @@
 ---
-title: Configurare i modelli di risorse con  AEM Assets e  InDesign Server
-description: I modelli di risorse consentono agli esperti di marketing di creare, gestire e distribuire risorse digitali per la stampa e la stampa. La creazione di brochure di marketing, biglietti da visita, volantini, annunci pubblicitari e cartoline postali è molto più semplice con Asset Templates (Modelli risorse) se integrata con  server InDesign. La configurazione di  server InDesign con AEM è trattata in questa sezione.
-feature: catalogs, asset-templates
-topics: authoring, renditions, documents
-audience: developer, architect, administrator
-doc-type: technical video
-activity: setup
+title: Configurare i modelli di risorse con AEM Assets e InDesign Server
+description: I modelli di risorse consentono agli addetti al marketing di creare, gestire e distribuire risorse digitali per scopi digitali e di stampa. La creazione di brochure, biglietti da visita, volantini, annunci pubblicitari e cartoline postali di marketing è molto più semplice grazie ai modelli di risorse integrati con il server InDesign. La configurazione del server InDesign con AEM è descritta in questa sezione.
 version: 6.3, 6.4, 6.5
+topic: Gestione dei contenuti
+role: Developer (Sviluppatore)
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 0%
+source-wordcount: '161'
+ht-degree: 1%
 
 ---
 
 
-# Configurare i modelli di risorse con  AEM Assets e  InDesign Server{#set-up-asset-templates-with-aem-assets-and-indesign-server}
+# Configurare i modelli di risorse con AEM Assets e InDesign Server{#set-up-asset-templates-with-aem-assets-and-indesign-server}
 
-I modelli di risorse consentono agli esperti di marketing di creare, gestire e distribuire risorse digitali per la stampa e la stampa. La creazione di brochure di marketing, biglietti da visita, volantini, annunci pubblicitari e cartoline postali è molto più semplice con Asset Templates (Modelli risorse) se integrata con  server InDesign. La configurazione di  server InDesign con AEM è trattata in questa sezione.
+I modelli di risorse consentono agli addetti al marketing di creare, gestire e distribuire risorse digitali per scopi digitali e di stampa. La creazione di brochure, biglietti da visita, volantini, annunci pubblicitari e cartoline postali di marketing è molto più semplice grazie ai modelli di risorse integrati con il server InDesign. La configurazione del server InDesign con AEM è descritta in questa sezione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17069/?quality=9&learn=on)
 
 >[!NOTE]
 >
->AEM **deve** essere connesso a un server di InDesign  in esecuzione quando viene caricato il modello INDD. Parte dell&#39;elaborazione iniziale sul file INDD richiede  server InDesign.
+>AEM **deve** essere connesso a un server InDesign in esecuzione al momento del caricamento del modello INDD. Parte dell&#39;elaborazione iniziale sul file INDD richiede il server InDesign.
 
-## Scarica  versione di prova InDesign Server {#download-indesign-server-trial}
+## Scarica la versione di prova di InDesign Server {#download-indesign-server-trial}
 
-Download di [ versione di prova InDesign Server download Sito Web](https://www.adobe.com/devnet/indesign/indesign-server-trial-downloads.html)
+Scarica [Scaricare la versione di prova di InDesign Server Website](https://www.adobe.com/devnet/indesign/indesign-server-trial-downloads.html)
 
-## Avvio  InDesign Server {#starting-indesign-server}
+## Avvio di InDesign Server {#starting-indesign-server}
 
 ```shell
 # macOS command
