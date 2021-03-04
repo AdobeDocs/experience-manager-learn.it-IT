@@ -1,75 +1,78 @@
 ---
-title: Impostazione del valore di Json Data Element in  AEM Forms Workflow
-seo-title: Impostazione del valore di Json Data Element in  AEM Forms Workflow
-description: Poiché un modulo adattivo viene indirizzato a diversi utenti in AEM flusso di lavoro, è necessario nascondere o disabilitare determinati campi o pannelli in base alla persona che sta revisionando il modulo. Per soddisfare questi casi di utilizzo, in genere viene impostato il valore di un campo nascosto. In base alle regole aziendali relative al valore di questo campo nascosto, è possibile creare dei pannelli o campi specifici per nasconderli o disattivarli.
-seo-description: Poiché un modulo adattivo viene indirizzato a diversi utenti in AEM flusso di lavoro, è necessario nascondere o disabilitare determinati campi o pannelli in base alla persona che sta revisionando il modulo. Per soddisfare questi casi di utilizzo, in genere viene impostato il valore di un campo nascosto. In base alle regole aziendali relative al valore di questo campo nascosto, è possibile creare dei pannelli o campi specifici per nasconderli o disattivarli.
+title: Impostazione del valore di Json Data Element nel flusso di lavoro di AEM Forms
+seo-title: Impostazione del valore di Json Data Element nel flusso di lavoro di AEM Forms
+description: Poiché in Flusso di lavoro AEM un modulo adattivo viene indirizzato a diversi utenti, è necessario nascondere o disattivare alcuni campi o pannelli in base alla persona che sta esaminando il modulo. Per soddisfare questi casi d’uso, in genere viene impostato un valore di un campo nascosto. In base al valore delle regole business di questo campo nascosto può essere creato per nascondere/disabilitare pannelli o campi appropriati.
+seo-description: Poiché in Flusso di lavoro AEM un modulo adattivo viene indirizzato a diversi utenti, è necessario nascondere o disattivare alcuni campi o pannelli in base alla persona che sta esaminando il modulo. Per soddisfare questi casi d’uso, in genere viene impostato un valore di un campo nascosto. In base al valore delle regole business di questo campo nascosto può essere creato per nascondere/disabilitare pannelli o campi appropriati.
 uuid: a4ea6aef-a799-49e5-9682-3fa3b7a442fb
-feature: adaptive-forms,workflow
+feature: Moduli adattivi
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.4
 discoiquuid: 548fb2ec-cfcf-4fe2-a02a-14f267618d68
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: 233ad7184cb48098253a78c07a3913356ac9e774
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 0%
+source-wordcount: '767'
+ht-degree: 1%
 
 ---
 
 
-# Impostazione del valore di JSON Data Element in  AEM Forms Workflow {#setting-value-of-json-data-element-in-aem-forms-workflow}
+# Impostazione del valore di JSON Data Element nel flusso di lavoro di AEM Forms {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
-Poiché un modulo adattivo viene indirizzato a diversi utenti in AEM flusso di lavoro, è necessario nascondere o disabilitare determinati campi o pannelli in base alla persona che sta revisionando il modulo. Per soddisfare questi casi di utilizzo, in genere viene impostato il valore di un campo nascosto. In base alle regole aziendali relative al valore di questo campo nascosto, è possibile creare dei pannelli o campi specifici per nasconderli o disattivarli.
+Poiché in Flusso di lavoro AEM un modulo adattivo viene indirizzato a diversi utenti, è necessario nascondere o disattivare alcuni campi o pannelli in base alla persona che sta esaminando il modulo. Per soddisfare questi casi d’uso, in genere viene impostato un valore di un campo nascosto. In base al valore delle regole business di questo campo nascosto può essere creato per nascondere/disabilitare pannelli o campi appropriati.
 
 ![Impostazione del valore di un elemento nei dati json](assets/capture-3.gif)
 
-In  AEM Forms OSGI- dovremo scrivere un bundle OSGi personalizzato per impostare il valore dell&#39;elemento di dati JSON. Il bundle viene fornito come parte di questa esercitazione.
+In AEM Forms OSGI- dovremo scrivere un bundle OSGi personalizzato per impostare il valore dell&#39;elemento dati JSON. Il bundle viene fornito come parte di questa esercitazione.
 
-Utilizziamo Procedura nel flusso di lavoro AEM. Associamo il bundle OSGi &quot;Set Value of Element in Json&quot; a questo passaggio del processo.
+Usiamo Process Step nel flusso di lavoro AEM. Associamo il bundle OSGi &quot;Set Value of Element in Json&quot; a questo passaggio del processo.
 
-È necessario trasmettere due argomenti al bundle set value. Il primo argomento è il percorso dell&#39;elemento il cui valore deve essere impostato. Il secondo argomento è il valore da impostare.
+Dobbiamo passare due argomenti al bundle di valori impostato. Il primo argomento è il percorso dell’elemento il cui valore deve essere impostato. Il secondo argomento è il valore da impostare.
 
 Ad esempio, nella schermata precedente, stiamo impostando il valore dell’elemento inialStep su &quot;N&quot;
 
 afData.afUnboundData.data.initialStep,N
 
-Nel nostro esempio, abbiamo un semplice modulo di richiesta del tempo. L&#39;iniziatore di questo modulo compila il proprio nome e l&#39;ora delle date. Al momento dell&#39;invio, il modulo va al manager per la revisione. Quando il manager apre il modulo, i campi del primo pannello sono disabilitati. Questo perché abbiamo impostato su N il valore dell&#39;elemento step iniziale nei dati JSON.
+Nel nostro esempio, abbiamo un semplice Modulo di richiesta Time Off. L’iniziatore del modulo compila il nome e l’ora del modulo. Al momento dell&#39;invio, questo modulo va al &quot;responsabile&quot; per la revisione. Quando il gestore apre il modulo, i campi del primo pannello vengono disabilitati. Questo perché abbiamo impostato il valore dell’elemento del passaggio iniziale nei dati JSON su N.
 
-In base al valore dei campi del passaggio iniziale, viene visualizzato il pannello approver, in cui il &quot;manager&quot; può approvare o rifiutare la richiesta.
+In base al valore dei campi del passaggio iniziale, viene visualizzato il pannello approvatore in cui il &quot;responsabile&quot; può approvare o rifiutare la richiesta.
 
-Date un&#39;occhiata alle regole impostate su &quot;Fase iniziale&quot;. In base al valore del campo initialStep, è possibile recuperare i dettagli utente utilizzando il modello dati modulo, compilare i campi appropriati e nascondere o disabilitare i pannelli appropriati.
+Dai un&#39;occhiata alle regole impostate su &quot;Passaggio iniziale&quot;. In base al valore del campo initialStep , recuperiamo i dettagli utente utilizzando Form Data Model e compiliamo i campi appropriati, quindi nascondiamo/disattiviamo i pannelli appropriati.
 
 Per distribuire le risorse sul sistema locale:
 
-* [Download e implementazione di DevelopingWitheServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* [Scarica e distribuisci DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Scaricate e distribuite il bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) setvalue. Si tratta del pacchetto OSGI personalizzato che consente di impostare i valori di un elemento nei dati json inviati.
+* [Scarica e distribuisci il bundle setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Questo è il bundle OSGI personalizzato che ti consente di impostare i valori di un elemento nei dati json inviati.
 
 * [Scaricare ed estrarre il contenuto del file zip](assets/set-value-jsondata.zip)
-   * Posizionare il browser su [gestore pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
-      * Importa e installa SetValueOfElementInJSONDataWorkflow.zip. Questo pacchetto include il modello di flusso di lavoro di esempio e il modello di dati modulo associati al modulo.
+   * Posiziona il browser su [gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+      * Importa e installa il setValueOfElementInJSONDataWorkflow.zip.Questo pacchetto presenta il modello di flusso di lavoro di esempio e il modello dati modulo associati al modulo.
 
-* Posizionare il browser su [Forms e Documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Fate clic su Crea | Caricamento file
-* Tempo di caricamento del fileOffRequestForm.zip
-   **Questo modulo è stato creato utilizzando  AEM Forms 6.4. Verificate di essere su  AEM Forms 6.4 o versione successiva**
-* Aprire il [modulo](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
-* Compilare le date di inizio e di fine e inviare il modulo.
+* Posiziona il browser su [Moduli e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Fai clic su Crea | Caricamento file
+* Carica il file TimeOffRequestForm.zip
+   **Questo modulo è stato creato con AEM Forms 6.4. Assicurati di utilizzare AEM Forms 6.4 o versione successiva**
+* Apri il [modulo](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
+* Compila le date di inizio e di fine e invia il modulo.
 * Vai a [&quot;Inbox&quot;](http://localhost:4502/aem/inbox)
 * Aprire il modulo associato all&#39;attività.
-* I campi del primo pannello sono disattivati.
+* I campi nel primo pannello sono disabilitati.
 * Il pannello per approvare o rifiutare la richiesta è ora visibile.
 
 >[!NOTE]
 >
->Poiché il modulo adattivo viene precompilato utilizzando il profilo utente, assicurarsi che le informazioni relative al profilo utente [admin ](http://localhost:4502/security/users.html) siano &lt;a1/>. Come minimo, accertatevi di aver impostato i valori dei campi Nome, Cognome e E-mail.
->È possibile abilitare la registrazione di debug abilitando logger per com.aemforms.setvalue.core.SetValueInJson [da qui](http://localhost:4502/system/console/slinglog)
+>Poiché stiamo precompilando il modulo adattivo utilizzando il profilo utente, assicurati che le informazioni sul profilo utente [amministratore ](http://localhost:4502/security/users.html) siano disponibili. Assicurati almeno di aver impostato i valori dei campi Nome, Cognome e Email .
+>Puoi abilitare la registrazione di debug abilitando il logger per com.aemforms.setvalue.core.SetValueInJson [da qui](http://localhost:4502/system/console/slinglog)
 
 >[!NOTE]
 >
->Il bundle OSGi per impostare il valore degli elementi di dati in JSON Data attualmente supporta la possibilità di impostare un valore di elemento alla volta. Se desiderate impostare più valori di elemento, dovrete utilizzare più volte il passaggio del processo.
+>Il bundle OSGi per l&#39;impostazione del valore degli elementi dati in JSON Data attualmente supporta la possibilità di impostare un valore di elemento alla volta. Se desideri impostare più valori di elemento, dovrai utilizzare più volte il passaggio del processo.
 >
->Assicurarsi che il percorso del file di dati nelle opzioni di invio del modulo adattivo sia impostato su &quot;Data.xml&quot;. Questo perché il codice nella fase di processo cerca un file denominato Data.xml sotto la cartella payload.
+>Assicurati che il percorso del file dati nelle opzioni di invio del modulo adattivo sia impostato su &quot;Data.xml&quot;. Questo perché il codice nel passaggio del processo cerca un file denominato Data.xml sotto la cartella payload.
