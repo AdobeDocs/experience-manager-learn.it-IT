@@ -1,12 +1,14 @@
 ---
-title: Capitolo 3 - Argomenti avanzati della memorizzazione in cache
-seo-title: Cache di AEM Dispatcher demistificata - Capitolo 3 - Argomenti avanzati della memorizzazione in cache
-description: Il capitolo 3 dell’esercitazione Demystified sulla cache di AEM Dispatcher illustra come superare le limitazioni di cui al capitolo 2.
-seo-description: Il capitolo 3 dell’esercitazione Demystified sulla cache di AEM Dispatcher illustra come superare le limitazioni di cui al capitolo 2.
+title: '"Capitolo 3 - Argomenti della memorizzazione in cache del Dispatcher avanzato"'
+description: Questa è la parte 3 di una serie di tre parti che descrive la memorizzazione in cache in AEM. Dove le prime due parti si sono concentrate sulla semplice memorizzazione in cache http nel Dispatcher e quali limitazioni ci sono. Questa parte discute alcune idee su come superare questi limiti.
+feature: Dispatcher
+topic: Architettura
+role: Architetto
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '6187'
+source-wordcount: '6191'
 ht-degree: 0%
 
 ---
