@@ -4,21 +4,18 @@ seo-title: Creazione di un modello dati modulo
 description: Questa è la parte 3 di un tutorial in più passaggi per la creazione del primo documento di comunicazione interattivo. In questa parte verrà creato il modello dati del modulo. Il modello dati modulo consente di configurare e connettersi a origini dati diverse. Offre un’interfaccia utente intuitiva per creare uno schema di rappresentazione dei dati unificata delle entità e dei servizi aziendali tra origini dati collegate.Il video seguente illustra i passaggi necessari per creare il modello dati del modulo.
 seo-description: Questa è la parte 3 di un tutorial in più passaggi per la creazione del primo documento di comunicazione interattivo. In questa parte verrà creato il modello dati del modulo. Il modello dati modulo consente di configurare e connettersi a origini dati diverse. Offre un’interfaccia utente intuitiva per creare uno schema di rappresentazione dei dati unificata delle entità e dei servizi aziendali tra origini dati collegate. Il video seguente illustra i passaggi necessari per creare un modello dati modulo.
 uuid: c3bfd212-049d-4abd-9849-64129dae2a83
-feature: Comunicazione interattiva
+feature: comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 723b7ef3-f552-4710-b2a4-410b0b1b7525
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 1%
+source-wordcount: '323'
+ht-degree: 0%
 
 ---
 
