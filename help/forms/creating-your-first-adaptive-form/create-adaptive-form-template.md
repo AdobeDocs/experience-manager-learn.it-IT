@@ -1,20 +1,17 @@
 ---
 title: Creazione di un modello di modulo adattivo
 description: Il modello definisce la struttura e il contenuto iniziale del modulo adattivo.
-feature: Moduli adattivi
+feature: moduli adattivi
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 thumbnail: 37324.jpg
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 6%
+source-wordcount: '134'
+ht-degree: 3%
 
 ---
 
