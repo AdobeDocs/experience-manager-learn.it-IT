@@ -1,10 +1,10 @@
 ---
-title: Aggiunta di una tabella alla sezione dei contributi
-seo-title: Aggiunta di una tabella alla sezione dei contributi
-description: Questa è la parte 9 dell'esercitazione multistep per la creazione del primo documento di comunicazione interattiva. In questa parte, verrà aggiunta una tabella alla sezione dei contributi.
-seo-description: Questa è la parte 9 dell'esercitazione multistep per la creazione del primo documento di comunicazione interattiva. In questa parte, verrà aggiunta una tabella alla sezione dei contributi.
+title: Aggiunta di una tabella alla sezione contributi
+seo-title: Aggiunta di una tabella alla sezione contributi
+description: Questa è la parte 9 dell’esercitazione su più passaggi per la creazione del primo documento di comunicazione interattivo. In questa parte verrà aggiunta una tabella alla sezione contributi.
+seo-description: Questa è la parte 9 dell’esercitazione su più passaggi per la creazione del primo documento di comunicazione interattivo. In questa parte verrà aggiunta una tabella alla sezione contributi.
 uuid: 9475e769-a3f8-4aec-9b46-e0dc182b78a0
-feature: interactive-communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,27 +13,30 @@ version: 6.4,6.5
 kt: 5994
 thumbnail: 37953.jpg
 discoiquuid: 36c1f67f-b5bb-431e-893c-fd5032918dd7
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 0%
+source-wordcount: '138'
+ht-degree: 2%
 
 ---
 
 
-# Aggiunta di una tabella alla sezione dei contributi
+# Aggiunta di una tabella alla sezione contributi
 
-In questa parte, verrà aggiunta una tabella alla sezione dei contributi.
-Fare riferimento a [Utilizzo delle tabelle nel canale di stampa](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) per ulteriori informazioni sull&#39;utilizzo delle tabelle nel documento del canale di stampa.
+In questa parte, aggiungeremo una tabella alla sezione dei contributi .
+Fare riferimento a [Uso delle tabelle nel canale di stampa](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) per ulteriori informazioni sull&#39;utilizzo delle tabelle nel documento del canale di stampa.
 
-Accedete a  AEM Forms e andate a Adobe Experience Manager > Forms > Forms &amp; Documents.
+Accedi a AEM Forms e passa a Adobe Experience Manager > Moduli > Moduli e documenti.
 
-Aprite la cartella 401KStatementPrint.
+Apri la cartella 401KStatementPrint .
 
-Aprite la 401KStatementPrint in modalità di modifica.
+Apri 401KStatementPrint in modalità di modifica.
 
-Il seguente video illustra i passaggi necessari per configurare una tabella nel documento del canale di stampa.
+Il video seguente illustra i passaggi necessari per configurare una tabella nel documento del canale di stampa.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22387t1?quality=9&learn=on)
 
