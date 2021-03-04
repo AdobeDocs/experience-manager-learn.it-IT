@@ -3,20 +3,17 @@ title: Grafici multiserie in AEM Forms
 seo-title: Grafici multiserie in AEM Forms
 description: Creare un modello dati modulo appropriato per creare grafici a più serie in documenti per la stampa e per i canali Web.
 seo-description: Creare un modello dati modulo appropriato per creare grafici a più serie in documenti per la stampa e per i canali Web.
-feature: Comunicazione interattiva
+feature: comunicazione interattiva
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 1%
+source-wordcount: '302'
+ht-degree: 0%
 
 ---
 
