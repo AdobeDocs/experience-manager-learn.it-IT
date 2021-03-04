@@ -2,16 +2,19 @@
 title: Sviluppo di ambiti OAuth in AEM
 description: Gli ambiti OAuth estensibili di Adobe Experience Manager consentono il controllo degli accessi alle risorse da un’applicazione client autorizzata da un utente finale. Il diagramma seguente illustra il flusso di richieste nel contesto di AEM.
 version: 6.3, 6.4, 6.5
-feature: autenticazione
+feature: 'Utenti e gruppi '
 topics: authentication, security
 activity: develop
 audience: developer
 doc-type: code
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 1%
+source-wordcount: '185'
+ht-degree: 3%
 
 ---
 
