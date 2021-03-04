@@ -1,9 +1,9 @@
 ---
 title: Progetti traduzione
 seo-title: Progetti traduzione
-description: 'Scopri come creare, modificare e gestire un progetto di traduzione per la copia della lingua. '
-seo-description: 'Scopri come creare, modificare e gestire un progetto di traduzione per la copia della lingua.  '
-feature: language-copy, live-copy, multi-site-manager
+description: 'Scopri come creare, modificare e gestire un progetto di traduzione per la copia in lingua. '
+seo-description: 'Scopri come creare, modificare e gestire un progetto di traduzione per la copia in lingua.  '
+feature: Copia lingua, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -11,10 +11,13 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 5369
 thumbnail: 36486.jpg
+topic: Localizzazione
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 309bed2f0c137bdd245c017cd1f94d7f6ca2d396
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '48'
+source-wordcount: '57'
 ht-degree: 12%
 
 ---
@@ -22,6 +25,6 @@ ht-degree: 12%
 
 # Progetti traduzione {#translation-projects}
 
-Scopri come creare, modificare e gestire un progetto di traduzione per la copia della lingua.
+Scopri come creare, modificare e gestire un progetto di traduzione per la copia in lingua.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36486?quality=12&learn=on)
