@@ -1,10 +1,10 @@
 ---
 title: Creare un layout con Forms Designer
 seo-title: Creare un layout con Forms Designer
-description: Questa è la parte 4 dell'esercitazione multiparte per la creazione del primo documento di comunicazione interattivo per il canale di stampa. In questa parte viene visualizzato il file di layout creato con  AEM Forms Designer.
-seo-description: Questa è la parte 4 dell'esercitazione multiparte per la creazione del primo documento di comunicazione interattivo per il canale di stampa. In questa parte viene visualizzato il file di layout creato con  AEM Forms Designer.
+description: Questa è la parte 4 dell'esercitazione multiparte per la creazione del primo documento di comunicazione interattivo per il canale di stampa.In questa parte osserviamo il file di layout creato con AEM Forms Designer.
+seo-description: Questa è la parte 4 dell'esercitazione multiparte per la creazione del primo documento di comunicazione interattivo per il canale di stampa.In questa parte osserviamo il file di layout creato con AEM Forms Designer.
 uuid: 2f014c58-1ae1-40e8-a45d-7ffe9c86f693
-feature: interactive-communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,22 +13,25 @@ version: 6.4,6.5
 discoiquuid: 17f4cdbb-079b-4fe3-861d-cfa0c03d30dd
 kt: 5957
 thumbnail: 37890.jpg
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 0%
+source-wordcount: '169'
+ht-degree: 2%
 
 ---
 
 
 # Creare un layout utilizzando Forms Designer {#create-layout-using-forms-designer}
 
-In questa parte viene esaminato il file di layout creato utilizzando  AEM Forms Designer.
+In questa parte esaminiamo il file di layout creato con AEM Forms Designer.
 
-Ogni documento per i canali di stampa sarà basato su un modello creato con  strumento AEM Forms Designer. In genere, è possibile creare sezioni o aree di destinazione nel modello per contenere frammenti di documento, immagini o frammenti di layout. Idealmente, il layout non avrà alcun contenuto definito. In questo modo si elimina il layout dal contenuto, come consigliato.
+Ogni documento del canale di stampa sarà basato su un modello creato con lo strumento AEM Forms Designer. In genere, è possibile creare sezioni o aree di destinazione nel modello per conservare frammenti di documento, immagini o frammenti di layout. Idealmente, il layout non avrà alcun contenuto definito. In questo modo si rimuove il layout dal contenuto, procedura consigliata.
 
-Il seguente video evidenzia le sezioni o le aree di destinazione definite nel layout che verrà utilizzato in questa esercitazione.
+Il video seguente evidenzia le sezioni o le aree di destinazione definite nel layout che verrà utilizzato in questa esercitazione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37890/?quality=9)
 
