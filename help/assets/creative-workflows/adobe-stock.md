@@ -1,114 +1,113 @@
 ---
-title: Utilizzo di  risorse Adobe Stock con  AEM Assets
-description: 'AEM offre agli utenti la possibilità di effettuare ricerche, visualizzare in anteprima, salvare e concedere in licenza  risorse Adobe Stock direttamente da AEM. Adesso, le organizzazioni possono integrare  piano Adobe Stock Enterprise con  AEM Assets per garantire che le risorse su licenza siano ora ampiamente disponibili per i loro progetti creativi e di marketing, con le potenti funzionalità di gestione delle risorse di AEM. '
-feature: creative-cloud-integration
-topics: authoring, collaboration, operations, sharing, metadata, images, stock
-audience: all
-doc-type: feature video
-activity: use
+title: Utilizzo di risorse Adobe Stock con AEM Assets
+description: 'AEM consente agli utenti di cercare, visualizzare in anteprima, salvare e concedere in licenza le risorse Adobe Stock direttamente da AEM. Le organizzazioni possono ora integrare il piano Adobe Stock Enterprise con AEM Assets per garantire che le risorse concesse in licenza siano ora ampiamente disponibili per i loro progetti creativi e di marketing, con le potenti funzionalità di gestione delle risorse di AEM. '
+feature: Adobe Stock
 version: 6.4, 6.5
+topic: Gestione dei contenuti
+role: Professionista
+level: Principiante
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '973'
 ht-degree: 6%
 
 ---
 
 
-# Utilizzo  Adobe Stock con  AEM Assets{#using-adobe-stock-assets-with-aem-assets}
+# Utilizzo di Adobe Stock con AEM Assets{#using-adobe-stock-assets-with-aem-assets}
 
-AEM 6.4.2 consente agli utenti di effettuare ricerche, visualizzare in anteprima, salvare e concedere in licenza  risorse Adobe Stock direttamente da AEM. Adesso, le organizzazioni possono integrare  piano Adobe Stock Enterprise con  AEM Assets per garantire che le risorse su licenza siano ora ampiamente disponibili per i loro progetti creativi e di marketing, con le potenti funzionalità di gestione delle risorse di AEM.
+AEM 6.4.2 consente agli utenti di cercare, visualizzare in anteprima, salvare e concedere in licenza le risorse Adobe Stock direttamente da AEM. Le organizzazioni possono ora integrare il piano Adobe Stock Enterprise con AEM Assets per garantire che le risorse concesse in licenza siano ora ampiamente disponibili per i loro progetti creativi e di marketing, con le potenti funzionalità di gestione delle risorse di AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24678/?quality=9&learn=on)
 
 >[!NOTE]
 >
->L&#39;integrazione richiede un [piano aziendale  Adobe Stock](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) e AEM 6.4 con almeno Service Pack 2 implementato. Per i dettagli AEM service pack 6.4, consultate queste [note sulla versione](https://helpx.adobe.com/it/experience-manager/6-4/release-notes/sp-release-notes.html).
+>L’integrazione richiede un [piano aziendale Adobe Stock](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) e AEM 6.4 con almeno Service Pack 2 implementato. Per informazioni dettagliate sul service pack AEM 6.4, consulta le seguenti [note sulla versione](https://helpx.adobe.com/it/experience-manager/6-4/release-notes/sp-release-notes.html).
 
-&#39;integrazione di Adobe Stock e  AEM Assets consente agli autori e agli esperti di marketing dei contenuti di ottenere facilmente la licenza e di utilizzare le risorse stock a scopi creativi o di marketing. Potete eseguire una ricerca di risorse Stock utilizzando Omni Search, aggiungendo il filtro posizione come  Adobe Stock o navigando  navigazione principale di AEM Assets e facendo clic sull’icona dell’interfaccia utente  Adobe Stock Coral.
+L’integrazione di Adobe Stock e AEM Assets consente agli autori dei contenuti e agli esperti di marketing di concedere facilmente la licenza e utilizzare facilmente le risorse Stock a scopo creativo o di marketing. Puoi eseguire una ricerca delle risorse Stock utilizzando Omni Search, aggiungendo il filtro della posizione come Adobe Stock o navigando nella navigazione principale di AEM Assets e facendo clic sull’icona dell’interfaccia utente di Google Stock Coral.
 
 ## Funzionalità
 
 ### Ricerca e salvataggio
 
-* Effettuate  ricerca delle risorse Adobe Stock senza uscire AEM&#39;area di lavoro.
-* Salvate  risorse Adobe Stock per l’anteprima, senza concedere la licenza per la risorsa.
-* Possibilità di concedere in licenza e salvare  risorse Adobe Stock in  AEM Assets
-* Possibilità di cercare risorse simili da  Adobe Stock all’interno  interfaccia utente di AEM Assets
-* Visualizzare una risorsa selezionata da Stock Search in  AEM Assets  sito Web Adobe Stock
-* I file di risorse con licenza sono contrassegnati con un badge blu per facilitarne l’identificazione
+* Esegui la ricerca delle risorse di Adobe Stock senza uscire dall’area di lavoro di AEM.
+* Salva le risorse Adobe Stock per l’anteprima, senza concedere la licenza per la risorsa.
+* Possibilità di concedere in licenza e salvare risorse Adobe Stock in AEM Assets
+* Possibilità di cercare risorse simili da Adobe Stock nell’interfaccia utente di AEM Assets
+* Visualizzare una risorsa selezionata da Ricerca Stock nel sito web Adobe Stock di AEM Assets
+* I file delle risorse concesse in licenza sono contrassegnati da un badge blu con licenza per facilitarne l’identificazione
 
 ### Metadati risorsa
 
-* La risorsa con licenza viene memorizzata in  AEM Assets. Le proprietà delle risorse contengono i metadati Stock in una scheda di metadati di una risorsa separata
+* Le risorse concesse in licenza vengono memorizzate in AEM Assets. Le proprietà della risorsa contengono i metadati Stock sotto una scheda separata dei metadati della risorsa
 * Possibilità di aggiungere riferimenti di licenza ai metadati delle risorse
 
-### Profilo risorsa
+### Profilo Stock di risorsa
 
-* Un utente può selezionare  profilo Adobe Stock in *Utente > Preferenze personali > Configurazione stock*
-* È possibile aggiungere riferimenti obbligatori e facoltativi alla finestra Licenze risorse.
-* Possibilità di scegliere la lingua preferita per la finestra Licenze risorse in base alla regione.
+* Un utente può selezionare il profilo Adobe Stock in *Utente > Preferenze > Configurazione stock*
+* È possibile aggiungere riferimenti obbligatori e facoltativi alla finestra Asset Licensing.
+* Possibilità di scegliere la lingua preferita per la finestra Asset Licensing in base all&#39;area geografica.
 
 ### Filtro
 
-* Un utente può filtrare le risorse stock in base a Tipo di risorsa, Orientamento e Vista simili
+* Un utente può filtrare le risorse in base a Tipo di risorsa, Orientamento e Vista simili
 * Il tipo di risorsa include Foto, Illustrazioni, Vettori, Video, Modelli, 3D, Premium, Editorial
 * L&#39;orientamento include orizzontale, verticale e quadrato.
-* Visualizza filtro simile richiede  numero file Adobe Stock
+* Per visualizzare un filtro simile è necessario il numero di file Adobe Stock
 
 ### Controllo accesso
 
-* Gli amministratori possono concedere autorizzazioni a determinati utenti/gruppi per concedere in licenza le risorse stock al momento della configurazione  servizio cloud Adobe Stock.
-* Se un utente/gruppo specifico non dispone dell&#39;autorizzazione per la licenza delle risorse stock, la funzionalità *Ricerca risorse Stock / Licenze risorse* risulterebbe disabilitata.
+* Gli amministratori possono fornire autorizzazioni a determinati utenti/gruppi per concedere in licenza le risorse stock durante la configurazione del servizio cloud di Adobe Stock.
+* Se un utente/gruppo specifico non dispone dell’autorizzazione per concedere in licenza le risorse di stock, la funzionalità *Ricerca risorse di Stock / Licenza risorse* verrà disabilitata.
 
-## Configurare  Adobe Stock con  AEM Assets{#set-up-adobe-stock-with-aem-assets}
+## Impostare Adobe Stock con AEM Assets{#set-up-adobe-stock-with-aem-assets}
 
-AEM 6.4.2 consente agli utenti di effettuare ricerche, visualizzare in anteprima, salvare e concedere in licenza  risorse Adobe Stock direttamente da AEM. Questo video illustra come impostare  stock di Adobe con  AEM Assets tramite  Adobe I/O Console.
+AEM 6.4.2 consente agli utenti di cercare, visualizzare in anteprima, salvare e concedere in licenza le risorse Adobe Stock direttamente da AEM. Questo video illustra una breve descrizione di come configurare Adobe Stock con AEM Assets tramite la console Adobe I/O.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25043/?quality=12&learn=on)
 
 >[!NOTE]
 >
->Per  configurazione del servizio Adobe Stock Cloud, è necessario selezionare il percorso della risorsa Ambiente di PROD143 e Licenza su /content/dam. Il campo Ambiente verrà rimosso nella prossima release AEM e il percorso della risorsa su licenza fa parte di una funzionalità in arrivo e il supporto per questo campo verrà introdotto nella prossima release AEM.
+>Per la configurazione del servizio di Adobe Stock Cloud, è necessario selezionare il percorso della risorsa di PROD143 e di Ambiente e Licenza su /content/dam. Il campo Ambiente verrà rimosso nella prossima versione di AEM e il percorso della risorsa con licenza fa parte di una delle prossime funzionalità e il supporto per questo campo verrà introdotto nella prossima versione di AEM.
 
 >[!NOTE]
 >
->L&#39;integrazione richiede un [piano aziendale  Adobe Stock](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) e AEM 6.4 con almeno [Service Pack 2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.2.0) implementato. Per i dettagli AEM service pack 6.4, consultate queste [note sulla versione](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html). Per impostare l&#39;integrazione è inoltre necessario disporre di autorizzazioni di amministratore per [ Adobe I/O Console](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) e Adobe Experience Manager.
+>L’integrazione richiede un [piano Adobe Stock aziendale](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) e AEM 6.4 con almeno [Service Pack 2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.2.0) implementato. Per informazioni dettagliate sul service pack AEM 6.4, consulta le seguenti [note sulla versione](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html). Per configurare l’integrazione, è inoltre necessario disporre delle autorizzazioni di amministratore per [Adobe I/O Console](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) e Adobe Experience Manager.
 
 ### Installazione {#installations}
 
-* Per AEM 6.4, è necessario installare il [AEM Service Pack 2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.2.0), quindi reinstallare il file cq-dam-stock-integration-content-1.0.4.zip.
-* Per impostare l&#39;integrazione, accertatevi di disporre delle autorizzazioni di amministratore su [ Adobe I/O Console](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) e Adobe Experience Manager.
+* Per AEM 6.4, devi installare il [Service Pack 2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.2.0) di AEM, quindi reinstallare il file cq-dam-stock-integration-content-1.0.4.zip.
+* Assicurati di disporre delle autorizzazioni di amministratore su [Adobe I/O Console](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) e Adobe Experience Manager per configurare l&#39;integrazione.
 
-#### Configurazione  Adobe IMS mediante  console Adobe I/O {#set-up-adobe-ims-configuration-using-adobe-i-o-console}
+#### Configurazione di Adobe IMS tramite la console Adobe I/O {#set-up-adobe-ims-configuration-using-adobe-i-o-console}
 
-1. Crea un account tecnico IMS  Adobe in **Strumenti > Protezione**
-2. Selezionate la *soluzione cloud* come *Adobe Stock* e create un nuovo certificato o riutilizzate un certificato esistente per la configurazione.
-3. Andate  console Adobe I/O e create una nuova integrazione con account di servizio per *Adobe Stock*.
-4. Caricate il certificato dal passaggio2 alla vostra integrazione con l&#39;account di servizio Adobe Stock .
-5. Scegliete la configurazione di profilo Adobe Stock  richiesta e completate l&#39;integrazione con il servizio.
-6. Utilizzate i dettagli di integrazione per completare la configurazione dell&#39;account tecnico IMS del Adobe 
-7. Assicuratevi di poter ricevere il token di accesso utilizzando l&#39;account tecnico IMS del Adobe .
+1. Crea una configurazione account tecnico Adobe IMS in **Strumenti > Sicurezza**
+2. Seleziona la *Soluzione cloud* come *Adobe Stock* e crea un nuovo certificato o riutilizza un certificato esistente per la configurazione.
+3. Passa alla console Adobe I/O e crea una nuova integrazione dell’account di servizio per *Adobe Stock*.
+4. Carica il certificato dal passaggio 2 all’integrazione dell’account Adobe Stock Service.
+5. Scegli la configurazione di profilo Adobe Stock richiesta e completa l’integrazione del servizio.
+6. Utilizza i dettagli di integrazione per completare la configurazione dell’account tecnico Adobe IMS
+7. Assicurati di poter ricevere il token di accesso utilizzando l’account tecnico Adobe IMS.
 
 ![Account tecnico Adobe IMS](assets/screen_shot_2018-10-22at12219pm.png)
 
-####  Cloud Services Adobe Stock {#set-up-adobe-stock-cloud-services}
+#### Configurare Adobe Stock Cloud Services {#set-up-adobe-stock-cloud-services}
 
-1. Crea una nuova configurazione del servizio cloud per  Adobe Stock in **Strumenti > Cloud Services.**
-2. Selezionare la *Adobe IMS Configuration* creata nella sezione precedente per la configurazione di *Adobe Stock Cloud*
+1. Crea una nuova configurazione del servizio cloud per Adobe Stock in **Strumenti > Servizi cloud.**
+2. Seleziona la *Configurazione Adobe IMS* creata nella sezione precedente per la configurazione *Adobe Stock Cloud*
 
-3. Assicurarsi di selezionare **AMBIENTE** come PROD. L&#39;ambiente di gestione temporanea non è supportato e verrà rimosso nella prossima release di AEM.
-4. **Il** percorso della risorsa con licenza può essere indicato in qualsiasi directory in /content/dam. Il supporto delle funzioni per questo campo verrà aggiunto nella prossima release di AEM
-5. Selezionate le impostazioni internazionali e completate la configurazione.
-6. Puoi anche aggiungere utenti/gruppi al servizio Adobe Stock Cloud  per abilitare l&#39;accesso per utenti o gruppi specifici.
+3. Assicuratevi di selezionare **AMBIENTE** come PROD. L’ambiente di staging non è supportato e verrà rimosso nella prossima versione di AEM.
+4. **Il** percorso della risorsa in licenza può essere indicato in qualsiasi directory sotto /content/dam. Il supporto delle funzioni per questo campo verrà aggiunto nella prossima versione di AEM
+5. Seleziona le impostazioni internazionali e completa la configurazione.
+6. Puoi anche aggiungere utenti/gruppi al servizio Adobe Stock Cloud per abilitare l’accesso per utenti o gruppi specifici.
 
-![Configurazione  Adobe risorse Stock](assets/screen_shot_2018-10-22at12425pm.png)
+![Configurazione di Adobe Assets Stock](assets/screen_shot_2018-10-22at12425pm.png)
 
 ### Risorse aggiuntive
 
-* [Piano Stock Enterprise](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html)
+* [Piano d&#39;azione aziendale](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html)
 * [Note sulla versione di AEM 6.4 Service Pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
-* [Integrare AEM e  Adobe Stock](https://helpx.adobe.com/experience-manager/6-5/assets/using/aem-assets-adobe-stock.html#IntegrateAEMandAdobeStock)
-* [ Adobe I/O Console Integration API](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)
-* [ Adobe Stock API Docs](https://www.adobe.io/apis/creativecloud/stock/docs.html)
+* [Integrare AEM e Adobe Stock](https://helpx.adobe.com/experience-manager/6-5/assets/using/aem-assets-adobe-stock.html#IntegrateAEMandAdobeStock)
+* [API di integrazione della console Adobe I/O](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)
+* [Documentazione API di Adobe Stock](https://www.adobe.io/apis/creativecloud/stock/docs.html)
