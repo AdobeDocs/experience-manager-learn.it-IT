@@ -3,13 +3,11 @@ title: Video e tutorial di AEM Foundation
 seo-title: Video e tutorial di AEM Foundation
 description: 'Raccolta di video e tutorial per Adobe Experience Manager Foundation. '
 seo-description: Raccolta di video e tutorial per Adobe Experience Manager Foundation
-role: '"Leader, Architetto, Sviluppatore, Amministratore, Business Practitioner"'
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 21%
+source-wordcount: '261'
+ht-degree: 22%
 
 ---
 
