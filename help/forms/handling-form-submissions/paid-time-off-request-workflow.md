@@ -1,35 +1,38 @@
 ---
-title: Flusso di lavoro semplice con tempo pagato disattivato
-description: Nascondere e visualizzare i pannelli dei moduli adattivi nel flusso di lavoro AEM
+title: Workflow semplice della richiesta a pagamento
+description: Nascondere e mostrare pannelli di moduli adattivi nel flusso di lavoro AEM
 uuid: 28ceb72b-24d9-488e-92af-7e85775dc682
-feature: integrations
+feature: Moduli adattivi
 topics: workflow
 audience: developer
 doc-type: article
 activity: use
 version: 6.4,6.5
 discoiquuid: 1c4822e6-76ce-446b-98cb-408900d68b24
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 0%
+source-wordcount: '337'
+ht-degree: 1%
 
 ---
 
 
-# Flusso di lavoro semplice con tempo pagato disattivato
+# Workflow semplice della richiesta a pagamento
 
-In questo articolo, verrà illustrato un semplice flusso di lavoro utilizzato per richiedere il tempo di pagamento disattivato. I requisiti aziendali sono i seguenti:
+In questo articolo, osserveremo un semplice flusso di lavoro utilizzato per richiedere il tempo di pagamento disattivato. I requisiti aziendali sono i seguenti:
 
-* L&#39;utente A richiede tempo compilando un modulo adattivo.
-* Il modulo viene instradato AEM utente amministratore (in tempo reale verrà instradato al manager del notificatore)
-* L&#39;amministratore apre il modulo. L&#39;amministratore non deve essere in grado di modificare le informazioni compilate dal mittente.
-* La sezione Approver deve essere visibile all&#39;approver (in questo caso è l&#39;utente amministratore AEM).
+* L’utente A richiede tempo di inattività compilando un modulo adattivo.
+* Il modulo viene indirizzato all’utente amministratore di AEM (in tempo reale verrà indirizzato al responsabile del mittente)
+* L’amministratore apre il modulo. L’amministratore non deve essere in grado di modificare le informazioni inserite dal mittente.
+* La sezione Approvatore deve essere visibile all’approvatore (In questo caso è l’utente amministratore AEM).
 
-Per soddisfare il requisito di cui sopra, nel modulo viene utilizzato un campo nascosto denominato **initial step** e il relativo valore predefinito è impostato su Sì. Quando il modulo viene inviato, il primo passaggio del flusso di lavoro imposta il valore di initial step su No. Nel modulo sono presenti regole business per nascondere e mostrare le sezioni appropriate in base al valore dell&#39;istruzione iniziale.
+Per soddisfare il requisito di cui sopra, nel modulo viene utilizzato un campo nascosto denominato **initialstep** e il relativo valore predefinito è impostato su Sì. Quando il modulo viene inviato, il primo passaggio nel flusso di lavoro imposta il valore di initialstep su No. Nel modulo sono presenti regole business per nascondere e visualizzare le sezioni appropriate in base al valore iniziale del passaggio.
 
-**Configura modulo per attivare AEM flusso di lavoro**
+**Configurare il modulo per attivare il flusso di lavoro AEM**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28406?quality=9&learn=on)
 
@@ -37,22 +40,22 @@ Per soddisfare il requisito di cui sopra, nel modulo viene utilizzato un campo n
 
 >[!VIDEO](https://video.tv.adobe.com/v/28407?quality=9&learn=on)
 
-**Visualizzazione dell&#39;utente che ha inviato il modulo di richiesta del tempo di disattivazione**
+**Visualizzazione dell&#39;autore del modulo di richiesta di disattivazione del tempo**
 
 ![initialstep](assets/initialstep.gif)
 
-**Vista approver del modulo**
+**Vista dell’approvatore del modulo**
 
-![approvverview](assets/approversview.gif)
+![approvazione](assets/approversview.gif)
 
-Nella vista approver, l&#39;approver non è in grado di modificare i dati inviati. È inoltre disponibile una nuova sezione destinata solo agli approvatori.
+Nella visualizzazione approvatore, l&#39;approvatore non è in grado di modificare i dati inviati. È inoltre disponibile una nuova sezione destinata solo agli approvatori.
 
-Per testare il flusso di lavoro sul sistema, attenetevi alla procedura indicata di seguito:
-* [Download e implementazione di DevelopingWitheServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* [Scaricare e distribuire il pacchetto OSGI personalizzato SetValue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)
+Per testare questo flusso di lavoro sul sistema, segui i passaggi indicati di seguito:
+* [Scarica e distribuisci DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* [Scarica e distribuisci il bundle OSGI personalizzato SetValue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)
 * [Importa le risorse correlate a questo articolo in AEM](assets/helpxworkflow.zip)
-* Aprire il modulo [Time Off Request (Tempo di disattivazione)](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Apri il [modulo di richiesta di disattivazione tempo](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Compila i dettagli e invia
-* Aprite la [inbox](http://localhost:4502/mnt/overlay/cq/inbox/content/inbox.html). Dovrebbe essere assegnata una nuova attività. Aprire il modulo. I dati dell&#39;autore del modulo devono essere di sola lettura e deve essere visibile una nuova sezione dell&#39;approver.
-* Esplora il modello di flusso di lavoro [](http://localhost:4502/editor.html/conf/global/settings/workflow/models/helpxworkflow.html)
-* Esplorate il passaggio del processo. Questo è il passo che imposta il valore di initial step su No.
+* Apri la [inbox](http://localhost:4502/mnt/overlay/cq/inbox/content/inbox.html). Dovresti vedere una nuova attività assegnata. Apri il modulo. I dati del notificatore devono essere di sola lettura e dovrebbe essere visibile una nuova sezione approvatore.
+* Esplora il [modello di flusso di lavoro](http://localhost:4502/editor.html/conf/global/settings/workflow/models/helpxworkflow.html)
+* Esplora il passaggio del processo. Questo è il passaggio che imposta il valore di initialstep su No.
