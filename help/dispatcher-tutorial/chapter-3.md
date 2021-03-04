@@ -1,10 +1,12 @@
 ---
 title: Capitolo 3 - Argomenti avanzati della memorizzazione in cache
+seo-title: Cache di AEM Dispatcher demistificata - Capitolo 3 - Argomenti avanzati della memorizzazione in cache
 description: Il capitolo 3 dell’esercitazione Demystified sulla cache di AEM Dispatcher illustra come superare le limitazioni di cui al capitolo 2.
+seo-description: Il capitolo 3 dell’esercitazione Demystified sulla cache di AEM Dispatcher illustra come superare le limitazioni di cui al capitolo 2.
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '6162'
+source-wordcount: '6187'
 ht-degree: 0%
 
 ---
