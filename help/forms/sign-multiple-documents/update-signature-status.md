@@ -1,7 +1,7 @@
 ---
 title: Aggiornare lo stato della firma del modulo nel database
 description: Aggiornare lo stato della firma del modulo firmato nel database utilizzando il flusso di lavoro AEM
-feature: adaptive-forms
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,23 +9,26 @@ activity: implement
 version: 6.4,6.5
 kt: 6888
 thumbnail: 6888.jpg
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 0%
+source-wordcount: '109'
+ht-degree: 4%
 
 ---
 
 
-# Aggiorna stato firma
+# Aggiorna lo stato della firma
 
-Il flusso di lavoro UpdateSignatureStatus viene attivato quando l&#39;utente ha completato la cerimonia di firma. Esempio di flusso di lavoro
+Il flusso di lavoro UpdateSignatureStatus viene attivato quando l&#39;utente ha completato la cerimonia di firma. Il flusso di lavoro seguente
 
 ![flusso di lavoro principale](assets/update-signature.PNG)
 
-Aggiorna stato firma è un processo personalizzato.
-Il motivo principale per l&#39;implementazione di un processo personalizzato è l&#39;estensione di un flusso di lavoro AEM. Di seguito è riportato il codice personalizzato utilizzato per aggiornare lo stato della firma.
+Aggiorna stato firma è un passaggio del processo personalizzato.
+Il motivo principale per l’implementazione del passaggio del processo personalizzato è l’estensione di un flusso di lavoro AEM. Di seguito è riportato il codice personalizzato utilizzato per aggiornare lo stato della firma.
 Il codice in questo passaggio del processo personalizzato fa riferimento al servizio SignMultipleForms.
 
 
@@ -72,5 +75,5 @@ public class UpdateSignatureStatusWorkflowStep implements WorkflowProcess {
 
 ## Assets
 
-Il flusso di lavoro di aggiornamento dello stato della firma può essere [scaricato da qui](assets/update-signature-status-workflow.zip)
+Il flusso di lavoro Aggiorna stato firma può essere [scaricato da qui](assets/update-signature-status-workflow.zip)
 
