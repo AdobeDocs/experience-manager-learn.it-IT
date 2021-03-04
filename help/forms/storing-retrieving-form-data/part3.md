@@ -1,24 +1,27 @@
 ---
-title: Memorizzazione e recupero dei dati del modulo dal database MySQL
-description: Esercitazione con più parti per illustrare i passaggi necessari per memorizzare e recuperare i dati dei moduli
-feature: adaptive-forms
+title: Memorizzazione e recupero dei dati dei moduli dal database MySQL
+description: Esercitazione in più parti per illustrare i passaggi necessari per memorizzare e recuperare i dati dei moduli
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: 787a79663472711b78d467977d633e3d410803e5
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 1%
+source-wordcount: '98'
+ht-degree: 5%
 
 ---
 
 
 # Creare il servizio OSGi per recuperare i dati
 
-Il codice seguente è stato scritto per memorizzare e recuperare i dati del modulo adattivo memorizzati. Per recuperare i dati del modulo adattivo associati a un GUID specificato viene utilizzata una semplice query. I dati recuperati vengono quindi restituiti all&#39;applicazione chiamante. In questo codice viene fatto riferimento alla stessa origine dati creata nel passaggio precedente
+Il codice seguente è stato scritto per memorizzare e recuperare i dati del modulo adattivo memorizzati. Viene utilizzata una semplice query per recuperare i dati del modulo adattivo associati a un GUID specificato. I dati recuperati vengono quindi restituiti all’applicazione chiamante. In questo codice viene fatto riferimento alla stessa origine dati creata nel passaggio precedente
 
 
 ```java
@@ -155,7 +158,7 @@ public class FetchFormData implements com.aemforms.saveandcontinue.core.FetchSto
 
 ## Interfaccia
 
-Di seguito è riportata la dichiarazione di interfaccia utilizzata
+Di seguito è riportata la dichiarazione dell’interfaccia utilizzata
 
 ```java
 package com.aemforms.saveandcontinue.core;
