@@ -1,29 +1,32 @@
 ---
 title: Generazione del documento del canale di stampa mediante unione dei dati
 seo-title: Generazione del documento del canale di stampa mediante unione dei dati
-description: Scopri come generare un documento per il canale di stampa unendo i dati contenuti nel flusso di input
-seo-description: Scopri come generare un documento per il canale di stampa unendo i dati contenuti nel flusso di input
-feature: interactive-communication
+description: Scopri come generare il documento del canale di stampa unendo i dati contenuti nel flusso di input
+seo-description: Scopri come generare il documento del canale di stampa unendo i dati contenuti nel flusso di input
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 0%
+source-wordcount: '506'
+ht-degree: 1%
 
 ---
 
 # Genera documenti del canale di stampa utilizzando i dati inviati
 
-I documenti del canale di stampa vengono generalmente generati recuperando i dati da un&#39;origine dati back-end attraverso il servizio get del modello dati del modulo. In alcuni casi, potrebbe essere necessario generare documenti per canali di stampa con i dati forniti. Ad esempio, il cliente compila il cambiamento del modulo beneficiario e può essere necessario generare un documento per canale di stampa con i dati del modulo inviato. Per eseguire questo caso di utilizzo, è necessario seguire i seguenti passaggi
+I documenti del canale di stampa vengono generalmente generati recuperando i dati da un’origine dati back-end tramite il servizio get del modello di dati del modulo. In alcuni casi, potrebbe essere necessario generare documenti del canale di stampa con i dati forniti. Ad esempio, il cliente compila la modifica del modulo beneficiario e può essere utile generare un documento del canale di stampa con i dati del modulo inviato. Per eseguire questo caso d’uso è necessario seguire i seguenti passaggi
 
 ## Crea servizio di precompilazione
 
-Il nome del servizio &quot;ccm-print-test&quot; verrà utilizzato per accedere a questo servizio. Una volta definito il servizio di pre-compilazione, è possibile accedere a questo servizio nell&#39;implementazione del servlet o del processo del flusso di lavoro per generare il documento del canale di stampa.
+Il nome di servizio &quot;ccm-print-test&quot; verrà utilizzato per accedere a questo servizio . Una volta definito questo servizio di pre-compilazione, puoi accedere a questo servizio nell’implementazione del processo del servlet o del flusso di lavoro per generare il documento del canale di stampa.
 
 ```java
 import java.io.InputStream;
@@ -65,14 +68,14 @@ public PrefillData getPrefillData(DataOptions options) throws FormsException {
 
 ### Crea implementazione WorkflowProcess
 
-Il frammento di codice di implementazione WorkflowProcess è illustrato di seguito.Questo codice viene eseguito quando il passaggio del processo nel flusso di lavoro AEM è associato a questa implementazione. Questa implementazione prevede 3 argomenti di processo descritti di seguito:
+Il frammento di codice di implementazione di workflowProcess è mostrato di seguito.Questo codice viene eseguito quando la fase di processo nel flusso di lavoro AEM è associata a questa implementazione. Questa implementazione richiede 3 argomenti di processo descritti di seguito:
 
 * Nome del percorso DataFile specificato durante la configurazione del modulo adattivo
 * Nome del modello del canale di stampa
 * Nome del documento del canale di stampa generato
 
-Riga 98 - Poiché il modulo adattivo è basato su un modello dati modulo, vengono estratti i dati che risiedono nel nodo dati di afBoundData.
-Riga 128 - Il nome del servizio Opzioni dati è impostato. Prendete nota del nome del servizio. Deve corrispondere al nome restituito nella riga 45 dell&#39;elenco di codici precedente.
+Linea 98 - Poiché il modulo adattivo è basato su Form Data Model, vengono estratti i dati che risiedono nel nodo dati di afBoundData.
+Riga 128 - Il nome del servizio Opzioni dati è impostato. Nota il nome del servizio. Deve corrispondere al nome restituito nella riga 45 dell’elenco di codici precedente.
 Linea 135 - Il documento viene generato utilizzando il metodo di rendering dell&#39;oggetto PrintChannel
 
 
@@ -160,24 +163,24 @@ String params = arg2.get("PROCESS_ARGS","string").toString();
             }
 ```
 
-Per eseguire il test sul server, attenetevi alla seguente procedura:
+Per eseguire il test sul server, segui i seguenti passaggi:
 
-* [Configurare il servizio di posta elettronica Day CQ.](https://helpx.adobe.com/experience-manager/6-5/communities/using/email.html) Questo è necessario per inviare un messaggio e-mail con il documento generato come allegato.
-* [Distribuzione di Developing with Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* Accertatevi di aver aggiunto la seguente voce nella configurazione del servizio Mapper utente Apache Sling Service
-* **DevelopingWithServiceUser.core:getformsresources ceresolver=fd-service**
-* [Scaricate e decomprimete il file system delle risorse correlate a questo articolo](assets/prefillservice.zip)
-* [Importare i pacchetti seguenti tramite Gestione pacchetti AEM](http://localhost:4502/crx/packmgr/index.jsp)
+* [Configura il servizio di posta Day CQ.](https://helpx.adobe.com/experience-manager/6-5/communities/using/email.html) Questo è necessario per inviare un messaggio e-mail con il documento generato come allegato.
+* [Distribuire lo sviluppo con Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* Assicurati di aver aggiunto la seguente voce nella configurazione del servizio User Mapper di Apache Sling Service
+* **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
+* [Scarica e decomprimi le risorse correlate a questo articolo nel file system](assets/prefillservice.zip)
+* [Importa i seguenti pacchetti utilizzando Gestione pacchetti AEM](http://localhost:4502/crx/packmgr/index.jsp)
    1. beneficiaryconfirmationic.zip
    2. changeofbeneficiaryform.zip
    3. generatebeneficiaryworkflow.zip
-* [Distribuzione di quanto segue tramite AEM Felix Web Console](http://localhost:4502/system/console/bundles)
+* [Distribuisci quanto segue tramite la console web AEM Felix](http://localhost:4502/system/console/bundles)
 
-   * GenerateIC.GenerateIC.core-1.0-SNAPSHOT.jar. Questo bundle contiene il codice indicato in questo articolo.
+   * GenerateIC.GenerateIC.core-1.0-SNAPSHOT.jar. Questo bundle contiene il codice menzionato in questo articolo.
 
-* [Open ChangeOfBeneficialForm](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
-* Verificate che il modulo adattivo sia configurato per l&#39;invio a AEM Workflow come mostrato di seguito
+* [Apri ChangeOfBeneficaryForm](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
+* Assicurati che il modulo adattivo sia configurato per l’invio ad AEM Workflow come mostrato di seguito
    ![immagine](assets/generateic.PNG)
-* [Configurare il modello di workflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)Assicurati che il passaggio del processo e l’invio di componenti e-mail siano configurati in base all’ambiente in uso
+* [Configura il modello di flusso di lavoro.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)Assicurati che il passaggio del processo e l’invio di componenti e-mail siano configurati in base all’ambiente in uso
 * [Visualizzare l&#39;anteprima di ChangeOfBeneficaryForm.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) Compila alcuni dettagli e invia
 * Il flusso di lavoro deve essere richiamato e il documento del canale di stampa IC deve essere inviato al destinatario specificato nel componente Invia e-mail come allegato
