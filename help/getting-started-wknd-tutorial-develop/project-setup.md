@@ -3,7 +3,7 @@ title: Guida introduttiva di AEM Sites - Configurazione del progetto
 seo-title: Guida introduttiva di AEM Sites - Configurazione del progetto
 description: Copre la creazione di un progetto Maven Multi Module per gestire il codice e le configurazioni per un sito AEM.
 sub-product: sites
-feature: AEM Project Archetype
+feature: maven-archetype
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -12,14 +12,11 @@ audience: developer
 mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
-topic: '"Gestione dei contenuti, sviluppo"'
-role: Developer (Sviluppatore)
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '1895'
-ht-degree: 5%
+source-wordcount: '1888'
+ht-degree: 4%
 
 ---
 
