@@ -1,21 +1,18 @@
 ---
 title: Creazione di un frammento di modulo
 description: AEM forms offre un comodo meccanismo per creare segmenti di modulo una sola volta, ad esempio un pannello o un gruppo di campi, e riutilizzarli nei moduli adattivi.
-feature: Moduli adattivi
+feature: moduli adattivi
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 kt: 5862
 thumbnail: 37325.jpg
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 40%
+source-wordcount: '108'
+ht-degree: 37%
 
 ---
 
