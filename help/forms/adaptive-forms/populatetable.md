@@ -1,37 +1,40 @@
 ---
-title: 'Compilazione tabella modulo adattivo '
-seo-title: Compilazione tabella modulo adattivo
-description: Compilare la tabella del modulo adattivo con i risultati delle richieste di servizi del modello dati modulo
-seo-description: Compilare la tabella del modulo adattivo con i risultati delle richieste di servizi del modello dati modulo
-feature: adaptive-forms
+title: 'Popolare tabella di moduli adattivi '
+seo-title: Popolare tabella di moduli adattivi
+description: Compilare una tabella di moduli adattivi con i risultati delle vocazioni al servizio Modello dati modulo
+seo-description: Compilare una tabella di moduli adattivi con i risultati delle vocazioni al servizio Modello dati modulo
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Sviluppo
+role: Professionista
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 0%
+source-wordcount: '260'
+ht-degree: 1%
 
 ---
 
 
-# Compilazione di una tabella modulo adattiva con i risultati dell&#39;invito al servizio del modello dati modulo
+# Compilare una tabella di moduli adattivi con i risultati dell’invocazione a Form Data Model Service
 
-[Il modulo Live è ospitato ](https://forms.enablementadobe.com/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
-quiIn questo articolo viene illustrato come compilare la tabella dei moduli adattivi recuperando i dati dalla chiamata al servizio del modello dati del modulo. Stiamo per creare un programma di ammortamento in una tabella che elenca ogni pagamento regolare su un mutuo nel tempo. I risultati dell&#39;ammortamento vengono restituiti dal modello dati modulo. Il servizio del modello dati modulo viene richiamato sull&#39;evento click del pulsante calculate, come mostrato nella schermata. I parametri di input e di output della chiamata del servizio sono mappati correttamente come mostrato nella schermata. L&#39;output è mappato alle colonne di Row1
-![click event](assets/amortization.PNG)
+[Il modulo live è ospitato ](https://forms.enablementadobe.com/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
+quiIn questo articolo esaminiamo la compilazione della tabella dei moduli adattivi recuperando i dati dalla chiamata al servizio del modello dati del modulo. Stiamo per creare un programma di ammortamento in una tabella che elenca ogni pagamento regolare su un mutuo nel tempo. I risultati dell’ammortamento vengono restituiti dal modello dati modulo. Il servizio di Form Data Model viene richiamato sull&#39;evento click del pulsante calculate , come mostrato nella schermata . I parametri di input e output della chiamata del servizio vengono mappati in modo appropriato come mostrato nella schermata. L&#39;output è mappato alle colonne della riga1
+![clickevent](assets/amortization.PNG)
 
-La riga1 è configurata in modo che cresca a seconda dei dati restituiti dalla chiamata del servizio. Notate le impostazioni di ripetizione specificate qui. Il valore -1 indica un numero illimitato di righe nella tabella
+La riga1 è configurata in modo che cresca a seconda dei dati restituiti dalla chiamata del servizio. Osserva le impostazioni di ripetizione specificate qui. Il valore -1 indica un numero illimitato di righe nella tabella
 ![Riga1](assets/rowconfiguration.PNG)
 
 ## Distribuisci sul server
 
 [Installa Tomcat come specificato ](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
 [quiDistribuisci il ](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
-[file SampleRest.warInstalla le risorse  ](assets/amortizationschedule.zip) utilizzando AEM gestore pacchetti 
+[file SampleRest.warInstalla le risorse  ](assets/amortizationschedule.zip) utilizzando AEM package manager 
 [Apri il ](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
-modulo di pianificazione dell&#39;ammortamentoImmetti il valore appropriato e fai clic su Calcola programma di ammortamento.
+modulo di pianificazione dell&#39;ammortamentoImmetti il valore appropriato e fai clic su calcola programma di ammortamento dovrebbe essere compilato nel modulo
 
