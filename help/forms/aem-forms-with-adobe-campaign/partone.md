@@ -4,17 +4,20 @@ seo-title: 'Generazione del token web JSON e del token di accesso '
 description: Questo articolo spiega il codice necessario per generare JWT e Access Token necessari per effettuare chiamate REST ad Adobe Campaign Standard
 seo-description: Questo articolo spiega il codice necessario per generare JWT e Access Token necessari per effettuare chiamate REST ad Adobe Campaign Standard
 uuid: 5b780eee-1e7c-4e1c-a164-49ce64939b91
-feature: moduli adattivi, modello dati modulo
+feature: Moduli adattivi, Modello dati modulo
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: cc268946-a7e4-42b3-bfad-5509e215871a
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
