@@ -3,20 +3,17 @@ title: Moduli AEM con schema e dati JSON[Parte 1]
 seo-title: AEM Forms con schema JSON e dati[Parte1]
 description: Esercitazione in più parti per illustrarti i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
 seo-description: Esercitazione in più parti per illustrarti i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
-feature: Moduli adattivi
+feature: moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Esperienza
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 1%
+source-wordcount: '295'
+ht-degree: 0%
 
 ---
 
