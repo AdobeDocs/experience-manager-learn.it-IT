@@ -1,9 +1,9 @@
 ---
-title: Utilizzo di CAPTCHA con AEM Forms adattivo
-seo-title: Utilizzo di CAPTCHA con AEM Forms adattivo
-description: Aggiunta e utilizzo di un CAPTCHA con AEM Forms adattivo.
-seo-description: Aggiunta e utilizzo di un CAPTCHA con AEM Forms adattivo.
-feature: adaptive-forms
+title: Utilizzo dei CAPTCHA con AEM Adaptive Forms
+seo-title: Utilizzo dei CAPTCHA con AEM Adaptive Forms
+description: Aggiunta e utilizzo di un CAPTCHA con AEM Adaptive Forms.
+seo-description: Aggiunta e utilizzo di un CAPTCHA con AEM Adaptive Forms.
+feature: '"Moduli adattivi, Flusso di lavoro"'
 topics: integrations
 audience: developer
 doc-type: technical video
@@ -11,24 +11,27 @@ activity: setup
 version: 6.4,6.5
 uuid: bd63e207-4f4d-4f34-9ac4-7572ed26f646
 discoiquuid: 5e184e44-e385-4df7-b7ed-085239f2a642
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Intermedio
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
 
 
-# Utilizzo di CAPTCHA con AEM Forms {#using-captchas-with-aem-adaptive-forms} adattivo
+# Utilizzo dei CAPTCHA con AEM Adaptive Forms{#using-captchas-with-aem-adaptive-forms}
 
-Aggiunta e utilizzo di un CAPTCHA con AEM Forms adattivo.
+Aggiunta e utilizzo di un CAPTCHA con AEM Adaptive Forms.
 
-Visitate la pagina [ AEM Forms samples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) per un collegamento a una dimostrazione live di questa funzionalità.
+Visita la pagina [Esempi di AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0) per un collegamento a una demo in tempo reale di questa funzionalità.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336/?quality=9&learn=on)
 
-*Questo video illustra il processo di aggiunta di un CAPTCHA a un AEM modulo adattivo utilizzando sia il servizio AEM CAPTCHA incorporato che il servizio reCAPTCHA di Google.*
+*Questo video illustra il processo di aggiunta di un CAPTCHA a un modulo adattivo AEM utilizzando sia il servizio AEM CAPTCHA integrato sia il servizio reCAPTCHA di Google.*
 
 >[!NOTE]
 >
@@ -36,28 +39,28 @@ Visitate la pagina [ AEM Forms samples](https://forms.enablementadobe.com/conten
 
 >[!NOTE]
 >
->**Per configurare reCaptcha all’istanza di pubblicazione, seguite i passaggi**
+>**Per configurare reCaptcha sull’istanza di pubblicazione, segui i passaggi**
 >
->Configurare il recuperoCaptach sull’istanza di creazione
+>Configura reCaptach sull&#39;istanza dell&#39;autore
 >
->aprire la console Web [felix](http://localhost:4502/system/console/bundles) nell&#39;istanza di creazione
+>apri la felix [console web](http://localhost:4502/system/console/bundles) sull&#39;istanza dell&#39;autore
 >
 >cerca il bundle com.adobe.granite.crypto.file
 >
->Prendete nota dell’ID bundle. Nel mio caso è 20
+>Nota l&#39;id del bundle. Nel mio caso sono 20
 >
->Passate all’ID bundle nel file system dell’istanza di creazione
+>Passa all’ID bundle nel file system dell’istanza di authoring
 >
 >* &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
-* Copiare i file HMAC e master
+* Copia i file HMAC e master
 
-Aprite la [console Web del file ](http://localhost:4502/system/console/bundles) nell’istanza di pubblicazione. Cercate il bundle com.adobe.granite.crypto.file. Notate l’ID bundle
-Andate al bundle id nel file system dell’istanza di pubblicazione
+Apri la [console web felix](http://localhost:4502/system/console/bundles) nell&#39;istanza di pubblicazione. Cerca il bundle com.adobe.granite.crypto.file . Nota l&#39;id del bundle
+Passa all&#39;id bundle nel file system della tua istanza di pubblicazione
 * &lt;publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
 * eliminare i file HMAC e master esistenti.
-* incollare i file HMAC e master copiati dall’istanza di creazione
+* incolla i file HMAC e master copiati dall&#39;istanza di authoring
 
-Riavviate il server di pubblicazione AEM
+Riavvia il server di pubblicazione AEM
 
 ## Materiali di supporto {#supporting-materials}
 
