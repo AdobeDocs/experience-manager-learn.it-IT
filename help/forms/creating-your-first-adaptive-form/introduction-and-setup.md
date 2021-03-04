@@ -1,30 +1,33 @@
 ---
-title: Guida Introduttiva All’Forms Adattivo
-seo-title: Guida Introduttiva All’Forms Adattivo
-description: 'Questa esercitazione illustra i passaggi necessari per creare un modulo adattivo con più schede. Scoprirai come utilizzare Tabelle, Layout a soffietto e Editor regole per creare regole aziendali. '
-seo-description: 'Questa esercitazione illustra i passaggi necessari per creare un modulo adattivo con più schede. Scoprirai come utilizzare Tabelle, Layout a soffietto e Editor regole per creare regole aziendali. '
+title: Guida Introduttiva Ai Moduli Adattivi
+seo-title: Guida Introduttiva Ai Moduli Adattivi
+description: 'Questa esercitazione illustra i passaggi necessari per creare un modulo adattivo con più schede. Scoprirai come utilizzare le tabelle, il layout a soffietto e l’editor di regole per creare regole di business. '
+seo-description: 'Questa esercitazione illustra i passaggi necessari per creare un modulo adattivo con più schede. Scoprirai come utilizzare le tabelle, il layout a soffietto e l’editor di regole per creare regole di business. '
 uuid: 6f73cb1c-94e2-4ac7-89e5-a72141a06bbe
-feature: adaptive-forms
+feature: Moduli adattivi
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.3,6.4,6.5
 discoiquuid: b6863d3d-8528-4a96-ae37-c8d1aa62d443
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Principiante
 translation-type: tm+mt
-source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 0%
+source-wordcount: '246'
+ht-degree: 4%
 
 ---
 
 
-# Guida introduttiva ad Forms adattivo {#getting-started-with-adaptive-forms}
+# Guida introduttiva ai moduli adattivi {#getting-started-with-adaptive-forms}
 
-Questa esercitazione illustra i passaggi necessari per creare un modulo adattivo con più schede. Scoprirai come utilizzare Tabelle, Layout a soffietto e Editor regole per creare regole aziendali.
+Questa esercitazione illustra i passaggi necessari per creare un modulo adattivo con più schede. Scoprirai come utilizzare le tabelle, il layout a soffietto e l’editor di regole per creare regole di business.
 
-I moduli adattivi consentono di creare moduli coinvolgenti, reattivi, dinamici e adattivi.  AEM Forms offre un&#39;interfaccia utente intuitiva e componenti forniti con i prodotti per la creazione e l&#39;utilizzo di moduli adattivi. È possibile scegliere di creare un modulo adattivo basato su un modello di modulo o uno schema oppure senza un modello di modulo. È importante scegliere con attenzione il modello di modulo che non solo si adatta alle proprie esigenze ma che amplia gli investimenti infrastrutturali e le risorse esistenti.
+I moduli adattivi consentono di creare moduli coinvolgenti, reattivi, dinamici e adattivi. AEM Forms offre un’interfaccia utente intuitiva e componenti predefiniti per la creazione e l’utilizzo di moduli adattivi. È possibile scegliere di creare un modulo adattivo basato su un modello di modulo o schema o senza un modello di modulo. È importante scegliere con attenzione il modello di modulo che non solo si adatta alle proprie esigenze ma estende gli investimenti e le risorse infrastrutturali esistenti.
 
 Questa esercitazione non utilizza alcun modello di modulo per la creazione di moduli adattivi.
 
@@ -32,12 +35,12 @@ Questa esercitazione non utilizza alcun modello di modulo per la creazione di mo
 
 Sarà necessario quanto segue:
 
-* Un&#39;istanza funzionante di AEM con il pacchetto Form Add-on installato
+* Un&#39;istanza funzionante di AEM con il pacchetto aggiuntivo di Form installato
 
-* **Si presume che  AEM Forms versione 6.4 o successiva sia in esecuzione su localhost:4502.**
+* **Si presume che tu stia eseguendo AEM Forms versione 6.4 o successiva su localhost:4502.**
 
-* [Scaricate sul disco rigido il ](assets/client-libs-and-logo.zip) frammento client-libs-and- [logoe guida introduttiva ](assets/getting-started-fragment.zip) all&#39;applicazione.
+* [Scarica il ](assets/client-libs-and-logo.zip) file client-libs-and-logo e  [getting-started-](assets/getting-started-fragment.zip) fragmentato sul disco rigido.
 
-* Importare i file ZIP in AEM utilizzando [gestore pacchetti ](http://localhost:4502/crx/packmgr/index.jsp)
+* Importa i file zip in AEM utilizzando [gestore di pacchetti ](http://localhost:4502/crx/packmgr/index.jsp)
 
 
