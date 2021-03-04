@@ -4,17 +4,20 @@ seo-title: Creazione di un profilo di campagna per l’invio di moduli adattivi
 description: Questo articolo illustra i passaggi necessari per creare un profilo in Adobe Campaign Standard per l’invio di un modulo adattivo. Questo processo utilizza un meccanismo di invio personalizzato per gestire l’invio di moduli adattivi.
 seo-description: Questo articolo illustra i passaggi necessari per creare un profilo in Adobe Campaign Standard per l’invio di un modulo adattivo. Questo processo utilizza un meccanismo di invio personalizzato per gestire l’invio di moduli adattivi.
 uuid: f3cb7b3c-1a1c-49eb-9447-a9e52c675244
-feature: moduli adattivi, modello dati modulo
+feature: Moduli adattivi, Modello dati modulo
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 46ec4136-4898-4b01-86bb-ac638a29b242
+topic: Sviluppo
+role: Developer (Sviluppatore)
+level: Esperienza
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
