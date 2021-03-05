@@ -15,9 +15,9 @@ topic: Senza testa, gestione dei contenuti
 role: Developer (Sviluppatore)
 level: Principiante
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: db9f4d09dcc83f85c8d02d94c383fa456af88c24
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1832'
 ht-degree: 2%
 
 ---
@@ -127,11 +127,12 @@ Uno degli obiettivi di questa esercitazione è quello di mostrare come utilizzar
    $ git clone --branch tutorial/react git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Nell’IDE che preferisci, apri il file `.env.development` in `aem-guides-wknd-graphql/react-app/.env.development`. Rimuovi il commento dalla riga `REACT_APP_AUTHORIZATION` in modo che il file abbia un aspetto simile al seguente:
+1. Nell’IDE che preferisci, apri il file `.env.development` in `aem-guides-wknd-graphql/react-app/.env.development`. Verifica che la riga `REACT_APP_AUTHORIZATION` non presenti alcun commento e che il file abbia un aspetto simile al seguente:
 
    ```plain
    REACT_APP_HOST_URI=http://localhost:4502
    REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json
+   # Use Authorization when connecting to an AEM Author environment
    REACT_APP_AUTHORIZATION=admin:admin
    ```
 
@@ -139,7 +140,7 @@ Uno degli obiettivi di questa esercitazione è quello di mostrare come utilizzar
 
    >[!NOTE]
    >
-   > In uno scenario di produzione, l&#39;app si connetterà a un ambiente AEM **Publish**. Questa sezione viene descritta più dettagliatamente, più avanti nell’esercitazione.
+   > In uno scenario di produzione, l&#39;app si connetterà a un ambiente AEM **Publish**. Questo viene descritto più dettagliatamente nel capitolo [Distribuzione di produzione](production-deployment.md) .
 
 1. Passa alla cartella `aem-guides-wknd-graphql/react-app` . Installa e avvia l&#39;app:
 
