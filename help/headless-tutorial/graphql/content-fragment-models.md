@@ -15,9 +15,9 @@ topic: Senza testa, gestione dei contenuti
 role: Developer (Sviluppatore)
 level: Principiante
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: cae6e32baa256d4c94fe317eb31cd5163cdae41f
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '1027'
 ht-degree: 1%
 
 ---
@@ -44,6 +44,10 @@ Si tratta di un tutorial in più parti e si presume che i passaggi descritti in 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
 Il video precedente offre una panoramica di alto livello sull’utilizzo dei modelli di frammenti di contenuto.
+
+>[!CAUTION]
+>
+> Il video precedente mostra la creazione del modello **Collaboratore** con il nome `Contributors`. Quando esegui i passaggi nel tuo ambiente, accertati che il titolo utilizzi il singolo modulo: `Contributor` senza **s**. La denominazione del modello per frammenti di contenuto determina le chiamate API GraphQL che verranno eseguite in seguito nell’esercitazione.
 
 ## Ispezionare il modello di frammento di contenuto avventura
 
