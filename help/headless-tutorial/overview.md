@@ -6,10 +6,10 @@ topic: Senza testa, gestione dei contenuti
 role: Developer (Sviluppatore)
 level: Principiante
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: db9f4d09dcc83f85c8d02d94c383fa456af88c24
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 4%
+source-wordcount: '438'
+ht-degree: 5%
 
 ---
 
@@ -19,11 +19,6 @@ ht-degree: 4%
 Adobe Experience Manager offre diverse opzioni per definire endpoint headless e distribuire il relativo contenuto come JSON. Utilizza i tutorial pratici per scoprire come utilizzare le varie opzioni e scegliere ciò che fa per te.
 
 ## Esercitazione sulle API di AEM GraphQL
-
->[!CAUTION]
->
-> L’API GraphQL di AEM per la distribuzione di frammenti di contenuto è disponibile su richiesta.
-> Contatta il supporto Adobe per abilitare l’API per il tuo programma AEM as a Cloud Service.
 
 API GraphQL di AEM per frammenti di contenuto
 supporta scenari CMS headless in cui le applicazioni client esterne eseguono il rendering delle esperienze utilizzando contenuti gestiti in AEM.
