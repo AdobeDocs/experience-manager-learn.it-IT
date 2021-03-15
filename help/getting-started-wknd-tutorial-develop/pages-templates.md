@@ -1,7 +1,7 @@
 ---
-title: Guida introduttiva di AEM Sites - Pagine e modelli
-seo-title: Guida introduttiva di AEM Sites - Pagine e modelli
-description: Scopri la relazione tra un componente della pagina di base e modelli modificabili. Scopri in che modo i componenti core vengono trasmessi in modo approssimativo al progetto e apprendi configurazioni di policy avanzate di modelli modificabili per creare un modello Pagina articoli ben strutturato basato su una simulazione di Adobe XD.
+title: Guida introduttiva ad AEM Sites - Pagine e modelli
+seo-title: Guida introduttiva ad AEM Sites - Pagine e modelli
+description: Scopri la relazione tra un componente della pagina di base e modelli modificabili. Scopri in che modo i componenti core vengono associati al progetto e apprendi configurazioni di policy avanzate di modelli modificabili per creare un modello Pagina articoli ben strutturato basato su una simulazione di Adobe XD.
 sub-product: sites
 feature: Componenti core, modelli modificabili
 topics: development
@@ -16,9 +16,9 @@ topic: Gestione dei contenuti, sviluppo
 role: Developer (Sviluppatore)
 level: Principiante
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b5b43ae8231bf23e0c53777b1e9c16bcc3fc188a
 workflow-type: tm+mt
-source-wordcount: '3083'
+source-wordcount: '3106'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ Controlla il codice della riga di base su cui si basa l&#39;esercitazione:
    $ git checkout tutorial/pages-templates-start
    ```
 
-1. Distribuisci la base di codice in un’istanza AEM locale utilizzando le tue competenze Maven:
+1. Distribuisci la base di codice in un&#39;istanza AEM locale utilizzando le tue competenze Maven:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -65,7 +65,7 @@ Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/a
 
 ## Obiettivo
 
-1. Ispeziona una progettazione di pagina creata in Adobe XD e mappala ai componenti core.
+1. Inspect è una progettazione di pagina creata in Adobe XD e la associa a Componenti core.
 1. Comprendi i dettagli dei modelli modificabili e come possono essere utilizzati i criteri per applicare il controllo granulare del contenuto della pagina.
 1. Scopri come i modelli e le pagine sono collegati
 
@@ -77,11 +77,15 @@ In questa parte dell’esercitazione verrà creato un nuovo modello Pagina artic
 
 ## Pianificazione dell’interfaccia utente con Adobe XD {#adobexd}
 
-Nella maggior parte dei casi, la pianificazione di un nuovo sito web inizia con modelli e progetti statici. [Adobe ](https://www.adobe.com/products/xd.html) XD è uno strumento di progettazione che crea esperienze utente. Ora esamineremo un kit di interfaccia utente e i modelli per pianificare la struttura del modello di pagina dell’articolo.
+Nella maggior parte dei casi, la pianificazione di un nuovo sito web inizia con modelli e progetti statici. [Adobe ](https://www.adobe.com/products/xd.html) XDè uno strumento di progettazione che crea esperienze utente. Ora esamineremo un kit di interfaccia utente e i modelli per pianificare la struttura del modello di pagina dell’articolo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30214/?quality=12&learn=on)
 
 **Scarica il file di progettazione dell’articolo  [WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)**.
+
+>[!NOTE]
+>
+> È disponibile anche un [AEM kit interfaccia utente per componenti core ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) generico come punto di partenza per i progetti personalizzati.
 
 ## Creare il modello di pagina dell’articolo
 
@@ -93,7 +97,7 @@ Ci sono 3 aree principali di [Modelli modificabili](https://experienceleague.ado
 1. **Contenuto iniziale** : definisce i componenti con cui inizierà il modello, che possono essere modificati e/o eliminati dagli autori di contenuti
 1. **Criteri** : definisce le configurazioni in base al comportamento dei componenti e alle opzioni disponibili per gli autori.
 
-Quindi, crea un nuovo modello in AEM che corrisponda alla struttura dei modelli. Questo si verificherà in un’istanza locale di AEM. Segui i passaggi del video seguente:
+Quindi, crea un nuovo modello in AEM che corrisponda alla struttura dei modelli. Questo si verificherà in un&#39;istanza locale di AEM. Segui i passaggi del video seguente:
 
 >[!VIDEO](https://video.tv.adobe.com/v/330991/?quality=12&learn=on)
 
@@ -161,7 +165,7 @@ Passaggi di alto livello per il video seguente:
 
 Una pratica comune durante la creazione di contenuto globale, ad esempio intestazione o piè di pagina, consiste nell’utilizzare un [Frammento esperienza](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Frammenti esperienza consente agli utenti di combinare più componenti per creare un singolo componente utilizzabile come riferimento. I frammenti esperienza hanno il vantaggio di supportare la gestione multisito e la [localizzazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
 
-AEM Project Archetype ha generato un’intestazione e un piè di pagina. Quindi, aggiorna i frammenti esperienza in modo che corrispondano ai pattern. Segui i passaggi del video seguente:
+L’Archetipo di progetto AEM ha generato un’intestazione e un piè di pagina. Quindi, aggiorna i frammenti esperienza in modo che corrispondano ai pattern. Segui i passaggi del video seguente:
 
 >[!VIDEO](https://video.tv.adobe.com/v/330992/?quality=12&learn=on)
 
@@ -233,7 +237,7 @@ Passaggi di alto livello per il video seguente:
    * Imposta **Pagina padre** su `/content/wknd/us/en/magazine`.
    * In **Impostazioni elemento** controlla **Collega elementi** e controlla **Mostra data**.
 
-## Ispezionare la struttura del nodo {#node-structure}
+## Inspect la struttura del nodo {#node-structure}
 
 A questo punto la pagina dell&#39;articolo è chiaramente senza stile. Tuttavia, la struttura di base è in atto. Quindi, controlla la struttura del nodo della pagina dell’articolo per acquisire una migliore comprensione del ruolo del modello, della pagina e dei componenti.
 
@@ -247,7 +251,7 @@ Utilizza lo strumento CRXDE-Lite su un&#39;istanza AEM locale per visualizzare l
 
    Osserva il valore per `cq:template`, che punta a `/conf/wknd/settings/wcm/templates/article-page`, il Modello pagina articolo creato in precedenza.
 
-   Osserva anche il valore di `sling:resourceType`, che punta a `wknd/components/page`. Si tratta del componente pagina creato dall’archetipo del progetto AEM ed è responsabile del rendering della pagina in base al modello.
+   Osserva anche il valore di `sling:resourceType`, che punta a `wknd/components/page`. Si tratta del componente pagina creato dall’archetipo di progetto AEM ed è responsabile del rendering della pagina in base al modello.
 
 1. Espandi il nodo `jcr:content` sotto `/content/wknd/us/en/magazine/guide-la-skateparks/jcr:content` e visualizza la gerarchia dei nodi:
 
@@ -263,13 +267,13 @@ Utilizza lo strumento CRXDE-Lite su un&#39;istanza AEM locale per visualizzare l
 
    La proprietà `sling:resourceSuperType` punta a `core/wcm/components/page/v2/page`. Questa proprietà consente al componente pagina del WKND di ereditare **all** della funzionalità del componente pagina del componente core. Questo è il primo esempio di un elemento chiamato [Pattern componente proxy](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Ulteriori informazioni sono disponibili [qui.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html).
 
-1. Ispeziona un altro componente all’interno dei componenti WKND, il componente `Breadcrumb` che si trova in: `/apps/wknd/components/breadcrumb`. La stessa proprietà `sling:resourceSuperType` può essere trovata, ma questa volta punta a `core/wcm/components/breadcrumb/v2/breadcrumb`. Questo è un altro esempio di utilizzo del pattern del componente Proxy per includere un componente core. Infatti, tutti i componenti della base di codice WKND sono proxy dei componenti core di AEM (ad eccezione del nostro famoso componente HelloWorld). È consigliabile provare a riutilizzare tutte le funzionalità dei componenti core il più possibile *prima* di scrivere codice personalizzato.
+1. Inspect è un altro componente all’interno dei componenti WKND, il componente `Breadcrumb` che si trova in: `/apps/wknd/components/breadcrumb`. La stessa proprietà `sling:resourceSuperType` può essere trovata, ma questa volta punta a `core/wcm/components/breadcrumb/v2/breadcrumb`. Questo è un altro esempio di utilizzo del pattern del componente Proxy per includere un componente core. Infatti, tutti i componenti della base di codice WKND sono proxy dei componenti core AEM (ad eccezione del nostro famoso componente HelloWorld). È consigliabile provare a riutilizzare tutte le funzionalità dei componenti core il più possibile *prima* di scrivere codice personalizzato.
 
 1. Quindi controlla la pagina dei componenti core in `/libs/core/wcm/components/page/v2/page` utilizzando CRXDE Lite:
 
    >[!NOTE]
    >
-   > In AEM 6.5/6.4 i componenti core si trovano in `/apps/core/wcm/components`. In AEM as a Cloud Service, i componenti core si trovano in `/libs` e vengono aggiornati automaticamente.
+   > In AEM 6.5/6.4, i componenti core si trovano in `/apps/core/wcm/components`. In AEM come Cloud Service, i componenti core si trovano in `/libs` e vengono aggiornati automaticamente.
 
    ![Pagina dei componenti core](assets/pages-templates/core-page-component-properties.png)
 
@@ -313,21 +317,21 @@ Utilizza lo strumento CRXDE-Lite su un&#39;istanza AEM locale per visualizzare l
 
    Per ulteriori informazioni sui fattori del modello modificabile nel rendering della pagina di [contenuto, leggi questo articolo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html).
 
-1. Ispeziona l’altro componente core, come la Breadcrumb in `/libs/core/wcm/components/breadcrumb/v2/breadcrumb`. Visualizzare lo script `breadcrumb.html` per comprendere in che modo viene generato il markup per il componente Breadcrumb.
+1. Inspect è l’altro componente core, come Breadcrumb in `/libs/core/wcm/components/breadcrumb/v2/breadcrumb`. Visualizzare lo script `breadcrumb.html` per comprendere in che modo viene generato il markup per il componente Breadcrumb.
 
 ## Salvataggio delle configurazioni nel controllo del codice sorgente {#configuration-persistence}
 
-In molti casi, specialmente all’inizio di un progetto AEM, è utile mantenere le configurazioni, come modelli e relativi criteri dei contenuti, al controllo del codice sorgente. In questo modo tutti gli sviluppatori lavorano con lo stesso set di contenuti e configurazioni e possono garantire un’ulteriore coerenza tra gli ambienti. Quando un progetto raggiunge un certo livello di maturità, la gestione dei modelli può essere affidata a un gruppo speciale di utenti.
+In molti casi, specialmente all’inizio di un progetto AEM, è utile mantenere le configurazioni, come i modelli e i relativi criteri dei contenuti, al controllo del codice sorgente. In questo modo tutti gli sviluppatori lavorano con lo stesso set di contenuti e configurazioni e possono garantire un’ulteriore coerenza tra gli ambienti. Quando un progetto raggiunge un certo livello di maturità, la gestione dei modelli può essere affidata a un gruppo speciale di utenti.
 
 Per il momento i modelli verranno trattati come altri pezzi di codice e sincronizzeremo il **Modello pagina articolo** verso il basso come parte del progetto. Finora abbiamo **inviato** il codice dal nostro progetto AEM a un&#39;istanza locale di AEM. Il **Modello pagina articolo** è stato creato direttamente su un&#39;istanza locale di AEM, quindi dobbiamo **importare** il modello nel nostro progetto AEM. Il modulo **ui.content** è incluso nel progetto AEM per questo scopo specifico.
 
-I passaggi successivi si svolgeranno utilizzando l’IDE VSCode utilizzando il plug-in [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync&amp;ssr=false#overview) , ma potrebbero essere eseguiti utilizzando qualsiasi IDE configurato per **importare** o importare contenuti da un’istanza locale di AEM.
+I passaggi successivi si svolgeranno utilizzando l’IDE VSCode utilizzando il plug-in [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync&amp;ssr=false#overview) ma potrebbe essere in esecuzione utilizzando qualsiasi IDE configurato per **importare** o importare contenuto da un’istanza locale di AEM.
 
 1. In VSCode apri il progetto `aem-guides-wknd` .
 
 1. Espandi il modulo **ui.content** in Project explorer. Espandi la cartella `src` e passa a `/conf/wknd/settings/wcm/templates`.
 
-1. [!UICONTROL Fai clic con il pulsante destro ] del mouse sulla  `templates` cartella e seleziona  **Importa da AEM Server**:
+1. [!UICONTROL Fai clic con ] il pulsante destro del mouse sulla  `templates` cartella e seleziona  **Importa da AEM server**:
 
    ![Modello di importazione VSCode](assets/pages-templates/vscode-import-templates.png)
 
@@ -339,7 +343,7 @@ I passaggi successivi si svolgeranno utilizzando l’IDE VSCode utilizzando il p
 
    ![Criteri di importazione VSCode](assets/pages-templates/policies-article-page-template.png)
 
-1. Ispeziona il file `filter.xml` che si trova in `ui.content/src/main/content/META-INF/vault/filter.xml`.
+1. Inspect il file `filter.xml` che si trova in `ui.content/src/main/content/META-INF/vault/filter.xml`.
 
    ```xml
    <!--ui.content filter.xml-->
