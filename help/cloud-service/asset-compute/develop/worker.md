@@ -1,7 +1,7 @@
 ---
-title: Sviluppare un processo di lavoro Asset Compute
-description: I processi di lavoro di Asset Compute sono il nucleo di un progetto Asset Compute e forniscono funzionalità personalizzate che consentono di eseguire o orchestrare il lavoro svolto su una risorsa per creare una nuova rappresentazione.
-feature: Microservizi Asset Compute
+title: Sviluppare un processo di lavoro Asset compute
+description: I processi di lavoro di Asset compute costituiscono il nucleo di un progetto di Asset compute, in quanto forniscono funzionalità personalizzate che eseguono o orchestrano il lavoro eseguito su una risorsa per creare un nuovo rendering.
+feature: Microservizi di Asset compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -13,7 +13,7 @@ topic: Integrazioni, Sviluppo
 role: Developer (Sviluppatore)
 level: Intermedio, esperienza
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 1e5d8171832ec6b26969a8485ae970e295962828
 workflow-type: tm+mt
 source-wordcount: '1429'
 ht-degree: 0%
@@ -21,36 +21,36 @@ ht-degree: 0%
 ---
 
 
-# Sviluppare un processo di lavoro Asset Compute
+# Sviluppare un processo di lavoro Asset compute
 
-I processi di lavoro di Asset Compute sono il nucleo di un progetto Asset Compute e forniscono funzionalità personalizzate che consentono di eseguire o orchestrare il lavoro svolto su una risorsa per creare una nuova rappresentazione.
+I processi di lavoro di Asset compute costituiscono il nucleo di un progetto di Asset compute in quanto forniscono funzionalità personalizzate che eseguono o orchestrano il lavoro eseguito su una risorsa per creare un nuovo rendering.
 
-Il progetto Asset Compute genera automaticamente un processo di lavoro semplice che copia il binario originale della risorsa in un rendering denominato, senza alcuna trasformazione. In questa esercitazione modificheremo questo processo di lavoro per creare una rappresentazione più interessante, per illustrare la potenza dei processi di lavoro Asset Compute.
+Il progetto di Asset compute genera automaticamente un processo di lavoro semplice che copia il binario originale della risorsa in un rendering denominato, senza alcuna trasformazione. In questa esercitazione modificheremo questo processo di lavoro per creare una rappresentazione più interessante, per illustrare il potere dei lavoratori Asset compute.
 
-Verrà creato un processo di lavoro Asset Compute che genera un nuovo rendering orizzontale dell’immagine, che copre lo spazio vuoto a sinistra e a destra del rendering della risorsa con una versione sfocata della risorsa. La larghezza, l&#39;altezza e la sfocatura del rendering finale saranno parametrizzate.
+Verrà creato un processo di lavoro di Asset compute che genera un nuovo rendering orizzontale dell’immagine, che copre lo spazio vuoto a sinistra e a destra del rendering della risorsa con una versione sfocata della risorsa. La larghezza, l&#39;altezza e la sfocatura del rendering finale saranno parametrizzate.
 
-## Flusso logico della chiamata di un processo di lavoro Asset Compute
+## Flusso logico della chiamata di un processo di lavoro di Asset compute
 
-I processi di lavoro di Asset Compute implementano il contratto API di lavoro Asset Compute SDK, nella funzione `renditionCallback(...)` , che è concettualmente:
+I dipendenti di Asset compute implementano il contratto Asset compute SDK worker API nella funzione `renditionCallback(...)` , che è concettualmente:
 
 + __Input:__ Parametri binari e del profilo di elaborazione originali di una risorsa AEM
 + __Output:__ uno o più rendering da aggiungere alla risorsa AEM
 
-![Flusso logico del processo di lavoro Asset Compute](./assets/worker/logical-flow.png)
+![Flusso logico del processo di lavoro di Asset compute](./assets/worker/logical-flow.png)
 
-1. Il servizio Author di AEM richiama il processo di lavoro Asset Compute, fornendo il __(1a)__ binario originale (`source` parametro) e __(1b)__ eventuali parametri definiti nel profilo di elaborazione (`rendition.instructions` parametro).
-1. L’SDK di Asset Compute orchestra l’esecuzione della funzione `renditionCallback(...)` del processo di lavoro per metadati Asset Compute personalizzato, generando un nuovo rendering binario basato sul binario originale della risorsa __(1a)__ e su eventuali parametri __(1b)__.
+1. Il servizio Author di AEM richiama il processo di lavoro Asset compute, fornendo il __(1a)__ binario originale (`source` parametro) e __(1b)__ eventuali parametri definiti nel profilo di elaborazione (`rendition.instructions` parametro).
+1. L’SDK di Asset compute orchestra l’esecuzione della funzione `renditionCallback(...)` del processo di lavoro per metadati di Asset compute personalizzati, generando un nuovo rendering binario basato sul binario originale __(1a)__ della risorsa e su eventuali parametri __(1b)__.
 
    + In questa esercitazione il rendering viene creato &quot;in process&quot;, ovvero il processo di lavoro compone il rendering, tuttavia il binario di origine può essere inviato ad altre API di servizi Web per la generazione del rendering.
 
-1. Il processo di lavoro Asset Compute salva i dati binari del nuovo rendering in `rendition.path`.
-1. I dati binari scritti in `rendition.path` vengono trasportati tramite Asset Compute SDK ad AEM Author Service ed esposti come __(4a)__ una rappresentazione testuale e __(4b)__ persistono nel nodo di metadati della risorsa.
+1. Il processo di lavoro Asset compute salva i dati binari del nuovo rendering in `rendition.path`.
+1. I dati binari scritti in `rendition.path` vengono trasportati tramite l’SDK di Asset compute ad AEM Author Service ed esposti come __(4a)__ una rappresentazione testuale e __(4b)__ persistono nel nodo di metadati della risorsa.
 
-Il diagramma riportato sopra descrive i problemi e il flusso logico rivolti agli sviluppatori di Asset Compute alla chiamata del processo di lavoro di Asset Compute. Per i curiosi, sono disponibili i [dettagli interni dell’esecuzione di Asset Compute](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) , ma solo i contratti API pubblici Asset Compute SDK possono essere dipendenti.
+Il diagramma riportato sopra descrive le preoccupazioni rivolte agli sviluppatori di Asset compute e il flusso logico verso la chiamata del lavoratore Asset compute. Per i curiosi, sono disponibili i [dettagli interni dell&#39;esecuzione degli Asset compute](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html), ma solo i contratti API SDK per Asset compute pubblici possono essere dipendenti.
 
 ## Anatomia di un lavoratore
 
-Tutti i processi di lavoro Asset Compute seguono la stessa struttura di base e lo stesso contratto di input/output.
+Tutti i lavoratori Asset compute seguono la stessa struttura di base e lo stesso contratto di input/output.
 
 ```javascript
 'use strict';
@@ -105,7 +105,7 @@ function customHelperFunctions() { ... }
 
 ![Index.js generato automaticamente](./assets/worker/autogenerated-index-js.png)
 
-1. Assicurati che il progetto Asset Compute sia aperto in Codice VS
+1. Assicurati che il progetto di Asset compute sia aperto nel codice VS
 1. Passa alla cartella `/actions/worker`
 1. Apri il file `index.js`
 
@@ -113,15 +113,15 @@ Questo è il file JavaScript di lavoro che modificheremo in questa esercitazione
 
 ## Installare e importare i moduli di supporto npm
 
-Essendo basati su Node.js, i progetti Asset Compute beneficiano del robusto ecosistema del modulo npm ](https://npmjs.com). [ Per sfruttare i moduli npm, dobbiamo prima installarli nel nostro progetto Asset Compute.
+Essendo basati su Node.js, i progetti di Asset compute beneficiano del robusto ecosistema del modulo [npm](https://npmjs.com). Per sfruttare i moduli npm, dobbiamo prima installarli nel nostro progetto Asset compute.
 
 In questo processo di lavoro, sfruttiamo [jimp](https://www.npmjs.com/package/jimp) per creare e manipolare l&#39;immagine di rendering direttamente nel codice Node.js.
 
 >[!WARNING]
 >
->Non tutti i moduli npm per la manipolazione delle risorse sono supportati da Asset Compute. I moduli npm che si basano sull&#39;esistenza di applicazioni come ImageMagick o altre librerie dipendenti dal sistema operativo non sono supportati. È consigliabile limitare l’utilizzo di moduli npm solo JavaScript.
+>Non tutti i moduli npm per la manipolazione delle risorse sono supportati da Asset compute. I moduli npm che si basano sull&#39;esistenza di applicazioni come ImageMagick o altre librerie dipendenti dal sistema operativo non sono supportati. È consigliabile limitare l’utilizzo di moduli npm solo JavaScript.
 
-1. Apri la riga di comando nella directory principale del progetto Asset Compute (questa operazione può essere eseguita in Codice VS tramite __Terminal > Nuovo terminale__) ed esegui il comando:
+1. Apri la riga di comando nella directory principale del progetto di Asset compute (questo può essere fatto in Codice VS tramite __Terminal > Nuovo terminale__) ed esegui il comando:
 
    ```
    $ npm install jimp
@@ -133,7 +133,7 @@ Aggiorna le direttive `require` nella parte superiore del processo `index.js` pe
    ```javascript
    'use strict';
    
-   const { Jimp } = require('jimp');
+   const Jimp = require('jimp');
    const { worker, SourceCorruptError } = require('@adobe/asset-compute-sdk');
    const fs = require('fs').promises;
    
@@ -150,16 +150,16 @@ Aggiorna le direttive `require` nella parte superiore del processo `index.js` pe
 
 ## Parametri di lettura
 
-I processi di lavoro di Asset Compute possono leggere i parametri che possono essere trasmessi tramite Profili di elaborazione definiti in AEM as a Cloud Service Author. I parametri vengono passati nel processo di lavoro tramite l&#39;oggetto `rendition.instructions` .
+I processi di lavoro di Asset compute possono leggere i parametri che possono essere trasmessi tramite Profili di elaborazione definiti in AEM come servizio di authoring di Cloud Service. I parametri vengono passati nel processo di lavoro tramite l&#39;oggetto `rendition.instructions` .
 
 Per leggere questi dati, accedi a `rendition.instructions.<parameterName>` nel codice del processo di lavoro.
 
-Qui si trovano i valori predefiniti `SIZE`, `BRIGHTNESS` e `CONTRAST` del rendering configurabile, se non sono stati forniti tramite il profilo di elaborazione. Tieni presente che `renditions.instructions` vengono passati come stringhe quando vengono richiamati da Profili elaborazione di AEM as a Cloud Service, in modo che vengano trasformati nei tipi di dati corretti nel codice del processo di lavoro.
+Qui si trovano i valori predefiniti `SIZE`, `BRIGHTNESS` e `CONTRAST` del rendering configurabile, se non sono stati forniti tramite il profilo di elaborazione. Tieni presente che `renditions.instructions` vengono passati come stringhe quando vengono richiamati da AEM come profili di elaborazione del Cloud Service, in modo che vengano trasformati nei tipi di dati corretti nel codice del processo di lavoro.
 
 ```javascript
 'use strict';
 
-const { Jimp } = require('jimp');
+const Jimp = require('jimp');
 const { worker, SourceCorruptError } = require('@adobe/asset-compute-sdk');
 const fs = require('fs').promises;
 
@@ -181,7 +181,7 @@ exports.main = worker(async (source, rendition, params) => {
 
 ## Errori di proiezione{#errors}
 
-I processi di lavoro di Asset Compute possono incontrare situazioni che generano errori. L’SDK di Adobe Asset Compute fornisce [una suite di errori predefiniti](https://github.com/adobe/asset-compute-commons#asset-compute-errors) che possono essere lanciati quando si verificano tali situazioni. Se non si applica un tipo di errore specifico, è possibile utilizzare `GenericError` oppure definire un `ClientErrors` personalizzato specifico.
+I lavoratori Asset compute possono trovarsi in situazioni che generano errori. L&#39;SDK di Adobe Asset compute fornisce [una suite di errori predefiniti](https://github.com/adobe/asset-compute-commons#asset-compute-errors) che possono essere lanciati quando si verificano tali situazioni. Se non si applica un tipo di errore specifico, è possibile utilizzare `GenericError` oppure definire un `ClientErrors` personalizzato specifico.
 
 Prima di iniziare a elaborare il rendering, controlla che tutti i parametri siano validi e supportati nel contesto di questo processo di lavoro:
 
@@ -191,7 +191,7 @@ Prima di iniziare a elaborare il rendering, controlla che tutti i parametri sian
 ```javascript
 'use strict';
 
-const { Jimp } = require('jimp');
+const Jimp = require('jimp');
 // Import the Asset Compute SDK provided `ClientError` 
 const { worker, SourceCorruptError, ClientError } = require('@adobe/asset-compute-sdk');
 const fs = require('fs').promises;
@@ -249,11 +249,11 @@ Con i parametri letti, igienizzati e convalidati, il codice viene scritto per ge
    + Regola il contrasto in base al valore del parametro `CONTRAST`
    + Regola la luminosità in base al valore del parametro `BRIGHTNESS`
 1. Posizionare il `image` trasformato al centro del `renditionImage` che ha uno sfondo trasparente
-1. Scrivi il composto `renditionImage` in `rendition.path` in modo che possa essere salvato nuovamente in AEM come rendering delle risorse.
+1. Scrivi il composto, `renditionImage` in `rendition.path` in modo che possa essere salvato nuovamente in AEM come rendering di risorse.
 
 Questo codice utilizza le [API Jimp](https://github.com/oliver-moran/jimp#jimp) per eseguire queste trasformazioni immagine.
 
-I processi di lavoro di Asset Compute devono terminare il lavoro in modo sincrono e il `rendition.path` deve essere riscritto completamente in prima del completamento del processo di lavoro `renditionCallback`. È necessario che le chiamate alle funzioni asincrone vengano effettuate in modo sincrono utilizzando l’operatore `await` . Se non conosci le funzioni asincrone di JavaScript e come eseguirle in modo sincrono, impara a conoscere l’ [operatore di attesa di JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await).
+I lavoratori Asset compute devono terminare il lavoro in modo sincrono e il `rendition.path` deve essere riscritto completamente in prima del completamento del lavoro `renditionCallback`. È necessario che le chiamate alle funzioni asincrone vengano effettuate in modo sincrono utilizzando l’operatore `await` . Se non conosci le funzioni asincrone di JavaScript e come eseguirle in modo sincrono, impara a conoscere l’ [operatore di attesa di JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await).
 
 Il lavoratore finito `index.js` deve avere l&#39;aspetto seguente:
 
@@ -270,25 +270,26 @@ exports.main = worker(async (source, rendition, params) => {
         throw new SourceCorruptError('source file is empty');
     }
 
+    // Read/parse and validate parameters
     const SIZE = parseInt(rendition.instructions.size) || 800; 
     const CONTRAST = parseFloat(rendition.instructions.contrast) || 0;
     const BRIGHTNESS = parseFloat(rendition.instructions.brightness) || 0;
 
     if (SIZE <= 10 || SIZE >= 10000) {
-        throw new RenditionInstructionsError("'size' must be between 10 and 10,000");
+        throw new RenditionInstructionsError("'size' must be between 10 and 1,0000");
     } else if (CONTRAST <= -1 || CONTRAST >= 1) {
         throw new RenditionInstructionsError("'contrast' must between -1 and 1");
     } else if (BRIGHTNESS <= -1 || BRIGHTNESS >= 1) {
         throw new RenditionInstructionsError("'brightness' must between -1 and 1");
     }
 
-    // Create target rendition image of the target size with a transparent background (0x0)
+    // Create target rendition image 
     let renditionImage =  new Jimp(SIZE, SIZE, 0x0);
 
     // Read and perform transformations on the source binary image
     let image = await Jimp.read(source.path);
 
-    // Crop a circle from the source asset, and then apply contrast and brightness using Jimp
+    // Crop a circle from the source asset, and then apply contrast and brightness
     image.crop(
             image.bitmap.width < image.bitmap.height ? 0 : (image.bitmap.width - image.bitmap.height) / 2,
             image.bitmap.width < image.bitmap.height ? (image.bitmap.height - image.bitmap.width) / 2 : 0,
@@ -304,7 +305,7 @@ exports.main = worker(async (source, rendition, params) => {
     renditionImage.composite(image, 0, 0)
 
     // Write the final transformed image to the asset's rendition
-    renditionImage.write(rendition.path);
+    await renditionImage.writeAsync(rendition.path);
 });
 
 // Custom error used for renditions.instructions parameter checking
@@ -318,11 +319,11 @@ class RenditionInstructionsError extends ClientError {
 
 ## Esecuzione del lavoratore
 
-Ora che il codice del processo di lavoro è completo ed è stato precedentemente registrato e configurato in [manifest.yml](./manifest.md), può essere eseguito utilizzando lo strumento di sviluppo di Asset Compute per visualizzare i risultati.
+Ora che il codice del lavoratore è completo ed è stato precedentemente registrato e configurato nel [manifest.yml](./manifest.md), può essere eseguito utilizzando lo strumento di sviluppo dell&#39;Asset compute locale per vedere i risultati.
 
-1. Dalla directory principale del progetto Asset Compute
+1. Dalla directory principale del progetto Asset compute
 1. Esegui `aio app run`
-1. Attesa dell’apertura dello strumento di sviluppo di Asset Compute in una nuova finestra
+1. Attendi l&#39;apertura dello strumento di sviluppo di Asset compute in una nuova finestra
 1. In __Seleziona un file...A discesa__ , seleziona un’immagine di esempio da elaborare
    + Seleziona un file immagine di esempio da utilizzare come binario della risorsa sorgente
    + Se non è ancora presente, tocca il file __(+)__ a sinistra e carica un [immagine di esempio](../assets/samples/sample-file.jpg) e aggiorna la finestra del browser Strumenti di sviluppo
@@ -346,11 +347,11 @@ Ora che il codice del processo di lavoro è completo ed è stato precedentemente
 
 ### Esegui il processo di lavoro con i parametri
 
-I parametri passati tramite configurazioni di profilo di elaborazione possono essere simulati in Asset Compute Development Tools fornendo loro coppie chiave/valore sul parametro di rendering JSON.
+I parametri passati tramite le configurazioni del profilo di elaborazione possono essere simulati in Asset compute Development Tools fornendo loro come coppie chiave/valore sul parametro di rendering JSON.
 
 >[!WARNING]
 >
->Durante lo sviluppo locale, i valori possono essere passati utilizzando vari tipi di dati, quando passati da Profili di elaborazione di AEM as Cloud Service come stringhe, quindi assicurati che i tipi di dati corretti siano analizzati se necessario.
+>Durante lo sviluppo locale, i valori possono essere passati utilizzando vari tipi di dati, quando passati da AEM come profili di elaborazione del Cloud Service come stringhe, quindi assicurati che i tipi di dati corretti siano analizzati se necessario.
 > Ad esempio, la funzione `crop(width, height)` di Jimp richiede che i suoi parametri siano `int`. Se `parseInt(rendition.instructions.size)` non viene analizzato in un valore int, la chiamata a `jimp.crop(SIZE, SIZE)` avrà esito negativo in quanto i parametri saranno di tipo &quot;String&quot; incompatibile.
 
 Il nostro codice accetta parametri per:
