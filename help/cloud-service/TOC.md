@@ -5,10 +5,10 @@ breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: servizio cloud
 team: TM
 translation-type: tm+mt
-source-git-commit: d9799acb28dfc3c9767374798828754d5a50831f
+source-git-commit: 27f21bb9c1b905a2100a5013fe3b75760b9d6821
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 24%
+source-wordcount: '413'
+ht-degree: 22%
 
 ---
 
@@ -84,7 +84,26 @@ ht-degree: 24%
    + [Strumento Content Transfer (Trasferimento contenuti) ](./migration/content-transfer-tool.md)
    + [Importazione in blocco delle risorse](./migration/bulk-import.md)
 + Forms{#forms}
-   + [Integrare con Salesforce]{#integrate-with-salesforce}
+   + Crea modulo adattivo{#create-first-af}
+      + [Crea tema](./forms/create-first-af/create-theme.md)
+      + [Crea modello](./forms/create-first-af/create-template.md)
+      + [Crea frammento](./forms/create-first-af/create-fragments.md)
+      + [Crea modulo](./forms/create-first-af/create-af.md)
+      + [Configurare il pannello principale](./forms/create-first-af/configure-root-panel.md)
+      + [Pannello Persone](./forms/create-first-af/configure-people-panel.md)
+      + [Configurare il pannello dei redditi](./forms/create-first-af/configure-income-panel.md)
+      + [Pannello delle risorse](./forms/create-first-af/configure-assets-panel.md)
+      + [Configurare il pannello iniziale](./forms/create-first-af/configure-start-panel.md)
+      + [Barra degli strumenti Aggiungi e Configura](./forms/create-first-af/add-configure-toolbar.md)
+   + Crea flusso di lavoro di revisione{#create-aem-workflow}
+      + [Creare un modello di flusso di lavoro](./forms/create-aem-workflow/create-workflow.md)
+      + [Flusso di lavoro di attivazione](./forms/create-aem-workflow/configure-af.md)
+   + Adobe Sign con AEM Forms{forms-and-sign}
+      + [Applicazione API Adobe Sign](./forms/forms-and-sign/create-sign-api-application.md)
+      + [Configurazione Adobe Sign Cloud](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
+      + [Creare un modulo adattivo](./forms/forms-and-sign/create-adaptive-form.md)
+      + [Configura per il riempimento e la firma](./forms/forms-and-sign/configure-form-fill-and-sign.md)
+   + Integrare con Salesforce{#integrate-with-salesforce}
       + [Introduzione](./forms/integrate-with-salesforce/introduction.md)
       + [Creare un’app connessa](./forms/integrate-with-salesforce/create-connected-app.md)
       + [Crea file swagger](./forms/integrate-with-salesforce/describe-rest-api.md)
