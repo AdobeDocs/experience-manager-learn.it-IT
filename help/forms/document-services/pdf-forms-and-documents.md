@@ -1,8 +1,7 @@
 ---
 title: Comprendere i diversi tipi di PDF forms e documenti
 description: PDF è in realtà una famiglia di formati di file, e questo articolo descrive i tipi di PDF importanti e rilevanti per gli sviluppatori di moduli.
-solution: Experience Manager Forms
-product: aem
+solution: Experience Manager, Experience Manager Forms
 type: Documentazione
 role: Developer (Sviluppatore)
 level: Principiante,Intermedio
@@ -11,7 +10,7 @@ feature: Servizi documentali
 kt: 7071
 topic: Sviluppo
 translation-type: tm+mt
-source-git-commit: d9799acb28dfc3c9767374798828754d5a50831f
+source-git-commit: 1b4512fdb047bec15d72a8278fd0ce5dfafa309f
 workflow-type: tm+mt
 source-wordcount: '1700'
 ht-degree: 0%
