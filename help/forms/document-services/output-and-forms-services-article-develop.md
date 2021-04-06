@@ -1,8 +1,8 @@
 ---
 title: Sviluppo con output e servizi Forms in AEM Forms
 seo-title: Sviluppo con output e servizi Forms in AEM Forms
-description: Utilizzo dell’API del servizio Output e Forms in AEM Forms
-seo-description: Utilizzo dell’API del servizio Output e Forms in AEM Forms
+description: Utilizzo dell’API di output e del servizio Forms in AEM Forms
+seo-description: Utilizzo dell’API di output e del servizio Forms in AEM Forms
 uuid: be018eb5-dbe7-4101-a1a9-bee11ac97273
 feature: Servizio di output
 topics: development
@@ -15,9 +15,9 @@ topic: Sviluppo
 role: Developer (Sviluppatore)
 level: Intermedio
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 67be45dbd72a8af8b9ab60452ff15081c6f9f192
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -25,14 +25,13 @@ ht-degree: 0%
 
 # Sviluppo con output e servizi Forms in AEM Forms{#developing-with-output-and-forms-services-in-aem-forms}
 
-Utilizzo dell’API del servizio Output e Forms in AEM Forms
+Utilizzo dell’API di output e del servizio Forms in AEM Forms
 
 In questo articolo daremo un&#39;occhiata a quanto segue
 
-* Servizio di output: in genere questo servizio viene utilizzato per unire dati xml con modello xdp o pdf per generare pdf appiattiti
-* FormsService - Si tratta di un servizio molto versatile che consente di esportare/importare dati da e in file PDF
+* Servizio di output: in genere questo servizio viene utilizzato per unire dati xml con modello xdp o pdf per generare pdf appiattiti. Per ulteriori dettagli, fare riferimento a [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) per il servizio Output.
+* FormsService - Si tratta di un servizio molto versatile che consente di esportare/importare dati da e in file PDF. Per ulteriori informazioni, consulta [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/forms/api/class-use/FormsService.html) per il servizio Forms.
 
-Javadoc ufficiale per l&#39;API di AEM Forms è elencato [qui](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 
 Il seguente frammento di codice esporta i dati dal file PDF
 
@@ -60,28 +59,28 @@ La riga 6 esporta i dati xml dal file PDF
 
 
 
-**Dopo aver installato il pacchetto, dovrai inserire i seguenti URL nel filtro CSRF di Adobe Granite.**
+**Dopo aver installato il pacchetto dovrai inserire nell&#39;elenco Consentiti i seguenti URL in Adobe Granite CSRF Filter.**
 
-1. Segui i passaggi indicati di seguito per inserire i percorsi sopra indicati.
+1. Segui i passaggi indicati di seguito per inserire nell&#39;elenco Consentiti i percorsi sopra menzionati.
 1. [Accedi a configMgr](http://localhost:4502/system/console/configMgr)
-1. Ricerca filtro CSRF di Adobe Granite
+1. Ricerca filtro CSRF Granite Adobe
 1. Aggiungi i seguenti 3 percorsi nelle sezioni escluse e salva
 1. /content/AemFormsSamples/mergedata
 1. /content/AemFormsSamples/exportdata
 1. /content/AemFormsSamples/outputservice
 1. Cerca &quot;filtro Sling Referrer&quot;
 1. Selezionare la casella di controllo &quot;Consenti vuoto&quot;. (Questa impostazione deve essere utilizzata solo a scopo di test)
-Esistono diversi modi per testare il codice di esempio. La più rapida e semplice è quella di utilizzare l’app Postman. Postman ti consente di effettuare richieste POST al tuo server. Installa l&#39;app Postman sul tuo sistema.
+Esistono diversi modi per testare il codice di esempio. La più rapida e semplice è quella di utilizzare l’app Postman. Postman ti consente di effettuare richieste POST al server. Installa l&#39;app Postman sul tuo sistema.
 Avvia l’app e immetti il seguente URL per testare l’API dei dati di esportazione
 
-Accertati di aver selezionato &quot;POST&quot; dall&#39;elenco a discesa
+Accertati di aver selezionato &quot;POST&quot; dall’elenco a discesa
 http://localhost:4502/content/AemFormsSamples/exportdata.html
-Assicurati di specificare &quot;Autorizzazione&quot; come &quot;Autenticazione di base&quot;. Specifica il nome utente e la password del server AEM
+Assicurati di specificare &quot;Autorizzazione&quot; come &quot;Autenticazione di base&quot;. Specificare il nome utente e la password del server AEM
 Passa alla scheda &quot;Corpo&quot; e specifica i parametri della richiesta come mostrato nell’immagine seguente
 ![esportazione](assets/postexport.png)
 Quindi fai clic sul pulsante Invia
 
-Il pacchetto contiene 3 campioni. Nei paragrafi seguenti viene spiegato quando utilizzare il servizio di output o il servizio Forms, l’url del servizio , i parametri di input previsti da ogni servizio
+Il pacchetto contiene 3 campioni. Nei paragrafi seguenti viene spiegato quando utilizzare il servizio di output o Forms Service, l’url del servizio , i parametri di input previsti da ogni servizio
 
 **Unisci dati e appiattisci output:**
 
@@ -95,7 +94,7 @@ Il pacchetto contiene 3 campioni. Nei paragrafi seguenti viene spiegato quando u
 
 **Importa dati in file PDF:**
 * Utilizzare FormsService per importare dati in file PDF
-* **URL POST**  - http://localhost:4502/content/AemFormsSamples/mergedata.html
+* **URL**  POST: http://localhost:4502/content/AemFormsSamples/mergedata.html
 * **Parametri di richiesta:**
 
    * pdffile : File pdf con cui si desidera unire i dati
