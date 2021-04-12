@@ -5,9 +5,9 @@ breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: servizio cloud
 team: TM
 translation-type: tm+mt
-source-git-commit: 5d567c3ed2275e50065aa1ad1576b0d621a3895b
+source-git-commit: cb4f678be79ad39110cc199b8c66349f311a431d
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '413'
 ht-degree: 22%
 
 ---
@@ -85,6 +85,7 @@ ht-degree: 22%
    + [Importazione in blocco delle risorse](./migration/bulk-import.md)
 + Forms{#forms}
    + Crea modulo adattivo{#create-first-af}
+      + [Introduzione](./forms/create-first-af/introduction.md)
       + [Crea tema](./forms/create-first-af/create-theme.md)
       + [Crea modello](./forms/create-first-af/create-template.md)
       + [Crea frammento](./forms/create-first-af/create-fragments.md)
