@@ -1,7 +1,7 @@
 ---
 title: Personalizzare Adobe Client Data Layer con i componenti AEM
 description: Scopri come personalizzare Adobe Client Data Layer con il contenuto dei componenti AEM personalizzati. Scopri come utilizzare le API fornite dai componenti core di AEM per estendere e personalizzare il livello dati.
-feature: Adobe Client Data Layer, componente core
+feature: Adobe Client Data Layer, Core Component
 topics: integrations
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: use
 version: cloud-service
 kt: 6265
 thumbnail: KT-6265.jpg
-topic: Integrations (Integrazioni)
-role: Developer (Sviluppatore)
-level: Intermedio, esperienza
+topic: Integrations
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,16 +1,16 @@
 ---
 title: Estrazione dati OCR
 description: Estrarre i dati dai documenti rilasciati dal governo per compilare i moduli.
-feature: Moduli a barre
+feature: Barcoded Forms
 topics: adaptive forms
 audience: developer
 doc-type: article
 activity: use
 version: 6.4,6.5
 kt: 6679
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Intermedio
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

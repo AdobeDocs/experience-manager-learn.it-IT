@@ -2,7 +2,7 @@
 title: Mappatura di componenti SPA su componenti AEM | Guida introduttiva dell’Editor SPA di AEM e React
 description: Scopri come mappare i componenti React ai componenti di Adobe Experience Manager (AEM) con l’SDK JS per AEM SPA Editor. La mappatura dei componenti consente agli utenti di effettuare aggiornamenti dinamici ai componenti SPA all’interno dell’Editor SPA di AEM, in modo simile alla tradizionale creazione di AEM.
 sub-product: sites
-feature: Editor SPA
+feature: SPA Editor
 topics: development
 version: cloud-service
 activity: develop
@@ -10,8 +10,8 @@ audience: developer
 kt: 4854
 thumbnail: 4854-spa-react.jpg
 topic: SPA
-role: Developer (Sviluppatore)
-level: Principiante
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

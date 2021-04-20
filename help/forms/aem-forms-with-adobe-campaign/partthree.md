@@ -4,16 +4,16 @@ seo-title: Precompilazione del modulo adattivo tramite il profilo ACS
 description: Precompilazione dei moduli adattivi tramite il profilo ACS
 seo-description: Precompilazione dei moduli adattivi tramite il profilo ACS
 uuid: 9bff6f61-96e9-40d4-a977-a80008cfbeee
-feature: Moduli adattivi, Modello dati modulo
+feature: Adaptive Forms, Form Data Model
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: a2ffcb84-4dd8-45e5-8e2c-0da74202851b
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Esperienza
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

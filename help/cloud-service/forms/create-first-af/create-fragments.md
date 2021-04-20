@@ -2,12 +2,12 @@
 title: Creazione di frammenti di modulo adattivi
 description: Un frammento è una parte riutilizzabile di un modulo. Ad esempio, un frammento può contenere un blocco indirizzo o note legali.
 solution: Experience Manager Forms
-type: Documentazione
-role: Developer (Sviluppatore)
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Moduli adattivi
-topic: Sviluppo
+feature: Adaptive Forms
+topic: Development
 kt: 7383
 thumbnail: 332231.jpg
 translation-type: tm+mt

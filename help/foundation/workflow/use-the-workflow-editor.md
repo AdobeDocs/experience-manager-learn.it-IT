@@ -2,10 +2,10 @@
 title: Come creare flussi di lavoro in AEM
 description: Il flusso di lavoro consente la gestione dei processi aziendali in Experience Manager e viene utilizzato per l’elaborazione automatica dei contenuti e per facilitare la governance e il processo decisionale.
 version: 6.4, 6.5, cloud-service
-feature: Flusso di lavoro
-topic: Gestione dei contenuti
-level: Intermedio
-role: Amministratore, sviluppatore
+feature: Workflow
+topic: Content Management
+level: Intermediate
+role: Administrator, Developer
 kt: 657
 thumbnail: 22201.jpg
 translation-type: tm+mt

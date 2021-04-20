@@ -1,12 +1,12 @@
 ---
 title: 'Crea un oggetto Lead nel database Salesforce sull''evento click di un pulsante '
 description: Crea come lead richiamando l’operazione post del modello dati modulo
-type: Documentazione
-role: Developer (Sviluppatore)
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Moduli adattivi
-topic: Sviluppo
+feature: Adaptive Forms
+topic: Development
 kt: 7193
 thumbnail: 331892.jpg
 translation-type: tm+mt

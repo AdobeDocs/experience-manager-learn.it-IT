@@ -2,12 +2,12 @@
 title: Creazione di un tema modulo adattivo
 description: Theme è una libreria client AEM che definisce l’aspetto del modulo adattivo.
 solution: Experience Manager Forms
-type: Documentazione
-role: Developer (Sviluppatore)
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Moduli adattivi
-topic: Sviluppo
+feature: Adaptive Forms
+topic: Development
 kt: 7386
 thumbnail: 332229.jpg
 translation-type: tm+mt

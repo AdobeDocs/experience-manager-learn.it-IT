@@ -3,15 +3,15 @@ title: Variabili nel flusso di lavoro AEM[Parte5]
 seo-title: Variabili nel flusso di lavoro AEM[Parte5]
 description: Utilizzo di variabili di tipo xml,json,arraylist,document nel flusso di lavoro aem
 seo-description: Utilizzo di variabili di tipo xml,json,arraylist,document nel flusso di lavoro aem
-feature: Flusso di lavoro
+feature: Workflow
 topics: development
 audience: developer
 doc-type: technical video
 activity: understand
 version: 6.5
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

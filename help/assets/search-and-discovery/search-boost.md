@@ -1,10 +1,10 @@
 ---
 title: Cos'è Search Boost in  AEM Assets?
 description: Scopri come aggiungere parole chiave e frasi per migliorare la rilevanza della ricerca di una risorsa in Adobe Experience Manager.
-topic: Gestione dei contenuti
-feature: Ricerca
-role: Professionista
-level: Intermedio
+topic: Content Management
+feature: Search
+role: Business Practitioner
+level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 103
 thumbnail: 16766.jpg

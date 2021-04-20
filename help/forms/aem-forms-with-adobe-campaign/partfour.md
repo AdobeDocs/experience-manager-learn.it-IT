@@ -4,16 +4,16 @@ seo-title: Creare un profilo di campagna utilizzando il modello dati del modulo
 description: Passaggi relativi alla creazione del profilo Adobe Campaign Standard tramite il modello dati del modulo AEM Forms
 seo-description: Passaggi relativi alla creazione del profilo Adobe Campaign Standard tramite il modello dati del modulo AEM Forms
 uuid: 3216827e-e1a2-4203-8fe3-4e2a82ad180a
-feature: Servizio di output
+feature: Output Service
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 461c532e-7a07-49f5-90b7-ad0dcde40984
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Esperienza
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

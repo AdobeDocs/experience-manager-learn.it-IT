@@ -2,13 +2,13 @@
 title: Raccolte
 description: Scopri come le raccolte forniscono e visualizzano in modo alternativo le risorse AEM.
 sub-product: assets
-feature: Raccolte
+feature: Collections
 version: cloud-service
 kt: 4301
 thumbnail: 32053.jpg
-topic: Gestione dei contenuti
-role: Professionista
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

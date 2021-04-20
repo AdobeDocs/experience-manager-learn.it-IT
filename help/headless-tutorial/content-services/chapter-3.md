@@ -3,10 +3,10 @@ title: Capitolo 3 - Authoring di frammenti di contenuto di eventi - Content Serv
 seo-title: Guida introduttiva di AEM Content Services - Capitolo 3 - Creazione di frammenti di contenuto di eventi
 description: Il capitolo 3 dell’esercitazione AEM Headless riguarda la creazione e la creazione di frammenti di contenuto evento dal modello di frammento di contenuto creato nel capitolo 2.
 seo-description: Il capitolo 3 dell’esercitazione AEM Headless riguarda la creazione e la creazione di frammenti di contenuto evento dal modello di frammento di contenuto creato nel capitolo 2.
-feature: Frammenti di contenuto, API
-topic: Senza testa, gestione dei contenuti
-role: Developer (Sviluppatore)
-level: Principiante
+feature: Content Fragments, APIs
+topic: Headless, Content Management
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

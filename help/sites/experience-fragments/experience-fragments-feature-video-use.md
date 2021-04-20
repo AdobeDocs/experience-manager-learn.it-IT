@@ -2,10 +2,10 @@
 title: Utilizzo AEM frammenti esperienza
 description: I frammenti esperienza consentono agli autori dei contenuti di riutilizzare i contenuti tra canali, comprese le pagine Siti e i sistemi di terze parti.
 sub-product: siti, servizi di contenuto
-feature: Frammenti esperienza
-topic: Gestione dei contenuti
-role: Architetto, Sviluppatore, Amministratore, Business Practices
-level: Principiante
+feature: Experience Fragments
+topic: Content Management
+role: Architect, Developer, Administrator, Business Practitioner
+level: Beginner
 doc-type: feature video
 version: cloud-service
 kt: 194

@@ -4,14 +4,14 @@ description: Le credenziali del servizio AEM sono utilizzate per facilitare l’
 version: cloud-service
 doc-type: tutorial
 topics: Development, Security
-feature: API
+feature: APIs
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330519.jpg
-topic: Senza testa, Integrazioni
-role: Developer (Sviluppatore)
-level: Intermedio, esperienza
+topic: Headless, Integrations
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

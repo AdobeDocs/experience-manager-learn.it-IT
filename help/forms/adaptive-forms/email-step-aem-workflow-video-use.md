@@ -4,16 +4,16 @@ seo-title: Utilizzo del passaggio Invia e-mail del flusso di lavoro Forms
 description: Il passaggio Invia e-mail è stato introdotto in AEM Forms 6.4. Utilizzando questo passaggio è possibile creare processi aziendali o flussi di lavoro che consentono di inviare e-mail con o senza allegati. Il video seguente illustra i passaggi per configurare il componente Invia e-mail
 seo-description: Il passaggio Invia e-mail è stato introdotto in AEM Forms 6.4. Utilizzando questo passaggio è possibile creare processi aziendali o flussi di lavoro che consentono di inviare e-mail con o senza allegati. Il video seguente illustra i passaggi per configurare il componente Invia e-mail
 uuid: d054ebfb-3b9b-4ca4-8355-0eb0ee7febcb
-feature: Flusso di lavoro
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.4,6.5
 discoiquuid: 3a11f602-2f4c-423a-baef-28824c0325a1
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

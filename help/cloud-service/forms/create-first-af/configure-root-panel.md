@@ -2,12 +2,12 @@
 title: Configurare il pannello principale
 description: Aggiungi i pannelli secondari al pannello principale.
 solution: Experience Manager Forms
-type: Documentazione
-role: Developer (Sviluppatore)
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Moduli adattivi
-topic: Sviluppo
+feature: Adaptive Forms
+topic: Development
 kt: 7377
 thumbnail: 332238.jpg
 translation-type: tm+mt

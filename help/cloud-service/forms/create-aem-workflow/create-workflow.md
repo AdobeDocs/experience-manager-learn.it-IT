@@ -2,12 +2,12 @@
 title: Creare un flusso di lavoro AEM
 description: Crea un modello di flusso di lavoro per simulare il processo aziendale.
 solution: Experience Manager Forms
-type: Documentazione
-role: Developer (Sviluppatore)
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Moduli adattivi
-topic: Sviluppo
+feature: Adaptive Forms
+topic: Development
 kt: 7424
 thumbnail: 332434.pg
 translation-type: tm+mt

@@ -3,10 +3,10 @@ title: Personalizzazione tramite Adobe Target
 seo-title: Personalizzazione tramite Adobe Target
 description: Un tutorial end-to-end che mostra come creare e distribuire esperienze personalizzate utilizzando Adobe Target.
 seo-description: Un tutorial end-to-end che mostra come creare e distribuire esperienze personalizzate utilizzando Adobe Target.
-feature: Frammenti di esperienza
-topic: Personalizzazione
-role: Developer (Sviluppatore)
-level: Intermedio
+feature: Experience Fragments
+topic: Personalization
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

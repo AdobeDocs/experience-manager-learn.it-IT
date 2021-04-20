@@ -5,15 +5,15 @@ description: Le funzioni di riduzione vengono utilizzate per aggregare o raggrup
 seo-description: Le funzioni di riduzione vengono utilizzate per aggregare o raggruppare i valori visualizzati nel grafico. Il video seguente illustra i passaggi necessari per l'utilizzo delle funzioni di riduzione.
 uuid: e9bd8bda-48ea-4a02-95c4-02aedafdb640
 discoiquuid: 6fef8341-8fd5-4d82-9f69-2b8be7cd22db
-feature: Comunicazione interattiva
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: technical video
 activity: use
 version: 6.4,6.5
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Intermedio
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

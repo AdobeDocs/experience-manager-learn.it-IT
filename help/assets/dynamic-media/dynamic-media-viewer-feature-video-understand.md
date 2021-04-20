@@ -2,11 +2,11 @@
 title: Informazioni sul Visualizzatore risorse con AEM Dynamic Media
 description: I miglioramenti al visualizzatore Dynamic Media AEM consentono agli autori AEM di definire e personalizzare le risorse dell’esperienza da presentare agli utenti del sito web.
 sub-product: dynamic media classic
-feature: Predefiniti visualizzatore, Profili immagine
+feature: Viewer Presets, Image Profiles
 version: 6.3, 6.4, 6.5
-topic: Gestione dei contenuti
-role: Developer (Sviluppatore)
-level: Intermedio
+topic: Content Management
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: Creare e distribuire
 description: Adobe Cloud Manager facilita la creazione e l’implementazione del codice in AEM as a Cloud Service. Possono verificarsi errori durante i passaggi del processo di compilazione, che richiedono un’azione per risolverli. Questa guida illustra gli errori comuni nell’implementazione e le modalità per affrontarli al meglio.
-feature: Strumenti per gli sviluppatori
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 5434
 thumbnail: kt-5424.jpg
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

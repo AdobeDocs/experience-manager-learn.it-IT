@@ -2,11 +2,11 @@
 title: Informazioni sulla gestione del colore con AEM Dynamic Media
 description: Questo video illustra Dynamic Media Color Management e come può essere utilizzato per fornire funzionalità di anteprima per la correzione del colore in per AEM Assets.
 sub-product: dynamic-media
-feature: Profili immagine, Profili video
+feature: Image Profiles, Video Profiles
 version: 6.3, 6.4, 6.5
-topic: Gestione dei contenuti
-role: Developer (Sviluppatore)
-level: Intermedio
+topic: Content Management
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

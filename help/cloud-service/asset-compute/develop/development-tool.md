@@ -1,7 +1,7 @@
 ---
 title: Strumento di sviluppo Asset Compute
 description: Asset Compute Development Tool è un cablaggio web locale che consente agli sviluppatori di configurare ed eseguire in locale i processi di lavoro Asset Computer, al di fuori del contesto dell’SDK AEM, in base alle risorse Asset Compute in Adobe I/O Runtime.
-feature: Microservizi Asset Compute
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
-topic: Integrazioni, Sviluppo
-role: Developer (Sviluppatore)
-level: Intermedio, esperienza
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

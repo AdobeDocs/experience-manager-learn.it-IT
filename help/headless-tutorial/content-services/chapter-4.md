@@ -3,10 +3,10 @@ title: Capitolo 4 - Definizione dei modelli di Content Services - Content Servic
 seo-title: Guida introduttiva di AEM Headless - Capitolo 4 - Definizione dei modelli di Content Services
 description: Il capitolo 4 dell’esercitazione AEM Headless descrive il ruolo dei modelli modificabili AEM nel contesto di AEM Content Services. I modelli modificabili vengono utilizzati per definire la struttura del contenuto JSON che AEM Content Services presenterà in ultima analisi.
 seo-description: Il capitolo 4 dell’esercitazione AEM Headless descrive il ruolo dei modelli modificabili AEM nel contesto di AEM Content Services. I modelli modificabili vengono utilizzati per definire la struttura del contenuto JSON che AEM Content Services presenterà in ultima analisi.
-feature: Frammenti di contenuto, API
-topic: Senza testa, gestione dei contenuti
-role: Developer (Sviluppatore)
-level: Principiante
+feature: Content Fragments, APIs
+topic: Headless, Content Management
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

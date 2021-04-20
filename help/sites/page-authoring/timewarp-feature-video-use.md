@@ -1,10 +1,10 @@
 ---
 title: Utilizzo di Timewarp con  AEM Sites
 description: Timewarp è una funzione di  Adobe Experience Manager Sites che fornisce agli autori un modo rapido per esaminare lo stato di una pagina in un momento specifico nel passato.
-topic: Gestione dei contenuti
-feature: 'Authoring  '
-role: Professionista
-level: Intermedio
+topic: Content Management
+feature: Authoring
+role: Business Practitioner
+level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 3307
 thumbnail: 17453.jpg

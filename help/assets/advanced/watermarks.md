@@ -1,13 +1,13 @@
 ---
 title: Filigrane in AEM Assets
 description: Le funzionalità di watermarking di AEM as a Cloud Service consentono alle rappresentazioni personalizzate delle immagini di essere filigrate utilizzando qualsiasi immagine PNG.
-feature: Microservizi Asset Compute
+feature: Asset Compute Microservices
 version: cloud-service
 kt: 6357
 thumbnail: 41536.jpg
-topic: Gestione dei contenuti
-role: Developer (Sviluppatore)
-level: Intermedio
+topic: Content Management
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

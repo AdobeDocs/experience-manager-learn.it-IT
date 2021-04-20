@@ -1,13 +1,13 @@
 ---
 title: Navigazione
 description: Scopri le nozioni di base per la navigazione in AEM Assets.
-feature: Gestione risorse
-role: Professionista
-level: Principiante
+feature: Asset Management
+role: Business Practitioner
+level: Beginner
 version: cloud-service
 kt: 4305
 thumbnail: 32046.jpg
-topic: Gestione dei contenuti
+topic: Content Management
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

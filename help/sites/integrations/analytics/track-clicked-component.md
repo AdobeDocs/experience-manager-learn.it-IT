@@ -1,7 +1,7 @@
 ---
 title: Tenere traccia del componente su cui è stato fatto clic con Adobe Analytics
 description: Utilizza Adobe Client Data Layer basato sugli eventi per monitorare i clic di componenti specifici su un sito Adobe Experience Manager. Scopri come utilizzare le regole in Experience Platform Launch per rilevare questi eventi e inviare dati a un Adobe Analytics con un beacon di collegamento di tracciamento.
-feature: analisi
+feature: analytics
 topics: integrations
 audience: administrator
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: setup
 version: cloud-service
 kt: 6296
 thumbnail: KT-6296.jpg
-topic: Integrations (Integrazioni)
-role: Developer (Sviluppatore)
-level: Intermedio
+topic: Integrations
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

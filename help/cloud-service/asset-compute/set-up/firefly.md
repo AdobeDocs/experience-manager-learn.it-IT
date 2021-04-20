@@ -1,7 +1,7 @@
 ---
 title: Configurare Adobe Project Firefly per l’estensibilità di Asset Compute
 description: I progetti Asset Compute sono progetti Adobe Project Firefly appositamente definiti e, come tali, richiedono l’accesso ad Adobe Project Firefly in Adobe Developer Console per configurarli e distribuirli.
-feature: Microservizi Asset Compute
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6268
 thumbnail: 40183.jpg
-topic: Integrazioni, Sviluppo
-role: Developer (Sviluppatore)
-level: Intermedio, esperienza
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

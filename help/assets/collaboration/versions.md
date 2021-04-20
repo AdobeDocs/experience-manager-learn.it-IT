@@ -2,13 +2,13 @@
 title: Versioni
 description: Scopri come AEM crea e gestisce le versioni delle risorse.
 sub-product: assets
-feature: Gestione risorse
+feature: Asset Management
 version: cloud-service
 kt: 4671
 thumbnail: 32052.jpg
-topic: Gestione dei contenuti
-role: Professionista
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

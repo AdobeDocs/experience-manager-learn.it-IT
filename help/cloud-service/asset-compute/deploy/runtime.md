@@ -1,7 +1,7 @@
 ---
 title: Distribuire i processi di lavoro Asset Compute in Adobe I/O Runtime per l’utilizzo con AEM as a Cloud Service
 description: 'I progetti Asset Compute e i relativi processi di lavoro devono essere distribuiti in Adobe I/O Runtime per poter essere utilizzati da AEM as a Cloud Service. '
-feature: Microservizi Asset Compute
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6286
 thumbnail: KT-6286.jpg
-topic: Integrazioni, Sviluppo
-role: Developer (Sviluppatore)
-level: Intermedio, esperienza
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

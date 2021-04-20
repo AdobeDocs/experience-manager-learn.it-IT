@@ -1,7 +1,7 @@
 ---
 title: Configurare il file manifest.yml di un progetto Asset Compute
 description: Il file manifest.yml del progetto Asset Compute descrive tutti i processi di lavoro di questo progetto da distribuire.
-feature: Microservizi Asset Compute
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6281
 thumbnail: KT-6281.jpg
-topic: Integrazioni, Sviluppo
-role: Developer (Sviluppatore)
-level: Intermedio, esperienza
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

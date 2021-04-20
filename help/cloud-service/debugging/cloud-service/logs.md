@@ -1,7 +1,7 @@
 ---
 title: Registri
 description: I registri fungono da guida per il debug delle applicazioni AEM in AEM as a Cloud Service, ma dipendono dalla registrazione adeguata nell’applicazione AEM implementata.
-feature: Strumenti per gli sviluppatori
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 5432
 thumbnail: kt-5432.jpg
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

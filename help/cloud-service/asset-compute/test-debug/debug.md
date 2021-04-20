@@ -1,7 +1,7 @@
 ---
 title: Debug di un processo di lavoro di Asset Compute
 description: Il debug dei processi di lavoro di Asset Compute può essere eseguito in diversi modi, dalle semplici istruzioni di registro di debug, al codice VS allegato come debugger remoto, fino all’estrazione dei registri per le attivazioni in Adobe I/O Runtime avviati da AEM as a Cloud Service.
-feature: Microservizi Asset Compute
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
-topic: Integrazioni, Sviluppo
-role: Developer (Sviluppatore)
-level: Intermedio, esperienza
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

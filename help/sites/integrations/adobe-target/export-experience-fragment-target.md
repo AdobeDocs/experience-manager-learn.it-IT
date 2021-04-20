@@ -1,7 +1,7 @@
 ---
 title: Esporta Frammenti esperienza in Adobe Target
 description: Scopri come pubblicare ed esportare Frammenti esperienza AEM come offerte di Adobe Target.
-feature: Frammenti di esperienza
+feature: Experience Fragments
 topics: integrations, authoring
 audience: all
 doc-type: feature video
@@ -9,9 +9,9 @@ activity: use
 version: cloud-service
 kt: 6350
 thumbnail: 41245.jpg
-topic: Integrations (Integrazioni)
-role: Professionista
-level: Intermedio
+topic: Integrations
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

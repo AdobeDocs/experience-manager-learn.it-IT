@@ -3,7 +3,7 @@ title: Utilizzo dell’editor SPA con AEM Sites
 seo-title: Utilizzo del framework SPA Editor con AEM Sites
 description: Il framework dell’editor per applicazioni a pagina singola di AEM consente agli autori di modificare il contenuto per un’applicazione a pagina singola o per un’applicazione a pagina singola. Gli sviluppatori che utilizzano i framework React o Angular creano un’applicazione a pagina singola e mappano le aree dell’applicazione a pagina singola ai componenti AEM, consentendo agli autori di utilizzare gli strumenti di modifica noti di AEM Sites.
 sub-product: siti, content-services
-feature: Editor Spa
+feature: Spa Editor
 topics: authoring, single-page-applications
 audience: all
 doc-type: feature video
@@ -12,8 +12,8 @@ version: 6.4, 6.5, cloud-service
 kt: 1047
 thumbnail: 22229.jpg
 topic: SPA
-role: Developer (Sviluppatore)
-level: Principiante
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

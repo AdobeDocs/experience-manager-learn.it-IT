@@ -1,7 +1,7 @@
 ---
 title: Impostare gli strumenti di sviluppo per lo sviluppo di AEM as a Cloud Service
 description: Imposta una macchina di sviluppo locale con tutti gli strumenti di base necessari per lo sviluppo locale rispetto ad AEM.
-feature: Strumenti per gli sviluppatori
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 4267
 thumbnail: 25907.jpg
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

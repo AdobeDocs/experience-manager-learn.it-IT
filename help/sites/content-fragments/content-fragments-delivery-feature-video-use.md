@@ -4,7 +4,7 @@ seo-title: Distribuzione di frammenti di contenuto in Adobe Experience Manager
 description: I frammenti di contenuto, indipendentemente dal layout, possono essere utilizzati direttamente in AEM Sites con i componenti core o possono essere consegnati in modo headless ai canali a valle.
 seo-description: I frammenti di contenuto, indipendentemente dal layout, possono essere utilizzati direttamente in AEM Sites con i componenti core o possono essere consegnati in modo headless ai canali a valle.
 sub-product: content-services
-feature: Frammenti di contenuto
+feature: Content Fragments
 topics: authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -12,9 +12,9 @@ activity: use
 version: 6.3, 6.4, 6.5
 uuid: 045473d2-5abe-4414-b91c-d369f3069ead
 discoiquuid: 912e0c41-83cf-49f7-b515-09519b6718c1
-topic: Gestione dei contenuti
-role: Professionista
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -2,13 +2,13 @@
 title: Barra di ricerca per l’amministrazione delle risorse
 description: La barra di ricerca per l’amministrazione delle risorse consente di cercare le risorse utilizzando criteri personalizzati in Omnisearch.
 sub-product: assets
-feature: Ricerca
+feature: Search
 version: cloud-service
 kt: 4995
 thumbnail: 35842.jpg
-topic: Gestione dei contenuti
+topic: Content Management
 role: Administrator
-level: Intermedio
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

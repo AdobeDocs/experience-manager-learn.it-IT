@@ -3,10 +3,10 @@ title: Guida introduttiva ad AEM e Adobe Target
 seo-title: Guida introduttiva ad AEM e Adobe Target
 description: Un tutorial end-to-end che mostra come creare e distribuire esperienze personalizzate utilizzando Adobe Experience Manager e Adobe Target. Questa esercitazione illustra anche le diverse figure coinvolte nel processo end to end e la loro collaborazione tra di loro
 seo-description: Un tutorial end-to-end che mostra come creare e distribuire esperienze personalizzate utilizzando Adobe Experience Manager e Adobe Target. Questa esercitazione illustra anche le diverse figure coinvolte nel processo end to end e la loro collaborazione tra di loro
-feature: Frammenti di esperienza
-topic: Personalizzazione
-role: Developer (Sviluppatore)
-level: Intermedio
+feature: Experience Fragments
+topic: Personalization
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

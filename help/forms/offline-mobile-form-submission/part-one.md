@@ -3,15 +3,15 @@ title: Attiva flusso di lavoro AEM per l’invio di moduli HTML5
 seo-title: Attiva flusso di lavoro AEM sull’invio di moduli HTML5
 description: Continua a compilare il modulo mobile in modalità offline e invia il modulo mobile per attivare il flusso di lavoro AEM
 seo-description: Continua a compilare il modulo mobile in modalità offline e invia il modulo mobile per attivare il flusso di lavoro AEM
-feature: Forms Mobile
+feature: Mobile Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4, 6.5
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Esperienza
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

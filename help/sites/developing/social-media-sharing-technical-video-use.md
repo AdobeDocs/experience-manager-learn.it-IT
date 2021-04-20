@@ -1,15 +1,15 @@
 ---
 title: Utilizzo della condivisione di social media in AEM Sites
 description: Esplora la configurazione e l'utilizzo del componente Condivisione social media.
-feature: Componenti core
+feature: Core Components
 topics: integrations
 audience: developer, implementer
 doc-type: technical video
 activity: setup
 version: 6.3, 6.4, 6.5
-topic: Gestione dei contenuti
-role: Developer (Sviluppatore)
-level: Intermedio
+topic: Content Management
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

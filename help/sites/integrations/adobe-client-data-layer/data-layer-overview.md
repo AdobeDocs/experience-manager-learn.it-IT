@@ -1,7 +1,7 @@
 ---
 title: Utilizzo di Adobe Client Data Layer con i componenti core di AEM
 description: Adobe Client Data Layer introduce un metodo standard per raccogliere e memorizzare dati sull’esperienza di un visitatore su una pagina web e semplificarne l’accesso. Adobe Client Data Layer è indipendente dalla piattaforma, ma è completamente integrato nei componenti core per l’utilizzo con AEM.
-feature: componente principale
+feature: core-component
 topics: integrations
 audience: developer
 doc-type: feature video
@@ -9,9 +9,9 @@ activity: use
 version: cloud-service
 kt: 6261
 thumbnail: 41195.jpg
-topic: Integrations (Integrazioni)
-role: Developer (Sviluppatore)
-level: Intermedio
+topic: Integrations
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

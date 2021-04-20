@@ -1,7 +1,7 @@
 ---
 title: Creare un’attività Target utilizzando le offerte dei frammenti esperienza
 description: Scopri come creare e testare un’attività Adobe Target utilizzando le offerte dei frammenti esperienza AEM.
-feature: Frammenti di esperienza
+feature: Experience Fragments
 topics: integrations, authoring, personalization, activity, offers
 audience: all
 doc-type: feature video
@@ -9,9 +9,9 @@ activity: use
 version: cloud-service
 kt: 6351
 thumbnail: 41246.jpg
-topic: Integrations (Integrazioni)
-role: Professionista
-level: Intermedio
+topic: Integrations
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

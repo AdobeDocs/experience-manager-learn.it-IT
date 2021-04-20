@@ -4,16 +4,16 @@ seo-title: Creazione di elementi del modello dati del modulo calcolato in AEM Fo
 description: Creazione di elementi del modello dati del modulo calcolato
 seo-description: Creazione di elementi del modello dati del modulo calcolato
 uuid: 30d72569-6a38-44f6-a091-b9a595d5ac77
-feature: Flusso di lavoro
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.4,6.5
 discoiquuid: b7b6d05b-7378-4028-add3-4f2a03a7455d
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

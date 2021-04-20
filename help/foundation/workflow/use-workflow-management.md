@@ -2,10 +2,10 @@
 title: Come gestire il flusso di lavoro in AEM
 description: 'La gestione dei flussi di lavoro AEM offre agli utenti una maggiore visibilità sui contenuti del flusso di lavoro e consente una gestione più semplice delle definizioni dei modelli di flusso di lavoro. '
 version: 6.5, cloud-service
-feature: Flusso di lavoro
-topic: Gestione dei contenuti
+feature: Workflow
+topic: Content Management
 role: Administrator
-level: Intermedio
+level: Intermediate
 kt: 2557
 thumbnail: 27848.jpg
 translation-type: tm+mt

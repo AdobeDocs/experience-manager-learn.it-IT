@@ -2,7 +2,7 @@
 title: Creazione di un flusso di lavoro per la revisione dei dati inviati
 description: Creazione di un modello di flusso di lavoro AEM tramite i componenti del flusso di lavoro di AEM Forms per esaminare i dati inviati.
 sub-product: forms
-feature: Flusso di lavoro
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,9 +10,9 @@ activity: setup
 version: 6.4,6.5
 kt: 4271
 thumbnail: 40242.jpg
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

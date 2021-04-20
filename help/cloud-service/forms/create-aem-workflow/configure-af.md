@@ -2,12 +2,12 @@
 title: Configurare il modulo adattivo per attivare il flusso di lavoro
 description: Flusso di lavoro di attivazione per l’invio di moduli adattivi.
 solution: Experience Manager Forms
-type: Documentazione
-role: Developer (Sviluppatore)
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Moduli adattivi
-topic: Sviluppo
+feature: Adaptive Forms
+topic: Development
 kt: 7425
 thumbnail: 332435.pg
 translation-type: tm+mt

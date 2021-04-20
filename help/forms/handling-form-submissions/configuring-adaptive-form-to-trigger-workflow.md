@@ -2,7 +2,7 @@
 title: Configurazione del modulo adattivo per attivare il flusso di lavoro AEM
 description: Configurare le opzioni di payload quando si attiva il flusso di lavoro AEM all’invio del modulo
 sub-product: forms
-feature: Flusso di lavoro
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,9 +10,9 @@ activity: setup
 version: 6.4,6.5
 kt: 5407
 thumbnail: 40258.jpg
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

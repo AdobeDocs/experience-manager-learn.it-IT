@@ -1,7 +1,7 @@
 ---
 title: Creazione di moduli HTML5
 description: Creazione e configurazione di moduli HTML5
-feature: Forms Mobile
+feature: Mobile Forms
 topics: development
 audience: developer
 doc-type: article
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 4419
 thumbnail: kt-4419.jpg
-topic: Sviluppo
-role: Professionista
-level: Principiante
+topic: Development
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

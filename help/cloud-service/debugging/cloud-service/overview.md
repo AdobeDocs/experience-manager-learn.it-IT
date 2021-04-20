@@ -1,16 +1,16 @@
 ---
 title: Debug di AEM as a Cloud Service
 description: su un’infrastruttura cloud self-service, scalabile e scalabile, che richiede agli sviluppatori AEM di comprendere come comprendere ed eseguire il debug di vari facet di AEM as a Cloud Service, dalla creazione e distribuzione fino a ottenere i dettagli dell’esecuzione delle applicazioni AEM.
-feature: Strumenti per gli sviluppatori
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5346
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante, intermedio
+topic: Development
+role: Developer
+level: Beginner, Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

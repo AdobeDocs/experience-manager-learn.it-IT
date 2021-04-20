@@ -2,10 +2,10 @@
 title: Utilizzo della ricerca di traduzione avanzata con AEM Assets
 description: La funzione Ricerca di traduzione avanzata consente di eseguire automaticamente ricerche e individuare in più lingue nei contenuti AEM, sia Risorse che Pagine, supportando più di 50 lingue e riducendo la necessità di tradurre manualmente i contenuti.
 version: 6.3, 6.4, 6.5
-feature: Ricerca
-topic: Gestione dei contenuti
-role: Professionista
-level: Principiante
+feature: Search
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

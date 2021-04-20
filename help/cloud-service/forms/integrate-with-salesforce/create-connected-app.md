@@ -2,12 +2,12 @@
 title: Crea un'app connessa Salesforce.
 description: L’app connessa consente di integrare Salesforce con applicazioni di terze parti, come AEM Forms con Salesforce.
 solution: Experience Manager, Experience Manager Forms
-type: Documentazione
-role: Developer (Sviluppatore)
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Moduli adattivi
-topic: Sviluppo
+feature: Adaptive Forms
+topic: Development
 kt: 7152
 thumbnail: 331757.jpg
 translation-type: tm+mt

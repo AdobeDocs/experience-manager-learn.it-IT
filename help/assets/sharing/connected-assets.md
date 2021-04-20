@@ -1,11 +1,11 @@
 ---
 title: Utilizzo di risorse collegate con AEM Sites
 description: La funzione Risorse collegate consente all’autore di AEM Sites di condividere facilmente le risorse digitali ospitate su un’altra istanza di AEM.
-feature: Risorse collegate
+feature: Connected Assets
 version: 6.5
-topic: Gestione dei contenuti
-role: Developer (Sviluppatore)
-level: Intermedio
+topic: Content Management
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

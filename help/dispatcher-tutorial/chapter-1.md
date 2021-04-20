@@ -2,9 +2,9 @@
 title: '"Capitolo 1 - Concetti, schemi e modelli di Dispatcher"'
 description: Questo capitolo fornisce una breve introduzione alla cronologia e alla meccanica di Dispatcher e illustra come questo influenzi il modo in cui uno sviluppatore AEM progetterebbe i suoi componenti.
 feature: Dispatcher
-topic: Architettura
-role: Architetto
-level: Principiante
+topic: Architecture
+role: Architect
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

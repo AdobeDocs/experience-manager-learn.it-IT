@@ -2,12 +2,12 @@
 title: Invia il modulo utilizzando l’azione di invio del modello dati modulo
 description: Creare un modulo adattivo per testare l’integrazione di Salesforce creando un oggetto Lead all’invio del modulo
 solution: Experience Manager, Experience Manager Forms
-type: Documentazione
-role: Developer (Sviluppatore)
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Moduli adattivi
-topic: Sviluppo
+feature: Adaptive Forms
+topic: Development
 kt: 7151
 thumbnail: 331758.jpg
 translation-type: tm+mt

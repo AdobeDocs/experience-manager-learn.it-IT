@@ -2,10 +2,10 @@
 title: Utilizzo dei metadati a cascata in  AEM Assets
 description: La gestione avanzata dei metadati consente agli utenti di creare regole per i campi CSS per creare relazioni contestuali tra i metadati in  AEM Assets. Il video seguente illustra nuove regole dinamiche per requisiti di campo, visibilità e opzioni contestuali. Il video descrive inoltre i passaggi necessari affinché un amministratore possa applicare queste regole a uno schema di metadati personalizzato.
 version: 6.3, 6.4, 6.5, cloud-service
-topic: Gestione dei contenuti
-feature: Metadati
-role: Professionista
-level: Intermedio
+topic: Content Management
+feature: Metadata
+role: Business Practitioner
+level: Intermediate
 kt: 616
 thumbnail: 20702.jpg
 translation-type: tm+mt

@@ -2,7 +2,7 @@
 title: Creare un componente personalizzato | Guida introduttiva dell’Editor SPA di AEM e Angular
 description: Scopri come creare un componente personalizzato da utilizzare con l’Editor SPA di AEM. Scopri come sviluppare le finestre di dialogo degli autori e i modelli Sling per estendere il modello JSON a un componente personalizzato.
 sub-product: sites
-feature: Editor SPA
+feature: SPA Editor
 doc-type: tutorial
 topics: development
 version: cloud-service
@@ -11,8 +11,8 @@ audience: developer
 kt: 5831
 thumbnail: 5831-spa-angular.jpg
 topic: SPA
-role: Developer (Sviluppatore)
-level: Principiante
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

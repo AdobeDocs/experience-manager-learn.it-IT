@@ -5,10 +5,10 @@ description: Novità nello sviluppo di AEM? Hai bisogno di un aggiornamento sull
 seo-description: Novità nello sviluppo di AEM? Hai bisogno di un aggiornamento sulle best practice? Questo è il posto dove cominciare! L’obiettivo di questa esercitazione in più parti è quello di insegnare a uno sviluppatore che è nuovo di AEM come implementare un sito web in AEM utilizzando gli standard e le tecnologie più recenti.
 content-type: reference
 topic-tags: introduction
-feature: AEM Project Archetype, Componenti core, Editor pagina, Modelli modificabili
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
+feature: AEM Project Archetype, Core Components, Page Editor, Editable Templates
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

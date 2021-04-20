@@ -3,7 +3,7 @@ title: Layout reattivo con AEM Sites
 seo-title: Layout reattivo con AEM Sites
 description: AEM consente di creare un layout reattivo per le pagine mediante il componente Contenitore di layout. Con il Layout reattivo, gli autori dei contenuti possono creare contenuti reattivi per diversi dispositivi e visualizzare in anteprima l’esperienza dell’utente finale in AEM.
 seo-description: Descrive i passaggi per la creazione di layout reattivo per diversi dispositivi
-feature: Editor pagina, Modelli modificabili
+feature: Page Editor, Editable Templates
 topics: authoring, responsive
 audience: author, marketer
 doc-type: feature video
@@ -11,9 +11,9 @@ activity: use
 version: 6.3, 6.4, 6.5
 kt: 4252
 thumbnail: 32012.jpg
-topic: Gestione dei contenuti
-role: Professionista
-level: Intermedio
+topic: Content Management
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

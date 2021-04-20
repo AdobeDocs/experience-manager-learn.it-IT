@@ -2,15 +2,15 @@
 title: Configurare la pubblicazione social con frammenti esperienza AEM
 description: I frammenti esperienza consentono agli addetti al marketing di pubblicare esperienze create in AEM su piattaforme di social media. Il video seguente descrive la configurazione e la configurazione necessarie per pubblicare Frammenti esperienza su Facebook e Pinterest.
 sub-product: siti, content-services
-feature: Frammenti di esperienza
+feature: Experience Fragments
 topics: integrations, content-delivery
 audience: administrator, implementer, developer
 doc-type: setup
 activity: use
 version: 6.3, 6.4, 6.5
-topic: Gestione dei contenuti
-role: Amministratore, sviluppatore
-level: Intermedio
+topic: Content Management
+role: Administrator, Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

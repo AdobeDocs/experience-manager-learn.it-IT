@@ -2,15 +2,15 @@
 title: Sviluppo con AEM SPA Editor - Tutorial a tutto il mondo
 description: L’Editor SPA di AEM supporta la modifica contestuale di un’applicazione a pagina singola o SPA. Questa esercitazione è un’introduzione allo sviluppo di applicazioni a pagina singola da utilizzare con l’SDK JS per l’editor di applicazioni a pagina singola di AEM. L’esercitazione estenderà l’app We.Retail Journal aggiungendo un componente personalizzato Hello World . Gli utenti possono completare l’esercitazione utilizzando i framework React o Angular.
 sub-product: siti, content-services
-feature: Editor Spa
+feature: Spa Editor
 topics: development, single-page-applications
 audience: developer
 doc-type: tutorial
 activity: use
 version: 6.3, 6.4, 6.5
 topic: SPA
-role: Developer (Sviluppatore)
-level: Principiante
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

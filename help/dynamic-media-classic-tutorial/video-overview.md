@@ -2,14 +2,14 @@
 title: Panoramica video
 description: Dynamic Media Classic include la conversione automatica dei video in fase di caricamento, lo streaming video su dispositivi desktop e mobili e set di video adattivi ottimizzati per la riproduzione in base al dispositivo e alla larghezza di banda. Scopri di più sul video in Dynamic Media Classic e scopri i concetti e la terminologia video. Quindi scopri come caricare e codificare i video, scegli i predefiniti video per caricarli, aggiungere o modificare un predefinito video, visualizzare in anteprima i video in un visualizzatore video, distribuire i video su siti web e mobili, aggiungere sottotitoli e marcatori capitolo ai video e pubblicare i visualizzatori video su utenti desktop e mobili.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, Profili video, Predefiniti visualizzatore
+feature: Dynamic Media Classic, Video Profiles, Viewer Presets
 doc-type: tutorial
 topics: development, authoring, configuring, videos, video-profiles
 audience: all
 activity: use
-topic: Gestione dei contenuti
-role: Professionista
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

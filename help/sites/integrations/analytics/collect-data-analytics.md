@@ -1,7 +1,7 @@
 ---
 title: Raccogliere dati di pagina con Adobe Analytics
 description: Utilizza Adobe Client Data Layer basato sugli eventi per raccogliere dati sull’attività dell’utente su un sito web creato con Adobe Experience Manager. Scopri come utilizzare le regole in Experience Platform Launch per rilevare questi eventi e inviare dati a una suite di rapporti di Adobe Analytics.
-feature: analisi
+feature: analytics
 topics: integrations
 audience: administrator
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: setup
 version: cloud-service
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
-topic: Integrations (Integrazioni)
-role: Developer (Sviluppatore)
-level: Intermedio
+topic: Integrations
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

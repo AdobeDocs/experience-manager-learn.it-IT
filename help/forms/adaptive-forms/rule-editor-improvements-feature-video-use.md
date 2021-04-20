@@ -4,16 +4,16 @@ seo-title: Miglioramenti dell’editor di regole in AEM Forms
 description: 'L’editor di regole consente agli utenti di aggiungere logica ai moduli adattivi AEM. AEM 6.3 migliora l’editor di regole in diversi modi e rende l’aggiunta di informazioni più semplice e veloce sia per gli utenti tecnici che per quelli non tecnici. '
 seo-description: 'L’editor di regole consente agli utenti di aggiungere logica ai moduli adattivi AEM. AEM 6.3 migliora l’editor di regole in diversi modi e rende l’aggiunta di informazioni più semplice e veloce sia per gli utenti tecnici che per quelli non tecnici. '
 uuid: 35e8cc7c-04cf-43b4-bbc7-41bfd909cfba
-feature: Moduli adattivi
+feature: Adaptive Forms
 topics: authoring
 audience: author
 doc-type: technical video
 activity: use
 version: 6.3,6.4,6.5.
 discoiquuid: 51750b3f-1fda-43ae-b3ed-1eede83b19d5
-topic: Amministrazione
-role: Developer (Sviluppatore)
-level: Principiante
+topic: Administration
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

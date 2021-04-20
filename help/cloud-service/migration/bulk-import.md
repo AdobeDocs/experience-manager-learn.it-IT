@@ -4,14 +4,14 @@ description: Lo strumento di importazione in serie in AEM as a Cloud Service con
 version: cloud-service
 doc-type: technical-video
 topics: Migration
-feature: Migrazione
+feature: Migration
 activity: develop
 audience: developer
 kt: 6729
 thumbnail: 329680.jpg
-topic: Migrazione
-role: Architetto, sviluppatore
-level: Principiante
+topic: Migration
+role: Architect, Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

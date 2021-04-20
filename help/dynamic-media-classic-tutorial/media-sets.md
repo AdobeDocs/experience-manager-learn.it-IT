@@ -2,14 +2,14 @@
 title: Set di file multimediali diversi, immagine, campione, rotazione
 description: Una delle funzionalità più utili e potenti di Dynamic Media Classic è il supporto per la creazione di set di file multimediali avanzati come Image, Swatch, Spin e Mixed Media Set. Scopri cos’è ogni set di file multimediali avanzati e come creare ogni tipo in Dynamic Media Classic. Quindi scopri di più su Batch Set Preset, che automatizza il processo di creazione di set rich media al momento del caricamento.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, Set di immagini, Set di file multimediali diversi, Set 360 gradi
+feature: Dynamic Media Classic, Image Sets, Mix Media Sets, Spin Sets
 doc-type: tutorial
 topics: sets, development, authoring, configuring
 audience: all
 activity: use
-topic: Gestione dei contenuti
-role: Professionista
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

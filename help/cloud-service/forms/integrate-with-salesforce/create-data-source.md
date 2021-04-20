@@ -2,11 +2,11 @@
 title: 'Creare una configurazione di servizi cloud '
 description: Crea un’origine dati per la connessione a Salesforce utilizzando le credenziali OAuth
 solution: Experience Manager, Experience Manager Forms
-type: Documentazione
-role: Developer (Sviluppatore)
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-topic: Sviluppo
+topic: Development
 kt: 7148
 thumbnail: 331755.jpg
 translation-type: tm+mt

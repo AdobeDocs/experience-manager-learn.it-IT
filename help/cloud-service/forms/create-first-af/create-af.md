@@ -2,12 +2,12 @@
 title: Creare un modulo adattivo
 description: Crea un modulo adattivo e basalo sul modello creato.
 solution: Experience Manager Forms
-type: Documentazione
-role: Developer (Sviluppatore)
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Moduli adattivi
-topic: Sviluppo
+feature: Adaptive Forms
+topic: Development
 kt: 7376
 thumbnail: 332237.jpg
 translation-type: tm+mt

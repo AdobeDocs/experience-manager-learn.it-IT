@@ -3,7 +3,7 @@ title: Operazioni di base sulle pagine in AEM Sites
 seo-title: Operazioni di base sulle pagine in AEM Sites
 description: Il video seguente illustra come eseguire operazioni di base di gestione delle pagine per una pagina di Adobe Experience Manager Sites.
 seo-description: Il video seguente illustra come eseguire operazioni di base di gestione delle pagine per una pagina di Adobe Experience Manager Sites.
-feature: Editor pagina, Modelli modificabili
+feature: Page Editor, Editable Templates
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
@@ -11,9 +11,9 @@ activity: use
 version: 6.3, 6.4, 6.5
 kt: 4245
 thumbnail: 32147.jpg
-topic: Gestione dei contenuti
-role: Professionista
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

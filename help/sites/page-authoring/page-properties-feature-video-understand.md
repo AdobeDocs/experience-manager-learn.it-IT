@@ -3,7 +3,7 @@ title: Informazioni sulle proprietà pagina in AEM Sites
 seo-title: Informazioni sulle proprietà pagina in Adobe Experience Manager Sites
 description: Il video seguente introduce i metadati delle proprietà della pagina associati a una pagina in Adobe Experience Manager.
 seo-description: 'Il video seguente introduce i metadati delle proprietà della pagina associati a una pagina in Adobe Experience Manager. '
-feature: Editor pagina
+feature: Page Editor
 topics: authoring, metadata
 audience: author, marketer
 doc-type: feature video
@@ -11,9 +11,9 @@ activity: understand
 version: 6.3, 6.4, 6.5
 kt: 4321
 thumbnail: 32192.jpg
-topic: Gestione dei contenuti
-role: Professionista
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

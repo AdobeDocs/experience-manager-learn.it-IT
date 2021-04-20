@@ -3,7 +3,7 @@ title: Operazioni di base in AEM Sites
 seo-title: Creare una nuova pagina in Adobe Experience Manager Sites
 description: Il video seguente offre una panoramica delle operazioni di base nell’ambiente di authoring di AEM. Usa la console Sites come base.
 seo-description: Il video seguente offre una panoramica delle operazioni di base nell’ambiente di authoring di AEM. Usa la console Sites come base.
-feature: Editor pagina, Modelli modificabili
+feature: Page Editor, Editable Templates
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
@@ -11,9 +11,9 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4495
 thumbnail: 31784.jpg
-topic: Gestione dei contenuti
-role: Professionista
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -2,11 +2,11 @@
 title: Utilizzo di video Dynamic Media 360 e miniatura video personalizzata con AEM Assets
 description: I miglioramenti apportati al visualizzatore Dynamic Media in AEM 6.5 includono il supporto per il rendering video 360, 360 visualizzatori per contenuti multimediali (video360Social e video360VR) e la possibilità di selezionare miniature video personalizzate.
 sub-product: dynamic-media
-feature: Profili video
+feature: Video Profiles
 version: 6.3, 6.4, 6.5
-topic: Gestione dei contenuti
-role: Professionista
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

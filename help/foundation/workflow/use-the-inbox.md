@@ -2,10 +2,10 @@
 title: Come utilizzare la casella in entrata in AEM
 description: La inbox di AEM facilita la collaborazione e la visibilità nelle attività e nei flussi di lavoro.
 version: 6.3, 6.4, 6.5, cloud-service
-topic: Collaborazione
-feature: Casella in entrata
-role: Professionista
-level: Intermedio
+topic: Collaboration
+feature: Inbox
+role: Business Practitioner
+level: Intermediate
 kt: 159
 thumbnail: 16827.jpg
 translation-type: tm+mt

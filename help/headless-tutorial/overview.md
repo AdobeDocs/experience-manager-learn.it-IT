@@ -1,10 +1,10 @@
 ---
 title: Tutorial su AEM Headless
 description: Raccolta di esercitazioni sull’utilizzo di Adobe Experience Manager as a Headless CMS.
-feature: Frammenti di contenuto, API
-topic: Senza testa, gestione dei contenuti
-role: Developer (Sviluppatore)
-level: Principiante
+feature: Content Fragments, APIs
+topic: Headless, Content Management
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: db9f4d09dcc83f85c8d02d94c383fa456af88c24
 workflow-type: tm+mt

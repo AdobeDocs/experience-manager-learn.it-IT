@@ -2,12 +2,12 @@
 title: Crea un modello dati modulo basato sull’origine dati Salesforce
 description: Crea modello dati modulo con backup di un’origine dati RESTful
 solution: Experience Manager, Experience Manager Forms
-type: Documentazione
-role: Developer (Sviluppatore)
-level: Principiante, intermedio
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Moduli adattivi
-topic: Sviluppo
+feature: Adaptive Forms
+topic: Development
 kt: 7149
 thumbnail: 331756.jpg
 translation-type: tm+mt

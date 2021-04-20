@@ -1,7 +1,7 @@
 ---
 title: Risolvere i problemi di estensibilità di Asset Compute per AEM Assets
 description: Di seguito è riportato un indice dei problemi e degli errori comuni, insieme alle risoluzioni, che possono essere riscontrati durante lo sviluppo e la distribuzione di processi di lavoro Asset Compute personalizzati per AEM Assets.
-feature: Microservizi Asset Compute
+feature: Asset Compute Microservices
 topics: renditions, metadata, development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
-topic: Integrazioni, Sviluppo
-role: Developer (Sviluppatore)
-level: Intermedio, esperienza
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

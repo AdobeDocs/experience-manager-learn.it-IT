@@ -1,16 +1,16 @@
 ---
 title: Eseguire il debug remoto dell’SDK di AEM
 description: L’avvio rapido locale dell’SDK AEM consente il debug remoto di Java dall’IDE, consentendoti di analizzare l’esecuzione di codice in tempo reale in AEM per comprendere il flusso di esecuzione esatto.
-feature: Strumenti per gli sviluppatori
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5251
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante, intermedio
+topic: Development
+role: Developer
+level: Beginner, Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

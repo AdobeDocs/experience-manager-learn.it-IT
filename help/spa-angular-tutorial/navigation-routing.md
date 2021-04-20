@@ -2,7 +2,7 @@
 title: Aggiungi navigazione e indirizzamento | Guida introduttiva dell’Editor SPA di AEM e Angular
 description: Scopri come sono supportate più visualizzazioni nell’applicazione a pagina singola utilizzando AEM Pages e l’SDK per l’editor di applicazioni a pagina singola. La navigazione dinamica viene implementata utilizzando percorsi Angular e aggiunta a un componente Header esistente.
 sub-product: sites
-feature: Editor SPA
+feature: SPA Editor
 topics: development
 doc-type: tutorial
 version: cloud-service
@@ -11,8 +11,8 @@ audience: developer
 kt: 5312
 thumbnail: 5312-spa-angular.jpg
 topic: SPA
-role: Developer (Sviluppatore)
-level: Principiante
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

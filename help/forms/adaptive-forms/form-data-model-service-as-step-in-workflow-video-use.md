@@ -4,16 +4,16 @@ seo-title: Utilizzo del servizio Form Data Model come passaggio nel flusso di la
 description: A partire da AEM Forms 6.4, ora possiamo utilizzare Form Data Model come parte del flusso di lavoro AEM. Il video seguente illustra i passaggi necessari per configurare il passaggio Modello dati modulo in Flusso di lavoro AEM.
 seo-description: A partire da AEM Forms 6.4, ora possiamo utilizzare Form Data Model come parte del flusso di lavoro AEM. Il video seguente illustra i passaggi necessari per configurare il passaggio Modello dati modulo in Flusso di lavoro AEM.
 uuid: ecd5d5aa-01eb-48fb-872f-66c656ae14df.
-feature: Flusso di lavoro
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.4,6.5
 discoiquuid: c442f439-1e5d-4f96-85df-b818c28389ff
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Intermedio
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

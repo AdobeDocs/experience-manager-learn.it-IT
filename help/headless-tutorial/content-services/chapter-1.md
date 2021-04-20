@@ -3,10 +3,10 @@ title: Capitolo 1 - Configurazione e download delle esercitazioni - Content Serv
 seo-title: Guida introduttiva di AEM Content Services - Capitolo 1 - Configurazione delle esercitazioni
 description: Capitolo 1 dell’esercitazione AEM Headless sulla configurazione della linea di base per l’istanza AEM per l’esercitazione.
 seo-description: Capitolo 1 dell’esercitazione AEM Headless sulla configurazione della linea di base per l’istanza AEM per l’esercitazione.
-feature: Frammenti di contenuto, API
-topic: Senza testa, gestione dei contenuti
-role: Developer (Sviluppatore)
-level: Principiante
+feature: Content Fragments, APIs
+topic: Headless, Content Management
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

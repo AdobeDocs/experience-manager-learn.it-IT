@@ -1,15 +1,15 @@
 ---
 title: Best practice relative al sistema di stili con AEM Sites
 description: Un articolo dettagliato che illustra le best practice per l’implementazione del sistema di stili con Adobe Experience Manager Sites.
-feature: Sistema di stili
+feature: Style System
 topics: development, components, front-end-development
 audience: developer
 doc-type: article
 activity: understand
 version: 6.4, 6.5
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Intermedio, esperienza
+topic: Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

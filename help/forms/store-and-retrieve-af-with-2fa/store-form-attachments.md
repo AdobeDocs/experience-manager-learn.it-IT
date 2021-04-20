@@ -1,7 +1,7 @@
 ---
 title: Memorizzare gli allegati del modulo
 description: Estrai gli allegati del modulo e archiviali in una nuova posizione nell’archivio CRX.
-feature: Moduli adattivi
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 6537
 thumbnail: 6537.jpg
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Esperienza
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

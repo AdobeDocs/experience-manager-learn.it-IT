@@ -3,7 +3,7 @@ title: Authoring di una pagina in AEM Sites
 seo-title: Il video seguente illustra come creare una nuova pagina in Adobe Experience Manager Sites utilizzando l’interfaccia utente dell’Editor sito
 description: Il video seguente illustra come creare una nuova pagina in Adobe Experience Manager Sites utilizzando l’interfaccia utente dell’Editor sito
 seo-description: Il video seguente illustra come creare una nuova pagina in Adobe Experience Manager Sites utilizzando l’interfaccia utente dell’Editor sito
-feature: Editor pagina, Modelli modificabili
+feature: Page Editor, Editable Templates
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
@@ -11,9 +11,9 @@ activity: use
 version: 6.3, 6.4, 6.5
 kt: 4497
 thumbnail: 31828.jpg
-topic: Gestione dei contenuti
-role: Professionista
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

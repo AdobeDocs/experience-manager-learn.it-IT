@@ -1,7 +1,7 @@
 ---
 title: Creare il modulo MyAccount
 description: Crea il modulo myaccount per recuperare il modulo parzialmente compilato dopo aver verificato con successo l'ID applicazione e il numero di telefono.
-feature: Moduli adattivi
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 6599
 thumbnail: 6599.jpg
-topic: Sviluppo
-role: Professionista
-level: Principiante
+topic: Development
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

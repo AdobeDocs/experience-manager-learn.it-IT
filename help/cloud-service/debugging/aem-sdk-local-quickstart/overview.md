@@ -1,16 +1,16 @@
 ---
 title: Debug dell’SDK di AEM
 description: AEM SDK è l’ambiente di sviluppo principale utilizzato dagli sviluppatori e supporta una serie di modi per eseguire il debug di AEM e delle applicazioni distribuite.
-feature: Strumenti per gli sviluppatori
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: null
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante, intermedio
+topic: Development
+role: Developer
+level: Beginner, Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

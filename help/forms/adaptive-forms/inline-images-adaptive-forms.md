@@ -3,15 +3,15 @@ title: Visualizzazione di immagini in linea nei moduli adattivi
 seo-title: Visualizzazione di immagini in linea nei moduli adattivi
 description: Visualizzare le immagini caricate in linea nei moduli adattivi
 seo-description: Visualizzare le immagini caricate in linea nei moduli adattivi
-feature: Moduli adattivi
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Esperienza
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

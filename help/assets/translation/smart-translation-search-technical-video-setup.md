@@ -2,10 +2,10 @@
 title: Configurare la ricerca di traduzione avanzata con AEM Assets
 description: La funzione Ricerca di traduzione intelligente consente di utilizzare termini di ricerca non inglesi per risolvere i contenuti in inglese. Per impostare AEM per Smart Translation Search, è necessario installare e configurare il bundle Apache Oak Search Machine Translation OSGi, nonché i pacchetti linguistici Apache Joshua gratuiti e open source che contengono le regole di traduzione.
 version: 6.3, 6.4, 6.5
-feature: Ricerca
-topic: Gestione dei contenuti
-role: Developer (Sviluppatore)
-level: Principiante
+feature: Search
+topic: Content Management
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

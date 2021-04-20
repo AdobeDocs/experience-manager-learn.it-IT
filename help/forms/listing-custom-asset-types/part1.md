@@ -4,16 +4,16 @@ seo-title: Registrazione di tipi di risorse personalizzati
 description: Abilitazione dei tipi di risorse personalizzate per l’inserimento nell’elenco in AEMForms Portal
 seo-description: Abilitazione dei tipi di risorse personalizzate per l’inserimento nell’elenco in AEMForms Portal
 uuid: eaf29eb0-a0f6-493e-b267-1c5c4ddbe6aa
-feature: Moduli adattivi
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
 discoiquuid: 99944f44-0985-4320-b437-06c5adfc60a1
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Esperienza
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

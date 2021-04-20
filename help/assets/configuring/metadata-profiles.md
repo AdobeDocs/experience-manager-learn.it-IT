@@ -2,13 +2,13 @@
 title: Profili metadati
 description: I profili metadati consentono l’applicazione automatica dei metadati predefiniti alle risorse all’interno delle cartelle di risorse, riducendo il carico della gestione dei metadati per gli utenti AEM e aumentando la coerenza dei metadati.
 sub-product: assets
-feature: Metadati
+feature: Metadata
 version: cloud-service
 kt: 4984
 thumbnail: 33974.jpg
-topic: Gestione dei contenuti
-role: Professionista
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,10 +1,10 @@
 ---
 title: Supporto per la traduzione per i frammenti di contenuto AEM
 description: Scopri come localizzare e tradurre i frammenti di contenuto con Adobe Experience Manager. È inoltre possibile estrarre e tradurre le risorse multimediali diverse associate a un frammento di contenuto.
-feature: Frammenti di contenuto, Multi Site Manager
-topic: Localizzazione
-role: Professionista
-level: Intermedio
+feature: Content Fragments, Multi Site Manager
+topic: Localization
+role: Business Practitioner
+level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 201
 thumbnail: 18131.jpg

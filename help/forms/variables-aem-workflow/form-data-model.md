@@ -1,7 +1,7 @@
 ---
 title: Variabili del tipo di modello per dati modulo
 description: Utilizzo di variabili di tipo modello dati modulo in un flusso di lavoro AEM.
-feature: Flusso di lavoro
+feature: Workflow
 topics: development
 audience: developer
 doc-type: technical video
@@ -9,9 +9,9 @@ activity: understand
 version: 6.5
 kt: 6347
 thumbnail: 41238.jpg
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

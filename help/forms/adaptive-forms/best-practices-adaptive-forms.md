@@ -3,15 +3,15 @@ title: Convenzioni di denominazione e best practice da seguire per la creazione 
 seo-title: Convenzioni di denominazione e best practice da seguire per la creazione di moduli adattivi
 description: Convenzioni di denominazione e best practice da seguire per la creazione di moduli adattivi
 seo-description: Convenzioni di denominazione e best practice da seguire per la creazione di moduli adattivi
-feature: Moduli adattivi
+feature: Adaptive Forms
 topics: best-practices
 audience: developer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
-topic: Sviluppo
-role: Developer (Sviluppatore)
-level: Principiante
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

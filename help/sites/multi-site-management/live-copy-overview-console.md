@@ -1,7 +1,7 @@
 ---
 title: Console Live Copy
 description: Il video seguente spiega come visualizzare o gestire l’ereditarietà in un sito o eseguire operazioni di rollout utilizzando la console Panoramica Live Copy .
-feature: Copia lingua, Multi Site Manager
+feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -9,9 +9,9 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 5373
 thumbnail: 36680.jpg
-topic: Localizzazione
-role: Professionista
-level: Principiante
+topic: Localization
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

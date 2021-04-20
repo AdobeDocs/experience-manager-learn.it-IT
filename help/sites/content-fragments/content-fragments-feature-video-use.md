@@ -2,15 +2,15 @@
 title: Authoring di frammenti di contenuto in AEM
 description: 'I frammenti di contenuto sono un’astrazione di contenuto in AEM che consente di creare e gestire contenuti basati su testo indipendentemente dai canali supportati. '
 sub-product: content-services
-feature: Frammenti di contenuto
+feature: Content Fragments
 topics: authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
 version: cloud-service
-topic: Gestione dei contenuti
-role: Professionista
-level: Principiante
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -2,13 +2,13 @@
 title: Attività di revisione
 description: Scopri in che modo l’attività di revisione di AEM Assets facilita i flussi di lavoro di revisione e approvazione più comuni.
 sub-product: assets
-feature: Collaborazione
+feature: Collaboration
 version: cloud-service
 kt: 4670
 thumbnail: 32050.jpg
-topic: Collaborazione
-role: Professionista
-level: Principiante
+topic: Collaboration
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

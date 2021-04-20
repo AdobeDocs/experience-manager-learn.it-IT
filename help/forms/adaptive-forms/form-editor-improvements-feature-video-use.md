@@ -3,7 +3,7 @@ title: Miglioramenti dell’Editor moduli in AEM Forms
 seo-title: Miglioramenti dell’Editor moduli in AEM Forms
 description: AEM 6.3 introduce diverse nuove funzioni e miglioramenti in questa versione per semplificare l’esperienza di authoring di moduli e documenti adattivi. I miglioramenti consentono di ridurre i tempi di commercializzazione e consentono agli utenti aziendali di lavorare con moduli e documenti
 seo-description: AEM 6.3 introduce diverse nuove funzioni e miglioramenti in questa versione per semplificare l’esperienza di authoring di moduli e documenti adattivi. I miglioramenti consentono di ridurre i tempi di commercializzazione e consentono agli utenti aziendali di lavorare con moduli e documenti
-feature: Moduli adattivi
+feature: Adaptive Forms
 topics: authoring
 audience: developer
 doc-type: technical video
@@ -11,9 +11,9 @@ activity: setup
 version: 6.3,6.4,6.5
 uuid: 9e76a2b8-f843-47b8-abf8-596c64fbcbb6
 discoiquuid: 7a7bad50-c604-4182-accb-acb85571ba78
-topic: Sviluppo
-role: Professionista
-level: Principiante
+topic: Development
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
