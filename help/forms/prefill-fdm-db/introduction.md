@@ -1,21 +1,20 @@
 ---
 title: Precompilare il modulo utilizzando il modello dati del modulo
 description: 'Precompilare il modulo adattivo utilizzando l’attributo di richiesta del modello di dati del modulo '
-feature: Adaptive Forms
-topics: development
+feature: Moduli adattivi
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 kt: 4419
-thumbnail: kt-4419.jpg
-topic: Development
+thumbnail: 36387.jpg
+topic: sviluppo
 role: Business Practitioner
 level: Intermediate
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 98cfc9e007770e7a8291343bdd63fd523f747bb9
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '128'
 ht-degree: 3%
 
 ---
@@ -40,5 +39,5 @@ funzionalitàIl video seguente offre una panoramica del corso
 
 * Istanza di lavoro di AEM Forms
 * Familiare con il database MySQL e il workbench MySQL
-* Alcune esperienze nella creazione di moduli adattivi
+* Alcune esperienze nella creazione di Forms adattivo
 
