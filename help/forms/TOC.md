@@ -6,9 +6,9 @@ user-guide-description: Raccolta di risorse AEM Forms per sviluppatori principia
 breadcrumb-title: Tutorial di AEM Forms
 index: y
 translation-type: tm+mt
-source-git-commit: 1e945afddda3d7735005029952a9d7ec46828bc6
+source-git-commit: da7837d45a9d5f614a4f6527b7bfe98aaf980d4f
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '952'
 ht-degree: 6%
 
 ---
@@ -37,20 +37,21 @@ ht-degree: 6%
    + [Invio al punto finale esterno](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
    + [Invio di e-mail](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
    + [Flusso di lavoro della richiesta a pagamento](handling-form-submissions/paid-time-off-request-workflow.md)
-   + [Configurazione del modulo adattivo per attivare il flusso di lavoro AEM - video](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
+   + [Configurazione del modulo adattivo per attivare AEM flusso di lavoro - video](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
    + [Personalizzare la notifica di assegnazione attività](handling-form-submissions/customize-assign-task-notification.md)
 + Integrazioni utili{#some-useful-integrations}
    + [Autenticazione a due fattori](some-useful-integrations/two-factor-authentication.md)
    + [Estrazione dati OCR](some-useful-integrations/ocr-data-extraction.md)
 
 + Moduli adattivi {#adaptive-forms}
-   + [Installazione di AEM Forms su Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
-   + [Servizio di precompilazione nei moduli adattivi](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
-   + [Invio personalizzato in moduli adattivi](adaptive-forms/custom-submit-aem-forms-article.md)
-   + [Captcha in moduli adattivi](adaptive-forms/forms-captcha-feature-video-use.md)
+   + [Installazione di AEM Forms in Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
+   + [Installazione di pacchetti a 32 bit su Linux](adaptive-forms/installing-aem-form-on-linux.md)
+   + [Servizio di precompilazione in Forms adattivo](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
+   + [Invio personalizzato in Forms adattivo](adaptive-forms/custom-submit-aem-forms-article.md)
+   + [Captcha in Forms adattivo](adaptive-forms/forms-captcha-feature-video-use.md)
    + [Utilizzo di Imposta valore in XML nel flusso di lavoro OSGI](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
    + [Utilizzo del valore impostato in JSON nel flusso di lavoro OSGI](adaptive-forms/setvalue-json-data-in-aem-forms-workflow-article-use.md)
-   + [Invia componente e-mail nel flusso di lavoro di AEM Forms](adaptive-forms/email-step-aem-workflow-video-use.md)
+   + [Invia componente e-mail nel flusso di lavoro AEM Forms](adaptive-forms/email-step-aem-workflow-video-use.md)
    + [Generazione di DocumentOfRecord tramite API](adaptive-forms/document-of-record-api-tutorial-use.md)
    + [Visualizzazione delle immagini in linea](adaptive-forms/inline-images-adaptive-forms.md)
    + [Utilizzo dell’API GeoLocation](adaptive-forms/using-geolocation-api-in-aem-forms-article.md)
@@ -61,8 +62,8 @@ ht-degree: 6%
    + [Limitazione dell’accesso all’editor di regole](adaptive-forms/restricting-rule-editor-aem-forms-technical-video-use.md)
    + [Miglioramenti dell’editor di temi](adaptive-forms/theme-editor-improvements-feature-video-use.md)
    + [Miglioramenti all’Editor moduli](adaptive-forms/form-editor-improvements-feature-video-use.md)
-   + [Video Sul Test Automatizzato Dei Moduli Adattivi](adaptive-forms/calvin-sdk-test-adaptive-forms-feature-video.md)
-   + [Test Automatizzato Dei Moduli Adattivi](adaptive-forms/calvin-sdk-test-adaptive-forms-article-use.md)
+   + [Test Automatizzato Del Video Forms Adattivo](adaptive-forms/calvin-sdk-test-adaptive-forms-feature-video.md)
+   + [Test Automatizzato Di Forms Adattivo](adaptive-forms/calvin-sdk-test-adaptive-forms-article-use.md)
    + [Integrazione di LDAP con AEM Forms](adaptive-forms/aem-forms-workflow-with-ldap-article-use.md)
    + [Utilizzo dell’utente del servizio in AEM Forms](adaptive-forms/service-user-tutorial-develop.md)
    + [Assegnazione di tag e archiviazione dei dati relativi all’invio di moduli adattivi](adaptive-forms/tagging-and-saving-document-of-record-in-dam-article-use.md)
@@ -78,11 +79,11 @@ ht-degree: 6%
    + [Modello dati modulo basato su JDBC](adaptive-forms/jdbc-data-model-technical-video-use.md)
    + [Creare associazioni tra 2 entità nel modello dati modulo](adaptive-forms/association-data-model-technical-video-use.md)
    + [Utilizzo del servizio di richiamo di Form Data Model nell&#39;Editor regole](adaptive-forms/service-data-model-technical-video-use.md)
-   + [Pubblicare dati binari in AEM DAM utilizzando il modello dati del modulo](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
+   + [Pubblicare dati binari AEM DAM utilizzando il modello dati del modulo](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
    + [Creazione di modelli di flussi di lavoro riutilizzabili](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
-   + [Flusso di lavoro AEM per fase di processo personalizzata](adaptive-forms/custom-process-step-aem-workflow.md)
+   + [Flusso di lavoro del passaggio del processo personalizzato AEM](adaptive-forms/custom-process-step-aem-workflow.md)
    + [Modifica configurazione origine dati](adaptive-forms/modify-data-source-configuration-settings-article.md)
-   + [Precompilazione di moduli HTML5](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
+   + [Precompilazione di Forms HTML5](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Modello dati modulo con Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Aggiunta dinamica di elementi al componente Scelta](adaptive-forms/choice-group-items-adding-dynamically-article.md)
 + Precompilazione del modulo adattivo utilizzando il modello dati del modulo{#prefill-fdm-db}
@@ -117,16 +118,16 @@ ht-degree: 6%
    + [Introduzione](aem-forms-and-adobe-sign/introduction.md)
    + [Configurare SSL](aem-forms-and-adobe-sign/set-up-ssl.md)
    + [Creare un’applicazione API Adobe Sign](aem-forms-and-adobe-sign/create-adobe-sign-api-application.md)
-   + [Creare la configurazione cloud di Adobe Sign](aem-forms-and-adobe-sign/create-adobe-sign-cloud-configuration.md)
+   + [Creare la configurazione di Adobe Sign Cloud](aem-forms-and-adobe-sign/create-adobe-sign-cloud-configuration.md)
    + [Crea flusso di lavoro per l’invio del documento per la firma](aem-forms-and-adobe-sign/create-workflow-to-send-document-for-signing.md)
    + [Creare e configurare un modulo adattivo](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
    + [Configurare un modulo adattivo per il singolo firmatario](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
    + [Configurare un modulo adattivo per due firmatari](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
-   + [Configurazione del servizio di conversione automatica dei moduli](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
+   + [Configurare il servizio Automated forms conversion](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
    + [Conversione di moduli PDF in moduli adattivi](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Configurare il modulo adattivo convertito](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Utilizzo dei modelli XDP con Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
-+ Firma di più moduli{#sign-multiple-documents}
++ Firma multipla Forms{#sign-multiple-documents}
    + [Introduzione](sign-multiple-documents/introduction.md)
    + [Configura origine dati](sign-multiple-documents/configure-data-source.md)
    + [Crea servizio OSGi](sign-multiple-documents/create-osgi-service.md)
@@ -136,7 +137,7 @@ ht-degree: 6%
    + [Crea libreria client](sign-multiple-documents/create-client-lib.md)
    + [Crea modello di modulo](sign-multiple-documents/create-af-template.md)
    + [Crea modulo iniziale](sign-multiple-documents/create-initial-form.md)
-   + [Creare moduli per la firma](sign-multiple-documents/create-forms-for-signing.md)
+   + [Creare Forms per la firma](sign-multiple-documents/create-forms-for-signing.md)
    + [Verifica della soluzione](sign-multiple-documents/testing-and-trouble-shooting.md)
 + Variabili nel flusso di lavoro AEM{#variables-aem-workflow}
    + [Introduzione - Variabili nel flusso di lavoro](variables-aem-workflow/introduction.md)
@@ -154,7 +155,7 @@ ht-degree: 6%
    + [Libreria client](storing-retrieving-form-data/part4.md)
    + [Modello modulo adattivo](storing-retrieving-form-data/part5.md)
    + [Distribuire risorse di esempio](storing-retrieving-form-data/part6.md)
-+ Attivazione del flusso di lavoro AEM dall’invio di moduli mobili{#offline-mobile-form-submission}
++ Attivazione AEM flusso di lavoro dall’invio di moduli mobili{#offline-mobile-form-submission}
    + [Introduzione](offline-mobile-form-submission/introduction.md)
    + [Profilo personalizzato](offline-mobile-form-submission/part-one.md)
    + [Gestisci invio PDF](offline-mobile-form-submission/part-two.md)
@@ -166,7 +167,7 @@ ht-degree: 6%
    + [Archiviare i dati inviati](querying-submitted-data/part2.md)
    + [Archiviare lo schema JSON](querying-submitted-data/part3.md)
    + [Eseguire la query dei dati inviati](querying-submitted-data/part4.md)
-+ Elenco dei tipi di risorse personalizzate nel portale dei moduli{#listing-custom-asset-types}
++ Elenco dei tipi di risorse personalizzate in Forms Portal{#listing-custom-asset-types}
    + [Parte1 - Registrazione di tipi di risorse personalizzate](listing-custom-asset-types/part1.md)
    + [Parte2 - Creazione di un modello personalizzato](listing-custom-asset-types/part2.md)
 + AEM Forms con Marketo{#aem-forms-with-marketo}
@@ -182,13 +183,13 @@ ht-degree: 6%
    + [Parte 3 - Precompilazione del modulo tramite informazioni sul profilo ACS](aem-forms-with-adobe-campaign/partthree.md)
    + [Parte4 - Crea profilo ACS utilizzando il modello dati modulo](aem-forms-with-adobe-campaign/partfour.md)
 
-+ Document Services {#document-services}
-   + [Tipi di moduli PDF](document-services/pdf-forms-and-documents.md)
++ Servizi documentali {#document-services}
+   + [Tipi di PDF forms](document-services/pdf-forms-and-documents.md)
    + [Utilizzo del servizio Assembler in AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
-   + [Utilizzo della cartella di controllo in AEM Forms](document-services/watched-folders-document-services-article-use.md)
-   + [Uso del servizio codice a barre in AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
+   + [Utilizzo di una cartella osservata in AEM Forms](document-services/watched-folders-document-services-article-use.md)
+   + [Utilizzo del servizio codice a barre in AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
    + [Utilizzo del servizio PDFG in AEM Forms](document-services/using-pdfg-in-aem-forms.md)
-   + [Utilizzo del servizio Output e Forms in AEM Forms](document-services/output-and-forms-services-article-develop.md)
+   + [Utilizzo di Output e del servizio Forms in AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Generazione di più pdf da un file di dati](document-services/generate-multi-record-pdf.md)
    + [Genera PDF su invio modulo mobile](document-services/generate-pdf-from-mobile-form-submission-article.md)
    + [Genera PDF interattivo da modulo mobile](document-services/render-interactive-form-using-api.md)
@@ -217,7 +218,7 @@ ht-degree: 6%
    + [Genera documenti del canale di stampa dai dati inviati](interactive-communications/merge-data-with-ic-template.md)
    + [Utilizzo delle funzioni di riduzione](interactive-communications/reducer-functions-in-charts-aem-forms-video-use.md)
    + [Layout a due colonne nei documenti del canale di stampa](interactive-communications/two-column-layout-aem-forms-article-use.md)
-   + [Utilizzo del componente Tabella nel documento del canale di stampa di AEM Forms](interactive-communications/table-in-print-channel-documents-video-use.md)
+   + [Utilizzo del componente Tabella nel documento del canale di stampa AEM Forms](interactive-communications/table-in-print-channel-documents-video-use.md)
    + [Generazione del documento di comunicazione interattiva per il canale di stampa tramite Cartelle di controllo](interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
 
 + Comunicazioni interattive per il canale web {#ic-web-channel-tutorial}
