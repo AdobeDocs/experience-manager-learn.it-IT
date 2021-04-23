@@ -11,17 +11,36 @@ activity: develop, understand
 kt: 2963
 index: y
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 30%
+source-wordcount: '117'
+ht-degree: 28%
 
 ---
 
 
 # Guida introduttiva ad AEM Headless{#getting-started-with-aem-headless}
 
-+ [Panoramica di AEM Headless](./overview.md)
++ [Panoramica AEM headless](./overview.md)
++ GraphQL {#graphql}
+   + [Panoramica](./graphql/overview.md)
+   + Serie video{#video-series}
+      + [1 - Nozioni di base sulla modellazione](./graphql/video-series/modeling-basics.md)
+      + [2 - Modellazione avanzata](./graphql/video-series/advanced-modeling.md)
+      + [3 - Creazione di query GraphQL](./graphql/video-series/creating-graphql-queries.md)
+   + Tutorial a più passaggi{#multi-step}
+      + [Panoramica](./graphql/multi-step/overview.md)
+      + [1 - Configurazione rapida](./graphql/multi-step/setup.md)
+      + [2 - Definizione dei modelli di frammenti di contenuto](./graphql/multi-step/content-fragment-models.md)
+      + [3 - Authoring di frammenti di contenuto](./graphql/multi-step/author-content-fragments.md)
+      + [4 - Esplorare le API GraphQL](./graphql/multi-step/explore-graphql-api.md)
+      + [5 - Query da un’app esterna](./graphql/multi-step/graphql-and-external-app.md)
+      + [6 - Modellazione dati avanzata con riferimenti a frammenti](./graphql/multi-step/fragment-references.md)
+      + [7 - Distribuzione di produzione](./graphql/multi-step/production-deployment.md)
++ Autenticazione basata su token {#authentication}
+   + [Panoramica](./authentication/overview.md)
+   + [1 - Token di accesso per lo sviluppo locale](./authentication/local-development-access-token.md)
+   + [2 - Credenziali del servizio](./authentication/service-credentials.md)
 + Content Services {#content-services}
    + [Panoramica](./content-services/overview.md)
    + [1 - Configurazione del tutorial](./content-services/chapter-1.md)
@@ -31,16 +50,3 @@ ht-degree: 30%
    + [5 - Authoring delle pagine dei servizi per i contenuti](./content-services/chapter-5.md)
    + [6 - Esposizione dei contenuti su AEM Publish per la distribuzione](./content-services/chapter-6.md)
    + [7 - Utilizzo di AEM Content Services da un’app mobile](./content-services/chapter-7.md)
-+ GraphQL {#graphql}
-   + [Panoramica](./graphql/overview.md)
-   + [1 - Configurazione rapida](./graphql/setup.md)
-   + [2 - Definizione dei modelli di frammenti di contenuto](./graphql/content-fragment-models.md)
-   + [3 - Authoring di frammenti di contenuto](./graphql/author-content-fragments.md)
-   + [4 - Esplorare le API GraphQL](./graphql/explore-graphql-api.md)
-   + [5 - Query da un’app esterna](./graphql/graphql-and-external-app.md)
-   + [6 - Modellazione dati avanzata con riferimenti a frammenti](./graphql/fragment-references.md)
-   + [7 - Distribuzione di produzione](./graphql/production-deployment.md)
-+ Autenticazione basata su token {#authentication}
-   + [Panoramica](./authentication/overview.md)
-   + [1 - Token di accesso per lo sviluppo locale](./authentication/local-development-access-token.md)
-   + [2 - Credenziali del servizio](./authentication/service-credentials.md)
