@@ -2,19 +2,16 @@
 title: Guida introduttiva ad AEM Sites - Archetipo di progetto
 description: Guida introduttiva ad AEM Sites - Archetipo di progetto. L’esercitazione WKND è un tutorial in più parti progettato per gli sviluppatori che non hanno mai utilizzato Adobe Experience Manager. Il tutorial illustra l’implementazione di un sito AEM per un brand di lifestyle fittizio, il WKND. L’esercitazione tratta argomenti fondamentali come la configurazione del progetto, gli archetipi Maven, i componenti core, i modelli modificabili, le librerie client e lo sviluppo dei componenti.
 sub-product: sites
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
-mini-toc-levels: 1
-index: y
+version: 6.4, 6.5, Cloud Service
+type: Tutorial
 feature: Componenti core, Editor pagina, Modelli modificabili, Archetipo AEM progetto
 topic: Gestione dei contenuti, sviluppo
 role: Developer
 level: Beginner
+mini-toc-levels: 1
+index: y
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 20%
