@@ -2,22 +2,19 @@
 title: Librerie lato client e flusso di lavoro front-end
 description: Scopri come le librerie lato client o le librerie client vengono utilizzate per distribuire e gestire CSS e JavaScript per un’implementazione di Adobe Experience Manager (AEM) Sites. Questa esercitazione illustra anche come il modulo ui.frontend, un progetto webpack, può essere integrato nel processo di compilazione end-to-end.
 sub-product: sites
-topics: front-end-development,responsive
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
-kt: 4083
-thumbnail: 30359.jpg
+version: 6.4, 6.5, Cloud Service
+type: Tutorial
 feature: Componenti core, AEM Project Archetype
 topic: Gestione dei contenuti, sviluppo
 role: Developer
 level: Beginner
+kt: 4083
+thumbnail: 30359.jpg
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '3299'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -63,7 +60,7 @@ Controlla il codice della riga di base su cui si basa l&#39;esercitazione:
 
 Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/client-side-libraries-solution) o estrarre il codice localmente passando al ramo `tutorial/client-side-libraries-solution`.
 
-## Obiettivo
+## Obiettivi
 
 1. Scopri come le librerie lato client vengono incluse in una pagina tramite un modello modificabile.
 1. Scopri come utilizzare il modulo UI.Frontend e un server di sviluppo webpack per lo sviluppo front-end dedicato.
