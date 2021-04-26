@@ -14,9 +14,9 @@ topic: Gestione dei contenuti, sviluppo
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: e8c36a85bc47adbf76e614f245c3f47d7a50826e
 workflow-type: tm+mt
-source-wordcount: '3022'
+source-wordcount: '3016'
 ht-degree: 0%
 
 ---
@@ -213,7 +213,9 @@ I test di unità generalmente vengono mappati da 1 a 1 con classi Java. In quest
    Il suffisso `Test` sul file di prova dell&#39;unità, `BylineImplTest.java` è una convenzione che ci consente di:
 
    1. Identificalo facilmente come file di prova _per_ `BylineImpl.java`
-   2. Ma anche, differenziare il file di test _da_ la classe in fase di test, `BylineImpl.java`
+   1. Ma anche, differenziare il file di prova _da_ la classe in fase di test, `BylineImpl.java`
+
+
 
 ## Revisione di BylineImplTest.java {#reviewing-bylineimpltest-java}
 
