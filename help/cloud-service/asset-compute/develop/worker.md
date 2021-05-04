@@ -1,7 +1,7 @@
 ---
 title: Sviluppare un processo di lavoro Asset compute
 description: I processi di lavoro di Asset compute costituiscono il nucleo di un progetto di Asset compute, in quanto forniscono funzionalità personalizzate che eseguono o orchestrano il lavoro eseguito su una risorsa per creare un nuovo rendering.
-feature: Asset Compute Microservices
+feature: Microservizi di Asset compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,13 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
-topic: Integrations, Development
+topic: Integrazioni, Sviluppo
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: 1e5d8171832ec6b26969a8485ae970e295962828
+source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1426'
 ht-degree: 0%
 
 ---
@@ -340,6 +340,7 @@ Ora che il codice del lavoratore è completo ed è stato precedentemente registr
        ]
    }
    ```
+
 1. Tocca __Esegui__ e attendi che il rendering venga generato
 1. La sezione __Rendering__ visualizza in anteprima il rendering generato. Tocca l’anteprima del rendering per scaricare il rendering completo
 
