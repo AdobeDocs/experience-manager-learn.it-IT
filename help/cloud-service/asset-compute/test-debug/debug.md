@@ -1,7 +1,7 @@
 ---
-title: Debug di un processo di lavoro di Asset Compute
-description: Il debug dei processi di lavoro di Asset Compute può essere eseguito in diversi modi, dalle semplici istruzioni di registro di debug, al codice VS allegato come debugger remoto, fino all’estrazione dei registri per le attivazioni in Adobe I/O Runtime avviati da AEM as a Cloud Service.
-feature: Asset Compute Microservices
+title: Debug di un processo di lavoro Asset compute
+description: Il debug dei processi di lavoro di Asset compute può essere eseguito in diversi modi, dalle semplici istruzioni di log di debug, al codice VS allegato come debugger remoto, all’estrazione dei registri per le attivazioni in Adobe I/O Runtime iniziate da AEM come Cloud Service.
+feature: Microservizi di Asset compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,27 +9,27 @@ audience: developer
 doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
-topic: Integrations, Development
+topic: Integrazioni, Sviluppo
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
 
-# Debug di un processo di lavoro di Asset Compute
+# Debug di un processo di lavoro Asset compute
 
-Il debug dei processi di lavoro di Asset Compute può essere eseguito in diversi modi, dalle semplici istruzioni di registro di debug, al codice VS allegato come debugger remoto, fino all’estrazione dei registri per le attivazioni in Adobe I/O Runtime avviati da AEM as a Cloud Service.
+Il debug dei processi di lavoro di Asset compute può essere eseguito in diversi modi, dalle semplici istruzioni di log di debug, al codice VS allegato come debugger remoto, all’estrazione dei registri per le attivazioni in Adobe I/O Runtime iniziate da AEM come Cloud Service.
 
 ## Registrazione
 
-La forma più semplice di debugging dei processi di lavoro Asset Compute utilizza istruzioni `console.log(..)` tradizionali nel codice del processo di lavoro. L&#39;oggetto JavaScript `console` è un oggetto globale implicito, pertanto non è necessario importarlo o richiederlo, in quanto è sempre presente in tutti i contesti.
+La forma più semplice di debugging dei processi di lavoro Asset compute utilizza istruzioni `console.log(..)` tradizionali nel codice del processo di lavoro. L&#39;oggetto JavaScript `console` è un oggetto globale implicito, pertanto non è necessario importarlo o richiederlo, in quanto è sempre presente in tutti i contesti.
 
-Queste istruzioni di registro sono disponibili per la revisione in modo diverso in base alla modalità di esecuzione del processo di lavoro Asset Compute:
+Queste istruzioni di registro sono disponibili per la revisione in modo diverso in base alla modalità di esecuzione del processo di lavoro Asset compute:
 
 + Da `aio app run`, i registri stampano su uscita standard e i registri di attivazione [dello strumento di sviluppo](../develop/development-tool.md)
    ![esegui console.log(..)](./assets/debug/console-log__aio-app-run.png)
@@ -45,11 +45,11 @@ Queste istruzioni di registro sono disponibili per la revisione in modo diverso 
 >
 >Utilizzare Microsoft Visual Studio Code 1.48.0 o versione successiva per la compatibilità con wskdebug
 
-Il modulo npm [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) supporta l’associazione di un debugger ai processi di lavoro di Asset Compute, inclusa la possibilità di impostare punti di interruzione nel codice VS e di scorrere il codice.
+Il modulo npm [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) supporta l&#39;associazione di un debugger ai processi di lavoro di Asset compute, inclusa la possibilità di impostare punti di interruzione nel codice VS e di passare attraverso il codice.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40383/?quality=12&learn=on)
 
-_Click-through del debug di un processo di lavoro Asset Compute utilizzando wskdebug (nessun audio)_
+_Click-through di debugging di un processo di lavoro Asset compute utilizzando wskdebug (nessun audio)_
 
 1. Assicurati che i moduli [wskdebug](../set-up/development-environment.md#wskdebug) e [ngrok](../set-up/development-environment.md#ngork) npm siano installati
 1. Assicurati che [Docker Desktop e le immagini Docker di supporto](../set-up/development-environment.md#docker) siano installate ed in esecuzione
@@ -59,7 +59,8 @@ _Click-through del debug di un processo di lavoro Asset Compute utilizzando wskd
    ```
    ℹ Info: Deploying package [wkndAemAssetCompute-0.0.1]...
    ```
-1. Avvia una nuova istanza di Asset Compute Development Tool utilizzando il comando `npx adobe-asset-compute devtool`
+
+1. Avvia una nuova istanza di Asset compute Development Tool utilizzando il comando `npx adobe-asset-compute devtool`
 1. In Codice VS, tocca l’icona Debug nella navigazione a sinistra
    + Se richiesto, tocca __crea un file launch.json > Node.js__ per creare un nuovo file `launch.json`.
    + In caso contrario, tocca l’icona __Gear__ a destra del menu a discesa __Avvia programma__ per aprire il `launch.json` esistente nell’editor.
@@ -87,14 +88,14 @@ _Click-through del debug di un processo di lavoro Asset Compute utilizzando wskd
 
 1. Seleziona il nuovo __wskdebug__ dal menu a discesa
 1. Toccare il pulsante verde __Esegui__ a sinistra del menu a discesa __wskdebug__
-1. Apri `/actions/worker/index.js` e tocca a sinistra dei numeri di riga per aggiungere punti di interruzione 1. Passare alla finestra del browser dello strumento di sviluppo Asset Compute aperta nel passaggio 6
+1. Apri `/actions/worker/index.js` e tocca a sinistra dei numeri di riga per aggiungere punti di interruzione 1. Passare alla finestra del browser Web dello strumento di sviluppo Asset compute aperta nel passaggio 6
 1. Toccare il pulsante __Esegui__ per eseguire il processo di lavoro
 1. Torna a Codice VS, a `/actions/worker/index.js` e passa attraverso il codice
 1. Per uscire dallo strumento di sviluppo debug, tocca `Ctrl-C` nel terminale che eseguiva il comando `npx adobe-asset-compute devtool` al punto 6
 
 ## Accesso ai registri da Adobe I/O Runtime{#aio-app-logs}
 
-[AEM as a Cloud Service sfrutta i processi di lavoro Asset Compute tramite ](../deploy/processing-profiles.md) Profili di elaborazione richiamandoli direttamente in Adobe I/O Runtime. Poiché queste chiamate non richiedono lo sviluppo locale, non è possibile eseguire il debug delle relative esecuzioni utilizzando strumenti locali come Asset Compute Development Tool o wskdebug. È invece possibile utilizzare Adobe I/O CLI per recuperare i registri dal processo di lavoro eseguito in una particolare area di lavoro in Adobe I/O Runtime.
+[AEM as a Cloud Service sfrutta i lavoratori Asset compute tramite ](../deploy/processing-profiles.md) Profili di elaborazione richiamandoli direttamente in Adobe I/O Runtime. Poiché queste chiamate non richiedono lo sviluppo locale, non è possibile eseguire il debug delle loro esecuzioni utilizzando strumenti locali come Asset compute Development Tool o wskdebug. È invece possibile utilizzare Adobe I/O CLI per recuperare i registri dal processo di lavoro eseguito in una particolare area di lavoro in Adobe I/O Runtime.
 
 1. Assicurati che le [variabili di ambiente specifiche per l&#39;area di lavoro](../deploy/runtime.md) siano impostate tramite `AIO_runtime_namespace` e `AIO_runtime_auth`, in base all&#39;area di lavoro che richiede il debug.
 1. Dalla riga di comando, esegui `aio app logs`
