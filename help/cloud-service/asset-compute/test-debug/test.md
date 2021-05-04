@@ -1,7 +1,7 @@
 ---
-title: Test di un processo di lavoro Asset Compute
-description: Il progetto Asset Compute definisce un pattern per creare ed eseguire facilmente i test dei processi di lavoro Asset Compute.
-feature: Asset Compute Microservices
+title: Test di un lavoratore Asset compute
+description: Il progetto di Asset compute definisce un pattern per creare ed eseguire facilmente test di operai Asset compute.
+feature: Microservizi di Asset compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,27 +9,27 @@ audience: developer
 doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
-topic: Integrations, Development
+topic: Integrazioni, Sviluppo
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
 
 
-# Test di un processo di lavoro Asset Compute
+# Test di un lavoratore Asset compute
 
-Il progetto Asset Compute definisce un pattern per creare ed eseguire facilmente [test di Asset Compute Workers](https://docs.adobe.com/content/help/en/asset-compute/using/extend/test-custom-application.html).
+Il progetto di Asset compute definisce un pattern per creare ed eseguire facilmente [test di Asset compute worker](https://docs.adobe.com/content/help/en/asset-compute/using/extend/test-custom-application.html).
 
 ## Anatomia di un test operaio
 
-I test dei processi di lavoro di Asset Compute vengono suddivisi in suite di test e, all’interno di ogni suite di test, uno o più casi di test che affermano una condizione da testare.
+I test dei lavoratori Asset compute vengono suddivisi in suite di test e all’interno di ogni suite di test, uno o più casi di test che affermano una condizione da sottoporre a test.
 
-La struttura dei test in un progetto Asset Compute è la seguente:
+La struttura dei test in un progetto di Asset compute è la seguente:
 
 ```
 /actions/<worker-name>/index.js
@@ -80,7 +80,9 @@ Questo caso di test afferma l&#39;input parametrizzato (`params.json`) per il fi
        "brightness": "-0.50"
    }
    ```
-   Si tratta degli stessi valori chiave/i passati nella definizione del profilo Asset Compute dello strumento di sviluppo ](../develop/development-tool.md), meno la chiave `worker`.[
+
+   Si tratta degli stessi chiave/valori passati nella definizione del profilo Asset compute dello strumento di sviluppo ](../develop/development-tool.md), meno la chiave `worker`.[
+
 1. Aggiungi il file di rendering [previsto](./assets/test/success-parameterized/rendition.png) a questo test case e denominalo `rendition.png`. Questo file rappresenta l&#39;output previsto del processo di lavoro per l&#39;input specificato `file.jpg`.
 1. Dalla riga di comando, esegui i test della directory principale del progetto eseguendo `aio app test`
    + Assicurati che [Docker Desktop](../set-up/development-environment.md#docker) e che le immagini Docker di supporto siano installate e avviate
