@@ -8,9 +8,9 @@ level: Beginner
 kt: 7629
 thumbnail: kt-7629.jpeg
 translation-type: tm+mt
-source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
+source-git-commit: d3a237b196ac872beda6119c854a0cae29510437
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '794'
 ht-degree: 5%
 
 ---
@@ -32,8 +32,11 @@ Questa esercitazione richiede quanto segue:
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
++ prerequisiti solo per macOS
+   + [Strumenti da riga di comando ](https://developer.apple.com/xcode/) Xcodeor  [Xcode](https://developer.apple.com/xcode/resources/)
 + [aem-guides-wknd.all.0.3.0.zip o versione successiva](https://github.com/adobe/aem-guides-wknd/releases)
 + [codice sorgente aem-guides-wknd-graphql](https://github.com/adobe/aem-guides-wknd-graphql)
+
 
 Questa esercitazione presuppone:
 
@@ -90,7 +93,8 @@ Scarica il codice sorgente dell’app WKND da Github.com e cambia il ramo conten
 ```
 $ mkdir -p ~/Code/wknd-app
 $ cd ~/Code/wknd-app
-$ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
+$ git clone https://github.com/adobe/aem-guides-wknd-graphql.git
+$ cd aem-guides-wknd-graphql
 $ git checkout -b feature/spa-editor
 $ git pull origin feature/spa-editor
 ```
@@ -146,6 +150,8 @@ Prima di creare contenuti, disponi le finestre del browser in modo che AEM Autho
 1. Tocca la scheda __Bali Surf Camp__ e naviga al suo percorso dinamico
 1. Aggiungi, modifica o rimuovi componenti dal componente contenitore che si trova sopra l’intestazione __Itinerario__
 1. Aggiorna il SPA in esecuzione su `http://localhost:3000` e osserva che le modifiche sono riflesse
+
+Le nuove pagine AEM sotto la __Home page dell&#39;app WKND > Avventura__ _deve_ hanno un nome di pagina AEM che corrisponde al nome del frammento di contenuto dell&#39;avventura corrispondente. Questo perché il percorso SPA per AEM mappatura pagina è basato sull’ultimo segmento del percorso, che è il nome del frammento di contenuto.
 
 ## Congratulazioni!
 
