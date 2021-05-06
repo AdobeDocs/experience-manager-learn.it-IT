@@ -9,19 +9,26 @@ activity: use
 version: cloud-service
 kt: 6872, 6875
 thumbnail: 26317.jpg
-topic: Architecture
+topic: Architettura
 role: Architect, Developer, Administrator
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: e295d77a11c99310aaae10ecb8a2eaa20ad49285
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 1%
+source-wordcount: '179'
+ht-degree: 2%
 
 ---
 
 
 # Utilizzo di Adobe Cloud Manager - Pipeline di produzione CI/CD
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_devops_prodpipeline"
+>title="Pipeline di produzione CI/CD"
+>abstract="La configurazione della pipeline di produzione CI/CD definisce il trigger che avvierà la pipeline, i parametri che controllano la distribuzione di produzione e i parametri del test delle prestazioni."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-process" text="Implementare il codice"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-production-phase" text="Fase di implementazione a produzione"
 
 ## Configurazione
 
