@@ -1,24 +1,31 @@
 ---
-title: Distribuzione di progetti AEM codice da AEM come Cloud Service
-description: Esplora la distribuzione di un progetto di codice AEM da AEM come Cloud Service utilizzando Cloud Manager.
+title: Distribuzione di progetti di codice AEM in AEM come Cloud Service
+description: Esplora la distribuzione di un progetto di codice AEM per AEM come Cloud Service utilizzando Cloud Manager.
 role: Developer
 level: Beginner
 type: Tutorial
-topic: Development
-feature: Developer Tools
+topic: Sviluppo
+feature: Strumenti per gli sviluppatori
 kt: 6912
 thumbnail: 330534.jpg
 translation-type: tm+mt
-source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
+source-git-commit: e295d77a11c99310aaae10ecb8a2eaa20ad49285
 workflow-type: tm+mt
-source-wordcount: '48'
-ht-degree: 0%
+source-wordcount: '102'
+ht-degree: 2%
 
 ---
 
 
 # Distribuzione del codice
 
-Integrare il repository git del gestore cloud con un repository git esterno e distribuire un progetto da AEM come Cloud Service
+>[!CONTEXTUALHELP]
+>id="aemcloud_devops_deploycode"
+>title="Distribuzione del codice"
+>abstract="Integra l’archivio Git di cloud manager con un archivio Git esterno e implementa un progetto da AEM come Cloud Service"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/merge-projects.html?lang=en#cloud-manager" text="Unisci progetti"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#how-to-use" text="Distribuzione del codice con Cloud Manager"
+
+Integra l’archivio Git di cloud manager con un archivio Git esterno e implementa un progetto da AEM come Cloud Service
 
 >[!VIDEO](https://video.tv.adobe.com/v/330534/?quality=12&learn=on)
