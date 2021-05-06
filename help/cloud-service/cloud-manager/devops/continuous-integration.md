@@ -1,24 +1,30 @@
 ---
-title: Utilizzo dell'integrazione continua con AEM Cloud Manager
-description: Comprendi le best practice e l'integrazione continua utilizzando  Adobe Cloud Manager.
+title: Utilizzo dell’integrazione continua con AEM Cloud Manager
+description: Comprendi le best practice e l’integrazione continua utilizzando Adobe Cloud Manager.
 role: Developer
 level: Beginner
 type: Tutorial
-topic: Development
-feature: Developer Tools
+topic: Sviluppo
+feature: Strumenti per gli sviluppatori
 kt: 6914
 thumbnail: 330536.jpg
 translation-type: tm+mt
-source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
+source-git-commit: e295d77a11c99310aaae10ecb8a2eaa20ad49285
 workflow-type: tm+mt
-source-wordcount: '32'
-ht-degree: 0%
+source-wordcount: '64'
+ht-degree: 10%
 
 ---
 
 
 # Integrazione continua e Cloud Manager
 
-Comprendi le best practice e l&#39;integrazione continua utilizzando  Adobe Cloud Manager.
+>[!CONTEXTUALHELP]
+>id="aemcloud_devops_cicd"
+>title="Integrazione continua e Cloud Manager"
+>abstract="Comprendi le best practice e l’integrazione continua utilizzando Adobe Cloud Manager."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#non-production-pipelines" text="Configurazione della pipeline CI-CD"
+
+Comprendi le best practice e l’integrazione continua utilizzando Adobe Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330536/?quality=12&learn=on)
