@@ -1,34 +1,34 @@
 ---
-title: Altri strumenti per il debug dell’SDK di AEM
-description: Diversi altri strumenti possono facilitare il debug dell’avvio rapido locale dell’SDK AEM.
-feature: Developer Tools
+title: Altri strumenti per il debug AEM SDK
+description: Diversi altri strumenti possono facilitare il debug dell'avvio rapido locale dell'SDK AEM.
+feature: Strumenti per gli sviluppatori
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5251
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner, Intermediate
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 5fcc7eec120debf1a8ac08716154599467e66759
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 5%
+source-wordcount: '222'
+ht-degree: 7%
 
 ---
 
 
-# Altri strumenti per il debug dell’SDK di AEM
+# Altri strumenti per il debug AEM SDK
 
-L’avvio rapido locale dell’SDK AEM consente di eseguire il debug dell’applicazione con altri strumenti.
+L’avvio rapido locale dell’SDK di AEM può essere utile con diversi altri strumenti per il debug dell’applicazione.
 
 ## CRXDE Lite
 
 ![CRXDE Lite](./assets/other-tools/crxde-lite.png)
 
-CRXDE Lite è un&#39;interfaccia basata sul Web per interagire con JCR, l&#39;archivio dati di AEM. CRXDE Lite offre una visibilità completa nel JCR, compresi nodi, proprietà, valori di proprietà e autorizzazioni.
+CRXDE Lite è un’interfaccia basata su Web per interagire con JCR, AEM archivio dati. CRXDE Lite offre una visibilità completa del JCR, compresi nodi, proprietà, valori di proprietà e autorizzazioni.
 
 CRXDE Lite si trova in:
 
@@ -39,7 +39,7 @@ CRXDE Lite si trova in:
 
 ![Spiega query](./assets/other-tools/explain-query.png)
 
-Spiega lo strumento web basato su query nell’avvio rapido locale dell’SDK di AEM, che fornisce informazioni chiave su come AEM interpreta ed esegue le query, e uno strumento prezioso per garantire che le query vengano eseguite in modo performante da AEM.
+Spiega lo strumento basato su web Query nell’avvio rapido locale AEM’SDK, che fornisce informazioni chiave su come AEM interpreta ed esegue le query, e uno strumento prezioso per garantire che le query vengano eseguite in modo performante da AEM.
 
 Spiega query si trova in:
 
@@ -50,19 +50,9 @@ Spiega query si trova in:
 
 ![Debugger di QueryBuilder](./assets/other-tools/query-debugger.png)
 
-Il debugger di QueryBuilder è uno strumento basato su Web che consente di eseguire il debug e comprendere le query di ricerca utilizzando la sintassi [QueryBuilder](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) di AEM.
+Il debugger di QueryBuilder è uno strumento basato su Web che consente di eseguire il debug e comprendere le query di ricerca utilizzando AEM sintassi [QueryBuilder](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
 
 Il debugger di QueryBuilder si trova in:
 
 + [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
-
-## Sling Log Tracer e plug-in AEM Chrome
-
-![Sling Log Tracer e plug-in AEM Chrome](./assets/other-tools/log-tracer.png)
-
-[Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html), fornito con l’avvio rapido locale dell’SDK di AEM, consente un tracciamento approfondito delle richieste HTTP, esponendo informazioni di debug approfondite per richiesta. Per abilitare questa funzione, è necessario configurare la configurazione [Log Tracer OSGi](https://sling.apache.org/documentation/bundles/log-tracers.html#configuration-1).
-
-Il plug-in open source [AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US) per il [browser Web Google Chrome](https://www.google.com/chrome/) si integra con Log Tracer, esponendo le informazioni di debug direttamente in Chrome’s Dev Tools.
-
-_Il plug-in AEM Chrome è uno strumento open source e Adobe non lo supporta._
 
