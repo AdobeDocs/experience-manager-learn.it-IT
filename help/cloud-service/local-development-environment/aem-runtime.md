@@ -13,7 +13,7 @@ topic: Sviluppo
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
+source-git-commit: d49ae402b332ba972a78cdbd8f5bf962b91c83b1
 workflow-type: tm+mt
 source-wordcount: '1734'
 ht-degree: 2%
@@ -229,7 +229,7 @@ Per avviare il servizio AEM Author, `cd` nella directory contenente il file Jar 
 
 oppure, per avviare il servizio di pubblicazione AEM, `cd` nella directory contenente il file Jar Quickstart ed esegui il comando:
 
-`$ java -jar aem-author-p4503.jar`
+`$ java -jar aem-publish-p4503.jar`
 
 ## L&#39;avvio di Jar Quickstart dalla riga di comando interrompe immediatamente{#troubleshooting-java-8}
 
@@ -246,7 +246,7 @@ java.lang.Exception: Quickstart requires a Java Specification 11 VM, but your VM
 Quickstart: aborting
 ```
 
-Il perché AEM come Cloud Service richiede Java SDK 11 e stai eseguendo una versione diversa, molto probabilmente Java 8. Per risolvere questo problema, scarica e installa [Oracle Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.property.operation=equals&amp;1_group.property.values.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14).
+Questo perché AEM come Cloud Service richiede Java SDK 11 e stai eseguendo una versione diversa, molto probabilmente Java 8. Per risolvere questo problema, scarica e installa [Oracle Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.property.operation=equals&amp;1_group.property.values.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14).
 Una volta installato Java SDK 11, verifica che sia la versione attiva eseguendo quanto segue dalla riga di comando.
 
 Una volta installato Java 11 SDK, verifica che sia la versione attiva eseguendo il comando dalla riga di comando:
