@@ -9,10 +9,9 @@ role: Developer
 level: Beginner
 kt: 7619
 thumbnail: 332858.jpg
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: e4abfe07f1b4e67f973f39186aafc33715592b2f
 workflow-type: tm+mt
-source-wordcount: '48'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---
@@ -22,5 +21,10 @@ ht-degree: 0%
 
 Scopri come definire e utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) per l’utilizzo con GraphQL.
 
->[!VIDEO](https://video.tv.adobe.com/v/332858/?quality=12&learn=on)
+In questo video:
 
++ Scopri come creare e definire un modello per frammenti di contenuto
++ Scopri i vari tipi di dati e le convalide utilizzati per generare il modello per frammenti di contenuto
++ Comprendere come il modello di frammento di contenuto guida l’API GraphQL
+
+>[!VIDEO](https://video.tv.adobe.com/v/332858/?quality=12&learn=on)
