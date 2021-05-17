@@ -6,9 +6,8 @@ feature: Editor SPA, componenti core, API, sviluppo
 role: Developer, Architect
 level: Beginner
 kt: 7629
-thumbnail: 333181.jpeg
-translation-type: tm+mt
-source-git-commit: e6dc028a120670d34806def36ad200ed161295e1
+thumbnail: 333181.jpg
+source-git-commit: 73c75f8dac85615f4ed2dfdcc2ee4d0e9e5d161a
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 5%
@@ -82,8 +81,8 @@ Questa esercitazione dipende dal progetto __WKND 0.3.0+__ (per contenuti).
 
 Per eseguire una configurazione rapida, vengono forniti pacchetti AEM che contengono la configurazione AEM finale e il contenuto dell’esercitazione.
 
-1. [Scarica `wknd-app.all.x.x.x.zip`](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
-1. [Scarica `wknd-app.ui.content.sample.x.x.x.zip`](./assets/quick-setup/wknd-app.ui.content.sample-1.0.0.zip)
+1. [Scarica ](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
+1. [Scarica ](./assets/quick-setup/wknd-app.ui.content.sample-1.0.0.zip)
 1. Accedi a AEM Gestione pacchetti dell&#39;SDK all&#39;indirizzo [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr) con le credenziali `admin`.
 1. ____ Carica il  `wknd-app.all.x.x.x.zip` download al passaggio 1
 1. Toccare il pulsante __Installa__ per la voce `wknd-app.all.x.x.x.zip`
