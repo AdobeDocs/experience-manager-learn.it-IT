@@ -4,10 +4,9 @@ breadcrumb-title: Tutorial di AEM Foundation
 user-guide-description: 'Raccolta di video e tutorial per Adobe Experience Manager Foundation. '
 sub-product: fondazione
 index: y
-translation-type: tm+mt
-source-git-commit: 2760064642002a684b3fd70337a81a7d6e28a343
+source-git-commit: 01053f3d8de0405cfc7058f46443647154c508c4
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '146'
 ht-degree: 21%
 
 ---
@@ -17,13 +16,13 @@ ht-degree: 21%
 
 + [Panoramica](./overview.md)
 + Amministrazione {#administration}
-   + [Perché aggiornare AEM](./administration/understand-reasons-to-upgrade.md)
+   + [Perché effettuare l’aggiornamento AEM](./administration/understand-reasons-to-upgrade.md)
    + [Utilizza oak-run.jar per gestire gli indici](./administration/use-oak-run-jar-to-manage-indexes.md)
    + [Utilizzare il cleanup delle revisioni online](./administration/use-online-revision-clean-up.md)
    + [Utilizzare la dashboard Panoramica del sistema](./administration/use-the-system-overview-dashboard.md)
 + Autenticazione {#authentication}
    + [Autenticazione OAuth](authentication/oauth-code-sample-develop.md)
-   + [Configurazione delle chiavi pubbliche/private da utilizzare con Adobe I/O](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
+   + [Configurare le chiavi pubbliche/private da utilizzare con Adobe I/O](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
    + [Informazioni sull’autenticazione](authentication/authentication-support-article-understand.md)
    + [Comprendere l’autenticazione IMS in AMS](authentication/adobe-ims-authentication-technical-video-understand.md)
 + Adobe Cloud Manager{#cloud-manager}
@@ -45,6 +44,6 @@ ht-degree: 21%
    + [Utilizzare la procedura guidata SSL](./security/use-the-ssl-wizard.md)
 + Flusso di lavoro {#workflow}
    + [Utilizzare l’Editor flussi di lavoro](./workflow/use-the-workflow-editor.md)
-   + [Utilizzare la gestione dei flussi di lavoro](./workflow/use-workflow-management.md)
+   + [Usa flusso di lavoro](./workflow/use-workflow.md)
    + [Utilizzare la casella in entrata](./workflow/use-the-inbox.md)
 
