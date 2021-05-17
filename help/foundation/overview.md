@@ -5,11 +5,10 @@ description: 'Raccolta di video e tutorial per Adobe Experience Manager Foundati
 seo-description: Raccolta di video e tutorial per Adobe Experience Manager Foundation
 role: Leader, Architect, Developer, Administrator, Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 01053f3d8de0405cfc7058f46443647154c508c4
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 21%
+source-wordcount: '261'
+ht-degree: 22%
 
 ---
 
@@ -20,14 +19,15 @@ Adobe Experience Manager fornisce un set comune di funzionalità disponibili per
 
 ## Novità
 
-* **[Utilizzare la gestione dei flussi di lavoro in AEM (video)](./workflow/use-workflow-management.md)**
-   *AEM offre visibilità ai flussi di lavoro in esecuzione e facilita la gestione delle  [!DNL Workflow] definizioni.*
+* **[Utilizza AEM flusso di lavoro (video)](./workflow/use-workflow.md)**
+
+   *AEM Workflow consente di collaborare, gestire ed elaborare i contenuti in AEM.*
 
 * **[Comprendere Cloud Manager per AEM (video)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
-   *Cloud Manager per AEM consente di gestire, ispezionare e self-service facilmente gli ambienti AEM.*
+   *Cloud Manager per AEM consente di gestire, ispezionare e self-service facilmente gli ambienti di AEM.*
 
 * **[Configurare le chiavi pubbliche e private da utilizzare con Adobe I/O (esercitazione)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
-   *Scopri come vengono generate le chiavi e i keystore utilizzando  [!DNL openssl] che funziona con AEM e Adobe I/O.*
+   *Scopri come vengono generati i tasti e gli archivi chiavi utilizzando  [!DNL openssl] che funzionano con AEM ed Adobe I/O.*
 
 * **[Utilizzare la pipeline CI/CD di Cloud Manager (video)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
    *Scopri come utilizzare la pipeline CI/CD di Cloud Manager per garantire implementazioni sicure e coerenti.*
@@ -46,7 +46,7 @@ Adobe Experience Manager fornisce un set comune di funzionalità disponibili per
     </a>
     </div>
     <p>
-    <em>Cloud Manager per AEM fornisce una soluzione semplice ma solida che consente di gestire, ispezionare e self-service facilmente gli ambienti AEM.</em>
+    <em>Cloud Manager per AEM fornisce una soluzione semplice ma solida che consente di gestire, ispezionare e self-service facilmente gli ambienti di AEM.</em>
     <p>
   </td>
    <td>
@@ -64,11 +64,11 @@ Adobe Experience Manager fornisce un set comune di funzionalità disponibili per
   </td>
   <td>
     <a href="./administration/understand-reasons-to-upgrade.md">
-    <img alt="Perché aggiornare AEM" src="./administration/assets/understand-reasons-to-upgrade/thumbnail.png" />
+    <img alt="Perché effettuare l’aggiornamento AEM" src="./administration/assets/understand-reasons-to-upgrade/thumbnail.png" />
     </a>
     <div>
     <a href="./administration/understand-reasons-to-upgrade.md">
-    <strong>Perché aggiornare AEM</strong>
+    <strong>Perché effettuare l’aggiornamento AEM</strong>
     </a>
     </div>
     <p>
@@ -80,7 +80,7 @@ Adobe Experience Manager fornisce un set comune di funzionalità disponibili per
 
 ## Risorse aggiuntive
 
-* [Experience League - Esplorare AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - Esplora AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Video e tutorial di AEM Sites](/help/sites/overview.md)
 * [Video e tutorial di AEM Assets](/help/assets/overview.md)
