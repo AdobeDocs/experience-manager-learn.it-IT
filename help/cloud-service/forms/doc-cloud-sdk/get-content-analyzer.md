@@ -1,25 +1,33 @@
 ---
 title: Creare un’analisi del contenuto
 description: Crea la parte JSON contenente le informazioni sui parametri di input per la chiamata REST.
-solution: Experience Manager, Experience Manager Forms
+solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
 version: cloud-service
 topic: sviluppo
-thumbnail: 331891.jpg
-kt: 7192
-translation-type: tm+mt
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+thumbnail: 7836.jpg
+kt: 7836
+source-git-commit: 84499d5a7c8adac87196f08c6328e8cb428c0130
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 2%
+source-wordcount: '59'
+ht-degree: 5%
 
 ---
 
-# contentAnalyserRequests
 
-La parte JSON contenente le informazioni sull’input, i parametri e l’output. I dettagli di questo parametro del modulo [sono disponibili qui.](https://documentcloud.adobe.com/document-services/index.html#post-createPDF)
+# Creare richieste di Analyzer
+
+Crea un frammento JSON che definisce:
+
++ input
++ parameters
++ output.
+
+I dettagli di questo parametro del modulo [sono disponibili qui.](https://documentcloud.adobe.com/document-services/index.html#post-createPDF)
+
+Il codice di esempio riportato di seguito genera il frammento JSON per tutti i tipi di documenti di Office 365.
 
 ```java
 package com.aemforms.doccloud.core.impl;
@@ -34,10 +42,15 @@ public class GetContentAnalyser {
 		
 		JsonObject documentIn = new JsonObject();
 		documentIn.addProperty("cpf:location", "InputFile0");
-		System.out.println("The file name is "+fileName);
+
+		if(fileName.endsWith(".pptx"))
+		{
+			documentIn.addProperty("dc:format","application/vnd.openxmlformats-officedocument.presentationml.presentation");
+		}
+
 		if(fileName.endsWith(".docx"))
 		{
-			System.out.println("This is word document");
+			
 			documentIn.addProperty("dc:format","application/vnd.openxmlformats-officedocument.wordprocessingml.document");
 		}
 		if(fileName.endsWith(".xlsx"))
