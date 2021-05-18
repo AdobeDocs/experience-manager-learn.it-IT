@@ -1,19 +1,18 @@
 ---
-title: Comprendere la condivisione di risorse tra le origini (CORS) con AEM
-description: La condivisione delle risorse tra le origini di Adobe Experience Manager (CORS) facilita le proprietà web non AEM per effettuare chiamate lato client ad AEM, sia autenticate che non autenticate, per recuperare contenuti o per interagire direttamente con AEM.
+title: Comprendere la condivisione delle risorse tra le origini (CORS, Cross Origin Resource Sharing) con AEM
+description: La condivisione delle risorse tra le origini di Adobe Experience Manager (Cross-Origin Resource Sharing, CORS) consente di effettuare chiamate lato client a AEM, autenticate e non autenticate, per recuperare contenuti o interagire direttamente con AEM.
 version: 6.3, 6,4, 6.5
 sub-product: fondazione, content-services, siti
 topics: security, development, content-delivery
 activity: understand
 audience: architect, developer
 doc-type: article
-topic: Security
+topic: Sicurezza
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 1c99c319fba5048904177fc82c43554b0cf0fc15
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '918'
 ht-degree: 1%
 
 ---
@@ -21,11 +20,11 @@ ht-degree: 1%
 
 # Comprendere la condivisione risorse tra origini ([!DNL CORS])
 
-La condivisione delle risorse tra le origini di Adobe Experience Manager ([!DNL CORS]) facilita le proprietà web non AEM per effettuare chiamate lato client ad AEM, autenticate e non autenticate, per recuperare contenuti o per interagire direttamente con AEM.
+La condivisione delle risorse tra le origini di Adobe Experience Manager ([!DNL CORS]) facilita le proprietà web non AEM per effettuare chiamate lato client a AEM, autenticate e non autenticate, per recuperare il contenuto o per interagire direttamente con AEM.
 
 ## Configurazione OSGi dei criteri di condivisione risorse multiorigine di Adobe Granite
 
-Le configurazioni CORS vengono gestite come fabbriche di configurazione OSGi in AEM, e ogni criterio viene rappresentato come un’istanza della fabbrica.
+Le configurazioni CORS sono gestite come fabbriche di configurazione OSGi in AEM, con ogni criterio rappresentato come un&#39;istanza della fabbrica.
 
 * `http://<host>:<port>/system/console/configMgr > Adobe Granite Cross Origin Resource Sharing Policy`
 
@@ -141,7 +140,8 @@ Per consentire il caching delle intestazioni CORS, aggiungi la seguente configur
 ```
 /cache { 
   ...
-  /clientheaders {
+  /headers {
+      "Origin",
       "Access-Control-Allow-Origin"
       "Access-Control-Expose-Headers"
       "Access-Control-Max-Age"
@@ -155,7 +155,7 @@ Per consentire il caching delle intestazioni CORS, aggiungi la seguente configur
 
 Ricorda di **riavviare l&#39;applicazione server Web** dopo aver apportato modifiche al file `dispatcher.any`.
 
-È probabile che la cancellazione completa della cache sarà necessaria per garantire che le intestazioni siano correttamente memorizzate nella cache nella richiesta successiva dopo un `/clientheaders` aggiornamento della configurazione.
+È probabile che la cancellazione completa della cache sarà necessaria per garantire che le intestazioni siano correttamente memorizzate nella cache nella richiesta successiva dopo un `/cache/headers` aggiornamento della configurazione.
 
 ## Risoluzione dei problemi CORS
 
@@ -170,12 +170,12 @@ La registrazione è disponibile in `com.adobe.granite.cors`:
 * Verifica se la richiesta è stata negata dal gestore CORS e non dall’autenticazione, dal filtro token CSRF, dai filtri del dispatcher o da altri livelli di sicurezza
    * Se il gestore CORS risponde con 200, ma l&#39;intestazione `Access-Control-Allow-Origin` è assente nella risposta, controlla i registri per eventuali rinunce sotto [!DNL DEBUG] in `com.adobe.granite.cors`
 * Se è abilitato il caching del dispatcher per le richieste [!DNL CORS]
-   * Assicurati che la configurazione `/clientheaders` sia applicata a `dispatcher.any` e che il server web sia riavviato correttamente
+   * Assicurati che la configurazione `/cache/headers` sia applicata a `dispatcher.any` e che il server web sia riavviato correttamente
    * Assicurati che la cache sia stata svuotata correttamente dopo eventuali modifiche di configurazione di OSGi o dispatcher.any.
 * se necessario, controlla la presenza delle credenziali di autenticazione nella richiesta.
 
 ## Materiali di supporto
 
-* [Fabbrica di configurazione AEM OSGi per i criteri di condivisione delle risorse tra origini diverse](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
+* [AEM fabbrica di configurazione OSGi per i criteri di condivisione delle risorse tra origini diverse](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
 * [Condivisione risorse tra le origini (W3C)](https://www.w3.org/TR/cors/)
 * [Controllo degli accessi HTTP (Mozilla MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
