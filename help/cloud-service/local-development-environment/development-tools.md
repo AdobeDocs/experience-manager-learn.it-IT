@@ -12,11 +12,10 @@ thumbnail: 25907.jpg
 topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
+source-git-commit: 6b4b9d7039b7b1c60ed1a7e5ec4ed42250499cec
 workflow-type: tm+mt
-source-wordcount: '1426'
-ht-degree: 1%
+source-wordcount: '1430'
+ht-degree: 2%
 
 ---
 
@@ -146,22 +145,20 @@ Il plug-in Adobe I/O Cloud Manager consente a aio CLI di generare ed eseguire i 
 
 ### Configurare l’autenticazione CLI di Adobe I/O
 
-Affinché Adobe I/O CLI possa comunicare con Cloud Manager, è necessario creare un’integrazione di Cloud Manager in Adobe I/O Console e ottenere le credenziali per la corretta autenticazione.
-
->[!VIDEO](https://video.tv.adobe.com/v/35094?quality=12&learn=on)
+Affinché Adobe I/O CLI possa comunicare con Cloud Manager, è necessario creare un’integrazione [Cloud Manager in Adobe I/O Console](https://github.com/adobe/aio-cli-plugin-cloudmanager) e ottenere le credenziali per la corretta autenticazione.
 
 1. Accedi a [console.adobe.io](https://console.adobe.io)
 1. Assicurati che la tua organizzazione che include il prodotto Cloud Manager a cui connetterti sia attiva nel commutatore dell’organizzazione Adobe
 1. Crea un nuovo o apri un programma di Adobe I/O [esistente](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md)
    + I programmi della console di Adobe I/O sono semplicemente raggruppamenti organizzativi di integrazioni, creazione o utilizzo e programmi esistenti in base a come desideri gestire le integrazioni
-   + Se viene richiesto di creare un nuovo progetto, seleziona &quot;Progetto vuoto&quot; (anziché Crea da modello)
+   + Se viene richiesto di creare un nuovo progetto, seleziona &quot;Progetto vuoto&quot; (vs. &quot;Crea da modello&quot;)
    + I programmi della console di Adobe I/O sono concetti diversi rispetto ai programmi di Cloud Manager
 1. Creare una nuova integrazione API di Cloud Manager con il profilo &quot;Sviluppatore - Cloud Service&quot;
 1. Per ottenere le credenziali dell’account di servizio (JWT) è necessario compilare il file [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication) di Adobe I/O CLI
 1. Carica il file `config.json` nell’Adobe I/O CLI
-   + `$ aio config:set jwt-auth PATH_TO_CONFIG_JSON_FILE --file --json`
+   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager PATH_TO_CONFIG_JSON_FILE --file --json`
 1. Carica il file `private.key` nell’Adobe I/O CLI
-   + `$ aio config:set jwt-auth.jwt_private_key PATH_TO_PRIVATE_KEY_FILE --file`
+   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager.private_key PATH_TO_PRIVATE_KEY_FILE --file`
 
 Inizia [l’esecuzione di comandi](https://github.com/adobe/aio-cli-plugin-cloudmanager#commands) per Cloud Manager tramite Adobe I/O CLI.
 
