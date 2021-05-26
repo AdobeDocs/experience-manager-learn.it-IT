@@ -9,11 +9,10 @@ user-guide-title: 'Guida introduttiva ad AEM Sites: tutorial WKND'
 user-guide-description: Un tutorial in più parti per sviluppatori che non hanno mai utilizzato AEM. Implementa un sito AEM per un brand fittizio del settore lifestyle, il WKND.
 breadcrumb-title: Tutorial WKND di AEM Sites
 index: y
-translation-type: tm+mt
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 3c9bff3238a057e976868c13ad185ea687600dea
 workflow-type: tm+mt
-source-wordcount: '76'
-ht-degree: 60%
+source-wordcount: '73'
+ht-degree: 56%
 
 ---
 
@@ -31,7 +30,8 @@ ht-degree: 60%
    + [6 - Componente personalizzato](./project-archetype/custom-component.md)
    + [7 - Test di unità](./project-archetype/unit-testing.md)
 + Modello sito {#site-template}
-   + [1. Creare un sito](./site-template/create-site.md)
-   + [2. Modifica del contenuto dell&#39;autore e pubblicazione](./site-template/author-content-publish.md)
-   + [3. Modelli di pagina](./site-template/page-templates.md)
-   + [4. Theming](./site-template/theming.md)
+   + [Panoramica](./site-template/overview.md)
+   + [1 - Creare un sito](./site-template/create-site.md)
+   + [2 - Modifica del contenuto dell’autore e pubblicazione](./site-template/author-content-publish.md)
+   + [3 - Modelli di pagina](./site-template/page-templates.md)
+   + [4 - Temi](./site-template/theming.md)
