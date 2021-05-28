@@ -7,8 +7,7 @@ role: Developer, Architect
 level: Beginner
 kt: 7633
 thumbnail: kt-7633.jpeg
-translation-type: tm+mt
-source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
+source-git-commit: 5dea9cf646762c0f4aff43d9e48a35ab6ebc0af8
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 2%
@@ -278,7 +277,7 @@ Aggiungi i file SCSS AEM a griglia reattiva al SPA.
 1. Scarica e copia i seguenti due file in `src/styles`
    + [_grid.scss](./assets/spa-bootstrap/_grid.scss)
       + Generatore SCSS AEM a griglia reattiva
-   + [_grid-init.scss](./assets/spa-bootstrap/_grid.scss)
+   + [_grid-init.scss](./assets/spa-bootstrap/_grid-init.scss)
       + Richiama `_grid.scss` utilizzando i punti di interruzione SPA specifici (desktop e mobile) e le colonne (12).
 1. Apri `src/App.scss` e importa `./styles/grid-init.scss`
 
