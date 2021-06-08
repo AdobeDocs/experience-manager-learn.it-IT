@@ -5,9 +5,9 @@ user-guide-title: Video e tutorial di AEM Forms
 user-guide-description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms.
 breadcrumb-title: Tutorial di AEM Forms
 index: y
-source-git-commit: c74c6f5627e69e32bbf0098d6b6bab122cace798
+source-git-commit: 22437e93cbf8f36d723dc573fa327562cb51b562
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '970'
 ht-degree: 6%
 
 ---
@@ -98,6 +98,9 @@ ht-degree: 6%
    + [Introduzione](inbox-customization/introduction.md)
    + [Aggiungi colonna personalizzata](inbox-customization/add-married-column.md)
    + [Utilizzo di un modello Sightly](inbox-customization/use-sightly-template.md)
++ Rimozione degli allegati del modulo{#zipping-form-attachments}
+   + [Introduzione](zipping-form-attachments/introduction.md)
+   + [Processo personalizzato](zipping-form-attachments/custom-process-step.md)
 
 + Memorizzazione e recupero di moduli adattivi{#store-and-retrieve-af-with-2fa}
    + [Introduzione](store-and-retrieve-af-with-2fa/introduction.md)
