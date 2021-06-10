@@ -6,9 +6,9 @@ feature: Moduli adattivi
 topic: Sviluppo
 role: Developer
 level: Beginner
-source-git-commit: 22437e93cbf8f36d723dc573fa327562cb51b562
+source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '843'
 ht-degree: 2%
 
 ---
@@ -116,7 +116,12 @@ Espandi la cartella `src/main/java` sotto la cartella `learningaemforms.core`. Q
 ## Crea il progetto
 
 
-Dopo aver scritto il servizio OSGi, o servlet, dovrai generare il progetto per generare il bundle OSGi che può essere distribuito utilizzando la console web Felix. Fai riferimento a [SDK client AEMFD](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) per includere l&#39;SDK client appropriato nel tuo progetto Maven. Dovrai includere l’SDK client FD AEM nella sezione delle dipendenze di `pom.xml` del progetto principale come mostrato di seguito.
+
+
+Dopo aver scritto il servizio OSGi, o servlet, dovrai generare il progetto per generare il bundle OSGi che può essere distribuito utilizzando la console web Felix. Fai riferimento a [SDK client AEMFD](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk-) per includere l&#39;SDK client appropriato nel tuo progetto Maven. Dovrai includere l’SDK client FD AEM nella sezione delle dipendenze di `pom.xml` del progetto principale come mostrato di seguito.
+
+
+
 
 
 ```xml
@@ -131,5 +136,6 @@ Per creare il progetto, effettua le seguenti operazioni:
 
 * Apri **finestra del prompt dei comandi**
 * Accedi a `c:\aemformsbundles\learningaemforms\core`
-* Esegui il comando `mvn clean install`
-Se tutto va bene, dovresti vedere il bundle nella seguente posizione `C:\AEMFormsBundles\learningaemforms\core\target`. Questo bundle è ora pronto per essere distribuito in AEM utilizzando la console web Felix.
+* Esegui il comando `mvn clean install -PautoInstallBundle`
+Il comando precedente crea e installa il bundle nel server AEM in esecuzione su `http://localhost:4502`. Il bundle sarà disponibile anche sul file system all&#39;indirizzo
+   `C:\AEMFormsBundles\learningaemforms\core\target` e può essere distribuito utilizzando la console web  [Felix](http://localhost:4502/system/console/bundles)
