@@ -1,5 +1,5 @@
 ---
-title: Integrazione di Experience Platform Launch e AEM
+title: Integrazione di Experienci Platform Launch e AEM
 description: Experience Platform Launch è la piattaforma di gestione tag di nuova generazione di Adobe e il modo migliore per distribuire Adobe Analytics, Target, Audience Manager e molte altre soluzioni. Ottieni una panoramica di Launch e dell’integrazione consigliata con Adobe Experience Manager.
 topics: integrations
 audience: administrator
@@ -8,19 +8,18 @@ activity: setup
 version: cloud-service
 kt: 5979
 thumbnail: 39090.jpg
-topic: Integrations
+topic: Integrations (Integrazioni)
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '138'
 ht-degree: 11%
 
 ---
 
 
-# Integrazione di Experience Platform Launch e AEM {#overview}
+# Integrazione di Experienci Platform Launch e AEM {#overview}
 
 Experience Platform Launch è la piattaforma di gestione tag di nuova generazione di Adobe e il modo migliore per distribuire Adobe Analytics, Target, Audience Manager e molte altre soluzioni. Ottieni una panoramica di Launch e dell’integrazione consigliata con Adobe Experience Manager.
 
@@ -33,5 +32,5 @@ Experience Platform Launch è la piattaforma di gestione tag di nuova generazion
 ## Risorse aggiuntive {#additional-resources}
 
 * [Integrazioni di Experience Platform con le applicazioni Experience Cloud](https://docs.adobe.com/content/help/en/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
-* [Guida utente di Experience Platform Launch](https://docs.adobe.com/content/help/en/launch/using/overview.html)
+* [Guida utente di Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html)
 * [Implementazione di Experience Cloud nei siti web tramite Launch](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/index.html)
