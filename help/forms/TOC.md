@@ -5,9 +5,9 @@ user-guide-title: Video e tutorial di AEM Forms
 user-guide-description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms.
 breadcrumb-title: Tutorial di AEM Forms
 index: y
-source-git-commit: 22437e93cbf8f36d723dc573fa327562cb51b562
+source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '973'
 ht-degree: 6%
 
 ---
@@ -101,7 +101,7 @@ ht-degree: 6%
 + Rimozione degli allegati del modulo{#zipping-form-attachments}
    + [Introduzione](zipping-form-attachments/introduction.md)
    + [Processo personalizzato](zipping-form-attachments/custom-process-step.md)
-
+   + [Verificare la soluzione](zipping-form-attachments/test.md)
 + Memorizzazione e recupero di moduli adattivi{#store-and-retrieve-af-with-2fa}
    + [Introduzione](store-and-retrieve-af-with-2fa/introduction.md)
    + [Configura origine dati](store-and-retrieve-af-with-2fa/configure-data-source.md)
