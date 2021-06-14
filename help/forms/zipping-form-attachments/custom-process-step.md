@@ -11,7 +11,7 @@ topic: Sviluppo
 role: Developer
 level: Beginner
 kt: kt-8049
-source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
+source-git-commit: 540e11c0861eacc795122328b2359c7db6378aec
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 # Passaggio processo personalizzato
 
 
-È stata implementata una fase di processo personalizzata per creare il file zip contenente gli allegati del modulo. SE non conosci la creazione del bundle OSGi, [segui queste istruzioni](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+È stata implementata una fase di processo personalizzata per creare il file zip contenente gli allegati del modulo. Se non conosci la creazione del bundle OSGi, [segui queste istruzioni](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
 
 Il codice nel passaggio del processo personalizzato esegue le seguenti operazioni
 
