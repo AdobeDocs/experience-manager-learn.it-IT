@@ -4,7 +4,7 @@ user-guide-description: Una raccolta di tutorial per Adobe Experience Manager as
 breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: servizio cloud
 team: TM
-source-git-commit: 84499d5a7c8adac87196f08c6328e8cb428c0130
+source-git-commit: e2bdc73aff012bde5a1ff8f5c85ac0a183dc441d
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 21%
@@ -142,7 +142,7 @@ ht-degree: 21%
       + [Operatori di metadati](./asset-compute/advanced/metadata.md)
    + [Risoluzione dei problemi](./asset-compute/troubleshooting.md)
 + Tutorials a più passaggi{#multi-step-tutorials}
-   + [Sviluppo AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html)
+   + [Sviluppo AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
    + [Editor SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
    + [Editor SPA (Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
