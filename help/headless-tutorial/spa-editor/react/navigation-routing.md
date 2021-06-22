@@ -12,7 +12,7 @@ thumbnail: 4988-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+source-git-commit: 32320905786682a852baf7d777cb06de0072c439
 workflow-type: tm+mt
 source-wordcount: '1625'
 ht-degree: 1%
@@ -54,7 +54,7 @@ Rivedi gli strumenti e le istruzioni necessari per configurare un [ambiente di s
 
    In **Componenti consentiti** > **Generale** > seleziona il componente **Contenitore di layout** .
 
-   Alla voce **Componenti consentiti** > **WKND SPA REACT - STRUCTURE** > seleziona il componente **Intestazione** :
+   In **Componenti consentiti** > **WKND SPA REACT - STRUCTURE** > seleziona il componente **Navigazione** :
 
    ![Seleziona il componente Navigazione](assets/navigation-routing/select-navigation-component.png)
 
