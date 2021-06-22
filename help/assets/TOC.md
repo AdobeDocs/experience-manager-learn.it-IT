@@ -4,10 +4,9 @@ user-guide-description: Raccolta di video e tutorial per Adobe Experience Manage
 breadcrumb-title: Tutorial di AEM Assets
 sub-product: assets
 team: TM
-translation-type: tm+mt
-source-git-commit: 0d012d61b7740e461e641dddd6c5255a022305ea
+source-git-commit: 53312e573ca022f09faa44cbbf51c5b8b0ed90ee
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '265'
 ht-degree: 32%
 
 ---
@@ -88,10 +87,13 @@ ht-degree: 32%
    + [Solo per posizionamenti (FPO)](./adobe-asset-link/for-placement-only.md)
    + [Ricerca risorse](./adobe-asset-link/asset-search.md)
 
++ Automazione dei contenuti{#content-automation}
+   + [Panoramica](./content-automation/overview.md)
+
 + Dynamic Media{#dynamic-media}
    + [Panoramica di Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Ritaglio avanzato](dynamic-media/smart-crop-feature-video-use.md)
-   + [Frammenti esperienza](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
+   + [Frammenti di esperienza](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
    + [Video interattivo](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
    + [Lettore video](dynamic-media/dynamic-media-video-player-feature-video-use.md)
    + [Video a 360°](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
@@ -103,8 +105,8 @@ ht-degree: 32%
    + [Visualizzatori con Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
    + [Applicazione desktop Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
    + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + [Video di ritaglio avanzato di Dynamic Media](dynamic-media/dynamic-media-smart-crop-video.md)
-   + [Componenti core di Dynamic Media](dynamic-media/dynamic-media-core-components.md)
+   + [Video di ritaglio avanzato Dynamic Media](dynamic-media/dynamic-media-smart-crop-video.md)
+   + [Componenti core Dynamic Media](dynamic-media/dynamic-media-core-components.md)
 
 + Traduzione {#translation}
    + [Traduzione dei file di origine](translation/source-file-translation-feature-video-use.md)
