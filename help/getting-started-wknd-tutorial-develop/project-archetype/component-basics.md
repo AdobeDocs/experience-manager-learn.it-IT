@@ -11,8 +11,7 @@ level: Beginner
 mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
-translation-type: tm+mt
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 32320905786682a852baf7d777cb06de0072c439
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 1%
@@ -22,7 +21,7 @@ ht-degree: 1%
 
 # Nozioni di base sui componenti {#component-basics}
 
-In questo capitolo esamineremo la tecnologia di base di un componente Adobe Experience Manager (AEM) Sites attraverso un semplice esempio `HelloWorld`. Verranno apportate piccole modifiche a un componente esistente, con argomenti relativi all’authoring, all’HTL, ai modelli Sling e alle librerie lato client.
+In questo capitolo esamineremo la tecnologia di base di un componente Adobe Experience Manager (AEM) Sites tramite un semplice esempio `HelloWorld`. Verranno apportate piccole modifiche a un componente esistente, con argomenti relativi all’authoring, all’HTL, ai modelli Sling e alle librerie lato client.
 
 ## Prerequisiti {#prerequisites}
 
@@ -329,7 +328,7 @@ Di seguito sono riportati i passaggi di alto livello eseguiti nel video preceden
    helloworld.js
    ```
 
-1. Aggiorna il file `clientlib-helloworld/.conten.xml` in modo da includere le seguenti proprietà:
+1. Aggiorna il file `clientlib-helloworld/.content.xml` in modo da includere le seguenti proprietà:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
