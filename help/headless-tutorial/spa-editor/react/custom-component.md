@@ -11,7 +11,7 @@ thumbnail: 5878-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+source-git-commit: 32320905786682a852baf7d777cb06de0072c439
 workflow-type: tm+mt
 source-wordcount: '1230'
 ht-degree: 2%
@@ -155,7 +155,7 @@ Nel contesto dell’editor di SPA, i modelli Sling espongono il contenuto di un 
 
 1. Nell’IDE che preferisci, apri il modulo `core` in `aem-guides-wknd-spa.react/core`.
 1. Crea un file denominato in `OpenWeatherModel.java` in `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models`.
-1. Popolare `OpenWeather.java` con quanto segue:
+1. Popolare `OpenWeatherModel.java` con quanto segue:
 
    ```java
    package com.adobe.aem.guides.wkndspa.react.core.models;
