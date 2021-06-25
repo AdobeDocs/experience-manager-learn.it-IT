@@ -1,19 +1,18 @@
 ---
-title: Creazione del primo bundle OSGi con AEM forms
+title: Creazione del primo bundle OSGi con moduli AEM
 description: Crea il tuo primo bundle OSGi utilizzando maven ed eclipse
-feature: Adaptive Forms
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 3a9778c97d57e55e3da740b492472456768fb32c
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '833'
 ht-degree: 2%
 
 ---
@@ -78,7 +77,7 @@ Per creare il tuo primo progetto Maven, segui i seguenti passaggi:
 Il progetto Maven verrà generato in modo interattivo e ti verrà chiesto di fornire valori a diverse proprietà, come
 
 | Nome proprietà | Significato | Valore |
-------------------------|---------------------------------------|---------------------
+|------------------------|---------------------------------------|---------------------|
 | groupId | groupId identifica il progetto in modo univoco in tutti i progetti | com.learningaemforms.adobe |
 | appsFolderName | Nome della cartella che conterrà la struttura del progetto | apprendimento di aemforms |
 | artifactId | artifactId è il nome del jar senza versione. Se lo hai creato, puoi scegliere qualsiasi nome desideri con lettere minuscole e senza strani simboli. | apprendimento di aemforms |
@@ -120,7 +119,7 @@ Espandi la cartella `src/main/java` sotto la cartella `learningaemforms.core`. Q
 
 ## Crea il progetto
 
-Dopo aver scritto il servizio OSGi, o servlet, dovrai generare il progetto per generare il bundle OSGi che può essere distribuito utilizzando la console web Felix. Fai riferimento a [SDK client AEMFD](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) per includere l&#39;SDK client appropriato nel tuo progetto Maven. Devi includere l’SDK client di AEM FD nella sezione dipendenze di `pom.xml` del progetto principale, come mostrato di seguito.
+Dopo aver scritto il servizio OSGi, o servlet, dovrai generare il progetto per generare il bundle OSGi che può essere distribuito utilizzando la console web Felix. Fai riferimento a [SDK client AEMFD](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) per includere l&#39;SDK client appropriato nel tuo progetto Maven. Dovrai includere l’SDK client FD AEM nella sezione delle dipendenze di `pom.xml` del progetto principale come mostrato di seguito.
 
 ```xml
 <dependency>
@@ -135,4 +134,4 @@ Per creare il progetto, effettua le seguenti operazioni:
 * Apri **finestra del prompt dei comandi**
 * Accedi a `c:\aemformsbundles\learningaemforms\core`
 * Esegui il comando `mvn clean install`
-Se tutto va bene, dovresti vedere il bundle nella seguente posizione `C:\AEMFormsBundles\learningaemforms\core\target`. Questo bundle è ora pronto per essere implementato in AEM utilizzando la console web Felix.
+Se tutto va bene, dovresti vedere il bundle nella seguente posizione `C:\AEMFormsBundles\learningaemforms\core\target`. Questo bundle è ora pronto per essere distribuito in AEM utilizzando la console web Felix.
