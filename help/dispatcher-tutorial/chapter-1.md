@@ -1,14 +1,13 @@
 ---
 title: '"Capitolo 1 - Concetti, schemi e modelli di Dispatcher"'
-description: Questo capitolo fornisce una breve introduzione alla cronologia e alla meccanica di Dispatcher e illustra come questo influenzi il modo in cui uno sviluppatore AEM progetterebbe i suoi componenti.
+description: Questo capitolo fornisce una breve introduzione alla cronologia e alla meccanica del Dispatcher e illustra come questo influenzi il modo in cui uno sviluppatore di AEM progetta i suoi componenti.
 feature: Dispatcher
-topic: Architecture
+topic: Architettura
 role: Architect
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 67e55e92cf95e03388ab3de49eff5a80786fb3a7
 workflow-type: tm+mt
-source-wordcount: '17489'
+source-wordcount: '17487'
 ht-degree: 0%
 
 ---
@@ -18,17 +17,17 @@ ht-degree: 0%
 
 ## Panoramica
 
-Questo capitolo fornisce una breve introduzione alla cronologia e alla meccanica di Dispatcher e illustra come questo influenzi il modo in cui uno sviluppatore AEM progetterebbe i suoi componenti.
+Questo capitolo fornisce una breve introduzione alla cronologia e alla meccanica del Dispatcher e illustra come questo influenzi il modo in cui uno sviluppatore di AEM progetta i suoi componenti.
 
 ## Perché gli sviluppatori dovrebbero preoccuparsi dell&#39;infrastruttura
 
-Dispatcher è una parte essenziale della maggior parte delle installazioni di AEM, se non di tutte. Puoi trovare molti articoli online che illustrano come configurare il Dispatcher, nonché suggerimenti e trucchi.
+Dispatcher è una parte essenziale della maggior parte delle installazioni, se non di tutte AEM. Puoi trovare molti articoli online che illustrano come configurare il Dispatcher, nonché suggerimenti e trucchi.
 
 Questi bit e pezzi di informazioni, tuttavia, iniziano sempre a livello molto tecnico - supponendo che tu sappia già cosa vuoi fare e quindi fornendo solo dettagli su come ottenere ciò che desideri. Non abbiamo mai trovato alcun documento concettuale che descriva i _cosa e perché è_ quando si tratta di ciò che si può e non si può fare con il dispatcher.
 
 ### Antipattern: Dispatcher come riflessione
 
-Questa mancanza di informazioni di base porta a una serie di anti-pattern che abbiamo visto in diversi progetti AEM:
+Questa mancanza di informazioni di base porta a una serie di anti-modelli Abbiamo visto in una serie di progetti AEM:
 
 1. Poiché Dispatcher è installato nel server Web Apache, è compito degli &quot;Dei Unix&quot; nel progetto configurarlo. Uno &quot;sviluppatore java mortale&quot; non deve preoccuparsi di se stessi con esso.
 
@@ -50,7 +49,7 @@ Tuttavia, il consiglio &quot;Prima lo faccia funzionare - poi lo faccia in frett
 
 3. Modelli software che vengono utilizzati e riutilizzati più e più volte, in tutti i pezzi e parti del sistema. Se il pattern software risulta non ottimale, tutti gli artefatti che utilizzano il pattern devono essere codificati nuovamente.
 
-Ricorda? In cima a questa pagina abbiamo detto che Dispatcher è una parte essenziale di un’applicazione AEM. L&#39;accesso a un&#39;applicazione web è molto casuale: gli utenti arrivano e vanno in tempi imprevedibili. Alla fine, tutti i contenuti saranno (o dovrebbero) memorizzati nella cache di Dispatcher. Quindi, se avete prestato molta attenzione, potreste aver capito che la memorizzazione in cache può essere vista come un manufatto &quot;architettonico&quot; e quindi deve essere compresa da tutti i membri del team, sviluppatori e amministratori.
+Ricorda? In cima a questa pagina abbiamo detto che Dispatcher è una parte essenziale di un&#39;applicazione AEM. L&#39;accesso a un&#39;applicazione web è molto casuale: gli utenti arrivano e vanno in tempi imprevedibili. Alla fine, tutti i contenuti saranno (o dovrebbero) memorizzati nella cache di Dispatcher. Quindi, se avete prestato molta attenzione, potreste aver capito che la memorizzazione in cache può essere vista come un manufatto &quot;architettonico&quot; e quindi deve essere compresa da tutti i membri del team, sviluppatori e amministratori.
 
 Non stiamo dicendo che uno sviluppatore debba effettivamente configurare il Dispatcher. Devono conoscere i concetti, in particolare i limiti, per essere certi che il loro codice possa essere sfruttato anche dal Dispatcher.
 
@@ -68,9 +67,9 @@ Il Dispatcher è
 
 * Un proxy inverso
 
-* Un modulo per il server web Apache httpd, che aggiunge funzioni relative ad AEM alla versatilità di Apache e funziona senza problemi insieme a tutti gli altri moduli Apache (come SSL o anche SSI include come vedremo più tardi)
+* Un modulo per il server web Apache httpd, aggiungendo AEM funzioni correlate alla versatilità di Apache e lavorando senza problemi con tutti gli altri moduli Apache (come SSL o anche SSI include come vedremo più avanti)
 
-Nei primi giorni del web, ci si aspetterebbe qualche centinaio di visitatori in un sito. Un’installazione di un’istanza di Dispatcher, &quot;inviata&quot; o bilanciata il carico di richieste a diversi server di pubblicazione AEM e che di solito era sufficiente - quindi, il nome &quot;Dispatcher&quot;. Al giorno d&#39;oggi, tuttavia, questa configurazione non viene più utilizzata molto frequentemente.
+Nei primi giorni del web, ci si aspetterebbe qualche centinaio di visitatori in un sito. Configurazione di un’istanza di Dispatcher, &quot;inviata&quot; o bilanciamento del carico di richieste a diversi server di pubblicazione AEM e che in genere era sufficiente, quindi il nome &quot;Dispatcher&quot;. Al giorno d&#39;oggi, tuttavia, questa configurazione non viene più utilizzata molto frequentemente.
 
 In questo articolo troverai diversi modi per configurare Dispatcher e sistemi di pubblicazione. Cominciamo con alcune nozioni di base sulla memorizzazione in cache http.
 
@@ -101,7 +100,7 @@ Il nome del file viene derivato dall’URL della risorsa richiesta. Se richiedi 
 
 In linea di principio, se tutti i file sono memorizzati nella cache e quindi memorizzati statisticamente in Dispatcher, puoi estrarre il plug del sistema Publish e Dispatcher fungerebbe da semplice server web. Ma questo è solo per illustrare il principio. La vita reale è più complicata. Non è possibile memorizzare in cache tutto e la cache non è mai completamente &quot;piena&quot; in quanto il numero di risorse può essere infinito a causa della natura dinamica del processo di rendering. Il modello di un filesystem statico consente di generare un&#39;immagine approssimativa delle funzionalità del dispatcher. E aiuta a spiegare i limiti del dispatcher.
 
-#### Struttura URL AEM e mappatura file system
+#### Struttura AEM URL e mappatura del file system
 
 Per comprendere più dettagliatamente il Dispatcher, rivisitiamo la struttura di un semplice URL di esempio.  Diamo un&#39;occhiata al seguente esempio:
 
@@ -123,11 +122,11 @@ In AEM,
 
 * `html` poiché è l’ultimo dei &quot;selettori&quot;, si chiama estensione . In AEM/Sling determina anche in parte lo script di rendering.
 
-* `path/suffix.ext` è un’espressione simile a un percorso che può essere un suffisso per l’URL.  Può essere utilizzato negli script AEM per controllare ulteriormente il rendering di una risorsa. Avremo un&#39;intera sezione su questa parte più avanti. Per il momento, dovrebbe bastare sapere che può essere utilizzato come parametro aggiuntivo. I suffissi devono avere un&#39;estensione.
+* `path/suffix.ext` è un’espressione simile a un percorso che può essere un suffisso per l’URL.  Può essere utilizzato negli script AEM per controllare ulteriormente la modalità di rendering di una risorsa. Avremo un&#39;intera sezione su questa parte più avanti. Per il momento, dovrebbe bastare sapere che può essere utilizzato come parametro aggiuntivo. I suffissi devono avere un&#39;estensione.
 
-* `?parameter=value&otherparameter=value` è la sezione query dell’URL. Viene utilizzato per trasmettere parametri arbitrari ad AEM. Gli URL con parametri non possono essere memorizzati nella cache e pertanto i parametri devono essere limitati ai casi in cui sono assolutamente necessari.
+* `?parameter=value&otherparameter=value` è la sezione query dell’URL. Viene utilizzato per trasmettere parametri arbitrari a AEM. Gli URL con parametri non possono essere memorizzati nella cache e pertanto i parametri devono essere limitati ai casi in cui sono assolutamente necessari.
 
-* `#fragment`, la parte del frammento di un URL non viene passata ad AEM ma viene utilizzata solo nel browser; nei framework JavaScript come &quot;parametri di indirizzamento&quot; o per passare a una determinata parte della pagina.
+* `#fragment`, la parte del frammento di un URL non viene trasmessa a AEM viene utilizzata solo nel browser; nei framework JavaScript come &quot;parametri di indirizzamento&quot; o per passare a una determinata parte della pagina.
 
 In Apache (*fare riferimento al diagramma seguente*),
 
@@ -161,7 +160,7 @@ Potreste aver notato qualche trappola, tuttavia,
 
 #### Gli URL senza estensione non vengono memorizzati nella cache
 
-Gli URL devono sempre avere un&#39;estensione . Anche se in AEM puoi distribuire URL senza estensioni. Questi URL non verranno memorizzati nella cache in Dispatcher.
+Gli URL devono sempre avere un&#39;estensione . Anche se puoi distribuire URL senza estensioni in AEM. Questi URL non verranno memorizzati nella cache in Dispatcher.
 
 **Esempi**
 
@@ -203,7 +202,7 @@ Sono assolutamente validi in AEM. Non vedrai alcun problema nel computer di svil
 
 Allora... qual è il problema?
 
-`home.html` in un file system può essere un file o una cartella. Non entrambe nello stesso momento in AEM.
+`home.html` in un file system può essere un file o una cartella. Non entrambi nello stesso momento in AEM.
 
 Se richiedi prima `home.html`, verrà creato come file.
 
@@ -243,12 +242,12 @@ Scegliere un&#39;estensione dedicata &quot;dir&quot; per una risorsa quando si r
 
 #### Richieste non memorizzabili nella cache
 
-Rivediamo un rapido riassunto dell&#39;ultimo capitolo più alcune eccezioni. Dispatcher può memorizzare in cache un URL se è configurato come memorizzabile in cache e se è una richiesta GET. Non può essere memorizzato nella cache in una delle seguenti eccezioni.
+Rivediamo un rapido riassunto dell&#39;ultimo capitolo più alcune eccezioni. Dispatcher può memorizzare in cache un URL se è configurato come memorizzabile in cache e se si tratta di una richiesta GET. Non può essere memorizzato nella cache in una delle seguenti eccezioni.
 
 **Richieste memorizzabili nella cache**
 
 * La richiesta è configurata per essere memorizzabile nella cache nella configurazione di Dispatcher
-* La richiesta è una richiesta GET normale
+* La richiesta è una richiesta di GET semplice
 
 **Richieste o risposte non memorizzabili nella cache**
 
@@ -276,7 +275,7 @@ Questo sembra essere un compito banale a prima vista.. ma non lo è. Ulteriori i
 
 ### Risorse semplici e scaricamento
 
-Abbiamo impostato il nostro sistema AEM per creare dinamicamente una miniatura per ogni immagine quando richiesto con uno speciale selettore &quot;pollice&quot;:
+Abbiamo impostato il nostro sistema di AEM per creare dinamicamente una miniatura per ogni immagine quando richiesto con uno speciale selettore &quot;pollice&quot;:
 
 `/content/dam/path/to/image.thumb.png`
 
@@ -294,7 +293,7 @@ Scaricando entrambi, la miniatura e l&#39;immagine originale, finiremo con qualc
 
 nel file system del nostro Dispatcher.
 
-Ora, l’utente carica e attiva una nuova versione di quel file. Infine, una richiesta di annullamento della validità viene inviata da AEM a Dispatcher,
+Ora, l’utente carica e attiva una nuova versione di quel file. Infine, una richiesta di annullamento della validità viene inviata da AEM al Dispatcher,
 
 ```
 GET /invalidate
@@ -303,7 +302,7 @@ invalidate-path:  /content/dam/path/to/image
 <no body>
 ```
 
-L&#39;annullamento della validità è così semplice: Una semplice richiesta GET a uno speciale URL &quot;/invalidate&quot; sul Dispatcher. Un corpo HTTP non è necessario, il &quot;payload&quot; è solo l’intestazione &quot;invalidate-path&quot;. Inoltre, il percorso invalidate nell’intestazione è la risorsa che AEM conosce e non i file o i file memorizzati nella cache da Dispatcher. AEM conosce solo le risorse. Le estensioni, i selettori e i suffissi vengono utilizzati in fase di runtime quando viene richiesta una risorsa. AEM non esegue alcuna contabilità sui selettori utilizzati in una risorsa, pertanto il percorso della risorsa è tutto ciò che sa con certezza all’attivazione di una risorsa.
+L&#39;annullamento della validità è così semplice: Una semplice richiesta GET a uno speciale URL &quot;/invalidate&quot; sul Dispatcher. Un corpo HTTP non è necessario, il &quot;payload&quot; è solo l’intestazione &quot;invalidate-path&quot;. Inoltre, il percorso invalidate nell’intestazione è la risorsa che AEM e non il file o i file memorizzati nella cache da Dispatcher. AEM solo delle risorse. Le estensioni, i selettori e i suffissi vengono utilizzati in fase di runtime quando viene richiesta una risorsa. AEM non esegue alcuna contabilità sui selettori utilizzati in una risorsa, pertanto il percorso della risorsa è tutto ciò che sa con certezza quando si attiva una risorsa.
 
 Questo è sufficiente nel nostro caso. Se una risorsa è cambiata, possiamo tranquillamente presumere che siano cambiate anche tutte le rappresentazioni di tale risorsa. Nel nostro esempio, se l’immagine è cambiata, viene riprodotta anche una nuova miniatura.
 
@@ -404,7 +403,7 @@ Se si cambia il NavTitle sulla pagina Islanda da &quot;Islanda&quot; a &quot;Bel
 
 Ora, se avete un sito grande con migliaia di pagine, ci vorrebbe un bel po&#39; di tempo per scorrere tutte le pagine e cancellarle fisicamente. Durante questo periodo, Dispatcher poteva distribuire involontariamente contenuti non aggiornati. Ancora peggio, potrebbero verificarsi alcuni conflitti durante l’accesso ai file di cache, forse viene richiesta una pagina mentre viene semplicemente eliminata o una pagina viene nuovamente eliminata a causa di una seconda invalidazione che si verifica dopo un’attivazione successiva immediata. Considerate quale disordine sarebbe. Fortunatamente non è così. Dispatcher utilizza un trucco intelligente per evitare che: Invece di eliminare centinaia e migliaia di file, inserisce un file semplice e vuoto nella directory principale del file system quando un file viene pubblicato e quindi tutti i file dipendenti vengono considerati non validi. Questo file è denominato &quot;statfile&quot;. Lo statfile è un file vuoto. Ciò che conta dello statfile è solo la data di creazione.
 
-Tutti i file nel dispatcher con una data di creazione più vecchia dello statfile sono stati sottoposti a rendering prima dell’ultima attivazione (e invalidazione) e vengono quindi considerati &quot;non validi&quot;. Sono ancora fisicamente presenti nel filesystem, ma il Dispatcher li ignora. Sono &quot;stantio&quot;. Ogni volta che viene effettuata una richiesta a una risorsa obsoleta, Dispatcher richiede al sistema AEM di eseguire nuovamente il rendering della pagina. La nuova pagina di cui è stato effettuato il rendering viene quindi memorizzata nel filesystem, ora con una nuova data di creazione ed è nuovamente aggiornata.
+Tutti i file nel dispatcher con una data di creazione più vecchia dello statfile sono stati sottoposti a rendering prima dell’ultima attivazione (e invalidazione) e vengono quindi considerati &quot;non validi&quot;. Sono ancora fisicamente presenti nel filesystem, ma il Dispatcher li ignora. Sono &quot;stantio&quot;. Ogni volta che viene effettuata una richiesta a una risorsa obsoleta, Dispatcher chiede al sistema AEM di eseguire nuovamente il rendering della pagina. La nuova pagina di cui è stato effettuato il rendering viene quindi memorizzata nel filesystem, ora con una nuova data di creazione ed è nuovamente aggiornata.
 
 ![La data di creazione del file .stat definisce quale contenuto è obsoleto e che è fresco](assets/chapter-1/creation-date.png)
 
@@ -482,7 +481,7 @@ Le risorse vengono caricate nell’area DAM di AEM e solo _a cui si fa riferimen
 
 Il componente respi si occupa sia del rendering del markup che della distribuzione dei dati immagine binari.
 
-Il modo in cui lo implementiamo qui è un modello comune che abbiamo visto in molti progetti e anche uno dei componenti core di AEM si basa su quel modello. Pertanto, è molto probabile che uno sviluppatore possa adattare quel modello. Ha le sue macchie dolci in termini di incapsulamento, ma richiede molto sforzo per farlo Dispatcher-ready. Discuteremo diverse opzioni su come attenuare il problema in un secondo momento.
+Il modo in cui lo implementiamo qui è un modello comune che abbiamo visto in molti progetti e anche uno dei componenti di base AEM si basa su questo modello. Pertanto, è molto probabile che uno sviluppatore possa adattare quel modello. Ha le sue macchie dolci in termini di incapsulamento, ma richiede molto sforzo per farlo Dispatcher-ready. Discuteremo diverse opzioni su come attenuare il problema in un secondo momento.
 
 Chiamiamo il modello utilizzato qui il &quot;Pattern di Spooler&quot;, perché il problema risale ai primi giorni del Communiqué 3 dove c&#39;era un metodo &quot;spool&quot; che poteva essere chiamato su una risorsa per lo streaming dei suoi dati grezzi binari nella risposta.
 
@@ -543,7 +542,7 @@ Ora un utente richiede la pagina e le risorse tramite Dispatcher. Questo si trad
 
 <br> 
 
-Considera un utente che carica e attiva una nuova versione delle due immagini floreali sul DAM. AEM invierà in base a una richiesta di annullamento della validità per
+Considera un utente che carica e attiva una nuova versione delle due immagini floreali sul DAM. AEM invierà in base a una richiesta di invalidazione per
 
 `/content/dam/flower.jpg`
 
@@ -581,7 +580,7 @@ Vedete? La &quot;M&quot; in DAM sta per &quot;Management&quot;, come in Digital 
 
 #### Conclusione
 
-Dal punto di vista di uno sviluppatore AEM, il modello sembrava super elegante. Ma con il Dispatcher inserito nell&#39;equazione, potreste essere d&#39;accordo, che l&#39;approccio ingenuo potrebbe non essere sufficiente.
+Dal punto di vista di uno sviluppatore AEM il modello sembrava super elegante. Ma con il Dispatcher inserito nell&#39;equazione, potreste essere d&#39;accordo, che l&#39;approccio ingenuo potrebbe non essere sufficiente.
 
 Lasciamo a voi decidere se per il momento si tratta di un modello o di un anti-modello. E forse avete già delle buone idee in mente come mitigare i problemi descritti sopra? Bene. Allora sarete ansiosi di vedere come altri progetti hanno risolto questi problemi.
 
@@ -601,7 +600,7 @@ Ancora una volta, questo si basa sull&#39;esperienza reale. Abbiamo già visto t
 >
 >Questo è un anti-pattern. Non usarlo. Mai.
 
-Hai mai visto parametri di query come `?ck=398547283745`? Sono chiamati cache-killer (&quot;ck&quot;). L’idea è che se aggiungi un parametro di query, la risorsa non verrà memorizzata nella cache. Inoltre, se aggiungi un numero casuale come valore del parametro (come &quot;398547283745&quot;), l’URL diventa univoco e assicurati che nessun’altra cache tra il sistema AEM e lo schermo sia in grado di memorizzare nella cache. Solitamente i sospetti intermedi sarebbero una cache &quot;Varnish&quot; di fronte al Dispatcher, un CDN o anche la cache del browser. Ancora: Non farlo. Desideri che le risorse siano memorizzate nella cache il più a lungo possibile. La cache è vostra amica. Non uccidere gli amici.
+Hai mai visto parametri di query come `?ck=398547283745`? Sono chiamati cache-killer (&quot;ck&quot;). L’idea è che se aggiungi un parametro di query, la risorsa non verrà memorizzata nella cache. Inoltre, se aggiungi un numero casuale come valore del parametro (come &quot;398547283745&quot;), l’URL diventa univoco e ti assicuri che nessun’altra cache tra il sistema di AEM e lo schermo sia in grado di memorizzare nella cache. Solitamente i sospetti intermedi sarebbero una cache &quot;Varnish&quot; di fronte al Dispatcher, un CDN o anche la cache del browser. Ancora: Non farlo. Desideri che le risorse siano memorizzate nella cache il più a lungo possibile. La cache è vostra amica. Non uccidere gli amici.
 
 #### Annullamento automatico della validità
 
@@ -627,7 +626,7 @@ Supponiamo che il file `/content/dam/flower.jpg` abbia una data `jcr:lastModifie
 
 Questo URL rimane stabile, purché il file della risorsa di riferimento (`flower.jpg`) non venga modificato. Può quindi essere memorizzato nella cache per un periodo di tempo indefinito e non è un killer di cache.
 
-Nota: questo URL deve essere creato e servito dal componente immagine reattiva. Non è una funzionalità integrata di AEM.
+Nota: questo URL deve essere creato e servito dal componente immagine reattiva. Non è una funzionalità preconfigurata AEM.
 
 Questo è il concetto di base. Ci sono però alcuni dettagli che potrebbero essere facilmente trascurati.
 
@@ -657,7 +656,7 @@ Finora non abbiamo discusso a livello di statfile. In pratica, l’annullamento 
 
 Il &quot;livello statfile&quot; definisce dove a quale profondità sono i nodi principali dei sottoalberi. Nell&#39;esempio sopra il livello sarebbe &quot;2&quot; (1=/content, 2=/mysite,dam)
 
-L’idea di &quot;diminuire&quot; il livello dello statfile a 0 consiste fondamentalmente nel definire l’intera struttura /content come una e unica sottostruttura per rendere le pagine e le risorse live nello stesso dominio di annullamento automatico della validità. Quindi avremmo solo su grande albero a livello (al docroot &quot;/&quot;). Ma in questo modo tutti i siti sul server vengono automaticamente invalidati ogni volta che viene pubblicato qualcosa, anche su siti completamente indipendenti. Fidati di noi: Questa è una cattiva idea a lungo termine, perché degraderai gravemente il tasso di hit della cache complessiva. Tutto quello che puoi fare è sperare che i server AEM abbiano abbastanza potenza di fuoco per funzionare senza cache.
+L’idea di &quot;diminuire&quot; il livello dello statfile a 0 consiste fondamentalmente nel definire l’intera struttura /content come una e unica sottostruttura per rendere le pagine e le risorse live nello stesso dominio di annullamento automatico della validità. Quindi avremmo solo su grande albero a livello (al docroot &quot;/&quot;). Ma in questo modo tutti i siti sul server vengono automaticamente invalidati ogni volta che viene pubblicato qualcosa, anche su siti completamente indipendenti. Fidati di noi: Questa è una cattiva idea a lungo termine, perché degraderai gravemente il tasso di hit della cache complessiva. Tutto ciò che è possibile fare è sperare che i server AEM abbiano abbastanza potenza di fuoco per funzionare senza cache.
 
 In seguito potrai comprendere tutti i vantaggi di livelli di stato più profondi.
 
@@ -685,8 +684,10 @@ In questo modo l’agente di eliminazione del Dispatcher personalizzato può fac
 
 In realtà, non importa quale percorso dici a Dispatcher di annullare la validità - purché si trovi nello stesso sito, nello stesso &quot;sottoalbero&quot;. Non è nemmeno necessario utilizzare un vero percorso di risorse. Può essere anche &quot;virtuale&quot;:
 
-`GET /dispatcher-invalidate
-Invalidate-path /content/mysite/dummy`
+```
+GET /dispatcher-invalidate
+Invalidate-path /content/mysite/dummy
+```
 
 ![](assets/chapter-1/resource-path.png)
 
@@ -753,7 +754,7 @@ Ma qui si può affrontare un altro avvertimento con le impronte digitali URL: Co
 
 #### Una breve pausa
 
-Wow - Ci sono molti dettagli da considerare, giusto? E rifiuta di essere compreso, testato e sottoposto a debug facilmente. E tutto per una soluzione apparentemente elegante. Certo, è elegante, ma solo da una prospettiva di sola AEM. Insieme al Dispatcher diventa brutto.
+Wow - Ci sono molti dettagli da considerare, giusto? E rifiuta di essere compreso, testato e sottoposto a debug facilmente. E tutto per una soluzione apparentemente elegante. Certo, è elegante, ma solo da una prospettiva AEM. Insieme al Dispatcher diventa brutto.
 
 Tuttavia, non risolve un problema di base, se un&#39;immagine viene utilizzata più volte su pagine diverse, sarà memorizzata nella cache sotto quelle pagine. Non c&#39;è molta sinergia nella memorizzazione in cache.
 
@@ -769,9 +770,9 @@ Ecco l&#39;idea di base:
 
 Dispatcher non è a conoscenza delle dipendenze delle risorse. Sono solo un mucchio di file singoli con una piccola semantica.
 
-AEM sa anche poco sulle dipendenze. Manca di una semantica adeguata o di un &quot;rilevatore di dipendenza&quot;.
+AEM anche poche informazioni sulle dipendenze. Manca di una semantica adeguata o di un &quot;rilevatore di dipendenza&quot;.
 
-AEM è consapevole di alcuni dei riferimenti. Utilizza questa conoscenza per avvisarti quando tenti di eliminare o spostare una pagina o una risorsa di riferimento. A tale scopo, esegue una query sulla ricerca interna durante l’eliminazione di una risorsa. I riferimenti al contenuto hanno una forma molto particolare. Sono espressioni del percorso che iniziano con &quot;/content&quot;. Quindi, possono facilmente essere indicizzati full-text - e interrogati per quando necessario.
+AEM alcuni riferimenti. Utilizza questa conoscenza per avvisarti quando tenti di eliminare o spostare una pagina o una risorsa di riferimento. A tale scopo, esegue una query sulla ricerca interna durante l’eliminazione di una risorsa. I riferimenti al contenuto hanno una forma molto particolare. Sono espressioni del percorso che iniziano con &quot;/content&quot;. Quindi, possono facilmente essere indicizzati full-text - e interrogati per quando necessario.
 
 Nel nostro caso, avremmo bisogno di un agente di replica personalizzato sul sistema Publish, che attivi una ricerca per un percorso specifico quando quel percorso è cambiato.
 
@@ -803,7 +804,7 @@ Il nostro esempio è facilmente risolto:
 
 <br> 
 
-Utilizziamo i percorsi delle risorse originali per eseguire il rendering dei dati. Se è necessario eseguire il rendering dell’immagine originale così com’è, è sufficiente utilizzare il renderer predefinito di AEM per le risorse.
+Utilizziamo i percorsi delle risorse originali per eseguire il rendering dei dati. Se è necessario eseguire il rendering dell’immagine originale così com’è, è sufficiente utilizzare AEM modulo di rendering predefinito per le risorse.
 
 Se è necessario eseguire un’elaborazione speciale per un componente specifico, registreremo un servlet dedicato su quel percorso e un selettore per eseguire la trasformazione per conto del componente. Lo abbiamo fatto in questo caso esemplare con il &quot;.respi&quot;. selettore. È opportuno tenere traccia dei nomi dei selettori utilizzati nello spazio URL globale (ad esempio `/content/dam`) e avere una buona convenzione di denominazione per evitare conflitti di denominazione.
 
@@ -907,12 +908,14 @@ Anche questo bypassa la cache e crea il carico sul sistema di pubblicazione. Pot
 
 #### Filtro delle richieste non valide quando si utilizzano i selettori
 
-Ridurre il numero di selettori è stato un buon inizio. Di regola, devi sempre limitare il numero di parametri validi a un minimo assoluto. Se lo fai in modo intelligente, puoi anche sfruttare un firewall per applicazioni web al di fuori di AEM utilizzando un set statico di filtri senza conoscere approfonditamente il sistema AEM sottostante per proteggere i tuoi sistemi:
+Ridurre il numero di selettori è stato un buon inizio. Di regola, devi sempre limitare il numero di parametri validi a un minimo assoluto. Se lo si fa in modo intelligente, è anche possibile sfruttare un firewall per applicazioni Web all&#39;esterno di AEM utilizzando un set statico di filtri senza una conoscenza approfondita del sistema di AEM sottostante per proteggere i sistemi:
 
-`Allow: /content/dam/(-\_/a-z0-9)+/(-\_a-z0-9)+
-\.respi\.q-(20|40|60|80|100)\.jpg`
+```
+Allow: /content/dam/(-\_/a-z0-9)+/(-\_a-z0-9)+
+       \.respi\.q-(20|40|60|80|100)\.jpg
+```
 
-Se non si dispone di un firewall per applicazioni web, è necessario filtrare in Dispatcher o nella stessa AEM. Se lo fai in AEM, assicurati che
+Se non si dispone di un firewall per applicazioni web, è necessario filtrare in Dispatcher o in AEM. Se lo fai in AEM, assicurati che
 
 1. Il filtro è implementato in modo super efficiente, senza accedere al CRX troppo e sprecare memoria e tempo.
 
@@ -951,9 +954,9 @@ Meglio è restituire un `301 – Moved permanently`:
   Location: /content/dam/flower.respi.q-40.jpg
 ```
 
-In questo caso AEM informa il browser. &quot;Non ho `q-41`. Ma ehi - mi puoi chiedere di `q-40` &quot;.
+Qui AEM il browser. &quot;Non ho `q-41`. Ma ehi - mi puoi chiedere di `q-40` &quot;.
 
-Questo aggiunge un ulteriore ciclo di richiesta-risposta alla conversazione, che è un po&#39; sovraccarico, ma è più economico che fare l&#39;elaborazione completa su `q-41`. Inoltre puoi sfruttare il file già memorizzato nella cache in `q-40`. Tuttavia, devi capire che 302 risposte non sono memorizzate nella cache di Dispatcher, stiamo parlando della logica che viene eseguita in AEM. Ancora e ancora. Quindi è meglio renderlo sottile e veloce.
+Questo aggiunge un ulteriore ciclo di richiesta-risposta alla conversazione, che è un po&#39; sovraccarico, ma è più economico che fare l&#39;elaborazione completa su `q-41`. Inoltre puoi sfruttare il file già memorizzato nella cache in `q-40`. Tuttavia, devi capire che 302 risposte non sono memorizzate nella cache di Dispatcher, stiamo parlando della logica che viene eseguita nel AEM. Ancora e ancora. Quindi è meglio renderlo sottile e veloce.
 
 Personalmente ci piace il 404 rispondere di più. Lo rende incredibilmente ovvio quello che sta succedendo. Consente inoltre di rilevare gli errori sul sito web durante l’analisi dei file di registro. 301 s può essere destinato, dove 404 deve sempre essere analizzato ed eliminato.
 
@@ -971,7 +974,7 @@ Beh - dipende. Prima è meglio è.
 
 Se si dispone di un dispositivo firewall per applicazioni Web o di un &quot;WAF&quot; progettato per la sicurezza Web, è assolutamente necessario utilizzare queste funzionalità. Tuttavia, potresti scoprire che il WAF è gestito da persone che hanno solo una conoscenza limitata della tua applicazione di contenuto e che filtrano le richieste valide o lasciano passare troppe richieste dannose. Forse scoprirete che le persone che gestiscono il WAF sono assegnate a un reparto diverso con diversi turni e orari di rilascio, la comunicazione potrebbe non essere così stretta come con i vostri compagni di squadra diretti e non si ottengono sempre i cambiamenti nel tempo, il che significa che alla fine il vostro sviluppo e la velocità dei contenuti soffrono.
 
-Si potrebbe finire con alcune regole generali o anche una blocklist, che la vostra sensazione istintiva dice, potrebbe essere inasprito.
+Si potrebbe finire con alcune regole generali o anche un inserii nell&#39;elenco Bloccati, che la vostra sensazione istintiva dice, potrebbe essere inasprito.
 
 #### Dispatcher e filtri di pubblicazione
 
@@ -1075,7 +1078,7 @@ Tutti i file di cache nel file system del Dispatcher configurati per l’annulla
 >
 >La data dell&#39;ultima modifica di cui stiamo parlando è la data in cui il file è stato richiesto dal browser del cliente e in ultima analisi creato nel file system. Non è la data `jcr:lastModified` della risorsa.
 
-La data dell’ultima modifica dello statfile (`.stat`) è la data in cui la richiesta di invalidazione di AEM è stata ricevuta sul Dispatcher.
+La data dell’ultima modifica dello statfile (`.stat`) è la data in cui è stata ricevuta la richiesta di invalidazione da AEM sul Dispatcher.
 
 Se disponi di più di un’istanza di Dispatcher, questo può causare effetti strani. Il browser può disporre di una versione più recente come Dispatcher (se si dispone di più di un Dispatcher). In alternativa, un’istanza di Dispatcher potrebbe ritenere obsoleta la versione del browser rilasciata dall’altro Dispatcher e inviare inutilmente una nuova copia. Questi effetti non hanno un impatto significativo sulle prestazioni o sui requisiti funzionali. E si livelleranno nel tempo, quando il browser ha la versione più recente. Tuttavia, può essere un po&#39; confuso quando ottimizzi e esegui il debug del comportamento di memorizzazione in cache del browser. Quindi sia avvertito.
 
@@ -1162,7 +1165,7 @@ La soluzione migliore è ovviamente quella di rendere ugualmente profonde le rad
 
 Qual è il livello giusto? Dipende dal numero di dipendenze tra i siti. Le inclusioni risolte per il rendering di una pagina sono considerate &quot;dipendenze complesse&quot;. All’inizio di questa guida è stato illustrato il componente _Inclusione_ di questo tipo quando è stato introdotto il componente _Teaser_ .
 
-__ I collegamenti ipertestuali sono una forma più morbida di dipendenze. È molto probabile, che si farà collegamenti ipertestuali all&#39;interno di un sito web.. e non improbabile che si dispone di collegamenti tra i vostri siti web. I collegamenti ipertestuali semplici di solito non creano dipendenze tra siti web. Basta pensare a un link esterno impostato dal sito a facebook.. Non dovresti eseguire il rendering della pagina se qualcosa cambia su facebook e viceversa, giusto?
+__ I collegamenti ipertestuali sono una forma più morbida di dipendenze. È molto probabile, che si farà collegamenti ipertestuali all&#39;interno di un sito web.. e non improbabile che si dispone di collegamenti tra i vostri siti web. I collegamenti ipertestuali semplici di solito non creano dipendenze tra siti web. Basta pensare a un link esterno impostato dal sito a facebook... Non dovresti eseguire il rendering della pagina se qualcosa cambia in facebook e viceversa, giusto?
 
 Una dipendenza si verifica quando si legge il contenuto dalla risorsa collegata (ad esempio, il titolo di navigazione). Tali dipendenze possono essere evitate se vi limitate ai titoli di navigazione inseriti localmente e non li si disegna dalla pagina di destinazione (come si farebbe con i collegamenti esterni).
 
@@ -1305,7 +1308,7 @@ Una configurazione più affidabile è l’invio della richiesta di annullamento 
 
 ### Memorizzazione in cache delle intestazioni HTTP
 
-Ai vecchi tempi, Dispatcher stava semplicemente memorizzando file semplici nel file system. Se hai bisogno che le intestazioni HTTP vengano consegnate al cliente, lo hai fatto configurando Apache in base alle poche informazioni ricevute dal file o dalla posizione. Questo era particolarmente fastidioso quando hai implementato un&#39;applicazione web in AEM che si basava fortemente sulle intestazioni HTTP. Tutto funzionava correttamente nell’istanza di solo AEM, ma non quando si utilizzava un’istanza di Dispatcher.
+Ai vecchi tempi, Dispatcher stava semplicemente memorizzando file semplici nel file system. Se hai bisogno che le intestazioni HTTP vengano consegnate al cliente, lo hai fatto configurando Apache in base alle poche informazioni ricevute dal file o dalla posizione. Ciò era particolarmente fastidioso quando si implementava un&#39;applicazione web in AEM che si basava fortemente sulle intestazioni HTTP. Tutto funzionava correttamente nell’istanza di solo AEM, ma non quando si utilizzava un’istanza di Dispatcher.
 
 Di solito hai iniziato a riapplicare le intestazioni mancanti alle risorse nel server Apache con `mod_headers` utilizzando informazioni che puoi derivare dal percorso e dal suffisso delle risorse. Ma non è sempre stato sufficiente.
 
@@ -1313,7 +1316,7 @@ Particolarmente irritante è stato il fatto che anche con il Dispatcher la prima
 
 A partire da Dispatcher 4.1.11, Dispatcher può memorizzare le intestazioni generate dai sistemi Publish.
 
-In questo modo eviti di duplicare la logica di intestazione nel Dispatcher e sfrutta la piena potenza espressiva di HTTP e AEM.
+Questo ti consente di evitare la duplicazione della logica di intestazione nel Dispatcher e di liberare la piena potenza espressiva di HTTP e AEM.
 
 **Riferimenti**
 
@@ -1321,7 +1324,7 @@ In questo modo eviti di duplicare la logica di intestazione nel Dispatcher e sfr
 
 ### Eccezioni di memorizzazione in cache individuali
 
-Potrebbe essere utile memorizzare nella cache tutte le pagine e le immagini in generale, ma in alcune circostanze fare un&#39;eccezione. Ad esempio, si desidera memorizzare nella cache le immagini PNG, ma non le immagini PNG che mostrano un captcha (che si suppone venga modificato su ogni richiesta). Dispatcher potrebbe non riconoscere un captcha come captcha.. ma AEM lo fa certamente. Può chiedere al Dispatcher di non memorizzare in cache quella richiesta inviando un’intestazione corrispondente con la risposta:
+Potrebbe essere utile memorizzare nella cache tutte le pagine e le immagini in generale, ma in alcune circostanze fare un&#39;eccezione. Ad esempio, si desidera memorizzare nella cache le immagini PNG, ma non le immagini PNG che mostrano un captcha (che si suppone venga modificato su ogni richiesta). Il Dispatcher potrebbe non riconoscere un captcha come un captcha.. ma AEM certamente. Può chiedere al Dispatcher di non memorizzare in cache quella richiesta inviando un’intestazione corrispondente con la risposta:
 
 ```plain
   response.setHeader("Dispatcher", "no-cache");
@@ -1345,7 +1348,7 @@ La risposta http più veloce è la risposta data dal browser stesso. Dove la ric
 
 Puoi aiutare il browser a decidere quando chiedere al server una nuova versione del file impostando una data di scadenza per una risorsa.
 
-Di solito, lo fai statisticamente utilizzando l&#39;intestazione di Apache `mod_expires` o memorizzando l&#39;intestazione Cache-Control e Expires che provengono da AEM se hai bisogno di un controllo più individuale.
+Di solito, lo si fa statisticamente utilizzando il `mod_expires` di Apache o memorizzando l&#39;intestazione Cache-Control e Expires che provengono da AEM se hai bisogno di un controllo più individuale.
 
 Un documento memorizzato nella cache del browser può avere tre livelli di aggiornamento.
 
@@ -1371,7 +1374,7 @@ Per far funzionare questa seconda parte, assicurati di trasmettere la data `Last
 
 Abbiamo spiegato in precedenza che quando la data `Last-Modified` viene generata dal Dispatcher, può variare tra diverse richieste perché il file memorizzato nella cache - e la relativa data - viene generato quando il file viene richiesto dal browser. Un’alternativa sarebbe quella di utilizzare gli &quot;e-tag&quot;, ovvero numeri che identificano il contenuto effettivo (ad esempio generando un codice hash) invece di una data.
 
-&quot;[Supporto tag](https://adobe-consulting-services.github.io/acs-aem-commons/features/etag/index.html)&quot; dal _pacchetto ACS Commons_ utilizza questo approccio. Questo però ha un prezzo: Poiché l’E-Tag deve essere inviato come intestazione, ma il calcolo del codice hash richiede la lettura completa della risposta, la risposta deve essere completamente bufferizzata nella memoria principale prima che possa essere distribuita. Questo può avere un impatto negativo sulla latenza quando è più probabile che il sito web disponga di risorse non memorizzate nella cache e, ovviamente, è necessario tenere d’occhio la memoria utilizzata dal sistema AEM.
+&quot;[Supporto tag](https://adobe-consulting-services.github.io/acs-aem-commons/features/etag/index.html)&quot; dal _pacchetto ACS Commons_ utilizza questo approccio. Questo però ha un prezzo: Poiché l’E-Tag deve essere inviato come intestazione, ma il calcolo del codice hash richiede la lettura completa della risposta, la risposta deve essere completamente bufferizzata nella memoria principale prima che possa essere distribuita. Questo può avere un impatto negativo sulla latenza quando è più probabile che il sito web abbia risorse non memorizzate nella cache e, ovviamente, è necessario tenere d&#39;occhio la memoria utilizzata dal sistema AEM.
 
 Se utilizzi le impronte digitali URL, puoi impostare date di scadenza molto lunghe. È possibile memorizzare in cache le risorse impronte digitali per sempre nel browser. Una nuova versione viene contrassegnata con un nuovo URL e le versioni precedenti non devono mai essere aggiornate.
 
@@ -1381,7 +1384,7 @@ Per i file regolari di solito impostiamo uno schema fisso, come il ricontrollo H
 
 La memorizzazione in cache del browser è estremamente utile nel sistema di authoring. Desideri memorizzare nella cache il più possibile nel browser per migliorare l&#39;esperienza di modifica. Sfortunatamente, le risorse più costose, le pagine html non possono essere memorizzate nella cache... dovrebbero cambiare frequentemente sull&#39;autore.
 
-Le librerie granite, che compongono l’interfaccia utente di AEM, possono essere memorizzate nella cache per un bel po’ di tempo. Puoi anche memorizzare nella cache i file statici dei siti (font, CSS e JavaScript) nel browser. Anche le immagini in `/content/dam` di solito possono essere memorizzate nella cache per circa 15 minuti in quanto non vengono modificate con la stessa frequenza del testo copiato sulle pagine. Le immagini non vengono modificate in modo interattivo in AEM. Vengono modificati e approvati per primi, prima di essere caricati in AEM. Pertanto, è possibile supporre che non vengano modificate con la stessa frequenza del testo.
+Le librerie granite, che compongono AEM’interfaccia utente, possono essere memorizzate nella cache per un bel po’ di tempo. Puoi anche memorizzare nella cache i file statici dei siti (font, CSS e JavaScript) nel browser. Anche le immagini in `/content/dam` di solito possono essere memorizzate nella cache per circa 15 minuti in quanto non vengono modificate con la stessa frequenza del testo copiato sulle pagine. Le immagini non vengono modificate in modo interattivo in AEM. Vengono prima modificati e approvati, prima di essere caricati in AEM. Pertanto, è possibile supporre che non vengano modificate con la stessa frequenza del testo.
 
 Memorizzazione in cache dei file dell&#39;interfaccia utente, i file della libreria dei siti e le immagini possono velocizzare notevolmente il ricaricamento delle pagine in modalità di modifica.
 
@@ -1417,13 +1420,13 @@ vorreste avere,
 
 Devi implementare la mappatura su AEM, perché AEM deve sapere come eseguire il rendering dei collegamenti in base a quel formato troncato.
 
-Ma non affidarti solo ad AEM. In tal caso, nella directory principale della cache troverai percorsi come `/home.html`. Ora, è quella la &quot;casa&quot; per il sito web finlandese o tedesco o canadese? E se c’è un file `/home.html` in Dispatcher, come fa il Dispatcher a sapere che deve essere invalidato quando arriva una richiesta di invalidazione per `/content/brand/fi/fi/home`.
+Ma non fare affidamento solo su AEM. In tal caso, nella directory principale della cache troverai percorsi come `/home.html`. Ora, è quella la &quot;casa&quot; per il sito web finlandese o tedesco o canadese? E se c’è un file `/home.html` in Dispatcher, come fa il Dispatcher a sapere che deve essere invalidato quando arriva una richiesta di invalidazione per `/content/brand/fi/fi/home`.
 
 Abbiamo visto un progetto con docroot separati per ogni dominio. È stato un incubo eseguire il debug e mantenere - e in realtà non l&#39;abbiamo mai visto funzionare senza problemi.
 
 Potremmo risolvere i problemi ristrutturando la cache. Avevamo un singolo docroot per tutti i domini e le richieste di annullamento della validità potevano essere gestite 1:1 in quanto tutti i file sul server iniziavano con `/content`.
 
-Anche la parte troncante era molto facile.  Collegamenti troncati generati da AEM a causa di una configurazione in `/etc/map`.
+Anche la parte troncante era molto facile.  AEM generato collegamenti troncati a causa di una configurazione in `/etc/map`.
 
 Ora, quando una richiesta `/home.html` colpisce il Dispatcher, la prima cosa che succede è applicare una regola di riscrittura che espande internamente il percorso.
 
@@ -1468,13 +1471,13 @@ ErrorDocument 404 "/content/shiny-brand/fi/fi/edocs/error-404.html"
 ErrorDocument 500 "/content/shiny-brand/fi/fi/edocs/error-500.html"
 ```
 
-Ora il sistema AEM poteva semplicemente avvisare il Dispatcher che qualcosa non andava e Dispatcher poteva fornire una versione brillante e bella del documento di errore.
+Ora il sistema AEM poteva semplicemente avvisare il Dispatcher che qualcosa non andava e il Dispatcher poteva fornire una versione brillante e bella del documento di errore.
 
 Due sono le cose da notare qui.
 
 Innanzitutto, la `error-404.html` è sempre la stessa pagina. Pertanto, non esiste un messaggio individuale come &quot;La tua ricerca di &quot;_produkten_&quot; non ha prodotto un risultato&quot;. Potremmo conviverci facilmente con quello.
 
-Secondo... beh, se vediamo un errore interno del server - o ancora peggio se incontriamo un&#39;interruzione del sistema AEM, non c&#39;è modo di chiedere ad AEM di rappresentare una pagina di errore, giusto? Anche la richiesta successiva necessaria, come definita nella direttiva `ErrorDocument`, fallirà. Abbiamo risolto questo problema eseguendo un cron-job che periodicamente estrae le pagine di errore dalle rispettive posizioni definite tramite `wget` e le archivia in posizioni statiche di file definite nella direttiva `ErrorDocuments` .
+Secondo... beh, se vediamo un errore interno del server - o peggio ancora se incontriamo un&#39;interruzione del sistema di AEM, non c&#39;è modo di chiedere AEM di rendere una pagina di errore, giusto? Anche la richiesta successiva necessaria, come definita nella direttiva `ErrorDocument`, fallirà. Abbiamo risolto questo problema eseguendo un cron-job che periodicamente estrae le pagine di errore dalle rispettive posizioni definite tramite `wget` e le archivia in posizioni statiche di file definite nella direttiva `ErrorDocuments` .
 
 **Riferimenti**
 
@@ -1484,7 +1487,7 @@ Secondo... beh, se vediamo un errore interno del server - o ancora peggio se inc
 
 Dispatcher non controlla le autorizzazioni quando distribuisce una risorsa per impostazione predefinita. È implementato in questo modo di proposito - per velocizzare il tuo sito web pubblico. Se desideri proteggere alcune risorse tramite un accesso, sostanzialmente hai tre opzioni,
 
-1. Proteggi la risorsa prima che la richiesta raggiunga la cache, ad esempio tramite un gateway SSO (Single Sign On) davanti al Dispatcher o come modulo nel server Apache
+1. Protect la risorsa prima che la richiesta raggiunga la cache, ad esempio da un gateway SSO (Single Sign On) davanti al Dispatcher o come modulo nel server Apache
 
 2. Escludere le risorse sensibili dalla cache e quindi distribuirle sempre live dal sistema Publish.
 
@@ -1492,7 +1495,7 @@ Dispatcher non controlla le autorizzazioni quando distribuisce una risorsa per i
 
 E naturalmente, potete applicare la vostra combinazione di tutti e tre gli approcci.
 
-**Opzione 1**. Un gateway &quot;SSO&quot; potrebbe comunque essere applicato dalla tua organizzazione. Se lo schema di accesso è molto granulare, potrebbe non essere necessario ricevere informazioni da AEM per decidere se concedere o negare l’accesso a una risorsa.
+**Opzione 1**. Un gateway &quot;SSO&quot; potrebbe comunque essere applicato dalla tua organizzazione. Se lo schema di accesso è molto grezzo, potrebbe non essere necessario ricevere informazioni da AEM per decidere se concedere o negare l&#39;accesso a una risorsa.
 
 >[!NOTE]
 >
@@ -1721,11 +1724,11 @@ Tale direttiva rappresenta l&#39;intera stringa di richiesta, incluso il metodo 
 
 `"GET /content/foo/bar.html HTTP/1.1"`
 
-questa è la stringa rispetto alla quale verrebbe confrontato il pattern. I principianti tendono a dimenticare la prima parte, la `method` (GET, POST, ...). Quindi, uno schema
+questa è la stringa rispetto alla quale verrebbe confrontato il pattern. I principianti tendono a dimenticare la prima parte, il `method` (GET, POST, ...). Quindi, uno schema
 
 `/0002  { /glob "/content/\*" /type "allow" }`
 
-Avrebbe sempre esito negativo perché &quot;/content&quot; non corrisponde a &quot;GET ..&quot; della richiesta.
+Avrà sempre esito negativo perché &quot;/content&quot; non corrisponde a &quot;GET ..&quot; della richiesta.
 
 Quindi quando si desidera utilizzare i Globi,
 
@@ -1844,7 +1847,7 @@ Molto probabilmente aggiungerai una nuova regola a uno dei gruppi - o forse anch
 
 L&#39;ultimo suggerimento non è un vero suggerimento, ma abbiamo sentito che valeva comunque la pena condividerlo con voi.
 
-Nella maggior parte dei casi AEM e Dispatcher funzionano come standard. Pertanto, non troverai una specifica completa del protocollo Dispatcher sul protocollo di invalidazione per creare la tua applicazione in cima. Le informazioni sono pubbliche, ma un po&#39; sparse su una serie di risorse.
+Nella maggior parte dei casi, AEM e Dispatcher funzionano come preconfigurato. Pertanto, non troverai una specifica completa del protocollo Dispatcher sul protocollo di invalidazione per creare la tua applicazione in cima. Le informazioni sono pubbliche, ma un po&#39; sparse su una serie di risorse.
 
 Cerchiamo di colmare il divario in qualche misura qui. Esempio di una richiesta di annullamento della validità:
 
