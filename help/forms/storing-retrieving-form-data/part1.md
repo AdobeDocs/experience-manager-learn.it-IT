@@ -1,26 +1,21 @@
 ---
 title: Memorizzazione e recupero dei dati dei moduli dal database MySQL
 description: Esercitazione in più parti per illustrare i passaggi necessari per memorizzare e recuperare i dati dei moduli
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
 version: 6.3,6.4,6.5
-topic: Development
+feature: Moduli adattivi
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '199'
 ht-degree: 3%
 
 ---
 
 # Configura origine dati
 
-AEM consente l’integrazione con database esterno in diversi modi. Una delle pratiche più comuni e standard dell&#39;integrazione del database è l&#39;utilizzo delle proprietà di configurazione DataSource in pool di connessione Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
+Esistono diversi modi con cui AEM abilitare l’integrazione con il database esterno. Una delle pratiche più comuni e standard dell&#39;integrazione del database è l&#39;utilizzo delle proprietà di configurazione DataSource in pool di connessione Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
 Il primo passaggio consiste nel scaricare e distribuire i [driver MySql ](https://mvnrepository.com/artifact/mysql/mysql-connector-java) appropriati in AEM.
 Crea un’origine dati in pool di connessione Apache Sling e fornisci le proprietà specificate nella schermata sottostante. Lo schema di database viene fornito come parte di questa esercitazione risorse.
 
@@ -36,9 +31,7 @@ Il file sql per creare lo schema può essere [scaricato da qui](assets/form-data
 >Assicurati di denominare la tua origine dati **SaveAndContinue**. Il codice di esempio utilizza il nome per connettersi al database.
 
 | Nome proprietà | Valore |
-------------------------|---------------------------------------
+| ------------------------|---------------------------------------|
 | Nome origine dati | SaveAndContinue |
 | Classe driver JDBC | com.mysql.cj.jdbc.Driver |
 | URI di connessione JDBC | jdbc:mysql://localhost:3306/aemformstutorial |
-
-
