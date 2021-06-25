@@ -697,7 +697,7 @@ Invalidate-path /content/mysite/dummy
 
 3. Lo statfile viene aggiornato.
 
-4. La volta successiva, viene richiesta la pagina principale, che viene riprodotta. La nuova impronta digitale/data viene ricavata dalla proprietà lastModified dell&#39;immagine come selettore aggiuntivo
+4. La volta successiva, la pagina principale viene richiesta e viene riprodotta. La nuova impronta digitale/data viene ricavata dalla proprietà lastModified dell&#39;immagine come selettore aggiuntivo
 
 5. Questo crea implicitamente un riferimento a una nuova immagine
 
