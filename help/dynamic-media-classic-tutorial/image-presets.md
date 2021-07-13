@@ -1,19 +1,18 @@
 ---
 title: Predefiniti immagini
-description: I predefiniti per immagini in Dynamic Media Classic contengono tutte le impostazioni necessarie per creare un’immagine con dimensioni, formato, qualità e nitidezza specifici. I predefiniti per immagini sono un componente chiave del dimensionamento dinamico. Quando osservi un URL in Dynamic Media Classic, puoi facilmente vedere se è in uso un predefinito per immagini. Scopri i predefiniti per immagini, perché sono così utili e come crearne uno.
+description: I predefiniti per immagini in Dynamic Media Classic contengono tutte le impostazioni necessarie per creare un’immagine con dimensioni, formato, qualità e nitidezza specifiche. I predefiniti per immagini sono un componente chiave del dimensionamento dinamico. Quando osservi un URL in Dynamic Media Classic, puoi facilmente vedere se è in uso un predefinito per immagini. Scopri i predefiniti per immagini, perché sono così utili e come crearne uno.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, Image Presets
+feature: Dynamic Media Classic, Predefiniti immagine
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
-topic: Content Management
-role: Business Practitioner
+topic: Gestione dei contenuti
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '712'
 ht-degree: 1%
 
 ---
@@ -48,7 +47,7 @@ Un predefinito per immagini ha un simbolo del dollaro ($) su entrambi i lati del
 
 In genere, i predefiniti per immagini ridimensionano un’immagine e ogni volta che ne ridimensiona una dalle dimensioni originali, è necessario aggiungere nitidezza. Questo perché il ridimensionamento fa sì che molti pixel si uniscano e si fondano in uno spazio più piccolo, rendendo l&#39;immagine morbida e sfocata. La nitidezza aumenta il contrasto dei bordi e delle aree a contrasto elevato di un&#39;immagine.
 
-Ci aspettiamo che le immagini ad alta risoluzione caricate in Dynamic Media Classic non abbiano bisogno di nitidezza quando vengono visualizzate a dimensioni reali, quando vengono ingrandite in. Tuttavia, con qualsiasi dimensione più piccola, una certa nitidezza è solitamente auspicabile.
+Ci aspettiamo che le immagini ad alta risoluzione caricate in Dynamic Media Classic non necessitino di nitidezza quando visualizzate a dimensione piena — quando vengono ingrandite in. Tuttavia, con qualsiasi dimensione più piccola, una certa nitidezza è solitamente auspicabile.
 
 >[!TIP]
 >
@@ -64,7 +63,7 @@ L’immagine seguente mostra tre livelli di nitidezza. Da destra a sinistra non 
 
 Dynamic Media Classic consente tre tipi di nitidezza: Nitidezza semplice, modalità di campionamento e Maschera definizione dettagli.
 
-Ulteriori informazioni sulle [opzioni di nitidezza di Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
+Ulteriori informazioni su [Opzioni di nitidezza di Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
 
 ## Risorse aggiuntive
 
