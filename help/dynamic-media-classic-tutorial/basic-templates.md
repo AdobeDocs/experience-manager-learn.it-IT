@@ -1,19 +1,18 @@
 ---
 title: Introduzione ai modelli di base
-description: Scopri i modelli di base in Dynamic Media Classic, modelli basati su immagini richiamati dal server di immagini e costituiti da immagini e testo di cui è stato eseguito il rendering. Un modello può essere modificato dinamicamente tramite l’URL dopo la pubblicazione. Scoprirai come caricare una PSD di Photoshop in Dynamic Media Classic per utilizzarla come base di un modello. Crea un semplice modello di base per merchandising composto da livelli immagine. Aggiungete i livelli di testo e rendeteli variabili mediante l’uso di parametri. Crea un URL modello e manipola l’immagine in modo dinamico tramite il browser web.
+description: Scopri i Modelli di base in Dynamic Media Classic, i modelli basati su immagini chiamati dal server di immagini e costituiti da immagini e testo di cui è stato eseguito il rendering. Un modello può essere modificato dinamicamente tramite l’URL dopo la pubblicazione. Scoprirai come caricare una PSD Photoshop in Dynamic Media Classic per utilizzarla come base di un modello. Crea un semplice modello di base per merchandising composto da livelli immagine. Aggiungete i livelli di testo e rendeteli variabili mediante l’uso di parametri. Crea un URL modello e manipola l’immagine in modo dinamico tramite il browser web.
 sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
-topic: Content Management
-role: Business Practitioner
+topic: Gestione dei contenuti
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '6309'
+source-wordcount: '6306'
 ht-degree: 0%
 
 ---
@@ -27,14 +26,14 @@ Uno degli aspetti più potenti dei modelli è che dispongono di punti di integra
 
 I modelli di base possono essere implementati in diversi modi, da semplici a complessi. Esempio:
 
-- merchandising di base. Utilizza etichette come &quot;spedizione gratuita&quot; se il prodotto ha la spedizione gratuita. Queste etichette vengono impostate dal team di merchandise in Photoshop e il web utilizza la logica per sapere quando applicarle all&#39;immagine.
+- merchandising di base. Utilizza etichette come &quot;spedizione gratuita&quot; se il prodotto ha la spedizione gratuita. Queste etichette vengono configurate dal team di merchandise in Photoshop e il web utilizza la logica per sapere quando applicarle all&#39;immagine.
 - Merchandising avanzato. Ogni modello ha più variabili e può mostrare più di un’opzione allo stesso tempo. Utilizza un database, un inventario e regole aziendali per determinare quando mostrare un prodotto come &quot;Just In&quot;, &quot;Clearance&quot; o &quot;Sold Out&quot;. Può anche utilizzare la trasparenza dietro il prodotto per mostrarlo su diversi sfondi, come in stanze diverse. Gli stessi modelli e/o risorse possono essere riutilizzati nella pagina dei dettagli del prodotto per mostrare una versione più grande o zoomabile dello stesso prodotto su diversi sfondi.
 
-È importante comprendere che Dynamic Media Classic fornisce solo la parte visiva di queste applicazioni basate su modelli. Le aziende Dynamic Media Classic o i loro partner di integrazione devono fornire le regole aziendali, il database e le competenze di sviluppo per creare le applicazioni. Non esiste un&#39;applicazione modello &quot;integrata&quot;; i designer configurano il modello in Dynamic Media Classic e gli sviluppatori utilizzano chiamate URL per modificare le variabili nel modello.
+È importante comprendere che Dynamic Media Classic fornisce solo la parte visiva di queste applicazioni basate su modelli. Le aziende Dynamic Media Classic o i loro partner di integrazione devono fornire le regole aziendali, il database e le competenze di sviluppo per creare le applicazioni. Non esiste un&#39;applicazione modello &quot;integrata&quot;; i designer impostano il modello in Dynamic Media Classic e gli sviluppatori utilizzano chiamate URL per modificare le variabili nel modello.
 
 Alla fine di questa sezione dell’esercitazione saprai come:
 
-- Carica un file PSD di Photoshop in Dynamic Media Classic per utilizzarlo come base di un modello.
+- Carica una PSD Photoshop in Dynamic Media Classic per utilizzarla come base di un modello.
 - Crea un semplice modello di base per merchandising composto da livelli immagine.
 - Aggiungete i livelli di testo e rendeteli variabili mediante l’uso di parametri.
 - Crea un URL modello e manipola l’immagine in modo dinamico tramite il browser web.
@@ -54,7 +53,7 @@ I modelli sono più simili ai file PSD di Photoshop, in quanto hanno un flusso d
 - È possibile creare livelli basati su testo. La qualità può essere molto elevata perché Image Server utilizza lo stesso motore di testo di Photoshop e Illustrator.
 - Gli stili di livello semplici possono essere applicati a ogni livello per creare effetti speciali come ombre di rilascio o bagliori.
 
-Tuttavia, a differenza delle PSD di Photoshop, i livelli possono essere interamente dinamici e controllati tramite un URL sul server di immagini.
+Tuttavia, a differenza dei PSD Photoshop, i livelli possono essere interamente dinamici e controllati tramite un URL sul server di immagini.
 
 - È possibile aggiungere variabili a tutte le proprietà del modello, facilitandone la modifica immediata.
 - Le variabili denominate parametri consentono di esporre solo la parte del modello che si desidera modificare.
@@ -63,9 +62,9 @@ Tuttavia, a differenza delle PSD di Photoshop, i livelli possono essere interame
 
 Utilizzando un segnaposto, puoi scambiare dinamicamente il contenuto di un livello con un’altra risorsa pubblicata e questo prenderà automaticamente le stesse proprietà (ad esempio, dimensioni e rotazione) del livello che ha sostituito.
 
-Poiché i modelli di base sono generalmente progettati in Photoshop ma distribuiti tramite un URL, un progetto modello richiede una combinazione di competenze tecniche e di progettazione. In genere supponiamo che la persona che esegue il lavoro del modello creativo sia un designer di Photoshop e che la persona che implementa il modello sia uno sviluppatore web. I team creativi e di sviluppo devono collaborare strettamente affinché il modello abbia successo.
+Poiché i modelli di base sono generalmente progettati in Photoshop ma implementati tramite un URL, un progetto modello richiede una combinazione di competenze tecniche e di progettazione. In genere si presuppone che la persona che esegue il lavoro del modello creativo sia un designer di Photoshop e che la persona che implementa il modello sia uno sviluppatore web. I team creativi e di sviluppo devono collaborare strettamente affinché il modello abbia successo.
 
-I progetti modello possono essere relativamente semplici o estremamente complessi a seconda delle regole di business e delle esigenze dell&#39;applicazione. I modelli di base vengono richiamati dal server di immagini, tuttavia, a causa della flessibilità dell’ambiente Dynamic Media Classic, è possibile nidificare i modelli all’interno di altri modelli, consentendo di creare immagini abbastanza complesse che possono essere collegate da variabili comunemente denominate.
+I progetti modello possono essere relativamente semplici o estremamente complessi a seconda delle regole di business e delle esigenze dell&#39;applicazione. I modelli di base vengono chiamati da Image Server. Tuttavia, a causa della flessibilità dell’ambiente Dynamic Media Classic, è possibile nidificare i modelli all’interno di altri modelli, consentendo di creare immagini abbastanza complesse che possono essere collegate da variabili comunemente denominate.
 
 - Ulteriori informazioni su [Nozioni di base sui modelli](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/quick-start-template-basics.html).
 - Scopri come creare un [modello di base](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template).
@@ -78,12 +77,12 @@ Quando lavori con un modello di base, in genere segui i passaggi del flusso di l
 
 _Flusso di lavoro Modello di base ._
 
-1. Progetta e crea le tue risorse. La maggior parte degli utenti lo fa in Adobe Photoshop. Progetta le risorse con le dimensioni desiderate: se si tratta di un&#39;immagine da 200 pixel per una pagina con miniature, progettala a 200 pixel. Se devi ingrandirlo, progettalo ad una dimensione di circa 2000 pixel. Usa Photoshop (e/o Illustrator salvato come bitmap) per creare le risorse e utilizza Dynamic Media Classic per assemblare le parti, gestire i livelli e aggiungere variabili.
-2. Dopo aver progettato le risorse grafiche, caricale in Dynamic Media Classic. Invece di caricare singole risorse dalla PSD, ti consigliamo di caricare l’intero file PSD a livelli e di creare un file per livello in Dynamic Media Classic utilizzando l’opzione **Gestisci livelli** al momento del caricamento (vedi sotto per ulteriori dettagli). _Flusso di lavoro del testo: Se crei testo dinamico, carica anche i font. Il testo dinamico è variabile e controllato tramite l’URL. Se il testo è statico o contiene solo poche frasi brevi che non cambiano, ad esempio tag che dicono &quot;Nuovo&quot; o &quot;Vendita&quot;, invece di &quot;X% Off&quot;, con la X come numero variabile, consigliamo di pre-eseguire il rendering del testo in Photoshop e di caricarlo come livelli rasterizzati come immagini. Sarà più facile e potrai formattare il testo esattamente come lo desideri._
-3. Crea il modello in Dynamic Media Classic utilizzando l’editor Template Basics del menu Genera e aggiungi livelli immagine. Flusso di lavoro del testo: Crea livelli di testo nello stesso editor. Questo passaggio è necessario quando si crea manualmente un modello in Dynamic Media Classic. Scegliete una dimensione dell’area di lavoro che corrisponda alla progettazione, trascinate e rilasciate le immagini nell’area di lavoro e impostate le proprietà del livello (dimensione, rotazione, opacità, ecc.). Non stai inserendo tutti i livelli possibili sul modello, solo un segnaposto per livello immagine. _Flusso di lavoro del testo: Con lo strumento Testo potete creare livelli di testo, in modo analogo a come si creano i livelli di testo in Photoshop. È possibile scegliere un font e formattarlo utilizzando le stesse opzioni disponibili con lo strumento Photoshop Type._ Un altro flusso di lavoro consiste nel caricare una PSD e far sì che Dynamic Media Classic generi un modello &quot;gratuito&quot;, e può anche ricreare livelli di testo. Questo aspetto verrà discusso più in dettaglio più avanti.
+1. Progetta e crea le tue risorse. La maggior parte degli utenti esegue questa operazione in Adobe Photoshop. Progetta le risorse con le dimensioni desiderate: se si tratta di un&#39;immagine da 200 pixel per una pagina con miniature, progettala a 200 pixel. Se devi ingrandirlo, progettalo ad una dimensione di circa 2000 pixel. Utilizza Photoshop (e/o Illustrator salvato come bitmap) per creare le risorse e utilizza Dynamic Media Classic per assemblare le parti, gestire i livelli e aggiungere variabili.
+2. Dopo aver progettato le risorse grafiche, caricale in Dynamic Media Classic. Invece di caricare singole risorse dalla PSD, ti consigliamo di caricare l’intero file PSD a livelli e di fare in modo che Dynamic Media Classic crei un file per livello, utilizzando l’opzione **Gestisci livelli** al momento del caricamento (vedi sotto per ulteriori dettagli). _Flusso di lavoro del testo: Se crei testo dinamico, carica anche i font. Il testo dinamico è variabile e controllato tramite l’URL. Se il testo è statico o contiene solo poche frasi brevi che non cambiano, ad esempio tag che dicono &quot;Nuovo&quot; o &quot;Vendita&quot;, invece di &quot;X% Off&quot;, con la X come numero di variabile, ti consigliamo di pre-eseguire il rendering del testo in Photoshop e di caricarlo come livelli rasterizzati come immagini. Sarà più facile e potrai formattare il testo esattamente come lo desideri._
+3. Crea il modello in Dynamic Media Classic utilizzando l’editor Template Basics del menu Build e aggiungi livelli immagine. Flusso di lavoro del testo: Crea livelli di testo nello stesso editor. Questo passaggio è necessario quando si crea manualmente un modello in Dynamic Media Classic. Scegliete una dimensione dell’area di lavoro che corrisponda alla progettazione, trascinate e rilasciate le immagini nell’area di lavoro e impostate le proprietà del livello (dimensione, rotazione, opacità, ecc.). Non stai inserendo tutti i livelli possibili sul modello, solo un segnaposto per livello immagine. _Flusso di lavoro del testo: Con lo strumento Testo potete creare livelli di testo, in modo analogo a come create i livelli di testo in Photoshop. È possibile scegliere un font e formattarlo utilizzando le stesse opzioni disponibili con lo strumento Photoshop Type._ Un altro flusso di lavoro consiste nel caricare una PSD e far sì che Dynamic Media Classic generi un modello &quot;gratuito&quot;, e può anche ricreare livelli di testo. Questo aspetto verrà discusso più in dettaglio più avanti.
 4. Una volta creati i livelli, aggiungi parametri (variabili) a qualsiasi proprietà di qualsiasi livello che desideri controllare tramite l’URL, inclusa la sorgente del livello (l’immagine stessa ). _Flusso di lavoro del testo: È inoltre possibile aggiungere parametri ai livelli di testo, sia per controllare il contenuto del testo e le dimensioni e la posizione del livello stesso, sia per tutte le opzioni di formattazione come il colore del font, la dimensione del font, il tracciamento orizzontale, ecc._
 5. Crea un predefinito per immagini che corrisponda alle dimensioni del modello. A questo scopo, consigliamo di chiamare sempre il modello con dimensioni 1:1 e di aggiungere nitidezza a tutti i livelli immagine di grandi dimensioni che vengono ridimensionati per adattarlo al modello. Se crei un modello su cui ingrandire, questo passaggio non è necessario.
-6. Pubblica, copia l’URL dall’anteprima Dynamic Media Classic e testalo in un browser.
+6. Pubblica, copia l’URL dall’anteprima di Dynamic Media Classic e testalo in un browser.
 
 ## Preparazione e caricamento delle risorse dei modelli in Dynamic Media Classic
 
@@ -91,7 +90,7 @@ Prima di caricare le risorse dei modelli in Dynamic Media Classic, dovrai comple
 
 ### Preparazione del file PSD per il caricamento
 
-Prima di caricare il file Photoshop su Dynamic Media Classic, semplificate i livelli in Photoshop per facilitare il lavoro con e per avere la massima compatibilità con il server di immagini. Il tuo file PSD sarà spesso composto da molti elementi che Dynamic Media Classic non riconosce e potresti anche finire con molti piccoli elementi che sono difficili da gestire. Assicurarsi di salvare un backup del PSD principale nel caso sia necessario modificare successivamente l&#39;originale. La copia semplificata verrà caricata e non il master.
+Prima di caricare il file Photoshop in Dynamic Media Classic, semplificate i livelli in Photoshop per semplificare il funzionamento con e per garantire la massima compatibilità con il server di immagini. Il tuo file PSD sarà spesso costituito da molti elementi che Dynamic Media Classic non riconosce, e si può anche finire con molti piccoli pezzi che sono difficili da gestire. Assicurarsi di salvare un backup del PSD principale nel caso sia necessario modificare successivamente l&#39;originale. La copia semplificata verrà caricata e non il master.
 
 ![immagine](assets/basic-templates/basic-templates-2.jpg)
 
@@ -109,11 +108,11 @@ Prima di caricare il file Photoshop su Dynamic Media Classic, semplificate i liv
 
 ### Utilizzo dei font
 
-Puoi anche caricare e pubblicare i font se hai bisogno di generare testo dinamico. L’unico font incluso con Dynamic Media Classic è Arial.
+Puoi anche caricare e pubblicare i font se hai bisogno di generare testo dinamico. L&#39;unico font incluso con Dynamic Media Classic è Arial.
 
 È responsabilità di ogni azienda ottenere una licenza per l&#39;utilizzo di un font sul web — semplicemente avere un font installato sul tuo computer non ti dà il diritto di utilizzarlo commercialmente sul web, e la tua azienda potrebbe affrontare azioni legali da parte dell&#39;editore del font se utilizzato senza autorizzazione. Inoltre, i termini di licenza variano. Potrebbe essere necessario disporre di licenze separate per la stampa rispetto alla visualizzazione dello schermo, ad esempio.
 
-Dynamic Media Classic supporta i font standard OpenType (OTF), TrueType (TTF) e Type 1 Postscript. Non sono supportati solo i font della valigia, i file di raccolta dei tipi, i font di sistema di Windows e i font della macchina proprietari (come i font utilizzati da incisioni o ricami). Sarà necessario convertirli in uno dei formati di font standard o sostituirli con un font simile da utilizzare in Dynamic Media Classic e su Image Server.
+Dynamic Media Classic supporta i font standard OpenType (OTF), TrueType (TTF) e Type 1 Postscript. Non sono supportati solo i font della valigia, i file di raccolta dei tipi, i font di sistema di Windows e i font della macchina proprietari (come i font utilizzati da incisioni o ricami). Sarà necessario convertirli in uno dei formati di font standard o sostituire un font simile da utilizzare in Dynamic Media Classic e sul server delle immagini.
 
 Dopo aver caricato i font in Dynamic Media Classic, come qualsiasi altra risorsa, devono anche essere pubblicati sul server di immagini. Un errore di modello molto comune è quello di dimenticare di pubblicare i font, che si tradurrà in un errore di immagine — il server di immagini non sostituirà un altro font al suo posto. Inoltre, se desideri utilizzare l&#39;opzione **Estrai testo** durante il caricamento, devi caricare i file di font prima di caricare la PSD che utilizza tali font. La funzione **Estrai testo** tenterà di ricreare il testo come livello di testo modificabile e di posizionarlo all’interno di un modello Dynamic Media Classic. Questo argomento viene discusso nel prossimo argomento, Opzioni PSD.
 
@@ -127,21 +126,21 @@ Dynamic Media Classic utilizza il nome file di questo font (ACaslonPro-Semibold)
 
 Se devi modificare i font tramite l’URL, devi chiamare il nome RTF del font (non l’ID risorsa), altrimenti riceverai un errore. In questo caso, il nome corretto per questo font sarebbe &quot;Adobe Caslon Pro&quot;. Discuteremo di più sui font e RTF nell&#39;argomento RTF e parametri di testo, qui sotto.
 
-I formati di file di font più comuni trovati sui sistemi Windows e Mac sono OpenType e TrueType. OpenType ha un&#39;estensione OTF, mentre TrueType è .TTF. Entrambi i formati funzionano allo stesso modo in Dynamic Media Classic.
+I formati di file di font più comuni trovati sui sistemi Windows e Mac sono OpenType e TrueType. L&#39;OpenType ha un&#39;estensione .OTF, mentre TrueType è .TTF. Entrambi i formati funzionano allo stesso modo in Dynamic Media Classic.
 
 ### Selezione delle opzioni per il caricamento del file PSD
 
-Non è necessario caricare un file Photoshop (PSD) per creare un modello; in Dynamic Media Classic è possibile creare un modello basato su qualsiasi risorsa immagine. Tuttavia, il caricamento di una PSD può semplificare l’authoring, perché in genere queste risorse sono già presenti in una PSD a livelli. Inoltre, Dynamic Media Classic genera automaticamente un modello quando carichi una PSD a livelli.
+Non è necessario caricare un file Photoshop (PSD) per creare un modello; in Dynamic Media Classic è possibile creare un modello basato su qualsiasi risorsa immagine. Tuttavia, il caricamento di una PSD può semplificare l’authoring, perché in genere queste risorse sono già presenti in una PSD a livelli. Inoltre, Dynamic Media Classic genererà automaticamente un modello quando si carica un PSD a livelli.
 
 - **Mantenere I Livelli.** Questa è l&#39;opzione più importante. Questo comunica a Dynamic Media Classic di creare una risorsa immagine per livello Photoshop. Se questa opzione è deselezionata, tutte le altre opzioni sono disabilitate e la PSD viene appiattita in un&#39;unica immagine.
 - **** **CreateTemplate.** Questa opzione prende i vari livelli generati e crea automaticamente un modello combinandoli nuovamente insieme. L’utilizzo del modello generato automaticamente comporta il posizionamento di tutti i livelli in un unico file, mentre è necessario un solo segnaposto per livello. È abbastanza facile eliminare i livelli extra, ma se hai molti livelli, è più veloce ricrearli. Assicurati di rinominare il nuovo modello; in caso contrario, verrà sovrascritto la prossima volta che ricaricherai lo stesso PSD.
-- **Estrai testo.** In questo modo i livelli di testo nella PSD vengono ricreati come livelli di testo nel modello utilizzando il font caricato. Questo passaggio è necessario se il testo si trova su un percorso in Photoshop e si desidera mantenere tale percorso nel modello. Questa funzione richiede l’utilizzo dell’opzione **Crea modello** , in quanto il testo estratto può essere creato solo da un modello generato al momento del caricamento.
+- **Estrai testo.** In questo modo i livelli di testo nella PSD vengono ricreati come livelli di testo nel modello utilizzando il font caricato. Questo passaggio è necessario se il testo si trova su un percorso in Photoshop e desideri mantenere tale percorso nel modello. Questa funzione richiede l’utilizzo dell’opzione **Crea modello** , in quanto il testo estratto può essere creato solo da un modello generato al momento del caricamento.
 - **Estende i livelli alle dimensioni dello sfondo.** Questa impostazione rende ogni livello della stessa dimensione dell&#39;area di lavoro PSD complessiva. Questo è molto utile per i livelli che rimarranno sempre fissati in posizione: altrimenti, quando si scambiano le immagini nello stesso livello, potrebbe essere necessario riposizionarle.
-- **Denominazione dei livelli** Questo comunica a Dynamic Media Classic come assegnare un nome a ogni risorsa generata per livello. Consigliamo **Photoshop** **e Layer** **Name** oppure Photoshop e **Layer** **Number**. Entrambe le opzioni utilizzano il nome PSD come prima parte del nome e aggiungono il nome o il numero del livello alla fine. Ad esempio, se disponi di un file PSD denominato &quot;shirt.psd&quot; e di livelli denominati &quot;front&quot;, &quot;maniche&quot; e &quot;collar&quot;, se effettui il caricamento utilizzando l’opzione **Photoshop e** Layer **Name**, Dynamic Media Classic genererà gli ID risorsa &quot;shirt_front&quot;, &quot;shirt_maneves&quot; e &quot;shirt_collar&quot;. L’utilizzo di una di queste opzioni consente di garantire che il nome sia univoco in Dynamic Media Classic.
+- **Denominazione dei livelli** Questo comunica a Dynamic Media Classic come assegnare un nome a ogni risorsa generata per livello. È consigliabile **Photoshop** **e Layer** **Name** o Photoshop e **Layer** **Number**. Entrambe le opzioni utilizzano il nome PSD come prima parte del nome e aggiungono il nome o il numero del livello alla fine. Ad esempio, se disponi di un file PSD denominato &quot;shirt.psd&quot; e di livelli denominati &quot;front&quot;, &quot;maniche&quot; e &quot;collar&quot;, se effettui il caricamento utilizzando l’opzione **Photoshop e** Layer **Name**, Dynamic Media Classic genererà gli ID risorsa &quot;shirt_front&quot;, &quot;shirt_maneves&quot; e &quot;shirt_collar&quot;. L’utilizzo di una di queste opzioni consente di garantire che il nome sia univoco in Dynamic Media Classic.
 
 ## Creazione di un modello con livelli immagine
 
-Anche se Dynamic Media Classic può creare automaticamente un modello da una PSD a livelli, è necessario sapere come creare il modello manualmente. Come spiegato in precedenza, in alcuni casi non si desidera utilizzare il modello creato da Dynamic Media Classic.
+Anche se Dynamic Media Classic può creare automaticamente un modello da una PSD a livelli, dovresti essere in grado di creare il modello manualmente. Come spiegato in precedenza, in alcuni casi non si desidera utilizzare il modello creato da Dynamic Media Classic.
 
 ### Interfaccia utente di base dei modelli
 
@@ -156,7 +155,7 @@ _Pagina Genera nozioni di base sui modelli ._
 - **Area di lavoro/anteprima.** Questa è la finestra principale. Qui puoi spostare, ridimensionare e ruotare i livelli con il mouse. I contorni dei livelli vengono visualizzati come linee tratteggiate.
 - **Strati.** È simile al pannello Livelli di Photoshop. I livelli aggiunti al modello verranno visualizzati qui. I livelli vengono sovrapposti dall’alto verso il basso — il livello superiore nel pannello Livelli viene visualizzato sopra gli altri al di sotto nell’elenco.
 - **Proprietà livello.** Qui è possibile regolare tutte le proprietà di un livello utilizzando controlli numerici. Selezionare prima un livello e quindi regolarne le proprietà.
-- **** **CompositeURL.** Nella parte inferiore dell’interfaccia utente è presente l’area Composite URL. Questo non verrà discusso in questa sezione dell&#39;esercitazione, tuttavia qui vedrai il tuo modello decostruito come una serie di modificatori URL di Image Serving. Questa area è modificabile: se hai familiarità con i comandi Image Server puoi modificare manualmente il modello qui. Tuttavia puoi anche romperlo. Come Photoshop, la numerazione dei livelli inizia a 0. L&#39;area di lavoro è il livello 0 e il primo livello che aggiungi è il livello 1. Le modalità di fusione determinano il modo in cui i pixel di un livello si fondono con i pixel al di sotto di esso. Potete creare una varietà di effetti speciali utilizzando le modalità di fusione.
+- **** **CompositeURL.** Nella parte inferiore dell’interfaccia utente è presente l’area Composite URL. Questo non verrà discusso in questa sezione dell&#39;esercitazione, tuttavia qui vedrai il tuo modello decostruito come una serie di modificatori URL di Image Serving. Questa area è modificabile: se hai familiarità con i comandi Image Server puoi modificare manualmente il modello qui. Tuttavia puoi anche romperlo. Come Photoshop, la numerazione dei livelli inizia da 0. L&#39;area di lavoro è il livello 0 e il primo livello che aggiungi è il livello 1. Le modalità di fusione determinano il modo in cui i pixel di un livello si fondono con i pixel al di sotto di esso. Potete creare una varietà di effetti speciali utilizzando le modalità di fusione.
 
 #### Utilizzo dell’Editor di base dei modelli
 
@@ -194,11 +193,11 @@ Ulteriori informazioni su[Aggiunta di effetti livello](https://docs.adobe.com/co
 
 ### Aggiunta di parametri
 
-Se tutto quello che si fa è combinare i livelli e salvarli, il risultato netto non è diverso da un&#39;immagine Photoshop appiattita. Ciò che rende i modelli speciali è la capacità di aggiungere parametri alle proprietà di ciascun livello, in modo che possano essere modificati dinamicamente tramite l’URL.
+Se tutto ciò che si fa è combinare i livelli e salvarli, il risultato netto non è diverso da un&#39;immagine Photoshop appiattita. Ciò che rende i modelli speciali è la capacità di aggiungere parametri alle proprietà di ciascun livello, in modo che possano essere modificati dinamicamente tramite l’URL.
 
 In termini Dynamic Media Classic, un parametro è una variabile che può essere collegata a una proprietà del modello in modo che possa essere manipolata tramite un URL. Quando aggiungi un parametro a un livello, Dynamic Media Classic espone tale proprietà nell’URL prefissando il nome del parametro con un simbolo del dollaro ($). Ad esempio, se crei un parametro denominato &quot;size&quot; per modificare le dimensioni di un livello, Dynamic Media Classic rinomina il parametro $size.
 
-Se non aggiungi un parametro per una proprietà, tale proprietà rimane nascosta nel database di Dynamic Media Classic e non viene visualizzata nell’URL.
+Se non aggiungi un parametro per una proprietà, tale proprietà rimane nascosta nel database di Dynamic Media Classic e non viene visualizzata nell&#39;URL.
 
 ![immagine](assets/basic-templates/parameters.png)
 
@@ -249,18 +248,18 @@ Per creare il testo, è necessario caricare alcuni font, altrimenti Dynamic Medi
 
 ### Parametri RTF e testo
 
-Per aggiungere variabili al testo utilizzando lo strumento Nozioni di base sui modelli, è necessario comprendere il rendering del testo. Image Server genera il testo utilizzando il motore di testo Adobe, lo stesso motore utilizzato da Photoshop e Illustrator, e lo compone come livello nell&#39;immagine finale. Per comunicare con il motore, Image Server utilizza il formato RTF o RTF.
+Per aggiungere variabili al testo utilizzando lo strumento Nozioni di base sui modelli, è necessario comprendere il rendering del testo. Image Server genera il testo utilizzando il motore di testo di Adobe, lo stesso motore utilizzato da Photoshop e Illustrator, e lo compone come livello nell’immagine finale. Per comunicare con il motore, Image Server utilizza il formato RTF o RTF.
 
 RTF è una specifica di formato file sviluppata da Microsoft per specificare la formattazione dei documenti. Si tratta di un linguaggio di markup standard utilizzato dalla maggior parte del software di elaborazione testi e di posta elettronica. Se si scrive in un URL &amp;text=\b1 Hello, Image Server genera un&#39;immagine con la parola &quot;Hello&quot; in grassetto, perché \b1 è il comando RTF per rendere il testo in grassetto.
 
-La buona notizia è che Dynamic Media Classic genera il RTF per voi. Ogni volta che digiti del testo in un modello e aggiungi la formattazione, Dynamic Media Classic scrive silenziosamente il codice RTF nel modello automaticamente. Il motivo per cui lo menzioniamo è perché si aggiungeranno parametri direttamente al RTF stesso, quindi è importante che si è un po &#39;familiarità con esso.
+La buona notizia è che Dynamic Media Classic genera il RTF per voi. Ogni volta che digitate del testo in un modello e aggiungete la formattazione, Dynamic Media Classic scrive silenziosamente il codice RTF nel modello automaticamente. Il motivo per cui lo menzioniamo è perché si aggiungeranno parametri direttamente al RTF stesso, quindi è importante che si è un po &#39;familiarità con esso.
 
 #### Creazione di livelli di testo
 
-Puoi creare livelli di testo in un modello in Dynamic Media Classic nei due modi seguenti:
+È possibile creare livelli di testo in un modello in Dynamic Media Classic nei due modi seguenti:
 
 1. Strumento Testo in Dynamic Media Classic. Discuteremo di questo metodo di seguito. L’editor Modelli di base dispone di uno strumento che consente di creare una casella di testo, immettere testo e formattare il testo. Dynamic Media Classic genera il RTF in base alle esigenze e lo inserisce in un livello separato.
-2. Estrai testo (al momento del caricamento). L&#39;altro metodo consiste nel creare il livello di testo in Photoshop e salvarlo nella PSD come un livello di testo normale (invece di rasterizzarlo come livello di immagine). Quindi carica il file in Dynamic Media Classic e utilizza l&#39;opzione **Estrai testo** . Dynamic Media Classic converte ogni livello di testo Photoshop in un livello di testo Image Serving utilizzando i comandi RTF. Se utilizzi questo metodo, accertati prima di caricare i font in Dynamic Media Classic; in caso contrario, in fase di caricamento, Dynamic Media Classic sostituirà un font predefinito e non sarà facile sostituire il font corretto.
+2. Estrai testo (al momento del caricamento). L’altro metodo consiste nel creare il livello di testo in Photoshop e salvarlo nella PSD come livello di testo normale (invece di rasterizzarlo come livello di immagine). Quindi carica il file in Dynamic Media Classic e utilizza l&#39;opzione **Estrai testo**. Dynamic Media Classic converte ogni livello di testo Photoshop in un livello di testo Image Serving utilizzando i comandi RTF. Se utilizzi questo metodo, assicurati di caricare prima i font in Dynamic Media Classic, altrimenti Dynamic Media Classic sostituirà un font predefinito al momento del caricamento e non vi è alcun modo semplice per sostituire il font corretto.
 
 ### Editor di testo
 
@@ -346,7 +345,7 @@ Non c&#39;è nulla di speciale in un predefinito immagine per un modello. Se dis
 
 ### Pubblicazione
 
-Sarà necessario eseguire una pubblicazione per visualizzare le modifiche inviate in diretta al server di immagini. Tieni presente cosa deve essere pubblicato: i vari livelli di risorsa immagine, i font per il testo dinamico e il modello stesso. Simile ad altre risorse rich media di Dynamic Media Classic come Set di immagini e Set 360 gradi, un modello di base è una costruzione artificiale, è un elemento di riga nel database che fa riferimento alle immagini e ai font utilizzando una serie di comandi Image Serving. Quindi, quando pubblichi il modello, tutto quello che stai facendo è aggiornare i dati sul server di immagini.
+Sarà necessario eseguire una pubblicazione per visualizzare le modifiche inviate in diretta al server di immagini. Tieni presente cosa deve essere pubblicato: i vari livelli di risorsa immagine, i font per il testo dinamico e il modello stesso. Simile ad altre risorse rich media di Dynamic Media Classic come Set di immagini e Set 360 gradi, un Modello di base è una costruzione artificiale, è un elemento di riga nel database che fa riferimento alle immagini e ai font utilizzando una serie di comandi Image Serving. Quindi, quando pubblichi il modello, tutto quello che stai facendo è aggiornare i dati sul server di immagini.
 
 Ulteriori informazioni su [Pubblicazione del modello](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/publishing-templates.html).
 
