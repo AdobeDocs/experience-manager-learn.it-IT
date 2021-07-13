@@ -1,16 +1,15 @@
 ---
 title: Utilizzo del lettore video in AEM Dynamic Media
-description: Il lettore video AEM Dynamic Media utilizzato per basarsi sul runtime Flash per supportare lo streaming video adattivo su client e browser desktop è diventato più aggressivo nello streaming di contenuti basato su flash. Con l’introduzione di HLS (protocollo di distribuzione video HTTP Live Streaming di Apple), ora è possibile inviare in streaming i contenuti senza ricorrere al flash.
+description: AEM lettore video Dynamic Media utilizzato per fare affidamento sul runtime di Flash per supportare lo streaming video adattivo su client e browser desktop è diventato più aggressivo nello streaming di contenuti basati su flash. Con l’introduzione di HLS (protocollo di distribuzione video HTTP Live Streaming di Apple), ora è possibile inviare in streaming i contenuti senza ricorrere al flash.
 sub-product: dynamic-media
-feature: Video Profiles
+feature: Profili video
 version: 6.3, 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Gestione dei contenuti
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '218'
 ht-degree: 8%
 
 ---
@@ -18,11 +17,11 @@ ht-degree: 8%
 
 # Utilizzo del lettore video in AEM Dynamic Media{#using-the-video-player-in-aem-dynamic-media}
 
-Il lettore video AEM Dynamic Media utilizzato per basarsi sul runtime Flash per supportare lo streaming video adattivo su client e browser desktop è diventato più aggressivo nello streaming di contenuti basato su flash. Con l’introduzione di HLS (protocollo di distribuzione video HTTP Live Streaming di Apple), ora è possibile inviare in streaming i contenuti senza ricorrere al flash.
+AEM lettore video Dynamic Media utilizzato per fare affidamento sul runtime di Flash per supportare lo streaming video adattivo su client e browser desktop è diventato più aggressivo nello streaming di contenuti basati su flash. Con l’introduzione di HLS (protocollo di distribuzione video HTTP Live Streaming di Apple), ora è possibile inviare in streaming i contenuti senza ricorrere al flash.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16791/?quality=9&learn=on)
 
-## Ricerca rapida sul lettore video non Flash {#quick-look-into-non-flash-video-player}
+## Anteprima nel lettore video non Flash {#quick-look-into-non-flash-video-player}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17429/?quality=9&learn=on)
 
