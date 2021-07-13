@@ -1,27 +1,26 @@
 ---
 title: Set di file multimediali diversi, immagine, campione, rotazione
-description: Una delle funzionalità più utili e potenti di Dynamic Media Classic è il supporto per la creazione di set di file multimediali avanzati come Image, Swatch, Spin e Mixed Media Set. Scopri cos’è ogni set di file multimediali avanzati e come creare ogni tipo in Dynamic Media Classic. Quindi scopri di più su Batch Set Preset, che automatizza il processo di creazione di set rich media al momento del caricamento.
+description: Una delle funzionalità più utili e potenti di Dynamic Media Classic è il supporto per la creazione di set di file multimediali avanzati come Image, Swatch, Spin e Mixed Media Set. Scopri cos’è ogni set di rich media e come creare ogni tipo in Dynamic Media Classic. Quindi scopri di più su Batch Set Preset, che automatizza il processo di creazione di set rich media al momento del caricamento.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, Image Sets, Mix Media Sets, Spin Sets
+feature: Dynamic Media Classic, Set Di Immagini, Set Di File Multimediali Diversi, Set 360 Gradi
 doc-type: tutorial
 topics: sets, development, authoring, configuring
 audience: all
 activity: use
-topic: Content Management
-role: Business Practitioner
+topic: Gestione dei contenuti
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1468'
 ht-degree: 1%
 
 ---
 
 
-# Set di file multimediali diversi {#media-sets} immagine, campione, rotazione
+# Set di file multimediali diversi, immagine, campione, rotazione {#media-sets}
 
-Oltre alle singole immagini per il dimensionamento dinamico e lo zoom, le raccolte di set Dynamic Media Classic consentono un’esperienza online più ricca. In questa sezione dell’esercitazione verrà illustrato come creare i seguenti set di file multimediali avanzati in Dynamic Media Classic:
+Oltre alle singole immagini per il dimensionamento dinamico e lo zoom, le raccolte di set di Dynamic Media Classic consentono un&#39;esperienza online più ricca. In questa sezione dell’esercitazione verrà illustrato come creare i seguenti set di file multimediali avanzati in Dynamic Media Classic:
 
 - Set immagini
 - Set di campioni
@@ -61,7 +60,7 @@ Questo tipo di set viene in genere utilizzato per visualizzare viste colorate de
 
 La differenza principale tra un campione e un set di immagini è che i set di campioni utilizzano un’immagine diversa come campione cliccabile, mentre i set di immagini utilizzano una versione miniatura cliccabile dell’immagine originale.
 
-I set di campioni non colorano le immagini (un errore comune). Le immagini vengono semplicemente scambiate, esattamente come in un set di immagini. Le immagini mini campione avrebbero potuto essere create con Photoshop, ogni colore avrebbe potuto essere fotografato separatamente, oppure lo strumento Ritaglio in Dynamic Media Classic avrebbe potuto essere utilizzato per creare un campione da una delle immagini colorate.
+I set di campioni non colorano le immagini (un errore comune). Le immagini vengono semplicemente scambiate, esattamente come in un set di immagini. Le immagini mini campione avrebbero potuto essere create con Photoshop, ogni colore avrebbe potuto essere fotografato separatamente, o lo strumento Ritaglio in Dynamic Media Classic avrebbe potuto essere utilizzato per creare un campione da una delle immagini colorate.
 
 ![immagine](assets/media-sets/image-set-2.jpg)
 
@@ -107,7 +106,7 @@ L&#39;URL del set di file multimediali diversi sopra riportato potrebbe apparire
 
 - Scopri come [Creare un set di file multimediali diversi](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
 
-Per visualizzare un’immagine per lo zoom, un set o un video sul sito web, è necessario chiamarla in un &quot;visualizzatore&quot; Dynamic Media Classic. Dynamic Media Classic include visualizzatori per risorse multimediali avanzate come set di campioni, set 360 gradi, video e molti altri.
+Per visualizzare un&#39;immagine per lo zoom, un set o un video sul sito web, chiamala in un &quot;visualizzatore&quot; di Dynamic Media Classic. Dynamic Media Classic include visualizzatori per risorse multimediali avanzate come set di campioni, set 360 gradi, video e molti altri.
 
 Ulteriori informazioni su [Visualizzatori per AEM Assets e Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html).
 
@@ -122,7 +121,7 @@ Anche se è possibile creare il predefinito da soli (si trovano in **Configurazi
 - I predefiniti per set di batch possono essere complessi da configurare, basati su espressioni regolari e, a meno che tu non sia uno sviluppatore, questa sintassi potrebbe non essere familiare o creare confusione.
 - Una volta creati, vengono attivati per impostazione predefinita. Nessuna funzione di annullamento. Se inizi a caricare migliaia di immagini e il tuo predefinito non è configurato correttamente, potresti ritrovarti con centinaia o migliaia di set interrotti che devi trovare ed eliminare manualmente.
 
-In precedenza era stata suggerita una semplice convenzione di denominazione che sarebbe molto facile da integrare in un Batch Set Preset. Tuttavia, poiché i predefiniti sono molto flessibili, possono gestire strategie di denominazione complesse. In breve, le immagini che appartengono a un set devono essere legate tra loro da un nome comune, spesso corrisponde al numero SKU o all’ID prodotto. In Dynamic Media Classic puoi assegnargli una convenzione di denominazione predefinita per tutte le immagini da utilizzare per un predefinito, oppure creare più predefiniti, ognuno con regole di denominazione diverse.
+In precedenza era stata suggerita una semplice convenzione di denominazione che sarebbe molto facile da integrare in un Batch Set Preset. Tuttavia, poiché i predefiniti sono molto flessibili, possono gestire strategie di denominazione complesse. In breve, le immagini che appartengono a un set devono essere legate tra loro da un nome comune, spesso corrisponde al numero SKU o all’ID prodotto. In Dynamic Media Classic è possibile assegnargli una convenzione di denominazione predefinita per tutte le immagini da utilizzare per un predefinito, oppure creare più predefiniti, ognuno con regole di denominazione diverse.
 
 I predefiniti per set di batch vengono applicati solo al momento del caricamento; non possono essere eseguite dopo il caricamento delle immagini. È quindi importante pianificare la convenzione di denominazione e ottenere un predefinito costruito prima di iniziare a caricare tutte le immagini.
 
