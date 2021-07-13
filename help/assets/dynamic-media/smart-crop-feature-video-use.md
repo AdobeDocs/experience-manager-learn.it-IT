@@ -1,16 +1,15 @@
 ---
 title: Utilizzo del ritaglio avanzato con AEM Assets Dynamic Media
-description: Smart Crop utilizza Adobe Sensei per eliminare le attività dispendiose in termini di tempo e denaro legate al ritocco dei contenuti.
+description: Smart Crop utilizza Adobe Sensei per eliminare le attività dispendiose in termini di tempo e costi legate al ritaglio dei contenuti per un design reattivo.
 sub-product: dynamic-media
-feature: Smart Crop, Image Profiles
+feature: Ritaglio avanzato, profili immagine
 version: 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Gestione dei contenuti
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '253'
 ht-degree: 3%
 
 ---
@@ -18,17 +17,17 @@ ht-degree: 3%
 
 # Utilizzo del ritaglio avanzato con AEM Assets Dynamic Media{#using-smart-crop-with-aem-assets-dynamic-media}
 
-Smart Crop utilizza Adobe Sensei per eliminare le attività dispendiose in termini di tempo e denaro legate al ritocco dei contenuti.
+Smart Crop utilizza Adobe Sensei per eliminare le attività dispendiose in termini di tempo e costi legate al ritaglio dei contenuti per un design reattivo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21519/)
 
 >[!NOTE]
 >
->Il video presuppone che l’istanza AEM sia in esecuzione in modalità Dynamic Media S7. [Le istruzioni sulla configurazione di AEM con Dynamic Media sono disponibili qui.](https://helpx.adobe.com/it/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>Il video presuppone che l&#39;istanza AEM sia in esecuzione in modalità Dynamic Media S7. [Le istruzioni sulla configurazione di AEM con Dynamic Media sono disponibili qui.](https://helpx.adobe.com/it/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
-## La funzionalità Dynamic Media Smart Crop di Adobe Experience Manager include
+## La funzionalità di ritaglio avanzato Dynamic Media di Adobe Experience Manager include
 
-* Gli amministratori di AEM Assets possono creare facilmente profili immagine per il ritaglio avanzato in base alla larghezza e all’altezza del dispositivo.
+* Gli amministratori delle risorse AEM possono creare facilmente profili immagine per il ritaglio avanzato in base alla larghezza e all’altezza del dispositivo.
 * Il ritaglio avanzato può essere eseguito per una singola risorsa o per tutte le risorse all’interno di una cartella.
 * Il layout di modifica avanzata del ritaglio può essere ridimensionato per una migliore visibilità.
 * Il componente Dynamic Media di AEM Sites supporta il ritaglio avanzato.
