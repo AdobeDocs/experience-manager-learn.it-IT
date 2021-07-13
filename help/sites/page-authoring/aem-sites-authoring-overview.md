@@ -1,9 +1,9 @@
 ---
 title: Panoramica sull’authoring in AEM Sites
 seo-title: Panoramica sull’authoring in AEM Sites
-description: Il video seguente offre una panoramica dei concetti di base sull’authoring in un ambiente di authoring AEM. Usa la console Sites come base.
-seo-description: Il video seguente offre una panoramica dei concetti di base sull’authoring in un ambiente di authoring AEM. Usa la console Sites come base.
-feature: Page Editor, Editable Templates
+description: Il video seguente offre una panoramica dei concetti di base dell’authoring in un ambiente di authoring AEM. Usa la console Sites come base.
+seo-description: Il video seguente offre una panoramica dei concetti di base dell’authoring in un ambiente di authoring AEM. Usa la console Sites come base.
+feature: Editor pagina, Modelli modificabili
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
@@ -11,13 +11,12 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4242
 thumbnail: 33594.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Gestione dei contenuti
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '121'
 ht-degree: 16%
 
 ---
@@ -25,7 +24,7 @@ ht-degree: 16%
 
 # Panoramica sull’authoring {#authoring-overview}
 
-Il video seguente fornisce una panoramica dei concetti di base sull’authoring in un ambiente di authoring AEM per AEM Sites.
+Il video seguente offre una panoramica dei concetti di base sull’authoring in un ambiente di authoring AEM per AEM Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33594?quality=12&learn=on)
 
