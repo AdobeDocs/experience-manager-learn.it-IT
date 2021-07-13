@@ -1,32 +1,31 @@
 ---
-title: Tag avanzati per immagini con  AEM Assets
-description: I tag avanzati per le immagini aumentano AEM funzionalità di ricerca aggiungendo automaticamente e in modo intelligente tag di metadati alle risorse di immagini in base al contenuto dell'immagine.
-topic: Content Management
-feature: Smart Tags
-role: Business Practitioner
+title: Tag avanzati per le immagini con AEM Assets
+description: I tag avanzati per le immagini consentono di migliorare AEM funzionalità di ricerca aggiungendo automaticamente e in modo intelligente tag di metadati alle risorse delle immagini in base al contenuto dell’immagine.
+topic: Gestione dei contenuti
+feature: Tag avanzati
+role: User
 level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 645
 thumbnail: 17019.jpg
-translation-type: tm+mt
-source-git-commit: a5fb96275194ddc46169832c0fb79a2587833564
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '222'
 ht-degree: 31%
 
 ---
 
 
-# Tag avanzati per immagini
+# Tag avanzati per le immagini
 
-I tag avanzati per le immagini di Risorse AEM aumentano la ricerca di Risorse AEM aggiungendo automaticamente tag di metadati derivati alle risorse di immagini, migliorando l&#39;esperienza di authoring consentendo di trovare l&#39;immagine giusta in modo più semplice e veloce.
+Lo strumento Tag avanzati di AEM Assets per le immagini migliora la ricerca di AEM Assets aggiungendo automaticamente tag di metadati derivati alle risorse di immagini, migliorando l’esperienza di authoring rendendo più semplice e veloce la ricerca dell’immagine corretta.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17019/?quality=12&learn=on)
 
-## Imposta per AEM 6.x{#set-up}
+## Configurazione per AEM 6.x{#set-up}
 
 >[!NOTE]
-> I tag avanzati per le immagini vengono automaticamente forniti per AEM come Cloud Service.
+> Il provisioning automatico di tag avanzati per le immagini viene eseguito automaticamente per AEM come Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17023/?quality=12&learn=on)
 
@@ -35,13 +34,13 @@ Prima di poter utilizzare il Servizio di contenuti avanzati, verifica quanto seg
 * Devi disporre di un account Adobe ID con privilegi di amministratore dell’organizzazione
 * Il Servizio di contenuti avanzati è abilitato per la tua organizzazione
 
-Il video illustra le seguenti attività necessarie per configurare il servizio Contenuto avanzato  Adobe I/O utilizzato per le immagini Smart Tag.
+Il video illustra le seguenti attività necessarie per configurare il servizio Adobe I/O Smart Content utilizzato per le immagini con tag avanzati.
 
-* Create una configurazione di Smart Content Service in AEM per generare una chiave pubblica. Ottieni un certificato pubblico per l’integrazione di OAuth.
+* Crea una configurazione del Servizio di contenuti avanzati in AEM per generare una chiave pubblica. Ottieni un certificato pubblico per l’integrazione di OAuth.
 * Crea un’integrazione in Adobe I/O e carica la chiave pubblica generata.
-* Configurate l&#39;istanza AEM utilizzando la chiave API e altre credenziali  Adobe I/O.
+* Configura l’istanza AEM utilizzando la chiave API e altre credenziali di Adobe I/O.
 * Se necessario, abilita l’assegnazione tag automatica al caricamento delle risorse.
 
 ## Risorse aggiuntive
 
-* [ della documentazione AEM Assets Smart Tags](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/smart-tags.html)
+* [Documentazione sui tag avanzati di AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/smart-tags.html)
