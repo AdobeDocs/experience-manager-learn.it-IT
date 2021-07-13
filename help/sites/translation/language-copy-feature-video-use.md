@@ -1,26 +1,25 @@
 ---
 title: Utilizzo della copia in lingua con AEM Sites
-feature: Language Copy
+feature: Copia lingua
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
-topic: Localization
-role: Business Practitioner
+topic: Localizzazione
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 7%
+source-wordcount: '62'
+ht-degree: 8%
 
 ---
 
 
 # Utilizzo della copia in lingua {#using-language-copy}
 
-Miglioramenti alla traduzione guidata Crea copia in lingua AEM 6.3 : gli utenti possono creare una copia in lingua dalla lingua master senza dover creare una pagina principale.
+Con AEM 6.3 Miglioramento della traduzione guidata Crea copia in lingua, gli utenti possono creare una copia in lingua dalla lingua principale senza dover creare una pagina principale.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17116/?quality=9&learn=on)
 
