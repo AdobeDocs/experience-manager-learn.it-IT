@@ -6,14 +6,13 @@ audience: administrator, developer
 doc-type: technical video
 activity: develop
 version: 6.3, 6.4, 6.5
-feature: Core Components
-topic: Development
-role: Business Practitioner
+feature: Componenti core
+topic: Sviluppo
+role: User
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '378'
 ht-degree: 2%
 
 ---
@@ -36,7 +35,7 @@ Il browser Componenti ora viene visualizzato in un tema grigio coerente e presen
    * Immagine SVG personalizzata *(configurata da uno sviluppatore)*
    * Icona CoralUI *(configurata da uno sviluppatore)*
 
-## Opzioni di configurazione dell&#39;icona del componente {#component-icon-configuration-options}
+## Opzioni di configurazione dell’icona del componente {#component-icon-configuration-options}
 
 ### Abbreviazioni {#abbreviations}
 
@@ -50,9 +49,9 @@ L&#39;abbreviazione può essere personalizzata tramite la proprietà **[cq:Compo
   - abbreviation = "AL"
 ```
 
-### Icone CoralUI {#coralui-icons}
+### Icone dell’interfaccia utente Coral {#coralui-icons}
 
-Le icone CoralUI fornite da AEM possono essere utilizzate per le icone dei componenti. Per configurare un&#39;icona CoralUI, imposta una proprietà **[cq:Component]@cq:icon** sul valore dell&#39;attributo dell&#39;icona HTML dell&#39;icona CoralUI desiderata (enumerata nella [documentazione CoralUI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html).
+Le icone CoralUI, fornite da AEM, possono essere utilizzate per le icone dei componenti. Per configurare un&#39;icona CoralUI, imposta una proprietà **[cq:Component]@cq:icon** sul valore dell&#39;attributo dell&#39;icona HTML dell&#39;icona CoralUI desiderata (enumerata nella [documentazione CoralUI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html).
 
 ```plain
 /apps/.../components/content/my-component
