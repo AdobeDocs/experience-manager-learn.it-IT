@@ -7,13 +7,12 @@ doc-type: tutorial
 activity: develop
 topics: development, authoring, configuring, architecture
 audience: all
-topic: Content Management
-role: Business Practitioner
+topic: Gestione dei contenuti
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -25,15 +24,15 @@ Prima di iniziare a caricare tutti i contenuti, è opportuno considerare la stru
 
 ## Convenzione sulla gerarchia delle cartelle e la denominazione dei file
 
-La denominazione dei file è generalmente la decisione più importante che tu prenda in merito all’implementazione di Dynamic Media Classic. Tuttavia, per capire perché è importante, parliamo prima della struttura delle cartelle.
+La denominazione dei file è generalmente la decisione più importante che si prende in merito all&#39;implementazione di Dynamic Media Classic. Tuttavia, per capire perché è importante, parliamo prima della struttura delle cartelle.
 
 ### Gerarchia cartelle
 
-La gerarchia delle cartelle è importante solo per te e per la tua azienda a scopo organizzativo: gli URL di Dynamic Media Classic fanno riferimento solo al nome della risorsa, non alla cartella o al percorso. Indipendentemente da dove carichi un file, l’URL sarà lo stesso. Questo è molto diverso da come la maggior parte delle persone organizza le immagini e i contenuti per il web, ma con Dynamic Media Classic non fa differenza.
+La gerarchia delle cartelle è importante solo per te e per la tua azienda a scopo organizzativo: gli URL di Dynamic Media Classic fanno riferimento solo al nome della risorsa, non alla cartella o al percorso. Indipendentemente da dove carichi un file, l’URL sarà lo stesso. Questo è molto diverso da come la maggior parte delle persone organizzano le proprie immagini e contenuti per il web, ma con Dynamic Media Classic non fa differenza.
 
-Un’altra considerazione importante è il numero di risorse o cartelle da archiviare in ciascuna cartella. Se molte risorse sono memorizzate in una cartella, le prestazioni peggioreranno quando le risorse vengono visualizzate in Dynamic Media Classic. Non archiviare migliaia di risorse in una cartella. Al contrario, sviluppa una gerarchia organizzativa con meno di 500 risorse o cartelle all’interno di un determinato ramo della gerarchia. Questo non è un requisito rigoroso, ma consente di mantenere tempi di risposta accettabili durante la visualizzazione o la ricerca delle risorse. In effetti, il consiglio è quello di creare gerarchie larghe e poco profonde piuttosto che strette e profonde.
+Un’altra considerazione importante è il numero di risorse o cartelle da archiviare in ciascuna cartella. Se molte risorse sono memorizzate in una cartella, le prestazioni peggioreranno quando si visualizzano le risorse in Dynamic Media Classic. Non archiviare migliaia di risorse in una cartella. Al contrario, sviluppa una gerarchia organizzativa con meno di 500 risorse o cartelle all’interno di un determinato ramo della gerarchia. Questo non è un requisito rigoroso, ma consente di mantenere tempi di risposta accettabili durante la visualizzazione o la ricerca delle risorse. In effetti, il consiglio è quello di creare gerarchie larghe e poco profonde piuttosto che strette e profonde.
 
-Il modo più semplice per creare le cartelle è caricare l&#39;intera struttura delle cartelle tramite FTP e abilitare l&#39;opzione **Includi sottocartelle**. Questa opzione consente a Dynamic Media Classic di ricreare la struttura delle cartelle sul sito FTP in Dynamic Media Classic.
+Il modo più semplice per creare le cartelle è caricare l&#39;intera struttura delle cartelle tramite FTP e abilitare l&#39;opzione **Includi sottocartelle**. Questa opzione fa sì che Dynamic Media Classic ricrei la struttura delle cartelle sul sito FTP in Dynamic Media Classic.
 
 Prima di iniziare a caricare tutti i file, è consigliabile tenere conto della struttura delle cartelle, in quanto è molto più semplice organizzare e gestire i file e le cartelle localmente sul computer rispetto a Dynamic Media Classic. Ad esempio, puoi solo trascinare e rilasciare file, ma non intere cartelle, all’interno di Dynamic Media Classic.
 
@@ -53,11 +52,11 @@ Tutti gli URL e le transazioni in Dynamic Media Classic sono determinati da un I
 
 Regole relative agli ID risorsa:
 
-- In Dynamic Media Classic non possono essere presenti due risorse con lo stesso nome, indipendentemente dalla cartella in cui si trovano le risorse.
+- In Dynamic Media Classic non possono essere presenti due risorse con lo stesso nome, indipendentemente dalla cartella in cui si trovano.
 - I nomi sono sensibili all’uso di maiuscole e minuscole. Ad esempio, Chair.jpg, chair.jpg e CHAIR.jpg creerebbero tre diversi ID risorsa.
 - Come best practice, gli ID risorsa non devono contenere spazi o simboli vuoti. L’utilizzo di spazi e simboli rende l’implementazione più difficile perché dovrai codificare questi caratteri nell’URL. Ad esempio, uno spazio &quot; &quot; diventa &quot;%20&quot;.
 
-La convenzione di denominazione è essenzialmente la modalità di integrazione con Dynamic Media Classic. In genere, i sistemi di back-office non vengono integrati in Dynamic Media Classic perché si tratta di un sistema chiuso. È un partner passivo, in attesa di istruzioni sotto forma di URL.
+La convenzione di denominazione è essenzialmente la modalità di integrazione con Dynamic Media Classic. In genere non si integrano i sistemi di back-office in Dynamic Media Classic perché si tratta di un sistema chiuso. È un partner passivo, in attesa di istruzioni sotto forma di URL.
 
 La maggior parte degli utenti basa la propria convenzione di denominazione sul proprio SKU interno o ID di prodotto in modo che quando una pagina web viene richiamata con informazioni su tale SKU, la pagina possa cercare automaticamente un’immagine con un nome simile. Se non c&#39;è alcuna connessione tra il nome del file e lo SKU o l&#39;ID, allora il sistema di back-office dovrà tenere traccia manualmente di ciascun nome file, e una persona dovrà mantenere tali associazioni, in breve, un sacco di lavoro sia per il team IT che per il team di contenuti.
 
