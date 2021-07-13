@@ -1,17 +1,16 @@
 ---
 title: Operazioni di base
 description: Scopri le operazioni di base di AEM Assets e come creare cartelle, nonché caricare, copiare, spostare ed eliminare risorse.
-feature: Asset Management
-role: Business Practitioner
+feature: Gestione risorse
+role: User
 level: Beginner
 version: cloud-service
 kt: 4299
 thumbnail: 32044.jpg
-topic: Content Management
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+topic: Gestione dei contenuti
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '55'
+source-wordcount: '52'
 ht-degree: 3%
 
 ---
