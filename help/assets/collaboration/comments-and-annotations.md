@@ -2,18 +2,17 @@
 title: Commenti e annotazioni
 description: Scopri come utilizzare commenti e annotazioni in AEM per comunicare e collaborare sulle risorse.
 sub-product: assets
-feature: Collaboration
+feature: Collaborazione
 version: cloud-service
 kt: 4541
 thumbnail: 32049.jpg
-topic: Collaboration
-role: Business Practitioner
+topic: Collaborazione
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '42'
-ht-degree: 4%
+source-wordcount: '39'
+ht-degree: 5%
 
 ---
 
