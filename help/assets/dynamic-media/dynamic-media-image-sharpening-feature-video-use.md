@@ -2,15 +2,14 @@
 title: Utilizzo della nitidezza delle immagini con AEM Dynamic Media
 description: Questo video spiega perché la nitidezza di un'immagine è fondamentale per mantenere la fedeltà delle immagini e come utilizzare impostazioni avanzate per creare l'immagine perfetta.
 sub-product: dynamic-media
-feature: Image Profiles, Viewer Presets
+feature: Profili immagine, predefiniti visualizzatore
 version: 6.3, 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Gestione dei contenuti
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '122'
 ht-degree: 1%
 
 ---
