@@ -10,14 +10,13 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4322
 thumbnail: 32193.jpg
-feature: Publishing
-topic: Content Management
-role: Business Practitioner
+feature: Pubblicazione
+topic: Gestione dei contenuti
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '168'
 ht-degree: 2%
 
 ---
@@ -29,7 +28,7 @@ AEM Sites offre diverse opzioni per la pubblicazione e l’annullamento della pu
 
 >[!VIDEO](https://video.tv.adobe.com/v/32193?quality=12&learn=on)
 
-In AEM Sites sono disponibili diversi metodi per pubblicare e annullare la pubblicazione dei contenuti, in base al flusso di lavoro dell’autore.
+AEM Sites fornisce diversi metodi per pubblicare e annullare la pubblicazione dei contenuti, in base al flusso di lavoro dell’autore.
 
 * Pubblicazione della pagina corrente dall’Editor pagina di AEM Sites
    * Pubblica la pagina corrente e consente la selezione facoltativa di riferimenti
