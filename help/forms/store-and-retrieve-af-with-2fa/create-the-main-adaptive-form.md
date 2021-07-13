@@ -1,7 +1,7 @@
 ---
 title: Creare il modulo adattivo principale
 description: Crea i moduli adattivi per acquisire le informazioni dei richiedenti e il modulo adattivo per recuperare il modulo adattivo salvato
-feature: Adaptive Forms
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,13 +9,12 @@ activity: implement
 version: 6.4,6.5
 kt: 6552
 thumbnail: 6552.jpg
-topic: Development
-role: Business Practitioner
+topic: Sviluppo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '206'
 ht-degree: 1%
 
 ---
@@ -34,7 +33,7 @@ Questo modulo è associato alle librerie client **bootboxjs540,storeAFWithAttach
 
 * Il [StoreAfWithAttachments Form](assets/store-af-with-attachments-form.zip) completato può essere scaricato e importato nella tua istanza AEM.
 
-* Affinché il modulo funzioni, è necessario importare nell’istanza AEM il flusso di lavoro [AEM associato a questo modulo](assets/workflow-model-store-af-with-attachments.zip) .
+* Affinché il modulo funzioni, è necessario importare nell’istanza AEM il flusso di lavoro [AEM associato a questo modulo](assets/workflow-model-store-af-with-attachments.zip).
 
 
 
