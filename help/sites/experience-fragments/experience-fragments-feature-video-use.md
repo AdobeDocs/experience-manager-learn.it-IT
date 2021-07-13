@@ -1,19 +1,18 @@
 ---
-title: Utilizzo AEM frammenti esperienza
-description: I frammenti esperienza consentono agli autori dei contenuti di riutilizzare i contenuti tra canali, comprese le pagine Siti e i sistemi di terze parti.
-sub-product: siti, servizi di contenuto
-feature: Experience Fragments
-topic: Content Management
-role: Architect, Developer, Administrator, Business Practitioner
+title: Utilizzo di frammenti esperienza AEM
+description: Frammenti esperienza consente agli autori di contenuti di riutilizzare contenuti tra canali diversi, tra cui pagine di Sites e sistemi di terze parti.
+sub-product: siti, content-services
+feature: Frammenti di esperienza
+topic: Gestione dei contenuti
+role: Architect, Developer, Admin, User
 level: Beginner
 doc-type: feature video
 version: cloud-service
 kt: 194
 thumbnail: 331785.jpg
-translation-type: tm+mt
-source-git-commit: fcfb33f93e57d40b08e0527d38cfce8553095e65
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '124'
 ht-degree: 5%
 
 ---
@@ -21,15 +20,15 @@ ht-degree: 5%
 
 # Utilizzo di Frammenti esperienza {#using-aem-experience-fragments}
 
-I frammenti esperienza consentono agli autori dei contenuti di riutilizzare i contenuti tra canali, comprese le pagine Siti e i sistemi di terze parti.
+Frammenti esperienza consente agli autori di contenuti di riutilizzare contenuti tra canali diversi, tra cui pagine di Sites e sistemi di terze parti.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331785/?quality=12&learn=on)
 
-Un frammento esperienza è un insieme di componenti raggruppati che, se combinati, creano un&#39;esperienza. Ad esempio, un *Titolo*, *Immagine*, *Descrizione* e un *Pulsante Invito all&#39;azione* possono essere combinati per formare un&#39;esperienza teaser.
+Un frammento esperienza è un set raggruppato di componenti che, se combinato, creano un’esperienza. Ad esempio, è possibile combinare un *Titolo*, *Immagine*, *Descrizione* e *Pulsante di invito all’azione* per creare un’esperienza teaser.
 
-Con i frammenti esperienza, gli addetti marketing possono:
+Con i frammenti esperienza, gli addetti al marketing possono:
 
-* Riutilizzare un&#39;esperienza tra canali (canali di proprietà e punti di contatto di terze parti)
-* Creare varianti di un&#39;esperienza per casi di utilizzo specifici
-* Mantenere sincronizzate le varianti con l&#39;utilizzo di Live Copy
-* Esperienze di Social Post su Facebook e Pinterest pronte all&#39;uso
+* Riutilizzare un’esperienza su più canali (sia canali di proprietà che punti di contatto di terze parti)
+* Creare varianti di un’esperienza per casi d’uso specifici
+* Mantieni le varianti sincronizzate con l’utilizzo di Live Copy
+* Esperienze di post social su Facebook e Pinterest pronte all&#39;uso
