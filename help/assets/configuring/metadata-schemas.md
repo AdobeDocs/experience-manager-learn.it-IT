@@ -1,25 +1,24 @@
 ---
 title: Schemi metadati
-description: Gli schemi di metadati definiscono l’interfaccia che gli utenti interagiscono con i metadati delle risorse in AEM, e la loro definizione e applicazione alle risorse sono fondamentali per la gestione delle risorse digitali.
+description: Gli schemi di metadati definiscono l’interfaccia che gli utenti interagiscono con i metadati delle risorse in AEM e la loro definizione e applicazione alle risorse sono fondamentali per la gestione delle risorse digitali.
 sub-product: assets
-feature: Metadata
+feature: Metadati
 version: cloud-service
 kt: 4981
 thumbnail: 33696.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Gestione dei contenuti
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 11%
+source-wordcount: '58'
+ht-degree: 12%
 
 ---
 
 
 # Schemi metadati
 
-Gli schemi di metadati definiscono l’interfaccia che gli utenti interagiscono con i metadati delle risorse in AEM, e la loro definizione e applicazione alle risorse sono fondamentali per la gestione delle risorse digitali.
+Gli schemi di metadati definiscono l’interfaccia che gli utenti interagiscono con i metadati delle risorse in AEM e la loro definizione e applicazione alle risorse sono fondamentali per la gestione delle risorse digitali.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33696/?quality=12&learn=on&hidetitle=true)
