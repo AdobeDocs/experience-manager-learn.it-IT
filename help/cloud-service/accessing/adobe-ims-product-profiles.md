@@ -1,17 +1,16 @@
 ---
-title: Profili di prodotto Adobe IMS e AEM
-description: I profili di prodotto Adobe IMS consentono agli utenti di accedere a un servizio AEM Author e forniscono una linea di base di accesso, a seconda del profilo di prodotto a cui sono membri.
-feature: Users and Groups
+title: Adobe IMS, profili di prodotto e AEM
+description: Ad Adobe, i profili di prodotto IMS consentono agli utenti di accedere a un servizio AEM Author e forniscono una linea di base di accesso, a seconda del profilo di prodotto di cui sono membri.
+feature: 'Utenti e gruppi '
 kt: 5000
 thumbnail: 39156.jpg
-topic: Administration, Security
-role: Administrator
+topic: Amministrazione, sicurezza
+role: Admin
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 9%
+source-wordcount: '153'
+ht-degree: 8%
 
 ---
 
@@ -20,11 +19,11 @@ ht-degree: 9%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_productprofiles"
->title="Profili di prodotto di Adobe IMS"
->abstract="I profili di prodotto Adobe IMS consentono agli utenti di accedere a un servizio AEM Author e forniscono una linea di base di accesso, a seconda del profilo di prodotto a cui sono membri. Ulteriori informazioni sui profili di prodotto Adobe IMS."
+>title="Adobe di profili di prodotto IMS"
+>abstract="Ad Adobe, i profili di prodotto IMS consentono agli utenti di accedere a un servizio AEM Author e forniscono una linea di base di accesso, a seconda del profilo di prodotto di cui sono membri. Ulteriori informazioni sui profili di prodotto Adobe IMS."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#introduction" text="Gestione dei prodotti e dell’accesso utente in Admin Console"
 
-I profili di prodotto Adobe IMS consentono agli utenti di accedere a un servizio AEM Author e forniscono una linea di base di accesso, a seconda del profilo di prodotto a cui sono membri.
+Ad Adobe, i profili di prodotto IMS consentono agli utenti di accedere a un servizio AEM Author e forniscono una linea di base di accesso, a seconda del profilo di prodotto di cui sono membri.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39156/?quality=12&learn=on)
 
