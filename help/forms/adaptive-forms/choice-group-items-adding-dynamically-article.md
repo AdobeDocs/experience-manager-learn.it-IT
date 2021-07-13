@@ -3,19 +3,18 @@ title: Aggiunta di elementi al componente gruppo di scelta
 seo-title: Aggiunta di elementi al componente gruppo di scelta
 description: Aggiunta dinamica di elementi al componente gruppo di scelta
 seo-description: Aggiunta dinamica di elementi al componente gruppo di scelta
-feature: Adaptive Forms
+feature: Moduli adattivi
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
-topic: Development
-role: Business Practitioner
+topic: Sviluppo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '530'
 ht-degree: 1%
 
 ---
@@ -24,7 +23,7 @@ ht-degree: 1%
 
 # Aggiunta dinamica di elementi al componente gruppo di scelta
 
-AEM Forms 6.5 ha introdotto la possibilità di aggiungere in modo dinamico elementi a un componente Gruppo di scelta Moduli adattivi come CheckBox, Pulsante di scelta e Elenco immagini.
+AEM Forms 6.5 ha introdotto la possibilità di aggiungere in modo dinamico elementi a un componente per un gruppo di scelta Forms adattivo come CheckBox, Pulsante di scelta e Elenco immagini.
 
 [Questa funzionalità è disponibile dal vivo sul server](https://forms.enablementadobe.com/content/samples/samples.html?query=0) Samples. Cerca la scheda degli elementi della casella di controllo dinamica e fai clic su &quot;Prova&quot;
 
@@ -86,7 +85,7 @@ Per provare questo sul tuo sistema:
 **Utilizzo dell’editor di codice per aggiungere elementi**
 
 * [Scaricare le risorse](assets/usingthecodeeditor.zip)
-* [Moduli E Documenti Aperti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Apri Forms E Documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Fai clic su &quot;Crea | Caricamento file&quot; e carica il file scaricato nel passaggio precedente
 * [Anteprima dei moduli](http://localhost:4502/content/dam/formsanddocuments/simpleform/jcr:content?wcmmode=disabled)
 * Immettere il nome del candidato e selezionare lo stato civile da sposare
@@ -99,7 +98,7 @@ Per provare questo sul tuo sistema:
 * [Scaricare le risorse](assets/usingthevisualeditor.zip)
 * Installa Tomcat se non lo hai già. [Le istruzioni per l&#39;installazione di tomcat sono disponibili qui](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
 * [Distribuisci il file SampleRest.war in Tomcat](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
-* [Moduli E Documenti Aperti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Apri Forms E Documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Fai clic su &quot;Crea | Caricamento file&quot; e carica il file scaricato nel passaggio precedente
 * [Anteprima dei moduli](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
 * Inserire l&#39;importo del prestito e la tabulazione fuori dal campo. Questo attiverà la regola che visualizza il campo del periodo di prestito.
@@ -108,4 +107,4 @@ Per provare questo sul tuo sistema:
 * La tabella di ammortamento dovrebbe essere compilata. Il programma di ammortamento viene recuperato utilizzando una chiamata REST.
 
 >[!NOTE]
-> Si presume che tomcat sia in esecuzione sulla porta 8080 e su AEM sulla porta 4502
+> Si presume che tomcat sia in funzione sulla porta 8080 e AEM sulla porta 4502
