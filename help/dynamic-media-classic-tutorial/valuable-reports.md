@@ -1,19 +1,18 @@
 ---
 title: Rapporti preziosi per gli amministratori
-description: Scopri due importanti rapporti che gli amministratori di Dynamic Media Classic devono considerare per la configurazione.
+description: Scopri due importanti rapporti che gli amministratori di Dynamic Media Classic dovrebbero considerare per la configurazione.
 sub-product: dynamic-media, risorse
 feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring, reports
 audience: all
 activity: use
-topic: Content Management
-role: Administrator
+topic: Gestione dei contenuti
+role: Admin
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '342'
 ht-degree: 3%
 
 ---
@@ -25,7 +24,7 @@ In questo capitolo finale, ti chiediamo solo di conoscere due importanti rapport
 
 ## Rapporto su larghezza di banda e archiviazione
 
-Il rapporto Larghezza di banda e archiviazione descrive la larghezza di banda mensile di Image Server e lo spazio di archiviazione utilizzato in Dynamic Media Classic. Lo stoccaggio è un importo contrattuale, quindi è importante controllare e assicurarsi di rimanere sotto il vostro limite per evitare le spese di eccesso.
+Il rapporto Larghezza di banda e archiviazione descrive la quantità di larghezza di banda mensile utilizzata da Image Server e lo spazio di archiviazione utilizzato in Dynamic Media Classic. Lo stoccaggio è un importo contrattuale, quindi è importante controllare e assicurarsi di rimanere sotto il vostro limite per evitare le spese di eccesso.
 
 ![immagine](assets/valuable-reports/reports-1.jpg)
 
@@ -45,9 +44,9 @@ Ci auguriamo che i contenuti di questa guida alle best practice siano utili per 
 
 Per ulteriori informazioni su Dynamic Media Classic, consulta le seguenti risorse:
 
-- [Dynamic Media Classic su Experience League - Ottieni valore](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
-- [Dynamic Media Classic su Experience League - Ulteriori informazioni](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
-- [Gli archivi della newsletter Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
-- [Pagina Iscrizione a newsletter Dynamic Media](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
+- [Dynamic Media Classic ad Experience League - Ottieni valore](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
+- [Dynamic Media Classic sull&#39;Experience League - Fai di più](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
+- [Archivio newsletter Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
+- [Pagina Iscrizione a una newsletter Dynamic Media](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
 - [Documentazione di Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/home.html)
 - [Post di blog rich media](https://theblog.adobe.com/tag/dynamic-media)
