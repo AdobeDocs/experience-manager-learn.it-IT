@@ -1,7 +1,7 @@
 ---
-title: Creare moduli per la firma
+title: Creare Forms per la firma
 description: Creare moduli da includere nel pacchetto di firma.
-feature: Adaptive Forms
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,13 +9,12 @@ activity: implement
 version: 6.4,6.5
 kt: 6893
 thumbnail: 6893.jpg
-topic: Development
-role: Business Practitioner
+topic: Sviluppo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '329'
 ht-degree: 1%
 
 ---
@@ -31,7 +30,7 @@ Il passaggio successivo consiste nel creare i moduli adattivi da includere nel p
 * I moduli devono essere associati anche a clientLib denominato **getnextform**
 * I moduli devono utilizzare il componente Passaggio firma .
 * Il modulo deve inoltre utilizzare il componente **Firma più moduli** personalizzato. Questo componente consente di passare al modulo successivo per accedere al pacchetto.
-* L’invio del modulo deve essere configurato per attivare il flusso di lavoro AEM **Aggiorna stato firma**
+* L’invio del modulo deve essere configurato per attivare AEM flusso di lavoro **Aggiorna stato firma**
 * Assicurati che il Percorso file dati sia impostato su **Data.xml**. Questo è molto importante in quanto il codice di esempio cerca un file denominato Data.xml nel payload del processo di invio del modulo.
 
 Dopo aver creato il modulo, includere nel modulo i **campi comuni** frammenti di modulo adattivo. Il frammento viene contrassegnato come nascosto. Questo frammento contiene i campi seguenti.
