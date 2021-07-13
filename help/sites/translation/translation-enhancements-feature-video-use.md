@@ -1,19 +1,18 @@
 ---
 title: Miglioramenti alla traduzione in AEM
-description: Il robusto framework di traduzione di AEM consente di tradurre i contenuti AEM senza soluzione di continuità da parte dei fornitori di traduzione supportati. Scopri gli ultimi miglioramenti.
-feature: multi-site-manager, language-copy
+description: AEM robusto framework di traduzione consente di tradurre i contenuti AEM senza soluzione di continuità da parte dei fornitori di traduzione supportati. Scopri gli ultimi miglioramenti.
+feature: multi-site-manager, copia in lingua
 topics: localization, authoring, content-architecture
 audience: author, marketer, developer
 doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
-topic: Localization
-role: Business Practitioner
+topic: Localizzazione
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '337'
 ht-degree: 2%
 
 ---
@@ -21,13 +20,13 @@ ht-degree: 2%
 
 # Miglioramenti alla traduzione con Multi-Site Manager {#translation-enhancements}
 
-Il robusto framework di traduzione di AEM consente di tradurre i contenuti AEM senza soluzione di continuità da parte dei fornitori di traduzione supportati.
+AEM robusto framework di traduzione consente di tradurre i contenuti AEM senza soluzione di continuità da parte dei fornitori di traduzione supportati.
 
 ## Miglioramenti alla traduzione in AEM 6.5
 
 >[!VIDEO](https://video.tv.adobe.com/v/27405?quality=9&learn=on)
 
-I miglioramenti alla traduzione in AEM 6.5 includono:
+I miglioramenti alla traduzione AEM 6.5 includono:
 
 **Processi** di traduzione con approvazione automatica: Il flag di approvazione nel processo di traduzione è una proprietà binaria. Non supporta né integra con flussi di lavoro di revisione e approvazione preconfigurati. Per ridurre al minimo il numero di passaggi di un lavoro di traduzione, per impostazione predefinita viene impostato su &quot;approva automaticamente&quot; in [!UICONTROL Proprietà avanzate] di un progetto di traduzione. Se l&#39;organizzazione richiede l&#39;approvazione per un lavoro di traduzione, è possibile deselezionare l&#39;opzione &quot;approva automaticamente&quot; in [!UICONTROL Proprietà avanzate] di un progetto di traduzione.
 
@@ -35,7 +34,7 @@ I miglioramenti alla traduzione in AEM 6.5 includono:
 
 **Esporta oggetti di traduzione in formato** JSON: AEM 6.4 e versioni precedenti supportano i formati XML e XLIFF degli oggetti di traduzione. Ora puoi configurare il formato di esportazione in formato JSON utilizzando la console dei sistemi [!UICONTROL Config Manager]. Cerca [!UICONTROL Configurazione piattaforma di traduzione], quindi puoi selezionare il formato di esportazione come JSON.
 
-**Aggiorna il contenuto AEM tradotto in Translation Memory (TMS)**: l’autore locale che non ha accesso ad AEM può effettuare aggiornamenti ai contenuti tradotti, che erano già stati acquisiti in AEM, direttamente nel TM (memoria di traduzione, in TMS), e aggiornare le traduzioni in AEM inviando nuovamente il lavoro di traduzione da TMS ad AEM
+**Aggiorna il contenuto AEM tradotto nella memoria di traduzione (TMS)**: l’autore locale che non ha accesso a AEM può apportare aggiornamenti ai contenuti tradotti, che sono già stati acquisiti in AEM, direttamente nel TM (memoria di traduzione, in TMS), e aggiornare le traduzioni in AEM inviando nuovamente il lavoro di traduzione da TMS a AEM
 
 ## Miglioramenti alla traduzione in AEM 6.4
 
