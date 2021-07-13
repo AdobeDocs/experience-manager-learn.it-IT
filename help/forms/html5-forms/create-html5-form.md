@@ -1,7 +1,7 @@
 ---
-title: Creazione di moduli HTML5
+title: Crea Forms HTML5
 description: Creazione e configurazione di moduli HTML5
-feature: Mobile Forms
+feature: Forms Mobile
 topics: development
 audience: developer
 doc-type: article
@@ -9,13 +9,12 @@ activity: implement
 version: 6.4,6.5
 kt: 4419
 thumbnail: kt-4419.jpg
-topic: Development
-role: Business Practitioner
+topic: Sviluppo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '488'
 ht-degree: 5%
 
 ---
@@ -23,7 +22,7 @@ ht-degree: 5%
 
 # Creazione di moduli HTML5
 
-HTML5 forms è una nuova funzionalità di Adobe Experience Manager che offre il rendering di modelli di moduli XFA (xdp) in formato HTML5. Questa funzionalità consente di effettuare il rendering dei moduli su dispositivi mobili e browser desktop che non supportano i PDF basati su XFA. I moduli HTML5 non solo supportano le funzionalità esistenti dei modelli di moduli XFA, ma aggiungono anche nuove funzionalità per i dispositivi mobili, come la firma a mano libera.
+I moduli HTML5 sono una nuova funzionalità di Adobe Experience Manager che offre il rendering di modelli di moduli XFA (xdp) in formato HTML5. Questa funzionalità consente di effettuare il rendering dei moduli su dispositivi mobili e browser desktop che non supportano i PDF basati su XFA. I moduli HTML5 non solo supportano le funzionalità esistenti dei modelli di moduli XFA, ma aggiungono anche nuove funzionalità per i dispositivi mobili, come la firma a mano libera.
 
 ## Prerequisito
 
@@ -32,7 +31,7 @@ Assicurati di disporre di un&#39;istanza funzionante di AEM Forms. Segui la [gui
 ## Crea il primo modulo HTML5
 
 1. [Scarica ed estrae il contenuto del file](assets/assets.zip) zip. Il file zip contiene file xdp e di dati
-2. [Passare a Moduli e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+2. [Passa a Forms e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 3. Fai clic su Crea -> Caricamento file
 4. Seleziona il modello xdp scaricato al passaggio 2
 
@@ -43,7 +42,7 @@ L&#39;xdp può essere visualizzato in anteprima in formato HTML5 o PDF. Per visu
 * Tocca l’xdp appena caricato e fai clic su _Anteprima -> Anteprima come HTML_. Dovresti vedere l&#39;xdp renderizzato come HTML5
 
 >[!NOTE]
->Quando si seleziona l’opzione _Anteprima come PDF_ il PDF di cui è stato effettuato il rendering non verrà visualizzato nel browser, perché AEM Forms esegue il rendering dei pdf dinamici che richiedono il plug-in di Acrobat.Per visualizzare il PDF è necessario scaricare il PDF e aprirlo con Adobe Acrobat/Reader.
+>Quando si seleziona l&#39;opzione _Anteprima come PDF_, il PDF di cui è stato effettuato il rendering non verrà visualizzato nel browser, perché AEM Forms esegue il rendering dei pdf dinamici che richiedono il plug-in Acrobat.Per visualizzare il PDF, è necessario scaricare il PDF e aprirlo con Adobe Acrobat/Reader.
 
 
 ## Anteprima con i dati
