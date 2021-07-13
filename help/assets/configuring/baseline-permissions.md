@@ -2,17 +2,16 @@
 title: Autorizzazioni di base
 description: La gestione dell’accesso degli utenti alle cartelle delle risorse della linea di base è un aspetto fondamentale della governance e garantisce il supporto corretto dei processi.
 sub-product: assets
-feature: Asset Management
+feature: Gestione risorse
 version: cloud-service
 kt: 4870
 thumbnail: 37696.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Gestione dei contenuti
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '56'
+source-wordcount: '53'
 ht-degree: 3%
 
 ---
