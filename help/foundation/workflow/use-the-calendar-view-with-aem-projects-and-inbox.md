@@ -1,23 +1,22 @@
 ---
 title: Utilizzare la Vista calendario con Progetti AEM e Casella in entrata
 seo-title: Utilizzare la Vista calendario con Progetti AEM e Casella in entrata
-description: 'La Vista calendario di AEM tiene traccia dei progetti e delle attività in una vista calendario per facilitarne la gestione e la pianificazione. Nella vista Calendario, l’utente avrà una visibilità complessiva sui progetti e le attività attualmente in corso, pianificate, in scadenza a breve e in scadenza. '
-seo-description: La Vista calendario di AEM tiene traccia dei progetti e delle attività in una vista calendario per facilitarne la gestione e la pianificazione. Nella vista Calendario, l’utente avrà una visibilità complessiva sui progetti e le attività attualmente in corso, pianificate, in scadenza a breve e in scadenza.
+description: 'AEM Vista calendario tiene traccia dei progetti e delle attività in una vista calendario per facilitarne la gestione e la pianificazione. Nella vista Calendario, l’utente avrà una visibilità complessiva sui progetti e le attività attualmente in corso, pianificate, in scadenza a breve e in scadenza. '
+seo-description: AEM Vista calendario tiene traccia dei progetti e delle attività in una vista calendario per facilitarne la gestione e la pianificazione. Nella vista Calendario, l’utente avrà una visibilità complessiva sui progetti e le attività attualmente in corso, pianificate, in scadenza a breve e in scadenza.
 version: 6.3, 6.4, 6.5
-feature: Workflow, Projects
+feature: Flusso di lavoro, progetti
 topics: governance, collaboration
 activity: use
 audience: author, analyst
 doc-type: feature video
 uuid: 3dc9999c-eddf-4e42-9aa9-87a37a47699d
 discoiquuid: 5ad21858-a4a2-486c-98dc-4f5ba46a3bc1
-topic: Collaboration
-role: Business Practitioner
+topic: Collaborazione
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -25,7 +24,7 @@ ht-degree: 0%
 
 # Utilizzare la Vista calendario con Progetti AEM e Casella in entrata
 
-La Vista calendario di AEM tiene traccia dei progetti e delle attività in una vista calendario per facilitarne la gestione e la pianificazione. Nella vista Calendario, l’utente avrà una visibilità complessiva sui progetti e le attività attualmente in corso, pianificate, in scadenza a breve e in scadenza.
+AEM Vista calendario tiene traccia dei progetti e delle attività in una vista calendario per facilitarne la gestione e la pianificazione. Nella vista Calendario, l’utente avrà una visibilità complessiva sui progetti e le attività attualmente in corso, pianificate, in scadenza a breve e in scadenza.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16804/?quality=12&learn=on)
 
