@@ -1,25 +1,24 @@
 ---
 title: Raccolte
-description: Scopri come le raccolte forniscono e visualizzano in modo alternativo le risorse AEM.
+description: Scopri come le raccolte forniscono una visualizzazione alternativa in AEM Assets.
 sub-product: assets
-feature: Collections
+feature: Raccolte
 version: cloud-service
 kt: 4301
 thumbnail: 32053.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Gestione dei contenuti
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '29'
-ht-degree: 17%
+source-wordcount: '26'
+ht-degree: 19%
 
 ---
 
 
 # Raccolte
 
-Scopri come le raccolte forniscono e visualizzano in modo alternativo le risorse AEM.
+Scopri come le raccolte forniscono una visualizzazione alternativa in AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32053/?quality=12&learn=on&hidetitle=true)
