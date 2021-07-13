@@ -3,9 +3,9 @@ title: 'Informazioni sui file InDesign e i modelli di risorse in AEM Assets '
 description: Questa esercitazione video illustra come definire un file InDesign e tutte le relative considerazioni da utilizzare nella funzione Modelli di risorse di AEM Assets.
 version: 6.3, 6.4, 6.5
 topic: Gestione dei contenuti
-role: Business Practitioner
+role: User
 level: Intermediate
-source-git-commit: b4fa992abe22e3a546d651e465d6ffc9e415aee2
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
