@@ -1,7 +1,7 @@
 ---
 title: Creare il modulo MyAccount
 description: Crea il modulo myaccount per recuperare il modulo parzialmente compilato dopo aver verificato con successo l'ID applicazione e il numero di telefono.
-feature: Adaptive Forms
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,13 +9,12 @@ activity: implement
 version: 6.4,6.5
 kt: 6599
 thumbnail: 6599.jpg
-topic: Development
-role: Business Practitioner
+topic: Sviluppo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '258'
 ht-degree: 1%
 
 ---
@@ -30,7 +29,7 @@ Il modulo **MyAccountForm** viene utilizzato per recuperare il modulo adattivo p
 
 Quando l&#39;utente immette l&#39;ID applicazione e fa clic sul pulsante **FetchApplication**, il numero mobile associato all&#39;ID applicazione viene recuperato dal database utilizzando l&#39;operazione Get del modello dati del modulo.
 
-Questo modulo utilizza la chiamata POST del modello dati del modulo per verificare il numero mobile utilizzando OTP. L’azione di invio del modulo viene attivata dopo la verifica corretta del numero di cellulare utilizzando il seguente codice. Stiamo attivando l&#39;evento clic del pulsante di invio denominato **submitForm**.
+In questo modulo viene utilizzata la chiamata POST del modello dati del modulo per verificare il numero mobile utilizzando OTP. L’azione di invio del modulo viene attivata dopo la verifica corretta del numero di cellulare utilizzando il seguente codice. Stiamo attivando l&#39;evento clic del pulsante di invio denominato **submitForm**.
 
 >[!NOTE]
 > Dovrai fornire la Chiave API e i valori Segreto API specifici per il tuo account [Nexmo](https://dashboard.nexmo.com/) nei campi appropriati di MyAccountForm
@@ -52,4 +51,4 @@ Il codice nel servlet montato su **/bin/renderaf** inoltra la richiesta di rende
 
 * I moduli di esempio si basano su [modello di modulo adattivo personalizzato](assets/custom-template-with-page-component.zip) che è necessario importare in AEM affinché il rendering dei moduli di esempio sia corretto.
 
-* [È necessario importare in AEM i gestori di invio personalizzati ](assets/custom-submit-my-account-form.zip) associati all’invio di MyAccountForm.
+* [È necessario importare in AEM i gestori di invio personalizzati associati ](assets/custom-submit-my-account-form.zip) all’invio di MyAccountForm.
