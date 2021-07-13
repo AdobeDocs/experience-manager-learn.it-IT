@@ -3,7 +3,7 @@ title: Utilizzo dell’Editor pagina con AEM Sites
 seo-title: Utilizzo dell’Editor pagina con Adobe Experience Manager Sites
 description: Il video seguente evidenzia diverse delle funzioni principali dell’editor per siti dell’interfaccia utente touch in Adobe Experience Manager.
 seo-description: Il video seguente evidenzia diverse delle funzioni principali dell’editor per siti dell’interfaccia utente touch in Adobe Experience Manager.
-feature: Page Editor
+feature: Editor pagina
 topics: authoring
 audience: author, marketer
 doc-type: feature video
@@ -11,21 +11,20 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4248
 thumbnail: 32011.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Gestione dei contenuti
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '246'
 ht-degree: 7%
 
 ---
 
 
-# Utilizzo dell’ Editor pagina {#using-page-editor-with-aem-sites}
+# Utilizzo dell’Editor pagina {#using-page-editor-with-aem-sites}
 
-L’Editor pagina di AEM Site è un potente strumento per la creazione e la modifica di contenuti web. Gli strumenti e le funzionalità dell’Editor pagina sono accessibili dalla barra degli strumenti dell’interfaccia utente dell’Editor pagina.
+AEM Editor pagina del sito è un potente strumento per la creazione e la modifica di contenuti web. Gli strumenti e le funzionalità dell’Editor pagina sono accessibili dalla barra degli strumenti dell’interfaccia utente dell’Editor pagina.
 
 Il video seguente evidenzia le funzioni principali dell’Editor pagina.
 
