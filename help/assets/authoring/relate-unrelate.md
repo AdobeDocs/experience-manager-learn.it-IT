@@ -1,17 +1,16 @@
 ---
-title: Come correlare e scollegare le risorse in AEM
+title: Come correlare e separare le attività in AEM
 description: Scopri come stabilire e gestire le relazioni tra le risorse in AEM.
-feature: Asset Management
-role: Business Practitioner
+feature: Gestione risorse
+role: User
 level: Beginner
 version: cloud-service
 kt: 6969
 thumbnail: 331107.jpg
-topic: Content Management
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+topic: Gestione dei contenuti
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '40'
+source-wordcount: '37'
 ht-degree: 5%
 
 ---
