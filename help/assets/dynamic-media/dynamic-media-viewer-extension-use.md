@@ -2,15 +2,14 @@
 title: Utilizzo dei visualizzatori Dynamic Media con Adobe Analytics e Adobe Launch
 description: Con l’estensione Dynamic Media Viewers per Adobe Launch, rilasciata con Dynamic Media Viewers 5.13, i clienti di Dynamic Media, Adobe Analytics e Adobe Launch possono utilizzare eventi e dati specifici per i visualizzatori Dynamic Media nella propria configurazione di Adobe Launch.
 sub-product: Dynamic Media
-feature: Asset Insights
+feature: Informazioni sulla risorsa
 version: 6.3, 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Gestione dei contenuti
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '364'
 ht-degree: 17%
 
 ---
@@ -24,13 +23,13 @@ Per i clienti con Dynamic Media e Adobe Analytics, ora puoi monitorare l’utili
 
 >[!NOTE]
 >
-> Esegui Adobe Experience Manager in modalità Dynamic Media Scene7 per questa funzionalità. Devi anche [integrare Adobe Experience Platform Launch con la tua istanza AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html).
+> Esegui Adobe Experience Manager in modalità Dynamic Media Scene7 per questa funzionalità. È inoltre necessario [integrare Adobe Experience Platform Launch con l&#39;istanza AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html).
 
-Con l’introduzione dell’estensione Dynamic Media Viewer, Adobe Experience Manager offre ora il supporto di analisi avanzato per le risorse fornite con i visualizzatori Dynamic Media (5.13), garantendo un controllo più granulare sul tracciamento degli eventi quando un visualizzatore Dynamic Media viene utilizzato in una pagina Sites.
+Con l’introduzione dell’estensione Dynamic Media Viewer, Adobe Experience Manager offre ora il supporto di analisi avanzato per le risorse fornite con i visualizzatori Dynamic Media (5.13), fornendo un controllo più granulare sul tracciamento degli eventi quando un visualizzatore Dynamic Media viene utilizzato in una pagina Sites.
 
-Se disponi già di AEM Assets e Sites, puoi integrare la proprietà Launch con l’istanza di authoring di AEM. Una volta associata l’integrazione di launch al sito web, puoi aggiungere alla pagina un componente multimediale dinamico con il tracciamento degli eventi per i visualizzatori abilitati.
+Se disponi già di AEM Assets e Sites, puoi integrare la proprietà Launch con l’istanza di authoring AEM. Una volta associata l’integrazione di launch al sito web, puoi aggiungere alla pagina un componente multimediale dinamico con il tracciamento degli eventi per i visualizzatori abilitati.
 
-Per i clienti AEM Assets-only o per i clienti Dynamic Media Classic, l’utente può ottenere il codice da incorporare per un visualizzatore e aggiungerlo alla pagina. Le librerie Script di Launch possono quindi essere aggiunte manualmente alla pagina per il tracciamento degli eventi del visualizzatore.
+Per i clienti AEM Assets o Dynamic Media Classic, l’utente può ottenere il codice da incorporare per un visualizzatore e aggiungerlo alla pagina. Le librerie Script di Launch possono quindi essere aggiunte manualmente alla pagina per il tracciamento degli eventi del visualizzatore.
 
 Nella tabella seguente sono elencati gli eventi del visualizzatore Dynamic Media e i relativi argomenti supportati:
 
