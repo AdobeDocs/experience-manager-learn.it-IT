@@ -1,7 +1,7 @@
 ---
 title: Creare un modulo adattivo
 description: Crea e configura un modulo adattivo per utilizzare il servizio di precompilazione del modello dati del modulo
-feature: Adaptive Forms
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: article
@@ -9,13 +9,12 @@ activity: implement
 version: 6.4,6.5
 kt: 5813
 thumbnail: kt-5813.jpg
-topic: Development
-role: Business Practitioner
+topic: Sviluppo
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '609'
 ht-degree: 2%
 
 ---
