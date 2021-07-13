@@ -2,17 +2,16 @@
 title: Assegnazione tag
 description: I tag sono uno strumento integrale per la gestione delle risorse nella gerarchia delle cartelle di Assets. La definizione di una tassonomia dei tag è fondamentale per consentire agli utenti di individuare e organizzare le risorse in AEM.
 sub-product: assets
-feature: Asset Management
+feature: Gestione risorse
 version: cloud-service
 kt: 4871
 thumbnail: 34073.jpg
-topic: Content Management
-role: Business Practitioner
+topic: Gestione dei contenuti
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '67'
 ht-degree: 5%
 
 ---
