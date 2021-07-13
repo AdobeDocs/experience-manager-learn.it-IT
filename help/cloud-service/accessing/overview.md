@@ -1,7 +1,7 @@
 ---
-title: Configurazione dell’accesso ad AEM as a Cloud Service
-description: 'AEM as a Cloud Service è il modo nativo per il cloud di sfruttare le applicazioni AEM e, come tale, sfrutta Adobe IMS (Identity Management System) per facilitare l’accesso degli utenti, amministratori e utenti normali, al servizio Author di AEM. Scopri in che modo gli utenti, i gruppi di utenti e i profili di prodotto Adobe IMS vengono utilizzati insieme ai gruppi e alle autorizzazioni di AEM per fornire un accesso specifico ad AEM Author.  '
-feature: Users and Groups
+title: Configurazione dell’accesso a AEM come Cloud Service
+description: 'AEM come Cloud Service è il modo nativo del cloud di sfruttare le applicazioni AEM e, come tale, sfrutta l’Adobe IMS (Identity Management System) per facilitare l’accesso degli utenti, amministratori e utenti normali, al servizio Author di AEM. Scopri in che modo gli utenti, i gruppi di utenti e i profili di prodotto di Adobe IMS vengono utilizzati insieme ai gruppi AEM e alle autorizzazioni per fornire un accesso specifico ad AEM Author.  '
+feature: 'Utenti e gruppi '
 topics: authentication
 version: cloud-service
 activity: setup
@@ -9,64 +9,63 @@ audience: administrator
 doc-type: article
 kt: 5882
 thumbnail: KT-5882.jpg
-topic: Administration, Security
-role: Administrator
+topic: Amministrazione, sicurezza
+role: Admin
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
 
 
-# Configurazione dell’accesso ad AEM as a Cloud Service
+# Configurazione dell’accesso a AEM come Cloud Service
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_overview"
 >title="Introduzione ad Adobe IMS"
->abstract="AEM as a Cloud Service sfrutta Adobe IMS (Identity Management System) per facilitare l’accesso dei suoi utenti, amministratori e utenti normali, al servizio Author di AEM. Scopri in che modo gli utenti, i gruppi e i profili di prodotto Adobe IMS vengono utilizzati insieme ai gruppi e alle autorizzazioni di AEM per fornire un accesso dettagliato al servizio di authoring di AEM."
+>abstract="AEM as a Cloud Service sfrutta l’Adobe IMS (Identity Management System) per facilitare l’accesso dei suoi utenti, amministratori e utenti normali, al servizio AEM Author. Scopri in che modo gli utenti, i gruppi e i profili di prodotto di Adobe IMS vengono utilizzati insieme ai gruppi AEM e alle autorizzazioni per fornire un accesso dettagliato al servizio di authoring di AEM."
 
-AEM as a Cloud Service è il modo nativo per il cloud di sfruttare le applicazioni AEM e, come tale, sfrutta Adobe IMS (Identity Management System) per facilitare l’accesso dei suoi utenti, amministratori e utenti normali, al servizio AEM Author. Scopri in che modo gli utenti, i gruppi e i profili di prodotto Adobe IMS vengono utilizzati insieme ai gruppi e alle autorizzazioni di AEM per fornire un accesso dettagliato al servizio di authoring di AEM.
+AEM come Cloud Service è il modo nativo del cloud di sfruttare le applicazioni AEM e, come tale, sfrutta l’Adobe IMS (Identity Management System) per facilitare l’accesso dei suoi utenti, amministratori e utenti normali, al servizio AEM Author. Scopri in che modo gli utenti, i gruppi e i profili di prodotto di Adobe IMS vengono utilizzati insieme ai gruppi AEM e alle autorizzazioni per fornire un accesso dettagliato al servizio di authoring di AEM.
 
-## Utenti Adobe IMS
+## Adobe utenti IMS
 
-Gli utenti che richiedono l’accesso al servizio AEM Author vengono gestiti come [utenti Adobe IMS](https://helpx.adobe.com/it/enterprise/using/set-up-identity.html) in [AdminConsole di Adobe](https://adminconsole.adobe.com). Scopri gli utenti Adobe IMS e come accedervi e gestirli in Admin Console.
+Gli utenti che richiedono l’accesso al servizio AEM Author vengono gestiti come [utenti Adobe IMS](https://helpx.adobe.com/it/enterprise/using/set-up-identity.html) in [AdminConsole di Adobe](https://adminconsole.adobe.com). Scopri gli Adobi sugli utenti IMS e come accedervi e gestirli in Admin Console.
 
-[Scopri gli utenti di Adobe IMS](./adobe-ims-users.md)
+[Scopri di più sugli utenti Adobe IMS](./adobe-ims-users.md)
 
-## Gruppi di utenti di Adobe IMS
+## Adobe di gruppi di utenti IMS
 
-Gli utenti che accedono al servizio AEM Author devono essere organizzati in gruppi logici utilizzando [gruppi di utenti Adobe IMS](https://helpx.adobe.com/enterprise/using/user-groups.html) in [AdminConsole di Adobe](https://adminconsole.adobe.com). I gruppi di utenti Adobe IMS non forniscono autorizzazioni dirette o accesso ad AEM (questo è il lavoro di [profili di prodotto Adobe IMS](#adobe-ims-product-profiles)), tuttavia sono un ottimo modo per definire raggruppamenti logici di utenti che possono a loro volta essere tradotti in specifici livelli di accesso nel servizio di authoring di AEM, utilizzando i gruppi e le autorizzazioni di AEM.
+Gli utenti che accedono al servizio AEM Author devono essere organizzati in gruppi logici utilizzando [Adobi gruppi di utenti IMS](https://helpx.adobe.com/enterprise/using/user-groups.html) in [Adobe AdminConsole](https://adminconsole.adobe.com). I gruppi di utenti IMS di Adobe non forniscono autorizzazioni dirette o l&#39;accesso a AEM (questo è il lavoro di [profili di prodotto Adobe IMS](#adobe-ims-product-profiles)), tuttavia, sono un ottimo modo per definire raggruppamenti logici di utenti che possono a loro volta essere tradotti in specifici livelli di accesso nel servizio Author di AEM, utilizzando AEM gruppi e autorizzazioni.
 
-[Scopri i gruppi di utenti di Adobe IMS](./adobe-ims-user-groups.md)
+[Scopri i gruppi di utenti Adobe IMS](./adobe-ims-user-groups.md)
 
 ## Profili di prodotto Adobe IMS
 
-[I profili](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html) di prodotto Adobe IMS, gestiti in  [Adobe Admin Console](https://adminconsole.adobe.com), sono il meccanismo che fornisce agli utenti  [Adobe IMS l’accesso ](#adobe-ims-users) al servizio Author di AEM con un livello di accesso base.
+[I profili](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html) di prodotto IMS di Adobe, gestiti in Admin Console [ di ](https://adminconsole.adobe.com)Adobe, sono il meccanismo che fornisce agli utenti IMS di  [Adobe ](#adobe-ims-users) l’accesso al servizio Author di AEM con un livello di accesso di base.
 
-+ Il profilo di prodotto __Utenti AEM__ consente agli utenti l’accesso in sola lettura ad AEM tramite l’iscrizione al gruppo di collaboratori di AEM.
-+ Il profilo di prodotto __Amministratori AEM__ consente agli utenti di accedere in modo completo e amministrativo ad AEM.
++ Il profilo di prodotto __AEM Utenti__ consente agli utenti l&#39;accesso in sola lettura a AEM tramite l&#39;iscrizione al gruppo di collaboratori AEM.
++ Il profilo di prodotto __AEM Administrators__ consente agli utenti l&#39;accesso completo e amministrativo a AEM.
 
-[Informazioni sui profili di prodotto Adobe IMS](./adobe-ims-product-profiles.md)
+[Scopri i profili di prodotto Adobe IMS](./adobe-ims-product-profiles.md)
 
-## Gruppi di utenti e autorizzazioni di AEM
+## AEM gruppi di utenti e autorizzazioni
 
-Adobe Experience Manager si basa sugli utenti Adobe IMS, sui gruppi di utenti e sui profili di prodotto per fornire agli utenti un accesso personalizzabile ad AEM. Scopri come creare gruppi e autorizzazioni AEM e come interagiscono con le astrazioni Adobe IMS per fornire un accesso fluido e personalizzabile ad AEM.
+Adobe Experience Manager si basa su utenti Adobe IMS, gruppi di utenti e profili di prodotto per fornire agli utenti un accesso personalizzabile a AEM. Scopri come creare gruppi AEM e autorizzazioni e come funzionano insieme alle astrazioni IMS di Adobe per fornire un accesso diretto e personalizzabile ai AEM.
 
-[Informazioni su utenti, gruppi e autorizzazioni di AEM](./aem-users-groups-and-permissions.md)
+[Informazioni su AEM utente, gruppi e autorizzazioni](./aem-users-groups-and-permissions.md)
 
 ## Procedura dettagliata su accesso e autorizzazioni
 
-Una procedura dettagliata per configurare utenti Adobe IMS, gruppi di utenti e profili di prodotto in Adobe Admin Console, e come sfruttare queste astrazioni Adobe IMS in AEM Author per definire e gestire autorizzazioni specifiche basate su gruppi.
+Una procedura dettagliata per configurare gli utenti Adobe IMS, i gruppi di utenti e i profili di prodotto in Admin Console di Adobe e come sfruttare questi Adobi di astrazioni IMS in AEM Author per definire e gestire autorizzazioni specifiche basate su gruppi.
 
-[Procedura dettagliata sull’accesso e le autorizzazioni di AEM](./walk-through.md)
+[Procedura dettagliata sull’accesso AEM e le autorizzazioni](./walk-through.md)
 
-## Risorse aggiuntive per Adobe Admin Console
+## Risorse Adobe Admin Console aggiuntive
 
-La seguente documentazione contiene [dettagli e problemi specifici di Adobe Admin Console](https://adminconsole.adobe.com) che possono essere utili per comprendere meglio Adobe Admin Console e utilizzarla per gestire gli utenti e accedere ai prodotti Experience Cloud.
+La documentazione seguente descrive i dettagli e i problemi specifici di [Adobe Admin Console](https://adminconsole.adobe.com) che possono contribuire a una migliore comprensione di Adobe Admin Console e a usarlo per gestire gli utenti e l&#39;accesso tra i prodotti Experience Cloud.
 
 + [Panoramica di Adobe Admin Console Identity](https://helpx.adobe.com/enterprise/using/identity.html)
 + [Ruoli amministratore di Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-roles.html)
-+ [Ruoli per sviluppatori di Adobe Admin Console](https://helpx.adobe.com/enterprise/using/manage-developers.html)
++ [Ruoli sviluppatore di Adobe Admin Console](https://helpx.adobe.com/enterprise/using/manage-developers.html)
