@@ -1,22 +1,21 @@
 ---
-title: Utilizzo di Panorama e Visualizzatore immagini verticali con Dynamic Media di AEM Assets
+title: Utilizzo dei visualizzatori per immagini panoramiche e verticali con AEM Assets Dynamic Media
 description: I miglioramenti apportati al visualizzatore Dynamic Media in AEM 6.4 includono l’aggiunta di visualizzatore di immagini panoramiche, visualizzatore di immagini panoramiche per realtà virtuale e visualizzatore di immagini verticali. Panoramic Viewer offre un modo semplice per offrire un'esperienza coinvolgente e coinvolgente della stanza, della proprietà, della posizione o del paesaggio senza alcun sviluppo personalizzato.
 sub-product: dynamic-media
-feature: Video Profiles, Video Profiles, 360 VR Video
+feature: Profili video, profili video, video VR a 360°
 version: 6.4, 6.5
-topic: Content Management
-role: Business Practitioner
+topic: Gestione dei contenuti
+role: User
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '545'
 ht-degree: 3%
 
 ---
 
 
-# Utilizzo del visualizzatore di immagini panoramiche e verticali con Dynamic Media di AEM Assets{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
+# Utilizzo dei visualizzatori per immagini panoramiche e verticali con AEM Assets Dynamic Media{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
 
 I miglioramenti apportati al visualizzatore Dynamic Media in AEM 6.4 includono l’aggiunta di visualizzatore di immagini panoramiche, visualizzatore di immagini panoramiche per realtà virtuale e visualizzatore di immagini verticali. Panoramic Viewer offre un modo semplice per offrire un&#39;esperienza coinvolgente e coinvolgente della stanza, della proprietà, della posizione o del paesaggio senza alcun sviluppo personalizzato.
 
@@ -24,7 +23,7 @@ I miglioramenti apportati al visualizzatore Dynamic Media in AEM 6.4 includono l
 
 >[!NOTE]
 >
->Il video presuppone che l’istanza AEM sia in esecuzione in modalità Dynamic Media S7. [Le istruzioni sulla configurazione di AEM con Dynamic Media sono disponibili qui.](https://helpx.adobe.com/it/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>Il video presuppone che l&#39;istanza AEM sia in esecuzione in modalità Dynamic Media S7. [Le istruzioni sulla configurazione di AEM con Dynamic Media sono disponibili qui.](https://helpx.adobe.com/it/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## Visualizzatore VR panoramico e panoramico
 
@@ -48,8 +47,8 @@ Con i campioni orizzontali, a seconda delle dimensioni dello schermo del desktop
    <td>Visualizzatore di immagini verticali</td>
   </tr>
   <tr>
-   <td>Modalità esecuzione elementi multimediali dinamici</td>
-   <td>Solo modalità Scene7 di Dynamic Media</td>
+   <td>Modalità di esecuzione Dynamic Media</td>
+   <td>Solo modalità Dynamic Media Scene7</td>
    <td>DMS7 e Dynamic Media</td>
   </tr>
   <tr>
