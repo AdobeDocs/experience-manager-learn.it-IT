@@ -8,8 +8,8 @@ version: cloud-service
 feature: Servizi documentali
 topic: Sviluppo
 kt: 7432
-thumbnail: 332439.jpg
-source-git-commit: 33cb3d18b744d9a8e54a87152079b42ed09212f2
+thumbnail: 334859.jpg
+source-git-commit: f2a94910fbc29b705f82a66d8248cbcf54366874
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 4%
@@ -24,3 +24,5 @@ In questo corso, utilizzeremo i microservizi di generazione dei documenti per ge
 1. Crea un JSON Web Token (JWT) dalle credenziali del servizio e scambialo per un token di accesso
 1. Configurare l’accesso per l’account tecnico in AEM
 1. Effettuare chiamate HTTP utilizzando il token di accesso
+
+>[!VIDEO](https://video.tv.adobe.com/v/334859/?quality=12&learn=on)
