@@ -14,9 +14,9 @@ discoiquuid: aefb4124-91a0-4548-94a3-86785ea04549
 topic: Sviluppo
 role: Developer
 level: Experienced
-source-git-commit: 55a6ff5d01898b994aee60f214126c5c18a06a5e
+source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,10 @@ Per testare questa funzionalità, prova questo [link](https://forms.enablementad
 Per eseguire questo caso d’uso, è necessario effettuare le seguenti operazioni.
 
 * Aggiungi il certificato Reader estensioni all’utente &quot;fd-service&quot;. I passaggi per aggiungere le credenziali delle estensioni di Reader sono elencati [qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
+
+
+* Puoi anche fare riferimento al video sulla [configurazione delle credenziali delle estensioni del Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
+
 
 * Crea un servizio OSGi personalizzato per il rendering e l’applicazione dei diritti di utilizzo. Il codice per eseguire questa operazione è elencato di seguito
 
