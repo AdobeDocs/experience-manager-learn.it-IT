@@ -11,9 +11,9 @@ version: 6.4,6.5
 topic: Amministrazione
 role: Admin
 level: Beginner
-source-git-commit: 55a6ff5d01898b994aee60f214126c5c18a06a5e
+source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,15 @@ La credenziale delle estensioni del lettore è associata all’utente del serviz
 Segui il video per aggiungere le credenziali all&#39;utente del servizio fd
 
 >[!VIDEO](https://video.tv.adobe.com/v/335849?quality=9&learn=on)
+
+
+Il comando per elencare i dettagli del file pfx è. Il seguente comando presuppone che ti trovi nella stessa directory del file pfx .
+
+**keytool -v -list -storetype pkcs12 -keystore  &lt;name of=&quot;&quot; your=&quot;&quot;>**
+
+Ad esempio keytool -v -list -storetype pkcs12 -keystore 1005566.pfx dove 1005566.pfx è il nome del mio file pfx
+
+
 
 
 
