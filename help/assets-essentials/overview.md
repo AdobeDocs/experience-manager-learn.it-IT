@@ -2,9 +2,9 @@
 title: Video di AEM Assets Essentials
 description: Una raccolta di video per Adobe Experience Manager Assets Essentials
 sub-product: assets
-source-git-commit: c385183bee58bc062f4d46253096828c03e058c3
+source-git-commit: 21d6df065fe61614d3bbd68ce2f20d3dc23a9cef
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
