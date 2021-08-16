@@ -1,19 +1,18 @@
 ---
 title: Generazione di più pdf da un file di dati
-seo-title: Generazione di più pdf da un file di dati
-feature: Output Service
+description: OutputService fornisce diversi metodi per creare documenti utilizzando una struttura del modulo e i dati da unire alla struttura del modulo. Scopri come generare più pdf da un unico grande xml contenente più record singoli.
+feature: Servizio di output
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: fb6c21a9a88b5ebcbfb14213182a9b8cba6fe6ae
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '526'
 ht-degree: 1%
 
 ---
@@ -38,9 +37,9 @@ La firma del metodo generatePDFOutputBatch prende i seguenti parametri
 >
 >Questo caso d&#39;uso è disponibile come esempio live in questo [sito web](https://forms.enablementadobe.com/content/samples/samples.html?query=0).
 
-## Dettagli del caso d&#39;uso{#use-case-details}
+## Dettagli del caso d’uso{#use-case-details}
 
-In questo caso d’uso forniremo una semplice interfaccia web per caricare il modello e il file di dati (xml). Una volta completato il caricamento dei file e inviata la richiesta POST al servlet AEM. Questo servlet estrae i documenti e chiama il metodo generatePDFOutputBatch di OutputService. I pdf generati vengono compressi in un file zip e resi disponibili all’utente finale per il download dal browser web.
+In questo caso d’uso forniremo una semplice interfaccia web per caricare il modello e il file di dati (xml). Una volta completato il caricamento dei file e la richiesta di POST viene inviata al servlet AEM. Questo servlet estrae i documenti e chiama il metodo generatePDFOutputBatch di OutputService. I pdf generati vengono compressi in un file zip e resi disponibili all’utente finale per il download dal browser web.
 
 ## Codice servlet{#servlet-code}
 
@@ -77,7 +76,7 @@ Document zippedDocument = documentServices.generateMultiplePdfs(templateMap, dat
 ....
 ```
 
-### Codice di implementazione dell&#39;interfaccia{#Interface-Implementation-Code}
+### Codice di implementazione dell’interfaccia{#Interface-Implementation-Code}
 
 Il codice seguente genera più pdf utilizzando generatePDFOutputBatch di OutputService e restituisce al servlet chiamante un file zip contenente i file pdf
 
