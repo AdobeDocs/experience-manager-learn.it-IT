@@ -1,7 +1,7 @@
 ---
 title: Configurare un ambiente di sviluppo locale per l’estensibilità di Asset compute
 description: Lo sviluppo di processi di lavoro Asset compute, che sono applicazioni JavaScript Node.js, richiede strumenti di sviluppo specifici diversi dallo sviluppo AEM tradizionale, che vanno da Node.js e vari moduli npm a Docker Desktop e Microsoft Visual Studio Code.
-feature: Asset Compute Microservices
+feature: Microservizi di Asset compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,13 +9,12 @@ audience: developer
 doc-type: tutorial
 kt: 6266
 thumbnail: KT-6266.jpg
-topic: Integrations, Development
+topic: Integrazioni, Sviluppo
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: 53c20b9774c15b04a1c78c7c0c7b61a60996bf60
+source-git-commit: fd72f3c85db8a56ec8abfd1609da53492ee54be2
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -43,17 +42,15 @@ Di seguito sono riportate le istruzioni per l&#39;impostazione di una cresta. I 
 1. Installa i moduli npm richiesti e i plug-in Adobe I/O CLI dalla riga di comando:
 
    ```
-   $ npm i -g @adobe/aio-cli @openwhisk/wskdebug ngrok --unsafe-perm=true \
+   $ npm i -g @adobe/aio-cli@7.1.0 @openwhisk/wskdebug ngrok --unsafe-perm=true \
    && aio plugins:install @adobe/aio-cli-plugin-asset-compute
    ```
 
 Per ulteriori informazioni sulle istruzioni di installazione abbreviate, consulta le sezioni seguenti.
 
-## Installa codice di Visual Studio{#vscode}
+## Installazione del codice di Visual Studio{#vscode}
 
 [Il codice ](https://code.visualstudio.com/download) di Microsoft Visual Studio viene utilizzato per lo sviluppo e il debug dei processi di lavoro di Asset compute. Mentre è possibile utilizzare altri sistemi IDE [compatibili con JavaScript](../../local-development-environment/development-tools.md#set-up-the-development-ide) per sviluppare il processo di lavoro, solo Visual Studio Code può essere integrato nel processo di lavoro di Asset compute [debug](../test-debug/debug.md).
-
-_Per il funzionamento di  [](#wskdebug) wskdebug è necessario Visual Studio Code 1.48.x+._
 
 Questa esercitazione presuppone l&#39;utilizzo del codice di Visual Studio in quanto fornisce la migliore esperienza di sviluppo per estendere l&#39;Asset compute.
 
@@ -76,15 +73,18 @@ I processi di lavoro di Asset compute sono basati su [Node.js](https://nodejs.or
 
 + [Installa Node.js (e npm)](../../local-development-environment/development-tools.md#node-js) nello stesso modo dello sviluppo AEM tradizionale.
 
-## Installa Adobe I/O CLI{#aio}
+## Installare Adobe I/O CLI{#aio}
 
 [Installa l’Adobe I/O CLI](../../local-development-environment/development-tools.md#aio-cli), o  ____ aiois un modulo npm riga di comando (CLI) che facilita l’utilizzo e l’interazione con le tecnologie Adobe I/O e viene utilizzato per generare e sviluppare processi di lavoro Asset compute personalizzati a livello locale.
 
 ```
-$ npm install -g @adobe/aio-cli
+$ npm install -g @adobe/aio-cli@7.1.0
 ```
 
-## Installa il plug-in Adobe I/O CLI Asset compute{#aio-asset-compute}
+_È richiesta la versione 7.1.0 di Adobe I/O CLI. Al momento non sono supportate versioni successive di Adobe I/O CLI._
+
+
+## Installare il plug-in Adobe I/O CLI Asset compute{#aio-asset-compute}
 
 Il plug-in Asset compute [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-asset-compute)
 
