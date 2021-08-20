@@ -1,22 +1,13 @@
 ---
 title: Sviluppo con gli utenti dei servizi in AEM Forms
-seo-title: Sviluppo con gli utenti dei servizi in AEM Forms
 description: Questo articolo illustra il processo di creazione di un utente di servizio in AEM Forms
-seo-description: Questo articolo illustra il processo di creazione di un utente di servizio in AEM Forms
-uuid: 996f30df-3fc5-4232-a104-b92e1bee4713
-feature: Adaptive Forms
-topics: development,administration
-audience: implementer,developer
-doc-type: article
-activity: setup
-discoiquuid: 65bd4695-e110-48ba-80ec-2d36bc53ead2
-topic: Development
+feature: Moduli adattivi
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
@@ -26,7 +17,7 @@ ht-degree: 0%
 
 Questo articolo illustra il processo di creazione di un utente di servizio in AEM Forms
 
-Nelle versioni precedenti di Adobe Experience Manager (AEM), il risolutore di risorse amministrative veniva utilizzato per l’elaborazione back-end che richiedeva l’accesso all’archivio. L’utilizzo del risolutore risorse amministrative è obsoleto in AEM 6.3. Viene invece utilizzato un utente di sistema con autorizzazioni specifiche nell’archivio.
+Nelle versioni precedenti di Adobe Experience Manager (AEM), il risolutore di risorse amministrative veniva utilizzato per l’elaborazione back-end che richiedeva l’accesso all’archivio. L’utilizzo del risolutore risorse amministrative è obsoleto in AEM 6.3. Viene invece utilizzato un utente di sistema con autorizzazioni specifiche nel repository.
 
 Questo articolo illustra la creazione di un utente di sistema e la configurazione delle proprietà di mappatura utente.
 
