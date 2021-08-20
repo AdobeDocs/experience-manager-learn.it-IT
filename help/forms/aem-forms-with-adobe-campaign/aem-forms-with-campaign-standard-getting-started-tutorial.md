@@ -1,23 +1,14 @@
 ---
 title: Guida introduttiva ad AEM Forms e Adobe Campaign Standard
-seo-title: Guida introduttiva ad AEM Forms e Adobe Campaign Standard
 description: Integra AEM Forms con Adobe Campaign Standard utilizzando AEM Forms Form Data Model per recuperare le informazioni sul profilo della campagna ACS, ecc.
-seo-description: Integra AEM Forms con Adobe Campaign Standard utilizzando AEM Forms Form Data Model per recuperare le informazioni sul profilo della campagna ACS, ecc.
-uuid: 56450c9b-3752-4a64-b1b3-8c78e81f5921
-feature: Adaptive Forms, Form Data Model
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+feature: Forms adattivo, modello dati modulo
 version: 6.3,6.4,6.5
-discoiquuid: 89245554-7b99-4e7e-9810-52191f9ea365
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -27,15 +18,15 @@ ht-degree: 0%
 
 ![formsandcampaign](assets/helpx-cards-forms.png)
 
-Questa esercitazione elencherà i vari casi d’uso per l’integrazione di AEM Forms con Adobe Campaign Standard(ACS).
+Questa esercitazione elenca i vari casi d’uso per l’integrazione di AEM Forms con Adobe Campaign Standard(ACS).
 
-ACS dispone di un set completo di API disponibili che consentono l&#39;interazione di ACS con la tecnologia di nostra scelta. Questa esercitazione si concentrerà sull’interfaccia di AEM Forms con ACS.
+ACS dispone di un set completo di API disponibili che consentono l&#39;interazione di ACS con la tecnologia di nostra scelta. In questa esercitazione, ci concentreremo sull’interfaccia di AEM Forms con ACS.
 
-Per integrare AEM Forms con ACS, è necessario seguire i seguenti passaggi:
+Per integrare AEM Forms con ACS è necessario seguire i seguenti passaggi:
 
 * [Imposta l&#39;accesso API sull&#39;istanza ACS.](https://docs.campaign.adobe.com/doc/standard/en/api/ACS_API.html#setting-up-api-access)
 * Crea token web JSON.
-* Sostituisci il token web JSON con il servizio di gestione delle identità Adobe per un token di accesso.
+* Sostituisci il token web JSON con Adobe Identity Management Service per un token di accesso.
 * Includi questo token di accesso nell’intestazione HTTP di autorizzazione, insieme a X-API-Key in ogni richiesta all’istanza ACS.
 
 Per iniziare segui le seguenti istruzioni
