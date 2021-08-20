@@ -1,28 +1,20 @@
 ---
 title: Variabili nel flusso di lavoro AEM[Parte2]
-seo-title: Variabili nel flusso di lavoro AEM[Parte2]
-description: Utilizzo di variabili di tipo xml,json,arraylist,document nel flusso di lavoro aem
-seo-description: Utilizzo di variabili di tipo xml,json,arraylist,document nel flusso di lavoro aem
-feature: Workflow
-topics: development
-audience: developer
-doc-type: tutorial
-activity: understand
+description: Utilizzo di variabili di tipo XML, JSON, ArrayList, Document in un flusso di lavoro AEM
 version: 6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 1%
+source-wordcount: '282'
+ht-degree: 0%
 
 ---
 
 # Variabili di tipo JSON nel flusso di lavoro AEM
 
-A partire da AEM Forms 6.5, ora possiamo creare variabili di tipo JSON nel flusso di lavoro AEM. In genere si creano variabili di tipo JSON se si inviano moduli adattivi basati su schema JSON a un flusso di lavoro AEM o si desidera archiviare i risultati di un’operazione di chiamata a un modello dati modulo. Il video seguente illustra i passaggi necessari per creare e utilizzare una variabile di tipo JSON nel flusso di lavoro AEM
+A partire da AEM Forms 6.5, ora possiamo creare variabili di tipo JSON in AEM flusso di lavoro. In genere si creano variabili di tipo JSON se si invia a un flusso di lavoro AEM un Forms adattivo basato su uno schema JSON o si desidera memorizzare i risultati di un’operazione di chiamata a un modello dati modulo. Il video seguente illustra i passaggi necessari per creare e utilizzare una variabile di tipo JSON nel flusso di lavoro AEM
 
 **Se utilizzi AEM Forms 6.5.0**
 
