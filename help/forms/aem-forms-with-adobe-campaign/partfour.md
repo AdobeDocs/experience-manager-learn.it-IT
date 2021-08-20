@@ -1,23 +1,14 @@
 ---
 title: Creare un profilo di campagna utilizzando il modello dati del modulo
-seo-title: Creare un profilo di campagna utilizzando il modello dati del modulo
-description: Passaggi relativi alla creazione del profilo Adobe Campaign Standard tramite il modello dati del modulo AEM Forms
-seo-description: Passaggi relativi alla creazione del profilo Adobe Campaign Standard tramite il modello dati del modulo AEM Forms
-uuid: 3216827e-e1a2-4203-8fe3-4e2a82ad180a
-feature: Output Service
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+description: Passaggi coinvolti nella creazione di un profilo Adobe Campaign Standard tramite AEM Forms Form Data Model
+feature: Moduli adattivi
 version: 6.3,6.4,6.5
-discoiquuid: 461c532e-7a07-49f5-90b7-ad0dcde40984
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '429'
 ht-degree: 4%
 
 ---
@@ -25,11 +16,11 @@ ht-degree: 4%
 
 # Creare un profilo di campagna utilizzando il modello dati del modulo {#create-campaign-profile-using-form-data-model}
 
-Passaggi relativi alla creazione del profilo Adobe Campaign Standard tramite il modello dati del modulo AEM Forms
+Passaggi coinvolti nella creazione di un profilo Adobe Campaign Standard tramite AEM Forms Form Data Model
 
 ## Crea autenticazione personalizzata {#create-custom-authentication}
 
-Quando si crea un’origine dati con il file swagger, AEM Forms supporta i seguenti tipi di autenticazione
+Quando si crea Origine dati con il file swagger, AEM Forms supporta i seguenti tipi di autenticazione
 
 * Nessuna
 * OAuth 2.0
@@ -112,11 +103,11 @@ private Logger log = LoggerFactory.getLogger(CampaignAuthentication.class);
 
 Il primo passo è quello di creare il file swagger. Il file swagger definisce l’API REST che verrà utilizzata per creare un profilo in Adobe Campaign Standard. Il file swagger definisce i parametri di input e i parametri di output dell’API REST.
 
-Un’origine dati viene creata utilizzando il file swagger. Quando crei Origine dati puoi specificare il tipo di autenticazione. In questo caso utilizzeremo l’autenticazione personalizzata per l’autenticazione rispetto ad Adobe Campaign. Il codice elencato sopra è stato utilizzato per l’autenticazione rispetto ad Adobe Campaign.
+Un’origine dati viene creata utilizzando il file swagger. Quando crei Origine dati puoi specificare il tipo di autenticazione. In questo caso utilizzeremo l&#39;autenticazione personalizzata per l&#39;autenticazione su Adobe Campaign.Il codice elencato sopra è stato utilizzato per l&#39;autenticazione su Adobe Campaign.
 
 Il file di esempio swagger viene fornito come parte della risorsa correlata a questo articolo.**Assicurati di modificare l&#39;host e basePath nel file swagger in modo che corrispondano all&#39;istanza ACS**
 
-## Verifica la soluzione {#test-the-solution}
+## Verificare la soluzione {#test-the-solution}
 
 Per testare la soluzione segui i seguenti passaggi:
 * [Assicurati di aver seguito i passaggi descritti qui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
