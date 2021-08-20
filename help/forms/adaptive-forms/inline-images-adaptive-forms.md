@@ -1,29 +1,25 @@
 ---
-title: Visualizzazione di immagini in linea nei moduli adattivi
-seo-title: Visualizzazione di immagini in linea nei moduli adattivi
-description: Visualizzare le immagini caricate in linea nei moduli adattivi
-seo-description: Visualizzare le immagini caricate in linea nei moduli adattivi
-feature: Adaptive Forms
+title: Visualizzazione di immagini in linea in Forms adattivo
+description: Visualizzare le immagini caricate in linea in Adaptive Forms
+feature: Moduli adattivi
 topics: development
-audience: developer
-doc-type: article
-activity: setup
 version: 6.3,6.4,6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '240'
 ht-degree: 1%
 
 ---
 
 
-# Immagini in linea nei moduli adattivi
+# Immagini in linea in Forms adattivo
 
 Un caso d’uso comune è la visualizzazione dell’immagine caricata come immagine in linea in Modulo adattivo. Per impostazione predefinita, l’immagine caricata viene visualizzata come collegamento e questa esperienza può essere migliorata visualizzando l’immagine in Modulo adattivo. Questo articolo illustra i passaggi necessari per visualizzare le immagini in linea.
+
+[Esempio live di questa funzionalità](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1)
 
 ## Aggiungi immagine segnaposto
 
@@ -70,7 +66,7 @@ function consumeImage (file) {
 
 ### Distribuisci sul server
 
-* Scarica e installa la [libreria client](assets/inline-image-client-library.zip) nella tua istanza AEM utilizzando il gestore di pacchetti AEM.
-* Scarica e installa il [modulo di esempio](assets/inline-image-af.zip) sulla tua istanza AEM utilizzando il gestore di pacchetti AEM.
+* Scarica e installa la [libreria client](assets/inline-image-client-library.zip) nella tua istanza AEM utilizzando AEM package manager.
+* Scarica e installa il [modulo di esempio](assets/inline-image-af.zip) sull&#39;istanza AEM utilizzando AEM package manager.
 * Posiziona il browser su [Aggiungi immagine in linea](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
 * Fai clic sul pulsante &quot;Allega la tua foto&quot; per aggiungere l&#39;immagine
