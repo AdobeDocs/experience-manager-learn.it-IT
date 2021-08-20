@@ -1,22 +1,14 @@
 ---
-title: Utilizzo di ldap con Aem Forms Workflow
-seo-title: Utilizzo di ldap con Aem Forms Workflow
+title: Utilizzo di LDAP con AEM Forms Workflow
 description: Assegnazione dell’attività del flusso di lavoro AEM Forms al responsabile del mittente
-seo-description: Assegnazione dell’attività del flusso di lavoro AEM Forms al responsabile del mittente
-feature: Forms adattivo,Flusso di lavoro
-topics: integrations
-audience: developer
-doc-type: article
-activity: setup
+feature: Forms adattivo, flusso di lavoro
+topic: Integrations (Integrazioni)
+role: Developer
 version: 6.3,6.4,6.5
-uuid: 3e32c3a7-387f-4652-8a94-4e6aa6cd5ab8
-discoiquuid: 671872b3-3de0-40da-9691-f8b7e88a9443
-topic: Sviluppo
-role: Admin
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
