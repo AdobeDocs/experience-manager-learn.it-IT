@@ -1,32 +1,26 @@
 ---
-title: 'Utilizzo di test automatici con AEM Adaptive Forms '
-seo-title: 'Utilizzo di test automatici con AEM Adaptive Forms '
-description: Test automatico dei moduli adattivi tramite Calvin SDK
-seo-description: Test automatico dei moduli adattivi tramite Calvin SDK
-feature: Adaptive Forms
-topics: development
-audience: developer
+title: 'Utilizzo di test automatizzati con AEM Forms adattivo '
+description: Test automatizzato di Forms adattivo utilizzando Calvin SDK
+feature: Moduli adattivi
 doc-type: article
 activity: develop
 version: 6.3,6.4,6.5
-uuid: 3ad4e6d6-d3b1-4e4d-9169-847f74ba06be
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '446'
 ht-degree: 1%
 
 ---
 
 
-# Utilizzo di test automatici con AEM Adaptive Forms {#using-automated-tests-with-aem-adaptive-forms}
+# Utilizzo di test automatizzati con AEM Forms adattivo {#using-automated-tests-with-aem-adaptive-forms}
 
-Test automatico dei moduli adattivi tramite Calvin SDK
+Test automatizzato di Forms adattivo utilizzando Calvin SDK
 
-Calvin SDK è un’API di utility per gli sviluppatori di Moduli adattivi per il test di Moduli adattivi. L&#39;SDK di Calvin è basato sul [framework di test di Hobbes.js](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/test-api/index.html). L’SDK di Calvin è disponibile a partire da AEM Forms 6.3.
+Calvin SDK è un&#39;API di utilità per gli sviluppatori di Forms adattivi per testare Adaptive Forms. L&#39;SDK di Calvin è basato sul [framework di test di Hobbes.js](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html). Calvin SDK è disponibile con AEM Forms 6.3 e versioni successive.
 
 In questa esercitazione verrà creato quanto segue:
 
@@ -36,7 +30,7 @@ In questa esercitazione verrà creato quanto segue:
 
 ## Guida introduttiva {#getting-started}
 
-[Scarica e installa le risorse utilizzando Package ](assets/testingadaptiveformsusingcalvinsdk1.zip)ManagerIl pacchetto contiene script di esempio e diversi Moduli adattivi.Questi Moduli adattivi vengono creati con la versione AEM Forms 6.3. È consigliabile creare nuovi moduli specifici per la versione di AEM Forms in uso se si esegue il test su AEM Forms 6.4 o versione successiva. Gli script di esempio mostrano le varie API dell’SDK Calvin disponibili per testare i moduli adattivi. I passaggi generali per testare i moduli adattivi AEM sono i seguenti:
+[Scarica e installa le risorse utilizzando Package ](assets/testingadaptiveformsusingcalvinsdk1.zip)ManagerIl pacchetto contiene script di esempio e diversi Adaptive Forms.Questi Adaptive Forms sono costruiti utilizzando la versione AEM Forms 6.3. È consigliabile creare nuovi moduli specifici per la versione di AEM Forms in uso se si esegue il test su AEM Forms 6.4 o versione successiva. Gli script di esempio mostrano le varie API dell’SDK Calvin disponibili per testare l’Adaptive Forms. I passaggi generali per il test AEM Forms adattivo sono i seguenti:
 
 * Passa al modulo da testare
 * Imposta il valore del campo
@@ -70,7 +64,7 @@ Il codice riportato sopra crea una nuova suite di test.
 
 >[!NOTE]
 >
->Se stai sottoponendo a test questa funzionalità su AEM Forms 6.4 o versioni successive, crea un nuovo modulo adattivo e utilizzalo per eseguire i test.Non è consigliabile utilizzare il modulo adattivo fornito con il pacchetto.
+>Se stai sottoponendo a test questa funzionalità su AEM Forms 6.4 o versioni successive, crea un nuovo modulo adattivo e utilizzalo per eseguire i test.Non si consiglia di utilizzare il modulo adattivo fornito con il pacchetto.
 
 È possibile aggiungere casi di test alla suite di test da eseguire su un modulo adattivo.
 
