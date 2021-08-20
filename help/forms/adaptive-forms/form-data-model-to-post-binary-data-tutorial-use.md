@@ -1,37 +1,28 @@
 ---
 title: Utilizzo Del Modello Dati Modulo Per Pubblicare Dati Binari
-seo-title: Utilizzo Del Modello Dati Modulo Per Pubblicare Dati Binari
-description: Pubblicazione di dati binari in AEM DAM tramite il modello dati modulo
-seo-description: Pubblicazione di dati binari in AEM DAM tramite il modello dati modulo
-uuid: dd344ed8-69f7-4d63-888a-3c96993fe99d
-feature: Workflow
-topics: integrations
-audience: developer
-doc-type: article
-activity: setup
+description: Inserimento di dati binari AEM DAM utilizzando il modello dati modulo
+feature: Flusso di lavoro
 version: 6.4,6.5
-discoiquuid: 6e99df7d-c030-416b-83d2-24247f673b33
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '493'
 ht-degree: 1%
 
 ---
 
 
-# Uso Del Modello Dati Modulo Per Pubblicare Dati Binari{#using-form-data-model-to-post-binary-data}
+# Utilizzo Del Modello Dati Modulo Per Pubblicare Dati Binari{#using-form-data-model-to-post-binary-data}
 
-A partire da AEM Forms 6.4, ora possiamo invocare il servizio Form Data Model come passaggio nel flusso di lavoro AEM. Questo articolo illustra un esempio di caso d’uso per la pubblicazione di un documento di record tramite il servizio Form Data Model.
+A partire da AEM Forms 6.4, ora possiamo invocare il servizio Form Data Model come passaggio in AEM flusso di lavoro. Questo articolo illustra un esempio di caso d’uso per la pubblicazione di un documento di record tramite il servizio Form Data Model.
 
 Il caso d’uso è il seguente:
 
 1. Un utente compila e invia il modulo adattivo.
 1. Il modulo adattivo è configurato per generare il documento di record.
-1. Al momento dell’invio di questo modulo adattivo, viene attivato Flusso di lavoro AEM che utilizzerà il servizio Richiama Form Data Model per POST del documento di record ad AEM DAM.
+1. All’invio di questo modulo adattivo, viene attivato AEM flusso di lavoro che utilizzerà il servizio Richiama Form Data Model per POST del documento di record a AEM DAM.
 
 ![posttodam](assets/posttodamshot1.png)
 
@@ -57,7 +48,7 @@ Per testare questa funzionalità sul server, segui i passaggi indicati di seguit
 
 1. [Scarica e distribuisci il bundle setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Questo bundle OSGI personalizzato viene utilizzato per creare la proprietà dei metadati e imposta il suo valore dai dati del modulo inviati.
 
-1. [Importa le risorse ](assets/postdortodam.zip) associate a questo articolo in AEM utilizzando il gestore dei pacchetti. Ottieni quanto segue
+1. [Importa le ](assets/postdortodam.zip) risorse associate a questo articolo in AEM utilizzando il gestore dei pacchetti. Ottieni quanto segue
 
    1. Modello flusso di lavoro
    1. Modulo adattivo configurato per l’invio al flusso di lavoro AEM
