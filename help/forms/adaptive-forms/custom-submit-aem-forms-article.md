@@ -1,24 +1,15 @@
 ---
 title: Scrittura di un invio personalizzato in AEM Forms
-seo-title: Scrittura di un invio personalizzato in AEM Forms
 description: Modo semplice e rapido per creare un’azione di invio personalizzata per il modulo adattivo
-seo-description: Modo semplice e rapido per creare un’azione di invio personalizzata per il modulo adattivo
-feature: Adaptive Forms
-topics: integrations
-audience: developer
-doc-type: article
-activity: implement
+feature: Moduli adattivi
 version: 6.3,6.4,6.5
-uuid: a26db0b9-7db4-4e80-813d-5c0438fabd1e
-discoiquuid: 28611011-2ff9-477e-b654-e62e7374096a
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 3%
+source-wordcount: '209'
+ht-degree: 2%
 
 ---
 
@@ -27,7 +18,7 @@ ht-degree: 3%
 
 Modo semplice e rapido per creare un’azione di invio personalizzata per il modulo adattivo
 
-Questo articolo illustra i passaggi necessari per creare un’azione di invio personalizzata per la gestione dell’invio di moduli adattivi.
+Questo articolo illustra i passaggi necessari per creare un’azione di invio personalizzata per la gestione dell’invio di Adattivo Forms.
 
 * Accedi a crx
 * Crea un nodo di tipo &quot;sling :folder&quot; sotto le app. Chiamiamo questo nodo CustomSubmitHelpx.
