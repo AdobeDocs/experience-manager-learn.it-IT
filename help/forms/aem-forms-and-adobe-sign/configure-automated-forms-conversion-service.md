@@ -2,16 +2,12 @@
 title: Servizio automated forms conversion
 description: Servizio automated forms conversion. Questo articolo descrive come un amministratore AEM può configurare il servizio di Automated forms conversion per automatizzare la conversione dei propri PDF forms in moduli adattivi. Questa guida è rivolta agli amministratori IT e AEM della tua organizzazione.
 feature: Moduli adattivi
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 thumbnail: 39493.jpg
 kt: 6114
 topic: Sviluppo
 role: Admin
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 1%
