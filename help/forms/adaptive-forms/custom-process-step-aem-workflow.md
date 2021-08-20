@@ -1,21 +1,14 @@
 ---
 title: Implementazione passaggio del processo personalizzato
-seo-title: Implementazione passaggio del processo personalizzato
 description: Scrittura di allegati di moduli adattivi nel file system utilizzando un passaggio del processo personalizzato
-seo-description: Scrittura di allegati di moduli adattivi nel file system utilizzando un passaggio del processo personalizzato
 feature: Flusso di lavoro
-topics: development
-audience: developer
-doc-type: tutorial
-activity: understand
 version: 6.5
 topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
