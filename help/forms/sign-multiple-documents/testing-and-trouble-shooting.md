@@ -1,22 +1,17 @@
 ---
 title: Risoluzione dei problemi relativi alla firma di più documenti
 description: Test e problemi nella soluzione
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Moduli adattivi
 version: 6.4,6.5
 kt: 6960
 thumbnail: 6960.jpg
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 2%
+source-wordcount: '392'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +23,7 @@ ht-degree: 2%
 
 Il caso d&#39;uso viene attivato quando l&#39;agente del servizio clienti compila e invia [modulo di rifinanziamento](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
 
-Il flusso di lavoro Firma più moduli viene attivato all’invio del modulo e il cliente riceve una notifica via e-mail con un collegamento che consente di avviare il processo di compilazione e firma del modulo.
+Il flusso di lavoro Firma multipla di Forms viene attivato all’invio del modulo e il cliente riceve una notifica e-mail con un collegamento che consente di avviare il processo di compilazione e firma del modulo.
 
 ## Compila i moduli nel pacchetto
 
@@ -42,7 +37,7 @@ La notifica e-mail viene inviata dal componente Invia e-mail nel flusso di lavor
 
 ### Il collegamento nella notifica di posta elettronica non funziona
 
-I collegamenti nelle notifiche e-mail vengono generati in modo dinamico. Se il server AEM non è in esecuzione su localhost:4502, fornisci il nome server e la porta corretti negli argomenti del passaggio Store Forms To Sign del flusso di lavoro Sign Multiple Forms
+I collegamenti nelle notifiche e-mail vengono generati in modo dinamico. Se il server AEM non è in esecuzione su localhost:4502, fornisci il nome e la porta corretti negli argomenti del passaggio Store Forms To Sign del flusso di lavoro Sign Multiple Forms
 
 ### Impossibile firmare il modulo
 
