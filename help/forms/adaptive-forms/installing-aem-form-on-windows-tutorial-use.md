@@ -1,23 +1,15 @@
 ---
 title: Passaggi semplificati per l’installazione di AEM Forms su Windows
-seo-title: Passaggi semplificati per l’installazione di AEM Forms su Windows
-description: Passaggi semplici e rapidi per installare AEM Forms in Windows
-seo-description: Passaggi semplici e rapidi per installare AEM Forms in Windows
-uuid: a148b8f0-83db-47f6-89d3-c8a9961be289
-feature: Adaptive Forms
-topics: administration
-audience: developer
-doc-type: article
-activity: setup
+description: Procedura rapida e semplice per installare AEM Forms in Windows
+feature: Moduli adattivi
+type: Tutorial
 version: 6.4,6.5
-discoiquuid: 1182ef4d-5838-433b-991d-e24ab805ae0e
-topic: Development
-role: Developer
+topic: Sviluppo
+role: Admin
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '598'
 ht-degree: 4%
 
 ---
@@ -27,7 +19,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Non fare mai doppio clic sul JAR di avvio rapido AEM, se si intende utilizzare AEM Forms.
+>Non fare mai doppio clic sul jar di avvio rapido AEM se si intende utilizzare AEM Forms.
 >
 >Inoltre, assicurati che non ci siano spazi nel percorso della cartella di installazione di AEM Forms.
 >
@@ -43,12 +35,12 @@ ht-degree: 4%
 >* Microsoft Visual C++ 2013 ridistribuibile (a partire dalla versione 6.5)
 
 
-Anche se si consiglia di seguire la [documentazione ufficiale](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) per l&#39;installazione di AEM Forms. Per installare e configurare AEM Forms nell’ambiente Windows, procedi come segue:
+Anche se si consiglia di seguire la [documentazione ufficiale](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) per l&#39;installazione di AEM Forms. Per installare e configurare AEM Forms nell’ambiente Windows, effettua le seguenti operazioni:
 
 * Assicurati di avere installato il JDK appropriato
    * AEM 6.2 è necessario: Oracle SE 8 JDK 1.8.x (64 bit)
 * 
-   * AEM 6.3 e AEM 6.4 sono necessari: Oracle SE 8 JDK 1.8.x (64 bit)
+   * AEM 6.3 e AEM 6.4 è necessario: Oracle SE 8 JDK 1.8.x (64 bit)
 * AEM 6.5 è necessario JDK 8 o JDK 11
 * [I ](https://helpx.adobe.com/experience-manager/6-3/sites/deploying/using/technical-requirements.html) requisiti JDK ufficiali sono elencati qui
 * Assicurati che JAVA_HOME sia impostato per puntare al JDK che hai installato.
@@ -61,7 +53,7 @@ Anche se si consiglia di seguire la [documentazione ufficiale](https://helpx.ado
 * Individua AEMQuickStart.Jar e spostalo nella cartella AEMForms
 * Copia il file license.properties nella cartella AEMForms
 * Crea un file batch denominato &quot;StartAemForms.bat&quot; con il seguente contenuto:
-   * java -d64 -Xmx2048M -jar AEM_6.3_Quickstart.jar -gui.Here AEM_6.3_Quickstart.jar è il nome del mio jar AEM quickstart.
+   * java -d64 -Xmx2048M -jar AEM_6.3_Quickstart.jar -gui.Here AEM_6.3_Quickstart.jar è il nome del mio jar di avvio rapido AEM.
    * È possibile rinominare il jar con qualsiasi nome, ma assicurarsi che il nome sia riportato nel file batch.Salvare il file batch nella cartella AEMForms.
 
 * Apri un nuovo prompt dei comandi e passa a c:\aemforms.
@@ -80,7 +72,7 @@ Anche se si consiglia di seguire la [documentazione ufficiale](https://helpx.ado
 * [Accesso a Package Share](http://localhost:4502/crx/packageshare/login.html)
 
    * Avrai bisogno di AdobeId per accedere alla condivisione del pacchetto
-   * Cerca il pacchetto AEM Forms Add on appropriato per la tua versione di AEM Forms e Operating System
+   * Cerca il pacchetto AEM Forms Add on appropriato per la tua versione di AEM Forms e del sistema operativo
    * Oppure [è possibile scaricare il pacchetto di aggiunta appropriato per i moduli](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
    * Dopo aver installato il pacchetto add on, segui i seguenti passaggi
 
@@ -97,4 +89,4 @@ Anche se si consiglia di seguire la [documentazione ufficiale](https://helpx.ado
    4. Salva le modifiche.
 
 Congratulazioni!!! Ora hai installato e configurato AEM Forms sul tuo sistema.
-A seconda delle esigenze è possibile configurare [Reader Extensions](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html) o [ PDFG](https://helpx.adobe.com/experience-manager/6-3/forms/using/install-configure-pdf-generator.html) sul server
+A seconda delle tue esigenze puoi configurare [Estensioni di Reader](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html) o [ PDFG](https://helpx.adobe.com/experience-manager/6-3/forms/using/install-configure-pdf-generator.html) sul server
