@@ -1,20 +1,15 @@
 ---
 title: Creazione di un modello di modulo adattivo
 description: Il modello definisce la struttura e il contenuto iniziale del modulo adattivo.
-feature: Adaptive Forms
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
+feature: Moduli adattivi
 thumbnail: 37324.jpg
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 6%
+source-wordcount: '134'
+ht-degree: 5%
 
 ---
 
@@ -27,7 +22,7 @@ Il video seguente illustra il processo di base per la creazione di un modello di
 
 >[!VIDEO](https://video.tv.adobe.com/v/37324/quality=9)
 
-Per ulteriori informazioni, consulta la [documentazione sul modello di modulo adattivo](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html)
+Per ulteriori informazioni, consulta la [documentazione sul modello di modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html)
 
 Se necessario, puoi scaricare il [modello di modulo adattivo](assets/peak-application-template.zip) e importarlo in AEM utilizzando il [gestore dei pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 
