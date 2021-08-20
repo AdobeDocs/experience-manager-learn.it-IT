@@ -1,22 +1,18 @@
 ---
 title: Memorizzare gli allegati del modulo
 description: Estrai gli allegati del modulo e archiviali in una nuova posizione nell’archivio CRX.
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Moduli adattivi
+type: Tutorial
 version: 6.4,6.5
 kt: 6537
 thumbnail: 6537.jpg
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 2%
+source-wordcount: '189'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +21,7 @@ ht-degree: 2%
 Quando aggiungi allegati a un modulo adattivo, gli allegati vengono memorizzati in una posizione temporanea nell’archivio CRX. Affinché il nostro caso d’uso funzioni, dobbiamo memorizzare gli allegati del modulo in una nuova posizione nell’archivio CRX.
 
 Il servizio OSGi viene creato per memorizzare gli allegati del modulo in una nuova posizione nell’archivio CRX. Viene creata una nuova mappa di file con la nuova posizione degli allegati nel CRX e viene restituita all&#39;applicazione chiamante.
-Di seguito è riportata la FileMap inviata al servlet. La chiave è il campo modulo adattivo e il valore è la posizione temporanea dell’allegato. Nel nostro servlet estraiamo l’allegato e lo memorizziamo in una nuova posizione nell’archivio AEM e aggiorniamo FileMap con la nuova posizione
+Di seguito è riportata la FileMap inviata al servlet. La chiave è il campo modulo adattivo e il valore è la posizione temporanea dell’allegato. Nel nostro servlet estrarremo l&#39;allegato e lo memorizzeremo in una nuova posizione nell&#39;archivio AEM e aggiorneremo il FileMap con la nuova posizione
 
 ```java
 {
