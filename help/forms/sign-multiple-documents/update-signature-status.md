@@ -1,22 +1,17 @@
 ---
 title: Aggiornare lo stato della firma del modulo nel database
 description: Aggiornare lo stato della firma del modulo firmato nel database utilizzando il flusso di lavoro AEM
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Moduli adattivi
 version: 6.4,6.5
 kt: 6888
 thumbnail: 6888.jpg
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 4%
+source-wordcount: '107'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +23,7 @@ Il flusso di lavoro UpdateSignatureStatus viene attivato quando l&#39;utente ha 
 ![flusso di lavoro principale](assets/update-signature.PNG)
 
 Aggiorna stato firma è un passaggio del processo personalizzato.
-Il motivo principale per l’implementazione del passaggio del processo personalizzato è l’estensione di un flusso di lavoro AEM. Di seguito è riportato il codice personalizzato utilizzato per aggiornare lo stato della firma.
+Il motivo principale per l&#39;implementazione del passaggio del processo personalizzato è l&#39;estensione di un flusso di lavoro AEM. Di seguito è riportato il codice personalizzato utilizzato per aggiornare lo stato della firma.
 Il codice in questo passaggio del processo personalizzato fa riferimento al servizio SignMultipleForms.
 
 
