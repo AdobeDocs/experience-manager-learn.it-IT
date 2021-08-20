@@ -1,26 +1,22 @@
 ---
 title: Memorizzazione e recupero dei dati dei moduli dal database MySQL
 description: Esercitazione in più parti per illustrare i passaggi necessari per memorizzare e recuperare i dati dei moduli
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Moduli adattivi
+type: Tutorial
 version: 6.3,6.4,6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '147'
 ht-degree: 2%
 
 ---
 
 # Creare una libreria client
 
-La libreria client AEM gestisce tutto il codice JavaScript lato client. Per questo articolo, ho creato un semplice JavaScript per recuperare i dati del modulo adattivo utilizzando l’API del bridge guida. Una volta recuperati i dati del modulo adattivo, la chiamata POST viene effettuata al servlet per inserire o aggiornare i dati del modulo adattivo nel database. La funzione getALLUrlParams restituisce i parametri nell&#39;URL. Se il parametro guid è presente nell&#39;URL, è necessario eseguire l&#39;operazione di aggiornamento, se non si tratta di un&#39;operazione di inserimento. Il resto della funzionalità viene gestito nel codice associato all&#39;evento click della classe savebutton.
+AEM libreria client gestisce tutto il codice JavaScript lato client. Per questo articolo, ho creato un semplice JavaScript per recuperare i dati del modulo adattivo utilizzando l’API del bridge guida. Una volta recuperati i dati del modulo adattivo, la chiamata di POST viene effettuata al servlet per inserire o aggiornare i dati del modulo adattivo nel database. La funzione getALLUrlParams restituisce i parametri nell&#39;URL. Se il parametro guid è presente nell&#39;URL, è necessario eseguire l&#39;operazione di aggiornamento, se non si tratta di un&#39;operazione di inserimento. Il resto della funzionalità viene gestito nel codice associato all&#39;evento click della classe savebutton.
 
 >[!NOTE]
 >
