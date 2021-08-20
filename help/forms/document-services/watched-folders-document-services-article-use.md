@@ -1,29 +1,20 @@
 ---
-title: Utilizzo delle cartelle visualizzate in AEM Forms
-seo-title: Utilizzo delle cartelle visualizzate in AEM Forms
+title: Utilizzo di cartelle controllate in AEM Forms
 description: Configurare e utilizzare le cartelle controllate in AEM Forms
-seo-description: Configurare e utilizzare le cartelle controllate in AEM Forms
-uuid: 32c4bda2-363d-4294-925e-405a176f7f8d
-feature: Output Service
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+feature: Servizio di output
 version: 6.4,6.5
-discoiquuid: a40e2381-0dc8-4784-9b80-15e27b244035
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
 
 
-# Utilizzo delle cartelle visualizzate in AEM Forms{#using-watched-folders-in-aem-forms}
+# Utilizzo di cartelle controllate in AEM Forms{#using-watched-folders-in-aem-forms}
 
 Un amministratore può configurare una cartella di rete, nota come Cartella sottoposta a controllo, in modo che quando un utente inserisce un file (ad esempio un file PDF) nella Cartella sottoposta a controllo, un flusso di lavoro, un servizio o un&#39;operazione di script preconfigurata venga l&#39;elaborazione del file aggiunto. Dopo che il servizio esegue l&#39;operazione specificata, salva il file dei risultati in una cartella di output specificata. Per ulteriori informazioni su flusso di lavoro, servizio e script.
 
@@ -40,7 +31,7 @@ Per configurare la cartella controllata sul sistema, segui i passaggi seguenti:
 * [Scarica ed estrae il contenuto del file zip](assets/outputservicewatchedfolderkt.zip). Questo file zip contiene il pacchetto per la creazione di cartelle controllate e file di esempio per testare il servizio di output utilizzando il meccanismo di cartelle controllate
    * Sistema Windows
 
-      * Importa outputservicewatchedfolder.zip in AEM utilizzando il gestore di pacchetti
+      * Importa il file outputservicewatchedfolder.zip in AEM utilizzando il gestore di pacchetti
       * Verrà creata una cartella controllata denominata outputservicewatchedfolder sull&#39;unità C.
    * Sistema non Windows
       * [Apri l&#39;impostazione di configurazione della cartella controllata](http://localhost:4502/crx/de/index.jsp#/etc/fd/watchfolder/config/outputservice)
