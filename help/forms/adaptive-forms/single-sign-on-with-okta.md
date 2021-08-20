@@ -2,15 +2,11 @@
 title: Configurazione di OKTA con AEM
 description: Comprendere varie impostazioni di configurazione per l’utilizzo del single sign-on con okta
 feature: Moduli adattivi
-topics: development, authentication, security
-audience: developer
-doc-type: tutorial
-activity: setup
 version: 6.5
 topic: Amministrazione
 role: Admin
 level: Experienced
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%
