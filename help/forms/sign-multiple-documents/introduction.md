@@ -1,21 +1,16 @@
 ---
 title: Introduzione
 description: Dimostrazione video del caso d’uso di più moduli di firma
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Moduli adattivi
 version: 6.4,6.5
 thumbnail: 330165.jpg
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 5%
+source-wordcount: '122'
+ht-degree: 4%
 
 ---
 
@@ -30,9 +25,9 @@ Il video seguente illustra il caso d’uso relativo alla firma di più moduli.
 
 Questo corso presuppone quanto segue:
 
-* Accesso al server AEM 6.4 o 6.5 con il pacchetto Forms Add on installato e configurato
+* Hai accesso al server AEM 6.4 o 6.5 con il pacchetto Forms Add on installato e configurato
 * AEM configurato con Adobe Sign
 * Accesso al server SMTP
-* Esperienza con AEM/AEM Forms
+* Qualche esperienza con AEM/AEM Forms
 
 Seguendo questa esercitazione e installando le risorse fornite, avrai a disposizione una soluzione funzionante per firmare più moduli.
