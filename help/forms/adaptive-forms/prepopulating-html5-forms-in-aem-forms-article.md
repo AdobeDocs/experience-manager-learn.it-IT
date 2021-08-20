@@ -1,33 +1,24 @@
 ---
-title: Precompilare i moduli HTML5 utilizzando l’attributo dati.
-seo-title: Precompilare i moduli HTML5 utilizzando l’attributo dati.
+title: Precompilare HTML5 Forms utilizzando l'attributo dati.
 description: Compilare moduli HTML5 recuperando i dati dall’origine back-end.
-seo-description: Compilare moduli HTML5 recuperando i dati dall’origine back-end.
-feature: Adaptive Forms
-topics: mobile-forms
-audience: developer
-doc-type: article
-activity: implement
+feature: Moduli adattivi
 version: 6.3,6.4,6.5.
-uuid: 889d2cd5-fcf2-4854-928b-0c2c0db9dbc2
-discoiquuid: 3aa645c9-941e-4b27-a538-cca13574b21c
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
 
 
-# Precompilare moduli HTML5 utilizzando l’attributo dati {#prepopulate-html-forms-using-data-attribute}
+# Precompilare Forms HTML5 utilizzando l’attributo dati {#prepopulate-html-forms-using-data-attribute}
 
-Visita la pagina [Esempi di AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0) per un collegamento a una demo in tempo reale di questa funzionalità.
+Visita la pagina [Esempi AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0) per un collegamento a una demo in tempo reale di questa funzionalità.
 
-I modelli XDP di cui è stato eseguito il rendering in formato HTML utilizzando AEM Forms sono denominati HTML5 o moduli mobili. Un caso d’uso comune consiste nel precompilare i moduli durante il rendering.
+I modelli XDP di cui è stato eseguito il rendering in formato HTML utilizzando AEM Forms sono denominati HTML5 o Forms mobile. Un caso d’uso comune consiste nel precompilare i moduli durante il rendering.
 
 Esistono 2 modi per unire i dati con il modello xdp quando viene renderizzato come HTML.
 
@@ -41,7 +32,7 @@ slingRequest.setAttribute(&quot;data&quot;, contenuto);
 
 In questo esempio, stiamo impostando l’attributo di dati con il contenuto. Il contenuto rappresenta i dati con cui si desidera precompilare il modulo. In genere si recupera il &quot;contenuto&quot; effettuando una chiamata REST a un servizio interno.
 
-Per ottenere questo caso d’uso è necessario creare un profilo personalizzato. I dettagli sulla creazione di un profilo personalizzato sono chiaramente documentati nella [documentazione di AEM Forms qui](https://helpx.adobe.com/aem-forms/6/html5-forms/custom-profile.html).
+Per ottenere questo caso d’uso è necessario creare un profilo personalizzato. I dettagli sulla creazione di un profilo personalizzato sono chiaramente documentati nella [documentazione AEM Forms qui](https://helpx.adobe.com/aem-forms/6/html5-forms/custom-profile.html).
 
 Una volta creato il profilo personalizzato, creerai un file JSP che recupererà i dati effettuando chiamate al sistema di back-end. Una volta recuperati i dati, utilizzerai slingRequest.setAttribute(&quot;data&quot;, content); precompilazione del modulo
 
@@ -52,12 +43,12 @@ Quando viene eseguito il rendering di XDP, puoi anche passare alcuni parametri a
 Il JSP che scrivi avrà accesso al parametro name tramite request.getParameter(&quot;name&quot;) . Puoi quindi passare il valore di questo parametro al processo di backend per recuperare i dati richiesti.
 Per far funzionare questa funzionalità sul sistema, segui i passaggi indicati di seguito:
 
-* [Scarica e importa le risorse in AEM utilizzando package ](assets/prepopulatemobileform.zip)
-managerIl pacchetto installerà quanto segue
+* [Scarica e importa le risorse in AEM utilizzando ](assets/prepopulatemobileform.zip)
+Gestione pacchettiIl pacchetto installerà quanto segue
 
    * CustomProfile
    * XDP di esempio
-   * Endpoint POST di esempio che restituirà i dati per compilare il modulo
+   * Endpoint POST di esempio per la restituzione dei dati necessari per la compilazione del modulo
 
 >[!NOTE]
 >
