@@ -1,21 +1,14 @@
 ---
 title: AEM Forms con Marketo (parte 4)
-seo-title: AEM Forms con Marketo (parte 4)
 description: Esercitazione per integrare AEM Forms con Marketo utilizzando AEM Forms Form Data Model.
-seo-description: Esercitazione per integrare AEM Forms con Marketo utilizzando AEM Forms Form Data Model.
-feature: Adaptive Forms, Form Data Model
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+feature: Forms adattivo, modello dati modulo
 version: 6.3,6.4,6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -24,7 +17,7 @@ ht-degree: 0%
 # Creazione di moduli adattivi tramite il modello dati del modulo
 
 Il passaggio successivo consiste nel creare un Modulo adattivo e basarlo sul modello dati del modulo creato nel passaggio precedente.
-L’utente immetterà l’ID lead e verrà richiamato il servizio Marketo all’uscita del tag per ottenere i lead per ID. I risultati dell’operazione del servizio vengono quindi mappati sui campi appropriati dei Moduli adattivi.
+L’utente immetterà l’ID lead e verrà richiamato all’uscita del servizio Marketo per ottenere i lead per ID. I risultati dell&#39;operazione del servizio vengono quindi mappati sui campi appropriati di Adaptive Forms.
 
 1. Creare un modulo adattivo e basarlo su &quot;Modello di modulo vuoto&quot;, associarlo al modello di dati del modulo creato nel passaggio precedente.
 1. Apri il modulo in modalità di modifica
