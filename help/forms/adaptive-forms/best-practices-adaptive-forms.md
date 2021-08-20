@@ -1,28 +1,21 @@
 ---
 title: Convenzioni di denominazione e best practice da seguire per la creazione di moduli adattivi
-seo-title: Convenzioni di denominazione e best practice da seguire per la creazione di moduli adattivi
 description: Convenzioni di denominazione e best practice da seguire per la creazione di moduli adattivi
-seo-description: Convenzioni di denominazione e best practice da seguire per la creazione di moduli adattivi
-feature: Adaptive Forms
-topics: best-practices
-audience: developer
-doc-type: article
-activity: setup
+feature: Moduli adattivi
 version: 6.3,6.4,6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '290'
 ht-degree: 2%
 
 ---
 
 # Best practice  
 
-I moduli di Adobe Experience Manager (AEM) consentono di trasformare transazioni complesse in esperienze digitali semplici e accattivanti. Il documento seguente descrive alcune best practice aggiuntive da seguire per lo sviluppo di moduli adattivi. Questo documento deve essere utilizzato in combinazione con [questo documento](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
+I moduli di Adobe Experience Manager (AEM) consentono di trasformare transazioni complesse in esperienze digitali semplici e accattivanti. Il seguente documento descrive alcune best practice aggiuntive da seguire per lo sviluppo di Adaptive Forms. Questo documento deve essere utilizzato in combinazione con [questo documento](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
 
 ## Convenzioni di denominazione
 
@@ -38,7 +31,7 @@ I moduli di Adobe Experience Manager (AEM) consentono di trasformare transazioni
    * I nomi sono sensibili all’uso di maiuscole e minuscole
    * Le parole riservate (come le parole chiave JavaScript) non possono essere utilizzate come nomi. Fai attenzione ad altre parole riservate specifiche AF come   come &quot;pannello&quot;, &quot;nome&quot;.
    * Non includere trattini &quot;-&quot; nei tuoi nomi
-* **Sviluppo di moduli**
+* **Sviluppo di Forms**
    * Quando si sviluppano moduli di grandi dimensioni, è necessario tenere in considerazione i frammenti di modulo. Caricamento lento dei frammenti di modulo per un caricamento più rapido   times
    * **DataModel**
       * Si consiglia di associare il modulo adattivo al modello dati appropriato
