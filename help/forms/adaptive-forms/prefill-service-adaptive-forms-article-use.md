@@ -1,32 +1,22 @@
 ---
-title: Servizio di precompilazione nei moduli adattivi
-seo-title: Servizio di precompilazione nei moduli adattivi
+title: Servizio di precompilazione in Forms adattivo
 description: Precompilare i moduli adattivi recuperando i dati dalle origini dati di backend.
-seo-description: Precompilare i moduli adattivi recuperando i dati dalle origini dati di backend.
-sub-product: forms
-feature: Adaptive Forms
-topics: integrations
-audience: developer
-doc-type: article
-activity: implement
+feature: Moduli adattivi
 version: 6.4,6.5
-uuid: 26a8cba3-7921-4cbb-a182-216064e98054
-discoiquuid: 936ea5e9-f5f0-496a-9188-1a8ffd235ee5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
 
 
-# Utilizzo del servizio Prefill nei moduli adattivi
+# Utilizzo del servizio Prefill in Adaptive Forms
 
-È possibile precompilare i campi di un modulo adattivo utilizzando i dati esistenti. Quando un utente apre un modulo, i valori relativi a tali campi vengono precompilati. Esistono diversi modi per precompilare i campi dei moduli adattivi. In questo articolo, cercheremo di precompilare il modulo adattivo utilizzando il servizio di precompilazione di AEM Forms.
+È possibile precompilare i campi di un modulo adattivo utilizzando i dati esistenti. Quando un utente apre un modulo, i valori relativi a tali campi vengono precompilati. Esistono diversi modi per precompilare i campi dei moduli adattivi. In questo articolo, esamineremo la precompilazione del modulo adattivo utilizzando il servizio di precompilazione AEM Forms.
 
 Per ulteriori informazioni sui vari metodi per precompilare i moduli adattivi, [segui questa documentazione](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
@@ -92,7 +82,7 @@ Per testare questa funzionalità sul server, esegui le seguenti operazioni
 
 * [Scaricare ed estrarre il contenuto del file zip sul computer](assets/prefillservice.zip)
 * Assicurati che le informazioni sul profilo dell&#39;utente [connesso](http://localhost:4502/libs/granite/security/content/useradmin) siano state compilate completamente. Questo è necessario per il funzionamento del campione. Nell&#39;esempio non è presente alcun controllo degli errori per rilevare le proprietà mancanti del profilo utente.
-* Distribuisci il bundle utilizzando la [console web AEM](http://localhost:4502/system/console/bundles)
+* Distribuisci il bundle utilizzando la [console Web AEM](http://localhost:4502/system/console/bundles)
 * Creare un modulo adattivo utilizzando XSD
 * Associa &quot;Servizio di pre-compilazione personalizzato del modulo Aem&quot; come servizio di precompilazione per il modulo adattivo
 * Trascina gli elementi dello schema sul modulo
