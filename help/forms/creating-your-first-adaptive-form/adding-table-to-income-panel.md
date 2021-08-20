@@ -1,25 +1,16 @@
 ---
 title: Aggiunta di componenti al pannello Reddito
-seo-title: Aggiunta di componenti al pannello Reddito
 description: Aggiungeremo una tabella al pannello Reddito. Configura le righe della tabella e utilizza l’editor di regole per calcolare il totale complessivo.
-seo-description: Aggiungeremo una tabella al pannello Reddito. Configura le righe della tabella e utilizza l’editor di regole per calcolare il totale complessivo.
-uuid: d5c98561-c559-4624-976a-7a1486da7e69
-feature: Adaptive Forms
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
+feature: Moduli adattivi
 version: 6.4,6.5
 thumbnail: 22198.jpg
 kt: 4211
-discoiquuid: fa483260-38ff-40d8-96a7-1de11d8b792b
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '186'
 ht-degree: 1%
 
 ---
@@ -35,7 +26,7 @@ Aggiungeremo una tabella al pannello Reddito. Configura le righe della tabella e
 
 
 
-## Rendere la tabella dei redditi dinamica {#make-the-income-table-dynamic}
+## Rendere dinamica la tabella dei redditi {#make-the-income-table-dynamic}
 
 **Assicurati di essere in modalità di modifica. Il pulsante di modifica si trova in alto a destra del browser.**
 
