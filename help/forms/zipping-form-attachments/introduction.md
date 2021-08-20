@@ -1,20 +1,16 @@
 ---
 title: Inviare allegati di moduli adattivi
 description: Inviare allegati ai moduli adattivi utilizzando il componente Invia e-mail
-feature: moduli adattivi
-topics: adaptive forms
-audience: developer
-doc-type: article
-activity: setup
+feature: Moduli adattivi
 version: 6.5
 topic: Sviluppo
 role: Developer
 level: Beginner
 kt: kt-8049
-source-git-commit: 540e11c0861eacc795122328b2359c7db6378aec
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '135'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
