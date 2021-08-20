@@ -1,23 +1,14 @@
 ---
 title: Utilizzo dei CAPTCHA con AEM Adaptive Forms
-seo-title: Utilizzo dei CAPTCHA con AEM Adaptive Forms
 description: Aggiunta e utilizzo di un CAPTCHA con AEM Adaptive Forms.
-seo-description: Aggiunta e utilizzo di un CAPTCHA con AEM Adaptive Forms.
-feature: Adaptive Forms,Workflow
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
+feature: Forms adattivo,Flusso di lavoro
 version: 6.4,6.5
-uuid: bd63e207-4f4d-4f34-9ac4-7572ed26f646
-discoiquuid: 5e184e44-e385-4df7-b7ed-085239f2a642
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
@@ -27,7 +18,7 @@ ht-degree: 0%
 
 Aggiunta e utilizzo di un CAPTCHA con AEM Adaptive Forms.
 
-Visita la pagina [Esempi di AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0) per un collegamento a una demo in tempo reale di questa funzionalità.
+Visita la pagina [Esempi AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) per un collegamento a una demo in tempo reale di questa funzionalità.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336/?quality=9&learn=on)
 
@@ -43,7 +34,7 @@ Visita la pagina [Esempi di AEM Forms](https://forms.enablementadobe.com/content
 >
 >Configura reCaptach sull&#39;istanza dell&#39;autore
 >
->apri la felix [console web](http://localhost:4502/system/console/bundles) sull&#39;istanza dell&#39;autore
+>apri la console Web Felix [a1/> sull&#39;istanza dell&#39;autore](http://localhost:4502/system/console/bundles)
 >
 >cerca il bundle com.adobe.granite.crypto.file
 >
