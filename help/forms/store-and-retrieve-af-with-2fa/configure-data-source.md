@@ -1,21 +1,17 @@
 ---
 title: Configura origine dati
 description: Crea origine dati puntando al database MySQL
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Moduli adattivi
+type: Tutorial
 version: 6.4,6.5
 kt: 6541
 thumbnail: 6541.jpg
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '294'
 ht-degree: 2%
 
 ---
@@ -23,8 +19,8 @@ ht-degree: 2%
 
 # Configura origine dati
 
-AEM consente l’integrazione con database esterno in diversi modi. Una delle pratiche più comuni e standard dell&#39;integrazione del database è l&#39;utilizzo delle proprietà di configurazione DataSource in pool di connessione Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
-Il primo passo è quello di scaricare e distribuire i [driver MySQL ](https://mvnrepository.com/artifact/mysql/mysql-connector-java) appropriati ad AEM.
+Esistono diversi modi con cui AEM abilitare l’integrazione con il database esterno. Una delle pratiche più comuni e standard dell&#39;integrazione del database è l&#39;utilizzo delle proprietà di configurazione DataSource in pool di connessione Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
+Il primo passaggio consiste nel scaricare e distribuire i [driver MySQL ](https://mvnrepository.com/artifact/mysql/mysql-connector-java) appropriati da AEM.
 Quindi, imposta le proprietà DataSource in pool di connessione Sling specifiche del database. La schermata seguente mostra le impostazioni utilizzate per questa esercitazione. Lo schema di database viene fornito come parte di questa esercitazione risorse.
 
 ![sorgente dati](assets/data-source.JPG)
