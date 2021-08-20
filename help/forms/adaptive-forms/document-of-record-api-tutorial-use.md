@@ -1,23 +1,14 @@
 ---
 title: Utilizzo dell’API per generare un documento di record con AEM Forms
-seo-title: Utilizzo dell’API per generare un documento di record con AEM Forms
 description: Genera documento di record (DOR) a livello di programmazione
-seo-description: Utilizzo dell’API per generare un documento di record con AEM Forms
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+feature: Moduli adattivi
 version: 6.4,6.5
-uuid: 94ac3b13-01b4-4198-af81-e5609c80324c
-discoiquuid: ba91d9df-dc61-47d8-8e0a-e3f66cae6a87
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '257'
 ht-degree: 1%
 
 ---
@@ -27,7 +18,7 @@ ht-degree: 1%
 
 Genera documento di record (DOR) a livello di programmazione
 
-Questo articolo illustra l&#39;utilizzo di `com.adobe.aemds.guide.addon.dor.DoRService API` per generare **Documento di record** a livello di programmazione. [Documento di ](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) registrazione: versione PDF dei dati acquisiti in modulo adattivo.
+Questo articolo illustra l&#39;utilizzo di `com.adobe.aemds.guide.addon.dor.DoRService API` per generare **Documento di record** a livello di programmazione. [Documento di ](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) registrazione: versione PDF dei dati acquisiti in modulo adattivo.
 
 1. Di seguito è riportato lo snippet di codice. La prima riga ottiene il servizio DOR.
 1. Imposta le opzioni DoRO.
