@@ -1,21 +1,16 @@
 ---
 title: Verificare la soluzione
 description: Testa la soluzione aggiungendo allegati al modulo e attiva il flusso di lavoro per inviare l’e-mail.
-sub-product: forms
-feature: Flusso di lavoro
-topics: adaptive forms
-audience: developer
-doc-type: article
-activity: develop
+feature: Moduli adattivi
 version: 6.5
 topic: Sviluppo
 role: Developer
 level: Beginner
 kt: kt-8049
-source-git-commit: 540e11c0861eacc795122328b2359c7db6378aec
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
