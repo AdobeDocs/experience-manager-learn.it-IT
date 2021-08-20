@@ -1,33 +1,24 @@
 ---
-title: Assegnazione di tag e archiviazione dei documenti DoR di AEM Forms in DAM
-seo-title: Assegnazione di tag e archiviazione dei documenti DoR di AEM Forms in DAM
-description: Questo articolo illustra il caso d’uso per l’archiviazione e l’assegnazione di tag al DO generato da AEM Forms in AEM DAM. L’assegnazione tag al documento viene eseguita in base ai dati del modulo inviati.
-seo-description: Questo articolo illustra il caso d’uso per l’archiviazione e l’assegnazione di tag al DO generato da AEM Forms in AEM DAM. L’assegnazione tag al documento viene eseguita in base ai dati del modulo inviati.
-uuid: b9ba13ed-52d5-4389-a7d5-bf85e58fea49
-feature: Adaptive Forms,Workflow
-topics: developing
-audience: implementer
-doc-type: article
-activity: develop
+title: Assegnazione tag e archiviazione di AEM Forms DoR in DAM
+description: Questo articolo illustra il caso d’uso per l’archiviazione e l’assegnazione di tag al DoR generato da AEM Forms in AEM DAM. L’assegnazione tag al documento viene eseguita in base ai dati del modulo inviati.
+feature: Moduli adattivi
 version: 6.4,6.5
-discoiquuid: 53961454-633b-4cd8-aef7-e64ab4e528e4
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
 
 
-# Assegnazione di tag e archiviazione dei documenti DoR di AEM Forms in DAM {#tagging-and-storing-aem-forms-dor-in-dam}
+# Assegnazione tag e archiviazione di AEM Forms DoR in DAM {#tagging-and-storing-aem-forms-dor-in-dam}
 
-Questo articolo illustra il caso d’uso per l’archiviazione e l’assegnazione di tag al DO generato da AEM Forms in AEM DAM. L’assegnazione tag al documento viene eseguita in base ai dati del modulo inviati.
+Questo articolo illustra il caso d’uso per l’archiviazione e l’assegnazione di tag al DoR generato da AEM Forms in AEM DAM. L’assegnazione tag al documento viene eseguita in base ai dati del modulo inviati.
 
-Una richiesta comune dei clienti è quella di memorizzare e assegnare tag al documento di record (DoR) generato da AEM Forms in AEM DAM. L’assegnazione tag al documento deve essere basata sui dati inviati da Moduli adattivi. Ad esempio, se lo stato di occupazione nei dati inviati è &quot;Ritirato&quot;, vogliamo assegnare al documento il tag &quot;Ritirato&quot; e memorizzare il documento in DAM.
+Una richiesta comune dei clienti è quella di memorizzare e assegnare tag al documento di record (DoR) generato da AEM Forms in AEM DAM. L’assegnazione tag del documento deve essere basata sui dati inviati da Adaptive Forms. Ad esempio, se lo stato di occupazione nei dati inviati è &quot;Ritirato&quot;, vogliamo assegnare al documento il tag &quot;Ritirato&quot; e memorizzare il documento in DAM.
 
 Il caso d’uso è il seguente:
 
@@ -53,11 +44,11 @@ Per far funzionare questo esempio sul sistema, segui i passaggi elencati di segu
 
 * [Scarica il modulo adattivo di esempio](assets/tag-and-store-in-dam-assets.zip)
 
-* [Vai a Moduli e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Vai a Forms e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
 * Fai clic su Crea | Caricamento del file e caricamento del file sampleadaptiveform.zip
 
-* [Importa l&#39;articolo tramite ](assets/tag-and-store-in-dam-assets.zip) Gestione pacchetti AEM
+* [Importa l&#39;articolo ](assets/tag-and-store-in-dam-assets.zip) tramite AEM gestione pacchetti
 * Apri il modulo di esempio [in modalità anteprima](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled). Compila la sezione Persone e invia il modulo.
 * [Passa alla cartella Picco in DAM](http://localhost:4502/assets.html/content/dam/Peak). Dovresti visualizzare DoR nella cartella Picco. Controllare le proprietà del documento. Deve essere contrassegnato in modo appropriato.
 Congratulazioni!! Installazione dell&#39;esempio sul sistema completata
