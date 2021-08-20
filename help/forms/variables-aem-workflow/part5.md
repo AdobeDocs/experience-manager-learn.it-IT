@@ -1,29 +1,21 @@
 ---
 title: Variabili nel flusso di lavoro AEM[Parte5]
-seo-title: Variabili nel flusso di lavoro AEM[Parte5]
-description: Utilizzo di variabili di tipo xml,json,arraylist,document nel flusso di lavoro aem
-seo-description: Utilizzo di variabili di tipo xml,json,arraylist,document nel flusso di lavoro aem
-feature: Workflow
-topics: development
-audience: developer
-doc-type: technical video
-activity: understand
+description: Utilizzo di variabili di tipo XML, JSON, ArrayList, Document in un flusso di lavoro AEM
 version: 6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 2%
+source-wordcount: '92'
+ht-degree: 1%
 
 ---
 
 
 # Editor di regole nel flusso di lavoro AEM
 
-Il componente O-Split viene utilizzato per eseguire il routing nel flusso di lavoro AEM. Prima della versione di AEM 6.5, era necessario scrivere un codice ECMA o personalizzato per abilitare il routing condizionale. In AEM 6.5 ora possiamo utilizzare l’editor di regole per creare regole di business che determinano il percorso da eseguire.
+Il componente O-Split viene utilizzato per eseguire il routing in AEM flusso di lavoro. Prima di AEM versione 6.5, era necessario scrivere un codice ECMA o personalizzato per abilitare il routing condizionale. Nella AEM 6.5 ora è possibile utilizzare l&#39;editor di regole per creare regole di business che determinano il percorso da eseguire.
 
 Il video seguente dimostrerà la capacità di utilizzare l’editor di regole per eseguire l’elaborazione condizionale nel flusso di lavoro AEM
 
