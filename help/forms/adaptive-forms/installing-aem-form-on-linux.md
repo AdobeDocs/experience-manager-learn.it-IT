@@ -2,16 +2,13 @@
 title: Installazione di AEM Forms su Linux
 description: Scopri come installare librerie a 32 bit per AEM Forms per lavorare sull’installazione Linux.
 feature: Moduli adattivi
-audience: developer
-doc-type: article
-activity: setup
+type: Tutorial
 version: 6.4, 6.5
-topic: sviluppo
+topic: Sviluppo
 role: Developer
 level: Beginner
 kt: 7593
-translation-type: tm+mt
-source-git-commit: 9583006352ca6a20a763c9d5ec7ba15c3791e897
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 0%
@@ -89,7 +86,7 @@ yum rimuovere glibc32-2.28-42.1.el8.x86_64
 Detto questo, si desidera che le versioni x86_64 e i686 siano esattamente uguali, come ad esempio da questo output al comando:
 glibc info yum
 
-Ultimo controllo di scadenza metadati: 0:41:33 fa su Sab 18 gen 2020 11:37:08 AM EST.
+Ultimo controllo di scadenza metadati: 0:41:33 fa il 18 gen 2020 11:37:08 AM EST.
 Pacchetti installati
 Nome : glibc
 Versione : 2,28
