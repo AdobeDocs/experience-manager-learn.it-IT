@@ -1,21 +1,14 @@
 ---
 title: Sviluppo con output e servizi Forms in AEM Forms
-seo-title: Sviluppo con output e servizi Forms in AEM Forms
-description: Utilizzo dell’API del servizio Output e Forms in AEM Forms
-seo-description: Utilizzo dell’API del servizio Output e Forms in AEM Forms
-feature: Forms Service
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+description: Utilizzo dell’API di output e del servizio Forms in AEM Forms
+feature: Servizio Forms
 version: 6.4,6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '332'
 ht-degree: 1%
 
 ---
@@ -29,7 +22,7 @@ In questo articolo daremo un&#39;occhiata al seguente servizio
 
 * FormsService - Si tratta di un servizio molto versatile che consente di esportare/importare dati da e in file PDF e di generare anche file pdf interattivi unendo i dati xml nel modello xdp
 
-Javadoc ufficiale per l&#39;API di AEM Forms è elencato [qui](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
+Il javadoc ufficiale per l&#39;API AEM Forms è elencato [qui](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 
 Il frammento di codice seguente esegue il rendering di un file pdf interattivo utilizzando l&#39;operazione renderPDFForm di FormsService. schengen.xdp è un modello che viene utilizzato per unire i dati xml.
 
@@ -62,7 +55,7 @@ Linea 11: Restituisce il pdf interattivo generato all&#39;applicazione chiamante
 
 
 1. [Accedi a configMgr](http://localhost:4502/system/console/configMgr)
-1. Ricerca filtro CSRF di Adobe Granite
+1. Ricerca filtro CSRF Granite Adobe
 1. Aggiungi il seguente percorso nelle sezioni escluse e salva
 1. /bin/generateinteractivepdf
 1. [Aprire il modulo mobile](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
