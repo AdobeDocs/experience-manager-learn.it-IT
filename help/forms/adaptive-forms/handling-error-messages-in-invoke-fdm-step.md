@@ -1,21 +1,14 @@
 ---
 title: Acquisizione di messaggi di errore nel servizio Form Data Model come passaggio nel flusso di lavoro
-seo-title: Acquisizione di messaggi di errore nel servizio Form Data Model come passaggio nel flusso di lavoro
-description: A partire da AEM Forms 6.5.1, ora abbiamo la possibilità di acquisire messaggi di errore generati utilizzando l’invocazione di Form Data Model Service come passaggio nel flusso di lavoro AEM. Flusso di lavoro.
-seo-description: A partire da AEM Forms 6.5.1, ora abbiamo la possibilità di acquisire messaggi di errore generati utilizzando l’invocazione di Form Data Model Service come passaggio nel flusso di lavoro AEM. Flusso di lavoro.
-feature: Workflow
-topics: integrations
-audience: developer
-doc-type: article
-activity: setup
+description: A partire da AEM Forms 6.5.1, ora è possibile acquisire i messaggi di errore generati utilizzando il servizio di chiamata a Form Data Model come passaggio in AEM flusso di lavoro. Flusso di lavoro.
+feature: Flusso di lavoro
 version: 6.5.1,6.5.2
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '248'
 ht-degree: 1%
 
 ---
