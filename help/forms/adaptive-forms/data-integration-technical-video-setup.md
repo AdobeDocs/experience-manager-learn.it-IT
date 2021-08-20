@@ -1,24 +1,15 @@
 ---
 title: Configurare l’integrazione dei dati con AEM Forms
-seo-title: Configurare l’integrazione dei dati con AEM Forms
 description: Configurazione della connessione dati a un’origine dati JDBC
-seo-description: Configurazione della connessione dati a un’origine dati JDBC
-feature: Adaptive Forms,Workflow
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
+feature: Forms adattivo,Flusso di lavoro
 version: 6.4,6.5
-uuid: 267de794-4462-4421-adee-d40a469fabb3
-discoiquuid: 41864584-cb99-4c54-abda-8eb83829cb90
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 2%
+source-wordcount: '78'
+ht-degree: 1%
 
 ---
 
@@ -31,11 +22,11 @@ Configurazione della connessione dati a un’origine dati JDBC
 
 >[!NOTE]
 >
->I driver JDBC MySQL devono essere installati tramite i bundle OSGi sull&#39;istanza AEM.
+>I driver JDBC MySQL devono essere installati tramite i bundle OSGi nell&#39;istanza AEM.
 
 ## Materiali di supporto {#supporting-materials}
 
 * [Download del bundle OSGi di MySQL JDBC](https://dev.mysql.com/downloads/connector/j/)
 
-   * Scarica, decomprimi e installa il file JAR tramite la [Console web AEM](http://localhost:4502/system/console/bundles)
+   * Scarica, decomprimi e installa il file JAR tramite la [AEM Web Console](http://localhost:4502/system/console/bundles)
 
