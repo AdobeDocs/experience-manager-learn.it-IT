@@ -1,35 +1,26 @@
 ---
-title: Utilizzo delle API di geolocalizzazione nei moduli adattivi
-seo-title: Utilizzo delle API di geolocalizzazione nei moduli adattivi
-description: Compilare campi indirizzo nel modulo utilizzando l’api di geolocalizzazione
-seo-description: Compilare campi indirizzo nel modulo utilizzando l’api di geolocalizzazione
-uuid: 5a461659-6873-4ea1-9f37-8296e5a9d895
-feature: Adaptive Forms
-topics: integrations
-audience: developer
-doc-type: article
-activity: develop
+title: Utilizzo delle API di geolocalizzazione in Forms adattivo
+description: Compilare campi indirizzo nel modulo utilizzando l’API di geolocalizzazione
+feature: Moduli adattivi
 version: 6.3,6.4,6.5
-discoiquuid: 3400251b-aee0-4d69-994b-e1643fabc868
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '417'
 ht-degree: 1%
 
 ---
 
 
-# Utilizzo delle API di geolocalizzazione nei moduli adattivi{#using-geolocation-api-s-in-adaptive-forms}
+# Utilizzo delle API di geolocalizzazione in Forms adattivo{#using-geolocation-api-s-in-adaptive-forms}
 
-Visita la pagina [Esempi di AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0) per un collegamento a una demo in tempo reale di questa funzionalità.
+Visita la pagina [Esempi AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) per un collegamento a una demo in tempo reale di questa funzionalità.
 
 In questo articolo, analizzeremo l’utilizzo dell’API di geolocalizzazione di Google per popolare i campi di un modulo adattivo. Questo caso d’uso viene comunemente utilizzato quando si desidera compilare i campi dell’indirizzo correnti in un modulo.
 
-I passaggi seguenti sono stati seguiti per utilizzare l’API di geolocalizzazione in Moduli adattivi.
+I passaggi seguenti sono stati seguiti per utilizzare l’API di geolocalizzazione in Forms adattivo.
 
 1. [Ottieni API ](https://developers.google.com/maps/documentation/javascript/get-api-key) Keyda Google per utilizzare la piattaforma Google Maps. È possibile ottenere una chiave di prova valida per 1 anno.
 
@@ -96,7 +87,7 @@ Il JSON restituito dall’API viene quindi analizzato per impostare i campi Modu
 >
 >A scopo di test, puoi utilizzare il protocollo HTTP con localhost nell’URL.
 >
->Per il server di produzione, è necessario abilitare SSL per il server AEM per ottenere questa funzionalità.
+>Per il server di produzione, è necessario abilitare SSL per il server di AEM per ottenere questa funzionalità.
 >
 >Il campione associato a questo articolo è stato testato con l’indirizzo US. Se desideri utilizzare questa funzionalità in altre posizioni geografiche, potrebbe essere necessario modificare l’analisi JSON.
 
@@ -106,7 +97,7 @@ Per ottenere questa funzionalità sul server, segui i seguenti passaggi
 
 >!![NOTE] Questa funzionalità è stata testata su AEM Forms 6.3 e versioni successive
 * [Ottieni la chiave API di Google](https://developers.google.com/maps/documentation/javascript/get-api-key).
-* [Importa le risorse correlate a questo articolo in AEM.](assets/geolocationapi.zip)
+* [Importa in AEM le risorse correlate a questo articolo.](assets/geolocationapi.zip)
 * [Apri il frammento Modulo adattivo in modalità di modifica.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
 * Apri l’editor di regole per il componente Scelta immagine .
 * Sostituisci &lt;your_api_key> con la chiave API di Google.
