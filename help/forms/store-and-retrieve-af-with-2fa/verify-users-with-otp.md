@@ -1,21 +1,17 @@
 ---
 title: Verificare gli utenti con OTP
 description: Verifica il numero di cellulare associato al numero di applicazione utilizzando OTP.
-feature: Adaptive Forms
-topics: adaptive forms
-audience: developer
-doc-type: article
-activity: use
+feature: Moduli adattivi
+type: Tutorial
 version: 6.4,6.5
 kt: 6594
 thumbnail: 6594.jpg
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '424'
 ht-degree: 1%
 
 ---
@@ -28,7 +24,7 @@ L’autenticazione a due fattori SMS (Dual Factor Authentication) è una procedu
 
 Esistono diverse organizzazioni che forniscono questo servizio e, finché dispongono di API REST ben documentate, è possibile integrare facilmente AEM Forms utilizzando le funzionalità di integrazione dei dati di AEM Forms. Ai fini di questa esercitazione, ho utilizzato [Nexmo](https://developer.nexmo.com/verify/overview) per dimostrare il caso d’uso SMS 2FA.
 
-Sono stati seguiti i passaggi seguenti per implementare SMS 2FA con AEM Forms utilizzando il servizio Verifica di Nexmo.
+Sono stati seguiti i seguenti passaggi per implementare SMS 2FA con AEM Forms utilizzando il servizio Nexmo Verify .
 
 ## Creare un account sviluppatore
 
@@ -38,7 +34,7 @@ Crea un account sviluppatore con [Nexmo](https://dashboard.nexmo.com/sign-in). P
 
 La specifica OpenAPI (precedentemente specifica Swagger) è un formato di descrizione API per le API REST. Un file OpenAPI ti consente di descrivere l’intera API, tra cui:
 
-* Endpoint disponibili (/users) e operazioni su ciascun endpoint (GET /users, POST /users)
+* Endpoint disponibili (/users) e operazioni su ciascun endpoint (GET/users, POST/users)
 * Parametri operativi Input ed output per ciascuna operazione
 Metodi di autenticazione
 * Informazioni di contatto, licenza, termini di utilizzo e altre informazioni.
@@ -53,11 +49,11 @@ Utilizza l’ [editor di swagger](https://editor.swagger.io/) per creare il file
 
 ## Crea origine dati
 
-Per integrare AEM/AEM Forms con applicazioni di terze parti, è necessario [sorgente dati basata su REST utilizzando il file swagger](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) nella configurazione dei servizi cloud. L&#39;origine dati completata viene fornita come parte di questo corso assets.
+Per integrare AEM/AEM Forms con applicazioni di terze parti, è necessario [origine dati basata su REST utilizzando il file swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) nella configurazione dei servizi cloud. L&#39;origine dati completata viene fornita come parte di questo corso assets.
 
 ## Crea modello dati modulo
 
-L’integrazione dei dati di AEM Forms fornisce un’interfaccia utente intuitiva per creare e utilizzare [modelli di dati modulo](https://docs.adobe.com/content/help/en/experience-manager-65/forms/form-data-model/create-form-data-models.html). Un modello dati modulo si basa su origini dati per lo scambio di dati.
+L&#39;integrazione dei dati di AEM Forms fornisce un&#39;interfaccia utente intuitiva per creare e utilizzare [modelli di dati dei moduli](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Un modello dati modulo si basa su origini dati per lo scambio di dati.
 Il modello dati del modulo completato può essere [scaricato da qui](assets/sms-2fa-fdm.zip)
 
 ![fdm](assets/2FA-fdm.PNG)
