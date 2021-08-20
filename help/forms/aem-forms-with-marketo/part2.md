@@ -1,21 +1,14 @@
 ---
 title: AEM Forms con Marketo (parte 2)
-seo-title: AEM Forms con Marketo (parte 2)
 description: Esercitazione per integrare AEM Forms con Marketo utilizzando AEM Forms Form Data Model.
-seo-description: Esercitazione per integrare AEM Forms con Marketo utilizzando AEM Forms Form Data Model.
-feature: Adaptive Forms, Form Data Model
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+feature: Forms adattivo, modello dati modulo
 version: 6.3,6.4,6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -23,7 +16,7 @@ ht-degree: 0%
 
 # Servizio di autenticazione Marketo
 
-Le API REST di Marketo sono autenticate con OAuth 2.0 a 2 zampe. È necessario creare un’autenticazione personalizzata da autenticare su Marketo. Questa autenticazione personalizzata viene generalmente scritta all&#39;interno di un bundle OSGI. Il codice seguente mostra l’autenticatore personalizzato utilizzato come parte di questa esercitazione.
+Le API REST di Marketo sono autenticate con OAuth 2.0 a 2 zampe. È necessario creare un’autenticazione personalizzata per l’autenticazione su Marketo. Questa autenticazione personalizzata viene generalmente scritta all&#39;interno di un bundle OSGI. Il codice seguente mostra l’autenticatore personalizzato utilizzato come parte di questa esercitazione.
 
 ## Servizio di autenticazione personalizzato
 
@@ -74,7 +67,7 @@ public interface MarketoService {
 }
 ```
 
-Il codice seguente è del servizio che restituisce l’access_token da utilizzare per effettuare le chiamate API REST. Il codice in questo servizio accede ai parametri di configurazione necessari per effettuare la chiamata GET. Come puoi vedere, passiamo il client_id,client_secret nell’URL GET per generare il access_token. Questo access_token viene quindi restituito all&#39;applicazione chiamante.
+Il codice seguente è del servizio che restituisce l’access_token da utilizzare per effettuare le chiamate API REST. Il codice in questo servizio accede ai parametri di configurazione necessari per effettuare la chiamata GET. Come puoi vedere, passiamo il client_id,client_secret nell’URL del GET per generare il access_token. Questo access_token viene quindi restituito all&#39;applicazione chiamante.
 
 ```java
 package com.marketoandforms.core.impl;
@@ -205,6 +198,6 @@ public class MarketoConfigurationService {
 }
 ```
 
-1. Crea e distribuisci il bundle sul tuo server AEM.
+1. Crea e distribuisci il bundle sul server AEM.
 1. [Posiziona il browser in ](http://localhost:4502/system/console/configMgr) configMgrand search per &quot;Marketo Credentials Service Configuration&quot;
 1. Specifica le proprietà appropriate specifiche dell’istanza Marketo
