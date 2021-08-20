@@ -1,18 +1,16 @@
 ---
 title: Comprendere i diversi tipi di PDF forms e documenti
 description: PDF è in realtà una famiglia di formati di file, e questo articolo descrive i tipi di PDF importanti e rilevanti per gli sviluppatori di moduli.
-solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
-level: Beginner,Intermediate
-version: 6.3,6.4,6.5
-feature: Document Services
+level: Beginner, Intermediate
+version: 6.3,6.4, 6.5
+feature: PDF Generator
 kt: 7071
-topic: Development
-translation-type: tm+mt
-source-git-commit: 1b4512fdb047bec15d72a8278fd0ce5dfafa309f
+topic: Sviluppo
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1696'
 ht-degree: 0%
 
 ---
@@ -143,7 +141,7 @@ Due file di esempio sono stati creati dallo stesso file di Microsoft Word. Uno �
 * simpleWordFile.pdf
 * simpleWordFilePDFA.pdf
 
-Anche se i documenti hanno lo stesso aspetto, il file PDF/A viene aperto con una barra blu nella parte superiore, che indica che il documento è visualizzato in modalità PDF/A. Questa barra blu è la barra dei messaggi del documento di Acrobat, visualizzata all’apertura di alcuni tipi di file PDF.
+Anche se i documenti hanno lo stesso aspetto, il file PDF/A viene aperto con una barra blu nella parte superiore, che indica che il documento viene visualizzato in modalità PDF/A. Questa barra blu è la barra dei messaggi del documento di Acrobat, visualizzata all’apertura di alcuni tipi di file PDF.
 
 ![Pdf-img](assets/pdfa-message.png)
 
