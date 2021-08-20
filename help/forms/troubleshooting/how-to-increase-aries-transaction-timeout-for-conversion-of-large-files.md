@@ -2,14 +2,13 @@
 title: Come aumentare "aries.transaction.timeout" per risolvere i problemi relativi alla conversione di file di grandi dimensioni
 description: Passaggi per aumentare "aries.transaction.timeout" per la conversione di file di grandi dimensioni
 type: Troubleshooting
-product: forms
 role: Admin
 level: Intermediate
 version: 6.5
-feature: Servizio di output , servizio Forms
+feature: Servizio di output,Servizio Forms
 topic: 'Amministrazione '
 index: y
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 1%
