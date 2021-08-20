@@ -1,28 +1,24 @@
 ---
 title: Creare librerie client
 description: Crea clientlibrary per gestire l'evento click del pulsante "Save and Exit"
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Moduli adattivi
+type: Tutorial
 version: 6.4,6.5
 kt: 6597
 thumbnail: 6597.pg
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 8%
+source-wordcount: '142'
+ht-degree: 2%
 
 ---
 
 # Creare una libreria client
 
-Crea [client lib](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/introduction/clientlibs.html) che includerà il codice per richiamare il metodo `doAjaxSubmitWithFileAttachment` dell’ API `guideBridge` sull’evento clic del pulsante identificato dalla classe CSS **savebutton**.  Trasmettiamo i dati del modulo adattivo `fileMap` e il `mobileNumber` all’endpoint in ascolto su `**/bin/storeafdatawithattachments`
+Crea [client lib](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) che includerà il codice per richiamare il metodo `doAjaxSubmitWithFileAttachment` dell’ API `guideBridge` sull’evento clic del pulsante identificato dalla classe CSS **savebutton**.  Trasmettiamo i dati del modulo adattivo `fileMap` e il `mobileNumber` all’endpoint in ascolto su `**/bin/storeafdatawithattachments`
 
 Una volta salvati i dati del modulo, viene generato un ID applicazione univoco che viene presentato all’utente in una finestra di dialogo. Quando si chiude la finestra di dialogo, l’utente viene portato al modulo che consente loro di recuperare il modulo adattivo salvato utilizzando l’ID applicazione univoco.
 
