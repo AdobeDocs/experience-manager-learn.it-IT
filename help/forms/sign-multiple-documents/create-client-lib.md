@@ -1,28 +1,23 @@
 ---
 title: Crea libreria client
 description: Codice libreria client per recuperare il modulo successivo da firmare
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Moduli adattivi
 version: 6.4,6.5
 kt: 6907
 thumbnail: 6907.jpg
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 5%
+source-wordcount: '84'
+ht-degree: 4%
 
 ---
 
 # Creare una libreria client
 
-Crea una libreria client personalizzata, clientlib per farla breve, per estrarre i parametri url che passano tali parametri nella chiamata GET. La chiamata GET viene effettuata su un servlet montato su /bin/getnextformtosign che restituisce l’url del modulo successivo da firmare nel pacchetto.
+Crea una libreria client personalizzata, clientlib per farla breve, per estrarre i parametri url che passano tali parametri nella chiamata di GET. La chiamata GET viene effettuata a un servlet montato su /bin/getnextformtosign che restituisce l’url del modulo successivo da firmare nel pacchetto.
 
 Di seguito è riportato il codice utilizzato nella funzione javascript clientlib
 
