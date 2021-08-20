@@ -1,21 +1,13 @@
 ---
 title: Variabili nel flusso di lavoro AEM[Parte4]
-seo-title: Variabili nel flusso di lavoro AEM[Parte4]
-description: Utilizzo di variabili di tipo xml,json,arraylist,document nel flusso di lavoro aem
-seo-description: Utilizzo di variabili di tipo xml,json,arraylist,document nel flusso di lavoro aem
-feature: Workflow
-topics: development
-audience: developer
-doc-type: tutorial
-activity: understand
+description: Utilizzo di variabili di tipo XML, JSON, ArrayList, Document in un flusso di lavoro AEM
 version: 6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -25,7 +17,7 @@ ht-degree: 0%
 
 Le variabili di tipo ArrayList sono state introdotte in AEM Forms 6.5. Un caso d&#39;uso comune per l&#39;utilizzo della variabile ArrayList è quello di definire percorsi personalizzati da utilizzare nell&#39;oggetto AssignTask.
 
-Per utilizzare la variabile ArrayList in un flusso di lavoro AEM, è necessario creare un modulo adattivo che generi elementi ripetuti nei dati inviati. Una pratica comune consiste nel definire uno schema contenente un elemento array. Ai fini di questo articolo, ho creato un semplice schema JSON contenente elementi array. Il caso d&#39;uso è quello di un dipendente che compila una nota spese. Nella nota spese, acquisiamo il nome del responsabile del mittente e il nome del manager del responsabile. I nomi del manager vengono memorizzati in un array denominato managerchain. La schermata seguente mostra il modulo della nota spese e i dati dell’invio di Moduli adattivi.
+Per utilizzare la variabile ArrayList in un flusso di lavoro AEM, è necessario creare un modulo adattivo che generi elementi ripetuti nei dati inviati. Una pratica comune consiste nel definire uno schema contenente un elemento array. Ai fini di questo articolo, ho creato un semplice schema JSON contenente elementi array. Il caso d&#39;uso è quello di un dipendente che compila una nota spese. Nella nota spese, acquisiamo il nome del responsabile del mittente e il nome del manager del responsabile. I nomi del manager vengono memorizzati in un array denominato managerchain. La schermata seguente mostra il modulo della nota spese e i dati dell&#39;invio di Adattivo Forms.
 
 ![rapporto costi](assets/expensereport.jpg)
 
