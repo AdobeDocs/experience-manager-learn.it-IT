@@ -1,23 +1,14 @@
 ---
 title: Utilizzo dell’integrazione dei dati del profilo utente con AEM Forms
-seo-title: Utilizzo dell’integrazione dei dati del profilo utente con AEM Forms
-description: Integrazione delle informazioni sul profilo utente di AEM con i moduli adattivi
-seo-description: Integrazione delle informazioni sul profilo utente di AEM con i moduli adattivi
-uuid: c8cfe575-8732-4d8b-99de-fb09e7c2497d
-feature: Adaptive Forms
-topics: integrations
-audience: developer
-doc-type: feature video
-activity: setup
+description: Integrazione AEM informazioni sul profilo utente con Adaptive Forms
+feature: Moduli adattivi
 version: 6.3,6.4,6.5
-discoiquuid: ca01dfce-abab-4bc1-9c5e-3bafdbed4836
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '100'
 ht-degree: 3%
 
 ---
@@ -33,7 +24,7 @@ Database relazionali - MySQL, Microsoft SQL Server, IBM DB2 e Oracle RDBMS
 1. Servizi web RESTful
 1. Servizi web basati su SOAP
 1. Servizi OData
-Questo articolo evidenzierà l’integrazione delle informazioni sul profilo utente AEM con Moduli adattivi.
+Questo articolo evidenzierà l&#39;integrazione AEM informazioni sul profilo utente con Adaptive Forms.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17432/?quality=9&learn=on)
 
