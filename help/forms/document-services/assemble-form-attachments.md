@@ -1,21 +1,16 @@
 ---
 title: Assemblare gli allegati del modulo
 description: Assemblare gli allegati del modulo nell’ordine specificato
-feature: Assembler
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+feature: Assemblatore
 version: 6.4,6.5
 kt: 6406
 thumbnail: kt-6406.jpg
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -138,7 +133,7 @@ Di seguito è riportata la struttura della cartella payload dopo che gli allegat
 ### Per far funzionare questa funzionalità sul server AEM
 
 * Scarica il [Assembla Form Attachments Form](assets/assemble-form-attachments-af.zip) nel sistema locale.
-* Importa il modulo dalla pagina[Moduli e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Importa il modulo dalla pagina[Forms And Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 * Scarica [workflow](assets/assemble-form-attachments.zip) e importalo in AEM utilizzando il gestore di pacchetti.
 * Scarica il [bundle personalizzato](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
 * Distribuisci e avvia il bundle utilizzando la [console web](http://localhost:4502/system/console/bundles)
@@ -148,5 +143,5 @@ Di seguito è riportata la struttura della cartella payload dopo che gli allegat
 * Controlla la cartella [payload del flusso di lavoro in crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) per il pdf assemblato
 
 >[!NOTE]
-> Se hai abilitato il logger per il bundle personalizzato, il DDX e il file assemblato vengono scritti nella cartella di installazione di AEM.
+> Se hai abilitato logger per il bundle personalizzato, il DDX e il file assemblato vengono scritti nella cartella dell&#39;installazione AEM.
 
