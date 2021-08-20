@@ -1,38 +1,30 @@
 ---
-title: Documento di certificazione in AEM Forms
-seo-title: Documento di certificazione in AEM Forms
+title: Certificazione del documento in AEM Forms
 description: Utilizzo del servizio DocAssurance per la certificazione di documenti PDF in AEM Forms
-seo-description: Utilizzo del servizio DocAssurance per la certificazione di documenti PDF in AEM Forms
-uuid: ecb1f9b6-bbb3-43a3-a0e0-4c04411acc9f
 feature: Document Security
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 version: 6.4,6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
 
-# Documento di certificazione in AEM Forms
+# Certificazione del documento in AEM Forms
 
 Un documento certificato fornisce ai destinatari di documenti PDF e moduli ulteriori garanzie di autenticità e integrità.
 
-Per certificare un documento, è possibile utilizzare Acrobat DC sul desktop o AEM Forms Document Services come parte di un processo automatizzato su un server.
+Per certificare un documento, puoi utilizzare Acrobat DC sul desktop o AEM Forms Document Services come parte di un processo automatizzato su un server.
 
-Questo articolo fornisce un esempio di bundle OSGI per certificare documenti pdf utilizzando AEM Forms Document Services.Il codice utilizzato nell&#39;esempio è [disponibile qui](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
+Questo articolo fornisce un esempio di bundle OSGI per certificare documenti pdf utilizzando AEM Forms Document Services.Il codice utilizzato nel campione è [disponibile qui](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
 
 Per certificare i documenti utilizzando AEM Forms, è necessario seguire i seguenti passaggi
 
-## Aggiunta del certificato all&#39;archivio attendibilità {#adding-certificate-to-trust-store}
+## Aggiunta di un certificato all&#39;archivio attendibilità {#adding-certificate-to-trust-store}
 
 Segui i passaggi indicati di seguito per aggiungere il certificato al keystore in AEM
 
@@ -46,7 +38,7 @@ Segui i passaggi indicati di seguito per aggiungere il certificato al keystore i
 
 ## Creazione del servizio OSGI
 
-Puoi scrivere il tuo bundle OSGi e utilizzare l’SDK client di AEM Forms per implementare un servizio per la certificazione dei documenti PDF. I seguenti collegamenti sarebbero utili per scrivere il tuo bundle OSGi
+Puoi scrivere il tuo bundle OSGi e usare l&#39;SDK client di AEM Forms per implementare un servizio per certificare i documenti PDF. I seguenti collegamenti sarebbero utili per scrivere il tuo bundle OSGi
 
 * [Creazione del primo bundle OSGi](https://helpx.adobe.com/experience-manager/using/maven_arch13.html)
 * [Utilizzare l’API di Document Service](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
