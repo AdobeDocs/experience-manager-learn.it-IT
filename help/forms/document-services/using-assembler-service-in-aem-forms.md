@@ -1,23 +1,14 @@
 ---
 title: Utilizzo del servizio Assembler in AEM Forms
-seo-title: Utilizzo del servizio Assembler in AEM Forms
 description: Utilizzo del servizio Assembler in AEM Forms per assemblare più file pdf
-seo-description: Utilizzo del servizio Assembler in AEM Forms per assemblare più file pdf
-uuid: 7895b1a3-6f9d-4413-bb7f-692ea0380fcd
-feature: Assembler
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+feature: Assemblatore
 version: 6.4,6.5
-discoiquuid: a12f52af-7039-4452-a58d-9ad2c0096347
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '209'
 ht-degree: 3%
 
 ---
@@ -120,9 +111,9 @@ Per far funzionare questa funzionalità sul server AEM
 
 >[!NOTE]
 >
->Assicurati che l’installazione di AEM Forms sia completa. Tutti i tuoi bundle devono essere in stato attivo.
+>Assicurati che l&#39;installazione di AEM Forms sia completa. Tutti i tuoi bundle devono essere in stato attivo.
 >
->Assicurati di aver aggiunto le librerie RSA e BouncyCastle come indicato in questo [Installazione di AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>Assicurati di aver aggiunto - Avvia le librerie RSA e BouncyCastle come indicato in questo [Installazione di AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
 >**Avvertenze per questa demo**
 >
