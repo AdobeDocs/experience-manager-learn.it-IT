@@ -1,21 +1,14 @@
 ---
 title: Variabili nel flusso di lavoro AEM[Parte1]
-seo-title: Variabili nel flusso di lavoro AEM[Parte1]
-description: Utilizzo di variabili di tipo xml,json,arraylist,document nel flusso di lavoro aem
-seo-description: Utilizzo di variabili di tipo xml,json,arraylist,document nel flusso di lavoro aem
-feature: Workflow
-topics: development
-audience: developer
-doc-type: tutorial
-activity: understand
+description: Utilizzo di variabili di tipo XML, JSON, ArrayList, Document in un flusso di lavoro AEM
+feature: Moduli adattivi
 version: 6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -41,7 +34,7 @@ I dati del modulo adattivo vengono memorizzati nell’elemento dati come mostrat
 
 >[!NOTE]
 >
->**AEM Forms 6.5.0**  - Quando crei una variabile di tipo XML per acquisire i dati inviati nel modello di flusso di lavoro, non associare XSD alla variabile. Questo perché quando si invia un modulo adattivo basato su XSD i dati inviati non sono conformi a XSD. I dati del reclamo XSD sono racchiusi nell&#39;elemento /afData/afBoundData/ .
+>**AEM Forms 6.5.0**  - Quando si crea una variabile di tipo XML per acquisire i dati inviati nel modello di flusso di lavoro, non associare XSD alla variabile. Questo perché quando si invia un modulo adattivo basato su XSD i dati inviati non sono conformi a XSD. I dati del reclamo XSD sono racchiusi nell&#39;elemento /afData/afBoundData/ .
 >
 >**AEM Forms 6.5.1**  - Se si associa XSD alla variabile XML, è possibile sfogliare gli elementi dello schema per eseguire la mappatura delle variabili. Non sarà possibile accedere ai dati del modulo non associati a elementi dello schema. Se il caso d&#39;uso è quello di accedere a dati associati a elementi dello schema e a dati non associati, non eseguire il binding dello schema con la variabile XML nel flusso di lavoro.Sarà necessario utilizzare l&#39;espressione XPath appropriata per accedere ai dati necessari
 
