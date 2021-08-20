@@ -1,29 +1,20 @@
 ---
-title: Servizio Codice A Barre Con Moduli Adattivi
-seo-title: Servizio Codice A Barre Con Moduli Adattivi
-description: Uso del servizio codice a barre per decodificare i codici a barre e comporre i campi modulo dai dati estratti
-seo-description: Uso del servizio codice a barre per decodificare i codici a barre e comporre i campi modulo dai dati estratti
-uuid: 42568b81-cbcd-479e-8d9a-cc0b244da4ae
-feature: barcoded-forms
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+title: Servizio Codice A Barre Con Forms Adattivo
+description: Uso del servizio codice a barre per decodificare i codici a barre e comporre i campi modulo dai dati estratti.
+feature: Forms barcoded
 version: 6.4,6.5
-discoiquuid: 1224de6d-7ca1-4e9d-85fe-cd675d03e262
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
 
-# Servizio codice a barre con moduli adattivi{#barcode-service-with-adaptive-forms}
+# Servizio Codice A Barre Con Forms Adattivo{#barcode-service-with-adaptive-forms}
 
 Questo articolo illustra l’utilizzo del servizio Codice a barre per compilare i moduli adattivi. Il caso d’uso è il seguente:
 
@@ -104,7 +95,7 @@ public class DecodeBarCode extends SlingSafeMethodsServlet {
 }
 ```
 
-Il codice seguente fa parte della libreria client a cui fa riferimento il modulo adattivo. Quando un utente aggiunge l’allegato al modulo adattivo, questo codice viene attivato. Il codice effettua una chiamata GET al servlet con il percorso dell&#39;allegato passato nel parametro della richiesta. I dati ricevuti dalla chiamata del servlet vengono quindi utilizzati per compilare il modulo adattivo.
+Il codice seguente fa parte della libreria client a cui fa riferimento il modulo adattivo. Quando un utente aggiunge l’allegato al modulo adattivo, questo codice viene attivato. Il codice effettua una chiamata GET al servlet con il percorso dell’allegato passato nel parametro della richiesta. I dati ricevuti dalla chiamata del servlet vengono quindi utilizzati per compilare il modulo adattivo.
 
 ```
 $(document).ready(function()
@@ -141,7 +132,7 @@ $(document).ready(function()
 
 >[!NOTE]
 >
->Il modulo adattivo incluso in questo pacchetto è stato creato utilizzando AEM Forms 6.4. Se desideri utilizzare questo pacchetto in ambiente AEM Forms 6.3, crea il modulo adattivo in AEM Form 6.3
+>Il modulo adattivo incluso in questo pacchetto è stato creato con AEM Forms 6.4. Se desideri utilizzare questo pacchetto in ambiente AEM Forms 6.3, crea il modulo adattivo AEM modulo 6.3
 
 Linea 12 - Codice personalizzato per ottenere service resolver. Questo bundle è incluso come parte di queste risorse degli articoli.
 
@@ -149,7 +140,7 @@ Riga 23 - Chiama il metodo extractBarCode di DocumentServices per ottenere il po
 
 Per eseguire questo sul sistema, segui i seguenti passaggi
 
-1. [Scarica l’importazione di BarcodeService.](assets/barcodeservice.zip) zipand in AEM utilizzando il gestore dei pacchetti
+1. [Scarica l’importazione di BarcodeService.](assets/barcodeservice.zip) zipand in AEM utilizzando il gestore di pacchetti
 1. [Scaricare e installare il bundle DocumentServices personalizzato](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Scaricare e installare il bundle DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [Scarica il modulo PDF di esempio](assets/barcode.pdf)
