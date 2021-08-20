@@ -1,23 +1,15 @@
 ---
 title: Configurazione di DataSource con Salesforce in AEM Forms 6.3 e 6.4
-seo-title: Configurazione di DataSource con Salesforce in AEM Forms 6.3 e 6.4
-description: Integrazione di AEM Forms con Salesforce tramite Form Data Model
-seo-description: Integrazione di AEM Forms con Salesforce tramite Form Data Model
-uuid: 0124526d-f1a3-4f57-b090-a418a595632e
-feature: Adaptive Forms, Form Data Model
+description: Integrazione di AEM Forms con Salesforce tramite il modello dati del modulo
+feature: Forms adattivo, modello dati modulo
 topics: integrations
-audience: developer
-doc-type: article
-activity: setup
 version: 6.3,6.4,6.5
-discoiquuid: 8e314fc3-62d0-4c42-b1ff-49ee34255e83
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -34,21 +26,21 @@ Prerequisiti per questa esercitazione:
 * Scorri fino alla parte inferiore della pagina e scarica il file swagger e salvalo il disco rigido.
 * AEM Forms con SSL abilitato
 
-   * [Documentazione ufficiale per abilitare SSL su AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
-   * [Documentazione ufficiale per l’abilitazione di SSL su AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
+   * [Documentazione ufficiale per abilitare SSL al AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
+   * [Documentazione ufficiale per abilitare SSL al AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
 
 * Avrai bisogno dell’account Salesforce
 * Sarà necessario creare un’app connessa. La documentazione ufficiale di Salesforce per la creazione dell&#39;app è elencata [qui](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
 * Fornire ambiti OAuth appropriati per l’app (ho selezionato tutti gli ambiti OAuth disponibili ai fini del test)
 * Specifica l&#39;URL di callback. Nel mio caso, l’URL di callback era
 
-   * Se utilizzi **AEM Forms 6.3**, l’URL di callback sarà https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. In questo URL createlead è il nome del mio modello di dati del modulo.
+   * Se utilizzi **AEM Forms 6.3**, l&#39;URL di callback sarà https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. In questo URL createlead è il nome del mio modello di dati del modulo.
 
    * Se utilizzi** AEM Forms 6.4**, l’URL di callback sarà [https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html](https://gbedekar-w7-1:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html)
 
-In questo esempio gbedekar -w7-1:6443 è il nome del mio server e la porta su cui AEM è in esecuzione.
+In questo esempio gbedekar -w7-1:6443 è il nome del mio server e la porta su cui AEM in esecuzione.
 
-Una volta creata la nota dell&#39;app connessa, la **Chiave consumer e Chiave segreta**. Queste funzioni sono necessarie durante la creazione dell’origine dati in AEM Forms.
+Una volta creata la nota dell&#39;app connessa, la **Chiave consumer e Chiave segreta**. Queste funzioni sono necessarie al momento della creazione dell’origine dati in AEM Forms.
 
 Dopo aver creato l’app connessa, dovrai creare un file swagger per le operazioni da eseguire in salesforce. Un file swagger di esempio è incluso come parte delle risorse scaricabili. Questo file swagger consente di creare un oggetto &quot;Lead&quot; durante l’invio del modulo adattivo. Esplorare questo file swagger.
 
@@ -56,7 +48,7 @@ Il passaggio successivo consiste nel creare un’origine dati in AEM Forms. Segu
 
 ## AEM Forms 6.3 {#aem-forms}
 
-* Accedi a AEM Forms utilizzando il protocollo https
+* Accedi ad AEM Forms utilizzando il protocollo https
 * Passa a servizi cloud digitando in https://&lt;servername>:&lt;serverport> /etc/cloudservices.html, ad esempio https://gbedekar-w7-1:6443/etc/cloudservices.html
 * Scorri verso il basso fino a &quot;Modello dati modulo&quot;.
 * Fai clic su &quot;Mostra configurazioni&quot;.
@@ -82,11 +74,11 @@ Il passaggio successivo consiste nel creare un’origine dati in AEM Forms. Segu
 
 Dopo aver creato il modello dati del modulo utilizzando Salesforce, è possibile creare l’integrazione dati del modulo utilizzando l’origine dati appena creata. La documentazione ufficiale per la creazione dell’integrazione dei dati del modulo è [qui](https://helpx.adobe.com/aem-forms/6-3/data-integration.html).
 
-Assicurati di configurare il modello dati modulo in modo da includere il servizio POST per creare un oggetto Lead in SFDC.
+Assicurati di configurare il Modello dati modulo in modo da includere il servizio POST per creare un oggetto Lead in SFDC.
 
 Sarà inoltre necessario configurare il servizio di lettura e scrittura per l’oggetto Lead. Fai riferimento alle schermate in fondo a questa pagina.
 
-Dopo aver creato il modello dati del modulo, è possibile creare moduli adattivi basati su questo modello e utilizzare i metodi di invio del modello dati del modulo per creare un lead in SFDC.
+Dopo aver creato il modello dati del modulo, è possibile creare il modello Adattivo Forms basato su questo modello e utilizzare i metodi di invio del modello dati del modulo per creare il lead in SFDC.
 
 ## AEM Forms 6.4 {#aem-forms-1}
 
@@ -115,11 +107,11 @@ Dopo aver creato il modello dati del modulo, è possibile creare moduli adattivi
 
 Dopo aver creato l&#39;origine dati utilizzando SalesForce, è possibile creare l&#39;integrazione dei dati del modulo utilizzando l&#39;origine dati appena creata. Il collegamento alla documentazione relativo a questo percorso è [qui](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)
 
-Assicurati di configurare il modello dati modulo in modo da includere il servizio POST per creare un oggetto Lead in SFDC.
+Assicurati di configurare il Modello dati modulo in modo da includere il servizio POST per creare un oggetto Lead in SFDC.
 
 Sarà inoltre necessario configurare il servizio di lettura e scrittura per l’oggetto Lead. Fai riferimento alle schermate in fondo a questa pagina.
 
-Dopo aver creato il modello dati del modulo, è possibile creare moduli adattivi basati su questo modello e utilizzare i metodi di invio del modello dati del modulo per creare un lead in SFDC.
+Dopo aver creato il modello dati del modulo, è possibile creare il modello Adattivo Forms basato su questo modello e utilizzare i metodi di invio del modello dati del modulo per creare il lead in SFDC.
 
 >[!NOTE]
 >
