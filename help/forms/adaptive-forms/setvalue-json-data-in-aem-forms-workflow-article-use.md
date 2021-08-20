@@ -1,31 +1,22 @@
 ---
-title: Impostazione del valore di Json Data Element nel flusso di lavoro di AEM Forms
-seo-title: Impostazione del valore di Json Data Element nel flusso di lavoro di AEM Forms
-description: Poiché in Flusso di lavoro AEM un modulo adattivo viene indirizzato a diversi utenti, è necessario nascondere o disattivare alcuni campi o pannelli in base alla persona che sta esaminando il modulo. Per soddisfare questi casi d’uso, in genere viene impostato un valore di un campo nascosto. In base al valore delle regole business di questo campo nascosto può essere creato per nascondere/disabilitare pannelli o campi appropriati.
-seo-description: Poiché in Flusso di lavoro AEM un modulo adattivo viene indirizzato a diversi utenti, è necessario nascondere o disattivare alcuni campi o pannelli in base alla persona che sta esaminando il modulo. Per soddisfare questi casi d’uso, in genere viene impostato un valore di un campo nascosto. In base al valore delle regole business di questo campo nascosto può essere creato per nascondere/disabilitare pannelli o campi appropriati.
-uuid: a4ea6aef-a799-49e5-9682-3fa3b7a442fb
-feature: Adaptive Forms
-topics: developing
-audience: implementer
-doc-type: article
-activity: setup
+title: Impostazione del valore di Json Data Element nel flusso di lavoro AEM Forms
+description: Poiché un modulo adattivo viene indirizzato a diversi utenti in AEM flusso di lavoro, è necessario nascondere o disattivare alcuni campi o pannelli in base alla persona che sta esaminando il modulo. Per soddisfare questi casi d’uso, in genere viene impostato un valore di un campo nascosto. In base al valore delle regole business di questo campo nascosto può essere creato per nascondere/disabilitare pannelli o campi appropriati.
+feature: Moduli adattivi
 version: 6.4
-discoiquuid: 548fb2ec-cfcf-4fe2-a02a-14f267618d68
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
 
 
-# Impostazione del valore di JSON Data Element nel flusso di lavoro di AEM Forms {#setting-value-of-json-data-element-in-aem-forms-workflow}
+# Impostazione del valore di JSON Data Element nel flusso di lavoro AEM Forms {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
-Poiché in Flusso di lavoro AEM un modulo adattivo viene indirizzato a diversi utenti, è necessario nascondere o disattivare alcuni campi o pannelli in base alla persona che sta esaminando il modulo. Per soddisfare questi casi d’uso, in genere viene impostato un valore di un campo nascosto. In base al valore delle regole business di questo campo nascosto può essere creato per nascondere/disabilitare pannelli o campi appropriati.
+Poiché un modulo adattivo viene indirizzato a diversi utenti in AEM flusso di lavoro, è necessario nascondere o disattivare alcuni campi o pannelli in base alla persona che sta esaminando il modulo. Per soddisfare questi casi d’uso, in genere viene impostato un valore di un campo nascosto. In base al valore delle regole business di questo campo nascosto può essere creato per nascondere/disabilitare pannelli o campi appropriati.
 
 ![Impostazione del valore di un elemento nei dati json](assets/capture-3.gif)
 
@@ -55,10 +46,10 @@ Per distribuire le risorse sul sistema locale:
    * Posiziona il browser su [gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
       * Importa e installa il setValueOfElementInJSONDataWorkflow.zip.Questo pacchetto presenta il modello di flusso di lavoro di esempio e il modello dati modulo associati al modulo.
 
-* Posiziona il browser su [Moduli e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Posiziona il browser su [Forms e Documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Fai clic su Crea | Caricamento file
 * Carica il file TimeOffRequestForm.zip
-   **Questo modulo è stato creato con AEM Forms 6.4. Assicurati di utilizzare AEM Forms 6.4 o versione successiva**
+   **Questo modulo è stato creato con AEM Forms 6.4. Assicurati di essere su AEM Forms 6.4 o versione successiva**
 * Apri il [modulo](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
 * Compila le date di inizio e di fine e invia il modulo.
 * Vai a [&quot;Inbox&quot;](http://localhost:4502/aem/inbox)
