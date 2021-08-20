@@ -1,29 +1,20 @@
 ---
 title: Genera PDF dall’invio di moduli HTML5
-seo-title: Genera PDF da invio modulo HTML5
 description: Genera PDF dall’invio di moduli per dispositivi mobili
-seo-description: Genera PDF dall’invio di moduli per dispositivi mobili
-uuid: 61f07029-d440-44ec-98bc-f2b5eef92b59
-feature: Mobile Forms
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+feature: Forms Mobile
 version: 6.4,6.5
-discoiquuid: 816f1a75-6ceb-457b-ba18-daf229eed057
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
 
 
-# Genera PDF da invio modulo HTML5 {#generate-pdf-from-htm-form-submission}
+# Genera PDF dall’invio di moduli HTML5 {#generate-pdf-from-htm-form-submission}
 
 Questo articolo illustra i passaggi necessari per generare pdf da un modulo HTML5 (aka Mobile Forms). Questa demo illustra anche i passaggi necessari per aggiungere un’immagine al modulo HTML5 e unire l’immagine al pdf finale.
 
@@ -111,7 +102,7 @@ function readURL(input) {
 
 Il codice di cui sopra viene eseguito quando attiviamo l’evento click dell’elemento file . Nella riga 5 estraiamo il contenuto del file caricato come stringa base64 e lo memorizziamo nel campo di testo. Questo valore viene quindi estratto quando il modulo viene inviato al nostro servlet.
 
-Quindi configuriamo le seguenti proprietà (avanzate) del nostro modulo mobile in AEM
+Quindi configuriamo le seguenti proprietà (avanzate) del modulo mobile in AEM
 
 * URL di invio: http://localhost:4502/bin/handlemobileformsubmission. Questo è il nostro servlet che unirà i dati inviati con il modello xdp
 * Profilo di rendering HTML - Assicurati di selezionare &quot;AddImageToMobileForm&quot;. Questo attiverà il codice per aggiungere un’immagine al modulo.
