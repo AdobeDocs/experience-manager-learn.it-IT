@@ -1,25 +1,20 @@
 ---
-title: Creare la configurazione cloud di Adobe Sign
+title: Creare la configurazione di Adobe Sign Cloud
 description: La configurazione dei servizi cloud in AEM consente di creare l’integrazione tra AEM e altre applicazioni cloud. Il seguente video illustra i passaggi necessari per creare la configurazione dei servizi cloud per integrare AEM con Adobe Sign.
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+feature: Moduli adattivi
 thumbnail: 38179.jpg
 kt: 6033
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 4%
+source-wordcount: '87'
+ht-degree: 3%
 
 ---
 
-# Creare la configurazione cloud di Adobe Sign
+# Creare la configurazione di Adobe Sign Cloud
 
 La configurazione dei servizi cloud in AEM consente di creare l’integrazione tra AEM e altre applicazioni cloud.
 
