@@ -1,23 +1,15 @@
 ---
 title: Utilizzo del servizio Form Data Model come passaggio nel flusso di lavoro
-seo-title: Utilizzo del servizio Form Data Model come passaggio nel flusso di lavoro
-description: A partire da AEM Forms 6.4, ora possiamo utilizzare Form Data Model come parte del flusso di lavoro AEM. Il video seguente illustra i passaggi necessari per configurare il passaggio Modello dati modulo in Flusso di lavoro AEM.
-seo-description: A partire da AEM Forms 6.4, ora possiamo utilizzare Form Data Model come parte del flusso di lavoro AEM. Il video seguente illustra i passaggi necessari per configurare il passaggio Modello dati modulo in Flusso di lavoro AEM.
-uuid: ecd5d5aa-01eb-48fb-872f-66c656ae14df.
-feature: Workflow
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
+description: A partire da AEM Forms 6.4, ora è possibile utilizzare Modello dati modulo come parte di AEM Flusso di lavoro. Il video seguente illustra i passaggi necessari per configurare il passaggio Modello dati modulo in AEM Flusso di lavoro.
+feature: Flusso di lavoro
+type: Tutorial
 version: 6.4,6.5
-discoiquuid: c442f439-1e5d-4f96-85df-b818c28389ff
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '281'
 ht-degree: 1%
 
 ---
@@ -25,7 +17,7 @@ ht-degree: 1%
 
 # Utilizzo del servizio Form Data Model come passaggio nel flusso di lavoro {#using-form-data-model-service-as-step-in-workflow}
 
-A partire da AEM Forms 6.4, ora possiamo utilizzare Form Data Model come parte del flusso di lavoro AEM. Il video seguente illustra i passaggi necessari per configurare il passaggio Modello dati modulo in Flusso di lavoro AEM
+A partire da AEM Forms 6.4, ora è possibile utilizzare Modello dati modulo come parte di AEM Flusso di lavoro. Il video seguente illustra i passaggi necessari per configurare il passaggio Modello dati modulo in AEM Flusso di lavoro
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/21719/?quality=9&learn=on)
@@ -34,7 +26,7 @@ Per testare questa funzionalità sul server, segui le istruzioni riportate di se
 * [Scarica e distribuisci il bundle setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Questo è il bundle OSGI personalizzato che imposta le proprietà dei metadati.
 >!![NOTE]In AEM Forms 6.5 e versioni successive questa funzionalità è disponibile come  [descritto qui](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
 
-* Imposta tomcat con il file SampleRest.war come descritto [qui](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html).Il file war distribuito in Tomcat ha il codice per restituire il punteggio di credito del richiedente. Il punteggio di credito è un numero casuale compreso tra 200 e 800
+* Imposta tomcat con il file SampleRest.war come descritto [qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html).Il file war distribuito in Tomcat ha il codice per restituire il punteggio di credito del richiedente. Il punteggio di credito è un numero casuale compreso tra 200 e 800
 
 * [Importa le risorse in AEM utilizzando il gestore di pacchetti](assets/invoke-fdm-as-service-step.zip). Il pacchetto contiene quanto segue:
 
