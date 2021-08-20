@@ -1,31 +1,22 @@
 ---
 title: Utilizzo di funzioni e editor di codice
-seo-title: Utilizzo di funzioni e editor di codice
 description: Utilizzo di funzioni e editor di codice per creare regole di business
-seo-description: Utilizzo di funzioni e editor di codice per creare regole di business
-uuid: 578e91f8-0d93-4192-b7af-1579df2feaf8
-feature: Adaptive Forms
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
+feature: Moduli adattivi
 version: 6.4,6.5
-discoiquuid: f480ef3e-7e38-4a6b-a223-c102787aea7f
 kt: 4270
 thumbnail: 22282.jpg
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '139'
 ht-degree: 2%
 
 ---
 
 
-# Utilizzo di funzioni personalizzate e editor di codice {#using-functions-and-code-editor}
+# Utilizzo di funzioni e editor di codice personalizzati {#using-functions-and-code-editor}
 
 In questa parte utilizzeremo funzioni personalizzate e l’editor di codice per creare regole di business.
 
@@ -38,11 +29,11 @@ In genere una libreria client è costituita da file CSS e Javascript. Questa lib
 
 >[!VIDEO](https://video.tv.adobe.com/v/22282?quality=9&learn=on)
 
-### Imposta il titolo di riepilogo del pannello {#set-the-summary-title-of-panels}
+### Imposta il titolo del riepilogo del pannello {#set-the-summary-title-of-panels}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28387?quality=9&learn=on)
 
-#### Convalida pannello {#validate-panels-using-rule-editor}
+#### Pannello Convalida {#validate-panels-using-rule-editor}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28409?quality=9&learn=on)
 
