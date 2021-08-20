@@ -1,29 +1,20 @@
 ---
-title: Utilizzo del passaggio Invia e-mail del flusso di lavoro Forms
-seo-title: Utilizzo del passaggio Invia e-mail del flusso di lavoro Forms
-description: Il passaggio Invia e-mail è stato introdotto in AEM Forms 6.4. Utilizzando questo passaggio è possibile creare processi aziendali o flussi di lavoro che consentono di inviare e-mail con o senza allegati. Il video seguente illustra i passaggi per configurare il componente Invia e-mail
-seo-description: Il passaggio Invia e-mail è stato introdotto in AEM Forms 6.4. Utilizzando questo passaggio è possibile creare processi aziendali o flussi di lavoro che consentono di inviare e-mail con o senza allegati. Il video seguente illustra i passaggi per configurare il componente Invia e-mail
-uuid: d054ebfb-3b9b-4ca4-8355-0eb0ee7febcb
-feature: Workflow
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
+title: Utilizzo del passaggio Invia e-mail del Forms Workflow
+description: Il passaggio Invia e-mail è stato introdotto in AEM Forms 6.4. Utilizzando questo passaggio è possibile creare processi aziendali o flussi di lavoro che consentono di inviare e-mail con o senza allegati. Il video seguente illustra i passaggi per la configurazione del componente Invia e-mail
+feature: Flusso di lavoro
 version: 6.4,6.5
-discoiquuid: 3a11f602-2f4c-423a-baef-28824c0325a1
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
 
 
-# Utilizzo del passaggio Invia e-mail del flusso di lavoro Forms {#using-send-email-step-of-forms-workflow}
+# Utilizzo del passaggio Invia e-mail del Forms Workflow {#using-send-email-step-of-forms-workflow}
 
 Il passaggio Invia e-mail è stato introdotto in AEM Forms 6.4. Utilizzando questo passaggio è possibile creare processi aziendali o flussi di lavoro che consentono di inviare e-mail con o senza allegati. Il video seguente illustra i passaggi necessari per configurare il componente Invia e-mail.
 
@@ -32,7 +23,7 @@ Il passaggio Invia e-mail è stato introdotto in AEM Forms 6.4. Utilizzando ques
 Come parte di questo articolo, ti guideremo attraverso il seguente caso d’uso:
 
 1. Un utente compila un modulo di richiesta Time Off
-1. All’invio del modulo, viene attivato il flusso di lavoro AEM
+1. All’invio del modulo, viene attivato AEM flusso di lavoro
 1. Il flusso di lavoro AEM utilizza il componente Invia e-mail per inviare un’e-mail con il DoR come allegato
 
 Prima di utilizzare il passaggio Invia e-mail, assicurati di configurare il servizio Day CQ Mail da [configMgr](http://localhost:4502/system/console/configMgr). Fornire i valori specifici dell’ambiente
@@ -61,7 +52,7 @@ Guarda il passaggio del processo del flusso di lavoro. Il codice personalizzato 
 
 >[!NOTE]
 >
->In AEM Forms 6.5 e versioni successive non è necessario questo codice personalizzato per creare le proprietà dei metadati. Utilizza la funzionalità variabili in AEM Workflow
+>In AEM Forms 6.5 e versioni successive non è necessario questo codice personalizzato per creare le proprietà dei metadati. Utilizza la funzionalità delle variabili in AEM flusso di lavoro
 
 Assicurati che la scheda Allegati del componente Invia e-mail sia configurata in base alla schermata sottostante
 ![Invia allegato e-mail](assets/sendemailcomponentconfigure.jpg)Il valore &quot;DOR.pdf&quot; deve corrispondere al valore specificato nel percorso del documento specificato nelle opzioni di invio del modulo adattivo.
