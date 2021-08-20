@@ -1,21 +1,14 @@
 ---
-title: AEM Forms con Marketo(Parte 3)
-seo-title: AEM Forms con Marketo(Parte 3)
+title: AEM Forms con Marketo (parte 3)
 description: Esercitazione per integrare AEM Forms con Marketo utilizzando AEM Forms Form Data Model.
-seo-description: Esercitazione per integrare AEM Forms con Marketo utilizzando AEM Forms Form Data Model.
-feature: Adaptive Forms, Form Data Model
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+feature: Forms adattivo, modello dati modulo
 version: 6.3,6.4,6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '385'
 ht-degree: 1%
 
 ---
@@ -36,13 +29,13 @@ Per l’integrazione di AEM Forms con Marketo, utilizzeremo i servizi web RESTfu
 
 Il &quot;marketo.json&quot; è il file swagger e ti viene fornito come parte delle risorse di questa esercitazione.
 Host proprietà è specifico per la tua istanza Marketo.
-Il tipo di autenticazione è personalizzato e l’implementazione dell’autenticazione deve corrispondere a &quot;AemForms With Marketo&quot;. (A meno che questo non sia stato modificato nel codice).
+Il tipo di autenticazione è personalizzato e l&#39;implementazione dell&#39;autenticazione deve corrispondere a &quot;AemForms With Marketo&quot;. (A meno che questo non sia stato modificato nel codice).
 
 ## Crea modello dati modulo
 
 Dopo, la configurazione dell’origine dati il passaggio successivo consiste nella creazione di un modello dati modulo basato sull’origine dati configurata nel passaggio precedente. Per creare un modello dati modulo, procedere come segue:
 
-Posiziona il browser nella pagina delle integrazioni di dati [.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Questo elenca tutte le integrazioni di dati create sull’istanza AEM.
+Posiziona il browser nella pagina delle integrazioni di dati [.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Vengono elencate tutte le integrazioni di dati create nell’istanza AEM.
 
 1. Fai clic su Crea | Modello dati modulo
 1. Fornire un titolo significativo, ad esempio FormsAndMarketo e fare clic su Avanti
