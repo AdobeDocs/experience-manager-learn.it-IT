@@ -1,29 +1,20 @@
 ---
-title: Guida Introduttiva Ai Moduli Adattivi
-seo-title: Guida Introduttiva Ai Moduli Adattivi
+title: Guida Introduttiva Ad Adaptive Forms
 description: 'Questa esercitazione illustra i passaggi necessari per creare un modulo adattivo con più schede. Scoprirai come utilizzare le tabelle, il layout a soffietto e l’editor di regole per creare regole di business. '
-seo-description: 'Questa esercitazione illustra i passaggi necessari per creare un modulo adattivo con più schede. Scoprirai come utilizzare le tabelle, il layout a soffietto e l’editor di regole per creare regole di business. '
-uuid: 6f73cb1c-94e2-4ac7-89e5-a72141a06bbe
-feature: Adaptive Forms
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
+feature: Moduli adattivi
 version: 6.3,6.4,6.5
-discoiquuid: b6863d3d-8528-4a96-ae37-c8d1aa62d443
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '210'
 ht-degree: 4%
 
 ---
 
 
-# Guida introduttiva ai moduli adattivi {#getting-started-with-adaptive-forms}
+# Guida Introduttiva Ad Adaptive Forms {#getting-started-with-adaptive-forms}
 
 Questa esercitazione illustra i passaggi necessari per creare un modulo adattivo con più schede. Scoprirai come utilizzare le tabelle, il layout a soffietto e l’editor di regole per creare regole di business.
 
