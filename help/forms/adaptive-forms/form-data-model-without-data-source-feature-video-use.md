@@ -1,23 +1,14 @@
 ---
 title: Creazione di un modello dati modulo senza origine dati
-seo-title: Creazione di un modello dati modulo senza origine dati
-description: A partire da AEM Forms 6.4, ora è possibile definire il modello dati modulo (FDM) senza associarlo a un’origine dati. Il video seguente illustra i passaggi necessari per creare FDM senza origini dati.
-seo-description: A partire da AEM Forms 6.4, ora è possibile definire il modello dati modulo (FDM) senza associarlo a un’origine dati. Il video seguente illustra i passaggi necessari per creare FDM senza origini dati.
-feature: Workflow
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
+description: A partire da AEM Forms 6.4, è ora possibile definire il modello dati modulo (FDM) senza associarlo a un’origine dati. Il video seguente illustra i passaggi necessari per creare FDM senza origini dati.
+feature: Flusso di lavoro
 version: 6.4,6.5
-uuid: eeb6165c-5465-4692-a3a9-8ef10780678d
-discoiquuid: 54fdce05-486b-4fb5-aed4-8552fe2040fd
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '138'
 ht-degree: 1%
 
 ---
@@ -25,14 +16,14 @@ ht-degree: 1%
 
 # Creazione di un modello dati modulo senza origine dati {#creating-form-data-model-without-data-source}
 
-A partire da AEM Forms 6.4, ora è possibile definire il modello dati modulo (FDM) senza associarlo a un’origine dati. Il video seguente illustra i passaggi necessari per creare FDM senza origini dati.
+A partire da AEM Forms 6.4, è ora possibile definire il modello dati modulo (FDM) senza associarlo a un’origine dati. Il video seguente illustra i passaggi necessari per creare FDM senza origini dati.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21414/?quality=9&learn=on)
 
 Questo offre i seguenti vantaggi:
 
-* Velocità è lo sviluppo di documenti/moduli di comunicazione interattiva.
-* Lo sviluppo di documenti/moduli di comunicazione interattiva può essere eseguito in parallelo con lo sviluppo dell’origine dati.
+* Velocità è lo sviluppo di documenti di comunicazione interattiva/Forms.
+* Lo sviluppo di documenti di comunicazione interattiva/Forms può essere fatto in parallelo con lo sviluppo della sorgente dati.
 * Una volta sviluppata l’origine dati, puoi eseguire le associazioni utilizzando l’editor visivo.
 * La funzione di binding automatico mappa elementi simili.
 
