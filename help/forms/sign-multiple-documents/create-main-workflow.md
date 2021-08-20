@@ -1,21 +1,16 @@
 ---
 title: Crea flusso di lavoro principale per attivare il processo di firma
 description: Crea un flusso di lavoro per memorizzare i moduli per la firma nel database
-feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+feature: Moduli adattivi
 version: 6.4,6.5
 thumbnail: 6887.jpg
 kt: 6887
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '165'
 ht-degree: 2%
 
 ---
@@ -27,7 +22,7 @@ Il flusso di lavoro principale viene attivato quando l’utente invia il modulo 
 
 ![flusso di lavoro principale](assets/main-workflow.PNG)
 
-**Archiviare i moduli per** firmare è un passaggio del processo personalizzato.
+**Archiviare Forms To** Signis come passaggio del processo personalizzato.
 
 L’implementazione di un passaggio di processo personalizzato è motivata dall’estensione di un flusso di lavoro AEM. Il codice seguente implementa un passaggio di processo personalizzato. Il codice estrae i nomi dei moduli da firmare e trasmette i dati del modulo inviati al metodo `insertData` nel servizio SignMultipleForms. Il metodo `insertData` inserisce quindi le righe nel database identificato dall&#39;origine dati **aemformstutorial**.
 
@@ -122,7 +117,7 @@ public class StoreFormsToSignWorkflowStep implements WorkflowProcess {
 
 ## Assets
 
-Il flusso di lavoro Firma più moduli utilizzato in questo articolo può essere [scaricato da qui](assets/sign-multiple-forms-workflows.zip)
+Il flusso di lavoro Firma multipla utilizzato in questo articolo può essere [scaricato da qui](assets/sign-multiple-forms-workflows.zip)
 
 >[!NOTE]
 > Assicurati di configurare Day CQ Mail Service per inviare le notifiche via e-mail. Il modello di posta elettronica viene fornito anche nel pacchetto di cui sopra.
