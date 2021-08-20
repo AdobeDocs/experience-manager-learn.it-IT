@@ -1,36 +1,27 @@
 ---
-title: Utilizzo del PDFG in AEM Forms
-seo-title: Utilizzo del PDFG in AEM Forms
-description: Dimostrazione della funzione di trascinamento della selezione per la creazione di PDF con AEM Forms
-seo-description: Dimostrazione della funzione di trascinamento della selezione per la creazione di PDF con AEM Forms
-uuid: ee54edb4-a7b1-42ed-81ea-cb6bef6cf97f
-feature: pdf-generator
-topics: development
-audience: developer
-doc-type: article
-activity: implement
+title: Utilizzo di PDFG in AEM Forms
+description: Dimostrazione della funzionalità di trascinamento della selezione per la creazione di PDF con AEM Forms
+feature: PDF Generator
 version: 6.4,6.5
-discoiquuid: 7f570f12-ce43-4da7-a249-ef6bd0fe48e5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 2%
+source-wordcount: '268'
+ht-degree: 3%
 
 ---
 
 
-# Utilizzo del PDFG in AEM Forms{#using-pdfg-in-aem-forms}
+# Utilizzo di PDFG in AEM Forms{#using-pdfg-in-aem-forms}
 
-Dimostrazione della funzione di trascinamento della selezione per la creazione di PDF con AEM Forms
+Dimostrazione della funzionalità di trascinamento della selezione per la creazione di PDF con AEM Forms
 
-PDFG sta per generazione PDF. Ciò significa che è possibile convertire una varietà di formati di file in PDF. I documenti più comuni sono i documenti di Microsoft Office. PDFG fa parte di AEM Forms dalla 6.1.
+PDFG sta per generazione PDF. Ciò significa che è possibile convertire una varietà di formati di file in PDF. I documenti più comuni sono i documenti di Microsoft Office. PDFG fa parte di AEM Forms dalla versione 6.1.
 [Il javadoc per l&#39;API PDFG è elencato qui](https://helpx.adobe.com/experience-manager/6-3/forms/using/aem-document-services-programmatically.html#PDFGeneratorService)
 
-Le risorse associate a questo articolo ti consentono di trascinare e rilasciare documenti MS office o file JPG nella zona di rilascio della pagina HTML. Una volta eliminato il documento, richiama il servizio PDFG e converte il documento in PDF e lo salva nel file system di AEM Server.
+Le risorse associate a questo articolo ti consentono di trascinare e rilasciare documenti MS office o file JPG nella zona di rilascio della pagina HTML. Una volta che il documento viene rilasciato, richiama il servizio PDFG e converte il documento in PDF e lo salva nel file system di AEM Server.
 
 Per installare le risorse demo, effettua le seguenti operazioni
 
