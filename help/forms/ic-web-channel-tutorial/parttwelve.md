@@ -4,26 +4,25 @@ seo-title: Impostazione della consegna del documento del canale web
 description: Questa è la parte finale di un'esercitazione su più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte esaminiamo la consegna del documento del canale web via e-mail.
 seo-description: Questa è la parte finale di un'esercitazione su più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte esaminiamo la consegna del documento del canale web via e-mail.
 uuid: c1066600-1abd-4401-b04f-b93c28603cc7
-feature: Interactive Communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 1a7cf095-c5d8-4d92-a018-883cda76fe70
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '392'
 ht-degree: 2%
 
 ---
 
 
-# Impostazione della consegna del documento del canale Web {#setting-up-the-delivery-of-web-channel-document}
+# Impostazione della consegna del documento del canale web {#setting-up-the-delivery-of-web-channel-document}
 
 
 In questa parte esaminiamo la consegna del documento del canale web via e-mail.
@@ -34,7 +33,7 @@ Per poter utilizzare l’e-mail come meccanismo di consegna per il documento del
 
 [Per ulteriori informazioni sulla consegna dei canali web tramite e-mail](/help/forms/interactive-communications/delivery-of-web-channel-document-tutorial-use.md)
 
-Accedi a AEM Forms.
+Accedi ad AEM Forms.
 
 * Passa a Forms ->Integrazioni dati
 
@@ -53,7 +52,7 @@ Accedi a AEM Forms.
 * Assicurati di salvare le modifiche.
    ![fdm](assets/requestattribute.gif)
 
-## Verifica consegna e-mail del documento del canale Web {#test-email-delivery-of-web-channel-document}
+## Verifica della consegna di un documento del canale Web {#test-email-delivery-of-web-channel-document}
 
 * [Installare le risorse di esempio utilizzando Gestione pacchetti](assets/webchanneldelivery.zip)
 * [Accedi a crx](http://localhost:4502/crx/de/index.jsp#)
