@@ -1,16 +1,15 @@
 ---
 title: Capitolo 1 - Configurazione e download delle esercitazioni - Content Services
-seo-title: Guida introduttiva di AEM Content Services - Capitolo 1 - Configurazione delle esercitazioni
-description: Capitolo 1 dell’esercitazione AEM Headless sulla configurazione della linea di base per l’istanza AEM per l’esercitazione.
-seo-description: Capitolo 1 dell’esercitazione AEM Headless sulla configurazione della linea di base per l’istanza AEM per l’esercitazione.
-feature: Content Fragments, APIs
-topic: Headless, Content Management
+seo-title: Guida introduttiva a AEM Content Services - Capitolo 1 - Configurazione delle esercitazioni
+description: Capitolo 1 dell’esercitazione AEM Headless la configurazione della linea di base per l’istanza AEM per l’esercitazione.
+seo-description: Capitolo 1 dell’esercitazione AEM Headless la configurazione della linea di base per l’istanza AEM per l’esercitazione.
+feature: Frammenti di contenuto, API
+topic: Senza testa, gestione dei contenuti
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -18,16 +17,16 @@ ht-degree: 0%
 
 # Configurazione delle esercitazioni
 
-Si consiglia sempre l’ultima versione dei componenti core di AEM e AEM WCM.
+Si consiglia sempre di utilizzare AEM e AEM versione più recente dei componenti core WCM.
 
 * AEM 6.5 o versione successiva
-* Componenti core di AEM WCM 2.4.0 o versione successiva
-   * Incluso nel [pacchetto di contenuti dell&#39;applicazione AEM mobile WKND sotto](#wknd-mobile-application-packages)
+* AEM i componenti core WCM 2.4.0 o versioni successive
+   * Incluso nel [pacchetto di contenuti dell&#39;applicazione mobile AEM WKND sotto](#wknd-mobile-application-packages)
 
 Prima di avviare questa esercitazione, assicurati che le seguenti istanze AEM siano [installate ed eseguite sul computer locale](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install):
 
-* **AEM** Authoron  **porta 4502**
-* **AEM** Porta di pubblicazione  **4503**
+* **AEM** Autore  **porta 4502**
+* **AEM** Porta  **4503**
 
 ## Pacchetti di applicazioni mobili WKND{#wknd-mobile-application-packages}
 
@@ -35,7 +34,7 @@ Installa i seguenti pacchetti di contenuti AEM su **sia** AEM Author che AEM Pub
 
 * [ui.apps: GitHub > Risorse > com.adobe.aem.guides.wknd-mobile.ui.apps-x.x.x.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
    * [!DNL WKND Mobile Empty Template Type]
-   * [!DNL WKND Mobile] Componente proxy per componenti core AEM WCM
+   * [!DNL WKND Mobile] Componente proxy per AEM componenti core WCM
    * [!DNL WKND Mobile] CSS delle pagine di AEM Content Services (per stile minore)
 * [ui.content: GitHub > com.adobe.aem.guides.wknd-mobile.ui.content-x.x.x.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
    * [!DNL WKND Mobile] Struttura del sito
@@ -46,7 +45,7 @@ In [Capitolo 7](./chapter-7.md) eseguiremo l&#39;app mobile [!DNL WKND Mobile] A
 
 * [[!DNL Android Mobile App: GitHub > Assets > wknd-mobile.x.x.x.apk]](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
 
-## Capitolo Pacchetti di contenuti AEM
+## Capitolo AEM pacchetti di contenuti
 
 Questo insieme di pacchetti di contenuti crea il contenuto e la configurazione descritti nel capitolo associato e in tutti i capitoli precedenti. Questi pacchetti sono facoltativi ma possono accelerare la creazione di contenuti.
 
