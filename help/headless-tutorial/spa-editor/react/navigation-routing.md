@@ -12,10 +12,10 @@ thumbnail: 4988-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 32320905786682a852baf7d777cb06de0072c439
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1625'
-ht-degree: 1%
+source-wordcount: '1623'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ Scopri come è possibile supportare più visualizzazioni nel SPA mappando le pag
 
 ## Cosa verrà creato
 
-Questo capitolo aggiunge la navigazione a un SPA in AEM. Il menu di navigazione sarà guidato dalla gerarchia di pagine AEM e utilizzerà il modello JSON fornito dal [componente di base di navigazione](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html).
+Questo capitolo aggiunge la navigazione a un SPA in AEM. Il menu di navigazione sarà guidato dalla gerarchia di pagine AEM e utilizzerà il modello JSON fornito dal [componente di base di navigazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html).
 
 ![Navigazione aggiunta](assets/navigation-routing/navigation-added.png)
 
@@ -121,7 +121,7 @@ Quindi, crea altre pagine in AEM che fungeranno da viste diverse nel SPA. Esamin
 
    Dopo il caricamento della pagina iniziale, la navigazione successiva non causa un aggiornamento completo della pagina e il traffico di rete viene ridotto al minimo quando si torna alle pagine visitate in precedenza.
 
-## Modello JSON della pagina gerarchica {#hierarchy-page-json-model}
+## Modello JSON della pagina Gerarchia {#hierarchy-page-json-model}
 
 Quindi, controlla il modello JSON che guida l’esperienza con più visualizzazioni del SPA.
 
@@ -208,7 +208,7 @@ Quindi, controlla il modello JSON che guida l’esperienza con più visualizzazi
 
 1. Sperimenta i collegamenti profondi navigando direttamente in: [http://localhost:4502/content/wknd-spa-react/us/en/home/page-2.html](http://localhost:4502/content/wknd-spa-react/us/en/home/page-2.html). Osserva anche che il pulsante Indietro del browser continua a funzionare.
 
-## Routing React di Inspect {#react-routing}
+## Routing React di Inspect  {#react-routing}
 
 La navigazione e il routing sono implementati con [React Router](https://reactrouter.com/). React Router è una raccolta di componenti di navigazione per le applicazioni React. [AEM i ](https://github.com/adobe/aem-react-core-wcm-components-base) componenti core React utilizzano le funzioni di React Router per implementare il componente  **** Navigazione utilizzato nei passaggi precedenti.
 
