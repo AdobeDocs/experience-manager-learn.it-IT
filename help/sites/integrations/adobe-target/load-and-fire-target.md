@@ -1,7 +1,7 @@
 ---
 title: Caricare e attivare una chiamata Target
 description: Scopri come caricare, trasmettere parametri alla richiesta di pagina e attivare una chiamata Target dalla pagina del sito utilizzando una regola Launch. Le informazioni di pagina vengono recuperate e trasmesse come parametri utilizzando Adobe Client Data Layer, che consente di raccogliere e archiviare dati sull’esperienza dei visitatori in una pagina web e quindi di semplificare l’accesso a tali dati.
-feature: Core Components, Adobe Client Data Layer
+feature: Componenti core, Adobe Client Data Layer
 topics: integrations, administration, development
 audience: administrator, developer
 doc-type: technical video
@@ -9,14 +9,13 @@ activity: setup
 version: cloud-service
 kt: 6133
 thumbnail: 41243.jpg
-topic: Integrations
+topic: Integrations (Integrazioni)
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 3%
+source-wordcount: '615'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +28,7 @@ Scopri come caricare, trasmettere parametri alla richiesta di pagina e attivare 
 
 ## Regola di caricamento pagina
 
-Adobe Client Data Layer è un livello dati basato su eventi. Quando viene caricato il livello di dati della pagina AEM, viene attivato un evento `cmp:show` . Nel video, la regola `Launch Library Loaded` viene richiamata utilizzando un evento personalizzato. Di seguito sono riportati gli snippet di codice utilizzati nel video per l’evento personalizzato e per gli elementi di dati.
+Adobe Client Data Layer è un livello dati basato su eventi. Quando viene caricato il livello dati AEM pagina, viene attivato un evento `cmp:show` . Nel video, la regola `Launch Library Loaded` viene richiamata utilizzando un evento personalizzato. Di seguito sono riportati gli snippet di codice utilizzati nel video per l’evento personalizzato e per gli elementi di dati.
 
 ### Evento di visualizzazione pagina personalizzata{#page-event}
 
@@ -81,7 +80,7 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Una funzione personalizzata definisce il `pageShownEventHandler` e ascolta gli eventi emessi dai componenti core di AEM, derivati le informazioni rilevanti dal componente core, le crea in un oggetto evento e attiva l’evento Launch con le informazioni sull’evento derivato al suo payload.
+Una funzione personalizzata definisce il `pageShownEventHandler` e ascolta gli eventi emessi dai componenti core AEM, derivati le informazioni rilevanti dal componente core, le crea in un oggetto evento e attiva l&#39;evento Launch con le informazioni sull&#39;evento derivato al suo payload.
 
 La regola Launch viene attivata utilizzando la funzione di Launch `trigger(...)` che è __solo__ disponibile all&#39;interno della definizione dello snippet di codice personalizzato dell&#39;evento di una regola.
 
@@ -94,7 +93,7 @@ Se `trigger(...)` viene utilizzato al di fuori del contesto di un tipo di evento
 
 ![Elementi dati](assets/data-elements.png)
 
-Gli elementi dati di Adobe Launch mappano i dati dall’oggetto evento [attivato nell’evento personalizzato Page Shown](#page-event) alle variabili disponibili in Adobe Target, tramite il tipo di elemento dati codice personalizzato dell’estensione Core.
+Adobe Launch Data Elements mappa i dati dall’oggetto evento [attivato nell’evento personalizzato Page Shown](#page-event) alle variabili disponibili in Adobe Target, tramite il tipo di elemento dati Custom Code dell’estensione Core.
 
 #### Elemento dati ID pagina
 
@@ -157,12 +156,12 @@ window.targetGlobalSettings = {
 
 ## Passaggi successivi
 
-+ [Esportare frammenti esperienza in Adobe Target](./export-experience-fragment-target.md)
++ [Esportare i frammenti esperienza in Adobe Target](./export-experience-fragment-target.md)
 
 ## Collegamenti di supporto
 
 + [Documentazione di Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki)
-+ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
-+ [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
-+ [Utilizzo della documentazione di Adobe Client Data Layer e Core Components](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/data-layer/overview.html)
-+ [Introduzione al debugger di Adobe Experience Platform](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html)
++ [Debugger Adobe Experience Cloud - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Debugger Adobe Experience Cloud - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
++ [Utilizzo della documentazione di Adobe Client Data Layer e Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
++ [Introduzione a Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html)
