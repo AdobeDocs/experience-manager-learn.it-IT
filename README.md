@@ -1,11 +1,10 @@
 ---
 source-git-commit: 750f688ed020f889e044e2ebd673c0f494b32229
 workflow-type: tm+mt
-translation-type: tm+mt
 source-wordcount: '10'
 ht-degree: 0%
 
 ---
 # experience-manager-learn.en
 
-Esercitazioni collaborative e materiali di abilitazione per Adobe Experience Manager.
+Tutorial collaborativi e materiali di abilitazione per Adobe Experience Manager.
