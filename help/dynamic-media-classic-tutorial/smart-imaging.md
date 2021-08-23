@@ -10,10 +10,10 @@ activity: use
 topic: Gestione dei contenuti
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 3%
+source-wordcount: '693'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ Uno degli aspetti più importanti dell’esperienza del cliente sul sito web o s
 
 L&#39;imaging intelligente trae vantaggio anche dall&#39;ulteriore incremento delle prestazioni, grazie all&#39;integrazione completa con il miglior servizio premium di Adobe. Questo servizio trova il percorso Internet ottimale tra server, reti e punti di peer con latenza minima e/o velocità di perdita dei pacchetti rispetto al percorso predefinito su Internet.
 
-Ulteriori informazioni su [Smart imaging](https://docs.adobe.com/content/help/it-IT/experience-manager-64/assets/dynamic/imaging-faq.html).
+Ulteriori informazioni su [Smart imaging](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
 
 ## Vantaggi dell&#39;imaging intelligente
 
@@ -36,7 +36,7 @@ Poiché le immagini rappresentano la maggior parte del tempo di caricamento di u
 
 Come indicato in precedenza, Smart Imaging sfrutta le funzionalità di Adobe Sensei AI e lavora con i predefiniti per immagini esistenti per convertire automaticamente le immagini in formati di immagine ottimali di nuova generazione, ad esempio WebP, mantenendo al tempo stesso la fedeltà visiva.
 
-Ulteriori informazioni su [Come funziona l&#39;imaging intelligente](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), compresi dettagli quali i formati immagine supportati (e cosa succede se non li usi) e il loro impatto sui predefiniti immagine esistenti in uso.
+Ulteriori informazioni su [Come funziona l&#39;imaging intelligente](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), compresi dettagli quali i formati immagine supportati (e cosa succede se non li usi) e il loro impatto sui predefiniti immagine esistenti in uso.
 
 ## Impatto dell&#39;imaging intelligente
 
@@ -54,7 +54,7 @@ L’abilitazione di Smart imaging inizia con l’invio del supporto tecnico a un
 
 Dopo aver abilitato Smart imaging, dovrai verificare che funzioni come previsto.
 
-Probabilmente hai ulteriori domande su Smart imaging. Abbiamo compilato un elenco delle domande frequenti (FAQ) con le risposte. Leggi le [Domande frequenti](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html).
+Probabilmente hai ulteriori domande su Smart imaging. Abbiamo compilato un elenco delle domande frequenti (FAQ) con le risposte. Leggi le [Domande frequenti](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
 
 ## Risorse aggiuntive
 
