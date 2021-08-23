@@ -1,20 +1,14 @@
 ---
 title: Sviluppa per CORS (Cross-Origin Resource Sharing) con AEM
-description: Un breve esempio di utilizzo di CORS per accedere al contenuto AEM da un’applicazione web esterna tramite JavaScript lato client.
+description: Un breve esempio di utilizzo di CORS per accedere AEM contenuto da un’applicazione web esterna tramite JavaScript lato client.
 version: 6.3, 6,4, 6.5
-sub-product: fondazione, content-services, siti
-topics: security, development, content-delivery
-activity: develop
-audience: developer
-doc-type: tutorial
-topic: Security
+topic: Sicurezza, Sviluppo
 role: Developer
 level: Beginner
-feature:  
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+feature: Sicurezza
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -22,7 +16,7 @@ ht-degree: 0%
 
 # Sviluppa per la condivisione delle risorse tra le origini (CORS, Cross-Origin Resource Sharing)
 
-Un breve esempio di utilizzo di [!DNL CORS] per accedere ai contenuti AEM da un’applicazione web esterna tramite JavaScript lato client.
+Un breve esempio di utilizzo di [!DNL CORS] per accedere AEM contenuto da un’applicazione web esterna tramite JavaScript lato client.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837/?quality=12&learn=on)
 
@@ -33,7 +27,7 @@ In questo video:
 * [SimpleHTTPServer](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12)  (un wrapper per  [[!DNL Python]SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)) distribuisce la pagina HTML tramite la porta 8000.
 * [!DNL AEM Dispatcher] è in esecuzione su  [!DNL Apache HTTP Web Server] 2.4 e la richiesta di reverse-proxy  `aem-publish.local` a  `localhost:4503`.
 
-Per ulteriori dettagli, consulta [Informazioni sulla condivisione delle risorse tra le origini (CORS) in AEM](./understand-cross-origin-resource-sharing.md).
+Per ulteriori dettagli, consulta [Informazioni sulla condivisione delle risorse tra origini diverse (CORS) in AEM](./understand-cross-origin-resource-sharing.md).
 
 ## www.example.com HTML e JavaScript
 
@@ -97,7 +91,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 />
 ```
 
-## Configurazione del dispatcher {#dispatcher-configuration}
+## Configurazione del Dispatcher {#dispatcher-configuration}
 
 Per consentire il caching e il serving delle intestazioni CORS sui contenuti memorizzati nella cache, aggiungi la seguente [/clientheaders configuration](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) a tutti i file AEM Publish `dispatcher.any` che supportano.
 
@@ -122,7 +116,7 @@ Per consentire il caching e il serving delle intestazioni CORS sui contenuti mem
 
 ## Materiali di supporto {#supporting-materials}
 
-* [Fabbrica di configurazione AEM OSGi per i criteri di condivisione delle risorse tra origini diverse](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
+* [AEM fabbrica di configurazione OSGi per i criteri di condivisione delle risorse tra origini diverse](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
 * [SimpleHTTPServer per macOS](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12)
 * [Python SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)  (compatibile con Windows/macOS/Linux)
 
