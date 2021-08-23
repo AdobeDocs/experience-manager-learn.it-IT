@@ -1,14 +1,13 @@
 ---
 title: '"Capitolo 3 - Argomenti della memorizzazione in cache del Dispatcher avanzato"'
-description: Questa è la parte 3 di una serie di tre parti che descrive la memorizzazione in cache in AEM. Dove le prime due parti si sono concentrate sulla semplice memorizzazione in cache http nel Dispatcher e quali limitazioni ci sono. Questa parte discute alcune idee su come superare questi limiti.
+description: Questa è la parte 3 di una serie di tre parti in memorizzazione in cache in AEM. Dove le prime due parti si sono concentrate sulla semplice memorizzazione in cache http nel Dispatcher e quali limitazioni ci sono. Questa parte discute alcune idee su come superare questi limiti.
 feature: Dispatcher
-topic: Architecture
+topic: Architettura
 role: Architect
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '6191'
+source-wordcount: '6189'
 ht-degree: 0%
 
 ---
@@ -22,7 +21,7 @@ ht-degree: 0%
 
 ## Panoramica
 
-Questa è la parte 3 di una serie di tre parti per il caching in AEM. Dove le prime due parti si sono concentrate sulla semplice memorizzazione in cache http nel Dispatcher e quali limitazioni ci sono. Questa parte discute alcune idee su come superare questi limiti.
+Si tratta della parte 3 di una serie di tre parti che va alla memorizzazione in cache in AEM. Dove le prime due parti si sono concentrate sulla semplice memorizzazione in cache http nel Dispatcher e quali limitazioni ci sono. Questa parte discute alcune idee su come superare questi limiti.
 
 ## Memorizzazione in cache in generale
 
@@ -143,7 +142,7 @@ In altre parole, le cache vengono invalidate una alla volta dopo la modifica del
 
 È sufficiente tenere a mente una regola:
 
-Annulla sempre la validità dall’interno alla cache esterna. Se prima hai invalidato una cache esterna, potrebbe ri-memorizzare in cache il contenuto non aggiornato da una cache interna. Non fare supposizioni a che ora una cache è di nuovo fresca - assicurati. Meglio, attivando l&#39;annullamento della validità della cache esterna _dopo_ l&#39;annullamento della validità di quella interna.
+Annulla sempre la validità dall’interno alla cache esterna. Se prima hai invalidato una cache esterna, potrebbe ri-memorizzare in cache il contenuto non aggiornato da una cache interna. Non fare supposizioni a che ora una cache è di nuovo fresca - assicurati. Meglio, attivando l&#39;invalidazione della cache esterna _dopo_ l&#39;annullamento di quella interna.
 
 Questa è la teoria. Ma in pratica ci sono un certo numero di gotchas. Gli eventi devono essere distribuiti - potenzialmente su una rete. In pratica, questo rende il sistema di invalidazione più difficile da attuare.
 
@@ -195,9 +194,9 @@ Tuttavia, non tutte le cache sono in grado di propagare le date. E può diventar
 
 <br> 
 
-Uno schema comune in AEM World è anche quello di utilizzare l’annullamento della validità basato su eventi nelle cache interne (ad esempio, nelle cache in memoria in cui gli eventi possono essere elaborati in tempo quasi reale) e nelle cache basate su TTL all’esterno, dove forse non si ha accesso all’annullamento esplicito della validità.
+Uno schema comune nel mondo AEM è anche quello di utilizzare l’invalidazione basata su eventi nelle cache interne (ad esempio, nelle cache in memoria in cui gli eventi possono essere elaborati in tempo quasi reale) e nelle cache basate su TTL all’esterno, dove forse non si ha accesso all’invalidazione esplicita.
 
-Nel mondo AEM si dispone di una cache in-memory per oggetti aziendali e frammenti HTML nei sistemi Publish, che viene invalidata, quando le risorse sottostanti cambiano e si propaga questo evento change al dispatcher che funziona anche in base agli eventi. Davanti a questo si avrebbe ad esempio una CDN basata su TTL.
+Nel mondo AEM si disporrebbe di una cache in-memory per oggetti aziendali e frammenti HTML nei sistemi Publish, che viene invalidata, quando le risorse sottostanti cambiano e si propaga questo evento di modifica al dispatcher che funziona anche in base agli eventi. Davanti a questo si avrebbe ad esempio una CDN basata su TTL.
 
 Avere un livello di memorizzazione in cache (breve) basata su TTL davanti a un’istanza di Dispatcher potrebbe ammorbidire efficacemente un picco che si verifica solitamente dopo un’annullamento automatico della validità.
 
@@ -225,7 +224,7 @@ Per aggiungere livelli di memorizzazione in cache, potete collegarvi allo stadio
 
 #### Controllo degli accessi
 
-Le tecniche descritte di seguito sono piuttosto potenti e _devono-avere_ nella toolbox di ogni sviluppatore AEM. Ma non emozionatevi troppo, usateli con saggezza. Memorizzare un oggetto in una cache e condividerlo con altri utenti nelle richieste di follow-up significa in realtà aggirare il controllo degli accessi. Solitamente questo non è un problema sui siti web rivolti al pubblico, ma può esserlo quando un utente deve effettuare il login prima di ottenere l&#39;accesso.
+Le tecniche descritte qui sono abbastanza potenti e _must-have_ nella casella degli strumenti di ogni sviluppatore AEM. Ma non emozionatevi troppo, usateli con saggezza. Memorizzare un oggetto in una cache e condividerlo con altri utenti nelle richieste di follow-up significa in realtà aggirare il controllo degli accessi. Solitamente questo non è un problema sui siti web rivolti al pubblico, ma può esserlo quando un utente deve effettuare il login prima di ottenere l&#39;accesso.
 
 È consigliabile memorizzare il markup HTML di un menu principale dei siti in una cache in memoria per condividerlo tra diverse pagine. In realtà questo è un esempio perfetto per memorizzare un elemento HTML parzialmente renderizzato in quanto la creazione di una navigazione è solitamente costosa in quanto richiede l&#39;attraversamento di molte pagine.
 
@@ -247,7 +246,7 @@ Cosa significa?
 
 3. Soprattutto in Sling, è possibile adattare (quasi) ogni oggetto l&#39;uno all&#39;altro. Considera di inserire una risorsa nella cache. La richiesta successiva (con diritti di accesso diversi), recupera la risorsa e la adatta in un resourceResolver o una sessione per accedere ad altre risorse a cui non avrebbe accesso.
 
-4. Anche se crei un sottile &quot;wrapper&quot; intorno a una risorsa da AEM, non devi memorizzarlo nella cache - anche se è personale e immutabile. L&#39;oggetto con wrapping sarebbe un riferimento (che vietiamo prima) e se guardiamo in modo netto, questo crea fondamentalmente gli stessi problemi descritti nell&#39;ultimo elemento.
+4. Anche se crei un sottile &quot;wrapper&quot; intorno a una risorsa da AEM, non devi memorizzarlo nella cache - anche se è tuo e immutabile. L&#39;oggetto con wrapping sarebbe un riferimento (che vietiamo prima) e se guardiamo in modo netto, questo crea fondamentalmente gli stessi problemi descritti nell&#39;ultimo elemento.
 
 5. Se desideri memorizzare in cache i tuoi oggetti, crea i tuoi oggetti copiando i dati primitivi nei tuoi oggetti shallo. Potrebbe essere utile collegare i propri oggetti tramite riferimenti, ad esempio per memorizzare nella cache una struttura di oggetti. Va bene, ma solo gli oggetti cache appena creati nella stessa richiesta e nessun oggetto richiesto da un altro punto (anche se si tratta dello spazio nome-nome dell’oggetto). _Copiare_ oggetti è la chiave. Assicurati inoltre di eliminare l’intera struttura degli oggetti collegati in una sola volta ed evitare riferimenti in entrata ed in uscita alla struttura.
 
@@ -259,7 +258,7 @@ Sono molte regole, ma vale la pena seguirle. Anche se siete esperti e super inte
 
 Questa serie tratta di comprendere i concetti e di consentirti di creare un’architettura che si adatti al meglio al tuo caso d’uso.
 
-Non stiamo promuovendo nessuno strumento in particolare. Ma vi darete indicazioni su come valutarle. Ad esempio, AEM dispone di una semplice cache integrata con un TTL fisso a partire dalla versione 6.0. Utilizzarlo? Probabilmente non al momento della pubblicazione in cui segue una cache basata su eventi nella catena (suggerimento: Dispatcher). Ma potrebbe per una scelta decente per un Autore. C&#39;è anche una cache HTTP da Adobe ACS commons che potrebbe essere utile considerare.
+Non stiamo promuovendo nessuno strumento in particolare. Ma vi darete indicazioni su come valutarle. Ad esempio, AEM ha una semplice cache integrata con un TTL fisso a partire dalla versione 6.0. Usarlo? Probabilmente non al momento della pubblicazione in cui segue una cache basata su eventi nella catena (suggerimento: Dispatcher). Ma potrebbe per una scelta decente per un Autore. C&#39;è anche una cache HTTP per Adobe ACS commons che potrebbe essere utile considerare.
 
 Oppure costruisci il tuo, sulla base di un framework di memorizzazione in cache maturo come [Ehcache](https://www.ehcache.org). Può essere utilizzato per memorizzare nella cache gli oggetti Java e per eseguire il rendering del markup (`String` oggetti).
 
@@ -470,7 +469,7 @@ Il test più basilare è quello di utilizzare il sito web come utente normale - 
 
 Abbiamo scoperto che un proxy potrebbe fornire una panoramica più chiara, in quanto la richiesta memorizzata nella cache non viene visualizzata nel registro, mentre alcuni debugger integrati nel browser mostrano ancora queste richieste con &quot;0 ms&quot; o &quot;dal disco&quot;. Il che è corretto e preciso, ma potrebbe offuscare un po&#39; la tua visione.
 
-Puoi quindi eseguire il drill-down e controllare le intestazioni dei file trasferiti per vedere, ad esempio, se le intestazioni http &quot;Expires&quot; sono corrette. Puoi riprodurre le richieste con intestazioni if-modified-since impostate per vedere se il server risponde correttamente con un codice di risposta 304 o 200. Puoi osservare la tempistica delle chiamate asincrone e anche testare in un certo grado le tue ipotesi di sicurezza. Ricorda che ti abbiamo detto di non accettare tutti i selettori che non sono esplicitamente previsti? Qui puoi giocare con l&#39;URL e i parametri e vedere se l&#39;applicazione si comporta bene.
+Puoi quindi eseguire il drill-down e controllare le intestazioni dei file trasferiti per vedere, ad esempio, se le intestazioni http &quot;Expires&quot; sono corrette. Puoi riprodurre le richieste con intestazioni if-modified-since impostate per vedere se il server risponde correttamente con un codice di risposta 304 o 200. Puoi osservare la tempistica delle chiamate asincrone e anche verificare in un certo grado le tue ipotesi di sicurezza. Ricorda che ti abbiamo detto di non accettare tutti i selettori che non sono esplicitamente previsti? Qui puoi giocare con l&#39;URL e i parametri e vedere se l&#39;applicazione si comporta bene.
 
 Quando esegui il debug della cache, ti chiediamo solo una cosa:
 
