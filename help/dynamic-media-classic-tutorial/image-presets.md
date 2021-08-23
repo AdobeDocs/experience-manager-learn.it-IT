@@ -10,9 +10,9 @@ activity: use
 topic: Gestione dei contenuti
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '706'
 ht-degree: 1%
 
 ---
@@ -40,8 +40,8 @@ Un predefinito per immagini ha un simbolo del dollaro ($) su entrambi i lati del
 >
 >Crea un predefinito per immagini per dimensione immagine univoca sul sito. Ad esempio, se hai bisogno di un&#39;immagine 350 X 350 per la pagina dei dettagli del prodotto, un&#39;immagine 120 X 120 per le pagine di ricerca e ricerca e un&#39;immagine 90 X 90 per un articolo di cross-selling/featured, allora hai bisogno di tre predefiniti immagine, che tu abbia 500 immagini o 500.00.
 
-- Ulteriori informazioni su [Predefiniti immagini](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
-- Scopri come [Creare un predefinito per immagini](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
+- Ulteriori informazioni su [Predefiniti immagini](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
+- Scopri come [Creare un predefinito per immagini](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
 
 ## Predefiniti immagine e nitidezza
 
@@ -63,7 +63,7 @@ L’immagine seguente mostra tre livelli di nitidezza. Da destra a sinistra non 
 
 Dynamic Media Classic consente tre tipi di nitidezza: Nitidezza semplice, modalità di campionamento e Maschera definizione dettagli.
 
-Ulteriori informazioni su [Opzioni di nitidezza di Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
+Ulteriori informazioni su [Opzioni di nitidezza di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
 
 ## Risorse aggiuntive
 
