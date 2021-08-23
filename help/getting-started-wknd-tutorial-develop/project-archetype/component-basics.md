@@ -11,9 +11,9 @@ level: Beginner
 mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
-source-git-commit: 32320905786682a852baf7d777cb06de0072c439
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1150'
 ht-degree: 1%
 
 ---
@@ -99,7 +99,7 @@ Di seguito sono riportati i passaggi di alto livello eseguiti nel video preceden
 
 ## HTL (HTML Template Language) e finestre di dialogo {#htl-dialogs}
 
-HTML Template Language o **[HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html)** è un linguaggio di template lato server leggero utilizzato dai componenti AEM per il rendering del contenuto.
+HTML Template Language o **[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)** è un linguaggio di template lato server leggero utilizzato dai componenti AEM per il rendering del contenuto.
 
 **** Le finestre di dialogo definiscono le configurazioni disponibili che possono essere rese per un componente.
 
