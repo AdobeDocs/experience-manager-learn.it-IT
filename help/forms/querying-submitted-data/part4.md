@@ -3,20 +3,19 @@ title: AEM Forms con schema e dati JSON[Parte4]
 seo-title: AEM Forms con schema e dati JSON[Parte4]
 description: Esercitazione in più parti per illustrarti i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
 seo-description: Esercitazione in più parti per illustrarti i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
-feature: Adaptive Forms
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 1%
+source-wordcount: '478'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +39,7 @@ L’interfaccia utente di esempio per eseguire una query sui dati inviati non ut
 >
 >La versione corrente di questa esercitazione non supporta la query su più colonne.
 
-Quando selezioni un modulo per eseguire la query, viene effettuata una chiamata GET a **/bin/getdatakeysfromschema**. Questa chiamata GET restituisce i campi obbligatori associati allo schema dei moduli. I campi obbligatori vengono quindi compilati nell’elenco a discesa di QueryBuilder per consentire la creazione della query.
+Quando selezioni un modulo per eseguire la query, viene effettuata una chiamata GET a **/bin/getdatakeysfromschema**. Questa chiamata di GET restituisce i campi obbligatori associati allo schema dei moduli. I campi obbligatori vengono quindi compilati nell’elenco a discesa di QueryBuilder per consentire la creazione della query.
 
 Lo snippet di codice seguente effettua una chiamata al metodo getRequiredColumnsFromSchema del servizio JSONSchemaOperations. Trasmettiamo le proprietà e gli elementi richiesti dello schema a questa chiamata del metodo . L&#39;array restituito da questa chiamata di funzione viene quindi utilizzato per compilare l&#39;elenco a discesa del generatore di query
 
@@ -74,7 +73,7 @@ Il risultato di questa query viene quindi restituito per compilare la tabella ne
 Per eseguire questo esempio sul sistema locale, esegui i seguenti passaggi
 
 1. [Assicurati di aver seguito tutti i passaggi indicati qui](part2.md)
-1. [Importa il Dashboardv2.zip utilizzando Gestione pacchetti AEM.](assets/dashboardv2.zip) Questo pacchetto contiene tutti i bundle, le impostazioni di configurazione, l&#39;invio personalizzato e la pagina di esempio necessari per eseguire query sui dati.
+1. [Importa il file Dashboardv2.zip utilizzando AEM Package Manager.](assets/dashboardv2.zip) Questo pacchetto contiene tutti i bundle, le impostazioni di configurazione, l&#39;invio personalizzato e la pagina di esempio necessari per eseguire query sui dati.
 1. Creare un modulo adattivo utilizzando lo schema json di esempio
 1. Configurare il modulo adattivo per l’invio all’azione di invio personalizzata &quot;customsubmithelpx&quot;
 1. Compila il modulo e invia
