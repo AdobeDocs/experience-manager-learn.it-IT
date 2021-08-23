@@ -11,10 +11,9 @@ level: Beginner
 kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
-translation-type: tm+mt
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3017'
+source-wordcount: '3013'
 ht-degree: 0%
 
 ---
@@ -79,11 +78,11 @@ Useremo AEM best practice e utilizzeremo:
 
 ## Test di unità e Adobe Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
-[Adobe Cloud ](https://docs.adobe.com/content/help/it/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) Manager integra l’esecuzione dei test di unità e la copertura del  [codice nella ](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) sua pipeline CI/CD per favorire e promuovere le best practice relative ai test di unità AEM codice.
+[Adobe Cloud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=it) Manager integra l’esecuzione dei test di unità e la copertura del  [codice nella ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) sua pipeline CI/CD per favorire e promuovere le best practice relative ai test di unità AEM codice.
 
 Anche se il codice di testing di unità è una buona pratica per qualsiasi base di codice, quando utilizzi Cloud Manager è importante sfruttare i suoi servizi di testing e reporting per la qualità del codice, fornendo test di unità per l’esecuzione di Cloud Manager.
 
-## Inspect le dipendenze Maven di test {#inspect-the-test-maven-dependencies}
+## Inspect per testare le dipendenze Maven {#inspect-the-test-maven-dependencies}
 
 Il primo passo è quello di controllare le dipendenze Maven per supportare la scrittura e l’esecuzione dei test. Sono necessarie quattro dipendenze:
 
@@ -289,7 +288,7 @@ In questa esercitazione viene utilizzato l&#39;ultimo approccio (in quanto abbia
 
 Il TDD nel contesto di AEM richiede un livello di competenza ed è meglio adottato dagli sviluppatori AEM esperti nello sviluppo AEM e nel testing di unità del codice AEM.
 
-## Impostazione AEM contesto di test {#setting-up-aem-test-context}
+## Impostazione AEM contesto di test  {#setting-up-aem-test-context}
 
 La maggior parte del codice scritto per AEM si basa su API JCR, Sling o AEM, che a loro volta richiedono che il contesto di un AEM in esecuzione venga eseguito correttamente.
 
