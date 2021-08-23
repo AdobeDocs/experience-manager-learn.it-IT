@@ -1,14 +1,13 @@
 ---
 title: Capitolo 7 - Utilizzo di AEM Content Services da un’app mobile - Content Services
 description: Il capitolo 7 dell’esercitazione esegue l’app mobile Android per utilizzare contenuti creati da AEM Content Services.
-feature: Content Fragments, APIs
-topic: Headless, Content Management
+feature: Frammenti di contenuto, API
+topic: Senza testa, gestione dei contenuti
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1412'
 ht-degree: 0%
 
 ---
@@ -16,7 +15,7 @@ ht-degree: 0%
 
 # Capitolo 7 - Utilizzo di AEM Content Services da un’app mobile
 
-Il capitolo 7 dell’esercitazione utilizza un’app mobile Android nativa per utilizzare contenuti da AEM Content Services.
+Il capitolo 7 dell&#39;esercitazione utilizza un&#39;app mobile Android nativa per utilizzare contenuti da AEM Content Services.
 
 ## App mobile Android
 
@@ -24,9 +23,9 @@ Questa esercitazione utilizza una **semplice app mobile nativa Android** per uti
 
 L&#39;utilizzo di [Android](https://developer.android.com/) è in gran parte poco importante e l&#39;app mobile utilizzata potrebbe essere scritta in qualsiasi framework per qualsiasi piattaforma mobile, ad esempio iOS.
 
-Android è utilizzato per le esercitazioni a causa della capacità di eseguire un emulatore Android su Windows, macOs e Linux, la sua popolarità, e che può essere scritto come Java, un linguaggio ben capito dagli sviluppatori AEM.
+Android è utilizzato per tutorial a causa della capacità di eseguire un emulatore Android su Windows, macOs e Linux, la sua popolarità, e che può essere scritto come Java, un linguaggio ben capito dagli sviluppatori AEM.
 
-*L’app mobile Android del tutorial ****non ha lo scopo di insegnare come creare app Android Mobile o trasmettere best practice di sviluppo Android, ma piuttosto di illustrare come AEM Content Services può essere utilizzato da un’applicazione mobile.*
+*L’app mobile Android del tutorial ****non ha lo scopo di istruire su come creare app Android Mobile o trasmettere le best practice di sviluppo Android, ma piuttosto di illustrare come AEM Content Services può essere utilizzato da un’applicazione mobile.*
 
 ### Come AEM Content Services guida l’esperienza dell’app mobile
 
@@ -81,25 +80,25 @@ visualizza e rilascia.
 
 ## Il codice dell’app mobile
 
-Questa sezione evidenzia il codice dell’app mobile Android che più interagisce e dipende da AEM Content Services ed è l’output JSON.
+Questa sezione evidenzia il codice dell’app mobile Android che più interagisce e dipende da AEM Content Services e dall’output JSON di .
 
-Al momento del caricamento, l’app mobile effettua da `HTTP GET` a `/content/wknd-mobile/en/api/events.model.json` che è il punto finale di AEM Content Services configurato per fornire il contenuto per l’app mobile.
+Al caricamento, l’app mobile effettua da `HTTP GET` a `/content/wknd-mobile/en/api/events.model.json` che è il punto finale di AEM Content Services configurato per fornire il contenuto per l’app mobile.
 
 Poiché il modello modificabile dell&#39;API degli eventi (`/content/wknd-mobile/en/api/events.model.json`) è bloccato, l&#39;app mobile può essere codificata per cercare informazioni specifiche in posizioni specifiche nella risposta JSON.
 
 ### Flusso del codice di alto livello
 
 1. L’apertura dell’ [!DNL WKND Mobile] app richiama una richiesta `HTTP GET` all’AEM Publish at `/content/wknd-mobile/en/api/events.model.json` per raccogliere il contenuto per popolare l’interfaccia utente dell’app mobile.
-2. Dopo aver ricevuto il contenuto da AEM, ciascuno dei tre elementi di visualizzazione dell’app mobile, il **logo, la riga di tag e l’elenco di eventi** vengono inizializzati con il contenuto da AEM.
-   * Per eseguire un binding al contenuto AEM con l’elemento di visualizzazione dell’app mobile, il JSON che rappresenta ciascun componente AEM è un oggetto mappato a un POJO Java, che a sua volta è associato all’elemento di visualizzazione Android.
+2. Dopo aver ricevuto il contenuto da AEM, ciascuno dei tre elementi di visualizzazione dell&#39;app mobile, il **logo, la riga tag e l&#39;elenco eventi** vengono inizializzati con il contenuto di AEM.
+   * Per eseguire un binding al contenuto AEM all’elemento di visualizzazione dell’app mobile, il JSON che rappresenta ciascun componente AEM è un oggetto mappato a un POJO Java, che a sua volta è associato all’elemento Visualizzazione Android.
       * Componente immagine JSON → Logo POJO → Logo ImageView
       * Componente di testo JSON → TagLine POJO → Text ImageView
       * JSON Elenco frammenti di contenuto → Eventi POJO → Eventi RecyclerView
    * *Il codice dell’app mobile è in grado di mappare il JSON ai POJO a causa delle posizioni ben note all’interno della risposta JSON maggiore. Ricorda che le chiavi JSON di &quot;image&quot;, &quot;text&quot; e &quot;contentfragmentlist&quot; sono dettate dai nomi dei nodi dei componenti AEM di supporto. Se questi nomi di nodo cambiano, allora l&#39;app mobile si interromperà in quanto non saprà come ottenere il contenuto richiesto dai dati JSON.*
 
-#### Richiamo del punto finale di AEM Content Services
+#### Richiamo dell&#39;endpoint AEM Content Services
 
-Di seguito è riportata una distillazione del codice nell’ `MainActivity` dell’app mobile responsabile di richiamare AEM Content Services per raccogliere il contenuto che motiva l’esperienza dell’app mobile.
+Di seguito è riportata una distillazione del codice nell’ `MainActivity` dell’app mobile responsabile della chiamata AEM Content Services per raccogliere il contenuto che guida l’esperienza dell’app mobile.
 
 ```
 protected void onCreate(Bundle savedInstanceState) {
@@ -156,13 +155,13 @@ public class LogoViewBinder implements ViewBinder {
 }
 ```
 
-La prima riga di `bind(...)` naviga verso il basso nella risposta JSON tramite le chiavi **:items → root → :items** che rappresenta il contenitore di layout AEM a cui sono stati aggiunti i componenti.
+La prima riga di `bind(...)` naviga verso il basso nella risposta JSON tramite le chiavi **:items → root → :items** che rappresentano il contenitore di layout AEM a cui sono stati aggiunti i componenti.
 
 Da qui viene effettuato un controllo per una chiave denominata **image**, che rappresenta il componente Immagine (ancora una volta, è importante che il nome del nodo → la chiave JSON sia stabile). Se questo oggetto esiste, legge e mappa l&#39; [immagine personalizzata POJO](#image-pojo) tramite la libreria Jackson `ObjectMapper`. L&#39;immagine POJO è illustrata di seguito.
 
 Infine, il logo `src` viene caricato in Android ImageView utilizzando la libreria di supporto [!DNL Glide].
 
-Nota che è necessario fornire lo schema, l’host e la porta AEM (tramite `aemHost`) all’istanza di pubblicazione AEM, in quanto AEM Content Services fornirà solo il percorso JCR (ad esempio. `/content/dam/wknd-mobile/images/wknd-logo.png`) al contenuto a cui si fa riferimento.
+Nota che è necessario fornire lo schema, l’host e la porta AEM (tramite `aemHost`) all’istanza di pubblicazione AEM, in quanto AEM Content Services fornirà solo il percorso JCR (ad es. `/content/dam/wknd-mobile/images/wknd-logo.png`) al contenuto a cui si fa riferimento.
 
 #### Immagine POJO{#image-pojo}
 
@@ -187,7 +186,7 @@ Il POJO evento, che richiede la selezione di molti più punti dati dall’oggett
 
 ## Esplorare l’esperienza con l’app mobile
 
-Ora che hai capito come AEM Content Services può promuovere l’esperienza mobile nativa, utilizza ciò che hai imparato a eseguire i seguenti passaggi e osserva le modifiche che si riflettono nell’app mobile.
+Ora che hai capito come AEM Content Services è in grado di promuovere l’esperienza mobile nativa, utilizza ciò che hai imparato a eseguire i seguenti passaggi e osserva le modifiche che si riflettono nell’app mobile.
 
 Dopo ogni passaggio, effettua il pull-to-refresh the Mobile App e verifica l’aggiornamento dell’esperienza mobile.
 
@@ -197,13 +196,13 @@ Dopo ogni passaggio, effettua il pull-to-refresh the Mobile App e verifica l’a
 
 ## Congratulazioni
 
-**Hai completato l’esercitazione AEM Headless.**
+**Hai completato l&#39;esercitazione AEM Headless!**
 
-Per ulteriori informazioni su AEM Content Services e AEM as a Headless CMS, consulta la documentazione e il materiale di abilitazione di Adobe:
+Per ulteriori informazioni su AEM Content Services e AEM come CMS headless, visita la documentazione e il materiale di abilitazione di Adobe:
 
 * [Utilizzo di frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
-* [Guida utente ai componenti core di AEM WCM](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/introduction.html)
-* [Libreria dei componenti core di AEM WCM](https://opensource.adobe.com/aem-core-wcm-components/library.html)
-* [Progetto GitHub per componenti core di AEM WCM](https://github.com/adobe/aem-core-wcm-components)
-* [Componenti core di AEM WCM - Chiedi agli esperti](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
+* [Guida utente AEM componenti core di WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+* [AEM libreria dei componenti core di WCM](https://opensource.adobe.com/aem-core-wcm-components/library.html)
+* [AEM progetto GitHub per componenti core WCM](https://github.com/adobe/aem-core-wcm-components)
+* [AEM componenti core WCM - Chiedi all’esperto](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
 * [Esempio di codice per l’esportazione di componenti](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/bundle/src/main/java/com/adobe/acs/samples/models/SampleComponentExporter.java)
