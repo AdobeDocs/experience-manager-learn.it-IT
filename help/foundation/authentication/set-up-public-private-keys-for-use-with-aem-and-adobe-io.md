@@ -2,25 +2,24 @@
 seo: Set up public and private keys for use with AEM and Adobe I/O
 description: 'AEM utilizza coppie di chiavi pubblica/privata per comunicare in modo sicuro con Adobe I/O e altri servizi web. Questa breve esercitazione illustra come è possibile generare chiavi e keystore compatibili utilizzando lo strumento a riga di comando openssl che funziona sia con AEM che con Adobe I/O. '
 version: 6.4, 6.5
-feature: Users and Groups
+feature: Utenti e gruppi
 topics: authentication, integrations
 activity: setup
 audience: architect, developer, implementer
 doc-type: tutorial
 kt: 2450
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
 
 
-# Configurazione di chiavi pubbliche e private da utilizzare con Adobe I/O
+# Configurare le chiavi pubbliche e private da utilizzare con Adobe I/O
 
 AEM utilizza coppie di chiavi pubblica/privata per comunicare in modo sicuro con Adobe I/O e altri servizi web. Questa breve esercitazione illustra come è possibile generare chiavi e keystore compatibili utilizzando lo strumento della riga di comando [!DNL openssl] che funziona sia con AEM che con Adobe I/O.
 
@@ -36,7 +35,7 @@ Il comando [[!DNL openssl]](https://www.openssl.org/docs/man1.0.2/man1/openssl.h
 $ openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate.crt
 ```
 
-Per completare il comando [!DNL openssl generate], fornisci le informazioni sul certificato quando richiesto. Adobe I/O e AEM non si interessano di cosa si tratta, ma devono allinearsi e descrivere la tua chiave.
+Per completare il comando [!DNL openssl generate], fornisci le informazioni sul certificato quando richiesto. Adobe I/O e AEM non si interessano a quali sono questi valori, tuttavia dovrebbero allinearsi e descrivere la tua chiave.
 
 ```
 Generating a 2048 bit RSA private key
@@ -96,27 +95,27 @@ Certificate fingerprint (SHA1): 7C:6C:25:BD:52:D3:3B:29:83:FD:A2:93:A8:53:91:6A:
 
 ![Verificare l’archivio chiavi in Adobe I/O](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--public-keys.png)
 
-## Aggiunta del keystore ad AEM {#adding-the-keystore-to-aem}
+## Aggiunta del keystore a AEM {#adding-the-keystore-to-aem}
 
-AEM utilizza la **chiave privata** generata per comunicare in modo sicuro con Adobe I/O e altri servizi web. Affinché la chiave privata sia accessibile ad AEM, deve essere installata in un keystore dell’utente AEM.
+AEM utilizza la **chiave privata** generata per comunicare in modo sicuro con Adobe I/O e altri servizi web. Affinché la chiave privata sia accessibile a AEM, deve essere installata in un keystore AEM utente.
 
 Passa a **AEM > [!UICONTROL Strumenti] > [!UICONTROL Sicurezza] > [!UICONTROL Utenti]** e **modifica l&#39;utente** a cui deve essere associata la chiave privata.
 
-### Creare un keystore AEM {#create-an-aem-keystore}
+### Creare un AEM keystore {#create-an-aem-keystore}
 
 ![Crea KeyStore in ](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/aem--create-keystore.png)
 *AEM >  [!UICONTROL Strumenti]  >  [!UICONTROL Sicurezza]  >  [!UICONTROL Utenti]  > Modifica utente*
 
 Se viene richiesto di creare un archivio chiavi, eseguire questa operazione. Questo keystore esisterà solo in AEM e NON è il keystore creato tramite openssl. La password può essere qualsiasi cosa e non deve essere la stessa utilizzata nel comando [!DNL openssl] .
 
-### Installa la chiave privata tramite il keystore {#install-the-private-key-via-the-keystore}
+### Installare la chiave privata tramite il keystore {#install-the-private-key-via-the-keystore}
 
 ![Aggiungi chiave privata in ](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/aem--add-private-key.png)
 *[!UICONTROL AEMUser]  >  [!UICONTROL Registro chiavi] >  [!UICONTROL Aggiungi chiave privata da keystore]*
 
 Nella console dell&#39;archivio chiavi dell&#39;utente, fai clic su **[!UICONTROL Aggiungi chiave privata dal file KeyStore]** e aggiungi le seguenti informazioni:
 
-* **[!UICONTROL Nuovo alias]**: alias della chiave in AEM. Questo può essere qualsiasi cosa e non deve corrispondere al nome del keystore creato con il comando openssl.
+* **[!UICONTROL Nuovo alias]**: l&#39;alias della chiave in AEM. Questo può essere qualsiasi cosa e non deve corrispondere al nome del keystore creato con il comando openssl.
 * **[!UICONTROL File]** KeyStore: l&#39;output del comando openssl pkcs12 (keystore.p12)
 * **[!UICONTROL Password]** file KeyStore: La password impostata nel comando openssl pkcs12 tramite  `-passout` argomento.
 * **[!UICONTROL Alias]** chiave privata: Il valore fornito all&#39; `-name` argomento nel comando openssl pkcs12 di cui sopra (cioè  `my-key`).
@@ -126,29 +125,29 @@ Nella console dell&#39;archivio chiavi dell&#39;utente, fai clic su **[!UICONTRO
 >
 >La password del file KeyStore e la password della chiave privata sono uguali per entrambi gli input. Se si immette una password non corrispondente, la chiave non verrà importata.
 
-### Verifica che la chiave privata sia caricata nel keystore AEM {#verify-the-private-key-is-loaded-into-the-aem-keystore}
+### Verifica che la chiave privata sia caricata nell&#39;archivio chiavi AEM {#verify-the-private-key-is-loaded-into-the-aem-keystore}
 
 ![Verificare la chiave privata in ](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/aem--keystore.png)
 *[!UICONTROL AEMUser]  >  [!UICONTROL Keystore]*
 
-Quando la chiave privata viene caricata correttamente dal keystore fornito all’AEM keystore, i metadati della chiave privata vengono visualizzati nella console del keystore dell’utente.
+Quando la chiave privata viene caricata correttamente dall&#39;archivio chiavi fornito nell&#39;archivio chiavi AEM, i metadati della chiave privata vengono visualizzati nella console dell&#39;archivio chiavi dell&#39;utente.
 
-## Aggiunta della chiave pubblica ad Adobe I/O {#adding-the-public-key-to-adobe-i-o}
+## Aggiunta della chiave pubblica all’Adobe I/O {#adding-the-public-key-to-adobe-i-o}
 
-La chiave pubblica corrispondente deve essere caricata in Adobe I/O per consentire all’utente del servizio AEM, che ha la chiave pubblica corrispondente privata per comunicare in modo sicuro.
+La chiave pubblica corrispondente deve essere caricata in Adobe I/O per consentire all’utente del servizio AEM, che ha la chiave pubblica corrispondente privata di comunicare in modo sicuro.
 
-### Creare una nuova integrazione di Adobe I/O {#create-a-adobe-i-o-new-integration}
+### Creare un Adobe I/O di nuova integrazione {#create-a-adobe-i-o-new-integration}
 
-![Creare una nuova integrazione di Adobe I/O](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--create-new-integration.png)
+![Creare un Adobe I/O di nuova integrazione](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--create-new-integration.png)
 
-*[[!UICONTROL Creare l’integrazione]](https://console.adobe.io/)  Adobe I/O >  [!UICONTROL Nuova integrazione]*
+*[[!UICONTROL Creare un’integrazione]](https://console.adobe.io/)  di Adobe I/O >  [!UICONTROL Nuova integrazione]*
 
-Per creare una nuova integrazione in Adobe I/O è necessario caricare un certificato pubblico. Carica il **certificate.crt** generato dal comando `openssl req`.
+La creazione di una nuova integrazione in Adobe I/O richiede il caricamento di un certificato pubblico. Carica il **certificate.crt** generato dal comando `openssl req`.
 
 ### Verifica che le chiavi pubbliche siano caricate in Adobe I/O {#verify-the-public-keys-are-loaded-in-adobe-i-o}
 
-![Verifica chiavi pubbliche in Adobe I/O](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--public-keys.png)
+![Verifica chiavi pubbliche nell’Adobe I/O](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--public-keys.png)
 
-Le chiavi pubbliche installate e le relative date di scadenza sono elencate nella console [!UICONTROL Integrazioni] su Adobe I/O. È possibile aggiungere più chiavi pubbliche tramite il pulsante **[!UICONTROL Aggiungi una chiave pubblica]** .
+Le chiavi pubbliche installate e le relative date di scadenza sono elencate ad Adobe I/O nella console [!UICONTROL Integrazioni] . È possibile aggiungere più chiavi pubbliche tramite il pulsante **[!UICONTROL Aggiungi una chiave pubblica]** .
 
-Ora AEM detiene la chiave privata e l’integrazione Adobe I/O detiene la corrispondente chiave pubblica, consentendo ad AEM di comunicare in modo sicuro con Adobe I/O.
+Ora AEM tenere la chiave privata e l&#39;integrazione Adobe I/O detiene la chiave pubblica corrispondente, consentendo AEM comunicare in modo sicuro con l&#39;Adobe I/O.
