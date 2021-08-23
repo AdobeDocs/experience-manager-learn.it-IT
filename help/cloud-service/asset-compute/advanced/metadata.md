@@ -12,7 +12,6 @@ thumbnail: 327313.jpg
 topic: Integrazioni, Sviluppo
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
 source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
 workflow-type: tm+mt
 source-wordcount: '1439'
@@ -88,7 +87,7 @@ packages:
 
 Le `limits` e `require-adobe-auth` sono configurate in modo discreto per lavoratore. In questo processo di lavoro, `512 MB` di memoria viene allocata mentre il codice controlla (potenzialmente) grandi dati di immagine binari. Gli altri `limits` vengono rimossi per utilizzare i valori predefiniti.
 
-## Sviluppare un processo di lavoro metadati{#metadata-worker}
+## Sviluppare un processo di lavoro per metadati{#metadata-worker}
 
 Crea un nuovo file JavaScript di lavoro metadati nel progetto di Asset compute nel percorso [definito manifest.yml per il nuovo processo di lavoro](#manifest), all&#39;indirizzo `/actions/metadata-colors/index.js`
 
@@ -181,7 +180,7 @@ function getColorName(colorsFamily, color) {
 }
 ```
 
-## Esegui il processo di lavoro metadati localmente{#development-tool}
+## Eseguire il processo di lavoro metadati localmente{#development-tool}
 
 Completato il codice del lavoratore, può essere eseguito utilizzando lo strumento di sviluppo Asset compute locale.
 
@@ -257,7 +256,7 @@ $ aio app deploy
 
 In questo modo verranno distribuiti tutti i processi di lavoro del progetto. Consulta le [istruzioni di distribuzione senza limiti](../deploy/runtime.md) per informazioni su come distribuire nelle aree di lavoro di Stage e Produzione.
 
-### Integrare con AEM Profili di elaborazione{#processing-profile}
+### Integrazione con i profili di elaborazione AEM{#processing-profile}
 
 Richiama il lavoratore da AEM creando un nuovo servizio Profilo di elaborazione personalizzato esistente che richiama il lavoratore distribuito o modificandone uno esistente.
 
