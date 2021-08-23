@@ -4,20 +4,19 @@ seo-title: Registrazione di tipi di risorse personalizzati
 description: Abilitazione dei tipi di risorse personalizzate per l’inserimento nell’elenco in AEMForms Portal
 seo-description: Abilitazione dei tipi di risorse personalizzate per l’inserimento nell’elenco in AEMForms Portal
 uuid: eaf29eb0-a0f6-493e-b267-1c5c4ddbe6aa
-feature: Adaptive Forms
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
 discoiquuid: 99944f44-0985-4320-b437-06c5adfc60a1
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '669'
 ht-degree: 2%
 
 ---
@@ -29,7 +28,7 @@ Abilitazione dei tipi di risorse personalizzate per l’inserimento nell’elenc
 
 >[!NOTE]
 >
->Assicurati di avere AEM 6.3 con SP1 e il corrispondente componente aggiuntivo AEM Forms installato. Questa funzione funziona solo con AEM Forms 6.3 SP1 e versioni successive
+>Assicurati di avere installato AEM 6.3 con SP1 e il corrispondente componente aggiuntivo AEM Forms installato. Questa funzione funziona solo con AEM Forms 6.3 SP1 e versioni successive
 
 ## Specifica percorso di base {#specify-base-path}
 
@@ -53,13 +52,13 @@ Specificando la proprietà del percorso su **&quot;/content/dam&quot;** si sta f
 
 ![basepath](assets/basepath.png)
 
-## Registrare i tipi di risorse personalizzate {#register-custom-asset-types}
+## Registrare tipi di risorse personalizzati {#register-custom-asset-types}
 
 È stata aggiunta una nuova scheda (Elenco risorse) nel componente Ricerca e ascoltatore . Questa scheda elenca i tipi di risorse predefiniti e i tipi di risorse aggiuntivi che configuri. Per impostazione predefinita, sono elencati i seguenti tipi di risorse
 
 1. Moduli adattivi
 1. Modelli di modulo
-1. Moduli PDF
+1. PDF forms
 1. Document(PDF statici)
 
 **Passaggi per registrare il tipo di risorsa personalizzato**
