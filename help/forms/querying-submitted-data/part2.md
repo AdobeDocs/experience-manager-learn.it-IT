@@ -3,20 +3,19 @@ title: AEM Forms con schema JSON e dati[Parte2]
 seo-title: AEM Forms con schema JSON e dati[Parte2]
 description: Esercitazione in più parti per illustrarti i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
 seo-description: Esercitazione in più parti per illustrarti i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
-feature: Adaptive Forms
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 1%
+source-wordcount: '374'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +29,7 @@ ht-degree: 1%
 
 Per memorizzare i dati inviati nel database, scriveremo un servlet per estrarre i dati associati, il nome e l’archivio del modulo. Di seguito è riportato il codice completo per gestire l&#39;invio del modulo e memorizzare i afBoundData nel database.
 
-È stato creato un invio personalizzato per gestire l’invio del modulo. In questo post.POST.jsp di invio personalizzato inoltriamo la richiesta al nostro servlet.
+È stato creato un invio personalizzato per gestire l’invio del modulo. In questo post di invio personalizzato.POST.jsp inoltriamo la richiesta al nostro servlet.
 
 Per ulteriori informazioni sull&#39;invio personalizzato, leggere questo [articolo](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
 
