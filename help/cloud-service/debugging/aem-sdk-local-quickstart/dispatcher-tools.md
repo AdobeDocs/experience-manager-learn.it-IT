@@ -1,6 +1,6 @@
 ---
 title: Debug degli strumenti di Dispatcher
-description: Gli strumenti di Dispatcher forniscono un ambiente Apache Web Server containerizzato che può essere utilizzato per simulare il Dispatcher del servizio AEM as a Cloud Services di AEM Publish localmente. Il debug dei registri e dei contenuti della cache degli strumenti di Dispatcher può essere fondamentale per garantire che l’applicazione AEM end-to-end e il supporto delle configurazioni di cache e sicurezza siano corretti.
+description: Dispatcher Tools fornisce un ambiente Apache Web Server containerizzato che può essere utilizzato per simulare AEM come Dispatcher del servizio AEM Publish di Cloud Services localmente. Il debug dei registri e dei contenuti della cache degli strumenti di Dispatcher può essere fondamentale per garantire che l’applicazione AEM end-to-end e le configurazioni di cache e sicurezza di supporto siano corrette.
 feature: Dispatcher
 topics: development
 version: cloud-service
@@ -8,22 +8,21 @@ doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5918
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner, Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 1%
+source-wordcount: '231'
+ht-degree: 0%
 
 ---
 
 
 # Debug degli strumenti di Dispatcher
 
-Gli strumenti di Dispatcher forniscono un ambiente Apache Web Server containerizzato che può essere utilizzato per simulare il Dispatcher del servizio AEM as a Cloud Services di AEM Publish localmente.
-Il debug dei registri e dei contenuti della cache degli strumenti di Dispatcher può essere fondamentale per garantire che l’applicazione AEM end-to-end e il supporto delle configurazioni di cache e sicurezza siano corretti.
+Dispatcher Tools fornisce un ambiente Apache Web Server containerizzato che può essere utilizzato per simulare AEM come Dispatcher del servizio AEM Publish di Cloud Services localmente.
+Il debug dei registri e dei contenuti della cache degli strumenti di Dispatcher può essere fondamentale per garantire che l’applicazione AEM end-to-end e le configurazioni di cache e sicurezza di supporto siano corrette.
 
 >[!NOTE]
 >
