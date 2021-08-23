@@ -10,9 +10,9 @@ activity: use
 topic: Gestione dei contenuti
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2670'
+source-wordcount: '2659'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ Uno dei principali punti di forza del concetto di immagine master di Dynamic Med
 
 Alla fine di questa sezione dell’esercitazione saprai come:
 
-- Ritagliare le immagini in Dynamic Media Classic e salvarle come nuovi file master o come immagini virtuali. [Per saperne di più](https://docs.adobe.com/help/en/dynamic-media-classic/using/master-files/cropping-image.html).
-- Salvare le immagini modificate virtuali e utilizzarle al posto delle risorse principali. [Per saperne di più](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/adjusting-image.html).
-- Crea destinazioni di zoom sulle immagini per mostrarne le caratteristiche di rilievo. [Per saperne di più](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html).
+- Ritagliare le immagini in Dynamic Media Classic e salvarle come nuovi file master o come immagini virtuali. [Per saperne di più](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html).
+- Salvare le immagini modificate virtuali e utilizzarle al posto delle risorse principali. [Per saperne di più](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/adjusting-image.html).
+- Crea destinazioni di zoom sulle immagini per mostrarne le caratteristiche di rilievo. [Per saperne di più](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html).
 
 ## Ritaglio
 
@@ -45,8 +45,8 @@ Dynamic Media Classic dispone di alcuni strumenti di modifica delle immagini dis
 
 Per accedere allo strumento Ritaglio in Dynamic Media Classic dalla pagina Dettagli di una risorsa o facendo clic sul pulsante **Modifica** . Potete usare lo strumento per ritagliare in due modi:
 
-- Modalità di ritaglio predefinita in cui trascinare le maniglie della finestra di ritaglio o digitare i valori nella casella Dimensioni. Scopri come [Ritagliare manualmente](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
-- Rifila. Utilizza questo per rimuovere spazi bianchi aggiuntivi intorno all&#39;immagine calcolando il numero di pixel che non corrispondono all&#39;immagine. Scopri come ritagliare [tagliando](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
+- Modalità di ritaglio predefinita in cui trascinare le maniglie della finestra di ritaglio o digitare i valori nella casella Dimensioni. Scopri come [Ritagliare manualmente](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
+- Rifila. Utilizza questo per rimuovere spazi bianchi aggiuntivi intorno all&#39;immagine calcolando il numero di pixel che non corrispondono all&#39;immagine. Scopri come ritagliare [tagliando](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
 
 ### _Ritaglio manuale_
 
@@ -137,7 +137,7 @@ Il processo è molto semplice: fai clic sulla feature, assegnagli un nome descri
 
 Un altro fattore per decidere se utilizzare le destinazioni di zoom è la scelta del visualizzatore. Non tutti i tipi di visualizzatore possono visualizzare le destinazioni di zoom (ad esempio, il visualizzatore a comparsa non le supporta).
 
-Scopri come [Creare destinazioni di zoom](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets).
+Scopri come [Creare destinazioni di zoom](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets).
 
 ![immagine](assets/crop-adjusted-zoom-targets/zoom-targets.jpg)
 
