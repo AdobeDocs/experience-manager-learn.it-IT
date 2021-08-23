@@ -1,19 +1,17 @@
 ---
 title: Distribuzione di produzione utilizzando un servizio AEM Publish - Guida introduttiva a AEM Headless - GraphQL
 description: Scopri i servizi Author e Publish di AEM e il modello di implementazione consigliato per le applicazioni headless. In questa esercitazione, scopri come utilizzare le variabili di ambiente per modificare dinamicamente un endpoint GraphQL in base all’ambiente di destinazione. Scopri come configurare AEM per la condivisione di risorse tra origini diverse (CORS, Cross-Origin resource sharing).
-sub-product: assets
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
+feature: Frammenti di contenuto, API GraphQL
+topic: Senza testa, gestione dei contenuti
+role: Developer
+level: Beginner
 mini-toc-levels: 1
 kt: 7131
 thumbnail: KT-7131.jpg
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2361'
+source-wordcount: '2367'
 ht-degree: 1%
 
 ---
@@ -35,7 +33,7 @@ Scopri come:
 * Scopri le best practice per la gestione delle variabili di ambiente.
 * Scopri come configurare AEM in modo appropriato per la condivisione di risorse tra origini diverse (CORS, Cross-Origin resource sharing).
 
-## Creare e pubblicare il pattern di distribuzione {#deployment-pattern}
+## Pattern di distribuzione di pubblicazione dell’autore {#deployment-pattern}
 
 Un ambiente AEM completo è costituito da Author, Publish e Dispatcher. Il servizio Author è il luogo in cui gli utenti interni creano, gestiscono e visualizzano in anteprima i contenuti. Il servizio Publish è considerato l’ambiente &quot;Live&quot; ed è tipicamente quello con cui gli utenti finali interagiscono. I contenuti, dopo essere stati modificati e approvati nel servizio Author, vengono distribuiti al servizio Publish.
 
@@ -82,7 +80,7 @@ Una guida più dettagliata per la configurazione di un ambiente di sviluppo loca
 
    È previsto che venga restituita una pagina 404 Non trovato . Questa è una nuova istanza AEM e non è stato installato alcun contenuto.
 
-## Installa contenuto di esempio e endpoint GraphQL {#wknd-site-content-endpoints}
+## Installare il contenuto di esempio e gli endpoint GraphQL {#wknd-site-content-endpoints}
 
 Come nell’istanza Author, l’istanza Publish deve avere gli endpoint GraphQL abilitati e deve disporre di contenuto di esempio. Quindi, installa il sito di riferimento WKND sull&#39;istanza Publish.
 
@@ -187,7 +185,7 @@ L’app React può essere avviata utilizzando il server webpack, ma solo per lo 
 
    Tieni presente che viene generato un errore GraphQL per `adventureContributor`. Negli esercizi successivi, le immagini interrotte e i problemi `adventureContributor` sono risolti.
 
-## Riferimenti immagine assoluti {#absolute-image-references}
+## Riferimenti a immagini assolute {#absolute-image-references}
 
 Le immagini appaiono interrotte perché l&#39;attributo `<img src` è impostato su un percorso relativo e finisce per puntare al server statico Node in `http://localhost:5000/`. Queste immagini dovrebbero invece puntare all’istanza di AEM Publish. Ci sono diverse soluzioni potenziali a questo problema. Quando si utilizza il server di sviluppo del webpack, il file `react-app/src/setupProxy.js` configura un proxy tra il server webpack e l&#39;istanza di authoring AEM per tutte le richieste a `/content`. Una configurazione proxy può essere utilizzata in un ambiente di produzione ma deve essere configurata a livello di server web. Ad esempio, il modulo proxy di [Apache](https://httpd.apache.org/docs/2.4/mod/mod_proxy.html).
 
