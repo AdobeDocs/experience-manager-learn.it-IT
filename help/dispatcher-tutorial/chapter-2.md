@@ -2,13 +2,12 @@
 title: '"Capitolo 2 - Infrastruttura del Dispatcher"'
 description: Comprendere la topologia di pubblicazione e dispatcher. Scopri le topologie e le impostazioni più comuni.
 feature: Dispatcher
-topic: Architecture
+topic: Architettura
 role: Architect
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1866'
 ht-degree: 0%
 
 ---
@@ -36,7 +35,7 @@ Il dispatcher ha ricevuto il suo nome da: Sostanzialmente era inviare richieste.
 
 ### Configurazione con più lame
 
-Oggi una topologia leggermente diversa è più comune. Una topologia a più gambe avrebbe un Dispatcher per server di pubblicazione. Un load balancer dedicato (hardware) si trova di fronte all’infrastruttura AEM che invia le richieste a queste due (o più) gambe:
+Oggi una topologia leggermente diversa è più comune. Una topologia a più gambe avrebbe un Dispatcher per server di pubblicazione. Un load balancer dedicato (hardware) si trova di fronte all&#39;infrastruttura AEM che invia le richieste a queste due (o più) gambe:
 
 ![Configurazione del Dispatcher standard - Facile da gestire e mantenere](assets/chapter-2/modern-standard-dispatcher-setup.png)
 
@@ -74,7 +73,7 @@ Ogni sistema di pubblicazione è connesso a una moltitudine di istanze di Dispat
 
 #### Manutenzione
 
-Va da sé che la configurazione iniziale dei sistemi Dispatcher e Publish è un po&#39; più complessa. Ma ricorda anche che lo sforzo di una versione &quot;continua&quot; è un po&#39; più alto. I sistemi AEM possono e devono essere aggiornati durante l’esecuzione. Ma è saggio non farlo mentre stanno attivamente servendo le richieste. Di solito si desidera aggiornare solo una parte dei sistemi di pubblicazione, mentre gli altri continuano a servire attivamente il traffico e poi, dopo il test, passano all&#39;altra parte. Se sei fortunato e puoi accedere al load-balancer nel processo di distribuzione, puoi disattivare il routing ai server in manutenzione qui. Se utilizzi un servizio di bilanciamento del carico condiviso senza accesso diretto, arresta i dispatcher della pubblicazione che desideri aggiornare. Più ci sono, più dovrete chiudere. Se c&#39;è un numero elevato e si sta pianificando aggiornamenti frequenti, è consigliabile un po&#39; di automazione. Se non avete strumenti di automazione, comunque, scalare è una cattiva idea.
+Va da sé che la configurazione iniziale dei sistemi Dispatcher e Publish è un po&#39; più complessa. Ma ricorda anche che lo sforzo di una versione &quot;continua&quot; è un po&#39; più alto. I sistemi AEM possono e devono essere aggiornati durante l&#39;esecuzione. Ma è saggio non farlo mentre stanno attivamente servendo le richieste. Di solito si desidera aggiornare solo una parte dei sistemi di pubblicazione, mentre gli altri continuano a servire attivamente il traffico e poi, dopo il test, passano all&#39;altra parte. Se sei fortunato e puoi accedere al load-balancer nel processo di distribuzione, puoi disattivare il routing ai server in manutenzione qui. Se utilizzi un servizio di bilanciamento del carico condiviso senza accesso diretto, arresta i dispatcher della pubblicazione che desideri aggiornare. Più ci sono, più dovrete chiudere. Se c&#39;è un numero elevato e si sta pianificando aggiornamenti frequenti, è consigliabile un po&#39; di automazione. Se non avete strumenti di automazione, comunque, scalare è una cattiva idea.
 
 In un progetto precedente abbiamo usato un trucco diverso per rimuovere un sistema di pubblicazione dal bilanciamento del carico senza avere accesso diretto al load-balancer stesso.
 
@@ -132,7 +131,7 @@ Questo però ha un prezzo.
 
 Primo, togliere una gamba per la manutenzione è abbastanza ingombrante. In realtà, questo è lo scopo di questo progetto; essere più resiliente e rimanere in piedi e in funzione con tutti i mezzi possibili. Abbiamo visto piani di manutenzione complicati su come affrontarli. Riconfigura prima il Dispatcher 2, rimuovendo la connessione incrociata. Riavvio di Dispatcher 2. Arresto di Dispatcher 1, aggiornamento Pubblica 1, ... e così via. Si dovrebbe considerare attentamente se questo si sviluppa fino a più di due gambe. Arriverete alla conclusione che in realtà aumenta la complessità, i costi ed è una formidabile fonte di errore umano. Sarebbe meglio automatizzare questo processo. Quindi meglio controllare, se avete effettivamente le risorse umane per includere questo compito di automazione nel vostro programma di progetto. Anche se con questo si potrebbero risparmiare alcuni costi hardware, si potrebbe spendere il doppio per il personale IT.
 
-In secondo luogo, è possibile che alcune applicazioni utente siano in esecuzione su AEM che richiedono un accesso. Usi le sessioni permanenti per garantire che un utente venga sempre servito dalla stessa istanza di AEM in modo da poter mantenere lo stato di sessione su tale istanza. Avendo questa configurazione interconnessa, è necessario assicurarsi che le sessioni permanenti funzionino correttamente sul load balancer e sui Dispatcher. Non impossibile - ma è necessario essere consapevoli di questo e aggiungere alcune ore di configurazione e test aggiuntive, che - ancora una volta - potrebbero livellare i risparmi che avevate pianificato salvando l&#39;hardware.
+In secondo luogo, è possibile che alcune applicazioni utente siano in esecuzione sul AEM che richiede un accesso. Utilizza le sessioni permanenti per garantire che un utente venga sempre servito dalla stessa istanza AEM in modo da poter mantenere lo stato di sessione in tale istanza. Avendo questa configurazione interconnessa, è necessario assicurarsi che le sessioni permanenti funzionino correttamente sul load balancer e sui Dispatcher. Non impossibile - ma è necessario essere consapevoli di questo e aggiungere alcune ore di configurazione e test aggiuntive, che - ancora una volta - potrebbero livellare i risparmi che avevate pianificato salvando l&#39;hardware.
 
 ### Conclusione
 
