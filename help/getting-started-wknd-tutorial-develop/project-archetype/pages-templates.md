@@ -12,10 +12,9 @@ level: Beginner
 mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
-translation-type: tm+mt
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3106'
+source-wordcount: '3100'
 ht-degree: 1%
 
 ---
@@ -160,7 +159,7 @@ Passaggi di alto livello per il video seguente:
 
 ## Aggiornare intestazione e piè di pagina con frammenti esperienza {#experience-fragments}
 
-Una pratica comune durante la creazione di contenuto globale, ad esempio intestazione o piè di pagina, consiste nell’utilizzare un [Frammento esperienza](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Frammenti esperienza consente agli utenti di combinare più componenti per creare un singolo componente utilizzabile come riferimento. I frammenti esperienza hanno il vantaggio di supportare la gestione multisito e la [localizzazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
+Una pratica comune durante la creazione di contenuto globale, ad esempio intestazione o piè di pagina, consiste nell’utilizzare un [Frammento esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Frammenti esperienza consente agli utenti di combinare più componenti per creare un singolo componente utilizzabile come riferimento. I frammenti esperienza hanno il vantaggio di supportare la gestione multisito e la [localizzazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
 
 L’Archetipo di progetto AEM ha generato un’intestazione e un piè di pagina. Quindi, aggiorna i frammenti esperienza in modo che corrispondano ai pattern. Segui i passaggi del video seguente:
 
@@ -262,7 +261,7 @@ Utilizza lo strumento CRXDE-Lite su un&#39;istanza AEM locale per visualizzare l
 
    Al di sotto del componente pagina sono presenti solo 2 script HTL, `customfooterlibs.html` e `customheaderlibs.html`. *Quindi, in che modo questo componente esegue il rendering della pagina?*
 
-   La proprietà `sling:resourceSuperType` punta a `core/wcm/components/page/v2/page`. Questa proprietà consente al componente pagina del WKND di ereditare **all** della funzionalità del componente pagina del componente core. Questo è il primo esempio di un elemento chiamato [Pattern componente proxy](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Ulteriori informazioni sono disponibili [qui.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html).
+   La proprietà `sling:resourceSuperType` punta a `core/wcm/components/page/v2/page`. Questa proprietà consente al componente pagina del WKND di ereditare **all** della funzionalità del componente pagina del componente core. Questo è il primo esempio di un elemento chiamato [Pattern componente proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Ulteriori informazioni sono disponibili [qui.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
 
 1. Inspect è un altro componente all’interno dei componenti WKND, il componente `Breadcrumb` che si trova in: `/apps/wknd/components/breadcrumb`. La stessa proprietà `sling:resourceSuperType` può essere trovata, ma questa volta punta a `core/wcm/components/breadcrumb/v2/breadcrumb`. Questo è un altro esempio di utilizzo del pattern del componente Proxy per includere un componente core. Infatti, tutti i componenti della base di codice WKND sono proxy dei componenti core AEM (ad eccezione del nostro famoso componente HelloWorld). È consigliabile provare a riutilizzare tutte le funzionalità dei componenti core il più possibile *prima* di scrivere codice personalizzato.
 
