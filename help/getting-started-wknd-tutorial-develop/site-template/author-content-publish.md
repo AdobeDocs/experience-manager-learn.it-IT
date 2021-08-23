@@ -11,7 +11,6 @@ role: Developer
 level: Beginner
 kt: 7497
 thumbnail: KT-7497.jpg
-translation-type: tm+mt
 source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '1306'
@@ -20,7 +19,7 @@ ht-degree: 2%
 ---
 
 
-# Modifica del contenuto dell&#39;autore e pubblicazione {#author-content-publish}
+# Modifica del contenuto dell’autore e pubblicazione {#author-content-publish}
 
 >[!CAUTION]
 >
@@ -38,7 +37,7 @@ Si tratta di un tutorial in più parti e si presume che i passaggi descritti nel
 1. Scopri come aggiornare il contenuto del sito web.
 1. Scopri come pubblicare le modifiche al sito live.
 
-## Crea una nuova pagina {#create-page}
+## Creare una nuova pagina {#create-page}
 
 In genere, un sito web viene suddiviso in pagine per creare un’esperienza multipagina. AEM struttura il contenuto allo stesso modo. Quindi, crea una nuova pagina per il sito.
 
@@ -97,7 +96,7 @@ Ora, creiamo alcuni componenti utilizzando AEM Editor pagina.
 
 Sentitevi liberi di sperimentare con alcuni degli altri componenti. La documentazione relativa a ciascun [componente di base è disponibile qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). Una serie video dettagliata sull’ [authoring delle pagine è disponibile qui](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html).
 
-## Pubblica aggiornamenti {#publish-updates}
+## Aggiornamenti alla pubblicazione {#publish-updates}
 
 Gli ambienti AEM sono suddivisi tra **Author Service** e **Publish Service**. In questo capitolo sono state apportate diverse modifiche al sito sul **Servizio di authoring**. Per consentire ai visitatori del sito di visualizzare le modifiche, è necessario pubblicarle nel **Servizio di pubblicazione**.
 
