@@ -1,45 +1,44 @@
 ---
-title: Integrazione di Adobe Experience Manager con Adobe Target tramite Cloud Services
-seo-title: Integrazione di Adobe Experience Manager (AEM) con Adobe Target utilizzando i servizi cloud precedenti
+title: Integrazione di Adobe Experience Manager con Adobe Target utilizzando i Cloud Services
+seo-title: Integrazione di Adobe Experience Manager (AEM) con Adobe Target utilizzando Cloud Services legacy
 description: Procedura dettagliata su come integrare Adobe Experience Manager (AEM) con Adobe Target utilizzando AEM Cloud Service
 seo-description: Procedura dettagliata su come integrare Adobe Experience Manager (AEM) con Adobe Target utilizzando AEM Cloud Service
-feature: Experience Fragments
-topic: Personalization
+feature: Frammenti di esperienza
+topic: Personalizzazione
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 4%
+source-wordcount: '386'
+ht-degree: 3%
 
 ---
 
 
-# Utilizzo dei servizi cloud legacy di AEM
+# Utilizzo AEM Cloud Services legacy
 
-In questa sezione discuteremo come configurare Adobe Experience Manager (AEM) con Adobe Target utilizzando i servizi cloud precedenti.
+In questa sezione verrà illustrato come configurare Adobe Experience Manager (AEM) con Adobe Target utilizzando Cloud Services legacy.
 
 >[!NOTE]
 >
-> Il servizio cloud legacy AEM con Adobe Target è **solo** utilizzato per stabilire una connessione back-end diretta tra AEM Author e Adobe Target, facilitando la pubblicazione del contenuto da AEM a Target. Adobe Launch viene utilizzato per esporre Adobe Target sull’esperienza del sito web pubblico fornita da AEM.
+> Il Cloud Service legacy AEM con Adobe Target è **solo** utilizzato per stabilire una connessione back-end diretta tra AEM Author e Adobe Target, facilitando la pubblicazione del contenuto da AEM a Target. Adobe Launch viene utilizzato per esporre Adobe Target nell’esperienza del sito web pubblico fornita da AEM.
 
-Per utilizzare le offerte dei frammenti esperienza AEM per sviluppare le attività di personalizzazione, puoi passare al capitolo successivo e integrare AEM con Adobe Target utilizzando i servizi cloud legacy. Questa integrazione è necessaria per inviare i frammenti esperienza da AEM a Target come offerte HTML/JSON e per mantenere le offerte target sincronizzate con AEM. Questa integrazione è necessaria per implementare [Scenario 1 discusso nella sezione panoramica](./overview.md#personalization-using-aem-experience-fragment).
+Per utilizzare AEM offerte di Frammenti esperienza per abilitare le attività di personalizzazione, puoi passare al capitolo successivo e integrare AEM con Adobe Target utilizzando i servizi cloud legacy. Questa integrazione è necessaria per inviare i frammenti esperienza da AEM a Target come offerte HTML/JSON e per mantenere le offerte target sincronizzate con AEM. Questa integrazione è necessaria per implementare [Scenario 1 discusso nella sezione panoramica](./overview.md#personalization-using-aem-experience-fragment).
 
 ## Prerequisiti
 
 * **AEM**
 
-   * Per completare questa esercitazione sono necessarie l’istanza di authoring e pubblicazione di AEM. Se non hai ancora configurato la tua istanza AEM, puoi seguire i passaggi [qui](./implementation.md#set-up-aem).
+   * Per completare questa esercitazione sono necessarie AEM’istanza di authoring e pubblicazione. Se non hai ancora configurato la tua istanza AEM, puoi seguire i passaggi [qui](./implementation.md#set-up-aem).
 
 * **Experience Cloud**
    * Accesso alle organizzazioni Adobe Experience Cloud - <https://>`<yourcompany>`.experiencecloud.adobe.com
-   * Experience Cloud con le seguenti soluzioni
+   * Experience Cloud fornito con le seguenti soluzioni
       * [Adobe Target](https://experiencecloud.adobe.com)
 
       >[!NOTE]
       >
-      > È necessario effettuare il provisioning dei clienti con Experience Platform Launch e Adobe I/O da [Supporto Adobe](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) oppure contattare l’amministratore di sistema
+      > È necessario effettuare il provisioning del cliente con Experience Platform Launch ed Adobe I/O dal [supporto per l&#39;Adobe](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) o contattare l&#39;amministratore di sistema
 
 
 
@@ -47,10 +46,10 @@ Per utilizzare le offerte dei frammenti esperienza AEM per sviluppare le attivit
 
 >[!VIDEO](https://video.tv.adobe.com/v/28428?quality=12&learn=on)
 
-1. Crea Adobe Target Cloud Service utilizzando l&#39;autenticazione Adobe IMS (*Utilizza l&#39;API di Adobe Target*) (00:34)
-2. Ottieni il codice client di Adobe Target (01:50)
-3. Creare una configurazione Adobe IMS per Adobe Target (02:08)
+1. Crea un Cloud Service Adobe Target utilizzando l&#39;autenticazione IMS di Adobe (*utilizza l&#39;API Adobe Target*) (00:34)
+2. Ottenere il codice client Adobe Target (01:50)
+3. Crea configurazione Adobe IMS per Adobe Target (02:08)
 4. Crea un account tecnico per l’accesso all’API Target nella console Adobe I/O (02:08)
-5. Aggiungere Adobe Target Cloud Service ai frammenti esperienza AEM (04:12)
+5. Aggiungere un Cloud Service Adobe Target a AEM frammenti esperienza (04:12)
 
-A questo punto, hai integrato con successo [AEM con Adobe Target utilizzando i servizi cloud precedenti](./using-aem-cloud-services.md#integrating-aem-target-options) come descritto nell&#39;Opzione 2. Ora dovresti essere in grado di creare un frammento esperienza all’interno di AEM, pubblicare il frammento esperienza come offerta HTML o offerta JSON ad Adobe Target e può quindi essere utilizzato per creare un’attività.
+A questo punto, hai integrato con successo [AEM con Adobe Target utilizzando Cloud Services legacy](./using-aem-cloud-services.md#integrating-aem-target-options) come descritto nell&#39;Opzione 2. Ora dovresti essere in grado di creare un frammento esperienza in AEM, pubblicare il frammento esperienza come offerta HTML o offerta JSON ad Adobe Target e può quindi essere utilizzato per creare un’attività.
