@@ -1,26 +1,25 @@
 ---
-title: Utilizzo del componente Tabella nel documento del canale di stampa di AEM Forms
-seo-title: Utilizzo del componente Tabella nel documento del canale di stampa di AEM Forms
+title: Utilizzo del componente Tabella nel documento del canale di stampa AEM Forms
+seo-title: Utilizzo del componente Tabella nel documento del canale di stampa AEM Forms
 description: Il video seguente illustra i passaggi necessari per utilizzare il componente tabella nelle comunicazioni interattive per la stampa dei documenti del canale.
-feature: Interactive Communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: technical video
 activity: implement
 version: 6.4,6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 2%
+source-wordcount: '279'
+ht-degree: 1%
 
 ---
 
 
-# Utilizzo del componente Tabella nel documento del canale di stampa di AEM Forms {#using-table-component-in-aem-forms-print-channel-document}
+# Utilizzo del componente Tabella nel documento del canale di stampa AEM Forms {#using-table-component-in-aem-forms-print-channel-document}
 
 Il video seguente illustra i passaggi necessari per utilizzare il componente tabella nelle comunicazioni interattive per la stampa dei documenti del canale.
 
@@ -36,7 +35,7 @@ Le tabelle vengono utilizzate per visualizzare i dati in modo tabulare. Le righe
 
 * [Scarica e decomprimi il file di risorse sul disco rigido](assets/usingtablesinprintchannel.zip)
 
-* Importa i due file zip in AEM utilizzando il gestore di pacchetti
+* Importare i due file zip in AEM utilizzando il gestore dei pacchetti
 
 * Le risorse associate a questo articolo sono le seguenti:
 
