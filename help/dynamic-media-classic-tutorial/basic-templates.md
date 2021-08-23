@@ -10,9 +10,9 @@ activity: use
 topic: Gestione dei contenuti
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '6306'
+source-wordcount: '6292'
 ht-degree: 0%
 
 ---
@@ -66,8 +66,8 @@ Poiché i modelli di base sono generalmente progettati in Photoshop ma implement
 
 I progetti modello possono essere relativamente semplici o estremamente complessi a seconda delle regole di business e delle esigenze dell&#39;applicazione. I modelli di base vengono chiamati da Image Server. Tuttavia, a causa della flessibilità dell’ambiente Dynamic Media Classic, è possibile nidificare i modelli all’interno di altri modelli, consentendo di creare immagini abbastanza complesse che possono essere collegate da variabili comunemente denominate.
 
-- Ulteriori informazioni su [Nozioni di base sui modelli](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/quick-start-template-basics.html).
-- Scopri come creare un [modello di base](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template).
+- Ulteriori informazioni su [Nozioni di base sui modelli](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html).
+- Scopri come creare un [modello di base](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template).
 
 ## Creazione di un modello di base
 
@@ -189,7 +189,7 @@ Per aggiungere un effetto, fare clic su **Aggiungi effetto** e scegliere un effe
 
 Gli effetti ombreggiatura vengono spostati orizzontalmente o verticalmente dal livello, mentre gli effetti Bagliore vengono applicati uniformemente in tutte le direzioni. Gli effetti interni agiscono sulle parti opache dello strato, mentre gli effetti esterni influiscono solo sulle aree trasparenti.
 
-Ulteriori informazioni su[Aggiunta di effetti livello](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template.html#using-shadow-and-glow-effects-on-layers).
+Ulteriori informazioni su[Aggiunta di effetti livello](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#using-shadow-and-glow-effects-on-layers).
 
 ### Aggiunta di parametri
 
@@ -226,7 +226,7 @@ Questo è il flusso di lavoro per la creazione dei parametri:
 >
 >Impossibile aggiungere un parametro perché la proprietà non è visibile? È sufficiente modificare la proprietà del livello dal valore predefinito (spostandolo, ridimensionandolo, nascondendolo, ecc.). Ora dovresti vedere la proprietà esposta.
 
-Ulteriori informazioni su [Parametri modello](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template-parameters.html).
+Ulteriori informazioni su [Parametri modello](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html).
 
 ## Creazione di un modello con livelli di testo
 
@@ -315,7 +315,7 @@ Potete vedere la frase Sandalo della zecca di cioccolato — questo è il testo 
 - È disponibile un valore RGB: \red56\green53\blue4 — questo è il colore del testo.
 - Anche se la dimensione del font è 20, il numero 20 non viene visualizzato. Tuttavia, si vede un comando \fs40 — per qualche motivo strano, RTF misura i font come punti di mezzo. Quindi \fs40 è la dimensione del carattere!
 
-Hai abbastanza informazioni per creare i tuoi parametri, tuttavia c&#39;è un riferimento completo di tutti i comandi RTF nella documentazione di Image Serving. Visita la [Documentazione Image Serving](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html#concept-0d3136db7f6f49668274541cd4b6364c).
+Hai abbastanza informazioni per creare i tuoi parametri, tuttavia c&#39;è un riferimento completo di tutti i comandi RTF nella documentazione di Image Serving. Visita la [Documentazione Image Serving](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html#concept-0d3136db7f6f49668274541cd4b6364c).
 
 #### Aggiunta di parametri ai livelli di testo
 
@@ -333,7 +333,7 @@ Di seguito sono riportati i passaggi per aggiungere parametri ai livelli di test
 >
 >Per aggiungere parametri al colore del testo, aggiungi separatamente i parametri rosso, verde e blu. Ad esempio, se il formato RTF è `\red56\green53\blue46`, puoi aggiungere parametri separati rosso, verde e blu per i valori 56, 53 e 46. Nell’URL, cambieresti il colore chiamando tutti e tre: `&$red=56&$green=53&$blue=46`.
 
-Scopri come [Creare parametri di testo dinamici](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template-parameters.html#creating-dynamic-text-parameters).
+Scopri come [Creare parametri di testo dinamici](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html#creating-dynamic-text-parameters).
 
 ## Pubblicazione e creazione degli URL dei modelli
 
@@ -347,7 +347,7 @@ Non c&#39;è nulla di speciale in un predefinito immagine per un modello. Se dis
 
 Sarà necessario eseguire una pubblicazione per visualizzare le modifiche inviate in diretta al server di immagini. Tieni presente cosa deve essere pubblicato: i vari livelli di risorsa immagine, i font per il testo dinamico e il modello stesso. Simile ad altre risorse rich media di Dynamic Media Classic come Set di immagini e Set 360 gradi, un Modello di base è una costruzione artificiale, è un elemento di riga nel database che fa riferimento alle immagini e ai font utilizzando una serie di comandi Image Serving. Quindi, quando pubblichi il modello, tutto quello che stai facendo è aggiornare i dati sul server di immagini.
 
-Ulteriori informazioni su [Pubblicazione del modello](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/publishing-templates.html).
+Ulteriori informazioni su [Pubblicazione del modello](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/publishing-templates.html).
 
 ### Costruzione URL modello
 
