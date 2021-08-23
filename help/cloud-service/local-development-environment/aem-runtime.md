@@ -12,10 +12,9 @@ thumbnail: 32551.jpg
 topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d49ae402b332ba972a78cdbd8f5bf962b91c83b1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1732'
 ht-degree: 2%
 
 ---
@@ -211,7 +210,7 @@ L’aggiornamento dell’SDK di AEM sta creando in modo efficace un nuovo runtim
 1. Utilizza [oak-upgrade](https://jackrabbit.apache.org/oak/docs/migration.html) con la direttiva `includepaths` per copiare il contenuto dall&#39;archivio SDK AEM precedente al nuovo archivio SDK AEM.
 1. Esegui il backup di qualsiasi contenuto utilizzando AEM Package Manager e i pacchetti di contenuto nell’SDK AEM precedente e reinstallali nel nuovo SDK AEM.
 
-Ricorda che l’utilizzo degli approcci di cui sopra per mantenere il codice tra AEM aggiornamenti dell’SDK indica un pattern di sviluppo non conforme. Il codice non usa e getta deve originarsi nell&#39;IDE di sviluppo e fluire AEM&#39;SDK tramite implementazioni.
+Ricorda che l’utilizzo degli approcci di cui sopra per mantenere il codice tra AEM aggiornamenti dell’SDK indica un pattern di sviluppo non conforme. Il codice non usa e getta deve originarsi nell&#39;IDE di sviluppo e fluire nell&#39;SDK AEM tramite implementazioni.
 
 ## Risoluzione dei problemi
 
@@ -231,7 +230,7 @@ oppure, per avviare il servizio di pubblicazione AEM, `cd` nella directory conte
 
 `$ java -jar aem-publish-p4503.jar`
 
-## L&#39;avvio di Jar Quickstart dalla riga di comando interrompe immediatamente{#troubleshooting-java-8}
+## L&#39;avvio del Jar Quickstart dalla riga di comando interrompe immediatamente{#troubleshooting-java-8}
 
 Quando si avvia il file JAR Quickstart dalla riga di comando, il processo si interrompe immediatamente e il servizio AEM non si avvia, con il seguente errore:
 
@@ -259,4 +258,4 @@ Una volta installato Java 11 SDK, verifica che sia la versione attiva eseguendo 
 + [Scaricare AEM SDK](https://experience.adobe.com/#/downloads)
 + [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
 + [Download Docker](https://www.docker.com/)
-+ [Documentazione di Experience Manager Dispatcher](https://docs.adobe.com/content/help/it-IT/experience-manager-dispatcher/using/dispatcher.html)
++ [Documentazione di Experience Manager Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)
