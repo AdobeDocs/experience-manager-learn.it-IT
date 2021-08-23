@@ -12,7 +12,6 @@ thumbnail: kt-5433.jpg
 topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: 048a37a9813e7b61ff069c4606b8d23cc6b6844f
 workflow-type: tm+mt
 source-wordcount: '1351'
