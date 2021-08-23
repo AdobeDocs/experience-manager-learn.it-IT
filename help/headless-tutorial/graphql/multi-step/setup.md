@@ -1,12 +1,7 @@
 ---
 title: Configurazione rapida - Guida introduttiva AEM Headless - GraphQL
-description: Guida introduttiva a Adobe Experience Manager (AEM) e GraphQL. Installa l'SDK AEM, aggiungi contenuto di esempio e distribuisci un'applicazione che consuma contenuti da AEM utilizzando le API GraphQL. Scopri come AEM le esperienze omni-channel.
-sub-product: sites
-topics: headless
+description: Guida introduttiva ad Adobe Experience Manager (AEM) e GraphQL. Installa l'SDK AEM, aggiungi contenuto di esempio e distribuisci un'applicazione che consuma contenuti da AEM utilizzando le API GraphQL. Scopri come AEM le esperienze omni-channel.
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
@@ -14,10 +9,9 @@ feature: Frammenti di contenuto, API GraphQL
 topic: Senza testa, gestione dei contenuti
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1829'
 ht-degree: 2%
 
 ---
@@ -42,7 +36,7 @@ Questo capitolo offre una configurazione rapida di un ambiente locale per visual
 1. Scarica e installa il contenuto di esempio dal sito WKND Reference.
 1. Scarica e installa un’app di esempio per utilizzare contenuti utilizzando le API GraphQL.
 
-## Installa l&#39;SDK AEM {#aem-sdk}
+## Installare l’SDK AEM {#aem-sdk}
 
 Questa esercitazione utilizza [AEM come SDK di Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en#aem-as-a-cloud-service-sdk) per esplorare AEM API GraphQL. Questa sezione fornisce una guida rapida all’installazione e all’esecuzione dell’SDK AEM in modalità Autore. Una guida più dettagliata per la configurazione di un ambiente di sviluppo locale [è disponibile qui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up).
 
@@ -74,7 +68,7 @@ Questa esercitazione utilizza [AEM come SDK di Cloud Service](https://experience
 1. Dopo alcuni minuti l&#39;istanza AEM terminerà l&#39;installazione e una nuova finestra del browser dovrebbe essere aperta in [http://localhost:4502](Http://localhost:4502).
 1. Accedi con il nome utente `admin` e la password `admin`.
 
-## Installa contenuto di esempio e endpoint GraphQL {#wknd-site-content-endpoints}
+## Installare il contenuto di esempio e gli endpoint GraphQL {#wknd-site-content-endpoints}
 
 Il contenuto di esempio dal **sito di riferimento WKND** verrà installato per accelerare l&#39;esercitazione. Il WKND è un marchio fittizio in stile di vita, spesso utilizzato in combinazione con AEM formazione.
 
@@ -117,7 +111,7 @@ Il sito di riferimento WKND include configurazioni necessarie per esporre un [en
 >
 > Se utilizzi un ambiente di Cloud Service, consulta la documentazione su come [distribuire una base di codice come il sito WKND Reference in un ambiente di Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying).
 
-## Installa l&#39;app di esempio{#sample-app}
+## Installare l’app di esempio{#sample-app}
 
 Uno degli obiettivi di questa esercitazione è quello di mostrare come utilizzare AEM contenuto da un’applicazione esterna utilizzando le API GraphQL. Questa esercitazione utilizza un&#39;app React di esempio che è stata parzialmente completata per accelerare l&#39;esercitazione. Le stesse lezioni e gli stessi concetti si applicano alle app create con iOS, Android o qualsiasi altra piattaforma. L&#39;app React è intenzionalmente semplice, per evitare inutili complessità; non si tratta di un’implementazione di riferimento.
 
