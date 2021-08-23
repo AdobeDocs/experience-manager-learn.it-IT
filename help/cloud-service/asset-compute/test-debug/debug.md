@@ -12,7 +12,6 @@ thumbnail: 40383.jpg
 topic: Integrazioni, Sviluppo
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
 source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
 workflow-type: tm+mt
 source-wordcount: '623'
