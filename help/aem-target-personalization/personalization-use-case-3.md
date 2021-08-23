@@ -1,17 +1,16 @@
 ---
 title: Personalizzazione tramite il Compositore esperienza visivo di Adobe Target
-seo-title: Personalizzazione tramite Compositore esperienza visivo (VEC) di Adobe Target
+seo-title: Personalizzazione tramite il Compositore esperienza visivo di Adobe Target
 description: Un tutorial end-to-end che mostra come creare e distribuire esperienze personalizzate utilizzando il Compositore esperienza visivo di Adobe Target.
 seo-description: Un tutorial end-to-end che mostra come creare e distribuire esperienze personalizzate utilizzando il Compositore esperienza visivo di Adobe Target.
-feature: Experience Fragments
-topic: Personalization
+feature: Frammenti di esperienza
+topic: Personalizzazione
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 3%
+source-wordcount: '613'
+ht-degree: 2%
 
 ---
 
@@ -33,20 +32,20 @@ Per questo esercizio è necessario coinvolgere i seguenti utenti ed eseguire alc
 
 ### Home page sito WKND
 
-![Scenario 1 di AEM Target](assets/personalization-use-case-3/aem-target-use-case-3.png)
+![Scenario AEM Target 1](assets/personalization-use-case-3/aem-target-use-case-3.png)
 
 ### Prerequisiti
 
 * **AEM**
-   * [AEM pubblica ](./implementation.md#getting-aem) instancerunning il 4503
+   * [AEM pubblicare ](./implementation.md#getting-aem) instancerunning il 4503
    * [AEM integrato con Adobe Target tramite Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
    * Accesso alle organizzazioni Adobe Experience Cloud - <https://>`<yourcompany>`.experiencecloud.adobe.com
-   * Provisioning di Experience Cloud con [Adobe Target](https://experiencecloud.adobe.com)
+   * Experience Cloud fornito con [Adobe Target](https://experiencecloud.adobe.com)
 
 ## Attività di marketing
 
-1. L’addetto al marketing crea un’attività di destinazione A/B all’interno di Adobe Target.
+1. L’addetto al marketing crea un’attività di destinazione A/B in Adobe Target.
    1. Dalla finestra di Adobe Target, passa alla scheda **Attività** .
    2. Fai clic sul pulsante **Crea attività** e seleziona il tipo di attività come **Test A/B**
 
