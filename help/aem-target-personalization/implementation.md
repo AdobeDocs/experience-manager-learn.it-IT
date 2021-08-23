@@ -7,7 +7,7 @@ feature: Frammenti di esperienza
 topic: Personalizzazione
 role: Developer
 level: Intermediate
-source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 5%
@@ -20,7 +20,7 @@ ht-degree: 5%
 In questa sezione discuteremo come configurare Adobe Experience Manager con Adobe Target per scenari diversi. In base allo scenario e ai requisiti organizzativi.
 
 * **Aggiungi libreria JavaScript di Adobe Target (richiesta per tutti gli scenari)**
-Per i siti in hosting su AEM, puoi aggiungere librerie Target al tuo sito utilizzando  [Launch](https://experienceleague.adobe.com/docs/launch/using/home.html). Launch offre un modo semplice di implementare e gestire tutti i tag necessari per fornire ai clienti esperienze personalizzate.
+Per i siti in hosting su AEM, puoi aggiungere librerie Target al tuo sito utilizzando  [Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). Launch offre un modo semplice di implementare e gestire tutti i tag necessari per fornire ai clienti esperienze personalizzate.
 * **Aggiungi i Cloud Services Adobe Target (necessari per lo scenario Frammenti esperienza)**
 Per i clienti AEM che desiderano utilizzare le offerte Frammento esperienza per creare un’attività in Adobe Target, è necessario integrare Adobe Target con AEM utilizzando i Cloud Services legacy. Questa integrazione è necessaria per inviare i frammenti esperienza da AEM a Target come offerte HTML/JSON e per mantenere le offerte sincronizzate con AEM. 
 *Questa integrazione è necessaria per implementare lo scenario 1.*
