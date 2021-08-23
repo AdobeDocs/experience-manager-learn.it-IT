@@ -1,31 +1,30 @@
 ---
 title: Informazioni sul codice per il sistema di stili AEM
 description: Questo video illustra l’anatomia dei CSS (o LESS) e JavaScript utilizzati per assegnare uno stile al componente titolo di base di Adobe Experience Manager utilizzando il sistema di stili, nonché il modo in cui questi stili vengono applicati all’HTML e al DOM.
-feature: Style System
+feature: Sistema di stili
 topics: development, components, front-end-development
 audience: developer, implementer
 doc-type: technical video
 activity: understand
 version: 6.4, 6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1148'
 ht-degree: 2%
 
 ---
 
 
-# Come codificare il sistema di stili{#understanding-how-to-code-for-the-aem-style-system}
+# Informazioni sul codice per il sistema di stili{#understanding-how-to-code-for-the-aem-style-system}
 
 Questo video illustra l’anatomia dei CSS (o [!DNL LESS]) e JavaScript utilizzati per assegnare uno stile al componente titolo di base di Experience Manager utilizzando il sistema di stili, nonché il modo in cui questi stili vengono applicati all’HTML e al DOM.
 
 >[!NOTE]
 >
->Il sistema di stili AEM è stato introdotto con [AEM 6.3 SP1](https://helpx.adobe.com/it/experience-manager/6-1/release-notes/sp3-release-notes.html?lang=it) + [Feature Pack 20593](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-20593).
+>Il sistema di stili AEM è stato introdotto con [AEM 6.3 SP1](https://helpx.adobe.com/it/experience-manager/6-3/release-notes/sp1-release-notes.html) + [Feature Pack 20593](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-20593).
 >
 >Il video presuppone che il componente Titolo We.Retail sia stato aggiornato per ereditare da [Componenti core v2.0.0+](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases).
 
@@ -33,7 +32,7 @@ Questo video illustra l’anatomia dei CSS (o [!DNL LESS]) e JavaScript utilizza
 
 >[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=9&learn=on)
 
-Il pacchetto AEM fornito (**technical-review.sites.style-system-1.0.0.zip**) installa lo stile del titolo di esempio, i criteri di esempio per i componenti Contenitore di layout We.Retail e Titolo e una pagina di esempio.
+Il pacchetto AEM fornito (**technical-review.sites.style-system-1.0.0.zip**) installa lo stile del titolo dell&#39;esempio, i criteri di esempio per i componenti Contenitore di layout We.Retail e Titolo e una pagina di esempio.
 
 [technical-review.sites.style-system-1.0.0.zip](assets/technical-review.sites.style-system-1.0.0.zip)
 
@@ -71,7 +70,7 @@ Per coloro che preferiscono il CSS, sotto questo frammento di codice si trova il
 }
 ```
 
-Il codice [!DNL LESS] riportato sopra viene compilato in modo nativo da Experience Manager nel seguente CSS.
+I dati riportati sopra [!DNL LESS] vengono compilati in modo nativo per Experience Manager nel seguente CSS.
 
 ```css
 /* CSS */
@@ -198,7 +197,7 @@ jQuery(function ($) {
 >
 >Tutti gli altri tenant di [BEM](https://en.bem.info/) devono essere allineati con.
 
-* Utilizza i preprocessori come [LESS](https://lesscss.org/) (supportato da AEM in modo nativo) o [SCSS](https://sass-lang.com/) (richiede un sistema di compilazione personalizzato) per consentire una chiara definizione CSS e la riutilizzabilità.
+* Utilizza i preprocessori come [LESS](https://lesscss.org/) (supportato da AEM nativamente) o [SCSS](https://sass-lang.com/) (richiede un sistema di compilazione personalizzato) per consentire una chiara definizione CSS e la riutilizzabilità.
 
 * mantenere uniforme il peso/specificità del selettore; Questo aiuta a evitare e risolvere i conflitti CSS difficili da identificare.
 * Organizza ogni stile in un file discreto.
@@ -265,7 +264,7 @@ Le best practice definite in questa sezione riguardano &quot;style-JavaScript&qu
 ## Risorse aggiuntive {#additional-resources}
 
 * [Documentazione del sistema di stili](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html)
-* [Creazione di librerie client AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [Creazione AEM librerie client](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [Sito web della documentazione di BEM (modificatore di elemento isolato)](https://getbem.com/)
 * [Sito web della documentazione SNELESS](https://lesscss.org/)
 * [Sito web jQuery](https://jquery.com/)
