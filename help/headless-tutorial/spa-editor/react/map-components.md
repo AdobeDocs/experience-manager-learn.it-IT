@@ -12,9 +12,9 @@ thumbnail: 4854-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2273'
+source-wordcount: '2267'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Il concetto di base consiste nel mappare un componente SPA a un componente AEM. 
 
 ## Inspect come componente testo
 
-Il [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) fornisce un componente `Text` mappato al componente AEM [Testo](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html). Questo è un esempio di un componente **content**, in quanto esegue il rendering di *content* da AEM.
+Il [AEM Project Archetype](https://github.com/adobe/aem-project-archetype) fornisce un componente `Text` mappato al componente AEM [Testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html). Questo è un esempio di un componente **content**, in quanto esegue il rendering di *content* da AEM.
 
 Vediamo come funziona il componente.
 
@@ -223,7 +223,7 @@ Esaminiamo ulteriormente il Contenitore di layout.
 
    Il componente **Contenitore di layout** ha un `sling:resourceType` di `wcm/foundation/components/responsivegrid` ed è riconosciuto dall’editor SPA utilizzando la proprietà `:type` , proprio come i componenti `Text` e `Image` .
 
-   Le stesse funzionalità di ridimensionamento di un componente utilizzando [Modalità layout](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) sono disponibili con l’Editor di SPA.
+   Le stesse funzionalità di ridimensionamento di un componente utilizzando [Modalità layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) sono disponibili con l’Editor di SPA.
 
 2. Torna a [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Aggiungi altri componenti **Immagine** e prova a ridimensionarli utilizzando l&#39;opzione **Layout** :
 
@@ -251,7 +251,7 @@ Congratulazioni, hai imparato a mappare SPA componenti su componenti AEM e hai u
 
 [Navigazione e routing](navigation-routing.md) : scopri come è possibile supportare più visualizzazioni nel SPA mappando AEM pagine con l’SDK dell’editor SPA. La navigazione dinamica è implementata utilizzando i componenti core React Router e React.
 
-## (Bonus) Persistere le configurazioni al controllo del codice sorgente {#bonus-configs}
+## (Bonus) Persistere configurazioni al controllo del codice sorgente {#bonus-configs}
 
 In molti casi, specialmente all’inizio di un progetto AEM, è utile mantenere le configurazioni, come i modelli e i relativi criteri dei contenuti, al controllo del codice sorgente. In questo modo tutti gli sviluppatori lavorano con lo stesso set di contenuti e configurazioni e possono garantire un’ulteriore coerenza tra gli ambienti. Quando un progetto raggiunge un certo livello di maturità, la gestione dei modelli può essere affidata a un gruppo speciale di utenti.
 
@@ -288,7 +288,7 @@ I passaggi successivi si svolgeranno utilizzando l&#39;IDE di codice di Visual S
 
 ## (Bonus) Crea componente immagine personalizzato {#bonus-image}
 
-Un componente Immagine SPA è già stato fornito dai componenti React Core. Tuttavia, se desideri una procedura aggiuntiva, crea la tua implementazione React che sia associata al AEM [componente Immagine](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/components/image.html). Il componente `Image` è un altro esempio di un componente **content** .
+Un componente Immagine SPA è già stato fornito dai componenti React Core. Tuttavia, se desideri una procedura aggiuntiva, crea la tua implementazione React che sia associata al AEM [componente Immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html). Il componente `Image` è un altro esempio di un componente **content** .
 
 ### Inspect JSON
 
