@@ -1,16 +1,15 @@
 ---
 title: Personalizzazione delle annotazioni in AEM Assets
-description: Gli sviluppatori AEM possono configurare il formato e lo stile di AEM Assets quando l’output viene inviato a PDF.
-feature: Collaboration
+description: Gli sviluppatori AEM possono configurare il formato e lo stile AEM Assets per l’output in formato PDF.
+feature: Collaborazione
 version: 6.3, 6.4, 6.5
-topic: Collaboration
+topic: Collaborazione
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 4%
+source-wordcount: '62'
+ht-degree: 3%
 
 ---
 
