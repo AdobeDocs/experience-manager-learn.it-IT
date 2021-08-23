@@ -7,7 +7,6 @@ role: Developer, Architect
 level: Beginner
 kt: 7631
 thumbnail: kt-7631.jpeg
-translation-type: tm+mt
 source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
 workflow-type: tm+mt
 source-wordcount: '1220'
