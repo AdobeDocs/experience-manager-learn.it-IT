@@ -3,22 +3,21 @@ title: Personalizzazione tramite Adobe Target
 seo-title: Personalizzazione tramite Adobe Target
 description: Un tutorial end-to-end che mostra come creare e distribuire esperienze personalizzate utilizzando Adobe Target.
 seo-description: Un tutorial end-to-end che mostra come creare e distribuire esperienze personalizzate utilizzando Adobe Target.
-feature: Experience Fragments
-topic: Personalization
+feature: Frammenti di esperienza
+topic: Personalizzazione
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 3%
+source-wordcount: '609'
+ht-degree: 2%
 
 ---
 
 
-# Personalizzazione di esperienze di pagine web complete con Adobe Target
+# Personalizzazione delle esperienze di pagine web complete con Adobe Target
 
-Nel capitolo precedente, abbiamo imparato a creare un’attività basata sulla geolocalizzazione all’interno di Adobe Target utilizzando il contenuto creato come Frammenti esperienza ed esportato da AEM come Offerte HTML.
+Nel capitolo precedente, abbiamo imparato a creare un’attività basata sulla geolocalizzazione in Adobe Target utilizzando il contenuto creato come Frammenti esperienza ed esportato da AEM come Offerte HTML.
 
 In questo capitolo, esploreremo la creazione di attività per reindirizzare le pagine del sito ospitate su AEM a una nuova pagina utilizzando Adobe Target.
 
@@ -35,23 +34,23 @@ Per questo esercizio è necessario coinvolgere i seguenti utenti ed eseguire alc
 
 ### Home page sito WKND
 
-![Scenario 1 di AEM Target](assets/personalization-use-case-2/aem-target-use-case-2.png)
+![Scenario AEM Target 1](assets/personalization-use-case-2/aem-target-use-case-2.png)
 
 ### Prerequisiti
 
 * **AEM**
-   * [AEM crea e pubblica ](./implementation.md#getting-aem) instancerunning rispettivamente su localhost 4502 e 4503.
+   * [AEM autore e pubblicare instancerunning ](./implementation.md#getting-aem) su localhost 4502 e 4503 rispettivamente.
    * [AEM integrato con Adobe Target tramite Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
    * Accesso alle organizzazioni Adobe Experience Cloud - <https://>`<yourcompany>`.experiencecloud.adobe.com
-   * Experience Cloud con le seguenti soluzioni
+   * Experience Cloud fornito con le seguenti soluzioni
       * [Adobe Target](https://experiencecloud.adobe.com)
 
 ## Attività dell’editor di contenuti
 
-1. L’addetto al marketing avvia la discussione sulla riprogettazione della home page WKND con AEM Content Editor e descrive i requisiti.
+1. L’addetto al marketing avvia la discussione sulla riprogettazione della home page WKND con AEM editor di contenuti e descrive i requisiti.
    * ***Requisito*** : Consente di riprogettare la home page del sito WKND con un design basato su schede.
-2. In base ai requisiti, AEM Content Editor crea quindi una nuova home page del sito WKND con una progettazione basata su scheda e pubblica la nuova home page.
+2. In base ai requisiti, AEM Editor di contenuto crea quindi una nuova home page del sito WKND con una progettazione basata su scheda e pubblica la nuova home page.
 
 ## Attività di marketing
 
