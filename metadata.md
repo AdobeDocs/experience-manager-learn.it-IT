@@ -8,10 +8,9 @@ index: y
 type: Tutorial
 solution: Experience Manager
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Cloud Manager, Experience Manager Forms, Experience Manager Screens, Experience Manager Sites
-translation-type: tm+mt
 source-git-commit: 34c31db8d48f4e3ba3a213c4c52dc08b73020526
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '132'
 ht-degree: 96%
 
 ---
