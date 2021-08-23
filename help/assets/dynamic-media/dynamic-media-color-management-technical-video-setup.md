@@ -1,16 +1,15 @@
 ---
 title: Informazioni sulla gestione del colore con AEM Dynamic Media
-description: Questo video illustra Dynamic Media Color Management e come può essere utilizzato per fornire funzionalità di anteprima per la correzione del colore in per AEM Assets.
+description: Questo video illustra la gestione del colore di Dynamic Media e come può essere utilizzato per fornire funzionalità di anteprima della correzione del colore in per AEM Assets.
 sub-product: dynamic-media
-feature: Image Profiles, Video Profiles
+feature: Profili immagine, Profili video
 version: 6.3, 6.4, 6.5
-topic: Content Management
+topic: Gestione dei contenuti
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '326'
 ht-degree: 15%
 
 ---
@@ -18,17 +17,17 @@ ht-degree: 15%
 
 # Informazioni sulla gestione del colore con AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
 
-Questo video illustra Dynamic Media Color Management e come può essere utilizzato per fornire funzionalità di anteprima per la correzione del colore in per AEM Assets.
+Questo video illustra la gestione del colore di Dynamic Media e come può essere utilizzato per fornire funzionalità di anteprima della correzione del colore in per AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16792/?quality=9&learn=on)
 
 >[!NOTE]
 >
->[Abilita Dynamic ](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) Media AEM per utilizzare questa funzione.
+>[Abilita Dynamic ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) Media AEM per utilizzare questa funzione.
 
 Questa funzione è disponibile per le versioni AEM 6.1 e 6.2 come Feature Pack.
 
-## Modello XML per il nodo di configurazione della gestione del colore {#xml-template-for-the-color-management-configuration-node}
+## Modello XML per il nodo di configurazione Gestione colore {#xml-template-for-the-color-management-configuration-node}
 
 Di seguito è riportato il modello XML per il nodo di configurazione Gestione colore. Questo modello XML può essere copiato nel progetto di sviluppo AEM e configurato con le configurazioni appropriate per il progetto.
 
@@ -86,7 +85,7 @@ Di seguito è riportato il modello XML per il nodo di configurazione Gestione co
 />
 ```
 
-### Elenco dei profili di colore predefiniti di Adobe elencati di seguito {#list-of-default-adobe-color-profiles-are-listed-below}
+### Elenco dei profili di colore Adobe predefiniti elencati di seguito {#list-of-default-adobe-color-profiles-are-listed-below}
 
 | Nome | Spazio colore | Descrizione |
 | ------------------- | ---------- | ------------------------------------- |
@@ -109,8 +108,8 @@ Di seguito è riportato il modello XML per il nodo di configurazione Gestione co
 | NTSC | RGB | NTSC (1953) |
 | PAL | RGB | PAL/SECAM |
 | ProPhoto | RGB | ProPhoto RGB |
-| PS4Default | CMYK | CMYK predefinito di Photoshop 4 |
-| PS5Default | CMYK | CMYK predefinito di Photoshop 5 |
+| PS4Default | CMYK | CMYK predefinito Photoshop 4 |
+| PS5Default | CMYK | CMYK predefinito Photoshop 5 |
 | Foglietto | CMYK | U.S. Sheetfed Coated v2 |
 | FogliameNon rivestito | CMYK | U.S. Sheetfeed non rivestito v2 |
 | SMPTE | RGB | SMPTE-C |
@@ -125,4 +124,4 @@ Di seguito è riportato il modello XML per il nodo di configurazione Gestione co
 
 ## Risorse aggiuntive{#additional-resources}
 
-* [Configurazione della Dynamic Media Color Management](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
+* [Configurazione della gestione del colore Dynamic Media](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
