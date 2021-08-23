@@ -1,17 +1,17 @@
 ---
 title: App desktop AEM
 description: Utilizza AEM Desktop App per semplificare l’accesso a qualsiasi risorsa gestita in AEM sul desktop, per qualsiasi applicazione e formato di file.
-kt: 2551
-sub-product: assets
-feature: App desktop Experience Manager
 version: 6.5, 6.4, 6.3
 topic: Gestione dei contenuti
+feature: App desktop
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+kt: 2551
+thumbnail: 28868.jpeg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 11%
+source-wordcount: '138'
+ht-degree: 5%
 
 ---
 
@@ -33,4 +33,4 @@ Utilizza AEM Desktop App per semplificare l’accesso a qualsiasi risorsa gestit
 
 ## Risorse aggiuntive
 
-+ [Scarica l’app desktop AEM più recente](https://docs.adobe.com/content/help/it/experience-manager-desktop-app/using/release-notes.html)
++ [Scarica l’app desktop AEM più recente](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)
