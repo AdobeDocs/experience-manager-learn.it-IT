@@ -6,11 +6,10 @@ type: Documentation
 role: Developer
 level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptive Forms
-topic: Development
+feature: Moduli adattivi
+topic: Sviluppo
 kt: 7428
 thumbnail: 332437.jpg
-translation-type: tm+mt
 source-git-commit: cb4f678be79ad39110cc199b8c66349f311a431d
 workflow-type: tm+mt
 source-wordcount: '63'
