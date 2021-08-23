@@ -1,14 +1,13 @@
 ---
 title: Capitolo 6 - Esposizione dei contenuti su AEM Publish as JSON - Content Services
-description: Il capitolo 6 dell’esercitazione AEM Headless tratta la garanzia che tutti i pacchetti, le configurazioni e i contenuti necessari siano disponibili su AEM Publish per consentire il consumo dall’app mobile.
-feature: Content Fragments, APIs
-topic: Headless, Content Management
+description: Il capitolo 6 dell’esercitazione AEM headless tratta la garanzia che tutti i pacchetti, le configurazioni e i contenuti necessari siano disponibili su AEM Publish per consentire il consumo dall’app mobile.
+feature: Frammenti di contenuto, API
+topic: Senza testa, gestione dei contenuti
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -16,16 +15,16 @@ ht-degree: 0%
 
 # Capitolo 6 - Esposizione dei contenuti su AEM Publish for Delivery
 
-Il capitolo 6 dell’esercitazione AEM Headless tratta la garanzia che tutti i pacchetti, le configurazioni e i contenuti necessari siano disponibili su AEM Publish per consentire il consumo da parte dell’app mobile.
+Il capitolo 6 dell’esercitazione AEM headless tratta la garanzia che tutti i pacchetti, le configurazioni e i contenuti necessari siano disponibili su AEM Publish per consentire il consumo da parte dell’app mobile.
 
 ## Pubblicazione dei contenuti per AEM Content Services
 
-La configurazione e il contenuto creati per guidare gli eventi tramite AEM Content Services devono essere pubblicati su AEM Publish in modo che l’app mobile possa accedervi.
+La configurazione e il contenuto creati per guidare gli eventi tramite AEM Content Services devono essere pubblicati in AEM Publish in modo che l’app mobile possa accedervi.
 
-Poiché AEM Content Services è stato creato da Configurazione (Modelli di frammenti di contenuto, Modelli modificabili), Risorse (Frammenti di contenuto, Immagini) e Pagine, tutte queste parti beneficiano automaticamente delle funzionalità di gestione dei contenuti di AEM, tra cui:
+Poiché AEM Content Services è basato su Configurazione (Modelli di frammenti di contenuto, Modelli modificabili), Risorse (Frammenti di contenuto, Immagini) e Pagine, tutte queste parti dispongono automaticamente di funzionalità AEM gestione dei contenuti, tra cui:
 
 * Flusso di lavoro per la revisione e l&#39;elaborazione
-* e attivazione/disattivazione per inviare e estrarre contenuti dagli endpoint di AEM Publish Content Services
+* e attivazione/disattivazione per spingere ed estrarre contenuti dagli endpoint di AEM Publish AEM Content Services
 
 1. Assicurati che i **[!DNL WKND Mobile]Pacchetti applicativi**, elencati in [Capitolo 1](./chapter-1.md#wknd-mobile-application-packages), siano installati su **AEM Publish** utilizzando [!UICONTROL Gestione pacchetti].
    * [http://localhost:4503/crx/packmgr](http://localhost:4503/crx/packmgr)
