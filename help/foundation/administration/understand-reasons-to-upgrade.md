@@ -10,9 +10,9 @@ doc-type: article
 topic: Aggiornamento
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3541'
+source-wordcount: '3529'
 ht-degree: 3%
 
 ---
@@ -343,7 +343,7 @@ Di seguito è riportata una matrice delle principali funzioni di sicurezza offer
         <td>↓</td>
     </tr>
     <tr>
-        <td><strong><a href="https://docs.adobe.com/docs/en/aem/6-5/administer/security/saml-2-0-authenticationhandler.html" target="_blank">Miglioramento del </a><br>
+        <td><strong><a href="https://experienceleague.adobe.com/docs/" target="_blank">Miglioramento del </a><br>
  </strong>supporto dell'autenticazione SAMLSono stati migliorati il reindirizzamento SAML, le informazioni sui gruppi ottimizzate e i problemi di crittografia delle chiavi. 
             <br>
         </td>
@@ -954,7 +954,7 @@ Di seguito è riportata una matrice delle funzionalità principali di Assets off
             <td>↓</td>
         </tr>
         <tr>
-            <td><strong><a href="https://docs.adobe.com/docs/it-IT/aem/6-5/administer/content/dynamic-media/viewer-presets.html" target="_blank">Visualizzatori</a>:</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/" target="_blank">Visualizzatori</a>:</strong>
             lettori e predefiniti per contenuti multimediali personalizzati con marchio personalizzato, con supporto per diversi schermi/dispositivi.</td>
             <td> </td>
             <td>↓</td>
