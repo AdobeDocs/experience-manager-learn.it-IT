@@ -9,9 +9,9 @@ thumbnail: 4853-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1843'
 ht-degree: 1%
 
 ---
@@ -50,13 +50,13 @@ Il modulo `ui.frontend` è un progetto [webpack](https://webpack.js.org/) che co
 
 *Una descrizione di alto livello dell’integrazione SPA.*
 
-Ulteriori informazioni sulla build front-end sono disponibili [qui](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
+Ulteriori informazioni sulla build front-end sono disponibili [qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
 
-## Integrazione SPA di Inspect {#inspect-spa-integration}
+## Integrazione di Inspect SPA {#inspect-spa-integration}
 
-Quindi, controlla il modulo `ui.frontend` per comprendere il SPA generato automaticamente dall&#39; [AEM archetipo di progetto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
+Quindi, controlla il modulo `ui.frontend` per comprendere il SPA generato automaticamente dall&#39; [AEM archetipo di progetto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html).
 
-1. Nell’IDE che preferisci, apri il progetto AEM. Questa esercitazione utilizzerà [Visual Studio Code IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+1. Nell’IDE che preferisci, apri il progetto AEM. Questa esercitazione utilizzerà [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
    ![VSCode - AEM progetto di SPA WKND](./assets/integrate-spa/vscode-ide-openproject.png)
 
@@ -76,7 +76,7 @@ Quindi, controlla il modulo `ui.frontend` per comprendere il SPA generato automa
    "@adobe/aem-core-components-react-spa": "1.1.7",
    ```
 
-   I moduli di cui sopra costituiscono l’ [AEM Editor JS SDK](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-blueprint.html) e forniscono la funzionalità per consentire la mappatura SPA componenti su componenti AEM.
+   I moduli di cui sopra costituiscono l’ [AEM Editor JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html) e forniscono la funzionalità per consentire la mappatura SPA componenti su componenti AEM.
 
    Sono inclusi anche [AEM componenti WCM - React Core implementation](https://github.com/adobe/aem-react-core-wcm-components-base) e [AEM componenti WCM - Editor Spa - React Core implementation](https://github.com/adobe/aem-react-core-wcm-components-spa). Si tratta di un set di componenti dell’interfaccia utente riutilizzabili che vengono mappati su componenti AEM predefiniti. Sono progettati per essere utilizzati così come sono e formattati per soddisfare le esigenze del progetto.
 
@@ -130,7 +130,7 @@ Quindi, controlla il modulo `ui.frontend` per comprendere il SPA generato automa
 
 1. Inspect il file `import-component.js` in `ui.frontend/src/import-components.js`. Questo file importa i **React Core Components** predefiniti e li rende disponibili per il progetto. Nel capitolo successivo verrà esaminata la mappatura del contenuto AEM ai componenti SPA.
 
-## Aggiungi un componente SPA statico {#static-spa-component}
+## Aggiungere un componente SPA statico {#static-spa-component}
 
 Quindi, aggiungi un nuovo componente al SPA e distribuisci le modifiche a un&#39;istanza AEM locale. Questo sarà un semplice cambiamento, solo per illustrare come viene aggiornato il SPA.
 
