@@ -3,19 +3,18 @@ title: Creazione di due layout di colonna per i documenti del canale di stampa
 seo-title: Creazione di due layout di colonna per i documenti del canale di stampa
 description: Crea 2 layout di colonna per il documento del canale di stampa
 seo-description: Crea 2 layout di colonna per il documento del canale di stampa
-feature: Interactive Communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '241'
 ht-degree: 2%
 
 ---
@@ -25,7 +24,7 @@ ht-degree: 2%
 
 Questo breve articolo evidenzierà i passaggi necessari per creare il layout a 2 colonne nel canale di stampa. Il caso d’uso è quello di generare 2 documenti di pagina con layout a pagina 1 con layout a colonne 2 e a pagina 2 con layout a colonne standard 1.
 
-Di seguito sono riportati i passaggi di alto livello relativi alla creazione di layout di colonna con 2 tramite AEM Forms Designer.
+Di seguito sono riportati i passaggi di alto livello relativi alla creazione di layout di due colonne utilizzando AEM Forms Designer.
 
 * Creare 2 aree contenuto nella pagina master 1
 * Denominare le 2 aree contenuto &quot;colonna a sinistra&quot; e &quot;colonna a destra&quot;
