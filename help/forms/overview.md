@@ -1,16 +1,15 @@
 ---
-title: Tutorial e video su AEM Forms
-seo-title: Tutorial e video su AEM Forms
+title: Tutorials e video di AEM Forms
+seo-title: Tutorials e video di AEM Forms
 description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms
 seo-description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms
 sub-product: forms
-topic: Development
+topic: Sviluppo
 role: Developer
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 17%
+source-wordcount: '304'
+ht-degree: 16%
 
 ---
 
@@ -69,7 +68,7 @@ Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, g
     </a>
     <div>
       <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
-    <strong>Utilizzo del modello dati modulo nel flusso di lavoro AEM</strong>
+    <strong>Uso del modello dati modulo nel flusso di lavoro AEM</strong>
     </a>
     </div>
     <p>
@@ -81,10 +80,10 @@ Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, g
 
 ## Risorse aggiuntive
 
-* [Experience League - Esplorare AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - Esplora AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [Documentazione sull’authoring di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
-* [Documentazione sullo sviluppo di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
-* [Documentazione sull’amministrazione di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
+* [Documentazione di sviluppo di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
+* [Documentazione di amministrazione di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
 * [Documentazione sulla distribuzione di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
 * [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutorial di AEM Assets](/help/assets/overview.md)
