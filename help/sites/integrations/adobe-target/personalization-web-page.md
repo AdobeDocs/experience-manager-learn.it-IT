@@ -8,14 +8,13 @@ activity: use
 version: cloud-service
 kt: 6353
 thumbnail: 6353-personalization-web-page.jpg
-topic: Integrations
+topic: Integrations (Integrazioni)
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 1%
+source-wordcount: '462'
+ht-degree: 0%
 
 ---
 
@@ -26,9 +25,9 @@ Scopri come creare un’attività per reindirizzare le pagine del sito ospitate 
 
 ## Prerequisiti
 
-Per personalizzare le pagine intere di un sito web AEM, è necessario completare la seguente configurazione:
+Per personalizzare le pagine complete di un sito web AEM, è necessario completare la seguente configurazione:
 
-1. [Aggiungi Adobe Target al tuo sito web AEM](./add-target-launch-extension.md)
+1. [Aggiungere Adobe Target al sito Web AEM](./add-target-launch-extension.md)
 1. [Attivare una chiamata Adobe Target da Launch](./load-and-fire-target.md)
 
 ## Panoramica dello scenario
@@ -81,6 +80,6 @@ In qualità di addetto al marketing hai creato un’attività per reindirizzare 
 
 ## Collegamenti di supporto
 
-* [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
-* [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
+* [Debugger Adobe Experience Cloud - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
+* [Debugger Adobe Experience Cloud - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
 
