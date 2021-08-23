@@ -4,20 +4,19 @@ seo-title: Invio della pagina di ringraziamento
 description: Visualizza una pagina di ringraziamento all’invio del modulo adattivo
 seo-description: Visualizza una pagina di ringraziamento all’invio del modulo adattivo
 uuid: ec695b87-083a-47f6-92ac-c9a6dc2b85fb
-feature: Adaptive Forms
+feature: Moduli adattivi
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 58c6bf42-efe5-41a3-8023-d84f3675f689
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '278'
 ht-degree: 1%
 
 ---
@@ -35,7 +34,7 @@ Nella schermata seguente, stiamo inviando il modulo adattivo per ringraziarti la
 
 ![grazie](assets/thankyoupage.gif)
 
-Puoi anche inviare all’endpoint esterno tramite POST. Per farlo, devi solo selezionare la casella di controllo &quot;abilita richiesta post&quot; e fornire l’URL per l’endpoint esterno. Quando si invia il modulo, si ottiene la pagina di ringraziamento e l’endpoint POST viene richiamato simultaneamente.
+È inoltre possibile inviare all’endpoint esterno tramite POST. Per farlo, devi solo selezionare la casella di controllo &quot;abilita richiesta post&quot; e fornire l’URL per l’endpoint esterno. Quando si invia il modulo, si ottiene la pagina di ringraziamento e l’endpoint POST viene richiamato simultaneamente.
 
 ![catturare](assets/capture.gif)
 
