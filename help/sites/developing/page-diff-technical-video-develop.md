@@ -1,19 +1,18 @@
 ---
 title: Sviluppo per differenze di pagina in AEM Sites
 description: Questo video mostra come fornire stili personalizzati per la funzionalità Differenza pagina di AEM Sites.
-feature: Authoring
+feature: 'Authoring  '
 topics: development
 audience: developer
 doc-type: technical video
 activity: develop
 version: 6.3, 6.4, 6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '295'
 ht-degree: 3%
 
 ---
@@ -23,7 +22,7 @@ ht-degree: 3%
 
 Questo video mostra come fornire stili personalizzati per la funzionalità Differenza pagina di AEM Sites.
 
-## Personalizzazione degli stili delle differenze di pagina {#customizing-page-difference-styles}
+## Personalizzazione degli stili di differenza della pagina {#customizing-page-difference-styles}
 
 >[!VIDEO](https://video.tv.adobe.com/v/18871/?quality=9&learn=on)
 
@@ -31,13 +30,13 @@ Questo video mostra come fornire stili personalizzati per la funzionalità Diffe
 >
 >Questo video aggiunge CSS personalizzati alla libreria client we.Retail, in cui, come tali modifiche devono essere apportate al progetto AEM Sites del cliente; nel codice di esempio seguente: `my-project`.
 
-La differenza di pagina di AEM ottiene il CSS OOTB tramite un caricamento diretto di `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
+AEM differenza di pagina ottiene il CSS OOTB tramite un carico diretto di `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
 
 A causa di questo carico diretto di CSS anziché utilizzare una categoria di libreria client, dobbiamo trovare un altro punto di inserimento per gli stili personalizzati, e questo punto di iniezione personalizzato è la clientlib di authoring del progetto.
 
 Questo ha il vantaggio di consentire a queste sostituzioni di stile personalizzate di essere specifiche del tenant.
 
-### Prepara la clientlib di authoring {#prepare-the-authoring-clientlib}
+### Preparare la clientlib dell’authoring {#prepare-the-authoring-clientlib}
 
 Assicurati l’esistenza di una clientlib `authoring` per il progetto in `/apps/my-project/clientlib/authoring.`
 
@@ -48,7 +47,7 @@ Assicurati l’esistenza di una clientlib `authoring` per il progetto in `/apps/
         categories="[my-project.authoring]"/>
 ```
 
-### Fornisci il CSS personalizzato {#provide-the-custom-css}
+### Fornire i CSS personalizzati {#provide-the-custom-css}
 
 Aggiungi a clientlib del progetto `authoring` un `css.txt` che punta al file minore che fornirà gli stili di override. [](https://lesscss.org/) La lezione è preferita a causa delle sue molte funzioni convenienti, tra cui il wrapping di classe che viene sfruttato in questo esempio.
 
