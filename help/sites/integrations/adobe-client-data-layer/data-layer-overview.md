@@ -1,39 +1,33 @@
 ---
-title: Utilizzo di Adobe Client Data Layer con i componenti core di AEM
-description: Adobe Client Data Layer introduce un metodo standard per raccogliere e memorizzare dati sull’esperienza di un visitatore su una pagina web e semplificarne l’accesso. Adobe Client Data Layer è indipendente dalla piattaforma, ma è completamente integrato nei componenti core per l’utilizzo con AEM.
-feature: core-component
-topics: integrations
-audience: developer
-doc-type: feature video
-activity: use
-version: cloud-service
-kt: 6261
-thumbnail: 41195.jpg
-topic: Integrations
+title: Utilizzo di Adobe Client Data Layer con AEM componenti core
+description: Adobe Client Data Layer introduce un metodo standard per raccogliere e memorizzare dati sull’esperienza di un visitatore su una pagina web e quindi semplificare l’accesso a tali dati. Adobe Client Data Layer è indipendente dalla piattaforma, ma è completamente integrato nei componenti core per l’utilizzo con AEM.
+topic: Integrations (Integrazioni)
+feature: Adobe Client Data Layer, Componenti core
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+kt: 6261
+thumbnail: 41195.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 1%
+source-wordcount: '791'
+ht-degree: 0%
 
 ---
 
 
-# Utilizzo di Adobe Client Data Layer con i componenti core di AEM {#overview}
+# Utilizzo di Adobe Client Data Layer con AEM componenti core {#overview}
 
-Adobe Client Data Layer introduce un metodo standard per raccogliere e memorizzare dati sull’esperienza di un visitatore su una pagina web e semplificarne l’accesso. Adobe Client Data Layer è indipendente dalla piattaforma, ma è completamente integrato nei componenti core per l’utilizzo con AEM.
+Adobe Client Data Layer introduce un metodo standard per raccogliere e memorizzare dati sull’esperienza di un visitatore su una pagina web e quindi semplificare l’accesso a tali dati. Adobe Client Data Layer è indipendente dalla piattaforma, ma è completamente integrato nei componenti core per l’utilizzo con AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41195?quality=12&learn=on)
 
 >[!NOTE]
 >
-> Vuoi abilitare Adobe Client Data Layer sul tuo sito AEM? [Vedi le istruzioni qui](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
+> Vuoi abilitare Adobe Client Data Layer sul tuo sito AEM? [Vedi le istruzioni qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
 
 ## Esplorare il livello dati
 
-Puoi ottenere un&#39;idea delle funzionalità integrate di Adobe Client Data Layer semplicemente utilizzando gli strumenti per sviluppatori del browser e il [sito di riferimento WKND ](https://wknd.site/) live.
+Puoi ottenere un&#39;idea delle funzionalità integrate di Adobe Client Data Layer solo utilizzando gli strumenti per sviluppatori del browser e il [sito di riferimento WKND](https://wknd.site/) live.
 
 >[!NOTE]
 >
@@ -46,9 +40,9 @@ Puoi ottenere un&#39;idea delle funzionalità integrate di Adobe Client Data Lay
    window.adobeDataLayer.getState();
    ```
 
-   Ispeziona la risposta per visualizzare lo stato corrente del livello di dati su un sito AEM. Dovresti visualizzare informazioni sulla pagina e sui singoli componenti.
+   Inspect la risposta per visualizzare lo stato corrente del livello di dati su un sito AEM. Dovresti visualizzare informazioni sulla pagina e sui singoli componenti.
 
-   ![Risposta Adobe Data Layer](assets/data-layer-state-response.png)
+   ![Adobe risposta livello dati](assets/data-layer-state-response.png)
 
 1. Invia un oggetto dati a un livello dati immettendo quanto segue nella console:
 
@@ -169,14 +163,14 @@ Puoi ottenere un&#39;idea delle funzionalità integrate di Adobe Client Data Lay
 
    L&#39;evento `cmp:show` per la pagina viene attivato su ogni caricamento di pagina nella parte superiore della pagina. Potresti chiedere, perché il gestore eventi è stato attivato, quando la pagina è chiaramente già stata caricata?
 
-   Questa è una delle caratteristiche uniche di Adobe Client Data Layer, in quanto puoi registrare i listener di eventi **prima** o **dopo** che il livello dati è stato inizializzato. Questa è una caratteristica fondamentale per evitare le condizioni di razza.
+   Questa è una delle caratteristiche uniche di Adobe Client Data Layer, in quanto è possibile registrare listener di eventi **prima** o **dopo** che il livello dati è stato inizializzato. Questa è una caratteristica fondamentale per evitare le condizioni di razza.
 
    Il livello dati mantiene una matrice di coda di tutti gli eventi che si sono verificati in sequenza. Per impostazione predefinita, il Livello dati attiva i callback degli eventi per gli eventi che si sono verificati in **passato** e per gli eventi in **futuro**. È possibile filtrare gli eventi solo in passato o in futuro. [Ulteriori informazioni sono disponibili nella documentazione](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
 
 
 ## Passaggi successivi
 
-Consulta la seguente esercitazione per scoprire come utilizzare il livello dati client Adobe basato sugli eventi per [raccogliere i dati di pagina e inviarli ad Adobe Analytics](../analytics/collect-data-analytics.md).
+Consulta la seguente esercitazione per scoprire come utilizzare il livello dati client Adobe basato su eventi per [raccogliere i dati di pagina e inviarli ad Adobe Analytics](../analytics/collect-data-analytics.md).
 
 Oppure scopri come [personalizzare Adobe Client Data Layer con i componenti AEM](./data-layer-customize.md)
 
@@ -184,4 +178,4 @@ Oppure scopri come [personalizzare Adobe Client Data Layer con i componenti AEM]
 ## Risorse aggiuntive {#additional-resources}
 
 * [Documentazione di Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki)
-* [Utilizzo della documentazione di Adobe Client Data Layer e Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
+* [Utilizzo della documentazione di Adobe Client Data Layer e Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
