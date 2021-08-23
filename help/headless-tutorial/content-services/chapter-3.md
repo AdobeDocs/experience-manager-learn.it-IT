@@ -1,16 +1,15 @@
 ---
 title: Capitolo 3 - Authoring di frammenti di contenuto di eventi - Content Services
-seo-title: Guida introduttiva di AEM Content Services - Capitolo 3 - Creazione di frammenti di contenuto di eventi
-description: Il capitolo 3 dell’esercitazione AEM Headless riguarda la creazione e la creazione di frammenti di contenuto evento dal modello di frammento di contenuto creato nel capitolo 2.
-seo-description: Il capitolo 3 dell’esercitazione AEM Headless riguarda la creazione e la creazione di frammenti di contenuto evento dal modello di frammento di contenuto creato nel capitolo 2.
-feature: Content Fragments, APIs
-topic: Headless, Content Management
+seo-title: Guida introduttiva a AEM Content Services - Capitolo 3 - Creazione di frammenti di contenuto di eventi
+description: Il capitolo 3 dell’esercitazione AEM headless descrive la creazione e la creazione di frammenti di contenuto evento dal modello di frammento di contenuto creato nel capitolo 2.
+seo-description: Il capitolo 3 dell’esercitazione AEM headless descrive la creazione e la creazione di frammenti di contenuto evento dal modello di frammento di contenuto creato nel capitolo 2.
+feature: Frammenti di contenuto, API
+topic: Senza testa, gestione dei contenuti
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '516'
 ht-degree: 3%
 
 ---
@@ -18,7 +17,7 @@ ht-degree: 3%
 
 # Capitolo 3 - Creazione di frammenti di contenuto evento
 
-Il capitolo 3 dell’esercitazione AEM Headless riguarda la creazione e la creazione di frammenti di contenuto di eventi dal modello di frammento di contenuto creato in [Capitolo 2](./chapter-2.md).
+Il capitolo 3 dell’esercitazione AEM headless descrive la creazione e la creazione di frammenti di contenuto di eventi dal modello di frammento di contenuto creato in [Capitolo 2](./chapter-2.md).
 
 ## Creazione di un frammento di contenuto evento
 
@@ -46,7 +45,7 @@ In questo passaggio, crea un nuovo [!DNL Event] per `Punkrock Fest` nella cartel
 
    Tocca **[!UICONTROL Salva]** nella barra delle azioni superiore per salvare le modifiche.
 
-1. Utilizzando [Gestione pacchetti di AEM](http://localhost:4502/crx/packmgr/index.jsp), installa il pacchetto sottostante su AEM Author. Questo pacchetto contiene una serie di frammenti di contenuto evento.
+1. Utilizzando [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp), installa il pacchetto sottostante su AEM Author. Questo pacchetto contiene una serie di frammenti di contenuto evento.
 
    [Ottieni file: GitHub > Risorse > com.adobe.aem.guides.wknd-mobile.content.capitolo-3.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
 
@@ -67,6 +66,6 @@ Rivedi nel **riquadro Proprietà** che dispone di una proprietà `cq:model` che 
 
 ## Passaggio successivo
 
-Si consiglia di installare il pacchetto di contenuti [com.adobe.aem.guides.wknd-mobile.content.capitolo-3.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) su AEM Author tramite [Gestione pacchetti [!UICONTROL di AEM]](http://localhost:4502/crx/packmgr/index.jsp). Questo pacchetto contiene le configurazioni e il contenuto descritti in questo e nei precedenti capitoli dell&#39;esercitazione.
+Si consiglia di installare il pacchetto di contenuti [com.adobe.aem.guides.wknd-mobile.content.capitolo-3.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) su AEM Author tramite [AEM [!UICONTROL Gestione pacchetti]](http://localhost:4502/crx/packmgr/index.jsp). Questo pacchetto contiene le configurazioni e il contenuto descritti in questo e nei precedenti capitoli dell&#39;esercitazione.
 
-* [Capitolo 4 - Definizione dei modelli di servizi di contenuti AEM](./chapter-4.md)
+* [Capitolo 4 - Definizione dei modelli di servizi di contenuto AEM](./chapter-4.md)
