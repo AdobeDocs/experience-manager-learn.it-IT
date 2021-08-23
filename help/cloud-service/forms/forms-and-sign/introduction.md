@@ -10,7 +10,6 @@ feature: Moduli adattivi
 topic: Sviluppo
 kt: 7578
 thumbnail: 332706.jpg
-translation-type: tm+mt
 source-git-commit: 98cfc9e007770e7a8291343bdd63fd523f747bb9
 workflow-type: tm+mt
 source-wordcount: '28'
