@@ -1,16 +1,15 @@
 ---
 title: Capitolo 2 - Definizione dei modelli di frammento di contenuto evento - Content Services
-seo-title: Guida introduttiva di AEM Content Services - Capitolo 2 - Definizione dei modelli di frammenti di contenuto evento
-description: Il capitolo 2 dell’esercitazione AEM Headless riguarda l’abilitazione e la definizione dei modelli di frammenti di contenuto utilizzati per definire una struttura dati normalizzata e un’interfaccia di authoring per la creazione di eventi.
-seo-description: Il capitolo 2 dell’esercitazione AEM Headless riguarda l’abilitazione e la definizione dei modelli di frammenti di contenuto utilizzati per definire una struttura dati normalizzata e un’interfaccia di authoring per la creazione di eventi.
-feature: Content Fragments, APIs
-topic: Headless, Content Management
+seo-title: Guida introduttiva a AEM Content Services - Capitolo 2 - Definizione dei modelli di frammenti di contenuto evento
+description: Il capitolo 2 dell’esercitazione AEM headless descrive l’abilitazione e la definizione di modelli di frammenti di contenuto utilizzati per definire una struttura dati normalizzata e un’interfaccia di authoring per la creazione di eventi.
+seo-description: Il capitolo 2 dell’esercitazione AEM headless descrive l’abilitazione e la definizione di modelli di frammenti di contenuto utilizzati per definire una struttura dati normalizzata e un’interfaccia di authoring per la creazione di eventi.
+feature: Frammenti di contenuto, API
+topic: Senza testa, gestione dei contenuti
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '998'
 ht-degree: 7%
 
 ---
@@ -18,7 +17,7 @@ ht-degree: 7%
 
 # Capitolo 2 - Utilizzo dei modelli di frammenti di contenuto
 
-I modelli per frammenti di contenuto AEM definiscono schemi di contenuto che possono essere utilizzati per modellare la creazione di contenuti non elaborati da parte degli autori AEM. Questo approccio è simile all’impalcatura o all’authoring basato su moduli. Il concetto chiave con Frammenti di contenuto è che il contenuto creato è indipendente dalla presentazione, il che significa che è destinato all’uso multicanale in cui l’applicazione che consuma, sia che AEM, un’applicazione a pagina singola o un’app mobile, controlla come il contenuto viene visualizzato all’utente.
+AEM Modelli per frammenti di contenuto definiscono schemi di contenuto che possono essere utilizzati per modellare la creazione di contenuti non elaborati da parte degli autori di AEM. Questo approccio è simile all’impalcatura o all’authoring basato su moduli. Il concetto chiave con Frammenti di contenuto è che il contenuto creato non è agnostico alla presentazione, il che significa che è destinato all’uso multicanale in cui l’applicazione che consuma, sia che AEM, un’applicazione a pagina singola o un’app mobile, controlla come il contenuto viene visualizzato all’utente.
 
 La principale preoccupazione del frammento di contenuto è garantire:
 
@@ -29,19 +28,19 @@ Questo capitolo illustra l’abilitazione e la definizione dei modelli di framme
 
 ## Abilita modelli di frammenti di contenuto
 
-I modelli di frammento di contenuto **devono essere abilitati** tramite **[Browser di configurazione di AEM ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)**.
+I modelli di frammenti di contenuto **devono essere abilitati** tramite **[AEM [!UICONTROL Browser di configurazione]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)**.
 
-Se i modelli di frammento di contenuto **non** sono abilitati per una configurazione, il pulsante **[!UICONTROL Crea] > [!UICONTROL Frammento di contenuto]** non verrà visualizzato per la configurazione AEM pertinente.
+Se i modelli di frammento di contenuto sono **non** abilitati per una configurazione, il pulsante **[!UICONTROL Crea] > [!UICONTROL Frammento di contenuto]** non verrà visualizzato per la configurazione AEM pertinente.
 
 >[!NOTE]
 >
->Le configurazioni di AEM rappresentano un set di [configurazioni tenant basate sul contesto](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) memorizzate in `/conf`. In genere le configurazioni AEM sono correlate a un particolare sito web gestito in AEM Sites o a un’unità aziendale responsabile di un sottoinsieme di contenuti (risorse, pagine, ecc.) in AEM.
+>Le configurazioni di AEM rappresentano un set di [configurazioni tenant basate sul contesto](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) memorizzate in `/conf`. In genere le configurazioni AEM sono correlate a un particolare sito Web gestito in AEM Sites o a un’unità aziendale responsabile di un sottoinsieme di contenuti (risorse, pagine, ecc.) in AEM.
 >
 >Affinché una configurazione influisca su una gerarchia di contenuto, è necessario fare riferimento alla configurazione tramite la proprietà `cq:conf` nella gerarchia di contenuto specificata. (Questo si ottiene per la configurazione [!DNL WKND Mobile] in **Passaggio 5** qui sotto).
 >
 >Quando si utilizza la configurazione `global`, questa si applica a tutti i contenuti e non è necessario impostare `cq:conf`.
 >
->Per ulteriori informazioni, consulta la documentazione [[!UICONTROL Browser configurazioni]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html) .
+>Per ulteriori informazioni, consulta la documentazione [[!UICONTROL Browser configurazioni]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html) .
 
 1. Accedi ad AEM Author come utente con le autorizzazioni appropriate per modificare la configurazione pertinente.
    * Per questa esercitazione, è possibile utilizzare l&#39;utente **admin** .
@@ -53,7 +52,7 @@ Se i modelli di frammento di contenuto **non** sono abilitati per una configuraz
 
    >[!NOTE]
    >
-   >Questa modifica alla configurazione non è reversibile dall&#39; [!UICONTROL Configurazione AEM] Interfaccia web. Per annullare questa configurazione:
+   >Questa modifica alla configurazione non è reversibile dall&#39;interfaccia utente Web [!UICONTROL AEM Configuration]. Per annullare questa configurazione:
    >    
    >    1. Apri [CRXDE Lite](http://localhost:4502/crx/de)
    >    1. Accedi a `/conf/wknd-mobile/settings/dam/cfm`
@@ -67,7 +66,7 @@ Se i modelli di frammento di contenuto **non** sono abilitati per una configuraz
    1. Passa a **[!UICONTROL AEM] > [!UICONTROL Risorse] > [!UICONTROL File]**
    1. Seleziona la cartella **[!UICONTROL WKND Mobile]**
    1. Tocca il pulsante **[!UICONTROL Proprietà]** nella barra delle azioni superiore per aprire [!UICONTROL Proprietà cartella]
-   1. In [!UICONTROL Proprietà cartella], tocca la scheda **[!UICONTROL Servizi cloud]**
+   1. In [!UICONTROL Proprietà cartella], tocca la scheda **[!UICONTROL Cloud Services]**
    1. Verifica che il campo **[!UICONTROL Configurazione cloud]** sia impostato su **/conf/wknd-mobile**
    1. Tocca **[!UICONTROL Salva e chiudi]** in alto a destra per mantenere le modifiche
 
@@ -179,6 +178,6 @@ Dopo aver completato la creazione del modello per frammenti di contenuto, dovres
 
 ## Passaggio successivo
 
-Facoltativamente, installa il pacchetto di contenuti [com.adobe.aem.guides.wknd-mobile.content.capitolo-2.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) su AEM Author tramite [Gestione pacchetti di AEM](http://localhost:4502/crx/packmgr/index.jsp). Questo pacchetto contiene le configurazioni e il contenuto descritti in questa parte dell&#39;esercitazione.
+Facoltativamente, installa il pacchetto di contenuti [com.adobe.aem.guides.wknd-mobile.content.capitolo-2.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) su AEM Author tramite [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp). Questo pacchetto contiene le configurazioni e il contenuto descritti in questa parte dell&#39;esercitazione.
 
 * [Capitolo 3 - Creazione di frammenti di contenuto evento](./chapter-3.md)
