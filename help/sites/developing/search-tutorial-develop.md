@@ -1,27 +1,26 @@
 ---
 title: Guida all’implementazione per semplici ricerche
-description: L’implementazione Semplice per la ricerca sono i materiali del laboratorio 2017 Summit AEM Search Demystified. Questa pagina contiene i materiali di questo laboratorio. Per una visita guidata del laboratorio, vedere la cartella di lavoro Lab nella sezione Presentazione di questa pagina.
+description: L'implementazione Semplice di ricerca sono i materiali del laboratorio del Summit 2017 AEM Ricerca Demystified. Questa pagina contiene i materiali di questo laboratorio. Per una visita guidata del laboratorio, vedere la cartella di lavoro Lab nella sezione Presentazione di questa pagina.
 topics: development, search
 audience: developer
 doc-type: tutorial
 activity: develop
 version: 6.3, 6.4, 6.5
-feature: Search
-topic: Development
+feature: Ricerca
+topic: Sviluppo
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '899'
 ht-degree: 2%
 
 ---
 
 
-# Guida all&#39;implementazione della ricerca semplice{#simple-search-implementation-guide}
+# Guida all’implementazione per semplici ricerche{#simple-search-implementation-guide}
 
-L&#39;implementazione della ricerca semplice è costituita dai materiali del **laboratorio Adobe Summit AEM Search Demystified**. Questa pagina contiene i materiali di questo laboratorio. Per una visita guidata del laboratorio, vedere la cartella di lavoro Lab nella sezione Presentazione di questa pagina.
+L&#39;implementazione della ricerca semplice è costituita dai materiali del **laboratorio di Adobe Summit AEM Search Demystified**. Questa pagina contiene i materiali di questo laboratorio. Per una visita guidata del laboratorio, vedere la cartella di lavoro Lab nella sezione Presentazione di questa pagina.
 
 ![Panoramica dell’architettura di ricerca](assets/l4080/simple-search-application.png)
 
@@ -62,7 +61,7 @@ L&#39;implementazione della ricerca semplice è costituita dai materiali del **l
 * [Tag](assets/l4080/summit-tags.zip)
 * [Pacchetto applicazione di ricerca semplice](assets/l4080/simple.ui.apps-0.0.1-snapshot.zip)
 
-### Pacchetti capitolo {#chapter-packages}
+### Colli per capitolo {#chapter-packages}
 
 * [Soluzione del capitolo 1](assets/l4080/l4080-chapter1.zip)
 * [Soluzione del capitolo 2](assets/l4080/l4080-chapter2.zip)
@@ -78,7 +77,7 @@ L&#39;implementazione della ricerca semplice è costituita dai materiali del **l
 * [Archivio Github](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/master/simple-search-guide)
 * [Modelli Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Esportatore di modelli Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
-* [API di QueryBuilder](https://docs.adobe.com/docs/en/aem/6-2/develop/search/querybuilder-api.html)
+* [API di QueryBuilder](https://experienceleague.adobe.com/docs/)
 * [Plug-in AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode)  (pagina [Documentazione](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## Correzioni e follow-up {#corrections-and-follow-up}
@@ -87,7 +86,7 @@ Correzioni e chiarimenti dalle discussioni di laboratorio e risposte alle domand
 
 1. **Come interrompere la reindicizzazione?**
 
-   La reindicizzazione può essere arrestata tramite la MBean IndexStats disponibile tramite [Console web AEM > JMX](http://localhost:4502/system/console/jmx)
+   La reindicizzazione può essere arrestata tramite la MBean IndexStats disponibile tramite [AEM console Web > JMX](http://localhost:4502/system/console/jmx)
 
    * [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
       * Esegui `abortAndPause()` per interrompere la reindicizzazione. Questo blocca l&#39;indice per un&#39;ulteriore reindicizzazione fino a quando `resume()` non viene richiamato.
@@ -113,7 +112,7 @@ Correzioni e chiarimenti dalle discussioni di laboratorio e risposte alle domand
 
 3. **Dove si trova un elenco di tutti gli analizzatori disponibili?**
 
-   Oak espone un set di elementi di configurazione dell’analizzatore lucene-fornisce da utilizzare in AEM.
+   Oak espone un set di elementi di configurazione dell&#39;analizzatore lucene-fornisce da utilizzare in AEM.
 
    * [Documentazione di Apache Oak Analyzers](http://jackrabbit.apache.org/oak/docs/query/lucene.html#analyzers)
       * [Token](https://cwiki.apache.org/confluence/display/solr/Tokenizers)
@@ -140,7 +139,7 @@ Correzioni e chiarimenti dalle discussioni di laboratorio e risposte alle domand
    PLAN: [cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* */ union [dam:Asset] as [a] /* lucene:damAssetLucene(/oak:index/damAssetLucene) *:* */
    ```
 
-   Esplora la query e i risultati tramite [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) e [plug-in AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   Esplora la query e i risultati tramite [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) e [AEM Chrome Plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
 
 5. **Come eseguire la ricerca su più percorsi nella stessa query?**
 
@@ -164,4 +163,4 @@ Correzioni e chiarimenti dalle discussioni di laboratorio e risposte alle domand
    PLAN: [cq:Page] as [a] /* traverse "/content/docs/en/6-2//*" where isdescendantnode([a], [/content/docs/en/6-2]) */ union [cq:Page] as [a] /* traverse "/content/docs/en/6-3//*" where isdescendantnode([a], [/content/docs/en/6-3]) */
    ```
 
-   Esplora la query e i risultati tramite [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) e [plug-in AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   Esplora la query e i risultati tramite [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) e [AEM Chrome Plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
