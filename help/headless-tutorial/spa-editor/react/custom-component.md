@@ -11,15 +11,15 @@ thumbnail: 5878-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 32320905786682a852baf7d777cb06de0072c439
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1228'
 ht-degree: 2%
 
 ---
 
 
-# Crea un componente meteo personalizzato {#custom-component}
+# Creare un componente meteo personalizzato {#custom-component}
 
 Scopri come creare un componente meteo personalizzato da utilizzare con l’editor di SPA di AEM. Scopri come sviluppare le finestre di dialogo degli autori e i modelli Sling per estendere il modello JSON a un componente personalizzato. Vengono utilizzati i componenti [Open Weather API](https://openweathermap.org) e [React Open Weather](https://www.npmjs.com/package/react-open-weather).
 
@@ -145,7 +145,7 @@ Un componente AEM è definito come un nodo e proprietà. Nel progetto questi nod
    >
    > Puoi visualizzare molti altri [esempi di finestre di dialogo visualizzando le definizioni dei componenti core](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components). È inoltre possibile visualizzare campi modulo aggiuntivi, come `select`, `textarea`, `pathfield`, disponibili sotto `/libs/granite/ui/components/coral/foundation/form` in [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/libs/granite/ui/components/coral/foundation/form).
 
-   Con un componente AEM tradizionale, in genere è richiesto uno script [HTL](https://docs.adobe.com/content/help/it-IT/experience-manager-htl/using/overview.html). Poiché il SPA eseguirà il rendering del componente, non è necessario alcuno script HTL.
+   Con un componente AEM tradizionale, in genere è richiesto uno script [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it). Poiché il SPA eseguirà il rendering del componente, non è necessario alcuno script HTL.
 
 ## Creare il modello Sling
 
