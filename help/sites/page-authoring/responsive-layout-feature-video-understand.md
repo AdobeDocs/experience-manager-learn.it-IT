@@ -14,10 +14,10 @@ thumbnail: 32012.jpg
 topic: Gestione dei contenuti
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 22%
+source-wordcount: '132'
+ht-degree: 15%
 
 ---
 
@@ -30,4 +30,4 @@ Adobe Experience Manager Sites consente all’autore di gestire la larghezza di 
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Documentazione sul layout reattivo](https://docs.adobe.com/content/help/it-IT/experience-manager-65/authoring/siteandpage/responsive-layout.html)
+* [Documentazione sul layout reattivo](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html)
