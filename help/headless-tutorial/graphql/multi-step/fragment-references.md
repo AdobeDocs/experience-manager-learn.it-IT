@@ -1,12 +1,7 @@
 ---
 title: Modellazione dati avanzata con riferimenti a frammenti - Guida introduttiva a AEM Headless - GraphQL
-description: Guida introduttiva a Adobe Experience Manager (AEM) e GraphQL. Scopri come utilizzare la funzione Riferimento frammento per la modellazione avanzata dei dati e come creare una relazione tra due diversi frammenti di contenuto. Scopri come modificare una query GraphQL per includere un campo da un modello di riferimento.
-sub-product: assets
-topics: headless
+description: Guida introduttiva ad Adobe Experience Manager (AEM) e GraphQL. Scopri come utilizzare la funzione Riferimento frammento per la modellazione avanzata dei dati e come creare una relazione tra due diversi frammenti di contenuto. Scopri come modificare una query GraphQL per includere un campo da un modello di riferimento.
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6718
 thumbnail: KT-6718.jpg
@@ -14,10 +9,9 @@ feature: Frammenti di contenuto, API GraphQL
 topic: Senza testa, gestione dei contenuti
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '854'
 ht-degree: 1%
 
 ---
