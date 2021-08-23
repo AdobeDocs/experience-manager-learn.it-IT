@@ -9,7 +9,6 @@ user-guide-title: Introduzione a Dynamic Media Classic
 user-guide-description: Questo tutorial mostra come utilizzare Dynamic Media Classic per creare, eseguire l’authoring e distribuire contenuti rich media.
 breadcrumb-title: Tutorial di Dynamic Media Classic
 index: y
-translation-type: tm+mt
 source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
 workflow-type: tm+mt
 source-wordcount: '76'
