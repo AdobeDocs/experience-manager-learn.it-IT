@@ -1,9 +1,8 @@
 ---
 title: titolo guida
 seo-title: titolo SEO
-description: descrizione guida
+description: descrizione della guida
 seo-description: seo-description
-translation-type: tm+mt
 source-git-commit: f6b1af99eb9eb5602234c89ea25f1a7d03d64cc0
 workflow-type: tm+mt
 source-wordcount: '108'
@@ -14,26 +13,26 @@ ht-degree: 4%
 
 # Panoramica {#overview}
 
-Una panoramica del prodotto di 1-2 frasi su cui si basa questa guida utente. Questa guida utente contiene video ed esercitazioni sulle numerose funzioni e funzionalità di *xyz*.
+Panoramica del prodotto in 1-2 frasi su cui si basa questa guida utente. Questa guida utente contiene video ed esercitazioni sulle numerose funzioni e funzionalità di *xyz*.
 
 ## Novità
 
 * **[Nuovo video (video)](README.md)**
 
    <br>
-   *Scopri le nuove funzionalità.*
+   *Scopri questa nuova funzionalità.*
 
 * **[Nuovo video (video)](README.md)**
 
    <br>
-   *Scopri le nuove funzionalità.*
+   *Scopri questa nuova funzionalità.*
 
 * **[Un nuovo articolo (articolo)](README.md)**
 
    <br>
-   *Clicca qui per saperne di più sulla feature xyz!*
+   *Clicca qui per saperne di più su feature xyz!*
 
-## Prezzi del personale
+## Scelte dello staff
 
 <table>
 <tr>
@@ -81,6 +80,6 @@ Una panoramica del prodotto di 1-2 frasi su cui si basa questa guida utente. Que
 
 ## Risorse aggiuntive
 
-* [Risorsa n. 1](README.md)
-* [Risorsa n. 2](README.md)
-* [Risorsa n. 3](README.md)
+* [Risorsa 1](README.md)
+* [Risorsa 2](README.md)
+* [Risorsa 3](README.md)
