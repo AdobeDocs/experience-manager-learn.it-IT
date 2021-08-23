@@ -5,19 +5,18 @@ description: Questa è la parte 6 di un tutorial in più passaggi per la creazio
 seo-description: Questa è la parte 6 di un tutorial in più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte creeremo una comunicazione interattiva per il canale web.
 uuid: a1b29c5b-a323-4bda-aa99-5fb98614b690
 discoiquuid: b44ff855-9ead-471e-8f0f-b562b88a5337
-feature: Interactive Communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '202'
 ht-degree: 3%
 
 ---
@@ -27,7 +26,7 @@ ht-degree: 3%
 
 In questa parte creeremo una comunicazione interattiva per il canale web.
 
-1. Accedi all’istanza di authoring di AEM e passa a Adobe Experience Manager > Moduli > Moduli e documenti.
+1. Accedi all’istanza di authoring AEM e passa a Adobe Experience Manager > Forms > Forms &amp; Documents.
 1. Apri la cartella 401KStatment.
 1. Tocca Crea e seleziona Comunicazione interattiva. Viene visualizzata la pagina Crea comunicazione interattiva .
 1. Inserite le seguenti informazioni
