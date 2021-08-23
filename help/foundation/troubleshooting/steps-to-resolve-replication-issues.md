@@ -2,14 +2,13 @@
 title: Passaggi per risolvere i problemi di replica in AEM
 description: Passaggi per indagare e risolvere i problemi relativi alla replica
 type: Troubleshooting
-product: Sites
 role: Admin
 level: Beginner
 version: 6.5
 feature: Strumenti per gli sviluppatori
 topic: Amministrazione
 index: y
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 7%
