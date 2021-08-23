@@ -1,21 +1,20 @@
 ---
-title: Consegna del documento di comunicazione interattiva - Moduli AEM per il canale web
-seo-title: Consegna del documento di comunicazione interattiva - Moduli AEM per il canale web
+title: Consegna del documento di comunicazione interattiva - Web Channel AEM Forms
+seo-title: Consegna del documento di comunicazione interattiva - Web Channel AEM Forms
 description: Consegna del documento del canale web tramite link in email
 seo-description: Consegna del documento del canale web tramite link in email
-feature: Interactive Communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '296'
 ht-degree: 1%
 
 ---
@@ -52,4 +51,4 @@ Rappresentazione visiva del codice della riga 7
 Attributo di richiesta definito per il servizio di lettura del modale dei dati del modulo
 
 
-[Esempio di pacchetto AEM](assets/webchanneldelivery.zip).
+[Pacchetto AEM di esempio](assets/webchanneldelivery.zip).
