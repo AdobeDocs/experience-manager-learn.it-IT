@@ -10,17 +10,17 @@ role: Developer
 level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
-source-git-commit: 32320905786682a852baf7d777cb06de0072c439
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3299'
-ht-degree: 2%
+source-wordcount: '3285'
+ht-degree: 1%
 
 ---
 
 
 # Librerie lato client e flusso di lavoro front-end {#client-side-libraries}
 
-Scopri come le librerie lato client o le librerie client vengono utilizzate per distribuire e gestire CSS e JavaScript per un’implementazione di Adobe Experience Manager (AEM) Sites. Questa esercitazione riguarderà anche come il modulo [ui.frontend](https://docs.adobe.com/content/help/it-IT/experience-manager-core-components/using/developing/archetype/uifrontend.html), un progetto [webpack](https://webpack.js.org/) disaccoppiato, può essere integrato nel processo di compilazione end-to-end.
+Scopri come le librerie lato client o le librerie client vengono utilizzate per distribuire e gestire CSS e JavaScript per un’implementazione di Adobe Experience Manager (AEM) Sites. Questa esercitazione riguarderà anche come il modulo [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html), un progetto [webpack](https://webpack.js.org/) disaccoppiato, può essere integrato nel processo di compilazione end-to-end.
 
 ## Prerequisiti {#prerequisites}
 
@@ -81,7 +81,7 @@ Le librerie lato client forniscono un meccanismo per organizzare e gestire i fil
 1. Gestire le dipendenze da framework di terze parti in modo organizzato
 1. Riduci al minimo il numero di richieste lato client concatenando CSS/JS in una o due richieste.
 
-Ulteriori informazioni sull&#39;utilizzo delle [librerie lato client sono disponibili qui.](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/introduction/clientlibs.html)
+Ulteriori informazioni sull&#39;utilizzo delle [librerie lato client sono disponibili qui.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)
 
 Le librerie lato client presentano alcune limitazioni. In particolare, il supporto limitato per i linguaggi front-end popolari come Sass, LESS e TypeScript. Nell’esercitazione verrà illustrato come il modulo **ui.frontend** può contribuire a risolvere il problema.
 
@@ -89,7 +89,7 @@ Distribuisci la base di codice iniziale in un&#39;istanza AEM locale e passa a [
 
 ## Organizzazione delle librerie lato client {#organization}
 
-Ora esploreremo l&#39;organizzazione di clientlibs generati da [AEM Project Archetype](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/developing/archetype/overview.html).
+Ora esploreremo l&#39;organizzazione di clientlibs generati da [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
 
 ![Organizzazione di librerie client di alto livello](./assets/client-side-libraries/high-level-clientlib-organization.png)
 
@@ -117,9 +117,9 @@ Ora esploreremo l&#39;organizzazione di clientlibs generati da [AEM Project Arch
 
 1. Tenere presente che `clientlib-site` e `clientlib-dependencies` vengono ignorati dal controllo del codice sorgente. Questo è di progettazione, in quanto verranno generate in fase di creazione dal modulo `ui.frontend` .
 
-## Aggiorna gli stili di base {#base-styles}
+## Aggiorna stili di base {#base-styles}
 
-Quindi, aggiorna gli stili di base definiti nel modulo **[ui.frontend](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)** . I file nel modulo `ui.frontend` genereranno le librerie `clientlib-site` e `clientlib-dependecies` che contengono il tema del sito ed eventuali dipendenze di terze parti.
+Quindi, aggiorna gli stili di base definiti nel modulo **[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)** . I file nel modulo `ui.frontend` genereranno le librerie `clientlib-site` e `clientlib-dependecies` che contengono il tema del sito ed eventuali dipendenze di terze parti.
 
 Le librerie lato client hanno alcune limitazioni quando si tratta di supportare linguaggi come [Sass](https://sass-lang.com/) o [TypeScript](https://www.typescriptlang.org/). Esistono diversi strumenti open-source come [NPM](https://www.npmjs.com/) e [webpack](https://webpack.js.org/) che accelerano e ottimizzano lo sviluppo front-end. L&#39;obiettivo del modulo **ui.frontend** è quello di essere in grado di utilizzare questi strumenti per gestire la maggior parte dei file sorgente front-end.
 
@@ -200,7 +200,7 @@ Il AEM Project Archetype imposta automaticamente questa integrazione. Poi, esplo
 
    >[!NOTE]
    >
-   >Esiste anche un profilo `npm run prod` che minimizzerà JS e CSS. Questa è la compilazione standard ogni volta che la build del webpack viene attivata tramite Maven. Ulteriori dettagli sul modulo [ui.frontend sono disponibili qui](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html).
+   >Esiste anche un profilo `npm run prod` che minimizzerà JS e CSS. Questa è la compilazione standard ogni volta che la build del webpack viene attivata tramite Maven. Ulteriori dettagli sul modulo [ui.frontend sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
 
 1. Inspect il file `site.css` sotto `ui.frontend/dist/clientlib-site/site.css`. Questo è il CSS compilato in base ai file di origine Sass.
 
@@ -315,7 +315,7 @@ Quindi, esaminiamo come viene fatto riferimento alle clientlibs nella pagina di 
 
    >[!WARNING]
    >
-   >Dal lato della pubblicazione è fondamentale che le librerie client siano **non** servite da **/apps** in quanto questo percorso deve essere limitato per motivi di sicurezza utilizzando la sezione [Filtro Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#example-filter-section). La [proprietà allowProxy](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) della libreria client assicura che i CSS e JS siano serviti da **/etc.clientlibs**.
+   >Dal lato della pubblicazione è fondamentale che le librerie client siano **non** servite da **/apps** in quanto questo percorso deve essere limitato per motivi di sicurezza utilizzando la sezione [Filtro Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#example-filter-section). La [proprietà allowProxy](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) della libreria client assicura che i CSS e JS siano serviti da **/etc.clientlibs**.
 
 ## Webpack DevServer - Markup statico {#webpack-dev-static}
 
@@ -429,7 +429,7 @@ Visualizza il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd
 
 ## Strumenti e risorse aggiuntivi {#additional-resources}
 
-### aemfeed {#develop-aemfed}
+### aemed {#develop-aemfed}
 
 [****](https://aemfed.io/) aemfedis è uno strumento open-source a riga di comando che può essere utilizzato per accelerare lo sviluppo front-end. È alimentato da [aemsync](https://www.npmjs.com/package/aemsync), [Browsersync](https://www.npmjs.com/package/browser-sync) e [Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html).
 
