@@ -8,15 +8,14 @@ activity: understand
 version: cloud-service
 kt: 4639
 thumbnail: 32033.jpg
-feature: Publishing
-topic: Architecture
+feature: Pubblicazione
+topic: Architettura
 role: Architect, Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 3%
+source-wordcount: '48'
+ht-degree: 4%
 
 ---
 
