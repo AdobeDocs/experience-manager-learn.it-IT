@@ -4,26 +4,25 @@ seo-title: Creazione di frammenti di documento per contenere il nome e l’indir
 description: 'Questa è la parte 5 di un tutorial in più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte verrà creato un frammento di documento per contenere il nome e l''indirizzo del destinatario. '
 seo-description: 'Questa è la parte 5 di un tutorial in più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte verrà creato un frammento di documento per contenere il nome e l''indirizzo del destinatario. '
 uuid: 689931e4-a026-4e62-9acd-552918180819
-feature: Interactive Communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 404eed65-ec55-492a-85b5-59773896b217
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '280'
 ht-degree: 1%
 
 ---
 
 
-# Creazione di frammenti di documento per contenere il nome e l&#39;indirizzo del destinatario {#creating-document-fragments-to-hold-the-recipient-name-and-address}
+# Creazione di frammenti di documento per contenere il nome e l’indirizzo del destinatario {#creating-document-fragments-to-hold-the-recipient-name-and-address}
 
 In questa parte verrà creato un frammento di documento per contenere il nome e l&#39;indirizzo del destinatario.
 
