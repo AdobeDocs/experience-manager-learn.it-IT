@@ -7,10 +7,10 @@ version: 6.3, 6.4, 6.5
 topic: Gestione dei contenuti
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 8%
+source-wordcount: '149'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ AEM Assets Dynamic Media integra gli hotspot delle risorse con i frammenti esper
 
 >[!NOTE]
 >
->Per utilizzare AEM frammenti esperienza con AEM Assets Dynamic Media Hotspot è necessario eseguire [AEM in modalità Dynamic Media](https://docs.adobe.com/docs/it-IT/aem/6-3/administer/content/dynamic-media/config-dynamic.html).
+>Per utilizzare AEM frammenti esperienza con AEM Assets Dynamic Media Hotspot è necessario eseguire [AEM in modalità Dynamic Media](https://experienceleague.adobe.com/docs/).
 
 La variante del frammento esperienza pop-up mostrata nel video è disponibile come pacchetto AEM di seguito.
 
