@@ -1,14 +1,13 @@
 ---
 title: Capitolo 5 - Authoring delle pagine dei servizi di contenuti - Content Services
-description: Il capitolo 5 dell’esercitazione AEM Headless copre la creazione di pagine dai modelli definiti nel capitolo 4. Queste pagine fungeranno da endpoint HTTP JSON.
-feature: Content Fragments, APIs
-topic: Headless, Content Management
+description: Il capitolo 5 dell’esercitazione AEM Headless copre la creazione delle pagine dai modelli definiti nel capitolo 4. Queste pagine fungeranno da endpoint HTTP JSON.
+feature: Frammenti di contenuto, API
+topic: Senza testa, gestione dei contenuti
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -16,7 +15,7 @@ ht-degree: 0%
 
 # Capitolo 5 - Authoring delle pagine dei servizi per i contenuti
 
-Il capitolo 5 dell’esercitazione AEM Headless copre la creazione di una pagina dai modelli definiti nel capitolo 4. La pagina creata in questo capitolo fungerà da punto finale HTTP JSON per l’app mobile.
+Il capitolo 5 dell’esercitazione AEM Headless copre la creazione della pagina dai modelli definiti nel capitolo 4. La pagina creata in questo capitolo fungerà da punto finale HTTP JSON per l’app mobile.
 
 >[!NOTE]
 >
@@ -41,7 +40,7 @@ Il capitolo 5 dell’esercitazione AEM Headless copre la creazione di una pagina
 >
 > Il progetto fornisce CSS per fornire alcuni stili di base per l’esperienza di authoring.
 
-1. Modifica la pagina **API eventi** passando a **AEM > Sites > WKND Mobile > Inglese > API**, seleziona la pagina **API eventi** e tocca **Modifica** nella barra delle azioni superiore.
+1. Modifica la pagina **API eventi** passando a **AEM > Siti > WKND Mobile > Inglese > API**, seleziona la pagina **API eventi** e tocca **Modifica** nella barra delle azioni superiore.
 1. Aggiungi un’ **immagine logo** per visualizzarla nell’app trascinandola dal Finder sul segnaposto del componente Immagine.
    * Utilizza il logo fornito in `/content/dam/wknd-mobile/images/wknd-logo.png`.
 
@@ -68,7 +67,7 @@ Questa struttura JSON (o schema) deve essere ben compresa dai consumatori di que
 
 La risoluzione di questo contratto su un’API pubblicata potrebbe causare un comportamento non corretto nelle applicazioni che consumano contenuti.
 
-1. Nelle nuove schede del browser, richiedi le pagine API degli eventi utilizzando il selettore `.model.json`, che richiama l’esportatore JSON di AEM Content Services e serializza la pagina e i componenti in una struttura JSON normalizzata e ben definita.
+1. Nelle nuove schede del browser, richiedi le pagine API degli eventi utilizzando il selettore `.model.json`, che richiama AEM’esportatore JSON di Content Services e serializza la pagina e i componenti in una struttura JSON normalizzata e ben definita.
 
    La struttura JSON prodotta da queste pagine è la struttura a cui devono essere allineate le app che consumano.
 
@@ -88,6 +87,6 @@ La risoluzione di questo contratto su un’API pubblicata potrebbe causare un co
 
 ## Passaggio successivo
 
-Facoltativamente, installa il pacchetto di contenuti [com.adobe.aem.guides.wknd-mobile.content.capitolo-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) su AEM Author tramite [Gestione pacchetti di AEM](http://localhost:4502/crx/packmgr/index.jsp). Questo pacchetto contiene le configurazioni e il contenuto descritti in questo e nei precedenti capitoli dell&#39;esercitazione.
+Facoltativamente, installa il pacchetto di contenuti [com.adobe.aem.guides.wknd-mobile.content.capitolo-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) su AEM Author tramite [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp). Questo pacchetto contiene le configurazioni e il contenuto descritti in questo e nei precedenti capitoli dell&#39;esercitazione.
 
 * [Capitolo 6 - Esposizione dei contenuti su AEM Publish as JSON](./chapter-6.md)
