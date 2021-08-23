@@ -4,25 +4,24 @@ seo-title: Invio di e-mail con invio di moduli adattivi
 description: Invia e-mail di conferma per l’invio di moduli adattivi utilizzando il componente Invia e-mail
 seo-description: Invia e-mail di conferma per l’invio di moduli adattivi utilizzando il componente Invia e-mail
 uuid: 6c9549ba-cb56-4d69-902c-45272a8fd17e
-feature: Adaptive Forms
+feature: Moduli adattivi
 topics: authoring, integrations
 audience: developer
 doc-type: article
 activity: use
 discoiquuid: 1187357f-2f36-4a04-b708-44bb9c174fb5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '235'
 ht-degree: 1%
 
 ---
 
 
-# Invio di e-mail all’invio di moduli adattivi {#sending-email-on-adaptive-form-submission}
+# Invio di e-mail con invio di moduli adattivi {#sending-email-on-adaptive-form-submission}
 
 Una delle azioni comuni consiste nell’inviare un messaggio e-mail di conferma al mittente in seguito all’invio del modulo adattivo. A tal fine, selezioneremo l’azione &quot;Invia e-mail&quot; come azione di invio.
 
