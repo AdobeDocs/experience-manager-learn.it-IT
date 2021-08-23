@@ -1,12 +1,7 @@
 ---
 title: Esplora le API GraphQL - Guida introduttiva a AEM Headless - GraphQL
-description: Guida introduttiva a Adobe Experience Manager (AEM) e GraphQL. Esplora AEM API GraphQL utilizzando l’IDE GrapiQL integrato. Scopri come AEM automaticamente uno schema GraphQL basato su un modello di frammento di contenuto. Prova a costruire query di base utilizzando la sintassi GraphQL.
-sub-product: assets
-topics: headless
+description: Guida introduttiva ad Adobe Experience Manager (AEM) e GraphQL. Esplora AEM API GraphQL utilizzando l’IDE GrapiQL integrato. Scopri come AEM automaticamente uno schema GraphQL basato su un modello di frammento di contenuto. Prova a costruire query di base utilizzando la sintassi GraphQL.
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
@@ -14,16 +9,15 @@ feature: Frammenti di contenuto, API GraphQL
 topic: Senza testa, gestione dei contenuti
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
 
 
-# Esplora le API GraphQL {#explore-graphql-apis}
+# Esplorare le API GraphQL {#explore-graphql-apis}
 
 L’API GraphQL di AEM fornisce un potente linguaggio di query per esporre i dati dei frammenti di contenuto alle applicazioni a valle. I modelli di frammenti di contenuto definiscono lo schema di dati utilizzato dai frammenti di contenuto. Ogni volta che viene creato o aggiornato un modello di frammento di contenuto, lo schema viene tradotto e aggiunto al &quot;grafico&quot; che costituisce l’API GraphQL.
 
