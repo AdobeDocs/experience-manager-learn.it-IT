@@ -4,7 +4,7 @@ seo-title: Configurazione del grafico a linee per il primo documento di comunica
 description: Questa è la parte 8 dell'esercitazione su più passaggi per creare il primo documento di comunicazione interattivo per il canale di stampa. In questa parte verrà aggiunto un grafico a linee per visualizzare il saldo del conto.
 seo-description: Questa è la parte 8 dell'esercitazione su più passaggi per creare il primo documento di comunicazione interattivo per il canale di stampa. In questa parte verrà aggiunto un grafico a linee per visualizzare il saldo del conto.
 uuid: a4394874-a080-4b6a-a3eb-ffc71504919d
-feature: Interactive Communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,14 +13,13 @@ version: 6.4,6.5
 discoiquuid: 9110e5c6-50ee-4c3e-a779-b680ff49ef23
 kt: 5993
 thumbnail: 22386.jpg
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 2%
+source-wordcount: '173'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +28,7 @@ ht-degree: 2%
 
 In questa parte verrà aggiunto un grafico a linee per visualizzare il saldo del conto.
 
-Accedi a AEM Forms e passa a Adobe Experience Manager > Moduli > Moduli e documenti.
+Accedi ad AEM Forms e passa a Adobe Experience Manager > Forms > Forms e documenti.
 
 Apri la cartella 401KStatementPrint .
 
