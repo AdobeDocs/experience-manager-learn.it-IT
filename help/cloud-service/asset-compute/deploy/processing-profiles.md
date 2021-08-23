@@ -1,7 +1,7 @@
 ---
-title: Integrare i processi di lavoro di Asset Compute con i profili di elaborazione AEM
-description: AEM as a Cloud Service si integra con i processi di lavoro Asset Compute implementati in Adobe I/O Runtime tramite i profili di elaborazione di AEM Assets. I profili di elaborazione sono configurati nel servizio Author per elaborare risorse specifiche utilizzando processi di lavoro personalizzati e archiviare i file generati dai processi di lavoro come rappresentazioni delle risorse.
-feature: Asset Compute Microservices
+title: Integrare i processi di lavoro di Asset compute con i profili di elaborazione AEM
+description: AEM as a Cloud Service si integra con i processi di lavoro di Asset compute implementati in Adobe I/O Runtime tramite i profili di elaborazione AEM Assets. I profili di elaborazione sono configurati nel servizio Author per elaborare risorse specifiche utilizzando processi di lavoro personalizzati e archiviare i file generati dai processi di lavoro come rappresentazioni delle risorse.
+feature: Microservizi di Asset compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,13 +9,12 @@ audience: developer
 doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
-topic: Integrations, Development
+topic: Integrazioni, Sviluppo
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '635'
 ht-degree: 2%
 
 ---
@@ -23,7 +22,7 @@ ht-degree: 2%
 
 # Integrazione con i profili di elaborazione AEM
 
-Affinché i processi di lavoro Asset Compute possano generare rappresentazioni personalizzate in AEM as a Cloud Service, devono essere registrati nel servizio Author di AEM as a Cloud Service tramite Profili di elaborazione. Per tutte le risorse soggette a tale profilo di elaborazione, il processo di lavoro verrà richiamato al momento del caricamento o della rielaborazione e il rendering personalizzato verrà generato e reso disponibile tramite le rappresentazioni della risorsa.
+Ad Asset compute, per generare rappresentazioni personalizzate in AEM come Cloud Service, i processi di lavoro devono essere registrati in AEM come servizio di authoring di Cloud Service tramite Profili di elaborazione. Per tutte le risorse soggette a tale profilo di elaborazione, il processo di lavoro verrà richiamato al momento del caricamento o della rielaborazione e il rendering personalizzato verrà generato e reso disponibile tramite le rappresentazioni della risorsa.
 
 ## Definire un profilo di elaborazione
 
@@ -31,19 +30,19 @@ Creare innanzitutto un nuovo profilo di elaborazione che richiamerà il processo
 
 ![Profilo di elaborazione](./assets/processing-profiles/new-processing-profile.png)
 
-1. Accedi al servizio Author di AEM as a Cloud Service come __Amministratore AEM__. Si tratta di un tutorial che consigliamo di utilizzare un ambiente di sviluppo o un ambiente in una sandbox.
+1. Accedi a AEM come servizio Author di Cloud Service come __AEM Amministratore__. Si tratta di un tutorial che consigliamo di utilizzare un ambiente di sviluppo o un ambiente in una sandbox.
 1. Passa a __Strumenti > Risorse > Profili di elaborazione__
 1. Tocca il pulsante __Crea__
 1. Denomina il profilo di elaborazione, `WKND Asset Renditions`
 1. Tocca la scheda __Personalizzato__ e tocca __Aggiungi nuovo__
 1. Definire il nuovo servizio
    + __Nome rappresentazione:__ `Circle`
-      + Rendering del nome file che verrà utilizzato per identificare questo rendering in AEM Assets
+      + Rendering del nome file che verrà utilizzato per identificare il rendering in AEM Assets
    + __Estensione:__ `png`
       + Estensione del rendering che verrà generato. Impostato su `png` in quanto è il formato di output supportato supportato dal servizio Web del processo di lavoro e restituisce uno sfondo trasparente dietro il cerchio tagliato.
    + __Endpoint:__ `https://...adobeioruntime.net/api/v1/web/wkndAemAssetCompute-0.0.1/worker`
-      + Questo è l’URL del processo di lavoro ottenuto tramite `aio app get-url`. Assicurati che i punti URL siano nell’area di lavoro corretta in base all’ambiente AEM as a Cloud Service.
-      + Assicurati che l&#39;URL del lavoratore punti all&#39;area di lavoro corretta. AEM as a Cloud Service Stage deve utilizzare l’URL dell’area di lavoro Stage e AEM as a Cloud Service Production deve utilizzare l’URL dell’area di lavoro Produzione.
+      + Questo è l’URL del processo di lavoro ottenuto tramite `aio app get-url`. Assicurati che l’URL punti nell’area di lavoro corretta in base al AEM come ambiente di Cloud Service.
+      + Assicurati che l&#39;URL del lavoratore punti all&#39;area di lavoro corretta. AEM come fase di Cloud Service deve utilizzare l’URL dell’area di lavoro di Stage e AEM come produzione di Cloud Service deve utilizzare l’URL dell’area di lavoro di produzione.
    + __Parametri del servizio__
       + Tocca __Aggiungi parametro__
          + Chiave: `size`
@@ -54,12 +53,12 @@ Creare innanzitutto un nuovo profilo di elaborazione che richiamerà il processo
       + Tocca __Aggiungi parametro__
          + Chiave: `brightness`
          + Valore: `0.10`
-      + Queste coppie chiave/valore che vengono passate al processo di lavoro Asset Compute e sono disponibili tramite l’oggetto JavaScript `rendition.instructions` .
+      + Queste coppie chiave/valore che vengono passate al processo di lavoro Asset compute e sono disponibili tramite l&#39;oggetto JavaScript `rendition.instructions` .
    + __Tipi mime__
       + __Include:__ `image/jpeg`,  `image/png`,  `image/gif`,  `image/bmp`,  `image/tiff`
          + Questi tipi MIME sono gli unici moduli npm del processo di lavoro. Questo elenco limita le risorse che verranno elaborate dal processo di lavoro personalizzato.
       + __Escludi:__ `Leave blank`
-         + Non elaborare mai le risorse con questi tipi MIME utilizzando questa configurazione del servizio. In questo caso, utilizziamo solo un elenco Consentiti.
+         + Non elaborare mai le risorse con questi tipi MIME utilizzando questa configurazione del servizio. In questo caso, utilizziamo solo un elenco consentiti.
 1. Tocca __Salva__ in alto a destra
 
 ## Applicare e richiamare un profilo di elaborazione
@@ -78,11 +77,11 @@ Creare innanzitutto un nuovo profilo di elaborazione che richiamerà il processo
 
 ## Completato!
 
-Congratulazioni! Hai terminato l’ [esercitazione](../overview.md) su come estendere i microservizi Asset Compute di AEM as a Cloud Service! Ora dovresti avere la possibilità di configurare, sviluppare, testare, eseguire il debug e distribuire processi di lavoro Asset Compute personalizzati da utilizzare dal servizio Author di AEM as a Cloud Service.
+Congratulazioni! Hai terminato il [tutorial](../overview.md) su come estendere AEM come un Cloud Service di microservizi Asset compute! Ora dovresti avere la possibilità di configurare, sviluppare, testare, eseguire il debug e distribuire processi di lavoro di Asset compute personalizzati da utilizzare dal tuo AEM come servizio di authoring di Cloud Service.
 
 ### Rivedi il codice sorgente completo del progetto su Github
 
-Il progetto Asset Compute finale è disponibile su Github all’indirizzo:
+Il progetto di Asset compute finale è disponibile su Github all’indirizzo:
 
 + [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
@@ -91,4 +90,4 @@ _GitHub contiene lo stato finale del progetto, popolato completamente con i casi
 ## Risoluzione dei problemi
 
 + [Rendering personalizzato mancante dalla risorsa in AEM](../troubleshooting.md#custom-rendition-missing-from-asset)
-+ [L’elaborazione delle risorse non riesce in AEM](../troubleshooting.md#asset-processing-fails)
++ [L’elaborazione delle risorse non riesce AEM](../troubleshooting.md#asset-processing-fails)
