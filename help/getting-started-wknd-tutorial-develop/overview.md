@@ -15,7 +15,6 @@ feature: Componenti core, Editor pagina, Modelli modificabili, Archetipo AEM pro
 topic: Gestione dei contenuti, sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '632'
