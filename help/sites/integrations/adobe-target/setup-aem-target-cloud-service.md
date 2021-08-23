@@ -11,9 +11,9 @@ thumbnail: 41244.jpg
 topic: Integrations (Integrazioni)
 role: Admin
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -29,5 +29,5 @@ Questa integrazione consente al servizio AEM Author di comunicare direttamente c
 
 >[!CAUTION]
 >
->C&#39;è un problema noto con la configurazione dei Cloud Services Adobe Target mostrata nel video. Fino a quando questo problema non viene risolto, segui gli stessi passaggi nel video ma utilizza la [configurazione legacy di Adobe Target Cloud Services](https://docs.adobe.com/content/help/en/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html).
+>C&#39;è un problema noto con la configurazione dei Cloud Services Adobe Target mostrata nel video. Fino a quando questo problema non viene risolto, segui gli stessi passaggi nel video ma utilizza la [configurazione legacy di Adobe Target Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html).
 
