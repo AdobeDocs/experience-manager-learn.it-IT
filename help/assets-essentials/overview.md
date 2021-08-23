@@ -4,7 +4,7 @@ description: Una raccolta di video per Adobe Experience Manager Assets Essential
 sub-product: assets
 source-git-commit: 21d6df065fe61614d3bbd68ce2f20d3dc23a9cef
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
