@@ -11,7 +11,6 @@ role: Developer
 level: Beginner
 kt: 7496
 thumbnail: KT-7496.jpg
-translation-type: tm+mt
 source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '902'
@@ -26,11 +25,11 @@ ht-degree: 0%
 >
 > Le funzionalità di creazione rapida dei siti mostrate qui saranno rilasciate nella seconda metà del 2021. La relativa documentazione è disponibile a scopo di anteprima.
 
-Questo capitolo tratta la creazione di un nuovo sito in Adobe Experience Manager. Il modello di sito standard, fornito da Adobe, viene utilizzato come punto iniziale.
+Questo capitolo illustra la creazione di un nuovo sito in Adobe Experience Manager. Il modello di sito standard, fornito da Adobe, viene utilizzato come punto iniziale.
 
 ## Prerequisiti {#prerequisites}
 
-Le fasi di questo capitolo si svolgeranno in un ambiente Adobe Experience Manager as a Cloud Service. Assicurati di disporre dell&#39;accesso amministrativo all&#39;ambiente AEM. Al completamento di questa esercitazione, si consiglia di utilizzare un [programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) e un [ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html).
+I passaggi descritti in questo capitolo si svolgeranno in un ambiente Adobe Experience Manager as a Cloud Service . Assicurati di disporre dell&#39;accesso amministrativo all&#39;ambiente AEM. Al completamento di questa esercitazione, si consiglia di utilizzare un [programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) e un [ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html).
 
 Per ulteriori informazioni, consulta la [documentazione di onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) .
 
@@ -40,7 +39,7 @@ Per ulteriori informazioni, consulta la [documentazione di onboarding](https://e
 1. Comprendere il ruolo dei modelli di sito.
 1. Esplora il sito AEM generato.
 
-## Accedi a Adobe Experience Manager Author {#author}
+## Accedere ad Adobe Experience Manager Author {#author}
 
 Come primo passo, accedi al tuo AEM come ambiente di Cloud Service. Gli ambienti AEM sono suddivisi tra **Author Service** e **Publish Service**.
 
