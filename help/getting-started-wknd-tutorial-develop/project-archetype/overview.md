@@ -10,11 +10,10 @@ role: Developer
 level: Beginner
 mini-toc-levels: 1
 index: y
-translation-type: tm+mt
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 20%
+source-wordcount: '488'
+ht-degree: 14%
 
 ---
 
@@ -27,12 +26,12 @@ Questa esercitazione inizia utilizzando [AEM Project Archetype](https://experien
 
 L&#39;esercitazione è progettata per funzionare con **AEM come Cloud Service** ed è retrocompatibile con **AEM 6.5.5.0+** e **AEM 6.4.8.1+**. Il sito viene implementato utilizzando:
 
-* [Archetipo AEM progetto Maven](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/developing/archetype/overview.html)
-* [Componenti core](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/introduction.html)
-* [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/getting-started/getting-started.html)
+* [Archetipo AEM progetto Maven](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)
 * Modelli Sling
-* [Modelli modificabili](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
-* [Sistema di stili](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
+* [Modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
+* [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
 
 *Stimare 1-2 ore per passare attraverso ciascuna parte dell’esercitazione.*
 
@@ -55,9 +54,9 @@ Per completare questa esercitazione, è necessario un ambiente di sviluppo local
 
 >[!NOTE]
 >
-> **Ti avvicini adesso ad AEM as a Cloud Service?** Consulta la [seguente guida per configurare un ambiente di sviluppo locale utilizzando SDK di AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+> **Ti avvicini adesso ad AEM as a Cloud Service?** Consulta la [seguente guida per configurare un ambiente di sviluppo locale utilizzando SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 >
-> **Nuovo a AEM 6.5?** Consulta la  [seguente guida per configurare un ambiente](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) di sviluppo locale.
+> **Nuovo a AEM 6.5?** Consulta la  [seguente guida per configurare un ambiente](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) di sviluppo locale.
 
 ## Github {#github}
 
