@@ -1,15 +1,14 @@
 ---
 title: Configurare Asset Insights con AEM Assets e Adobe Launch
-description: In questa serie video in 5 parti, passiamo alla configurazione e alla configurazione di Asset Insights per Experience Manager implementata tramite Launch By Adobe.
-feature: Asset Insights
+description: In questa serie video in 5 parti, passiamo alla configurazione e alla configurazione di Asset Insights per Experience Manager implementato tramite Launch by Adobe.
+feature: Informazioni sulla risorsa
 version: 6.3, 6.4, 6.5
-topic: Integrations
+topic: Integrations (Integrazioni)
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '824'
 ht-degree: 1%
 
 ---
@@ -36,9 +35,9 @@ Panoramica di Asset Insights Installa i componenti core, i componenti immagine d
 Il video utilizza i componenti core v2.2.2 che non sono più aggiornati; assicurati di utilizzare la versione più recente prima di passare alla sezione successiva.
 
 * Scarica [Contenuto immagine di esempio di Asset Insights](./assets/asset-insights-launch-tutorial/aem-assets-insights-sample.zip)
-* Scarica [i più recenti componenti core di AEM WCM](https://github.com/adobe/aem-core-wcm-components/releases)
+* Scarica [i componenti core WCM più recenti AEM](https://github.com/adobe/aem-core-wcm-components/releases)
 
-## Parte 2 : Abilitazione del tracciamento degli approfondimenti delle risorse per il componente immagine di esempio {#sample-image-component-asset-insights}
+## Parte 2 : Abilitazione del tracciamento degli approfondimenti delle risorse per un componente immagine di esempio {#sample-image-component-asset-insights}
 
 Miglioramenti ai componenti core e utilizzo del componente proxy (componente immagine di esempio) per Asset Insights. Modifica dei criteri dei modelli di pagina di contenuto per abilitare il componente immagine di esempio per il sito di riferimento.
 
@@ -59,14 +58,14 @@ Il componente Immagine di base utilizza l’attributo ***data-asset-id*** all’
 >
 >*data-aem-asset-id=&#39;image.UUID&#39;* e  *data-trackable=&#39;true&#39;* sono gli attributi chiave che devono essere presenti per le impression di risorse. Per Informazioni approfondite sui clic delle risorse, oltre agli attributi di dati sopra presenti nel tag &lt;img> , il tag principale &lt;a> deve avere un valore href valido.
 
-## Parte 3: Adobe Analytics: creazione di suite di rapporti, abilitazione della raccolta dati in tempo reale e reporting di AEM Assets {#adobe-analytics-asset-insights}
+## Parte 3: Adobe Analytics — Creazione di suite di rapporti, abilitazione della raccolta dati in tempo reale e reporting AEM Assets {#adobe-analytics-asset-insights}
 
 Per il tracciamento delle risorse viene creata una suite di rapporti con raccolta dati in tempo reale. La configurazione di AEM Assets Insights è configurata utilizzando le credenziali di Adobe Analytics.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25945/?quality=12&learn=on)
 
 >[!NOTE]
-La raccolta dati in tempo reale e la generazione di rapporti sulle risorse AEM devono essere abilitate per la suite di rapporti di Adobe Analytics. L’abilitazione di AEM Asset Reporting riserva le variabili di analisi per il tracciamento delle informazioni sulle risorse.
+È necessario abilitare la raccolta dati in tempo reale e la AEM di rapporti sulle risorse per la suite di rapporti Adobe Analytics. L’abilitazione di AEM Asset Reporting riserva le variabili di analisi per il tracciamento delle informazioni sulle risorse.
 
 Per la configurazione di AEM Assets Insights sono necessarie le seguenti credenziali
 
@@ -76,9 +75,9 @@ Per la configurazione di AEM Assets Insights sono necessarie le seguenti credenz
 * Segreto condiviso (può essere ottenuto da *Adobe Analytics > Amministratore > Impostazioni società > Servizio Web*).
 * Suite di rapporti (accertati di selezionare la suite di rapporti corretta utilizzata per la generazione di rapporti sulle risorse)
 
-## Parte 4: Utilizzo di Adobe Experience Platform Launch per aggiungere l&#39;estensione Adobe Analytics {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
+## Parte 4: Utilizzo di Adobe Experience Platform Launch per l&#39;aggiunta dell&#39;estensione Adobe Analytics {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
 
-Aggiunta dell’estensione Adobe Analytics, creazione di regole di caricamento pagina e Integrazione di AEM con Launch con l’account tecnico Adobe IMS.
+Aggiunta di estensione Adobe Analytics, creazione di regole di caricamento pagina e Integrazione di AEM con Launch con l’account tecnico Adobe IMS.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25946/?quality=12&learn=on)
 
@@ -185,12 +184,12 @@ document.querySelectorAll(".cmp-image__image");
 Nel video vengono indicate due estensioni del browser Google Chrome come modi per eseguire il debug di Analytics. Estensioni simili sono disponibili anche per altri browser.
 
 * [Avvia l&#39;estensione Chrome](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en)
-* [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj?hl=en)
+* [Debugger Adobe Experience Cloud](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj?hl=en)
 
 È anche possibile passare DTM in modalità di debug con la seguente estensione Chrome: [Avvia e switch DTM](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en). Questo rende più facile vedere se ci sono errori relativi alla distribuzione DTM. Inoltre, puoi passare manualmente DTM alla modalità di debug tramite qualsiasi browser *strumenti per sviluppatori -> Console JS* aggiungendo il seguente frammento:
 
-## Parte 5 : Verifica dei dati di Insight di tracciamento e sincronizzazione Analytics{#analytics-tracking-asset-insights}
+## Parte 5 : Verifica del tracciamento e della sincronizzazione dei dati di Insight Analytics{#analytics-tracking-asset-insights}
 
-Configurazione dell’utilità di pianificazione dei processi di sincronizzazione di AEM Asset Reporting e del rapporto Approfondimenti risorse
+Configurazione di AEM Asset Reporting Sync Job Scheduler e del rapporto Assets Insights
 
 >[!VIDEO](https://video.tv.adobe.com/v/25947/?quality=12&learn=on)
