@@ -2,17 +2,13 @@
 title: Set di file multimediali diversi, immagine, campione, rotazione
 description: Una delle funzionalità più utili e potenti di Dynamic Media Classic è il supporto per la creazione di set di file multimediali avanzati come Image, Swatch, Spin e Mixed Media Set. Scopri cos’è ogni set di rich media e come creare ogni tipo in Dynamic Media Classic. Quindi scopri di più su Batch Set Preset, che automatizza il processo di creazione di set rich media al momento del caricamento.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, Set Di Immagini, Set Di File Multimediali Diversi, Set 360 Gradi
-doc-type: tutorial
-topics: sets, development, authoring, configuring
-audience: all
-activity: use
+feature: Dynamic Media Classic, Set Di Immagini, Set Di File Multimediali Misti, Set 360 Gradi
 topic: Gestione dei contenuti
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1446'
 ht-degree: 1%
 
 ---
@@ -51,8 +47,8 @@ L&#39;URL del set di immagini sopra riportato potrebbe apparire come:
 
 ![immagine](assets/media-sets/image-set-url-1.png)
 
-- Ulteriori informazioni sui set di immagini con la [Guida rapida ai set di immagini](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sets/quick-start-image-sets.html).
-- Scopri come [Creare un set di immagini](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set).
+- Ulteriori informazioni sui set di immagini con la [Guida rapida ai set di immagini](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/quick-start-image-sets.html).
+- Scopri come [Creare un set di immagini](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set).
 
 ### Set di campioni
 
@@ -70,8 +66,8 @@ L’URL del set di campioni di cui sopra potrebbe essere visualizzato come:
 
 ![immagine](assets/media-sets/image-set_url.png)
 
-- Ulteriori informazioni sui set di campioni con la [Guida rapida ai set di campioni](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html).
-- Scopri come [Creare un set di campioni](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set).
+- Ulteriori informazioni sui set di campioni con la [Guida rapida ai set di campioni](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html).
+- Scopri come [Creare un set di campioni](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set).
 
 ### Set 360 gradi
 
@@ -87,8 +83,8 @@ L’URL del set 360 gradi riportato sopra potrebbe essere visualizzato come:
 
 ![immagine](assets/media-sets/spin-set.png)
 
-- Per ulteriori informazioni sui set 360 gradi, consulta la sezione [Avvio rapido ai set 360 gradi](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html).
-- Scopri come [Creare un set 360 gradi](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set).
+- Per ulteriori informazioni sui set 360 gradi, consulta la sezione [Avvio rapido ai set 360 gradi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html).
+- Scopri come [Creare un set 360 gradi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set).
 
 ## Set di file multimediali diversi
 
@@ -102,13 +98,13 @@ L&#39;URL del set di file multimediali diversi sopra riportato potrebbe apparire
 
 ![immagine](assets/media-sets/image-set-url-1.png)
 
-- Per ulteriori informazioni sui set di file multimediali diversi, consulta la sezione [Avvio rapido ai set di file multimediali diversi](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html).
+- Per ulteriori informazioni sui set di file multimediali diversi, consulta la sezione [Avvio rapido ai set di file multimediali diversi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html).
 
-- Scopri come [Creare un set di file multimediali diversi](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
+- Scopri come [Creare un set di file multimediali diversi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
 
 Per visualizzare un&#39;immagine per lo zoom, un set o un video sul sito web, chiamala in un &quot;visualizzatore&quot; di Dynamic Media Classic. Dynamic Media Classic include visualizzatori per risorse multimediali avanzate come set di campioni, set 360 gradi, video e molti altri.
 
-Ulteriori informazioni su [Visualizzatori per AEM Assets e Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html).
+Ulteriori informazioni su [Visualizzatori per AEM Assets e Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html).
 
 ## Predefiniti set di batch
 
@@ -127,7 +123,7 @@ I predefiniti per set di batch vengono applicati solo al momento del caricamento
 
 Una volta creati i predefiniti, l&#39;amministratore della società può scegliere se sono attivi o inattivi. Attivo significa che verranno visualizzati nella pagina di caricamento in **Opzioni processo**, mentre i predefiniti inattivi rimarranno nascosti.
 
-Scopri come [Creare un predefinito per set di batch](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#creating-a-batch-set-preset).
+Scopri come [Creare un predefinito per set di batch](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#creating-a-batch-set-preset).
 
 ### Utilizzo dei predefiniti per set di batch durante il caricamento
 
@@ -138,4 +134,4 @@ Di seguito è illustrato l’utilizzo dei predefiniti per set di batch al moment
 3. Apri l&#39;opzione **Predefiniti set di batch** e seleziona o deseleziona il predefinito da utilizzare con il caricamento.
 4. Al termine del caricamento, cerca nella cartella i set finiti.
 
-Ulteriori informazioni su [Predefiniti set di batch](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#batch-set-presets).
+Ulteriori informazioni su [Predefiniti set di batch](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#batch-set-presets).
