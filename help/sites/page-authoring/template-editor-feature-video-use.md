@@ -13,10 +13,10 @@ kt: 193
 topic: Gestione dei contenuti
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 9%
+source-wordcount: '252'
+ht-degree: 5%
 
 ---
 
@@ -42,5 +42,5 @@ URL modelli modificabili (istanza AEM locale): [http://localhost:4502/libs/wcm/c
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Modelli di pagina modificabili - Documentazione](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/platform/templates/page-templates-editable.html)
-* [Creazione di modelli di pagina - Documentazione](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/templates.html)
+* [Modelli di pagina modificabili - Documentazione](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html)
+* [Creazione di modelli di pagina - Documentazione](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html)
