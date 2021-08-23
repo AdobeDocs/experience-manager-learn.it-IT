@@ -697,7 +697,7 @@ Invalidate-path /content/mysite/dummy
 
 3. Lo statfile viene aggiornato.
 
-4. La volta successiva, la pagina principale viene richiesta e viene riprodotta. La nuova impronta digitale/data viene ricavata dalla proprietà lastModified dell&#39;immagine come selettore aggiuntivo
+4. La volta successiva, viene richiesta la pagina principale, che viene riprodotta. La nuova impronta digitale/data viene ricavata dalla proprietà lastModified dell&#39;immagine come selettore aggiuntivo
 
 5. Questo crea implicitamente un riferimento a una nuova immagine
 
@@ -1179,7 +1179,7 @@ Il cliente aveva una struttura del sito come quella tracciata nell&#39;ultimo ca
 /content/brand/country/language
 ```
 
-Esempio,
+Ad esempio,
 
 ```
 /content/shiny-brand/switzerland/fr
@@ -1724,7 +1724,7 @@ Tale direttiva rappresenta l&#39;intera stringa di richiesta, incluso il metodo 
 
 `"GET /content/foo/bar.html HTTP/1.1"`
 
-questa è la stringa rispetto alla quale verrebbe confrontato il pattern. I principianti tendono a dimenticare la prima parte, il `method` (GET, POST, ...). Quindi, uno schema
+questa è la stringa rispetto alla quale verrà confrontato il pattern. I principianti tendono a dimenticare la prima parte, il `method` (GET, POST, ...). Quindi, uno schema
 
 `/0002  { /glob "/content/\*" /type "allow" }`
 
