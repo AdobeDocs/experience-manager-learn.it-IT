@@ -1,19 +1,18 @@
 ---
 title: Esportazione dei dati del modulo inviati in formato CSV
 description: Esportare i dati dei moduli adattivi inviati in formato CSV
-feature: Adaptive Forms
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: article
 activity: implement
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 1%
+source-wordcount: '401'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +22,7 @@ In genere, i clienti desiderano esportare i dati del modulo inviati in formato C
 
 >[!NOTE]
 >
->Questo esempio funziona solo con i moduli adattivi non basati su Schema o Modello dati modulo
+>Questo esempio funziona solo con Adaptive Forms non basato su Schema o Modello dati modulo
 
 ![Struttura ](assets/tablestructure.PNG)
 tabellaCome puoi vedere il nome dello schema è aemformstutorial.All&#39;interno di questo schema si trovano i moduli di tabella inviati con le colonne seguenti definite
