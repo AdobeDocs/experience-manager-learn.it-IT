@@ -12,10 +12,9 @@ thumbnail: KT-6282.jpg
 topic: Integrazioni, Sviluppo
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1424'
 ht-degree: 0%
 
 ---
@@ -46,7 +45,7 @@ I dipendenti di Asset compute implementano il contratto Asset compute SDK worker
 1. Il processo di lavoro Asset compute salva i dati binari del nuovo rendering in `rendition.path`.
 1. I dati binari scritti in `rendition.path` vengono trasportati tramite l’SDK di Asset compute ad AEM Author Service ed esposti come __(4a)__ una rappresentazione testuale e __(4b)__ persistono nel nodo di metadati della risorsa.
 
-Il diagramma riportato sopra descrive le preoccupazioni rivolte agli sviluppatori di Asset compute e il flusso logico verso la chiamata del lavoratore Asset compute. Per i curiosi, sono disponibili i [dettagli interni dell&#39;esecuzione degli Asset compute](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html), ma solo i contratti API SDK per Asset compute pubblici possono essere dipendenti.
+Il diagramma riportato sopra descrive le preoccupazioni rivolte agli sviluppatori di Asset compute e il flusso logico verso la chiamata del lavoratore Asset compute. Per i curiosi, sono disponibili i [dettagli interni dell&#39;esecuzione degli Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html), ma solo i contratti API SDK per Asset compute pubblici possono essere dipendenti.
 
 ## Anatomia di un lavoratore
 
@@ -179,7 +178,7 @@ exports.main = worker(async (source, rendition, params) => {
 }
 ```
 
-## Errori di proiezione{#errors}
+## Errori di generazione{#errors}
 
 I lavoratori Asset compute possono trovarsi in situazioni che generano errori. L&#39;SDK di Adobe Asset compute fornisce [una suite di errori predefiniti](https://github.com/adobe/asset-compute-commons#asset-compute-errors) che possono essere lanciati quando si verificano tali situazioni. Se non si applica un tipo di errore specifico, è possibile utilizzare `GenericError` oppure definire un `ClientErrors` personalizzato specifico.
 
