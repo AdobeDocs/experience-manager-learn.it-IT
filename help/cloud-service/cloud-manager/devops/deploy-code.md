@@ -8,7 +8,6 @@ topic: Sviluppo
 feature: Strumenti per gli sviluppatori
 kt: 6912
 thumbnail: 330534.jpg
-translation-type: tm+mt
 source-git-commit: e295d77a11c99310aaae10ecb8a2eaa20ad49285
 workflow-type: tm+mt
 source-wordcount: '102'
