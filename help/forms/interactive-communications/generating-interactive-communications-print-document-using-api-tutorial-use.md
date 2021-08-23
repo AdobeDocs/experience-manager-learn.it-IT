@@ -3,19 +3,18 @@ title: Generazione del documento di comunicazione interattiva per il canale di s
 seo-title: Generazione del documento di comunicazione interattiva per il canale di stampa tramite il meccanismo di cartelle dell'orologio
 description: Utilizzare la cartella controllata per generare documenti del canale di stampa
 seo-description: Utilizzare la cartella controllata per generare documenti del canale di stampa
-feature: Interactive Communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '485'
 ht-degree: 1%
 
 ---
@@ -119,7 +118,7 @@ Assicurati che questo utente di sistema abbia le autorizzazioni di lettura sul n
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af
-* Importa i seguenti pacchetti in AEM utilizzando il gestore di pacchetti. Questo pacchetto contiene quanto segue:
+* Importa i seguenti pacchetti in AEM utilizzando il gestore pacchetti. Questo pacchetto contiene quanto segue:
 
 
 * [Esempio di documento di comunicazione interattiva](assets/retirementstatementprint.zip)
