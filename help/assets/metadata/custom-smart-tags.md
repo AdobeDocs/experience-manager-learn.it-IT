@@ -1,18 +1,17 @@
 ---
 title: Tag avanzati personalizzati per le immagini in AEM Assets
 description: Scopri come addestrare i tag avanzati di AEM Assets per applicare termini personalizzati alle risorse.
-feature: Smart Tags
+feature: Tag avanzati
 version: 6.4, 6.5, cloud-services
 kt: 795
 thumbnail: 22254.jpg
-topic: Content Management
+topic: Gestione dei contenuti
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 4%
+source-wordcount: '151'
+ht-degree: 3%
 
 ---
 
@@ -27,16 +26,16 @@ La funzione Tag avanzati personalizzati per le immagini consente di addestrare l
 ## Impostazione di tag avanzati personalizzati per le immagini per AEM 6.x{#set-up}
 
 >[!NOTE]
-> Il provisioning automatico di tag avanzati personalizzati per le immagini viene eseguito automaticamente per AEM as a Cloud Service.
+> Tag avanzati personalizzati per le immagini viene automaticamente fornito per AEM come Cloud Service.
 
 Tag avanzati personalizzati per le immagini richiede [Tag avanzati per le immagini da configurare](./image-smart-tags.md#set-up).
 
-Scopri come configurare la formazione sui tag avanzati in AEM Assets tramite il Servizio di contenuti avanzati e Adobe I/O. Tag avanzati personalizzati per le immagini
+Scopri come configurare la formazione sui tag avanzati in AEM Assets, utilizzando il Servizio di contenuti avanzati e l’Adobe I/O . Tag avanzati personalizzati per le immagini
 
 >[!VIDEO](https://video.tv.adobe.com/v/23405/?quality=12&learn=on)
 
 ## Risorse aggiuntive
 
-* AEM 6.4 richiede [l&#39;ultimo Service Pack](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
+* AEM 6.4 richiede l&#39; [Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64) più recente.
 
 
