@@ -15,10 +15,10 @@ discoiquuid: 912e0c41-83cf-49f7-b515-09519b6718c1
 topic: Gestione dei contenuti
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 7%
+source-wordcount: '586'
+ht-degree: 2%
 
 ---
 
@@ -39,7 +39,7 @@ Questa serie video illustra le opzioni di consegna per l’utilizzo dei framment
 
 >[!VIDEO](https://video.tv.adobe.com/v/22449/?quality=12&learn=on)
 
-I frammenti di contenuto possono essere utilizzati nelle pagine AEM Sites o in modo simile, nei frammenti esperienza, utilizzando il componente [Frammento di contenuto ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) dei componenti core di AEM WCM.
+I frammenti di contenuto possono essere utilizzati nelle pagine AEM Sites o in modo simile, nei frammenti esperienza, utilizzando il componente [Frammento di contenuto ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) dei componenti core di AEM WCM.
 
 I componenti Frammento di contenuto possono essere formattati utilizzando AEM sistema di stili per visualizzare il contenuto in base alle esigenze.
 
@@ -49,7 +49,7 @@ I componenti Frammento di contenuto possono essere formattati utilizzando AEM si
 
 AEM Content Services facilita la creazione di AEM endpoint HTTP basati su pagina che eseguono il rendering del contenuto in un formato JSON normalizzato.
 
-Il video precedente utilizza il [componente Frammento di contenuto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) per esporre singoli frammenti di contenuto. Il [componente Elenco frammenti di contenuto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-list.html) è un nuovo componente che consente all’autore di definire una query per la compilazione dinamica della pagina con un elenco di frammenti di contenuto. Il componente Elenco frammenti di contenuto è preferibile quando è necessario esporre più frammenti di contenuto.
+Il video precedente utilizza il [componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) per esporre singoli frammenti di contenuto. Il [componente Elenco frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html) è un nuovo componente che consente all’autore di definire una query per la compilazione dinamica della pagina con un elenco di frammenti di contenuto. Il componente Elenco frammenti di contenuto è preferibile quando è necessario esporre più frammenti di contenuto.
 
 *Esempio di payload JSON end-point di Content Services:*\
 **[atleti.json](assets/athletes.json)**
@@ -80,8 +80,8 @@ Esistono due opzioni per esporre Frammento di contenuto come JSON per supportare
 ## Risorse aggiuntive {#additional-resources}
 
 * [Authoring di frammenti di contenuto](content-fragments-feature-video-use.md)
-* [AEM componenti core WCM](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/introduction.html)
-* [AEM componente Frammento di contenuto core WCM](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
+* [AEM componenti core WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+* [AEM componente Frammento di contenuto core WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 Per scaricare e installare il pacchetto qui sotto su un&#39;istanza AEM 6.4+ per lo stato finale dalla serie video:\
 **[aem_demo_fluid-experiencescontent-fragments-100.zip](assets/aem_demo_fluid-experiencescontent-fragments-100.zip)**
