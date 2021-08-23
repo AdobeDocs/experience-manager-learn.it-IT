@@ -1,21 +1,20 @@
 ---
-title: Moduli AEM con schema e dati JSON[Parte 1]
+title: AEM Forms con schema e dati JSON[Parte 1]
 seo-title: AEM Forms con schema JSON e dati[Parte1]
 description: Esercitazione in più parti per illustrarti i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
 seo-description: Esercitazione in più parti per illustrarti i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
-feature: Adaptive Forms
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
@@ -24,7 +23,7 @@ ht-degree: 1%
 # Creare un modulo adattivo basato su uno schema JSON
 
 
-La possibilità di creare moduli adattivi basati sullo schema JSON è stata introdotta con la versione 6.3 di AEM Forms. I dettagli sulla creazione di moduli adattivi con schema JSON sono descritti in dettaglio in questo [articolo](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-form-json-schema-form-model.html).
+Con AEM Forms 6.3 è stata introdotta la possibilità di creare Forms adattivo basato sullo schema JSON. I dettagli sulla creazione di Forms adattivo con schema JSON sono descritti in dettaglio in questo [articolo](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-form-json-schema-form-model.html).
 
 Una volta creato un modulo adattivo basato sullo schema JSON, il passaggio successivo consiste nell’archiviare i dati inviati nel database. A questo scopo utilizzeremo il nuovo tipo di dati JSON introdotto da vari fornitori di database. Ai fini di questo articolo utilizzeremo il database MySql 8 per memorizzare i dati inviati.
 
@@ -40,5 +39,5 @@ La schermata seguente mostra i dati del modulo inviati memorizzati nel tipo di d
 ![datastore](assets/datastored.gif)
 
 
-[Schemi JSON di esempio che possono essere utilizzati per creare moduli adattivi.](assets/samplejsonschemas.zip). Scarica e decomprimi il file zip per ottenere gli schemi JSON
+[Schemi JSON di esempio che possono essere utilizzati per creare Forms adattivo.](assets/samplejsonschemas.zip). Scarica e decomprimi il file zip per ottenere gli schemi JSON
 
