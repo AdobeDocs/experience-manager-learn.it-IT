@@ -10,9 +10,9 @@ feature: Dynamic Media Classic
 topic: Gestione dei contenuti
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '897'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ In questa guida verranno illustrate le seguenti funzionalità di base di Dynamic
 - **Video.** Carica i video finali, pubblicali e progressivamente scaricali in visualizzatori video configurabili.
 - **Imaging avanzato.** Tecnologia che sfrutta le funzionalità di Adobe Sensei AI e funziona con i &quot;predefiniti per immagini&quot; esistenti per migliorare le prestazioni di distribuzione delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
 
-Per scoprire le funzionalità aggiuntive della soluzione, visita la [Documentazione di Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/introduction.html).
+Per scoprire le funzionalità aggiuntive della soluzione, visita la [Documentazione di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
 
 ## Interfaccia utente di Dynamic Media Classic
 
@@ -75,4 +75,4 @@ _Interfaccia classica di Dynamic Media_
 >
 >Seleziona la casella di controllo **Pubblica dopo il caricamento** nella finestra di dialogo Carica per pubblicare automaticamente le risorse al momento del caricamento.
 
-Ulteriori informazioni su [Navigazione nell&#39;interfaccia utente di Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html).
+Ulteriori informazioni su [Navigazione nell&#39;interfaccia utente di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).
