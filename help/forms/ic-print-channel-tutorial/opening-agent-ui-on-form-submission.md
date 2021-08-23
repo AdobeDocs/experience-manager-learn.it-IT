@@ -1,10 +1,10 @@
 ---
-title: Apertura dell'interfaccia utente dell'agente all'invio POST
-seo-title: Apertura dell'interfaccia utente dell'agente all'invio POST
+title: Apertura Dell’Interfaccia Utente Dell’Agente All’Invio Di POST
+seo-title: Apertura Dell’Interfaccia Utente Dell’Agente All’Invio Di POST
 description: Questa è la parte 11 dell'esercitazione su più passaggi per creare il primo documento di comunicazione interattivo per il canale di stampa. In questa parte verrà avviata l’interfaccia dell’interfaccia dell’agente per la creazione di corrispondenza ad-hoc all’invio del modulo.
 seo-description: Questa è la parte 11 dell'esercitazione su più passaggi per creare il primo documento di comunicazione interattivo per il canale di stampa. In questa parte verrà avviata l’interfaccia dell’interfaccia dell’agente per la creazione di corrispondenza ad-hoc all’invio del modulo.
 uuid: 96f34986-a5c3-400b-b51b-775da5d2cbd7
-feature: Interactive Communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,19 +12,18 @@ activity: implement
 version: 6.4,6.5
 kt: 6168
 thumbnail: 40122.jpg
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 1%
+source-wordcount: '367'
+ht-degree: 0%
 
 ---
 
 
-# Apertura dell&#39;interfaccia utente dell&#39;agente all&#39;invio POST
+# Apertura Dell’Interfaccia Utente Dell’Agente All’Invio Di POST
 
 In questa parte verrà avviata l’interfaccia dell’interfaccia dell’agente per la creazione di corrispondenza ad-hoc all’invio del modulo.
 
@@ -64,7 +63,7 @@ Per testare questa funzionalità sul server
 
 * [Importa e installa le risorse correlate a questo articolo utilizzando il gestore di pacchetti.](assets/launch-agent-ui.zip)
 * [Accedi a configMgr](http://localhost:4502/system/console/configMgr)
-* Cerca _Filtro Adobe Granite CSRF_
+* Cerca _Filtro CSRF Granite Adobe_
 * Aggiungi _/content/getprintchannel_ nei percorsi esclusi
 * Salva le modifiche.
 * [Apri POST.jsp](http://localhost:4502/apps/AEMForms/openprintchannel/POST.jsp). Assicurati che la stringa passata a FormFieldRequestParameter sia valida documentId.(Linea 19).
@@ -73,5 +72,5 @@ Per testare questa funzionalità sul server
 
 >[!NOTE]
 >
->Assicurati che il parametro di input dell&#39;operazione Get del modello dati del modulo sia associato all&#39;attributo di richiesta denominato &quot;numero di conto&quot; affinché questo funzioni. Se cambi il nome del valore di binding con qualsiasi altro nome, accertati che la modifica sia riportata alla riga 25 del POST.jsp
+>Assicurati che il parametro di input dell&#39;operazione Get del modello dati del modulo sia associato all&#39;attributo di richiesta denominato &quot;numero di conto&quot; affinché questo funzioni. Se modifichi il nome del valore di binding con qualsiasi altro nome, accertati che la modifica si rifletta sulla riga 25 di POST.jsp
 
