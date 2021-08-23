@@ -1,36 +1,35 @@
 ---
-title: Debug dell’SDK AEM tramite la console web OSGi
+title: Debug AEM SDK tramite la console Web OSGi
 description: L’avvio rapido locale dell’SDK AEM dispone di una console web OSGi che fornisce una varietà di informazioni e introspezioni nel runtime AEM locale utili per comprendere in che modo l’applicazione viene riconosciuta da e funziona all’interno di AEM.
-feature: Developer Tools
+feature: Strumenti per gli sviluppatori
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5265, 5366, 5267
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner, Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 3%
+source-wordcount: '396'
+ht-degree: 2%
 
 ---
 
 
-# Debug dell’SDK AEM tramite la console web OSGi
+# Debug AEM SDK tramite la console Web OSGi
 
 L’avvio rapido locale dell’SDK AEM dispone di una console web OSGi che fornisce una varietà di informazioni e introspezioni nel runtime AEM locale utili per comprendere in che modo l’applicazione viene riconosciuta da e funziona all’interno di AEM.
 
-AEM fornisce molte console OSGi, ognuna delle quali fornisce informazioni chiave su diversi aspetti di AEM. Tuttavia, i seguenti sono in genere i più utili per il debug dell’applicazione.
+AEM fornisce molte console OSGi, ognuna delle quali fornisce informazioni chiave su diversi aspetti di AEM, tuttavia i seguenti sono tipicamente i più utili per il debug dell’applicazione.
 
 ## Bundle
 
 >[!VIDEO](https://video.tv.adobe.com/v/34335/?quality=12&learn=on)
 
-La console Bundles è un catalogo dei bundle OSGi e dei loro dettagli, implementati in AEM, insieme alla possibilità ad hoc di avviarli e arrestarli.
+La console Bundles è un catalogo dei bundle OSGi e dei loro dettagli, distribuiti per AEM, insieme alla possibilità ad hoc di avviarli e fermarli.
 
 La console Bundle si trova in:
 
