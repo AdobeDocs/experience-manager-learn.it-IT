@@ -1,21 +1,20 @@
 ---
 title: Personalizzazione della casella in entrata
 description: Aggiungi colonne personalizzate per visualizzare i dati aggiuntivi del flusso di lavoro utilizzando il modello Sightly
-feature: Adaptive Forms
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5.5
 kt: 5830
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 4%
+source-wordcount: '292'
+ht-degree: 3%
 
 ---
 
@@ -82,11 +81,11 @@ return val;
 
 >[!NOTE]
 >
->Questo articolo presuppone che sia stato installato il [flusso di lavoro di esempio](assets/review-workflow.zip) e [modulo di esempio](assets/snap-form.zip) da [articolo precedente](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/inbox-customization/add-married-column.md) in questa serie.
+>Questo articolo presuppone che sia stato installato il [flusso di lavoro di esempio](assets/review-workflow.zip) e [modulo di esempio](assets/snap-form.zip) da [articolo precedente](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.md) in questa serie.
 
 * [Accedi a crx come utente amministratore](http://localhost:4502/crx/de/index.jsp)
 * [modello Importazione guidata](assets/sightly-template.zip)
-* [Accedi alla console web AEM](http://localhost:4502/system/console/bundles)
+* [Accedi a AEM console Web](http://localhost:4502/system/console/bundles)
 * [Distribuzione e avvio del bundle di personalizzazione della casella in entrata](assets/income-column-customization.jar)
 * [Apri la inbox](http://localhost:4502/aem/inbox)
 * Apri Admin Control facendo clic su Vista a elenco accanto al pulsante Crea
