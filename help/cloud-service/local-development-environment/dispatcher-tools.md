@@ -13,10 +13,9 @@ thumbnail: 30603.jpg
 topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1637'
 ht-degree: 2%
 
 ---
@@ -203,7 +202,7 @@ I registri del server web Apache e del Dispatcher AEM sono accessibili direttame
 + [Accesso ai registri nel contenitore Docker](../debugging/aem-sdk-local-quickstart/logs.md#dispatcher-tools-access-logs)
 + [Copiare i log Docker nel file system locale](../debugging/aem-sdk-local-quickstart/logs.md#dispatcher-tools-copy-logs)
 
-## Quando aggiornare Dispatcher Tools{#dispatcher-tools-version}
+## Quando aggiornare gli strumenti di Dispatcher{#dispatcher-tools-version}
 
 Le versioni degli strumenti di Dispatcher incrementano meno frequentemente dell’Experience Manager, pertanto gli strumenti di Dispatcher richiedono meno aggiornamenti nell’ambiente di sviluppo locale.
 
@@ -294,4 +293,4 @@ AH00016: Configuration Failed
 + [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
 + [Download Docker](https://www.docker.com/)
 + [Scarica il sito web di riferimento AEM (WKND)](https://github.com/adobe/aem-guides-wknd/releases)
-+ [Documentazione di Experience Manager Dispatcher](https://docs.adobe.com/content/help/it-IT/experience-manager-dispatcher/using/dispatcher.html)
++ [Documentazione di Experience Manager Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it)
