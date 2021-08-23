@@ -1,16 +1,15 @@
 ---
 title: Utilizzo di risorse collegate con AEM Sites
 description: La funzione Risorse collegate consente all’autore di AEM Sites di condividere facilmente le risorse digitali ospitate su un’altra istanza di AEM.
-feature: Connected Assets
+feature: Risorse collegate
 version: 6.5
-topic: Content Management
+topic: Gestione dei contenuti
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 4%
+source-wordcount: '105'
+ht-degree: 3%
 
 ---
 
@@ -26,4 +25,4 @@ La funzione Risorse collegate consente all’autore di AEM Sites di condividere 
 * 03:30 — Utilizzo di un’immagine dalle risorse collegate
 * 04:42 — Configurazioni dell&#39;amministratore per abilitare la funzione Risorse collegate
 
-Controlla le [implementazioni supportate per Risorse collegate](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html#prerequisites) per capire se l&#39;implementazione AEM può supportare Risorse collegate.
+Controlla le [distribuzioni supportate per Risorse collegate](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html#prerequisites) per capire se la distribuzione AEM può supportare Risorse collegate.
