@@ -1,21 +1,20 @@
 ---
-title: Attiva flusso di lavoro AEM per l’invio di moduli HTML5
-seo-title: Attiva flusso di lavoro AEM sull’invio di moduli HTML5
-description: Continua a compilare il modulo mobile in modalità offline e invia il modulo mobile per attivare il flusso di lavoro AEM
-seo-description: Continua a compilare il modulo mobile in modalità offline e invia il modulo mobile per attivare il flusso di lavoro AEM
-feature: Mobile Forms
+title: Flusso di lavoro di attivazione AEM per l’invio di moduli HTML5
+seo-title: Flusso di lavoro AEM trigger sull’invio di moduli HTML5
+description: Continua a compilare il modulo mobile in modalità offline e invia il modulo mobile per attivare AEM flusso di lavoro
+seo-description: Continua a compilare il modulo mobile in modalità offline e invia il modulo mobile per attivare AEM flusso di lavoro
+feature: Forms Mobile
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -30,20 +29,20 @@ ht-degree: 0%
 Per far funzionare questo caso d&#39;uso sul sistema locale, segui questi passaggi:
 
 * Installa l&#39;istanza AEM Author sulla porta 4502 e l&#39;istanza AEM Publish sulla porta 4503
-* [Segui le istruzioni specificate in sviluppo con gli utenti del servizio in AEM Forms](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html). Assicurati di creare l’utente del servizio e distribuire il bundle sull’istanza di authoring e pubblicazione di AEM.
+* [Segui le istruzioni specificate in sviluppo con gli utenti del servizio in AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html). Assicurati di creare l’utente del servizio e distribuire il bundle sull’istanza di authoring e pubblicazione di AEM.
 * [Apri la configurazione osgi  ](http://localhost:4503/system/console/configMgr).
 * Cerca **Filtro di riferimento Sling Apache**. Assicurati che la casella di controllo Consenti vuoto sia selezionata.
 * [Distribuisci il bundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar) AEMFormDocumentService personalizzato. Questo bundle deve essere distribuito sull&#39;istanza AEM Publish. Questo bundle ha il codice per generare PDF interattivi dal modulo mobile.
 * [Scarica e decomprimi le risorse correlate a questo articolo.](assets/offline-pdf-submission-assets.zip) Otterrai quanto segue
-   * **offline-submit-profile.zip**  - Questo pacchetto AEM contiene il profilo personalizzato che consente di scaricare il pdf interattivo nel file system locale. Distribuisci questo pacchetto sulla tua istanza di AEM Publish.
+   * **offline-submit-profile.zip**  - Questo pacchetto di AEM contiene il profilo personalizzato che consente di scaricare il pdf interattivo nel file system locale. Distribuisci questo pacchetto sulla tua istanza di AEM Publish.
    * **xdp-form-and-workflow.zip**  - Questo pacchetto AEM contiene XDP, un flusso di lavoro di esempio, un modulo di avvio configurato sul contenuto del nodo/pdfinvii. Distribuisci questo pacchetto sia sull’istanza Author che Publish di AEM.
-   * **HandlePDFSubmission.HandlePDFSubmission.core-1.0-SNAPSHOT.jar**  - Questo è il bundle AEM che esegue la maggior parte del lavoro. Questo bundle contiene il servlet montato su `/bin/startworkflow`. Questo servlet salva i dati del modulo inviati sotto il nodo `/content/pdfsubmissions` nell’archivio di AEM. Distribuisci questo bundle sia sull&#39;istanza Author che Publish di AEM.
+   * **HandlePDFSubmission.HandlePDFSubmission.core-1.0-SNAPSHOT.jar**  - Questo è il bundle AEM che esegue la maggior parte del lavoro. Questo bundle contiene il servlet montato su `/bin/startworkflow`. Questo servlet salva i dati del modulo inviati sotto il nodo `/content/pdfsubmissions` AEM repository. Distribuisci questo bundle sia sull&#39;istanza Author che Publish di AEM.
 * [Anteprima del modulo mobile](http://localhost:4503/content/dam/formsanddocuments/testsubmision.xdp/jcr:content)
 * Compila diversi campi, quindi fai clic sul pulsante sulla barra degli strumenti per scaricare il PDF interattivo.
-* Compila il PDF scaricato con Acrobat e premi il pulsante Invia.
+* Compila il PDF scaricato utilizzando Acrobat e premi il pulsante Invia.
 * Dovresti ricevere un messaggio di successo
 * Accedi all’istanza di AEM Author come amministratore
-* [Controlla la Casella in entrata AEM](http://localhost:4502/aem/inbox)
+* [Controlla la casella in entrata AEM](http://localhost:4502/aem/inbox)
 * È necessario disporre di un elemento di lavoro per esaminare il PDF inviato
 
 >[!NOTE]
