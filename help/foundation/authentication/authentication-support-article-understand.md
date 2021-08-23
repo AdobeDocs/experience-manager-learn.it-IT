@@ -1,28 +1,27 @@
 ---
 title: Comprendere il supporto per l’autenticazione in AEM
-description: 'Una visualizzazione consolidata dei meccanismi di autenticazione (e di autorizzazione occasionalmente) supportati da AEM. '
+description: 'Una visione consolidata dei meccanismi di autenticazione (e di autorizzazione occasionalmente) supportati da AEM. '
 version: 6.3, 6.4, 6.5
-feature: Users and Groups
+feature: Utenti e gruppi
 topics: authentication, security
 activity: understand
 audience: architect, developer, implementer
 doc-type: article
 kt: 406
-topic: Architecture
+topic: Architettura
 role: Architect
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 5%
+source-wordcount: '134'
+ht-degree: 3%
 
 ---
 
 
-# Comprendere il supporto per l’autenticazione in AEM 6.x
+# Comprendere il supporto per l&#39;autenticazione in AEM 6.x
 
-Una visualizzazione consolidata dei meccanismi di autenticazione (e di autorizzazione occasionalmente) supportati da AEM.
+Una visione consolidata dei meccanismi di autenticazione (e di autorizzazione occasionalmente) supportati da AEM.
 
 *La tabella seguente descrive come gli utenti possono eseguire l’autenticazione in AEM.*
 
@@ -35,7 +34,7 @@ Una visualizzazione consolidata dei meccanismi di autenticazione (e di autorizza
             <td><strong>AEM 6.5</strong></td>
         </tr>
         <tr>
-            <td><strong>AEM come provider di identità canonica</strong></td>
+            <td><strong>AEM come fornitore di identità canonica</strong></td>
             <td></td>
             <td></td>
             <td></td>
@@ -47,13 +46,13 @@ Una visualizzazione consolidata dei meccanismi di autenticazione (e di autorizza
             <td>↓</td>
         </tr>
         <tr>
-            <td>Basato su moduli</td>
+            <td>Basato su Forms</td>
             <td>↓</td>
             <td>↓</td>
             <td>↓</td>
         </tr>
         <tr>
-            <td>Basato su token (con <a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">token incapsulato</a>)</td>
+            <td>Basato su token (con <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">token incapsulato</a>)</td>
             <td>↓</td>
             <td>↓</td>
             <td>↓</td>
@@ -64,19 +63,19 @@ Una visualizzazione consolidata dei meccanismi di autenticazione (e di autorizza
             <td></td>
             <td></td>
             <tr>
-                <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/ldap-config.html" target="_blank">LDAP</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ldap-config.html" target="_blank">LDAP</a></td>
                 <td>↓</td>
                 <td>↓</td>
                 <td>↓</td>
             </tr>
             <tr>
-                <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/single-sign-on.html" target="_blank">SSO</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html" target="_blank">SSO</a></td>
                 <td>↓</td>
                 <td>↓</td>
                 <td>↓</td>
             </tr>
             <tr>
-                <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html" target="_blank">SAML 2.0</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html" target="_blank">SAML 2.0</a></td>
                 <td>↓</td>
                 <td>↓</td>
                 <td>↓</td>
