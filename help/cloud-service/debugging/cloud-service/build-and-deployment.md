@@ -1,7 +1,7 @@
 ---
 title: Creare e distribuire
-description: Adobe Cloud Manager facilita la creazione e l’implementazione del codice in AEM as a Cloud Service. Possono verificarsi errori durante i passaggi del processo di compilazione, che richiedono un’azione per risolverli. Questa guida illustra gli errori comuni nell’implementazione e le modalità per affrontarli al meglio.
-feature: Developer Tools
+description: Adobe Cloud Manager facilita la creazione del codice e le distribuzioni da AEM come Cloud Service. Possono verificarsi errori durante i passaggi del processo di compilazione, che richiedono un’azione per risolverli. Questa guida illustra gli errori comuni nell’implementazione e le modalità per affrontarli al meglio.
+feature: Strumenti per gli sviluppatori
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,21 +9,20 @@ activity: develop
 audience: developer
 kt: 5434
 thumbnail: kt-5424.jpg
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2542'
+source-wordcount: '2529'
 ht-degree: 0%
 
 ---
 
 
-# Debug delle build e implementazioni di AEM as a Cloud Service
+# Debug di AEM come build e implementazioni di Cloud Service
 
-Adobe Cloud Manager facilita la creazione e l’implementazione del codice in AEM as a Cloud Service. Possono verificarsi errori durante i passaggi del processo di compilazione, che richiedono un’azione per risolverli. Questa guida illustra gli errori comuni nell’implementazione e le modalità per affrontarli al meglio.
+Adobe Cloud Manager facilita la creazione del codice e le distribuzioni da AEM come Cloud Service. Possono verificarsi errori durante i passaggi del processo di compilazione, che richiedono un’azione per risolverli. Questa guida illustra gli errori comuni nell’implementazione e le modalità per affrontarli al meglio.
 
 ![Pipe di generazione gestisci cloud](./assets/build-and-deployment/build-pipeline.png)
 
@@ -71,25 +70,25 @@ Gli errori individuati in questa fase devono essere riproducibili nella creazion
 
 ![Scansione del codice](./assets/build-and-deployment/code-scanning.png)
 
-La scansione del codice esegue l’analisi del codice statico utilizzando una combinazione di best practice specifiche per Java e AEM.
+La scansione del codice esegue l’analisi del codice statico utilizzando una combinazione di procedure consigliate specifiche per Java e AEM.
 
-La scansione del codice causa un errore di compilazione se nel codice sono presenti vulnerabilità di sicurezza critica. Le violazioni minori possono essere ignorate, ma si consiglia di correggerle. La scansione del codice è imperfetta e può causare [falsi positivi](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/understand-test-results.html#dealing-with-false-positives).
+La scansione del codice causa un errore di compilazione se nel codice sono presenti vulnerabilità di sicurezza critica. Le violazioni minori possono essere ignorate, ma si consiglia di correggerle. La scansione del codice è imperfetta e può causare [falsi positivi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html#dealing-with-false-positives).
 
 Per risolvere i problemi di scansione del codice, scarica il rapporto in formato CSV fornito da Cloud Manager tramite il pulsante **Download Details** e controlla tutte le voci.
 
-Per ulteriori dettagli, consulta le regole specifiche di AEM, consulta la documentazione di Cloud Manager [regole di scansione del codice specifiche per AEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html) personalizzate.
+Per ulteriori dettagli, consulta AEM regole specifiche, consulta la documentazione di Cloud Manager [regole di scansione del codice AEM personalizzate](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html).
 
 ## Creare immagini
 
 ![Creare immagini](./assets/build-and-deployment/build-images.png)
 
-L’immagine di generazione è responsabile della combinazione degli artefatti di codice generati nel passaggio Build &amp; Unit Testing (Generazione e test di unità) con la versione di AEM, per formare un singolo artefatto distribuibile.
+L’immagine Build è responsabile della combinazione degli artefatti di codice generati nel passaggio Build &amp; Unit Testing (Generazione e test di unità) con la versione AEM, per creare un singolo artefatto distribuibile.
 
-Sebbene durante la generazione e il testing di unità siano stati rilevati problemi di compilazione e compilazione del codice, durante il tentativo di combinare l’artefatto di build personalizzato con la versione di AEM potrebbero essere stati identificati problemi di configurazione o di struttura.
+Mentre durante il test Build &amp; Unit vengono rilevati eventuali problemi di compilazione e compilazione del codice, possono verificarsi problemi di configurazione o di struttura durante il tentativo di combinare l&#39;artefatto di build personalizzato con la versione AEM.
 
 ### Configurazioni OSGi duplicate
 
-Quando più configurazioni OSGi vengono risolte tramite la modalità runmode per l’ambiente AEM di destinazione, il passaggio Genera immagine non riesce e viene restituito l’errore:
+Quando più configurazioni OSGi vengono risolte tramite la modalità runmode per l&#39;ambiente di AEM di destinazione, il passaggio Genera immagine non riesce e viene restituito l&#39;errore:
 
 ```
 [ERROR] Unable to convert content-package [/tmp/packages/enduser.all-1.0-SNAPSHOT.zip]: 
@@ -99,41 +98,41 @@ set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multip
 
 #### Causa 1
 
-+ __Causa:__ il pacchetto all del progetto AEM contiene più pacchetti di codice e la stessa configurazione OSGi viene fornita da più pacchetti di codice, dando luogo a un conflitto e il passaggio Build Image non è in grado di decidere quale deve essere utilizzato, generando in tal modo un errore nella build. Questo non si applica alle configurazioni di fabbrica OSGi, purché abbiano nomi univoci.
-+ __Risoluzione:__ esamina tutti i pacchetti di codice (compresi eventuali pacchetti di codice di terze parti inclusi) che vengono distribuiti come parte dell&#39;applicazione AEM, alla ricerca di configurazioni OSGi duplicate che risolvono, tramite modalità runmode, l&#39;ambiente di destinazione. La guida del messaggio di errore &quot;set the mergeConfigurations flag to true&quot; (Imposta il flag mergeConfigurations su true) non è possibile in AEM as a Cloud Service e deve essere ignorata.
++ __Causa:__ il pacchetto all del progetto AEM contiene più pacchetti di codice e la stessa configurazione OSGi viene fornita da più di uno dei pacchetti di codice, dando luogo a un conflitto e il passaggio Genera immagine non è in grado di decidere quale deve essere utilizzato, generando in tal modo un errore nella build. Questo non si applica alle configurazioni di fabbrica OSGi, purché abbiano nomi univoci.
++ __Risoluzione:__ esamina tutti i pacchetti di codice (inclusi eventuali pacchetti di codice di terze parti inclusi) che vengono distribuiti come parte dell&#39;applicazione AEM, alla ricerca di configurazioni OSGi duplicate che risolvono, tramite modalità runmode, l&#39;ambiente di destinazione. La guida del messaggio di errore &quot;imposta il flag mergeConfigurations su true&quot; non è possibile in AEM as a Cloud Service e deve essere ignorata.
 
 #### Causa 2
 
 + __Causa:__ il progetto AEM include erroneamente lo stesso pacchetto di codice due volte, con conseguente duplicazione di qualsiasi configurazione OSGi contenuta in tale pacchetto.
-+ __Risoluzione:__ esamina tutti i pacchetti pom.xml di incorporati in tutto il progetto e assicurati che la  `filevault-package-maven-plugin` [](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#cloud-manager-target) configurazione sia impostata su  `<cloudManagerTarget>none</cloudManagerTarget>`.
++ __Risoluzione:__ esamina tutti i pacchetti pom.xml di incorporati in tutto il progetto e assicurati che la  `filevault-package-maven-plugin` [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#cloud-manager-target) configurazione sia impostata su  `<cloudManagerTarget>none</cloudManagerTarget>`.
 
 ### Script di reindirizzamento non valido
 
-Gli script di reindirizzamento definiscono il contenuto di base, gli utenti, le ACL, ecc. In AEM as a Cloud Service, gli script di reindirizzamento vengono applicati durante la generazione dell’immagine, ma sul quickstart locale dell’SDK AEM vengono applicati quando viene attivata la configurazione di fabbrica del repoinit OSGi. Per questo motivo, gli script di Repoinit potrebbero silenziosamente non riuscire (con la registrazione) nell’avvio rapido locale dell’SDK AEM e causare un errore nel passaggio Genera immagine, arrestando la distribuzione.
+Gli script di reindirizzamento definiscono il contenuto di base, gli utenti, le ACL, ecc. In AEM come Cloud Service, gli script di reindirizzamento vengono applicati durante la creazione dell’immagine, ma AEM’avvio rapido locale dell’SDK vengono applicati quando viene attivata la configurazione di fabbrica del repoinit OSGi. Per questo motivo, gli script di Repoinit potrebbero avere esito negativo (con la registrazione) sull’avvio rapido locale AEM’SDK e causare un errore nel passaggio Genera immagine, arrestando la distribuzione.
 
 + __Causa:__ uno script di repoinit non è valido. Questo potrebbe lasciare il tuo archivio in uno stato incompleto come qualsiasi script di reindirizzamento dopo che lo script non riuscito verrà eseguito contro il repository.
-+ __Risoluzione:__ esamina l’avvio rapido locale dell’SDK AEM quando la configurazione OSGi dello script di reindirizzamento viene distribuita per determinare se e quali sono gli errori.
++ __Risoluzione:__ esamina l&#39;avvio rapido locale dell&#39;SDK AEM quando la configurazione OSGi dello script di reindirizzamento viene distribuita per determinare se e quali sono gli errori.
 
 ### Dipendenza contenuto reindirizzamento non soddisfatta
 
-Gli script di reindirizzamento definiscono il contenuto di base, gli utenti, le ACL, ecc. Nell’avvio rapido locale dell’SDK di AEM, gli script di reindirizzamento vengono applicati quando viene attivata la configurazione di fabbrica OSGi del reindirizzamento, o in altre parole, dopo che l’archivio è attivo e possono aver subito modifiche di contenuto direttamente o tramite pacchetti di contenuto. In AEM as a Cloud Service, gli script di reindirizzamento vengono applicati durante la generazione di immagini rispetto a un archivio che potrebbe non contenere il contenuto da cui dipende lo script di reindirizzamento.
+Gli script di reindirizzamento definiscono il contenuto di base, gli utenti, le ACL, ecc. In AEM’avvio rapido locale dell’SDK, gli script di reindirizzamento vengono applicati quando viene attivata la configurazione di fabbrica OSGi di reindirizzamento, o in altre parole, dopo che l’archivio è attivo e possono aver subito modifiche di contenuto direttamente o tramite pacchetti di contenuto. In AEM come Cloud Service, gli script di reindirizzamento vengono applicati durante la funzione Genera immagine rispetto a un archivio che potrebbe non contenere il contenuto da cui dipende lo script di repoinit.
 
 + __Causa:__ uno script di reindirizzamento dipende dal contenuto inesistente.
-+ __Risoluzione:__ verifica che esista il contenuto da cui dipende lo script di reindirizzamento. Spesso, questo indica un script di reindirizzamento non adeguatamente definito che non contiene direttive che definiscono queste strutture di contenuto mancanti, ma necessarie. Questo può essere riprodotto localmente eliminando AEM, decomprimendo il Jar e aggiungendo alla cartella di installazione la configurazione OSGi del repoinit contenente lo script di reindirizzamento e avviando AEM. L’errore si presenterà nel file error.log locale di quickstart dell’SDK di AEM.
++ __Risoluzione:__ verifica che esista il contenuto da cui dipende lo script di reindirizzamento. Spesso, questo indica un script di reindirizzamento non adeguatamente definito che non contiene direttive che definiscono queste strutture di contenuto mancanti, ma necessarie. Questo può essere riprodotto localmente eliminando AEM, disimpacchettando il Jar e aggiungendo alla cartella di installazione la configurazione OSGi di reindirizzamento contenente lo script di reindirizzamento e avviando AEM. L&#39;errore si presenterà nel file error.log locale dell&#39;SDK AEM.
 
 
 ### La versione dei componenti core dell&#39;applicazione è maggiore della versione distribuita
 
-_Questo problema riguarda solo gli ambienti non di produzione che NON eseguono l&#39;aggiornamento automatico all&#39;ultima versione di AEM._
+_Questo problema riguarda solo gli ambienti non di produzione che NON eseguono l&#39;aggiornamento automatico alla versione più recente di AEM._
 
-AEM as a Cloud Service include automaticamente la versione più recente dei componenti core in ogni versione di AEM, il che significa che dopo l’aggiornamento automatico o manuale di un ambiente AEM as a Cloud Service la versione più recente dei componenti core è stata implementata.
+AEM come Cloud Service include automaticamente la versione più recente dei componenti core in ogni versione di AEM, il che significa che dopo l’aggiornamento automatico o manuale di un AEM come ambiente di Cloud Service, viene distribuita la versione più recente dei componenti core.
 
 È possibile che il passaggio Genera immagine non riesca quando:
 
 + L’applicazione di distribuzione aggiorna la versione della dipendenza Maven dei componenti core nel progetto `core` (bundle OSGi)
-+ L’applicazione di distribuzione viene quindi distribuita in un ambiente sandbox (non di produzione) AEM as a Cloud Service che non è stato aggiornato per utilizzare una versione di AEM che contiene la nuova versione dei componenti core.
++ L’applicazione di distribuzione viene quindi distribuita in un AEM sandbox (non di produzione) come ambiente di Cloud Service che non è stato aggiornato per utilizzare una versione AEM che contiene la nuova versione dei componenti core.
 
-Per evitare questo errore, ogni volta che è disponibile un aggiornamento dell’ambiente AEM as a Cloud Service , includi l’aggiornamento come parte della build/distribuzione successiva e assicurati che gli aggiornamenti siano inclusi sempre dopo aver incrementato la versione dei componenti core nella base di codice dell’applicazione.
+Per evitare questo errore, ogni volta che è disponibile un aggiornamento del AEM come ambiente di Cloud Service, includi l’aggiornamento come parte della build/distribuzione successiva e assicurati che gli aggiornamenti siano inclusi sempre dopo l’incremento della versione dei componenti core nella base di codice dell’applicazione.
 
 + __Sintomi:__
 il passaggio Genera immagine non riesce con un messaggio di errore che segnala che 
@@ -147,34 +146,34 @@ il passaggio Genera immagine non riesce con un messaggio di errore che segnala c
    [INFO] ------------------------------------------------------------------------
    ```
 
-+ __Causa:__  il bundle OSGi dell&#39;applicazione (definito nel  `core` progetto) importa le classi Java dalla dipendenza core Components, a un livello di versione diverso da quello distribuito in AEM as a Cloud Service.
++ __Causa:__  il bundle OSGi dell&#39;applicazione (definito nel  `core` progetto) importa le classi Java dalla dipendenza core dei componenti core, a un livello di versione diverso da quello distribuito per AEM come Cloud Service.
 + __Risoluzione:__
-   + Utilizzando Git, ripristina un commit di lavoro esistente prima dell’incremento della versione del componente core. Invia questo commit a un ramo Git di Cloud Manager ed esegui un aggiornamento dell’ambiente da questo ramo. Questo aggiornerà AEM as a Cloud Service all’ultima versione di AEM, che includerà la versione più recente dei componenti core. Una volta che AEM as a Cloud Service è stato aggiornato alla versione più recente di AEM, che avrà la versione più recente dei componenti core, ridistribuisci il codice originariamente non riuscito.
-   + Per riprodurre questo problema localmente, assicurati che la versione dell’SDK AEM sia la stessa versione di AEM rilasciata dall’ambiente AEM as a Cloud Service.
+   + Utilizzando Git, ripristina un commit di lavoro esistente prima dell’incremento della versione del componente core. Invia questo commit a un ramo Git di Cloud Manager ed esegui un aggiornamento dell’ambiente da questo ramo. Verrà eseguito l’aggiornamento AEM come Cloud Service all’ultima versione AEM, che includerà la versione successiva dei componenti core. Una volta che l’AEM come Cloud Service viene aggiornato all’ultima versione AEM, che avrà l’ultima versione dei componenti core, ridistribuisci il codice originariamente non riuscito.
+   + Per riprodurre questo problema localmente, accertati che la versione dell&#39;SDK AEM sia la stessa versione AEM che l&#39;AEM di un ambiente di Cloud Service sta utilizzando.
 
 
-### Creare un caso di supporto Adobe
+### Creare un caso di assistenza per Adobi
 
-Se i suddetti approcci di risoluzione dei problemi non risolvono il problema, crea un caso di assistenza Adobe, tramite:
+Se gli approcci di risoluzione dei problemi sopra descritti non risolvono il problema, crea un caso di assistenza Adobe, tramite:
 
 + [Adobe Admin Console](https://adminconsole.adobe.com)  > Scheda Supporto > Crea caso
 
-   _Se sei membro di più organizzazioni Adobe, assicurati che l’organizzazione Adobe che ha una pipeline non riuscita sia selezionata nel commutatore Adobe Orgs prima di creare il caso._
+   _Se sei membro di più organizzazioni di Adobe, assicurati che l’organizzazione di Adobe con pipeline non riuscita sia selezionata nel commutatore delle organizzazioni di Adobe prima di creare il caso._
 
 ## Distribuisci su
 
 Il passaggio Distribuisci a è responsabile dell’artefatto di codice generato in Genera immagine, avvia i nuovi servizi di authoring e pubblicazione AEM che lo utilizzano e, dopo il successo, rimuove tutti i vecchi servizi di authoring e pubblicazione AEM. Anche in questo passaggio vengono installati e aggiornati pacchetti di contenuto variabile e indici.
 
-Acquisisci familiarità con i [registri di AEM as a Cloud Service](./logs.md) prima di eseguire il debug della distribuzione al passaggio . Il registro `aemerror` contiene informazioni sull&#39;avvio e lo spegnimento dei pod che possono essere pertinenti per distribuire i problemi. Il registro disponibile tramite il pulsante Download Log nel passaggio Distribuzione a di Cloud Manager non è il registro `aemerror` e non contiene informazioni dettagliate relative all’avvio delle applicazioni.
+Acquisisci familiarità con [AEM come log di Cloud Service](./logs.md) prima di eseguire il debug della distribuzione al passaggio . Il registro `aemerror` contiene informazioni sull&#39;avvio e lo spegnimento dei pod che possono essere pertinenti per distribuire i problemi. Il registro disponibile tramite il pulsante Download Log nel passaggio Distribuzione a di Cloud Manager non è il registro `aemerror` e non contiene informazioni dettagliate relative all’avvio delle applicazioni.
 
 ![Distribuisci su](./assets/build-and-deployment/deploy-to.png)
 
 I tre motivi principali per cui il passaggio Distribuisci a potrebbe non riuscire:
 
-### La pipeline di Cloud Manager contiene una vecchia versione di AEM
+### La pipeline di Cloud Manager contiene una vecchia versione AEM
 
-+ __Causa:__ una pipeline di Cloud Manager contiene una versione di AEM precedente a quella distribuita nell’ambiente di destinazione. Questo può accadere quando una pipeline viene riutilizzata e indirizzata a un nuovo ambiente che esegue una versione successiva di AEM. Questo può essere identificato controllando se la versione AEM dell’ambiente è maggiore della versione AEM della pipeline.
-   ![La pipeline di Cloud Manager contiene una vecchia versione di AEM](./assets/build-and-deployment/deploy-to__pipeline-holds-old-aem-version.png)
++ __Causa:__ una pipeline di Cloud Manager contiene una versione precedente di AEM rispetto a quella distribuita nell’ambiente di destinazione. Questo può accadere quando una pipeline viene riutilizzata e indirizzata a un nuovo ambiente che esegue una versione successiva di AEM. Questo può essere identificato controllando se la versione AEM dell’ambiente è maggiore della versione AEM della pipeline.
+   ![La pipeline di Cloud Manager contiene una vecchia versione AEM](./assets/build-and-deployment/deploy-to__pipeline-holds-old-aem-version.png)
 + __Risoluzione:__
    + Se nell’ambiente di destinazione è disponibile un aggiornamento, seleziona Aggiorna dalle azioni dell’ambiente, quindi esegui nuovamente la build.
    + Se nell’ambiente di destinazione non è disponibile un aggiornamento, significa che è in esecuzione la versione più recente di AEM. Per risolvere il problema, elimina la pipeline e ricreala.
@@ -182,19 +181,19 @@ I tre motivi principali per cui il passaggio Distribuisci a potrebbe non riuscir
 
 ### Timeout di Cloud Manager
 
-Il codice in esecuzione durante l’avvio del nuovo servizio AEM implementato richiede talmente tempo che Cloud Manager riceve un timeout prima del completamento della distribuzione. In questi casi, l’implementazione potrebbe avere successo, anche se lo stato di Cloud Manager segnalava Non riuscito.
+Il codice in esecuzione durante l’avvio del servizio AEM appena implementato richiede così tanto tempo che Cloud Manager riceve un timeout prima del completamento della distribuzione. In questi casi, l’implementazione potrebbe avere successo, anche se lo stato di Cloud Manager segnalava Non riuscito.
 
-+ __Causa:__ il codice personalizzato può eseguire operazioni, come query di grandi dimensioni o traversate di contenuti, attivate all’inizio nel bundle OSGi o nei cicli di vita dei componenti, ritardando significativamente il tempo di avvio di AEM.
++ __Causa:__ il codice personalizzato può eseguire operazioni, come query di grandi dimensioni o traversate di contenuti, attivate all’inizio nel bundle OSGi o nei cicli di vita dei componenti, ritardando significativamente il tempo di avvio del AEM.
 + __Risoluzione:__ esamina l&#39;implementazione del codice in esecuzione all&#39;inizio del ciclo di vita del bundle di OSGi, esamina i  `aemerror` registri dei servizi Author e Publish di AEM al momento dell&#39;errore (ora di accesso GMT) come mostrato dal Cloud Manager e cerca i messaggi di registro che indicano eventuali processi di log in esecuzione personalizzati.
 
 ### Codice o configurazione non compatibili
 
-La maggior parte delle violazioni del codice e della configurazione viene rilevata in precedenza nella build, tuttavia è possibile che il codice personalizzato o la configurazione sia incompatibile con AEM as a Cloud Service e non venga rilevato finché non viene eseguito nel contenitore .
+La maggior parte delle violazioni del codice e della configurazione vengono rilevate in precedenza nella build, tuttavia è possibile che il codice personalizzato o la configurazione sia incompatibile con il AEM come Cloud Service e non venga rilevato finché non viene eseguito nel contenitore .
 
-+ __Causa:__ il codice personalizzato può richiamare operazioni lunghe, come query di grandi dimensioni o attraversamenti di contenuti, attivate all’inizio nel bundle OSGi o nei cicli di vita dei componenti, rallentando in modo significativo il tempo di avvio di AEM.
++ __Causa:__ il codice personalizzato può richiamare operazioni lunghe, come query di grandi dimensioni o traversate di contenuti, attivate all’inizio nel bundle OSGi o nei cicli di vita dei componenti, rallentando significativamente il tempo di avvio del AEM.
 + __Risoluzione:__ esamina i  `aemerror` registri dei servizi Author e Publish di AEM intorno all’ora (ora di accesso GMT) dell’errore, come mostrato da Cloud Manager.
    1. Controlla i registri per eventuali ERRORS generati dalle classi Java fornite dall&#39;applicazione personalizzata. Se vengono rilevati problemi, risolvi, invia il push del codice fisso e ricompila la pipeline.
-   1. Controlla i registri per eventuali ERRORI segnalati dagli aspetti di AEM con cui stai estendendo/interagendo nell’applicazione personalizzata e analizzali; questi ERRORI potrebbero non essere direttamente attribuiti alle classi Java. Se vengono rilevati problemi, risolvi, invia il push del codice fisso e ricompila la pipeline.
+   1. Controlla i registri per eventuali ERRORS segnalati da aspetti di AEM che stai estendendo/interagendo con nell&#39;applicazione personalizzata e analizzali; questi ERRORI potrebbero non essere direttamente attribuiti alle classi Java. Se vengono rilevati problemi, risolvi, invia il push del codice fisso e ricompila la pipeline.
 
 ### Inclusione di /var nel pacchetto di contenuti
 
@@ -230,17 +229,17 @@ Per convalidare questo problema è la causa del comportamento non riuscito:
 
    Tieni presente che questo registro non conterrà questi indicatori sulle distribuzioni iniziali che hanno avuto esito positivo, ma solo sulle distribuzioni successive con errori.
 
-+ __Causa:__ l&#39;utente del servizio di replica di AEM utilizzato per distribuire pacchetti di contenuto al servizio AEM Publish non può scrivere su  `/var` AEM Publish. Questo causa un errore nella distribuzione del pacchetto di contenuti al servizio AEM Publish.
++ __Causa:__ AEM utente del servizio di replica utilizzato per distribuire pacchetti di contenuto al servizio AEM Publish non è in grado di scrivere su  `/var` AEM Publish. Questo causa un errore nella distribuzione del pacchetto di contenuti al servizio AEM Publish.
 + __Risoluzione:__ i seguenti modi per risolvere questi problemi sono elencati in ordine di preferenza:
    1. Se le risorse `/var` non sono necessarie, rimuovi le risorse sotto `/var` dai pacchetti di contenuto distribuiti come parte dell&#39;applicazione.
-   2. Se le risorse `/var` sono necessarie, definisci le strutture dei nodi utilizzando [repoinit](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit). Gli script di reindirizzamento possono essere indirizzati a AEM Author, AEM Publish o a entrambi tramite le modalità di esecuzione OSGi.
-   3. Se le risorse `/var` sono necessarie solo su AEM Author e non possono essere modellate in modo ragionevole utilizzando [repoinit](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit), spostale in un pacchetto di contenuti discreti, installato solo su AEM Author da [incorporare](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#embeddeds) nel pacchetto `all` in una cartella di modalità runmode di AEM Author (`<target>/apps/example-packages/content/install.author</target>`).
+   2. Se le risorse `/var` sono necessarie, definisci le strutture dei nodi utilizzando [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit). Gli script di reindirizzamento possono essere indirizzati a AEM Author, AEM Publish o a entrambi tramite le modalità di esecuzione OSGi.
+   3. Se le risorse `/var` sono necessarie solo per AEM autore e non possono essere modellate in modo ragionevole utilizzando [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit), spostale in un pacchetto di contenuti discreti, installato solo su AEM Author da [incorporare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#embeddeds) nel pacchetto `all` in una cartella di modalità di esecuzione di AEM Author (`<target>/apps/example-packages/content/install.author</target>`).
    4. Fornisci ACL appropriati all&#39;utente del servizio `sling-distribution-importer` come descritto in questo [Adobe KB](https://helpx.adobe.com/in/experience-manager/kb/cm/cloudmanager-deploy-fails-due-to-sling-distribution-aem.html).
 
-### Creare un caso di supporto Adobe
+### Creare un caso di assistenza per Adobi
 
-Se i suddetti approcci di risoluzione dei problemi non risolvono il problema, crea un caso di assistenza Adobe, tramite:
+Se gli approcci di risoluzione dei problemi sopra descritti non risolvono il problema, crea un caso di assistenza Adobe, tramite:
 
 + [Adobe Admin Console](https://adminconsole.adobe.com)  > Scheda Supporto > Crea caso
 
-   _Se sei membro di più organizzazioni Adobe, assicurati che l’organizzazione Adobe che ha una pipeline non riuscita sia selezionata nel commutatore Adobe Orgs prima di creare il caso._
+   _Se sei membro di più organizzazioni di Adobe, assicurati che l’organizzazione di Adobe con pipeline non riuscita sia selezionata nel commutatore delle organizzazioni di Adobe prima di creare il caso._
