@@ -4,21 +4,20 @@ seo-title: Aggiunta di contenuto di testo e immagine al documento del canale Web
 description: 'Questa è la parte 7 di un tutorial in più passaggi per la creazione del primo documento di comunicazione interattivo. In questa parte, aggiungeremo immagini e contenuti di testo al pannello di intestazione. '
 seo-description: 'Questa è la parte 7 di un tutorial in più passaggi per la creazione del primo documento di comunicazione interattivo. In questa parte, aggiungeremo immagini e contenuti di testo al pannello di intestazione. '
 uuid: 440f8b74-3be7-4e58-a46e-4110065b7705
-feature: Interactive Communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 3dd64e7d-3f13-4022-bb75-c9dc1884bc19
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 2%
+source-wordcount: '184'
+ht-degree: 1%
 
 ---
 
