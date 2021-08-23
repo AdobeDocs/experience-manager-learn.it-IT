@@ -1,7 +1,7 @@
 ---
 title: Gestire l’invio di moduli HTML5
 description: Crea handler per l’invio di moduli HTML5
-feature: Mobile Forms
+feature: Forms Mobile
 topics: development
 audience: developer
 doc-type: article
@@ -9,27 +9,26 @@ activity: implement
 version: 6.4,6.5
 kt: 5269
 thumbnail: kt-5269.jpg
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 3%
+source-wordcount: '278'
+ht-degree: 2%
 
 ---
 
 
 # Gestire l’invio di moduli HTML5
 
-I moduli HTML5 possono essere inviati al servlet ospitato in AEM. I dati inviati sono accessibili nel servlet come flusso di input. Per inviare il modulo HTML5 è necessario aggiungere il &quot;Pulsante Invia per HTTP&quot; al modello di modulo utilizzando AEM Forms Designer
+I moduli HTML5 possono essere inviati al servlet ospitato in AEM. I dati inviati sono accessibili nel servlet come flusso di input. Per inviare il modulo HTML5 è necessario aggiungere il pulsante &quot;Invia per HTTP&quot; al modello di modulo utilizzando AEM Forms Designer
 
 ## Creare il gestore di invio
 
 È possibile creare un semplice servlet per gestire l’invio del modulo HTML5. I dati inviati possono quindi essere estratti utilizzando il seguente codice. Questo [servlet](assets/html5-submit-handler.zip) è disponibile come parte di questa esercitazione. Installa il [servlet](assets/html5-submit-handler.zip) utilizzando [package manager](http://localhost:4502/crx/packmgr/index.jsp)
 
-Il codice della riga 9 può essere utilizzato per richiamare il processo J2EE. Assicurati di aver configurato [Configurazione SDK client Adobe LiveCycle](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) se intendi usare il codice per richiamare il processo J2EE.
+Il codice della riga 9 può essere utilizzato per richiamare il processo J2EE. Assicurati di aver configurato la [configurazione Adobe LiveCycle Client SDK](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) se intendi usare il codice per richiamare il processo J2EE.
 
 ```java
 StringBuffer stringBuffer = new StringBuffer();
@@ -70,7 +69,7 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 ### Aggiungi una voce nei percorsi di esclusione
 
 * Passa a [configMgr](http://localhost:4502/system/console/configMgr).
-* Cerca _Filtro Adobe Granite CSRF_
+* Cerca _Filtro CSRF Granite Adobe_
 * Aggiungi la seguente voce nella sezione Percorsi esclusi
 * _/content/AemFormsSamples/handlehml5formsubmit_
 * Salva le modifiche
@@ -84,7 +83,7 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 ### Lettura aggiuntiva
 
-È inoltre consigliato questo [articolo](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) sulla generazione di PDF dall’invio di moduli HTML5.
+È inoltre consigliato questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) sulla generazione di PDF dall’invio di moduli HTML5.
 
 
 
