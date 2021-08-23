@@ -13,9 +13,9 @@ thumbnail: 5309-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1111'
 ht-degree: 3%
 
 ---
@@ -90,7 +90,7 @@ Sono disponibili diverse opzioni per creare un progetto Maven Multi-Module per A
 
    >[!NOTE]
    >
-   > Osserva la proprietà `frontendModule=angular` . Questo comunica a AEM Project Archetype di avviare il progetto con un codice di Angular [base](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) da utilizzare con AEM SPA Editor.
+   > Osserva la proprietà `frontendModule=angular` . Questo comunica a AEM Project Archetype di avviare il progetto con un codice di Angular [base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) da utilizzare con AEM SPA Editor.
 
 ## Crea il progetto
 
@@ -149,7 +149,7 @@ Quindi, compila, genera e distribuisci il codice del progetto in un’istanza lo
 
    Tutto il codice personalizzato necessario per il progetto verrà raggruppato in questi pacchetti e installato nel runtime AEM.
 
-6. Dovresti inoltre visualizzare diversi pacchetti per `spa.project.core` e `core.wcm.components`. Si tratta di dipendenze incluse automaticamente dall&#39;archetipo. Ulteriori informazioni sui [AEM componenti core sono disponibili qui](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/introduction.html).
+6. Dovresti inoltre visualizzare diversi pacchetti per `spa.project.core` e `core.wcm.components`. Si tratta di dipendenze incluse automaticamente dall&#39;archetipo. Ulteriori informazioni sui [AEM componenti core sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
 
 ## Contenuto autore
 
