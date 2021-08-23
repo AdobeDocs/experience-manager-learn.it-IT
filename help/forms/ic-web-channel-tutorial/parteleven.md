@@ -4,21 +4,20 @@ seo-title: Configurazione del pannello Mix investimenti
 description: Questa è la parte 11 dell'esercitazione multistep per la creazione del primo documento di comunicazione interattivo.In questa parte, aggiungeremo grafici a torta per visualizzare il mix di investimenti attuale e modello.
 seo-description: Questa è la parte 11 dell'esercitazione multistep per la creazione del primo documento di comunicazione interattivo.In questa parte, aggiungeremo grafici a torta per visualizzare il mix di investimenti attuale e modello.
 uuid: b0132912-cb6e-4dec-8309-5125d29ad291
-feature: Interactive Communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 77de4e76-53ee-467c-a71c-d1d3ea15283b
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 1%
+source-wordcount: '361'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +26,7 @@ ht-degree: 1%
 
 In questa parte, aggiungeremo grafici a torta per visualizzare il mix di investimenti attuale e di modelli.
 
-* Accedi a AEM Forms e passa a Adobe Experience Manager > Moduli > Moduli e documenti.
+* Accedi ad AEM Forms e passa a Adobe Experience Manager > Forms > Forms e documenti.
 
 * Apri la cartella 401KStatement .
 
@@ -35,7 +34,7 @@ In questa parte, aggiungeremo grafici a torta per visualizzare il mix di investi
 
 * Aggiungeremo 2 grafici a torta per rappresentare il mix di investimenti attuale e modello del titolare del conto.
 
-## Miscela risorse corrente {#current-asset-mix}
+## Miscela di risorse corrente {#current-asset-mix}
 
 * Tocca il pannello &quot;CurrentAssetMix&quot; a destra, seleziona l’icona &quot;+&quot; e inserisci il componente testo. Cambia il testo predefinito in &quot;Miscela risorsa corrente&quot;.
 
