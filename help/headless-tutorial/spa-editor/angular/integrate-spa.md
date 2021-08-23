@@ -13,9 +13,9 @@ thumbnail: 5310-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2205'
+source-wordcount: '2195'
 ht-degree: 0%
 
 ---
@@ -77,13 +77,13 @@ Il modulo `ui.frontend` è un progetto [webpack](https://webpack.js.org/) che co
 
 *Una descrizione di alto livello dell’integrazione SPA.*
 
-Ulteriori informazioni sulla build front-end sono disponibili [qui](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
+Ulteriori informazioni sulla build front-end sono disponibili [qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
 
-## Integrazione SPA di Inspect {#inspect-spa-integration}
+## Integrazione di Inspect SPA {#inspect-spa-integration}
 
-Quindi, controlla il modulo `ui.frontend` per comprendere il SPA generato automaticamente dall&#39; [AEM archetipo di progetto](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
+Quindi, controlla il modulo `ui.frontend` per comprendere il SPA generato automaticamente dall&#39; [AEM archetipo di progetto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
 
-1. Nell’IDE che preferisci, apri Progetto AEM per il SPA WKND. Questa esercitazione utilizzerà [Visual Studio Code IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+1. Nell’IDE che preferisci, apri Progetto AEM per il SPA WKND. Questa esercitazione utilizzerà [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
    ![VSCode - AEM progetto di SPA WKND](./assets/integrate-spa/vscode-ide-openproject.png)
 
@@ -112,7 +112,7 @@ Quindi, controlla il modulo `ui.frontend` per comprendere il SPA generato automa
    "@adobe/cq-spa-page-model-manager": "^1.1.3",
    ```
 
-   I moduli di cui sopra costituiscono l’ [AEM Editor JS SDK](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-blueprint.html) e forniscono la funzionalità per consentire la mappatura SPA componenti su componenti AEM.
+   I moduli di cui sopra costituiscono l’ [AEM Editor JS SDK](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-blueprint.html) e forniscono la funzionalità per consentire la mappatura SPA componenti su componenti AEM.
 
 5. Nel file `package.json` sono definiti diversi `scripts`:
 
@@ -132,7 +132,7 @@ Quindi, controlla il modulo `ui.frontend` per comprendere il SPA generato automa
 
    `build` - compila l’app Angular per la distribuzione di produzione. L’aggiunta di `&& clientlib` è responsabile della copia del SPA compilato nel modulo `ui.apps` come libreria lato client durante una build. Il modulo npm [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) viene utilizzato per facilitare questo processo.
 
-   Ulteriori dettagli sugli script disponibili sono disponibili [qui](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
+   Ulteriori dettagli sugli script disponibili sono disponibili [qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
 
 6. Inspect il file `ui.frontend/clientlib.config.js`. Questo file di configurazione viene utilizzato da [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) per determinare come generare la libreria client.
 
@@ -167,7 +167,7 @@ Quindi, controlla il modulo `ui.frontend` per comprendere il SPA generato automa
 
    `app.component.js` è il punto di ingresso del SPA. `ModelManager` è fornito dall’SDK JS AEM Editor SPA. È responsabile della chiamata e dell’inserimento di `pageModel` (il contenuto JSON) nell’applicazione.
 
-## Aggiungi un componente Intestazione {#header-component}
+## Aggiungere un componente Intestazione {#header-component}
 
 Quindi, aggiungi un nuovo componente al SPA e distribuisci le modifiche a un&#39;istanza AEM locale per visualizzare l&#39;integrazione.
 
@@ -346,7 +346,7 @@ Un [webpack dev server](https://webpack.js.org/configuration/dev-server/) può e
 
 9. Arrestare il server web locale con `ctrl+c` nel terminale.
 
-## Webpack Dev Server - Mock API JSON {#mock-json}
+## Webpack Dev Server - API JSON Mock {#mock-json}
 
 Un altro approccio per un rapido sviluppo è quello di utilizzare un file JSON statico per agire come modello JSON. &quot;prendendo in giro&quot; il JSON, rimuoviamo la dipendenza da un&#39;istanza AEM locale. Consente inoltre a uno sviluppatore front-end di aggiornare il modello JSON per testare la funzionalità e apportare modifiche all’API JSON che verranno implementate in seguito da uno sviluppatore back-end.
 
