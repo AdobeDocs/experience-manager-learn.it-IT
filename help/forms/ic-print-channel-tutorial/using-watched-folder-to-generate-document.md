@@ -4,7 +4,7 @@ seo-title: Generazione di documenti del canale di stampa utilizzando la cartella
 description: Questa è la parte 10 dell'esercitazione su più passaggi per creare il primo documento di comunicazione interattivo per il canale di stampa. In questa parte, verranno generati i documenti del canale di stampa utilizzando il meccanismo di cartelle controllate.
 seo-description: Questa è la parte 10 dell'esercitazione su più passaggi per creare il primo documento di comunicazione interattivo per il canale di stampa. In questa parte, verranno generati i documenti del canale di stampa utilizzando il meccanismo di cartelle controllate.
 uuid: 9e39f4e3-1053-4839-9338-09961ac54f81
-feature: Interactive Communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,14 +12,13 @@ activity: implement
 version: 6.4,6.5
 contentOwner: gbedekar
 discoiquuid: 23fbada3-d776-4b77-b381-22d3ec716ae9
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 1%
+source-wordcount: '381'
+ht-degree: 0%
 
 ---
 
