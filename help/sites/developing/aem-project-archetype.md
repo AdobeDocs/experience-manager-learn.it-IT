@@ -1,7 +1,7 @@
 ---
 title: AEM Project Archetype
-description: 'AEM Project Archetype crea un progetto Adobe Experience Manager minimo basato su best practice come punto di partenza per i tuoi progetti AEM. '
-feature: AEM Project Archetype
+description: 'AEM Project Archetype crea un progetto Adobe Experience Manager minimale basato su best practice come punto di partenza per i tuoi progetti AEM. '
+feature: Archetipo di progetto AEM
 topics: development
 audience: developer
 doc-type: technical video
@@ -9,25 +9,24 @@ activity: understand
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4675
 thumbnail: 32550.jpg
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 28%
+source-wordcount: '79'
+ht-degree: 16%
 
 ---
 
 
 # [!DNL AEM Project Archetype] {#aem-project-archetype}
 
-Il progetto AEM contiene tutto il codice e le configurazioni per un’implementazione. [!DNL AEM Project Archetype] crea un progetto Adobe Experience Manager minimo basato su best practice come punto di partenza per i tuoi progetti AEM.
+Il Progetto AEM contiene tutto il codice e le configurazioni per un’implementazione. [!DNL AEM Project Archetype] crea un progetto Adobe Experience Manager minimale basato su best practice come punto di partenza per i tuoi progetti AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32550/?quality=12&learn=on)
 
 ## Risorse aggiuntive {#additional-resources}
 
 * [Progetto GitHub](https://github.com/adobe/aem-project-archetype)
-* [Documentazione di AEM Project Archetype](https://docs.adobe.com/content/help/it/experience-manager-core-components/using/developing/archetype/overview.html)
+* [Documentazione AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
