@@ -12,10 +12,9 @@ thumbnail: KT-6284.jpg
 topic: Integrazioni, Sviluppo
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -23,7 +22,7 @@ ht-degree: 0%
 
 # Test di un lavoratore Asset compute
 
-Il progetto di Asset compute definisce un pattern per creare ed eseguire facilmente [test di Asset compute worker](https://docs.adobe.com/content/help/en/asset-compute/using/extend/test-custom-application.html).
+Il progetto di Asset compute definisce un pattern per creare ed eseguire facilmente [test di Asset compute worker](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html).
 
 ## Anatomia di un test operaio
 
