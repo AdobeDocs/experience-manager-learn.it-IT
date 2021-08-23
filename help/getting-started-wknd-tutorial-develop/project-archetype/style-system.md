@@ -12,10 +12,9 @@ level: Beginner
 kt: 4128
 mini-toc-levels: 1
 thumbnail: 30386.jpg
-translation-type: tm+mt
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2003'
+source-wordcount: '1999'
 ht-degree: 1%
 
 ---
@@ -70,7 +69,7 @@ Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/a
 
 ## Cosa verrà creato {#what-you-will-build}
 
-In questo capitolo utilizzeremo la funzione [Sistema di stili](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) per creare varianti dei componenti **Titolo** e **Testo** utilizzati nella pagina Articolo.
+In questo capitolo utilizzeremo la funzione [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) per creare varianti dei componenti **Titolo** e **Testo** utilizzati nella pagina Articolo.
 
 ![Stili disponibili per il titolo](assets/style-system/styles-added-title.png)
 
@@ -78,7 +77,7 @@ In questo capitolo utilizzeremo la funzione [Sistema di stili](https://docs.adob
 
 ## Sfondo {#background}
 
-Il [Sistema di stili](https://docs.adobe.com/content/help/it-IT/experience-manager-65/developing/components/style-system.html) consente agli sviluppatori e agli editor di modelli di creare più varianti visive di un componente. Gli autori possono quindi a loro volta decidere quale stile utilizzare per la composizione di una pagina. Nel resto dell’esercitazione, sfrutteremo il sistema di stili per ottenere diversi stili univoci, sfruttando al contempo i componenti core in un approccio a basso codice.
+Il [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) consente agli sviluppatori e agli editor di modelli di creare più varianti visive di un componente. Gli autori possono quindi a loro volta decidere quale stile utilizzare per la composizione di una pagina. Nel resto dell’esercitazione, sfrutteremo il sistema di stili per ottenere diversi stili univoci, sfruttando al contempo i componenti core in un approccio a basso codice.
 
 L’idea generale del sistema di stili è che gli autori possono scegliere vari stili per l’aspetto di un componente. Gli &quot;stili&quot; sono supportati da classi CSS aggiuntive inserite nel div esterno di un componente. Nelle librerie client le regole CSS vengono aggiunte in base a queste classi di stile in modo che il componente cambi aspetto.
 
