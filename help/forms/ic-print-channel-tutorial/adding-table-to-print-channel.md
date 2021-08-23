@@ -4,7 +4,7 @@ seo-title: Aggiunta di una tabella alla sezione contributi
 description: Questa è la parte 9 dell’esercitazione su più passaggi per la creazione del primo documento di comunicazione interattivo. In questa parte verrà aggiunta una tabella alla sezione contributi.
 seo-description: Questa è la parte 9 dell’esercitazione su più passaggi per la creazione del primo documento di comunicazione interattivo. In questa parte verrà aggiunta una tabella alla sezione contributi.
 uuid: 9475e769-a3f8-4aec-9b46-e0dc182b78a0
-feature: Interactive Communication
+feature: Comunicazione interattiva
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,13 +13,12 @@ version: 6.4,6.5
 kt: 5994
 thumbnail: 37953.jpg
 discoiquuid: 36c1f67f-b5bb-431e-893c-fd5032918dd7
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '136'
 ht-degree: 2%
 
 ---
@@ -30,7 +29,7 @@ ht-degree: 2%
 In questa parte, aggiungeremo una tabella alla sezione dei contributi .
 Fare riferimento a [Uso delle tabelle nel canale di stampa](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) per ulteriori informazioni sull&#39;utilizzo delle tabelle nel documento del canale di stampa.
 
-Accedi a AEM Forms e passa a Adobe Experience Manager > Moduli > Moduli e documenti.
+Accedi ad AEM Forms e passa a Adobe Experience Manager > Forms > Forms e documenti.
 
 Apri la cartella 401KStatementPrint .
 
