@@ -2,7 +2,7 @@
 title: Personalizzare la notifica di assegnazione attività
 description: Includi i dati del modulo nelle e-mail di notifica delle attività di assegnazione
 sub-product: forms
-feature: Workflow
+feature: Flusso di lavoro
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,14 +10,13 @@ activity: setup
 version: 6.4,6.5
 kt: 6279
 thumbnail: KT-6279.jpg
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 2%
+source-wordcount: '444'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +24,7 @@ ht-degree: 2%
 # Personalizzare la notifica di assegnazione attività
 
 Il componente Assegna attività viene utilizzato per assegnare le attività ai partecipanti del flusso di lavoro. Quando un’attività viene assegnata a un utente o a un gruppo, viene inviata una notifica e-mail all’utente o ai membri del gruppo definiti.
-Questa notifica di posta elettronica contiene in genere dati dinamici relativi all&#39;attività. Questi dati dinamici vengono recuperati utilizzando le proprietà dei metadati [generate dal sistema](https://docs.adobe.com/content/help/en/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification).
+Questa notifica di posta elettronica contiene in genere dati dinamici relativi all&#39;attività. Questi dati dinamici vengono recuperati utilizzando le proprietà dei metadati [generate dal sistema](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification).
 Per includere i valori dei dati del modulo inviati nella notifica e-mail, è necessario creare una proprietà di metadati personalizzata e quindi utilizzare queste proprietà di metadati personalizzate nel modello e-mail
 
 
@@ -34,7 +33,7 @@ Per includere i valori dei dati del modulo inviati nella notifica e-mail, è nec
 
 L&#39;approccio consigliato è quello di creare un componente OSGI che implementa il metodo getUserMetadata del [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
 
-Il codice seguente crea 4 proprietà di metadati (_firstName_,_lastName_,_reason_ e _amountRequested_) e imposta il suo valore dai dati inviati. Ad esempio, il valore della proprietà metadati _firstName_ viene impostato sul valore dell&#39;elemento denominato firstName dai dati inviati. Il codice seguente presuppone che i dati inviati del modulo adattivo siano in formato xml. I moduli adattivi basati sullo schema JSON o sul modello dati del modulo generano dati in formato JSON.
+Il codice seguente crea 4 proprietà di metadati (_firstName_,_lastName_,_reason_ e _amountRequested_) e imposta il suo valore dai dati inviati. Ad esempio, il valore della proprietà metadati _firstName_ viene impostato sul valore dell&#39;elemento denominato firstName dai dati inviati. Il codice seguente presuppone che i dati inviati del modulo adattivo siano in formato xml. Forms adattivo basato su schema JSON o modello dati modulo genera dati in formato JSON.
 
 
 ```java
@@ -120,7 +119,7 @@ Nel modello e-mail puoi includere la proprietà dei metadati utilizzando la segu
 
 ## Configura l’attività di assegnazione per utilizzare la proprietà dei metadati personalizzati
 
-Dopo aver generato e distribuito il componente OSGi nel server AEM, configura il componente Assegna attività come mostrato di seguito per utilizzare le proprietà dei metadati personalizzate.
+Dopo aver generato e distribuito il componente OSGi AEM server, configura il componente Assegna attività come mostrato di seguito per utilizzare le proprietà dei metadati personalizzate.
 
 
 ![Notifica attività](assets/task-notification.PNG)
@@ -131,10 +130,10 @@ Dopo aver generato e distribuito il componente OSGi nel server AEM, configura il
 
 ## Per provare sul server
 
-* [Configura il servizio di posta CQ Day](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
+* [Configura il servizio di posta CQ Day](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
 * Associa un ID e-mail valido a [utente amministratore](http://localhost:4502/security/users.html)
 * Scarica e installa [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) utilizzando [package manager](http://localhost:4502/crx/packmgr/index.jsp)
-* Scarica [Modulo adattivo](assets/request-travel-authorization.zip) e importalo in AEM dall’ [interfaccia utente di moduli e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Scarica [Modulo adattivo](assets/request-travel-authorization.zip) e importa in AEM dall’ interfaccia utente di [moduli e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 * Distribuisci e avvia il [bundle personalizzato](assets/work-items-user-service-bundle.jar) utilizzando la [console web](http://localhost:4502/system/console/bundles)
 * [Anteprima e invio del modulo](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
 
