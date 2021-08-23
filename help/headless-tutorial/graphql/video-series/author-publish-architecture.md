@@ -1,7 +1,6 @@
 ---
 title: Architettura di authoring e pubblicazione con AEM GraphQL
 description: Scopri come e quando sfruttare gli ambienti Author e Publish di AEM quando utilizzi AEM API GraphQL.
-sub-product: assets
 version: cloud-service
 topic: Senza testa, gestione dei contenuti
 feature: Frammenti di contenuto, API GraphQL
@@ -9,9 +8,9 @@ role: Developer
 level: Beginner
 kt: 7873
 thumbnail: 333296.jpg
-source-git-commit: 1853960cce1e17ade43e4b2d7b521f63c4d04d71
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '103'
 ht-degree: 0%
 
 ---
