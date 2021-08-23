@@ -4,20 +4,19 @@ seo-title: Elenco dei tipi di risorse personalizzate in AEM Forms
 description: Parte 2 dell’elenco dei tipi di risorse personalizzate in AEM Forms
 seo-description: Parte 2 dell’elenco dei tipi di risorse personalizzate in AEM Forms
 uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
-feature: Adaptive Forms
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
 discoiquuid: 4b940465-0bd7-45a2-8d01-e4d640c9aedf
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -77,9 +76,9 @@ Il codice seguente elenca i vari tipi di risorse che utilizzano il componente Ri
 >
 >Linea 11 - Cambiare l&#39;immagine src per puntare a un&#39;immagine scelta in DAM.
 >
->Per elencare i moduli adattivi in questo modello, crea un nuovo div e imposta il relativo attributo del tipo di dati su &quot;guide&quot;. È possibile copiare e incollare il div di cui data-type=&quot;printForm e impostare il tipo di dati del div appena copiato su &quot;guide&quot;
+>Per elencare Adaptive Forms in questo modello, crea un nuovo div e imposta il suo attributo data-type su &quot;guide&quot;. È possibile copiare e incollare il div di cui data-type=&quot;printForm e impostare il tipo di dati del div appena copiato su &quot;guide&quot;
 
-## Configura componente Ricerca e filtro {#configure-search-and-lister-component}
+## Configura componente Ricerca E Registrazione {#configure-search-and-lister-component}
 
 Una volta definito il modello personalizzato, dobbiamo ora associare questo modello personalizzato al componente &quot;Ricerca e filtro&quot;. Puntare il browser [a questo URL ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
 
