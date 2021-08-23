@@ -11,7 +11,6 @@ role: Developer
 level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
-translation-type: tm+mt
 source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '581'
@@ -20,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Flusso di lavoro del tema {#theming}
+# Flusso di lavoro dei temi {#theming}
 
 >[!CAUTION]
 >
