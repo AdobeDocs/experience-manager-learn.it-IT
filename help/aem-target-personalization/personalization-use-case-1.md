@@ -1,24 +1,23 @@
 ---
-title: Personalizzazione tramite Frammenti esperienza AEM e Adobe Target
-seo-title: Personalizzazione tramite Frammenti esperienza Adobe Experience Manager (AEM) e Adobe Target
+title: Personalizzazione tramite frammenti di esperienza AEM e Adobe Target
+seo-title: Personalizzazione tramite frammenti di esperienza Adobe Experience Manager (AEM) e Adobe Target
 description: Un tutorial end-to-end che mostra come creare e distribuire esperienze personalizzate utilizzando Frammenti esperienza Adobe Experience Manager e Adobe Target.
 seo-description: Un tutorial end-to-end che mostra come creare e distribuire esperienze personalizzate utilizzando Frammenti esperienza Adobe Experience Manager e Adobe Target.
-feature: Experience Fragments
-topic: Personalization
+feature: Frammenti di esperienza
+topic: Personalizzazione
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1728'
 ht-degree: 1%
 
 ---
 
 
-# Personalizzazione tramite Frammenti esperienza AEM e Adobe Target
+# Personalizzazione tramite frammenti di esperienza AEM e Adobe Target
 
-Grazie alla possibilità di esportare frammenti di esperienza AEM in Adobe Target come offerte HTML, puoi combinare la facilità d’uso e la potenza di AEM con le potenti funzionalità di intelligenza automatizzata (AI) e apprendimento automatico (ML) di Target per testare e personalizzare le esperienze su larga scala.
+Grazie alla possibilità di esportare AEM Frammenti esperienza in Adobe Target come offerte HTML, puoi combinare la facilità d’uso e la potenza del AEM con le potenti funzionalità di intelligenza automatizzata (AI) e apprendimento automatico (ML) di Target per testare e personalizzare le esperienze su larga scala.
 
 AEM riunisce tutti i contenuti e le risorse in una posizione centrale per alimentare la tua strategia di personalizzazione. AEM consente di creare facilmente contenuti per desktop, tablet e dispositivi mobili in un’unica posizione senza scrivere codice. Non è necessario creare pagine per ogni dispositivo: AEM regola automaticamente ogni esperienza utilizzando il contenuto.
 
@@ -40,27 +39,27 @@ Per questo esercizio è necessario coinvolgere i seguenti utenti ed eseguire alc
 ### Prerequisiti
 
 * **AEM**
-   * [AEM crea e pubblica ](./implementation.md#getting-aem) instancerunning rispettivamente su localhost 4502 e 4503.
+   * [AEM autore e pubblicare instancerunning ](./implementation.md#getting-aem) su localhost 4502 e 4503 rispettivamente.
 * **Experience Cloud**
    * Accesso alle organizzazioni Adobe Experience Cloud - <https://>`<yourcompany>`.experiencecloud.adobe.com
-   * Experience Cloud con le seguenti soluzioni
+   * Experience Cloud fornito con le seguenti soluzioni
       * [Adobe Target](https://experiencecloud.adobe.com)
 
 ### Home page sito WKND
 
-![Scenario 1 di AEM Target](assets/personalization-use-case-1/aem-target-use-case-1-4.png)
+![Scenario AEM Target 1](assets/personalization-use-case-1/aem-target-use-case-1-4.png)
 
-1. L’addetto al marketing avvia la discussione sulla campagna WKND SkateFest con AEM Content Editor e descrive i requisiti.
+1. L’addetto al marketing avvia la discussione sulla campagna WKND SkateFest con AEM Content Editor e ne descrive i requisiti.
    * ***Requisito***: Promuovi la campagna WKND SkateFest sulla home page del sito WKND con contenuti personalizzati per i visitatori di ogni stato negli Stati Uniti. Aggiungi un nuovo blocco di contenuto sotto il carosello Home Page contenente un’immagine di sfondo, un testo e un pulsante.
       * **Immagine** di sfondo: L’immagine deve essere pertinente allo stato da cui l’utente sta visitando la pagina del sito WKND.
-      * **Testo**: &quot;Iscriviti alle audizioni&quot;
+      * **Testo**: &quot;Iscriviti alle Audition&quot;
       * **Pulsante**: &quot;Dettagli evento&quot; che punta alla pagina WKND SkateFest
       * **Pagina** WKND SkateFest: una nuova pagina con i dettagli dell’evento, inclusa la sede dell’audizione, la data e l’ora.
-1. In base ai requisiti, l’Editor di contenuto AEM crea un frammento esperienza per il blocco di contenuto ed lo esporta in Adobe Target come offerta. Per distribuire contenuti personalizzati per tutti gli stati degli Stati Uniti, l’autore del contenuto può creare una variante principale del frammento esperienza e quindi creare altre 50 varianti, una per ogni stato. Il contenuto di ogni variante di stato con immagini e testo pertinenti può quindi essere modificato manualmente. Durante la creazione di un frammento esperienza, gli editor di contenuti possono accedere rapidamente a tutte le risorse disponibili in AEM Assets utilizzando l’opzione Asset Finder. Quando un frammento esperienza viene esportato in Adobe Target, anche tutte le sue varianti vengono inviate ad Adobe Target come offerte.
+1. In base ai requisiti, AEM Editor di contenuto crea un frammento esperienza per il blocco di contenuto ed lo esporta in Adobe Target come offerta. Per distribuire contenuti personalizzati per tutti gli stati degli Stati Uniti, l’autore del contenuto può creare una variante principale del frammento esperienza e quindi creare altre 50 varianti, una per ogni stato. Il contenuto di ogni variante di stato con immagini e testo pertinenti può quindi essere modificato manualmente. Quando crei un frammento esperienza, gli editor di contenuti possono accedere rapidamente a tutte le risorse disponibili in AEM Assets utilizzando l’opzione Asset Finder. Quando un frammento esperienza viene esportato in Adobe Target, anche tutte le sue varianti vengono inviate ad Adobe Target come offerte.
 
 1. Dopo aver esportato un frammento esperienza da AEM ad Adobe Target come offerte, gli addetti al marketing possono creare un’attività in Target utilizzando queste offerte. In base alla campagna SkateFest del sito WKND, l’addetto al marketing deve creare e fornire un’esperienza personalizzata ai visitatori del sito WKND da ogni stato. Per creare un’attività Targeting esperienze, l’addetto al marketing deve identificare i tipi di pubblico. Per la nostra campagna WKND SkateFest, dobbiamo creare 50 tipi di pubblico separati, in base alla loro posizione da cui stanno visitando il sito web WKND.
-   * [](https://docs.adobe.com/content/help/en/target/using/introduction/target-key-concepts.html#section_3F32DA46BDF947878DD79DBB97040D01) I tipi di pubblico definiscono il target per la tua attività e vengono utilizzati ovunque sia disponibile il targeting. I tipi di pubblico di Target sono un insieme definito di criteri per i visitatori. Le offerte possono essere indirizzate a tipi di pubblico specifici (o segmenti). Solo i visitatori che appartengono a quel pubblico visualizzano l’esperienza a loro destinata.  Ad esempio, puoi offrire un’offerta a un pubblico composto da visitatori che utilizzano un particolare browser o da una specifica geolocalizzazione.
-   * Un [Offerta](https://docs.adobe.com/content/help/en/target/using/introduction/target-key-concepts.html#section_973D4CC4CEB44711BBB9A21BF74B89E9) è il contenuto che viene visualizzato sulle pagine web durante campagne o attività. Quando sottoponi a test le pagine web, misuri il successo di ogni esperienza con offerte diverse nelle tue posizioni. Un’offerta può contenere diversi tipi di contenuto, tra cui:
+   * [](https://experienceleague.adobe.com/docs/target/using/introduction/target-key-concepts.html#section_3F32DA46BDF947878DD79DBB97040D01) I tipi di pubblico definiscono il target per la tua attività e vengono utilizzati ovunque sia disponibile il targeting. I tipi di pubblico di Target sono un insieme definito di criteri per i visitatori. Le offerte possono essere indirizzate a tipi di pubblico specifici (o segmenti). Solo i visitatori che appartengono a quel pubblico visualizzano l’esperienza a loro destinata.  Ad esempio, puoi offrire un’offerta a un pubblico composto da visitatori che utilizzano un particolare browser o da una specifica geolocalizzazione.
+   * Un [Offerta](https://experienceleague.adobe.com/docs/target/using/introduction/target-key-concepts.html#section_973D4CC4CEB44711BBB9A21BF74B89E9) è il contenuto che viene visualizzato sulle pagine web durante campagne o attività. Quando sottoponi a test le pagine web, misuri il successo di ogni esperienza con offerte diverse nelle tue posizioni. Un’offerta può contenere diversi tipi di contenuto, tra cui:
       * Immagine
       * Testo
       * **HTML**
@@ -81,7 +80,7 @@ Per questo esercizio è necessario coinvolgere i seguenti utenti ed eseguire alc
 ### Creare un pubblico con il geotargeting {#marketer-audience}
 
 1. Passa alle organizzazioni [Adobe Experience Cloud](https://experiencecloud.adobe.com/) (<https://>`<yourcompany>`.experiencecloud.adobe.com)
-1. Accedi con il tuo Adobe ID e assicurati di essere nell&#39;organizzazione corretta.
+1. Accedi utilizzando il tuo Adobe ID e assicurati di essere nell&#39;organizzazione corretta.
 1. Dal commutatore della soluzione, fai clic su **Target** e quindi su **launch** Adobe Target.
 
    ![Experience Cloud - Adobe Target](assets/personalization-use-case-1/exp-cloud-adobe-target.png)
