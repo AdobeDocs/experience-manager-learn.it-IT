@@ -1,20 +1,19 @@
 ---
-title: Sviluppare esportatori di modelli Sling in AEM
-description: Questa guida tecnica illustra come configurare AEM per l’utilizzo con Sling Model Exporter, migliorare un modello Sling esistente utilizzando il framework Exporter per il rendering come JSON e come utilizzare le opzioni Esportatore e le annotazioni Jackson per personalizzare ulteriormente l’output.
+title: Sviluppa esportatori di modelli Sling in AEM
+description: Questa guida tecnica passa attraverso la configurazione di AEM da utilizzare con Sling Model Exporter, la valorizzazione di un modello Sling esistente utilizzando il framework Exporter per il rendering come JSON, e su come utilizzare le opzioni Esportatore e le annotazioni Jackson per personalizzare ulteriormente l'output.
 version: 6.3, 6.4, 6.5
 sub-product: foundation, content-services
-feature: APIs
+feature: API
 topics: content-delivery, development, headless
 activity: develop
 audience: developer
 doc-type: technical video
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -22,7 +21,7 @@ ht-degree: 0%
 
 # Sviluppa esportatori di modelli Sling
 
-Questa guida tecnica illustra come configurare AEM per l’utilizzo con Sling Model Exporter, migliorare un modello Sling esistente utilizzando il framework Exporter per il rendering come JSON e come utilizzare le opzioni Esportatore e le annotazioni Jackson per personalizzare ulteriormente l’output.
+Questa guida tecnica passa attraverso la configurazione di AEM da utilizzare con Sling Model Exporter, la valorizzazione di un modello Sling esistente utilizzando il framework Exporter per il rendering come JSON, e su come utilizzare le opzioni Esportatore e le annotazioni Jackson per personalizzare ulteriormente l&#39;output.
 
 Sling Model Exporter è stato introdotto in Sling Models v1.3.0. Questa nuova funzione consente di aggiungere nuove annotazioni ai modelli Sling che definiscono come il modello può essere esportato come un diverso oggetto Java, o più comunemente, serializzato in un formato diverso come JSON.
 
