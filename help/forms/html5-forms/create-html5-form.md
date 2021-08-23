@@ -12,9 +12,9 @@ thumbnail: kt-4419.jpg
 topic: Sviluppo
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '484'
 ht-degree: 5%
 
 ---
@@ -26,7 +26,7 @@ I moduli HTML5 sono una nuova funzionalità di Adobe Experience Manager che offr
 
 ## Prerequisito
 
-Assicurati di disporre di un&#39;istanza funzionante di AEM Forms. Segui la [guida all&#39;installazione](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) per installare e configurare AEM Forms
+Assicurati di disporre di un&#39;istanza funzionante di AEM Forms. Segui la [guida all&#39;installazione](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) per installare e configurare AEM Forms
 
 ## Crea il primo modulo HTML5
 
@@ -58,7 +58,7 @@ Le proprietà avanzate del modello xdp consentono di specificare la data di pubb
 
 **URL di invio** : questo è l’URL che gestirà l’invio del modulo HTML5. Ne parleremo nella prossima lezione. Se non si specifica un URL di invio qui, viene richiamato il gestore di invio predefinito che restituisce i dati del modulo al browser.
 
-**Profilo di rendering HTML** : i moduli HTML5 hanno la nozione di profili esposti come endpoint REST per abilitare il rendering mobile dei modelli di modulo. La maggior parte delle volte il profilo di rendering predefinito deve essere sufficiente per eseguire il rendering del modulo. Se il profilo di rendering predefinito non soddisfa le tue esigenze, è possibile creare e associare al modulo un [profilo personalizzato](https://docs.adobe.com/content/help/en/experience-manager-64/forms/html5-forms/custom-profile.html).
+**Profilo di rendering HTML** : i moduli HTML5 hanno la nozione di profili esposti come endpoint REST per abilitare il rendering mobile dei modelli di modulo. La maggior parte delle volte il profilo di rendering predefinito deve essere sufficiente per eseguire il rendering del modulo. Se il profilo di rendering predefinito non soddisfa le tue esigenze, è possibile creare e associare al modulo un [profilo personalizzato](https://experienceleague.adobe.com/docs/experience-manager-64/forms/html5-forms/custom-profile.html).
 
 **Servizio di precompilazione** : il servizio di precompilazione viene in genere utilizzato per compilare il modulo con i dati recuperati da un’origine dati back-end.
 
