@@ -1,20 +1,19 @@
 ---
 title: Personalizzazione della casella in entrata
 description: Aggiungi colonne personalizzate per visualizzare i dati aggiuntivi del flusso di lavoro
-feature: Adaptive Forms
+feature: Moduli adattivi
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5.5
 kt: 5830
-topic: Development
+topic: Sviluppo
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '309'
 ht-degree: 3%
 
 ---
@@ -22,13 +21,13 @@ ht-degree: 3%
 
 # Aggiungi colonne personalizzate
 
-Per visualizzare i dati del flusso di lavoro nella inbox, dobbiamo definire e popolare le variabili nel flusso di lavoro. Il valore della variabile deve essere impostato prima che un&#39;attività venga assegnata a un utente. Per fornirti un primo avvio, abbiamo fornito un flusso di lavoro di esempio pronto per essere implementato sul tuo server AEM.
+Per visualizzare i dati del flusso di lavoro nella inbox, dobbiamo definire e popolare le variabili nel flusso di lavoro. Il valore della variabile deve essere impostato prima che un&#39;attività venga assegnata a un utente. Per fornirti un primo avvio abbiamo fornito un flusso di lavoro di esempio pronto per essere distribuito sul server AEM.
 
-* [Accedi ad AEM](http://localhost:4502/crx/de/index.jsp)
+* [Accedi a AEM](http://localhost:4502/crx/de/index.jsp)
 * [Importa il flusso di lavoro di revisione](assets/review-workflow.zip)
 * [Rivedi il flusso di lavoro](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
 
-Questo flusso di lavoro ha due variabili definite (isMarried e Revenue) e i suoi valori sono impostati utilizzando il componente della variabile impostata. Queste variabili saranno rese disponibili come colonne da aggiungere alla inbox AEM
+Questo flusso di lavoro ha due variabili definite (isMarried e Revenue) e i suoi valori sono impostati utilizzando il componente della variabile impostata. Queste variabili saranno rese disponibili come colonne da aggiungere AEM casella in entrata
 
 ## Crea servizio
 
@@ -76,13 +75,13 @@ return isMarried(inboxItem);
 
 >[!NOTE]
 >
->Affinché il codice di cui sopra funzioni, devi includere AEM 6.5.5 Uber.jar nel tuo progetto
+>Devi includere AEM 6.5.5 Uber.jar nel tuo progetto affinché il codice di cui sopra funzioni
 
 ![uber-jar](assets/uber-jar.PNG)
 
 ## Test sul server
 
-* [Accedi alla console web AEM](http://localhost:4502/system/console/bundles)
+* [Accedi a AEM console Web](http://localhost:4502/system/console/bundles)
 * [Distribuzione e avvio del bundle di personalizzazione della casella in entrata](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
 * [Apri la inbox](http://localhost:4502/aem/inbox)
 * Apri Admin Control facendo clic sull&#39;icona _Vista a elenco_ accanto al pulsante _Crea_
