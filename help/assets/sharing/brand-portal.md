@@ -6,9 +6,9 @@ version: 6.3, 6.4, 6.5
 topic: Gestione dei contenuti
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1774'
+source-wordcount: '1767'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Asset Sourcing di Brand Portal viene utilizzato per raccogliere le risorse da ag
 
 *Per utilizzare Asset Sourcing è necessario Experience Manager Author 6.5 SP2 (6.5.2) o versione successiva*
 
-Per istruzioni su come configurare e impostare Asset Sourcing in Experience Manager Author, consulta [Abilita authoring di Experienci Manager per Asset Sourcing](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/configure-asset-sourcing-in-aem/brand-portal-enable-asset-sourcing.html) .
+Per istruzioni su come configurare e impostare Asset Sourcing in Experience Manager Author, consulta [Abilita authoring di Experienci Manager per Asset Sourcing](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/configure-asset-sourcing-in-aem/brand-portal-enable-asset-sourcing.html) .
 
 ## Funzionalità e miglioramenti di Brand Portal febbraio 2019{#brand-portal-features-and-enhancements-644}
 
@@ -206,6 +206,6 @@ Nuove funzionalità avanzate orientate all&#39;allineamento di Brand Portal con 
 * [Agenti di replica di AEM Author](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [Guida al download accelerato](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [Documentazione di AEM Assets Brand Portal Adobe](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
-* [AEM Assets Dynamic Media Adobe Docs](https://docs.adobe.com/docs/it/aem/6-3/author/assets/dynamic-media.html)
+* [AEM Assets Dynamic Media Adobe Docs](https://experienceleague.adobe.com/docs/)
 * [Scarica Aspera Connect](https://downloads.asperasoft.com/connect2/)
 * [Server di test di Aspera Connect](https://test-connect.asperasoft.com/)
