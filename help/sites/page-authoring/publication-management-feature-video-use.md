@@ -1,12 +1,7 @@
 ---
 title: Pubblicazione di pagine con AEM Sites
-seo-title: Pubblicazione di pagine con Adobe Experience Manager Sites
 description: Adobe Experience Manager Sites offre diverse opzioni per la pubblicazione e l’annullamento della pubblicazione dei contenuti. Questo video esplora i vari metodi e le relative funzionalità.
-seo-description: Adobe Experience Manager Sites offre diverse opzioni per la pubblicazione e l’annullamento della pubblicazione dei contenuti. Questo video esplora i vari metodi e le relative funzionalità.
-topics: publishing
-audience: all
-doc-type: feature video
-activity: use
+feature-set: Experience Manager
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4322
 thumbnail: 32193.jpg
@@ -14,10 +9,10 @@ feature: Pubblicazione
 topic: Gestione dei contenuti
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 2%
+source-wordcount: '137'
+ht-degree: 3%
 
 ---
 
@@ -40,4 +35,4 @@ AEM Sites fornisce diversi metodi per pubblicare e annullare la pubblicazione de
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Documentazione sulla pubblicazione delle pagine](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/publishing-pages.html)
+* [Documentazione sulla pubblicazione delle pagine](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/publishing-pages.html)
