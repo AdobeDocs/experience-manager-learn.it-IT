@@ -14,9 +14,9 @@ thumbnail: 32152.jpg
 topic: Gestione dei contenuti
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '151'
 ht-degree: 2%
 
 ---
@@ -49,4 +49,4 @@ La funzione Differenza pagina può essere utilizzata anche per identificare la d
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Documentazione sulle differenze di pagina](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/page-diff.html)
+* [Documentazione sulle differenze di pagina](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/page-diff.html)
