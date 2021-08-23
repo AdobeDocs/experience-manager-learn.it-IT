@@ -8,14 +8,13 @@ activity: use
 version: cloud-service
 kt: 6352
 thumbnail: 6352-personalization-using-vec.jpg
-topic: Integrations
+topic: Integrations (Integrazioni)
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 1%
+source-wordcount: '519'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +27,7 @@ Scopri come creare un’attività Target di test A/B utilizzando il Compositore 
 
 Per utilizzare il Compositore esperienza visivo su un sito web AEM, è necessario completare la seguente configurazione:
 
-1. [Aggiungi Adobe Target al tuo sito web AEM](./add-target-launch-extension.md)
+1. [Aggiungere Adobe Target al sito Web AEM](./add-target-launch-extension.md)
 1. [Attivare una chiamata Adobe Target da Launch](./load-and-fire-target.md)
 
 ## Panoramica dello scenario
@@ -39,7 +38,7 @@ La home page del sito WKND mostra le attività locali o la cosa migliore da fare
 
 1. Accedi a [Adobe Experience Cloud](https://experience.adobe.com/), tocca __Target__, vai alla scheda __Attività__
 
-   + Se non visualizzi __Target__ nel dashboard di Experience Cloud, assicurati che la corretta organizzazione Adobe sia selezionata nel commutatore di organizzazione in alto a destra e che all&#39;utente sia stato concesso l&#39;accesso a Target in [Adobe Admin Console](https://adminconsole.adobe.com/).
+   + Se non visualizzi __Target__ nel dashboard di Experience Cloud, assicurati che l&#39;organizzazione Adobe corretta sia selezionata nel commutatore di organizzazione in alto a destra e che all&#39;utente sia stato concesso l&#39;accesso a Target in [Adobe Admin Console](https://adminconsole.adobe.com/).
 
 1. Fai clic sul pulsante **Crea attività**, quindi scegli l&#39;attività **Test A/B**
 
@@ -89,5 +88,5 @@ In questo capitolo, un addetto al marketing è stato in grado di creare un’esp
 
 ## Collegamenti di supporto
 
-+ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
-+ [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
++ [Debugger Adobe Experience Cloud - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Debugger Adobe Experience Cloud - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
