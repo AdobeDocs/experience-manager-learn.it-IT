@@ -12,7 +12,6 @@ thumbnail: 32565.jpg
 topic: Sviluppo
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
 workflow-type: tm+mt
 source-wordcount: '549'
@@ -30,7 +29,7 @@ ht-degree: 2%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html" text="Linee guida per lo sviluppo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html" text="Nozioni di base sullo sviluppo"
 
-Questa esercitazione descrive come configurare un ambiente di sviluppo locale per Adobe Experience Manager (AEM) utilizzando l&#39;SDK AEM come Cloud Service. Sono inclusi gli strumenti di sviluppo necessari per sviluppare, generare e compilare progetti AEM, nonché i tempi di esecuzione locali, che consentono agli sviluppatori di convalidare rapidamente le nuove funzionalità localmente prima di distribuirle per AEM come Cloud Service tramite Adobe Cloud Manager.
+Questa esercitazione descrive come configurare un ambiente di sviluppo locale per Adobe Experience Manager (AEM) utilizzando l’SDK AEM come Cloud Service. Sono inclusi gli strumenti di sviluppo necessari per sviluppare, generare e compilare progetti AEM, nonché i tempi di esecuzione locali, che consentono agli sviluppatori di convalidare rapidamente le nuove funzionalità localmente prima di distribuirle per AEM come Cloud Service tramite Adobe Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32565/?quality=12&learn=on)
 
@@ -92,4 +91,4 @@ Questa sezione dell’esercitazione mostra come:
 + Installare gli strumenti [!DNL Dispatcher]
 + Esegui il runtime locale [!DNL Dispatcher]
 
-[Configurare  [!DNL Dispatcher] LocalRuntime](./dispatcher-tools.md)
+[Configurare il runtime locale [!DNL Dispatcher] Runtime](./dispatcher-tools.md)
