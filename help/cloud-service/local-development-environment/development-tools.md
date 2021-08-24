@@ -12,9 +12,9 @@ thumbnail: 25907.jpg
 topic: Sviluppo
 role: Developer
 level: Beginner
-source-git-commit: 6b4b9d7039b7b1c60ed1a7e5ec4ed42250499cec
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1428'
 ht-degree: 2%
 
 ---
@@ -66,7 +66,7 @@ Se utilizzi Homebrew, segui le istruzioni __Installa utilizzando Homebrew__ nell
 
 ## Installa Git
 
-[](https://git-scm.com/) Attiva il sistema di gestione del controllo del codice sorgente utilizzato da  [Adobe Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/source-code-repository.html) ed è quindi necessario per lo sviluppo.
+[](https://git-scm.com/) Attiva il sistema di gestione del controllo del codice sorgente utilizzato da  [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/source-code-repository.html) ed è quindi necessario per lo sviluppo.
 
 + Installare Git utilizzando l’inglese Homebrew
    1. Apri il prompt dei comandi/terminale
@@ -131,13 +131,13 @@ L’ [Adobe I/O CLI](https://github.com/adobe/aio-cli), o `aio`, fornisce l’ac
    + Esegui `node --version` per confermare
 1. Esegui `npm install -g @adobe/aio-cli` per installare globalmente il modulo npm `aio`
 
-### Imposta il plug-in Adobe I/O CLI Cloud Manager{#aio-cloud-manager}
+### Configurare il plug-in Adobe I/O CLI Cloud Manager{#aio-cloud-manager}
 
 Il plug-in Adobe I/O Cloud Manager consente a aio CLI di interagire con Adobe Cloud Manager tramite il comando `aio cloudmanager` .
 
 1. Esegui `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` per installare il [plug-in aio Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
-### Imposta il plug-in Adobe I/O CLI Asset compute{#aio-asset-compute}
+### Impostare il plug-in Adobe I/O CLI Asset compute{#aio-asset-compute}
 
 Il plug-in Adobe I/O Cloud Manager consente a aio CLI di generare ed eseguire i processi di lavoro Asset compute tramite il comando `aio asset-compute` .
 
