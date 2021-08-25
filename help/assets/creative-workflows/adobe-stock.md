@@ -3,13 +3,13 @@ title: Utilizzo di risorse Adobe Stock con AEM Assets
 description: 'AEM consente agli utenti di cercare, visualizzare in anteprima, salvare e concedere in licenza le risorse Adobe Stock direttamente da AEM. Le organizzazioni possono ora integrare il piano Adobe Stock Enterprise con AEM Assets per garantire che le risorse concesse in licenza siano ora ampiamente disponibili per i loro progetti creativi e di marketing, con le potenti funzionalità di gestione delle risorse di AEM. '
 feature: Adobe Stock
 version: 6.4, 6.5
-topic: Gestione dei contenuti
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 6%
+source-wordcount: '1037'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 6%
 
 AEM 6.4.2 consente agli utenti di cercare, visualizzare in anteprima, salvare e concedere in licenza le risorse Adobe Stock direttamente da AEM. Le organizzazioni possono ora integrare il piano Adobe Stock Enterprise con AEM Assets per garantire che le risorse concesse in licenza siano ora ampiamente disponibili per i loro progetti creativi e di marketing, con le potenti funzionalità di gestione delle risorse di AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/24678/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/24678/?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -72,11 +72,11 @@ AEM 6.4.2 consente agli utenti di cercare, visualizzare in anteprima, salvare e 
 
 >[!NOTE]
 >
->L&#39;integrazione richiede un [piano Adobe Stock aziendale](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) e AEM 6.4 con almeno [Service Pack 2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.2.0) implementato. Per AEM i dettagli del service pack 6.4, consulta le seguenti [note sulla versione](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html). Per configurare l’integrazione, è inoltre necessario disporre delle autorizzazioni di amministratore per [Console di Adobe I/O](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) e Adobe Experience Manager.
+>L&#39;integrazione richiede un [piano Adobe Stock aziendale](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) e AEM 6.4 con almeno [Service Pack 2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=AEM*+6*+4*+Service*+Pack*&amp;2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.property.operation=equals&amp;2_group.property.values.0_values=target-version%3Aaem%2F6-4&amp;3_group.property.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;3_group.property.operation=equals&amp;3_group.property.values.0_values=software-type%3Aservice-and-cumulative-fix&amp;orderby=%40jcr%3Acontent%2Fmetadata%2Fdc%3Atitle&amp;orderby.sort=assort c&amp;layout=list&amp;p.offset=0&amp;p.limit=24) implementato. Per AEM i dettagli del service pack 6.4, consulta le seguenti [note sulla versione](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html). Per configurare l’integrazione, è inoltre necessario disporre delle autorizzazioni di amministratore per [Console di Adobe I/O](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) e Adobe Experience Manager.
 
 ### Installazione {#installations}
 
-* Per AEM 6.4, è necessario installare il [AEM Service Pack 2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.2.0) e quindi reinstallare il file cq-dam-stock-integration-content-1.0.4.zip.
+* Per AEM 6.4, è necessario installare il [AEM Service Pack 2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=AEM*+6*+4*+Service*+Pack*&amp;2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.property.operation=equals&amp;2_group.property.values.0_values=target-version%3Aaem%2F6-4&amp;3_group.property.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;3_group.property.operation=equals&amp;3_group.property.values.0_values=software-type%3Aservice-and-cumulative-fix&amp;orderby=%40jcr%3Acontent%2Fmetadata%2Fdc%3Atitle&amp;orderby.sort=assort c&amp;layout=list&amp;p.offset=0&amp;p.limit=24) e quindi reinstallare il file cq-dam-stock-integration-content-1.0.4.zip.
 * Assicurati di disporre delle autorizzazioni di amministratore su [Adobe I/O Console](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) e Adobe Experience Manager per configurare l&#39;integrazione.
 
 #### Configurazione della configurazione Adobe IMS tramite la console Adobe I/O {#set-up-adobe-ims-configuration-using-adobe-i-o-console}
@@ -106,7 +106,7 @@ AEM 6.4.2 consente agli utenti di cercare, visualizzare in anteprima, salvare e 
 ### Risorse aggiuntive
 
 * [Piano d&#39;azione aziendale](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html)
-* [Note sulla versione di AEM 6.4 Service Pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
-* [Integrare AEM e Adobe Stock](https://helpx.adobe.com/experience-manager/6-5/assets/using/aem-assets-adobe-stock.html#IntegrateAEMandAdobeStock)
+* [Note sulla versione di AEM 6.4 Service Pack 2](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=en)
+* [Integrare AEM e Adobe Stock](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html)
 * [API di integrazione della console di Adobe I/O](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)
 * [Documentazione API di Adobe Stock](https://www.adobe.io/apis/creativecloud/stock/docs.html)
