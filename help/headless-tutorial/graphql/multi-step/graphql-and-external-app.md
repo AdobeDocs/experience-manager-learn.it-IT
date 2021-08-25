@@ -5,13 +5,13 @@ version: cloud-service
 mini-toc-levels: 1
 kt: 6716
 thumbnail: KT-6716.jpg
-feature: Frammenti di contenuto, API GraphQL
-topic: Senza testa, gestione dei contenuti
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Si tratta di un tutorial in più parti e si presume che i passaggi descritti nel
 
 _Le schermate IDE in questo capitolo provengono da  [Visual Studio Code](https://code.visualstudio.com/)_
 
-Facoltativamente, installa un&#39;estensione del browser come [Rete GraphQL](https://chrome.google.com/webstore/detail/graphql-network/igbmhmnkobkjalekgiehijefpkdemocm) per essere in grado di visualizzare ulteriori dettagli su una query GraphQL.
+Facoltativamente, installa un&#39;estensione del browser come [GraphQL Network Inspector](https://chrome.google.com/webstore/detail/graphql-network-inspector/ndlbedplllcgconngcnfmkadhokfaaln) per essere in grado di visualizzare ulteriori dettagli su una query GraphQL.
 
 ## Obiettivi
 
@@ -74,7 +74,7 @@ L&#39;avvio dell&#39;app React è descritto più dettagliatamente nel capitolo [
 
       ![App React GraphQL WKND - Esperienza di dettaglio](./assets/graphql-and-external-app/react-details-view.png)
 
-1. Utilizza gli strumenti di sviluppo del browser e un&#39;estensione del browser come [Rete GraphQL](https://chrome.google.com/webstore/detail/graphql-network/igbmhmnkobkjalekgiehijefpkdemocm) per controllare le query GraphQL inviate a AEM e le relative risposte JSON. Questo approccio può essere utilizzato per monitorare le richieste e le risposte GraphQL in modo che siano formulate correttamente e le risposte siano come previsto.
+1. Utilizza gli strumenti di sviluppo del browser e un&#39;estensione del browser come [GraphQL Network Inspector](https://chrome.google.com/webstore/detail/graphql-network-inspector/ndlbedplllcgconngcnfmkadhokfaaln) per controllare le query GraphQL inviate a AEM e le relative risposte JSON. Questo approccio può essere utilizzato per monitorare le richieste e le risposte GraphQL in modo che siano formulate correttamente e le risposte siano come previsto.
 
    ![Query grezza per adventureList](assets/graphql-and-external-app/raw-query-chrome-extension.png)
 
