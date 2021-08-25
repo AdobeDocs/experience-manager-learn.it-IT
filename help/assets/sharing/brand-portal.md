@@ -3,12 +3,12 @@ title: Utilizzo di Brand Portal
 description: Video introduttivi sull’integrazione di AEM Author e AEM Assets Brand Portal.
 feature: Brand Portal
 version: 6.3, 6.4, 6.5
-topic: Gestione dei contenuti
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1764'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Asset Sourcing di Brand Portal viene utilizzato per raccogliere le risorse da ag
 
 *Per utilizzare Asset Sourcing è necessario Experience Manager Author 6.5 SP2 (6.5.2) o versione successiva*
 
-Per istruzioni su come configurare e impostare Asset Sourcing in Experience Manager Author, consulta [Abilita authoring di Experienci Manager per Asset Sourcing](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/configure-asset-sourcing-in-aem/brand-portal-enable-asset-sourcing.html) .
+Per istruzioni su come configurare e impostare Asset Sourcing in Experience Manager Author, consulta [Abilita authoring di Experienci Manager per Asset Sourcing](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=en) .
 
 ## Funzionalità e miglioramenti di Brand Portal febbraio 2019{#brand-portal-features-and-enhancements-644}
 
