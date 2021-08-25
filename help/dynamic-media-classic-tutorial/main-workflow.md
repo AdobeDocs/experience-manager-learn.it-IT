@@ -7,12 +7,12 @@ doc-type: tutorial
 topics: development, authoring, configuring, architecture, publishing
 audience: all
 activity: use
-topic: Gestione dei contenuti
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '2714'
+source-wordcount: '2710'
 ht-degree: 0%
 
 ---
@@ -142,7 +142,7 @@ Le risorse appena caricate e pubblicate verranno visualizzate immediatamente, me
 
 In genere non si tratta di un problema a meno che non si sia verificato un errore e l’immagine/risorsa abbia lo stesso nome della versione pubblicata in precedenza, ma si è verificato un problema con l’immagine. Ad esempio, hai caricato accidentalmente una versione a bassa risoluzione o il tuo art director non ha approvato l&#39;immagine. In questo caso, vuoi richiamare l’immagine originale e sostituirla con una nuova versione utilizzando lo stesso ID risorsa.
 
-Scopri come [Cancellare manualmente la cache per gli URL che devono essere aggiornati](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
+Scopri come [Cancellare manualmente la cache per gli URL che devono essere aggiornati](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/invalidate-cdn-cache-dynamic-media.html?lang=en).
 
 >[!TIP]
 >
