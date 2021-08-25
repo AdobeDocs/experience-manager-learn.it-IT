@@ -2,15 +2,15 @@
 title: Tenere traccia del componente su cui è stato fatto clic con Adobe Analytics
 description: Utilizza Adobe Client Data Layer basato su eventi per tenere traccia dei clic su componenti specifici su un sito Adobe Experience Manager. Scopri come utilizzare le regole nel Experience Platform Launch per ascoltare questi eventi e inviare dati a un Adobe Analytics con un beacon di collegamento di tracciamento.
 version: cloud-service
-topic: Integrations (Integrazioni)
-feature: Livello dati client di Adobe
+topic: Integrations
+feature: Adobe Client Data Layer
 role: Developer
 level: Intermediate
 kt: 6296
 thumbnail: KT-6296.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1814'
+source-wordcount: '1810'
 ht-degree: 1%
 
 ---
@@ -144,7 +144,7 @@ Adobe Client Data Layer è un livello dati guidato da **evento** . Quando fai cl
 
    L&#39;oggetto `event` viene passato dal metodo `trigger()` chiamato nell&#39;evento personalizzato. `component` è lo stato corrente del componente derivato dal livello dati  `getState` che ha attivato il clic.
 
-1. Salva le modifiche ed esegui una [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) in Launch per promuovere il codice nell’ [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments.html) utilizzato sul sito AEM.
+1. Salva le modifiche ed esegui una [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) in Launch per promuovere il codice nell’ [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) utilizzato sul sito AEM.
 
    >[!NOTE]
    >
