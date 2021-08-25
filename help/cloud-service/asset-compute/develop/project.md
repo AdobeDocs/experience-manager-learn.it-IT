@@ -1,20 +1,15 @@
 ---
 title: Creare un progetto di Asset compute per l’estensibilità di Asset compute
 description: I progetti di Asset compute sono progetti Node.js, generati utilizzando Adobe I/O CLI, che aderiscono a una determinata struttura e consentono di implementarli in Adobe I/O Runtime e di integrarli con AEM come Cloud Service.
-feature: Microservizi di Asset compute
-topics: renditions, development
-version: cloud-service
-activity: develop
-audience: developer
-doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
-topic: Integrazioni, Sviluppo
+topic: Integrations, Development
+feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '902'
 ht-degree: 1%
 
 ---
@@ -34,7 +29,7 @@ Utilizza il [plug-in Asset compute CLI di Adobe I/O](../set-up/development-envir
 
 1. Dalla riga di comando, passa alla cartella in cui si trova il progetto.
 1. Dalla riga di comando, esegui `aio app init` per iniziare la generazione interattiva di progetti CLI.
-   + Questo comando potrebbe generare un browser Web che richiede ad Adobe I/O l&#39;autenticazione. In tal caso, fornisci le credenziali Adobe associate ai [servizi e prodotti di Adobe richiesti](../set-up/accounts-and-services.md). Se non riesci ad accedere, segui [queste istruzioni su come generare un progetto](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user).
+   + Questo comando potrebbe generare un browser Web che richiede ad Adobe I/O l&#39;autenticazione. In tal caso, fornisci le credenziali Adobe associate ai [servizi e prodotti di Adobe richiesti](../set-up/accounts-and-services.md). Se non riesci ad accedere, segui [queste istruzioni su come generare un progetto](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user).
 1. __Seleziona organizzazione__
    + Seleziona l&#39;organizzazione Adobe che ha AEM come Cloud Service, Project Firefly sono registrati con
 1. __Seleziona un progetto__
