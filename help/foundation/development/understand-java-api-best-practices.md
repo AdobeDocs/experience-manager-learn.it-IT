@@ -1,25 +1,20 @@
 ---
-title: Comprendere le best practice per le API Java in AEM
+title: Best practice per le API Java in AEM
 description: AEM è basato su uno stack software open-source ricco che espone molte API Java da utilizzare durante lo sviluppo. Questo articolo esplora le API principali e spiega quando e perché dovrebbero essere utilizzate.
 version: 6.2, 6.3, 6.4, 6.5
-sub-product: base, risorse, siti
-feature: API
-topics: best-practices, development
-activity: develop
-audience: developer
-doc-type: article
-topic: Sviluppo
+feature: APIs
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2030'
 ht-degree: 3%
 
 ---
 
 
-# Comprendere le best practice per le API Java
+# Best practice per le API Java
 
 Adobe Experience Manager (AEM) è basato su uno stack software open-source ricco che espone molte API Java da utilizzare durante lo sviluppo. Questo articolo esplora le API principali e spiega quando e perché dovrebbero essere utilizzate.
 
@@ -29,15 +24,15 @@ AEM è basato su 4 set API Java principali.
 
    * astrazioni di prodotto come pagine, risorse, flussi di lavoro, ecc.
 
-* **[!DNL Apache Sling]Framework Web**
+* **Framework Web di Apache Sling**
 
    * astrazioni REST e basate su risorse come risorse, mappe dei valori e richieste HTTP.
 
-* **JCR ([!DNL Apache Jackrabbit Oak])**
+* **JCR (Apache Jackrabbit Oak)**
 
    * astrazioni di dati e contenuti quali nodo, proprietà e sessioni.
 
-* **[!DNL OSGi (Apache Felix)]**
+* **OSGi (Apache Felix)**
 
    * astrazioni del contenitore dell&#39;applicazione OSGi quali servizi e componenti (OSGi).
 
@@ -46,7 +41,7 @@ AEM è basato su 4 set API Java principali.
 La regola generale è di preferire le API/astrazioni nel seguente ordine:
 
 1. **AEM**
-1. **[!DNL Sling]**
+1. **Sling**
 1. **JCR**
 1. **OSGi**
 
@@ -96,8 +91,8 @@ L’API preferita è [AEM Query Builder](https://helpx.adobe.com/experience-mana
 
 * Struttura semplice e parametrizzata delle query (parametri di query modellati come mappa)
 * API Java e HTTP native [](https://helpx.adobe.com/it/experience-manager/6-3/sites/developing/using/querybuilder-api.html)
-* [Debugger query OOTB](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-api.html#TestingandDebugging)
-* [Previsioni OOTB ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-predicate-reference.html) che supportano requisiti di query comuni
+* [Debugger query AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-api.html#TestingandDebugging)
+* [Previsioni AEM ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-predicate-reference.html) che supportano requisiti comuni di query
 
 * API estensibile, che consente lo sviluppo di predicati [query personalizzati](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/implementing-custom-predicate-evaluator.html)
 * JCR-SQL2 e XPath possono essere eseguiti direttamente tramite [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) e [API JCR](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/query/package-summary.html), restituendo risultati rispettivamente a [[!DNL Sling] Resources](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) o [Nodi JCR](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).
@@ -105,7 +100,6 @@ L’API preferita è [AEM Query Builder](https://helpx.adobe.com/experience-mana
 >[!CAUTION]
 >
 >AEM API QueryBuilder perde un oggetto ResourceResolver. Per attenuare questa perdita, segui questo [esempio di codice](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/search/querybuilder/impl/SampleQueryBuilder.java#L164).
-
 
 ## [!DNL Sling] API
 
@@ -155,12 +149,12 @@ Anche se JCR è AEM archivio di contenuti, le sue API NON sono il metodo preferi
 
 ### Utilizzo comune delle API JCR
 
-* [Gestione del controllo degli accessi](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-service-users.html)
+* [Gestione del controllo degli accessi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html)
 * [Gestione autorizzabile (utenti/gruppi)](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/user/package-summary.html)
 * Osservazione JCR (ascolto di eventi JCR)
 * Creazione di strutture dei nodi profondi
 
-   * Mentre le API Sling supportano la creazione di risorse, le API JCR hanno metodi di comodità in [JcrUtils](https://jackrabbit.apache.org/api/2.10/index.html?org/apache/jackrabbit/commons/JcrUtils.html) e [JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/jcr/JcrUtil.html) che velocizzano la creazione di strutture profonde.
+   * Mentre le API Sling supportano la creazione di risorse, le API JCR hanno metodi di comodità in [JcrUtils](https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/commons/JcrUtils.html) e [JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/jcr/JcrUtil.html) che velocizzano la creazione di strutture profonde.
 
 ## API OSGi
 
