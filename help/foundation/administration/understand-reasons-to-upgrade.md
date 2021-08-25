@@ -2,17 +2,12 @@
 title: Motivi dell’aggiornamento
 description: Analisi dettagliata delle funzioni chiave per i clienti che considerano l’aggiornamento all’ultima versione di Adobe Experience Manager.
 version: 6.5
-sub-product: risorse, cloud-manager, commerce, content-services, dynamic media, moduli, foundation, schermi, siti
-topics: best-practices, upgrade
-audience: all
-activity: understand
-doc-type: article
-topic: Aggiornamento
+topic: Upgrade
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '3529'
+source-wordcount: '3462'
 ht-degree: 3%
 
 ---
@@ -504,7 +499,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
             <td>↓<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/it/experience-manager/6-5/release-notes/style-system-fp.html" target="_blank">Sistema di stili</a>:</strong>
+            <td><strong>Sistema di stili:</strong>
             aumenta AEM componente riutilizzandolo definendone l’aspetto visivo tramite il sistema di stili nel contesto.</td>
             <td> </td>
             <td> </td>
@@ -559,7 +554,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
             <td>↓</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-understand.html" target="_blank">Frammenti di contenuto</a>:</strong>
+            <td><strong>Frammenti di contenuto:</strong>
             crea e cura contenuti editoriali scollegati dalla presentazione per un facile riutilizzo.</td>
             <td> </td>
             <td> </td>
@@ -581,7 +576,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
             <td>↓<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/release-notes/content-services-fragments-featurepack.html" target="_blank">Content Services</a>:</strong>
+            <td><strong>Content Services:</strong>
             esporta contenuti da AEM come JSON per utilizzarli su dispositivi e applicazioni.</td>
             <td> </td>
             <td> </td>
@@ -636,7 +631,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
             <td>↓</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/aem-screens-introduction.html" target="_blank">Screens</a>:</strong>
+            <td><strong>Screens:</strong>
             gestire le esperienze per il digital signage e i chioschi.</td>
             <td> </td>
             <td> </td>
@@ -993,8 +988,6 @@ Di seguito è riportata una matrice delle funzionalità principali di Assets off
 
 Di seguito è riportata una matrice delle funzioni principali del componente aggiuntivo AEM Forms offerte da AEM. Alcune di queste funzionalità sono state introdotte nelle versioni precedenti con miglioramenti incrementali aggiunti in ogni versione.
 
-+ [Note sulla versione di AEM Forms](https://helpx.adobe.com/experience-manager/6-5/release-notes/forms.html)
-
 ***Miglioramenti <sup>+</sup> significativi alla funzione in questa versione.***
 
 ***✔ <sup></sup> SP indica che la funzione è disponibile tramite un Service Pack o un Feature Pack.***
@@ -1149,7 +1142,7 @@ Di seguito è riportata una matrice delle funzioni principali del componente agg
             <td>↓<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/pdf/aem-forms/6-5/WorkbenchHelp.pdf" target="_blank">Flusso di lavoro (J2EE) per Forms Processing</a>:</strong>
+            <td><strong>Flusso di lavoro (J2EE) per Forms Processing:</strong>
             creazione di moduli complessi/flussi di lavoro incentrati sui documenti utilizzando un IDE intuitivo.</td>
             <td></td>
             <td>↓</td>
@@ -1188,8 +1181,6 @@ Di seguito è riportata una matrice delle funzioni principali del componente agg
 ## Funzioni di Communities
 
 Di seguito è riportata una matrice delle funzioni principali del componente aggiuntivo AEM Communities offerte da AEM. Alcune di queste funzionalità sono state introdotte nelle versioni precedenti con miglioramenti incrementali aggiunti in ogni versione.
-
-+ [Riepilogo delle nuove funzioni di AEM Communities](https://helpx.adobe.com/experience-manager/6-5/communities/using/whats-new-aem-communities.html#main-pars_text)
 
 ***Miglioramenti <sup>+</sup> significativi alla funzione in questa versione.***
 
@@ -1629,7 +1620,7 @@ Di seguito è riportata una matrice delle funzioni principali del componente agg
     </tbody>
 </table>
 
-AEM Communities aggiunge [miglioramenti](https://helpx.adobe.com/experience-manager/6-5/communities/using/whats-new-aem-communities.html) attraverso le versioni per consentire alle organizzazioni di coinvolgere e abilitare i propri utenti, tramite:
+AEM Communities aggiunge miglioramenti tramite le versioni per consentire alle organizzazioni di coinvolgere e abilitare i propri utenti, tramite:
 
 + **@** mentionsupport nei contenuti generati dagli utenti.
 + Miglioramenti all&#39;accessibilità tramite **Navigazione tastiera** nei componenti **Abilitazione**.
