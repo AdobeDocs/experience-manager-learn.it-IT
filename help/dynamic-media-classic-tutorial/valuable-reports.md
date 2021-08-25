@@ -1,19 +1,14 @@
 ---
 title: Rapporti preziosi per gli amministratori
 description: Scopri due importanti rapporti che gli amministratori di Dynamic Media Classic dovrebbero considerare per la configurazione.
-sub-product: dynamic-media, risorse
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring, reports
-audience: all
-activity: use
-topic: Gestione dei contenuti
+topic: Content Management
 role: Admin
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 1%
+source-wordcount: '314'
+ht-degree: 0%
 
 ---
 
@@ -47,6 +42,4 @@ Per ulteriori informazioni su Dynamic Media Classic, consulta le seguenti risors
 - [Dynamic Media Classic ad Experience League - Ottieni valore](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
 - [Dynamic Media Classic sull&#39;Experience League - Fai di più](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
 - [Archivio newsletter Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
-- [Pagina Iscrizione a una newsletter Dynamic Media](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
 - [Documentazione di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)
-- [Post di blog rich media](https://theblog.adobe.com/tag/dynamic-media)
