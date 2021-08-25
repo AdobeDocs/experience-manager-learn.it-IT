@@ -5,13 +5,13 @@ version: cloud-service
 mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
-feature: Frammenti di contenuto, API GraphQL
-topic: Senza testa, gestione dei contenuti
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1814'
 ht-degree: 2%
 
 ---
@@ -158,11 +158,7 @@ Uno degli obiettivi di questa esercitazione è quello di mostrare come utilizzar
 
    ![Richiesta XHR di GraphQL Endpoint](assets/setup/endpoint-gql.png)
 
-1. Puoi anche visualizzare i parametri e la risposta JSON controllando la richiesta di rete. Potrebbe essere utile installare un&#39;estensione del browser come [GraphQL Network](https://chrome.google.com/webstore/detail/graphql-network/igbmhmnkobkjalekgiehijefpkdemocm) per Chrome per comprendere meglio la query e la risposta.
-
-   ![Estensione di rete GraphQL](assets/setup/GraphQL-extension.png)
-
-   *Utilizzo dell’estensione Chrome GraphQL Network*
+1. Puoi anche visualizzare i parametri e la risposta JSON controllando la richiesta di rete. Potrebbe essere utile installare un&#39;estensione del browser come [GraphQL Network Inspector](https://chrome.google.com/webstore/detail/graphql-network-inspector/ndlbedplllcgconngcnfmkadhokfaaln) per Chrome per comprendere meglio la query e la risposta.
 
 ## Modificare un frammento di contenuto
 
