@@ -2,15 +2,15 @@
 title: Raccogliere dati di pagina con Adobe Analytics
 description: Utilizza Adobe Client Data Layer basato sugli eventi per raccogliere i dati sull’attività dell’utente su un sito web creato con Adobe Experience Manager. Scopri come utilizzare le regole nel Experience Platform Launch per ascoltare questi eventi e inviare dati a una suite di rapporti Adobe Analytics.
 version: cloud-service
-topic: Integrations (Integrazioni)
-feature: Livello dati client di Adobe
+topic: Integrations
+feature: Adobe Client Data Layer
 role: Developer
 level: Intermediate
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '2378'
+source-wordcount: '2375'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Sono necessari i seguenti requisiti:
 Invece di configurare un ambiente AEM e installare la base di codice WKND, puoi utilizzare il debugger di Experience Platform per **passare** dalla Live [https://wknd.site/](https://wknd.site/) a *la proprietà* Launch. Naturalmente puoi utilizzare il tuo sito AEM se il [Livello dati client Adobe è già abilitato](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation)
 
 1. Accedi al Experience Platform Launch e [crea una proprietà Launch](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch.html) (se non lo hai già fatto).
-1. Assicurati che una libreria Launch iniziale [sia stata creata](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) e promossa a un ambiente Launch [](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments.html).
+1. Assicurati che una libreria Launch iniziale [sia stata creata](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) e promossa a un ambiente Launch [](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html).
 1. Copia il codice di incorporamento Launch dall’ambiente in cui è stata pubblicata la libreria.
 
    ![Copia codice di incorporamento Launch](assets/collect-data-analytics/launch-environment-copy.png)
@@ -172,7 +172,7 @@ Adobe Client Data Layer è un livello dati guidato da **evento** . Quando viene 
 
    L&#39;oggetto `event` viene passato dal metodo `trigger()` chiamato nell&#39;evento personalizzato. `component` è la pagina corrente derivata dal livello dati  `getState` nell’evento personalizzato. Richiama da prima lo [schema di pagina](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#page) esposto dal livello di dati per vedere le varie chiavi esposte fuori dalla scatola.
 
-1. Salva le modifiche ed esegui una [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) in Launch per promuovere il codice nell’ [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments.html) utilizzato sul sito AEM.
+1. Salva le modifiche ed esegui una [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) in Launch per promuovere il codice nell’ [ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) utilizzato sul sito AEM.
 
    >[!NOTE]
    >
