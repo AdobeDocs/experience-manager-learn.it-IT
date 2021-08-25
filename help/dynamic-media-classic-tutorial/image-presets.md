@@ -2,17 +2,17 @@
 title: Predefiniti immagini
 description: I predefiniti per immagini in Dynamic Media Classic contengono tutte le impostazioni necessarie per creare un’immagine con dimensioni, formato, qualità e nitidezza specifiche. I predefiniti per immagini sono un componente chiave del dimensionamento dinamico. Quando osservi un URL in Dynamic Media Classic, puoi facilmente vedere se è in uso un predefinito per immagini. Scopri i predefiniti per immagini, perché sono così utili e come crearne uno.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, Predefiniti immagine
+feature: Dynamic Media Classic, Image Presets
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
-topic: Gestione dei contenuti
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '670'
 ht-degree: 1%
 
 ---
@@ -70,5 +70,3 @@ Ulteriori informazioni su [Opzioni di nitidezza di Dynamic Media Classic](https:
 [Guida ai predefiniti per immagini](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf). Impostazioni da utilizzare per ottimizzare la qualità delle immagini e la velocità di caricamento.
 
 [L&#39;Immagine È Tutto Parte 2: Non è mai solo una sfocatura — Qualità e velocità](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Un post sul blog che parla dell&#39;utilizzo di Image Preset per la distribuzione di immagini di alta qualità e a caricamento rapido.
-
-[L&#39;Immagine È Tutti I Webinar](https://dynamicmediaseries2019.enterprise.adobeevents.com/). Link alle registrazioni di tutti e tre i webinar della serie _Image Is Everything_. [Il webinar 2](https://seminars.adobeconnect.com/p6lqaotpjnd3) illustra i predefiniti per immagini.
