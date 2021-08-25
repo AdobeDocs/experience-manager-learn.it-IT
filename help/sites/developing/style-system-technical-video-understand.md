@@ -1,19 +1,15 @@
 ---
 title: Informazioni sul codice per il sistema di stili AEM
 description: Questo video illustra l’anatomia dei CSS (o LESS) e JavaScript utilizzati per assegnare uno stile al componente titolo di base di Adobe Experience Manager utilizzando il sistema di stili, nonché il modo in cui questi stili vengono applicati all’HTML e al DOM.
-feature: Sistema di stili
-topics: development, components, front-end-development
-audience: developer, implementer
-doc-type: technical video
-activity: understand
+feature: Style System
 version: 6.4, 6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 2%
+source-wordcount: '1092'
+ht-degree: 0%
 
 ---
 
@@ -22,15 +18,10 @@ ht-degree: 2%
 
 Questo video illustra l’anatomia dei CSS (o [!DNL LESS]) e JavaScript utilizzati per assegnare uno stile al componente titolo di base di Experience Manager utilizzando il sistema di stili, nonché il modo in cui questi stili vengono applicati all’HTML e al DOM.
 
->[!NOTE]
->
->Il sistema di stili AEM è stato introdotto con [AEM 6.3 SP1](https://helpx.adobe.com/it/experience-manager/6-3/release-notes/sp1-release-notes.html) + [Feature Pack 20593](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-20593).
->
->Il video presuppone che il componente Titolo We.Retail sia stato aggiornato per ereditare da [Componenti core v2.0.0+](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases).
 
 ## Informazioni sul codice per il sistema di stili {#understanding-how-to-code-for-the-style-system}
 
->[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=12&learn=on)
 
 Il pacchetto AEM fornito (**technical-review.sites.style-system-1.0.0.zip**) installa lo stile del titolo dell&#39;esempio, i criteri di esempio per i componenti Contenitore di layout We.Retail e Titolo e una pagina di esempio.
 
