@@ -2,7 +2,7 @@
 title: Integrare un SPA | Guida introduttiva all’editor di SPA AEM e all’Angular
 description: Scopri come il codice sorgente per un’applicazione a pagina singola (SPA) scritta in Angular può essere integrato con un progetto Adobe Experience Manager (AEM). Scopri come utilizzare strumenti front-end moderni, come lo strumento CLI di Angular, per sviluppare rapidamente il SPA rispetto all’API del modello JSON AEM.
 sub-product: sites
-feature: Editor SPA
+feature: SPA Editor
 topics: development
 doc-type: tutorial
 version: cloud-service
@@ -13,9 +13,9 @@ thumbnail: 5310-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '2195'
+source-wordcount: '2191'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,7 @@ Quindi, controlla il modulo `ui.frontend` per comprendere il SPA generato automa
 
 6. Inspect il file `ui.frontend/clientlib.config.js`. Questo file di configurazione viene utilizzato da [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) per determinare come generare la libreria client.
 
-7. Inspect il file `ui.frontend/pom.xml`. Questo file trasforma la cartella `ui.frontend` in un modulo [Maven](http://maven.apache.org/guides/mini/guide-multiple-modules.html). Il file `pom.xml` è stato aggiornato per utilizzare il SPA [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) in **test** e **build** durante una build Maven.
+7. Inspect il file `ui.frontend/pom.xml`. Questo file trasforma la cartella `ui.frontend` in un modulo [Maven](https://maven.apache.org/guides/mini/guide-multiple-modules.html). Il file `pom.xml` è stato aggiornato per utilizzare il SPA [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) in **test** e **build** durante una build Maven.
 
 8. Inspect il file `app.component.ts` in `ui.frontend/src/app/app.component.ts`:
 
