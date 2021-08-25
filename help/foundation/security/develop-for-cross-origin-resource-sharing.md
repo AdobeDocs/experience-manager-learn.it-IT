@@ -2,13 +2,13 @@
 title: Sviluppa per CORS (Cross-Origin Resource Sharing) con AEM
 description: Un breve esempio di utilizzo di CORS per accedere AEM contenuto da un’applicazione web esterna tramite JavaScript lato client.
 version: 6.3, 6,4, 6.5
-topic: Sicurezza, Sviluppo
+topic: Security, Development
 role: Developer
 level: Beginner
-feature: Sicurezza
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+feature: Security
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,8 @@ In questo video:
 
 * **www.example.** effettua il comaps su localhost tramite  `/etc/hosts`
 * **aem-publish.** localmap su localhost tramite  `/etc/hosts`
-* [SimpleHTTPServer](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12)  (un wrapper per  [[!DNL Python]SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)) distribuisce la pagina HTML tramite la porta 8000.
+* SimpleHTTPServer (un wrapper per [[!DNL Python] SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)) sta servendo la pagina HTML tramite la porta 8000.
+   * _Non più disponibile in Mac App Store. Utilizzare metodi simili, ad esempio [Jeeves](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._
 * [!DNL AEM Dispatcher] è in esecuzione su  [!DNL Apache HTTP Web Server] 2.4 e la richiesta di reverse-proxy  `aem-publish.local` a  `localhost:4503`.
 
 Per ulteriori dettagli, consulta [Informazioni sulla condivisione delle risorse tra origini diverse (CORS) in AEM](./understand-cross-origin-resource-sharing.md).
@@ -117,7 +118,7 @@ Per consentire il caching e il serving delle intestazioni CORS sui contenuti mem
 ## Materiali di supporto {#supporting-materials}
 
 * [AEM fabbrica di configurazione OSGi per i criteri di condivisione delle risorse tra origini diverse](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
-* [SimpleHTTPServer per macOS](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12)
+* [Jeeves per macOS](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)
 * [Python SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)  (compatibile con Windows/macOS/Linux)
 
 * [Informazioni sulla condivisione delle risorse tra le origini (Cross-Origin Resource Sharing, CORS) in AEM](./understand-cross-origin-resource-sharing.md)
