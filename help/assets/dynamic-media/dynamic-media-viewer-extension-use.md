@@ -2,15 +2,15 @@
 title: Utilizzo dei visualizzatori Dynamic Media con Adobe Analytics e Adobe Launch
 description: Con l’estensione Dynamic Media Viewers per Adobe Launch, rilasciata con Dynamic Media Viewers 5.13, i clienti di Dynamic Media, Adobe Analytics e Adobe Launch possono utilizzare eventi e dati specifici per i visualizzatori Dynamic Media nella propria configurazione di Adobe Launch.
 sub-product: Dynamic Media
-feature: Informazioni sulla risorsa
-version: 6.3, 6.4, 6.5
-topic: Gestione dei contenuti
+feature: Asset Insights
+version: 6.4, 6.5
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 17%
+source-wordcount: '360'
+ht-degree: 15%
 
 ---
 
@@ -165,5 +165,5 @@ Nella tabella seguente sono elencati gli eventi del visualizzatore Dynamic Media
 ## Risorse aggiuntive{#additional-resources}
 
 * [Integrazione di Adobe Experience Manager con Adobe Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
-* [Esecuzione di Adobe Experience Manager in modalità Dynamic Media Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
-* [Integrazione dei visualizzatori Dynamic Media con Adobe Analytics e Adobe Launch](https://helpx.adobe.com/experience-manager/6-5/assets/using/launch.html)
+* [Esecuzione di Adobe Experience Manager in modalità Dynamic Media Scene7](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=en)
+* [Integrazione dei visualizzatori Dynamic Media con Adobe Analytics e Adobe Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-extension-use.html)
