@@ -2,16 +2,16 @@
 title: Integrare un SPA | Guida introduttiva all'editor di SPA AEM e React
 description: Scopri come il codice sorgente per un’applicazione a pagina singola (SPA) scritta in React può essere integrato con un progetto Adobe Experience Manager (AEM). Scopri come utilizzare strumenti front-end moderni, come un server di sviluppo webpack, per sviluppare rapidamente il SPA rispetto all’API del modello JSON AEM.
 sub-product: sites
-feature: Editor SPA
+feature: SPA Editor
 version: cloud-service
 kt: 4853
 thumbnail: 4853-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1839'
 ht-degree: 1%
 
 ---
@@ -99,7 +99,7 @@ Quindi, controlla il modulo `ui.frontend` per comprendere il SPA generato automa
 
 1. Inspect il file `ui.frontend/clientlib.config.js`. Questo file di configurazione viene utilizzato da [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) per determinare come generare la libreria client.
 
-1. Inspect il file `ui.frontend/pom.xml`. Questo file trasforma la cartella `ui.frontend` in un modulo [Maven](http://maven.apache.org/guides/mini/guide-multiple-modules.html). Il file `pom.xml` è stato aggiornato per utilizzare il SPA [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) in **test** e **build** durante una build Maven.
+1. Inspect il file `ui.frontend/pom.xml`. Questo file trasforma la cartella `ui.frontend` in un modulo [Maven](https://maven.apache.org/guides/mini/guide-multiple-modules.html). Il file `pom.xml` è stato aggiornato per utilizzare il SPA [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) in **test** e **build** durante una build Maven.
 
 1. Inspect il file `index.js` in `ui.frontend/src/index.js`:
 
