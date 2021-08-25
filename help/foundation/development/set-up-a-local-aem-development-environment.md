@@ -2,16 +2,16 @@
 title: Configurare un ambiente di sviluppo AEM locale
 description: Guida alla configurazione di uno sviluppo locale per Adobe Experience Manager, AEM. Vengono trattati argomenti importanti relativi all’installazione locale, a Apache Maven, agli ambienti di sviluppo integrati e al debug/risoluzione dei problemi. Vengono discussi lo sviluppo con Eclipse IDE, CRXDE-Lite, Visual Studio Code e IntelliJ.
 version: 6.4, 6.5
-feature: Strumenti per gli sviluppatori
+feature: Developer Tools
 topics: development
 activity: develop
 audience: developer
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2658'
 ht-degree: 2%
 
 ---
@@ -207,12 +207,12 @@ Quando utilizzi un IDE, assicurati di controllare `classic` nella scheda Profilo
 
 ### [!DNL Eclipse] IDE
 
-Il **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** è uno degli IDE più popolari per lo sviluppo Java, in gran parte perché è open source e ***free***! Adobe fornisce un plug-in, **[[!DNL AEM Developer Tools]](https://eclipse.adobe.com/aem/dev-tools/)**, per [!DNL Eclipse] per consentire uno sviluppo più semplice con una bella GUI per sincronizzare il codice con un&#39;istanza AEM locale. L’ [!DNL Eclipse] IDE è consigliato agli sviluppatori di AEM in larga parte a causa del supporto dell’interfaccia grafica di [!DNL AEM Developer Tools].
+Il **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** è uno degli IDE più popolari per lo sviluppo Java, in gran parte perché è open source e ***free***! Adobe fornisce un plug-in, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html)**, per [!DNL Eclipse] per consentire uno sviluppo più semplice con una bella GUI per sincronizzare il codice con un&#39;istanza AEM locale. L’ [!DNL Eclipse] IDE è consigliato agli sviluppatori di AEM in larga parte a causa del supporto dell’interfaccia grafica di [!DNL AEM Developer Tools].
 
 #### Installazione e configurazione
 
 1. Scarica e installa l’ [!DNL Eclipse] IDE per [!DNL Java EE Developers]: [https://www.eclipse.org](https://www.eclipse.org/)
-1. Segui le istruzioni per installare il plug-in [!DNL AEM Developer Tools]: [https://eclipse.adobe.com/aem/dev-tools/](https://eclipse.adobe.com/aem/dev-tools/)
+1. Segui le istruzioni per installare il plug-in [!DNL AEM Developer Tools]: [https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html](https://eclipse.adobe.com/aem/dev-tools/)
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
