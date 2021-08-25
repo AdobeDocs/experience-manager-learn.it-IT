@@ -1,18 +1,14 @@
 ---
 title: Guida all’implementazione per semplici ricerche
 description: L'implementazione Semplice di ricerca sono i materiali del laboratorio del Summit 2017 AEM Ricerca Demystified. Questa pagina contiene i materiali di questo laboratorio. Per una visita guidata del laboratorio, vedere la cartella di lavoro Lab nella sezione Presentazione di questa pagina.
-topics: development, search
-audience: developer
-doc-type: tutorial
-activity: develop
 version: 6.3, 6.4, 6.5
-feature: Ricerca
-topic: Sviluppo
+feature: Search
+topic: Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '897'
 ht-degree: 2%
 
 ---
@@ -114,7 +110,7 @@ Correzioni e chiarimenti dalle discussioni di laboratorio e risposte alle domand
 
    Oak espone un set di elementi di configurazione dell&#39;analizzatore lucene-fornisce da utilizzare in AEM.
 
-   * [Documentazione di Apache Oak Analyzers](http://jackrabbit.apache.org/oak/docs/query/lucene.html#analyzers)
+   * [Documentazione di Apache Oak Analyzers](https://jackrabbit.apache.org/oak/docs/query/lucene.html#analyzers)
       * [Token](https://cwiki.apache.org/confluence/display/solr/Tokenizers)
       * [Filtri](https://cwiki.apache.org/confluence/display/solr/Filter+Descriptions)
       * [CharFilters](https://cwiki.apache.org/confluence/display/solr/CharFilterFactories)
