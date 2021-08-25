@@ -1,20 +1,20 @@
 ---
 title: Guida introduttiva ad AEM Sites - Configurazione del progetto
-seo-title: Guida introduttiva ad AEM Sites - Configurazione del progetto
+seo-title: Getting Started with AEM Sites - Project Setup
 description: Include la creazione di un progetto Maven Multi Module per gestire il codice e le configurazioni per un sito AEM.
 sub-product: sites
 version: 6.4, 6.5, Cloud Service
 type: Tutorial
 feature: AEM Project Archetype
-topic: Gestione dei contenuti, sviluppo
+topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1843'
 ht-degree: 3%
 
 ---
@@ -275,7 +275,7 @@ Il modulo **[core](https://experienceleague.adobe.com/docs/experience-manager-co
 
 ### Moduli Ui.apps e Ui.content {#apps-content-module}
 
-Il modulo maven **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** contiene tutto il codice di rendering necessario per il sito sotto `/apps`. Ciò include CSS/JS che verranno memorizzati in un formato AEM denominato [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). Sono inclusi anche gli script [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) per il rendering di HTML dinamico. È possibile considerare il modulo **ui.apps** come una mappa della struttura nel JCR, ma in un formato che può essere memorizzato in un file system e impegnato nel controllo del codice sorgente. Il modulo **ui.apps** contiene solo codice.
+Il modulo maven **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** contiene tutto il codice di rendering necessario per il sito sotto `/apps`. Ciò include CSS/JS che verranno memorizzati in un formato AEM denominato [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). Sono inclusi anche gli script [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) per il rendering di HTML dinamico. È possibile considerare il modulo **ui.apps** come una mappa della struttura nel JCR, ma in un formato che può essere memorizzato in un file system e impegnato nel controllo del codice sorgente. Il modulo **ui.apps** contiene solo codice.
 
 Per creare solo questo modulo:
 
@@ -346,6 +346,6 @@ Per creare solo questo modulo:
 
    Si prevede nuovamente un errore di compilazione se non è disponibile un&#39;istanza AEM in esecuzione sulla porta **4504**. Il parametro `aem.port` è definito nel file POM in `aem-guides-wknd/pom.xml`.
 
-Il modulo **[ui.content](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.htm)** è strutturato nello stesso modo del modulo **ui.apps**. L&#39;unica differenza è che il modulo **ui.content** contiene il contenuto noto come **mutable**. ****   **** Il contenuto reciproco si riferisce essenzialmente a configurazioni non di codice come Modelli, Criteri o strutture di cartelle memorizzate nel controllo del codice sorgente e che possono essere modificate direttamente in un&#39;istanza AEM. Questo verrà descritto in modo molto più dettagliato nel capitolo Pagine e Modelli .
+Il modulo **[ui.content](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html)** è strutturato nello stesso modo del modulo **ui.apps**. L&#39;unica differenza è che il modulo **ui.content** contiene il contenuto noto come **mutable**. ****   **** Il contenuto reciproco si riferisce essenzialmente a configurazioni non di codice come Modelli, Criteri o strutture di cartelle memorizzate nel controllo del codice sorgente e che possono essere modificate direttamente in un&#39;istanza AEM. Questo verrà descritto in modo molto più dettagliato nel capitolo Pagine e Modelli .
 
 Gli stessi comandi Maven utilizzati per generare il modulo **ui.apps** possono essere utilizzati per creare il modulo **ui.content** . Puoi ripetere i passaggi precedenti dalla cartella **ui.content** .
