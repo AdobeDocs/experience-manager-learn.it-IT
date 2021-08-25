@@ -1,15 +1,15 @@
 ---
 title: Integrazione di Adobe Experience Manager con Adobe Target utilizzando i Cloud Services
-seo-title: Integrazione di Adobe Experience Manager (AEM) con Adobe Target utilizzando Cloud Services legacy
+seo-title: Integrating Adobe Experience Manager (AEM) with Adobe Target using Legacy Cloud Services
 description: Procedura dettagliata su come integrare Adobe Experience Manager (AEM) con Adobe Target utilizzando AEM Cloud Service
-seo-description: Procedura dettagliata su come integrare Adobe Experience Manager (AEM) con Adobe Target utilizzando AEM Cloud Service
-feature: Frammenti di esperienza
-topic: Personalizzazione
+seo-description: Step by step walkthrough on how to integrate Adobe Experience Manager (AEM) with Adobe Target using AEM Cloud Service
+feature: Experience Fragments
+topic: Personalization
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '351'
 ht-degree: 3%
 
 ---
@@ -32,14 +32,13 @@ Per utilizzare AEM offerte di Frammenti esperienza per abilitare le attività di
    * Per completare questa esercitazione sono necessarie AEM’istanza di authoring e pubblicazione. Se non hai ancora configurato la tua istanza AEM, puoi seguire i passaggi [qui](./implementation.md#set-up-aem).
 
 * **Experience Cloud**
-   * Accesso alle organizzazioni Adobe Experience Cloud - <https://>`<yourcompany>`.experiencecloud.adobe.com
+   * Accesso alle organizzazioni Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud fornito con le seguenti soluzioni
       * [Adobe Target](https://experiencecloud.adobe.com)
 
       >[!NOTE]
       >
       > È necessario effettuare il provisioning del cliente con Experience Platform Launch ed Adobe I/O dal [supporto per l&#39;Adobe](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) o contattare l&#39;amministratore di sistema
-
 
 
 ### Integrazione di AEM con Adobe Target
