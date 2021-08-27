@@ -1,23 +1,23 @@
 ---
 title: Configurazione del pannello di Outlook per la ritirata
-seo-title: Configurazione del pannello di Outlook per la ritirata
+seo-title: Configuring Retirement Outlook Panel
 description: Questa è la parte 10 di un tutorial in più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte, configureremo il pannello di Outlook Retirement aggiungendo testo e componenti grafico.
-seo-description: Questa è la parte 10 di un tutorial in più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte, configureremo il pannello di Outlook Retirement aggiungendo testo e componenti grafico.
+seo-description: This is part 10 of a multi-step tutorial for creating your first interactive communications document. In this part, we will configure Retirement Outlook Panel by adding text and chart components.
 uuid: 1d5119b5-e797-4bf0-9b10-995b3f051f92
-feature: Comunicazione interattiva
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 2ee2cea2-aefa-4d21-a258-248648f73a68
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 1%
+source-wordcount: '344'
+ht-degree: 0%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 1%
 
 * Fai clic sull’icona Risorse e applica il filtro per visualizzare le risorse di tipo &quot;Frammenti documento&quot;. Trascinare il frammento di documento RetirementIncomeOutlook sull&#39;area di destinazione del pannello a sinistra.
 
-* È possibile fare riferimento a [a questa pagina](https://helpx.adobe.com/experience-manager/kt/forms/using/interactive-communication-web-channel-aem-forms/9.html) all&#39;aggiunta di frammenti di documento alle aree contenuto.
+* È possibile fare riferimento a [a questa pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) all&#39;aggiunta di frammenti di documento alle aree contenuto.
 
 ## Aggiunta della figura del reddito mensile stimato {#adding-estimated-monthly-income-chart}
 

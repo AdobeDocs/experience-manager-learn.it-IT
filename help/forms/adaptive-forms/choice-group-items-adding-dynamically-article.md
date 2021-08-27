@@ -1,15 +1,15 @@
 ---
 title: Aggiunta di elementi al componente gruppo di scelta
 description: Aggiunta dinamica di elementi al componente gruppo di scelta
-feature: Moduli adattivi
+feature: Adaptive Forms
 version: 6.5
-topic: Sviluppo
+topic: Development
 role: User
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 1%
+source-wordcount: '520'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 AEM Forms 6.5 ha introdotto la possibilità di aggiungere in modo dinamico elementi a un componente per un gruppo di scelta Forms adattivo come CheckBox, Pulsante di scelta e Elenco immagini.
 
-[Questa funzionalità è disponibile dal vivo sul server](https://forms.enablementadobe.com/content/samples/samples.html?query=0) Samples. Cerca la scheda degli elementi della casella di controllo dinamica e fai clic su &quot;Prova&quot;
+[Questa funzionalità è disponibile dal vivo sul server](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) Samples. Cerca la scheda degli elementi della casella di controllo dinamica e fai clic su &quot;Prova&quot;
 
 
 Puoi aggiungere elementi utilizzando l’editor visivo e l’editor di codice, a seconda del caso d’uso.
@@ -91,7 +91,7 @@ Per provare questo sul tuo sistema:
 
 * [Scaricare le risorse](assets/usingthevisualeditor.zip)
 * Installa Tomcat se non lo hai già. [Le istruzioni per l&#39;installazione di tomcat sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
-* [Distribuisci il file SampleRest.war in Tomcat](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
+* [Distribuisci il file SampleRest.war contenuto in questo file zip](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/sample-rest.zip)
 * [Apri Forms E Documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Fai clic su &quot;Crea | Caricamento file&quot; e carica il file scaricato nel passaggio precedente
 * [Anteprima dei moduli](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)

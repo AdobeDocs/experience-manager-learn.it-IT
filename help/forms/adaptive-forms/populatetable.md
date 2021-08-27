@@ -1,15 +1,15 @@
 ---
 title: 'Popolare tabella di moduli adattivi '
 description: Compilare una tabella di moduli adattivi con i risultati delle vocazioni al servizio Modello dati modulo
-feature: Moduli adattivi
+feature: Adaptive Forms
 version: 6.4,6.5
-topic: Sviluppo
+topic: Development
 role: User
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 1%
+source-wordcount: '245'
+ht-degree: 0%
 
 ---
 
@@ -26,8 +26,8 @@ La riga1 è configurata in modo che cresca a seconda dei dati restituiti dalla c
 ## Distribuisci sul server
 
 [Installa Tomcat come specificato ](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
-[quiDistribuisci il ](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
-[file SampleRest.warInstalla le risorse  ](assets/amortizationschedule.zip) utilizzando AEM gestore di pacchetti 
+[quiDistribuisci il file SampleRest.war contenuto in questo ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/sample-rest.zip)
+[file zipInstalla le risorse  ](assets/amortizationschedule.zip) utilizzando AEM gestore dei pacchetti 
 [Apri il ](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
 modulo di pianificazione dell&#39;ammortamentoImmetti il valore appropriato e fai clic su calcola programma di ammortamento dovrebbe essere compilato nel modulo
 

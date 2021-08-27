@@ -1,15 +1,15 @@
 ---
 title: Configurazione di DataSource con Salesforce in AEM Forms 6.3 e 6.4
 description: Integrazione di AEM Forms con Salesforce tramite il modello dati del modulo
-feature: Forms adattivo, modello dati modulo
+feature: Adaptive Forms, Form Data Model
 topics: integrations
 version: 6.3,6.4,6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '900'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Prerequisiti per questa esercitazione:
 
    * Se utilizzi **AEM Forms 6.3**, l&#39;URL di callback sarà https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. In questo URL createlead è il nome del mio modello di dati del modulo.
 
-   * Se utilizzi** AEM Forms 6.4**, l’URL di callback sarà [https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html](https://gbedekar-w7-1:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html)
+   * Se utilizzi** AEM Forms 6.4**, l’URL di callback sarà https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
 
 In questo esempio gbedekar -w7-1:6443 è il nome del mio server e la porta su cui AEM in esecuzione.
 

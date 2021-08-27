@@ -1,17 +1,17 @@
 ---
 title: Distribuire il campione
 description: Scarica il caso d’uso in esecuzione sull’istanza AEM Forms locale
-feature: Moduli adattivi
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
 kt: 6602
 thumbnail: 6602.jpg
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '378'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,8 @@ Crea un account sviluppatore con [Nexmo](https://dashboard.nexmo.com/) per l&#39
 ## Distribuire i seguenti bundle OSGi
 
 Distribuisci il bundle con il codice [per memorizzare e recuperare i dati dal database](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)
-Distribuisci il [Bundle DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
+Scarica e decomprimi il file [developing-with-service-user.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/developing-with-service-user.zip).
+Distribuisci il file DevelopingWithServiceUser.jar utilizzando la console web Felix.
 
 ## Distribuire la libreria client
 
