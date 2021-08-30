@@ -1,14 +1,14 @@
 ---
 title: Implementazione passaggio del processo personalizzato
 description: Scrittura di allegati di moduli adattivi nel file system utilizzando un passaggio del processo personalizzato
-feature: Flusso di lavoro
+feature: Workflow
 version: 6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 2b7f0f6c34803672cc57425811db89146b38a70a
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Per eseguire il caso d’uso di cui sopra, in genere scriverai un servizio OSGi 
 
 ## Crea progetto Maven
 
-Il primo passo è quello di creare un progetto Maven utilizzando il tipo di archivio Maven Adobe appropriato. I passaggi dettagliati sono elencati in questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/create-your-first-osgi-bundle.html?lang=en). Una volta importato il progetto Maven in eclipse, puoi iniziare a scrivere il tuo primo componente OSGi che può essere utilizzato nel passaggio del processo.
+Il primo passo è quello di creare un progetto Maven utilizzando il tipo di archivio Maven Adobe appropriato. I passaggi dettagliati sono elencati in questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una volta importato il progetto Maven in eclipse, puoi iniziare a scrivere il tuo primo componente OSGi che può essere utilizzato nel passaggio del processo.
 
 
 ### Crea una classe che implementa WorkflowProcess

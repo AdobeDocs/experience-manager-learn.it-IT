@@ -6,9 +6,9 @@ version: 6.4,6.5
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+source-git-commit: 2b7f0f6c34803672cc57425811db89146b38a70a
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,8 @@ La riga1 è configurata in modo che cresca a seconda dei dati restituiti dalla c
 ## Distribuisci sul server
 
 [Installa Tomcat come specificato ](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
-[quiDistribuisci il file SampleRest.war contenuto in questo ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/sample-rest.zip)
-[file zipInstalla le risorse  ](assets/amortizationschedule.zip) utilizzando AEM gestore dei pacchetti 
+[quiDistribuisci il file SampleRest.war contenuto in questo file zip nel tuo ](assets/sample-rest.zip)
+[TomcatInstalla le risorse  ](assets/amortizationschedule.zip) utilizzando AEM gestore di pacchetti 
 [Apri il ](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
-modulo di pianificazione dell&#39;ammortamentoImmetti il valore appropriato e fai clic su calcola programma di ammortamento dovrebbe essere compilato nel modulo
+modulo di pianificazione dell&#39;ammortamentoImmetti il valore appropriato e fai clic su calcola programma di ammortamento dovrebbe essere compilato nel tuo modulo
 
