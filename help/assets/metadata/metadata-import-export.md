@@ -1,17 +1,17 @@
 ---
 title: Utilizzo dell’importazione e dell’esportazione di metadati in AEM Assets
 description: Scopri come utilizzare le funzioni di importazione ed esportazione dei metadati di Adobe Experience Manager Assets. Le funzionalità di importazione ed esportazione consentono agli autori di contenuti di aggiornare in blocco i metadati per le risorse esistenti.
-version: 6.3, 6.4, 6.5, cloud-service
-topic: Gestione dei contenuti
-feature: Metadati
+version: 6.3, 6.4, 6.5, Cloud Service
+topic: Content Management
+feature: Metadata
 role: Admin
 level: Intermediate
 kt: 647, 917
 thumbnail: 22132.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ac93d6ba636e64ba6d8bbdb0840810b8f47a25c8
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 4%
+source-wordcount: '260'
+ht-degree: 3%
 
 ---
 
@@ -53,7 +53,7 @@ Scopri come utilizzare le funzioni di importazione ed esportazione dei metadati 
    * Scorretto: `Dc:Title {{String}}`
 
 * Il tipo di proprietà non fa distinzione tra maiuscole e minuscole
-* Sono supportati tutti i tipi di proprietà [JCR ](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) validi
+* Sono supportati tutti i tipi di proprietà [JCR ](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) validi
 
 * Formato proprietà multivalore - `<metadata property name> {{<property type : MULTI }}`
 
