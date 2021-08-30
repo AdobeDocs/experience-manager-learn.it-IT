@@ -4,10 +4,10 @@ user-guide-description: Una raccolta di video per Adobe Experience Manager Asset
 breadcrumb-title: Video di AEM Assets Essentials
 feature-set: Experience Manager Assets
 team: TM
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: 2edcaa0e10121f75ac3081eb00e8c1419400a205
 workflow-type: tm+mt
-source-wordcount: '46'
-ht-degree: 19%
+source-wordcount: '64'
+ht-degree: 17%
 
 ---
 
@@ -26,5 +26,12 @@ ht-degree: 19%
    + [Collaborazione](basics/collaborating.md)
 
 + [Integrazione  Creative Cloud](integrations/creative-cloud.md)
+
++ Integrazione Adobe Workfront{#workfront}
+   + [Configurazione](./integrations/workfront/configure.md)
+   + [Invio di documenti e collegamento di risorse](./integrations/workfront/link-send.md)
+   + [Cronologia delle versioni](./integrations/workfront/versions.md)
+
 + [Integrazione Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html)
 
++ [Documentazione](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html)
