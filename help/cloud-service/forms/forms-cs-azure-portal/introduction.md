@@ -1,18 +1,18 @@
 ---
 title: Integrare Adobe Experience Manager Forms come Cloud Service con l’archiviazione di Azure
 description: Scopri come memorizzare i dati di invio di AEM Forms in un account di archiviazione di Azure.
-feature: Moduli adattivi
+feature: Adaptive Forms
 type: Documentation
 role: Developer
 level: Beginner
 version: cloud-service
-topic: Integrations (Integrazioni)
+topic: Integrations
 thumbnail: 331891.jpg
-kt: 7192
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+kt: 8474
+source-git-commit: e01d93591d1c00b2abec3430fdfa695b32165e54
 workflow-type: tm+mt
-source-wordcount: '45'
-ht-degree: 8%
+source-wordcount: '42'
+ht-degree: 2%
 
 ---
 
