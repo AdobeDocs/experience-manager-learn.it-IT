@@ -1,18 +1,15 @@
 ---
 title: Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND
-seo-title: Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND
 description: Nuovo allo sviluppo AEM? Hai bisogno di un aggiornamento sulle best practice? Questo è il posto dove cominciare! L’obiettivo di questa esercitazione in più parti è quello di insegnare a uno sviluppatore che è nuovo di AEM come implementare un sito web in AEM utilizzando gli standard e le tecnologie più recenti.
-seo-description: Nuovo allo sviluppo AEM? Hai bisogno di un aggiornamento sulle best practice? Questo è il posto dove cominciare! L’obiettivo di questa esercitazione in più parti è quello di insegnare a uno sviluppatore che è nuovo di AEM come implementare un sito web in AEM utilizzando gli standard e le tecnologie più recenti.
-content-type: reference
-topic-tags: introduction
-feature: AEM Archetipo di progetto, Componenti core, Editor pagina, Modelli modificabili
-topic: Sviluppo
+feature: AEM Project Archetype, Core Components, Page Editor, Editable Templates
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+thumbnail: 30476.jpeg
+source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 7%
+source-wordcount: '300'
+ht-degree: 6%
 
 ---
 
