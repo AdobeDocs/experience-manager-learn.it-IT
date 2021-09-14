@@ -1,26 +1,26 @@
 ---
 title: Utilizzo dell’Editor pagina con AEM Sites
-seo-title: Utilizzo dell’Editor pagina con Adobe Experience Manager Sites
+seo-title: Using the Page Editor with Adobe Experience Manager Sites
 description: Il video seguente evidenzia diverse delle funzioni principali dell’editor per siti dell’interfaccia utente touch in Adobe Experience Manager.
-seo-description: Il video seguente evidenzia diverse delle funzioni principali dell’editor per siti dell’interfaccia utente touch in Adobe Experience Manager.
-feature: Editor pagina
+seo-description: The following video highlights several of the top features of the Touch-UI Sites editor in Adobe Experience Manager.
+feature: Page Editor
 topics: authoring
 audience: author, marketer
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5, cloud-service
+version: 6.3, 6.4, 6.5, Cloud Service
 kt: 4248
 thumbnail: 32011.jpg
-topic: Gestione dei contenuti
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: b120fb79-729e-4155-ba10-e5f7bb07eefa
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '211'
 ht-degree: 7%
 
 ---
-
 
 # Utilizzo dell’Editor pagina {#using-page-editor-with-aem-sites}
 

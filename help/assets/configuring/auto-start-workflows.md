@@ -2,20 +2,20 @@
 title: Flussi di lavoro con avvio automatico
 description: I flussi di lavoro con avvio automatico estendono l’elaborazione delle risorse richiamando automaticamente il flusso di lavoro personalizzato al momento del caricamento o della rielaborazione.
 sub-product: assets
-feature: asset compute Microservices, Flusso di lavoro
-version: cloud-service
+feature: Asset Compute Microservices, Workflow
+version: Cloud Service
 kt: 4994
 thumbnail: 37323.jpg
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 5e423f2c-90d2-474f-8bdc-fa15ae976f18
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 2%
+source-wordcount: '38'
+ht-degree: 0%
 
 ---
-
 
 # Flussi di lavoro con avvio automatico
 

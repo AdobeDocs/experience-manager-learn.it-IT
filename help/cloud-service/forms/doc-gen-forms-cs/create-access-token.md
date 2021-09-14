@@ -1,18 +1,18 @@
 ---
 title: Creare un token di accesso
-description: Sostituisci il Token Web JSON (JWT) con le API IMS di Adobe per un token di accesso AEM.
+description: Sostituisci il JSON Web Token (JWT) con le API Adobe IMS per un token di accesso AEM.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
-feature: Servizi documentali
-topic: Sviluppo
+version: Cloud Service
+feature: Document Services
+topic: Development
 kt: 8185
 thumbnail: 8185.jpg
-source-git-commit: f2a94910fbc29b705f82a66d8248cbcf54366874
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 3%
+source-wordcount: '86'
+ht-degree: 0%
 
 ---
 

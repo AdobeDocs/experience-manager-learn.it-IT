@@ -4,13 +4,13 @@ description: Esegui Main.java per testare la soluzione
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
-feature: Moduli adattivi
-topic: Sviluppo
-source-git-commit: f2a94910fbc29b705f82a66d8248cbcf54366874
+version: Cloud Service
+feature: Adaptive Forms
+topic: Development
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 1%
+source-wordcount: '208'
+ht-degree: 0%
 
 ---
 

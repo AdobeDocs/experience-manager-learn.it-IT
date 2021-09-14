@@ -5,19 +5,19 @@ topics: integrations, authoring, personalization, activity, offers
 audience: all
 doc-type: feature video
 activity: use
-version: cloud-service
+version: Cloud Service
 kt: 6353
 thumbnail: 6353-personalization-web-page.jpg
-topic: Integrations (Integrazioni)
+topic: Integrations
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 2d201b48-c0fb-4bb4-a7d8-da9f4702e9ff
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
-
 
 # Personalizzazione dell’esperienza di pagina web completa {#personalization-fpe}
 
@@ -82,4 +82,3 @@ In qualità di addetto al marketing hai creato un’attività per reindirizzare 
 
 * [Debugger Adobe Experience Cloud - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
 * [Debugger Adobe Experience Cloud - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
-

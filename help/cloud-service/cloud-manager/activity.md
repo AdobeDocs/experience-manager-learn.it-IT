@@ -1,24 +1,24 @@
 ---
 title: Utilizzo di Adobe Cloud Manager - Attività
 description: Cloud Manager fornisce una visualizzazione consolidata dell’attività di un programma, elencando tutte le esecuzioni di pipeline CI/CD, sia di produzione che non di produzione. Questo consente agli utenti di visualizzare tutte le pipeline attualmente in corso ed esaminare le distribuzioni precedenti.
-sub-product: cloud manager
+sub-product: cloud-manager
 topics: Administration
 audience: administrator
 doc-type: feature video
 activity: use
-version: cloud-service
+version: Cloud Service
 kt: 6874
 thumbnail: 26319.jpg
-topic: Architettura
+topic: Architecture
 role: Architect, Developer, Admin
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 82a9d00f-abe6-4600-92b1-41b5f0b5e352
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '108'
 ht-degree: 0%
 
 ---
-
 
 # Utilizzo di Adobe Cloud Manager - Attività
 

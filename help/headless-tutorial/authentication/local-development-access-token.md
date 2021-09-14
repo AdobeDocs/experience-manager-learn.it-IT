@@ -1,24 +1,24 @@
 ---
 title: Token di accesso per lo sviluppo locale
 description: AEM i token di accesso allo sviluppo locale vengono utilizzati per accelerare lo sviluppo di integrazioni con AEM come Cloud Service che interagisce programmaticamente con i servizi di authoring o pubblicazione AEM tramite HTTP.
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 topics: Development, Security
-feature: API
+feature: APIs
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330477.jpg
-topic: Senza testa, Integrazioni
+topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1070'
 ht-degree: 0%
 
 ---
-
 
 # Token di accesso per lo sviluppo locale
 

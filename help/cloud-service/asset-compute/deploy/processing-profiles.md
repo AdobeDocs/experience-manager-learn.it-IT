@@ -1,24 +1,24 @@
 ---
 title: Integrare i processi di lavoro di Asset compute con i profili di elaborazione AEM
 description: AEM as a Cloud Service si integra con i processi di lavoro di Asset compute implementati in Adobe I/O Runtime tramite i profili di elaborazione AEM Assets. I profili di elaborazione sono configurati nel servizio Author per elaborare risorse specifiche utilizzando processi di lavoro personalizzati e archiviare i file generati dai processi di lavoro come rappresentazioni delle risorse.
-feature: Microservizi di Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
-topic: Integrazioni, Sviluppo
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 1b398c8c-6b4e-4046-b61e-b44c45f973ef
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '630'
 ht-degree: 2%
 
 ---
-
 
 # Integrazione con i profili di elaborazione AEM
 
@@ -85,7 +85,7 @@ Il progetto di Asset compute finale è disponibile su Github all’indirizzo:
 
 + [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
-_GitHub contiene lo stato finale del progetto, popolato completamente con i casi di lavoro e test, ma non contiene credenziali, ad esempio. `.env`,  `.config.json` o  `.aio`._
+_GitHub contiene lo stato finale del progetto, popolato completamente con i casi di lavoro e test, ma non contiene credenziali, ad esempio. `.env`, `.config.json` oppure `.aio`._
 
 ## Risoluzione dei problemi
 

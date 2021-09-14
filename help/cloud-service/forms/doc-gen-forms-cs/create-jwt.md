@@ -1,18 +1,18 @@
 ---
 title: Creare un token web JSON (JWT)
-description: Crea un token web JSON (JWT) che può essere scambiato con le API IMS di Adobe per un token di accesso AEM.
+description: Crea un token web JSON (JWT) che può essere scambiato con le API Adobe IMS per un token di accesso AEM.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
-feature: Moduli adattivi
-topic: Sviluppo
+version: Cloud Service
+feature: Adaptive Forms
+topic: Development
 kt: 8184
 thumbnail: 8184.jpg
-source-git-commit: f2a94910fbc29b705f82a66d8248cbcf54366874
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 2%
+source-wordcount: '114'
+ht-degree: 0%
 
 ---
 

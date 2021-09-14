@@ -1,24 +1,24 @@
 ---
 title: Credenziali del servizio
 description: Le credenziali del servizio AEM sono utilizzate per facilitare l’interazione programmatica di applicazioni, sistemi e servizi esterni con i servizi di authoring o pubblicazione AEM tramite HTTP.
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 topics: Development, Security
-feature: API
+feature: APIs
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330519.jpg
-topic: Senza testa, Integrazioni
+topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: b902ced3d7f7cf827d0a487bf741ff370f7c1f04
+exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1860'
 ht-degree: 0%
 
 ---
-
 
 # Credenziali del servizio
 
@@ -38,7 +38,7 @@ Sia le credenziali di servizio che i token di accesso che generano, nonché i to
 
 La generazione delle credenziali del servizio è suddivisa in due passaggi:
 
-1. Inizializzazione delle credenziali di servizio una tantum da parte di un amministratore dell’organizzazione IMS di Adobe
+1. Inizializzazione delle credenziali di servizio una tantum da parte di un amministratore dell’organizzazione Adobe IMS
 1. Download e utilizzo del JSON delle credenziali del servizio
 
 ### Inizializzazione delle credenziali del servizio
@@ -62,7 +62,7 @@ __Si tratta di un&#39;inizializzazione una tantum per AEM come ambiente di Cloud
 
 ![AEM Developer Console - Integrazioni - Ottieni credenziali del servizio](./assets/service-credentials/developer-console.png)
 
-Una volta inizializzata l’AEM come credenziali di servizio dell’ambiente di Cloud Service, altri sviluppatori AEM nell’organizzazione IMS di Adobe possono scaricarle.
+Una volta inizializzata l’AEM come credenziali di servizio dell’ambiente di Cloud Service, altri sviluppatori AEM nella tua organizzazione Adobe IMS possono scaricarle.
 
 ### Scaricare le credenziali del servizio
 
@@ -93,7 +93,7 @@ Per semplicità, questa esercitazione passa le credenziali di servizio in tramit
 
 ## Utilizzare le credenziali del servizio
 
-Le credenziali del servizio, un oggetto JSON completo, non sono uguali né al JWT né al token di accesso. Le credenziali del servizio (che contengono una chiave privata) vengono invece utilizzate per generare un JWT, che viene scambiato con le API IMS di Adobe per un token di accesso.
+Le credenziali del servizio, un oggetto JSON completo, non sono uguali né al JWT né al token di accesso. Le credenziali del servizio (che contengono una chiave privata) vengono invece utilizzate per generare un JWT, che viene scambiato con le API Adobe IMS per un token di accesso.
 
 ![Credenziali del servizio - Applicazione esterna](assets/service-credentials/service-credentials-external-application.png)
 
@@ -101,7 +101,7 @@ Le credenziali del servizio, un oggetto JSON completo, non sono uguali né al JW
 1. Un’applicazione esterna deve interagire programmaticamente con AEM come ambiente di Cloud Service
 1. L&#39;applicazione esterna legge le credenziali del servizio da una posizione protetta
 1. L’applicazione esterna utilizza le informazioni provenienti dalle credenziali del servizio per creare un token JWT
-1. Il token JWT viene inviato ad Adobe IMS per lo scambio di un token di accesso
+1. Il token JWT viene inviato ad Adobe IMS per scambiare un token di accesso
 1. Adobe IMS restituisce un token di accesso che può essere utilizzato per accedere a AEM come Cloud Service
    + La scadenza dei token di accesso può essere richiesta. È consigliabile mantenere la vita breve del token di accesso e aggiornarlo quando necessario.
 1. L’applicazione esterna invia richieste HTTP a AEM come Cloud Service, aggiungendo il token di accesso come token portatore all’intestazione Autorizzazione delle richieste HTTP
@@ -140,7 +140,7 @@ function getCommandLineParams() {
 
 ## Creare un JWT e scambiare un token di accesso
 
-Una volta lette le credenziali del servizio, vengono utilizzate per generare un JWT che viene poi scambiato con le API IMS di Adobe per un token di accesso, che può quindi essere utilizzato per accedere a AEM come Cloud Service.
+Una volta lette le credenziali del servizio, vengono utilizzate per generare un JWT che viene poi scambiato con le API Adobe IMS per un token di accesso, che può quindi essere utilizzato per accedere a AEM come Cloud Service.
 
 Questa applicazione di esempio è basata su Node.js, quindi è meglio utilizzare il modulo [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) npm per facilitare la generazione (1) JWT e (20 scambio con Adobe IMS. Se l&#39;applicazione viene sviluppata utilizzando un&#39;altra lingua, controlla [gli esempi di codice appropriati](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/samples/samples.md) su come creare la richiesta HTTP ad Adobe IMS utilizzando altri linguaggi di programmazione.
 
@@ -254,4 +254,3 @@ L&#39;output sul terminale sarà simile al seguente:
 ## Congratulazioni!
 
 Ora che abbiamo effettuato l’accesso programmaticamente AEM come Cloud Service utilizzando un token di accesso allo sviluppo locale, così come un token di accesso da servizio a servizio pronto per la produzione!
-

@@ -1,22 +1,22 @@
 ---
 title: Come utilizzare i blocchi predefiniti dei frammenti esperienza
 description: I blocchi predefiniti sono una sottofunzione dei frammenti esperienza che consente di riutilizzare i componenti creati tra le varianti dei frammenti esperienza.
-sub-product: siti, content-services
-version: cloud-service
-feature: Frammenti di esperienza
-topic: Gestione dei contenuti
+sub-product: sites, content-services
+version: Cloud Service
+feature: Experience Fragments
+topic: Content Management
 level: Beginner, Intermediate
 role: Architect, Developer, Admin, User
 doc-type: feature video
 kt: 660
 thumbnail: 331786.jpg
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: cc758602-3c20-4eca-9b87-f04b6dc96bfe
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 3%
+source-wordcount: '98'
+ht-degree: 0%
 
 ---
-
 
 # Blocchi predefiniti con frammenti esperienza {#building-blocks}
 

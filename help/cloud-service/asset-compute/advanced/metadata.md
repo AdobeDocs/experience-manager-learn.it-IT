@@ -1,24 +1,24 @@
 ---
 title: Sviluppare un processo di lavoro per metadati di Asset compute
 description: Scopri come creare un processo di lavoro per metadati di Asset compute che derivi colori più comunemente utilizzati in una risorsa immagine e riporta i nomi dei colori ai metadati della risorsa in AEM.
-feature: Microservizi di Asset compute
+feature: Asset Compute Microservices
 topics: metadata, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
-topic: Integrazioni, Sviluppo
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1434'
 ht-degree: 1%
 
 ---
-
 
 # Sviluppare un processo di lavoro per metadati di Asset compute
 

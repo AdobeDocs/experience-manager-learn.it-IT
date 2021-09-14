@@ -1,20 +1,20 @@
 ---
 title: Nozioni di base sulla modellazione GraphQL
 description: Scopri come definire e utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) per l’utilizzo con GraphQL.
-version: cloud-service
-topic: Senza testa, gestione dei contenuti
-feature: Frammenti di contenuto, API GraphQL
+version: Cloud Service
+topic: Headless, Content Management
+feature: Content Fragments, GraphQL API
 role: Developer
 level: Beginner
 kt: 7619
 thumbnail: 332858.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 0d22b06f-bf78-4a54-85be-6a932177f36f
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '92'
 ht-degree: 0%
 
 ---
-
 
 # Nozioni di base sulla modellazione GraphQL
 

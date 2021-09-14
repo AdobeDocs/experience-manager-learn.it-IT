@@ -2,20 +2,20 @@
 title: Profili di elaborazione
 description: I profili di elaborazione definiscono i rendering da creare per le risorse in AEM come Cloud Service.
 sub-product: assets
-feature: Microservizi di Asset compute
-version: cloud-service
+feature: Asset Compute Microservices
+version: Cloud Service
 kt: 4993
 thumbnail: 35597.jpg
-topic: Integrations (Integrazioni)
+topic: Integrations
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: a08ce6b2-532d-4fd4-ada4-3cbec0fde699
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '41'
-ht-degree: 12%
+source-wordcount: '36'
+ht-degree: 11%
 
 ---
-
 
 # Profili di elaborazione
 

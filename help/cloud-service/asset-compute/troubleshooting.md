@@ -1,24 +1,24 @@
 ---
 title: Risolvere i problemi di estensibilità di Asset compute per AEM Assets
 description: Di seguito è riportato un indice dei problemi e degli errori comuni, insieme alle risoluzioni, che possono essere riscontrati durante lo sviluppo e la distribuzione di processi di lavoro Asset compute personalizzati per AEM Assets.
-feature: Microservizi di Asset compute
+feature: Asset Compute Microservices
 topics: renditions, metadata, development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
-topic: Integrazioni, Sviluppo
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1239'
 ht-degree: 0%
 
 ---
-
 
 # Risolvere i problemi relativi all’estensibilità di Asset compute
 
@@ -166,5 +166,3 @@ Lo strumento di sviluppo di Asset compute può inserire uno stato in cui richiam
 + __Errore:__ viene visualizzato il badge Elaborazione risorsa non riuscita sulla risorsa
 + __Causa:__ si è verificato un errore nell&#39;esecuzione del processo di lavoro personalizzato
 + __Risoluzione:__ segui le istruzioni sul  [debug dell’](./test-debug/debug.md#aio-app-logs) attivazione Adobe I/O Runtime utilizzando  `aio app logs`.
-
-

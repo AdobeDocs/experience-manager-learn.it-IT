@@ -1,24 +1,24 @@
 ---
 title: Panoramica di AEM e Adobe Target
 description: Scopri come creare e distribuire esperienze personalizzate utilizzando Adobe Experience Manager as a Cloud Service e Adobe Target.
-feature: Frammenti esperienza, componenti core, livello dati client Adobe
+feature: Experience Fragments, Core Components, Adobe Client Data Layer
 topics: integrations, personalization, administration, development
 audience: all
 doc-type: feature video
 activity: use
-version: cloud-service
+version: Cloud Service
 kt: 6043
 thumbnail: 41241.jpg
-topic: Integrations (Integrazioni)
+topic: Integrations
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 2bc6cd90-7b23-4dde-bb07-bca0de9fa509
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '215'
 ht-degree: 3%
 
 ---
-
 
 # AEM e Adobe Target
 
@@ -47,5 +47,3 @@ In questo video discutiamo tre approcci per l’utilizzo di AEM e Target e ti ai
    1. [Aggiungere Adobe Target al sito Web AEM](./add-target-launch-extension.md)
    1. [Attivare una chiamata Adobe Target da Launch](./load-and-fire-target.md)
    1. [Personalizzare l’esperienza di pagina web completa](./personalization-web-page.md)
-
-

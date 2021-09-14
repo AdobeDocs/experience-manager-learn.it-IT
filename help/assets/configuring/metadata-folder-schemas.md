@@ -2,20 +2,20 @@
 title: Schemi di cartelle di metadati
 description: Gli schemi di cartelle di metadati consentono agli utenti di gestire e rivedere direttamente i metadati associati alle cartelle di risorse, anziché direttamente sulle risorse.
 sub-product: assets
-feature: Metadati
-version: cloud-service
+feature: Metadata
+version: Cloud Service
 kt: 4983
 thumbnail: 34071.jpg
-topic: Gestione dei contenuti
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 81e11e51-205d-4233-a10d-551d5041075c
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '50'
-ht-degree: 6%
+source-wordcount: '46'
+ht-degree: 0%
 
 ---
-
 
 # Schemi di cartelle di metadati
 

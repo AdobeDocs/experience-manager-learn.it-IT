@@ -1,24 +1,24 @@
 ---
 title: Autenticazione per AEM come Cloud Service da un’applicazione esterna
 description: Scopri in che modo un’applicazione esterna può autenticare e interagire in modo programmatico con AEM come Cloud Service tramite HTTP utilizzando i token di accesso allo sviluppo locale e le credenziali del servizio.
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 topics: Development, Security
-feature: API
+feature: APIs
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330460.jpg
-topic: Senza testa, Integrazioni
+topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
+exl-id: 63c23f22-533d-486c-846b-fae22a4d68db
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
-
 
 # Autenticazione basata su token per AEM come Cloud Service
 
@@ -34,7 +34,7 @@ Assicurati che quanto segue sia già presente prima di seguire questa esercitazi
 
 1. Accesso a am AEM come ambiente di Cloud Service (preferibilmente un ambiente di sviluppo o un programma sandbox)
 1. Iscrizione al AEM come ambiente di Cloud Service Author services AEM profilo di prodotto Administrator
-1. Iscrizione o accesso all&#39;amministratore dell&#39;organizzazione IMS di Adobe (dovrà eseguire un&#39;inizializzazione una tantum delle [Credenziali del servizio](./service-credentials.md))
+1. Iscrizione o accesso all’amministratore dell’organizzazione Adobe IMS (dovrà eseguire un’inizializzazione una tantum delle [Credenziali del servizio](./service-credentials.md))
 1. Ultimo [sito WKND](https://github.com/adobe/aem-guides-wknd) implementato nell&#39;ambiente di Cloud Service
 
 ## Panoramica dell’applicazione esterna

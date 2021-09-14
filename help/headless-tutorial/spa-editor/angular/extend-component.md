@@ -2,10 +2,10 @@
 title: Estendere un componente | Guida introduttiva all’editor di SPA AEM e all’Angular
 description: Scopri come estendere un componente core esistente da utilizzare con l’editor di SPA AEM. Scopri come aggiungere proprietà e contenuto a un componente esistente è una tecnica potente per espandere le funzionalità di un’implementazione di AEM Editor SPA. Scopri come utilizzare il pattern di delega per l’estensione dei modelli Sling e delle funzioni di Sling Resource Merger.
 sub-product: sites
-feature: Editor SPA, componenti core
+feature: SPA Editor, Core Components
 doc-type: tutorial
 topics: development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 kt: 5871
@@ -13,13 +13,13 @@ thumbnail: 5871-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 0265d3df-3de8-4a25-9611-ddf73d725f6e
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1967'
+source-wordcount: '1961'
 ht-degree: 1%
 
 ---
-
 
 # Estendere un componente core {#extend-component}
 
@@ -141,7 +141,7 @@ Il codice iniziale del capitolo fornisce un componente scheda iniziale. Inspect 
    MapTo('wknd-spa-angular/components/card')(CardComponent, CardEditConfig);
    ```
 
-   Esamina i tre parametri `@Input` nella classe per `src`, `alt` e `title`. Questi sono valori JSON attesi dal componente AEM che verrà mappato al componente Angular.
+   Esamina i tre parametri `@Input` nella classe per `src`, `alt` e `title`. Si tratta dei valori JSON previsti dal componente AEM che verrà mappato al componente Angular.
 
 8. Aprire il file `card.component.html`:
 

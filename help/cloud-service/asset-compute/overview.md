@@ -1,24 +1,24 @@
 ---
 title: Estensibilità dei microservizi di Asset compute per AEM come Cloud Service
 description: Questa esercitazione illustra la creazione di un semplice processo di lavoro di Asset compute che crea un rendering della risorsa ritagliando la risorsa originale in un cerchio e applica contrasto e luminosità configurabili. Sebbene il processo di lavoro sia di base, questa esercitazione lo utilizza per esplorare la creazione, lo sviluppo e la distribuzione di un processo di lavoro Asset compute personalizzato da utilizzare con AEM come Cloud Service.
-feature: Microservizi di Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
-topic: Integrazioni, Sviluppo
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 575b12f9-b57f-41f7-bd39-56d242de4747
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1026'
 ht-degree: 0%
 
 ---
-
 
 # Estensibilità dei microservizi di Asset compute
 
