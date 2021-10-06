@@ -14,9 +14,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 0265d3df-3de8-4a25-9611-ddf73d725f6e
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 5452ab85523fc10d0aaa55e95d42c37ec33fd2ed
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1957'
 ht-degree: 1%
 
 ---
@@ -141,7 +141,7 @@ Il codice iniziale del capitolo fornisce un componente scheda iniziale. Inspect 
    MapTo('wknd-spa-angular/components/card')(CardComponent, CardEditConfig);
    ```
 
-   Esamina i tre parametri `@Input` nella classe per `src`, `alt` e `title`. Si tratta dei valori JSON previsti dal componente AEM che verrà mappato al componente Angular.
+   Esamina i tre parametri `@Input` nella classe per `src`, `alt` e `title`. Questi sono valori JSON attesi dal componente AEM che verrà mappato al componente Angular.
 
 8. Aprire il file `card.component.html`:
 
@@ -296,7 +296,7 @@ Torna all’IDE che preferisci e apri il modulo `core` .
    }
    ```
 
-   L’ `@PostConstruct initModel()` viene sempre chiamato quando si inizializza il modello Sling, pertanto è una buona opportunità per inizializzare gli oggetti che possono essere utilizzati da altri metodi nel modello. Il `pageManager` è uno dei numerosi [oggetti globali Java supportati](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/global-objects.html#java-backed-objects) resi disponibili ai modelli Sling tramite l&#39;annotazione `@ScriptVariable` . Il metodo [getPage](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html#getPage-java.lang.String-) accetta un percorso e restituisce un oggetto AEM [Page](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html) o null se il percorso non punta a una pagina valida.
+   L’ `@PostConstruct initModel()` viene sempre chiamato quando si inizializza il modello Sling, pertanto è una buona opportunità per inizializzare gli oggetti che possono essere utilizzati da altri metodi nel modello. Il `pageManager` è uno dei numerosi [oggetti globali Java supportati](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/global-objects.html#java-backed-objects) resi disponibili ai modelli Sling tramite l&#39;annotazione `@ScriptVariable` . Il metodo [getPage()](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html#getPage-java.lang.String-) accetta un percorso e restituisce un oggetto AEM [Page](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html) o null se il percorso non punta a una pagina valida.
 
    Viene inizializzata la variabile `cardPage`, che verrà utilizzata dagli altri nuovi metodi per restituire i dati sulla pagina collegata sottostante.
 

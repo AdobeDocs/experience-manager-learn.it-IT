@@ -4,9 +4,9 @@ user-guide-description: Una raccolta di tutorial su Adobe Experience Manager as 
 breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 598d00578e5179f76b6f309c5c14dc7b1634f051
+source-git-commit: 5452ab85523fc10d0aaa55e95d42c37ec33fd2ed
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '564'
 ht-degree: 23%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 23%
 
 + [Panoramica](./overview.md)
 + Introduzione ad AEM as a Cloud Service{#introduction}
-   + [Che cos&#39;è AEM come Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
+   + [Che cosa è AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Evoluzione](./introduction/evolution.md)
    + [Architettura](./introduction/architecture.md)
    + [Cloud Manager](./introduction/cloud-manager.md)
@@ -50,7 +50,7 @@ ht-degree: 23%
    + Nozioni di base sullo sviluppo{#basics}
       + [SDK AEM](./developing/basics/aem-sdk.md)
       + [Ambiente di sviluppo locale](./developing/basics/local-development-environment.md)
-      + [AEM Project Archetype](./developing/basics/aem-project-archetype.md)
+      + [Archetipo progetto AEM](./developing/basics/aem-project-archetype.md)
       + [Struttura dei progetti AEM](./developing/basics/project-structure.md)
       + [Contenuto variabile e contenuto immutabile](./developing/basics/mutable-immutable.md)
       + [Pacchetto struttura archivio](./developing/basics/repository-structure-package.md)
@@ -64,6 +64,8 @@ ht-degree: 23%
       + [Ciclo di vita dei componenti OSGi](./developing/osgi-services/lifecycle.md)
       + [Nozioni di base sulle configurazioni OSGi](./developing/osgi-services/configurations.md)
       + [Configurazioni OSGi con OCD](./developing/osgi-services/configurations-ocd.md)
+   + Avanzate {#advanced}
+      + [Utenti del servizio](./developing/advanced/service-users.md)
    + [JavaDocs API AEM SDK](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + Debug AEM{#debugging}
    + Debug dell&#39;SDK AEM{#debugging-aem-sdk}
@@ -73,7 +75,7 @@ ht-degree: 23%
       + [Console web OSGi](./debugging/aem-sdk-local-quickstart/osgi-web-consoles.md)
       + [Strumenti Dispatcher](./debugging/aem-sdk-local-quickstart/dispatcher-tools.md)
       + [Altri strumenti](./debugging/aem-sdk-local-quickstart/other-tools.md)
-   + Debug AEM come Cloud Service{#debugging-aem-as-a-cloud-service}
+   + Debug AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
       + [Panoramica](./debugging/cloud-service/overview.md)
       + [Registri](./debugging/cloud-service/logs.md)
       + [Generazione e distribuzione](./debugging/cloud-service/build-and-deployment.md)
@@ -81,8 +83,8 @@ ht-degree: 23%
       + [CRXDE Lite](./debugging/cloud-service/crxde-lite.md)
 + Accesso a AEM{#accessing}
    + [Panoramica](./accessing/overview.md)
-   + [Adobe utenti IMS](./accessing/adobe-ims-users.md)
-   + [Adobe di gruppi di utenti IMS](./accessing/adobe-ims-user-groups.md)
+   + [Utenti Adobe IMS](./accessing/adobe-ims-users.md)
+   + [Gruppi di utenti di Adobe IMS](./accessing/adobe-ims-user-groups.md)
    + [Profili di prodotto Adobe IMS](./accessing/adobe-ims-product-profiles.md)
    + [AEM utenti, gruppi e autorizzazioni](./accessing/aem-users-groups-and-permissions.md)
    + [Configurazione dell’accesso a AEM procedura dettagliata](./accessing/walk-through.md)
