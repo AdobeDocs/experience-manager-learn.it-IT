@@ -14,9 +14,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 0265d3df-3de8-4a25-9611-ddf73d725f6e
-source-git-commit: 5452ab85523fc10d0aaa55e95d42c37ec33fd2ed
+source-git-commit: c003632d82b6a3ba2046e494ff8e7911f619945c
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1961'
 ht-degree: 1%
 
 ---
@@ -296,7 +296,7 @@ Torna all’IDE che preferisci e apri il modulo `core` .
    }
    ```
 
-   L’ `@PostConstruct initModel()` viene sempre chiamato quando si inizializza il modello Sling, pertanto è una buona opportunità per inizializzare gli oggetti che possono essere utilizzati da altri metodi nel modello. Il `pageManager` è uno dei numerosi [oggetti globali Java supportati](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/global-objects.html#java-backed-objects) resi disponibili ai modelli Sling tramite l&#39;annotazione `@ScriptVariable` . Il metodo [getPage()](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html#getPage-java.lang.String-) accetta un percorso e restituisce un oggetto AEM [Page](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html) o null se il percorso non punta a una pagina valida.
+   L’ `@PostConstruct initModel()` viene sempre chiamato quando si inizializza il modello Sling, pertanto è una buona opportunità per inizializzare gli oggetti che possono essere utilizzati da altri metodi nel modello. Il `pageManager` è uno dei numerosi [oggetti globali Java supportati](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/global-objects.html#java-backed-objects) resi disponibili ai modelli Sling tramite l&#39;annotazione `@ScriptVariable` . Il metodo [getPage](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html#getPage-java.lang.String-) accetta un percorso e restituisce un oggetto AEM [Page](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html) o null se il percorso non punta a una pagina valida.
 
    Viene inizializzata la variabile `cardPage`, che verrà utilizzata dagli altri nuovi metodi per restituire i dati sulla pagina collegata sottostante.
 
