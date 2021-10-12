@@ -1,18 +1,18 @@
 ---
 title: AEM Forms con Marketo (parte 4)
 description: Esercitazione per integrare AEM Forms con Marketo utilizzando AEM Forms Form Data Model.
-feature: Forms adattivo, modello dati modulo
+feature: Adaptive Forms, Form Data Model
 version: 6.3,6.4,6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 6b44e6b2-15f7-45b2-8d21-d47f122c809d
+source-git-commit: 020852f16de0cdb1e17e19ad989dabf37b7f61f5
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 0%
+source-wordcount: '317'
+ht-degree: 1%
 
 ---
-
 
 # Creazione di moduli adattivi tramite il modello dati del modulo
 
@@ -31,3 +31,10 @@ L’utente immetterà l’ID lead e verrà richiamato all’uscita del servizio 
 La schermata seguente spiega le impostazioni dell’editor di regole
 
 ![editor di regole](assets/ruleeditor.jfif)
+
+## Debugging
+
+Se utilizzi i bundle forniti con questo articolo, puoi abilitare [registri di debug](http://localhost:4502/system/console/slinglog) per le seguenti classi:
+
++ `com.marketoandforms.core.impl.MarketoServiceImpl`
++ `com.marketoandforms.core.MarketoConfigurationService`
