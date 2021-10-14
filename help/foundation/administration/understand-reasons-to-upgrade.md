@@ -1,21 +1,21 @@
 ---
 title: Motivi dell’aggiornamento
-description: Analisi dettagliata delle funzioni chiave per i clienti che considerano l’aggiornamento all’ultima versione di Adobe Experience Manager.
+description: Analisi dettagliata delle funzioni chiave per i clienti che considerano l’aggiornamento all’ultima versione di Adobe Experience Manager 6.
 version: 6.5
 topic: Upgrade
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
+source-git-commit: 278433e7d9a2d524198efcebae336dca01a15259
 workflow-type: tm+mt
 source-wordcount: '3462'
 ht-degree: 3%
 
 ---
 
-
 # Perché effettuare l’aggiornamento
 
-Analisi dettagliata delle funzioni chiave per i clienti che considerano l’aggiornamento all’ultima versione di Adobe Experience Manager.
+Analisi dettagliata delle funzioni chiave per i clienti che considerano l’aggiornamento all’ultima versione di Adobe Experience Manager 6.
 
 ## Funzioni principali per l&#39;aggiornamento a AEM 6.5
 
@@ -60,9 +60,9 @@ AEM continua a sviluppare la sua integrazione con le tecnologie intelligenti, sf
 
 + **Adobe Asset** Linkadd Ricerca per similarità  **visiva**, per consentire di individuare e utilizzare facilmente immagini simili all’interno degli strumenti **** Adobe Creative Cloud.
 
-### Integrations (Integrazioni)
+### Integrazioni
 
-AEM aumenta la sua capacità di integrarsi con altri servizi di Adobe:
+AEM aumenta la sua capacità di integrarsi con altri servizi Adobe:
 
 + **I** frammenti esperienza approfondiscono l’integrazione con  **Adobe** Target grazie al supporto di  **Export as** JSONto Adobe Target (Esporta come  **JSON) e la possibilità di** eliminare  **offerte basate su frammenti esperienza da** Adobe Target.
 
@@ -328,7 +328,7 @@ Di seguito è riportata una matrice delle principali funzioni di sicurezza offer
     </tr>
     <tr>
         <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong></strong> <strong></strong></a>
-            <br> CORSsupportSupporto della condivisione risorse tra origini per una maggiore flessibilità delle applicazioni.</td>
+            <br> CORSsupportSupporto per condivisione risorse tra origini per una maggiore flessibilità delle applicazioni.</td>
         <td></td>
         <td></td>
         <td></td>
@@ -510,7 +510,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
             <td>↓</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html" target="_blank">Multi-Site Manager (MSM)</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/msm.html" target="_blank">Multi-Site Manager (MSM)</a>:</strong>
             consente di gestire più siti web che condividono contenuti comuni (ad esempio più lingue, più marchi).</td>
             <td>↓</td>
             <td>↓</td>
@@ -714,8 +714,8 @@ Di seguito è riportata una matrice delle funzionalità principali di Assets off
             <td>↓<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank"></a> Attività e  <a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects-with-workflows.html" target="_blank"></a> gestione dei flussi di lavoro:</strong>
-            flussi di lavoro e attività predefiniti per la revisione e l’approvazione delle risorse digitali tramite progetti AEM.</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank"></a> Task e  <a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects-with-workflows.html" target="_blank"></a> WorkflowManagement:</strong>
+            flussi di lavoro e attività pregenerati per la revisione e l’approvazione delle risorse digitali che sfruttano i progetti AEM.</td>
             <td> </td>
             <td>↓</td>
             <td>↓</td>
@@ -848,7 +848,7 @@ Di seguito è riportata una matrice delle funzionalità principali di Assets off
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Libreria di imaging di Adobe</a>: </strong>
-                <br> librerie PDF Photoshop e Acrobat utilizzate per la manipolazione di file di alta qualità.</td>
+                <br> librerie Photoshop e Acrobat PDF utilizzate per la manipolazione di file di alta qualità.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -907,10 +907,10 @@ Di seguito è riportata una matrice delle funzionalità principali di Assets off
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets.html" target="_blank">Imaging</a>:</strong>
             distribuisce dinamicamente immagini di diverse dimensioni e formati, tra cui Smart Crop.</td>
             <td> </td>
-            <td>↓</td>
-            <td>↓</td>
-            <td>↓</td>
-            <td>↓<sup>+</sup></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td>↓<sup>+</sup></td>
             <td>↓</td>
         </tr>
@@ -1292,7 +1292,7 @@ Di seguito è riportata una matrice delle funzioni principali del componente agg
         </tr>
         <tr>
             <td rowspan="5">Attivazione</td>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/catalog.html" target="_blank"></a> Gestione  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resource.html" target="_blank">risorse e cataloghi</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/catalog.html" target="_blank"></a> Gestione  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resource.html" target="_blank">risorse e cataloghi</a>: </strong>
             accedere alle risorse di abilitazione dal catalogo.</td>
             <td> </td>
             <td>↓<sup>+</sup></td>
@@ -1344,7 +1344,7 @@ Di seguito è riportata una matrice delle funzioni principali del componente agg
         <tr>
             <td rowspan="8">Commons</td>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/comments.html" target="_blank"></a> Commenti e allegati:</strong>
-             (Social Component Framework) In qualità di membro della community condividi opinioni e conoscenze sui contenuti sul sito Communities.</td>
+             (Social Component Framework) In qualità di membro della community condividi opinioni e conoscenze sui contenuti sul sito Community.</td>
             <td>↓<sup>+</sup></td>
             <td>↓</td>
             <td>↓<sup>+</sup></td>
