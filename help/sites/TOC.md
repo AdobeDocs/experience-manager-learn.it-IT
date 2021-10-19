@@ -1,17 +1,17 @@
 ---
-user-guide-title: Video e tutorial di AEM Sites
-user-guide-description: Raccolta di video e tutorial per Adobe Experience Manager Sites.
-breadcrumb-title: Tutorial di AEM Sites
+user-guide-title: Video e tutorial su AEM Sites
+user-guide-description: Raccolta di video e tutorial su Adobe Experience Manager Sites.
+breadcrumb-title: Tutorial su AEM Sites
 feature-set: Experience Manager, Experience Manager Sites
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: 5bdff2eafaa28aff722b12607b1278539072be62
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 23%
+source-wordcount: '441'
+ht-degree: 26%
 
 ---
 
 
-# Video e tutorial di AEM Sites {#sites}
+# Video e tutorial su AEM Sites {#sites}
 
 + [Panoramica](overview.md)
 + Authoring delle pagine {#page-authoring}
@@ -47,8 +47,8 @@ ht-degree: 23%
    + [Configurare la pubblicazione social con i frammenti esperienza](experience-fragments/experience-fragments-social-technical-video-setup.md)
    + [Frammenti di contenuto e frammenti esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 + Sviluppo {#developing}
-   + [AEM Project Archetype](developing/aem-project-archetype.md)
-   + [Guida introduttiva di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+   + [Archetipo progetto AEM](developing/aem-project-archetype.md)
+   + [Guida introduttiva di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)
    + [Guida introduttiva ad AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
    + [Guida introduttiva AEM Editor e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
    + [Guida introduttiva AEM editor e Angular di SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
@@ -57,13 +57,15 @@ ht-degree: 23%
    + [Best practice per il sistema di stili](developing/style-organization-style-system-understand-article.md)
    + [Sviluppo per differenza di pagina](developing/page-diff-technical-video-develop.md)
    + [Implementazione della ricerca semplice](developing/search-tutorial-develop.md)
-   + [Condivisione social media](developing/social-media-sharing-technical-video-use.md)
+   + [Condivisione sui social media](developing/social-media-sharing-technical-video-use.md)
    + [Personalizzazione delle icone dei componenti](developing/component-icons-technical-video-develop.md)
 + Personalizzazione {#personalization}
    + [Integrazione con Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html)
    + [Configurazione di frammenti esperienza e Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Utilizzo di frammenti esperienza con Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [Configurazione ContextHub](personalization/context-hub-technical-video-setup.md)
++ SEO {#seo}
+   + [Sitemaps](./seo/sitemaps.md)
 + Applicazioni a pagina singola {#spa-editor}
    + [Utilizzo dell’editor SPA](spa-editor/spa-editor-framework-feature-video-use.md)
    + [Tutorial di Hello World](spa-editor/spa-editor-helloworld-tutorial-use.md)
@@ -96,7 +98,7 @@ ht-degree: 23%
       + [Connettere AEM con Launch utilizzando Adobe I/O](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
       + [Creare un Cloud Service Launch](integrations/experience-platform-launch/create-launch-cloud-service.md)
       + [Debug di un’implementazione di Launch](integrations/experience-platform-launch/debug-launch-implementation.md)
-   + Livello dati client di Adobe {#adobe-client-data-layer}
+   + Adobe Client Data Layer {#adobe-client-data-layer}
       + [Utilizzo di Adobe Client Data Layer](integrations/adobe-client-data-layer/data-layer-overview.md)
       + [Personalizzare Adobe Client Data Layer](integrations/adobe-client-data-layer/data-layer-customize.md)
    + Analytics {#analytics}
