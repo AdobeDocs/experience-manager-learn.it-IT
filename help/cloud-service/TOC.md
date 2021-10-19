@@ -4,10 +4,10 @@ user-guide-description: Una raccolta di tutorial su Adobe Experience Manager as 
 breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 5452ab85523fc10d0aaa55e95d42c37ec33fd2ed
+source-git-commit: bec04e6db13b80a8b5c4caa91acb8f2e684e70e9
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 23%
+source-wordcount: '567'
+ht-degree: 24%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 23%
    + [Pipeline di produzione CI/CD](./cloud-manager/cicd-production-pipeline.md)
    + [Pipeline di non produzione CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Attività](./cloud-manager/activity.md)
-   + Dev Ops{#devops}
+   + Ops sviluppatore{#devops}
       + [Distribuzione del codice](./cloud-manager/devops/deploy-code.md)
       + [Unisci progetti](./cloud-manager/devops/merge-projects.md)
       + [Configurare le pipeline](./cloud-manager/devops/configure-pipelines.md)
@@ -59,7 +59,7 @@ ht-degree: 23%
       + [Migrazione alla configurazione del Dispatcher](./developing/basics/dispatcher-configuration.md)
    + Progetti AEM{#aem-projects}
       + [Progetto AEM Maven](./developing/projects/maven-project-structure.md)
-   + OSGi Services{#osgi-services}
+   + Servizi OSGi{#osgi-services}
       + [Nozioni di base sui servizi OSGi](./developing/osgi-services/basics.md)
       + [Ciclo di vita dei componenti OSGi](./developing/osgi-services/lifecycle.md)
       + [Nozioni di base sulle configurazioni OSGi](./developing/osgi-services/configurations.md)
@@ -67,8 +67,8 @@ ht-degree: 23%
    + Avanzate {#advanced}
       + [Utenti del servizio](./developing/advanced/service-users.md)
    + [JavaDocs API AEM SDK](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
-+ Debug AEM{#debugging}
-   + Debug dell&#39;SDK AEM{#debugging-aem-sdk}
++ AEM di debug{#debugging}
+   + Eseguire il debug dell’SDK AEM{#debugging-aem-sdk}
       + [Panoramica](./debugging/aem-sdk-local-quickstart/overview.md)
       + [Registri](./debugging/aem-sdk-local-quickstart/logs.md)
       + [Debug remoto](./debugging/aem-sdk-local-quickstart/remote-debugging.md)
@@ -81,7 +81,7 @@ ht-degree: 23%
       + [Generazione e distribuzione](./debugging/cloud-service/build-and-deployment.md)
       + [Console per sviluppatori](./debugging/cloud-service/developer-console.md)
       + [CRXDE Lite](./debugging/cloud-service/crxde-lite.md)
-+ Accesso a AEM{#accessing}
++ Accesso AEM{#accessing}
    + [Panoramica](./accessing/overview.md)
    + [Utenti Adobe IMS](./accessing/adobe-ims-users.md)
    + [Gruppi di utenti di Adobe IMS](./accessing/adobe-ims-user-groups.md)
@@ -123,7 +123,7 @@ ht-degree: 23%
       + [Navigazione in Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
       + [Utilizzo di Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
 + Forms{#forms}
-   + Crea modulo adattivo{#create-first-af}
+   + Creare un modulo adattivo{#create-first-af}
       + [Introduzione](./forms/create-first-af/introduction.md)
       + [Crea tema](./forms/create-first-af/create-theme.md)
       + [Crea modello](./forms/create-first-af/create-template.md)
@@ -170,7 +170,7 @@ ht-degree: 23%
          + [Evento clic del test](./forms/integrate-with-salesforce/create-lead-click-event.md)
 + Estensibilità Asset compute{#asset-compute}
    + [Panoramica](./asset-compute/overview.md)
-   + Imposta{#set-up}
+   + Configurazione{#set-up}
       + [Provisioning di account e servizi](./asset-compute/set-up/accounts-and-services.md)
       + [Ambiente di sviluppo locale](./asset-compute/set-up/development-environment.md)
       + [Progetto Adobe Firefly](./asset-compute/set-up/firefly.md)
@@ -189,8 +189,9 @@ ht-degree: 23%
    + Avanzate {#advanced}
       + [Operatori di metadati](./asset-compute/advanced/metadata.md)
    + [Risoluzione dei problemi](./asset-compute/troubleshooting.md)
++ [Serie di esperti AEM](./aem-experts-series.md)
 + Tutorials a più passaggi{#multi-step-tutorials}
-   + [Sviluppo AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+   + [Sviluppo AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)
    + [Editor SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
    + [Editor SPA (Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
