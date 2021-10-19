@@ -6,10 +6,11 @@ feature: Forms Service
 topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 72a9edb3edc73cf14f13bb53355a37e707ed4c79
+kt: 9226
+source-git-commit: 2ed78bb8b122acbe69e98d63caee1115615d568f
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 0%
+source-wordcount: '357'
+ht-degree: 1%
 
 ---
 
@@ -20,18 +21,21 @@ Un caso d’uso comune è quello di poter scaricare un DoR interattivo con i dat
 
 Per eseguire questo caso d’uso, è necessario effettuare le seguenti operazioni
 
-## Genera dati di esempio per l&#39;xdp
+## Genera dati di esempio per XDP
 
-Apri XDP in AEM Forms designer.
-Fai clic su File | Proprietà modulo | Anteprima Fare clic su Genera anteprima dati Fare clic su Genera Fornire un nome file significativo, ad esempio &quot;form-data.xml&quot;
+* Apri XDP in AEM Forms designer.
+* Fai clic su File | Proprietà modulo | Anteprima
+* Fare clic su Genera anteprima dati
+* Fare clic su Genera
+* Fornire un nome file significativo come &quot;form-data.xml&quot;
 
 ## Genera XSD dai dati xml
 
-È possibile utilizzare uno qualsiasi degli strumenti online gratuiti per [generare xsd](https://www.freeformatter.com/xsd-generator.html) dai dati xml generati nel passaggio precedente.
+È possibile utilizzare uno qualsiasi degli strumenti online gratuiti per [genera XSD](https://www.freeformatter.com/xsd-generator.html) dai dati xml generati nel passaggio precedente.
 
-## Crea adattivo
+## Creare un modulo adattivo
 
-Crea un modulo adattivo basato sull&#39;xsd del passaggio precedente. Associa il modulo per utilizzare la libreria client &quot;irs&quot;. Questa libreria client dispone del codice necessario per effettuare una chiamata POST al servlet che restituisce PDF all&#39;applicazione chiamante. Il codice seguente viene attivato quando il _Scarica PDF_ è selezionato
+Crea un modulo adattivo basato su XSD dal passaggio precedente. Associa il modulo per utilizzare la libreria client &quot;irs&quot;. Questa libreria client dispone del codice necessario per effettuare una chiamata POST al servlet che restituisce PDF all&#39;applicazione chiamante. Il codice seguente viene attivato quando il _Scarica PDF_ è selezionato
 
 ```javascript
 $(document).ready(function() {
@@ -72,7 +76,7 @@ $(document).ready(function() {
 
 ## Creare un servlet personalizzato
 
-Crea un servlet personalizzato che unirà i dati con il modello xdp e restituirà il pdf. Di seguito è elencato il codice per eseguire questa operazione. Il servlet personalizzato fa parte del [Bundle AEMFormsDocumentServices.core-1.0-SNAPSHOT](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)).
+Crea un servlet personalizzato che unirà i dati con il modello XDP e restituirà il pdf. Di seguito è elencato il codice per eseguire questa operazione. Il servlet personalizzato fa parte del [Bundle AEMFormsDocumentServices.core-1.0-SNAPSHOT](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)).
 
 ```java
 package com.aemformssamples.documentservices.core.servlets;
@@ -191,13 +195,16 @@ public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
 Nel codice di esempio, il nome del modello (f8918-r14e_redo-barcode_3 2.xdp) viene codificato in modo fisso. Puoi passare facilmente il nome del modello al servlet per rendere questo codice generico in modo che funzioni con tutti i modelli.
 
 
+## Distribuire l&#39;esempio sul server
+
 Per eseguire il test sul server locale, effettua le seguenti operazioni:
+
 1. [Scarica e installa il bundle DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. Aggiungi la seguente voce nel servizio User Mapper di Apache Sling Service DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 1. [Scaricare e installare il bundle personalizzato DocumentServices](/hep/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Servlet per unire i dati con il modello XDP e riprodurre in streaming il pdf
 1. [Importare la libreria client](assets/irs.zip)
 1. [Importare il modulo adattivo](assets/f8918complete.zip)
-! [Importare il modello e lo schema XDP](assets/xdp-template-and-xsd.zip)
+1. [Importare il modello e lo schema XDP](assets/xdp-template-and-xsd.zip)
 1. [Anteprima modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. Compila alcuni campi del modulo
 1. Fai clic su Scarica PDF per ottenere il PDF
