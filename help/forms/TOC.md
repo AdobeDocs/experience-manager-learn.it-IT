@@ -1,19 +1,19 @@
 ---
 feature-set: Experience Manager, Experience Manager Forms
 role: Developer
-user-guide-title: Video e tutorial di AEM Forms
+user-guide-title: Video e tutorial su AEM Forms
 user-guide-description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms.
-breadcrumb-title: Tutorial di AEM Forms
+breadcrumb-title: Tutorial su AEM Forms
 index: y
-source-git-commit: e01d93591d1c00b2abec3430fdfa695b32165e54
+source-git-commit: 72a9edb3edc73cf14f13bb53355a37e707ed4c79
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1607'
 ht-degree: 3%
 
 ---
 
 
-# Video e tutorial di AEM Forms {#forms}
+# Video e tutorial su AEM Forms {#forms}
 
 + [Panoramica](overview.md)
 + [Best practice da seguire](adaptive-forms/best-practices-adaptive-forms.md)
@@ -86,7 +86,7 @@ ht-degree: 3%
    + [Creazione di modelli di flussi di lavoro riutilizzabili](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
    + [Flusso di lavoro del passaggio del processo personalizzato AEM](adaptive-forms/custom-process-step-aem-workflow.md)
    + [Modifica configurazione origine dati](adaptive-forms/modify-data-source-configuration-settings-article.md)
-   + [Precompilazione di Forms HTML5](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
+   + [Pre-popolamento di HTML5 Forms](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Modello dati modulo con Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Aggiunta dinamica di elementi al componente Scelta](adaptive-forms/choice-group-items-adding-dynamically-article.md)
 + Precompilazione del modulo adattivo utilizzando il modello dati del modulo{#prefill-fdm-db}
@@ -95,7 +95,7 @@ ht-degree: 3%
    + [Configurazione del modello dati modulo](prefill-fdm-db/configuring-form-data-model.md)
    + [Ottieni parametro di richiesta](prefill-fdm-db/get-request-parameter.md)
    + [Creare un modulo adattivo](prefill-fdm-db/create-adaptive-form.md)
-+ Personalizzazione della inbox{#inbox-customization}
++ Personalizzazione della casella in entrata{#inbox-customization}
    + [Introduzione](inbox-customization/introduction.md)
    + [Aggiungi colonna personalizzata](inbox-customization/add-married-column.md)
    + [Utilizzo di un modello Sightly](inbox-customization/use-sightly-template.md)
@@ -120,7 +120,7 @@ ht-degree: 3%
    + [Esporta dati inviati](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + Moduli HTML5{#html5-forms}
    + [Crea modulo HTML5](html5-forms/create-html5-form.md)
-   + [Gestire l’invio di moduli HTML5](html5-forms/handle-html5-form-submission.md)
+   + [Gestisci invio modulo HTML5](html5-forms/handle-html5-form-submission.md)
 + AEM Forms e Adobe Sign{#forms-and-sign}
    + [Introduzione](aem-forms-and-adobe-sign/introduction.md)
    + [Configurare SSL](aem-forms-and-adobe-sign/set-up-ssl.md)
@@ -131,10 +131,10 @@ ht-degree: 3%
    + [Configurare un modulo adattivo per il singolo firmatario](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
    + [Configurare un modulo adattivo per due firmatari](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
    + [Configurare il servizio Automated forms conversion](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
-   + [Conversione di moduli PDF in moduli adattivi](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
+   + [Convertire il modulo PDF in modulo adattivo](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Configurare il modulo adattivo convertito](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Utilizzo dei modelli XDP con Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
-+ Firma multipla Forms{#sign-multiple-documents}
++ Sign Multiple Forms{#sign-multiple-documents}
    + [Introduzione](sign-multiple-documents/introduction.md)
    + [Configura origine dati](sign-multiple-documents/configure-data-source.md)
    + [Crea servizio OSGi](sign-multiple-documents/create-osgi-service.md)
@@ -154,7 +154,7 @@ ht-degree: 3%
    + [Variabile ArrayList](variables-aem-workflow/part4.md)
    + [Variabile del modello dati modulo](variables-aem-workflow/form-data-model.md)
    + [Editor di regole nel flusso di lavoro AEM](variables-aem-workflow/part5.md)
-+ Memorizzazione e recupero dei dati del modulo in MySQL DB{#storing-and-retrieving-form-data}
++ Memorizzazione e recupero dei dati del modulo nel database MySQL{#storing-and-retrieving-form-data}
    + [Introduzione](storing-retrieving-form-data/introduction.md)
    + [Configura origine dati](storing-retrieving-form-data/part1.md)
    + [Servizio per la memorizzazione dei dati](storing-retrieving-form-data/part3.md)
@@ -166,7 +166,7 @@ ht-degree: 3%
    + [Introduzione](offline-mobile-form-submission/introduction.md)
    + [Profilo personalizzato](offline-mobile-form-submission/part-one.md)
    + [Gestisci invio PDF](offline-mobile-form-submission/part-two.md)
-   + [Flusso di lavoro per la revisione del PDF](offline-mobile-form-submission/part-three.md)
+   + [Flusso di lavoro per la revisione di PDF](offline-mobile-form-submission/part-three.md)
    + [Distribuzione nel sistema](offline-mobile-form-submission/part-four.md)
 + Query dei dati inviati{#querying-submitted-data}
    + [Introduzione](querying-submitted-data/introduction.md)
@@ -174,10 +174,10 @@ ht-degree: 3%
    + [Archiviare i dati inviati](querying-submitted-data/part2.md)
    + [Archiviare lo schema JSON](querying-submitted-data/part3.md)
    + [Eseguire la query dei dati inviati](querying-submitted-data/part4.md)
-+ Elenco dei tipi di risorse personalizzate in Forms Portal{#listing-custom-asset-types}
++ Inserimento di tipi di risorse personalizzate nel portale Forms{#listing-custom-asset-types}
    + [Parte1 - Registrazione di tipi di risorse personalizzate](listing-custom-asset-types/part1.md)
    + [Parte2 - Creazione di un modello personalizzato](listing-custom-asset-types/part2.md)
-+ AEM Forms con Marketo{#aem-forms-with-marketo}
++ AEM Forms Con Marketo{#aem-forms-with-marketo}
    + [Parte 1 - Introduzione](aem-forms-with-marketo/part1.md)
    + [Parte2 - Autenticazione personalizzata](aem-forms-with-marketo/part2.md)
    + [Parte 3 - Origine dati](aem-forms-with-marketo/part3.md)
@@ -198,11 +198,12 @@ ht-degree: 3%
    + [Utilizzo del servizio PDFG in AEM Forms](document-services/using-pdfg-in-aem-forms.md)
    + [Utilizzo di Output e del servizio Forms in AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Generazione di più pdf da un file di dati](document-services/generate-multi-record-pdf.md)
-   + [Genera PDF su invio modulo mobile](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [Genera PDF sull’invio di moduli per dispositivi mobili](document-services/generate-pdf-from-mobile-form-submission-article.md)
    + [Genera PDF interattivo da modulo mobile](document-services/render-interactive-form-using-api.md)
+   + [Genera il DoR interattivo dal modulo adattivo](document-services/generate-interactive-dor.md)
    + [Configurare le credenziali delle estensioni di Reader](document-services/configuring-reader-extension-osgi.md)
-   + [Applicare i diritti di utilizzo a PDF su rendering XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)
-   + [Applicare i diritti di utilizzo al PDF caricato](document-services/apply-reader-extension-rights-to-pdf.md)
+   + [Applicare i diritti di utilizzo ad PDF nella rappresentazione XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)
+   + [Applicare i diritti di utilizzo a Uploaded PDF](document-services/apply-reader-extension-rights-to-pdf.md)
    + [Certifica documenti](document-services/certifying-documents-aem-forms-tutorial.md)
    + [Assembla allegati modulo](document-services/assemble-form-attachments.md)
    + [Servizi di utilità](document-services/useful-utility-services.md)
@@ -229,7 +230,7 @@ ht-degree: 3%
    + [Utilizzo del componente Tabella nel documento del canale di stampa AEM Forms](interactive-communications/table-in-print-channel-documents-video-use.md)
    + [Generazione del documento di comunicazione interattiva per il canale di stampa tramite Cartelle di controllo](interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
 
-+ Comunicazioni interattive per il canale web {#ic-web-channel-tutorial}
++ Comunicazioni Interattive Per Il Canale Web {#ic-web-channel-tutorial}
    + [Introduzione](ic-web-channel-tutorial/introduction.md)
    + [Imposta Tomcat](ic-web-channel-tutorial/partone.md)
    + [Crea origine dati](ic-web-channel-tutorial/parttwo.md)
@@ -265,7 +266,7 @@ ht-degree: 3%
    + [PDFG: Passaggi per controllare e installare le librerie a 32 bit e le relative dipendenze](troubleshooting/steps-to-check-and-install-32-bit-libraries-and-their-dependencies.md)
    + [PDFG: Passaggi per controllare l&#39;autorizzazione della cartella su windows server 2016](troubleshooting/steps-to-check-folder-permission-on-windows-server-2016.md)
    + [PDFG: Passaggi per attivare la striscia su unix](troubleshooting/steps-to-enable-strace-on-unix-setup.md)
-   + [PDFG: Passaggi per installare i componenti ridistribuibili Microsoft Visual C++ a 32 bit richiesti](troubleshooting/steps-to-install-required-32bit-microsoft-vc-redistributables.md)
+   + [PDFG: Passaggi per installare i componenti ridistribuibili di Microsoft Visual C++ a 32 bit](troubleshooting/steps-to-install-required-32bit-microsoft-vc-redistributables.md)
    + [PDFG: Passaggi per eseguire e interpretare l&#39;output dello strumento di preparazione al sistema](troubleshooting/steps-to-run-and-interpret-output-of-system-readiness-tool.md)
    + [PDFG: Passaggi per la risoluzione dei problemi specifici di acrobat](troubleshooting/steps-to-troubleshoot-acrobat-specific-issues.md)
    + [PDFG: Passaggi per la risoluzione dei problemi HtmltoPDF in Windows](troubleshooting/steps-to-troubleshoot-htmltopdf-issues-on-windows.md)
@@ -284,8 +285,8 @@ ht-degree: 3%
    + [Workbench: Come modificare i parametri di memoria di workbench](troubleshooting/how-to-tweak-workbench-memory-parameters.md)
    + [Workbench: Come modificare i parametri delle prestazioni di workbench](troubleshooting/how-to-tweak-workbench-performance-parameters.md)
    + [Designer: Dipendenza di Designer da C++ ridistribuibile](troubleshooting/dependency-of-vc-on-designer.md)
-   + [Designer: Come abilitare l&#39;anteprima HTML](troubleshooting/how-to-enable-html-preview.md)
-   + [Designer: Come abilitare Anteprima PDF](troubleshooting/how-to-enable-pdf-preview.md)
+   + [Designer: Come abilitare l’anteprima di HTML](troubleshooting/how-to-enable-html-preview.md)
+   + [Designer: Come abilitare l’anteprima di PDF](troubleshooting/how-to-enable-pdf-preview.md)
    + [Designer: Come installare le patch di Designer](troubleshooting/how-to-install-designer-patches.md)
    + [Fondazione JEE: Come modificare il valore dell&#39;entropia](troubleshooting/how-to-change-the-value-of-entropy.md)
    + [Fondazione JEE: Come modificare il timeout della transazione di qualsiasi servizio in AEM Forms JEE](troubleshooting/how-to-change-transaction-timeout-of-any-service-in-aem-forms-jee.md)
