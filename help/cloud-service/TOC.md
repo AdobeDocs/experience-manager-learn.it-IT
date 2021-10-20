@@ -4,10 +4,10 @@ user-guide-description: Una raccolta di tutorial su Adobe Experience Manager as 
 breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: bec04e6db13b80a8b5c4caa91acb8f2e684e70e9
+source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 24%
+source-wordcount: '595'
+ht-degree: 23%
 
 ---
 
@@ -123,6 +123,15 @@ ht-degree: 24%
       + [Navigazione in Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
       + [Utilizzo di Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
 + Forms{#forms}
+
+   + Sviluppo per Forms as a Cloud Service{#developing-for-cloud-service}
+      + [Guida introduttiva](./forms/developing-for-cloud-service/getting-started.md)
+      + [Installa IntelliJ](./forms/developing-for-cloud-service/intellij-set-up.md)
+      + [Imposta Git](./forms/developing-for-cloud-service/setup-git.md)
+      + [Sincronizza IntelliJ con AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
+      + [Creare un modulo](./forms/developing-for-cloud-service/deploy-your-first-form.md)
+      + [Invia a Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
+      + [Cloud Services di inclusione e FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
    + Creare un modulo adattivo{#create-first-af}
       + [Introduzione](./forms/create-first-af/introduction.md)
       + [Crea tema](./forms/create-first-af/create-theme.md)
@@ -137,37 +146,35 @@ ht-degree: 24%
       + [Barra degli strumenti Aggiungi e Configura](./forms/create-first-af/add-configure-toolbar.md)
    + API di Document Cloud e AEM Forms CS{#doc-cloud-sdk}
       + [Introduzione](./forms/doc-cloud-sdk/introduction.md)
-      + [Crea progetto di Adobe I/O](./forms/doc-cloud-sdk/create-document-cloud-credentials.md)
-      + [Creare la configurazione OSGi](./forms/doc-cloud-sdk/create-doc-cloud-configuration.md)
+      + [Crea progetto I/O di Adobe](./forms/doc-cloud-sdk/create-document-cloud-credentials.md)
+      + [Crea configurazione OSGI](./forms/doc-cloud-sdk/create-doc-cloud-configuration.md)
       + [Definisci interfaccia](./forms/doc-cloud-sdk/create-interface.md)
-      + [Implementare l’interfaccia](./forms/doc-cloud-sdk/implement-interface.md)
+      + [Implementa interfaccia](./forms/doc-cloud-sdk/implement-interface.md)
       + [Crea parte JSON](./forms/doc-cloud-sdk/get-content-analyzer.md)
       + [Passaggio processo personalizzato](./forms/doc-cloud-sdk/custom-process-step.md)
    + Archiviazione del portale di Azure{#forms-cs-azure-portal}
       + [Introduzione](./forms/forms-cs-azure-portal/introduction.md)
       + [Crea modello dati modulo](./forms/forms-cs-azure-portal/create-fdm.md)
       + [Archiviare i dati del modulo in Azure Storage](./forms/forms-cs-azure-portal/create-af.md)
-      + [Modulo di pre-compilazione](./forms/forms-cs-azure-portal/prefill-af-storage.md)
+      + [Modulo di precompilazione](./forms/forms-cs-azure-portal/prefill-af-storage.md)
       + [Invio di query](./forms/forms-cs-azure-portal/query-submitted-data.md)
-
-
-      + Crea flusso di lavoro di revisione{#create-aem-workflow}
-         + [Creare un modello di flusso di lavoro](./forms/create-aem-workflow/create-workflow.md)
-         + [Flusso di lavoro di attivazione](./forms/create-aem-workflow/configure-af.md)
-      + Adobe Sign con AEM Forms{#forms-and-sign}
-         + [Introduzione](./forms/forms-and-sign/introduction.md)
-         + [Applicazione API Adobe Sign](./forms/forms-and-sign/create-sign-api-application.md)
-         + [Configurazione Adobe Sign Cloud](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
-         + [Creare un modulo adattivo](./forms/forms-and-sign/create-adaptive-form.md)
-         + [Configura per il riempimento e la firma](./forms/forms-and-sign/configure-form-fill-and-sign.md)
-      + Integrare con Salesforce{#integrate-with-salesforce}
-         + [Introduzione](./forms/integrate-with-salesforce/introduction.md)
-         + [Creare un’app connessa](./forms/integrate-with-salesforce/create-connected-app.md)
-         + [Crea file swagger](./forms/integrate-with-salesforce/describe-rest-api.md)
-         + [Creare un’origine dati](./forms/integrate-with-salesforce/create-data-source.md)
-         + [Crea modello dati modulo](./forms/integrate-with-salesforce/create-form-data-model.md)
-         + [Invio del modulo di prova](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
-         + [Evento clic del test](./forms/integrate-with-salesforce/create-lead-click-event.md)
+   + Crea flusso di lavoro di revisione{#create-aem-workflow}
+      + [Creare un modello di flusso di lavoro](./forms/create-aem-workflow/create-workflow.md)
+      + [Flusso di lavoro di attivazione](./forms/create-aem-workflow/configure-af.md)
+   + Adobe Sign con AEM Forms{#forms-and-sign}
+      + [Introduzione](./forms/forms-and-sign/introduction.md)
+      + [Applicazione API Adobe Sign](./forms/forms-and-sign/create-sign-api-application.md)
+      + [Configurazione Adobe Sign Cloud](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
+      + [Creare un modulo adattivo](./forms/forms-and-sign/create-adaptive-form.md)
+      + [Configura per il riempimento e la firma](./forms/forms-and-sign/configure-form-fill-and-sign.md)
+   + Integrare con Salesforce{#integrate-with-salesforce}
+      + [Introduzione](./forms/integrate-with-salesforce/introduction.md)
+      + [Creare un’app connessa](./forms/integrate-with-salesforce/create-connected-app.md)
+      + [Crea file swagger](./forms/integrate-with-salesforce/describe-rest-api.md)
+      + [Creare un’origine dati](./forms/integrate-with-salesforce/create-data-source.md)
+      + [Crea modello dati modulo](./forms/integrate-with-salesforce/create-form-data-model.md)
+      + [Invio del modulo di prova](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
+      + [Evento clic del test](./forms/integrate-with-salesforce/create-lead-click-event.md)
 + Estensibilità Asset compute{#asset-compute}
    + [Panoramica](./asset-compute/overview.md)
    + Configurazione{#set-up}

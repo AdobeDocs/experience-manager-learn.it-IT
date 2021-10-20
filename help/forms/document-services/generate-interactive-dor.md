@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 kt: 9226
-source-git-commit: 2ed78bb8b122acbe69e98d63caee1115615d568f
+source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '370'
 ht-degree: 1%
 
 ---
@@ -201,10 +201,12 @@ Per eseguire il test sul server locale, effettua le seguenti operazioni:
 
 1. [Scarica e installa il bundle DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. Aggiungi la seguente voce nel servizio User Mapper di Apache Sling Service DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
-1. [Scaricare e installare il bundle personalizzato DocumentServices](/hep/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Servlet per unire i dati con il modello XDP e riprodurre in streaming il pdf
+1. [Scaricare e installare il bundle personalizzato DocumentServices](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Servlet per unire i dati con il modello XDP e riprodurre in streaming il pdf
 1. [Importare la libreria client](assets/irs.zip)
 1. [Importare il modulo adattivo](assets/f8918complete.zip)
 1. [Importare il modello e lo schema XDP](assets/xdp-template-and-xsd.zip)
 1. [Anteprima modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. Compila alcuni campi del modulo
-1. Fai clic su Scarica PDF per ottenere il PDF
+1. Fai clic su Scarica PDF per ottenere il PDF. Potrebbe essere necessario attendere alcuni secondi prima del download di PDF
+
+
