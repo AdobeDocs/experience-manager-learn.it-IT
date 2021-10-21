@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 9006
-source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
+source-git-commit: d38da94bd4164163a16899b565c90b159194580a
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -42,10 +42,11 @@ Includi la voce appropriata nel filtro.xml del progetto ui.content
 <filter root="/content/dam/formsanddocuments-fdm/registrations" mode="replace"/>
 ```
 
-Ora, quando crei e distribuisci il progetto, il modello dati del modulo sarà basato sulla configurazione dei servizi cloud disponibile nella tua istanza cloud
 
->!![NOTE]
-Quando si invia questa configurazione di servizi cloud all&#39;istanza cloud, sarà necessario aggiornare manualmente la chiave di Azure utilizzando l&#39;interfaccia utente AEM. Eventuali valori crittografati dovranno essere aggiornati nelle istanze cloud utilizzando l&#39;interfaccia utente.
+>[!NOTE]
+
+>Ora, quando crei e distribuisci il progetto, il modello dati del modulo sarà basato sulla configurazione dei servizi cloud disponibile nella tua istanza cloud
+
 
 
 

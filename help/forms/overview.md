@@ -1,18 +1,18 @@
 ---
 title: Tutorials e video di AEM Forms
-seo-title: Tutorials e video di AEM Forms
+seo-title: AEM Forms Tutorials and Videos
 description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms
-seo-description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms
+seo-description: Collection of AEM Forms resources for beginners and experienced AEM Forms developers
 sub-product: forms
-topic: Sviluppo
+topic: Development
 role: Developer
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
+source-git-commit: d38da94bd4164163a16899b565c90b159194580a
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 16%
+source-wordcount: '500'
+ht-degree: 7%
 
 ---
-
 
 # Panoramica {#overview}
 
@@ -59,7 +59,7 @@ Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, g
     </a>
     </div>
     <p>
-    <em>Le comunicazioni interattive centralizzano e gestiscono la creazione, l'assemblaggio e la distribuzione di corrispondenze sicure, personalizzate e interattive quali corrispondenza aziendale, documenti, dichiarazioni, note sui benefit, e-mail di marketing, fatture e kit di benvenuto.  </em>
+    <em>Le comunicazioni interattive centralizzano e gestiscono la creazione, l'assemblaggio e la distribuzione di corrispondenze sicure, personalizzate e interattive quali corrispondenza aziendale, documenti, dichiarazioni, note sui benefit, e-mail di marketing, fatture e kit di benvenuto. </em>
     <p>
   </td>
   <td>
@@ -78,14 +78,114 @@ Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, g
 </tr>
 </table>
 
+>[!TIP]
+>
+>Questa raccolta di campioni per dimostrare le varie funzionalità di AEM Forms. .
+
+
+## Esempi di moduli adattivi
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+      <img alt= "Captch in AEM Forms" src="./assets/captcha1.png" />
+    </a>
+    <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/registerfornewsletter.html">
+    <strong>Google Captcha in forma adattiva</strong>
+    </a>
+    </div>
+    <p>
+    <em> Distinguere tra accesso umano e automatico ai moduli</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/summaryscreen/jcr:content?wcmmode=disabled">
+    <img alt="Anteprima dati modulo" src="./assets/preview.png" />
+    </a>
+    <div>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/summaryscreen/jcr:content?wcmmode=disabled">
+    <strong>Esamina dati del modulo</strong>
+    </a>
+    </div>
+    <p>
+    <em>Visualizzare l’anteprima dei dati del modulo prima di inviarlo.</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/forms/af/addinlineimage.html">
+      <img alt=" Immagine in linea" src="./assets/preview.png" />
+    </a>
+     <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/addinlineimage.html">
+        <strong>Visualizza immagine in linea</strong>
+      </a>
+    </div>
+    <p>
+    <em>Visualizza l’immagine aggiunta al modulo.</em>
+    <p>
+  </td>
+</tr>
+</table>
+
+## Esempi di moduli adattivi e di segni
+
+<table>
+<tr>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
+      <img alt="Contratto di locazione" src="./assets/rental-agreement.png" />
+    </a>
+    <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
+    <strong>Esempio di contratto di locazione</strong>
+    </a>
+    </div>
+    <p>
+    <em>Contratto di noleggio tra locatario e proprietario compilato e firmato utilizzando AEM Forms e Adobe Sign</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
+    <img alt="Accordo NDA" src="./assets/nda.png" />
+    </a>
+    <div>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
+    <strong>Genera accordo di non divulgazione</strong>
+    </a>
+    </div>
+    <p>
+    <em>Creare un NDA in modo dinamico e inviarlo per la firma tramite Adobe Sign</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled">
+      <img alt="Firma pacchetto documento" src="./assets/sign.png" />
+    </a>
+     <div>
+      <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled">
+        <strong>Firma pacchetto di documenti</strong>
+      </a>
+    </div>
+    <p>
+    <em>Firma facilmente più documenti utilizzando Forms e Adobe Sign</em>
+    <p>
+  </td>
+</tr>
+</table>
+
+
+
+
 ## Risorse aggiuntive
 
 * [Experience League - Esplora AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [Documentazione sull’authoring di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
 * [Documentazione di sviluppo di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
 * [Documentazione di amministrazione di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
-* [Documentazione sulla distribuzione di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
+* [Documentazione sulla distribuzione di AEM Sites](https://helpx.adobe.com/it/experience-manager/6-5/sites/deploying/user-guide.html)
 * [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
-* [Tutorial di AEM Assets](/help/assets/overview.md)
-* [Tutorial di AEM Forms](/help/forms/overview.md)
-* [Tutorial di AEM Foundation](/help/foundation/overview.md)
+* [Tutorial su AEM Assets](/help/assets/overview.md)
+* [Tutorial su AEM Forms](/help/forms/overview.md)
+* [Tutorial su AEM Foundation](/help/foundation/overview.md)
