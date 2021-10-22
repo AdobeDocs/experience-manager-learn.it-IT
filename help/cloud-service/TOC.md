@@ -4,9 +4,9 @@ user-guide-description: Una raccolta di tutorial su Adobe Experience Manager as 
 breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
+source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '599'
 ht-degree: 23%
 
 ---
@@ -130,8 +130,9 @@ ht-degree: 23%
       + [Imposta Git](./forms/developing-for-cloud-service/setup-git.md)
       + [Sincronizza IntelliJ con AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
       + [Creare un modulo](./forms/developing-for-cloud-service/deploy-your-first-form.md)
-      + [Invia a Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [Cloud Services di inclusione e FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [Invia a Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
+      + [Distribuzione in ambiente di sviluppo](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
    + Creare un modulo adattivo{#create-first-af}
       + [Introduzione](./forms/create-first-af/introduction.md)
       + [Crea tema](./forms/create-first-af/create-theme.md)

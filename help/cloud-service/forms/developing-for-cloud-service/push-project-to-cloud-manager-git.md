@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 kt: 8851
-source-git-commit: d38da94bd4164163a16899b565c90b159194580a
+source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '139'
 ht-degree: 0%
 
 ---
@@ -35,10 +35,10 @@ git commit -m "My First AF"
 In questo modo i file vengono inviati al ramo principale del nostro archivio git locale
 
 ```
-git push -f bankingapp master:"My First AF"
+git push -f bankingapp master:"MyFirstAF"
 ```
 
-Nel comando di cui sopra stiamo spingendo il nostro ramo principale dal nostro archivio Git locale al ramo My First AF del repository cloud manager identificato dal nome descrittivo bankingapp
+Nel comando di cui sopra stiamo spingendo il nostro ramo principale dal nostro archivio Git locale al ramo MyFirstAF dell&#39;archivio cloud manager identificato dal nome descrittivo delle applicazioni bancarie.
 
 
 
