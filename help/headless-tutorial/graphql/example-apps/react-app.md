@@ -9,9 +9,9 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 0ab14016c27d3b91252f3cbf5f97550d89d4a0c9
+source-git-commit: 9b1e38c8d4a0301c124c6f1607a9e4362b0e9cd1
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1007'
 ht-degree: 2%
 
 ---
@@ -20,6 +20,8 @@ ht-degree: 2%
 # Reagire all&#39;app
 
 Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Viene fornita un’applicazione React che illustra come eseguire query sul contenuto utilizzando le API GraphQL di AEM. Il client AEM Headless per JavaScript viene utilizzato per eseguire le query GraphQL che alimentano l&#39;app.
+
+Visualizza la [codice sorgente su GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app)
 
 ![React Application](./assets/react-screenshot.png)
 

@@ -1,6 +1,6 @@
 ---
 title: App SwiftUI di iOS - AEM senza intestazione
-description: Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Viene fornita un'applicazione iOS che dimostra come eseguire query sul contenuto utilizzando le API GraphQL di AEM. L’iOS client Apollo viene utilizzato per generare le query GraphQL e mappare i dati sugli oggetti Swift per alimentare l’app. SwiftUI is used to render a simple list and detail view of the content.
+description: Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Viene fornita un'applicazione iOS che dimostra come eseguire query sul contenuto utilizzando le API GraphQL di AEM. L’iOS client Apollo viene utilizzato per generare le query GraphQL e mappare i dati sugli oggetti Swift per alimentare l’app. SwiftUI viene utilizzato per eseguire il rendering di una semplice visualizzazione elenco e dettagli del contenuto.
 version: Cloud Service
 mini-toc-levels: 1
 kt: 9166
@@ -9,10 +9,10 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 9c1649247c65a1fa777b7574d1ab6ab49d0f722b
+source-git-commit: 9b1e38c8d4a0301c124c6f1607a9e4362b0e9cd1
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 2%
+source-wordcount: '960'
+ht-degree: 1%
 
 ---
 
@@ -20,6 +20,8 @@ ht-degree: 2%
 # App SwiftUI di iOS
 
 Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Questa applicazione iOS illustra come eseguire query sul contenuto utilizzando le API GraphQL di AEM. L’iOS client Apollo viene utilizzato per generare le query GraphQL e mappare i dati sugli oggetti Swift per alimentare l’app. SwiftUI viene utilizzato per eseguire il rendering di una semplice visualizzazione elenco e dettagli del contenuto.
+
+Visualizza la [codice sorgente su GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-swiftui-app)
 
 >[!VIDEO](https://video.tv.adobe.com/v/338042/?quality=12&learn=on)
 
@@ -32,7 +34,7 @@ Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità he
 
 ## Requisiti AEM
 
-The application is designed to connect to an AEM **Publish** environment with the latest release of the [WKND Reference site](https://github.com/adobe/aem-guides-wknd/releases/latest) installed.
+L&#39;applicazione è progettata per connettersi a un AEM **Pubblica** ambiente con la versione più recente del [Sito di riferimento WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) installato.
 
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html)
 * [AEM 6.5.10+](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/new-features-latest-service-pack.html?lang=it)
@@ -62,9 +64,9 @@ Consigliamo [distribuzione del sito WKND Reference in un ambiente di Cloud Servi
 
 ## Il codice
 
-Di seguito è riportato un breve riepilogo dei file importanti e del codice utilizzati per alimentare l&#39;applicazione. The full code can be found on [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-swiftui-app).
+Di seguito è riportato un breve riepilogo dei file importanti e del codice utilizzati per alimentare l&#39;applicazione. Il codice completo è disponibile all&#39;indirizzo [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-swiftui-app).
 
-### Apollo iOS
+### iOS Apollo
 
 La [iOS Apollo](https://www.apollographql.com/docs/ios/) client viene utilizzato dall’app per eseguire la query GraphQL rispetto a AEM. Il funzionario [Tutorial su Apollo](https://www.apollographql.com/docs/ios/tutorial/tutorial-introduction/) ha molti più dettagli su come installare e utilizzare.
 
@@ -191,7 +193,7 @@ In AEM, i contenuti sono identificati in modo univoco da `_path`. In `Adventure.
 
 SwiftUI viene utilizzato per le varie visualizzazioni nell’applicazione. Un&#39;ottima esercitazione per [elenchi di edifici e navigazione](https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation) disponibile sul sito per sviluppatori Apple. Il codice per questa applicazione viene derivato liberamente da essa.
 
-`WKNDAdventuresApp.swift` is the entry of the application. Include `AdventureListView` e `.onAppear` viene utilizzato per recuperare i dati dell’avventura.
+`WKNDAdventuresApp.swift` è la voce della domanda. Include `AdventureListView` e `.onAppear` viene utilizzato per recuperare i dati dell’avventura.
 
 `AdventureListView.swift` - crea un `NavigationView` e un elenco di avventure popolate da `AdventureRowView`. Navigazione a un `AdventureDetailView` è qui sopra.
 
@@ -213,5 +215,5 @@ La [AsyncImage](https://developer.apple.com/documentation/swiftui/asyncimage) è
 
 * [Guida introduttiva a AEM Headless - Esercitazione GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)
 * [Esercitazione sugli elenchi e sulla navigazione dell’interfaccia utente Swift](https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation)
-* [Apollo iOS Client Tutorial](https://www.apollographql.com/docs/ios/tutorial/tutorial-introduction/)
+* [Tutorial del client Apollo iOS](https://www.apollographql.com/docs/ios/tutorial/tutorial-introduction/)
 
