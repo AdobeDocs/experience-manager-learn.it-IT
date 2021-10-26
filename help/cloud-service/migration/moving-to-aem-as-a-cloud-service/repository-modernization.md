@@ -8,16 +8,29 @@ role: Developer
 level: Experienced
 kt: 8630
 thumbnail: 336958.jpeg
-source-git-commit: f22a37f80a9c9698718e1c75576b7ca705e658fc
+exl-id: e9bd9035-1f2d-4a34-a581-9c1ec2c7bc04
+source-git-commit: 53a314c5cd9eaad5a26a0992c750c159f8e3697f
 workflow-type: tm+mt
-source-wordcount: '36'
-ht-degree: 0%
+source-wordcount: '161'
+ht-degree: 1%
 
 ---
-
 
 # Modernizzazione archivio
 
 Scopri la modernizzazione dell’archivio, il contenuto mutabile e immutabile, la struttura del pacchetto e lo strumento CLI del modernizzatore dell’archivio.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336958/?quality=12&learn=on)
+
+## Strumento Repository Modernizer
+
+![Dispatcher Converter](./assets/repository-modernizer.png)
+
+Come parte del refactoring della base di codice, utilizza il [Strumento Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) ristrutturare una base di codice 6.x in una struttura più moderna.
+
+### Attività chiave
+
+* Utilizza la [Adobe I/O Repository Modernizer](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationrepository-modernizer) strumento per ristrutturare un progetto in modo che corrisponda alla struttura prevista di un progetto as a Cloud Service AEM.
+* Regola e correggi manualmente eventuali errori di compilazione nella base di codice aggiornata.
+* Imposta un [ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) e distribuisci la base di codice aggiornata. Iterate fino a quando il progetto non si trova in uno stato stabile.
+* Distribuisci la base di codice aggiornata in un ambiente di sviluppo AEM as a Cloud Service e continua a eseguire la convalida.
