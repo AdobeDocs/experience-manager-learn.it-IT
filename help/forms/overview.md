@@ -159,7 +159,7 @@ Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, g
   </td>
   <td>
     <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled">
-      <img alt="Firma pacchetto documento" src="./assets/sign.png" />
+      <img alt="Firma pacchetto documenti" src="./assets/sign.png" />
     </a>
      <div>
       <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled">
