@@ -1,19 +1,17 @@
 ---
-title: Tutorial di AEM Sites
-seo-title: Tutorial di AEM Sites
-description: 'Raccolta di video e tutorial per Adobe Experience Manager Sites. '
-seo-description: Raccolta di video e tutorial per Adobe Experience Manager Sites
-sub-product: siti, content-services
-topic: Gestione dei contenuti
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+title: Video e tutorial su AEM Sites
+description: Raccolta di video e tutorial su Adobe Experience Manager Sites.
+sub-product: sites, content-services
+topic: Content Management
+exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '345'
 ht-degree: 21%
 
 ---
 
-
-# Panoramica {#overview}
+# Video e tutorial su AEM Sites {#overview}
 
 Adobe Experience Manager (AEM) Sites è una piattaforma leader nella gestione delle esperienze. Questa guida utente contiene video ed esercitazioni sulle numerose funzioni e funzionalità di AEM Sites.
 
@@ -44,8 +42,8 @@ Adobe Experience Manager (AEM) Sites è una piattaforma leader nella gestione de
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
-      <img alt="Guida introduttiva ad AEM Sites: tutorial WKND" src="./assets/aem-wknd-tutorial.png" />
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it">
+      <img alt="Guida introduttiva ai AEM Sites: esercitazione WKND" src="./assets/aem-wknd-tutorial.png" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
@@ -79,7 +77,7 @@ Adobe Experience Manager (AEM) Sites è una piattaforma leader nella gestione de
       </a>
     </div>
     <p>
-    <em>Guida introduttiva per gli sviluppatori per integrare con AEM applicazioni a pagina singola (SPA).</em>
+    <em>Una guida introduttiva per gli sviluppatori per integrare un’applicazione a pagina singola (SPA) con AEM.</em>
     <p>
   </td>
 </tr>
@@ -88,11 +86,11 @@ Adobe Experience Manager (AEM) Sites è una piattaforma leader nella gestione de
 ## Risorse aggiuntive
 
 * [Experience League - Esplora AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [Documentazione sull’authoring di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
-* [Documentazione di sviluppo di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
-* [Documentazione di amministrazione di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
-* [Documentazione sulla distribuzione di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
+* [Documentazione sull’authoring di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [Documentazione di sviluppo di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
+* [Documentazione di amministrazione di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
+* [Documentazione sulla distribuzione di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
 * [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
-* [Tutorial di AEM Assets](/help/assets/overview.md)
-* [Tutorial di AEM Forms](/help/forms/overview.md)
-* [Tutorial di AEM Foundation](/help/foundation/overview.md)
+* [Tutorial su AEM Assets](/help/assets/overview.md)
+* [Tutorial su AEM Forms](/help/forms/overview.md)
+* [Tutorial su AEM Foundation](/help/foundation/overview.md)

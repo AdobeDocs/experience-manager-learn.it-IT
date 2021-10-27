@@ -1,19 +1,19 @@
 ---
-title: Esercitazioni AEM headless
+title: AEM Tutorials headless
 description: Una raccolta di esercitazioni su come utilizzare Adobe Experience Manager as a Headless CMS.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 0ab14016c27d3b91252f3cbf5f97550d89d4a0c9
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
-# Esercitazioni AEM headless
+# AEM Tutorials headless
 
 Adobe Experience Manager (AEM) offre diverse opzioni per definire endpoint headless e distribuire il relativo contenuto come JSON. Utilizza i tutorial pratici per scoprire come utilizzare le varie opzioni e scegliere ciò che fa per te.
 
@@ -92,11 +92,11 @@ Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità he
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html">
-    <strong>Esempio Android</strong>
+    <strong>Esempio Android™</strong>
     </a>
     </div>
     <p>
-    <em>Un’applicazione Android basata sulle API GraphQL di AEM.</em>
+    <em>Applicazione Android™ basata su API GraphQL AEM.</em>
     </p>
   </td>
   <td>
@@ -185,7 +185,7 @@ Esplora le seguenti esercitazioni in base alla tecnologia utilizzata. Scopri com
     </a>
     </div>
     <p>
-    <em>Utilizza Content Services e REST per alimentare un’applicazione mobile Android.</em>
+    <em>Utilizza Content Services e REST per alimentare un'applicazione mobile Android™.</em>
     </p>
   </td>
   <td>

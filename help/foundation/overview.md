@@ -1,21 +1,19 @@
 ---
-title: Video e tutorial di AEM Foundation
-seo-title: Video e tutorial di AEM Foundation
-description: 'Raccolta di video e tutorial per Adobe Experience Manager Foundation. '
-seo-description: Raccolta di video e tutorial per Adobe Experience Manager Foundation
+title: Video e tutorial su AEM Foundation
+description: Raccolta di video e tutorial su Adobe Experience Manager Foundation.
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 22%
+source-wordcount: '251'
+ht-degree: 18%
 
 ---
 
+# Video e tutorial su AEM Foundation {#overview}
 
-# Panoramica {#overview}
-
-Adobe Experience Manager fornisce un set comune di funzionalità disponibili per gli utenti di AEM Sites, [!DNL Assets] e [!DNL Forms].
+Adobe Experience Manager fornisce un set comune di funzionalità disponibili per gli utenti di AEM Sites, Assets e Forms.
 
 ## Novità
 
@@ -27,7 +25,7 @@ Adobe Experience Manager fornisce un set comune di funzionalità disponibili per
    *Cloud Manager per AEM consente di gestire, ispezionare e self-service facilmente gli ambienti di AEM.*
 
 * **[Configurare le chiavi pubbliche e private da utilizzare con Adobe I/O (esercitazione)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
-   *Scopri come vengono generati i tasti e gli archivi chiavi utilizzando  [!DNL openssl] che funzionano con AEM ed Adobe I/O.*
+   *Scopri come vengono generati i tasti e i keystore utilizzando [!DNL openssl] che funzionano con AEM e Adobe I/O.*
 
 * **[Utilizzare la pipeline CI/CD di Cloud Manager (video)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
    *Scopri come utilizzare la pipeline CI/CD di Cloud Manager per garantire implementazioni sicure e coerenti.*
@@ -82,6 +80,6 @@ Adobe Experience Manager fornisce un set comune di funzionalità disponibili per
 
 * [Experience League - Esplora AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
-* [Video e tutorial di AEM Sites](/help/sites/overview.md)
-* [Video e tutorial di AEM Assets](/help/assets/overview.md)
-* [Video e tutorial di AEM Forms](/help/forms/overview.md)
+* [Video e tutorial su AEM Sites](/help/sites/overview.md)
+* [Video e tutorial su AEM Assets](/help/assets/overview.md)
+* [Video e tutorial su AEM Forms](/help/forms/overview.md)

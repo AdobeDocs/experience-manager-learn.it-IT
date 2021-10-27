@@ -1,5 +1,5 @@
 ---
-title: Benvenuto al tutorial sulle best practice di Dynamic Media Classic
+title: Tutorial sulle best practice di Dynamic Media Classic
 description: Dynamic Media Classic è l’hub su cui i clienti creano, creano e distribuiscono contenuti rich media. Questa esercitazione sulle best practice è stata creata per aiutare gli utenti attuali e nuovi di Dynamic Media Classic a comprendere meglio cosa possono fare con questa potente soluzione rich media di Adobe. In questa parte dell’esercitazione, scoprirai cos’è Dynamic Media Classic e consulta brevemente le sue funzionalità principali e l’interfaccia utente.
 sub-product: dynamic-media
 doc-type: tutorial
@@ -7,22 +7,22 @@ topics: best-practices, development, authoring, configuring
 audience: all
 activity: develop, use
 feature: Dynamic Media Classic
-topic: Gestione dei contenuti
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 975b85af-ca6a-419e-ab2a-6e1781bfee4a
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '885'
 ht-degree: 1%
 
 ---
 
+# Tutorial sulle best practice di Dynamic Media Classic
 
-# Benvenuto al tutorial sulle best practice di Dynamic Media Classic
+Questa guida ha lo scopo di aiutare gli utenti attuali e nuovi di Dynamic Media Classic a comprendere meglio che cosa possono fare con la loro potente soluzione rich media sin dall&#39;Adobe. Lo faremo:
 
-Questa guida ha lo scopo di aiutare gli utenti attuali e nuovi di Dynamic Media Classic a comprendere meglio cosa possono fare con la loro potente soluzione rich media dall&#39;Adobe. Lo faremo:
-
-- Introduzione a Dynamic Media Classic, descrizione delle funzioni di base e panoramica delle funzioni di base e dell’interfaccia utente (UI).
+- Introduzione a Dynamic Media Classic, descrizione di ciò che è e panoramica delle sue funzionalità principali e dell’interfaccia utente (UI).
 - Spiegazione del flusso di lavoro generale Creazione, authoring e consegna da seguire quando si lavora con le risorse nella soluzione.
 - Discussione di elementi importanti da configurare prima di entrare e utilizzare la soluzione.
 - Approfondisci l&#39;utilizzo di diverse funzionalità di base della soluzione.
@@ -35,7 +35,7 @@ Ci auguriamo che questa guida ti fornisca le informazioni necessarie per sfrutta
 
 Dynamic Media Classic è l’hub su cui i clienti creano, creano e distribuiscono contenuti rich media. Dynamic Media Classic è un ambiente integrato di gestione, pubblicazione e distribuzione di contenuti multimediali. I contenuti rich media possono essere distribuiti a tutti i canali di marketing e vendita, compresi il web, il materiale per la stampa, le campagne e-mail, le applicazioni web, i desktop e i dispositivi.
 
-Il servizio di immagini è forse la funzione più utilizzata di Dynamic Media Classic. Infatti, la maggior parte dei clienti utilizza Dynamic Media Classic per distribuire tutte le immagini sui propri siti web, incluse le immagini per zoom o rich media. Tuttavia, può essere utilizzato anche per molti altri scopi, tra cui la distribuzione di video e l’utilizzo di AI per ottimizzare le immagini consegnate.
+Il servizio di immagini è forse la funzione più utilizzata di Dynamic Media Classic. Infatti, la maggior parte dei clienti utilizza Dynamic Media Classic per distribuire tutte le immagini sui loro siti web, incluse le immagini per zoom o rich media. Tuttavia, può essere utilizzato anche per molti altri scopi, tra cui la distribuzione di video e l’utilizzo di AI per ottimizzare le immagini consegnate.
 
 ## Funzionalità di base di Dynamic Media Classic
 
@@ -45,7 +45,7 @@ In questa guida verranno illustrate le seguenti funzionalità di base di Dynamic
 - **Video.** Carica i video finali, pubblicali e progressivamente scaricali in visualizzatori video configurabili.
 - **Imaging avanzato.** Tecnologia che sfrutta le funzionalità di Adobe Sensei AI e funziona con i &quot;predefiniti per immagini&quot; esistenti per migliorare le prestazioni di distribuzione delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
 
-Per scoprire le funzionalità aggiuntive della soluzione, visita la [Documentazione di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
+Per scoprire le funzionalità aggiuntive della soluzione, visita [Documentazione per Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
 
 ## Interfaccia utente di Dynamic Media Classic
 
@@ -53,7 +53,7 @@ L’interfaccia utente principale di Dynamic Media Classic è composta da tre ar
 
 ![immagine](assets/overview/overview-dmc-ui-ew.png)
 
-_Interfaccia classica di Dynamic Media_
+_Interfaccia utente Dynamic Media Classic_
 
 **Barra di navigazione globale.** Nella parte superiore dello schermo, puoi utilizzare i pulsanti presenti in questa barra per accedere alle aree chiave e alle funzionalità della soluzione. Ad esempio, lo utilizzerai per accedere alle funzionalità di caricamento, aprire varie aree di creazione delle risorse (set di immagini, set 360 gradi, ecc.), eseguire attività importanti come la configurazione di predefiniti immagine e visualizzatore e pubblicare le risorse. Da qui puoi anche monitorare i tuoi lavori, vedere le attività recenti e scegliere tra diverse opzioni di aiuto.
 
@@ -67,12 +67,12 @@ _Interfaccia classica di Dynamic Media_
 
 >[!IMPORTANT]
 >
->Accanto a ogni ID risorsa è presente l’opzione **Contrassegna per pubblicazione** . Quando l’opzione è attivata (verde), indica che la risorsa è contrassegnata per la pubblicazione.
+>Accanto a ogni ID risorsa è **Contrassegna per pubblicazione** interruttore. Quando l’opzione è attivata (verde), indica che la risorsa è contrassegnata per la pubblicazione.
 
 ![immagine](assets/overview/overview-mark-for-publish.png)
 
 >[!TIP]
 >
->Seleziona la casella di controllo **Pubblica dopo il caricamento** nella finestra di dialogo Carica per pubblicare automaticamente le risorse al momento del caricamento.
+>Seleziona la **Pubblica dopo il caricamento** nella finestra di dialogo Carica per pubblicare automaticamente le risorse al momento del caricamento.
 
-Ulteriori informazioni su [Navigazione nell&#39;interfaccia utente di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).
+Ulteriori informazioni [Navigazione nell’interfaccia di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).
