@@ -1,10 +1,9 @@
 ---
-title: 'Guida introduttiva ad AEM Sites: tutorial WKND'
-description: 'Guida introduttiva ad AEM Sites: tutorial WKND. L’esercitazione WKND è un tutorial in più parti progettato per gli sviluppatori che non hanno mai utilizzato Adobe Experience Manager. Il tutorial illustra l’implementazione di un sito AEM per un brand di lifestyle fittizio, il WKND. L’esercitazione tratta argomenti fondamentali come la configurazione del progetto, gli archetipi Maven, i componenti core, i modelli modificabili, le librerie client e lo sviluppo dei componenti.'
+title: 'Guida introduttiva ai AEM Sites: esercitazione WKND'
+description: 'Guida introduttiva ai AEM Sites: esercitazione WKND. L’esercitazione WKND è un tutorial in più parti progettato per gli sviluppatori che non hanno mai utilizzato Adobe Experience Manager. Il tutorial illustra l’implementazione di un sito AEM per un brand di lifestyle fittizio, il WKND. L’esercitazione tratta argomenti fondamentali come la configurazione del progetto, gli archetipi Maven, i componenti core, i modelli modificabili, le librerie client e lo sviluppo dei componenti.'
 sub-product: sites
 topics: development
 version: Cloud Service
-doc-type: tutorial
 activity: develop
 audience: developer
 KT: 4132
@@ -16,14 +15,15 @@ topic: Content Management, Development
 role: Developer
 level: Beginner
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+recommendations: disable
+source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
-# Guida introduttiva ad AEM Sites: tutorial WKND {#introduction}
+# Guida introduttiva ai AEM Sites: esercitazione WKND {#introduction}
 
 Ti diamo il benvenuto in un tutorial in più parti progettato per gli sviluppatori che non hanno mai utilizzato Adobe Experience Manager (AEM). Questa esercitazione illustra l’implementazione di un sito AEM per un brand di lifestyle fittizio WKND. L’esercitazione tratta argomenti fondamentali come la configurazione del progetto, i componenti core, i modelli modificabili, le librerie lato client e lo sviluppo dei componenti con Adobe Experience Manager Sites.
 
@@ -37,17 +37,17 @@ L’obiettivo di questa esercitazione in più parti è quello di insegnare agli 
 
 Esistono due approcci di base all’avvio di un progetto AEM Sites.
 
-**AEM Project Archetype**  - Metodo tradizionale per lo sviluppo AEM generando un progetto AEM minimo utilizzando un modello Maven. Questo è l’approccio consigliato per progetti AEM 6.5/6.4 e AEM come progetti di Cloud Service che anticipano una forte personalizzazione. L’esercitazione offre un’immersione più approfondita nello sviluppo AEM .
+**Archetipo di progetto AEM** - Approccio tradizionale allo sviluppo AEM generando un progetto AEM minimo utilizzando un modello Maven. Questo è l’approccio consigliato per progetti AEM 6.5/6.4 e AEM progetti as a Cloud Service che anticipano una forte personalizzazione. L’esercitazione offre un’immersione più approfondita nello sviluppo AEM .
 
 [Avvia l’esercitazione con AEM Project Archetype](./project-archetype/overview.md)
 
-**Modelli di sito AEM** : approccio a basso codice per generare un sito AEM utilizzando un modello di sito predefinito. Utilizza i componenti e i modelli predefiniti per rendere rapidamente operativo un sito. Utilizza un flusso di lavoro a tema per applicare stili e personalizzazioni specifici del brand con solo CSS e JavaScript. Consigliato per nuovi progetti e sviluppatori. Attualmente disponibile solo per AEM come Cloud Service.
+**Modelli di sito AEM** - Un approccio di codice limitato alla generazione di un sito AEM utilizzando un modello di sito predefinito. Utilizza i componenti e i modelli predefiniti per rendere rapidamente operativo un sito. Utilizza un flusso di lavoro a tema per applicare stili e personalizzazioni specifici del brand con solo CSS e JavaScript. Consigliato per nuovi progetti e sviluppatori. Attualmente disponibile solo per AEM as a Cloud Service.
 
 [Avvia l’esercitazione utilizzando un modello di sito](./site-template/create-site.md)
 
 ## Kit interfaccia utente Adobe XD
 
-Per avvicinare questa esercitazione a uno scenario reale, i progettisti UX di talento di Adobe hanno creato i modelli per il sito utilizzando [Adobe XD](https://www.adobe.com/products/xd.html). Nel corso dell&#39;esercitazione, diverse parti delle progettazioni vengono implementate in un sito AEM completamente modificabile. Un ringraziamento speciale a **Lorenzo Buosi** e **Kilian Amendola** che ha creato il bellissimo design per il sito WKND.
+Per avvicinare questa esercitazione a uno scenario reale, i designer UX di talento di Adobe hanno creato i modelli per il sito utilizzando [Adobe XD](https://www.adobe.com/products/xd.html). Nel corso dell&#39;esercitazione, diverse parti delle progettazioni vengono implementate in un sito AEM completamente modificabile. Ringraziamenti speciali **Lorenzo Buosi** e **Kilian Amendola** che ha creato il bel design per il sito WKND.
 
 Scarica i kit di interfaccia utente XD:
 
@@ -58,13 +58,13 @@ Scarica i kit di interfaccia utente XD:
 
 Una versione completa del sito WKND è disponibile anche come riferimento: [https://wknd.site/](https://wknd.site/)
 
-L’esercitazione illustra le principali competenze di sviluppo necessarie per uno sviluppatore AEM ma *non* consente di creare l’intero sito end-to-end. Il sito di riferimento finale è un&#39;altra grande risorsa per esplorare e vedere di più AEM funzionalità predefinite.
+L’esercitazione illustra le principali competenze di sviluppo necessarie per uno sviluppatore di AEM, ma *not* crea l’intero sito end-to-end. Il sito di riferimento finale è un&#39;altra grande risorsa per esplorare e vedere di più AEM funzionalità predefinite.
 
-Per testare il codice più recente prima di passare all’esercitazione, scarica e installa la versione **[più recente da GitHub](https://github.com/adobe/aem-guides-wknd/releases/latest)**.
+Per testare il codice più recente prima di saltare nell&#39;esercitazione, scarica e installa il **[ultima versione di GitHub](https://github.com/adobe/aem-guides-wknd/releases/latest)**.
 
 ### Alimentato da Adobe Stock
 
-Molte delle immagini nel sito web WKND Reference provengono da [Adobe Stock](https://stock.adobe.com/) e sono materiale di terze parti come definito nei Termini aggiuntivi per le risorse demo all&#39;indirizzo [https://www.adobe.com/legal/terms.html](https://www.adobe.com/it/legal/terms.html). Se desideri utilizzare un’immagine Adobe Stock per altri scopi oltre a visualizzare questo sito web dimostrativo, ad esempio la sua funzione su un sito web o nel materiale di marketing, puoi acquistare una licenza su Adobe Stock.
+Molte delle immagini del sito web WKND Reference provengono da [Adobe Stock](https://stock.adobe.com/) e sono materiale di terze parti come definito nei Termini aggiuntivi per le risorse demo all&#39;indirizzo [https://www.adobe.com/legal/terms.html](https://www.adobe.com/it/legal/terms.html). Se desideri utilizzare un’immagine Adobe Stock per altri scopi oltre a visualizzare questo sito web dimostrativo, ad esempio la sua funzione su un sito web o nel materiale di marketing, puoi acquistare una licenza su Adobe Stock.
 
 Con Adobe Stock, puoi accedere a oltre 140 milioni di immagini di alta qualità e prive di royalty, incluse foto, grafica, video e modelli per dare un nuovo impulso ai tuoi progetti creativi.
 

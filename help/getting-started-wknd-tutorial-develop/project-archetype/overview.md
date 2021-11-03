@@ -4,27 +4,28 @@ description: Guida introduttiva ad AEM Sites - Archetipo di progetto. L’eserci
 sub-product: sites
 version: 6.4, 6.5, Cloud Service
 type: Tutorial
-feature: Componenti core, Editor pagina, Modelli modificabili, Archetipo AEM progetto
-topic: Gestione dei contenuti, sviluppo
+feature: Core Components, Page Editor, Editable Templates, AEM Project Archetype
+topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
+recommendations: disable
+source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 14%
+source-wordcount: '475'
+ht-degree: 15%
 
 ---
-
 
 # Guida introduttiva ad AEM Sites - Archetipo di progetto {#project-archetype}
 
 Ti diamo il benvenuto in un tutorial in più parti progettato per gli sviluppatori che non hanno mai utilizzato Adobe Experience Manager (AEM). Questa esercitazione illustra l’implementazione di un sito AEM per un brand di lifestyle fittizio WKND.
 
-Questa esercitazione inizia utilizzando [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) per generare un nuovo progetto.
+Questa esercitazione inizia utilizzando il [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) per generare un nuovo progetto.
 
-L&#39;esercitazione è progettata per funzionare con **AEM come Cloud Service** ed è retrocompatibile con **AEM 6.5.5.0+** e **AEM 6.4.8.1+**. Il sito viene implementato utilizzando:
+L’esercitazione è progettata per lavorare con **AEM as a Cloud Service** ed è compatibile con le versioni precedenti **AEM 6.5.5.0+** e **AEM 6.4.8.1+**. Il sito viene implementato utilizzando:
 
 * [Archetipo AEM progetto Maven](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
@@ -37,7 +38,7 @@ L&#39;esercitazione è progettata per funzionare con **AEM come Cloud Service** 
 
 ## Ambiente di sviluppo locale {#local-dev-environment}
 
-Per completare questa esercitazione, è necessario un ambiente di sviluppo locale. Le schermate e i video vengono acquisiti utilizzando l&#39;SDK di Cloud Service AEM in esecuzione in un ambiente Mac OS con [Visual Studio Code](https://code.visualstudio.com/) come IDE. I comandi e il codice devono essere indipendenti dal sistema operativo locale, salvo diversa indicazione.
+Per completare questa esercitazione, è necessario un ambiente di sviluppo locale. Le schermate e i video vengono acquisiti utilizzando l&#39;SDK AEM as a Cloud Service in esecuzione in un ambiente Mac OS con [Codice di Visual Studio](https://code.visualstudio.com/) come IDE. I comandi e il codice devono essere indipendenti dal sistema operativo locale, salvo diversa indicazione.
 
 ### Software richiesto
 
@@ -46,17 +47,17 @@ Per completare questa esercitazione, è necessario un ambiente di sviluppo local
 * AEM locale **Autore** istanza (Cloud Service SDK, 6.5.5+ o 6.4.8.1+)
 * [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 o successivo)
-* [Node.js](https://nodejs.org/it/)  (LTS - Supporto a lungo termine)
+* [Node.js](https://nodejs.org/it/) (LTS - Supporto a lungo termine)
 * [npm 6+](https://www.npmjs.com/)
 * [Git](https://git-scm.com/)
-* [IDE ](https://code.visualstudio.com/) codice di Visual Studio o equivalente
-   * [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync)  - Strumento utilizzato durante l&#39;esercitazione
+* [Codice di Visual Studio](https://code.visualstudio.com/) o IDE equivalenti
+   * [Sincronizzazione AEM VSCode](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) - Strumento utilizzato durante l’esercitazione
 
 >[!NOTE]
 >
 > **Ti avvicini adesso ad AEM as a Cloud Service?** Consulta la [seguente guida per configurare un ambiente di sviluppo locale utilizzando SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 >
-> **Nuovo a AEM 6.5?** Consulta la  [seguente guida per configurare un ambiente](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) di sviluppo locale.
+> **Nuovo a AEM 6.5?** Consulta la sezione [guida alla configurazione di un ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
 ## Github {#github}
 
@@ -68,4 +69,4 @@ Inoltre, ogni parte dell’esercitazione ha un proprio ramo in GitHub. Un utente
 
 ## Passaggi successivi {#next-steps}
 
-Cosa stai aspettando?! Avvia l&#39;esercitazione andando al capitolo [Configurazione progetto](project-setup.md) e scopri come generare un nuovo progetto Adobe Experience Manager utilizzando AEM Project Archetype.
+Cosa stai aspettando?! Avvia l’esercitazione passando alla pagina [Configurazione del progetto](project-setup.md) questo capitolo e scopri come generare un nuovo progetto Adobe Experience Manager utilizzando AEM Project Archetype .
