@@ -8,7 +8,7 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9335
-source-git-commit: 84a0c78f89f78e161b460574b5927fc4aba2fe3a
+source-git-commit: 20cae7a327131927f831ae9c49fb5eebfb00f5c4
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -27,6 +27,7 @@ Quando il modulo ha schede di navigazione a sinistra e se una delle schede dispo
 ## Creare un modulo adattivo
 
 Crea un modulo adattivo con la seguente struttura. Il pannello principale dispone di pannelli secondari visualizzati come schede a sinistra. Alcuni di questi &quot;**schede**&quot; dispongono di pannelli figlio aggiuntivi. Ad esempio, nella scheda Famiglia sono presenti due pannelli secondari denominati coniuge e figlio.
+
 Una barra degli strumenti viene aggiunta anche sotto FormContainer con i pulsanti Prec e Successivo
 
 ![spaziatura barra degli strumenti](assets/multiple-panels.png)
@@ -61,4 +62,5 @@ Utilizza l’editor di stili per nascondere il titolo dei pannelli secondari del
 >[!VIDEO](https://video.tv.adobe.com/v/338370?quality=9&learn=on)
 
 >[!NOTE]
-> La funzionalità descritta in questo articolo non funziona nell’ultima scheda. Ad esempio, se nella scheda Indirizzo erano presenti pannelli secondari, questa funzionalità non funzionerebbe.
+>
+>La funzionalità descritta in questo articolo non funziona nell’ultima scheda. Ad esempio, se nella scheda Indirizzo erano presenti pannelli secondari, questa funzionalità non funzionerebbe.
