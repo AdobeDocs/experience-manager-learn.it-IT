@@ -1,24 +1,22 @@
 ---
 title: Utilizzo dei CAPTCHA con AEM Adaptive Forms
 description: Aggiunta e utilizzo di un CAPTCHA con AEM Adaptive Forms.
-feature: Forms adattivo,Flusso di lavoro
+feature: Adaptive Forms,Workflow
 version: 6.4,6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 7e5dcc6e-fe56-49af-97e3-7dfaa9c8738f
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '204'
 ht-degree: 0%
 
 ---
 
-
 # Utilizzo dei CAPTCHA con AEM Adaptive Forms{#using-captchas-with-aem-adaptive-forms}
 
 Aggiunta e utilizzo di un CAPTCHA con AEM Adaptive Forms.
-
-Visita la pagina [Esempi AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) per un collegamento a una demo in tempo reale di questa funzionalità.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336/?quality=9&learn=on)
 
@@ -34,7 +32,7 @@ Visita la pagina [Esempi AEM Forms](https://forms.enablementadobe.com/content/sa
 >
 >Configura reCaptach sull&#39;istanza dell&#39;autore
 >
->apri la console Web Felix [a1/> sull&#39;istanza dell&#39;autore](http://localhost:4502/system/console/bundles)
+>apri Felix [console web](http://localhost:4502/system/console/bundles) sull&#39;istanza dell&#39;autore
 >
 >cerca il bundle com.adobe.granite.crypto.file
 >
@@ -44,8 +42,7 @@ Visita la pagina [Esempi AEM Forms](https://forms.enablementadobe.com/content/sa
 >
 >* &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
 * Copia i file HMAC e master
-
-Apri la [console web felix](http://localhost:4502/system/console/bundles) nell&#39;istanza di pubblicazione. Cerca il bundle com.adobe.granite.crypto.file . Nota l&#39;id del bundle
+Apri [console web felix](http://localhost:4502/system/console/bundles) nell’istanza di pubblicazione. Cerca il bundle com.adobe.granite.crypto.file . Nota l&#39;id del bundle
 Passa all&#39;id bundle nel file system della tua istanza di pubblicazione
 * &lt;publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
 * eliminare i file HMAC e master esistenti.
@@ -56,4 +53,3 @@ Riavvia il server di pubblicazione AEM
 ## Materiali di supporto {#supporting-materials}
 
 * [Google reCAPTCHA](https://www.google.com/recaptcha)
-

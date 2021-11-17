@@ -1,24 +1,23 @@
 ---
 title: Genera PDF dall’invio di moduli HTML5
 description: Genera PDF dall’invio di moduli per dispositivi mobili
-feature: Forms Mobile
+feature: Mobile Forms
 version: 6.4,6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 91b4a134-44a7-474e-b769-fe45562105b2
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
-
 
 # Genera PDF dall’invio di moduli HTML5 {#generate-pdf-from-htm-form-submission}
 
 Questo articolo illustra i passaggi necessari per generare pdf da un modulo HTML5 (aka Mobile Forms). Questa demo illustra anche i passaggi necessari per aggiungere un’immagine al modulo HTML5 e unire l’immagine al pdf finale.
 
-Per visualizzare una dimostrazione in tempo reale di questa funzionalità, visita il [server di esempio](https://forms.enablementadobe.com/content/samples/samples.html?query=0) e cerca &quot;Modulo mobile a PDF&quot;.
 
 Per unire i dati inviati nel modello xdp, procedere come segue
 
@@ -78,7 +77,7 @@ $("#file1").click();
 });
 ```
 
-[Profilo personalizzato](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles). L’utilizzo di un profilo personalizzato facilita la manipolazione degli oggetti DOM HTML del modulo mobile. Un elemento di file nascosto viene aggiunto al file HTML.jsp. Quando l&#39;utente fa clic su &quot;Aggiungi foto&quot; si attiva l&#39;evento click dell&#39;elemento file. Questo consente all&#39;utente di sfogliare e selezionare la foto da allegare. Quindi usiamo l&#39;oggetto FileReader javascript per ottenere la stringa codificata base64 dell&#39;immagine. La stringa immagine base64 viene memorizzata nel campo di testo del modulo. Quando il modulo viene inviato, estraiamo questo valore e lo inseriamo nell’elemento img dell’XML. Questo XML viene quindi utilizzato per unire con l&#39;xdp per generare il pdf finale.
+[Profilo personalizzato](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles). L’utilizzo di un profilo personalizzato facilita la manipolazione degli oggetti DOM HTML del modulo mobile. Un elemento di file nascosto viene aggiunto a HTML.jsp. Quando l&#39;utente fa clic su &quot;Aggiungi foto&quot; si attiva l&#39;evento click dell&#39;elemento file. Questo consente all&#39;utente di sfogliare e selezionare la foto da allegare. Quindi usiamo l&#39;oggetto FileReader javascript per ottenere la stringa codificata base64 dell&#39;immagine. La stringa immagine base64 viene memorizzata nel campo di testo del modulo. Quando il modulo viene inviato, estraiamo questo valore e lo inseriamo nell’elemento img dell’XML. Questo XML viene quindi utilizzato per unire con l&#39;xdp per generare il pdf finale.
 
 Il profilo personalizzato utilizzato per questo articolo è stato reso disponibile come parte delle risorse di questo articolo.
 
@@ -105,7 +104,7 @@ Il codice di cui sopra viene eseguito quando attiviamo l’evento click dell’e
 Quindi configuriamo le seguenti proprietà (avanzate) del modulo mobile in AEM
 
 * URL di invio: http://localhost:4502/bin/handlemobileformsubmission. Questo è il nostro servlet che unirà i dati inviati con il modello xdp
-* Profilo di rendering HTML - Assicurati di selezionare &quot;AddImageToMobileForm&quot;. Questo attiverà il codice per aggiungere un’immagine al modulo.
+* Profilo di rendering di HTML - Assicurati di selezionare &quot;AddImageToMobileForm&quot;. Questo attiverà il codice per aggiungere un’immagine al modulo.
 
 Per testare questa funzionalità sul tuo server segui i seguenti passaggi:
 
@@ -115,9 +114,8 @@ Per testare questa funzionalità sul tuo server segui i seguenti passaggi:
 
 * [Scarica e installa il pacchetto associato a questo articolo.](assets/pdf-from-mobile-form-submission.zip)
 
-* Assicurati che l&#39;URL di invio e il profilo di rendering HTML siano impostati correttamente visualizzando la pagina delle proprietà di [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
+* Assicurati che l’URL di invio e il profilo di rendering di HTML siano impostati correttamente visualizzando la pagina delle proprietà del  [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
 
 * [Anteprima di XDP come HTML](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
 
-* Aggiungi un’immagine al modulo e invia. Dovresti recuperare il PDF con l&#39;immagine al suo interno.
-
+* Aggiungi un’immagine al modulo e invia. Dovresti recuperare PDF con l&#39;immagine al suo interno.

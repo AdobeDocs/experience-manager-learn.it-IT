@@ -1,18 +1,18 @@
 ---
 title: Generazione di più pdf da un file di dati
 description: OutputService fornisce diversi metodi per creare documenti utilizzando una struttura del modulo e i dati da unire alla struttura del modulo. Scopri come generare più pdf da un unico grande xml contenente più record singoli.
-feature: Servizio di output
+feature: Output Service
 version: 6.4,6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 58582acd-cabb-4e28-9fd3-598d3cbac43c
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 1%
+source-wordcount: '506'
+ht-degree: 0%
 
 ---
-
 
 # Generare un set di documenti PDF da un file di dati xml
 
@@ -21,17 +21,14 @@ Di seguito è riportata la schermata del file xml contenente più record.
 
 ![multi-record-xml](assets/multi-record-xml.PNG)
 
-I dati xml hanno 2 record. Ciascun record è rappresentato dall’elemento form1. Questo xml viene passato al metodo OutputService [generatePDFOutputBatch](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) otteniamo l&#39;elenco dei documenti pdf (uno per record)
-La firma del metodo generatePDFOutputBatch prende i seguenti parametri
+I dati xml hanno 2 record. Ciascun record è rappresentato dall’elemento form1. Questo xml viene passato a OutputService [generatePDFOutputBatch, metodo](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) otteniamo l&#39;elenco dei documenti pdf (uno per record) La firma del metodo generatePDFOutputBatch prende i seguenti parametri
 
 * templates: mappa contenente il modello, identificato da una chiave
 * data - Mappa contenente documenti di dati xml, identificati dalla chiave
 * pdfOutputOptions - opzioni per configurare la generazione di pdf
 * batchOptions - opzioni per configurare batch
 
->[!NOTE]
->
->Questo caso d&#39;uso è disponibile come esempio live in questo [sito web](https://forms.enablementadobe.com/content/samples/samples.html?query=0).
+
 
 ## Dettagli del caso d’uso{#use-case-details}
 
@@ -127,10 +124,10 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 
 Per testare questa funzionalità sul server, segui le seguenti istruzioni:
 
-* [Scarica ed estrae il contenuto del file zip nel file system](assets/mult-records-template-and-xml-file.zip). Questo file zip contiene il modello e il file di dati xml.
+* [Scaricare ed estrarre il contenuto dei file zip nel file system](assets/mult-records-template-and-xml-file.zip).Questo file zip contiene il modello e il file di dati xml.
 * [Posiziona il browser sulla console Web Felix](http://localhost:4502/system/console/bundles)
 * [Distribuisci il bundle DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
-* [Distribuisci il bundle personalizzato AEMFormsDocumentServices Bundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).Custom che genera i pdf utilizzando l&#39;API OutputService
+* [Distribuire il bundle AEMFormsDocumentServices personalizzato](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)Bundle personalizzato che genera il pdf utilizzando l&#39;API di OutputService
 * [Posiziona il tuo browser nel gestore dei pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 * [Importa e installa il pacchetto](assets/generate-multiple-pdf-from-xml.zip). Questo pacchetto contiene la pagina HTML che ti consente di rilasciare il modello e i file di dati.
 * [Posiziona il browser su MultiRecords.html](http://localhost:4502/content/DocumentServices/Multirecord.html?)
@@ -139,4 +136,3 @@ Per testare questa funzionalità sul server, segui le seguenti istruzioni:
 
 >[!NOTE]
 >Esistono diversi modi per attivare questa funzionalità. In questo esempio abbiamo utilizzato un’interfaccia web per rilasciare il modello e il file di dati per dimostrare la funzionalità.
-

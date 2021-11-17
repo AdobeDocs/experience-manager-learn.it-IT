@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9335
-source-git-commit: 458f1c2df6472be2b4704bb68eafb92b58f48a97
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,6 @@ ht-degree: 0%
 # Schede di navigazione con più pannelli
 
 Quando il modulo ha schede di navigazione a sinistra e se una delle schede dispone di più pannelli, è possibile nascondere il titolo dei pannelli secondari ed essere comunque in grado di spostarsi tra le schede e i pannelli secondari di tali schede
-
-[Questa funzionalità è attiva nel modulo](https://forms.enablementadobe.com/content/forms/af/testnav1.html)
-
-
-
 
 ## Creare un modulo adattivo
 

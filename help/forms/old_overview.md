@@ -7,8 +7,8 @@ role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
 source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 10%
+source-wordcount: '516'
+ht-degree: 6%
 
 ---
 
@@ -76,6 +76,102 @@ Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, g
 </tr>
 </table>
 
+>[!TIP]
+>
+>Questa raccolta di campioni per dimostrare le varie funzionalità di AEM Forms.
+
+
+## Esempi di moduli adattivi
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+      <img alt= "Captch in AEM Forms" src="./assets/captcha1.png" />
+    </a>
+    <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/registerfornewsletter.html">
+    <strong>Google Captcha in forma adattiva</strong>
+    </a>
+    </div>
+    <p>
+    <em> Distinguere tra accesso umano e automatico ai moduli</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/summaryscreen/jcr:content?wcmmode=disabled">
+    <img alt="Anteprima dati modulo" src="./assets/preview.png" />
+    </a>
+    <div>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/summaryscreen/jcr:content?wcmmode=disabled">
+    <strong>Esamina dati del modulo</strong>
+    </a>
+    </div>
+    <p>
+    <em>Visualizzare l’anteprima dei dati del modulo prima di inviarlo.</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/forms/af/addinlineimage.html">
+      <img alt=" Immagine in linea" src="./assets/preview.png" />
+    </a>
+     <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/addinlineimage.html">
+        <strong>Visualizza immagine in linea</strong>
+      </a>
+    </div>
+    <p>
+    <em>Visualizza l’immagine aggiunta al modulo.</em>
+    <p>
+  </td>
+</tr>
+</table>
+
+## Esempi di moduli adattivi e di segni
+
+<table>
+<tr>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
+      <img alt="Contratto di locazione" src="./assets/rental-agreement.png" />
+    </a>
+    <div>
+      <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
+    <strong>Esempio di contratto di locazione</strong>
+    </a>
+    </div>
+    <p>
+    <em>Contratto di noleggio tra locatario e proprietario compilato e firmato utilizzando AEM Forms e Adobe Sign</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
+    <img alt="Accordo NDA" src="./assets/nda1.png" />
+    </a>
+    <div>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/ndawizard/jcr:content?wcmmode=disabled">
+    <strong>Genera accordo di non divulgazione</strong>
+    </a>
+    </div>
+    <p>
+    <em>Creare un NDA in modo dinamico e inviarlo per la firma tramite Adobe Sign</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled">
+      <img alt="Firma pacchetto documenti" src="./assets/sign.png" />
+    </a>
+     <div>
+      <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled">
+        <strong>Firma pacchetto di documenti</strong>
+      </a>
+    </div>
+    <p>
+    <em>Firma facilmente più documenti utilizzando Forms e Adobe Sign</em>
+    <p>
+  </td>
+</tr>
+</table>
 
 
 

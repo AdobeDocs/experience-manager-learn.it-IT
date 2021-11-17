@@ -1,30 +1,28 @@
 ---
 title: Creazione della prima comunicazione interattiva per il canale di stampa
-seo-title: Creazione della prima comunicazione interattiva per il canale di stampa
+seo-title: Creating your first interactive communication for the print channel
 description: Le comunicazioni interattive sono novità di AEM Forms 6.4. Questo documento illustra i passaggi necessari per creare una comunicazione interattiva per il canale di stampa.
-seo-description: Le comunicazioni interattive sono novità di AEM Forms 6.4. Questo documento illustra i passaggi necessari per creare una comunicazione interattiva per il canale di stampa.
-feature: Comunicazione interattiva
+seo-description: Interactive Communications is new to AEM Forms 6.4. This document will walk you through the steps needed to create an interactive communication for the print channel.
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 1949aeff-ae56-4abd-8e63-23c2fb4859f2
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 3%
+source-wordcount: '167'
+ht-degree: 2%
 
 ---
-
 
 # Creazione della prima comunicazione interattiva per il canale di stampa
 
 Le comunicazioni interattive sono novità di AEM Forms 6.4. Questo documento illustra i passaggi necessari per creare una comunicazione interattiva per il canale di stampa.
-
-Visita la pagina [Esempi AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0) per un collegamento a una demo in tempo reale di questa funzionalità.
 
 ## Prerequisiti {#prerequistes}
 
@@ -39,4 +37,3 @@ Al termine di questa esercitazione, avrai appreso quanto segue:
 * Crea frammenti di documento
 * Configurare tabelle e grafici
 * Usa cartelle controllate per generare documenti in modalità batch
-

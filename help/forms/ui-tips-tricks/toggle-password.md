@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9270
-source-git-commit: 96b78ff5056bd9c2be39fb2cf21b4f92863af089
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '167'
 ht-degree: 4%
 
 ---
@@ -20,9 +20,7 @@ ht-degree: 4%
 Un caso d’uso comune consiste nell’consentire ai compilatori di passare alla visibilità del testo immesso nel campo password.
 Per eseguire questo caso d’uso, ho utilizzato l’icona occhio dal [Libreria a forma di carattere](https://fontawesome.com/). I CSS richiesti e eye.svg sono inclusi nella libreria client creata per questa dimostrazione.
 
-## Esempio live
 
-[Questa funzionalità è disponibile per il test qui](https://forms.enablementadobe.com/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
 
 ## Codice di esempio
 

@@ -1,31 +1,31 @@
 ---
 title: Servizio Codice A Barre Con Forms Adattivo
 description: Uso del servizio codice a barre per decodificare i codici a barre e comporre i campi modulo dai dati estratti.
-feature: Forms barcoded
+feature: Barcoded Forms
 version: 6.4,6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: f89cd02d-3ffe-42c6-b547-c0445f912ee8
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
-
 
 # Servizio Codice A Barre Con Forms Adattivo{#barcode-service-with-adaptive-forms}
 
 Questo articolo illustra l’utilizzo del servizio Codice a barre per compilare i moduli adattivi. Il caso d’uso è il seguente:
 
-1. L’utente aggiunge un PDF con codice a barre come allegato al modulo adattivo
+1. L’utente aggiunge PDF con codice a barre come allegato al modulo adattivo
 1. Il percorso dell&#39;allegato viene inviato al servlet
 1. Il servlet ha decodificato il codice a barre e restituisce i dati in formato JSON
 1. Il modulo adattivo viene quindi compilato utilizzando i dati decodificati
 
 Il codice seguente decodifica il codice a barre e compila un oggetto JSON con i valori decodificati. Il servlet restituisce quindi l’oggetto JSON nella risposta all’applicazione chiamante.
 
-Puoi vedere questa funzionalità in tempo reale, visita il [portale dei campioni](https://forms.enablementadobe.com/content/samples/samples.html?query=0) e cerca la demo del servizio codice a barre
+
 
 ```java
 public JSONObject extractBarCode(Document pdfDocument) {
@@ -140,11 +140,10 @@ Riga 23 - Chiama il metodo extractBarCode di DocumentServices per ottenere il po
 
 Per eseguire questo sul sistema, segui i seguenti passaggi
 
-1. [Scarica l’importazione di BarcodeService.](assets/barcodeservice.zip) zipand in AEM utilizzando il gestore di pacchetti
+1. [Scarica BarcodeService.zip](assets/barcodeservice.zip) e importare in AEM utilizzando il gestore dei pacchetti
 1. [Scaricare e installare il bundle DocumentServices personalizzato](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Scaricare e installare il bundle DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [Scarica il modulo PDF di esempio](assets/barcode.pdf)
 1. Posiziona il browser sul [modulo adattivo di esempio](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
 1. Carica il PDF di esempio fornito
 1. Dovresti visualizzare i moduli compilati con i dati
-
