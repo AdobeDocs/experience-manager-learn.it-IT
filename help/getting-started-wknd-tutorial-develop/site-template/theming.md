@@ -1,43 +1,42 @@
 ---
-title: Flusso di lavoro dei temi
-seo-title: Guida introduttiva ad AEM Sites - Flusso di lavoro dei temi
-description: Scopri come aggiornare le origini dei temi di un sito Adobe Experience Manager per applicare stili specifici per il marchio. Scopri come utilizzare un server proxy per visualizzare un’anteprima live degli aggiornamenti CSS e JavaScript. Questa esercitazione illustra anche come distribuire gli aggiornamenti a un tema in un sito AEM utilizzando le azioni GitHub.
+title: Flusso di lavoro dei temi | Creazione rapida di siti AEM
+description: Scopri come aggiornare le origini dei temi di un sito Adobe Experience Manager per applicare stili specifici per il marchio. Scopri come utilizzare un server proxy per visualizzare un’anteprima live degli aggiornamenti CSS e JavaScript. Questa esercitazione illustra anche come distribuire gli aggiornamenti a un tema in un sito AEM utilizzando la pipeline Front End di Adobe Cloud Manager.
 sub-product: sites
 version: Cloud Service
 type: Tutorial
-feature: Componenti core
-topic: Gestione dei contenuti, sviluppo
+feature: Core Components
+topic: Content Management, Development
 role: Developer
 level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
+source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
-
 
 # Flusso di lavoro dei temi {#theming}
 
 >[!CAUTION]
 >
-> Le funzionalità di creazione rapida dei siti mostrate qui saranno rilasciate nella seconda metà del 2021. La relativa documentazione è disponibile a scopo di anteprima.
+> Lo strumento di creazione rapida del sito è attualmente un&#39;anteprima tecnica. Esso è messo a disposizione a fini di prova e valutazione e non è destinato all&#39;uso della produzione se non concordato con il sostegno Adobe.
 
-In questo capitolo verranno aggiornate le origini dei temi di un sito Adobe Experience Manager per applicare stili specifici per il marchio. Scopriremo come utilizzare un server proxy per visualizzare un’anteprima degli aggiornamenti CSS e Javascript mentre effettuiamo il codice per il sito live. Questa esercitazione illustra anche come distribuire gli aggiornamenti a un tema in un sito AEM utilizzando le azioni GitHub.
+In questo capitolo verranno aggiornate le origini dei temi di un sito Adobe Experience Manager per applicare stili specifici per il marchio. Impareremo come utilizzare un server proxy per visualizzare un’anteprima degli aggiornamenti CSS e Javascript durante la codifica rispetto al sito live. Questa esercitazione illustra anche come distribuire gli aggiornamenti a un tema in un sito AEM utilizzando la pipeline Front End di Adobe Cloud Manager.
 
 Alla fine il nostro sito verrà aggiornato per includere gli stili che corrispondono al marchio WKND.
 
 ## Prerequisiti {#prerequisites}
 
-Si tratta di un tutorial in più parti e si presume che i passaggi descritti nel capitolo [Modelli di pagina](./page-templates.md) siano stati completati.
+Si tratta di un tutorial in più parti e si presume che i passaggi descritti in [Modelli di pagina](./page-templates.md) capitolo completato.
 
 ## Obiettivi
 
 1. Scopri come scaricare e modificare le origini dei temi di un sito.
 1. Scopri come eseguire il codice rispetto al sito live per un’anteprima in tempo reale.
-1. Comprendi il flusso di lavoro end-to-end della distribuzione degli aggiornamenti CSS e JavaScript compilati come parte di un tema utilizzando le azioni GitHub.
+1. Comprendi il flusso di lavoro end-to-end della distribuzione degli aggiornamenti CSS e JavaScript compilati come parte di un tema utilizzando la pipeline front-end di Adobe Cloud Manager.
 
 ## Aggiornare un tema {#theme-update}
 
@@ -54,31 +53,36 @@ Passi di alto livello per il video:
 
 ### File della soluzione
 
-Scarica gli stili finiti per il [tema WKND](assets/theming/WKND-THEME-src.zip)
+Scarica gli stili completati per la [Tema di esempio WKND](assets/theming/WKND-THEME-src-1.1.zip)
 
-## Distribuire un tema {#deploy-theme}
+## Distribuire un tema utilizzando una pipeline front-end {#deploy-theme}
 
-Distribuire aggiornamenti a un tema in un ambiente AEM utilizzando le azioni GitHub.
+Distribuire gli aggiornamenti a un tema in un ambiente AEM utilizzando la pipeline front-end di Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/332919/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338722/?quality=12&learn=on)
 
 Passi di alto livello per il video:
 
-1. Aggiungi il progetto origini tema a [GitHub come nuovo archivio](https://docs.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line).
-1. Crea [un token di accesso personale in GitHub](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) e salva in una posizione sicura.
-1. Configura le impostazioni GitHub nell’ambiente AEM per puntare all’archivio GitHub e includere il token di accesso personale.
-1. Crea i seguenti [segreti crittografati](https://docs.github.com/en/actions/reference/encrypted-secrets) nel tuo archivio GitHub:
-   * **AEM_SITE** : radice del sito AEM (ad es.  `wknd`)
-   * **AEM_URL** : url dell’ambiente di authoring di AEM
-   * **GIT_TOKEN**  - Token di accesso personale dal passaggio 2.
-1. Esegui l’azione GitHub: **Genera e distribuisci gli artefatti Github**. Ciò avrà l&#39;effetto a valle dell&#39;esecuzione dell&#39;azione: **Aggiorna la configurazione del tema in AEM con artifact id**, che distribuirà le origini del tema nell&#39;ambiente AEM come specificato da `AEM_URL` e `AEM_SITE`.
+1. Creare un nuovo git [archivio in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html)
+1. Aggiungi il progetto origini tema all’archivio Git di Cloud Manager:
+
+   ```shell
+   $ cd <PATH_TO_THEME_SOURCES_FOLDER>
+   $ git init -b main
+   $ git add .
+   $ git commit -m "initial commit"
+   $ git remote add origin <CLOUD_MANAGER_GIT_REPOSITORY_URL>
+   ```
+
+1. Configura un [Pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html) in Cloud Manager per distribuire il codice front-end.
+1. Esegui la pipeline Front End per distribuire gli aggiornamenti all’ambiente AEM di destinazione.
 
 ### Operazioni di pronti contro termine di esempio
 
 Ci sono un paio di esempi di repository GitHub che possono essere utilizzati come riferimento:
 
-* [aem-site-template-basic-theme-e2e](https://github.com/adobe/aem-site-template-basic-theme-e2e)  - Utilizzato come esempio per progetti &quot;reali&quot;.
-* [https://github.com/godanny86/wknd-theme](https://github.com/godanny86/wknd-theme)  - Utilizzato come esempio per i seguenti tutorial.
+* [aem-site-template-standard](https://github.com/adobe/aem-site-template-standard)
+* [aem-site-template-basic-theme-e2e](https://github.com/adobe/aem-site-template-basic-theme-e2e) - Utilizzato come esempio per progetti &quot;nel mondo reale&quot;.
 
 ## Congratulazioni! {#congratulations}
 
@@ -86,4 +90,4 @@ Congratulazioni, hai appena creato un tema aggiornato e distribuito da AEM!
 
 ### Passaggi successivi {#next-steps}
 
-Approfondisci AEM lo sviluppo e scopri di più sulla tecnologia sottostante creando un sito utilizzando il [AEM Project Archetype](../project-archetype/overview.md).
+Approfondisci l&#39;AEM dello sviluppo e scopri di più sulla tecnologia sottostante creando un sito utilizzando il [Archetipo di progetto AEM](../project-archetype/overview.md).
