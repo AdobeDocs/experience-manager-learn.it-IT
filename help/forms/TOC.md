@@ -5,9 +5,9 @@ user-guide-title: Video e tutorial su AEM Forms
 user-guide-description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms.
 breadcrumb-title: Tutorial su AEM Forms
 index: y
-source-git-commit: 84a0c78f89f78e161b460574b5927fc4aba2fe3a
+source-git-commit: bbb2c352e8a4297496f248bbbc86252ac7118999
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1628'
 ht-degree: 3%
 
 ---
@@ -99,6 +99,7 @@ ht-degree: 3%
    + [Attiva/disattiva il testo del campo password](ui-tips-tricks/toggle-password.md)
    + [Pulsanti Spazio della barra degli strumenti](ui-tips-tricks/toolbar-buttons.md)
    + [Spostarsi tra le schede con i pannelli nidificati](ui-tips-tricks/nested-panels.md)
+   + [Aggiungi icone alle schede di navigazione](ui-tips-tricks/active-complete.md)
 + Personalizzazione della casella in entrata{#inbox-customization}
    + [Introduzione](inbox-customization/introduction.md)
    + [Aggiungi colonna personalizzata](inbox-customization/add-married-column.md)
@@ -277,7 +278,7 @@ ht-degree: 3%
    + [PDFG: Passaggi per la risoluzione dei problemi specifici di HtmltoPDF su unix(PhantomJS)](troubleshooting/steps-to-troubleshoot-htmltopdf-specific-issues-on-unix-phantomjs.md)
    + [PDFG: Passaggi per la risoluzione dei problemi specifici di HtmltoPDF su unix(conversione WebKit)](troubleshooting/steps-to-troubleshoot-htmltopdf-specific-issues-on-unix-webkit.md)
    + [PDFG: Passaggi per la risoluzione dei problemi di conversione PDFG per più utenti in unix](troubleshooting/steps-to-troubleshoot-multi-user-pdfg-conversion-on-unix.md)
-   + [PDFG: Passaggi per la risoluzione dei problemi relativi alla conversione PDFG per più utenti in Windows](troubleshooting/steps-to-troubleshoot-multi-user-pdfg-conversion-on-windows.md)
+   + [PDFG: Passaggi per la risoluzione dei problemi relativi alla conversione del PDFG per più utenti in Windows](troubleshooting/steps-to-troubleshoot-multi-user-pdfg-conversion-on-windows.md)
    + [PDFG: Passaggi per la risoluzione dei problemi specifici di OpenOffice su unix](troubleshooting/steps-to-troubleshoot-openoffice-specific-issues-on-unix.md)
    + [PDFG: Passaggi per la risoluzione dei problemi specifici di OpenOffice in Windows](troubleshooting/steps-to-troubleshoot-openoffice-specific-issues-on-windows.md)
    + [Sicurezza dei documenti: Come applicare i criteri creati utilizzando il modulo di protezione dei documenti in Acrobat](troubleshooting/how-to-apply-policy-created-using-document-security-module-in-acrobat.md)
