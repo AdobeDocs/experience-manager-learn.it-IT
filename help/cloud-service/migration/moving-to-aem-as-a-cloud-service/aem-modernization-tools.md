@@ -8,10 +8,10 @@ level: Experienced
 kt: 8629
 thumbnail: 336965.jpeg
 exl-id: 310f492c-0095-4015-81a4-27d76f288138
-source-git-commit: 3657e7798774f9cc673ff6ccd8af1a555b1d4013
+source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 1%
+source-wordcount: '475'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ Scopri come AEM gli strumenti di modernizzazione vengono utilizzati per aggiorna
 
 Gli strumenti di modernizzazione AEM convertono automaticamente le pagine AEM esistenti composte da modelli statici, componenti di base e parsys legacy, per utilizzare approcci moderni quali modelli modificabili, componenti AEM WCM core e contenitori di layout.
 
-### Attività chiave
+## Attività chiave
 
 + Clona la produzione AEM 6.x per eseguire gli strumenti di modernizzazione AEM contro
 + Scarica e installa la [strumenti di modernizzazione AEM più recenti](https://github.com/adobe/aem-modernize-tools/releases/latest) sul clone di produzione AEM 6.x tramite Gestione pacchetti
@@ -50,8 +50,50 @@ Gli strumenti di modernizzazione AEM convertono automaticamente le pagine AEM es
    + Esegui lo strumento Convertitore finestra di dialogo rispetto alle finestre di dialogo esistenti basate sull’interfaccia utente ExtJS o Coral2
    + Sincronizza nuovamente le finestre di dialogo convertite nell’archivio Git
 
-### Altre risorse
+## Esercitazione pratica
+
+Applica la tua conoscenza provando quello che hai imparato con questo esercizio pratico.
+
+Prima di provare l&#39;esercizio pratico, assicurati di aver visto e compreso il video precedente e i seguenti materiali:
+
++ [Pensare diversamente a AEM as a Cloud Service](./introduction.md)
++ [Modernizzazione dell’archivio](./repository-modernization.md)
++ [Contenuto variabile e immutabile](../../developing/basics/mutable-immutable.md)
++ [AEM struttura del progetto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=it)
+
+Inoltre, assicurati di aver completato l&#39;esercizio pratico precedente:
+
++ [Esercitazione pratica BPA e CAM](./bpa-and-cam.md#hands-on-exercise)
+
+<table style="border-width:0">
+    <tr>
+        <td style="width:150px">
+            <a  rel="noreferrer"
+                target="_blank"
+                href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session2-migration#bootcamp---session-2-migration-methodology"><img alt="Esercitazione pratica dell’archivio GitHub" src="./assets/github.png"/>
+            </a>        
+        </td>
+        <td style="width:100%;margin-bottom:1rem;">
+            <div style="font-size:1.25rem;font-weight:400;">Mani aperte con AEM modernizzazione</div>
+            <p style="margin:1rem 0">
+                Scopri come utilizzare AEM strumenti di modernizzazione per aggiornare un sito WKND legacy in modo che sia conforme alle best practice as a Cloud Service AEM.
+            </p>
+            <a  rel="noreferrer"
+                target="_blank"
+                href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session2-migration#bootcamp---session-2-migration-methodology" class="spectrum-Button spectrum-Button--primary spectrum-Button--sizeM">
+                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Prova gli strumenti di modernizzazione AEM</span>
+            </a>
+        </td>
+    </tr>
+</table>
+
+## Altre risorse
 
 + [Download degli strumenti di modernizzazione AEM](https://github.com/adobe/aem-modernize-tools/releases/latest)
 + [Documentazione sugli strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-tools/)
 + [AEM Gems - Introduzione alla suite di modernizzazione AEM](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
+
+
+
+1. Distribuisci il nuovo sito wknd-legacy modernizzato sull&#39;SDK del Cloud Service locale. Disponibile qui:
++ [Portale di distribuzione software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.htm).
