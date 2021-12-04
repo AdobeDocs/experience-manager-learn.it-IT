@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d85b7ac3-42c1-4655-9394-29a797c0e1d7
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 È possibile fare riferimento a un frammento di contenuto all’interno di un altro frammento di contenuto. Questo consente all’utente di creare modelli di dati complessi con relazioni tra i frammenti.
 
-In questo capitolo verrà aggiornato il modello Avventura per includere un riferimento al modello Collaboratore utilizzando il campo **Riferimento frammento** . Inoltre verrà illustrato come modificare una query GraphQL per includere campi da un modello di riferimento.
+In questo capitolo verrà aggiornato il modello Avventura per includere un riferimento al modello Collaboratore utilizzando **Riferimento frammento** campo . Inoltre verrà illustrato come modificare una query GraphQL per includere campi da un modello di riferimento.
 
 ## Prerequisiti
 
@@ -39,39 +39,39 @@ In questo capitolo impareremo come:
 Aggiorna il modello di frammento di contenuto avventura per aggiungere un riferimento al modello Collaboratore.
 
 1. Apri un nuovo browser e passa a AEM.
-1. Dal menu **AEM Avvio** vai a **Strumenti** > **Risorse** > **Modelli di frammenti di contenuto** > **Sito WKND**.
-1. Apri il modello di frammento di contenuto **Avventura**
+1. Da **Inizio AEM** menu vai a **Strumenti** > **Risorse** > **Modelli per frammenti di contenuto** > **Sito WKND**.
+1. Apri **Avventura** Modello per frammento di contenuto
 
    ![Apri il modello di frammento di contenuto di avventura](assets/fragment-references/adventure-content-fragment-edit.png)
 
-1. In **Tipi di dati**, trascina e rilascia un campo **Riferimento frammento** nel pannello principale.
+1. Sotto **Tipi di dati**, trascina e rilascia una **Riferimento frammento** nel pannello principale.
 
    ![Campo Aggiungi riferimento frammento](assets/fragment-references/add-fragment-reference-field.png)
 
-1. Aggiorna **Proprietà** per questo campo con quanto segue:
+1. Aggiorna **Proprietà** per questo campo:
 
    * Rendering come - `fragmentreference`
-   * Etichetta campo - **Collaboratore avventura**
+   * Etichetta campo - **Collaboratore di avventura**
    * Nome proprietà - `adventureContributor`
-   * Tipo di modello - Seleziona il modello **Collaboratore**
+   * Tipo di modello - Seleziona il **Collaboratore** model
    * Percorso directory principale - `/content/dam/wknd`
 
    ![Proprietà dei riferimenti ai frammenti](assets/fragment-references/fragment-reference-properties.png)
 
-   È ora possibile utilizzare il nome della proprietà `adventureContributor` per fare riferimento a un frammento di contenuto per collaboratori.
+   Nome della proprietà `adventureContributor` può ora essere utilizzato per fare riferimento a un frammento di contenuto da collaboratore.
 
 1. Salva le modifiche apportate al modello.
 
 ## Assegnare un collaboratore a un’avventura
 
-Ora che il modello Frammento di contenuto avventura è stato aggiornato, possiamo modificare un frammento esistente e fare riferimento a un collaboratore. La modifica del modello Frammento di contenuto *ha effetto su* tutti i frammenti di contenuto esistenti creati da esso.
+Ora che il modello Frammento di contenuto avventura è stato aggiornato, possiamo modificare un frammento esistente e fare riferimento a un collaboratore. È opportuno notare che la modifica del modello Frammento di contenuto *influenze* eventuali frammenti di contenuto esistenti creati da esso.
 
-1. Passa a **Risorse** > **File** > **Sito WKND** > **Inglese** > **Avventure** > **[Campo di surf di Bali](http://localhost:4502/assets.html/content/dam/wknd/en/adventures/bali-surf-camp)**.
+1. Passa a **Risorse** > **File** > **Sito WKND** > **Inglese** > **Avventure** > **[Bali Surf Camp](http://localhost:4502/assets.html/content/dam/wknd/en/adventures/bali-surf-camp)**.
 
-   ![Cartella Bali Surf Camp](assets/setup/bali-surf-camp-folder.png)
+   ![Cartella Bali Surf Camp](../quick-setup/assets/setup/bali-surf-camp-folder.png)
 
-1. Fai clic sul frammento di contenuto **Bali Surf Camp** per aprire l’Editor frammento di contenuto.
-1. Aggiorna il campo **Collaboratore avventura** e seleziona un Collaboratore facendo clic sull’icona della cartella.
+1. Fai clic su **Bali Surf Camp** frammento di contenuto per aprire l’Editor frammento di contenuto.
+1. Aggiorna **Collaboratore di avventura** e seleziona un collaboratore facendo clic sull’icona della cartella.
 
    ![Seleziona Stacey Roswells come collaboratore](assets/fragment-references/stacey-roswell-contributor.png)
 
@@ -79,11 +79,11 @@ Ora che il modello Frammento di contenuto avventura è stato aggiornato, possiam
 
    ![percorso popolato per il collaboratore](assets/fragment-references/populated-path.png)
 
-   È possibile selezionare solo i frammenti creati utilizzando il modello **Collaboratore**.
+   Tenere presente che solo i frammenti creati con la funzione **Collaboratore** è possibile selezionare il modello.
 
 1. Salvare le modifiche apportate al frammento.
 
-1. Ripeti i passaggi precedenti per assegnare un collaboratore a avventure come [Yosemite Backpackaging](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking) e [Colorado Rock Climbing](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/colorado-rock-climbing/colorado-rock-climbing)
+1. Ripeti i passaggi precedenti per assegnare un collaboratore a avventure come [Yosemite Backpack](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking) e [Arrampicata su Rock del Colorado](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/colorado-rock-climbing/colorado-rock-climbing)
 
 ## Query di frammento di contenuto nidificato con GraphiQL
 
@@ -113,7 +113,7 @@ Quindi, esegui una query per un’avventura e aggiungi proprietà nidificate del
    }
    ```
 
-   La query di cui sopra è per un singolo Avventura dal suo percorso. La proprietà `adventureContributor` fa riferimento al modello Collaboratore e possiamo quindi richiedere le proprietà dal frammento di contenuto nidificato.
+   La query di cui sopra è per un singolo Avventura dal suo percorso. La `adventureContributor` fa riferimento al modello Collaboratore e possiamo quindi richiedere le proprietà dal frammento di contenuto nidificato.
 
 1. Esegui la query e ottieni un risultato simile al seguente:
 
@@ -137,7 +137,7 @@ Quindi, esegui una query per un’avventura e aggiungi proprietà nidificate del
    }
    ```
 
-1. Sperimenta con altre query come `adventureList` e aggiungi proprietà per il frammento di contenuto a cui si fa riferimento in `adventureContributor`.
+1. Sperimenta con altre query come `adventureList` e aggiungere proprietà per il frammento di contenuto a cui si fa riferimento in `adventureContributor`.
 
 ## Aggiornare l’app React per visualizzare il contenuto del collaboratore
 
@@ -149,7 +149,7 @@ Quindi, aggiorna le query utilizzate dall’applicazione React in modo da includ
 
    ![IDE componente Dettagli avventura](assets/fragment-references/adventure-detail-ide.png)
 
-1. Trova la funzione `adventureDetailQuery(_path)`. La funzione `adventureDetailQuery(..)` racchiude semplicemente una query GraphQL con filtro, che utilizza AEM sintassi `<modelName>ByPath` per eseguire query su un singolo frammento di contenuto identificato dal relativo percorso JCR.
+1. Trova la funzione `adventureDetailQuery(_path)`. La `adventureDetailQuery(..)` funzione racchiude semplicemente una query GraphQL di filtro, che utilizza AEM `<modelName>ByPath` per eseguire query su un singolo frammento di contenuto identificato dal relativo percorso JCR.
 
 1. Aggiorna la query per includere informazioni sul collaboratore a cui si fa riferimento:
 
@@ -197,11 +197,11 @@ Quindi, aggiorna le query utilizzate dall’applicazione React in modo da includ
    }
    ```
 
-   Con questo aggiornamento verranno incluse ulteriori proprietà relative a `adventureContributor`, `fullName`, `occupation` e `pictureReference` nella query.
+   Con questo aggiornamento vengono aggiornate le proprietà aggiuntive relative al `adventureContributor`, `fullName`, `occupation`e `pictureReference` verranno inclusi nella query.
 
-1. Inspect il componente `Contributor` incorporato nel file `AdventureDetail.js` in `function Contributor(...)`. Questo componente esegue il rendering del nome, dell’occupazione e dell’immagine del collaboratore, se le proprietà esistono.
+1. Inspect `Contributor` componente incorporato nel `AdventureDetail.js` file a `function Contributor(...)`. Questo componente esegue il rendering del nome, dell’occupazione e dell’immagine del collaboratore, se le proprietà esistono.
 
-   Il componente `Contributor` è indicato nel metodo `AdventureDetail(...)` `return` :
+   La `Contributor` nel `AdventureDetail(...)` `return` metodo:
 
    ```javascript
    function AdventureDetail(props) {
@@ -228,14 +228,14 @@ Quindi, aggiorna le query utilizzate dall’applicazione React in modo da includ
    $ npm start
    ```
 
-1. Passa a [http://localhost:3000](Http://localhost:3000/) e fai clic su un’avventura con un collaboratore a cui si fa riferimento. Le informazioni per i collaboratori sono ora elencate di seguito l’ **Itinerario**:
+1. Passa a [http://localhost:3000](Http://localhost:3000/) e fai clic su un’avventura con un collaboratore a cui si fa riferimento. Ora puoi visualizzare le informazioni sui collaboratori elencate di seguito **Itinerario**:
 
    ![Collaboratore aggiunto nell’app](assets/fragment-references/contributor-added-detail.png)
 
 ## Congratulazioni!{#congratulations}
 
-Congratulazioni! È stato aggiornato un modello di frammento di contenuto esistente per fare riferimento a un frammento di contenuto nidificato utilizzando il campo **Riferimento frammento** . Hai anche imparato a modificare una query GraphQL per includere campi da un modello di riferimento.
+Congratulazioni! È stato aggiornato un modello di frammento di contenuto esistente per fare riferimento a un frammento di contenuto nidificato utilizzando il **Riferimento frammento** campo . Hai anche imparato a modificare una query GraphQL per includere campi da un modello di riferimento.
 
 ## Passaggi successivi {#next-steps}
 
-Nel capitolo successivo, [Distribuzione di produzione utilizzando un ambiente di pubblicazione AEM](./production-deployment.md), scopri i servizi di authoring e pubblicazione AEM e il modello di implementazione consigliato per le applicazioni headless. Sarà aggiornata un&#39;applicazione esistente per utilizzare le variabili di ambiente per modificare dinamicamente un endpoint GraphQL in base all&#39;ambiente di destinazione. Scoprirai anche come configurare AEM per la condivisione delle risorse tra origini (Cross-Origin resource sharing, CORS).
+Nel capitolo successivo, [Distribuzione di produzione tramite un ambiente di pubblicazione AEM](./production-deployment.md), scopri i servizi AEM Author e Publish e il modello di implementazione consigliato per le applicazioni headless. Sarà aggiornata un&#39;applicazione esistente per utilizzare le variabili di ambiente per modificare dinamicamente un endpoint GraphQL in base all&#39;ambiente di destinazione. Scoprirai anche come configurare AEM per la condivisione delle risorse tra origini (Cross-Origin resource sharing, CORS).
