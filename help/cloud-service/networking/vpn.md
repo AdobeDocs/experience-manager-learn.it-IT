@@ -8,13 +8,13 @@ role: Architect, Developer
 level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
-source-git-commit: 6f047a76693bc05e64064fce6f25348037749f4c
+exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
+source-git-commit: ba2c299baeda632d6ebeff0c6ee07de5ef29b9cb
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
-
 
 # Virtual Private Network (VPN)
 
@@ -24,7 +24,7 @@ Scopri come collegare AEM as a Cloud Service con la tua VPN per creare canali di
 
 Virtual Private Network (VPN) consente a un cliente as a Cloud Service AEM di collegare un programma Cloud Manager a un programma esistente, [supportato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#vpn) VPN. Ciò consente connessioni sicure e controllate tra AEM servizi as a Cloud Service e all&#39;interno della rete del cliente.
 
-Un programma Cloud Manager può avere solo un __singolo__ tipo di infrastruttura di rete. Assicurati che la rete privata virtuale sia la migliore [tipo adeguato di infrastruttura di rete](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html%3Flang%3Dja#general-vpn-considerations) per la AEM as a Cloud Service prima di eseguire i seguenti comandi.
+Un programma Cloud Manager può avere solo un __singolo__ tipo di infrastruttura di rete. Assicurati che la rete privata virtuale sia la migliore [tipo adeguato di infrastruttura di rete](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#general-vpn-considerations) per la AEM as a Cloud Service prima di eseguire i seguenti comandi.
 
 >[!MORELIKETHIS]
 >
@@ -58,7 +58,7 @@ Inizia abilitando Virtual Private Network su AEM as a Cloud Service.
        -H 'x-gw-ims-org-id: <ORGANIZATION_ID>' \
        -H 'x-api-key: <CLIENT_ID>' \
        -H 'Authorization: Bearer <ACCESS_TOKEN>' \
-       -H 'Content-Type: application/json' 
+       -H 'Content-Type: application/json'
    ```
 
 1. Abilitare Virtual Private Network per un programma Cloud Manager utilizzando le API di Cloud Manager [createNetworkInfrastructure](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure) funzionamento. Utilizza le `region` codice ottenuto dall’API di Cloud Manager `listRegions` funzionamento.
@@ -68,7 +68,7 @@ Inizia abilitando Virtual Private Network su AEM as a Cloud Service.
    ```shell
    $ curl -X POST https://cloudmanager.adobe.io/api/program/{programId}/networkInfrastructures \
        -H 'x-gw-ims-org-id: <ORGANIZATION_ID>' \
-       -H 'x-api-key: <CLIENT_ID>' \ 
+       -H 'x-api-key: <CLIENT_ID>' \
        -H 'Authorization: Bearer <ACCESS_TOKEN>' \
        -H 'Content-Type: application/json'
        -d @./vpn-create.json
@@ -79,15 +79,15 @@ Inizia abilitando Virtual Private Network su AEM as a Cloud Service.
 [Scarica l&#39;esempio vpn-create.json](./assets/vpn-create.json)
 
    ```json
-   { 
+   {
        "kind": "vpn",
        "region": "va7",
-       "addressSpace": [ 
+       "addressSpace": [
            "10.104.182.64/26"
        ],
        "dns": {
            "resolvers": [
-               "10.151.201.22", 
+               "10.151.201.22",
                "10.151.202.22",
                "10.154.155.22"
            ]
@@ -130,7 +130,7 @@ Inizia abilitando Virtual Private Network su AEM as a Cloud Service.
    ```shell
    $ curl -X GET https://cloudmanager.adobe.io/api/program/{programId}/networkInfrastructure/{networkInfrastructureId} \
        -H 'x-gw-ims-org-id: <ORGANIZATION_ID>' \
-       -H 'x-api-key: <CLIENT_ID>' \ 
+       -H 'x-api-key: <CLIENT_ID>' \
        -H 'Authorization: <YOUR_BEARER_TOKEN>' \
        -H 'Content-Type: application/json'
    ```
@@ -146,7 +146,7 @@ Inizia abilitando Virtual Private Network su AEM as a Cloud Service.
    ```shell
    $ curl -X PUT https://cloudmanager.adobe.io/api/program/{programId}/environment/{environmentId}/advancedNetworking \
        -H 'x-gw-ims-org-id: <ORGANIZATION_ID>' \
-       -H 'x-api-key: <CLIENT_ID>' \ 
+       -H 'x-api-key: <CLIENT_ID>' \
        -H 'Authorization: Bearer <ACCESS_TOKEN>' \
        -H 'Content-Type: application/json' \
        -d @./vpn-configure.json
@@ -241,9 +241,9 @@ Quando si eseguono chiamate HTTP/HTTPS a servizi esterni su porte non standard, 
     <p>
         Esempio di codice Java™ per la connessione HTTP/HTTPS da AEM as a Cloud Service a un servizio esterno su porte HTTP/HTTPS non standard.
     </p>
-</td>   
-<td></td>   
-<td></td>   
+</td>
+<td></td>
+<td></td>
 </tr>
 </table>
 
@@ -270,21 +270,21 @@ Le connessioni a servizi esterni vengono quindi chiamate attraverso `AEM_PROXY_H
       <p>
             Esempio di codice Java™ che si collega a database SQL esterni configurando AEM pool di origini dati JDBC.
       </p>
-    </td>   
+    </td>
    <td>
       <a  href="./examples/sql-java-apis.md"><img alt="Connessione SQL tramite API Java" src="./assets/code-examples__sql-java-api.png"/></a>
       <div><strong><a href="./examples/sql-java-apis.md">Connessione SQL tramite API Java™</a></strong></div>
       <p>
             Esempio di codice Java™ per la connessione a database SQL esterni utilizzando le API SQL di Java™.
       </p>
-    </td>   
+    </td>
    <td>
       <a  href="./examples/email-service.md"><img alt="Virtual Private Network (VPN)" src="./assets/code-examples__email.png"/></a>
       <div><strong><a href="./examples/email-service.md">Servizio e-mail</a></strong></div>
       <p>
         Esempio di configurazione OSGi tramite AEM per la connessione a servizi e-mail esterni.
       </p>
-    </td>   
+    </td>
 </tr></table>
 
 ### Limitare l’accesso a AEM as a Cloud Service tramite VPN
@@ -300,7 +300,7 @@ La configurazione Virtual Private Network consente di limitare l&#39;accesso AEM
       <p>
             Configura un inserire nell'elenco Consentiti IP in modo che solo il traffico VPN possa accedere a AEM.
       </p>
-    </td>   
+    </td>
    <td>
       <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="Restrizioni di accesso VPN basate sul percorso per AEM Publish" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
       <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections">Restrizioni di accesso VPN basate sul percorso per AEM Publish</a></strong></div>
@@ -308,5 +308,5 @@ La configurazione Virtual Private Network consente di limitare l&#39;accesso AEM
             Richiedi l’accesso VPN per percorsi specifici su AEM Publish.
       </p>
     </td>
-   <td></td>   
+   <td></td>
 </tr></table>
