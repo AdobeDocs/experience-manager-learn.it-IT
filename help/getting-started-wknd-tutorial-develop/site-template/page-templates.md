@@ -11,18 +11,14 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '660'
 ht-degree: 5%
 
 ---
 
 # Modelli di pagina {#page-templates}
-
->[!CAUTION]
->
-> Lo strumento di creazione rapida del sito è attualmente un&#39;anteprima tecnica. Esso è messo a disposizione a fini di prova e valutazione e non è destinato all&#39;uso della produzione se non concordato con il sostegno Adobe.
 
 In questo capitolo esamineremo la relazione tra un modello di pagina e una pagina. Costruiremo un modello di articolo di Magazine senza stile basato su alcuni modelli da [AdobeXD](https://www.adobe.com/products/xd.html). Durante il processo di creazione del modello, sono inclusi i componenti core e le configurazioni di policy avanzate.
 
