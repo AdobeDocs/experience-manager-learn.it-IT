@@ -8,7 +8,8 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 8848
-source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
+exl-id: 31487027-d528-48ea-b626-a740b94dceb8
+source-git-commit: 8d83d01fca3bfc9e6f674f7d73298b42f98a5d46
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
@@ -61,16 +62,16 @@ git config --global credential.username "gbedekar-adobe-com"
 salva la password nel file di configurazione
 
 ```java
-git config --global user.password "bqwxfvxq2akawtqx3oztacb5wax5a7"
+git config --global user.password "XXXX"
 ```
 
 (La password è la password dell’archivio Git di cloud manager)
 
-Registra l’archivio Git di cloud manager con il tuo archivio Git locale. Il comando sottostante associa **adobe** con l’archivio git di cloud manager remoto. Avreste potuto usare un nome qualsiasi invece di **adobe**
+Registra l’archivio Git di cloud manager con il tuo archivio Git locale. Il comando sottostante associa **bankapp** con l’archivio git di cloud manager remoto. Avreste potuto usare un nome qualsiasi invece di **bankapp**
 
 
-```java
-git remote add adobe https://git.cloudmanager.adobe.com/techmarketingdemos/Program2-p24107/
+```shell
+git remote add bankingapp https://git.cloudmanager.adobe.com/<cloud-manager-repo-path>
 ```
 
 (Assicurati di utilizzare l&#39;URL del tuo archivio)
@@ -80,6 +81,3 @@ Controlla se l&#39;archivio remoto è registrato
 ```java
 git remote -v
 ```
-
-
-
