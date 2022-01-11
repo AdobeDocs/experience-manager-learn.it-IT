@@ -12,10 +12,10 @@ mini-toc-levels: 1
 index: y
 exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
 recommendations: disable
-source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
+source-git-commit: a366d485da3f473bd4c1ef31538231965acc825c
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 15%
+source-wordcount: '478'
+ht-degree: 19%
 
 ---
 
@@ -31,7 +31,7 @@ L’esercitazione è progettata per lavorare con **AEM as a Cloud Service** ed �
 * [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)
 * Modelli Sling
-* [Modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
+* [Modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=it)
 * [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
 
 *Stimare 1-2 ore per passare attraverso ciascuna parte dell’esercitazione.*
@@ -44,7 +44,7 @@ Per completare questa esercitazione, è necessario un ambiente di sviluppo local
 
 È necessario installare localmente quanto segue:
 
-* AEM locale **Autore** istanza (Cloud Service SDK, 6.5.5+ o 6.4.8.1+)
+* [AEM locale **Autore** istanza](https://experience.adobe.com/#/downloads) (Cloud Service SDK, 6.5.5+ o 6.4.8.1+)
 * [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 o successivo)
 * [Node.js](https://nodejs.org/it/) (LTS - Supporto a lungo termine)
@@ -55,9 +55,9 @@ Per completare questa esercitazione, è necessario un ambiente di sviluppo local
 
 >[!NOTE]
 >
-> **Ti avvicini adesso ad AEM as a Cloud Service?** Consulta la [seguente guida per configurare un ambiente di sviluppo locale utilizzando SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+> **Ti avvicini adesso ad AEM as a Cloud Service?** Consulta la [seguente guida per configurare un ambiente di sviluppo locale utilizzando SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it).
 >
-> **Nuovo a AEM 6.5?** Consulta la sezione [guida alla configurazione di un ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+> **Nuovo a AEM 6.5?** Consulta la sezione [guida alla configurazione di un ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it).
 
 ## Github {#github}
 
