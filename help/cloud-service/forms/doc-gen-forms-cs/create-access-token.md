@@ -5,11 +5,11 @@ type: Documentation
 role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
-feature: Document Services
+feature: Output Service
 topic: Development
 kt: 8185
 thumbnail: 8185.jpg
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 # Exchange JWT per token di accesso
 
 
-Il JWT creato nel passaggio precedente viene scambiato con le API IMS di Adobe per un token di accesso, che può quindi essere utilizzato per accedere AEM come Cloud Service. Per richiedere un token di accesso, invia una richiesta POST contenente JWT, client_id, client_secret al servizio di autenticazione IMS.
+Il JWT creato nel passaggio precedente viene scambiato con le API Adobe IMS per un token di accesso, che può quindi essere utilizzato per accedere AEM as a Cloud Service. Per richiedere un token di accesso, invia una richiesta POST contenente JWT, client_id, client_secret al servizio di autenticazione IMS.
 
 Il codice seguente è stato utilizzato per generare Exchange JWT per Access Token
 
