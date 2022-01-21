@@ -4,9 +4,9 @@ user-guide-description: Una raccolta di tutorial su Adobe Experience Manager as 
 breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
+source-git-commit: cea9a9dc003b76369db1b7fedb9549062885258d
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '656'
 ht-degree: 21%
 
 ---
@@ -145,6 +145,7 @@ ht-degree: 21%
       + [Cloud Services di inclusione e FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
       + [Invia a Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [Distribuzione in ambiente di sviluppo](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
+      + [Aggiornamento dell&#39;archetipo Maven](./forms/developing-for-cloud-service/updating-project-archetype.md)
    + Creare un modulo adattivo{#create-first-af}
       + [Introduzione](./forms/create-first-af/introduction.md)
       + [Crea tema](./forms/create-first-af/create-theme.md)
@@ -172,6 +173,7 @@ ht-degree: 21%
       + [Modulo di precompilazione](./forms/forms-cs-azure-portal/prefill-af-storage.md)
       + [Invio di query](./forms/forms-cs-azure-portal/query-submitted-data.md)
    + Crea flusso di lavoro di revisione{#create-aem-workflow}
+      + [Esternalizzazione dello storage dei flussi di lavoro](./forms/create-aem-workflow/externalize-workflow.md)
       + [Creare un modello di flusso di lavoro](./forms/create-aem-workflow/create-workflow.md)
       + [Flusso di lavoro di attivazione](./forms/create-aem-workflow/configure-af.md)
    + Adobe Sign con AEM Forms{#forms-and-sign}
