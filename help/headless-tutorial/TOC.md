@@ -6,10 +6,10 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 922248133a12e05ea9068a0646324f2370e743e9
+source-git-commit: 83e16ea87847182139982ea2378d8ff9f079c968
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 21%
+source-wordcount: '221'
+ht-degree: 19%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 21%
       + [5 - Endpoint GraphQL](./graphql/video-series/graphql-endpoints.md)
       + [6 - Architettura di authoring e pubblicazione](./graphql/video-series/author-publish-architecture.md)
       + [7 - Query GraphQL persistenti](./graphql/video-series/graphql-persisted-queries.md)
-   + Tutorial a più passaggi{#multi-step}
+   + Tutorial di base{#multi-step}
       + [Panoramica](./graphql/multi-step/overview.md)
       + [1 - Definizione dei modelli di frammenti di contenuto](./graphql/multi-step/content-fragment-models.md)
       + [2 - Authoring di frammenti di contenuto](./graphql/multi-step/author-content-fragments.md)
@@ -39,6 +39,13 @@ ht-degree: 21%
       + [4 - Query da un’app esterna](./graphql/multi-step/graphql-and-external-app.md)
       + [5 - Modellazione dati avanzata con riferimenti a frammenti](./graphql/multi-step/fragment-references.md)
       + [6 - Distribuzione di produzione](./graphql/multi-step/production-deployment.md)
+   + Tutorial avanzato{#advanced-tutorial}
+      + [Panoramica](/help/headless-tutorial/graphql/advanced-graphql/overview.md)
+      + [1 - Creare modelli di frammenti di contenuto](/help/headless-tutorial/graphql/advanced-graphql/create-content-fragment-models.md)
+      + [2 - Frammenti di contenuto dell’autore](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md)
+      + [3 - Esplorare AEM API GraphQL](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
+      + [4 - Query GraphQL persistenti](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
+      + [5 - Integrazione delle applicazioni client](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
    + Esempi {#example-apps}
       + [Reagire](./graphql/example-apps/react-app.md)
       + [Interfaccia Swift di iOS](./graphql/example-apps/ios-swiftui-app.md)
