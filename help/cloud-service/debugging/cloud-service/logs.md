@@ -13,7 +13,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: 2685f2553349d6f0b48e03f2ed24dcea7ad9ac70
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 3%
@@ -189,7 +189,7 @@ Un&#39;alternativa all&#39;impostazione di livelli di log Java statici ben noti 
 
 Questo richiede l&#39;aggiornamento delle configurazioni OSGi per utilizzare i segnaposto variabili specifiche dell&#39;ambiente. [Valori predefiniti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#default-values) per i livelli di log deve essere impostato come per [Raccomandazioni Adobi](#log-levels). Esempio:
 
-`/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
+`/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json`
 
 ```
 {
@@ -204,6 +204,6 @@ Questo approccio presenta aspetti negativi che devono essere presi in consideraz
 
 + [È consentito un numero limitato di variabili di ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#number-of-variables), e la creazione di una variabile per gestire il livello di registro ne utilizzerà una.
 + Le variabili di ambiente possono essere gestite solo a livello di programmazione tramite [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) o [API HTTP di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties).
-+ Le modifiche alle variabili di ambiente devono essere ripristinate manualmente da uno strumento supportato. Se si dimentica di reimpostare un ambiente di traffico elevato, ad esempio Produzione, a un livello di registro meno dettagliato, i registri potrebbero essere invariati e le prestazioni AEM potrebbero essere influenzate.
++ Le modifiche alle variabili di ambiente devono essere ripristinate manualmente da uno strumento supportato. Se si dimentica di reimpostare un ambiente di traffico elevato, ad esempio Produzione, a un livello di registro meno dettagliato, i registri potrebbero essere invasi dalle prestazioni AEM.
 
 _Le variabili specifiche per l’ambiente non funzionano per le configurazioni del server web Apache o del registro del Dispatcher, in quanto non sono configurate tramite la configurazione OSGi._
