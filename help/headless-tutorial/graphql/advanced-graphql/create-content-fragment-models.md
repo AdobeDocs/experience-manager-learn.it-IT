@@ -131,18 +131,18 @@ Quindi, crea un modello che contenga informazioni su una persona.
 
 10. Sotto **Accetta solo la larghezza dell’immagine specificata**, selezionare &quot;Larghezza massima&quot;. In **Max (pixel)** campo visualizzato, immettere &quot;500&quot;. Seleziona le stesse opzioni per **Accettare solo un&#39;altezza immagine specificata**.
 
-   Queste convalide garantiscono che le immagini aggiunte non superino i valori specificati. A questo punto le regole di convalida devono avere l&#39;aspetto seguente:
-   ![Regole di convalida dei riferimenti ai contenuti](assets/define-content-fragment-models/content-reference-validation.png)
+    Queste convalide garantiscono che le immagini aggiunte non superino i valori specificati. A questo punto le regole di convalida devono avere l&#39;aspetto seguente:
+    ![Regole di convalida dei riferimenti ai contenuti](assets/define-content-fragment-models/content-reference-validation.png)
 
 11. Aggiungi un **Testo a più righe** e fornisci un **Etichetta campo** di &quot;Biografia&quot;. Lascia la **Tipo predefinito** come opzione &quot;Rich Text&quot; predefinita.
 
-   ![Opzioni di biografia](assets/define-content-fragment-models/biography.png)
+    ![Opzioni di biografia](assets/define-content-fragment-models/biography.png)
 
 12. Passa a **Tipi di dati** , quindi trascina un **Enumerazione** campo sotto &quot;Immagine profilo&quot;. Invece del valore predefinito **Rendering come** seleziona **Elenco a discesa**. Inserisci una selezione di opzioni a livello di esperienza istruttore come Esperto, Avanzato, Intermedio.
 
 13. Quindi, trascina un altro **Enumerazione** in &quot;Livello esperienza istruttore&quot; e scegliere &quot;caselle di controllo&quot; sotto **Rendering come** opzione . Entra in diverse abilità come Rock Climbing, Surfing, Cycling, Sci, e Backpackaging. L’etichetta dell’opzione e il valore dell’opzione devono corrispondere come segue:
 
-   ![Enumerazione delle competenze](assets/define-content-fragment-models/skills-enum.png)
+    ![Enumerazione delle competenze](assets/define-content-fragment-models/skills-enum.png)
 
 14. Infine, crea un’etichetta di campo &quot;Dettagli amministratore&quot; utilizzando un **Testo su più righe** campo .
 
