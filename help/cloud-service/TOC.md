@@ -4,9 +4,9 @@ user-guide-description: Una raccolta di tutorial su Adobe Experience Manager as 
 breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: cea9a9dc003b76369db1b7fedb9549062885258d
+source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '674'
 ht-degree: 21%
 
 ---
@@ -131,7 +131,7 @@ ht-degree: 21%
       + [Modernizzatore dell&#39;archivio del codice](./migration/cloud-acceleration-manager/code-repository-modernizer.md)
       + [Dispatcher Converter](./migration/cloud-acceleration-manager/dispatcher-converter.md)
       + [Convertitore indice](./migration/cloud-acceleration-manager/index-converter.md)
-      + [Strumento Asset Workflow Migration (Migrazione flussi di lavoro per risorse)](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
+      + [Asset Workflow Migration (Migrazione flussi di lavoro per risorse)  Strumento](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Navigazione in Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
       + [Utilizzo di Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
 + Forms{#forms}
@@ -166,6 +166,12 @@ ht-degree: 21%
       + [Unisci dati con modello](./forms/doc-gen-forms-cs/merge-data-with-template.md)
       + [Verificare la soluzione](./forms/doc-gen-forms-cs/test.md)
       + [Sfida](./forms/doc-gen-forms-cs/challenge.md)
+   + Generazione di documenti tramite API batch{#formscs-batch-api}
+      + [Introduzione](./forms/formscs-batch-api/introduction.md)
+      + [Configura archiviazione Azure](./forms/formscs-batch-api/configure-azure-storage.md)
+      + [Crea configurazione batch USC](./forms/formscs-batch-api/configure-usc-batch.md)
+      + [Crea configurazione batch](./forms/formscs-batch-api/create-batch-config.md)
+      + [Esegui batch](./forms/formscs-batch-api/execute-batch-generate-documents.md)
    + Archiviazione del portale di Azure{#forms-cs-azure-portal}
       + [Introduzione](./forms/forms-cs-azure-portal/introduction.md)
       + [Crea modello dati modulo](./forms/forms-cs-azure-portal/create-fdm.md)
