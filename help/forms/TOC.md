@@ -5,9 +5,9 @@ user-guide-title: Video e tutorial su AEM Forms
 user-guide-description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms.
 breadcrumb-title: Tutorial su AEM Forms
 index: y
-source-git-commit: 7f9a7951b2d9bb780d5374f17bb289c38b2e2ae7
+source-git-commit: 15b57ec6792bc47d0041946014863b13867adf22
 workflow-type: tm+mt
-source-wordcount: '1633'
+source-wordcount: '1641'
 ht-degree: 3%
 
 ---
@@ -40,6 +40,7 @@ ht-degree: 3%
 + Integrazioni utili{#some-useful-integrations}
    + [Autenticazione a due fattori](some-useful-integrations/two-factor-authentication.md)
    + [Estrazione dati OCR](some-useful-integrations/ocr-data-extraction.md)
+   + [Elenchi a discesa a cascata](some-useful-integrations/geonames-org.md)
 + Creazione del bundle OSGi {#creating-your-first-osgi-bundle}
    + [Configurare l’ambiente](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [Crea servizio OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
@@ -50,6 +51,7 @@ ht-degree: 3%
    + [Servizio di precompilazione in Forms adattivo](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
    + [Invio personalizzato in Forms adattivo](adaptive-forms/custom-submit-aem-forms-article.md)
    + [Captcha in Forms adattivo](adaptive-forms/forms-captcha-feature-video-use.md)
+   + [Funzioni personalizzate nell’editor di regole](adaptive-forms/custom-functions-aem-forms.md)
    + [Incorporazione di moduli adattivi nella pagina web](adaptive-forms/embed-af-web-page.md)
    + [Creazione di una matrice di stringhe](adaptive-forms/converting-comma-seperated-string-to-array.md)
    + [Utilizzo di Imposta valore in XML nel flusso di lavoro OSGI](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
