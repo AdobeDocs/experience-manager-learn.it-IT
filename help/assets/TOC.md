@@ -4,10 +4,10 @@ user-guide-description: Raccolta di video e tutorial su Adobe Experience Manager
 breadcrumb-title: Tutorial su AEM Assets
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: a5c128d92f4a4625279b6ef76c61f1afb6ed45d5
+source-git-commit: c6caa39075bc3c26dedeca4246e7e1f85887b124
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 26%
+source-wordcount: '378'
+ht-degree: 25%
 
 ---
 
@@ -137,6 +137,12 @@ ht-degree: 26%
    + Connettore avanzato{#enhanced-connector}
       + [Nozioni di base sul connettore avanzato](./workfront/enhanced-connector/basics.md)
       + [Cartelle di progetto](./workfront/enhanced-connector/project-folders.md)
+      + Serie di esperti AEM{#aem-experts-series}
+         + [Panoramica](./workfront/enhanced-connector/aem-experts-series/overview.md)
+         + [Configurazione](./workfront/enhanced-connector/aem-experts-series/setup.md)
+         + [Moduli Workfront e metadati AEM](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)
+         + [Tag, cartelle collegate a un progetto e metadati di cartelle](./workfront/enhanced-connector/aem-experts-series/aem-tags-project-linked-folders-and-folder-metadata.md)
+         + [Impostazioni avanzate e flussi di lavoro](./workfront/enhanced-connector/aem-experts-series/advanced-settings-and-workflows.md)
 
 + Traduzione {#translation}
    + [Traduzione dei file di origine](translation/source-file-translation-feature-video-use.md)
