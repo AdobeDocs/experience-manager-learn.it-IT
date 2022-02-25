@@ -2,7 +2,7 @@
 title: Guida introduttiva ad AEM Sites - Archetipo di progetto
 description: Guida introduttiva ad AEM Sites - Archetipo di progetto. L’esercitazione WKND è un tutorial in più parti progettato per gli sviluppatori che non hanno mai utilizzato Adobe Experience Manager. Il tutorial illustra l’implementazione di un sito AEM per un brand di lifestyle fittizio, il WKND. L’esercitazione tratta argomenti fondamentali come la configurazione del progetto, gli archetipi Maven, i componenti core, i modelli modificabili, le librerie client e lo sviluppo dei componenti.
 sub-product: sites
-version: 6.4, 6.5, Cloud Service
+version: 6.5, Cloud Service
 type: Tutorial
 feature: Core Components, Page Editor, Editable Templates, AEM Project Archetype
 topic: Content Management, Development
@@ -12,10 +12,10 @@ mini-toc-levels: 1
 index: y
 exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
 recommendations: disable
-source-git-commit: a366d485da3f473bd4c1ef31538231965acc825c
+source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 19%
+source-wordcount: '475'
+ht-degree: 20%
 
 ---
 
@@ -25,7 +25,7 @@ Ti diamo il benvenuto in un tutorial in più parti progettato per gli sviluppato
 
 Questa esercitazione inizia utilizzando il [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) per generare un nuovo progetto.
 
-L’esercitazione è progettata per lavorare con **AEM as a Cloud Service** ed è compatibile con le versioni precedenti **AEM 6.5.5.0+** e **AEM 6.4.8.1+**. Il sito viene implementato utilizzando:
+L’esercitazione è progettata per lavorare con **AEM as a Cloud Service** ed è compatibile con le versioni precedenti **AEM 6.5.10+**. Il sito viene implementato utilizzando:
 
 * [Archetipo AEM progetto Maven](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
@@ -44,7 +44,7 @@ Per completare questa esercitazione, è necessario un ambiente di sviluppo local
 
 È necessario installare localmente quanto segue:
 
-* [AEM locale **Autore** istanza](https://experience.adobe.com/#/downloads) (Cloud Service SDK, 6.5.5+ o 6.4.8.1+)
+* [AEM locale **Autore** istanza](https://experience.adobe.com/#/downloads) (Cloud Service SDK, 6.5.10+)
 * [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 o successivo)
 * [Node.js](https://nodejs.org/it/) (LTS - Supporto a lungo termine)

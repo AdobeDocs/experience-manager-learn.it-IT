@@ -8,21 +8,21 @@ level: Beginner
 mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
+source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
 workflow-type: tm+mt
 source-wordcount: '3082'
 ht-degree: 1%
 
 ---
 
-
 # Pagine e modelli {#pages-and-template}
 
-In questo capitolo verrà esplorata la relazione tra un componente della pagina di base e modelli modificabili. Verrà creato un modello di articolo non formattato basato su alcuni modelli di [AdobeXD](https://www.adobe.com/products/xd.html). Durante il processo di creazione del modello, sono trattati i componenti core e le configurazioni avanzate dei modelli modificabili .
+In questo capitolo verrà esplorata la relazione tra un componente della pagina di base e modelli modificabili. Verrà creato un modello di articolo non formattato basato su alcuni modelli di [AdobeXD](https://www.adobe.com/products/xd.html). Durante il processo di creazione del modello, sono trattati i componenti core e le configurazioni avanzate dei modelli modificabili.
 
 ## Prerequisiti {#prerequisites}
 
-Rivedi gli strumenti e le istruzioni necessari per configurare un [ambiente di sviluppo locale](overview.md#local-dev-environment).
+Rivedere gli strumenti e le istruzioni necessari per la configurazione di un [ambiente di sviluppo locale](overview.md#local-dev-environment).
 
 ### Progetto iniziale
 
@@ -32,7 +32,7 @@ Rivedi gli strumenti e le istruzioni necessari per configurare un [ambiente di s
 
 Controlla il codice della riga di base su cui si basa l&#39;esercitazione:
 
-1. Estrai il ramo `tutorial/pages-templates-start` da [GitHub](https://github.com/adobe/aem-guides-wknd)
+1. Consulta la sezione `tutorial/pages-templates-start` ramo [GitHub](https://github.com/adobe/aem-guides-wknd)
 
    ```shell
    $ cd ~/code/aem-guides-wknd
@@ -47,13 +47,13 @@ Controlla il codice della riga di base su cui si basa l&#39;esercitazione:
 
    >[!NOTE]
    >
-   > Se utilizzi AEM 6.5 o 6.4, aggiungi il profilo `classic` a qualsiasi comando Maven.
+   > Se utilizzi AEM 6.5 o 6.4, aggiungi la variabile `classic` su qualsiasi comando Maven.
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/pages-templates-solution) o estrarre il codice localmente passando al ramo `tutorial/pages-templates-solution`.
+Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/pages-templates-solution) o controlla il codice localmente passando al ramo `tutorial/pages-templates-solution`.
 
 ## Obiettivo
 
@@ -69,15 +69,15 @@ In questa parte dell’esercitazione verrà creato un nuovo modello Pagina artic
 
 ## Pianificazione dell’interfaccia utente con Adobe XD {#adobexd}
 
-Nella maggior parte dei casi, la pianificazione di un nuovo sito web inizia con modelli e progetti statici. [Adobe ](https://www.adobe.com/products/xd.html) XDè uno strumento di progettazione che crea esperienze utente. Ora esamineremo un kit di interfaccia utente e i modelli per pianificare la struttura del modello di pagina dell’articolo.
+Nella maggior parte dei casi, la pianificazione di un nuovo sito web inizia con modelli e progetti statici. [Adobe XD](https://www.adobe.com/products/xd.html) è uno strumento di progettazione che crea esperienze utente. Ora esamineremo un kit di interfaccia utente e i modelli per pianificare la struttura del modello di pagina dell’articolo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30214/?quality=12&learn=on)
 
-**Scarica il file di progettazione dell’articolo  [WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)**.
+**Scarica la [File di progettazione di articoli WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)**.
 
 >[!NOTE]
 >
-> È disponibile anche un [AEM kit interfaccia utente per componenti core ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) generico come punto di partenza per i progetti personalizzati.
+> Un generico [È disponibile anche AEM kit per l’interfaccia utente dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) come punto di partenza per i progetti personalizzati.
 
 ## Creare il modello di pagina dell’articolo
 
@@ -85,9 +85,9 @@ Quando si crea una pagina, è necessario selezionare un modello da utilizzare co
 
 Ci sono 3 aree principali di [Modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html):
 
-1. **Struttura** : definisce i componenti che fanno parte del modello. Gli autori dei contenuti non potranno modificarli.
-1. **Contenuto iniziale** : definisce i componenti con cui inizierà il modello, che possono essere modificati e/o eliminati dagli autori di contenuti
-1. **Criteri** : definisce le configurazioni in base al comportamento dei componenti e alle opzioni disponibili per gli autori.
+1. **Struttura** - definisce i componenti che fanno parte del modello. Gli autori dei contenuti non potranno modificarli.
+1. **Contenuto iniziale** - definisce i componenti con cui inizierà il modello, che possono essere modificati e/o eliminati dagli autori di contenuti
+1. **Criteri** - definisce le configurazioni sul comportamento dei componenti e sulle opzioni disponibili per gli autori.
 
 Quindi, crea un nuovo modello in AEM che corrisponda alla struttura dei modelli. Questo si verificherà in un&#39;istanza locale di AEM. Segui i passaggi del video seguente:
 
@@ -97,65 +97,65 @@ Passaggi di alto livello per il video seguente:
 
 ### Configurazioni struttura
 
-1. Crea un nuovo modello utilizzando il **Tipo di modello di pagina**, denominato **Pagina articolo**.
-1. Passa alla modalità **Struttura** .
-1. Aggiungi un componente **Frammento esperienza** per agire come **Intestazione** nella parte superiore del modello.
-   * Configura il componente in modo che punti a `/content/experience-fragments/wknd/us/en/site/header/master`.
-   * Imposta il criterio su **Intestazione pagina** e assicurati che l&#39; **Elemento predefinito** sia impostato su `header`. L’elemento `header`sarà oggetto di targeting con CSS nel capitolo successivo.
-1. Aggiungi un componente **Frammento esperienza** per agire come **Piè di pagina** nella parte inferiore del modello.
-   * Configura il componente in modo che punti a `/content/experience-fragments/wknd/us/en/site/footer/master`.
-   * Imposta il criterio su **Piè di pagina** e assicurati che l&#39; **Elemento predefinito** sia impostato su `footer`. L’elemento `footer` sarà oggetto di targeting con CSS nel capitolo successivo.
-1. Blocca il contenitore **principale** incluso quando il modello è stato creato inizialmente.
-   * Imposta il criterio su **Pagina principale** e assicurati che l&#39; **Elemento predefinito** sia impostato su `main`. L’elemento `main` sarà oggetto di targeting con CSS nel capitolo successivo.
-1. Aggiungi un componente **Immagine** al contenitore **principale** .
-   * Sblocca il componente **Immagine**.
-1. Aggiungi un componente **Breadcrumb** sotto il componente **Immagine** nel contenitore principale.
-   * Crea un nuovo criterio per il componente **Breadcrumb** denominato **Pagina articolo - Breadcrumb**. Impostare il **Livello iniziale di navigazione** su **4**.
-1. Aggiungi un componente **Container** sotto il componente **Breadcrumb** e all’interno del contenitore **principale** . Fungerà da **Contenitore di contenuto** per il modello.
-   * Sblocca il contenitore **Contenuto**.
-   * Imposta il criterio su **Contenuto pagina**.
-1. Aggiungi un altro componente **Contenitore** sotto il **Contenitore di contenuto**. Fungerà da contenitore **Barra laterale** per il modello.
-   * Sblocca il contenitore **Barra laterale** .
+1. Crea un nuovo modello utilizzando **Tipo di modello di pagina**, denominato **Pagina dell’articolo**.
+1. Passa a **Struttura** modalità.
+1. Aggiungi un **Frammento esperienza** come componente **Intestazione** nella parte superiore del modello.
+   * Configura il componente a cui puntare `/content/experience-fragments/wknd/us/en/site/header/master`.
+   * Imposta il criterio su **Intestazione pagina** e assicurano che **Elemento predefinito** è impostato su `header`. La `header`nel capitolo successivo verrà eseguito il targeting con CSS.
+1. Aggiungi un **Frammento esperienza** come componente **Piè di pagina** nella parte inferiore del modello.
+   * Configura il componente a cui puntare `/content/experience-fragments/wknd/us/en/site/footer/master`.
+   * Imposta il criterio su **Piè di pagina** e assicurano che **Elemento predefinito** è impostato su `footer`. La `footer` nel capitolo successivo verrà eseguito il targeting con CSS.
+1. Blocca **principale** contenitore incluso al momento della creazione iniziale del modello.
+   * Imposta il criterio su **Pagina principale** e assicurano che **Elemento predefinito** è impostato su `main`. La `main` nel capitolo successivo verrà eseguito il targeting con CSS.
+1. Aggiungi un **Immagine** nella **principale** contenitore.
+   * Sblocca **Immagine** componente.
+1. Aggiungi un **Breadcrumb** sotto il **Immagine** nel contenitore principale.
+   * Crea un nuovo criterio per **Breadcrumb** componente denominato **Pagina articolo - Breadcrumb**. Imposta la **Livello iniziale navigazione** a **4**.
+1. Aggiungi un **Contenitore** sotto il **Breadcrumb** e all’interno del **principale** contenitore. Questo fungerà da **Contenitore di contenuti** per il modello.
+   * Sblocca **Contenuto** contenitore.
+   * Imposta il criterio su **Contenuto della pagina**.
+1. Aggiungi un altro **Contenitore** sotto il **Contenitore di contenuti**. Questo fungerà da **Barra laterale** contenitore per il modello.
+   * Sblocca **Barra laterale** contenitore.
    * Crea un nuovo criterio denominato **Pagina articolo - Barra laterale**.
-   * Configura i **Componenti consentiti** in **Progetto siti WKND - Contenuto** per includere: **Pulsante**, **Download**, **Immagine**, **Elenco**, **Separatore**, **Condivisione social media**, **Testo** e **Titolo**.
-1. Aggiorna il criterio del contenitore Directory principale pagina. Questo è il contenitore più esterno del modello. Imposta il criterio su **Directory principale pagina**.
-   * In **Impostazioni contenitore**, imposta **Layout** su **Griglia reattiva**.
-1. Attiva la modalità di layout per il **contenitore Contenuto**. Trascinare la maniglia da destra a sinistra e ridurre il contenitore in modo che sia largo 8 colonne.
-1. Attiva la modalità di layout per il **contenitore Barra laterale**. Trascinare la maniglia da destra a sinistra e ridurre il contenitore in modo che sia largo 4 colonne. Quindi trascina la maniglia sinistra da sinistra a destra 1 colonna per rendere il contenitore largo 3 colonne e lascia uno spazio vuoto di 1 colonna tra il **Contenitore di contenuto**.
-1. Apri l’emulatore mobile e passa a un punto di interruzione mobile. Attiva nuovamente la modalità di layout e imposta il **contenitore Contenuto** e il **contenitore Barra laterale** all&#39;intera larghezza della pagina. I contenitori verranno sovrapposti verticalmente nel punto di interruzione mobile.
-1. Aggiorna i criteri del componente **Testo** nel contenitore **Contenuto**.
+   * Configura le **Componenti consentiti** sotto **Progetto WKND Sites - Contenuto** per includere: **Pulsante**, **Scarica**, **Immagine**, **Elenco**, **Separatore**, **Condivisione social media**, **Testo** e **Titolo**.
+1. Aggiorna il criterio del contenitore Directory principale pagina. Questo è il contenitore più esterno del modello. Imposta il criterio su **Radice pagina**.
+   * Sotto **Impostazioni dei contenitori**, imposta le **Layout** a **Griglia reattiva**.
+1. Modalità di layout coinvolgimento per **Contenitore di contenuti**. Trascinare la maniglia da destra a sinistra e ridurre il contenitore in modo che sia largo 8 colonne.
+1. Modalità di layout coinvolgimento per **Contenitore Barra laterale**. Trascinare la maniglia da destra a sinistra e ridurre il contenitore in modo che sia largo 4 colonne. Quindi trascina la maniglia sinistra da sinistra a destra 1 colonna per rendere il contenitore largo 3 colonne e lasciare uno spazio di 1 colonna tra **Contenitore di contenuti**.
+1. Apri l’emulatore mobile e passa a un punto di interruzione mobile. Attiva nuovamente la modalità di layout e imposta la **Contenitore di contenuti** e **Contenitore Barra laterale** la larghezza intera della pagina. I contenitori verranno sovrapposti verticalmente nel punto di interruzione mobile.
+1. Aggiorna il criterio **Testo** nel **Contenitore di contenuti**.
    * Imposta il criterio su **Testo contenuto**.
-   * In **Plugins** > **Stili di paragrafo**, controlla **Abilita stili di paragrafo** e assicurati che il **Blocco di preventivo** sia abilitato.
+   * Sotto **Plug-in** > **Stili paragrafo**, controlla **Abilitare gli stili di paragrafo** e assicurano che **Blocco preventivo** è abilitato.
 
 ### Configurazioni del contenuto iniziale
 
-1. Passa alla modalità **Contenuto iniziale** .
-1. Aggiungi un componente **Titolo** al contenitore **Contenuto**. Questo fungerà da titolo dell&#39;articolo. Quando viene lasciato vuoto, viene visualizzato automaticamente il Titolo della pagina corrente.
-1. Aggiungi un secondo componente **Titolo** sotto il primo componente Titolo.
+1. Passa a **Contenuto iniziale** modalità.
+1. Aggiungi un **Titolo** nella **Contenitore di contenuti**. Questo fungerà da titolo dell&#39;articolo. Quando viene lasciato vuoto, viene visualizzato automaticamente il Titolo della pagina corrente.
+1. Aggiungi un secondo **Titolo** sotto il primo componente Titolo .
    * Configura il componente con il testo: &quot;Per autore&quot;. Segnaposto per il testo.
-   * Imposta il tipo su `H4`.
-1. Aggiungi un componente **Testo** sotto il componente **Per autore** Titolo .
-1. Aggiungi un componente **Titolo** al **Contenitore della barra laterale**.
+   * Imposta il tipo da `H4`.
+1. Aggiungi un **Testo** sotto il **Per autore** Componente titolo.
+1. Aggiungi un **Titolo** nella **Contenitore della barra laterale**.
    * Configura il componente con il testo: &quot;Condividi questa storia&quot;.
-   * Imposta il tipo su `H5`.
-1. Aggiungi un componente **Condivisione social media** sotto il componente **Condividi questa storia** Titolo .
-1. Aggiungi un componente **Separatore** sotto il componente **Condivisione social media** .
-1. Aggiungi un componente **Download** sotto il componente **Separatore**.
-1. Aggiungi un componente **Elenco** sotto il componente **Download** .
-1. Aggiorna le **Proprietà pagina iniziale** per il modello.
-   * Sotto **Social Media** > **Condivisione social media**, controlla **Facebook** e **Pinterest**
+   * Imposta il tipo da `H5`.
+1. Aggiungi un **Condivisione social media** sotto il **Condividi questa storia** Componente titolo.
+1. Aggiungi un **Separatore** sotto il **Condivisione social media** componente.
+1. Aggiungi un **Scarica** sotto il **Separatore** componente.
+1. Aggiungi un **Elenco** sotto il **Scarica** componente.
+1. Aggiorna **Proprietà pagina iniziale** per il modello.
+   * Sotto **Social media** > **Condivisione social media**, controlla **Facebook** e **Pinterest**
 
 ### Abilita il modello e aggiungi una miniatura
 
-1. Per visualizzare il modello nella console Modelli , passa a [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd)
-1. **** Attiva il modello Pagina articolo .
+1. Per visualizzare il modello nella console Modelli , vai a [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd)
+1. **Abilita** il modello Pagina articolo .
 1. Modifica le proprietà del modello Pagina articolo e carica la seguente miniatura per identificare rapidamente le pagine create utilizzando il modello Pagina articolo :
 
    ![Articolo Miniatura del modello di pagina](assets/pages-templates/article-page-template-thumbnail.png)
 
 ## Aggiornare intestazione e piè di pagina con frammenti esperienza {#experience-fragments}
 
-Una pratica comune durante la creazione di contenuto globale, ad esempio intestazione o piè di pagina, consiste nell’utilizzare un [Frammento esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Frammenti esperienza consente agli utenti di combinare più componenti per creare un singolo componente utilizzabile come riferimento. I frammenti esperienza hanno il vantaggio di supportare la gestione multisito e la [localizzazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
+Una pratica comune nella creazione di contenuto globale, ad esempio intestazione o piè di pagina, consiste nell’utilizzare un’ [Frammento esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Frammenti esperienza consente agli utenti di combinare più componenti per creare un singolo componente utilizzabile come riferimento. I frammenti esperienza hanno il vantaggio di supportare la gestione multisito e [localizzazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
 
 L’Archetipo di progetto AEM ha generato un’intestazione e un piè di pagina. Quindi, aggiorna i frammenti esperienza in modo che corrispondano ai pattern. Segui i passaggi del video seguente:
 
@@ -163,43 +163,43 @@ L’Archetipo di progetto AEM ha generato un’intestazione e un piè di pagina.
 
 Passaggi di alto livello per il video seguente:
 
-1. Scarica il pacchetto di contenuti di esempio **[WKND-PagesTemplates-Content-Assets.zip](assets/pages-templates/WKND-PagesTemplates-Content-Assets.zip)**.
-1. Carica e installa il pacchetto di contenuti utilizzando Gestione pacchetti all&#39;indirizzo [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp)
+1. Scarica il pacchetto di contenuti di esempio **[WKND-PagesTemplates-Content-Assets.zip](assets/pages-templates/WKND-PagesTemplates-Content-Assets-1.1.zip)**.
+1. Carica e installa il pacchetto di contenuti utilizzando Gestione pacchetti in [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp)
 1. Aggiorna il modello Variazione web , che è il modello utilizzato per Frammenti esperienza in [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/xf-web-variation/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/xf-web-variation/structure.html)
-   * Aggiorna il criterio il componente **Container** sul modello.
-   * Imposta il criterio su **XF Root**.
-   * In **Componenti consentiti** seleziona il gruppo di componenti **Progetto siti WKND - Struttura** per includere i componenti **Navigazione lingua**, **Navigazione** e **Ricerca rapida**.
+   * Aggiorna il criterio **Contenitore** nel modello.
+   * Imposta il criterio su **Radice XF**.
+   * Sotto **Componenti consentiti** seleziona il gruppo di componenti **Progetto WKND Sites - Struttura** per includere **Navigazione lingua**, **Navigazione** e **Ricerca rapida** componenti.
 
 ### Aggiorna frammento esperienza intestazione
 
-1. Apri il frammento esperienza che esegue il rendering dell&#39;intestazione in [http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/header/master.html](http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/header/master.html)
-1. Configura la directory principale **Container** del frammento. Questa è la più esterna **Contenitore**.
-   * Imposta **Layout** su **Griglia reattiva**
-1. Aggiungi il **Logo WKND Dark** come immagine nella parte superiore del **Contenitore**. Il logo è stato incluso nel pacchetto installato in un passaggio precedente.
-   * Modifica il layout del logo **WKND Dark** in modo che sia largo **2**. Trascinare le maniglie da destra a sinistra.
+1. Apri il frammento esperienza che esegue il rendering dell’intestazione in [http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/header/master.html](http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/header/master.html)
+1. Configurare la radice **Contenitore** del frammento. Questa è la più esterna **Contenitore**.
+   * Imposta la **Layout** a **Griglia reattiva**
+1. Aggiungi il **Logo WKND Dark** come immagine nella parte superiore della **Contenitore**. Il logo è stato incluso nel pacchetto installato in un passaggio precedente.
+   * Modificare il layout del **Logo WKND Dark** essere **2** largo. Trascinare le maniglie da destra a sinistra.
    * Configura il logo con **Testo alternativo** di &quot;WKND Logo&quot;.
-   * Configura il logo su **Collega** a `/content/wknd/us/en` la home page.
-1. Configura il componente **Navigazione** già inserito nella pagina.
-   * Imposta **Escludi livelli radice** su **1**.
-   * Impostare **Profondità struttura di navigazione** su **1**.
-   * Modifica il layout del componente **Navigazione** in modo che sia largo **8**. Trascinare le maniglie da destra a sinistra.
-1. Rimuovi il componente **Navigazione lingua** .
-1. Modifica il layout del componente **Ricerca** in modo che sia largo **2**. Trascinare le maniglie da destra a sinistra. Ora tutti i componenti devono essere allineati orizzontalmente su una singola riga.
+   * Configurare il logo **Collegamento** a `/content/wknd/us/en` la home page.
+1. Configura le **Navigazione** che è già inserito nella pagina.
+   * Imposta la **Escludere i livelli della radice** a **1**.
+   * Imposta la **Profondità struttura di navigazione** a **1**.
+   * Modificare il layout del **Navigazione** componente **8** largo. Trascinare le maniglie da destra a sinistra.
+1. Rimuovi **Navigazione lingua** componente.
+1. Modificare il layout del **Ricerca** componente **2** largo. Trascinare le maniglie da destra a sinistra. Ora tutti i componenti devono essere allineati orizzontalmente su una singola riga.
 
 ### Aggiorna frammento esperienza piè di pagina
 
 1. Apri il frammento esperienza che esegue il rendering del piè di pagina in [http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/footer/master.html](http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/footer/master.html)
-1. Configura la directory principale **Container** del frammento. Questa è la più esterna **Contenitore**.
-   * Imposta **Layout** su **Griglia reattiva**
-1. Aggiungi il **Logo WKND Light** come immagine nella parte superiore del **Contenitore**. Il logo è stato incluso nel pacchetto installato in un passaggio precedente.
-   * Modificare il layout del logo **WKND Light** in modo che sia largo **2**. Trascinare le maniglie da destra a sinistra.
+1. Configurare la radice **Contenitore** del frammento. Questa è la più esterna **Contenitore**.
+   * Imposta la **Layout** a **Griglia reattiva**
+1. Aggiungi il **Logo WKND Light** come immagine nella parte superiore della **Contenitore**. Il logo è stato incluso nel pacchetto installato in un passaggio precedente.
+   * Modificare il layout del **Logo WKND Light** essere **2** largo. Trascinare le maniglie da destra a sinistra.
    * Configura il logo con **Testo alternativo** di &quot;WKND Logo Light&quot;.
-   * Configura il logo su **Collega** a `/content/wknd/us/en` la home page.
-1. Aggiungi un componente **Navigazione** sotto il logo. Configura il componente **Navigazione** :
-   * Imposta **Escludi livelli radice** su **1**.
+   * Configurare il logo **Collegamento** a `/content/wknd/us/en` la home page.
+1. Aggiungi un **Navigazione** sotto il logo. Configura le **Navigazione** componente:
+   * Imposta la **Escludere i livelli della radice** a **1**.
    * Deseleziona **Raccogli tutte le pagine figlie**.
-   * Impostare **Profondità struttura di navigazione** su **1**.
-   * Modifica il layout del componente **Navigazione** in modo che sia largo **8**. Trascinare le maniglie da destra a sinistra.
+   * Imposta la **Profondità struttura di navigazione** a **1**.
+   * Modificare il layout del **Navigazione** componente **8** largo. Trascinare le maniglie da destra a sinistra.
 
 ## Creare una pagina di articolo
 
@@ -210,24 +210,24 @@ Quindi, crea una nuova pagina utilizzando il modello Pagina articolo . Crea il c
 Passaggi di alto livello per il video seguente:
 
 1. Passa alla console Sites all’indirizzo [http://localhost:4502/sites.html/content/wknd/us/en/magazine](http://localhost:4502/sites.html/content/wknd/us/en/magazine).
-1. Crea una nuova pagina sotto **WKND** > **US** > **EN** > **Magazine**.
-   * Scegli il modello **Pagina articolo** .
-   * Alla voce **Proprietà** impostare **Titolo** su &quot;Guida definitiva agli Skatepark LA&quot;
-   * Imposta **Nome** su &quot;guide-la-skatepark&quot;
-1. Sostituisci **Da autore** Titolo con il testo &quot;By Stacey Roswells&quot;.
-1. Aggiorna il componente **Testo** per includere un paragrafo per compilare l&#39;articolo. È possibile utilizzare il seguente file di testo come copia: [la-skate-parks-copy.txt](assets/pages-templates/la-skateparks-copy.txt).
-1. Aggiungi un altro componente **Testo** .
+1. Crea una nuova pagina sotto **WKND** > **US** > **IT** > **Rivista**.
+   * Scegli la **Pagina dell’articolo** modello.
+   * Sotto **Proprietà** imposta **Titolo** alla &quot;Guida definitiva a LA Skatepark&quot;
+   * Imposta la **Nome** a &quot;guide-la-skatepark&quot;
+1. Sostituisci **Per autore** Titolo con il testo &quot;By Stacey Roswells&quot;.
+1. Aggiorna **Testo** per includere un paragrafo per compilare l’articolo. È possibile utilizzare il seguente file di testo come copia: [la-skate-parks-copy.txt](assets/pages-templates/la-skateparks-copy.txt).
+1. Aggiungi un altro **Testo** componente.
    * Aggiorna il componente per includere il preventivo: &quot;Non c&#39;è posto migliore per distruggere allora Los Angeles.&quot;
-   * Modifica l’editor Rich Text in modalità a schermo intero e modifica le virgolette di cui sopra per utilizzare l’elemento **Quote Block** .
+   * Modifica l’Editor Rich Text in modalità a schermo intero e modifica le virgolette di cui sopra per utilizzare il **Blocco preventivo** elemento.
 1. Continua a popolare il corpo dell’articolo per adattarlo ai modelli.
-1. Configura il componente **Download** per utilizzare una versione PDF dell&#39;articolo.
-   * In **Scarica** > **Proprietà**, fai clic sulla casella di controllo per **Ottenere il titolo dalla risorsa DAM**.
-   * Imposta **Descrizione** su: &quot;Ottieni la storia completa&quot;.
-   * Imposta **Testo azione** su: &quot;Scarica PDF&quot;.
-1. Configura il componente **Elenco** .
-   * In **Impostazioni elenco** > **Genera elenco utilizzando**, selezionare **Pagine figlie**.
-   * Imposta **Pagina padre** su `/content/wknd/us/en/magazine`.
-   * In **Impostazioni elemento** controlla **Collega elementi** e controlla **Mostra data**.
+1. Configura le **Scarica** per utilizzare una versione PDF dell’articolo.
+   * Sotto **Scarica** > **Proprietà**, fai clic sulla casella di controllo per **Ottenere il titolo dalla risorsa DAM**.
+   * Imposta la **Descrizione** a: &quot;Ottieni la storia completa&quot;.
+   * Imposta la **Testo azione** a: &quot;Scarica PDF&quot;.
+1. Configura le **Elenco** componente.
+   * Sotto **Impostazioni elenco** > **Crea elenco tramite**, seleziona **Pagine figlie**.
+   * Imposta la **Pagina padre** a `/content/wknd/us/en/magazine`.
+   * Sotto **Impostazioni elemento** check **Collega elementi** e controlla **Mostra data**.
 
 ## Inspect la struttura del nodo {#node-structure}
 
@@ -235,41 +235,41 @@ A questo punto la pagina dell&#39;articolo è chiaramente senza stile. Tuttavia,
 
 Utilizza lo strumento CRXDE-Lite su un&#39;istanza AEM locale per visualizzare la struttura del nodo sottostante.
 
-1. Apri [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent) e utilizza la navigazione ad albero per passare a `/content/wknd/us/en/magazine/guide-la-skateparks`.
+1. Apri [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent) e utilizza la navigazione ad albero per navigare `/content/wknd/us/en/magazine/guide-la-skateparks`.
 
-1. Fai clic sul nodo `jcr:content` sotto la pagina `la-skateparks` e visualizza le proprietà:
+1. Fai clic sul pulsante `jcr:content` sotto il nodo `la-skateparks` e visualizza le proprietà:
 
    ![Proprietà contenuto JCR](assets/pages-templates/jcr-content-properties-CRXDELite.png)
 
-   Osserva il valore per `cq:template`, che punta a `/conf/wknd/settings/wcm/templates/article-page`, il Modello pagina articolo creato in precedenza.
+   Osserva il valore per `cq:template`, che indica `/conf/wknd/settings/wcm/templates/article-page`, Modello pagina articolo creato in precedenza.
 
-   Osserva anche il valore di `sling:resourceType`, che punta a `wknd/components/page`. Si tratta del componente pagina creato dall’archetipo di progetto AEM ed è responsabile del rendering della pagina in base al modello.
+   Osserva anche il valore di `sling:resourceType`, che indica `wknd/components/page`. Si tratta del componente pagina creato dall’archetipo di progetto AEM ed è responsabile del rendering della pagina in base al modello.
 
-1. Espandi il nodo `jcr:content` sotto `/content/wknd/us/en/magazine/guide-la-skateparks/jcr:content` e visualizza la gerarchia dei nodi:
+1. Espandi la `jcr:content` nodo sotto `/content/wknd/us/en/magazine/guide-la-skateparks/jcr:content` e visualizza la gerarchia dei nodi:
 
    ![JCR Content LA Skatepark](assets/pages-templates/page-jcr-structure.png)
 
-   Dovresti essere in grado di mappare liberamente ciascuno dei nodi ai componenti creati. Controlla se puoi identificare i diversi Contenitori di layout utilizzati ispezionando i nodi con prefisso `container`.
+   Dovresti essere in grado di mappare liberamente ciascuno dei nodi ai componenti creati. Vedi se puoi identificare i diversi Contenitori di layout utilizzati dall’ispezione dei nodi con prefisso `container`.
 
 1. Successivamente, controlla il componente della pagina in `/apps/wknd/components/page`. Visualizza le proprietà del componente in CRXDE Lite:
 
    ![Proprietà dei componenti pagina](assets/pages-templates/page-component-properties.png)
 
-   Al di sotto del componente pagina sono presenti solo 2 script HTL, `customfooterlibs.html` e `customheaderlibs.html`. *Quindi, in che modo questo componente esegue il rendering della pagina?*
+   Si noti che esistono solo 2 script HTL, `customfooterlibs.html` e `customheaderlibs.html` sotto il componente pagina. *Quindi, in che modo questo componente esegue il rendering della pagina?*
 
-   La proprietà `sling:resourceSuperType` punta a `core/wcm/components/page/v2/page`. Questa proprietà consente al componente pagina del WKND di ereditare **all** della funzionalità del componente pagina del componente core. Questo è il primo esempio di un elemento chiamato [Pattern componente proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Ulteriori informazioni sono disponibili [qui.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
+   La `sling:resourceSuperType` fa riferimento a `core/wcm/components/page/v2/page`. Questa proprietà consente al componente pagina di WKND di ereditare **tutto** della funzionalità del componente della pagina Componenti core. Questo è il primo esempio di una cosa chiamata [Pattern componente proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Ulteriori informazioni sono disponibili [qui.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
 
-1. Inspect è un altro componente all’interno dei componenti WKND, il componente `Breadcrumb` che si trova in: `/apps/wknd/components/breadcrumb`. La stessa proprietà `sling:resourceSuperType` può essere trovata, ma questa volta punta a `core/wcm/components/breadcrumb/v2/breadcrumb`. Questo è un altro esempio di utilizzo del pattern del componente Proxy per includere un componente core. Infatti, tutti i componenti della base di codice WKND sono proxy dei componenti core AEM (ad eccezione del nostro famoso componente HelloWorld). È consigliabile provare a riutilizzare tutte le funzionalità dei componenti core il più possibile *prima* di scrivere codice personalizzato.
+1. Un altro componente all’interno dei componenti WKND, il `Breadcrumb` componente situato in: `/apps/wknd/components/breadcrumb`. Notate che lo stesso `sling:resourceSuperType` è possibile trovare la proprietà , ma questa volta fa riferimento a `core/wcm/components/breadcrumb/v2/breadcrumb`. Questo è un altro esempio di utilizzo del pattern del componente Proxy per includere un componente core. Infatti, tutti i componenti della base di codice WKND sono proxy dei componenti core AEM (ad eccezione del nostro famoso componente HelloWorld). È consigliabile provare e riutilizzare il più possibile la funzionalità dei componenti core *prima* scrittura di codice personalizzato.
 
-1. Quindi controlla la pagina dei componenti core in `/libs/core/wcm/components/page/v2/page` utilizzando CRXDE Lite:
+1. Quindi controlla la pagina del componente core in `/libs/core/wcm/components/page/v2/page` con CRXDE Lite:
 
    >[!NOTE]
    >
-   > In AEM 6.5/6.4, i componenti core si trovano in `/apps/core/wcm/components`. In AEM come Cloud Service, i componenti core si trovano in `/libs` e vengono aggiornati automaticamente.
+   > In AEM 6.5/6.4, i componenti core si trovano in `/apps/core/wcm/components`. In AEM as a Cloud Service, i componenti core si trovano in `/libs` e vengono aggiornati automaticamente.
 
    ![Pagina dei componenti core](assets/pages-templates/core-page-component-properties.png)
 
-   Molti altri script sono inclusi in questa pagina. La pagina dei componenti core contiene molte funzionalità. Questa funzionalità è suddivisa in più script per facilitarne la manutenzione e la leggibilità. Puoi tracciare l’inclusione degli script HTL aprendo `page.html` e cercando `data-sly-include`:
+   Molti altri script sono inclusi in questa pagina. La pagina dei componenti core contiene molte funzionalità. Questa funzionalità è suddivisa in più script per facilitarne la manutenzione e la leggibilità. Puoi tracciare l’inclusione degli script HTL aprendo la `page.html` e alla ricerca `data-sly-include`:
 
    ```html
    <!--/* /libs/core/wcm/components/page/v2/page/page.html */-->
@@ -305,37 +305,37 @@ Utilizza lo strumento CRXDE-Lite su un&#39;istanza AEM locale per visualizzare l
    </html>
    ```
 
-   L’altro motivo per suddividere l’HTL in più script è consentire ai componenti proxy di sostituire i singoli script per implementare una logica di business personalizzata. Gli script HTL `customfooterlibs.html` e `customheaderlibs.html` vengono creati affinché lo scopo esplicito sia sostituito dall’implementazione dei progetti.
+   L’altro motivo per suddividere l’HTL in più script è consentire ai componenti proxy di sostituire i singoli script per implementare una logica di business personalizzata. Gli script HTL, `customfooterlibs.html` e `customheaderlibs.html`, sono creati per lo scopo esplicito di essere sostituiti dall’implementazione di progetti.
 
-   Per ulteriori informazioni sui fattori del modello modificabile nel rendering della pagina di [contenuto, leggi questo articolo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html).
+   Per ulteriori informazioni sui fattori del modello modificabile nel rendering del [pagina del contenuto leggendo questo articolo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html).
 
-1. Inspect è l’altro componente core, come Breadcrumb in `/libs/core/wcm/components/breadcrumb/v2/breadcrumb`. Visualizzare lo script `breadcrumb.html` per comprendere in che modo viene generato il markup per il componente Breadcrumb.
+1. Inspect è l’altro componente core, come la Breadcrumb in `/libs/core/wcm/components/breadcrumb/v2/breadcrumb`. Visualizza la `breadcrumb.html` script per comprendere in che modo viene generato il markup per il componente Breadcrumb.
 
 ## Salvataggio delle configurazioni nel controllo del codice sorgente {#configuration-persistence}
 
 In molti casi, specialmente all’inizio di un progetto AEM, è utile mantenere le configurazioni, come i modelli e i relativi criteri dei contenuti, al controllo del codice sorgente. In questo modo tutti gli sviluppatori lavorano con lo stesso set di contenuti e configurazioni e possono garantire un’ulteriore coerenza tra gli ambienti. Quando un progetto raggiunge un certo livello di maturità, la gestione dei modelli può essere affidata a un gruppo speciale di utenti.
 
-Per il momento i modelli verranno trattati come altri pezzi di codice e sincronizzeremo il **Modello pagina articolo** verso il basso come parte del progetto. Finora abbiamo **inviato** il codice dal nostro progetto AEM a un&#39;istanza locale di AEM. Il **Modello pagina articolo** è stato creato direttamente su un&#39;istanza locale di AEM, quindi dobbiamo **importare** il modello nel nostro progetto AEM. Il modulo **ui.content** è incluso nel progetto AEM per questo scopo specifico.
+Per il momento i modelli verranno trattati come altri pezzi di codice e sincronizzeremo il **Modello pagina articolo** nell&#39;ambito del progetto. Finora abbiamo **spinto** dal nostro progetto AEM a un&#39;istanza locale di AEM. La **Modello pagina articolo** è stato creato direttamente su un&#39;istanza locale di AEM, quindi dobbiamo **importare** il modello nel nostro progetto AEM. La **ui.content** Il modulo è incluso nel progetto AEM per questo scopo specifico.
 
-I passaggi successivi si svolgeranno utilizzando l’IDE VSCode utilizzando il plug-in [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync&amp;ssr=false#overview) ma potrebbe essere in esecuzione utilizzando qualsiasi IDE configurato per **importare** o importare contenuto da un’istanza locale di AEM.
+I passaggi successivi si svolgeranno utilizzando l’IDE VSCode utilizzando [Sincronizzazione AEM VSCode](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync&amp;ssr=false#overview) plug-in, ma potrebbe utilizzare qualsiasi IDE configurato per **importare** o importa contenuto da un’istanza locale di AEM.
 
-1. In VSCode apri il progetto `aem-guides-wknd` .
+1. In VSCode apri la `aem-guides-wknd` progetto.
 
-1. Espandi il modulo **ui.content** in Project explorer. Espandi la cartella `src` e passa a `/conf/wknd/settings/wcm/templates`.
+1. Espandi la **ui.content** in Project explorer. Espandi la `src` e passa a `/conf/wknd/settings/wcm/templates`.
 
-1. [!UICONTROL Fai clic con ] il pulsante destro del mouse sulla  `templates` cartella e seleziona  **Importa da AEM server**:
+1. [!UICONTROL Clic con il pulsante destro] la `templates` e seleziona **Importa da AEM server**:
 
    ![Modello di importazione VSCode](assets/pages-templates/vscode-import-templates.png)
 
-   È necessario importare i modelli `article-page` e aggiornare anche i modelli `page-content` e `xf-web-variation` .
+   La `article-page` devono essere importati e `page-content`, `xf-web-variation` È inoltre necessario aggiornare i modelli.
 
    ![Modelli aggiornati](assets/pages-templates/updated-templates.png)
 
-1. Ripeti i passaggi per importare il contenuto, ma seleziona la cartella **policy** che si trova in `/conf/wknd/settings/wcm/policies`.
+1. Ripeti i passaggi per importare il contenuto, ma seleziona la **politiche** cartella situata in `/conf/wknd/settings/wcm/policies`.
 
    ![Criteri di importazione VSCode](assets/pages-templates/policies-article-page-template.png)
 
-1. Inspect il file `filter.xml` che si trova in `ui.content/src/main/content/META-INF/vault/filter.xml`.
+1. Inspect `filter.xml` file situato in `ui.content/src/main/content/META-INF/vault/filter.xml`.
 
    ```xml
    <!--ui.content filter.xml-->
@@ -348,13 +348,13 @@ I passaggi successivi si svolgeranno utilizzando l’IDE VSCode utilizzando il p
    </workspaceFilter>
    ```
 
-   Il file `filter.xml` è responsabile dell&#39;identificazione dei percorsi dei nodi che verranno installati con il pacchetto. Osserva `mode="merge"` su ciascuno dei filtri che indica che il contenuto esistente non verrà modificato, ma che viene aggiunto solo un nuovo contenuto. Poiché gli autori di contenuti possono aggiornare questi percorsi, è importante che una distribuzione di codice sovrascriva il contenuto **non**. Per ulteriori informazioni sull&#39;utilizzo degli elementi filtro, consulta la [documentazione FileVault](https://jackrabbit.apache.org/filevault/filter.html) .
+   La `filter.xml` Il file è responsabile dell&#39;identificazione dei percorsi dei nodi che verranno installati con il pacchetto. Osserva che `mode="merge"` in ciascuno dei filtri che indica che il contenuto esistente non verrà modificato, viene aggiunto solo un nuovo contenuto. Poiché gli autori dei contenuti possono aggiornare questi percorsi, è importante che la distribuzione del codice lo faccia **not** sovrascrivi il contenuto. Consulta la sezione [Documentazione FileVault](https://jackrabbit.apache.org/filevault/filter.html) per ulteriori informazioni sull’utilizzo degli elementi filtro.
 
-   Confronta `ui.content/src/main/content/META-INF/vault/filter.xml` e `ui.apps/src/main/content/META-INF/vault/filter.xml` per comprendere i diversi nodi gestiti da ciascun modulo.
+   Confronto `ui.content/src/main/content/META-INF/vault/filter.xml` e `ui.apps/src/main/content/META-INF/vault/filter.xml` per comprendere i diversi nodi gestiti da ciascun modulo.
 
    >[!WARNING]
    >
-   > Per garantire distribuzioni coerenti per il sito WKND Reference, alcuni rami del progetto sono configurati in modo che `ui.content` sovrascriva eventuali modifiche nel JCR. Questo è di progettazione, ovvero per i rami della soluzione, in quanto il codice/gli stili saranno scritti per criteri specifici.
+   > Per garantire distribuzioni coerenti per il sito WKND Reference, alcuni rami del progetto sono configurati in modo che `ui.content` sovrascriverà eventuali modifiche nel JCR. Questo è di progettazione, ovvero per i rami della soluzione, in quanto il codice/gli stili saranno scritti per criteri specifici.
 
 ## Congratulazioni! {#congratulations}
 
@@ -362,9 +362,9 @@ Congratulazioni, hai appena creato un nuovo modello e una nuova pagina con Adobe
 
 ### Passaggi successivi {#next-steps}
 
-A questo punto la pagina dell&#39;articolo è chiaramente senza stile. Segui l’ esercitazione [Librerie lato client e Flusso di lavoro front-end](client-side-libraries.md) per scoprire le best practice per includere CSS e JavaScript per applicare stili globali al sito e integrare una build front-end dedicata.
+A questo punto la pagina dell&#39;articolo è chiaramente senza stile. Segui [Librerie lato client e flusso di lavoro front-end](client-side-libraries.md) esercitazione per scoprire le best practice per includere CSS e JavaScript per applicare stili globali al sito e integrare una build front-end dedicata.
 
-Visualizza il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd) oppure rivedi e distribuisci il codice localmente in sulla barra Git `tutorial/pages-templates-solution`.
+Visualizza il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd) o rivedi e distribuisci il codice localmente in sul blocco Git `tutorial/pages-templates-solution`.
 
-1. Clona il repository [github.com/adobe/aem-wknd-guides](https://github.com/adobe/aem-guides-wknd).
-1. Estrai il ramo `tutorial/pages-templates-solution`.
+1. Clona il [github.com/adobe/aem-wknd-guides](https://github.com/adobe/aem-guides-wknd) archivio.
+1. Consulta la sezione `tutorial/pages-templates-solution` ramo.
