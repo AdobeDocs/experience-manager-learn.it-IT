@@ -4,9 +4,9 @@ user-guide-description: Una raccolta di tutorial su Adobe Experience Manager as 
 breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 0848419e4da935787c351469925cc900d4eb21df
+source-git-commit: 5da75b172a7dda29452954990f6ab2374e7698d9
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '697'
 ht-degree: 23%
 
 ---
@@ -188,6 +188,11 @@ ht-degree: 23%
       + [Configurazione Adobe Sign Cloud](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
       + [Creare un modulo adattivo](./forms/forms-and-sign/create-adaptive-form.md)
       + [Configura per il riempimento e la firma](./forms/forms-and-sign/configure-form-fill-and-sign.md)
+   + Integrazione con Microsoft Dynamics{#formscs-dynamics-crm}
+      + [Creare un’applicazione Dynamics](./forms/formscs-dynamics-crm/create-dynamics-account.md)
+      + [Configura origine dati](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
+      + [Crea modello dati modulo](./forms/formscs-dynamics-crm/create-form-data-model.md)
+      + [Creare un modulo adattivo](./forms/formscs-dynamics-crm/create-adaptive-form.md)
    + Integrare con Salesforce{#integrate-with-salesforce}
       + [Introduzione](./forms/integrate-with-salesforce/introduction.md)
       + [Creare un’app connessa](./forms/integrate-with-salesforce/create-connected-app.md)
@@ -219,7 +224,8 @@ ht-degree: 23%
    + [Risoluzione dei problemi](./asset-compute/troubleshooting.md)
 + Cloud 5{#cloud-5}
    + [Introduzione](./cloud-5/cloud5-introduction.md)
-   + [CDN Deep Dive](./cloud-5/cloud5-aem-cdn-part1.md)
+   + [Stagione 1](./cloud-5/cloud5-season-1.md)
+   + [AEM CDN parte 1](./cloud-5/cloud5-aem-cdn-part1.md)
 + [Serie di esperti AEM](./aem-experts-series.md)
 + Tutorials a più passaggi{#multi-step-tutorials}
    + [Sviluppo AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)
