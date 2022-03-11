@@ -7,10 +7,10 @@ role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
+source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 0%
+source-wordcount: '529'
+ht-degree: 6%
 
 ---
 
@@ -20,19 +20,19 @@ Adobe Experience Manager (AEM) offre diverse opzioni per definire endpoint headl
 
 >[!TIP]
 >
->Questa raccolta di esercitazioni è progettata per gli utenti che preferiscono **imparare facendo**. Se preferisci imparare i concetti da zero, controlla la [AEM Percorso di sviluppatori headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html). Questa serie di esercitazioni e il percorso si completano a vicenda.
+>Questa raccolta di esercitazioni è progettata per gli utenti che preferiscono **imparare facendo**. Se preferisci imparare i concetti da zero, controlla la [AEM Percorso di sviluppatori headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Questa serie di esercitazioni e il percorso si completano a vicenda.
 
 ## Tutorials per API
 
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
-      <img alt="API GraphQL" src="./assets/graphql-icon.png" />
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it">
+      <img alt="API di GraphQL" src="./assets/graphql-icon.png" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
-    <strong>API GraphQL</strong>
+    <strong>API di GraphQL</strong>
     </a>
     </div>
     <p>

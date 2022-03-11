@@ -2,7 +2,7 @@
 title: Guida introduttiva ad AEM Sites - Nozioni di base sui componenti
 description: Scopri la tecnologia di base di un componente Adobe Experience Manager (AEM) Sites tramite un semplice esempio "HelloWorld". Vengono esaminati gli argomenti relativi a HTL, modelli Sling, librerie lato client e finestre di dialogo per l’authoring.
 sub-product: sites
-version: 6.4, 6.5, Cloud Service
+version: 6.5, Cloud Service
 type: Tutorial
 feature: Core Components, Developer Tools
 topic: Content Management, Development
@@ -12,7 +12,7 @@ mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
 workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 1%
@@ -186,7 +186,7 @@ Successivamente, verranno apportati alcuni aggiornamenti al `HelloWorldModel` Mo
 1. Aggiungi le seguenti istruzioni di importazione:
 
    ```java
-   import org.apache.commons.lang.StringUtils;
+   import org.apache.commons.lang3.StringUtils;
    import org.apache.sling.models.annotations.DefaultInjectionStrategy;
    ```
 
