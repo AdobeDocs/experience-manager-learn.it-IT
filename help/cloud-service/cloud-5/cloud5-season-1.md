@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: 4fc95c69f3c15122f9e4b87be469f8bc15097042
+source-git-commit: 83757a34cc82159326d3e035b88f018972d5dc27
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '288'
 ht-degree: 1%
 
 ---
@@ -40,14 +40,16 @@ Ogni stagione varia in lunghezza e sarà rilasciata su un programma fisso. Gli a
       </p>
      </td>   
      <td>
-      <img alt="AEM CDN parte 2" src="./imgs/coming-soon.png"/>
+      <a href="./cloud5-aem-cdn-part2.md">
+         <img alt="AEM CDN parte 2" src="./imgs/002-thumb.png"/>
+      </a>
       <div>
-         <strong>AEM CDN Deep Dive (parte 2)</strong>
+         <a href="./cloud5-aem-cdn-part2.md"><strong>AEM CDN Deep Dive (parte 2)</strong></a>
          <br/><em>con Darin Kuntze e James Talbot, architetti senior di cloud</em>
       </div>
       <p>
         <br/>
-         Prossima 11 marzo 2022
+         La parte 2 è la continuazione del nostro sguardo alla AEM CDN as a Cloud Service. Rispondiamo ad alcune delle domande e dei miti più comuni sulle caratteristiche che ottenete con la nuova CDN.
       </p>
    </td>     
    </td>   
