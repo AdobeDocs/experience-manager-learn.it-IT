@@ -4,10 +4,10 @@ user-guide-description: Una raccolta di video per Adobe Experience Manager Asset
 breadcrumb-title: Video di AEM Assets Essentials
 feature-set: Experience Manager Assets
 team: TM
-source-git-commit: 32917f4fe6be88b1ee1d1f7da1c02d0f81c20fe7
+source-git-commit: 00647ec3e2cf0ead5d6f427fd12b9d0f777f6890
 workflow-type: tm+mt
-source-wordcount: '66'
-ht-degree: 16%
+source-wordcount: '68'
+ht-degree: 17%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 16%
    + [Utilizzando](basics/using.md)
    + [Creazione di contenuto](basics/creating.md)
    + [Collaborazione](basics/collaborating.md)
+   + [Condivisione dei collegamenti](basics/link-sharing.md)
 
 + [Integrazione  Creative Cloud](integrations/creative-cloud.md)
 
