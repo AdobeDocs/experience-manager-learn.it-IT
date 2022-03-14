@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: 83757a34cc82159326d3e035b88f018972d5dc27
+source-git-commit: a8e6e863a4d236babdb1e2ae978240cd51631981
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '334'
 ht-degree: 1%
 
 ---
@@ -51,8 +51,7 @@ Ogni stagione varia in lunghezza e sarà rilasciata su un programma fisso. Gli a
         <br/>
          La parte 2 è la continuazione del nostro sguardo alla AEM CDN as a Cloud Service. Rispondiamo ad alcune delle domande e dei miti più comuni sulle caratteristiche che ottenete con la nuova CDN.
       </p>
-   </td>     
-   </td>   
+   </td>
      <td>
       <img alt="File di registro e registrazione" src="./imgs/coming-soon.png"/>
       <div>
@@ -87,8 +86,7 @@ Ogni stagione varia in lunghezza e sarà rilasciata su un programma fisso. Gli a
         <br/>
          Prossima 1 aprile 2022
       </p>
-   </td>     
-   </td>   
+   </td>
      <td>
       <img alt="Migrazione (parte 1)" src="./imgs/coming-soon.png"/>
       <div>
@@ -98,6 +96,41 @@ Ogni stagione varia in lunghezza e sarà rilasciata su un programma fisso. Gli a
       <p>
         <br/>
          Prossima 8 aprile 2022
+      </p>
+   </td> 
+  </tr>
+<tr>
+   <td>
+      <img alt="Migrazione (parte 2)" src="./imgs/coming-soon.png"/>
+      <div>
+        <strong>Migrazione (parte 2)</strong>        
+         <br/><em>con Darin Kuntze e James Talbot, architetti senior di cloud</em>
+      </div>
+      <p>
+        <br/>
+         Prossima 14 aprile 2022
+      </p>
+     </td>   
+     <td>
+      <img alt="Convalida del dispatcher" src="./imgs/coming-soon.png"/>
+      <div>
+         <strong>Convalida del dispatcher</strong>
+         <br/><em>con Darin Kuntze e James Talbot, architetti senior di cloud</em>
+      </div>
+      <p>
+        <br/>
+         Disponibile dal 22 aprile 2022
+      </p>
+   </td>
+     <td>
+      <img alt="Suggerimenti per l’indicizzazione e la ricerca" src="./imgs/coming-soon.png"/>
+      <div>
+         <strong>Suggerimenti per l’indicizzazione e la ricerca</strong>
+         <br/><em>con Darin Kuntze e James Talbot, architetti senior di cloud</em>
+      </div>
+      <p>
+        <br/>
+         Disponibile dal 29 aprile 2022
       </p>
    </td> 
   </tr>
