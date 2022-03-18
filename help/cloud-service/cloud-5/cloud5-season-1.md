@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: a8e6e863a4d236babdb1e2ae978240cd51631981
+source-git-commit: 187f13c5051237915fdc8a8c0e3280dd0f0702ce
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '362'
 ht-degree: 1%
 
 ---
@@ -53,14 +53,16 @@ Ogni stagione varia in lunghezza e sarà rilasciata su un programma fisso. Gli a
       </p>
    </td>
      <td>
-      <img alt="File di registro e registrazione" src="./imgs/coming-soon.png"/>
+        <a href="./cloud5-aem-log-files.md">
+            <img alt="File di registro e registrazione" src="./imgs/003-thumb.png"/>
+        </a>
       <div>
-         <strong>File di registro e registrazione</strong>
+         <a href="./cloud5-aem-log-files.md"><strong>File di registro e registrazione</strong></a>
          <br/><em>con Darin Kuntze e James Talbot, architetti senior di cloud</em>
       </div>
       <p>
         <br/>
-         Prossima 18 marzo 2022
+         Scopri rapidamente come accedere ai registri in AEM as a Cloud Service, tra cui come accedervi tramite l’interfaccia utente e dalle API.
       </p>
    </td> 
   </tr>
