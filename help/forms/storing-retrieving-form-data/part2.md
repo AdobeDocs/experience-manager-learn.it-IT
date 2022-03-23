@@ -1,19 +1,19 @@
 ---
-title: Memorizzazione e recupero dei dati dei moduli dal database MySQL
+title: Memorizzazione e recupero dei dati del modulo dal database MySQL - Servlet per memorizzare i dati del modulo
 description: Esercitazione in più parti per illustrare i passaggi necessari per memorizzare e recuperare i dati dei moduli
-feature: Moduli adattivi
+feature: Adaptive Forms
 type: Tutorial
 version: 6.3,6.4,6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: dd82f309-dd4e-42ce-8856-e51c898024f5
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 3%
+source-wordcount: '96'
+ht-degree: 0%
 
 ---
-
 
 # Servlet per memorizzare i dati del modulo
 

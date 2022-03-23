@@ -1,18 +1,18 @@
 ---
-title: Creazione di un modello dati modulo
+title: Creazione della parte 3 del modello dati modulo
 description: Questa è la parte 3 di un tutorial in più passaggi per la creazione del primo documento di comunicazione interattivo. In questa parte verrà creato il modello dati del modulo. Il modello dati modulo consente di configurare e connettersi a origini dati diverse. Offre un’interfaccia utente intuitiva per creare uno schema di rappresentazione dei dati unificata delle entità e dei servizi aziendali tra origini dati collegate.Il video seguente illustra i passaggi necessari per creare il modello dati del modulo.
-feature: Comunicazione interattiva
-topic: Sviluppo
+feature: Interactive Communication
+topic: Development
 version: 6.4,6.5
 role: Developer
 level: Beginner
-source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
+exl-id: 798012e5-5099-4fd0-82ad-a21f64a97aca
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 0%
 
 ---
-
 
 # Creazione di un modello dati modulo
 
@@ -30,6 +30,6 @@ Il modello dati del modulo dipende da un’origine dati configurata correttament
 
 Modello dati modulo è la base per tutte le comunicazioni interattive. L’operazione Get/Read del modello dati del modulo recupererà i dati dall’origine dati back-end e verrà utilizzata per compilare il documento di comunicazione interattiva.
 
-Per ulteriori informazioni, consulta [Configurazione di Origini dati](parttwo.md).
+Per ulteriori informazioni consulta [Configurazione di Origini dati](parttwo.md).
 
 Dopo aver creato il modello dati modulo, è possibile utilizzarlo come base per la creazione di frammenti di documento e documenti di comunicazione interattiva.

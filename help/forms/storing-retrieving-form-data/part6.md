@@ -1,18 +1,18 @@
 ---
-title: Memorizzazione e recupero dei dati dei moduli dal database MySQL
+title: Memorizzazione e recupero dei dati del modulo dal database MySQL - Distribuzione
 description: Esercitazione in più parti per illustrare i passaggi necessari per memorizzare e recuperare i dati dei moduli
-feature: Moduli adattivi
-topic: Sviluppo
+feature: Adaptive Forms
+topic: Development
 role: Developer
 level: Experienced
 version: 6.3,6.4,6.5
-source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
+exl-id: f520e7a4-d485-4515-aebc-8371feb324eb
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 3%
+source-wordcount: '278'
+ht-degree: 2%
 
 ---
-
 
 # Distribuisci sul server
 
@@ -26,13 +26,13 @@ ht-degree: 3%
 
 Per testare questa funzionalità sulla tua istanza di AEM Forms, segui i seguenti passaggi
 
-* Scarica e distribuisci i file [MySql Driver Jar](assets/mysqldriver.jar) utilizzando la [console Web felix](http://localhost:4502/system/console/bundles)
-* Scarica e distribuisci il bundle [OSGi](assets/SaveAndContinue.SaveAndContinue.core-1.0-SNAPSHOT.jar) utilizzando la [console web felix](http://localhost:4502/system/console/bundles)
-* Scarica e installa il pacchetto [contenente client lib, il modello di modulo adattivo e il componente pagina personalizzato](assets/store-and-fetch-af-with-data.zip) utilizzando il [gestore pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
-* Importa il [modulo adattivo di esempio](assets/sample-adaptive-form.zip) utilizzando l&#39;interfaccia [FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Scarica e distribuisci [Jar driver MySql](assets/mysqldriver.jar) file che utilizzano [console web felix](http://localhost:4502/system/console/bundles)
+* Scarica e distribuisci [Bundle OSGi](assets/SaveAndContinue.SaveAndContinue.core-1.0-SNAPSHOT.jar) utilizzando [console web felix](http://localhost:4502/system/console/bundles)
+* Scarica e installa la [pacchetto contenente la libreria client, il modello di modulo adattivo e il componente pagina personalizzato](assets/store-and-fetch-af-with-data.zip) utilizzando [gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+* Importa [modulo adattivo di esempio](assets/sample-adaptive-form.zip) utilizzando [Interfaccia FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
-* Importare [form-data-db.sql](assets/form-data-db.sql) utilizzando Workbench MySql. Questo creerà lo schema e le tabelle necessarie nel database affinché questa esercitazione funzioni.
-* Accedi a [configMgr.](http://localhost:4502/system/console/configMgr) Cerca &quot;Apache Sling Connection Pooled DataSource. Crea una nuova voce dell&#39;origine dati in pool di connessione Apache Sling denominata **SaveAndContinue** utilizzando le seguenti proprietà:
+* Importa [form-data-db.sql](assets/form-data-db.sql) utilizzo di Workbench MySql. Questo creerà lo schema e le tabelle necessarie nel database affinché questa esercitazione funzioni.
+* Accedi a [configMgr.](http://localhost:4502/system/console/configMgr) Cerca &quot;Apache Sling Connection Pooled DataSource. Crea una nuova voce di origine dati in pool di connessione Apache Sling denominata **SaveAndContinue** utilizzando le seguenti proprietà:
 
 | Nome proprietà | Valore |
 | ------------------------|---------------------------------------|

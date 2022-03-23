@@ -1,19 +1,19 @@
 ---
-title: Memorizzazione e recupero dei dati dei moduli dal database MySQL
+title: Introduzione all'archiviazione e al recupero dei dati dei moduli dal database MySQL
 description: Esercitazione in più parti per illustrare i passaggi necessari per memorizzare e recuperare i dati dei moduli
-feature: Moduli adattivi
+feature: Adaptive Forms
 type: Tutorial
 version: 6.3,6.4,6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 95795102-4278-4556-8e0f-1b8a359ab093
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 1%
+source-wordcount: '165'
+ht-degree: 0%
 
 ---
-
 
 # Memorizzazione e recupero dei dati dei moduli adattivi dal database MySQL
 
@@ -23,7 +23,7 @@ Questa esercitazione illustra i passaggi necessari per salvare e recuperare i da
 
 * Effettua una chiamata POST a un servlet. Questo servlet memorizza i dati nel database. I dati memorizzati sono associati a un GUID
 
-* Per compilare il modulo adattivo con i dati memorizzati, è necessario recuperare i dati associati al GUID e compilare il modulo adattivo utilizzando il metodo **request.setAttribute**.
+* Per compilare il modulo adattivo con i dati memorizzati, è necessario recuperare i dati associati al GUID e compilare il modulo adattivo utilizzando la variabile **request.setAttribute** metodo .
 
 ## Dimostrazione del caso d’uso
 

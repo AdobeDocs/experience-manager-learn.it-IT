@@ -1,23 +1,23 @@
 ---
-title: Personalizzazione della casella in entrata
+title: Aggiungi colonne personalizzate
 description: Aggiungi colonne personalizzate per visualizzare i dati aggiuntivi del flusso di lavoro
-feature: Moduli adattivi
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5.5
 kt: 5830
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 3%
+source-wordcount: '307'
+ht-degree: 2%
 
 ---
-
 
 # Aggiungi colonne personalizzate
 
@@ -84,12 +84,12 @@ return isMarried(inboxItem);
 * [Accedi a AEM console Web](http://localhost:4502/system/console/bundles)
 * [Distribuzione e avvio del bundle di personalizzazione della casella in entrata](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
 * [Apri la inbox](http://localhost:4502/aem/inbox)
-* Apri Admin Control facendo clic sull&#39;icona _Vista a elenco_ accanto al pulsante _Crea_
+* Apri Admin Control facendo clic su _Vista a elenco_ accanto a _Crea_ pulsante
 * Aggiungi colonna selezionata alla casella in entrata e salva le modifiche
 * [Passa all’interfaccia utente di FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Importa il ](assets/snap-form.zip) modulo di esempio selezionando  _File_ Uploadfrom  __ Createmenu.
+* [Importare il modulo di esempio](assets/snap-form.zip) selezionando _Caricamento file_ da _Crea_ menu
 * [Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Selezionare lo _stato civile_ e inviare il modulo
+* Seleziona la _stato civile_ e invia il modulo
    [visualizza casella in entrata](http://localhost:4502/aem/inbox)
 
 L’invio del modulo attiverà il flusso di lavoro e un’attività verrà assegnata all’utente &quot;amministratore&quot;. Dovresti visualizzare un valore nella colonna Sposato come mostrato in questa schermata

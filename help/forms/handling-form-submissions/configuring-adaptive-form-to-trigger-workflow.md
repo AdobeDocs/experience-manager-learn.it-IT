@@ -1,8 +1,8 @@
 ---
-title: Configurazione del modulo adattivo per attivare AEM flusso di lavoro
+title: Configurazione del modulo adattivo per attivare AEM panoramica del flusso di lavoro
 description: Configurare le opzioni di payload quando si attiva AEM flusso di lavoro all’invio del modulo
 sub-product: forms
-feature: Flusso di lavoro
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,16 +10,16 @@ activity: setup
 version: 6.4,6.5
 kt: 5407
 thumbnail: 40258.jpg
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 9f1dbd02-774a-4b84-90fa-02d4e468cbac
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Configurazione del modulo adattivo per attivare AEM flusso di lavoro
 
@@ -36,7 +36,7 @@ Il modulo di esempio utilizzato in questo flusso di lavoro si basa su un modello
 ### Ottieni il modulo adattivo di esempio
 
 * Scarica [Modulo adattivo](assets/peak-application-form.zip)
-* Sfoglia [Modulo e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Sfoglia per [Modulo E Documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Fai clic su Crea -> Caricamento file
 * Il modulo adattivo di esempio verrà posizionato in una cartella denominata [Forms applicazione](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
@@ -46,5 +46,3 @@ Il video seguente spiega come configurare un modulo adattivo per attivare un flu
 Il video seguente mostra il payload del flusso di lavoro e altri dettagli nell’archivio crx
 
 >[!VIDEO](https://video.tv.adobe.com/v/40259/?quality=9&learn=on)
-
-
