@@ -5,9 +5,9 @@ user-guide-title: Video e tutorial su AEM Forms
 user-guide-description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms.
 breadcrumb-title: Tutorial su AEM Forms
 index: y
-source-git-commit: 160471fdc34439da6c312d65b252eaa941b7c7a2
+source-git-commit: b7ff98dccc1381abe057a80b96268742d0a0629b
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1657'
 ht-degree: 3%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 3%
    + [Autenticazione a due fattori](some-useful-integrations/two-factor-authentication.md)
    + [Estrazione dati OCR](some-useful-integrations/ocr-data-extraction.md)
    + [Elenchi a discesa a cascata](some-useful-integrations/geonames-org.md)
+   + [Integrazione con ServiceNow](some-useful-integrations/service-now.md)
 + Creazione del bundle OSGi {#creating-your-first-osgi-bundle}
    + [Configurare l’ambiente](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [Crea servizio OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
@@ -172,7 +173,7 @@ ht-degree: 3%
    + [Libreria client](storing-retrieving-form-data/part4.md)
    + [Modello modulo adattivo](storing-retrieving-form-data/part5.md)
    + [Distribuire risorse di esempio](storing-retrieving-form-data/part6.md)
-+ Attivazione AEM flusso di lavoro dall’invio di moduli mobili{#offline-mobile-form-submission}
++ Attivazione AEM flusso di lavoro dall’invio di moduli Mobile{#offline-mobile-form-submission}
    + [Introduzione](offline-mobile-form-submission/introduction.md)
    + [Profilo personalizzato](offline-mobile-form-submission/part-one.md)
    + [Gestisci invio PDF](offline-mobile-form-submission/part-two.md)
@@ -209,8 +210,8 @@ ht-degree: 3%
    + [Utilizzo del servizio PDFG in AEM Forms](document-services/using-pdfg-in-aem-forms.md)
    + [Utilizzo di Output e del servizio Forms in AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Generazione di più pdf da un file di dati](document-services/generate-multi-record-pdf.md)
-   + [Genera PDF sull’invio di moduli per dispositivi mobili](document-services/generate-pdf-from-mobile-form-submission-article.md)
-   + [Genera PDF interattivo da modulo mobile](document-services/render-interactive-form-using-api.md)
+   + [Genera PDF su invio modulo Mobile](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [Genera PDF interattivo dal modulo Mobile](document-services/render-interactive-form-using-api.md)
    + [Genera il DoR interattivo dal modulo adattivo](document-services/generate-interactive-dor.md)
    + [Configurare le credenziali delle estensioni di Reader](document-services/configuring-reader-extension-osgi.md)
    + [Applicare i diritti di utilizzo ad PDF nella rappresentazione XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)

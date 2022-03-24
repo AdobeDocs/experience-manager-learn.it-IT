@@ -4,9 +4,9 @@ user-guide-description: Una raccolta di tutorial su Adobe Experience Manager as 
 breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 7994860f6d0ea017aa48e326482bc8e77af6f555
+source-git-commit: b7ff98dccc1381abe057a80b96268742d0a0629b
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '725'
 ht-degree: 23%
 
 ---
@@ -172,6 +172,14 @@ ht-degree: 23%
       + [Crea configurazione batch USC](./forms/formscs-batch-api/configure-usc-batch.md)
       + [Crea configurazione batch](./forms/formscs-batch-api/create-batch-config.md)
       + [Esegui batch](./forms/formscs-batch-api/execute-batch-generate-documents.md)
+   + Manipolazione di PDF in Forms CS{#forms-cs-assembler}
+      + [Introduzione](./forms/forms-cs-assembler/introduction.md)
+      + [Crea credenziali del servizio](./forms/forms-cs-assembler/service-credentials.md)
+      + [Creare un token JWT](./forms/forms-cs-assembler/create-jwt.md)
+      + [Crea token di accesso](./forms/forms-cs-assembler/create-access-token.md)
+      + [Assemblare file PDF](./forms/forms-cs-assembler/assemble-pdf-files.md)
+      + [Verificare la soluzione](./forms/forms-cs-assembler/test.md)
+      + [Sfida](./forms/forms-cs-assembler/challenge.md)
    + Archiviazione del portale di Azure{#forms-cs-azure-portal}
       + [Introduzione](./forms/forms-cs-azure-portal/introduction.md)
       + [Crea modello dati modulo](./forms/forms-cs-azure-portal/create-fdm.md)
