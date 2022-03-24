@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: 187f13c5051237915fdc8a8c0e3280dd0f0702ce
+source-git-commit: 4976bc72228b76c02609cf63c7067cc7bad65861
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '379'
 ht-degree: 1%
 
 ---
@@ -68,14 +68,16 @@ Ogni stagione varia in lunghezza e sarà rilasciata su un programma fisso. Gli a
   </tr>
   <tr>
    <td>
-      <img alt="Token di accesso" src="./imgs/coming-soon.png"/>
+        <a href="./cloud5-getting-login-token-integrations.md">
+            <img alt="Token di accesso" src="./imgs/004-thumb.png"/>
+        </a>
       <div>
-        <strong>Integrazione con i token di accesso</strong>        
+        <a href="./cloud5-getting-login-token-integrations.md"><strong>Integrazione con i token di accesso</strong></a>        
          <br/><em>con Darin Kuntze e James Talbot, architetti senior di cloud</em>
       </div>
       <p>
         <br/>
-         Prossima 25 marzo 2022
+         Panoramica rapida e dimostrazione dell’interazione con i token di accesso per l’integrazione negli ambienti di cloud service.
       </p>
      </td>   
      <td>
