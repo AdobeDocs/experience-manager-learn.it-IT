@@ -1,6 +1,6 @@
 ---
-title: Debug AEM come Cloud Service
-description: su un’infrastruttura cloud self-service, scalabile e scalabile, che richiede agli sviluppatori AEM di comprendere come comprendere ed eseguire il debug di vari facet di AEM come Cloud Service, dalla generazione e distribuzione fino a ottenere i dettagli dell’esecuzione delle applicazioni AEM.
+title: Debug AEM as a Cloud Service
+description: su un’infrastruttura cloud self-service, scalabile e scalabile, che richiede agli sviluppatori AEM di comprendere come comprendere ed eseguire il debug di vari facet di AEM as a Cloud Service, dalla creazione e distribuzione fino a ottenere i dettagli dell’esecuzione delle applicazioni AEM.
 feature: Developer Tools
 topics: development
 version: Cloud Service
@@ -12,37 +12,37 @@ topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 8092fbb4-234f-472e-a405-8a45734b7c65
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 467b0c343a28eb573498a013b5490877e4497fe0
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 1%
+source-wordcount: '314'
+ht-degree: 0%
 
 ---
 
-# Debug AEM come Cloud Service
+# Debug AEM as a Cloud Service
 
-AEM come Cloud Service è il modo nativo del cloud di sfruttare le applicazioni AEM. AEM come Cloud Service funziona su un&#39;infrastruttura cloud self-service, scalabile e scalabile, che richiede agli sviluppatori AEM di comprendere come comprendere ed eseguire il debug di vari aspetti di AEM come Cloud Service, dalla generazione e distribuzione fino a ottenere i dettagli dell&#39;esecuzione AEM applicazioni.
+AEM as a Cloud Service è il modo nativo del cloud di sfruttare le applicazioni AEM. AEM as a Cloud Service viene eseguito su un’infrastruttura cloud self-service, scalabile e scalabile, che richiede agli sviluppatori AEM di comprendere come comprendere ed eseguire il debug di vari facet di AEM as a Cloud Service, dalla generazione e distribuzione fino a ottenere i dettagli dell’esecuzione delle applicazioni AEM.
 
 ## Registri
 
-I registri forniscono dettagli sul funzionamento dell’applicazione in AEM as a Cloud Service, nonché informazioni sui problemi relativi alle implementazioni.
+I registri forniscono dettagli sul funzionamento dell’applicazione in AEM as a Cloud Service, nonché informazioni sui problemi relativi alle distribuzioni.
 
-[Eseguire il debug AEM come Cloud Service utilizzando i registri](./logs.md)
+[Debug AEM as a Cloud Service tramite i registri](./logs.md)
 
 ## Generazione e distribuzione
 
-Le pipeline di Adobe Cloud Manager distribuiscono AEM’applicazione attraverso una serie di passaggi per determinare la qualità del codice e la vitalità quando vengono implementate in AEM come Cloud Service. Ognuno dei passaggi può causare un errore, rendendo importante comprendere come eseguire il debug delle build per determinare la causa principale di e come risolvere eventuali errori.
+Le pipeline di Adobe Cloud Manager distribuiscono AEM’applicazione attraverso una serie di passaggi per determinare la qualità del codice e la vitalità quando vengono distribuite a AEM as a Cloud Service. Ognuno dei passaggi può causare un errore, rendendo importante comprendere come eseguire il debug delle build per determinare la causa principale di e come risolvere eventuali errori.
 
-[Debug di AEM come build e implementazione di Cloud Service](./build-and-deployment.md)
+[Debug AEM build e distribuzione as a Cloud Service](./build-and-deployment.md)
 
 ## Console per sviluppatori
 
-Developer Console fornisce una serie di informazioni e introspezioni in ambienti AEM come ambienti di Cloud Service utili per comprendere in che modo l’applicazione viene riconosciuta da e funziona all’interno di AEM come Cloud Service.
+Developer Console fornisce una serie di informazioni e introspezioni in ambienti as a Cloud Service AEM utili per comprendere in che modo l’applicazione viene riconosciuta da e funziona all’interno AEM as a Cloud Service.
 
-[Debug di AEM come Cloud Service con Developer Console](./developer-console.md)
+[Debug AEM as a Cloud Service con Developer Console](./developer-console.md)
 
-## CRXDE Lite
+## Browser del repository
 
-CRXDE Lite è uno strumento classico ma potente per il debug AEM come ambienti di sviluppo di Cloud Service. CRXDE Lite fornisce una suite di funzionalità che facilita il debug dall’ispezione di tutte le risorse e proprietà, dalla manipolazione delle parti modificabili del JCR, dall’analisi delle autorizzazioni e dalla valutazione delle query.
+Repository Browser è un potente strumento che fornisce visibilità AEM&#39;archivio dati sottostante, consentendo un facile debug dell&#39;ambiente as a Cloud Service AEM. Il browser Repository supporta una visualizzazione in sola lettura delle risorse e delle proprietà di AEM in Produzione, Stage e Sviluppo, nonché dei servizi Author, Publish e Preview.
 
-[Debug di AEM come Cloud Service con CRXDE Lite](./crxde-lite.md)
+[Debug AEM as a Cloud Service con il browser del repository](./repository-browser.md)
