@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
-source-git-commit: 697b2c11f91899c56869a24b06c690a8e278df0c
+source-git-commit: 2f8f76b3f7a340784584f967deeea39684bf630e
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '251'
 ht-degree: 6%
 
 ---
@@ -30,7 +30,7 @@ Il supporto del browser HLS è il seguente: per i browser non supportati si basa
 
 >[!NOTE]
 >
-> Dynamic Media Hybrid NON supporterà lo streaming video su Internet Explorer 11 dopo il 15 marzo 2022. Per tornare alla riproduzione progressiva, effettuare l&#39;aggiornamento alla versione 6.5.12.
+> Dynamic Media Hybrid NON supporta lo streaming video su Internet Explorer 11 a partire dal 15 marzo 2022. Aggiorna a 6.5.12 o superiore per tornare alla riproduzione progressiva su IE 11.
 
 <table> 
  <thead> 
