@@ -6,13 +6,13 @@ version: 6.5
 topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 2b7f0f6c34803672cc57425811db89146b38a70a
+exl-id: 879518db-3f05-4447-86e8-5802537584e5
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
-
 
 # Passaggio processo personalizzato
 
@@ -32,11 +32,9 @@ Il primo passo è quello di creare un progetto Maven utilizzando il tipo di arch
 
 ### Crea una classe che implementa WorkflowProcess
 
-Apri il progetto Maven nell’ambiente IDE. Espandi la cartella **project name** > **core** . Espandi la cartella src/main/java . Dovresti visualizzare un pacchetto che termina con &quot;core&quot;. Crea una classe Java che implementa WorkflowProcess in questo pacchetto. Sarà necessario sovrascrivere il metodo execute . La firma del metodo execute è la seguente
-public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)genera WorkflowException
-Il metodo execute permette di accedere alle seguenti 3 variabili
+Apri il progetto Maven nell’ambiente IDE. Espandi **nome progetto** > **nucleo centrale** cartella. Espandi la cartella src/main/java . Dovresti visualizzare un pacchetto che termina con &quot;core&quot;. Crea una classe Java che implementa WorkflowProcess in questo pacchetto. Sarà necessario sovrascrivere il metodo execute . La firma del metodo execute è come segue public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)throws WorkflowException Il metodo execute dà accesso alle seguenti 3 variabili
 
-**Elemento** di lavoro: La variabile workItem consente di accedere ai dati relativi al flusso di lavoro. La documentazione API pubblica è disponibile [qui.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**ElementoLavoro**: La variabile workItem consente di accedere ai dati relativi al flusso di lavoro. La documentazione API pubblica è disponibile [qui.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
 **WorkflowSession**: Questa variabile workflowSession ti darà la possibilità di controllare il flusso di lavoro. La documentazione API pubblica è disponibile [qui](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
@@ -148,8 +146,8 @@ Il servizio QueryBuilder viene utilizzato per eseguire query sui nodi di tipo nt
 
 #### Creare e distribuire
 
-[Crea il bundle come descritto ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/create-your-first-osgi-bundle.html?lang=en#build-your-project)
-[quiAssicurati che il bundle sia distribuito e in stato attivo](http://localhost:4502/system/console/bundles)
+[Crea il bundle come descritto qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+[Assicurati che il bundle sia distribuito e in stato attivo](http://localhost:4502/system/console/bundles)
 
 Crea un modello di flusso di lavoro. Trascina il passaggio del processo nel modello di flusso di lavoro. Associa il passaggio del processo a &quot;Salva allegati di moduli adattivi nel file system&quot;.
 
@@ -160,4 +158,3 @@ Creare un modulo adattivo. Trascinare il componente File allegati sul modulo. Co
 Salva le impostazioni.
 
 Visualizzare l’anteprima del modulo. Aggiungere un paio di allegati e inviare il modulo. Gli allegati devono essere salvati nel file system nel percorso specificato nel flusso di lavoro.
-

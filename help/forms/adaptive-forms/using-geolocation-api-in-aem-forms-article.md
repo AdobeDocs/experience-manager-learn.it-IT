@@ -1,28 +1,26 @@
 ---
 title: Utilizzo delle API di geolocalizzazione in Forms adattivo
 description: Compilare campi indirizzo nel modulo utilizzando l’API di geolocalizzazione
-feature: Moduli adattivi
+feature: Adaptive Forms
 version: 6.3,6.4,6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 50db6155-ee83-4ddb-9e3a-56e8709222db
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 1%
+source-wordcount: '390'
+ht-degree: 0%
 
 ---
 
-
 # Utilizzo delle API di geolocalizzazione in Forms adattivo{#using-geolocation-api-s-in-adaptive-forms}
 
-Visita la pagina [Esempi AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) per un collegamento a una demo in tempo reale di questa funzionalità.
-
-In questo articolo, analizzeremo l’utilizzo dell’API di geolocalizzazione di Google per popolare i campi di un modulo adattivo. Questo caso d’uso viene comunemente utilizzato quando si desidera compilare i campi dell’indirizzo correnti in un modulo.
+In questo articolo, analizzeremo l’utilizzo dell’API di geolocalizzazione di Google per compilare i campi di un modulo adattivo. Questo caso d’uso viene comunemente utilizzato quando si desidera compilare i campi dell’indirizzo correnti in un modulo.
 
 I passaggi seguenti sono stati seguiti per utilizzare l’API di geolocalizzazione in Forms adattivo.
 
-1. [Ottieni API ](https://developers.google.com/maps/documentation/javascript/get-api-key) Keyda Google per utilizzare la piattaforma Google Maps. È possibile ottenere una chiave di prova valida per 1 anno.
+1. [Ottieni chiave API](https://developers.google.com/maps/documentation/javascript/get-api-key) da Google per utilizzare la piattaforma Google Maps. È possibile ottenere una chiave di prova valida per 1 anno.
 
 1. Il frammento di modulo adattivo è stato creato con campi che contengono l’indirizzo corrente
 
@@ -77,9 +75,9 @@ var url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+position.c
 
 ![I campi si popolano con l’api geologica](assets/capture-4.gif)
 
-Nella riga 1 usiamo l’API di geolocalizzazione HTML per ottenere la posizione corrente. Una volta ottenuta la posizione corrente passiamo la posizione corrente per mostrare la funzione Position.
+Nella riga 1, l’API di geolocalizzazione di HTML viene utilizzata per ottenere la posizione corrente. Una volta ottenuta la posizione corrente passiamo la posizione corrente per mostrare la funzione Position.
 
-Nella funzione showPosition, utilizziamo l’API di Google per recuperare i dettagli dell’indirizzo per la latitudine e la longitudine specificate.
+Nella funzione showPosition, utilizziamo l’API Google per recuperare i dettagli dell’indirizzo per la latitudine e la longitudine specificate.
 
 Il JSON restituito dall’API viene quindi analizzato per impostare i campi Modulo adattivo.
 
@@ -96,11 +94,11 @@ Per ottenere questa funzionalità sul server, segui i seguenti passaggi
 * Installa e avvia il server AEM Forms.
 
 >!![NOTE] Questa funzionalità è stata testata su AEM Forms 6.3 e versioni successive
-* [Ottieni la chiave API di Google](https://developers.google.com/maps/documentation/javascript/get-api-key).
+* [Ottieni chiave API Google](https://developers.google.com/maps/documentation/javascript/get-api-key).
 * [Importa in AEM le risorse correlate a questo articolo.](assets/geolocationapi.zip)
 * [Apri il frammento Modulo adattivo in modalità di modifica.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
 * Apri l’editor di regole per il componente Scelta immagine .
-* Sostituisci &lt;your_api_key> con la chiave API di Google.
+* Sostituisci il &lt;your_api_key> con la chiave API di Google.
 * Salva le modifiche.
 * [Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
 * Fai clic sull&#39;icona &quot;geolocalizzazione&quot;.
