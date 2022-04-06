@@ -12,13 +12,13 @@ version: 6.5
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+exl-id: f4af7cb9-cc3b-4bec-9428-ab4f1a3cf41a
+source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
-
 
 # Grafici multiserie
 
@@ -47,6 +47,6 @@ Per eseguire il test sul sistema, segui i seguenti passaggi
 * [Scarica SeriesChartSampleData.json sul disco rigido.](assets/serieschartsampledata.json) Si tratta dei dati di esempio che verranno utilizzati per compilare il grafico.
 * [Passa a Forms e Documenti.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Selezionare delicatamente il modello di comunicazione interattiva &quot;MutualFundGrowthFactSheet&quot;.
-* Fai clic su Anteprima | Carica i dati di esempio.
+* Fai clic su Anteprima | Canale di stampa | Carica i dati di esempio.
 * Sfoglia il file di dati di esempio fornito come parte di questo articolo.
 * Visualizza in anteprima il canale di stampa della comunicazione interattiva &quot;MutualFundGrowthFactSheet&quot; con i dati di esempio scaricati nel passaggio precedente.
