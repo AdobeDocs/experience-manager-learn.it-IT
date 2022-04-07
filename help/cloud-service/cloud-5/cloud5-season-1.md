@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: b277fb0f0cfd19a8318cbf5311e2ded973c092ab
+source-git-commit: 62a1deda2a4fda56edb0c3d0f34a5e804f78887b
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '460'
 ht-degree: 1%
 
 ---
@@ -96,14 +96,14 @@ Ogni stagione varia in lunghezza e sarà rilasciata su un programma fisso. Gli a
       </p>
    </td>
      <td>
-      <img alt="Migrazione (parte 1)" src="./imgs/coming-soon.png"/>
+      <img alt="Migrazione (parte 1)" src="./imgs/006-thumb.png"/>
       <div>
          <strong>Migrazione (parte 1)</strong>
-         <br/><em>con Darin Kuntze e James Talbot, architetti senior del cloud e ospiti speciali</em>
+         <br/><em>con Darin Kuntze &amp; James Talbot, Senior Cloud Architects &amp; Dr Applesmith</em>
       </div>
       <p>
         <br/>
-         Prossima 8 aprile 2022
+         Parte uno (di due) di suggerimenti e trucchi per la migrazione al cloud. Il nostro obiettivo principale nella prima parte è la best practice e il lavoro preparatorio che ti rende pronto per la migrazione.
       </p>
    </td> 
   </tr>
