@@ -11,10 +11,11 @@ topic: Development
 role: Developer
 level: Intermediate
 kt: 10208
-source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
+exl-id: 9053ee29-436a-439a-b592-c3fef9852ea4
+source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 0%
+source-wordcount: '165'
+ht-degree: 2%
 
 ---
 
@@ -22,13 +23,18 @@ ht-degree: 0%
 
 Segui le istruzioni riportate di seguito per far funzionare questa funzionalità sul server AEM
 
-* Crea una cartella denominata icprogetti nell&#39;unità c
 * [Creare lo schema del database](assets/icdrafts.sql)
 * [Importare la libreria client](assets/icdrafts.zip)
 * [Importare il modulo adattivo](assets/SavedDraftsAdaptiveForm.zip)
 * Crea origine dati denominata _SaveAndContinue_
 
 ![Crea origine dati](assets/data-source.png)
+
+| Nome proprietà | Valore proprietà |
+|---|---|
+| Nome origine dati | SaveAndContinue |
+| Classe del driver JDBC | com.mysql.cj.jdbc.Driver |
+| URL di connessione JDBC | jdbc:mysql://localhost:3306/aemformstutorial?autoReconnect=true&amp;useSSL=false&amp;characterEncoding=utf8&amp;useUnicode=true |
 
 * [Distribuzione del bundle icbots](assets/icdrafts.icdrafts.core-1.0-SNAPSHOT.jar)
 * Assicurati di _Abilita Salva con CCRDocumentInstanceService_ nella configurazione OSGI come mostrato di seguito

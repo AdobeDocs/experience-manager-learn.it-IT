@@ -5,7 +5,7 @@ user-guide-title: Video e tutorial su AEM Forms
 user-guide-description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms.
 breadcrumb-title: Tutorial su AEM Forms
 index: y
-source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
+source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
 workflow-type: tm+mt
 source-wordcount: '1667'
 ht-degree: 3%
@@ -173,7 +173,7 @@ ht-degree: 3%
    + [Libreria client](storing-retrieving-form-data/part4.md)
    + [Modello modulo adattivo](storing-retrieving-form-data/part5.md)
    + [Distribuire risorse di esempio](storing-retrieving-form-data/part6.md)
-+ Attivazione AEM flusso di lavoro dall’invio di moduli Mobile{#offline-mobile-form-submission}
++ Attivazione AEM flusso di lavoro dall’invio di moduli mobili{#offline-mobile-form-submission}
    + [Introduzione](offline-mobile-form-submission/introduction.md)
    + [Profilo personalizzato](offline-mobile-form-submission/part-one.md)
    + [Gestisci invio PDF](offline-mobile-form-submission/part-two.md)
@@ -233,9 +233,9 @@ ht-degree: 3%
    + [Aggiunta di una tabella al canale di stampa](ic-print-channel-tutorial/adding-table-to-print-channel.md)
    + [Utilizzo di cartelle controllate per generare documenti](ic-print-channel-tutorial/using-watched-folder-to-generate-document.md)
    + [Apertura dell’interfaccia utente dell’agente nell’invio del modulo](ic-print-channel-tutorial/opening-agent-ui-on-form-submission.md)
-+ Salva e recupera le bozze di lettere {#store-retrieve-letters}
++ Salva e recupera le bozze di lettera {#store-retrieve-letters}
    + [Introduzione](store-retrieve-letters/introduction.md)
-   + [implementazione](store-retrieve-letters/save-draft-letters.md)
+   + [Implementazione](store-retrieve-letters/save-draft-letters.md)
    + [Distribuire il campione](store-retrieve-letters/deploy-on-your-server.md)
 + Comunicazioni interattive {#interactive-communications}
    + [Utilizzo dell’API batch](interactive-communications/batch-generation-interactive-communications.md)

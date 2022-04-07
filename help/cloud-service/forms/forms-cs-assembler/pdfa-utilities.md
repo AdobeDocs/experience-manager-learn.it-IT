@@ -8,14 +8,15 @@ version: Cloud Service
 feature: Output Service
 topic: Development
 kt: 10105
-source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
+exl-id: a4955104-8a87-4add-85c7-c3e3395f5f1a
+source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 4%
+source-wordcount: '102'
+ht-degree: 3%
 
 ---
 
-# Effettua la chiamata POST
+# Creazione e convalida di documenti PDF/A
 
 PDF/A è una versione standard ISO del formato portatile (PDF) specializzato nell&#39;archiviazione e nella conservazione a lungo termine dei documenti elettronici. PDF/A differisce da PDF per il divieto di funzioni non adatte all’archiviazione a lungo termine, come il collegamento dei font (anziché l’incorporazione dei font) e la crittografia.
 
@@ -131,4 +132,3 @@ public void validatePDFA(String postURL) {
   }
 }
 ```
-
