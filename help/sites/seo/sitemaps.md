@@ -8,13 +8,13 @@ role: Developer
 level: Intermediate
 kt: 9165
 thumbnail: 337960.jpeg
-source-git-commit: 5bdff2eafaa28aff722b12607b1278539072be62
+exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
+source-git-commit: 71f1d32c12742cdb644dec50050d147395c3f3b6
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 3%
+source-wordcount: '152'
+ht-degree: 1%
 
 ---
-
 
 # Sitemaps
 
@@ -26,19 +26,17 @@ Scopri come incrementare il SEO creando sitemap per AEM Sites.
 
 + [Documentazione AEM Sitemap](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
 + [Documentazione della mappa del sito Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
-+ [Github dei componenti core WCM AEM](https://github.com/adobe/aem-core-wcm-components)
-   + Funzionalità Mappa del sito aggiunta nella versione v2.17.6
 + [Documentazione Sitemap.org](https://www.sitemaps.org/protocol.html)
 + [Documentazione del file di indice Sitemap.org](https://www.sitemaps.org/protocol.html#index)
 + [Cronista](http://www.cronmaker.com/)
 
 ## Configurazioni
 
-### org.apache.sling.sitemap.impl.SitemapScheduler~wknd.cfg.json
-
-`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
+### Configurazione OSGi dello scheduler di Sitemap
 
 Definisce la [Configurazione di fabbrica OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) per la frequenza (utilizzando [espressioni cron](http://www.cronmaker.com)) le mappe dei siti verranno rigenerate e memorizzate nella cache in AEM.
+
+`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 
 ```json
 {
@@ -48,24 +46,24 @@ Definisce la [Configurazione di fabbrica OSGi](http://localhost:4502/system/cons
 }
 ```
 
-### filters.any
-
-`dispatcher/src/conf.dispatcher.d/filters/filters.any`
+### Regola del filtro Consentiti da Dispatcher
 
 Consenti richieste HTTP per l&#39;indice della mappa del sito e i file della mappa del sito.
+
+`dispatcher/src/conf.dispatcher.d/filters/filters.any`
 
 ```
 ...
 
-# Allow AEM WCM Core Components sitemaps
+# Allow AEM sitemaps
 /0200 { /type "allow" /path "/content/*" /selectors '(sitemap-index|sitemap)' /extension "xml" }
 ```
 
-### rewrite.rules
-
-`dispatcher/src/conf.d/rewrites/rewrite.rules`
+### Regola di riscrittura del server web Apache
 
 Assicurati `.xml` le richieste HTTP della mappa del sito vengono indirizzate alla pagina AEM sottostante corretta. Se non si utilizza la abbreviazione degli URL, o se le mappature Sling vengono utilizzate per ottenere la riduzione degli URL, questa configurazione non è necessaria.
+
+`dispatcher/src/conf.d/rewrites/rewrite.rules`
 
 ```
 ...
