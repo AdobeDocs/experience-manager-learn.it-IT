@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9355
 thumbnail: KT-9355.jpeg
 exl-id: c1a26dcb-b2ae-4015-b865-2ce32f4fa869
-source-git-commit: 6ed26e5c9bf8f5e6473961f667f9638e39d1ab0e
+source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ Le connessioni ai database SQL (e ad altri servizi non HTTP/HTTPS) devono essere
 ## Supporto di rete avanzato
 
 L&#39;esempio di codice seguente è supportato dalle seguenti opzioni di rete avanzate.
+
+Assicurati che [appropriato](../advanced-networking.md#advanced-networking) la configurazione di rete avanzata è stata impostata prima di seguire questa esercitazione.
 
 | Nessuna rete avanzata | [Uscita porta flessibile](../flexible-port-egress.md) | [Indirizzo IP in uscita dedicato](../dedicated-egress-ip-address.md) | [Rete privata virtuale](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|

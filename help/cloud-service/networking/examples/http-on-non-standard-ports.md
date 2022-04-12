@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9354
 thumbnail: KT-9354.jpeg
 exl-id: a565bc3a-675f-4d5e-b83b-c14ad70a800b
-source-git-commit: 6ed26e5c9bf8f5e6473961f667f9638e39d1ab0e
+source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ Le connessioni HTTP/HTTPS su porte non standard (non 80/443) devono essere proxy
 ## Supporto di rete avanzato
 
 L&#39;esempio di codice seguente è supportato dalle seguenti opzioni di rete avanzate.
+
+Assicurati che [appropriato](../advanced-networking.md#advanced-networking) la configurazione di rete avanzata è stata impostata prima di seguire questa esercitazione.
 
 | Nessuna rete avanzata | [Uscita porta flessibile](../flexible-port-egress.md) | [Indirizzo IP in uscita dedicato](../dedicated-egress-ip-address.md) | [Rete privata virtuale](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
