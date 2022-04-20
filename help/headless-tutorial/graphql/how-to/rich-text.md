@@ -1,5 +1,5 @@
 ---
-title: Utilizzo del testo RTF | AEM senza testa
+title: Utilizzo di testo RTF con AEM headless
 description: Scopri come creare contenuti e incorporare contenuti di riferimento utilizzando un editor Rich Text multiriga con frammenti di contenuto Adobe Experience Manager e in che modo il testo RTF viene distribuito dalle API GraphQL AEM come JSON da utilizzare dalle applicazioni headless.
 version: Cloud Service
 doc-type: article
@@ -7,22 +7,21 @@ kt: 9985
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
-source-git-commit: 88797cf950dae46d0f856330df12c59a4efe6456
+exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
+source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
 
-
-# Utilizzo del testo RTF in Adobe Experience Manager Headless
+# Rich text con AEM headless
 
 Il campo di testo a più righe è un tipo di dati Frammenti di contenuto che consente agli autori di creare contenuti di testo RTF. I riferimenti ad altri contenuti, come immagini o altri frammenti di contenuto, possono essere inseriti in linea in modo dinamico all’interno del flusso di testo. AEM’API GraphQL offre una solida capacità di restituire testo RTF come HTML, testo normale o come JSON puro. La rappresentazione JSON è potente in quanto offre all’applicazione client il pieno controllo su come eseguire il rendering del contenuto.
 
 ## Editor a più righe
 
 >[!VIDEO](https://video.tv.adobe.com/v/342104/?quality=12&learn=on)
-
 
 Nell’Editor frammento di contenuto, la barra dei menu del campo di testo a più righe offre agli autori funzionalità di formattazione RTF standard, ad esempio **audace**, *corsivo* e sottolineano. L’apertura del campo a più righe in modalità a schermo intero consente [strumenti di formattazione aggiuntivi come tipo di paragrafo, trova e sostituisci, controllo ortografico e altro ancora](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
 
