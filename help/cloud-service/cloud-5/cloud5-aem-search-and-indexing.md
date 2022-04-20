@@ -1,6 +1,6 @@
 ---
-title: App Builder di Cloud 5 Adobe
-description: Questo episodio viene analizzato nel pattern di integrazione esterna che utilizza Adobe App Builder
+title: Ricerca e indicizzazione di Cloud 5 AEM
+description: Ci immergiamo le dita nell'oceano che è ricerca e indicizzazione
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -8,23 +8,22 @@ kt: 10275
 thumbnail: 342374.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: 0b6e16d7263bc14c1824643b77678071694bcb7e
+exl-id: b2571a84-101f-4330-8a5f-9ef5e4344591
+source-git-commit: 3854deb12c2d5a5c91c3416939f3e4534cb0094f
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
 
-# App Builder di Cloud 5 Adobe
+# Ricerca e indicizzazione di Cloud 5 AEM
 
-Amol Anand arriva per darci il downdown sulle integrazioni con Adobe App Builder e dove e quando usarlo.
+Un veloce tuffo nelle acque profonde di ricerca e indicizzazione. Un argomento impegnativo che speriamo di contribuire ad educare i clienti a migliorare l&#39;efficienza.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342374)
 
 ## Contenuto trattato in questo video
 
-+ Panoramica [App Builder](https://developer.adobe.com/app-builder/docs/overview/)
-+ [Tutorials e Code Labs](https://developer.adobe.com/app-builder/docs/resources/)
-+ [Registrazione e monitoraggio](https://adobedocs.github.io/adobeio-runtime/guides/logging_monitoring.html#retrieving-activations-for-blocking-successful-calls)
-+ Impostazione [Limiti di sistema](https://adobedocs.github.io/adobeio-runtime/guides/system_settings.html)
-+ [Sviluppo locale](https://developer.adobe.com/app-builder/docs/resources/debugging/) Suggerimenti
++ Ricerca e indice [Panoramica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)
++ AEM [Convertitore indice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html)
++ Serie di esperti [Immersione profonda](../../cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
