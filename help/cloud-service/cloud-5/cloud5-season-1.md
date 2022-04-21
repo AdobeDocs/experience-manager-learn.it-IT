@@ -5,10 +5,10 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: e9b88505ae47b32de8b198fa6fcd81e033e5d5ff
+source-git-commit: bd60205f5561cfc8d758a15e69bc26fa1d64bd4d
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 1%
+source-wordcount: '504'
+ht-degree: 0%
 
 ---
 
@@ -124,14 +124,16 @@ Ogni stagione varia in lunghezza e sarà rilasciata su un programma fisso. Gli a
       </p>
      </td>   
      <td>
-      <img alt="Convalida del dispatcher" src="./imgs/coming-soon.png"/>
+        <a href="./cloud5-aem-dispatcher-validator.md">
+            <img alt="Convalida del dispatcher" src="./imgs/008-thumb.png"/>
+        </a>
       <div>
-         <strong>Convalida del dispatcher</strong>
+         <a href="./cloud5-aem-dispatcher-validator.md"><strong>Convalida del dispatcher</strong></a>
          <br/><em>con Darin Kuntze e James Talbot, architetti senior di cloud</em>
       </div>
       <p>
         <br/>
-         Disponibile dal 22 aprile 2022
+         In seguito alle precedenti discussioni sulla migrazione, analizziamo la convalida del dispatcher e alcune delle attività che può eseguire.
       </p>
    </td>
      <td>
