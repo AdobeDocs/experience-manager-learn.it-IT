@@ -8,16 +8,18 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
+source-git-commit: 22d5aa7299ceacd93771bd73a6b89d1903edc561
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1460'
 ht-degree: 0%
 
 ---
 
 # Rich text con AEM headless
 
-Il campo di testo a più righe è un tipo di dati Frammenti di contenuto che consente agli autori di creare contenuti di testo RTF. I riferimenti ad altri contenuti, come immagini o altri frammenti di contenuto, possono essere inseriti in linea in modo dinamico all’interno del flusso di testo. AEM’API GraphQL offre una solida capacità di restituire testo RTF come HTML, testo normale o come JSON puro. La rappresentazione JSON è potente in quanto offre all’applicazione client il pieno controllo su come eseguire il rendering del contenuto.
+Il campo di testo a più righe è un tipo di dati Frammenti di contenuto che consente agli autori di creare contenuti di testo RTF. I riferimenti ad altri contenuti, come immagini o altri frammenti di contenuto, possono essere inseriti in linea in modo dinamico all’interno del flusso di testo. Il campo di testo a riga singola è un altro tipo di dati Frammenti di contenuto che deve essere utilizzato per elementi di testo semplici.
+
+AEM’API GraphQL offre una solida capacità di restituire testo RTF come HTML, testo normale o come JSON puro. La rappresentazione JSON è potente in quanto offre all’applicazione client il pieno controllo su come eseguire il rendering del contenuto.
 
 ## Editor a più righe
 
@@ -25,13 +27,25 @@ Il campo di testo a più righe è un tipo di dati Frammenti di contenuto che con
 
 Nell’Editor frammento di contenuto, la barra dei menu del campo di testo a più righe offre agli autori funzionalità di formattazione RTF standard, ad esempio **audace**, *corsivo* e sottolineano. L’apertura del campo a più righe in modalità a schermo intero consente [strumenti di formattazione aggiuntivi come tipo di paragrafo, trova e sostituisci, controllo ortografico e altro ancora](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
 
+>[!NOTE]
+>
+> I plug-in Rich Text nell’editor a più righe non possono essere personalizzati.
+
 ## Tipo di dati a più righe {#multi-line-data-type}
 
 Utilizza la **Testo a più righe** tipo di dati durante la definizione del modello di frammento di contenuto per abilitare la creazione di testo RTF.
 
 ![Tipo di dati RTF a più righe](assets/rich-text/multi-line-rich-text.png)
 
-Quando si utilizza il tipo di dati Testo su più righe, è possibile impostare il **Tipo predefinito** a:
+È possibile configurare diverse proprietà del campo Multiriga.
+
+La **Rendering come** può essere impostata su:
+
+* Area di testo - esegue il rendering di un singolo campo a più righe
+* Campo multiplo : esegue il rendering di più campi di riga
+
+
+La **Tipo predefinito** può essere impostato su:
 
 * Formato RTF
 * Markdown
@@ -40,6 +54,8 @@ Quando si utilizza il tipo di dati Testo su più righe, è possibile impostare i
 La **Tipo predefinito** influenza direttamente l’esperienza di modifica e determina se sono presenti gli strumenti rich text.
 
 È inoltre possibile [abilita riferimenti in linea](#insert-fragment-references) ad altri frammenti di contenuto selezionando la **Consenti riferimento frammento** e la configurazione **Modelli di frammenti di contenuto consentiti**.
+
+Se il contenuto verrà localizzato, controlla il **Traducibile** scatola. È possibile localizzare solo il testo RTF e il testo normale. Vedi [utilizzo dei contenuti localizzati per ulteriori dettagli](./localized-content.md).
 
 ## Risposta in formato RTF con API GraphQL
 
@@ -364,10 +380,12 @@ Utilizza la `json` tipo di ritorno e include `_references` oggetto durante la co
         _path
         _publishUrl
         width
+        __typename
       }
       ...on ArticleModel {
         _path
         author
+        __typename
       }
       
     }
@@ -444,12 +462,14 @@ Nella query precedente, la `main` viene restituito come JSON. La `_references` l
       "_references": [
         {
           "_path": "/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "_publishUrl": "http://localhost:4503/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "width": 1920
+          "_publishUrl": "http://publish-p123-e456.adobeaemcloud.com/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
+          "width": 1920,
+          "__typename": "ImageRef"
         },
         {
           "_path": "/content/dam/wknd/en/magazine/la-skateparks/ultimate-guide-to-la-skateparks",
           "author": "Stacey Roswells",
+          "__typename": "ArticleModel"
         }
       ]
     }
@@ -498,11 +518,11 @@ const renderReference = {
     // node contains merged properties of the in-line reference and _references object
     'ImageRef': (node) => {
         // when __typename === ImageRef
-        return <img src={node._path} alt={'in-line reference'} /> 
+        return <img src={node._publishUrl} alt={'in-line reference'} /> 
     },
-    'AdventureModel': (node) => {
-        // when __typename === AdventureModel
-        return <Link to={`/adventure:${node._path}`}>{`${node.adventureTitle}: ${node.adventurePrice}`}</Link>;
+    'ArticleModel': (node) => {
+        // when __typename === ArticleModel
+        return <Link to={`/article:${node._path}`}>{`${node.value}`}</Link>;
     }
     ...
 }
