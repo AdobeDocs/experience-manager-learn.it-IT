@@ -5,9 +5,9 @@ user-guide-title: Video e tutorial su AEM Forms
 user-guide-description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms.
 breadcrumb-title: Tutorial su AEM Forms
 index: y
-source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
+source-git-commit: cb5b3eb77a57fa8a2918710b7dbcd1b0a58b74bd
 workflow-type: tm+mt
-source-wordcount: '1667'
+source-wordcount: '1671'
 ht-degree: 3%
 
 ---
@@ -204,6 +204,7 @@ ht-degree: 3%
 + Servizi documentali {#document-services}
    + [Tipi di PDF forms](document-services/pdf-forms-and-documents.md)
    + [Incorpora pdf in forma adattiva](document-services/embed-pdf-inline.md)
+   + [PDF nel componente carosello](document-services/display-pdf-in-carousel.md)
    + [Utilizzo del servizio Assembler in AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
    + [Utilizzo di una cartella osservata in AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Utilizzo del servizio codice a barre in AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
@@ -211,7 +212,7 @@ ht-degree: 3%
    + [Utilizzo di Output e del servizio Forms in AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Generazione di più pdf da un file di dati](document-services/generate-multi-record-pdf.md)
    + [Genera PDF su invio modulo Mobile](document-services/generate-pdf-from-mobile-form-submission-article.md)
-   + [Genera PDF interattivo dal modulo Mobile](document-services/render-interactive-form-using-api.md)
+   + [Genera PDF interattivo da modulo mobile](document-services/render-interactive-form-using-api.md)
    + [Genera il DoR interattivo dal modulo adattivo](document-services/generate-interactive-dor.md)
    + [Configurare le credenziali delle estensioni di Reader](document-services/configuring-reader-extension-osgi.md)
    + [Applicare i diritti di utilizzo ad PDF nella rappresentazione XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)
