@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: bd60205f5561cfc8d758a15e69bc26fa1d64bd4d
+source-git-commit: 571f79cbcadff2161c3daa993ac833d9d4068f98
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -137,14 +137,16 @@ Ogni stagione varia in lunghezza e sarà rilasciata su un programma fisso. Gli a
       </p>
    </td>
      <td>
-      <img alt="Suggerimenti per l’indicizzazione e la ricerca" src="./imgs/coming-soon.png"/>
+        <a href="./cloud5-aem-search-and-indexing.md">
+            <img alt="Suggerimenti per l’indicizzazione e la ricerca" src="./imgs/009-thumb.png"/>
+        </a>
       <div>
-         <strong>Suggerimenti per l’indicizzazione e la ricerca</strong>
+         <a href="./cloud5-aem-search-and-indexing.md"><strong>Suggerimenti per l’indicizzazione e la ricerca</strong></a>
          <br/><em>con Darin Kuntze e James Talbot, architetti senior di cloud</em>
       </div>
       <p>
         <br/>
-         Disponibile dal 29 aprile 2022
+         Per qualcosa di complesso come l'indicizzazione e la ricerca, il team ti mostra alcuni facili successi per ottimizzare il tempo di sviluppo e risolvere le cose prima che diventino problemi.
       </p>
    </td> 
   </tr>
