@@ -1,18 +1,18 @@
 ---
 title: Assegnazione tag e archiviazione di AEM Forms DoR in DAM
 description: Questo articolo illustra il caso d’uso per l’archiviazione e l’assegnazione di tag al DoR generato da AEM Forms in AEM DAM. L’assegnazione tag al documento viene eseguita in base ai dati del modulo inviati.
-feature: Moduli adattivi
+feature: Adaptive Forms
 version: 6.4,6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
+source-git-commit: 55583effd0400bac2e38756483d69f5bd114cb21
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
-
 
 # Assegnazione tag e archiviazione di AEM Forms DoR in DAM {#tagging-and-storing-aem-forms-dor-in-dam}
 
@@ -28,13 +28,131 @@ Il caso d’uso è il seguente:
 
 Per soddisfare questo caso di utilizzo è stato scritto un passaggio di processo personalizzato. In questo passaggio recuperiamo i valori degli elementi di dati appropriati dai dati inviati. Quindi creiamo il riquadro del tag utilizzando questo valore. Ad esempio, se il valore dell’elemento di stato civile è &quot;Single&quot;, il titolo del tag diventa **Peak:EmploymentStatus/Single. **Utilizzando l’ API TagManager , troviamo il tag e lo applichiamo al DoR.
 
-Lo snippet di codice seguente illustra come trovare il tag e applicarlo al documento.
+Di seguito è riportato il codice completo per assegnare tag e archiviare il documento di record in AEM DAM.
 
 ```java
-Tag tagFound = tagManager.resolveByTitle(tagTitle+xmlElement.getTextContent());
-//tagTitle is "Peak:EmploymentStatus/" and the xmlElement.getTextContent() will return the value Single. So the tag title becomes Peak:EmploymentStatus/Single. Once the tag is found we put the tag in array and apply the tags to the resource as shown below
-tagArray[i] = tagFound;
-tagManager.setTags(metadata, tagArray, true);
+package com.aemforms.setvalue.core;
+import java.io.InputStream;
+import javax.jcr.Node;
+import javax.jcr.Session;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.xpath.XPath;
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.api.resource.ResourceResolver;
+import org.osgi.framework.Constants;
+import org.osgi.service.component.annotations.Activate;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.metatype.annotations.Designate;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.w3c.dom.Document;
+import com.adobe.granite.workflow.WorkflowException;
+import com.adobe.granite.workflow.WorkflowSession;
+import com.adobe.granite.workflow.exec.WorkItem;
+import com.adobe.granite.workflow.exec.WorkflowData;
+import com.adobe.granite.workflow.exec.WorkflowProcess;
+import com.adobe.granite.workflow.metadata.MetaDataMap;
+import com.adobe.granite.workflow.model.WorkflowModel;
+import com.day.cq.tagging.Tag;
+import com.day.cq.tagging.TagManager;
+
+@Component(property = {
+   Constants.SERVICE_DESCRIPTION + "=Tag and Store Dor in DAM",
+   Constants.SERVICE_VENDOR + "=Adobe Systems",
+   "process.label" + "=Tag and Store Dor in DAM"
+})
+@Designate(ocd = TagDorServiceConfiguration.class)
+public class TagAndStoreDoRinDAM implements WorkflowProcess
+{
+   private static final Logger log = LoggerFactory.getLogger(TagAndStoreDoRinDAM.class);
+
+   private TagDorServiceConfiguration serviceConfig;
+   @Activate
+   public void activate(TagDorServiceConfiguration config)
+   {
+      this.serviceConfig = config;
+   }
+   @Override
+   public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap arg2) throws WorkflowException
+   {
+       log.debug("The process arguments passed ..." + arg2.get("PROCESS_ARGS", "string").toString());
+      String params = arg2.get("PROCESS_ARGS", "string").toString();
+      WorkflowModel wfModel = workflowSession.getModel("/var/workflow/models/dam/update_asset");
+      // Read the Tag DoR service configuration
+      String damFolder = serviceConfig.damFolder();
+      String dorPDFName = serviceConfig.dorPath();
+      String dataXmlFile = serviceConfig.dataFilePath();
+      log.debug("The Data Xml File is ..." + dataXmlFile + "DorPDFName" + dorPDFName);
+      // Read the arguments passed to this workflow step
+      String parameters[] = params.split(",");
+      log.debug("The %%%% length of parameters is " + parameters.length);
+      Tag[] tagArray = new Tag[parameters.length];
+      WorkflowData wfData = workItem.getWorkflowData();
+      String dorFileName = (String) wfData.getMetaDataMap().get("filename");
+      log.debug("The dorFileName is ..." + dorFileName);
+      String payloadPath = workItem.getWorkflowData().getPayload().toString();
+      String dataFilePath = payloadPath + "/" + dataXmlFile + "/jcr:content";
+      String dorDocumentPath = payloadPath + "/" + dorPDFName + "/jcr:content";
+      log.debug("Data File Path" + dataFilePath);
+      log.debug("Dor File Path" + dorDocumentPath);
+      Session session = workflowSession.adaptTo(Session.class);
+      ResourceResolver resourceResolver = workflowSession.adaptTo(ResourceResolver.class);
+      com.day.cq.dam.api.AssetManager assetMgr = resourceResolver.adaptTo(com.day.cq.dam.api.AssetManager.class);
+      DocumentBuilderFactory factory = null;
+      DocumentBuilder builder = null;
+      Document xmlDocument = null;
+      Node xmlDataNode = null;
+      Node dorDocumentNode = null;
+
+      try
+      {
+         // create org.w3c.dom.Document object from submitted form data
+         xmlDataNode = session.getNode(dataFilePath);
+         log.debug("xml Data Node" + xmlDataNode.getName());
+         dorDocumentNode = session.getNode(dorDocumentPath);
+         log.debug("DOR Document Node is " + dorDocumentNode.getName());
+         InputStream xmlDataStream = xmlDataNode.getProperty("jcr:data").getBinary().getStream();
+         InputStream dorInputStream = dorDocumentNode.getProperty("jcr:data").getBinary().getStream();
+         XPath xPath = javax.xml.xpath.XPathFactory.newInstance().newXPath();
+         factory = DocumentBuilderFactory.newInstance();
+         builder = factory.newDocumentBuilder();
+         xmlDocument = builder.parse(xmlDataStream);
+         String newFile = "/content/dam/" + damFolder + "/" + dorFileName;
+         log.debug("the new file is ..." + newFile);
+         // Store the DoR in DAM
+         assetMgr.createAsset(newFile, dorInputStream, "application/pdf", true);
+         WorkflowData wfDataLoad = workflowSession.newWorkflowData("JCR_PATH", newFile);
+         log.debug("Wrote the document to DAM" + newFile);
+         TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
+         Resource pdfDocumentNode = resourceResolver.getResource(newFile);
+         Resource metadata = pdfDocumentNode.getChild("jcr:content/metadata");
+         // Fetch the xml elements from the xml document
+         for (int i = 0; i < parameters.length; i++)
+            {
+                String tagTitle = parameters[i].split("=")[0];
+                log.debug("The tag title is" + tagTitle);
+                String nameOfNode = parameters[i].split("=")[1];
+                org.w3c.dom.Node xmlElement = (org.w3c.dom.Node) xPath.compile(nameOfNode).evaluate(xmlDocument, javax.xml.xpath.XPathConstants.NODE);
+                log.debug("###The value data node is " + xmlElement.getTextContent());
+                Tag tagFound = tagManager.resolveByTitle(tagTitle + xmlElement.getTextContent());
+                log.debug("The tag found was ..." + tagFound.getPath());
+                tagArray[i] = tagFound;
+            }
+         tagManager.setTags(metadata, tagArray, true);
+         workflowSession.startWorkflow(wfModel, wfDataLoad);
+         log.debug("Workflow started");
+         log.debug("Done setting tags");
+         xmlDataStream.close();
+         dorInputStream.close();
+      } catch (Exception e)
+            {
+                 log.debug("The error message is " + e.getMessage());
+            }
+
+   }
+
+}
 ```
 
 Per far funzionare questo esempio sul sistema, segui i passaggi elencati di seguito:
@@ -48,12 +166,12 @@ Per far funzionare questo esempio sul sistema, segui i passaggi elencati di segu
 
 * Fai clic su Crea | Caricamento del file e caricamento del file sampleadaptiveform.zip
 
-* [Importa l&#39;articolo ](assets/tag-and-store-in-dam-assets.zip) tramite AEM gestione pacchetti
-* Apri il modulo di esempio [in modalità anteprima](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled). Compila la sezione Persone e invia il modulo.
+* [Importare le risorse dell’articolo](assets/tag-and-store-in-dam-assets.zip) utilizzo di AEM package manager
+* Apri [modulo di esempio in modalità anteprima](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled). Compila la sezione Persone e invia il modulo.
 * [Passa alla cartella Picco in DAM](http://localhost:4502/assets.html/content/dam/Peak). Dovresti visualizzare DoR nella cartella Picco. Controllare le proprietà del documento. Deve essere contrassegnato in modo appropriato.
 Congratulazioni!! Installazione dell&#39;esempio sul sistema completata
 
-* Esploriamo il [flusso di lavoro](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) che viene attivato all’invio del modulo.
+* Esploriamo il [workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) che viene attivata all’invio del modulo.
 * Il primo passaggio nel flusso di lavoro crea un nome file univoco concatenando il nome del candidato e la contea di residenza.
 * Il secondo passaggio del flusso di lavoro passa la gerarchia dei tag e gli elementi dei campi modulo che devono essere contrassegnati. Il passaggio del processo estrae il valore dai dati inviati e crea il titolo del tag che deve assegnare al documento il tag.
 * Se desideri memorizzare DoR in una cartella diversa nel DAM, specifica il percorso della cartella utilizzando le proprietà di configurazione specificate nella schermata seguente.
@@ -61,4 +179,3 @@ Congratulazioni!! Installazione dell&#39;esempio sul sistema completata
 Gli altri due parametri sono specifici di DoR e Percorso file dati come specificato nelle opzioni di invio del modulo adattivo. Assicurati che i valori qui specificati corrispondano ai valori specificati nelle opzioni di invio del modulo adattivo.
 
 ![Barra dei tag](assets/tag_dor_service_configuration.gif)
-
