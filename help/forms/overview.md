@@ -1,14 +1,14 @@
 ---
 title: Tutorials e video di AEM Forms
-description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms
+description: Sfoglia i nostri video e tutorial per AEM Forms, con risorse e documentazione per rispondere alle tue domande.
 sub-product: forms
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 10%
+source-wordcount: '306'
+ht-degree: 7%
 
 ---
 
@@ -82,7 +82,7 @@ Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, g
 
 ## Risorse aggiuntive
 
-* [Experience League - Esplora AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - Esplora AEM](https://experienceleague.adobe.com/?lang=it#recommended/solutions/experience-manager)
 * [Documentazione sull’authoring di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
 * [Documentazione di sviluppo di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
 * [Documentazione di amministrazione di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)

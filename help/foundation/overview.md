@@ -1,13 +1,13 @@
 ---
 title: Video e tutorial su AEM Foundation
-description: Raccolta di video e tutorial su Adobe Experience Manager Foundation.
+description: Guarda i nostri video e tutorial per ottenere aiuto con Adobe Experience Manager Foundation.
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 18%
+source-wordcount: '253'
+ht-degree: 15%
 
 ---
 
@@ -78,7 +78,7 @@ Adobe Experience Manager fornisce un set comune di funzionalità disponibili per
 
 ## Risorse aggiuntive
 
-* [Experience League - Esplora AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - Esplora AEM](https://experienceleague.adobe.com/?lang=it#recommended/solutions/experience-manager)
 * [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Video e tutorial su AEM Sites](/help/sites/overview.md)
 * [Video e tutorial su AEM Assets](/help/assets/overview.md)
