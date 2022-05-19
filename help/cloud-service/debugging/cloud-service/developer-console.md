@@ -13,28 +13,28 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 751aed9b8659d6a600429efb2bf60825b6d39144
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1396'
 ht-degree: 0%
 
 ---
 
-# Debug di AEM come Cloud Service con Developer Console
+# Debug AEM as a Cloud Service con Developer Console
 
 AEM as a Cloud Service fornisce una Console per sviluppatori per ogni ambiente che espone vari dettagli del servizio AEM in esecuzione utili per il debug.
 
-Ogni AEM come ambiente di Cloud Service dispone di una propria Console per sviluppatori.
+Ogni ambiente as a Cloud Service AEM dispone di una propria Console per sviluppatori.
 
 ## Accesso a Developer Console
 
-Per accedere e utilizzare la Console per sviluppatori, è necessario assegnare le seguenti autorizzazioni all’Adobe ID dello sviluppatore tramite [Admin Console di Adobe](https://adminconsole.adobe.com).
+Per accedere e utilizzare la Console per sviluppatori, è necessario concedere le seguenti autorizzazioni all’Adobe ID dello sviluppatore tramite [Admin Console Adobe](https://adminconsole.adobe.com).
 
-1. Assicurati che l’organizzazione di Adobe che ha effettuato Cloud Manager e AEM come prodotti di Cloud Service sia attiva nel commutatore dell’organizzazione di Adobe.
-1. Lo sviluppatore deve essere membro del profilo di prodotto __Sviluppatore - Cloud Service__ di Cloud Manager.
+1. Assicurati che l’organizzazione di Adobe che ha interessato Cloud Manager e AEM prodotti as a Cloud Service sia attiva nel commutatore dell’organizzazione di Adobe.
+1. Lo sviluppatore deve essere membro del prodotto Cloud Manager __Sviluppatore - Cloud Service__ Profilo prodotto.
    + Se l’iscrizione non esiste, lo sviluppatore non sarà in grado di accedere a Developer Console.
-1. Lo sviluppatore deve essere membro del profilo di prodotto __AEM Utenti__ o __AEM Amministratori__ su AEM Author e/o Publish.
-   + Se l&#39;appartenenza non esiste, le immagini [status](#status) scadranno con un errore 401 Non autorizzato.
+1. Lo sviluppatore deve essere un membro del __Utenti AEM__ o __Amministratori AEM__ Profilo di prodotto in AEM Author e/o Publish.
+   + Se l&#39;appartenenza non esiste, il [status](#status) le immagini si timeout con un errore 401 non autorizzato.
 
 ### Risoluzione dei problemi di accesso a Developer Console
 
@@ -42,25 +42,25 @@ Per accedere e utilizzare la Console per sviluppatori, è necessario assegnare l
 
 ![Console per sviluppatori - 401 non autorizzato](./assets/developer-console/troubleshooting__401-unauthorized.png)
 
-Se viene segnalato un errore 401 Non autorizzato, significa che l’utente non esiste ancora con le autorizzazioni necessarie in AEM come Cloud Service o che l’utilizzo dei token di accesso non è valido o è scaduto.
+Se si registra un errore 401 non autorizzato, il dumping indica che l&#39;utente non esiste ancora con le autorizzazioni necessarie in AEM as a Cloud Service oppure che l&#39;utilizzo dei token di accesso non è valido o è scaduto.
 
 Per risolvere il problema 401 Non autorizzato:
 
-1. Assicurati che il tuo utente sia membro del profilo di prodotto Adobe IMS appropriato (amministratori AEM o utenti AEM) per il AEM associato della Console per sviluppatori come istanza di prodotto del Cloud Service.
-   + Ricorda che Developer Console accede a 2 istanze di prodotto Adobe IMS; AEM istanze di prodotto Autore e pubblicazione di Cloud Service, assicurati che vengano utilizzati i profili di prodotto corretti a seconda del livello di servizio che richiede l’accesso tramite Console per sviluppatori.
-1. Accedi al AEM come Cloud Service (Author o Publish) e assicurati che l’utente e i gruppi siano stati sincronizzati correttamente in AEM.
+1. Assicurati che l’utente sia membro del profilo di prodotto Adobe IMS appropriato (amministratori AEM o utenti AEM) per l’istanza di prodotto as a Cloud Service AEM associata alla Console per sviluppatori.
+   + Ricorda che Developer Console accede a 2 istanze di prodotto Adobe IMS; le AEM istanze di prodotto Author e Publish as a Cloud Service, quindi assicurati che vengano utilizzati i profili di prodotto corretti a seconda del livello di servizio che richiede l’accesso tramite Console per sviluppatori.
+1. Accedi alla AEM as a Cloud Service (Author o Publish) e assicurati che l&#39;utente e i gruppi siano stati sincronizzati correttamente in AEM.
    + Developer Console richiede la creazione del record utente nel livello di servizio AEM corrispondente per l’autenticazione a tale livello di servizio.
 1. Elimina i cookie del browser e lo stato dell’applicazione (archiviazione locale) e accedi nuovamente a Developer Console, garantendo che il token di accesso utilizzato da Developer Console sia corretto e non sia scaduto.
 
 ## Pod
 
-I servizi Author e Publish di AEM sono composti rispettivamente di più istanze per gestire la variabilità del traffico e gli aggiornamenti continui senza downtime. Queste istanze sono denominate Pods. La selezione del contenitore in Developer Console definisce l’ambito dei dati che verranno esposti tramite gli altri controlli.
+AEM servizi di authoring e pubblicazione as a Cloud Service sono composti rispettivamente di più istanze per gestire la variabilità del traffico e gli aggiornamenti continui senza downtime. Queste istanze sono denominate Pods. La selezione del contenitore in Developer Console definisce l’ambito dei dati che verranno esposti tramite gli altri controlli.
 
 ![Console per sviluppatori - Pod](./assets/developer-console/pod.png)
 
 + Un pod è un’istanza discreta che fa parte di un servizio AEM (Author or or Publish)
-+ I baccelli sono transitori, il che significa AEM come un Cloud Service li crea e li distrugge secondo necessità
-+ Solo i pod che fanno parte del AEM associato come ambiente di Cloud Service, sono elencati il commutatore Pod della Console per sviluppatori dell’ambiente.
++ I baccelli sono transitori, il che significa che AEM as a Cloud Service li crea e li distrugge in base alle necessità
++ Solo i pod che fanno parte dell’ambiente as a Cloud Service AEM associato sono elencati nel commutatore Pod della Console per sviluppatori dell’ambiente.
 + Nella parte inferiore dello switcher Pod, le opzioni di comodità consentono di selezionare i pod in base al tipo di servizio:
    + Tutti gli autori
    + Tutti gli editori
@@ -74,7 +74,7 @@ Lo stato fornisce opzioni per l’output di uno stato di runtime AEM specifico n
 
 ### Bundle
 
-I bundle elencano tutti i bundle OSGi in AEM. Questa funzionalità è simile ai [AEM bundle OSGi locali dell&#39;SDK quickstart](http://localhost:4502/system/console/bundles) in `/system/console/bundles`.
+I bundle elencano tutti i bundle OSGi in AEM. Questa funzionalità è simile a [Bundle OSGi locali dell’SDK AEM](http://localhost:4502/system/console/bundles) a `/system/console/bundles`.
 
 I bundle aiutano a eseguire il debug:
 
@@ -84,22 +84,24 @@ I bundle aiutano a eseguire il debug:
 
 ### Componenti
 
-Componenti elenca tutti i componenti OSGi in AEM. Questa funzionalità è simile ai componenti OSGi locali dell&#39;SDK [AEM ](http://localhost:4502/system/console/components) in `/system/console/components` di .
+Componenti elenca tutti i componenti OSGi in AEM. Questa funzionalità è simile a [Componenti OSGi locali dell’SDK AEM](http://localhost:4502/system/console/components) a `/system/console/components`.
 
 I componenti sono utili per il debug:
 
-+ Elencare tutti i componenti OSGi distribuiti per AEM come Cloud Service
++ Elencare tutti i componenti OSGi distribuiti AEM as a Cloud Service
 + Fornire lo stato di ciascun componente OSGi; anche se sono attivi o insoddisfatti
 + Fornire dettagli in riferimenti di servizio non soddisfatti può causare l&#39;attivazione dei componenti OSGi
-+ Elenco delle proprietà OSGi e dei loro valori associati al componente OSGi
++ Elencare le proprietà OSGi e i relativi valori associati al componente OSGi.
+   + Verranno visualizzati i valori effettivi inseriti tramite [Variabili di configurazione dell’ambiente OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values).
 
 ### Configurazioni
 
-Le configurazioni elencano tutte le configurazioni del componente OSGi (proprietà e valori OSGi). Questa funzionalità è simile a [AEM OSGi Configuration Manager locale dell&#39;SDK ](http://localhost:4502/system/console/configMgr)in `/system/console/configMgr`.
+Le configurazioni elencano tutte le configurazioni del componente OSGi (proprietà e valori OSGi). Questa funzionalità è simile a [Gestione configurazione OSGi locale dell&#39;SDK AEM](http://localhost:4502/system/console/configMgr) a `/system/console/configMgr`.
 
 Le configurazioni sono utili per il debug:
 
 + Elencare le proprietà OSGi e i loro valori dal componente OSGi
+   + NON verranno visualizzati i valori effettivi inseriti tramite [Variabili di configurazione dell’ambiente OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values). Vedi [Componenti](#components) precedente, per i valori inseriti.
 + Individuazione e identificazione delle proprietà non configurate
 
 ### Indici Oak
@@ -112,7 +114,7 @@ Aiuto per gli indici Oak nel debug tramite:
 
 ### Servizi OSGi
 
-Componenti elenca tutti i servizi OSGi. Questa funzionalità è simile a [AEM servizi OSGi locali dell&#39;SDK ](http://localhost:4502/system/console/services) in `/system/console/services`.
+Componenti elenca tutti i servizi OSGi. Questa funzionalità è simile a [Servizi OSGi locali dell’SDK AEM](http://localhost:4502/system/console/services) a `/system/console/services`.
 
 Guida dei servizi OSGi per il debug:
 
@@ -120,7 +122,7 @@ Guida dei servizi OSGi per il debug:
 
 ### Processi Sling
 
-In Processi Sling sono elencate tutte le code di Processi Sling. Questa funzionalità è simile ai processi locali dell&#39;SDK [AEM ](http://localhost:4502/system/console/slingevent) in `/system/console/slingevent` dell&#39;SDK.
+In Processi Sling sono elencate tutte le code di Processi Sling. Questa funzionalità è simile a [Processi dell’avvio rapido locale dell’SDK AEM](http://localhost:4502/system/console/slingevent) a `/system/console/slingevent`.
 
 La guida dei processi Sling per il debug è disponibile nei seguenti modi:
 
@@ -129,7 +131,7 @@ La guida dei processi Sling per il debug è disponibile nei seguenti modi:
 
 ## Pacchetti Java
 
-Java Packages consente di verificare se un pacchetto Java e una versione sono disponibili per l&#39;uso in AEM come Cloud Service. Questa funzionalità è la stessa di [AEM dâ SDK locale a quickstart&#39;s Dependency Finder](http://localhost:4502/system/console/depfinder) all&#39;indirizzo `/system/console/depfinder`.
+I pacchetti Java consentono di verificare se un pacchetto Java e una versione sono disponibili per l&#39;uso in AEM as a Cloud Service. Questa funzionalità è la stessa di [Finder dipendenza dell’SDK AEM](http://localhost:4502/system/console/depfinder) a `/system/console/depfinder`.
 
 ![Console per sviluppatori - Pacchetti Java](./assets/developer-console/java-packages.png)
 
@@ -138,11 +140,11 @@ I pacchetti Java vengono utilizzati per risolvere i problemi di avvio I bundle n
 + Assicurati che la versione della dipendenza AEM API maven del progetto corrisponda alla versione di rilascio AEM dell’ambiente (e, se possibile, aggiorna tutto all’ultima versione).
 + Se nel progetto Maven vengono utilizzate dipendenze Maven aggiuntive
    + Determina se è invece possibile utilizzare un’API alternativa fornita dalla dipendenza API SDK AEM.
-   + Se la dipendenza extra è necessaria, assicurati che sia fornita come bundle OSGi (anziché come Jar normale) e sia incorporata nel pacchetto di codice del progetto, (`ui.apps`), in modo simile al modo in cui il bundle OSGi principale è incorporato nel pacchetto `ui.apps`.
+   + Se la dipendenza extra è necessaria, assicurati che sia fornita come bundle OSGi (anziché come Jar normale) ed sia incorporata nel pacchetto di codice del tuo progetto, (`ui.apps`), simile al modo in cui il bundle OSGi principale è incorporato nel `ui.apps` pacchetto.
 
 ## Servlet
 
-Servlets viene utilizzato per fornire informazioni su come AEM risolve un URL a un servlet o a uno script Java (HTL, JSP) che gestisce in ultima analisi la richiesta. Questa funzionalità è la stessa di [AEM Sling Servlet Resolver dell&#39;SDK locale di quickstart](http://localhost:4502/system/console/servletresolver) in `/system/console/servletresolver`.
+Servlets viene utilizzato per fornire informazioni su come AEM risolve un URL a un servlet o a uno script Java (HTL, JSP) che gestisce in ultima analisi la richiesta. Questa funzionalità è la stessa di [Risolutore del servlet Sling Servlet dell’SDK AEM locale](http://localhost:4502/system/console/servletresolver) a `/system/console/servletresolver`.
 
 ![Console per sviluppatori - Servlet](./assets/developer-console/servlets.png)
 
@@ -153,7 +155,7 @@ I servlet consentono di determinare nel debug:
 
 ## Query
 
-Le query forniscono informazioni dettagliate su cosa e come vengono eseguite le query di ricerca su AEM. Questa funzionalità è la stessa della console [AEM quickstart locale dell’SDK > Prestazioni query ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) .
+Le query forniscono informazioni dettagliate su cosa e come vengono eseguite le query di ricerca su AEM. Questa funzionalità è la stessa di  [Strumenti di avvio rapido locale dell’SDK AEM > Prestazioni query ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) console.
 
 Le query funzionano solo quando è selezionato un pod specifico, in quanto apre la console Web Query Performance del pod, che richiede allo sviluppatore di avere accesso per accedere al servizio AEM.
 
