@@ -8,7 +8,7 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 1532a865-4664-40d9-964a-e64463b49587
-source-git-commit: 55583effd0400bac2e38756483d69f5bd114cb21
+source-git-commit: b918afdddf1f047b478e0521883a633f7b0610c6
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 1%
@@ -43,7 +43,7 @@ Per creare il tuo primo file swagger/OpenAPI, segui [Documentazione OpenAPI](htt
 
 Utilizza la [editor swagger](https://editor.swagger.io/) per creare il file swagger per descrivere le operazioni che inviano e verificano il codice OTP inviato utilizzando SMS. Il file swagger può essere creato in formato JSON o YAML. Il file swagger completato può essere scaricato da [qui](assets/drivers-license-swagger.zip)
 
-## Considerazioni durante la definizione del file swager
+## Considerazioni durante la definizione del file di swagger
 
 * Definizioni necessarie
 * $ref deve essere utilizzato per le definizioni dei metodi
