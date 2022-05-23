@@ -8,13 +8,13 @@ role: Architect, Developer
 level: Intermediate
 kt: 9351
 thumbnail: 343040.jpeg
-source-git-commit: e666e38d6b2a7057f7016b35ad1034a4487e9bc7
+exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
+source-git-commit: e4cd87e5d2d78c3113ef860b9f357cfacb2c874a
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2775'
 ht-degree: 2%
 
 ---
-
 
 # Autenticazione SAML 2.0{#saml-2-0-authentication}
 
@@ -398,6 +398,10 @@ Dopo l’autenticazione all’IDP, l’IDP orchestrerà un POST HTTP per AEM reg
 ```
 
 Se è configurata la riscrittura URL sul server web Apache (`dispatcher/src/conf.d/rewrites/rewrite.rules`), assicurati che le richieste `.../saml_login` i punti finali non vengono accidentalmente gestiti.
+
+## Abilita sincronizzazione dati
+
+I record utente devono essere sincronizzati nel livello di pubblicazione AEM, una volta che il flusso di autenticazione SAML crea un utente in AEM Publish. A [abilitare la sincronizzazione dati](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#data-synchronization), invia una richiesta all’Assistenza clienti di Adobe (tramite [AdminConsole](https://adminconsole.adobe.com) > Supporto) per richiedere l&#39;abilitazione.
 
 ## Distribuzione della configurazione SAML
 
