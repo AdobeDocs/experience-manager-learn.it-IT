@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
-source-git-commit: 55583effd0400bac2e38756483d69f5bd114cb21
+source-git-commit: 2ac0f6b3964590e5443700f730a3fc02cb3f63bc
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -160,14 +160,14 @@ Per far funzionare questo esempio sul sistema, segui i passaggi elencati di segu
 
 * [Scarica e distribuisci il bundle setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Questo è il bundle OSGI personalizzato che imposta i tag dai dati del modulo inviati.
 
-* [Scarica il modulo adattivo di esempio](assets/tag-and-store-in-dam-assets.zip)
+* [Scarica il modulo adattivo di esempio](assets/tag-and-store-in-dam-adaptive-form.zip)
 
 * [Vai a Forms e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
-* Fai clic su Crea | Caricamento del file e caricamento del file sampleadaptiveform.zip
+* Fai clic su Crea | Caricamento di file e caricamento del tag-and-store-in-dam-adaptive-form.zip
 
 * [Importare le risorse dell’articolo](assets/tag-and-store-in-dam-assets.zip) utilizzo di AEM package manager
-* Apri [modulo di esempio in modalità anteprima](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled). Compila la sezione Persone e invia il modulo.
+* Apri [modulo di esempio in modalità anteprima](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Compila tutti i campi** e inviare il modulo.
 * [Passa alla cartella Picco in DAM](http://localhost:4502/assets.html/content/dam/Peak). Dovresti visualizzare DoR nella cartella Picco. Controllare le proprietà del documento. Deve essere contrassegnato in modo appropriato.
 Congratulazioni!! Installazione dell&#39;esempio sul sistema completata
 
