@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
-source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
+source-git-commit: 8c75e062d2de70c294f95e5c25040d8bb9badcce
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1080'
 ht-degree: 1%
 
 ---
@@ -110,7 +110,7 @@ Inizia abilitando l&#39;uscita della porta flessibile su AEM as a Cloud Service.
 
    Definire i parametri JSON in un `flexible-port-egress.json` e fornito per curl tramite `... -d @./flexible-port-egress.json`.
 
-[Scarica l&#39;esempio Flexible-port-egress.json](./assets/flexible-port-egress.json)
+   [Scarica l&#39;esempio Flexible-port-egress.json](./assets/flexible-port-egress.json). Questo file è solo un esempio. Configura il file come richiesto in base ai campi facoltativi/obbligatori documentati in [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
 
    ```json
    {

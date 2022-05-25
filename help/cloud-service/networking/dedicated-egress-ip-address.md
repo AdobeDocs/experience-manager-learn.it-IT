@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9351
 thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
-source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
+source-git-commit: 4f8222d3185ad4e87eda662c33c9ad05ce3b0427
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1229'
 ht-degree: 1%
 
 ---
@@ -110,7 +110,7 @@ Inizia abilitando e configurando l’indirizzo IP di uscita dedicato su AEM as a
 
    Definire i parametri JSON in un `dedicated-egress-ip-address.json` e fornito per curl tramite `... -d @./dedicated-egress-ip-address.json`.
 
-[Scarica l&#39;esempio dedicato-egress-ip-address.json](./assets/dedicated-egress-ip-address.json)
+   [Scarica l&#39;esempio dedicato-egress-ip-address.json](./assets/dedicated-egress-ip-address.json). Questo file è solo un esempio. Configura il file come richiesto in base ai campi facoltativi/obbligatori documentati in [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
 
    ```json
    {
