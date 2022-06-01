@@ -8,13 +8,13 @@ level: Beginner
 kt: 9720
 thumbnail: 340333.jpeg
 hidefromtoc: false
-source-git-commit: c6caa39075bc3c26dedeca4246e7e1f85887b124
+exl-id: 520a75cd-757a-4ae9-acf6-3c1f5e1f3747
+source-git-commit: 485f968e6f8c508b5e81c54e03ca17996e4c1b63
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '108'
 ht-degree: 0%
 
 ---
-
 
 # Tag AEM, cartelle collegate a un progetto e metadati di cartelle
 
@@ -25,3 +25,7 @@ Scopri come utilizzare i tag AEM sulle risorse tramite dati Workfront, configura
 >[!VIDEO](https://video.tv.adobe.com/v/340333/?quality=12&learn=on)
 
 _Parte tre di una [serie di esperti in quattro parti su Workfront per Experience Manager connettore avanzato](./overview.md)_
+
+## Correzioni
+
++ __@ 4:34__ La sintassi dei tag AEM non è corretta. Display video `we-retail:apparel/footwear`. La sintassi corretta è `["we-retail:apparel/footwear"]` o più in generale `["namespace:tag/childtag"]`.
