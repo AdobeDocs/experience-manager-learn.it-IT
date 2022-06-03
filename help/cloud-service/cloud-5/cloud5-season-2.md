@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: abb26a995ec81332bb6ae3617b1a41b60c9dab96
+source-git-commit: 85e00a237c09867247a0b3ccffa0bf843826ee26
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '340'
 ht-degree: 2%
 
 ---
@@ -30,18 +30,20 @@ Visita il [Casella di suggerimenti](https://forms.office.com/r/74P5Xz4UH0) per l
 Ogni stagione varia in lunghezza e sarà rilasciata su un programma fisso. Gli argomenti della seconda stagione sono principalmente basati su richieste passate che abbiamo incontrato nei nostri impegni quotidiani con clienti e partner. Visita questa pagina per aggiornamenti settimanali o seguici sul social network di tua scelta.
 
 <table>
-  <tr>
-   <td>
-      <img alt="Frammenti" src="./imgs/coming-soon.png"/>
-      <div>
-         <strong>Frammenti</strong>        
-         <br/><em>con Darin Kuntze e James Talbot, architetti senior di cloud</em>
-      </div>
-      <p>
-        <br/>
-         Prossima 3 giugno 2022
-      </p>
-     </td>   
+    <tr>
+        <td>
+            <a href="season-2/cloud5-experience-v-content-fragments.md">
+                <img alt="Frammenti" src="./imgs/s2/000-thumb.png"/>
+            </a>
+            <div>
+                <a href="season-2/cloud5-experience-v-content-fragments.md"><strong>Frammenti</strong></a>        
+                <br/><em>con Darin Kuntze e James Talbot, architetti senior di cloud</em>
+            </div>
+            <p>
+                <br/>
+                Una panoramica dettagliata delle differenze tra l’esperienza e i frammenti di contenuto. Spoiler: vincono tutti.
+            </p>
+        </td>   
      <td>
          <img alt="Modernizzatore dell'archivio" src="./imgs/coming-soon.png"/>
       <div>
