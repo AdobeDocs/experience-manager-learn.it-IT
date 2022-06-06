@@ -5,9 +5,9 @@ user-guide-title: Video e tutorial su AEM Forms
 user-guide-description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms.
 breadcrumb-title: Tutorial su AEM Forms
 index: y
-source-git-commit: cb5b3eb77a57fa8a2918710b7dbcd1b0a58b74bd
+source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1676'
 ht-degree: 3%
 
 ---
@@ -76,6 +76,7 @@ ht-degree: 3%
    + [Compilazione di una tabella con i risultati dell’invocazione a Form Data Model Service](adaptive-forms/populatetable.md)
    + [Acquisizione dei commenti del flusso di lavoro](adaptive-forms/capturing-workflow-comments-aem-workflow-article.md)
    + [Memorizzazione dei dati dei moduli inviati nel database](adaptive-forms/storing-adaptive-form-data-in-db.md)
+   + [Inserimento dell’allegato del modulo nel database](adaptive-forms/inserting-form-attachment-in-db.md)
    + [Servizio del modello dati modulo nel flusso di lavoro AEM 6.4](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
    + [Passaggio del servizio Gestione dei messaggi di errore nel modello dati del modulo](adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)
    + [Servizio del modello dati per moduli nel flusso di lavoro AEM 6.5.1](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)
@@ -211,7 +212,7 @@ ht-degree: 3%
    + [Utilizzo del servizio PDFG in AEM Forms](document-services/using-pdfg-in-aem-forms.md)
    + [Utilizzo di Output e del servizio Forms in AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Generazione di più pdf da un file di dati](document-services/generate-multi-record-pdf.md)
-   + [Genera PDF su invio modulo Mobile](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [Genera PDF sull’invio di moduli per dispositivi mobili](document-services/generate-pdf-from-mobile-form-submission-article.md)
    + [Genera PDF interattivo da modulo mobile](document-services/render-interactive-form-using-api.md)
    + [Genera il DoR interattivo dal modulo adattivo](document-services/generate-interactive-dor.md)
    + [Configurare le credenziali delle estensioni di Reader](document-services/configuring-reader-extension-osgi.md)

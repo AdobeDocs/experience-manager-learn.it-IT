@@ -8,9 +8,10 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 10423
-source-git-commit: 2ac0f6b3964590e5443700f730a3fc02cb3f63bc
+exl-id: 2ce0c07b-1316-4170-a84d-23430437a9cc
+source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -24,14 +25,14 @@ Per creare la configurazione cloud consapevole del contesto, sono necessari i se
 
 ## Creare variabili di ambiente
 
-Le variabili di ambiente standard possono essere configurate e gestite tramite Cloud Manager. Vengono forniti all’ambiente in fase di esecuzione e possono essere utilizzati nelle configurazioni OSGi. Le variabili dell’ambiente possono essere valori specifici dell’ambiente o segreti dell’ambiente in base alle modifiche apportate.
+Le variabili di ambiente standard possono essere configurate e gestite tramite Cloud Manager. Vengono forniti all’ambiente in fase di esecuzione e possono essere utilizzati nelle configurazioni OSGi. [Le variabili dell’ambiente possono essere valori specifici dell’ambiente o segreti dell’ambiente in base alle modifiche apportate.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en)
 
-[Variabili di ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en)
+
 
 La seguente schermata mostra le variabili di ambiente azure_key e azure_connection_string definite
 ![environment_variables](assets/environment-variables.png)
 
-Queste variabili di ambiente possono quindi essere specificate nei file di configurazione da utilizzare negli ambienti appropriati. Ad esempio, se desideri che tutte le istanze dell&#39;autore utilizzino queste variabili di ambiente, definirai il file di configurazione nella cartella config.author come specificato di seguito
+Queste variabili di ambiente possono quindi essere specificate nei file di configurazione da utilizzare nell&#39;ambiente appropriato. Ad esempio, se desideri che tutte le istanze dell&#39;autore utilizzino queste variabili di ambiente, definirai il file di configurazione nella cartella config.author come specificato di seguito
 
 ## Crea file di configurazione
 

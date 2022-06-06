@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '674'
 ht-degree: 1%
 
 ---
@@ -49,12 +49,6 @@ Maven è uno strumento di automazione della build utilizzato principalmente per 
 
 ![sorgente dati](assets/mvn-version.JPG)
 
-## Settings.xml
-
-Maven `settings.xml` file definisce i valori che configurano l’esecuzione Maven in vari modi. Nella maggior parte dei casi, viene utilizzato per definire una posizione di archivio locale, server di archivio remoti alternativi e informazioni di autenticazione per archivi privati.
-
-Passa a `C:\Users\<username>\.m2 folder`
-Estrarre il contenuto di [settings.zip](assets/settings.zip) e inseriscilo nel `.m2` cartella.
 
 ## Installa Eclipse
 
@@ -68,24 +62,17 @@ Per creare il tuo primo progetto Maven, segui i seguenti passaggi:
 * Crea una nuova cartella denominata `aemformsbundles` nell&#39;unità C
 * Apri un prompt dei comandi e passa a `c:\aemformsbundles`
 * Esegui il seguente comando nel prompt dei comandi
-* `mvn archetype:generate  -DarchetypeGroupId=com.adobe.granite.archetypes  -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=19`
 
-Il progetto Maven verrà generato in modo interattivo e ti verrà chiesto di fornire valori a diverse proprietà, ad esempio:
+```java
+mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate -D archetypeGroupId=com.adobe.aem -D archetypeArtifactId=aem-project-archetype -D archetypeVersion=36 -D appTitle="My Site" -D appId="mysite" -D groupId="com.mysite" -D aemVersion=6.5.13
+```
 
-| Nome proprietà | Significato | Valore |
-------------------------|---------------------------------------|---------------------
-| groupId | groupId identifica il progetto in modo univoco in tutti i progetti | com.learningaemforms.adobe |
-| appsFolderName | Nome della cartella che conterrà la struttura del progetto | apprendimento di aemforms |
-| artifactId | artifactId è il nome del jar senza versione. Se lo hai creato, puoi scegliere qualsiasi nome desideri con lettere minuscole e senza strani simboli. | apprendimento di aemforms |
-| version | Se lo distribuisci, puoi scegliere qualsiasi versione tipica con numeri e punti (1.0, 1.1, 1.0.1, ...). | 1.0 |
-
-Accettate i valori predefiniti per le altre proprietà premendo Invio chiave.
-Se tutto va bene, dovresti visualizzare un messaggio di completamento nella finestra del comando
+Al termine del completamento, nella finestra del comando dovrebbe essere visualizzato un messaggio di completamento della compilazione
 
 ## Crea un progetto eclipse dal tuo progetto Maven
 
-Cambia la directory di lavoro in `learningaemforms`.
-Esegui `mvn eclipse:eclipse` dalla riga di comando Il comando precedente legge il file pom e crea progetti Eclipse con metadati corretti in modo che Eclipse possa comprendere i tipi di progetto, le relazioni, il percorso di classe, ecc.
+* Cambia la directory di lavoro in `mysite`
+* Esegui `mvn eclipse:eclipse` dalla riga di comando. Il comando legge il file pom e crea progetti Eclipse con metadati corretti in modo che Eclipse possa comprendere i tipi di progetto, le relazioni, il percorso di classe, ecc.
 
 ## Importa il progetto in eclissi
 
@@ -97,33 +84,24 @@ Vai a **File -> Importa** e seleziona **Progetti Maven esistenti** come mostrato
 
 Fai clic su Avanti
 
-Seleziona la `c:\aemformsbundles\learningaemform`s facendo clic sul pulsante **Sfoglia** pulsante
+Seleziona il c:\aemformsbundles\mysite by clicking the **Sfoglia** pulsante
 
-![sorgente dati](assets/select-mvn-project.JPG)
+![sorgente dati](assets/mysite-eclipse-project.png)
 
 >[!NOTE]
 >Puoi scegliere di importare i moduli appropriati in base alle tue esigenze. Seleziona e importa solo il modulo principale, se hai intenzione di creare solo codice Java nel tuo progetto.
 
 Fai clic su **Fine** per avviare il processo di importazione
 
-Il progetto viene importato in Eclipse e vengono visualizzati diversi `learningaemforms.xxxx` cartelle
+Il progetto viene importato in Eclipse e vengono visualizzati diversi `mysite.xxxx` cartelle
 
-Espandi la `src/main/java` in `learningaemforms.core` cartella. Questa è la cartella in cui scriverai la maggior parte del codice.
+Espandi la `src/main/java` in `mysite.core` cartella. Questa è la cartella in cui scriverai la maggior parte del codice.
 
-![sorgente dati](assets/learning-core.JPG)
+![sorgente dati](assets/mysite-core-project.png)
 
-## Crea il progetto
+## Includi SDK client AEM FD
 
-
-
-
-Dopo aver scritto il servizio OSGi, o servlet, dovrai generare il progetto per generare il bundle OSGi che può essere distribuito utilizzando la console web Felix. Fai riferimento a [SDK client AEMFD](https://search.maven.org/artifact/com.adobe.aemfd/aemfd-client-sdk) per includere l’SDK client appropriato nel progetto Maven. Devi includere l’SDK client FD AEM nella sezione dipendenze di `pom.xml` del progetto principale come mostrato di seguito.
-
-
-
-
-
-
+Sarà necessario includere l’sdk client AEMFD nel progetto per sfruttare i vari servizi forniti con AEM Forms. Fai riferimento a [SDK client AEMFD](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) per includere l’SDK client appropriato nel progetto Maven. Devi includere l’SDK client FD AEM nella sezione dipendenze di `pom.xml` del progetto principale come mostrato di seguito.
 
 ```xml
 <dependency>
@@ -136,7 +114,7 @@ Dopo aver scritto il servizio OSGi, o servlet, dovrai generare il progetto per g
 Per creare il progetto, effettua le seguenti operazioni:
 
 * Apri **finestra del prompt dei comandi**
-* Accedi a `c:\aemformsbundles\learningaemforms\core`
+* Accedi a `c:\aemformsbundles\mysite\core`
 * Esegui il comando `mvn clean install -PautoInstallBundle`
 Il comando precedente crea e installa il bundle nel server AEM in esecuzione su `http://localhost:4502`. Il bundle sarà disponibile anche sul file system all&#39;indirizzo
-   `C:\AEMFormsBundles\learningaemforms\core\target` e può essere distribuito utilizzando [Console web Felix](http://localhost:4502/system/console/bundles)
+   `C:\AEMFormsBundles\mysite\core\target` e può essere distribuito utilizzando [Console web Felix](http://localhost:4502/system/console/bundles)
