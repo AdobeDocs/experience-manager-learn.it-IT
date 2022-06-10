@@ -8,14 +8,14 @@ thumbnail: 342865.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: de4c2a3b-e5a3-4b2c-aaa0-c0f7028dd61e
-source-git-commit: 726cf83f3cabe46c12abb79288368407ebf4d525
+source-git-commit: 87d19ba3388b4a2ac3db1d2cf3838ed12dbbd2bc
 workflow-type: tm+mt
-source-wordcount: '59'
+source-wordcount: '60'
 ht-degree: 3%
 
 ---
 
-# Cloud 5 - Frammenti
+# Cloud 5 - Repository Modernizer
 
 I ragazzi esaminano come il modernizzatore dell&#39;archivio ti aiuta a passare a AEM as a Cloud Service con utile panoramica di come funziona e perché.
 
