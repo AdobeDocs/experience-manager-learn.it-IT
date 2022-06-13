@@ -5,9 +5,9 @@ user-guide-title: Video e tutorial su AEM Forms
 user-guide-description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms.
 breadcrumb-title: Tutorial su AEM Forms
 index: y
-source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
+source-git-commit: 2cb08c584cb8dce27fd74314d7eba69ef4f8a875
 workflow-type: tm+mt
-source-wordcount: '1676'
+source-wordcount: '1680'
 ht-degree: 3%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 3%
    + [Limitazione dell’accesso all’editor di regole](adaptive-forms/restricting-rule-editor-aem-forms-technical-video-use.md)
    + [Miglioramenti dell’editor di temi](adaptive-forms/theme-editor-improvements-feature-video-use.md)
    + [Miglioramenti all’Editor moduli](adaptive-forms/form-editor-improvements-feature-video-use.md)
-   + [Test Automatizzato Del Video Forms Adattivo](adaptive-forms/calvin-sdk-test-adaptive-forms-feature-video.md)
+   + [Test Automatizzato Di Forms Adattivo](adaptive-forms/calvin-sdk-test-adaptive-forms-feature-video.md)
    + [Test Automatizzato Di Forms Adattivo](adaptive-forms/calvin-sdk-test-adaptive-forms-article-use.md)
    + [Integrazione di LDAP con AEM Forms](adaptive-forms/aem-forms-workflow-with-ldap-article-use.md)
    + [Utilizzo dell’utente del servizio in AEM Forms](adaptive-forms/service-user-tutorial-develop.md)
@@ -77,6 +77,8 @@ ht-degree: 3%
    + [Acquisizione dei commenti del flusso di lavoro](adaptive-forms/capturing-workflow-comments-aem-workflow-article.md)
    + [Memorizzazione dei dati dei moduli inviati nel database](adaptive-forms/storing-adaptive-form-data-in-db.md)
    + [Inserimento dell’allegato del modulo nel database](adaptive-forms/inserting-form-attachment-in-db.md)
+   + [Modifica configurazione origine dati](adaptive-forms/modify-data-source-configuration-settings-article.md)
+   + [Ignora proprietà modello dati modulo](adaptive-forms/override-fdm-values.md)
    + [Servizio del modello dati modulo nel flusso di lavoro AEM 6.4](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
    + [Passaggio del servizio Gestione dei messaggi di errore nel modello dati del modulo](adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)
    + [Servizio del modello dati per moduli nel flusso di lavoro AEM 6.5.1](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)
@@ -89,7 +91,6 @@ ht-degree: 3%
    + [Pubblicare dati binari AEM DAM utilizzando il modello dati del modulo](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
    + [Creazione di modelli di flussi di lavoro riutilizzabili](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
    + [Flusso di lavoro del passaggio del processo personalizzato AEM](adaptive-forms/custom-process-step-aem-workflow.md)
-   + [Modifica configurazione origine dati](adaptive-forms/modify-data-source-configuration-settings-article.md)
    + [Pre-popolamento di HTML5 Forms](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Modello dati modulo con Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Aggiunta dinamica di elementi al componente Scelta](adaptive-forms/choice-group-items-adding-dynamically-article.md)
