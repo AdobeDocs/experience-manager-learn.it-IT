@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9351
 thumbnail: 343040.jpeg
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: f2b5adea71ec8e772385b6e0ae068369798030e0
+source-git-commit: 6d5a531f44414887e8dc6568fa6f5dcb73bfb183
 workflow-type: tm+mt
-source-wordcount: '2774'
+source-wordcount: '2815'
 ht-degree: 2%
 
 ---
@@ -399,9 +399,14 @@ Dopo l’autenticazione all’IDP, l’IDP orchestrerà un POST HTTP per AEM reg
 
 Se è configurata la riscrittura URL sul server web Apache (`dispatcher/src/conf.d/rewrites/rewrite.rules`), assicurati che le richieste `.../saml_login` i punti finali non vengono accidentalmente gestiti.
 
-## Abilita sincronizzazione dati
+## Abilitare la sincronizzazione dei dati e incapsulare i token
 
-I record utente devono essere sincronizzati nel livello di pubblicazione AEM, una volta che il flusso di autenticazione SAML crea un utente in AEM Publish. A [abilitare la sincronizzazione dati](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#data-synchronization), invia una richiesta all’Assistenza clienti di Adobe (tramite [AdminConsole](https://adminconsole.adobe.com) > Supporto) per richiedere l&#39;abilitazione.
+Una volta che il flusso di autenticazione SAML crea un utente in AEM Publish, il nodo utente AEM autenticabile attraverso il livello di servizio AEM Publish.
+Questo richiede [sincronizzazione dati](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#data-synchronization) e [token incapsulati](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#sticky-sessions-and-encapsulated-tokens) per essere abilitato tramite Adobe Support nel servizio AEM Publish.
+
+Invia una richiesta all’Assistenza clienti di Adobe (tramite [AdminConsole](https://adminconsole.adobe.com) > Supporto) che richiede:
+
+> La sincronizzazione dei dati e i token incapsulati sono abilitati sul servizio AEM Publish per il programma X e l’ambiente Y.
 
 ## Distribuzione della configurazione SAML
 
