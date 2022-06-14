@@ -8,7 +8,7 @@ feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
 exl-id: ebb11eab-1412-4af5-bc09-e965b9116ac9
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: 839152aa67ba7ab2929f2c8093bfdc873761a645
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 2%
@@ -55,8 +55,8 @@ Lo strumento di sviluppo richiede un file denominato `console.json` che contiene
 1. Vai alla directory principale del progetto Adobe I/O e tocca __Scarica tutto__ nell&#39;angolo in alto a destra.
 1. Un file viene scaricato come `.json` file con prefisso del progetto e dell’area di lavoro, ad esempio: `wkndAemAssetCompute-81368-Development.json`
 1. Puoi effettuare le seguenti operazioni
-   + Rinomina il file come `config.json` e spostalo nella directory principale del progetto di lavoro Asset compute. Questo è l’approccio illustrato in questa esercitazione.
-   + Spostalo in una cartella arbitraria E fai riferimento a tale cartella dalla tua `.env` file con una voce di configurazione `ASSET_COMPUTE_INTEGRATION_FILE_PATH`. Il percorso del file può essere assoluto o relativo alla directory principale del progetto. Ad esempio:
+   + Rinomina il file come `console.json` e spostalo nella directory principale del progetto di lavoro Asset compute. Questo è l’approccio illustrato in questa esercitazione.
+   + Spostalo in una cartella arbitraria E fai riferimento a tale cartella dalla tua `.env` file con una voce di configurazione `ASSET_COMPUTE_INTEGRATION_FILE_PATH`. Il percorso del file può essere assoluto o relativo alla directory principale del progetto. Esempio:
       + `ASSET_COMPUTE_INTEGRATION_FILE_PATH=/Users/example-user/secrets/wkndAemAssetCompute-81368-Development.json`
 
       Oppure

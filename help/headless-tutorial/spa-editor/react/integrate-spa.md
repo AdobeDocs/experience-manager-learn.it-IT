@@ -10,7 +10,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 31416399-6a4e-47d1-8ed8-be842a01a727
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: 415ad1266925525a6b0954b4515bae3d152bb6ec
 workflow-type: tm+mt
 source-wordcount: '1840'
 ht-degree: 1%
@@ -128,7 +128,7 @@ Quindi, controlla il `ui.frontend` per comprendere il SPA generato automaticamen
 
    `index.js` è il punto di ingresso del SPA. `ModelManager` è fornito dall’SDK JS AEM Editor SPA. È responsabile della chiamata e dell&#39;inserimento del `pageModel` (il contenuto JSON) nell’applicazione.
 
-1. Inspect il file `import-component.js` a `ui.frontend/src/import-components.js`. Questo file importa il file pronto all&#39;uso **Reazione dei componenti core** e li rende disponibili al progetto. Nel capitolo successivo verrà esaminata la mappatura del contenuto AEM ai componenti SPA.
+1. Inspect il file `import-components.js` a `ui.frontend/src/components/import-components.js`. Questo file importa il file pronto all&#39;uso **Reazione dei componenti core** e li rende disponibili al progetto. Nel capitolo successivo verrà esaminata la mappatura del contenuto AEM ai componenti SPA.
 
 ## Aggiungere un componente SPA statico {#static-spa-component}
 
