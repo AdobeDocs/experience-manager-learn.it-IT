@@ -1,6 +1,6 @@
 ---
 title: App Android - AEM esempio headless
-description: Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Viene fornita un'applicazione Android che dimostra come eseguire query sul contenuto utilizzando le API GraphQL di AEM. Il client Android Apollo viene utilizzato per generare le query GraphQL e mappare i dati sugli oggetti Swift per alimentare l’app. SwiftUI viene utilizzato per eseguire il rendering di una semplice visualizzazione elenco e dettagli del contenuto.
+description: Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Questa applicazione Android illustra come eseguire query sul contenuto utilizzando le API GraphQL di AEM.
 version: Cloud Service
 mini-toc-levels: 1
 kt: 9166
@@ -9,48 +9,58 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 9b1e38c8d4a0301c124c6f1607a9e4362b0e9cd1
+exl-id: 7873e263-b05a-4170-87a9-59e8b7c65faa
+source-git-commit: 0204d9aaf7b79b0745adbe749f44245716203b88
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 2%
+source-wordcount: '765'
+ht-degree: 4%
 
 ---
 
-
 # App Android
 
-Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Viene fornita un&#39;applicazione Android che dimostra come eseguire query sul contenuto utilizzando le API GraphQL di AEM. La [Client AEM headless per Java](https://github.com/adobe/aem-headless-client-java) viene utilizzato per eseguire le query GraphQL e mappare i dati su oggetti Java per alimentare l&#39;app.
+Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Questa applicazione Android illustra come eseguire query sul contenuto utilizzando le API GraphQL di AEM. La [Client AEM headless per Java](https://github.com/adobe/aem-headless-client-java) viene utilizzato per eseguire le query GraphQL e mappare i dati su oggetti Java per alimentare l&#39;app.
+
+![App Java Android con AEM Headless](./assets/android-java-app/android-app.png)
+
 
 Visualizza la [codice sorgente su GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app)
-
->[!VIDEO](https://video.tv.adobe.com/v/338093/?quality=12&learn=on)
 
 ## Prerequisiti {#prerequisites}
 
 È necessario installare localmente i seguenti strumenti:
 
-* [Android Studio](https://developer.android.com/studio)
-* [Git](https://git-scm.com/)
++ [Android Studio](https://developer.android.com/studio)
++ [Git](https://git-scm.com/)
 
 ## Requisiti AEM
 
-L&#39;applicazione è progettata per connettersi a un AEM **Pubblica** ambiente con la versione più recente del [Sito di riferimento WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) installato.
+L’applicazione Android funziona con le seguenti opzioni di distribuzione AEM. Tutte le implementazioni richiedono l’ [Sito WKND v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) da installare.
 
-* [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html)
-* [AEM 6.5.10+](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/new-features-latest-service-pack.html?lang=it)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
++ Configurazione locale tramite [l’SDK di AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it)
++ [AEM 6.5 SP13+ QuickStart](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it?lang=en#install-local-aem-instances)
 
-Consigliamo [distribuzione del sito WKND Reference in un ambiente di Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#coding-against-the-right-aem-version). Impostazione locale tramite [l’SDK di AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) o [AEM 6.5 QuickStart jar](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=en#install-local-aem-instances) può essere utilizzato anche.
+L&#39;applicazione Android è progettata per connettersi a un __Pubblicazione AEM__ ambiente, tuttavia può sorgente di contenuto da AEM Author se l’autenticazione è fornita nella configurazione dell’applicazione Android.
 
 ## Come utilizzare
 
-1. Clona il `aem-guides-wknd-graphql` archivio:
+1. Clona il `adobe/aem-guides-wknd-graphql` archivio:
 
    ```shell
-   git clone git@github.com:adobe/aem-guides-wknd-graphql.git
+   $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
 1. Launch [Android Studio](https://developer.android.com/studio) e apri la cartella `android-app`
 1. Modificare il file `config.properties` a `app/src/main/assets/config.properties` e aggiorna `contentApi.endpoint` per far corrispondere l’ambiente AEM di destinazione:
+
+   ```plain
+   contentApi.endpoint=http://10.0.2.2:4503
+   ```
+
+   __Autenticazione di base__
+
+   La `contentApi.user` e `contentApi.password` autentica un utente AEM locale con accesso al contenuto WKND GraphQL.
 
    ```plain
    contentApi.endpoint=http://10.0.2.2:4502
@@ -58,13 +68,13 @@ Consigliamo [distribuzione del sito WKND Reference in un ambiente di Cloud Servi
    contentApi.password=admin
    ```
 
-1. Scaricare un [Dispositivo virtuale Android](https://developer.android.com/studio/run/managing-avds) (API min 28)
+1. Scaricare un [Dispositivo virtuale Android](https://developer.android.com/studio/run/managing-avds) (API minima 28).
 1. Crea e distribuisci l’app utilizzando l’emulatore Android.
 
 
 ### Connessione ad ambienti AEM
 
-`10.0.2.2` è un [alias speciale](https://developer.android.com/studio/run/emulator-networking) per localhost quando si utilizza l&#39;emulatore. Quindi `10.0.2.2:4502` equivale a `localhost:4502`. Se ci si connette a un ambiente di pubblicazione AEM (consigliato), non è necessaria alcuna autorizzazione e `contentAPi.user` e `contentApi.password` può essere lasciato vuoto.
+`10.0.2.2` è un [alias IP speciale](https://developer.android.com/studio/run/emulator-networking) per localhost quando si utilizza la creazione dell&#39;emulatore `10.0.2.2:4502` equivale a `localhost:4502`. Se ci si connette a un ambiente di pubblicazione AEM (consigliato), non è necessaria alcuna autorizzazione e `contentAPi.user` e `contentApi.password` può essere lasciato vuoto.
 
 Connessione a un ambiente di authoring AEM [autorizzazione](https://github.com/adobe/aem-headless-client-java#using-authorization) è obbligatorio. Per impostazione predefinita, l’applicazione è configurata per utilizzare l’autenticazione di base con un nome utente e una password di `admin:admin`. La [AEMHeadlessClientBuilder](https://github.com/adobe/aem-headless-client-java/blob/main/client/src/main/java/com/adobe/aem/graphql/client/AEMHeadlessClientBuilder.java) consente di utilizzare [autenticazione basata su token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html). Per utilizzare il generatore client di aggiornamento dell’autenticazione basato su token in `AdventureLoader.java` e `AdventuresLoader.java`:
 
@@ -72,7 +82,7 @@ Connessione a un ambiente di authoring AEM [autorizzazione](https://github.com/a
 /* Comment out basicAuth
  if (user != null && password != null) {
    builder.basicAuth(user, password);
-  }
+ }
 */
 
 // use token-authentication where `token` is a String representing the token
@@ -83,21 +93,116 @@ builder.tokenAuth(token)
 
 Di seguito è riportato un breve riepilogo dei file importanti e del codice utilizzati per alimentare l&#39;applicazione. Il codice completo è disponibile all&#39;indirizzo [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app).
 
-### Recupero contenuto
+### Query persistenti
 
-La [Client AEM headless per Java](https://github.com/adobe/aem-headless-client-java) viene utilizzato dall’app per eseguire la query GraphQL su AEM e caricare il contenuto dell’avventura nell’app.
+Seguendo AEM best practice headless, l’applicazione iOS utilizza query persistenti AEM GraphQL per eseguire query sui dati di avventura. L&#39;applicazione utilizza due query persistenti:
 
-`AdventuresLoader.java` è il file che recupera e carica l’elenco iniziale di Avventure nella schermata iniziale dell’applicazione. Utilizza [Query persistenti](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/graphql-persisted-queries.html) che [preconfezionato](https://github.com/adobe/aem-guides-wknd/tree/master/ui.content/src/main/content/jcr_root/conf/wknd/settings/graphql/persistentQueries/adventures-all/_jcr_content) con il sito di riferimento WKND. L&#39;endpoint è `/wknd/adventures-all`. `AEMHeadlessClientBuilder` crea un&#39;istanza nuova in base all&#39;endpoint api impostato in `config.properties`.
++ `wknd/adventures-all` query persistente, che restituisce tutte le avventure in AEM con un set abbreviato di proprietà. Questa query persistente guida l&#39;elenco di avventura della visualizzazione iniziale.
+
+```
+# Retrieves a list of all adventures
+{
+    adventureList {
+        items {
+            _path
+            slug
+            title
+            price
+            tripLength
+            primaryImage {
+                ... on ImageRef {
+                _path
+                mimeType
+                width
+                height
+                }
+            }
+        }
+    }
+}
+```
+
++ `wknd/adventure-by-slug` query persistente, che restituisce una singola avventura per `slug` (proprietà personalizzata che identifica in modo univoco un’avventura) con un set completo di proprietà. Questa query persistente potenzia le visualizzazioni dei dettagli dell’avventura.
+
+```
+# Retrieves an adventure Content Fragment based on it's slug
+# Example query variables: 
+# {"slug": "bali-surf-camp"} 
+# Technically returns an adventure list but since the the slug 
+# property is set to be unique in the CF Model, only a single CF is expected
+
+query($slug: String!) {
+  adventureList(filter: {
+        slug: {
+          _expressions: [ { value: $slug } ]
+        }
+  	}) {
+    items {
+      _path
+      title
+      slug
+      activity
+      adventureType
+      price
+      tripLength
+      groupSize
+      difficulty
+      price
+      primaryImage {
+        ... on ImageRef {
+          _path
+          mimeType
+          width
+          height
+        }
+      }
+      description {
+        json
+        plaintext
+      }
+      itinerary {
+        json
+        plaintext
+      }
+    }
+    _references {
+      ...on AdventureModel {
+        _path
+        slug
+        title
+        price
+        __typename
+      }
+    }
+  }
+}
+```
+
+## Esegui query persistente GraphQL
+
+Le query persistenti AEM vengono eseguite su HTTP GET e quindi, il [Client AEM headless per Java](https://github.com/adobe/aem-headless-client-java) viene utilizzato per eseguire le query GraphQL persistenti rispetto a AEM e caricare il contenuto dell’avventura nell’app.
+
+Ogni query persistente ha una classe corrispondente &quot;loader&quot;, che chiama in modo asincrono il punto finale AEM HTTP GET e restituisce i dati dell’avventura utilizzando il valore personalizzato definito [modello dati](#data-models).
+
++ `loader/AdventuresLoader.java`
+
+   Recupera l&#39;elenco delle Avventure nella schermata iniziale dell&#39;applicazione utilizzando `wknd-shared/adventures-all` query persistente.
+
++ `loader/AdventureLoader.java`
+
+   Recupera una singola avventura selezionandola tramite il `slug` utilizzando `wknd-shared/adventure-by-slug` query persistente.
 
 ```java
 //AdventuresLoader.java
 
-public static final String PERSISTED_QUERY_NAME = "/wknd/adventures-all";
+public static final String PERSISTED_QUERY_NAME = "/wknd-shared/adventures-all";
 ...
 AEMHeadlessClientBuilder builder = AEMHeadlessClient.builder().endpoint(config.getContentApiEndpoint());
-// optional authentication for basic auth
+
+// Optional authentication for basic auth
 String user = config.getContentApiUser();
 String password = config.getContentApiPassword();
+
 if (user != null && password != null) {
     builder.basicAuth(user, password);
 }
@@ -107,40 +212,27 @@ AEMHeadlessClient client = builder.build();
 GraphQlResponse response = client.runPersistedQuery(PERSISTED_QUERY_NAME);
 ```
 
-`AdventureLoader.java` è il file che recupera e carica il contenuto Avventura per ciascuna visualizzazione di dettaglio. Ancora una volta `AEMHeadlessClient` viene utilizzato per eseguire la query. Viene eseguita una normale query GraphQL in base al percorso del frammento di contenuto Adventure. La query viene mantenuta in un file separato denominato [adventureByPath.query](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/android-app/app/src/main/assets/adventureByPath.query)
+### Modelli di dati di risposta GraphQL{#data-models}
 
-```java
-AEMHeadlessClientBuilder builder = AEMHeadlessClient.builder().endpoint(config.getContentApiEndpoint());
-String user = config.getContentApiUser();
-String password = config.getContentApiPassword();
-if (user != null && password != null) {
-    builder.basicAuth(user, password);
-}
-AEMHeadlessClient client = builder.build();
-
-// based on the file adventureByPath.query
-String query = readFile(getContext(), QUERY_FILE_NAME);
-
-// construct a parameter map to dynamically pass in adventure path
-Map<String, Object> params = new HashMap<>();
-params.put("adventurePath", this.path);
-
-// execute the query based on the adventureByPath query and passed in parameters
-GraphQlResponse response = client.runQuery(query, params);
-```
-
-`Adventure.java` è un POJO che viene inizializzato con i dati JSON dalla richiesta GraphQL.
-
-`RemoteImagesCache.java` è una classe di utilità che aiuta a preparare le immagini remote in una cache in modo che possano essere utilizzate con gli elementi dell&#39;interfaccia utente Android. Il contenuto Adventure fa riferimento alle immagini in AEM Assets tramite un URL e questa classe viene utilizzata per visualizzare tale contenuto.
+`Adventure.java` è un POJO Java inizializzato con i dati JSON della richiesta GraphQL e modella un’avventura da utilizzare nelle visualizzazioni dell’applicazione Android.
 
 ### Viste
 
-`AdventureListFragment.java` - quando viene chiamato , viene attivato il `AdventuresLoader` e visualizza le avventure restituite in un elenco.
+L’applicazione Android utilizza due visualizzazioni per presentare i dati dell’avventura nell’esperienza mobile.
 
-`AdventureDetailFragment.java` - inizializza `AdventureLoader` e visualizza i dettagli di una singola avventura.
++ `AdventureListFragment.java`
 
-## Risorse aggiuntive
+   Richiama il `AdventuresLoader` e visualizza le avventure restituite in un elenco.
 
-* [Guida introduttiva a AEM Headless - Esercitazione GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)
-* [Client AEM headless per Java](https://github.com/adobe/aem-headless-client-java)
++ `AdventureDetailFragment.java`
 
+   Richiama il `AdventureLoader` utilizzando `slug` Param passato attraverso la selezione dell&#39;avventura sul `AdventureListFragment` visualizza e visualizza i dettagli di una singola avventura.
+
+### Immagini remote
+
+`loader/RemoteImagesCache.java` è una classe di utilità che aiuta a preparare le immagini remote in una cache in modo che possano essere utilizzate con gli elementi dell&#39;interfaccia utente Android. Il contenuto dell’avventura fa riferimento alle immagini in AEM Assets tramite un URL e questa classe viene utilizzata per visualizzare tale contenuto.
+
+## Altro materiale di riferimento
+
++ [Guida introduttiva a AEM Headless - Esercitazione GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)
++ [Client AEM headless per Java](https://github.com/adobe/aem-headless-client-java)
