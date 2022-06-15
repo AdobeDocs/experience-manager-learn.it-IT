@@ -11,9 +11,9 @@ hide: true
 index: false
 thumbnail: kt-10427.jpg
 exl-id: 8fcc9364-b84c-4458-82e2-66b47429cd4b
-source-git-commit: d30641b3a9565dd3b7121dfdf6b6969a2b401e92
+source-git-commit: 48943df64d9793066f8f19497ef42f8aa80e5795
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '838'
 ht-degree: 3%
 
 ---
@@ -199,7 +199,7 @@ Consulta queste altre risorse utili per comprendere gli indici AEM, gli avvisi d
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-search-and-indexing.html" title="Cloud 5 - Ricerca e indicizzazione">Cloud 5 - Ricerca e indicizzazione</a></p>
                <p class="is-size-6">Il team di Cloud 5 mostra come esplora i dettagli e le uscite della ricerca e dell’indicizzazione su AEM as a Cloud Service.</p>
                <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-search-and-indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Per saperne di più</span>
                </a>
            </div>
        </div>
@@ -222,7 +222,7 @@ Consulta queste altre risorse utili per comprendere gli indici AEM, gli avvisi d
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html" title="Ricerca e indicizzazione dei contenuti">Documentazione sulla ricerca e l’indicizzazione dei contenuti</a></p>
                <p class="is-size-6">Scopri come creare e gestire gli indici in AEM as a Cloud Service.</p>
                <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Per saperne di più</span>
                </a>
            </div>
        </div>
@@ -244,7 +244,7 @@ Consulta queste altre risorse utili per comprendere gli indici AEM, gli avvisi d
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html" title="Modernizzazione degli indici Oak">Modernizzazione degli indici Oak</a></p>
                <p class="is-size-6">Scopri come convertire le definizioni dell'indice Oak AEM 6 per renderle AEM compatibili con l'as a Cloud Service e come mantenere gli indici in corso.</p>
                <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Per saperne di più</span>
                </a>
            </div>
        </div>
@@ -266,7 +266,7 @@ Consulta queste altre risorse utili per comprendere gli indici AEM, gli avvisi d
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html" title="Documentazione sulla definizione dell'indice">Documentazione dell'indice Lucene</a></p>
                <p class="has-ellipsis is-size-6">L'indice Apache Oak Jackrabbit Lucene fa riferimento che documenta tutte le configurazioni dell'indice Lucene supportate.</p>
                <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Per saperne di più</span>
                </a>
            </div>
        </div>
