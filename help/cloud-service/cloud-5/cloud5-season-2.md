@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 59bcd6f2501b324222de7e68f2f7c311cb595788
+source-git-commit: 7985a5b36523aa090a7a9c7599e36bc1b5a9bd6f
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '375'
 ht-degree: 1%
 
 ---
@@ -57,17 +57,19 @@ Ogni stagione varia in lunghezza e sarà rilasciata su un programma fisso. Gli a
                 Informazioni rapide sull’utilizzo dell’utilità di modernizzazione dell’archivio per ristrutturare i pacchetti di progetto esistenti in pacchetti discreti compatibili con AEM as a cloud service.
             </p>
          </td>
-     <td>
-            <img alt="Admin Console" src="./imgs/coming-soon.png"/>
-      <div>
-            <strong>Admin Console</strong>
-         <br/><em>con Darin Kuntze e James Talbot, architetti senior di cloud</em>
-      </div>
-      <p>
-        <br/>
-         Prossima 16 giugno 2022
-      </p>
-   </td> 
+         <td>
+            <a href="season-2/cloud5-admin-console.md">
+                 <img alt="Admin Console" src="./imgs/s2/002-thumb.png"/>
+            </a>
+            <div>
+                  <a href="season-2/cloud5-admin-console.md"><strong>Admin Console</strong></a>
+               <br/><em>con Darin Kuntze e James Talbot, architetti senior di cloud</em>
+            </div>
+            <p>
+            <br/>
+               Darin e James discutono alcune cose comuni che le persone dovrebbero sapere su Admin Console, provisioning e accesso.
+            </p>
+         </td> 
   </tr>
   <tr>
    <td>
