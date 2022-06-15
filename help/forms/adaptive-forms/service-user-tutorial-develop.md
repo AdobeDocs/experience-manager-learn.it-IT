@@ -6,7 +6,7 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 5fa3d52a-6a71-45c4-9b1a-0e6686dd29bc
-source-git-commit: f1afccdad8d819604c510421204f59e7b3dc68e4
+source-git-commit: c462d48d26c9a7aa0e4cfc4f24005b41e8e82cb8
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Questo articolo illustra il processo di creazione di un utente di servizio in AE
 
 Nelle versioni precedenti di Adobe Experience Manager (AEM), il risolutore di risorse amministrative veniva utilizzato per l’elaborazione back-end che richiedeva l’accesso all’archivio. L’utilizzo del risolutore risorse amministrative è obsoleto in AEM 6.3. Viene invece utilizzato un utente di sistema con autorizzazioni specifiche nel repository.
 
-Ulteriori informazioni sui dettagli di [creazione e utilizzo degli utenti del servizio in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
+Ulteriori informazioni sui dettagli di [creazione e utilizzo di utenti del servizio in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
 
 Questo articolo illustra la creazione di un utente di sistema e la configurazione delle proprietà di mappatura utente.
 
@@ -29,8 +29,8 @@ Questo articolo illustra la creazione di un utente di sistema e la configurazion
 1. Fai clic su &quot;Crea utente di sistema&quot;
 1. Imposta il tipo userid come &#39; data &#39; e fai clic sull&#39;icona verde per completare il processo di creazione dell&#39;utente di sistema
 1. [Apri configMgr](http://localhost:4502/system/console/configMgr)
-1. Cerca &#39; Apache Sling Service User Mapper Service &#39; e fai clic per aprire le proprietà
-1. Fai clic sull&#39;icona *+* (più) per aggiungere la seguente Mappatura del servizio
+1. Cerca _Servizio mappatore utenti del servizio Apache Sling_ e fai clic su per aprire le proprietà
+1. Fai clic sul pulsante *+* icona (più) per aggiungere la seguente mappatura del servizio
 
    * DevelopingWithServiceUser.core:getresourceresolver=data
    * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
@@ -45,7 +45,7 @@ Possiamo anche ottenere il risolutore risorse per conto dell&#39;utente di servi
 1. Passa a [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 1. Carica e avvia il bundle OSGi
 1. Assicurati che il bundle sia in stato attivo
-1. Ora hai creato correttamente un *utente di sistema* e hai implementato anche il *Service User bundle*.
+1. È stata creata una *Utente di sistema* e ha inoltre implementato *Service User bundle*.
 
    Per fornire l&#39;accesso a /content, assegna all&#39;utente di sistema (&#39; dati &#39;) le autorizzazioni di lettura sul nodo del contenuto.
 
