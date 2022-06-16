@@ -1,18 +1,18 @@
 ---
 title: Guida introduttiva ad AEM Forms e Adobe Campaign Standard
 description: Integra AEM Forms con Adobe Campaign Standard utilizzando AEM Forms Form Data Model per recuperare le informazioni sul profilo della campagna ACS, ecc.
-feature: Forms adattivo, modello dati modulo
+feature: Adaptive Forms, Form Data Model
 version: 6.3,6.4,6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: e028837b-13d8-4058-ac25-ed095f49524c
+source-git-commit: 5c53919dd038c0992e1fe5dd85053f26c03c5111
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
-
 
 # Guida introduttiva ad AEM Forms e Adobe Campaign Standard {#getting-started-with-aem-forms-and-adobe-campaign-standard}
 
@@ -24,7 +24,7 @@ ACS dispone di un set completo di API disponibili che consentono l&#39;interazio
 
 Per integrare AEM Forms con ACS è necessario seguire i seguenti passaggi:
 
-* [Imposta l&#39;accesso API sull&#39;istanza ACS.](https://docs.campaign.adobe.com/doc/standard/en/api/ACS_API.html#setting-up-api-access)
+* [Imposta l&#39;accesso API sull&#39;istanza ACS.](https://experienceleague.adobe.com/docs/campaign-standard/using/working-with-apis/get-started-apis.html?lang=en)
 * Crea token web JSON.
 * Sostituisci il token web JSON con Adobe Identity Management Service per un token di accesso.
 * Includi questo token di accesso nell’intestazione HTTP di autorizzazione, insieme a X-API-Key in ogni richiesta all’istanza ACS.
@@ -32,7 +32,7 @@ Per integrare AEM Forms con ACS è necessario seguire i seguenti passaggi:
 Per iniziare segui le seguenti istruzioni
 
 * [Scarica e decomprimi le risorse correlate a questa esercitazione.](assets/aem-forms-and-acs-bundles.zip)
-* Distribuisci i bundle utilizzando [Felix web console](http://localhost:4502/system/console/bundles)
+* Distribuire i bundle utilizzando [Console web Felix](http://localhost:4502/system/console/bundles)
 * Fornisci le impostazioni appropriate per Adobe Campaign nella configurazione Felix OSGI.
 * [Crea un utente di servizio come menzionato in questo articolo](/help/forms/adaptive-forms/service-user-tutorial-develop.md). Assicurati di distribuire il bundle OSGi associato all&#39;articolo.
 * Memorizza la chiave privata ACS in etc/key/campaign/private.key. Sarà necessario creare una cartella denominata campaign in etc/key.
