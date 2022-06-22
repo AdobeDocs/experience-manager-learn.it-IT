@@ -4,10 +4,10 @@ user-guide-description: Una raccolta di tutorial su Adobe Experience Manager as 
 breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 45061581322e23efb936e91c11be48ceac64183b
+source-git-commit: 89982f506a5e1ffc12f84a0f616aaa1dc2e00c5b
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 22%
+source-wordcount: '790'
+ht-degree: 21%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 22%
    + [Evoluzione](./introduction/evolution.md)
    + [Architettura](./introduction/architecture.md)
    + [Cloud Manager](./introduction/cloud-manager.md)
+   + Strategia e leadership del pensiero{#strategy}
+      + [Experience Manager - Modelli e archetipi di governance e di personale](./introduction/experience-manager-governance-and-staffing-models.md)
+      + [Come velocizzare i contenuti con Adobe Experience Manager](./introduction/drive-content-velocity-for-sites.md)
+      + [Accelerazione della velocità dei contenuti con i sistemi di stile AEM](./introduction/accelerate-content-velocity-aem.md)
 + Tecnologia di base {#underlying-technology}
    + [Architettura AEM](./underlying-technology/introduction-architecture.md)
    + [OSGi](./underlying-technology/introduction-osgi.md)
