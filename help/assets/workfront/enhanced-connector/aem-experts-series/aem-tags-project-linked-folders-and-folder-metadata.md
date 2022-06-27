@@ -9,9 +9,9 @@ kt: 9720
 thumbnail: 340333.jpeg
 hidefromtoc: false
 exl-id: 520a75cd-757a-4ae9-acf6-3c1f5e1f3747
-source-git-commit: 485f968e6f8c508b5e81c54e03ca17996e4c1b63
+source-git-commit: 49707940e1a980ade97dab82270ab1263bef94d8
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '109'
 ht-degree: 0%
 
 ---
@@ -28,4 +28,4 @@ _Parte tre di una [serie di esperti in quattro parti su Workfront per Experience
 
 ## Correzioni
 
-+ __@ 4:34__ La sintassi dei tag AEM non è corretta. Display video `we-retail:apparel/footwear`. La sintassi corretta è `["we-retail:apparel/footwear"]` o più in generale `["namespace:tag/childtag"]`.
++ __@ 4:34 e 6:20__ La sintassi dei tag AEM non è corretta. Display video `we-retail:apparel/footwear`. La sintassi corretta è `["we-retail:apparel/footwear"]` o più in generale `["namespace:tag/childtag"]`.
