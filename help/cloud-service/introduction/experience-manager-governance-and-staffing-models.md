@@ -3,9 +3,9 @@ title: Modelli e archetipi di governance e personale
 description: Scopri come utilizzare la piattaforma Adobe Experience Manager (AEM) e ottenere il massimo dai tuoi sforzi.
 solution: Experience Manager
 exl-id: 808ab7a6-5ec5-4bbd-9a6e-cfc0b447430d
-source-git-commit: 89982f506a5e1ffc12f84a0f616aaa1dc2e00c5b
+source-git-commit: 471f0fe940abb8241428beb14896d83e140136b3
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1133'
 ht-degree: 0%
 
 ---
@@ -132,3 +132,5 @@ Di seguito sono riportati alcuni esempi di ruolo per uno scenario client leggero
 **Utilizzo delle risorse interne** - I gap possono venire inaspettatamente. Puoi riempirli più rapidamente acquistando membri del team interno, invece di cercare all’esterno dell’organizzazione.
 
 Per una discussione più approfondita su Modelli e Archetipi di Governance e Staffing, ascoltate questa discussione di un&#39;ora: [Archetipi di ruolo e creazione di un quadro operativo per [!DNL AEM Assets] e [!DNL Sites]](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
+
+Per saperne di più sulla strategia e la leadership del pensiero, consulta [Successo del cliente](https://experienceleague.corp.adobe.com/docs/customer-success/customer-success/overview.html) hub

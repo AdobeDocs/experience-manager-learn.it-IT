@@ -3,9 +3,9 @@ title: Come velocizzare i contenuti con Adobe Experience Manager
 description: Scopri la velocità dei contenuti e il suo valore all’interno delle organizzazioni aziendali. Imparare quattro principi di effettiva attuazione e le insidie da considerare lungo il percorso.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: 89982f506a5e1ffc12f84a0f616aaa1dc2e00c5b
+source-git-commit: 471f0fe940abb8241428beb14896d83e140136b3
 workflow-type: tm+mt
-source-wordcount: '2805'
+source-wordcount: '2823'
 ht-degree: 0%
 
 ---
@@ -176,3 +176,5 @@ Ecco alcune possibili insidie da evitare:
 * Visualizzazione delle soluzioni in modo silenzioso. Ad esempio, concentrarsi solo sull&#39;aspetto tecnico dell&#39;implementazione AEM non realizzerà tutti i vantaggi aziendali. Consigliamo invece di esaminare i casi e gli scenari d’uso aziendali, quindi di passare all’architettura e al design, in quanto ciò offrirà una visione più ampia delle funzionalità di AEM. Anurandha PentarTeddy, ripresa da Adobe, condivide: _&quot;Una cosa che consiglio è di guardare i vostri obiettivi di valore davanti alla piattaforma che state implementando.&quot;_
 
 Per una discussione più approfondita sulla velocità dei contenuti, ascoltate questa ora [dibattito](https://primetime.bluejeans.com/a2m/events/playback/e63686d4-158f-4f73-aea0-f03ebee4606d) con Monique Misrahi (T-Mobile), Amy Bergstrom (Deloitte) e il Adobe Anuradha PentarTeddy.
+
+Per saperne di più sulla strategia e la leadership del pensiero, consulta [Successo del cliente](https://experienceleague.corp.adobe.com/docs/customer-success/customer-success/overview.html) hub
