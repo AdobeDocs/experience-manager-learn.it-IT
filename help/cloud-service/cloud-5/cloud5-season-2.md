@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: e10617d81287a291d16aed3400ef0c01266586e6
+source-git-commit: c3d3eae47c17a7efed15f14e98e2f3ded719cef0
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '407'
 ht-degree: 1%
 
 ---
@@ -84,18 +84,20 @@ Ogni stagione varia in lunghezza e sarà rilasciata su un programma fisso. Gli a
             <br/>
                Darin e James discutono gotchas e cose da cercare per la pianificazione dei lavori e il consumo in AEM as a cloud service.
             </p>
+         </td> 
+         <td>
+            <a href="season-2/cloud5-repoinit.md">
+                 <img alt="Inizializzatore repository (reindirizzamento)" src="./imgs/s2/004-thumb.png"/>
+            </a>
+            <div>
+                  <a href="season-2/cloud5-repoinit.md"><strong>Inizializzatore dell’archivio Sling</strong></a>
+               <br/><em>con Darin Kuntze e James Talbot, architetti senior di cloud</em>
+            </div>
+            <p>
+            <br/>
+              Scopri alcuni trucchi per sbloccare la potenza dell’utilizzo di Sling Repository Initializer, noto anche come repoinit.
+            </p>
          </td>   
-     <td>
-        <img alt="Inizializzatore repository (reindirizzamento)" src="./imgs/coming-soon.png"/>
-      <div>
-        <strong>Inizializzatore repository (reindirizzamento)</strong>
-         <br/><em>con Darin Kuntze e James Talbot, architetti senior di cloud</em>
-      </div>
-      <p>
-        <br/>
-            Prossima 1 luglio 2022
-      </p>
-   </td>
      <td>
             <img alt="Correggi il tuo... Cache" src="./imgs/coming-soon.png"/>
       <div>
