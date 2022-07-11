@@ -1,6 +1,6 @@
 ---
-title: 'Guida introduttiva ai AEM Sites: esercitazione WKND'
-description: 'Guida introduttiva ai AEM Sites: esercitazione WKND. L’esercitazione WKND è un tutorial in più parti progettato per gli sviluppatori che non hanno mai utilizzato Adobe Experience Manager. Il tutorial illustra l’implementazione di un sito AEM per un brand di lifestyle fittizio, il WKND. L’esercitazione tratta argomenti fondamentali come la configurazione del progetto, gli archetipi Maven, i componenti core, i modelli modificabili, le librerie client e lo sviluppo dei componenti.'
+title: Guida introduttiva ad AEM Sites - Esercitazione WKND
+description: Scopri come implementare un sito AEM per un brand fittizio di lifestyle denominato WKND. Scopri tutti gli argomenti di Experience Manager fondamentali come la configurazione del progetto, gli archetipi Maven, i componenti core, i modelli modificabili, le librerie client e lo sviluppo dei componenti.
 sub-product: sites
 topics: development
 version: Cloud Service
@@ -16,20 +16,20 @@ role: Developer
 level: Beginner
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 72abe1cddcf6a012403887203d38509bde8f2d23
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 6%
+source-wordcount: '599'
+ht-degree: 3%
 
 ---
 
-# Guida introduttiva ai AEM Sites: esercitazione WKND {#introduction}
+# Guida introduttiva ad AEM Sites - Esercitazione WKND {#introduction}
 
-Ti diamo il benvenuto in un tutorial in più parti progettato per gli sviluppatori che non hanno mai utilizzato Adobe Experience Manager (AEM). Questa esercitazione illustra l’implementazione di un sito AEM per un brand di lifestyle fittizio WKND. L’esercitazione tratta argomenti fondamentali come la configurazione del progetto, i componenti core, i modelli modificabili, le librerie lato client e lo sviluppo dei componenti con Adobe Experience Manager Sites.
+Ti diamo il benvenuto in un tutorial in più parti progettato per gli sviluppatori che non hanno mai utilizzato Adobe Experience Manager (AEM). Questa esercitazione illustra l’implementazione di un sito AEM per un brand di lifestyle fittizio, il WKND. L’esercitazione tratta argomenti fondamentali come la configurazione del progetto, i componenti core, i modelli modificabili, le librerie lato client e lo sviluppo dei componenti con Adobe Experience Manager Sites.
 
 ## Panoramica {#wknd-tutorial-overview}
 
-L’obiettivo di questa esercitazione in più parti è quello di insegnare agli sviluppatori come implementare un sito web utilizzando gli standard e le tecnologie più recenti in Adobe Experience Manager (AEM). Dopo aver completato questa esercitazione, uno sviluppatore deve comprendere le basi di base della piattaforma e conoscere i pattern di progettazione comuni in AEM.
+L’obiettivo di questa esercitazione in più parti è quello di insegnare agli sviluppatori come implementare un sito web utilizzando gli standard e le tecnologie più recenti in Adobe Experience Manager (AEM). Dopo aver completato questa esercitazione, uno sviluppatore deve comprendere le basi di base della piattaforma e i pattern di progettazione comuni in AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
