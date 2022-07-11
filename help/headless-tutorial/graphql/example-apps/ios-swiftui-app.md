@@ -1,8 +1,8 @@
 ---
-title: App SwiftUI di iOS - AEM esempio headless
+title: App iOS - AEM esempio headless
 description: Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Questa applicazione iOS illustra come eseguire query sul contenuto utilizzando AEM API GraphQL utilizzando query persistenti.
 version: Cloud Service
-mini-toc-levels: 1
+mini-toc-levels: 2
 kt: 9166
 thumbnail: KT-9166.jpg
 feature: Content Fragments, GraphQL API
@@ -10,14 +10,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: bcedb190fba7b6bc044da06bd36d097d553172a1
+source-git-commit: 8b2c116ceb6ab8c3a009dcec6629c2e97d815b7b
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '981'
 ht-degree: 3%
 
 ---
 
-# App iOS SwiftUI
+# app iOS
 
 Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Questa applicazione iOS illustra come eseguire query sul contenuto utilizzando AEM API GraphQL utilizzando query persistenti.
 
@@ -131,7 +131,7 @@ query($slug: String!) {
         slug: {
           _expressions: [ { value: $slug } ]
         }
-  	}) {
+      }) {
     items {
       _path
       title
@@ -173,7 +173,7 @@ query($slug: String!) {
 }
 ```
 
-## Esegui query persistente GraphQL
+### Esegui query persistente GraphQL
 
 AEM le query persistenti vengono eseguite su HTTP GET, pertanto non è possibile utilizzare le librerie GraphQL comuni che utilizzano HTTP POST, come Apollo. Al contrario, crea una classe personalizzata che esegua le richieste HTTP di query persistenti a AEM.
 
