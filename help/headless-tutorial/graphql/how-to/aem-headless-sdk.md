@@ -8,13 +8,13 @@ role: Developer
 level: Intermediate
 kt: 10269
 thumbnail: KT-10269.jpeg
-source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
+exl-id: 922a464a-2286-4132-9af8-f5a1fb5ce268
+source-git-commit: 68970493802c7194bcb3ac3ac9ee10dbfb0fc55d
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 0%
+source-wordcount: '415'
+ht-degree: 4%
 
 ---
-
 
 # AEM Headless SDK
 
@@ -28,134 +28,13 @@ L’SDK AEM Headless è disponibile per varie piattaforme:
 
 ## Query GraphQL
 
-Query AEM utilizzando GraphQL utilizzando query (anziché [query GraphQL persistenti](#persisted-graphql-queries)) consente agli sviluppatori di definire le query nel codice, specificando esattamente quale contenuto richiedere da AEM.
-
-Le query GraphQL tendono ad essere meno performanti rispetto alle query persistenti, in quanto vengono eseguite utilizzando HTTP POST, che è meno cache-able nei livelli CDN e Dispatcher AEM.
-
-### Esempi di codice{#graphql-queries-code-examples}
-
-Di seguito sono riportati alcuni esempi di codice per eseguire una query GraphQL rispetto a AEM.
-
-+++ Esempio JavaScript
-
-Installa il [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) eseguendo la `npm install` dalla directory principale del progetto Node.js.
-
-```
-$ npm i @adobe/aem-headless-client-js
-```
-
-Questo esempio di codice mostra come eseguire query AEM utilizzando [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) modulo npm che utilizza `async/await` sintassi. L&#39;SDK AEM Headless per JavaScript supporta anche [Sintassi delle promesse](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client).
-
-```javascript
-import AEMHeadless from '@adobe/aem-headless-client-js';
-
-// Initialize the AEMHeadless client with connection details
-const aemHeadlessClient = new AEMHeadless({
-    serviceURL: 'https://publish-p123-e789.adobeaemcloud.com',  // The AEM environment to query, this can be pulled out to env variables
-    endpoint: '/content/cq:graphql/wknd/endpoint.json',         // The AEM GraphQL endpoint, this can be pulled out to env variables
-})
-
-async function fetchQuery(query, queryParams) {
-    let data
-
-    try {
-        // AEM GraphQL queries are asynchronous, either await their return or use Promise-based .then(..) { ... } syntax
-        const response = await aemHeadlessClient.runQuery(query, queryParams);
-        // The GraphQL data is stored on the response's data key
-        data = response.data;
-    } catch (e) {
-        console.error(e.toJSON())
-    }
-
-    return data;
-};
-
-// Define the GraphQL query in-code
-const adventureNamesQuery = `{
-    adventuresList {
-        items {
-            adventureName
-        }
-    }
-}`;
-
-let data = fetchQuery(adventureNamesQuery);
-```
-
-+++
-
-
-+++ React useEffect(..) esempio
-
-Installa il [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) eseguendo la `npm install` dalla radice del progetto React.
-
-```
-$ npm i @adobe/aem-headless-client-js
-```
-
-Questo esempio di codice mostra come utilizzare il [React useEffect(..) gancio](https://reactjs.org/docs/hooks-effect.html) per eseguire una chiamata asincrona a AEM GraphQL.
-
-Utilizzo `useEffect` per effettuare la chiamata GraphQL asincrona in React è utile perché:
-
-1. Fornisce il wrapper sincrono per la chiamata asincrona a AEM.
-1. Riduce i AEM che richiedono inutilmente.
-
-```javascript
-// src/useGraphQL.js
-
-import { useState, useEffect } from 'react';
-import AEMHeadless from '@adobe/aem-headless-client-js';
-
-const aemHeadlessClient = new AEMHeadless({
-    serviceURL: 'https://publish-p123-e789.adobeaemcloud.com', // The AEM environment to query, this can be pulled out to env variables
-    endpoint: '/content/cq:graphql/global/endpoint.json'       // The AEM GraphQL endpoint, this can be pulled out to env variables
-});
-
-export function useGraphQL(query, queryParams) {
-    let [data, setData] = useState(null);
-    let [errors, setErrors] = useState(null);
-  
-    useEffect(() => {
-        async function fetchData() {
-            try {
-                const response = await aemHeadlessClient.runQuery(query, queryParams);
-                setData(response.data);
-            } catch(error) {
-                setErrors(error);
-            };
-        }
-        fetchData();
-    }, [query, queryParams]);
-  
-    return { data, errors }
-}
-```
-
-Importa e utilizza `useGraphQL` aggancia il componente React per eseguire query AEM.
-
-```javascript
-import useGraphQL from 'useGraphQL';
-
-const adventuresQuery = `{
-    adventuresList {
-        items {
-            adventureName
-        }
-    }
-}`;
-
-let { data, errors } = useGraphQL(adventuresQuery);
-```
-
-+++
-
-<p> </p>
+AEM supporta le query GraphQL definite dal client, tuttavia è AEM best practice utilizzare [query GraphQL persistenti](#persisted-graphql-queries).
 
 ## Query GraphQL persistenti
 
-Query AEM utilizzando GraphQL utilizzando query persistenti (anziché [normali query GraphQL](#graphl-queries)) consente agli sviluppatori di persistere una query (ma non i relativi risultati) in AEM, quindi di richiedere l’esecuzione della query per nome. Le query persistenti sono simili al concetto di stored procedure nei database SQL.
+Query AEM utilizzando GraphQL utilizzando query persistenti (anziché [query GraphQL definite dal client](#graphl-queries)) consente agli sviluppatori di persistere una query (ma non i relativi risultati) in AEM, quindi di richiedere l’esecuzione della query per nome. Le query persistenti sono simili al concetto di stored procedure nei database SQL.
 
-Le query persistenti tendono ad essere più performanti delle normali query GraphQL, in quanto le query persistenti vengono eseguite tramite HTTP GET, che è più cache-able nei livelli CDN e Dispatcher AEM. Le query persistenti, inoltre, definiscono un’API e dissociano la necessità per lo sviluppatore di comprendere i dettagli di ciascun modello di frammento di contenuto.
+Le query persistenti sono più performanti rispetto alle query GraphQL definite dal client, in quanto vengono eseguite query persistenti tramite HTTP GET, che è memorizzabile nella cache nei livelli CDN e Dispatcher AEM. Le query persistenti, inoltre, definiscono un’API e dissociano la necessità per lo sviluppatore di comprendere i dettagli di ciascun modello di frammento di contenuto.
 
 ### Esempi di codice{#persisted-graphql-queries-code-examples}
 
@@ -179,26 +58,35 @@ import AEMHeadless from '@adobe/aem-headless-client-js';
 // Initialize the AEMHeadless client with connection details
 const aemHeadlessClient = new AEMHeadless({
     serviceURL: 'https://publish-p123-e789.adobeaemcloud.com',  // The AEM environment to query, this can be pulled out to env variables
-    endpoint: '/content/cq:graphql/wknd/endpoint.json',         // The AEM GraphQL endpoint, this can be pulled out to env variables
+    endpoint: '/content/cq:graphql/wknd-shared/endpoint.json',  // The AEM GraphQL endpoint, this is not used when invoking persisted queries.
 })
 
-async function fetchPersistedQuery(persistedQueryName) {
-    let data
+/**
+ * Uses the AEM Headless SDK to execute a persisted query with optional query variables.
+
+ * @param {String} persistedQueryName the fully qualified name of the persisted query
+ * @param {*} queryParameters an optional JavaScript object containing query parameters
+ * @returns the GraphQL data or an error message 
+ */
+export async function executePersistedQuery(persistedQueryName, queryParameters) {
+    let data;
+    let errors;
 
     try {
         // AEM GraphQL queries are asynchronous, either await their return or use Promise-based .then(..) { ... } syntax
-        const response = await aemHeadlessClient.runPersistedQuery(persistedQueryName);
+        const response = await aemHeadlessClient.runPersistedQuery(persistedQueryName, queryParameters);
         // The GraphQL data is stored on the response's data field
         data = response.data;
     } catch (e) {
         console.error(e.toJSON())
+        errors = e;
     }
 
-    return data;
+    return { data, errors };
 };
 
-// Execute the persisted query using its name
-let data = fetchPersistedQuery('wknd/adventureNames');
+// Execute the persisted query using its name 'wknd-shared/adventures-by-slug' and optional query variables
+let { data, errors } = executePersistedQuery('wknd-shared/adventures-by-slug', { "slug": "bali-surf-camp" });
 ```
 
 +++
@@ -218,44 +106,98 @@ Utilizzo `useEffect` per effettuare la chiamata GraphQL asincrona in React è ut
 1. Fornisce il wrapper sincrono per la chiamata asincrona a AEM.
 1. Riduce i AEM che richiedono inutilmente.
 
-Questo codice presuppone una query persistente con il nome `wknd/adventureNames` è stato creato su AEM Author e pubblicato su AEM Publish.
+Questo codice presuppone una query persistente con il nome `wknd-shared/adventure-by-slug` è stato creato su AEM Author e pubblicato su AEM Publish utilizzando GraphiQL.
 
 ```javascript
 import AEMHeadless from '@adobe/aem-headless-client-js';
+import { useEffect, useState } from "react";
 
 // Initialize the AEMHeadless client with connection details
 const aemHeadlessClient = new AEMHeadless({
     serviceURL: 'https://publish-p123-e789.adobeaemcloud.com', // The AEM environment to query
-    endpoint: '/content/cq:graphql/wknd/endpoint.json'         // The AEM GraphQL endpoint
+    endpoint: '/content/cq:graphql/wknd-shared/endpoint.json'         // The AEM GraphQL endpoint, this is not used when invoking persisted queries.
 })
 
-export function fetchPersistedQuery(persistedQueryName) {
-  let [data, setData] = useState(null);
-  let [errors, setErrors] = useState(null);
+/**
+ * Private, shared function that invokes the AEM Headless client. 
+ * React components/views will invoke GraphQL via the custom React useEffect hooks defined below.
+ * 
+ * @param {String} persistedQueryName the fully qualified name of the persisted query
+ * @param {*} queryParameters an optional JavaScript object containing query parameters
+ * @returns the GraphQL data or an error message 
+ */
+async function fetchPersistedQuery(persistedQueryName, queryParameters) {
+  let data;
+  let err;
 
-  useEffect(async () => {
-    try {
-        // AEM GraphQL queries are asynchronous, either await their return or use Promise-based .then(..) { ... } syntax 
-        const response = await aemHeadlessClient.runPersistedQuery(persistedQueryName);
-        // The GraphQL data is stored on the response's data field
-        setData(response.data);
-    }.catch((error) => {
-        setErrors(error);
-    });
+  try {
+    // AEM GraphQL queries are asynchronous, either await their return or use Promise-based .then(..) { ... } syntax
+    const response = await aemHeadlessClient.runPersistedQuery(
+      persistedQueryName,
+      queryParameters
+    );
+    // The GraphQL data is stored on the response's data field
+    data = response?.data;
+  } catch (e) {
+    // An error occurred, return the error messages
+    err = e
+      .toJSON()
+      ?.map((error) => error.message)
+      ?.join(", ");
+    console.error(e.toJSON());
+  }
 
-  }, [persistedQueryName]);
+  return { data, err };
+}
 
-  return { data, errors }
+/**
+ * Calls the 'wknd-shared/adventure-by-slug' and provided the {slug} as the persisted query's `slug` parameter.
+ *
+ * @param {String!} slug the unique slug used to specify the adventure to return
+ * @returns a JSON object representing the adventure
+ */
+export function useAdventureBySlug(slug) {
+  const [adventure, setAdventure] = useState(null);
+  const [errors, setErrors] = useState(null);
+
+  useEffect(() => {
+    async function fetchData() {
+      // The key is the variable name as defined in the persisted query, and may not match the model's field name
+      const queryParameters = { slug: slug };
+      
+      // Invoke the persisted query, and pass in the queryParameters object as the 2nd parameter
+      const { data, err } = await fetchPersistedQuery(
+        "wknd-shared/adventure-by-slug",
+        queryParameters
+      );
+
+      if (err) {
+        // Capture errors from the HTTP request
+        setErrors(err);
+      } else if (data?.adventureList?.items?.length === 1) {
+        // Set the adventure data after data validation (there should only be 1 matching adventure)
+        setAdventure(data.adventureList.items[0]);
+      } else {
+        // Set an error if no adventure could be found
+        setErrors(`Cannot find adventure with slug: ${slug}`);
+      }
+    }
+    fetchData();
+  }, [slug]);
+
+  return { adventure, errors };
 }
 ```
 
-E richiama questo codice da altrove nel codice React.
+Richiamare il React personalizzato `useEffect` agganciarsi da un altro punto di un componente React.
 
 ```javascript
-import useGraphL from '...';
+import useAdventureBySlug from '...';
 
-let { data, errors } = fetchPersistedQuery('wknd/adventureNames');
+let { data, errors } = useAdventureBySlug('bali-surf-camp');
 ```
+
+Nuovo `useEffect` È possibile creare hook per ogni query persistente utilizzata dall&#39;app React.
 
 +++
 

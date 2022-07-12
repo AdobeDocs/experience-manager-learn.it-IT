@@ -8,9 +8,9 @@ role: Developer
 level: Intermediate
 kt: 10254
 thumbnail: KT-10254.jpeg
-source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
+source-git-commit: 68970493802c7194bcb3ac3ac9ee10dbfb0fc55d
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '513'
 ht-degree: 2%
 
 ---
@@ -36,22 +36,22 @@ Il codice internazionale è anche il valore utilizzato per filtrare i frammenti 
 | en | /content/dam/.../**en**/... | Contenuto in inglese |
 | es | /content/dam/.../**es**/... | Contenuto spagnolo |
 
-## Query GraphQL
+## Query persistente GraphQL
 
-AEM fornisce un `_locale` Filtro GraphQL che filtra automaticamente il contenuto in base al codice delle impostazioni internazionali . Ad esempio, se si esegue una query su tutte le avventure in inglese nel [Progetto demo di riferimento WKND](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) dovrebbe essere simile a:
+AEM fornisce un `_locale` Filtro GraphQL che filtra automaticamente il contenuto in base al codice delle impostazioni internazionali . Ad esempio, se si esegue una query su tutte le avventure in inglese nel [Progetto demo di riferimento WKND](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) può essere eseguito con una nuova query persistente `wknd-shared/adventures-by-locale` definito come:
 
 ```graphql
-{
-  adventureList(_locale: "en") {
+query($locale: String!) {
+  adventureList(_locale: $locale) {
     items {      
       _path
-      adventureTitle
+      title
     }
   }
 }
 ```
 
-La `_locale` il filtro richiede l&#39;uso di [AEM convenzione di localizzazione basata su cartelle](#assets-folder-structure).
+La `$locale` nella variabile `_locale` Il filtro richiede il codice delle impostazioni internazionali (ad esempio `en`, `en_us`oppure `de`) come specificato in [AEM convenzione di localizzazione basata su cartelle](#assets-folder-structure).
 
 ## React example
 
@@ -112,31 +112,26 @@ Il componente Avventures richiede AEM per tutte le avventure in base alle impost
 
 Questo approccio può essere esteso ad altre query nell&#39;applicazione, garantendo che tutte le query includano solo il contenuto specificato dalla selezione delle impostazioni internazionali di un utente.
 
-La query su AEM viene eseguita nel gancio React personalizzato [useGraphQL, descritto più dettagliatamente nella documentazione Query AEM GraphQL](./aem-headless-sdk.md).
+La query su AEM viene eseguita nel gancio React personalizzato [getAdventuresByLocale, descritto più dettagliatamente nella documentazione Query AEM GraphQL](./aem-headless-sdk.md).
 
 ```javascript
 // src/Adventures.js
 
 import { useContext } from "react"
-import { useGraphQL } from './useGraphQL'
+import { useAdventuresByLocale } from './api/persistedQueries'
 import LocaleContext from './LocaleContext'
 
 export default function Adventures() {
     const { locale } = useContext(LocaleContext);
 
-    let {data} = useGraphQL(`{
-            adventureList(_locale: "${locale}") {
-                items {      
-                _path
-                adventureTitle
-             }
-        }
-    }`);
+    // Get data from AEM using GraphQL persisted query as defined above 
+    // The details of defining a React useEffect hook are explored in How to > AEM Headless SDK
+    let { data, error } = useAdventuresByLocale(locale);
 
     return (
         <ul>
             {data?.adventureList?.items?.map((adventure, index) => { 
-                return <li key={index}>{adventure.adventureTitle}</li>
+                return <li key={index}>{adventure.title}</li>
             })}
         </ul>
     )
