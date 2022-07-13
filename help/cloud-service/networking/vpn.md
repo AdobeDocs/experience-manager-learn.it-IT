@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
+source-git-commit: 6958b1f82c609af2998d94fd868e67bf1578e848
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1264'
 ht-degree: 1%
 
 ---
@@ -229,15 +229,7 @@ Le richieste HTTP/HTTPS da AEM sulle porte standard (80/443) sono consentite per
 
 ### HTTP/HTTPS
 
-Durante la creazione di connessioni HTTP/HTTPS da AEM, per ottenere un indirizzo IP in uscita dedicato o essere indirizzato tramite VPN, la connessione deve essere effettuata tramite host e porte speciali, forniti tramite segnaposto.
-
-AEM fornisce due set di variabili di sistema Java™ speciali associate a proxy HTTP/HTTPS AEM.
-
-| Nome della variabile | Uso | Codice Java™ | Configurazione OSGi | Configurazione mod_proxy del server web Apache | | - | - | - | - | - | | `AEM_HTTP_PROXY_HOST` | Host proxy per connessioni HTTP | `System.getenv("AEM_HTTP_PROXY_HOST")` | `$[env:AEM_HTTP_PROXY_HOST]` | `${AEM_HTTP_PROXY_HOST}` | | `AEM_HTTP_PROXY_PORT` | Porta proxy per connessioni HTTP | `System.getenv("AEM_HTTP_PROXY_PORT")` | `$[env:AEM_HTTP_PROXY_PORT]` |  `${AEM_HTTP_PROXY_PORT}` | | `AEM_HTTPS_PROXY_HOST` | Host proxy per connessioni HTTPS | `System.getenv("AEM_HTTPS_PROXY_HOST")` | `$[env:AEM_HTTPS_PROXY_HOST]` | `${AEM_HTTPS_PROXY_HOST}` | | `AEM_HTTPS_PROXY_PORT` | Porta proxy per connessioni HTTPS | `System.getenv("AEM_HTTPS_PROXY_PORT")` | `$[env:AEM_HTTPS_PROXY_PORT]` | `${AEM_HTTPS_PROXY_PORT}` |
-
-Le richieste ai servizi esterni HTTP/HTTPS devono essere effettuate configurando la configurazione proxy del client Java™ HTTP tramite AEM valori host/porte proxy.
-
-Quando si eseguono chiamate HTTP/HTTPS a servizi esterni su qualsiasi porta, non corrisponde `portForwards` deve essere definito utilizzando le API di Cloud Manager `__enableEnvironmentAdvancedNetworkingConfiguration` , in quanto le &quot;regole&quot; di inoltro della porta sono definite &quot;nel codice&quot;.
+Durante la creazione di connessioni HTTP/HTTPS da AEM, quando si utilizza la VPN, le connessioni HTTP/HTTPS vengono automaticamente proxy fuori AEM. Per supportare le connessioni HTTP/HTTPS non è richiesto alcun codice o configurazione aggiuntivo.
 
 >[!TIP]
 >
