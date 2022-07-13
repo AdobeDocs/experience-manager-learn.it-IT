@@ -9,22 +9,22 @@ level: Intermediate
 kt: 9354
 thumbnail: KT-9354.jpeg
 exl-id: a565bc3a-675f-4d5e-b83b-c14ad70a800b
-source-git-commit: aa2d0d4d6e0eb429baa37378907a9dd53edd837d
+source-git-commit: bdce84fdcc949c8f8d0690ee7110238d8e8d3e42
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
 
 # Connessioni HTTP/HTTPS per indirizzo IP in uscita dedicato e VPN
 
-Le connessioni HTTP/HTTPS devono essere proxy fuori AEM as a Cloud Service, ma non sono necessarie connessioni speciali `portForwards` e possono utilizzare AEM reti avanzate `AEM_HTTP_PROXY_HOST`, `AEM_HTTP_PROXY_PORT`, `AEM_HTTPS_PROXY_HOST`e `AEM_HTTPS_PROXY_PORT`.
+Le connessioni HTTP/HTTPS vengono automaticamente proxy fuori AEM as a Cloud Service con indirizzo IP in uscita dedicato o VPN e non hanno bisogno di alcun indirizzo speciale `portForwards` regole.
 
 ## Supporto di rete avanzato
 
 L&#39;esempio di codice seguente è supportato dalle seguenti opzioni di rete avanzate.
 
-Assicurati che [appropriato](../advanced-networking.md#advanced-networking) la configurazione di rete avanzata è stata impostata prima di seguire questa esercitazione.
+Assicurati che [indirizzo IP in uscita dedicato o VPN](../advanced-networking.md#advanced-networking) la configurazione di rete avanzata è stata impostata prima di seguire questa esercitazione.
 
 | Nessuna rete avanzata | [Uscita porta flessibile](../flexible-port-egress.md) | [Indirizzo IP in uscita dedicato](../dedicated-egress-ip-address.md) | [Rete privata virtuale](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
@@ -36,7 +36,7 @@ Assicurati che [appropriato](../advanced-networking.md#advanced-networking) la c
 
 ## Esempio di codice
 
-Questo esempio di codice Java™ è di un servizio OSGi che può essere eseguito in AEM as a Cloud Service che effettua una connessione HTTP a un server web esterno su 8080. Le connessioni ai server web HTTPS utilizzano `AEM_HTTPS_PROXY_HOST` e `AEM_HTTPS_PROXY_PORT` anziché  `AEM_HTTP_PROXY_HOST` e `AEM_HTTP_PROXY_PORT`.
+Questo esempio di codice Java™ è di un servizio OSGi che può essere eseguito in AEM as a Cloud Service che effettua una connessione HTTP a un server web esterno su 8080. Le connessioni HTTPS (o HTTP) vengono automaticamente proxy fuori AEM as a Cloud Service e non richiedono uno sviluppo speciale.
 
 >[!NOTE]
 > Si consiglia di [API HTTP Java™ 11](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) vengono utilizzati per effettuare chiamate HTTP/HTTPS da AEM.
