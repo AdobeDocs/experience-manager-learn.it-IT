@@ -5,13 +5,13 @@ version: 6.3, 6.4, 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 5b764d86-8ced-46ed-838e-4bd2e75fd64c
+source-git-commit: 6dd7164f5ec045b4cffd7732fd83ad9a91fdd511
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
-
 
 # Configurare i modelli di risorse con AEM Assets e InDesign Server{#set-up-asset-templates-with-aem-assets-and-indesign-server}
 
@@ -25,7 +25,7 @@ I modelli di risorse consentono agli addetti al marketing di creare, gestire e d
 
 ## Scarica la versione di prova di InDesign Server {#download-indesign-server-trial}
 
-Scarica [InDesign Server trial download Website](https://www.adobe.com/devnet/premiere/sdk/cs5/indesign-server-trial-downloads.html)
+Scarica [Sito Web di download della versione di prova di InDesign Server](https://www.adobeprerelease.com/)
 
 ## Avvio di InDesign Server {#starting-indesign-server}
 
