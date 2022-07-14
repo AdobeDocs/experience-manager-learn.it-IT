@@ -4,10 +4,10 @@ user-guide-description: Una raccolta di tutorial su Adobe Experience Manager as 
 breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 89982f506a5e1ffc12f84a0f616aaa1dc2e00c5b
+source-git-commit: 52587c1131620d62428ecfc464a97dce00d8a1d8
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 21%
+source-wordcount: '793'
+ht-degree: 22%
 
 ---
 
@@ -110,7 +110,7 @@ ht-degree: 21%
       + [Connessioni SQL tramite API Java SQL](./networking/examples/sql-java-apis.md)
       + [Servizio e-mail](./networking/examples/email-service.md)
 + Migrazione {#migration}
-   + [Strumento Trasferimento contenuti](./migration/content-transfer-tool.md)
+   + [Strumento Content Transfer (Trasferimento contenuti)](./migration/content-transfer-tool.md)
    + [Importazione in blocco delle risorse](./migration/bulk-import.md)
 
    + Passaggio ad AEM as a Cloud Service {#moving-to-aem-as-a-cloud-service}
@@ -125,7 +125,7 @@ ht-degree: 21%
       + [Ricerca e indicizzazione](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
       + Migrazione dei contenuti {#content-migration}
          + [Servizio di importazione in blocco](./migration/moving-to-aem-as-a-cloud-service/content-migration/bulk-import-service.md)
-         + [Strumento Trasferimento contenuti](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
+         + [Strumento Content Transfer (Trasferimento contenuti)](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
       + [Risoluzione dei problemi](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
       + AEM Forms as a Cloud Service {#aem-forms}
          + [Introduzione](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
@@ -135,7 +135,7 @@ ht-degree: 21%
       + [Introduzione](./migration/cloud-acceleration-manager/introduction.md)
       + [Analisi di preparazione e best practice](./migration/cloud-acceleration-manager/readiness-and-best-practice-analyzer.md)
       + [Fase di implementazione](./migration/cloud-acceleration-manager/implementation-phase.md)
-      + [Strumento Trasferimento contenuti](./migration/cloud-acceleration-manager/content-transfer-tool.md)
+      + [Strumento Content Transfer (Trasferimento contenuti)](./migration/cloud-acceleration-manager/content-transfer-tool.md)
       + [Strumenti di refactoring del codice](./migration/cloud-acceleration-manager/code-refactoring-tools.md)
       + [Modernizzatore dell&#39;archivio del codice](./migration/cloud-acceleration-manager/code-repository-modernizer.md)
       + [Dispatcher Converter](./migration/cloud-acceleration-manager/dispatcher-converter.md)
@@ -262,6 +262,7 @@ ht-degree: 21%
       + [Admin Console](./cloud-5/season-2/cloud5-admin-console.md)
       + [REPOINIT](./cloud-5/season-2/cloud5-repoinit.md)
       + [Scheduler processi Sling](./cloud-5/season-2/cloud5-sling-job-scheduler.md)
+      + [Correggi la cache](./cloud-5/season-2/cloud5-fix-your-cache.md)
 + [Serie di esperti AEM](./aem-experts-series.md)
 + Tutorials a più passaggi{#multi-step-tutorials}
    + [Sviluppo AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)
