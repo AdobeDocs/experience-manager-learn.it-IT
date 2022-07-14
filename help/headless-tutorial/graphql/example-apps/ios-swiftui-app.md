@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: 8b2c116ceb6ab8c3a009dcec6629c2e97d815b7b
+source-git-commit: 5d32899a58e591b535dab991f89a8f7467b7b435
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 3%
@@ -23,7 +23,7 @@ Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità he
 
 ![App iOS SwiftUI con AEM Headless](./assets/ios-swiftui-app/ios-app.png)
 
-Visualizza la [codice sorgente su GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-swiftui-app)
+Visualizza la [codice sorgente su GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app)
 
 ## Prerequisiti {#prerequisites}
 
@@ -50,7 +50,7 @@ L’applicazione iOS è progettata per connettersi a un __Pubblicazione AEM__ Tu
    git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Launch [Xcode](https://developer.apple.com/xcode/) e apri la cartella `ios-swiftui-app`
+1. Launch [Xcode](https://developer.apple.com/xcode/) e apri la cartella `ios-app`
 1. Modificare il file `Config.xcconfig` file e aggiornamento `AEM_SCHEME` e `AEM_HOST` per corrispondere al servizio AEM Publish di destinazione.
 
    ```plain
@@ -86,7 +86,7 @@ L’applicazione iOS è progettata per connettersi a un __Pubblicazione AEM__ Tu
 
 ## Il codice
 
-Di seguito è riportato un riepilogo di come viene creata l&#39;applicazione iOS, di come si connette a AEM Headless per recuperare il contenuto utilizzando le query persistenti GraphQL e di come tali dati vengono presentati. Il codice completo è disponibile all&#39;indirizzo [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-swiftui-app).
+Di seguito è riportato un riepilogo di come viene creata l&#39;applicazione iOS, di come si connette a AEM Headless per recuperare il contenuto utilizzando le query persistenti GraphQL e di come tali dati vengono presentati. Il codice completo è disponibile all&#39;indirizzo [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app).
 
 ### Query persistenti
 
