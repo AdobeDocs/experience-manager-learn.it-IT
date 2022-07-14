@@ -10,112 +10,152 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 0%
+source-wordcount: '897'
+ht-degree: 2%
 
 ---
 
 # Authoring di frammenti di contenuto {#authoring-content-fragments}
 
-In questo capitolo viene creato e modificato un nuovo frammento di contenuto basato sul [modello di frammento di contenuto da collaboratore appena definito](./content-fragment-models.md). Inoltre, verrà illustrato come creare varianti di frammenti di contenuto.
+In questo capitolo viene creato e modificato un nuovo frammento di contenuto basato su [modello a frammento di contenuto appena definito](./content-fragment-models.md). Inoltre, verrà illustrato come creare varianti di frammenti di contenuto.
 
 ## Prerequisiti {#prerequisites}
 
-Si tratta di un tutorial in più parti e si presume che i passaggi descritti in [Definizione di modelli di frammento di contenuto](./content-fragment-models.md) siano stati completati.
+Si tratta di un tutorial in più parti e si presume che i passaggi descritti in [Definizione dei modelli di frammenti di contenuto](./content-fragment-models.md) sono state completate.
 
 ## Obiettivi {#objectives}
 
 * Creare un frammento di contenuto basato su un modello di frammento di contenuto
 * Creare una variante del frammento di contenuto
 
-## Panoramica sull’authoring dei frammenti di contenuto {#overview}
+## Creare una cartella di risorse
 
->[!VIDEO](https://video.tv.adobe.com/v/22451/?quality=12&learn=on)
+I frammenti di contenuto sono memorizzati in cartelle in AEM Assets. Per creare frammenti di contenuto dai modelli creati nel capitolo precedente, è necessario creare una cartella per memorizzarli. È necessaria una configurazione nella cartella per abilitare la creazione di frammenti da modelli specifici.
 
-Il video precedente offre una panoramica di alto livello sull’authoring dei frammenti di contenuto.
+1. Dalla schermata iniziale AEM passare a **Risorse** > **File**.
+
+   ![Passa ai file delle risorse](assets/author-content-fragments/navigate-assets-files.png)
+
+1. Tocca **Crea** nell’angolo e tocca **Cartella**. Nella finestra di dialogo risultante inserisci:
+
+   * Titolo*: **Progetto personale**
+   * Nome: **progetto personale**
+
+   ![Finestra di dialogo Crea cartella](assets/author-content-fragments/create-folder-dialog.png)
+
+1. Seleziona la **Cartella personale** tocca e fai clic su **Proprietà**.
+
+   ![Apri proprietà cartella](assets/author-content-fragments/open-folder-properties.png)
+
+1. Tocca **Cloud Services** scheda . Sotto **Configurazione cloud** utilizza il cercatore di percorsi per selezionare il **Progetto personale** configurazione. Il valore deve essere `/conf/my-project`.
+
+   ![Imposta configurazione cloud](assets/author-content-fragments/set-cloud-config-my-project.png)
+
+   L’impostazione di questa proprietà consente di creare frammenti di contenuto utilizzando i modelli creati nel capitolo precedente.
+
+1. Tocca **Criteri** scheda . Sotto **Modelli di frammenti di contenuto consentiti** utilizza il cercatore di percorsi per selezionare il **Persona** e **Team** modello creato in precedenza.
+
+   ![Modelli di frammenti di contenuto consentiti](assets/author-content-fragments/allowed-content-fragment-models.png)
+
+   Questi criteri verranno ereditati automaticamente da qualsiasi sottocartella e possono essere ignorati. Puoi anche consentire i modelli tramite tag o abilitare i modelli da altre configurazioni di progetto (come WKND Shared). Questo meccanismo offre un modo efficace di gestire la gerarchia dei contenuti.
+
+1. Tocca **Salva e chiudi** per salvare le modifiche apportate alle proprietà della cartella.
+
+1. Passa all’interno della **Progetto personale** cartella.
+
+1. Crea un’altra cartella con i seguenti valori:
+
+   * Titolo*: **Inglese**
+   * Nome: **en**
+
+   Una buona pratica consiste nell&#39;istituire progetti di sostegno multilingue. Vedi [per ulteriori informazioni, consulta la seguente pagina docs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
+
 
 ## Creare un frammento di contenuto {#create-content-fragment}
 
-Nel capitolo precedente, [Definizione dei modelli di frammento di contenuto](./content-fragment-models.md), è stato creato un modello **Collaboratore**. Crea un nuovo frammento di contenuto utilizzando questo modello.
+Successivamente verranno creati diversi frammenti di contenuto in base alla **Team** e **Persona** modelli.
 
-1. Dal menu **AEM Start** vai a **Risorse** > **File**.
-1. Fai clic tra le cartelle per passare a **Sito WKND** > **Inglese** > **Collaboratori**. Questa cartella contiene un elenco di foto principali per i collaboratori del marchio WKND.
+1. Dalla schermata iniziale AEM **Frammenti di contenuto** per aprire l’interfaccia utente Frammenti di contenuto .
 
-1. Fai clic su **Crea** in alto a destra e seleziona **Frammento di contenuto**:
+   ![Interfaccia utente dei frammenti di contenuto](assets/author-content-fragments/cf-fragment-ui.png)
 
-   ![Fai clic su Crea un nuovo frammento](assets/author-content-fragments/create-content-fragment-menu.png)
+1. Nella barra a sinistra espandi **Progetto personale** e toccare **Inglese**.
+1. Tocca **Crea** per richiamare **Nuovo frammento di contenuto** e immetti i seguenti valori:
 
-1. Seleziona il modello **Collaboratore** e fai clic su **Avanti**.
+   * Dove si trova: `/content/dam/my-project/en`
+   * Modello per frammento di contenuto: **Persona**
+   * Titolo: **John Doe**
+   * Nome: `john-doe`
 
-   ![Seleziona modello collaboratore](assets/author-content-fragments/select-contributor-model.png)
+   ![Nuovo frammento di contenuto](assets/author-content-fragments/new-content-fragment-john-doe.png)
+1. Tocca **Crea**.
+1. Ripeti i passaggi precedenti per creare un nuovo frammento che rappresenta **Alison Smith**:
 
-   Si tratta dello stesso modello **Collaboratore** creato nel capitolo precedente.
+   * Dove si trova: `/content/dam/my-project/en`
+   * Modello per frammento di contenuto: **Persona**
+   * Titolo: **Alison Smith**
+   * Nome: `alison-smith`
 
-1. Inserisci **Stacey Roswells** per il titolo e fai clic su **Crea**.
-1. Fai clic su **Apri** nella finestra di dialogo **Success** per aprire il frammento appena creato.
+   Tocca **Crea** per creare il nuovo frammento Persona.
 
-   ![Nuovo frammento di contenuto creato](assets/author-content-fragments/new-content-fragment.png)
+1. Quindi, ripeti passaggi per creare un nuovo **Team** frammento che rappresenta **Alfa team**:
 
-   Tieni presente che i campi definiti dal modello sono ora disponibili per creare questa istanza del frammento di contenuto.
+   * Dove si trova: `/content/dam/my-project/en`
+   * Modello per frammento di contenuto: **Team**
+   * Titolo: **Alfa team**
+   * Nome: `team-alpha`
 
-1. Per **Nome completo** immettere: **Stacey Roswells**.
-1. Per **Biografia** inserire una breve biografia. Hai bisogno di ispirazione? Riutilizzare il [file di testo](assets/author-content-fragments/stacey-roswells-bio.txt).
-1. Per **Picture Reference** fare clic sull&#39;icona **Cartella** e passare a **Sito WKND** > **Inglese** > **Collaboratori** > **stack-roswells.jpg**. Questo verrà valutato in base al percorso: `/content/dam/wknd/en/contributors/stacey-roswells.jpg`.
-1. Per **Occupazione** scegli **Fotografo**.
+   Tocca **Crea** per creare il nuovo frammento Team.
 
-   ![Frammento creato](assets/author-content-fragments/stacye-roswell-fragment-authored.png)
+1. Sotto devono essere presenti tre frammenti di contenuto **Progetto personale** > **Inglese**:
 
-1. Fai clic su **Salva** per salvare le modifiche.
+   ![Nuovi frammenti di contenuto](assets/author-content-fragments/new-content-fragments.png)
 
-## Creare una variante del frammento di contenuto
+## Modifica frammenti di contenuto della persona {#edit-person-content-fragments}
 
-Tutti i frammenti di contenuto iniziano con una variante **Master**. La variante **Master** può essere considerata il contenuto *predefinito* del frammento e viene utilizzata automaticamente quando il contenuto viene esposto tramite le API GraphQL. È inoltre possibile creare varianti di un frammento di contenuto. Questa funzione offre ulteriore flessibilità per la progettazione di un’implementazione.
+Successivamente, compila i frammenti appena creati con i dati.
 
-Le varianti possono essere utilizzate per indirizzare canali specifici. Ad esempio, è possibile creare una variante **mobile** che contiene una quantità minore di testo o fa riferimento a un&#39;immagine specifica per il canale. L’utilizzo delle varianti dipende in realtà dall’implementazione. Come qualsiasi funzione, prima di utilizzare è necessario effettuare un&#39;attenta pianificazione.
+1. Tocca la casella di controllo accanto a **John Doe** e toccare **Apri**.
 
-Quindi, crea una nuova variante per ottenere un&#39;idea delle funzionalità disponibili.
+   ![Apri frammento di contenuto](assets/author-content-fragments/open-fragment-for-editing.png)
 
-1. Riapri il frammento di contenuto **Stacey Roswells**.
-1. Nella barra a sinistra fai clic su **Crea variante**.
-1. Nella finestra modale **Nuova variante** immetti un titolo di **Riepilogo**.
+1. L’Editor frammento di contenuto contiene un modulo basato sul modello Frammento di contenuto . Compila i vari campi per aggiungere contenuto al **John Doe** frammento. Per Immagine profilo, puoi scegliere una delle immagini in WKND Shared o caricare la tua immagine in AEM Assets.
 
-   ![Nuova variante - Riepilogo](assets/author-content-fragments/new-variation-summary.png)
+   ![Editor frammento di contenuto](assets/author-content-fragments/content-fragment-editor-jd.png)
 
-1. Fai clic sul campo multiriga **Biografia** e fai clic sul pulsante **Espandi** per accedere alla visualizzazione a schermo intero del campo multivalore.
+1. Avanti, tocca **Crea variante** nella barra a sinistra. Nella finestra di dialogo aggiungi il tipo in **Alternativo** per il nome della variante.
 
-   ![Immettere la visualizzazione a schermo intero](assets/author-content-fragments/enter-full-screen-view.png)
+1. Modificare alcuni degli elementi nel **Alternativo** variazione.
 
-1. Fai clic su **Riepiloga testo** nel menu in alto a destra.
+   ![Versione alternativa](assets/author-content-fragments/alternate-variation-john-doe-fragment.png)
 
-1. Immetti una **destinazione** di **50** parole e fai clic su **Start**.
+   La funzione Variante consente agli autori di creare versioni diverse dello stesso frammento di contenuto. Può essere utilizzato per fornire una versione di riepilogo di un articolo longform. Per impostazione predefinita, un singolo **Master** La variante viene creata. Gli elementi di campo di testo a più righe di una variante possono essere sincronizzati con la variante principale.
 
-   ![Anteprima riepilogo](assets/author-content-fragments/summarize-text-preview.png)
+1. Tocca **Salva e chiudi** per salvare le modifiche apportate al frammento John Doe.
+1. Torna all’interfaccia utente dei frammenti di contenuto e apri le **Alison Smith** file da modificare.
+1. Ripeti i passaggi precedenti per compilare il **Alison Smith** frammento con contenuto.
 
-   Viene visualizzata un’anteprima di riepilogo. AEM processore del linguaggio del computer tenterà di riepilogare il testo in base al numero di parole di destinazione. È inoltre possibile selezionare frasi diverse da rimuovere.
+## Modifica frammento di contenuto del team {#edit-team-content-fragment}
 
-1. Fai clic su **Riepilogo** quando sei soddisfatto del riepilogo. Fai clic nel campo di testo su più righe e attiva il pulsante **Espandi** per tornare alla visualizzazione principale.
+1. Apri **Alfa team** Frammento di contenuto tramite l’interfaccia utente Frammento di contenuto .
+1. Compila i campi per **Titolo**, **Nome breve** e **Descrizione**.
+1. Seleziona la **John Doe** e **Alison Smith** Frammenti di contenuto per compilare i **Membri del team** campo:
 
-1. Fai clic su **Salva** per salvare le modifiche.
+   ![Imposta membri del team](assets/author-content-fragments/select-team-members.png)
 
-## Creare un ulteriore frammento di contenuto
+   >[!NOTE]
+   >
+   >Puoi anche creare nuovi frammenti di contenuto in linea utilizzando la **Nuovo frammento di contenuto** pulsante .
 
-Ripeti i passaggi descritti in [Creare un frammento di contenuto](#create-content-fragment) per creare un altro **Collaboratore**. Questo verrà utilizzato nel capitolo successivo come esempio di query per più frammenti.
+1. Tocca **Salva e chiudi** per salvare le modifiche al frammento Alfa team.
 
-1. Nella cartella **Collaboratori** fai clic su **Crea** in alto a destra e seleziona **Frammento di contenuto**:
-1. Seleziona il modello **Collaboratore** e fai clic su **Avanti**.
-1. Inserisci **Jacob Wester** per il titolo e fai clic su **Crea**.
-1. Fai clic su **Apri** nella finestra di dialogo **Success** per aprire il frammento appena creato.
-1. Per **Nome completo** immettere: **Jacob Wester**.
-1. Per **Biografia** inserire una breve biografia. Hai bisogno di ispirazione? Riutilizzare il [file di testo](assets/author-content-fragments/jacob-wester.txt).
-1. Per **Picture Reference** fare clic sull&#39;icona **Cartella** e passare a **Sito WKND** > **Inglese** > **Collaboratori** > **jacob_wester.jpg**. Questo verrà valutato in base al percorso: `/content/dam/wknd/en/contributors/jacob_wester.jpg`.
-1. Per **Occupazione** scegli **Scrittore**.
-1. Fai clic su **Salva** per salvare le modifiche. Non è necessario creare una variante, a meno che tu non desideri!
+## Esplorare i frammenti di contenuto WKND (facoltativo) {#explore-wknd-content-fragments}
 
-   ![Frammento di contenuto aggiuntivo](assets/author-content-fragments/additional-content-fragment.png)
+Se [è stato installato il contenuto di esempio condiviso WKND](./overview.md#install-sample-content) puoi controllare i frammenti di contenuto per i modelli Avventure, Articoli e Autori per ottenere ulteriori idee sulla creazione di contenuti.
 
-   A questo punto sono disponibili due frammenti **Collaboratori**.
+![Frammenti di contenuto WKND](assets/author-content-fragments/wknd-content-fragments.png)
 
 ## Congratulazioni! {#congratulations}
 
@@ -123,4 +163,9 @@ Congratulazioni, hai appena creato più frammenti di contenuto e creato una vari
 
 ## Passaggi successivi {#next-steps}
 
-Nel capitolo successivo, [Esplora API GraphQL](explore-graphql-api.md), esplorerai AEM API GraphQL utilizzando lo strumento GrapiQL incorporato. Scopri come AEM automaticamente uno schema GraphQL basato su un modello di frammento di contenuto. È possibile sperimentare la costruzione di query di base utilizzando la sintassi GraphQL.
+Nel capitolo successivo, [Esplorare le API GraphQL](explore-graphql-api.md), esplorerai AEM API GraphQL utilizzando lo strumento GrapiQL integrato. Scopri come AEM automaticamente uno schema GraphQL basato su un modello di frammento di contenuto. È possibile sperimentare la costruzione di query di base utilizzando la sintassi GraphQL.
+
+## Documentazione correlata
+
+* [Gestione dei frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html)
+* [Varianti - Authoring dei contenuti di frammenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html)

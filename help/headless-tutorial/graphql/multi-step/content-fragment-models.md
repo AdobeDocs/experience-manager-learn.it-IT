@@ -10,22 +10,24 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
+source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 1%
+source-wordcount: '1223'
+ht-degree: 2%
 
 ---
 
 # Definizione dei modelli di frammenti di contenuto {#content-fragment-models}
 
-In questo capitolo scopri come modellare il contenuto e creare uno schema con **Modelli per frammenti di contenuto**. Esaminerete i modelli esistenti e creerete un nuovo modello. Inoltre, verranno illustrati i diversi tipi di dati che possono essere utilizzati per definire uno schema come parte del modello.
+In questo capitolo scopri come modellare il contenuto e creare uno schema con **Modelli per frammenti di contenuto**. Scoprirai i diversi tipi di dati che possono essere utilizzati per definire uno schema come parte del modello.
 
-In questo capitolo verrà creato un nuovo modello per un **Collaboratore**, che è il modello dati per gli utenti che creano contenuti per riviste e avventure come parte del marchio WKND.
+In questo capitolo verranno creati due semplici modelli, **Team** e **Persona**. La **Team** il modello dati ha nome, nome breve e descrizione e fa riferimento al **Persona** modello dati, che ha nome completo, dettagli bio, immagine profilo e elenco occupazioni.
+
+Puoi anche creare un tuo modello seguendo i passaggi di base e modificando i rispettivi passaggi come le query GraphQL e React App code o semplicemente seguendo i passaggi descritti in questi capitoli.
 
 ## Prerequisiti {#prerequisites}
 
-Si tratta di un tutorial in più parti e si presume che i passaggi descritti in [Configurazione rapida](../quick-setup/local-sdk.md) sono state completate.
+Si tratta di un tutorial in più parti e si presume che un [AEM’ambiente di authoring è disponibile](./overview.md#prerequisites) e facoltativamente [Contenuto di esempio condiviso WKND installato](./overview.md#install-sample-content).
 
 ## Obiettivi {#objectives}
 
@@ -33,60 +35,42 @@ Si tratta di un tutorial in più parti e si presume che i passaggi descritti in 
 * Identifica i tipi di dati disponibili e le opzioni di convalida per la creazione di modelli.
 * Comprendere come il modello per frammento di contenuto definisce **entrambi** lo schema dati e il modello di creazione per un frammento di contenuto.
 
-## Panoramica modello frammento di contenuto {#overview}
+## Creare una nuova configurazione di progetto
 
->[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
+Una configurazione di progetto contiene tutti i modelli di frammento di contenuto associati a un particolare progetto e fornisce un mezzo per organizzare i modelli. È necessario creare almeno un progetto **prima** creazione di un nuovo modello per frammenti di contenuto.
 
-Il video precedente offre una panoramica di alto livello sull’utilizzo dei modelli di frammenti di contenuto.
+1. Accedi al AEM **Autore** ambiente.
+1. Dalla schermata iniziale AEM, passa a **Strumenti** > **Generale** > **Browser di configurazione**.
 
->[!CAUTION]
->
-> Il video precedente mostra la creazione del **Collaboratore** modello con il nome `Contributors`. Quando esegui i passaggi nel tuo ambiente, accertati che il titolo utilizzi il singolo modulo: `Contributor` senza **s**. La denominazione del modello per frammenti di contenuto determina le chiamate API GraphQL che verranno eseguite in seguito nell’esercitazione.
+   ![Passa al browser di configurazione](assets/content-fragment-models/navigate-config-browser.png)
+1. Fai clic su **Crea**.
+1. Nella finestra di dialogo risultante inserisci:
 
-## Inspect, il modello di frammento di contenuto avventuroso
+   * Titolo*: **Progetto personale**
+   * Nome*: **progetto personale** (preferisci utilizzare tutte le lettere minuscole utilizzando i trattini per separare le parole. Questa stringa influenzerà l&#39;endpoint GraphQL univoco su cui le applicazioni client eseguiranno le richieste.)
+   * Controlla **Modelli per frammenti di contenuto**
+   * Controlla **Query persistenti GraphQL**
 
-Nel capitolo precedente sono stati modificati e visualizzati su un’applicazione esterna diversi frammenti di contenuto Avventures. Esaminiamo il modello per frammenti di contenuto di avventura per comprendere lo schema dei dati sottostanti di questi frammenti.
+   ![Configurazione del progetto personale](assets/content-fragment-models/my-project-configuration.png)
 
-1. Da **Inizio AEM** menu vai a **Strumenti** > **Risorse** > **Modelli per frammenti di contenuto**.
+## Creare modelli di frammenti di contenuto
 
-   ![Passa a Modelli di frammenti di contenuto](assets/content-fragment-models/content-fragment-model-navigation.png)
+Quindi, crea due modelli per un **Team** e **Persona**.
 
-1. Passa a **Sito WKND** e passa il puntatore del mouse sulla cartella **Avventura** Modello per frammento di contenuto e fai clic sul pulsante **Modifica** icona (matita) per aprire il modello.
+### Creare il modello persona
 
-   ![Apri il modello di frammento di contenuto di avventura](assets/content-fragment-models/adventure-content-fragment-edit.png)
+Crea un nuovo modello per un **Persona**, che è il modello dati che rappresenta una persona che fa parte di un team.
 
-1. Viene aperta la **Editor modello frammento di contenuto**. Osserva che i campi definiscono il modello Avventura includi diversi **Tipi di dati** like **Testo a riga singola**, **Testo a più righe**, **Enumerazione** e **Riferimento contenuto**.
+1. Dalla schermata iniziale AEM, passa a **Strumenti** > **Generale** > **Modelli per frammenti di contenuto**.
 
-1. La colonna di destra dell’editor elenca i **Tipi di dati** che definiscono i campi modulo utilizzati per la creazione di frammenti di contenuto.
+   ![Passa a Modelli di frammenti di contenuto](assets/content-fragment-models/navigate-cf-models.png)
 
-1. Seleziona la **Titolo** nel pannello principale. Nella colonna di destra fai clic sul pulsante **Proprietà** scheda:
+   Se hai installato [contenuto di esempio](overview.md#install-sample-content) vengono visualizzate due cartelle: **Progetto personale** e **WKND condiviso**.
+1. Passa a **Progetto personale** cartella.
+1. Tocca **Crea** nell&#39;angolo in alto a destra per visualizzare **Crea modello** procedura guidata.
+1. Per **Titolo modello** immetti: **Persona** e toccare **Crea**.
 
-   ![Proprietà titolo avventura](assets/content-fragment-models/adventure-title-properties-tab.png)
-
-   Osserva la **Nome proprietà** campo impostato su `adventureTitle`. Definisce il nome della proprietà persistente da AEM. La **Nome proprietà** definisce anche le **key** nome di questa proprietà come parte dello schema dati. Questo **key** viene utilizzato quando i dati dei frammenti di contenuto sono esposti tramite API GraphQL.
-
-   >[!CAUTION]
-   >
-   > Modifica della **Nome proprietà** di un campo **dopo** I frammenti di contenuto sono derivati dal modello e hanno effetti a valle. I valori dei campi nei frammenti esistenti non saranno più referenziati e lo schema dei dati esposto da GraphQL cambierà, influendo sulle applicazioni esistenti.
-
-1. Scorri verso il basso in **Proprietà** e visualizza la scheda **Tipo di convalida** a discesa.
-
-   ![Opzioni di convalida disponibili](assets/content-fragment-models/validation-options-available.png)
-
-   Le convalide predefinite del modulo sono disponibili per **Posta elettronica** e **URL**. È inoltre possibile definire un **Personalizzato** convalida mediante espressione regolare.
-
-1. Fai clic su **Annulla** per chiudere l’Editor modello frammento di contenuto.
-
-## Creare un modello per collaboratori
-
-Quindi, crea un nuovo modello per un **Collaboratore**, che è il modello dati per gli utenti che creano contenuti per riviste e avventure come parte del marchio WKND.
-
-1. Fai clic su **Crea** nell&#39;angolo in alto a destra per visualizzare **Crea modello** procedura guidata.
-1. Per **Titolo modello** immetti: **Collaboratore** e fai clic su **Crea**
-
-   ![Procedura guidata del modello a frammento di contenuto](assets/content-fragment-models/content-fragment-model-wizard.png)
-
-   Fai clic su **Apri** per aprire il modello appena creato.
+   Tocca **Apri** nella finestra di dialogo risultante, per aprire il modello appena creato.
 
 1. Trascina e rilascia una **Testo a riga singola** sul pannello principale. Immetti le seguenti proprietà nel **Proprietà** scheda:
 
@@ -96,7 +80,9 @@ Quindi, crea un nuovo modello per un **Collaboratore**, che è il modello dati p
 
    ![Campo proprietà Nome completo](assets/content-fragment-models/full-name-property-field.png)
 
-1. Fai clic sul pulsante **Tipi di dati** trascina e rilascia una **Testo a più righe** campo sotto **Nome completo** campo . Immetti le seguenti proprietà:
+   La **Nome proprietà** definisce il nome della proprietà persistente da AEM. La **Nome proprietà** definisce anche le **key** nome di questa proprietà come parte dello schema dati. Questo **key** viene utilizzato quando i dati dei frammenti di contenuto sono esposti tramite API GraphQL.
+
+1. Tocca **Tipi di dati** trascina e rilascia una **Testo a più righe** campo sotto **Nome completo** campo . Immetti le seguenti proprietà:
 
    * **Etichetta campo**: **Biografia**
    * **Nome proprietà**: `biographyText`
@@ -104,13 +90,11 @@ Quindi, crea un nuovo modello per un **Collaboratore**, che è il modello dati p
 
 1. Fai clic sul pulsante **Tipi di dati** trascina e rilascia una **Riferimento contenuto** campo . Immetti le seguenti proprietà:
 
-   * **Etichetta campo**: **Riferimento immagine**
-   * **Nome proprietà**: `pictureReference`
-   * **Percorso directory principale**: `/content/dam/wknd`
+   * **Etichetta campo**: **Immagine profilo**
+   * **Nome proprietà**: `profilePicture`
+   * **Percorso directory principale**: `/content/dam`
 
-   Durante la configurazione della **Percorso radice** puoi fare clic sul pulsante **cartella** per visualizzare un modale per selezionare il percorso. Questo limiterà le cartelle che gli autori possono utilizzare per compilare il percorso.
-
-   ![Percorso radice configurato](assets/content-fragment-models/root-path-configure.png)
+   Durante la configurazione della **Percorso radice** puoi fare clic sul pulsante **cartella** per visualizzare un modale per selezionare il percorso. Questo limiterà le cartelle che gli autori possono utilizzare per compilare il percorso. `/content/dam` è la directory principale in cui vengono memorizzate tutte le risorse AEM (immagini, video e altri frammenti di contenuto).
 
 1. Aggiungi una convalida al **Riferimento immagine** in modo che solo i tipi di contenuto **Immagini** può essere utilizzato per compilare il campo.
 
@@ -118,6 +102,7 @@ Quindi, crea un nuovo modello per un **Collaboratore**, che è il modello dati p
 
 1. Fai clic sul pulsante **Tipi di dati** trascina e rilascia una **Enumerazione**  tipo di dati sotto la **Riferimento immagine** campo . Immetti le seguenti proprietà:
 
+   * **Rendering come**: **Caselle di controllo**
    * **Etichetta campo**: **Occupazione**
    * **Nome proprietà**: `occupation`
 
@@ -125,28 +110,88 @@ Quindi, crea un nuovo modello per un **Collaboratore**, che è il modello dati p
 
    **Artista**, **Influencer**, **Fotografo**, **Viaggiatore**, **Scrittore**, **YouTuber**
 
-   ![Valori delle opzioni di occupazione](assets/content-fragment-models/occupation-options-values.png)
+1. Il finale **Persona** Il modello deve essere simile al seguente:
 
-1. Il finale **Collaboratore** Il modello deve essere simile al seguente:
-
-   ![Modello collaboratore finale](assets/content-fragment-models/final-contributor-model.png)
+   ![Modello a persona finale](assets/content-fragment-models/final-author-model.png)
 
 1. Fai clic su **Salva** per salvare le modifiche.
 
-## Attiva il modello per collaboratori
+### Crea modello team
 
-I modelli di frammento di contenuto devono essere **Abilitato** prima che gli autori di contenuti possano usarlo. È possibile **Disattiva** un modello per frammenti di contenuto, che pertanto vieta agli autori di utilizzarlo. Ricorda che la modifica della **Nome proprietà** di un campo nel modello modifica lo schema dei dati sottostanti e può avere effetti significativi a valle sui frammenti esistenti e sulle applicazioni esterne. Si consiglia di pianificare attentamente la convenzione di denominazione utilizzata per **Nome proprietà** dei campi prima di abilitare il modello di frammento di contenuto per gli utenti.
+Crea un nuovo modello per un **Team**, che è il modello dati per un team di persone. Il modello Team farà riferimento al modello Persona per rappresentare i membri del team.
 
-1. Assicurati che **Collaboratore** modello attualmente in un **Abilitato** stato.
+1. In **Progetto personale** cartella, tocca **Crea** nell&#39;angolo in alto a destra per visualizzare **Crea modello** procedura guidata.
+1. Per **Titolo modello** immetti: **Team** e toccare **Crea**.
 
-   ![Modello collaboratore abilitato](assets/content-fragment-models/enable-contributor-model.png)
+   Tocca **Apri** nella finestra di dialogo risultante, per aprire il modello appena creato.
 
-   Per attivare o disattivare lo stato di un modello di frammento di contenuto, passa il mouse sulla scheda e fai clic sul pulsante **Disattiva** / **Abilita** icona.
+1. Trascina e rilascia una **Testo a riga singola** sul pannello principale. Immetti le seguenti proprietà nel **Proprietà** scheda:
+
+   * **Etichetta campo**: **Titolo**
+   * **Nome proprietà**: `title`
+   * Controlla **Obbligatorio**
+
+1. Tocca **Tipi di dati** trascina e rilascia una **Testo a riga singola** sul pannello principale. Immetti le seguenti proprietà nel **Proprietà** scheda:
+
+   * **Etichetta campo**: **Nome breve**
+   * **Nome proprietà**: `shortName`
+   * Controlla **Obbligatorio**
+   * Controlla **Univoco**
+   * Sotto **Tipo di convalida** > scegli **Personalizzato**
+   * Sotto **Regex di convalida personalizzato** > enter `^[a-z0-9\-_]{5,40}$` - in questo modo è possibile immettere solo valori alfanumerici minuscoli e trattini compresi tra 5 e 40 caratteri.
+
+   La `shortName` La proprietà ci fornirà un modo per eseguire query su un singolo team in base a un percorso abbreviato. La **Univoco** l’impostazione assicura che il valore sia sempre univoco per ogni frammento di contenuto di questo modello.
+
+1. Tocca **Tipi di dati** trascina e rilascia una **Testo a più righe** campo sotto **Nome breve** campo . Immetti le seguenti proprietà:
+
+   * **Etichetta campo**: **Descrizione**
+   * **Nome proprietà**: `description`
+   * **Tipo predefinito**: **Rich Text**
+
+1. Fai clic sul pulsante **Tipi di dati** trascina e rilascia una **Riferimento frammento** campo . Immetti le seguenti proprietà:
+
+   * **Rendering come**: **Campo multiplo**
+   * **Etichetta campo**: **Membri del team**
+   * **Nome proprietà**: `teamMembers`
+   * **Modelli di frammenti di contenuto consentiti**: Utilizza l’icona della cartella per selezionare la **Persona** modello.
+
+1. Il finale **Team** Il modello deve essere simile al seguente:
+
+   ![Modello del team finale](assets/content-fragment-models/final-team-model.png)
+
+1. Fai clic su **Salva** per salvare le modifiche.
+
+1. Ora dovresti disporre di due modelli da cui lavorare:
+
+   ![Due modelli](assets/content-fragment-models/two-new-models.png)
+
+## Inspect i modelli di frammenti di contenuto WKND (facoltativo)
+
+Se [è stato installato il contenuto di esempio condiviso WKND](./overview.md#install-sample-content) puoi controllare i modelli Avventura, Articolo e Autore per ottenere più idee sulle tecniche di modellazione dei dati.
+
+1. Da **Inizio AEM** menu vai a **Strumenti** > **Generale** > **Modelli per frammenti di contenuto**.
+
+1. Passa a **WKND condiviso** e dovresti vedere tre modelli: Articolo, Avventura e Autore.
+
+1. Passa il puntatore del mouse sulla scheda e tocca l’icona Modifica (a forma di matita)
+
+   ![Modelli WKND](assets/content-fragment-models/wknd-shared-models.png)
+
+1. Viene aperta la **Editor modello frammento di contenuto** per il modello e puoi controllare i vari tipi di dati utilizzati.
+
+   >[!CAUTION]
+   >
+   > Modifica del modello **dopo** I frammenti di contenuto sono stati creati e hanno effetti a valle. I valori dei campi nei frammenti esistenti non saranno più referenziati e lo schema dei dati esposto da GraphQL cambierà, influendo sulle applicazioni esistenti.
 
 ## Congratulazioni! {#congratulations}
 
-Congratulazioni, hai appena creato il tuo primo modello di frammento di contenuto!
+Congratulazioni, hai appena creato i tuoi primi modelli di frammenti di contenuto!
 
 ## Passaggi successivi {#next-steps}
 
 Nel capitolo successivo, [Authoring di modelli di frammenti di contenuto](author-content-fragments.md), puoi creare e modificare un nuovo frammento di contenuto basato su un modello di frammento di contenuto. Inoltre, verrà illustrato come creare varianti di frammenti di contenuto.
+
+## Documentazione correlata
+
+* [Modelli per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html)
+
