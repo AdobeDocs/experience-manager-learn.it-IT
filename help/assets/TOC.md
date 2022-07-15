@@ -7,7 +7,7 @@ team: TM
 source-git-commit: c6caa39075bc3c26dedeca4246e7e1f85887b124
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 25%
+ht-degree: 27%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 25%
    + [Profili di elaborazione](configuring/processing-profiles.md)
    + [Flussi di lavoro con avvio automatico](configuring/auto-start-workflows.md)
 
-+ Authoring{#authoring}
++ Authoring {#authoring}
    + [Navigazione](./authoring/navigation.md)
    + [Operazioni di base](./authoring/basic-operations.md)
    + [Metadati](./authoring/metadata.md)
@@ -155,7 +155,7 @@ ht-degree: 25%
    + [Configurare i modelli di risorse](asset-templates/asset-templates-technical-video-setup.md)
    + [Utilizzo dei cataloghi di risorse](asset-templates/asset-catalog-template-feature-video-use.md)
 
-+ Implementazione{#deployment}
++ Distribuzione{#deployment}
    + [Multi-tenancy e sviluppo simultaneo](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html)
++ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=it)

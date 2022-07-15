@@ -6,7 +6,7 @@ feature-set: Experience Manager Sites, Experience Manager
 source-git-commit: 6f930acd0b51c1f398be7a84efa99944dd3ce704
 workflow-type: tm+mt
 source-wordcount: '435'
-ht-degree: 26%
+ht-degree: 29%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 26%
    + [Assegnazione tag pagina](page-authoring/page-tagging-feature-video-use.md)
    + [Controllo delle versioni delle pagine](page-authoring/page-versioning-feature-video-use.md)
    + [Confronto delle versioni delle pagine](page-authoring/page-diff-feature-video-use.md)
-   + [Proprietà pagina  ](page-authoring/page-properties-feature-video-understand.md)
+   + [Proprietà pagina](page-authoring/page-properties-feature-video-understand.md)
    + [Operazioni pagina](page-authoring/page-operations-feature-video-use.md)
    + [Modalità Layout](page-authoring/responsive-layout-feature-video-understand.md)
    + [Pubblicazione](page-authoring/publication-management-feature-video-use.md)
@@ -34,7 +34,7 @@ ht-degree: 26%
    + [Lanci](page-authoring/launches.md)
 + Componenti {#components}
    + [Sviluppo di componenti](components/component-development.md)
-   + [Componenti core](components/core-components-feature-video-understand.md)
+   + [Componenti core ](components/core-components-feature-video-understand.md)
    + [Console Componenti](components/components-console-feature-video-use.md)
 + Frammenti di contenuto {#content-fragments}
    + [Authoring di frammenti di contenuto](content-fragments/content-fragments-feature-video-use.md)
@@ -48,7 +48,7 @@ ht-degree: 26%
 + Sviluppo {#developing}
    + [Archetipo progetto AEM](developing/aem-project-archetype.md)
    + [Guida introduttiva di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)
-   + [Guida introduttiva ad AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+   + [Guida introduttiva ad AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
    + [Guida introduttiva AEM Editor e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
    + [Guida introduttiva AEM editor e Angular di SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
    + [Estensione delle proprietà di una pagina](developing/page-properties-technical-video-develop.md)
@@ -73,7 +73,7 @@ ht-degree: 26%
 + Gestione multisito {#multi-site-management}
    + [Introduzione alla copia in lingua](./multi-site-management/language-copy-overview.md)
    + [Live Copy e blueprint](./multi-site-management/live-copy-and-blueprint.md)
-   + [Creare una Live Copy](./multi-site-management/create-live-copy.md)
+   + [Crea una Live Copy](./multi-site-management/create-live-copy.md)
    + [Gestire l’ereditarietà di una live copy su un componente](./multi-site-management/manage-component-inheritance-live-copy.md)
    + [Gestire l’ereditarietà di una live copy su una pagina](./multi-site-management/manage-page-inheritance-live-copy.md)
    + [Console di panoramica Live Copy](./multi-site-management/live-copy-overview-console.md)
