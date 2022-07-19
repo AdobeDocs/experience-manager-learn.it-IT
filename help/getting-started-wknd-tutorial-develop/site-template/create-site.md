@@ -1,6 +1,6 @@
 ---
 title: Creare un sito | Creazione rapida di siti AEM
-description: Come parte della Creazione rapida del sito, utilizza la Creazione guidata sito in Adobe Experience Manager, AEM, per generare un nuovo sito web. Il modello di sito standard fornito da Adobe viene utilizzato come punto di partenza per il nuovo sito.
+description: Scopri come utilizzare la procedura guidata Creazione sito per generare un nuovo sito Web. Il modello di sito standard fornito da Adobe è un punto di partenza per il nuovo sito.
 sub-product: sites
 version: Cloud Service
 type: Tutorial
@@ -11,10 +11,10 @@ level: Beginner
 kt: 7496
 thumbnail: KT-7496.jpg
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
-source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 0%
+source-wordcount: '914'
+ht-degree: 1%
 
 ---
 
@@ -78,7 +78,7 @@ La maggior parte dell’esercitazione verrà effettuata utilizzando il **Servizi
 Un modello di sito fornisce un punto di partenza per un nuovo sito. Un modello di sito include alcuni temi di base, modelli di pagina, configurazioni e contenuti di esempio. Esattamente ciò che è incluso nel modello di sito dipende dallo sviluppatore. L&#39;Adobe fornisce un **Modello di sito di base** accelerare le nuove implementazioni.
 
 1. Apri una nuova scheda del browser e passa al progetto Modello di sito di base su GitHub: [https://github.com/adobe/aem-site-template-standard](https://github.com/adobe/aem-site-template-standard). Il progetto è open-source e concesso in licenza per essere utilizzato da chiunque.
-1. Fai clic su **Versioni** e naviga fino al [ultima versione](https://github.com/adobe/aem-site-template-standard/releases/latest).
+1. Fai clic su **Versioni** e naviga fino al [ultima versione](https://github.com/adobe/aem-site-template-standard/releases/più recente).
 1. Espandi la **Risorse** e scarica il file zip modello:
 
    ![ZIP modello sito di base](assets/create-site/template-basic-zip-file.png)

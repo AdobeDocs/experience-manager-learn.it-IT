@@ -1,13 +1,13 @@
 ---
-title: Video e tutorial su AEM Sites
-description: Scopri di più su AEM con i nostri video e tutorial per Adobe Experience Manager Sites.
+title: Video ed esercitazioni di AEM Sites
+description: Scopri Experience Manager Sites dai nostri video e tutorial. Scopri le ultime novità in AEM Sites.
 sub-product: sites, content-services
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 25%
+source-wordcount: '354'
+ht-degree: 23%
 
 ---
 

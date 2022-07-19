@@ -1,6 +1,6 @@
 ---
 title: Comprendere frammenti di contenuto e frammenti esperienza
-description: I frammenti di contenuto e i frammenti esperienza di Adobe Experience Manager possono sembrare simili in superficie, ma ciascuno di essi svolge ruoli chiave in diversi casi d’uso. Scopri in che modo i frammenti di contenuto e i frammenti esperienza sono simili, diversi e quando e come utilizzarli.
+description: Scopri le somiglianze e le differenze tra Frammenti di contenuto e Frammenti esperienza, nonché quando e come utilizzare ciascun tipo.
 sub-product: assets, sites, content services
 feature: Content Fragments, Experience Fragments
 topics: headless
@@ -11,13 +11,13 @@ audience: all
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: ccbc68d1-a83e-4092-9a49-53c56c14483e
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 1%
+source-wordcount: '1016'
+ht-degree: 2%
 
 ---
-
 
 # Comprendere frammenti di contenuto e frammenti esperienza
 
@@ -31,11 +31,11 @@ I frammenti di contenuto e i frammenti esperienza di Adobe Experience Manager po
 <td><strong>Frammenti esperienza (XF)</strong></td>
 </tr><tr><td><strong>Definizione</strong></td>
 <td><ul>
-<li>Riutilizzabile, agnostico della presentazione <strong>content</strong>, composto da elementi di dati strutturati (testo, date, riferimenti, ecc.)</li>
+<li>Riutilizzabile, indipendente dalla presentazione <strong>content</strong>, composto da elementi di dati strutturati (testo, date, riferimenti, ecc.)</li>
 </ul>
 </td>
 <td><ul>
-<li>Un composito riutilizzabile di uno o più componenti AEM che definiscono i contenuti e le presentazioni che formano un'esperienza <strong>a1/&gt; che ha senso per sé</strong></li>
+<li>Un composito riutilizzabile di uno o più componenti AEM che definiscono il contenuto e la presentazione che costituiscono un <strong>esperienza</strong> che ha senso da solo</li>
 </ul>
 </td>
 </tr><tr><td><strong>Tenant principali</strong></td>
@@ -56,13 +56,13 @@ I frammenti di contenuto e i frammenti esperienza di Adobe Experience Manager po
 </tr><tr><td><strong>Dettagli tecnici</strong></td>
 <td><ul>
 <li>Implementato come <strong>dam:Asset</strong></li>
-<li>Definito da un <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-models.html?lang=en" target="_blank">modello di frammento di contenuto</a></li>
+<li>Definito da un <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-models.html?lang=en" target="_blank">Modello per frammento di contenuto</a></li>
 </ul>
 </td>
 <td><ul>
 <li>Implementato come <strong>cq:Page</strong></li>
 <li>Definiti dai modelli modificabili</li>
-<li>Rendering HTML nativo</li>
+<li>Rendering nativo di HTML</li>
 </ul>
 </td>
 </tr><tr><td><strong>Varianti</strong></td>
@@ -74,17 +74,17 @@ I frammenti di contenuto e i frammenti esperienza di Adobe Experience Manager po
 <td><ul>
 <li>Le varianti sono specifiche del canale o del contesto</li>
 <li>Le varianti vengono mantenute sincronizzate tramite AEM Live Copy</li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html" target="_blank">Creazione di contenuti </a> blocksallow riutilizzabili tra le varianti</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html" target="_blank">Blocchi di generazione</a> consentire il riutilizzo dei contenuti tra le varianti</li>
 </ul>
 </td>
 </tr><tr><td><strong>Funzioni</strong></td>
 <td><ul>
 <li>Varianti</li>
 <li>Versioni</li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=en#synchronizing-with-master" target="_blank"></a> Sincronizzazione del contenuto tra più varianti</li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-managing.html?lang=en#comparing-fragment-versions" target="_blank">Versioni dei frammenti di contenuto </a> a differenza visiva</li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=en#annotating-a-content-fragment" target="_blank"></a> Annotazioni di elementi di testo su più righe</li>
-<li>Riepilogo intelligente <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=en#summarizing-text" target="_blank"></a> di elementi di testo su più righe.</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=en#synchronizing-with-master" target="_blank">Sincronizzazione</a> di contenuto tra varianti</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-managing.html?lang=en#comparing-fragment-versions" target="_blank">Differf visivo</a> delle versioni dei frammenti di contenuto</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=en#annotating-a-content-fragment" target="_blank">Annotazioni</a> di elementi di testo su più righe</li>
+<li>Intelligente <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-variations.html?lang=en#summarizing-text" target="_blank">riepilogo</a> di elementi di testo su più righe.</li>
 <li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/creating-translation-projects-for-content-fragments.html?lang=en" target="_blank">Traduzione/localizzazione</a></li>
 </ul>
 </td>
@@ -98,17 +98,17 @@ I frammenti di contenuto e i frammenti esperienza di Adobe Experience Manager po
 <li>Traduzione/localizzazione</li>
 </ul>
 </td>
-</tr><tr><td><strong>Utilizzo</strong></td>
+</tr><tr><td><strong>Utilizzare</strong></td>
 <td><ul>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html" target="_blank">AEM componente Frammento di contenuto dei componenti core </a> da utilizzare in AEM Sites, AEM Screens o in Frammenti di esperienza.</li>
-<li>Esportazione JSON tramite <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en" target="_blank">AEM Content Services</a> per consumo di terze parti</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html" target="_blank">Componente Frammento di contenuto AEM componenti core</a> da utilizzare in AEM Sites, AEM Screens o in Frammenti esperienza.</li>
+<li>Esportazione JSON tramite <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en" target="_blank">AEM Content Services</a> per consumi di terze parti</li>
 <li>JSON tramite API di risorse HTTP AEM per l’utilizzo in terze parti.</li>
 </ul>
 </td>
 <td><ul>
 <li>AEM componente Frammento esperienza da utilizzare in AEM Sites, AEM Screens o altri frammenti esperienza.</li>
-<li>Esporta come <a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=en" target="_blank">HTML semplice</a> per l'utilizzo da parte di sistemi di terze parti</li>
-<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/experience-fragments-target.html?lang=en" target="_blank">Esportazione HTML in Adobe </a> Target per offerte mirate</li>
+<li>Esporta come <a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=en" target="_blank">HTML normale</a> per l'utilizzo da parte di sistemi di terze parti</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/experience-fragments-target.html?lang=en" target="_blank">Esportazione HTML in Adobe Target</a> per offerte mirate</li>
 <li>Esportazione JSON in Adobe Target per offerte mirate</li>
 </ul>
 </td>
@@ -144,26 +144,26 @@ Il diagramma seguente illustra l’architettura generale per i frammenti di cont
 
 !![Architettura dei frammenti di contenuto](./assets/content-fragments-architecture.png)
 
-+ **I** modelli di frammento di contenuto definiscono gli elementi (o campi) che definiscono quali contenuti possono essere acquisiti ed esposti dai frammenti di contenuto.
-+ Il **frammento di contenuto** è un&#39;istanza di un modello di frammento di contenuto che rappresenta un&#39;entità di contenuto logico.
-+ Tuttavia, i frammenti di contenuto **varianti** aderiscono al modello per frammenti di contenuto presentano varianti di contenuto.
++ **Modelli per frammenti di contenuto** definiscono gli elementi (o i campi) che definiscono il contenuto che il frammento di contenuto può acquisire ed esporre.
++ La **Frammento di contenuto** è un’istanza di un modello di frammento di contenuto che rappresenta un’entità di contenuto logico.
++ Frammento di contenuto **varianti** aderisci al modello per frammenti di contenuto, tuttavia, presenta varianti di contenuto.
 + I frammenti di contenuto possono essere esposti o utilizzati da:
-   + Utilizzo di frammenti di contenuto su **AEM Sites** (o AEM Screens) tramite il componente Frammento di contenuto AEM dei componenti core WCM.
-   + Incorporare un frammento di contenuto in un **Frammento esperienza** tramite il componente Frammento di contenuto dei componenti core di AEM WCM, da utilizzare in qualsiasi caso d’uso relativo ai frammenti esperienza.
-   + L’esposizione di un frammento di contenuto presenta contenuti come JSON tramite **AEM Content Services** e pagine API per casi d’uso in sola lettura.
-   + Esporre direttamente il contenuto dei frammenti di contenuto (tutte le varianti) come JSON tramite chiamate dirette ad AEM Assets tramite l’ **API HTTP AEM Assets** per i casi d’uso CRUD.
+   + Utilizzo di frammenti di contenuto in **AEM Sites** (o AEM Screens) tramite il componente Frammento di contenuto AEM dei componenti core WCM.
+   + Incorporazione di un frammento di contenuto in un **Frammento esperienza** tramite il componente Frammento di contenuto dei componenti core di AEM WCM, da utilizzare in qualsiasi caso d’uso relativo ai frammenti esperienza.
+   + Esposizione di contenuti di varianti di frammenti di contenuto come JSON tramite **AEM Content Services** e pagine API per casi d’uso in sola lettura.
+   + Esporre direttamente il contenuto dei frammenti di contenuto (tutte le varianti) come JSON tramite chiamate dirette ad AEM Assets tramite il **API HTTP AEM Assets** per i casi d’uso CRUD.
 
 ## Architettura dei frammenti esperienza
 
 !![Architettura dei frammenti esperienza](./assets/experience-fragments-architecture.png)
 
-+ **I modelli modificabili**, che a loro volta sono definiti da  **Tipi di modelli modificabili** e dall’implementazione **di un componente** AEM pagina, definiscono i componenti AEM consentiti che possono essere utilizzati per comporre un frammento esperienza.
-+ Il **Frammento esperienza** è un&#39;istanza di un modello modificabile che rappresenta un&#39;esperienza logica.
-+ Il frammento esperienza **varianti** aderisce al modello modificabile, tuttavia, presenta varianti di esperienza (contenuto e progettazione).
++ **Modelli modificabili**, che a loro volta sono definiti **Tipi di modelli modificabili** e **Implementazione del componente Pagina AEM**, definisci i componenti AEM consentiti che possono essere utilizzati per comporre un frammento esperienza.
++ La **Frammento esperienza** è un&#39;istanza di un modello modificabile che rappresenta un&#39;esperienza logica.
++ Frammento esperienza **varianti** aderisci al modello modificabile, tuttavia, presenta varianti di esperienza (contenuto e progettazione).
 + I frammenti esperienza possono essere esposti/utilizzati da:
    + Utilizzo di frammenti esperienza su AEM Sites (o AEM Screens) tramite il componente Frammento esperienza AEM.
-   + L’esposizione di un frammento esperienza presenta contenuti come JSON (con HTML incorporato) tramite **AEM Content Services** e pagine API.
-   + Esporre direttamente una variante del frammento esperienza come **&quot;HTML semplice&quot;**.
+   + Esposizione di un frammento esperienza varianti di contenuto come JSON (con HTML incorporato) tramite **AEM Content Services** e le pagine API.
+   + Esporre direttamente una variante del frammento esperienza come **&quot;HTML normale&quot;**.
    + Esportazione di frammenti esperienza in **Adobe Target** come offerte HTML o JSON.
    + AEM Sites supporta in modo nativo le offerte HTML, tuttavia le offerte JSON richiedono uno sviluppo personalizzato.
 
@@ -171,7 +171,7 @@ Il diagramma seguente illustra l’architettura generale per i frammenti di cont
 
 + [Guida utente sui frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en&amp;topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
 + [Utilizzo di frammenti di contenuto in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/content-fragments-feature-video-use.html?lang=en)
-+ [AEM componente Frammento di contenuto dei componenti core WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
++ [AEM componente Frammento di contenuto dei componenti core WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it)
 + [Utilizzo di frammenti di contenuto e AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=en)
 + [Guida introduttiva a AEM Content Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en)
 

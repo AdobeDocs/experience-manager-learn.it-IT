@@ -1,6 +1,6 @@
 ---
 title: Test di unità
-description: Questa esercitazione descrive l'implementazione di un unit test che convalida il comportamento del modello Sling del componente Byline, creato nell'esercitazione sui componenti personalizzati.
+description: Implementa un test di unità che convalida il comportamento del modello Sling del componente Byline, creato nell’esercitazione sui componenti personalizzati.
 sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
@@ -12,16 +12,16 @@ kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '3025'
+source-wordcount: '3020'
 ht-degree: 0%
 
 ---
 
 # Test di unità {#unit-testing}
 
-Questa esercitazione descrive l&#39;implementazione di un unit test che convalida il comportamento del modello Sling del componente Byline, creato nel [Componente personalizzato](./custom-component.md) esercitazione.
+Questa esercitazione descrive l&#39;implementazione di un test di unità che convalida il comportamento del modello Sling del componente Byline, creato nel [Componente personalizzato](./custom-component.md) esercitazione.
 
 ## Prerequisiti {#prerequisites}
 
@@ -66,7 +66,7 @@ Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/a
 1. Scopri i framework e gli strumenti comunemente utilizzati per testare il codice AEM.
 1. Comprendere le opzioni per schermare o simulare le risorse AEM durante la scrittura di unit test.
 
-## Sfondo {#unit-testing-background}
+## Informazioni di base {#unit-testing-background}
 
 In questa esercitazione verrà descritto come scrivere [Test di unità](https://en.wikipedia.org/wiki/Unit_testing) per il componente Byline [Modello Sling](https://sling.apache.org/documentation/bundles/models.html) (creato in [Creazione di un componente AEM personalizzato](custom-component.md)). I test di unità sono test di build-time scritti in Java che verificano il comportamento previsto del codice Java. Ogni unit test è generalmente di piccole dimensioni e convalida l&#39;output di un metodo (o unità di lavoro) in base ai risultati previsti.
 
