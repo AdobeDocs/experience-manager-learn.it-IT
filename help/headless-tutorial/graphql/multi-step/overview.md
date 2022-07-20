@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 879018d44cc63421d1c7185cce1c30fedbf526c9
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 4%
+source-wordcount: '440'
+ht-degree: 3%
 
 ---
 
@@ -52,8 +52,6 @@ Per completare questa esercitazione è necessario un ambiente Adobe Experience M
    * [Accesso a AEM as a Cloud Service e Cloud Manager](/help/cloud-service/accessing/overview.md)
       * **Amministratore AEM** accesso a AEM as a Cloud Service
       * **Cloud Manager - Sviluppatore** accesso a Cloud Manager
-* [SDK Quickstart AEM locale as a Cloud Service](/help/cloud-service/local-development-environment/aem-runtime.md).
-* [AEM 6.5.13+](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=it)
 
 ### Installare il contenuto di esempio {#install-sample-content}
 
@@ -65,6 +63,7 @@ Può essere utile che il contenuto di esempio sia già disponibile nell’ambien
 1. Dalla schermata iniziale AEM, passa a **Strumenti** > **Distribuzione** > **Pacchetti**:
 
    ![Naviga nel gestore dei pacchetti](assets/overview/navigate-package-manager.png)
+
 1. Tocca **Carica pacchetto** e scegli la `aem-guides-wknd-shared.ui.content-x.x.x.zip` precedentemente scaricato. Tocca **Ok** da caricare.
 1. Al termine del caricamento del pacchetto, tocca **Installa** per installare il contenuto.
 
