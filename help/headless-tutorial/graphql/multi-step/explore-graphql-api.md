@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 410eb23534e083940bf716194576e099d22ca205
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1532'
 ht-degree: 7%
 
 ---
@@ -56,9 +56,9 @@ Si tratta di un tutorial in più parti e si presume che i passaggi descritti in 
 
    >[!NOTE]
    >
-   > È inoltre possibile creare un endpoint globale per l’abilitazione delle query sui modelli in più progetti. Ad esempio, se desideri combinare una query che coinvolge i modelli nel **WKND condiviso** e **Progetto personale**. Questo dovrebbe essere utilizzato con cautela e solo se necessario in quanto apre potenzialmente l’ambiente a ulteriori vulnerabilità di sicurezza.
+   > È inoltre possibile creare un endpoint globale per abilitare le query sui modelli in più configurazioni. Questo dovrebbe essere utilizzato con cautela in quanto potrebbe aprire l’ambiente a ulteriori vulnerabilità di sicurezza e aggiungere alla complessità complessiva nella gestione dei AEM.
 
-1. Ora dovresti vedere due endpoint GraphQL abilitati nel tuo ambiente (supponendo di aver installato il contenuto condiviso WKND).
+1. Ora dovresti vedere un endpoint GraphQL abilitato nel tuo ambiente.
 
    ![Endpoint graphql abilitati](assets/explore-graphql-api/enabled-graphql-endpoints.png)
 
@@ -76,11 +76,11 @@ Quindi, scopri la potenza dell’API GraphQL AEM utilizzando l’IDE GraphiQL in
    >
    > Per le versioni precedenti di AEM l&#39;IDE GraphiQL potrebbe non essere incorporato. Può essere installato manualmente seguendo questi [istruzioni](#install-graphiql).
 
-1. Nell&#39;angolo in alto a destra impostare la **Endpoint** a **Endpoint progetto personale**.
+1. Nell&#39;angolo in alto a destra assicurati che il **Endpoint** è impostato su **Endpoint progetto personale**.
 
    ![Imposta endpoint GraphQL](assets/explore-graphql-api/set-my-project-endpoint.png)
 
-   In questo modo tutte le query verranno estese ai modelli creati nella **Progetto personale** progetto. Tieni presente che esiste anche un endpoint per **WKND condiviso**.
+In questo modo tutte le query verranno estese ai modelli creati nella **Progetto personale** progetto.
 
 ### Query di un elenco di frammenti di contenuto {#query-list-cf}
 
@@ -370,16 +370,28 @@ Successivamente, persistono due semplici query, che verranno utilizzate nel capi
 
    ![Query persistenti finali](assets/explore-graphql-api/final-persisted-queries.png)
 
+
+## Pubblica endpoint GraphQL e query persistenti
+
+Al momento della revisione e della verifica, pubblica il `GraphQL Endpoint` &amp; `Persisted Queries`
+
+1. Dalla schermata iniziale AEM passare a **Strumenti** > **Generale** > **GraphQL**.
+
+1. Tocca la casella di controllo accanto a **Endpoint progetto personale** e toccare **Pubblica**
+
+   ![Pubblica endpoint GraphQL](assets/explore-graphql-api/publish-graphql-endpoint.png)
+
+1. Dalla schermata iniziale AEM passare a **Strumenti** > **Generale** > **Editor query GraphQL**
+
+1. Tocca *all-team* dal pannello Query persistenti e tocca **Pubblica**
+
+   ![Pubblicare query persistenti](assets/explore-graphql-api/publish-persisted-query.png)
+
+1. Ripeti il passaggio precedente per `person-by-name` query
+
 ## File della soluzione {#solution-files}
 
 Scarica il contenuto, i modelli e le query permanenti create negli ultimi tre capitoli: [tutorial-solution-content.zip](assets/explore-graphql-api/tutorial-solution-content.zip)
-
-## Esplora query persistenti WKND (facoltativo) {#explore-wknd-content-fragments}
-
-Se [è stato installato il contenuto di esempio condiviso WKND](./overview.md#install-sample-content) puoi rivedere ed eseguire query persistenti come avventure-all, avventura-per-attività, avventura-per-path, ecc.
-
-![Query persistenti WKND](assets/explore-graphql-api/wknd-persisted-queries.png)
-
 
 ## Risorse aggiuntive
 

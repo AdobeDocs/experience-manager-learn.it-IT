@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 410eb23534e083940bf716194576e099d22ca205
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1134'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Puoi anche creare un tuo modello seguendo i passaggi di base e modificando i ris
 
 ## Prerequisiti {#prerequisites}
 
-Si tratta di un tutorial in più parti e si presume che un [AEM’ambiente di authoring è disponibile](./overview.md#prerequisites) e facoltativamente [Contenuto di esempio condiviso WKND installato](./overview.md#install-sample-content).
+Si tratta di un tutorial in più parti e si presume che un [AEM’ambiente di authoring è disponibile](./overview.md#prerequisites)
 
 ## Obiettivi {#objectives}
 
@@ -39,7 +39,7 @@ Si tratta di un tutorial in più parti e si presume che un [AEM’ambiente di au
 
 Una configurazione di progetto contiene tutti i modelli di frammento di contenuto associati a un particolare progetto e fornisce un mezzo per organizzare i modelli. È necessario creare almeno un progetto **prima** creazione di un nuovo modello per frammenti di contenuto.
 
-1. Accedi al AEM **Autore** ambiente.
+1. Accedi al AEM **Autore** ambiente (es. `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
 1. Dalla schermata iniziale AEM, passa a **Strumenti** > **Generale** > **Browser di configurazione**.
 
    ![Passa al browser di configurazione](assets/content-fragment-models/navigate-config-browser.png)
@@ -65,7 +65,6 @@ Crea un nuovo modello per un **Persona**, che è il modello dati che rappresenta
 
    ![Passa a Modelli di frammenti di contenuto](assets/content-fragment-models/navigate-cf-models.png)
 
-   Se hai installato [contenuto di esempio](overview.md#install-sample-content) vengono visualizzate due cartelle: **Progetto personale** e **WKND condiviso**.
 1. Passa a **Progetto personale** cartella.
 1. Tocca **Crea** nell&#39;angolo in alto a destra per visualizzare **Crea modello** procedura guidata.
 1. Per **Titolo modello** immetti: **Persona** e toccare **Crea**.
@@ -165,23 +164,23 @@ Crea un nuovo modello per un **Team**, che è il modello dati per un team di per
 
    ![Due modelli](assets/content-fragment-models/two-new-models.png)
 
-## Inspect i modelli di frammenti di contenuto WKND (facoltativo)
+## Pubblica configurazione progetto e modelli di frammenti di contenuto
 
-Se [è stato installato il contenuto di esempio condiviso WKND](./overview.md#install-sample-content) puoi controllare i modelli Avventura, Articolo e Autore per ottenere più idee sulle tecniche di modellazione dei dati.
+Al momento della revisione e della verifica, pubblica il `Project Configuration` &amp; `Content Fragment Model`
 
-1. Da **Inizio AEM** menu vai a **Strumenti** > **Generale** > **Modelli per frammenti di contenuto**.
+1. Dalla schermata iniziale AEM, passa a **Strumenti** > **Generale** > **Browser di configurazione**.
 
-1. Passa a **WKND condiviso** e dovresti vedere tre modelli: Articolo, Avventura e Autore.
+1. Tocca la casella di controllo accanto a **Progetto personale** e toccare **Pubblica**
 
-1. Passa il puntatore del mouse sulla scheda e tocca l’icona Modifica (a forma di matita)
+   ![Pubblica configurazione progetto](assets/content-fragment-models/publish-project-config.png)
 
-   ![Modelli WKND](assets/content-fragment-models/wknd-shared-models.png)
+1. Dalla schermata iniziale AEM, passa a **Strumenti** > **Generale** > **Modelli per frammenti di contenuto**.
 
-1. Viene aperta la **Editor modello frammento di contenuto** per il modello e puoi controllare i vari tipi di dati utilizzati.
+1. Passa a **Progetto personale** cartella.
 
-   >[!CAUTION]
-   >
-   > Modifica del modello **dopo** I frammenti di contenuto sono stati creati e hanno effetti a valle. I valori dei campi nei frammenti esistenti non saranno più referenziati e lo schema dei dati esposto da GraphQL cambierà, influendo sulle applicazioni esistenti.
+1. Tocca **Persona** e **Team** modelli e tocca **Pubblica**
+
+   ![Pubblicare modelli di frammenti di contenuto](assets/content-fragment-models/publish-content-fragment-model.png)
 
 ## Congratulazioni! {#congratulations}
 

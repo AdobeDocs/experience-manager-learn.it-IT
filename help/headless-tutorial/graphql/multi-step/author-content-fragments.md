@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 410eb23534e083940bf716194576e099d22ca205
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '819'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ I frammenti di contenuto sono memorizzati in cartelle in AEM Assets. Per creare 
 
    ![Modelli di frammenti di contenuto consentiti](assets/author-content-fragments/allowed-content-fragment-models.png)
 
-   Questi criteri verranno ereditati automaticamente da qualsiasi sottocartella e possono essere ignorati. Puoi anche consentire i modelli tramite tag o abilitare i modelli da altre configurazioni di progetto (come WKND Shared). Questo meccanismo offre un modo efficace di gestire la gerarchia dei contenuti.
+   Questi criteri verranno ereditati automaticamente da qualsiasi sottocartella e possono essere ignorati. Puoi anche consentire modelli per tag o abilitare modelli per altre configurazioni di progetto. Questo meccanismo offre un modo efficace di gestire la gerarchia dei contenuti.
 
 1. Tocca **Salva e chiudi** per salvare le modifiche apportate alle proprietà della cartella.
 
@@ -121,17 +121,9 @@ Successivamente, compila i frammenti appena creati con i dati.
 
    ![Apri frammento di contenuto](assets/author-content-fragments/open-fragment-for-editing.png)
 
-1. L’Editor frammento di contenuto contiene un modulo basato sul modello Frammento di contenuto . Compila i vari campi per aggiungere contenuto al **John Doe** frammento. Per Immagine profilo, puoi scegliere una delle immagini in WKND Shared o caricare la tua immagine in AEM Assets.
+1. L’Editor frammento di contenuto contiene un modulo basato sul modello Frammento di contenuto . Compila i vari campi per aggiungere contenuto al **John Doe** frammento. Per Immagine profilo, carica la tua immagine in AEM Assets.
 
    ![Editor frammento di contenuto](assets/author-content-fragments/content-fragment-editor-jd.png)
-
-1. Avanti, tocca **Crea variante** nella barra a sinistra. Nella finestra di dialogo aggiungi il tipo in **Alternativo** per il nome della variante.
-
-1. Modificare alcuni degli elementi nel **Alternativo** variazione.
-
-   ![Versione alternativa](assets/author-content-fragments/alternate-variation-john-doe-fragment.png)
-
-   La funzione Variante consente agli autori di creare versioni diverse dello stesso frammento di contenuto. Può essere utilizzato per fornire una versione di riepilogo di un articolo longform. Per impostazione predefinita, un singolo **Master** La variante viene creata. Gli elementi di campo di testo a più righe di una variante possono essere sincronizzati con la variante principale.
 
 1. Tocca **Salva e chiudi** per salvare le modifiche apportate al frammento John Doe.
 1. Torna all’interfaccia utente dei frammenti di contenuto e apri le **Alison Smith** file da modificare.
@@ -151,11 +143,17 @@ Successivamente, compila i frammenti appena creati con i dati.
 
 1. Tocca **Salva e chiudi** per salvare le modifiche al frammento Alfa team.
 
-## Esplorare i frammenti di contenuto WKND (facoltativo) {#explore-wknd-content-fragments}
+## Pubblicare frammenti di contenuto
 
-Se [è stato installato il contenuto di esempio condiviso WKND](./overview.md#install-sample-content) puoi controllare i frammenti di contenuto per i modelli Avventure, Articoli e Autori per ottenere ulteriori idee sulla creazione di contenuti.
+Dopo la revisione e la verifica, pubblica l’autore `Content Fragments`
 
-![Frammenti di contenuto WKND](assets/author-content-fragments/wknd-content-fragments.png)
+1. Dalla schermata iniziale AEM **Frammenti di contenuto** per aprire l’interfaccia utente Frammenti di contenuto .
+
+1. Nella barra a sinistra espandi **Progetto personale** e toccare **Inglese**.
+
+1. Tocca la casella di controllo accanto ai frammenti di contenuto e tocca **Pubblica**
+
+   ![Pubblica frammento di contenuto](assets/author-content-fragments/publish-content-fragment.png)
 
 ## Congratulazioni! {#congratulations}
 
