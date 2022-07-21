@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 52587c1131620d62428ecfc464a97dce00d8a1d8
+source-git-commit: c061ea9d08606052c4b2cf5b3c84d6f1df5a57fa
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '440'
 ht-degree: 1%
 
 ---
@@ -114,14 +114,16 @@ Ogni stagione varia in lunghezza e sarà rilasciata su un programma fisso. Gli a
   </tr>
 <tr>
    <td>
-            <img alt="Correggi il tuo... Riscrittura" src="./imgs/coming-soon.png"/>
+           <a href="season-2/cloud5-fix-your-rewrites.md">
+               <img alt="Correggi le riscritture" src="./imgs/s2/006-thumb.png"/>
+            </a>
       <div>
-            <strong>Correggi il tuo... Riscrittura</strong>
+            <a href="season-2/cloud5-fix-your-rewrites.md"><strong>Correggi il tuo... Riscrittura</strong></a>
          <br/><em>con Darin Kuntze e James Talbot, architetti senior di cloud</em>
       </div>
       <p>
         <br/>
-         Disponibile dal 22 luglio 2022
+         Informazioni rapide sulle cose che aiuteranno ad accelerare lo sviluppo di riscrittura e l'ottimizzazione su AEM as a Cloud Service.
       </p>
      </td>   
      <td>
