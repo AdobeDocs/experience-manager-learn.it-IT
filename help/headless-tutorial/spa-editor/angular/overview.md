@@ -1,6 +1,6 @@
 ---
 title: Guida introduttiva ad AEM SPA Editor e Angular
-description: Crea la prima applicazione a pagina singola Angular modificabile in Adobe Experience Manager (AEM) con l’applicazione a pagina singola WKND. Scopri come creare un’applicazione a pagina singola utilizzando la piattaforma JS di Angular con l’editor per applicazioni a pagina singola di AEM. Questo tutorial in più parti illustra l’implementazione di un’applicazione Angular per un brand lifestyle fittizio, WKND. Il tutorial descrive tutte le fasi di creazione dell’applicazione a pagina singola, e l’integrazione con AEM.
+description: Crea la prima applicazione a pagina singola Angular modificabile in Adobe Experience Manager (AEM) con l’applicazione a pagina singola WKND.
 sub-product: sites
 topics: development
 version: Cloud Service
@@ -14,10 +14,10 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: f2cf4063-0b08-4b4f-91e6-70e5a148f931
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 825124bc6c3be10e6822fb5fb8bd9645d242da76
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 23%
+source-wordcount: '649'
+ht-degree: 18%
 
 ---
 
