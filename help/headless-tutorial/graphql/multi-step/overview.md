@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: 410eb23534e083940bf716194576e099d22ca205
+source-git-commit: 93d50e79853429f420803c28807ee8018d0ff78f
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '298'
 ht-degree: 4%
 
 ---
@@ -46,15 +46,11 @@ Per seguire questa esercitazione, è necessario quanto segue:
 
 ### Ambiente AEM
 
-Per completare questa esercitazione è necessario un ambiente Adobe Experience Manager. È possibile utilizzare una delle seguenti opzioni (le schermate vengono registrate da un ambiente AEM as a Cloud Service):
-
-* AEM ambiente as a Cloud Service con:
-   * [Accesso a AEM as a Cloud Service e Cloud Manager](/help/cloud-service/accessing/overview.md)
-      * **Amministratore AEM** accesso a AEM as a Cloud Service
+Per completare questa esercitazione, si consiglia AEM l’accesso dell’amministratore a un ambiente as a Cloud Service AEM.  Se non hai accesso a AEM ambiente as a Cloud Service, puoi utilizzare la [SDK Quickstart AEM locale as a Cloud Service](/help/cloud-service/local-development-environment/aem-runtime.md). Tuttavia, è importante tenere presente che alcune schermate dell’interfaccia utente del prodotto, come la navigazione nei frammenti di contenuto, saranno diverse.
 
 ## Cominciamo!
 
-1. Avvia l&#39;esercitazione con [Definizione dei modelli di frammenti di contenuto](content-fragment-models.md).
+Avvia l&#39;esercitazione con [Definizione dei modelli di frammenti di contenuto](content-fragment-models.md).
 
 ## Progetto GitHub
 
