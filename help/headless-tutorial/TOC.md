@@ -6,10 +6,10 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '238'
+ht-degree: 21%
 
 ---
 
@@ -44,15 +44,27 @@ ht-degree: 0%
       + [3 - Esplorare AEM API GraphQL](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
       + [4 - Query GraphQL persistenti](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
       + [5 - Integrazione delle applicazioni client](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
-   + Come fare per {#how-to}
-      + [Rich Text Format (RTF)](./graphql/how-to/rich-text.md)
-      + [Immagini](./graphql/how-to/images.md)
-      + [Contenuto localizzato](./graphql/how-to/localized-content.md)
-      + [AEM Headless SDK](./graphql/how-to/aem-headless-sdk.md)
++ Implementazioni{#deployments}
+   + [Panoramica](./graphql/deployment/overview.md)
+   + [App a pagina singola](./graphql/deployment/spa.md)
+   + [Componente Web](./graphql/deployment/web-component.md)
+   + [Mobile](./graphql/deployment/mobile.md)
+   + [Server-to-server](./graphql/deployment/server-to-server.md)
+   + Configurazioni{#configurations}
+      + [Host AEM](./graphql/deployment/configurations/aem-hosts.md)
+      + [CORS](./graphql/deployment/configurations/cors.md)
+      + [Filtri del Dispatcher](./graphql/deployment/configurations/dispatcher-filters.md)
++ Come fare per {#how-to}
+   + [Rich Text Format (RTF)](./graphql/how-to/rich-text.md)
+   + [Immagini](./graphql/how-to/images.md)
+   + [Contenuto localizzato](./graphql/how-to/localized-content.md)
+   + [AEM Headless SDK](./graphql/how-to/aem-headless-sdk.md)
    + Esempi {#example-apps}
       + [Reagire](./graphql/example-apps/react-app.md)
+      + [Componente Web](./graphql/example-apps/web-component.md)
       + [iOS](./graphql/example-apps/ios-swiftui-app.md)
       + [Android](./graphql/example-apps/android-app.md)
+      + [Server-to-server](./graphql/example-apps/server-to-server-app.md)
 + Editor SPA{#spa-editor}
    + Reagire{#react}
       + [Panoramica](./spa-editor/react/overview.md)
