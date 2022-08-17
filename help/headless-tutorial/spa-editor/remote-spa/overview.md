@@ -1,25 +1,25 @@
 ---
 title: Guida introduttiva SPA Editor e SPA remoto - Panoramica
 description: Ti diamo il benvenuto nell’esercitazione in più parti per gli sviluppatori che desiderano estendere un SPA remoto esistente con contenuto AEM modificabile tramite AEM Editor.
-topic: Senza testa, SPA, Sviluppo
-feature: Editor SPA, componenti core, API, sviluppo
+topic: Headless, SPA, Development
+feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
 kt: 7630
 thumbnail: 333272.jpeg
-source-git-commit: cede0c97e0f322fe5d20d5c4f685ed10b90af1d4
+exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
+source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 6%
+source-wordcount: '693'
+ht-degree: 8%
 
 ---
-
 
 # Panoramica
 
 Ti diamo il benvenuto nell’esercitazione in più parti per gli sviluppatori che desiderano potenziare un SPA remoto basato su React (o Next.js) esistente con contenuto AEM modificabile utilizzando AEM SPA Editor.
 
-Questa esercitazione si basa sull’ [app GraphQL WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html), un’app React che consuma AEM contenuto di frammenti di contenuto rispetto AEM API GraphQL, ma non fornisce alcuna creazione contestuale di contenuto SPA.
+Questa esercitazione si basa sul [App GraphQL WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it), un’app React che consuma AEM contenuto Frammento di contenuto rispetto AEM API GraphQL, tuttavia non fornisce alcuna creazione contestuale di contenuto SPA.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333272/?quality=12&learn=on)
 
@@ -29,44 +29,44 @@ L’esercitazione ha lo scopo di illustrare come è possibile aggiornare un SPA 
 
 La maggior parte delle attività nell&#39;esercitazione si concentra sullo sviluppo JavaScript, tuttavia vengono trattati aspetti critici che ruotano intorno a AEM. Questi aspetti includono la definizione della posizione in cui il contenuto viene creato e memorizzato in AEM e la mappatura SPA percorsi alle pagine AEM.
 
-L’esercitazione è progettata per funzionare con **AEM come Cloud Service** ed è composta da due progetti:
+L’esercitazione è progettata per lavorare con **AEM as a Cloud Service** ed è composto da due progetti:
 
-1. Il __AEM Project__ contiene la configurazione e il contenuto da distribuire in AEM.
-1. __WKND__ Appproject è il SPA da integrare con AEM Editor SPA
+1. La __Progetto AEM__ contiene la configurazione e il contenuto da distribuire a AEM.
+1. __App WKND__ progetto è il SPA da integrare con AEM editor SPA
 
 ## Codice più recente
 
-+ Il codice di questa esercitazione si trova su [GitHub](https://github.com/adobe/aem-guides-wknd-graphql) nel ramo `feature/spa-editor`.
++ Il codice di questa esercitazione è disponibile in [GitHub](https://github.com/adobe/aem-guides-wknd-graphql) sulla `feature/spa-editor` ramo.
 
 ## Prerequisiti
 
 Questa esercitazione richiede quanto segue:
 
 + [SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en)
-+ [Node.js v14+](https://nodejs.org/it/)
-+ [npm v7+](https://www.npmjs.com/)
++ [Node.js v16+](https://nodejs.org/it/)
++ [npm v8+](https://www.npmjs.com/)
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
-+ [aem-guides-wknd.all.0.3.0.zip o versione successiva](https://github.com/adobe/aem-guides-wknd/releases)
-+ [codice sorgente aem-guides-wknd-graphql](https://github.com/adobe/aem-guides-wknd-graphql)
++ [aem-guides-wknd.all-2.1.0.zip o versione successiva](https://github.com/adobe/aem-guides-wknd/releases)
++ [codice sorgente aem-guides-wknd-graphql (ramo: funzionalità/editor-spa)](https://github.com/adobe/aem-guides-wknd-graphql/tree/feature/spa-editor)
 
 Questa esercitazione presuppone:
 
-+ [Microsoft® Visual Studio ](https://visualstudio.microsoft.com/) Code come IDE
++ [Codice Microsoft® Visual Studio](https://visualstudio.microsoft.com/) come IDE
 + Una directory di lavoro di `~/Code/wknd-app`
-+ Esecuzione dell&#39;SDK AEM come servizio Author su `http://localhost:4502`
-+ Esecuzione dell&#39;SDK AEM con l&#39;account locale `admin` con password `admin`
++ Esecuzione dell’SDK AEM come servizio Author in `http://localhost:4502`
++ Esecuzione dell&#39;SDK AEM con il locale `admin` account con password `admin`
 + Esecuzione del SPA su `http://localhost:3000`
 
 >[!NOTE]
 >
-> **Hai bisogno di aiuto per configurare l’ambiente di sviluppo locale?** Consulta la [seguente guida per configurare un ambiente di sviluppo locale utilizzando SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+> **Hai bisogno di aiuto per configurare l’ambiente di sviluppo locale?** Consulta la [seguente guida per configurare un ambiente di sviluppo locale utilizzando SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it).
 
 
 ## Configurazione rapida
 
-Configurazione rapida ti permette di iniziare a usare l’SPA dell’app WKND e l’editor SPA di AEM in 15 minuti. Questa configurazione accelerata consente di passare direttamente allo stato finale dell’esercitazione, consentendoti di esplorare la creazione del SPA in AEM Editor SPA.
+Configurazione rapida ti permette di iniziare a usare l’SPA dell’app WKND e l’editor SPA di AEM in 15 minuti. Questa configurazione accelerata ti porta direttamente allo stato finale dell’esercitazione, consentendoti di esplorare la creazione del SPA in AEM Editor SPA.
 
 + [Informazioni sulla configurazione rapida](./quick-setup.md)
 
@@ -102,6 +102,6 @@ Infine, utilizzare i concetti illustrati nei capitoli precedenti per tracciare p
 
 ## Altro materiale di riferimento
 
-+ [Modifica di un SPA esterno in documenti AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/hybrid/editing-external-spa.html)
++ [Modifica di un SPA esterno in documenti AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/editing-external-spa.html)
 + [AEM componenti WCM - Implementazione di React Core](https://www.npmjs.com/package/@adobe/aem-core-components-react-base)
 + [AEM componenti WCM - Editor Spa - Implementazione react Core](https://www.npmjs.com/package/@adobe/aem-core-components-react-spa)

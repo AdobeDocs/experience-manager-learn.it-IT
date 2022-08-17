@@ -1,19 +1,19 @@
 ---
 title: Aggiungere componenti fissi modificabili a un SPA remoto
 description: Scopri come aggiungere componenti fissi modificabili a un SPA remoto.
-topic: Senza testa, SPA, Sviluppo
-feature: Editor SPA, componenti core, API, sviluppo
+topic: Headless, SPA, Development
+feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
 kt: 7634
 thumbnail: kt-7634.jpeg
-source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
+exl-id: edd18f2f-6f24-4299-a31a-54ccc4f6d86e
+source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '511'
 ht-degree: 1%
 
 ---
-
 
 # Componenti fissi modificabili
 
@@ -25,22 +25,22 @@ In questo capitolo, sostituiamo il titolo della visualizzazione Home, &quot;Curr
 
 ## Aggiornare l’app WKND
 
-Per aggiungere un componente Fisso alla visualizzazione Home:
+Per aggiungere una __Fisso__ nella vista Home:
 
 + Importa il componente Titolo componente di base AEM React e lo registra nel tipo di risorsa del titolo del progetto
 + Posiziona il componente Titolo modificabile nella vista Home SPA
 
 ### Importa nel componente Titolo del componente di base AEM React
 
-Nella vista Home SPA, sostituisci il testo hardcoded `<h2>Current Adventures</h2>` con il componente Titolo dei componenti core React AEM. Prima di poter utilizzare il componente Titolo , è necessario:
+Nella vista Home SPA, sostituisci il testo hardcoded `<h2>Current Adventures</h2>` con il componente Titolo AEM React Core Components’. Prima di poter utilizzare il componente Titolo , è necessario:
 
 1. Importa il componente Titolo da `@adobe/aem-core-components-react-base`
-1. Registralo utilizzando `withMappable` in modo che gli sviluppatori possano inserirlo nel SPA
-1. Inoltre, registra con `MapTo` in modo che possa essere utilizzato in [componente contenitore in un secondo momento](./spa-container-component.md).
+1. Registralo utilizzando `withMappable` in modo che gli sviluppatori possano inserirla nel SPA
+1. Inoltre, registrati con `MapTo` può essere utilizzato in [componente contenitore in seguito](./spa-container-component.md).
 
-Per effettuare ciò:
+Per effettuare questo collegamento:
 
-1. Apri il progetto di SPA remota all&#39;indirizzo `~/Code/wknd-app/aem-guides-wknd-graphql/react-app` nell&#39;IDE
+1. Apri progetto di SPA remoto in `~/Code/wknd-app/aem-guides-wknd-graphql/react-app` nell’IDE
 1. Crea un componente React in `react-app/src/components/aem/AEMTitle.js`
 1. Aggiungi il codice seguente a `AEMTitle.js`.
 
@@ -72,7 +72,7 @@ Per effettuare ciò:
 
 Leggi i commenti del codice per i dettagli di implementazione.
 
-Il file `AEMTitle.js` deve essere simile al seguente:
+La `AEMTitle.js` dovrebbe essere simile a:
 
 ![AEMTitle.js](./assets/spa-fixed-component/aem-title-js.png)
 
@@ -80,8 +80,8 @@ Il file `AEMTitle.js` deve essere simile al seguente:
 
 Ora che il componente Titolo del componente core React AEM è registrato e disponibile per l’uso nell’app React, sostituisci il testo del titolo codificato nella vista Home.
 
-1. Modifica `react-app/src/App.js`
-1. nel `Home()` in basso, sostituisci il titolo codificato con il nuovo componente `AEMTitle`:
+1. Modifica `react-app/src/Home.js`
+1. In `Home()` in basso, sostituisci il titolo hardcoded con il nuovo `AEMTitle` componente:
 
    ```
    <h2>Current Adventures</h2>
@@ -95,11 +95,11 @@ Ora che il componente Titolo del componente core React AEM è registrato e dispo
        itemPath='root/title'/>
    ```
 
-   Aggiorna `Apps.js` con il seguente codice:
+   Aggiorna `Home.js` con il seguente codice:
 
    ```
    ...
-   import { AEMTitle } from './components/aem/AEMTitle';
+   import { AEMTitle } from './aem/AEMTitle';
    ...
    function Home() {
        return (
@@ -115,18 +115,18 @@ Ora che il componente Titolo del componente core React AEM è registrato e dispo
    }
    ```
 
-Il file `Apps.js` deve essere simile al seguente:
+La `Home.js` dovrebbe essere simile a:
 
-![App.js](./assets/spa-fixed-component/app-js.png)
+![Home.js](./assets/spa-fixed-component/home-js.png)
 
 ## Creare il componente Titolo in AEM
 
 1. Accedi ad AEM Author
-1. Passa a __Siti > App WKND__
-1. Tocca __Home__ e seleziona __Modifica__ dalla barra delle azioni superiore
-1. Seleziona __Modifica__ dal selettore della modalità di modifica in alto a destra nell’Editor pagina
+1. Passa a __Sites > App WKND__
+1. Tocca __Pagina principale__ e seleziona __Modifica__ dalla barra delle azioni superiore
+1. Seleziona __Modifica__ dal selettore della modalità di modifica in alto a destra dell’Editor pagina
 1. Passa il puntatore del mouse sul testo del titolo predefinito sotto il logo WKND e sopra l’elenco delle avventure, fino a quando non viene visualizzata la struttura di modifica blu
-1. Tocca per esporre la barra delle azioni del componente, quindi tocca la chiave __chiave__ per modificare
+1. Tocca per esporre la barra delle azioni del componente, quindi tocca __chiave__  per modificare
 
    ![Barra delle azioni del componente titolo](./assets/spa-fixed-component/title-action-bar.png)
 
@@ -138,7 +138,7 @@ Il file `Apps.js` deve essere simile al seguente:
 
 1. Tocca __Fine__ per salvare
 1. Anteprima delle modifiche in AEM Editor SPA
-1. Aggiorna l&#39;app WKND in esecuzione localmente su [http://localhost:3000](Http://localhost:3000) e osserva le modifiche al titolo create immediatamente applicate.
+1. Aggiorna l’app WKND in esecuzione localmente su [http://localhost:3000](Http://localhost:3000) e vedere le modifiche al titolo create immediatamente applicate.
 
    ![Componente titolo in SPA](./assets/spa-fixed-component/title-final.png)
 
@@ -153,4 +153,4 @@ Hai aggiunto un componente fisso e modificabile all’app WKND. Ora sai come:
 
 ## Passaggi successivi
 
-I passaggi successivi sono [aggiungere un componente contenitore AEM ResponsiveGrid](./spa-container-component.md) al SPA che consente all&#39;autore di aggiungere e modificare componenti al SPA!
+I passaggi successivi sono i seguenti: [aggiungi un componente contenitore AEM responsiveGrid](./spa-container-component.md) al SPA che consente all’autore di aggiungere e modificare componenti al SPA.
