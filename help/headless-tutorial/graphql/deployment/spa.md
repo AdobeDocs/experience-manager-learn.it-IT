@@ -9,9 +9,9 @@ level: Intermediate
 kt: 10587
 thumbnail: KT-10587.jpg
 mini-toc-levels: 2
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '612'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 # Implementazioni di AEM Headless SPA
 
 
-Le implementazioni delle app (SPA) a pagina singola AEM headless coinvolgono applicazioni basate su JavaScript create utilizzando framework come React, Vue o Angular, che utilizzano e interagiscono con i contenuti in AEM in modo headless.
+Le implementazioni delle app (SPA) a pagina singola AEM headless coinvolgono applicazioni basate su JavaScript create utilizzando framework come React o Vue, che utilizzano e interagiscono con i contenuti in AEM in modo headless.
 
 La distribuzione di un SPA che interagisce AEM in modo headless comporta l’hosting del SPA e la sua accessibilità tramite un browser web.
 
