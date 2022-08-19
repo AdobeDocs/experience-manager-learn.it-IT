@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9353
 thumbnail: KT-9353.jpeg
 exl-id: 5f919d7d-e51a-41e5-90eb-b1f6a9bf77ba
-source-git-commit: 8da6d5470c702620ee1121fd2688eb8756f0cebd
+source-git-commit: d6eddceb3f414e67b5b6e3fba071cd95597dc41c
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -25,12 +25,14 @@ Poiché (la maggior parte) i servizi di posta non vengono eseguiti tramite HTTP/
 + `smtp.host` è impostato sulla variabile di ambiente OSGi `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` quindi viene instradato attraverso l&#39;uscita.
    + `$[env:AEM_PROXY_HOST]` è una variabile riservata che AEM as a Cloud Service viene mappata sul valore interno `proxy.tunnel` host.
    + NON tentare di impostare `AEM_PROXY_HOST` tramite Cloud Manager.
-+ `smtp.port` è impostato su `portForward.portOrig` porta mappata all&#39;host e alla porta del servizio e-mail di destinazione. Questo esempio utilizza la mappatura: `AEM_PROXY_HOST:30002` → `smtp.sendgrid.com:465`.
++ `smtp.port` è impostato su `portForward.portOrig` porta mappata all&#39;host e alla porta del servizio e-mail di destinazione. Questo esempio utilizza la mappatura: `AEM_PROXY_HOST:30465` → `smtp.sendgrid.com:465`.
    + La `smpt.port` è impostato su `portForward.portOrig` e NON la porta effettiva del server SMTP. La mappatura tra `smtp.port` e `portForward.portOrig` La porta è stabilita da Cloud Manager `portForwards` , come illustrato di seguito.
 
 Poiché i segreti non devono essere memorizzati nel codice, il nome utente e la password del servizio e-mail sono forniti al meglio utilizzando [variabili di configurazione OSGi segrete](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), impostato utilizzando AIO CLI o l&#39;API Cloud Manager.
 
 In genere, [uscita porta flessibile](../flexible-port-egress.md) è utilizzato per soddisfare l&#39;integrazione con un servizio e-mail a meno che non sia necessario `allowlist` l&#39;IP Adobe, nel qual caso [indirizzo ip dedicato in uscita](../dedicated-egress-ip-address.md) può essere utilizzato.
+
+Inoltre, rivedi AEM documentazione su [invio di posta elettronica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 ## Supporto di rete avanzato
 
@@ -51,7 +53,7 @@ Questo esempio di configurazione OSGi configura AEM servizio OSGi di posta per l
 "portForwards": [{
     "name": "smtp.mymail.com",
     "portDest": 465,
-    "portOrig": 30002
+    "portOrig": 30465
 }]
 ...
 ```
@@ -63,7 +65,7 @@ Configurare AEM [DefaultMailService](https://experienceleague.adobe.com/docs/exp
 ```json
 {
     "smtp.host": "$[env:AEM_PROXY_HOST;default=proxy.tunnel]",
-    "smtp.port": "30002",
+    "smtp.port": "30465",
     "smtp.user": "$[env:EMAIL_USERNAME;default=myApiKey]",
     "smtp.password": "$[secret:EMAIL_PASSWORD]",
     "from.address": "noreply@wknd.site",
