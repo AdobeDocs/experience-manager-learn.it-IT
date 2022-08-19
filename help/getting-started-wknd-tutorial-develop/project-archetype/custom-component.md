@@ -12,10 +12,10 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: 79d41d833ab0659f26f988678e124daa18b857f3
 workflow-type: tm+mt
 source-wordcount: '4138'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -66,7 +66,7 @@ Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/a
 
 ## Cosa verrà creato {#byline-component}
 
-In questa parte dell’esercitazione WKND, viene creato un componente Byline che verrà utilizzato per visualizzare le informazioni create sul collaboratore di un articolo.
+In questa parte dell’esercitazione WKND, viene creato un componente per riga che verrà utilizzato per visualizzare informazioni create sul collaboratore di un articolo.
 
 ![esempio di componente byline](assets/custom-component/byline-design.png)
 
@@ -103,7 +103,7 @@ La finestra di dialogo espone l’interfaccia con cui gli autori possono fornire
        sling:resourceSuperType="core/wcm/components/image/v2/image"/>
    ```
 
-   Il file XML di cui sopra fornisce la definizione del componente, inclusi il titolo, la descrizione e il gruppo. La `sling:resourceSuperType` punti `core/wcm/components/image/v2/image`, che è [Componente immagine core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html).
+   Il file XML di cui sopra fornisce la definizione del componente, inclusi il titolo, la descrizione e il gruppo. La `sling:resourceSuperType` punti `core/wcm/components/image/v2/image`, che è [Componente immagine core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=it).
 
 ### Creare lo script HTL {#create-the-htl-script}
 
@@ -447,7 +447,7 @@ Crea un&#39;interfaccia Java pubblica per il comando Byline. `Byline.java` defin
        importa org.osgi.annotation.versioning.Version;
        &quot;
    
-   Ogni volta che viene apportata una modifica ai file di questo pacchetto, il [la versione del pacchetto deve essere regolata semanticamente](https://semver.org/). In caso contrario, il progetto Maven è [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin) rileva una versione del pacchetto non valida e interrompe la generazione. Fortunatamente, in caso di errore, il plug-in Maven segnala la versione non valida del pacchetto Java e la versione che dovrebbe essere. Ho appena aggiornato il `@Version("...")` Dichiarazione nel pacchetto Java che viola `package-info.java` alla versione consigliata dal plug-in da correggere.
+Ogni volta che viene apportata una modifica ai file di questo pacchetto, il [la versione del pacchetto deve essere regolata semanticamente](https://semver.org/). In caso contrario, il progetto Maven è [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin) rileva una versione del pacchetto non valida e interrompe la generazione. Fortunatamente, in caso di errore, il plug-in Maven segnala la versione non valida del pacchetto Java e la versione che dovrebbe essere. Aggiorna `@Version("...")` Dichiarazione nel pacchetto Java che viola `package-info.java` alla versione consigliata dal plug-in da correggere.
 
 ### Implementazione byline {#byline-implementation}
 

@@ -11,7 +11,7 @@ level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
 workflow-type: tm+mt
 source-wordcount: '2878'
 ht-degree: 2%
@@ -206,7 +206,7 @@ Il AEM Project Archetype imposta automaticamente questa integrazione. Poi, esplo
    http://admin:admin@localhost:4502 > OK
    ```
 
-1. Comando `npm run watch` in ultima analisi compila **clientlib-site** e **clientlib-dipendenze** in **ui.apps** che viene quindi sincronizzato automaticamente con AEM.
+1. Comando `npm run watch` in ultima analisi compila **clientlib-site** e **clientlib-dipendenze** in **ui.apps** modulo che viene poi sincronizzato automaticamente con AEM.
 
    >[!NOTE]
    >
@@ -333,7 +333,7 @@ Visualizza il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd
 
 ### Webpack DevServer - Markup statico {#webpack-dev-static}
 
-Nel paio di esercizi precedenti siamo stati in grado di aggiornare diversi file Sass nel **ui.frontend** modulo e attraverso un processo di compilazione, vedere queste modifiche riflesse in AEM. Ora esamineremo le tecniche che sfruttano un [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) per sviluppare rapidamente i nostri stili front-end **statico** HTML.
+Nel paio di esercizi precedenti siamo stati in grado di aggiornare diversi file Sass nel **ui.frontend** modulo e attraverso un processo di compilazione, vedere queste modifiche riflesse in AEM. Ora esamineremo una tecnica che sfrutta un [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) per sviluppare rapidamente i nostri stili front-end **statico** HTML.
 
 Questa tecnica è utile se la maggior parte degli stili e del codice front-end viene eseguita da uno sviluppatore Front End dedicato che potrebbe non avere un facile accesso a un ambiente AEM. Questa tecnica consente inoltre al FED di apportare modifiche direttamente al HTML, che può quindi essere consegnato a uno sviluppatore AEM da implementare come componenti.
 
@@ -389,9 +389,9 @@ Questa tecnica è utile se la maggior parte degli stili e del codice front-end v
 
 [**aemed**](https://aemfed.io/) è uno strumento open-source a riga di comando che può essere utilizzato per accelerare lo sviluppo front-end. È alimentato da  [aemsync](https://www.npmjs.com/package/aemsync), [Browsersync](https://www.npmjs.com/package/browser-sync) e [Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html).
 
-Ad alto livello **aemed** è progettato per ascoltare le modifiche apportate ai file all&#39;interno di **ui.apps** e li sincronizza automaticamente direttamente in un&#39;istanza AEM in esecuzione. In base alle modifiche, un browser locale si aggiorna automaticamente, accelerando così lo sviluppo front-end. È inoltre progettato per lavorare con Sling Log Tracer per visualizzare automaticamente eventuali errori lato server direttamente nel terminale.
+Ad alto livello **aemed** è progettato per ascoltare le modifiche apportate ai file all&#39;interno di **ui.apps** e sincronizzarli automaticamente direttamente in un&#39;istanza AEM in esecuzione. In base alle modifiche, un browser locale si aggiorna automaticamente, accelerando così lo sviluppo front-end. È inoltre progettato per lavorare con Sling Log Tracer per visualizzare automaticamente eventuali errori lato server direttamente nel terminale.
 
-Se stai facendo molto lavoro all&#39;interno del **ui.apps** modulo, modifica degli script HTL e creazione di componenti personalizzati, **aemed** può essere uno strumento molto potente da usare. [La documentazione completa è disponibile qui.](https://github.com/abmaonline/aemfed).
+Se stai facendo molto lavoro all&#39;interno del **ui.apps** modulo, modifica degli script HTL e creazione di componenti personalizzati, **aemed** può essere uno strumento molto potente da usare. [La documentazione completa è disponibile qui](https://github.com/abmaonline/aemfed).
 
 ### Debug delle librerie lato client {#debugging-clientlibs}
 

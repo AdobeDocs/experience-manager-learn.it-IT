@@ -9,7 +9,7 @@ mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
 workflow-type: tm+mt
 source-wordcount: '3081'
 ht-degree: 1%
@@ -93,7 +93,7 @@ Quindi, crea un nuovo modello in AEM che corrisponda alla struttura dei modelli.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330991/?quality=12&learn=on)
 
-Passaggi di alto livello per il video seguente:
+Passi di alto livello per il video precedente:
 
 ### Configurazioni struttura
 
@@ -161,7 +161,7 @@ L’Archetipo di progetto AEM ha generato un’intestazione e un piè di pagina.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330992/?quality=12&learn=on)
 
-Passaggi di alto livello per il video seguente:
+Passi di alto livello per il video precedente:
 
 1. Scarica il pacchetto di contenuti di esempio **[WKND-PagesTemplates-Content-Assets.zip](assets/pages-templates/WKND-PagesTemplates-Content-Assets-1.1.zip)**.
 1. Carica e installa il pacchetto di contenuti utilizzando Gestione pacchetti in [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp)
@@ -207,7 +207,7 @@ Quindi, crea una nuova pagina utilizzando il modello Pagina articolo . Crea il c
 
 >[!VIDEO](https://video.tv.adobe.com/v/330993/?quality=12&learn=on)
 
-Passaggi di alto livello per il video seguente:
+Passi di alto livello per il video precedente:
 
 1. Passa alla console Sites all’indirizzo [http://localhost:4502/sites.html/content/wknd/us/en/magazine](http://localhost:4502/sites.html/content/wknd/us/en/magazine).
 1. Crea una nuova pagina sotto **WKND** > **US** > **IT** > **Rivista**.
@@ -257,7 +257,7 @@ Utilizza lo strumento CRXDE-Lite su un&#39;istanza AEM locale per visualizzare l
 
    Si noti che esistono solo 2 script HTL, `customfooterlibs.html` e `customheaderlibs.html` sotto il componente pagina. *Quindi, in che modo questo componente esegue il rendering della pagina?*
 
-   La `sling:resourceSuperType` fa riferimento a `core/wcm/components/page/v2/page`. Questa proprietà consente al componente pagina di WKND di ereditare **tutto** della funzionalità del componente della pagina Componenti core. Questo è il primo esempio di una cosa chiamata [Pattern componente proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Ulteriori informazioni sono disponibili [qui.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
+   La `sling:resourceSuperType` fa riferimento a `core/wcm/components/page/v2/page`. Questa proprietà consente al componente pagina di WKND di ereditare **tutto** della funzionalità del componente della pagina Componenti core. Questo è il primo esempio di una cosa chiamata [Pattern componente proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Ulteriori informazioni sono disponibili [qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
 
 1. Un altro componente all’interno dei componenti WKND, il `Breadcrumb` componente situato in: `/apps/wknd/components/breadcrumb`. Notate che lo stesso `sling:resourceSuperType` è possibile trovare la proprietà , ma questa volta fa riferimento a `core/wcm/components/breadcrumb/v2/breadcrumb`. Questo è un altro esempio di utilizzo del pattern del componente Proxy per includere un componente core. Infatti, tutti i componenti della base di codice WKND sono proxy dei componenti core AEM (ad eccezione del nostro famoso componente HelloWorld). È consigliabile provare e riutilizzare il più possibile la funzionalità dei componenti core *prima* scrittura di codice personalizzato.
 
