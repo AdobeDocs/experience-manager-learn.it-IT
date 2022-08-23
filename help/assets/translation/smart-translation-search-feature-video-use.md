@@ -1,18 +1,18 @@
 ---
 title: Utilizzo della ricerca di traduzioni avanzate con AEM Assets
 description: La funzione di ricerca avanzata per la traduzione consente di eseguire automaticamente ricerche e individuare in più lingue AEM contenuti, sia Risorse che Pagine, supportando più di 50 lingue e riducendo la necessità di tradurre manualmente i contenuti.
-version: 6.3, 6.4, 6.5
-feature: Ricerca
-topic: Gestione dei contenuti
+version: 6.4, 6.5
+feature: Search
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 4f35e3f7-ae29-4f93-bba9-48c60b800238
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 1%
+source-wordcount: '266'
+ht-degree: 0%
 
 ---
-
 
 # Utilizzo della ricerca di traduzioni avanzate con AEM Assets{#using-smart-translation-search-with-aem-assets}
 
@@ -24,7 +24,7 @@ AEM Ricerca di traduzione avanzata consente agli utenti di eseguire ricerche di 
 
 La Ricerca di traduzione avanzata è un complemento perfetto per AEM tag avanzati applicati alle risorse in inglese.
 
-Questo video presuppone che sia stata impostata la funzione [AEM Ricerca di traduzione avanzata](smart-translation-search-technical-video-setup.md).
+Questo video presuppone [Ricerca di traduzione intelligente AEM](smart-translation-search-technical-video-setup.md) è stato impostato.
 
 ## Funzionamento della ricerca di traduzioni intelligenti {#how-smart-translation-search-works}
 

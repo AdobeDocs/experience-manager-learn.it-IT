@@ -4,12 +4,12 @@ description: PDF è in realtà una famiglia di formati di file e questo articolo
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: 6.3,6.4, 6.5
+version: 6.4, 6.5
 feature: PDF Generator
 kt: 7071
 topic: Development
 exl-id: ffa9d243-37e5-420c-91dc-86c73a824083
-source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 0%
@@ -82,10 +82,10 @@ Un documento certificato fornisce ai destinatari dei documenti e dei moduli di P
 
 ### Acroformati
 
-Gli acromoduli sono la tecnologia dei moduli interattivi di Adobe; risalgono alla versione 3 di Acrobat. L&#39;Adobe fornisce [Riferimento API di Acrobat Forms](assets/FormsAPIReference.pdf), del maggio 2003, per fornire i dettagli tecnici di questa tecnologia. Gli acromoduli sono una combinazione dei seguenti elementi:
+Gli acromoduli sono la tecnologia dei moduli interattivi più vecchia di Adobe; risalgono alla versione 3 di Acrobat. L&#39;Adobe fornisce [Riferimento API di Acrobat Forms](assets/FormsAPIReference.pdf), del maggio 2003, per fornire i dettagli tecnici di questa tecnologia. Gli acromoduli sono una combinazione dei seguenti elementi:
 
 * Un PDF tradizionale che definisce il layout statico e gli elementi grafici del modulo.
-* Campi del modulo interattivo con blocco superiore con gli strumenti del modulo del programma Adobe Acrobat. Questi strumenti per i moduli sono un piccolo sottoinsieme di quelli disponibili in AEM Forms Designer.
+* Campi del modulo interattivo con blocco superiore con gli strumenti del modulo del programma Adobe Acrobat. Questi strumenti modulo sono un piccolo sottoinsieme di ciò che è disponibile in AEM Forms Designer.
 
 ### PDF/A (PDF per archivio)
 
@@ -113,7 +113,7 @@ Anche se i documenti hanno lo stesso aspetto, il file PDF/A viene aperto con una
 
 ![Pdf-img](assets/pdfa-message.png)
 
-La barra dei messaggi del documento include istruzioni ed eventualmente pulsanti per completare un&#39;attività. È codificata in colori e vedrai il colore blu quando apri tipi speciali di PDF (come questo file PDF/A) e PDF certificati e firmati digitalmente. Quando si partecipa a una revisione di PDF, la barra diventa viola per i PDF forms e giallo.
+La barra dei messaggi del documento include istruzioni ed eventualmente pulsanti per completare un&#39;attività. È codificata in colori e vedrai il colore blu quando aprite tipi speciali di PDF (come questo file PDF/A) e PDF certificati e firmati digitalmente. La barra diventa viola per i PDF forms e giallo quando si partecipa a una revisione di PDF.
 
 >[!NOTE]
 >

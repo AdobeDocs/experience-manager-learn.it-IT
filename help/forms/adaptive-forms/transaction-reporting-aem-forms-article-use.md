@@ -1,18 +1,18 @@
 ---
 title: Utilizzo del reporting delle transazioni in AEM Forms
 description: I rapporti sulle transazioni in AEM Forms ti consentono di tenere un conteggio di tutte le transazioni effettuate a partire da una data specifica nella distribuzione AEM Forms.
-feature: Moduli adattivi
-version: 6.4.1,6.5
-topic: Sviluppo
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 0%
+source-wordcount: '367'
+ht-degree: 1%
 
 ---
-
 
 # Utilizzo del reporting delle transazioni in AEM Forms{#using-transaction-reporting-in-aem-forms}
 
@@ -35,7 +35,7 @@ Per visualizzare il rapporto sulle transazioni, accedi ad AEM Forms come amminis
 
 Seleziona Strumenti | Forms | Visualizza rapporto transazioni
 
-o visualizzare il rapporto sulle transazioni facendo clic su [qui](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
+o visualizzare il rapporto sulla transazione facendo clic su [qui](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 
 ![Reporting sulle transazioni](assets/transactionreporting.gif)
 
@@ -47,5 +47,4 @@ Azioni come l’invio di un modulo PDF, l’utilizzo dell’interfaccia utente d
 
 Se visualizzi il rapporto sulle transazioni nell’istanza di authoring, assicurati che la replica inversa sia configurata su tutte le istanze di pubblicazione.
 
-Per ulteriori informazioni sul reporting delle transazioni [fare clic qui](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
-
+Per ulteriori informazioni sulla generazione di rapporti sulle transazioni [fai clic qui](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)

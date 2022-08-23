@@ -1,23 +1,23 @@
 ---
 title: Panoramica di Dynamic Media con AEM Assets
-description: Questa serie video offre una panoramica della modalità di gestione e accesso dei contenuti multimediali tramite Adobe Experience Manager Dynamic Media come servizio di content serving. Dynamic Media consente di gestire e pubblicare esperienze digitali dinamiche, una funzione unica per Experience Manager Assets. Il nostro framework e suite di componenti consentono agli addetti al marketing di personalizzare e fornire esperienze multimediali interattive su tutti i dispositivi.
+description: Questa serie video offre una panoramica della modalità di gestione e accesso dei contenuti multimediali tramite Adobe Experience Manager Dynamic Media come servizio di content serving. Dynamic Media consente di gestire e pubblicare esperienze digitali dinamiche, una funzione unica di Experience Manager Assets. Il nostro framework e suite di componenti consentono agli addetti al marketing di personalizzare e fornire esperienze multimediali interattive su tutti i dispositivi.
 sub-product: dynamic-media
-feature: Ritaglio avanzato, profili video, profili immagine, predefiniti visualizzatore, video VR 360, set di immagini, set 360 gradi
-version: 6.3, 6.4, 6.5
-topic: Gestione dei contenuti
+feature: Smart Crop, Video Profiles, Image Profiles, Viewer Presets, 360 VR Video, Image Sets, Spin Sets
+version: 6.4, 6.5
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
 
-
 # Utilizzo di Dynamic Media con AEM Assets {#understanding-aem-dynamic-media}
 
-Questa serie video in più parti offre una panoramica della gestione e dell’accesso ai contenuti multimediali tramite Adobe Experience Manager Dynamic Media come servizio di content serving. Dynamic Media consente di gestire e pubblicare esperienze digitali dinamiche, una funzione unica per Experience Manager Assets. Il nostro framework e suite di componenti consentono agli addetti al marketing di personalizzare e fornire esperienze multimediali interattive su tutti i dispositivi.
+Questa serie video in più parti offre una panoramica della gestione e dell’accesso ai contenuti multimediali tramite Adobe Experience Manager Dynamic Media come servizio di content serving. Dynamic Media consente di gestire e pubblicare esperienze digitali dinamiche, una funzione unica di Experience Manager Assets. Il nostro framework e suite di componenti consentono agli addetti al marketing di personalizzare e fornire esperienze multimediali interattive su tutti i dispositivi.
 
 ## Panoramica di Dynamic Media
 
@@ -87,7 +87,7 @@ Questo video descrive come andare oltre il ridimensionamento delle immagini per 
 * Ritaglio in un percorso immagine
 * Creazione di un modello di testo da un file Photoshop
 
-## Dynamic Media Controllo delle dimensioni dei file JPEG in kilobyte
+## Controllo Dynamic Media delle dimensioni dei file JPEG in Kilobytes
 
 >[!VIDEO](https://video.tv.adobe.com/v/27404/?quality=9&learn=on)
 
@@ -96,7 +96,7 @@ Questo video descrive come andare oltre il ridimensionamento delle immagini per 
 >
 >La qualità dell&#39;immagine viene misurata in percentuali di compressione inversa, dove il 100% di qualità è meno compresso e ciò determina immagini di alta qualità ma di dimensioni relativamente grandi. La compressione Jpeg è uno schema di compressione con perdita di dati in cui le impostazioni di compressione determinano la qualità dell&#39;immagine e le dimensioni del file.
 
-Bilancia la qualità dell&#39;immagine jpeg rispetto alle dimensioni del file risultante (in kilobyte) per migliorare la velocità di caricamento della pagina, utilizzando 2 comandi per regolare le impostazioni di compressione jpeg. QLT definisce la qualità dell&#39;immagine regolando le impostazioni di qualità della compressione jpeg. Il comando Dimensioni JPEG consente di specificare la dimensione del file da ottenere utilizzando la compressione.
+Bilancia la qualità dell&#39;immagine jpeg rispetto alle dimensioni del file risultante (in kilobyte) per migliorare la velocità di caricamento della pagina, utilizzando 2 comandi per regolare le impostazioni di compressione jpeg. QLT definisce la qualità dell&#39;immagine regolando le impostazioni di qualità della compressione jpeg. Il comando Dimensione di JPEG consente di specificare la dimensione del file da ottenere utilizzando la compressione.
 
 ## Aggiungere sottotitoli codificati in video Dynamic Media
 

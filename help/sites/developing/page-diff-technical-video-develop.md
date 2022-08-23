@@ -1,22 +1,22 @@
 ---
 title: Sviluppo per differenze di pagina in AEM Sites
 description: Questo video mostra come fornire stili personalizzati per la funzionalità Differenza pagina di AEM Sites.
-feature: 'Authoring  '
+feature: Authoring
 topics: development
 audience: developer
 doc-type: technical video
 activity: develop
-version: 6.3, 6.4, 6.5
-topic: Sviluppo
+version: 6.4, 6.5
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 7d600b16-bbb3-4f21-ae33-4df59b1bb39d
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 3%
+source-wordcount: '293'
+ht-degree: 4%
 
 ---
-
 
 # Sviluppo per differenza di pagina {#developing-for-page-difference}
 
@@ -38,7 +38,7 @@ Questo ha il vantaggio di consentire a queste sostituzioni di stile personalizza
 
 ### Preparare la clientlib dell’authoring {#prepare-the-authoring-clientlib}
 
-Assicurati l’esistenza di una clientlib `authoring` per il progetto in `/apps/my-project/clientlib/authoring.`
+Assicurare l&#39;esistenza di un `authoring` clientlib per il progetto all’indirizzo `/apps/my-project/clientlib/authoring.`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -49,7 +49,7 @@ Assicurati l’esistenza di una clientlib `authoring` per il progetto in `/apps/
 
 ### Fornire i CSS personalizzati {#provide-the-custom-css}
 
-Aggiungi a clientlib del progetto `authoring` un `css.txt` che punta al file minore che fornirà gli stili di override. [](https://lesscss.org/) La lezione è preferita a causa delle sue molte funzioni convenienti, tra cui il wrapping di classe che viene sfruttato in questo esempio.
+Aggiungi al `authoring` clientlib a `css.txt` che punta al file less che fornirà gli stili di override. [Meno](https://lesscss.org/) è preferito a causa delle sue molte funzioni convenienti, tra cui il wrapping di classe che viene sfruttato in questo esempio.
 
 ```shell
 base=./css
@@ -57,7 +57,7 @@ base=./css
 htmldiff.less
 ```
 
-Crea il file `less` contenente le sostituzioni di stile in `/apps/my-project/clientlibs/authoring/css/htmldiff.less` e fornisci gli stili di sostituzione in base alle esigenze.
+Crea il `less` file contenente le sostituzioni dello stile in `/apps/my-project/clientlibs/authoring/css/htmldiff.less`e fornisci gli stili di overring in base alle esigenze.
 
 ```css
 /* Wrap with body to gives these rules more specificity than the OOTB */
@@ -105,9 +105,9 @@ body {
 
 ### Includere il CSS clientlib di authoring tramite il componente pagina {#include-the-authoring-clientlib-css-via-the-page-component}
 
-Includi la categoria clientlibs di authoring nella pagina di base del progetto `/apps/my-project/components/structure/page/customheaderlibs.html` direttamente prima del tag `</head>` per garantire il caricamento degli stili.
+Includi la categoria clientlibs di authoring nella pagina di base del progetto `/apps/my-project/components/structure/page/customheaderlibs.html` direttamente prima del `</head>` per garantire che gli stili vengano caricati.
 
-Questi stili devono essere limitati alle modalità [!UICONTROL Edit] e [!UICONTROL preview] WCM.
+Questi stili devono essere limitati a [!UICONTROL Modifica] e [!UICONTROL anteprima] Modalità WCM.
 
 ```xml
 <head>
@@ -117,12 +117,12 @@ Questi stili devono essere limitati alle modalità [!UICONTROL Edit] e [!UICONTR
 </head>
 ```
 
-Il risultato finale di una pagina diversa con gli stili applicati sopra sarà simile a questo (HTML aggiunto e componente modificato).
+Il risultato finale di una pagina con differenze con gli stili applicati sopra sarà simile a questo (HTML aggiunto e Componente modificato).
 
 ![Differenza tra pagine](assets/page-diff.png)
 
 ## Risorse aggiuntive {#additional-resources}
 
 * [Scarica il sito di esempio di we.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
-* [Utilizzo delle librerie client AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [Utilizzo delle librerie client AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=it)
 * [Meno documentazione CSS](https://lesscss.org/)

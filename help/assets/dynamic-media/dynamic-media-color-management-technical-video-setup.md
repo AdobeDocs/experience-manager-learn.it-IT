@@ -2,18 +2,18 @@
 title: Informazioni sulla gestione del colore con AEM Dynamic Media
 description: Questo video illustra la gestione del colore di Dynamic Media e come può essere utilizzato per fornire funzionalità di anteprima della correzione del colore in per AEM Assets.
 sub-product: dynamic-media
-feature: Profili immagine, Profili video
-version: 6.3, 6.4, 6.5
-topic: Gestione dei contenuti
+feature: Image Profiles, Video Profiles
+version: 6.4, 6.5
+topic: Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 15%
+source-wordcount: '319'
+ht-degree: 17%
 
 ---
-
 
 # Informazioni sulla gestione del colore con AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
 
@@ -23,7 +23,7 @@ Questo video illustra la gestione del colore di Dynamic Media e come può essere
 
 >[!NOTE]
 >
->[Abilita Dynamic ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) Media AEM per utilizzare questa funzione.
+>[Abilita Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) in AEM per utilizzare questa funzione.
 
 Questa funzione è disponibile per le versioni AEM 6.1 e 6.2 come Feature Pack.
 
@@ -91,11 +91,11 @@ Di seguito è riportato il modello XML per il nodo di configurazione Gestione co
 | ------------------- | ---------- | ------------------------------------- |
 | AdobeRGB | RGB | Adobe RGB (1998) |
 | AppleRGB | RGB | Apple RGB |
-| CIERGB | RGB | CIE RGB |
+| CIERGB | RGB | RGB CIE |
 | Fogra27 rivestito | CMYK | Rivestito FOGRA27 (ISO 12647-2:2004) |
 | Fogra39 rivestito | CMYK | Rivestito FOGRA39 (ISO 12647-2:2004) |
 | ColGraCoated | CMYK | GRACoL 2006 rivestito (ISO 12647-2:2004) |
-| ColorMatchRGB | RGB | ColorMatch RGB |
+| ColorMatchRGB | RGB | RGB ColorMatch |
 | EuropaISOCoated | CMYK | Europa ISO rivestito FOGRA27 |
 | EuroscaleCoated | CMYK | Euroscale Coated v2 |
 | EuroscaleNon rivestito | CMYK | Euroscala non rivestita v2 |
@@ -113,14 +113,14 @@ Di seguito è riportato il modello XML per il nodo di configurazione Gestione co
 | Foglietto | CMYK | U.S. Sheetfed Coated v2 |
 | FogliameNon rivestito | CMYK | U.S. Sheetfeed non rivestito v2 |
 | SMPTE | RGB | SMPTE-C |
-| sRGB | RGB sRGB | IEC61966-2.1 |
+| sRGB | sRGB di RGB | IEC61966-2.1 |
 | Fogra29 non rivestito | CMYK | FOGRA29 non rivestito (ISO 12647-2:2004) |
 | WebCoated | CMYK | U.S. Web Coated (SWOP) v2 |
 | WebCoatedFogra28 | CMYK | Web Coated FOGRA28 (ISO 12647-2:2004) |
 | WebCoatedGrade3 | CMYK | Carta SWOP 2006 di grado 3 rivestita sul web |
 | WebCoatedGrade5 | CMYK | Carta SWOP 2006 di grado 5 rivestita sul web |
 | WebNon rivestito | CMYK | U.S. Web non rivestito v2 |
-| WideGamutRGB | RGB | Wide Gamut RGB |
+| WideGamutRGB | RGB | RGB Wide Gamut |
 
 ## Risorse aggiuntive{#additional-resources}
 

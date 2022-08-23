@@ -1,7 +1,7 @@
 ---
 title: Gruppi di utenti chiusi in AEM Assets
 description: I gruppi di utenti chiusi (CUG) sono una funzione utilizzata per limitare l’accesso al contenuto a un gruppo selezionato di utenti su un sito pubblicato. Questo video mostra come i gruppi di utenti chiusi possono essere utilizzati con Adobe Experience Manager Assets per limitare l’accesso a una specifica cartella di risorse.
-version: 6.3, 6.4, 6.5, Cloud Service
+version: 6.4, 6.5, Cloud Service
 topic: Administration, Security
 feature: User and Groups
 role: Admin
@@ -9,7 +9,7 @@ level: Intermediate
 kt: 649
 thumbnail: 22155.jpg
 exl-id: a2bf8a82-15ee-478c-b7c3-de8a991dfeb8
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -36,9 +36,9 @@ I gruppi di utenti chiusi (CUG) e gli elenchi di controllo accessi (ACL) vengono
 
 |  | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Uso previsto | Configura e applica le autorizzazioni per il contenuto dell&#39;istanza AEM **corrente**. | Configura i criteri CUG per i contenuti nell&#39;istanza AEM **author** . Applica i criteri CUG per i contenuti nelle istanze AEM **publish** . |
-| Livelli di autorizzazione | Definisce le autorizzazioni concesse/negate per utenti/gruppi per tutti i livelli: Leggi, Modifica, Crea, Elimina, Leggi ACL, Modifica ACL, Replicare. | Consente l&#39;accesso in lettura a un set di utenti/gruppi. Nega l&#39;accesso in lettura a *tutti gli altri utenti/gruppi*. |
-| Pubblicazione | Le ACL sono *non* pubblicate con il contenuto. | I criteri CUG *sono* pubblicati con il contenuto. |
+| Uso previsto | Configura e applica le autorizzazioni per il contenuto del **attuale** AEM&#39;istanza. | Configurare i criteri CUG per i contenuti in AEM **autore** istanza. Applica criteri CUG per il contenuto su AEM **pubblicare** istanze. |
+| Livelli di autorizzazione | Definisce le autorizzazioni concesse/negate per utenti/gruppi per tutti i livelli: Leggi, Modifica, Crea, Elimina, Leggi ACL, Modifica ACL, Replicare. | Consente l&#39;accesso in lettura a un set di utenti/gruppi. Nega l&#39;accesso in lettura a *tutti gli altri* utenti/gruppi. |
+| Pubblicazione | Gli ACL sono *not* pubblicato con contenuto. | Criteri CUG *sono* pubblicato con contenuto. |
 
 ## Collegamenti di supporto {#supporting-links}
 

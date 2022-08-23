@@ -5,8 +5,8 @@ topics: development
 audience: developer
 doc-type: tutorial
 activity: develop
-version: 6.3, 6.4, 6.5
-source-git-commit: 03db12de4d95ced8fabf36b8dc328581ec7a2749
+version: 6.4, 6.5
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 2%
@@ -41,21 +41,21 @@ Durante lo sviluppo di stati delle risorse personalizzati, il lavoro di sviluppo
 
    ![architettura dello stato delle risorse](assets/sample-editor-resource-status-application-architecture.png)
 
-3. Alla risorsa di stato fornita come parte degli editor di pagine, frammenti esperienza e modelli viene assegnato un tipo tramite la proprietà &quot;[!DNL statusType]&quot; delle risorse.
+3. La risorsa di stato fornita come parte degli editor di pagine, frammenti esperienza e modelli viene assegnato un tipo tramite le risorse &quot;[!DNL statusType]&quot; proprietà.
 
    * Editor pagina: `editor`
    * Editor frammento esperienza: `editor`
    * Editor modelli: `template-editor`
 
-4. La proprietà `statusType` della risorsa di stato corrisponde alla proprietà `CompositeStatusType` OSGi registrata configurata `name`.
+4. La risorsa di stato `statusType` corrisponde a registrato `CompositeStatusType` OSGi configurato `name` proprietà.
 
-   Per tutte le corrispondenze, i tipi `CompositeStatusType's` vengono raccolti e utilizzati per raccogliere le implementazioni `ResourceStatusProvider` con questo tipo, tramite `ResourceStatusProvider.getType()`.
+   Per tutte le corrispondenze, la variabile `CompositeStatusType's` i tipi vengono raccolti e utilizzati per raccogliere `ResourceStatusProvider` implementazioni con questo tipo, tramite `ResourceStatusProvider.getType()`.
 
-5. La `ResourceStatusProvider` corrispondente viene passata alla `resource` nell&#39;editor e determina se la `resource` ha lo stato da visualizzare. Se è necessario lo stato, questa implementazione è responsabile della generazione di 0 o di molti `ResourceStatuses` da restituire, ognuno dei quali rappresenta uno stato da visualizzare.
+5. La corrispondenza `ResourceStatusProvider` viene passato `resource` nell’editor e determina se il `resource` ha lo stato da visualizzare. Se è necessario lo stato, questa implementazione è responsabile della creazione di 0 o di molti `ResourceStatuses` per restituire, ciascuna rappresenta uno stato da visualizzare.
 
-   In genere, un `ResourceStatusProvider` restituisce 0 o 1 `ResourceStatus` per `resource`.
+   In genere un `ResourceStatusProvider` restituisce 0 o 1 `ResourceStatus` per `resource`.
 
-6. ResourceStatus è un&#39;interfaccia che può essere implementata dal cliente, oppure l&#39;utile `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` può essere utilizzato per creare uno stato. Uno stato è composto da:
+6. ResourceStatus è un&#39;interfaccia che può essere implementata dal cliente o dall&#39;utile `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` può essere utilizzato per creare uno stato. Uno stato è composto da:
 
    * Titolo
    * Messaggio
@@ -65,7 +65,7 @@ Durante lo sviluppo di stati delle risorse personalizzati, il lavoro di sviluppo
    * Azioni
    * Dati
 
-7. Facoltativamente, se per l&#39;oggetto `ResourceStatus` sono forniti `Actions` , sono necessarie clientlibs di supporto per associare funzionalità ai collegamenti azione nella barra di stato.
+7. Facoltativamente, se `Actions` sono forniti per `ResourceStatus` oggetto , per associare funzionalità ai collegamenti azione nella barra di stato sono necessarie clientlibs di supporto.
 
    ```js
    (function(jQuery, document) {

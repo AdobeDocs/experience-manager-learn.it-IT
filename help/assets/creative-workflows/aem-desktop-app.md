@@ -1,20 +1,20 @@
 ---
 title: App desktop AEM
 description: Utilizza AEM Desktop App per semplificare l’accesso a qualsiasi risorsa gestita in AEM sul desktop, per qualsiasi applicazione e formato di file.
-version: 6.5, 6.4, 6.3
-topic: Gestione dei contenuti
-feature: App desktop
+version: 6.5, 6.4
+topic: Content Management
+feature: Desktop App
 role: User
 level: Beginner
 kt: 2551
 thumbnail: 28868.jpeg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 6765758f-0719-4ed9-83be-8ed192a75b41
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 5%
+source-wordcount: '134'
+ht-degree: 4%
 
 ---
-
 
 # Usare l’app desktop AEM
 
@@ -29,7 +29,7 @@ Utilizza AEM Desktop App per semplificare l’accesso a qualsiasi risorsa gestit
 
 >[!NOTE]
 >
-> [Adobe Asset ](./adobe-asset-link.md) Linkis, soluzione dedicata per l’utilizzo AEM risorse all’interno delle applicazioni Adobe Creative Cloud: Photoshop, Illustrator, InDesign. Quando si utilizza AEM Assets in queste applicazioni, Adobe Asset Link è preferito rispetto AEM&#39;app desktop.
+> [Adobe Asset Link](./adobe-asset-link.md) è la soluzione dedicata di Adobe per lavorare con le risorse AEM all’interno delle applicazioni Adobe Creative Cloud: Photoshop, Illustrator, InDesign. Quando si utilizza AEM Assets in queste applicazioni, Adobe Asset Link è preferito rispetto AEM&#39;app desktop.
 
 ## Risorse aggiuntive
 

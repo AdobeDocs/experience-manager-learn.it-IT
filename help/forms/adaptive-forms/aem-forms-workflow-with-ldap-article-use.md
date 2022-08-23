@@ -1,18 +1,18 @@
 ---
 title: Utilizzo di LDAP con AEM Forms Workflow
 description: Assegnazione dell’attività del flusso di lavoro AEM Forms al responsabile del mittente
-feature: Forms adattivo, flusso di lavoro
-topic: Integrations (Integrazioni)
+feature: Adaptive Forms, Workflow
+topic: Integrations
 role: Developer
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 2e9754ff-49fe-4260-b911-796bcc4fd266
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
-
 
 # Utilizzo di LDAP con AEM Forms Workflow
 
@@ -20,7 +20,7 @@ Assegnazione dell’attività del flusso di lavoro AEM Forms al responsabile del
 
 Quando si utilizza Modulo adattivo nel flusso di lavoro AEM, è consigliabile assegnare dinamicamente un’attività al responsabile dell’utente che ha inviato il modulo. Per eseguire questo caso d’uso, dovremo configurare AEM con Ldap.
 
-I passaggi necessari per configurare AEM con LDAP sono descritti in [dettaglio qui.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
+I passaggi necessari per configurare AEM con LDAP sono descritti in [qui il dettaglio.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
 
 Ai fini del presente articolo, allego i file di configurazione utilizzati per la configurazione di AEM con Adobe Ldap. Questi file sono inclusi nel pacchetto che può essere importato utilizzando il gestore dei pacchetti.
 
@@ -60,13 +60,13 @@ Individuiamo la persona che ha avviato il flusso di lavoro. Poi otteniamo il val
 
 A seconda di come la proprietà manager viene memorizzata nel tuo LDAP, potrebbe essere necessario eseguire una qualche manipolazione di stringa per ottenere l&#39;id manager.
 
-Leggi questo articolo per implementare il tuo [ ParticipantChooser .](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+Leggi questo articolo per implementare il tuo [  ParticipantChooser .](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
 Per eseguire il test sul sistema (ad Adobe, i dipendenti possono utilizzare questo esempio)
 
 * [Scarica e distribuisci il bundle setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Questo è il bundle OSGI personalizzato per l&#39;impostazione della proprietà del manager.
 * [Scarica e installa DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* [Importa in AEM le risorse associate a questo articolo utilizzando il gestore di pacchetti](assets/aem-forms-ldap.zip). Incluso come parte di questo pacchetto sono i file di configurazione LDAP, il flusso di lavoro e un modulo adattivo.
+* [Importa in AEM le risorse associate a questo articolo utilizzando il gestore pacchetti](assets/aem-forms-ldap.zip).Incluso come parte di questo pacchetto sono i file di configurazione LDAP, il flusso di lavoro e un modulo adattivo.
 * Configura AEM con il tuo LDAP utilizzando le credenziali LDAP appropriate.
 * Accedi a AEM utilizzando le tue credenziali LDAP.
 * Apri [timeoffrequestform](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)

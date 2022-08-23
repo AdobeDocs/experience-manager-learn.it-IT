@@ -8,17 +8,17 @@ topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5, Cloud Service
+version: 6.4, 6.5, Cloud Service
 kt: 4242
 thumbnail: 33594.jpg
 topic: Content Management
 role: User
 level: Beginner
 exl-id: e71b106d-a44b-44af-ba85-7fb5806cdb83
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '79'
-ht-degree: 20%
+ht-degree: 30%
 
 ---
 
@@ -30,5 +30,5 @@ Il video seguente offre una panoramica dei concetti di base sull’authoring in 
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Modifica della documentazione del contenuto di una pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
+* [Modifica della documentazione del contenuto di una pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it)
 * [Guida rapida all’authoring delle pagine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)

@@ -1,18 +1,18 @@
 ---
 title: Creare un profilo di campagna utilizzando il modello dati del modulo
 description: Passaggi coinvolti nella creazione di un profilo Adobe Campaign Standard tramite AEM Forms Form Data Model
-feature: Moduli adattivi
-version: 6.3,6.4,6.5
-topic: Sviluppo
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 59d5ba6d-91c1-48c7-8c87-8e0caf4f2d7e
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 4%
+source-wordcount: '426'
+ht-degree: 3%
 
 ---
-
 
 # Creare un profilo di campagna utilizzando il modello dati del modulo {#create-campaign-profile-using-form-data-model}
 
@@ -22,7 +22,7 @@ Passaggi coinvolti nella creazione di un profilo Adobe Campaign Standard tramite
 
 Quando si crea Origine dati con il file swagger, AEM Forms supporta i seguenti tipi di autenticazione
 
-* Nessuna
+* Nessuno
 * OAuth 2.0
 * Autenticazione di base
 * Chiave API
@@ -112,8 +112,7 @@ Il file di esempio swagger viene fornito come parte della risorsa correlata a qu
 Per testare la soluzione segui i seguenti passaggi:
 * [Assicurati di aver seguito i passaggi descritti qui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Scarica e decomprimi il file per ottenere il file swagger](assets/create-acs-profile-swagger-file.zip)
-* Crea origine dati utilizzando il file swagger
-Crea modello dati modulo e lo basa sull’origine dati creata nel passaggio precedente
+* Crea origine dati utilizzando il file swagger Crea modello dati modulo e basalo sull’origine dati creata nel passaggio precedente
 * Crea un modulo adattivo basato sul modello dati del modulo creato nel passaggio precedente.
 * Trascina i seguenti elementi dalla scheda origini dati al modulo adattivo
 

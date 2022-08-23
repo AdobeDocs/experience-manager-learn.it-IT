@@ -1,24 +1,24 @@
 ---
 title: AEM Forms con schema JSON e dati[Parte2]
-seo-title: AEM Forms con schema JSON e dati[Parte2]
+seo-title: AEM Forms with JSON Schema and Data[Part2]
 description: Esercitazione in più parti per illustrarti i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
-seo-description: Esercitazione in più parti per illustrarti i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
-feature: Moduli adattivi
+seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
-topic: Sviluppo
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 29195c70-af12-4a22-8484-3c87a1e07378
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
-
 
 # Memorizzazione dei dati inviati nel database
 
@@ -31,7 +31,7 @@ Per memorizzare i dati inviati nel database, scriveremo un servlet per estrarre 
 
 È stato creato un invio personalizzato per gestire l’invio del modulo. In questo post di invio personalizzato.POST.jsp inoltriamo la richiesta al nostro servlet.
 
-Per ulteriori informazioni sull&#39;invio personalizzato, leggere questo [articolo](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
+Per ulteriori informazioni sull’invio personalizzato, consulta questo [articolo](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,&quot;/bin/storeafsubmit&quot;,null,null);
 

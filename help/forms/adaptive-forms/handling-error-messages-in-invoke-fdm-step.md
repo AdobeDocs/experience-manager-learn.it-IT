@@ -1,24 +1,24 @@
 ---
 title: Acquisizione di messaggi di errore nel servizio Form Data Model come passaggio nel flusso di lavoro
 description: A partire da AEM Forms 6.5.1, ora è possibile acquisire i messaggi di errore generati utilizzando il servizio di chiamata a Form Data Model come passaggio in AEM flusso di lavoro. Flusso di lavoro.
-feature: Flusso di lavoro
-version: 6.5.1,6.5.2
-topic: Sviluppo
+feature: Workflow
+version: 6.5
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 8cae155c-c393-4ac3-a412-bf14fc411aac
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 0%
 
 ---
-
 
 # Acquisizione dei messaggi di errore nel passaggio del servizio del modello dati del modulo
 
 A partire da AEM Forms 6.5.1, ora è possibile acquisire messaggi di errore e specificare le opzioni di convalida. È stato migliorato il passaggio del Servizio modello dati modulo per richiamare le funzionalità seguenti.
 
-* È disponibile un&#39;opzione per la convalida a 3 livelli (&quot;OFF&quot;, &quot;BASIC&quot; e &quot;FULL&quot;) per gestire le eccezioni rilevate durante l&#39;avvio del servizio Form Data Model. Le 3 opzioni indicano successivamente una versione più rigorosa del controllo dei requisiti specifici del database.
+* È disponibile un&#39;opzione per la convalida a 3 livelli (&quot;OFF&quot;, &quot;BASIC&quot; e &quot;FULL&quot;) per gestire le eccezioni rilevate durante l&#39;avvio di Form Data Model Service. Le 3 opzioni indicano successivamente una versione più rigorosa del controllo dei requisiti specifici del database.
    ![livelli di convalida](assets/validation-level.PNG)
 
 * Casella di controllo per personalizzare l’esecuzione del flusso di lavoro. Pertanto, l’utente avrà la flessibilità di procedere con l’esecuzione del flusso di lavoro, anche se il passaggio Invoke Form Data Model genera eccezioni.
@@ -45,5 +45,3 @@ Con queste modifiche, il passaggio Invoke Form Data Model Service verifica che i
 
 }
 ```
-
-

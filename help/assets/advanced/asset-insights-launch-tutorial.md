@@ -1,18 +1,18 @@
 ---
 title: Configurare Asset Insights con AEM Assets e Adobe Launch
 description: In questa serie video in 5 parti, passiamo alla configurazione e alla configurazione di Asset Insights per Experience Manager implementato tramite Launch by Adobe.
-feature: Informazioni sulla risorsa
-version: 6.3, 6.4, 6.5
-topic: Integrations (Integrazioni)
+feature: Asset Insights
+version: 6.4, 6.5
+topic: Integrations
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '821'
 ht-degree: 1%
 
 ---
-
 
 # Configurare Asset Insights con AEM Assets e Adobe Experience Platform Launch
 
@@ -30,12 +30,12 @@ Panoramica di Asset Insights Installa i componenti core, i componenti immagine d
 
 >[!CAUTION]
 >
->Scarica la [versione più recente dei componenti core](https://github.com/adobe/aem-core-wcm-components) per la tua implementazione.
+>Assicurati di scaricare il [ultima versione dei componenti core](https://github.com/adobe/aem-core-wcm-components) per la tua implementazione.
 
 Il video utilizza i componenti core v2.2.2 che non sono più aggiornati; assicurati di utilizzare la versione più recente prima di passare alla sezione successiva.
 
 * Scarica [Contenuto immagine di esempio di Asset Insights](./assets/asset-insights-launch-tutorial/aem-assets-insights-sample.zip)
-* Scarica [i componenti core WCM più recenti AEM](https://github.com/adobe/aem-core-wcm-components/releases)
+* Scarica [i componenti core AEM WCM più recenti](https://github.com/adobe/aem-core-wcm-components/releases)
 
 ## Parte 2 : Abilitazione del tracciamento degli approfondimenti delle risorse per un componente immagine di esempio {#sample-image-component-asset-insights}
 
@@ -47,16 +47,16 @@ Miglioramenti ai componenti core e utilizzo del componente proxy (componente imm
 >
 >Il componente di base immagine include la capacità di disabilitare il tracciamento UUID disattivando il tracciamento dell’UUID della risorsa (valore di identificatore univoco per un nodo creato in JCR)
 
-Il componente Immagine di base utilizza l’attributo ***data-asset-id*** all’interno del tag immagine principale &lt;div> per abilitare/disabilitare questa funzione. Il componente Proxy sostituisce il componente principale con le seguenti modifiche.
+Il componente Immagine di base utilizza ***data-asset-id*** attributo all&#39;interno dell&#39;elemento padre &lt;div> di un tag immagine per abilitare/disabilitare questa funzione. Il componente Proxy sostituisce il componente principale con le seguenti modifiche.
 
-* Rimuove il ***data-asset-id*** dal div padre di un elemento &lt;img> all’interno di image.html
-* Aggiunge ***data-aem-asset-id*** direttamente all&#39;elemento &lt;img> all&#39;interno di image.html
-* Aggiunge il valore ***data-trackable=&#39;true&#39;*** all&#39;elemento &lt;img> all&#39;interno di image.html
-* ***data-aem-asset-*** idand  ***data-trackable=&#39;true&#39;*** sono mantenuti allo stesso livello di nodo
+* Rimuove la ***data-asset-id*** dall’elemento div padre di un  &lt;img> elemento all’interno di image.html
+* Aggiunte ***data-aem-asset-id*** direttamente all’ &lt;img> elemento all’interno di image.html
+* Aggiunte ***data-trackable=&#39;true&#39;*** all’ &lt;img> elemento in image.html
+* ***data-aem-asset-id*** e ***data-trackable=&#39;true&#39;*** sono mantenuti allo stesso livello di nodo
 
 >[!NOTE]
 >
->*data-aem-asset-id=&#39;image.UUID&#39;* e  *data-trackable=&#39;true&#39;* sono gli attributi chiave che devono essere presenti per le impression di risorse. Per Informazioni approfondite sui clic delle risorse, oltre agli attributi di dati sopra presenti nel tag &lt;img> , il tag principale &lt;a> deve avere un valore href valido.
+>*data-aem-asset-id=&#39;image.UUID&#39;* e *data-trackable=&#39;true&#39;* sono gli attributi chiave che devono essere presenti per le impression di risorse. Per Informazioni approfondite sui clic delle risorse, oltre agli attributi di dati sopra presenti nel  &lt;img>  tag , il tag principale deve avere un valore href valido.
 
 ## Parte 3: Adobe Analytics — Creazione di suite di rapporti, abilitazione della raccolta dati in tempo reale e reporting AEM Assets {#adobe-analytics-asset-insights}
 
@@ -98,13 +98,13 @@ Assicurati di replicare tutte le modifiche dall&#39;istanza di authoring all&#39
 
 Il tracciamento della pagina implementa due chiamate back (registrate nel codice di incorporamento della risorsa)
 
-* **\&lt;code>assetAnalytics.core.assetLoaded\&lt;/code>** &lt;code>&lt;code>: chiamato quando viene inviato l’evento &quot;load&quot; per l’elemento asset-DOM-element.&lt;/code>&lt;/code>
-* **\&lt;code>assetAnalytics.core.assetClic\&lt;/code>** &lt;code>&lt;code>: chiamato quando l’evento &quot;click&quot; viene inviato per l’elemento asset-DOM-element, è pertinente solo quando l’elemento asset-DOM-element ha un tag di ancoraggio come elemento principale con un attributo &quot;href&quot; esterno valido&lt;/code>&lt;/code>
+* **\&lt;code>assetAnalytics.core.assetLoaded\&lt;code>** : chiamato quando viene inviato l’evento &quot;load&quot; per l’elemento asset-DOM-element.
+* **\&lt;code>assetAnalytics.core.assetClic\&lt;code>** : chiamato quando l’evento &quot;click&quot; viene inviato per l’elemento asset-DOM-element, è pertinente solo quando l’elemento asset-DOM-element ha un tag di ancoraggio come elemento principale con un attributo &quot;href&quot; esterno valido
 
 Infine, Pagetracker implementa una funzione di inizializzazione come.
 
-* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;/code>** &lt;code>&lt;code>: chiamato per inizializzare il componente Pagetracker.&lt;/code>&lt;/code> DEVE essere invocato prima che uno qualsiasi degli eventi asset-insights-events (Impression e/o Clic) venga generato dalla pagina web.
-* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;/code>** &lt;code>&lt;code>: facoltativamente accetta un oggetto AppMeasurement: se fornito, non tenta di creare una nuova istanza di oggetto AppMeasurement.&lt;/code>&lt;/code>
+* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : chiamato per inizializzare il componente Pagetracker. DEVE essere invocato prima che uno qualsiasi degli eventi asset-insights-events (Impression e/o Clic) venga generato dalla pagina web.
+* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : facoltativamente accetta un oggetto AppMeasurement: se fornito, non tenta di creare una nuova istanza di oggetto AppMeasurement.
 
 ### Articolo 2: Tracciamento immagine — Azione 1 (asset-insights.js) {#rule-image-tracker-action-asset-insights-js}
 
@@ -186,7 +186,7 @@ Nel video vengono indicate due estensioni del browser Google Chrome come modi pe
 * [Avvia l&#39;estensione Chrome](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en)
 * [Debugger Adobe Experience Cloud](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj?hl=en)
 
-È anche possibile passare DTM in modalità di debug con la seguente estensione Chrome: [Avvia e switch DTM](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en). Questo rende più facile vedere se ci sono errori relativi alla distribuzione DTM. Inoltre, puoi passare manualmente DTM alla modalità di debug tramite qualsiasi browser *strumenti per sviluppatori -> Console JS* aggiungendo il seguente frammento:
+È anche possibile passare DTM in modalità di debug con la seguente estensione Chrome: [Avvia e switch DTM](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en). Questo rende più facile vedere se ci sono errori relativi alla distribuzione DTM. Inoltre, puoi passare manualmente DTM alla modalità di debug tramite qualsiasi browser *strumenti per sviluppatori -> Console JS* aggiungendo il seguente snippet:
 
 ## Parte 5 : Verifica del tracciamento e della sincronizzazione dei dati di Insight Analytics{#analytics-tracking-asset-insights}
 

@@ -1,22 +1,22 @@
 ---
 title: Guida all’implementazione per semplici ricerche
 description: L'implementazione Semplice di ricerca sono i materiali del laboratorio del Summit 2017 AEM Ricerca Demystified. Questa pagina contiene i materiali di questo laboratorio. Per una visita guidata del laboratorio, vedere la cartella di lavoro Lab nella sezione Presentazione di questa pagina.
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 feature: Search
 topic: Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: aa268c5f-d29e-4868-a58b-444379cb83be
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-
 # Guida all’implementazione per semplici ricerche{#simple-search-implementation-guide}
 
-L&#39;implementazione della ricerca semplice è costituita dai materiali del **laboratorio di Adobe Summit AEM Search Demystified**. Questa pagina contiene i materiali di questo laboratorio. Per una visita guidata del laboratorio, vedere la cartella di lavoro Lab nella sezione Presentazione di questa pagina.
+L’implementazione della ricerca semplice è costituita dai materiali **Adobe Summit lab AEM Search Demystified**. Questa pagina contiene i materiali di questo laboratorio. Per una visita guidata del laboratorio, vedere la cartella di lavoro Lab nella sezione Presentazione di questa pagina.
 
 ![Panoramica dell’architettura di ricerca](assets/l4080/simple-search-application.png)
 
@@ -38,7 +38,7 @@ L&#39;implementazione della ricerca semplice è costituita dai materiali del **l
 
 ### Capitoli {#chapters}
 
-*I collegamenti riportati di seguito presuppongono l’installazione dei  [pacchetti ](#initialpackages) iniziali su AEM Author all’indirizzo`http://localhost:4502`*
+*I link del Capitolo qui sotto assumono la [Pacchetti iniziali](#initialpackages) sono installati su AEM Author in`http://localhost:4502`*
 
 * [Capitolo 1](http://localhost:4502/editor.html/content/summit/l4080/chapter-1.html)
 * [Capitolo 2](http://localhost:4502/editor.html/content/summit/l4080/chapter-2.html)
@@ -74,7 +74,7 @@ L&#39;implementazione della ricerca semplice è costituita dai materiali del **l
 * [Modelli Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Esportatore di modelli Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
 * [API di QueryBuilder](https://experienceleague.adobe.com/docs/)
-* [Plug-in AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode)  (pagina [Documentazione](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
+* [Plug-in di AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) ([Pagina della documentazione](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## Correzioni e follow-up {#corrections-and-follow-up}
 
@@ -82,18 +82,18 @@ Correzioni e chiarimenti dalle discussioni di laboratorio e risposte alle domand
 
 1. **Come interrompere la reindicizzazione?**
 
-   La reindicizzazione può essere arrestata tramite la MBean IndexStats disponibile tramite [AEM console Web > JMX](http://localhost:4502/system/console/jmx)
+   La reindicizzazione può essere arrestata tramite la MBean IndexStats disponibile tramite [Console Web AEM > JMX](http://localhost:4502/system/console/jmx)
 
    * [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
-      * Esegui `abortAndPause()` per interrompere la reindicizzazione. Questo blocca l&#39;indice per un&#39;ulteriore reindicizzazione fino a quando `resume()` non viene richiamato.
-      * L&#39;esecuzione di `resume()` riavvierà il processo di indicizzazione.
+      * Esegui `abortAndPause()` per interrompere la reindicizzazione. In questo modo l’indice viene bloccato per ulteriori reindicizzazione fino a quando `resume()` viene richiamato.
+      * In esecuzione `resume()` riavvia il processo di indicizzazione.
    * Documentazione: [https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean](https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean)
 
 2. **Come possono gli indici oak supportare più tenant?**
 
-   Oak supporta il posizionamento di indici attraverso la struttura del contenuto, e questi indici si indicizzeranno solo all’interno di tale sottoalbero. Ad esempio, **`/content/site-a/oak:index/cqPageLucene`** può essere creato per indicizzare il contenuto solo sotto **`/content/site-a`.**
+   Oak supporta il posizionamento di indici attraverso la struttura del contenuto, e questi indici si indicizzeranno solo all’interno di tale sottoalbero. Esempio **`/content/site-a/oak:index/cqPageLucene`** potrebbe essere creato per indicizzare il contenuto solo in **`/content/site-a`.**
 
-   Un approccio equivalente consiste nell&#39;utilizzare le proprietà **`includePaths`** e **`queryPaths`** su un indice in **`/oak:index`**. Esempio:
+   Un approccio equivalente consiste nell&#39;utilizzare **`includePaths`** e **`queryPaths`** proprietà in un indice sotto **`/oak:index`**. Esempio:
 
    * `/oak:index/siteAcqPageLucene@includePaths=/content/site-a`
    * `/oak:index/siteAcqPageLucene@queryPaths=/content/site-a`
@@ -101,7 +101,7 @@ Correzioni e chiarimenti dalle discussioni di laboratorio e risposte alle domand
    Le considerazioni di questo approccio sono le seguenti:
 
    * Le query DEVONO specificare una restrizione del percorso che sia uguale all&#39;ambito del percorso di query dell&#39;indice, o essere un discendente di.
-   * Gli indici con ambito più ampio (ad esempio `/oak:index/cqPageLucene`) indicizzeranno anche i dati, con conseguente inserimento di duplicati e costo di utilizzo del disco.
+   * Indici con ambito più ampio (ad esempio `/oak:index/cqPageLucene`) indicizza anche i dati, con conseguente ingestione duplicativa e costo di utilizzo del disco.
    * Può essere necessaria la gestione della configurazione duplicativa (ad esempio, aggiungi le stesse regole di indice su più indici tenant se devono soddisfare gli stessi set di query)
    * Questo approccio è più adatto al livello di pubblicazione di AEM per la ricerca di siti personalizzati, come in AEM Author, è comune che le query vengano eseguite ad alto livello nella struttura dei contenuti per tenant diversi (ad esempio, tramite OmniSearch) - diverse definizioni di indice possono causare comportamenti diversi in base solo alla restrizione del percorso.
 
@@ -117,7 +117,7 @@ Correzioni e chiarimenti dalle discussioni di laboratorio e risposte alle domand
 
 4. **Come cercare pagine e risorse nella stessa query?**
 
-   La novità di AEM 6.3 è la capacità di eseguire query per più tipi di nodo nella stessa query fornita. La seguente query QueryBuilder. Tieni presente che ogni &quot;sottoquery&quot; può risolvere il proprio indice, pertanto in questo esempio la sottoquery `cq:Page` viene risolta in `/oak:index/cqPageLucene` e la sottoquery `dam:Asset` viene risolta in `/oak:index/damAssetLucene`.
+   La novità di AEM 6.3 è la capacità di eseguire query per più tipi di nodo nella stessa query fornita. La seguente query QueryBuilder. Tieni presente che ogni &quot;sottoquery&quot; può risolvere al proprio indice, quindi in questo esempio, la `cq:Page` la sottoquery risolve in `/oak:index/cqPageLucene` e `dam:Asset` la sottoquery risolve in `/oak:index/damAssetLucene`.
 
    ```plain
    group.p.or=true
@@ -135,7 +135,7 @@ Correzioni e chiarimenti dalle discussioni di laboratorio e risposte alle domand
    PLAN: [cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* */ union [dam:Asset] as [a] /* lucene:damAssetLucene(/oak:index/damAssetLucene) *:* */
    ```
 
-   Esplora la query e i risultati tramite [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) e [AEM Chrome Plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   Esplorare la query e i risultati tramite [Debugger di QueryBuilder](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) e [Plug-in di AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
 
 5. **Come eseguire la ricerca su più percorsi nella stessa query?**
 
@@ -159,4 +159,4 @@ Correzioni e chiarimenti dalle discussioni di laboratorio e risposte alle domand
    PLAN: [cq:Page] as [a] /* traverse "/content/docs/en/6-2//*" where isdescendantnode([a], [/content/docs/en/6-2]) */ union [cq:Page] as [a] /* traverse "/content/docs/en/6-3//*" where isdescendantnode([a], [/content/docs/en/6-3]) */
    ```
 
-   Esplora la query e i risultati tramite [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) e [AEM Chrome Plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   Esplorare la query e i risultati tramite [Debugger di QueryBuilder](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) e [Plug-in di AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).

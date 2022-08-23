@@ -1,26 +1,26 @@
 ---
 title: Registrazione di tipi di risorse personalizzati
-seo-title: Registrazione di tipi di risorse personalizzati
+seo-title: Registering Custom Asset Types
 description: Abilitazione dei tipi di risorse personalizzate per l’inserimento nell’elenco in AEMForms Portal
-seo-description: Abilitazione dei tipi di risorse personalizzate per l’inserimento nell’elenco in AEMForms Portal
+seo-description: Enabling custom asset types for listing in AEMForms Portal
 uuid: eaf29eb0-a0f6-493e-b267-1c5c4ddbe6aa
-feature: Moduli adattivi
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 discoiquuid: 99944f44-0985-4320-b437-06c5adfc60a1
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: da613092-e03b-467c-9b9e-668142df4634
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '653'
 ht-degree: 2%
 
 ---
-
 
 # Registrazione di tipi di risorse personalizzati {#registering-custom-asset-types}
 
@@ -32,7 +32,7 @@ Abilitazione dei tipi di risorse personalizzate per l’inserimento nell’elenc
 
 ## Specifica percorso di base {#specify-base-path}
 
-Il percorso di base è il percorso dell’archivio di livello principale che include tutte le risorse che un utente può voler elencare nel componente Ricerca e listener. Se lo desideri, l’utente può anche configurare posizioni specifiche all’interno del percorso di base dalla finestra di dialogo di modifica del componente, in modo che la ricerca venga attivata su posizioni specifiche anziché cercare tutti i nodi all’interno del percorso di base. Per impostazione predefinita, il percorso di base viene utilizzato come criterio del percorso di ricerca per recuperare le risorse, a meno che l’utente non configuri un set di percorsi specifici dall’interno di questa posizione. È importante avere un valore ottimale di questo percorso per fare una ricerca performante. Il valore predefinito del percorso di base rimarrà come **_/content/dam/formsanddocuments_** perché tutte le risorse AEM Forms risiedono in **_/content/dam/formsanddocuments._**
+Il percorso di base è il percorso dell’archivio di livello principale che include tutte le risorse che un utente può voler elencare nel componente Ricerca e listener. Se lo desideri, l’utente può anche configurare posizioni specifiche all’interno del percorso di base dalla finestra di dialogo di modifica del componente, in modo che la ricerca venga attivata su posizioni specifiche anziché cercare tutti i nodi all’interno del percorso di base. Per impostazione predefinita, il percorso di base viene utilizzato come criterio del percorso di ricerca per recuperare le risorse, a meno che l’utente non configuri un set di percorsi specifici dall’interno di questa posizione. È importante avere un valore ottimale di questo percorso per fare una ricerca performante. Il valore predefinito del percorso di base rimarrà invariato **_/content/dam/formsanddocuments_** perché tutte le risorse AEM Forms risiedono in **_/content/dam/formsanddocuments._**
 
 Passaggi per configurare il percorso di base
 
@@ -48,7 +48,7 @@ Passaggi per configurare il percorso di base
 1. Modifica il valore della proprietà path in **&quot;/content/dam&quot;**
 1. Fai clic su Salva
 
-Specificando la proprietà del percorso su **&quot;/content/dam&quot;** si sta fondamentalmente impostando Base Path su /content/dam. Per verificarlo, apri il componente Ricerca e filtro .
+Specificando la proprietà del percorso in **&quot;/content/dam&quot;** stai impostando Base Path su /content/dam. Per verificarlo, apri il componente Ricerca e filtro .
 
 ![basepath](assets/basepath.png)
 
@@ -63,7 +63,7 @@ Specificando la proprietà del percorso su **&quot;/content/dam&quot;** si sta f
 
 **Passaggi per registrare il tipo di risorsa personalizzato**
 
-1. Crea un nodo di sovrapposizione di **/libs/fd/fp/extensions/querybuilder/assettypes**
+1. Crea un nodo sovrapposto di **/libs/fd/fp/extensions/querybuilder/assettypes**
 
 1. Imposta il percorso di sovrapposizione su &quot;/apps&quot;
 1. Passa alla nuova struttura creata in **/apps/fd/fp/extensions/querybuilder/assettypes **
@@ -89,7 +89,6 @@ Dopo aver eseguito i passaggi precedenti, il nuovo tipo di risorsa (File Mp4) in
 
 ![mp4files](assets/mp4files.png)
 
-[In caso di problemi durante il funzionamento, puoi importare il pacchetto seguente.](assets/assettypeskt1.zip) Il pacchetto presenta due tipi di risorse personalizzate definiti. File Mp4 e documenti Worddocuments. Suggerisci di dare un&#39;occhiata a **/apps/fd/fp/extensions/querybuilder/assettypes**
+[In caso di problemi durante il funzionamento, puoi importare il pacchetto seguente.](assets/assettypeskt1.zip) Il pacchetto presenta due tipi di risorse personalizzate definiti. File Mp4 e documenti Worddocuments. Suggerisci di dare un&#39;occhiata al **/apps/fd/fp/extensions/querybuilder/assettypes**
 
-[Installa il pacchetto](assets/customportalpage.zip) customeportal. Questo pacchetto contiene la pagina del portale di esempio. Questa pagina verrà utilizzata nella parte 2 di questa esercitazione
-
+[Installa il pacchetto customeportal](assets/customportalpage.zip). Questo pacchetto contiene la pagina del portale di esempio. Questa pagina verrà utilizzata nella parte 2 di questa esercitazione

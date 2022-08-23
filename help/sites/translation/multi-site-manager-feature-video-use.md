@@ -1,36 +1,36 @@
 ---
 title: Utilizzo di Multi-Site Manager con AEM Sites
-seo-title: Utilizzo di interfacce utente touch di Multi Site Manager con Adobe Experience Manager
+seo-title: Using Multi Site Manager Touch UI Interfaces with Adobe Experience Manager
 description: Panoramica di Live Copy e Gestione configurazione Blueprint sono interfacce con interfaccia touch abilitate per l’utilizzo con Multi Site Manager.
-seo-description: Panoramica di Live Copy e Gestione configurazione Blueprint sono interfacce abilitate per l’interfaccia utente touch per l’utilizzo di Multi Site Manager con Adobe Experience Manager.
-feature: Gestione di più siti
+seo-description: Live Copy Overview and Blueprint Configuration Manager are Touch UI Enabled interfaces for working with Multi Site Manager with Adobe Experience Manager.
+feature: Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 uuid: 76f295d0-78dd-429c-9129-9182b3a706a6
 discoiquuid: a0dc581e-300f-45ef-916a-1cbac0429899
-topic: Localizzazione
+topic: Localization
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 00746678-da23-4d0a-b775-e1de4ed87c56
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 6%
+source-wordcount: '138'
+ht-degree: 14%
 
 ---
 
-
 # Utilizzo di Multi-Site Manager {#using-multi-site-manager-with-aem-sites}
 
-[!UICONTROL Live Copy ] Overview e  [!UICONTROL Blueprint Configuration ] Manager sono interfacce AEM Author per l’utilizzo della funzione Multi Site Manager di Adobe Experience Manager Sites.
+[!UICONTROL Panoramica di Live Copy] e [!UICONTROL Gestione configurazione blueprint] sono interfacce AEM Author per l’utilizzo delle funzioni Multi Site Manager di Adobe Experience Manager Sites.
 
 ## Panoramica Live Copy {#live-copy-overview}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17054/?quality=9&learn=on)
 
-*Panoramica di Live Copy è un’interfaccia utente touch utilizzata per gestire le Live Copy e i rispettivi progetti. Questa funzione, introdotta in AEM 6.3, sostituisce il Centro di controllo Blueprint dell&#39;interfaccia classica.*
+*Panoramica di Live Copy è un’interfaccia utente touch utilizzata per gestire le Live Copy e i rispettivi progetti. Questa funzione, introdotta in AEM 6.3, sostituisce il Centro di controllo Blueprint dell’interfaccia classica.*
 
 ## Gestione configurazione Blueprint - Interfaccia touch {#blueprint-config-mgr}
 
@@ -40,6 +40,6 @@ ht-degree: 6%
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Console Panoramica di Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
+* [Panoramica Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
 * [Creazione e sincronizzazione di Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
 * [Best practice MSM](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-best-practices.html)

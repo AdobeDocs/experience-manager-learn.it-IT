@@ -5,27 +5,28 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
+version: Cloud Service
 topic: Development
 kt: 9534
-source-git-commit: cea9a9dc003b76369db1b7fedb9549062885258d
+exl-id: c2cd9c52-6f00-4cfe-a972-665093990e5d
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 1%
 
 ---
 
-# Migrating from old aem archetype
+# Migrazione dal vecchio archetipo di aem
 
 Per aggiornare il progetto AEM Forms esistente con l’archetipo maven più recente, dovrai copiare manualmente il codice/configurazioni ecc. dal vecchio progetto al nuovo progetto.
 
-The following steps were followed to migrate the project created using archetype 30 to archetype 33 project
+Sono stati seguiti i seguenti passaggi per migrare il progetto creato utilizzando archetype 30 al progetto archetype 33
 
 ## Crea un progetto Maven utilizzando l’archetipo più recente
 
 * Apri il prompt dei comandi e passa a c:\cloudmanager
-* Create maven project using the latest archetype.
-* Copia e incolla il contenuto del [file di testo](assets/creating-maven-project.txt) nella finestra del prompt dei comandi. Potrebbe essere necessario modificare il DarchetypeVersion=33 a seconda del [versione più recente](https://github.com/adobe/aem-project-archetype/releases). Archetype 33 includes new AEM Forms themes.
+* Crea un progetto maven utilizzando l’archetipo più recente.
+* Copia e incolla il contenuto del [file di testo](assets/creating-maven-project.txt) nella finestra del prompt dei comandi. Potrebbe essere necessario modificare il DarchetypeVersion=33 a seconda del [versione più recente](https://github.com/adobe/aem-project-archetype/releases). Archetype 33 include nuovi temi AEM Forms.
 Poiché stiamo creando il nuovo progetto maven nella cartella cloudmanager che dispone già di un progetto aem-banking-application, è necessario modificare il **DartifactId** dall&#39;applicazione aem-banking a qualcosa di diverso. Ho usato aem-banking-application1 per questo articolo.
 
 >[!NOTE]
@@ -44,7 +45,7 @@ a
 * Copiare CustomSubmit da
    ```C:\CloudManager\aem-banking-application\ui.apps\src\main\content\jcr_root\apps\bankingapplication\SubmitToAEMServlet``` dall’applicazione aem-banking al progetto aem-banking-application1
 
-* import the new project into IntelliJ
+* importare il nuovo progetto in IntelliJ
 
 * Aggiorna il filter.xml nel modulo ui.apps del progetto aem-banking-application1 per includere la seguente riga
    ```<filter root="/apps/bankingapplication/SubmitToAEMServlet"/>```

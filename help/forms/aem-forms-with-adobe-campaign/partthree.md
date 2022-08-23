@@ -1,14 +1,15 @@
 ---
 title: Precompilazione del modulo adattivo tramite il profilo ACS
 description: Precompilazione di Forms adattivo utilizzando il profilo ACS
-feature: Forms adattivo, modello dati modulo
-version: 6.3,6.4,6.5
-topic: Sviluppo
+feature: Adaptive Forms, Form Data Model
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 502f4bdf-d4af-409f-a611-62b7a1a6065a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '333'
 ht-degree: 1%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 In questa parte, precompileremo il Modulo adattivo con le informazioni sul profilo recuperate da ACS. AEM Forms dispone di questa potente funzionalità per precompilare i moduli adattivi.
 
-Per ulteriori informazioni sulla precompilazione dei moduli adattivi, consulta questa [esercitazione](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
+Per ulteriori informazioni sulla precompilazione dei moduli adattivi, leggere questo [tutorial](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
 Per precompilare il modulo adattivo recuperando i dati da ACS, supponiamo che ci sia un profilo in ACS che ha la stessa e-mail dell’utente connesso AEM. Ad esempio, se l’ID e-mail della persona che ha effettuato l’accesso a AEM è csimms@adobe.com, si prevede di trovare un profilo in ACS la cui e-mail è csimms@adobe.com.
 
@@ -35,7 +36,7 @@ Associazione del servizio di precompilazione a un modulo adattivo
 
 Di seguito è riportato il codice per recuperare e restituire le informazioni sul profilo da ACS.
 
-Alla riga 68 recuperiamo l’ID e-mail dell’utente AEM. I dettagli del profilo vengono recuperati effettuando una chiamata REST ad Adobe Campaign Standard. Dai dettagli del profilo recuperati, il documento XML viene costruito in un modo comprensibile per AEM Forms. Il flusso di input di questo documento viene restituito per essere utilizzato da AEM Forms.
+Alla riga 68 recuperiamo l’ID e-mail dell’utente AEM. I dettagli del profilo vengono recuperati effettuando una chiamata REST ad Adobe Campaign Standard. Dai dettagli del profilo recuperati, il documento XML viene costruito in un modo comprensibile per AEM Forms. Il flusso di input di questo documento viene restituito per il consumo da AEM Forms.
 
 ```java
 package aemforms.campaign.core;
@@ -231,6 +232,5 @@ Per far funzionare questo sistema, segui le seguenti istruzioni:
 
 * [Assicurati di aver seguito i passaggi descritti qui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Importare un modulo adattivo di esempio in AEM utilizzando il gestore dei pacchetti](assets/pre-fill-af-from-campaign.zip)
-* Assicurati di accedere a AEM con un utente il cui ID e-mail è condiviso da un profilo in Adobe Campaign. Ad esempio, se l’ID e-mail dell’utente AEM è johndoe@adobe.com, è necessario avere un profilo in ACS la cui e-mail è johndoe@adobe.com.
+* Assicurati di accedere a AEM con un utente il cui ID e-mail è condiviso da un profilo in Adobe Campaign. Ad esempio, se l’ID e-mail dell’utente AEM è johndoe@adobe.com, è necessario avere un profilo in ACS il cui indirizzo e-mail è johndoe@adobe.com.
 * [Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
-

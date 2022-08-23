@@ -1,27 +1,27 @@
 ---
 title: Distribuzione di frammenti di contenuto in AEM
-seo-title: Distribuzione di frammenti di contenuto in Adobe Experience Manager
+seo-title: Delivering Content Fragments in Adobe Experience Manager
 description: I frammenti di contenuto, indipendentemente dal layout, possono essere utilizzati direttamente in AEM Sites con i componenti core o possono essere consegnati in modo headless ai canali a valle.
-seo-description: I frammenti di contenuto, indipendentemente dal layout, possono essere utilizzati direttamente in AEM Sites con i componenti core o possono essere consegnati in modo headless ai canali a valle.
+seo-description: Content Fragments, independent of layout, can be used directly in AEM Sites with Core Components or can be delivered in a headless manner to downstream channels.
 sub-product: content-services
-feature: Frammenti di contenuto
+feature: Content Fragments
 topics: authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 uuid: 045473d2-5abe-4414-b91c-d369f3069ead
 discoiquuid: 912e0c41-83cf-49f7-b515-09519b6718c1
-topic: Gestione dei contenuti
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 525cd30c-05bf-4f17-b61b-90609ce757ea
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 2%
+source-wordcount: '548'
+ht-degree: 5%
 
 ---
-
 
 # Distribuzione di frammenti di contenuto {#delivering-content-fragments}
 
@@ -29,7 +29,7 @@ Adobe Experience Manager (AEM) I frammenti di contenuto sono contenuti editorial
 
 I frammenti di contenuto, indipendentemente dal layout, possono essere utilizzati direttamente in AEM Sites con i componenti core o possono essere consegnati in modo headless ai canali a valle.
 
-Questa serie video illustra le opzioni di consegna per l’utilizzo dei frammenti di contenuto. I dettagli sulla definizione e la [creazione di frammenti di contenuto sono disponibili qui](content-fragments-feature-video-use.md).
+Questa serie video illustra le opzioni di consegna per l’utilizzo dei frammenti di contenuto. Dettagli su definizione e [authoring I frammenti di contenuto sono disponibili qui](content-fragments-feature-video-use.md).
 
 1. Utilizzo di frammenti di contenuto nelle pagine web
 2. Esposizione di frammenti di contenuto come JSON tramite AEM Content Services
@@ -39,7 +39,7 @@ Questa serie video illustra le opzioni di consegna per l’utilizzo dei framment
 
 >[!VIDEO](https://video.tv.adobe.com/v/22449/?quality=12&learn=on)
 
-I frammenti di contenuto possono essere utilizzati nelle pagine AEM Sites o in modo simile, nei frammenti esperienza, utilizzando il componente [Frammento di contenuto ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) dei componenti core di AEM WCM.
+I frammenti di contenuto possono essere utilizzati nelle pagine AEM Sites o in modo simile, nei frammenti di esperienza, utilizzando i componenti core di AEM WCM [Componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it).
 
 I componenti Frammento di contenuto possono essere formattati utilizzando AEM sistema di stili per visualizzare il contenuto in base alle esigenze.
 
@@ -49,7 +49,7 @@ I componenti Frammento di contenuto possono essere formattati utilizzando AEM si
 
 AEM Content Services facilita la creazione di AEM endpoint HTTP basati su pagina che eseguono il rendering del contenuto in un formato JSON normalizzato.
 
-Il video precedente utilizza il [componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) per esporre singoli frammenti di contenuto. Il [componente Elenco frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html) è un nuovo componente che consente all’autore di definire una query per la compilazione dinamica della pagina con un elenco di frammenti di contenuto. Il componente Elenco frammenti di contenuto è preferibile quando è necessario esporre più frammenti di contenuto.
+Il video di cui sopra utilizza il [Componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) per esporre singoli frammenti di contenuto. La [Componente Elenco frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html) è un nuovo componente che consente all’autore di definire una query che popolerà in modo dinamico la pagina con un elenco di frammenti di contenuto. Il componente Elenco frammenti di contenuto è preferibile quando è necessario esporre più frammenti di contenuto.
 
 *Esempio di payload JSON end-point di Content Services:*\
 **[atleti.json](assets/athletes.json)**
@@ -69,7 +69,7 @@ Introdotto in AEM 6.5, viene migliorato il supporto per i frammenti di contenuto
 
 L’approccio alla distribuzione di un frammento di contenuto tramite un canale web è semplice utilizzando il componente Frammento di contenuto con AEM Sites.
 
-### Senza testa
+### Headless
 
 Esistono due opzioni per esporre Frammento di contenuto come JSON per supportare un canale di terze parti in un caso d’uso headless:
 

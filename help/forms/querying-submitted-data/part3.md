@@ -1,24 +1,24 @@
 ---
 title: AEM Forms con schema e dati JSON[Parte3]
-seo-title: AEM Forms con schema e dati JSON[Parte3]
+seo-title: AEM Forms with JSON Schema and Data[Part3]
 description: Esercitazione in più parti per illustrarti i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
-seo-description: Esercitazione in più parti per illustrarti i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
-feature: Moduli adattivi
+seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
-topic: Sviluppo
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 412eea77-3cf4-43bb-9d2f-ae860cd9d3be
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 1%
+source-wordcount: '253'
+ht-degree: 0%
 
 ---
-
 
 # Memorizzazione dello schema JSON nel database {#storing-json-schema-in-database}
 
@@ -152,5 +152,3 @@ Per riassumere, abbiamo fatto quanto segue
 * I dati associati al modulo adattivo vengono memorizzati nel database.
 
 I passaggi successivi consistono nell’utilizzo di QueryBuilder per visualizzare i campi da cercare in base allo schema JSON
-
-

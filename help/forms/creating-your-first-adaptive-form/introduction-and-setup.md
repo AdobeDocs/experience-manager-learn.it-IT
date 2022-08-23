@@ -1,18 +1,18 @@
 ---
 title: Guida Introduttiva Ad Adaptive Forms
-description: 'Questa esercitazione illustra i passaggi necessari per creare un modulo adattivo con più schede. Scoprirai come utilizzare le tabelle, il layout a soffietto e l’editor di regole per creare regole di business. '
-feature: Moduli adattivi
-version: 6.3,6.4,6.5
-topic: Sviluppo
+description: Questa esercitazione illustra i passaggi necessari per creare un modulo adattivo con più schede. Scoprirai come utilizzare le tabelle, il layout a soffietto e l’editor di regole per creare regole di business.
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 8c90fe1c-0c83-4287-9766-08d806b8815a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 4%
+source-wordcount: '207'
+ht-degree: 2%
 
 ---
-
 
 # Guida Introduttiva Ad Adaptive Forms {#getting-started-with-adaptive-forms}
 
@@ -30,8 +30,6 @@ Sarà necessario quanto segue:
 
 * **Si presume che tu stia eseguendo AEM Forms versione 6.4 o successiva su localhost:4502.**
 
-* [Scarica il ](assets/client-libs-and-logo.zip) file client-libs-and-logo e  [getting-started-](assets/getting-started-fragment.zip) fragmentato sul disco rigido.
+* [Scarica il client-libs-and-logo](assets/client-libs-and-logo.zip) e [getting-started-fragment](assets/getting-started-fragment.zip) sul disco rigido.
 
 * Importa i file zip in AEM utilizzando [gestore di pacchetti ](http://localhost:4502/crx/packmgr/index.jsp)
-
-

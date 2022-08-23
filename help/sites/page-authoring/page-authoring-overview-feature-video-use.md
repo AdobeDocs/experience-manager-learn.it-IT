@@ -1,26 +1,26 @@
 ---
 title: Creazione di una pagina in AEM Sites
-seo-title: Il video seguente illustra come creare una nuova pagina in Adobe Experience Manager Sites utilizzando l’interfaccia utente dell’Editor sito
+seo-title: The following video highlights how to author a new page in Adobe Experience Manager Sites using the Site Editor's UI
 description: Il video seguente illustra come creare una nuova pagina in Adobe Experience Manager Sites utilizzando l’interfaccia utente dell’Editor sito
-seo-description: Il video seguente illustra come creare una nuova pagina in Adobe Experience Manager Sites utilizzando l’interfaccia utente dell’Editor sito
-feature: Editor pagina, Modelli modificabili
+seo-description: The following video highlights how to author a new page in Adobe Experience Manager Sites using the Site Editor's UI
+feature: Page Editor, Editable Templates
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 kt: 4497
 thumbnail: 31828.jpg
-topic: Gestione dei contenuti
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: a14c511f-504a-48ce-864b-b1a30cbaea9a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 12%
+source-wordcount: '132'
+ht-degree: 21%
 
 ---
-
 
 # Creazione di una pagina {#authoring-page-aem-sites}
 
@@ -34,7 +34,7 @@ In questo video vengono descritte le seguenti funzionalità o funzionalità:
 * Introduce diverse modalità di authoring per una pagina
    * Modifica
    * Layout
-   * Developer (Sviluppatore)
+   * Sviluppatore
    * Timewarp  
 * Funzioni dell’Editor pagina
    * Finder componente
@@ -49,5 +49,5 @@ In questo video vengono descritte le seguenti funzionalità o funzionalità:
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Modifica della documentazione del contenuto di una pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
+* [Modifica della documentazione del contenuto di una pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it)
 * [Guida rapida all’authoring delle pagine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
