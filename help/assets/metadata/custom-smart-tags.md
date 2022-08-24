@@ -2,14 +2,14 @@
 title: Tag avanzati personalizzati per le immagini in AEM Assets
 description: Scopri come addestrare i tag avanzati di AEM Assets per applicare termini personalizzati alle risorse.
 feature: Smart Tags
-version: 6.4, 6.5, Cloud Services
+version: 6.4, 6.5, Cloud Service
 kt: 795
 thumbnail: 22254.jpg
 topic: Content Management
 role: Developer
 level: Intermediate
 exl-id: 06f2ae4d-c18e-45ed-96d7-ddc6f9c8d829
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: d7b1ab815d9c8a0d0342f7b57d1efb08fb39a26a
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 1%
@@ -26,9 +26,9 @@ La funzione Tag avanzati personalizzati per le immagini consente di addestrare l
 ## Impostazione di tag avanzati personalizzati per le immagini per AEM 6.x{#set-up}
 
 >[!NOTE]
-> Tag avanzati personalizzati per le immagini viene automaticamente fornito per AEM come Cloud Service.
+> Il provisioning automatico di tag avanzati personalizzati per le immagini viene eseguito automaticamente per AEM as a Cloud Service.
 
-Tag avanzati personalizzati per le immagini richiede [Tag avanzati per le immagini da configurare](./image-smart-tags.md#set-up).
+Tag avanzati personalizzati per le immagini richiedono [Tag avanzati per le immagini da configurare](./image-smart-tags.md#set-up).
 
 Scopri come configurare la formazione sui tag avanzati in AEM Assets, utilizzando il Servizio di contenuti avanzati e l’Adobe I/O . Tag avanzati personalizzati per le immagini
 
@@ -36,4 +36,4 @@ Scopri come configurare la formazione sui tag avanzati in AEM Assets, utilizzand
 
 ## Risorse aggiuntive
 
-* AEM 6.4 richiede l&#39; [Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64) più recente.
+* AEM 6.4 richiede [Service Pack più recente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
