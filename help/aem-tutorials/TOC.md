@@ -2,23 +2,24 @@
 doc-type: tutorial
 user-guide-title: Esercitazioni su AEM
 index: y
-source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
+source-git-commit: ebe252116f677ff7486346077736d0ee450896c1
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 38%
+source-wordcount: '128'
+ht-degree: 34%
 
 ---
 
 
-# Esercitazioni su AEM {#aem-tutorials}
+# Esercitazioni di Experience Manager {#aem-tutorials}
 
-+ [Panoramica dei Tutorials AEM](overview.md)
++ [Esercitazioni AEM](overview.md)
 + [AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 + [AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
 + [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/overview.html)
 + [AEM come Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 + [AEM senza testa](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 + [AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
++ [Guide AEM](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html)
 + Tutorials multipli {#multi}
    + [Guida introduttiva di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Guida introduttiva AEM Editor e React](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
