@@ -12,10 +12,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: d33c033a-9577-4d4e-99be-f3c7e2a4ce73
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 9aae58c3301a7067baca374d6499f1afc3c95b06
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 5%
+source-wordcount: '383'
+ht-degree: 9%
 
 ---
 
@@ -25,18 +25,23 @@ I frammenti di contenuto sono un’astrazione di contenuto in AEM che consente d
 
 I frammenti di contenuto AEM sono contenuti editoriali basati su testo che possono includere alcuni elementi di dati strutturati associati ma considerati di contenuto puro senza informazioni di progettazione o layout. I frammenti di contenuto vengono generalmente creati come contenuti indipendenti dai canali, destinati ad essere utilizzati e riutilizzati su più canali, che a loro volta racchiudono il contenuto in un’esperienza specifica per il contesto.
 
-Questa serie video illustra il ciclo di vita dell’authoring di Frammenti di contenuto in AEM. I dettagli sulla [consegna dei frammenti di contenuto sono disponibili qui](content-fragments-delivery-feature-video-use.md).
+Questa serie video illustra il ciclo di vita dell’authoring di Frammenti di contenuto in AEM. Dettagli su [la distribuzione di frammenti di contenuto è disponibile qui](content-fragments-delivery-feature-video-use.md).
 
 1. Abilitazione e definizione dei modelli di frammenti di contenuto
 2. Authoring di frammenti di contenuto
 3. Download di frammenti di contenuto
 4. Funzionalità editoriali
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_admin_content_fragments"
+>title="Gestisci frammenti"
+>abstract="Scopri come i frammenti di contenuto ti consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina."
+
 ## Definizione dei modelli di frammenti di contenuto {#defining-content-fragment-models}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
-AEM Modelli per frammenti di contenuto, gli schemi di dati dei frammenti di contenuto, devono essere attivati tramite AEM [[!UICONTROL Browser di configurazione]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html), che consente di definire modelli per frammenti di contenuto in base alla configurazione.
+AEM Modelli per frammenti di contenuto, gli schemi di dati dei frammenti di contenuto, devono essere attivati tramite AEM [[!UICONTROL Browser di configurazione]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=it), che consente di definire modelli di frammenti di contenuto in base alla configurazione.
 
 ## Creazione di frammenti di contenuto {#creating-content-fragments}
 
@@ -64,17 +69,17 @@ AEM frammenti di contenuto possono essere scaricati da AEM Author come file ZIP 
 
 >[!NOTE]
 >
-> L’annotazione e il confronto delle versioni per i frammenti di contenuto sono stati introdotti in [AEM 6.4 Service Pack 2](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=it) e [AEM 6.3 Service Pack 3](https://helpx.adobe.com/it/experience-manager/6-3/release-notes/sp3-release-notes.html).
+> L’annotazione e il confronto delle versioni per i frammenti di contenuto sono stati introdotti in [AEM 6.4 Service Pack 2](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html) e [AEM 6.3 Service Pack 3](https://helpx.adobe.com/it/experience-manager/6-3/release-notes/sp3-release-notes.html).
 
 ## Passaggi successivi
 
-Scopri [come distribuire frammenti di contenuto](content-fragments-delivery-feature-video-use.md).
+Scopri [distribuzione di frammenti di contenuto](content-fragments-delivery-feature-video-use.md).
 
 ## Risorse aggiuntive {#additional-resources}
 
 * [Distribuzione di frammenti di contenuto](content-fragments-delivery-feature-video-use.md)
 * [AEM componenti core WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
-* [AEM componente Frammento di contenuto core WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [AEM componente Frammento di contenuto core WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it)
 
 Per scaricare e installare il pacchetto qui sotto su un&#39;istanza AEM 6.4+ per lo stato finale dalla serie video:
 
