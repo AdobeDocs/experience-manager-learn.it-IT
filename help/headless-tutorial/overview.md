@@ -7,20 +7,25 @@ role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
+source-git-commit: b20a29e67da0bcbf53ae8089a7cde0dfde800214
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '517'
 ht-degree: 7%
 
 ---
 
-# AEM Tutorials headless
+# AEM Tutorials headless{#aem-headless-tutorials}
 
 Adobe Experience Manager (AEM) offre diverse opzioni per definire endpoint headless e distribuire il relativo contenuto come JSON. Utilizza i tutorial pratici per scoprire come utilizzare le varie opzioni e scegliere ciò che fa per te.
 
 >[!TIP]
 >
 >Questa raccolta di esercitazioni è progettata per gli utenti che preferiscono **imparare facendo**. Se preferisci imparare i concetti da zero, controlla la [AEM Percorso di sviluppatori headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Questa serie di esercitazioni e il percorso si completano a vicenda.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_edit_inline_content"
+>title="Modificare il contenuto in linea"
+>abstract="Scopri come modificare il contenuto direttamente nella pagina a cui si fa riferimento utilizzando il set di funzioni headless."
 
 ## Tutorials per API
 
