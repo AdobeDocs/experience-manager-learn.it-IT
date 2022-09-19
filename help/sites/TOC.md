@@ -3,10 +3,10 @@ user-guide-title: Video e tutorial su AEM Sites
 user-guide-description: Raccolta di video e tutorial su Adobe Experience Manager Sites.
 breadcrumb-title: Tutorial su AEM Sites
 feature-set: Experience Manager Sites, Experience Manager
-source-git-commit: 552e5fbeb5dafc6d82763d5c3b31cc6d17131739
+source-git-commit: 798b366a5add2831bf60a8d89968bad16e48802c
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 31%
+source-wordcount: '434'
+ht-degree: 29%
 
 ---
 
@@ -48,6 +48,8 @@ ht-degree: 31%
    + [Utilizzo di Frammenti esperienza](experience-fragments/experience-fragments-feature-video-use.md)
    + [Blocchi predefiniti](experience-fragments/building-blocks.md)
    + [Frammenti di contenuto e frammenti esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
+   + Consulenza esperta {#expert-advice}
+      + [Suggerimenti per i frammenti di contenuto](content-fragments/expert-advice/content-fragments.md)
 + Sviluppo {#developing}
    + [Archetipo progetto AEM](developing/aem-project-archetype.md)
    + [Guida introduttiva di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)
@@ -113,3 +115,8 @@ ht-degree: 31%
       + [Creare attività Target tramite le offerte dei frammenti esperienza](integrations/adobe-target/create-target-activity.md)
       + [Personalizzazione tramite Compositore esperienza visivo](integrations/adobe-target/personalization-using-vec.md)
       + [Personalizzazione dell’esperienza di pagina web completa](integrations/adobe-target/personalization-web-page.md)
++ Risorse esperte {#expert-resources}
+   + [Valutazione della maturità di AEM Sites](expert-resources/maturity-assessment.md)
+   + [Manutenzione del sito](expert-resources/site-maintenance.md)
+   + [Suggerimenti e trucchi per i campioni AEM: Sessione 1](expert-resources/champion-tips-1.md)
+   + [Suggerimenti e trucchi per i campioni AEM: Sessione 2](expert-resources/champion-tips-2.md)
