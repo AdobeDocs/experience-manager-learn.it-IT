@@ -8,10 +8,10 @@ user-guide-title: 'Guida introduttiva ai AEM Sites: esercitazione WKND'
 user-guide-description: Un tutorial in più parti per sviluppatori che non hanno mai utilizzato AEM. Implementa un sito AEM per un brand fittizio del settore lifestyle, il WKND. Abilita la pipeline front-end per velocizzare lo sviluppo al ciclo di distribuzione.
 breadcrumb-title: Tutorial WKND di AEM Sites
 index: y
-source-git-commit: 96e1c95b7cd672aa5d4f79707735abc86dae7b8a
+source-git-commit: 2e3615e9e9305165ca9c3c93b38ac7e9bdcc51fb
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 43%
+source-wordcount: '108'
+ht-degree: 37%
 
 ---
 
@@ -37,5 +37,8 @@ ht-degree: 43%
    + [5 - Tema](./site-template/theming.md)
 + Abilita pipeline front-end - DevOps{#enable-frontend-pipeline-devops}
    + [Panoramica](./enable-frontend-pipeline/overview.md)
-
+   + [1 - Revisione del progetto completo dello stack](./enable-frontend-pipeline/review-uifrontend-module.md)
+   + [2 - Aggiornare il progetto per l’utilizzo della pipeline front-end](./enable-frontend-pipeline/update-project.md)
+   + [3 - Distribuzione tramite la pipeline front-end](./enable-frontend-pipeline/create-frontend-pipeline.md)
+   + [4 - Considerazioni](./enable-frontend-pipeline/considerations.md)
 
