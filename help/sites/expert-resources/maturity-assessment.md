@@ -3,7 +3,7 @@ title: Gerarchia del sito, tassonomia e suggerimenti per l’assegnazione tag
 description: Gerarchia del sito, tassonomia e suggerimenti per l’assegnazione tag Best practice
 hide: true
 hidefromtoc: true
-source-git-commit: 6f4d811e796b34985fa9d5af335239948e59c1ef
+source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 1%
@@ -34,3 +34,4 @@ Nella maggior parte dei casi, la valutazione della scadenza AEM aiuterà a esegu
 Settori di interesse consigliati per la valutazione AEM scadenza: Progettazione e architettura, gestione e strategia dei prodotti, gestione e distribuzione delle risorse digitali, Analytics, test e sicurezza.
 
 Grande grido per AEM Champion Greg Dimeris per aggregare queste informazioni da più articoli Experienci League così come le sue migliori pratiche!
+
