@@ -1,11 +1,24 @@
 ---
 title: Gerarchia del sito, tassonomia e suggerimenti per l’assegnazione tag
-description: Gerarchia del sito, tassonomia e suggerimenti per l’assegnazione tag Best practice
+seo-title: Overview of Authoring in AEM Sites
+description: Il video seguente offre una panoramica dei concetti di base dell’authoring in un ambiente di authoring AEM. Usa la console Sites come base.
+seo-description: The following video provides an overview of basic concepts of authoring in an AEM author environment. It uses the Sites console as a basis.
+feature: Page Editor, Editable Templates
+topics: authoring, publishing
+audience: author, marketer
+doc-type: feature video
+activity: use
+version: 6.4, 6.5, Cloud Service
+kt: 4242
+thumbnail: 33594.jpg
+topic: Content Management
+role: User
+level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
+source-git-commit: 3335069883db38a2748af114ab7505cc34dec270
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2033'
 ht-degree: 0%
 
 ---
@@ -16,8 +29,6 @@ ht-degree: 0%
 I metadati e i tag sono fondamentali per aumentare l’efficienza in AEM. Utenti, leader e dirigenti si rendono conto della necessità di una strategia olistica, ma trovano difficile fare progressi. Spesso la conoscenza viene messa a tacere tra gli utenti, rendendo la strategia olistica difficile e rende gli aggiustamenti ancora più problematici.
 
 Qual è la differenza tra metadati e tag? Quali sono gli aspetti aziendali da considerare quando si guida la strategia?
-
-È possibile trovare un riepilogo più approfondito [qui](https://adobe.sharepoint.com/:w:/r/sites/ACSSuccessServices/_layouts/15/Doc.aspx?sourcedoc=%7BFE5E873A-A3B6-4F40-BF22-A2C9F1269802%7D&amp;file=AEM_TagTaxonomyAndMetadata_BestPractice_en%20(2).docx&amp;action=default&amp;mobileredirect=true).
 
 ## Qual è lo scopo dei metadati?
 

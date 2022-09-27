@@ -1,11 +1,12 @@
 ---
-title: Gerarchia del sito, tassonomia e suggerimenti per l’assegnazione tag
-description: Gerarchia del sito, tassonomia e suggerimenti per l’assegnazione tag Best practice
-hide: true
-hidefromtoc: true
-source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
+title: Valutazione della maturità AEM Sites
+seo-title: AEM Sites Maturity Assessment
+description: Questa lista di controllo fornisce una panoramica delle domande chiave a cui tu e il tuo team dovreste rispondere durante la valutazione della maturità della tua istanza AEM Sites
+seo-description: This checklist provides an overview of key questions you and your team should be answering when evaluating the maturity of your AEM Sites instance
+audience: author, marketer, developer
+source-git-commit: 3335069883db38a2748af114ab7505cc34dec270
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '332'
 ht-degree: 1%
 
 ---
