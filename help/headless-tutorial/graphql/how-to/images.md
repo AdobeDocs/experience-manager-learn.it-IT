@@ -9,14 +9,14 @@ level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 68970493802c7194bcb3ac3ac9ee10dbfb0fc55d
+source-git-commit: 332ad831b6c49e8599aa2181caf978d5626c1aba
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1171'
 ht-degree: 2%
 
 ---
 
-# Immagini con AEM headless
+# Immagini con AEM headless {#images-with-aem-headless}
 
 Le immagini sono un aspetto fondamentale [sviluppo di esperienze ricche e coinvolgenti AEM senza testa](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=it). AEM Headless supporta la gestione delle risorse di immagini e la loro distribuzione ottimizzata.
 
@@ -39,6 +39,11 @@ I campi vengono utilizzati al meglio in base ai seguenti criteri:
 | `_publishUrl` | ✘ | ✘ | ↓ |
 
 Utilizzo di `_authorUrl` e `_publishUrl` deve essere allineato con l’endpoint GraphQL AEM utilizzato per la risposta GraphQL.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_learn_headless_graphql_images"
+>title="Uso delle immagini"
+>abstract="Scopri come AEM Headless supporta la gestione delle risorse di immagini e la loro distribuzione ottimizzata."
 
 ## Modello per frammenti di contenuto
 
