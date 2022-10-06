@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: 410eb23534e083940bf716194576e099d22ca205
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1132'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 In questo capitolo scopri come modellare il contenuto e creare uno schema con **Modelli per frammenti di contenuto**. Scoprirai i diversi tipi di dati che possono essere utilizzati per definire uno schema come parte del modello.
 
-In questo capitolo verranno creati due semplici modelli, **Team** e **Persona**. La **Team** il modello dati ha nome, nome breve e descrizione e fa riferimento al **Persona** modello dati, che ha nome completo, dettagli bio, immagine profilo e elenco occupazioni.
+In questo capitolo vengono creati due modelli semplici, **Team** e **Persona**. La **Team** il modello dati ha nome, nome breve e descrizione e fa riferimento al **Persona** modello dati, che ha nome completo, dettagli bio, immagine profilo e elenco occupazioni.
 
 Puoi anche creare un tuo modello seguendo i passaggi di base e modificando i rispettivi passaggi come le query GraphQL e React App code o semplicemente seguendo i passaggi descritti in questi capitoli.
 

@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 29195c70-af12-4a22-8484-3c87a1e07378
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -153,4 +153,4 @@ Per far funzionare questo sistema, segui i seguenti passaggi
 * Fai riferimento all&#39;immagine precedente per le proprietà. Si presume che verrà utilizzato MySQL come database.
 * Distribuisci i bundle OSGi forniti come parte delle risorse di questo articolo.
 * Visualizzare l’anteprima del modulo e inviare il modulo.
-* I dati JSON verranno memorizzati nel database creato al momento dell’importazione del file &quot;schema.sql&quot;.
+* I dati JSON vengono memorizzati nel database creato al momento dell’importazione del file &quot;schema.sql&quot;.

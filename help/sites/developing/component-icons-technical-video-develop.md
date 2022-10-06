@@ -11,9 +11,9 @@ topic: Development
 role: User
 level: Intermediate
 exl-id: 37dc26aa-0773-4749-8c8b-4544bd4d5e5f
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '374'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ Le immagini PNG possono essere utilizzate per le icone dei componenti. Per confi
 
 Il PNG deve avere uno sfondo trasparente o un colore di sfondo impostato su **#707070**.
 
-Le immagini PNG verranno ridimensionate in **20 px x 20 px**. Tuttavia, per soddisfare le esigenze dei display Retina **40 px** da **40 px** potrebbe essere preferibile.
+Le immagini PNG vengono ridimensionate in **20 px x 20 px**. Tuttavia, per soddisfare le esigenze dei display Retina **40 px** da **40 px** potrebbe essere preferibile.
 
 ```plain
 /apps/.../components/content/my-component

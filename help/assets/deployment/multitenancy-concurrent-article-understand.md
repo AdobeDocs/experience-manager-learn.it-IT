@@ -1,18 +1,18 @@
 ---
 title: Multitenancy e sviluppo simultaneo
 description: Scopri i vantaggi, le sfide e le tecniche per gestire un’implementazione multi-tenant con Adobe Experience Manager Assets.
-feature: Risorse collegate
+feature: Connected Assets
 version: 6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: c9ee29d4-a8a5-4e61-bc99-498674887da5
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2022'
+source-wordcount: '2017'
 ht-degree: 0%
 
 ---
-
 
 # Multitenancy e sviluppo simultaneo {#understanding-multitenancy-and-concurrent-development}
 
@@ -43,7 +43,7 @@ Nonostante le sfide, l’esecuzione di un’applicazione multi-tenant presenta v
 * Architettura standard e pratiche di sviluppo in tutta l&#39;azienda
 * Una base di codice comune
 
-Se l&#39;azienda richiede una vera e propria multi-tenant, senza alcuna conoscenza di altri tenant e senza codice condiviso, contenuti o autori comuni, le istanze di authoring separate sono l&#39;unica opzione possibile. L&#39;aumento complessivo dello sforzo di sviluppo va confrontato con il risparmio dei costi di infrastruttura e licenze per determinare se questo approccio è il migliore.
+Se l&#39;azienda richiede una vera e propria multi-tenancy, senza alcuna conoscenza degli altri tenant e senza codice condiviso, contenuti o autori comuni, le istanze di authoring separate sono l&#39;unica opzione possibile. L&#39;aumento complessivo dello sforzo di sviluppo va confrontato con il risparmio dei costi di infrastruttura e licenze per determinare se questo approccio è il migliore.
 
 ## Tecniche di sviluppo {#development-techniques}
 
@@ -90,7 +90,7 @@ Questo non elimina la necessità che più team dipendano da e possano aggiornare
 
 Per garantire che le modifiche apportate a questo pacchetto principale non interrompano le funzionalità del sistema, si consiglia a uno sviluppatore senior o a un team di sviluppatori di mantenere il controllo. Un&#39;opzione consiste nell&#39;avere un unico team che gestisce tutte le modifiche al pacchetto; un altro consiste nell’richiedere ai team di inviare richieste di pull che siano esaminate e unite da queste risorse. È importante che un modello di governance sia progettato e concordato dai team e che gli sviluppatori lo seguano.
 
-## Gestione dell&#39;ambito di distribuzione {#managing-deployment-scope}
+## Gestione dell&#39;ambito di distribuzione  {#managing-deployment-scope}
 
 Poiché i diversi team implementano il codice nello stesso archivio, è importante che non sovrascrivano le modifiche reciproche. AEM dispone di un meccanismo per controllare questo quando si distribuiscono i pacchetti di contenuto, il filtro. file xml. È importante che non vi sia sovrapposizione tra i filtri.  file xml, altrimenti la distribuzione di un team potrebbe potenzialmente cancellare la distribuzione precedente di un altro team. Per illustrare questo punto, vedi i seguenti esempi di file di filtro ben elaborati e problematici:
 
@@ -100,7 +100,7 @@ Poiché i diversi team implementano il codice nello stesso archivio, è importan
 
 /etc/designs/my-company vs. /etc/designs/my-company/my-site
 
-Se ogni team configura in modo esplicito il file di filtro fino al sito o ai siti su cui sta lavorando, ogni team può distribuire i propri componenti, librerie client e progettazioni del sito in modo indipendente senza cancellare le rispettive modifiche.
+Se ogni team configura in modo esplicito il file di filtro fino al sito o ai siti su cui sta lavorando, ogni team può distribuire i propri componenti, librerie client e progettazioni del sito in modo indipendente, senza cancellare le rispettive modifiche.
 
 Poiché si tratta di un percorso di sistema globale e non è specifico per un sito, il seguente servlet deve essere incluso nel progetto principale, in quanto le modifiche apportate in questo caso potrebbero avere un impatto su qualsiasi team:
 
@@ -108,7 +108,7 @@ Poiché si tratta di un percorso di sistema globale e non è specifico per un si
 
 ### Sovrapposizioni {#overlays}
 
-Le sovrapposizioni vengono spesso utilizzate per estendere o sostituire funzionalità predefinite AEM, ma l’utilizzo di una sovrapposizione influisce sull’intera applicazione AEM (ovvero, eventuali modifiche di funzionalità saranno disponibili per tutti gli tenant). Ciò sarebbe ulteriormente complicato se gli inquilini avessero requisiti diversi per la sovrapposizione. Idealmente, i business group dovrebbero collaborare per concordare la funzionalità e l’aspetto delle console amministrative di AEM.
+Le sovrapposizioni vengono spesso utilizzate per estendere o sostituire la funzionalità predefinita AEM, ma l’utilizzo di una sovrapposizione influisce sull’intera applicazione AEM (ovvero, eventuali modifiche alla funzionalità sovrapposte vengono rese disponibili per tutti gli tenant). Ciò sarebbe ulteriormente complicato se gli inquilini avessero requisiti diversi per la sovrapposizione. Idealmente, i business group dovrebbero collaborare per concordare la funzionalità e l’aspetto delle console amministrative AEM.
 
 Se non si riuscirà a raggiungere un consenso tra le varie unità operative, una soluzione possibile sarebbe semplicemente quella di non utilizzare le sovrapposizioni. Al contrario, crea una copia personalizzata della funzionalità ed esporla tramite un percorso diverso per ciascun tenant. Questo consente a ogni tenant di avere un’esperienza utente completamente diversa, ma questo approccio aumenta anche i costi di implementazione e di successive attività di aggiornamento.
 
@@ -126,13 +126,13 @@ Quando si sviluppano componenti e modelli per più gruppi di authoring, è impor
 
 ### Test {#testing}
 
-Sebbene una buona architettura e canali di comunicazione aperti possano contribuire a prevenire l&#39;introduzione di difetti in aree inaspettate del sito, questi approcci non sono a prova di inganno. Per questo motivo, è importante testare completamente ciò che viene implementato sulla piattaforma prima di rilasciare qualsiasi cosa in produzione. Ciò richiede il coordinamento tra i team sui loro cicli di rilascio e rafforza la necessità di una suite di test automatizzati che coprano il maggior numero possibile di funzionalità. Inoltre, poiché un sistema sarà condiviso da più team, le prestazioni, la sicurezza e il test di caricamento diventano più importanti che mai.
+Sebbene una buona architettura e canali di comunicazione aperti possano contribuire a prevenire l&#39;introduzione di difetti in aree inaspettate del sito, questi approcci non sono a prova di inganno. Per questo motivo, è importante testare completamente ciò che viene implementato sulla piattaforma prima di rilasciare qualsiasi cosa in produzione. Ciò richiede il coordinamento tra i team sui loro cicli di rilascio e rafforza la necessità di una suite di test automatizzati che coprano il maggior numero possibile di funzionalità. Inoltre, poiché un sistema è condiviso da più team, le prestazioni, la sicurezza e i test di carico diventano più importanti che mai.
 
 ## Considerazioni operative {#operational-considerations}
 
 ### Risorse condivise {#shared-resources}
 
-AEM viene eseguito all&#39;interno di una singola JVM; tutte le applicazioni AEM distribuite in modo intrinseco condividono risorse tra loro, oltre alle risorse già utilizzate nella normale esecuzione di AEM. Nello spazio JVM stesso non vi sarà alcuna separazione logica dei thread e verranno condivise anche le risorse finite disponibili per AEM, come memoria, CPU e i/o disco. Tutte le risorse che consumano tenant influiranno inevitabilmente sugli altri tenant del sistema.
+AEM viene eseguito all&#39;interno di una singola JVM; tutte le applicazioni AEM distribuite in modo intrinseco condividono risorse tra loro, oltre alle risorse già utilizzate nella normale esecuzione di AEM. Nello spazio JVM stesso non esiste una separazione logica dei thread e vengono condivise anche le risorse finite disponibili per AEM, come la memoria, la CPU e l&#39;I/O del disco. Tutte le risorse che consumano tenant influiranno inevitabilmente sugli altri tenant del sistema.
 
 ### Spettacolo {#performance}
 
@@ -140,7 +140,7 @@ Se non si seguono AEM best practice, è possibile sviluppare applicazioni che co
 
 ### Registrazione {#logging}
 
-AEM fornisce interfacce predefinite per una configurazione affidabile del logger che può essere utilizzata a nostro vantaggio in scenari di sviluppo condivisi. Specificando logger separati per ogni marchio, per nome pacchetto, possiamo ottenere un certo grado di separazione dei log. Mentre le operazioni a livello di sistema come la replica e l’autenticazione verranno ancora registrate in una posizione centrale, il codice personalizzato non condiviso può essere registrato separatamente, facilitando le attività di monitoraggio e debug per il team tecnico di ogni marchio.
+AEM fornisce interfacce predefinite per una configurazione affidabile del logger che può essere utilizzata a nostro vantaggio in scenari di sviluppo condivisi. Specificando logger separati per ogni marchio, per nome pacchetto, possiamo ottenere un certo grado di separazione dei log. Mentre le operazioni a livello di sistema come la replica e l&#39;autenticazione verranno ancora registrate in una posizione centrale, il codice personalizzato non condiviso può essere registrato separatamente, facilitando le attività di monitoraggio e debug per il team tecnico di ogni marchio.
 
 ### Backup e ripristino {#backup-and-restore}
 

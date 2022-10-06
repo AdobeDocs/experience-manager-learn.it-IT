@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 93a177b0-7852-44da-89cc-836d127be4e7
-source-git-commit: b918afdddf1f047b478e0521883a633f7b0610c6
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '288'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ Le risorse di esempio fornite con questo articolo includono quanto segue
    ![fare clic sul profilo utente](assets/snow-1.png)
 
 * Fai clic su Gestisci password istanza
-* I dettagli dell’istanza saranno visualizzati come segue
+* I dettagli dell’istanza sono visualizzati come segue
    ![dettagli dell&#39;istanza](assets/snow-3.png)
 
 ## Verificare l’integrazione

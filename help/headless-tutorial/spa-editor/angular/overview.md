@@ -14,16 +14,16 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: f2cf4063-0b08-4b4f-91e6-70e5a148f931
-source-git-commit: 825124bc6c3be10e6822fb5fb8bd9645d242da76
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '645'
+ht-degree: 18%
 
 ---
 
 # Crea il tuo primo SPA Angular in AEM {#introduction}
 
-Ti diamo il benvenuto in un tutorial in più parti progettato per gli sviluppatori che non hanno mai utilizzato **Editor SPA** in Adobe Experience Manager (AEM). Questo tutorial illustra l’implementazione di un’applicazione Angular per un brand di lifestyle fittizio, il WKND. L’app Angular verrà sviluppata e progettata per essere implementata con AEM editor di SPA, che mappa i componenti di Angular su componenti AEM. Il SPA completato, distribuito a AEM, può essere creato dinamicamente con i tradizionali strumenti di modifica in linea di AEM.
+Ti diamo il benvenuto in un tutorial in più parti progettato per gli sviluppatori che non hanno mai utilizzato **Editor SPA** in Adobe Experience Manager (AEM). Questo tutorial illustra l’implementazione di un’applicazione Angular per un brand di lifestyle fittizio, il WKND. L’app Angular è sviluppata e progettata per essere implementata con AEM editor di SPA, che mappa i componenti di Angular su componenti AEM. Il SPA completato, distribuito a AEM, può essere creato dinamicamente con i tradizionali strumenti di modifica in linea di AEM.
 
 ![SPA finale implementato](assets/wknd-spa-implementation.png)
 
@@ -31,7 +31,7 @@ Ti diamo il benvenuto in un tutorial in più parti progettato per gli sviluppato
 
 ## Informazioni su
 
-L’obiettivo di questo tutorial in più parti è quello di insegnare a uno sviluppatore come implementare un’applicazione Angular per lavorare con la funzione Editor di SPA di AEM. In uno scenario reale le attività di sviluppo sono suddivise per persona, spesso coinvolgendo un **Sviluppatore front-end** e **Sviluppatore back-end**. Crediamo che sia utile per qualsiasi sviluppatore che sarà coinvolto in un progetto di editor SPA AEM completare questa esercitazione.
+L’obiettivo di questo tutorial in più parti è quello di insegnare a uno sviluppatore come implementare un’applicazione Angular per lavorare con la funzione Editor di SPA di AEM. In uno scenario reale le attività di sviluppo sono suddivise per persona, spesso coinvolgendo un **Sviluppatore front-end** e **Sviluppatore back-end**. Crediamo che sia utile per qualsiasi sviluppatore coinvolto in un progetto di editor di SPA AEM completare questa esercitazione.
 
 L’esercitazione è progettata per lavorare con **AEM as a Cloud Service** ed è compatibile con le versioni precedenti **AEM 6.5.4+** e **AEM 6.4.8+**. L’SPA viene implementato utilizzando:
 

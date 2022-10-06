@@ -8,9 +8,9 @@ level: Beginner
 kt: 7636
 thumbnail: kt-7636.jpeg
 exl-id: 4accc1ca-6f4b-449e-bf2e-06f19d2fe17d
-source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '916'
 ht-degree: 1%
 
 ---
@@ -176,8 +176,3 @@ Congratulazioni! Hai aggiunto la possibilità di authoring ai percorsi dinamici 
 + Contenuto scritto sulla via dinamica Bali Surf Camp!
 
 Hai completato l’esplorazione dei primi passaggi di come AEM editor di SPA può essere utilizzato per aggiungere aree modificabili specifiche a un SPA remoto.
-
-
->[!NOTE]
->
->Rimanete sintonizzati! Questa esercitazione verrà espansa per includere le best practice e raccomandazioni di Adobe su come distribuire la soluzione SPA Editor agli ambienti di produzione e as a Cloud Service AEM.

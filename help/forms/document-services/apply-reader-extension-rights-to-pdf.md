@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: ea433667-81db-40f7-870d-b16630128871
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -71,9 +71,9 @@ public class ApplyUsageRights implements ReaderExtendPDF {
 
 ## Crea un servlet per lo streaming del lettore esteso PDF
 
-Il passaggio successivo consiste nel creare un servlet con un metodo POST per restituire all’utente l’estensione del lettore PDF. In questo caso, all’utente verrà richiesto di salvare PDF nel file system. Questo perché PDF viene rappresentato come PDF dinamico e i visualizzatori pdf che sono dotati dei browser non gestiscono i pdf dinamici.
+Il passaggio successivo consiste nel creare un servlet con un metodo POST per restituire all’utente l’estensione del lettore PDF. In questo caso, all’utente viene richiesto di salvare PDF nel proprio file system. Questo perché PDF viene rappresentato come PDF dinamico e i visualizzatori pdf che sono dotati dei browser non gestiscono i pdf dinamici.
 
-Di seguito è riportato il codice del servlet. Il servlet verrà richiamato dall’azione di invio personalizzato del modulo adattivo.
+Di seguito è riportato il codice del servlet. Il servlet viene richiamato dall’azione di invio personalizzato del modulo adattivo.
 Servlet crea l&#39;oggetto UsageRights e le imposta le proprietà in base ai valori immessi dall&#39;utente nel Modulo adattivo. Il servlet chiama quindi il metodo applyUsageRights del servizio creato a questo scopo.
 
 ```java

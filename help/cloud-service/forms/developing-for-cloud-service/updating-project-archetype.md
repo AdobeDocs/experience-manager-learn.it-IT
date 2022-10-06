@@ -9,9 +9,9 @@ version: Cloud Service
 topic: Development
 kt: 9534
 exl-id: c2cd9c52-6f00-4cfe-a972-665093990e5d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '324'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Poiché stiamo creando il nuovo progetto maven nella cartella cloudmanager che d
 
 >[!NOTE]
 >
->Se si distribuisce questo nuovo progetto così com’è, l’istanza del servizio cloud non avrà HandleFormSubmission e SubmitToAEMServlet. Questo perché ogni volta che distribuisci un progetto utilizzando cloud manager, qualsiasi elemento presente nella cartella delle app verrà eliminato e sovrascritto.
+>Se si distribuisce questo nuovo progetto così com’è, l’istanza del servizio cloud non avrà HandleFormSubmission e SubmitToAEMServlet. Questo perché ogni volta che distribuisci un progetto utilizzando Cloud Manager qualsiasi elemento nel `/apps` la cartella viene eliminata e sovrascritta.
 
 ## Copia il codice java
 

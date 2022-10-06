@@ -8,10 +8,10 @@ level: Experienced
 kt: 8629
 thumbnail: 336965.jpeg
 exl-id: 310f492c-0095-4015-81a4-27d76f288138
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -91,4 +91,4 @@ Inoltre, assicurati di aver completato l&#39;esercizio pratico precedente:
 
 
 1. Distribuisci il nuovo sito wknd-legacy modernizzato sull&#39;SDK AEM locale. AEM RICHIESTA disponibile per il download qui:
-+ [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).
+   + [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).

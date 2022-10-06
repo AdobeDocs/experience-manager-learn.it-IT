@@ -9,9 +9,9 @@ level: Experienced
 kt: 8627
 thumbnail: 336957.jpeg
 exl-id: f8289dd4-b293-4b8f-b14d-daec091728c0
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '427'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ Il pacchetto BPA deve essere installato su un clone dell’ambiente di produzion
 
 ## Attività chiave
 
-+ Crea un clone dell’ambiente di produzione 6.x. Quando esegui la migrazione del contenuto e del codice di refactoring, l’utilizzo di un clone di un ambiente di produzione sarà utile per testare vari strumenti e modifiche.
++ Crea un clone dell’ambiente di produzione 6.x. Quando esegui la migrazione del contenuto e del codice di refactoring, avere un clone di un ambiente di produzione è utile per testare vari strumenti e modifiche.
 + Scarica l’ultimo strumento BPA da [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) e installa nell’ambiente clonato AEM 6.x.
 + Utilizza lo strumento BPA per generare un rapporto che può essere caricato su Cloud Acceleration Manager (CAM). CAM accessibile tramite [https://experience.adobe.com/](https://experience.adobe.com/) > **Experience Manager** > **Cloud Acceleration Manager**.
 + Utilizza CAM per fornire indicazioni sugli aggiornamenti da apportare alla base di codice e all&#39;ambiente correnti per passare a AEM as a Cloud Service.

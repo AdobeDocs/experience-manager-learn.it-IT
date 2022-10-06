@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: b4985c30-3e5e-470e-b68d-0f6c5cbf4690
-source-git-commit: 7a4585146b52d14f32645c6889c9c015e9991809
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2524'
+source-wordcount: '2523'
 ht-degree: 0%
 
 ---
@@ -92,8 +92,8 @@ Quando più configurazioni OSGi vengono risolte tramite la modalità runmode per
 
 ```
 [ERROR] Unable to convert content-package [/tmp/packages/enduser.all-1.0-SNAPSHOT.zip]: 
-Configuration ‘com.example.ExampleComponent’ already defined in Feature Model ‘com.example.groupId:example.all:slingosgifeature:xxxxx:X.X’, 
-set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multiple configurations with same PID
+Configuration 'com.example.ExampleComponent' already defined in Feature Model 'com.example.groupId:example.all:slingosgifeature:xxxxx:X.X', 
+set the 'mergeConfigurations' flag to 'true' if you want to merge multiple configurations with same PID
 ```
 
 #### Causa 1
@@ -110,7 +110,7 @@ set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multip
 
 Gli script di reindirizzamento definiscono il contenuto di base, gli utenti, le ACL, ecc. In AEM as a Cloud Service, gli script di reindirizzamento vengono applicati durante la creazione dell’immagine, tuttavia AEM’avvio rapido locale dell’SDK vengono applicati quando viene attivata la configurazione di fabbrica del repoinit OSGi. Per questo motivo, gli script di Repoinit potrebbero avere esito negativo (con la registrazione) sull’avvio rapido locale AEM’SDK e causare un errore nel passaggio Genera immagine, arrestando la distribuzione.
 
-+ __Causa:__ Uno script repoinit non è valido. Questo potrebbe lasciare il tuo archivio in uno stato incompleto come qualsiasi script di reindirizzamento dopo che lo script non riuscito verrà eseguito contro il repository.
++ __Causa:__ Uno script repoinit non è valido. Questo potrebbe lasciare il tuo archivio in uno stato incompleto in quanto qualsiasi script di reindirizzamento dopo che lo script non riuscito non viene eseguito contro il repository.
 + __Risoluzione:__ Rivedi l’avvio rapido locale dell’SDK AEM quando la configurazione OSGi dello script di reindirizzamento viene distribuita per determinare se e quali sono gli errori.
 
 ### Dipendenza contenuto reindirizzamento non soddisfatta

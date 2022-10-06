@@ -12,10 +12,10 @@ mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
-source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 5%
+source-wordcount: '1838'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ Rivedere gli strumenti e le istruzioni necessari per la configurazione di un [am
 
 >[!VIDEO](https://video.tv.adobe.com/v/30152/?quality=12&learn=on)
 
-In questo capitolo, verrà generato un nuovo progetto Adobe Experience Manager utilizzando [Archetipo di progetto AEM](https://github.com/adobe/aem-project-archetype). Il progetto AEM contiene tutto il codice, il contenuto e le configurazioni utilizzati per l’implementazione di Sites. Il progetto generato in questo capitolo fungerà da base per l’implementazione del sito WKND e sarà basato sui prossimi capitoli.
+In questo capitolo, puoi generare un nuovo progetto Adobe Experience Manager utilizzando [Archetipo di progetto AEM](https://github.com/adobe/aem-project-archetype). Il progetto AEM contiene tutto il codice, il contenuto e le configurazioni utilizzati per l’implementazione di Sites. Il progetto generato in questo capitolo funge da base per l’implementazione del sito WKND e si basa su capitoli futuri.
 
 **Cos&#39;è un progetto Maven?** - [Apache Maven](https://maven.apache.org/) è uno strumento di gestione software per la creazione di progetti. *Tutte le Adobe Experience Manager* le implementazioni utilizzano i progetti Maven per generare, gestire e distribuire codice personalizzato in cima alle AEM.
 
@@ -90,7 +90,7 @@ La serie successiva di passaggi verrà eseguita utilizzando un terminale a riga 
 
    Elenco completo delle proprietà disponibili per la configurazione di un progetto [si trova qui](https://github.com/adobe/aem-project-archetype#available-properties).
 
-1. La seguente struttura di file e cartelle verrà generata dall&#39;archetipo Maven sul file system locale:
+1. La seguente struttura di file e cartelle viene generata dall&#39;archetipo Maven sul file system locale:
 
    ```plain
     ~/code/
@@ -155,11 +155,11 @@ Crea e distribuisci il codice del progetto in un&#39;istanza locale di AEM.
    [INFO] ------------------------------------------------------------------------
    ```
 
-   Il profilo Maven `autoInstallSinglePackage` compila i singoli moduli del progetto e distribuisce un singolo pacchetto all’istanza AEM. Per impostazione predefinita, questo pacchetto verrà distribuito in un&#39;istanza AEM in esecuzione localmente sulla porta **4502** e con le credenziali di `admin:admin`.
+   Il profilo Maven `autoInstallSinglePackage` compila i singoli moduli del progetto e distribuisce un singolo pacchetto all’istanza AEM. Per impostazione predefinita questo pacchetto viene distribuito a un&#39;istanza AEM in esecuzione localmente sulla porta **4502** e con le credenziali di `admin:admin`.
 
 1. Passa a Gestione pacchetti nell&#39;istanza AEM locale: [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp). Dovresti visualizzare i pacchetti per `aem-guides-wknd.ui.apps`, `aem-guides-wknd.ui.config`, `aem-guides-wknd.ui.content`e `aem-guides-wknd.all`.
 
-1. Passa alla console Sites : [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content). Il sito WKND sarà uno dei siti. Includerà una struttura del sito con una gerarchia di master lingua e Stati Uniti. Questa gerarchia del sito è basata sui valori per `language_country` e `isSingleCountryWebsite` durante la generazione del progetto utilizzando l’archetipo .
+1. Passa alla console Sites : [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content). Il sito WKND è uno dei siti. Includerà una struttura del sito con una gerarchia di master lingua e Stati Uniti. Questa gerarchia del sito è basata sui valori per `language_country` e `isSingleCountryWebsite` durante la generazione del progetto utilizzando l’archetipo .
 
 1. Apri **US** `>` **Inglese** selezionando la pagina e facendo clic sul pulsante **Modifica** nella barra dei menu:
 
@@ -254,7 +254,7 @@ La **[nucleo centrale](https://experienceleague.adobe.com/docs/experience-manage
 
 ### Moduli Ui.apps e Ui.content {#apps-content-module}
 
-La **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** Il modulo maven contiene tutto il codice di rendering necessario per il sito sottostante `/apps`. Ciò include i file CSS/JS che verranno memorizzati in un formato AEM denominato [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). Ciò include anche [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) script per il rendering di HTML dinamici. Potete pensare al **ui.apps** modulo come mappa della struttura nel JCR ma in un formato che può essere memorizzato in un file system e impegnato nel controllo del codice sorgente. La **ui.apps** Il modulo contiene solo codice.
+La **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** Il modulo maven contiene tutto il codice di rendering necessario per il sito sottostante `/apps`. Ciò include CSS/JS memorizzati in un formato AEM denominato [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). Ciò include anche [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) script per il rendering di HTML dinamici. Potete pensare al **ui.apps** modulo come mappa della struttura nel JCR ma in un formato che può essere memorizzato in un file system e impegnato nel controllo del codice sorgente. La **ui.apps** Il modulo contiene solo codice.
 
 Per creare solo questo modulo:
 
@@ -325,7 +325,7 @@ Per creare solo questo modulo:
 
    Si prevede nuovamente un errore di compilazione se non è in esecuzione un&#39;istanza AEM sulla porta **4504** è disponibile. Il parametro `aem.port` è definito nel file POM in `aem-guides-wknd/pom.xml`.
 
-La **[ui.content](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html)** il modulo è strutturato come il **ui.apps** modulo . L&#39;unica differenza è che la **ui.content** il modulo contiene ciò che viene chiamato **mutabile** contenuto. **Variabile** il contenuto si riferisce essenzialmente a configurazioni non di codice come Modelli, Criteri o strutture di cartelle memorizzate nel controllo del codice sorgente **ma** potrebbero essere modificati direttamente in un’istanza AEM. Questo verrà descritto in modo molto più dettagliato nel capitolo Pagine e Modelli .
+La **[ui.content](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html)** il modulo è strutturato come il **ui.apps** modulo . L&#39;unica differenza è che la **ui.content** il modulo contiene ciò che viene chiamato **mutabile** contenuto. **Variabile** il contenuto si riferisce essenzialmente a configurazioni non di codice come Modelli, Criteri o strutture di cartelle memorizzate nel controllo del codice sorgente **ma** potrebbero essere modificati direttamente in un’istanza AEM. Questo argomento viene descritto più dettagliatamente nel capitolo Pagine e Modelli .
 
 Gli stessi comandi Maven utilizzati per generare il **ui.apps** il modulo può essere utilizzato per creare **ui.content** modulo . Sentiti libero di ripetere i passaggi precedenti dall&#39;interno **ui.content** cartella.
 

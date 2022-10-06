@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 kt: kt-8049
 exl-id: ce9b9203-b44c-4a52-821c-ae76e93312d2
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -34,4 +34,4 @@ ht-degree: 0%
 * Distribuisci [Flusso di lavoro SendForm.](assets/send-form-attachments-model.zip) Questo flusso di lavoro utilizza il componente Invia e-mail per inviare gli allegati del modulo come singoli file. Configura l’indirizzo e-mail di mittenti e destinatari in base alle tue esigenze.
 * Importa [modulo di esempio](assets/send-list-attachments-form.zip) da [Interfaccia utente Forms e Document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * [Anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/sendlistofattachments/jcr:content?wcmmode=disabled) e aggiungere un paio di allegati e inviare il modulo.
-* Il flusso di lavoro deve essere attivato e verrà inviata una notifica e-mail con gli allegati del modulo.
+* Il flusso di lavoro deve essere attivato e viene inviata una notifica e-mail con gli allegati del modulo.

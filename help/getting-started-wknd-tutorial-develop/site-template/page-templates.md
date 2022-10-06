@@ -1,6 +1,6 @@
 ---
 title: Modelli di pagina
-description: Scopri come creare e modificare i modelli di pagina. Comprendere la relazione tra un modello di pagina e una pagina. Scopri come configurare i criteri di un modello di pagina per fornire governance granulare e coerenza del marchio per i contenuti.  Verrà creato un modello di articolo per riviste ben strutturato basato su un modello di Adobe XD.
+description: Scopri come creare e modificare i modelli di pagina. Comprendere la relazione tra un modello di pagina e una pagina. Scopri come configurare i criteri di un modello di pagina per fornire governance granulare e coerenza del marchio per i contenuti.  Viene creato un modello di articolo di Magazine ben strutturato basato su un modello di Adobe XD.
 sub-product: sites
 version: Cloud Service
 type: Tutorial
@@ -11,10 +11,10 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
-source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 5%
+source-wordcount: '652'
+ht-degree: 2%
 
 ---
 
@@ -34,16 +34,16 @@ Si tratta di un tutorial in più parti e si presume che i passaggi descritti in 
 
 ## Cosa verrà creato {#what-you-will-build}
 
-In questa parte dell’esercitazione, verrà creato un nuovo modello Pagina articoli di Magazine che può essere utilizzato per creare nuovi articoli della rivista e allinearsi con una struttura comune. Il modello sarà basato sulle progettazioni e su un kit di interfaccia utente prodotto in AdobeXD. Questo capitolo si concentra solo sulla costruzione della struttura o dello scheletro del modello. Non verrà implementato alcun stile, ma il modello e le pagine funzioneranno.
+In questa parte dell’esercitazione, verrà creato un nuovo modello Pagina articoli di Magazine che può essere utilizzato per creare nuovi articoli della rivista e allinearsi con una struttura comune. Il modello si basa sulle progettazioni e su un kit di interfaccia utente prodotto in AdobeXD. Questo capitolo si concentra solo sulla costruzione della struttura o dello scheletro del modello. Non vengono implementati stili, ma il modello e le pagine sono funzionanti.
 
 ## Crea il modello di pagina dell’articolo per la rivista
 
-Quando si crea una pagina, è necessario selezionare un modello da utilizzare come base per la creazione della nuova pagina. Il modello definisce la struttura della pagina risultante, il contenuto iniziale e i componenti consentiti.
+Quando crei una pagina devi selezionare un modello, che viene utilizzato come base per la creazione della nuova pagina. Il modello definisce la struttura della pagina risultante, il contenuto iniziale e i componenti consentiti.
 
 Ci sono 3 aree principali di [Modelli di pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it):
 
-1. **Struttura** - definisce i componenti che fanno parte del modello. Gli autori dei contenuti non potranno modificarli.
-1. **Contenuto iniziale** - definisce i componenti con cui inizierà il modello, che possono essere modificati e/o eliminati dagli autori di contenuti
+1. **Struttura** - definisce i componenti che fanno parte del modello. Non sono modificabili dagli autori dei contenuti.
+1. **Contenuto iniziale** - definisce i componenti con cui inizia il modello, che possono essere modificati e/o eliminati dagli autori di contenuti
 1. **Criteri** - definisce le configurazioni sul comportamento dei componenti e sulle opzioni disponibili per gli autori.
 
 Quindi, crea un nuovo modello in AEM che corrisponda alla struttura dei modelli. Questo si verificherà in un&#39;istanza locale di AEM. Segui i passaggi del video seguente:

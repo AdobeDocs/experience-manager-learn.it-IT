@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: deef09d9-82ec-4e61-b7ee-e72d1cd4e9e0
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -267,4 +267,4 @@ Una volta definiti il servizio e l’azione di invio personalizzata, siamo pront
 * [Importa modulo adattivo e gestore di invio personalizzato utilizzando package manager](assets/create-acs-profile-on-af-submission.zip).Questo pacchetto contiene il modulo adattivo configurato per l’invio all’azione di invio personalizzata.
 * Visualizzare in anteprima l&#39;anteprima del [modulo](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
 * Compila tutti i campi e invia
-* Verrà creato un nuovo profilo nella tua istanza ACS
+* Viene creato un nuovo profilo nell’istanza ACS

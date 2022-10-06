@@ -13,9 +13,9 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 707657ad-221e-4dab-ac2a-46a4fcbc55bc
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '621'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ Per accedere ad App Builder, iscriviti all’anteprima.
 
 1. [Accedi alla versione di prova di App Builder](https://developer.adobe.com/app-builder/trial/).
 1. Attendi circa 2-10 giorni finché non ricevi una notifica via e-mail prima di continuare l’esercitazione.
-   + Se non sei sicuro di aver effettuato il provisioning, continua con i passaggi successivi e se non sei in grado di creare un __App Builder__ progetto in [Console per sviluppatori di Adobe](https://developer.adobe.com/console/) non è ancora stato effettuato il provisioning.
+   + Se non sei sicuro di aver effettuato il provisioning, continua con i passaggi successivi e se non sei in grado di creare un __App Builder__ progetto in [Console Adobe Developer](https://developer.adobe.com/console/) non è ancora stato effettuato il provisioning.
 
 ## archiviazione cloud
 
@@ -78,7 +78,7 @@ _Click-through del provisioning dell’archiviazione BLOB di Azure (nessun audio
 1. Tocca __+ Aggiungi__ per creare un nuovo account di archiviazione BLOB
 1. Crea un nuovo __Gruppo di risorse__ se necessario, ad esempio: `aem-as-a-cloud-service`
 1. Fornisci un __Nome account di archiviazione__ ad esempio: `aemguideswkndassetcomput`
-   + La __Nome account di archiviazione__ verrà utilizzato per [configurazione dell’archiviazione cloud](../develop/environment-variables.md) per lo strumento di sviluppo Asset compute locale
+   + La __Nome account di archiviazione__  utilizzato per [configurazione dell’archiviazione cloud](../develop/environment-variables.md) nello strumento di sviluppo Asset compute locale
    + La __Tasti di accesso__ associati all&#39;account di archiviazione sono necessari anche quando [configurazione dell’archiviazione cloud](../develop/environment-variables.md).
 1. Lascia tutto il resto come predefinito e tocca il __Rivedi e crea__ pulsante
    + Facoltativamente, seleziona la __posizione__ vicino a te.

@@ -1,18 +1,18 @@
 ---
 title: Utilizzo Del Modello Dati Modulo Per Pubblicare Dati Binari
 description: Inserimento di dati binari AEM DAM utilizzando il modello dati modulo
-feature: Flusso di lavoro
+feature: Workflow
 version: 6.4,6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 9c62a7d6-8846-424c-97b8-2e6e3c1501ec
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 1%
+source-wordcount: '489'
+ht-degree: 0%
 
 ---
-
 
 # Utilizzo Del Modello Dati Modulo Per Pubblicare Dati Binari{#using-form-data-model-to-post-binary-data}
 
@@ -30,9 +30,9 @@ Scheda Modello dati modulo - Proprietà
 
 Nella scheda Input servizio viene eseguito il mapping dei seguenti elementi
 
-* file(L&#39;oggetto binario che deve essere memorizzato) con la proprietà DOR.pdf relativa al payload. Ciò significa che, quando il Modulo adattivo viene inviato, il Documento di record generato verrà memorizzato in un file denominato DOR.pdf relativo al payload del flusso di lavoro.**Assicurati che DOR.pdf sia lo stesso fornito durante la configurazione della proprietà di invio del modulo adattivo.**
+* file(L&#39;oggetto binario che deve essere memorizzato) con la proprietà DOR.pdf relativa al payload. Ciò significa che, quando il Modulo adattivo viene inviato, il Documento di record generato viene memorizzato in un file denominato DOR.pdf relativo al payload del flusso di lavoro.**Assicurati che DOR.pdf sia lo stesso fornito durante la configurazione della proprietà di invio del modulo adattivo.**
 
-* fileName - Questo è il nome con cui l&#39;oggetto binario verrà memorizzato in DAM. Pertanto, desideri generare questa proprietà in modo dinamico, in modo che ogni fileName sia univoco per ogni invio. A questo scopo abbiamo utilizzato la fase di processo nel flusso di lavoro per creare la proprietà dei metadati denominata nomefile e impostarne il valore sulla combinazione di Nome membro e Numero account della persona che invia il modulo. Ad esempio, se il nome del membro della persona è John Jacobs e il suo numero di conto è 9846, il nome del file sarà John Jacobs_9846.pdf
+* fileName - Questo è il nome con cui l&#39;oggetto binario viene memorizzato in DAM. Pertanto, desideri generare questa proprietà in modo dinamico, in modo che ogni fileName sia univoco per ogni invio. A questo scopo abbiamo utilizzato la fase di processo nel flusso di lavoro per creare la proprietà dei metadati denominata nomefile e impostarne il valore sulla combinazione di Nome membro e Numero account della persona che invia il modulo. Ad esempio, se il nome del membro della persona è John Jacobs e il suo numero di conto è 9846, il nome del file sarà John Jacobs_9846.pdf
 
 ![fdmserviceinput](assets/fdminputservice.png)
 
@@ -44,20 +44,20 @@ Input servizio
 
 Per testare questa funzionalità sul server, segui i passaggi indicati di seguito:
 
-1.[Distribuisci il bundle Developingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+1.[Distribuzione del bundle Developingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-1. [Scarica e distribuisci il bundle setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Questo bundle OSGI personalizzato viene utilizzato per creare la proprietà dei metadati e imposta il suo valore dai dati del modulo inviati.
+1. [Scarica e distribuisci il bundle setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar).Questo bundle OSGI personalizzato viene utilizzato per creare la proprietà dei metadati e impostarne il valore dai dati del modulo inviati.
 
-1. [Importa le ](assets/postdortodam.zip) risorse associate a questo articolo in AEM utilizzando il gestore dei pacchetti. Ottieni quanto segue
+1. [Importare le risorse](assets/postdortodam.zip) associato a questo articolo in AEM utilizzando il gestore dei pacchetti. Otterrai quanto segue
 
    1. Modello flusso di lavoro
    1. Modulo adattivo configurato per l’invio al flusso di lavoro AEM
    1. Origine dati configurata per l’utilizzo del file PostToDam.JSON
    1. Modello dati modulo che utilizza l’origine dati
 
-1. Puntare il browser [per aprire Modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+1. Posiziona il tuo punto [per aprire il modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 1. Compila il modulo e invia.
 1. Controlla l&#39;applicazione Assets se il Documento di record viene creato e memorizzato.
 
 
-[Il file Swagger ](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) utilizzato per la creazione dell&#39;origine dati è disponibile per il riferimento
+[File Swagger](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) utilizzato nella creazione dell&#39;origine dati è disponibile per il riferimento

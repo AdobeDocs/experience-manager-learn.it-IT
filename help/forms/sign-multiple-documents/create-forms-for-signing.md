@@ -1,39 +1,39 @@
 ---
 title: Creare Forms per la firma
 description: Creare moduli da includere nel pacchetto di firma.
-feature: Moduli adattivi
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6893
 thumbnail: 6893.jpg
-topic: Sviluppo
+topic: Development
 role: User
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 565d81a4-2918-44ea-a3e9-ed79f246f08a
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 1%
+source-wordcount: '324'
+ht-degree: 0%
 
 ---
-
 
 # Creazione di moduli per la firma
 
 Il passaggio successivo consiste nel creare i moduli adattivi da includere nel pacchetto. Quando si creano moduli per la firma, tenere presente quanto segue:
 
-* Assicurati che i moduli siano basati sul modello **SignMultipleForms** . In questo modo i moduli vengono precompilati con i dati recuperati dal database.
+* Assicurati che i moduli siano basati sul **SignMultipleForms** modello. In questo modo i moduli vengono precompilati con i dati recuperati dal database.
 
 * I moduli devono essere configurati per utilizzare Adobe Sign e il campo firmatario1 deve essere associato al campo E-mail del cliente
-* I moduli devono essere associati anche a clientLib denominato **getnextform**
+* È inoltre necessario associare i moduli a clientLib **getnextform**
 * I moduli devono utilizzare il componente Passaggio firma .
-* Il modulo deve inoltre utilizzare il componente **Firma più moduli** personalizzato. Questo componente consente di passare al modulo successivo per accedere al pacchetto.
+* Il modulo deve inoltre utilizzare **Firma multipla** componente. Questo componente consente di passare al modulo successivo per accedere al pacchetto.
 * L’invio del modulo deve essere configurato per attivare AEM flusso di lavoro **Aggiorna stato firma**
 * Assicurati che il Percorso file dati sia impostato su **Data.xml**. Questo è molto importante in quanto il codice di esempio cerca un file denominato Data.xml nel payload del processo di invio del modulo.
 
-Dopo aver creato il modulo, includere nel modulo i **campi comuni** frammenti di modulo adattivo. Il frammento viene contrassegnato come nascosto. Questo frammento contiene i campi seguenti.
+Dopo aver creato il modulo, includere **campi comuni** frammento di modulo adattivo nel modulo. Il frammento è contrassegnato come nascosto. Questo frammento contiene i campi seguenti.
 
-* **firmato**  - Campo che contiene lo stato della firma
-* **guid**  - Identificatore univoco per identificare il modulo nel pacchetto
-* **customerEmail**  - Questo campo contiene l’e-mail del cliente
+* **firmato** - Campo che contiene lo stato della firma
+* **guid** - Identificatore univoco per identificare il modulo nel pacchetto
+* **customerEmail** - Questo campo contiene l’e-mail del cliente
 
 
 
@@ -46,4 +46,4 @@ Una volta compilati e firmati tutti i moduli del pacchetto, è necessario visual
 
 ## Assets
 
-I moduli di esempio con quelli utilizzati in questa esercitazione possono essere [scaricati da qui](assets/forms-for-signing.zip)
+I moduli di esempio, tra cui quelli utilizzati in questa esercitazione, possono essere [scaricato da qui](assets/forms-for-signing.zip)

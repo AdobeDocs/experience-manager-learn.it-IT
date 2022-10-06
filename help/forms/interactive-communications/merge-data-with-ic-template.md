@@ -1,20 +1,19 @@
 ---
 title: Generazione del documento del canale di stampa mediante unione dei dati
-seo-title: Generazione del documento del canale di stampa mediante unione dei dati
 description: Scopri come generare il documento del canale di stampa unendo i dati contenuti nel flusso di input
-seo-description: Scopri come generare il documento del canale di stampa unendo i dati contenuti nel flusso di input
-feature: Comunicazione interattiva
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 3bfbb4ef-0c51-445a-8d7b-43543a5fa191
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
@@ -25,7 +24,7 @@ I documenti del canale di stampa vengono generalmente generati recuperando i dat
 
 ## Crea servizio di precompilazione
 
-Il nome di servizio &quot;ccm-print-test&quot; verrà utilizzato per accedere a questo servizio . Una volta definito questo servizio di pre-compilazione, puoi accedere a questo servizio nell’implementazione del processo del servlet o del flusso di lavoro per generare il documento del canale di stampa.
+Il nome di servizio &quot;ccm-print-test&quot; viene utilizzato per accedere a questo servizio . Una volta definito questo servizio di pre-compilazione, puoi accedere a questo servizio nell’implementazione del processo del servlet o del flusso di lavoro per generare il documento del canale di stampa.
 
 ```java
 import java.io.InputStream;

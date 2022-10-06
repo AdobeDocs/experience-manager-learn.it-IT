@@ -2,18 +2,18 @@
 title: Utilizzo dei visualizzatori per immagini panoramiche e verticali con AEM Assets Dynamic Media
 description: I miglioramenti apportati al visualizzatore Dynamic Media in AEM 6.4 includono l’aggiunta di visualizzatore di immagini panoramiche, visualizzatore di immagini panoramiche per realtà virtuale e visualizzatore di immagini verticali. Panoramic Viewer offre un modo semplice per offrire un'esperienza coinvolgente e coinvolgente della stanza, della proprietà, della posizione o del paesaggio senza alcun sviluppo personalizzato.
 sub-product: dynamic-media
-feature: Profili video, profili video, video VR a 360°
+feature: Video Profiles, Video Profiles, 360 VR Video
 version: 6.4, 6.5
-topic: Gestione dei contenuti
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 6b2f7533-8ce0-4134-b1ae-b3c5d15a05e6
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 3%
+source-wordcount: '533'
+ht-degree: 2%
 
 ---
-
 
 # Utilizzo dei visualizzatori per immagini panoramiche e verticali con AEM Assets Dynamic Media{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
 
@@ -27,13 +27,13 @@ I miglioramenti apportati al visualizzatore Dynamic Media in AEM 6.4 includono l
 
 ## Visualizzatore VR panoramico e panoramico
 
-Un’immagine viene considerata panoramica in base alle sue proporzioni o parole chiave. Per impostazione predefinita, un&#39;immagine con proporzioni pari a 2 viene considerata un&#39;immagine panoramica. I predefiniti per visualizzatori di immagini panoramiche saranno disponibili per un’anteprima dell’immagine se soddisfano i criteri di cui sopra. Il criterio del rapporto di formato dell’immagine panoramica può essere modificato nella configurazione DMS7 della società specificando la doppia proprietà s7PanoramicAR in /conf/global/settings/cloudconfigs/dmscene7/jcr:content. Le parole chiave sono memorizzate nella proprietà dc:keyword del nodo di metadati della risorsa. Se le parole chiave contengono una delle seguenti combinazioni:
+Un’immagine viene considerata panoramica in base alle sue proporzioni o parole chiave. Per impostazione predefinita, un&#39;immagine con proporzioni pari a 2 viene considerata un&#39;immagine panoramica. I predefiniti per visualizzatori di immagini panoramiche diventano disponibili per un’anteprima dell’immagine se soddisfano i criteri di cui sopra. Il criterio del rapporto di formato dell’immagine panoramica può essere modificato nella configurazione DMS7 della società specificando la doppia proprietà s7PanoramicAR in /conf/global/settings/cloudconfigs/dmscene7/jcr:content. Le parole chiave sono memorizzate nella proprietà dc:keyword del nodo di metadati della risorsa. Se le parole chiave contengono una delle seguenti combinazioni:
 
 * equirettangolare,
 * sferico + panoramico,
 * sferico + panorama,
 
-sarà considerato una risorsa immagine panoramica indipendentemente dalle sue proporzioni.
+viene considerata una risorsa immagine panoramica indipendentemente dalle sue proporzioni.
 
 ## Visualizzatore di immagini verticali
 

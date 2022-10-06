@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: 6958b1f82c609af2998d94fd868e67bf1578e848
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 1%
+source-wordcount: '1261'
+ht-degree: 4%
 
 ---
 
@@ -57,7 +57,7 @@ Questa esercitazione utilizza `curl` per configurare le configurazioni API di Cl
 
 Inizia abilitando Virtual Private Network su AEM as a Cloud Service.
 
-1. Innanzitutto, determina la regione in cui verrà impostata la rete avanzata utilizzando l’API di Cloud Manager. [listRegion](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) funzionamento. La `region name` sarà richiesto per effettuare chiamate API di Cloud Manager successive. In genere, viene utilizzata l&#39;area in cui si trova l&#39;ambiente Produzione.
+1. Innanzitutto, stabilisci la regione in cui è necessaria la rete avanzata utilizzando l’API di Cloud Manager [listRegion](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) funzionamento. La `region name` è necessario per effettuare chiamate API di Cloud Manager successive. In genere, viene utilizzata l&#39;area in cui si trova l&#39;ambiente Produzione.
 
    __richiesta HTTP listRegion__
 

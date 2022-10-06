@@ -11,18 +11,18 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 0%
+source-wordcount: '479'
+ht-degree: 1%
 
 ---
 
 # Flusso di lavoro dei temi {#theming}
 
-In questo capitolo verranno aggiornate le origini dei temi di un sito Adobe Experience Manager per applicare stili specifici per il marchio. Impareremo come utilizzare un server proxy per visualizzare un’anteprima degli aggiornamenti CSS e Javascript durante la codifica rispetto al sito live. Questa esercitazione illustra anche come distribuire gli aggiornamenti a un tema in un sito AEM utilizzando la pipeline Front End di Adobe Cloud Manager.
+In questo capitolo vengono aggiornate le origini dei temi di un sito Adobe Experience Manager per applicare stili specifici per il marchio. Impariamo a utilizzare un server proxy per visualizzare un’anteprima degli aggiornamenti CSS e Javascript mentre effettuiamo il codice per il sito live. Questa esercitazione illustra anche come distribuire gli aggiornamenti a un tema in un sito AEM utilizzando la pipeline Front End di Adobe Cloud Manager.
 
-Alla fine il nostro sito verrà aggiornato per includere gli stili che corrispondono al marchio WKND.
+Alla fine il nostro sito viene aggiornato per includere gli stili che corrispondono al marchio WKND.
 
 ## Prerequisiti {#prerequisites}
 

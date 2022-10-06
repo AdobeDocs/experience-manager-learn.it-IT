@@ -7,20 +7,20 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 502f4bdf-d4af-409f-a611-62b7a1a6065a
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '330'
 ht-degree: 1%
 
 ---
 
 # Precompilazione del modulo adattivo tramite il profilo ACS {#prefilling-adaptive-form-using-acs-profile}
 
-In questa parte, precompileremo il Modulo adattivo con le informazioni sul profilo recuperate da ACS. AEM Forms dispone di questa potente funzionalità per precompilare i moduli adattivi.
+In questa parte, precompiliamo il modulo adattivo con le informazioni sul profilo recuperate da ACS. AEM Forms dispone di questa potente funzionalità per precompilare i moduli adattivi.
 
 Per ulteriori informazioni sulla precompilazione dei moduli adattivi, leggere questo [tutorial](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
-Per precompilare il modulo adattivo recuperando i dati da ACS, supponiamo che ci sia un profilo in ACS che ha la stessa e-mail dell’utente connesso AEM. Ad esempio, se l’ID e-mail della persona che ha effettuato l’accesso a AEM è csimms@adobe.com, si prevede di trovare un profilo in ACS la cui e-mail è csimms@adobe.com.
+Per precompilare il modulo adattivo recuperando i dati da ACS, si presuppone che ci sia un profilo in ACS che abbia la stessa e-mail dell’utente connesso AEM. Ad esempio, se l’ID e-mail della persona che ha effettuato l’accesso a AEM è csimms@adobe.com, si prevede di trovare un profilo in ACS la cui e-mail è csimms@adobe.com.
 
 Per recuperare le informazioni sul profilo da ACS utilizzando l’API REST, sono necessari i seguenti passaggi
 
@@ -28,7 +28,7 @@ Per recuperare le informazioni sul profilo da ACS utilizzando l’API REST, sono
 * Exchange JWT per token di accesso
 * Effettuare una chiamata REST ad ACS e recuperare il profilo tramite e-mail
 * Creare un documento XML con le informazioni di profilo
-* Restituisce InputStream del documento XML che verrà utilizzato da AEM Forms
+* Restituisce InputStream del documento XML utilizzato da AEM Forms
 
 ![servizio preliminare](assets/prefillserviceaf.gif)
 

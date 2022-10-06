@@ -14,9 +14,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2380'
+source-wordcount: '2372'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Questo capitolo descrive in modo più approfondito l’API del modello JSON AEM 
 
 ## Cosa verrà creato
 
-Questo capitolo esaminerà come il `Text` SPA componente è mappato al AEM `Text`componente. Nuovo `Image` Verrà creato SPA componente che può essere utilizzato nella SPA e creato in AEM. Funzioni predefinite del **Contenitore di layout** e **Editor modelli** I criteri verranno inoltre utilizzati per creare una visualizzazione con un aspetto leggermente più vario.
+Questo capitolo esaminerà come il `Text` SPA componente è mappato al AEM `Text`componente. Nuovo `Image` Viene creato SPA componente che può essere utilizzato nella SPA e creato in AEM. Funzioni predefinite del **Contenitore di layout** e **Editor modelli** I criteri verranno inoltre utilizzati per creare una visualizzazione con un aspetto leggermente più vario.
 
 ![Esempio di capitolo di authoring finale](./assets/map-components/final-page.png)
 
@@ -92,7 +92,7 @@ Vediamo come funziona il componente.
 
    `:type` è una proprietà riservata che elenca i `sling:resourceType` (o percorso) del componente AEM. Il valore di `:type` viene utilizzato per mappare il componente AEM al componente SPA.
 
-   `text` e `richText` sono proprietà aggiuntive che verranno esposte al componente SPA.
+   `text` e `richText` sono proprietà aggiuntive esposte al componente SPA.
 
 ### Inspect il componente Testo
 
@@ -178,7 +178,7 @@ Vediamo come funziona il componente.
 
 8. Inspect **text.component.html** a `ui.frontend/src/app/components/text/text.component.html`.
 
-   Questo file è vuoto perché l’intero contenuto del componente viene impostato dal `innerHTML` proprietà.
+   Questo file è vuoto perché l’intero contenuto del componente è impostato dalla `innerHTML` proprietà.
 
 9. Inspect **app.module.ts** a `ui.frontend/src/app/app.module.ts`.
 
@@ -211,11 +211,11 @@ Prima di passare al codice SPA, controlla il modello JSON fornito da AEM.
 
    ![JSON del componente core immagine](./assets/map-components/image-json.png)
 
-   Proprietà di `src`, `alt`e `title` verrà utilizzato per popolare il SPA `Image` componente.
+   Proprietà di `src`, `alt`e `title` vengono utilizzati per popolare il SPA `Image` componente.
 
    >[!NOTE]
    >
-   > Sono state esposte altre proprietà Immagine (`lazyEnabled`, `widths`) che consente a uno sviluppatore di creare un componente adattivo e a caricamento lento. Il componente creato in questa esercitazione sarà semplice e **not** utilizza queste proprietà avanzate.
+   > Sono state esposte altre proprietà Immagine (`lazyEnabled`, `widths`) che consente a uno sviluppatore di creare un componente adattivo e a caricamento lento. Il componente creato in questa esercitazione è semplice e funziona **not** utilizza queste proprietà avanzate.
 
 2. Torna all’IDE e apri la `en.model.json` a `ui.frontend/src/mocks/json/en.model.json`. Poiché si tratta di un nuovo componente di rete per il nostro progetto, dobbiamo &quot;deridere&quot; l’immagine JSON.
 
@@ -244,7 +244,7 @@ Prima di passare al codice SPA, controlla il modello JSON fornito da AEM.
            ],
    ```
 
-   Il progetto include un&#39;immagine di esempio in `/mock-content/adobestock-140634652.jpeg` che verranno utilizzati con **server di sviluppo webpack**.
+   Il progetto include un&#39;immagine di esempio in `/mock-content/adobestock-140634652.jpeg` utilizzato con **server di sviluppo webpack**.
 
    È possibile visualizzare l&#39;intero [en.model.json qui](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/map-components-solution/ui.frontend/src/mocks/json/en.model.json).
 
@@ -498,6 +498,6 @@ I passaggi successivi verranno eseguiti utilizzando l&#39;IDE di codice di Visua
     </workspaceFilter>
    ```
 
-   La `filter.xml` Il file è responsabile dell&#39;identificazione dei percorsi dei nodi che verranno installati con il pacchetto. Osserva che `mode="merge"` in ciascuno dei filtri che indica che il contenuto esistente non verrà modificato, viene aggiunto solo un nuovo contenuto. Poiché gli autori dei contenuti possono aggiornare questi percorsi, è importante che la distribuzione del codice lo faccia **not** sovrascrivi il contenuto. Consulta la sezione [Documentazione FileVault](https://jackrabbit.apache.org/filevault/filter.html) per ulteriori informazioni sull’utilizzo degli elementi filtro.
+   La `filter.xml` Il file è responsabile dell&#39;identificazione dei percorsi dei nodi installati con il pacchetto. Osserva che `mode="merge"` in ciascuno dei filtri che indica che il contenuto esistente non verrà modificato, viene aggiunto solo un nuovo contenuto. Poiché gli autori dei contenuti possono aggiornare questi percorsi, è importante che la distribuzione del codice lo faccia **not** sovrascrivi il contenuto. Consulta la sezione [Documentazione FileVault](https://jackrabbit.apache.org/filevault/filter.html) per ulteriori informazioni sull’utilizzo degli elementi filtro.
 
    Confronto `ui.content/src/main/content/META-INF/vault/filter.xml` e `ui.apps/src/main/content/META-INF/vault/filter.xml` per comprendere i diversi nodi gestiti da ciascun modulo.

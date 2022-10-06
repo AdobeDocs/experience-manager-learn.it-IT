@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: a8d8118d-f4a1-483f-83b4-77190f6a42a4
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 # Query dei dati inviati
 
 
-Il passaggio successivo consiste nell’interrogare i dati inviati e visualizzare i risultati in modo tabulare. A questo scopo utilizzeremo il seguente software
+Il passaggio successivo consiste nell’interrogare i dati inviati e visualizzare i risultati in modo tabulare. A questo scopo, utilizziamo il seguente software:
 
 [QueryBuilder](https://querybuilder.js.org/) - Componente dell’interfaccia utente per creare query
 
@@ -64,7 +64,7 @@ public JSONArray getData(String formName) throws SQLException, IOException {
  }
 ```
 
-Quando si fa clic sul pulsante GetResult, viene effettuata una chiamata Get a **&quot;/bin/querydata&quot;**. Trasmettiamo la query generata dall’interfaccia utente di QueryBuilder al servlet attraverso il parametro di query. Il servlet quindi massaggia questa query nella query SQL che può essere utilizzata per eseguire query sul database. Ad esempio, se stai cercando di recuperare tutti i prodotti denominati &#39;Mouse&#39;, la stringa di query di Query Builder sarà $.productname = &#39;Mouse&#39;. Questa query verrà quindi convertita nel seguente
+Quando si fa clic sul pulsante GetResult, viene effettuata una chiamata Get a **&quot;/bin/querydata&quot;**. Trasmettiamo la query generata dall’interfaccia utente di QueryBuilder al servlet attraverso il parametro di query. Il servlet quindi massaggia questa query nella query SQL che può essere utilizzata per eseguire query sul database. Ad esempio, se stai cercando di recuperare tutti i prodotti denominati &#39;Mouse&#39;, la stringa di query Query Builder è `$.productname = 'Mouse'`. Questa query verrà quindi convertita nel seguente
 
 SELEZIONA &#42; da aemformswithjson .  moduli inviati in cui JSON_EXTRACT( moduli inviati .formdata,&quot;$.productName &quot;)= &#39;Mouse&#39;
 

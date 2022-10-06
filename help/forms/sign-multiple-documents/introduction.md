@@ -1,22 +1,23 @@
 ---
 title: Introduzione
 description: Dimostrazione video del caso d’uso di più moduli di firma
-feature: Moduli adattivi
+feature: Adaptive Forms
 version: 6.4,6.5
 thumbnail: 330165.jpg
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 0260d4b6-8615-4d78-a920-b36766a0f8e9
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 4%
+source-wordcount: '118'
+ht-degree: 2%
 
 ---
 
 # Introduzione
 
-Se si desidera richiedere un mutuo o aprire un nuovo conto bancario, sarà necessario compilare e firmare più moduli. L’integrazione tra AEM Forms e Adobe Sign semplifica la compilazione e la firma di più moduli.
+Se si desidera richiedere un mutuo o aprire un nuovo conto bancario, è necessario compilare e firmare più moduli. L’integrazione tra AEM Forms e Adobe Sign semplifica la compilazione e la firma di più moduli.
 Il video seguente illustra il caso d’uso relativo alla firma di più moduli.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330165?quality=9&learn=on)

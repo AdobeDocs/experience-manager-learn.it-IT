@@ -1,17 +1,18 @@
 ---
 title: Esportazione dei dati del modulo inviati in formato CSV
 description: Esportare i dati dei moduli adattivi inviati in formato CSV
-feature: Moduli adattivi
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 6cd892e4-82c5-4201-8b6a-40c2ae71afa9
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -24,8 +25,8 @@ In genere, i clienti desiderano esportare i dati del modulo inviati in formato C
 >
 >Questo esempio funziona solo con Adaptive Forms non basato su Schema o Modello dati modulo
 
-![Struttura ](assets/tablestructure.PNG)
-tabellaCome puoi vedere il nome dello schema è aemformstutorial.All&#39;interno di questo schema si trovano i moduli di tabella inviati con le colonne seguenti definite
+![Struttura tabella](assets/tablestructure.PNG)
+Come puoi vedere il nome dello schema è aemformstutorial.All&#39;interno di questo schema sono definiti i moduli di tabella inviati con le colonne seguenti
 
 * formdata: Questa colonna contiene i dati del modulo inviati
 * nome del modulo: Questa colonna contiene il nome del modulo inviato
@@ -33,9 +34,11 @@ tabellaCome puoi vedere il nome dello schema è aemformstutorial.All&#39;interno
 
 Il nome della tabella e i nomi a due colonne sono esposti come proprietà di configurazione OSGi come mostrato nella schermata seguente:
 ![osgi-configuration](assets/configuration.PNG)
-Il codice legge questi valori e crea la query SQL appropriata da eseguire. Ad esempio, verrà eseguita la seguente query in base ai valori sopra indicati
-**SELEZIONARE i dati del modulo da aemformstutorial.formsubmit dove formname=timeoffrequestform**
-Nella query di cui sopra il nome del form(timeoffrequestform) verrà passato come parametro di richiesta al servlet.
+Il codice legge questi valori e crea la query SQL appropriata da eseguire. Ad esempio, viene eseguita la seguente query in base ai valori sopra indicati
+
+`SELECT formdata FROM aemformstutorial.formsubmissions where formname=timeoffrequestform`
+
+Nella query di cui sopra il nome del form(timeoffrequestform) viene passato come parametro di richiesta al servlet.
 
 ## **Crea servizio OSGi**
 
@@ -43,7 +46,7 @@ Il seguente servizio OSGI è stato creato per esportare i dati inviati in format
 
 * Linea 37: Stiamo accedendo ad Apache Sling Connection Pooled DataSource.
 
-* Linea 89: Questo è il punto di ingresso del servizio. Il metodo `getCSVFile(..)` assume formName come parametro di input e recupera i dati inviati relativi al nome del modulo specificato.
+* Linea 89: Questo è il punto di ingresso del servizio.Il metodo `getCSVFile(..)` assume formName come parametro di input e recupera i dati inviati relativi al nome del modulo specificato.
 
 >[!NOTE]
 >
@@ -263,7 +266,7 @@ public @interface StoreAndExportConfiguration {
 
 ## Servlet
 
-Di seguito è riportato il codice del servlet che richiama il metodo `getCSVFile(..)` del servizio. Il servizio restituisce l&#39;oggetto StringBuffer che viene quindi inviato nuovamente all&#39;applicazione chiamante
+Di seguito è riportato il codice del servlet che richiama il `getCSVFile(..)` metodo del servizio. Il servizio restituisce l&#39;oggetto StringBuffer che viene quindi inviato nuovamente all&#39;applicazione chiamante
 
 ```java
 package com.aemforms.storeandexport.core.servlets;
@@ -305,6 +308,6 @@ public class StreamCSVFile extends SlingAllMethodsServlet {
 
 ### Distribuisci sul server
 
-* Importare il file [SQL](assets/formsubmissions.sql) nel server MySQL utilizzando Workbench MySQL. Questo crea uno schema denominato **aemformstutorial** e una tabella denominata **formsubmit** con alcuni dati di esempio.
-* Distribuisci [Bundle OSGi](assets/store-export.jar) utilizzando la console web Felix
-* [Per ottenere gli invii](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform) TimeOffRequest. Dovresti ricevere un file CSV inviato in streaming.
+* Importa [File SQL](assets/formsubmissions.sql) nel server MySQL tramite Workbench MySQL. Questo crea uno schema denominato **aemformstutorial** e la tabella denominata **moduli** con alcuni dati di esempio.
+* Distribuzione [Bundle OSGi](assets/store-export.jar) utilizzo della console web Felix
+* [Per ottenere gli invii TimeOffRequest](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform). Dovresti ricevere un file CSV inviato in streaming.

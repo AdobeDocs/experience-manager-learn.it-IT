@@ -9,9 +9,9 @@ mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
-source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '3081'
+source-wordcount: '3066'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/a
 
 ## Cosa verrà creato {#what-you-will-build}
 
-In questa parte dell’esercitazione verrà creato un nuovo modello Pagina articolo che può essere utilizzato per creare nuove pagine di articoli e allinearsi a una struttura comune. Il modello Pagina articolo sarà basato sulle progettazioni e su un kit di interfaccia utente prodotto in AdobeXD. Questo capitolo si concentra solo sulla costruzione della struttura o dello scheletro del modello. Non verrà implementato alcun stile, ma il modello e le pagine funzioneranno.
+In questa parte dell’esercitazione verrà creato un nuovo modello Pagina articolo che può essere utilizzato per creare nuove pagine di articoli e allinearsi a una struttura comune. Il modello Pagina articolo è basato sulle progettazioni e su un kit di interfaccia utente prodotto in AdobeXD. Questo capitolo si concentra solo sulla costruzione della struttura o dello scheletro del modello. Non vengono implementati stili, ma il modello e le pagine sono funzionanti.
 
 ![Progettazione pagina articolo e versione senza stile](assets/pages-templates/what-you-will-build.png)
 
@@ -81,12 +81,12 @@ Nella maggior parte dei casi, la pianificazione di un nuovo sito web inizia con 
 
 ## Creare il modello di pagina dell’articolo
 
-Quando si crea una pagina, è necessario selezionare un modello da utilizzare come base per la creazione della nuova pagina. Il modello definisce la struttura della pagina risultante, il contenuto iniziale e i componenti consentiti.
+Quando crei una pagina devi selezionare un modello, che viene utilizzato come base per la creazione della nuova pagina. Il modello definisce la struttura della pagina risultante, il contenuto iniziale e i componenti consentiti.
 
 Ci sono 3 aree principali di [Modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html):
 
-1. **Struttura** - definisce i componenti che fanno parte del modello. Gli autori dei contenuti non potranno modificarli.
-1. **Contenuto iniziale** - definisce i componenti con cui inizierà il modello, che possono essere modificati e/o eliminati dagli autori di contenuti
+1. **Struttura** - definisce i componenti che fanno parte del modello. Non sono modificabili dagli autori dei contenuti.
+1. **Contenuto iniziale** - definisce i componenti con cui inizia il modello, che possono essere modificati e/o eliminati dagli autori di contenuti
 1. **Criteri** - definisce le configurazioni sul comportamento dei componenti e sulle opzioni disponibili per gli autori.
 
 Quindi, crea un nuovo modello in AEM che corrisponda alla struttura dei modelli. Questo si verificherà in un&#39;istanza locale di AEM. Segui i passaggi del video seguente:
@@ -101,12 +101,12 @@ Passi di alto livello per il video precedente:
 1. Passa a **Struttura** modalità.
 1. Aggiungi un **Frammento esperienza** come componente **Intestazione** nella parte superiore del modello.
    * Configura il componente a cui puntare `/content/experience-fragments/wknd/us/en/site/header/master`.
-   * Imposta il criterio su **Intestazione pagina** e assicurano che **Elemento predefinito** è impostato su `header`. La `header`nel capitolo successivo verrà eseguito il targeting con CSS.
+   * Imposta il criterio su **Intestazione pagina** e assicurano che **Elemento predefinito** è impostato su `header`. La `header`nel capitolo successivo viene eseguito il targeting con CSS.
 1. Aggiungi un **Frammento esperienza** come componente **Piè di pagina** nella parte inferiore del modello.
    * Configura il componente a cui puntare `/content/experience-fragments/wknd/us/en/site/footer/master`.
-   * Imposta il criterio su **Piè di pagina** e assicurano che **Elemento predefinito** è impostato su `footer`. La `footer` nel capitolo successivo verrà eseguito il targeting con CSS.
+   * Imposta il criterio su **Piè di pagina** e assicurano che **Elemento predefinito** è impostato su `footer`. La `footer` nel capitolo successivo viene eseguito il targeting con CSS.
 1. Blocca **principale** contenitore incluso al momento della creazione iniziale del modello.
-   * Imposta il criterio su **Pagina principale** e assicurano che **Elemento predefinito** è impostato su `main`. La `main` nel capitolo successivo verrà eseguito il targeting con CSS.
+   * Imposta il criterio su **Pagina principale** e assicurano che **Elemento predefinito** è impostato su `main`. La `main` nel capitolo successivo viene eseguito il targeting con CSS.
 1. Aggiungi un **Immagine** nella **principale** contenitore.
    * Sblocca **Immagine** componente.
 1. Aggiungi un **Breadcrumb** sotto il **Immagine** nel contenitore principale.
@@ -130,7 +130,7 @@ Passi di alto livello per il video precedente:
 ### Configurazioni del contenuto iniziale
 
 1. Passa a **Contenuto iniziale** modalità.
-1. Aggiungi un **Titolo** nella **Contenitore di contenuti**. Questo fungerà da titolo dell&#39;articolo. Quando viene lasciato vuoto, viene visualizzato automaticamente il Titolo della pagina corrente.
+1. Aggiungi un **Titolo** nella **Contenitore di contenuti**. Questo agisce come titolo dell&#39;articolo. Quando viene lasciato vuoto, viene visualizzato automaticamente il Titolo della pagina corrente.
 1. Aggiungi un secondo **Titolo** sotto il primo componente Titolo .
    * Configura il componente con il testo: &quot;Per autore&quot;. Segnaposto per il testo.
    * Imposta il tipo da `H4`.
@@ -348,13 +348,13 @@ I passaggi successivi si svolgeranno utilizzando l’IDE VSCode utilizzando [Sin
    </workspaceFilter>
    ```
 
-   La `filter.xml` Il file è responsabile dell&#39;identificazione dei percorsi dei nodi che verranno installati con il pacchetto. Osserva che `mode="merge"` in ciascuno dei filtri che indica che il contenuto esistente non verrà modificato, viene aggiunto solo un nuovo contenuto. Poiché gli autori dei contenuti possono aggiornare questi percorsi, è importante che la distribuzione del codice lo faccia **not** sovrascrivi il contenuto. Consulta la sezione [Documentazione FileVault](https://jackrabbit.apache.org/filevault/filter.html) per ulteriori informazioni sull’utilizzo degli elementi filtro.
+   La `filter.xml` Il file è responsabile dell&#39;identificazione dei percorsi dei nodi installati con il pacchetto. Osserva che `mode="merge"` in ciascuno dei filtri che indica che il contenuto esistente non verrà modificato, viene aggiunto solo un nuovo contenuto. Poiché gli autori dei contenuti possono aggiornare questi percorsi, è importante che la distribuzione del codice lo faccia **not** sovrascrivi il contenuto. Consulta la sezione [Documentazione FileVault](https://jackrabbit.apache.org/filevault/filter.html) per ulteriori informazioni sull’utilizzo degli elementi filtro.
 
    Confronto `ui.content/src/main/content/META-INF/vault/filter.xml` e `ui.apps/src/main/content/META-INF/vault/filter.xml` per comprendere i diversi nodi gestiti da ciascun modulo.
 
    >[!WARNING]
    >
-   > Per garantire distribuzioni coerenti per il sito WKND Reference, alcuni rami del progetto sono configurati in modo che `ui.content` sovrascriverà eventuali modifiche nel JCR. Questo è di progettazione, ovvero per i rami della soluzione, in quanto il codice/gli stili saranno scritti per criteri specifici.
+   > Per garantire distribuzioni coerenti per il sito WKND Reference, alcuni rami del progetto sono configurati in modo che `ui.content` sovrascrive eventuali modifiche nel JCR. Questo è di progettazione, ovvero per i rami della soluzione, poiché il codice/gli stili sono scritti per criteri specifici.
 
 ## Congratulazioni! {#congratulations}
 

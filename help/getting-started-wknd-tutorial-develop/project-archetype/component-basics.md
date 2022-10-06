@@ -12,16 +12,16 @@ mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 1%
+source-wordcount: '1145'
+ht-degree: 2%
 
 ---
 
 # Nozioni di base sui componenti {#component-basics}
 
-In questo capitolo esploreremo la tecnologia di base di un componente Adobe Experience Manager (AEM) Sites attraverso un semplice `HelloWorld` esempio. Verranno apportate piccole modifiche a un componente esistente, con argomenti relativi all’authoring, all’HTL, ai modelli Sling e alle librerie lato client.
+In questo capitolo esploreremo la tecnologia di base di un componente Adobe Experience Manager (AEM) Sites attraverso un semplice `HelloWorld` esempio. Sono state apportate piccole modifiche a un componente esistente, che include argomenti come authoring, HTL, modelli Sling, librerie lato client.
 
 ## Prerequisiti {#prerequisites}
 
@@ -282,7 +282,7 @@ Successivamente, verranno apportati alcuni aggiornamenti al `HelloWorldModel` Mo
 
 Librerie lato client, clientlibs in breve, offre un meccanismo per organizzare e gestire i file CSS e JavaScript necessari per un’implementazione AEM Sites. Le librerie lato client sono il metodo standard per includere CSS e JavaScript in una pagina in AEM.
 
-La [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) modulo disaccoppiato [webpack](https://webpack.js.org/) progetto integrato nel processo di creazione. Questo consente l’utilizzo di librerie front-end popolari come Sass, LESS e TypeScript. La `ui.frontend` Il modulo verrà esplorato più approfonditamente nella sezione [Capitolo Librerie lato client](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
+La [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) modulo disaccoppiato [webpack](https://webpack.js.org/) progetto integrato nel processo di creazione. Questo consente l’utilizzo di librerie front-end popolari come Sass, LESS e TypeScript. La `ui.frontend` il modulo viene esplorato più approfonditamente nella [Capitolo Librerie lato client](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
 
 Quindi, aggiorna gli stili CSS per `HelloWorld` componente.
 

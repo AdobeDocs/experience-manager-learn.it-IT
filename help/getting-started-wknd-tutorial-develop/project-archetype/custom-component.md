@@ -12,9 +12,9 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 79d41d833ab0659f26f988678e124daa18b857f3
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4131'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/a
 
 ## Cosa verrà creato {#byline-component}
 
-In questa parte dell’esercitazione WKND, viene creato un componente per riga che verrà utilizzato per visualizzare informazioni create sul collaboratore di un articolo.
+In questa parte dell’esercitazione WKND, viene creato un componente Byline che viene utilizzato per visualizzare informazioni create sul collaboratore di un articolo.
 
 ![esempio di componente byline](assets/custom-component/byline-design.png)
 
@@ -82,7 +82,7 @@ L’implementazione del componente Byline include una finestra di dialogo che ra
 
 Innanzitutto, crea la struttura del nodo del componente Byline e definisci una finestra di dialogo. Rappresenta il componente in AEM e definisce implicitamente il tipo di risorsa del componente in base alla sua posizione nel JCR.
 
-La finestra di dialogo espone l’interfaccia con cui gli autori possono fornire i contenuti. Per questa implementazione, il componente di base WCM AEM **Immagine** verrà utilizzato per gestire l’authoring e il rendering dell’immagine del componente Byline, in modo che venga impostato come componente `sling:resourceSuperType`.
+La finestra di dialogo espone l’interfaccia con cui gli autori possono fornire i contenuti. Per questa implementazione, il componente di base WCM AEM **Immagine** viene sfruttato per gestire l’authoring e il rendering dell’immagine del componente Byline, quindi deve essere impostato come componente `sling:resourceSuperType`.
 
 ### Crea definizione componente {#create-component-definition}
 
@@ -372,7 +372,7 @@ Il modello Sling Byline si basa su diverse API Java fornite da AEM. Queste API s
    ...
    ```
 
-   La `uber-jar` è incluso solo quando `classic` viene richiamato il profilo, ovvero `mvn clean install -PautoInstallSinglePackage -Pclassic`. Anche in questo caso, questo è unico per questo progetto. In un progetto del mondo reale, generato dall’Archetipo di progetto AEM `uber-jar` sarà l&#39;impostazione predefinita se la versione di AEM specificata è 6.5 o 6.4.
+   La `uber-jar` è incluso solo quando `classic` viene richiamato il profilo, ovvero `mvn clean install -PautoInstallSinglePackage -Pclassic`. Anche in questo caso, questo è unico per questo progetto. In un progetto del mondo reale, generato dall’Archetipo di progetto AEM `uber-jar` è l&#39;impostazione predefinita se la versione di AEM specificata è 6.5 o 6.4.
 
    La [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) contiene tutte le API Java pubbliche esposte da AEM 6.x. La versione viene mantenuta nel riquadro del reattore principale situato nella directory principale del progetto `aem-guides-wknd/pom.xml`.
 
@@ -616,7 +616,7 @@ Ci sono due modi per affrontare questo problema:
 
 Controlla se la `fileReference` La proprietà JCR viene risolta in una risorsa. *O* Converti questa risorsa in un modello Sling per immagini di componente core e assicurati che `getSrc()` metodo non vuoto.
 
-Sceglieremo per **secondo** approccio. Il primo approccio è probabilmente sufficiente, ma in questa esercitazione quest’ultima ci permetterà di esplorare altre funzionalità di Sling Models.
+Noi optiamo per il **secondo** approccio. Il primo approccio è probabilmente sufficiente, ma in questa esercitazione quest’ultima viene utilizzata per consentirci di esplorare altre funzionalità di Sling Models.
 
 1. Crea un metodo privato per ottenere l&#39;immagine. Questo metodo viene lasciato privato perché non è necessario esporre l&#39;oggetto Immagine nell&#39;HTL stesso e il suo solo utilizzo per l&#39;unità `isEmpty().`
 
@@ -705,7 +705,7 @@ Sceglieremo per **secondo** approccio. Il primo approccio è probabilmente suffi
 
    Ricorda che i modelli Sling sono **NOT** Servizi OSGi, quindi è sicuro mantenere lo stato di classe. Spesso `@PostConstruct` deriva e imposta lo stato della classe del modello Sling per un uso successivo, simile a quello di un costruttore normale.
 
-   Tieni presente che se `@PostConstruct` restituisce un&#39;eccezione. L&#39;istanza del modello Sling non verrà creata (sarà null).
+   Tieni presente che se `@PostConstruct` restituisce un&#39;eccezione. Il modello Sling non crea un&#39;istanza (è nullo).
 
 1. **getImage()** può ora essere aggiornato per restituire semplicemente l’oggetto immagine.
 
@@ -790,7 +790,7 @@ Sceglieremo per **secondo** approccio. Il primo approccio è probabilmente suffi
        /**
        * @PostConstruct is immediately called after the class has been initialized
        * but BEFORE any of the other public methods. 
-       * It is a good method to initialize variables that will be used by methods in the rest of the model
+       * It is a good method to initialize variables that is used by methods in the rest of the model
        *
        */
        @PostConstruct
@@ -1027,7 +1027,7 @@ Se la **BylineImpl** non viene visualizzato in questo elenco, quindi è probabil
 
 ## Stili di battitura {#byline-styles}
 
-Il componente Byline deve essere formattato per essere allineato al design creativo del componente Byline. Ciò sarà ottenuto utilizzando SCSS, che AEM il supporto per tramite il **ui.frontend** Sottoprogetto Maven.
+Il componente Byline deve essere formattato per essere allineato al design creativo del componente Byline. Ciò si ottiene utilizzando SCSS, che AEM il supporto per tramite il **ui.frontend** Sottoprogetto Maven.
 
 ### Aggiungi uno stile predefinito
 

@@ -11,9 +11,9 @@ level: Beginner
 kt: 7496
 thumbnail: KT-7496.jpg
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '912'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ La maggior parte dell’esercitazione verrà effettuata utilizzando il **Servizi
    >
    >Si consiglia di utilizzare un **Sviluppo** ambiente per questa esercitazione.
 
-1. Verrà avviata una nuova scheda al AEM **Servizio authoring**. Fai clic su **Accesso con Adobe** e dovresti aver effettuato l&#39;accesso automaticamente con le stesse credenziali Experience Cloud.
+1. Viene avviata una nuova scheda al AEM **Servizio authoring**. Fai clic su **Accesso con Adobe** e dovresti aver effettuato l&#39;accesso automaticamente con le stesse credenziali Experience Cloud.
 
 1. Dopo essere stato reindirizzato e autenticato, è ora possibile visualizzare la schermata iniziale AEM.
 
@@ -83,7 +83,7 @@ Un modello di sito fornisce un punto di partenza per un nuovo sito. Un modello d
 
    ![ZIP modello sito di base](assets/create-site/template-basic-zip-file.png)
 
-   Questo file zip verrà utilizzato nell&#39;esercizio successivo.
+   Questo file zip viene utilizzato nell&#39;esercizio successivo.
 
    >[!NOTE]
    >

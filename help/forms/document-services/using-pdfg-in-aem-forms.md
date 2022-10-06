@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: bc79fcbf-b8b3-4d3a-9cd6-0bcd9321c7d5
-source-git-commit: 8d83d01fca3bfc9e6f674f7d73298b42f98a5d46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ Dimostrazione della funzionalità di trascinamento della selezione per la creazi
 PDFG sta per generazione PDF. Ciò significa che è possibile convertire una varietà di formati di file in PDF. I documenti più comuni sono i documenti di Microsoft Office. PDFG fa parte di AEM Forms dalla versione 6.1.
 [Javadoc per API PDFG è elencato qui](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html)
 
-Le risorse associate a questo articolo consentono di trascinare e rilasciare documenti MS office o file JPG nella zona di rilascio della pagina HTML. Una volta eliminato il documento, verrà richiamato il servizio PDFG e il documento verrà convertito in PDF e salvato nel file system di AEM Server.
+Le risorse associate a questo articolo consentono di trascinare e rilasciare documenti MS office o file JPG nella zona di rilascio della pagina HTML. Una volta che il documento viene rilasciato, richiama il servizio PDFG e converte il documento in PDF e lo salva nel file system di AEM Server.
 
 Per installare le risorse demo, effettua le seguenti operazioni
 
@@ -31,7 +31,7 @@ Per installare le risorse demo, effettua le seguenti operazioni
 1. [Passa a post.jsp](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) nel tuo CRX
 1. Modifica la posizione di salvataggio in base alle tue preferenze (riga 9)
 1. Salva le modifiche.
-1. Apri [  pagina HTML](http://localhost:4502/content/DocumentServices/CreatePDFG.html) per trascinare file per la conversione.
+1. Apri [pagina HTML](http://localhost:4502/content/DocumentServices/CreatePDFG.html) per trascinare file per la conversione.
 1. Rilasciare un file word o un file jpg nella zona di rilascio.
 1. Il documento di input viene convertito in PDF e salvato nella stessa posizione specificata al punto 4.
 

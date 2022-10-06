@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '378'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ L’integrazione dei dati di AEM Forms consente di configurare e connettersi a d
 1. Servizi web basati su SOAP
 1. Servizi OData
 
-Per l’integrazione di AEM Forms con Marketo, utilizzeremo i servizi web RESTful. Il primo passaggio nell’integrazione consiste nel configurare un [origine dati.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Utilizza il file swagger fornito come parte di questa esercitazione. La schermata seguente mostra le proprietà importanti da specificare durante la configurazione dell’origine dati.
+Per l’integrazione di AEM Forms con Marketo, utilizziamo i servizi web RESTful. Il primo passaggio nell’integrazione consiste nel configurare un [origine dati.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Utilizza il file swagger fornito come parte di questa esercitazione. La schermata seguente mostra le proprietà importanti da specificare durante la configurazione dell’origine dati.
 ![datasource](assets/datasource.jfif)
 
 Il &quot;marketo.json&quot; è il file swagger e ti viene fornito come parte delle risorse di questa esercitazione.

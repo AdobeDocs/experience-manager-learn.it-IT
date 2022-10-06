@@ -12,10 +12,10 @@ topic: Integrations
 role: Developer
 level: Intermediate
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 0%
+source-wordcount: '517'
+ht-degree: 1%
 
 ---
 
@@ -36,36 +36,36 @@ La home page del sito WKND mostra le attività locali o la cosa migliore da fare
 
 ## Passaggi per creare un test A/B utilizzando il Compositore esperienza visivo
 
-1. Accedi a [Adobe Experience Cloud](https://experience.adobe.com/), tocca __Target__, vai alla scheda __Attività__
+1. Accedi a [Adobe Experience Cloud](https://experience.adobe.com/), tocca __Target__, passa alla __Attività__ scheda
 
-   + Se non visualizzi __Target__ nel dashboard di Experience Cloud, assicurati che l&#39;organizzazione Adobe corretta sia selezionata nel commutatore di organizzazione in alto a destra e che all&#39;utente sia stato concesso l&#39;accesso a Target in [Adobe Admin Console](https://adminconsole.adobe.com/).
+   + Se non vedi __Target__ nel dashboard di Experience Cloud, assicurati che l’organizzazione Adobe corretta sia selezionata nel commutatore di organizzazione in alto a destra e che all’utente sia stato concesso l’accesso a Target in [Adobe Admin Console](https://adminconsole.adobe.com/).
 
-1. Fai clic sul pulsante **Crea attività**, quindi scegli l&#39;attività **Test A/B**
+1. Fai clic su **Crea attività** quindi scegli **Test A/B** attività
 
    ![Attività A/B](assets/ab-target-activity.png)
 
-1. Seleziona l&#39;opzione **Compositore esperienza visivo**, fornisci l&#39;URL attività, quindi fai clic su **Avanti**
+1. Seleziona la **Compositore esperienza visivo** , fornisci l’URL attività e fai clic su **Successivo**
 
    ![URL attività](assets/ab-test-url.png)
 
-1. Dopo aver creato una nuova attività, nel Compositore esperienza visivo sono visualizzate due schede a sinistra: *Esperienza A* e *Esperienza B*. Seleziona un’esperienza dall’elenco. Puoi aggiungere nuove esperienze all’elenco utilizzando il pulsante **Aggiungi esperienza** .
+1. Dopo aver creato una nuova attività, nel Compositore esperienza visivo sono visualizzate due schede a sinistra: *Esperienza A* e *Esperienza B*. Seleziona un’esperienza dall’elenco. È possibile aggiungere nuove esperienze all’elenco utilizzando **Aggiungi esperienza** pulsante .
 
    ![Esperienza A](assets/experience.png)
 
-1. Seleziona un&#39;immagine o un testo sulla pagina per iniziare a apportare modifiche o utilizza l&#39;editor di codice per scegliere e utilizzare l&#39;elemento HTML.
+1. Seleziona un’immagine o un testo sulla pagina per iniziare a apportare modifiche o utilizza l’editor di codice per scegliere e utilizzare l’elemento di HTML.
 
    ![Elemento](assets/select-element.png)
 
-1. Cambia il testo da *Campeggio in Australia Occidentale* a *Avventure di Australia*. Un elenco delle modifiche aggiunte a un’esperienza verrà visualizzato in Modifiche . Puoi fare clic sull’elemento modificato e modificarlo per visualizzarne il selettore CSS e il nuovo contenuto ad esso aggiunto.
+1. Modificare il testo da *Campeggio in Australia Occidentale* a *Avventure dell&#39;Australia*. Un elenco delle modifiche aggiunte a un’esperienza viene visualizzato in Modifiche . Puoi fare clic sull’elemento modificato e modificarlo per visualizzarne il selettore CSS e il nuovo contenuto ad esso aggiunto.
 
    ![Avventure](assets/adventures.png)
 
-1. Rinomina *Esperienza A* in *Avventura*
-1. Allo stesso modo, aggiorna il testo su *Esperienza B* da *Campeggio in Australia Occidentale* a *Esplora la Wilderness Australiana*.
+1. Rinomina *Esperienza A* a *Avventura*
+1. Analogamente, aggiorna il testo su *Esperienza B* da *Campeggio in Australia Occidentale* a *Esplora il selvaggio australiano*.
 
    ![Esplora](assets/explore.png)
 
-1. Fai clic su **Avanti** per passare a Targeting e mantieni un&#39;allocazione manuale del traffico di 50-50 tra le due esperienze.
+1. Fai clic su **Successivo** per passare a Targeting e mantieni un’allocazione manuale del traffico di 50-50 tra le due esperienze.
 
    ![Impostazione destinazione](assets/targeting.png)
 

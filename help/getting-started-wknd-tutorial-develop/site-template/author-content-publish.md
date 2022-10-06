@@ -11,10 +11,10 @@ level: Beginner
 kt: 7497
 thumbnail: KT-7497.jpg
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
-source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 2%
+source-wordcount: '1330'
+ht-degree: 3%
 
 ---
 
@@ -46,7 +46,7 @@ In genere, un sito web viene suddiviso in pagine per creare un’esperienza mult
 
 1. Scegli la **Pagina dell’articolo** modello e fai clic su **Successivo**.
 
-   Le pagine in AEM vengono create in base a un modello di pagina. I modelli di pagina verranno esaminati più dettagliatamente nella sezione [Modelli di pagina](page-templates.md) capitolo.
+   Le pagine in AEM vengono create in base a un modello di pagina. I modelli di pagina sono descritti in dettaglio nella sezione [Modelli di pagina](page-templates.md) capitolo.
 
 1. Sotto **Proprietà** inserire un **Titolo** di &quot;Hello World&quot;.
 1. Imposta la **Nome** essere `hello-world` e fai clic su **Crea**.
@@ -87,7 +87,7 @@ Quindi, crea alcuni componenti utilizzando l’Editor pagina AEM.
 
    ![Aggiungi risorsa alla finestra di dialogo](assets/author-content-publish/add-asset-dialog.png)
 
-1. Osserva che nella pagina sono presenti componenti, come il **Titolo**, **Navigazione**, **Ricerca** che sono corretti. Queste aree sono configurate come parte del Modello di pagina e non possono essere modificate su una singola pagina. Questo aspetto verrà approfondito nel prossimo capitolo.
+1. Osserva che nella pagina sono presenti componenti, come il **Titolo**, **Navigazione**, **Ricerca** che sono corretti. Queste aree sono configurate come parte del Modello di pagina e non possono essere modificate su una singola pagina. Questo è più esplorato nel prossimo capitolo.
 
 Sentitevi liberi di sperimentare con alcuni degli altri componenti. Documentazione su ogni [Il componente core si trova qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). Una serie video dettagliata su [L’authoring delle pagine è disponibile qui](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html).
 

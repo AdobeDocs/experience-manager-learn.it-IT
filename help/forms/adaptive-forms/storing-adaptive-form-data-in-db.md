@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 3dd552da-fc7c-4fc7-97ec-f20b6cc33df0
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '414'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Il caso d’uso consiste nell’attivare un flusso di lavoro AEM per l’invio d
 
    * Cerca &quot;JDBC Connection Pool&quot;. Crea un nuovo pool di connessioni JDBC Day Commons. Specifica le impostazioni specifiche del database.
 
-   * ![pool di connessioni jdbc](assets/aemformstutorial-jdbc.png)
+   * ![Configurazione OSGi del pool di connessioni JDBC](assets/aemformstutorial-jdbc.png)
 
 ## Specificare i dettagli del database
 
@@ -38,7 +38,7 @@ Il caso d’uso consiste nell’attivare un flusso di lavoro AEM per l’invio d
    * FormName - Nome della colonna che deve contenere il nome del modulo
    * ColumnName - Nome della colonna in cui sono contenuti i dati AF
 
-![insertdata](assets/specify-database-details.png)
+   ![Specificare la configurazione OSGi dei dettagli del database](assets/specify-database-details.png)
 
 
 

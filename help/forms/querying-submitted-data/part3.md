@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 412eea77-3cf4-43bb-9d2f-ae860cd9d3be
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 # Memorizzazione dello schema JSON nel database {#storing-json-schema-in-database}
 
 
-Per eseguire query sui dati inviati, è necessario memorizzare lo schema JSON associato al modulo inviato. Lo schema JSON verrà utilizzato nel generatore di query per generare la query.
+Per eseguire query sui dati inviati, è necessario memorizzare lo schema JSON associato al modulo inviato. Lo schema JSON viene utilizzato nel generatore di query per generare la query.
 
 Quando viene inviato un modulo adattivo, verifichiamo se lo schema JSON associato si trova nel database. Se lo schema JSON non esiste, recupereremo lo schema JSON e lo archivieremo nella tabella appropriata. Associamo inoltre il nome del modulo allo schema JSON. La schermata seguente mostra la tabella in cui sono memorizzati gli schemi JSON.
 

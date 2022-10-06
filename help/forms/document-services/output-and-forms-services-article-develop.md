@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: d268d5d6-f24f-4db9-b8e0-07dd769c6005
-source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 0%
+source-wordcount: '597'
+ht-degree: 1%
 
 ---
 
@@ -60,7 +60,7 @@ La riga 6 esporta i dati xml dal file PDF
 1. /content/AemFormsSamples/exportdata
 1. /content/AemFormsSamples/outputservice
 1. Cerca &quot;filtro Sling Referrer&quot;
-1. Selezionare la casella di controllo &quot;Consenti vuoto&quot;. (Questa impostazione deve essere utilizzata solo a scopo di test) Esistono diversi modi per testare il codice di esempio. La più rapida e semplice è quella di utilizzare l’app Postman. Postman ti consente di effettuare richieste POST al server. Installa l&#39;app Postman sul tuo sistema.
+1. Selezionare la casella di controllo &quot;Consenti vuoto&quot;. (Questa impostazione deve essere utilizzata solo a scopo di test) Esistono diversi modi per testare il codice di esempio. La più rapida e semplice è quella di utilizzare l&#39;app Postman. Postman consente di effettuare richieste POST al server. Installa l&#39;app Postman sul tuo sistema.
 Avvia l’app e immetti il seguente URL per testare l’API dei dati di esportazione
 
 Accertati di aver selezionato &quot;POST&quot; dall’elenco a discesa http://localhost:4502/content/AemFormsSamples/exportdata.html Assicurati di specificare &quot;Autorizzazione&quot; come &quot;Autenticazione di base&quot;. Specifica il nome utente e la password del server AEM Passa alla scheda &quot;Body&quot; e specifica i parametri della richiesta come mostrato nell&#39;immagine seguente
@@ -76,7 +76,7 @@ Il pacchetto contiene 3 campioni. Nei paragrafi seguenti viene spiegato quando u
 * **Parametri di richiesta -**
 
    * **xdp_or_pdf_file** : File xdp o pdf con cui si desidera unire i dati
-   * **xmlfile**: Il file di dati xml che verrà unito con xdp_or_pdf_file
+   * **xmlfile**: File di dati xml unito con xdp_or_pdf_file
    * **saveLocation**: Posizione in cui salvare il documento di cui è stato effettuato il rendering nel file system. Ad esempio c:\\documents\\sample.pdf
 
 ### Importare dati in un file PDF
@@ -86,8 +86,8 @@ Il pacchetto contiene 3 campioni. Nei paragrafi seguenti viene spiegato quando u
 * **Parametri di richiesta:**
 
    * **pdffile** : File pdf con cui si desidera unire i dati
-   * **xmlfile**: Il file di dati xml che verrà unito al file pdf
-   * **saveLocation**: Posizione in cui salvare il documento di cui è stato effettuato il rendering nel file system. Ad esempio c:\\outputsample.pdf.
+   * **xmlfile**: Il file di dati xml unito al file pdf
+   * **saveLocation**: Posizione in cui salvare il documento di cui è stato effettuato il rendering nel file system. Esempio `c:\\outputsample.pdf`.
 
 **Esportare dati dal file PDF**
 * Utilizzare FormsService per esportare dati da PDF File

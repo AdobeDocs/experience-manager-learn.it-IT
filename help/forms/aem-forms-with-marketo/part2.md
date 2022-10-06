@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: f8ba3d5c-0b9f-4eb7-8609-3e540341d5c2
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '355'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ MarketoService marketoService;
 
 Il servizio MarketoAuthenticationService implementa l&#39;interfaccia IAuthAuthentication. Questa interfaccia fa parte dell’SDK client di AEM Forms. Il servizio ottiene il token di accesso e inserisce il token nell’intestazione HttpHeader di AuthenticationDetails. Una volta che le intestazioni HttpHeaders dell&#39;oggetto AuthenticationDetails vengono compilate, l&#39;oggetto AuthenticationDetails viene restituito al livello Dermis del modello dati modulo.
 
-Presta attenzione alla stringa restituita dal metodo getAuthenticationType. Questa stringa verrà utilizzata durante la configurazione dell&#39;origine dati.
+Presta attenzione alla stringa restituita dal metodo getAuthenticationType. Questa stringa viene utilizzata durante la configurazione dell&#39;origine dati.
 
 ### Ottieni token di accesso
 

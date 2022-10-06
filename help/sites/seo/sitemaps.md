@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9165
 thumbnail: 337960.jpeg
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: 7cfc150989453eec776eb34eac9b4598c46b0d7c
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '223'
 ht-degree: 6%
 
 ---
@@ -34,7 +34,7 @@ Scopri come incrementare il SEO creando sitemap per AEM Sites.
 
 ### Configurazione OSGi dello scheduler di Sitemap
 
-Definisce la [Configurazione di fabbrica OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) per la frequenza (utilizzando [espressioni cron](http://www.cronmaker.com)) le mappe dei siti verranno rigenerate e memorizzate nella cache in AEM.
+Definisce la [Configurazione di fabbrica OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) per la frequenza (utilizzando [espressioni cron](http://www.cronmaker.com)) le mappe dei siti vengono rigenerate e memorizzate nella cache in AEM.
 
 `ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 
@@ -52,7 +52,7 @@ AEM mappa del sito supporta gli URL assoluti utilizzando [Mappatura Sling](https
 
 Esempio di definizione di un nodo di mappatura Sling per `https://wknd.com` può essere definito in `/etc/map/https` come segue:
 
-| Percorso | Nome proprietà | Tipo di proprietà | Valore proprietà |
+| Percorso  | Nome proprietà | Tipo di proprietà | Valore proprietà |
 |------|----------|---------------|-------|
 | `/etc/map/https/wknd-site` | `jcr:primaryType` | Stringa | `nt:unstructured` |
 | `/etc/map/https/wknd-site` | `sling:internalRedirect` | Stringa | `/content/wknd/(.*)` |

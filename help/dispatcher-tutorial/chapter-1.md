@@ -1,14 +1,14 @@
 ---
-title: '"Capitolo 1 - Concetti, schemi e modelli di Dispatcher"'
+title: "Capitolo 1 - Concetti, schemi e modelli di Dispatcher"
 description: Questo capitolo fornisce una breve introduzione alla cronologia e alla meccanica del Dispatcher e illustra come questo influenzi il modo in cui uno sviluppatore di AEM progetta i suoi componenti.
 feature: Dispatcher
 topic: Architecture
 role: Architect
 level: Beginner
 exl-id: 3bdb6e36-4174-44b5-ba05-efbc870c3520
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '17468'
+source-wordcount: '17460'
 ht-degree: 0%
 
 ---
@@ -198,13 +198,13 @@ e
 
 `http://domain.com/home.html/suffix.html`
 
-Sono assolutamente validi in AEM. Non vedrai alcun problema nel computer di sviluppo locale (senza Dispatcher). Molto probabilmente non si incontrerà alcun problema in UAT- o test di carico. Il problema che stiamo affrontando è così sottile che scivola attraverso la maggior parte dei test.  Ti colpirà duramente quando sei al momento del picco e sarai limitato nel tempo per affrontarlo, probabilmente non hai accesso al server, né le risorse per correggerlo. Ci siamo stati...
+Sono assolutamente validi in AEM. Non vedrai alcun problema nel computer di sviluppo locale (senza Dispatcher). Molto probabilmente non si incontrerà alcun problema in UAT- o test di carico. Il problema che stiamo affrontando è così sottile che scivola attraverso la maggior parte dei test.  Ti colpirà duramente quando sei al momento del picco e sei limitato nel tempo per affrontarlo, probabilmente non hai accesso al server, né le risorse per correggerlo. Ci siamo stati...
 
 Allora... qual è il problema?
 
 `home.html` in un file system può essere un file o una cartella. Non entrambi nello stesso momento in AEM.
 
-Se lo richiedi `home.html` in primo luogo, verrà creato come file.
+Se lo richiedi `home.html` in primo luogo, viene creato come file.
 
 Richieste successive a `home.html/suffix.html` restituisce risultati validi, ma come file `home.html` &quot;blocca&quot; la posizione nel filesystem,  `home.html` non può essere creata una seconda volta come cartella e quindi `home.html/suffix.html` non è memorizzato nella cache.
 
@@ -361,7 +361,7 @@ Cos&#39;è successo? Dispatcher memorizza una versione statica di una pagina con
 
 Dispatcher, essendo un semplice server web basato su file system, è veloce ma anche relativamente semplice. Se una risorsa inclusa cambia, non se ne rende conto. Si aggrappa comunque al contenuto presente al momento del rendering della pagina che include .
 
-La pagina &quot;Speciale invernale&quot; non è ancora stata sottoposta a rendering, quindi non esiste alcuna versione statica sul Dispatcher e verrà quindi visualizzata con il nuovo teaser in quanto verrà riprodotto di recente su richiesta.
+La pagina &quot;Speciale invernale&quot; non è ancora stata sottoposta a rendering, quindi non esiste alcuna versione statica sul Dispatcher e viene quindi visualizzata con il nuovo teaser in quanto viene riprodotto di recente su richiesta.
 
 Si potrebbe pensare che Dispatcher manterrà traccia di tutte le risorse che toccherà durante il rendering e lo scaricamento di tutte le pagine che hanno utilizzato questa risorsa, quando la risorsa cambia. Tuttavia, Dispatcher non esegue il rendering delle pagine. Il rendering viene eseguito dal sistema di pubblicazione. Dispatcher non sa quali risorse inserire in un file .html di cui è stato eseguito il rendering.
 
@@ -582,7 +582,7 @@ Vedete? La &quot;M&quot; in DAM sta per &quot;Management&quot;, come in Digital 
 
 Dal punto di vista di uno sviluppatore AEM il modello sembrava super elegante. Ma con il Dispatcher inserito nell&#39;equazione, potreste essere d&#39;accordo, che l&#39;approccio ingenuo potrebbe non essere sufficiente.
 
-Lasciamo a voi decidere se per il momento si tratta di un modello o di un anti-modello. E forse avete già delle buone idee in mente come mitigare i problemi descritti sopra? Bene. Allora sarete ansiosi di vedere come altri progetti hanno risolto questi problemi.
+Lasciamo a voi decidere se per il momento si tratta di un modello o di un anti-modello. E forse avete già delle buone idee in mente come mitigare i problemi descritti sopra? Bene. Allora dovreste essere ansiosi di vedere come altri progetti hanno risolto questi problemi.
 
 ### Risoluzione dei problemi comuni di Dispatcher
 
@@ -756,7 +756,7 @@ Ma qui si può affrontare un altro avvertimento con le impronte digitali URL: Co
 
 Wow - Ci sono molti dettagli da considerare, giusto? E rifiuta di essere compreso, testato e sottoposto a debug facilmente. E tutto per una soluzione apparentemente elegante. Certo, è elegante, ma solo da una prospettiva AEM. Insieme al Dispatcher diventa brutto.
 
-Tuttavia, non risolve un problema di base, se un&#39;immagine viene utilizzata più volte su pagine diverse, sarà memorizzata nella cache sotto quelle pagine. Non c&#39;è molta sinergia nella memorizzazione in cache.
+Tuttavia, non risolve un problema di base, se un&#39;immagine viene utilizzata più volte su pagine diverse, viene memorizzata nella cache sotto tali pagine. Non c&#39;è molta sinergia nella memorizzazione in cache.
 
 In generale, l&#39;impronta digitale degli URL è un buon strumento per avere nel tuo toolkit, ma è necessario applicarlo con attenzione, perché può causare nuovi problemi mentre risolve solo alcuni esistenti.
 
@@ -1504,7 +1504,7 @@ E naturalmente, potete applicare la vostra combinazione di tutti e tre gli appro
 
 **Opzione 2**. &quot;Non memorizzazione in cache&quot; generalmente è una cattiva idea. In questo caso, assicurati che la quantità di traffico e il numero di risorse sensibili escluse siano ridotti. Oppure assicurati che nel sistema Publish sia installata una cache in memoria, che i sistemi Publish possano gestire il carico risultante - più su quello della parte III di questa serie.
 
-**Opzione 3**. Il &quot;caching sensibile alle autorizzazioni&quot; è un approccio interessante. Dispatcher sta memorizzando nella cache una risorsa, ma prima di distribuirla, chiede al sistema AEM se può farlo. In questo modo viene creata una richiesta aggiuntiva da Dispatcher alla pubblicazione, ma in genere il sistema di pubblicazione non esegue più il rendering di una pagina se è già memorizzata nella cache. Tuttavia, questo approccio richiede un’implementazione personalizzata. Trova i dettagli qui nell&#39;articolo [Memorizzazione in cache sensibile alle autorizzazioni](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html).
+**Opzione 3**. Il &quot;caching sensibile alle autorizzazioni&quot; è un approccio interessante. Dispatcher memorizza in cache una risorsa, ma prima di distribuirla, chiede al sistema AEM se può farlo. In questo modo viene creata una richiesta aggiuntiva da Dispatcher alla pubblicazione, ma in genere il sistema di pubblicazione non esegue più il rendering di una pagina se è già memorizzata nella cache. Tuttavia, questo approccio richiede un’implementazione personalizzata. Trova i dettagli qui nell&#39;articolo [Memorizzazione in cache sensibile alle autorizzazioni](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html).
 
 **Riferimenti**
 
@@ -1526,7 +1526,7 @@ Per attenuare il problema di questo &quot;temporale di invalidazione della cache
 
 Puoi impostare Dispatcher in modo che utilizzi un `grace period` per annullamento automatico della validità. In questo modo si aggiungerebbe del tempo in più al `statfiles` data di modifica.
 
-Diciamo, il tuo `statfile` ha un tempo di modifica di oggi 12:00 e `gracePeriod` è impostato su 2 minuti. Quindi tutti i file invalidati automaticamente saranno considerati validi alle 12:01 e alle 12:02. Saranno nuovamente sottoposti a rendering dopo le 12:02.
+Diciamo, il tuo `statfile` ha un tempo di modifica di oggi 12:00 e `gracePeriod` è impostato su 2 minuti. Quindi tutti i file con annullamento automatico della validità sono considerati validi alle 12:01 e alle 12:02. Vengono riprodotti dopo le 12:02.
 
 La configurazione di riferimento propone un `gracePeriod` di due minuti per una buona ragione. Potreste pensare &quot;Due minuti? Non è quasi niente. Posso facilmente aspettare 10 minuti perché il contenuto venga visualizzato...&quot;.  Potresti essere tentato di impostare un periodo più lungo, ad esempio 10 minuti, partendo dal presupposto che il contenuto venga visualizzato almeno dopo questi 10 minuti.
 

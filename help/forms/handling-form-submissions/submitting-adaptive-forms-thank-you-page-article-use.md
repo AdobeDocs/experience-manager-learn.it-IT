@@ -15,9 +15,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 85e1b450-39c0-4bb8-be5d-d7f50b102f3d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -28,16 +28,15 @@ L’opzione Invia a endpoint REST passa i dati compilati nel modulo a una pagina
 
 \{fieldName\} = \{parameterName\}. Ad esempio, submitterName è il nome di un campo modulo adattivo e il nome del parametro è il nome del mittente. Nella pagina di ringraziamento, è possibile accedere al parametro del mittente utilizzando request.getParameter(&quot;submitter&quot;) per ottenere il valore del campo del nome del mittente.
 
-submitterName=submitter
+`submitterName=submitter`
 
-Nella schermata seguente, stiamo inviando il modulo adattivo per ringraziarti la pagina che si trova in /content/grankyou. A questa pagina di ringraziamento, trasmettiamo 3 attributi di richiesta che conterranno i valori del campo modulo.
+Nella schermata seguente, stiamo inviando il modulo adattivo per ringraziarti la pagina che si trova in /content/grankyou. A questa pagina di ringraziamento, trasmettiamo 3 attributi di richiesta che contengono i valori del campo modulo.
 
-![grazie](assets/thankyoupage.gif)
+![Pagina di ringraziamento](assets/thankyoupage.gif)
 
-È inoltre possibile inviare all’endpoint esterno tramite POST. Per farlo, devi solo selezionare la casella di controllo &quot;abilita richiesta post&quot; e fornire l’URL per l’endpoint esterno. Quando si invia il modulo, si ottiene la pagina di ringraziamento e l’endpoint POST viene richiamato simultaneamente.
+È inoltre possibile inviare all’endpoint esterno tramite POST. Per farlo, devi solo selezionare la casella di controllo &quot;abilita richiesta post&quot; e fornire l’URL per l’endpoint esterno. Quando si invia il modulo, si ottiene una pagina di ringraziamento e l’endpoint POST viene richiamato simultaneamente.
 
-![catturare](assets/capture.gif)
-
+![Acquisire la configurazione](assets/capture.gif)
 
 Per testare questa funzionalità sul server, segui le istruzioni riportate di seguito:
 

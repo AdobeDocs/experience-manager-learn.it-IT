@@ -8,9 +8,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: cfb7ed39ecb85998192ba854b34161f7e1dba19a
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '962'
 ht-degree: 10%
 
 ---
@@ -59,7 +59,7 @@ Se i modelli di frammenti di contenuto sono **not** abilitato per una configuraz
    >    1. Elimina `models` nodo
 
    >    
-   >Eventuali modelli di frammenti di contenuto esistenti creati in questa configurazione verranno eliminati e le relative definizioni verranno memorizzate in `/conf/wknd-mobile/settings/dam/cfm/models`.
+   >Eventuali modelli di frammenti di contenuto esistenti creati in questa configurazione vengono eliminati e le relative definizioni vengono memorizzate in `/conf/wknd-mobile/settings/dam/cfm/models`.
 
 1. Applica la **[!DNL WKND Mobile]** la configurazione **[!DNL WKND Mobile]Cartella risorse** per consentire la creazione di frammenti di contenuto da modelli di frammenti di contenuto all’interno della gerarchia delle cartelle Assets:
 
@@ -84,7 +84,7 @@ Prima di definire il modello Frammento di contenuto, esaminiamo l’esperienza d
 
 ![Creazione di un modello di frammento di contenuto](assets/chapter-2/design-to-model-mapping.png)
 
-Armati della mappatura, possiamo definire il frammento di contenuto che verrà utilizzato per raccogliere ed esporre infine i dati dell’evento.
+Con la mappatura è possibile definire i frammenti di contenuto utilizzati per raccogliere ed esporre infine i dati dell’evento.
 
 ## Creazione di un modello di frammento di contenuto
 
@@ -173,7 +173,7 @@ Ripeti questi passaggi utilizzando le definizioni di input definite di seguito p
 
 >[!NOTE]
 >
->La **[!UICONTROL Nome proprietà]** denota il **entrambi** il nome della proprietà JCR in cui verrà memorizzato questo valore e la chiave nel file JSON . Questo deve essere un nome semantico che non verrà modificato per tutta la durata del modello di frammento di contenuto.
+>La **[!UICONTROL Nome proprietà]** denota il **entrambi** il nome della proprietà JCR in cui è memorizzato questo valore e la chiave nel file JSON . Questo deve essere un nome semantico che non verrà modificato per tutta la durata del modello di frammento di contenuto.
 
 Dopo aver completato la creazione del modello per frammenti di contenuto, dovresti ritrovarti con una definizione simile a:
 

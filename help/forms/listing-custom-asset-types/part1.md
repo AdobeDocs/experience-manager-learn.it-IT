@@ -15,9 +15,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: da613092-e03b-467c-9b9e-668142df4634
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '645'
 ht-degree: 2%
 
 ---
@@ -66,7 +66,7 @@ Specificando la proprietà del percorso in **&quot;/content/dam&quot;** stai imp
 1. Crea un nodo sovrapposto di **/libs/fd/fp/extensions/querybuilder/assettypes**
 
 1. Imposta il percorso di sovrapposizione su &quot;/apps&quot;
-1. Passa alla nuova struttura creata in **/apps/fd/fp/extensions/querybuilder/assettypes **
+1. Passa alla nuova struttura creata in `/apps/fd/fp/extensions/querybuilder/assettypes`
 
 1. In questa posizione, crea un nodo &#39;nt:unstructured&#39; per il tipo da registrare, denomina il nodo **mp4files. Aggiungi le due seguenti proprietà a questo nodo mp4files**
 
@@ -81,7 +81,7 @@ Specificando la proprietà del percorso in **&quot;/content/dam&quot;** stai imp
    1. name: ./jcr:content/metadata/dc:format
    1. valore: video/mp4
 
-1. Ciò significa che le risorse con la proprietà dc:format uguale a video/mp4 saranno considerate un tipo di risorsa &quot;Mp4 Videos&quot;. Puoi utilizzare qualsiasi proprietà elencata sul nodo &quot;jcr:content/metadata&quot; per i criteri di ricerca
+1. Ciò significa che le risorse con la proprietà dc:format uguale a video/mp4 sono considerate un tipo di risorsa &quot;Mp4 Videos&quot;. Puoi utilizzare qualsiasi proprietà elencata sul nodo &quot;jcr:content/metadata&quot; per i criteri di ricerca
 
 1. **Assicurati di salvare il tuo lavoro**
 
@@ -91,4 +91,4 @@ Dopo aver eseguito i passaggi precedenti, il nuovo tipo di risorsa (File Mp4) in
 
 [In caso di problemi durante il funzionamento, puoi importare il pacchetto seguente.](assets/assettypeskt1.zip) Il pacchetto presenta due tipi di risorse personalizzate definiti. File Mp4 e documenti Worddocuments. Suggerisci di dare un&#39;occhiata al **/apps/fd/fp/extensions/querybuilder/assettypes**
 
-[Installa il pacchetto customeportal](assets/customportalpage.zip). Questo pacchetto contiene la pagina del portale di esempio. Questa pagina verrà utilizzata nella parte 2 di questa esercitazione
+[Installa il pacchetto customeportal](assets/customportalpage.zip). Questo pacchetto contiene la pagina del portale di esempio. Questa pagina viene utilizzata nella parte 2 di questa esercitazione

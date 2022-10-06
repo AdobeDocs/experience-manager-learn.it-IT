@@ -12,9 +12,9 @@ kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '3020'
+source-wordcount: '3014'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/a
 
 In questa esercitazione verrà descritto come scrivere [Test di unità](https://en.wikipedia.org/wiki/Unit_testing) per il componente Byline [Modello Sling](https://sling.apache.org/documentation/bundles/models.html) (creato in [Creazione di un componente AEM personalizzato](custom-component.md)). I test di unità sono test di build-time scritti in Java che verificano il comportamento previsto del codice Java. Ogni unit test è generalmente di piccole dimensioni e convalida l&#39;output di un metodo (o unità di lavoro) in base ai risultati previsti.
 
-Useremo AEM best practice e utilizzeremo:
+Utilizziamo AEM best practice e utilizziamo:
 
 * [JUnit 5](https://junit.org/junit5/)
 * [Framework di test di Mockito](https://site.mockito.org/)
@@ -238,7 +238,7 @@ Poiché i test di unità vengono eseguiti nella build, al di fuori del contesto 
 
    Questa variabile, `ctx`, espone un contesto AEM fittizio che fornisce una serie di astrazioni AEM e Sling:
 
-   * Il modello Sling BylineImpl verrà registrato in questo contesto
+   * Il modello Sling BylineImpl è registrato in questo contesto
    * Le strutture di contenuto JCR bloccate vengono create in questo contesto
    * I servizi OSGi personalizzati possono essere registrati in questo contesto
    * Fornisce una varietà di oggetti e assistenti comuni richiesti come oggetti SlingHttpServletRequest, una varietà di servizi Sling e OSGi di simulazione come ModelFactory, PageManager, Page, Template, ComponentManager, ComponentManager, Component, TagManager, Tag, ecc.
@@ -382,7 +382,7 @@ Ora che abbiamo una configurazione di base del contesto simulato, scriviamo il n
    * **`@ExtendWith({AemContextExtension.class, MockitoExtension.class})`** contrassegna la classe Test Case da eseguire con [Estensione Jupiter Mockito](https://www.javadoc.io/page/org.mockito/mockito-junit-jupiter/latest/org/mockito/junit/jupiter/MockitoExtension.html) che consente di utilizzare le annotazioni @Mock per definire oggetti fittizi a livello di Classe.
    * **`@Mock private Image`** crea un oggetto fittizio di tipo `com.adobe.cq.wcm.core.components.models.Image`. Si noti che questo è definito a livello di classe in modo che, se necessario, `@Test` i metodi possono modificarne il comportamento in base alle esigenze.
    * **`@Mock private ModelFactory`** crea un oggetto fittizio di tipo ModelFactory. Tieni presente che questa è una zanzara pura Mockito e non ha metodi implementati su di essa. Si noti che questo è definito a livello di classe in modo che, se necessario, `@Test`i metodi possono modificarne il comportamento in base alle esigenze.
-   * **`when(modelFactory.getModelFromWrappedRequest(..)`** registra il comportamento scorretto per quando `getModelFromWrappedRequest(..)` viene chiamato sull&#39;oggetto ModelFactory fittizio. Il risultato definito in `thenReturn (..)` restituisce l&#39;oggetto immagine fittizio. Questo comportamento viene richiamato solo quando: il primo parametro è uguale al `ctx`Oggetto di richiesta, il secondo parametro è qualsiasi oggetto Resource e il terzo parametro deve essere la classe Immagine dei componenti core. Accettiamo qualsiasi risorsa perché durante i nostri test imposteremo il `ctx.currentResource(...)` a varie risorse di simulazione definite in **BylineImplTest.json**. Si noti che viene aggiunta la **lenient()** rigorosità perché in seguito vogliamo ignorare questo comportamento di ModelFactory.
+   * **`when(modelFactory.getModelFromWrappedRequest(..)`** registra il comportamento scorretto per quando `getModelFromWrappedRequest(..)` viene chiamato sull&#39;oggetto ModelFactory fittizio. Il risultato definito in `thenReturn (..)` restituisce l&#39;oggetto immagine fittizio. Questo comportamento viene richiamato solo quando: il primo parametro è uguale al `ctx`Oggetto di richiesta, il secondo parametro è qualsiasi oggetto Resource e il terzo parametro deve essere la classe Immagine dei componenti core. Accettiamo qualsiasi risorsa perché durante i nostri test impostiamo il `ctx.currentResource(...)` a varie risorse di simulazione definite in **BylineImplTest.json**. Si noti che viene aggiunta la **lenient()** rigorosità perché in seguito vogliamo ignorare questo comportamento di ModelFactory.
    * **`ctx.registerService(..)`.** registra l&#39;oggetto ModelFactory in AemContext, con la classificazione di servizio più alta. Questo è necessario perché ModelFactory utilizzato nel BylineImpl&#39;s `init()` viene inserito tramite `@OSGiService ModelFactory model` campo . Per l’inserimento di AemContext **nostro** oggetto fittizio, che gestisce le chiamate a `getModelFromWrappedRequest(..)`, dobbiamo registrarlo come il servizio di classificazione più alto di quel tipo (ModelFactory).
 
 1. Esegui nuovamente il test e non riesce, ma questa volta il messaggio è chiaro perché non è riuscito.
@@ -447,7 +447,7 @@ Tenere presente che questo metodo deve restituire un elenco alfabetico delle occ
 
 1. Ricorda, proprio come **`getName()`** sopra, **BylineImplTest.json** non definisce le occupazioni, quindi questo test avrà esito negativo se lo eseguiamo, poiché `byline.getOccupations()` restituirà un elenco vuoto.
 
-   Aggiorna **BylineImplTest.json** per includere un elenco di occupazioni, che saranno impostate in ordine non alfabetico per garantire che i nostri test verifichino che le occupazioni siano ordinate in ordine alfabetico in base a **`getOccupations()`**.
+   Aggiorna **BylineImplTest.json** per includere un elenco di occupazioni e sono impostate in ordine non alfabetico per garantire che i nostri test verifichino che le occupazioni siano ordinate in ordine alfabetico in base a **`getOccupations()`**.
 
    ```json
    {

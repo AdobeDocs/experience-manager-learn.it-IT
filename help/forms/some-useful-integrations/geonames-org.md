@@ -7,9 +7,10 @@ kt: 9724
 topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 15b57ec6792bc47d0041946014863b13867adf22
+exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ Sono stati seguiti i seguenti passaggi per implementare elenchi a discesa a casc
 
 ## Creare un account sviluppatore
 
-Crea un account sviluppatore con [Geonames](https://www.geonames.org/login). Prendi nota del nome utente. Questo nome utente sarà necessario per richiamare le API REST di geonames.org.
+Crea un account sviluppatore con [Geonames](https://www.geonames.org/login). Prendi nota del nome utente. Questo nome utente è necessario per richiamare le API REST di geonames.org.
 
 ## Crea file Swagger/OpenAPI
 
@@ -82,8 +83,3 @@ L’elenco dei paesi viene compilato quando il modulo viene inizializzato per la
 
 Aggiungi 2 elenchi a discesa denominati contee e città nel modulo per elencare le contee e la città in base al paese e allo stato/provincia selezionati.
 ![esercizio](assets/cascading-drop-down-exercise.png)
-
-
-
-
-

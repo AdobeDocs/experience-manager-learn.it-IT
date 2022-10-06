@@ -1,20 +1,20 @@
 ---
 title: Crea servizio OSGi
 description: Crea il servizio OSGi per memorizzare i moduli da firmare
-feature: Flusso di lavoro
+feature: Workflow
 version: 6.4,6.5
 thumbnail: 6886.jpg
 kt: 6886
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 49e7bd65-33fb-44d4-aaa2-50832dffffb0
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 1%
+source-wordcount: '350'
+ht-degree: 0%
 
 ---
-
 
 # Crea servizio OSGi
 
@@ -130,7 +130,7 @@ public String getFormData(String guid) {
 
 ## Aggiorna stato firma
 
-Il completamento della cerimonia di firma attiva un flusso di lavoro AEM associato al modulo. Il primo passaggio nel flusso di lavoro è un passaggio del processo che aggiorna lo stato nel database per la riga identificata dal GUID e dall’ID cliente. Inoltre, è stato impostato il valore dell’elemento firmato nei dati del modulo su Y per indicare che il modulo è stato compilato e firmato. Il modulo adattivo sarà compilato con questi dati e il valore dell’elemento dati firmato nei dati xml sarà utilizzato per visualizzare il messaggio appropriato. Il codice updateSignatureStatus viene richiamato dal passaggio del processo personalizzato.
+Il completamento della cerimonia di firma attiva un flusso di lavoro AEM associato al modulo. Il primo passaggio nel flusso di lavoro è un passaggio del processo che aggiorna lo stato nel database per la riga identificata dal GUID e dall’ID cliente. Inoltre, è stato impostato il valore dell’elemento firmato nei dati del modulo su Y per indicare che il modulo è stato compilato e firmato. Il modulo adattivo viene compilato con questi dati e il valore dell’elemento dati firmato nei dati xml viene utilizzato per visualizzare il messaggio appropriato. Il codice updateSignatureStatus viene richiamato dal passaggio del processo personalizzato.
 
 
 ```java
@@ -164,7 +164,7 @@ public void updateSignatureStatus(String formData, String guid) {
 
 ## Ottieni il modulo successivo da firmare
 
-Il codice seguente è stato utilizzato per ottenere il modulo successivo per la firma per un dato customerID con lo stato 0. Se la query sql non restituisce alcuna riga, viene restituita la stringa **&quot;AllDone&quot;** che indica che non esistono più moduli per la firma per l&#39;ID cliente specificato.
+Il codice seguente è stato utilizzato per ottenere il modulo successivo per la firma per un dato customerID con lo stato 0. Se la query sql non restituisce alcuna riga, restituiamo la stringa **&quot;AllDone&quot;** indica che non esistono più moduli per la firma per l’ID cliente specificato.
 
 ```java
 @Override

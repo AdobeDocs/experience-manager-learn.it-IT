@@ -1,5 +1,5 @@
 ---
-title: Credenziali del servizio
+title: Credenziali del servizio Console per sviluppatori AEM
 description: Le credenziali del servizio AEM sono utilizzate per facilitare l’interazione programmatica di applicazioni, sistemi e servizi esterni con i servizi di authoring o pubblicazione AEM tramite HTTP.
 version: Cloud Service
 doc-type: tutorial
@@ -13,7 +13,7 @@ topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: ef4579a44c1c940a3b7441e336db3790a0c7afd7
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 0%
@@ -59,7 +59,7 @@ __Si tratta di un&#39;inizializzazione una tantum per AEM ambiente as a Cloud Se
 1. Tocca i puntini di sospensione accanto all’ambiente nel __Ambienti__ e seleziona __Console per sviluppatori__
 1. Tocca __Integrazioni__ scheda
 1. Tocca __Ottieni credenziali servizio__ pulsante
-1. Le credenziali del servizio verranno inizializzate e visualizzate come JSON
+1. Le credenziali del servizio vengono inizializzate e visualizzate come JSON
 
 ![AEM Developer Console - Integrazioni - Ottieni credenziali del servizio](./assets/service-credentials/developer-console.png)
 
@@ -69,7 +69,7 @@ Una volta inizializzata l’AEM come credenziali di servizio dell’ambiente di 
 
 ![Scaricare le credenziali del servizio](assets/service-credentials/download-service-credentials.png)
 
-Il download delle credenziali del servizio segue gli stessi passaggi dell&#39;inizializzazione. Se l&#39;inizializzazione non si è ancora verificata, all&#39;utente verrà visualizzato un errore che causa il tocco del pulsante __Ottieni credenziali servizio__ pulsante .
+Il download delle credenziali del servizio segue gli stessi passaggi dell&#39;inizializzazione. Se l&#39;inizializzazione non si è ancora verificata, all&#39;utente viene visualizzato un errore che causa il tocco di __Ottieni credenziali servizio__ pulsante .
 
 1. Verifica di aver effettuato l’accesso come:
    + Membro __Cloud Manager - Sviluppatore__ Profilo di prodotto IMS (che consente l’accesso a AEM Console per sviluppatori)
@@ -85,7 +85,7 @@ Il download delle credenziali del servizio segue gli stessi passaggi dell&#39;in
 
 ## Installare le credenziali del servizio
 
-Le credenziali del servizio forniscono i dettagli necessari per generare un JWT, scambiato con un token di accesso utilizzato per l’autenticazione con AEM as a Cloud Service. Le credenziali del servizio devono essere archiviate in un percorso sicuro accessibile dalle applicazioni, dai sistemi o dai servizi esterni che le utilizzano per accedere alle AEM. Come e dove vengono gestite le credenziali del servizio saranno univoci per cliente.
+Le credenziali del servizio forniscono i dettagli necessari per generare un JWT, scambiato con un token di accesso utilizzato per l’autenticazione con AEM as a Cloud Service. Le credenziali del servizio devono essere archiviate in un percorso sicuro accessibile dalle applicazioni, dai sistemi o dai servizi esterni che le utilizzano per accedere alle AEM. Modalità e posizione di gestione delle credenziali del servizio univoche per cliente.
 
 Per semplicità, questa esercitazione passa le credenziali di servizio in tramite la riga di comando, tuttavia, collabora con il tuo team di sicurezza IT per comprendere come archiviare e accedere a tali credenziali in conformità alle linee guida di sicurezza della tua organizzazione.
 

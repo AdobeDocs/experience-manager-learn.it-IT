@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 7a4fd109-514a-41a8-a3fe-53c1de32cb6d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Prerequisiti {#prerequisites}
 
-In questo articolo, passeremo attraverso il processo di creazione di Origine dati con Salesforce
+In questo articolo, passiamo attraverso il processo di creazione di Origine dati con Salesforce
 
 Prerequisiti per questa esercitazione:
 
@@ -29,20 +29,20 @@ Prerequisiti per questa esercitazione:
    * [Documentazione ufficiale per abilitare SSL al AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
    * [Documentazione ufficiale per abilitare SSL al AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
 
-* Avrai bisogno dell’account Salesforce
-* Sarà necessario creare un’app connessa. È elencata la documentazione ufficiale di Salesforce per la creazione dell’app [qui](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
+* Devi avere un account Salesforce
+* Devi creare un’app connessa. È elencata la documentazione ufficiale di Salesforce per la creazione dell’app [qui](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
 * Fornire ambiti OAuth appropriati per l’app (ho selezionato tutti gli ambiti OAuth disponibili ai fini del test)
 * Specifica l&#39;URL di callback. Nel mio caso, l’URL di callback era
 
-   * Se utilizzi **AEM Forms 6.3**, l’URL di callback sarà https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. In questo URL createlead è il nome del mio modello di dati del modulo.
+   * Se utilizzi **AEM Forms 6.3**, l’URL di callback è https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. In questo URL createlead è il nome del mio modello di dati del modulo.
 
-   * Se utilizzi** AEM Forms 6.4**, l’URL di callback sarà https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
+   * Se utilizzi** AEM Forms 6.4**, l’URL di callback è https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
 
 In questo esempio gbedekar -w7-1:6443 è il nome del mio server e la porta su cui AEM in esecuzione.
 
-Dopo aver creato la nota relativa all’app connessa, **Chiave del consumatore e chiave segreta**. Queste funzioni sono necessarie al momento della creazione dell’origine dati in AEM Forms.
+Dopo aver creato la nota relativa all’app connessa, **Chiave del consumatore e chiave segreta**. Sono necessarie al momento della creazione dell’origine dati in AEM Forms.
 
-Dopo aver creato l’app connessa, dovrai creare un file swagger per le operazioni da eseguire in salesforce. Un file swagger di esempio è incluso come parte delle risorse scaricabili. Questo file swagger consente di creare un oggetto &quot;Lead&quot; durante l’invio del modulo adattivo. Esplorare questo file swagger.
+Dopo aver creato l&#39;app connessa, devi creare un file swagger per le operazioni che devi eseguire in salesforce. Un file swagger di esempio è incluso come parte delle risorse scaricabili. Questo file swagger consente di creare un oggetto &quot;Lead&quot; durante l’invio del modulo adattivo. Esplorare questo file swagger.
 
 Il passaggio successivo consiste nel creare un’origine dati in AEM Forms. Segui i seguenti passaggi in base alla tua versione di AEM Forms
 

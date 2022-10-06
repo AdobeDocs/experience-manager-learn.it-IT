@@ -2,18 +2,18 @@
 title: Utilizzo del ritaglio avanzato con AEM Assets Dynamic Media
 description: Smart Crop utilizza Adobe Sensei per eliminare le attività dispendiose in termini di tempo e costi legate al ritaglio dei contenuti per un design reattivo.
 sub-product: dynamic-media
-feature: Ritaglio avanzato, profili immagine
+feature: Smart Crop, Image Profiles
 version: 6.4, 6.5
-topic: Gestione dei contenuti
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 295bbfb6-241f-41c0-972d-d9688863cea1
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 3%
+source-wordcount: '245'
+ht-degree: 2%
 
 ---
-
 
 # Utilizzo del ritaglio avanzato con AEM Assets Dynamic Media{#using-smart-crop-with-aem-assets-dynamic-media}
 
@@ -35,4 +35,4 @@ Smart Crop utilizza Adobe Sensei per eliminare le attività dispendiose in termi
 
 >[!NOTE]
 >
->Le coordinate di ritaglio avanzato dipendono dalle proporzioni. In altre parole, per le varie impostazioni di ritaglio avanzato in un profilo immagine, se le proporzioni sono le stesse per le dimensioni aggiunte nel profilo immagine, le stesse proporzioni vengono inviate a Dynamic Media. Per questo motivo, la stessa area di ritaglio verrà suggerita nell’Editor ritaglio avanzato. Ad esempio, un’impostazione di ritaglio di 100x100 e 200x200 comporterebbe la generazione dello stesso ritaglio avanzato da parte del sistema.
+>Le coordinate di ritaglio avanzato dipendono dalle proporzioni. In altre parole, per le varie impostazioni di ritaglio avanzato in un profilo immagine, se le proporzioni sono le stesse per le dimensioni aggiunte nel profilo immagine, le stesse proporzioni vengono inviate a Dynamic Media. Per questo motivo, nell’Editor ritaglio avanzato viene suggerita la stessa area di ritaglio. Ad esempio, un’impostazione di ritaglio di 100x100 e 200x200 comporterebbe la generazione dello stesso ritaglio avanzato da parte del sistema.

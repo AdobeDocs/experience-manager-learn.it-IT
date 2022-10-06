@@ -13,9 +13,9 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: cbe08570-e353-4daf-94d1-a91a8d63406d
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -32,22 +32,22 @@ Lo strumento di sviluppo Asset compute può essere eseguito dalla radice del pro
 $ aio app run
 ```
 
-Verrà avviato lo strumento di sviluppo all&#39;indirizzo __http://localhost:9000__ e lo verrà automaticamente aperto in una finestra del browser. Affinché lo strumento di sviluppo possa essere eseguito, è necessario fornire [un devToolToken valido e generato automaticamente tramite un parametro di query](#troubleshooting__devtooltoken).
+Verrà avviato lo strumento di sviluppo in __http://localhost:9000__, e lo apre automaticamente in una finestra del browser. Per l&#39;esecuzione dello strumento di sviluppo, [devToolToken valido e generato automaticamente deve essere fornito tramite un parametro di query](#troubleshooting__devtooltoken).
 
 ## Interfaccia degli strumenti di sviluppo di Asset compute{#interface}
 
 ![Strumento di sviluppo Asset compute](./assets/development-tool/asset-compute-dev-tool.png)
 
-1. __File di origine:__ la selezione del file di origine viene utilizzata per:
-   + Selezionato il binario della risorsa che sarà il binario `source` passato al processo di lavoro Asset compute
+1. __File di origine:__ La selezione del file di origine viene utilizzata per:
+   + Selezionato il binario della risorsa che agisce come `source` passato al lavoratore Asset compute
    + Caricare file di origine
-1. __Definizione del profilo di Asset compute:__ definisce il processo di lavoro Asset compute da eseguire, inclusi i parametri: inclusi il punto finale dell’URL del processo di lavoro, il nome della rappresentazione risultante ed eventuali parametri
-1. __Esegui:__ il pulsante Esegui esegue il profilo di Asset compute come definito nell’editor dei profili di configurazione di Asset compute
-1. __Interrompi:__ il pulsante Interrompi annulla un&#39;esecuzione iniziata toccando il pulsante Esegui
-1. __Richiesta/risposta:__ fornisce la richiesta e la risposta HTTP a/dal processo di lavoro Asset compute in esecuzione in Adobe I/O Runtime. Può essere utile per il debug
-1. __Registri di attivazione:__ i registri che descrivono l’esecuzione del processo di lavoro di Asset compute, insieme a eventuali errori. Queste informazioni sono disponibili anche nell’ uscita standard `aio app run`
-1. __Rappresentazioni:__ visualizza tutte le rappresentazioni generate dall’esecuzione del processo di lavoro di Asset compute
-1. __Parametro di query devToolToken:__ il token dello strumento di sviluppo di Asset compute richiede un parametro di  `devToolToken` query valido per essere presente. Questo token viene generato automaticamente ogni volta che viene generato un nuovo strumento di sviluppo
+1. __Definizione del profilo di Asset compute:__ Definisce il processo di lavoro Asset compute da eseguire, inclusi i parametri: inclusi il punto finale dell’URL del processo di lavoro, il nome della rappresentazione risultante ed eventuali parametri
+1. __Esegui:__ Il pulsante Esegui esegue il profilo di Asset compute come definito nell’editor del profilo di configurazione di Asset compute
+1. __Interrompi:__ Il pulsante Interrompi annulla un&#39;esecuzione avviata toccando il pulsante Esegui
+1. __Richiesta/risposta:__ Fornisce la richiesta e la risposta HTTP a/dal processo di lavoro Asset compute in esecuzione in Adobe I/O Runtime. Può essere utile per il debug
+1. __Registri di attivazione:__ I registri che descrivono l’esecuzione del processo di lavoro di Asset compute, insieme a eventuali errori. Queste informazioni sono disponibili anche nella `aio app run` uscita standard
+1. __Rappresentazioni:__ Visualizza tutte le rappresentazioni generate dall&#39;esecuzione del processo di lavoro Asset compute
+1. __Parametro di query devToolToken:__ Il token dello strumento di sviluppo di Asset compute richiede un valore valido `devToolToken` parametro di query presente. Questo token viene generato automaticamente ogni volta che viene generato un nuovo strumento di sviluppo
 
 ### Eseguire un processo di lavoro personalizzato
 
@@ -55,14 +55,14 @@ Verrà avviato lo strumento di sviluppo all&#39;indirizzo __http://localhost:900
 
 _Click-through dell&#39;esecuzione di un lavoro Asset compute nello strumento di sviluppo (nessun audio)_
 
-1. Assicurati che lo strumento di sviluppo Asset compute sia avviato dalla directory principale del progetto utilizzando il comando `aio app run` .
+1. Assicurati che lo strumento di sviluppo Asset compute sia avviato dalla directory principale del progetto utilizzando `aio app run` comando.
 1. Nello strumento di sviluppo di Asset compute, carica o seleziona un [file immagine di esempio](../assets/samples/sample-file.jpg)
-   + Assicurati che il file sia selezionato nel menu a discesa __File di origine__
-1. Rivedi l&#39;area di testo __Definizione del profilo di Asset compute__
-   + La chiave `worker` definisce l’URL del processo di lavoro Asset compute distribuito
-   + La chiave `name` definisce il nome del rendering da generare
-   + È possibile fornire altri valori/chiave in questo oggetto JSON e sarà disponibile nel processo di lavoro sotto l&#39;oggetto `rendition.instructions`
-      + Facoltativamente aggiungere valori per `size`, `contrast` e `brightness`:
+   + Assicurati che il file sia selezionato nella __File di origine__ menu a discesa
+1. Consulta la sezione __asset compute di definizione del profilo__ area di testo
+   + La `worker` definisce l’URL del processo di lavoro Asset compute distribuito
+   + La `name` key definisce il nome del rendering da generare
+   + Altre chiavi/valori possono essere forniti in questo oggetto JSON e sono disponibili nel processo di lavoro sotto `rendition.instructions` oggetto
+      + È possibile aggiungere valori per `size`, `contrast` e `brightness`:
 
          ```json
          {
@@ -78,8 +78,8 @@ _Click-through dell&#39;esecuzione di un lavoro Asset compute nello strumento di
          }
          ```
 
-1. Tocca il pulsante __Esegui__
-1. La sezione __Rappresentazioni__ verrà compilata con un segnaposto per il rendering
+1. Tocca __Esegui__ pulsante
+1. La __Sezione Rappresentazioni__ verrà popolato con un titolare di luogo di rendering
 1. Al termine del processo di lavoro, il segnaposto del rendering visualizza il rendering generato
 
 Apportare modifiche al codice del lavoratore durante l&#39;esecuzione dello strumento di sviluppo renderà &quot;hot deploy&quot; le modifiche. La &quot;distribuzione rapida&quot; richiede diversi secondi, quindi consenti al processo di distribuzione di completare prima di eseguire nuovamente il processo di lavoro dallo strumento di sviluppo.

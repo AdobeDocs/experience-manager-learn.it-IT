@@ -1,19 +1,19 @@
 ---
 title: Capitolo 1 - Configurazione e download delle esercitazioni - Content Services
-seo-title: Guida introduttiva a AEM Content Services - Capitolo 1 - Configurazione delle esercitazioni
+seo-title: Getting Started with AEM Content Services - Chapter 1 -  Tutorial Set up
 description: Capitolo 1 dell’esercitazione AEM Headless la configurazione della linea di base per l’istanza AEM per l’esercitazione.
-seo-description: Capitolo 1 dell’esercitazione AEM Headless la configurazione della linea di base per l’istanza AEM per l’esercitazione.
-feature: Frammenti di contenuto, API
-topic: Senza testa, gestione dei contenuti
+seo-description: Chapter 1 of the AEM Headless tutorial the baseline setup for the AEM instance for the tutorial.
+feature: Content Fragments, APIs
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: f24a75f6-9062-498c-b782-7d9011aa0bcf
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 0%
+source-wordcount: '411'
+ht-degree: 1%
 
 ---
-
 
 # Configurazione delle esercitazioni
 
@@ -21,27 +21,27 @@ Si consiglia sempre di utilizzare AEM e AEM versione più recente dei componenti
 
 * AEM 6.5 o versione successiva
 * AEM i componenti core WCM 2.4.0 o versioni successive
-   * Incluso nel [pacchetto di contenuti dell&#39;applicazione mobile AEM WKND sotto](#wknd-mobile-application-packages)
+   * Incluso nel [Pacchetto di contenuti dell&#39;applicazione di AEM mobile WKND qui sotto](#wknd-mobile-application-packages)
 
-Prima di avviare questa esercitazione, assicurati che le seguenti istanze AEM siano [installate ed eseguite sul computer locale](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install):
+Prima di avviare questa esercitazione, assicurati che le seguenti istanze di AEM siano [installato ed in esecuzione nel computer locale](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install):
 
-* **AEM** Autore  **porta 4502**
-* **AEM** Porta  **4503**
+* **AEM Author** su **porta 4502**
+* **Pubblicazione AEM** su **porta 4503**
 
 ## Pacchetti di applicazioni mobili WKND{#wknd-mobile-application-packages}
 
-Installa i seguenti pacchetti di contenuti AEM su **sia** AEM Author che AEM Publish, utilizzando [!DNL AEM Package Manager].
+Installa i seguenti pacchetti di contenuti AEM su **entrambi** AEM Author e AEM Publish, utilizzando [!DNL AEM Package Manager].
 
 * [ui.apps: GitHub > Risorse > com.adobe.aem.guides.wknd-mobile.ui.apps-x.x.x.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
    * [!DNL WKND Mobile Empty Template Type]
    * [!DNL WKND Mobile] Componente proxy per AEM componenti core WCM
    * [!DNL WKND Mobile] CSS delle pagine di AEM Content Services (per stile minore)
 * [ui.content: GitHub > com.adobe.aem.guides.wknd-mobile.ui.content-x.x.x.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
-   * [!DNL WKND Mobile] Struttura del sito
+   * [!DNL WKND Mobile] Struttura sito
    * [!DNL WKND Mobile] Struttura della cartella DAM
    * [!DNL WKND Mobile] risorse immagine
 
-In [Capitolo 7](./chapter-7.md) eseguiremo l&#39;app mobile [!DNL WKND Mobile] Android utilizzando [Android Studio](https://developer.android.com/studio) e l&#39;APK fornito (pacchetto di applicazione Android):
+In [Capitolo 7](./chapter-7.md) eseguiremo il [!DNL WKND Mobile] App mobile Android che utilizza [Android Studio](https://developer.android.com/studio) e l&#39;APK fornito (pacchetto di applicazione Android):
 
 * [[!DNL Android Mobile App: GitHub > Assets > wknd-mobile.x.x.x.apk]](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
 
@@ -56,13 +56,13 @@ Questo insieme di pacchetti di contenuti crea il contenuto e la configurazione d
 
 ## Codice sorgente
 
-Il codice sorgente sia per il progetto AEM che per il [!DNL Android Mobile App] sono disponibili in [[!DNL AEM Guides - WKND Mobile GitHub Project]](https://github.com/adobe/aem-guides-wknd-mobile). Il codice sorgente non deve essere generato o modificato per questa esercitazione, ma è fornito per consentire la completa trasparenza nella creazione di tutti gli aspetti dell’esercitazione.
+Il codice sorgente del progetto AEM e del [!DNL Android Mobile App] sono disponibili nella [[!DNL AEM Guides - WKND Mobile GitHub Project]](https://github.com/adobe/aem-guides-wknd-mobile). Il codice sorgente non deve essere generato o modificato per questa esercitazione, ma è fornito per consentire la completa trasparenza nella creazione di tutti gli aspetti dell’esercitazione.
 
-Se trovi un problema con l&#39;esercitazione o il codice, lascia un [problema GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
+Se trovi un problema con l&#39;esercitazione o il codice, lascia un [Problema GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
 
 ## Passa alla fine
 
-Per passare alla fine dell&#39;esercitazione, il pacchetto di contenuti [com.adobe.aem.guides.wknd-mobile.content.capitolo-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) può essere installato su **sia** AEM Author che AEM Publish. Tieni presente che il contenuto e la configurazione non verranno visualizzati come pubblicati in AEM Author, tuttavia a causa della distribuzione manuale, tutti i contenuti e la configurazione richiesti saranno disponibili in AEM Publish e il contenuto potrà essere accessibile a [!DNL WKND Mobile App] .
+Per passare alla fine dell’esercitazione, l’ [com.adobe.aem.guides.wknd-mobile.content.capitolo-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) il pacchetto di contenuti può essere installato su **entrambi** AEM Author e AEM Publish. Tieni presente che il contenuto e la configurazione non verranno visualizzati come pubblicati in AEM Author, tuttavia a causa della distribuzione manuale, su AEM Publish sono disponibili tutti i contenuti e la configurazione necessari per consentire l’ [!DNL WKND Mobile App] per accedere al contenuto.
 
 
 ## Passaggio successivo

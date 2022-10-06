@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: 410eb23534e083940bf716194576e099d22ca205
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '817'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ I frammenti di contenuto sono memorizzati in cartelle in AEM Assets. Per creare 
 
    ![Modelli di frammenti di contenuto consentiti](assets/author-content-fragments/allowed-content-fragment-models.png)
 
-   Questi criteri verranno ereditati automaticamente da qualsiasi sottocartella e possono essere ignorati. Puoi anche consentire modelli per tag o abilitare modelli per altre configurazioni di progetto. Questo meccanismo offre un modo efficace di gestire la gerarchia dei contenuti.
+   Questi criteri vengono ereditati automaticamente da qualsiasi sottocartella e possono essere ignorati. Puoi anche consentire modelli per tag o abilitare modelli per altre configurazioni di progetto. Questo meccanismo offre un modo efficace di gestire la gerarchia dei contenuti.
 
 1. Tocca **Salva e chiudi** per salvare le modifiche apportate alle proprietà della cartella.
 
@@ -75,7 +75,7 @@ I frammenti di contenuto sono memorizzati in cartelle in AEM Assets. Per creare 
 
 ## Creare un frammento di contenuto {#create-content-fragment}
 
-Successivamente verranno creati diversi frammenti di contenuto in base alla **Team** e **Persona** modelli.
+Successivamente, vengono creati diversi frammenti di contenuto in base **Team** e **Persona** modelli.
 
 1. Dalla schermata iniziale AEM **Frammenti di contenuto** per aprire l’interfaccia utente Frammenti di contenuto .
 

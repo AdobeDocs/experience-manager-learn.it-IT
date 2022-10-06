@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: c6844750c2ef7c3471ce6a337002dde508d611f2
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Visita il [Casella di suggerimenti](https://forms.office.com/r/74P5Xz4UH0) per l
 
 ## Stagione 1
 
-Ogni stagione varia in lunghezza e sarà rilasciata su un programma fisso. Gli argomenti della prima stagione sono principalmente basati su richieste passate che abbiamo incontrato nei nostri impegni quotidiani con clienti e partner. Visita questa pagina per aggiornamenti settimanali o seguici sul social network di tua scelta.
+Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli argomenti della prima stagione sono principalmente basati su richieste passate che abbiamo incontrato nei nostri impegni quotidiani con clienti e partner. Visita questa pagina per aggiornamenti settimanali o seguici sul social network di tua scelta.
 
 <table>
   <tr>

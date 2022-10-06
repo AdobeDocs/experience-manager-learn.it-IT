@@ -1,26 +1,27 @@
 ---
 title: Crea servlet
 description: Crea un servlet per gestire le richieste di POST per salvare i dati del modulo
-feature: Moduli adattivi
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
 kt: 6539
 thumbnail: 6539.pg
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: a24ea445-3997-4324-99c4-926b17c8d2ac
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 3%
+source-wordcount: '80'
+ht-degree: 0%
 
 ---
 
 # Crea servlet
 
-Il passaggio successivo consiste nel creare un servlet che chiamerà i metodi appropriati del nostro servizio OSGi personalizzato. Il servlet ha accesso ai dati del modulo adattivo e alle informazioni sugli allegati dei file. Il servlet restituisce un ID applicazione univoco che può essere utilizzato per recuperare il modulo adattivo parzialmente completato.
+Il passaggio successivo consiste nel creare un servlet che chiami i metodi appropriati del nostro servizio OSGi personalizzato. Il servlet ha accesso ai dati del modulo adattivo e alle informazioni sugli allegati dei file. Il servlet restituisce un ID applicazione univoco che può essere utilizzato per recuperare il modulo adattivo parzialmente completato.
 
-Il servlet viene richiamato quando l’utente fa clic sul pulsante Salva ed esci sul modulo adattivo
+Questo servlet viene richiamato quando l’utente fa clic sul pulsante Salva ed esci sul modulo adattivo
 
 ```java
 package com.techmarketing.core.servlets;

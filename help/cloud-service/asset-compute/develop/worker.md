@@ -13,9 +13,9 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 7d51ec77-c785-4b89-b717-ff9060d8bda7
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1419'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -26,26 +26,26 @@ I processi di lavoro di Asset compute costituiscono il nucleo di un progetto di 
 
 Il progetto di Asset compute genera automaticamente un processo di lavoro semplice che copia il binario originale della risorsa in un rendering denominato, senza alcuna trasformazione. In questa esercitazione modificheremo questo processo di lavoro per creare una rappresentazione più interessante, per illustrare il potere dei lavoratori Asset compute.
 
-Verrà creato un processo di lavoro di Asset compute che genera un nuovo rendering orizzontale dell’immagine, che copre lo spazio vuoto a sinistra e a destra del rendering della risorsa con una versione sfocata della risorsa. La larghezza, l&#39;altezza e la sfocatura del rendering finale saranno parametrizzate.
+Verrà creato un processo di lavoro di Asset compute che genera un nuovo rendering orizzontale dell’immagine, che copre lo spazio vuoto a sinistra e a destra del rendering della risorsa con una versione sfocata della risorsa. La larghezza, l&#39;altezza e la sfocatura del rendering finale sono parametrizzate.
 
 ## Flusso logico della chiamata di un processo di lavoro di Asset compute
 
-I dipendenti di Asset compute implementano il contratto Asset compute SDK worker API nella funzione `renditionCallback(...)` , che è concettualmente:
+I dipendenti di Asset compute implementano il contratto Asset compute SDK worker API nel `renditionCallback(...)` funzione concettualmente:
 
-+ __Input:__ Parametri binari e del profilo di elaborazione originali di una risorsa AEM
-+ __Output:__ uno o più rendering da aggiungere alla risorsa AEM
++ __Ingresso:__ Parametri binari e del profilo di elaborazione originali di una risorsa AEM
++ __Uscita:__ Uno o più rendering da aggiungere alla risorsa AEM
 
 ![Flusso logico del processo di lavoro di Asset compute](./assets/worker/logical-flow.png)
 
-1. Il servizio Author di AEM richiama il processo di lavoro Asset compute, fornendo il __(1a)__ binario originale (`source` parametro) e __(1b)__ eventuali parametri definiti nel profilo di elaborazione (`rendition.instructions` parametro).
-1. L’SDK di Asset compute orchestra l’esecuzione della funzione `renditionCallback(...)` del processo di lavoro per metadati di Asset compute personalizzati, generando un nuovo rendering binario basato sul binario originale __(1a)__ della risorsa e su eventuali parametri __(1b)__.
+1. Il servizio di authoring di AEM richiama il processo di lavoro Asset compute, fornendo l’ __(1 bis)__ binario originale (`source` ), e __1 ter)__ eventuali parametri definiti nel profilo di elaborazione (`rendition.instructions` ).
+1. L&#39;SDK di Asset compute orchestra l&#39;esecuzione del processo di lavoro dei metadati di Asset compute personalizzati `renditionCallback(...)` generare una nuova rappresentazione binaria basata sul binario originale della risorsa __(1 bis)__ e qualsiasi parametro __1 ter)__.
 
    + In questa esercitazione il rendering viene creato &quot;in process&quot;, ovvero il processo di lavoro compone il rendering, tuttavia il binario di origine può essere inviato ad altre API di servizi Web per la generazione del rendering.
 
 1. Il processo di lavoro Asset compute salva i dati binari del nuovo rendering in `rendition.path`.
-1. I dati binari scritti in `rendition.path` vengono trasportati tramite l’SDK di Asset compute ad AEM Author Service ed esposti come __(4a)__ una rappresentazione testuale e __(4b)__ persistono nel nodo di metadati della risorsa.
+1. Dati binari scritti in `rendition.path` viene trasportato tramite Asset compute SDK a AEM Author Service ed esposto come __4 bis)__ una rappresentazione testuale e __4 ter)__ persistita nel nodo di metadati della risorsa.
 
-Il diagramma riportato sopra descrive le preoccupazioni rivolte agli sviluppatori di Asset compute e il flusso logico verso la chiamata del lavoratore Asset compute. Per i curiosi, sono disponibili i [dettagli interni dell&#39;esecuzione degli Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html), ma solo i contratti API SDK per Asset compute pubblici possono essere dipendenti.
+Il diagramma riportato sopra descrive le preoccupazioni rivolte agli sviluppatori di Asset compute e il flusso logico verso la chiamata del lavoratore Asset compute. Per i curiosi, il [dettagli interni sull&#39;esecuzione degli Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html) sono disponibili, ma solo i contratti API SDK per Asset compute pubblici possono essere dipendenti.
 
 ## Anatomia di un lavoratore
 
@@ -105,29 +105,29 @@ function customHelperFunctions() { ... }
 ![Index.js generato automaticamente](./assets/worker/autogenerated-index-js.png)
 
 1. Assicurati che il progetto di Asset compute sia aperto nel codice VS
-1. Passa alla cartella `/actions/worker`
-1. Apri il file `index.js`
+1. Passa a `/actions/worker` cartella
+1. Apri `index.js` file
 
 Questo è il file JavaScript di lavoro che modificheremo in questa esercitazione.
 
 ## Installare e importare i moduli di supporto npm
 
-Essendo basati su Node.js, i progetti di Asset compute beneficiano del robusto ecosistema del modulo [npm](https://npmjs.com). Per sfruttare i moduli npm, dobbiamo prima installarli nel nostro progetto Asset compute.
+Essendo basati su Node.js, i progetti di Asset compute beneficiano del [ecosistema del modulo npm](https://npmjs.com). Per sfruttare i moduli npm, dobbiamo prima installarli nel nostro progetto Asset compute.
 
-In questo processo di lavoro, sfruttiamo [jimp](https://www.npmjs.com/package/jimp) per creare e manipolare l&#39;immagine di rendering direttamente nel codice Node.js.
+In questo lavoratore, sfruttiamo il [scintillare](https://www.npmjs.com/package/jimp) per creare e manipolare l&#39;immagine di rendering direttamente nel codice Node.js.
 
 >[!WARNING]
 >
 >Non tutti i moduli npm per la manipolazione delle risorse sono supportati da Asset compute. I moduli npm che si basano sull&#39;esistenza di applicazioni come ImageMagick o altre librerie dipendenti dal sistema operativo non sono supportati. È consigliabile limitare l’utilizzo di moduli npm solo JavaScript.
 
-1. Apri la riga di comando nella directory principale del progetto di Asset compute (questo può essere fatto in Codice VS tramite __Terminal > Nuovo terminale__) ed esegui il comando:
+1. Apri la riga di comando nella directory principale del progetto di Asset compute (questa operazione può essere eseguita in Codice VS tramite __Terminale > Nuovo terminale__) ed esegui il comando:
 
    ```
    $ npm install jimp
    ```
 
-1. Importa il modulo `jimp` nel codice del processo di lavoro in modo che possa essere utilizzato tramite l&#39;oggetto JavaScript `Jimp`.
-Aggiorna le direttive `require` nella parte superiore del processo `index.js` per importare l&#39;oggetto `Jimp` dal modulo `jimp`:
+1. Importa `jimp` nel codice del lavoratore in modo che possa essere utilizzato tramite il `Jimp` Oggetto JavaScript.
+Aggiorna `require` direttive in cima alla `index.js` per importare `Jimp` dell&#39;oggetto `jimp` modulo:
 
    ```javascript
    'use strict';
@@ -149,11 +149,11 @@ Aggiorna le direttive `require` nella parte superiore del processo `index.js` pe
 
 ## Parametri di lettura
 
-I processi di lavoro di Asset compute possono leggere i parametri che possono essere trasmessi tramite Profili di elaborazione definiti in AEM come servizio di authoring di Cloud Service. I parametri vengono passati nel processo di lavoro tramite l&#39;oggetto `rendition.instructions` .
+I processi di lavoro di Asset compute possono leggere i parametri che possono essere trasmessi tramite Profili di elaborazione definiti AEM servizio Author as a Cloud Service. I parametri vengono trasmessi al processo di lavoro tramite il `rendition.instructions` oggetto.
 
-Per leggere questi dati, accedi a `rendition.instructions.<parameterName>` nel codice del processo di lavoro.
+Queste possono essere lette accedendo a `rendition.instructions.<parameterName>` nel codice lavoratore.
 
-Qui si trovano i valori predefiniti `SIZE`, `BRIGHTNESS` e `CONTRAST` del rendering configurabile, se non sono stati forniti tramite il profilo di elaborazione. Tieni presente che `renditions.instructions` vengono passati come stringhe quando vengono richiamati da AEM come profili di elaborazione del Cloud Service, in modo che vengano trasformati nei tipi di dati corretti nel codice del processo di lavoro.
+Qui si legge nel rendering configurabile `SIZE`, `BRIGHTNESS` e `CONTRAST`, fornendo valori predefiniti se non ne è stato fornito alcuno tramite il profilo di elaborazione. Tieni presente che `renditions.instructions` vengono passate come stringhe quando vengono richiamate da AEM profili di elaborazione as a Cloud Service, in modo che vengano trasformate nei tipi di dati corretti nel codice del processo di lavoro.
 
 ```javascript
 'use strict';
@@ -180,12 +180,12 @@ exports.main = worker(async (source, rendition, params) => {
 
 ## Errori di generazione{#errors}
 
-I lavoratori Asset compute possono trovarsi in situazioni che generano errori. L&#39;SDK di Adobe Asset compute fornisce [una suite di errori predefiniti](https://github.com/adobe/asset-compute-commons#asset-compute-errors) che possono essere lanciati quando si verificano tali situazioni. Se non si applica un tipo di errore specifico, è possibile utilizzare `GenericError` oppure definire un `ClientErrors` personalizzato specifico.
+I lavoratori Asset compute possono trovarsi in situazioni che generano errori. L’SDK per Asset compute di Adobe fornisce [una suite di errori predefiniti](https://github.com/adobe/asset-compute-commons#asset-compute-errors) che possono essere lanciati quando si verificano situazioni del genere. Se non si applica un tipo di errore specifico, la `GenericError` può essere utilizzato o personalizzato `ClientErrors` può essere definito.
 
 Prima di iniziare a elaborare il rendering, controlla che tutti i parametri siano validi e supportati nel contesto di questo processo di lavoro:
 
-+ Assicurati che i parametri delle istruzioni di rendering per `SIZE`, `CONTRAST` e `BRIGHTNESS` siano validi. In caso contrario, genera un errore personalizzato `RenditionInstructionsError`.
-   + Una classe `RenditionInstructionsError` personalizzata che estende `ClientError` è definita in fondo a questo file. L&#39;utilizzo di un errore personalizzato specifico è utile quando [si scrivono test](../test-debug/test.md) per il processo di lavoro.
++ Assicurati i parametri delle istruzioni di rendering per `SIZE`, `CONTRAST`e `BRIGHTNESS` sono validi. In caso contrario, genera un errore personalizzato `RenditionInstructionsError`.
+   + Personalizzazione `RenditionInstructionsError` classe che si estende `ClientError` è definito in fondo a questo file. L&#39;utilizzo di un errore personalizzato specifico è utile quando [prove di scrittura](../test-debug/test.md) per il lavoratore.
 
 ```javascript
 'use strict';
@@ -239,22 +239,22 @@ class RenditionInstructionsError extends ClientError {
 
 Con i parametri letti, igienizzati e convalidati, il codice viene scritto per generare il rendering. Lo pseudo codice per la generazione del rendering è il seguente:
 
-1. Crea un nuovo quadro `renditionImage` in dimensioni quadrate specificate tramite il parametro `size` .
-1. Crea un oggetto `image` dal binario della risorsa di origine
-1. Utilizza la libreria __Jimp__ per trasformare l&#39;immagine:
+1. Crea un nuovo `renditionImage` tela in dimensioni quadrate specificate tramite `size` parametro .
+1. Crea un `image` oggetto dal binario della risorsa di origine
+1. Utilizza la __Grembiule__ libreria per trasformare l&#39;immagine:
    + Ritaglia l&#39;immagine originale in un quadrato centrato
    + Taglia un cerchio dal centro dell&#39;immagine &quot;al quadrato&quot;
-   + Scala per adattarsi alle dimensioni definite dal valore del parametro `SIZE`
-   + Regola il contrasto in base al valore del parametro `CONTRAST`
-   + Regola la luminosità in base al valore del parametro `BRIGHTNESS`
-1. Posizionare il `image` trasformato al centro del `renditionImage` che ha uno sfondo trasparente
-1. Scrivi il composto, `renditionImage` in `rendition.path` in modo che possa essere salvato nuovamente in AEM come rendering di risorse.
+   + Adatta alle dimensioni definite dal `SIZE` valore parametro
+   + Regola il contrasto in base al `CONTRAST` valore parametro
+   + Regolare la luminosità in base al `BRIGHTNESS` valore parametro
+1. Posiziona la trasformazione `image` nel centro del `renditionImage` che ha uno sfondo trasparente
+1. Scrivi il composto, `renditionImage` a `rendition.path` in modo che possa essere salvato nuovamente in AEM come rendering di una risorsa.
 
-Questo codice utilizza le [API Jimp](https://github.com/oliver-moran/jimp#jimp) per eseguire queste trasformazioni immagine.
+Questo codice utilizza il [API di Jimp](https://github.com/oliver-moran/jimp#jimp) per eseguire queste trasformazioni immagine.
 
-I lavoratori Asset compute devono terminare il lavoro in modo sincrono e il `rendition.path` deve essere riscritto completamente in prima del completamento del lavoro `renditionCallback`. È necessario che le chiamate alle funzioni asincrone vengano effettuate in modo sincrono utilizzando l’operatore `await` . Se non conosci le funzioni asincrone di JavaScript e come eseguirle in modo sincrono, impara a conoscere l’ [operatore di attesa di JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await).
+I lavoratori Asset compute devono finire il lavoro in modo sincrono e il `rendition.path` deve essere riscritto completamente prima del `renditionCallback` completo. Ciò richiede che le chiamate alle funzioni asincrone siano effettuate in modo sincrono utilizzando il `await` operatore. Se non hai familiarità con le funzioni asincrone di JavaScript e con come eseguirle in modo sincrono, acquisisci familiarità con [Operatore di attesa di JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await).
 
-Il lavoratore finito `index.js` deve avere l&#39;aspetto seguente:
+Il lavoratore finito `index.js` dovrebbe essere simile a:
 
 ```javascript
 'use strict';
@@ -318,15 +318,15 @@ class RenditionInstructionsError extends ClientError {
 
 ## Esecuzione del lavoratore
 
-Ora che il codice del lavoratore è completo ed è stato precedentemente registrato e configurato nel [manifest.yml](./manifest.md), può essere eseguito utilizzando lo strumento di sviluppo dell&#39;Asset compute locale per vedere i risultati.
+Ora che il codice del lavoratore è completo ed è stato precedentemente registrato e configurato nel [manifest.yml](./manifest.md), può essere eseguito utilizzando lo strumento di sviluppo Asset compute locale per visualizzare i risultati.
 
 1. Dalla directory principale del progetto Asset compute
 1. Esegui `aio app run`
 1. Attendi l&#39;apertura dello strumento di sviluppo di Asset compute in una nuova finestra
-1. In __Seleziona un file...A discesa__ , seleziona un’immagine di esempio da elaborare
+1. In __Seleziona un file...__ a discesa, seleziona un’immagine di esempio da elaborare
    + Seleziona un file immagine di esempio da utilizzare come binario della risorsa sorgente
-   + Se non è ancora presente, tocca il file __(+)__ a sinistra e carica un [immagine di esempio](../assets/samples/sample-file.jpg) e aggiorna la finestra del browser Strumenti di sviluppo
-1. Aggiorna `"name": "rendition.png"` come questo processo di lavoro per generare un PNG trasparente.
+   + Se non è ancora presente, tocca il pulsante __(+)__ a sinistra e carica un [immagine campione](../assets/samples/sample-file.jpg) e aggiornare la finestra del browser Strumenti di sviluppo
+1. Aggiorna `"name": "rendition.png"` come questo lavoratore per generare un PNG trasparente.
    + Questo parametro &quot;name&quot; viene utilizzato solo per lo strumento di sviluppo e non deve fare affidamento su di esso.
 
    ```json
@@ -340,8 +340,8 @@ Ora che il codice del lavoratore è completo ed è stato precedentemente registr
    }
    ```
 
-1. Tocca __Esegui__ e attendi che il rendering venga generato
-1. La sezione __Rendering__ visualizza in anteprima il rendering generato. Tocca l’anteprima del rendering per scaricare il rendering completo
+1. Tocca __Esegui__ e attendere che il rendering venga generato
+1. La __Rendering__ visualizza in anteprima il rendering generato. Tocca l’anteprima del rendering per scaricare il rendering completo
 
    ![Rendering PNG predefinito](./assets/worker/default-rendition.png)
 
@@ -352,7 +352,7 @@ I parametri passati tramite le configurazioni del profilo di elaborazione posson
 >[!WARNING]
 >
 >Durante lo sviluppo locale, i valori possono essere passati utilizzando vari tipi di dati, quando passati da AEM come profili di elaborazione del Cloud Service come stringhe, quindi assicurati che i tipi di dati corretti siano analizzati se necessario.
-> Ad esempio, la funzione `crop(width, height)` di Jimp richiede che i suoi parametri siano `int`. Se `parseInt(rendition.instructions.size)` non viene analizzato in un valore int, la chiamata a `jimp.crop(SIZE, SIZE)` avrà esito negativo in quanto i parametri saranno di tipo &quot;String&quot; incompatibile.
+> Ad esempio, Jimp `crop(width, height)` la funzione richiede che i relativi parametri siano `int`S. Se `parseInt(rendition.instructions.size)` non viene analizzato in un valore int, quindi la chiamata a `jimp.crop(SIZE, SIZE)` non riesce perché i parametri sono di tipo &quot;String&quot; incompatibile.
 
 Il nostro codice accetta parametri per:
 
@@ -360,7 +360,7 @@ Il nostro codice accetta parametri per:
 + `contrast` definisce la regolazione del contrasto, deve essere compresa tra -1 e 1, come floats
 + `brightness`  definisce la regolazione luminosa, deve essere compresa tra -1 e 1, come galleggianti
 
-Queste vengono lette nel processo di lavoro `index.js` tramite:
+Queste vengono lette nel lavoratore `index.js` tramite:
 
 + `const SIZE = parseInt(rendition.instructions.size) || 800`
 + `const CONTRAST = parseFloat(rendition.instructions.contrast) || 0`
@@ -382,16 +382,16 @@ Queste vengono lette nel processo di lavoro `index.js` tramite:
    }
    ```
 
-1. Tocca di nuovo __Esegui__
+1. Tocca __Esegui__ di nuovo
 1. Tocca l’anteprima del rendering per scaricare e rivedere il rendering generato. Nota le dimensioni e come sono stati modificati il contrasto e la luminosità rispetto al rendering predefinito.
 
    ![Rendering PNG con parametri](./assets/worker/parameterized-rendition.png)
 
-1. Carica altre immagini nel menu a discesa __File di origine__ e prova a eseguire il processo di lavoro rispetto a loro con parametri diversi!
+1. Carica altre immagini in __File di origine__ a discesa, e prova a eseguire il processo di lavoro rispetto a loro con parametri diversi!
 
 ## Index.js di Worker su Github
 
-L’ ultima versione `index.js` è disponibile su Github all’indirizzo:
+Il finale `index.js` è disponibile su Github all’indirizzo:
 
 + [aem-guides-wknd-asset-compute/actions/worker/index.js](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/actions/worker/index.js)
 

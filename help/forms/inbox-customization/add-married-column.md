@@ -12,9 +12,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '306'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Per visualizzare i dati del flusso di lavoro nella inbox, dobbiamo definire e po
 * [Importa il flusso di lavoro di revisione](assets/review-workflow.zip)
 * [Rivedi il flusso di lavoro](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
 
-Questo flusso di lavoro ha due variabili definite (isMarried e Revenue) e i suoi valori sono impostati utilizzando il componente della variabile impostata. Queste variabili saranno rese disponibili come colonne da aggiungere AEM casella in entrata
+Questo flusso di lavoro ha due variabili definite (isMarried e Revenue) e i suoi valori sono impostati utilizzando il componente della variabile impostata. Queste variabili sono rese disponibili come colonne da aggiungere AEM casella in entrata
 
 ## Crea servizio
 

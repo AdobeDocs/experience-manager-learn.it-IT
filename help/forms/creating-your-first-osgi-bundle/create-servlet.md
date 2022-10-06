@@ -7,7 +7,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 72728ed7-80a2-48b5-ae7f-d744db8a524d
-source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
@@ -39,33 +39,33 @@ import com.adobe.fd.forms.api.FormsService;
 @Component(service={Servlet.class}, property={"sling.servlet.methods=post", "sling.servlet.paths=/bin/mergedataWithAcroform"})
 public class MyFirstAEMFormsServlet extends SlingAllMethodsServlet
 {
-	
-	private static final long serialVersionUID = 1L;
-	@Reference
-	FormsService formsService;
-	 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response)
-	  { 
-		 String file_path = request.getParameter("save_location");
-		 
-		 java.io.InputStream pdf_document_is = null;
-		 java.io.InputStream xml_is = null;
-		 javax.servlet.http.Part pdf_document_part = null;
-		 javax.servlet.http.Part xml_data_part = null;
-		 	 try
-		 	 {
-		 		pdf_document_part = request.getPart("pdf_file");
-				 xml_data_part = request.getPart("xml_data_file");
-				 pdf_document_is = pdf_document_part.getInputStream();
-				 xml_is = xml_data_part.getInputStream();
-				 Document data_merged_document = formsService.importData(new Document(pdf_document_is), new Document(xml_is));
-				 data_merged_document.copyToFile(new File(file_path));
-				 
-		 	 }
-		 	 catch(Exception e)
-		 	 {
-		 		 response.sendError(400,e.getMessage());
-		 	 }
-	  }
+    
+    private static final long serialVersionUID = 1L;
+    @Reference
+    FormsService formsService;
+     protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response)
+      { 
+         String file_path = request.getParameter("save_location");
+         
+         java.io.InputStream pdf_document_is = null;
+         java.io.InputStream xml_is = null;
+         javax.servlet.http.Part pdf_document_part = null;
+         javax.servlet.http.Part xml_data_part = null;
+              try
+              {
+                 pdf_document_part = request.getPart("pdf_file");
+                 xml_data_part = request.getPart("xml_data_file");
+                 pdf_document_is = pdf_document_part.getInputStream();
+                 xml_is = xml_data_part.getInputStream();
+                 Document data_merged_document = formsService.importData(new Document(pdf_document_is), new Document(xml_is));
+                 data_merged_document.copyToFile(new File(file_path));
+                 
+              }
+              catch(Exception e)
+              {
+                  response.sendError(400,e.getMessage());
+              }
+      }
 }
 ```
 
@@ -76,16 +76,16 @@ Per creare il progetto, effettua le seguenti operazioni:
 * Apri **finestra del prompt dei comandi**
 * Accedi a `c:\aemformsbundles\mysite\core`
 * Esegui il comando `mvn clean install -PautoInstallBundle`
-* Il comando precedente genera e distribuisce automaticamente il bundle nella tua istanza AEM in esecuzione su localhost:4502
+* Il comando precedente crea e distribuisce automaticamente il bundle nell&#39;istanza AEM in esecuzione su localhost:4502
 
-Il bundle sarà disponibile anche nella seguente posizione `C:\AEMFormsBundles\mysite\core\target`. Il bundle può anche essere distribuito in AEM utilizzando il [Console web Felix.](http://localhost:4502/system/console/bundles)
+Il bundle è disponibile anche nella seguente posizione `C:\AEMFormsBundles\mysite\core\target`. Il bundle può anche essere distribuito in AEM utilizzando il [Console web Felix.](http://localhost:4502/system/console/bundles)
 
 
 ## Test del Risolutore Servlet
 
-Posiziona il browser sul [URL risolutore servlet](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Questo ti dirà il servlet che verrà richiamato per un determinato percorso come visto nella schermata sottostante
+Posiziona il browser sul [URL risolutore servlet](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Questo indica il servlet che viene richiamato per un determinato percorso come mostrato nella schermata sottostante
 ![risolutore servlet](assets/servlet-resolver.JPG)
 
 ## Test del servlet tramite Postman
 
-![postino del servlet di prova](assets/test-servlet-postman.JPG)
+![Test del servlet tramite Postman](assets/test-servlet-postman.JPG)

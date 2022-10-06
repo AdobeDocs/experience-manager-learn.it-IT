@@ -1,18 +1,18 @@
 ---
 title: Impostazione del valore di Json Data Element nel flusso di lavoro AEM Forms
 description: Poiché un modulo adattivo viene indirizzato a diversi utenti in AEM flusso di lavoro, è necessario nascondere o disattivare alcuni campi o pannelli in base alla persona che sta esaminando il modulo. Per soddisfare questi casi d’uso, in genere viene impostato un valore di un campo nascosto. In base al valore delle regole business di questo campo nascosto può essere creato per nascondere/disabilitare pannelli o campi appropriati.
-feature: Moduli adattivi
+feature: Adaptive Forms
 version: 6.4
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: fbe6d341-7941-46f5-bcd8-58b99396d351
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '685'
 ht-degree: 1%
 
 ---
-
 
 # Impostazione del valore di JSON Data Element nel flusso di lavoro AEM Forms {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
@@ -20,7 +20,7 @@ Poiché un modulo adattivo viene indirizzato a diversi utenti in AEM flusso di l
 
 ![Impostazione del valore di un elemento nei dati json](assets/capture-3.gif)
 
-In AEM Forms OSGI- dovremo scrivere un bundle OSGi personalizzato per impostare il valore dell&#39;elemento dati JSON. Il bundle viene fornito come parte di questa esercitazione.
+In AEM Forms OSGi - dobbiamo creare un bundle OSGi personalizzato per impostare il valore dell&#39;elemento dati JSON. Il bundle viene fornito come parte di questa esercitazione.
 
 Usiamo Process Step nel flusso di lavoro AEM. Associamo il bundle OSGi &quot;Set Value of Element in Json&quot; a questo passaggio del processo.
 
@@ -46,11 +46,11 @@ Per distribuire le risorse sul sistema locale:
    * Posiziona il browser su [gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
       * Importa e installa il setValueOfElementInJSONDataWorkflow.zip.Questo pacchetto presenta il modello di flusso di lavoro di esempio e il modello dati modulo associati al modulo.
 
-* Posiziona il browser su [Forms e Documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Posiziona il browser su [Forms e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Fai clic su Crea | Caricamento file
 * Carica il file TimeOffRequestForm.zip
    **Questo modulo è stato creato con AEM Forms 6.4. Assicurati di essere su AEM Forms 6.4 o versione successiva**
-* Apri il [modulo](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
+* Apri [modulo](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
 * Compila le date di inizio e di fine e invia il modulo.
 * Vai a [&quot;Inbox&quot;](http://localhost:4502/aem/inbox)
 * Aprire il modulo associato all&#39;attività.
@@ -59,7 +59,7 @@ Per distribuire le risorse sul sistema locale:
 
 >[!NOTE]
 >
->Poiché stiamo precompilando il modulo adattivo utilizzando il profilo utente, assicurati che le informazioni sul profilo utente [amministratore ](http://localhost:4502/security/users.html) siano disponibili. Assicurati almeno di aver impostato i valori dei campi Nome, Cognome e Email .
+>Poiché il modulo adattivo viene precompilato utilizzando il profilo utente, assicurati che l’amministratore [informazioni sul profilo utente ](http://localhost:4502/security/users.html). Assicurati almeno di aver impostato i valori dei campi Nome, Cognome e Email .
 >Puoi abilitare la registrazione di debug abilitando il logger per com.aemforms.setvalue.core.SetValueInJson [da qui](http://localhost:4502/system/console/slinglog)
 
 >[!NOTE]

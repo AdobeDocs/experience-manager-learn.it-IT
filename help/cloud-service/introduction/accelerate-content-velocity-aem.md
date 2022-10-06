@@ -3,7 +3,7 @@ title: Accelerazione della velocità dei contenuti con i sistemi di stile AEM
 description: Scopri come utilizzare i sistemi di stile AEM per consentire a designer, autori di contenuti e sviluppatori di creare e distribuire esperienze alla velocità e alle dimensioni che i clienti si aspettano.
 solution: Experience Manager
 exl-id: 449cd133-6ab6-456e-a0ad-30e3dea9b75b
-source-git-commit: 471f0fe940abb8241428beb14896d83e140136b3
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 0%
@@ -92,4 +92,4 @@ Infine, l&#39;uso dei Sistemi di Stile è più arte che scienza. Come accennato,
 
 Per ulteriori informazioni, consulta la nostra [Webinar Customer Success](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) con Will Brisbane e Joseph Van Buskirk.
 
-Per saperne di più sulla strategia e la leadership del pensiero, consulta [Successo del cliente](https://experienceleague.corp.adobe.com/docs/customer-success/customer-success/overview.html) hub
+Per saperne di più sulla strategia e la leadership del pensiero, consulta [Successo del cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub

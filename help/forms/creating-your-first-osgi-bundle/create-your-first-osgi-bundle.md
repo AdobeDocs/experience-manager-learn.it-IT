@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
-source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '667'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ Al termine del completamento, nella finestra del comando dovrebbe essere visuali
 ## Crea un progetto eclipse dal tuo progetto Maven
 
 * Cambia la directory di lavoro in `mysite`
-* Esegui `mvn eclipse:eclipse` dalla riga di comando. Il comando legge il file pom e crea progetti Eclipse con metadati corretti in modo che Eclipse possa comprendere i tipi di progetto, le relazioni, il percorso di classe, ecc.
+* Esegui `mvn eclipse:eclipse` dalla riga di comando. Il comando legge il file pom e crea progetti Eclipse con metadati corretti in modo che Eclipse comprenda tipi di progetto, relazioni, percorsi di classe, ecc.
 
 ## Importa il progetto in eclissi
 
@@ -93,15 +93,15 @@ Seleziona il c:\aemformsbundles\mysite by clicking the **Sfoglia** pulsante
 
 Fai clic su **Fine** per avviare il processo di importazione
 
-Il progetto viene importato in Eclipse e vengono visualizzati diversi `mysite.xxxx` cartelle
+Il progetto viene importato in Eclipse e sono disponibili diverse opzioni `mysite.xxxx` cartelle
 
-Espandi la `src/main/java` in `mysite.core` cartella. Questa è la cartella in cui scriverai la maggior parte del codice.
+Espandi la `src/main/java` in `mysite.core` cartella. Questa è la cartella in cui si scrive la maggior parte del codice.
 
 ![sorgente dati](assets/mysite-core-project.png)
 
 ## Includi SDK client AEM FD
 
-Sarà necessario includere l’sdk client AEMFD nel progetto per sfruttare i vari servizi forniti con AEM Forms. Fai riferimento a [SDK client AEMFD](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) per includere l’SDK client appropriato nel progetto Maven. Devi includere l’SDK client FD AEM nella sezione dipendenze di `pom.xml` del progetto principale come mostrato di seguito.
+Devi includere l’sdk client AEMFD nel tuo progetto per sfruttare i vari servizi forniti con AEM Forms. Fai riferimento a [SDK client AEMFD](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) per includere l’SDK client appropriato nel progetto Maven. Devi includere l’SDK client FD AEM nella sezione dipendenze di `pom.xml` del progetto principale come mostrato di seguito.
 
 ```xml
 <dependency>
@@ -116,5 +116,5 @@ Per creare il progetto, effettua le seguenti operazioni:
 * Apri **finestra del prompt dei comandi**
 * Accedi a `c:\aemformsbundles\mysite\core`
 * Esegui il comando `mvn clean install -PautoInstallBundle`
-Il comando precedente crea e installa il bundle nel server AEM in esecuzione su `http://localhost:4502`. Il bundle sarà disponibile anche sul file system all&#39;indirizzo
+Il comando precedente crea e installa il bundle nel server AEM in esecuzione su `http://localhost:4502`. Il bundle è disponibile anche sul file system all&#39;indirizzo
    `C:\AEMFormsBundles\mysite\core\target` e può essere distribuito utilizzando [Console web Felix](http://localhost:4502/system/console/bundles)

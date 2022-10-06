@@ -11,9 +11,9 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 41be8c934bba16857d503398b5c7e327acd8d20b
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '910'
 ht-degree: 1%
 
 ---
@@ -39,9 +39,9 @@ Per selezionare un criterio, confronta
 * `Allowed Origin` con `Origin` intestazione della richiesta
 * e `Allowed Paths` con il percorso della richiesta.
 
-Verrà utilizzato il primo criterio corrispondente a questi valori. Se non viene trovato nessuno, qualsiasi [!DNL CORS] richiesta negata.
+Vengono utilizzati i primi criteri che corrispondono a questi valori. Se non viene trovato nessuno, qualsiasi [!DNL CORS] richiesta negata.
 
-Se non è stato configurato alcun criterio, [!DNL CORS] Le richieste non riceveranno risposta poiché il gestore verrà disabilitato e quindi negato in modo efficace, purché nessun altro modulo del server risponda a [!DNL CORS].
+Se non è stato configurato alcun criterio, [!DNL CORS] Le richieste non riceveranno risposta anche in quanto il gestore è disabilitato e quindi effettivamente negato, purché nessun altro modulo del server risponda a [!DNL CORS].
 
 ### Proprietà dei criteri
 
@@ -155,7 +155,7 @@ Per consentire il caching delle intestazioni CORS, aggiungi la seguente configur
 
 Ricorda di **riavvia l&#39;applicazione server web** dopo aver apportato modifiche al `dispatcher.any` file.
 
-È probabile che cancelli completamente la cache sarà necessario per garantire che le intestazioni siano correttamente memorizzate nella cache nella richiesta successiva dopo un `/cache/headers` aggiornamento della configurazione.
+Probabilmente cancella la cache interamente necessaria per garantire che le intestazioni siano correttamente memorizzate nella cache nella richiesta successiva dopo un `/cache/headers` aggiornamento della configurazione.
 
 ## Risoluzione dei problemi CORS
 

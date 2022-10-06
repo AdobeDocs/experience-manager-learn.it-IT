@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: 93d50e79853429f420803c28807ee8018d0ff78f
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '297'
 ht-degree: 4%
 
 ---
@@ -46,7 +46,7 @@ Per seguire questa esercitazione, è necessario quanto segue:
 
 ### Ambiente AEM
 
-Per completare questa esercitazione, si consiglia AEM l’accesso dell’amministratore a un ambiente as a Cloud Service AEM.  Se non hai accesso a AEM ambiente as a Cloud Service, puoi utilizzare la [SDK Quickstart AEM locale as a Cloud Service](/help/cloud-service/local-development-environment/aem-runtime.md). Tuttavia, è importante tenere presente che alcune schermate dell’interfaccia utente del prodotto, come la navigazione nei frammenti di contenuto, saranno diverse.
+Per completare questa esercitazione, si consiglia AEM l’accesso dell’amministratore a un ambiente as a Cloud Service AEM.  Se non hai accesso a AEM ambiente as a Cloud Service, puoi utilizzare la [SDK Quickstart AEM locale as a Cloud Service](/help/cloud-service/local-development-environment/aem-runtime.md). Tuttavia, è importante tenere presente che alcune schermate dell’interfaccia utente del prodotto, come la navigazione nei frammenti di contenuto, sono diverse.
 
 ## Cominciamo!
 

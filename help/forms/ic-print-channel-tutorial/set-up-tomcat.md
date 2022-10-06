@@ -1,8 +1,7 @@
 ---
 title: Video sull’installazione e la configurazione di Tomcat
 seo-title: Install and Configure Tomcat
-description: Questa è parte 1 di tutorial multistep per la creazione del tuo primo documento di comunicazione interattivo.In questa parte, installeremo TOMCAT e distribuiremo il file sampleRest.war in TOMCAT. L'endpoint REST esposto da questo file WAR sarà la base per il nostro Data Source e Form Data Model.
-seo-description: This is part 1 of multistep tutorial for creating your first interactive communications document.In this part, we will install TOMCAT and deploy the sampleRest.war file in TOMCAT. The REST endpoint exposed by this WAR file will be the basis for our Data Source and Form Data Model.
+description: Questa è la parte 1 dell’esercitazione su più passaggi per la creazione del primo documento di comunicazione interattiva.
 uuid: 835e2342-82b6-4f0c-9a6b-467bbbd8527a
 feature: Interactive Communication
 topics: development
@@ -16,16 +15,16 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: faa9ca2d-6cfa-4abf-be5e-3e549202853a
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
 # Installa e configura Tomcat {#install-and-configure-tomcat}
 
-In questa parte, installeremo TOMCAT e implementeremo il file sampleRest.war in TOMCAT. L&#39;endpoint REST esposto da questo file WAR sarà la base per il nostro Data Source e Form Data Model.
+In questa parte, installiamo TOMCAT e distribuiamo il file sampleRest.war in TOMCAT. L’endpoint REST esposto da questo file WAR è la base del modello dati Origine dati e Modulo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37815/?quality=9&learn=on)
 

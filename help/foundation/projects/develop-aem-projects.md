@@ -11,9 +11,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '4582'
+source-wordcount: '4571'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ La struttura a nodo intero:
 
 ### Directory principale dei modelli di progetto
 
-Il nodo principale del modello di progetto sarà di tipo **cq:Template**. Su questo nodo è possibile configurare le proprietà **jcr:title** e **jcr:description** che verrà visualizzato nella Creazione guidata progetto. Esiste anche una proprietà denominata **procedura guidata** che fa riferimento a un modulo che popolerà le proprietà del progetto. Il valore predefinito di: **/libs/cq/core/content/projects/wizard/steps/defaultproject.html** dovrebbe funzionare bene per la maggior parte dei casi, in quanto consente all&#39;utente di compilare le proprietà di base del progetto e aggiungere membri del gruppo.
+Il nodo principale del modello di progetto è di tipo **cq:Template**. Su questo nodo è possibile configurare le proprietà **jcr:title** e **jcr:description** visualizzato nella Creazione guidata progetto. Esiste anche una proprietà denominata **procedura guidata** che fa riferimento a un modulo che popolerà le proprietà del progetto. Il valore predefinito di: **/libs/cq/core/content/projects/wizard/steps/defaultproject.html** dovrebbe funzionare bene per la maggior parte dei casi, in quanto consente all&#39;utente di compilare le proprietà di base del progetto e aggiungere membri del gruppo.
 
 *&#42;La Creazione guidata progetto non utilizza il servlet Sling POST. Vengono invece inviati valori a un servlet personalizzato:**com.adobe.cq.projects.impl.servlet.ProjectServlet**. È necessario tenerne conto quando si aggiungono campi personalizzati.*
 
@@ -288,7 +288,7 @@ Anche se le attività presentano alcuni vantaggi rispetto ai passaggi partecipan
 
 Il diagramma precedente illustra i requisiti di alto livello per il flusso di lavoro di approvazione del campione.
 
-Il primo passaggio consiste nel creare un’attività per completare la modifica di un contenuto. L’iniziatore del flusso di lavoro potrà scegliere l’assegnatario di questa prima attività.
+Il primo passaggio consiste nel creare un&#39;attività per completare la modifica di un contenuto. L’iniziatore del flusso di lavoro potrà scegliere l’assegnatario di questa prima attività.
 
 Una volta completata la prima attività, l’assegnatario avrà tre opzioni per indirizzare il flusso di lavoro:
 
@@ -324,7 +324,7 @@ L’ultimo passaggio del flusso di lavoro utilizza la fase del processo ootb Att
    >
    >Se utilizzi AEM 6.4+, la posizione del Flusso di lavoro è cambiata. Vedi [qui per maggiori dettagli.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-best-practices.html#LocationsWorkflowModels)
 
-   Se utilizzi AEM 6.4+, il modello di flusso di lavoro verrà creato in `/conf/global/settings/workflow/models`. Ripeti i passaggi precedenti con la directory /conf e aggiungi una sottocartella denominata `aem-guides` e sposta `content-approval-workflow` sotto.
+   Se utilizzi AEM 6.4+, il modello di flusso di lavoro viene creato in `/conf/global/settings/workflow/models`. Ripeti i passaggi precedenti con la directory /conf e aggiungi una sottocartella denominata `aem-guides` e sposta `content-approval-workflow` sotto.
 
    ![Percorso moderno di definizione del flusso di lavoro](./assets/develop-aem-projects/modern-workflow-definition-location.png)
 Posizione del modello di flusso di lavoro in 6.4+
@@ -345,7 +345,7 @@ Posizione del modello di flusso di lavoro in 6.4+
 
    La barra di avanzamento del flusso di lavoro visualizzata dalla casella in entrata AEM.
 
-   Facoltativamente, puoi caricare un **Immagine** nelle Proprietà pagina che verranno utilizzate come miniatura del flusso di lavoro quando gli utenti la selezionano. Le dimensioni dell&#39;immagine devono essere 319x319 pixel. Aggiunta di un **Descrizione** In Proprietà pagina viene visualizzato anche quando un utente accede per selezionare il flusso di lavoro.
+   Facoltativamente, puoi caricare un **Immagine** nelle Proprietà pagina utilizzate come miniatura del flusso di lavoro quando gli utenti la selezionano. Le dimensioni dell&#39;immagine devono essere 319x319 pixel. Aggiunta di un **Descrizione** In Proprietà pagina viene visualizzato anche quando un utente accede per selezionare il flusso di lavoro.
 
 1. Il processo del flusso di lavoro Crea attività progetto è progettato per creare un’attività come passaggio nel flusso di lavoro. Solo una volta completata l’attività, il flusso di lavoro procederà. Un aspetto importante del passaggio Crea attività progetto è che può leggere i valori dei metadati del flusso di lavoro e usarli per creare in modo dinamico l&#39;attività.
 
@@ -374,7 +374,7 @@ Posizione del modello di flusso di lavoro in 6.4+
        Due In - Days = "2"
    ```
 
-   La scheda di routing è una finestra di dialogo facoltativa che può specificare le azioni disponibili per l’utente che completa l’attività. Queste azioni sono solo valori stringa e verranno salvate nei metadati del flusso di lavoro. Questi valori possono essere letti da script e/o fasi di processo successive nel flusso di lavoro per &quot;indirizzare&quot; in modo dinamico il flusso di lavoro. In base ai [obiettivi del flusso di lavoro](#goals-tutorial) verranno aggiunte tre azioni a questa scheda:
+   La scheda di routing è una finestra di dialogo facoltativa che può specificare le azioni disponibili per l’utente che completa l’attività. Queste azioni sono solo valori stringa e vengono salvate nei metadati del flusso di lavoro. Questi valori possono essere letti da script e/o fasi di processo successive nel flusso di lavoro per &quot;indirizzare&quot; in modo dinamico il flusso di lavoro. In base ai [obiettivi del flusso di lavoro](#goals-tutorial) verranno aggiunte tre azioni a questa scheda:
 
    ```shell
    Routing Tab
@@ -393,7 +393,7 @@ Posizione del modello di flusso di lavoro in 6.4+
       Pre-Create Task Script = "/apps/aem-guides/projects/scripts/start-task-config.ecma"
    ```
 
-1. Nel passaggio precedente abbiamo fatto riferimento a uno script di attività pre-creazione. Ora creeremo lo script in cui imposteremo l’assegnatario dell’attività in base al valore di un valore di metadati del flusso di lavoro &quot;**assegnatario**&quot;. La **&quot;assegnatario&quot;** viene impostato all’avvio del flusso di lavoro. Leggeremo anche i metadati del flusso di lavoro per scegliere dinamicamente la priorità dell&#39;attività leggendo il &quot;**taskPriority&quot;** valore dei metadati del flusso di lavoro e **&quot;taskDueDate&quot; **impostato in modo dinamico alla scadenza della prima attività.
+1. Nel passaggio precedente abbiamo fatto riferimento a uno script di attività pre-creazione. Ora creeremo lo script in cui imposteremo l’assegnatario dell’attività in base al valore di un valore di metadati del flusso di lavoro &quot;**assegnatario**&quot;. La **&quot;assegnatario&quot;** viene impostato quando il flusso di lavoro viene avviato. Leggeremo anche i metadati del flusso di lavoro per scegliere dinamicamente la priorità dell&#39;attività leggendo il &quot;**taskPriority&quot;** valore dei metadati del flusso di lavoro e **&quot;taskDueDate&quot; **impostato in modo dinamico alla scadenza della prima attività.
 
    A scopo organizzativo abbiamo creato una cartella sotto la cartella dell’app in cui sono contenuti tutti gli script relativi al progetto: **/apps/aem-guides/projects-task/projects/scripts**. Crea un nuovo file sotto questa cartella denominato **&quot;start-task-config.ecma&quot;**. &#42;Assicurati che il percorso del file start-task-config.ecma corrisponda al percorso impostato nella scheda Impostazioni avanzate del passaggio 4.
 
@@ -482,7 +482,7 @@ Posizione del modello di flusso di lavoro in 6.4+
 
    Poiché si tratta del percorso di approvazione normale, la priorità dell&#39;attività è impostata su Media. Inoltre, assegniamo al gruppo di approvatori 5 giorni per completare l’attività. Assegnatario viene lasciato vuoto nella scheda Attività in quanto lo assegneremo in modo dinamico nella scheda Impostazioni avanzate. Al completamento di questa attività, assegniamo al gruppo di approvatori due percorsi possibili: **&quot;Approva e pubblica&quot;** se approvano il contenuto e possono essere pubblicati e **&quot;Porta indietro per la revisione&quot;** in caso di problemi che l’editor originale deve correggere. L’approvatore può lasciare dei commenti che l’editor originale vedrà se il flusso di lavoro gli viene restituito.
 
-In precedenza, in questa esercitazione abbiamo creato un modello di progetto che includeva un ruolo approvatori. Ogni volta che viene creato un nuovo progetto da questo modello, viene creato un gruppo specifico per il progetto per il ruolo Approvatori. Come un Passaggio partecipante, un&#39;attività può essere assegnata solo a un Utente o Gruppo. Desideriamo assegnare questa attività al gruppo di progetto corrispondente al gruppo di approvatori. Tutti i flussi di lavoro avviati da un progetto avranno metadati che mappano i ruoli del progetto al gruppo specifico del progetto.
+In precedenza, in questa esercitazione abbiamo creato un modello di progetto che includeva un ruolo approvatori. Ogni volta che viene creato un nuovo progetto da questo modello viene creato un gruppo specifico per il progetto per il ruolo Approvatori. Come un Passaggio partecipante, un&#39;attività può essere assegnata solo a un Utente o Gruppo. Desideriamo assegnare questa attività al gruppo di progetto corrispondente al gruppo di approvatori. Tutti i flussi di lavoro avviati da un progetto avranno metadati che mappano i ruoli del progetto al gruppo specifico del progetto.
 
 Copia e incolla il seguente codice nel **Script** area di testo della scheda **Impostazioni avanzate **2. Questo codice legge i metadati del flusso di lavoro e assegna l&#39;attività al gruppo Approvatori del progetto. Se non è in grado di trovare il valore del gruppo di approvatori, tornerà ad assegnare l&#39;attività al gruppo Amministratori.
 
@@ -635,7 +635,7 @@ La creazione di una procedura guidata personalizzata può essere molto efficace 
 
    ![procedura guidata flusso di lavoro di approvazione del contenuto](./assets/develop-aem-projects/content-approval-start-wizard.png)
 
-1. Verrà aggiunto un campo aggiuntivo alla procedura guidata che verrà utilizzato per impostare l’assegnatario della prima attività nel flusso di lavoro (vedi [Creare il modello di flusso di lavoro](#create-workflow-model): Passaggio 5).
+1. Verrà aggiunto un campo aggiuntivo alla procedura guidata utilizzato per impostare l’assegnatario della prima attività nel flusso di lavoro (vedi [Creare il modello di flusso di lavoro](#create-workflow-model): Passaggio 5).
 
    Sotto `../content-approval-start/jcr:content/items/column2/items` crea un nuovo nodo di tipo `nt:unstructured` denominato **&quot;assegna&quot;**. Verrà utilizzato il componente Selettore utente per progetti (basato su [Componente Selettore utenti Granite](https://experienceleague.adobe.com/docs/)). Questo campo modulo consente di limitare facilmente la selezione di utenti e gruppi solo a quelli appartenenti al progetto corrente.
 

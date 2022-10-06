@@ -1,22 +1,21 @@
 ---
 title: Verificare gli utenti con OTP
 description: Verifica il numero di cellulare associato al numero di applicazione utilizzando OTP.
-feature: Moduli adattivi
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
 kt: 6594
 thumbnail: 6594.jpg
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: d486d5de-efd9-4dd3-9d9c-1bef510c6073
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 1%
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
-
-
 
 # Verificare gli utenti con OTP
 
@@ -28,32 +27,31 @@ Sono stati seguiti i seguenti passaggi per implementare SMS 2FA con AEM Forms ut
 
 ## Creare un account sviluppatore
 
-Crea un account sviluppatore con [Nexmo](https://dashboard.nexmo.com/sign-in). Prendi nota della chiave API e della chiave segreto API. Queste chiavi saranno necessarie per richiamare API REST del servizio di Nexmo.
+Crea un account sviluppatore con [Nexmo](https://dashboard.nexmo.com/sign-in). Prendi nota della chiave API e della chiave segreto API. Queste chiavi sono necessarie per richiamare API REST del servizio di Nexmo.
 
 ## Crea file Swagger/OpenAPI
 
 La specifica OpenAPI (precedentemente specifica Swagger) è un formato di descrizione API per le API REST. Un file OpenAPI ti consente di descrivere l’intera API, tra cui:
 
 * Endpoint disponibili (/users) e operazioni su ciascun endpoint (GET/users, POST/users)
-* Parametri operativi Input ed output per ciascuna operazione
-Metodi di autenticazione
+* Parametri operativi Input ed output per ogni operazione Metodi di autenticazione
 * Informazioni di contatto, licenza, termini di utilizzo e altre informazioni.
 * Le specifiche API possono essere scritte in YAML o JSON. Il formato è facile da imparare e leggibile sia per gli umani che per le macchine.
 
-Per creare il tuo primo file swagger/OpenAPI, segui la [documentazione OpenAPI](https://swagger.io/docs/specification/2-0/basic-structure/)
+Per creare il tuo primo file swagger/OpenAPI, segui [Documentazione OpenAPI](https://swagger.io/docs/specification/2-0/basic-structure/)
 
 >[!NOTE]
 > AEM Forms supporta la specifica OpenAPI versione 2.0 (fka Swagger).
 
-Utilizza l’ [editor di swagger](https://editor.swagger.io/) per creare il file di swagger per descrivere le operazioni che inviano e verificano il codice OTP inviato utilizzando SMS. Il file swagger può essere creato in formato JSON o YAML. Il file swagger completato può essere scaricato da [qui](assets/two-factore-authentication-swagger.zip)
+Utilizza la [editor swagger](https://editor.swagger.io/) per creare il file swagger per descrivere le operazioni che inviano e verificano il codice OTP inviato utilizzando SMS. Il file swagger può essere creato in formato JSON o YAML. Il file swagger completato può essere scaricato da [qui](assets/two-factore-authentication-swagger.zip)
 
 ## Crea origine dati
 
-Per integrare AEM/AEM Forms con applicazioni di terze parti, è necessario [origine dati basata su REST utilizzando il file swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) nella configurazione dei servizi cloud. L&#39;origine dati completata viene fornita come parte di questo corso assets.
+Per integrare AEM/AEM Forms con applicazioni di terze parti, è necessario [Origine dati basata su REST che utilizza il file swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) nella configurazione dei servizi cloud. L&#39;origine dati completata viene fornita come parte di questo corso assets.
 
 ## Crea modello dati modulo
 
-L&#39;integrazione dei dati di AEM Forms fornisce un&#39;interfaccia utente intuitiva per creare e utilizzare [modelli di dati dei moduli](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Un modello dati modulo si basa su origini dati per lo scambio di dati.
+L’integrazione dei dati di AEM Forms offre un’interfaccia utente intuitiva con cui creare e lavorare [modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Un modello dati modulo si basa su origini dati per lo scambio di dati.
 Il modello dati del modulo completato può essere [scaricato da qui](assets/sms-2fa-fdm.zip)
 
 ![fdm](assets/2FA-fdm.PNG)

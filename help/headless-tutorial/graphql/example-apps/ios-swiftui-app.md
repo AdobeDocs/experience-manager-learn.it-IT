@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: cd7cb89f407f5e0c465544593563534472daf928
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 3%
@@ -183,7 +183,7 @@ AEM le query persistenti vengono eseguite su HTTP GET, pertanto non è possibile
 1. Il func pubblico chiama un func privato `makeRequest(..)` che richiama una richiesta HTTP GET asincrona a AEM Headless e restituisce i dati JSON.
 1. Prima di restituire i dati di Adventure alla visualizzazione, ogni funzione pubblica decodifica i dati JSON ed esegue tutti i controlli o le trasformazioni necessarie.
 
-+ AEM i dati JSON GraphQL vengono decodificati utilizzando gli structs/classes definiti in `AEM/Models.swift`, che viene mappata agli oggetti JSON che hanno restituito il mio AEM Headless.
+   + AEM i dati JSON GraphQL vengono decodificati utilizzando gli structs/classes definiti in `AEM/Models.swift`, che viene mappata agli oggetti JSON che hanno restituito il mio AEM Headless.
 
 ```swift
     /// # getAdventures(..)

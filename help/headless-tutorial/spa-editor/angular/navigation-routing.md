@@ -14,9 +14,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2712'
 ht-degree: 1%
 
 ---
@@ -63,7 +63,7 @@ Rivedere gli strumenti e le istruzioni necessari per la configurazione di un [am
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-3. Installa il pacchetto finito per il tradizionale [Sito di riferimento WKND](https://github.com/adobe/aem-guides-wknd/releases/latest). Le immagini fornite da [Sito di riferimento WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) verranno riutilizzati nel SPA WKND. Il pacchetto può essere installato utilizzando [Gestione pacchetti AEM](http://localhost:4502/crx/packmgr/index.jsp).
+3. Installa il pacchetto finito per il tradizionale [Sito di riferimento WKND](https://github.com/adobe/aem-guides-wknd/releases/latest). Le immagini fornite da [Sito di riferimento WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) vengono riutilizzati nel SPA WKND. Il pacchetto può essere installato utilizzando [Gestione pacchetti AEM](http://localhost:4502/crx/packmgr/index.jsp).
 
    ![Package Manager installa wknd.all](./assets/map-components/package-manager-wknd-all.png)
 
@@ -71,7 +71,7 @@ Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/a
 
 ## Aggiornamenti di Inspect HeaderComponent {#inspect-header}
 
-Nei capitoli precedenti, il `HeaderComponent` è stato aggiunto come componente di Angular puro incluso tramite `app.component.html`. In questo capitolo, il `HeaderComponent` il componente viene rimosso dall’app e verrà aggiunto tramite l’ [Editor modelli](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=it). Questo consente agli utenti di configurare il menu di navigazione del `HeaderComponent` da AEM.
+Nei capitoli precedenti, il `HeaderComponent` è stato aggiunto come componente di Angular puro incluso tramite `app.component.html`. In questo capitolo, il `HeaderComponent` il componente viene rimosso dall’app e aggiunto tramite l’ [Editor modelli](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=it). Questo consente agli utenti di configurare il menu di navigazione del `HeaderComponent` da AEM.
 
 >[!NOTE]
 >
@@ -213,7 +213,7 @@ Quindi, crea altre pagine in AEM che fungeranno da viste diverse nel SPA. Esamin
    }
    ```
 
-   Sotto `:children` dovrebbe essere visualizzata una voce per ciascuna delle pagine create. Il contenuto per tutte le pagine si trova in questa richiesta JSON iniziale. Una volta implementato il ciclo di navigazione, le visualizzazioni successive del SPA verranno caricate rapidamente, poiché il contenuto è già disponibile sul lato client.
+   Sotto `:children` dovrebbe essere visualizzata una voce per ciascuna delle pagine create. Il contenuto per tutte le pagine si trova in questa richiesta JSON iniziale. Una volta implementato il ciclo di navigazione, le visualizzazioni successive del SPA vengono caricate rapidamente, poiché il contenuto è già disponibile sul lato client.
 
    Non è saggio caricare **TUTTO** del contenuto di un SPA nella richiesta JSON iniziale, in quanto ciò rallenterebbe il caricamento della pagina iniziale. Ora, esaminiamo come viene raccolta la profondità irarica delle pagine.
 
@@ -313,7 +313,7 @@ Quindi, implementa il menu di navigazione con un nuovo `NavigationComponent`. Po
    ":type": "wknd-spa-angular/components/header"
    ```
 
-   La natura gerarchica delle pagine AEM è modellata nel JSON che può essere utilizzato per compilare un menu di navigazione. Ricorda che la `Header` il componente eredita tutte le funzionalità del [Componente core di navigazione](https://www.aemcomponents.dev/content/core-components-examples/library/core-structure/navigation.html) e il contenuto esposto tramite JSON verrà mappato automaticamente all’Angular `@Input` annotazione.
+   La natura gerarchica delle pagine AEM è modellata nel JSON che può essere utilizzato per compilare un menu di navigazione. Ricorda che la `Header` il componente eredita tutte le funzionalità del [Componente core di navigazione](https://www.aemcomponents.dev/content/core-components-examples/library/core-structure/navigation.html) e il contenuto esposto tramite JSON viene mappato automaticamente all’Angular `@Input` annotazione.
 
 2. Apri una nuova finestra terminale e passa alla `ui.frontend` cartella del progetto SPA. Crea un nuovo `NavigationComponent` utilizzando lo strumento Angular CLI:
 
@@ -365,7 +365,7 @@ Quindi, implementa il menu di navigazione con un nuovo `NavigationComponent`. Po
    }
    ```
 
-   Si tratta di una classe semplice che rappresenta un singolo collegamento di navigazione. Nel costruttore di classe ci aspettiamo `data` essere l&#39;oggetto JSON passato da AEM. Questa classe verrà utilizzata in entrambi i `NavigationComponent` e `HeaderComponent` per popolare facilmente la struttura di navigazione.
+   Si tratta di una classe semplice che rappresenta un singolo collegamento di navigazione. Nel costruttore di classe ci aspettiamo `data` essere l&#39;oggetto JSON passato da AEM. Questa classe viene utilizzata in entrambe le `NavigationComponent` e `HeaderComponent` per popolare facilmente la struttura di navigazione.
 
    Non viene eseguita alcuna trasformazione dei dati, questa classe viene creata principalmente per digitare con forza il modello JSON. Tieni presente che `this.children` viene digitato come `NavigationLink[]` e che il costruttore crea in modo ricorsivo nuove `NavigationLink` per ciascuno degli elementi nel `children` array. Richiama il modello JSON per `Header` è gerarchico.
 
@@ -637,7 +637,7 @@ Ora che la navigazione è stata implementata, controlla il routing in AEM.
 
    `AemPageMatcher` è un router di Angular personalizzato [UrlMatcher](https://angular.io/api/router/UrlMatcher), che corrisponde a qualsiasi cosa che assomiglia a una pagina di AEM che fa parte di questa applicazione Angular.
 
-   `PageComponent` è il componente Angular che rappresenta una pagina in AEM e verranno richiamati i percorsi corrispondenti. La `PageComponent` saranno oggetto di ulteriori ispezioni.
+   `PageComponent` è il componente Angular che rappresenta una pagina in AEM e utilizzato per eseguire il rendering dei percorsi corrispondenti. La `PageComponent` viene rivisto più avanti nell’esercitazione.
 
    `AemPageDataResolver`, fornito dall’SDK JS dell’editor di SPA AEM, è personalizzato [Risolutore router Angular](https://angular.io/api/router/Resolve) utilizzato per trasformare l’URL del percorso, che è il percorso in AEM inclusa l’estensione .html, nel percorso della risorsa in AEM, che è il percorso della pagina meno l’estensione.
 

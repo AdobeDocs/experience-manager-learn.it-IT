@@ -9,9 +9,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1801'
+source-wordcount: '1800'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_aemruntime"
 >title="Runtime AEM locale"
->abstract="Adobe Experience Manager (AEM) può essere eseguito localmente utilizzando il Jar Quickstart dell’SDK di AEM as a Cloud Service. Questo consente agli sviluppatori di implementare e testare il codice personalizzato, la configurazione e i contenuti prima di passare al controllo del codice sorgente e di distribuirli in un ambiente AEM as a Cloud Service."
+>abstract="Adobe Experience Manager (AEM) può essere eseguito localmente utilizzando il Jar Quickstart dell’SDK AEM as a Cloud Service. Questo consente agli sviluppatori di implementare e testare il codice personalizzato, la configurazione e i contenuti prima di passare al controllo del codice sorgente e di distribuirli in un ambiente AEM as a Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=it" text="SDK di AEM as a Cloud Service"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html" text="Scaricare AEM SDK as a Cloud Service"
 
@@ -190,7 +190,7 @@ La modifica di queste impostazioni potrebbe richiedere modifiche AEM configurazi
 
 ## Arresto di un runtime AEM locale
 
-Per arrestare un runtime di AEM locale, sia il servizio AEM Author che Publish, apri la finestra della riga di comando utilizzata per avviare il runtime di AEM e tocca `Ctrl-C`. Attendi AEM lo spegnimento. Al termine del processo di arresto, sarà disponibile il prompt della riga di comando.
+Per arrestare un runtime di AEM locale, sia il servizio AEM Author che Publish, apri la finestra della riga di comando utilizzata per avviare il runtime di AEM e tocca `Ctrl-C`. Attendi AEM lo spegnimento. Al termine del processo di arresto, è disponibile il prompt della riga di comando.
 
 ## Attività di configurazione del runtime di AEM locale opzionali
 

@@ -7,21 +7,21 @@ topic: Development
 role: Developer
 level: Intermediate
 kt: 8507
-source-git-commit: e01d93591d1c00b2abec3430fdfa695b32165e54
+exl-id: 9ad69407-2413-416f-9cec-43f88989b31d
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
 
-
 # Conversione di una stringa separata da virgole in una matrice di stringhe {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
-Quando il modulo è basato su un modello di dati modulo con una matrice di stringhe come parametro di input, sarà necessario manipolare i dati del modulo adattivo inviati per inserire una matrice di stringhe. Ad esempio, se hai associato un campo casella di controllo a un elemento del modello dati del modulo di tipo matrice stringa, i dati del campo casella di controllo saranno in un formato stringa separato da virgole. Il codice di esempio riportato di seguito mostra come sostituire la stringa separata da virgole con una matrice di stringhe.
+Quando il modulo è basato su un modello di dati modulo con una matrice di stringhe come parametro di input, è necessario manipolare i dati del modulo adattivo inviati per inserire una matrice di stringhe. Ad esempio, se hai associato un campo casella di controllo a un elemento del modello dati del modulo di tipo matrice stringa, i dati del campo casella di controllo si trovano in un formato stringa separato da virgole. Il codice di esempio riportato di seguito mostra come sostituire la stringa separata da virgole con una matrice di stringhe.
 
 ## Creare un passaggio del processo
 
-Un passaggio del processo viene utilizzato in un flusso di lavoro AEM quando si desidera che il flusso di lavoro esegua una determinata logica. Il passaggio del processo può essere associato a uno script ECMA o a un servizio OSGi. Il nostro passaggio di processo personalizzato eseguirà il servizio OSGi
+Un passaggio del processo viene utilizzato in un flusso di lavoro AEM quando si desidera che il flusso di lavoro esegua una determinata logica. Il passaggio del processo può essere associato a uno script ECMA o a un servizio OSGi. Il nostro passaggio di processo personalizzato esegue il servizio OSGi.
 
 I dati inviati sono nel seguente formato. Il valore dell&#39;elemento businessUnits è una stringa separata da virgole che deve essere convertita in una matrice di stringa.
 
@@ -31,7 +31,7 @@ I dati di input per l’endpoint rimanente associato al modello dati del modulo 
 
 ![fdm-string-array](assets/string-array-fdm.png)
 
-Passiamo al passaggio del processo il percorso dell’oggetto JSON e il nome dell’elemento. Il codice nel passaggio del processo sostituirà i valori separati da virgole dell&#39;elemento in una matrice di stringhe.
+Passiamo al passaggio del processo il percorso dell’oggetto JSON e il nome dell’elemento. Il codice nel passaggio del processo sostituisce i valori separati da virgola dell&#39;elemento in una matrice di stringhe.
 ![fase del processo](assets/create-string-array.png)
 
 >[!NOTE]
@@ -140,4 +140,4 @@ public class CreateStringArray implements WorkflowProcess {
 }
 ```
 
-Il bundle di esempio può essere [scaricato da qui](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar)
+Il bundle campione può essere [scaricato da qui](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar)

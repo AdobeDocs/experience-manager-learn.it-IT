@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: 410eb23534e083940bf716194576e099d22ca205
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1529'
 ht-degree: 7%
 
 ---
@@ -211,7 +211,7 @@ Ora, vediamo come è possibile filtrare i risultati in un sottoinsieme di framme
    {"name": "John Doe"}
    ```
 
-1. Esegui la query, è previsto che solo **Persone** verrà restituito con un valore di &quot;John Doe&quot;.
+1. Esegui la query, è previsto che solo **Persone** viene restituito con un valore di &quot;John Doe&quot;.
 
    ![Utilizzare le variabili di query per filtrare](assets/explore-graphql-api/using-query-variables-filter.png)
 
@@ -281,7 +281,7 @@ Ora, vediamo come è possibile filtrare i risultati in un sottoinsieme di framme
 
 Una volta che uno sviluppatore è soddisfatto della query e dei dati restituiti, il passaggio successivo consiste nell’memorizzare o mantenere la query in AEM. [Query persistenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) è il meccanismo preferito per l’esposizione dell’API GraphQL alle applicazioni client. Una volta che una query è persistente, può essere richiesta utilizzando una richiesta GET e memorizzata nella cache ai livelli Dispatcher e CDN. Le prestazioni delle query persistenti sono molto migliori. Oltre ai vantaggi in termini di prestazioni, le query persistenti garantiscono che i dati aggiuntivi non siano accidentalmente esposti alle applicazioni client. Maggiori dettagli [Le query persistenti si trovano qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
 
-Successivamente, persistono due semplici query, che verranno utilizzate nel capitolo successivo.
+Successivamente, persistono due semplici query, che vengono utilizzate nel capitolo successivo.
 
 1. Nell&#39;IDE GraphiQL immetti la seguente query:
 

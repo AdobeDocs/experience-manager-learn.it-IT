@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 5c250bbb-bac6-427d-8aca-1fbb1229e02c
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -45,8 +45,8 @@ Per testare questa funzionalità sul sistema, segui i seguenti passaggi:
 
 * Apri l’attività dalla casella in entrata e invia il modulo. Inserisci alcuni commenti quando richiesto.
 
-I commenti verranno memorizzati nella proprietà metadati denominata managerComments in crx. Per verificare i commenti, accedi a crx come amministratore. Le istanze del flusso di lavoro vengono memorizzate nel seguente percorso
+I commenti vengono memorizzati nella proprietà metadati denominata `managerComments` nell’archivio AEM. Per verificare i commenti, accedi a crx come amministratore. Le istanze del flusso di lavoro vengono memorizzate nel seguente percorso:
 
-/var/workflow/instances/server0
+`/var/workflow/instances/server0`
 
 Selezionare l&#39;istanza di flusso di lavoro appropriata e controllare la proprietà managerComments nel nodo di metadati.
