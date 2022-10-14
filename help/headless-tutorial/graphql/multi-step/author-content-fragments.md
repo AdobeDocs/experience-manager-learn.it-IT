@@ -10,16 +10,16 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 25c289b093297e870c52028a759d05628d77f634
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '810'
 ht-degree: 2%
 
 ---
 
 # Authoring di frammenti di contenuto {#authoring-content-fragments}
 
-In questo capitolo viene creato e modificato un nuovo frammento di contenuto basato su [modello a frammento di contenuto appena definito](./content-fragment-models.md). Inoltre, verrà illustrato come creare varianti di frammenti di contenuto.
+In questo capitolo, puoi creare e modificare un nuovo frammento di contenuto basato su [modello a frammento di contenuto appena definito](./content-fragment-models.md). Inoltre, viene illustrato come creare varianti di frammenti di contenuto.
 
 ## Prerequisiti {#prerequisites}
 
@@ -34,11 +34,11 @@ Si tratta di un tutorial in più parti e si presume che i passaggi descritti in 
 
 I frammenti di contenuto sono memorizzati in cartelle in AEM Assets. Per creare frammenti di contenuto dai modelli creati nel capitolo precedente, è necessario creare una cartella per memorizzarli. È necessaria una configurazione nella cartella per abilitare la creazione di frammenti da modelli specifici.
 
-1. Dalla schermata iniziale AEM passare a **Risorse** > **File**.
+1. Dalla schermata iniziale AEM, passa a **Risorse** > **File**.
 
    ![Passa ai file delle risorse](assets/author-content-fragments/navigate-assets-files.png)
 
-1. Tocca **Crea** nell’angolo e tocca **Cartella**. Nella finestra di dialogo risultante inserisci:
+1. Tocca **Crea** nell’angolo in alto a destra e tocca **Cartella**. Nella finestra di dialogo risultante, immetti:
 
    * Titolo*: **Progetto personale**
    * Nome: **progetto personale**
@@ -49,17 +49,17 @@ I frammenti di contenuto sono memorizzati in cartelle in AEM Assets. Per creare 
 
    ![Apri proprietà cartella](assets/author-content-fragments/open-folder-properties.png)
 
-1. Tocca **Cloud Services** scheda . Sotto **Configurazione cloud** utilizza il cercatore di percorsi per selezionare il **Progetto personale** configurazione. Il valore deve essere `/conf/my-project`.
+1. Tocca **Cloud Services** scheda . Nella scheda Cloud Configuration (Configurazione cloud), utilizza il ricerca percorsi per selezionare il **Progetto personale** configurazione. Il valore deve essere `/conf/my-project`.
 
    ![Imposta configurazione cloud](assets/author-content-fragments/set-cloud-config-my-project.png)
 
-   L’impostazione di questa proprietà consente di creare frammenti di contenuto utilizzando i modelli creati nel capitolo precedente.
+   L&#39;impostazione di questa proprietà consente di creare frammenti di contenuto utilizzando i modelli creati nel capitolo precedente.
 
-1. Tocca **Criteri** scheda . Sotto **Modelli di frammenti di contenuto consentiti** utilizza il cercatore di percorsi per selezionare il **Persona** e **Team** modello creato in precedenza.
+1. Tocca **Criteri** nella scheda **Modelli di frammenti di contenuto consentiti** utilizzare il cercatore di percorsi per selezionare il **Persona** e **Team** modello creato in precedenza.
 
    ![Modelli di frammenti di contenuto consentiti](assets/author-content-fragments/allowed-content-fragment-models.png)
 
-   Questi criteri vengono ereditati automaticamente da qualsiasi sottocartella e possono essere ignorati. Puoi anche consentire modelli per tag o abilitare modelli per altre configurazioni di progetto. Questo meccanismo offre un modo efficace di gestire la gerarchia dei contenuti.
+   Questi criteri vengono ereditati automaticamente da qualsiasi sottocartella e possono essere ignorati. Puoi anche consentire i modelli tramite tag o abilitare i modelli da altre configurazioni di progetto. Questo meccanismo offre un modo efficace di gestire la gerarchia dei contenuti.
 
 1. Tocca **Salva e chiudi** per salvare le modifiche apportate alle proprietà della cartella.
 
@@ -77,11 +77,11 @@ I frammenti di contenuto sono memorizzati in cartelle in AEM Assets. Per creare 
 
 Successivamente, vengono creati diversi frammenti di contenuto in base **Team** e **Persona** modelli.
 
-1. Dalla schermata iniziale AEM **Frammenti di contenuto** per aprire l’interfaccia utente Frammenti di contenuto .
+1. Dalla schermata iniziale AEM, tocca **Frammenti di contenuto** per aprire l’interfaccia utente Frammenti di contenuto .
 
    ![Interfaccia utente dei frammenti di contenuto](assets/author-content-fragments/cf-fragment-ui.png)
 
-1. Nella barra a sinistra espandi **Progetto personale** e toccare **Inglese**.
+1. Nella barra a sinistra, espandi **Progetto personale** e toccare **Inglese**.
 1. Tocca **Crea** per richiamare **Nuovo frammento di contenuto** e immetti i seguenti valori:
 
    * Dove si trova: `/content/dam/my-project/en`
@@ -91,23 +91,23 @@ Successivamente, vengono creati diversi frammenti di contenuto in base **Team** 
 
    ![Nuovo frammento di contenuto](assets/author-content-fragments/new-content-fragment-john-doe.png)
 1. Tocca **Crea**.
-1. Ripeti i passaggi precedenti per creare un nuovo frammento che rappresenta **Alison Smith**:
+1. Ripeti i passaggi precedenti per creare un frammento che rappresenta **Alison Smith**:
 
    * Dove si trova: `/content/dam/my-project/en`
    * Modello per frammento di contenuto: **Persona**
    * Titolo: **Alison Smith**
    * Nome: `alison-smith`
 
-   Tocca **Crea** per creare il nuovo frammento Persona.
+   Tocca **Crea** per creare il frammento Persona.
 
-1. Quindi, ripeti passaggi per creare un nuovo **Team** frammento che rappresenta **Alfa team**:
+1. Quindi, ripeti i passaggi per creare un **Team** frammento che rappresenta **Alfa team**:
 
    * Dove si trova: `/content/dam/my-project/en`
    * Modello per frammento di contenuto: **Team**
    * Titolo: **Alfa team**
    * Nome: `team-alpha`
 
-   Tocca **Crea** per creare il nuovo frammento Team.
+   Tocca **Crea** per creare il frammento Team.
 
 1. Sotto devono essere presenti tre frammenti di contenuto **Progetto personale** > **Inglese**:
 
@@ -139,7 +139,7 @@ Successivamente, compila i frammenti appena creati con i dati.
 
    >[!NOTE]
    >
-   >Puoi anche creare nuovi frammenti di contenuto in linea utilizzando la **Nuovo frammento di contenuto** pulsante .
+   >Puoi anche creare frammenti di contenuto in linea utilizzando la **Nuovo frammento di contenuto** pulsante .
 
 1. Tocca **Salva e chiudi** per salvare le modifiche al frammento Alfa team.
 
@@ -147,17 +147,16 @@ Successivamente, compila i frammenti appena creati con i dati.
 
 Dopo la revisione e la verifica, pubblica l’autore `Content Fragments`
 
-1. Dalla schermata iniziale AEM **Frammenti di contenuto** per aprire l’interfaccia utente Frammenti di contenuto .
+1. Dalla schermata iniziale AEM, tocca **Frammenti di contenuto** per aprire l’interfaccia utente Frammenti di contenuto .
 
-1. Nella barra a sinistra espandi **Progetto personale** e toccare **Inglese**.
+1. Nella barra a sinistra, espandi **Progetto personale** e toccare **Inglese**.
 
-1. Tocca la casella di controllo accanto ai frammenti di contenuto e tocca **Pubblica**
-
+1. Tocca la casella di controllo accanto ai frammenti di contenuto e tocca **Pubblica**.
    ![Pubblica frammento di contenuto](assets/author-content-fragments/publish-content-fragment.png)
 
 ## Congratulazioni! {#congratulations}
 
-Congratulazioni, hai appena creato più frammenti di contenuto e creato una variante.
+Congratulazioni, hai creato più frammenti di contenuto e creato una variante.
 
 ## Passaggi successivi {#next-steps}
 
