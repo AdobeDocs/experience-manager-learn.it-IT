@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Beginner
 kt: kt-11245
-source-git-commit: 061077fb6cd8ac7b760aa30b884ced6d4d3c3b20
+source-git-commit: 8944a4feaefbc4cf0db52011a0d49b22341780c0
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,6 @@ mvn clean install -pAutoInstallSinglePackage
 
 Se tutto va bene, il pacchetto viene installato insieme al bundle di terze parti nella tua istanza AEM. Puoi verificare la presenza del bundle utilizzando [console web felix](http://localhost:4502/system/console/bundles). Il bundle di terze parti è disponibile nella cartella /apps del `crx` repository come mostrato di seguito
 ![di terzi](assets/custom-bundle1.png)
-![di terzi](assets/custom-bundle1.png)
+
 
 
