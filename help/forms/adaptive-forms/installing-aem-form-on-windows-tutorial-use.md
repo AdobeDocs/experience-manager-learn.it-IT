@@ -8,10 +8,10 @@ topic: Development
 role: Admin
 level: Beginner
 exl-id: 80288765-0b51-44a9-95d3-3bdb2da38615
-source-git-commit: 5c53919dd038c0992e1fe5dd85053f26c03c5111
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 5%
+source-wordcount: '578'
+ht-degree: 6%
 
 ---
 
@@ -53,7 +53,8 @@ Anche se consigliamo di seguire [documentazione ufficiale](https://helpx.adobe.c
 * Individua AEMQuickStart.Jar e spostalo nella cartella AEMForms
 * Copia il file license.properties nella cartella AEMForms
 * Crea un file batch denominato &quot;StartAemForms.bat&quot; con il seguente contenuto:
-   * java -d64 -Xmx2048M -jar AEM_6.5_Quickstart.jar -gui. Qui AEM_6.5_Quickstart.jar è il nome del mio jar AEM quickstart.
+   * `java -d64 -Xmx2048M -jar AEM_6.5_Quickstart.jar -gui`
+      * Qui AEM_6.5_Quickstart.jar è il nome del mio jar AEM quickstart.
    * È possibile rinominare il jar con qualsiasi nome, ma assicurarsi che il nome sia riportato nel file batch. Salva il file batch nella cartella AEMForms.
 
 * Apri un nuovo prompt dei comandi e passa a _c:\aemforms_.

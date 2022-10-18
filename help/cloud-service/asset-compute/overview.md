@@ -13,7 +13,7 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 575b12f9-b57f-41f7-bd39-56d242de4747
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Questa esercitazione illustra la creazione di un semplice processo di lavoro di 
 
 1. Fornire e configurare gli account e i servizi necessari per creare e distribuire un lavoratore Asset compute
 1. Creare e configurare un progetto di Asset compute
-1. Sviluppa un processo di lavoro Asset compute che genera un rendering personalizzato
+1. Sviluppare un processo di lavoro di Asset compute che genera un rendering personalizzato
 1. Creazione di test per e apprendimento di come eseguire il debug del processo di lavoro Asset compute personalizzato
 1. Distribuire il processo di lavoro Asset compute e integrarlo AEM servizio Author as a Cloud Service tramite Profili elaborazione
 
@@ -58,7 +58,7 @@ Lo sviluppo locale di progetti di Asset compute richiede uno specifico set di st
 
 ### App Builder
 
-I progetti di Asset compute sono progetti App Builder definiti in modo specifico e, come tali, richiedono l’accesso ad App Builder nell’Adobe Developer Console per configurarli e distribuirli.
+I progetti di Asset compute sono progetti App Builder definiti in modo specifico e, come tali, richiedono l’accesso ad App Builder nella console Adobe Developer per configurarli e distribuirli.
 
 + [Configurazione di App Builder](./set-up/app-builder.md)
 
@@ -112,7 +112,7 @@ I processi di lavoro di Asset compute forniscono diversi livelli di debugging ri
 
 + [Debug di un processo di lavoro](./test-debug/debug.md)
 
-## Implementa
+## Implementare
 
 Scopri come integrare i processi di lavoro di Asset compute personalizzati con AEM as a Cloud Service, prima distribuendoli in Adobe I/O Runtime e poi richiamandoli da AEM Author as a Cloud Service tramite i profili di elaborazione di AEM Assets.
 

@@ -13,9 +13,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
-source-wordcount: '2256'
+source-wordcount: '2257'
 ht-degree: 1%
 
 ---
@@ -112,7 +112,7 @@ Vediamo come funziona il componente.
 
    Per evitare un potenziale attacco XSS, il testo RTF viene evitato tramite `DOMPurify` prima di utilizzare [pericolosamenteSetInnerHTML](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml) per eseguire il rendering del contenuto. Richiama `richText` e `text` proprietà del modello JSON illustrato in precedenza nell’esercizio.
 
-1. Poi dai un&#39;occhiata al `TextEditConfig` alla ~riga 29:
+1. Apri `ui.frontend/src/components/import-components.js` dai un&#39;occhiata al `TextEditConfig` alla ~riga 86:
 
    ```js
    const TextEditConfig = {
@@ -126,10 +126,10 @@ Vediamo come funziona il componente.
 
    Il codice riportato sopra ha la responsabilità di determinare quando eseguire il rendering del segnaposto nell’ambiente di authoring AEM. Se la `isEmpty` restituisce il metodo **true** quindi viene eseguito il rendering del segnaposto.
 
-1. Infine, dai un&#39;occhiata al `MapTo` chiama a ~riga 62:
+1. Infine, dai un&#39;occhiata al `MapTo` chiama a ~line 94:
 
    ```js
-   export default MapTo('wknd-spa-react/components/text')(Text, TextEditConfig);
+   export default MapTo('wknd-spa-react/components/text')(LazyTextComponent, TextEditConfig);
    ```
 
    `MapTo` è fornito dall’SDK JS dell’editor SPA AEM (`@adobe/aem-react-editable-components`). Il percorso `wknd-spa-react/components/text` rappresenta `sling:resourceType` del componente AEM. Questo percorso viene associato al `:type` esposto dal modello JSON osservato in precedenza. `MapTo` si occupa di analizzare la risposta del modello JSON e passare i valori corretti come `props` al componente SPA.

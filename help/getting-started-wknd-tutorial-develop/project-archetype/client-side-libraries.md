@@ -1,6 +1,6 @@
 ---
-title: Librerie lato client e flusso di lavoro front-end
-description: Scopri come utilizzare le librerie lato client o le librerie client per distribuire e gestire CSS e JavaScript per un’implementazione di Adobe Experience Manager (AEM) Sites. Scopri come il modulo ui.frontend, un progetto webpack, può essere integrato nel processo di compilazione end-to-end.
+title: Librerie client e flusso di lavoro front-end
+description: Scopri come utilizzare le librerie client o le librerie client per distribuire e gestire CSS e JavaScript per un’implementazione di Adobe Experience Manager (AEM) Sites . Scopri come il modulo ui.frontend, un progetto webpack, può essere integrato nel processo di compilazione end-to-end.
 sub-product: sites
 version: 6.4, 6.5, Cloud Service
 type: Tutorial
@@ -11,14 +11,14 @@ level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
 source-wordcount: '2825'
 ht-degree: 2%
 
 ---
 
-# Librerie lato client e flusso di lavoro front-end {#client-side-libraries}
+# Librerie client e flusso di lavoro front-end {#client-side-libraries}
 
 Scopri come le librerie lato client o le librerie client vengono utilizzate per distribuire e gestire CSS e JavaScript per un’implementazione di Adobe Experience Manager (AEM) Sites. Questa esercitazione descriverà anche come [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) un modulo disaccoppiato [webpack](https://webpack.js.org/) può essere integrato nel processo di generazione end-to-end.
 
@@ -81,7 +81,7 @@ Le librerie lato client forniscono un meccanismo per organizzare e gestire i fil
 1. Gestire le dipendenze da framework di terze parti in modo organizzato
 1. Riduci al minimo il numero di richieste lato client concatenando CSS/JS in una o due richieste.
 
-Ulteriori informazioni sull&#39;utilizzo [Le librerie lato client si trovano qui.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)
+Ulteriori informazioni sull&#39;utilizzo [Le librerie lato client si trovano qui.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=it)
 
 Le librerie lato client presentano alcune limitazioni. In particolare, il supporto limitato per i linguaggi front-end popolari come Sass, LESS e TypeScript. Nell’esercitazione viene illustrato come **ui.frontend** modulo può essere utile per risolvere questo problema.
 
