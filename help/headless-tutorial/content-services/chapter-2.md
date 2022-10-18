@@ -8,7 +8,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30c882da3a89820b5e11bc2902bb92dd0629efe9
 workflow-type: tm+mt
 source-wordcount: '962'
 ht-degree: 10%
@@ -78,7 +78,7 @@ Se i modelli di frammenti di contenuto sono **not** abilitato per una configuraz
 
 ## Modello dei frammenti di contenuto da creare
 
-Prima di definire il modello Frammento di contenuto, esaminiamo l’esperienza da utilizzare per assicurarci di acquisire tutti i punti di dati necessari. A questo scopo, esamineremo la progettazione delle applicazioni mobili e mapperemo gli elementi di progettazione in base al contenuto da raccogliere.
+Prima di definire il modello per i frammenti di contenuto, esaminiamo l’esperienza da utilizzare per assicurarci di acquisire tutti i punti di dati necessari. A questo scopo, esamineremo la progettazione delle applicazioni mobili e mapperemo gli elementi di progettazione in base al contenuto da raccogliere.
 
 È possibile suddividere i punti dati che definiscono un evento come segue:
 
