@@ -1,5 +1,5 @@
 ---
-user-guide-title: 'Guida introduttiva ad AEM e Adobe Target '
+user-guide-title: Guida introduttiva ad AEM e Adobe Target
 user-guide-description: Un tutorial end-to-end che mostra come offrire esperienze personalizzate utilizzando Experience Manager e Target.
 product: experience manager
 version: 6.5
@@ -8,8 +8,8 @@ index: y
 kt: 2214
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '64'
+ht-degree: 46%
 
 ---
 

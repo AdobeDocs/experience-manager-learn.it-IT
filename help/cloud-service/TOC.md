@@ -44,7 +44,7 @@ ht-degree: 21%
       + [Configurare le pipeline](./cloud-manager/devops/configure-pipelines.md)
       + [Integrazione continua](./cloud-manager/devops/continuous-integration.md)
       + [Analizzare i risultati del test](./cloud-manager/devops/analyze-test-results.md)
-      + [Configurazioni del Dispatcher](./cloud-manager/devops/dispatcher-configurations.md)
+      + [Configurazioni di Dispatcher](./cloud-manager/devops/dispatcher-configurations.md)
       + [API di Cloud Manager](./cloud-manager/devops/cloud-manager-apis.md)
 + Configurazione ambiente di sviluppo locale {#local-development-environment-set-up}
    + [Panoramica](./local-development-environment/overview.md)
