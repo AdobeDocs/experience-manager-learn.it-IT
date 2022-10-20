@@ -4,10 +4,10 @@ description: Guarda i nostri video e tutorial per ottenere aiuto con Adobe Exper
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
-source-git-commit: c6ee6681775847b3c1168bc18f0f0e973f2daa83
+source-git-commit: d712fb988dc554b4f95ab2298ffc0f54df48f6f3
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 3%
+source-wordcount: '244'
+ht-degree: 1%
 
 ---
 
@@ -93,7 +93,6 @@ Adobe Experience Manager fornisce un set comune di funzionalità disponibili per
 
 ## Altro materiale di riferimento
 
-* [Experience League - Esplora AEM](https://experienceleague.adobe.com/?lang=it#recommended/solutions/experience-manager)
 * [AEM tutorial as a Cloud Service](/help/cloud-service/overview.md)
 * [Video ed esercitazioni di AEM Sites](/help/sites/overview.md)
 * [Video ed esercitazioni di AEM Assets](/help/assets/overview.md)
