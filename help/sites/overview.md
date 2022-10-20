@@ -4,14 +4,14 @@ description: Scopri Experience Manager Sites dai nostri video e tutorial. Scopri
 sub-product: sites, content-services
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: 5dbad9101ce73c2e0370592336d37338e45825ef
+source-git-commit: d6366d1e3f4d575eb78b8af38a59a7fb9413f43d
 workflow-type: tm+mt
 source-wordcount: '354'
-ht-degree: 23%
+ht-degree: 21%
 
 ---
 
-# Video e tutorial su AEM Sites {#overview}
+# Video ed esercitazioni di AEM Sites {#overview}
 
 Adobe Experience Manager (AEM) Sites è una piattaforma leader nella gestione delle esperienze. Questa guida utente contiene video ed esercitazioni sulle numerose funzioni e funzionalità di AEM Sites.
 
@@ -51,7 +51,7 @@ Adobe Experience Manager (AEM) Sites è una piattaforma leader nella gestione de
 
 <div id="staff-picks-section">
 
-## Scelte dello staff
+## Scatole dello staff
 
 <table>
 <tr>
@@ -99,7 +99,7 @@ Adobe Experience Manager (AEM) Sites è una piattaforma leader nella gestione de
 
 </div>
 
-## Risorse aggiuntive
+## Altro materiale di riferimento
 
 * [Experience League - Esplora AEM](https://experienceleague.adobe.com/?lang=it#recommended/solutions/experience-manager)
 * [Documentazione sull’authoring di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
