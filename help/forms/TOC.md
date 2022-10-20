@@ -5,9 +5,9 @@ user-guide-title: Video e tutorial su AEM Forms
 user-guide-description: Raccolta di risorse AEM Forms per sviluppatori principianti ed esperti di AEM Forms.
 breadcrumb-title: Tutorial su AEM Forms
 index: y
-source-git-commit: 061077fb6cd8ac7b760aa30b884ced6d4d3c3b20
+source-git-commit: 853c4fedd4b8db594aa0b53fd2d27d996811f14e
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1722'
 ht-degree: 3%
 
 ---
@@ -62,6 +62,7 @@ ht-degree: 3%
    + [Invia componente e-mail nel flusso di lavoro AEM Forms](adaptive-forms/email-step-aem-workflow-video-use.md)
    + [Generazione di DocumentOfRecord tramite API](adaptive-forms/document-of-record-api-tutorial-use.md)
    + [Visualizzazione delle immagini in linea](adaptive-forms/inline-images-adaptive-forms.md)
+   + [Visualizzazione delle immagini DAM in linea](adaptive-forms/inline-images-from-dam.md)
    + [Utilizzo dell’API GeoLocation](adaptive-forms/using-geolocation-api-in-aem-forms-article.md)
    + [Utilizzo del reporting delle transazioni](adaptive-forms/transaction-reporting-aem-forms-article-use.md)
    + [Integrazione dei dati del profilo utente in AEM Forms](adaptive-forms/user-profile-data-integration-feature-video-use.md)
