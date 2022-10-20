@@ -1,16 +1,16 @@
 ---
-title: Video e tutorial su AEM Assets
+title: Video ed esercitazioni di AEM Assets
 description: Guarda i nostri video per ottenere supporto e assistenza AEM Asset.
 sub-product: assets, dynamic-media
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: 9aae58c3301a7067baca374d6499f1afc3c95b06
+source-git-commit: c6ee6681775847b3c1168bc18f0f0e973f2daa83
 workflow-type: tm+mt
 source-wordcount: '205'
-ht-degree: 19%
+ht-degree: 8%
 
 ---
 
-# Video e tutorial su AEM Assets {#overview}
+# Video ed esercitazioni di AEM Assets {#overview}
 
 Adobe Experience Manager (AEM) Assets è uno strumento di gestione delle risorse digitali su AEM Platform che consente agli utenti di creare, gestire e condividere le proprie risorse digitali (immagini, video, documenti e clip audio) in un archivio basato sul Web. Questa guida utente contiene video ed esercitazioni sulle numerose funzioni e funzionalità di AEM Assets.
 
@@ -26,7 +26,16 @@ Guarda questa guida dettagliata di AEM Assets che spiega cos’è AEM Assets e c
 
 >[!VIDEO](https://video.tv.adobe.com/v/336196/?quality=12&learn=on)
 
-## Scelte dello staff
+<div id="recs-overview-body-1"></div>
+<div id="recs-overview-body-2"></div>
+<div id="recs-overview-body-3"></div>
+<div id="recs-overview-body-4"></div>
+<div id="recs-overview-body-5"></div>
+<div id="recs-overview-body-6"></div>
+
+<div id="staff-picks-section">
+
+## Scatole dello staff
 
 <table>
 <td>
@@ -70,11 +79,13 @@ Guarda questa guida dettagliata di AEM Assets che spiega cos’è AEM Assets e c
 </td>
 </table>
 
-## Risorse aggiuntive
+</div>
+
+## Altro materiale di riferimento
 
 * [Experience League - Esplora AEM](https://experienceleague.adobe.com/?lang=it#recommended/solutions/experience-manager)
-* [Documentazione di AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en)
-* [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
-* [Tutorial su AEM Sites](/help/sites/overview.md)
-* [Tutorial su AEM Forms](/help/forms/overview.md)
-* [Tutorial su AEM Foundation](/help/foundation/overview.md)
+* [Documentazione di AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en)
+* [AEM tutorial as a Cloud Service](/help/cloud-service/overview.md)
+* [Esercitazioni di AEM Sites](/help/sites/overview.md)
+* [Esercitazioni di AEM Forms](/help/forms/overview.md)
+* [Esercitazioni di AEM Foundation](/help/foundation/overview.md)
