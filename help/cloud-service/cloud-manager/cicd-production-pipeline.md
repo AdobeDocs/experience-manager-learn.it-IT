@@ -1,7 +1,6 @@
 ---
 title: Utilizzo di Adobe Cloud Manager - Pipeline di produzione CI/CD
 description: La pipeline di produzione CI/CD viene utilizzata per generare e distribuire il codice tramite Stage nell’ambiente di produzione, riducendo il tempo al valore. La configurazione della pipeline di produzione CI/CD definisce il trigger che avvierà la pipeline, i parametri che controllano la distribuzione di produzione e i parametri del test delle prestazioni.
-sub-product: cloud-manager
 topics: Administration
 audience: administrator
 doc-type: feature video
@@ -13,10 +12,10 @@ topic: Architecture
 role: Architect, Developer, Admin
 level: Beginner
 exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
-source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -27,7 +26,7 @@ ht-degree: 2%
 >title="Pipeline di produzione CI/CD"
 >abstract="La configurazione della pipeline di produzione CI/CD definisce il trigger che avvierà la pipeline, i parametri che controllano la distribuzione di produzione e i parametri del test delle prestazioni."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-process" text="Implementare il codice"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-production-phase" text="Fase di implementazione a produzione"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-production-phase" text="Fase dalla distribuzione alla produzione"
 
 ## Configurazione
 

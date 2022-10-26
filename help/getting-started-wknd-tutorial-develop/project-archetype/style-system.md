@@ -2,7 +2,6 @@
 title: Sviluppo con il sistema di stili
 seo-title: Developing with the Style System
 description: Scopri come implementare singoli stili e riutilizzare i componenti core utilizzando il sistema di stili di Experience Manager. Questa esercitazione illustra lo sviluppo per il sistema di stili per estendere i componenti core con CSS specifici per il brand e configurazioni avanzate di criteri nell’Editor modelli.
-sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
 feature: Core Components, Style System
@@ -13,10 +12,10 @@ kt: 4128
 mini-toc-levels: 1
 thumbnail: 30386.jpg
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1681'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -75,7 +74,7 @@ In questo capitolo utilizzeremo il [Funzionalità del sistema di stili](https://
 
 *Stile sottolineatura disponibile per il componente Titolo*
 
-## Sfondo {#background}
+## Informazioni di base {#background}
 
 La [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) consente agli sviluppatori e agli editor di modelli di creare più varianti visive di un componente. Gli autori possono quindi a loro volta decidere quale stile utilizzare per la composizione di una pagina. Nel resto dell’esercitazione, sfrutteremo il sistema di stili per ottenere diversi stili univoci, sfruttando al contempo i componenti core in un approccio a basso codice.
 
@@ -103,7 +102,7 @@ Aggiungi un nuovo criterio per i componenti Titolo per consentire agli autori di
 
 1. Crea un nuovo criterio per il componente Titolo con i seguenti valori:
 
-   *Titolo criterio **: **Titolo WKND**
+   *Titolo criterio&#42;*: **Titolo WKND**
 
    *Proprietà* > *Scheda Stili* > *Aggiungi un nuovo stile*
 
@@ -213,7 +212,7 @@ Aggiungere quindi un nuovo criterio per i componenti Testo .
 
 1. Aggiorna il criterio del componente Testo con i seguenti valori:
 
-   *Titolo criterio **: **Testo contenuto**
+   *Titolo criterio&#42;*: **Testo contenuto**
 
    *Plug-in* > *Stili paragrafo* > *Abilitare gli stili di paragrafo*
 

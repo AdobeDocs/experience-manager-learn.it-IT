@@ -1,7 +1,6 @@
 ---
 title: Flusso di lavoro dei temi | Creazione rapida di siti AEM
 description: Scopri come aggiornare le origini dei temi di un sito Adobe Experience Manager per applicare stili specifici per il marchio. Scopri come utilizzare un server proxy per visualizzare un’anteprima live degli aggiornamenti CSS e JavaScript. Questa esercitazione illustra anche come distribuire gli aggiornamenti a un tema in un sito AEM utilizzando la pipeline Front End di Adobe Cloud Manager.
-sub-product: sites
 version: Cloud Service
 type: Tutorial
 feature: Core Components
@@ -11,7 +10,7 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 1%

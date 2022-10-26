@@ -1,22 +1,21 @@
 ---
 title: Set di file multimediali diversi, immagine, campione, rotazione
 description: Una delle funzionalità più utili e potenti di Dynamic Media Classic è il supporto per la creazione di set di file multimediali avanzati come Image, Swatch, Spin e Mixed Media Set. Scopri cos’è ogni set di rich media e come creare ogni tipo in Dynamic Media Classic. Quindi scopri di più su Batch Set Preset, che automatizza il processo di creazione di set rich media al momento del caricamento.
-sub-product: dynamic-media
-feature: Dynamic Media Classic, Set Di Immagini, Set Di File Multimediali Misti, Set 360 Gradi
-topic: Gestione dei contenuti
+feature: Dynamic Media Classic, Image Sets, Mixed Media Sets, Spin Sets
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 45c86ff2-d991-46a7-a8d1-25c9fec142d9
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1433'
 ht-degree: 1%
 
 ---
 
-
 # Set di file multimediali diversi, immagine, campione, rotazione {#media-sets}
 
-Oltre alle singole immagini per il dimensionamento dinamico e lo zoom, le raccolte di set di Dynamic Media Classic consentono un&#39;esperienza online più ricca. In questa sezione dell’esercitazione verrà illustrato come creare i seguenti set di file multimediali avanzati in Dynamic Media Classic:
+Oltre alle singole immagini per il dimensionamento dinamico e lo zoom, le raccolte di set Dynamic Media Classic consentono un&#39;esperienza online più ricca. In questa sezione dell’esercitazione verrà illustrato come creare i seguenti set di file multimediali avanzati in Dynamic Media Classic:
 
 - Set immagini
 - Set di campioni
@@ -33,7 +32,7 @@ Quando crei un set, questo viene gestito come una risorsa separata che deve esse
 
 ### Tipi di set
 
-Scopri i quattro tipi di set che puoi creare in Dynamic Media Classic: Set di file multimediali diversi, immagine, campione, rotazione e set di file multimediali diversi.
+Scopriamo i quattro tipi di set che puoi creare in Dynamic Media Classic: Set di file multimediali diversi, immagine, campione, rotazione e set di file multimediali diversi.
 
 ## Set immagini
 
@@ -47,7 +46,7 @@ L&#39;URL del set di immagini sopra riportato potrebbe apparire come:
 
 ![immagine](assets/media-sets/image-set-url-1.png)
 
-- Ulteriori informazioni sui set di immagini con la [Guida rapida ai set di immagini](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/quick-start-image-sets.html).
+- Ulteriori informazioni sui set di immagini con [Guida rapida ai set di immagini](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/quick-start-image-sets.html).
 - Scopri come [Creare un set di immagini](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set).
 
 ### Set di campioni
@@ -66,7 +65,7 @@ L’URL del set di campioni di cui sopra potrebbe essere visualizzato come:
 
 ![immagine](assets/media-sets/image-set_url.png)
 
-- Ulteriori informazioni sui set di campioni con la [Guida rapida ai set di campioni](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html).
+- Ulteriori informazioni sui set di campioni con [Guida rapida ai set di campioni](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html).
 - Scopri come [Creare un set di campioni](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set).
 
 ### Set 360 gradi
@@ -83,7 +82,7 @@ L’URL del set 360 gradi riportato sopra potrebbe essere visualizzato come:
 
 ![immagine](assets/media-sets/spin-set.png)
 
-- Per ulteriori informazioni sui set 360 gradi, consulta la sezione [Avvio rapido ai set 360 gradi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html).
+- Ulteriori informazioni sui set 360 gradi con [Avvio rapido ai set 360 gradi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html).
 - Scopri come [Creare un set 360 gradi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set).
 
 ## Set di file multimediali diversi
@@ -98,26 +97,26 @@ L&#39;URL del set di file multimediali diversi sopra riportato potrebbe apparire
 
 ![immagine](assets/media-sets/image-set-url-1.png)
 
-- Per ulteriori informazioni sui set di file multimediali diversi, consulta la sezione [Avvio rapido ai set di file multimediali diversi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html).
+- Ulteriori informazioni sui set di file multimediali diversi con [Guida rapida ai set di file multimediali diversi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html).
 
 - Scopri come [Creare un set di file multimediali diversi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
 
-Per visualizzare un&#39;immagine per lo zoom, un set o un video sul sito web, chiamala in un &quot;visualizzatore&quot; di Dynamic Media Classic. Dynamic Media Classic include visualizzatori per risorse multimediali avanzate come set di campioni, set 360 gradi, video e molti altri.
+Per visualizzare un&#39;immagine per lo zoom, un set o un video sul tuo sito web, chiamala in un &quot;visualizzatore&quot; di Dynamic Media Classic. Dynamic Media Classic include visualizzatori per risorse rich media quali set di campioni, set 360 gradi, video e molti altri.
 
-Ulteriori informazioni su [Visualizzatori per AEM Assets e Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html).
+Ulteriori informazioni [Visualizzatori per AEM Assets e Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html).
 
 ## Predefiniti set di batch
 
-Finora abbiamo discusso su come creare manualmente i set utilizzando la funzione Dynamic Media Classic Build . Tuttavia, è possibile automatizzare la creazione di set di immagini e set 360 gradi utilizzando un predefinito per set di batch, purché si disponga di una convenzione di denominazione standardizzata.
+Finora abbiamo discusso su come creare manualmente i set utilizzando la funzione Dynamic Media Classic Build. Tuttavia, è possibile automatizzare la creazione di set di immagini e set 360 gradi utilizzando un predefinito per set di batch, purché si disponga di una convenzione di denominazione standardizzata.
 
 Ogni predefinito è un set di istruzioni autonomo con un nome univoco che definisce come creare il set utilizzando immagini che corrispondono alle convenzioni di denominazione definite. Nel predefinito, definisci innanzitutto le convenzioni di denominazione per le risorse da raggruppare in un set. È quindi possibile creare un Batch Set Preset per fare riferimento a queste immagini.
 
-Anche se è possibile creare il predefinito da soli (si trovano in **Configurazione > Impostazione applicazione > Predefiniti set di batch** ), come best practice è consigliabile che il team di consulenza o il supporto tecnico lo configuri per te. Ecco perché:
+Mentre è possibile creare il predefinito da solo (si trovano in **Configurazione > Impostazione applicazione > Predefiniti set di batch** ), come best practice, è necessario che il team di consulenza o il supporto tecnico sia configurato per te. Ecco perché:
 
 - I predefiniti per set di batch possono essere complessi da configurare, basati su espressioni regolari e, a meno che tu non sia uno sviluppatore, questa sintassi potrebbe non essere familiare o creare confusione.
 - Una volta creati, vengono attivati per impostazione predefinita. Nessuna funzione di annullamento. Se inizi a caricare migliaia di immagini e il tuo predefinito non è configurato correttamente, potresti ritrovarti con centinaia o migliaia di set interrotti che devi trovare ed eliminare manualmente.
 
-In precedenza era stata suggerita una semplice convenzione di denominazione che sarebbe molto facile da integrare in un Batch Set Preset. Tuttavia, poiché i predefiniti sono molto flessibili, possono gestire strategie di denominazione complesse. In breve, le immagini che appartengono a un set devono essere legate tra loro da un nome comune, spesso corrisponde al numero SKU o all’ID prodotto. In Dynamic Media Classic è possibile assegnargli una convenzione di denominazione predefinita per tutte le immagini da utilizzare per un predefinito, oppure creare più predefiniti, ognuno con regole di denominazione diverse.
+In precedenza era stata suggerita una semplice convenzione di denominazione che sarebbe molto facile da integrare in un Batch Set Preset. Tuttavia, poiché i predefiniti sono molto flessibili, possono gestire strategie di denominazione complesse. In breve, le immagini che appartengono a un set devono essere legate tra loro da un nome comune, spesso corrisponde al numero SKU o all’ID prodotto. In Dynamic Media Classic puoi assegnargli una convenzione di denominazione predefinita per tutte le immagini da utilizzare per un predefinito, oppure creare più predefiniti, ognuno con regole di denominazione diverse.
 
 I predefiniti per set di batch vengono applicati solo al momento del caricamento; non possono essere eseguite dopo il caricamento delle immagini. È quindi importante pianificare la convenzione di denominazione e ottenere un predefinito costruito prima di iniziare a caricare tutte le immagini.
 
@@ -129,9 +128,9 @@ Scopri come [Creare un predefinito per set di batch](https://experienceleague.ad
 
 Di seguito è illustrato l’utilizzo dei predefiniti per set di batch al momento del caricamento dopo la loro creazione:
 
-1. Fai clic su **Carica** e scegli **Da Desktop** o **Tramite FTP**.
-2. Fare clic su **Opzioni processo**.
-3. Apri l&#39;opzione **Predefiniti set di batch** e seleziona o deseleziona il predefinito da utilizzare con il caricamento.
+1. Fai clic su **Carica** e scegli **Da desktop** o **Tramite FTP**.
+2. Fai clic su **Opzioni processo**.
+3. Apri **Predefiniti set di batch** e controlla o deseleziona il predefinito per utilizzarlo con il caricamento.
 4. Al termine del caricamento, cerca nella cartella i set finiti.
 
-Ulteriori informazioni su [Predefiniti set di batch](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#batch-set-presets).
+Ulteriori informazioni [Predefiniti set di batch](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#batch-set-presets).

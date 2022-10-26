@@ -1,7 +1,6 @@
 ---
 title: Introduzione all’authoring e alla pubblicazione | Creazione rapida di siti AEM
 description: Utilizza l’editor pagina in Adobe Experience Manager, AEM, per aggiornare il contenuto del sito web. Scopri come i componenti vengono utilizzati per facilitare l’authoring. Scopri la differenza tra un ambiente di authoring e uno di pubblicazione AEM e come pubblicare le modifiche al sito live.
-sub-product: sites
 version: Cloud Service
 type: Tutorial
 topic: Content Management
@@ -11,7 +10,7 @@ level: Beginner
 kt: 7497
 thumbnail: KT-7497.jpg
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 3%

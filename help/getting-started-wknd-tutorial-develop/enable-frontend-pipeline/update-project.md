@@ -1,7 +1,6 @@
 ---
 title: Aggiornare il progetto di AEM dello stack completo per utilizzare la pipeline front-end
 description: Scopri come aggiornare il progetto AEM dello stack completo per abilitarlo per la pipeline front-end, in modo che possa generare e distribuire solo gli artefatti front-end.
-sub-product: sites
 version: Cloud Service
 type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
@@ -12,7 +11,7 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: disable
-source-git-commit: 2e3615e9e9305165ca9c3c93b38ac7e9bdcc51fb
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 0%

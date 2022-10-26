@@ -1,7 +1,6 @@
 ---
 title: Guida introduttiva ad AEM Sites - Archetipo di progetto
 description: Guida introduttiva ad AEM Sites - Archetipo di progetto. L’esercitazione WKND è un tutorial in più parti progettato per gli sviluppatori che non hanno mai utilizzato Adobe Experience Manager. Il tutorial illustra l’implementazione di un sito AEM per un brand di lifestyle fittizio, il WKND. L’esercitazione tratta argomenti fondamentali come la configurazione del progetto, gli archetipi Maven, i componenti core, i modelli modificabili, le librerie client e lo sviluppo dei componenti.
-sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
 feature: Core Components, Page Editor, Editable Templates, AEM Project Archetype
@@ -12,10 +11,10 @@ mini-toc-levels: 1
 index: y
 exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
 recommendations: disable
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 20%
+ht-degree: 24%
 
 ---
 
@@ -23,7 +22,7 @@ ht-degree: 20%
 
 Ti diamo il benvenuto in un tutorial in più parti progettato per gli sviluppatori che non hanno mai utilizzato Adobe Experience Manager (AEM). Questa esercitazione illustra l’implementazione di un sito AEM per un brand di lifestyle fittizio WKND.
 
-Questa esercitazione inizia utilizzando il [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) per generare un nuovo progetto.
+Questa esercitazione inizia utilizzando il [Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) per generare un nuovo progetto.
 
 L’esercitazione è progettata per lavorare con **AEM as a Cloud Service** ed è compatibile con le versioni precedenti **AEM 6.5.10+**. Il sito viene implementato utilizzando:
 

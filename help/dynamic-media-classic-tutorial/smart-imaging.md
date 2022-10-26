@@ -1,22 +1,21 @@
 ---
 title: Imaging avanzato
 description: La funzione Smart imaging in Dynamic Media Classic migliora le prestazioni di distribuzione delle immagini ottimizzando automaticamente il formato e la qualità delle immagini in base alle funzionalità del browser client. A tal fine, sfrutta le funzionalità di Adobe Sensei AI e utilizza i predefiniti per immagini esistenti. Scopri di più sull’imaging avanzato e come utilizzarlo per offrire esperienze migliori ai clienti con carichi di pagina più veloci.
-sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring, renditions, images
 audience: all
 activity: use
-topic: Gestione dei contenuti
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 678671c3-af25-4da1-bc14-cbc4cc19be8d
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '687'
 ht-degree: 1%
 
 ---
-
 
 # Imaging avanzato {#smart-imaging}
 
@@ -24,7 +23,7 @@ Uno degli aspetti più importanti dell’esperienza del cliente sul sito web o s
 
 L&#39;imaging intelligente trae vantaggio anche dall&#39;ulteriore incremento delle prestazioni, grazie all&#39;integrazione completa con il miglior servizio premium di Adobe. Questo servizio trova il percorso Internet ottimale tra server, reti e punti di peer con latenza minima e/o velocità di perdita dei pacchetti rispetto al percorso predefinito su Internet.
 
-Ulteriori informazioni su [Smart imaging](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
+Ulteriori informazioni [Imaging avanzato](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
 
 ## Vantaggi dell&#39;imaging intelligente
 
@@ -36,11 +35,11 @@ Poiché le immagini rappresentano la maggior parte del tempo di caricamento di u
 
 Come indicato in precedenza, Smart Imaging sfrutta le funzionalità di Adobe Sensei AI e lavora con i predefiniti per immagini esistenti per convertire automaticamente le immagini in formati di immagine ottimali di nuova generazione, ad esempio WebP, mantenendo al tempo stesso la fedeltà visiva.
 
-Ulteriori informazioni su [Come funziona l&#39;imaging intelligente](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), compresi dettagli quali i formati immagine supportati (e cosa succede se non li usi) e il loro impatto sui predefiniti immagine esistenti in uso.
+Ulteriori informazioni [Come funziona l’immagine intelligente](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), compresi dettagli quali i formati immagine supportati (e cosa succede se non li usi) e il loro impatto sui predefiniti per immagini esistenti in uso.
 
 ## Impatto dell&#39;imaging intelligente
 
-È probabile che sarà necessario apportare modifiche agli URL, ai predefiniti per immagini e al codice del sito per sfruttare lo Smart imaging. Se si soddisfano i prerequisiti per l&#39;utilizzo di Smart Imaging e si lavora solo con le immagini nei formati immagine JPEG e PNG supportati, non è necessario apportare alcuna modifica.
+È probabile che sarà necessario apportare modifiche agli URL, ai predefiniti per immagini e al codice del sito per sfruttare lo Smart imaging. Se si soddisfano i prerequisiti per l’utilizzo di Smart Imaging e si lavora solo con le immagini nei formati di immagine JPEG e PNG supportati, non è necessario apportare alcuna modifica.
 
 L’imaging avanzato funziona con le immagini distribuite tramite HTTP, HTTPS e HTTP/2.
 
@@ -54,8 +53,8 @@ L’abilitazione di Smart imaging inizia con l’invio del supporto tecnico a un
 
 Dopo aver abilitato Smart imaging, dovrai verificare che funzioni come previsto.
 
-Probabilmente hai ulteriori domande su Smart imaging. Abbiamo compilato un elenco delle domande frequenti (FAQ) con le risposte. Leggi le [Domande frequenti](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
+Probabilmente hai ulteriori domande su Smart imaging. Abbiamo compilato un elenco delle domande frequenti (FAQ) con le risposte. Leggi la sezione [Domande frequenti](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
 
 ## Risorse aggiuntive
 
-Guarda il webinar on-demand [Dynamic Media Classic Optimizing Page Performance Generatore](https://seminars.adobeconnect.com/pzc1gw0cihpv) per ulteriori informazioni sull&#39;imaging intelligente.
+Guarda il [Dynamic Media Classic Optimization Page Performance Skills Builder](https://seminars.adobeconnect.com/pzc1gw0cihpv) webinar on-demand per ulteriori informazioni su Smart imaging.

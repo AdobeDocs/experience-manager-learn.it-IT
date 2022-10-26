@@ -1,7 +1,6 @@
 ---
 title: Guida introduttiva ad AEM SPA Editor e React
 description: Crea la prima applicazione a pagina singola React modificabile in Adobe Experience Manager (AEM) con l’applicazione a pagina singola WKND. Scopri come creare un’applicazione a pagina singola utilizzando la piattaforma JS di React con l’editor per applicazioni a pagina singola di AEM. Questo tutorial in più parti illustra l’implementazione di un’applicazione React per un brand lifestyle fittizio, WKND. Il tutorial descrive tutte le fasi di creazione dell’applicazione a pagina singola, e l’integrazione con AEM.
-sub-product: sites
 topics: development
 version: Cloud Service
 doc-type: tutorial
@@ -14,7 +13,8 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 38802296-8988-4300-a04a-fcbbe98ac810
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+last-substantial-update: 2022-08-25T00:00:00Z
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 32%

@@ -1,8 +1,7 @@
 ---
 title: Creazione di un flusso di lavoro per la revisione dei dati inviati
 description: Creazione di un modello di flusso di lavoro AEM utilizzando i componenti del flusso di lavoro AEM Forms per esaminare i dati inviati.
-sub-product: forms
-feature: Flusso di lavoro
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,16 +9,16 @@ activity: setup
 version: 6.4,6.5
 kt: 4271
 thumbnail: 40242.jpg
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 0aafd97a-2e72-4257-ad4d-e0993263b11f
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 5%
+source-wordcount: '138'
+ht-degree: 4%
 
 ---
-
 
 # Creazione di un flusso di lavoro per la revisione dei dati inviati
 
@@ -33,7 +32,4 @@ Il video seguente spiega la creazione del flusso di lavoro di revisione e approv
 >[!VIDEO](https://video.tv.adobe.com/v/40242/?quality=9&learn=on)
 
 
-Se non riesci a creare il flusso di lavoro, puoi scaricare il flusso di lavoro completato da [qui](assets/review-submitted-data-workflow.zip) e importarlo utilizzando [package manager](http://localhost:4502/crx/packmgr/index.jsp) nella tua istanza AEM.
-
-
-
+Se non riesci a creare il flusso di lavoro, puoi scaricare il flusso di lavoro completato da [qui](assets/review-submitted-data-workflow.zip) e importare lo stesso utilizzando [gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp) nella tua istanza AEM.

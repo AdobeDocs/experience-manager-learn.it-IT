@@ -1,26 +1,25 @@
 ---
 title: Ritaglio, immagini regolate e destinazioni di zoom
-description: L’immagine principale di Dynamic Media Classic supporta la creazione di versioni ritagliate separate di ogni immagine per mostrare i dettagli o per i campioni senza dover creare versioni ritagliate separate di ogni immagine. Scopri come ritagliare le immagini in Dynamic Media Classic e salvarle come nuovo file master o immagine virtuale, salvare le immagini modificate virtuali e utilizzarle al posto delle risorse master e creare destinazioni zoom sulle immagini per mostrare i dettagli evidenziati.
-sub-product: dynamic-media
+description: L’immagine principale di Dynamic Media Classic supporta la creazione di versioni ritagliate separate di ogni immagine per mostrare i dettagli o per i campioni senza dover creare versioni ritagliate separate di ogni immagine. Scopri come ritagliare le immagini in Dynamic Media Classic e salvarle come nuovo file master o come immagine virtuale, salvare le immagini modificate virtuali e utilizzarle al posto delle risorse master e creare destinazioni zoom sulle immagini per mostrare i dettagli evidenziati.
 feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
-topic: Gestione dei contenuti
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: a1d83c77-a9e4-4ed1-9b00-65fb002164c0
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '2659'
+source-wordcount: '2653'
 ht-degree: 0%
 
 ---
 
-
 # Ritaglio, immagini regolate e destinazioni di zoom {#crop-adjusted-zoom-targets}
 
-Uno dei principali punti di forza del concetto di immagine master di Dynamic Media Classic è che è possibile riutilizzare la risorsa immagine per molti utilizzi. In genere, è necessario creare versioni separate e ritagliate di ogni immagine per mostrare i dettagli o i campioni. Quando si utilizza Dynamic Media Classic, è possibile eseguire le stesse attività sul singolo master e salvare le versioni ritagliate come nuovi file fisici o come derivati virtuali che non occupano spazio di archiviazione.
+Uno dei principali punti di forza del concetto di immagine principale di Dynamic Media Classic è che è possibile riadattare la risorsa immagine per molti utilizzi. In genere, è necessario creare versioni separate e ritagliate di ogni immagine per mostrare i dettagli o i campioni. Quando si utilizza Dynamic Media Classic, è possibile eseguire le stesse attività sul singolo master e salvare le versioni ritagliate come nuovi file fisici o come derivati virtuali che non occupano spazio di archiviazione.
 
 Alla fine di questa sezione dell’esercitazione saprai come:
 
@@ -30,9 +29,9 @@ Alla fine di questa sezione dell’esercitazione saprai come:
 
 ## Ritaglio
 
-Dynamic Media Classic dispone di alcuni strumenti di modifica delle immagini disponibili comodamente nell&#39;interfaccia utente, tra cui lo strumento Ritaglio. Potrebbe essere utile ritagliare l’immagine principale in Dynamic Media Classic per una serie di motivi. Esempio:
+Dynamic Media Classic dispone di alcuni strumenti di modifica delle immagini disponibili nell’interfaccia utente, tra cui lo strumento Ritaglio . Potrebbe essere utile ritagliare l’immagine principale in Dynamic Media Classic per una serie di motivi. Esempio:
 
-- Non hai accesso al file originale. Si desidera visualizzare l&#39;immagine con un ritaglio o proporzioni diversi, ma non si dispone del file originale sul computer o si sta lavorando da casa. In questo caso è possibile accedere a Dynamic Media Classic, trovare l&#39;immagine, ritagliarla e salvarla, o salvarla come nuova versione.
+- Non hai accesso al file originale. Si desidera visualizzare l&#39;immagine con un ritaglio o proporzioni diversi, ma non si dispone del file originale sul computer o si sta lavorando da casa. In questo caso è possibile accedere a Dynamic Media Classic, trovare l’immagine, ritagliarla e salvarla o salvarla come nuova versione.
 - Per rimuovere lo spazio bianco in eccesso. L&#39;immagine è stata fotografata con troppo spazio bianco, il che rende il prodotto piccolo. Desideri che le immagini in miniatura riempiscano il quadro il più possibile.
 - Per creare immagini regolate, copie virtuali di immagini che non occupano spazio su disco. Alcune aziende hanno regole di business che impongono loro di conservare copie separate della stessa immagine, ma con un nome diverso. O magari volete una versione ritagliata e non ritagliata della stessa immagine.
 - Per creare nuove immagini da un&#39;immagine sorgente Ad esempio, potete creare campioni di colore o un dettaglio dell’immagine principale. Puoi farlo in Adobe Photoshop e caricarlo separatamente o usare lo strumento Ritaglio in Dynamic Media Classic.
@@ -43,10 +42,10 @@ Dynamic Media Classic dispone di alcuni strumenti di modifica delle immagini dis
 
 ### Utilizzo dello strumento Ritaglio
 
-Per accedere allo strumento Ritaglio in Dynamic Media Classic dalla pagina Dettagli di una risorsa o facendo clic sul pulsante **Modifica** . Potete usare lo strumento per ritagliare in due modi:
+Per accedere allo strumento Ritaglio in Dynamic Media Classic dalla pagina Dettagli di una risorsa o facendo clic sul pulsante **Modifica** pulsante . Potete usare lo strumento per ritagliare in due modi:
 
-- Modalità di ritaglio predefinita in cui trascinare le maniglie della finestra di ritaglio o digitare i valori nella casella Dimensioni. Scopri come [Ritagliare manualmente](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
-- Rifila. Utilizza questo per rimuovere spazi bianchi aggiuntivi intorno all&#39;immagine calcolando il numero di pixel che non corrispondono all&#39;immagine. Scopri come ritagliare [tagliando](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
+- Modalità di ritaglio predefinita in cui trascinare le maniglie della finestra di ritaglio o digitare i valori nella casella Dimensioni. Scopri come [Ritaglio manuale](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
+- Rifila. Utilizza questo per rimuovere spazi bianchi aggiuntivi intorno all&#39;immagine calcolando il numero di pixel che non corrispondono all&#39;immagine. Scopri come [Ritaglio per taglio](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
 
 ### _Ritaglio manuale_
 
@@ -66,19 +65,19 @@ L&#39;immagine a destra viene resa molto più evidente rimuovendo lo spazio extr
 
 >[!NOTE]
 >
->L&#39;opzione Trim non crea trasparenza intorno all&#39;immagine. Per questo motivo, è necessario incorporare un tracciato di ritaglio nell&#39;immagine e utilizzare l&#39;opzione di caricamento **Crea maschera dal percorso della clip**.
+>L&#39;opzione Trim non crea trasparenza intorno all&#39;immagine. A questo scopo, è necessario incorporare un tracciato di ritaglio nell’immagine e utilizzare il **Crea maschera dal percorso della clip** opzione di caricamento.
 >
->Inoltre, per ripristinare lo stato originale di un&#39;immagine dopo averla ritagliata quando è stata utilizzata l&#39;opzione **Salva**, visualizzare l&#39;immagine nella schermata Editor ritaglio e selezionare il pulsante **Ripristina**.
+>Inoltre, per ripristinare lo stato originale di un&#39;immagine dopo averlo ritagliato quando hai utilizzato il **Salva** visualizzare l’immagine nella schermata Editor ritaglio e selezionare l’opzione **Reimposta** pulsante .
 
 ### _Ritaglio durante il caricamento_
 
-Come accennato in precedenza, puoi anche scegliere di ritagliare le immagini durante il caricamento. Per utilizzare il ritaglio al momento del caricamento, fate clic sul pulsante **Opzioni processo** e in Opzioni ritaglio scegliete **Trim**.
+Come accennato in precedenza, puoi anche scegliere di ritagliare le immagini durante il caricamento. Per utilizzare il ritaglio al momento del caricamento, fai clic sul pulsante **Opzioni processo** e in Opzioni ritaglio scegliere **Rifila**.
 
-Dynamic Media Classic ricorda questa opzione per il prossimo caricamento. Mentre potreste voler ritagliare le immagini per questo caricamento, potreste non volere ritagliarle per ogni caricamento. Un&#39;altra opzione consiste nell&#39;impostare un lavoro speciale pianificato di caricamento FTP e inserire le opzioni di ritaglio lì. In questo modo, esegui il lavoro solo quando era necessario ritagliare le immagini.
+Dynamic Media Classic ricorderà questa opzione per il prossimo caricamento. Mentre potreste voler ritagliare le immagini per questo caricamento, potreste non volere ritagliarle per ogni caricamento. Un&#39;altra opzione consiste nell&#39;impostare un lavoro speciale pianificato di caricamento FTP e inserire le opzioni di ritaglio lì. In questo modo, esegui il lavoro solo quando era necessario ritagliare le immagini.
 
 >[!IMPORTANT]
 >
->Se imposti un ritaglio per il caricamento, Dynamic Media Classic inserirà un cookie per ricordare tale impostazione per la prossima volta. Come best practice, fai clic sul pulsante **Ripristina impostazioni predefinite società** prima del prossimo caricamento per eliminare tutte le opzioni di ritaglio rimaste dall’ultimo caricamento; in caso contrario, è possibile ritagliare accidentalmente il successivo batch di immagini.
+>Se imposti un ritaglio per il caricamento, Dynamic Media Classic inserirà un cookie per ricordare tale impostazione per la prossima volta. Come best practice, fai clic sul pulsante **Ripristina impostazioni predefinite società** prima del caricamento successivo, per cancellare tutte le opzioni di ritaglio rimaste dall’ultimo caricamento; in caso contrario, è possibile ritagliare accidentalmente il successivo batch di immagini.
 
 ### Ritaglio per URL
 
@@ -86,8 +85,8 @@ Sebbene non sia ovvio in Dynamic Media Classic, è anche possibile ritagliare tr
 
 Ogni volta che utilizzi lo strumento Ritaglio, vedrai i valori URL nel campo in basso. Puoi prendere questi valori e applicarli direttamente a un&#39;immagine come modificatori URL.
 
-![](assets/crop-adjusted-zoom-targets/cropping-by-url.png)
-_modificatori di comando imageCrop nella parte inferiore dell’Editor ritaglio_
+![immagine](assets/crop-adjusted-zoom-targets/cropping-by-url.png)
+_Modificatori del comando Ritaglia nella parte inferiore dell’Editor ritaglio_
 
 ![immagine](assets/crop-adjusted-zoom-targets/uncropped-cropped.png)
 
@@ -97,16 +96,16 @@ Poiché la dimensione deve essere calcolata in base alle immagini quando si util
 
 I predefiniti per immagini dispongono di un campo in cui è possibile aggiungere ulteriori comandi Image Serving. Per aggiungere lo stesso ritaglio di cui sopra al predefinito immagine, modifica il predefinito e incolla o digita i valori nel campo Modificatori URL , quindi salva e pubblica.
 
-![](assets/crop-adjusted-zoom-targets/cropping-in-image-preset.jpg)
-_imageAggiungi i comandi di ritaglio (o qualsiasi comando) ai modificatori URL del predefinito immagine._
+![immagine](assets/crop-adjusted-zoom-targets/cropping-in-image-preset.jpg)
+_Aggiungi i comandi di ritaglio (o qualsiasi comando) ai modificatori URL del predefinito immagine._
 
 Il ritaglio fa ora parte di quel predefinito per immagini e viene applicato automaticamente ogni volta che viene utilizzato. Naturalmente, questo metodo dipende da tutte le immagini che necessitano della stessa quantità di ritaglio. Se le tue immagini non vengono tutte riprese nello stesso modo, questo metodo non funzionerebbe per te.
 
 ## Immagini regolate
 
-Quando utilizzi lo strumento Ritaglio, puoi scegliere **Salva come visualizzazione aggiuntiva del principale**. Una volta salvata, viene creato un nuovo tipo di risorsa Dynamic Media Classic, un’immagine regolata. Un&#39;immagine regolata, detta anche derivata, è un&#39;immagine virtuale. Non è affatto un&#39;immagine; è un riferimento al database (come un alias o un collegamento) all&#39;immagine master fisica.
+Quando si utilizza lo strumento Ritaglio, è possibile **Salva come visualizzazione aggiuntiva del master**. Una volta salvato, viene creato un nuovo tipo di risorsa Dynamic Media Classic, un’immagine regolata. Un&#39;immagine regolata, detta anche derivata, è un&#39;immagine virtuale. Non è affatto un&#39;immagine; è un riferimento al database (come un alias o un collegamento) all&#39;immagine master fisica.
 
-### L&#39;immagine vera si può alzare`?`
+### L&#39;immagine vera si può alzare?`?`
 
 Si può sapere qual è il master e quale è l&#39;immagine regolata?
 
@@ -120,20 +119,20 @@ Un&#39;immagine regolata non utilizza spazio su disco, in quanto esiste solo com
 
 Generalmente si creano immagini regolate con lo strumento Ritaglio; tuttavia possono essere create anche con altri editor di immagini — gli strumenti Regola e Nitidezza .
 
-Le immagini regolate richiedono un ID risorsa univoco. Quando vengono pubblicati (devi pubblicarli come qualsiasi altra risorsa), questi fungono da qualsiasi altra immagine e sono chiamati su un URL in base al loro ID risorsa. Nella pagina Dettagli, puoi visualizzare le immagini regolate associate a un’immagine master nella scheda **Generato e derivate** .
+Le immagini regolate richiedono un ID risorsa univoco. Quando vengono pubblicati (devi pubblicarli come qualsiasi altra risorsa), questi fungono da qualsiasi altra immagine e sono chiamati su un URL in base al loro ID risorsa. Nella pagina Dettaglio è possibile visualizzare le immagini regolate associate a un’immagine master sotto la sezione **Costruiti e derivati** scheda .
 
-![](assets/crop-adjusted-zoom-targets/derivatives.jpg)
-_imageAdjusted Views for master image ASIAN_BR_MAIN_
+![immagine](assets/crop-adjusted-zoom-targets/derivatives.jpg)
+_Visualizzazioni regolate per l&#39;immagine principale ASIAN_BR_MAIN_
 
 ## Destinazioni di zoom
 
-Le destinazioni di zoom si trovano anche nella pagina **Modifica** e **Dettagli** di un&#39;immagine. Consentono di impostare &quot;punti attivi&quot; per evidenziare specifiche caratteristiche di merchandising di un&#39;immagine zoom. Invece di creare immagini separate ritagliando un master di grandi dimensioni, il visualizzatore zoom può servire i dettagli sopra l’immagine, insieme a una breve etichetta creata.
+Le destinazioni di zoom si trovano anche nella **Modifica** menu e **Dettagli** pagina di un’immagine. Consentono di impostare &quot;punti attivi&quot; per evidenziare specifiche caratteristiche di merchandising di un&#39;immagine zoom. Invece di creare immagini separate ritagliando un master di grandi dimensioni, il visualizzatore zoom può servire i dettagli sopra l’immagine, insieme a una breve etichetta creata.
 
 ![immagine](assets/crop-adjusted-zoom-targets/arm-with-watch.jpg)
 
 Poiché le destinazioni di zoom sono essenzialmente una funzione di merchandising e richiedono la conoscenza dei punti di vendita di un prodotto, in genere vengono create da una persona del team Merchandising o di prodotto di un&#39;azienda.
 
-Il processo è molto semplice: fai clic sulla feature, assegnagli un nome descrittivo e salva. I target possono essere copiati da un&#39;immagine all&#39;altra se sono simili, tuttavia il processo è manuale. In Dynamic Media Classic non è possibile automatizzare la creazione di destinazioni di zoom, perché ogni immagine è diversa e presenta funzioni diverse.
+Il processo è molto semplice: fai clic sulla feature, assegnagli un nome descrittivo e salva. I target possono essere copiati da un&#39;immagine all&#39;altra se sono simili, tuttavia il processo è manuale. In Dynamic Media Classic non è possibile automatizzare la creazione di destinazioni di zoom, in quanto ogni immagine è diversa e presenta funzioni diverse.
 
 Un altro fattore per decidere se utilizzare le destinazioni di zoom è la scelta del visualizzatore. Non tutti i tipi di visualizzatore possono visualizzare le destinazioni di zoom (ad esempio, il visualizzatore a comparsa non le supporta).
 
@@ -150,10 +149,10 @@ Ecco il flusso di lavoro per la creazione di destinazioni in Dynamic Media Class
 3. Sposta la casella rossa con il mouse e fai clic su per creare una nuova destinazione.
 
    - La casella rossa è l&#39;area di destinazione. Quando un utente fa clic su tale destinazione, esegue lo zoom nell&#39;area all&#39;interno della casella.
-   - La dimensione della destinazione è determinata dalle dimensioni della visualizzazione all’interno del predefinito visualizzatore. Questo determina le dimensioni dell&#39;immagine di zoom principale. Consultare _Impostazione delle dimensioni di visualizzazione_, di seguito.
+   - La dimensione della destinazione è determinata dalle dimensioni della visualizzazione all’interno del predefinito visualizzatore. Questo determina le dimensioni dell&#39;immagine di zoom principale. Vedi _Impostazione della dimensione della visualizzazione_ qui sotto.
 
 4. Il target appena creato diventa blu e a destra viene visualizzata una versione in miniatura del target e il nome predefinito &quot;target-0&quot;.
-5. Per rinominare la destinazione, fai clic sulla relativa miniatura, digita un nuovo **Nome** e fai clic su **Invio** o **Tab** — se fai clic via, il tuo nome non verrà salvato.
+5. Per rinominare la destinazione, fai clic sulla relativa miniatura, digita una nuova **Nome** e fai clic su **Invio** o **Scheda** — se cliccate via, il vostro nome non verrà salvato.
 6. Quando la destinazione è selezionata, intorno alla casella sono presenti linee tratteggiate verdi che consentono di ridimensionarla e spostarla. Trascinare gli angoli per ridimensionare o trascinare la casella di destinazione per spostarla.
 
    - L’immagine verrà caricata nel visualizzatore di zoom personalizzato predefinito. Assicurati che il predefinito per visualizzatori supporti le destinazioni di zoom; in generale, tutti i predefiniti standard con la parola &quot;-Guided&quot; sono stati progettati per l’utilizzo con le destinazioni di zoom. Per utilizzare le destinazioni, passa il puntatore del mouse sulla miniatura di destinazione (o sull’icona del punto attivo) per visualizzare l’etichetta e fai clic su di essa per visualizzare lo zoom del visualizzatore in quella funzione.
@@ -161,9 +160,9 @@ Ecco il flusso di lavoro per la creazione di destinazioni in Dynamic Media Class
 
       ![immagine](assets/crop-adjusted-zoom-targets/zoom-target-green-box.jpg)
 
-7. Inoltre, per rimuovere una destinazione, selezionala facendo clic sulla relativa miniatura e premendo il pulsante **Elimina destinazione** oppure premendo il tasto DELETE sulla tastiera.
+7. Inoltre, se devi rimuovere una destinazione, selezionala facendo clic sulla relativa miniatura e premendo il pulsante **Elimina Target** o premere il tasto DELETE sulla tastiera.
 8. Continua a fare clic per aggiungere nuovi target, rinominarli e/o ridimensionarli dopo l’aggiunta.
-9. Al termine, fare clic sul pulsante **Salva** e quindi su **Anteprima**.
+9. Al termine, fai clic sul pulsante **Salva** e quindi **Anteprima**.
 
 ### Impostazione delle dimensioni di visualizzazione nel predefinito per visualizzatori zoom
 
@@ -183,7 +182,7 @@ Potete vedere che il predefinito integrato ha una dimensione di 900 x 550, il ch
 
 Per impostare le dimensioni della visualizzazione, crea o modifica un predefinito per visualizzatori che supporta le destinazioni di zoom.
 
-1. Nel predefinito per visualizzatori, vai all&#39;opzione **Impostazioni zoom** .
+1. Nel predefinito per visualizzatori, passa alla pagina **Impostazioni zoom** opzione .
 2. Impostare Larghezza e Altezza.
 3. Salva il predefinito e chiudi. Se desideri utilizzare questo predefinito sul tuo sito live, in seguito dovrai anche pubblicare.
 4. Passa allo strumento Zoom Target e scegli il predefinito modificato in basso a sinistra. La nuova dimensione della visualizzazione verrà immediatamente visualizzata nelle destinazioni.

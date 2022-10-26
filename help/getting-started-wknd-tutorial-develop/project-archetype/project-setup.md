@@ -1,7 +1,6 @@
 ---
 title: Guida introduttiva ad AEM Sites - Configurazione del progetto
 description: Crea un progetto Maven Multi Module per gestire il codice e le configurazioni per un sito di Experience Manager.
-sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
 feature: AEM Project Archetype
@@ -12,7 +11,7 @@ mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1838'
 ht-degree: 4%
@@ -254,7 +253,7 @@ La **[nucleo centrale](https://experienceleague.adobe.com/docs/experience-manage
 
 ### Moduli Ui.apps e Ui.content {#apps-content-module}
 
-La **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** Il modulo maven contiene tutto il codice di rendering necessario per il sito sottostante `/apps`. Ciò include CSS/JS memorizzati in un formato AEM denominato [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). Ciò include anche [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) script per il rendering di HTML dinamici. Potete pensare al **ui.apps** modulo come mappa della struttura nel JCR ma in un formato che può essere memorizzato in un file system e impegnato nel controllo del codice sorgente. La **ui.apps** Il modulo contiene solo codice.
+La **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** Il modulo maven contiene tutto il codice di rendering necessario per il sito sottostante `/apps`. Ciò include CSS/JS memorizzati in un formato AEM denominato [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=it). Ciò include anche [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) script per il rendering di HTML dinamici. Potete pensare al **ui.apps** modulo come mappa della struttura nel JCR ma in un formato che può essere memorizzato in un file system e impegnato nel controllo del codice sorgente. La **ui.apps** Il modulo contiene solo codice.
 
 Per creare solo questo modulo:
 

@@ -1,7 +1,6 @@
 ---
 title: Librerie client e flusso di lavoro front-end
 description: Scopri come utilizzare le librerie client o le librerie client per distribuire e gestire CSS e JavaScript per un’implementazione di Adobe Experience Manager (AEM) Sites . Scopri come il modulo ui.frontend, un progetto webpack, può essere integrato nel processo di compilazione end-to-end.
-sub-product: sites
 version: 6.4, 6.5, Cloud Service
 type: Tutorial
 feature: Core Components, AEM Project Archetype
@@ -11,7 +10,7 @@ level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
-source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '2825'
 ht-degree: 2%

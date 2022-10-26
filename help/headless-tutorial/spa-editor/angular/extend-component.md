@@ -1,7 +1,6 @@
 ---
 title: Estendere un componente | Guida introduttiva all’editor di SPA AEM e all’Angular
 description: Scopri come estendere un componente core esistente da utilizzare con l’editor di SPA AEM. Scopri come aggiungere proprietà e contenuto a un componente esistente è una tecnica potente per espandere le funzionalità di un’implementazione di AEM Editor SPA. Scopri come utilizzare il pattern di delega per l’estensione dei modelli Sling e delle funzioni di Sling Resource Merger.
-sub-product: sites
 feature: SPA Editor, Core Components
 doc-type: tutorial
 topics: development
@@ -14,7 +13,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 0265d3df-3de8-4a25-9611-ddf73d725f6e
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 2%

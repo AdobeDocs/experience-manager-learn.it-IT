@@ -1,7 +1,6 @@
 ---
 title: Introduzione ai modelli di base
 description: Scopri i Modelli di base in Dynamic Media Classic, i modelli basati su immagini chiamati dal server di immagini e costituiti da immagini e testo di cui è stato eseguito il rendering. Un modello può essere modificato dinamicamente tramite l’URL dopo la pubblicazione. Scoprirai come caricare un Photoshop PSD in Dynamic Media Classic per utilizzarlo come base di un modello. Crea un semplice modello di base per merchandising composto da livelli immagine. Aggiungete i livelli di testo e rendeteli variabili mediante l’uso di parametri. Crea un URL modello e manipola l’immagine in modo dinamico tramite il browser web.
-sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring
@@ -11,7 +10,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: d4e16b45-0095-44b4-8c16-89adc15e0cf9
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '6260'
 ht-degree: 0%
@@ -307,7 +306,7 @@ Esempio RTF:
 
 ![immagine](assets/basic-templates/sample-rtf.png)
 
-Quando si esamina il RTF, è necessario capire dove si desidera modificare ogni impostazione. Nel RTF di cui sopra, alcuni di esso potrebbe avere un senso e si può vedere da dove viene la formattazione.
+Quando si esamina il RTF, è necessario capire dove si desidera modificare ogni impostazione. Nel RTF qui sopra, alcuni di essi potrebbero avere un senso e si può vedere da dove proviene la formattazione.
 
 Potete vedere la frase Sandalo della zecca di cioccolato — questo è il testo stesso.
 

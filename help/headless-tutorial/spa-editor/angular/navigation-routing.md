@@ -1,7 +1,6 @@
 ---
 title: Aggiungi navigazione e indirizzamento | Guida introduttiva all’editor di SPA AEM e all’Angular
 description: Scopri come sono supportate più visualizzazioni nell’SPA utilizzando AEM pagine e l’SDK dell’editor SPA. La navigazione dinamica viene implementata utilizzando percorsi di Angular e aggiunta a un componente Header esistente.
-sub-product: sites
 feature: SPA Editor
 topics: development
 doc-type: tutorial
@@ -14,7 +13,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '2712'
 ht-degree: 1%

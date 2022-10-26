@@ -1,7 +1,6 @@
 ---
 title: Abilita la pipeline front-end per il progetto standard Archetype AEM
 description: Scopri come abilitare una pipeline front-end per un progetto AEM standard per una distribuzione più rapida di risorse statiche come CSS, JavaScript, Font e icone. Anche la separazione dello sviluppo front-end dallo sviluppo back-end full-stack su AEM.
-sub-product: sites
 version: Cloud Service
 type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
@@ -12,7 +11,9 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: disable
-source-git-commit: 2e3615e9e9305165ca9c3c93b38ac7e9bdcc51fb
+thumbnail: 53409343.jpg
+last-substantial-update: 2022-09-23T00:00:00Z
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 3%

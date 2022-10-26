@@ -1,7 +1,6 @@
 ---
 title: Determinare la struttura delle cartelle e la convenzione per la denominazione dei file
 description: La denominazione dei file è forse la decisione più importante da prendere durante l’implementazione di Dynamic Media Classic. Anche la struttura delle cartelle è importante. Scopri perché è così importante e possibile adottare approcci per la struttura delle cartelle e i nomi dei file.
-sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
 activity: develop
@@ -11,7 +10,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 15121896-9196-4ce0-aff2-9178563326b4
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1207'
 ht-degree: 0%
