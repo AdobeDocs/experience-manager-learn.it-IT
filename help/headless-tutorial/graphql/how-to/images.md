@@ -9,9 +9,9 @@ level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 332ad831b6c49e8599aa2181caf978d5626c1aba
+source-git-commit: 129dedd4cd6973d5d576bed5f714ce62152923de
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1173'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ Utilizzo di `_authorUrl` e `_publishUrl` deve essere allineato con l’endpoint 
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_headless_graphql_images"
->title="Uso delle immagini"
+>title="Immagini con AEM headless"
 >abstract="Scopri come AEM Headless supporta la gestione delle risorse di immagini e la loro distribuzione ottimizzata."
 
 ## Modello per frammenti di contenuto
