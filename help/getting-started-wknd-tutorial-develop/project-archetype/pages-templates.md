@@ -9,7 +9,8 @@ mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+recommendations: noDisplay, noCatalog
+source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
 workflow-type: tm+mt
 source-wordcount: '3066'
 ht-degree: 1%
@@ -83,7 +84,7 @@ Nella maggior parte dei casi, la pianificazione di un nuovo sito web inizia con 
 
 Quando crei una pagina devi selezionare un modello, che viene utilizzato come base per la creazione della nuova pagina. Il modello definisce la struttura della pagina risultante, il contenuto iniziale e i componenti consentiti.
 
-Ci sono 3 aree principali di [Modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html):
+Ci sono 3 aree principali di [Modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=it):
 
 1. **Struttura** - definisce i componenti che fanno parte del modello. Non sono modificabili dagli autori dei contenuti.
 1. **Contenuto iniziale** - definisce i componenti con cui inizia il modello, che possono essere modificati e/o eliminati dagli autori di contenuti
