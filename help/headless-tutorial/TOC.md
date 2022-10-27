@@ -2,14 +2,15 @@
 user-guide-title: Guida introduttiva ad AEM Headless
 user-guide-description: Un tutorial completo che illustra come creare ed esporre contenuti utilizzando AEM Headless.
 breadcrumb-title: Tutorial di AEM Headless
-version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
+sub-product: Experience Manager Sites
+version: 6.5, Cloud Service
 kt: 2963
 index: y
-source-git-commit: 680ed62141b853daf104a827067ca6d5a209796d
+source-git-commit: 74510a4b075d2dba9b3f27018ba05f15dcad9562
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 21%
+source-wordcount: '268'
+ht-degree: 20%
 
 ---
 
@@ -107,7 +108,9 @@ ht-degree: 21%
    + [6 - Esposizione dei contenuti su AEM Publish per la distribuzione](./content-services/chapter-6.md)
    + [7 - Utilizzo di AEM Content Services da un’app mobile](./content-services/chapter-7.md)
 + Esempi di codice {#code-samples}
-   + [Reagisce all&#39;app](./graphql/code-samples/react-app.md)
-   + [app Angular](./graphql/code-samples/angular-app.md)
-   + [Componente React](./graphql/code-samples/react-component.md)
-   + [Filtro JavaScript](./graphql/code-samples/javascript-filter.md)
+   + [App React di filtraggio](./graphql/code-samples/filtering-react-app.md)
+   + [Applicazione Angular di filtro](./graphql/code-samples/filtering-angular-app.md)
+   + [Applicazione Vue filtro](./graphql/code-samples/filtering-vue-app.md)
+   + [Filtraggio con jQuery e Handlebars](./graphql/code-samples/filtering-jquery-handlebars.md)
+   + [App React di base](./graphql/code-samples/basic-react-app.md)
+   + [App Basic Next.js](./graphql/code-samples/basic-nextjs-app.md)
