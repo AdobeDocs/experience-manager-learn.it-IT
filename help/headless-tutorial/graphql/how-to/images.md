@@ -9,10 +9,10 @@ level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 129dedd4cd6973d5d576bed5f714ce62152923de
+source-git-commit: 3a7c04dfe465c1eff29ba6b4e4b7e24f047e5b42
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 2%
+source-wordcount: '1182'
+ht-degree: 1%
 
 ---
 
@@ -116,31 +116,31 @@ Gli amministratori di AEM Assets definiscono le rappresentazioni personalizzate 
 
 #### Profili di elaborazione
 
-Le specifiche dei rendering delle risorse sono definite in [Profili di elaborazione](../../../assets/configuring//processing-profiles.md) da parte degli amministratori di AEM Assets.
+Le specifiche dei rendering delle risorse sono definite in [Profili di elaborazione](../../../assets/configuring/processing-profiles.md) da parte degli amministratori di AEM Assets.
 
 Crea o aggiorna un profilo di elaborazione e aggiungi definizioni di rendering per le dimensioni dell&#39;immagine richieste dall&#39;applicazione headless. Le rappresentazioni possono essere denominate con qualsiasi nome, ma devono essere denominate in modo semantico.
 
-![AEM Rendering ottimizzati per headless](./assets/images/processing-profiles.jpg)
+![AEM Rendering ottimizzati per headless](./assets/images/processing-profiles.png)
 
 In questo esempio vengono create tre rappresentazioni:
 
 | Nome della rappresentazione | Estensione | Larghezza max |
-|----------------|:---------:|----------:|
-| grande | jpeg | 1200 px |
-| Media | jpeg | 900 px |
-| piccolo | jpeg | 600 px |
+|-----------------------|:---------:|----------:|
+| grande ottimizzato per il web | Web | 1200 px |
+| media ottimizzata per il web | Web | 900 px |
+| web-ottimizzato-small | Web | 600 px |
 
 Gli attributi indicati nella tabella precedente sono importanti:
 
 + __Nome della rappresentazione__ viene utilizzato per richiedere il rendering.
-+ __Estensione__ è l&#39;estensione utilizzata per richiedere il __nome del rendering__.
++ __Estensione__ è l&#39;estensione utilizzata per richiedere il __nome del rendering__. Preferisci `webp` rappresentazioni in quanto sono ottimizzate per la distribuzione web.
 + __Larghezza max__ viene utilizzato per informare lo sviluppatore quale rendering deve essere utilizzato in base al suo utilizzo nell&#39;applicazione headless.
 
 Le definizioni di rendering dipendono dalle esigenze dell’applicazione headless, quindi assicurati di definire il set di rendering ottimale per il tuo caso d’uso e sono denominate semanticamente per quanto riguarda il modo in cui vengono utilizzate.
 
 #### Rielaborazione delle risorse{#reprocess-assets}
 
-Con il profilo di elaborazione creato (o aggiornato), rielabora le risorse per generare le nuove rappresentazioni definite nel profilo di elaborazione. Le nuove rappresentazioni non esisteranno finché le risorse non vengono elaborate con il profilo di elaborazione.
+Con il profilo di elaborazione creato (o aggiornato), rielabora le risorse per generare le nuove rappresentazioni definite nel profilo di elaborazione. Le nuove rappresentazioni non esistono finché le risorse non vengono elaborate con il profilo di elaborazione.
 
 + Preferibilmente, [ha assegnato il profilo di elaborazione a una cartella](../../../assets/configuring//processing-profiles.md) quindi, tutte le nuove risorse caricate in tale cartella generano automaticamente le rappresentazioni. Le risorse esistenti devono essere rielaborate utilizzando l’approccio ad hoc seguente.
 
@@ -152,7 +152,7 @@ Con il profilo di elaborazione creato (o aggiornato), rielabora le risorse per g
 
 Le rappresentazioni possono essere convalidate da [apertura della visualizzazione rendering di una risorsa](../../../assets/authoring/renditions.md)e selezionando le nuove rappresentazioni da visualizzare in anteprima nella barra delle rappresentazioni. Se mancano le rappresentazioni, [assicurati che le risorse siano elaborate utilizzando il profilo di elaborazione](#reprocess-assets).
 
-![Verifica delle rappresentazioni](./assets/images/review-renditions.jpg)
+![Verifica delle rappresentazioni](./assets/images/review-renditions.png)
 
 #### Pubblicare le risorse
 
@@ -164,9 +164,9 @@ Le rappresentazioni sono accessibili direttamente aggiungendo la __nomi di rende
 
 | URL della risorsa | Sottopercorso delle rappresentazioni | Nome della rappresentazione | Estensione rendering |  | URL di rendering |
 |-----------|:------------------:|:--------------:|--------------------:|:--:|---|
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | grande | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/large.jpeg |
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | Media | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/medium.jpeg |
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | piccolo | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/small.jpeg |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | grande ottimizzato per il web | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-large.webp |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | media ottimizzata per il web | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-medium.webp |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | web-ottimizzato-small | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-small.webp |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -176,7 +176,7 @@ AEM GraphQL richiede una sintassi aggiuntiva per la richiesta di rappresentazion
 
 ### React example
 
-Creiamo una semplice applicazione React che visualizza tre rappresentazioni, piccole, medie e grandi, di una singola risorsa immagine.
+Creiamo una semplice applicazione React che visualizza tre rappresentazioni di una singola risorsa immagine ottimizzate per il web, di dimensioni ridotte per il web, per il mezzo ottimizzato per il web e per la grande per il web.
 
 ![Rendering delle risorse immagine React example](./assets/images/react-example-renditions.jpg)
 
@@ -216,7 +216,7 @@ export default function Image({ assetUrl, renditionName, renditionExtension, alt
 
 #### Definisci la `App.js`{#app-js}
 
-Questo semplice `App.js` le query AEM per un&#39;immagine Avventura e quindi visualizzano le tre rappresentazioni dell&#39;immagine: piccolo, medio e grande.
+Questo semplice `App.js` le query AEM per un&#39;immagine Avventura e quindi visualizzano le tre rappresentazioni dell&#39;immagine: web-ottimizzato-small, web-optimized-medium e web-optimized-large.
 
 L&#39;operazione di Query rispetto a AEM viene eseguita nel gancio React personalizzato [useAdventureByPath che utilizza l&#39;SDK AEM Headless](./aem-headless-sdk.md#graphql-persisted-queries).
 
@@ -242,33 +242,33 @@ function App() {
     <div className="app">
       
       <h2>Small rendition</h2>
-      {/* Render the small rendition for the Adventure Primary Image */}
+      {/* Render the web-optimized-small rendition for the Adventure Primary Image */}
       <Image
         assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
-        renditionName="small"
-        renditionExtension="jpeg"
+        renditionName="web-optimized-small"
+        renditionExtension="webp"
         alt={data.adventureByPath.item.title}
       />
 
       <hr />
 
       <h2>Medium rendition</h2>
-      {/* Render the medium rendition for the Adventure Primary Image */}
+      {/* Render the web-optimized-medium rendition for the Adventure Primary Image */}
       <Image
         assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
-        renditionName="medium"
-        renditionExtension="jpeg"
+        renditionName="web-optimized-medium"
+        renditionExtension="webp"
         alt={data.adventureByPath.item.title}
       />
 
       <hr />
 
       <h2>Large rendition</h2>
-      {/* Render the large rendition for the Adventure Primary Image */}
+      {/* Render the web-optimized-large rendition for the Adventure Primary Image */}
       <Image
         assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
-        renditionName="large"
-        renditionExtension="jpeg"
+        renditionName="web-optimized-large"
+        renditionExtension="webp"
         alt={data.adventureByPath.item.title}
       />
     </div>
