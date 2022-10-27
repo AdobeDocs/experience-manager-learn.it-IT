@@ -1,17 +1,18 @@
 ---
 title: Utilizzo di setvalue nel flusso di lavoro di AEM Forms
 description: Impostare il valore dell'elemento in Adattivo Forms dati inviati in AEM Forms OSGI
-feature: Moduli adattivi
-topic: Sviluppo
+feature: Adaptive Forms
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 3919efee-6998-48e8-85d7-91b6943d23f9
+last-substantial-update: 2020-01-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 1%
+source-wordcount: '528'
+ht-degree: 0%
 
 ---
-
 
 # Utilizzo di setvalue nel flusso di lavoro di AEM Forms
 
@@ -38,18 +39,18 @@ Per distribuire le risorse sul sistema locale, segui i passaggi seguenti:
 
 * [Distribuzione del bundle Developingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Distribuisci il bundle](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) di esempio. Questo è il bundle OSGI personalizzato che ti consente di impostare i valori di un elemento nei dati xml inviati
+* [Distribuire il bundle di esempio](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Questo è il bundle OSGI personalizzato che ti consente di impostare i valori di un elemento nei dati xml inviati
 
 * [Scaricare ed estrarre il contenuto del file zip](assets/setvalueassets.zip)
 * Posiziona il browser su [gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 * Importa e installa il setValueWorkflow.zip. Questo è il modello di flusso di lavoro di esempio.
-* Posiziona il browser su [Forms e Documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Posiziona il browser su [Forms e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Fai clic su Crea | Caricamento file
 * Carica TimeOfRequestForm.zip
 * Apri [TimeOffRequestform](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
 * Compila i 3 campi richiesti e invia
 * Accedi come amministratore in a AEM (se non lo hai già fatto)
-* Vai a [&quot;AEM Inbox&quot;](http://localhost:4502/aem/inbox)
+* Vai a [&quot;Casella in entrata AEM&quot;](http://localhost:4502/aem/inbox)
 * Apri il modulo &quot;Review Time Off Request&quot; (Ora di revisione della richiesta)
 * I campi nel primo pannello sono disabilitati. Questo perché il modulo viene aperto dal revisore. Inoltre, il pannello per approvare o rifiutare la richiesta è ora visibile
 

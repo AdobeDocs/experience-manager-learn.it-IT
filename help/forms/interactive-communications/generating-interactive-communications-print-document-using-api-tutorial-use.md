@@ -1,24 +1,25 @@
 ---
 title: Generazione del documento di comunicazione interattiva per il canale di stampa tramite il meccanismo di cartelle dell'orologio
-seo-title: Generazione del documento di comunicazione interattiva per il canale di stampa tramite il meccanismo di cartelle dell'orologio
+seo-title: Generating Interactive Communications Document for print channel using watch folder mechanism
 description: Utilizzare la cartella controllata per generare documenti del canale di stampa
-seo-description: Utilizzare la cartella controllata per generare documenti del canale di stampa
-feature: Comunicazione interattiva
+seo-description: Use watched folder to generate print channel documents
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: f5ab4801-cde5-426d-bfe4-ce0a985e25e8
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 1%
+source-wordcount: '463'
+ht-degree: 0%
 
 ---
-
 
 # Generazione del documento di comunicazione interattiva per il canale di stampa tramite il meccanismo di cartelle dell&#39;orologio
 
@@ -113,8 +114,8 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 **Per eseguire il test sul sistema locale, segui le seguenti istruzioni:**
 
 * Imposta Tomcat come descritto in questo [articolo.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat ha il file war che genera i dati del campione.
-* Imposta il servizio aka system user come descritto in questo [articolo](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
-Assicurati che questo utente di sistema abbia le autorizzazioni di lettura sul nodo seguente. Per assegnare le autorizzazioni di accesso a [user admin](https://localhost:4502/useradmin) e cercare l&#39;utente di sistema &quot;data&quot; e dare le autorizzazioni di lettura sul nodo seguente tasto di tabulazione sulla scheda delle autorizzazioni
+* Imposta il servizio aka utente del sistema come descritto in questo [articolo](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
+Assicurati che questo utente di sistema abbia le autorizzazioni di lettura sul nodo seguente. Per assegnare le autorizzazioni di accesso a [amministratore utente](https://localhost:4502/useradmin) e cerca l&#39;utente di sistema &quot;dati&quot; e concedi le autorizzazioni di lettura sul nodo seguente tasto di tabulazione sulla scheda autorizzazioni
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af
@@ -152,4 +153,3 @@ Assicurati che questo utente di sistema abbia le autorizzazioni di lettura sul n
 >Se si prevede di utilizzarlo su un sistema operativo non Windows, passare a
 >
 >/etc/fd/watchfolder /config/PrintChannelDocument e cambia folderPath secondo le tue preferenze
-

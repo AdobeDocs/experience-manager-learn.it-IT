@@ -6,10 +6,11 @@ feature: Adaptive Forms
 topic: Development
 role: Developer
 level: Beginner
-kt: kt-11245
-source-git-commit: 8944a4feaefbc4cf0db52011a0d49b22341780c0
+kt: 11245
+last-substantial-update: 2022-10-15T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ In questo articolo passeremo attraverso i passaggi necessari per includere il bu
 </dependency>
 ```
 
-Se il tuo bundle OSGi è sul tuo file system, la dipendenza sarà simile a questa
+Se il tuo bundle OSGi è sul tuo file system, crea una cartella chiamata **localjar** sotto la directory di base del progetto (C:\aemformsbundles\AEMFormsProcessStep\localjar) la dipendenza avrà un aspetto simile a questo
 
 ```java
 <dependency>

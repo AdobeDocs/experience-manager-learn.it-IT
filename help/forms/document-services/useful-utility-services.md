@@ -1,18 +1,19 @@
 ---
 title: Servizi di utilità
 description: Alcuni utili servizi di utilità per lo sviluppatore AEM Forms
-feature: Moduli adattivi
+feature: Adaptive Forms
 version: 6.4,6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: add06b73-18bb-4963-b91f-d8e1eb144842
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 2%
+source-wordcount: '155'
+ht-degree: 0%
 
 ---
-
 
 # Servizi di utilità
 
@@ -33,7 +34,7 @@ public abstract String saveDocumentInCrx(String jcrPath,String fileExtension, Do
 }
 ```
 
-Il bundle di esempio può essere [scaricato da qui](assets/aemformsutilityfunctions.aemformsutilityfunctions.core-1.0-SNAPSHOT.jar)
+Il bundle campione può essere [scaricato da qui](assets/aemformsutilityfunctions.aemformsutilityfunctions.core-1.0-SNAPSHOT.jar)
 
 ## Codice di esempio per utilizzare i servizi di utilità
 
@@ -48,8 +49,7 @@ aemFormsUtilities.saveDocumentInCrx("/content/xmlfiles",".xml",xmlStringDoc);
 ## Prerequisiti
 
 
-Sarà necessario distribuire [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) e avviare il bundle.
+Sarà necessario distribuire [SviluppoWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) e avviare il bundle.
 
 
-Se desideri salvare i documenti nell&#39;archivio CRX utilizzando questi servizi di utilità, segui il [sviluppo con l&#39;articolo utente del servizio](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Assicurati di fornire all&#39;utente del servizio fd le [autorizzazioni richieste](http://localhost:4502/useradmin) sulle cartelle CRX appropriate.
-
+Se vuoi salvare i documenti nell&#39;archivio CRX utilizzando questi servizi di utilità, segui il [sviluppo con l’articolo utente del servizio](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Assicurati di fornire [autorizzazioni necessarie](http://localhost:4502/useradmin) sulle cartelle CRX appropriate per l&#39;utente del servizio fd.

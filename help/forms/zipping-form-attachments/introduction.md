@@ -1,19 +1,20 @@
 ---
 title: Inviare allegati di moduli adattivi
 description: Inviare allegati ai moduli adattivi utilizzando il componente Invia e-mail
-feature: Moduli adattivi
+feature: Adaptive Forms
 version: 6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Beginner
 kt: kt-8049
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: bd9e1fc1-2fc7-452c-9a4a-2e16f6821760
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 2%
+source-wordcount: '132'
+ht-degree: 0%
 
 ---
-
 
 # Introduzione
 
@@ -24,7 +25,7 @@ In genere, i clienti comprimerebbero gli allegati del modulo o li invierebbero c
 
 ## Inviare gli allegati del modulo in un file zip
 
-Per eseguire il caso d’uso è stato scritto un passaggio del processo di flusso di lavoro personalizzato. In questo passaggio del processo personalizzato, viene creato e memorizzato un file zip con gli allegati del modulo in creato e memorizzato nella cartella payload in un file denominato *zip_attachment.zip*
+Per eseguire il caso d’uso è stato scritto un passaggio del processo di flusso di lavoro personalizzato. In questo passaggio del processo personalizzato, un file zip con gli allegati del modulo in creato e memorizzato sotto la cartella payload in un file denominato *zip_attachment.zip*
 
 ![allegati di moduli di invio](assets/send-form-attachments.JPG)
 
@@ -33,6 +34,3 @@ Per eseguire il caso d’uso è stato scritto un passaggio del processo di fluss
 Per eseguire questo caso d’uso è stato scritto un passaggio di processo di flusso di lavoro personalizzato. In questo passaggio del processo personalizzato vengono compilate le variabili del flusso di lavoro di tipo ArrayList of Documents e ArrayList of Strings.
 
 ![invia elenco dei documenti](assets/send-list-of-documents.JPG)
-
-
-

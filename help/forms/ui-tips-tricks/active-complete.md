@@ -8,10 +8,12 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9359
-source-git-commit: bbb2c352e8a4297496f248bbbc86252ac7118999
+exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -48,7 +50,7 @@ Assicurati di essere nello stato Attivo e di assegnare le seguenti proprietà CS
 | Testo | Colore | #FFF |
 | Testo | Altezza riga | 3 |
 | Testo | Allineamento testo | Sinistra |
-| Sfondo | Colore | #056dae |
+| Informazioni di base | Colore | #056dae |
 
 Assegna uno stile all’immagine di sfondo come mostrato nella schermata sottostante
 
@@ -69,7 +71,7 @@ Assicurati di essere nello stato visitato e di assegnare le seguenti proprietà
 | Testo | Colore | #FFF |
 | Testo | Altezza riga | 3 |
 | Testo | Allineamento testo | Sinistra |
-| Sfondo | Colore | #056dae |
+| Informazioni di base | Colore | #056dae |
 
 Assegna uno stile all’immagine di sfondo come mostrato nella schermata sottostante
 

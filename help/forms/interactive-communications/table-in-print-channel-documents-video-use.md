@@ -1,23 +1,24 @@
 ---
 title: Utilizzo del componente Tabella nel documento del canale di stampa AEM Forms
-seo-title: Utilizzo del componente Tabella nel documento del canale di stampa AEM Forms
+seo-title: Using Table Component in AEM Forms Print Channel Document
 description: Il video seguente illustra i passaggi necessari per utilizzare il componente tabella nelle comunicazioni interattive per la stampa dei documenti del canale.
-feature: Comunicazione interattiva
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: technical video
 activity: implement
 version: 6.4,6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 54afd047-c6e6-4557-9336-39420f30df88
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 1%
+source-wordcount: '267'
+ht-degree: 0%
 
 ---
-
 
 # Utilizzo del componente Tabella nel documento del canale di stampa AEM Forms {#using-table-component-in-aem-forms-print-channel-document}
 
@@ -52,4 +53,3 @@ Le tabelle vengono utilizzate per visualizzare i dati in modo tabulare. Le righe
 * Eseguire un binding delle celle della tabella con gli elementi del modello dati modulo appropriati, come illustrato nel video
 
 * Anteprima del documento di comunicazione interattiva con il file di dati json di esempio fornito all’utente
-

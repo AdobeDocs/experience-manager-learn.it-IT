@@ -1,7 +1,7 @@
 ---
-title: Gestire l’invio di moduli HTML5
-description: Crea handler per l’invio di moduli HTML5
-feature: Forms Mobile
+title: Gestisci invio modulo HTML5
+description: Crea gestore di invio del modulo HTML5
+feature: Mobile Forms
 topics: development
 audience: developer
 doc-type: article
@@ -9,26 +9,27 @@ activity: implement
 version: 6.4,6.5
 kt: 5269
 thumbnail: kt-5269.jpg
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 93e1262b-0e93-4ba8-aafc-f9c517688ce9
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 2%
+source-wordcount: '275'
+ht-degree: 3%
 
 ---
 
+# Gestisci invio modulo HTML5
 
-# Gestire l’invio di moduli HTML5
-
-I moduli HTML5 possono essere inviati al servlet ospitato in AEM. I dati inviati sono accessibili nel servlet come flusso di input. Per inviare il modulo HTML5 è necessario aggiungere il pulsante &quot;Invia per HTTP&quot; al modello di modulo utilizzando AEM Forms Designer
+È possibile inviare i moduli di HTML5 al servlet ospitato in AEM. I dati inviati sono accessibili nel servlet come flusso di input. Per inviare il modulo HTML5 è necessario aggiungere il pulsante &quot;Invia per HTTP&quot; al modello di modulo utilizzando AEM Forms Designer
 
 ## Creare il gestore di invio
 
-È possibile creare un semplice servlet per gestire l’invio del modulo HTML5. I dati inviati possono quindi essere estratti utilizzando il seguente codice. Questo [servlet](assets/html5-submit-handler.zip) è disponibile come parte di questa esercitazione. Installa il [servlet](assets/html5-submit-handler.zip) utilizzando [package manager](http://localhost:4502/crx/packmgr/index.jsp)
+È possibile creare un semplice servlet per gestire l’invio del modulo HTML5. I dati inviati possono quindi essere estratti utilizzando il seguente codice. Questo [servlet](assets/html5-submit-handler.zip) è disponibile come parte di questa esercitazione. Installa il [servlet](assets/html5-submit-handler.zip) utilizzo [gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 
-Il codice della riga 9 può essere utilizzato per richiamare il processo J2EE. Assicurati di aver configurato la [configurazione Adobe LiveCycle Client SDK](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) se intendi usare il codice per richiamare il processo J2EE.
+Il codice della riga 9 può essere utilizzato per richiamare il processo J2EE. Assicurati di aver configurato [Configurazione Adobe LiveCycle Client SDK](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) se si intende utilizzare il codice per richiamare il processo J2EE.
 
 ```java
 StringBuffer stringBuffer = new StringBuffer();
@@ -64,7 +65,7 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 * Tocca l’xdp e fai clic su _Proprietà_->_Avanzate_
 * copia http://localhost:4502/content/AemFormsSamples/handlehml5formsubmission.html e incolla questo nel campo di testo Invia URL
-* Fare clic sul pulsante _SaveAndClose_ .
+* Fai clic su _SaveAndClose_ pulsante .
 
 ### Aggiungi una voce nei percorsi di esclusione
 
@@ -77,14 +78,10 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 ### Verificare il modulo
 
 * Tocca il modello xdp.
-* Fare clic su _Anteprima_->Anteprima come HTML
+* Fai clic su _Anteprima_->Anteprima come HTML
 * Immettere alcuni dati nel modulo e fare clic su Invia
 * Dovresti vedere i dati inviati scritti nel file stdout.log del tuo server
 
 ### Lettura aggiuntiva
 
-È inoltre consigliato questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) sulla generazione di PDF dall’invio di moduli HTML5.
-
-
-
-
+Questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) si consiglia inoltre di generare PDF dall’invio di moduli di HTML5.

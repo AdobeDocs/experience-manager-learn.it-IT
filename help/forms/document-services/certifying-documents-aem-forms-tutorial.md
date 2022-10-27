@@ -1,24 +1,25 @@
 ---
 title: Certificazione del documento in AEM Forms
-description: Utilizzo del servizio DocAssurance per la certificazione di documenti PDF in AEM Forms
+description: Utilizzo del servizio DocAssurance per la certificazione dei documenti PDF in AEM Forms
 feature: Document Security
 version: 6.4,6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 1471929f-d269-4adc-88ad-2ad3682305e1
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 0%
+source-wordcount: '400'
+ht-degree: 1%
 
 ---
 
-
 # Certificazione del documento in AEM Forms
 
-Un documento certificato fornisce ai destinatari di documenti PDF e moduli ulteriori garanzie di autenticità e integrità.
+Un documento certificato fornisce ai destinatari dei documenti e dei moduli di PDF garanzie aggiuntive sulla loro autenticità e integrità.
 
-Per certificare un documento, puoi utilizzare Acrobat DC sul desktop o AEM Forms Document Services come parte di un processo automatizzato su un server.
+Per certificare un documento, è possibile utilizzare Acrobat DC sul desktop o AEM Forms Document Services come parte di un processo automatizzato su un server.
 
 Questo articolo fornisce un esempio di bundle OSGI per certificare documenti pdf utilizzando AEM Forms Document Services.Il codice utilizzato nel campione è [disponibile qui](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
 
@@ -29,7 +30,7 @@ Per certificare i documenti utilizzando AEM Forms, è necessario seguire i segue
 Segui i passaggi indicati di seguito per aggiungere il certificato al keystore in AEM
 
 * [Inizializza archivio di attendibilità globale](http://localhost:4502/libs/granite/security/content/truststore.html)
-* [Cerca fd-](http://localhost:4502/security/users.html) serviceuser
+* [Ricerca di fd-service](http://localhost:4502/security/users.html) user
 * **Sarà necessario scorrere la pagina dei risultati per caricare tutti gli utenti per trovare l&#39;utente del servizio fd**
 * Fare doppio clic sull&#39;utente del servizio fd per aprire la finestra delle impostazioni utente
 * Fai clic su &quot;Aggiungi chiave privata dal file del keystore&quot;.Specifica l&#39;alias e la password specifici del certificato
@@ -38,7 +39,7 @@ Segui i passaggi indicati di seguito per aggiungere il certificato al keystore i
 
 ## Creazione del servizio OSGI
 
-Puoi scrivere il tuo bundle OSGi e usare l&#39;SDK client di AEM Forms per implementare un servizio per certificare i documenti PDF. I seguenti collegamenti sarebbero utili per scrivere il tuo bundle OSGi
+Puoi scrivere il tuo bundle OSGi e utilizzare l’SDK client di AEM Forms per implementare un servizio per la certificazione dei documenti PDF. I seguenti collegamenti sarebbero utili per scrivere il tuo bundle OSGi
 
 * [Creazione del primo bundle OSGi](https://helpx.adobe.com/experience-manager/using/maven_arch13.html)
 * [Utilizzare l’API di Document Service](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
@@ -55,14 +56,12 @@ Oppure puoi utilizzare il bundle di esempio incluso come parte di questa esercit
 * Scarica e installa [Sviluppo con Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [Assicurati di aver aggiunto la seguente voce nel servizio User Mapper di Apache Sling Service](http://localhost:4502/system/console/configMgr)
 
-   **DevelopingWithServiceUser.core:getformsresourceresolver=fd-** servicecome mostrato nella schermata seguente
+   **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** come mostrato nella schermata seguente
    ![User-Mapper](assets/user-mapper-service.PNG)
 * [Importa modulo adattivo di esempio](assets/certify-pdf-af.zip)
 * [Importare e installare l’invio personalizzato](assets/custom-submit-certify.zip)
 * [Apri il modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/certifypdf/jcr:content?wcmmode=disabled)
-* Carica un documento PDF che deve essere certificato
-   **facoltativo** : specifica il campo firma da utilizzare per la certificazione del documento.
+* Carica il documento PDF che deve essere certificato
+   **facoltativo** - Specificare il campo firma da utilizzare per la certificazione del documento
 * Fare clic su Invia.
-* Il PDF certificato deve essere restituito all&#39;utente.
-
-
+* È necessario restituire PDF certificato.

@@ -1,22 +1,23 @@
 ---
 title: Utilizzo del servizio Assembler in AEM Forms
 description: Utilizzo del servizio Assembler in AEM Forms per assemblare più file pdf
-feature: Assemblatore
+feature: Assembler
 version: 6.4,6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 18da12ea-b1ea-48e4-979e-3cb59584dfbd
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 3%
+source-wordcount: '207'
+ht-degree: 2%
 
 ---
 
-
 # Utilizzo del servizio Assembler in AEM Forms{#using-assembler-service-in-aem-forms}
 
-Questo articolo fornisce le risorse per dimostrare la capacità di trascinare e rilasciare più file PDF nel browser e salvare il file pdf assemblato sul tuo file system. Di seguito è riportato il codice del servlet che assembla i file pdf caricati utilizzando il browser.
+Questo articolo fornisce le risorse per dimostrare la capacità di trascinare e rilasciare più file PDF nel browser e salvare il file pdf assemblato nel file system. Di seguito è riportato il codice del servlet che assembla i file pdf caricati utilizzando il browser.
 
 ```java
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
@@ -101,32 +102,25 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 Per far funzionare questa funzionalità sul server AEM
 
-* Scarica il file [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) nel sistema locale.
-* Carica e installa il pacchetto utilizzando il [gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
-* Download[Bundle servizi documenti personalizzati](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* Scarica la [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) al sistema locale.
+* Carica e installa il pacchetto utilizzando [gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+* Scarica[Bundle servizi documenti personalizzati](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * Scarica [Sviluppo con Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* Distribuisci e avvia i bundle utilizzando la [console web felix](http://localhost:4502/system/console/bundles)
+* Distribuisci e avvia i bundle utilizzando [console web felix](http://localhost:4502/system/console/bundles)
 * Posiziona il browser su [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
-* Trascinare un paio di file PDF
+* Trascinare un paio di file di PDF
 
 >[!NOTE]
 >
 >Assicurati che l&#39;installazione di AEM Forms sia completa. Tutti i tuoi bundle devono essere in stato attivo.
 >
->Assicurati di aver aggiunto - Avvia le librerie RSA e BouncyCastle come indicato in questo [Installazione di AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>Assicurati di aver aggiunto le librerie RSA e BouncyCastle delegate - come indicato in questo [Installazione di AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
 >**Avvertenze per questa demo**
 >
 > * Il codice non gestisce documenti PDF basati su XFA
-   >
-   > 
-* Assicurati di trascinare e rilasciare solo i file PDF
+>
+> * Assicurati di trascinare e rilasciare solo i file PDF
 >
 >
-
-
-
-
-
-
 

@@ -1,18 +1,19 @@
 ---
 title: Modifica le impostazioni di configurazione dell'origine dati.
 description: Modifica il nome host e altre impostazioni in Impostazioni di configurazione dell'origine dati.
-feature: Moduli adattivi
+feature: Adaptive Forms
 version: 6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 6c63787c-e511-4764-9a03-2c85c394bcc0
+last-substantial-update: 2019-06-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 2%
+source-wordcount: '139'
+ht-degree: 0%
 
 ---
-
 
 # Possibilità di modificare le impostazioni di configurazione dell&#39;origine dati{#ability-to-modify-data-source-configuration-settings}
 
@@ -24,7 +25,6 @@ Le schermate seguenti mostrano le impostazioni di configurazione dell’origine 
 
 **Configurazione dell’origine dati in AEM 6.4**
 
-![Configurazione ](assets/64release.gif)
-**dell&#39;origine dati 64DataSourceConfigurazione dell&#39;origine dati modificabile in AEM 6.5 e versioni successive**
-![65Configurazione dell&#39;origine dati](assets/modifiabledatasource.jfif)
-
+![Configurazione 64DataSource](assets/64release.gif)
+**Configurazione dell’origine dati modificabile in AEM 6.5 e versioni successive**
+![Configurazione 65DataSource](assets/modifiabledatasource.jfif)
