@@ -11,9 +11,9 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: 7c246c4f1af9dfe599485f68508c66fe29d2f0b6
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Sono disponibili tre modifiche di configurazione relative al progetto e una modi
 
 1. Preparare `ui.frontend` modulo per il contratto della pipeline front-end aggiungendo due nuovi file di configurazione del webpack.
 
-   * Copia l&#39;esistente `webpack.common.js` come `webpack.theme.common.js`, modifica `output` proprietà e `MiniCssExtractPlugin`, `CopyWebpackPlugin` parametri di configurazione plugin come segue:
+   * Copia l&#39;esistente `webpack.common.js` come `webpack.theme.common.js`e modifica `output` proprietà e `MiniCssExtractPlugin`, `CopyWebpackPlugin` parametri di configurazione plugin come segue:
 
    ```javascript
    ...
@@ -89,7 +89,7 @@ Sono disponibili tre modifiche di configurazione relative al progetto e una modi
    
    ...
        new MiniCssExtractPlugin({
-               filename: 'clientlib-[name]/[name].css'
+               filename: 'theme/[name].css'
            }),
        new CopyWebpackPlugin({
            patterns: [
@@ -134,7 +134,7 @@ Sono disponibili tre modifiche di configurazione relative al progetto e una modi
 
 1. Preparare `ui.content` modulo per la pipeline front-end aggiungendo due configurazioni Sling.
 
-   * Crea un nuovo file in `com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig` - include tutti i file front-end che il `ui.frontend` il modulo genera sotto `dist` utilizzando il processo di creazione del webpack.
+   * Crea un file in `com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig` - include tutti i file front-end che il `ui.frontend` il modulo genera sotto `dist` utilizzando il processo di creazione del webpack.
 
    ```xml
    ...
@@ -192,7 +192,15 @@ Infine, invia queste modifiche all’archivio Git Adobe del tuo programma.
 > Queste modifiche sono disponibili su GitHub all’interno di [__tubazione front-end__](https://github.com/adobe/aem-guides-wknd/tree/feature/frontend-pipeline) della filiale __AEM progetto WKND Sites__.
 
 
-## Congratulazioni! {#congratulations}
+## Attenzione - _Abilita pipeline front-end_ pulsante
+
+La [Selettore della barra](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) s [Sito](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) mostra l’opzione **Abilita pipeline front-end** selezionando la directory principale del sito o la pagina del sito. Clic **Abilita pipeline front-end** il pulsante sovrascriverà quanto sopra **Configurazioni Sling**, assicurati **non fai clic su** questo pulsante dopo aver distribuito le modifiche precedenti tramite l’esecuzione della pipeline di Cloud Manager.
+
+![Pulsante Abilita pipeline front-end](assets/enable-front-end-Pipeline-button.png)
+
+Se viene selezionato per errore, è necessario eseguire nuovamente le pipeline per assicurarsi che il contratto di pipeline front-end e le modifiche vengano ripristinate.
+
+## Congratulazioni.  {#congratulations}
 
 Congratulazioni, hai aggiornato il progetto WKND Sites per abilitarlo per il contratto di pipeline front-end.
 
