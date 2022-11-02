@@ -7,10 +7,10 @@ sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
 kt: 2963
 index: y
-source-git-commit: 74510a4b075d2dba9b3f27018ba05f15dcad9562
+source-git-commit: a21b78456354c18ad137e69a5d18258d652169b1
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 20%
+source-wordcount: '271'
+ht-degree: 19%
 
 ---
 
@@ -109,6 +109,7 @@ ht-degree: 20%
    + [7 - Utilizzo di AEM Content Services da un’app mobile](./content-services/chapter-7.md)
 + Esempi di codice {#code-samples}
    + [App React di filtraggio](./graphql/code-samples/filtering-react-app.md)
+   + [Applicazione Preact di filtro](./graphql/code-samples/filtering-preact-app.md)
    + [Applicazione Angular di filtro](./graphql/code-samples/filtering-angular-app.md)
    + [Applicazione Vue filtro](./graphql/code-samples/filtering-vue-app.md)
    + [Filtraggio con jQuery e Handlebars](./graphql/code-samples/filtering-jquery-handlebars.md)
