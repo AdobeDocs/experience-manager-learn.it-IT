@@ -8,7 +8,7 @@ audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -29,13 +29,13 @@ I moduli sono creati con Acrobat. È possibile creare un nuovo modulo da zero ut
 
 >[!NOTE]
 >
->Se desideri inviare l’acromodulo compilabile per la firma utilizzando Adobe Sign, dai un nome ai campi di conseguenza. Ad esempio, è possibile denominare un campo **Sig_es_:signer1:signature**. Sintassi comprensibile da Adobe Sign.
+>Se desideri inviare l’acromodulo compilabile per la firma utilizzando Acrobat Sign, dai un nome ai campi di conseguenza. Ad esempio, è possibile denominare un campo **Sig_es_:signer1:signature**. Sintassi comprensibile da Acrobat Sign.
 
 >[!NOTE]
 >
->Se si invia un documento basato su XFA, è necessario appiattire il documento e i tag firma Adobe Sign devono essere presenti come testo statico nel documento.
+>Se si invia un documento basato su XFA, è necessario appiattire il documento e i tag firma Acrobat Sign devono essere presenti come testo statico nel documento.
 
-[Documento sui tag di testo di Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html)
+[Documento sui tag di testo di Acrobat Sign](https://helpx.adobe.com/sign/using/text-tag.html)
 
 >[!NOTE]
 >

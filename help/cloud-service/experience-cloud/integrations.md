@@ -11,7 +11,7 @@ thumbnail: KT-10718.png
 last-substantial-update: 2022-10-02T00:00:00Z
 mini-toc-levels: 1
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 13%
@@ -45,7 +45,7 @@ Fai clic sul prodotto Experience Cloud per la documentazione su come configurare
 
 ## Adobe Acrobat Sign
 
-Adobe Acrobat Sign (precedentemente Adobe Sign) abilita i flussi di lavoro di firma elettronica per i moduli adattivi di AEM Forms, migliorando i flussi di lavoro per elaborare i documenti per questioni legali, di vendita, retribuzioni, risorse umane e altre aree.
+Adobe Acrobat Sign (precedentemente Acrobat Sign) abilita i flussi di lavoro di firma elettronica per i moduli adattivi di AEM Forms, migliorando i flussi di lavoro per elaborare i documenti per questioni legali, di vendita, retribuzioni, risorse umane e altre aree.
 
 ### AEM Forms
 

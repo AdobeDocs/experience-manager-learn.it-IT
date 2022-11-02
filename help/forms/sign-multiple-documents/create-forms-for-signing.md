@@ -9,7 +9,7 @@ topic: Development
 role: User
 level: Beginner
 exl-id: 565d81a4-2918-44ea-a3e9-ed79f246f08a
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Il passaggio successivo consiste nel creare i moduli adattivi da includere nel p
 
 * Assicurati che i moduli siano basati sul **SignMultipleForms** modello. In questo modo i moduli vengono precompilati con i dati recuperati dal database.
 
-* I moduli devono essere configurati per utilizzare Adobe Sign e il campo firmatario1 deve essere associato al campo E-mail del cliente
+* I moduli devono essere configurati per utilizzare Acrobat Sign e il campo firmatario1 deve essere associato al campo E-mail del cliente
 * È inoltre necessario associare i moduli a clientLib **getnextform**
 * I moduli devono utilizzare il componente Passaggio firma .
 * Il modulo deve inoltre utilizzare **Firma multipla** componente. Questo componente consente di passare al modulo successivo per accedere al pacchetto.

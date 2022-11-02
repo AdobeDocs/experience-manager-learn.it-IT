@@ -1,13 +1,13 @@
 ---
 title: Acroformi con AEM Forms
-description: Esercitazione che illustra come creare un modulo adattivo utilizzando Acroform e come unire i dati per ottenere un PDF. È quindi possibile inviare il PDF con i dati uniti per la firma utilizzando Adobe Sign.
+description: Esercitazione che illustra come creare un modulo adattivo utilizzando Acroform e come unire i dati per ottenere un PDF. È quindi possibile inviare il PDF con i dati uniti per la firma utilizzando Acrobat Sign.
 feature: adaptive-forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Creazione di Forms adattivo da Acroforms
 
-Le organizzazioni hanno un&#39;ampia varietà di forme. Alcuni di questi moduli vengono creati in Microsoft Word e convertiti in PDF. Per impostazione predefinita, questi moduli non sono compilabili utilizzando Adobe Reader o Acrobat. Per rendere questi moduli compilabili utilizzando Acrobat o Reader, è necessario convertirli in Acroform. I moduli sono creati con Acrobat. Questo articolo illustra come creare un modulo adattivo da Acroform e come riunire i dati in Acroform per ottenere il PDF. È inoltre possibile inviare il PDF con i dati uniti per la firma tramite Adobe Sign.
+Le organizzazioni hanno un&#39;ampia varietà di forme. Alcuni di questi moduli vengono creati in Microsoft Word e convertiti in PDF. Per impostazione predefinita, questi moduli non sono compilabili utilizzando Adobe Reader o Acrobat. Per rendere questi moduli compilabili utilizzando Acrobat o Reader, è necessario convertirli in Acroform. I moduli sono creati con Acrobat. Questo articolo illustra come creare un modulo adattivo da Acroform e come riunire i dati in Acroform per ottenere il PDF. È inoltre possibile inviare il PDF con i dati uniti per la firma tramite Acrobat Sign.
 
 >[!NOTE]
 >

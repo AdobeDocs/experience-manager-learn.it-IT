@@ -1,16 +1,17 @@
 ---
 title: Invio di documenti per la firma tramite flusso di lavoro
 description: Invia documenti per la firma tramite flusso di lavoro. Crea un flusso di lavoro AEM utilizzando il componente del documento dei segni. Utilizzare l’oggetto DoR generato automaticamente per inviare le firme utilizzando il componente di firma. Il video illustra i vari passaggi necessari per creare un flusso di lavoro efficace per l’invio di documenti da firmare.
-feature: Forms adattivo, Adobe Sign
+feature: Adaptive Forms,Acrobat Sign
 thumbnail: 38182.jpg
 kt: 6035
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 20093733-2d19-4405-b453-1a8c2722adeb
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 1%
+source-wordcount: '90'
+ht-degree: 0%
 
 ---
 

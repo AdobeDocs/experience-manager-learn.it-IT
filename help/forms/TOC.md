@@ -7,7 +7,7 @@ breadcrumb-title: Tutorial su AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '1722'
 ht-degree: 3%
@@ -136,11 +136,11 @@ ht-degree: 3%
 + Moduli HTML5{#html5-forms}
    + [Crea modulo HTML5](html5-forms/create-html5-form.md)
    + [Gestisci invio modulo HTML5](html5-forms/handle-html5-form-submission.md)
-+ AEM Forms e Adobe Sign{#forms-and-sign}
++ AEM Forms e Acrobat Sign{#forms-and-sign}
    + [Introduzione](aem-forms-and-adobe-sign/introduction.md)
    + [Configurare SSL](aem-forms-and-adobe-sign/set-up-ssl.md)
-   + [Creare un’applicazione API Adobe Sign](aem-forms-and-adobe-sign/create-adobe-sign-api-application.md)
-   + [Creare la configurazione di Adobe Sign Cloud](aem-forms-and-adobe-sign/create-adobe-sign-cloud-configuration.md)
+   + [Creare un’applicazione API Acrobat Sign](aem-forms-and-adobe-sign/create-adobe-sign-api-application.md)
+   + [Creare la configurazione di Acrobat Sign Cloud](aem-forms-and-adobe-sign/create-adobe-sign-cloud-configuration.md)
    + [Crea flusso di lavoro per l’invio del documento per la firma](aem-forms-and-adobe-sign/create-workflow-to-send-document-for-signing.md)
    + [Creare e configurare un modulo adattivo](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
    + [Configurare un modulo adattivo per il singolo firmatario](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
@@ -148,7 +148,7 @@ ht-degree: 3%
    + [Configurare il servizio Automated forms conversion](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
    + [Convertire il modulo PDF in modulo adattivo](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Configurare il modulo adattivo convertito](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
-   + [Utilizzo dei modelli XDP con Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
+   + [Utilizzo dei modelli XDP con Acrobat Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
 + Sign Multiple Forms{#sign-multiple-documents}
    + [Introduzione](sign-multiple-documents/introduction.md)
    + [Configurare l’origine dati](sign-multiple-documents/configure-data-source.md)
