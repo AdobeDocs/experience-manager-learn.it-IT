@@ -1,7 +1,7 @@
 ---
 title: Comprendere Adobe Cloud Manager
 description: Adobe Cloud Manager fornisce una soluzione semplice ma solida che consente di gestire facilmente gli ambienti AEM, introdurre e self-service.
-sub-product: cloud-manager, foundation
+sub-product: Experience Manager Cloud Manager, Experience Manager
 topics: best-practices, cicd, development, operations, governance
 doc-type: feature video
 activity: understand
@@ -12,10 +12,10 @@ level: Beginner
 exl-id: 53279cbb-70c8-4319-b5bb-9a7d350a7f72
 last-substantial-update: 2022-05-10T00:00:00Z
 thumbnail: understand-cloud-manager.jpg
-source-git-commit: a156877ff4439ad21fb79f231d273b8983924199
+source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -68,7 +68,7 @@ La [Pipeline di produzione CI/CD](https://experienceleague.adobe.com/docs/experi
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314/?quality=12&learn=on)
 
-### Esecuzione della pipeline
+### Esecuzione delle pipeline
 
 La [Pipeline di produzione CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) viene utilizzato per generare e distribuire il codice attraverso Stage nell&#39;ambiente di produzione, riducendo il tempo a valore.
 

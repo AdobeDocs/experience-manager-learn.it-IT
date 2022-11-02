@@ -2,7 +2,7 @@
 title: Comprendere la condivisione delle risorse tra le origini (CORS, Cross Origin Resource Sharing) con AEM
 description: La condivisione delle risorse tra le origini di Adobe Experience Manager (Cross-Origin Resource Sharing, CORS) consente di effettuare chiamate lato client a AEM, autenticate e non autenticate, per recuperare contenuti o interagire direttamente con AEM.
 version: 6.4, 6.5
-sub-product: foundation, content-services, sites
+sub-product: Experience Manager, Experience Manager Sites
 topics: security, development, content-delivery
 activity: understand
 audience: architect, developer
@@ -11,7 +11,7 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 1%
@@ -129,7 +129,7 @@ A partire da Dispatcher 4.1.1+ le intestazioni di risposta possono essere memori
 
 Generalmente, le stesse considerazioni per la memorizzazione in cache del contenuto in Dispatcher possono essere applicate alla memorizzazione in cache delle intestazioni di risposta CORS sul dispatcher. La tabella seguente definisce quando [!DNL CORS] intestazioni (e quindi [!DNL CORS] richieste) possono essere memorizzate nella cache.
 
-| In cache | di authoring | Stato di autenticazione | Spiegazione |
+| In cache | Ambiente | Stato di autenticazione | Spiegazione |
 |-----------|-------------|-----------------------|-------------|
 | No | AEM Publish | Autenticato | Il caching del Dispatcher su AEM Author è limitato alle risorse statiche e non create. Questo rende difficile e poco pratico memorizzare nella cache la maggior parte delle risorse su AEM Author, comprese le intestazioni di risposta HTTP. |
 | No | Pubblicazione AEM | Autenticato | Evita di memorizzare in cache le intestazioni CORS sulle richieste autenticate. Questo si allinea alle linee guida comuni per non memorizzare in cache le richieste autenticate, in quanto è difficile determinare in che modo lo stato di autenticazione/autorizzazione dell’utente richiedente influirà sulla risorsa consegnata. |

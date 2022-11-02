@@ -2,9 +2,9 @@
 user-guide-title: Video e tutorial su AEM Foundation
 breadcrumb-title: Tutorial su AEM Foundation
 user-guide-description: Raccolta di video e tutorial su Adobe Experience Manager Foundation.
-sub-product: foundation
+sub-product: Experience Manager
 index: y
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 14%
