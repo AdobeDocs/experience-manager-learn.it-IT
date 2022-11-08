@@ -9,9 +9,9 @@ role: Developer
 level: Beginner
 kt: 11374
 last-substantial-update: 2022-11-01T00:00:00Z
-source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
+source-git-commit: 4af14b7d72ebdbea04e68a9a64afa1a96d1c1aeb
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '177'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,11 @@ L’esempio incluso in questo articolo utilizza una varietà di origini dati (ar
 
 Il codice utilizzato per eseguire la funzionalità di completamento automatico è associato all’evento initialize del campo .
 
-
-## Suggerimenti per il nome del paese
-
-![suggerimenti per il paese](assets/auto-complete1.png)
-
 ## Suggerimento per l&#39;indirizzo
 
 ![suggerimenti per il paese](assets/auto-complete2.png)
+
+
 
 Di seguito è riportato il codice utilizzato per fornire suggerimenti sull&#39;indirizzo della strada
 
@@ -60,6 +57,10 @@ $(".streetAddress input").autocomplete({
 
 });
 ```
+
+
+
+
 
 ## Suggerimenti con emoji
 
