@@ -7,9 +7,9 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
-source-git-commit: 7631432881de3deabbe831b2aec40d924b393442
+source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '1989'
 ht-degree: 1%
 
 ---
@@ -20,8 +20,8 @@ Questo capitolo descrive i passaggi necessari per creare cinque modelli di framm
 
 * **Informazioni di contatto**
 * **Indirizzo**
-* **Person**
-* **Posizione**
+* **Utente**
+* **Dove si trova**
 * **Team**
 
 I modelli di frammento di contenuto consentono di definire relazioni tra i tipi di contenuto e di mantenere relazioni come gli schemi. Utilizza i riferimenti ai frammenti nidificati, vari tipi di dati relativi al contenuto e il tipo di scheda per l’organizzazione dei contenuti visivi. Tipi di dati più avanzati, ad esempio segnaposto per schede, riferimenti a frammenti, oggetti JSON e il tipo di dati data e ora.
@@ -30,7 +30,7 @@ Questo capitolo illustra anche come migliorare le regole di convalida per i rife
 
 ## Prerequisiti {#prerequisites}
 
-Questa è un&#39;esercitazione avanzata. Prima di procedere con questo capitolo, assicurati di aver completato il [configurazione rapida](../quick-setup/cloud-service.md). Per ulteriori informazioni sulla configurazione dell’esercitazione avanzata, consulta anche il capitolo precedente sulla panoramica.
+Questa è un&#39;esercitazione avanzata. Prima di procedere con questo capitolo, assicurati di aver completato il [configurazione rapida](../quick-setup/cloud-service.md). Assicurati di aver letto anche il precedente [panoramica](../overview.md) per ulteriori informazioni sulla configurazione dell’esercitazione avanzata.
 
 ## Obiettivi {#objectives}
 
@@ -48,11 +48,11 @@ Il video seguente fornisce una breve introduzione ai modelli di frammento di con
 
 Creiamo alcuni modelli di frammenti di contenuto per l’app WKND. Se hai bisogno di un’introduzione di base alla creazione di modelli di frammenti di contenuto, consulta il capitolo appropriato nella sezione [esercitazione di base](../multi-step/content-fragment-models.md).
 
-1. Passa a **Strumenti** > **Risorse** > **Modelli per frammenti di contenuto**.
+1. Passa a **Strumenti** > **Generale** > **Modelli per frammenti di contenuto**.
 
    ![Percorso dei modelli di frammenti di contenuto](assets/define-content-fragment-models/content-fragment-models-path.png)
 
-1. Seleziona **Sito WKND** per visualizzare l’elenco dei modelli di frammento di contenuto esistenti per il sito.
+1. Seleziona **WKND condiviso** per visualizzare l’elenco dei modelli di frammento di contenuto esistenti per il sito.
 
 ### Modello informazioni contatto {#contact-info-model}
 
@@ -78,11 +78,9 @@ Al termine, seleziona **Salva** per confermare le modifiche e chiudere l’Edito
 
 Quindi, crea un modello per un indirizzo.
 
-1. Da **Sito WKND**, seleziona **Crea** dall&#39;angolo in alto a destra.
+1. Da **WKND condiviso**, seleziona **Crea** dall&#39;angolo in alto a destra.
 
-1. Inserisci un titolo di &quot;Indirizzo&quot; e seleziona **Crea**.
-
-   i. Nella finestra modale di successo visualizzata, seleziona **Apri** per modificare il modello appena creato.
+1. Inserisci un titolo di &quot;Indirizzo&quot; e seleziona **Crea**. Nella finestra modale di successo visualizzata, seleziona **Apri** per modificare il modello appena creato.
 
 1. Trascina e rilascia una **Testo a riga singola** sul modello e fornirgli un **Etichetta campo** di &quot;Street Address&quot;. Il nome della proprietà viene quindi compilato come `streetAddress`. Seleziona la **Obbligatorio** casella di controllo.
 
@@ -114,7 +112,7 @@ Quindi, crea un modello che contenga informazioni su una persona.
 
 1. In **Proprietà** nella scheda **Modelli di frammenti di contenuto consentiti** , seleziona l’icona della cartella e scegli il **Informazioni contatto** modello di frammento creato in precedenza.
 
-1. Aggiungi un **Riferimento contenuto** e fornisci un **Etichetta campo** di &quot;Immagine profilo&quot;. Seleziona l’icona della cartella sotto **Percorso radice** per aprire il modale di selezione del percorso. Selezionare un percorso principale selezionando **content** > **Risorse**, quindi selezionando la casella di controllo **Sito WKND**. Utilizza la **Seleziona** in alto a destra per salvare il percorso. Il percorso di testo finale deve essere letto `/content/dam/wknd`.
+1. Aggiungi un **Riferimento contenuto** e fornisci un **Etichetta campo** di &quot;Immagine profilo&quot;. Seleziona l’icona della cartella sotto **Percorso radice** per aprire il modale di selezione del percorso. Selezionare un percorso principale selezionando **content** > **Risorse**, quindi selezionando la casella di controllo **WKND condiviso**. Utilizza la **Seleziona** in alto a destra per salvare il percorso. Il percorso di testo finale deve essere letto `/content/dam/wknd-shared`.
 
    ![Percorso principale di riferimento del contenuto](assets/define-content-fragment-models/content-reference-root-path.png)
 
@@ -129,18 +127,19 @@ Quindi, crea un modello che contenga informazioni su una persona.
 
 1. Per **Max**, immetti &quot;5&quot; e per **Seleziona unità**, selezionare &quot;Megabyte (MB)&quot;. Questa convalida consente di scegliere solo le immagini con la dimensione specificata.
 
-1. Sotto **Accetta solo la larghezza dell’immagine specificata**, selezionare &quot;Larghezza massima&quot;. In **Max (pixel)** campo visualizzato, immettere &quot;500&quot;. Seleziona le stesse opzioni per **Accettare solo un&#39;altezza immagine specificata**.
+1. Sotto **Accetta solo la larghezza dell’immagine specificata**, selezionare &quot;Larghezza massima&quot;. In **Max (pixel)** campo visualizzato, immettere &quot;10000&quot;. Seleziona le stesse opzioni per **Accettare solo un&#39;altezza immagine specificata**.
 
    Queste convalide garantiscono che le immagini aggiunte non superino i valori specificati. A questo punto le regole di convalida devono avere l&#39;aspetto seguente:
+
    ![Regole di convalida dei riferimenti ai contenuti](assets/define-content-fragment-models/content-reference-validation.png)
 
 1. Aggiungi un **Testo a più righe** e fornisci un **Etichetta campo** di &quot;Biografia&quot;. Lascia la **Tipo predefinito** come opzione &quot;Rich Text&quot; predefinita.
 
    ![Opzioni di biografia](assets/define-content-fragment-models/biography.png)
 
-1. Passa a **Tipi di dati** , quindi trascina un **Enumerazione** campo sotto &quot;Immagine profilo&quot;. Invece del valore predefinito **Rendering come** seleziona **Elenco a discesa**. Inserisci una selezione di opzioni a livello di esperienza istruttore come Esperto, Avanzato, Intermedio.
+1. Passa a **Tipi di dati** , quindi trascina un **Enumerazione** campo sotto &quot;Biografia&quot;. Invece del valore predefinito **Rendering come** seleziona **Elenco a discesa** e gli darai un **Etichetta campo** di &quot;Livello di esperienza istruttore&quot;. Immettere una selezione di opzioni per il livello di esperienza dell&#39;istruttore, ad esempio _Esperto, Avanzato, Intermedio_.
 
-1. Quindi, trascina un altro **Enumerazione** in &quot;Livello esperienza istruttore&quot; e scegliere &quot;caselle di controllo&quot; sotto **Rendering come** opzione . Entra in diverse abilità come Rock Climbing, Surfing, Cycling, Sci, e Backpackaging. L’etichetta dell’opzione e il valore dell’opzione devono corrispondere come segue:
+1. Quindi, trascina un altro **Enumerazione** in &quot;Livello esperienza istruttore&quot; e scegliere &quot;caselle di controllo&quot; sotto **Rendering come** opzione . Dagli un **Etichetta campo** di &quot;Abilità&quot;. Entra in diverse abilità come Rock Climbing, Surfing, Cycling, Sci, e Backpackaging. L’etichetta dell’opzione e il valore dell’opzione devono corrispondere come segue:
 
    ![Enumerazione delle competenze](assets/define-content-fragment-models/skills-enum.png)
 
@@ -160,7 +159,7 @@ Il successivo modello di frammento di contenuto descrive una posizione fisica. Q
 
 1. Quindi, aggiungi un **Riferimento frammento** campo ed etichetta &quot;Informazioni di contatto&quot;. Nella scheda delle proprietà, in **Modelli di frammenti di contenuto consentiti**, seleziona **Icona della cartella** e scegliere il modello di frammento &quot;Informazioni contatto&quot; creato in precedenza.
 
-1. Aggiungi un **Riferimento contenuto** campo &quot;Informazioni di contatto&quot;. Etichettalo &quot;Immagine posizione&quot;. La **Percorso radice** devono `/content/dam/wknd.` Sotto **Accetta solo tipi di contenuto specificati**, seleziona &quot;Immagine&quot;.
+1. Aggiungi un **Riferimento contenuto** campo &quot;Informazioni di contatto&quot;. Etichettalo &quot;Immagine posizione&quot;. La **Percorso radice** devono `/content/dam/wknd-shared.` Sotto **Accetta solo tipi di contenuto specificati**, seleziona &quot;Immagine&quot;.
 
 1. Aggiungiamo anche un **Oggetto JSON** sotto il campo &quot;Immagine posizione&quot;. Poiché questo tipo di dati è flessibile, può essere utilizzato per visualizzare tutti i dati che desideri includere nel contenuto. In questo caso, l’oggetto JSON viene utilizzato per visualizzare informazioni sul tempo. Etichettare l’oggetto JSON &quot;Meteo per stagione&quot;. In **Proprietà** aggiungi una scheda **Descrizione** quindi è chiaro all&#39;utente quali dati inserire qui: &quot;Dati JSON relativi alla posizione dell’evento meteo per stagione (primavera, estate, autunno, inverno).&quot;
 
@@ -168,7 +167,7 @@ Il successivo modello di frammento di contenuto descrive una posizione fisica. Q
 
 1. Per creare la scheda Indirizzo posizione , aggiungi un **Segnaposto Tabulazione** sul modello e etichettarlo &quot;Location Address&quot;.
 
-1. Trascina e rilascia una **Riferimento frammento** e dalla scheda proprietà, in **Modelli di frammenti di contenuto consentiti**, seleziona **Indirizzo** modello.
+1. Trascina e rilascia una **Riferimento frammento** campo e dalla scheda proprietà, etichettarlo come &quot;Indirizzo&quot; e sotto **Modelli di frammenti di contenuto consentiti**, seleziona **Indirizzo** modello.
 
 1. Seleziona **Salva** per confermare le modifiche e chiudere l’Editor modello frammento di contenuto. Il modello di posizione completato deve essere visualizzato come segue:
 
@@ -178,7 +177,7 @@ Il successivo modello di frammento di contenuto descrive una posizione fisica. Q
 
 Infine, crea un modello che descrive un team di persone.
 
-1. Da **Sito WKND** pagina, seleziona **Crea** per creare un altro modello di frammento di contenuto. Per Titolo modello, immetti &quot;Team&quot;. Come in precedenza, seleziona **Crea** seguito da **Apri** nel modale di successo visualizzato.
+1. Da **WKND condiviso** pagina, seleziona **Crea** per creare un altro modello di frammento di contenuto. Per Titolo modello, immetti &quot;Team&quot;. Come in precedenza, seleziona **Crea** seguito da **Apri** nel modale di successo visualizzato.
 
 1. Aggiungi un **Testo a più righe** al modulo. Sotto **Etichetta campo**, inserisci &quot;Descrizione&quot;.
 
@@ -186,7 +185,7 @@ Infine, crea un modello che descrive un team di persone.
 
    ![Opzioni data e ora](assets/define-content-fragment-models/date-and-time.png)
 
-1. Passa a **Tipi di dati** scheda . Sotto &quot;Data di fondazione del team&quot;, aggiungi un **Riferimento frammento**. In **Rendering come** a discesa, seleziona &quot;multicampo&quot;. Per **Etichetta campo**, immetti &quot;Membri del team&quot;. Questo campo si collega al modello Persona creato in precedenza. Poiché il tipo di dati è un campo multiplo, è possibile aggiungere più frammenti Persona, consentendo la creazione di un team di persone.
+1. Passa a **Tipi di dati** scheda . Sotto &quot;Data di fondazione del team&quot;, aggiungi un **Riferimento frammento**. In **Rendering come** a discesa, seleziona &quot;multicampo&quot;. Per **Etichetta campo**, immetti &quot;Membri del team&quot;. Questo campo è collegato al _Persona_ modello creato in precedenza. Poiché il tipo di dati è un campo multiplo, è possibile aggiungere più frammenti Persona, consentendo la creazione di un team di persone.
 
    ![Opzioni di riferimento per i frammenti](assets/define-content-fragment-models/fragment-reference.png)
 
@@ -200,7 +199,7 @@ Infine, crea un modello che descrive un team di persone.
 
 Analogamente a come il modello Team dispone di un riferimento a un frammento al modello Persona, i modelli Team e Location devono essere referenziati dal modello Avventura per visualizzare questi nuovi modelli nell’app WKND.
 
-1. Da **Sito WKND** , seleziona la **Avventura** modello, quindi selezionare **Modifica** dalla navigazione superiore.
+1. Da **WKND condiviso** , seleziona la **Avventura** modello, quindi selezionare **Modifica** dalla navigazione superiore.
 
    ![Percorso di modifica avventura](assets/define-content-fragment-models/adventure-edit-path.png)
 
@@ -228,9 +227,9 @@ Esistono alcune best practice relative alla creazione di modelli di frammenti di
 
 * Nidifica i modelli di frammenti di contenuto in base alle esigenze ma solo se necessario. Ricorda che la nidificazione viene eseguita con riferimenti a frammenti o contenuti. Considera un massimo di cinque livelli di nidificazione.
 
-## Congratulazioni! {#congratulations}
+## Congratulazioni.  {#congratulations}
 
-Congratulazioni! Sono state aggiunte schede, sono stati utilizzati i tipi di dati data e ora e i tipi di dati oggetto JSON, oltre a ulteriori informazioni sui riferimenti a frammenti e contenuti. Sono state inoltre aggiunte regole di convalida dei riferimenti al contenuto.
+Congratulazioni. Sono state aggiunte schede, sono stati utilizzati i tipi di dati data e ora e i tipi di dati oggetto JSON, oltre a ulteriori informazioni sui riferimenti a frammenti e contenuti. Sono state inoltre aggiunte regole di convalida dei riferimenti al contenuto.
 
 ## Passaggi successivi {#next-steps}
 

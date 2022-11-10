@@ -6,9 +6,10 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 83e16ea87847182139982ea2378d8ff9f079c968
+exl-id: 998d3678-7aef-4872-bd62-0e6ea3ff7999
+source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
 workflow-type: tm+mt
-source-wordcount: '3015'
+source-wordcount: '2911'
 ht-degree: 1%
 
 ---
@@ -19,7 +20,7 @@ In [capitolo precedente](/help/headless-tutorial/graphql/advanced-graphql/create
 
 ## Prerequisiti {#prerequisites}
 
-Questo documento fa parte di un tutorial in più parti. Assicurarsi che i capitoli precedenti siano stati completati prima di procedere con questo capitolo.
+Questo documento fa parte di un tutorial in più parti. Assicurati che [capitolo precedente](create-content-fragment-models.md) è stato completato prima di procedere con il presente capitolo.
 
 ## Obiettivi {#objectives}
 
@@ -36,7 +37,7 @@ In questo capitolo, scopri come:
 
 Installa un pacchetto di AEM che contiene diverse cartelle e immagini di esempio utilizzate per accelerare l&#39;esercitazione.
 
-1. Scarica [Advanced-GraphQL-Tutorial-Starter-Package-1.0.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Starter-Package-1.0.zip)
+1. Scarica [Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip)
 1. In AEM, passa a **Strumenti** > **Distribuzione** > **Pacchetti** accesso **Gestione pacchetti**.
 1. Carica e installa il pacchetto (file zip) scaricato nel passaggio precedente.
 
@@ -44,7 +45,7 @@ Installa un pacchetto di AEM che contiene diverse cartelle e immagini di esempio
 
 ## Creazione di cartelle e impostazione di limiti tramite i criteri delle cartelle
 
-Nella home page di AEM, seleziona **Risorse** > **File** > **Sito WKND** > **Inglese**. Qui puoi vedere le varie categorie di frammenti di contenuto, compresi Avventure e collaboratori esplorati nelle precedenti [esercitazione GraphQL a più passaggi](../multi-step/overview.md).
+Nella home page di AEM, seleziona **Risorse** > **File** > **WKND condiviso** > **Inglese**. Qui puoi vedere le varie categorie di frammenti di contenuto, compresi Avventure e Collaboratori.
 
 ### Creare cartelle {#create-folders}
 
@@ -70,11 +71,11 @@ AEM consente di definire autorizzazioni e criteri per le cartelle Frammento di c
 
    ![Proprietà](assets/author-content-fragments/properties.png)
 
-1. Seleziona la **Criteri** , quindi deseleziona **Ereditato da /content/dam/wknd**. In **Modelli di frammenti di contenuto consentiti per percorso** selezionare l&#39;icona della cartella.
+1. Seleziona la **Criteri** , quindi deseleziona **Ereditato da /content/dam/wknd-shared**. In **Modelli di frammenti di contenuto consentiti per percorso** selezionare l&#39;icona della cartella.
 
    ![Icona della cartella](assets/author-content-fragments/folder-icon.png)
 
-1. Nella finestra di dialogo Seleziona percorso visualizzata, segui il percorso **conf** > **Sito WKND**. Il modello per frammento di contenuto personale, creato nel capitolo precedente, contiene un riferimento al modello per frammento di contenuto di informazioni di contatto. Per creare un frammento di contenuto istruttore, è necessario consentire i modelli Persona e Informazioni contatto nella cartella Istruttori. Seleziona **Persona** e **Informazioni contatto**, quindi premi **Seleziona** per chiudere la finestra di dialogo.
+1. Nella finestra di dialogo Seleziona percorso visualizzata, segui il percorso **conf** > **WKND condiviso**. Il modello per frammento di contenuto personale, creato nel capitolo precedente, contiene un riferimento al modello per frammento di contenuto di informazioni di contatto. Per creare un frammento di contenuto istruttore, è necessario consentire i modelli Persona e Informazioni contatto nella cartella Istruttori. Seleziona **Persona** e **Informazioni contatto**, quindi premi **Seleziona** per chiudere la finestra di dialogo.
 
    ![Seleziona percorso](assets/author-content-fragments/select-path.png)
 
@@ -88,13 +89,13 @@ AEM consente di definire autorizzazioni e criteri per le cartelle Frammento di c
 
 Passa a **Istruttori** cartella. Da qui, creiamo una cartella nidificata per memorizzare le informazioni di contatto degli Istruttori.
 
-Segui i passaggi descritti nella sezione [creazione di cartelle](#create-folders) per creare una cartella denominata &quot;Informazioni di contatto&quot;. Tenere presente che la cartella nidificata eredita i criteri della cartella principale. Puoi configurare criteri più specifici in modo che la nuova cartella creata consenta solo l’utilizzo del modello Informazioni contatto .
+Segui i passaggi descritti nella sezione [creazione di cartelle](#create-folders) per creare una cartella denominata &quot;Informazioni di contatto&quot;. La cartella nidificata eredita i criteri della cartella principale. Puoi configurare criteri più specifici in modo che la nuova cartella creata consenta solo l’utilizzo del modello Informazioni contatto .
 
 ### Creare un frammento di contenuto per istruttori
 
-Creiamo quattro persone che possono essere aggiunte a un team di istruttori di Avventura. Riutilizzare le immagini e i nomi dei frammenti di contenuto dei collaboratori creati nella [esercitazione GraphQL a più passaggi](../multi-step/author-content-fragments.md). Mentre l’esercitazione precedente spiegava come creare frammenti di contenuto di base, questa esercitazione si concentra sulle funzioni più avanzate.
+Creiamo quattro persone che possono essere aggiunte a un team di istruttori di Avventura.
 
-1. Dalla cartella Istruttori, crea un nuovo frammento di contenuto basato sul modello di frammento di contenuto personale e assegnagli il titolo &quot;Jacob Wester&quot;.
+1. Dalla cartella Istruttori, crea un frammento di contenuto basato sul modello di frammento di contenuto personale e assegnagli il titolo &quot;Jacob Wester&quot;.
 
    Il frammento di contenuto appena creato si presenta come segue:
 
@@ -103,14 +104,14 @@ Creiamo quattro persone che possono essere aggiunte a un team di istruttori di A
 1. Inserisci il seguente contenuto nei campi:
 
    * **Nome completo**: Jacob Wester
-   * **Biografia**: Jacob Wester è stato un istruttore di trekking per dieci anni e ha amato ogni minuto di esso! È un cercatore di avventura con talento per arrampicarsi su roccia e fare il backpack. Jacob è il vincitore di gare di arrampicata, tra cui la battaglia del boulder della baia. Attualmente vive in California.
+   * **Biografia**: Jacob Wester è stato un istruttore di trekking per dieci anni e ha amato ogni minuto di esso! Jacob è un cercatore d&#39;avventura con un talento per arrampicarsi su roccia e fare il backpack. Jacob è il vincitore di gare di arrampicata, tra cui la battaglia del boulder della baia. Jacob attualmente vive in California.
    * **Livello esperienza istruttore**: Esperto
    * **Competenze**: Arrampicata, Surf, Backpackaging
-   * **Dettagli amministratore**: Jacob Wester coordina le avventure di backpackaging da 3 anni.
+   * **Dettagli amministratore**: Jacob Wester coordina da tre anni le avventure di backpackaging.
 
-1. In **Immagine profilo** aggiungi un riferimento al contenuto a un&#39;immagine. Sfoglia per **Sito WKND** > **Inglese** > **Collaboratori** > **jacob_wester.jpg** per creare un percorso per l&#39;immagine.
+1. In **Immagine profilo** aggiungi un riferimento al contenuto a un&#39;immagine. Sfoglia per **WKND condiviso** > **Inglese** > **Collaboratori** > **jacob_wester.jpg** per creare un percorso per l&#39;immagine.
 
-### Creare un nuovo riferimento a un frammento dall’editor Frammenti di contenuto {#fragment-reference-from-editor}
+### Creare un riferimento a un frammento dall’editor Frammenti di contenuto {#fragment-reference-from-editor}
 
 AEM consente di creare un riferimento a un frammento direttamente dall’editor Frammento di contenuto. Creiamo un riferimento alle informazioni di contatto di Jacob.
 
@@ -135,7 +136,7 @@ AEM consente di creare un riferimento a un frammento direttamente dall’editor 
    * **Telefono**: 2009-888-0000
    * **E-mail**: jwester@wknd.com
 
-   Al termine, seleziona **Salva**. È stato creato un nuovo frammento di contenuto Informazioni contatto.
+   Al termine, seleziona **Salva**. È stato creato un frammento di contenuto Informazioni contatto.
 
 1. Per tornare al frammento di contenuto dell’istruttore, seleziona **Jacob Wester** nell’angolo in alto a sinistra dell’editor.
 
@@ -153,37 +154,37 @@ Segui lo stesso processo descritto nel [sezione precedente](#fragment-reference-
 
 **Stacey Roswells**
 
-| espandibili | Valori |
+| Campi | Valori |
 | --- | --- |
 | Titolo frammento di contenuto | Stacey Roswells |
 | Nome e cognome | Stacey Roswells |
-| Informazioni di contatto | /content/dam/wknd/it/adventures/istruttori/contact-info/stacey-roswells-contact-info |
-| Immagine profilo | /content/dam/wknd/en/contributors/stacey-roswells.jpg |
-| Biografia | Stacey Roswells è un esperto arrampicatore e avventuriero alpino. Nato a Baltimora, nel Maryland, Stacey è il più giovane di sei bambini. Suo padre era un tenente colonnello della Marina degli Stati Uniti e sua madre era un istruttore di danza moderna. La sua famiglia si trasferì frequentemente con i compiti del padre, e scattò le sue prime foto quando era in Thailandia. Ed è qui che Stacey ha imparato a arrampicarsi. |
+| Informazioni di contatto | /content/dam/wknd-shared/en/adventures/istrtors/contact-info/stacey-roswells-contact-info |
+| Immagine profilo | /content/dam/wknd-shared/en/contributors/stacey-roswells.jpg |
+| Biografia | Stacey Roswells è un esperto arrampicatore e avventuriero alpino. Nato a Baltimora, nel Maryland, Stacey è il più giovane di sei bambini. Il padre di Stacey era un tenente colonnello della marina militare americana e la madre era un moderno istruttore di danza. La famiglia di Stacey si trasferì frequentemente con i compiti del padre, e scattò le prime foto quando il padre era in residenza in Thailandia. Ed è qui che Stacey ha imparato a arrampicarsi. |
 | Livello esperienza istruttore | Avanzate  |
 | Competenze | Arrampicata | Sci | Backpackaging |
 
 **Kumar Selvaraj**
 
-| espandibili | Valori |
+| Campi | Valori |
 | --- | --- |
 | Titolo frammento di contenuto | Kumar Selvaraj |
 | Nome e cognome | Kumar Selvaraj |
-| Informazioni di contatto | /content/dam/wknd/it/adventures/istruttori/contact-info/kumar-selvaraj-contact-info |
-| Immagine profilo | /content/dam/wknd/en/contributors/Kumar_Selvaraj.JPG |
+| Informazioni di contatto | /content/dam/wknd-shared/en/adventures/istrtors/contact-info/kumar-selvaraj-contact-info |
+| Immagine profilo | /content/dam/wknd-shared/en/contributors/kumar-selvaraj.jpg |
 | Biografia | Kumar Selvaraj è un istruttore professionale certificato AMGA esperto il cui obiettivo principale è quello di aiutare gli studenti a migliorare le loro abilità di arrampicata e trekking. |
 | Livello esperienza istruttore | Avanzate  |
 | Competenze | Arrampicata | Backpackaging |
 
 **Ayo Ogunseinde**
 
-| espandibili | Valori |
+| Campi | Valori |
 | --- | --- |
 | Titolo frammento di contenuto | Ayo Ogunseinde |
 | Nome e cognome | Ayo Ogunseinde |
-| Informazioni di contatto | /content/dam/wknd/it/adventures/istruttori/contact-info/ayo-ogunseinde-contact-info |
-| Immagine profilo | /content/dam/wknd/en/contributors/ayo-ogunseinde-237739.jpg |
-| Biografia | Ayo Ogunseinde è un alpinista professionista e istruttore di zaino che vive a Fresno, California Centrale. Il suo obiettivo è guidare gli escursionisti nelle loro più epiche avventure nei parchi nazionali. |
+| Informazioni di contatto | /content/dam/wknd-shared/en/adventures/istrtors/contact-info/ayo-ogunseinde-contact-info |
+| Immagine profilo | /content/dam/wknd-shared/en/contributors/ayo-ogunseinde-237739.jpg |
+| Biografia | Ayo Ogunseinde è un alpinista professionista e istruttore di zaino che vive a Fresno, California Centrale. L&#39;obiettivo di Ayo è guidare gli escursionisti nelle loro avventure più epiche del parco nazionale. |
 | Livello esperienza istruttore | Avanzate  |
 | Competenze | Arrampicata | Ciclismo | Backpackaging |
 
@@ -205,9 +206,9 @@ Passa a **Posizioni** cartella. Qui sono presenti due cartelle nidificate già c
 
 ![Cartella Posizioni](assets/author-content-fragments/locations-folder.png)
 
-Ignora la cartella Yosemite Valley Lodge per il momento. Ci ritorneremo più avanti in questa sezione quando creeremo una nuova posizione che fungerà da base per il nostro team di istruttori.
+Ignora la cartella Yosemite Valley Lodge per il momento. Ritorniamo a questa sezione più avanti quando creiamo una posizione che funge da base per il nostro team di istruttori.
 
-Passa a **Parco nazionale dello Yosemite** cartella. Attualmente, contiene solo una foto del Parco Nazionale dello Yosemite. Creiamo un nuovo frammento di contenuto utilizzando il modello di frammento di contenuto posizione e titolalo &quot;Yosemite National Park&quot;.
+Passa a **Parco nazionale dello Yosemite** cartella. Attualmente, contiene solo una foto del Parco Nazionale dello Yosemite. Creiamo un frammento di contenuto utilizzando il modello di frammento di contenuto della posizione e titoliamolo &quot;Parco nazionale dello Yosemite&quot;.
 
 ### Segnaposto Tabulazione
 
@@ -247,22 +248,22 @@ Aggiungiamo il resto del contenuto al frammento di contenuto Posizione per esegu
 1. In **Dettagli posizione** immettere le seguenti informazioni nei campi:
 
    * **Nome**: Parco nazionale dello Yosemite
-   * **Descrizione**: Il parco nazionale dello Yosemite si trova sulle montagne della Sierra Nevada della California. È famosa per le sue splendide cascate, gli alberi giganti di sequoia e le viste iconiche delle scogliere El Capitan e Mezza Dome. Escursioni e campeggio sono i migliori modi per sperimentare Yosemite. Numerosi sentieri offrono infinite opportunità di avventura e esplorazione.
+   * **Descrizione**: Il parco nazionale dello Yosemite si trova sulle montagne della Sierra Nevada della California. È famosa per le sue splendide cascate, gli alberi giganti di sequoia, e vista iconica delle scogliere El Capitan e Mezza Dome. Escursioni e campeggio sono i migliori modi per sperimentare Yosemite. Numerosi sentieri offrono infinite opportunità di avventura e esplorazione.
 
-1. Da **Informazioni contatto** creare un nuovo frammento di contenuto basato sul modello Contact Info e denominarlo &quot;Yosemite National Park Contact Info&quot;. Segui lo stesso processo descritto nella sezione precedente su [creazione di un nuovo riferimento a un frammento dall’editor](#fragment-reference-from-editor) e inserire i seguenti dati nei campi:
+1. Da **Informazioni contatto** creare un frammento di contenuto basato sul modello Contact Info e denominarlo &quot;Yosemite National Park Contact Info&quot;. Segui lo stesso processo descritto nella sezione precedente su [creazione di un riferimento a un frammento dall’editor](#fragment-reference-from-editor) e inserire i seguenti dati nei campi:
 
    * **Telefono**: 2009-999-0000
    * **E-mail**: yosemite@wknd.com
 
 1. Da **Immagine posizione** campo , cerca **Avventure** > **Posizioni** > **Parco nazionale dello Yosemite** > **yosemite-national-park.jpeg** per creare un percorso per l&#39;immagine.
 
-   Ricorda che nel capitolo precedente hai configurato la convalida dell&#39;immagine, pertanto le dimensioni dell&#39;immagine Posizione devono essere inferiori a 2560 x 1800 e le dimensioni del file devono essere inferiori a 3 MB.
+   Nel capitolo precedente in cui è stata configurata la convalida dell&#39;immagine, le dimensioni dell&#39;immagine della posizione devono essere inferiori a 2560 x 1800 e le dimensioni del file devono essere inferiori a 3 MB.
 
 1. Con tutte le informazioni aggiunte, il **Dettagli posizione** La scheda ora si presenta così:
 
    ![Scheda Dettagli posizione completata](assets/author-content-fragments/location-details-tab-completed.png)
 
-1. Passa a **Indirizzo** scheda . Da **Indirizzo** creare un nuovo frammento di contenuto denominato &quot;Indirizzo del parco nazionale di Yosemite&quot; utilizzando il modello del frammento di contenuto di indirizzo creato nel capitolo precedente. Segui lo stesso processo descritto nella sezione su [creazione di un nuovo riferimento a un frammento dall’editor](#fragment-reference-from-editor) e inserire i seguenti dati nei campi:
+1. Passa a **Indirizzo** scheda . Da **Indirizzo** creare un frammento di contenuto denominato &quot;Indirizzo del parco nazionale di Yosemite&quot; utilizzando il modello del frammento di contenuto di indirizzo creato nel capitolo precedente. Segui lo stesso processo descritto nella sezione su [creazione di un riferimento a un frammento dall’editor](#fragment-reference-from-editor) e inserire i seguenti dati nei campi:
 
    * **Indirizzo via**: 9010 Curry Village Drive
    * **Città**: Valle dello Yosemite
@@ -276,23 +277,23 @@ Aggiungiamo il resto del contenuto al frammento di contenuto Posizione per esegu
 
 1. Seleziona **Salva e chiudi**.
 
-### Creare un frammento aggiuntivo
+### Creare un altro frammento
 
-1. Passa a **Yosemite Valley Lodge** cartella. Crea un nuovo frammento di contenuto utilizzando il modello di frammento di contenuto della posizione e assegnagli il titolo &quot;Yosemite Valley Lodge&quot;.
+1. Passa a **Yosemite Valley Lodge** cartella. Crea un frammento di contenuto utilizzando il modello di frammento di contenuto della posizione e assegnagli il titolo &quot;Yosemite Valley Lodge&quot;.
 
 1. In **Dettagli posizione** immettere le seguenti informazioni nei campi:
 
    * **Nome**: Yosemite Valley Lodge
    * **Descrizione**: Yosemite Valley Lodge è un hub per riunioni di gruppo e ogni tipo di attività, come lo shopping, la ristorazione, la pesca, l&#39;escursionismo, e molti altri.
 
-1. Da **Informazioni contatto** creare un nuovo frammento di contenuto basato sul modello Contact Info e denominarlo &quot;Yosemite Valley Lodge Contact Info&quot;. Segui lo stesso processo descritto nella sezione su [creazione di un nuovo riferimento a un frammento dall’editor](#fragment-reference-from-editor) e immetti i seguenti dati nei campi del nuovo frammento di contenuto:
+1. Da **Informazioni contatto** creare un frammento di contenuto basato sul modello Contact Info e denominarlo &quot;Yosemite Valley Lodge Contact Info&quot;. Segui lo stesso processo descritto nella sezione su [creazione di un riferimento a un frammento dall’editor](#fragment-reference-from-editor) e immetti i seguenti dati nei campi del nuovo frammento di contenuto:
 
    * **Telefono**: 2009-992-0000
    * **E-mail**: yosemitelodge@wknd.com
 
    Salva il frammento di contenuto appena creato.
 
-1. Torna a **Yosemite Valley Lodge** e vai al **Indirizzo** scheda . Da **Indirizzo** creare un nuovo frammento di contenuto denominato &quot;Indirizzo del lodge della valle di Yosemite&quot; utilizzando il modello del frammento di contenuto dell&#39;indirizzo creato nel capitolo precedente. Segui lo stesso processo descritto nella sezione su [creazione di un nuovo riferimento a un frammento dall’editor](#fragment-reference-from-editor) e inserire i seguenti dati nei campi:
+1. Torna a **Yosemite Valley Lodge** e vai al **Indirizzo** scheda . Da **Indirizzo** creare un frammento di contenuto denominato &quot;Indirizzo del lodge della valle di Yosemite&quot; utilizzando il modello del frammento di contenuto dell&#39;indirizzo creato nel capitolo precedente. Segui lo stesso processo descritto nella sezione su [creazione di un riferimento a un frammento dall’editor](#fragment-reference-from-editor) e inserire i seguenti dati nei campi:
 
    * **Indirizzo via**: 9006 Yosemite Lodge Drive
    * **Città**: Parco nazionale dello Yosemite
@@ -312,7 +313,7 @@ Sfoglia cartelle in **Team** > **Team Yosemite**. La cartella Team Yosemite cont
 
 ![Cartella Team Yosemite](assets/author-content-fragments/yosemite-team-folder.png)
 
-Creiamo un nuovo frammento di contenuto utilizzando il modello di frammento di contenuto del team e titolalo &quot;Team Yosemite&quot;.
+Creiamo un frammento di contenuto utilizzando il modello di frammento di contenuto del team e assegnargli il titolo &quot;Team Yosemite&quot;.
 
 ### Riferimenti a contenuti e frammenti nell’editor di testo su più righe
 
@@ -330,13 +331,13 @@ AEM consente di aggiungere contenuti e riferimenti a frammenti direttamente nell
 
    Il riferimento al contenuto viene ora aggiunto nel **Descrizione** campo .
 
-Tenere presente che nel capitolo precedente è stato consentito l’aggiunta di riferimenti di frammento al **Descrizione** campo . Aggiungiamo uno qui.
+Tenere presente che nel capitolo precedente è stato consentito l’aggiunta di riferimenti a frammenti al **Descrizione** campo . Aggiungiamo uno qui.
 
 1. Seleziona la **Inserisci frammento di contenuto** nella barra degli strumenti dell’editor di testo su più righe.
 
    ![Icona Inserisci frammento di contenuto](assets/author-content-fragments/insert-content-fragment-icon.png)
 
-1. Sfoglia per **Sito WKND** > **Inglese** > **Avventure** > **Posizioni** > **Yosemite Valley Lodge** > **Yosemite Valley Lodge**. Press **Seleziona** per inserire il frammento di contenuto.
+1. Sfoglia per **WKND condiviso** > **Inglese** > **Avventure** > **Posizioni** > **Yosemite Valley Lodge** > **Yosemite Valley Lodge**. Press **Seleziona** per inserire il frammento di contenuto.
 
    ![Finestra modale Inserisci frammento di contenuto](assets/author-content-fragments/insert-content-fragment-modal.png)
 
@@ -362,7 +363,7 @@ Aggiungiamo gli istruttori al riferimento al frammento Membri del team.
 
    ![Pulsante Aggiungi](assets/author-content-fragments/add-button.png)
 
-1. Nel nuovo campo visualizzato, seleziona l’icona della cartella per aprire il modale Seleziona percorso . Sfoglia le cartelle in **Sito WKND** > **Inglese** > **Avventure** > **Istruttori**, quindi seleziona la casella di controllo accanto a **giacobo**. Press **Seleziona** per salvare il percorso.
+1. Nel nuovo campo visualizzato, seleziona l’icona della cartella per aprire il modale Seleziona percorso . Sfoglia le cartelle in **WKND condiviso** > **Inglese** > **Avventure** > **Istruttori**, quindi seleziona la casella di controllo accanto a **giacobo**. Press **Seleziona** per salvare il percorso.
 
    ![Percorso riferimento frammento](assets/author-content-fragments/fragment-reference-path.png)
 
@@ -378,11 +379,11 @@ Infine, aggiungiamo i frammenti di contenuto appena creati a un’avventura.
 
 1. Passa a **Avventure** > **Yosemite Backpack** e aprire il frammento di contenuto del backpack Yosemite. Nella parte inferiore del modulo sono visualizzati i tre campi creati nel capitolo precedente: **Posizione**, **Team istruttore** e **Amministratore**.
 
-1. Aggiungi il riferimento al frammento nel **Posizione** campo . Il percorso della posizione deve fare riferimento al frammento di contenuto del parco nazionale di Yosemite creato: `/content/dam/wknd/en/adventures/locations/yosemite-national-park/yosemite-national-park`.
+1. Aggiungi il riferimento al frammento nel **Posizione** campo . Il percorso della posizione deve fare riferimento al frammento di contenuto del parco nazionale di Yosemite creato: `/content/dam/wknd-shared/en/adventures/locations/yosemite-national-park/yosemite-national-park`.
 
-1. Aggiungi il riferimento al frammento nel **Team istruttore** campo . Il percorso Team deve fare riferimento al frammento di contenuto del team Yosemite creato: `/content/dam/wknd/en/adventures/teams/yosemite-team/yosemite-team`. Riferimento a un frammento nidificato. Il frammento di contenuto del team contiene un riferimento al modello Persona che fa riferimento ai modelli Informazioni di contatto e Indirizzo. Di conseguenza, i frammenti di contenuto nidificati sono a tre livelli in basso.
+1. Aggiungi il riferimento al frammento nel **Team istruttore** campo . Il percorso Team deve fare riferimento al frammento di contenuto del team Yosemite creato: `/content/dam/wknd-shared/en/adventures/teams/yosemite-team/yosemite-team`. Riferimento a un frammento nidificato. Il frammento di contenuto del team contiene un riferimento al modello Persona che fa riferimento ai modelli Informazioni di contatto e Indirizzo. Di conseguenza, i frammenti di contenuto nidificati sono a tre livelli in basso.
 
-1. Aggiungi il riferimento al frammento nel **Amministratore** campo . Diciamo che Jacob Wester è un amministratore per la Yosemite Backpackaging Avventure. Il percorso deve portare al frammento di contenuto di Jacob Wester e apparire come segue: `/content/dam/wknd/en/adventures/instructors/jacob-wester`.
+1. Aggiungi il riferimento al frammento nel **Amministratore** campo . Diciamo che Jacob Wester è un amministratore per la Yosemite Backpackaging Avventure. Il percorso deve portare al frammento di contenuto di Jacob Wester e apparire come segue: `/content/dam/wknd-shared/en/adventures/instructors/jacob-wester`.
 
 1. Ora hai aggiunto tre riferimenti di frammento a un frammento di contenuto avventura. I campi si presentano così:
 
@@ -390,12 +391,10 @@ Infine, aggiungiamo i frammenti di contenuto appena creati a un’avventura.
 
 1. Seleziona **Salva e chiudi** per salvare il contenuto.
 
-## Congratulazioni!
+## Congratulazioni. 
 
-Congratulazioni! Ora hai creato frammenti di contenuto basati sui modelli avanzati di frammenti di contenuto creati nel capitolo precedente. È stato inoltre creato un criterio per le cartelle per limitare la selezione di modelli di frammenti di contenuto all’interno di una cartella.
+Congratulazioni. Ora hai creato frammenti di contenuto basati sui modelli avanzati di frammenti di contenuto creati nel capitolo precedente. È stato inoltre creato un criterio per le cartelle per limitare la selezione di modelli di frammenti di contenuto all’interno di una cartella.
 
 ## Passaggi successivi
 
-In [capitolo successivo](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md), verranno fornite informazioni sull’invio di query GraphQL avanzate utilizzando l’ambiente di sviluppo integrato (IDE, Integrated Development Environment) di GraphiQL. Queste query ci consentiranno di visualizzare i dati creati in questo capitolo e di aggiungere tali query all’app WKND.
-
-Anche se è facoltativo per questa esercitazione, accertati di pubblicare tutti i contenuti in situazioni di produzione reali. Maggiori dettagli sugli ambienti Author e Publish sono disponibili nella sezione [serie video headless](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md)
+In [capitolo successivo](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md), informazioni sull’invio di query GraphQL avanzate tramite l’ambiente di sviluppo integrato (IDE) GraphiQL. Queste query ci consentono di visualizzare i dati creati in questo capitolo e di aggiungere tali query all’app WKND.
