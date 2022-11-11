@@ -7,8 +7,10 @@ role: Developer, Architect
 level: Beginner
 kt: 7629
 thumbnail: 333181.jpg
+last-substantial-update: 2022-11-11T00:00:00Z
+recommendations: noDisplay, noCatalog
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
-source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
+source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 5%
@@ -46,7 +48,7 @@ Questa esercitazione presuppone:
 + [Codice Microsoft® Visual Studio](https://visualstudio.microsoft.com/) come IDE
 + Una directory di lavoro di `~/Code/wknd-app`
 + Esecuzione dell’SDK AEM come servizio Author in `http://localhost:4502`
-+ Esecuzione dell&#39;SDK di AEM con il locale `admin` account con password `admin`
++ Esecuzione dell&#39;SDK AEM con il locale `admin` account con password `admin`
 + Esecuzione del SPA su `http://localhost:3000`
 
 ## Avvia l&#39;AEM SDK Quickstart
@@ -154,6 +156,6 @@ Prima di creare contenuti, disponi le finestre del browser in modo che AEM Autho
 
 Nuove pagine AEM sotto __Home page dell&#39;app WKND > Avventura__ _deve_ hanno un nome di pagina AEM che corrisponde al nome del frammento di contenuto dell’avventura corrispondente. Questo perché il percorso SPA per AEM mappatura pagina è basato sull’ultimo segmento del percorso, che è il nome del frammento di contenuto.
 
-## Congratulazioni!
+## Congratulazioni. 
 
 Hai appena avuto un rapido assaggio di come AEM editor SPA può migliorare il tuo SPA con aree controllate e modificabili! Se sei interessato, controlla il resto dell’esercitazione, ma assicurati di iniziare da zero, poiché in questa configurazione rapida l’ambiente di sviluppo locale è ora nello stato di fine dell’esercitazione!
