@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
-source-git-commit: 751aed9b8659d6a600429efb2bf60825b6d39144
+source-git-commit: e8e5c67f6e9f057fd7472b76ee09d7f87b133c89
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Ogni ambiente as a Cloud Service AEM dispone di una propria Console per sviluppa
 Per accedere e utilizzare la Console per sviluppatori, è necessario concedere le seguenti autorizzazioni all’Adobe ID dello sviluppatore tramite [Admin Console Adobe](https://adminconsole.adobe.com).
 
 1. Assicurati che l’organizzazione di Adobe che ha interessato Cloud Manager e AEM prodotti as a Cloud Service sia attiva nel commutatore dell’organizzazione di Adobe.
-1. Lo sviluppatore deve essere membro del prodotto Cloud Manager __Sviluppatore - Cloud Service__ Profilo prodotto.
+1. Lo sviluppatore deve essere un membro del [Prodotti Cloud Manager __Sviluppatore - Cloud Service__ Profilo prodotto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer).
    + Se l’iscrizione non esiste, lo sviluppatore non sarà in grado di accedere a Developer Console.
-1. Lo sviluppatore deve essere un membro del __Utenti AEM__ o __Amministratori AEM__ Profilo di prodotto in AEM Author e/o Publish.
+1. Lo sviluppatore deve essere un membro del [__Utenti AEM__ o __Amministratori AEM__ Profilo di prodotto su AEM Author e/o Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles).
    + Se l&#39;appartenenza non esiste, il [status](#status) le immagini si timeout con un errore 401 non autorizzato.
 
 ### Risoluzione dei problemi di accesso a Developer Console
