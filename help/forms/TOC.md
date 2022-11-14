@@ -7,9 +7,9 @@ breadcrumb-title: Tutorial su AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
+source-git-commit: fad7630d2d91d03b98a3982f73a689ef48700319
 workflow-type: tm+mt
-source-wordcount: '1725'
+source-wordcount: '1731'
 ht-degree: 3%
 
 ---
@@ -53,6 +53,7 @@ ht-degree: 3%
    + [Installazione di AEM Forms in Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
    + [Installazione di pacchetti a 32 bit su Linux](adaptive-forms/installing-aem-form-on-linux.md)
    + [Servizio di precompilazione in Forms adattivo](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
+   + [Compilare moduli adattivi utilizzando i parametri di query](adaptive-forms/prepopulating-adaptive-form-using-query-parameters.md)
    + [Invio personalizzato in Forms adattivo](adaptive-forms/custom-submit-aem-forms-article.md)
    + [Captcha in Forms adattivo](adaptive-forms/forms-captcha-feature-video-use.md)
    + [Funzioni personalizzate nell’editor di regole](adaptive-forms/custom-functions-aem-forms.md)
