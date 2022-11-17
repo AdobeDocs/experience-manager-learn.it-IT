@@ -8,12 +8,12 @@ role: Leader, Architect, Admin, Developer
 level: Beginner
 kt: 10718
 thumbnail: KT-10718.png
-last-substantial-update: 2022-10-02T00:00:00Z
+last-substantial-update: 2022-11-17T00:00:00Z
 mini-toc-levels: 1
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: 064a64b1cc9b14f4aee2c0b00ce24bd447eb715e
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '922'
 ht-degree: 13%
 
 ---
@@ -29,7 +29,7 @@ Fai clic sul prodotto Experience Cloud per la documentazione su come configurare
 | Pubblicità |  |  |  |
 | [Analytics](#adobe-analytics) | ↓ | ↓ | ↓ |
 | Audience Manager |  |  |  |
-| [Campaign Classic](#adobe-campaign-classic) | ↓ |  |  |
+| Campaign Classic |  |  |  |
 | Campaign Standard |  |  |  |
 | [Commerce](#adobe-commerce) | ↓ | ↓ |  |
 | Customer Journey Analytics |  |  |  |
@@ -76,10 +76,6 @@ L’integrazione di Adobe Analytics con AEM as a Cloud Service consente di monit
 ### AEM Forms
 
 + [Configurare l’integrazione Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate-aem-forms-with-adobe-analytics.html)
-
-## Adobe Campaign Classic
-
-L’integrazione di Adobe Campaign Classic con AEM as a Cloud Service consente di gestire i contenuti e i moduli delle e-mail di consegna direttamente in Adobe Experience Manager, mentre l’utilizzo di Adobe Campaign Classic consente di personalizzare e inviare e-mail.
 
 ### AEM Sites
 
