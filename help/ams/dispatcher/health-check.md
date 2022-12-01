@@ -7,9 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: d6b7d63ba02ca73d6c1674d90db53c6eebab3bd2
+source-git-commit: df3afc60f765c18915eca3bb2d3556379383fafc
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1139'
 ht-degree: 1%
 
 ---
@@ -209,3 +209,5 @@ Questo script utilizzato controllerà e registrerà tutte le istanze in cui si t
 Questo script utilizzato controllerà e registrerà tutte le istanze in cui si trova in primo piano ma restituirà comunque integro indipendentemente dal fatto che AEM restituisca o meno un errore.
 
 > `Note:` Questo script viene utilizzato quando il controllo di integrità non funziona come desiderato e consente a un override di mantenere AEM istanze nel load balancer.
+
+[Avanti -> Collegamenti simbolici GIT](./git-symlinks.md)
