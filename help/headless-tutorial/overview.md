@@ -1,20 +1,20 @@
 ---
-title: AEM Tutorials headless
-description: Una raccolta di esercitazioni su come utilizzare Adobe Experience Manager as a Headless CMS.
+title: Tutorials per headless in AEM
+description: Una raccolta di esercitazioni CMS headless per Adobe Experience Manager. Esplora esercitazioni per API, framework ed applicazioni di esempio.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: b20a29e67da0bcbf53ae8089a7cde0dfde800214
+source-git-commit: 567f0ae80d79796fc50994d31a64fb0ca79879f6
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '524'
 ht-degree: 7%
 
 ---
 
-# AEM Tutorials headless{#aem-headless-tutorials}
+# Tutorials per headless in AEM{#aem-headless-tutorials}
 
 Adobe Experience Manager (AEM) offre diverse opzioni per definire endpoint headless e distribuire il relativo contenuto come JSON. Utilizza i tutorial pratici per scoprire come utilizzare le varie opzioni e scegliere ciò che fa per te.
 
@@ -89,7 +89,7 @@ Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità he
     </a>
     </div>
     <p>
-    <em>Un’applicazione iOS basata sulle API GraphQL AEM.</em>
+    <em>Un’applicazione iOS basata su AEM API GraphQL.</em>
     <p>
   </td>
   <td>
@@ -115,7 +115,7 @@ Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità he
       </a>
     </div>
     <p>
-    <em>Applicazione React basata su AEM API GraphQL.</em>
+    <em>Un’applicazione React basata su AEM API GraphQL.</em>
     <p>
   </td>
 </tr>
