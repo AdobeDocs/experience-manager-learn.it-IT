@@ -7,9 +7,9 @@ role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 567f0ae80d79796fc50994d31a64fb0ca79879f6
+source-git-commit: 758fa40240b12f5bfa83ac5c0300b71f41e2326d
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '503'
 ht-degree: 7%
 
 ---
@@ -21,11 +21,6 @@ Adobe Experience Manager (AEM) offre diverse opzioni per definire endpoint headl
 >[!TIP]
 >
 >Questa raccolta di esercitazioni è progettata per gli utenti che preferiscono **imparare facendo**. Se preferisci imparare i concetti da zero, controlla la [AEM Percorso di sviluppatori headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Questa serie di esercitazioni e il percorso si completano a vicenda.
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_edit_inline_content"
->title="Modificare il contenuto in linea"
->abstract="Scopri come modificare il contenuto direttamente nella pagina a cui si fa riferimento utilizzando il set di funzioni headless."
 
 ## Tutorials per API
 
