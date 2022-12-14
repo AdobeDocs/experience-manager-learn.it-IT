@@ -5,7 +5,7 @@ breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 79804ac1ec18f8ac4815bd5ee6f309ef85110cb9
+source-git-commit: 9fd2240cace83c27083f8209e9cec21640718989
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 20%
@@ -85,7 +85,7 @@ ht-degree: 20%
       + [Configurazioni OSGi con OCD](./developing/osgi-services/configurations-ocd.md)
    + Avanzate {#advanced}
       + [Utenti del servizio](./developing/advanced/service-users.md)
-      + [Spazi dei nomi dei clienti](./developing/advanced/custom-namespaces.md)
+      + [Spazi dei nomi personalizzati](./developing/advanced/custom-namespaces.md)
       + [Varianti di pagina nella cache](./developing/advanced/variant-caching.md)
    + [JavaDocs API AEM SDK](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + AEM di debug{#debugging}
@@ -162,7 +162,6 @@ ht-degree: 20%
       + [Navigazione in Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
       + [Utilizzo di Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
 + Forms{#forms}
-
    + Sviluppo per Forms as a Cloud Service{#developing-for-cloud-service}
       + [Guida introduttiva](./forms/developing-for-cloud-service/getting-started.md)
       + [Installa IntelliJ](./forms/developing-for-cloud-service/intellij-set-up.md)
