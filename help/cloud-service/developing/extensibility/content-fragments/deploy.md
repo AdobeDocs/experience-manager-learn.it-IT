@@ -9,9 +9,9 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Distribuisci l&#39;estensione nell&#39;area di lavoro Produzione. Le estensioni 
 1. Seleziona __Invia per approvazione__
 1. Completare e inviare il modulo, aggiornando i campi in base alle esigenze.
 
-+ È necessaria un’icona. Se non disponi di un&#39;icona, puoi utilizzare [questa icona](./assets/deploy/icon.png).
+Nota che è necessaria un&#39;icona. Se non disponi di un&#39;icona, puoi utilizzare [questa icona](./assets/deploy/icon.png).
 
 ### Approva la richiesta di distribuzione
 

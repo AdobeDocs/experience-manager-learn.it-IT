@@ -9,7 +9,7 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 0%
@@ -78,7 +78,10 @@ Prendi nota dell’URL dell’applicazione locale, mostrato sopra come `-> https
 
 1. La AEM console Frammenti di contenuto viene caricata con la versione locale dell’estensione inserita in essa per il test e le modifiche a caldo vengono ricaricate finché l’app locale App Builder è in esecuzione.
 
-Ricorda che quando utilizzi questo approccio, l’estensione in fase di sviluppo influisce solo sull’esperienza e tutti gli altri utenti della console AEM frammenti di contenuto accedono ad essa senza l’estensione inserita.
+>[!IMPORTANT]
+>
+>Ricorda che quando utilizzi questo approccio, l’estensione in fase di sviluppo influisce solo sull’esperienza e tutti gli altri utenti della console AEM frammenti di contenuto accedono ad essa senza l’estensione inserita.
+
 
 ## Build di un passaggio di test
 

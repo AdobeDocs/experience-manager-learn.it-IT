@@ -9,7 +9,7 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -55,15 +55,15 @@ function App(props) {
 `ExtensionRegistration.js` deve essere caricato immediatamente tramite la via di indicizzazione dell&#39;estensione e agisce sul punto di registrazione dell&#39;estensione, definendo:
 
 1. il tipo di estensione; a [menu intestazione](./header-menu.md) o [barra delle azioni](./action-bar.md) pulsante .
-   + [Menu Intestazione](./header-menu.md) le estensioni sono identificate dalle `headerMenu` proprietà sotto `methods`.
-   + [Barra delle azioni](./action-bar.md) le estensioni sono identificate dalle `actionBar` proprietà sotto `methods`.
+   + [Menu Intestazione](./header-menu.md#extension-registration) le estensioni sono identificate dalle `headerMenu` proprietà sotto `methods`.
+   + [Barra delle azioni](./action-bar.md#extension-registration) le estensioni sono identificate dalle `actionBar` proprietà sotto `methods`.
 1. Definizione del pulsante di estensione, in `getButton()` funzione . Questa funzione restituisce un oggetto con campi:
    + `id` è un ID univoco per il pulsante
    + `label` è l’etichetta del pulsante di estensione nella console Frammento di contenuto AEM
    + `icon` è l’icona del pulsante di estensione nella console Frammento di contenuto AEM. L’icona è un [React Spectrum](https://spectrum.adobe.com/page/icons/) nome dell’icona, con gli spazi rimossi.
 1. Gestore di clic per il pulsante, in definito in un `onClick()` funzione .
-   + [Menu Intestazione](./header-menu.md) Le estensioni non trasmettono parametri al gestore di clic.
-   + [Barra delle azioni](./action-bar.md) Le estensioni forniscono un elenco dei percorsi di frammento di contenuto selezionati nella sezione `selections` parametro .
+   + [Menu Intestazione](./header-menu.md#extension-registration) Le estensioni non trasmettono parametri al gestore di clic.
+   + [Barra delle azioni](./action-bar.md#extension-registration) Le estensioni forniscono un elenco dei percorsi di frammento di contenuto selezionati nella sezione `selections` parametro .
 
 ### Estensione Menu intestazione
 
