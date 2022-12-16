@@ -7,9 +7,9 @@ breadcrumb-title: Tutorial su AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 09b00a7edf2f4c90c6cb2178161c6d7e0c9432e8
+source-git-commit: 0e27907066c7d688549a980ccd17b3f17d74b60b
 workflow-type: tm+mt
-source-wordcount: '1741'
+source-wordcount: '1754'
 ht-degree: 3%
 
 ---
@@ -214,6 +214,13 @@ ht-degree: 3%
    + [Parte 2 - Creazione del profilo ACS all’invio del modulo](aem-forms-with-adobe-campaign/parttwo.md)
    + [Parte 3 - Precompilazione del modulo tramite informazioni sul profilo ACS](aem-forms-with-adobe-campaign/partthree.md)
    + [Parte4 - Crea profilo ACS utilizzando il modello dati modulo](aem-forms-with-adobe-campaign/partfour.md)
+
++ Kit di benvenuto {#welcome-kit}
+   + [Introduzione](welcome-kit/introduction.md)
+   + [Crea componente kit di benvenuto](welcome-kit/create-welcomekit-component.md)
+   + [Crea componente flusso di lavoro](welcome-kit/create-workflow-component.md)
+   + [Verificare la soluzione](welcome-kit/testing-the-solution.md)
+
 
 + Servizi documentali {#document-services}
    + [Tipi di PDF forms](document-services/pdf-forms-and-documents.md)
