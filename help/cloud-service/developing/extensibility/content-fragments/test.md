@@ -9,9 +9,9 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
+source-git-commit: 56e2cbadaceb9961de28454bfbed56a98df34c44
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -66,10 +66,12 @@ Prendi nota dell’URL dell’applicazione locale, mostrato sopra come `-> https
    + `&devMode=true`
    + `&ext=<LOCAL APPLICATION URL>`, di solito `&ext=https://localhost:9080`.
 
+   Aggiungi i due parametri di query precedenti (`devMode` e `ext`) come __first__ parametri di query nell’URL, in quanto la console Frammenti di contenuto utilizza un percorso hash (`#/@wknd/aem/...`), quindi post-fissaggio errato dei parametri dopo il `#` Non funzionerà.
+
    L’URL del test dovrebbe essere simile al seguente:
 
    ```
-   https://experience.adobe.com/?repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin&devMode=true&ext=https://localhost:9080
+   https://experience.adobe.com/?devMode=true&ext=https://localhost:9080&repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
    ```
 
 1. Copia e incolla l’URL del test nel browser.
@@ -112,10 +114,12 @@ Prendi nota dell’URL dell’applicazione locale, mostrato sopra come `-> https
    + `&devMode=true`
    + `&ext=<DEPLOYED APPLICATION URL>`
 
+   Aggiungi i due parametri di query precedenti (`devMode` e `ext`) come __first__ parametri di query nell’URL, in quanto la console Frammenti di contenuto utilizza un percorso hash (`#/@wknd/aem/...`), quindi post-fissaggio errato dei parametri dopo il `#` Non funzionerà.
+
    L’URL del test dovrebbe essere simile al seguente:
 
    ```
-   https://experience.adobe.com/?repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin&devMode=true&ext=https://98765-123aquarat.adobeio-static.net/index.html
+   https://experience.adobe.com/?devMode=true&ext=https://98765-123aquarat.adobeio-static.net/index.html&repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
    ```
 
 1. Copia e incolla l’URL del test nel browser.
