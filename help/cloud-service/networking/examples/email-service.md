@@ -9,7 +9,7 @@ level: Intermediate
 kt: 9353
 thumbnail: KT-9353.jpeg
 exl-id: 5f919d7d-e51a-41e5-90eb-b1f6a9bf77ba
-source-git-commit: d6eddceb3f414e67b5b6e3fba071cd95597dc41c
+source-git-commit: c34c27955dbc084620ac4dd811ba4051ea83f447
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Assicurati che [appropriato](../advanced-networking.md#advanced-networking) la c
 
 | Nessuna rete avanzata | [Uscita porta flessibile](../flexible-port-egress.md) | [Indirizzo IP in uscita dedicato](../dedicated-egress-ip-address.md) | [Rete privata virtuale](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
-| ✘ | ↓ | ↓ | ↓ |
+| ✘ | ✔ | ✔ | ✔ |
 
 ## Configurazione OSGi
 
@@ -79,7 +79,7 @@ Configurare AEM [DefaultMailService](https://experienceleague.adobe.com/docs/exp
 
 La `EMAIL_USERNAME` e `EMAIL_PASSWORD` La variabile e il segreto OSGi possono essere impostati per ambiente, utilizzando:
 
-+ [Configurazione ambiente Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html)
++ [Configurazione dell’ambiente Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html)
 + o utilizzando `aio CLI` command
 
    ```shell
