@@ -10,9 +10,9 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
+source-git-commit: 8b683fdcea05859151b929389f7673075c359141
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '774'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # Estensione della console Frammenti di contenuto AEM
 
-[Console Frammenti di contenuto AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=it) Le estensioni possono essere aggiunte tramite due punti di estensione: un pulsante [della console Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html) menu intestazione o barra delle azioni. Le estensioni sono scritte in JavaScript che vengono eseguite come app per App Builder e possono implementare un’interfaccia utente web personalizzata e azioni Adobe I/O Runtime senza server per eseguire lavori più intensivi e a lungo termine.
+[Console Frammenti di contenuto AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=it) Le estensioni possono essere aggiunte tramite due punti di estensione: un pulsante [della console Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=it) menu intestazione o barra delle azioni. Le estensioni sono scritte in JavaScript che vengono eseguite come app per App Builder e possono implementare un’interfaccia utente web personalizzata e azioni Adobe I/O Runtime senza server per eseguire lavori più intensivi e a lungo termine.
 
 ![Estensione della console Frammenti di contenuto AEM](./assets/overview/example.png){align="center"}
 
@@ -29,7 +29,7 @@ ht-degree: 4%
 | Menu Intestazione | Aggiunge un pulsante all’intestazione che viene visualizzata quando __zero__ I frammenti di contenuto sono selezionati. | Nessuno. |
 | Barra delle azioni | Aggiunge un pulsante alla barra delle azioni visualizzata quando __uno o più__ I frammenti di contenuto sono selezionati. | Matrice dei percorsi dei frammenti di contenuto selezionati. |
 
-Una singola estensione della console Frammenti di contenuto AEM può includere zero o un menu Intestazione e zero o un tipo di estensione della barra delle azioni. Se sono necessari più tipi di estensione dello stesso tipo, è necessario creare più estensioni AEM console Frammenti di contenuto .
+Una singola estensione della console Frammenti di contenuto AEM può includere zero o un menu di intestazione e zero o un tipo di estensione della barra delle azioni. Se sono necessari più tipi di estensione dello stesso tipo, è necessario creare più estensioni AEM console Frammenti di contenuto .
 
 AEM estensioni della console Frammenti di contenuto, richiedono un [Progetto Adobe Developer Console](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console) e [App Builder](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) utilizzando `@adobe/aem-cf-admin-ui-ext-tpl` , associato al progetto Adobe Developer Console .
 
@@ -38,11 +38,11 @@ Scegli una delle funzionalità seguenti durante la generazione dell&#39;app Gene
 |  | Aggiungi pulsante a [Menu Intestazione](./header-menu.md) | Aggiungi pulsante a [Barra delle azioni](./action-bar.md) | Mostra [modale](./modal.md) | Aggiungi [gestore lato server](./runtime-action.md) |
 | ------------------------------------------ | :-----------------------: | :----------------------: | :--------: | :--------------------:  |
 | Disponibile quando i frammenti di contenuto non sono selezionati | ↓ |  |  |  |
-| Disponibile quando sono selezionati uno o più frammenti di contenuto |  | ↓ |  |  |
+| Disponibile quando sono selezionati uno o più frammenti di contenuto |  | ✔ |  |  |
 | Raccoglie input personalizzati dall&#39;utente |  |  | ✔️ |  |
 | Visualizza il feedback personalizzato per l&#39;utente |  |  | ✔️ |  |
-| Richiama le richieste HTTP a AEM |  |  |  | ↓ |
-| Richiama le richieste HTTP ai servizi di Adobe/di terze parti |  |  |  | ↓ |
+| Richiama le richieste HTTP a AEM |  |  |  | ✔ |
+| Richiama le richieste HTTP ai servizi di Adobe/di terze parti |  |  |  | ✔ |
 
 
 ## Documentazione di Adobe Developer
@@ -67,7 +67,7 @@ Segui i passaggi descritti di seguito per scoprire come generare, sviluppare e d
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">1. Creare un progetto</p>
-                    <p class="is-size-6">Crea un progetto della console Adobe Developer che definisce l’accesso ad altri servizi Adobe e ne gestisce le implementazioni.</p>
+                    <p class="is-size-6">Crea un progetto della console Adobe Developer che ne definisce l’accesso ad altri servizi Adobe e ne gestisce le implementazioni.</p>
                     <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_adobe-developer-com">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Creare un progetto Adobe Developer</span>
                     </a>
@@ -130,7 +130,7 @@ Segui i passaggi descritti di seguito per scoprire come generare, sviluppare e d
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">4a. Menu Intestazione</p>
-                    <p class="is-size-6">Scopri come creare un’estensione del menu di intestazione della console dei frammenti di contenuto AEM.</p>
+                    <p class="is-size-6">Scopri come creare un’estensione del menu intestazione della console frammenti di contenuto AEM.</p>
                     <a href="./header-menu.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Estende il menu intestazione</span>
                     </a>
@@ -151,7 +151,7 @@ Segui i passaggi descritti di seguito per scoprire come generare, sviluppare e d
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">4b. Barra delle azioni</p>
-                    <p class="is-size-6">Scopri come creare un’estensione della barra delle azioni della Console dei frammenti di contenuto AEM.</p>
+                    <p class="is-size-6">Scopri come creare un’estensione della barra delle azioni della Console frammenti di contenuto AEM.</p>
                     <a href="./action-bar.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Estende la barra delle azioni</span>
                     </a>
@@ -214,7 +214,7 @@ Segui i passaggi descritti di seguito per scoprire come generare, sviluppare e d
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-5 has-text-weight-bold">7. Test</p>
-                    <p class="is-size-6">Testa le estensioni durante lo sviluppo, nonché condividi le estensioni completate con tester QA o UAT utilizzando un URL speciale.</p>
+                    <p class="is-size-6">Verifica le estensioni durante lo sviluppo e condividi le estensioni completate con tester QA o UAT utilizzando un URL speciale.</p>
                     <a href="./test.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Test dell'estensione</span>
                     </a>
@@ -271,4 +271,28 @@ Esempio AEM estensioni della console Frammenti di contenuto .
             </div>
         </div>
     </div>
+    <!-- Bulk property update extension -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Image generation and upload to AEM extension">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-16by9">
+                    <a href="./example-extensions/image-generation-and-image-upload.md" title="Generazione e caricamento delle immagini nell'estensione AEM" tabindex="-1">
+                        <img class="is-bordered-r-small" src="./example-extensions/assets/digital-image-generation/screenshot.png" alt="Generazione e caricamento delle immagini nell'estensione AEM">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small">
+                <div class="content">
+                    <p class="headline is-size-5 has-text-weight-bold">Generazione e caricamento delle immagini nell'estensione AEM</p>
+                    <p class="is-size-6">Esplora un'estensione della barra delle azioni di esempio che genera un'immagine utilizzando OpenAI, la carica in AEM e aggiorna la proprietà dell'immagine sul frammento di contenuto selezionato.</p>
+                    <a href="./example-extensions/image-generation-and-image-upload.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Esplorare l’estensione di esempio</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </div>
