@@ -9,7 +9,7 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: 56e2cbadaceb9961de28454bfbed56a98df34c44
+source-git-commit: fbc8c11841f5b5e04a99ba74fac6f01dc3e3a2da
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -22,6 +22,8 @@ ht-degree: 0%
 AEM le estensioni della console Frammenti di contenuto possono essere testate in qualsiasi ambiente as a Cloud Service AEM nell’organizzazione Adobe a cui appartiene l’estensione.
 
 Il test di un’estensione viene eseguito tramite un URL appositamente creato che indica alla console Frammento di contenuto AEM di caricare l’estensione.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3412877/?quality=12&learn=on)
 
 ## URL della console Frammenti di contenuto AEM
 
