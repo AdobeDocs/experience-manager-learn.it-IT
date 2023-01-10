@@ -1,6 +1,6 @@
 ---
 title: Configurazione rapida AEM Headless tramite SDK locale
-description: Guida introduttiva ad Adobe Experience Manager (AEM) e GraphQL. Installa l'SDK AEM, aggiungi contenuto di esempio e distribuisci un'applicazione che consuma contenuti da AEM utilizzando le API GraphQL. Scopri come AEM le esperienze omni-channel.
+description: Guida introduttiva ad Adobe Experience Manager (AEM) e GraphQL. Installa l'SDK AEM, aggiungi contenuto di esempio e distribuisci un'applicazione che consuma contenuti da AEM utilizzando le sue API GraphQL. Scopri come AEM le esperienze omni-channel.
 version: Cloud Service
 mini-toc-levels: 1
 kt: 6386
@@ -10,24 +10,23 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: 64086f3f7b340b143bd281e2f6f802af07554ecf
+source-git-commit: f63ed212a5a8a6689b25bd0bc9438c605a129729
 workflow-type: tm+mt
-source-wordcount: '1258'
-ht-degree: 2%
+source-wordcount: '1256'
+ht-degree: 1%
 
 ---
 
 # Configurazione rapida AEM Headless tramite SDK locale {#setup}
 
-La configurazione rapida AEM Headless ti permette di utilizzare AEM Headless utilizzando il contenuto del progetto di esempio del sito WKND e un esempio di app React (a SPA) che consuma il contenuto sopra AEM API GraphQL headless. Questa guida utilizza [AEM SDK as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html).
+La configurazione rapida AEM Headless ti permette di utilizzare AEM Headless utilizzando il contenuto del progetto di esempio del sito WKND, e un esempio di app React (a SPA) che consuma il contenuto sopra AEM API GraphQL Headless. Questa guida utilizza [AEM SDK as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html).
 
 ## Prerequisiti {#prerequisites}
 
 È necessario installare localmente i seguenti strumenti:
 
 * [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.property.operation=equals&amp;1_group.property.values.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-* [Node.js v10+](https://nodejs.org/it/)
-* [npm 6+](https://www.npmjs.com/)
+* [Node.js v14.x](https://nodejs.org/it/)
 * [Git](https://git-scm.com/)
 
 ## 1. Installare l’SDK AEM {#aem-sdk}
@@ -148,7 +147,7 @@ Uno degli obiettivi di questa esercitazione è quello di mostrare come utilizzar
 
 1. Utilizza gli strumenti di sviluppo del browser per ispezionare il **Rete** richieste. Visualizza la **XHR** richiede e osserva più richieste di GET a `/graphql/execute.json/...`. Questo prefisso del percorso richiama AEM endpoint di query persistente, selezionando la query persistente da eseguire utilizzando il nome e i parametri codificati che seguono il prefisso .
 
-   ![Richiesta XHR di GraphQL Endpoint](assets/quick-setup/aem-sdk/react-app__graphql-request.png)
+   ![Richiesta GraphQL Endpoint XHR](assets/quick-setup/aem-sdk/react-app__graphql-request.png)
 
 ## 4. Modificare il contenuto in AEM
 
@@ -171,16 +170,16 @@ Quando l’app React è in esecuzione, aggiorna il contenuto di AEM e osserva ch
 
 ## 5. Esplora GraphiQL {#graphiql}
 
-1. Apri [GraphiQL](http://localhost:4502/aem/graphiql.html) passando a **Strumenti** > **Generale** > **Editor query GraphQL**
+1. Apri [GraphiQL](http://localhost:4502/aem/graphiql.html) passando a **Strumenti** > **Generale** > **Editor di query GraphQL**
 1. Seleziona le query persistenti esistenti a sinistra ed eseguine per visualizzare i risultati.
 
    >[!NOTE]
    >
    > Lo strumento GraphiQL e l&#39;API GraphQL è [più avanti nell’esercitazione è stato esplorato più dettagliatamente](../multi-step/explore-graphql-api.md).
 
-## Congratulazioni!{#congratulations}
+## Congratulazioni. {#congratulations}
 
-Congratulazioni, ora disponi di un’applicazione esterna che consuma AEM contenuti con GraphQL. Puoi controllare il codice nell’app React e continuare a provare a modificare i frammenti di contenuto esistenti.
+Congratulazioni, ora disponi di un’applicazione esterna che consuma contenuti AEM con GraphQL. Puoi controllare il codice nell’app React e continuare a provare a modificare i frammenti di contenuto esistenti.
 
 ### Passaggi successivi
 
