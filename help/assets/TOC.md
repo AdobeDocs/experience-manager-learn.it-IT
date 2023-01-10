@@ -21,7 +21,7 @@ ht-degree: 27%
 + Configurazione{#configuring}
    + [Cartelle di base](configuring/baseline-folders.md)
    + [Autorizzazioni di base](configuring/baseline-permissions.md)
-   + [Assegnazione tag](configuring/tagging.md)
+   + [Assegnazione dei tag](configuring/tagging.md)
    + [Schemi metadati](configuring/metadata-schemas.md)
    + [Profili metadati](configuring/metadata-profiles.md)
    + [Schemi di cartelle di metadati](configuring/metadata-folder-schemas.md)
