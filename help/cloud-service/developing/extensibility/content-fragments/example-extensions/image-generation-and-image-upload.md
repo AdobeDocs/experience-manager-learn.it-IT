@@ -1,5 +1,5 @@
 ---
-title: Generazione di immagini basate su OpenAI tramite l’estensione della console Frammenti di contenuto
+title: Generazione di immagini OpenAI tramite un’estensione personalizzata della console Frammenti di contenuto
 description: Esempio AEM l’estensione della console Frammenti di contenuto che genera un’immagine digitale dalle descrizioni del linguaggio naturale tramite OpenAI o DALL-E 2 e carica l’immagine generata in AEM e la associa al frammento di contenuto.
 feature: Developer Tools
 version: Cloud Service
@@ -9,15 +9,15 @@ level: Beginner
 kt: 11649
 thumbnail: KT-11649.png
 last-substantial-update: 2023-01-04T00:00:00Z
-source-git-commit: d902eb9a8d497a43c8d4ca63767f81a35eadf139
+source-git-commit: 06c09affd427a4818f5a916a84490f9ed09d372c
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1313'
 ht-degree: 1%
 
 ---
 
 
-# Generazione di immagini digitali basate su OpenAI, caricamento in un&#39;estensione AEM
+# Generazione di risorse di immagini AEM tramite OpenAI
 
 ![Generazione di immagini digitali](./assets/digital-image-generation/screenshot.png){align="center"}
 
