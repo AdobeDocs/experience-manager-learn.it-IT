@@ -5,9 +5,9 @@ breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 3a77f99de25ad6dab37d4ee12b31f12b94f0ec73
+source-git-commit: 0990fc230e2a36841380b5b0c6cd94dca24614fa
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '884'
 ht-degree: 20%
 
 ---
@@ -54,6 +54,8 @@ ht-degree: 20%
    + [Strumenti del Dispatcher locale](./local-development-environment/dispatcher-tools.md)
 + Sviluppo{#developing}
    + Estensibilità{#extensibility}
+      + App Builder{#app-builder}
+         + [Genera token di accesso](./developing/extensibility/app-builder/jwt-auth.md)
       + Console Frammento di contenuto{#content-fragments}
          + [Panoramica](./developing/extensibility/content-fragments/overview.md)
          + [Progetto Adobe Developer Console](./developing/extensibility/content-fragments/adobe-developer-console-project.md)
