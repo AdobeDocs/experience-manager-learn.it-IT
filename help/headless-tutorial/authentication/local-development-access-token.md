@@ -12,10 +12,11 @@ thumbnail: 330477.jpg
 topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
+last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
-source-git-commit: ef11609fe6ab266102bdf767a149284b9b912f98
+source-git-commit: 8b6d8d99c806e782a1ddce2b300211f8d4c9da56
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -40,6 +41,7 @@ Il token di accesso allo sviluppo locale fornisce l’accesso ai servizi Author 
 1. Apri il programma contenente l’ambiente as a Cloud Service AEM con cui eseguire l’integrazione
 1. Tocca __ellissi__ accanto all’ambiente nel __Ambienti__ e seleziona __Console per sviluppatori__
 1. Tocca __Integrazioni__ scheda
+1. Tocca __Token locale__ scheda
 1. Tocca __Ottieni token di sviluppo locale__ pulsante
 1. Tocca __pulsante di download__ nell’angolo in alto a sinistra per scaricare il file JSON contenente `accessToken` e salva il file JSON in una posizione sicura nel computer di sviluppo.
    + Questo è il token di accesso per sviluppatori per 24 ore nell’ambiente as a Cloud Service AEM.
