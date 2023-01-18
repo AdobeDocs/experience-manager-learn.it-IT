@@ -7,7 +7,7 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 04cd4002af7028ee9e3b1e1455b6346c56446245
+source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -251,7 +251,7 @@ RewriteRule ^/logo.jpg$ /content/dam/weretail/general/logo.jpg [NC,PT]
 
 In caso di file FILENAME_farm.any da `/etc/httpd/conf.dispatcher.d/available_farms/` la directory viene collegata in modo simbolico `/etc/httpd/conf.dispatcher.d/enabled_farms/` verranno utilizzati nella configurazione in esecuzione.
 
-I file di farm dispongono di sotto-elementi in base a [sezioni principali dell&#39;azienda](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-farms-farms) come cache, intestazioni client, filtri, render e vhosts.
+I file di farm dispongono di sotto-elementi in base a [sezioni principali dell&#39;azienda](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#defining-farms-farms) come cache, intestazioni client, filtri, render e vhosts.
 
 La `FILENAME_farm.any` I file avranno istruzioni di inclusione per ogni file in base a dove devono essere inclusi nel file farm.  Esempio di sintassi di un `FILENAME_farm.any` file come buon riferimento:
 

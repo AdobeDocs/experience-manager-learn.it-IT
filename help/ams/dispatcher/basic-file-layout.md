@@ -7,9 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 04cd4002af7028ee9e3b1e1455b6346c56446245
+source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1161'
 ht-degree: 1%
 
 ---
@@ -146,7 +146,7 @@ Questa directory contiene tutti i `_cache.any`, `_invalidate.any` file creati ch
 
 #### Directory delle intestazioni client
 
-Questa directory può contenere tutte le `_clientheaders.any` file creati che contengono elenchi di intestazioni client da passare a AEM quando arriva una richiesta.  Maggiori dettagli su questa sezione sono disponibili qui [qui](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)
+Questa directory può contenere tutte le `_clientheaders.any` file creati che contengono elenchi di intestazioni client da passare a AEM quando arriva una richiesta.  Maggiori dettagli su questa sezione sono [qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it)
 
 - `/etc/httpd/conf.dispatcher.d/clientheaders/`
 
