@@ -12,9 +12,9 @@ level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
 thumbnail: aem-local-dev-env.jpg
-source-git-commit: a156877ff4439ad21fb79f231d273b8983924199
+source-git-commit: 2b188cbe0ba968b553a20629b89edf5ed377f300
 workflow-type: tm+mt
-source-wordcount: '2538'
+source-wordcount: '2603'
 ht-degree: 2%
 
 ---
@@ -45,37 +45,46 @@ Se hai poca esperienza con AEM, puoi installare due modalità di esecuzione di b
 1. Assicurati che Java™ sia installato.
    * Preferisci [Java™ JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.property.operation=equals&amp;1_group.property.values.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list p.offset=0&amp;p.limit=14) per AEM 6.5+
    * [Java™ JDK 8](https://www.oracle.com/java/technologies/downloads/) per AEM versioni precedenti a AEM 6.5
-2. Ottieni una copia del [AEM QuickStart Jar e un [!DNL license.properties]](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=it).
-3. Crea una struttura di cartelle sul computer come segue:
+1. Ottieni una copia del [AEM QuickStart Jar e un [!DNL license.properties]](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=it).
+1. Crea una struttura di cartelle sul computer come segue:
 
-   ```plain
-   ~/aem-sdk
-       /author
-       /publish
-   ```
+```plain
+~/aem-sdk
+    /author
+    /publish
+```
 
-4. Rinomina il [!DNL QuickStart] JAR a ***aem-author-p4502.jar*** e posizionarlo sotto il `/author` directory. Aggiungi il ***[!DNL license.properties]*** sotto il `/author` directory.
-5. Crea una copia del [!DNL QuickStart] JAR, rinominalo in ***aem-publish-p4503.jar*** e posizionarlo sotto il `/publish` directory. Aggiungi una copia del ***[!DNL license.properties]*** sotto il `/publish` directory.
+1. Rinomina il [!DNL QuickStart] JAR a ***aem-author-p4502.jar*** e posizionarlo sotto il `/author` directory. Aggiungi il ***[!DNL license.properties]*** sotto il `/author` directory.
 
-   ```plain
-   ~/aem-sdk
-       /author
-           + aem-author-p4502.jar
-           + license.properties
-       /publish
-           + aem-publish-p4503.jar
-           + license.properties
-   ```
+1. Crea una copia del [!DNL QuickStart] JAR, rinominalo in ***aem-publish-p4503.jar*** e posizionarlo sotto il `/publish` directory. Aggiungi una copia del ***[!DNL license.properties]*** sotto il `/publish` directory.
 
-6. Fai doppio clic sul pulsante ***aem-author-p4502.jar*** file da installare **Autore** istanza. Viene avviata l’istanza di authoring, in esecuzione sulla porta **4502** sul computer locale.
+```plain
+~/aem-sdk
+    /author
+        + aem-author-p4502.jar
+        + license.properties
+    /publish
+        + aem-publish-p4503.jar
+        + license.properties
+```
 
-   Fai doppio clic sul pulsante ***aem-publish-p4503.jar*** file da installare **Pubblica** istanza. Viene avviata l’istanza Publish, in esecuzione sulla porta **4503** sul computer locale.
+1. Fai doppio clic sul pulsante ***aem-author-p4502.jar*** file da installare **Autore** istanza. Viene avviata l’istanza di authoring, in esecuzione sulla porta **4502** sul computer locale.
 
-   >[!NOTE]
-   >
-   >A seconda dell&#39;hardware del computer di sviluppo, può essere difficile avere entrambi **Creazione e pubblicazione** istanza in esecuzione contemporaneamente. Raramente è necessario eseguire entrambe le operazioni contemporaneamente su una configurazione locale.
+Fai doppio clic sul pulsante ***aem-publish-p4503.jar*** file da installare **Pubblica** istanza. Viene avviata l’istanza Publish, in esecuzione sulla porta **4503** sul computer locale.
 
-   Per ulteriori informazioni, consulta [Distribuzione e manutenzione di un&#39;istanza AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html).
+>[!NOTE]
+>
+>A seconda dell&#39;hardware del computer di sviluppo, può essere difficile avere entrambi **Creazione e pubblicazione** istanza in esecuzione contemporaneamente. Raramente è necessario eseguire entrambe le operazioni contemporaneamente su una configurazione locale.
+
+### Uso della riga di comando
+
+Un&#39;alternativa al doppio clic sul file JAR è avviare AEM dalla riga di comando o creare uno script (`.bat` o `.sh`) a seconda del gusto del sistema operativo locale. Di seguito è riportato un esempio del comando di esempio:
+
+```shell
+$ java -Xmx2048M -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=30303 -jar aem-author-p4502.jar -gui -r"author,localdev"
+```
+
+Qui, il `-X` sono opzioni JVM e `-D` sono proprietà del framework aggiuntive, per ulteriori informazioni, consulta [Distribuzione e manutenzione di un&#39;istanza AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=it) e [Altre opzioni disponibili nel file Quickstart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/custom-standalone-install.html#further-options-available-from-the-quickstart-file).
 
 ## Installa Apache Maven
 
@@ -94,18 +103,18 @@ Tutti i progetti AEM devono essere basati sull’ultima versione di **[!DNL AEM 
    * [!DNL macOS] gli utenti possono installare Maven utilizzando [Ebraico](https://brew.sh/)
 3. Verifica che **[!DNL Maven]** viene installato aprendo un nuovo terminale della riga di comando ed eseguendo quanto segue:
 
-   ```shell
-   $ mvn --version
-   Apache Maven 3.3.9
-   Maven home: /Library/apache-maven-3.3.9
-   Java version: 1.8.0_111, vendor: Oracle Corporation
-   Java home: /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre
-   Default locale: en_US, platform encoding: UTF-8
-   ```
+```shell
+$ mvn --version
+Apache Maven 3.3.9
+Maven home: /Library/apache-maven-3.3.9
+Java version: 1.8.0_111, vendor: Oracle Corporation
+Java home: /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre
+Default locale: en_US, platform encoding: UTF-8
+```
 
-   >[!NOTE]
-   >
-   > Inoltre, l&#39;aggiunta precedente di `adobe-public` Il profilo Maven era necessario per puntare `nexus.adobe.com` per scaricare AEM artefatti. Tutti gli artefatti AEM sono ora disponibili tramite Maven Central e `adobe-public` profilo non necessario.
+>[!NOTE]
+>
+> Inoltre, l&#39;aggiunta precedente di `adobe-public` Il profilo Maven era necessario per puntare `nexus.adobe.com` per scaricare AEM artefatti. Tutti gli artefatti AEM sono ora disponibili tramite Maven Central e `adobe-public` profilo non necessario.
 
 ## Configurare un ambiente di sviluppo integrato
 
@@ -133,7 +142,7 @@ La **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** è uno degli IDE più 
 
 #### Installazione e configurazione
 
-1. Scarica e installa la [!DNL Eclipse] IDE per [!DNL Java™™™™™™™™ EE Developers]: [https://www.eclipse.org](https://www.eclipse.org/)
+1. Scarica e installa la [!DNL Eclipse] IDE per [!DNL Java™ EE Developers]: [https://www.eclipse.org](https://www.eclipse.org/)
 1. Segui le istruzioni per installare [!DNL AEM Developer Tools] plugin: [https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
