@@ -1,6 +1,6 @@
 ---
-title: Esplora le API GraphQL - Guida introduttiva a AEM Headless - GraphQL
-description: Guida introduttiva ad Adobe Experience Manager (AEM) e GraphQL. Esplora AEM API GraphQL utilizzando l’IDE GrapiQL integrato. Scopri come AEM automaticamente uno schema GraphQL basato su un modello di frammento di contenuto. Prova a costruire query di base utilizzando la sintassi GraphQL.
+title: Esplora le API di GraphQL - Guida introduttiva a AEM Headless - GraphQL
+description: Guida introduttiva ad Adobe Experience Manager (AEM) e GraphQL. Esplora AEM API di GraphQL utilizzando l’IDE GrapiQL integrato. Scopri come AEM automaticamente uno schema GraphQL basato su un modello di frammento di contenuto. Prova a costruire query di base utilizzando la sintassi GraphQL.
 version: Cloud Service
 mini-toc-levels: 1
 kt: 6714
@@ -10,18 +10,18 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: 25c289b093297e870c52028a759d05628d77f634
+source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
 workflow-type: tm+mt
-source-wordcount: '1535'
-ht-degree: 4%
+source-wordcount: '1454'
+ht-degree: 1%
 
 ---
 
-# Esplorare le API GraphQL {#explore-graphql-apis}
+# Esplorare le API di GraphQL {#explore-graphql-apis}
 
-L’API GraphQL di AEM fornisce un potente linguaggio di query per esporre i dati dei frammenti di contenuto alle applicazioni a valle. I modelli di frammenti di contenuto definiscono lo schema di dati utilizzato dai frammenti di contenuto. Ogni volta che viene creato o aggiornato un modello di frammento di contenuto, lo schema viene tradotto e aggiunto al &quot;grafico&quot; che costituisce l’API GraphQL.
+L’API GraphQL di AEM fornisce un potente linguaggio di query per esporre i dati dei frammenti di contenuto alle applicazioni downstream. I modelli di frammenti di contenuto definiscono lo schema di dati utilizzato dai frammenti di contenuto. Ogni volta che un modello di frammento di contenuto viene creato o aggiornato, lo schema viene tradotto e aggiunto al &quot;grafico&quot; che costituisce l’API GraphQL.
 
-In questo capitolo vengono esplorate alcune query GraphQL comuni per raccogliere contenuti utilizzando un IDE chiamato [GraphiQL](https://github.com/graphql/graphiql). L&#39;IDE GraphiQL ti consente di testare e perfezionare rapidamente le query e i dati restituiti. Offre inoltre un facile accesso alla documentazione, facilitando l’apprendimento e la comprensione dei metodi disponibili.
+In questo capitolo, esaminiamo alcune query GraphQL comuni per raccogliere contenuti utilizzando un IDE denominato [GraphiQL](https://github.com/graphql/graphiql). L&#39;IDE GraphiQL ti consente di testare e perfezionare rapidamente le query e i dati restituiti. Offre inoltre un facile accesso alla documentazione, facilitando l’apprendimento e la comprensione dei metodi disponibili.
 
 ## Prerequisiti {#prerequisites}
 
@@ -52,7 +52,7 @@ Si tratta di un tutorial in più parti e si presume che i passaggi descritti in 
 
    Tocca **Crea** per salvare l’endpoint.
 
-   Gli endpoint GraphQL creati in base a una configurazione di progetto abilitano solo le query per i modelli appartenenti a tale progetto. In questo caso, le uniche query contro **Persona** e **Team** è possibile utilizzare modelli.
+   Gli endpoint GraphQL creati in base a una configurazione di progetto abilitano solo le query rispetto ai modelli appartenenti a tale progetto. In questo caso, le uniche query contro **Persona** e **Team** è possibile utilizzare modelli.
 
    >[!NOTE]
    >
@@ -66,7 +66,7 @@ Si tratta di un tutorial in più parti e si presume che i passaggi descritti in 
 
 La [GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) lo strumento consente agli sviluppatori di creare e testare query rispetto al contenuto nell’ambiente AEM corrente. Lo strumento GraphiQL consente inoltre agli utenti di **persistere o salvare** le query che devono essere utilizzate dalle applicazioni client in un&#39;impostazione di produzione.
 
-Quindi, scopri la potenza dell’API GraphQL AEM utilizzando l’IDE GraphiQL integrato.
+Esamina quindi la potenza dell’API GraphQL AEM utilizzando l’IDE GraphiQL integrato.
 
 1. Dalla schermata iniziale AEM, passa a **Strumenti** > **Generale** > **Editor query GraphQL**.
 
@@ -174,7 +174,7 @@ Successivamente, l&#39;esperimento con l&#39;esecuzione di query consiste nel re
    }
    ```
 
-   La capacità di eseguire query sui frammenti nidificati è una funzione potente dell’API GraphQL AEM. In questo semplice esempio, la nidificazione è profonda solo due livelli. Tuttavia è possibile nidificare ulteriormente i frammenti. Ad esempio, se è presente un **Indirizzo** modello associato a un **Persona** sarebbe possibile restituire i dati di tutti e tre i modelli in un’unica query.
+   La possibilità di eseguire query sui frammenti nidificati è una funzione potente dell’API GraphQL AEM. In questo semplice esempio, la nidificazione è profonda solo due livelli. Tuttavia è possibile nidificare ulteriormente i frammenti. Ad esempio, se è presente un **Indirizzo** modello associato a un **Persona** sarebbe possibile restituire i dati di tutti e tre i modelli in un’unica query.
 
 ### Filtrare un elenco di frammenti di contenuto {#filter-list-cf}
 
@@ -395,29 +395,17 @@ Scarica il contenuto, i modelli e le query persistenti create negli ultimi tre c
 
 ## Risorse aggiuntive
 
-Ulteriori informazioni sulle query GraphQL in [Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
+Ulteriori informazioni sulle query GraphQL all&#39;indirizzo [Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
 
-## Congratulazioni! {#congratulations}
+## Congratulazioni.  {#congratulations}
 
 Congratulazioni, hai creato ed eseguito diverse query GraphQL!
 
 ## Passaggi successivi {#next-steps}
 
-Nel capitolo successivo, [Creare un’app React](./graphql-and-react-app.md), puoi esplorare come un’applicazione esterna può eseguire query AEM endpoint GraphQL e utilizzare queste due query persistenti. Viene inoltre introdotta una gestione degli errori di base durante l’esecuzione delle query GraphQL.
+Nel capitolo successivo, [Creare un’app React](./graphql-and-react-app.md), illustra come un’applicazione esterna può eseguire query AEM endpoint GraphQL e utilizzare queste due query persistenti. Sono inoltre state introdotte alcune informazioni di base sulla gestione degli errori durante l’esecuzione delle query GraphQL.
 
 ## Installare lo strumento GraphiQL (facoltativo) {#install-graphiql}
 
-In, alcune versioni di AEM (6.X.X) lo strumento GraphiQL IDE deve essere installato manualmente, utilizza le seguenti istruzioni:
+In, alcune versioni di AEM (6.X.X) lo strumento GraphiQL IDE deve essere installato manualmente, utilizza il [istruzioni da qui](../how-to/install-graphiql-aem-6-5.md).
 
-1. Vai a **[Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html)** > **AEM as a Cloud Service**.
-1. Cerca “GraphiQL” (assicurati di includere **i** in **GraphiQL**.
-1. Scarica la versione più recente del **pacchetto di contenuti GraphiQL v.x.x.x**
-
-   ![Scarica il pacchetto GraphiQL](assets/explore-graphql-api/software-distribution.png)
-
-   Il file zip è un pacchetto AEM che può essere installato direttamente.
-
-1. Dal menu Start AEM, passa a **Strumenti** > **Distribuzione** > **Pacchetti**.
-1. Fai clic su **Carica pacchetto**, quindi seleziona il pacchetto scaricato nel passaggio precedente. Per installare il pacchetto, fai clic su **Installa**.
-
-   ![Installa pacchetto GraphiQL](assets/explore-graphql-api/install-graphiql-package.png)
