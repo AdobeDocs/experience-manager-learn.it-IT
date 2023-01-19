@@ -8,9 +8,9 @@ role: Developer
 level: Intermediate
 kt: 11743
 last-substantial-update: 2023-01-17T00:00:00Z
-source-git-commit: de2788d8f3971a47fca53e35ee84cbbaa0137140
+source-git-commit: 643a9844f19aa1bd153661540ec7f7398a35118e
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '469'
 ht-degree: 1%
 
 ---
@@ -69,21 +69,24 @@ La `JWT_PRIVATE_KEY` devono essere formattati in modo particolare in quanto si t
 >[!TAB macOS]
 
 1. Apri `Terminal`
-1. `$ base64 -i /path/to/private.key | pbcopy`
+1. Esegui il comando `base64 -i /path/to/private.key | pbcopy`
 1. L&#39;output base64 viene copiato automaticamente negli Appunti
+1. Incolla in `.env` come valore della chiave corrispondente
 
 >[!TAB Windows]
 
 1. Apri `Command Prompt`
-1. `$ certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
-1. `$ findstr /v CERTIFICATE C:\path\to\encoded-private.key`
+1. Esegui il comando `certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
+1. Esegui il comando `findstr /v CERTIFICATE C:\path\to\encoded-private.key`
 1. Copia l&#39;output base64 negli appunti
+1. Incolla in `.env` come valore della chiave corrispondente
 
 >[!TAB Linux®]
 
 1. Terminale aperto
-1. `$ base64 private.key`
+1. Esegui il comando `base64 private.key`
 1. Copia l&#39;output base64 negli appunti
+1. Incolla in `.env` come valore della chiave corrispondente
 
 >[!ENDTABS]
 
