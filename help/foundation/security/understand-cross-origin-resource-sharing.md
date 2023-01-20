@@ -11,9 +11,9 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: 7c2115945e2d62f52c777bba4d736ecd3262eecc
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -89,38 +89,84 @@ Se non è stato configurato alcun criterio, [!DNL CORS] Le richieste non ricever
 
 Il sito 1 è uno scenario di base, anonimamente accessibile e di sola lettura in cui il contenuto viene utilizzato tramite [!DNL GET] richieste:
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
-    jcr:primaryType="sling:OsgiConfig"
-    alloworigin="[https://site1.com]"
-    alloworiginregexp="[]"
-    allowedpaths="[/content/site1/.*]"
-    exposedheaders="[]"
-    maxage="{Long}1800"
-    supportedheaders="[Origin,Accept,X-Requested-With,Content-Type,
-Access-Control-Request-Method,Access-Control-Request-Headers]"
-    supportedmethods="[GET]"
-    supportscredentials="{Boolean}false"
-/>
+```json
+{
+  "supportscredentials":false,
+  "exposedheaders":[
+    ""
+  ],
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "OPTIONS"
+  ],
+  "alloworigin":[
+    "http://127.0.0.1:3000",
+    "https://site1.com"
+    
+  ],
+  "maxage:Integer": 1800,
+  "alloworiginregexp":[
+    "http://localhost:.*"
+    "https://.*\.site1\.com"
+  ],
+  "allowedpaths":[
+    "/content/_cq_graphql/site1/endpoint.json",
+    "/graphql/execute.json.*",
+    "/content/site1/.*"
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers",
+  ]
+}
 ```
 
-Il sito 2 è più complesso e richiede richieste autorizzate e non sicure:
+Il sito 2 è più complesso e richiede richieste autorizzate e mutanti (POST, PUT, DELETE):
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
-    jcr:primaryType="sling:OsgiConfig"
-    alloworigin="[https://site2.com]"
-    alloworiginregexp="[]"
-    allowedpaths="[/content/site2/.*,/libs/granite/csrf/token.json]"
-    exposedheaders="[]"
-    maxage="{Long}1800"
-    supportedheaders="[Origin,Accept,X-Requested-With,Content-Type,
-Access-Control-Request-Method,Access-Control-Request-Headers,Authorization,CSRF-Token]"
-    supportedmethods="[GET,HEAD,POST,DELETE,OPTIONS,PUT]"
-    supportscredentials="{Boolean}true"
-/>
+```json
+{
+  "supportscredentials":true,
+  "exposedheaders":[
+    ""
+  ],
+  "supportedmethods":[
+    "GET",
+    "HEAD"
+    "POST",
+    "DELETE",
+    "OPTIONS",
+    "PUT"
+  ],
+  "alloworigin":[
+    "http://127.0.0.1:3000",
+    "https://site2.com"
+    
+  ],
+  "maxage:Integer": 1800,
+  "alloworiginregexp":[
+    "http://localhost:.*"
+    "https://.*\.site2\.com"
+  ],
+  "allowedpaths":[
+    "/content/site2/.*",
+    "/libs/granite/csrf/token.json",
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers",
+    "Authorization",
+    "CSRF-Token"
+  ]
+}
 ```
 
 ## Problemi e configurazione della memorizzazione in cache di Dispatcher {#dispatcher-caching-concerns-and-configuration}
@@ -132,8 +178,8 @@ Generalmente, le stesse considerazioni per la memorizzazione in cache del conten
 | In cache | Ambiente | Stato di autenticazione | Spiegazione |
 |-----------|-------------|-----------------------|-------------|
 | No | AEM Publish | Autenticato | Il caching del Dispatcher su AEM Author è limitato alle risorse statiche e non create. Questo rende difficile e poco pratico memorizzare nella cache la maggior parte delle risorse su AEM Author, comprese le intestazioni di risposta HTTP. |
-| No | Pubblicazione AEM | Autenticato | Evita di memorizzare in cache le intestazioni CORS sulle richieste autenticate. Questo si allinea alle linee guida comuni per non memorizzare in cache le richieste autenticate, in quanto è difficile determinare in che modo lo stato di autenticazione/autorizzazione dell’utente richiedente influirà sulla risorsa consegnata. |
-| Sì | Pubblicazione AEM | Anonimo | Le richieste anonime che possono essere memorizzate nella cache del dispatcher possono avere anche le loro intestazioni di risposta memorizzate nella cache, garantendo che le future richieste CORS possano accedere al contenuto memorizzato nella cache. Qualsiasi modifica alla configurazione CORS su AEM Publish **deve** seguito da un’invalidazione delle risorse memorizzate nella cache interessate. Le best practice determinano le implementazioni di codice o di configurazione che la cache del dispatcher viene eliminata, in quanto è difficile determinare quale contenuto memorizzato nella cache può essere eseguito. |
+| No | AEM Publish | Autenticato | Evita di memorizzare in cache le intestazioni CORS sulle richieste autenticate. Questo si allinea alle linee guida comuni per non memorizzare in cache le richieste autenticate, in quanto è difficile determinare in che modo lo stato di autenticazione/autorizzazione dell’utente richiedente influirà sulla risorsa consegnata. |
+| Sì | AEM Publish | Anonimo | Le richieste anonime che possono essere memorizzate nella cache del dispatcher possono avere anche le loro intestazioni di risposta memorizzate nella cache, garantendo che le future richieste CORS possano accedere al contenuto memorizzato nella cache. Qualsiasi modifica alla configurazione CORS su AEM Publish **deve** seguito da un’invalidazione delle risorse memorizzate nella cache interessate. Le best practice determinano le implementazioni di codice o di configurazione che la cache del dispatcher viene eliminata, in quanto è difficile determinare quale contenuto memorizzato nella cache può essere eseguito. |
 
 Per consentire il caching delle intestazioni CORS, aggiungi la seguente configurazione a tutti i file AEM Publish dispatcher.any che supportano.
 
