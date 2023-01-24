@@ -12,9 +12,9 @@ mini-toc-levels: 1
 thumbnail: 30207.jpg
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
 workflow-type: tm+mt
-source-wordcount: '3014'
+source-wordcount: '2980'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,13 @@ Questa esercitazione descrive l&#39;implementazione di un test di unità che con
 
 Rivedere gli strumenti e le istruzioni necessari per la configurazione di un [ambiente di sviluppo locale](overview.md#local-dev-environment).
 
-_Se sul sistema sono installati sia Java 8 che Java 11, il runner di test del codice VS può scegliere il runtime Java inferiore durante l’esecuzione dei test, dando luogo a errori di test. In questo caso, disinstalla Java 8._
+_Se sul sistema sono installati sia Java™ 8 che Java™ 11, il driver di test del codice VS può scegliere il runtime Java™ inferiore durante l&#39;esecuzione dei test, dando luogo a errori di test. In questo caso, disinstalla Java™ 8._
 
 ### Progetto iniziale
 
 >[!NOTE]
 >
-> Se hai completato con successo il capitolo precedente, puoi riutilizzare il progetto e saltare i passaggi per il check-out del progetto iniziale.
+> Se il capitolo precedente è stato completato correttamente, puoi riutilizzare il progetto e saltare i passaggi per il check-out del progetto iniziale.
 
 Controlla il codice della riga di base su cui si basa l&#39;esercitazione:
 
@@ -68,7 +68,7 @@ Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/a
 
 ## Informazioni di base {#unit-testing-background}
 
-In questa esercitazione verrà descritto come scrivere [Test di unità](https://en.wikipedia.org/wiki/Unit_testing) per il componente Byline [Modello Sling](https://sling.apache.org/documentation/bundles/models.html) (creato in [Creazione di un componente AEM personalizzato](custom-component.md)). I test di unità sono test di build-time scritti in Java che verificano il comportamento previsto del codice Java. Ogni unit test è generalmente di piccole dimensioni e convalida l&#39;output di un metodo (o unità di lavoro) in base ai risultati previsti.
+In questa esercitazione verrà descritto come scrivere [Test di unità](https://en.wikipedia.org/wiki/Unit_testing) per il componente Byline [Modello Sling](https://sling.apache.org/documentation/bundles/models.html) (creato in [Creazione di un componente AEM personalizzato](custom-component.md)). I test di unità sono test di build-time scritti in Java™ che verificano il comportamento previsto del codice Java™. Ogni unit test è tipicamente piccolo e convalida l&#39;output di un metodo (o unità di lavoro) in base ai risultati attesi.
 
 Utilizziamo AEM best practice e utilizziamo:
 
@@ -78,7 +78,7 @@ Utilizziamo AEM best practice e utilizziamo:
 
 ## Test di unità e Adobe Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
-[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=it) integra l&#39;esecuzione di unit test e [reportistica della copertura del codice](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) nella sua pipeline CI/CD per incoraggiare e promuovere le migliori pratiche di testing di unità AEM codice.
+[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) integra l&#39;esecuzione di unit test e [reportistica della copertura del codice](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html) nella sua pipeline CI/CD per incoraggiare e promuovere le migliori pratiche di testing di unità AEM codice.
 
 Anche se il codice di testing di unità è una buona pratica per qualsiasi base di codice, quando utilizzi Cloud Manager è importante sfruttare i suoi servizi di testing e reporting per la qualità del codice, fornendo test di unità per l’esecuzione di Cloud Manager.
 
@@ -91,7 +91,7 @@ Il primo passo è quello di controllare le dipendenze Maven per supportare la sc
 1. Apache Sling Mocks
 1. Framework di test di AEM (di io.wcm)
 
-La **JUnit5**, **Mockito** e **Mocks AEM** le dipendenze del test vengono aggiunte automaticamente al progetto durante l&#39;installazione utilizzando [AEM archetipo Maven](project-setup.md).
+La **JUnit5**, **Mockito, e **Mocks AEM** le dipendenze del test vengono aggiunte automaticamente al progetto durante l&#39;installazione utilizzando [AEM archetipo Maven](project-setup.md).
 
 1. Per visualizzare queste dipendenze, apri il POM del reattore principale in **aem-guides-wknd/pom.xml**, passa alla `<dependencies>..</dependencies>` e visualizzare le dipendenze per JUnit, Mockito, Apache Sling Mocks e AEM Mock Test di io.wcm sotto `<!-- Testing -->`.
 1. Assicurati che `io.wcm.testing.aem-mock.junit5` è impostato su **4.1.0**:
@@ -115,13 +115,13 @@ La **JUnit5**, **Mockito** e **Mocks AEM** le dipendenze del test vengono aggiun
 
 ## Creazione del test JUnit {#creating-the-junit-test}
 
-I test di unità generalmente vengono mappati da 1 a 1 con classi Java. In questo capitolo, scriveremo un test JUnit per il **BylineImpl.java**, che è il modello Sling che supporta il componente Byline.
+I test di unità generalmente vengono mappati da 1 a 1 con classi Java™. In questo capitolo, scriveremo un test JUnit per il **BylineImpl.java**, che è il modello Sling che supporta il componente Byline.
 
 ![Cartella src di prova unità](assets/unit-testing/core-src-test-folder.png)
 
 *Posizione in cui sono archiviati i test di unità.*
 
-1. Crea un test di unità per `BylineImpl.java` facendo una nuova classe Java in `src/test/java` in una struttura di cartelle di pacchetti Java che rispecchia la posizione della classe Java da testare.
+1. Crea un test di unità per `BylineImpl.java` creando una nuova classe Java™ in `src/test/java` in una struttura di cartelle di pacchetti Java™ che rispecchia la posizione della classe Java™ da testare.
 
    ![Crea un nuovo file BylineImplTest.java](assets/unit-testing/new-bylineimpltest.png)
 
@@ -129,7 +129,7 @@ I test di unità generalmente vengono mappati da 1 a 1 con classi Java. In quest
 
    * `src/main/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImpl.java`
 
-   crea una classe Java di test di unità corrispondente in
+   creare una classe Java™ di test unità corrispondente in
 
    * `src/test/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.java`
 
@@ -142,7 +142,7 @@ I test di unità generalmente vengono mappati da 1 a 1 con classi Java. In quest
 
 ## Revisione di BylineImplTest.java {#reviewing-bylineimpltest-java}
 
-A questo punto, il file di test JUnit è una classe Java vuota.
+A questo punto, il file di test JUnit è una classe Java™ vuota.
 
 1. Aggiorna il file con il seguente codice:
 
@@ -212,7 +212,7 @@ Durante la scrittura di unit test, esistono due approcci principali:
 * [Sviluppo basato su TDD o su test](https://en.wikipedia.org/wiki/Test-driven_development), che comporta la scrittura incrementale dei test unitari, immediatamente prima dello sviluppo dell&#39;implementazione; scrivi un test, scrivi l&#39;implementazione per far passare il test.
 * Implementazione-primo sviluppo, che comporta lo sviluppo prima del codice di lavoro e poi la scrittura di test che convalidano tale codice.
 
-In questa esercitazione viene utilizzato l’ultimo approccio (in quanto abbiamo già creato un **BylineImpl.java** in un capitolo precedente). Per questo motivo, dobbiamo rivedere e comprendere i comportamenti dei suoi metodi pubblici, ma anche alcuni dei relativi dettagli di implementazione. Ciò può sembrare contrario, poiché un buon test dovrebbe preoccuparsi solo degli input e dei risultati, tuttavia, quando si lavora in AEM, è necessario comprendere una serie di considerazioni di attuazione al fine di costruire test di lavoro.
+In questa esercitazione viene utilizzato l’ultimo approccio (in quanto abbiamo già creato un **BylineImpl.java** in un capitolo precedente). Per questo motivo, dobbiamo rivedere e comprendere i comportamenti dei suoi metodi pubblici, ma anche alcuni dei relativi dettagli di implementazione. Ciò può sembrare contrario, poiché un buon test dovrebbe preoccuparsi solo degli input e dei risultati, tuttavia quando si lavora in AEM, ci sono varie considerazioni di implementazione che devono essere comprese per costruire i test di lavoro.
 
 Il TDD nel contesto di AEM richiede un livello di competenza ed è meglio adottato dagli sviluppatori AEM esperti nello sviluppo AEM e nel testing di unità del codice AEM.
 
@@ -236,13 +236,13 @@ Poiché i test di unità vengono eseguiti nella build, al di fuori del contesto 
        private final AemContext ctx = new AemContext();
    ```
 
-   Questa variabile, `ctx`, espone un contesto AEM fittizio che fornisce una serie di astrazioni AEM e Sling:
+   Questa variabile, `ctx`, espone un contesto AEM fittizio che fornisce alcune astrazioni AEM e Sling:
 
    * Il modello Sling BylineImpl è registrato in questo contesto
    * Le strutture di contenuto JCR bloccate vengono create in questo contesto
    * I servizi OSGi personalizzati possono essere registrati in questo contesto
-   * Fornisce una varietà di oggetti e assistenti comuni richiesti come oggetti SlingHttpServletRequest, una varietà di servizi Sling e OSGi di simulazione come ModelFactory, PageManager, Page, Template, ComponentManager, ComponentManager, Component, TagManager, Tag, ecc.
-      * *Non tutti i metodi per questi oggetti sono implementati.*
+   * Fornisce vari oggetti e assistenti comuni richiesti come oggetti SlingHttpServletRequest, vari servizi Sling e OSGi di simulazione come ModelFactory, PageManager, Page, Template, ComponentManager, ComponentManager, Component, TagManager, Tag, ecc.
+      * *Non tutti i metodi per questi oggetti sono implementati!*
    * E [molto altro](https://wcm.io/testing/aem-mock/usage.html)!
 
    La **`ctx`** l&#39;oggetto fungerà da punto di ingresso per la maggior parte del nostro contesto fittizio.
@@ -261,9 +261,9 @@ Poiché i test di unità vengono eseguiti nella build, al di fuori del contesto 
    * **`load().json`** carica le strutture delle risorse nel contesto fittizio, consentendo al codice di interagire con tali risorse come se fossero fornite da un archivio reale. Definizioni delle risorse nel file **`BylineImplTest.json`** sono caricati nel contesto JCR fittizio in **/content**.
    * **`BylineImplTest.json`** non esiste ancora, quindi creiamolo e definiamo le strutture di risorse JCR necessarie per il test.
 
-1. I file JSON che rappresentano le strutture delle risorse fittizie sono memorizzati in **core/src/test/resources** seguendo lo stesso percorso del pacchetto del file di test Java JUnit.
+1. I file JSON che rappresentano le strutture delle risorse fittizie sono memorizzati in **core/src/test/resources** seguendo lo stesso percorso del pacchetto del file di prova JUnit Java™.
 
-   Crea un nuovo file JSON in `core/test/resources/com/adobe/aem/guides/wknd/core/models/impl` denominato **BylineImplTest.json** con il seguente contenuto:
+   Crea un file JSON in `core/test/resources/com/adobe/aem/guides/wknd/core/models/impl` denominato **BylineImplTest.json** con il seguente contenuto:
 
    ```json
    {
@@ -312,7 +312,7 @@ Ora che abbiamo una configurazione di base del contesto simulato, scriviamo il n
 
 1. Esegui il test... e non riesce con un `NullPointerException`.
 
-   Tieni presente che questo test NON ha esito negativo perché non abbiamo mai definito un `name` in JSON fittizio, questo causerà il fallimento del test, tuttavia l’esecuzione del test non è arrivata a quel punto! Questo test non riesce a causa di un `NullPointerException` sull&#39;oggetto byline stesso.
+   Questo test NON fallisce perché non abbiamo mai definito un `name` in JSON fittizio, questo causerà il fallimento del test, tuttavia l’esecuzione del test non è arrivata a quel punto! Questo test non riesce a causa di un `NullPointerException` sull&#39;oggetto byline stesso.
 
 1. In `BylineImpl.java`, se `@PostConstruct init()` genera un&#39;eccezione che impedisce la creazione di istanze del modello Sling e fa sì che l&#39;oggetto modello Sling sia nullo.
 
@@ -379,13 +379,13 @@ Ora che abbiamo una configurazione di base del contesto simulato, scriviamo il n
    }
    ```
 
-   * **`@ExtendWith({AemContextExtension.class, MockitoExtension.class})`** contrassegna la classe Test Case da eseguire con [Estensione Jupiter Mockito](https://www.javadoc.io/page/org.mockito/mockito-junit-jupiter/latest/org/mockito/junit/jupiter/MockitoExtension.html) che consente di utilizzare le annotazioni @Mock per definire oggetti fittizi a livello di Classe.
-   * **`@Mock private Image`** crea un oggetto fittizio di tipo `com.adobe.cq.wcm.core.components.models.Image`. Si noti che questo è definito a livello di classe in modo che, se necessario, `@Test` i metodi possono modificarne il comportamento in base alle esigenze.
-   * **`@Mock private ModelFactory`** crea un oggetto fittizio di tipo ModelFactory. Tieni presente che questa è una zanzara pura Mockito e non ha metodi implementati su di essa. Si noti che questo è definito a livello di classe in modo che, se necessario, `@Test`i metodi possono modificarne il comportamento in base alle esigenze.
+   * **`@ExtendWith({AemContextExtension.class, MockitoExtension.class})`** contrassegna la classe Test Case da eseguire con [Estensione Jupiter Mockito](https://www.javadoc.io/static/org.mockito/mockito-junit-jupiter/4.11.0/org/mockito/junit/jupiter/MockitoExtension.html) che consente di utilizzare le annotazioni @Mock per definire oggetti fittizi a livello di Classe.
+   * **`@Mock private Image`** crea un oggetto fittizio di tipo `com.adobe.cq.wcm.core.components.models.Image`. Questo viene definito a livello di classe in modo che, se necessario, `@Test` i metodi possono modificarne il comportamento in base alle esigenze.
+   * **`@Mock private ModelFactory`** crea un oggetto fittizio di tipo ModelFactory. Questa è una zocca pura Mockito e non ha metodi implementati su di esso. Questo viene definito a livello di classe in modo che, se necessario, `@Test`i metodi possono modificarne il comportamento in base alle esigenze.
    * **`when(modelFactory.getModelFromWrappedRequest(..)`** registra il comportamento scorretto per quando `getModelFromWrappedRequest(..)` viene chiamato sull&#39;oggetto ModelFactory fittizio. Il risultato definito in `thenReturn (..)` restituisce l&#39;oggetto immagine fittizio. Questo comportamento viene richiamato solo quando: il primo parametro è uguale al `ctx`Oggetto di richiesta, il secondo parametro è qualsiasi oggetto Resource e il terzo parametro deve essere la classe Immagine dei componenti core. Accettiamo qualsiasi risorsa perché durante i nostri test impostiamo il `ctx.currentResource(...)` a varie risorse di simulazione definite in **BylineImplTest.json**. Si noti che viene aggiunta la **lenient()** rigorosità perché in seguito vogliamo ignorare questo comportamento di ModelFactory.
    * **`ctx.registerService(..)`.** registra l&#39;oggetto ModelFactory in AemContext, con la classificazione di servizio più alta. Questo è necessario perché ModelFactory utilizzato nel BylineImpl&#39;s `init()` viene inserito tramite `@OSGiService ModelFactory model` campo . Per l’inserimento di AemContext **nostro** oggetto fittizio, che gestisce le chiamate a `getModelFromWrappedRequest(..)`, dobbiamo registrarlo come il servizio di classificazione più alto di quel tipo (ModelFactory).
 
-1. Esegui nuovamente il test e non riesce, ma questa volta il messaggio è chiaro perché non è riuscito.
+1. Esegui nuovamente il test e non riesce, ma questa volta il messaggio è chiaro perché il test è fallito.
 
    ![asserzione di errore del nome del test](assets/unit-testing/testgetname-failure-assertion.png)
 
@@ -412,7 +412,7 @@ Ora che abbiamo una configurazione di base del contesto simulato, scriviamo il n
 
 ## Verifica di getOccupations() {#testing-get-occupations}
 
-Ok ottimo! Il nostro primo test è passato! Andiamo avanti e testiamo `getOccupations()`. Poiché l&#39;inizializzazione del contesto di simulazione è stata eseguita nel `@Before setUp()`, disponibile per tutti `@Test` metodi in questo caso di test, tra cui `getOccupations()`.
+Ok ottimo! Il primo test è passato! Andiamo avanti e testiamo `getOccupations()`. Poiché l&#39;inizializzazione del contesto di simulazione è stata eseguita nel `@Before setUp()`, disponibile per tutti `@Test` metodi in questo caso di test, tra cui `getOccupations()`.
 
 Tenere presente che questo metodo deve restituire un elenco alfabetico delle occupazioni (decrescente) memorizzate nella proprietà occupazioni.
 
@@ -470,16 +470,16 @@ Tenere presente che questo metodo deve restituire un elenco alfabetico delle occ
 
 Ultimo metodo di prova **`isEmpty()`**.
 
-Test `isEmpty()` è interessante in quanto richiede test per una varietà di condizioni. Revisione **BylineImpl.java** s `isEmpty()` il metodo deve essere sottoposto a prova nelle seguenti condizioni:
+Test `isEmpty()` è interessante in quanto richiede test per varie condizioni. Revisione **BylineImpl.java** s `isEmpty()` il metodo deve essere sottoposto a prova nelle seguenti condizioni:
 
 * Restituisce true quando il nome è vuoto
 * Restituisce true quando le occupazioni sono nulle o vuote
 * Restituisce true quando l&#39;immagine è null o non ha un URL src
 * Restituisce false se sono presenti nome, occupazioni e immagine (con un URL src)
 
-A questo scopo, è necessario creare nuovi metodi di test, ogni test di una condizione specifica e nuove strutture di risorse di simulazione in `BylineImplTest.json` per condurre questi test.
+A questo scopo, è necessario creare metodi di test, ogni test di una condizione specifica e nuove strutture di risorse fittizie in `BylineImplTest.json` per condurre questi test.
 
-Tieni presente che questo controllo ci ha permesso di saltare il test per quando `getName()`, `getOccupations()` e `getImage()` sono vuoti perché il comportamento previsto di tale stato viene testato tramite `isEmpty()`.
+Questo controllo ci ha permesso di saltare il test per quando `getName()`, `getOccupations()` e `getImage()` sono vuoti perché il comportamento previsto di tale stato viene testato tramite `isEmpty()`.
 
 1. Il primo test verifica la condizione di un componente nuovo, che non ha proprietà impostate.
 
@@ -547,7 +547,7 @@ Tieni presente che questo controllo ci ha permesso di saltare il test per quando
    }
    ```
 
-   Crea i seguenti metodi di test per verificare ciascuno di questi stati.
+   Crea i seguenti metodi di test per testare ciascuno di questi stati.
 
    ```java
    @Test
@@ -608,7 +608,7 @@ Tieni presente che questo controllo ci ha permesso di saltare il test per quando
 
    **`testIsEmpty_WithoutOccupations()`** esegue il test rispetto a una definizione di risorsa fittizia con un nome ma senza occupazioni.
 
-   **`testIsEmpty_WithoutImage()`** esegue il test rispetto a una definizione di risorsa fittizia con un nome e occupazioni, ma imposta l&#39;immagine fittizia affinché ritorni a null. Tieni presente che desideri ignorare il `modelFactory.getModelFromWrappedRequest(..)`comportamento definito in `setUp()` per garantire che l&#39;oggetto Image restituito da questa chiamata sia null. La funzione stub Mockito è rigida e non vuole codice duplicato. Pertanto abbiamo impostato il mock con **`lenient`** impostazioni per notare esplicitamente che ignoriamo il comportamento nel `setUp()` metodo .
+   **`testIsEmpty_WithoutImage()`** esegue il test rispetto a una definizione di risorsa fittizia con un nome e occupazioni, ma imposta l&#39;immagine fittizia affinché ritorni a null. Tieni presente che desideri ignorare il `modelFactory.getModelFromWrappedRequest(..)`comportamento definito in `setUp()` per garantire che l&#39;oggetto Image restituito da questa chiamata sia null. La funzionalità stub Mockito è rigida e non desidera un codice duplicato. Pertanto abbiamo impostato il mock con **`lenient`** impostazioni per notare esplicitamente che ignoriamo il comportamento nel `setUp()` metodo .
 
    **`testIsEmpty_WithoutImageSrc()`** esegue il test rispetto a una definizione di risorsa fittizia con un nome e occupazioni, ma imposta l&#39;immagine fittizia per restituire una stringa vuota quando `getSrc()` viene richiamato.
 
@@ -626,13 +626,13 @@ Tieni presente che questo controllo ci ha permesso di saltare il test per quando
    }
    ```
 
-1. Ora esegui tutti i test di unità nel file BylineImplTest.java e controlla l&#39;output del rapporto di test Java.
+1. Ora esegui tutti i test di unità nel file BylineImplTest.java e controlla l&#39;output del rapporto di test Java™.
 
 ![Tutte le prove](./assets/unit-testing/all-tests-pass.png)
 
 ## Esecuzione di unit test come parte della build {#running-unit-tests-as-part-of-the-build}
 
-I test di unità eseguiti devono essere trasmessi come parte della build Maven. In questo modo tutti i test verranno superati correttamente prima della distribuzione di un&#39;applicazione. L’esecuzione degli obiettivi Maven, ad esempio il pacchetto o l’installazione, richiama automaticamente e richiede il passaggio di tutti i test di unità nel progetto.
+I test di unità vengono eseguiti e devono essere trasmessi come parte della build Maven. In questo modo tutti i test verranno superati correttamente prima della distribuzione di un&#39;applicazione. L’esecuzione degli obiettivi Maven, ad esempio il pacchetto o l’installazione, richiama automaticamente e richiede il passaggio di tutti i test di unità nel progetto.
 
 ```shell
 $ mvn package
@@ -650,4 +650,4 @@ Allo stesso modo, se modifichiamo un metodo di test in modo che non funzioni, la
 
 ## Rivedi il codice {#review-the-code}
 
-Visualizza il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd) o rivedi e distribuisci il codice localmente in sul blocco Git `tutorial/unit-testing-solution`.
+Visualizza il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd) o rivedi e distribuisci il codice localmente nel ramo Git `tutorial/unit-testing-solution`.
