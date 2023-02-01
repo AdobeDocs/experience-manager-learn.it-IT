@@ -7,10 +7,10 @@ sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
 kt: 2963
 index: y
-source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
+source-git-commit: c96b8c9761ff9477fda40d641db5021994b32754
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 19%
+source-wordcount: '281'
+ht-degree: 21%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 19%
 
 + [Panoramica AEM headless](./overview.md)
 + GraphQL {#graphql}
-   + [AEM Headless Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+   + [AEM Headless Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
    + [Panoramica](./graphql/overview.md)
    + Configurazione rapida {#quick-setup}
       + [Servizio cloud](./graphql/quick-setup/cloud-service.md)
@@ -113,5 +113,8 @@ ht-degree: 19%
    + [Applicazione Angular di filtro](./graphql/code-samples/filtering-angular-app.md)
    + [Applicazione Vue filtro](./graphql/code-samples/filtering-vue-app.md)
    + [Filtraggio con jQuery e Handlebars](./graphql/code-samples/filtering-jquery-handlebars.md)
+   + [Applicazione SvelteKit filtro](./graphql/code-samples/filtering-sveltekit-app.md)
+   + [Filtraggio dell’app ExpressJS e Pug](./graphql/code-samples/filtering-express-pug-app.md)
    + [App React di base](./graphql/code-samples/basic-react-app.md)
    + [App Basic Next.js](./graphql/code-samples/basic-nextjs-app.md)
+
