@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 6ae98ce749f8a485bdaa4c6c6232e52d8d6246b3
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 4%
+source-wordcount: '1133'
+ht-degree: 5%
 
 ---
 
@@ -53,6 +53,8 @@ Questa esercitazione utilizza `curl` per configurare le configurazioni API di Cl
 Inizia abilitando l&#39;uscita della porta flessibile su AEM as a Cloud Service.
 
 1. In primo luogo, determina la regione in cui viene impostata la rete avanzata utilizzando l’API di Cloud Manager. [listRegion](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) funzionamento. La `region name` è necessario per effettuare chiamate API di Cloud Manager successive. In genere, viene utilizzata l&#39;area in cui si trova l&#39;ambiente Produzione.
+
+   Trova la regione dell’ambiente as a Cloud Service AEM in [Cloud Manager](https://my.cloudmanager.adobe.com) in [dettagli dell&#39;ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#viewing-environment). Il nome dell’area visualizzata in Cloud Manager può essere [mappato al codice della regione](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) utilizzato nell’API di Cloud Manager.
 
    __richiesta HTTP listRegion__
 
