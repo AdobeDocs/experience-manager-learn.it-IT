@@ -9,9 +9,9 @@ level: Beginner
 jira: KT-11861
 thumbnail: KT-11861.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 81e1e2bf0382f6a577c1037dcd0d58ebc73366cd
+source-git-commit: 65d54f0137786c7e8ac9ac962c424dd20bf5f3dd
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '492'
 ht-degree: 4%
 
 ---
@@ -45,19 +45,19 @@ Per distribuire il [Progetto WKND Sites](https://github.com/adobe/aem-guides-wkn
 
 Installa Adobe I/O Runtime Extensible CLI, noto anche come `aio CLI` eseguendo il comando seguente dalla riga di comando.
 
-    &quot;guscio
-    $ npm install -g @adobe/aio-cli
-    &quot;
+```shell
+$ npm install -g @adobe/aio-cli
+```
 
 ### Plug-in AEM
 
 Installa i plug-in Cloud Manager e AEM RDE utilizzando `aio cli`s `plugins:install` comando.
 
-    &quot;guscio
-    $ aio plugins:installare @adobe/aio-cli-plugin-cloudmanager
-    
-    $ aio plugins:installare @adobe/aio-cli-plugin-aem-rde
-    &quot;
+```shell
+$ aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+
+$ aio plugins:install @adobe/aio-cli-plugin-aem-rde
+```
 
 Il plug-in Cloud Manager consente agli sviluppatori di interagire con Cloud Manager dalla riga di comando.
 
@@ -91,23 +91,23 @@ I plug-in AEM devono essere configurati per interagire con il tuo RDE. Innanzitu
 
 Puoi verificare i valori di configurazione correnti eseguendo il comando seguente.
 
-    &quot;guscio
-    $ aio config:list
-    &quot;
+```shell
+$ aio config:list
+```
 
 Inoltre, per cambiare o sapere a quale organizzazione si è attualmente connessi, puoi utilizzare il comando sottostante.
 
-    &quot;guscio
-    $ aio dove
-    &quot;
+```shell
+$ aio where
+```
 
 ## Verifica accesso RDE
 
 Verifica l’installazione e la configurazione del plug-in RDE AEM eseguendo il seguente comando.
 
-    &quot;guscio
-    $ aio aem:rde:status
-    &quot;
+```shell
+$ aio aem:rde:status
+```
 
 Le informazioni sullo stato dell’RDE vengono visualizzate come lo stato dell’ambiente, l’elenco di _progetto AEM_ bundle e configurazioni sul servizio di authoring e pubblicazione.
 
