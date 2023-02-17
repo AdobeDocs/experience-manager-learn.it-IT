@@ -9,10 +9,10 @@ level: Beginner
 jira: KT-11861
 thumbnail: KT-11861.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 4ff15fb482d31b984775ca691b53d117a2eba23c
+source-git-commit: 81e1e2bf0382f6a577c1037dcd0d58ebc73366cd
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 3%
+source-wordcount: '520'
+ht-degree: 4%
 
 ---
 
@@ -29,6 +29,87 @@ Questo video mostra:
 - Configurazione e configurazione di AEM RDE e Cloud Manager `aio CLI` plugin
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415490/?quality=12&learn=on)
+
+## Prerequisito
+
+È necessario installare localmente quanto segue:
+
+- [Node.js](https://nodejs.org/it/) (LTS - Supporto a lungo termine)
+- [npm 8+](https://docs.npmjs.com/)
+
+## Configurazione locale
+
+Per distribuire il [Progetto WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) codice e contenuto nell’RDE dal computer locale, completa i seguenti passaggi.
+
+### CLI estensibile Adobe I/O Runtime
+
+Installa Adobe I/O Runtime Extensible CLI, noto anche come `aio CLI` eseguendo il comando seguente dalla riga di comando.
+
+    &quot;guscio
+    $ npm install -g @adobe/aio-cli
+    &quot;
+
+### Plug-in AEM
+
+Installa i plug-in Cloud Manager e AEM RDE utilizzando `aio cli`s `plugins:install` comando.
+
+    &quot;guscio
+    $ aio plugins:installare @adobe/aio-cli-plugin-cloudmanager
+    
+    $ aio plugins:installare @adobe/aio-cli-plugin-aem-rde
+    &quot;
+
+Il plug-in Cloud Manager consente agli sviluppatori di interagire con Cloud Manager dalla riga di comando.
+
+Il plug-in RDE AEM, consente agli sviluppatori di distribuire codice e contenuto dal computer locale.
+
+Inoltre, per aggiornare i plug-in utilizza il `aio plugins:update` comando.
+
+## Configurare AEM plug-in
+
+I plug-in AEM devono essere configurati per interagire con il tuo RDE. Innanzitutto, utilizza l’interfaccia utente di Cloud Manager e copia i valori dell’ID organizzazione, programma e ambiente.
+
+1. ID organizzazione: Copia il valore da **Immagine profilo > Informazioni account (interno) > Finestra modale > ID organizzazione corrente**
+
+   ![ID organizzazione](./assets/Org-ID.png)
+
+1. ID programma: Copia il valore da **Panoramica del programma > Ambienti > {ProgramName}-rde > URI del browser > numeri tra `program/` e`/environment`**
+
+1. ID ambiente: Copia il valore da **Panoramica del programma > Ambienti > {ProgramName}-rde > URI del browser > numeri dopo`environment/`**
+
+   ![ID programma e ambiente](./assets/Program-Environment-Id.png)
+
+1. Quindi, utilizzando il `aio cli`s `config:set` impostare questi valori eseguendo il comando seguente.
+
+   ```shell
+   $ aio config:set cloudmanager_orgid <org-id>
+   
+   $ aio config:set cloudmanager_programid <program-id>
+   
+   $ aio config:set cloudmanager_environmentid <env-id>
+   ```
+
+Puoi verificare i valori di configurazione correnti eseguendo il comando seguente.
+
+    &quot;guscio
+    $ aio config:list
+    &quot;
+
+Inoltre, per cambiare o sapere a quale organizzazione si è attualmente connessi, puoi utilizzare il comando sottostante.
+
+    &quot;guscio
+    $ aio dove
+    &quot;
+
+## Verifica accesso RDE
+
+Verifica l’installazione e la configurazione del plug-in RDE AEM eseguendo il seguente comando.
+
+    &quot;guscio
+    $ aio aem:rde:status
+    &quot;
+
+Le informazioni sullo stato dell’RDE vengono visualizzate come lo stato dell’ambiente, l’elenco di _progetto AEM_ bundle e configurazioni sul servizio di authoring e pubblicazione.
 
 ## Passaggio successivo
 
