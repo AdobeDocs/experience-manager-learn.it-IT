@@ -9,9 +9,9 @@ level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 3a7c04dfe465c1eff29ba6b4e4b7e24f047e5b42
+source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1177'
 ht-degree: 1%
 
 ---
@@ -35,10 +35,10 @@ I campi vengono utilizzati al meglio in base ai seguenti criteri:
 | Campi ImageRef | App web client servita da AEM | Query app client AEM Author | Query app client AEM Publish |
 |--------------------|:------------------------------:|:-----------------------------:|:------------------------------:|
 | `_path` | ↓ | ● (L&#39;app deve specificare l&#39;host nell&#39;URL) | ● (L&#39;app deve specificare l&#39;host nell&#39;URL) |
-| `_authorUrl` | ✘ | ↓ | ✘ |
-| `_publishUrl` | ✘ | ✘ | ↓ |
+| `_authorUrl` | ✘ | ✔ | ✘ |
+| `_publishUrl` | ✘ | ✘ | ✔ |
 
-Utilizzo di `_authorUrl` e `_publishUrl` deve essere allineato con l’endpoint GraphQL AEM utilizzato per la risposta GraphQL.
+Utilizzo di `_authorUrl` e `_publishUrl` devono essere allineati con l&#39;endpoint GraphQL AEM utilizzato per la sorgente della risposta GraphQL.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_headless_graphql_images"
@@ -55,7 +55,7 @@ I tipi di campo vengono esaminati nella sezione [Modello per frammento di conten
 
 ## Query persistente GraphQL
 
-Nella query GraphQL , restituisce il campo come `ImageRef` digitare e richiedere i campi appropriati `_path`, `_authorUrl`oppure `_publishUrl` richiesto dalla tua applicazione. Ad esempio, la query di un&#39;avventura nel [Progetto demo di riferimento WKND](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) e l’URL dell’immagine per i riferimenti alla risorsa immagine nel relativo `primaryImage` può essere eseguito con una nuova query persistente `wknd-shared/adventure-image-by-path` definito come:
+Nella query GraphQL, restituisce il campo come `ImageRef` digitare e richiedere i campi appropriati `_path`, `_authorUrl`oppure `_publishUrl` richiesto dalla tua applicazione. Ad esempio, la query di un&#39;avventura nel [Progetto sito WKND](https://github.com/adobe/aem-guides-wknd) e l’URL dell’immagine per i riferimenti alla risorsa immagine nel relativo `primaryImage` può essere eseguito con una nuova query persistente `wknd-shared/adventure-image-by-path` definito come:
 
 ```graphql
 query ($path: String!) {
@@ -172,7 +172,7 @@ Le rappresentazioni sono accessibili direttamente aggiungendo la __nomi di rende
 
 ### Query GraphQL{#renditions-graphl-query}
 
-AEM GraphQL richiede una sintassi aggiuntiva per la richiesta di rappresentazioni di immagini. Invece [le immagini vengono interrogate](#images-graphql-query) nel modo consueto, e il rendering desiderato viene specificato nel codice. È importante [assicurati che le risorse immagini utilizzate dall&#39;applicazione headless abbiano le stesse rappresentazioni denominate](#reprocess-assets).
+AEM GraphQL richiede una sintassi aggiuntiva per richiedere il rendering delle immagini. Invece [le immagini vengono interrogate](#images-graphql-query) nel modo consueto, e il rendering desiderato viene specificato nel codice. È importante [assicurati che le risorse immagini utilizzate dall&#39;applicazione headless abbiano le stesse rappresentazioni denominate](#reprocess-assets).
 
 ### React example
 

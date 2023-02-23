@@ -1,6 +1,6 @@
 ---
 title: Next.js - AEM esempio headless
-description: Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Questa applicazione Next.js dimostra come eseguire query sul contenuto utilizzando AEM API GraphQL utilizzando query persistenti.
+description: Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Questa applicazione Next.js illustra come eseguire query sul contenuto utilizzando AEM API GraphQL utilizzando query persistenti.
 version: Cloud Service
 mini-toc-levels: 1
 feature: Content Fragments, GraphQL API
@@ -10,16 +10,16 @@ level: Beginner
 kt: 10721
 thumbnail: KT-10721.jpg
 last-substantial-update: 2022-10-03T00:00:00Z
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '806'
 ht-degree: 2%
 
 ---
 
 # App Next.js
 
-Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Questa applicazione Next.js dimostra come eseguire query sul contenuto utilizzando AEM API GraphQL utilizzando query persistenti. Il client AEM Headless per JavaScript viene utilizzato per eseguire le query persistenti GraphQL che alimentano l&#39;app.
+Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Questa applicazione Next.js illustra come eseguire query sul contenuto utilizzando AEM API GraphQL utilizzando query persistenti. Il client AEM Headless per JavaScript viene utilizzato per eseguire le query persistenti GraphQL che alimentano l&#39;app.
 
 ![App Next.js con AEM Headless](./assets/next-js/next-js.png)
 
@@ -35,7 +35,7 @@ Visualizza la [codice sorgente su GitHub](https://github.com/adobe/aem-guides-wk
 
 ## Requisiti AEM
 
-L’app Next.js funziona con le seguenti opzioni di distribuzione AEM. Tutte le distribuzioni richiedono [WKND Shared v2.1.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest), [Sito WKND v2.1.0+](https://github.com/adobe/aem-guides-wknd/releases/latest)o [Componente aggiuntivo per demo di riferimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/overview.html) da installare nell’ambiente as a Cloud Service AEM.
+L’app Next.js funziona con le seguenti opzioni di distribuzione AEM. Tutte le distribuzioni richiedono [WKND Shared v2.1.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) o [Sito WKND v2.1.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) da installare nell’ambiente as a Cloud Service AEM.
 
 Questa app di esempio Next.js è progettata per connettersi a __Pubblicazione AEM__ servizio.
 
@@ -90,14 +90,6 @@ Next.js è progettato per connettersi a __Pubblicazione AEM__ e accedere a conte
    ...
    ```
 
-   Quando utilizzi [Componente aggiuntivo per demo di riferimento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/overview.html), utilizza `aem-demo-assets` Endpoint API GraphQL.
-
-   ```plain
-   ...
-   NEXT_PUBLIC_AEM_GRAPHQL_ENDPOINT=aem-demo-assets
-   ...
-   ```
-
 1. Apri un prompt dei comandi e avvia l&#39;app Next.js utilizzando i seguenti comandi:
 
    ```shell
@@ -111,7 +103,7 @@ Next.js è progettato per connettersi a __Pubblicazione AEM__ e accedere a conte
 
 ## Il codice
 
-Di seguito è riportato un riepilogo di come viene creata l&#39;app Next.js, di come si connette a AEM Headless per recuperare contenuto utilizzando le query persistenti GraphQL e di come tali dati vengono presentati. Il codice completo è disponibile all&#39;indirizzo [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js).
+Di seguito è riportato un riepilogo di come viene creata l&#39;app Next.js, di come si connette a AEM Headless per recuperare contenuto utilizzando query GraphQL persistenti e di come tali dati vengono presentati. Il codice completo è disponibile all&#39;indirizzo [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js).
 
 ### Query persistenti
 

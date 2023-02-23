@@ -8,10 +8,10 @@ role: Developer
 level: Intermediate
 kt: 10254
 thumbnail: KT-10254.jpeg
-source-git-commit: 4fa84b0461cbdf2e25336259c4128be5585b8787
+source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 2%
+source-wordcount: '508'
+ht-degree: 3%
 
 ---
 
@@ -38,7 +38,7 @@ Il codice internazionale è anche il valore utilizzato per filtrare i frammenti 
 
 ## Query persistente GraphQL
 
-AEM fornisce un `_locale` Filtro GraphQL che filtra automaticamente il contenuto in base al codice delle impostazioni internazionali . Ad esempio, se si esegue una query su tutte le avventure in inglese nel [Progetto demo di riferimento WKND](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) può essere eseguito con una nuova query persistente `wknd-shared/adventures-by-locale` definito come:
+AEM fornisce un `_locale` Filtro GraphQL che filtra automaticamente il contenuto in base al codice delle impostazioni internazionali . Ad esempio, se si esegue una query su tutte le avventure in inglese nel [Progetto sito WKND](https://github.com/adobe/aem-guides-wknd) può essere eseguito con una nuova query persistente `wknd-shared/adventures-by-locale` definito come:
 
 ```graphql
 query($locale: String!) {
