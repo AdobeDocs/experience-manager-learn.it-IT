@@ -1,6 +1,6 @@
 ---
-title: App Basic Next.js
-description: Un’app di base Next.js che visualizza un elenco di avventure WKND e relativi dettagli
+title: App Next.js di base
+description: Un’app Next.js di base che mostra un elenco di avventure WKND e i relativi dettagli
 version: Cloud Service
 mini-toc-levels: 1
 feature: Content Fragments, GraphQL API
@@ -12,7 +12,7 @@ thumbnail: KT-11368.jpg
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: e3fb145e7a9f33dd010f6c40e42573d41e54b302
+source-git-commit: 772acab316ba2ff463fa5cacff02013bea920579
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%
@@ -20,17 +20,17 @@ ht-degree: 0%
 ---
 
 
-# App Basic Next.js
+# App Next.js di base
 
-Questo [Next.js](https://nextjs.org/) l’app illustra come eseguire query sul contenuto utilizzando AEM API GraphQL utilizzando query persistenti. Questa applicazione rende un filtro di WKND Avventures, e dopo aver selezionato un&#39;avventura, visualizza i dettagli completi delle avventure.
+Questo [Next.js](https://nextjs.org/) app illustra come eseguire query sui contenuti che utilizzano le API GraphQL dell’AEM utilizzando query persistenti. Questa applicazione esegue il rendering di un’avventura filtrabile in WKND Adventures e, dopo aver selezionato un’avventura, ne visualizza i dettagli completi.
 
 Questo codice:
 
-+ Si collega a un servizio AEM Publish e non richiede l’autenticazione
++ Si connette a un servizio di pubblicazione AEM e non richiede l’autenticazione
 + Utilizza le query persistenti di WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-slug`
 
-Per una revisione più approfondita della modalità di creazione di questa app Next.js, controlla il [esempio di documentazione dell’app Next.js](../example-apps/next-js.md).
+Per una recensione più approfondita della modalità di creazione di questa app Next.js, consulta [esempio di documentazione dell’app Next.js](../example-apps/next-js.md).
 
 >[!IMPORTANT]
 >
-> Codesandbox.io non supporta la modifica dell&#39;applicazione Next.js nell&#39;IDE incorporato. Per modificare questo esempio di codice, [apri l’app Next.js direttamente su codesandbox.io](https://codesandbox.io/s/wknd-next-js-app-3n6zdv).
+> Codesandbox.io non supporta la modifica dell’applicazione Next.js nell’IDE incorporato. Per modificare questo esempio di codice: [apri l’app Next.js direttamente su codesandbox.io](https://codesandbox.io/s/wknd-next-js-app-u8x5f8).
