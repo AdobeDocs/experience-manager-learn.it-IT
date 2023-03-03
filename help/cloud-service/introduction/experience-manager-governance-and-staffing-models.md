@@ -1,107 +1,107 @@
 ---
-title: Modelli e archetipi di governance e personale
-description: Scopri come utilizzare la piattaforma Adobe Experience Manager (AEM) e ottenere il massimo dai tuoi sforzi.
+title: Modelli e archetipi per governance e personale
+description: Scopri come rendere operativa la piattaforma Adobe Experience Manager (AEM) e ottenere il massimo dai tuoi sforzi.
 solution: Experience Manager
 exl-id: 808ab7a6-5ec5-4bbd-9a6e-cfc0b447430d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: dcd69c7444eae0f8c86464c1963bff35e6f11238
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 0%
 
 ---
 
-# Adobe Experience Manager (AEM) - Modelli e archetipi per la governance e il personale
+# Adobe Experience Manager (AEM) - Modelli e archetipi per governance e personale
 
-In qualità di leader dell&#39;esperienza del cliente, Adobe capisce quanto sia difficile per te assicurarsi di disporre delle persone e del framework di governance giusti per incrementare l&#39;efficienza operativa. Con la governance e i modelli di personale collaudati nel settore Adobe, hai gli strumenti e le conoscenze per creare una solida base di gestione dei contenuti e delle risorse. In questo articolo discuteremo di come rendere operativa la tua piattaforma Adobe Experience Manager (AEM) e ottenere il massimo valore dai tuoi sforzi.
+In qualità di leader dell’esperienza del cliente, Adobe comprende quanto sia difficile per te garantire di disporre delle persone e del framework di governance giusti per promuovere l’efficienza operativa. Con i collaudati modelli di gestione del personale e di governance di Adobe, disponi degli strumenti e delle conoscenze necessari per creare una solida base per la gestione dei contenuti e delle risorse. In questo articolo, discuteremo dei modi per rendere operativa la piattaforma Adobe Experience Manager (AEM) e ottenere il massimo valore dalle tue attività.
 
-## Creare un framework operativo superiore
+## Creazione di un framework operativo superiore
 
-Per essere in grado di eseguire e operare AEM considerare i seguenti elementi:
+Per essere in grado di eseguire e gestire l’AEM, considera i seguenti elementi:
 
-* Esegui milestone strategiche - Ci saranno molte tappe strategiche, (personalizzazione, integrazione multicanale, ecc.) che non può essere eseguito a meno che non sia stato implementato il modello di assegnazione del personale corretto.
-* Creare una base per la trasformazione digitale - AEM viene spesso utilizzato come primo passo del processo di modernizzazione di un&#39;organizzazione. L&#39;impostazione di una base ti consente di sfruttare AEM a pieno la sua capacità.
-* Coinvolgimento dell’utente: disporre di un team per eseguire il lavoro tattico (aggiornare flussi di lavoro, autorizzazioni, CSS, ecc.) Più ci sono differenze tra ciò che gli utenti vogliono e ciò che vengono dati, più sono frustrati possono diventare. È importante mantenere gli utenti investiti nel sistema, investiti nella soluzione e disporre del modello operativo corretto.
+* Esecuzione di milestone strategici: ci saranno molte milestone strategiche (personalizzazione, integrazione multicanale, ecc.) che possono essere eseguite solo se si dispone del modello di assegnazione del personale corretto.
+* Creare una base per la trasformazione digitale: l’AEM viene spesso utilizzato come primo passo nel processo di modernizzazione di un’organizzazione. Imposta una base per sfruttare al massimo la capacità dell’AEM.
+* Coinvolgimento dell’utente: crea un team per eseguire il lavoro tattico (aggiornamento dei flussi di lavoro, delle autorizzazioni, CSS, ecc.) Più si hanno divari tra ciò che gli utenti vogliono e ciò che viene dato, più questi possono diventare frustrati. È importante che gli utenti continuino a investire nel sistema, che investano nella soluzione e che tu disponga del modello operativo giusto.
 
 Qual è quindi il modello giusto? Qual è la giusta matrice di ruoli da creare?
 
-Non esiste una sola risposta specifica perché, così come le organizzazioni variano notevolmente, anche una configurazione AEM può variare notevolmente, il che rende necessaria la presenza di ruoli di supporto diversi. Ogni verticale, ogni settore, ogni struttura del team richiederà un&#39;implementazione diversa. Ma si può creare una linea di base stabilendo archetipi.
+Non esiste un’unica risposta specifica perché, proprio come le organizzazioni variano notevolmente, anche una configurazione AEM può variare notevolmente, con conseguente necessità di diversi ruoli di supporto. Ogni verticale, ogni settore, ogni struttura di team richiederà un’implementazione diversa. Ma puoi creare una linea di base stabilendo gli archetipi.
 
 ## Archetipi
 
-Gli archetipi sono idee di ruolo specifiche, di alto livello, mappate su attributi specifici. Questo a sua volta può essere utilizzato per creare una premessa fondamentale che aiuta a informare il modello di cui hai veramente bisogno. È importante notare che gli archetipi non sono limitati a una persona per archetipo. Ad esempio, un bibliotecario DAM potrebbe avere qualche esperienza tecnica.
+Gli archetipi sono idee di ruolo specifiche di alto livello che si associano ad attributi specifici. Questo a sua volta può essere utilizzato per creare una premessa fondamentale che aiuta a informare quale modello hai veramente bisogno. È importante notare che gli archetipi non sono limitati a una persona per archetipo. Ad esempio, una libreria DAM potrebbe avere un’esperienza tecnica.
 
 ### Flussi di operazionalizzazione
 
 Esistono due flussi di operazionalizzazione per [!DNL AEM Sites] e [!DNL AEM Assets]:
 
-1. Operazioni quotidiane di base (aggiornamento metadati)
+1. Esecuzione e funzionamento di base del lavoro quotidiano (aggiornamento dei metadati)
 
-1. Strategia e lavoro di trasformazione, come i grandi progetti interorganizzativi
+1. Strategia e lavoro di trasformazione, ad esempio grandi progetti tra organizzazioni
 
-![flussi di operazionalizzazione](assets/streams-of-operationalization.png)
+![flussi di operatività](assets/streams-of-operationalization.png)
 
-### Ruoli di risorse AEM di alto livello
+### Ruoli risorsa AEM di alto livello
 
-**Differenza generale:** Questa linea di base supporta modelli centralizzati e decentrati. Se si dispone di un modello decentralizzato, AEM può essere utilizzato in modo astratto. Il ruolo Proprietario prodotto deve essere utilizzato in modo creativo, ma è necessario disporre anche di un Proprietario prodotto che sia proprietario dei diversi stili per un tipo di risorsa e di un altro che sovrintenda all’intera organizzazione.
+**Intervallo generale:** Questa linea di base supporta modelli centralizzati e decentralizzati. Se avete un modello decentralizzato, l&#39;AEM può essere usato in modo astratto. Il ruolo Proprietario prodotto deve essere utilizzato in modo creativo, ma è anche necessario disporre di un Proprietario prodotto che sia il proprietario dei diversi stili di un tipo di risorsa e di un altro che sovrintenda all’intera organizzazione.
 
 1. Ruoli di esecuzione e funzionamento di base
 
-   * Risorsa tecnica : chi ha AEM esperienza capisce le autorizzazioni e può aggiornare lo schema dei metadati
-   * Release manager
-   * Proprietario del prodotto: ruolo allineato alla soluzione. Alcuni proprietari di prodotti possono essere coinvolti in analytics.
-   * Bibliotecario DAM - Questo è qualcuno che può aiutare a gestire i processi di framework integrativo. Questo ruolo creativo può sovrapporsi ad altri ruoli. (Nota: questo è un ruolo che è esploso in popolarità negli ultimi cinque anni).
+   * Risorsa tecnica: un utente con esperienza AEM comprende le autorizzazioni e può aggiornare lo schema dei metadati
+   * Release Manager
+   * Proprietario del prodotto: si tratta di un ruolo allineato alla soluzione. Alcuni proprietari di prodotti possono essere coinvolti nell’analisi.
+   * Libreria DAM - Questa persona può aiutare a gestire i processi del framework integrativo. Questo ruolo creativo può sovrapporsi ad altri ruoli. (Nota: questo ruolo è esploso in popolarità negli ultimi cinque anni).
    * Contenuto creativo
 
 1. Strategia e trasformazione
 
-   * Team di sviluppo: questo team è necessario per l&#39;utilizzo di un&#39;importante pietra miliare strategica.
-   * Business Architect: sviluppa i requisiti per supportare le fasi tecniche e le iniziative strategiche; può essere compensato con un proprietario di prodotto aggiuntivo
-   * Architetto tecnico : un utente che ha una comprensione a livello aziendale e una presenza costante in tutta l’organizzazione. Questo ruolo funge da punto centrale della verità DAM.
+   * Team di sviluppo: il team è necessario quando si ha a che fare con una pietra miliare strategica principale.
+   * Architetto aziendale: sviluppa i requisiti per supportare le attività cardine tecniche e le iniziative strategiche; può essere compensato con un altro Proprietario del prodotto
+   * Architetto tecnico: un utente che ha una conoscenza di livello Enterprise ed è una presenza costante in tutta l’organizzazione. Questo ruolo funge da centro di verità DAM.
 
 **Scenari di esempio**
 
-1. **Esegui e funziona:**
+1. **Esecuzione e funzionamento:**
 
-Di seguito sono riportati alcuni esempi di casi di utilizzo per uno scenario leggero (società di abbigliamento sportivo) e pesante (società cosmetica):
+Di seguito sono riportati alcuni esempi di ruolo per uno scenario leggero (società di abbigliamento sportivo) e pesante (società di cosmetici):
 
-1. Leggero - ruoli della società di abbigliamento sportivo:
+1. Light - Ruoli dell&#39;azienda di abbigliamento sportivo:
 
-   * Sviluppatori a tempo parziale, offshore
-   * 1 proprietario del prodotto - Tempo pieno, onshore
-   * 1 DAM Library - Tempo pieno, onshore
-   * 1 Architetto Tecnico - Tempo parziale, onshore
-   * 1 Release Manager - part time, onshore
+   * 2 sviluppatori part-time - Part time, offshore
+   * 1 Proprietario del prodotto - A tempo pieno, onshore
+   * 1 Libreria DAM - A tempo pieno, onshore
+   * 1 architetto tecnico - Part time, onshore
+   * 1 Release Manager - Part time, onshore
 
-1. Pesante - Azienda cosmetica (Multi-Brand)
+1. Pesante - Azienda di cosmetici (Multi-Brand)
 
-   * 3 sviluppatori a tempo pieno - a tempo pieno, offshore
-   * 4 Proprietari di prodotto - 3 marchi specifici, 1 primario
-   * 1 DAM Library - Tempo pieno, onshore
-   * 4 amministratori principali PMI per marchio
-   * 1 Architetto tecnico
+   * 3 sviluppatori a tempo pieno - A tempo pieno, offshore
+   * 4 Proprietari del prodotto - 3 marchi specifici, 1 primario
+   * 1 Libreria DAM - A tempo pieno, onshore
+   * 4 principali amministratori PMI per marchio
+   * 1 architetto tecnico
 
-### Alta [!DNL AEM Sites] ruoli
+### Di alto livello [!DNL AEM Sites] ruoli
 
 1. Funzionamento di base
 
-   **Differenza generale:** Gli sviluppatori CSS creano nuove interfacce per i componenti. L&#39;Adobe di Sr Business Consultant, Joseph Van Buskirk, raccomanda di &quot;Ottenere componenti e sistemi di stile non collegati. Questo è il ruolo che guida il risparmio sui costi. L’80% delle esperienze create deve essere fatto utilizzando i componenti core o creati in precedenza.&quot; L’obiettivo è ridefinire i componenti core o personalizzati con nuovi stili utilizzando uno sviluppatore CSS (o un team di sviluppo front-end) .
+   **Intervallo generale:** Gli sviluppatori CSS creano nuove interfacce per i componenti. Adobe Sr Business Consultant, Joseph Van Buskirk, consiglia di &quot;Ottenere componenti staccati e sistemi di stile. Questo è il ruolo che permette di risparmiare sui costi. L’80% delle esperienze create deve essere eseguito utilizzando i componenti core o creati in precedenza.&quot; L’obiettivo è quello di riutilizzare i componenti core o personalizzati con nuovi stili utilizzando uno sviluppatore CSS (o un team di sviluppo front-end).
 
-   Esempi di ruolo:
+   Esempi di ruoli:
 
    * Sviluppo CSS: crea artefatti di esperienza riutilizzando i componenti con nuovi stili.
-   * Sviluppo back-end : crea nuovi componenti o può estendere un componente core. Se eseguito correttamente, questo ruolo non deve avere più di una persona, a meno che non sia necessario eseguire grandi attività di animazione.
-   * Gestione delle versioni: controlla la distribuzione del codice e funge da tecnico del successo cliente corrente.
-   * Proprietario del prodotto - collabora con BU sul matrimonio Visioni tecniche e strategiche; crea attività di manutenzione e miglioramenti e funge da proprietario aziendale della soluzione.
-   * Autori amministratori : aggiorna lo skin CSS e fornisce indicazioni agli autori che aggiornano e applicano contenuti. Questo ruolo funziona sulle configurazioni del flusso di lavoro e crea una documentazione guida per gli autori dei contenuti da applicare. NOTA: Nella versione 6.5, Adobe consiglia di utilizzare modelli modificabili.
-   * Autori dei contenuti : applica contenuti, acquisisce una proprietà su più livelli e fornisce problemi e preoccupazioni di comunicazione man mano che si verificano con CSM.
+   * Sviluppo back-end: crea nuovi componenti o può estendere un componente core. Se eseguito correttamente, questo ruolo non dovrebbe avere più di una persona, a meno che non sia necessario eseguire attività di animazione di grandi dimensioni.
+   * Gestione del rilascio: sovrintende alla distribuzione del codice e funge da team dell’account Adobe corrente.
+   * Proprietario del prodotto: collabora con BU per unire visioni tecniche e strategiche; crea attività di manutenzione e miglioramenti e funge da proprietario business della soluzione.
+   * Autori amministratori: aggiorna lo skin CSS e fornisce indicazioni agli autori che aggiornano e applicano i contenuti. Questo ruolo funziona sulle configurazioni dei flussi di lavoro e crea la documentazione di guida che gli autori di contenuti possono applicare. NOTA: nell’Adobe della versione 6.5 di si consiglia di utilizzare modelli modificabili.
+   * Autori di contenuti: applica i contenuti, ne gestisce la proprietà su più livelli e fornisce problemi e preoccupazioni di comunicazione man mano che si presentano con CSM.
 
 1. Strategia e trasformazione
 
-   Esempi di ruolo:
+   Esempi di ruoli:
 
-   * Team di sviluppo: fornisce conoscenze AEM ed esegue nuove fasi di trasformazione con l&#39;architetto tecnico.
-   * Architetto tecnico - fornisce conoscenze sull&#39;integrazione, lavora con il proprietario del prodotto per mappare le tappe tecniche e fornisce una profonda conoscenza tecnica di AEM.
-   * Architetto aziendale: consente di creare attività per le storie utente e di gestire le tappe tecniche e aziendali del proprietario del prodotto.
+   * Team di sviluppo: fornisce conoscenze sull’AEM ed esegue nuove tappe di trasformazione con l’architetto tecnico.
+   * Architetto tecnico: fornisce conoscenze sull’integrazione, collabora con il proprietario del prodotto per mappare le tappe tecniche e fornisce una conoscenza tecnica approfondita dell’AEM.
+   * Architetto aziendale: crea attività per le storie utente e aiuta il proprietario del prodotto a gestire le milestone tecniche e aziendali.
 
 ### Scenari di esempio
 
@@ -109,28 +109,28 @@ Di seguito sono riportati alcuni esempi di ruolo per uno scenario client leggero
 
 1. Chiaro
 
-   * 2 Sviluppatori CSS - onshore
-   * 1 proprietario del prodotto - a tempo pieno, onshore
-   * 1 Sviluppatore back-end - offshore
-   * 1 Architetto tecnico - onshore
+   * 2 sviluppatori CSS - onshore
+   * 1 Proprietario del prodotto - a tempo pieno, onshore
+   * 1 sviluppatore back-end - offshore
+   * 1 architetto tecnico - on-shore
    * 1 Release manager - part time, onshore
 
 1. Pesante (incentrato sulla campagna)
 
-   * 4 Sviluppatori CSS - a tempo pieno, onshore
-   * 2 Sviluppatori back-end - a tempo pieno, on-shore
-   * 1 Architetto tecnico - onshore
-   * 1 proprietario del prodotto
+   * 4 sviluppatori CSS - a tempo pieno, onshore
+   * 2 sviluppatori back-end - a tempo pieno, onshore
+   * 1 architetto tecnico - on-shore
+   * 1 Proprietario prodotto
    * 2 Architetti aziendali - offshore
 
-### Aree principali
+### Takeaway chiave
 
-**Comprendere gli archetipi** — Iniziare lentamente, comprendere e analizzare gli archetipi. Siate creativi e flessibili, tenendo presente che non esiste un modello corretto da seguire.
+**Comprendere gli archetipi** avvio lento, comprensione e analisi degli archetipi. Sii creativo e flessibile, tenendo presente che non esiste un modello corretto da seguire.
 
-**Comprendere la roadmap** - Alcune organizzazioni hanno molte tappe che desiderano eseguire. Preparati ad allocare più risorse tecniche di quanto si possa stimare.
+**Comprendere la roadmap** - Alcune organizzazioni devono eseguire molte attività cardine. Preparati ad allocare più risorse tecniche di quante tu possa stimare.
 
-**Utilizzo delle risorse interne** - I gap possono venire inaspettatamente. Puoi riempirli più rapidamente acquistando membri del team interno, invece di cercare all’esterno dell’organizzazione.
+**Utilizzo delle risorse interne** - Le lacune possono presentarsi in modo imprevisto. Potresti essere in grado di compilarli più rapidamente reperendo i membri interni del team, anziché eseguire ricerche all’esterno dell’organizzazione.
 
-Per una discussione più approfondita su Modelli e Archetipi di Governance e Staffing, ascoltate questa discussione di un&#39;ora: [Archetipi di ruolo e creazione di un quadro operativo per [!DNL AEM Assets] e [!DNL Sites]](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
+Per una discussione più approfondita su modelli e archetipi di governance e gestione del personale, segui questa discussione della durata di un’ora: [Archetipi di ruolo e creazione di un framework operativo per [!DNL AEM Assets] e [!DNL Sites]](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
 
-Per saperne di più sulla strategia e la leadership del pensiero, consulta [Successo del cliente](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub
+Per ulteriori informazioni su strategia e leadership di pensiero, visita [Customer Success](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.
