@@ -1,5 +1,5 @@
 ---
-title: Generare rapporti sui campi dati del modulo inviati utilizzando Adobe Analytics
+title: Generare rapporti sui campi dati del modulo inviati tramite Adobe Analytics
 description: Integrare AEM Forms CS con Adobe Analytics per creare rapporti sui campi dati dei moduli
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
@@ -9,7 +9,7 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 12557
-source-git-commit: 4100061624bd8955bee392f1eced20f388f2902c
+source-git-commit: 439167be96959baea54f50a221c6d26f8fab78b2
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%
