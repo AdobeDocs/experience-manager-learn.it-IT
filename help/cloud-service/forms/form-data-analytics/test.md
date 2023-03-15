@@ -1,6 +1,6 @@
 ---
-title: Generare rapporti sui campi dati del modulo inviati tramite Adobe Analytics
-description: Integrare AEM Forms CS con Adobe Analytics per creare rapporti sui campi dati dei moduli
+title: Report sui campi di dati del modulo inviati tramite Adobe Analytics
+description: Integrare AEM Forms CS con Adobe Analytics per generare rapporti sui campi dei dati del modulo
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -9,47 +9,49 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 12557
-source-git-commit: 4100061624bd8955bee392f1eced20f388f2902c
+source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 1%
 
 ---
 
-# Testare la soluzione
+# Verificare la soluzione
 
-Consente di visualizzare in anteprima e inviare il modulo utilizzando diverse combinazioni di valori. Dai diversi ai 30 minuti per visualizzare i dati nei rapporti di Adobe Analytics. I dati impostati su prop vengono visualizzati nel reporting prima dei dati impostati su eVar.
+Visualizzare in anteprima e inviare il modulo utilizzando diverse combinazioni di valori modulo. Consenti a diversi o 30 minuti di visualizzare i dati nei rapporti di Adobe Analytics. I dati impostati per prop vengono visualizzati nel reporting prima dei dati impostati per eVar.
 
 ## Suite di rapporti
 
-I dati del modulo acquisiti in Adobe Analytics vengono presentati in formato ad anello Inviati per Stato
+I dati del modulo acquisiti in Adobe Analytics vengono presentati in formato ad anello
+
+**Invio per Stato**
 
 ![applicantsbystate](assets/donut.png)
 
-Errori di convalida campo
+Errori di convalida dei campi
 
 ![field-validation-error](assets/donut-field-validation.png)
 
 ## Debugging
 
-Assicurati che il modulo adattivo utilizzi lo stesso contenitore di configurazione che contiene l’Adobe Configurazione di Launch.
+Assicurati che il modulo adattivo utilizzi lo stesso contenitore di configurazione che contiene la configurazione Adobe Launch.
 
-Per confermare che il modulo invia dati ad Adobe Analytics, effettua le seguenti operazioni
+Per confermare che il modulo sta inviando dati ad Adobe Analytics, procedi come segue
 
-* Apri i Developer Tools nel browser.
-* Immettete nel testo seguente nel pannello Console.
+* Apri gli Strumenti per sviluppatori nel browser.
+* Immetti il seguente testo nel pannello Console.
 
 ```javascript
 _satellite.setDebug(true)
 ```
 
-Interagisci con il modulo mantenendo aperta la finestra della console. Dovresti vedere qualcosa del genere
+Interagire con il modulo mantenendo aperta la finestra della console. Dovresti vedere qualcosa del genere
 
 ![console-debug](assets/debug.png)
 
 ## Utilizzare Adobe Experience Platform Debugger
 
-Aggiungi il [Estensione debugger AEP](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) al browser (è necessario accedere) per ottenere ulteriori informazioni di debug
+Aggiungi il [Estensione AEP debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) al browser (è necessario accedere) per ottenere ulteriori informazioni di debug
 
 ![platform-debugger](assets/platform-debugger.png)
 

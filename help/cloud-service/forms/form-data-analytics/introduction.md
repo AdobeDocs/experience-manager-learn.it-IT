@@ -1,6 +1,6 @@
 ---
-title: Generare rapporti sui campi dati del modulo inviati tramite Adobe Analytics
-description: Integrare AEM Forms CS con Adobe Analytics per creare rapporti sui campi dati dei moduli
+title: Report sui campi di dati del modulo inviati tramite Adobe Analytics
+description: Integrare AEM Forms CS con Adobe Analytics per generare rapporti sui campi dei dati del modulo
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -9,29 +9,29 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 12557
-source-git-commit: 4100061624bd8955bee392f1eced20f388f2902c
+source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
 
 ---
 
-# Segnalare i valori dei campi dati modulo e gli errori di convalida dei campi modulo utilizzando Adobe Analytic
+# Rapporto sui valori dei campi dati del modulo e sugli errori di convalida dei campi modulo tramite Adobe Analytics
 
-Scopri come implementare le analisi sui moduli adattivi utilizzando Tag e Adobe Analytics. Questo esempio illustra i passaggi di configurazione e implementazione per generare rapporti dettagliati sul modo in cui i visitatori interagiscono con i moduli.
+Scopri come implementare Analytics nei moduli adattivi utilizzando Tag e Adobe Analytics. Questo esempio illustra i passaggi di configurazione e implementazione per generare rapporti dettagliati sulle modalità di interazione dei visitatori con i moduli.
 
 ## Prerequisiti
 
-Per ottenere il massimo da questa esercitazione, ti consigliamo di soddisfare i seguenti prerequisiti:
+Per ottenere il massimo da questa esercitazione, è consigliabile soddisfare i seguenti prerequisiti:
 
-* Esperienza con AEM Forms CS
-* Accesso ai tag Adobe
+* Qualche esperienza con AEM Forms CS
+* Accesso ai tag di Adobe
 * Accesso ad Adobe Analytics
 
 
 
-Questa esercitazione utilizza un semplice modulo adattivo integrato in AEM Forms e misura l’invio dei moduli per i valori dello stato di residenza, nonché i campi che generano errori di convalida.
+Questa esercitazione utilizza un semplice modulo adattivo integrato in AEM Forms e misura l’invio di moduli per i valori dello stato di residenza e i campi che generano errori di convalida.
 
-![modulo adattivo](assets/use-case.png)
+![adattivo](assets/use-case.png)
 
 

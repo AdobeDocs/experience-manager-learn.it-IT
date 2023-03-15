@@ -5,7 +5,7 @@ breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 4100061624bd8955bee392f1eced20f388f2902c
+source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 20%
@@ -17,14 +17,14 @@ ht-degree: 20%
 
 + [Panoramica](./overview.md)
 + Introduzione ad AEM as a Cloud Service{#introduction}
-   + [Cos’è l’AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
+   + [Che cosa è AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Evoluzione](./introduction/evolution.md)
    + [Architettura](./introduction/architecture.md)
    + [Cloud Manager](./introduction/cloud-manager.md)
-   + Strategia e leadership di pensiero{#strategy}
-      + [Experience Manager - Modelli e archetipi per governance e personale](./introduction/experience-manager-governance-and-staffing-models.md)
+   + Strategia e leadership del pensiero{#strategy}
+      + [Experience Manager - Modelli e archetipi di governance e di personale](./introduction/experience-manager-governance-and-staffing-models.md)
       + [Come velocizzare i contenuti con Adobe Experience Manager](./introduction/drive-content-velocity-for-sites.md)
-      + [Accelerare la velocità dei contenuti con i sistemi AEM](./introduction/accelerate-content-velocity-aem.md)
+      + [Accelerazione della velocità dei contenuti con i sistemi di stile AEM](./introduction/accelerate-content-velocity-aem.md)
 + [Integrazioni Experience Cloud](./experience-cloud/integrations.md)
 + Tecnologia di base {#underlying-technology}
    + [Architettura AEM](./underlying-technology/introduction-architecture.md)
@@ -36,10 +36,10 @@ ht-degree: 20%
 + Cloud Manager {#cloud-manager}
    + [Programmi](./cloud-manager/programs.md)
    + [Ambienti](./cloud-manager/environments.md)
-   + [Pipeline CI/CD di produzione](./cloud-manager/cicd-production-pipeline.md)
-   + [Pipeline CI/CD non di produzione](./cloud-manager/cicd-non-production-pipeline.md)
+   + [Pipeline di produzione CI/CD](./cloud-manager/cicd-production-pipeline.md)
+   + [Pipeline di non produzione CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Attività](./cloud-manager/activity.md)
-   + Operazioni di sviluppo{#devops}
+   + Ops sviluppatore{#devops}
       + [Distribuzione del codice](./cloud-manager/devops/deploy-code.md)
       + [Unisci progetti](./cloud-manager/devops/merge-projects.md)
       + [Configurare le pipeline](./cloud-manager/devops/configure-pipelines.md)
@@ -47,96 +47,96 @@ ht-degree: 20%
       + [Analizzare i risultati del test](./cloud-manager/devops/analyze-test-results.md)
       + [Configurazioni di Dispatcher](./cloud-manager/devops/dispatcher-configurations.md)
       + [API di Cloud Manager](./cloud-manager/devops/cloud-manager-apis.md)
-+ Configurazione dell’ambiente di sviluppo locale {#local-development-environment-set-up}
++ Configurazione ambiente di sviluppo locale {#local-development-environment-set-up}
    + [Panoramica](./local-development-environment/overview.md)
    + [Strumenti di sviluppo](./local-development-environment/development-tools.md)
    + [Runtime AEM locale](./local-development-environment/aem-runtime.md)
-   + [Strumenti Dispatcher locali](./local-development-environment/dispatcher-tools.md)
+   + [Strumenti del Dispatcher locale](./local-development-environment/dispatcher-tools.md)
 + Sviluppo{#developing}
    + Estensibilità{#extensibility}
       + App Builder{#app-builder}
          + [Genera token di accesso](./developing/extensibility/app-builder/jwt-auth.md)
-      + Console Frammenti di contenuto{#content-fragments}
+      + Console Frammento di contenuto{#content-fragments}
          + [Panoramica](./developing/extensibility/content-fragments/overview.md)
-         + [Progetto console Adobe Developer](./developing/extensibility/content-fragments/adobe-developer-console-project.md)
-         + [Inizializzazione app](./developing/extensibility/content-fragments/app-initialization.md)
-         + [Registrazione dell’estensione](./developing/extensibility/content-fragments/extension-registration.md)
-         + [Menu intestazione](./developing/extensibility/content-fragments/header-menu.md)
+         + [Progetto Adobe Developer Console](./developing/extensibility/content-fragments/adobe-developer-console-project.md)
+         + [Inizializzazione dell&#39;app](./developing/extensibility/content-fragments/app-initialization.md)
+         + [Registrazione delle estensioni](./developing/extensibility/content-fragments/extension-registration.md)
+         + [Menu Intestazione](./developing/extensibility/content-fragments/header-menu.md)
          + [Barra delle azioni](./developing/extensibility/content-fragments/action-bar.md)
          + [Finestra modale](./developing/extensibility/content-fragments/modal.md)
          + [Azione Adobe I/O Runtime](./developing/extensibility/content-fragments/runtime-action.md)
          + [Prova](./developing/extensibility/content-fragments/test.md)
          + [Distribuzione](./developing/extensibility/content-fragments/deploy.md)
          + Estensioni di esempio{#example-extensions}
-            + [Aggiornamento proprietà in blocco](./developing/extensibility/content-fragments/example-extensions/bulk-property-update.md)
+            + [Aggiornamento delle proprietà in blocco](./developing/extensibility/content-fragments/example-extensions/bulk-property-update.md)
             + [Generazione di risorse di immagini AEM tramite OpenAI](./developing/extensibility/content-fragments/example-extensions/image-generation-and-image-upload.md)
    + Nozioni di base sullo sviluppo{#basics}
       + [SDK AEM](./developing/basics/aem-sdk.md)
       + [Ambiente di sviluppo locale](./developing/basics/local-development-environment.md)
       + [Archetipo progetto AEM](./developing/basics/aem-project-archetype.md)
       + [Struttura dei progetti AEM](./developing/basics/project-structure.md)
-      + [Contenuto variabile e immutabile](./developing/basics/mutable-immutable.md)
+      + [Contenuto variabile e contenuto immutabile](./developing/basics/mutable-immutable.md)
       + [Pacchetto struttura archivio](./developing/basics/repository-structure-package.md)
       + [Pubblicazione dei contenuti](./developing/basics/content-publishing.md)
       + [Configurazioni OSGi](./developing/basics/osgi-configurations.md)
-      + [Migrazione configurazione Dispatcher](./developing/basics/dispatcher-configuration.md)
+      + [Migrazione alla configurazione del Dispatcher](./developing/basics/dispatcher-configuration.md)
    + Progetti AEM{#aem-projects}
       + [Progetto AEM Maven](./developing/projects/maven-project-structure.md)
-      + [Pulizia di un progetto AEM Maven](./developing/projects/remove-samples.md)
+      + [Pulizia di un progetto Maven AEM](./developing/projects/remove-samples.md)
    + Servizi OSGi{#osgi-services}
       + [Nozioni di base sui servizi OSGi](./developing/osgi-services/basics.md)
-      + [Ciclo di vita del componente OSGi](./developing/osgi-services/lifecycle.md)
+      + [Ciclo di vita dei componenti OSGi](./developing/osgi-services/lifecycle.md)
       + [Nozioni di base sulle configurazioni OSGi](./developing/osgi-services/configurations.md)
       + [Configurazioni OSGi con OCD](./developing/osgi-services/configurations-ocd.md)
    + Avanzate {#advanced}
       + [Utenti del servizio](./developing/advanced/service-users.md)
       + [Spazi dei nomi personalizzati](./developing/advanced/custom-namespaces.md)
-      + [Memorizzazione in cache delle varianti di pagina](./developing/advanced/variant-caching.md)
+      + [Varianti di pagina nella cache](./developing/advanced/variant-caching.md)
    + Ambiente di sviluppo rapido{#rde}
       + [Panoramica](./developing/rde/overview.md)
       + [Come impostare](./developing/rde/how-to-setup.md)
-      + [Come usare](./developing/rde/how-to-use.md)
+      + [Come utilizzare](./developing/rde/how-to-use.md)
       + [Ciclo di vita dello sviluppo](./developing/rde/development-life-cycle.md)
-   + [JavaDocs API per SDK AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
-+ Debug di AEM{#debugging}
-   + Debug dell’SDK dell’AEM{#debugging-aem-sdk}
+   + [JavaDocs API AEM SDK](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
++ AEM di debug{#debugging}
+   + Eseguire il debug dell’SDK AEM{#debugging-aem-sdk}
       + [Panoramica](./debugging/aem-sdk-local-quickstart/overview.md)
       + [Registri](./debugging/aem-sdk-local-quickstart/logs.md)
       + [Debug remoto](./debugging/aem-sdk-local-quickstart/remote-debugging.md)
       + [Console web OSGi](./debugging/aem-sdk-local-quickstart/osgi-web-consoles.md)
       + [Strumenti di Dispatcher](./debugging/aem-sdk-local-quickstart/dispatcher-tools.md)
       + [Altri strumenti](./debugging/aem-sdk-local-quickstart/other-tools.md)
-   + Debug di AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
+   + Debug AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
       + [Panoramica](./debugging/cloud-service/overview.md)
       + [Registri](./debugging/cloud-service/logs.md)
-      + [Generazione e implementazione](./debugging/cloud-service/build-and-deployment.md)
+      + [Generazione e distribuzione](./debugging/cloud-service/build-and-deployment.md)
       + [Console per sviluppatori](./debugging/cloud-service/developer-console.md)
       + [Browser dell’archivio](./debugging/cloud-service/repository-browser.md)
       + Rischi{#risks}
-         + [Avvertenze trasversali](./debugging/cloud-service/risks/traversals.md)
+         + [Avvertenze](./debugging/cloud-service/risks/traversals.md)
 + Consegna dei contenuti{#content-delivery}
    + [Reindirizzamenti URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html)
-+ Accesso all’AEM{#accessing}
++ Accesso AEM{#accessing}
    + [Panoramica](./accessing/overview.md)
    + [Utenti Adobe IMS](./accessing/adobe-ims-users.md)
-   + [Gruppi di utenti Adobe IMS](./accessing/adobe-ims-user-groups.md)
-   + [Profili di prodotto di Adobe IMS](./accessing/adobe-ims-product-profiles.md)
-   + [Utenti, gruppi e autorizzazioni AEM](./accessing/aem-users-groups-and-permissions.md)
-   + [Procedura dettagliata della configurazione dell’accesso all’AEM](./accessing/walk-through.md)
+   + [Gruppi di utenti di Adobe IMS](./accessing/adobe-ims-user-groups.md)
+   + [Profili di prodotto Adobe IMS](./accessing/adobe-ims-product-profiles.md)
+   + [AEM utenti, gruppi e autorizzazioni](./accessing/aem-users-groups-and-permissions.md)
+   + [Configurazione dell’accesso a AEM procedura dettagliata](./accessing/walk-through.md)
 + Autenticazione{#authentication}
    + [Panoramica](./authentication/authentication.md)
    + [SAML 2.0](./authentication/saml-2-0.md)
-+ Reti avanzate{#networking}
++ Rete avanzata{#networking}
    + [Panoramica](./networking/advanced-networking.md)
    + [Uscita porta flessibile](./networking/flexible-port-egress.md)
    + [Indirizzo IP in uscita dedicato](./networking/dedicated-egress-ip-address.md)
-   + [Virtual Private Network](./networking/vpn.md)
+   + [Rete privata virtuale](./networking/vpn.md)
    + Esempi di codice{#examples}
       + [HTTP/HTTPS su porte non standard per l’uscita della porta flessibile](./networking/examples/http-on-non-standard-ports-flexible-port-egress.md)
       + [HTTP/HTTPS per indirizzo IP/VPN in uscita dedicato](./networking/examples/http-dedicated-egress-ip-vpn.md)
-      + [Connessioni SQL con DataSourcePool](./networking/examples/sql-datasourcepool.md)
-      + [Connessioni SQL con API Java SQL](./networking/examples/sql-java-apis.md)
-      + [Servizio di posta elettronica](./networking/examples/email-service.md)
+      + [Connessioni SQL tramite DataSourcePool](./networking/examples/sql-datasourcepool.md)
+      + [Connessioni SQL tramite API Java SQL](./networking/examples/sql-java-apis.md)
+      + [Servizio e-mail](./networking/examples/email-service.md)
 + Migrazione {#migration}
    + [Strumento trasferimento contenuti](./migration/content-transfer-tool.md)
    + [Importazione in blocco delle risorse](./migration/bulk-import.md)
@@ -145,9 +145,9 @@ ht-degree: 20%
       + [Onboarding](./migration/moving-to-aem-as-a-cloud-service/onboarding.md)
       + [Cloud Manager](./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md)
       + [BPA e CAM](./migration/moving-to-aem-as-a-cloud-service/bpa-and-cam.md)
-      + [Strumenti di modernizzazione dell’AEM](./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md)
+      + [Strumenti di modernizzazione AEM](./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md)
       + [Modernizzazione archivio](./migration/moving-to-aem-as-a-cloud-service/repository-modernization.md)
-      + [Microservizi Asset compute](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
+      + [Microservizi di Asset compute](./migration/moving-to-aem-as-a-cloud-service/asset-compute-microservices.md)
       + [Dispatcher](./migration/moving-to-aem-as-a-cloud-service/dispatcher.md)
       + [Ricerca e indicizzazione](./migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
       + Migrazione dei contenuti {#content-migration}
@@ -157,15 +157,15 @@ ht-degree: 20%
       + [Risoluzione dei problemi](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
       + AEM Forms as a Cloud Service {#aem-forms}
          + [Introduzione](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
-         + [Iscrizione digitale](./migration/moving-to-aem-as-a-cloud-service/aem-forms/digital-enrollment.md)
+         + [Registrazione digitale](./migration/moving-to-aem-as-a-cloud-service/aem-forms/digital-enrollment.md)
          + [Comunicazioni](./migration/moving-to-aem-as-a-cloud-service/aem-forms/communications.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + [Introduzione](./migration/cloud-acceleration-manager/introduction.md)
-      + [Preparazione e Best Practice Analyzer](./migration/cloud-acceleration-manager/readiness-and-best-practice-analyzer.md)
+      + [Analisi di preparazione e best practice](./migration/cloud-acceleration-manager/readiness-and-best-practice-analyzer.md)
       + [Fase di implementazione](./migration/cloud-acceleration-manager/implementation-phase.md)
       + [Strumento trasferimento contenuti](./migration/cloud-acceleration-manager/content-transfer-tool.md)
       + [Strumenti di refactoring del codice](./migration/cloud-acceleration-manager/code-refactoring-tools.md)
-      + [Code Repository Modernizer](./migration/cloud-acceleration-manager/code-repository-modernizer.md)
+      + [Modernizzatore dell&#39;archivio del codice](./migration/cloud-acceleration-manager/code-repository-modernizer.md)
       + [Dispatcher Converter](./migration/cloud-acceleration-manager/dispatcher-converter.md)
       + [Convertitore indice](./migration/cloud-acceleration-manager/index-converter.md)
       + [Strumento Migrazione dei flussi di lavoro delle risorse](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
@@ -175,89 +175,89 @@ ht-degree: 20%
    + Sviluppo per Forms as a Cloud Service{#developing-for-cloud-service}
       + [Guida introduttiva](./forms/developing-for-cloud-service/getting-started.md)
       + [Installa IntelliJ](./forms/developing-for-cloud-service/intellij-set-up.md)
-      + [Configurazione Git](./forms/developing-for-cloud-service/setup-git.md)
+      + [Imposta Git](./forms/developing-for-cloud-service/setup-git.md)
       + [Sincronizza IntelliJ con AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
       + [Creare un modulo](./forms/developing-for-cloud-service/deploy-your-first-form.md)
-      + [Abilita componenti di Forms Portal](./forms/developing-for-cloud-service/forms-portal-components.md)
-      + [Includi Cloud Services e FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
-      + [Configurazione cloud in base al contesto](./forms/developing-for-cloud-service/context-aware-fdm.md)
+      + [Abilita componenti del portale Forms](./forms/developing-for-cloud-service/forms-portal-components.md)
+      + [Cloud Services di inclusione e FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [Configurazione cloud consapevole del contesto](./forms/developing-for-cloud-service/context-aware-fdm.md)
       + [Invia a Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
-      + [Implementazione nell’ambiente di sviluppo](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
-      + [Aggiornamento dell’archetipo Maven](./forms/developing-for-cloud-service/updating-project-archetype.md)
+      + [Distribuzione in ambiente di sviluppo](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
+      + [Aggiornamento dell&#39;archetipo Maven](./forms/developing-for-cloud-service/updating-project-archetype.md)
    + Creare un modulo adattivo{#create-first-af}
       + [Introduzione](./forms/create-first-af/introduction.md)
       + [Crea tema](./forms/create-first-af/create-theme.md)
       + [Crea modello](./forms/create-first-af/create-template.md)
       + [Crea frammento](./forms/create-first-af/create-fragments.md)
       + [Crea modulo](./forms/create-first-af/create-af.md)
-      + [Configura pannello principale](./forms/create-first-af/configure-root-panel.md)
-      + [Configurare il pannello persone](./forms/create-first-af/configure-people-panel.md)
-      + [Configura pannello reddito](./forms/create-first-af/configure-income-panel.md)
-      + [Configurare il pannello delle risorse](./forms/create-first-af/configure-assets-panel.md)
+      + [Configurare il pannello principale](./forms/create-first-af/configure-root-panel.md)
+      + [Pannello Persone](./forms/create-first-af/configure-people-panel.md)
+      + [Configurare il pannello dei redditi](./forms/create-first-af/configure-income-panel.md)
+      + [Pannello delle risorse](./forms/create-first-af/configure-assets-panel.md)
       + [Configurare il pannello iniziale](./forms/create-first-af/configure-start-panel.md)
       + [Barra degli strumenti Aggiungi e Configura](./forms/create-first-af/add-configure-toolbar.md)
-      + AEM Forms e Analytics{#forms-and-analytics}
-         + [Introduzione](./forms/form-data-analytics/introduction.md)
-         + [Creare elementi dati](./forms/form-data-analytics/data-elements.md)
-         + [Creare le regole](./forms/form-data-analytics/rules.md)
-         + [Testare la soluzione](./forms/form-data-analytics/test.md)
+   + AEM Forms e Analytics{#forms-and-analytics}
+      + [Introduzione](./forms/form-data-analytics/introduction.md)
+      + [Creare elementi dati](./forms/form-data-analytics/data-elements.md)
+      + [Creare regole](./forms/form-data-analytics/rules.md)
+      + [Verificare la soluzione](./forms/form-data-analytics/test.md)
    + Generazione di documenti in AEM Forms CS{#doc-gen-formscs}
       + [Introduzione](./forms/doc-gen-forms-cs/introduction.md)
-      + [Crea credenziali servizio](./forms/doc-gen-forms-cs/service-credentials.md)
-      + [Crea token JWT](./forms/doc-gen-forms-cs/create-jwt.md)
+      + [Crea credenziali del servizio](./forms/doc-gen-forms-cs/service-credentials.md)
+      + [Creare un token JWT](./forms/doc-gen-forms-cs/create-jwt.md)
       + [Crea token di accesso](./forms/doc-gen-forms-cs/create-access-token.md)
       + [Unisci dati con modello](./forms/doc-gen-forms-cs/merge-data-with-template.md)
-      + [Testare la soluzione](./forms/doc-gen-forms-cs/test.md)
+      + [Verificare la soluzione](./forms/doc-gen-forms-cs/test.md)
       + [Sfida](./forms/doc-gen-forms-cs/challenge.md)
-   + Generazione di documenti tramite API Batch{#formscs-batch-api}
+   + Generazione di documenti tramite API batch{#formscs-batch-api}
       + [Introduzione](./forms/formscs-batch-api/introduction.md)
       + [Configura archiviazione Azure](./forms/formscs-batch-api/configure-azure-storage.md)
       + [Crea configurazione batch USC](./forms/formscs-batch-api/configure-usc-batch.md)
       + [Crea configurazione batch](./forms/formscs-batch-api/create-batch-config.md)
       + [Esegui batch](./forms/formscs-batch-api/execute-batch-generate-documents.md)
-   + Manipolazione delle PDF in Forms CS{#forms-cs-assembler}
+   + Manipolazione di PDF in Forms CS{#forms-cs-assembler}
       + [Introduzione](./forms/forms-cs-assembler/introduction.md)
-      + [Crea credenziali servizio](./forms/forms-cs-assembler/service-credentials.md)
-      + [Crea token JWT](./forms/forms-cs-assembler/create-jwt.md)
+      + [Crea credenziali del servizio](./forms/forms-cs-assembler/service-credentials.md)
+      + [Creare un token JWT](./forms/forms-cs-assembler/create-jwt.md)
       + [Crea token di accesso](./forms/forms-cs-assembler/create-access-token.md)
-      + [Assembla file PDF](./forms/forms-cs-assembler/assemble-pdf-files.md)
+      + [Assemblare file PDF](./forms/forms-cs-assembler/assemble-pdf-files.md)
       + [Utilità PDF/A](./forms/forms-cs-assembler/pdfa-utilities.md)
-      + [Testare la soluzione](./forms/forms-cs-assembler/test.md)
+      + [Verificare la soluzione](./forms/forms-cs-assembler/test.md)
       + [Sfida](./forms/forms-cs-assembler/challenge.md)
-   + Archiviazione portale di Azure{#forms-cs-azure-portal}
+   + Archiviazione del portale di Azure{#forms-cs-azure-portal}
       + [Introduzione](./forms/forms-cs-azure-portal/introduction.md)
       + [Crea modello dati modulo](./forms/forms-cs-azure-portal/create-fdm.md)
-      + [Archivia dati modulo in Azure Storage](./forms/forms-cs-azure-portal/create-af.md)
-      + [Precompila modulo](./forms/forms-cs-azure-portal/prefill-af-storage.md)
-      + [Invio query](./forms/forms-cs-azure-portal/query-submitted-data.md)
+      + [Archiviare i dati del modulo in Azure Storage](./forms/forms-cs-azure-portal/create-af.md)
+      + [Modulo di precompilazione](./forms/forms-cs-azure-portal/prefill-af-storage.md)
+      + [Invio di query](./forms/forms-cs-azure-portal/query-submitted-data.md)
    + Crea flusso di lavoro di revisione{#create-aem-workflow}
-      + [Esternalizzazione dell’archiviazione dei flussi di lavoro](./forms/create-aem-workflow/externalize-workflow.md)
-      + [Crea modello di flusso di lavoro](./forms/create-aem-workflow/create-workflow.md)
-      + [Attiva flusso di lavoro](./forms/create-aem-workflow/configure-af.md)
+      + [Esternalizzazione dello storage dei flussi di lavoro](./forms/create-aem-workflow/externalize-workflow.md)
+      + [Creare un modello di flusso di lavoro](./forms/create-aem-workflow/create-workflow.md)
+      + [Flusso di lavoro di attivazione](./forms/create-aem-workflow/configure-af.md)
    + Acrobat Sign con AEM Forms{#forms-and-sign}
       + [Introduzione](./forms/forms-and-sign/introduction.md)
       + [Applicazione API Acrobat Sign](./forms/forms-and-sign/create-sign-api-application.md)
-      + [Configurazione cloud Acrobat Sign](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
+      + [Configurazione di Acrobat Sign Cloud](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
       + [Creare un modulo adattivo](./forms/forms-and-sign/create-adaptive-form.md)
-      + [Configura per compilazione e firma](./forms/forms-and-sign/configure-form-fill-and-sign.md)
-   + Integrare con Microsoft Power Automate{#forms-cs-and-power-automate}
+      + [Configura per il riempimento e la firma](./forms/forms-and-sign/configure-form-fill-and-sign.md)
+   + Integrazione con Microsoft Power Automate{#forms-cs-and-power-automate}
       + [Configurare l’integrazione](./forms/forms-cs-and-power-automate/integrate-formscs-power-automate.md)
       + [Analizzare i dati del modulo inviati](./forms/forms-cs-and-power-automate/send-email-notification.md)
       + [Invia DoR come allegato e-mail](./forms/forms-cs-and-power-automate/send-dor-email-attachment.md)
-      + [Estrarre gli allegati dai dati inviati](./forms/forms-cs-and-power-automate/send-af-attachments-in-email.md)
-   + Integrare con Microsoft Dynamics{#formscs-dynamics-crm}
-      + [Crea applicazione Dynamics](./forms/formscs-dynamics-crm/create-dynamics-account.md)
+      + [Estrarre gli allegati del modulo dai dati inviati](./forms/forms-cs-and-power-automate/send-af-attachments-in-email.md)
+   + Integrazione con Microsoft Dynamics{#formscs-dynamics-crm}
+      + [Creare un’applicazione Dynamics](./forms/formscs-dynamics-crm/create-dynamics-account.md)
       + [Configura origine dati](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
       + [Crea modello dati modulo](./forms/formscs-dynamics-crm/create-form-data-model.md)
       + [Creare un modulo adattivo](./forms/formscs-dynamics-crm/create-adaptive-form.md)
    + Integrare con Salesforce{#integrate-with-salesforce}
       + [Introduzione](./forms/integrate-with-salesforce/introduction.md)
-      + [Crea app connessa](./forms/integrate-with-salesforce/create-connected-app.md)
-      + [Crea file Swagger](./forms/integrate-with-salesforce/describe-rest-api.md)
-      + [Crea origine dati](./forms/integrate-with-salesforce/create-data-source.md)
+      + [Creare un’app connessa](./forms/integrate-with-salesforce/create-connected-app.md)
+      + [Crea file swagger](./forms/integrate-with-salesforce/describe-rest-api.md)
+      + [Creare un’origine dati](./forms/integrate-with-salesforce/create-data-source.md)
       + [Crea modello dati modulo](./forms/integrate-with-salesforce/create-form-data-model.md)
-      + [Invio modulo di prova](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
-      + [Evento clic di prova](./forms/integrate-with-salesforce/create-lead-click-event.md)
+      + [Invio del modulo di prova](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
+      + [Evento clic del test](./forms/integrate-with-salesforce/create-lead-click-event.md)
 + Estensibilità Asset compute{#asset-compute}
    + [Panoramica](./asset-compute/overview.md)
    + Configurazione{#set-up}
@@ -265,49 +265,49 @@ ht-degree: 20%
       + [Ambiente di sviluppo locale](./asset-compute/set-up/development-environment.md)
       + [App Builder](./asset-compute/set-up/app-builder.md)
    + Sviluppa{#develop}
-      + [Creazione di un progetto di Asset compute](./asset-compute/develop/project.md)
+      + [Creare un progetto di Asset compute](./asset-compute/develop/project.md)
       + [Configurare le variabili di ambiente](./asset-compute/develop/environment-variables.md)
-      + [Configurare manifest.yml](./asset-compute/develop/manifest.md)
-      + [Sviluppa un lavoratore](./asset-compute/develop/worker.md)
+      + [Configura il file manifest.yml](./asset-compute/develop/manifest.md)
+      + [Sviluppare un processo di lavoro](./asset-compute/develop/worker.md)
       + [Utilizzare lo strumento di sviluppo](./asset-compute/develop/development-tool.md)
    + Test e debug{#test-debug}
-      + [Eseguire il test di un lavoratore](./asset-compute/test-debug/test.md)
+      + [Test di un processo di lavoro](./asset-compute/test-debug/test.md)
       + [Debug di un processo di lavoro](./asset-compute/test-debug/debug.md)
    + Implementare{#deploy}
-      + [Implementare in Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
+      + [Distribuzione in Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
       + [Integrare con AEM](./asset-compute/deploy/processing-profiles.md)
    + Avanzate {#advanced}
-      + [Lavoratori metadati](./asset-compute/advanced/metadata.md)
+      + [Operatori di metadati](./asset-compute/advanced/metadata.md)
    + [Risoluzione dei problemi](./asset-compute/troubleshooting.md)
 + Cloud 5{#cloud-5}
    + [Introduzione](./cloud-5/cloud5-introduction.md)
    + [Stagione 1](./cloud-5/cloud5-season-1.md)
    + [Stagione 2](./cloud-5/cloud5-season-2.md)
-   + [AEM CDN Parte 1](./cloud-5/cloud5-aem-cdn-part1.md)
-   + [AEM CDN Parte 2](./cloud-5/cloud5-aem-cdn-part2.md)
+   + [AEM CDN parte 1](./cloud-5/cloud5-aem-cdn-part1.md)
+   + [AEM CDN parte 2](./cloud-5/cloud5-aem-cdn-part2.md)
    + [File di registro AEM](./cloud-5/cloud5-aem-log-files.md)
    + [Token di accesso](./cloud-5/cloud5-getting-login-token-integrations.md)
-   + [Cloud Dispatcher](./cloud-5/cloud5-aem-dispatcher-cloud.md)
+   + [Dispatcher cloud](./cloud-5/cloud5-aem-dispatcher-cloud.md)
    + [Migrazione 1](./cloud-5/cloud5-aem-content-migration-part-1.md)
    + [Migrazione 2](./cloud-5/cloud5-aem-content-migration-part-2.md)
-   + [Convalida Dispatcher](./cloud-5/cloud5-aem-dispatcher-validator.md)
+   + [Convalida del dispatcher](./cloud-5/cloud5-aem-dispatcher-validator.md)
    + [Ricerca e indicizzazione](./cloud-5/cloud5-aem-search-and-indexing.md)
-   + [Generatore di app Adobe](./cloud-5/cloud5-adobe-app-builder.md)
+   + [Adobe App Builder](./cloud-5/cloud5-adobe-app-builder.md)
    + Stagione 2{#season-2}
       + [Frammenti](./cloud-5/season-2/cloud5-experience-v-content-fragments.md)
-      + [Repo Modernizer](./cloud-5/season-2/cloud5-repo-modernizer.md)
+      + [Modernizzatore repository](./cloud-5/season-2/cloud5-repo-modernizer.md)
       + [Admin Console](./cloud-5/season-2/cloud5-admin-console.md)
       + [REPOINIT](./cloud-5/season-2/cloud5-repoinit.md)
-      + [Sling Job Scheduler](./cloud-5/season-2/cloud5-sling-job-scheduler.md)
+      + [Scheduler processi Sling](./cloud-5/season-2/cloud5-sling-job-scheduler.md)
       + [Correggi la cache](./cloud-5/season-2/cloud5-fix-your-cache.md)
       + [Correggi le riscritture](./cloud-5/season-2/cloud5-fix-your-rewrites.md)
-      + [Cloud Manager - Audit dell’esperienza](./cloud-5/season-2/cloud5-mocm-experience-audit.md)
+      + [Cloud Manager - Experience Audit](./cloud-5/season-2/cloud5-mocm-experience-audit.md)
       + [Cloud Manager - Test di unità](./cloud-5/season-2/cloud5-mocm-unit-tests.md)
       + [Cloud Manager - Test funzionali](./cloud-5/season-2/cloud5-mocm-functional-tests.md)
 + [Serie di esperti AEM](./aem-experts-series.md)
-+ Tutorials con più passaggi{#multi-step-tutorials}
++ Tutorials a più passaggi{#multi-step-tutorials}
    + [Sviluppo AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it)
    + [Editor SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [AEM SITES e ADOBE TARGET](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
+   + [AEM Sites e Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
    + [Autenticazione basata su token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
