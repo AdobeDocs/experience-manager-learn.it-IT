@@ -13,10 +13,10 @@ topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
 exl-id: 63c23f22-533d-486c-846b-fae22a4d68db
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 8fc36698f06fea0eaaf818867c7e713453e0452d
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 1%
+source-wordcount: '641'
+ht-degree: 0%
 
 ---
 
@@ -71,9 +71,9 @@ Le credenziali del servizio sono le credenziali del bonafide utilizzate in quals
 
 + [Come utilizzare le credenziali del servizio](./service-credentials.md)
 
-## Altro materiale di riferimento
+## Risorse aggiuntive
 
 + [Scarica l’applicazione di esempio](./assets/aem-guides_token-authentication-external-application.zip)
 + Altri esempi di codice per la creazione e lo scambio di JWT
-   + [Esempi di codice Node.js, Java, Python, C#.NET e PHP](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/samples/samples.md)
+   + [Esempi di codice Node.js, Java, Python, C#.NET e PHP](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/)
    + [Esempio di codice basato su JavaScript/Axios](https://github.com/adobe/aemcs-api-client-lib)
