@@ -5,10 +5,10 @@ breadcrumb-title: Tutorial su AEM Sites
 feature-set: Experience Manager Sites, Experience Manager
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: c82965636ddeef7dc165e0bea079c99f1a16e0ca
+source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 29%
+source-wordcount: '441'
+ht-degree: 28%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 29%
    + [Console Componenti](components/components-console-feature-video-use.md)
 + Frammenti di contenuto {#content-fragments}
    + [Console Frammenti di contenuto](content-fragments/content-fragments-console.md)
-   + [Authoring di frammenti di contenuto](content-fragments/content-fragments-feature-video-use.md)
+   + [Authoring dei frammenti di contenuto](content-fragments/content-fragments-feature-video-use.md)
    + [Distribuzione di frammenti di contenuto](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [Traduzione di frammenti di contenuto](content-fragments/content-fragments-translation-feature-video-use.md)
    + [Frammenti di contenuto e frammenti esperienza](content-fragments/understand-content-fragments-and-experience-fragments.md)
@@ -98,12 +98,12 @@ ht-degree: 29%
 + Integrazioni {#integrations}
    + Experience Platform {#experience-platform}
       + [Generare FPID](integrations/platform/fpid.md)
-   + Experience Platform Launch {#experience-platform-launch}
-      + [Panoramica](integrations/experience-platform-launch/overview.md)
-      + [Creare una proprietà Launch](integrations/experience-platform-launch/create-launch-property.md)
-      + [Connettere AEM con Launch utilizzando Adobe I/O](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
-      + [Creare un Cloud Service Launch](integrations/experience-platform-launch/create-launch-cloud-service.md)
-      + [Debug di un’implementazione di Launch](integrations/experience-platform-launch/debug-launch-implementation.md)
+   + Tag per la raccolta dati di Experience Platform (Launch) {#experience-platform-data-collection-tags}
+      + [Panoramica](integrations/experience-platform/data-collection/tags/overview.md)
+      + [Creare una proprietà tag](integrations/experience-platform/data-collection/tags/create-tag-property.md)
+      + [Connettere AEM tag tramite Developer Console](integrations/experience-platform/data-collection/tags/connect-aem-tags-using-developer-console.md)
+      + [Creare AEM Cloud Service Launch](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
+      + [Debug dell’implementazione di un tag (Launch)](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
    + Adobe Client Data Layer {#adobe-client-data-layer}
       + [Utilizzo di Adobe Client Data Layer](integrations/adobe-client-data-layer/data-layer-overview.md)
       + [Personalizzare Adobe Client Data Layer](integrations/adobe-client-data-layer/data-layer-customize.md)
@@ -116,7 +116,7 @@ ht-degree: 29%
       + [Aggiungere l’estensione Target alla proprietà Launch](integrations/adobe-target/add-target-launch-extension.md)
       + [Caricare e attivare una chiamata Target](integrations/adobe-target/load-and-fire-target.md)
       + [Creare un account di Cloud Service Adobe Target](integrations/adobe-target/setup-aem-target-cloud-service.md)
-      + [Esporta Frammenti esperienza in Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
+      + [Esportare frammenti esperienza in Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
       + [Creare attività Target tramite le offerte dei frammenti esperienza](integrations/adobe-target/create-target-activity.md)
       + [Personalizzazione tramite Compositore esperienza visivo](integrations/adobe-target/personalization-using-vec.md)
       + [Personalizzazione dell’esperienza di pagina web completa](integrations/adobe-target/personalization-web-page.md)

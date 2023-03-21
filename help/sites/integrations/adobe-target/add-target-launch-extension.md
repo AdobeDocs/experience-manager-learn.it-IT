@@ -12,7 +12,7 @@ topic: Integrations
 role: Developer
 level: Intermediate
 exl-id: aa48ffef-1105-4d0d-b4b4-12ac5d2eea23
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Aggiungere l’estensione Target a una proprietà Launch {#adobe-target-extension}
 
-Per seguire questo video, è necessario disporre di un Experience Platform Launch [integrato con AEM](../experience-platform-launch/overview.md).
+Per seguire questo video, devi già aver [Experience Platform Launch integrato con AEM](../experience-platform/data-collection/tags/overview.md).
 
 Scopri come abilitare Adobe Target al sito Web AEM utilizzando il Experience Platform Launch.
 
