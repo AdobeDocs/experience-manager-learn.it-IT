@@ -7,7 +7,7 @@ exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
 source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '185'
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,7 @@ Adobe Experience Manager (AEM) Assets è uno strumento di gestione delle risorse
 >id="aemcloud_assets_overview"
 >title="AEM Assets"
 >abstract="Scopri come trovare e modificare rapidamente le risorse necessarie."
->additional-url="https://video.tv.adobe.com/v/336196" text="Procedura dettagliata di AEM Assets"
+>additional-url="https://video.tv.adobe.com/v/336196/?captions=ita" text="Procedura dettagliata di AEM Assets"
 
 ## Procedura dettagliata di AEM Assets
 
@@ -82,7 +82,7 @@ Scopri cos’è AEM Assets e come può essere utilizzato per raggiungere gli obi
 
 </div>
 
-## Altro materiale di riferimento
+## Risorse aggiuntive
 
 * [Documentazione di AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en)
 * [AEM tutorial as a Cloud Service](/help/cloud-service/overview.md)

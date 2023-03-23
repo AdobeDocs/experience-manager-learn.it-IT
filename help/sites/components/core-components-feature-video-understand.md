@@ -26,7 +26,7 @@ ht-degree: 11%
 >id="intro_core_components"
 >title="Introduzione ai componenti core in AEM as a Cloud Service"
 >abstract="In questa scheda puoi visualizzare contenuti che ti aiuteranno a creare siti moderni compatibili con AEM as a Cloud Service. A tal fine, utilizza i componenti core"
->additional-url="https://video.tv.adobe.com/v/18926" text="Panoramica dei componenti core"
+>additional-url="https://video.tv.adobe.com/v/18926/?captions=ita" text="Panoramica dei componenti core"
 
 I componenti core AEM sono set di componenti standard da utilizzare con Adobe Experience Manager. Basati sulle best practice e sugli standard di Adobe, i componenti core forniscono un set di funzionalità di base per qualsiasi implementazione di Sites.
 

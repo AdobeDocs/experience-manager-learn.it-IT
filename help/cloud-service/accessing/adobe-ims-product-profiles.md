@@ -11,7 +11,7 @@ exl-id: 089a557c-5155-489c-bccf-0cb97e95840c
 source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
 workflow-type: tm+mt
 source-wordcount: '146'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -27,6 +27,6 @@ I profili di prodotto Adobe IMS consentono agli utenti di accedere a un servizio
 
 >[!VIDEO](https://video.tv.adobe.com/v/39156/?quality=12&learn=on)
 
-## Altro materiale di riferimento
+## Risorse aggiuntive
 
 + [Gestione dei prodotti e dell’accesso utente nella documentazione di Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#managing-products-and-user-access-in-admin-console)

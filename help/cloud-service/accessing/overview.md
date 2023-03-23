@@ -13,7 +13,7 @@ exl-id: 4846a394-cf8e-4d52-8f8b-9e874f2f457b
 source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
 source-wordcount: '598'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
@@ -67,6 +67,6 @@ Una procedura dettagliata per configurare gli utenti, i gruppi di utenti e i pro
 
 La documentazione seguente tratta [Adobe Admin Console](https://adminconsole.adobe.com)- dettagli e problemi specifici che possono contribuire a una migliore comprensione di Adobe Admin Console e a usarlo per gestire gli utenti e l&#39;accesso tra i prodotti Experience Cloud.
 
-+ [Panoramica di Adobe Admin Console Identity](https://helpx.adobe.com/enterprise/using/identity.html)
++ [Panoramica di Adobe Admin Console Identity](https://helpx.adobe.com/it/enterprise/using/identity.html)
 + [Ruoli amministratore di Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-roles.html)
 + [Ruoli sviluppatore di Adobe Admin Console](https://helpx.adobe.com/enterprise/using/manage-developers.html)

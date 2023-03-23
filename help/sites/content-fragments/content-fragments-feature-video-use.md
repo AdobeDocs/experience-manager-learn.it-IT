@@ -14,11 +14,11 @@ exl-id: d33c033a-9577-4d4e-99be-f3c7e2a4ce73
 source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 9%
+ht-degree: 12%
 
 ---
 
-# Authoring di frammenti di contenuto {#authoring-content-fragments}
+# Authoring dei frammenti di contenuto {#authoring-content-fragments}
 
 I frammenti di contenuto sono un’astrazione di contenuto in AEM che consente di creare e gestire contenuti basati su testo indipendentemente dai canali supportati.
 
@@ -27,7 +27,7 @@ I frammenti di contenuto AEM sono contenuti editoriali basati su testo che posso
 Questa serie video illustra il ciclo di vita dell’authoring di Frammenti di contenuto in AEM. Dettagli su [la distribuzione di frammenti di contenuto è disponibile qui](content-fragments-delivery-feature-video-use.md).
 
 1. Abilitazione e definizione dei modelli di frammenti di contenuto
-2. Authoring di frammenti di contenuto
+2. Authoring dei frammenti di contenuto
 3. Download di frammenti di contenuto
 4. Funzionalità editoriali
 
@@ -36,13 +36,13 @@ Questa serie video illustra il ciclo di vita dell’authoring di Frammenti di co
 >title="Gestisci frammenti"
 >abstract="Scopri come i frammenti di contenuto ti consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina."
 
-## Definizione dei modelli di frammenti di contenuto {#defining-content-fragment-models}
+## Definizione dei modelli per frammenti di contenuto {#defining-content-fragment-models}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
 AEM Modelli per frammenti di contenuto, gli schemi di dati dei frammenti di contenuto, devono essere attivati tramite AEM [[!UICONTROL Browser di configurazione]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=it), che consente di definire modelli di frammenti di contenuto in base alla configurazione.
 
-## Creazione di frammenti di contenuto {#creating-content-fragments}
+## Creare frammenti di contenuto {#creating-content-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22451/?quality=12&learn=on)
 

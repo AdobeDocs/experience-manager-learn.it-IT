@@ -14,7 +14,7 @@ exl-id: 8b12f34c-be98-4f47-853c-411bb601990c
 source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
 source-wordcount: '546'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 2%
 >title="Panoramica"
 >abstract="L’impostazione dell’ambiente di sviluppo locale per AEM as a Cloud Service include gli strumenti di sviluppo necessari per sviluppare, generare e compilare AEM progetti, nonché i tempi di esecuzione locali, consentendo agli sviluppatori di convalidare rapidamente le nuove funzionalità localmente prima di distribuirle per AEM as a Cloud Service tramite Adobe Cloud Manager."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=it" text="Linee guida per lo sviluppo"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html" text="Nozioni di base sullo sviluppo"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html?lang=it" text="Nozioni di base sullo sviluppo"
 
 Questa esercitazione descrive come configurare un ambiente di sviluppo locale per Adobe Experience Manager (AEM) utilizzando l’SDK as a Cloud Service AEM. Sono inclusi gli strumenti di sviluppo necessari per sviluppare, generare e compilare progetti AEM, nonché i tempi di esecuzione locali, che consentono agli sviluppatori di convalidare rapidamente le nuove funzionalità localmente prima di distribuirle in AEM as a Cloud Service tramite Adobe Cloud Manager.
 
@@ -59,10 +59,10 @@ Il progetto AEM è la base di codice personalizzata contenente il codice, la con
 
 Questa sezione dell’esercitazione mostra come:
 
-+ Installare la versione [!DNL Java]
++ Installa [!DNL Java]
 + Installa [!DNL Node.js] (e npm)
-+ Installare la versione [!DNL Maven]
-+ Installare la versione [!DNL Git]
++ Installa [!DNL Maven]
++ Installa [!DNL Git]
 
 [Impostare strumenti di sviluppo per progetti AEM](./development-tools.md)
 
@@ -72,7 +72,7 @@ L’SDK AEM as a Cloud Service fornisce un [!DNL QuickStart Jar] esegue una vers
 
 Questa sezione dell’esercitazione mostra come:
 
-+ Installare la versione [!DNL Java]
++ Installa [!DNL Java]
 + Scaricare l&#39;SDK AEM
 + Esegui il [!DNL AEM Author Service]
 + Esegui il [!DNL AEM Publish Service]
