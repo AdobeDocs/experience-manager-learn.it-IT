@@ -10,9 +10,9 @@ kt: 9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 5522a22cc3ac12ce54297ee9f30570c29cfd5ce7
 workflow-type: tm+mt
-source-wordcount: '2815'
+source-wordcount: '2961'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ L’integrazione SAML 2.0 con AEM Publish (o Preview) consente agli utenti final
 
 |  | Autore AEM | AEM Publish |
 |-----------------------|:----------:|:-----------:|
-| Supporto SAML 2.0 | ✘ | ↓ |
+| Supporto SAML 2.0 | ✘ | ✔ |
 
 +++ Comprendere il flusso SAML 2.0 con AEM
 
@@ -127,6 +127,21 @@ L&#39;archivio locale globale è configurato con il certificato pubblico dell&#3
 1. Seleziona la __Crea__ per __Archivio fonti attendibili globale__ pacchetto.
 1. Una volta generato, seleziona __Altro__ > __Replicare__ per attivare il nodo Global Trust Store (`/etc/truststore`) in AEM Publish.
 
+## Crea keystore del servizio di autenticazione{#authentication-service-keystore}
+
+_La creazione di un keystore per Authentication-service è necessaria quando il [Proprietà di configurazione OSGi del gestore di autenticazione SAML 2.0 `handleLogout` è impostato su `true`](#saml-20-authenticationsaml-2-0-authentication) o quando [Descrizione dell&#39;asserzione AuthnRequest signed/SAML](#install-aem-public-private-key-pair) obbligatorio_
+
+1. Accedi ad AEM Author come amministratore AEM per caricare la chiave privata.
+1. Passa a __Strumenti > Protezione > Archivio fonti attendibili__, quindi seleziona __servizio di autenticazione__ utente e seleziona __Proprietà__ dalla barra delle azioni superiore.
+1. Passa a __Strumenti > Protezione > Utenti__, quindi seleziona __servizio di autenticazione__ utente e seleziona __Proprietà__ dalla barra delle azioni superiore.
+1. Seleziona la __Keystore__ scheda .
+1. Crea o apri il keystore. Se crei un keystore, mantieni la password al sicuro.
+   + A [keystore pubblico/privato installato in questo keystore](#install-aem-public-private-key-pair) solo se è richiesta la crittografia di asserzione AuthnRequest signed/SAML.
+   + Se questa integrazione SAML supporta l’logout, ma non l’asserzione AuthnRequest sign/SAML, è sufficiente un keystore vuoto.
+1. Seleziona __Salva e chiudi__.
+1. Seleziona __servizio di autenticazione__ utente e seleziona __Attiva__ dalla barra delle azioni superiore.
+
+
 ## Installa AEM coppia di chiavi pubblica/privata{#install-aem-public-private-key-pair}
 
 _L’installazione della coppia di chiavi pubblica/privata AEM è facoltativa_
@@ -211,13 +226,13 @@ La configurazione è una configurazione di fabbrica OSGi, il che significa che u
 
 |  | OSGi, proprietà | Obbligatorio | Formato del valore | Valore predefinito | Descrizione |
 |-----------------------------------|-------------------------------|:--------:|:---------------------:|---------------------------|-------------|
-| Percorsi | `path` | ↓ | Matrice di stringhe | `/` | AEM percorsi per i quali viene utilizzato questo gestore di autenticazione. |
-| URL IDP | `idpUrl` | ↓ | Stringa |  | URL IDP viene inviata la richiesta di autenticazione SAML. |
-| Alias del certificato IDP | `idpCertAlias` | ↓ | Stringa |  | L&#39;alias del certificato IDP trovato nell&#39;AEM Global Trust Store |
+| Percorsi | `path` | ✔ | Matrice di stringhe | `/` | AEM percorsi per i quali viene utilizzato questo gestore di autenticazione. |
+| URL IDP | `idpUrl` | ✔ | Stringa |  | URL IDP viene inviata la richiesta di autenticazione SAML. |
+| Alias del certificato IDP | `idpCertAlias` | ✔ | Stringa |  | L&#39;alias del certificato IDP trovato nell&#39;AEM Global Trust Store |
 | Reindirizzamento HTTP IDP | `idpHttpRedirect` | ✘ | Booleano | `false` | Indica se un Reindirizzamento HTTP all&#39;URL IDP anziché inviare una AuthnRequest. Imposta su `true` per l&#39;autenticazione avviata da IDP. |
 | Identificatore IDP | `idpIdentifier` | ✘ | Stringa |  | Id IDP univoco per garantire AEM&#39;univocità dell&#39;utente e del gruppo. Se vuoto, il `serviceProviderEntityId` viene invece utilizzato. |
 | URL del servizio consumer di asserzione | `assertionConsumerServiceURL` | ✘ | Stringa |  | La `AssertionConsumerServiceURL` Attributo URL in AuthnRequest che specifica dove si trova la variabile `<Response>` Il messaggio deve essere inviato a AEM. |
-| ID entità SP | `serviceProviderEntityId` | ↓ | Stringa |  | Identifica in maniera univoca AEM all&#39;IDP; in genere il nome host AEM. |
+| ID entità SP | `serviceProviderEntityId` | ✔ | Stringa |  | Identifica in maniera univoca AEM all&#39;IDP; in genere il nome host AEM. |
 | Crittografia SP | `useEncryption` | ✘ | Booleano | `true` | Indica se l&#39;IDP crittografa le asserzioni SAML. Richiede `spPrivateKeyAlias` e `keyStorePassword` da impostare. |
 | Alias chiave privata SP | `spPrivateKeyAlias` | ✘ | Stringa |  | L&#39;alias della chiave privata nel `authentication-service` l&#39;archivio chiavi dell&#39;utente. Obbligatorio se `useEncryption` è impostato su `true`. |
 | Password dell&#39;archivio chiavi SP | `keyStorePassword` | ✘ | Stringa |  | La password dell&#39;archivio chiavi dell&#39;utente del servizio di autenticazione. Obbligatorio se `useEncryption` è impostato su `true`. |
@@ -233,11 +248,11 @@ La configurazione è una configurazione di fabbrica OSGi, il che significa che u
 | Archiviare la risposta SAML | `storeSAMLResponse` | ✘ | Booleano | `false` | Indica se la `samlResponse` viene memorizzato nel AEM `cq:User` nodo. |
 | Gestisci logout | `handleLogout` | ✘ | Booleano | `false` | Indica se la richiesta di logout è gestita da questo gestore di autenticazione SAML. Richiede `logoutUrl` da impostare. |
 | URL di disconnessione | `logoutUrl` | ✘ | Stringa |  | URL dell’IDP a cui viene inviata la richiesta di logout SAML. Obbligatorio se `handleLogout` è impostato su `true`. |
-| Tolleranza all&#39;orologio | `clockTolerance` | ✘ | Numero intero | `60` | Tolleranza di inclinazione dell&#39;orologio IDP e AEM (SP) durante la convalida delle asserzioni SAML. |
+| Tolleranza all&#39;orologio | `clockTolerance` | ✘ | Intero | `60` | Tolleranza di inclinazione dell&#39;orologio IDP e AEM (SP) durante la convalida delle asserzioni SAML. |
 | Metodo digest | `digestMethod` | ✘ | Stringa | `http://www.w3.org/2001/04/xmlenc#sha256` | L’algoritmo digest utilizzato dall’IDP per firmare un messaggio SAML. |
 | Metodo della firma | `signatureMethod` | ✘ | Stringa | `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256` | L’algoritmo di firma utilizzato dall’IDP per firmare un messaggio SAML. |
 | Tipo di sincronizzazione identità | `identitySyncType` | ✘ | `default` oppure `idp` | `default` | Non modificare `from` impostazione predefinita per AEM as a Cloud Service. |
-| Classificazione del servizio | `service.ranking` | ✘ | Numero intero | `5002` | Configurazioni di classificazione più elevate sono preferite per le stesse `path`. |
+| Classificazione del servizio | `service.ranking` | ✘ | Intero | `5002` | Configurazioni di classificazione più elevate sono preferite per le stesse `path`. |
 
 ### Attributi utente AEM{#aem-user-attributes}
 
