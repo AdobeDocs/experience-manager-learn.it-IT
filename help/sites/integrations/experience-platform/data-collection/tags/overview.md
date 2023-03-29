@@ -13,10 +13,10 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-07-10T00:00:00Z
 exl-id: bdae56d8-96e7-4b05-9b8b-3c6c2e998bd8
-source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
+source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 3%
+source-wordcount: '336'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +31,7 @@ Scopri come integrare l’Experience Platform _Tag per la raccolta dati_ (preced
 
 I tag sono la tecnologia di nuova generazione di Adobe Experience Platform per la gestione dei tag. I tag forniscono il modo più semplice per implementare Adobe Analytics, Target, Audience Manager e molte altre soluzioni. Panoramica dei tag e dell’integrazione consigliata con Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/39090?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417061?quality=12&learn=on)
 
 
 ## Prerequisiti
@@ -39,13 +39,20 @@ I tag sono la tecnologia di nuova generazione di Adobe Experience Platform per l
 Quando si integrano i tag di raccolta dati di Experience Platform, sono necessari i seguenti elementi:
 
 + Accesso AEM amministratore all’ambiente as a Cloud Service AEM
-+ Un sito di riferimento come [WKND](https://github.com/adobe/aem-guides-wknd) implementato su
++ Un sito di riferimento come [WKND](https://github.com/adobe/aem-guides-wknd) implementato su di esso.
++ Accesso alla soluzione Adobe Experience Platform Data Collection
 + Accesso dell&#39;amministratore di sistema a [Console Adobe Developer](https://developer.adobe.com/developer-console/)
 
 
+## Fasi di alto livello
+
++ In Raccolta dati di Adobe Experience Platform, crea una proprietà Tag e modificala in _Aggiungi regola_. Then _Aggiungi libreria_, seleziona la regola appena aggiunta, approvala e pubblicala.
++ Collegare AEM e tag utilizzando la configurazione IMS esistente (o nuova)
++ In AEM, crea una configurazione di Launch Cloud Services, quindi applicala a un sito esistente e infine verifica che la proprietà Tags e le relative librerie siano caricate sul sito Pubblicato o Autore.
+
 ## Passaggi successivi
 
-[Creare una proprietà Tag (Launch)](create-tag-property.md)
+[Creare una proprietà tag](create-tag-property.md)
 
 ## Risorse aggiuntive {#additional-resources}
 
