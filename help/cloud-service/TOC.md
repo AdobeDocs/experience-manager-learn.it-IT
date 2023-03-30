@@ -5,9 +5,9 @@ breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
+source-git-commit: 9917b16248ef1f0a9c86f03a024c634636b2304e
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '913'
 ht-degree: 20%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 20%
    + [Panoramica](./local-development-environment/overview.md)
    + [Strumenti di sviluppo](./local-development-environment/development-tools.md)
    + [Runtime AEM locale](./local-development-environment/aem-runtime.md)
-   + [Strumenti del Dispatcher locale](./local-development-environment/dispatcher-tools.md)
+   + [Strumenti Dispatcher locali](./local-development-environment/dispatcher-tools.md)
 + Sviluppo{#developing}
    + Estensibilità{#extensibility}
       + App Builder{#app-builder}
@@ -89,6 +89,7 @@ ht-degree: 20%
       + [Nozioni di base sulle configurazioni OSGi](./developing/osgi-services/configurations.md)
       + [Configurazioni OSGi con OCD](./developing/osgi-services/configurations-ocd.md)
    + Avanzate {#advanced}
+      + [API di immagini ottimizzate per il web](./developing/advanced/web-optimized-image-delivery-java-apis.md)
       + [Utenti del servizio](./developing/advanced/service-users.md)
       + [Spazi dei nomi personalizzati](./developing/advanced/custom-namespaces.md)
       + [Varianti di pagina nella cache](./developing/advanced/variant-caching.md)
