@@ -3,6 +3,7 @@ title: Creare una proprietà tag
 description: Scopri come creare una proprietà Tag con la configurazione minima a barre da integrare con AEM. Gli utenti vengono introdotti nell’interfaccia utente Tag e scopri estensioni, regole e flussi di lavoro di pubblicazione.
 topics: integrations
 audience: administrator
+solution: Experience Manager, Data Collection, Experience Platform
 doc-type: technical video
 activity: setup
 version: Cloud Service
@@ -12,10 +13,10 @@ topic: Integrations
 role: Developer
 level: Intermediate
 exl-id: d5de62ef-a2aa-4283-b500-e1f7cb5dec3b
-source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
+source-git-commit: 18a72187290d26007cdc09c45a050df8f152833b
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

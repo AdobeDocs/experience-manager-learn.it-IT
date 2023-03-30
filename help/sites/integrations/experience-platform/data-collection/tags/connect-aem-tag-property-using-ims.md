@@ -3,6 +3,7 @@ title: Connetti AEM con la proprietà tag utilizzando IMS
 description: Scopri come connettersi AEM con Tag Property utilizzando la configurazione IMS in AEM. Questa configurazione autentica AEM con l’API Launch e consente AEM comunicare tramite le API Launch per accedere alle proprietà dei tag.
 topics: integrations
 audience: administrator
+solution: Experience Manager, Data Collection, Experience Platform
 doc-type: technical video
 activity: setup
 version: Cloud Service
@@ -12,7 +13,7 @@ topic: Integrations
 role: Developer
 level: Intermediate
 exl-id: 92dbd185-bad4-4a4d-b979-0d8f5d47c54b
-source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
+source-git-commit: 18a72187290d26007cdc09c45a050df8f152833b
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 2%
