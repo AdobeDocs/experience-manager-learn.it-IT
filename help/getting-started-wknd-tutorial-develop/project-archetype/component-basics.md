@@ -12,10 +12,10 @@ kt: 4081
 thumbnail: 30177.jpg
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 2%
+source-wordcount: '1152'
+ht-degree: 1%
 
 ---
 
@@ -35,7 +35,7 @@ L’IDE utilizzata nei video è [Codice di Visual Studio](https://code.visualstu
 1. Scopri come le finestre di dialogo vengono utilizzate per facilitare l’authoring dei contenuti.
 1. Scopri le nozioni di base delle librerie lato client per includere CSS e JavaScript per supportare un componente.
 
-## Cosa stai costruendo {#what-build}
+## Cosa verrà creato {#what-build}
 
 In questo capitolo vengono apportate diverse modifiche a un semplice `HelloWorld` componente. Durante l&#39;aggiornamento della `HelloWorld` componente , vengono fornite informazioni sulle aree chiave di sviluppo AEM componente.
 
@@ -301,7 +301,7 @@ Di seguito sono riportati i passaggi di alto livello eseguiti nel video preceden
    ```
 
 1. Passa all’IDE e apri il progetto nel `ui.frontend` modulo .
-1. Aprire il file `ui.frontend/src/main/webpack/components/_helloworld.scss`.
+1. Apri il file . `ui.frontend/src/main/webpack/components/_helloworld.scss`.
 1. Aggiorna il file per visualizzare un titolo rosso:
 
    ```scss

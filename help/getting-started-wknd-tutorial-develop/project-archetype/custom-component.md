@@ -11,9 +11,9 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
 workflow-type: tm+mt
-source-wordcount: '4065'
+source-wordcount: '4066'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/a
 1. Scopri come incapsulare la logica di business con i modelli Sling
 1. Come utilizzare un modello Sling all’interno di uno script HTL
 
-## Cosa stai costruendo {#what-build}
+## Cosa verrà creato {#what-build}
 
 In questa parte dell’esercitazione WKND, viene creato un componente Byline che viene utilizzato per visualizzare informazioni create sul collaboratore di un articolo.
 
@@ -102,7 +102,7 @@ La finestra di dialogo espone l’interfaccia con cui gli autori possono fornire
        sling:resourceSuperType="core/wcm/components/image/v2/image"/>
    ```
 
-   Il file XML di cui sopra fornisce la definizione del componente, inclusi il titolo, la descrizione e il gruppo. La `sling:resourceSuperType` punti `core/wcm/components/image/v2/image`, che è [Componente immagine core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html).
+   Il file XML di cui sopra fornisce la definizione del componente, inclusi il titolo, la descrizione e il gruppo. La `sling:resourceSuperType` punti `core/wcm/components/image/v2/image`, che è [Componente immagine core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=it).
 
 ### Creare lo script HTL {#create-the-htl-script}
 

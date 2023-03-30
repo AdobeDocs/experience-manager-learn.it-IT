@@ -12,9 +12,9 @@ kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1821'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ Rivedere gli strumenti e le istruzioni necessari per la configurazione di un [am
 1. Scopri i diversi moduli generati dall’Archetipo di progetto AEM e come funzionano insieme.
 1. Scopri come AEM componenti core sono inclusi in un progetto AEM.
 
-## Cosa stai costruendo {#what-build}
+## Cosa verrà creato {#what-build}
 
 >[!VIDEO](https://video.tv.adobe.com/v/30152/?quality=12&learn=on)
 

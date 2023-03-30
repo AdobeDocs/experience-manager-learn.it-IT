@@ -10,9 +10,9 @@ kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
 recommendations: noDisplay, noCatalog
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
 workflow-type: tm+mt
-source-wordcount: '3039'
+source-wordcount: '3040'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/a
 1. Comprendi i dettagli dei modelli modificabili e come possono essere utilizzati i criteri per applicare il controllo granulare del contenuto della pagina.
 1. Scopri come i modelli e le pagine sono collegati
 
-## Cosa stai costruendo {#what-build}
+## Cosa verrà creato {#what-build}
 
 In questa parte dell’esercitazione, viene creato un nuovo modello Pagina articolo che può essere utilizzato per creare pagine di articoli e allineato a una struttura comune. Il modello Pagina articolo è basato sulle progettazioni e su un kit di interfaccia utente prodotto in Adobe XD. Questo capitolo si concentra solo sulla costruzione della struttura o dello scheletro del modello. Non vengono implementati stili, ma il modello e le pagine sono funzionanti.
 

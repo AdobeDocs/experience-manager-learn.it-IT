@@ -11,9 +11,9 @@ kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
 workflow-type: tm+mt
-source-wordcount: '2798'
+source-wordcount: '2799'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/a
 1. Scopri come utilizzare il `ui.frontend` modulo e un server di sviluppo webpack per lo sviluppo front-end dedicato.
 1. Comprendi il flusso di lavoro end-to-end della distribuzione di CSS e JavaScript compilati a un’implementazione di Sites.
 
-## Cosa stai costruendo {#what-build}
+## Cosa verrà creato {#what-build}
 
 In questo capitolo, aggiungi alcuni stili di base per il sito WKND e il modello di pagina dell’articolo per avvicinare l’implementazione a [Moduli di progettazione dell’interfaccia utente](assets/pages-templates/wknd-article-design.xd). Utilizza un flusso di lavoro front-end avanzato per integrare un progetto webpack in una libreria client AEM.
 
@@ -124,7 +124,7 @@ Quindi, aggiorna gli stili di base definiti in **[ui.frontend](https://experienc
 Le librerie lato client non supportano lingue più avanzate come [Squalo](https://sass-lang.com/) o [TypeScript](https://www.typescriptlang.org/). Ci sono diversi strumenti open-source come [NPM](https://www.npmjs.com/) e [webpack](https://webpack.js.org/) che accelera e ottimizza lo sviluppo front-end. L&#39;obiettivo del **ui.frontend** Il modulo deve essere in grado di utilizzare questi strumenti per gestire la maggior parte dei file sorgente front-end.
 
 1. Apri **ui.frontend** modulo e passa a `src/main/webpack/site`.
-1. Aprire il file `main.scss`
+1. Apri il file . `main.scss`
 
    ![main.scss - entrypoint](assets/client-side-libraries/main-scss.png)
 
