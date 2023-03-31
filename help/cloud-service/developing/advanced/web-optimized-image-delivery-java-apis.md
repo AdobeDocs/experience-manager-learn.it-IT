@@ -1,5 +1,5 @@
 ---
-title: Distribuzione ottimizzata per web Java&trade; API
+title: Distribuzione di immagini ottimizzate per il web Java&trade; API
 description: Scopri come utilizzare Java&trade, la distribuzione di immagini ottimizzata per il web di AEM as a Cloud Service; API per sviluppare esperienze web altamente performanti.
 version: Cloud Service
 feature: APIs, Sling Model, OSGI, HTL or HTML Template Language
@@ -10,15 +10,15 @@ doc-type: Code Sample
 last-substantial-update: 2023-03-30T00:00:00Z
 jira: KT-13014
 thumbnail: KT-13014.jpeg
-source-git-commit: 9917b16248ef1f0a9c86f03a024c634636b2304e
+source-git-commit: 14d89d1a3c424de044df4f6d74546788256fa383
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '849'
 ht-degree: 2%
 
 ---
 
 
-# API Java™ per la distribuzione ottimizzata per il web
+# API Java™ per la distribuzione di immagini ottimizzate per il web
 
 Scopri come utilizzare le API Java™ per la distribuzione di immagini ottimizzate per il web di AEM as a Cloud Service per sviluppare esperienze web altamente performanti.
 
@@ -30,34 +30,38 @@ AEM supporti as a Cloud Service [distribuzione di immagini ottimizzate per il we
 
 Questo articolo esplora l&#39;utilizzo delle API Java™ per immagini ottimizzate per il web in un componente personalizzato, in un modo che consente il funzionamento basato sul codice sia su AEM as a Cloud Service che sull&#39;SDK AEM.
 
-## API
+## API Java™
 
 La [API AssetDelivery](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/cq/wcm/spi/AssetDelivery.html) è un servizio OSGi che genera URL di consegna ottimizzati per il web per le risorse di immagini. `AssetDelivery.getDeliveryURL(...)` le opzioni consentite sono [documentato qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html#can-i-use-web-optimized-image-delivery-with-my-own-component%3F).
 
 La `AssetDelivery` Il servizio OSGi è soddisfatto solo quando viene eseguito in AEM as a Cloud Service. In AEM SDK, i riferimenti al `AssetDelivery` Restituzione del servizio OSGi `null`. È consigliabile utilizzare l&#39;URL ottimizzato per il web in modo condizionato quando viene eseguito su AEM as a Cloud Service e utilizzare un URL di immagine di fallback sull&#39;SDK di AEM. In genere, il rendering web della risorsa è un fallback sufficiente.
 
 
-### Servizio OSGi
+### Utilizzo dell’API nel servizio OSGi
 
 Contrassegna`AssetDelivery` In OSGi Services personalizzati, fai riferimento come facoltativo; il servizio OSGi personalizzato rimane disponibile su AEM SDK.
 
 ```java
+import com.adobe.cq.wcm.spi.AssetDelivery;
+...
 @Reference(cardinality = ReferenceCardinality.OPTIONAL)
 private volatile AssetDelivery assetDelivery;
 ```
 
-### Modello Sling
+### Utilizzo dell’API in Sling Model
 
 Contrassegna`AssetDelivery` come facoltativo nei modelli Sling personalizzati in modo che il modello Sling personalizzato rimanga disponibile su AEM SDK.
 
 ```java
+import com.adobe.cq.wcm.spi.AssetDelivery;
+...
 @OSGiService(injectionStrategy = InjectionStrategy.OPTIONAL)
 private AssetDelivery assetDelivery;
 ```
 
-### Utilizzo condizionale di AssetDelivery
+### Utilizzo condizionale dell’API
 
-Restituisci in modo condizionale l’URL dell’immagine ottimizzata per il web o l’URL di fallback in base a se `AssetDelivery` il servizio è disponibile. L’uso condizionale consente un’esperienza senza interruzioni durante l’esecuzione del codice sull’SDK di AEM.
+Restituisci in modo condizionale l’URL dell’immagine ottimizzato per il web o l’URL di fallback in base alla `AssetDelivery` Disponibilità del servizio OSGi. L’uso condizionale consente il funzionamento del codice durante l’esecuzione del codice sull’SDK di AEM.
 
 ```java
 if (assetDelivery != null ) {
@@ -78,15 +82,19 @@ Quando il codice viene eseguito su AEM as a Cloud Service, nel componente person
 
 ![Immagini ottimizzate per il web su AEM as a Cloud Service](./assets/web-optimized-image-delivery-java-apis/cloud-service.png)
 
+_AEM as a Cloud Service supporta l’API di distribuzione di risorse, in modo da utilizzare il rendering web ottimizzato per il web_
+
 Quando il codice viene eseguito su AEM SDK, vengono utilizzate rappresentazioni web statiche meno ottimali, che consentono il funzionamento del componente durante lo sviluppo locale.
 
-![Immagini di fallback ottimizzate per il web su AEM as a Cloud Service](./assets/web-optimized-image-delivery-java-apis/aem-sdk.png)
+![Immagini di fallback ottimizzate per il web su AEM SDK](./assets/web-optimized-image-delivery-java-apis/aem-sdk.png)
+
+_AEM SDK non supporta l’API AssetDelivery, pertanto viene utilizzato il rendering web statico di fallback (PNG o JPEG)_
 
 L’implementazione è suddivisa in tre parti logiche:
 
 1. La `WebOptimizedImage` Il servizio OSGi agisce come &quot;proxy intelligente&quot; per il AEM fornito `AssetDelivery` Servizio OSGi che può gestire l&#39;esecuzione sia AEM as a Cloud Service che AEM SDK.
 2. La `ExampleWebOptimizedImages` Sling Model fornisce una logica di business per la raccolta dell’elenco delle risorse di immagini e dei relativi url ottimizzati per il web da visualizzare.
-3. La `example-web-optimized-images` Componente AEM, che implementa l’HTL per visualizzare l’elenco delle immagini ottimizzate per il web.
+3. La `example-web-optimized-images` AEM componente , implementa l’HTL per visualizzare l’elenco delle immagini ottimizzate per il web.
 
 Il codice di esempio riportato di seguito può essere copiato nella base di codice e aggiornato se necessario.
 
