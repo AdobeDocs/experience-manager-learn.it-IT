@@ -1,10 +1,10 @@
 ---
 title: Aggiunta di testo e immagine al documento del canale di stampa
-seo-title: Aggiunta di testo e immagine al documento del canale di stampa
-description: 'Questa è la parte 7 di un tutorial in più passaggi per la creazione del primo documento di comunicazione interattivo. In questa parte verranno aggiunte immagini e contenuti di testo alle aree di destinazione definite nel layout (xdp). '
-seo-description: 'Questa è la parte 7 di un tutorial in più passaggi per la creazione del primo documento di comunicazione interattivo. In questa parte verranno aggiunte immagini e contenuti di testo alle aree di destinazione definite nel layout (xdp). '
+seo-title: Adding text and image content to print channel document
+description: Questa è la parte 7 di un tutorial in più passaggi per la creazione del primo documento di comunicazione interattivo. In questa parte verranno aggiunte immagini e contenuti di testo alle aree di destinazione definite nel layout (xdp).
+seo-description: This is part 7 of a multi-step tutorial for creating your first interactive communications document. In this part, we will add images and text content to the target areas defined in the layout(xdp).
 uuid: f20d6974-6faf-4b90-a7ff-8aa8a620fcaa
-feature: Comunicazione interattiva
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,16 +13,16 @@ version: 6.4,6.5
 discoiquuid: a79bf219-2423-4819-89fc-dcfe976e08b7
 kt: 5992
 thumbnail: 22379.jpg
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 49080c16-617f-4840-8bb4-7b080fa291c4
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 1%
+source-wordcount: '154'
+ht-degree: 0%
 
 ---
-
 
 # Aggiunta di testo e immagine al documento del canale di stampa
 
@@ -36,5 +36,4 @@ Per aggiungere contenuti al documento del canale di stampa, seguire il video seg
 
 Il video illustra i passaggi necessari per aggiungere contenuti alle aree di destinazione appropriate nel documento del canale di stampa.
 
->[!VIDEO](https://video.tv.adobe.com/v/22379t2/?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/22379?quality=12&learn=on)

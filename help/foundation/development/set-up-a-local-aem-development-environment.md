@@ -12,7 +12,7 @@ level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
 thumbnail: aem-local-dev-env.jpg
-source-git-commit: 2b188cbe0ba968b553a20629b89edf5ed377f300
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '2603'
 ht-degree: 2%
@@ -162,7 +162,7 @@ La **[IDEA IntelliJ](https://www.jetbrains.com/idea/)** è un potente IDE per lo
 1. Scarica e installa la [!DNL IntelliJ IDEA]: [https://www.jetbrains.com/idea/download](https://www.jetbrains.com/idea/download)
 1. Installa [!DNL Repo] (strumento a riga di comando): [https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#installation)
 
->[!VIDEO](https://video.tv.adobe.com/v/26089/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26089?quality=12&learn=on)
 
 * 00:00 - Importa progetto Maven
 * 05:47 - Crea e distribuisci il codice sorgente con Maven
@@ -250,7 +250,7 @@ Nella schermata precedente, il [!DNL WKND Core bundle] è un [!UICONTROL Install
 
 Uno strumento utile che può essere utilizzato è [!UICONTROL Finder dipendenza]: [http://localhost:4502/system/console/depfinder](http://localhost:4502/system/console/depfinder). Aggiungi il nome del pacchetto Java™ per controllare quale versione è disponibile nell&#39;istanza AEM:
 
-![Componenti core](assets/set-up-a-local-aem-development-environment/core-components.png)
+![Componenti di base](assets/set-up-a-local-aem-development-environment/core-components.png)
 
 Continuando con l&#39;esempio precedente, possiamo vedere che la versione installata sull&#39;istanza AEM è **12,2** vs **12,6** che il bundle si aspettava. Da lì, è possibile lavorare indietro e vedere se il [!DNL Maven] le dipendenze da AEM corrispondono alle [!DNL Maven] dipendenze nel progetto AEM. In, l’esempio precedente [!DNL Core Components] **v2.2.0** è installato nell&#39;istanza AEM, ma il bundle di codice è stato generato con una dipendenza da **v2.2.2**, da qui la ragione del problema della dipendenza.
 

@@ -8,7 +8,7 @@ level: Beginner
 kt: 5000
 thumbnail: 39156.jpg
 exl-id: 089a557c-5155-489c-bccf-0cb97e95840c
-source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 5%
@@ -25,7 +25,7 @@ ht-degree: 5%
 
 I profili di prodotto Adobe IMS consentono agli utenti di accedere a un servizio AEM Author e forniscono una linea di base di accesso, a seconda del profilo di prodotto a cui sono membri.
 
->[!VIDEO](https://video.tv.adobe.com/v/39156/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39156?quality=12&learn=on)
 
 ## Risorse aggiuntive
 

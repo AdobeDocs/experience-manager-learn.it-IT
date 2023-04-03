@@ -7,7 +7,7 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-06-22T00:00:00Z
 exl-id: b7d0b6b1-145a-4987-a9dc-7263efa4d9fb
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Breve introduzione al tema in Asset Share Commons. Il video illustra il processo di creazione di un nuovo tema con una combinazione di colori personalizzata.
 
->[!VIDEO](https://video.tv.adobe.com/v/20572/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/20572?quality=12&learn=on)
 
 In questo video viene creato un nuovo tema basato sul tema Scuro di Asset Share Commons. La combinazione di colori corrisponderà a un logo personalizzato per dare al sito un aspetto e un aspetto coerente.
 

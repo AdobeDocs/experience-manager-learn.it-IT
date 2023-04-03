@@ -9,7 +9,7 @@ topic: Content Management
 role: Developer
 level: Intermediate
 exl-id: 06f2ae4d-c18e-45ed-96d7-ddc6f9c8d829
-source-git-commit: d7b1ab815d9c8a0d0342f7b57d1efb08fb39a26a
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 La funzione Tag avanzati personalizzati per le immagini consente di addestrare l’assegnazione di tag avanzati con termini specifici per il cliente.
 È quindi possibile sfruttare i tag avanzati personalizzati o avanzati migliorati per migliorare l’esperienza di ricerca degli utenti e trovare le risorse al momento giusto.
 
->[!VIDEO](https://video.tv.adobe.com/v/22254/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22254?quality=12&learn=on)
 
 ## Impostazione di tag avanzati personalizzati per le immagini per AEM 6.x{#set-up}
 
@@ -32,7 +32,7 @@ Tag avanzati personalizzati per le immagini richiedono [Tag avanzati per le imma
 
 Scopri come configurare la formazione sui tag avanzati in AEM Assets, utilizzando il Servizio di contenuti avanzati e l’Adobe I/O . Tag avanzati personalizzati per le immagini
 
->[!VIDEO](https://video.tv.adobe.com/v/23405/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23405?quality=12&learn=on)
 
 ## Risorse aggiuntive
 

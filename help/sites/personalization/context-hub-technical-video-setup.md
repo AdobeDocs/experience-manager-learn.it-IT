@@ -11,10 +11,10 @@ topic: Personalization
 role: Developer
 level: Intermediate
 exl-id: 89308dd3-a7e5-4fec-bffb-5f0974125c0a
-source-git-commit: 9e4b01173f5d89075ad64adfb8b982b2297e2c39
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 8%
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 8%
 
 ContextHub è un framework per la memorizzazione, la manipolazione e la presentazione dei dati contestuali. L’API Javascript di ContextHub consente di accedere agli archivi per creare, aggiornare ed eliminare i dati in base alle necessità. ContextHub rappresenta un livello di dati sulle pagine. Questa pagina descrive come aggiungere l’hub di contesto alle pagine del sito AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/23765/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23765?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ ContextHub include un motore di segmentazione che gestisce i segmenti e determin
 
 ## Creare segmenti {#create-segments}
 
-Crea segmenti AEM che fungono da regole per i teaser. In altre parole, definiscono quando il contenuto all’interno di un teaser viene visualizzato su una pagina web. Il contenuto può quindi essere mirato per le esigenze e gli interessi del visitatore, a seconda dei segmenti di corrispondenza.
+Crea segmenti AEM che fungono da regole per i teaser. In altre parole, definiscono quando il contenuto all’interno di un teaser viene visualizzato su una pagina web. Il contenuto può quindi essere mirato in modo specifico alle esigenze e agli interessi del visitatore, a seconda dei segmenti a cui corrisponde.
 
 ## Assegnazione della configurazione cloud, del percorso del segmento e del percorso ContextHub al sito {#assigning-cloud-configuration-segment-path-and-contexthub-path-to-your-site}
 

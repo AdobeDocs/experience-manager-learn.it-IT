@@ -10,7 +10,7 @@ kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
 recommendations: noDisplay, noCatalog
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '3040'
 ht-degree: 1%
@@ -72,7 +72,7 @@ In questa parte dell’esercitazione, viene creato un nuovo modello Pagina artic
 
 Di solito, la pianificazione di un nuovo sito web inizia con modelli e design statici. [Adobe XD](https://helpx.adobe.com/support/xd.html) è uno strumento di progettazione che crea l’esperienza utente. Ora esaminiamo un kit di interfaccia utente e i modelli per pianificare la struttura del modello di pagina dell’articolo.
 
->[!VIDEO](https://video.tv.adobe.com/v/30214/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
 **Scarica la [File di progettazione di articoli WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)**.
 
@@ -92,7 +92,7 @@ Sono tre le aree principali [Modelli modificabili](https://experienceleague.adob
 
 Quindi, crea un modello in AEM che corrisponda alla struttura dei modelli. Ciò si verifica in un&#39;istanza locale di AEM. Segui i passaggi del video seguente:
 
->[!VIDEO](https://video.tv.adobe.com/v/330991/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330991?quality=12&learn=on)
 
 Passaggi di alto livello per il video precedente:
 
@@ -160,7 +160,7 @@ Una pratica comune nella creazione di contenuto globale, ad esempio intestazione
 
 L’Archetipo di progetto AEM ha generato un’intestazione e un piè di pagina. Quindi, aggiorna i frammenti esperienza in modo che corrispondano ai pattern. Segui i passaggi del video seguente:
 
->[!VIDEO](https://video.tv.adobe.com/v/330992/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330992?quality=12&learn=on)
 
 Passaggi di alto livello per il video precedente:
 
@@ -206,7 +206,7 @@ Passaggi di alto livello per il video precedente:
 
 Quindi, crea una pagina utilizzando il modello Pagina articolo . Crea il contenuto della pagina in modo che corrisponda ai modelli di sito. Segui i passaggi del video seguente:
 
->[!VIDEO](https://video.tv.adobe.com/v/330993/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330993?quality=12&learn=on)
 
 Passaggi di alto livello per il video precedente:
 

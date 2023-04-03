@@ -1,20 +1,20 @@
 ---
 title: Aggiunta di componenti alla sezione Risorse
 description: Configura il layout a soffietto per il pannello Risorse. Il layout a soffietto offre all’utente finale una migliore esperienza per aggiungere sezioni ripetibili.
-feature: Moduli adattivi
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 4212
 thumbnail: 22200.jpg
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: cd8e5fad-d17a-4f80-b4f6-0d43be4dfb80
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '57'
-ht-degree: 5%
+source-wordcount: '54'
+ht-degree: 0%
 
 ---
-
 
 # Aggiunta di componenti alla sezione Risorse {#adding-components-to-assets-section}
 
@@ -22,10 +22,7 @@ Configura il layout a soffietto per il pannello Risorse. Il layout a soffietto o
 
 **Configurare il pannello Risorse**
 
->[!VIDEO](https://video.tv.adobe.com/v/22200?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22200?quality=12&learn=on)
 
 **Imposta titolo di riepilogo**
->[!VIDEO](https://video.tv.adobe.com/v/28387)
-
-
-
+>[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)

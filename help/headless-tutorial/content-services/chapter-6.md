@@ -6,7 +6,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: b33d1509-531d-40c3-9b26-1d18c8d86a97
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Poiché AEM Content Services è basato su Configurazione (Modelli di frammenti d
    1. Seleziona la **[!DNL Events]** page
    1. Tocca **[!DNL Publish]** nella barra delle azioni superiore
 
->[!VIDEO](https://video.tv.adobe.com/v/28343/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28343?quality=12&learn=on)
 
 ## Verifica pubblicazione AEM
 

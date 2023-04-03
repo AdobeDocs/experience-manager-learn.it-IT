@@ -5,18 +5,18 @@ type: Troubleshooting
 role: Developer
 level: Intermediate
 version: 6.5
-topic: Sviluppo
+topic: Development
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 1f539f1c-b3be-4e21-b0fe-6f523a453c5f
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 2%
+source-wordcount: '48'
+ht-degree: 0%
 
 ---
-
 
 # Come eseguire lo strumento di eliminazione del processo dalla riga di comando
 
 *Questo video illustra i passaggi necessari per eseguire lo strumento di eliminazione del processo dalla riga di comando.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335508?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335508?quality=12&learn=on)

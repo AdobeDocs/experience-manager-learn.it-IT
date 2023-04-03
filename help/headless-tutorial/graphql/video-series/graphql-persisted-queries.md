@@ -9,7 +9,7 @@ level: Beginner
 kt: 7872
 thumbnail: 333429.jpeg
 exl-id: 06ba38c4-95fe-4ff5-b4d9-237ef9dec944
-source-git-commit: a627de5a2edfeb4416f1166a44bbd1d51be55c91
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 6%
@@ -31,6 +31,6 @@ In questo video:
 >La **Creare, aggiornare ed eseguire query persistenti** capitolo a partire da 2:05 utilizzi [Postman](https://www.postman.com/) per eseguire l&#39;attività. Tuttavia, nelle versioni più recenti di AEM come Cloud Service, un **Esplora risorse** è fornito, vedi [Utilizzo dell&#39;IDE GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) per ulteriori informazioni.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/333429/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333429?quality=12&learn=on)
 
 _Scarica la [Raccolta Postman](./assets/aem-headless-video-series.postman_collection.json) utilizzato in tutta la AEM serie video headless._

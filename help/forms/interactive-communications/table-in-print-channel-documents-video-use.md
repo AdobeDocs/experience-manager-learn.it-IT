@@ -13,7 +13,7 @@ role: Developer
 level: Intermediate
 exl-id: 54afd047-c6e6-4557-9336-39420f30df88
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Il video seguente illustra i passaggi necessari per utilizzare il componente tabella nelle comunicazioni interattive per la stampa dei documenti del canale.
 
->[!VIDEO](https://video.tv.adobe.com/v/27769?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27769?quality=12&learn=on)
 
 Le tabelle vengono utilizzate per visualizzare i dati in modo tabulare. Le righe della tabella devono crescere o ridursi a seconda dei dati restituiti dall’origine dati. Per utilizzare una tabella nel documento del canale di stampa, è necessario creare un file di layout (file xdp) utilizzando AEM Forms Designer. In questo file di layout viene aggiunta la tabella con il numero di colonne richiesto. Assicurarsi che il tipo di oggetto campo colonna sia TextField o Numeric Field a seconda delle esigenze. Per ciascuna colonna, assicurarsi che il binding dei dati sia impostato su Usa nome.
 

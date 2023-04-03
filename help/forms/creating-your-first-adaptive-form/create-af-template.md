@@ -7,7 +7,7 @@ role: Developer
 level: Beginner
 kt: 5859
 thumbnail: 37324.jpg
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 3%
@@ -21,7 +21,7 @@ Ogni modulo adattivo è basato su un modello di modulo adattivo. Il modello defi
 Il modello creato qui è la base per il futuro del nostro modulo adattivo.
 Il video seguente illustra il processo di base per la creazione di un modello di modulo adattivo
 
->[!VIDEO](https://video.tv.adobe.com/v/37324/quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/37324?quality=12&learn=on)
 
 Fai riferimento a [documentazione del modello di modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) per ulteriori dettagli
 

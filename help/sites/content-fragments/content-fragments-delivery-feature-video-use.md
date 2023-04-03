@@ -15,10 +15,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 525cd30c-05bf-4f17-b61b-90609ce757ea
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -36,7 +36,7 @@ Questa serie video illustra le opzioni di consegna per l’utilizzo dei framment
 
 ## Utilizzo di frammenti di contenuto nelle pagine web {#using-content-fragments-in-web-pages}
 
->[!VIDEO](https://video.tv.adobe.com/v/22449/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22449?quality=12&learn=on)
 
 I frammenti di contenuto possono essere utilizzati nelle pagine AEM Sites o in modo simile, nei frammenti di esperienza, utilizzando i componenti core di AEM WCM [Componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it).
 
@@ -44,18 +44,18 @@ I componenti Frammento di contenuto possono essere formattati utilizzando AEM si
 
 ## Esposizione di frammenti di contenuto come JSON {#exposing-content-fragments-as-json}
 
->[!VIDEO](https://video.tv.adobe.com/v/22448/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22448?quality=12&learn=on)
 
 AEM Content Services facilita la creazione di AEM endpoint HTTP basati su pagina che eseguono il rendering del contenuto in un formato JSON normalizzato.
 
-Il video di cui sopra utilizza il [Componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) per esporre singoli frammenti di contenuto. La [Componente Elenco frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html) è un nuovo componente che consente all’autore di definire una query che popolerà in modo dinamico la pagina con un elenco di frammenti di contenuto. Il componente Elenco frammenti di contenuto è preferibile quando è necessario esporre più frammenti di contenuto.
+Il video di cui sopra utilizza il [Componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) per esporre singoli frammenti di contenuto. La [Componente Elenco frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html) è un nuovo componente che consente all’autore di definire una query che popolerà in modo dinamico la pagina con un elenco di frammenti di contenuto. Il componente Elenco frammenti di contenuto è preferibile quando è necessario esporre più frammenti di contenuto.
 
 *Esempio di payload JSON end-point di Content Services:*\
 **[atleti.json](assets/athletes.json)**
 
 ## Utilizzo dell’API HTTP Assets
 
->[!VIDEO](https://video.tv.adobe.com/v/26390/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26390?quality=12&learn=on)
 
 Introdotto in AEM 6.5, viene migliorato il supporto per i frammenti di contenuto con l’API HTTP Assets. Questo fornisce agli sviluppatori un modo semplice per eseguire operazioni di creazione, lettura, aggiornamento ed eliminazione (CRUD) rispetto ai frammenti di contenuto.
 
@@ -78,9 +78,9 @@ Esistono due opzioni per esporre Frammento di contenuto come JSON per supportare
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Authoring di frammenti di contenuto](content-fragments-feature-video-use.md)
-* [AEM componenti core WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
-* [AEM componente Frammento di contenuto core WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [Authoring dei frammenti di contenuto](content-fragments-feature-video-use.md)
+* [Componenti core WCM AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+* [AEM componente Frammento di contenuto core WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it)
 
 Per scaricare e installare il pacchetto qui sotto su un&#39;istanza AEM 6.4+ per lo stato finale dalla serie video:\
 **[aem_demo_fluid-experiencescontent-fragments-100.zip](assets/aem_demo_fluid-experiencescontent-fragments-100.zip)**

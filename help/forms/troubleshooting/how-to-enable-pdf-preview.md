@@ -1,23 +1,23 @@
 ---
-title: Anteprima PDF di Designer disattivato - come abilitare Anteprima PDF
-description: Passaggi per configurare l’anteprima PDF in Designer
+title: Designer Preview PDF disabilitato - come abilitare Preview PDF
+description: Passaggi per configurare l’anteprima di PDF in Designer
 type: Troubleshooting
 role: Developer
 level: Intermediate
 version: 6.5
 feature: Designer
-topic: Sviluppo
+topic: Development
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 0d5fb8d1-5aa2-40c7-b1c9-e4b5319e8d36
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '35'
-ht-degree: 5%
+source-wordcount: '33'
+ht-degree: 0%
 
 ---
 
-
-# Come abilitare Anteprima PDF
+# Come abilitare Preview PDF
 
 *Questo video illustra i passaggi necessari per abilitare l’anteprima di PDF in Designer.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335500?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335500?quality=12&learn=on)

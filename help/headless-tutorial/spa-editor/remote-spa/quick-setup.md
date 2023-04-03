@@ -10,7 +10,7 @@ thumbnail: 333181.jpg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 5%
@@ -23,7 +23,7 @@ La configurazione rapida è una procedura dettagliata che illustra come installa
 
 La configurazione rapida consente di passare direttamente allo stato finale dell&#39;esercitazione.
 
->[!VIDEO](https://video.tv.adobe.com/v/333181/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333181?quality=12&learn=on)
 
 _Un video dettagliato sulla configurazione rapida_
 

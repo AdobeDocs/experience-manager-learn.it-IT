@@ -9,10 +9,10 @@ level: Experienced
 kt: 8630
 thumbnail: 336958.jpeg
 exl-id: e9bd9035-1f2d-4a34-a581-9c1ec2c7bc04
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '161'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 Scopri la modernizzazione dell’archivio, il contenuto mutabile e immutabile, la struttura del pacchetto e lo strumento CLI del modernizzatore dell’archivio.
 
->[!VIDEO](https://video.tv.adobe.com/v/336958/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336958?quality=12&learn=on)
 
 ## Strumento Repository Modernizer
 

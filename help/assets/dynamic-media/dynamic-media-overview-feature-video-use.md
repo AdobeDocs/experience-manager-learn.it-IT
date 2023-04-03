@@ -7,7 +7,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Questa serie video in più parti offre una panoramica della gestione e dell’ac
 
 ## Panoramica di Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/27144/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27144?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Questo video descrive come gestire e accedere ai contenuti multimediali utilizza
 
 ## Dynamic Media con AEM Sites e qualsiasi altro CMS
 
->[!VIDEO](https://video.tv.adobe.com/v/27145/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Questo video descrive come i contenuti multimediali vengono gestiti in Adobe Exp
 
 ## Dynamic Media per la creazione di raccolte di file multimediali diversi e visualizzatore personalizzato
 
->[!VIDEO](https://video.tv.adobe.com/v/27146/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Questo video descrive il semplice processo di creazione di una raccolta di risor
 
 ## Predefiniti immagini Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/27320/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
 
 Questo video descrive come vengono creati i predefiniti per immagini e cos’è un predefinito per immagini, un abbreviatore di URL per una serie di argomenti server immagini che operano su un’immagine ogni volta che un URL la richiede. Scopri le tecniche utili per estendere e modificare i predefiniti per immagini.
 
@@ -76,7 +76,7 @@ Questo video descrive come vengono creati i predefiniti per immagini e cos’è 
 
 ## Modificatori URL avanzati Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/27319/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
 Questo video descrive come andare oltre il ridimensionamento delle immagini per sfruttare le funzioni del file sorgente stesso - trasparenza di sfondo, tracciati di ritaglio incorporati e ritagli e testo come variabili - con i modificatori URL di Dynamic Media.
 
@@ -88,7 +88,7 @@ Questo video descrive come andare oltre il ridimensionamento delle immagini per 
 
 ## Controllo Dynamic Media delle dimensioni dei file JPEG in Kilobytes
 
->[!VIDEO](https://video.tv.adobe.com/v/27404/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 
 
 >[!NOTE]
@@ -99,7 +99,7 @@ Bilancia la qualità dell&#39;immagine jpeg rispetto alle dimensioni del file ri
 
 ## Aggiungere sottotitoli codificati in video Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/28074/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
 
 Aggiungi facilmente i sottotitoli codificati al video Dynamic Media aggiungendo l’URL della copia per puntare a un ulteriore documento del file sottotitoli codificati, un file sidecar web.VTT, contenente le informazioni CC per qualsiasi video.
 

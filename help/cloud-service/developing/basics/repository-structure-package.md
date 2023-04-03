@@ -1,23 +1,23 @@
 ---
 title: Cos’è il pacchetto per la struttura dell’archivio in un progetto AEM?
-description: 'Esplora il pacchetto Repository Structure di un''applicazione AEM, la sua importanza e come definirlo correttamente. '
+description: Esplora il pacchetto Repository Structure di un'applicazione AEM, la sua importanza e come definirlo correttamente.
 role: Developer
 level: Beginner
 type: Tutorial
-topic: Sviluppo
+topic: Development
 feature: AEM Project Archetype
 kt: 6928
 thumbnail: 330550.jpg
-source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
+exl-id: af0da906-87ea-4b52-9c9c-343fb29d3fcc
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 7%
+source-wordcount: '50'
+ht-degree: 14%
 
 ---
 
-
 # Pacchetto struttura archivio
 
-Esplora il [pacchetto della struttura del repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/repository-structure-package.html) di un&#39;applicazione AEM, la sua importanza e come definirlo in modo ottimale.
+Esplora un&#39;applicazione AEM [Pacchetto struttura archivio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/repository-structure-package.html?lang=it), la sua importanza e come definirla in modo ottimale.
 
->[!VIDEO](https://video.tv.adobe.com/v/330550/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330550?quality=12&learn=on)

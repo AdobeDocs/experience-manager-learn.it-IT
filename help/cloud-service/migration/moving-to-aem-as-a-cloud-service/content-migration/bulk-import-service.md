@@ -8,7 +8,7 @@ level: Experienced
 kt: 8918
 thumbnail: 336969.jpeg
 exl-id: 4944d3d9-52a0-4255-9e6c-eb119160e400
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Scopri come AEM come servizio di importazione in serie di Cloud Services può essere utilizzato per importare risorse da origini non AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/336969/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336969?quality=12&learn=on)
 
 ## Utilizzo del servizio di importazione in blocco
 
@@ -35,5 +35,5 @@ Il servizio di importazione in blocco viene utilizzato per trasferire i file arc
 
 ## Altre risorse
 
-+ [Sessione live per gli sviluppatori di Adobe sull’acquisizione delle risorse](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html?lang=en)
++ [Sessione Adobe Developers Live sull’acquisizione delle risorse](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html?lang=en)
 

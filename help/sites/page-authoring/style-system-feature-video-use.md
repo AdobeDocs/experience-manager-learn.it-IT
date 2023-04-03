@@ -15,10 +15,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 12490c29-91f4-4bb7-b7b6-7ed7cd3fb76d
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 3%
+ht-degree: 8%
 
 ---
 
@@ -26,14 +26,14 @@ ht-degree: 3%
 
 Il sistema di stili di Adobe Experience Manager consente varianti visive dei componenti senza sviluppo back-end, consentendo un migliore riutilizzo dei componenti AEM e un authoring dei contenuti più versatile ed efficiente. Il sistema di stili, utilizzato in combinazione con i componenti core AEM, l’editor di modelli e il layout dinamico, offre funzionalità avanzate per comporre rapidamente esperienze avanzate.
 
->[!VIDEO](https://video.tv.adobe.com/v/21750/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21750?quality=12&learn=on)
 
 Questo video illustra come sfruttare il sistema di stili per creare apparenze visive notevolmente diverse per un singolo componente, utilizzando solo CSS.
 
-Gli stili mostrati sono forniti dall&#39; [applicazione WKND](https://github.com/adobe/aem-guides-wknd). Questi stili sono definiti come CSS e non richiedono modifiche alla logica di back-end del componente, allo script HTL o al modello Sling.
+Gli stili visualizzati vengono forniti dalla [Applicazione WKND](https://github.com/adobe/aem-guides-wknd). Questi stili sono definiti come CSS e non richiedono modifiche alla logica di back-end del componente, allo script HTL o al modello Sling.
 
 ## Risorse aggiuntive {#additional-resources}
 
 Vuoi imparare a sviluppare con il sistema di stili? Consulta le seguenti esercitazioni:
 
-* [Sviluppo con il sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
+* [Sviluppo con il sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html?lang=it)

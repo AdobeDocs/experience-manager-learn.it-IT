@@ -1,22 +1,22 @@
 ---
 title: Elaborazione delle risorse per AEM Dynamic Media
-description: 'Passaggi per eseguire il flusso di lavoro delle risorse di aggiornamento DAM su una risorsa con Dynamic Media abilitato.  '
+description: Passaggi per eseguire il flusso di lavoro delle risorse di aggiornamento DAM su una risorsa con Dynamic Media abilitato.
 role: Developer
 level: Intermediate
 version: 6.5
-feature: Flusso di lavoro
-topic: Sviluppo
+feature: Workflow
+topic: Development
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 4e55d3fe-68fd-4d41-a4b1-e73290e0934b
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '48'
-ht-degree: 4%
+source-wordcount: '46'
+ht-degree: 0%
 
 ---
-
 
 # Elaborazione delle risorse per AEM Dynamic Media
 
 Questo video illustra il processo per eseguire il flusso di lavoro Risorsa di aggiornamento DAM su una risorsa con Dynamic Media abilitato.
 
->[!VIDEO](https://video.tv.adobe.com/v/335456?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335456?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Configurazione di App Builder per l’estensibilità di Asset compute
-description: I progetti di Asset compute sono progetti App Builder definiti in modo specifico e, come tali, richiedono l’accesso ad App Builder nell’Adobe Developer Console per configurarli e distribuirli.
+description: I progetti di Asset compute sono progetti App Builder definiti in modo specifico e, come tali, richiedono l’accesso ad App Builder nella console Adobe Developer per configurarli e distribuirli.
 feature: Asset Compute Microservices
 topics: renditions, development
 version: Cloud Service
@@ -13,7 +13,7 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 2b1d8786-592e-41f2-80cc-bc0b1c7e1b49
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 0%
@@ -22,15 +22,15 @@ ht-degree: 0%
 
 # Configurazione di App Builder
 
-I progetti di Asset compute sono progetti App Builder definiti in modo specifico e, come tali, richiedono l’accesso ad App Builder nell’Adobe Developer Console per configurarli e distribuirli.
+I progetti di Asset compute sono progetti App Builder definiti in modo specifico e, come tali, richiedono l’accesso ad App Builder nella console Adobe Developer per configurarli e distribuirli.
 
-## Creare e configurare App Builder in Adobe Developer Console{#set-up}
+## Creare e configurare App Builder nella console Adobe Developer{#set-up}
 
->[!VIDEO](https://video.tv.adobe.com/v/40183/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40183?quality=12&learn=on)
 
 _Click-through della configurazione di App Builder (senza audio)_
 
-1. Accedi a [Console per sviluppatori di Adobe](https://console.adobe.io) utilizzando l’Adobe ID associato al provisioning [conti e servizi](./accounts-and-services.md). Assicurati di __Amministratore di sistema__ o __Ruolo sviluppatore__ per l&#39;organizzazione Adobe corretta.
+1. Accedi a [Console Adobe Developer](https://console.adobe.io) utilizzando l’Adobe ID associato al provisioning [conti e servizi](./accounts-and-services.md). Assicurati di __Amministratore di sistema__ o __Ruolo sviluppatore__ per l&#39;organizzazione Adobe corretta.
 1. Creare un progetto App Builder toccando __Crea nuovo progetto > Progetto da modello > App Builder__
 
    _Se__ Crea nuovo progetto __o__ App Builder __Il tipo non è disponibile, significa che l’organizzazione Adobe non è disponibile [con App Builder](#request-adobe-project-app-builder)._
@@ -63,7 +63,7 @@ Quando si imposta la [Integrazione API di Asset compute](#set-up) è stata gener
 
 Le credenziali del progetto di Adobe I/O vengono utilizzate dal [Strumento di sviluppo Asset compute](../develop/development-tool.md) per interagire con Adobe I/O Runtime e dovrà essere incorporato nel progetto Asset compute. Acquisisci familiarità con le credenziali dell’account di servizio (JWT).
 
-![Credenziali account di Adobe Developer Service](./assets/app-builder/service-account.png)
+![Credenziali account del servizio Adobe Developer](./assets/app-builder/service-account.png)
 
 1. Dal progetto Adobe I/O Project App Builder , assicurati che `Development` area di lavoro selezionata
 1. Tocca __Account di servizio (JWT)__ sotto __Credenziali__

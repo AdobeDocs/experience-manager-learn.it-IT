@@ -6,18 +6,18 @@ role: Developer
 level: Intermediate
 version: 6.5
 feature: Designer
-topic: 'Sviluppo  '
+topic: Development
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 9cffce45-c853-440f-9ddf-2e179dff6745
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 4%
+source-wordcount: '42'
+ht-degree: 0%
 
 ---
-
 
 # Come risolvere i problemi di dipendenza con le librerie C++ in Designer
 
 *Questo video illustra i passaggi necessari per risolvere eventuali problemi di dipendenza con le librerie C++ in Designer.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335576?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335576?quality=12&learn=on)

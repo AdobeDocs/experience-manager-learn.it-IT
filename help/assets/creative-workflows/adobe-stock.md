@@ -8,7 +8,7 @@ role: User
 level: Beginner
 last-substantial-update: 2022-06-26T00:00:00Z
 exl-id: a3c3a01e-97a6-494f-b7a9-22057e91f4eb
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 3%
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 AEM 6.4.2 consente agli utenti di cercare, visualizzare in anteprima, salvare e concedere in licenza le risorse Adobe Stock direttamente da AEM. Le organizzazioni possono ora integrare il piano Adobe Stock Enterprise con AEM Assets per garantire che le risorse concesse in licenza siano ora ampiamente disponibili per i loro progetti creativi e di marketing, con le potenti funzionalità di gestione delle risorse di AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/24678/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/24678?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ L’integrazione di Adobe Stock e AEM Assets consente agli autori e ai professio
 
 AEM 6.4.2 consente agli utenti di cercare, visualizzare in anteprima, salvare e concedere in licenza le risorse Adobe Stock direttamente da AEM. Questo video illustra una breve descrizione di come impostare le scorte di Adobi con AEM Assets utilizzando la console Adobe I/O.
 
->[!VIDEO](https://video.tv.adobe.com/v/25043/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25043?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ AEM 6.4.2 consente agli utenti di cercare, visualizzare in anteprima, salvare e 
 
 >[!NOTE]
 >
->L&#39;integrazione richiede un [piano Adobe Stock aziendale](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) e AEM 6.4 con almeno [Service Pack 2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=AEM*+6*+4*+Service*+Pack*&amp;2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.property.operation=equals&amp;2_group.property.values.0_values=target-version%3Aaem%2F6-4&amp;3_group.property.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;3_group.property.operation=equals&amp;3_group.property.values.0_values=software-type%3Aservice-and-cumulative-fix&amp;orderby=%40jcr%3Acontent%2Fmetadata%2Fdc%3Atitle&amp;orderby.sort=assort c&amp;layout=list&amp;p.offset=0&amp;p.limit=24) distribuito. Per AEM i dettagli del service pack 6.4, consulta questi [note sulla versione](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html). Inoltre, sono necessarie autorizzazioni di amministratore per [Console Adobe I/O](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) e Adobe Experience Manager per configurare l’integrazione.
+>L&#39;integrazione richiede un [piano Adobe Stock aziendale](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) e AEM 6.4 con almeno [Service Pack 2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=AEM*+6*+4*+Service*+Pack*&amp;2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.property.operation=equals&amp;2_group.property.values.0_values=target-version%3Aaem%2F6-4&amp;3_group.property.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;3_group.property.operation=equals&amp;3_group.property.values.0_values=software-type%3Aservice-and-cumulative-fix&amp;orderby=%40jcr%3Acontent%2Fmetadata%2Fdc%3Atitle&amp;orderby.sort=assort c&amp;layout=list&amp;p.offset=0&amp;p.limit=24) distribuito. Per AEM i dettagli del service pack 6.4, consulta questi [note sulla versione](https://helpx.adobe.com/it/experience-manager/6-4/release-notes/sp-release-notes.html). Inoltre, sono necessarie autorizzazioni di amministratore per [Console Adobe I/O](https://console.adobe.io/), [Adobe Admin Console](https://adminconsole.adobe.com/) e Adobe Experience Manager per configurare l’integrazione.
 
 ### Installazione {#installations}
 

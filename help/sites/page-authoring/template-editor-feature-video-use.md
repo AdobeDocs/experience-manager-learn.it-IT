@@ -14,10 +14,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2213d1f2-37ed-4897-a68d-04ef423395a3
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '218'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 5%
 
 I modelli modificabili consentono agli autori specializzati di creare e aggiornare modelli di pagina e gestire configurazioni di criteri avanzate con Adobe Experience Manager (AEM) Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/326784/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326784?quality=12&learn=on)
 
 I modelli modificabili sono la raccomandazione per la creazione di un nuovo AEM Sites.
 
@@ -42,5 +42,5 @@ URL modelli modificabili (istanza AEM locale): [http://localhost:4502/libs/wcm/c
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Modelli di pagina modificabili - Documentazione](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html)
+* [Modelli di pagina modificabili - Documentazione](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=it)
 * [Creazione di modelli di pagina - Documentazione](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html)

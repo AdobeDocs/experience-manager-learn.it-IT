@@ -1,20 +1,21 @@
 ---
-title: Servizio automated forms conversion
-description: Servizio automated forms conversion. Questo articolo descrive come un amministratore AEM può configurare il servizio di Automated forms conversion per automatizzare la conversione dei propri PDF forms in moduli adattivi. Questa guida è rivolta agli amministratori IT e AEM della tua organizzazione.
-feature: Moduli adattivi
+title: Servizio di conversione automatica dei moduli
+description: Servizio di conversione automatica dei moduli. Questo articolo descrive come un amministratore AEM può configurare il servizio di Automated forms conversion per automatizzare la conversione dei propri PDF forms in moduli adattivi. Questa guida è rivolta agli amministratori IT e AEM della tua organizzazione.
+feature: Adaptive Forms
 thumbnail: 39493.jpg
 kt: 6114
-topic: Sviluppo
+topic: Development
 role: Admin
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 0715a2cc-c042-4ddc-85a1-7720f420351b
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 1%
+source-wordcount: '253'
+ht-degree: 5%
 
 ---
 
-# Servizio automated forms conversion
+# Servizio di conversione automatica dei moduli
 
 Questo articolo descrive come un amministratore AEM può configurare il servizio di Automated forms conversion per automatizzare la conversione dei propri PDF forms in moduli adattivi. Questa guida è rivolta agli amministratori IT e AEM della tua organizzazione. Le informazioni fornite si basano sul presupposto che chiunque legga questa Guida abbia familiarità con le seguenti tecnologie:
 
@@ -36,5 +37,4 @@ Per utilizzare il servizio Automated forms conversion è necessario quanto segue
 
 * Il video illustra i passaggi necessari per collegare l’istanza AEM Forms locale al servizio Automated forms conversion su Adobe Cloud.
 
->[!VIDEO](https://video.tv.adobe.com/v/39493/?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/39493?quality=12&learn=on)

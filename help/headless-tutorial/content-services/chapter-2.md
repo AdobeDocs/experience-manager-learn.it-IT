@@ -8,10 +8,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: 30c882da3a89820b5e11bc2902bb92dd0629efe9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '962'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -40,7 +40,7 @@ Se i modelli di frammenti di contenuto sono **not** abilitato per una configuraz
 >
 >Quando il `global` la configurazione viene utilizzata, la configurazione si applica a tutto il contenuto e `cq:conf` non deve essere impostato.
 >
->Consulta la sezione [[!UICONTROL Browser di configurazione] documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html) per ulteriori informazioni.
+>Consulta la sezione [[!UICONTROL Browser di configurazione] documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=it) per ulteriori informazioni.
 
 1. Accedi ad AEM Author come utente con le autorizzazioni appropriate per modificare la configurazione pertinente.
    * Per questa esercitazione, la **admin** può essere utilizzato.
@@ -70,7 +70,7 @@ Se i modelli di frammenti di contenuto sono **not** abilitato per una configuraz
    1. Verifica la **[!UICONTROL Configurazione cloud]** campo impostato su **/conf/wknd-mobile**
    1. Tocca **[!UICONTROL Salva e chiudi]** in alto a destra per mantenere le modifiche
 
->[!VIDEO](https://video.tv.adobe.com/v/28336/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28336?quality=12&learn=on)
 
 >[!WARNING]
 >
@@ -93,7 +93,7 @@ Con la mappatura è possibile definire i frammenti di contenuto utilizzati per r
 1. Tocca **[!UICONTROL Crea]** per aprire la procedura guidata di creazione del modello di frammento di contenuto .
 1. Invio **[!DNL Event]** come **[!UICONTROL Titolo modello]** *(descrizione facoltativa)* e toccare **[!UICONTROL Crea]** da salvare.
 
->[!VIDEO](https://video.tv.adobe.com/v/28337/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28337?quality=12&learn=on)
 
 ## Definizione della struttura del modello di frammento di contenuto
 
@@ -169,7 +169,7 @@ Ripeti questi passaggi utilizzando le definizioni di input definite di seguito p
 * [!UICONTROL Nome proprietà] : `venueCity`
 * [!UICONTROL Opzioni] : `Basel,London,Los Angeles,Paris,New York,Tokyo`
 
->[!VIDEO](https://video.tv.adobe.com/v/28335/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28335?quality=12&learn=on)
 
 >[!NOTE]
 >

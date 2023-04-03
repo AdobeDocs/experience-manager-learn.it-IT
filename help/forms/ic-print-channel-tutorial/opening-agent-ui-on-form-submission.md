@@ -1,10 +1,10 @@
 ---
 title: Apertura Dell’Interfaccia Utente Dell’Agente All’Invio Di POST
-seo-title: Apertura Dell’Interfaccia Utente Dell’Agente All’Invio Di POST
+seo-title: Opening Agent UI On POST Submission
 description: Questa è la parte 11 dell'esercitazione su più passaggi per creare il primo documento di comunicazione interattivo per il canale di stampa. In questa parte verrà avviata l’interfaccia dell’interfaccia dell’agente per la creazione di corrispondenza ad-hoc all’invio del modulo.
-seo-description: Questa è la parte 11 dell'esercitazione su più passaggi per creare il primo documento di comunicazione interattivo per il canale di stampa. In questa parte verrà avviata l’interfaccia dell’interfaccia dell’agente per la creazione di corrispondenza ad-hoc all’invio del modulo.
+seo-description: This is part 11 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will launch the agent ui interface for creating ad-hoc correspondence on form submission.
 uuid: 96f34986-a5c3-400b-b51b-775da5d2cbd7
-feature: Comunicazione interattiva
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,16 +12,16 @@ activity: implement
 version: 6.4,6.5
 kt: 6168
 thumbnail: 40122.jpg
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 509b4d0d-9f3c-46cb-8ef7-07e831775086
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 0%
+source-wordcount: '324'
+ht-degree: 1%
 
 ---
-
 
 # Apertura Dell’Interfaccia Utente Dell’Agente All’Invio Di POST
 
@@ -31,7 +31,7 @@ Questo articolo illustra i passaggi necessari per aprire l’interfaccia utente 
 
 Il seguente video mostra il caso d’uso
 
->[!VIDEO](https://video.tv.adobe.com/v/40122/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40122?quality=12&learn=on)
 
 ```java
 String accountNumber = request.getParameter("accountnumber"))
@@ -67,10 +67,9 @@ Per testare questa funzionalità sul server
 * Aggiungi _/content/getprintchannel_ nei percorsi esclusi
 * Salva le modifiche.
 * [Apri POST.jsp](http://localhost:4502/apps/AEMForms/openprintchannel/POST.jsp). Assicurati che la stringa passata a FormFieldRequestParameter sia valida documentId.(Linea 19).
-* [Aprire la pagina ](http://localhost:4502/content/OpenPrintChannel.html) Web, inserire il numero di conto e inviare il modulo.
+* [Apri la pagina web](http://localhost:4502/content/OpenPrintChannel.html) e inserire il numero di conto e sottomettere il modulo.
 * L’interfaccia utente dell’agente deve essere aperta con i dati precompilati specifici per il numero di account immesso nel modulo.
 
 >[!NOTE]
 >
 >Assicurati che il parametro di input dell&#39;operazione Get del modello dati del modulo sia associato all&#39;attributo di richiesta denominato &quot;numero di conto&quot; affinché questo funzioni. Se modifichi il nome del valore di binding con qualsiasi altro nome, accertati che la modifica si rifletta sulla riga 25 di POST.jsp
-

@@ -12,10 +12,10 @@ level: Beginner
 exl-id: d5d59ef5-9343-4ac2-9053-a010decdb9b6
 last-substantial-update: 2022-08-15T00:00:00Z
 thumbnail: cm-pipeline.jpg
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '312'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -31,19 +31,19 @@ Breve introduzione ai programmi Cloud Manager e Cloud Manager.
 >
 >In questi video, i tempi di creazione, test e distribuzione sono stati accelerati per ridurre il tempo del video. In genere, un’esecuzione completa della pipeline richiede 45 minuti o più (incluso il test di prestazioni obbligatorio di 30 minuti), a seconda della dimensione del progetto, del numero di istanze AEM e dei processi UAT.
 
->[!VIDEO](https://video.tv.adobe.com/v/23082/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23082?quality=12&learn=on)
 
 ## Configurazione della pipeline CI/CD
 
 Questo video esplora la configurazione della pipeline per il programma in Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/23083/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23083?quality=12&learn=on)
 
 ## Esecuzione di una pipeline non riuscita
 
 Questo video esplora l’esecuzione della pipeline CI/CD utilizzando il codice che non supera i controlli di qualità richiesti da Cloud Manager, utilizzando **[!DNL yellow]** ramo archivio.
 
->[!VIDEO](https://video.tv.adobe.com/v/23084/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23084?quality=12&learn=on)
 
 ## Esecuzione della pipeline riuscita
 
@@ -51,11 +51,11 @@ Questo video esplora l’esecuzione corretta della pipeline CI/CD utilizzando il
 
 Questo video tocca anche [!UICONTROL Attività] in Cloud Manager, che consente di reinserire in esecuzioni attive o di rivedere esecuzioni completate o non riuscite.
 
->[!VIDEO](https://video.tv.adobe.com/v/23085/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23085?quality=12&learn=on)
 
 ## Materiali di supporto
 
-* [Guida utente di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* [Guida utente di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=it)
 * [Scarica la scansione del codice [!DNL SonarQube] regole](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)
    * *XLSX disponibile nella parte inferiore della sezione collegata*
 * [[!DNL SonarQube] Indice delle regole Java™](https://rules.sonarsource.com/java/)

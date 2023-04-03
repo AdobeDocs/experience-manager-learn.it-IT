@@ -10,7 +10,7 @@ kt: 657
 exl-id: 8ec12629-3acd-4958-b25c-0ae0b97ce244
 last-substantial-update: 2022-08-10T00:00:00Z
 thumbnail: KT-657.jpg
-source-git-commit: 4fa84b0461cbdf2e25336259c4128be5585b8787
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 0%
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Workflow consente la gestione dei processi aziendali in Experience Manager e viene utilizzato per l&#39;elaborazione automatica dei contenuti e per facilitare la governance e il processo decisionale. Il flusso di lavoro è definito tramite Modelli di flusso di lavoro , composti di una serie di passaggi e creati e gestiti in [!UICONTROL Editor modelli di flusso di lavoro].
 
->[!VIDEO](https://video.tv.adobe.com/v/22201/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22201?quality=12&learn=on)

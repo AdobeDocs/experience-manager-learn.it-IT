@@ -8,7 +8,7 @@ level: Experienced
 kt: 8919
 thumbnail: 336970.jpeg
 exl-id: c51ce8e3-e83c-4f8b-a835-70335ed3a5b9
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 2%
@@ -16,11 +16,11 @@ ht-degree: 2%
 ---
 
 
-# Strumento Content Transfer (Trasferimento contenuti) 
+# Strumento trasferimento contenuti
 
 Scopri come lo strumento Content Transfer (Trasferimento contenuti) consente di migrare i contenuti a AEM as a Cloud Service da AEM 6.3+.
 
->[!VIDEO](https://video.tv.adobe.com/v/336970/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336970?quality=12&learn=on)
 
 ## Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 
@@ -45,7 +45,7 @@ Applica la tua conoscenza provando quello che hai imparato con questo esercizio 
 
 Prima di provare l&#39;esercizio pratico, assicurati di aver visto e compreso il video precedente e i seguenti materiali:
 
-+ [Strumenti di modernizzazione AEM](../aem-modernization-tools.md)
++ [Strumenti AEM Modernization Tools](../aem-modernization-tools.md)
 + [Onboarding](../onboarding.md)
 + [Cloud Manager](../cloud-manager.md)
 

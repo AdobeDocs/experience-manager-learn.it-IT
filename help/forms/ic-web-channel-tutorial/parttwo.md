@@ -15,9 +15,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 11145e87-7eef-4183-ac6f-efc8d35d0670
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,6 @@ ht-degree: 0%
 
 In questa parte, creeremo un’origine dati basata su REST.  Il video seguente illustra i passaggi necessari per creare l’origine dati.
 
->[!VIDEO](https://video.tv.adobe.com/v/22344/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22344?quality=12&learn=on)
 
 Utilizza il file swagger fornito come parte delle risorse relative a questa esercitazione. Le risorse sono disponibili in [introduzione](introduction.md) di questa esercitazione.

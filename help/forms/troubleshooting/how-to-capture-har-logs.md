@@ -5,18 +5,18 @@ type: Troubleshooting
 role: Admin
 level: Intermediate
 version: 6.5
-topic: Amministrazione
+topic: Administration
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: cfadacf9-ec54-433b-beaa-d38dbe003438
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '36'
-ht-degree: 2%
+source-wordcount: '35'
+ht-degree: 0%
 
 ---
-
 
 # Come acquisire i registri HAR (archivio HTTP)
 
 *Questo video illustra i passaggi necessari per acquisire i registri HAR (archivio HTTP).*
 
->[!VIDEO](https://video.tv.adobe.com/v/335488?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335488?quality=12&learn=on)

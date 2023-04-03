@@ -1,22 +1,22 @@
 ---
 title: Imposta le regole di traduzione in AEM
 description: L’interfaccia utente Configurazione traduzione consente a un utente di gestire le regole per la traduzione dei contenuti in AEM Sites. Questo video illustra la creazione di una nuova regola di traduzione per un componente personalizzato.
-feature: Copia lingua
+feature: Language Copy
 topics: localization, content-architecture
 audience: developer, administrator
 doc-type: technical video
 activity: setup
 version: 6.4, 6.5
-topic: Localizzazione
+topic: Localization
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 359da531-839c-4680-abf9-c880cc700159
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 3%
+source-wordcount: '321'
+ht-degree: 6%
 
 ---
-
 
 # Imposta regole di traduzione {#set-up-translation-rules-in-aem}
 
@@ -24,9 +24,9 @@ L’interfaccia utente Configurazione traduzione consente a un utente di gestire
 
 >[!NOTE]
 >
-> Il video seguente è stato registrato il AEM 6.3. AEM 6.4+ introduce una nuova struttura di archivio per la memorizzazione del file XML delle regole di traduzione. Quando utilizzi l’interfaccia utente Configurazione traduzione in AEM 6.4+, le regole vengono salvate nel percorso `/conf/global/settings/translation/rules/translation_rules.xml`. Per ulteriori informazioni, consulta [Identificazione del contenuto da tradurre](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html) .
+> Il video seguente è stato registrato il AEM 6.3. AEM 6.4+ introduce una nuova struttura di archivio per la memorizzazione del file XML delle regole di traduzione. Quando utilizzi l’interfaccia utente Configurazione traduzione in AEM 6.4+, le regole vengono salvate nel percorso `/conf/global/settings/translation/rules/translation_rules.xml`. Vedi [Identificazione del contenuto da tradurre](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html) per ulteriori dettagli.
 
->[!VIDEO](https://video.tv.adobe.com/v/18135/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/18135?quality=12&learn=on)
 
 Le regole di traduzione identificano il contenuto in AEM da estrarre per la traduzione. Le regole di traduzione predefinite coprono casi d’uso comuni, come i componenti Testo e il testo Alt per i componenti Immagine. A seconda di un progetto di traduzione potrebbero essere necessarie ulteriori regole. In generale, le regole di traduzione consentono agli utenti di specificare:
 
@@ -38,7 +38,7 @@ Editor delle regole di traduzione che aggiornerà il file xml di traduzione. L�
 
 Accedi all’interfaccia utente di configurazione della traduzione:
 
-* **[!UICONTROL Menu]  Start AEM >  [!UICONTROL Strumenti]  >  [!UICONTROL Generale]  > Configurazione  [[!UICONTROL traduzione]](http://localhost:4502/libs/cq/translation/translationrules/contexts.html)**
+* **[!UICONTROL Menu di avvio AEM] > [!UICONTROL Strumenti] > [!UICONTROL Generale] > [[!UICONTROL Configurazione della traduzione]](http://localhost:4502/libs/cq/translation/translationrules/contexts.html)**
 
 ## Prima della AEM 6.3 {#prior-to-aem}
 
@@ -47,6 +47,6 @@ Nelle precedenti regole di traduzione AEM versione sono state aggiornate manualm
 ## Risorse aggiuntive {#additional-resources}
 
 * [Identificazione del contenuto da tradurre](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html)
-* [Traduzione di contenuti per siti multilingue](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html)
+* [Traduzione di contenuti per siti multilingue](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/translation.html)
 * [https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html)
 * [Best practice per la traduzione](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-bp.html)

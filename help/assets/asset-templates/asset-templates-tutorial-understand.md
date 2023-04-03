@@ -6,7 +6,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c418e94a-b18e-429a-b41c-2bf32e158598
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Questa esercitazione video illustra come definire un file InDesign e tutte le re
 
 ## Creazione del file modello di InDesign {#constructing-the-indesign-template-file}
 
->[!VIDEO](https://video.tv.adobe.com/v/19293/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/19293?quality=12&learn=on)
 
 1. Scarica e apri le [**Modello di file InDesign**](assets/asset-templates-tutorial-video--supporting-files.zip)
 2. **Apri il pannello Tag ,** controlla la convenzione di denominazione dei tag e osserva che gli elementi modificabili dall’autore nel file InDesign sono già dotati di tag. In AEM è possibile modificare solo gli elementi con tag.
@@ -51,7 +51,7 @@ Questa esercitazione video illustra come definire un file InDesign e tutte le re
 
 ## Creazione e creazione di un modello di risorse in AEM Assets {#creating-and-authoring-an-asset-template-in-aem-assets}
 
->[!VIDEO](https://video.tv.adobe.com/v/19294/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/19294?quality=12&learn=on)
 
 1. **Avvia InDesign Server** sulla porta 8080.
 2. Assicurati che **L’istanza di AEM Author è configurata per interagire con il tuo InDesign Server**(e viceversa).

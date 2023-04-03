@@ -9,7 +9,7 @@ level: Beginner
 kt: 7620
 thumbnail: 332859.jpg
 exl-id: 7f17d829-544e-4cf2-bd75-b179ffb89bf5
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 0%
@@ -24,8 +24,8 @@ In questo video:
 
 + Scopri come utilizzare i riferimenti ai frammenti di contenuto per collegare uno o più frammenti di contenuto
 + Scopri come effettuare un collegamento profondo ad altri frammenti di contenuto all’interno di un campo di testo RTF
-+ Creare query GraphQL che restituiscono dati dall&#39;interno di frammenti di contenuto a cui si fa riferimento
++ Creazione di query GraphQL che restituiscono dati dall’interno di frammenti di contenuto a cui si fa riferimento
 
->[!VIDEO](https://video.tv.adobe.com/v/332859/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332859?quality=12&learn=on)
 
-_Scarica la  [raccolta ](./assets/aem-headless-video-series.postman_collection.json) Postman utilizzata nella AEM serie video headless._
+_Scarica la [Raccolta Postman](./assets/aem-headless-video-series.postman_collection.json) utilizzato in tutta la AEM serie video headless._

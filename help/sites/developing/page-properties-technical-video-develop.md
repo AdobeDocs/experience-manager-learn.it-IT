@@ -8,7 +8,7 @@ version: Cloud Service
 kt: 243
 thumbnail: 25173.jpg
 exl-id: 500f4e07-2686-42a2-8e44-d96dde02a112
-source-git-commit: 94a29a78edff17ec8089f7056dc118fd335ae484
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 La personalizzazione dei campi di metadati per le Proprietà pagina è un requisito comune in qualsiasi implementazione di Sites. Questo video illustra il modo più efficace per eseguire questa operazione utilizzando le funzioni di Sling Resource Merger.
 
->[!VIDEO](https://video.tv.adobe.com/v/25173?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25173?quality=12&learn=on)
 
 Il video precedente mostra la personalizzazione delle proprietà della pagina per [Sito di riferimento WKND](https://github.com/adobe/aem-guides-wknd).
 

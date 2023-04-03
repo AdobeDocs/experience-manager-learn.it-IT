@@ -9,7 +9,7 @@ level: Beginner
 jira: KT-11861
 thumbnail: KT-11861.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 65d54f0137786c7e8ac9ac962c424dd20bf5f3dd
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 4%
@@ -28,7 +28,7 @@ Questo video mostra:
 - Configurazione di [CLI estensibile Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) noto anche come `aio CLI`
 - Configurazione e configurazione di AEM RDE e Cloud Manager `aio CLI` plugin
 
->[!VIDEO](https://video.tv.adobe.com/v/3415490/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3415490?quality=12&learn=on)
 
 ## Prerequisito
 
@@ -116,7 +116,7 @@ Le informazioni sullo stato dell’RDE vengono visualizzate come lo stato dell�
 Scopri [come utilizzare](./how-to-use.md) un RDE per distribuire codice e contenuti dall&#39;IDE (Integrated Development Environment) preferito per cicli di sviluppo più rapidi.
 
 
-## Altro materiale di riferimento
+## Risorse aggiuntive
 
 [Abilitazione di RDE nella documentazione di un programma](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#enabling-rde-in-a-program)
 

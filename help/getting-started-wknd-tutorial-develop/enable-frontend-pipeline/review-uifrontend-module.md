@@ -11,7 +11,7 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 4%
@@ -36,7 +36,7 @@ In questo capitolo esaminiamo lo sviluppo, la distribuzione e la distribuzione d
 >
 >Questo video illustra e illustra il flusso front-end per **Creazione completa e rapida di siti** progetti per delineare la sottile differenza nel modello di creazione, distribuzione e consegna delle risorse front-end.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409344/)
+>[!VIDEO](https://video.tv.adobe.com/v/3409344?quality=12&learn=on)
 
 ## Prerequisiti {#prerequisites}
 
@@ -150,7 +150,7 @@ Le risorse front-end implementate tramite la pipeline a stack completo vengono d
     ....
 ```
 
-## Congratulazioni! {#congratulations}
+## Congratulazioni.  {#congratulations}
 
 Congratulazioni, hai rivisto il modulo ui.frontend del progetto con stack completo
 

@@ -11,7 +11,7 @@ kt: 9371
 thumbnail: 338680.jpg
 exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 4%
@@ -36,11 +36,11 @@ Per seguire insieme ai video è necessario [Adobe XD](https://www.adobe.com/prod
 
 ## Cosa verrà creato {#what-you-will-build}
 
-In questo capitolo vengono esaminati due file Adobe XD, uno per [Modello di sito standard](https://github.com/adobe/aem-site-template-standard) e un altro per il sito WKND proposto. Le azioni   
+In questo capitolo vengono esaminati due file Adobe XD, uno per [Modello di sito standard](https://github.com/adobe/aem-site-template-standard) e un altro per il sito WKND proposto. Le azioni
 
 ## Kit interfaccia utente standard per modelli di sito {#standard-site-template-uikit}
 
->[!VIDEO](https://video.tv.adobe.com/v/338680/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338680?quality=12&learn=on)
 
 Fasi di alto livello:
 
@@ -50,14 +50,14 @@ Fasi di alto livello:
 
 ## Kit interfaccia utente WKND {#wknd-ui-kit}
 
->[!VIDEO](https://video.tv.adobe.com/v/30214/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
 Fasi di alto livello:
 
 1. Scarica la [File XD articolo WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd).
 1. Inspect le progettazioni per il modello di articolo WKND.
 
-## Congratulazioni! {#congratulations}
+## Congratulazioni.  {#congratulations}
 
 Congratulazioni, hai imparato come i kit dell’interfaccia utente di Adobe XD possono essere utilizzati per mappare e pianificare un’implementazione di AEM Sites.
 

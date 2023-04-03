@@ -15,7 +15,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: faa9ca2d-6cfa-4abf-be5e-3e549202853a
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 In questa parte, installiamo TOMCAT e distribuiamo il file sampleRest.war in TOMCAT. L’endpoint REST esposto da questo file WAR è la base del modello dati Origine dati e Modulo.
 
->[!VIDEO](https://video.tv.adobe.com/v/37815/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37815?quality=12&learn=on)
 
 Per impostare tomcat, seguire le seguenti istruzioni:
 
@@ -43,7 +43,7 @@ Per impostare tomcat, seguire le seguenti istruzioni:
 11. Una volta avviato il tuo gatto, prova l&#39;endpoint esposto da file WAR per [clic qui](http://localhost:8080/SampleRest/webapi/getStatement/9586)
 12. È necessario ottenere dati di esempio come risultato di questa chiamata.
 
-Congratulazioni !!!. Hai configurato tomcat e distribuito il file SampleRest.war.
+Congratulazioni!!!! Hai configurato tomcat e distribuito il file SampleRest.war.
 
 Il video seguente spiega la distribuzione di un’applicazione di esempio a Tomcat.
->[!VIDEO](https://video.tv.adobe.com/v/37815)
+>[!VIDEO](https://video.tv.adobe.com/v/37815?quality=12&learn=on)

@@ -11,7 +11,7 @@ kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 2%
@@ -48,7 +48,7 @@ Ci sono 3 aree principali di [Modelli di pagina](https://experienceleague.adobe.
 
 Quindi, crea un nuovo modello in AEM che corrisponda alla struttura dei modelli. Questo si verificherà in un&#39;istanza locale di AEM. Segui i passaggi del video seguente:
 
->[!VIDEO](https://video.tv.adobe.com/v/332915/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332915?quality=12&learn=on)
 
 Puoi usare la seguente miniatura per identificare il modello (o caricarne uno personalizzato!)
 
@@ -65,7 +65,7 @@ Una pratica comune nella creazione di contenuto globale, ad esempio intestazione
 
 Il modello Sito generava un’intestazione e un piè di pagina. Quindi, aggiorna i frammenti esperienza in modo che corrispondano ai pattern. Segui i passaggi del video seguente:
 
->[!VIDEO](https://video.tv.adobe.com/v/332916/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332916?quality=12&learn=on)
 
 Passaggi di alto livello per il video seguente:
 
@@ -77,11 +77,11 @@ Passaggi di alto livello per il video seguente:
 
 Quindi, crea una nuova pagina utilizzando il modello Pagina articolo di Magazine . Crea il contenuto della pagina in modo che corrisponda ai modelli di sito. Segui i passaggi del video seguente:
 
->[!VIDEO](https://video.tv.adobe.com/v/332917/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332917?quality=12&learn=on)
 
 Utilizza la [testo fornito](./assets/page-templates/la-skateparks-copy.txt) per popolare il corpo dell&#39;articolo.
 
-## Congratulazioni! {#congratulations}
+## Congratulazioni.  {#congratulations}
 
 Congratulazioni, hai appena creato un nuovo modello e una nuova pagina con Adobe Experience Manager Sites.
 

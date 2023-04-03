@@ -1,13 +1,13 @@
 ---
-title: Concetti avanzati di AEM headless - GraphQL
-description: Un tutorial end-to-end che illustra i concetti avanzati delle API GraphQL di Adobe Experience Manager (AEM).
+title: Concetti avanzati di AEM senza testa - GraphQL
+description: Un tutorial end-to-end che illustra i concetti avanzati delle API di Adobe Experience Manager (AEM) GraphQL.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
-source-git-commit: ee6f65fba8db5ae30cc14aacdefbeba39803527b
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Concetti avanzati di AEM senza testa
 
-Questa esercitazione completa continua la [esercitazione di base](../multi-step/overview.md) che includeva le nozioni di base di Adobe Experience Manager (AEM) Headless e GraphQL. L’esercitazione avanzata illustra gli aspetti approfonditi dell’utilizzo dei modelli di frammenti di contenuto, dei frammenti di contenuto e delle query AEM GraphQL persistenti, incluso l’utilizzo delle query GraphQL persistenti in un’applicazione client.
+Questa esercitazione completa continua la [esercitazione di base](../multi-step/overview.md) che ha trattato i fondamenti di Adobe Experience Manager (AEM) Headless e GraphQL. L’esercitazione avanzata illustra gli aspetti approfonditi dell’utilizzo dei modelli di frammenti di contenuto, dei frammenti di contenuto e delle query persistenti AEM GraphQL, incluso l’utilizzo delle query persistenti GraphQL in un’applicazione client.
 
 ## Prerequisiti
 
@@ -36,15 +36,15 @@ Questa esercitazione tratta i seguenti argomenti:
 
 * Crea modelli di frammenti di contenuto utilizzando le regole di convalida e tipi di dati più avanzati, ad esempio segnaposto delle schede, riferimenti a frammenti nidificati, oggetti JSON e tipi di dati Data e ora.
 * Creazione di frammenti di contenuto durante l’utilizzo di riferimenti a frammenti e contenuti nidificati e configurazione di criteri per la gestione dell’authoring dei frammenti di contenuto.
-* Esplora AEM funzionalità dell’API GraphQL utilizzando query GraphQL con variabili e direttive.
-* Permetti alle query GraphQL con parametri in AEM e impara a utilizzare parametri di controllo cache con query persistenti.
-* Integra le richieste per le query persistenti nell’app WKND GraphQL React di esempio utilizzando l’SDK JavaScript senza intestazione AEM.
+* Esplora AEM funzionalità API di GraphQL utilizzando query GraphQL con variabili e direttive.
+* Permetti alle query GraphQL con parametri in AEM e impara a utilizzare i parametri di controllo della cache con query persistenti.
+* Integra le richieste di query persistenti nell’app WKND GraphQL React di esempio utilizzando l’SDK JavaScript senza intestazione AEM.
 
 ## Panoramica dei concetti avanzati di AEM Headless
 
 Il video seguente fornisce una panoramica di alto livello dei concetti trattati in questa esercitazione. L’esercitazione include la definizione di modelli di frammenti di contenuto con tipi di dati più avanzati, la nidificazione di frammenti di contenuto e la persistenza di query GraphQL in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/340035/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340035?quality=12&learn=on)
 
 >[!CAUTION]
 >
@@ -58,7 +58,7 @@ Il progetto WKND Site dispone di tutte le configurazioni necessarie, quindi puoi
 
 ### Rivedi la configurazione esistente
 
-Il primo passaggio per avviare un nuovo progetto in AEM è la creazione della sua configurazione, come area di lavoro e per creare endpoint API GraphQL. Per rivedere o creare una configurazione, passa a **Strumenti** > **Generale** > **Browser di configurazione**.
+Il primo passo per avviare un nuovo progetto in AEM è la creazione della sua configurazione, come area di lavoro e per creare endpoint API GraphQL. Per rivedere o creare una configurazione, passa a **Strumenti** > **Generale** > **Browser di configurazione**.
 
 ![Passa al browser di configurazione](assets/overview/create-configuration.png)
 
@@ -66,7 +66,7 @@ Osserva che il `WKND Shared` la configurazione del sito è già stata creata per
 
 ![Rivedi configurazione condivisa WKND](assets/overview/review-wknd-shared-configuration.png)
 
-### Rivedi gli endpoint API GraphQL
+### Revisione degli endpoint API di GraphQL
 
 Successivamente, devi configurare gli endpoint API a cui inviare le query GraphQL. Per rivedere gli endpoint esistenti o crearne uno, passa a **Strumenti** > **Generale** > **GraphQL**.
 
@@ -102,7 +102,7 @@ Infine, devi assegnare la configurazione del progetto alla cartella principale d
 
 Per assegnare la cartella principale della lingua alla configurazione, selezionare la cartella, quindi selezionare **Proprietà** nella barra di navigazione superiore.
 
-![Seleziona Proprietà](assets/overview/properties.png)
+![Seleziona proprietà](assets/overview/properties.png)
 
 Quindi, passa alla **Cloud Services** e seleziona l’icona della cartella nella scheda **Configurazione cloud** campo .
 
@@ -125,7 +125,7 @@ Due AEM **pacchetti** sono disponibili e possono essere installati tramite [Gest
 * [Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip) contiene la soluzione completa per i capitoli da 1 a 4, inclusi nuovi modelli di frammenti di contenuto, frammenti di contenuto e query GraphQL persistenti. Utile per coloro che desiderano saltare direttamente nel [Integrazione di applicazioni client](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md) capitolo.
 
 
-La [React App - Tutorial avanzato - Avventure WKND](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/advanced-tutorial/README.md) è disponibile per esaminare ed esplorare l’applicazione di esempio. Questa applicazione di esempio recupera il contenuto da AEM richiamando le query GraphQL persistenti ed esegue il rendering in un&#39;esperienza coinvolgente.
+La [React App - Tutorial avanzato - Avventure WKND](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/advanced-tutorial/README.md) è disponibile per esaminare ed esplorare l’applicazione di esempio. Questa applicazione di esempio recupera il contenuto da AEM richiamando le query GraphQL persistenti ed esegue il rendering in un’esperienza coinvolgente.
 
 ## Guida introduttiva
 

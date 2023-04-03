@@ -1,5 +1,5 @@
 ---
-title: Creare modelli di frammenti di contenuto - Concetti avanzati di AEM headless - GraphQL
+title: Creare modelli di frammenti di contenuto - Concetti avanzati di AEM Headless - GraphQL
 description: In questo capitolo sui concetti avanzati di Adobe Experience Manager (AEM) Headless, scopri come modificare un modello di frammento di contenuto aggiungendo segnaposto a schede, data e ora, oggetti JSON, riferimenti a frammenti e riferimenti a contenuti.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
@@ -7,7 +7,7 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1989'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Questo capitolo descrive i passaggi necessari per creare cinque modelli di framm
 
 * **Informazioni di contatto**
 * **Indirizzo**
-* **Utente**
+* **Persona**
 * **Dove si trova**
 * **Team**
 
@@ -42,7 +42,7 @@ Questa è un&#39;esercitazione avanzata. Prima di procedere con questo capitolo,
 
 Il video seguente fornisce una breve introduzione ai modelli di frammento di contenuto e al modo in cui vengono utilizzati in questa esercitazione.
 
->[!VIDEO](https://video.tv.adobe.com/v/340037/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340037?quality=12&learn=on)
 
 ## Creare modelli di frammenti di contenuto {#create-models}
 
@@ -217,7 +217,7 @@ Analogamente a come il modello Team dispone di un riferimento a un frammento al 
 
 1. Seleziona **Salva** per confermare le modifiche e chiudere l’Editor modello frammento di contenuto.
 
-## Best practice   {#best-practices}
+## Best practice {#best-practices}
 
 Esistono alcune best practice relative alla creazione di modelli di frammenti di contenuto:
 

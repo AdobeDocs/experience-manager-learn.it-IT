@@ -11,7 +11,7 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 0%
@@ -31,7 +31,7 @@ In questo capitolo, creiamo ed eseguiamo una pipeline front-end in Adobe Cloud M
 
 ## Utilizzo della pipeline front-end
 
->[!VIDEO](https://video.tv.adobe.com/v/3409420/)
+>[!VIDEO](https://video.tv.adobe.com/v/3409420?quality=12&learn=on)
 
 ## Prerequisiti {#prerequisites}
 
@@ -102,7 +102,7 @@ E __cosa più importante__ per __Posizione codice__ campo il valore è `/ui.fron
 
 
 
-## Congratulazioni! {#congratulations}
+## Congratulazioni.  {#congratulations}
 
 Congratulazioni, hai creato, eseguito e verificato la pipeline Front-End che crea e distribuisce solo il modulo &#39;ui.frontend&#39; del progetto WKND Sites. Ora il team front-end può eseguire rapidamente iterazioni sul design e sul comportamento front-end del sito, al di fuori del ciclo di vita completo del progetto AEM.
 

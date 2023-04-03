@@ -1,20 +1,20 @@
 ---
 title: Variabili del tipo di modello per dati modulo
 description: Utilizzo di variabili di tipo modello dati modulo in un flusso di lavoro AEM.
-feature: Moduli adattivi
+feature: Adaptive Forms
 version: 6.5
 kt: 6347
 thumbnail: 41238.jpg
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: ca972ad4-bb23-43ab-8676-f2cccf1765ba
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 4%
+source-wordcount: '61'
+ht-degree: 0%
 
 ---
-
 
 # Variabili del tipo di modello per dati modulo
 
@@ -22,4 +22,4 @@ Le variabili del tipo di modello per dati modulo sono generalmente utilizzate pe
 
 
 
->[!VIDEO](https://video.tv.adobe.com/v/41238/quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41238?quality=12&learn=on)

@@ -12,7 +12,7 @@ topic: Architecture
 role: Architect, Developer
 level: Beginner
 exl-id: 92afc9c4-3d58-4787-86f6-46495d89c4d4
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '41'
 ht-degree: 4%
@@ -21,6 +21,6 @@ ht-degree: 4%
 
 # Introduzione a [!DNL Sling] {#introduction-sling}
 
-Introduzione a [!DNL Sling], framework web open-source [!DNL RESTful] che fa parte dello stack di tecnologia sottostante di Adobe Experience Manager.
+Introduzione a [!DNL Sling], un open source [!DNL RESTful] framework web che fa parte dello stack di tecnologia sottostante di Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/32032/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32032?quality=12&learn=on)

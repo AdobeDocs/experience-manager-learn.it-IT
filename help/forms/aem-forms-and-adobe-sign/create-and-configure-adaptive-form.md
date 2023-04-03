@@ -8,7 +8,7 @@ topic: Development
 role: User
 level: Beginner
 exl-id: ee3dc77d-a888-473f-b2a6-7f7a4e969358
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 0%
@@ -19,4 +19,4 @@ ht-degree: 0%
 
 Il video seguente illustra i passaggi necessari per creare e configurare un modulo adattivo per la generazione automatica del DoR. Il video illustra anche i passaggi necessari per configurare un modulo adattivo per attivare un flusso di lavoro AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/38348/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38348?quality=12&learn=on)

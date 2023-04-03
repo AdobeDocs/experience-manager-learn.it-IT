@@ -5,19 +5,19 @@ type: Troubleshooting
 role: Admin
 level: Beginner
 version: 6.5
-feature: Strumenti per gli sviluppatori
-topic: Amministrazione
+feature: Developer Tools
+topic: Administration
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: aa520806-3937-4100-b75a-78c2460c1b2f
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '38'
-ht-degree: 7%
+source-wordcount: '35'
+ht-degree: 0%
 
 ---
-
 
 # Passaggi per risolvere i problemi di replica in AEM
 
 *Questo video illustra i passaggi necessari per risolvere i problemi di replica in AEM.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335471?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335471?quality=12&learn=on)

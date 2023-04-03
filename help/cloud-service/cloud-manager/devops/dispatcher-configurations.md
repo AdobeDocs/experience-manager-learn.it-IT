@@ -4,20 +4,20 @@ description: Gestisci le configurazioni del dispatcher in AEM Cloud Manager.
 role: Developer
 level: Beginner
 type: Tutorial
-topic: Sviluppo
-feature: Strumenti per sviluppatori, Dispatcher
+topic: Development
+feature: Developer Tools, Dispatcher
 kt: 6915
 thumbnail: 330538.jpg
-source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
+exl-id: 7d0812b7-2346-42a9-bcd4-ceb394905bea
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 2%
+source-wordcount: '40'
+ht-degree: 0%
 
 ---
-
 
 # Gestione delle configurazioni del Dispatcher in AEM Cloud Manager
 
 Utilizza best practice ed esempi per esplorare come funziona il dispatcher con AEM as Cloud Service e Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/330538/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330538?quality=12&learn=on)

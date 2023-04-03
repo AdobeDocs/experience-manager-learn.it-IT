@@ -1,25 +1,24 @@
 ---
 title: Aggiunta di pannelli figlio al pannello principale
 description: Configurazione del layout del pannello principale su "Tabs on Left" e aggiunta di pannelli figlio al pannello principale.
-feature: Moduli adattivi
+feature: Adaptive Forms
 version: 6.4,6.5
 thumbnail: 28536.jpg
 kt: 4209
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: a68c41b8-3e80-4b25-a933-9ceb8aee1e01
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 4%
+source-wordcount: '58'
+ht-degree: 0%
 
 ---
 
-
 # Aggiunta di pannelli figlio al pannello principale {#adding-child-panels-to-root-panel}
 
-Quando aggiungi pannelli figlio al pannello principale, **Assicurati di essere in modalità di modifica. Il pulsante di modifica si trova in alto a destra del browser.**
+Quando aggiungi pannelli figlio al pannello principale, ti preghiamo di: **Assicurati di essere in modalità di modifica. Il pulsante di modifica si trova in alto a destra del browser.**
 
 
->[!VIDEO](https://video.tv.adobe.com/v/28536?quality=9&learn=on)
-
+>[!VIDEO](https://video.tv.adobe.com/v/28536?quality=12&learn=on)

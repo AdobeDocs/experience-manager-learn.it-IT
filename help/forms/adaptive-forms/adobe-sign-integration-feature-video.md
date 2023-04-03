@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 last-substantial-update: 2020-10-20T00:00:00Z
-source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Utilizzo di Acrobat Sign con AEM Forms
 
->[!VIDEO](https://video.tv.adobe.com/v/18696?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/18696?quality=12&learn=on)
 
 *Questo video illustra il processo di configurazione del servizio cloud Acrobat Sign e l’aggiunta di più campi firma a un modulo adattivo AEM.*
 

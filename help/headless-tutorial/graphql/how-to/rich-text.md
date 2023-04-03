@@ -1,6 +1,6 @@
 ---
 title: Utilizzo di testo RTF con AEM headless
-description: Scopri come creare contenuti e incorporare contenuti di riferimento utilizzando un editor Rich Text multiriga con frammenti di contenuto Adobe Experience Manager e in che modo il testo RTF viene distribuito dalle API GraphQL AEM come JSON da utilizzare dalle applicazioni headless.
+description: Scopri come creare contenuti e incorporare contenuti di riferimento utilizzando un editor Rich Text multilingue con frammenti di contenuto Adobe Experience Manager e come il testo RTF viene distribuito dalle API GraphQL AEM come JSON da utilizzare dalle applicazioni headless.
 version: Cloud Service
 doc-type: article
 kt: 9985
@@ -8,7 +8,7 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1464'
 ht-degree: 0%
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 Il campo di testo su più righe è un tipo di dati Frammenti di contenuto che consente agli autori di creare contenuti di testo RTF. I riferimenti ad altri contenuti, come immagini o altri frammenti di contenuto, possono essere inseriti in linea in modo dinamico all’interno del flusso di testo. Il campo di testo a riga singola è un altro tipo di dati Frammenti di contenuto che deve essere utilizzato per elementi di testo semplici.
 
-AEM’API GraphQL offre una solida capacità di restituire testo RTF come HTML, testo normale o come JSON puro. La rappresentazione JSON è potente in quanto offre all’applicazione client il pieno controllo su come eseguire il rendering del contenuto.
+AEM’API GraphQL offre una solida funzionalità per restituire testo RTF come HTML, testo normale o come JSON puro. La rappresentazione JSON è potente in quanto offre all’applicazione client il pieno controllo su come eseguire il rendering del contenuto.
 
 ## Editor multiriga
 
->[!VIDEO](https://video.tv.adobe.com/v/342104/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342104?quality=12&learn=on)
 
-Nell’Editor frammento di contenuto, la barra dei menu del campo di testo su più righe offre agli autori funzionalità di formattazione RTF standard, ad esempio **audace**, *corsivo* e sottolineano. L&#39;apertura del campo multiriga in modalità a schermo intero abilita [strumenti di formattazione aggiuntivi come tipo di paragrafo, trova e sostituisci, controllo ortografico e altro ancora](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
+Nell’Editor frammento di contenuto, la barra dei menu del campo di testo su più righe offre agli autori funzionalità di formattazione RTF standard, ad esempio **audace**, *corsivo* e sottolineano. L&#39;apertura del campo multiriga in modalità a schermo intero abilita [strumenti di formattazione aggiuntivi come tipo di paragrafo, trova e sostituisci, controllo ortografico e altro ancora](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html?lang=it).
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Controlla la **Traducibile** se il contenuto deve essere localizzato. È possibi
 
 ## Risposta in formato RTF con API GraphQL
 
-Quando crei una query GraphQL, gli sviluppatori possono scegliere diversi tipi di risposta da `html`, `plaintext`, `markdown`e `json` da un campo con più righe.
+Quando crei una query GraphQL, gli sviluppatori possono scegliere diversi tipi di risposta tra `html`, `plaintext`, `markdown`e `json` da un campo con più righe.
 
 Gli sviluppatori possono utilizzare [Anteprima JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html) nell’editor Frammento di contenuto per mostrare tutti i valori del frammento di contenuto corrente che possono essere restituiti utilizzando l’API GraphQL.
 
@@ -331,7 +331,7 @@ La `nodeMap` è un valore letterale di oggetto JavaScript utilizzato come mappa.
 
 ### Esempio di codice completo
 
-Un&#39;utilità riutilizzabile per il rendering di testo RTF si trova in [Esempio di reazione grafico WKND](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
+Un&#39;utilità riutilizzabile per il rendering di testo RTF si trova in [Esempio di reazione GraphQL WKND](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
 
 * [renderRichText.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/utils/renderRichText.js) - utilità riutilizzabile che espone una funzione `mapJsonRichText`. Questa utility può essere utilizzata dai componenti che desiderano eseguire il rendering di una risposta JSON RTF come React JSX.
 * [AdventureDetail.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) - Esempio di componente che effettua una richiesta GraphQL che include testo RTF. Il componente utilizza il `mapJsonRichText` utilità per eseguire il rendering del testo RTF e di eventuali riferimenti.
@@ -351,9 +351,9 @@ La schermata precedente mostra un&#39;immagine inserita nel campo multivalore ut
 
 La schermata precedente mostra un altro frammento di contenuto, Guida completa ai parchi di Skate LA, inserito nel campo multi-riga. I tipi di frammenti di contenuto che possono essere inseriti nel campo sono controllati dalla **Modelli di frammenti di contenuto consentiti** nella configurazione [tipo di dati multi-riga](#multi-line-data-type) nel modello Frammento di contenuto.
 
-## Query di riferimenti in linea con GraphQL
+## Eseguire query sui riferimenti in linea con GraphQL
 
-L’API GraphQL consente agli sviluppatori di creare una query che include proprietà aggiuntive su eventuali riferimenti inseriti in un campo multi-riga. La risposta JSON include un `_references` oggetto in cui sono elencate queste proprietà aggiuntive. La risposta JSON offre agli sviluppatori un controllo completo su come eseguire il rendering dei riferimenti o dei collegamenti invece di dover gestire HTML con opinioni critiche.
+L’API GraphQL consente agli sviluppatori di creare una query che include proprietà aggiuntive su eventuali riferimenti inseriti in un campo multiriga. La risposta JSON include un `_references` oggetto in cui sono elencate queste proprietà aggiuntive. La risposta JSON offre agli sviluppatori un controllo completo su come eseguire il rendering dei riferimenti o dei collegamenti invece di dover gestire HTML con opinioni critiche.
 
 Ad esempio:
 
@@ -532,15 +532,15 @@ La `__typename` del `_references` può essere utilizzato per mappare diversi tip
 
 ### Esempio di codice completo
 
-Un esempio completo di scrittura di un renderer di riferimenti personalizzati si trova in [AdventureDetail.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) come parte del [Esempio di reazione grafico WKND](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
+Un esempio completo di scrittura di un renderer di riferimenti personalizzati si trova in [AdventureDetail.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) come parte del [Esempio di reazione GraphQL WKND](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
 
 ## Esempio end-to-end
 
->[!VIDEO](https://video.tv.adobe.com/v/342105/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342105?quality=12&learn=on)
 
 Il video precedente mostra un esempio end-to-end:
 
 1. Aggiornamento del campo di testo su più righe di un modello di frammento di contenuto per consentire l’utilizzo di riferimenti a frammenti
 1. Utilizzo dell’Editor frammento di contenuto per includere un’immagine e un riferimento a un altro frammento in un campo di testo su più righe.
-1. Creazione di una query GraphQL che include la risposta di testo multi-riga come JSON ed eventuali `_references` utilizzato.
+1. Creazione di una query GraphQL che include la risposta di testo su più righe come JSON ed eventuali `_references` utilizzato.
 1. Scrittura di un SPA React che esegue il rendering dei riferimenti in linea della risposta RTF.

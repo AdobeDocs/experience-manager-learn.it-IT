@@ -10,7 +10,7 @@ thumbnail: 340397.jpeg
 hidefromtoc: false
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 7d44e1b7-7216-431d-b866-6adcc8673d53
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
@@ -23,6 +23,6 @@ ht-degree: 0%
 
 Scopri come configurare le impostazioni avanzate per Workfront per AEM connettore avanzato e come configurare flussi di lavoro e avviatori avanzati in AEM per gestire la sincronizzazione dei dati tra AEM e Workfront.
 
->[!VIDEO](https://video.tv.adobe.com/v/340397/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340397?quality=12&learn=on)
 
 _Parte quattro di a [serie di esperti in quattro parti su Workfront per Experience Manager connettore avanzato](./overview.md)_

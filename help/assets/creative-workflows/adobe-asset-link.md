@@ -9,7 +9,7 @@ level: Beginner
 thumbnail: 28988.jpg
 last-substantial-update: 2022-06-25T00:00:00Z
 exl-id: 6c49f8c2-f468-4b29-b7b6-029c8ab39ce9
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 1%
@@ -30,7 +30,7 @@ L’estensione Adobe Asset Link per Adobe Creative Cloud for enterprise estende 
 
 Il video seguente illustra un flusso di lavoro comune utilizzato dai creativi che lavorano nelle applicazioni Adobe Creative Cloud e si integrano direttamente con AEM utilizzando Adobe Asset Link.
 
->[!VIDEO](https://video.tv.adobe.com/v/335927/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335927?quality=12&learn=on)
 
 ## Funzionalità di Adobe Asset Link
 
@@ -61,7 +61,7 @@ Il video seguente illustra un flusso di lavoro comune utilizzato dai creativi ch
 
 Adobe Asset Link fornisce il supporto per il collegamento diretto di InDesign tra Adobe Asset Link e AEM. Con il supporto per i collegamenti diretti di InDesign, puoi inserire (__Inserisci collegato__ o __Inserisci copia__) o trascinamento di risorse digitali in InDesign da AEM tramite il pannello Asset Link di Adobe. Inoltre, introduce il rendering *For Placement Only+ (FPO).
 
->[!VIDEO](https://video.tv.adobe.com/v/28988/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28988?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -104,6 +104,6 @@ Come funziona l’autenticazione di Adobe Asset Link nel contesto di Adobe Ident
 >
 >Alla scadenza del token di accesso, **Passaggi 1-5** richiama automaticamente l’estensione Adobe Asset Link, autenticandola utilizzando il token portatore, e rigenera un nuovo token di accesso valido.
 
-## Altro materiale di riferimento
+## Risorse aggiuntive
 
 + [Sito web Adobe Asset Link](https://www.adobe.com/it/creativecloud/business/enterprise/adobe-asset-link.html)

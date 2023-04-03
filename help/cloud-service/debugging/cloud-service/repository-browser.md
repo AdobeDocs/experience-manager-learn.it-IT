@@ -12,19 +12,19 @@ thumbnail: 341464.jpg
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 467b0c343a28eb573498a013b5490877e4497fe0
+exl-id: 88af40fc-deff-4b92-84b1-88df2dbdd90b
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
 
 ---
 
-
 # Debug AEM as a Cloud Service con il browser del repository
 
 Repository Browser è un potente strumento che fornisce visibilità AEM&#39;archivio dati sottostante, consentendo un facile debug dell&#39;ambiente as a Cloud Service AEM. Il browser Repository supporta una visualizzazione in sola lettura delle risorse e delle proprietà di AEM in Produzione, Stage e Sviluppo, nonché dei servizi Author, Publish e Preview.
 
->[!VIDEO](https://video.tv.adobe.com/v/341464/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341464?quality=12&learn=on)
 
 Browser del repository __SOLO__ disponibile in ambienti AEM as a Cloud Service (utilizza [CRXDE Lite](../aem-sdk-local-quickstart/other-tools.md#crxde-lite) per eseguire il debug dell&#39;SDK AEM locale).
 
@@ -48,4 +48,3 @@ Il browser Repository si apre per il livello di servizio selezionato (Autore, Pu
 ## Accesso a Publish e Preview
 
 Per impostazione predefinita, l’accesso a Pubblica o Anteprima è limitato, riducendo le risorse disponibili nel browser dell’archivio. [Per visualizzare tutte le risorse in Pubblica (o Anteprima), aggiungi gli utenti a un ruolo Pubblica (o Anteprima) Amministratori .](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#navigate-the-hierarchy)
-

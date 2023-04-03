@@ -8,7 +8,7 @@ role: User
 level: Beginner
 exl-id: a2d21f2e-3dbb-454f-8a02-101dc3af9b1e
 last-substantial-update: 2020-02-09T00:00:00Z
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 AEM 6.3 introduce diverse nuove funzioni e miglioramenti in questa versione per semplificare l’esperienza di authoring di moduli e documenti adattivi. I miglioramenti consentono di ridurre i tempi di commercializzazione e consentono agli utenti aziendali di lavorare con moduli e documenti
 
->[!VIDEO](https://video.tv.adobe.com/v/19500/)
+>[!VIDEO](https://video.tv.adobe.com/v/19500?quality=12&learn=on)
 
 **Alcuni dei principali miglioramenti per l’Editor di moduli adattivi includono:**
 

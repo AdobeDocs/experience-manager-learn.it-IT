@@ -7,7 +7,7 @@ topic: Content Management
 role: Developer
 level: Intermediate
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 17%
@@ -18,7 +18,7 @@ ht-degree: 17%
 
 Questo video illustra la gestione del colore di Dynamic Media e come può essere utilizzato per fornire funzionalità di anteprima della correzione del colore in per AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/16792/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16792?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -91,8 +91,8 @@ Di seguito è riportato il modello XML per il nodo di configurazione Gestione co
 | AdobeRGB | RGB | Adobe RGB (1998) |
 | AppleRGB | RGB | Apple RGB |
 | CIERGB | RGB | RGB CIE |
-| Fogra27 rivestito | CMYK | Rivestito FOGRA27 (ISO 12647-2:2004) |
-| Fogra39 rivestito | CMYK | Rivestito FOGRA39 (ISO 12647-2:2004) |
+| CoatedFogra27 | CMYK | Rivestito FOGRA27 (ISO 12647-2:2004) |
+| CoatedFogra39 | CMYK | Rivestito FOGRA39 (ISO 12647-2:2004) |
 | ColGraCoated | CMYK | GRACoL 2006 rivestito (ISO 12647-2:2004) |
 | ColorMatchRGB | RGB | RGB ColorMatch |
 | EuropaISOCoated | CMYK | Europa ISO rivestito FOGRA27 |
@@ -113,7 +113,7 @@ Di seguito è riportato il modello XML per il nodo di configurazione Gestione co
 | FogliameNon rivestito | CMYK | U.S. Sheetfeed non rivestito v2 |
 | SMPTE | RGB | SMPTE-C |
 | sRGB | sRGB di RGB | IEC61966-2.1 |
-| Fogra29 non rivestito | CMYK | FOGRA29 non rivestito (ISO 12647-2:2004) |
+| UncoatedFogra29 | CMYK | FOGRA29 non rivestito (ISO 12647-2:2004) |
 | WebCoated | CMYK | U.S. Web Coated (SWOP) v2 |
 | WebCoatedFogra28 | CMYK | Web Coated FOGRA28 (ISO 12647-2:2004) |
 | WebCoatedGrade3 | CMYK | Carta SWOP 2006 di grado 3 rivestita sul web |

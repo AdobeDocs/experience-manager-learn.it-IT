@@ -1,6 +1,6 @@
 ---
 title: Configurazione rapida AEM Headless per AEM as a Cloud Service
-description: La configurazione rapida AEM Headless ti permette di utilizzare AEM Headless utilizzando il contenuto del progetto di esempio del sito WKND e un’app React che consuma il contenuto rispetto AEM API GraphQL headless.
+description: La configurazione rapida AEM Headless ti permette di utilizzare AEM Headless utilizzando il contenuto del progetto di esempio del sito WKND e un’app React che consuma il contenuto AEM API GraphQL headless.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -9,7 +9,7 @@ level: Beginner
 kt: 9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
-source-git-commit: b4c04a9ef7d8cfdaa5675fdfe259ab9d813fb7e0
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Configurazione rapida AEM Headless per AEM as a Cloud Service
 
-La configurazione rapida AEM Headless ti permette di utilizzare AEM Headless utilizzando il contenuto del progetto di esempio del sito WKND e un esempio di app React (a SPA) che consuma il contenuto sopra AEM API GraphQL headless.
+La configurazione rapida AEM Headless ti permette di utilizzare AEM Headless utilizzando il contenuto del progetto di esempio del sito WKND, e un esempio di app React (a SPA) che consuma il contenuto sopra AEM API GraphQL Headless.
 
 ## Prerequisiti
 
@@ -36,10 +36,10 @@ Per eseguire questa configurazione rapida, è necessario quanto segue:
 
 ## 1. Creare un archivio Git di Cloud Manager
 
-Innanzitutto, crea un archivio Git di Cloud Manager utilizzato per distribuire il sito WKND. Il sito WKND è un esempio AEM progetto web che contiene contenuto (frammenti di contenuto) e un endpoint GraphQL AEM utilizzato dall&#39;app React dell&#39;impostazione rapida.
+Innanzitutto, crea un archivio Git di Cloud Manager utilizzato per distribuire il sito WKND. Il sito WKND è un esempio AEM progetto Web che contiene contenuto (frammenti di contenuto) e un endpoint GraphQL AEM utilizzato dall&#39;app React dell&#39;impostazione rapida.
 
 _Schermata dei passaggi_
->[!VIDEO](https://video.tv.adobe.com/v/339073/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339073?quality=12&learn=on)
 
 1. Passa a [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
 1. Seleziona Cloud Manager __Programma__ che contiene l&#39;ambiente as a Cloud Service AEM da utilizzare per questa configurazione rapida
@@ -55,7 +55,7 @@ _Schermata dei passaggi_
 Con l’archivio Git di Cloud Manager creato, clona il codice sorgente del progetto WKND Site da GitHub e invialo all’archivio Git di Cloud Manager. Ora Cloud Manager consente di accedere al progetto WKND Site e di distribuirlo nell’ambiente as a Cloud Service AEM.
 
 _Schermata dei passaggi_
->[!VIDEO](https://video.tv.adobe.com/v/339074/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339074?quality=12&learn=on)
 
 1. Dalla riga di comando, duplica il codice sorgente del progetto WKND Site di esempio da GitHub
 
@@ -87,10 +87,10 @@ _Schermata dei passaggi_
 
 Con il progetto WKND Site inviato all’archivio Git di Cloud Manager, non può essere distribuito AEM as a Cloud Service utilizzando le pipeline di Cloud Manager.
 
-Tieni presente che il progetto Sito WKND fornisce contenuti di esempio che l’app React consuma rispetto AEM API GraphQL headless.
+Nota bene, il progetto WKND Site fornisce contenuti di esempio che l’app React consuma rispetto AEM API GraphQL headless.
 
 _Schermata dei passaggi_
->[!VIDEO](https://video.tv.adobe.com/v/339075/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339075?quality=12&learn=on)
 
 1. Allega un __pipeline di distribuzione non di produzione__ al nuovo archivio Git
    1. Seleziona __Tubi__ nella navigazione superiore
@@ -121,7 +121,7 @@ _Schermata dei passaggi_
 Con AEM as a Cloud Service avviato con il contenuto del progetto WKND Site , scarica e avvia l’app di reazione WKND di esempio che consuma il contenuto del sito WKND rispetto AEM API GraphQL headless.
 
 _Schermata dei passaggi_
->[!VIDEO](https://video.tv.adobe.com/v/339076/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339076?quality=12&learn=on)
 
 1. Dalla riga di comando, duplica il codice sorgente dell’app React da GitHub.
 
@@ -155,14 +155,14 @@ _Schermata dei passaggi_
    $ npm start
    ```
 
-1. L&#39;app React, in esecuzione localmente, inizia il [http://localhost:3000](Http://localhost:3000) e visualizza un elenco delle avventure, provenienti da AEM as a Cloud Service utilizzando AEM API GraphQL di Headless.
+1. L&#39;app React, in esecuzione localmente, inizia il [http://localhost:3000](Http://localhost:3000) e visualizza un elenco delle avventure, provenienti da AEM as a Cloud Service tramite le API GraphQL di AEM Headless.
 
 ## 5. Modifica contenuto in AEM
 
-Con l’app React WKND di esempio che si collega e consuma contenuti dalle API GraphQL AEM headless, crea contenuti nel servizio Author di AEM e osserva come l’esperienza dell’app React si aggiorna di concerto.
+Con l’app React WKND di esempio che si collega e consuma contenuti dalle API GraphQL senza titolo AEM, crea contenuti nel servizio Author di AEM e osserva come l’esperienza dell’app React si aggiorna di concerto.
 
 _Schermata dei passaggi_
->[!VIDEO](https://video.tv.adobe.com/v/339077/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339077?quality=12&learn=on)
 
 1. Accedi a AEM servizio Author as a Cloud Service
 1. Passa a __Risorse > File > WKND condiviso > Inglese > Avventure__
@@ -187,9 +187,9 @@ _Schermata dei passaggi_
    >
    > Se non hai dimestichezza con la creazione e la pubblicazione di frammenti di contenuto nuovi o con l’annullamento della pubblicazione di frammenti di contenuto esistenti, guarda la schermata precedente.
 
-## Congratulazioni!
+## Congratulazioni. 
 
-Congratulazioni! Hai utilizzato con successo AEM Headless per alimentare un&#39;app React!
+Congratulazioni. Hai utilizzato con successo AEM Headless per alimentare un&#39;app React!
 
 Per capire in dettaglio come l’app React consuma contenuti da AEM as a Cloud Service, effettua il check-out [tutorial AEM Headless](../multi-step/overview.md). L’esercitazione esplora il modo in cui i frammenti di contenuto in AEM sono stati creati e come l’app React utilizza i loro contenuti come JSON.
 

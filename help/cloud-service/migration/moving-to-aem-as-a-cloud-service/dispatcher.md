@@ -9,10 +9,10 @@ level: Experienced
 kt: 8633
 thumbnail: 336962.jpeg
 exl-id: 81397b21-b4f3-4024-a6da-a9b681453eff
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '277'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Scopri AEM Dispatcher per AEM as a Cloud Service, concentrandoti sulle modifiche di rilievo apportate da Dispatcher per AEM 6, sullo strumento di conversione di Dispatcher e su come utilizzare l’SDK degli strumenti di Dispatcher.
 
->[!VIDEO](https://video.tv.adobe.com/v/336962/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336962?quality=12&learn=on)
 
 ## Dispatcher Converter
 
@@ -33,7 +33,7 @@ Come parte del refactoring della base di codice, utilizza il [AEM Dispatcher Con
 
 + Utilizza la [Strumento Adobe I/O Dispatcher Converter](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#aio-aem-migrationdispatcher-converter) per migrare una configurazione Dispatcher esistente.
 + Fai riferimento al modulo Dispatcher da [Archetipo di progetto AEM](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud) come best practice.
-+ [Impostare strumenti Dispatcher locali](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) per convalidare il dispatcher, prima di eseguire il test in un ambiente di Cloud Service.
++ [Impostare strumenti Dispatcher locali](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=it) per convalidare il dispatcher, prima di eseguire il test in un ambiente di Cloud Service.
 
 ## Esercitazione pratica
 
@@ -41,7 +41,7 @@ Applica la tua conoscenza provando quello che hai imparato con questo esercizio 
 
 Prima di provare l&#39;esercizio pratico, assicurati di aver visto e compreso il video precedente e i seguenti materiali:
 
-+ [Strumenti di modernizzazione AEM](./aem-modernization-tools.md)
++ [Strumenti AEM Modernization Tools](./aem-modernization-tools.md)
 + [Onboarding](./onboarding.md)
 + [Cloud Manager](./cloud-manager.md)
 

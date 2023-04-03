@@ -14,7 +14,7 @@ role: Developer
 level: Beginner
 exl-id: 9f1dbd02-774a-4b84-90fa-02d4e468cbac
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 3%
@@ -41,8 +41,8 @@ Il modulo di esempio utilizzato in questo flusso di lavoro si basa su un modello
 * Il modulo adattivo di esempio viene posizionato in una cartella denominata [Forms applicazione](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
 Il video seguente spiega come configurare un modulo adattivo per attivare un flusso di lavoro AEM
->[!VIDEO](https://video.tv.adobe.com/v/40258/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40258?quality=12&learn=on)
 
 Il video seguente mostra il payload del flusso di lavoro e altri dettagli nell’archivio crx
 
->[!VIDEO](https://video.tv.adobe.com/v/40259/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40259?quality=12&learn=on)

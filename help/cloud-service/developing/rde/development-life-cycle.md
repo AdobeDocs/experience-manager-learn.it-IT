@@ -9,10 +9,10 @@ level: Beginner
 jira: KT-11863
 thumbnail: KT-11863.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 9123771fed25cf2c5c3443c92dcc0e6704476bb0
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '136'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ Scopri il ciclo di vita di sviluppo/distribuzione utilizzando l’RDE e come for
 
 Il video seguente esplora il ciclo di vita basato sullo sviluppo basato su RDE attraverso la distribuzione. Il video illustra le principali sottoattività e il flusso di sviluppo per un uso efficiente dell’RDE.
 
->[!VIDEO](https://video.tv.adobe.com/v/3415492/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3415492?quality=12&learn=on)
 
 
 ## Vantaggi di RDE
@@ -36,9 +36,9 @@ I principali vantaggi dell&#39;RDE per mantenere lo slancio dello sviluppo.
 - Collaborazione migliorata
 - Maggiore produttività
 
->[!VIDEO](https://video.tv.adobe.com/v/3415493/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3415493?quality=12&learn=on)
 
-## Altro materiale di riferimento
+## Risorse aggiuntive
 
 [Scenario di collaborazione per più sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#multiple-developers-collaborating-on-the-same-rde)
 

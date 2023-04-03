@@ -3,23 +3,23 @@ title: Proprietà di configurazione OSGi
 description: Scopri le basi delle proprietà di configurazione OSGi e come utilizzarle nei servizi OSGi.
 role: Developer
 level: Beginner
-topic: Sviluppo
+topic: Development
 feature: OSGI
 kt: 8268
 thumbnail: 335729.jpeg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 096b0a95-7039-4570-b567-ba316bfc8709
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 5%
+source-wordcount: '75'
+ht-degree: 1%
 
 ---
-
 
 # Proprietà di configurazione OSGi
 
 Scopri l’approccio di basso livello di utilizzo delle coppie chiave/valore di configurazione OSGi per definire ed esporre i dati di configurazione OSGi ai servizi OSGi.
 
->[!VIDEO](https://video.tv.adobe.com/v/335729/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335729?quality=12&learn=on)
 
 ## Riferimenti
 

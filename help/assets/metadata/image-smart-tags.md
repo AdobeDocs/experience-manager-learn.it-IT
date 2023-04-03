@@ -10,7 +10,7 @@ kt: 645
 thumbnail: 17019.jpg
 last-substantial-update: 2022-06-09T00:00:00Z
 exl-id: c72dc489-70e6-48ca-99a8-663d4c0652ba
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 30%
@@ -21,14 +21,14 @@ ht-degree: 30%
 
 Lo strumento Tag avanzati di AEM Assets per le immagini migliora la ricerca di AEM Assets aggiungendo automaticamente tag di metadati derivati alle risorse di immagini, migliorando l’esperienza di authoring rendendo più semplice e veloce la ricerca dell’immagine corretta.
 
->[!VIDEO](https://video.tv.adobe.com/v/17019/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17019?quality=12&learn=on)
 
 ## Configurazione per AEM 6.x{#set-up}
 
 >[!NOTE]
 > Il provisioning automatico di tag avanzati per le immagini viene eseguito per AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/17023/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17023?quality=12&learn=on)
 
 Prima di poter utilizzare il Servizio di contenuti avanzati, verifica quanto segue per creare un’integrazione su Adobe I/O:
 

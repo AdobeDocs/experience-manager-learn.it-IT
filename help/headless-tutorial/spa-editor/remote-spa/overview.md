@@ -9,10 +9,10 @@ kt: 7630
 thumbnail: 333272.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 9%
 
 Ti diamo il benvenuto nell’esercitazione in più parti per gli sviluppatori che desiderano potenziare un SPA remoto basato su React (o Next.js) esistente con contenuto AEM modificabile utilizzando AEM SPA Editor.
 
-Questa esercitazione si basa sul [App GraphQL WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it), un’app React che consuma AEM contenuto Frammento di contenuto rispetto AEM API GraphQL, tuttavia non fornisce alcuna creazione contestuale di contenuto SPA.
+Questa esercitazione si basa sul [App GraphQL WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it), un’app React che consuma AEM contenuto Frammento di contenuto su AEM API GraphQL, tuttavia non fornisce alcuna creazione contestuale di contenuto SPA.
 
->[!VIDEO](https://video.tv.adobe.com/v/333272/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
 ## Informazioni sull’esercitazione
 
@@ -94,6 +94,6 @@ Infine, utilizzare i concetti illustrati nei capitoli precedenti per tracciare p
 
 + [Informazioni sui percorsi dinamici e sui componenti modificabili](./spa-dynamic-routes.md)
 
-## Altro materiale di riferimento
+## Risorse aggiuntive
 
 + [AEM SPA React Modificabili Components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)

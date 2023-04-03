@@ -8,7 +8,7 @@ role: Developer
 level: Intermediate
 exl-id: 3e51767b-3571-4af7-8f01-5b6c5c74734c
 last-substantial-update: 2021-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Database relazionali - MySQL, Microsoft SQL Server, IBM DB2 e Oracle RDBMS
 
 Questo video illustra un flusso di lavoro che illustra come AEM Forms può lavorare con Microsoft Dynamics come origine dati back-end per fornire comunicazioni interattive e personalizzate.
 
->[!VIDEO](https://video.tv.adobe.com/v/20971?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/20971?quality=12&learn=on)
 
 >[!NOTE]
 >

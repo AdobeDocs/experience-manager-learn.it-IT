@@ -14,7 +14,7 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: 1401710c19ae6ee6a2822ae06286bef4f92cda45
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1937'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Le integrazioni con Adobe Experience Manager (AEM) as a Cloud Service devono essere in grado di eseguire l’autenticazione in modo sicuro al servizio AEM. AEM Developer Console consente di accedere alle credenziali del servizio, utilizzate per facilitare l’interazione programmatica di applicazioni, sistemi e servizi esterni con i servizi di authoring o pubblicazione AEM tramite HTTP.
 
->[!VIDEO](https://video.tv.adobe.com/v/330519/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
 Le credenziali del servizio possono apparire simili [Token di accesso allo sviluppo locale](./local-development-access-token.md) ma sono diversi in alcuni modi chiave:
 

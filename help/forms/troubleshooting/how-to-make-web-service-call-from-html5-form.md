@@ -5,18 +5,19 @@ type: Troubleshooting
 role: Developer
 level: Intermediate
 version: 6.5
-feature: Forms Mobile
-topic: 'Sviluppo  '
+feature: Mobile Forms
+topic: Development
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 28fa5597-bab5-4fb9-8d30-e9fd41820749
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 6%
+source-wordcount: '41'
+ht-degree: 0%
 
 ---
 
 # Come effettuare una chiamata al servizio Web dal modulo HTML5
 
-*Questo video illustra il processo per effettuare chiamate al servizio Web dal modulo HTML5.*
+*Questo video illustra la procedura per effettuare una chiamata al servizio Web dal modulo HTML5.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335505?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335505?quality=12&learn=on)

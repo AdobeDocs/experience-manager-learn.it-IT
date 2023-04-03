@@ -11,10 +11,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '4571'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Questa è un’esercitazione sullo sviluppo che illustra come sviluppare per [!DNL AEM Projects].  In questa esercitazione verrà creato un modello di progetto personalizzato che può essere utilizzato per creare nuovi progetti all’interno di AEM per gestire flussi di lavoro e attività di creazione dei contenuti.
 
->[!VIDEO](https://video.tv.adobe.com/v/16904/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16904?quality=12&learn=on)
 
 *Questo video offre una breve dimostrazione del flusso di lavoro completato creato nell’esercitazione seguente.*
 

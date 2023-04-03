@@ -12,7 +12,7 @@ topic: Architecture
 role: Architect, Developer, Admin
 level: Beginner
 exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 9%
@@ -32,10 +32,10 @@ ht-degree: 9%
 
 La [Pipeline di produzione CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) La configurazione definisce il trigger che avvierà la pipeline, i parametri che controllano la distribuzione di produzione e i parametri del test delle prestazioni.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26314?quality=12&learn=on)
 
 ### Esecuzione delle pipeline
 
 La [Pipeline di produzione CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it) viene utilizzato per generare e distribuire il codice attraverso Stage nell&#39;ambiente di produzione, riducendo il tempo a valore.
 
->[!VIDEO](https://video.tv.adobe.com/v/26317/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26317?quality=12&learn=on)

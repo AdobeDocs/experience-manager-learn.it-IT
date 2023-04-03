@@ -8,13 +8,13 @@ level: Beginner
 kt: 9718
 thumbnail: 340332.jpeg
 hidefromtoc: false
-source-git-commit: c6caa39075bc3c26dedeca4246e7e1f85887b124
+exl-id: 40d76e0c-69f3-4003-9f34-f393e6fb8561
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 0%
 
 ---
-
 
 # Mappatura di moduli personalizzati e metadati Workfront
 
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 Scopri come configurare Workfront e AEM Assets per gestire e sincronizzare i metadati delle risorse utilizzando moduli personalizzati Workfront e schemi di metadati AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/340332/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340332?quality=12&learn=on)
 
 _Parte 2 di una [serie di esperti in quattro parti su Workfront per Experience Manager connettore avanzato](./overview.md)_

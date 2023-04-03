@@ -12,7 +12,7 @@ topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 0929bc1a-376c-4e16-a540-a276fd5af164
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 2%
@@ -27,7 +27,7 @@ AEM fornisce molte console OSGi, ognuna delle quali fornisce informazioni chiave
 
 ## Bundle
 
->[!VIDEO](https://video.tv.adobe.com/v/34335/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34335?quality=12&learn=on)
 
 La console Bundles è un catalogo dei bundle OSGi e dei loro dettagli, distribuiti per AEM, insieme alla possibilità ad hoc di avviarli e fermarli.
 
@@ -44,7 +44,7 @@ Facendo clic su ogni bundle, vengono forniti dettagli utili per il debug dell&#3
 
 ## Componenti
 
->[!VIDEO](https://video.tv.adobe.com/v/34336/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34336?quality=12&learn=on)
 
 La console Componenti è un catalogo di tutti i componenti OSGi implementati in AEM e fornisce tutte le informazioni su di essi, dal loro ciclo di vita del componente OSGi definito, ai servizi OSGi a cui possono fare riferimento.
 
@@ -63,7 +63,7 @@ Aspetti chiave delle attività di debug:
 
 ## Modelli Sling
 
->[!VIDEO](https://video.tv.adobe.com/v/34337/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34337?quality=12&learn=on)
 
 La console Sling Models si trova in:
 

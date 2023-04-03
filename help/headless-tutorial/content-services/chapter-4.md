@@ -6,7 +6,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: ece0bf0d-c4af-4962-9c00-f2849c2d8f6f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 0%
@@ -89,7 +89,7 @@ A questo scopo, possiamo mappare questi requisiti sui componenti AEM (e, nel nos
 1. Tuttavia, assicurati che **Contenitore di layout** è **bloccato** per evitare l’aggiunta di altri componenti o la rimozione di questi tre componenti.
 1. Tocca **[!UICONTROL Informazioni pagina] > [!UICONTROL Visualizza in Amministratore]** per tornare al [!DNL WKND Mobile] elenco dei modelli. Seleziona la nuova creazione **[!DNL Events API]** modello e tocca **[!UICONTROL Abilita]** nella barra delle azioni superiore.
 
->[!VIDEO](https://video.tv.adobe.com/v/28342/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28342?quality=12&learn=on)
 
 >[!NOTE]
 >

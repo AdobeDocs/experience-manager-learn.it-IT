@@ -10,7 +10,7 @@ level: Beginner
 kt: 8390
 exl-id: 068e38df-9c71-4f55-b6d6-e1486c29d0a9
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Il modulo adattivo incorporato è completamente funzionale e gli utenti possono 
 
 Il video seguente illustra i passaggi necessari per incorporare un modulo adattivo o HTML5 nella pagina web.
 Fai riferimento alla [documentazione](https://experienceleague.adobe.com/docs/experience-manager-64/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=en) per i prerequisiti migliori, le best practice e così via
->[!VIDEO](https://video.tv.adobe.com/v/335893?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335893?quality=12&learn=on)
 
 È possibile scaricare i file di esempio utilizzati nel video [da qui](assets/embedding-af-web-page.zip)
 
