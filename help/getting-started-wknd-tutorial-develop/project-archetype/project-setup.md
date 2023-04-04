@@ -12,9 +12,9 @@ kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '1839'
 ht-degree: 4%
 
 ---
@@ -87,6 +87,8 @@ La serie successiva di passaggi verrà eseguita utilizzando un terminale a riga 
    >[!NOTE]
    >
    > Per eseguire il targeting AEM 6.5.14+ sostituire `aemVersion="cloud"` con `aemVersion="6.5.14"`.
+   >
+   > Inoltre, utilizza sempre le `archetypeVersion` facendo riferimento al [Archetipo di progetto AEM > Utilizzo](https://github.com/adobe/aem-project-archetype#usage)
 
    Elenco completo delle proprietà disponibili per la configurazione di un progetto [si trova qui](https://github.com/adobe/aem-project-archetype#available-properties).
 

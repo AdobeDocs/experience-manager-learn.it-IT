@@ -10,10 +10,10 @@ kt: 9165
 thumbnail: 337960.jpeg
 last-substantial-update: 2022-10-03T00:00:00Z
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 6%
+source-wordcount: '263'
+ht-degree: 5%
 
 ---
 
@@ -21,33 +21,15 @@ ht-degree: 6%
 
 Scopri come incrementare il SEO creando sitemap per AEM Sites.
 
+>[!WARNING]
+>
+>Questo video illustra l’utilizzo di URL relativi nella mappa del sito. Sitemaps [devono utilizzare URL assoluti](https://sitemaps.org/protocol.html). Vedi [Configurazioni](#absolute-sitemap-urls) come abilitare gli URL assoluti, poiché questo non è trattato nel video seguente.
+
 >[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
-
-## Riferimenti
-
-+ [Documentazione AEM Sitemap](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
-+ [Documentazione della mappa del sito Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
-+ [Documentazione Sitemap.org](https://www.sitemaps.org/protocol.html)
-+ [Documentazione del file di indice Sitemap.org](https://www.sitemaps.org/protocol.html#index)
-+ [Cronista](http://www.cronmaker.com/)
 
 ## Configurazioni
 
-### Configurazione OSGi dello scheduler di Sitemap
-
-Definisce la [Configurazione di fabbrica OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) per la frequenza (utilizzando [espressioni cron](http://www.cronmaker.com)) le mappe dei siti vengono rigenerate e memorizzate nella cache in AEM.
-
-`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
-
-```json
-{
-  "scheduler.name": "WKND Sitemaps",
-  "scheduler.expression": "0 0 2 1/1 * ? *",
-  "searchPath": "/content/wknd"
-}
-```
-
-### URL assoluti della mappa del sito
+### URL assoluti della mappa del sito{#absolute-sitemap-urls}
 
 AEM mappa del sito supporta gli URL assoluti utilizzando [Mappatura Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Questo viene fatto creando nodi di mappatura sui servizi AEM che generano sitemap (in genere il servizio AEM Publish).
 
@@ -63,6 +45,20 @@ La schermata seguente illustra una configurazione simile ma per `http://wknd.loc
 
 ![Configurazione URL assoluti della mappa del sito](../assets/sitemaps/sitemaps-absolute-urls.jpg)
 
+
+### Configurazione OSGi dello scheduler di Sitemap
+
+Definisce la [Configurazione di fabbrica OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) per la frequenza (utilizzando [espressioni cron](http://www.cronmaker.com)) le mappe dei siti vengono rigenerate e memorizzate nella cache in AEM.
+
+`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
+
+```json
+{
+  "scheduler.name": "WKND Sitemaps",
+  "scheduler.expression": "0 0 2 1/1 * ? *",
+  "searchPath": "/content/wknd"
+}
+```
 
 ### Regola del filtro Consentiti da Dispatcher
 
@@ -88,3 +84,11 @@ Assicurati `.xml` le richieste HTTP della mappa del sito vengono indirizzate all
 RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.xml)$
 RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 ```
+
+## Riferimenti
+
++ [Documentazione AEM Sitemap](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
++ [Documentazione della mappa del sito Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
++ [Documentazione Sitemap.org](https://www.sitemaps.org/protocol.html)
++ [Documentazione del file di indice Sitemap.org](https://www.sitemaps.org/protocol.html#index)
++ [Cronista](http://www.cronmaker.com/)

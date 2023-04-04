@@ -7,9 +7,9 @@ role: Developer
 level: Beginner
 feature: Security
 exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -117,9 +117,8 @@ Probabilmente cancella la cache interamente necessaria per garantire che le inte
 
 ## Materiali di supporto {#supporting-materials}
 
-* [AEM fabbrica di configurazione OSGi per i criteri di condivisione delle risorse tra origini diverse](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
 * [Jeeves per macOS](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)
-* [Python SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html) (compatibile con Windows/macOS/Linux)
+* [Python SimpleHTTPServer](https://docs.python.o:qrg/2/library/simplehttpserver.html) (compatibile con Windows/macOS/Linux)
 
 * [Informazioni sulla condivisione delle risorse tra le origini (Cross-Origin Resource Sharing, CORS) in AEM](./understand-cross-origin-resource-sharing.md)
 * [Condivisione risorse tra le origini (W3C)](https://www.w3.org/TR/cors/)
