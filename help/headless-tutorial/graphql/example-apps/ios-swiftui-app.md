@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -29,14 +29,14 @@ Visualizza la [codice sorgente su GitHub](https://github.com/adobe/aem-guides-wk
 
 È necessario installare localmente i seguenti strumenti:
 
-+ [Xcode 9.3+](https://developer.apple.com/xcode/) (richiede macOS)
++ [Xcode](https://developer.apple.com/xcode/) (richiede macOS)
 + [Git](https://git-scm.com/)
 
 ## Requisiti AEM
 
 L’applicazione iOS funziona con le seguenti opzioni di distribuzione AEM. Tutte le implementazioni richiedono l’ [Sito WKND v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) da installare.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=it)
 + Configurazione locale tramite [l’SDK di AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it)
 + [AEM 6.5 SP13+ QuickStart](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it?lang=en#install-local-aem-instances)
 
@@ -64,7 +64,7 @@ L’applicazione iOS è progettata per connettersi a un __Pubblicazione AEM__ Tu
 
    __Autenticazione di base__
 
-   La `AEM_USERNAME` e `AEM_PASSWORD` autentica un utente AEM locale con accesso al contenuto WKND GraphQL.
+   La `AEM_USERNAME` e `AEM_PASSWORD` autenticare un utente AEM locale con accesso al contenuto GraphQL WKND.
 
    ```plain
    AEM_AUTH_TYPE = basic
@@ -74,7 +74,7 @@ L’applicazione iOS è progettata per connettersi a un __Pubblicazione AEM__ Tu
 
    __Autenticazione token__
 
-   La `AEM_TOKEN` è un [token di accesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html) che esegue l’autenticazione a un utente AEM con accesso al contenuto WKND GraphQL.
+   La `AEM_TOKEN` è un [token di accesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html) che esegue l’autenticazione a un utente AEM con accesso al contenuto GraphQL WKND.
 
    ```plain
    AEM_AUTH_TYPE = token
@@ -86,7 +86,7 @@ L’applicazione iOS è progettata per connettersi a un __Pubblicazione AEM__ Tu
 
 ## Il codice
 
-Di seguito è riportato un riepilogo di come viene creata l&#39;applicazione iOS, di come si connette a AEM Headless per recuperare il contenuto utilizzando le query persistenti GraphQL e di come tali dati vengono presentati. Il codice completo è disponibile all&#39;indirizzo [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app).
+Di seguito è riportato un riepilogo della creazione dell&#39;applicazione iOS, della sua connessione a AEM Headless per recuperare il contenuto utilizzando query GraphQL persistenti e della modalità di presentazione di tali dati. Il codice completo è disponibile all&#39;indirizzo [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app).
 
 ### Query persistenti
 
@@ -175,7 +175,7 @@ query($slug: String!) {
 
 ### Esegui query persistente GraphQL
 
-AEM le query persistenti vengono eseguite su HTTP GET, pertanto non è possibile utilizzare le librerie GraphQL comuni che utilizzano HTTP POST, come Apollo. Al contrario, crea una classe personalizzata che esegua le richieste HTTP di query persistenti a AEM.
+AEM le query persistenti vengono eseguite su HTTP GET e pertanto non è possibile utilizzare le librerie GraphQL comuni che utilizzano HTTP POST, come Apollo. Al contrario, crea una classe personalizzata che esegua le richieste HTTP di query persistenti a AEM.
 
 `AEM/Aem.swift` crea un&#39;istanza del `Aem` Classe utilizzata per tutte le interazioni con AEM Headless. Il pattern è:
 
@@ -183,7 +183,7 @@ AEM le query persistenti vengono eseguite su HTTP GET, pertanto non è possibile
 1. Il func pubblico chiama un func privato `makeRequest(..)` che richiama una richiesta HTTP GET asincrona a AEM Headless e restituisce i dati JSON.
 1. Prima di restituire i dati di Adventure alla visualizzazione, ogni funzione pubblica decodifica i dati JSON ed esegue tutti i controlli o le trasformazioni necessarie.
 
-   + AEM i dati JSON GraphQL vengono decodificati utilizzando gli structs/classes definiti in `AEM/Models.swift`, che viene mappata agli oggetti JSON che hanno restituito il mio AEM Headless.
+   + AEM i dati JSON di GraphQL vengono decodificati utilizzando le strutture/classi definite in `AEM/Models.swift`, che viene mappata agli oggetti JSON che hanno restituito il mio AEM Headless.
 
 ```swift
     /// # getAdventures(..)
@@ -322,7 +322,7 @@ La `aem` (in `AEM/Aem.swift`) facilita l&#39;utilizzo di immagini AEM in due mod
 
 Un approccio simile può essere utilizzato con l’interfaccia nativa SwiftUI [AsyncImage](https://developer.apple.com/documentation/swiftui/asyncimage). `AsyncImage` è supportato da iOS 15.0+.
 
-## Altro materiale di riferimento
+## Risorse aggiuntive
 
-+ [Guida introduttiva a AEM Headless - Esercitazione GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)
++ [Guida introduttiva a AEM Headless - Tutorial GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=it)
 + [Esercitazione sugli elenchi e sulla navigazione dell’interfaccia utente Swift](https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation)

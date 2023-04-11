@@ -1,6 +1,6 @@
 ---
-title: Creare un’app React che esegue query AEM utilizzando l’API GraphQL - Guida introduttiva a AEM Headless - GraphQL
-description: Guida introduttiva ad Adobe Experience Manager (AEM) e GraphQL. Crea app React che recupera contenuti/dati dall’API GraphQL AEM, inoltre scopri come viene utilizzato AEM SDK JS headless.
+title: Creare un’app React che esegue query AEM utilizzando GraphQL API - Guida introduttiva a AEM Headless - GraphQL
+description: Guida introduttiva ad Adobe Experience Manager (AEM) e GraphQL. Crea app React che recupera contenuti/dati dall’API GraphQL AEM, e scopri come viene utilizzato AEM SDK JS headless.
 version: Cloud Service
 mini-toc-levels: 1
 kt: 6716
@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 25c289b093297e870c52028a759d05628d77f634
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1182'
 ht-degree: 2%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 2%
 
 # Creare un’app React che utilizza AEM API GraphQL
 
-In questo capitolo viene illustrato come AEM le API GraphQL possono guidare l&#39;esperienza in un&#39;applicazione esterna.
+In questo capitolo viene illustrato come AEM le API GraphQL possono guidare l’esperienza in un’applicazione esterna.
 
-Viene utilizzata una semplice app React per eseguire query e visualizzare **Team** e **Persona** contenuto esposto dalle API GraphQL AEM. L&#39;utilizzo di React è in gran parte poco importante e l&#39;applicazione esterna consueta potrebbe essere scritta in qualsiasi struttura per qualsiasi piattaforma.
+Viene utilizzata una semplice app React per eseguire query e visualizzare **Team** e **Persona** contenuto esposto dalle API di GraphQL AEM. L&#39;utilizzo di React è in gran parte poco importante e l&#39;applicazione esterna consueta potrebbe essere scritta in qualsiasi struttura per qualsiasi piattaforma.
 
 ## Prerequisiti
 
@@ -32,8 +32,7 @@ _Le schermate IDE in questo capitolo provengono da [Codice di Visual Studio](htt
 
 È necessario installare il software seguente:
 
-- [Node.js v14+](https://nodejs.org/it/)
-- [npm 6.4+](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- [Node.js v18](https://nodejs.org/)
 - [Codice di Visual Studio](https://code.visualstudio.com/)
 
 ## Obiettivi
@@ -41,13 +40,13 @@ _Le schermate IDE in questo capitolo provengono da [Codice di Visual Studio](htt
 Scopri come:
 
 - Scarica e avvia l’app React di esempio
-- Query AEM endpoint GraphQL utilizzando [SDK JS AEM Headless](https://github.com/adobe/aem-headless-client-js)
+- Eseguire query AEM punti finali di GraphQL utilizzando [SDK JS AEM Headless](https://github.com/adobe/aem-headless-client-js)
 - Query AEM per un elenco di team e relativi membri di riferimento
 - Query AEM per i dettagli di un membro del team
 
 ## Ottieni l’app React di esempio
 
-In questo capitolo, viene implementata un’app React di esempio sovrapposta con il codice necessario per interagire con AEM’API GraphQL e vengono visualizzati i dati relativi a team e persone ottenuti da tali app.
+In questo capitolo, viene implementata un’app React di esempio sovrapposta con il codice necessario per interagire con AEM API GraphQL e per visualizzare i dati del team e delle persone ottenuti da tali app.
 
 Il codice sorgente dell’app React di esempio è disponibile su Github.com all’indirizzo <https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial>
 
@@ -95,16 +94,14 @@ Per ottenere l’app React:
 
 >[!IMPORTANT]
 >
->   Si tratta di un’app React parzialmente implementata, che verrà completata nei seguenti passaggi. I file JavaScript che richiedono un lavoro di implementazione hanno il seguente commento, assicurati di aggiungere/aggiornare il codice in tali file con il codice specificato in questa esercitazione.
+>   Questa app React è parzialmente implementata. Segui i passaggi descritti in questa esercitazione per completare l’implementazione. I file JavaScript che richiedono un lavoro di implementazione hanno il seguente commento, assicurati di aggiungere/aggiornare il codice in tali file con il codice specificato in questa esercitazione.
 >
 >
 > /***********************************************
 >
 >  // TODO :: Implementa questo seguendo i passaggi di AEM Tutorial headless
 >
->  /***********************************************
-
-
+>  //*********************************
 
 ## Anatomia dell’app React
 
@@ -112,7 +109,7 @@ L’app React di esempio ha tre parti principali:
 
 1. La `src/api` La cartella contiene i file utilizzati per creare query GraphQL da AEM.
    - `src/api/aemHeadlessClient.js` inizializza ed esporta il client headless AEM utilizzato per comunicare con AEM
-   - `src/api/usePersistedQueries.js` implementazioni [hook di React personalizzati](https://reactjs.org/docs/hooks-custom.html) restituisce i dati da AEM GraphQL a `Teams.js` e `Person.js` visualizza componenti.
+   - `src/api/usePersistedQueries.js` implementazioni [hook di React personalizzati](https://react.dev/docs/hooks-custom.html) restituisce i dati da AEM GraphQL a `Teams.js` e `Person.js` visualizza componenti.
 
 1. La `src/components/Teams.js` visualizza un elenco dei team e dei relativi membri utilizzando una query a elenco.
 1. La `src/components/Person.js` in file vengono visualizzati i dettagli di una singola persona utilizzando una query con singoli risultati con parametri.
@@ -146,7 +143,7 @@ export default aemHeadlessClient;
 
 ## Implementare per eseguire AEM query persistenti GraphQL
 
-Apri `usePersistedQueries.js` file per implementare il generico `fetchPersistedQuery(..)` per eseguire le query persistenti AEM GraphQL. La `fetchPersistedQuery(..)` utilizza la funzione `aemHeadlessClient` dell&#39;oggetto `runPersistedQuery()` per eseguire la query in modo asincrono e basato su promesse.
+Per implementare il generico `fetchPersistedQuery(..)` per eseguire le query persistenti AEM GraphQL aprire la `usePersistedQueries.js` file. La `fetchPersistedQuery(..)` utilizza la funzione `aemHeadlessClient` dell&#39;oggetto `runPersistedQuery()` per eseguire la query in modo asincrono e basato su promesse.
 
 Successivamente, React personalizzato `useEffect` gancia chiama questa funzione per recuperare dati specifici da AEM.
 
@@ -190,7 +187,7 @@ async function fetchPersistedQuery(persistedQueryName, queryParameters) {
 
 Quindi, crea la funzionalità per visualizzare i team e i loro membri nella vista principale dell’app React. Questa funzionalità richiede:
 
-- Nuovo [gancio React useEffect personalizzato](https://reactjs.org/docs/hooks-custom.html) in `src/api/usePersistedQueries.js` che richiama `my-project/all-teams` query persistente, restituendo un elenco di frammenti di contenuto del team in AEM.
+- Nuovo [gancio React useEffect personalizzato](https://react.dev/docs/hooks-custom.html) in `src/api/usePersistedQueries.js` che richiama `my-project/all-teams` query persistente, restituendo un elenco di frammenti di contenuto del team in AEM.
 - Componente React in `src/components/Teams.js` che richiama il nuovo React personalizzato `useEffect` collega ed esegue il rendering dei dati dei team.
 
 Una volta completata, la visualizzazione principale dell’app si popola con i dati dei team da AEM.
@@ -340,13 +337,13 @@ Con la [Funzionalità Team](#implement-teams-functionality) completa, implementi
 
 Questa funzionalità richiede:
 
-- Nuovo [gancio React useEffect personalizzato](https://reactjs.org/docs/hooks-custom.html) in `src/api/usePersistedQueries.js` che richiama il parametro `my-project/person-by-name` query persistente e restituisce un record a persona singola.
+- Nuovo [gancio React useEffect personalizzato](https://react.dev/docs/hooks-custom.html) in `src/api/usePersistedQueries.js` che richiama il parametro `my-project/person-by-name` query persistente e restituisce un record a persona singola.
 
 - Componente React in `src/components/Person.js` che utilizza il nome completo di una persona come parametro di query, richiama il nuovo React personalizzato `useEffect` collega ed esegue il rendering dei dati personali.
 
 Una volta completato, selezionando il nome di una persona nella vista Team, esegue il rendering della visualizzazione persona.
 
-![Utente](./assets/graphql-and-external-app/react-app__person-view.png)
+![Persona](./assets/graphql-and-external-app/react-app__person-view.png)
 
 1. Apri `src/api/usePersistedQueries.js`.
 
@@ -493,7 +490,7 @@ Esamina l’app [http://localhost:3000/](Http://localhost:3000/) e fai clic su _
 
 ## Sotto Il Cappuccio
 
-Apri il browser **Strumenti per gli sviluppatori** > **Rete** e _Filtro_ per `all-teams` richiesta, nota la richiesta API GraphQL `/graphql/execute.json/my-project/all-teams` contro `http://localhost:3000` e **NOT** rispetto al valore di `REACT_APP_HOST_URI`(ad esempio, <https://publish-p123-e456.adobeaemcloud.com>), perché [configurazione proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) utilizzo `http-proxy-middleware` modulo .
+Apri il browser **Strumenti per gli sviluppatori** > **Rete** e _Filtro_ per `all-teams` richiesta. Nota la richiesta API di GraphQL `/graphql/execute.json/my-project/all-teams` contro `http://localhost:3000` e **NOT** rispetto al valore di `REACT_APP_HOST_URI` (ad esempio, <https://publish-p123-e456.adobeaemcloud.com>). Le richieste vengono effettuate sul dominio dell’app React perché [configurazione proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) è abilitato tramite `http-proxy-middleware` modulo .
 
 
 ![Richiesta API GraphQL tramite proxy](assets/graphql-and-external-app/graphql-api-request-via-proxy.png)
@@ -508,8 +505,8 @@ module.exports = function(app) {
   ...
 ```
 
-Tuttavia, questa non è un&#39;opzione adatta per l&#39;implementazione di produzione e per ulteriori dettagli visita _Distribuzione di produzione_ sezione .
+L&#39;utilizzo del proxy locale non è un&#39;opzione adatta per l&#39;implementazione di produzione e ulteriori dettagli sono disponibili in _Distribuzione di produzione_ sezione .
 
-## Congratulazioni!{#congratulations}
+## Congratulazioni. {#congratulations}
 
-Congratulazioni! Hai creato correttamente l’app React per utilizzare e visualizzare dati dalle API GraphQL AEM come parte delle esercitazioni di base!
+Congratulazioni. Hai creato correttamente l’app React per utilizzare e visualizzare dati AEM API GraphQL come parte delle esercitazioni di base.

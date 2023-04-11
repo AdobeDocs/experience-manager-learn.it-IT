@@ -1,5 +1,5 @@
 ---
-title: Configurazione rapida AEM Headless tramite SDK locale
+title: Configurazione rapida AEM Headless tramite l’SDK AEM locale
 description: Guida introduttiva ad Adobe Experience Manager (AEM) e GraphQL. Installa l'SDK AEM, aggiungi contenuto di esempio e distribuisci un'applicazione che consuma contenuti da AEM utilizzando le sue API GraphQL. Scopri come AEM le esperienze omni-channel.
 version: Cloud Service
 mini-toc-levels: 1
@@ -10,14 +10,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: f63ed212a5a8a6689b25bd0bc9438c605a129729
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 1%
+source-wordcount: '1257'
+ht-degree: 2%
 
 ---
 
-# Configurazione rapida AEM Headless tramite SDK locale {#setup}
+# Configurazione rapida AEM Headless tramite l’SDK AEM locale {#setup}
 
 La configurazione rapida AEM Headless ti permette di utilizzare AEM Headless utilizzando il contenuto del progetto di esempio del sito WKND, e un esempio di app React (a SPA) che consuma il contenuto sopra AEM API GraphQL Headless. Questa guida utilizza [AEM SDK as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html).
 
@@ -26,7 +26,7 @@ La configurazione rapida AEM Headless ti permette di utilizzare AEM Headless uti
 È necessario installare localmente i seguenti strumenti:
 
 * [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.property.operation=equals&amp;1_group.property.values.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-* [Node.js v14.x](https://nodejs.org/it/)
+* [Node.js v18](https://nodejs.org/it/)
 * [Git](https://git-scm.com/)
 
 ## 1. Installare l’SDK AEM {#aem-sdk}
@@ -39,7 +39,7 @@ Questa configurazione utilizza [AEM SDK as a Cloud Service](https://experiencele
 
 1. Passa a **[Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=1)** > **AEM as a Cloud Service** e scarica la versione più recente del **SDK AEM**.
 
-   ![Portale di distribuzione software](assets/quick-setup/aem-sdk/downloads__aem-sdk.png)
+   ![Portale di distribuzione di software](assets/quick-setup/aem-sdk/downloads__aem-sdk.png)
 
 1. Decomprimi il download e copia il jar Quickstart (`aem-sdk-quickstart-XXX.jar`) in una cartella dedicata, ovvero `~/aem-sdk/author`.
 1. Rinomina il file jar in `aem-author-p4502.jar`.

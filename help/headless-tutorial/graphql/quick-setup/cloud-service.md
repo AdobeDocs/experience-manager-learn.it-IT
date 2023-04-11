@@ -9,9 +9,9 @@ level: Beginner
 kt: 9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1081'
 ht-degree: 2%
 
 ---
@@ -29,8 +29,7 @@ Per eseguire questa configurazione rapida, è necessario quanto segue:
    + __Amministratore AEM__ accesso a AEM as a Cloud Service
    + __Cloud Manager - Gestione distribuzione__ accesso a Cloud Manager
 + È necessario installare localmente i seguenti strumenti:
-   + [Node.js v10+](https://nodejs.org/it/)
-   + [npm 6+](https://www.npmjs.com/)
+   + [Node.js v18](https://nodejs.org/it/)
    + [Git](https://git-scm.com/)
    + Un IDE (ad esempio, [Codice Microsoft® Visual Studio](https://code.visualstudio.com/))
 

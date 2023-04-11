@@ -8,10 +8,10 @@ role: Developer
 level: Beginner
 kt: 10797
 thumbnail: kt-10797.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 5%
+source-wordcount: '566'
+ht-degree: 6%
 
 ---
 
@@ -29,15 +29,14 @@ Visualizza la [codice sorgente su GitHub](https://github.com/adobe/aem-guides-wk
 È necessario installare localmente i seguenti strumenti:
 
 + [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.property.operation=equals&amp;1_group.property.values.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) (se ci si connette a AEM locale 6.5 o AEM SDK)
-+ [Node.js v10+](https://nodejs.org/it/)
-+ [npm 6+](https://www.npmjs.com/)
++ [Node.js v18](https://nodejs.org/it/)
 + [Git](https://git-scm.com/)
 
 ## Requisiti AEM
 
 Il componente Web funziona con le seguenti opzioni di distribuzione AEM.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=it)
 + Configurazione locale tramite [l’SDK di AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it)
 + [AEM 6.5 SP13+ QuickStart](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it?lang=en#install-local-aem-instances)
 
@@ -97,7 +96,7 @@ Tutte le implementazioni richiedono la `tutorial-solution-content.zip` dal [File
 
 ## Il codice
 
-Di seguito è riportato un riepilogo di come viene generato il componente Web, di come si connette a AEM Headless per recuperare il contenuto utilizzando le query persistenti GraphQL e di come tali dati vengono presentati. Il codice completo è disponibile in [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/web-component).
+Di seguito è riportato un riepilogo della creazione del componente Web, del modo in cui si connette a AEM Headless per recuperare il contenuto utilizzando le query persistenti GraphQL e del modo in cui tali dati vengono presentati. Il codice completo è disponibile in [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/web-component).
 
 ### Tag HTML componente Web
 
