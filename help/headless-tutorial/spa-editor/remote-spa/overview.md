@@ -9,10 +9,10 @@ kt: 7630
 thumbnail: 333272.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 0fff8b53e3dffb835e070444b55a72f0b0cc3d14
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 10%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,15 +37,14 @@ L’esercitazione è progettata per lavorare con **AEM as a Cloud Service** ed �
 
 ## Codice più recente
 
-+ Il punto di partenza del codice di questa esercitazione è disponibile in [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa) in `remote-spa-tutorial` cartella.
++ Il punto di partenza del codice di questa esercitazione è disponibile in [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa-tutorial) in `remote-spa-tutorial` cartella.
 
 ## Prerequisiti
 
 Questa esercitazione richiede quanto segue:
 
 + [SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en)
-+ [Node.js v16+](https://nodejs.org/it/)
-+ [npm v8+](https://www.npmjs.com/)
++ [Node.js v18](https://nodejs.org/it/)
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
@@ -57,7 +56,7 @@ Questa esercitazione presuppone:
 + [Codice Microsoft® Visual Studio](https://visualstudio.microsoft.com/) come IDE
 + Una directory di lavoro di `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial`
 + Esecuzione dell’SDK AEM come servizio Author in `http://localhost:4502`
-+ Esecuzione dell&#39;SDK di AEM con il locale `admin` account con password `admin`
++ Esecuzione dell&#39;SDK AEM con il locale `admin` account con password `admin`
 + Esecuzione del SPA su `http://localhost:3000`
 
 >[!NOTE]
