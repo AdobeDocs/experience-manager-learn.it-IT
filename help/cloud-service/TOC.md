@@ -5,9 +5,9 @@ breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 9917b16248ef1f0a9c86f03a024c634636b2304e
+source-git-commit: 1011c700a33b932c3c0a766727fc1d90bf2940f4
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '932'
 ht-degree: 20%
 
 ---
@@ -114,7 +114,7 @@ ht-degree: 20%
       + [Console per sviluppatori](./debugging/cloud-service/developer-console.md)
       + [Browser dell’archivio](./debugging/cloud-service/repository-browser.md)
       + Rischi{#risks}
-         + [Avvertenze](./debugging/cloud-service/risks/traversals.md)
+         + [Avvisi al passaggio](./debugging/cloud-service/risks/traversals.md)
 + Consegna dei contenuti{#content-delivery}
    + [Reindirizzamenti URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html)
 + Accesso AEM{#accessing}
@@ -259,6 +259,9 @@ ht-degree: 20%
       + [Crea modello dati modulo](./forms/integrate-with-salesforce/create-form-data-model.md)
       + [Invio del modulo di prova](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
       + [Evento clic del test](./forms/integrate-with-salesforce/create-lead-click-event.md)
+   + Archiviare i moduli inviati in un&#39;unica unità e sharepoint{#one-drive}
+      + [Archiviare i dati del modulo in un&#39;unica unità](./forms/forms-cs-one-drive/store-form-submission-one-drive.md)
+      + [Archiviare i dati del modulo in sharepoint](./forms/forms-cs-sharepoint/store-form-submission-in-sharepoint.md)
 + Estensibilità Asset compute{#asset-compute}
    + [Panoramica](./asset-compute/overview.md)
    + Configurazione{#set-up}

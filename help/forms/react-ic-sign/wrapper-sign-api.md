@@ -8,7 +8,7 @@ role: Developer
 level: Beginner
 kt: 13099
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 155e6e42d4251b731d00e2b456004016152f81fe
+source-git-commit: 1011c700a33b932c3c0a766727fc1d90bf2940f4
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -26,7 +26,8 @@ ht-degree: 0%
 ## Creare la configurazione OSGi di Acrobat Sign
 
 L’API REST di Acrobat Sign richiede la chiave di integrazione e l’e-mail associate alla chiave di integrazione. Questi due valori vengono forniti come proprietà di configurazione OSGi come mostrato di seguito
-![configurazione del segno](assets/sign-configuration.jpg)
+
+![configurazione del segno](assets/sign-configuration.png)
 
 ```java
 package com.acrobatsign.core.configuration;
