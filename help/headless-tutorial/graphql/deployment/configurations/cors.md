@@ -8,9 +8,9 @@ role: Developer, Architect
 level: Intermediate
 kt: 10830
 thumbnail: KT-10830.jpg
-source-git-commit: 6f1000db880c3126a01fa0b74abdb39ffc38a227
+source-git-commit: cc78e59fe70686e909928e407899fcf629a651b9
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '619'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,8 @@ ht-degree: 1%
 # Condivisione delle risorse tra le origini (CORS)
 
 La condivisione delle risorse tra le origini di Adobe Experience Manager as a Cloud Service (Cross-Origin Resource Sharing, CORS) consente di effettuare chiamate lato client basate su browser alle API di GraphQL senza AEM proprietà web.
+
+Il seguente articolo descrive come configurare _monorigena_ accesso a un set specifico di endpoint senza titolo AEM tramite CORS. Per origine singola si intende un solo dominio non AEM che accede AEM, ad esempio https://app.example.com che si connette a https://www.example.com. L’accesso per più origini potrebbe non funzionare con questo approccio a causa di problemi di memorizzazione nella cache.
 
 >[!TIP]
 >
@@ -30,7 +32,7 @@ CORS è necessario per le connessioni basate su browser alle API GraphQL AEM, qu
 
 | Tipo di client | [App a pagina singola (SPA)](../spa.md) | [Componente Web/JS](../web-component.md) | [Mobile](../mobile.md) | [Server-to-server](../server-to-server.md) |
 |----------------------------:|:---------------------:|:-------------:|:---------:|:----------------:|
-| Richiede la configurazione CORS | ↓ | ↓ | ✘ | ✘ |
+| Richiede la configurazione CORS | ↓ | ✔ | ✘ | ✘ |
 
 ## Configurazione OSGi
 
@@ -38,7 +40,7 @@ La factory di configurazione OSGi AEM CORS definisce i criteri consentiti per ac
 
 | Il client si connette a | Autore AEM | AEM Publish | Anteprima AEM |
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
-| Richiede la configurazione CORS OSGi | ↓ | ↓ | ↓ |
+| Richiede la configurazione CORS OSGi | ✔ | ✔ | ✔ |
 
 
 L’esempio seguente definisce una configurazione OSGi per AEM Publish (`../config.publish/..`), ma può essere aggiunto a [qualsiasi cartella in modalità di esecuzione supportata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#runmode-resolution).
@@ -63,7 +65,6 @@ Questa configurazione di esempio supporta l’utilizzo di query persistenti AEM 
     "https://spa.external.com/"
   ],
   "alloworiginregexp":[
-    "http://localhost:.*"
   ],
   "allowedpaths": [
     "/graphql/execute.json.*",
@@ -127,9 +128,9 @@ Ad esempio, queste due impostazioni vengono impostate come segue in un `CORSPoli
 
 Il Dispatcher del servizio AEM Publish (e Preview) deve essere configurato per supportare CORS.
 
-| Il client si connette a | Autore AEM | Pubblicazione AEM | Anteprima AEM |
+| Il client si connette a | Autore AEM | AEM Publish | Anteprima AEM |
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
-| Richiede la configurazione CORS del Dispatcher | ✘ | ↓ | ↓ |
+| Richiede la configurazione CORS del Dispatcher | ✘ | ✔ | ✔ |
 
 ### Consenti intestazioni CORS su richieste HTTP
 
