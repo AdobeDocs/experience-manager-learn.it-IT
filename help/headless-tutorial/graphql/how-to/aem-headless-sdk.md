@@ -9,10 +9,10 @@ level: Intermediate
 kt: 10269
 thumbnail: KT-10269.jpeg
 exl-id: 922a464a-2286-4132-9af8-f5a1fb5ce268
-source-git-commit: 595d990b7d8ed3c801a085892fef38d780082a15
+source-git-commit: 31948793786a2c430533d433ae2b9df149ec5fc0
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 4%
+source-wordcount: '454'
+ht-degree: 10%
 
 ---
 
@@ -22,9 +22,9 @@ L’AEM SDK headless è un set di librerie che possono essere utilizzate dai cli
 
 L’SDK AEM Headless è disponibile per varie piattaforme:
 
-+ [SDK AEM Headless per browser lato client (JavaScript)](https://github.com/adobe/aem-headless-client-js)
-+ [AEM Headless SDK per server-side/Node.js (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
-+ [AEM Headless SDK per Java™](https://github.com/adobe/aem-headless-client-java)
++ [SDK headless di AEM per browser lato client (JavaScript)](https://github.com/adobe/aem-headless-client-js)
++ [SDK headless di AEM per lato server/Node.js (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
++ [SDK headless di AEM per Java™](https://github.com/adobe/aem-headless-client-java)
 
 ## Query GraphQL persistenti
 
@@ -97,7 +97,7 @@ $ npm i @adobe/aem-headless-client-js
 
 Questo esempio di codice mostra come utilizzare il [React useEffect(..) gancio](https://reactjs.org/docs/hooks-effect.html) per eseguire una chiamata asincrona a AEM GraphQL.
 
-Utilizzo `useEffect` per effettuare la chiamata GraphQL asincrona in React è utile perché:
+Utilizzo `useEffect` per effettuare la chiamata asincrona GraphQL in React è utile perché:
 
 1. Fornisce il wrapper sincrono per la chiamata asincrona a AEM.
 1. Riduce i AEM che richiedono inutilmente.
@@ -203,3 +203,37 @@ Nuovo `useEffect` È possibile creare hook per ogni query persistente utilizzata
 
 AEM supporta le query GraphQL definite dal client, tuttavia è AEM best practice utilizzare [query GraphQL persistenti](#persisted-graphql-queries).
 
+## Webpack 5+
+
+L&#39;SDK JS AEM headless ha dipendenze da `util` che non è incluso in Webpack 5+ per impostazione predefinita. Se utilizzi Webpack 5+ e ricevi il seguente errore:
+
+```
+Compiled with problems:
+× ERROR in ./node_modules/@adobe/aio-lib-core-errors/src/AioCoreSDKErrorWrapper.js 12:13-28
+Module not found: Error: Can't resolve 'util' in '/Users/me/Code/wknd-headless-examples/node_modules/@adobe/aio-lib-core-errors/src'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+    - add a fallback 'resolve.fallback: { "util": require.resolve("util/") }'
+    - install 'util'
+If you don't want to include a polyfill, you can use an empty module like this:
+    resolve.fallback: { "util": false }
+```
+
+Aggiungi quanto segue `devDependencies` al tuo `package.json` file:
+
+```json
+  "devDependencies": {
+    "buffer": "npm:buffer@^6.0.3",
+    "crypto": "npm:crypto-browserify@^3.12.0",
+    "http": "npm:stream-http@^3.2.0",
+    "https": "npm:https-browserify@^1.0.0",
+    "stream": "npm:stream-browserify@^3.0.0",
+    "util": "npm:util@^0.12.5",
+    "zlib": "npm:browserify-zlib@^0.2.0"
+  },
+```
+
+Quindi esegui `npm install` per installare le dipendenze.
