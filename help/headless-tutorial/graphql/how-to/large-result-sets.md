@@ -10,10 +10,10 @@ doc-type: Article
 last-substantial-update: 2023-04-14T00:00:00Z
 jira: KT-13102
 thumbnail: 3418381.jpeg
-source-git-commit: 31948793786a2c430533d433ae2b9df149ec5fc0
+source-git-commit: 9eb706e49f12a3ebd5222e733f540db4cf2c8748
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '841'
+ht-degree: 1%
 
 ---
 
@@ -34,9 +34,11 @@ L’impaginazione e l’ordinamento possono essere utilizzati per qualsiasi mode
 
 Quando si utilizzano set di dati di grandi dimensioni, è possibile utilizzare sia l’impaginazione offset e limite che quella basata su cursore per recuperare un sottoinsieme specifico di dati. Tuttavia, vi sono alcune differenze tra le due tecniche che possono rendere una più appropriata rispetto all&#39;altra in determinate situazioni.
 
-### Query elenco
+### Offset/limit
 
 Elencare query, utilizzando `limit` e `offset` forniscono un approccio semplice che specifica il punto iniziale (`offset`) e il numero di record da recuperare (`limit`). Questo approccio consente di selezionare un sottoinsieme di risultati da qualsiasi punto all’interno dell’intero set di risultati, ad esempio saltando a una pagina specifica di risultati. Anche se è facile da implementare, può essere lento e inefficiente quando si tratta di risultati di grandi dimensioni, in quanto il recupero di molti record richiede la scansione di tutti i record precedenti. Questo approccio può anche causare problemi di prestazioni quando il valore di offset è alto, in quanto potrebbe richiedere il recupero e l&#39;eliminazione di molti risultati.
+
+#### Query GraphQL
 
 ```graphql
 # Retrieves a list of Adventures sorted price descending, and title ascending if there is the prices are the same.
@@ -51,7 +53,7 @@ query adventuresByOffetAndLimit($offset:Int!, $limit:Int) {
   }
 ```
 
-#### Variabili di query
+##### Variabili di query
 
 ```json
 {
@@ -60,7 +62,7 @@ query adventuresByOffetAndLimit($offset:Int!, $limit:Int) {
 }
 ```
 
-### Risposta elenco
+#### Risposta GraphQL
 
 La risposta JSON risultante contiene le avventure più costose 2°, 3°, 4° e 5°. Le prime due avventure nei risultati hanno lo stesso prezzo (`4500` quindi [query elenco](#list-queries) specifica le avventure con lo stesso prezzo e quindi ordinate per titolo in ordine crescente.)
 
@@ -99,10 +101,11 @@ La risposta JSON risultante contiene le avventure più costose 2°, 3°, 4° e 5
 
 L’impaginazione basata su cursore, disponibile nelle query impaginate, comporta l’utilizzo di un cursore (un riferimento a un record specifico) per recuperare il successivo set di risultati. Questo approccio è più efficiente in quanto evita la necessità di analizzare tutti i record precedenti per recuperare il sottoinsieme di dati richiesto. Le query impaginate sono ideali per l’iterazione attraverso set di risultati di grandi dimensioni dall’inizio, fino a un punto intermedio o fino alla fine. Elencare query, utilizzando `limit` e `offset` forniscono un approccio semplice che specifica il punto iniziale (`offset`) e il numero di record da recuperare (`limit`). Questo approccio consente di selezionare un sottoinsieme di risultati da qualsiasi punto all’interno dell’intero set di risultati, ad esempio saltando a una pagina specifica di risultati. Anche se è facile da implementare, può essere lento e inefficiente quando si tratta di risultati di grandi dimensioni, in quanto il recupero di molti record richiede la scansione di tutti i record precedenti. Questo approccio può anche causare problemi di prestazioni quando il valore di offset è alto, in quanto potrebbe richiedere il recupero e l&#39;eliminazione di molti risultati.
 
+#### Query GraphQL
 
 ```graphql
 # Retrieves the most expensive Adventures (sorted by title ascending if there is the prices are the same)
-query adventuresByPaginated($first:Int!, $after:String) {
+query adventuresByPaginated($first:Int, $after:String) {
  adventurePaginated(first: $first, after: $after, sort: "price DESC, title ASC") {
        edges {
           cursor
@@ -120,7 +123,7 @@ query adventuresByPaginated($first:Int!, $after:String) {
   }
 ```
 
-#### Variabili di query
+##### Variabili di query
 
 ```json
 {
@@ -128,7 +131,7 @@ query adventuresByPaginated($first:Int!, $after:String) {
 }
 ```
 
-### Risposta impaginata
+#### Risposta GraphQL
 
 La risposta JSON risultante contiene le avventure più costose 2°, 3°, 4° e 5°. Le prime due avventure nei risultati hanno lo stesso prezzo (`4500` quindi [query elenco](#list-queries) specifica le avventure con lo stesso prezzo e quindi ordinate per titolo in ordine crescente.)
 
@@ -171,11 +174,11 @@ La risposta JSON risultante contiene le avventure più costose 2°, 3°, 4° e 5
 }
 ```
 
-### Successivo set di risultati impaginati
+#### Successivo set di risultati impaginati
 
 Il successivo set di risultati può essere recuperato utilizzando `after` e `endCursor` dalla query precedente. Se non ci sono più risultati da recuperare, `hasNextPage` è `false`.
 
-#### Variabili di query
+##### Variabili di query
 
 ```json
 {
