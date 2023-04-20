@@ -7,9 +7,9 @@ breadcrumb-title: Tutorial su AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 155e6e42d4251b731d00e2b456004016152f81fe
+source-git-commit: edba74f5ff5611687c05812de184243997ee7a35
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1809'
 ht-degree: 4%
 
 ---
@@ -284,6 +284,7 @@ ht-degree: 4%
    + [Layout a due colonne nei documenti del canale di stampa](interactive-communications/two-column-layout-aem-forms-article-use.md)
    + [Utilizzo del componente Tabella nel documento del canale di stampa AEM Forms](interactive-communications/table-in-print-channel-documents-video-use.md)
    + [Generazione del documento di comunicazione interattiva per il canale di stampa tramite Cartelle di controllo](interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
+   + [Personalizza editor di testo](interactive-communications/customize-text-editor.md)
 
 + Comunicazioni Interattive Per Il Canale Web {#ic-web-channel-tutorial}
    + [Introduzione](ic-web-channel-tutorial/introduction.md)
