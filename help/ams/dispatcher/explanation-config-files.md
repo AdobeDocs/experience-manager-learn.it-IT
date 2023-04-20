@@ -7,7 +7,7 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
+source-git-commit: cc085af90b9b8ea0e650546c251fbf14cc222989
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Apache Web Server non si preoccupa effettivamente dell&#39;estensione di file qu
 | NOME FILE`_rewrite.rules` | `/etc/httpd/conf.d/rewrites/` | `*_rewrite.rules` archivio file `mod_rewrite` regole da includere e utilizzare esplicitamente da un `vhost` file |
 | NOME FILE`_whitelist.rules` | `/etc/httpd/conf.d/whitelists/` | `*_ipwhitelist.rules` i file sono inclusi dall&#39;interno del `*.vhost` file. Contiene regex IP o consente regole di negazione per consentire l’inserimento di IP nella whitelist. Se tenti di limitare la visualizzazione di un host virtuale basato su indirizzi IP, genererai uno di questi file e includerlo dal tuo `*.vhost` file |
 
-## File contenuti in conf.modules.d/
+## File contenuti in conf.dispatcher.d/
 
 | File | Destinazione file | Descrizione |
 | --- | --- | --- |
