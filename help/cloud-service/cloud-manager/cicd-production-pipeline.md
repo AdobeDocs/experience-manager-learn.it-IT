@@ -1,6 +1,6 @@
 ---
 title: Utilizzo di Adobe Cloud Manager - Pipeline di produzione CI/CD
-description: La pipeline di produzione CI/CD viene utilizzata per generare e distribuire il codice tramite Stage nell’ambiente di produzione, riducendo il tempo al valore. La configurazione della pipeline di produzione CI/CD definisce il trigger che avvierà la pipeline, i parametri che controllano la distribuzione di produzione e i parametri del test delle prestazioni.
+description: La pipeline di produzione CI/CD viene utilizzata per generare e distribuire il codice tramite Stage nell’ambiente di produzione, riducendo il tempo al valore. La configurazione della pipeline CI/CD di produzione definisce il trigger che avvia la pipeline, i parametri che controllano l’implementazione di produzione e i parametri di test delle prestazioni.
 topics: Administration
 audience: administrator
 doc-type: feature video
@@ -15,7 +15,7 @@ exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 9%
+ht-degree: 49%
 
 ---
 
@@ -23,10 +23,10 @@ ht-degree: 9%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_prodpipeline"
->title="Pipeline di produzione CI/CD"
->abstract="La configurazione della pipeline di produzione CI/CD definisce il trigger che avvierà la pipeline, i parametri che controllano la distribuzione di produzione e i parametri del test delle prestazioni."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-process" text="Implementare il codice"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-production-phase" text="Fase dalla distribuzione alla produzione"
+>title="Pipeline CI/CD di produzione"
+>abstract="La configurazione della pipeline CI/CD di produzione definisce il trigger che avvia la pipeline, i parametri che controllano l’implementazione di produzione e i parametri di test delle prestazioni."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it#deployment-process" text="Implementare il codice"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it#deployment-production-phase" text="Fase dalla distribuzione alla produzione"
 
 ## Configurazione
 

@@ -13,7 +13,7 @@ exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 source-git-commit: 2096c207ce14985b550b055ea0f51451544c085c
 workflow-type: tm+mt
 source-wordcount: '918'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -38,7 +38,7 @@ La `_dynamicUrl` è l’URL preferito da utilizzare per le risorse di immagini e
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_headless_graphql_images"
 >title="Immagini con AEM headless"
->abstract="Scopri come AEM Headless supporta la gestione delle risorse di immagini e la loro distribuzione ottimizzata."
+>abstract="Scopri in che modo AEM Headless supporta la gestione delle risorse di immagini e la loro consegna ottimizzata."
 
 ## Modello per frammenti di contenuto
 

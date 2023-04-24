@@ -22,11 +22,11 @@ ht-degree: 7%
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_devtools"
 >title="Configurare gli strumenti di sviluppo"
->abstract="Lo sviluppo di Adobe Experience Manager (AEM) richiede l’installazione e la configurazione di un set minimo di strumenti di sviluppo nel computer dello sviluppatore. Questi strumenti includono Java, Maven, Adobe I/O CLI, Development IDE e altro ancora."
+>abstract="Per sviluppare per Adobe Experience Manager (AEM) è necessario installare e configurare un set minimo di strumenti specifici nel computer dello sviluppatore, compresi Java, Maven, Adobe I/O CLI, IDE di sviluppo e altri."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=it" text="Linee guida per lo sviluppo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html?lang=it" text="Nozioni di base sullo sviluppo"
 
-Lo sviluppo di Adobe Experience Manager (AEM) richiede l’installazione e la configurazione di un set minimo di strumenti di sviluppo nel computer dello sviluppatore. Questi strumenti supportano lo sviluppo e la creazione di progetti AEM.
+Per sviluppare per Adobe Experience Manager (AEM) è necessario installare e configurare un set minimo di strumenti specifici nel computer dello sviluppatore, Questi strumenti supportano lo sviluppo e la creazione di progetti AEM.
 
 Tieni presente che `~` viene utilizzato come abbreviazione per la directory dell&#39;utente. In Windows, è l&#39;equivalente di `%HOMEPATH%`.
 

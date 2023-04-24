@@ -14,7 +14,7 @@ exl-id: d33c033a-9577-4d4e-99be-f3c7e2a4ce73
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 13%
+ht-degree: 17%
 
 ---
 
@@ -33,8 +33,8 @@ Questa serie video illustra il ciclo di vita dell’authoring di Frammenti di co
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_admin_content_fragments"
->title="Gestisci frammenti"
->abstract="Scopri come i frammenti di contenuto ti consentono di progettare, creare, curare e utilizzare contenuti indipendenti dalla pagina."
+>title="Gestire i frammenti"
+>abstract="Scopri in che modo i frammenti di contenuto consentono di progettare, creare, curare e pubblicare contenuti indipendenti dalle pagine."
 
 ## Definizione dei modelli per frammenti di contenuto {#defining-content-fragment-models}
 

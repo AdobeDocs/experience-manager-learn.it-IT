@@ -1,6 +1,6 @@
 ---
 title: Profili di prodotto e AEM di Adobe IMS
-description: I profili di prodotto Adobe IMS consentono agli utenti di accedere a un servizio AEM Author e forniscono una linea di base di accesso, a seconda del profilo di prodotto a cui sono membri.
+description: I profili di prodotto di Adobe IMS consentono agli utenti di accedere a un servizio AEM Author e forniscono una linea di base di accesso, a seconda del profilo di prodotto a cui sono iscritti.
 topic: Administration, Security
 feature: User and Groups
 role: Admin
@@ -11,7 +11,7 @@ exl-id: 089a557c-5155-489c-bccf-0cb97e95840c
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '146'
-ht-degree: 5%
+ht-degree: 80%
 
 ---
 
@@ -20,10 +20,10 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_productprofiles"
 >title="Profili di prodotto di Adobe IMS"
->abstract="I profili di prodotto Adobe IMS consentono agli utenti di accedere a un servizio AEM Author e forniscono una linea di base di accesso, a seconda del profilo di prodotto a cui sono membri. Ulteriori informazioni sui profili di prodotto Adobe IMS."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#introduction" text="Gestione dei prodotti e dell’accesso utente in Admin Console"
+>abstract="I profili di prodotto di Adobe IMS consentono agli utenti di accedere a un servizio AEM Author e forniscono una linea di base di accesso, a seconda del profilo di prodotto a cui sono iscritti. Scopri di più sui profili di prodotto di Adobe IMS."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=it#introduction" text="Gestione dei prodotti e dell’accesso utente in Admin Console"
 
-I profili di prodotto Adobe IMS consentono agli utenti di accedere a un servizio AEM Author e forniscono una linea di base di accesso, a seconda del profilo di prodotto a cui sono membri.
+I profili di prodotto di Adobe IMS consentono agli utenti di accedere a un servizio AEM Author e forniscono una linea di base di accesso, a seconda del profilo di prodotto a cui sono iscritti.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39156?quality=12&learn=on)
 

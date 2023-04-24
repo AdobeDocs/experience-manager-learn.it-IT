@@ -13,7 +13,7 @@ exl-id: 4846a394-cf8e-4d52-8f8b-9e874f2f457b
 source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 6%
+ht-degree: 26%
 
 ---
 
@@ -22,17 +22,17 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_overview"
 >title="Introduzione ad Adobe IMS"
->abstract="AEM as a Cloud Service sfrutta Adobe IMS (Identity Management System) per facilitare l’accesso dei suoi utenti, amministratori e utenti normali, al servizio Author di AEM. Scopri in che modo gli utenti, i gruppi e i profili di prodotto Adobe IMS vengono utilizzati insieme ai gruppi AEM e alle autorizzazioni per fornire un accesso dettagliato al servizio di authoring di AEM."
+>abstract="AEM as a Cloud Service sfrutta Adobe IMS (Identity Management System) per gestire l’accesso al servizio AEM Author da parte dei diversi tipi di utenti, dagli amministratori agli utenti normali. Scopri in che modo gli utenti, i gruppi e i profili di prodotto di Adobe IMS vengono utilizzati insieme ai gruppi e alle autorizzazioni di AEM per gestire l’accesso al servizio AEM Author in modo granulare."
 
 AEM as a Cloud Service è il modo nativo del cloud di sfruttare le applicazioni AEM e, come tale, sfrutta Adobe IMS (Identity Management System) per facilitare l’accesso dei suoi utenti, amministratori e utenti normali, al servizio Author di AEM.
 
 ![Adobe Admin Console](./assets/hero.png)
 
-Scopri in che modo gli utenti, i gruppi e i profili di prodotto Adobe IMS vengono utilizzati insieme ai gruppi AEM e alle autorizzazioni per fornire un accesso dettagliato al servizio di authoring di AEM.
+Scopri in che modo gli utenti, i gruppi e i profili di prodotto di Adobe IMS vengono utilizzati insieme ai gruppi e alle autorizzazioni di AEM per gestire l’accesso al servizio AEM Author in modo granulare.
 
 ## Utenti Adobe IMS
 
-Gli utenti che richiedono l’accesso al servizio AEM Author vengono gestiti come [Utenti Adobe IMS](https://helpx.adobe.com/it/enterprise/using/set-up-identity.html) in [Admin Console di Adobe](https://adminconsole.adobe.com). Scopri cosa sono gli utenti Adobe IMS e come sono accessibili e gestiti in Admin Console.
+Gli utenti che richiedono l’accesso al servizio AEM Author vengono gestiti come [Utenti Adobe IMS](https://helpx.adobe.com/it/enterprise/using/set-up-identity.html) in [Admin Console di Adobe](https://adminconsole.adobe.com). Scopri cosa si intende per utenti di Adobe IMS, nonché come accedervi e gestirli in Admin Console.
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Gli utenti che accedono al servizio AEM Author devono essere organizzati in grup
 
 ## AEM gruppi di utenti e autorizzazioni
 
-Adobe Experience Manager si basa sugli utenti, sui gruppi di utenti e sui profili di prodotto di Adobe IMS per fornire agli utenti un accesso personalizzabile a AEM. Scopri come creare gruppi AEM e autorizzazioni e come interagiscono con le astrazioni Adobe IMS per fornire un accesso semplice e personalizzabile ai AEM.
+Adobe Experience Manager si basa sugli utenti, i gruppi di utenti e i profili di prodotto di Adobe IMS per consentire agli utenti di accedere ad AEM con autorizzazioni personalizzabili. Scopri come creare gruppi AEM e autorizzazioni e come interagiscono con le astrazioni Adobe IMS per fornire un accesso semplice e personalizzabile ai AEM.
 
 [Informazioni su AEM utente, gruppi e autorizzazioni](./aem-users-groups-and-permissions.md)
 
@@ -72,6 +72,6 @@ Una procedura dettagliata per configurare gli utenti, i gruppi di utenti e i pro
 
 La documentazione seguente tratta [Adobe Admin Console](https://adminconsole.adobe.com)- dettagli e problemi specifici che possono contribuire a una migliore comprensione di Adobe Admin Console e a usarlo per gestire gli utenti e l&#39;accesso tra i prodotti Experience Cloud.
 
-+ [Panoramica di Adobe Admin Console Identity](https://helpx.adobe.com/it/enterprise/using/identity.html)
++ [Panoramica dell’identità di Adobe Admin Console](https://helpx.adobe.com/it/enterprise/using/identity.html)
 + [Ruoli amministratore di Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-roles.html)
 + [Ruoli sviluppatore di Adobe Admin Console](https://helpx.adobe.com/enterprise/using/manage-developers.html)

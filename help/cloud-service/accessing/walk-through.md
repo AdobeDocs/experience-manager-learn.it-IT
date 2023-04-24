@@ -1,5 +1,5 @@
 ---
-title: Configurazione dell’accesso a AEM procedura dettagliata
+title: Procedura dettagliata della configurazione dell’accesso a AEM
 description: Una procedura dettagliata per configurare gli utenti Adobe IMS, i gruppi di utenti e i profili di prodotto in Adobe Admin Console, e come sfruttare queste astrazioni Adobe IMS in AEM Author per definire e gestire autorizzazioni specifiche basate su gruppi.
 version: Cloud Service
 topic: Administration, Security
@@ -12,16 +12,16 @@ exl-id: 0ca50fa4-0b2a-4e6d-becb-7a91fc6b4166
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '115'
-ht-degree: 0%
+ht-degree: 42%
 
 ---
 
-# Configurazione dell’accesso a AEM procedura dettagliata {#configuring-access-to-aem-walkthrough}
+# Procedura dettagliata della configurazione dell’accesso a AEM {#configuring-access-to-aem-walkthrough}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_aem_walkthrough"
->title="Configurazione dell’accesso a AEM procedura dettagliata"
->abstract="Una procedura dettagliata per configurare gli utenti Adobe IMS, i gruppi di utenti e i profili di prodotto in Adobe Admin Console e come sfruttare queste astrazioni Adobe IMS in AEM Author per definire e gestire autorizzazioni specifiche basate su gruppi."
+>title="Procedura dettagliata della configurazione dell’accesso a AEM"
+>abstract="Segui questa procedura dettagliata per configurare gli utenti, i gruppi di utenti e i profili di prodotto di Adobe IMS in Adobe Admin Console e scopri come sfruttare queste astrazioni Adobe IMS in AEM Author per definire e gestire autorizzazioni specifiche basate su gruppi."
 
 Una procedura dettagliata per configurare gli utenti Adobe IMS, i gruppi di utenti e i profili di prodotto in Adobe Admin Console, e come sfruttare queste astrazioni Adobe IMS in AEM Author per definire e gestire autorizzazioni specifiche basate su gruppi.
 

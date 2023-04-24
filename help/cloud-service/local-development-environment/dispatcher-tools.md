@@ -22,13 +22,13 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_dispatcher"
 >title="Strumenti Dispatcher locali"
->abstract="Dispatcher è parte integrante dell’architettura complessiva di Experience Manager e deve far parte della configurazione di sviluppo locale. L’SDK per AEM as a Cloud Service include la versione consigliata degli strumenti di Dispatcher, che facilita la configurazione, la convalida e la simulazione locale di Dispatcher."
+>abstract="Dispatcher è parte integrante dell’architettura complessiva di Experience Manager e necessario nella configurazione di sviluppo locale. L’SDK di AEM as a Cloud Service include la versione consigliata degli strumenti per Dispatcher, che facilita la configurazione, la convalida e la simulazione locale di Dispatcher."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=it" text="Dispatcher nel cloud"
->additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html" text="Scarica l’SDK per AEM as a Cloud Service"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html" text="Scarica l’SDK di AEM as a Cloud Service"
 
-Dispatcher di Adobe Experience Manager (AEM) è un modulo server web Apache HTTP che fornisce una protezione e prestazioni tra il livello CDN e AEM Publish. Dispatcher è parte integrante dell’architettura complessiva di Experience Manager e deve far parte della configurazione di sviluppo locale.
+Dispatcher di Adobe Experience Manager (AEM) è un modulo server web Apache HTTP che fornisce una protezione e prestazioni tra il livello CDN e AEM Publish. Dispatcher è parte integrante dell’architettura complessiva di Experience Manager e necessario nella configurazione di sviluppo locale.
 
-L’SDK per AEM as a Cloud Service include la versione consigliata degli strumenti di Dispatcher, che facilita la configurazione, la convalida e la simulazione locale di Dispatcher. Gli strumenti di Dispatcher sono formati da:
+L’SDK di AEM as a Cloud Service include la versione consigliata degli strumenti per Dispatcher, che facilita la configurazione, la convalida e la simulazione locale di Dispatcher. Gli strumenti di Dispatcher sono formati da:
 
 + un set di base di file di configurazione del server web Apache HTTP e del Dispatcher, situato in `.../dispatcher-sdk-x.x.x/src`
 + uno strumento CLI di convalida della configurazione, situato in `.../dispatcher-sdk-x.x.x/bin/validate`

@@ -1,6 +1,6 @@
 ---
 title: Utilizzo di Adobe Cloud Manager - Pipeline di non produzione CI/CD
-description: 'Le pipeline CI/CD non di produzione sono suddivise in due categorie: pipeline di qualità del codice e pipeline di distribuzione. La qualità del codice pipeline tutto il codice da un ramo Git alla creazione ed è valutata in base alla scansione della qualità del codice di Cloud Manager. Le pipeline di distribuzione supportano la distribuzione automatica del codice dall’archivio Git a qualsiasi ambiente non di produzione, il che significa che qualsiasi ambiente AEM predisposto che non sia Stage o Production.'
+description: 'Le pipeline CI/CD non di produzione sono suddivise in due categorie: pipeline di qualità del codice e pipeline di implementazione. Le pipeline di qualità del codice instradano tutto il codice da un ramo Git per la generazione e la valutazione in base alla scansione della qualità del codice di Cloud Manager. Le pipeline di implementazione supportano l’implementazione automatica del codice dall’archivio Git in qualsiasi ambiente non di produzione, ovvero qualsiasi ambiente con provisioning AEM che non sia Stage o Production.'
 topics: Administration
 audience: administrator
 doc-type: feature video
@@ -15,7 +15,7 @@ exl-id: b28805d3-bb2d-4f66-8daa-9a8eb7ecf0a1
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '233'
-ht-degree: 0%
+ht-degree: 93%
 
 ---
 
@@ -23,10 +23,10 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_nonprodpipeline"
->title="Pipeline di non produzione CI/CD"
->abstract="Le pipeline CI/CD non di produzione sono suddivise in due categorie: pipeline di qualità del codice e pipeline di distribuzione. La qualità del codice pipeline tutto il codice da un ramo Git alla creazione ed è valutata in base alla scansione della qualità del codice di Cloud Manager. Le pipeline di distribuzione supportano la distribuzione automatica del codice dall’archivio Git a qualsiasi ambiente non di produzione, il che significa che qualsiasi ambiente AEM predisposto che non sia Stage o Production."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#non-production-%26-code-quality-only-pipelines" text="Solo pipeline non di produzione e di qualità del codice"
+>title="Pipeline CI/CD non di produzione"
+>abstract="Le pipeline CI/CD non di produzione sono suddivise in due categorie: pipeline di qualità del codice e pipeline di implementazione. Le pipeline di qualità del codice instradano tutto il codice da un ramo Git per la generazione e la valutazione in base alla scansione della qualità del codice di Cloud Manager. Le pipeline di implementazione supportano l’implementazione automatica del codice dall’archivio Git in qualsiasi ambiente non di produzione, ovvero qualsiasi ambiente con provisioning AEM che non sia Stage o Production."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=it#non-production-%26-code-quality-only-pipelines" text="Pipeline non di produzione e destinate solo alla qualità del codice"
 
-[pipeline non di produzione CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#non-production-%26-code-quality-only-pipelines) sono suddivise in due categorie: pipeline di qualità del codice e pipeline di distribuzione. La qualità del codice pipeline tutto il codice da un ramo Git alla creazione ed è valutata in base alla scansione della qualità del codice di Cloud Manager. Le pipeline di distribuzione supportano la distribuzione automatica del codice dall’archivio Git a qualsiasi ambiente non di produzione, il che significa che qualsiasi ambiente AEM predisposto che non sia Stage o Production.
+[Le pipeline CI/CD non di produzione sono suddivise in due categorie: pipeline di qualità del codice e pipeline di implementazione. ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=it#non-production-%26-code-quality-only-pipelines) Le pipeline di qualità del codice instradano tutto il codice da un ramo Git per la generazione e la valutazione in base alla scansione della qualità del codice di Cloud Manager. Le pipeline di implementazione supportano l’implementazione automatica del codice dall’archivio Git in qualsiasi ambiente non di produzione, ovvero qualsiasi ambiente con provisioning AEM che non sia Stage o Production.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316?quality=12&learn=on)

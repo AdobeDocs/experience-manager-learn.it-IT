@@ -12,7 +12,7 @@ exl-id: 82cd6dd5-735f-4641-9848-a5f5144b8624
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '99'
-ht-degree: 5%
+ht-degree: 74%
 
 ---
 
@@ -21,10 +21,10 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_deploycode"
 >title="Distribuzione del codice"
->abstract="Integra l’archivio Git di Cloud Manager con un archivio Git esterno e implementa un progetto per AEM as a Cloud Service"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/merge-projects.html?lang=en#cloud-manager" text="Unisci progetti"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#how-to-use" text="Distribuzione del codice con Cloud Manager"
+>abstract="Integra l’archivio Git di Cloud Manager con un archivio Git esterno e distribuisci un progetto in AEM as a Cloud Service"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/merge-projects.html?lang=it#cloud-manager" text="Unire i progetti"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it#how-to-use" text="Distribuzione del codice con Cloud Manager"
 
-Integra l’archivio Git di Cloud Manager con un archivio Git esterno e implementa un progetto per AEM as a Cloud Service
+Integra l’archivio Git di Cloud Manager con un archivio Git esterno e distribuisci un progetto in AEM as a Cloud Service
 
 >[!VIDEO](https://video.tv.adobe.com/v/330534?quality=12&learn=on)
