@@ -10,7 +10,7 @@ kt: 10253
 thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 09f9530cab0ec651b7c37c8c078631c79e8cfe4a
+source-git-commit: 97a311e043d3903070cd249d993036b5d88a21dd
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 6%
@@ -141,7 +141,7 @@ let dynamicUrl = AEM_HOST + data.adventureByPath.item.primaryImage._dynamicUrl;
 
 Ricorda, `_dynamicUrl` non include il dominio AEM, pertanto devi fornire l’origine desiderata per la risoluzione dell’URL immagine.
 
-### URL reattivi
+## URL reattivi
 
 L’esempio precedente mostra l’utilizzo di un’immagine a dimensione singola. Tuttavia, nelle esperienze web, i set di immagini reattivi sono spesso necessari. Le immagini reattive possono essere implementate utilizzando [srcset img](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) o [elementi dell&#39;immagine](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). Il seguente frammento di codice mostra come utilizzare il `_dynamicUrl` in base a e aggiungi diversi parametri di larghezza per alimentare diverse viste reattive. Non solo è possibile `width` è possibile utilizzare il parametro query, ma altri parametri di query possono essere aggiunti dal client per ottimizzare ulteriormente la risorsa immagine in base alle sue esigenze.
 
@@ -155,7 +155,7 @@ let alt = data.adventureByPath.item.title;
 {/*-- Example img srcset --*/}
 document.body.innerHTML=`<img>
     alt="${alt}"
-    src="${${dynamicUrl}&width=1000}"
+    src="${dynamicUrl}&width=1000}"
     srcset="`
       ${dynamicUrl}&width=1000 1000w,
       ${dynamicUrl}&width=1600 1600w,
@@ -171,26 +171,26 @@ document.body.innerHTML=`<picture>
     </picture>`;
 ```
 
-### React example
+## React example
 
 Creiamo una semplice applicazione React che visualizza le immagini ottimizzate per il Web [pattern di immagine reattivi](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/). Esistono due pattern principali per le immagini reattive:
 
 + [Elemento Img con srcset](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) per migliorare le prestazioni
 + [Elemento dell&#39;immagine](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-picture) per il controllo della progettazione
 
-#### Elemento Img con srcset
+### Elemento Img con srcset
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418556/?quality=12&learn=on)
 
 [Elementi Img con srcset](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) vengono utilizzati con `sizes` per fornire risorse di immagine diverse per schermi di diverse dimensioni. Le sequenze di immagini sono utili quando si forniscono risorse di immagini diverse per schermi di diverse dimensioni.
 
-#### Elemento dell&#39;immagine
+### Elemento dell&#39;immagine
 
 [Elementi dell&#39;immagine](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-picture) sono utilizzati con più `source` per fornire risorse di immagine diverse per schermi di diverse dimensioni. Gli elementi dell&#39;immagine sono utili quando si forniscono rappresentazioni di immagini diverse per schermi di diverse dimensioni.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418555/?quality=12&learn=on)
 
-#### Esempio di codice
+### Esempio di codice
 
 Questa semplice app React utilizza [AEM Headless SDK](./aem-headless-sdk.md) per eseguire query AEM API headless per un contenuto Avventura e visualizza l&#39;immagine ottimizzata per il web utilizzando [elemento img con srcset](#img-element-with-srcset) e [elemento dell&#39;immagine](#picture-element). La `srcset` e `sources` utilizza un `setParams` per aggiungere il parametro di query di consegna ottimizzato per il web al `_dynamicUrl` dell’immagine, quindi modifica il rendering dell’immagine consegnato in base alle esigenze del client web.
 
