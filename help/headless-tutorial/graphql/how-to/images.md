@@ -10,9 +10,9 @@ kt: 10253
 thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: ec2609ed256ebe6cdd7935f3e8d476c1ff53b500
+source-git-commit: 09f9530cab0ec651b7c37c8c078631c79e8cfe4a
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '934'
 ht-degree: 6%
 
 ---
@@ -97,7 +97,7 @@ La `_assetTransform` definisce come `_dynamicUrl` è progettato per ottimizzare 
 
 | Parametro GraphQL | Parametro URL | Descrizione | Obbligatorio | Valori variabili GraphQL | Valori dei parametri URL | Esempio di parametro URL |
 |:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:--|
-| `format` | `format` | Il formato della risorsa immagine. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N/D | N/D |
+| `format` | N/D | Il formato della risorsa immagine. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | N/D | N/D |
 | `seoName` | N/D | Nome del segmento di file nell’URL. Se non viene fornito, viene utilizzato il nome della risorsa immagine. | ✘ | Alfanumerico, `-`oppure `_` | N/D | N/D |
 | `crop` | `crop` | Il fotogramma di ritaglio estratto dall&#39;immagine deve essere delle dimensioni dell&#39;immagine | ✘ | Numeri interi positivi che definiscono un’area di ritaglio entro i limiti delle dimensioni dell’immagine originale | Stringa delimitata da virgole di coordinate numeriche `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `?crop=10,20,300,400` |
 | `size` | `size` | Dimensioni dell&#39;immagine di output (sia in altezza che in larghezza) in pixel. | ✘ | Numeri interi positivi | Numeri interi positivi delimitati da virgole nell’ordine `<WIDTH>,<HEIGHT>` | `?size=1200,800` |
