@@ -8,9 +8,9 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 117b67bd185ce5af9c83bd0c343010fab6cd0982
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1465'
 ht-degree: 0%
 
 ---
@@ -367,7 +367,7 @@ Utilizza la `json` tipo di ritorno e include `_references` oggetto durante la co
 
 ```graphql
 query ($path: String!) {
-  articleByPath(_path: $path)
+  articleByPath(_path: $path, _assetTransform: { format: JPG, preferWebp: true })
   {
     item {
       _path
@@ -377,17 +377,14 @@ query ($path: String!) {
     }
     _references {
       ...on ImageRef {
-        _path
-        _publishUrl
-        width
+        _dynamicUrl
         __typename
       }
       ...on ArticleModel {
         _path
         author
         __typename
-      }
-      
+      }  
     }
   }
 }
@@ -461,9 +458,7 @@ Nella query precedente, la `main` viene restituito come JSON. La `_references` l
       },
       "_references": [
         {
-          "_path": "/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "_publishUrl": "http://publish-p123-e456.adobeaemcloud.com/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "width": 1920,
+          "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--dd42d814-88ec-4c4d-b5ef-e3dc4bc0cb42/sport-climbing.jpg?preferwebp=true",
           "__typename": "ImageRef"
         },
         {
@@ -477,7 +472,7 @@ Nella query precedente, la `main` viene restituito come JSON. La `_references` l
 }
 ```
 
-La risposta JSON include dove il riferimento è stato inserito nel testo RTF con `"nodeType": "reference"`. La `_references` include quindi ogni riferimento con le proprietà aggiuntive richieste. Ad esempio, il `ImageRef` restituisce il `width` dell&#39;immagine a cui si fa riferimento nell&#39;articolo.
+La risposta JSON include dove il riferimento è stato inserito nel testo RTF con `"nodeType": "reference"`. La `_references` include quindi ogni riferimento.
 
 ## Rendering di riferimenti in linea in testo RTF
 
@@ -493,12 +488,12 @@ const nodeMap = {
             let reference;
             
             // asset reference
-            if(node.data.path) {
+            if (node.data.path) {
                 // find reference based on path
                 reference = references.find( ref => ref._path === node.data.path);
             }
             // Fragment Reference
-            if(node.data.href) {
+            if (node.data.href) {
                 // find in-line reference within _references array based on href and _path properties
                 reference = references.find( ref => ref._path === node.data.href);
             }
@@ -518,7 +513,7 @@ const renderReference = {
     // node contains merged properties of the in-line reference and _references object
     'ImageRef': (node) => {
         // when __typename === ImageRef
-        return <img src={node._publishUrl} alt={'in-line reference'} /> 
+        return <img src={node._dynamicUrl} alt={'in-line reference'} /> 
     },
     'ArticleModel': (node) => {
         // when __typename === ArticleModel
@@ -538,9 +533,14 @@ Un esempio completo di scrittura di un renderer di riferimenti personalizzati si
 
 >[!VIDEO](https://video.tv.adobe.com/v/342105?quality=12&learn=on)
 
+>[!NOTE]
+>
+> Il video di cui sopra utilizza `_publishUrl` per eseguire il rendering del riferimento immagine. Invece, preferisci `_dynamicUrl` come spiegato nel [procedure guidate per immagini ottimizzate per il web](./images.md);
+
+
 Il video precedente mostra un esempio end-to-end:
 
 1. Aggiornamento del campo di testo su più righe di un modello di frammento di contenuto per consentire l’utilizzo di riferimenti a frammenti
-1. Utilizzo dell’Editor frammento di contenuto per includere un’immagine e un riferimento a un altro frammento in un campo di testo su più righe.
-1. Creazione di una query GraphQL che include la risposta di testo su più righe come JSON ed eventuali `_references` utilizzato.
-1. Scrittura di un SPA React che esegue il rendering dei riferimenti in linea della risposta RTF.
+2. Utilizzo dell’Editor frammento di contenuto per includere un’immagine e un riferimento a un altro frammento in un campo di testo su più righe.
+3. Creazione di una query GraphQL che include la risposta di testo su più righe come JSON ed eventuali `_references` utilizzato.
+4. Scrittura di un SPA React che esegue il rendering dei riferimenti in linea della risposta RTF.
