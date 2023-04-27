@@ -5,10 +5,10 @@ breadcrumb-title: Tutorial su AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 1011c700a33b932c3c0a766727fc1d90bf2940f4
+source-git-commit: fc6c225f30132baec6245955318c7ca180d3ad62
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 20%
+source-wordcount: '934'
+ht-degree: 22%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 20%
 # Tutorial su Adobe Experience Manager as a Cloud Service {#cloud-service}
 
 + [Panoramica](./overview.md)
++ [AEM](./aem-trials/index.md)
 + Introduzione ad AEM as a Cloud Service{#introduction}
    + [Che cosa è AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Evoluzione](./introduction/evolution.md)
@@ -36,12 +37,12 @@ ht-degree: 20%
 + Cloud Manager {#cloud-manager}
    + [Programmi](./cloud-manager/programs.md)
    + [Ambienti](./cloud-manager/environments.md)
-   + [Pipeline di produzione CI/CD](./cloud-manager/cicd-production-pipeline.md)
-   + [Pipeline di non produzione CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
+   + [Pipeline CI/CD di produzione](./cloud-manager/cicd-production-pipeline.md)
+   + [Pipeline CI/CD non di produzione](./cloud-manager/cicd-non-production-pipeline.md)
    + [Attività](./cloud-manager/activity.md)
    + Ops sviluppatore{#devops}
       + [Distribuzione del codice](./cloud-manager/devops/deploy-code.md)
-      + [Unisci progetti](./cloud-manager/devops/merge-projects.md)
+      + [Unire i progetti](./cloud-manager/devops/merge-projects.md)
       + [Configurare le pipeline](./cloud-manager/devops/configure-pipelines.md)
       + [Integrazione continua](./cloud-manager/devops/continuous-integration.md)
       + [Analizzare i risultati del test](./cloud-manager/devops/analyze-test-results.md)
@@ -123,7 +124,7 @@ ht-degree: 20%
    + [Gruppi di utenti di Adobe IMS](./accessing/adobe-ims-user-groups.md)
    + [Profili di prodotto Adobe IMS](./accessing/adobe-ims-product-profiles.md)
    + [AEM utenti, gruppi e autorizzazioni](./accessing/aem-users-groups-and-permissions.md)
-   + [Configurazione dell’accesso a AEM procedura dettagliata](./accessing/walk-through.md)
+   + [Procedura dettagliata della configurazione dell’accesso a AEM](./accessing/walk-through.md)
 + Autenticazione{#authentication}
    + [Panoramica](./authentication/authentication.md)
    + [SAML 2.0](./authentication/saml-2-0.md)
