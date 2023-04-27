@@ -5,9 +5,9 @@ breadcrumb-title: Tutorial su AEM Sites
 feature-set: Experience Manager Sites, Experience Manager
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
+source-git-commit: 593ef5767a5f2321c689e391f9c9019de7c94672
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '443'
 ht-degree: 28%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 28%
       + [Suggerimenti sulla gerarchia del sito](page-authoring/expert-advice/site-hierarchy.md)
 + Componenti {#components}
    + [Sviluppo di componenti](components/component-development.md)
-   + [Componenti core ](components/core-components-feature-video-understand.md)
+   + [Componenti core](components/core-components-feature-video-understand.md)
    + [Distribuzione delle immagini ottimizzata per il web](components/web-optimized-image-delivery.md)
    + [Console Componenti](components/components-console-feature-video-use.md)
 + Frammenti di contenuto {#content-fragments}
@@ -98,6 +98,7 @@ ht-degree: 28%
 + Integrazioni {#integrations}
    + Experience Platform {#experience-platform}
       + [Generare FPID](integrations/platform/fpid.md)
+      + [SDK per web](integrations/platform/web-sdk.md)
    + Tag per la raccolta dati di Experience Platform (Launch) {#experience-platform-data-collection-tags}
       + [Panoramica](integrations/experience-platform/data-collection/tags/overview.md)
       + [Creare una proprietà tag](integrations/experience-platform/data-collection/tags/create-tag-property.md)
