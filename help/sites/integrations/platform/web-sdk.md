@@ -10,10 +10,10 @@ doc-type: Tutorial
 last-substantial-update: 2023-04-26T00:00:00Z
 jira: KT-13156
 thumbnail: KT-13156.jpeg
-source-git-commit: 593ef5767a5f2321c689e391f9c9019de7c94672
+source-git-commit: 3f129fb4fc53e55d118802d3a0e566a9a9bcb9a2
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 1%
+source-wordcount: '1153'
+ht-degree: 3%
 
 ---
 
@@ -79,6 +79,84 @@ Scopri come creare una proprietà tag (precedentemente nota come Launch) in Expe
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418896?quality=12&learn=on)
 
+
++++ Elemento dati e codice evento regola
+
++ La `Page Name` Codice elemento dati.
+
+   ```javascript
+   if(event && event.component && event.component.hasOwnProperty('dc:title')) {
+       // return value of 'dc:title' from the data layer Page object, which is propogated via 'cmp:show` event
+       return event.component['dc:title'];
+   }
+   ```
+
++ La `Site Section` Codice elemento dati.
+
+   ```javascript
+   if(event && event.component && event.component.hasOwnProperty('repo:path')) {
+   let pagePath = event.component['repo:path'];
+   
+   let siteSection = '';
+   
+   //Check of html String in URL.
+   if (pagePath.indexOf('.html') > -1) { 
+    siteSection = pagePath.substring(0, pagePath.lastIndexOf('.html'));
+   
+    //replace slash with colon
+    siteSection = siteSection.replaceAll('/', ':');
+   
+    //remove `:content`
+    siteSection = siteSection.replaceAll(':content:','');
+   }
+   
+       return siteSection 
+   }
+   ```
+
++ La `Host Name` Codice elemento dati.
+
+   ```javascript
+   if(window && window.location && window.location.hostname) {
+       return window.location.hostname;
+   }
+   ```
+
++ La `all pages - on load` Codice evento regola
+
+   ```javascript
+   var pageShownEventHandler = function(evt) {
+   // defensive coding to avoid a null pointer exception
+   if(evt.hasOwnProperty("eventInfo") && evt.eventInfo.hasOwnProperty("path")) {
+       //trigger Launch Rule and pass event
+       console.debug("cmp:show event: " + evt.eventInfo.path);
+       var event = {
+           //include the path of the component that triggered the event
+           path: evt.eventInfo.path,
+           //get the state of the component that triggered the event
+           component: window.adobeDataLayer.getState(evt.eventInfo.path)
+       };
+   
+       //Trigger the Launch Rule, passing in the new 'event' object
+       // the 'event' obj can now be referenced by the reserved name 'event' by other Launch data elements
+       // i.e 'event.component['someKey']'
+       trigger(event);
+       }
+   }
+   
+   //set the namespace to avoid a potential race condition
+   window.adobeDataLayer = window.adobeDataLayer || [];
+   
+   //push the event listener for cmp:show into the data layer
+   window.adobeDataLayer.push(function (dl) {
+       //add event listener for 'cmp:show' and callback to the 'pageShownEventHandler' function
+       dl.addEventListener("cmp:show", pageShownEventHandler);
+   });
+   ```
+
++++
+
+
 La [Panoramica sui tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) fornisce informazioni approfondite su concetti importanti come Elementi dati, Regole ed Estensioni.
 
 Per ulteriori informazioni sull’integrazione AEM componenti core con Adobe Client Data Layer, consulta [Utilizzo di Adobe Client Data Layer con la guida AEM componenti core](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=it).
@@ -121,3 +199,12 @@ Dopo la configurazione dell&#39;SDK web con AEM, in particolare sul sito WKND, �
 Ottimo lavoro Hai completato la configurazione di AEM con Adobe Experience Platform (Experience Platform) Web SDK per raccogliere e acquisire dati da un sito web. Con questa base, puoi ora esplorare ulteriori possibilità per migliorare e integrare prodotti come Analytics, Target, Customer Journey Analytics (CJA) e molti altri per creare esperienze personalizzate per i tuoi clienti. Continua a imparare ed esplorare per sfruttare appieno il potenziale di Adobe Experience Cloud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418900?quality=12&learn=on)
+
+## Risorse aggiuntive
+
++ [Utilizzo di Adobe Client Data Layer con i Componenti core](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=it)
++ [Integrazione dei tag e dei AEM di raccolta dati di Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
++ [Panoramica di Adobe Experience Platform Web SDK e Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
++ [Tutorial su Raccolta dati](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
++ [Panoramica di Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
+
