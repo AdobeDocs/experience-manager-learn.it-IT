@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-04-26T00:00:00Z
 jira: KT-13156
 thumbnail: KT-13156.jpeg
-source-git-commit: 1597fd87e11a27292b2b8897cf58c1670488b632
+exl-id: b5182d35-ec38-4ffd-ae5a-ade2dd3f856d
+source-git-commit: 63afa03de70d6f8f695d552018344d53a5cec6f5
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1315'
 ht-degree: 3%
 
 ---
-
 
 # Integrare Experience Platform Web SDK
 
@@ -24,7 +24,7 @@ Scopri come integrare AEM as a Cloud Service con Experience Platform [SDK per we
 
 Inoltre, imparerai a raccogliere e inviare [WKND - esempio di progetto Adobe Experience Manager](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) visualizzazione di dati nella pagina [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html).
 
-Dopo aver completato questa configurazione, puoi procedere con l’implementazione di Experience Platform e applicazioni correlate, come [Real-time Customer Data Platform (Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=it), [Customer Journey Analytics (CJA)](https://experienceleague.adobe.com/docs/customer-journey-analytics.html) e [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/docs/journey-optimizer.html). Promuovere un migliore coinvolgimento dei clienti standardizzando i dati web e dei clienti.
+Dopo aver completato questa configurazione, hai implementato una solida base. Inoltre, sei pronto per portare avanti l’implementazione di Experience Platform utilizzando applicazioni come [Real-time Customer Data Platform (Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=it), [Customer Journey Analytics (CJA)](https://experienceleague.adobe.com/docs/customer-journey-analytics.html)e [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/docs/journey-optimizer.html). L’implementazione avanzata contribuisce a migliorare il coinvolgimento dei clienti standardizzando i dati web e dei clienti.
 
 ## Prerequisiti
 
@@ -52,6 +52,8 @@ Se non si dispone delle autorizzazioni necessarie, l&#39;amministratore di siste
 
 Lo schema Experience Data Model (XDM) consente di standardizzare i dati sulla customer experience. Per raccogliere i dati **Visualizzazione a pagina WKND** creare uno schema XDM e utilizzare i gruppi di campi forniti dall’Adobe `AEP Web SDK ExperienceEvent` per la raccolta dati web.
 
+Esistono settori generici e specifici, ad esempio Retail, Financial Services, Healthcare e molto altro ancora, suite di modelli di dati di riferimento, vedi [Panoramica dei modelli di dati di settore](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/industries/overview.html) per ulteriori informazioni.
+
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418894?quality=12&learn=on)
 
@@ -76,8 +78,14 @@ Scopri come creare una proprietà tag (precedentemente nota come Launch) in Expe
 + Elementi dati: Gli elementi dati di tipo di codice personalizzato che estraggono nome-pagina, sezione-sito e nome-host utilizzando Livello dati client Adobe del sito WKND. Inoltre, l’elemento dati del tipo di oggetto XDM che è conforme alla build dello schema XDM WKND appena creata, precedente [Crea schema XDM](#create-xdm-schema---experience-platform) passo.
 + Regola: Invia dati a Platform Edge Network ogni volta che viene visitata una pagina web WKND utilizzando Adobe Client Data Layer attivato `cmp:show` evento.
 
+Durante la creazione e la pubblicazione della libreria di tag tramite la **Flusso di pubblicazione**, puoi utilizzare la **Aggiungi tutte le risorse modificate** pulsante . Per selezionare tutte le risorse come Elemento dati, Regola ed Estensioni tag anziché identificare e selezionare una singola risorsa. Inoltre, durante la fase di sviluppo, puoi pubblicare la libreria solo nel _Sviluppo_ ambiente, quindi verificarlo e promuoverlo _Stage_ o _Produzione_ ambiente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418896?quality=12&learn=on)
+
+
+>[!TIP]
+>
+>Il codice Elemento dati e Regola-Evento mostrato nel video è disponibile come riferimento, **espandi l’elemento a soffietto sottostante**. Tuttavia, se NON utilizzi Adobe Client Data Layer, devi modificare il codice riportato di seguito, ma il concetto di definizione degli elementi dati e di loro utilizzo nella definizione della regola è ancora valido.
 
 
 +++ Elemento dati e codice evento regola
@@ -207,4 +215,3 @@ Ottimo lavoro Hai completato la configurazione di AEM con Experience Platform We
 + [Panoramica di Adobe Experience Platform Web SDK e Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
 + [Tutorial su Raccolta dati](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
 + [Panoramica di Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
-
