@@ -8,14 +8,15 @@ role: Developer
 level: Beginner
 kt: 13099
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 155e6e42d4251b731d00e2b456004016152f81fe
+exl-id: d970d58b-77a4-4012-9e72-b97d60ef028a
+source-git-commit: 4709035983a5c6705c4e807d877ee71145f48987
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 0%
+source-wordcount: '70'
+ht-degree: 2%
 
 ---
 
-# Crea servlet
+# Crea URL modulo web Acrobat Sign
 
 Il codice seguente è stato scritto per esporre un endpoint POST. Questo endpoint estrae icTemplateName dai dati inviati e restituisce un URL del modulo web Acrobat Sign da firmare per l’utente finale.
 
@@ -85,3 +86,8 @@ public class GetWidgetUrl extends SlingAllMethodsServlet {
 
 }
 ```
+
+## Passaggi successivi
+
+[Distribuire le risorse tutorial sul sistema locale](./deploy-assets-on-your-server.md)
+

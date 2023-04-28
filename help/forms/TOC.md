@@ -7,9 +7,9 @@ breadcrumb-title: Tutorial su AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: edba74f5ff5611687c05812de184243997ee7a35
+source-git-commit: 4709035983a5c6705c4e807d877ee71145f48987
 workflow-type: tm+mt
-source-wordcount: '1809'
+source-wordcount: '1808'
 ht-degree: 4%
 
 ---
@@ -231,11 +231,11 @@ ht-degree: 4%
    + [Verificare la soluzione](welcome-kit/testing-the-solution.md)
 
 + React App with Forms and Acrobat Sign (Reagire App con e) {#react-ic-sign}
-   + [Introduzione](react-ic-sign/introduction.md)
-   + [Genera documento IC](react-ic-sign/create-ic-document.md)
-   + [Wrapper API di Acrobat Sign](react-ic-sign/wrapper-sign-api.md)
-   + [Genera widget Firma](react-ic-sign/create-servlet-to-expose-endpoint.md)
-   + [Distribuire le risorse di esempio](react-ic-sign/deploy-assets-on-your-server.md)
+   + [1-Introduzione](react-ic-sign/introduction.md)
+   + [2-Genera documento](react-ic-sign/create-ic-document.md)
+   + [Wrapper API 3-Acrobat Sign](react-ic-sign/wrapper-sign-api.md)
+   + [Widget 4-Generate Sign](react-ic-sign/create-servlet-to-expose-endpoint.md)
+   + [5-Distribuire le risorse di esempio](react-ic-sign/deploy-assets-on-your-server.md)
 + Servizi documentali {#document-services}
    + [Tipi di PDF forms](document-services/pdf-forms-and-documents.md)
    + [Incorpora pdf in forma adattiva](document-services/embed-pdf-inline.md)
