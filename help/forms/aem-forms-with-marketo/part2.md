@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: f8ba3d5c-0b9f-4eb7-8609-3e540341d5c2
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -201,3 +201,8 @@ public class MarketoConfigurationService {
 1. Crea e distribuisci il bundle sul server AEM.
 1. [Posiziona il browser su configMgr](http://localhost:4502/system/console/configMgr) e cerca &quot;Marketo Credentials Service Configuration&quot; (Configurazione servizio credenziali)
 1. Specifica le proprietà appropriate specifiche dell’istanza Marketo
+
+## Passaggi successivi
+
+[Creare un&#39;origine dati basata su servizio RESTful](./part3.md)
+

@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 last-substantial-update: 2021-06-09T00:00:00Z
 exl-id: 149d2c8c-bf44-4318-bba8-bec7e25da01b
-source-git-commit: 00257efe045eb85fb192bbb47f8e178cf909eb86
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -143,3 +143,8 @@ Il servizio QueryBuilder viene utilizzato per eseguire query sui nodi di tipo nt
 
 [Crea il bundle come descritto qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
 [Assicurati che il bundle sia distribuito e in stato attivo](http://localhost:4502/system/console/bundles)
+
+## Passaggi successivi
+
+Crea il tuo [componente flusso di lavoro personalizzato](./custom-workflow-component.md)
+

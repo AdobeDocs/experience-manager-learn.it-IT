@@ -8,10 +8,10 @@ role: Developer
 level: Beginner
 exl-id: 8c90fe1c-0c83-4287-9766-08d806b8815a
 last-substantial-update: 2020-02-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 Questa esercitazione illustra i passaggi necessari per creare un modulo adattivo con più schede. Scoprirai come utilizzare le tabelle, il layout a soffietto e l’editor di regole per creare regole di business.
 
-I moduli adattivi consentono di creare moduli coinvolgenti, reattivi, dinamici e adattivi. AEM Forms offre un’interfaccia utente intuitiva e componenti predefiniti per la creazione e l’utilizzo di moduli adattivi. È possibile scegliere di creare un modulo adattivo basato su un modello di modulo o schema o senza un modello di modulo. È importante scegliere con attenzione il modello di modulo che non solo si adatta alle proprie esigenze ma estende gli investimenti e le risorse infrastrutturali esistenti.
+I moduli adattivi consentono di creare moduli coinvolgenti, reattivi, dinamici e adattivi. AEM Forms offre un’interfaccia utente intuitiva e componenti predefiniti per la creazione e l’utilizzo di moduli adattivi. È possibile scegliere di creare un modulo adattivo basato su un modello di modulo o schema o senza un modello di modulo. È importante scegliere con attenzione il modello di modulo, che deve risultare adatto non solo alle proprie esigenze, ma deve consentire di accrescere gli investimenti e le risorse infrastrutturali esistenti.
 
 Questa esercitazione non utilizza alcun modello di modulo per la creazione di moduli adattivi.
 
@@ -34,3 +34,7 @@ Sarà necessario quanto segue:
 * [Scarica il client-libs-and-logo](assets/client-libs-and-logo.zip) e [getting-started-fragment](assets/getting-started-fragment.zip) sul disco rigido.
 
 * Importa i file zip in AEM utilizzando [gestore di pacchetti ](http://localhost:4502/crx/packmgr/index.jsp)
+
+## Passaggi successivi
+
+[Creare un modello di modulo adattivo](./create-adaptive-form-template.md)

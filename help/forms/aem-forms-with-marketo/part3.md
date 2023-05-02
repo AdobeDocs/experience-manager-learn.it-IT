@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -49,3 +49,8 @@ Posiziona il browser sul [pagina integrazioni dati.](http://localhost:4502/aem/f
 1. Seleziona l’unico servizio elencato e fai clic su Test Service
 1. Specifica un leadId valido e fai clic su Test. Se tutto va bene, dovresti recuperare i dettagli del lead come mostrato nella schermata sottostante
    ![risultati dei test](assets/testresults.jfif)
+
+## Passaggi successivi
+
+[Mettere tutto insieme per i test](./part4.md)
+

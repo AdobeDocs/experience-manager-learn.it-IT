@@ -9,9 +9,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: e7674c46-259f-4dbd-96db-c40369534911
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -44,3 +44,7 @@ Aggiungeremo una tabella al pannello Reddito. Configura le righe della tabella e
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/22197?quality=12&learn=on)
+
+## Passaggi successivi
+
+[Configurare il pannello Risorse](./configuring-assets-panel.md)

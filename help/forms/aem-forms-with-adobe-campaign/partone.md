@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: a5e5aad4-064f-4638-a53a-88dfb1d27c8f
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -242,3 +242,7 @@ public class CampaignServiceImpl implements CampaignService {
 ## Genera token di accesso {#generate-access-token}
 
 Quindi sostituiamo il JWT generato per un token di accesso effettuando una chiamata POST. Questo token di accesso verrà quindi inviato come chiave di autorizzazione nell’intestazione HTTP per le successive chiamate REST
+
+## Passaggi successivi
+
+[Creazione di un profilo in ACS all’invio del modulo](./parttwo.md)

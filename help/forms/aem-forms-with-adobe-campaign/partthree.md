@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 502f4bdf-d4af-409f-a611-62b7a1a6065a
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -233,4 +233,9 @@ Per far funzionare questo sistema, segui le seguenti istruzioni:
 * [Assicurati di aver seguito i passaggi descritti qui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Importare un modulo adattivo di esempio in AEM utilizzando il gestore dei pacchetti](assets/pre-fill-af-from-campaign.zip)
 * Assicurati di accedere a AEM con un utente il cui ID e-mail è condiviso da un profilo in Adobe Campaign. Ad esempio, se l’ID e-mail dell’utente AEM è johndoe@adobe.com, è necessario avere un profilo in ACS il cui indirizzo e-mail è johndoe@adobe.com.
-* [Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
+* [Anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
+
+## Passaggi successivi
+
+[Creare un profilo Adobe Campaign utilizzando il modello dati modulo](./partfour.md)
+

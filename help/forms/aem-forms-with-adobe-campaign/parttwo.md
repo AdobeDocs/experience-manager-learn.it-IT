@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: deef09d9-82ec-4e61-b7ee-e72d1cd4e9e0
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -268,3 +268,7 @@ Una volta definiti il servizio e l’azione di invio personalizzata, siamo pront
 * Visualizzare in anteprima l&#39;anteprima del [modulo](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
 * Compila tutti i campi e invia
 * Viene creato un nuovo profilo nell’istanza ACS
+
+## Passaggi successivi
+
+[Precompilazione del modulo adattivo utilizzando le informazioni sul profilo ACS](./partthree.md)
