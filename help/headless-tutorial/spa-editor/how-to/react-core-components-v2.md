@@ -8,13 +8,13 @@ role: Developer
 level: Intermediate
 kt: 10900
 thumbnail: kt-10900.jpeg
-source-git-commit: f02d5e01388ee61228254951b05c37c336423348
+exl-id: e055b356-dd26-4366-8608-5a0ccf5b4c49
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # Come utilizzare AEM React Editable Components v2
 
@@ -33,7 +33,7 @@ Per ulteriori dettagli ed esempi di codice per AEM React Editable Components v2,
 
 ## Pagine AEM
 
-AEM React Modificable Components funziona sia con SPA Editor che con le app Remote SPA React. Il contenuto che popola i componenti React modificabili deve essere esposto tramite pagine AEM che estendono il [Componente Pagina SPA](https://experienceleague.adobe.com/docs/experience-manager-64/developing/headless/spas/spa-page-component.html). I componenti AEM, mappati su componenti React modificabili, devono implementare AEM [Struttura per l&#39;esportazione di componenti](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) - quali [Componenti core WCM AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
+AEM React Modificable Components funziona sia con SPA Editor che con le app Remote SPA React. Il contenuto che popola i componenti React modificabili deve essere esposto tramite pagine AEM che estendono il [Componente Pagina SPA](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html). I componenti AEM, mappati su componenti React modificabili, devono implementare AEM [Struttura per l&#39;esportazione di componenti](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) - quali [Componenti core WCM AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
 
 
 ## Dipendenze
@@ -231,6 +231,3 @@ const EditableEmbedding = (props) => {
 // Export as default the mapped EditableEmbedding
 export default MapTo("wknd-examples/components/embedding")(EditableEmbedding);
 ```
-
-
-

@@ -4,13 +4,13 @@ seo-title: Your Routine Site Maintenance Guide
 description: La manutenzione del sito tocca ogni aspetto dell’istanza di AEM Sites, sia che tu sia un amministratore, un autore o uno sviluppatore. Utilizza questa guida per assicurarti che la tua strategia sia configurata per il successo.
 seo-description: Whether you're an admin, author, or developer, site maintenance touches every aspect of your AEM Sites instance. Use this guide to ensure your strategy is set up for success.
 audience: author, marketer, developer
-source-git-commit: d545e7bb5e937959e2ede2b3c1ecfc312df5a044
+exl-id: 37ee3234-f91c-4f0a-b0b7-b9167e7847a9
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
-source-wordcount: '1094'
-ht-degree: 4%
+source-wordcount: '1084'
+ht-degree: 5%
 
 ---
-
 
 # Suggerimenti e trucchi per la manutenzione del sito
 
@@ -44,23 +44,23 @@ Gli indici consentono l’esecuzione delle query il più rapidamente possibile, 
 
 Ogni aggiornamento del repository crea una nuova revisione del contenuto. Di conseguenza, con ogni aggiornamento le dimensioni dell&#39;archivio crescono. Per evitare una crescita incontrollata dell&#39;archivio, è necessario ripulire le vecchie revisioni per liberare le risorse del disco.
 
-#### [Pulizia binari Lucene](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/operations-dashboard.html?lang=en#automated-maintenance-tasks)
+#### [Pulizia binari Lucene](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-dashboard.html#automated-maintenance-tasks)
 
 Elimina i file binari lucene e riduci il requisito di dimensione dell’archivio dati in esecuzione.
 
-#### [Archivio dati spazzatura](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/data-store-garbage-collection.html?lang=en)
+#### [Archivio dati spazzatura](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html)
 
 Quando una risorsa in AEM viene eliminata, il riferimento al record dell&#39;archivio dati sottostante può essere rimosso dalla gerarchia dei nodi, ma il record dell&#39;archivio dati stesso rimane. Questo record dell&#39;archivio dati senza riferimento diventa &quot;spazzatura&quot; che non deve essere conservata. Nei casi in cui esistono diverse risorse senza riferimento, è utile eliminarle, conservarne lo spazio, ottimizzare il backup e le prestazioni di manutenzione del file system.
 
-#### [Eliminazione flussi di lavoro](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/workflows-administering.html?lang=en)
+#### [Eliminazione flussi di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=it)
 
 Minimizzare il numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione.
 
-#### [Manutenzione del registro di controllo](https://experienceleague.adobe.com/docs/experience-manager-64/administering/operations/operations-audit-log.html?lang=en)
+#### [Manutenzione del registro di controllo](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-audit-log.html)
 
 AEM eventi idonei per la registrazione di controllo generano molti dati archiviati. Questi dati possono crescere rapidamente nel tempo a causa di repliche, caricamenti di risorse e altre attività del sistema.
 
-#### [Sicurezza](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en)
+#### [Sicurezza](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=it)
 
 Assicurati che le best practice relative alla lista di controllo della sicurezza siano seguite da vicino per garantire l&#39;istanza più sicura di AEM.
 
@@ -80,7 +80,7 @@ I sistemi di stile consentono ai componenti core e anche ai componenti personali
 
 I lanci consentono di completare il lavoro per un nuovo rollout Promozione, Vendita o sito web senza influire sulle pagine attualmente distribuite. Inoltre, possono essere programmati per andare in diretta automaticamente, senza presenze o supervisione, permettendo agli autori di fare il lavoro della prossima settimana (o del prossimo trimestre) oggi e non affrettarsi nello sviluppo di pagina il giorno prima che dovrebbe andare in diretta - è davvero il dono del TEMPO!)
 
-### [Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments.html?lang=en)
+### [Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
 
 I frammenti di contenuto sono &quot;blocchi&quot; personalizzabili di informazioni che possono essere facilmente riutilizzate in tutto il sito. Se hai bisogno di un cambiamento, devi solo cambiare il blocco originale e l&#39;aggiornamento è visto ovunque sia utilizzato - immediatamente!
 

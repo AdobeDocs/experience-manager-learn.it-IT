@@ -10,9 +10,9 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1498'
 ht-degree: 7%
 
 ---
@@ -195,9 +195,9 @@ Visual Studio Code è la scelta ideale per gli sviluppatori front-end che creano
 
 ### Eclipse
 
-__[IDE Eclipse](https://www.eclipse.org/ide/)__ è un IDE popolare per lo sviluppo Java e supporta l’  __[Strumenti per sviluppatori AEM](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html?lang=en)__ plug-in fornito dall&#39;Adobe, che fornisce un&#39;interfaccia grafica interna all&#39;IDE per l&#39;authoring e per sincronizzare il contenuto JCR con un&#39;istanza AEM locale.
+__[IDE Eclipse](https://www.eclipse.org/ide/)__ è un IDE popolare per lo sviluppo Java e supporta l’  __[Strumenti per sviluppatori AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)__ plug-in fornito dall&#39;Adobe, che fornisce un&#39;interfaccia grafica interna all&#39;IDE per l&#39;authoring e per sincronizzare il contenuto JCR con un&#39;istanza AEM locale.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
 + [Scarica Eclipse](https://www.eclipse.org/ide/)
-+ [Download degli strumenti di sviluppo Eclipse](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html?lang=en)
++ [Download degli strumenti di sviluppo Eclipse](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)

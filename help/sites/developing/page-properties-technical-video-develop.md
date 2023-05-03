@@ -8,7 +8,7 @@ version: Cloud Service
 kt: 243
 thumbnail: 25173.jpg
 exl-id: 500f4e07-2686-42a2-8e44-d96dde02a112
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 1%
@@ -27,6 +27,6 @@ Il video precedente mostra la personalizzazione delle proprietà della pagina pe
 
 Puoi utilizzare i [pacchetto di proprietà della pagina WKND di esempio](./assets/WKND-PageProperties-Example-Dialog-1.0.zip) contenente **WKND** e **Base** le personalizzazioni delle schede mostrate nel video precedente. La **SocialMedia** la personalizzazione delle schede non viene fornita come [Componente Pagina WKND](https://github.com/adobe/aem-guides-wknd/blob/main/ui.apps/src/main/content/jcr_root/apps/wknd/components/page/.content.xml#L5) ora utilizza la versione V3 dei componenti core WCM e nella versione V3 la [la condivisione social network è obsoleta](https://github.com/adobe/aem-core-wcm-components/pull/1930).
 
-Tuttavia, a scopo di apprendimento, è possibile indirizzare il componente Pagina WKND alla versione V2 dei componenti core WCM utilizzando `sling:resourceSuperType` e sovrapponi il valore della proprietà [Social media](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/page/v2/page/_cq_dialog/.content.xml#L95) scheda . Per ulteriori informazioni, consulta [Configurazione delle proprietà di pagina](https://experienceleague.adobe.com/docs/experience-manager-64/developing/extending-aem/page-properties-views.html#configuring-your-page-properties)
+Tuttavia, a scopo di apprendimento, è possibile indirizzare il componente Pagina WKND alla versione V2 dei componenti core WCM utilizzando `sling:resourceSuperType` e sovrapponi il valore della proprietà [Social media](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/page/v2/page/_cq_dialog/.content.xml#L95) scheda . Per ulteriori informazioni, consulta [Configurazione delle proprietà di pagina](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/page-properties-views.html#configuring-your-page-properties)
 
 Questo pacchetto di esempio deve essere installato nell&#39;istanza locale AEM SDK o AEM 6.X.X a scopo di apprendimento.

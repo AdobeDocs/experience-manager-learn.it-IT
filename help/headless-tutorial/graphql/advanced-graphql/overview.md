@@ -7,7 +7,7 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 1%
@@ -78,7 +78,7 @@ Osserva che il `WKND Shared Endpoint` è già stato creato. Per creare un endpoi
 
 >[!NOTE]
 >
-> Dopo aver salvato l’endpoint, verrà visualizzato un modale che illustra come visitare la console di sicurezza, che consente di modificare le impostazioni di sicurezza per configurare l’accesso all’endpoint. Tuttavia, le stesse autorizzazioni di sicurezza non rientrano nell’ambito di questa esercitazione. Per ulteriori informazioni, consulta la [Documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security.html?lang=it).
+> Dopo aver salvato l’endpoint, verrà visualizzato un modale che illustra come visitare la console di sicurezza, che consente di modificare le impostazioni di sicurezza per configurare l’accesso all’endpoint. Tuttavia, le stesse autorizzazioni di sicurezza non rientrano nell’ambito di questa esercitazione. Per ulteriori informazioni, consulta la [Documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=it).
 
 ### Esamina la struttura del contenuto WKND e la cartella principale della lingua
 

@@ -1,7 +1,7 @@
 ---
 title: Configurare un ambiente di sviluppo AEM locale
 description: Scopri come configurare un ambiente di sviluppo locale, ad Experience Manager. Acquisisci familiarità con l’installazione locale, Apache Maven, gli ambienti di sviluppo integrati e il debug e la risoluzione dei problemi. Utilizzare Eclipse IDE, CRXDE-Lite, Visual Studio Code e IntelliJ.
-version: 6.4, 6.5
+version: 6.5
 feature: Developer Tools
 topics: development
 activity: develop
@@ -12,7 +12,7 @@ level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
 thumbnail: aem-local-dev-env.jpg
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '2603'
 ht-degree: 2%
@@ -138,7 +138,7 @@ Quando si utilizza un IDE, assicurarsi di controllare `classic` nella scheda Pro
 
 ### [!DNL Eclipse] IDE
 
-La **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** è uno degli IDE più popolari per lo sviluppo Java™, in gran parte perché è open source e ***gratuito***! L&#39;Adobe fornisce un plug-in, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html)**, per [!DNL Eclipse] per consentire uno sviluppo più semplice con una bella interfaccia grafica per sincronizzare il codice con un&#39;istanza AEM locale. La [!DNL Eclipse] L’IDE è consigliato agli sviluppatori di AEM in larga parte a causa del supporto dell’interfaccia grafica di [!DNL AEM Developer Tools].
+La **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** è uno degli IDE più popolari per lo sviluppo Java™, in gran parte perché è open source e ***gratuito***! L&#39;Adobe fornisce un plug-in, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)**, per [!DNL Eclipse] per consentire uno sviluppo più semplice con una bella interfaccia grafica per sincronizzare il codice con un&#39;istanza AEM locale. La [!DNL Eclipse] L’IDE è consigliato agli sviluppatori di AEM in larga parte a causa del supporto dell’interfaccia grafica di [!DNL AEM Developer Tools].
 
 #### Installazione e configurazione
 
@@ -194,7 +194,7 @@ La **[IDEA IntelliJ](https://www.jetbrains.com/idea/)** è un potente IDE per lo
 
 ### [!DNL CRXDE Lite]
 
-[CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/developing-with-crxde-lite.html) è una visualizzazione basata su browser dell’archivio AEM. [!DNL CRXDE Lite] è incorporato in AEM e consente allo sviluppatore di eseguire attività di sviluppo standard come la modifica di file, la definizione di componenti, finestre di dialogo e modelli. [!DNL CRXDE Lite] è ***not*** doveva essere un ambiente di sviluppo completo ma efficace come strumento di debug. [!DNL CRXDE Lite] è utile quando estendi o semplicemente comprendi il codice prodotto al di fuori della tua base di codice. [!DNL CRXDE Lite] fornisce una visualizzazione potente dell&#39;archivio e un modo per testare e gestire in modo efficace le autorizzazioni.
+[CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) è una visualizzazione basata su browser dell’archivio AEM. [!DNL CRXDE Lite] è incorporato in AEM e consente allo sviluppatore di eseguire attività di sviluppo standard come la modifica di file, la definizione di componenti, finestre di dialogo e modelli. [!DNL CRXDE Lite] è ***not*** doveva essere un ambiente di sviluppo completo ma efficace come strumento di debug. [!DNL CRXDE Lite] è utile quando estendi o semplicemente comprendi il codice prodotto al di fuori della tua base di codice. [!DNL CRXDE Lite] fornisce una visualizzazione potente dell&#39;archivio e un modo per testare e gestire in modo efficace le autorizzazioni.
 
 [!DNL CRXDE Lite] deve essere utilizzato con altri IDE per testare e eseguire il debug del codice, ma mai come strumento di sviluppo principale. Dispone di un supporto di sintassi limitato, di funzionalità di completamento automatico e di un&#39;integrazione limitata con i sistemi di gestione del controllo del codice sorgente.
 

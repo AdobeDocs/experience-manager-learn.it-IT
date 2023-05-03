@@ -6,7 +6,7 @@ topics: development
 audience: developer
 doc-type: article
 activity: implement
-version: 6.4,6.5
+version: 6.5
 kt: 4419
 thumbnail: kt-4419.jpg
 topic: Development
@@ -14,16 +14,16 @@ role: User
 level: Beginner
 exl-id: 67a01c41-d284-4518-adb5-21702e22ccfa
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '481'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
 # Creazione di moduli HTML5
 
-HTML5 forms è una nuova funzionalità di Adobe Experience Manager che offre il rendering di modelli di moduli XFA (xdp) in formato HTML5. Questa funzionalità consente di effettuare il rendering dei moduli su dispositivi mobili e browser desktop che non supportano i PDF basati su XFA. HTML5 forms supporta non solo le funzionalità esistenti dei modelli di modulo XFA, ma aggiunge anche nuove funzionalità per i dispositivi mobili, ad esempio la firma a mano libera.
+HTML5 forms è una nuova funzionalità di Adobe Experience Manager che offre il rendering di modelli di moduli XFA (xdp) in formato HTML5. Questa funzionalità consente di eseguire il rendering dei moduli su dispositivi mobili e browser desktop su cui non è supportato PDF basato su XFA. HTML5 forms supporta non solo le funzionalità esistenti dei modelli di modulo XFA, ma aggiunge anche nuove funzionalità per i dispositivi mobili, ad esempio la firma a mano libera.
 
 ## Prerequisito
 
@@ -59,6 +59,6 @@ Le proprietà avanzate del modello xdp consentono di specificare la data di pubb
 
 **Invia URL** - Questo è l’URL che gestirà l’invio del modulo HTML5. Ne parleremo nella prossima lezione. Se non si specifica un URL di invio qui, viene richiamato il gestore di invio predefinito che restituisce i dati del modulo al browser.
 
-**Profilo di rendering HTML** - I moduli di HTML5 hanno la nozione di profili esposti come endpoint REST per abilitare il rendering mobile dei modelli di modulo. La maggior parte delle volte il profilo di rendering predefinito deve essere sufficiente per eseguire il rendering del modulo. Se il profilo di rendering predefinito non soddisfa le tue esigenze, un [profilo personalizzato](https://experienceleague.adobe.com/docs/experience-manager-64/forms/html5-forms/custom-profile.html) può essere creato e associato al modulo.
+**Profilo di rendering HTML** - I moduli di HTML5 hanno la nozione di profili esposti come endpoint REST per abilitare il rendering mobile dei modelli di modulo. La maggior parte delle volte il profilo di rendering predefinito deve essere sufficiente per eseguire il rendering del modulo. Se il profilo di rendering predefinito non soddisfa le tue esigenze, un [profilo personalizzato](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/custom-profile.html) può essere creato e associato al modulo.
 
 **Servizio di precompilazione** - Il servizio di precompilazione viene in genere utilizzato per compilare il modulo con i dati recuperati da un’origine dati back-end.
