@@ -7,10 +7,10 @@ breadcrumb-title: Tutorial su AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1804'
+ht-degree: 3%
 
 ---
 
@@ -45,10 +45,10 @@ ht-degree: 0%
    + [Elenchi a discesa a cascata](some-useful-integrations/geonames-org.md)
    + [Integrazione con ServiceNow](some-useful-integrations/service-now.md)
 + Creazione del bundle OSGi {#creating-your-first-osgi-bundle}
-   + [Configurare l’ambiente](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
-   + [Crea servizio OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
-   + [Crea servlet Sling](creating-your-first-osgi-bundle/create-servlet.md)
-   + [Inclusi i bundle di terze parti](creating-your-first-osgi-bundle/include-third-party-jars.md)
+   + [1 - Configurazione dell&#39;ambiente](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
+   + [2 - Creare il servizio OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
+   + [3 - Creare un servlet Sling](creating-your-first-osgi-bundle/create-servlet.md)
+   + [4 - Inclusi bundle di terze parti](creating-your-first-osgi-bundle/include-third-party-jars.md)
 + Moduli adattivi {#adaptive-forms}
    + [Installazione di AEM Forms in Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
    + [Installazione di pacchetti a 32 bit su Linux](adaptive-forms/installing-aem-form-on-linux.md)
@@ -101,16 +101,16 @@ ht-degree: 0%
    + [Modello dati modulo con Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Aggiunta dinamica di elementi al componente Scelta](adaptive-forms/choice-group-items-adding-dynamically-article.md)
 + Selezionare e assemblare il contenuto della cartella DAM{#select-dam-folder-content}
-   + [Introduzione](display-and-assemble-dam-folder-contents/introduction.md)
-   + [Popolare il gruppo di scelta](display-and-assemble-dam-folder-contents/populating-choice-group-with-dam-folder-content.md)
-   + [Assemblare le risorse selezionate](display-and-assemble-dam-folder-contents/assemble-selected-newsletters.md)
-   + [Distribuzione locale delle risorse](display-and-assemble-dam-folder-contents/deploy-on-your-system.md)
+   + [1- Introduzione](display-and-assemble-dam-folder-contents/introduction.md)
+   + [2 - Popolare il gruppo di scelta](display-and-assemble-dam-folder-contents/populating-choice-group-with-dam-folder-content.md)
+   + [3 - Assemblare le risorse selezionate](display-and-assemble-dam-folder-contents/assemble-selected-newsletters.md)
+   + [4 - Distribuzione locale delle risorse](display-and-assemble-dam-folder-contents/deploy-on-your-system.md)
 + Precompilazione del modulo adattivo utilizzando il modello dati del modulo{#prefill-fdm-db}
-   + [Introduzione](prefill-fdm-db/introduction.md)
-   + [Creazione di tabelle di database](prefill-fdm-db/create-database-tables.md)
-   + [Configurazione del modello dati modulo](prefill-fdm-db/configuring-form-data-model.md)
-   + [Ottieni parametro di richiesta](prefill-fdm-db/get-request-parameter.md)
-   + [Creare un modulo adattivo](prefill-fdm-db/create-adaptive-form.md)
+   + [1 - Introduzione](prefill-fdm-db/introduction.md)
+   + [2 - Creazione di tabelle di database](prefill-fdm-db/create-database-tables.md)
+   + [3 - Configurazione del modello dati del modulo](prefill-fdm-db/configuring-form-data-model.md)
+   + [4 - Ottieni parametro di richiesta](prefill-fdm-db/get-request-parameter.md)
+   + [5 - Creare un modulo adattivo](prefill-fdm-db/create-adaptive-form.md)
 + Suggerimenti per l’interfaccia utente{#ui-tips-and-tricks}
    + [Attiva/disattiva il testo del campo password](ui-tips-tricks/toggle-password.md)
    + [Pulsanti Spazio della barra degli strumenti](ui-tips-tricks/toolbar-buttons.md)
@@ -118,14 +118,14 @@ ht-degree: 0%
    + [Aggiungi icone alle schede di navigazione](ui-tips-tricks/active-complete.md)
    + [Campi di completamento automatico](ui-tips-tricks/auto-complete.md)
 + Personalizzazione della casella in entrata{#inbox-customization}
-   + [Introduzione](inbox-customization/introduction.md)
-   + [Aggiungi colonna personalizzata](inbox-customization/add-married-column.md)
-   + [Utilizzo di un modello Sightly](inbox-customization/use-sightly-template.md)
+   + [1 - Introduzione](inbox-customization/introduction.md)
+   + [2 - Aggiungi colonna personalizzata](inbox-customization/add-married-column.md)
+   + [3 - Utilizzo del modello Sightly](inbox-customization/use-sightly-template.md)
 + Allegati modulo e-mail{#zipping-form-attachments}
-   + [Introduzione](zipping-form-attachments/introduction.md)
-   + [Allegati modulo ZIP](zipping-form-attachments/custom-process-step.md)
-   + [Allegati modulo e-mail](zipping-form-attachments/populating-list-of-documents.md)
-   + [Verificare la soluzione](zipping-form-attachments/test.md)
+   + [1 - Introduzione](zipping-form-attachments/introduction.md)
+   + [2 - Allegati modulo ZIP](zipping-form-attachments/custom-process-step.md)
+   + [3 - Allegati modulo e-mail](zipping-form-attachments/populating-list-of-documents.md)
+   + [4 - Test della soluzione](zipping-form-attachments/test.md)
 + Memorizzazione e recupero di moduli adattivi{#store-and-retrieve-af-with-2fa}
    + [Introduzione](store-and-retrieve-af-with-2fa/introduction.md)
    + [Configura origine dati](store-and-retrieve-af-with-2fa/configure-data-source.md)

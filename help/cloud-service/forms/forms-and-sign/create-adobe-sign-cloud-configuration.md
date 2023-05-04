@@ -11,9 +11,9 @@ topic: Development
 kt: 7428
 thumbnail: 332437.jpg
 exl-id: a55773a5-0486-413f-ada6-bb589315f0b1
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
@@ -25,3 +25,14 @@ La configurazione dei servizi cloud in AEM consente di creare l’integrazione t
 Il seguente video illustra i passaggi necessari per creare la configurazione dei servizi cloud per integrare AEM con Acrobat Sign
 
 >[!VIDEO](https://video.tv.adobe.com/v/332437?quality=12&learn=on)
+
+## Risoluzione dei problemi
+
+Se si verifica un errore durante la configurazione della clonazione cloud di Adobe Sign, è possibile effettuare le seguenti operazioni per risolvere il problema
+* Assicurati che l’url di reindirizzamento specificato nell’applicazione API di Acrobat Sign sia nel seguente formato
+&lt;your instance=&quot;&quot; name=&quot;&quot;>/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/&lt;container>.
+Ad esempio: https://author-p24107-e32034.adobeaemcloud.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/FormsCS. FormsCS è il nome del contenitore che conterrà la configurazione cloud
+* Assicurati che l’URL oAuth sia corretto
+* Controlla l&#39;ID client e il segreto client
+* Modalità finestra Prova in incognito
+

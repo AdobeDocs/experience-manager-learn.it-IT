@@ -1,31 +1,31 @@
 ---
 title: Passaggio del processo personalizzato per compilare le variabili dell’elenco
 description: Passaggio del processo personalizzato per popolare le variabili dell'elenco di tipo documento e stringa
-feature: Flusso di lavoro
-topic: Sviluppo
+feature: Workflow
+topic: Development
 version: 6.5
 role: Developer
 level: Beginner
 kt: kt-8063
-source-git-commit: 540e11c0861eacc795122328b2359c7db6378aec
+exl-id: 09d9eabf-4815-4159-b6c7-cf2ebc8a2df5
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '167'
 ht-degree: 1%
 
 ---
 
-
 # Passaggio processo personalizzato
 
 
-È stato implementato un passaggio di processo personalizzato per compilare le variabili del flusso di lavoro Array List. Se non conosci la creazione del bundle OSGi, [segui queste istruzioni](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+È stato implementato un passaggio di processo personalizzato per popolare le variabili del flusso di lavoro di tipo Elenco array con gli allegati e i nomi degli allegati. Questa variabile viene quindi utilizzata nel componente del flusso di lavoro Invia e-mail . Se non hai familiarità con la creazione del bundle OSGi, ti preghiamo di: [seguire queste istruzioni](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
 
 Il codice nel passaggio del processo personalizzato esegue le seguenti operazioni
 
 * Esegui una query per tutti gli allegati del modulo adattivo nella cartella payload. Il nome della cartella viene passato come argomento del processo al passaggio del processo.
 
-* Popolare la variabile del flusso di lavoro `listOfDocuments`
-* Popolare la variabile del flusso di lavoro `attachmentNames`
+* Popolare `listOfDocuments` variabile del flusso di lavoro
+* Popolare `attachmentNames` variabile del flusso di lavoro
 * Imposta il valore della variabile del flusso di lavoro (`no_of_attachments`)
 
 ```java
@@ -112,6 +112,10 @@ public class PopulateListOfDocuments implements WorkflowProcess {
 >[!NOTE]
 >
 > Assicurati di avere le seguenti variabili definite nel flusso di lavoro affinché il codice funzioni
-> *listOfDocuments* - variabile di tipo ArrayListDocuments
+> *listOfDocuments* - variabile di tipo ArrayList di documenti
 > *attachmentNames* - variabile di tipo ArrayList di String
 > *no_of_attachment* - variabile di tipo Double
+
+## Passaggi successivi
+
+[Verificare la soluzione sul sistema locale](./test.md)

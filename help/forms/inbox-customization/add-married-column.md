@@ -12,9 +12,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '311'
 ht-degree: 2%
 
 ---
@@ -88,10 +88,14 @@ return isMarried(inboxItem);
 * Aggiungi colonna selezionata alla casella in entrata e salva le modifiche
 * [Passa all’interfaccia utente di FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * [Importare il modulo di esempio](assets/snap-form.zip) selezionando _Caricamento file_ da _Crea_ menu
-* [Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
+* [Anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
 * Seleziona la _stato civile_ e invia il modulo
    [visualizza casella in entrata](http://localhost:4502/aem/inbox)
 
 L’invio del modulo attiverà il flusso di lavoro e un’attività verrà assegnata all’utente &quot;amministratore&quot;. Dovresti visualizzare un valore nella colonna Sposato come mostrato in questa schermata
 
 ![colonna](assets/married-column.PNG)
+
+## Passaggi successivi
+
+[Visualizza colonna sposata](./use-sightly-template.md)

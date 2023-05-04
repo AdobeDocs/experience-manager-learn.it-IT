@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
 last-substantial-update: 2021-04-23T00:00:00Z
-source-git-commit: 381812397fa7d15f6ee34ef85ddf0aa0acc0af42
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '672'
 ht-degree: 1%
 
 ---
@@ -119,3 +119,8 @@ Per creare il progetto, effettua le seguenti operazioni:
 * Esegui il comando `mvn clean install -PautoInstallBundle`
 Il comando precedente crea e installa il bundle nel server AEM in esecuzione su `http://localhost:4502`. Il bundle è disponibile anche sul file system all&#39;indirizzo
    `C:\AEMFormsBundles\mysite\core\target` e può essere distribuito utilizzando [Console web Felix](http://localhost:4502/system/console/bundles)
+
+## Passaggi successivi
+
+[Crea servizio OSGi](./create-osgi-service.md)
+
