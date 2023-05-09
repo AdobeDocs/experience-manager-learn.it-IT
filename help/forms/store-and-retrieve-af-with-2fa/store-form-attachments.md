@@ -1,17 +1,18 @@
 ---
 title: Memorizzare gli allegati del modulo
 description: Estrai gli allegati del modulo e archiviali in una nuova posizione nell’archivio CRX.
-feature: Moduli adattivi
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
 kt: 6537
 thumbnail: 6537.jpg
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: ec50b9b1-e28c-4d84-ae90-6a21c9700688
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '192'
 ht-degree: 1%
 
 ---
@@ -30,7 +31,7 @@ Di seguito è riportata la FileMap inviata al servlet. La chiave è il campo mod
 }
 ```
 
-Di seguito è riportato il codice che estrae gli allegati dalla richiesta e li memorizza nella cartella **/content/afattachment**
+Di seguito è riportato il codice che estrae gli allegati dalla richiesta e li memorizza in **/content/afattachment** cartella
 
 ```java
 public String storeAFAttachments(JSONObject fileMap, SlingHttpServletRequest request) {
@@ -79,3 +80,7 @@ Questa è la nuova FileMap con la posizione aggiornata degli allegati del modulo
 "guide[0].guide1[0].guideRootPanel[0].documentation[0].yourBankStatements[0].table1603552612235[0].Row1[0].tableItem11[0]": "/content/afattachments/81653de9-4967-4736-9ca3-807a11542243/BankStatement-Sept-2020.pdf"
 }
 ```
+
+## Passaggi successivi
+
+[Salvare i dati del modulo](./store-form-data.md)

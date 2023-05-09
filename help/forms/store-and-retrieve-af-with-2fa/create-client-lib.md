@@ -1,24 +1,25 @@
 ---
 title: Creare librerie client
 description: Crea clientlibrary per gestire l'evento click del pulsante "Save and Exit"
-feature: Moduli adattivi
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
 kt: 6597
 thumbnail: 6597.pg
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: c90eea73-bd44-40af-aa98-d766aa572415
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 2%
+source-wordcount: '146'
+ht-degree: 6%
 
 ---
 
 # Creare una libreria client
 
-Crea [client lib](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) che includerà il codice per richiamare il metodo `doAjaxSubmitWithFileAttachment` dell’ API `guideBridge` sull’evento clic del pulsante identificato dalla classe CSS **savebutton**.  Trasmettiamo i dati del modulo adattivo `fileMap` e il `mobileNumber` all’endpoint in ascolto su `**/bin/storeafdatawithattachments`
+Crea [libreria client](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=it) che includerà il codice per richiamare il metodo `doAjaxSubmitWithFileAttachment` del `guideBridge` API sull’evento clic del pulsante identificato dalla classe CSS **savebutton**.  Trasmettiamo i dati del modulo adattivo, `fileMap`e `mobileNumber` all&#39;endpoint che ascolta `**/bin/storeafdatawithattachments`
 
 Una volta salvati i dati del modulo, viene generato un ID applicazione univoco che viene presentato all’utente in una finestra di dialogo. Quando si chiude la finestra di dialogo, l’utente viene portato al modulo che consente loro di recuperare il modulo adattivo salvato utilizzando l’ID applicazione univoco.
 
@@ -66,6 +67,10 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> Abbiamo utilizzato [libreria javascript di bootbox](http://bootboxjs.com/examples.html) per visualizzare la finestra di dialogo
+> Abbiamo usato [libreria javascript di bootbox](http://bootboxjs.com/examples.html) per visualizzare la finestra di dialogo
 
-Le librerie client utilizzate in questo esempio possono essere [scaricate da qui](assets/client-libraries.zip)
+Le librerie client utilizzate in questo esempio possono essere [scaricato da qui](assets/client-libraries.zip)
+
+## Passaggi successivi
+
+[Verificare gli utenti con il servizio OTP](./verify-users-with-otp.md)

@@ -1,17 +1,18 @@
 ---
 title: Crea libreria client
 description: Codice libreria client per recuperare il modulo successivo da firmare
-feature: Moduli adattivi
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6907
 thumbnail: 6907.jpg
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 3c148b30-2c7d-428d-9a3c-f3067ca3a239
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 4%
+source-wordcount: '91'
+ht-degree: 3%
 
 ---
 
@@ -71,6 +72,10 @@ $(document).ready(function()
 });
 ```
 
-## Assets
+## Risorse
 
 [La clientlib può essere scaricata da qui](assets/get-next-form-client-lib.zip)
+
+## Passaggi successivi
+
+[Crea un modello di modulo personalizzato per questo caso d’uso](./create-af-template.md)

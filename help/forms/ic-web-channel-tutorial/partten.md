@@ -14,13 +14,13 @@ discoiquuid: 2ee2cea2-aefa-4d21-a258-248648f73a68
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+exl-id: 0dd8a430-9a4e-4dc7-ad75-6ad2490430f2
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 0%
+source-wordcount: '349'
+ht-degree: 1%
 
 ---
-
 
 # Configurazione del pannello di Outlook per la ritirata{#configuring-retirement-outlook-panel}
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 * Seleziona l’icona &quot;matita&quot; per modificare il testo predefinito.
 
-* Sostituisci il testo predefinito con &quot;**Prospettive sul reddito da pensione&quot;**
+* Sostituisci il testo predefinito con &quot;**Il tuo reddito di pensione Outlook&quot;**
 
 **Configurare l’area di destinazione del pannello destro**
 
@@ -54,13 +54,13 @@ ht-degree: 0%
 
 * Seleziona l’icona &quot;matita&quot; per modificare il testo predefinito.
 
-* Sostituisci il testo predefinito con &quot;**Reddito mensile stimato&quot;**
+* Sostituisci il testo predefinito con &quot;**Reddito mensile stimato di pensionamento&quot;**
 
 ## Aggiungi un frammento di documento di Outlook per il reddito da smobilizzo {#add-retirement-income-outlook-document-fragment}
 
 * Fai clic sull’icona Risorse e applica il filtro per visualizzare le risorse di tipo &quot;Frammenti documento&quot;. Trascinare il frammento di documento RetirementIncomeOutlook sull&#39;area di destinazione del pannello a sinistra.
 
-* È possibile fare riferimento a [a questa pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) all&#39;aggiunta di frammenti di documento alle aree contenuto.
+* Puoi fare riferimento a [a questa pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) durante l&#39;aggiunta di frammenti di documento alle aree contenuto.
 
 ## Aggiunta della figura del reddito mensile stimato {#adding-estimated-monthly-income-chart}
 
@@ -74,6 +74,6 @@ ht-degree: 0%
 
 ![forms65](assets/estimatedmonthlyincomechart65.PNG)
 
+## Passaggi successivi
 
-
-
+[Configura grafico a torta](./parteleven.md)

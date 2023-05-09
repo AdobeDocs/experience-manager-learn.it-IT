@@ -11,9 +11,9 @@ topic: Development
 role: User
 level: Beginner
 exl-id: 73de0ac4-ada6-4b8e-90a8-33b976032135
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
@@ -32,3 +32,8 @@ Questo modulo è associato a **bootboxjs540,storeAFWithAttachments** librerie cl
 * Completato [Modulo StoreAfWithAttachments](assets/store-af-with-attachments-form.zip) può essere scaricato e importato nell’istanza AEM.
 
 * La [Flusso di lavoro AEM associato a questo modulo](assets/workflow-model-store-af-with-attachments.zip) è necessario importarlo nell’istanza AEM affinché il modulo funzioni.
+
+
+## Passaggi successivi
+
+[Creazione del modulo per il recupero del modulo salvato](./retrieve-saved-form.md)

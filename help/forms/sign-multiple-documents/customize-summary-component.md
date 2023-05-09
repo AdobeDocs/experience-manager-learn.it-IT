@@ -1,20 +1,20 @@
 ---
 title: Personalizza componente di riepilogo
 description: Estendi il componente del passaggio di riepilogo per includere la possibilità di passare al modulo successivo nel pacchetto.
-feature: Moduli adattivi
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6894
 thumbnail: 6894.jpg
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: fb68579d-241c-414d-92f4-13194f4d1923
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 2%
+source-wordcount: '185'
+ht-degree: 1%
 
 ---
-
 
 # Personalizza passaggio di riepilogo
 
@@ -33,7 +33,7 @@ Il nuovo componente si basa sul componente di riepilogo predefinito.
 È stato aggiunto un pulsante per passare al modulo successivo per la firma
 ![template-code](assets/template-code.PNG)
 
-Il summary.jsp ha il seguente codice. Fa riferimento alla libreria client identificata dalla categoria id **getnextform**
+Il summary.jsp ha il seguente codice. Contiene un riferimento alla libreria client identificata dall’ID categoria **getnextform**
 
 ```java
 <%--
@@ -44,8 +44,10 @@ Il summary.jsp ha il seguente codice. Fa riferimento alla libreria client identi
 <ui:includeClientLib categories="getnextform"/>
 ```
 
-## Assets
+## Risorse
 
 Il componente di riepilogo personalizzato può essere [scaricato da qui](assets/custom-summary-step.zip)
 
+## Passaggi successivi
 
+[Ottenere il modulo successivo per la firma](./create-client-lib.md)

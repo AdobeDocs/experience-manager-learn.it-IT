@@ -15,10 +15,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: d742d77b-a064-46e8-862a-2d3e1cc56f63
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 0%
+source-wordcount: '123'
+ht-degree: 1%
 
 ---
 
@@ -34,3 +34,7 @@ Creazione di un modello di documento per il canale web in AEM Forms 6.5
 Il modello avrà aree/segnaposto di destinazione che conterranno vari tipi di frammenti di documenti. Ad esempio, un modello può avere aree di destinazione per i loghi e un’altra area di destinazione per il contenuto di testo.
 
 Una volta creato il modello di documento del canale web, puoi creare documenti di comunicazione interattiva basati sul modello.
+
+## Passaggi successivi
+
+[Crea frammento di documento](./partfive.md)

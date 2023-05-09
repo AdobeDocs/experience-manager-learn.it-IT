@@ -16,9 +16,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 4e64aa99-0b1c-49e9-95a7-d254017b80f4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -36,3 +36,7 @@ Il modello dati del modulo dipende da un’origine dati configurata correttament
 Modello dati modulo è la base per tutte le comunicazioni interattive. L’operazione Get/Read del modello dati del modulo recupera i dati dall’origine dati back-end e viene utilizzata per compilare il documento di comunicazione interattiva.
 
 Dopo aver creato il modello dati modulo, è possibile utilizzarlo come base per la creazione di frammenti di documento e documenti di comunicazione interattiva.
+
+## Passaggi successivi
+
+[Creare un modello utilizzando designer](./create-xdp-layout-using-forms-designer.md)
