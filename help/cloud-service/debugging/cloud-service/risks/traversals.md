@@ -11,10 +11,10 @@ hide: true
 index: false
 thumbnail: kt-10427.jpg
 exl-id: 8fcc9364-b84c-4458-82e2-66b47429cd4b
-source-git-commit: 48943df64d9793066f8f19497ef42f8aa80e5795
+source-git-commit: a439c72a7b080633d3777eefad3b47f01c92b970
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 3%
+source-wordcount: '826'
+ht-degree: 10%
 
 ---
 
@@ -108,7 +108,7 @@ La riduzione degli avvisi traversali può essere affrontata in tre semplici pass
 
 ## 1. Analizzare{#analyze}
 
-In primo luogo, identifica quali servizi AEM Publish presentano avvisi trasversali. A questo scopo, da Cloud Manager, [scarica servizi di pubblicazione&quot; `aemerror` logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target=&quot;_blank&quot;} da tutti gli ambienti (sviluppo, stage e produzione) per il passato __tre giorni__.
+In primo luogo, identifica quali servizi AEM Publish presentano avvisi trasversali. A questo scopo, da Cloud Manager, [scarica servizi di pubblicazione&quot; `aemerror` logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target="_blank"} da tutti gli ambienti (sviluppo, stage e produzione) del passato __tre giorni__.
 
 ![Scaricare AEM registri as a Cloud Service](./assets/traversals/download-logs.jpg)
 
@@ -159,14 +159,14 @@ Una volta scoperte le query offensive e il relativo codice di chiamata, è neces
 
 __Modificare la query__ per aggiungere nuove restrizioni alla query che risolvono le restrizioni esistenti all&#39;indice. Se possibile, preferisci modificare la query alla modifica degli indici.
 
-+ [Scopri come ottimizzare le prestazioni delle query](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target=&quot;_blank&quot;}
++ [Scopri come ottimizzare le prestazioni delle query](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"}
 
 ### Regolare l&#39;indice
 
 __Modificare (o creare) un indice AEM__ in modo che le restrizioni esistenti alla query siano risolvibili negli aggiornamenti dell&#39;indice.
 
-+ [Scopri come ottimizzare gli indici esistenti](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target=&quot;_blank&quot;}
-+ [Scopri come creare indici](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#create-a-new-index){target=&quot;_blank&quot;}
++ [Scopri come ottimizzare gli indici esistenti](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"}
++ [Scopri come creare indici](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#create-a-new-index){target="_blank"}
 
 ## 3. Verifica{#verify}
 
@@ -174,9 +174,9 @@ __Modificare (o creare) un indice AEM__ in modo che le restrizioni esistenti all
 
 ![Spiega query](./assets/traversals/verify.gif)
 
-Solo se [adeguamenti della query](#adjust-the-query) La query può essere testata direttamente su AEM as a Cloud Service tramite Developer Console [Spiega query](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries){target=&quot;_blank&quot;}. La funzione Query di spiegazione viene eseguita sul servizio Author di AEM, tuttavia, poiché le definizioni degli indici sono le stesse nei servizi Author e Publish, è sufficiente convalidare le query rispetto al servizio Author di AEM.
+Solo se [adeguamenti della query](#adjust-the-query) La query può essere testata direttamente su AEM as a Cloud Service tramite Developer Console [Spiega query](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=it#queries){target="_blank"}. La funzione Query di spiegazione viene eseguita sul servizio Author di AEM, tuttavia, poiché le definizioni degli indici sono le stesse nei servizi Author e Publish, è sufficiente convalidare le query rispetto al servizio Author di AEM.
 
-Se [aggiustamenti dell&#39;indice](#adjust-the-index) vengono effettuati, l&#39;indice deve essere distribuito AEM as a Cloud Service. Con le regolazioni dell&#39;indice implementate, la Console per sviluppatori [Spiega query](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)È possibile utilizzare {target=&quot;_blank&quot;} per eseguire e ottimizzare ulteriormente la query.
+Se [aggiustamenti dell&#39;indice](#adjust-the-index) vengono effettuati, l&#39;indice deve essere distribuito AEM as a Cloud Service. Con le regolazioni dell&#39;indice implementate, la Console per sviluppatori [Spiega query](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=it#queries){target="_blank"} può essere utilizzato per eseguire e ottimizzare ulteriormente la query.
 
 In ultima analisi, tutte le modifiche (query e codice) sono salvate in Git e distribuite in AEM as a Cloud Service utilizzando Cloud Manager. Una volta distribuiti, verifica i percorsi del codice associati agli avvisi traversal originali e verifica che gli avvisi di attraversamento non siano più visualizzati nella pagina `aemerror` registro.
 
@@ -191,7 +191,7 @@ Consulta queste altre risorse utili per comprendere gli indici AEM, gli avvisi d
    <div class="card">
        <div class="card-image">
            <figure class="image is-16by9">
-               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-search-and-indexing.html" title="Cloud 5 - Ricerca e indicizzazione" tabindex="-1"><img class="is-bordered-r-small" src="../../../cloud-5/imgs/009-thumb.png" alt="Cloud 5 - Ricerca e indicizzazione"></a>
+               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-search-and-indexing.html" title="Cloud 5 - Ricerca e indicizzazione" tabindex="-1"><img class="is-bordered-r-small" src="../../../expert-resources/cloud-5/imgs/009-thumb.png" alt="Cloud 5 - Ricerca e indicizzazione"></a>
            </figure>
        </div>
        <div class="card-content is-padded-small">
@@ -199,7 +199,7 @@ Consulta queste altre risorse utili per comprendere gli indici AEM, gli avvisi d
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-search-and-indexing.html" title="Cloud 5 - Ricerca e indicizzazione">Cloud 5 - Ricerca e indicizzazione</a></p>
                <p class="is-size-6">Il team di Cloud 5 mostra come esplora i dettagli e le uscite della ricerca e dell’indicizzazione su AEM as a Cloud Service.</p>
                <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-search-and-indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Per saperne di più</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                </a>
            </div>
        </div>
@@ -212,17 +212,17 @@ Consulta queste altre risorse utili per comprendere gli indici AEM, gli avvisi d
    <div class="card">
        <div class="card-image">
            <figure class="image is-16by9">
-               <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html" title="Ricerca e indicizzazione dei contenuti" tabindex="-1">
+               <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=it" title="Ricerca e indicizzazione dei contenuti" tabindex="-1">
                    <img class="is-bordered-r-small" src="./assets/traversals/resources--docs.png" alt="Ricerca e indicizzazione dei contenuti">
                </a>
            </figure>
        </div>
        <div class="card-content is-padded-small">
            <div class="content">
-               <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html" title="Ricerca e indicizzazione dei contenuti">Documentazione sulla ricerca e l’indicizzazione dei contenuti</a></p>
+               <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=it" title="Ricerca e indicizzazione dei contenuti">Documentazione sulla ricerca e l’indicizzazione dei contenuti</a></p>
                <p class="is-size-6">Scopri come creare e gestire gli indici in AEM as a Cloud Service.</p>
-               <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Per saperne di più</span>
+               <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=it" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                </a>
            </div>
        </div>
@@ -244,7 +244,7 @@ Consulta queste altre risorse utili per comprendere gli indici AEM, gli avvisi d
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html" title="Modernizzazione degli indici Oak">Modernizzazione degli indici Oak</a></p>
                <p class="is-size-6">Scopri come convertire le definizioni dell'indice Oak AEM 6 per renderle AEM compatibili con l'as a Cloud Service e come mantenere gli indici in corso.</p>
                <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Per saperne di più</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                </a>
            </div>
        </div>
@@ -266,7 +266,7 @@ Consulta queste altre risorse utili per comprendere gli indici AEM, gli avvisi d
                <p class="headline is-size-6 has-text-weight-bold"><a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html" title="Documentazione sulla definizione dell'indice">Documentazione dell'indice Lucene</a></p>
                <p class="has-ellipsis is-size-6">L'indice Apache Oak Jackrabbit Lucene fa riferimento che documenta tutte le configurazioni dell'indice Lucene supportate.</p>
                <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Per saperne di più</span>
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                </a>
            </div>
        </div>
