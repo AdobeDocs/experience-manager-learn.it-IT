@@ -6,10 +6,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 8bb7771effc95c70a9ddeffb1c54a1c2282e06dd
+source-git-commit: c2e105123302ae37dc7cfca9533110a655e83858
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 26%
+source-wordcount: '395'
+ht-degree: 24%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 26%
    + [Cartelle di base](configuring/baseline-folders.md)
    + [Autorizzazioni di base](configuring/baseline-permissions.md)
    + [Assegnazione dei tag](configuring/tagging.md)
-   + [Schemi metadati](configuring/metadata-schemas.md)
+   + [Schemi di metadati](configuring/metadata-schemas.md)
    + [Profili metadati](configuring/metadata-profiles.md)
    + [Schemi di cartelle di metadati](configuring/metadata-folder-schemas.md)
    + [Barra di ricerca per l’amministrazione delle risorse](configuring/assets-admin-search-rail.md)
@@ -104,21 +104,26 @@ ht-degree: 26%
 
 + Dynamic Media{#dynamic-media}
    + [Panoramica di Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
-   + [Ritaglio avanzato](dynamic-media/smart-crop-feature-video-use.md)
-   + [Frammenti di esperienza](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
-   + [Video interattivo](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
-   + [Lettore video](dynamic-media/dynamic-media-video-player-feature-video-use.md)
-   + [Video a 360°](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
-   + [Miniature video personalizzate](dynamic-media/dynamic-media-video-thumbnails-feature-video-use.md)
-   + [Nitidezza immagine](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
-   + [Gestione colore](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
-   + [Visualizzatori](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
-   + [Visualizzatori per immagini panoramiche e verticali](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
-   + [Visualizzatori con Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
+   + [Modificatori di immagini e Smart imaging](dynamic-media/dynamic-media-snapshot.md)
+   + Immagini {#images}
+      + [Ritaglio avanzato](dynamic-media/smart-crop-feature-video-use.md)
+      + [Nitidezza immagine](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
+      + [Gestione colore](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
+   + Utilizzo con AEM Sites {#dm-with-aem-sites}
+      + [Frammenti di esperienza](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
+      + [Componenti core Dynamic Media](dynamic-media/dynamic-media-core-components.md)
+   + Video {#video}
+      + [Video interattivo](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
+      + [Lettore video](dynamic-media/dynamic-media-video-player-feature-video-use.md)
+      + [Video a 360°](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
+      + [Miniature video personalizzate](dynamic-media/dynamic-media-video-thumbnails-feature-video-use.md)
+      + [Video di ritaglio avanzato Dynamic Media](dynamic-media/dynamic-media-smart-crop-video.md)
+   + Visualizzatori {#viewers}
+      + [Visualizzatori](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
+      + [Visualizzatori per immagini panoramiche e verticali](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
+      + [Visualizzatori con Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
    + [Applicazione desktop Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
    + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + [Video di ritaglio avanzato Dynamic Media](dynamic-media/dynamic-media-smart-crop-video.md)
-   + [Componenti core Dynamic Media](dynamic-media/dynamic-media-core-components.md)
 
    + Esercitazioni {#tutorials}
       + [Creazione di set carosello](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)

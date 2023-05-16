@@ -7,9 +7,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: c2e105123302ae37dc7cfca9533110a655e83858
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Questo video descrive come gestire e accedere ai contenuti multimediali utilizza
 * Copiare gli URL nelle immagini e nei visualizzatori reattivi
 * Varianti di ritaglio avanzato per gli URL
 
-## Dynamic Media con AEM Sites e qualsiasi altro CMS
+## Utilizzare con AEM Sites
 
 >[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
 
@@ -48,7 +48,7 @@ Questo video descrive come i contenuti multimediali vengono gestiti in Adobe Exp
 * Download locale con predefiniti immagine
 * Creazione e pubblicazione di un banner interattivo
 
-## Dynamic Media per la creazione di raccolte di file multimediali diversi e visualizzatore personalizzato
+## Creare una raccolta di file multimediali diversi
 
 >[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
 
@@ -63,7 +63,7 @@ Questo video descrive il semplice processo di creazione di una raccolta di risor
 * Crea set di file multimediali diversi da set 360 gradi, video e foto
 * Modificare e utilizzare un visualizzatore di file multimediali diversi personalizzato
 
-## Predefiniti immagini Dynamic Media
+## Predefiniti immagini
 
 >[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
 
@@ -74,7 +74,7 @@ Questo video descrive come vengono creati i predefiniti per immagini e cos’è 
 * Usa sempre nitidezza
 * Campo modificatore URL per aggiungere ulteriori comandi per il ridimensionamento del predefinito immagine
 
-## Modificatori URL avanzati Dynamic Media
+## Modificatori URL avanzati
 
 >[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
@@ -86,7 +86,7 @@ Questo video descrive come andare oltre il ridimensionamento delle immagini per 
 * Ritaglio in un percorso immagine
 * Creazione di un modello di testo da un file Photoshop
 
-## Controllo Dynamic Media delle dimensioni dei file JPEG in Kilobytes
+## Gestione delle dimensioni dei file JPEG
 
 >[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 
@@ -97,13 +97,13 @@ Questo video descrive come andare oltre il ridimensionamento delle immagini per 
 
 Bilancia la qualità dell&#39;immagine jpeg rispetto alle dimensioni del file risultante (in kilobyte) per migliorare la velocità di caricamento della pagina, utilizzando 2 comandi per regolare le impostazioni di compressione jpeg. QLT definisce la qualità dell&#39;immagine regolando le impostazioni di qualità della compressione jpeg. Il comando Dimensione di JPEG consente di specificare la dimensione del file da ottenere utilizzando la compressione.
 
-## Aggiungere sottotitoli codificati in video Dynamic Media
+## Sottotitoli
 
 >[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
 
 Aggiungi facilmente i sottotitoli codificati al video Dynamic Media aggiungendo l’URL della copia per puntare a un ulteriore documento del file sottotitoli codificati, un file sidecar web.VTT, contenente le informazioni CC per qualsiasi video.
 
-## Utilizzo della nitidezza delle immagini con AEM Dynamic Media
+## Nitidezza immagine
 
 Questo video spiega perché la nitidezza di un&#39;immagine è fondamentale per mantenere la fedeltà delle immagini e come utilizzare impostazioni avanzate per creare l&#39;immagine perfetta.
 
