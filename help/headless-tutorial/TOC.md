@@ -7,10 +7,10 @@ sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
 kt: 2963
 index: y
-source-git-commit: 31948793786a2c430533d433ae2b9df149ec5fc0
+source-git-commit: 12b3888552d5a131628dabf380840f0586798ea5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '298'
+ht-degree: 19%
 
 ---
 
@@ -45,6 +45,11 @@ ht-degree: 0%
       + [3 - Esplorare l’API GraphQL AEM](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
       + [4 - Query GraphQL persistenti](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
       + [5 - Integrazione delle applicazioni client](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
+   + Prima esercitazione headless{#headless-first}
+      + [Panoramica](./graphql/headless-first-tutorial/overview.md)
+      + [1 - Modellazione dei contenuti](./graphql/headless-first-tutorial/1-content-modeling.md)
+      + [2 - AEM API headless e React](./graphql/headless-first-tutorial/2-aem-headless-apis-and-react.md)
+      + [3 - Componenti complessi](./graphql/headless-first-tutorial/3-complex-components.md)
 + Implementazioni{#deployments}
    + [Panoramica](./graphql/deployment/overview.md)
    + [App a pagina singola](./graphql/deployment/spa.md)
