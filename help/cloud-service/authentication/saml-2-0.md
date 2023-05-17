@@ -10,9 +10,9 @@ kt: 9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: d049eb78e2302aa97de0d228b65fba842ad38b74
+source-git-commit: f6a9e7b32d876a8cd5ce7bf6a2e13aeb5faaf35b
 workflow-type: tm+mt
-source-wordcount: '2943'
+source-wordcount: '3123'
 ht-degree: 2%
 
 ---
@@ -138,8 +138,21 @@ _La creazione di un keystore per Authentication-service è necessaria quando il 
    + A [keystore pubblico/privato installato in questo keystore](#install-aem-public-private-key-pair) solo se è richiesta la crittografia di asserzione AuthnRequest signed/SAML.
    + Se questa integrazione SAML supporta l’logout, ma non l’asserzione AuthnRequest sign/SAML, è sufficiente un keystore vuoto.
 1. Seleziona __Salva e chiudi__.
-1. Seleziona __servizio di autenticazione__ utente e seleziona __Attiva__ dalla barra delle azioni superiore.
+1. Crea un pacchetto contenente gli aggiornamenti __servizio di autenticazione__ utente.
 
+   _Utilizza la seguente soluzione temporanea utilizzando i pacchetti:_
+
+   1. Passa a __Strumenti > Implementazione > Pacchetti__.
+   1. Creare un pacchetto
+      + Nome pacchetto: `Authentication Service`
+      + Versione: `1.0.0`
+      + Gruppo: `com.your.company`
+   1. Modificare il nuovo __Archivio chiavi del servizio di autenticazione__ pacchetto.
+   1. Seleziona la __Filtri__ e aggiungere un filtro per il percorso principale `/home/users/system/cq:services/internal/security/<AUTHENTICATION SERVICE UUID>/keystore`.
+      + La `<AUTHENTICATION SERVICE UUID>` si trova passando a __Strumenti > Protezione > Utenti__ e selezionando __servizio di autenticazione__ utente. L’UUID è l’ultima parte dell’URL.
+   1. Seleziona __Fine__ e poi __Salva__.
+   1. Seleziona la __Crea__ per __Archivio chiavi del servizio di autenticazione__ pacchetto.
+   1. Una volta generato, seleziona __Altro__ > __Replicare__ per attivare l&#39;archivio chiavi del servizio di autenticazione in AEM Publish.
 
 ## Installa AEM coppia di chiavi pubblica/privata{#install-aem-public-private-key-pair}
 
@@ -212,7 +225,21 @@ La firma AuthnRequest e la crittografia dell’asserzione SAML sono facoltative,
 1. Il certificato appena aggiunto viene visualizzato sopra il __Aggiungi certificato dal file CRT__ sezione .
    + Prendi nota del __alias__ come viene utilizzato nella [Configurazione OSGi del gestore di autenticazione SAML 2.0](#saml-20-authentication-handler-osgi-configuration)
 1. Seleziona __Salva e chiudi__.
-1. Seleziona __servizio di autenticazione__ utente e seleziona __Attiva__ dalla barra delle azioni superiore.
+1. Crea un pacchetto contenente gli aggiornamenti __servizio di autenticazione__ utente.
+
+   _Utilizza la seguente soluzione temporanea utilizzando i pacchetti:_
+
+   1. Passa a __Strumenti > Implementazione > Pacchetti__.
+   1. Creare un pacchetto
+      + Nome pacchetto: `Authentication Service`
+      + Versione: `1.0.0`
+      + Gruppo: `com.your.company`
+   1. Modificare il nuovo __Archivio chiavi del servizio di autenticazione__ pacchetto.
+   1. Seleziona la __Filtri__ e aggiungere un filtro per il percorso principale `/home/users/system/cq:services/internal/security/<AUTHENTICATION SERVICE UUID>/keystore`.
+      + La `<AUTHENTICATION SERVICE UUID>` si trova passando a __Strumenti > Protezione > Utenti__ e selezionando __servizio di autenticazione__ utente. L’UUID è l’ultima parte dell’URL.
+   1. Seleziona __Fine__ e poi __Salva__.
+   1. Seleziona la __Crea__ per __Archivio chiavi del servizio di autenticazione__ pacchetto.
+   1. Una volta generato, seleziona __Altro__ > __Replicare__ per attivare l&#39;archivio chiavi del servizio di autenticazione in AEM Publish.
 
 ## Configurare il gestore di autenticazione SAML 2.0{#configure-saml-2-0-authentication-handler}
 
