@@ -10,9 +10,9 @@ kt: 9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: d049eb78e2302aa97de0d228b65fba842ad38b74
 workflow-type: tm+mt
-source-wordcount: '2961'
+source-wordcount: '2943'
 ht-degree: 2%
 
 ---
@@ -132,7 +132,6 @@ L&#39;archivio locale globale è configurato con il certificato pubblico dell&#3
 _La creazione di un keystore per Authentication-service è necessaria quando il [Proprietà di configurazione OSGi del gestore di autenticazione SAML 2.0 `handleLogout` è impostato su `true`](#saml-20-authenticationsaml-2-0-authentication) o quando [Descrizione dell&#39;asserzione AuthnRequest signed/SAML](#install-aem-public-private-key-pair) obbligatorio_
 
 1. Accedi ad AEM Author come amministratore AEM per caricare la chiave privata.
-1. Passa a __Strumenti > Protezione > Archivio fonti attendibili__, quindi seleziona __servizio di autenticazione__ utente e seleziona __Proprietà__ dalla barra delle azioni superiore.
 1. Passa a __Strumenti > Protezione > Utenti__, quindi seleziona __servizio di autenticazione__ utente e seleziona __Proprietà__ dalla barra delle azioni superiore.
 1. Seleziona la __Keystore__ scheda .
 1. Crea o apri il keystore. Se crei un keystore, mantieni la password al sicuro.
