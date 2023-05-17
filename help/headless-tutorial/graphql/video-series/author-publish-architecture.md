@@ -8,10 +8,11 @@ role: Developer
 level: Beginner
 kt: 7873
 thumbnail: 333296.jpg
+last-substantial-update: 2023-05-17T00:00:00Z
 exl-id: 7d5f5edb-10e7-43ec-a4e7-4cee8ddba685
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: de3724281bc34ebf0c24b2bb5e76b71bcc4ad5a0
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '71'
 ht-degree: 0%
 
 ---
@@ -24,8 +25,5 @@ In questo video:
 
 + Comprendere l’architettura di authoring e pubblicazione di AEM e come viene pubblicato il contenuto
 + Scopri le best practice per la distribuzione headless con un ambiente AEM Publish
-+ Scopri come utilizzare l’ambiente di authoring come anteprima per un’applicazione
-
++ 
 >[!VIDEO](https://video.tv.adobe.com/v/333296?quality=12&learn=on)
-
-_Scarica la [Raccolta Postman](./assets/aem-headless-video-series.postman_collection.json) utilizzato in tutta la AEM serie video headless._
