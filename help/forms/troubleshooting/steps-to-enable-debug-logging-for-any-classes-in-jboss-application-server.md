@@ -1,6 +1,6 @@
 ---
-title: Passaggi per abilitare la registrazione di debug per qualsiasi classe nel server applicazioni JBoss
-description: Configura la registrazione di debug per la risoluzione dei problemi relativi al server applicazioni JBoss
+title: Passaggi per abilitare la registrazione di debug per tutte le classi nel server applicazioni JBoss
+description: Configurare la registrazione di debug per la risoluzione dei problemi relativi al server applicazioni JBoss
 type: Troubleshooting
 role: Admin
 level: Intermediate

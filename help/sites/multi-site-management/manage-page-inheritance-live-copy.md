@@ -1,6 +1,6 @@
 ---
-title: Gestire l’ereditarietà di una live copy su una pagina
-description: Scopri come gestire l’ereditarietà tra una live copy e la relativa blueprint a livello di pagina
+title: Gestire l’ereditarietà di una Live Copy su una pagina
+description: Scopri come gestire l’ereditarietà tra una Live Copy e la relativa blueprint a livello di pagina
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ---
 
-# Gestire l’ereditarietà di una live copy su una pagina {#manage-live-copy-page}
+# Gestire l’ereditarietà di una Live Copy su una pagina {#manage-live-copy-page}
 
-Scopri come gestire l’ereditarietà tra una live copy e la relativa blueprint a livello di pagina.
+Scopri come gestire l’ereditarietà tra una Live Copy e la relativa blueprint a livello di pagina.
 >[!VIDEO](https://video.tv.adobe.com/v/36679?quality=12&learn=on)

@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di miniature video personalizzate con Dynamic Media AEM
+title: Utilizzo della miniatura video personalizzata con AEM Dynamic Media
 description: Le miniature video personalizzate di AEM Assets consentono agli autori di selezionare una miniatura appropriata da un set di miniature generate. Il numero di miniature generate per un video può essere facilmente personalizzato.
 feature: Video Profiles
 version: 6.4, 6.5
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 ---
 
-# Utilizzo di miniature video personalizzate con Dynamic Media AEM{#using-custom-video-thumbnail-with-aem-dynamic-media}
+# Utilizzo della miniatura video personalizzata con AEM Dynamic Media{#using-custom-video-thumbnail-with-aem-dynamic-media}
 
 Le miniature video personalizzate di AEM Assets consentono agli autori di selezionare una miniatura appropriata da un set di miniature generate. Il numero di miniature generate per un video può essere facilmente personalizzato.
 

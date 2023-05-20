@@ -1,6 +1,6 @@
 ---
-title: Convalida del Dispatcher Cloud 5 AEM
-description: Questo episodio si concentra un po' più in profondità sulla convalida del dispatcher e sulle sfumature che fornisce.
+title: Cloud 5 Convalida del Dispatcher AEM
+description: Questo episodio si concentra un po’ più a fondo sulla convalida del dispatcher e sulle sfumature che offre.
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ---
 
-# Convalida del Dispatcher Cloud 5 AEM
+# Cloud 5 Convalida del Dispatcher AEM
 
 Un rapido esempio di come utilizzare la convalida del dispatcher nei flussi di lavoro di sviluppo AEM.
 
@@ -24,7 +24,7 @@ Un rapido esempio di come utilizzare la convalida del dispatcher nei flussi di l
 
 ## Contenuto trattato in questo video
 
-+ Panoramica di dispatcher e SDK
++ Panoramica di Dispatcher e SDK
 + [Strumenti di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html)
-+ Risoluzione dei problemi
-+ Utilizzo dei registri e delle modalità di esecuzione del dispatcher per il debug
++ Risoluzione dei problemi di errore
++ Utilizzo dei registri del dispatcher e delle modalità di esecuzione per il debug

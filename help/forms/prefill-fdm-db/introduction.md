@@ -1,6 +1,6 @@
 ---
 title: Precompilare il modulo utilizzando il modello dati del modulo
-description: Precompilare il modulo adattivo utilizzando l’attributo di richiesta del modello di dati del modulo
+description: Precompila il modulo adattivo utilizzando l’attributo di richiesta del modello di dati del modulo
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 4419
@@ -19,13 +19,13 @@ ht-degree: 2%
 
 # Precompilare il modulo utilizzando il modello dati del modulo
 
-Imparerai a utilizzare l’attributo di richiesta del modello dati del modulo per recuperare i dati per compilare il modulo adattivo.
-Al termine del corso avrai appreso quanto segue.
+Imparerai a utilizzare l’attributo di richiesta del modello di dati del modulo per recuperare i dati per compilare il modulo adattivo.
+Al completamento di questo corso avrai imparato quanto segue.
 
 * Crea modello dati modulo basato su RDBMS
 * Crea associazione tra 2 entità
-* Compilare la tabella con i dati restituiti da _get_ servizio del modello dati modulo
-* Utilizza l’attributo di richiesta di Form Data Model
+* Popolare la tabella con i dati restituiti da _ottenere_ servizio del modello dati modulo
+* Usa attributo di richiesta del modello dati modulo
 
 Il video seguente offre una panoramica del corso
 >[!VIDEO](https://video.tv.adobe.com/v/36387?quality=12&learn=on)
@@ -33,8 +33,8 @@ Il video seguente offre una panoramica del corso
 ## Prerequisiti
 
 * Istanza di lavoro di AEM Forms
-* Familiare con il database MySQL e il workbench MySQL
-* Alcune esperienze nella creazione di Forms adattivo
+* Conoscenza del database MySQL e del workbench MySQL
+* Esperienza nella creazione di un Forms adattivo
 
 ## Passaggi successivi
 

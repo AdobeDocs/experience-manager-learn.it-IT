@@ -1,6 +1,6 @@
 ---
 title: Invio di documenti Workfront e collegamento di risorse Assets Essentials
-description: Scopri come inviare documenti Workfront ad Assets Essentials e collegare risorse Assets Essentials a Workfront.
+description: Scopri come inviare documenti Workfront a Assets Essentials e collegare risorse Assets Essentials a Workfront.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management, Integrations
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Invio di documenti e collegamento di risorse
 
-Scopri come inviare documenti Workfront ad Assets Essentials e collegare risorse Assets Essentials a Workfront.
+Scopri come inviare documenti Workfront a Assets Essentials e collegare risorse Assets Essentials a Workfront.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336255?quality=12&learn=on)

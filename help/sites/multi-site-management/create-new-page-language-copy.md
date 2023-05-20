@@ -1,6 +1,6 @@
 ---
-title: Creare una pagina della copia in lingua
-description: Scopri come creare una pagina in una copia in lingua esistente e tradurla in un’altra copia in lingua.
+title: Creare una pagina copia in lingua
+description: Scopri come creare una pagina in una copia in lingua esistente e tradurre il contenuto in un’altra copia in lingua.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -20,8 +20,8 @@ ht-degree: 0%
 
 ---
 
-# Creare una pagina della copia in lingua {#create-language-copy-page}
+# Creare una pagina copia in lingua {#create-language-copy-page}
 
-Scopri come creare una pagina in una copia in lingua esistente e tradurla in un’altra copia in lingua.
+Scopri come creare una pagina in una copia in lingua esistente e tradurre il contenuto in un’altra copia in lingua.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36682?quality=12&learn=on)

@@ -1,40 +1,40 @@
 ---
-title: Debug degli strumenti di Dispatcher
-description: Dispatcher Tools fornisce un ambiente Apache Web Server containerizzato che può essere utilizzato per simulare AEM come Dispatcher del servizio AEM Publish di Cloud Services localmente. Il debug dei registri e dei contenuti della cache degli strumenti di Dispatcher può essere fondamentale per garantire che l’applicazione AEM end-to-end e le configurazioni di cache e sicurezza di supporto siano corrette.
+title: Strumenti di debug di Dispatcher
+description: Gli strumenti di Dispatcher forniscono un ambiente Apache Web Server containerizzato che può essere utilizzato per simulare in locale Dispatcher del servizio di pubblicazione AEM di AEM as a Cloud Services. Il debug dei registri e dei contenuti della cache degli strumenti di Dispatcher può essere fondamentale per garantire la correttezza dell’applicazione AEM end-to-end e delle configurazioni di cache e sicurezza di supporto.
 feature: Dispatcher
 kt: 5918
 topic: Development
 role: Developer
 level: Beginner, Intermediate
-source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
+exl-id: f0adf7a6-c7c2-449a-9fa5-402c54b812e5
+source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
 
 ---
 
+# Strumenti di debug di Dispatcher
 
-# Debug degli strumenti di Dispatcher
+Gli strumenti di Dispatcher forniscono un ambiente Apache Web Server containerizzato che può essere utilizzato per simulare in locale Dispatcher del servizio di pubblicazione AEM di AEM as a Cloud Services.
 
-Dispatcher Tools fornisce un ambiente Apache Web Server containerizzato che può essere utilizzato per simulare AEM come Dispatcher del servizio AEM Publish di Cloud Services localmente.
-
-Il debug dei registri e dei contenuti della cache degli strumenti di Dispatcher può essere fondamentale per garantire che l’applicazione AEM end-to-end e le configurazioni di cache e sicurezza di supporto siano corrette.
+Il debug dei registri e dei contenuti della cache degli strumenti di Dispatcher può essere fondamentale per garantire la correttezza dell’applicazione AEM end-to-end e delle configurazioni di cache e sicurezza di supporto.
 
 >[!NOTE]
 >
->Poiché gli strumenti di Dispatcher sono basati su contenitori, ogni volta che vengono riavviati vengono distrutti i registri precedenti e il contenuto della cache.
+>Poiché Dispatcher Tools è basato su contenitori, ogni volta che viene riavviato, i registri e i contenuti della cache precedenti vengono eliminati.
 
 ## Registri degli strumenti di Dispatcher
 
-I registri degli strumenti del Dispatcher sono disponibili tramite il comando `stdout` o `bin/docker_run` oppure con ulteriori dettagli nel contenitore Docker all’indirizzo `/etc/https/logs`.
+I registri degli strumenti di Dispatcher sono disponibili tramite `stdout` o `bin/docker_run` o con maggiori dettagli, disponibili nel contenitore Docker all’indirizzo `/etc/https/logs`.
 
-Per istruzioni su come accedere direttamente ai registri del contenitore Docker degli strumenti di Dispatcher, consulta [Log di Dispatcher](./logs.md#dispatcher-logs) .
+Consulta [Registri di Dispatcher](./logs.md#dispatcher-logs) per istruzioni su come accedere direttamente ai registri del contenitore Docker degli strumenti di Dispatcher.
 
-## Cache degli strumenti del dispatcher
+## Cache degli strumenti di Dispatcher
 
 ### Accesso ai registri nel contenitore Docker
 
-La cache del Dispatcher può accedere direttamente nel contenitore Docker all’indirizzo ` /mnt/var/www/html`.
+La cache di Dispatcher può accedere direttamente nel contenitore Docker all’indirizzo ` /mnt/var/www/html`.
 
 ```shell
 $ docker ps
@@ -52,9 +52,9 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 /# exit
 ```
 
-### Copiare i log Docker nel file system locale
+### Copia dei registri Docker nel file system locale
 
-I registri del Dispatcher possono essere copiati dal contenitore Docker in `/mnt/var/www/html` al file system locale per essere ispezionati utilizzando gli strumenti preferiti. Questa è una copia point-in-time e non fornisce aggiornamenti in tempo reale alla cache.
+I registri di Dispatcher possono essere copiati fuori dal contenitore Docker in `/mnt/var/www/html` nel file system locale per l&#39;ispezione con gli strumenti preferiti. Tieni presente che si tratta di una copia point-in-time e non fornisce aggiornamenti in tempo reale alla cache.
 
 ```shell
 $ docker ps
@@ -66,4 +66,3 @@ CONTAINER ID        IMAGE                                       COMMAND         
 $ docker cp -L <CONTAINER ID>:/mnt/var/www/html cache 
 $ cd cache
 ```
-

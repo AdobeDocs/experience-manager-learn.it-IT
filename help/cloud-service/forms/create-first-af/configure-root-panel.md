@@ -1,6 +1,6 @@
 ---
-title: Configurare il pannello principale
-description: Aggiungi i pannelli secondari al pannello principale.
+title: Configura pannello principale
+description: Aggiungete i pannelli secondari al pannello principale.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ---
 
-# Configurare il pannello principale
+# Configura pannello principale
 
 Aggiungi i pannelli secondari al pannello principale e configura il layout dei pannelli secondari.
 

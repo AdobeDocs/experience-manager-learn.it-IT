@@ -1,6 +1,6 @@
 ---
-title: Creare un profilo di campagna utilizzando il modello dati del modulo
-description: Passaggi coinvolti nella creazione di un profilo Adobe Campaign Standard tramite AEM Forms Form Data Model
+title: Creare un profilo di Campaign utilizzando il modello dati del modulo
+description: Passaggi necessari per la creazione del profilo Adobe Campaign Standard tramite AEM Forms Form Data Model
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -14,13 +14,13 @@ ht-degree: 3%
 
 ---
 
-# Creare un profilo di campagna utilizzando il modello dati del modulo {#create-campaign-profile-using-form-data-model}
+# Creare un profilo di Campaign utilizzando il modello dati del modulo {#create-campaign-profile-using-form-data-model}
 
-Passaggi coinvolti nella creazione di un profilo Adobe Campaign Standard tramite AEM Forms Form Data Model
+Passaggi necessari per la creazione del profilo Adobe Campaign Standard tramite AEM Forms Form Data Model
 
 ## Crea autenticazione personalizzata {#create-custom-authentication}
 
-Quando si crea Origine dati con il file swagger, AEM Forms supporta i seguenti tipi di autenticazione
+Durante la creazione di un’origine dati con il file swagger, AEM Forms supporta i seguenti tipi di autenticazione
 
 * Nessuno
 * OAuth 2.0
@@ -28,15 +28,15 @@ Quando si crea Origine dati con il file swagger, AEM Forms supporta i seguenti t
 * Chiave API
 * Autenticazione personalizzata
 
-![campagna elettorale](assets/campaignfdm.gif)
+![campaign fdm](assets/campaignfdm.gif)
 
 Dovremo utilizzare l’autenticazione personalizzata per effettuare chiamate REST ad Adobe Campaign Standard.
 
-Per utilizzare l’autenticazione personalizzata, è necessario sviluppare un componente OSGi che implementa l’interfaccia di autenticazione IA
+Per utilizzare l’autenticazione personalizzata, è necessario sviluppare un componente OSGi che implementi l’interfaccia IAuthentication
 
-È necessario implementare il metodo getAuthDetails. Questo metodo restituirà l&#39;oggetto AuthenticationDetails. Questo oggetto AuthenticationDetails avrà le intestazioni HTTP richieste impostate che sono necessarie per effettuare la chiamata REST API ad Adobe Campaign.
+È necessario implementare il metodo getAuthDetails. Questo metodo restituirà l&#39;oggetto AuthenticationDetails. Per questo oggetto AuthenticationDetails verranno impostate le intestazioni HTTP necessarie per effettuare la chiamata REST API ad Adobe Campaign.
 
-Di seguito è riportato il codice utilizzato per creare l&#39;autenticazione personalizzata. Il metodo getAuthDetails esegue tutto il lavoro. Creiamo l&#39;oggetto AuthenticationDetails. Quindi aggiungiamo le intestazioni HttpHeaders appropriate a questo oggetto e restituiamo questo oggetto.
+Di seguito è riportato il codice utilizzato per creare l&#39;autenticazione personalizzata. Il metodo getAuthDetails esegue tutto il lavoro. Viene creato l’oggetto AuthenticationDetails. A questo oggetto verranno quindi aggiunte le intestazioni HTTP appropriate e verrà restituito questo oggetto.
 
 ```java
 package aemfd.campaign.core;
@@ -101,27 +101,27 @@ private Logger log = LoggerFactory.getLogger(CampaignAuthentication.class);
 
 ## Crea origine dati {#create-data-source}
 
-Il primo passo è quello di creare il file swagger. Il file swagger definisce l’API REST che verrà utilizzata per creare un profilo in Adobe Campaign Standard. Il file swagger definisce i parametri di input e i parametri di output dell’API REST.
+Il primo passaggio consiste nel creare il file Swagger. Il file swagger definisce l’API REST che verrà utilizzata per creare un profilo in Adobe Campaign Standard. Il file swagger definisce i parametri di input e i parametri di output dell’API REST.
 
-Un’origine dati viene creata utilizzando il file swagger. Quando crei Origine dati puoi specificare il tipo di autenticazione. In questo caso utilizzeremo l&#39;autenticazione personalizzata per l&#39;autenticazione su Adobe Campaign.Il codice elencato sopra è stato utilizzato per l&#39;autenticazione su Adobe Campaign.
+Un&#39;origine dati viene creata utilizzando il file Swagger. Durante la creazione di Origine dati è possibile specificare il tipo di autenticazione. In questo caso utilizzeremo l’autenticazione personalizzata per l’autenticazione su Adobe Campaign. Il codice elencato sopra è stato utilizzato per l’autenticazione su Adobe Campaign.
 
-Il file di esempio swagger viene fornito come parte della risorsa correlata a questo articolo.**Assicurati di modificare l&#39;host e basePath nel file swagger in modo che corrispondano all&#39;istanza ACS**
+Un file swagger di esempio viene fornito come parte del file della risorsa relativo a questo articolo.**Assicurati di modificare l’host e basePath nel file swagger in modo che corrispondano all’istanza ACS**
 
-## Verificare la soluzione {#test-the-solution}
+## Testare la soluzione {#test-the-solution}
 
-Per testare la soluzione segui i seguenti passaggi:
-* [Assicurati di aver seguito i passaggi descritti qui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Scarica e decomprimi il file per ottenere il file swagger](assets/create-acs-profile-swagger-file.zip)
-* Crea origine dati utilizzando il file swagger Crea modello dati modulo e basalo sull’origine dati creata nel passaggio precedente
+Per testare la soluzione, segui i passaggi seguenti:
+* [Accertati di aver seguito i passaggi descritti qui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [Scarica e decomprimi questo file per ottenere il file Swagger](assets/create-acs-profile-swagger-file.zip)
+* Creare un’origine dati utilizzando il file swagger Creare un modello dati per i moduli e basarlo sull’origine dati creata nel passaggio precedente
 * Crea un modulo adattivo basato sul modello dati del modulo creato nel passaggio precedente.
-* Trascina i seguenti elementi dalla scheda origini dati al modulo adattivo
+* Trascina e rilascia i seguenti elementi dalla scheda origini dati al modulo adattivo
 
    * E-mail
    * Nome
    * Cognome
    * Telefono cellulare
 
-* Configurare l’azione di invio per l’invio tramite il modello dati modulo.
-* Configura il modello dati per l’invio appropriato.
-* Visualizzare l’anteprima del modulo. Compila i campi e invia.
-* Verifica che il profilo sia creato in Adobe Campaign Standard.
+* Configura l’azione di invio su &quot;Invia utilizzando il modello dati del modulo&quot;.
+* Configura il modello dati per inviare in modo appropriato.
+* Visualizzare l&#39;anteprima del modulo. Compila i campi e invia.
+* Verifica che il profilo sia stato creato in Adobe Campaign Standard.

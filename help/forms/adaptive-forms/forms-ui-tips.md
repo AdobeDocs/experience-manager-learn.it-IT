@@ -1,6 +1,6 @@
 ---
-title: Alcuni utili suggerimenti e trucchi per l’interfaccia utente
-description: Documento che illustra alcuni utili suggerimenti sull’interfaccia utente
+title: Suggerimenti e trucchi utili per l’interfaccia
+description: Documento che illustra alcuni utili suggerimenti sull’interfaccia
 feature: Adaptive Forms
 type: Tutorial
 version: 6.5
@@ -12,21 +12,21 @@ last-substantial-update: 2019-06-09T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '167'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
-# Attiva/disattiva visibilità campo password
+# Attiva/disattiva visibilità campi password
 
-Un caso d’uso comune consiste nell’consentire ai compilatori di passare alla visibilità del testo immesso nel campo password.
-Per eseguire questo caso d’uso, ho utilizzato l’icona occhio dal [Libreria a forma di carattere](https://fontawesome.com/). I CSS richiesti e eye.svg sono inclusi nella libreria client creata per questa dimostrazione.
+Un caso d’uso comune consiste nel consentire ai compilatori di moduli di attivare o disattivare la visibilità del testo immesso nel campo della password.
+Per eseguire questo caso d’uso, ho utilizzato l’icona dell’occhio di [Libreria eccezionale di caratteri](https://fontawesome.com/). I file CSS e eye.svg richiesti sono inclusi nella libreria client creata per questa dimostrazione.
 
 
 ## Codice di esempio
 
-Nel modulo adattivo è presente un campo di tipo PasswordBox denominato **ssnField**.
+Il modulo adattivo dispone di un campo di tipo PasswordBox denominato **ssnField**.
 
-Il codice seguente viene eseguito al caricamento del modulo
+Il seguente codice viene eseguito al caricamento del modulo
 
 ```javascript
 $(document).ready(function() {
@@ -48,7 +48,7 @@ $(document).ready(function() {
 });
 ```
 
-Il seguente CSS è stato utilizzato per posizionare il **occhio** icona all’interno del campo password
+Il seguente CSS è stato utilizzato per posizionare **occhio** icona nel campo della password
 
 ```javascript
 .svg-inline--fa {
@@ -63,12 +63,12 @@ Il seguente CSS è stato utilizzato per posizionare il **occhio** icona all’in
 }
 ```
 
-## Distribuire l’esempio di password di attivazione/disattivazione
+## Esempio di implementazione dell’interruttore della password
 
-* Scarica la [libreria client](assets/simple-ui-tips.zip)
-* Scarica la [modulo di esempio](assets/simple-ui-tricks-form.zip)
-* Importa la libreria client utilizzando [interfaccia utente di gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
-* Importa il modulo di esempio utilizzando [Forms e documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Scarica il file [libreria client](assets/simple-ui-tips.zip)
+* Scarica il file [modulo di esempio](assets/simple-ui-tricks-form.zip)
+* Importare la libreria client utilizzando [interfaccia utente gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+* Importare il modulo di esempio utilizzando [Forms e documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * [Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
 
 

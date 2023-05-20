@@ -1,7 +1,7 @@
 ---
 title: Utilizzo delle funzioni di riduzione nei grafici
 seo-title: Using Reducer Functions in AEM Forms - Charts
-description: Le funzioni di riduzione vengono utilizzate per aggregare o raggruppare i valori visualizzati nel grafico. Il video seguente illustra i passaggi necessari per l'utilizzo delle funzioni di riduzione.
+description: Le funzioni del riduttore vengono utilizzate per aggregare o raggruppare i valori visualizzati nel grafico.Il video seguente illustra i passaggi necessari per l'utilizzo delle funzioni del riduttore.
 seo-description: Reducer functions are used to aggregate or group values that are displayed in the chart.The following video walks through the steps involved in using reducer functions.
 uuid: e9bd8bda-48ea-4a02-95c4-02aedafdb640
 discoiquuid: 6fef8341-8fd5-4d82-9f69-2b8be7cd22db
@@ -23,12 +23,12 @@ ht-degree: 0%
 
 ---
 
-# Utilizzo delle funzioni di riduzione in AEM Forms - Grafici{#using-reducer-functions-in-aem-forms-charts}
+# Utilizzo delle funzioni di riduzione in AEM Forms: grafici{#using-reducer-functions-in-aem-forms-charts}
 
 Le funzioni di riduzione vengono utilizzate per aggregare o raggruppare i valori visualizzati nel grafico.
 
 
-Ad esempio, possiamo utilizzare le funzioni di riduzione per visualizzare il numero di transazioni per categoria, oppure visualizzare la spesa più elevata per categoria dai dati di esempio riportati di seguito
+Ad esempio, è possibile utilizzare le funzioni di riduzione per visualizzare il numero di transazioni per categoria oppure visualizzare la spesa più elevata per categoria dai dati di esempio riportati di seguito
 
 ```json
 [{
@@ -62,6 +62,6 @@ Ad esempio, possiamo utilizzare le funzioni di riduzione per visualizzare il num
 ]
 ```
 
-Il seguente video illustra i passaggi necessari per l’utilizzo delle funzioni di riduzione.
+Il video seguente illustra i passaggi necessari per utilizzare le funzioni di riduzione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21368?quality=12&learn=on)

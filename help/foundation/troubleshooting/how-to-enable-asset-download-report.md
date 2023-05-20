@@ -1,6 +1,6 @@
 ---
-title: Come abilitare il rapporto sul download delle risorse
-description: Passaggi per abilitare il rapporto sul download delle risorse
+title: Abilitare il rapporto di download delle risorse
+description: Passaggi per abilitare il rapporto di download delle risorse
 type: Troubleshooting
 role: Admin
 level: Beginner
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Come abilitare il rapporto di download delle risorse
+# Abilitare il rapporto di download delle risorse
 
-*Questo video illustra i passaggi per abilitare il rapporto di download delle risorse.*
+*Questo video illustra i passaggi necessari per abilitare il rapporto di download delle risorse.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335463?quality=12&learn=on)

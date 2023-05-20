@@ -1,6 +1,6 @@
 ---
-title: Passaggi per crittografare la password del keystore da utilizzare in lc_turnkey.xml
-description: Crittografa la password del keystore da configurare nel file lc_turnkey.xml
+title: Passaggi per crittografare la password del registro chiavi da utilizzare in lc_turnkey.xml
+description: Crittografare la password del registro chiavi da configurare nel file lc_turnkey.xml
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Passaggi per crittografare la password del keystore da utilizzare in lc_turnkey.xml
 
-*Questo video illustra i passaggi per crittografare la password del Registro chiavi da utilizzare in lc_turnkey.xml.*
+*Questo video illustra i passaggi per crittografare la password del registro chiavi da utilizzare in lc_turnkey.xml.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335538?quality=12&learn=on)

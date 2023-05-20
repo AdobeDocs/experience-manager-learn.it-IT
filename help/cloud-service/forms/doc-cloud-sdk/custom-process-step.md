@@ -1,6 +1,6 @@
 ---
-title: Crea passaggio di processo personalizzato
-description: Passaggio del processo personalizzato per convertire parole, excel allegati in PDF utilizzando il Document Cloud.
+title: Creare un passaggio di processo personalizzato
+description: Passaggio di processo personalizzato per convertire gli allegati Word e Excel in PDF utilizzando Document Cloud.
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -19,9 +19,8 @@ ht-degree: 0%
 
 # Passaggio processo personalizzato
 
-Di seguito è riportato il codice completo del passaggio del processo personalizzato che converte e sostituisce i file nativi con i pdf convertiti.
-Questo passaggio personalizzato cerca tutti gli allegati sotto il nome della cartella, fornito come argomento di processo nel flusso di lavoro.
-Questo passaggio del processo personalizzato utilizza i metodi del servizio DocumentCloudSDKSpersonalizzato per creare file PDF.
+Di seguito è riportato il codice completo del passaggio del processo personalizzato che converte e sostituisce i file nativi con i file PDF convertiti. Questo passaggio personalizzato cerca tutti gli allegati sotto il nome della cartella fornito come argomento del processo nel flusso di lavoro.
+Questo passaggio del processo personalizzato utilizza i metodi del servizio DocumentCloudSDKService personalizzato per la creazione di PDF.
 
 
 ```java

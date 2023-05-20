@@ -1,6 +1,6 @@
 ---
 user-guide-title: Video della console Frammenti di contenuto AEM
-user-guide-description: Una raccolta di video per la console Frammenti di contenuto Adobe Experience Manager.
+user-guide-description: Raccolta di video per la console Frammenti di contenuto di Adobe Experience Manager.
 breadcrumb-title: Video della console Frammenti di contenuto AEM
 sub-product: Experience Manager Sites
 version: Cloud Service
@@ -22,12 +22,12 @@ ht-degree: 24%
 + [Panoramica](overview.md)
 + Funzioni di base{#basics}
    + [Panoramica](./basics/content-fragments-console.md)
-+ Ricerca e individuazione{#search}
++ Ricerca e rilevamento{#search}
    + [Filtro rapido](search/fast-filtering.md)
 + Editor{#editor}
    + [Copie per lingua](editor/language-copies.md)
-   + [Icona Nuovo editor](editor/new-editor-toggle.md)
-   + [Riferimenti al contenuto non di risorse](editor/non-asset-content-references.md)
-   + [Confronto delle varianti dell’editor Rich Text](editor/rte-variant-compare.md)
+   + [Attiva/Disattiva nuovo editor](editor/new-editor-toggle.md)
+   + [Riferimenti a contenuti non relativi a risorse](editor/non-asset-content-references.md)
+   + [Confronto varianti editor Rich Text](editor/rte-variant-compare.md)
 + [Estensibilità](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/extensibility/content-fragments/overview.html)
 + [Documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=it).

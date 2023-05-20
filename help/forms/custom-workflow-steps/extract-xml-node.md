@@ -1,6 +1,6 @@
 ---
-title: Estrai nodo dal file xml dei dati inviati
-description: Passaggio del processo personalizzato per aggiungere al file system il documento di scrittura che si trova sotto la cartella payload
+title: Estrarre un nodo dai dati XML inviati
+description: Passaggio di processo personalizzato per aggiungere al file system un documento di scrittura che si trova nella cartella del payload
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -16,19 +16,19 @@ ht-degree: 0%
 
 ---
 
-# Estrai nodo dal file xml dei dati inviati
+# Estrarre un nodo dai dati XML inviati
 
-Questo passaggio del processo personalizzato consiste nel creare un nuovo documento xml estraendo un nodo da un altro documento xml. Per generare pdf è necessario utilizzare questa opzione quando si desidera unire i dati inviati con il modello xdp. Ad esempio, quando si invia un modulo adattivo, i dati da unire al modello xdp si trovano all&#39;interno dell&#39;elemento dati. In questo caso è necessario creare un altro documento xml estraendo l’elemento dati appropriato.
+Questo passaggio del processo personalizzato consiste nel creare un nuovo documento XML estraendo un nodo da un altro documento XML. Dovrai utilizzarlo quando desideri unire i dati inviati con un modello xdp per generare un PDF. Ad esempio, quando invii un modulo adattivo, i dati da unire con il modello xdp si trovano all’interno dell’elemento dati. In questo caso, è necessario creare un altro documento xml estraendo l’elemento dati appropriato.
 
-La schermata seguente mostra gli argomenti che è necessario passare al passaggio del processo personalizzato
-![fase del processo](assets/create-xml-process-step.png)
-I seguenti parametri:
-* Data.xml - Il file xml dal quale si desidera estrarre il nodo
-* datatomerge.xml - Il nuovo xml creato con il nodo estratto
-* /afData/afUnboundData/data - Il nodo da estrarre
+La schermata seguente mostra gli argomenti da passare al passaggio del processo personalizzato
+![passaggio del processo](assets/create-xml-process-step.png)
+Di seguito sono riportati i parametri
+* Data.xml: il file xml da cui estrarre il nodo
+* datatomerge.xml: il nuovo xml creato con il nodo estratto
+* /afData/afUnboundData/data - Nodo da estrarre
 
 
-La schermata seguente mostra il datamerge.xml creato nella cartella payload
+La schermata seguente mostra il file datamerge.xml creato nella cartella del payload
 ![create-xml](assets/create-xml.png)
 
 [Il bundle personalizzato può essere scaricato da qui](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)

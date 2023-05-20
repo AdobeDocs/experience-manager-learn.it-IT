@@ -1,6 +1,6 @@
 ---
 title: Creare una copia in lingua
-description: Scopri come creare una copia in lingua per il sito AEM utilizzando la procedura guidata Crea copia in lingua.
+description: Scopri come creare una copia in lingua per il tuo sito AEM utilizzando la procedura guidata Crea copia in lingua.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 # Creare una copia in lingua {#create-language-copy}
 
-Scopri come creare una copia in lingua per il sito AEM utilizzando la procedura guidata Crea copia in lingua.
+Scopri come creare una copia in lingua per il tuo sito AEM utilizzando la procedura guidata Crea copia in lingua.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36483?quality=12&learn=on)

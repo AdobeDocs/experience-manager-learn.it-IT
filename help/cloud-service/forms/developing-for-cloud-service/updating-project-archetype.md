@@ -1,6 +1,6 @@
 ---
 title: Aggiornamento del progetto del servizio cloud con l’archetipo più recente
-description: Aggiornamento del progetto del servizio cloud AEM Forms con l’archetipo più recente
+description: Aggiornamento del progetto AEM Forms Cloud Service con l’archetipo più recente
 solution: Experience Manager
 type: Documentation
 role: Developer
@@ -16,42 +16,42 @@ ht-degree: 1%
 
 ---
 
-# Migrazione dal vecchio archetipo di aem
+# Migrazione dal vecchio archetipo aem
 
-Per aggiornare il progetto AEM Forms esistente con l’archetipo maven più recente, dovrai copiare manualmente il codice/configurazioni ecc. dal vecchio progetto al nuovo progetto.
+Per aggiornare il progetto AEM Forms esistente con l’archetipo Maven più recente, dovrai copiare manualmente il codice/le configurazioni, ecc., dal vecchio progetto al nuovo.
 
-Sono stati seguiti i seguenti passaggi per migrare il progetto creato utilizzando archetype 30 al progetto archetype 33
+Sono stati seguiti i seguenti passaggi per migrare il progetto creato utilizzando il progetto archetipo 30 a archetipo 33
 
 ## Crea un progetto Maven utilizzando l’archetipo più recente
 
 * Apri il prompt dei comandi e passa a c:\cloudmanager
-* Crea un progetto maven utilizzando l’archetipo più recente.
-* Copia e incolla il contenuto del [file di testo](assets/creating-maven-project.txt) nella finestra del prompt dei comandi. Potrebbe essere necessario modificare il DarchetypeVersion=33 a seconda del [versione più recente](https://github.com/adobe/aem-project-archetype/releases). Archetype 33 include nuovi temi AEM Forms.
-Poiché stiamo creando il nuovo progetto maven nella cartella cloudmanager che dispone già di un progetto aem-banking-application, è necessario modificare il **DartifactId** dall&#39;applicazione aem-banking a qualcosa di diverso. Ho usato aem-banking-application1 per questo articolo.
+* Crea un progetto Maven utilizzando l’archetipo più recente.
+* Copiare e incollare il contenuto del [file di testo](assets/creating-maven-project.txt) nella finestra del prompt dei comandi. Potrebbe essere necessario modificare DarchetypeVersion=33 a seconda del [ultima versione](https://github.com/adobe/aem-project-archetype/releases). Archetipo 33 include nuovi temi AEM Forms.
+Poiché stiamo creando il nuovo progetto Maven nella cartella cloudmanager che dispone già del progetto dell’applicazione aem-banking, devi modificare il **DartifactId** da aem-banking-application a qualcosa di diverso. Ho usato aem-banking-application1 per questo articolo.
 
 >[!NOTE]
 >
->Se si distribuisce questo nuovo progetto così com’è, l’istanza del servizio cloud non avrà HandleFormSubmission e SubmitToAEMServlet. Questo perché ogni volta che distribuisci un progetto utilizzando Cloud Manager qualsiasi elemento nel `/apps` la cartella viene eliminata e sovrascritta.
+>Se distribuisci questo nuovo progetto così come è l’istanza del servizio cloud, HandleFormSubmission e SubmitToAEMServlet non saranno disponibili. Questo perché ogni volta che distribuisci un progetto con Cloud Manager qualcosa sotto `/apps` viene eliminata e sovrascritta.
 
-## Copia il codice java
+## Copia il codice Java
 
-Una volta creato correttamente il progetto, puoi iniziare a copiare il codice/le configurazioni ecc. dal vecchio progetto a questo nuovo progetto
+Una volta creato correttamente il progetto, puoi iniziare a copiare codice/configurazioni, ecc., dal vecchio progetto al nuovo
 
 * Copia il servlet HandleFormSubmission da ```C:\CloudManager\aem-banking-application\core\src\main\java\com\aem\bankingapplication\core\servlets```
 a
 
    ```C:\CloudManager\aem-banking-application1\core\src\main\java\com\aem\bankingapplication\core\servlets```
 
-* Copiare CustomSubmit da
-   ```C:\CloudManager\aem-banking-application\ui.apps\src\main\content\jcr_root\apps\bankingapplication\SubmitToAEMServlet``` dall’applicazione aem-banking al progetto aem-banking-application1
+* Copia l’oggetto CustomSubmit da
+   ```C:\CloudManager\aem-banking-application\ui.apps\src\main\content\jcr_root\apps\bankingapplication\SubmitToAEMServlet``` da aem-banking-application a aem-banking-application1 project
 
-* importare il nuovo progetto in IntelliJ
+* importa il nuovo progetto in IntelliJ
 
-* Aggiorna il filter.xml nel modulo ui.apps del progetto aem-banking-application1 per includere la seguente riga
+* Aggiorna il file filter.xml nel modulo ui.apps del progetto aem-banking-application1 per includere la riga seguente
    ```<filter root="/apps/bankingapplication/SubmitToAEMServlet"/>```
 
-Dopo aver copiato tutto il codice nel nuovo progetto, puoi inviarlo a cloud manager.
+Dopo aver copiato tutto il codice nel nuovo progetto, puoi inviare il progetto a Cloud Manager.
 
 >[!NOTE]
 >
->Per sincronizzare il contenuto (Adaptive Forms, Form Data Model, ecc.) nel nuovo progetto, dovrai creare la struttura di cartelle appropriata nel progetto IntelliJ e quindi sincronizzare il progetto IntelliJ con la tua istanza AEM utilizzando il comando Get dello strumento repo.
+>Per sincronizzare il contenuto (Forms adattivo, Modello dati modulo, ecc.) nel nuovo progetto, è necessario creare la struttura di cartelle appropriata nel progetto IntelliJ e quindi sincronizzare il progetto IntelliJ con l&#39;istanza AEM utilizzando il comando Get dello strumento repository.

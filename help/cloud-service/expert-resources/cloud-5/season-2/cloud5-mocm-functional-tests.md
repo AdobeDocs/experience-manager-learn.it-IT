@@ -1,5 +1,5 @@
 ---
-title: Cloud 5 - Mysteries of Cloud Manager - Test funzionali
+title: Cloud 5 - Misteri di Cloud Manager - Test funzionali
 description: Come e perché creare test funzionali personalizzati
 version: Cloud Service
 role: Admin, Developer
@@ -15,14 +15,14 @@ ht-degree: 6%
 
 ---
 
-# Cloud 5 - Mysteries of Cloud Manager - Test funzionali
+# Cloud 5 - Misteri di Cloud Manager - Test funzionali
 
-AEM as a Cloud Service completa per impostazione predefinita molti test funzionali con l’applicazione incorporata. Tuttavia, questi test potrebbero non coprire tutti i test richiesti. I test funzionali personalizzati vengono in soccorso.
+Per impostazione predefinita, AEM as a Cloud Service completa molti test funzionali con l’applicazione incorporata. Tuttavia, questi test potrebbero non coprire tutti i test richiesti che potrebbe essere necessario. Test funzionali personalizzati sono in aiuto di tutti.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343624?quality=12&learn=on)
 
 ## Contenuto trattato in questo video
 
 + [Test funzionali](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/functional-testing.html)
-+ [Test AEM sul fumo](https://github.com/adobe/aem-test-samples/)
-+ [AEM dei client di test](https://github.com/adobe/aem-testing-clients/)
++ [Test per fumo AEM](https://github.com/adobe/aem-test-samples/)
++ [Client di test AEM](https://github.com/adobe/aem-testing-clients/)

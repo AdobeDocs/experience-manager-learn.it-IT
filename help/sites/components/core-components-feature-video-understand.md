@@ -1,6 +1,6 @@
 ---
 title: Informazioni sui componenti core
-description: I componenti core AEM sono set di componenti standard da utilizzare con Adobe Experience Manager. Basati sulle best practice e sugli standard di Adobe, i componenti core forniscono un set di funzionalità di base per qualsiasi implementazione di Sites.
+description: I componenti core AEM sono set di componenti standard da utilizzare con Adobe Experience Manager. Basati sulle best practice e sugli standard di Adobe, i Componenti core forniscono un set di funzionalità di base per qualsiasi implementazione di Sites.
 feature: Core Components
 topics: authoring
 audience: all
@@ -28,7 +28,7 @@ ht-degree: 42%
 >abstract="In questa scheda trovi contenuti che ti aiuteranno a generare siti moderni compatibili con AEM as a Cloud Service, utilizzando i componenti core."
 >additional-url="https://video.tv.adobe.com/v/18926/?captions=ita" text="Panoramica dei componenti core"
 
-I componenti core AEM sono set di componenti standard da utilizzare con Adobe Experience Manager. Basati sulle best practice e sugli standard di Adobe, i componenti core forniscono un set di funzionalità di base per qualsiasi implementazione di Sites.
+I componenti core AEM sono set di componenti standard da utilizzare con Adobe Experience Manager. Basati sulle best practice e sugli standard di Adobe, i Componenti core forniscono un set di funzionalità di base per qualsiasi implementazione di Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18926?quality=12&learn=on)
 
@@ -36,4 +36,4 @@ I componenti core AEM sono set di componenti standard da utilizzare con Adobe Ex
 
 * [Progetto GitHub](https://github.com/adobe/aem-core-wcm-components)
 * [Esempi di componenti core](https://www.aemcomponents.dev/)
-* [Documentazione sui componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+* [Documentazione dei Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)

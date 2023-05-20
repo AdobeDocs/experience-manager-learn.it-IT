@@ -1,5 +1,5 @@
 ---
-title: Verificare la comprensione di Forms
+title: Verifica la tua comprensione di Forms Assember
 description: Completa gli esercizi
 type: Documentation
 role: Developer
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 # Esercizi
 
-## Assemblare file PDF
+## Assembla file PDF
 
-Modifica la `assemble2pdfs.ddx` file per assemblare 3 file PDF.
+Modifica il `assemble2pdfs.ddx` file per assemblare file 3 PDF.
 
-Il terzo pdf verrà inserito nella cartella resources/pdffiles .
+Il terzo pdf verrà inserito nella cartella resources/pdfiles.

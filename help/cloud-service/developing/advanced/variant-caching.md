@@ -1,6 +1,6 @@
 ---
-title: Varianti di pagina nella memorizzazione in cache con AEM as a Cloud Service
-description: Scopri come impostare e utilizzare AEM as a cloud service per supportare la memorizzazione in cache delle varianti di pagina.
+title: Memorizzazione in cache delle varianti di pagina con AEM as a Cloud Service
+description: Scopri come impostare e utilizzare AEM as a Cloud Service per supportare il caching delle varianti di pagina.
 role: Architect, Developer
 topic: Development
 feature: CDN Cache, Dispatcher
@@ -12,53 +12,53 @@ ht-degree: 1%
 
 ---
 
-# Varianti di pagina nella cache
+# Memorizzazione in cache delle varianti di pagina
 
-Scopri come impostare e utilizzare AEM as a cloud service per supportare la memorizzazione in cache delle varianti di pagina.
+Scopri come impostare e utilizzare AEM as a Cloud Service per supportare il caching delle varianti di pagina.
 
-## Esempi di casi d’uso
+## Casi d’uso di esempio
 
-+ Qualsiasi fornitore di servizi che offre un diverso set di offerte di servizi e le relative opzioni di prezzo in base alla geolocalizzazione dell’utente e alla cache delle pagine con contenuto dinamico deve essere gestito in CDN e Dispatcher.
++ Qualsiasi provider di servizi che offra un set diverso di offerte di servizi e opzioni di prezzo corrispondenti in base alla posizione geografica dell’utente e alla cache delle pagine con contenuti dinamici deve essere gestito in CDN e Dispatcher.
 
-+ Un cliente al dettaglio ha negozi in tutto il paese e ogni negozio ha offerte diverse in base alla posizione in cui si trovano e la cache delle pagine con contenuto dinamico deve essere gestita in CDN e Dispatcher.
++ Un cliente al dettaglio dispone di negozi in tutto il paese e ogni negozio dispone di offerte diverse in base alla posizione in cui si trova, e la cache delle pagine con contenuti dinamici deve essere gestita in CDN e Dispatcher.
 
 ## Panoramica della soluzione
 
-+ Identifica la chiave della variante e il numero di valori che potrebbe avere. Nel nostro esempio, variiamo in base allo stato degli Stati Uniti, quindi il numero massimo è 50. Questo è abbastanza piccolo per non causare problemi con i limiti delle varianti alla CDN. [Revisione della sezione sulle limitazioni delle varianti](#variant-limitations).
++ Identifica la chiave della variante e il numero di valori che può avere. Nel nostro esempio, variiamo in base allo stato USA, quindi il numero massimo è 50. È abbastanza piccolo da non causare problemi con i limiti delle varianti nella rete CDN. [Sezione Limitazioni della variante di revisione](#variant-limitations).
 
-+ Il codice AEM deve impostare il cookie __&quot;x-aem-variant&quot;__ allo stato preferito del visitatore (ad esempio `Set-Cookie: x-aem-variant=NY`) nella risposta HTTP corrispondente della richiesta HTTP iniziale.
++ Il codice AEM deve impostare il cookie __&quot;x-aem-variant&quot;__ allo stato preferito del visitatore (ad es. `Set-Cookie: x-aem-variant=NY`) nella risposta HTTP corrispondente della richiesta HTTP iniziale.
 
-+ Le richieste successive del visitatore inviano quel cookie (ad esempio `"Cookie: x-aem-variant=NY"`) e il cookie viene trasformato a livello di CDN in un’intestazione predefinita (ad es. `x-aem-variant:NY`) che viene passato al dispatcher.
++ Le richieste successive del visitatore inviano quel cookie (esempio: `"Cookie: x-aem-variant=NY"`) e il cookie viene trasformato a livello di CDN in un’intestazione predefinita (ovvero `x-aem-variant:NY`) che viene passato al dispatcher.
 
-+ Una regola di riscrittura Apache modifica il percorso della richiesta per includere il valore dell&#39;intestazione nell&#39;URL della pagina come selettore Sling Apache (ad esempio `/page.variant=NY.html`). Questo consente ad AEM Publish di distribuire contenuti diversi in base al selettore e al dispatcher di memorizzare nella cache una pagina per variante.
++ Una regola di riscrittura Apache modifica il percorso della richiesta per includere il valore di intestazione nell’URL della pagina come selettore Sling di Apache (ad esempio, `/page.variant=NY.html`). Questo consente ad AEM Publish di distribuire contenuti diversi in base al selettore e al dispatcher di memorizzare in cache una pagina per variante.
 
-+ La risposta inviata da AEM Dispatcher deve contenere un’intestazione di risposta HTTP `Vary: x-aem-variant`. Questo indica alla CDN di memorizzare diverse copie della cache per diversi valori di intestazione.
++ La risposta inviata dal Dispatcher AEM deve contenere un’intestazione di risposta HTTP `Vary: x-aem-variant`. Questo indica alla rete CDN di memorizzare diverse copie della cache per diversi valori di intestazione.
 
 >[!TIP]
 >
->Ogni volta che viene impostato un cookie (ad esempio Set-Cookie: x-aem-variant=NY) la risposta non deve essere memorizzabile nella cache (deve avere Cache-Control: private o Cache-Control: no-cache)
+>Ogni volta che viene impostato un cookie (ad es. Set-Cookie: x-aem-variant=NY) la risposta non deve essere memorizzabile in cache (deve avere Cache-Control: private o Cache-Control: no-cache)
 
-## flusso di richieste HTTP
+## Flusso di richieste HTTP
 
-![Flusso della richiesta di cache variante](./assets/variant-cache-request-flow.png)
+![Flusso richieste cache variante](./assets/variant-cache-request-flow.png)
 
 >[!NOTE]
 >
->Il flusso iniziale di richiesta HTTP di cui sopra deve avvenire prima che venga richiesto qualsiasi contenuto che utilizzi varianti.
+>Il flusso di richiesta HTTP iniziale deve avvenire prima che venga richiesto qualsiasi contenuto che utilizza varianti.
 
 ## Utilizzo
 
-1. Per illustrare la funzione, utilizzeremo [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)Implementazione di come esempio.
+1. Per illustrare la funzione, utilizzeremo [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)di come esempio.
 
-1. Implementare un [SlingServletFilter](https://sling.apache.org/documentation/the-sling-engine/filters.html) in AEM da impostare `x-aem-variant` cookie sulla risposta HTTP, con un valore variante.
+1. Implementare un [SlingServletFilter](https://sling.apache.org/documentation/the-sling-engine/filters.html) nell&#39;AEM per impostare `x-aem-variant` cookie nella risposta HTTP, con un valore variante.
 
-1. AEM CDN si trasforma automaticamente `x-aem-variant` in un&#39;intestazione HTTP con lo stesso nome.
+1. La rete CDN dell’AEM si trasforma automaticamente `x-aem-variant` cookie in un’intestazione HTTP con lo stesso nome.
 
-1. Aggiungi una regola mod_rewrite del server Web Apache al tuo `dispatcher` , che modifica il percorso della richiesta per includere il selettore della variante.
+1. Aggiungi una regola mod_rewrite del server web Apache al tuo `dispatcher` progetto, che modifica il percorso della richiesta per includere il selettore delle varianti.
 
 1. Distribuisci il filtro e riscrivi le regole utilizzando Cloud Manager.
 
-1. Verifica il flusso complessivo della richiesta.
+1. Verifica il flusso di richiesta complessivo.
 
 ## Esempi di codice
 
@@ -119,7 +119,7 @@ Scopri come impostare e utilizzare AEM as a cloud service per supportare la memo
    }
    ```
 
-+ Regola di riscrittura di esempio nel __dispatcher/src/conf.d/rewrite.rules__ file gestito come codice sorgente in Git e distribuito utilizzando Cloud Manager.
++ Esempio di regola di riscrittura in __dispatcher/src/conf.d/rewrite.rules__ che viene gestito come codice sorgente in Git e distribuito utilizzando Cloud Manager.
 
    ```
    ...
@@ -131,12 +131,12 @@ Scopri come impostare e utilizzare AEM as a cloud service per supportare la memo
    ...
    ```
 
-## Limiti della variante
+## Limitazioni delle varianti
 
-+ AEM CDN può gestire fino a 200 varianti. Significa che `x-aem-variant` L&#39;intestazione può contenere fino a 200 valori univoci. Per ulteriori informazioni, consulta la sezione [Limiti di configurazione CDN](https://docs.fastly.com/en/guides/resource-limits).
++ La rete CDN AEM può gestire fino a 200 varianti. Ciò significa che `x-aem-variant` l’intestazione può contenere fino a 200 valori univoci. Per ulteriori informazioni, consulta [Limiti di configurazione CDN](https://docs.fastly.com/en/guides/resource-limits).
 
-+ Assicurati che la chiave della variante scelta non superi mai questo numero.  Ad esempio, un ID utente non è una buona chiave in quanto supererebbe facilmente 200 valori per la maggior parte dei siti web, mentre gli stati/territori in un paese sono più adatti se ci sono meno di 200 stati in quel paese.
++ Fai attenzione a che il codice variante scelto non superi mai questo numero.  Ad esempio, un ID utente non è una buona chiave in quanto supererebbe facilmente i 200 valori per la maggior parte dei siti web, mentre gli stati/territori di un paese sono più adatti se ci sono meno di 200 stati in quel paese.
 
 >[!NOTE]
 >
->Quando le varianti superano 200, la rete CDN risponderà con la risposta &quot;Troppe varianti&quot; invece del contenuto della pagina.
+>Quando le varianti superano le 200, la CDN risponderà con la risposta &quot;Troppe varianti&quot; invece del contenuto della pagina.

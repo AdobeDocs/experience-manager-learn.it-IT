@@ -1,6 +1,6 @@
 ---
-title: Estensioni della barra delle azioni della console Frammento di contenuto AEM
-description: Scopri come creare un’estensione della barra delle azioni della console Frammento di contenuto AEM.
+title: Estensioni della barra delle azioni della console Frammenti di contenuto AEM
+description: Scopri come creare estensioni della barra delle azioni della console Frammenti di contenuto AEM.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -9,30 +9,30 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+exl-id: 97d26a1f-f9a7-4e57-a5ef-8bb2f3611088
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
 
 ---
 
-
 # Estensione della barra delle azioni
 
 ![Estensione della barra delle azioni](./assets/action-bar/action-bar.png){align="center"}
 
-Estensioni che includono una barra delle azioni, introdurre un pulsante nell’azione della AEM console Frammenti di contenuto che viene visualizzata quando __1 o più__ I frammenti di contenuto sono selezionati. Poiché i pulsanti di estensione della barra delle azioni vengono visualizzati solo quando è selezionato almeno un frammento di contenuto, in genere agiscono sui frammenti di contenuto selezionati. Gli esempi includono:
+Estensioni che includono una barra delle azioni, introduce un pulsante all’azione della Console Frammenti di contenuto AEM che viene visualizzata quando __1 o più__ I frammenti di contenuto sono selezionati. Poiché i pulsanti di estensione della barra delle azioni vengono visualizzati solo quando è selezionato almeno un frammento di contenuto, in genere agiscono sui frammenti di contenuto selezionati. Alcuni esempi:
 
-+ Richiamo di un processo aziendale o di un flusso di lavoro nei frammenti di contenuto selezionati.
-+ Aggiornamento o modifica dei dati della selezione dei frammenti di contenuto.
++ Richiamare un processo o un flusso di lavoro aziendale sui frammenti di contenuto selezionati.
++ Aggiornamento o modifica dei dati di alcuni frammenti di contenuto.
 
-## Registrazione delle estensioni
+## Registrazione dell’estensione
 
-`ExtensionRegistration.js` è il punto di ingresso dell&#39;estensione AEM e definisce:
+`ExtensionRegistration.js` è il punto di ingresso per l’estensione AEM e definisce:
 
-1. il tipo di estensione; nel caso di un pulsante della barra delle azioni.
-1. Definizione del pulsante di estensione, in `getButton()` funzione .
-1. Il gestore di clic per il pulsante, nella `onClick()` funzione .
+1. Il tipo di estensione; nel caso di un pulsante della barra delle azioni.
+1. La definizione del pulsante di estensione, in `getButton()` funzione.
+1. Il gestore di clic per il pulsante, nel `onClick()` funzione.
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -72,12 +72,12 @@ function ExtensionRegistration() {
 
 ![Finestra modale](./assets/modal/modal.png)
 
-AEM le estensioni della barra delle azioni della console Frammenti di contenuto possono richiedere:
+Le estensioni della barra delle azioni della Console Frammenti di contenuto AEM possono richiedere:
 
-+ Un ulteriore input dell’utente per eseguire l’azione desiderata.
-+ La possibilità di fornire all’utente informazioni dettagliate sul risultato dell’azione.
++ Input aggiuntivo dall’utente per eseguire l’azione desiderata.
++ Possibilità di fornire all’utente informazioni dettagliate sul risultato dell’azione.
 
-Per supportare questi requisiti, l’estensione AEM della console Frammenti di contenuto consente un modale personalizzato per il rendering come applicazione React.
+Per supportare questi requisiti, l’estensione della Console Frammenti di contenuto AEM consente una finestra modale personalizzata che viene riprodotta come applicazione React.
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -124,15 +124,15 @@ function ExtensionRegistration() {
   </div>
 </div>
 
-## Nessun modale
+## Nessuna finestra modale
 
-A volte, AEM estensioni della console Frammenti di contenuto della barra delle azioni non richiedono ulteriore interazione con l’utente, ad esempio:
+A volte, le estensioni della barra delle azioni della console Frammenti di contenuto AEM non richiedono un’ulteriore interazione con l’utente, ad esempio:
 
 + Richiamare un processo back-end che non richiede l’input dell’utente, ad esempio l’importazione o l’esportazione.
 
-In questi casi, l’estensione della console Frammento di contenuto AEM non richiede un [modale](#modal)ed esegui il lavoro direttamente nel pulsante della barra delle azioni `onClick` handler.
+In questi casi, l’estensione della console Frammenti di contenuto AEM non richiede un’ [modale](#modal)ed eseguire il lavoro direttamente nel pulsante della barra delle azioni `onClick` handler.
 
-L’estensione AEM console Frammento di contenuto consente di sovrapporre la console Frammento di contenuto AEM durante l’esecuzione del lavoro, impedendo all’utente di eseguire ulteriori azioni. L’utilizzo dell’indicatore di avanzamento è facoltativo, ma utile per comunicare all’utente l’avanzamento del lavoro sincrono.
+L’estensione della console Frammenti di contenuto AEM consente a un indicatore di avanzamento di sovrapporsi alla console Frammenti di contenuto AEM durante l’esecuzione del lavoro, impedendo all’utente di eseguire ulteriori azioni. L&#39;uso dell&#39;indicatore di avanzamento è facoltativo, ma utile per comunicare all&#39;utente l&#39;avanzamento del lavoro sincrono.
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 

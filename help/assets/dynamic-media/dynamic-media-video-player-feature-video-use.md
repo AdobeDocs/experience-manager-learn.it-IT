@@ -1,6 +1,6 @@
 ---
-title: Utilizzo del lettore video in AEM Dynamic Media
-description: AEM lettore video Dynamic Media utilizzato per fare affidamento sul runtime di Flash per supportare lo streaming video adattivo su client e browser desktop è diventato più aggressivo nello streaming di contenuti basati su flash. Con l’introduzione di HLS (protocollo di distribuzione video HTTP Live Streaming Apple), ora è possibile inviare in streaming i contenuti senza ricorrere al flash.
+title: Utilizzo del lettore video nel Dynamic Media dell’AEM
+description: Il lettore video AEM Dynamic Media si basava su runtime di Flash per supportare lo streaming video adattivo su client desktop e browser, che diventava più aggressivo con lo streaming di contenuti basati su flash. Con l’introduzione di HLS (HTTP Live Streaming video delivery protocol di Apple), il contenuto può ora essere inviato in streaming senza ricorrere al flash.
 feature: Video Profiles
 version: 6.4, 6.5
 topic: Content Management
@@ -15,21 +15,21 @@ ht-degree: 6%
 ---
 
 
-# Utilizzo del lettore video in AEM Dynamic Media{#using-the-video-player-in-aem-dynamic-media}
+# Utilizzo del lettore video nel Dynamic Media dell’AEM{#using-the-video-player-in-aem-dynamic-media}
 
-AEM lettore video Dynamic Media utilizzato per fare affidamento sul runtime di Flash per supportare lo streaming video adattivo su client e browser desktop è diventato più aggressivo nello streaming di contenuti basati su flash. Con l’introduzione di HLS (protocollo di distribuzione video HTTP Live Streaming Apple), ora è possibile inviare in streaming i contenuti senza ricorrere al flash.
+Il lettore video AEM Dynamic Media si basava su runtime di Flash per supportare lo streaming video adattivo su client desktop e browser, che diventava più aggressivo con lo streaming di contenuti basati su flash. Con l’introduzione di HLS (HTTP Live Streaming video delivery protocol di Apple), il contenuto può ora essere inviato in streaming senza ricorrere al flash.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16791?quality=12&learn=on)
 
-## Anteprima nel lettore video non Flash {#quick-look-into-non-flash-video-player}
+## Ricerca rapida nel lettore video non di Flash {#quick-look-into-non-flash-video-player}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17429?quality=12&learn=on)
 
-Il supporto del browser HLS è il seguente: per i browser non supportati si basa sulla distribuzione progressiva dei video
+Il supporto del browser HLS è il seguente: per i browser non supportati si utilizza la distribuzione progressiva di video
 
 >[!NOTE]
 >
-> Dynamic Media Hybrid NON supporta lo streaming video su Internet Explorer 11 a partire dal 15 marzo 2022. Aggiorna a 6.5.12 o superiore per tornare alla riproduzione progressiva su IE 11.
+> Dynamic Media Hybrid NON supporta lo streaming video su Internet Explorer 11 dal 15 marzo 2022. Effettua l’aggiornamento a 6.5.12 o versione successiva per tornare alla riproduzione progressiva su IE 11.
 
 <table> 
  <thead> 
@@ -48,8 +48,8 @@ Il supporto del browser HLS è il seguente: per i browser non supportati si basa
   <tr>
    <td> <p>Desktop</p> </td>
    <td> <p>Internet Explorer 11+</p> </td>
-   <td> <p>Modalità Dynamic Media - Scene 7: Streaming video HLS</p> 
-        <p>Dynamic Media - Modalità ibrida: Download progressivo</p>
+   <td> <p>Dynamic Media - Modalità Scene 7: streaming video HLS</p> 
+        <p>Dynamic Media - Modalità ibrida: download progressivo</p>
    </td>
   </tr>
   <tr>
@@ -74,12 +74,12 @@ Il supporto del browser HLS è il seguente: per i browser non supportati si basa
   </tr>
   <tr> 
    <td> <p>Mobile</p> </td>
-   <td> <p>Chrome (Android 6 o precedente)</p> </td>
+   <td> <p>Chrome (Android 6 o versioni precedenti)</p> </td>
    <td> <p>Download progressivo</p> </td>
   </tr>
   <tr> 
    <td> <p>Mobile</p> </td>
-   <td> <p>Chrome (Android 7 o successivo)</p> </td>
+   <td> <p>Chrome (Android 7 o versione successiva)</p> </td>
    <td> <p>Streaming video HLS</p> </td>
   </tr>
   <tr> 

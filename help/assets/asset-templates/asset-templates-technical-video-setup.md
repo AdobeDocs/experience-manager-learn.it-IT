@@ -1,6 +1,6 @@
 ---
-title: Configurare i modelli di risorse con AEM Assets e InDesign Server
-description: I modelli di risorse consentono agli addetti al marketing di creare, gestire e distribuire risorse digitali per scopi digitali e di stampa. La creazione di brochure, biglietti da visita, volantini, annunci pubblicitari e cartoline postali di marketing è molto più semplice grazie ai modelli di risorse integrati con il server InDesign. La configurazione del server InDesign con AEM è descritta in questa sezione.
+title: Configurare modelli di risorse con AEM Assets e InDesign Server
+description: I modelli di risorse consentono agli addetti al marketing di creare, gestire e distribuire risorse digitali sia per la stampa che per quella digitale. La creazione di brochure di marketing, biglietti da visita, volantini, annunci e cartoline è molto più semplice con i modelli di risorse se integrati con il server InDesign. La configurazione del server InDesign con AEM è descritta in questa sezione.
 version: 6.4, 6.5
 topic: Content Management
 role: Developer
@@ -13,21 +13,21 @@ ht-degree: 0%
 
 ---
 
-# Configurare i modelli di risorse con AEM Assets e InDesign Server{#set-up-asset-templates-with-aem-assets-and-indesign-server}
+# Configurare modelli di risorse con AEM Assets e InDesign Server{#set-up-asset-templates-with-aem-assets-and-indesign-server}
 
-I modelli di risorse consentono agli addetti al marketing di creare, gestire e distribuire risorse digitali per scopi digitali e di stampa. La creazione di brochure, biglietti da visita, volantini, annunci pubblicitari e cartoline postali di marketing è molto più semplice grazie ai modelli di risorse integrati con il server InDesign. La configurazione del server InDesign con AEM è descritta in questa sezione.
+I modelli di risorse consentono agli addetti al marketing di creare, gestire e distribuire risorse digitali sia per la stampa che per quella digitale. La creazione di brochure di marketing, biglietti da visita, volantini, annunci e cartoline è molto più semplice con i modelli di risorse se integrati con il server InDesign. La configurazione del server InDesign con AEM è descritta in questa sezione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17069?quality=12&learn=on)
 
 >[!NOTE]
 >
->AEM **deve** essere connesso a un server InDesign in esecuzione al momento del caricamento del modello INDD. Parte dell’elaborazione iniziale sul file INDD richiede il server InDesign.
+>AEM **deve** essere connessi a un server InDesign in esecuzione quando viene caricato il modello INDD. Parte dell&#39;elaborazione iniziale sul file INDD richiede il server InDesign.
 
 ## Scarica la versione di prova di InDesign Server {#download-indesign-server-trial}
 
-Scarica [Sito Web di download della versione di prova di InDesign Server](https://www.adobeprerelease.com/)
+Scarica [Sito Web di download della versione di prova InDesign Server](https://www.adobeprerelease.com/)
 
-## Avvio di InDesign Server {#starting-indesign-server}
+## InDesign Server iniziale {#starting-indesign-server}
 
 ```shell
 # macOS command

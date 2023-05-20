@@ -1,6 +1,6 @@
 ---
 title: Utilizzo di Cloud Manager con AEM as a Cloud Service
-description: Scopri Cloud Manager per AEM as a Cloud Service e le sue differenze con Cloud Manager per AEM in Adobe Manage Services (AMS).
+description: Scopri Cloud Manager per AEM as a Cloud Service e le sue differenze con Cloud Manager per AEM su Adobe Manage Services (AMS).
 version: Cloud Service
 feature: Cloud Manager
 topic: Migration, Upgrade
@@ -18,22 +18,22 @@ ht-degree: 2%
 
 # Cloud Manager
 
-Scopri Cloud Manager per AEM as a Cloud Service e le sue differenze con Cloud Manager per AEM in Adobe Manage Services (AMS).
+Scopri Cloud Manager per AEM as a Cloud Service e le sue differenze con Cloud Manager per AEM su Adobe Manage Services (AMS).
 
 >[!VIDEO](https://video.tv.adobe.com/v/336961?quality=12&learn=on)
 
-## Esercitazione pratica
+## Esercizio pratico
 
-Applica la tua conoscenza provando quello che hai imparato con questo esercizio pratico.
+Applica la tua conoscenza sperimentando ciò che hai imparato con questo esercizio pratico.
 
-Prima di provare l&#39;esercizio pratico, assicurati di aver visto e compreso il video precedente e i seguenti materiali:
+Prima di provare l&#39;esercizio pratico, assicurati di aver guardato e compreso il video precedente e i seguenti materiali:
 
-+ [Pensare diversamente a AEM as a Cloud Service](./introduction.md)
++ [Pensare diversamente all’AEM as a Cloud Service](./introduction.md)
 + [Onboarding](./onboarding.md)
 
-Inoltre, assicurati di aver completato l&#39;esercizio pratico precedente:
+Inoltre, assicurati di aver completato il precedente esercizio pratico:
 
-+ [Esercitazione pratica di onboarding](./onboarding.md#hands-on-exercise)
++ [Esercitazione pratica sull’onboarding](./onboarding.md#hands-on-exercise)
 
 <table style="border-width:0">
     <tr>
@@ -41,13 +41,13 @@ Inoltre, assicurati di aver completato l&#39;esercizio pratico precedente:
             <a  rel="noreferrer"
                 target="_blank"
                 href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session4-cloud-manager#bootcamp-session-4-cloud-manager-develop-and-deploy
-"><img alt="Esercitazione pratica dell’archivio GitHub" src="./assets/github.png"/>
+"><img alt="Esercitazione pratica archivio GitHub" src="./assets/github.png"/>
             </a>        
         </td>
         <td style="width:100%;margin-bottom:1rem;">
-            <div style="font-size:1.25rem;font-weight:400;">Hands-on con Cloud Manager</div>
+            <div style="font-size:1.25rem;font-weight:400;">Guida pratica con Cloud Manager</div>
             <p style="margin:1rem 0">
-                Esplora l’attivazione di una pipeline di Cloud Manager utilizzando il plug-in AIO CLI Cloud Manager.
+                Scopri come attivare una pipeline di Cloud Manager utilizzando il plug-in AIO CLI Cloud Manager.
             </p>
             <a  rel="noreferrer"
                 target="_blank"

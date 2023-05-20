@@ -1,6 +1,6 @@
 ---
-title: Utilizzo AEM offerte di frammenti esperienza in Adobe Target
-description: Adobe Experience Manager 6.4 riimmagina il flusso di lavoro di personalizzazione tra AEM e Target. Le esperienze create in AEM ora possono essere consegnate direttamente ad Adobe Target as HTML Offers. Consente agli addetti al marketing di testare e personalizzare facilmente i contenuti tra diversi canali.
+title: Utilizzo delle offerte dei frammenti di esperienza AEM in Adobe Target
+description: Adobe Experience Manager 6.4 riprogetta il flusso di lavoro di personalizzazione tra AEM e Target. Le esperienze create all’interno dell’AEM ora possono essere consegnate direttamente ad Adobe Target as HTML Offers. Consente agli addetti al marketing di testare e personalizzare facilmente i contenuti tra canali diversi.
 feature: Experience Fragments
 version: 6.4, 6.5
 topic: Personalization
@@ -14,24 +14,24 @@ ht-degree: 1%
 
 ---
 
-# Utilizzo di offerte di frammenti esperienza in Adobe Target{#using-experience-fragment-offers-within-adobe-target}
+# Utilizzo delle offerte dei frammenti di esperienza in Adobe Target{#using-experience-fragment-offers-within-adobe-target}
 
-Adobe Experience Manager immagina nuovamente il flusso di lavoro di personalizzazione tra AEM e Target. Le esperienze create in AEM ora possono essere consegnate direttamente ad Adobe Target as HTML Offers. Consente agli addetti al marketing di testare e personalizzare facilmente i contenuti tra diversi canali.
+Adobe Experience Manager reimmagina il flusso di lavoro di personalizzazione tra AEM e Target. Le esperienze create all’interno dell’AEM ora possono essere consegnate direttamente ad Adobe Target as HTML Offers. Consente agli addetti al marketing di testare e personalizzare facilmente i contenuti tra canali diversi.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22383?quality=12&learn=on)
 
 >[!NOTE]
 >
->Consigliato da utilizzare `at.js` libreria client e la best practice consiste nell’utilizzare soluzioni di gestione tag come Launch by Adobe, Adobe DTM o qualsiasi soluzione di gestione tag di terze parti per aggiungere librerie di target alle pagine del sito
+>Consigliato per l&#39;uso `at.js` e la best practice prevede l’utilizzo di soluzioni di gestione tag come Launch by Adobe, Adobe DTM o altre soluzioni di gestione tag di terze parti per aggiungere librerie di target alle pagine del sito
 
 
-* Il meccanismo di creazione dei contenuti semplice e potente di Adobe Experience Manager, unitamente all’intelligenza artificiale (AI) e all’apprendimento automatico di Adobe Target, consente agli autori dei contenuti di creare e gestire i contenuti per tutti i canali in una posizione centralizzata. Con la possibilità di esportare frammenti di esperienza in Adobe Target come offerte di HTML, gli addetti al marketing hanno ora maggiore flessibilità per creare un’esperienza più personalizzata utilizzando queste offerte e possono ora testare e scalare ogni esperienza creata.
-* La differenza principale tra le offerte HTML e le offerte di Frammenti esperienza è che la modifica per un momento successivo può essere eseguita solo in AEM e quindi sincronizzata con Adobe Target
-* La configurazione del servizio Cloud di Target applicata alla cartella Frammenti esperienza eredita tutti i frammenti esperienza creati direttamente nella cartella principale. La cartella figlio non eredita la configurazione di servizi cloud padre.
-* Per creare un’offerta personalizzata ora possiamo sfruttare facilmente il contenuto memorizzato in AEM.
-* Puoi creare tipi di attività Target, comprese quelle basate su Sensei come Allocazione automatica, Targeting automatico e Automated Personalization
+* Il potente e facile meccanismo di creazione dei contenuti di Adobe Experience Manager, insieme all’intelligenza artificiale (AI) e al machine learning di Adobe Target, consente agli autori dei contenuti di creare e gestire i contenuti per tutti i canali in una posizione centralizzata. Con la possibilità di esportare frammenti di esperienza in offerte HTML di Adobe Target, gli esperti di marketing ora hanno più flessibilità per creare un’esperienza più personalizzata utilizzando queste offerte e possono testare e scalare ogni esperienza creata.
+* La differenza principale tra le offerte HTML e le offerte dei frammenti di esperienza è che la modifica per il secondo può essere eseguita solo nell’AEM e quindi sincronizzata con Adobe Target
+* La configurazione del servizio cloud di Target applicata alla cartella Frammenti di esperienza eredita tutti i Frammenti di esperienza creati direttamente nella cartella principale. La cartella secondaria non eredita la configurazione dei servizi cloud principali.
+* Per creare un’offerta personalizzata ora possiamo facilmente sfruttare i contenuti archiviati all’interno dell’AEM.
+* Puoi creare tipi di attività Target, comprese le attività basate su Sensei come Allocazione automatica, Targeting automatico e Automated Personalization
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Documentazione sui frammenti esperienza](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
+* [Documentazione di Frammenti esperienza](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
 * [Utilizzo di Frammenti esperienza](/help/sites/experience-fragments/experience-fragments-feature-video-use.md)

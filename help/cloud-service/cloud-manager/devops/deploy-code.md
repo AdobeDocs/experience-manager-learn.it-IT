@@ -1,6 +1,6 @@
 ---
-title: Distribuzione di progetti di codice AEM a AEM as a Cloud Service
-description: Esplora la distribuzione di un progetto di codice AEM per AEM as a Cloud Service tramite Cloud Manager.
+title: Implementazione dei progetti del codice AEM in AEM as a Cloud Service
+description: Esplora la distribuzione di un progetto di codice AEM in AEM as a Cloud Service tramite Cloud Manager.
 role: Developer
 level: Beginner
 type: Tutorial

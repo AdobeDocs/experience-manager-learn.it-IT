@@ -1,6 +1,6 @@
 ---
 title: Microservizi per la generazione di documenti in AEM Forms CS
-description: Utilizzare i microservizi di generazione dei documenti da un'applicazione esterna.
+description: Utilizzare i microservizi per la generazione di documenti da un'applicazione esterna.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -19,10 +19,10 @@ ht-degree: 1%
 
 # Introduzione
 
-In questo corso, utilizzeremo i microservizi di generazione dei documenti per generare un pdf unendo i dati con un modello XDP. Per utilizzare questi microservizi da un&#39;applicazione esterna, procedere come segue:
+In questo corso utilizzeremo i microservizi di generazione dei documenti per generare un PDF unendo i dati con un modello XDP. Per utilizzare questi microservizi da un’applicazione esterna, è necessario effettuare le seguenti operazioni:
 
-1. Genera le credenziali del servizio per un account tecnico AEM
-1. Crea un JSON Web Token (JWT) dalle credenziali del servizio e scambialo per un token di accesso
+1. Generare le credenziali del servizio per un account tecnico AEM
+1. Creare un token web JSON (JWT) dalle credenziali del servizio e scambiarlo con un token di accesso
 1. Configurare l’accesso per l’account tecnico in AEM
 1. Effettuare chiamate HTTP utilizzando il token di accesso
 

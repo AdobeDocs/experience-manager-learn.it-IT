@@ -1,6 +1,6 @@
 ---
 title: Strumenti di refactoring del codice
-description: Scopri come gli strumenti di refactoring del codice AEM consentono di automatizzare la conversione dei progetti AEM esistenti per renderli AEM compatibili con l’as a Cloud Service.
+description: Scopri in che modo gli strumenti di refactoring del codice AEM consentono di automatizzare la conversione dei progetti AEM esistenti affinché siano compatibili con l’AEM as a Cloud Service.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -18,6 +18,6 @@ ht-degree: 12%
 
 # Strumenti di refactoring del codice
 
-Scopri come gli strumenti di refactoring del codice AEM consentono di automatizzare la conversione dei progetti AEM esistenti per renderli AEM compatibili con l’as a Cloud Service.
+Scopri in che modo gli strumenti di refactoring del codice AEM consentono di automatizzare la conversione dei progetti AEM esistenti affinché siano compatibili con l’AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336693?quality=12&learn=on)

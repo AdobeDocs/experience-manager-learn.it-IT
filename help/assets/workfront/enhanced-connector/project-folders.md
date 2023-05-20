@@ -1,6 +1,6 @@
 ---
-title: Cartelle dei progetti del connettore avanzato Workfront
-description: Informazioni su Cartelle di progetto quando si utilizza il connettore avanzato Adobe Workfront e Experience Manager Assets.
+title: Cartelle di progetto del connettore avanzato di Workfront
+description: Scopri le cartelle di progetto quando utilizzi il connettore avanzato di Adobe Workfront e Experience Manager Assets.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, User
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 # Cartelle di progetto del connettore avanzato Workfront
 
-Scopri le cartelle di progetto quando utilizzi il connettore avanzato Adobe Workfront e Experience Manager Assets, tra cui:
+Scopri le cartelle di progetto quando utilizzi il connettore avanzato di Adobe Workfront e Experience Manager Assets, tra cui:
 
 + Cartelle collegate al progetto
-+ Mappatura dei metadati delle cartelle
-+ Ereditarietà dei metadati della cartella
++ Mappatura metadati cartelle
++ Ereditarietà metadati cartelle
 
 >[!VIDEO](https://video.tv.adobe.com/v/337586?quality=12&learn=on)

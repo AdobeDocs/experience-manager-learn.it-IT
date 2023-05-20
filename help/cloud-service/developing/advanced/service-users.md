@@ -25,8 +25,8 @@ Scopri come creare e utilizzare gli utenti del servizio nel codice AEM per forni
 
 ## Riferimenti
 
-+ [Documentazione Sling Repository Initialization (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html)
-+ [Documentazione sull&#39;autenticazione del servizio Sling](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html)
++ [Documentazione sull’inizializzazione dell’archivio Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html)
++ [Documentazione di autenticazione del servizio Sling](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html)
 
 ## Codice
 

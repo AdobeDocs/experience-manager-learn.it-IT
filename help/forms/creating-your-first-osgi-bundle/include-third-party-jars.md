@@ -1,6 +1,6 @@
 ---
-title: Compresi i barattoli di terze parti
-description: Scopri come utilizzare un file jar di terze parti nel tuo progetto AEM
+title: Inclusione di file JAR di terze parti
+description: Scopri come utilizzare il file jar di terze parti nel progetto AEM
 version: 6.4,6.5
 feature: Adaptive Forms
 topic: Development
@@ -9,7 +9,8 @@ level: Beginner
 kt: 11245
 last-substantial-update: 2022-10-15T00:00:00Z
 thumbnail: third-party.jpg
-source-git-commit: 4af14b7d72ebdbea04e68a9a64afa1a96d1c1aeb
+exl-id: e8841c63-3159-4f13-89a1-d8592af514e3
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -18,10 +19,10 @@ ht-degree: 0%
 
 # Inclusione di bundle di terze parti nel progetto AEM
 
-In questo articolo passeremo attraverso i passaggi necessari per includere il bundle OSGi di terze parti nel tuo progetto AEM.Per lo scopo di questo articolo includeremo il [jsch-0.1.55.jar](https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar) nel nostro progetto AEM.  SE l&#39;OSGi è disponibile nell&#39;archivio maven, includi la dipendenza del bundle nel file POM.xml del progetto.
+In questo articolo esamineremo i passaggi necessari per includere il bundle OSGi di terze parti nel tuo progetto AEM. Ai fini di questo articolo includeremo il [jsch-0.1.55.jar](https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar) nel nostro progetto AEM.  SE l’OSGi è disponibile nell’archivio maven, includi la dipendenza del bundle nel file POM.xml del progetto.
 
 >[!NOTE]
-> Si presume che il jar di terze parti sia un bundle OSGi
+> Si presume che il file jar di terze parti sia un bundle OSGi
 
 ```java
 <!-- https://mvnrepository.com/artifact/com.jcraft/jsch -->
@@ -32,7 +33,7 @@ In questo articolo passeremo attraverso i passaggi necessari per includere il bu
 </dependency>
 ```
 
-Se il tuo bundle OSGi è sul tuo file system, crea una cartella chiamata **localjar** sotto la directory di base del progetto (C:\aemformsbundles\AEMFormsProcessStep\localjar) la dipendenza avrà un aspetto simile a questo
+Se il bundle OSGi si trova nel file system, crea una cartella denominata **localjar** nella directory base del progetto (C:\aemformsbundles\AEMFormsProcessStep\localjar) la dipendenza avrà un aspetto simile al seguente
 
 ```java
 <dependency>
@@ -44,23 +45,20 @@ Se il tuo bundle OSGi è sul tuo file system, crea una cartella chiamata **local
 </dependency>
 ```
 
-## Creare la struttura della cartella
+## Creare la struttura di cartelle
 
-Stiamo aggiungendo questo bundle al nostro progetto AEM **AEMFormsProcessStep** che risiede nel **c:\aemformsbundles** cartella
+Stiamo aggiungendo questo pacchetto al nostro progetto AEM **AEMFormsProcessStep** che risiede in **c:\aemformsbundles** cartella
 
-* Apri **filter.xml** dal sito C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\META-INF\vault folder of your project Make a note of the root attribute of the filter element.
+* Apri **filter.xml** dalla cartella C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\META-INF\vault del progetto Prendi nota dell’attributo root dell’elemento filtro.
 
 * Crea la seguente struttura di cartelle C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\jcr_root\apps\AEMFormsProcessStep-vendor-packages\application\install
-* La **apps/AEMFormsProcessStep-vendor-packages** è il valore dell&#39;attributo root nel filtro.xml
-* Aggiorna la sezione dipendenze del POM.xml del progetto
-* Apri il prompt dei comandi. Passa alla cartella del progetto (c:\aemformsbundles\AEMFormsProcessStep) nel mio caso. Esegui il seguente comando
+* Il **apps/AEMFormsProcessStep-vendor-packages** è il valore dell&#39;attributo principale nel file filter.xml
+* Aggiornare la sezione delle dipendenze del file POM.xml del progetto
+* Apri il prompt dei comandi. Vai alla cartella del progetto (c:\aemformsbundles\AEMFormsProcessStep) nel mio caso. Esegui il comando seguente
 
 ```java
 mvn clean install -PautoInstallSinglePackage
 ```
 
-Se tutto va bene, il pacchetto viene installato insieme al bundle di terze parti nella tua istanza AEM. Puoi verificare la presenza del bundle utilizzando [console web felix](http://localhost:4502/system/console/bundles). Il bundle di terze parti è disponibile nella cartella /apps del `crx` repository come mostrato di seguito
-![di terzi](assets/custom-bundle1.png)
-
-
-
+Se tutto va bene, il pacchetto viene installato insieme al bundle di terze parti nell’istanza AEM. Puoi controllare il bundle utilizzando [console web felix](http://localhost:4502/system/console/bundles). Il bundle di terze parti è disponibile nella cartella /apps del file `crx` archivio come mostrato di seguito
+![terze parti](assets/custom-bundle1.png)

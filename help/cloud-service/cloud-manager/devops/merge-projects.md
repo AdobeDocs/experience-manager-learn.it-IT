@@ -1,6 +1,6 @@
 ---
-title: Unione di progetti AEM con desktop Github
-description: Utilizzando Github Desktop, scopri come è possibile unire più progetti in un unico progetto per la distribuzione AEM as a Cloud Service tramite Cloud Manager.
+title: Unione di progetti AEM tramite Github Desktop
+description: Utilizzando Github Desktop, scopri come unire più progetti in un unico progetto da distribuire su AEM as a Cloud Service tramite Cloud Manager.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Unione di progetti AEM per la distribuzione tramite Cloud Manager
+# Unione di progetti AEM da implementare tramite Cloud Manager
 
-Scopri in che modo è possibile unire più progetti in un unico progetto per la distribuzione in AEM as a Cloud Service utilizzando Cloud Manager.
+Scopri come unire più progetti in un unico progetto da implementare in AEM as a Cloud Service tramite Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330535?quality=12&learn=on)

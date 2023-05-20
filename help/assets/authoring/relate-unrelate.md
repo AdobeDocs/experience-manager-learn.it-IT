@@ -1,5 +1,5 @@
 ---
-title: Come correlare e separare le attività in AEM
+title: Come correlare e non correlare le attività in AEM
 description: Scopri come stabilire e gestire le relazioni tra le risorse in AEM.
 feature: Asset Management
 role: User
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ---
 
-# Relazione e scollega
+# Correlare e non correlare
 
 Scopri come stabilire e gestire le relazioni tra le risorse in AEM.
 

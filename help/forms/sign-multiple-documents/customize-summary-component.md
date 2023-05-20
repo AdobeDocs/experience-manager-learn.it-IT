@@ -1,6 +1,6 @@
 ---
-title: Personalizza componente di riepilogo
-description: Estendi il componente del passaggio di riepilogo per includere la possibilità di passare al modulo successivo nel pacchetto.
+title: Personalizza componente Riepilogo
+description: Estendi il componente della fase di riepilogo per includere la possibilità di passare al modulo successivo nel pacchetto.
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6894
@@ -18,22 +18,22 @@ ht-degree: 1%
 
 # Personalizza passaggio di riepilogo
 
-Il componente Passaggio di riepilogo viene utilizzato per visualizzare il riepilogo dell’invio del modulo con un collegamento per scaricare il modulo firmato. Il passaggio di riepilogo viene in genere posizionato nell’ultimo pannello del modulo.
-Ai fini di questo caso d’uso abbiamo creato un nuovo componente basato sul componente Riepilogo preconfigurato e abbiamo esteso la funzionalità per includere clientlib personalizzate.
+Il componente Passaggio di riepilogo viene utilizzato per visualizzare il riepilogo dell’invio del modulo con un collegamento per scaricare il modulo firmato. Il passaggio di riepilogo viene in genere inserito nell’ultimo pannello del modulo.
+Ai fini di questo caso d’uso, abbiamo creato un nuovo componente basato sul componente predefinito Riepilogo e abbiamo esteso la funzionalità per includere la libreria client personalizzata.
 
-Questo componente è identificato dall’etichetta Firma più moduli
+Questo componente è identificato dall’etichetta Firma più modulo
 
 La schermata seguente mostra il nuovo componente creato per visualizzare il messaggio al termine della cerimonia di firma
 
 ![componente di riepilogo](assets/summary.PNG)
 
-Il nuovo componente si basa sul componente di riepilogo predefinito.
+Il nuovo componente è basato sul componente di riepilogo fornito con il prodotto.
 ![component-prop](assets/componentprop.PNG)
 
 È stato aggiunto un pulsante per passare al modulo successivo per la firma
 ![template-code](assets/template-code.PNG)
 
-Il summary.jsp ha il seguente codice. Contiene un riferimento alla libreria client identificata dall’ID categoria **getnextform**
+Summary.jsp ha il seguente codice. Ha un riferimento alla libreria client identificata dall’ID categoria **getnextform**
 
 ```java
 <%--
@@ -50,4 +50,4 @@ Il componente di riepilogo personalizzato può essere [scaricato da qui](assets/
 
 ## Passaggi successivi
 
-[Ottenere il modulo successivo per la firma](./create-client-lib.md)
+[Ottieni il modulo successivo per la firma](./create-client-lib.md)

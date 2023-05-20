@@ -1,7 +1,7 @@
 ---
 title: Utilizzo del sistema di stili con AEM Sites
 seo-title: Using the Style System with Adobe Experience Manager, AEM Sites
-description: Il sistema di stili di Adobe Experience Manager consente varianti visive dei componenti senza sviluppo back-end, consentendo un migliore riutilizzo dei componenti AEM e un authoring dei contenuti più versatile ed efficiente. Il sistema di stili, utilizzato in combinazione con i componenti core AEM, l’editor di modelli e il layout dinamico, offre funzionalità avanzate per comporre rapidamente esperienze avanzate.
+description: Il sistema di stili di Adobe Experience Manager consente varianti visive di componenti senza sviluppo back-end, consentendo un migliore riutilizzo dei componenti AEM e una maggiore versatilità ed efficienza nell’authoring dei contenuti. Il sistema di stili, se utilizzato insieme ai componenti core AEM, all’editor di modelli e al layout reattivo, offre funzionalità potenti per comporre rapidamente esperienze avanzate.
 seo-description: Adobe Experience Manager's Style System allows visual variations of components without back-end development, allowing better re-use of AEM components, and more versatile and efficient content authoring. The Style System, when used in conjunction with AEM's Core Components, template editor, and responsive layout, offers powerful capabilities to quickly compose rich experiences.
 feature: Style System
 topics: authoring, front-end-development
@@ -24,16 +24,16 @@ ht-degree: 8%
 
 # Utilizzo del sistema di stili {#using-the-style-system-with-aem-sites}
 
-Il sistema di stili di Adobe Experience Manager consente varianti visive dei componenti senza sviluppo back-end, consentendo un migliore riutilizzo dei componenti AEM e un authoring dei contenuti più versatile ed efficiente. Il sistema di stili, utilizzato in combinazione con i componenti core AEM, l’editor di modelli e il layout dinamico, offre funzionalità avanzate per comporre rapidamente esperienze avanzate.
+Il sistema di stili di Adobe Experience Manager consente varianti visive di componenti senza sviluppo back-end, consentendo un migliore riutilizzo dei componenti AEM e una maggiore versatilità ed efficienza nell’authoring dei contenuti. Il sistema di stili, se utilizzato insieme ai componenti core AEM, all’editor di modelli e al layout reattivo, offre funzionalità potenti per comporre rapidamente esperienze avanzate.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21750?quality=12&learn=on)
 
-Questo video illustra come sfruttare il sistema di stili per creare apparenze visive notevolmente diverse per un singolo componente, utilizzando solo CSS.
+Questo video illustra come utilizzare il sistema di stili per creare aspetti visivi notevolmente diversi per un singolo componente, utilizzando solo gli stili CSS.
 
-Gli stili visualizzati vengono forniti dalla [Applicazione WKND](https://github.com/adobe/aem-guides-wknd). Questi stili sono definiti come CSS e non richiedono modifiche alla logica di back-end del componente, allo script HTL o al modello Sling.
+Gli stili mostrati sono forniti da [Applicazione WKND](https://github.com/adobe/aem-guides-wknd). Questi stili sono definiti come CSS e non richiedono modifiche alla logica di back-end del componente, allo script HTL o al modello Sling.
 
 ## Risorse aggiuntive {#additional-resources}
 
-Vuoi imparare a sviluppare con il sistema di stili? Consulta le seguenti esercitazioni:
+Vuoi scoprire come sviluppare con il sistema di stili? Consulta le seguenti esercitazioni:
 
 * [Sviluppo con il sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html?lang=it)

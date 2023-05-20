@@ -1,6 +1,6 @@
 ---
-title: Creare Forms per la firma
-description: Creare moduli da includere nel pacchetto di firma.
+title: Crea Forms per la firma
+description: Crea i moduli da includere nel pacchetto di firma.
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6893
@@ -16,38 +16,38 @@ ht-degree: 0%
 
 ---
 
-# Creazione di moduli per la firma
+# Creare moduli per la firma
 
-Il passaggio successivo consiste nel creare i moduli adattivi da includere nel pacchetto. Quando si creano moduli per la firma, tenere presente quanto segue:
+Il passaggio successivo consiste nel creare i moduli adattivi da includere nel pacchetto. Ricorda di rispettare i seguenti punti durante la creazione di moduli per la firma:
 
-* Assicurati che i moduli siano basati sul **SignMultipleForms** modello. In questo modo i moduli vengono precompilati con i dati recuperati dal database.
+* Assicurati che i moduli siano basati su **SignMultipleForms** modello. In questo modo i moduli vengono precompilati con i dati recuperati dal database.
 
-* I moduli devono essere configurati per utilizzare Acrobat Sign e il campo firmatario1 deve essere associato al campo E-mail del cliente
-* È inoltre necessario associare i moduli a clientLib **getnextform**
-* I moduli devono utilizzare il componente Passaggio firma .
-* Il modulo deve inoltre utilizzare **Firma multipla** componente. Questo componente consente di passare al modulo successivo per accedere al pacchetto.
-* L’invio del modulo deve essere configurato per attivare AEM flusso di lavoro **Aggiorna stato firma**
-* Assicurati che il Percorso file dati sia impostato su **Data.xml**. Questo è molto importante in quanto il codice di esempio cerca un file denominato Data.xml nel payload del processo di invio del modulo.
+* I moduli devono essere configurati per utilizzare Acrobat Sign e il campo signer1 deve essere associato al campo E-mail cliente
+* I moduli devono essere associati anche a clientLib denominata **getnextform**
+* I moduli devono utilizzare il componente Passaggio di firma.
+* Il modulo deve inoltre utilizzare il **Firma più moduli** componente. Questo componente consente di passare al modulo successivo per accedere al pacchetto.
+* L’invio del modulo deve essere configurato per attivare il flusso di lavoro AEM **Aggiorna stato firma**
+* Assicurarsi che il percorso del file di dati sia impostato su **Dati.xml**. Questo è molto importante, poiché il codice di esempio cerca un file denominato Data.xml nel payload del processo di invio del modulo.
 
-Dopo aver creato il modulo, includere **campi comuni** frammento di modulo adattivo nel modulo. Il frammento è contrassegnato come nascosto. Questo frammento contiene i campi seguenti.
+Dopo aver creato il modulo, includi **commonfield** frammento di modulo adattivo nel modulo. Il frammento è contrassegnato come nascosto. Questo frammento contiene i campi seguenti.
 
-* **firmato** - Campo che contiene lo stato della firma
-* **guid** - Identificatore univoco per identificare il modulo nel pacchetto
+* **firmato** - Campo contenente lo stato della firma
+* **GUID** - Identificatore univoco per identificare il modulo nel pacchetto
 * **customerEmail** - Questo campo contiene l’e-mail del cliente
 
 
 
 >[!NOTE]
->Se si desidera trasferire i dati da un modulo a un altro del pacchetto, assicurarsi che i campi del modulo siano denominati in modo identico in tutti i moduli.
+>Se si desidera trasferire i dati da un modulo a un altro nel pacchetto, assicurarsi che i campi del modulo siano denominati in modo identico in tutti i moduli.
 
-## Tutti i moduli completati
+## Modulo completato
 
-Una volta compilati e firmati tutti i moduli del pacchetto, è necessario visualizzare il messaggio appropriato. Questo messaggio viene visualizzato con l’aiuto del modulo Alldone. Il modulo Alldone è incluso nei moduli di esempio.
+Una volta compilati e firmati tutti i moduli del pacchetto, è necessario visualizzare il messaggio appropriato. Questo messaggio viene visualizzato con l&#39;aiuto di tutti i moduli. Il modulo Alldone è incluso nei moduli di esempio.
 
 ## Risorse
 
-I moduli di esempio, tra cui quelli utilizzati in questa esercitazione, possono essere [scaricato da qui](assets/forms-for-signing.zip)
+I moduli di esempio che includono quelli utilizzati in questa esercitazione possono essere [scaricato da qui](assets/forms-for-signing.zip)
 
 ## Passaggi successivi
 
-[Verificare la soluzione sul sistema locale](./testing-and-trouble-shooting.md)
+[Test della soluzione sul sistema locale](./testing-and-trouble-shooting.md)

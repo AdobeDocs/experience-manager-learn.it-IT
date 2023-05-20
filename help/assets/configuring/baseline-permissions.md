@@ -1,6 +1,6 @@
 ---
-title: Autorizzazioni di base
-description: La gestione dell’accesso degli utenti alle cartelle delle risorse della linea di base è un aspetto fondamentale della governance e garantisce il supporto corretto dei processi.
+title: Autorizzazioni linea di base
+description: La gestione dell’accesso degli utenti alle cartelle delle risorse di base è un aspetto fondamentale della governance e garantisce il supporto corretto dei processi.
 feature: Asset Management
 version: Cloud Service
 kt: 4870
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Autorizzazioni di base
+# Autorizzazioni linea di base
 
-Gestione dell’accesso utente al [cartelle risorse di base](./baseline-folders.md) è un aspetto critico della governance e garantisce il supporto corretto dei processi.
+Gestione dell’accesso degli utenti in [cartelle risorse di base](./baseline-folders.md) è un aspetto fondamentale della governance e garantisce che i processi possano essere correttamente supportati.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37696?quality=12&learn=on)

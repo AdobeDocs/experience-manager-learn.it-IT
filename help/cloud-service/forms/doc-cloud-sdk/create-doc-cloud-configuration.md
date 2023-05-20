@@ -1,6 +1,6 @@
 ---
 title: Creare una configurazione OSGi personalizzata
-description: Configurazione OSGi personalizzata per acquisire i dettagli specifici di document cloud
+description: Configurazione OSGi personalizzata per acquisire dettagli specifici di document cloud
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -19,15 +19,15 @@ ht-degree: 1%
 
 # Introduzione
 
-Crea una configurazione OSGi personalizzata per acquisire le credenziali dell’account cloud del documento
+Crea una configurazione OSGi personalizzata per acquisire le credenziali dell’account Document Cloud
 
 
-Per creare una configurazione OSGi personalizzata, è necessario innanzitutto creare un’interfaccia i cui metodi pubblici rappresentino i campi nella configurazione.
+Per effettuare una configurazione OSGi personalizzata, devi innanzitutto creare un’interfaccia i cui metodi pubblici rappresenteranno i campi nella configurazione.
 
 ![doc-cloud-config](assets/doc-cloud-configuration.JPG)
 
 
-Crea un&#39;interfaccia denominata DocumentCloudConfiguration e incolla in essa il seguente codice.
+Crea un’interfaccia denominata DocumentCloudConfiguration e incolla il seguente codice al suo interno.
 
 ```java
 package com.aemforms.doccloud.core;

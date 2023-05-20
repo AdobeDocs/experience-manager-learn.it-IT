@@ -18,7 +18,7 @@ ht-degree: 3%
 
 # Creare una libreria client
 
-Crea una libreria client personalizzata, clientlib per farla breve, per estrarre i parametri url che passano tali parametri nella chiamata di GET. La chiamata GET viene effettuata a un servlet montato su /bin/getnextformtosign che restituisce l’url del modulo successivo da firmare nel pacchetto.
+Crea una libreria client personalizzata, clientlib in breve, per estrarre i parametri URL e trasmetterli nella chiamata GET. La chiamata GET viene effettuata a un servlet montato su /bin/getnextformtosign che restituisce l’URL del modulo successivo per l’accesso al pacchetto.
 
 Di seguito è riportato il codice utilizzato nella funzione javascript clientlib
 
@@ -74,7 +74,7 @@ $(document).ready(function()
 
 ## Risorse
 
-[La clientlib può essere scaricata da qui](assets/get-next-form-client-lib.zip)
+[La libreria client può essere scaricata da qui](assets/get-next-form-client-lib.zip)
 
 ## Passaggi successivi
 

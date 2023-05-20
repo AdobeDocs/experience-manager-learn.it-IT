@@ -1,6 +1,6 @@
 ---
 title: Aggiornamento di una copia in lingua con Launches
-description: Scopri come aggiornare, revisionare e approvare le modifiche in una copia in lingua con l’aiuto di Launches.
+description: Scopri come aggiornare, rivedere e approvare le modifiche in una copia in lingua con l’aiuto di Launches.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 # Aggiornamento di una copia in lingua con Launches {#update-language-copy-launch}
 
-Scopri come aggiornare, revisionare e approvare le modifiche in una copia in lingua con l’aiuto di Launches.
+Scopri come aggiornare, rivedere e approvare le modifiche in una copia in lingua con l’aiuto di Launches.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36683?quality=12&learn=on)

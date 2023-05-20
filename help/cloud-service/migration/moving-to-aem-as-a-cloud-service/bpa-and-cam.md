@@ -12,11 +12,11 @@ exl-id: f8289dd4-b293-4b8f-b14d-daec091728c0
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '427'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-# Best practice Analyzer e Cloud Acceleration Manager
+# Best Practices Analyzer e Cloud Acceleration Manager
 
 Scopri come Best Practices Analyzer (BPA) e Cloud Acceleration Manager (CAM) forniscono una guida personalizzata per la migrazione a AEM as a Cloud Service. 
 
@@ -26,25 +26,25 @@ Scopri come Best Practices Analyzer (BPA) e Cloud Acceleration Manager (CAM) for
 
 ![Diagramma di alto livello BPA e CAM](assets/bpa-cam-diagram.png)
 
-Il pacchetto BPA deve essere installato su un clone dell’ambiente di produzione AEM 6.x. Il BPA genera un rapporto che può essere caricato in CAM, che fornirà indicazioni sulle attività chiave che devono essere svolte per passare a AEM as a Cloud Service.
+Il pacchetto BPA deve essere installato su un clone dell’ambiente AEM 6.x di produzione. Il BPA genererà un rapporto che potrà poi essere caricato in CAM, che fornirà indicazioni sulle attività chiave da svolgere per passare a AEM as a Cloud Service.
 
 ## Attività chiave
 
-+ Crea un clone dell’ambiente di produzione 6.x. Quando esegui la migrazione del contenuto e del codice di refactoring, avere un clone di un ambiente di produzione è utile per testare vari strumenti e modifiche.
-+ Scarica l’ultimo strumento BPA da [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) e installa nell’ambiente clonato AEM 6.x.
-+ Utilizza lo strumento BPA per generare un rapporto che può essere caricato su Cloud Acceleration Manager (CAM). CAM accessibile tramite [https://experience.adobe.com/](https://experience.adobe.com/) > **Experience Manager** > **Cloud Acceleration Manager**.
-+ Utilizza CAM per fornire indicazioni sugli aggiornamenti da apportare alla base di codice e all&#39;ambiente correnti per passare a AEM as a Cloud Service.
++ Crea un clone dell’ambiente di produzione 6.x. Durante la migrazione dei contenuti e il refactoring del codice, duplicare un ambiente di produzione è utile per testare vari strumenti e modifiche.
++ Scarica l’ultimo strumento BPA da [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html) e installarlo nell’ambiente clonato AEM 6.x.
++ Utilizza lo strumento BPA per generare un rapporto che può essere caricato in Cloud Acceleration Manager (CAM). Accesso a CAM tramite [https://experience.adobe.com/](https://experience.adobe.com/) > **Experience Manager** > **Cloud Acceleration Manager**.
++ Utilizza CAM per fornire indicazioni su quali aggiornamenti devono essere apportati alla base di codice e all’ambiente correnti per passare a AEM as a Cloud Service.
 
-## Esercitazione pratica
+## Esercizio pratico
 
-Applica la tua conoscenza provando quello che hai imparato con questo esercizio pratico.
+Applica la tua conoscenza sperimentando ciò che hai imparato con questo esercizio pratico.
 
-Prima di provare l&#39;esercizio pratico, assicurati di aver visto e compreso il video precedente e i seguenti materiali:
+Prima di provare l&#39;esercizio pratico, assicurati di aver guardato e compreso il video precedente e i seguenti materiali:
 
-+ [Pensare diversamente a AEM as a Cloud Service](./introduction.md)
-+ [Che cosa è AEM as a Cloud Service?](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html?lang=en)
++ [Pensare diversamente all’AEM as a Cloud Service](./introduction.md)
++ [Cos’è l’AEM as a Cloud Service?](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html?lang=en)
 + [Architettura di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=en)
-+ [Contenuto variabile e immutabile](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/mutable-immutable.html?lang=en)
++ [Contenuto mutabile e immutabile](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/mutable-immutable.html?lang=en)
 + [Differenze nello sviluppo per AEM as a Cloud Service e AEM 6.x](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#developing)
 
 <table style="border-width:0">
@@ -52,13 +52,13 @@ Prima di provare l&#39;esercizio pratico, assicurati di aver visto e compreso il
         <td style="width:150px">
             <a  rel="noreferrer"
                 target="_blank"
-                href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session1-differently#bootcamp---session-1-introduction-and-thinking-differently"><img alt="Esercitazione pratica dell’archivio GitHub" src="./assets/github.png"/>
+                href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session1-differently#bootcamp---session-1-introduction-and-thinking-differently"><img alt="Esercitazione pratica archivio GitHub" src="./assets/github.png"/>
             </a>        
         </td>
         <td style="width:100%;margin-bottom:1rem;">
-            <div style="font-size:1.25rem;font-weight:400;">Maniera con Best Practices Analyzer</div>
+            <div style="font-size:1.25rem;font-weight:400;">Analisi pratica delle best practice</div>
             <p style="margin:1rem 0">
-                Esplora Best Practices Analyzer (BPA) e controlla i risultati eseguendo l’analisi rispetto a una base di codice WKND legacy contenente violazioni di esempio.
+                Esplora Best Practices Analyzer (BPA) e rivedi i risultati eseguendolo in base a una base di codice WKND legacy contenente violazioni di esempio.
             </p>
             <a  rel="noreferrer"
                 target="_blank"
@@ -72,4 +72,4 @@ Prima di provare l&#39;esercizio pratico, assicurati di aver visto e compreso il
 
 ## Altre risorse
 
-+ [Scarica Best Practices Analyzer](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Best*+Practices*+Analyzer*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=1)
++ [Scaricare Best Practices Analyzer](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Best*+Practices*+Analyzer*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=1)

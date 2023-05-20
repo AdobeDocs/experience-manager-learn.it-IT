@@ -1,5 +1,5 @@
 ---
-title: Sviluppo con gli utenti dei servizi in AEM Forms
+title: Sviluppo con gli utenti del servizio in AEM Forms
 description: Questo articolo illustra il processo di creazione di un utente di servizio in AEM Forms
 feature: Adaptive Forms
 topic: Development
@@ -14,47 +14,47 @@ ht-degree: 1%
 
 ---
 
-# Sviluppo con gli utenti dei servizi in AEM Forms
+# Sviluppo con gli utenti del servizio in AEM Forms
 
 Questo articolo illustra il processo di creazione di un utente di servizio in AEM Forms
 
-Nelle versioni precedenti di Adobe Experience Manager (AEM), il risolutore di risorse amministrative veniva utilizzato per l’elaborazione back-end che richiedeva l’accesso all’archivio. L’utilizzo del risolutore risorse amministrative è obsoleto in AEM 6.3. Viene invece utilizzato un utente di sistema con autorizzazioni specifiche nel repository.
+Nelle versioni precedenti di Adobe Experience Manager (AEM), il risolutore risorse amministrativo veniva utilizzato per l’elaborazione back-end che richiedeva l’accesso all’archivio. L’utilizzo del risolutore risorse amministrativo è diventato obsoleto in AEM 6.3. Viene invece utilizzato un utente di sistema con autorizzazioni specifiche nell’archivio.
 
 Ulteriori informazioni sui dettagli di [creazione e utilizzo di utenti del servizio in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
 
-Questo articolo illustra la creazione di un utente di sistema e la configurazione delle proprietà di mappatura utente.
+Questo articolo illustra come creare un utente di sistema e configurare le proprietà di mappatura utente.
 
-1. Passa a [http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)
-1. Accedi come amministratore &#39;
-1. Fai clic su &#39; Amministrazione utente &#39;
+1. Accedi a [http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)
+1. Accedi come &#39; admin &#39;
+1. Fai clic su &quot;Amministrazione utenti&quot;
 1. Fai clic su &quot;Crea utente di sistema&quot;
-1. Imposta il tipo userid come &#39; data &#39; e fai clic sull&#39;icona verde per completare il processo di creazione dell&#39;utente di sistema
-1. [Apri configMgr](http://localhost:4502/system/console/configMgr)
-1. Cerca _Servizio mappatore utenti del servizio Apache Sling_ e fai clic su per aprire le proprietà
-1. Fai clic sul pulsante *+* icona (più) per aggiungere la seguente mappatura del servizio
+1. Imposta il tipo di ID utente come &quot;data&quot; e fai clic sull’icona verde per completare il processo di creazione dell’utente di sistema
+1. [Apri Configuration Manager](http://localhost:4502/system/console/configMgr)
+1. Cerca _Servizio User Mapper di Apache Sling_ e fai clic su per aprire le proprietà
+1. Fai clic su *+* (più) per aggiungere la seguente mappatura del servizio
 
    * DevelopingWithServiceUser.core:getresourceresolver=data
    * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 
-1. Fai clic su &#39; Salva &#39;
+1. Fai clic su Salva
 
-Nell&#39;impostazione di configurazione di cui sopra DevelopingWithServiceUser.core è il nome simbolico del bundle. getresourceresolver è il nome del sottoservizio.data è l&#39;utente di sistema creato nel passaggio precedente.
+Nell’impostazione di configurazione precedente DevelopingWithServiceUser.core è il nome simbolico del bundle. getresourceresolver è il nome del servizio secondario. data è l&#39;utente di sistema creato nel passaggio precedente.
 
-Possiamo anche ottenere il risolutore risorse per conto dell&#39;utente di servizio fd. Questo utente di servizio viene utilizzato per document services. Ad esempio, se desideri certificare/applicare diritti di utilizzo, ecc., utilizzeremo il risolutore di risorse dell&#39;utente di servizio fd per eseguire le operazioni
+Possiamo anche ottenere il risolutore risorse per conto dell’utente fd-service. Questo utente del servizio viene utilizzato per i servizi documentali. Ad esempio, se desideri certificare/applicare i diritti di utilizzo, utilizzeremo il risolutore risorse dell’utente fd-service per eseguire le operazioni
 
 1. [Scarica e decomprimi il file zip associato a questo articolo.](assets/developingwithserviceuser.zip)
-1. Passa a [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
+1. Accedi a [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 1. Carica e avvia il bundle OSGi
 1. Assicurati che il bundle sia in stato attivo
-1. È stata creata una *Utente di sistema* e ha inoltre implementato *Service User bundle*.
+1. Ora hai creato una *Utente di sistema* e ha anche implementato *Pacchetto utenti del servizio*.
 
-   Per fornire l&#39;accesso a /content, assegna all&#39;utente di sistema (&#39; dati &#39;) le autorizzazioni di lettura sul nodo del contenuto.
+   Per fornire l’accesso a /content, assegna all’utente di sistema (&quot;dati&quot;) le autorizzazioni di lettura sul nodo del contenuto.
 
-   1. Passa a [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
-   1. Cerca i dati dell&#39;utente &#39;. Si tratta dello stesso utente di sistema creato nel passaggio precedente.
-   1. Fai doppio clic sull&#39;utente e quindi fai clic sulla scheda &quot;Autorizzazioni&quot;
-   1. Assegna a &#39; read &#39; l&#39;accesso alla cartella &#39;content&#39;.
-   1. Per utilizzare l&#39;utente del servizio per ottenere l&#39;accesso alla cartella /content, utilizza il seguente codice
+   1. Accedi a [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
+   1. Cerca dati utente &#39;. Si tratta dello stesso utente di sistema creato nel passaggio precedente.
+   1. Fai doppio clic sull’utente e quindi fai clic sulla scheda &quot;Autorizzazioni&quot;
+   1. Concedi l’accesso in lettura alla cartella &quot;content&quot;.
+   1. Per utilizzare l’utente del servizio per accedere alla cartella /content, utilizza il seguente codice
 
 
 
@@ -68,7 +68,7 @@ resourceResolver = aemDemoListings.getServiceResolver();
 Resource contentResource = resourceResolver.getResource("/content/forms/af/sandbox/abc.pdf");
 ```
 
-Se desideri accedere al file /content/dam/data.json nel tuo bundle, userai il seguente codice. Questo codice presuppone che tu abbia dato le autorizzazioni di lettura all&#39;utente &quot;data&quot; sul nodo /content/dam/
+Se desideri accedere al file /content/dam/data.json nel pacchetto, utilizza il seguente codice. Questo codice presuppone che tu abbia dato le autorizzazioni di lettura all’utente &quot;dati&quot; sul nodo /content/dam/
 
 ```java
 @Reference
@@ -93,7 +93,7 @@ try {
 }
 ```
 
-Il codice completo dell&#39;attuazione è riportato di seguito
+Il codice completo dell’implementazione è riportato di seguito
 
 ```java
 package com.mergeandfuse.getserviceuserresolver.impl;

@@ -1,6 +1,6 @@
 ---
-title: Panoramica del pannello Asset Link di Adobe
-description: Adobe Asset Link consente ai creativi di sfogliare, cercare, estrarre e archiviare le risorse memorizzate in AEM Assets tramite il pannello in-app in InDesign, Photoshop e Illustrator. Scopri l’interfaccia utente e le funzionalità del pannello Adobe Asset Link.
+title: Panoramica del pannello Adobe Asset Link
+description: Adobe Asset Link consente ai creativi di sfogliare, cercare, estrarre e archiviare le risorse memorizzate in AEM Assets tramite il pannello in-app in InDesign, Photoshop e Illustrator. Scopri l’interfaccia utente e le funzionalità del pannello Asset Link di Adobe.
 sub-product: Experience Manager Assets
 feature: Adobe Asset Link
 version: Cloud Service
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Panoramica del pannello Asset Link di Adobe {#adobe-asset-link-panel-overview}
+# Panoramica del pannello Adobe Asset Link {#adobe-asset-link-panel-overview}
 
-Adobe Asset Link consente ai creativi di sfogliare, cercare, estrarre e archiviare le risorse memorizzate in AEM Assets tramite il pannello in-app in InDesign, Photoshop e Illustrator. Scopri l’interfaccia utente e le funzionalità del pannello Adobe Asset Link.
+Adobe Asset Link consente ai creativi di sfogliare, cercare, estrarre e archiviare le risorse memorizzate in AEM Assets tramite il pannello in-app in InDesign, Photoshop e Illustrator. Scopri l’interfaccia utente e le funzionalità del pannello Asset Link di Adobe.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33734?quality=12&learn=on)

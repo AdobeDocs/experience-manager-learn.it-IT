@@ -1,6 +1,6 @@
 ---
-title: Salvataggio e recupero dei dati dei moduli adattivi
-description: Salvataggio e recupero dei dati del modulo adattivo dal database. Questa funzionalità consente ai compilatori di salvare il modulo e continuare a compilarlo in un secondo momento.
+title: Salvataggio e recupero di dati di moduli adattivi
+description: Salvataggio e recupero dei dati dei moduli adattivi dal database. Questa funzionalità consente ai compilatori di moduli di salvare il modulo e continuare a compilarlo in una data successiva.
 feature: Adaptive Forms
 topic: Development
 role: Developer
@@ -15,33 +15,33 @@ ht-degree: 0%
 ---
 
 
-# Salvataggio e recupero dei dati dei moduli adattivi
+# Salvataggio e recupero di dati di moduli adattivi
 
-Questo articolo illustra i passaggi necessari per salvare e recuperare i dati del modulo adattivo dal database. Il database MySQL è stato utilizzato per memorizzare i dati del modulo adattivo. Ad alto livello, i seguenti sono i passaggi per ottenere il caso d’uso:
+Questo articolo illustra i passaggi necessari per salvare e recuperare i dati dei moduli adattivi dal database. Database MySQL utilizzato per memorizzare i dati del modulo adattivo. Ad alto livello, per ottenere il caso d’uso sono necessari i seguenti passaggi:
 
 * [Configura origine dati](#Configure-Data-Source)
-* [Crea servlet per scrivere i dati nel database](#create-servlet)
-* [Creare il servizio OSGI per recuperare i dati memorizzati](#create-osgi-service)
+* [Creare un servlet per scrivere i dati nel database](#create-servlet)
+* [Crea servizio OSGI per recuperare i dati memorizzati](#create-osgi-service)
 * [Crea libreria client](#create-client-library)
-* [Creare un modello di modulo adattivo e un componente pagina](#form-template-and-page-component)
-* [Dimostrazione della capacità](#capability-demo)
+* [Creare un modello di modulo adattivo e il componente Pagina](#form-template-and-page-component)
+* [Dimostrazione delle funzionalità](#capability-demo)
 * [Distribuisci sul server](#deploy-on-your-server)
 
 ## Configura origine dati {#Configure-Data-Source}
 
-L’origine dati in pool di connessione Apache Sling è configurata per puntare al database che verrà utilizzato per memorizzare i dati del modulo adattivo. La schermata seguente mostra la configurazione della mia istanza. È possibile copiare e incollare le seguenti proprietà
+L’origine dati in pool di connessione Apache Sling è configurata per puntare al database che verrà utilizzato per memorizzare i dati del modulo adattivo. La schermata seguente mostra la configurazione della mia istanza. Le seguenti proprietà possono essere copiate e incollate
 
-* Nome origine dati:aemformstutorial - Questo è il nome utilizzato nel mio codice.
+* Nome origine dati:aemformstutorial: è il nome utilizzato nel codice.
 
-* Classe del driver JDBC: com.mysql.jdbc.Driver
+* Classe driver JDBC:com.mysql.jdbc.Driver
 
-* URL di connessione JDBC:jdbc:mysql://localhost:3306/aemformstutorial
+* URL connessione JDBC:jdbc:mysql://localhost:3306/aemformstutorial
 
 ![connection pool](assets/storingdata.PNG)
 
 ### Crea servlet {#create-servlet}
 
-Di seguito è riportato il codice del servlet che inserisce/aggiorna i dati del modulo adattivo nel database. L&#39;origine dati in pool di connessione Apache Sling viene configurata utilizzando AEM ConfigMgr e alla riga 26 viene fatto riferimento allo stesso. Il resto del codice è abbastanza semplice. Il codice inserisce una nuova riga nel database o aggiorna una riga esistente. I dati del modulo adattivo memorizzati sono associati a un GUID. Lo stesso GUID viene quindi utilizzato per aggiornare i dati del modulo.
+Di seguito è riportato il codice del servlet che inserisce/aggiorna i dati del modulo adattivo nel database. L’origine dati in pool di connessione Apache Sling è configurata utilizzando AEM ConfigMgr e alla riga 26 viene fatto riferimento allo stesso. Il resto del codice è abbastanza semplice. Il codice inserisce una nuova riga nel database o aggiorna una riga esistente. I dati del modulo adattivo memorizzati sono associati a un GUID. Lo stesso GUID viene quindi utilizzato per aggiornare i dati del modulo.
 
 ```java
 package com.techmarketing.core.servlets;
@@ -209,9 +209,9 @@ public class StoreDataInDB extends SlingAllMethodsServlet {
 }
 ```
 
-## Creare il servizio OSGI per recuperare i dati {#create-osgi-service}
+## Creare un servizio OSGI per recuperare i dati {#create-osgi-service}
 
-Il codice seguente è stato scritto per recuperare i dati del modulo adattivo memorizzati. Viene utilizzata una semplice query per recuperare i dati del modulo adattivo associati a un GUID specificato. I dati recuperati vengono quindi restituiti all’applicazione chiamante. La stessa origine dati creata nel primo passaggio a cui si fa riferimento in questo codice.
+Il seguente codice è stato scritto per recuperare i dati memorizzati del modulo adattivo. Viene utilizzata una query semplice per recuperare i dati del modulo adattivo associati a un determinato GUID. I dati recuperati vengono quindi restituiti all&#39;applicazione chiamante. La stessa origine dati creata nel primo passaggio a cui si fa riferimento in questo codice.
 
 ```java
 package com.techmarketing.core.impl;
@@ -276,7 +276,7 @@ public class AemformWithDB implements AemFormsAndDB {
 
 ## Crea libreria client {#create-client-library}
 
-AEM libreria client gestisce tutto il codice javascript lato client. Per questo articolo, ho creato un semplice javascript per recuperare i dati del modulo adattivo utilizzando l’API del bridge guida. Una volta recuperati i dati del modulo adattivo, la chiamata di POST viene effettuata al servlet per inserire o aggiornare i dati del modulo adattivo nel database. La funzione getALLUrlParams restituisce i parametri nell&#39;URL. Viene utilizzato per aggiornare i dati. Il resto della funzionalità viene gestito nel codice associato all&#39;evento click della classe savebutton . Se il parametro guid è presente nell’URL, è necessario eseguire l’operazione di aggiornamento, se non si tratta di un’operazione di inserimento.
+La libreria client AEM gestisce tutto il codice JavaScript lato client. Per questo articolo, ho creato un semplice JavaScript per recuperare i dati del Modulo adattivo utilizzando l’API del ponte guida. Una volta recuperati i dati del modulo adattivo, viene effettuata la chiamata POST al servlet per inserire o aggiornare i dati del modulo adattivo nel database. La funzione getALLUrlParams restituisce i parametri nell’URL. Viene utilizzato quando si desidera aggiornare i dati. Il resto della funzionalità viene gestito nel codice associato all&#39;evento click della classe .savebutton. Se il parametro guid è presente nell’URL, è necessario eseguire l’operazione di aggiornamento, in caso contrario si tratta di un’operazione di inserimento.
 
 ```javascript
 function getAllUrlParams(url) {
@@ -402,7 +402,7 @@ $(document).ready(function()
 });
 ```
 
-## Creare un modello di modulo adattivo e un componente pagina {#form-template-and-page-component}
+## Creare un modello di modulo adattivo e il componente Pagina {#form-template-and-page-component}
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=12&learn=on)
@@ -413,15 +413,15 @@ $(document).ready(function()
 
 #### Distribuisci sul server {#deploy-on-your-server}
 
-Per testare questa funzionalità sulla tua istanza di AEM Forms, segui i seguenti passaggi
+Per testare questa funzionalità nell’istanza di AEM Forms, segui i passaggi seguenti
 
-* [Scarica e decomprimi il file DemoAssets.zip sul tuo sistema locale](assets/demoassets.zip)
-* Distribuisci e avvia i bundle techmarketingdemos.jar e mysqldriver.jar utilizzando la console web Felix.
-*** Importa aemformstutorial.sql utilizzando Workbench MYSQL. Questo creerà lo schema e le tabelle necessarie nel database
-* Importa StoreAndRetrieve.zip utilizzando AEM package manager. Questo pacchetto contiene il modello di modulo adattivo, la libreria client del componente della pagina e la configurazione di esempio del modulo adattivo e dell’origine dati.
-* Accedi a configMgr. Cerca &quot;Apache Sling Connection Pooled DataSource. Apri la voce dell’origine dati associata ad aemformstutorial e immetti il nome utente e la password specifici dell’istanza di database.
-* Apri il modulo adattivo
-* Inserisci alcuni dettagli e clicca sul pulsante &quot;Salva e continua più tardi&quot;
+* [Scarica e decomprimi DemoAssets.zip sul sistema locale](assets/demoassets.zip)
+* Implementa e avvia i bundle techmarketingdemos.jar e mysqldriver.jar utilizzando la console web Felix.
+*** Importare aemformstutorial.sql utilizzando MYSQL Workbench. Verranno creati lo schema e le tabelle necessari nel database
+* Importa StoreAndRetrieve.zip utilizzando Gestione pacchetti AEM. Questo pacchetto contiene il modello di modulo adattivo, la libreria client del componente Pagina e un esempio di configurazione del modulo adattivo e dell’origine dati.
+* Accedi a configMgr. Cerca &quot;Apache Sling Connection Pooled DataSource&quot;. Aprire la voce dell&#39;origine dati associata a aemformstutorial e immettere il nome utente e la password specifici per l&#39;istanza di database.
+* Aprire il modulo adattivo
+* Immettere alcuni dettagli e fare clic sul pulsante Salva e continua in seguito
 * È necessario recuperare un URL contenente un GUID.
 * Copia l’URL e incollalo in una nuova scheda del browser
 * Il modulo adattivo deve essere compilato con i dati del passaggio precedente**

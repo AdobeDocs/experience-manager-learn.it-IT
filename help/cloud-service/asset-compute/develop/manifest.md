@@ -1,6 +1,6 @@
 ---
-title: Configurare il file manifest.yml di un progetto di Asset compute
-description: Il file manifest.yml del progetto di Asset compute descrive tutti i processi di lavoro di questo progetto da distribuire.
+title: Configurare il file manifest.yml di un progetto Asset compute
+description: Il file manifest.yml del progetto di Asset compute descrive tutti i processi di lavoro del progetto da distribuire.
 feature: Asset Compute Microservices
 topics: renditions, development
 version: Cloud Service
@@ -20,19 +20,19 @@ ht-degree: 0%
 
 ---
 
-# Configura il file manifest.yml
+# Configurare manifest.yml
 
-Il `manifest.yml`, che si trova nella directory principale del progetto di Asset compute, descrive tutti i processi di lavoro del progetto da distribuire.
+Il `manifest.yml`, che si trova nella directory principale del progetto Asset compute, descrive tutti i processi di lavoro del progetto da distribuire.
 
 ![manifest.yml](./assets/manifest/manifest.png)
 
-## Definizione predefinita del processo di lavoro
+## Definizione lavoratore predefinita
 
-I lavoratori sono definiti come voci di azione Adobe I/O Runtime in `actions` e sono composti da un set di configurazioni.
+I lavoratori sono definiti come voci di azioni Adobe I/O Runtime in `actions`, e comprende un set di configurazioni.
 
-I lavoratori che accedono ad altre integrazioni di Adobe I/O devono impostare la proprietà `annotations -> require-adobe-auth` su `true` in quanto questo [espone le credenziali Adobi I/O del lavoratore](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) tramite l&#39;oggetto `params.auth` . Questo è tipicamente necessario quando il lavoratore chiama API di Adobe I/O come le API Adobe Photoshop, Lightroom o Sensei e può essere attivato per ogni lavoratore.
+I lavoratori che accedono ad altre integrazioni Adobe I/O devono impostare `annotations -> require-adobe-auth` proprietà a `true` come questo [espone le credenziali Adobe I/O del lavoratore](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) tramite `params.auth` oggetto. Questo è in genere necessario quando il lavoratore effettua una chiamata alle API di Adobe I/O, come le API di Adobe Photoshop, Lightroom o Sensei, e può essere attivato per lavoratore.
 
-1. Apri e rivedi il processo di lavoro generato automaticamente `manifest.yml`. I progetti che contengono più processi di lavoro di Asset compute devono definire una voce per ciascun processo di lavoro sotto la matrice `actions`.
+1. Apri e controlla il lavoratore generato automaticamente `manifest.yml`. I progetti che contengono più lavoratori Asset compute devono definire una voce per ogni lavoratore sotto `actions` array.
 
 ```yml
 packages:
@@ -51,11 +51,11 @@ packages:
 
 ## Definire i limiti
 
-Ogni processo di lavoro può configurare i [limiti](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) per il proprio contesto di esecuzione in Adobe I/O Runtime. Questi valori devono essere regolati in modo da fornire un dimensionamento ottimale per il lavoratore, in base al volume, al tasso e al tipo di risorse che elabora, nonché al tipo di lavoro che esegue.
+Ogni lavoratore può configurare [limiti](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) per il relativo contesto di esecuzione in Adobe I/O Runtime. Questi valori devono essere regolati in modo da fornire al lavoratore un dimensionamento ottimale, in base al volume, al tasso e al tipo di risorse che calcolerà, nonché al tipo di lavoro svolto.
 
-Rivedi [Guida alle dimensioni degli Adobi](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) prima di impostare i limiti. I processi di lavoro di Asset compute possono esaurire la memoria durante l’elaborazione delle risorse, causando l’interruzione dell’esecuzione di Adobe I/O Runtime. In tal modo, assicurati che il processo di lavoro sia dimensionato in modo appropriato per gestire tutte le risorse candidate.
+Revisione [Adobe di indicazioni sul dimensionamento](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) prima di impostare i limiti. I lavoratori Asset compute possono esaurire la memoria durante l’elaborazione delle risorse, causando l’interruzione dell’esecuzione di Adobe I/O Runtime, in modo da garantire che il lavoratore venga ridimensionato in modo appropriato per gestire tutte le risorse candidate.
 
-1. Aggiungi una sezione `inputs` alla nuova voce di azioni `wknd-asset-compute`. Ciò consente di ottimizzare le prestazioni complessive del lavoratore Asset compute e l&#39;allocazione delle risorse.
+1. Aggiungi un `inputs` sezione al nuovo `wknd-asset-compute` voce azioni. Ciò consente di ottimizzare le prestazioni complessive e l&#39;allocazione delle risorse del lavoratore Asset compute.
 
 ```yml
 packages:
@@ -75,9 +75,9 @@ packages:
            
 ```
 
-## Il file manifest.yml finito
+## Il manifesto finito.yml
 
-L&#39;aspetto finale `manifest.yml` è il seguente:
+La versione finale `manifest.yml` ha un aspetto simile a:
 
 ```yml
 packages:
@@ -98,31 +98,31 @@ packages:
 
 ## manifest.yml su Github
 
-L’ ultima versione `.manifest.yml` è disponibile su Github all’indirizzo:
+La versione finale `.manifest.yml` è disponibile su Github all’indirizzo:
 
 + [aem-guides-wknd-asset-compute/manifest.yml](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/manifest.yml)
 
 
-## Convalida del file manifest.yml
+## Convalida del manifesto.yml
 
-Una volta aggiornato l&#39;Asset compute generato `manifest.yml`, esegui lo strumento di sviluppo locale e assicurati che venga avviato con successo con le impostazioni aggiornate `manifest.yml`.
+Una volta generato l’Asset compute `manifest.yml` viene aggiornato, esegui lo strumento di sviluppo locale e assicurati che inizi correttamente con `manifest.yml` impostazioni.
 
-Per avviare Asset compute Development Tool per il progetto Asset compute:
+Per avviare lo strumento di sviluppo Asset compute per il progetto Asset compute:
 
-1. Apri una riga di comando nella directory principale del progetto di Asset compute (in Codice VS che può essere aperta direttamente nell’IDE tramite Terminal > Nuovo terminale) ed esegui il comando:
+1. Apri una riga di comando nella directory principale del progetto di Asset compute (in Codice VS può essere aperto direttamente nell’IDE tramite Terminal > New Terminal) ed esegui il comando:
 
    ```
    $ aio app run
    ```
 
-1. Lo strumento di sviluppo Asset compute locale si aprirà nel browser Web predefinito all&#39;indirizzo __http://localhost:9000__.
+1. Lo strumento di sviluppo Asset compute locale verrà aperto nel browser predefinito all’indirizzo __http://localhost:9000__.
 
-   ![esecuzione di app aio](assets/environment-variables/aio-app-run.png)
+   ![esecuzione dell&#39;app aio](assets/environment-variables/aio-app-run.png)
 
-1. Osserva l’output della riga di comando e il browser Web per verificare la presenza di messaggi di errore durante l’inizializzazione dello strumento di sviluppo.
-1. Per interrompere lo strumento di sviluppo Asset compute, tocca `Ctrl-C` nella finestra che ha eseguito `aio app run` per terminare il processo.
+1. Esaminare l&#39;output della riga di comando e il browser Web per i messaggi di errore durante l&#39;inizializzazione dello strumento di sviluppo.
+1. Per arrestare lo strumento di sviluppo Asset compute, tocca `Ctrl-C` nella finestra che ha eseguito `aio app run` per terminare il processo.
 
 ## Risoluzione dei problemi
 
-+ [rientro YAML errato](../troubleshooting.md#incorrect-yaml-indentation)
-+ [il limite memorySize è impostato troppo basso](../troubleshooting.md#memorysize-limit-is-set-too-low)
++ [Rientro YAML non corretto](../troubleshooting.md#incorrect-yaml-indentation)
++ [Il limite memorySize è impostato su un valore troppo basso](../troubleshooting.md#memorysize-limit-is-set-too-low)

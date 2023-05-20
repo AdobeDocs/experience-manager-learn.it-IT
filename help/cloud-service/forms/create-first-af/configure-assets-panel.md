@@ -1,6 +1,6 @@
 ---
-title: Pannello delle risorse
-description: Aggiungi un pannello di layout a soffietto al pannello delle risorse.
+title: Configurare il pannello delle risorse
+description: Aggiungi un pannello layout Pannello a soffietto al pannello risorse.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# Pannello delle risorse
+# Configurare il pannello delle risorse
 
-Cattura le risorse del richiedente utilizzando un pannello ripetibile con layout a soffietto .
+Acquisisci le risorse del candidato utilizzando un pannello ripetibile con un layout a soffietto.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336473?quality=12&learn=on)

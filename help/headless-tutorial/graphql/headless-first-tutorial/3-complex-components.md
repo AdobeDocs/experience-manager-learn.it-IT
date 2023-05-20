@@ -1,6 +1,6 @@
 ---
-title: Creare un componente Elenco immagini complesso - Prima esercitazione AEM Headless
-description: Scopri come utilizzare Frammento di contenuto, riferimenti di contenuto e immagini.
+title: 'Creare un componente Elenco immagini complesso: prima esercitazione senza intestazione AEM'
+description: Scopri come utilizzare Frammento di contenuto, riferimenti a contenuti e immagini.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
@@ -20,27 +20,27 @@ ht-degree: 2%
 
 # Creare un componente complesso
 
-Ti diamo il benvenuto in questo capitolo di esercitazione per scoprire come creare un componente Elenco immagini complesso che esegue il rendering di frammenti di contenuto, riferimenti a frammenti di contenuto nidificati e risorse immagine di riferimento. L’app React sarà ulteriormente modificata utilizzando l’Editor universale.
+Benvenuti in questo capitolo di esercitazione in cui esploreremo la creazione di un componente Elenco immagini complesso che esegue il rendering di frammenti di contenuto, riferimenti a frammenti di contenuto nidificati e risorse di immagini di riferimento. Faremo un ulteriore passo avanti rendendo modificabile l’app React tramite l’editor universale.
 
-I frammenti di contenuto in Adobe Experience Manager (AEM) forniscono un approccio strutturato alla gestione dei contenuti. Utilizziamo Frammenti di contenuto per popolare il componente Elenco immagini , per gestire i riferimenti nidificati e visualizzare le risorse immagine di riferimento.
+I Frammenti di contenuto in Adobe Experience Manager (AEM) forniscono un approccio strutturato alla gestione dei contenuti. Sfruttiamo i Frammenti di contenuto per popolare il componente Elenco immagini, gestire i riferimenti nidificati e visualizzare le risorse di immagini di riferimento.
 
-Durante questa esercitazione, ti guideremo attraverso la creazione del componente Elenco immagini, la gestione dei riferimenti nidificati, il rendering delle risorse di immagini a cui si fa riferimento e l’integrazione dell’Editor universale. Scoprirai come impostare le dipendenze, progettare la struttura del componente, recuperare e analizzare i frammenti di contenuto e rendere l’app modificabile utilizzando l’Editor universale.
+In questa esercitazione, ti guideremo attraverso la creazione del componente Elenco immagini, la gestione dei riferimenti nidificati, il rendering delle risorse immagine di riferimento e l’integrazione di Universal Editor. Scoprirai come impostare le dipendenze, progettare la struttura dei componenti, recuperare e analizzare i frammenti di contenuto e rendere l’app modificabile tramite l’editor universale.
 
-Alla fine di questo capitolo, sarà disponibile un componente Elenco immagini completamente funzionale e modificabile. Potrai acquisire le conoscenze e le competenze necessarie per creare componenti dinamici nell’app React, migliorando l’esperienza di authoring dei contenuti con l’Editor universale. Cominciamo a creare il componente Elenco immagini modificabile.
+Entro la fine di questo capitolo di esercitazione, avrai a disposizione un componente Elenco immagini completamente funzionale e modificabile. Potrai acquisire le conoscenze e le competenze necessarie per creare componenti dinamici nell’app React, migliorando l’esperienza di authoring dei contenuti con l’editor universale. Iniziamo a creare il componente Elenco immagini modificabile.
 
 ## Creare un elenco di immagini
 
-1. Ora è necessario creare alcuni frammenti di offerta e un componente per l’elenco delle immagini.  Passa alla console frammenti di contenuto .
+1. Ora è necessario creare alcuni frammenti di offerta e un componente per l’elenco delle immagini.  Passa alla console Frammenti di contenuto.
 
    ![create-imagelist-fragment](./assets/3/create-imagelist-fragment.png)
 
-   Desideriamo creare un frammento del tipo `imagelist` (il modello è `imagelist`) e gli diamo il titolo `imagelist`.
+   Desideriamo creare un frammento del tipo `imagelist` (il modello è `imagelist`) e gli assegneremo il titolo `imagelist`.
 
-   Nell’editor frammento di contenuto è possibile selezionare un frammento per includere o creare un frammento.  Selezionare Crea un frammento.
+   Nell’editor dei frammenti di contenuto è possibile selezionare un frammento da includere o creare.  Seleziona Crea un frammento.
 
-   Il nostro tipo di modello è Elenco immagini.  Assegnare un titolo e un nome al frammento.
+   Il nostro tipo di modello è Elenco immagini.  Assegna al frammento un titolo e un nome.
 
-1. Poiché un elenco di immagini è un frammento di tipo contenitore che include riferimenti ad altri frammenti, è possibile creare nuove offerte direttamente dall’editor.  Crea un frammento di offerta e includi la descrizione dell’immagine e l’articolo.  È possibile tagliare e incollare testo dal basso.  Il titolo del frammento viene utilizzato come titolo della scheda.
+1. Poiché un elenco di immagini è un frammento di tipo contenitore che include un riferimento ad altri frammenti, è possibile creare nuove offerte direttamente dall’editor.  Crea un frammento di offerta con descrizione e articolo per inclusione e immagine.  È possibile tagliare e incollare il testo dal basso.  Stiamo utilizzando il titolo del frammento come titolo della scheda.
 
    __Articolo1__
 
@@ -190,7 +190,7 @@ Alla fine di questo capitolo, sarà disponibile un componente Elenco immagini co
    Eu facilisis sed odio morbi quis. Consequat semper viverra nam libero justo laoreet sit amet. Eget mi proin sed libero enim sed faucibus. Vitae tempus quam pellentesque nec nam aliquam sem. Justo donec enim diam vulputate ut pharetra sit. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Mauris pellentesque pulvinar pellentesque habitant morbi. Iaculis at erat pellentesque adipiscing. Libero id faucibus nisl tincidunt eget nullam non nisi est. Interdum consectetur libero id faucibus nisl tincidunt. Volutpat odio facilisis mauris sit amet massa. Tristique senectus et netus et malesuada fames ac turpis egestas. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Sapien et ligula ullamcorper malesuada proin libero. Interdum consectetur libero id faucibus nisl tincidunt.
    ```
 
-1. Torniamo all’editor delle query e recuperiamo questo nuovo componente.  Tieni presente che stiamo facendo riferimento al `OfferModel` nella nostra query e i metadati, che utilizzeremo per il titolo della scheda.
+1. Torniamo all’editor delle query e recuperiamo questo nuovo componente.  Tieni presente che stiamo facendo riferimento al `OfferModel` nella nostra query e nei metadati, che utilizzeremo per il titolo della scheda.
 
    ```graphql
    query imageList {
@@ -226,13 +226,13 @@ Alla fine di questo capitolo, sarà disponibile un componente Elenco immagini co
    }
    ```
 
-1. Ora connettilo alla nostra app.  Nel nostro `home.js`, faremo riferimento alla nostra nuova query. Sopra `useEffect()` stabiliremo `list` e `setList`.
+1. Ora connetti questo alla nostra app.  Nel nostro `home.js`, faremo riferimento alla nuova query. Sopra `useEffect()` imposteremo `list` e `setList`.
 
    ```javascript
    const [list, setList] = useState({});
    ```
 
-   Dentro `useEffect()` una nuova richiesta per la query dell&#39;elenco di immagini.
+   Interno `useEffect()` una nuova richiesta per la query imagelist.
 
    ```javascript
    sdk.runPersistedQuery('pure-headless/imagelist')
@@ -252,7 +252,7 @@ Alla fine di questo capitolo, sarà disponibile un componente Elenco immagini co
    <div>{list.cards && <ImageList content={list.cards} />}</div>
    ```
 
-   Diamo un&#39;occhiata alla nostra componente immaginaria.  All&#39;interno dell&#39;immaginario, passiamo in rassegna ogni offerta.
+   Diamo un&#39;occhiata al nostro componente imagelist.  All&#39;interno dell&#39;imagelist, scorriamo ogni offerta.
 
    ```javascript
    {content.items && content.items.map((items) => (
@@ -279,9 +279,9 @@ Alla fine di questo capitolo, sarà disponibile un componente Elenco immagini co
    };
    ```
 
-   Inoltre, si noti che si sta facendo riferimento a un componente immagine e che lo stiamo trasmettendo un URL dinamico.
+   Inoltre, tieni presente che stiamo facendo riferimento a un componente immagine e trasmettendolo come URL dinamico.
 
-   All’interno del componente immagine, utilizziamo l’URL dinamico per creare un set di sorgenti con più URL.
+   All’interno del componente immagine, utilizziamo l’URL dinamico per creare un set di origine con più URL.
 
    ```javascript
    const srcset = [
@@ -292,15 +292,15 @@ Alla fine di questo capitolo, sarà disponibile un componente Elenco immagini co
    ];
    ```
 
-## Abilita l’editor universale
+## Abilita editor universale
 
-1. Aggiungi `<meta />` all’app.  Apri `App.js` e inserire import nella parte superiore del file.
+1. Aggiungi `<meta />` all&#39;app.  Apri `App.js` e inserisci importazione nella parte superiore del file.
 
    ```javascript
    import { Helmet } from 'react-helmet';
    ```
 
-   All’interno dell’app return aggiungi il seguente codice:
+   E all’interno dell’App return aggiungi il seguente codice:
 
    ```javascript
    <Helmet>
@@ -310,39 +310,39 @@ Alla fine di questo capitolo, sarà disponibile un componente Elenco immagini co
 
    >[!TIP]
    >
-   > Stiamo utilizzando la libreria casco per rendere questa dinamica in base al `.env` tuttavia è possibile codificarlo nel `index.html`.
+   > Stiamo utilizzando la libreria Helmet per rendere questo dinamico basato sulla `.env` , tuttavia è possibile codificarlo nel file `index.html`.
 
-1. Ora aggiorniamo le schede in modo da identificare il frammento e il tipo di dati per la modifica di ogni scheda.
+1. Ora aggiorniamo la sezione Scheda per identificare il frammento e il tipo di dati per la modifica di ogni scheda.
 
    In `<div className='card' key={card._path}>`
 
-   add
+   aggiungi
 
    ```javascript
    itemID={`urn:aemconnection:${card._path}/jcr:content/data/master`} itemfilter='cf' itemType='reference' itemScope
    ```
 
-   Ora dovresti avere:
+   Ora dovresti disporre di:
 
    ```javascript
    <div className='card' key={card._path} itemID={`urn:aemconnection:${card._path}/jcr:content/data/master`} itemfilter='cf' itemType='reference' itemScope>
    ```
 
-1. Identifica ora ciò che è modificabile.
+1. Ora identifica ciò che è modificabile.
 
-   A `<h3 />` aggiungi:
+   Al `<h3 />` aggiungi:
 
    ```javascript
    itemProp="_metadata" itemType="text"
    ```
 
-   Alla nostra `<div />` aggiungi:
+   Al nostro `<div />` aggiungi:
 
    ```javascript
    itemProp="description" itemType="richtext"
    ```
 
-   Codice finale della carta:
+   Il codice finale della carta:
 
    ```javascript
    const Cards = ({ content }) => {
@@ -421,4 +421,4 @@ export default Home;
 
 ## Congratulazioni. 
 
-Hai creato con successo un’esperienza AEM headless completamente alimentata da API AEM headless ed è modificabile con Universal Editor.
+Hai creato con successo un’esperienza AEM headless completamente basata sulle API AEM headless e modificabile con l’editor universale.

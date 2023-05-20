@@ -1,6 +1,6 @@
 ---
-title: Creazione di tabelle di database
-description: Crea database da utilizzare per il modello dati del modulo
+title: Creare tabelle di database
+description: Crea database da utilizzare per il modello dati modulo
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 5811
@@ -18,18 +18,18 @@ ht-degree: 1%
 
 # Creare tabelle di database
 
-Il modello dati del modulo può essere basato su origini RDBMS, RESTfull, SOAP o OData. Questo corso si concentra sulla pre-archiviazione di Moduli adattivi utilizzando il modello dati del modulo supportato dall&#39;origine dati RDBMS. Ai fini di questa esercitazione è stato utilizzato il database MYSQL. Abbiamo creato le due tabelle seguenti per illustrare il caso d’uso
+Il modello dati del modulo può essere basato su origini RDBMS, RESTfull, SOAP o OData. Questo corso è incentrato sulla precompilazione di un modulo adattivo utilizzando un modello di dati del modulo supportato da un’origine dati RDBMS. Ai fini di questa esercitazione è stato utilizzato il database MYSQL. Abbiamo creato le due tabelle seguenti per dimostrare il caso d’uso
 
-* **newhire** tabella: questa tabella memorizza le informazioni necessarie
+* **newhire** tabella: in questa tabella vengono memorizzate le nuove informazioni
 
    ![newhire](assets/newhire-table.png)
 
 
-* **beneficiari** tabella: questo archivia i beneficiari più recenti
+* **beneficiari** tabella: in questa tabella vengono memorizzati i beneficiari
 
    ![beneficiari](assets/beneficiaries-table.png)
 
-Puoi importare le [file sql](assets/db-schema.sql) utilizzo di MySQL workbench per creare tabelle con alcuni dati di esempio.
+È possibile importare [file sql](assets/db-schema.sql) utilizzo di MySQL Workbench per creare tabelle con alcuni dati di esempio.
 
 ## Passaggi successivi
 

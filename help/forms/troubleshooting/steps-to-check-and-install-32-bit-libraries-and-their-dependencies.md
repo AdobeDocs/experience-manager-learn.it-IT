@@ -1,6 +1,6 @@
 ---
-title: Passaggi per controllare i ridistribuibili Microsoft Visual C++ a 32 bit richiesti
-description: Installare i ridistribuibili Microsoft Visual C++ a 32 bit.
+title: Passaggi per verificare i ridistribuibili Microsoft Visual C++ a 32 bit richiesti
+description: Installare i redistribuibili Microsoft Visual C++ a 32 bit.
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Passaggi per controllare e installare i componenti ridistribuibili Microsoft Visual C++ a 32 bit richiesti
+# Passaggi per verificare e installare i ridistribuibili Microsoft Visual C++ a 32 bit richiesti
 
-*Questo video illustra il processo di controllo e installazione dei componenti ridistribuibili Microsoft Visual C++ a 32 bit richiesti.*
+*Questo video illustra il processo di verifica e installazione dei ridistribuibili Microsoft Visual C++ a 32 bit richiesti.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335520?quality=12&learn=on)

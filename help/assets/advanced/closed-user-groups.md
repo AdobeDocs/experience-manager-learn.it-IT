@@ -1,6 +1,6 @@
 ---
 title: Gruppi di utenti chiusi in AEM Assets
-description: I gruppi di utenti chiusi (CUG) sono una funzione utilizzata per limitare l’accesso al contenuto a un gruppo selezionato di utenti su un sito pubblicato. Questo video mostra come i gruppi di utenti chiusi possono essere utilizzati con Adobe Experience Manager Assets per limitare l’accesso a una specifica cartella di risorse.
+description: I gruppi chiusi di utenti (CUG) sono una funzione utilizzata per limitare l’accesso al contenuto a un gruppo selezionato di utenti su un sito pubblicato. Questo video mostra come i gruppi chiusi di utenti possono essere utilizzati con Adobe Experience Manager Assets per limitare l’accesso a una specifica cartella di risorse.
 version: 6.4, 6.5, Cloud Service
 topic: Administration, Security
 feature: User and Groups
@@ -17,32 +17,32 @@ ht-degree: 0%
 
 ---
 
-# Gruppi di utenti chiusi{#using-closed-user-groups-with-aem-assets}
+# Gruppi utenti chiusi{#using-closed-user-groups-with-aem-assets}
 
-I gruppi di utenti chiusi (CUG) sono una funzione utilizzata per limitare l’accesso al contenuto a un gruppo selezionato di utenti su un sito pubblicato. Questo video mostra come i gruppi di utenti chiusi possono essere utilizzati con Adobe Experience Manager Assets per limitare l’accesso a una specifica cartella di risorse. Il supporto per i gruppi di utenti chiusi con AEM Assets è stato introdotto per la prima volta in AEM 6.4.
+I gruppi chiusi di utenti (CUG) sono una funzione utilizzata per limitare l’accesso al contenuto a un gruppo selezionato di utenti su un sito pubblicato. Questo video mostra come i gruppi chiusi di utenti possono essere utilizzati con Adobe Experience Manager Assets per limitare l’accesso a una specifica cartella di risorse. Il supporto per gruppi chiusi di utenti con AEM Assets è stato introdotto per la prima volta nell’AEM 6.4.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22155?quality=12&learn=on)
 
 ## Gruppo utenti chiuso (CUG) con AEM Assets
 
-* Progettato per limitare l’accesso alle risorse in un’istanza di AEM Publish.
-* Consente l&#39;accesso in lettura a un set di utenti/gruppi.
-* Il gruppo utenti chiuso può essere configurato solo a livello di cartella. Impossibile impostare CUG su singole risorse.
-* I criteri CUG vengono ereditati automaticamente da qualsiasi sottocartella e risorsa applicata.
-* I criteri CUG possono essere ignorati dalle sottocartelle impostando un nuovo criterio CUG. Questo dovrebbe essere utilizzato con moderazione e non è considerato una best practice.
+* Progettato per limitare l’accesso alle risorse in un’istanza AEM Publish.
+* Consente l’accesso in lettura a un set di utenti/gruppi.
+* Il gruppo utenti chiusi (CUG) può essere configurato solo a livello di cartella. Impossibile impostare CUG su singole risorse.
+* I criteri CUG vengono ereditati automaticamente da tutte le sottocartelle e le risorse applicate.
+* I criteri CUG possono essere sostituiti da sottocartelle impostando un nuovo criterio CUG. Questo dovrebbe essere usato con moderazione e non è considerato una best practice.
 
-## Gruppi di utenti chiusi e elenchi di controllo degli accessi {#closed-user-groups-vs-access-control-lists}
+## Gruppi utenti chiusi ed elenchi di controllo di accesso {#closed-user-groups-vs-access-control-lists}
 
-I gruppi di utenti chiusi (CUG) e gli elenchi di controllo accessi (ACL) vengono utilizzati per controllare l’accesso al contenuto in AEM e in base AEM utenti e gruppi di sicurezza. Tuttavia, l’applicazione e l’implementazione di queste funzioni sono molto diverse. Nella tabella seguente sono riepilogate le distinzioni tra le due feature.
+Sia i gruppi chiusi di utenti (CUG) che gli elenchi di controllo di accesso (ACL) vengono utilizzati per controllare l’accesso al contenuto in AEM e in base agli utenti e ai gruppi di sicurezza AEM. Tuttavia, l’applicazione e l’implementazione di queste funzioni sono molto diverse. Nella tabella seguente vengono riepilogate le distinzioni tra le due feature.
 
 |  | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Uso previsto | Configura e applica le autorizzazioni per il contenuto del **attuale** AEM&#39;istanza. | Configurare i criteri CUG per i contenuti in AEM **autore** istanza. Applica criteri CUG per il contenuto su AEM **pubblicare** istanze. |
-| Livelli di autorizzazione | Definisce le autorizzazioni concesse/negate per utenti/gruppi per tutti i livelli: Leggi, Modifica, Crea, Elimina, Leggi ACL, Modifica ACL, Replicare. | Consente l&#39;accesso in lettura a un set di utenti/gruppi. Nega l&#39;accesso in lettura a *tutti gli altri* utenti/gruppi. |
-| Pubblicazione | Gli ACL sono *not* pubblicato con contenuto. | Criteri CUG *sono* pubblicato con contenuto. |
+| Uso previsto | Configurare e applicare le autorizzazioni per il contenuto in **corrente** istanza AEM. | Configurare i criteri CUG per il contenuto su AEM **autore** dell&#39;istanza. Applicare criteri CUG per i contenuti su AEM **pubblicare** istanze. |
+| Livelli di autorizzazione | Definisce le autorizzazioni concesse/negate per utenti/gruppi per tutti i livelli: Lettura, Modifica, Crea, Elimina, Lettura ACL, Modifica ACL, Replica. | Consente l’accesso in lettura a un set di utenti/gruppi. Nega l’accesso in lettura a *tutti gli altri* utenti/gruppi. |
+| Pubblicazione | Gli ACL sono *non* pubblicato con il contenuto. | Criteri CUG *sono* pubblicato con il contenuto. |
 
 ## Collegamenti di supporto {#supporting-links}
 
-* [Gestione delle risorse e dei gruppi di utenti chiusi](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en#closed-user-group)
+* [Gestione delle risorse e dei gruppi chiusi di utenti](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en#closed-user-group)
 * [Creazione di un gruppo utenti chiuso](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html)
-* [Documentazione Oak Closed User Group](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html)
+* [Documentazione di Oak Closed User Group](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html)

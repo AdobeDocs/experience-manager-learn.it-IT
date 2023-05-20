@@ -1,6 +1,6 @@
 ---
 title: Configurazione dell’integrazione di Adobe Workfront e Assets Essentials
-description: Scopri come configurare l’integrazione Workfront e Assets Essentials.
+description: Scopri come configurare l’integrazione di Workfront e Assets Essentials.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management, Integrations

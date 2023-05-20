@@ -1,6 +1,6 @@
 ---
-title: Precompilazione del modulo adattivo tramite il profilo ACS
-description: Precompilazione di Forms adattivo utilizzando il profilo ACS
+title: Precompilazione di un modulo adattivo tramite il profilo ACS
+description: Precompilazione di Adaptive Forms con il profilo ACS
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
 topic: Development
@@ -9,34 +9,34 @@ level: Experienced
 exl-id: 502f4bdf-d4af-409f-a611-62b7a1a6065a
 source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 1%
 
 ---
 
-# Precompilazione del modulo adattivo tramite il profilo ACS {#prefilling-adaptive-form-using-acs-profile}
+# Precompilazione di un modulo adattivo tramite il profilo ACS {#prefilling-adaptive-form-using-acs-profile}
 
-In questa parte, precompiliamo il modulo adattivo con le informazioni sul profilo recuperate da ACS. AEM Forms dispone di questa potente funzionalità per precompilare i moduli adattivi.
+In questa parte, precompiliamo il Modulo adattivo con le informazioni del profilo recuperate da ACS. AEM Forms dispone di questa potente funzionalità per la precompilazione dei moduli adattivi.
 
-Per ulteriori informazioni sulla precompilazione dei moduli adattivi, leggere questo [tutorial](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
+Per ulteriori informazioni sulla precompilazione dei moduli adattivi, consulta questo articolo [esercitazione](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
-Per precompilare il modulo adattivo recuperando i dati da ACS, si presuppone che ci sia un profilo in ACS che abbia la stessa e-mail dell’utente connesso AEM. Ad esempio, se l’ID e-mail della persona che ha effettuato l’accesso a AEM è csimms@adobe.com, si prevede di trovare un profilo in ACS la cui e-mail è csimms@adobe.com.
+Per precompilare il modulo adattivo recuperando i dati da ACS, supponiamo che vi sia un profilo in ACS che ha la stessa e-mail dell’utente AEM connesso. Ad esempio, se l’ID e-mail della persona che ha effettuato l’accesso a AEM è csimms@adobe.com, prevediamo di trovare un profilo in ACS la cui e-mail è csimms@adobe.com.
 
-Per recuperare le informazioni sul profilo da ACS utilizzando l’API REST, sono necessari i seguenti passaggi
+Per recuperare le informazioni del profilo da ACS utilizzando l’API REST sono necessari i seguenti passaggi
 
 * Genera JWT
-* Exchange JWT per token di accesso
+* Scambia il codice JWT con un token di accesso
 * Effettuare una chiamata REST ad ACS e recuperare il profilo tramite e-mail
-* Creare un documento XML con le informazioni di profilo
-* Restituisce InputStream del documento XML utilizzato da AEM Forms
+* Crea documento XML con le informazioni del profilo
+* Restituisci InputStream del documento XML utilizzato da AEM Forms
 
-![servizio preliminare](assets/prefillserviceaf.gif)
+![prefillservice](assets/prefillserviceaf.gif)
 
-Associazione del servizio di precompilazione a un modulo adattivo
+Associazione del servizio di precompilazione al modulo adattivo
 
 Di seguito è riportato il codice per recuperare e restituire le informazioni sul profilo da ACS.
 
-Alla riga 68 recuperiamo l’ID e-mail dell’utente AEM. I dettagli del profilo vengono recuperati effettuando una chiamata REST ad Adobe Campaign Standard. Dai dettagli del profilo recuperati, il documento XML viene costruito in un modo comprensibile per AEM Forms. Il flusso di input di questo documento viene restituito per il consumo da AEM Forms.
+Alla riga 68 recuperiamo l’ID e-mail dell’utente AEM. I dettagli del profilo vengono recuperati effettuando una chiamata REST ad Adobe Campaign Standard. Dai dettagli del profilo recuperato, il documento XML viene costruito in modo da essere compreso da AEM Forms. Il flusso di input di questo documento viene restituito per l&#39;utilizzo da AEM Forms.
 
 ```java
 package aemforms.campaign.core;
@@ -228,14 +228,14 @@ return "Pre Fill Forms Using Campaign Profile";
 }
 ```
 
-Per far funzionare questo sistema, segui le seguenti istruzioni:
+Per eseguire questa operazione sul sistema, attenersi alle seguenti istruzioni:
 
-* [Assicurati di aver seguito i passaggi descritti qui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Importare un modulo adattivo di esempio in AEM utilizzando il gestore dei pacchetti](assets/pre-fill-af-from-campaign.zip)
-* Assicurati di accedere a AEM con un utente il cui ID e-mail è condiviso da un profilo in Adobe Campaign. Ad esempio, se l’ID e-mail dell’utente AEM è johndoe@adobe.com, è necessario avere un profilo in ACS il cui indirizzo e-mail è johndoe@adobe.com.
-* [Anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
+* [Accertati di aver seguito i passaggi descritti qui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [Importare un modulo adattivo di esempio in AEM utilizzando il gestore di pacchetti](assets/pre-fill-af-from-campaign.zip)
+* Assicurati di accedere all’AEM con un utente il cui ID e-mail è condiviso da un profilo in Adobe Campaign. Ad esempio, se l’ID e-mail dell’utente AEM è johndoe@adobe.com, è necessario disporre di un profilo in ACS la cui e-mail è johndoe@adobe.com.
+* [Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
 
 ## Passaggi successivi
 
-[Creare un profilo Adobe Campaign utilizzando il modello dati modulo](./partfour.md)
+[Creare un profilo Adobe Campaign utilizzando il modello dati del modulo](./partfour.md)
 

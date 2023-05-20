@@ -1,6 +1,6 @@
 ---
-title: Video ed esercitazioni di AEM Assets
-description: Guarda i nostri video per ottenere supporto e assistenza AEM Asset.
+title: Video e tutorial su AEM Assets
+description: Guarda i nostri video per ricevere supporto e assistenza sulle risorse dell’AEM.
 sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
@@ -11,9 +11,9 @@ ht-degree: 15%
 
 ---
 
-# Video ed esercitazioni di AEM Assets {#overview}
+# Video e tutorial su AEM Assets {#overview}
 
-Adobe Experience Manager (AEM) Assets è uno strumento di gestione delle risorse digitali su AEM Platform che consente agli utenti di creare, gestire e condividere le proprie risorse digitali (immagini, video, documenti e clip audio) in un archivio basato sul Web. Questa guida utente contiene video ed esercitazioni sulle numerose funzioni e funzionalità di AEM Assets.
+Adobe Experience Manager (AEM) Assets è uno strumento di gestione delle risorse digitali su AEM Platform che consente agli utenti di creare, gestire e condividere le proprie risorse digitali (immagini, video, documenti e clip audio) in un archivio basato su Web. La presente guida utente contiene video e tutorial sulle numerose funzioni e caratteristiche di AEM Assets.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_assets_overview"
@@ -23,7 +23,7 @@ Adobe Experience Manager (AEM) Assets è uno strumento di gestione delle risorse
 
 ## Procedura dettagliata di AEM Assets
 
-Scopri cos’è AEM Assets e come può essere utilizzato per raggiungere gli obiettivi aziendali della tua organizzazione.
+Scopri cos’è AEM Assets e come potrebbe essere utilizzato per raggiungere gli obiettivi aziendali della tua organizzazione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336196?quality=12&learn=on)
 
@@ -36,7 +36,7 @@ Scopri cos’è AEM Assets e come può essere utilizzato per raggiungere gli obi
 
 <div id="staff-picks-section">
 
-## Scatole dello staff
+## Scelte del personale
 
 <table>
 <td>
@@ -45,7 +45,7 @@ Scopri cos’è AEM Assets e come può essere utilizzato per raggiungere gli obi
    </a>
    <div>
       <a href="./creative-workflows/aem-desktop-app.md">
-      <strong>Utilizzo AEM app desktop</strong>
+      <strong>Utilizzo dell’app desktop AEM</strong>
       </a>
    </div>
    <p>
@@ -54,15 +54,15 @@ Scopri cos’è AEM Assets e come può essere utilizzato per raggiungere gli obi
 </td>
 <td>
    <a href="./advanced/asset-insights-launch-tutorial.md">
-   <img alt="Informazioni su AEM Assets" src="./assets/overview/asset-insights.png"/>
+   <img alt="Approfondimenti AEM Assets" src="./assets/overview/asset-insights.png"/>
    </a>
    <div>
       <a href="./advanced/asset-insights-launch-tutorial.md">
-      <strong>Utilizzo di AEM Asset Insights con Launch</strong>
+      <strong>Utilizzo di Informazioni su risorse AEM con Launch</strong>
       </a>
    </div>
    <p>
-      <em>Approfondimenti sull’utilizzo delle risorse</em>
+      <em>Ottenere informazioni sull’utilizzo delle risorse</em>
    <p>
 </td>
 <td>
@@ -75,7 +75,7 @@ Scopri cos’è AEM Assets e come può essere utilizzato per raggiungere gli obi
       </a>
    </div>
    <p>
-      <em>Gestione e accesso ai contenuti multimediali con Dynamic Media</em>
+      <em>Gestire e accedere ai contenuti multimediali tramite Dynamic Media</em>
    <p>
 </td>
 </table>
@@ -85,7 +85,7 @@ Scopri cos’è AEM Assets e come può essere utilizzato per raggiungere gli obi
 ## Risorse aggiuntive
 
 * [Documentazione di AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en)
-* [AEM tutorial as a Cloud Service](/help/cloud-service/overview.md)
-* [Esercitazioni di AEM Sites](/help/sites/overview.md)
-* [Esercitazioni di AEM Forms](/help/forms/overview.md)
-* [Esercitazioni di AEM Foundation](/help/foundation/overview.md)
+* [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
+* [Tutorial su AEM Sites](/help/sites/overview.md)
+* [Tutorial su AEM Forms](/help/forms/overview.md)
+* [Tutorial di AEM Foundation](/help/foundation/overview.md)

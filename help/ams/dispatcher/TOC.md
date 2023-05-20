@@ -1,6 +1,6 @@
 ---
 user-guide-title: Tutorials Adobe Experience Manager Managed Services
-user-guide-description: Una raccolta di esercitazioni per Adobe Experience Manager Managed Services.
+user-guide-description: Una raccolta di tutorial per Adobe Experience Manager Managed Services.
 breadcrumb-title: Tutorials Managed Services AEM
 sub-product: Experience Manager
 version: 6.5
@@ -17,15 +17,15 @@ ht-degree: 6%
 
 + [Panoramica](./overview.md)
 + Dispatcher{#dispatcher}
-   + [Manuale del dispatcher - Panoramica](./dispatcher/overview.md)
-   + [Cos’è &quot;Il Dispatcher&quot;](./dispatcher/what-is-the-dispatcher.md)
+   + [Manuale di Dispatcher: panoramica](./dispatcher/overview.md)
+   + [Cos’è &quot;Dispatcher&quot;](./dispatcher/what-is-the-dispatcher.md)
    + [Layout dei file di base](./dispatcher/basic-file-layout.md)
    + [Spiegazione dei file di configurazione](./dispatcher/explanation-config-files.md)
-   + [Informazioni sulla memorizzazione in cache](./dispatcher/understanding-cache.md)
-   + [Uso e nozioni di base sulle variabili](./dispatcher/variables.md)
+   + [Informazioni sul caching](./dispatcher/understanding-cache.md)
+   + [Utilizzo e nozioni di base sulle variabili](./dispatcher/variables.md)
    + [Scaricamento del Dispatcher](./dispatcher/disp-flushing.md)
    + [URL personalizzato](./dispatcher/disp-vanity-url.md)
    + [Registrazione comune](./dispatcher/common-logs.md)
    + [File di sola lettura](./dispatcher/immutable-files.md)
-   + [Verifica dello stato del dispatcher](./dispatcher/health-check.md)
+   + [Verifica stato di Dispatcher](./dispatcher/health-check.md)
    + [Collegamenti simbolici GIT](./dispatcher/git-symlinks.md)

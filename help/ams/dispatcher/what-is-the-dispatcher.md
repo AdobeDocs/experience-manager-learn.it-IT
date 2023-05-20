@@ -1,58 +1,58 @@
 ---
-title: Cos’è "Il Dispatcher"
-description: Scopri cos’è veramente un Dispatcher.
+title: Cos’è "Dispatcher"
+description: Scopri cos’è in realtà un Dispatcher.
 version: 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 829ad9733b4326c79b9b574b13b1d4c691abf877
+exl-id: 96c8dd09-e0a7-4abc-b04b-a805aaa67502
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 2%
 
 ---
 
-
-# Cos’è &quot;Il Dispatcher&quot;
+# Cos’è &quot;Dispatcher&quot;
 
 [Sommario](./overview.md)
 
-A partire dalla descrizione di base di ciò che comporta un Dispatcher AEM.
+A partire dalla descrizione di base di cosa comporta un Dispatcher per AEM.
 
 ## Server web Apache
 
-Inizia con un&#39;installazione di base di Apache Web Server su un server Linux.
+Inizia con un’installazione di base del server web Apache su un server Linux.
 
-Spiegazione di base sulle attività di un server Apache:
+Spiegazione di base delle funzioni di un server Apache:
 
-- Segue semplici regole per elaborare i file sui protocolli HTTP(s) dalla relativa directory dei documenti statici (`DocumentRoot`)
-- File memorizzati in una posizione predefinita (`/var/www/html`) viene confrontata con le richieste ed è eseguito il rendering nel browser del client richiedente
-
-
+- Segue regole semplici per distribuire i file tramite i protocolli HTTP(s) dalla directory dei documenti statici (`DocumentRoot`)
+- File archiviati in un percorso predefinito (`/var/www/html`) corrispondono alle richieste e vengono sottoposte a rendering nel browser del client richiedente
 
 
-## AEM file di modulo specifico (`mod_dispatcher.so`)
 
-Quindi aggiungi un plug-in ad Apache Web Server chiamato modulo Dispatcher
 
-Spiegazione di base del funzionamento del modulo Adobe AEM Dispatcher:
+## File del modulo specifico per AEM (`mod_dispatcher.so`)
+
+Quindi aggiungi al server web Apache un plug-in denominato modulo Dispatcher.
+
+Spiegazione di base delle funzioni del modulo Dispatcher AEM Adobe:
 
 - Aumenta il gestore di file predefinito
-- Filtra le richieste errate / Protegge AEM soft belly/endpoint
-- Bilancia il carico se sono presenti più render
-- Permette di gestire una directory cache attiva / Supporta lo scaricamento di file stagnanti
-- È la porta principale per tutte le installazioni AMS e fornisce siti web e risorse al browser del cliente
-- Memorizza in cache le richieste per rielaborare a una velocità molto più veloce di quanto un server AEM possa eseguire autonomamente
+- Filtra le richieste non valide / Protegge la pancia morbida/gli endpoint AEM
+- Bilanciamenti del carico se è presente più di un renderer
+- Consente la creazione di una directory di cache attiva / Supporta lo scaricamento di file stagnanti
+- È la porta d&#39;ingresso di tutte le installazioni AMS e fornisce siti web e risorse al browser del cliente
+- Memorizza nella cache le richieste di reindirizzamento a una velocità molto più elevata di quella che un server AEM potrebbe eseguire da solo
 - Molto altro...
 
-## Flusso di lavoro del traffico web
+## Flusso di lavoro per traffico web
 
-Per comprendere quali elementi vengono installati insieme per creare un server Dispatcher di base, è necessario conoscere il flusso di lavoro del traffico web di base per una configurazione di Adobe Manager Services.
-Questo dovrebbe aiutarti a comprendere il ruolo che svolge nella catena di sistemi che distribuiscono contenuti ai visitatori del tuo contenuto AEM.
+Sapendo quali pezzi vengono installati insieme per creare un server Dispatcher di base, possiamo comprendere il flusso di lavoro del traffico web di base per una configurazione dei servizi Adobe Manager.
+Questo dovrebbe aiutarti a capire quale ruolo svolge nella catena di sistemi che distribuiscono contenuti ai visitatori dei tuoi contenuti AEM.
 
-<b>Distribuzione di contenuti già memorizzati nella cache</b>
+<b>Distribuzione di contenuto già memorizzato nella cache</b>
 
 ```
 End User's Browser request 
@@ -63,7 +63,7 @@ End User's Browser request
                     → End User
 ```
 
-<b>Servizio di contenuti freschi da AEM</b>
+<b>Distribuzione di contenuti freschi da AEM</b>
 
 ```
 End User's Browser request 
@@ -76,7 +76,7 @@ End User's Browser request
                             → End User
 ```
 
-<b>Pubblicazione/modifiche del contenuto</b>
+<b>Pubblicazione/modifiche dei contenuti</b>
 
 ```
 AEM Author User activates content 
@@ -86,4 +86,4 @@ AEM Author User activates content
             * Next request for that content will request fresh copy from publisher *
 ```
 
-[Avanti -> Layout dei file di base](./basic-file-layout.md)
+[Avanti -> Layout file di base](./basic-file-layout.md)

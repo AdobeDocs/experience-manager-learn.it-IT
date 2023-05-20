@@ -1,7 +1,7 @@
 ---
-title: Creazione della configurazione DataSource in AEM Forms, parte 2
+title: Creazione della configurazione DataSource in AEM Forms parte 2
 seo-title: Creating DataSource Configuration in AEM Forms
-description: Questa è la parte 2 dell’esercitazione su più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte, creeremo un’origine dati basata su REST.  Il video seguente illustra i passaggi necessari per creare l’origine dati.
+description: Questa è la parte 2 di un tutorial a più passaggi per creare il tuo primo documento di comunicazione interattiva. In questa parte verrà creata un'origine dati supportata REST.  Il video seguente illustra i passaggi necessari per creare l’origine dati.
 seo-description: This is part 2 of multistep tutorial for creating your first interactive communications document. In this part, we will create a REST backed data source.  The following video walks thru the steps to create the data source.
 uuid: f20abc8d-3512-4a48-9688-524a0dfe732c
 feature: Interactive Communication
@@ -24,11 +24,11 @@ ht-degree: 5%
 
 # Creazione della configurazione DataSource in AEM Forms{#creating-datasource-configuration-in-aem-forms}
 
-In questa parte, creeremo un’origine dati basata su REST.  Il video seguente illustra i passaggi necessari per creare l’origine dati.
+In questa parte verrà creata un&#39;origine dati supportata REST.  Il video seguente illustra i passaggi necessari per creare l’origine dati.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22344?quality=12&learn=on)
 
-Utilizza il file swagger fornito come parte delle risorse relative a questa esercitazione. Le risorse sono disponibili in [introduzione](introduction.md) di questa esercitazione.
+Utilizza il file Swagger fornito come parte delle risorse relative a questa esercitazione. Le risorse sono disponibili in [introduzione](introduction.md) di questa esercitazione.
 
 ## Passaggi successivi
 

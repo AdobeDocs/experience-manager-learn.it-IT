@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Creare un flusso di lavoro AEM
 
-Create workflow model using AEM Forms workflow components. utilizza il componente O-Dividi per suddividere il flusso di lavoro in base al valore della variabile di stato.
+Crea un modello di flusso di lavoro utilizzando i componenti di flusso di lavoro di AEM Forms. utilizza il componente Or-Split per diramare il flusso di lavoro in base al valore della variabile di stato.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332434?quality=12&learn=on)

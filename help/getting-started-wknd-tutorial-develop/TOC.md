@@ -17,8 +17,8 @@ ht-degree: 46%
 
 # Guida introduttiva ai AEM Sites: esercitazione WKND {#getting-started-wknd-tutorial-develop}
 
-+ [Panoramica del tutorial WKND](overview.md)
-+ Archetipo di progetto {#project-archetype}
++ [Panoramica dei tutorial WKND](overview.md)
++ Archetipo progetto {#project-archetype}
    + [Panoramica](./project-archetype/overview.md)
    + [1 - Configurazione del progetto](./project-archetype/project-setup.md)
    + [2 - Nozioni di base sui componenti](./project-archetype/component-basics.md)
@@ -33,11 +33,11 @@ ht-degree: 46%
    + [2 - Introduzione all’authoring e alla pubblicazione](./site-template/author-content-publish.md)
    + [3 - Pianificazione dell’interfaccia utente con Adobe XD](./site-template/ui-planning-adobe-xd.md)
    + [4 - Modelli di pagina](./site-template/page-templates.md)
-   + [5 - Tema](./site-template/theming.md)
+   + [5 - Theming](./site-template/theming.md)
 + Abilita pipeline front-end - DevOps{#enable-frontend-pipeline-devops}
    + [Panoramica](./enable-frontend-pipeline/overview.md)
-   + [1 - Revisione del progetto completo dello stack](./enable-frontend-pipeline/review-uifrontend-module.md)
-   + [2 - Aggiornare il progetto per l’utilizzo della pipeline front-end](./enable-frontend-pipeline/update-project.md)
-   + [3 - Distribuzione tramite la pipeline front-end](./enable-frontend-pipeline/create-frontend-pipeline.md)
+   + [1 - Revisione del progetto full stack](./enable-frontend-pipeline/review-uifrontend-module.md)
+   + [2 - Aggiorna progetto per utilizzare la pipeline front-end](./enable-frontend-pipeline/update-project.md)
+   + [3 - Distribuire utilizzando la pipeline front-end](./enable-frontend-pipeline/create-frontend-pipeline.md)
    + [4 - Considerazioni](./enable-frontend-pipeline/considerations.md)
 

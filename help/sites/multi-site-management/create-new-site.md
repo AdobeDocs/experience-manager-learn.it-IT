@@ -1,6 +1,6 @@
 ---
 title: Creare un sito del paese
-description: Scopri come creare un sito del paese da copie in lingua esistenti utilizzando la procedura guidata Crea sito .
+description: Scopri come creare un sito del paese da copie in lingua esistenti utilizzando la procedura guidata Crea sito.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 # Creare un sito del paese {#create-country-site}
 
-Scopri come creare un sito del paese da copie in lingua esistenti utilizzando la procedura guidata Crea sito .
+Scopri come creare un sito del paese da copie in lingua esistenti utilizzando la procedura guidata Crea sito.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36684?quality=12&learn=on)

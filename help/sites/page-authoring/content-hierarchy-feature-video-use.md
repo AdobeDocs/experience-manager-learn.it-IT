@@ -1,7 +1,7 @@
 ---
 title: Introduzione alla gerarchia dei contenuti di AEM Sites
 seo-title: Introduction to AEM Sites Content Hierarchy
-description: Il video seguente illustra come le pagine del sito vengono memorizzate in AEM per la tua organizzazione.
+description: Il video seguente evidenzia come le pagine del sito vengono memorizzate in AEM per la tua organizzazione.
 seo-description: The following video highlights how site pages are stored within AEM for your organization.
 feature: Page Editor
 topics: authoring, publishing
@@ -24,6 +24,6 @@ ht-degree: 0%
 
 # Struttura e gerarchia dei contenuti {#content-hierarchy}
 
-Scopri come creare e organizzare le pagine del sito dell’organizzazione in AEM Sites.
+Scopri come creare e organizzare le pagine del sito della tua organizzazione in AEM Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31785?quality=12&learn=on)

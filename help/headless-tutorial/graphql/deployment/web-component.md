@@ -1,6 +1,6 @@
 ---
-title: Distribuzione di componenti web headless AEM
-description: Scopri le considerazioni sulla distribuzione per le distribuzioni senza titolo basate su componenti web/AEM basate su JS.
+title: Distribuzioni dei componenti web headless AEM
+description: Scopri le considerazioni sulla distribuzione per le distribuzioni headless AEM basate su Componente web/JS pure.
 version: Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
@@ -8,32 +8,32 @@ role: Developer, Architect
 level: Intermediate
 kt: 10797
 thumbnail: kt-10797.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+exl-id: 9d4aab4c-82af-4917-8c1b-3935f19691e6
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 2%
 
 ---
 
+# Distribuzioni dei componenti web headless AEM
 
-# Distribuzione di componenti web headless AEM
-
-AEM senza testa [Componente Web](https://developer.mozilla.org/en-US/docs/Web/Web_Components)Le implementazioni /JS sono semplici app JavaScript eseguite in un browser web che utilizzano e interagiscono con i contenuti in AEM in modo headless. Le distribuzioni di componenti web/JS differiscono da [Implementazioni SPA](./spa.md) in quanto non utilizzano un solido framework di SPA, e si prevede che saranno incorporati nel contesto di qualsiasi sito web, consegnati, per far emergere contenuti da AEM.
+AEM headless [Componente Web](https://developer.mozilla.org/en-US/docs/Web/Web_Components)Le implementazioni /JS sono app JavaScript pure che vengono eseguite in un browser web e che utilizzano e interagiscono con i contenuti dell’AEM in modo headless. Le distribuzioni di Componente Web/JS sono diverse da [Distribuzioni SPA](./spa.md) in quanto non utilizzano un solido framework SPA, e ci si aspetta che siano incorporati nel contesto di qualsiasi sito web, consegnino, trasmettano contenuti dall&#39;AEM.
 
 
 ## Configurazioni di distribuzione
 
-La seguente configurazione di distribuzione deve essere in-place per le distribuzioni di componenti Web/JS.
+La seguente configurazione di distribuzione deve essere implementata per le distribuzioni di Componente Web/JS.
 
-| L’app Web Component/JS si connette a | Autore AEM | AEM Publish | Anteprima AEM |
+| Componente web/app JS si connette a | Autore AEM | AEM Publish | Anteprima AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [Filtri del Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ↓ | ↓ |
-| [Condivisione delle risorse tra le origini (CORS)](./configurations/cors.md) | ↓ | ↓ | ↓ |
-| [Host AEM](./configurations/aem-hosts.md) | ↓ | ↓ | ↓ |
+| [Filtri del Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| [Condivisione delle risorse tra le origini (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |
+| [Host AEM](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Esempio di componente Web
 
-Adobe fornisce un esempio di componente Web.
+In questo Adobe viene illustrato un componente Web.
 
 <div class="columns is-multiline">
     <!-- Web Component -->
@@ -49,7 +49,7 @@ Adobe fornisce un esempio di componente Web.
            <div class="card-content is-padded-small">
                <div class="content">
                    <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/web-component.md" title="Componente Web">Componente Web</a></p>
-                   <p class="is-size-6">Un componente Web di esempio, scritto in JavaScript puro, che consuma contenuti dalle API GraphQL headless AEM.</p>
+                   <p class="is-size-6">Componente web di esempio, scritto in JavaScript puro, che utilizza contenuti delle API GraphQL headless dell’AEM.</p>
                    <a href="../example-apps/web-component.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza esempio</span>
                    </a>

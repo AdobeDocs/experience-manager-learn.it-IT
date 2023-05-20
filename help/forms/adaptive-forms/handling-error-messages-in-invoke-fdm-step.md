@@ -1,6 +1,6 @@
 ---
-title: Acquisizione di messaggi di errore nel servizio Form Data Model come passaggio nel flusso di lavoro
-description: A partire da AEM Forms 6.5.1, ora è possibile acquisire i messaggi di errore generati utilizzando il servizio di chiamata a Form Data Model come passaggio in AEM flusso di lavoro. Flusso di lavoro.
+title: Acquisizione dei messaggi di errore nel servizio del modello dati del modulo come passaggio nel flusso di lavoro
+description: A partire da AEM Forms 6.5.1, ora è possibile acquisire i messaggi di errore generati utilizzando il Servizio modello dati modulo di chiamata come passaggio nel flusso di lavoro AEM. Flusso di lavoro.
 feature: Workflow
 version: 6.5
 topic: Development
@@ -15,19 +15,19 @@ ht-degree: 0%
 
 ---
 
-# Acquisizione dei messaggi di errore nel passaggio del servizio del modello dati del modulo
+# Acquisizione dei messaggi di errore nel passaggio del servizio Richiama modello dati modulo
 
-A partire da AEM Forms 6.5.1, ora è possibile acquisire messaggi di errore e specificare le opzioni di convalida. È stato migliorato il passaggio del Servizio modello dati modulo per richiamare le funzionalità seguenti.
+A partire da AEM Forms 6.5.1, ora è possibile acquisire i messaggi di errore e specificare le opzioni di convalida. Il passaggio Richiama servizio modello dati modulo è stato migliorato per fornire le seguenti funzionalità.
 
-* È disponibile un&#39;opzione per la convalida a 3 livelli (&quot;OFF&quot;, &quot;BASIC&quot; e &quot;FULL&quot;) per gestire le eccezioni rilevate durante l&#39;avvio di Form Data Model Service. Le 3 opzioni indicano successivamente una versione più rigorosa del controllo dei requisiti specifici del database.
+* Fornire un’opzione per la convalida a 3 livelli (&quot;OFF&quot;, &quot;BASIC&quot; e &quot;FULL&quot;) per gestire le eccezioni riscontrate durante la chiamata al servizio del modello dati del modulo. Le tre opzioni indicano in successione una versione più rigorosa del controllo dei requisiti specifici del database.
    ![livelli di convalida](assets/validation-level.PNG)
 
-* Casella di controllo per personalizzare l’esecuzione del flusso di lavoro. Di conseguenza, l’utente ora ha la flessibilità di procedere con l’esecuzione del flusso di lavoro, anche se il passaggio Invoke Form Data Model genera eccezioni.
+* Casella di controllo per personalizzare l&#39;esecuzione del flusso di lavoro. Pertanto, l’utente ora ha la flessibilità di procedere con l’esecuzione del flusso di lavoro, anche se il passaggio Richiama modello dati modulo genera eccezioni.
 
-* Memorizzazione di informazioni importanti sull&#39;errore che si verifica a causa di eccezioni di convalida. Sono stati incorporati tre selettori di variabili di tipo Autocomplete per selezionare le variabili rilevanti in modo da memorizzare i valori ErrorCode(String), ErrorMessage(String) e ErrorDetails(JSON). ErrorDetails viene tuttavia impostato su null se l&#39;eccezione non è un DermisValidationException.
-   ![acquisizione di messaggi di errore](assets/fdm-error-details.PNG)
+* Memorizzazione di informazioni importanti di errore causato da eccezioni di convalida. Sono stati incorporati tre selettori di variabili di tipo Completamento automatico per selezionare le variabili rilevanti per memorizzare ErrorCode(String), ErrorMessage(String) e ErrorDetails(JSON). ErrorDetails, tuttavia, viene impostato su null nel caso in cui l&#39;eccezione non sia DermisValidationException.
+   ![acquisizione dei messaggi di errore](assets/fdm-error-details.PNG)
 
-Con queste modifiche, il passaggio Invoke Form Data Model Service assicura che i valori di input siano conformi ai vincoli dati forniti nel file swagger. Ad esempio, il seguente messaggio di errore viene inviato quando i valori accountId e balance non sono conformi ai vincoli dati specificati nel file swagger.
+Con queste modifiche, il passaggio del servizio Richiama modello dati modulo assicura che i valori di input siano conformi ai vincoli di dati forniti nel file swagger. Ad esempio, il seguente messaggio di errore viene generato quando i valori accountId e balance non sono conformi ai vincoli di dati specificati nel file swagger.
 
 ```json
 {

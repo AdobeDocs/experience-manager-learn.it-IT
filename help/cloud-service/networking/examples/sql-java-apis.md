@@ -1,6 +1,6 @@
 ---
-title: Connessioni SQL tramite API Java™
-description: Scopri come connettersi ai database SQL da AEM as a Cloud Service tramite API Java™ SQL e porte di uscita.
+title: Connessioni SQL con API Java™
+description: Scopri come connettersi ai database SQL da AEM as a Cloud Service utilizzando le API Java™ SQL e le porte di uscita.
 version: Cloud Service
 feature: Security
 topic: Development, Security
@@ -16,21 +16,21 @@ ht-degree: 0%
 
 ---
 
-# Connessioni SQL tramite API Java™
+# Connessioni SQL con API Java™
 
-Le connessioni ai database SQL (e ad altri servizi non HTTP/HTTPS) devono essere proxy fuori AEM.
+Le connessioni ai database SQL (e ad altri servizi non HTTP/HTTPS) devono essere escluse dall&#39;AEM.
 
-L&#39;eccezione a questa regola è quando [indirizzo ip dedicato in uscita](../dedicated-egress-ip-address.md) è in uso e il servizio è in Adobe o Azure.
+L’eccezione a questa regola si verifica quando [indirizzo ip in uscita dedicato](../dedicated-egress-ip-address.md) è in uso e il servizio è in Adobe o Azure.
 
 ## Supporto di rete avanzato
 
-L&#39;esempio di codice seguente è supportato dalle seguenti opzioni di rete avanzate.
+Il codice di esempio seguente è supportato dalle seguenti opzioni di rete avanzate.
 
 Assicurati che [appropriato](../advanced-networking.md#advanced-networking) la configurazione di rete avanzata è stata impostata prima di seguire questa esercitazione.
 
-| Nessuna rete avanzata | [Uscita porta flessibile](../flexible-port-egress.md) | [Indirizzo IP in uscita dedicato](../dedicated-egress-ip-address.md) | [Rete privata virtuale](../vpn.md) |
+| Nessuna rete avanzata | [Uscita porta flessibile](../flexible-port-egress.md) | [Indirizzo IP in uscita dedicato](../dedicated-egress-ip-address.md) | [Virtual Private Network](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
-| ✘ | ↓ | ↓ | ↓ |
+| ✘ | ✔ | ✔ | ✔ |
 
 ## Configurazione OSGi
 
@@ -45,7 +45,7 @@ Poiché i segreti non devono essere memorizzati nel codice, è consigliabile for
 }
 ```
 
-I seguenti `aio CLI` può essere utilizzato per impostare i segreti OSGi in base all&#39;ambiente:
+I seguenti elementi `aio CLI` Questo comando può essere utilizzato per impostare i segreti OSGi in base all’ambiente:
 
 ```shell
 $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONMENT_ID> --secret MYSQL_USERNAME "mysql-user" --secret MYSQL_PASSWORD "password123"
@@ -53,7 +53,7 @@ $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONME
 
 ## Esempio di codice
 
-Questo esempio di codice Java™ è di un servizio OSGi che effettua una connessione a un server Web SQL server esterno, tramite il seguente Cloud Manager `portForwards` regola [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) funzionamento.
+Questo esempio di codice Java™ è di un servizio OSGi che effettua una connessione a un server web SQL Server esterno, tramite il seguente Cloud Manager `portForwards` regola del [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) operazione.
 
 ```json
 ...
@@ -148,13 +148,13 @@ public class MySqlExternalServiceImpl implements ExternalService {
 }
 ```
 
-## Dipendenze dei driver MySQL
+## Dipendenze driver MySQL
 
-AEM as a Cloud Service spesso richiede di fornire driver di database Java™ per supportare le connessioni. Fornire i driver è generalmente meglio ottenuto incorporando gli artefatti del bundle OSGi contenenti questi driver al progetto AEM tramite il `all` pacchetto.
+AEM as a Cloud Service richiede spesso di fornire driver di database Java™ per supportare le connessioni. Il modo migliore per fornire i driver consiste solitamente nell’incorporare nel progetto AEM gli artefatti del bundle OSGi contenenti tali driver, mediante `all` pacchetto.
 
-### Reattore pom.xml
+### Reactor pom.xml
 
-Includere le dipendenze del driver di database nel reattore `pom.xml` e poi fai riferimento a loro nel `all` sottoprogetti.
+Includere le dipendenze dei driver di database nel reattore `pom.xml` e poi farvi riferimento in `all` sottoprogetti.
 
 + `pom.xml`
 
@@ -174,9 +174,9 @@ Includere le dipendenze del driver di database nel reattore `pom.xml` e poi fai 
 ...
 ```
 
-## Tutto pom.xml
+## Tutti i file pom.xml
 
-Incorporare gli artefatti di dipendenza del driver di database in `all` Il pacchetto viene distribuito e disponibile su AEM as a Cloud Service. Questi artefatti __deve__ essere bundle OSGi che esportano la classe Java™ del driver di database.
+Incorporare gli artefatti di dipendenza del driver di database in `all` sono implementati e disponibili su AEM as a Cloud Service. Questi artefatti __deve__ essere bundle OSGi che esportano la classe Java™ del driver del database.
 
 + `all/pom.xml`
 

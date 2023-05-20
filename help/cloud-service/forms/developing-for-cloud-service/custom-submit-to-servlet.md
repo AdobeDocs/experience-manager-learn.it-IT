@@ -15,10 +15,10 @@ ht-degree: 0%
 
 ---
 
-# Crea un servlet per elaborare i dati inviati
+# Creare un servlet per elaborare i dati inviati
 
-Avvia il tuo progetto aem-banking in IntelliJ.
-Crea un servlet semplice per trasmettere i dati inviati al file di log.Assicurati che il codice sia nel progetto principale come mostrato nella schermata seguente
+Avvia il progetto di aem-banking in IntelliJ.
+Crea un semplice servlet per inviare i dati inviati al file di registro. Assicurati che il codice sia nel progetto di base, come illustrato nella schermata seguente
 ![create-servlet](assets/create-servlet.png)
 
 ```java
@@ -42,8 +42,8 @@ public class HandleFormSubmissison extends SlingAllMethodsServlet {
 
 ## Crea invio personalizzato
 
-Crea l’invio personalizzato nella cartella dell’app/dell’applicazione bancaria nello stesso modo in cui creeresti nel [versioni precedenti di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en)
-Il seguente codice nel post.POST.jsp inoltra semplicemente la richiesta al servlet montato su /bin/formstutorial. Si tratta dello stesso servlet creato nel passaggio precedente
+Crea l’invio personalizzato nella cartella app/bankingapplication nello stesso modo in cui crei nella [versioni precedenti di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en)
+Il codice seguente nel file post.POST.jsp inoltra semplicemente la richiesta al servlet installato in /bin/formstutorial. Questo è lo stesso servlet creato nel passaggio precedente
 
 ```java
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/formstutorial",null,null);
@@ -51,7 +51,7 @@ com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/f
 
 ## Configurare un modulo adattivo
 
-È ora possibile configurare il modulo adattivo per l’invio a questo gestore di invio personalizzato denominato **Invia a AEM servlet**
+Ora puoi configurare il modulo adattivo per l’invio a questo gestore di invio personalizzato denominato **Invia a AEM Servlet**
 
 
 

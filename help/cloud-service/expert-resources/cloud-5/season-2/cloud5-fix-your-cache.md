@@ -1,6 +1,6 @@
 ---
 title: Cloud 5 - Correggi il tuo... Cache
-description: Alcuni suggerimenti semplici per ottimizzare la cache e velocizzare il sito
+description: Alcuni semplici suggerimenti per ottimizzare la cache e velocizzare il sito
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -17,11 +17,11 @@ ht-degree: 11%
 
 # Cloud 5 - Correggi il tuo... Cache
 
-In una seconda stagione in due parti della serie, esploriamo alcune cose che potete osservare che velocizzeranno la memorizzazione in cache su AEM as a Cloud Service.
+In una seconda serie in due parti, esploriamo alcune cose che puoi osservare che velocizzeranno la memorizzazione nella cache su AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343475?quality=12&learn=on)
 
 ## Contenuto trattato in questo video
 
 + [Memorizzazione in cache e distribuzione dei contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=it)
-+ [Faro Google](https://developers.google.com/web/tools/lighthouse)
++ [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)

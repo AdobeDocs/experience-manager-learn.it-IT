@@ -1,5 +1,5 @@
 ---
-title: Come eseguire i test di carico dall’interfaccia utente utilizzando gli esempi OOTB FormsIVS e OutputIVS
+title: Eseguire test di carico dall’interfaccia utente utilizzando gli esempi OOTB FormsIVS e OutputIVS
 description: Configurare i test di carico utilizzando FormsIVS e OutputIVS
 type: Troubleshooting
 role: Developer
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Come eseguire i test di carico utilizzando FormsIVS e OutputIVS
+# Eseguire test di carico utilizzando FormsIVS e OutputIVS
 
-*Questo video illustra i passaggi necessari per eseguire i test di carico dall’interfaccia utente tramite gli esempi FormsIVS e OutputIVS.*
+*Questo video illustra i passaggi necessari per eseguire test di carico dall’interfaccia utente utilizzando gli esempi FormsIVS e OutputIVS.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335507?quality=12&learn=on)

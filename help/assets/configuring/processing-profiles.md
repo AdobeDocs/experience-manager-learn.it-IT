@@ -1,6 +1,6 @@
 ---
 title: Profili di elaborazione
-description: I profili di elaborazione definiscono i rendering da creare per le risorse in AEM as a Cloud Service.
+description: I profili di elaborazione definiscono le rappresentazioni da creare per le risorse in AEM as a Cloud Service.
 feature: Asset Compute Microservices
 version: Cloud Service
 kt: 4993
@@ -19,6 +19,6 @@ ht-degree: 11%
 
 # Profili di elaborazione
 
-I profili di elaborazione definiscono i rendering da creare per le risorse in AEM as a Cloud Service.
+I profili di elaborazione definiscono le rappresentazioni da creare per le risorse in AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35597?quality=12&learn=on)

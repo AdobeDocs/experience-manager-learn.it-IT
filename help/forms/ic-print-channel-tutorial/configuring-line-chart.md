@@ -1,7 +1,7 @@
 ---
 title: Configurazione del grafico a linee per il primo documento di comunicazione interattivo
 seo-title: Configuring line chart for your first interactive communication document
-description: Questa è la parte 8 dell'esercitazione su più passaggi per creare il primo documento di comunicazione interattivo per il canale di stampa. In questa parte verrà aggiunto un grafico a linee per visualizzare il saldo del conto.
+description: Questa è la parte 8 di un tutorial a più passaggi per creare il primo documento di comunicazione interattiva per il canale di stampa. In questa parte verrà aggiunto un grafico a linee per visualizzare il saldo del conto.
 seo-description: This is part 8 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will add a Line chart to display the account balance.
 uuid: a4394874-a080-4b6a-a3eb-ffc71504919d
 feature: Interactive Communication
@@ -28,13 +28,13 @@ ht-degree: 0%
 
 In questa parte verrà aggiunto un grafico a linee per visualizzare il saldo del conto.
 
-Accedi ad AEM Forms e passa a Adobe Experience Manager > Forms > Forms e documenti.
+Accedi ad AEM Forms e passa a Adobe Experience Manager > Forms > Forms &amp; Documents.
 
-Apri la cartella 401KStatementPrint .
+Aprire la cartella 401KStatementPrint.
 
-Apri 401KStatementPrint in modalità di modifica.
+Aprire 401KStatementPrint in modalità di modifica.
 
-A partire da AEM Forms 6.4, è molto facile visualizzare i dati utilizzando vari tipi di grafici. Useremo un grafico a linee per visualizzare i saldi per anno.
+A partire da AEM Forms 6.4, è molto semplice visualizzare i dati utilizzando vari tipi di grafici. Verrà utilizzato un grafico a linee per visualizzare i saldi per anno.
 
 Il video seguente illustra i passaggi necessari per aggiungere e configurare il componente grafico
 

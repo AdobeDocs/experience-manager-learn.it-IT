@@ -1,7 +1,7 @@
 ---
-title: AEM Forms con schema e dati JSON[Parte3]
+title: AEM Forms con schema JSON e dati[Part3]
 seo-title: AEM Forms with JSON Schema and Data[Part3]
-description: Esercitazione in più parti per illustrarti i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
+description: Tutorial in più parti per illustrare i passaggi necessari per creare un modulo adattivo con schema JSON e interrogare i dati inviati.
 seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
 topics: development
@@ -23,9 +23,9 @@ ht-degree: 0%
 # Memorizzazione dello schema JSON nel database {#storing-json-schema-in-database}
 
 
-Per eseguire query sui dati inviati, è necessario memorizzare lo schema JSON associato al modulo inviato. Lo schema JSON viene utilizzato nel generatore di query per generare la query.
+Per poter eseguire una query sui dati inviati, è necessario memorizzare lo schema JSON associato al modulo inviato. Lo schema JSON viene utilizzato nel generatore di query per generare la query.
 
-Quando viene inviato un modulo adattivo, verifichiamo se lo schema JSON associato si trova nel database. Se lo schema JSON non esiste, recupereremo lo schema JSON e lo archivieremo nella tabella appropriata. Associamo inoltre il nome del modulo allo schema JSON. La schermata seguente mostra la tabella in cui sono memorizzati gli schemi JSON.
+Quando viene inviato un modulo adattivo, verifichiamo se lo schema JSON associato si trova nel database. Se lo schema JSON non esiste, lo schema JSON viene recuperato e memorizzato nella tabella appropriata. Inoltre, associamo il nome del modulo allo schema JSON. La schermata seguente mostra la tabella in cui sono memorizzati gli schemi JSON.
 
 ![schemajson](assets/jsonschemas.gif)
 
@@ -107,7 +107,7 @@ public String getJSONSchema(String afPath) {
 
 >[!NOTE]
 >
->Quando crei un modulo adattivo puoi utilizzare uno schema JSON presente nella directory archivio o caricare uno schema JSON. Il codice di cui sopra funzionerà per entrambi i casi.
+>Durante la creazione di un modulo adattivo è possibile utilizzare lo schema JSON presente nell’archivio o caricare uno schema JSON. Il codice riportato sopra funziona per entrambi i casi.
 
 Lo schema recuperato viene memorizzato nel database utilizzando le operazioni JDBC standard. Il codice seguente inserisce lo schema nel database
 
@@ -145,10 +145,10 @@ public void insertJsonSchema(JSONObject jsonSchema, String afForm) {
  }
 ```
 
-Per riassumere, abbiamo fatto quanto segue
+Per riassumere, finora abbiamo fatto quanto segue
 
 * Creare un modulo adattivo basato sullo schema JSON
-* Se il modulo viene inviato la prima volta, nel database viene memorizzato lo schema JSON associato al modulo.
-* I dati associati al modulo adattivo vengono memorizzati nel database.
+* Se il modulo viene inviato la prima volta, lo schema JSON associato al modulo viene memorizzato nel database.
+* I dati associati del modulo adattivo vengono memorizzati nel database.
 
-I passaggi successivi consistono nell’utilizzo di QueryBuilder per visualizzare i campi da cercare in base allo schema JSON
+La procedura successiva consiste nell’utilizzare QueryBuilder per visualizzare i campi in cui eseguire ricerche in base allo schema JSON

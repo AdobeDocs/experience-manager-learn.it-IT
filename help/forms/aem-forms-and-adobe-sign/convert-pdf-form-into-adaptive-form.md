@@ -1,6 +1,6 @@
 ---
-title: Convertire il modulo PDF in modulo adattivo
-description: Il servizio di Automated forms conversion AEM Forms, basato su Adobe Sensei, converte automaticamente i PDF forms in moduli adattivi adattabili facili da usare e reattivi. Sia che si utilizzino PDF forms non interattivi, Acro Forms o basati su XFA, il servizio Automated forms conversion può facilmente convertire questi moduli in moduli adattivi.
+title: Converti modulo PDF in modulo adattivo
+description: Il servizio di Automated forms conversion AEM Forms, basato su Adobe Sensei, converte automaticamente i PDF forms in moduli adattivi facili da usare e reattivi. Che si utilizzino PDF forms non interattivi, Acro Forms o PDF forms basati su XFA, il servizio di Automated forms conversion può facilmente convertire questi moduli in moduli adattivi.
 feature: Adaptive Forms
 thumbnail: 39495.jpg
 kt: 6115
@@ -15,10 +15,10 @@ ht-degree: 0%
 
 ---
 
-# Convertire il modulo PDF in modulo adattivo
+# Converti modulo PDF in modulo adattivo
 
-Il servizio di Automated forms conversion AEM Forms, basato su Adobe Sensei, converte automaticamente i PDF forms in moduli adattivi adattabili facili da usare e reattivi. Sia che si utilizzino PDF forms non interattivi, Acro Forms o basati su XFA, il servizio Automated forms conversion può facilmente convertire questi moduli in moduli adattivi.
+Il servizio di Automated forms conversion AEM Forms, basato su Adobe Sensei, converte automaticamente i PDF forms in moduli adattivi facili da usare e reattivi. Che si utilizzino PDF forms non interattivi, Acro Forms o PDF forms basati su XFA, il servizio di Automated forms conversion può facilmente convertire questi moduli in moduli adattivi.
 
-Il video seguente spiega i passaggi necessari per convertire il modulo PDF in Modulo adattivo utilizzando il servizio Automated forms conversion
+Il video seguente illustra i passaggi necessari per convertire un modulo PDF in un modulo adattivo tramite il servizio di Automated forms conversion
 
 >[!VIDEO](https://video.tv.adobe.com/v/39495?quality=12&learn=on)

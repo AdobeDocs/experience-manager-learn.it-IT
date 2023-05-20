@@ -1,35 +1,36 @@
 ---
-title: Uso dei frammenti nel servizio di output
-description: Genera documenti pdf con frammenti residenti nell'archivio crx
+title: Utilizzo dei frammenti nel servizio di output
+description: Generare documenti PDF con frammenti residenti nell’archivio crx
 feature: Output Service
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2022-07-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+exl-id: d7887e2e-c2d4-4f0c-b117-ba7c41ea539a
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 1%
 
 ---
 
-# Generazione di documenti pdf tramite frammenti{#developing-with-output-and-forms-services-in-aem-forms}
+# Generazione di documenti PDF tramite frammenti{#developing-with-output-and-forms-services-in-aem-forms}
 
 
-In questo articolo utilizzeremo il servizio di output per generare file pdf utilizzando frammenti xdp. L’xdp principale e i frammenti risiedono nell’archivio crx. È importante imitare la struttura delle cartelle del file system in AEM. Ad esempio, se utilizzi un frammento presente nella cartella frammenti dell’xdp, devi creare una cartella denominata **frammenti** sotto la cartella di base in AEM. La cartella base conterrà il modello xdp di base. Ad esempio, se nel file system è presente la struttura seguente
-* c:\xdptemplates - This will contain your base xdp template
-* c:\xdptemplates\fragments - This folder will contain fragments and the main template will reference the fragment as shown below
+In questo articolo utilizzeremo il servizio di output per generare file pdf utilizzando frammenti xdp. L’xdp principale e i frammenti risiedono nell’archivio crx. È importante simulare la struttura delle cartelle del file system in AEM. Ad esempio, se utilizzi un frammento nella cartella Frammenti nell’XDP, devi creare una cartella denominata **frammenti** nella cartella di base in AEM. La cartella base conterrà il modello xdp di base. Ad esempio, se nel file system è presente la seguente struttura
+* c:\xdptemplates - Conterrà il modello xdp di base
+* c:\xdptemplates\fragments - Questa cartella conterrà frammenti e il modello principale farà riferimento al frammento come mostrato di seguito
    ![fragment-xdp](assets/survey-fragment.png).
 * La cartella xdpdocuments conterrà il modello di base e i frammenti in **frammenti** cartella
 
-È possibile creare la struttura richiesta utilizzando [interfaccia utente moduli e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+Puoi creare la struttura richiesta utilizzando [interfaccia utente per moduli e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
-Di seguito è riportata la struttura delle cartelle per l’xdp di esempio che utilizza 2 frammenti
-![moduli&amp;documenti](assets/fragment-folder-structure-ui.png)
+Di seguito è riportata la struttura di cartelle per l’XDP di esempio che utilizza 2 frammenti
+![forms&amp;document](assets/fragment-folder-structure-ui.png)
 
 
-* Servizio di output: in genere questo servizio viene utilizzato per unire dati xml con modello xdp o pdf per generare pdf appiattiti. Per ulteriori informazioni, consulta la [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) per il servizio Output. In questo esempio utilizziamo frammenti che risiedono nell’archivio crx.
+* Servizio di output: in genere questo servizio viene utilizzato per unire i dati xml con un modello xdp o un PDF per generare un PDF appiattito. Per ulteriori informazioni, consultare [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) per il servizio di output. In questo esempio utilizziamo frammenti che risiedono nell’archivio crx.
 
 
 Il codice seguente è stato utilizzato per includere frammenti nel file PDF
@@ -65,22 +66,22 @@ out.println("Document genreated and saved to " + filePath);
 **Per testare il pacchetto di esempio sul sistema**
 
 * [Scarica e importa i file xdp di esempio in AEM](assets/xdp-templates-fragments.zip)
-* [Scarica e installa il pacchetto utilizzando il gestore di pacchetti AEM](assets/using-fragments-assets.zip)
-* [Il campione xdp e i frammenti possono essere scaricati da qui](assets/xdptemplates.zip)
+* [Scaricare e installare il pacchetto utilizzando Gestione pacchetti AEM](assets/using-fragments-assets.zip)
+* [L’XDP e i frammenti di esempio possono essere scaricati da qui](assets/xdptemplates.zip)
 
-**Dopo aver installato il pacchetto dovrai inserire nell&#39;elenco Consentiti i seguenti URL in Adobe Granite CSRF Filter.**
+**Dopo aver installato il pacchetto, dovrai inserire nell&#39;elenco Consentiti i seguenti URL in Adobe Granite CSRF Filter.**
 
-1. Segui i passaggi indicati di seguito per inserire nell&#39;elenco Consentiti i percorsi sopra menzionati.
+1. Segui i passaggi indicati di seguito per inserire nell&#39;elenco Consentiti i percorsi menzionati in precedenza.
 1. [Accedi a configMgr](http://localhost:4502/system/console/configMgr)
-1. Ricerca filtro CSRF Granite Adobe
+1. Cerca Adobe di filtro CSRF Granite
 1. Aggiungi il seguente percorso nelle sezioni escluse e salva
-1. /content/AemFormsSamples/using fragments
+1. /content/AemFormsSamples/usingfragments
 
-Esistono diversi modi per testare il codice di esempio. La più rapida e semplice è quella di utilizzare l&#39;app Postman. Postman consente di effettuare richieste POST al server. Installa l&#39;app Postman sul tuo sistema.
-Avvia l’app e immetti il seguente URL per testare l’API dei dati di esportazione
+Esistono diversi modi per testare il codice di esempio. Il metodo più rapido e semplice consiste nell’utilizzare l’app Postman. Postman consente di effettuare richieste POST al server. Installa l’app Postman sul sistema.
+Avvia l’app e immetti il seguente URL per testare l’API di esportazione dei dati
 
-Accertati di aver selezionato &quot;POST&quot; dall’elenco a discesa http://localhost:4502/content/AemFormsSamples/usingfragments.html Assicurati di specificare &quot;Autorizzazione&quot; come &quot;Autenticazione di base&quot;. Specifica il nome utente e la password del server AEM Passa alla scheda &quot;Body&quot; e specifica i parametri della richiesta come mostrato nell&#39;immagine seguente
+Assicurarsi di aver selezionato &quot;POST&quot; dall&#39;elenco a discesa http://localhost:4502/content/AemFormsSamples/usingfragments.html Assicurarsi di specificare &quot;Autorizzazione&quot; come &quot;Autenticazione di base&quot;. Specifica il nome utente e la password del server AEM Passa alla scheda &quot;Corpo&quot; e specifica i parametri di richiesta come mostrato nell’immagine seguente
 ![esportare](assets/using-fragment-postman.png)
-Quindi fai clic sul pulsante Invia
+Quindi fare clic sul pulsante Invia
 
-[Puoi importare questa raccolta di postman per testare l’API](assets/usingfragments.postman_collection.json)
+[Puoi importare questa raccolta postman per testare l’API](assets/usingfragments.postman_collection.json)

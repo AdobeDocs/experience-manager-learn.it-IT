@@ -1,6 +1,6 @@
 ---
 title: Configura origine dati
-description: Crea origine dati puntando al database MySQL
+description: Crea origine dati che punta al database MySQL
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -19,45 +19,45 @@ ht-degree: 3%
 
 # Configura origine dati
 
-Esistono diversi modi in cui AEM consente l’integrazione con un database esterno. Una delle pratiche più comuni e standard dell&#39;integrazione del database è l&#39;utilizzo delle proprietà di configurazione DataSource in pool di connessione Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
-Il primo passaggio consiste nel scaricare e distribuire il [Driver MySQL](https://mvnrepository.com/artifact/mysql/mysql-connector-java) AEM.
-Quindi, imposta le proprietà DataSource in pool di connessione Sling specifiche del database. La schermata seguente mostra le impostazioni utilizzate per questa esercitazione. Lo schema di database viene fornito come parte di questa esercitazione risorse.
+Esistono molti modi in cui l’AEM consente l’integrazione con un database esterno. Una delle procedure più comuni e standard per l’integrazione del database è l’utilizzo delle proprietà di configurazione dell’origine dati in pool di connessione Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
+Il primo passaggio consiste nel scaricare e implementare la [Driver MySQL](https://mvnrepository.com/artifact/mysql/mysql-connector-java) all&#39;AEM.
+Quindi, imposta le proprietà dell’origine dati in pool di connessione Sling specifiche per il database. La schermata seguente mostra le impostazioni utilizzate per questa esercitazione. Lo schema di database viene fornito come parte di queste risorse di esercitazione.
 
-![sorgente dati](assets/data-source.JPG)
+![data-source](assets/data-source.JPG)
 
 
-* Classe del driver JDBC: `com.mysql.cj.jdbc.Driver`
-* URI di connessione JDBC: `jdbc:mysql://localhost:3306/aemformstutorial`
+* Classe driver JDBC: `com.mysql.cj.jdbc.Driver`
+* URI connessione JDBC: `jdbc:mysql://localhost:3306/aemformstutorial`
 
 >[!NOTE]
->Assicurati di assegnare un nome alla tua origine dati `StoreAndRetrieveAfData` poiché è il nome utilizzato nel servizio OSGi.
+>Assegna un nome all’origine dati `StoreAndRetrieveAfData` poiché questo è il nome utilizzato nel servizio OSGi.
 
 
 ## Crea database
 
 
-Per questo caso d&#39;uso è stato utilizzato il seguente database. Nel database è presente una tabella denominata `formdatawithattachments` con le 4 colonne come mostrato nella schermata seguente.
-![base dati](assets/table-schema.JPG)
+Ai fini di questo caso d’uso è stato utilizzato il seguente database. Il database ha una tabella denominata `formdatawithattachments` con le 4 colonne come mostrato nella schermata seguente.
+![database](assets/table-schema.JPG)
 
-* La colonna **afdata** contiene i dati del modulo adattivo.
-* La colonna **attachmentInfo** contiene informazioni sugli allegati del modulo.
-* Le colonne **numeroTelefono** conterrà il numero di cellulare della persona che compila il modulo.
+* La colonna **afdata** conterrà i dati del modulo adattivo.
+* La colonna **attachmentsInfo** conterrà le informazioni sugli allegati del modulo.
+* Le colonne **phoneNumber** conterrà il numero di cellulare della persona che compila il modulo.
 
-Crea il database importando il [schema di database](assets/data-base-schema.sql)
-utilizzo di Workbench MySQL.
+Creare il database importando [schema di database](assets/data-base-schema.sql)
+utilizzo di MySQL Workbench.
 
 ## Crea modello dati modulo
 
-Creare il modello dati del modulo e basarlo sull’origine dati creata nel passaggio precedente.
-Configura le **get** servizio di questo modello di dati del modulo come mostrato nella schermata seguente.
-Assicurati di non restituire una matrice nel **get** servizio.
+Crea il modello dati del modulo e basalo sull’origine dati creata nel passaggio precedente.
+Configurare **ottenere** servizio di questo modello di dati modulo come mostrato nella schermata seguente.
+Assicurati di non restituire un array nella **ottenere** servizio.
 
-Scopo del presente **get** recupero del numero di telefono associato all&#39;ID applicazione.
+Scopo del presente **ottenere** Il servizio deve recuperare il numero di telefono associato all&#39;id applicazione.
 
 ![get-service](assets/get-service.JPG)
 
-Questo modello di dati del modulo verrà quindi utilizzato nella **MyAccountForm** per recuperare il numero di telefono associato all&#39;ID applicazione.
+Questo modello di dati modulo verrà quindi utilizzato nel **ModuloAccount** per recuperare il numero di telefono associato all’id applicazione.
 
 ## Passaggi successivi
 
-[Scrivere codice per salvare gli allegati del modulo](./store-form-attachments.md)
+[Scrivi il codice per salvare gli allegati del modulo](./store-form-attachments.md)

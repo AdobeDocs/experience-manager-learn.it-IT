@@ -21,9 +21,9 @@ ht-degree: 1%
 
 # Aggiungere l’estensione Target a una proprietà Launch {#adobe-target-extension}
 
-Per seguire questo video, devi già aver [Experience Platform Launch integrato con AEM](../experience-platform/data-collection/tags/overview.md).
+Per seguire questo video, devi avere già [Experience Platform Launch integrato con AEM](../experience-platform/data-collection/tags/overview.md).
 
-Scopri come abilitare Adobe Target al sito Web AEM utilizzando il Experience Platform Launch.
+Scopri come abilitare Adobe Target al tuo sito web AEM utilizzando Experience Platform Launch.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41247?quality=12&learn=on)
 
@@ -33,6 +33,6 @@ Scopri come abilitare Adobe Target al sito Web AEM utilizzando il Experience Pla
 
 ## Collegamenti di supporto
 
-+ [Debugger Adobe Experience Cloud - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
-+ [Debugger Adobe Experience Cloud - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
++ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
 + [Introduzione a Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html)

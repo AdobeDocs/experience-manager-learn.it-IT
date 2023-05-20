@@ -13,23 +13,23 @@ ht-degree: 8%
 
 # Tutorials e video di AEM Forms {#overview}
 
-Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, gestire, pubblicare e aggiornare moduli digitali complessi, da integrare con processi di back-end, regole aziendali e dati. Questa guida utente contiene video ed esercitazioni sulle numerose funzioni e funzionalità di AEM Forms
+Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la creazione, la gestione, la pubblicazione e l’aggiornamento di moduli digitali complessi, garantendo al contempo l’integrazione con processi back-end, regole aziendali e dati. Questa guida utente contiene video e tutorial sulle numerose funzioni e caratteristiche di AEM Forms
 
 ## Novità
 
-* **[Gestione dei messaggi di errore nel passaggio del servizio di chiamata del modello dati del modulo](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
+* **[Gestione dei messaggi di errore nel passaggio del servizio Richiama modello dati modulo](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
 
-   *Una variabile in un modello di flusso di lavoro è un modo per memorizzare un valore in base al suo tipo di dati*
+   *Una variabile in un modello di flusso di lavoro è un modo per memorizzare un valore in base al relativo tipo di dati*
 
-* **[Grafici multiserie in documenti di comunicazione interattiva (video)](./interactive-communications/multiseriescharts.md)**
+* **[Grafici Multi-Series nei documenti di comunicazione interattiva (video)](./interactive-communications/multiseriescharts.md)**
 
-   *Traccia più serie nello stesso grafico. I grafici a serie multiple sono generalmente utilizzati in associazione con il tipo di grafico a linee, barre o a colonne.*
+   *Tracciare più serie nello stesso grafico. I grafici a serie multiple vengono in genere utilizzati in associazione con il tipo di grafico a linee, a barre o a colonne.*
 
 * **[Creazione di modelli di flusso di lavoro riutilizzabili](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
 
-   *Creare modelli di flusso di lavoro non legati a un modulo specifico*
+   *Creare modelli di flusso di lavoro non associati a un modulo specifico*
 
-## Scelte dello staff
+## Prelievi personale
 
 <table>
 <tr>
@@ -56,20 +56,20 @@ Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, g
     </a>
     </div>
     <p>
-    <em>Le comunicazioni interattive centralizzano e gestiscono la creazione, l'assemblaggio e la distribuzione di corrispondenze sicure, personalizzate e interattive quali corrispondenza aziendale, documenti, dichiarazioni, note sui benefit, e-mail di marketing, fatture e kit di benvenuto. </em>
+    <em>Le comunicazioni interattive centralizzano e gestiscono la creazione, l’assemblaggio e la distribuzione di corrispondenze sicure, personalizzate e interattive, quali corrispondenza aziendale, documenti, dichiarazioni, note sui benefit, e-mail di marketing, fatture e kit di benvenuto. </em>
     <p>
   </td>
   <td>
     <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
-      <img alt="Uso del modello dati modulo nel flusso di lavoro AEM" src="./assets/fdmlogo.png" />
+      <img alt="Utilizzo del modello dati modulo nel flusso di lavoro AEM" src="./assets/fdmlogo.png" />
     </a>
     <div>
       <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
-    <strong>Uso del modello dati modulo nel flusso di lavoro AEM</strong>
+    <strong>Utilizzo del modello dati modulo nel flusso di lavoro AEM</strong>
     </a>
     </div>
     <p>
-    <em>Richiama del servizio del modello dati modulo come passaggio nel flusso di lavoro AEM</em>
+    <em>Richiama il servizio del modello dati modulo come passaggio nel flusso di lavoro AEM</em>
     <p>
   </td>
 </tr>
@@ -77,7 +77,7 @@ Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, g
 
 >[!TIP]
 >
->Questa raccolta di campioni per dimostrare le varie funzionalità di AEM Forms.
+>Questa raccolta di esempi per dimostrare le varie funzionalità di AEM Forms.
 
 
 ## Esempi di moduli adattivi
@@ -86,15 +86,15 @@ Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, g
 <tr>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it">
-      <img alt= "Captch in AEM Forms" src="./assets/captcha1.png" />
+      <img alt= "Acquisizione in AEM Forms" src="./assets/captcha1.png" />
     </a>
     <div>
       <a href="https://forms.enablementadobe.com/content/forms/af/registerfornewsletter.html">
-    <strong>Google Captcha in forma adattiva</strong>
+    <strong>Google Captcha in modulo adattivo</strong>
     </a>
     </div>
     <p>
-    <em> Distinguere tra accesso umano e automatico ai moduli</em>
+    <em> Distinguere tra l’accesso umano e automatizzato ai moduli</em>
     <p>
   </td>
   <td>
@@ -103,11 +103,11 @@ Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, g
     </a>
     <div>
     <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/summaryscreen/jcr:content?wcmmode=disabled">
-    <strong>Esamina dati del modulo</strong>
+    <strong>Rivedi dati modulo</strong>
     </a>
     </div>
     <p>
-    <em>Visualizzare l’anteprima dei dati del modulo prima di inviarlo.</em>
+    <em>Visualizzare l'anteprima dei dati del modulo prima di inviarlo.</em>
     </p>
   </td>
   <td>
@@ -120,27 +120,27 @@ Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, g
       </a>
     </div>
     <p>
-    <em>Visualizza l’immagine aggiunta al modulo.</em>
+    <em>Visualizza l'immagine aggiunta al modulo.</em>
     <p>
   </td>
 </tr>
 </table>
 
-## Esempi di moduli adattivi e di segni
+## Moduli adattivi ed esempi di firma
 
 <table>
 <tr>
   <td>
     <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
-      <img alt="Contratto di locazione" src="./assets/rental-agreement.png" />
+      <img alt="Contratto di noleggio" src="./assets/rental-agreement.png" />
     </a>
     <div>
       <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
-    <strong>Esempio di contratto di locazione</strong>
+    <strong>Modello di contratto di locazione</strong>
     </a>
     </div>
     <p>
-    <em>Contratto di noleggio tra locatario e proprietario compilato e firmato utilizzando AEM Forms e Acrobat Sign</em>
+    <em>Contratto di noleggio tra tenant e proprietario compilato e firmato utilizzando AEM Forms e Acrobat Sign</em>
     <p>
   </td>
   <td>
@@ -153,7 +153,7 @@ Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, g
     </a>
     </div>
     <p>
-    <em>Creare un NDA in modo dinamico e inviarlo per la firma tramite Acrobat Sign</em>
+    <em>Creare un NDA in modo dinamico e inviarlo per la firma utilizzando Acrobat Sign</em>
     </p>
   </td>
   <td>
@@ -166,7 +166,7 @@ Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, g
       </a>
     </div>
     <p>
-    <em>Firma facilmente più documenti utilizzando Forms e Acrobat Sign</em>
+    <em>Firmare facilmente più documenti utilizzando Forms e Acrobat Sign</em>
     <p>
   </td>
 </tr>
@@ -177,10 +177,10 @@ Adobe Experience Manager (AEM) offre una soluzione facile da usare per creare, g
 
 ## Risorse aggiuntive
 
-* [Experience League - Esplora AEM](https://experienceleague.adobe.com/?lang=it#recommended/solutions/experience-manager)
+* [Experience League - Esplorare l’AEM](https://experienceleague.adobe.com/?lang=it#recommended/solutions/experience-manager)
 * [Documentazione sull’authoring di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
-* [Documentazione di sviluppo di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
-* [Documentazione di amministrazione di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
+* [Documentazione sullo sviluppo per AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
+* [Documentazione sull’amministrazione di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
 * [Documentazione sulla distribuzione di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
 * [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutorial su AEM Assets](/help/assets/overview.md)

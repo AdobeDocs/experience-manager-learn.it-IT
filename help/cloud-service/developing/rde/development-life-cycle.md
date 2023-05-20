@@ -1,6 +1,6 @@
 ---
-title: Ciclo di vita dello sviluppo utilizzando l'ambiente di sviluppo rapido
-description: Scopri come si presenta il nuovo ciclo di vita dello sviluppo utilizzando l’ambiente di sviluppo rapido e i vantaggi principali dell’RDE.
+title: Ciclo di vita dello sviluppo utilizzando l’ambiente di sviluppo rapido
+description: Scopri come si presenta il nuovo ciclo di vita dello sviluppo utilizzando l’ambiente di sviluppo rapido e i principali vantaggi di RDE.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -9,32 +9,32 @@ level: Beginner
 jira: KT-11863
 thumbnail: KT-11863.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: 062672f6-d03c-44da-9ac5-3d1ecff1a628
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 5%
 
 ---
 
+# Ciclo di vita dello sviluppo utilizzando l’ambiente di sviluppo rapido
 
-# Ciclo di vita dello sviluppo utilizzando l&#39;ambiente di sviluppo rapido
+Scopri il ciclo di vita di sviluppo/implementazione utilizzando RDE e come offre valore con velocità.
 
-Scopri il ciclo di vita di sviluppo/distribuzione utilizzando l’RDE e come fornisce valore con velocità.
-
-Il video seguente esplora il ciclo di vita basato sullo sviluppo basato su RDE attraverso la distribuzione. Il video illustra le principali sottoattività e il flusso di sviluppo per un uso efficiente dell’RDE.
+Il video seguente illustra il ciclo di vita dello sviluppo attraverso l’implementazione basato su RDE. Il video illustra le sottoattività chiave e il flusso di sviluppo per un uso efficiente dell’RDE.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415492?quality=12&learn=on)
 
 
-## Vantaggi di RDE
+## Vantaggi dell&#39;RDE
 
 I principali vantaggi dell&#39;RDE per mantenere lo slancio dello sviluppo.
 
 - Ciclo di sviluppo più rapido
 - Riduzione dei tempi di inattività
-- Migliore test
+- Test migliori
 - Collaborazione migliorata
-- Maggiore produttività
+- Aumento della produttività
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415493?quality=12&learn=on)
 
@@ -42,7 +42,6 @@ I principali vantaggi dell&#39;RDE per mantenere lo slancio dello sviluppo.
 
 [Scenario di collaborazione per più sviluppatori](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#multiple-developers-collaborating-on-the-same-rde)
 
-[Configurazione ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it)
+[Configurazione dell’ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it)
 
 [Utilizzo di Adobe Cloud Manager - Pipeline di produzione CI/CD](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-production-pipeline.html)
-

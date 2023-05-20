@@ -1,6 +1,6 @@
 ---
 title: Rapporti sulle risorse in AEM Assets
-description: AEM Assets fornisce un framework di reporting a livello aziendale che si adatta a archivi di grandi dimensioni tramite un’esperienza utente intuitiva.
+description: AEM Assets fornisce un framework di reporting a livello aziendale in grado di adattarsi per archivi di grandi dimensioni tramite un’esperienza utente intuitiva.
 feature: Asset Reports
 topic: Administration
 role: User
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Rapporti sulle risorse{#using-reports-in-aem-assets}
 
-AEM Assets fornisce un framework di reporting a livello aziendale che si adatta a archivi di grandi dimensioni tramite un’esperienza utente intuitiva.
+AEM Assets fornisce un framework di reporting a livello aziendale in grado di adattarsi per archivi di grandi dimensioni tramite un’esperienza utente intuitiva.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22140?quality=12&learn=on)

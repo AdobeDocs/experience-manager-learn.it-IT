@@ -1,6 +1,6 @@
 ---
-title: Utilizzare il cleanup delle revisioni online
-description: Breve introduzione alla Pulizia revisioni online. Pulizia revisioni online attenua la necessità di un'applicazione frequente di pulizia revisioni offline.
+title: Usa pulizia revisioni in linea
+description: Breve introduzione alla funzione di pulizia delle revisioni online. La funzione di pulizia delle revisioni online riduce la necessità di eseguire frequenti operazioni di pulizia delle revisioni offline.
 version: 6.4, 6.5
 topics: operations, authoring, performance
 activity: use
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ---
 
-# Utilizzare il cleanup delle revisioni online
+# Usa pulizia revisioni in linea
 
-Breve introduzione al Clean-up delle revisioni online che mitiga la necessità di frequenti operazioni di pulizia delle revisioni offline.
+Breve introduzione alla funzione di pulizia delle revisioni online, che riduce la necessità di eseguire frequenti operazioni di pulizia delle revisioni offline.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17004?quality=12&learn=on)
 

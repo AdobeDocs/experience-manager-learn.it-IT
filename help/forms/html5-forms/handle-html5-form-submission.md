@@ -1,6 +1,6 @@
 ---
-title: Gestisci invio modulo HTML5
-description: Crea gestore di invio del modulo HTML5
+title: Gestire l’invio di moduli HTML5
+description: Crea gestore di invio modulo di HTML5
 feature: Mobile Forms
 topics: development
 audience: developer
@@ -21,15 +21,15 @@ ht-degree: 3%
 
 ---
 
-# Gestisci invio modulo HTML5
+# Gestire l’invio di moduli HTML5
 
-È possibile inviare i moduli di HTML5 al servlet ospitato in AEM. I dati inviati sono accessibili nel servlet come flusso di input. Per inviare il modulo HTML5 è necessario aggiungere il pulsante &quot;Invia per HTTP&quot; al modello di modulo utilizzando AEM Forms Designer
+I moduli HTML5 possono essere inviati a un servlet ospitato nell’AEM. I dati inviati sono accessibili nel servlet come flusso di input. Per inviare il modulo HTML5 è necessario aggiungere &quot;HTTP Submit Button&quot; al modello di modulo tramite AEM Forms Designer
 
 ## Creare il gestore di invio
 
-È possibile creare un semplice servlet per gestire l’invio del modulo HTML5. I dati inviati possono quindi essere estratti utilizzando il seguente codice. Questo [servlet](assets/html5-submit-handler.zip) è disponibile come parte di questa esercitazione. Installa il [servlet](assets/html5-submit-handler.zip) utilizzo [gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+È possibile creare un semplice servlet per gestire l’invio del modulo HTML5. I dati inviati possono quindi essere estratti utilizzando il seguente codice. Questo [servlet](assets/html5-submit-handler.zip) è reso disponibile come parte di questa esercitazione. Installare [servlet](assets/html5-submit-handler.zip) utilizzo [gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 
-Il codice della riga 9 può essere utilizzato per richiamare il processo J2EE. Assicurati di aver configurato [Configurazione Adobe LiveCycle Client SDK](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) se si intende utilizzare il codice per richiamare il processo J2EE.
+Il codice della riga 9 può essere utilizzato per richiamare il processo J2EE. Assicurati di aver configurato [Adobe configurazione dell’SDK del client del LiveCycle](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) se si intende utilizzare il codice per richiamare il processo J2EE.
 
 ```java
 StringBuffer stringBuffer = new StringBuffer();
@@ -63,25 +63,25 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 ![submit-url](assets/submit-url.PNG)
 
-* Tocca l’xdp e fai clic su _Proprietà_->_Avanzate_
-* copia http://localhost:4502/content/AemFormsSamples/handlehml5formsubmission.html e incolla questo nel campo di testo Invia URL
-* Fai clic su _SaveAndClose_ pulsante .
+* Tocca l’XDP e fai clic su _Proprietà_->_Avanzate_
+* copia http://localhost:4502/content/AemFormsSamples/handlehml5formsubmission.html e incollalo nel campo di testo Invia URL
+* Clic _SaveAndClose_ pulsante.
 
-### Aggiungi una voce nei percorsi di esclusione
+### Aggiungi voce in Exclude Paths (Percorsi di esclusione)
 
-* Passa a [configMgr](http://localhost:4502/system/console/configMgr).
-* Cerca _Filtro CSRF Granite Adobe_
+* Accedi a [configMgr](http://localhost:4502/system/console/configMgr).
+* Cerca _Filtro CSRF Adobe Granite_
 * Aggiungi la seguente voce nella sezione Percorsi esclusi
 * _/content/AemFormsSamples/handlehml5formsubmit_
 * Salva le modifiche
 
-### Verificare il modulo
+### Testare il modulo
 
 * Tocca il modello xdp.
 * Fai clic su _Anteprima_->Anteprima come HTML
-* Immettere alcuni dati nel modulo e fare clic su Invia
-* Dovresti vedere i dati inviati scritti nel file stdout.log del tuo server
+* Immetti alcuni dati nel modulo e fai clic su Invia
+* Dovresti visualizzare i dati inviati scritti nel file stdout.log del server
 
-### Lettura aggiuntiva
+### Letture aggiuntive
 
-Questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) si consiglia inoltre di generare PDF dall’invio di moduli di HTML5.
+Questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) durante la generazione di PDF dall’invio del modulo HTML5 è inoltre consigliato.

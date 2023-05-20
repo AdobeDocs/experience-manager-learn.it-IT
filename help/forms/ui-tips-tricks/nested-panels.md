@@ -1,6 +1,6 @@
 ---
-title: Spostarsi sui pannelli nidificati
-description: Spostarsi sui pannelli nidificati
+title: Passare ai pannelli nidificati
+description: Passare ai pannelli nidificati
 feature: Adaptive Forms
 type: Tutorial
 version: 6.5
@@ -19,21 +19,21 @@ ht-degree: 0%
 
 # Schede di navigazione con più pannelli
 
-Quando il modulo ha schede di navigazione a sinistra e se una delle schede dispone di più pannelli, è possibile nascondere il titolo dei pannelli secondari ed essere comunque in grado di spostarsi tra le schede e i pannelli secondari di tali schede
+Se nel modulo sono presenti schede di navigazione a sinistra e una delle schede è costituita da più pannelli, è possibile nascondere il titolo dei pannelli figlio e continuare a spostarsi tra le schede e i pannelli figlio di tali schede
 
 ## Creare un modulo adattivo
 
-Crea un modulo adattivo con la seguente struttura. Il pannello principale dispone di pannelli secondari visualizzati come schede a sinistra. Alcuni di questi &quot;**schede**&quot; dispongono di pannelli figlio aggiuntivi. Ad esempio, nella scheda Famiglia sono presenti due pannelli secondari denominati coniuge e figlio.
+Crea un modulo adattivo con la seguente struttura. Il pannello principale ha pannelli secondari che vengono visualizzati come schede a sinistra. Alcuni di questi &quot;**schede**&quot; dispongono di pannelli figlio aggiuntivi. Ad esempio, la scheda Famiglia include due pannelli figlio denominati Coniuge e Figli.
 
-Una barra degli strumenti viene aggiunta anche sotto FormContainer con i pulsanti Prec e Successivo
+Viene aggiunta anche una barra degli strumenti sotto FormContainer con i pulsanti Prec e Next
 
 ![spaziatura barra degli strumenti](assets/multiple-panels.png)
 
 
 
-Il comportamento predefinito di questo modulo consiste nel visualizzare tutti i pannelli a sinistra e quindi passare da una scheda all’altra facendo clic sul pulsante successivo.
+Il comportamento predefinito di questo modulo consiste nel visualizzare tutti i pannelli a sinistra e quindi passare da una scheda all&#39;altra facendo clic sul pulsante successivo.
 
-Per modificare questo comportamento predefinito è necessario effettuare le seguenti operazioni
+Per modificare questo comportamento predefinito, è necessario effettuare le seguenti operazioni
 
 >[!VIDEO](https://video.tv.adobe.com/v/338369?quality=12&learn=on)
 
@@ -50,14 +50,14 @@ Aggiungi il codice seguente all’evento click del **Precedente** tramite l’ed
 window.guideBridge.setFocus(null, 'prevItemDeep', true);
 ```
 
-Il codice di cui sopra ti aiuterà a navigare tra le schede e i pannelli secondari di ciascuna scheda.
+Il codice riportato sopra consente di spostarsi tra le schede e i pannelli secondari di ciascuna scheda.
 
-## Nascondere il titolo dei pannelli figlio
+## Nascondi il titolo dei pannelli figlio
 
-Utilizza l’editor di stili per nascondere il titolo dei pannelli secondari delle schede.
+Utilizza l’editor di stili per nascondere il titolo delle schede nei pannelli secondari.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338370?quality=12&learn=on)
 
 >[!NOTE]
 >
->La funzionalità descritta in questo articolo non funziona nell’ultima scheda. Ad esempio, se nella scheda Indirizzo erano presenti pannelli secondari, questa funzionalità non funzionerebbe.
+>La funzionalità descritta in questo articolo non funziona nell’ultima scheda. Ad esempio, se la scheda Indirizzo avesse pannelli secondari, questa funzionalità non funzionerebbe.

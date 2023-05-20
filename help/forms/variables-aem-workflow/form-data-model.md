@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Variabili del tipo di modello per dati modulo
 
-Le variabili del tipo di modello per dati modulo sono generalmente utilizzate per inserire righe nell’origine dati sottostante del modello per dati modulo. Questo video illustra i passaggi necessari per inserire una riga nel database utilizzando AEM flusso di lavoro.
+Le variabili del tipo di modello per dati modulo vengono generalmente utilizzate per inserire righe nell’origine dati sottostante del modello per dati modulo. Questo video illustra i passaggi necessari per inserire una riga nel database utilizzando il flusso di lavoro AEM.
 
 
 

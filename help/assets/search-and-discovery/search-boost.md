@@ -1,6 +1,6 @@
 ---
 title: Cos’è Search Boost in AEM Assets?
-description: Scopri come aggiungere parole chiave ed espressioni per migliorare la pertinenza della ricerca di una risorsa in Adobe Experience Manager.
+description: Scopri come aggiungere parole chiave e frasi per aumentare la rilevanza di una risorsa ai fini della ricerca in Adobe Experience Manager.
 topic: Content Management
 feature: Search
 role: User

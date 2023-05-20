@@ -1,6 +1,6 @@
 ---
 title: Domande frequenti sulla migrazione dei contenuti as a Cloud Service AEM
-description: Risposte alle domande più frequenti sulla migrazione dei contenuti in AEM as a Cloud Service.
+description: Risposte alle domande frequenti sulla migrazione dei contenuti a AEM as a Cloud Service.
 version: Cloud Service
 doc-type: article
 feature: Migration
@@ -9,161 +9,161 @@ role: Architect, Developer
 level: Beginner
 kt: 11200
 thumbnail: kt-11200.jpg
-source-git-commit: b2656329270ac90458dbc25bb05f39bf76921f26
+exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '2283'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
 # Domande frequenti sulla migrazione dei contenuti as a Cloud Service AEM
 
-Risposte alle domande più frequenti sulla migrazione dei contenuti in AEM as a Cloud Service.
+Risposte alle domande frequenti sulla migrazione dei contenuti a AEM as a Cloud Service.
 
 ## Terminologia
 
-+ **AEMaaCS**: [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html)
-+ **BPA**: [Analisi delle best practice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html)
-+ **CTT**: [Strumento Content Transfer (Trasferimento contenuti)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
++ **AEMaaCS**: [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html?lang=it)
++ **BPA**: [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html)
++ **CTT**: [Strumento Content Transfer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
 + **CAM**: [Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html)
 + **IMS**: [Sistema Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html)
 + **DM**: [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1.html)
 
-Utilizza il seguente modello per fornire ulteriori dettagli durante la creazione di ticket di supporto Adobe relativi al CTT.
+Utilizza il modello seguente per fornire ulteriori dettagli durante la creazione dei ticket di supporto Adobe relativi a CTT.
 
-![Modello di ticket di supporto per Adobi di migrazione dei contenuti](../../assets/faq/adobe-support-ticket-template.png) { align=&quot;center&quot; }
+![Modello ticket supporto Adobe per migrazione contenuti](../../assets/faq/adobe-support-ticket-template.png) { align=&quot;center&quot; }
 
 ## Domande generali sulla migrazione dei contenuti
 
-### D: Quali sono i diversi metodi per migrare i contenuti in AEM come Cloud Services?
+### D: Quali sono i diversi metodi per migrare i contenuti all’AEM come Cloud Services?
 
-Sono disponibili tre diversi metodi
+Sono disponibili tre metodi diversi
 
 + Utilizzo dello strumento Content Transfer (AEM 6.3+ → AEMaaCS)
 + Tramite Gestione pacchetti (AEM → AEMaaCS)
-+ Servizio di importazione in blocco predefinito per le risorse (S3/Azure → AEMaaCS)
++ Servizio di importazione in blocco per risorse pronto all’uso (S3/Azure → AEMaaCS)
 
-### D: Esiste un limite alla quantità di contenuto che può essere trasferita utilizzando il CTT?
+### D: Esiste un limite alla quantità di contenuto che può essere trasferito utilizzando CTT?
 
-No. Il CTT come strumento potrebbe estrarre AEM sorgente e acquisire in AEMaaCS. Tuttavia, esistono limiti specifici sulla piattaforma AEMaaCS che devono essere presi in considerazione prima della migrazione.
+No. Il CTT come strumento potrebbe estrarre dall’origine dell’AEM e inserirlo in AEMaaCS. Tuttavia, esistono limiti specifici alla piattaforma AEMaaCS che devono essere considerati prima della migrazione.
 
-Per ulteriori informazioni, consulta [prerequisiti per la migrazione al cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html).
+Per ulteriori informazioni, consulta [prerequisiti per la migrazione cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html).
 
-### D: Ho l&#39;ultimo rapporto BPA dal mio sistema di origine, cosa dovrei fare con esso?
+### D: Ho il report BPA più recente dal mio sistema di origine, cosa devo fare con esso?
 
-Esporta il rapporto come CSV e caricalo su Cloud Acceleration Manager, [associato all’organizzazione IMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html). Quindi passa attraverso il processo di revisione come [delineato nella fase di preparazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).
+Esportare il rapporto come file CSV e caricarlo in Cloud Acceleration Manager, [associato alla tua organizzazione IMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=it). Quindi segui il processo di revisione come [delineato nella fase di preparazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).
 
-Controlla la valutazione della complessità del codice e del contenuto fornita dallo strumento e prendi nota degli elementi di azione associati che portano al backlog di refactoring del codice o alla valutazione della migrazione a Cloud.
+Rivedi la valutazione della complessità del codice e dei contenuti fornita dallo strumento e prendi nota delle azioni associate che portano al backlog di refactoring del codice o alla valutazione della migrazione cloud.
 
-### D: È consigliabile estrarre l’autore sorgente e assimilarlo in AEMaaCS author e pubblicare?
+### D: Si consiglia di estrarre dall’autore dell’origine e di acquisire in AEMaaCS author e publish?
 
-È sempre consigliabile eseguire l’estrazione e l’acquisizione 1:1 tra i livelli di authoring e pubblicazione. Detto questo, è accettabile estrarre l&#39;autore di produzione sorgente e assimilarlo in Dev, Stage e Production CS.
+Si consiglia sempre di eseguire l’estrazione e l’acquisizione 1:1 tra i livelli di authoring e pubblicazione. Detto questo, è accettabile estrarre l’autore della produzione sorgente e inserirlo in Dev, Stage e Production CS.
 
-### D: Esiste un modo per stimare il tempo necessario per migrare il contenuto dal AEM di origine ad AEMaaCS utilizzando il CTT?
+### D: Esiste un modo per stimare il tempo necessario per migrare i contenuti dall’AEM di origine ad AEMaaCS utilizzando il CTT?
 
-Poiché il processo di migrazione dipende dalla larghezza della banda Internet, dall&#39;heap allocato per il processo CTT, dalla memoria disponibile e dall&#39;IO del disco che sono soggettivi a ciascun sistema di origine, si raccomanda di eseguire la prova delle migrazioni in anticipo e di estrapolare quei punti di dati per arrivare con stime.
+Poiché il processo di migrazione dipende dalla larghezza di banda Internet, dall’heap allocato per il processo CTT, dalla memoria disponibile e dall’I/O su disco, che sono soggetti a ciascun sistema di origine, si consiglia di eseguire in anticipo le migrazioni Proof Of (Bozza di migrazione) ed estrapolare tali punti di dati per ottenere delle stime.
 
-### D: In che modo la mia sorgente AEM le prestazioni vengono influenzate se avvio il processo di estrazione del CTT?
+### D: In che modo le prestazioni dell’AEM di origine vengono influenzate se avvio il processo di estrazione CTT?
 
-Lo strumento CTT viene eseguito nel proprio processo Java™ che richiede fino a 4 gb heap, che è configurabile tramite la configurazione OSGi. Questo numero può cambiare, ma puoi unirti al processo Java™ e scoprirlo.
+Lo strumento CTT viene eseguito nel proprio processo Java™ che occupa fino a 4 gb di heap, configurabile tramite la configurazione OSGi. Questo numero può cambiare, ma puoi usare il processo Java™ e scoprirlo.
 
-Se AZCopy è installato e/o l&#39;opzione / funzione di convalida pre-copia abilitata, il processo AZCopy consuma cicli della CPU.
+Se AZCopy è installato e/o l&#39;opzione/funzione di convalida Pre Copy è abilitata, il processo AZCopy utilizza cicli di CPU.
 
-Oltre a jvm , lo strumento utilizza anche l&#39;IO su disco per memorizzare i dati in uno spazio temporaneo e che verrà ripulito dopo il ciclo di estrazione. Oltre alla RAM, CPU e IO disco, lo strumento CTT utilizza anche la larghezza della banda di rete del sistema di origine per caricare i dati nell’archivio BLOB di Azure.
+Oltre a jvm , lo strumento utilizza anche l’I/O su disco per memorizzare i dati su uno spazio temporaneo transitorio che verrà pulito dopo il ciclo di estrazione. Oltre a RAM, CPU e I/O disco, lo strumento CTT utilizza anche la larghezza di banda di rete del sistema di origine per caricare i dati nell’archivio BLOB di Azure.
 
-La quantità di risorse che il processo di estrazione del CTT prende dipende dal numero di nodi, dal numero di BLOB e dalla loro dimensione aggregata. È difficile fornire una formula e quindi si consiglia di eseguire una piccola prova di migrazione per determinare i requisiti di upsize del server di origine.
+La quantità di risorse impiegate dal processo di estrazione CTT dipende dal numero di nodi, dal numero di BLOB e dalla loro dimensione aggregata. Poiché è difficile fornire una formula, si consiglia di eseguire una piccola verifica della migrazione per determinare i requisiti di upsize del server di origine.
 
-Se per la migrazione vengono utilizzati gli ambienti clone, questo non avrà alcun impatto sull’utilizzo delle risorse del server di produzione live, ma avrà i propri lati negativi per quanto riguarda la sincronizzazione dei contenuti tra produzione live e clone
+Se per la migrazione vengono utilizzati ambienti clone, questo non influirà sull’utilizzo delle risorse del server di produzione live, ma presenta alcuni aspetti negativi per quanto riguarda la sincronizzazione dei contenuti tra produzione live e clone
 
-### D: Nel mio sistema di authoring sorgente, l’SSO è configurato affinché gli utenti si autentichino nell’istanza di authoring. Devo utilizzare la funzione di mappatura utenti del CTT in questo caso?
-
-La risposta breve è &quot;**Sì**&quot;.
-
-Estrazione e acquisizione del CTT **senza** la mappatura utente esegue solo la migrazione del contenuto e dei principi associati (utenti, gruppi) dal AEM di origine ad AEMaaCS. Ma esiste un requisito che questi utenti (identità) siano presenti in Adobe IMS e abbiano (con provisioning) accesso all’istanza AEMaaCS per la corretta autenticazione. Il lavoro di [strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.html) mappare l’utente AEM locale all’utente IMS in modo che l’autenticazione e le autorizzazioni funzionino insieme.
-
-In questo caso, il provider di identità SAML è configurato contro Adobe IMS per utilizzare Federated / Enterprise ID, anziché direttamente per AEM utilizzando il gestore di autenticazione.
-
-### D: Nel mio sistema di authoring sorgente, è configurata l’autenticazione di base per consentire agli utenti di eseguire l’autenticazione nell’istanza di authoring con gli utenti AEM locali. Devo utilizzare la funzione di mappatura utenti del CTT in questo caso?
+### D: nel sistema di authoring di origine, l’SSO è configurato per consentire agli utenti di eseguire l’autenticazione nell’istanza di authoring. In questo caso devo utilizzare la funzione di mappatura utenti di CTT?
 
 La risposta breve è &quot;**Sì**&quot;.
 
-L’estrazione e l’acquisizione del CTT senza mappatura utente esegue la migrazione del contenuto, i principi associati (utenti, gruppi) da AEM sorgente ad AEMaaCS. Ma esiste un requisito che questi utenti (identità) siano presenti in Adobe IMS e abbiano (con provisioning) accesso all’istanza AEMaaCS per la corretta autenticazione. Il lavoro di [strumento di mappatura utente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.html) mappare l’utente AEM locale all’utente IMS in modo che l’autenticazione e le autorizzazioni funzionino insieme.
+Estrazione e acquisizione CTT **senza** la mappatura utenti migra solo il contenuto, i principi associati (utenti, gruppi) dall’AEM sorgente ad AEMaaCS. Tuttavia, questi utenti (identità) presenti in Adobe IMS devono poter accedere (con provisioning) all’istanza di AEMaaCS per eseguire correttamente l’autenticazione. Il lavoro di [strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.html) corrisponde a mappare l’utente AEM locale all’utente IMS in modo che l’autenticazione e le autorizzazioni funzionino insieme.
 
-In questo caso, gli utenti utilizzano Adobe ID personale e Adobe ID viene utilizzato dall’amministratore IMS per fornire l’accesso ad AEMaaCS.
+In questo caso, il provider di identità SAML è configurato su Adobe IMS per utilizzare un’Enterprise ID Federated/invece di essere configurato direttamente su AEM utilizzando il gestore di autenticazione.
 
-### D: Cosa significano i termini &quot;Cancella&quot; e &quot;sovrascrivi&quot; nel contesto del CTT?
+### D: Nel mio sistema di authoring di origine, abbiamo configurato l’autenticazione di base per gli utenti per l’autenticazione nell’istanza di authoring con gli utenti AEM locali. In questo caso devo utilizzare la funzione di mappatura utenti di CTT?
 
-Nel contesto [fase di estrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-servicemoving/cloud-migration/content-transfer-tool/extracting-content.html), le opzioni consistono nella sovrascrittura dei dati nel contenitore di staging dai cicli di estrazione precedenti o nell’aggiunta del differenziale (aggiunto/aggiornato/eliminato). Il contenitore di staging non è altro che il contenitore di archiviazione BLOB associato al set di migrazione. Ogni set di migrazione ottiene il proprio contenitore di staging.
+La risposta breve è &quot;**Sì**&quot;.
 
-Nel contesto [fase di ingestione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html), le opzioni sono + per sostituire l’intero archivio di contenuti di AEMaaCS o sincronizzare il contenuto differenziale (aggiunto/aggiornato/eliminato) dal contenitore di migrazione di staging.
+L’estrazione e l’acquisizione CTT senza mappatura utente eseguono la migrazione del contenuto e dei principi associati (utenti, gruppi) dall’AEM di origine ad AEMaaCS. Tuttavia, questi utenti (identità) presenti in Adobe IMS devono poter accedere (con provisioning) all’istanza di AEMaaCS per eseguire correttamente l’autenticazione. Il lavoro di [strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.html) corrisponde a mappare l’utente AEM locale all’utente IMS in modo che l’autenticazione e le autorizzazioni funzionino insieme.
 
-### D: Ci sono più siti web, risorse associate, utenti, gruppi nel sistema sorgente. È possibile migrarli in più fasi ad AEMaaCS?
+In questo caso, gli utenti utilizzano Adobe ID personale e Adobe ID viene utilizzato dall’amministratore IMS per fornire l’accesso a AEMaaCS.
+
+### D: Cosa significano i termini &quot;cancella&quot; e &quot;sovrascrivi&quot; nel contesto del CTT?
+
+Nel contesto di [fase di estrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-servicemoving/cloud-migration/content-transfer-tool/extracting-content.html), Le opzioni consentono di sovrascrivere i dati nel contenitore di staging dai cicli di estrazione precedenti o di aggiungervi il differenziale (aggiunto/aggiornato/eliminato). Il contenitore di staging non è un elemento valido, ma è il contenitore di archiviazione BLOB associato al set di migrazione. Ogni set di migrazione ottiene il proprio contenitore di staging.
+
+Nel contesto di [fase di acquisizione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=it), Le opzioni sono + per sostituire l’intero archivio dei contenuti di AEMaaCS o per sincronizzare i contenuti differenziali (aggiunti/aggiornati/eliminati) dal contenitore della migrazione di staging.
+
+### D: nel sistema di origine sono presenti più siti web, risorse associate, utenti e gruppi. È possibile migrarli in più fasi in AEMaaCS?
 
 Sì, è possibile ma richiede un&#39;attenta pianificazione per quanto riguarda:
 
-+ Creazione dei set di migrazione presupponendo che i siti siano presenti nelle rispettive gerarchie
-   + Verifica se è accettabile migrare tutte le risorse come parte di un set di migrazione e quindi inserire in più fasi i siti che le utilizzano
-+ Nello stato corrente, il processo di acquisizione dell’autore rende l’istanza di authoring non disponibile per l’authoring dei contenuti, anche se il livello di pubblicazione può comunque servire i contenuti
-   + Questo significa che fino al completamento dell’acquisizione in author, le attività di authoring dei contenuti vengono congelate
++ Creazione dei set di migrazione presupponendo che i siti, le risorse siano nelle rispettive gerarchie
+   + Verifica se è accettabile migrare tutte le risorse come parte di un set di migrazione e quindi portare siti che le utilizzano in fasi
++ Nello stato corrente, il processo di acquisizione dell’autore rende l’istanza di authoring non disponibile per l’authoring dei contenuti anche se il livello di pubblicazione può ancora gestire i contenuti
+   + Questo significa che finché l’acquisizione non viene completata nell’ambiente di authoring, le attività di authoring dei contenuti vengono congelate
 
-Rivedi il processo di estrazione e acquisizione integrativa come documentato prima di pianificare le migrazioni.
+Prima di pianificare le migrazioni, controlla il processo di estrazione e acquisizione integrativa come documentato.
 
 ### D: I miei siti web saranno disponibili per gli utenti finali anche se l’acquisizione avviene nelle istanze di authoring o pubblicazione di AEMaaCS?
 
-Sì. Il traffico dell’utente finale non viene interrotto dall’attività di migrazione dei contenuti. Tuttavia, l’acquisizione dell’autore blocca l’authoring dei contenuti fino al suo completamento.
+Sì. Il traffico degli utenti finali non viene interrotto dall’attività di migrazione dei contenuti. Tuttavia, l’acquisizione dell’autore blocca l’authoring dei contenuti fino al suo completamento.
 
-### D: Il rapporto BPA mostra gli elementi relativi alle rappresentazioni originali mancanti. Devo pulirli alla fonte prima dell&#39;estrazione?
+### D: il rapporto BPA mostra gli elementi relativi alle rappresentazioni originali mancanti. Devo ripulirli nell’origine prima dell’estrazione?
 
-Sì. Il rendering originale mancante indica che il binario della risorsa non viene caricato correttamente al primo posto. Considerati come dati errati, rivedi, esegui il backup utilizzando Gestione pacchetti (come richiesto) e rimuoverli dall’AEM di origine prima di eseguire l’estrazione. I dati errati avranno risultati negativi sui passaggi di elaborazione delle risorse.
+Sì. La rappresentazione originale mancante indica che il binario della risorsa non è caricato correttamente. Considerandoli come dati errati, rivedi, esegui il backup utilizzando Gestione pacchetti (come richiesto) e rimuovili dall’AEM sorgente prima di eseguire l’estrazione. I dati errati avranno risultati negativi sui passaggi di elaborazione delle risorse.
 
-### D: Il rapporto BPA contiene elementi relativi a mancanti `jcr:content` nodo per le cartelle. Cosa dovrei fare con loro?
+### D: il rapporto BPA contiene elementi relativi a mancanti `jcr:content` per le cartelle. Cosa dovrei fare con loro?
 
-Quando `jcr:content` manca a livello di cartella, qualsiasi azione per propagare le impostazioni come profili di elaborazione, ecc. dai genitori si romperà a questo livello. Rivedere il motivo della mancanza `jcr:content`. Anche se è possibile eseguire la migrazione di queste cartelle, si prega di notare che tali cartelle degradano l&#39;esperienza utente e causano cicli di risoluzione dei problemi superflui in un secondo momento.
+Quando `jcr:content` manca a livello di cartella, qualsiasi azione per propagare le impostazioni, ad esempio i profili di elaborazione, ecc. da genitori si interromperà a questo livello. Controlla il motivo della mancanza `jcr:content`. Anche se è possibile eseguire la migrazione di queste cartelle, si noti che le cartelle danneggiano l&#39;esperienza utente e causano cicli di risoluzione dei problemi non necessari in un secondo momento.
 
-### D: Ho creato un set di migrazione. è possibile controllarne le dimensioni?
+### D: ho creato un set di migrazione. è possibile controllarne la dimensione?
 
-Sì, c&#39;è un [Dimensioni controllo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size) che fa parte del CTT.
+Sì, esiste un [Verifica dimensione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size) che fa parte del CTT.
 
-### D: Sto eseguendo la migrazione (estrazione, acquisizione). È possibile verificare che tutto il contenuto estratto sia acquisito in target?
+### D: eseguo la migrazione (estrazione, acquisizione). È possibile verificare che tutto il contenuto estratto sia stato acquisito in Target?
 
-Sì, c&#39;è un [convalida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html) che fa parte del CTT.
+Sì, esiste un [convalida](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html) che fa parte del CTT.
 
-### D: Il mio cliente ha l’obbligo di spostare i contenuti tra ambienti AEMaaCS, ad esempio da AEMaaCS Dev ad AEMaaCS Stage o AEMaaCS Prod. Posso utilizzare lo strumento di trasferimento dei contenuti per questi casi d’uso?
+### D: il mio cliente ha l’esigenza di spostare i contenuti tra ambienti AEMaaCS, ad esempio da AEMaaCS Dev a AEMaaCS Stage o a AEMaaCS Prod. Posso utilizzare lo strumento di trasferimento dei contenuti per questi casi d’uso?
 
-Sfortunatamente No. Il caso d’uso del CTT è la migrazione del contenuto dall’origine in hosting on-premise/AMS AEM 6.3+ agli ambienti cloud AEMaaCS. [Leggi la documentazione CTT](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html).
+Sfortunatamente, no. Il caso d’uso di CTT consiste nella migrazione dei contenuti dall’origine AEM 6.3+ in sede/AMS agli ambienti cloud AEMaaCS. [Leggi la documentazione CTT](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html).
 
 ### D: Che tipo di problemi sono previsti durante l&#39;estrazione?
 
-La fase di estrazione è un processo che richiede più aspetti per funzionare come previsto. Prestare attenzione ai diversi tipi di problemi che possono verificarsi e a come attenuarli aumenta il successo complessivo della migrazione dei contenuti.
+La fase di estrazione è un processo coinvolto che richiede il funzionamento previsto di più aspetti. Conoscere i diversi tipi di problemi che possono verificarsi e come attenuarli aumenta il successo complessivo della migrazione dei contenuti.
 
-La documentazione pubblica viene continuamente migliorata in base agli insegnamenti, ma ci sono alcune categorie di problemi di alto livello e possibili ragioni sottostanti.
+La documentazione pubblica viene continuamente migliorata in base ai risultati, ma ecco alcune categorie di problemi di alto livello e possibili ragioni sottostanti.
 
-![AEM problemi di estrazione della migrazione dei contenuti as a Cloud Service](../../assets/faq/extraction-issues.jpg) { align=&quot;center&quot; }
+![Problemi relativi all’estrazione di contenuti as a Cloud Service dall’AEM](../../assets/faq/extraction-issues.jpg) { align=&quot;center&quot; }
 
-### D: Che tipo di problemi sono previsti durante l&#39;ingestione?
+### D: Che tipo di problemi si prevedono durante l’acquisizione?
 
-La fase di acquisizione si verifica completamente nella piattaforma cloud e richiede aiuto dalle risorse che hanno accesso all’infrastruttura AEMaaCS. Crea un ticket di supporto per ulteriori informazioni.
+La fase di acquisizione si verifica completamente nella piattaforma cloud e richiede aiuto da parte delle risorse che hanno accesso all’infrastruttura AEMaaCS. Crea un ticket di supporto per ulteriore assistenza.
 
-Qui sono possibili categorie di problemi (non considerarlo come un elenco esclusivo)
+Di seguito sono elencate le possibili categorie di problemi (non considerarla come un elenco esclusivo)
 
-![AEM problemi di acquisizione della migrazione dei contenuti as a Cloud Service](../../assets/faq/ingestion-issues.jpg) { align=&quot;center&quot; }
+![Problemi di acquisizione dei contenuti as a Cloud Service AEM](../../assets/faq/ingestion-issues.jpg) { align=&quot;center&quot; }
 
 
 
-### D: Il server di origine deve disporre di una connessione Internet in uscita affinché il CTT funzioni?
+### D: il server di origine deve disporre di una connessione Internet in uscita per il funzionamento di CTT?
 
 La risposta breve è &quot;**Sì**&quot;.
 
-Il processo CTT richiede la connettività alle risorse seguenti:
+Il processo CTT richiede connettività alle risorse seguenti:
 
-+ Il target AEM ambiente as a Cloud Service: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
-+ Servizio di archiviazione BLOB di Azure: `casstorageprod.blob.core.windows.net`
-+ Endpoint I/O di mappatura utente: `usermanagement.adobe.io`
++ L’ambiente as a Cloud Service AEM di destinazione: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
++ Il servizio di archiviazione BLOB di Azure: `casstorageprod.blob.core.windows.net`
++ Endpoint I/O mappatura utenti: `usermanagement.adobe.io`
 
-Per ulteriori informazioni, consulta la documentazione . [connettività sorgente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#source-environment-connectivity).
+Per ulteriori informazioni su, consulta la documentazione di [connettività di origine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#source-environment-connectivity).
 
-## Domande relative all’elaborazione delle risorse su Dynamic Media
+## Domande relative a Dynamic Media sull’elaborazione delle risorse
 
 ### D: Le risorse verranno rielaborate automaticamente dopo l’acquisizione in AEMaaCS?
 
@@ -171,59 +171,59 @@ No. Per elaborare le risorse, è necessario avviare la richiesta di rielaborazio
 
 ### D: Le risorse verranno reindicizzate automaticamente dopo l’acquisizione in AEMaaCS?
 
-Sì. Le risorse vengono reindicizzate in base alle definizioni di indice disponibili in AEMaaCS.
+Sì. Le risorse vengono reindicizzate in base alle definizioni dell’indice disponibili in AEMaaCS.
 
-### D: L’AEM sorgente è integrata con Dynamic Media. Esistono elementi specifici da considerare prima della migrazione dei contenuti?
+### D: L’AEM di origine è integrato con Dynamic Media. Ci sono aspetti specifici da considerare prima di migrare i contenuti?
 
-Sì, considera quanto segue quando l&#39;AEM di origine dispone dell&#39;integrazione Dynamic Media.
+Sì, considera quanto segue quando l’AEM di origine ha l’integrazione con Dynamic Media.
 
-+ AEMaaCS supporta solo la modalità Scene7 di Dynamic Media. Se il sistema sorgente è in modalità ibrida, è necessaria la migrazione DM alle modalità Scene7.
-+ Se l’approccio è quello di migrare dalle istanze di clone di origine, allora è sicuro disabilitare l’integrazione DM su un clone che verrebbe utilizzato per CTT. Questo passaggio serve solo ad evitare qualsiasi scrittura in DM o ad evitare il caricamento sul traffico DM.
-+ Il CTT esegue la migrazione dei nodi e dei metadati di un set di migrazione da AEM sorgente ad AEMaaCS. Non eseguirà direttamente alcuna operazione su DM.
++ AEMaaCS supporta solo la modalità Scene7 di Dynamic Media. Se il sistema di origine è in modalità ibrida, è necessaria la migrazione di DM alle modalità Scene7.
++ Se l’approccio prevede la migrazione dalle istanze del clone sorgente, è sicuro disabilitare l’integrazione DM sul clone che verrebbe utilizzata per CTT. Questo passaggio ha lo scopo puramente di evitare qualsiasi scrittura in DM o di evitare il carico sul traffico DM.
++ CTT migra i nodi, i metadati di un set di migrazione dall’AEM di origine ad AEMaaCS. Non eseguirà alcuna operazione direttamente su DM.
 
-### D: Quali sono i diversi approcci di migrazione quando l’integrazione DM è presente su Source AEM?
+### D: Quali sono i diversi approcci di migrazione quando l’integrazione DM è presente sull’AEM di origine?
 
-Leggi la domanda e rispondi prima
+Leggi le domande e le risposte precedenti prima di
 
-(Queste sono due opzioni possibili ma non sono limitate solo a queste due). Dipende da come i clienti desiderano avvicinarsi all’UAT, al test delle prestazioni, all’ambiente disponibile e dal fatto che un clone venga utilizzato o meno per la migrazione. Considera questi due punti di partenza come punto di partenza della discussione
+(Si tratta di due opzioni possibili, ma non sono limitate a queste due sole opzioni). Dipende dal modo in cui il cliente desidera avvicinarsi all’UAT, dai test delle prestazioni, dall’ambiente disponibile e dal fatto che un clone venga utilizzato o meno per la migrazione. Considerate questi due punti come punto di partenza per la discussione
 
 **Opzione 1**
 
-Se il numero di risorse/nodi nell’ambiente di origine è inferiore (~100K), supponendo che questi possano essere migrati in un periodo di 24 + 72 ore, compresi estrazione e acquisizione, l’approccio migliore è
+Se il numero di risorse o nodi nell’ambiente di origine si trova all’estremità inferiore (~100K), supponendo che sia possibile migrarli per un periodo di 24 + 72 ore, comprese l’estrazione e l’acquisizione, l’approccio migliore è
 
-+ Eseguire la migrazione direttamente dalla produzione
-+ Esegui un’estrazione e un’acquisizione iniziali in AEMaaCS con `wipe=true`
-   + Questo passaggio esegue la migrazione di tutti i nodi e binari
-+ Continua a lavorare su on-premise / AMS Prod author
-+ Da ora in poi, esegui tutte le altre prove di cicli di migrazione con `wipe=true`
-   + Questa operazione esegue la migrazione dell’archivio nodi completo, ma solo dei BLOB modificati rispetto agli interi BLOB. Il set di BLOB precedente è presente nell’archivio BLOB di Azure dell’istanza AEMaaCS di destinazione.
-   + Utilizza questa bozza di migrazione per misurare la durata della migrazione, la mappatura degli utenti, il test, la convalida di tutte le altre funzionalità
-+ Infine, prima della settimana di go-live, esegui una cancellazione=vera migrazione
-   + Connetti Dynamic Media su AEMaaCS
-   + Disconnetti la configurazione DM da AEM origine locale
++ Eseguire direttamente la migrazione dalla produzione
++ Esegui un’estrazione e un’acquisizione iniziale in AEMaaCS con `wipe=true`
+   + Questo passaggio migra tutti i nodi e i binari
++ Continua a lavorare on-premise / Autore di prodotti AMS
++ Da ora in poi, esegui tutti gli altri cicli di verifica della migrazione con `wipe=true`
+   + Nota: questa operazione migra l&#39;archivio nodi completo, ma solo i BLOB modificati anziché quelli interi. Il set precedente di BLOB è presente nell’archivio BLOB di Azure dell’istanza AEMaaCS di destinazione.
+   + Utilizza questa verifica delle migrazioni per misurare la durata della migrazione, la mappatura utente, il test e la convalida di tutte le altre funzionalità.
++ Infine, prima della settimana di pubblicazione, effettua una cancellazione=migrazione effettiva
+   + Connettere Dynamic Media su AEMaaCS
+   + Disconnetti configurazione DM da origine locale AEM
 
-Con questa opzione è possibile eseguire la migrazione uno a uno, che significa On-Prem Dev → AEMaaCS Dev, e così via. e sposta le configurazioni DM dai rispettivi ambienti
+Con questa opzione è possibile eseguire la migrazione da uno a uno, ovvero Sviluppo on-premise → Sviluppo AEMaaCS e così via. e spostare le configurazioni DM dai rispettivi ambienti
 
-(Nel caso in cui la migrazione sia pianificata per essere eseguita da Clone)
+(nel caso in cui si pianifichi l’esecuzione della migrazione da Clone)
 
 **Opzione 2**
 
-+ Crea clone dell’autore Produzione, rimuovi la configurazione DM da Clone
-+ Migrare on-premise clone → AEMaaCS Dev / Stage
-   + Collega brevemente la società DM di produzione ad AEMaaCS Dev/Stage a scopo di convalida
-   + Quando la connessione DM è attiva, evita l’inserimento di risorse in AEMaaCS
-   + Questo consente loro di convalidare le convalide specifiche CTT e DM
++ Crea un clone dell’istanza di authoring di produzione, rimuovi la configurazione DM da Clone
++ Migrazione on-premise del clone → AEMaaCS Dev / Stage
+   + Connettere brevemente la società DM di produzione a AEMaaCS Dev/Stage a scopo di convalida
+   + Quando la connessione DM è attiva, evita l’acquisizione di risorse in AEMaaCS
+   + Questo consente loro di convalidare le convalide CTT e DM specifiche
 + Una volta completato il test su AEMaaCS
-   + Eseguire una migrazione a Cancella da On-Premise Stage ad AEMaaCS Stage
+   + Eseguire una migrazione Wipe da on-premise Stage ad AEMaaCS Stage
 
-Esegui una migrazione wipe da on-premise Dev ad AEMaaCS Dev.
+Esegui una migrazione Wipe (Cancella) da On-Premise Dev a AEMaaCS Dev.
 
-L’approccio di cui sopra può essere utilizzato solo per misurare la durata della migrazione, ma richiede una pulizia in un secondo momento.
+L&#39;approccio di cui sopra può essere utilizzato solo per misurare la durata della migrazione, ma richiede di pulirla in un secondo momento.
 
-## Altro materiale di riferimento
+## Risorse aggiuntive
 
-+ [Suggerimenti per la migrazione all’Experience Manager nel cloud (Summit 2022)](https://business.adobe.com/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
++ [Suggerimenti per migrare all’Experience Manager nel cloud ( Summit 2022)](https://business.adobe.com/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
 
-+ [Video della serie CTT Expert](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-servicemigration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.html)
++ [Video serie CTT Expert](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-servicemigration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.html)
 
-+ [Video serie di esperti su altri argomenti relativi ad AEMaaCS](https://experienceleague.adobe.com/docs/experience-manager-learncloud-service/aem-experts-series.html)
++ [Video della serie Expert su altri argomenti relativi ad AEMaaCS](https://experienceleague.adobe.com/docs/experience-manager-learncloud-service/aem-experts-series.html)

@@ -1,7 +1,7 @@
 ---
-title: Crea Comunicazione Interattiva Per Il Canale Di Stampa
+title: Crea Comunicazione Interattiva Per Canale Di Stampa
 seo-title: Create Interactive Communication For Print Channel
-description: Questa è la parte 6 dell'esercitazione multiparte per la creazione del primo documento di comunicazione interattivo per il canale di stampa. In questa parte viene creato il documento di comunicazione interattiva per il canale Stampa.
+description: Questa è la parte 6 del tutorial in più parti per la creazione del primo documento di comunicazione interattiva per il canale di stampa. In questa parte viene creato il documento di comunicazione interattiva per il canale di stampa.
 seo-description: This is part 6 of multipart tutorial for creating your first interactive communication document for the print channel. In this part, Interactive Communication Document for Print channel is created.
 uuid: 25318a2a-be9d-47d8-806b-d99c8e1c6a74
 feature: Interactive Communication
@@ -24,11 +24,11 @@ ht-degree: 2%
 
 ---
 
-# Crea Comunicazione Interattiva Per Il Canale Di Stampa {#create-interactive-communication-for-print-channel}
+# Crea Comunicazione Interattiva Per Canale Di Stampa {#create-interactive-communication-for-print-channel}
 
-In questa parte viene creato il documento di comunicazione interattiva per il canale Stampa.
+In questa parte viene creato il documento di comunicazione interattiva per il canale di stampa.
 
-Dopo aver definito e configurato l’origine dati e il modello dati modulo, creeremo la nostra comunicazione interattiva per il canale di stampa
+Dopo aver definito e configurato Origine dati e Modello dati modulo, ora creeremo la nostra comunicazione interattiva per il canale di stampa
 
 >[!VIDEO](https://video.tv.adobe.com/v/37888?quality=12&learn=on)
 

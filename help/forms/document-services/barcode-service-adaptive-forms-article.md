@@ -1,6 +1,6 @@
 ---
-title: Servizio Codice A Barre Con Forms Adattivo
-description: Uso del servizio codice a barre per decodificare i codici a barre e comporre i campi modulo dai dati estratti.
+title: Servizio Per Codice A Barre Con Forms Adattivo
+description: Utilizzo del servizio codice a barre per decodificare il codice a barre e compilare i campi modulo dai dati estratti.
 feature: Barcoded Forms
 version: 6.4,6.5
 topic: Development
@@ -15,16 +15,16 @@ ht-degree: 0%
 
 ---
 
-# Servizio Codice A Barre Con Forms Adattivo{#barcode-service-with-adaptive-forms}
+# Servizio Per Codice A Barre Con Forms Adattivo{#barcode-service-with-adaptive-forms}
 
-Questo articolo illustra l’utilizzo del servizio Codice a barre per compilare i moduli adattivi. Il caso d’uso è il seguente:
+Questo articolo illustra l’utilizzo del servizio Codice a barre per compilare un modulo adattivo. Il caso d’uso è il seguente:
 
-1. L’utente aggiunge PDF con codice a barre come allegato al modulo adattivo
-1. Il percorso dell&#39;allegato viene inviato al servlet
+1. L’utente aggiunge PDF con codice a barre come allegato modulo adattivo
+1. Il percorso dell’allegato viene inviato al servlet
 1. Il servlet ha decodificato il codice a barre e restituisce i dati in formato JSON
 1. Il modulo adattivo viene quindi compilato utilizzando i dati decodificati
 
-Il codice seguente decodifica il codice a barre e compila un oggetto JSON con i valori decodificati. Il servlet restituisce quindi l’oggetto JSON nella risposta all’applicazione chiamante.
+Il codice che segue decodifica il codice a barre e popola un oggetto JSON con i valori decodificati. Il servlet restituisce quindi l’oggetto JSON nella sua risposta all’applicazione chiamante.
 
 
 
@@ -54,7 +54,7 @@ public JSONObject extractBarCode(Document pdfDocument) {
  }
 ```
 
-Di seguito è riportato il codice del servlet. Questo servlet viene chiamato quando l’utente aggiunge un allegato al modulo adattivo. Il servlet restituisce l’oggetto JSON all’applicazione chiamante. L&#39;applicazione chiamante compila quindi il modulo adattivo con i valori estratti dall&#39;oggetto JSON.
+Di seguito è riportato il codice del servlet. Questo servlet viene chiamato quando l’utente aggiunge un allegato al modulo adattivo. Il servlet restituisce l’oggetto JSON all’applicazione chiamante. L’applicazione chiamante compila quindi il modulo adattivo con i valori estratti dall’oggetto JSON.
 
 ```java
 @Component(service = Servlet.class, property = {
@@ -94,7 +94,7 @@ public class DecodeBarCode extends SlingSafeMethodsServlet {
 }
 ```
 
-Il codice seguente fa parte della libreria client a cui fa riferimento il modulo adattivo. Quando un utente aggiunge l’allegato al modulo adattivo, questo codice viene attivato. Il codice effettua una chiamata GET al servlet con il percorso dell’allegato passato nel parametro della richiesta. I dati ricevuti dalla chiamata del servlet vengono quindi utilizzati per compilare il modulo adattivo.
+Il seguente codice fa parte della libreria client a cui fa riferimento il modulo adattivo. Quando un utente aggiunge l’allegato al modulo adattivo, questo codice viene attivato. Il codice effettua una chiamata di GET al servlet con il percorso dell’allegato trasmesso nel parametro della richiesta. I dati ricevuti dalla chiamata del servlet vengono quindi utilizzati per compilare il modulo adattivo.
 
 ```javascript
 $(document).ready(function()
@@ -131,18 +131,18 @@ $(document).ready(function()
 
 >[!NOTE]
 >
->Il modulo adattivo incluso in questo pacchetto è stato creato con AEM Forms 6.4. Se desideri utilizzare questo pacchetto in ambiente AEM Forms 6.3, crea il modulo adattivo AEM modulo 6.3
+>Il modulo adattivo incluso in questo pacchetto è stato creato utilizzando AEM Forms 6.4. Se intendi utilizzare questo pacchetto in ambiente AEM Forms 6.3, crea il modulo adattivo nel modulo AEM 6.3
 
-Linea 12 - Codice personalizzato per ottenere service resolver. Questo bundle è incluso come parte di queste risorse degli articoli.
+Riga 12 - Codice personalizzato per ottenere il resolver del servizio. Questo bundle è incluso come parte delle risorse di questo articolo.
 
-Riga 23 - Chiama il metodo extractBarCode di DocumentServices per ottenere il popolamento dell&#39;oggetto JSON con dati decodificati
+Riga 23: chiamare il metodo DocumentServices extractBarCode per ottenere i dati decodificati dall&#39;oggetto JSON
 
-Per eseguire questo sul sistema, segui i seguenti passaggi:
+Per eseguire questa operazione sul sistema, eseguire le operazioni seguenti:
 
-1. [Scarica BarcodeService.zip](assets/barcodeservice.zip) e importare in AEM utilizzando il gestore dei pacchetti
-1. [Scaricare e installare il bundle DocumentServices personalizzato](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+1. [Scarica BarcodeService.zip](assets/barcodeservice.zip) e importare in AEM utilizzando Gestione pacchetti
+1. [Scaricare e installare il pacchetto DocumentServices personalizzato](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Scaricare e installare il bundle DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [Scarica il modulo PDF di esempio](assets/barcode.pdf)
-1. Posiziona il browser sul [modulo adattivo di esempio](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
+1. Puntare il browser al [modulo adattivo di esempio](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
 1. Carica il PDF di esempio fornito
 1. Dovresti visualizzare i moduli compilati con i dati

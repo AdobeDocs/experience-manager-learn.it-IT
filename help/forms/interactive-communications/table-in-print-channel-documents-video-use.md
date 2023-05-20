@@ -1,7 +1,7 @@
 ---
-title: Utilizzo del componente Tabella nel documento del canale di stampa AEM Forms
+title: Utilizzo del componente Tabella nel documento del canale di stampa di AEM Forms
 seo-title: Using Table Component in AEM Forms Print Channel Document
-description: Il video seguente illustra i passaggi necessari per utilizzare il componente tabella nelle comunicazioni interattive per la stampa dei documenti del canale.
+description: Il video seguente illustra i passaggi necessari per utilizzare il componente tabella nelle comunicazioni interattive per i documenti del canale di stampa.
 feature: Interactive Communication
 topics: development
 audience: developer
@@ -20,13 +20,13 @@ ht-degree: 0%
 
 ---
 
-# Utilizzo del componente Tabella nel documento del canale di stampa AEM Forms {#using-table-component-in-aem-forms-print-channel-document}
+# Utilizzo del componente Tabella nel documento del canale di stampa di AEM Forms {#using-table-component-in-aem-forms-print-channel-document}
 
-Il video seguente illustra i passaggi necessari per utilizzare il componente tabella nelle comunicazioni interattive per la stampa dei documenti del canale.
+Il video seguente illustra i passaggi necessari per utilizzare il componente tabella nelle comunicazioni interattive per i documenti del canale di stampa.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27769?quality=12&learn=on)
 
-Le tabelle vengono utilizzate per visualizzare i dati in modo tabulare. Le righe della tabella devono crescere o ridursi a seconda dei dati restituiti dall’origine dati. Per utilizzare una tabella nel documento del canale di stampa, è necessario creare un file di layout (file xdp) utilizzando AEM Forms Designer. In questo file di layout viene aggiunta la tabella con il numero di colonne richiesto. Assicurarsi che il tipo di oggetto campo colonna sia TextField o Numeric Field a seconda delle esigenze. Per ciascuna colonna, assicurarsi che il binding dei dati sia impostato su Usa nome.
+Le tabelle vengono utilizzate per visualizzare i dati in modo tabulare. Le righe della tabella devono aumentare o diminuire a seconda dei dati restituiti dall&#39;origine dati. Per utilizzare una tabella in un documento del canale di stampa, è necessario creare un file di layout (file xdp) con AEM Forms Designer. In questo file di layout, aggiungiamo la tabella con il numero di colonne richiesto. Verificare che il tipo di oggetto campo colonna sia TextField o Numeric Field a seconda dei requisiti. Per ogni colonna, i campi assicurano che l&#39;associazione dati sia impostata su Usa nome.
 
 >[!NOTE]
 >
@@ -34,11 +34,11 @@ Le tabelle vengono utilizzate per visualizzare i dati in modo tabulare. Le righe
 
 **Prova sul tuo server**
 
-* [Scarica e decomprimi il file di risorse sul disco rigido](assets/usingtablesinprintchannel.zip)
+* [Scarica e decomprimi il file delle risorse sul disco rigido](assets/usingtablesinprintchannel.zip)
 
-* Importare i due file zip in AEM utilizzando il gestore dei pacchetti
+* Importare i due file zip in AEM utilizzando Gestione pacchetti
 
-* Le risorse associate a questo articolo sono le seguenti:
+* Tra le risorse associate a questo articolo sono incluse le seguenti:
 
    * Frammento layout
 
@@ -47,9 +47,9 @@ Le tabelle vengono utilizzate per visualizzare i dati in modo tabulare. Le righe
    * Documento di comunicazione interattiva
    * sampleretirementaccountdata.json
 
-* Apri il documento di comunicazione interattiva in [modalità di modifica](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
+* Aprire il documento di comunicazione interattiva in [modalità di modifica](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
 
-* Aggiungere il frammento di layout TabellaDemo alla sezione contributi.
-* Eseguire un binding delle celle della tabella con gli elementi del modello dati modulo appropriati, come illustrato nel video
+* Aggiungi il frammento di layout TableDemo alla sezione Contributi.
+* Associate le celle della tabella agli elementi appropriati del modello dati modulo, come mostrato nel video
 
-* Anteprima del documento di comunicazione interattiva con il file di dati json di esempio fornito all’utente
+* Anteprima del documento di comunicazione interattiva con il file di dati json di esempio fornito

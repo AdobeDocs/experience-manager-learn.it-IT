@@ -1,6 +1,6 @@
 ---
 title: Ricerca risorse
-description: Con il pannello Adobe Asset Link i creativi possono cercare le risorse memorizzate in AEM Assets utilizzando le parole chiave o eseguire una ricerca in una posizione specifica. Oltre alle opzioni di ricerca di base, Adobe Asset Link consente anche di utilizzare una risorsa per cercare risultati visivamente simili in AEM Assets. Basata sull’apprendimento automatico con Adobe Sensei, la ricerca visiva mostra i risultati con caratteristiche estetiche relative all’immagine di destinazione.
+description: Con il pannello Asset Link di Adobe, gli utenti creativi possono cercare le risorse memorizzate in AEM Assets utilizzando parole chiave o eseguire una ricerca in una posizione specifica. Oltre alle opzioni di ricerca di base, Adobe Asset Link consente di utilizzare una risorsa per cercare risultati visivamente simili in AEM Assets. Basata sull’apprendimento automatico con Adobe Sensei, la ricerca visiva mostra risultati con caratteristiche estetiche relative all’immagine di destinazione.
 feature: Adobe Asset Link
 version: Cloud Service
 thumbnail: 34260.jpg
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Ricerca risorse {#asset-search}
 
-Con il pannello Adobe Asset Link i creativi possono cercare le risorse memorizzate in AEM Assets utilizzando le parole chiave o eseguire una ricerca in una posizione specifica. Oltre alle opzioni di ricerca di base, Adobe Asset Link consente anche di utilizzare una risorsa per cercare risultati visivamente simili in AEM Assets. Basata sull’apprendimento automatico con Adobe Sensei, la ricerca visiva mostra i risultati con caratteristiche estetiche relative all’immagine di destinazione.
+Con il pannello Asset Link di Adobe, gli utenti creativi possono cercare le risorse memorizzate in AEM Assets utilizzando parole chiave o eseguire una ricerca in una posizione specifica. Oltre alle opzioni di ricerca di base, Adobe Asset Link consente di utilizzare una risorsa per cercare risultati visivamente simili in AEM Assets. Basata sull’apprendimento automatico con Adobe Sensei, la ricerca visiva mostra risultati con caratteristiche estetiche relative all’immagine di destinazione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34260?quality=12&learn=on)

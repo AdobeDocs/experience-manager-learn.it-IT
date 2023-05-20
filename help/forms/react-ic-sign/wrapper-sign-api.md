@@ -1,6 +1,6 @@
 ---
-title: Creare un modulo web da presentare all’utente per la firma
-description: Crea AEM bundle per esporre i metodi di firma Acrobat necessari per il caso d’uso.
+title: Crea un modulo web da presentare all’utente per la firma
+description: Crea un bundle AEM per esporre i metodi di firma Acrobat necessari per il caso d’uso.
 feature: Adaptive Forms,Acrobat Sign
 version: 6.4,6.5
 topic: Development
@@ -18,17 +18,17 @@ ht-degree: 0%
 
 # Creare un wrapper per l’API REST di Acrobat Sign
 
-È stato sviluppato un bundle di AEM personalizzato per creare e restituire il modulo web all’utente finale
+È stato sviluppato un bundle AEM personalizzato per creare e restituire il modulo web all’utente finale
 
-* [Crea documento transitorio](https://secure.na1.echosign.com/public/docs/restapi/v6#!/transientDocuments/createTransitentDocument). Il documento caricato tramite questa chiamata è definito transitorio poiché è disponibile solo per 7 giorni dopo il caricamento. L’ID del documento transitorio restituito può essere utilizzato nelle chiamate API in cui è necessario fare riferimento al file caricato. La richiesta del documento transitorio è una richiesta multiparte costituita da tre parti: nome del file, tipo di MIME e flusso di file. In questa richiesta è possibile caricare un solo file alla volta.
-* [Creare un modulo web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget).Questo è un endpoint principale utilizzato per creare un nuovo modulo web. Il modulo web è stato creato in uno stato ATTIVO per ospitare immediatamente il modulo web.
-* [Recuperare il modulo web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/getWidgets).Recupera il modulo web dell&#39;utente. Questo modulo Web viene quindi presentato all&#39;applicazione chiamante per la firma del documento.
+* [Crea documento transitorio](https://secure.na1.echosign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument). Il documento caricato tramite questa chiamata è definito transitorio poiché è disponibile solo per 7 giorni dopo il caricamento. L’ID documento transitorio restituito può essere utilizzato nelle chiamate API in cui è necessario fare riferimento al file caricato. La richiesta di documento transitorio è una richiesta multipla costituita da tre parti: nome file, tipo mime e flusso di file. Con questa richiesta puoi caricare un solo file alla volta.
+* [Crea modulo web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget).Questo è un endpoint primario utilizzato per creare un nuovo modulo web. Il modulo web è stato creato in stato ATTIVO per ospitarlo immediatamente.
+* [Recuperare il modulo web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/getWidgets).Recupera il sito web dell’utente. Questo modulo web viene quindi presentato all’applicazione chiamante per la firma del documento.
 
 ## Creare la configurazione OSGi di Acrobat Sign
 
-L’API REST di Acrobat Sign richiede la chiave di integrazione e l’e-mail associate alla chiave di integrazione. Questi due valori vengono forniti come proprietà di configurazione OSGi come mostrato di seguito
+L’API REST di Acrobat Sign richiede la chiave di integrazione e l’e-mail associate alla chiave di integrazione. Questi due valori vengono forniti come proprietà di configurazione OSGi, come illustrato di seguito
 
-![configurazione del segno](assets/sign-configuration.png)
+![configurazione di accesso](assets/sign-configuration.png)
 
 ```java
 package com.acrobatsign.core.configuration;
@@ -110,7 +110,7 @@ public String getTransientDocumentID(Document documentForSigning) throws IOExcep
 }
 ```
 
-## Ottieni ID Widget
+## Ottieni ID widget
 
 ```java
 public String getWidgetID(String transientDocumentID) {
@@ -159,7 +159,7 @@ public String getWidgetID(String transientDocumentID) {
 }
 ```
 
-## Ottieni URL Widget
+## Ottieni URL widget
 
 ```java
 public String getWidgetURL(String widgetId) throws ClientProtocolException, IOException {

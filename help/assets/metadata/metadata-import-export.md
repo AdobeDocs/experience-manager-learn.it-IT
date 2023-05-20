@@ -1,6 +1,6 @@
 ---
-title: Utilizzo dell’importazione e dell’esportazione di metadati in AEM Assets
-description: Scopri come utilizzare le funzioni di importazione ed esportazione dei metadati di Adobe Experience Manager Assets. Le funzionalità di importazione ed esportazione consentono agli autori di contenuti di aggiornare in blocco i metadati per le risorse esistenti.
+title: Utilizzo dell’importazione e dell’esportazione dei metadati in AEM Assets
+description: Scopri come utilizzare le funzioni di importazione ed esportazione dei metadati di Adobe Experience Manager Assets. Le funzionalità di importazione ed esportazione consentono agli autori di contenuto di aggiornare in blocco i metadati per le risorse esistenti.
 version: 6.4, 6.5, Cloud Service
 topic: Content Management
 feature: Metadata
@@ -17,9 +17,9 @@ ht-degree: 3%
 
 ---
 
-# Utilizzo dell’importazione e dell’esportazione di metadati in AEM Assets {#metadata-import-and-export}
+# Utilizzo dell’importazione e dell’esportazione dei metadati in AEM Assets {#metadata-import-and-export}
 
-Scopri come utilizzare le funzioni di importazione ed esportazione dei metadati di Adobe Experience Manager Assets. Le funzionalità di importazione ed esportazione consentono agli autori di contenuti di aggiornare in blocco i metadati per le risorse esistenti.
+Scopri come utilizzare le funzioni di importazione ed esportazione dei metadati di Adobe Experience Manager Assets. Le funzionalità di importazione ed esportazione consentono agli autori di contenuto di aggiornare in blocco i metadati per le risorse esistenti.
 
 ## Esportazione metadati {#metadata-export}
 
@@ -31,34 +31,34 @@ Scopri come utilizzare le funzioni di importazione ed esportazione dei metadati 
 
 >[!NOTE]
 >
-> Durante la preparazione di un file CSV da importare, è più semplice generare un CSV con l’elenco delle risorse utilizzando la funzione Esportazione metadati . Puoi quindi modificare il file CSV generato e importarlo utilizzando la funzione Importa.
+> Quando prepari un file CSV da importare, è più semplice generare un file CSV con l’elenco delle risorse utilizzando la funzione Esportazione metadati. Puoi quindi modificare il file CSV generato e importarlo utilizzando la funzione Importa.
 
 ## Formato file CSV metadati {#metadata-file-format}
 
 ### Prima riga
 
-* La prima riga del file CSV definisce lo schema dei metadati.
-* Per impostazione predefinita, la prima colonna è impostata su `assetPath`, che contiene il percorso JCR assoluto di una risorsa.
+* La prima riga del file CSV definisce lo schema metadati.
+* Il valore predefinito della prima colonna è `assetPath`, che contiene il percorso JCR assoluto di una risorsa.
 
-* Le colonne successive nella prima riga indicano altre proprietà di metadati di una risorsa.
-   * Esempio : `dc:title, dc:description, jcr:title`
+* Le colonne successive nella prima riga puntano ad altre proprietà di metadati di una risorsa.
+   * Ad esempio : `dc:title, dc:description, jcr:title`
 
-* Formato proprietà a valore singolo
+* Formato proprietà valore singolo
 
    * `<metadata property name> {{<property type}}`
-   * Se il tipo di proprietà non è specificato, viene impostato automaticamente su String.
+   * Se il tipo di proprietà non è specificato, viene utilizzato il valore predefinito String.
    * Esempio: `dc:title {{String}}`
 
-* Il nome della proprietà fa distinzione tra maiuscole e minuscole
-   * Corretto : `dc:title {{String}}`
+* Il nome della proprietà distingue tra maiuscole e minuscole
+   * Corretto: `dc:title {{String}}`
    * Errato: `Dc:Title {{String}}`
 
-* Il tipo di proprietà non fa distinzione tra maiuscole e minuscole
-* Tutti validi [Tipi di proprietà JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) sono supportati
+* Il tipo di proprietà non distingue tra maiuscole e minuscole
+* Tutti i valori validi [Tipi di proprietà JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) sono supportati
 
-* Formato proprietà multivalore - `<metadata property name> {{<property type : MULTI }}`
+* Formato proprietà con più valori - `<metadata property name> {{<property type : MULTI }}`
 
 ### Seconda riga a N righe
 
 * La prima colonna contiene il percorso JCR assoluto di una risorsa. Ad esempio: /content/dam/asset1.jpg
-* Nel file CSV potrebbe mancare il valore della proprietà metadati per una risorsa. Le proprietà di metadati mancanti per quella particolare risorsa non vengono aggiornate.
+* Nel file CSV potrebbero mancare dei valori nella proprietà dei metadati di una risorsa. Le proprietà di metadati mancanti per quella particolare risorsa non vengono aggiornate.

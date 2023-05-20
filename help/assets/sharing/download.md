@@ -1,6 +1,6 @@
 ---
 title: Scarica
-description: Scopri come scaricare le risorse e i relativi rendering nel computer locale per utilizzarli e condividerli.
+description: Scopri come scaricare le risorse e i relativi rendering nel computer locale per utilizzarle e condividerle.
 feature: Asset Management
 version: Cloud Service
 kt: 4300
@@ -19,6 +19,6 @@ ht-degree: 5%
 
 # Scarica
 
-Scopri come scaricare le risorse e i relativi rendering nel computer locale per utilizzarli e condividerli.
+Scopri come scaricare le risorse e i relativi rendering nel computer locale per utilizzarle e condividerle.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35090?quality=12&learn=on)

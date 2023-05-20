@@ -1,6 +1,6 @@
 ---
 title: Creazione di query GraphQL
-description: Scopri come creare query GraphQL per restituire contenuto da Adobe Experience Manager (AEM) e come utilizzare lo strumento GraphiQL per testare, perfezionare ed eseguire il debug delle query in modo rapido.
+description: Scopri come creare query GraphQL per restituire contenuti da Adobe Experience Manager (AEM) e come utilizzare lo strumento GraphiQL per testare, perfezionare ed eseguire il debug rapido delle query.
 version: Cloud Service
 topic: Headless, Content Management
 feature: Content Fragments, GraphQL API
@@ -19,12 +19,12 @@ ht-degree: 0%
 
 # Creazione di query GraphQL
 
-Scopri come creare query GraphQL per restituire contenuto da Adobe Experience Manager (AEM) e come utilizzare lo strumento GraphiQL per testare, perfezionare ed eseguire il debug delle query in modo rapido.
+Scopri come creare query GraphQL per restituire contenuti da Adobe Experience Manager (AEM) e come utilizzare lo strumento GraphiQL per testare, perfezionare ed eseguire il debug rapido delle query.
 
 In questo video:
 
-+ Comprendere la potenza della lingua GraphQL
-+ Scopri come eseguire una query su un elenco di frammenti di contenuto e un singolo frammento di contenuto
++ Comprendere la potenza del linguaggio GraphQL
++ Scopri come eseguire query su un elenco di frammenti di contenuto e un singolo frammento di contenuto
 + Scopri come filtrare e richiedere attributi di dati specifici
 
 >[!VIDEO](https://video.tv.adobe.com/v/332860?quality=12&learn=on)

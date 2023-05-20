@@ -1,6 +1,6 @@
 ---
 title: Come acquisire i registri HAR (archivio HTTP)
-description: Acquisire i registri di archiviazione HTTP per la risoluzione dei problemi relativi alla rete
+description: Acquisire i registri di archivio HTTP per la risoluzione dei problemi relativi alla rete
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Come acquisire i registri HAR (archivio HTTP)
 
-*Questo video illustra i passaggi necessari per acquisire i registri HAR (archivio HTTP).*
+*Questo video illustra i passaggi per acquisire i registri HAR (HTTP archive).*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335488?quality=12&learn=on)

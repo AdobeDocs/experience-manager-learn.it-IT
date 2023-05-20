@@ -1,6 +1,6 @@
 ---
 title: File e raccolte
-description: Scopri come accedere in modo rapido e semplice ai file e alle raccolte AEM Assets dal pannello Asset Link .
+description: Scopri come accedere in modo rapido e semplice ai file e alle raccolte di AEM Assets dal pannello Asset Link.
 feature: Adobe Asset Link
 version: 6.4, 6.5, Cloud Service
 thumbnail: 33884.jpg
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # File e raccolte {#files-and-collections}
 
-Scopri come accedere in modo rapido e semplice ai file e alle raccolte AEM Assets dal pannello Asset Link .
+Scopri come accedere in modo rapido e semplice ai file e alle raccolte di AEM Assets dal pannello Asset Link.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33884?quality=12&learn=on)

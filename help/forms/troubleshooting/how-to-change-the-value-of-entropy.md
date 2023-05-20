@@ -1,6 +1,6 @@
 ---
-title: Come modificare il valore dell'entropia
-description: Passaggi per modificare il valore dell'entropia a livello del sistema operativo
+title: Come modificare il valore dell’entropia
+description: Passaggi per modificare il valore dell’entropia a livello di sistema operativo
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Come modificare il valore dell&#39;entropia
+# Come modificare il valore dell’entropia
 
-*Questo video illustra i passaggi necessari per modificare il valore dell’entropia.*
+*Questo video illustra i passaggi per modificare il valore dell’entropia.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335494?quality=12&learn=on)

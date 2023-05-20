@@ -1,6 +1,6 @@
 ---
 title: Creazione di un flusso di lavoro per la revisione dei dati inviati
-description: Creazione di un modello di flusso di lavoro AEM utilizzando i componenti del flusso di lavoro AEM Forms per esaminare i dati inviati.
+description: Creazione di un modello di flusso di lavoro AEM utilizzando i componenti del flusso di lavoro AEM Forms per rivedere i dati inviati.
 feature: Workflow
 topics: integrations
 audience: developer
@@ -23,14 +23,14 @@ ht-degree: 4%
 
 # Creazione di un flusso di lavoro per la revisione dei dati inviati
 
-I flussi di lavoro vengono generalmente utilizzati per instradare i dati inviati per la revisione e l’approvazione. I flussi di lavoro vengono creati utilizzando l’editor del flusso di lavoro in AEM. I flussi di lavoro possono essere attivati all’invio di moduli adattivi.
+I flussi di lavoro vengono in genere utilizzati per instradare i dati inviati per la revisione e l’approvazione. I flussi di lavoro vengono creati utilizzando l’editor flussi di lavoro in AEM. I flussi di lavoro possono essere attivati all’invio di un modulo adattivo.
 
 ## Prerequisito
 
-Assicurati di disporre di un&#39;istanza funzionante di AEM Forms. Segui la [guida all&#39;installazione](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) per installare e configurare AEM Forms
+Assicurati di disporre di un’istanza funzionante di AEM Forms. Segui le istruzioni [guida all’installazione](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) per installare e configurare AEM Forms
 
-Il video seguente spiega la creazione del flusso di lavoro di revisione e approvazione tramite i componenti di AEM Forms
+Il video seguente illustra la creazione del flusso di lavoro Revisione e approvazione tramite i componenti di AEM Forms
 >[!VIDEO](https://video.tv.adobe.com/v/40242?quality=12&learn=on)
 
 
-Se non riesci a creare il flusso di lavoro, puoi scaricare il flusso di lavoro completato da [qui](assets/review-submitted-data-workflow.zip) e importare lo stesso utilizzando [gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp) nella tua istanza AEM.
+Se per qualche motivo non riesci a creare il flusso di lavoro, puoi scaricare quello completato da [qui](assets/review-submitted-data-workflow.zip) e importa lo stesso utilizzando [gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp) all’istanza di AEM.

@@ -1,6 +1,6 @@
 ---
-title: Ricerca dei dati AEM Forms inviati in Azure Blob Storage
-description: Scopri come eseguire una query per i dati inviati da AEM Forms in Azure Blob Storage utilizzando il servizio metadati del modello dati del modulo.
+title: Cerca i dati AEM Forms inviati nell’archiviazione BLOB di Azure
+description: Scopri come eseguire query per i dati inviati da AEM Forms nell’archiviazione BLOB di Azure utilizzando il servizio metadati del modello dati del modulo.
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Dati inviati dalla query
+# Eseguire una query sui dati inviati
 
-Scopri come eseguire query per i dati del modulo adattivo nell’archiviazione BLOB di Azure utilizzando il servizio metadati di AEM Forms.
+Scopri come eseguire query per i dati dei moduli adattivi nell’archiviazione BLOB di Azure utilizzando il servizio metadati di AEM Forms.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335717?quality=12&learn=on)

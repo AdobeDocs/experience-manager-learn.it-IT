@@ -1,6 +1,6 @@
 ---
 title: Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
-description: Lo strumento Content Transfer (Trasferimento contenuti) è il metodo consigliato per migrare il contenuto da una versione in hosting on-premise o AMS di AEM a un ambiente as a Cloud Service AEM.
+description: Lo strumento Content Transfer è il metodo consigliato per migrare il contenuto da una versione in hosting locale o AMS dell’AEM a un ambiente as a Cloud Service AEM.
 version: Cloud Service
 doc-type: technical-video
 topics: migration
@@ -22,7 +22,7 @@ ht-degree: 12%
 
 # Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 
-Lo strumento Content Transfer (Trasferimento contenuti) è il metodo consigliato per migrare il contenuto da una versione in hosting on-premise o AMS di AEM a un ambiente as a Cloud Service AEM.
+Lo strumento Content Transfer è il metodo consigliato per migrare il contenuto da una versione in hosting locale o AMS dell’AEM a un ambiente as a Cloud Service AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460?quality=12&learn=on)
 

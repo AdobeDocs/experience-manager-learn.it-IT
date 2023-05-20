@@ -1,7 +1,7 @@
 ---
-title: Aggiunta di una tabella alla sezione contributi
+title: Aggiunta di una tabella alla sezione Contributi
 seo-title: Adding table to contributions section
-description: Questa è la parte 9 dell’esercitazione su più passaggi per la creazione del primo documento di comunicazione interattivo. In questa parte verrà aggiunta una tabella alla sezione contributi.
+description: Questa è la parte 9 del tutorial a più passaggi per creare il tuo primo documento di comunicazione interattivo.In questa parte, aggiungeremo una tabella alla sezione dei contributi.
 seo-description: This is part 9 of multistep tutorial for creating your first interactive communication document.In this part, we will add a table to the contributions section.
 uuid: 9475e769-a3f8-4aec-9b46-e0dc182b78a0
 feature: Interactive Communication
@@ -24,16 +24,16 @@ ht-degree: 1%
 
 ---
 
-# Aggiunta di una tabella alla sezione contributi
+# Aggiunta di una tabella alla sezione Contributi
 
-In questa parte, aggiungeremo una tabella alla sezione dei contributi .
-Fai riferimento a [Utilizzo delle tabelle nel canale di stampa](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) per ulteriori informazioni sull&#39;utilizzo delle tabelle nel documento del canale di stampa.
+In questa parte verrà aggiunta una tabella alla sezione Contributi.
+Fare riferimento a [Utilizzo delle tabelle nel canale di stampa](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) per ulteriori dettagli sull&#39;utilizzo delle tabelle nel documento canale di stampa.
 
-Accedi ad AEM Forms e passa a Adobe Experience Manager > Forms > Forms e documenti.
+Accedi ad AEM Forms e passa a Adobe Experience Manager > Forms > Forms &amp; Documents.
 
-Apri la cartella 401KStatementPrint .
+Aprire la cartella 401KStatementPrint.
 
-Apri 401KStatementPrint in modalità di modifica.
+Aprire 401KStatementPrint in modalità di modifica.
 
 Il video seguente illustra i passaggi necessari per configurare una tabella nel documento del canale di stampa.
 

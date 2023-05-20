@@ -1,6 +1,6 @@
 ---
-title: Gestire l’ereditarietà di una live copy su un componente
-description: Come gestire l’ereditarietà tra una live copy e la relativa blueprint a livello di componente
+title: Gestire l’ereditarietà di una Live Copy su un componente
+description: Come gestire l’ereditarietà tra una Live Copy e la relativa blueprint a livello di componente
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -20,8 +20,8 @@ ht-degree: 0%
 
 ---
 
-# Gestire l’ereditarietà di una live copy su un componente {#manage-live-copy-component}
+# Gestire l’ereditarietà di una Live Copy su un componente {#manage-live-copy-component}
 
-Scopri come gestire l’ereditarietà tra una live copy e la relativa blueprint a livello di componente.
+Scopri come gestire l’ereditarietà tra una Live Copy e la relativa blueprint a livello di componente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36678?quality=12&learn=on)

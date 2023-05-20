@@ -1,6 +1,6 @@
 ---
-title: Passaggi per eseguire e interpretare l’output dello strumento di preparazione al sistema PDFG di AEM Forms
-description: Interroga i risultati dell'utilità di preparazione di PDF Generator.
+title: Passaggi per eseguire e interpretare l’output di AEM Forms PDFG System Readiness Tool
+description: Interpreta i risultati dell'utilità di preparazione del generatore di PDF.
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Passaggi per eseguire e interpretare l’output dello strumento di preparazione al sistema PDFG di AEM Forms
+# Passaggi per eseguire e interpretare l’output di AEM Forms PDFG System Readiness Tool
 
 *Questo video illustra il processo di esecuzione e interpretazione dell’output di AEM Forms PDFG System Readiness Tool (SRT).*
 

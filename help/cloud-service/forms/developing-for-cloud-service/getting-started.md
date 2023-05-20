@@ -18,19 +18,19 @@ ht-degree: 2%
 
 # Installazione del software richiesto
 
-Questa esercitazione ti guiderà attraverso i passaggi necessari per creare un progetto AEM Forms, sincronizzare il progetto AEM Forms con l’istanza AEM locale utilizzando IntelliJ e lo strumento repo. Scoprirai anche come aggiungere il progetto all’archivio git locale e inviare l’archivio git locale all’archivio cloud manager.
+Questa esercitazione ti guiderà attraverso i passaggi necessari per creare un progetto AEM Forms e sincronizzare il progetto AEM Forms con l’istanza AEM locale utilizzando IntelliJ e lo strumento Repo. Scoprirai anche come aggiungere il progetto all’archivio Git locale e inviare l’archivio Git locale all’archivio di Cloud Manager.
 
 
 
 
-Questa esercitazione farà riferimento alla struttura delle cartelle in corso.
+Questo tutorial farà riferimento in futuro a questa struttura di cartelle.
 
-* [Installa JDK 11](https://www.oracle.com/java/technologies/downloads/#java11-windows). Ho scaricato jdk-11.0.6_windows-x64_bin.zip
-* [Maven](https://maven.apache.org/guides/getting-started/windows-prerequisites.html).Ad esempio, se hai installato Maven in c:\maven folder, dovrai creare una variabile di ambiente denominata M2_HOME con valore C:\maven\apache-maven-3.6.0. Quindi aggiungi M2_HOME\bin al percorso e salva l’impostazione.
+* [Installare JDK 11](https://www.oracle.com/java/technologies/downloads/#java11-windows). Ho scaricato jdk-11.0.6_windows-x64_bin.zip
+* [Maven](https://maven.apache.org/guides/getting-started/windows-prerequisites.html).Ad esempio, se hai installato Maven nella cartella c:\maven, dovrai creare una variabile di ambiente denominata M2_HOME con il valore C:\maven\apache-maven-3.6.0. Aggiungere quindi M2_HOME\bin al percorso e salvare l&#39;impostazione.
 
-## Crea progetto Maven utilizzando AEM Project Archetype
+## Creare un progetto Maven utilizzando l’archetipo di progetto AEM
 
-* Crea una cartella denominata **cloudmanager**(è possibile assegnargli un nome qualsiasi) nell&#39;unità c
+* Crea una cartella denominata **cloudmanager**(è possibile assegnare qualsiasi nome) nell&#39;unità c
 * Apri la finestra del prompt dei comandi e passa a **c:\cloudmanager**
-* Copia e incolla il contenuto del [file di testo](assets/creating-maven-project.txt) nella finestra del prompt dei comandi. Potrebbe essere necessario modificare il DarchetypeVersion=30 a seconda del [versione più recente](https://github.com/adobe/aem-project-archetype/releases). L&#39;ultima versione era di 30 al momento della stesura di questo articolo.
-* Esegui il comando premendo Invio chiave.Se tutto funziona correttamente, dovresti visualizzare il messaggio di completamento della compilazione.
+* Copiare e incollare il contenuto del [file di testo](assets/creating-maven-project.txt) nella finestra del prompt dei comandi. Potrebbe essere necessario modificare DarchetypeVersion=30 a seconda del [ultima versione](https://github.com/adobe/aem-project-archetype/releases). L&#39;ultima versione era 30 al momento della stesura di questo articolo.
+* Esegui il comando premendo Invio. Se tutto va correttamente, dovrebbe comparire il messaggio di completamento della generazione.

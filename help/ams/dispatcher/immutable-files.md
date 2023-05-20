@@ -1,19 +1,19 @@
 ---
-title: File di sola lettura o immutabili del Dispatcher AMS
-description: Scopri perché alcuni file sono di sola lettura o non modificabili e come apportare le modifiche funzionali desiderate
+title: File di sola lettura o immutabili del dispatcher di AMS
+description: Informazioni sul motivo per cui alcuni file sono di sola lettura o non modificabili e su come apportare le modifiche funzionali desiderate
 version: 6.5
 topic: Administration, Development
 feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: d6b7d63ba02ca73d6c1674d90db53c6eebab3bd2
+exl-id: 7be6b3f9-cd53-41bc-918d-5ab9b633ffb3
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
 
 ---
-
 
 # File di sola lettura o immutabili in AMS
 
@@ -23,23 +23,23 @@ ht-degree: 1%
 
 ## Descrizione
 
-Questo documento descrive quali file sono bloccati e non devono essere modificati e come impostare correttamente la configurazione desiderata.
+Questo documento descrive quali file sono bloccati e non devono essere modificati e come impostare correttamente le impostazioni di configurazione desiderate.
 
-Quando AMS fornisce un sistema, implementa una configurazione di base che rende tutto funzionale e sicuro.  AMS vuole garantire che rimanga come base di funzionalità e sicurezza.  A questo scopo, alcuni file sono contrassegnati come di sola lettura e non possono essere modificati per evitare di modificarli.
+Quando AMS esegue il provisioning di un sistema, implementa una configurazione di base che rende tutto funzionale e sicuro.  AMS vuole garantire che queste funzioni rimangano come una linea di base per la funzionalità e la sicurezza.  A questo scopo, alcuni file sono contrassegnati come di sola lettura e immutabili per evitare di modificarli.
 
-Il layout non impedisce di modificarne il comportamento e di ignorare le modifiche necessarie.  Invece di modificare questi file, sovrapporrai il tuo file che sostituisce l&#39;originale.
+Il layout non impedisce di modificarne il comportamento e di ignorare le modifiche necessarie.  Invece di modificare questi file, sovrapporrai il tuo file che sostituisce l’originale.
 
-Questo ti consente anche di essere rassicurato che quando AMS esegue il patch dei Dispatcher con le ultime correzioni e i miglioramenti di sicurezza, i file non verranno modificati.  Potrai quindi continuare a beneficiare dei miglioramenti e adottare solo le modifiche desiderate.
-![Mostra una corsia da bowling con una palla che scorre lungo la corsia.  La palla ha una freccia con la parola che ti mostra.  I paraurti a scatto vengono alzati e hanno le parole file immutabili sopra di loro.](assets/immutable-files/bowling-file-immutability.png "immutabilità del file di bowling")
-Come illustrato nella figura precedente, i file immutabili non ti impediscono di giocare il gioco.  Ti impediranno di farti del male e di tenerti in corsia.  Questo metodo ci permette di avere alcune caratteristiche chiave:
+Questo ti rassicura anche che, quando AMS esegue le patch dei Dispatcher con le ultime correzioni e miglioramenti di sicurezza, i file non verranno modificati.  Potrai quindi continuare a beneficiare dei miglioramenti e adottare solo le modifiche desiderate.
+![Mostra una pista da bowling con una palla che scorre lungo la corsia.  La palla ha una freccia con la parola che vi mostra.  I paraurti delle grondaie sono sollevati e sopra di essi si trovano le parole file immutabili.](assets/immutable-files/bowling-file-immutability.png "bowling-file-immutability")
+Come illustrato nell’immagine precedente, i file immutabili non ti impediscono di giocare.  Ti impediscono di danneggiare la prestazione e ti mantengono in corsia.  Questo metodo ci permette di avere alcune caratteristiche molto importanti:
 
 - Le personalizzazioni vengono gestite nei propri spazi di sicurezza
 - La sovrapposizione delle modifiche personalizzate rispecchia quella dei metodi di sovrapposizione in AEM
-- Le configurazioni di patch AMS possono essere eseguite senza modificare le personalizzazioni
-- Il test dell&#39;installazione di base rispetto alle configurazioni personalizzate può essere fatto contemporaneamente per aiutare a discernere se i problemi sono causati da personalizzazioni o qualcos&#39;altro Quali file?
+- Le configurazioni AMS di patch possono essere eseguite senza modificare le personalizzazioni
+- L&#39;installazione di base di test e le configurazioni personalizzate possono essere eseguite contemporaneamente per aiutare a individuare se i problemi sono causati da personalizzazioni o qualcos&#39;altro.
 
 
-Elenco tipico dei file distribuiti con un’istanza di Dispatcher:
+Di seguito è riportato un elenco tipico di file distribuiti con un Dispatcher:
 
 ```
 /etc/httpd/
@@ -124,13 +124,13 @@ Elenco tipico dei file distribuiti con un’istanza di Dispatcher:
     └── mod_dispatcher.so
 ```
 
-Per determinare quali file non è possibile modificare, esegui il seguente comando su un Dispatcher per vedere:
+Per determinare quali file sono immutabili, puoi eseguire il seguente comando su un Dispatcher per visualizzare:
 
 ```
 $ lsattr -Rl /etc/httpd 2>/dev/null | grep Immutable
 ```
 
-Di seguito è riportato un esempio di risposta dei file che non possono essere modificati:
+Di seguito è riportato un esempio di risposta di quali file non sono modificabili:
 
 ```
 /etc/httpd/conf/httpd.conf   Immutable
@@ -184,7 +184,7 @@ Di seguito è riportato un esempio di risposta dei file che non possono essere m
 
 ### Variabili
 
-Le variabili consentono di apportare modifiche funzionali senza modificare personalmente i file di configurazione.  Alcuni elementi della configurazione possono essere regolati regolando i valori delle variabili.  Un esempio che possiamo evidenziare dal file `/etc/httpd/conf.d/dispatcher_vhost.conf` viene mostrato qui:
+Le variabili consentono di apportare modifiche funzionali senza modificare i file di configurazione stessi.  Alcuni elementi della configurazione possono essere regolati regolando i valori delle variabili.  Un esempio che è possibile evidenziare dal file `/etc/httpd/conf.d/dispatcher_vhost.conf` viene visualizzato qui:
 
 ```
 Include /etc/httpd/conf.d/variables/ams_default.vars
@@ -197,7 +197,7 @@ IfModule disp_apache2.c
 /IfModule
 ```
 
-Scopri come la direttiva DispatcherLogLevel ha una variabile di `DISP_LOG_LEVEL` invece del valore normale che vedete qui.  Sopra quella sezione di codice vedrai anche un&#39;istruzione &quot;include&quot; in un file di variabili.  Il file della variabile `/etc/httpd/conf.d/variables/ams_default.vars` è dove vogliamo guardare dopo.  Di seguito sono elencati i contenuti del file di variabili:
+Scopri come la direttiva DispatcherLogLevel ha una variabile di `DISP_LOG_LEVEL` invece del valore normale che vedete lì.  Sopra quella sezione di codice vedrai anche un’istruzione &quot;include&quot; in un file di variabili.  Il file della variabile `/etc/httpd/conf.d/variables/ams_default.vars` è dove vogliamo guardare dopo.  Di seguito sono elencati i contenuti di tale file di variabili:
 
 ```
 Define DISP_LOG_LEVEL info
@@ -209,17 +209,17 @@ Define PUBLISH_FORCE_SSL 0
 Define LIVECYCLE_FORCE_SSL 1
 ```
 
-In precedenza è riportato il valore corrente di `DISP_LOG_LEVEL` variabile è `info`.  Possiamo regolarlo per tracciare o eseguire il debug, o il valore/livello del numero desiderato.  Ora ovunque controlli il livello di log si regola automaticamente.
+Vedi sopra che il valore corrente di `DISP_LOG_LEVEL` la variabile è `info`.  Possiamo modificarlo per tracciare o eseguire il debug o il valore/livello del numero desiderato.  Ora ovunque controlli il livello di registro si regola automaticamente.
 
 ### Metodo di sovrapposizione
 
-Comprendere i file di livello superiore includono, perché saranno il punto di partenza per effettuare qualsiasi personalizzazione.  Per iniziare con un semplice esempio, abbiamo uno scenario in cui desideri aggiungere un nuovo nome di dominio che intendiamo puntare a questo Dispatcher.  L’esempio di dominio che utilizzeremo è we-retail.adobe.com.  Inizieremo copiando un file di configurazione esistente in un nuovo file in cui possiamo aggiungere le nostre modifiche:
+Devi comprendere il file di inclusione di livello superiore perché sarà il punto di partenza per effettuare qualsiasi personalizzazione.  Per iniziare con un semplice esempio, prendiamo uno scenario in cui vogliamo aggiungere un nuovo nome di dominio che intendiamo far puntare a questo Dispatcher.  L’esempio di dominio che utilizzeremo is we-retail.adobe.com.  Per prima cosa copieremo un file di configurazione esistente in un nuovo file in cui possiamo aggiungere le modifiche:
 
 ```
 $ cp /etc/httpd/conf.d/available_vhosts/aem_publish.vhost /etc/httpd/conf.d/available_vhosts/weretail_publish.vhost
 ```
 
-Abbiamo copiato il file aem_publish.vhost esistente perché ha già ciò che serve per far funzionare le cose e non vogliamo reinventare un inizio già forte.  Ora modifichiamo il nuovo file weretail.vhost e approviamo le modifiche necessarie.
+Abbiamo copiato il file esistente aem_publish.vhost perché contiene già quello di cui abbiamo bisogno e non è necessario ricreare tutto dall’inizio.  Ora è possibile modificare il nuovo file weretail.vhost e apportare le modifiche necessarie.
 
 Prima:
 
@@ -257,19 +257,19 @@ VirtualHost *:80
 /VirtualHost
 ```
 
-Ora abbiamo aggiornato il nostro `ServerName` e `ServerAlias` per far corrispondere i nuovi nomi di dominio e per aggiornare altre intestazioni breadcrumb.  Ora attiviamo il nostro nuovo file per consentire ad Apache di sapere come usare il nostro nuovo file:
+Ora abbiamo aggiornato il nostro `ServerName` e `ServerAlias` per corrispondere ai nuovi nomi di dominio, nonché per aggiornare altre intestazioni di breadcrumb.  Ora attiviamo il nostro nuovo file per consentire ad Apache di sapere come utilizzarlo:
 
 ```
 $ cd /etc/httpd/conf.d/enabled_vhosts/; ln -s ../available_vhosts/weretail_publish.vhost .
 ```
 
-Ora il webserver Apache sa che il dominio è qualcosa per cui dovrebbe generare traffico, ma dobbiamo ancora informare il modulo Dispatcher che ha un nuovo nome di dominio da onorare.  Inizieremo creando un nuovo `*_vhost.any` file `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` e all&#39;interno di quel file inseriremo il nome di dominio che vogliamo onorare:
+Ora il server web Apache sa che il dominio è qualcosa per cui dovrebbe produrre traffico, ma dobbiamo ancora informare il modulo Dispatcher che ha un nuovo nome di dominio da rispettare.  Inizieremo creando un nuovo `*_vhost.any` file `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` e all&#39;interno di quel file inseriremo il nome di dominio che vogliamo onorare:
 
 ```
 "we-retail.adobe.com"
 ```
 
-Ora dobbiamo creare un nuovo file farm che userà il nostro nuovo file di ingresso vhost, e inizieremo copiando un file di avvio forte sul nostro nuovo.
+Ora dobbiamo creare un nuovo file farm che utilizzerà il nuovo file di accesso vhost e inizieremo copiando un file di avvio sicuro sul nostro nuovo file.
 
 ```
 $ cp /etc/httpd/conf.dispatcher.d/available_farms/999_ams_publish_farm.any /etc/httpd/conf.dispatcher.d/available_farms/400_weretail_publish_farm.any
@@ -299,17 +299,17 @@ Dopo:
 }
 ```
 
-Ora abbiamo aggiornato il nome della farm e l’inclusione utilizzata nella `/virtualhosts` sezione della configurazione farm.  È necessario abilitare questo nuovo file farm in modo che possa utilizzarlo nella configurazione in esecuzione:
+Ora abbiamo aggiornato il nome della farm e l’inclusione che utilizza nel `/virtualhosts` sezione della configurazione farm.  È necessario abilitare questo nuovo file farm in modo che possa essere utilizzato nella configurazione in esecuzione:
 
 ```
 $ cd /etc/httpd/conf.dispatcher.d/enabled_farms/; ln -s ../available_farms/400_weretail_publish_farm.any .
 ```
 
-Ora ricaricheremmo il servizio server web e useremmo il nostro nuovo dominio!
+Ora dovremmo semplicemente ricaricare il servizio server web e utilizzare il nostro nuovo dominio!
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
-Notate che abbiamo cambiato solo le parti necessarie per cambiare e sfruttare le inclusioni e il codice esistenti che sono forniti con i file di configurazione della linea di base.  Dobbiamo solo delineare l&#39;elemento che dobbiamo cambiare.  Semplifica le cose e ci permette di mantenere meno codice
+Da notare che abbiamo cambiato solo le parti necessarie e abbiamo sfruttato le inclusioni e il codice esistenti forniti con i file di configurazione della linea di base.  Dobbiamo solo delineare l&#39;elemento che dobbiamo cambiare.  Semplifica le cose e ci consente di mantenere meno codici
 </div>
 
-[Successivo -> Verifica dello stato del Dispatcher](./health-check.md)
+[Successivo -> Verifica stato del Dispatcher](./health-check.md)

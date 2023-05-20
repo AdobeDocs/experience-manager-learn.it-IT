@@ -1,5 +1,5 @@
 ---
-title: Icona Nuovo editor - Editor frammento di contenuto
+title: Selettore per nuovo editor - Editor frammento di contenuto
 description: Scopri l’opzione Nuovo editor che consente di passare facilmente dall’editor predefinito Nuovo frammento di contenuto all’editor classico.
 version: Cloud Service
 feature: Content Fragments
@@ -17,8 +17,8 @@ ht-degree: 0%
 ---
 
 
-# Icona Nuovo editor
+# Attiva/Disattiva nuovo editor
 
-Scopri come l’opzione Nuovo editor consente di passare facilmente dall’editor per frammenti di contenuto predefinito all’editor classico.
+Scopri in che modo il nuovo editor consente di passare facilmente dal nuovo editor predefinito per frammenti di contenuto all’editor classico.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419312/?learn=on)

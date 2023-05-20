@@ -1,6 +1,6 @@
 ---
 title: Cloud 5 - Correggi il tuo... Riscrittura
-description: Alcuni suggerimenti semplici per ottimizzare le riscritture e accelerare il sito
+description: Alcuni semplici suggerimenti per ottimizzare le riscritture e velocizzare il sito
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -17,11 +17,11 @@ ht-degree: 10%
 
 # Cloud 5 - Correggi il tuo... Riscrittura
 
-La seconda parte della serie, esploriamo alcune cose che potete osservare che velocizzeranno lo sviluppo di riscrittura e l&#39;ottimizzazione su AEM as a Cloud Service.
+Parte 2 della serie, esploriamo alcune cose che puoi osservare che velocizzeranno lo sviluppo e l&#39;ottimizzazione della riscrittura su AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343600?quality=12&learn=on)
 
 ## Contenuto trattato in questo video
 
 + panoramica mod_rewrite
-+ [mod_rewrite docs](https://httpd.apache.org/docs/current/mod/mod_rewrite.html)
++ [mod_riscrivere i documenti](https://httpd.apache.org/docs/current/mod/mod_rewrite.html)

@@ -1,6 +1,6 @@
 ---
-title: Esercizio semplice per verificare la comprensione del corso
-description: Aggiungi ulteriori colonne alla tabella e altri attributi ai criteri di ricerca
+title: Semplice esercizio per testare la tua comprensione del corso
+description: Aggiungi colonne aggiuntive alla tabella e attributi aggiuntivi ai criteri di ricerca
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Verifica la tua comprensione
 
-Migliora il caso d’uso come mostrato in questo video
+Migliora il caso d’uso, come illustrato in questo video
 
 >[!VIDEO](https://video.tv.adobe.com/v/335800?quality=12&learn=on)
 

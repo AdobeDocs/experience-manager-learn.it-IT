@@ -1,6 +1,6 @@
 ---
 title: Copie per lingua - Editor frammento di contenuto
-description: Scopri in che modo AEM’interfaccia utente dei frammenti di contenuto facilita l’individuazione dei frammenti di contenuto utilizzando un filtro rapido. Questa funzione consente di trovare facilmente e rapidamente frammenti di contenuto specifici.
+description: Scopri come l’interfaccia utente Frammenti di contenuto dell’AEM consente di individuare facilmente i Frammenti di contenuto mediante un filtro rapido. Con questa funzione, trovare frammenti di contenuto specifici diventa rapido e semplice.
 version: Cloud Service
 role: User
 level: Beginner
@@ -17,6 +17,6 @@ ht-degree: 3%
 
 # Copie per lingua
 
-Scopri in che modo AEM’editor dei frammenti di contenuto semplifica l’individuazione dei frammenti di contenuto utilizzando un filtro rapido. Questa funzione consente di trovare facilmente e rapidamente frammenti di contenuto specifici.
+Scopri come l’editor dei frammenti di contenuto dell’AEM consente di individuare facilmente i frammenti di contenuto mediante un filtro rapido. Con questa funzione, trovare frammenti di contenuto specifici diventa rapido e semplice.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419311/?learn=on)

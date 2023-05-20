@@ -1,6 +1,6 @@
 ---
-title: Configurare il modulo adattivo convertito
-description: Configurare il modulo adattivo convertito
+title: Configurare un modulo adattivo convertito
+description: Configurare un modulo adattivo convertito
 feature: Adaptive Forms
 thumbnail: 39574.jpg
 kt: 6126
@@ -15,10 +15,10 @@ ht-degree: 0%
 
 ---
 
-# Configurare il modulo adattivo convertito
+# Configurare un modulo adattivo convertito
 
-Dopo aver convertito il modulo PDF in Modulo adattivo, in genere sarà necessario creare alcuni titoli significativi e potrebbe essere necessario ridisporre alcuni campi. Sarà inoltre necessario configurare il modulo per utilizzare l’integrazione Acrobat Sign per l’esperienza di firma diretta.
+Dopo aver convertito un modulo PDF in modulo adattivo, in genere è necessario fornire alcuni titoli significativi e ridisporre alcuni campi. Il modulo deve essere configurato anche per l’utilizzo dell’integrazione Acrobat Sign per l’esperienza di firma sul posto.
 
-Il video seguente illustra i passaggi necessari per configurare il modulo per l’esperienza di firma diretta
+Il video seguente illustra i passaggi necessari per configurare il modulo per l’esperienza di firma sul posto
 
 >[!VIDEO](https://video.tv.adobe.com/v/39574?quality=12&learn=on)

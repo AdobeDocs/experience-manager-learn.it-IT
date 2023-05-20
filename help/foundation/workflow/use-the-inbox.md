@@ -1,6 +1,6 @@
 ---
-title: Come utilizzare la casella in entrata in AEM
-description: AEM casella in entrata facilita la collaborazione e la visibilità delle attività e del flusso di lavoro.
+title: Come utilizzare la casella in entrata nell’AEM
+description: La casella in entrata AEM facilita una maggiore collaborazione e visibilità sulle attività e sul flusso di lavoro.
 version: 6.4, 6.5, Cloud Service
 topic: Collaboration
 feature: Workflow
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Utilizzo della casella in entrata in AEM
+# Utilizzo della casella in entrata nell’AEM
 
-La casella in entrata AEM facilita la collaborazione e la visibilità delle attività e del flusso di lavoro. La Vista calendario della casella in entrata tiene traccia dei progetti e delle attività in una visualizzazione temporale per facilitarne la gestione e la pianificazione. Nella vista Calendario, l’utente avrà una visibilità complessiva sui progetti e le attività attualmente in corso, pianificate, in scadenza a breve e in scadenza.
+Casella in entrata AEM facilita una maggiore collaborazione e visibilità sulle attività e sul flusso di lavoro. La vista Calendario della casella in entrata consente di tenere traccia dei progetti e delle attività in una vista temporale per semplificare la gestione e la programmazione dei progetti. Nella vista Calendario, l’utente avrà una visibilità generale sui progetti e sulle attività attualmente in corso, pianificate, in scadenza e scadute.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16827?quality=12&learn=on)

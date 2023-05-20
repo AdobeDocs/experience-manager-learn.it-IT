@@ -1,6 +1,6 @@
 ---
 title: Crea modello AF
-description: Creare un modello AF e associarlo al componente di rendering della pagina
+description: Creare un modello AF e associarlo al componente rendering pagina
 feature: Adaptive Forms
 topics: development
 audience: developer
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 # Crea modello AF
 
-Verrà creato un nuovo modello di modulo adattivo allo scopo di questa esercitazione. Inoltre, è stato creato un nuovo componente di pagina che è stato associato a questo modello. Il JSP nel componente pagina recupera i dati dal database MySql utilizzato per precompilare il modulo adattivo.
+Ai fini di questa esercitazione verrà creato un nuovo modello di modulo adattivo. Con questo modello è stato creato e associato anche un nuovo componente Pagina. La JSP nel componente page recupera i dati dal database MySQL utilizzato per precompilare il modulo adattivo.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=12&learn=on)
@@ -36,4 +36,4 @@ Il modello e il componente pagina utilizzati in questa esercitazione possono ess
 
 ## Passaggi successivi
 
-[Selezionare i moduli da firmare per i moduli utilizzati](./create-initial-form.md)
+[Seleziona i moduli da firmare per il utilizzato](./create-initial-form.md)

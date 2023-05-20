@@ -1,6 +1,6 @@
 ---
 title: Creazione di set di immagini con AEM Dynamic Media
-description: Configurare un set di immagini con Dynamic Media
+description: Configurare il set di immagini con Dynamic Media
 role: Developer
 level: Intermediate
 version: Cloud Service
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Creazione di set di immagini con AEM Dynamic Media
 
-Questo video illustra il processo di creazione di set di immagini con AEM Dynamic Media.
+Questo video illustra il processo di creazione dei set di immagini con il Dynamic Media dell’AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335581?quality=12&learn=on)

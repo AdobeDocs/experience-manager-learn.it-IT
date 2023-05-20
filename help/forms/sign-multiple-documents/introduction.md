@@ -1,6 +1,6 @@
 ---
 title: Introduzione
-description: Dimostrazione video del caso d’uso di più moduli di firma
+description: Dimostrazione video del caso di utilizzo dei moduli con firma multipla
 feature: Adaptive Forms
 version: 6.4,6.5
 thumbnail: 330165.jpg
@@ -18,8 +18,8 @@ ht-degree: 4%
 
 # Introduzione
 
-Se si desidera richiedere un mutuo o aprire un nuovo conto bancario, è necessario compilare e firmare più moduli. L’integrazione tra AEM Forms e Acrobat Sign semplifica la compilazione e la firma di più moduli.
-Il video seguente illustra il caso d’uso relativo alla firma di più moduli.
+Per richiedere un mutuo o aprire un nuovo conto bancario è necessario compilare e firmare più moduli. L’integrazione tra AEM Forms e Acrobat Sign semplifica la compilazione e la firma di più moduli.
+Il video seguente illustra il caso d’uso della firma di più moduli.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330165?quality=12&learn=on)
 
@@ -27,13 +27,13 @@ Il video seguente illustra il caso d’uso relativo alla firma di più moduli.
 
 Questo corso presuppone quanto segue:
 
-* Hai accesso al server AEM 6.4 o 6.5 con il pacchetto Forms Add on installato e configurato
+* Accesso al server AEM 6.4 o 6.5 con il pacchetto Forms Add on installato e configurato
 * AEM configurato con Acrobat Sign
 * Accesso al server SMTP
-* Qualche esperienza con AEM/AEM Forms
+* Esperienza con AEM/AEM Forms
 
-Seguendo questa esercitazione e installando le risorse fornite, avrai a disposizione una soluzione funzionante per firmare più moduli.
+Seguendo questa esercitazione e installando le risorse fornite, si disporrà di una soluzione di lavoro per firmare più moduli.
 
 ## Passaggi successivi
 
-[Configurare l&#39;origine dati basata su database ](./configure-data-source.md)
+[Configurare l&#39;origine dati con backup del database ](./configure-data-source.md)

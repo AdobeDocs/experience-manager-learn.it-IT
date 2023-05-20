@@ -1,6 +1,6 @@
 ---
-title: Passaggi per risolvere eventuali errori specifici di OpenOffice in un'installazione di Windows
-description: Risolvere i problemi relativi a OpenOffice con i problemi di PDF Generator durante l'installazione di Windows.
+title: Procedura per risolvere gli errori specifici di OpenOffice in un'installazione di Windows
+description: Risolvere i problemi relativi a OpenOffice con i problemi di PDF Generator in Installazione di Windows.
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Passaggi per la risoluzione dei problemi relativi agli errori specifici di OpenOffice in una configurazione di Windows per la conversione AEM Forms PDFG
+# Procedura per la risoluzione dei problemi relativi a errori specifici di OpenOffice in una configurazione di Windows per AEM Forms PDFG Conversion
 
-*Questo video illustra il processo di risoluzione dei problemi relativi agli errori specifici di OpenOffice in una configurazione di Windows.*
+*Questo video illustra il processo di risoluzione dei problemi relativi a errori specifici di OpenOffice in un&#39;installazione di Windows.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335481?quality=12&learn=on)

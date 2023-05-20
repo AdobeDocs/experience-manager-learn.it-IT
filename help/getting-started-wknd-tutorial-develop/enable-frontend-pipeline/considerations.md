@@ -11,22 +11,22 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: a3b27d5b-b167-4c60-af49-8f2e8d814c86
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
 
 ---
 
-
 # Considerazioni sullo sviluppo
 
-Dopo aver abilitato la pipeline front-end per distribuire solo le risorse front-end in AEM ambiente as a Cloud Service, si verifica un certo impatto sullo sviluppo AEM locale e devi modificare il modello di branching git.
+Dopo aver abilitato la pipeline front-end per distribuire solo le risorse front-end in un ambiente AEM as a Cloud Service, si verifica un certo impatto sullo sviluppo AEM locale e devi modificare il modello di ramificazione Git.
 
 ## Obiettivo
 
-* Come avere un flusso di sviluppo front-end e back-end senza attrito
-* Esamina le dipendenze tra la pipeline full-stack e quella front-end
+* Come avere un flusso di sviluppo front-end e back-end senza attriti
+* Esaminare le dipendenze tra la pipeline full stack e front-end
 
 
 ## Considerazioni sullo sviluppo locale
@@ -34,14 +34,11 @@ Dopo aver abilitato la pipeline front-end per distribuire solo le risorse front-
 >[!VIDEO](https://video.tv.adobe.com/v/3409421?quality=12&learn=on)
 
 
-## Approccio adattato allo sviluppo
+## Approccio di sviluppo adattato
 
-* Per lo sviluppo locale tramite AEM SDK, il team di sviluppo back-end deve ancora generare clientlib tramite `ui.frontend` ma durante l’implementazione di Cloud Manager per AEM l’ambiente as a Cloud Service è necessario ignorarlo. Questo spiega come isolare le modifiche alla configurazione del progetto descritte in [Aggiorna progetto](update-project.md) capitolo.
+* Per lo sviluppo locale che utilizza l’SDK dell’AEM, il team di sviluppo back-end ha ancora bisogno della generazione clientlib tramite `ui.frontend` ma durante l’implementazione di Cloud Manager nell’ambiente as a Cloud Service AEM devi saltarlo. Questo pone una sfida su come isolare le modifiche di configurazione del progetto descritte nel [Aggiorna progetto](update-project.md) capitolo.
 
-A __soluzione__ potrebbe essere necessario regolare il modello di branching git e assicurarsi che le modifiche alla configurazione del progetto AEM non tornino mai più a __sviluppo locale__ gli sviluppatori di back-end AEM utilizzano .
-
-
-* Come parte di un miglioramento continuo del progetto AEM, se introduci nuovi componenti o aggiorni un componente esistente che ha modifiche in entrambi `ui.app` e `ui.frontend` modulo, è necessario eseguire entrambe le pipeline complete e front-end.
+A __soluzione__ potrebbe essere necessario regolare il modello di ramificazione Git e assicurarsi che le modifiche alla configurazione del progetto AEM non tornino mai al __sviluppo locale__ diramare gli sviluppatori back-end AEM da utilizzare.
 
 
-
+* Come parte di un miglioramento continuo del progetto AEM, se introduci nuovi componenti o aggiorni un componente esistente che presenta modifiche in entrambi `ui.app` e `ui.frontend` modulo, è necessario eseguire pipeline full stack e front-end.

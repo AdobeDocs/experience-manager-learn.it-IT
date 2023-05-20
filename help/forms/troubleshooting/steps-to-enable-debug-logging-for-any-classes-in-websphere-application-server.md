@@ -1,6 +1,6 @@
 ---
-title: Passaggi per abilitare la registrazione di debug per qualsiasi classe nel server dell'applicazione WebSphere
-description: Configura la registrazione di debug per la risoluzione dei problemi relativi al server applicazioni WebSphere
+title: Procedura per abilitare la registrazione di debug per tutte le classi nel server applicazioni WebSphere
+description: Configurare la registrazione di debug per la risoluzione dei problemi relativi all'Application Server WebSphere
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Passaggi per abilitare la registrazione di debug per qualsiasi classe nel server di applicazione Websphere
+# Procedura per abilitare la registrazione di debug per tutte le classi nel server applicazioni WebSphere
 
-*Questo video illustra i passaggi necessari per abilitare la registrazione di debug per qualsiasi classe nel server applicazioni Websphere.*
+*Questo video illustra i passaggi necessari per abilitare la registrazione di debug per qualsiasi classe nel server applicazioni WebSphere.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335523?quality=12&learn=on)

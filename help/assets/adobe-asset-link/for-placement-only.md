@@ -1,6 +1,6 @@
 ---
 title: Rendering For Placement Only (FPO)
-description: Le risorse Adobe Experience Manager possono ora essere utilizzate da designer e utenti creativi nelle loro applicazioni desktop Adobe Creative Cloud preferite. L’estensione Adobe Asset Link per Adobe Creative Cloud Enterprise estende la capacità di cercare e sfogliare, ordinare, visualizzare in anteprima, caricare risorse, estrarre, modificare, archiviare e visualizzare i metadati di AEM risorse in strumenti di Creative Cloud come Adobe Photoshop, InDesign e Illustrator.
+description: Le risorse Adobe Experience Manager possono ora essere utilizzate da designer e utenti creativi nelle loro applicazioni desktop Adobe Creative Cloud preferite. L’estensione Adobe Asset Link per Adobe Creative Cloud Enterprise estende la funzionalità di ricerca e navigazione, ordinamento, anteprima, caricamento di risorse, estrazione, modifica, archiviazione e visualizzazione dei metadati delle risorse AEM negli strumenti Creative Cloud come Adobe Photoshop, InDesign e Illustrator.
 sub-product: Experience Manager Assets
 feature: Adobe Asset Link
 version: Cloud Service
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Rendering For Placement Only (FPO){#for-placement-only-rendition}
 
-Scopri come creare e utilizzare un rendering solo posizionamento (FPO) per AEM risorse.
+Scopri come creare e utilizzare una rappresentazione solo posizionamento (FPO) per le risorse AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34259?quality=12&learn=on)

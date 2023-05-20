@@ -1,7 +1,7 @@
 ---
-title: Creazione di due layout di colonna per i documenti del canale di stampa
+title: Creazione di layout a due colonne per i documenti del canale di stampa
 seo-title: Creating two column layouts for print channel documents
-description: Crea 2 layout di colonna per il documento del canale di stampa
+description: Crea layout a 2 colonne per documento canale di stampa
 seo-description: Create 2 column layouts for print channel document
 feature: Interactive Communication
 topics: development
@@ -21,26 +21,26 @@ ht-degree: 0%
 
 ---
 
-# Due layout di colonna nel documento del canale di stampa
+# Layout a due colonne nel documento del canale di stampa
 
-Questo breve articolo evidenzierà i passaggi necessari per creare il layout a 2 colonne nel canale di stampa. Il caso d’uso è quello di generare 2 documenti di pagina con layout di pagina 1 a 2 colonne e a pagina 2 con layout di colonna standard 1.
+Questo breve articolo illustra i passaggi necessari per creare il layout a 2 colonne nel canale di stampa. Il caso d’uso prevede la generazione di documenti a 2 pagine con una pagina 1 con layout a 2 colonne e una pagina 2 con layout a 1 colonne standard.
 
-Di seguito sono riportati i passaggi di alto livello relativi alla creazione di layout di due colonne utilizzando AEM Forms Designer.
+Di seguito sono riportati i passaggi di alto livello per la creazione di layout a 2 colonne con AEM Forms Designer.
 
-* Creare 2 aree contenuto nella pagina master 1
-* Denominare le 2 aree contenuto &quot;colonna a sinistra&quot; e &quot;colonna a destra&quot;
-* Crea una seconda pagina master con un’area contenuto (questa è l’impostazione predefinita)
-* Selezionare la scheda impaginazione (Sottomodulo senza titolo) (pagina 1) e (Sottomodulo senza titolo) (pagina 2) e impostare le proprietà come mostrato nelle schermate seguenti.
+* Crea 2 aree contenuto nella pagina 1 pagina master
+* Denomina le 2 aree di contenuto &quot;leftcolumn&quot; e &quot;right tcolumn&quot;
+* Crea una seconda pagina master con un&#39;area di contenuto (impostazione predefinita)
+* Selezionare la scheda di impaginazione (Sottomaschera senza titolo) (pagina 1) e (Sottomaschera senza titolo) (pagina 2) e impostare le proprietà come mostrato nelle schermate seguenti.
 
 ![page1](assets/untitledsubform_paginationproperties.gif)
 
 ![page2](assets/untitled_subformpage2.gif)
 
-Una volta impostate le proprietà di impaginazione, è possibile aggiungere sottomoduli o aree di destinazione in (Sottomodulo senza titolo) (Pagina 1).
+Una volta impostate le proprietà di impaginazione, è possibile aggiungere sottomaschere o aree di destinazione in (Sottomaschera senza titolo) (pagina 1).
 
-È quindi possibile aggiungere frammenti di documento a tali sottomoduli o aree di destinazione. Quando la colonna a sinistra è piena, il contenuto si sposta sulla colonna a destra.
+È quindi possibile aggiungere frammenti di documento a questi sottomaschere o aree di destinazione. Quando la colonna sinistra è piena, il contenuto scorre fino alla colonna destra.
 
 Per eseguire il test sul server locale, scarica le risorse correlate a questo articolo. Scorri verso il basso fino alla parte inferiore della pagina
 
-* [Scarica e installa il documento del canale di stampa di esempio utilizzando il gestore dei pacchetti](assets/print-channel-with-two-column-layout.zip)
-* [Anteprima del documento del canale di stampa](http://localhost:4502/content/dam/formsanddocuments/2columnlayout/jcr:content?channel=print&amp;mode=preview&amp;dataRef=service%3A%2F%2FFnDTestData&amp;wcmmode=disabled)
+* [Scarica e installa Sample Print Channel Document utilizzando Gestione pacchetti](assets/print-channel-with-two-column-layout.zip)
+* [Anteprima del documento Canale di stampa](http://localhost:4502/content/dam/formsanddocuments/2columnlayout/jcr:content?channel=print&amp;mode=preview&amp;dataRef=service%3A%2F%2FFnDTestData&amp;wcmmode=disabled)

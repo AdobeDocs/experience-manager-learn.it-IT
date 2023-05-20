@@ -1,6 +1,6 @@
 ---
 title: Introduzione a Sling
-description: Introduzione a Sling, framework web RESTful open-source che fa parte dello stack di tecnologia sottostante di Adobe Experience Manager.
+description: Introduzione a Sling, un framework web RESTful open-source che fa parte dello stack di tecnologia sottostante di Adobe Experience Manager.
 topics: sling, architecture
 audience: administrator, developer
 doc-type: technical video
@@ -21,6 +21,6 @@ ht-degree: 4%
 
 # Introduzione a [!DNL Sling] {#introduction-sling}
 
-Introduzione a [!DNL Sling], un open source [!DNL RESTful] framework web che fa parte dello stack di tecnologia sottostante di Adobe Experience Manager.
+Introduzione a [!DNL Sling], open-source [!DNL RESTful] framework web che fa parte dello stack di tecnologia sottostante di Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32032?quality=12&learn=on)

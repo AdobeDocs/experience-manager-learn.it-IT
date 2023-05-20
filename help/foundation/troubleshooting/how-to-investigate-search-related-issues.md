@@ -1,5 +1,5 @@
 ---
-title: Come indagare i problemi relativi alla ricerca in AEM
+title: Come indagare i problemi correlati alla ricerca in AEM
 description: Passaggi per indagare i problemi relativi alla ricerca
 type: Troubleshooting
 role: Admin
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Come indagare i problemi relativi alla ricerca in AEM
+# Come indagare i problemi correlati alla ricerca in AEM
 
-*Questo video illustra i passaggi necessari per indagare sui problemi relativi alla ricerca in AEM.*
+*Questo video illustra i passaggi necessari per analizzare i problemi correlati alle ricerche in AEM.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335467?quality=12&learn=on)

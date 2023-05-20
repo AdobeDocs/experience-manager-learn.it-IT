@@ -1,5 +1,5 @@
 ---
-title: Utilizzo dell’operazione Inserisci copia della risorsa
+title: Utilizzo dell’operazione Inserisci copia risorsa
 description: Scopri come utilizzare le risorse da AEM Assets utilizzando l’operazione Inserisci copia.
 sub-product: Experience Manager Assets
 feature: Adobe Asset Link

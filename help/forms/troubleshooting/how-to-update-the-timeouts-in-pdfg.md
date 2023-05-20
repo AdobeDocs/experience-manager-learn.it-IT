@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Come aggiornare la conversione del server e il timeout globale nel servizio PDFG
 
-*Questo video descrive il processo di aggiornamento della conversione del server e del timeout globale del server nel servizio Forms PDFG.*
+*Questo video descrive il processo di aggiornamento della conversione del server e del timeout globale del server nel servizio PDFG di Forms.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335514?quality=12&learn=on)

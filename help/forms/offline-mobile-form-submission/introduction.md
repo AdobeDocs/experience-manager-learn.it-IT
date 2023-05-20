@@ -1,7 +1,7 @@
 ---
-title: Flusso di lavoro di attivazione AEM per l’introduzione dell’invio di moduli HTML5
+title: Attivare il flusso di lavoro AEM all’introduzione dell’invio del modulo HTM5
 seo-title: Trigger AEM Workflow on HTML5 Form Submission
-description: Continua a compilare il modulo mobile in modalità offline e invia il modulo mobile per attivare AEM flusso di lavoro
+description: Continua a compilare il modulo mobile in modalità offline e invia il modulo mobile per attivare il flusso di lavoro AEM
 seo-description: Continue filling mobile form in offline mode and submit mobile form to trigger AEM workflow
 feature: Mobile Forms
 topics: development
@@ -21,16 +21,16 @@ ht-degree: 0%
 
 ---
 
-# Download del modulo mobile completato parzialmente e invio al flusso di lavoro AEM
+# Download di un modulo mobile parzialmente completato e invio al flusso di lavoro AEM
 
-Un caso d’uso comune è quello di avere la capacità di rappresentare XDP come HTML per le attività di acquisizione dei dati. Questo funziona bene quando i moduli sono semplici e possono essere compilati e inviati online. Tuttavia, se il modulo è complesso e gli utenti potrebbero non essere in grado di completarlo online, è necessario fornire la possibilità ai compilatori di scaricare la versione interattiva del modulo da compilare utilizzando Acrobat/Reader in modalità offline. Una volta compilato il modulo, l’utente può essere online per inviarlo.
-Per eseguire questo caso d’uso è necessario eseguire i seguenti passaggi:
+Un caso d’uso comune prevede la possibilità di eseguire il rendering di XDP come HTML per le attività di acquisizione dati. Questo funziona bene quando i moduli sono semplici e possono essere compilati e inviati online. Tuttavia, se il modulo è complesso, gli utenti potrebbero non essere in grado di compilarlo online. È necessario consentire ai moduli di scaricare una versione interattiva del modulo da compilare in modalità offline utilizzando Acrobat/Reader. Una volta compilato il modulo, l’utente può essere online per inviarlo.
+Per eseguire questo caso d’uso è necessario effettuare i seguenti passaggi:
 
 * Possibilità di generare PDF interattivi/compilabili con i dati immessi nel modulo mobile
 * Gestire l’invio di PDF da Acrobat/Reader
-* Attiva il flusso di lavoro Adobe Experience Manager (AEM) per rivedere il PDF inviato
+* Attiva il flusso di lavoro di Adobe Experience Manager (AEM) per rivedere il PDF inviato
 
-Questa esercitazione descrive i passaggi necessari per eseguire il caso d’uso precedente. Il codice di esempio e le risorse relative a questa esercitazione sono [disponibile qui.](part-four.md)
+Questo tutorial illustra i passaggi necessari per eseguire il caso d’uso precedente. Il codice di esempio e le risorse correlate a questa esercitazione sono [disponibile qui.](part-four.md)
 
 Il video seguente offre una panoramica del caso d’uso
 

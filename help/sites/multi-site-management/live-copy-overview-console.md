@@ -1,6 +1,6 @@
 ---
 title: Console Live Copy
-description: Il video seguente spiega come visualizzare o gestire l’ereditarietà in un sito o eseguire operazioni di rollout utilizzando la console Panoramica Live Copy .
+description: Il video seguente spiega come visualizzare o gestire l’ereditarietà in un sito o eseguire operazioni di rollout utilizzando la console Panoramica Live Copy.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 # Console Live Copy {#live-copy-console}
 
-Scopri come visualizzare o gestire l’ereditarietà in un sito o eseguire operazioni di rollout utilizzando la console Panoramica Live Copy .
+Scopri come visualizzare o gestire l’ereditarietà in un sito o eseguire operazioni di rollout utilizzando la console Panoramica Live Copy.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36680?quality=12&learn=on)

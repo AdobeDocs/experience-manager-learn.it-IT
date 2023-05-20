@@ -1,5 +1,5 @@
 ---
-title: Acroformi con AEM Forms
+title: Acroforms con AEM Forms
 seo-title: Merge Adaptive Form data with Acroform
 description: Parte 1 dell’integrazione di Acroforms con AEM Forms. Creazione di un modulo adattivo tramite Acroform e unione dei dati per ottenere un PDF.
 feature: adaptive-forms
@@ -16,34 +16,34 @@ ht-degree: 0%
 ---
 
 
-# Creazione di un modulo Acroform
+# Creazione di Acroform
 
-I moduli sono creati con Acrobat. È possibile creare un nuovo modulo da zero utilizzando Acrobat oppure utilizzare un modulo esistente creato in Microsoft Word e convertirlo in Acroform utilizzando Acrobat. Per convertire un modulo creato in Microsoft Word in Acroform è necessario attenersi alla procedura descritta di seguito.
+Le acroforme sono moduli creati con Acrobat. È possibile creare un nuovo modulo da zero utilizzando Acrobat oppure prendere un modulo esistente creato in Microsoft Word e convertirlo in Acroform utilizzando Acrobat. Per convertire in Acroform un modulo creato in Microsoft Word, è necessario eseguire la procedura seguente.
 
-* Documento a parole aperte con Acrobat
-* Utilizzare lo strumento di preparazione del modulo di Acrobat per identificare i campi del modulo.
-* Salvare il pdf. Assicurati che il nome del file non contenga spazi.
+* Apri documento Word tramite Acrobat
+* Utilizza lo strumento Prepara modulo di Acrobat per identificare i campi del modulo nel modulo.
+* Salva il PDF. Verificare che il nome del file non contenga spazi.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/22575?quality=12&learn=on)
 
 >[!NOTE]
 >
->Se desideri inviare l’acromodulo compilabile per la firma utilizzando Acrobat Sign, dai un nome ai campi di conseguenza. Ad esempio, è possibile denominare un campo **Sig_es_:signer1:signature**. Sintassi comprensibile da Acrobat Sign.
+>Se desideri inviare l’acroforma compilabile per la firma utilizzando Acrobat Sign, assegna un nome ai campi di conseguenza. Ad esempio, puoi denominare un campo **Sig_es_:signer1:firma**. Questa è la sintassi che Acrobat Sign comprende.
 
 >[!NOTE]
 >
->Se si invia un documento basato su XFA, è necessario appiattire il documento e i tag firma Acrobat Sign devono essere presenti come testo statico nel documento.
+>Se si invia un documento basato su XFA, è necessario appiattire il documento e i tag di firma Acrobat Sign devono essere presenti come testo statico nel documento.
 
-[Documento sui tag di testo di Acrobat Sign](https://helpx.adobe.com/sign/using/text-tag.html)
+[Documento tag di testo Acrobat Sign](https://helpx.adobe.com/sign/using/text-tag.html)
 
 >[!NOTE]
 >
->Assicurati che il nome del file acroform non contenga spazi. Il codice di esempio corrente non gestisce gli spazi.
+>Verificare che il nome del file dell&#39;acroform non contenga spazi. Il codice di esempio corrente non gestisce gli spazi.
 >
->I nomi dei campi modulo possono contenere solo quanto segue:
+>I nomi dei campi modulo possono contenere solo i seguenti elementi:
 >
 >* spazio singolo
->* sottolineatura singola
+>* carattere di sottolineatura singolo
 >* caratteri alfanumerici
 

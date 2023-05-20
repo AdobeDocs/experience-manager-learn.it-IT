@@ -16,25 +16,25 @@ ht-degree: 0%
 
 ---
 
-# Creare la configurazione batch
+# Crea configurazione batch
 
-Per utilizzare un’API batch, crea una configurazione batch ed esegui un’esecuzione in base a tale configurazione. Il video seguente mostra una dimostrazione della creazione della configurazione batch utilizzando l’API
+Per utilizzare un’API batch, crea una configurazione batch ed esegui un’esecuzione basata su tale configurazione. Il video seguente mostra una dimostrazione della creazione di una configurazione batch utilizzando l’API
 
 >[!NOTE]
->Assicurati che l&#39;utente AEM appartenga a ```forms-users``` per effettuare chiamate API.
+>Assicurarsi che l’utente AEM appartenga a ```forms-users``` per effettuare chiamate API.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/340241?quality=12&learn=on)
 
 ## Crea configurazione batch
 
-Di seguito è riportato l’endpoint POST per la creazione della configurazione batch
+Di seguito è riportato l&#39;endpoint POST per la creazione della configurazione batch.
 
 ```xml
 <baseURL>/config
 ```
 
-Di seguito è riportata la configurazione minima da specificare durante la creazione della configurazione batch. Deve essere passato come oggetto JSON nel corpo della richiesta HTTP
+Di seguito è riportata la configurazione minima da specificare durante la creazione della configurazione batch. Questo deve essere passato come oggetto JSON nel corpo della richiesta HTTP
 
 ```
 {
@@ -48,7 +48,7 @@ Di seguito è riportata la configurazione minima da specificare durante la creaz
 }
 ```
 
-## Verificare la configurazione batch
+## Verifica configurazione batch
 
 Per verificare la corretta creazione della configurazione batch, puoi effettuare una chiamata di richiesta GET al seguente endpoint
 
@@ -57,4 +57,4 @@ Per verificare la corretta creazione della configurazione batch, puoi effettuare
 <baseURL>/config/monthlystatements
 ```
 
-È sufficiente passare un oggetto JSON vuoto nel corpo della richiesta HTTP
+Devi solo trasmettere un oggetto JSON vuoto nel corpo della richiesta HTTP

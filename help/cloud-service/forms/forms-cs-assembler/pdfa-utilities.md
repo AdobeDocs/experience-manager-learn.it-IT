@@ -1,6 +1,6 @@
 ---
 title: Converti PDF in PDF/A.
-description: Creare e convalidare file PDF/A in Forms CA utilizzando gli endpoint HTTP
+description: Creare e convalidare file PDF/A nella CA di Forms utilizzando gli endpoint HTTP
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -18,11 +18,11 @@ ht-degree: 3%
 
 # Creazione e convalida di documenti PDF/A
 
-PDF/A è una versione standard ISO del formato portatile (PDF) specializzato nell&#39;archiviazione e nella conservazione a lungo termine dei documenti elettronici. PDF/A differisce da PDF per il divieto di funzioni non adatte all’archiviazione a lungo termine, come il collegamento dei font (anziché l’incorporazione dei font) e la crittografia.
+PDF/A è una versione standard ISO del formato di documento portatile (PDF) specializzata nell’archiviazione e nella conservazione a lungo termine di documenti elettronici. PDF/A differisce da PDF in quanto vieta funzioni non adatte per l’archiviazione a lungo termine, come il collegamento dei caratteri (anziché l’incorporamento dei caratteri) e la crittografia.
 
 ## Converti in PDF/A
 
-Il codice seguente è stato utilizzato per convertire PDF in PDF/A
+Il seguente codice è stato utilizzato per convertire PDF in PDF/A
 
 ```java
 package com.aemformscs.documentservices;
@@ -94,7 +94,7 @@ public class PDFAUtilities {
 
 ## Convalida PDF/A
 
-Il codice seguente viene utilizzato per convalidare la conformità di un dato PDF per PDF/A.
+Il seguente codice viene utilizzato per convalidare un determinato PDF per la conformità PDF/A.
 
 ```java
 public void validatePDFA(String postURL) {

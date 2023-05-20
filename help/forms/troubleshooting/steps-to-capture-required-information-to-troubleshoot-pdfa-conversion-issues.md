@@ -1,6 +1,6 @@
 ---
-title: Passaggi per acquisire le informazioni richieste per la risoluzione dei problemi di PDF/A
-description: Risolvere i problemi relativi alla conversione e alla convalida di Assembler
+title: Passaggi per acquisire le informazioni richieste per risolvere i problemi di PDF/A
+description: Risoluzione dei problemi relativi alla conversione e alla convalida dell'Assembler
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Passaggi per la risoluzione dei problemi di conversione e convalida di PDFA
+# Passaggi per risolvere i problemi di conversione e convalida PDFA
 
-*Questo video illustra i passaggi necessari per acquisire le informazioni necessarie per risolvere i problemi di conversione e convalida di PDF/A nel servizio Forms Assembler.*
+*Questo video illustra i passaggi necessari per acquisire le informazioni necessarie per risolvere i problemi di conversione e convalida di PDF/A nel servizio Assembler di Forms.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335518?quality=12&learn=on)

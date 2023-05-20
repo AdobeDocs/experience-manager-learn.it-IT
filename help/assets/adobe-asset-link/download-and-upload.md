@@ -1,6 +1,6 @@
 ---
 title: Download e caricamento
-description: Scopri come scaricare e caricare i file di risorse da e su AEM Assets utilizzando il pannello Asset Link.
+description: Scopri come scaricare e caricare i file di risorse da e verso AEM Assets utilizzando il pannello Asset Link.
 feature: Adobe Asset Link
 version: 6.4, 6.5, Cloud Service
 kt: 4908
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Download e caricamento {#download-and-upload}
 
-Scopri come scaricare e caricare i file di risorse da e su AEM Assets utilizzando il pannello Asset Link.
+Scopri come scaricare e caricare i file di risorse da e verso AEM Assets utilizzando il pannello Asset Link.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33885?quality=12&learn=on)

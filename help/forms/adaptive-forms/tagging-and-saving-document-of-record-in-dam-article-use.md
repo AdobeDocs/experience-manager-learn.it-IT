@@ -1,6 +1,6 @@
 ---
-title: Assegnazione tag e archiviazione di AEM Forms DoR in DAM
-description: Questo articolo illustra il caso d’uso per l’archiviazione e l’assegnazione di tag al DoR generato da AEM Forms in AEM DAM. L’assegnazione tag al documento viene eseguita in base ai dati del modulo inviati.
+title: Assegnazione di tag e archiviazione di AEM Forms DoR in DAM
+description: Questo articolo illustra il caso d’uso per l’archiviazione e l’assegnazione tag del documento record generato da AEM Forms in AEM DAM. L’assegnazione tag al documento viene eseguita in base ai dati del modulo inviato.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -15,21 +15,21 @@ ht-degree: 0%
 
 ---
 
-# Assegnazione tag e archiviazione di AEM Forms DoR in DAM {#tagging-and-storing-aem-forms-dor-in-dam}
+# Assegnazione di tag e archiviazione di AEM Forms DoR in DAM {#tagging-and-storing-aem-forms-dor-in-dam}
 
-Questo articolo illustra il caso d’uso per l’archiviazione e l’assegnazione di tag al DoR generato da AEM Forms in AEM DAM. L’assegnazione tag al documento viene eseguita in base ai dati del modulo inviati.
+Questo articolo illustra il caso d’uso per l’archiviazione e l’assegnazione tag del documento record generato da AEM Forms in AEM DAM. L’assegnazione tag al documento viene eseguita in base ai dati del modulo inviato.
 
-Una richiesta comune dei clienti è quella di memorizzare e assegnare tag al documento di record (DoR) generato da AEM Forms in AEM DAM. L’assegnazione tag del documento deve essere basata sui dati inviati da Adaptive Forms. Ad esempio, se lo stato di occupazione nei dati inviati è &quot;Ritirato&quot;, vogliamo assegnare al documento il tag &quot;Ritirato&quot; e memorizzare il documento in DAM.
+I clienti chiedono spesso di archiviare e assegnare tag al documento record (DoR) generato da AEM Forms in AEM DAM. L’assegnazione tag del documento deve essere basata sui dati inviati da Adaptive Forms. Ad esempio, se lo stato di impiego nei dati inviati è &quot;Ritirato&quot;, si desidera assegnare al documento il tag &quot;Ritirato&quot; e archiviarlo in DAM.
 
 Il caso d’uso è il seguente:
 
-* Un utente compila il modulo adattivo. Nel modulo adattivo, viene acquisito lo stato civile dell&#39;utente (ex Single) e lo stato di occupazione (Ex Retired).
-* All’invio del modulo, viene attivato un flusso di lavoro AEM. Questo flusso di lavoro contrassegna il documento con lo stato civile (Single) e lo stato di occupazione (Retired) e lo archivia in DAM.
-* Una volta memorizzato il documento in DAM, l’amministratore deve essere in grado di eseguire ricerche nel documento tramite questi tag. Ad esempio, la ricerca su Single o Retired recupererebbe i DoR appropriati.
+* Un utente compila un modulo adattivo. Nel modulo adattivo vengono acquisiti lo stato civile dell’utente (ex singolo) e lo stato di occupazione (ex ritirato).
+* All’invio del modulo, viene attivato un flusso di lavoro AEM. Questo flusso di lavoro assegna al documento i tag relativi allo stato civile (Single) e allo stato di impiego (Retired) e lo memorizza in DAM.
+* Una volta memorizzato il documento in DAM, l’amministratore dovrebbe essere in grado di eseguire ricerche nel documento utilizzando questi tag. Ad esempio, la ricerca su Singolo o Ritirato recupera i DoR appropriati.
 
-Per soddisfare questo caso di utilizzo è stato scritto un passaggio di processo personalizzato. In questo passaggio recuperiamo i valori degli elementi di dati appropriati dai dati inviati. Quindi creiamo il riquadro del tag utilizzando questo valore. Ad esempio, se il valore dell’elemento di stato civile è &quot;Single&quot;, il titolo del tag diventa **Peak:EmploymentStatus/Single. **Utilizzando l’ API TagManager , troviamo il tag e lo applichiamo al DoR.
+Per soddisfare questo caso d’uso è stato scritto un passaggio di processo personalizzato. In questo passaggio recuperiamo i valori degli elementi dati appropriati dai dati inviati. Costruiamo quindi la sezione tag utilizzando questo valore. Ad esempio, se il valore dell&#39;elemento stato civile è &quot;Single&quot;, il titolo del tag diventa **Peak:EmploymentStatus/Single. **Utilizzando l’API TagManager, troviamo il tag e lo applichiamo al DoR.
 
-Di seguito è riportato il codice completo per assegnare tag e archiviare il documento di record in AEM DAM.
+Di seguito è riportato il codice completo per assegnare tag e memorizzare il documento di record in AEM DAM.
 
 ```java
 package com.aemforms.setvalue.core;
@@ -156,8 +156,8 @@ public class TagAndStoreDoRinDAM implements WorkflowProcess
 }
 ```
 
-Per far funzionare questo esempio sul sistema, segui i passaggi elencati di seguito:
-* [Distribuzione del bundle Developingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+Per fare in modo che questo esempio funzioni sul tuo sistema, segui i passaggi elencati di seguito:
+* [Distribuire il bundle Developingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
 * [Scarica e distribuisci il bundle setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Questo è il bundle OSGI personalizzato che imposta i tag dai dati del modulo inviati.
 
@@ -165,18 +165,18 @@ Per far funzionare questo esempio sul sistema, segui i passaggi elencati di segu
 
 * [Vai a Forms e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
-* Fai clic su Crea | Caricamento di file e caricamento del tag-and-store-in-dam-adaptive-form.zip
+* Fai clic su Crea | File Carica e carica il file tag-and-store-in-dam-adaptive-form.zip
 
-* [Importare le risorse dell’articolo](assets/tag-and-store-in-dam-assets.zip) utilizzo di AEM package manager
-* Apri [modulo di esempio in modalità anteprima](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Compila tutti i campi** e inviare il modulo.
-* [Passa alla cartella Picco in DAM](http://localhost:4502/assets.html/content/dam/Peak). Dovresti visualizzare DoR nella cartella Picco. Controllare le proprietà del documento. Deve essere contrassegnato in modo appropriato.
-Congratulazioni!! Installazione dell&#39;esempio sul sistema completata
+* [Importare le risorse dell’articolo](assets/tag-and-store-in-dam-assets.zip) utilizzo del gestore di pacchetti AEM
+* Apri [modulo di esempio in modalità anteprima](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Compila tutti i campi** e invia il modulo.
+* [Passa alla cartella dei picchi in DAM](http://localhost:4502/assets.html/content/dam/Peak). Dovresti vedere DoR nella cartella Peak. Controllare le proprietà del documento. Deve essere contrassegnato in modo appropriato.
+Congratulazioni!! L&#39;esempio è stato installato correttamente nel sistema
 
-* Esploriamo il [workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) che viene attivata all’invio del modulo.
-* Il primo passaggio nel flusso di lavoro crea un nome file univoco concatenando il nome del candidato e la contea di residenza.
-* Il secondo passaggio del flusso di lavoro passa la gerarchia dei tag e gli elementi dei campi modulo che devono essere contrassegnati. Il passaggio del processo estrae il valore dai dati inviati e crea il titolo del tag che deve assegnare al documento il tag.
-* Se desideri memorizzare DoR in una cartella diversa nel DAM, specifica il percorso della cartella utilizzando le proprietà di configurazione specificate nella schermata seguente.
+* Esaminiamo la [workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) che viene attivata all’invio del modulo.
+* Il primo passaggio del flusso di lavoro crea un nome file univoco concatenando il nome dei richiedenti e la provincia di residenza.
+* Il secondo passaggio del flusso di lavoro passa la gerarchia dei tag e gli elementi dei campi modulo che devono essere taggati. Il passaggio del processo estrae il valore dai dati inviati e crea il titolo del tag che deve essere contrassegnato nel documento.
+* Se desideri memorizzare il DoR in una cartella diversa in DAM, specifica il percorso della cartella utilizzando le proprietà di configurazione specificate nella schermata seguente.
 
-Gli altri due parametri sono specifici di DoR e Percorso file dati come specificato nelle opzioni di invio del modulo adattivo. Assicurati che i valori qui specificati corrispondano ai valori specificati nelle opzioni di invio del modulo adattivo.
+Gli altri due parametri sono specifici per DoR e Percorso file di dati, come specificato nelle opzioni di invio del modulo adattivo. Assicurati che i valori specificati qui corrispondano ai valori specificati nelle opzioni di invio del modulo adattivo.
 
-![Barra dei tag](assets/tag_dor_service_configuration.gif)
+![Tag Dor](assets/tag_dor_service_configuration.gif)

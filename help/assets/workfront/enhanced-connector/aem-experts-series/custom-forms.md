@@ -1,6 +1,6 @@
 ---
-title: Mappatura di moduli personalizzati Workfront e metadati con Workfront per AEM connettore avanzato
-description: Scopri come configurare Workfront e AEM Assets per gestire e sincronizzare i metadati delle risorse utilizzando moduli personalizzati Workfront e schemi di metadati AEM.
+title: Moduli personalizzati di Workfront e mappatura dei metadati con il connettore avanzato di Workfront per AEM
+description: Scopri come configurare Workfront e AEM Assets per gestire e sincronizzare i metadati delle risorse utilizzando i moduli personalizzati di Workfront e gli schemi di metadati AEM.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, Architect, Developer
@@ -16,12 +16,12 @@ ht-degree: 0%
 
 ---
 
-# Mappatura di moduli personalizzati e metadati Workfront
+# Moduli personalizzati e mappatura metadati di Workfront
 
 ![Serie di esperti AEM](./assets/banner.png)
 
-Scopri come configurare Workfront e AEM Assets per gestire e sincronizzare i metadati delle risorse utilizzando moduli personalizzati Workfront e schemi di metadati AEM.
+Scopri come configurare Workfront e AEM Assets per gestire e sincronizzare i metadati delle risorse utilizzando i moduli personalizzati di Workfront e gli schemi di metadati AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340332?quality=12&learn=on)
 
-_Parte 2 di una [serie di esperti in quattro parti su Workfront per Experience Manager connettore avanzato](./overview.md)_
+_Parte seconda di a [serie di esperti in quattro parti sul connettore avanzato Workfront per Experience Manager](./overview.md)_

@@ -1,6 +1,6 @@
 ---
-title: Nozioni di base sul connettore avanzato Workfront
-description: Scopri le nozioni di base del connettore avanzato Adobe Workfront e Experience Manager Assets.
+title: Nozioni di base sui connettori avanzati di Workfront
+description: Scopri le nozioni di base del connettore avanzato di Adobe Workfront e Experience Manager Assets.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, User
@@ -18,12 +18,12 @@ ht-degree: 0%
 
 # Nozioni di base sui connettori migliorati di Workfront
 
-Scopri le nozioni di base di Adobe Workfront e il connettore Experience Manager Asset, tra cui:
+Scopri le nozioni di base del connettore Adobe Workfront e Experience Manager Assetsenhanced, tra cui:
 
 + Collegare risorse e cartelle
 + Definire le mappature dei metadati
-+ Inviare risorse a AEM
-+ Risorse della versione
-+ Pubblicare automaticamente le risorse
++ Inviare risorse all’AEM
++ Risorse versione
++ Pubblicazione automatica delle risorse
 
 >[!VIDEO](https://video.tv.adobe.com/v/337575?quality=12&learn=on)

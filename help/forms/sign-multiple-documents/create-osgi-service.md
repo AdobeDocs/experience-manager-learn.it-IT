@@ -1,6 +1,6 @@
 ---
 title: Crea servizio OSGi
-description: Crea il servizio OSGi per memorizzare i moduli da firmare
+description: Crea servizio OSGi per archiviare i moduli da firmare
 feature: Workflow
 version: 6.4,6.5
 thumbnail: 6886.jpg
@@ -18,11 +18,11 @@ ht-degree: 1%
 
 # Crea servizio OSGi
 
-Il codice seguente è stato scritto per memorizzare i moduli che devono essere firmati. Ciascun modulo da firmare è associato a un GUID univoco e a un ID cliente. È quindi possibile associare uno o più moduli allo stesso ID cliente, ma al modulo sarà assegnato un GUID univoco.
+Il codice seguente è stato scritto per memorizzare i moduli da firmare. Ogni modulo da firmare è associato a un GUID univoco e a un ID cliente. Pertanto, uno o più moduli possono essere associati allo stesso ID cliente, ma al modulo verrà assegnato un GUID univoco.
 
 ## Interfaccia
 
-Di seguito è riportata la dichiarazione dell’interfaccia utilizzata
+Di seguito è riportata la dichiarazione di interfaccia utilizzata
 
 ```java
 package com.aem.forms.signmultipleforms;
@@ -41,7 +41,7 @@ public interface SignMultipleForms
 
 ## Inserisci dati
 
-Il metodo insert data inserisce una riga nel database identificato dall&#39;origine dati. Ogni riga del database corrisponde a un modulo ed è identificata in modo univoco da un GUID e un ID cliente. Anche i dati del modulo e l’URL del modulo sono memorizzati in questa riga. La colonna di stato indica se il modulo è stato compilato e firmato. Il valore 0 indica che il modulo deve ancora essere firmato.
+Il metodo insert data inserisce una riga nel database identificato dall&#39;origine dati. Ogni riga del database corrisponde a un modulo ed è identificata in modo univoco da un GUID e da un ID cliente. Anche i dati del modulo e l’URL del modulo vengono memorizzati in questa riga. La colonna di stato indica se il modulo è stato compilato e firmato. Il valore 0 indica che il modulo deve ancora essere firmato.
 
 ```java
 @Override
@@ -130,7 +130,7 @@ public String getFormData(String guid) {
 
 ## Aggiorna stato firma
 
-Il completamento della cerimonia di firma attiva un flusso di lavoro AEM associato al modulo. Il primo passaggio nel flusso di lavoro è un passaggio del processo che aggiorna lo stato nel database per la riga identificata dal GUID e dall’ID cliente. Inoltre, è stato impostato il valore dell’elemento firmato nei dati del modulo su Y per indicare che il modulo è stato compilato e firmato. Il modulo adattivo viene compilato con questi dati e il valore dell’elemento dati firmato nei dati xml viene utilizzato per visualizzare il messaggio appropriato. Il codice updateSignatureStatus viene richiamato dal passaggio del processo personalizzato.
+Il completamento della cerimonia di firma attiva un flusso di lavoro AEM associato al modulo. Il primo passaggio del flusso di lavoro è un passaggio del processo che aggiorna lo stato nel database per la riga identificata dal GUID e dall’ID cliente. Il valore dell&#39;elemento signed nei dati modulo viene inoltre impostato su Y per indicare che il modulo è stato compilato e firmato. Il modulo adattivo viene compilato con tali dati e il valore dell’elemento dati firmato nei dati xml viene utilizzato per visualizzare il messaggio appropriato. Il codice updateSignatureStatus viene richiamato dal passaggio del processo personalizzato.
 
 
 ```java
@@ -162,9 +162,9 @@ public void updateSignatureStatus(String formData, String guid) {
 }
 ```
 
-## Ottieni il modulo successivo da firmare
+## Ottieni modulo successivo da firmare
 
-Il codice seguente è stato utilizzato per ottenere il modulo successivo per la firma per un dato customerID con lo stato 0. Se la query sql non restituisce alcuna riga, restituiamo la stringa **&quot;AllDone&quot;** indica che non esistono più moduli per la firma per l’ID cliente specificato.
+Il seguente codice è stato utilizzato per ottenere il modulo successivo per la firma per un determinato customerID con stato 0. Se la query SQL non restituisce alcuna riga, verrà restituita la stringa **&quot;AllDone&quot;** che indica che non sono presenti altri moduli per la firma per l’id cliente specificato.
 
 ```java
 @Override
@@ -204,8 +204,8 @@ public String getNextFormToSign(int customerID) {
 
 ## Risorse
 
-Il bundle OSGi con i servizi sopra menzionati può essere [scaricato da qui](assets/sign-multiple-forms.jar)
+Il pacchetto OSGi con i servizi sopra menzionati può essere [scaricato da qui](assets/sign-multiple-forms.jar)
 
 ## Passaggi successivi
 
-[Creare un flusso di lavoro principale per gestire l’invio iniziale del modulo](./create-main-workflow.md)
+[Creare un flusso di lavoro principale per gestire l’invio del modulo iniziale](./create-main-workflow.md)

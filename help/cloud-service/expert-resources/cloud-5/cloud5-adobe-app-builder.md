@@ -1,6 +1,6 @@
 ---
-title: App Builder di Cloud 5 Adobe
-description: Questo episodio viene analizzato nel pattern di integrazione esterna che utilizza Adobe App Builder
+title: Generatore di app di Adobe Cloud 5
+description: Questo episodio scava nel modello di integrazione esterna che utilizza Adobe App Builder
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -16,16 +16,16 @@ ht-degree: 0%
 
 ---
 
-# App Builder di Cloud 5 Adobe
+# Generatore di app di Adobe Cloud 5
 
-Amol Anand arriva per darci il downdown sulle integrazioni con Adobe App Builder e dove e quando usarlo.
+Amol Anand interviene per fornirci informazioni sulle integrazioni con Adobe App Builder e su dove e quando utilizzarlo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342375?quality=12&learn=on)
 
 ## Contenuto trattato in questo video
 
-+ Panoramica [App Builder](https://developer.adobe.com/app-builder/docs/overview/)
-+ [Tutorials e Code Labs](https://developer.adobe.com/app-builder/docs/resources/)
++ Panoramica di [App Builder](https://developer.adobe.com/app-builder/docs/overview/)
++ [Tutorials e laboratori di codice](https://developer.adobe.com/app-builder/docs/resources/)
 + [Registrazione e monitoraggio](https://adobedocs.github.io/adobeio-runtime/guides/logging_monitoring.html#retrieving-activations-for-blocking-successful-calls)
 + Impostazione [Limiti di sistema](https://adobedocs.github.io/adobeio-runtime/guides/system_settings.html)
 + [Sviluppo locale](https://developer.adobe.com/app-builder/docs/resources/debugging/) Suggerimenti

@@ -1,6 +1,6 @@
 ---
-title: Cloud 5 - Repository Modernizer
-description: AEM modernizzazione dell’archivio e come funziona
+title: Cloud 5 - Modernizzatore dell’archivio
+description: Modernizzazione dell’archivio AEM e suo funzionamento
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -15,9 +15,9 @@ ht-degree: 3%
 
 ---
 
-# Cloud 5 - Repository Modernizer
+# Cloud 5 - Modernizzatore dell’archivio
 
-I ragazzi esaminano come il modernizzatore dell&#39;archivio ti aiuta a passare a AEM as a Cloud Service con utile panoramica di come funziona e perché.
+I ragazzi esaminano come il modernizzatore dell’archivio ti aiuta a passare a AEM as a Cloud Service con una panoramica utile di come funziona e perché.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342865?quality=12&learn=on)
 

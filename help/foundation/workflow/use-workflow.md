@@ -1,6 +1,6 @@
 ---
-title: Come utilizzare Flusso di lavoro in AEM
-description: AEM Workflow consente di collaborare, gestire ed elaborare i contenuti in AEM.
+title: Come utilizzare il flusso di lavoro in AEM
+description: Il flusso di lavoro dell’AEM consente di collaborare, gestire ed elaborare i contenuti all’interno dell’AEM.
 version: 6.5, Cloud Service
 feature: Workflow
 topic: Content Management
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 # Usa flusso di lavoro
 
-AEM Workflow consente di collaborare, gestire ed elaborare i contenuti in AEM.
+Il flusso di lavoro dell’AEM consente di collaborare, gestire ed elaborare i contenuti all’interno dell’AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27848?quality=12&learn=on)
 
 >[!NOTE]
 >
-> Il video utilizza AEM Sites per dimostrare la capacità dei metadati dello stato del flusso di lavoro. I metadati dello stato del flusso di lavoro sono applicabili anche ad AEM Assets. Per visualizzare lo stato del flusso di lavoro sulle risorse, accertati che la vista a elenco sia abilitata.
+> Il video utilizza AEM Sites per dimostrare la funzionalità dei metadati per lo stato del flusso di lavoro. I metadati dello stato del flusso di lavoro sono applicabili anche ad AEM Assets. Per visualizzare lo stato del flusso di lavoro sulle risorse, accertati che la vista a elenco sia abilitata.

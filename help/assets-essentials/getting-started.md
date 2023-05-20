@@ -1,6 +1,6 @@
 ---
 title: Guida introduttiva ad Assets Essentials
-description: Scopri come accedere ad Assets Essentials ed esplorare i principali facet della sua interfaccia utente.
+description: Scopri come accedere ad Assets Essentials ed esplorare i principali aspetti della sua interfaccia utente.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Guida introduttiva ad Assets Essentials
 
-Scopri come accedere ad Assets Essentials ed esplorare le funzionalità principali della sua interfaccia utente.
+Scopri come accedere ad Assets Essentials ed esplorare le funzioni principali della sua interfaccia utente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336005?quality=12&learn=on)

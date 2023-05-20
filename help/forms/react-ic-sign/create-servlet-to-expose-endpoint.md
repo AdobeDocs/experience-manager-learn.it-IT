@@ -1,6 +1,6 @@
 ---
-title: Esporre l’endpoint che può essere richiamato per restituire l’url del modulo web
-description: Crea AEM servlet per restituire l’URL del modulo web
+title: Esporre l’endpoint che può essere richiamato per restituire l’URL del modulo web
+description: Crea un servlet AEM per restituire l’URL del modulo web
 feature: Adaptive Forms,Acrobat Sign
 version: 6.4,6.5
 topic: Development
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Crea URL modulo web Acrobat Sign
 
-Il codice seguente è stato scritto per esporre un endpoint POST. Questo endpoint estrae icTemplateName dai dati inviati e restituisce un URL del modulo web Acrobat Sign da firmare per l’utente finale.
+Il seguente codice è stato scritto per esporre un endpoint POST. Questo endpoint estrae icTemplateName dai dati inviati e restituisce un URL del modulo web Acrobat Sign che l’utente finale dovrà firmare.
 
 
 ```java
@@ -89,5 +89,5 @@ public class GetWidgetUrl extends SlingAllMethodsServlet {
 
 ## Passaggi successivi
 
-[Distribuire le risorse tutorial sul sistema locale](./deploy-assets-on-your-server.md)
+[Distribuire le risorse del tutorial sul sistema locale](./deploy-assets-on-your-server.md)
 

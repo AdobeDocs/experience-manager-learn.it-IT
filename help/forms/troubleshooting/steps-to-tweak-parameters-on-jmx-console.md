@@ -1,6 +1,6 @@
 ---
 title: Passaggi per modificare i parametri nella console JMX
-description: Configura i parametri della console JMX
+description: Configurare i parametri della console JMX
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Passaggi per modificare i parametri nella console JMX
 
-*Questo video illustra i passaggi per modificare i parametri nella console JMX.*
+*Questo video illustra i passaggi necessari per modificare i parametri nella console JMX.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335554?quality=12&learn=on)

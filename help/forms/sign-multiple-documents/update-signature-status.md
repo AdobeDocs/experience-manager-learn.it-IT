@@ -16,14 +16,14 @@ ht-degree: 2%
 
 ---
 
-# Aggiorna lo stato della firma
+# Aggiorna stato firma
 
-Il flusso di lavoro UpdateSignatureStatus viene attivato quando l&#39;utente ha completato la cerimonia di firma. Il flusso di lavoro seguente
+Il flusso di lavoro UpdateSignatureStatus viene attivato quando l’utente ha completato la cerimonia di firma. Di seguito è riportato il flusso di lavoro
 
-![flusso di lavoro principale](assets/update-signature.PNG)
+![main-workflow](assets/update-signature.PNG)
 
 Aggiorna stato firma è un passaggio del processo personalizzato.
-Il motivo principale per l&#39;implementazione del passaggio del processo personalizzato è l&#39;estensione di un flusso di lavoro AEM. Di seguito è riportato il codice personalizzato utilizzato per aggiornare lo stato della firma.
+Il motivo principale per l’implementazione della fase di processo personalizzata è l’estensione di un flusso di lavoro AEM. Di seguito è riportato il codice personalizzato utilizzato per aggiornare lo stato della firma.
 Il codice in questo passaggio del processo personalizzato fa riferimento al servizio SignMultipleForms.
 
 
@@ -70,8 +70,8 @@ public class UpdateSignatureStatusWorkflowStep implements WorkflowProcess {
 
 ## Risorse
 
-Il flusso di lavoro Aggiorna stato firma può essere [scaricato da qui](assets/update-signature-status-workflow.zip)
+Il flusso di lavoro di aggiornamento dello stato della firma può essere [scaricato da qui](assets/update-signature-status-workflow.zip)
 
 ## Passaggi successivi
 
-[Personalizzare il passaggio di riepilogo per visualizzare il modulo successivo da firmare](./customize-summary-component.md)
+[Personalizza il passaggio di riepilogo per visualizzare il modulo successivo per la firma](./customize-summary-component.md)

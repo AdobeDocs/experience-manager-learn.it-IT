@@ -1,6 +1,6 @@
 ---
 title: Introduzione a Dispatcher
-description: Introduzione alle funzionalità e alle funzionalità del dispatcher come parte dell’architettura AEM.
+description: Introduzione alle funzionalità del dispatcher come parte dell’architettura AEM.
 feature: Dispatcher
 topics: architecture
 audience: administrator, developer
@@ -22,7 +22,7 @@ ht-degree: 31%
 
 # Introduzione a [!DNL Dispatcher] {#introduction-dispatcher}
 
-Un’introduzione alle funzionalità e alle caratteristiche del [!DNL dispatcher] come parte dell&#39;architettura AEM.
+Introduzione alle funzionalità di [!DNL dispatcher] come parte dell&#39;architettura dell&#39;AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32029?quality=12&learn=on)
 

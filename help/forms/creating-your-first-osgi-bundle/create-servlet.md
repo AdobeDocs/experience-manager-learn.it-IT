@@ -17,11 +17,11 @@ ht-degree: 1%
 
 # Servlet Sling
 
-Un Servlet è una classe utilizzata per estendere le funzionalità dei server che ospitano le applicazioni a cui si accede tramite un modello di programmazione richiesta-risposta. Per tali applicazioni, la tecnologia Servlet definisce classi di servlet specifiche per HTTP.
-Tutti i servlet devono implementare l’interfaccia Servlet, che definisce i metodi del ciclo di vita.
+Un servlet è una classe utilizzata per estendere le funzionalità dei server che ospitano le applicazioni a cui si accede tramite un modello di programmazione richiesta-risposta. Per tali applicazioni, la tecnologia Servlet definisce classi servlet specifiche per HTTP.
+Tutti i servlet devono implementare l&#39;interfaccia Servlet, che definisce i metodi del ciclo di vita.
 
 
-Un servlet in AEM può essere registrato come servizio OSGi: puoi estendere SlingSafeMethodsServlet per l&#39;implementazione di sola lettura o SlingAllMethodsServlet per implementare tutte le operazioni RESTful.
+Un servlet in AEM può essere registrato come servizio OSGi: è possibile estendere SlingSafeMethodsServlet per l’implementazione in sola lettura o SlingAllMethodsServlet per implementare tutte le operazioni RESTful.
 
 ## Codice servlet
 
@@ -77,15 +77,15 @@ Per creare il progetto, effettua le seguenti operazioni:
 * Apri **finestra del prompt dei comandi**
 * Accedi a `c:\aemformsbundles\mysite\core`
 * Esegui il comando `mvn clean install -PautoInstallBundle`
-* Il comando precedente crea e distribuisce automaticamente il bundle nell&#39;istanza AEM in esecuzione su localhost:4502
+* Il comando precedente crea e distribuisce automaticamente il bundle nell’istanza AEM in esecuzione su localhost:4502
 
-Il bundle è disponibile anche nella seguente posizione `C:\AEMFormsBundles\mysite\core\target`. Il bundle può anche essere distribuito in AEM utilizzando il [Console web Felix.](http://localhost:4502/system/console/bundles)
+Il bundle è disponibile anche nella seguente posizione `C:\AEMFormsBundles\mysite\core\target`. Il pacchetto può essere distribuito all&#39;AEM utilizzando [Console web Felix.](http://localhost:4502/system/console/bundles)
 
 
-## Test del Risolutore Servlet
+## Test del servlet Resolver
 
-Posiziona il browser sul [URL risolutore servlet](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Questo indica il servlet che viene richiamato per un determinato percorso come mostrato nella schermata sottostante
-![risolutore servlet](assets/servlet-resolver.JPG)
+Puntare il browser al [URL resolver servlet](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Questo indica il servlet richiamato per un determinato percorso come mostrato nella schermata seguente
+![servlet-resolver](assets/servlet-resolver.JPG)
 
 ## Test del servlet tramite Postman
 
@@ -93,5 +93,5 @@ Posiziona il browser sul [URL risolutore servlet](http://localhost:4502/system/c
 
 ## Passaggi successivi
 
-[Includi jar di terze parti](./include-third-party-jars.md)
+[Includi file jar di terze parti](./include-third-party-jars.md)
 

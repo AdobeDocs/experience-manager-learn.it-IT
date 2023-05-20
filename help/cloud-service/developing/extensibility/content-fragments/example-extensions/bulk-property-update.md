@@ -1,6 +1,6 @@
 ---
-title: Esempio di aggiornamento delle proprietà in blocco AEM estensione della console Frammenti di contenuto
-description: Esempio AEM’estensione della console Frammenti di contenuto che aggiorna in blocco una proprietà di Frammenti di contenuto.
+title: 'Aggiornamento della proprietà in blocco, esempio: estensione della console Frammenti di contenuto AEM'
+description: Un esempio dell’estensione della console Frammenti di contenuto AEM che aggiorna in blocco una proprietà di Frammenti di contenuto.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -10,69 +10,69 @@ kt: 11604
 thumbnail: KT-11604.png
 doc-type: article
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: fbfb5c10-95f8-4875-88dd-9a941d7a16fd
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 0%
 
 ---
 
+# Estensione di esempio per aggiornamento proprietà in blocco
 
-# Estensione esempio di aggiornamento proprietà bulk
+![Aggiornamento proprietà in blocco](./assets/bulk-property-update/screenshot.png){align="center"}
 
-![Aggiornamento delle proprietà in blocco](./assets/bulk-property-update/screenshot.png){align="center"}
+Questo esempio di estensione della console Frammenti di contenuto AEM è un [barra delle azioni](../action-bar.md) estensione che aggiorna in blocco una proprietà Frammento di contenuto a un valore comune.
 
-Questo esempio AEM l’estensione della console Frammenti di contenuto è un [barra delle azioni](../action-bar.md) estensione che aggiorna in massa una proprietà Frammento di contenuto a un valore comune.
+Il flusso funzionale dell’estensione di esempio è il seguente:
 
-Il flusso funzionale dell&#39;estensione di esempio è il seguente:
+![Flusso delle azioni di Adobe I/O Runtime](./assets/bulk-property-update/flow.png){align="center"}
 
-![Flusso d&#39;azione Adobe I/O Runtime](./assets/bulk-property-update/flow.png){align="center"}
-
-1. Seleziona Frammenti di contenuto e fai clic sul pulsante dell’estensione nella sezione [barra delle azioni](#extension-registration) apre [modale](#modal).
-1. La [modale](#modal) visualizza un modulo di input personalizzato generato con [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/).
+1. Seleziona Frammenti di contenuto e fai clic sul pulsante dell’estensione in [barra delle azioni](#extension-registration) apre il [modale](#modal).
+1. Il [modale](#modal) visualizza un modulo di input personalizzato creato con [Spettro di reazione](https://react-spectrum.adobe.com/react-spectrum/).
 1. L’invio del modulo invia l’elenco dei frammenti di contenuto selezionati e l’host AEM al [azione Adobe I/O Runtime personalizzata](#adobe-io-runtime-action).
-1. La [Azione Adobe I/O Runtime](#adobe-io-runtime-action) convalida gli input ed effettua richieste HTTP PUT per AEM per aggiornare i frammenti di contenuto selezionati.
-1. Una serie di PUT HTTP per ciascun frammento di contenuto per aggiornare la proprietà specificata.
-1. AEM as a Cloud Service persiste gli aggiornamenti delle proprietà al frammento di contenuto e restituisce risposte di successo o di errore all’azione Adobe I/O Runtime.
-1. Il modale ha ricevuto la risposta dall&#39;azione Adobe I/O Runtime e visualizza un elenco di aggiornamenti in blocco riusciti.
+1. Il [Azione Adobe I/O Runtime](#adobe-io-runtime-action) convalida gli input e invia richieste HTTP PUT all’AEM per aggiornare i frammenti di contenuto selezionati.
+1. Una serie di PUT HTTP per ogni frammento di contenuto per aggiornare la proprietà specificata.
+1. AEM as a Cloud Service mantiene gli aggiornamenti delle proprietà per il frammento di contenuto e restituisce risposte di esito positivo o negativo all’azione Adobe I/O Runtime.
+1. Il modale ha ricevuto la risposta dall’azione Adobe I/O Runtime e visualizza un elenco degli aggiornamenti in blocco riusciti.
 
-Questo video esamina l’estensione dell’aggiornamento di massa delle proprietà di esempio, come funziona e come viene sviluppata.
+Questo video illustra l’estensione di aggiornamento della proprietà in blocco di esempio, il suo funzionamento e il suo sviluppo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3412296?quality=12&learn=on)
 
-## App Builder
+## App dell’estensione App Builder
 
-Nell’esempio viene utilizzato un progetto esistente della console Adobe Developer e vengono utilizzate le seguenti opzioni quando si inizializza l’app Builder tramite `aio app init`.
+Nell&#39;esempio viene utilizzato un progetto Adobe Developer Console esistente e le seguenti opzioni vengono utilizzate durante l&#39;inizializzazione dell&#39;app App Builder tramite `aio app init`.
 
-+ Quali modelli desideri cercare?: `All Extension Points`
-+ Scegli i modelli da installare:` @adobe/aem-cf-admin-ui-ext-tpl`
-+ Nome dell&#39;estensione: `Bulk property update`
++ Selezionare i modelli da cercare: `All Extension Points`
++ Scegliere i modelli da installare:` @adobe/aem-cf-admin-ui-ext-tpl`
++ Nome dell’estensione: `Bulk property update`
 + Fornisci una breve descrizione dell&#39;estensione: `An example action bar extension that bulk updates a single property one or more content fragments.`
-+ Con quale versione vuoi iniziare? `0.0.1`
-+ Cosa vorreste fare dopo?
++ Quale versione vuoi iniziare?: `0.0.1`
++ Come procedere?
    + `Add a custom button to Action Bar`
-      + Indicare il nome dell’etichetta del pulsante: `Bulk property update`
-      + Devi mostrare un modale per il pulsante? `y`
+      + Fornisci il nome dell&#39;etichetta del pulsante: `Bulk property update`
+      + È necessario mostrare un modale per il pulsante? `y`
    + `Add server-side handler`
-      + Adobe I/O Runtime consente di richiamare il codice senza server su richiesta. Come assegnare un nome a questa azione?: `generic`
+      + Adobe I/O Runtime consente di richiamare il codice senza server su richiesta. Specificare il nome dell&#39;azione: `generic`
 
-L’app di estensione generata per App Builder viene aggiornata come descritto di seguito.
+L&#39;app generata per l&#39;estensione App Builder viene aggiornata come descritto di seguito.
 
-## Indirizzi delle app{#app-routes}
+## Route delle app{#app-routes}
 
-La `src/aem-cf-console-admin-1/web-src/src/components/App.js` contiene [Reagisce router](https://reactrouter.com/en/main).
+Il `src/aem-cf-console-admin-1/web-src/src/components/App.js` contiene [Router React](https://reactrouter.com/en/main).
 
-Esistono due set logici di percorsi:
+Esistono due insiemi logici di route:
 
-1. Il primo percorso mappa le richieste al `index.html`, che richiama il componente React responsabile del [registrazione estensione](#extension-registration).
+1. La prima route mappa le richieste a `index.html`, che richiama il componente React responsabile della [registrazione dell&#39;estensione](#extension-registration).
 
    ```javascript
    <Route index element={<ExtensionRegistration />} />
    ```
 
-1. Il secondo set di percorsi mappa gli URL ai componenti React che eseguono il rendering del contenuto del modale dell’estensione. La `:selection` param rappresenta un percorso di frammento di contenuto elenco delimitato.
+1. Il secondo set di route associa gli URL ai componenti React che eseguono il rendering del contenuto della finestra modale dell’estensione. Il `:selection` param rappresenta un percorso di frammento di contenuto elenco delimitato.
 
-   Se l&#39;estensione dispone di più pulsanti per richiamare azioni discrete, ciascuno [registrazione estensione](#extension-registration) si abbina a un percorso qui definito.
+   Se l’estensione dispone di più pulsanti per richiamare azioni discrete, ciascuno [registrazione dell&#39;estensione](#extension-registration) viene mappato su un percorso definito qui.
 
    ```javascript
    <Route
@@ -81,13 +81,13 @@ Esistono due set logici di percorsi:
        />
    ```
 
-## Registrazione delle estensioni
+## Registrazione dell’estensione
 
-`ExtensionRegistration.js`, mappata su `index.html` route, è il punto di ingresso dell&#39;estensione AEM e definisce:
+`ExtensionRegistration.js`, mappato a `index.html` è il punto di ingresso per l&#39;estensione AEM e definisce:
 
 1. La posizione del pulsante di estensione viene visualizzata nell’esperienza di authoring AEM (`actionBar` o `headerMenu`)
-1. Definizione del pulsante di estensione in `getButton()` Funzione
-1. Il gestore di clic per il pulsante, nella `onClick()` Funzione
+1. Definizione del pulsante di estensione in `getButton()` funzione
+1. Il gestore di clic per il pulsante, nel `onClick()` funzione
 
 + `src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -137,20 +137,20 @@ function ExtensionRegistration() {
 
 ## Finestra modale
 
-Ogni percorso dell&#39;estensione, come definito in [`App.js`](#app-routes), viene mappato su un componente React che esegue il rendering nel modale dell’estensione.
+Ogni percorso dell&#39;estensione, come definito in [`App.js`](#app-routes), viene mappato su un componente React che viene riprodotto nel modale dell’estensione.
 
-In questa app di esempio, esiste un componente React modale (`BulkPropertyUpdateModal.js`) con tre stati:
+In questa app di esempio è presente un componente React modale (`BulkPropertyUpdateModal.js`) che ha tre stati:
 
-1. Caricamento, indica l&#39;attesa dell&#39;utente
-1. Il modulo Aggiornamento proprietà bulk che consente all&#39;utente di specificare il nome e il valore della proprietà da aggiornare
-1. Risposta dell’operazione di aggiornamento della proprietà in blocco, in cui sono elencati i frammenti di contenuto aggiornati e quelli che non è stato possibile aggiornare
+1. Caricamento, che indica che l’utente deve attendere
+1. Maschera Aggiornamento proprietà in blocco che consente all&#39;utente di specificare il nome e il valore della proprietà da aggiornare
+1. Risposta dell’operazione di aggiornamento in blocco delle proprietà, in cui sono elencati i frammenti di contenuto aggiornati e quelli che non è stato possibile aggiornare
 
-È importante delegare a un [Azione Adobe I/O Runtime di AppBuilder](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), che è un processo separato senza server in esecuzione in [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
-L’utilizzo delle azioni di Adobe I/O Runtime per comunicare con AEM, consiste nell’evitare problemi di connettività CORS (Cross-Origin Resource Sharing).
+È importante sottolineare che qualsiasi interazione con l’AEM derivante dall’estensione deve essere delegata ad un [Azione AppBuilder Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), un processo separato senza server in esecuzione in [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
+L’utilizzo delle azioni di Adobe I/O Runtime per comunicare con l’AEM consiste nell’evitare problemi di connettività CORS (Cross-Origin Resource Sharing).
 
-Quando viene inviato il modulo di aggiornamento della proprietà bulk, viene visualizzata una `onSubmitHandler()` richiama l&#39;azione Adobe I/O Runtime, passando l&#39;host AEM corrente (dominio) e il token di accesso AEM dell&#39;utente, che a sua volta chiama il [API per frammenti di contenuto AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) per aggiornare i frammenti di contenuto.
+Quando si invia il modulo Bulk Property Update (Aggiornamento proprietà in blocco), viene `onSubmitHandler()` richiama l’azione Adobe I/O Runtime, passando l’host AEM (dominio) corrente e il token di accesso AEM dell’utente, che a sua volta chiama [API per frammenti di contenuto AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) per aggiornare i frammenti di contenuto.
 
-Quando viene ricevuta la risposta dall’azione Adobe I/O Runtime, il modale viene aggiornato per visualizzare i risultati dell’operazione di aggiornamento della proprietà in blocco.
+Quando viene ricevuta la risposta dall’azione Adobe I/O Runtime, il modale viene aggiornato per visualizzare i risultati dell’operazione di aggiornamento in blocco delle proprietà.
 
 + `src/aem-cf-console-admin-1/web-src/src/components/BulkPropertyUpdateModal.js`
 
@@ -409,14 +409,14 @@ export default function BulkPropertyUpdateModal() {
 
 ## Azione Adobe I/O Runtime
 
-Un&#39;app App Builder con estensione AEM può definire o utilizzare 0 o molte azioni Adobe I/O Runtime.
-Le azioni di Adobe Runtime devono essere responsabili di un lavoro che richiede l’interazione con AEM o altri servizi Web di Adobe.
+Un’app di App Builder per l’estensione dell’AEM può definire o utilizzare 0 o più azioni Adobe I/O Runtime.
+Le azioni di runtime Adobe devono essere lavoro responsabile che richiede l’interazione con l’AEM o altri servizi web Adobe.
 
 In questa app di esempio, l’azione Adobe I/O Runtime, che utilizza il nome predefinito `generic` - è responsabile:
 
-1. Effettuare una serie di richieste HTTP all’API dei frammenti di contenuto AEM per aggiornare i frammenti di contenuto.
-1. Raccolta delle risposte di queste richieste HTTP, combinandole in successi ed errori
-1. Restituire l’elenco dei successi e degli errori di visualizzazione dal modale (`BulkPropertyUpdateModal.js`)
+1. Effettuare una serie di richieste HTTP all’API Frammento di contenuto dell’AEM per aggiornare i frammenti di contenuto.
+1. Raccolta delle risposte di queste richieste HTTP, con raggruppamento in operazioni riuscite ed errori
+1. Restituzione dell’elenco delle operazioni riuscite e non riuscite per la visualizzazione da parte del modale (`BulkPropertyUpdateModal.js`)
 
 + `src/aem-cf-console-admin-1/actions/generic/index.js`
 

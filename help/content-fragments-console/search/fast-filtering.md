@@ -1,6 +1,6 @@
 ---
-title: Editor frammento di contenuto - Filtraggio rapido
-description: Scopri in che modo AEM’interfaccia utente dei frammenti di contenuto facilita l’individuazione dei frammenti di contenuto utilizzando un filtro rapido. Questa funzione consente di trovare facilmente e rapidamente frammenti di contenuto specifici.
+title: Editor frammento di contenuto - Filtro rapido
+description: Scopri come l’interfaccia utente Frammenti di contenuto dell’AEM consente di individuare facilmente i Frammenti di contenuto mediante un filtro rapido. Con questa funzione, trovare frammenti di contenuto specifici diventa rapido e semplice.
 version: Cloud Service
 role: User
 level: Beginner
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Filtro rapido
 
-Scopri in che modo AEM’interfaccia utente dei frammenti di contenuto facilita l’individuazione dei frammenti di contenuto utilizzando un filtro rapido. Questa funzione consente di trovare facilmente e rapidamente frammenti di contenuto specifici.
+Scopri come l’interfaccia utente Frammenti di contenuto dell’AEM consente di individuare facilmente i Frammenti di contenuto mediante un filtro rapido. Con questa funzione, trovare frammenti di contenuto specifici diventa rapido e semplice.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419310/?learn=on)

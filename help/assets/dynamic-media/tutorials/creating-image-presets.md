@@ -1,6 +1,6 @@
 ---
 title: Creazione di predefiniti immagine con AEM Dynamic Media
-description: Configurare i predefiniti immagine con Dynamic Media
+description: Configurare i predefiniti per immagini con Dynamic Media
 role: Developer
 level: Intermediate
 version: Cloud Service
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Creazione di predefiniti immagine con AEM Dynamic Media
+# Creazione di predefiniti per immagini con AEM Dynamic Media
 
-Questo video illustra i passaggi necessari per creare predefiniti immagine in Dynamic Media.
+Questo video illustra i passaggi necessari per creare predefiniti per immagini in Dynamic Media.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335459?quality=12&learn=on)

@@ -1,5 +1,5 @@
 ---
-title: Creare un’analisi del contenuto
+title: Creare un’analisi dei contenuti
 description: Crea la parte JSON contenente le informazioni sui parametri di input per la chiamata REST.
 solution: Experience Manager
 type: Documentation
@@ -13,7 +13,7 @@ exl-id: 548a21b9-5487-4b48-9782-19b537a48f98
 source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
 source-wordcount: '58'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -22,10 +22,10 @@ ht-degree: 3%
 Crea un frammento JSON che definisce:
 
 + input
-+ parameters
++ parametri
 + output.
 
-I dettagli di questo parametro del modulo [sono disponibili qui.](https://documentcloud.adobe.com/document-services/index.html#post-createPDF)
+I dettagli di questo [I parametri di modulo sono disponibili qui.](https://documentcloud.adobe.com/document-services/index.html#post-createPDF)
 
 Il codice di esempio riportato di seguito genera il frammento JSON per tutti i tipi di documenti di Office 365.
 

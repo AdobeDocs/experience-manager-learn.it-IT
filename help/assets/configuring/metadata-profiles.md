@@ -1,6 +1,6 @@
 ---
 title: Profili metadati
-description: I profili metadati consentono l’applicazione automatica dei metadati predefiniti alle risorse all’interno delle cartelle di risorse, riducendo il carico della gestione dei metadati per gli utenti AEM e aumentando la coerenza dei metadati.
+description: I profili metadati consentono l’applicazione automatica dei metadati predefiniti alle risorse all’interno delle cartelle di risorse, contribuendo a ridurre il carico di gestione dei metadati per gli utenti AEM e aumentando la coerenza dei metadati.
 feature: Metadata
 version: Cloud Service
 kt: 4984
@@ -19,6 +19,6 @@ ht-degree: 6%
 
 # Profili metadati
 
-I profili metadati consentono l’applicazione automatica dei metadati predefiniti alle risorse all’interno delle cartelle di risorse, riducendo il carico della gestione dei metadati per gli utenti AEM e aumentando la coerenza dei metadati.
+I profili metadati consentono l’applicazione automatica dei metadati predefiniti alle risorse all’interno delle cartelle di risorse, contribuendo a ridurre il carico di gestione dei metadati per gli utenti AEM e aumentando la coerenza dei metadati.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33974?quality=12&learn=on)

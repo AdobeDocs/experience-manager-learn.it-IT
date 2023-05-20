@@ -1,6 +1,6 @@
 ---
-title: Modernizzatore dell'archivio del codice
-description: Scopri in che modo il moderatore dell’archivio di base aggiorna automaticamente i progetti AEM Maven esistenti per renderli AEM compatibili con l’as a Cloud Service.
+title: Code Repository Modernizer
+description: Scopri in che modo Core Repository Modernizer aggiorna automaticamente i progetti AEM Maven esistenti affinché siano compatibili con gli as a Cloud Service AEM.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Modernizzatore dell&#39;archivio del codice
+# Code Repository Modernizer
 
-Scopri in che modo il moderatore dell’archivio di base aggiorna automaticamente i progetti AEM Maven esistenti per renderli AEM compatibili con l’as a Cloud Service.
+Scopri in che modo Core Repository Modernizer aggiorna automaticamente i progetti AEM Maven esistenti affinché siano compatibili con gli as a Cloud Service AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336694?quality=12&learn=on)

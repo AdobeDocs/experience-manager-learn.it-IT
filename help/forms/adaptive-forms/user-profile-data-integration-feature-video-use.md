@@ -1,6 +1,6 @@
 ---
 title: Utilizzo dell’integrazione dei dati del profilo utente con AEM Forms
-description: Integrazione AEM informazioni sul profilo utente con Adaptive Forms
+description: Integrazione delle informazioni sul profilo utente dell’AEM con Adaptive Forms
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -17,17 +17,17 @@ ht-degree: 0%
 
 # Utilizzo dell’integrazione dei dati del profilo utente con AEM Forms{#using-user-profile-data-integration-with-aem-forms}
 
-L’integrazione dei dati di AEM Forms consente di configurare e connettersi a diverse origini dati. I seguenti elementi sono supportati come predefiniti. Tuttavia, con poca personalizzazione, puoi integrare anche altre origini dati.
+L’integrazione dei dati di AEM Forms consente di configurare e connettersi a diverse origini dati. Sono supportati i seguenti elementi pronti all’uso. Tuttavia, con una personalizzazione ridotta, puoi integrare anche altre origini dati.
 
-Database relazionali - MySQL, Microsoft SQL Server, IBM DB2 e Oracle RDBMS
+Database relazionali: MySQL, Microsoft SQL Server, IBM DB2 e Oracle RDBMS
 
 1. Profilo utente AEM
-1. Servizi web RESTful
+1. Servizi Web RESTful
 1. Servizi web basati su SOAP
-1. Servizi OData Questo articolo evidenzierà l&#39;integrazione AEM informazioni sul profilo utente con Adaptive Forms.
+1. Servizi OData Questo articolo evidenzia l’integrazione delle informazioni sul profilo utente AEM con Adaptive Forms.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17432?quality=12&learn=on)
 
 >[!NOTE]
 >
->Questa funzione è disponibile solo a partire da AEM 6.3.
+>Questa funzione è disponibile solo con AEM 6.3 e versioni successive.

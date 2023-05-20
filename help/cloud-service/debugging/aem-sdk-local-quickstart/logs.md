@@ -1,6 +1,6 @@
 ---
-title: Debug AEM SDK tramite i registri
-description: I registri fungono da strumenti di prima linea per il debug delle applicazioni AEM, ma dipendono dalla registrazione appropriata nell’applicazione AEM distribuita.
+title: Debug dell’SDK AEM tramite i registri
+description: I registri fungono da strumenti di prima linea per il debug delle applicazioni AEM, ma dipendono dalla registrazione adeguata nell’applicazione AEM implementata.
 feature: Developer Tools
 topics: development
 version: Cloud Service
@@ -19,43 +19,43 @@ ht-degree: 2%
 
 ---
 
-# Debug AEM SDK tramite i registri
+# Debug dell’SDK AEM tramite i registri
 
-Accedendo ai registri dell’SDK AEM, gli strumenti locali quickstart Jar dell’SDK AEM o Dispatcher Tools possono fornire informazioni chiave sul debug AEM applicazioni.
+Accedendo ai registri dell’SDK dell’AEM, il modulo quickstart Jar locale dell’SDK dell’AEM o gli strumenti di Dispatcher possono fornire informazioni chiave sul debug delle applicazioni AEM.
 
 ## Registri AEM
 
 >[!VIDEO](https://video.tv.adobe.com/v/34334?quality=12&learn=on)
 
-I registri fungono da strumenti di prima linea per il debug delle applicazioni AEM, ma dipendono dalla registrazione appropriata nell’applicazione AEM distribuita. Adobe consiglia di mantenere le configurazioni di sviluppo locale e di AEM logging sviluppo as a Cloud Service quanto più simili possibile, in quanto normalizza la visibilità del registro sugli ambienti quickstart locale dell’SDK AEM e AEM sviluppo di as a Cloud Service, riducendo il volume di configurazione e la ridistribuzione.
+I registri fungono da strumenti di prima linea per il debug delle applicazioni AEM, ma dipendono dalla registrazione adeguata nell’applicazione AEM implementata. L’Adobe consiglia di mantenere le configurazioni di registrazione di sviluppo locale e AEM as a Cloud Service il più simile possibile, in quanto normalizza la visibilità dei registri negli ambienti di sviluppo quickstart locale dell’SDK dell’AEM e dell’AEM as a Cloud Service, riducendo il raggruppamento e la ridistribuzione della configurazione.
 
-La [Archetipo di progetto AEM](https://github.com/adobe/aem-project-archetype) configura la registrazione a livello di DEBUG per i pacchetti Java dell’applicazione AEM per lo sviluppo locale tramite la configurazione Sling Logger OSGi disponibile in
+Il [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype) configura la registrazione a livello DEBUG per i pacchetti Java dell’applicazione AEM per lo sviluppo locale tramite la configurazione OSGi di Sling Logger disponibile all’indirizzo
 
 `ui.apps/src/main/content/jcr_root/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
 
 che accede al `error.log`.
 
-Se la registrazione predefinita non è sufficiente per lo sviluppo locale, la registrazione ad hoc può essere configurata tramite la console web locale di supporto registro di AEM SDK, all’indirizzo ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)), tuttavia, non si consiglia di mantenere le modifiche ad hoc su Git a meno che queste stesse configurazioni di registro non siano necessarie anche AEM ambienti di sviluppo as a Cloud Service. Tieni presente che le modifiche effettuate tramite la console Supporto registro vengono mantenute direttamente nell’archivio locale dell’SDK AEM.
+Se la registrazione predefinita non è sufficiente per lo sviluppo locale, la registrazione ad hoc può essere configurata tramite la console web locale quickstart del supporto del registro dell’SDK di AEM, all’indirizzo ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)), tuttavia non è consigliabile che le modifiche ad hoc vengano salvate in modo permanente in Git, a meno che non siano necessarie le stesse configurazioni di registro anche per gli ambienti di sviluppo as a Cloud Service per AEM. Tieni presente che le modifiche tramite la console Log Support vengono salvate in modo permanente direttamente nell’archivio quickstart locale dell’SDK dell’AEM.
 
-Le istruzioni di registro Java possono essere visualizzate nella `error.log` file:
+Le istruzioni di registro Java possono essere visualizzate in `error.log` file:
 
 ```
 $ ~/aem-sdk/author/crx-quickstart/logs/error.log
 ```
 
-Spesso è utile &quot;tail&quot; il `error.log` che trasmette la sua uscita al terminale.
+Spesso è utile &quot;coda&quot; il `error.log` che invia l&#39;output al terminale.
 
 + macOS/Linux
    + `$ tail -f ~/aem-sdk/author/crx-quickstart/logs/error.log`
 + Windows richiede [Applicazioni tail di terze parti](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) o l&#39;uso di [Comando Get-Content di Powershell](https://stackoverflow.com/a/46444596/133936).
 
-## Log di Dispatcher
+## Registri di Dispatcher
 
-I registri del Dispatcher vengono inviati allo stdout quando `bin/docker_run` viene richiamato, tuttavia i registri possono essere accessibili direttamente con in Docker contain.
+I registri di Dispatcher vengono inviati allo stdout quando `bin/docker_run` viene richiamato, tuttavia i registri possono essere accessibili direttamente con nel Docker contain.
 
 ### Accesso ai registri nel contenitore Docker{#dispatcher-tools-access-logs}
 
-I registri del Dispatcher possono accedere direttamente nel contenitore Docker all’indirizzo `/etc/httpd/logs`.
+I registri di Dispatcher possono accedere direttamente nel contenitore Docker all’indirizzo `/etc/httpd/logs`.
 
 ```shell
 $ docker ps
@@ -75,12 +75,12 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 /# exit
 ```
 
-_La `<CONTAINER ID>` in `docker exec -it <CONTAINER ID> /bin/sh` deve essere sostituito con l’ID Docker CONTAINER di destinazione elencato nella `docker ps` comando._
+_Il `<CONTAINER ID>` in `docker exec -it <CONTAINER ID> /bin/sh` deve essere sostituito con l’ID contenitore Docker di destinazione elencato dalla sezione `docker ps` comando._
 
 
-### Copiare i log Docker nel file system locale{#dispatcher-tools-copy-logs}
+### Copia dei registri Docker nel file system locale{#dispatcher-tools-copy-logs}
 
-I registri del Dispatcher possono essere copiati dal contenitore Docker in `/etc/httpd/logs` al file system locale per l&#39;ispezione utilizzando lo strumento di analisi del log preferito. Si tratta di una copia point-in-time e non fornisce aggiornamenti in tempo reale ai registri.
+I registri di Dispatcher possono essere copiati fuori dal contenitore Docker in `/etc/httpd/logs` nel file system locale per l&#39;ispezione utilizzando lo strumento di analisi del registro preferito. Tieni presente che si tratta di una copia point-in-time e non fornisce aggiornamenti in tempo reale ai registri.
 
 ```shell
 $ docker ps
@@ -95,4 +95,4 @@ $ ls
     dispatcher.log          healthcheck_access_log  httpd_access.log        httpd_error.log
 ```
 
-_La `<CONTAINER_ID>` in `docker cp <CONTAINER_ID>:/var/log/apache2 ./` deve essere sostituito con l’ID Docker CONTAINER di destinazione elencato nella `docker ps` comando._
+_Il `<CONTAINER_ID>` in `docker cp <CONTAINER_ID>:/var/log/apache2 ./` deve essere sostituito con l’ID contenitore Docker di destinazione elencato dalla sezione `docker ps` comando._

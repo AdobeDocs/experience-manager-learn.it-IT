@@ -1,6 +1,6 @@
 ---
-title: Introduzione al tema in Asset Share Commons
-description: Materiali per la comprensione funzionale e tecnica di Assets Share Commons
+title: Introduzione alla tempistica in Asset Share Commons
+description: Materiali per le conoscenze tecniche e funzionali di Assets Share Commons
 version: 6.4, 6.5
 topic: Content Management
 role: Developer
@@ -14,15 +14,15 @@ ht-degree: 1%
 
 ---
 
-# Introduzione al tema in Asset Share Commons {#asset-share-commons-theme}
+# Introduzione alla tempistica in Asset Share Commons {#asset-share-commons-theme}
 
-Breve introduzione al tema in Asset Share Commons. Il video illustra il processo di creazione di un nuovo tema con una combinazione di colori personalizzata.
+Breve introduzione ai temi in Asset Share Commons. Il video illustra come creare un nuovo tema con una combinazione di colori personalizzata.
 
 >[!VIDEO](https://video.tv.adobe.com/v/20572?quality=12&learn=on)
 
-In questo video viene creato un nuovo tema basato sul tema Scuro di Asset Share Commons. La combinazione di colori corrisponderà a un logo personalizzato per dare al sito un aspetto e un aspetto coerente.
+In questo video viene creato un nuovo tema basato sul tema scuro Asset Share Commons. La combinazione di colori corrisponderà a un logo personalizzato per conferire al sito un aspetto coerente.
 
-## Variabili di tema
+## Variabili del tema
 
 ```java
 /*******************************
@@ -73,7 +73,7 @@ In questo video viene creato un nuovo tema basato sul tema Scuro di Asset Share 
 @msgWarningBackgroundColor: @yellow;
 ```
 
-Scarica [Tema libreria client personalizzato](assets/asc-theme-demo.zip)
+Scarica [Tema libreria client personalizzata](assets/asc-theme-demo.zip)
 
 ## Risorse aggiuntive{#additional-resources}
 

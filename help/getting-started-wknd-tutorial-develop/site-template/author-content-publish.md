@@ -1,6 +1,6 @@
 ---
 title: Introduzione all’authoring e alla pubblicazione | Creazione rapida di siti AEM
-description: Utilizza l’editor pagina in Adobe Experience Manager, AEM, per aggiornare il contenuto del sito web. Scopri come i componenti vengono utilizzati per facilitare l’authoring. Scopri la differenza tra un ambiente di authoring e uno di pubblicazione AEM e come pubblicare le modifiche al sito live.
+description: Utilizza l’editor pagina in Adobe Experience Manager, AEM, per aggiornare il contenuto del sito web. Scopri come i Componenti vengono utilizzati per facilitare l’authoring. Scopri la differenza tra un ambiente AEM Author e uno AEM Publish e come pubblicare le modifiche al sito live.
 version: Cloud Service
 type: Tutorial
 topic: Content Management
@@ -20,11 +20,11 @@ ht-degree: 3%
 
 # Introduzione all’authoring e alla pubblicazione {#author-content-publish}
 
-È importante comprendere in che modo un utente aggiorna il contenuto del sito web. In questo capitolo adotteremo la persona di un **Autore del contenuto** e apporta alcuni aggiornamenti editoriali al sito generato nel capitolo precedente. Alla fine del capitolo, pubblicheremo le modifiche per comprendere come viene aggiornato il sito live.
+È importante comprendere in che modo un utente aggiornerà i contenuti del sito web. In questo capitolo adotteremo la persona di un **Autore del contenuto** e apporta alcune modifiche redazionali al sito generato nel capitolo precedente. Alla fine del capitolo, pubblicheremo le modifiche per comprendere come viene aggiornato il sito live.
 
 ## Prerequisiti {#prerequisites}
 
-Si tratta di un tutorial in più parti e si presume che i passaggi descritti in [Creare un sito](./create-site.md) capitolo completato.
+Si tratta di un tutorial in più parti in cui si presume che i passaggi descritti in [Creare un sito](./create-site.md) capitolo sono stati completati.
 
 ## Obiettivo {#objective}
 
@@ -32,24 +32,24 @@ Si tratta di un tutorial in più parti e si presume che i passaggi descritti in 
 1. Scopri come aggiornare il contenuto del sito web.
 1. Scopri come pubblicare le modifiche al sito live.
 
-## Creare una nuova pagina {#create-page}
+## Crea una nuova pagina {#create-page}
 
-In genere, un sito web viene suddiviso in pagine per creare un’esperienza multipagina. AEM struttura il contenuto allo stesso modo. Quindi, crea una nuova pagina per il sito.
+Un sito web viene in genere suddiviso in pagine per formare un’esperienza multipagina. L’AEM struttura il contenuto allo stesso modo. Quindi, crea una nuova pagina per il sito.
 
-1. Accedi al AEM **Autore** Servizio utilizzato nel capitolo precedente.
-1. Dalla schermata iniziale AEM fai clic su **Sites** > **Sito WKND** > **Inglese** > **Articolo**
-1. Nell&#39;angolo in alto a destra fai clic su **Crea** > **Pagina**.
+1. Accedere all’AEM **Autore** Servizio utilizzato nel capitolo precedente.
+1. Dalla schermata iniziale dell’AEM, fai clic su **Sites** > **Sito WKND** > **Inglese** > **Articolo**
+1. Nell’angolo in alto a destra fai clic su **Crea** > **Pagina**.
 
    ![Crea pagina](assets/author-content-publish/create-page-button.png)
 
-   Questo farà nascere **Crea pagina** procedura guidata.
+   Verrà visualizzata la **Crea pagina** procedura guidata.
 
-1. Scegli la **Pagina dell’articolo** modello e fai clic su **Successivo**.
+1. Scegli la **Pagina articolo** e fai clic su **Successivo**.
 
-   Le pagine in AEM vengono create in base a un modello di pagina. I modelli di pagina sono descritti in dettaglio nella sezione [Modelli di pagina](page-templates.md) capitolo.
+   Le pagine in AEM vengono create in base a un Modello pagina. I modelli di pagina vengono esaminati in dettaglio nella sezione [Modelli di pagina](page-templates.md) capitolo.
 
-1. Sotto **Proprietà** inserire un **Titolo** di &quot;Hello World&quot;.
-1. Imposta la **Nome** essere `hello-world` e fai clic su **Crea**.
+1. Sotto **Proprietà** immetti un **Titolo** di Hello World.
+1. Imposta il **Nome** essere `hello-world` e fai clic su **Crea**.
 
    ![Proprietà pagina iniziale](assets/author-content-publish/initial-page-properties.png)
 
@@ -57,84 +57,84 @@ In genere, un sito web viene suddiviso in pagine per creare un’esperienza mult
 
 ## Creare un componente {#author-component}
 
-I componenti AEM possono essere considerati come piccoli blocchi modulari di una pagina web. Suddividendo l’interfaccia utente in blocchi logici o componenti, diventa molto più semplice da gestire. Per riutilizzare i componenti, questi devono essere configurabili. Questa operazione viene eseguita tramite la finestra di dialogo di authoring.
+I Componenti AEM possono essere considerati come piccoli elementi costitutivi modulari di una pagina web. Dividendo l’interfaccia utente in blocchi logici o componenti, diventa molto più semplice da gestire. Per poter riutilizzare i componenti, questi devono essere configurabili. Questa operazione viene eseguita tramite la finestra di dialogo di authoring.
 
-AEM fornisce un set di [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) che sono pronti per l’uso. La **Componenti core** da elementi di base come [Testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) e [Immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) per elementi dell’interfaccia più complessi come [Carosello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html).
+L&#39;AEM fornisce una serie di [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) pronti per l’uso. Il **Componenti core** da elementi di base come [Testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) e [Immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=it) a elementi dell’interfaccia utente più complessi come [Carosello](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=it).
 
 Quindi, crea alcuni componenti utilizzando l’Editor pagina AEM.
 
-1. Passa a **Hello World** pagina creata nell’esercizio precedente.
-1. Verifica di essere in **Modifica** e nella barra laterale sinistra fai clic sul pulsante **Componenti** icona.
+1. Accedi a **Hello World** pagina creata nell&#39;esercizio precedente.
+1. Verifica di essere in **Modifica** e nella barra laterale a sinistra fai clic sul pulsante **Componenti** icona.
 
    ![Barra laterale dell’editor pagina](assets/author-content-publish/page-editor-siderail.png)
 
-   Viene aperta la libreria Componenti ed è riportato l’elenco dei Componenti disponibili utilizzabili nella pagina.
+   Verrà aperta la libreria dei componenti con l’elenco dei componenti disponibili che possono essere utilizzati nella pagina.
 
-1. Scorri verso il basso e **Trascina+Rilascia** a **Testo (v2)** viene visualizzato nell’area modificabile principale della pagina.
+1. Scorri verso il basso e **Trascina** a **Testo (v2)** nell’area modificabile principale della pagina.
 
-   ![Trascina e rilascia il componente testo](assets/author-content-publish/drag-drop-text-cmp.png)
+   ![Trascina + rilascia il componente testo](assets/author-content-publish/drag-drop-text-cmp.png)
 
-1. Fai clic sul pulsante **Testo** per evidenziare e quindi fare clic sul **chiave** icona ![Icona chiave](assets/author-content-publish/wrench-icon.png) per aprire la finestra di dialogo del componente. Inserisci del testo e salva le modifiche apportate alla finestra di dialogo.
+1. Fai clic su **Testo** per evidenziare e quindi fare clic sul pulsante **chiave inglese** icona ![Icona chiave inglese](assets/author-content-publish/wrench-icon.png) per aprire la finestra di dialogo del componente. Inserisci del testo e salva le modifiche nella finestra di dialogo.
 
    ![Componente Rich Text](assets/author-content-publish/rich-text-populated-component.png)
 
-   La **Testo** A questo punto, il componente deve visualizzare il testo RTF nella pagina.
+   Il **Testo** Il componente ora deve visualizzare il testo RTF sulla pagina.
 
-1. Ripeti i passaggi precedenti, tranne trascina un’istanza del **Immagine (v2)** nella pagina. Apri **Immagine** finestra di dialogo del componente.
+1. Ripeti i passaggi precedenti, tranne trascinare un’istanza del **Immagine (v2)** sulla pagina. Apri **Immagine** finestra di dialogo del componente.
 
-1. Nella barra a sinistra, passa alla **Ricerca risorse** facendo clic sul pulsante **Risorse** icona ![icona risorsa](assets/author-content-publish/asset-icon.png).
-1. **Trascina+Rilascia** un’immagine nella finestra di dialogo del componente e fai clic su **Fine** per salvare le modifiche.
+1. Nella barra a sinistra, passa a **Asset Finder** facendo clic su **Risorse** icona ![icona risorsa](assets/author-content-publish/asset-icon.png).
+1. **Trascina** un’immagine nella finestra di dialogo del componente e fai clic su **Fine** per salvare le modifiche.
 
    ![Aggiungi risorsa alla finestra di dialogo](assets/author-content-publish/add-asset-dialog.png)
 
-1. Osserva che nella pagina sono presenti componenti, come il **Titolo**, **Navigazione**, **Ricerca** che sono corretti. Queste aree sono configurate come parte del Modello di pagina e non possono essere modificate su una singola pagina. Questo è più esplorato nel prossimo capitolo.
+1. Osserva che nella pagina sono presenti componenti come **Titolo**, **Navigazione**, **Ricerca** che sono corretti. Queste aree sono configurate come parte del Modello pagina e non possono essere modificate in una singola pagina. Questo aspetto verrà approfondito nel prossimo capitolo.
 
-Sentitevi liberi di sperimentare con alcuni degli altri componenti. Documentazione su ogni [Il componente core si trova qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). Una serie video dettagliata su [L’authoring delle pagine è disponibile qui](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html).
+Puoi provare alcuni degli altri componenti. Documentazione su ciascuno [I componenti core sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it). Serie video dettagliata su [L’authoring delle pagine si trova qui](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/aem-sites-authoring-overview.html).
 
-## Aggiornamenti alla pubblicazione {#publish-updates}
+## Aggiornamenti di pubblicazione {#publish-updates}
 
-Gli ambienti AEM sono suddivisi tra **Servizio authoring** e **Servizio di pubblicazione**. In questo capitolo abbiamo apportato diverse modifiche al sito **Servizio authoring**. Per consentire ai visitatori del sito di visualizzare le modifiche, è necessario pubblicarle nel **Servizio di pubblicazione**.
+Gli ambienti AEM sono suddivisi tra **Servizio Author** e un **Servizio di pubblicazione**. In questo capitolo abbiamo apportato diverse modifiche al sito sulla **Servizio Author**. Affinché i visitatori del sito possano visualizzare le modifiche, è necessario pubblicarle in **Servizio di pubblicazione**.
 
-![Diagramma di alto livello](assets/author-content-publish/author-publish-high-level-flow.png)
+![Diagramma ad alto livello](assets/author-content-publish/author-publish-high-level-flow.png)
 
-*Flusso di contenuti di alto livello da Author a Publish*
+*Flusso di alto livello dei contenuti dall’ambiente di authoring a quello di pubblicazione*
 
 **1.** Gli autori dei contenuti apportano aggiornamenti al contenuto del sito. Gli aggiornamenti possono essere visualizzati in anteprima, rivisti e approvati per essere inviati in diretta.
 
-**2.** Il contenuto è stato pubblicato. La pubblicazione può essere eseguita su richiesta o programmata per una data futura.
+**2.** Il contenuto viene pubblicato. La pubblicazione può essere eseguita su richiesta o pianificata per una data futura.
 
-**3.** I visitatori del sito vedranno le modifiche che si rifletteranno sul servizio Publish.
+**3.** I visitatori del sito vedranno le modifiche che si riflettono sul servizio di pubblicazione.
 
 ### Pubblicare le modifiche
 
-Quindi, pubblichiamo le modifiche.
+Ora pubblichiamo le modifiche.
 
-1. Dalla schermata iniziale AEM passare a **Sites** e seleziona la **Sito WKND**.
-1. Fai clic sul pulsante **Gestisci pubblicazione** nella barra dei menu.
+1. Dalla schermata iniziale dell’AEM, vai a **Sites** e seleziona la **Sito WKND**.
+1. Fai clic su **Gestisci pubblicazione** nella barra dei menu.
 
    ![Gestisci pubblicazione](assets/author-content-publish/click-manage-publiciation.png)
 
-   Poiché si tratta di un nuovo sito, vogliamo pubblicare tutte le pagine e possiamo utilizzare la procedura guidata Gestisci pubblicazione per definire esattamente cosa deve essere pubblicato.
+   Poiché si tratta di un sito nuovo di zecca, vogliamo pubblicare tutte le pagine e possiamo utilizzare la procedura guidata Gestisci pubblicazione per definire esattamente ciò che deve essere pubblicato.
 
-1. Sotto **Opzioni** lascia le impostazioni predefinite su **Pubblica** e la programmazione **Ora**. Fai clic su **Avanti**.
-1. Sotto **Ambito**, seleziona **Sito WKND** e fai clic su **Includi impostazioni figlio**. Nella finestra di dialogo, seleziona **Includi elementi figlio**. Deseleziona le altre caselle per verificare che l’intero sito sia pubblicato.
+1. Sotto **Opzioni** lascia le impostazioni predefinite su **Pubblica** e pianificalo per **Ora**. Fai clic su **Avanti**.
+1. Sotto **Ambito**, seleziona la **Sito WKND** e fai clic su **Includi impostazioni figlio**. Nella finestra di dialogo, seleziona **Includi elementi figlio**. Deseleziona le altre caselle per assicurarti che l’intero sito sia pubblicato.
 
    ![Aggiorna ambito di pubblicazione](assets/author-content-publish/update-scope-publish.png)
 
-1. Fai clic sul pulsante **Riferimenti pubblicati** pulsante . Nella finestra di dialogo, verifica che tutto sia controllato. Ciò include **Modello di sito standard** e diverse configurazioni generate dal modello del sito. Fai clic su **Fine** da aggiornare.
+1. Fai clic su **Riferimenti pubblicati** pulsante. Nella finestra di dialogo, verifica che tutto sia selezionato. Ciò includerà **Modello di sito standard** e diverse configurazioni generate dal modello di sito. Clic **Fine** da aggiornare.
 
-   ![Pubblicare riferimenti](assets/author-content-publish/publish-references.png)
+   ![Pubblica riferimenti](assets/author-content-publish/publish-references.png)
 
-1. Infine, seleziona la casella accanto a **Sito WKND** e fai clic su **Successivo** nell&#39;angolo in alto a destra.
-1. In **Flussi di lavoro** passo, immetti un **Titolo flusso di lavoro**. Può trattarsi di qualsiasi testo e può essere utile come parte di un audit trail successivo. Inserisci &quot;Pubblicazione iniziale&quot; e fai clic su **Pubblica**.
+1. Infine, seleziona la casella accanto a **Sito WKND** e fai clic su **Successivo** in alto a destra.
+1. In **Flussi di lavoro** passaggio, immetti un **Titolo flusso di lavoro**. Può essere qualsiasi testo e può essere utile in seguito come parte di un audit trail. Inserisci &quot;Initial publish&quot; e fai clic su **Pubblica**.
 
-![Pubblicazione iniziale della fase del flusso di lavoro](assets/author-content-publish/workflow-step-publish.png)
+![Pubblicazione iniziale del passaggio del flusso di lavoro](assets/author-content-publish/workflow-step-publish.png)
 
 ## Visualizza contenuto pubblicato {#publish}
 
-Quindi, accedi al servizio Publish per visualizzare le modifiche.
+Quindi, passa al servizio Publish per visualizzare le modifiche.
 
-1. Un modo semplice per ottenere l’URL del servizio di pubblicazione è quello di copiare l’URL dell’autore e sostituire il `author` parola con `publish`. Esempio:
+1. Un modo semplice per ottenere l’URL del servizio di pubblicazione consiste nel copiare l’URL dell’autore e sostituire `author` parola con `publish`. Ad esempio:
 
    * **URL autore** - `https://author-pYYYY-eXXXX.adobeaemcloud.com/`
    * **URL di pubblicazione** - `https://publish-pYYYY-eXXXX.adobeaemcloud.com/`
@@ -143,36 +143,36 @@ Quindi, accedi al servizio Publish per visualizzare le modifiche.
 
    >[!NOTE]
    >
-   > Modifica `wknd.html` per corrispondere al nome del sito, se hai fornito un nome univoco durante [creazione di siti](create-site.md).
+   > Cambia `wknd.html` per corrispondere al nome del sito, se hai fornito un nome univoco durante [creazione di siti](create-site.md).
 
-1. Passando all’URL di pubblicazione, il sito dovrebbe essere visualizzato senza alcuna funzionalità di authoring AEM.
+1. Passando all’URL di pubblicazione, dovresti visualizzare il sito senza alcuna delle funzionalità di creazione AEM.
 
    ![Sito pubblicato](assets/author-content-publish/publish-url-update.png)
 
-1. Utilizzo della **Navigazione** clic del menu **Articolo** > **Hello World** per passare alla pagina Hello World creata in precedenza.
-1. Torna a **AEM Author Service** e apporta alcune modifiche aggiuntive al contenuto nell’Editor pagina.
-1. Pubblica queste modifiche direttamente dall’interno dell’editor di pagine facendo clic sul pulsante **Proprietà pagina** icona > **Pubblica pagina**
+1. Utilizzo di **Navigazione** clic del menu **Articolo** > **Hello World** per passare alla pagina Hello World creata in precedenza.
+1. Torna a **Servizio authoring AEM** e apportare alcune modifiche aggiuntive al contenuto nell’Editor pagina.
+1. Pubblica queste modifiche direttamente dall’editor pagina facendo clic sul pulsante **Proprietà pagina** icona > **Pubblica pagina**
 
-   ![pubblicare direttamente](assets/author-content-publish/page-editor-publish.png)
+   ![pubblicazione diretta](assets/author-content-publish/page-editor-publish.png)
 
-1. Torna a **Servizio di pubblicazione AEM** per visualizzare le modifiche. Molto probabilmente **not** visualizza immediatamente gli aggiornamenti. Questo perché il **Servizio di pubblicazione AEM** include [memorizzazione in cache tramite un server web Apache e CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html). Per impostazione predefinita, il contenuto di HTML viene memorizzato nella cache per circa 5 minuti.
+1. Torna a **Servizio di pubblicazione AEM** per visualizzare le modifiche. Molto probabilmente **non** visualizzare immediatamente gli aggiornamenti. Questo perché il **Servizio di pubblicazione AEM** include [caching tramite un server web Apache e CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html?lang=it). Per impostazione predefinita, il contenuto di HTML viene memorizzato nella cache per circa 5 minuti.
 
-1. Per ignorare la cache a scopo di test/debug, aggiungi semplicemente un parametro di query come `?nocache=true`. L’URL sarà simile a `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd/en/article/hello-world.html?nocache=true`. Maggiori dettagli sulla strategia di caching e sulle configurazioni disponibili [si trova qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/overview.html).
+1. Per ignorare la cache a scopo di test/debug, è sufficiente aggiungere un parametro di query come `?nocache=true`. L’URL sarà simile al seguente `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd/en/article/hello-world.html?nocache=true`. Ulteriori dettagli sulla strategia e sulle configurazioni di caching disponibili [si trova qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/overview.html).
 
-1. Puoi anche trovare l’URL del servizio Publish in Cloud Manager. Passa a **Programma Cloud Manager** > **Ambienti** > **Ambiente**.
+1. Puoi anche trovare l’URL del servizio di pubblicazione in Cloud Manager. Accedi a **Programma Cloud Manager** > **Ambienti** > **Ambiente**.
 
    ![Visualizza servizio di pubblicazione](assets/author-content-publish/view-environment-segments.png)
 
-   Sotto **Segmenti di ambiente** è possibile trovare collegamenti alla **Autore** e **Pubblica** servizi.
+   Sotto **Segmenti di ambiente** è possibile trovare collegamenti a **Autore** e **Pubblica** servizi.
 
-## Congratulazioni! {#congratulations}
+## Congratulazioni.  {#congratulations}
 
 Congratulazioni, hai appena creato e pubblicato le modifiche al tuo sito AEM!
 
 ### Passaggi successivi {#next-steps}
 
-In un’implementazione reale, la pianificazione di un sito con modelli e progettazioni dell’interfaccia utente in genere precede la creazione del sito. Scopri come utilizzare i kit dell’interfaccia utente di Adobe XD per progettare e accelerare l’implementazione di Adobe Experience Manager Sites in [Pianificazione dell’interfaccia utente con Adobe XD](./ui-planning-adobe-xd.md).
+In un’implementazione reale, la pianificazione di un sito con modelli e progettazioni dell’interfaccia utente in genere precede la creazione del sito. Scopri come utilizzare i kit di interfaccia utente di Adobe XD per progettare e accelerare l’implementazione di Adobe Experience Manager Sites in [Pianificazione dell’interfaccia utente con Adobe XD](./ui-planning-adobe-xd.md).
 
-Vuoi continuare a esplorare le funzionalità di AEM Sites? Sentitevi liberi di saltare direttamente nel capitolo su [Modelli di pagina](./page-templates.md) per comprendere la relazione tra un modello di pagina e una pagina.
+Vuoi continuare a esplorare le funzionalità di AEM Sites? Puoi passare direttamente al capitolo su [Modelli di pagina](./page-templates.md) per comprendere la relazione tra un modello di pagina e una pagina.
 
 

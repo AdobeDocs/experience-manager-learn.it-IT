@@ -1,6 +1,6 @@
 ---
-title: Modulo adattivo con singolo firmatario
-description: Modulo adattivo con singolo firmatario. Il video illustra i vari passaggi necessari per configurare un modulo adattivo con un singolo firmatario.
+title: Modulo adattivo con firmatario singolo
+description: Modulo adattivo con firmatario singolo. Il video illustra i vari passaggi necessari per configurare un modulo adattivo con un singolo firmatario.
 feature: Adaptive Forms,Acrobat Sign
 thumbnail: 39475.jpg
 kt: 6103
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Modulo adattivo con singolo firmatario
+# Modulo adattivo con firmatario singolo
 
 
 Il video illustra i vari passaggi necessari per configurare un modulo adattivo con un singolo firmatario.
@@ -24,4 +24,4 @@ Il video illustra i vari passaggi necessari per configurare un modulo adattivo c
 
 Le risorse relative a questo video possono essere scaricate dal seguente collegamento
 
-* [Modifica Della Forma Del Beneficiario ](assets/change-of-beneficiary-form.zip)
+* [Modifica Del Modulo Del Beneficiario ](assets/change-of-beneficiary-form.zip)

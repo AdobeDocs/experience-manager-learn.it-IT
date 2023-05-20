@@ -1,6 +1,6 @@
 ---
-title: Assemblare i file PDF utilizzando l'operazione DDX di richiamo
-description: Effettua una richiesta POST per richiamare l’endpoint DDX con i parametri necessari
+title: Assemblare file PDF utilizzando l'operazione DDX di richiamo
+description: Effettuare una richiesta POST per richiamare l’endpoint DDX con i parametri necessari
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -8,7 +8,8 @@ version: Cloud Service
 feature: Output Service
 topic: Development
 kt: 9980
-source-git-commit: b7ff98dccc1381abe057a80b96268742d0a0629b
+exl-id: 693dac88-84f3-4051-8e46-3105093711a3
+source-git-commit: e925b9fa02dc8d4695b85377c5f7f43fbd45ebc8
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 0%
@@ -18,8 +19,8 @@ ht-degree: 0%
 # Effettua la chiamata POST
 
 
-Il passaggio successivo consiste nell’effettuare una chiamata HTTP POST all’endpoint con i parametri necessari. I file DDX e pdf vengono forniti come file di risorse. Il punto finale ha l&#39;autenticazione basata su token e passiamo il token di accesso nell&#39;intestazione della richiesta.
-Quando si utilizza il servizio Assembler, utilizzare un linguaggio basato su XML denominato Document Description XML (DDX) per descrivere l&#39;output desiderato. DDX è un linguaggio di markup dichiarativo i cui elementi rappresentano blocchi predefiniti di documenti.Il seguente DDX è stato utilizzato per unire i due documenti pdf identificati negli elementi di origine di PDF.
+Il passaggio successivo consiste nell’effettuare una chiamata HTTP POST all’endpoint con i parametri necessari. I file DDX e pdf vengono forniti come file di risorse. Il punto finale dispone dell’autenticazione basata su token; il token di accesso viene passato nell’intestazione della richiesta.
+Quando si utilizza il servizio Assembler, utilizzare un linguaggio basato su XML denominato Document Description XML (DDX) per descrivere l&#39;output desiderato. DDX è un linguaggio di markup dichiarativo i cui elementi rappresentano blocchi predefiniti di documenti.Il seguente DDX è stato utilizzato per unire i due documenti pdf identificati negli elementi sorgente PDF.
 
 ```xml
 <DDX xmlns="http://ns.adobe.com/DDX/1.0/">
@@ -30,7 +31,7 @@ Quando si utilizza il servizio Assembler, utilizzare un linguaggio basato su XML
 </DDX>
 ```
 
-Il codice seguente è stato utilizzato per combinare file pdf
+Il codice seguente è stato utilizzato per combinare i file pdf
 
 ```java
 package com.aemformscs.documentservices;

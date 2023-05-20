@@ -1,6 +1,6 @@
 ---
-title: Configurazione dell’origine delle risorse con il brand portal.
-description: Passaggi per configurare l’origine risorse con Brand Portal
+title: Configurazione di Asset sourcing con Brand Portal.
+description: Passaggi per configurare l’origine delle risorse con Brand Portal
 role: Developer
 level: Beginner
 version: Cloud Service
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Configurazione dell’origine delle risorse con Brand Portal
+# Configurazione di Asset sourcing con Brand Portal
 
 *Questo video illustra il processo di configurazione dell’origine delle risorse con Brand Portal.*
 

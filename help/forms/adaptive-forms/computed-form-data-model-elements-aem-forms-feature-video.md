@@ -1,6 +1,6 @@
 ---
-title: Creazione di elementi del modello dati del modulo calcolato in AEM Forms
-description: Creazione di elementi del modello dati del modulo calcolato
+title: Creazione di elementi del modello dati modulo calcolato in AEM Forms
+description: Creazione di elementi del modello dati modulo calcolato
 feature: Workflow
 version: 6.4,6.5
 topic: Development
@@ -15,20 +15,20 @@ ht-degree: 0%
 
 ---
 
-# Creazione di elementi del modello dati del modulo calcolato in AEM Forms{#creating-computed-form-data-model-elements-in-aem-forms}
+# Creazione di elementi del modello dati modulo calcolato in AEM Forms{#creating-computed-form-data-model-elements-in-aem-forms}
 
-Gli elementi del modello dati del modulo calcolato consentono di memorizzare il risultato della manipolazione su uno o più elementi del modello dati del modulo. Ad esempio, è possibile calcolare e memorizzare lo stipendio mensile eseguendo un&#39;operazione matematica nel campo stipendio. A questo scopo, dividerai lo stipendio per 12 e memorizzerai il risultato in un elemento del modello di dati del modulo calcolato denominato mensileSalary.
+Gli elementi del modello dati modulo calcolato consentono di memorizzare il risultato della manipolazione su uno o più elementi del modello dati modulo. È ad esempio possibile calcolare e memorizzare lo stipendio mensile eseguendo un&#39;operazione matematica nel campo stipendio. A questo scopo, dividerai lo stipendio per 12 e memorizzerai il risultato nell’elemento del modello dati del modulo calcolato denominato monthSalary.
 
-Un altro esempio per la creazione del modello dati modulo calcolato consiste nel concatenare due o più elementi del modello dati modulo. Ad esempio, è possibile concatenare gli elementi del modello dati di stato e ZIP con un trattino tra i due elementi.
+Un altro esempio per la creazione di un modello di dati modulo calcolato consiste nel concatenare due o più elementi del modello di dati modulo. Ad esempio, puoi concatenare gli elementi del modello dati del modulo di stato e del modulo zip con un trattino tra i due elementi.
 
-La schermata seguente mostra gli elementi calcolati StateaeZip e mensiliSalary
+La schermata seguente mostra gli elementi calcolati StateandZip e monthSalary
 
 ![computedfdmelement](assets/computedfdmelement.gif)
 
-## Creazione dell&#39;elemento calcolato dello stipendio mensile
+## Creazione elemento calcolato stipendio mensile
 
 >[!VIDEO](https://video.tv.adobe.com/v/23855?quality=12&learn=on)
 
-### Creazione di un elemento calcolato StateandZip
+### Creazione dell&#39;elemento calcolato StateandZip
 
 >[!VIDEO](https://video.tv.adobe.com/v/23856?quality=12&learn=on)

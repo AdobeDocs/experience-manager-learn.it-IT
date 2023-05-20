@@ -1,6 +1,6 @@
 ---
-title: Operazioni creative con l’automazione dei contenuti di AEM Assets
-description: Scopri come utilizzare il componente aggiuntivo per l’automazione dei contenuti che integra le risorse Adobe Experience Manager as a Cloud Service con le API dei servizi Adobe Creative Cloud per elaborare le risorse.
+title: Operazioni creative con AEM Assets Content Automation
+description: Scopri come utilizzare il componente aggiuntivo di automazione dei contenuti che integra Adobe Experience Manager Assets as a Cloud Service con le API dei servizi Adobe Creative Cloud per elaborare le risorse.
 topic: Content Management
 feature: Asset Processing, Renditions
 role: Leader, Architect, Developer, Admin, User
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Operazioni creative
 
-Scopri come utilizzare il componente aggiuntivo per l’automazione dei contenuti che integra le risorse Adobe Experience Manager as a Cloud Service con le API dei servizi Adobe Creative Cloud per elaborare le risorse.
+Scopri come utilizzare il componente aggiuntivo di automazione dei contenuti che integra Adobe Experience Manager Assets as a Cloud Service con le API dei servizi Adobe Creative Cloud per elaborare le risorse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336540?quality=12&learn=on)

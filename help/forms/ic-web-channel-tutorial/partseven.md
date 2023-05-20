@@ -1,7 +1,7 @@
 ---
-title: Aggiunta di contenuto di testo e immagine al documento del canale Web
+title: Aggiunta di contenuto di testo e immagini al documento del canale web
 seo-title: Adding text and image content to web channel document
-description: Questa è la parte 7 di un tutorial in più passaggi per la creazione del primo documento di comunicazione interattivo. In questa parte, aggiungeremo immagini e contenuti di testo al pannello di intestazione.
+description: Questa è la parte 7 di un tutorial in più passaggi per creare il tuo primo documento di comunicazione interattiva. In questa parte verranno aggiunti immagini e contenuto di testo al pannello intestazione.
 seo-description: This is part 7 of a multi-step tutorial for creating your first interactive communications document. In this part, we will add images and text content to the header panel.
 uuid: 440f8b74-3be7-4e58-a46e-4110065b7705
 feature: Interactive Communication
@@ -22,17 +22,17 @@ ht-degree: 1%
 
 ---
 
-# Aggiunta di contenuto di testo e immagine al documento del canale Web
+# Aggiunta di contenuto di testo e immagini al documento del canale web
 
-In questa parte, aggiungeremo immagini e contenuti di testo al pannello di intestazione.
+In questa parte verranno aggiunti immagini e contenuto di testo al pannello intestazione.
 
-Dopo aver creato il primo frammento di documento contenente il nome e l’indirizzo del destinatario, sarà necessario aggiungere il frammento di documento al documento del canale Web.
+Dopo aver creato il primo frammento di documento che conterrà il nome e l’indirizzo del destinatario, è necessario aggiungere il frammento di documento al documento del canale web.
 
-È possibile aggiungere al documento del canale Web contenuti di vari tipi, ad esempio Frammenti documento, Immagini, Frammenti di layout e così via.
+È possibile aggiungere al documento del canale web contenuti di vario tipo, ad esempio frammenti di documenti, immagini, frammenti di layout e così via.
 
-Per aggiungere contenuti al documento del canale web, segui il video qui sotto.
+Per aggiungere contenuti al documento del canale web, segui il video seguente.
 
-Il video illustra i passaggi necessari per aggiungere contenuto alle aree di destinazione appropriate nel documento del canale web.
+Il video illustra i passaggi necessari per aggiungere contenuti alle aree di destinazione appropriate nel documento del canale web.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22359?quality=12&learn=on)
 

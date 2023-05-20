@@ -1,6 +1,6 @@
 ---
-title: Personalizzare la notifica di assegnazione attività
-description: Includi i dati del modulo nelle e-mail di notifica delle attività di assegnazione
+title: Personalizza notifica di assegnazione attività
+description: Includi dati modulo nelle e-mail di notifica dell'attività di assegnazione
 feature: Workflow
 topics: integrations
 audience: developer
@@ -21,19 +21,19 @@ ht-degree: 1%
 
 ---
 
-# Personalizzare la notifica di assegnazione attività
+# Personalizza notifica di assegnazione attività
 
-Il componente Assegna attività viene utilizzato per assegnare le attività ai partecipanti del flusso di lavoro. Quando un’attività viene assegnata a un utente o a un gruppo, viene inviata una notifica e-mail all’utente o ai membri del gruppo definiti.
-Questa notifica di posta elettronica contiene in genere dati dinamici relativi all&#39;attività. Questi dati dinamici vengono recuperati utilizzando il sistema generato [proprietà dei metadati](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification).
-Per includere i valori dei dati del modulo inviati nella notifica e-mail, è necessario creare una proprietà di metadati personalizzata e quindi utilizzare queste proprietà di metadati personalizzate nel modello e-mail
+Il componente Assegna attività viene utilizzato per assegnare attività ai partecipanti al flusso di lavoro. Quando un’attività viene assegnata a un utente o a un gruppo, viene inviata una notifica e-mail all’utente o al gruppo definito.
+In genere, questa notifica e-mail contiene dati dinamici relativi all’attività. Questi dati dinamici vengono recuperati utilizzando il sistema generato [proprietà metadati](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification).
+Per includere i valori dei dati del modulo inviati nella notifica e-mail, è necessario creare una proprietà di metadati personalizzata e quindi utilizzare tali proprietà nel modello e-mail
 
 
 
-## Creazione di una proprietà di metadati personalizzata
+## Creazione di proprietà di metadati personalizzate
 
-L’approccio consigliato è quello di creare un componente OSGI che implementa il metodo getUserMetadata del [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
+L’approccio consigliato consiste nel creare un componente OSGI che implementa il metodo getUserMetadata del [ServizioMetadatiUtenteElementoLavoro](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
 
-Il codice seguente crea 4 proprietà di metadati(_firstName_,_lastName_,_motivo_ e _amountRequested_) e imposta il relativo valore dai dati inviati. Ad esempio, la proprietà metadata _firstName_ Il valore di è impostato sul valore dell&#39;elemento denominato firstName dai dati inviati. Il codice seguente presuppone che i dati inviati del modulo adattivo siano in formato xml. Forms adattivo basato su schema JSON o modello dati modulo genera dati in formato JSON.
+Il codice seguente crea 4 proprietà di metadati (_firstName_,_lastName_,_motivo_ e _amountRequested_) e imposta il relativo valore dai dati inviati. Ad esempio, la proprietà dei metadati _firstName_ Il valore di è impostato sul valore dell’elemento denominato firstName dai dati inviati. Il codice seguente presuppone che i dati inviati del modulo adattivo siano in formato xml. I Forms adattivi basati su schema JSON o modello dati modulo generano dati in formato JSON.
 
 
 ```java
@@ -113,42 +113,42 @@ return customMetadataMap;
 }
 ```
 
-## Utilizzare le proprietà dei metadati personalizzati nel modello e-mail di notifica delle attività
+## Utilizzare le proprietà dei metadati personalizzati nel modello e-mail di notifica dell’attività
 
-Nel modello e-mail puoi includere la proprietà dei metadati utilizzando la seguente sintassi dove amountRequested è la proprietà dei metadati `${amountRequested}`
+Nel modello e-mail puoi includere la proprietà dei metadati utilizzando la seguente sintassi, dove amountRequested è la proprietà dei metadati `${amountRequested}`
 
-## Configura l’attività di assegnazione per utilizzare la proprietà dei metadati personalizzati
+## Configurare Assegna attività per utilizzare la proprietà dei metadati personalizzata
 
-Dopo aver generato e distribuito il componente OSGi AEM server, configura il componente Assegna attività come mostrato di seguito per utilizzare le proprietà dei metadati personalizzate.
+Dopo aver generato e distribuito il componente OSGi nel server AEM, configura il componente Assegna attività come mostrato di seguito per utilizzare le proprietà dei metadati personalizzate.
 
 
 ![Notifica attività](assets/task-notification.PNG)
 
-## Abilita l’utilizzo di proprietà di metadati personalizzate
+## Abilita l’utilizzo delle proprietà dei metadati personalizzate
 
-![Proprietà dei metadati personalizzati](assets/custom-meta-data-properties.PNG)
+![Proprietà metadati personalizzate](assets/custom-meta-data-properties.PNG)
 
-## Per provare sul server
+## Per provare questa operazione sul server
 
-* [Configura il servizio di posta CQ Day](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
-* Associa un ID e-mail valido con [utente amministratore](http://localhost:4502/security/users.html)
-* Scarica e installa la [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) utilizzo [gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
-* Scarica [Modulo adattivo](assets/request-travel-authorization.zip) e importano in AEM dal [Interfaccia utente moduli e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-* Distribuisci e avvia il [Bundle personalizzato](assets/work-items-user-service-bundle.jar) utilizzando [console web](http://localhost:4502/system/console/bundles)
+* [Configura servizio di posta Day CQ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
+* Associa un ID e-mail valido a [utente amministratore](http://localhost:4502/security/users.html)
+* Scarica e installa [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) utilizzo [gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+* Scarica [Modulo adattivo](assets/request-travel-authorization.zip) e l&#39;importazione nell&#39;AEM dalla [interfaccia utente per moduli e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Distribuire e avviare [Bundle personalizzato](assets/work-items-user-service-bundle.jar) utilizzando [console web](http://localhost:4502/system/console/bundles)
 * [Anteprima e invio del modulo](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
 
-Al momento dell’invio del modulo, la notifica di assegnazione dell’attività viene inviata all’ID e-mail associato all’utente amministratore. La schermata seguente mostra un esempio di notifica di assegnazione delle attività
+All’invio del modulo, la notifica di assegnazione dell’attività viene inviata all’ID e-mail associato all’utente amministratore. La schermata seguente mostra un esempio di notifica di assegnazione delle attività
 
 ![Notifica](assets/task-nitification-email.png)
 
 >[!NOTE]
 >Il modello e-mail per la notifica dell’attività di assegnazione deve essere nel seguente formato.
 >
-> subject=Task assegnato - `${workitem_title}`
+> subject=Attività assegnata - `${workitem_title}`
 >
-> message=String che rappresenta il modello e-mail senza nuovi caratteri di riga.
+> message=Stringa che rappresenta il modello e-mail senza caratteri di nuova riga.
 
-## Commenti attività nella notifica e-mail di assegnazione attività
+## Commenti attività nella notifica e-mail Assegna attività
 
 In alcuni casi, è possibile includere i commenti del proprietario dell&#39;attività precedente nelle notifiche successive. Il codice per acquisire l&#39;ultimo commento dell&#39;attività è elencato di seguito:
 
@@ -202,4 +202,4 @@ public class CaptureTaskComments implements WorkitemUserMetadataService {
 }
 ```
 
-Il bundle con il codice di cui sopra può essere [scaricato da qui](assets/samples.aemforms.taskcomments.taskcomments.core-1.0-SNAPSHOT.jar)
+Il bundle con il codice precedente può essere [scaricato da qui](assets/samples.aemforms.taskcomments.taskcomments.core-1.0-SNAPSHOT.jar)

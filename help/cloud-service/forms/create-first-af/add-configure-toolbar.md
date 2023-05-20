@@ -1,6 +1,6 @@
 ---
 title: Aggiungi e configura la barra degli strumenti
-description: Aggiunta la possibilità di spostarsi tra i pannelli del modulo.
+description: Aggiunta della possibilità di spostarsi tra i pannelli dei moduli.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Aggiungi e configura la barra degli strumenti
 
-La barra degli strumenti viene generalmente aggiunta a livello del contenitore del modulo. La barra degli strumenti può contenere pulsanti per passare al pannello successivo e precedente del modulo, inviare il modulo, salvare i dati del modulo, ecc.
+La barra degli strumenti viene in genere aggiunta a livello del contenitore del modulo. La barra degli strumenti può contenere pulsanti per passare ai pannelli successivi e precedenti del modulo, inviare il modulo, salvare i dati del modulo e così via.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332236?quality=12&learn=on)

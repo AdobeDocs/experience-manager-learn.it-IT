@@ -1,6 +1,6 @@
 ---
 title: Configurare il pannello iniziale
-description: Aggiungi un componente di testo statico al pannello iniziale.
+description: Aggiungi un componente testo statico al pannello iniziale.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Configurare il pannello iniziale
 
-Assegna uno stile al testo nel componente di testo statico utilizzando l’editor Rich Text.
+Personalizzare lo stile del testo nel componente testo statico utilizzando l’editor Rich Text.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332235?quality=12&learn=on)

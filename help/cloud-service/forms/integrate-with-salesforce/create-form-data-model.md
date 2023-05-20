@@ -1,6 +1,6 @@
 ---
-title: Crea un modello dati modulo basato sull’origine dati Salesforce
-description: Crea modello dati modulo con backup di un’origine dati RESTful
+title: Crea modello dati modulo basato sull’origine dati Salesforce
+description: Crea modello dati modulo supportato da origine dati RESTful
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer

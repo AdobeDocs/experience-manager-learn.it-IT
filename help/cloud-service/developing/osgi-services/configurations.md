@@ -1,6 +1,6 @@
 ---
-title: Proprietà di configurazione OSGi
-description: Scopri le basi delle proprietà di configurazione OSGi e come utilizzarle nei servizi OSGi.
+title: Proprietà configurazione OSGi
+description: Scopri le nozioni di base sulle proprietà di configurazione OSGi e come utilizzarle nei servizi OSGi.
 role: Developer
 level: Beginner
 topic: Development
@@ -15,16 +15,16 @@ ht-degree: 1%
 
 ---
 
-# Proprietà di configurazione OSGi
+# Proprietà configurazione OSGi
 
-Scopri l’approccio di basso livello di utilizzo delle coppie chiave/valore di configurazione OSGi per definire ed esporre i dati di configurazione OSGi ai servizi OSGi.
+Scopri l’approccio di basso livello consistente nell’utilizzare coppie chiave/valore di configurazione OSGi per definire ed esporre i dati di configurazione OSGi ai servizi OSGi.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335729?quality=12&learn=on)
 
 ## Riferimenti
 
 + [@Component JavaDocs](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/osgi/service/component/annotations/Component.html)
-+ [@Attiva JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Activate.html)
++ [@Activate JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Activate.html)
 
 ## Codice
 

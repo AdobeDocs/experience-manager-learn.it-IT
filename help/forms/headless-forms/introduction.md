@@ -1,6 +1,6 @@
 ---
-title: Utilizzo di moduli adattivi headless in SPA
-description: Implementa un modulo di contatto headless in SPA
+title: Utilizzo di un modulo adattivo headless nell’SPA
+description: Implementare un modulo di contatto headless in SPA
 feature: Adaptive Forms
 version: 6.5
 kt: 13285
@@ -17,18 +17,18 @@ ht-degree: 2%
 
 # Incorporazione di un modulo adattivo headless
 
-Questo articolo tratta le nozioni di base per incorporare un modulo adattivo headless nel tuo sito web spa. Questo articolo presuppone che tu disponga di un’app a pagina singola esistente e desidera incorporare un modulo adattivo creato in AEM Forms 6.5.16 utilizzando i componenti core.
-L’inclusione di un modulo in un’app a pagina singola consente agli utenti di inserire e inviare i dati in modo semplice senza necessità di aggiornare la pagina. Ciò migliora l&#39;interattività e l&#39;efficienza dell&#39;applicazione.
+Questo articolo illustra le nozioni di base sull’incorporamento di un modulo adattivo headless nel sito web delle applicazioni a pagina singola. Questo articolo presuppone che tu disponga di un’app a pagina singola esistente e desideri incorporare un modulo adattivo creato in AEM Forms 6.5.16 utilizzando i componenti core.
+L’inclusione di un modulo in un’app a pagina singola consente agli utenti di inserire e inviare dati senza alcuna necessità di aggiornamento della pagina. Ciò migliora l&#39;interattività e l&#39;efficienza dell&#39;applicazione.
 
-La schermata seguente mostra un modulo di contatto che viene incorporato in SPA
+La schermata seguente mostra un modulo per contattarci incorporato nell’SPA
 
-![a contatto](./assets/contact-us-form.png)
+![contact-us-form](./assets/contact-us-form.png)
 
 ## Prerequisiti
 
-* Reagire all&#39;esperienza
+* Esperienza React
 
-* Esecuzione dell’istanza di AEM Forms 6.5.16
+* Istanza in esecuzione di AEM Forms 6.5.16
 
 * [Abilitare i moduli headless nell’istanza di authoring e pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en)
 

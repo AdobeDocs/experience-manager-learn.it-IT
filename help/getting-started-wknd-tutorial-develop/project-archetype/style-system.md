@@ -1,7 +1,7 @@
 ---
 title: Sviluppo con il sistema di stili
 seo-title: Developing with the Style System
-description: Scopri come implementare singoli stili e riutilizzare i componenti core utilizzando il sistema di stili di Experience Manager. Questa esercitazione illustra lo sviluppo per il sistema di stili per estendere i componenti core con CSS specifici per il brand e configurazioni avanzate di criteri nell’Editor modelli.
+description: Scopri come implementare singoli stili e riutilizzare i Componenti core utilizzando il Sistema di stili di Experience Manager. Questa esercitazione tratta lo sviluppo per il sistema di stili per estendere i componenti core con CSS specifici per il brand e configurazioni di policy avanzate dell’Editor modelli.
 version: 6.5, Cloud Service
 type: Tutorial
 feature: Core Components, Style System
@@ -22,30 +22,30 @@ ht-degree: 2%
 
 # Sviluppo con il sistema di stili {#developing-with-the-style-system}
 
-Scopri come implementare singoli stili e riutilizzare i componenti core utilizzando il sistema di stili di Experience Manager. Questa esercitazione illustra lo sviluppo per il sistema di stili per estendere i componenti core con CSS specifici per il brand e configurazioni avanzate di criteri nell’Editor modelli.
+Scopri come implementare singoli stili e riutilizzare i Componenti core utilizzando il Sistema di stili di Experience Manager. Questa esercitazione tratta lo sviluppo per il sistema di stili per estendere i componenti core con CSS specifici per il brand e configurazioni di policy avanzate dell’Editor modelli.
 
 ## Prerequisiti {#prerequisites}
 
-Rivedere gli strumenti e le istruzioni necessari per la configurazione di un [ambiente di sviluppo locale](overview.md#local-dev-environment).
+Esaminare gli strumenti e le istruzioni necessari per l&#39;impostazione di un [ambiente di sviluppo locale](overview.md#local-dev-environment).
 
-Si consiglia inoltre di rivedere il [Librerie lato client e flusso di lavoro front-end](client-side-libraries.md) esercitazione per comprendere i fondamenti delle librerie lato client e i vari strumenti front-end incorporati nel progetto AEM.
+Si consiglia inoltre di rivedere [Librerie lato client e flusso di lavoro front-end](client-side-libraries.md) tutorial per comprendere le nozioni di base delle librerie lato client e i vari strumenti front-end integrati nel progetto AEM.
 
 ### Progetto iniziale
 
 >[!NOTE]
 >
-> Se il capitolo precedente è stato completato correttamente, puoi riutilizzare il progetto e saltare i passaggi per il check-out del progetto iniziale.
+> Se hai completato correttamente il capitolo precedente, puoi riutilizzare il progetto e saltare i passaggi per estrarre il progetto iniziale.
 
-Controlla il codice della riga di base su cui si basa l&#39;esercitazione:
+Consulta il codice della riga di base su cui si basa l’esercitazione:
 
-1. Consulta la sezione `tutorial/style-system-start` ramo [GitHub](https://github.com/adobe/aem-guides-wknd)
+1. Consulta la sezione `tutorial/style-system-start` ramo da [GitHub](https://github.com/adobe/aem-guides-wknd)
 
    ```shell
    $ cd aem-guides-wknd
    $ git checkout tutorial/style-system-start
    ```
 
-1. Distribuisci la base di codice in un&#39;istanza AEM locale utilizzando le tue competenze Maven:
+1. Implementa la base di codice in un’istanza AEM locale utilizzando le tue competenze Maven:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -53,53 +53,53 @@ Controlla il codice della riga di base su cui si basa l&#39;esercitazione:
 
    >[!NOTE]
    >
-   > Se utilizzi AEM 6.5 o 6.4, aggiungi la variabile `classic` su qualsiasi comando Maven.
+   > Se si utilizza AEM 6.5 o 6.4, aggiungere `classic` profilo a qualsiasi comando Maven.
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/style-system-solution) o controlla il codice localmente passando al ramo `tutorial/style-system-solution`.
+Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/style-system-solution) oppure estrarre il codice localmente passando al ramo `tutorial/style-system-solution`.
 
 ## Obiettivo
 
-1. Scopri come utilizzare il sistema di stili per applicare CSS specifici per il brand a AEM componenti core.
+1. Scopri come utilizzare il sistema di stili per applicare CSS specifici per il brand ai componenti core AEM.
 1. Scopri la notazione BEM e come utilizzarla per definire con attenzione gli stili.
-1. Applicare configurazioni di criteri avanzate con Modelli modificabili.
+1. Applicare configurazioni di criteri avanzate con modelli modificabili.
 
-## Cosa verrà creato {#what-build}
+## Cosa intendi creare {#what-build}
 
-Questo capitolo utilizza [Funzionalità del sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=it) per creare varianti di **Titolo** e **Testo** componenti utilizzati nella pagina Articolo.
+In questo capitolo viene utilizzato [Feature del sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=it) per creare varianti di **Titolo** e **Testo** componenti utilizzati nella pagina dell’articolo.
 
-![Stili disponibili per il titolo](assets/style-system/styles-added-title.png)
+![Stili disponibili per Titolo](assets/style-system/styles-added-title.png)
 
-*Stile sottolineatura disponibile per il componente Titolo*
+*Stile sottolineato disponibile per il componente Titolo*
 
 ## Informazioni di base {#background}
 
-La [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) consente agli sviluppatori e agli editor di modelli di creare più varianti visive di un componente. Gli autori possono quindi a loro volta decidere quale stile utilizzare per la composizione di una pagina. Il sistema di stili viene utilizzato nel resto dell’esercitazione per ottenere diversi stili univoci utilizzando i componenti core in un approccio a basso codice.
+Il [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) consente agli sviluppatori e agli editor di modelli di creare più varianti visive di un componente. Gli autori possono quindi decidere quale stile utilizzare durante la composizione di una pagina. Il sistema di stili viene utilizzato in tutto il resto dell’esercitazione per ottenere diversi stili univoci utilizzando i Componenti core in un approccio a basso codice.
 
-L’idea generale del sistema di stili è che gli autori possono scegliere vari stili per l’aspetto di un componente. Gli &quot;stili&quot; sono supportati da classi CSS aggiuntive inserite nel div esterno di un componente. Nelle librerie client le regole CSS vengono aggiunte in base a queste classi di stile in modo che il componente cambi aspetto.
+L’idea generale del sistema di stili è che gli autori possano scegliere vari stili per definire l’aspetto di un componente. Gli &quot;stili&quot; sono supportati da classi CSS aggiuntive che vengono inserite nell’elemento div esterno di un componente. Nelle librerie client vengono aggiunte regole CSS basate su queste classi di stile in modo che il componente cambi aspetto.
 
-È possibile trovare [documentazione dettagliata su Sistema di stili qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=it). C&#39;è anche un grande [video tecnico per comprendere il sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
+Puoi trovare [la documentazione dettagliata del sistema di stili qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=it). C&#39;è anche un grande [video tecnico per comprendere il sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
 
 ## Stile sottolineatura - Titolo {#underline-style}
 
-La [Componente titolo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html) è stato oggetto di un proxy nel progetto `/apps/wknd/components/title` come parte del **ui.apps** modulo . Gli stili predefiniti degli elementi Titolo (`H1`, `H2`, `H3`...) sono già stati implementati nel **ui.frontend** modulo .
+Il [Componente Titolo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html) è stato aggiunto al progetto in `/apps/wknd/components/title` nell&#39;ambito del **ui.apps** modulo. Stili predefiniti degli elementi Titolo (`H1`, `H2`, `H3`...) sono già state implementate nel **ui.frontend** modulo.
 
-La [progettazioni di articoli WKND](assets/pages-templates/wknd-article-design.xd) contiene uno stile univoco per il componente Titolo con una sottolineatura. Invece di creare due componenti o modificare la finestra di dialogo del componente, il sistema di stili può essere utilizzato per consentire agli autori di aggiungere uno stile sottolineato.
+Il [Progettazioni articoli WKND](assets/pages-templates/wknd-article-design.xd) contiene uno stile univoco per il componente Titolo con una sottolineatura. Invece di creare due componenti o modificare la finestra di dialogo del componente, è possibile utilizzare il sistema di stili per consentire agli autori di aggiungere uno stile sottolineato.
 
 ![Stile sottolineatura - Componente titolo](assets/style-system/title-underline-style.png)
 
-### Aggiungere un criterio per i titoli
+### Aggiungi un criterio titolo
 
-Aggiungiamo un criterio per i componenti Titolo per consentire agli autori dei contenuti di scegliere lo stile Sottolineato da applicare a componenti specifici. Questa operazione viene eseguita utilizzando l’Editor modelli in AEM.
+Aggiungiamo un criterio per i componenti Titolo per consentire agli autori di contenuto di scegliere lo stile Sottolineato da applicare a componenti specifici. Questa operazione viene eseguita utilizzando l’Editor di modelli in AEM.
 
-1. Passa a **Pagina dell’articolo** modello da: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)
+1. Accedi a **Pagina articolo** modello da: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)
 
-1. In **Struttura** nella modalità principale **Contenitore di layout**, seleziona **Criterio** accanto all’icona **Titolo** componente elencato in *Componenti consentiti*:
+1. In entrata **Struttura** modalità, nell&#39;area principale **Contenitore di layout**, seleziona la **Policy** accanto al simbolo **Titolo** componente elencato in *Componenti consentiti*:
 
-   ![Configurazione dei criteri dei titoli](assets/style-system/article-template-title-policy-icon.png)
+   ![Configurazione criterio titolo](assets/style-system/article-template-title-policy-icon.png)
 
 1. Crea un criterio per il componente Titolo con i seguenti valori:
 
@@ -107,31 +107,31 @@ Aggiungiamo un criterio per i componenti Titolo per consentire agli autori dei c
 
    *Proprietà* > *Scheda Stili* > *Aggiungi un nuovo stile*
 
-   **Sottolineato** : `cmp-title--underline`
+   **Sottolinea** : `cmp-title--underline`
 
    ![Configurazione dei criteri di stile per il titolo](assets/style-system/title-style-policy.png)
 
-   Fai clic su **Fine** per salvare le modifiche al criterio Titolo.
+   Clic **Fine** per salvare le modifiche apportate al criterio Titolo.
 
    >[!NOTE]
    >
-   > Il valore `cmp-title--underline` compila la classe CSS sul div esterno del markup HTML del componente.
+   > Il valore `cmp-title--underline` compila la classe CSS sull’elemento div esterno del markup HTML del componente.
 
-### Applica lo stile sottolineato
+### Applicare lo stile Sottolineato
 
 In qualità di autore, applichiamo lo stile sottolineato a determinati componenti titolo.
 
-1. Passa a **La Skatepark** nell’editor AEM Sites all’indirizzo: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
-1. In **Modifica** scegli un componente Titolo . Fai clic sul pulsante **pennello** e seleziona la **Sottolineato** stile:
+1. Accedi a **La Skatepark** articolo nell’editor di AEM Sites all’indirizzo: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
+1. In entrata **Modifica** scegli un componente Titolo. Fai clic su **pennello** e seleziona la **Sottolinea** stile:
 
-   ![Applica lo stile sottolineato](assets/style-system/apply-underline-style-title.png)
+   ![Applicare lo stile Sottolineato](assets/style-system/apply-underline-style-title.png)
 
    >[!NOTE]
    >
-   > A questo punto, non si verifica alcuna modifica visibile come `underline` lo stile non è stato implementato. Nell’esercizio successivo, questo stile viene implementato.
+   > A questo punto, non si verifica alcuna modifica visibile come `underline` non è stato implementato. Nell’esercizio successivo, questo stile viene implementato.
 
-1. Fai clic sul pulsante **Informazioni pagina** icona > **Visualizza come pubblicato** per controllare la pagina all’esterno dell’editor AEM.
-1. Utilizza gli strumenti per sviluppatori del browser per verificare che il markup intorno al componente Titolo abbia la classe CSS `cmp-title--underline` applicato al div esterno.
+1. Fai clic su **Informazioni pagina** icona > **Visualizza come pubblicato** per esaminare la pagina all’esterno dell’editor AEM.
+1. Utilizza gli strumenti di sviluppo del browser per verificare che il markup intorno al componente Titolo abbia la classe CSS `cmp-title--underline` applicato al div esterno.
 
    ![Div con classe sottolineata applicata](assets/style-system/div-underline-class-applied.png)
 
@@ -144,22 +144,22 @@ In qualità di autore, applichiamo lo stile sottolineato a determinati component
    </div>
    ```
 
-### Implementa lo stile di sottolineatura - ui.frontend
+### Implementare lo stile Sottolineato - ui.frontend
 
-Quindi, implementa lo stile Sottolineato utilizzando **ui.frontend** modulo del progetto AEM. Server di sviluppo del webpack fornito in bundle con **ui.frontend** modulo per visualizzare in anteprima gli stili *prima* viene utilizzata l&#39;implementazione in un&#39;istanza locale di AEM.
+Quindi, implementa lo stile Sottolineato utilizzando **ui.frontend** modulo del progetto AEM. Il server di sviluppo Webpack fornito in bundle con **ui.frontend** modulo per visualizzare in anteprima gli stili *prima di* viene utilizzata la distribuzione in un’istanza locale dell’AEM.
 
-1. Avvia la `watch` dal **ui.frontend** modulo:
+1. Avvia il `watch` processo dall&#39;interno del **ui.frontend** modulo:
 
    ```shell
    $ cd ~/code/aem-guides-wknd/ui.frontend/
    $ npm run watch
    ```
 
-   Viene avviato un processo per il monitoraggio delle modifiche `ui.frontend` e sincronizza le modifiche all&#39;istanza AEM.
+   Viene avviato un processo che monitora le modifiche apportate al `ui.frontend` e sincronizzano le modifiche all’istanza AEM.
 
 
-1. Restituisci l’IDE e apri il file `_title.scss` da: `ui.frontend/src/main/webpack/components/_title.scss`.
-1. Introdurre una nuova regola per il targeting delle `cmp-title--underline` Classe:
+1. Restituire l’IDE e aprire il file `_title.scss` da: `ui.frontend/src/main/webpack/components/_title.scss`.
+1. Introduzione di una nuova regola destinata al `cmp-title--underline` classe:
 
    ```scss
    /* Default Title Styles */
@@ -183,62 +183,62 @@ Quindi, implementa lo stile Sottolineato utilizzando **ui.frontend** modulo del 
 
    >[!NOTE]
    >
-   >È consigliabile estendere sempre gli stili al componente di destinazione. In questo modo gli stili aggiuntivi non influiscono sulle altre aree della pagina.
+   >È consigliabile definire sempre con precisione l’ambito degli stili del componente di destinazione. In questo modo gli stili aggiuntivi non influiranno su altre aree della pagina.
    >
-   >Tutti i componenti core aderiscono a **[Notazione BEM](https://github.com/adobe/aem-core-wcm-components/wiki/css-coding-conventions)**. È consigliabile eseguire il targeting della classe CSS esterna durante la creazione di uno stile predefinito per un componente. Un’altra best practice consiste nell’eseguire il targeting dei nomi di classe specificati dalla notazione BEM del componente core anziché dagli elementi HTML.
+   >Tutti i Componenti core aderiscono a **[Notazione BEM](https://github.com/adobe/aem-core-wcm-components/wiki/css-coding-conventions)**. È consigliabile eseguire il targeting della classe CSS esterna durante la creazione di uno stile predefinito per un componente. Un’altra best practice è quella di eseguire il targeting dei nomi di classe specificati dalla notazione BEM del componente core, anziché degli elementi HTML.
 
-1. Torna al browser e alla pagina AEM. Lo stile Sottolineato è stato aggiunto:
+1. Torna al browser e alla pagina AEM. Dovresti notare che è stato aggiunto lo stile Sottolineato:
 
-   ![Stile sottolineato visibile nel server di sviluppo del webpack](assets/style-system/underline-implemented-webpack.png)
+   ![Stile sottolineato visibile nel server di sviluppo Webpack](assets/style-system/underline-implemented-webpack.png)
 
-1. Nell’Editor AEM, ora dovresti essere in grado di attivare e disattivare la funzione **Sottolineato** e osserva come le modifiche si riflettono visivamente.
+1. Nell’editor AEM, ora dovresti essere in grado di attivare e disattivare la **Sottolinea** e osserva che le modifiche si riflettono visivamente.
 
 ## Stile blocco preventivo - Testo {#text-component}
 
-Quindi, ripeti passaggi simili per applicare uno stile univoco a [Componente testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html). Il componente Testo è stato proxy nel progetto in `/apps/wknd/components/text` come parte del **ui.apps** modulo . Gli stili predefiniti degli elementi paragrafo sono già stati implementati nel **ui.frontend**.
+Quindi, ripeti passaggi simili per applicare uno stile univoco al [Componente Testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html). Il componente Testo è stato aggiunto come proxy al progetto in `/apps/wknd/components/text` nell&#39;ambito del **ui.apps** modulo. Gli stili predefiniti degli elementi paragrafo sono già stati implementati in **ui.frontend**.
 
-La [progettazioni di articoli WKND](assets/pages-templates/wknd-article-design.xd) contengono uno stile univoco per il componente Testo con un blocco di virgolette:
+Il [Progettazioni articoli WKND](assets/pages-templates/wknd-article-design.xd) contiene uno stile univoco per il componente Testo con virgolette:
 
 ![Stile blocco preventivo - Componente testo](assets/style-system/quote-block-style.png)
 
-### Aggiungere un criterio di testo
+### Aggiungi un criterio di testo
 
-Quindi aggiungi un criterio per i componenti Testo .
+Quindi aggiungi un criterio per i componenti Testo.
 
-1. Passa a **Modello pagina articolo** da: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html).
+1. Accedi a **Modello pagina articolo** da: [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html).
 
-1. In **Struttura** nella modalità principale **Contenitore di layout**, seleziona **Criterio** accanto all’icona **Testo** componente elencato in *Componenti consentiti*:
+1. In entrata **Struttura** modalità, nell&#39;area principale **Contenitore di layout**, seleziona la **Policy** accanto al simbolo **Testo** componente elencato in *Componenti consentiti*:
 
-   ![Configurazione dei criteri di testo](assets/style-system/article-template-text-policy-icon.png)
+   ![Configurazione criteri di testo](assets/style-system/article-template-text-policy-icon.png)
 
 1. Aggiorna il criterio del componente Testo con i seguenti valori:
 
    *Titolo criterio&#42;*: **Testo contenuto**
 
-   *Plug-in* > *Stili paragrafo* > *Abilitare gli stili di paragrafo*
+   *Plug-in* > *Stili paragrafo* > *Abilita stili di paragrafo*
 
    *Scheda Stili* > *Aggiungi un nuovo stile*
 
-   **Blocco preventivo** : `cmp-text--quote`
+   **Blocco offerta** : `cmp-text--quote`
 
    ![Criterio componente testo](assets/style-system/text-policy-enable-paragraphstyles.png)
 
    ![Criterio componente testo 2](assets/style-system/text-policy-enable-quotestyle.png)
 
-   Fai clic su **Fine** per salvare le modifiche al criterio Testo.
+   Clic **Fine** per salvare le modifiche apportate al criterio Testo.
 
-### Applica lo stile del blocco del preventivo
+### Applicare lo stile di blocco del preventivo
 
-1. Passa a **La Skatepark** nell’editor AEM Sites all’indirizzo: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
-1. In **Modifica** scegli un componente Testo . Modifica il componente per includere un elemento del preventivo:
+1. Accedi a **La Skatepark** articolo nell’editor di AEM Sites all’indirizzo: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
+1. In entrata **Modifica** scegliere un componente Testo. Modifica il componente per includere un elemento preventivo:
 
-   ![Configurazione del componente testo](assets/style-system/configure-text-component.png)
+   ![Configurazione del componente Testo](assets/style-system/configure-text-component.png)
 
-1. Seleziona il componente testo e fai clic sul pulsante **pennello** e seleziona la **Blocco preventivo** stile:
+1. Seleziona il componente testo e fai clic su **pennello** e seleziona la **Blocco offerta** stile:
 
-   ![Applica lo stile del blocco del preventivo](assets/style-system/quote-block-style-applied.png)
+   ![Applicare lo stile di blocco del preventivo](assets/style-system/quote-block-style-applied.png)
 
-1. Utilizza gli strumenti di sviluppo del browser per controllare il markup. Dovresti visualizzare il nome della classe `cmp-text--quote` è stato aggiunto al div esterno del componente:
+1. Utilizza gli strumenti per sviluppatori del browser per controllare il markup. Dovresti visualizzare il nome della classe `cmp-text--quote` è stato aggiunto all’elemento div esterno del componente:
 
    ```html
    <!-- Quote Block style class added -->
@@ -250,11 +250,11 @@ Quindi aggiungi un criterio per i componenti Testo .
    </div>
    ```
 
-### Implementa lo stile del blocco del preventivo - ui.frontend
+### Implementare lo stile di blocco del preventivo - ui.frontend
 
-Quindi, implementiamo lo stile Blocco preventivo utilizzando **ui.frontend** modulo del progetto AEM.
+Ora implementiamo lo stile Blocco preventivo utilizzando **ui.frontend** modulo del progetto AEM.
 
-1. Se non è già in esecuzione, avvia il `watch` dal **ui.frontend** modulo:
+1. Se non è già in esecuzione, avviare `watch` processo dall&#39;interno del **ui.frontend** modulo:
 
    ```shell
    $ npm run watch
@@ -300,29 +300,29 @@ Quindi, implementiamo lo stile Blocco preventivo utilizzando **ui.frontend** mod
 
    >[!CAUTION]
    >
-   > In questo caso gli elementi HTML non elaborati sono interessati dagli stili. Questo perché il componente Testo fornisce un editor Rich Text per gli autori di contenuti. La creazione di stili direttamente rispetto ai contenuti RTE deve essere effettuata con attenzione ed è ancora più importante estendere gli stili.
+   > In questo caso, gli elementi HTML non elaborati sono interessati dagli stili. Questo perché il componente Testo fornisce un editor Rich Text per gli autori di contenuto. La creazione di stili direttamente rispetto al contenuto dell’editor Rich Text deve essere eseguita con attenzione ed è ancora più importante definire in modo preciso gli stili.
 
-1. Torna nuovamente al browser e dovresti notare che è stato aggiunto lo stile del blocco Preventivo:
+1. Torna nuovamente al browser e osserva che è stato aggiunto lo stile di blocco Preventivo:
 
-   ![Stile blocco preventivo visibile](assets/style-system/quoteblock-implemented.png)
+   ![Stile del blocco del preventivo visibile](assets/style-system/quoteblock-implemented.png)
 
-1. Arrestare il server di sviluppo del webpack.
+1. Arresta il server di sviluppo Webpack.
 
-## Larghezza fissa - Contenitore (Bonus) {#layout-container}
+## Larghezza fissa - Contenitore (bonus) {#layout-container}
 
-I componenti contenitore sono stati utilizzati per creare la struttura di base del modello di pagina dell’articolo e forniscono agli autori dei contenuti le aree di rilascio per aggiungere contenuti a una pagina. I contenitori possono inoltre utilizzare il sistema di stili, fornendo agli autori dei contenuti ulteriori opzioni per la progettazione dei layout.
+I componenti Contenitore sono stati utilizzati per creare la struttura di base del modello per pagina articolo e fornire le zone di rilascio per consentire agli autori di contenuto di aggiungere contenuto a una pagina. I contenitori possono inoltre utilizzare il sistema di stili, fornendo agli autori di contenuto ulteriori opzioni per la progettazione dei layout.
 
-La **Contenitore principale** del modello Pagina articolo contiene i due contenitori modificabili dall’autore e ha una larghezza fissa.
+Il **Contenitore principale** del modello Pagina articolo contiene i due contenitori utilizzabili dall’autore e ha una larghezza fissa.
 
 ![Contenitore principale](assets/style-system/main-container-article-page-template.png)
 
-*Contenitore principale nel modello di pagina dell’articolo*.
+*Contenitore principale nel modello della pagina dell’articolo*.
 
-La politica **Contenitore principale** imposta l’elemento predefinito come `main`:
+La politica del **Contenitore principale** imposta l&#39;elemento predefinito come `main`:
 
-![Criteri dei contenitori principali](assets/style-system/main-container-policy.png)
+![Criterio contenitore principale](assets/style-system/main-container-policy.png)
 
-Il CSS che rende il **Contenitore principale** è impostato in **ui.frontend** modulo a `ui.frontend/src/main/webpack/site/styles/container_main.scss` :
+CSS che crea **Contenitore principale** fisso è impostato in **ui.frontend** modulo in `ui.frontend/src/main/webpack/site/styles/container_main.scss` :
 
 ```SCSS
 main.container {
@@ -334,19 +334,19 @@ main.container {
 }
 ```
 
-Invece di eseguire il targeting `main` Elemento di HTML, il sistema di stili può essere utilizzato per creare un **Larghezza fissa** come parte del criterio Contenitore. Il sistema di stili potrebbe consentire agli utenti di passare da un sistema all’altro **Larghezza fissa** e **Larghezza fluida** contenitori.
+Invece di eseguire il targeting di `main` HTML, il sistema di stili può essere utilizzato per creare un **Larghezza fissa** come parte del criterio Contenitore. Il sistema di stili potrebbe offrire agli utenti la possibilità di passare da un’icona all’altra **Larghezza fissa** e **Larghezza fluido** contenitori.
 
-1. **Sfida bonus** - utilizzare le lezioni tratte dagli esercizi precedenti e utilizzare il sistema di stili per implementare un **Larghezza fissa** e **Larghezza fluida** Stili per il componente Contenitore .
+1. **Sfida bonus** - utilizzare gli insegnamenti tratti dagli esercizi precedenti e utilizzare il sistema di stili per implementare un **Larghezza fissa** e **Larghezza fluido** stili per il componente Contenitore.
 
 ## Congratulazioni.  {#congratulations}
 
-Congratulazioni, la pagina dell’articolo è quasi stilizzata e hai acquisito un’esperienza pratica utilizzando il sistema di stili AEM.
+Congratulazioni, la pagina dell’articolo è quasi stilizzata e hai acquisito un’esperienza pratica utilizzando il sistema di stili dell’AEM.
 
 ### Passaggi successivi {#next-steps}
 
-Scopri i passaggi end-to-end per creare un [Componente AEM personalizzato](custom-component.md) visualizza il contenuto creato in una finestra di dialogo ed esplora lo sviluppo di un modello Sling per incapsulare la logica di business che popola l’HTL del componente.
+Scopri come creare una soluzione completa [Componente AEM personalizzato](custom-component.md) che visualizza il contenuto creato in una finestra di dialogo ed esplora lo sviluppo di un modello Sling per incapsulare la logica di business che popola l’HTL del componente.
 
-Visualizza il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd) o rivedi e distribuisci il codice localmente nel ramo Git `tutorial/style-system-solution`.
+Visualizza il codice finito il [GitHub](https://github.com/adobe/aem-guides-wknd) oppure controlla e distribuisci il codice localmente in sul ramo Git `tutorial/style-system-solution`.
 
 1. Clona il [github.com/adobe/aem-wknd-guides](https://github.com/adobe/aem-guides-wknd) archivio.
-1. Consulta la sezione `tutorial/style-system-solution` ramo.
+1. Consulta la sezione `tutorial/style-system-solution` filiale.

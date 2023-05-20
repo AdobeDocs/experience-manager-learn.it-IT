@@ -1,6 +1,6 @@
 ---
-title: AEM Forms con Marketo (parte 4)
-description: Esercitazione per integrare AEM Forms con Marketo utilizzando AEM Forms Form Data Model.
+title: AEM Forms con Marketo (Parte 4)
+description: Tutorial per integrare AEM Forms con Marketo utilizzando AEM Forms Form Data Model.
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
 topic: Development
@@ -14,19 +14,19 @@ ht-degree: 1%
 
 ---
 
-# Creazione di moduli adattivi tramite il modello dati del modulo
+# Creazione di un modulo adattivo tramite il modello dati del modulo
 
-Il passaggio successivo consiste nel creare un Modulo adattivo e basarlo sul modello dati del modulo creato nel passaggio precedente.
-L’utente immette l’ID lead e si richiama il servizio Marketo all’arresto del tag per ottenere i lead per ID. I risultati dell&#39;operazione del servizio vengono quindi mappati sui campi appropriati di Adaptive Forms.
+Il passaggio successivo consiste nel creare un modulo adattivo e basarlo sul modello dati modulo creato nel passaggio precedente.
+L’utente immette l’ID lead e all’uscita dal servizio Marketo viene richiamato per ottenere i lead per ID. I risultati dell’operazione di servizio vengono quindi mappati sui campi appropriati del Forms adattivo.
 
-1. Creare un modulo adattivo e basarlo su &quot;Modello di modulo vuoto&quot;, associarlo al modello di dati del modulo creato nel passaggio precedente.
+1. Crea un modulo adattivo e basalo su &quot;Modello di modulo vuoto&quot;, associalo al modello di dati del modulo creato nel passaggio precedente.
 1. Apri il modulo in modalità di modifica
-1. Trascina un componente TextField e un componente Panel sul modulo adattivo. Imposta il titolo del componente TextField &quot;Enter Lead Id&quot; (Inserisci ID lead) e imposta il suo nome su &quot;LeadId&quot;
+1. Trascina e rilascia sul modulo adattivo un componente TextField e un componente Panel. Imposta il titolo del componente TextField &quot;Enter Lead Id&quot; e il relativo nome su &quot;LeadId&quot;
 1. Trascina 2 componenti TextField sul componente Pannello
-1. Impostare il Nome e il Titolo dei due componenti del campo di testo come Nome e Cognome
-1. Configura il componente Pannello come componente ripetibile impostando Minimo su 1 e Massimo su -1. Questo è necessario perché il servizio Marketo restituisce una matrice di oggetti lead e per visualizzare i risultati è necessario disporre di un componente ripetibile. Tuttavia, in questo caso, stiamo ottenendo indietro un solo oggetto Lead perché stiamo cercando gli oggetti Lead in base al suo ID.
-1. Crea una regola sul campo LeadId come mostrato nell’immagine seguente
-1. Visualizzare l’anteprima del modulo e immettere un ID lead valido nel campo LeadID e uscire dalla scheda. I campi Nome e Cognome devono essere compilati con i risultati della chiamata del servizio.
+1. Impostare Nome e Titolo dei due componenti Textfield come Nome e Cognome
+1. Configura il componente Pannello come componente ripetibile impostando Minimo su 1 e Massimo su -1. Questa operazione è necessaria in quanto il servizio Marketo restituisce un array di oggetti lead ed è necessario disporre di un componente ripetibile per visualizzare i risultati. Tuttavia, in questo caso viene restituito un solo oggetto Lead perché la ricerca viene eseguita sugli oggetti Lead in base al relativo ID.
+1. Crea una regola nel campo LeadId come illustrato nell’immagine seguente
+1. Visualizza l&#39;anteprima del modulo e immetti un ID lead valido nel campo ID lead e tabulazione. I campi Nome e Cognome devono essere compilati con i risultati della chiamata al servizio.
 
 La schermata seguente spiega le impostazioni dell’editor di regole
 
@@ -34,7 +34,7 @@ La schermata seguente spiega le impostazioni dell’editor di regole
 
 ## Debugging
 
-Se utilizzi i bundle forniti con questo articolo, puoi abilitare [registri di debug](http://localhost:4502/system/console/slinglog) per le classi seguenti:
+Se utilizzi i bundle forniti con questo articolo, potrebbe essere utile abilitare [registri di debug](http://localhost:4502/system/console/slinglog) per le seguenti classi:
 
 + `com.marketoandforms.core.impl.MarketoServiceImpl`
 + `com.marketoandforms.core.MarketoConfigurationService`

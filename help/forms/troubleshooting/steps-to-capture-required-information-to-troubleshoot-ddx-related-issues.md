@@ -1,6 +1,6 @@
 ---
-title: Passaggi per acquisire le informazioni necessarie per la risoluzione dei problemi relativi a DDX
-description: Acquisire i dettagli necessari per risolvere i problemi relativi a Assembler
+title: Passaggi per acquisire le informazioni necessarie per risolvere i problemi correlati a DDX
+description: Acquisire i dettagli necessari per risolvere i problemi relativi all'Assembler
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Passaggi per la risoluzione dei problemi relativi a DDX
+# Procedura per la risoluzione dei problemi correlati a DDX
 
-*Questo video illustra i passaggi necessari per acquisire le informazioni necessarie per la risoluzione dei problemi relativi a DDX nel servizio Forms Assembler.*
+*Questo video illustra i passaggi necessari per acquisire le informazioni necessarie per risolvere i problemi correlati a DDX nel servizio Assembler di Forms.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335517?quality=12&learn=on)

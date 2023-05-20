@@ -1,6 +1,6 @@
 ---
-title: Come catturare immagini di thread di una JVM su un server unix
-description: Passaggi per acquisire immagini thread di un processo Java su un server unix
+title: Acquisire le immagini thread di una JVM su un server unix
+description: Passaggi per acquisire le immagini thread di un processo Java su un server unix
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Come catturare immagini di thread di una JVM su un server unix
+# Acquisire le immagini thread di una JVM su un server unix
 
-*Questo video illustra i passaggi necessari per acquisire le immagini heap di una JVM su un server unix.*
+*Questo video illustra i passaggi per acquisire le immagini heap di una JVM su un server unix.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335492?quality=12&learn=on)

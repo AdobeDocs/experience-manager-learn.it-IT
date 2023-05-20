@@ -1,6 +1,6 @@
 ---
-title: Unisci i dati con il modello XDP
-description: Effettua una richiesta POST al punto finale con i parametri necessari
+title: Unire i dati con il modello XDP
+description: Effettuare una richiesta POST al punto finale con i parametri necessari
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -9,7 +9,8 @@ feature: Output Service
 topic: Development
 kt: 8185
 thumbnail: 332439.jpg
-source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
+exl-id: d144b3f6-7c7a-46a7-bc5f-1767895749d0
+source-git-commit: 47d36e472719049de1346c5f0bba010c9af4e039
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 0%
@@ -19,9 +20,9 @@ ht-degree: 0%
 # Effettua la chiamata POST
 
 
-Il passaggio successivo consiste nell’effettuare una chiamata HTTP POST all’endpoint con i parametri necessari. Il modello e i file di dati vengono forniti come file di risorse. Le proprietà del pdf generato vengono specificate tramite il parametro dell&#39;opzione nella richiesta.La proprietà embedFonts viene utilizzata per incorporare font personalizzati nel pdf generato.[Segui questa documentazione per distribuire i font personalizzati nella tua istanza cloud di Forms.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html?lang=en) Le proprietà sono specificate nel file di risorsa options.json . Dal momento che il punto finale ha l’autenticazione basata su token, passiamo il token di accesso nell’intestazione della richiesta.
+Il passaggio successivo consiste nell’effettuare una chiamata HTTP POST all’endpoint con i parametri necessari. Il modello e i file di dati vengono forniti come file di risorse. Le proprietà del PDF generato sono specificate tramite il parametro dell’opzione nella richiesta. La proprietà embedFonts viene utilizzata per incorporare font personalizzati nel PDF generato.[Segui questa documentazione per distribuire i font personalizzati nell’istanza cloud di Forms.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html?lang=en) Le proprietà sono specificate nel file di risorse options.json. Poiché, l’endpoint dispone dell’autenticazione basata su token, il token di accesso viene trasmesso nell’intestazione della richiesta.
 
-Il codice seguente è stato utilizzato per generare pdf unendo i dati con il modello
+Il seguente codice è stato utilizzato per generare pdf unendo i dati con il modello
 
 ```java
 public class DocumentGeneration

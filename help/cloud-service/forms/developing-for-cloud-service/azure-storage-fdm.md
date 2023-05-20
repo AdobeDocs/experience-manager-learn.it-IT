@@ -1,6 +1,6 @@
 ---
-title: Invio della configurazione dei servizi cloud e del modello dati del modulo all’istanza cloud
-description: Crea e invia un modulo adattivo basato sul modello dati del modulo di archiviazione di Azure all’istanza cloud.
+title: Invio della configurazione dei servizi cloud e del modello per dati modulo all’istanza cloud
+description: Crea e invia un modulo adattivo basato sul modello dati del modulo di archiviazione Azure all’istanza cloud.
 solution: Experience Manager
 type: Documentation
 role: Developer
@@ -16,14 +16,14 @@ ht-degree: 0%
 
 ---
 
-# Includere la configurazione dei servizi cloud nel progetto
+# Includi la configurazione dei servizi cloud nel progetto
 
-Crea un contenitore di configurazione denominato &#39;FormTutorial&#39; per contenere la configurazione dei servizi cloud Crea una configurazione di servizi cloud per l&#39;archiviazione Azure denominata &#39;FormsCSAndAzureBlob&#39; nel contenitore &#39;FormTutorial&#39; fornendo i dettagli dell&#39;account di archiviazione Azure e la chiave di accesso di Azure.
+Creare un contenitore di configurazione denominato &quot;FormTutorial&quot; per la configurazione dei servizi cloud Creare una configurazione dei servizi cloud per l’archiviazione di Azure denominata &quot;FormsCSAndAzureBlob&quot; nel contenitore &quot;FormTutorial&quot; fornendo i dettagli dell’account di archiviazione di Azure e la chiave di accesso di Azure.
 
-Apri il tuo progetto AEM in IntelliJ. Assicurati di aggiungere la cartella FormTutorial come mostrato di seguito nel progetto ui.content
+Apri il progetto AEM in IntelliJ. Assicurati di aggiungere la cartella FormTutorial come mostrato di seguito nel progetto ui.content
 ![cloud-services-configuration](assets/cloud-services-configuration.png)
 
-Assicurati di aggiungere la seguente voce nel filtro.xml del progetto ui.content
+Assicurati di aggiungere la seguente voce nel file filter.xml del progetto ui.content
 
 ```xml
 <filter root="/conf/FormTutorial" mode="replace"/>
@@ -31,12 +31,12 @@ Assicurati di aggiungere la seguente voce nel filtro.xml del progetto ui.content
 
 ![filter-xml](assets/ui-content-filter.png)
 
-## Includere il modello dati modulo nel progetto
+## Includi modello dati modulo nel progetto
 
-Crea un modello dati modulo basato sulla configurazione dei servizi cloud creata nel passaggio precedente. Per includere nel progetto il modello dati modulo, creare la struttura di cartelle appropriata nel progetto AEM in intelliJ. Ad esempio, il modello dati del modulo si trova in una cartella denominata registrazioni
-![contenuto fdm](assets/ui-content-fdm.png)
+Crea un modello di dati modulo basato sulla configurazione dei servizi cloud creata nel passaggio precedente. Per includere il modello dati modulo nel progetto, creare la struttura di cartelle appropriata nel progetto AEM in intelliJ. Ad esempio, il modello dati del modulo si trova in una cartella denominata registrazioni
+![fdm-content](assets/ui-content-fdm.png)
 
-Includi la voce appropriata nel filtro.xml del progetto ui.content
+Includi la voce appropriata nel file filter.xml del progetto ui.content
 
 ```xml
 <filter root="/content/dam/formsanddocuments-fdm/registrations" mode="replace"/>
@@ -45,4 +45,4 @@ Includi la voce appropriata nel filtro.xml del progetto ui.content
 
 >[!NOTE]
 >
->Ora, quando crei e distribuisci il progetto utilizzando cloud manager, dovrai immettere nuovamente la chiave di accesso di Azure nella configurazione dei servizi cloud. Per evitare di reimmettere la chiave di accesso, è consigliabile creare una configurazione in base al contesto utilizzando le variabili di ambiente come spiegato in [articolo successivo](./context-aware-fdm.md)
+>Ora, quando crei e distribuisci il progetto utilizzando Cloud Manager, dovrai immettere nuovamente la chiave di accesso di Azure nella configurazione dei servizi cloud. Per evitare di immettere nuovamente la chiave di accesso, si consiglia di creare una configurazione in base al contesto utilizzando le variabili di ambiente come spiegato in [articolo successivo](./context-aware-fdm.md)

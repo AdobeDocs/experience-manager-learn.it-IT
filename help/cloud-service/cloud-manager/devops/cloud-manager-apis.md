@@ -1,6 +1,6 @@
 ---
 title: Interazione con Cloud Manager tramite API
-description: Scopri in che modo le API di Cloud Manager possono essere utilizzate per estendere e integrare con altri sistemi.
+description: Scopri come le API di Cloud Manager possono essere utilizzate per estendere e integrare altri sistemi.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # API di Cloud Manager
 
-Scopri in che modo le API di Cloud Manager possono essere utilizzate per estendere e integrare con altri sistemi.
+Scopri come le API di Cloud Manager possono essere utilizzate per estendere e integrare altri sistemi.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330541?quality=12&learn=on)

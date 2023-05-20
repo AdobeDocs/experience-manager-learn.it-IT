@@ -1,6 +1,6 @@
 ---
-title: Recupero di ForcedDisconnectException. Possibili cause e misure per attenuare il problema.
-description: Passaggi per risolvere l'eccezione "ForcedDisconnectException - Questo membro è stato escluso dal sistema distribuito".
+title: Recupero di ForcedDisconnectException. Possibili cause e passaggi per mitigare il problema.
+description: Procedura per risolvere l'eccezione "ForcedDisconnectException - Questo membro è stato escluso dal sistema distribuito".
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Passaggi per mitigare ForcedDisconnectException
 
-*Questo video illustra le possibili cause e passaggi per mitigare ForcedDisconnectException*
+*Questo video illustra le possibili cause e i passaggi per mitigare ForcedDisconnectException*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335483?quality=12&learn=on)

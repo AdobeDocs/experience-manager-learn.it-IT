@@ -1,6 +1,6 @@
 ---
-title: Supporto per l’override della configurazione in base al contesto per Form Data Model
-description: Configurare i modelli di dati per i moduli per comunicare con endpoint diversi in base agli ambienti.
+title: Supporto dell’override della configurazione in base al contesto per il modello dati del modulo
+description: Imposta modelli dati modulo per comunicare con endpoint diversi in base agli ambienti.
 solution: Experience Manager
 type: Documentation
 role: Developer
@@ -12,31 +12,31 @@ exl-id: 2ce0c07b-1316-4170-a84d-23430437a9cc
 source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '386'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 # Configurazioni cloud basate sul contesto
 
-Quando crei la configurazione cloud nell’ambiente locale e in seguito a un test di successo, desideri utilizzare la stessa configurazione cloud negli ambienti a monte ma senza dover modificare l’endpoint, la chiave segreta/password e il nome utente. Per ottenere questo caso d’uso, AEM Forms su Cloud Service ha introdotto la possibilità di definire configurazioni cloud basate sul contesto.
-Ad esempio, la configurazione cloud dell’account di archiviazione Azure può essere riutilizzata in ambienti di sviluppo, stage e produzione utilizzando stringhe e chiavi di connessione diverse per.
+Quando crei la configurazione cloud nell’ambiente locale e dopo aver superato i test, vorrai utilizzare la stessa configurazione cloud negli ambienti a monte, ma senza dover modificare l’endpoint, la chiave/password segreta e/o il nome utente. Per ottenere questo caso d’uso, AEM Forms su Cloud Service ha introdotto la possibilità di definire configurazioni cloud basate sul contesto.
+Ad esempio, la configurazione cloud dell’account di archiviazione Azure può essere riutilizzata negli ambienti di sviluppo, staging e produzione utilizzando stringhe di connessione e chiavi diverse per.
 
-Per creare la configurazione cloud consapevole del contesto, sono necessari i seguenti passaggi
+Per creare la configurazione cloud in base al contesto, sono necessari i seguenti passaggi
 
 ## Creare variabili di ambiente
 
-Le variabili di ambiente standard possono essere configurate e gestite tramite Cloud Manager. Vengono forniti all’ambiente in fase di esecuzione e possono essere utilizzati nelle configurazioni OSGi. [Le variabili dell’ambiente possono essere valori specifici dell’ambiente o segreti dell’ambiente in base alle modifiche apportate.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en)
+È possibile configurare e gestire le variabili di ambiente standard tramite Cloud Manager. Vengono fornite all’ambiente di runtime e possono essere utilizzate nelle configurazioni OSGi. [Le variabili di ambiente possono essere valori specifici dell’ambiente o segreti dell’ambiente, in base alle modifiche apportate.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en)
 
 
 
-La seguente schermata mostra le variabili di ambiente azure_key e azure_connection_string definite
+La schermata seguente mostra le variabili di ambiente azure_key e azure_connection_string definite
 ![environment_variables](assets/environment-variables.png)
 
-Queste variabili di ambiente possono quindi essere specificate nei file di configurazione da utilizzare nell&#39;ambiente appropriato. Ad esempio, se desideri che tutte le istanze dell&#39;autore utilizzino queste variabili di ambiente, definirai il file di configurazione nella cartella config.author come specificato di seguito
+Queste variabili di ambiente possono quindi essere specificate nei file di configurazione da utilizzare nell’ambiente appropriato. Ad esempio, se desideri che tutte le istanze di authoring utilizzino queste variabili di ambiente, definisci il file di configurazione nella cartella config.author come specificato di seguito
 
 ## Crea file di configurazione
 
-Apri il tuo progetto in IntelliJ. Passa a config.author e crea un file denominato
+Aprire il progetto in IntelliJ. Passa a config.author e crea un file denominato
 
 ```java
 org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integrationTest.cfg.json
@@ -44,7 +44,7 @@ org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integr
 
 ![config.author](assets/config-author.png)
 
-Copia il testo seguente nel file creato nel passaggio precedente. Il codice in questo file sovrascrive il valore delle proprietà accountName e accountKey con le variabili di ambiente **azure_connection_string** e **azure_key**.
+Copiare il testo seguente nel file creato nel passaggio precedente. Il codice in questo file esegue l&#39;override del valore delle proprietà accountName e accountKey con le variabili di ambiente **azure_connection_string** e **azure_key**.
 
 ```json
 {
@@ -60,9 +60,9 @@ Copia il testo seguente nel file creato nel passaggio precedente. Il codice in q
 
 >[!NOTE]
 >
->Questa configurazione verrà applicata a tutti gli ambienti di authoring nell’istanza di cloud service. Per applicare la configurazione agli ambienti di pubblicazione è necessario inserire lo stesso file di configurazione nella cartella config.publish del progetto intelliJ
+>Questa configurazione verrà applicata a tutti gli ambienti di authoring nell’istanza del servizio cloud. Per applicare la configurazione agli ambienti di pubblicazione, è necessario inserire lo stesso file di configurazione nella cartella config.publish del progetto intelliJ
 >[!NOTE]
-> Assicurati che la proprietà che viene ignorata sia una proprietà valida della configurazione cloud. Passa alla configurazione cloud per trovare la proprietà che desideri sostituire, come illustrato di seguito.
+> Assicurati che la proprietà che viene sottoposta a override sia una proprietà valida della configurazione cloud. Passa alla configurazione cloud per trovare la proprietà che desideri escludere, come illustrato di seguito.
 
 ![cloud-config-property](assets/cloud-config-properties.png)
 

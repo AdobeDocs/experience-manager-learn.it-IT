@@ -1,6 +1,6 @@
 ---
-title: Cartelle di base
-description: La definizione delle cartelle di base in AEM Assets consente di creare un’architettura dei contenuti solida e basi per la gestione delle risorse digitali.
+title: Cartelle della linea di base
+description: La definizione delle cartelle di base in AEM Assets consente di stabilire un’architettura di contenuti solida e una base per la gestione delle risorse digitali.
 feature: Asset Management
 version: Cloud Service
 kt: 4870
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Cartelle di base
+# Cartelle della linea di base
 
-La definizione delle cartelle di base in AEM Assets consente di creare un’architettura dei contenuti solida e basi per la gestione delle risorse digitali.
+La definizione delle cartelle di base in AEM Assets consente di stabilire un’architettura di contenuti solida e una base per la gestione delle risorse digitali.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33496?quality=12&learn=on)

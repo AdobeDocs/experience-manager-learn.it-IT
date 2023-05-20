@@ -1,7 +1,7 @@
 ---
-title: Invio del modulo adattivo al server esterno
+title: Invio di un modulo adattivo a un server esterno
 seo-title: Submitting Adaptive Form to External Server
-description: Invio del modulo adattivo all’endpoint REST in esecuzione su server esterno
+description: Invio di un modulo adattivo all’endpoint REST in esecuzione su un server esterno
 seo-description: Submitting Adaptive Form to REST endpoint running on external server
 uuid: 1a46e206-6188-4096-816a-d59e9fb43263
 feature: Adaptive Forms
@@ -23,21 +23,21 @@ ht-degree: 0%
 
 ---
 
-# Invio del modulo adattivo al server esterno {#submitting-adaptive-form-to-external-server}
+# Invio di un modulo adattivo a un server esterno {#submitting-adaptive-form-to-external-server}
 
-Utilizzare l’azione Invia a endpoint REST per inviare i dati inviati a un URL REST. L’URL può essere di un server interno (il server su cui viene eseguito il rendering del modulo) o di un server esterno.
+Utilizza l’azione Invia a endpoint REST per inviare i dati inviati a un URL REST. L’URL può essere interno (il server sul quale viene eseguito il rendering del modulo) o esterno.
 
-In genere, i clienti desiderano inviare i dati del modulo a un server esterno per un’ulteriore elaborazione.
+In genere, i clienti desiderano inviare i dati del modulo a un server esterno per l’ulteriore elaborazione.
 
-Per inviare dati a un server interno, fornisci un percorso della risorsa. I dati vengono inviati nel percorso della risorsa. Ad esempio: &lt;/content restendpoint=&quot;&quot;> . Per tali richieste post, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
+Per pubblicare i dati su un server interno, specifica il percorso della risorsa. I dati vengono inseriti nel percorso della risorsa. Ad esempio: &lt;/content restendpoint=&quot;&quot;> . Per tali richieste successive, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
 
-Per inviare dati a un server esterno, specifica un URL. Il formato dell’URL è <http://host:port/path_to_rest_end_point>. Verifica di aver configurato il percorso per gestire la richiesta POST in modo anonimo.
+Per pubblicare dati su un server esterno, fornisci un URL. Il formato dell’URL è <http://host:port/path_to_rest_end_point>. Verifica di aver configurato il percorso per gestire la richiesta POST in modo anonimo.
 
-Per lo scopo di questo articolo, ho scritto un semplice file di guerra che può essere distribuito sulla tua istanza tomcat. Supponendo che il tuo gatto sia in esecuzione sulla porta 8080, l&#39;url di POST sarà
+Ai fini di questo articolo, ho scritto un semplice file war che può essere distribuito sulla tua istanza tomcat. Se Tomcat è in esecuzione sulla porta 8080, l’URL POST sarà
 
 <http://localhost:8080/AemFormsEnablement/HandleFormSubmission>
 
-quando si configura il modulo adattivo per l’invio a questo endpoint, i dati del modulo e gli eventuali allegati possono essere estratti nel servlet dal seguente codice
+quando configuri il modulo adattivo per l’invio a questo endpoint, i dati del modulo e gli eventuali allegati possono essere estratti nel servlet con il seguente codice
 
 ```java
 System.out.println("form was submitted");
@@ -55,13 +55,13 @@ String data = request.getParameter(paramName);System.out.println("The data  is "
 }
 ```
 
-![modulo](assets/formsubmission.gif)
-Per eseguire il test sul server, effettua le seguenti operazioni
+![formsubmit](assets/formsubmission.gif)
+Per eseguire il test sul server, effettuare le seguenti operazioni
 
-1. Installa Tomcat se non lo hai già. [Le istruzioni per l&#39;installazione di tomcat sono disponibili qui](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html)
-1. Scarica la [file zip](assets/aemformsenablement.zip) associato a questo articolo. Decomprimere il file per ottenere il file WAR.
-1. Distribuisci il file war nel server tomcat.
-1. Crea un modulo adattivo semplice con un componente file allegato e configurane l’azione di invio come mostrato nella schermata precedente. L’URL di POST è <http://localhost:8080/AemFormsEnablement/HandleFormSubmission>. Se il tuo AEM e tomcat non sono in esecuzione su localhost, modifica l&#39;URL di conseguenza.
-1. Per abilitare l’invio di dati modulo multiparte a tomcat, aggiungere il seguente attributo all’elemento contestuale del &lt;tomcatinstalldir>\conf\context.xml e riavvia il server Tomcat.
+1. Installa Tomcat se non lo hai già. [Le istruzioni per installare tomcat sono disponibili qui](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html)
+1. Scarica il file [file zip](assets/aemformsenablement.zip) associato a questo articolo. Decomprimi il file per ottenere il file .war.
+1. Distribuire il file .war nel server Tomcat.
+1. Crea un semplice modulo adattivo con il componente File allegato e configurane l’azione di invio come mostrato nella schermata precedente. L’URL del POST è <http://localhost:8080/AemFormsEnablement/HandleFormSubmission>. Se l’AEM e tomcat non sono in esecuzione su localhost, modifica l’URL di conseguenza.
+1. Per abilitare l’invio di dati da moduli multipart a tomcat, aggiungi il seguente attributo all’elemento di contesto del &lt;tomcatinstalldir>\conf\context.xml e riavviare il server Tomcat.
 1. **&lt;Context allowCasualMultipartParsing=&quot;true&quot;>**
-1. Visualizzare in anteprima il modulo adattivo, aggiungere un allegato e inviare. Controlla la finestra della console tomcat per i messaggi.
+1. Visualizza l’anteprima del modulo adattivo, aggiungi un allegato e invia. Controlla la finestra della console Tomcat per i messaggi.

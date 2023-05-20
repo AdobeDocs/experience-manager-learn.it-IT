@@ -1,6 +1,6 @@
 ---
 title: Come creare flussi di lavoro in AEM
-description: Workflow consente la gestione dei processi aziendali in Experience Manager e viene utilizzato per l'elaborazione automatica dei contenuti e per facilitare la governance e il processo decisionale.
+description: I flussi di lavoro consentono ad Experience Manager la gestione dei processi aziendali e vengono utilizzati per l'elaborazione automatica dei contenuti e per facilitare la governance e i processi che richiedono decisioni umane.
 version: 6.4, 6.5, Cloud Service
 feature: Workflow
 topic: Content Management
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Utilizzare l’Editor flussi di lavoro
+# Utilizzare l’Editor flusso di lavoro
 
-Workflow consente la gestione dei processi aziendali in Experience Manager e viene utilizzato per l&#39;elaborazione automatica dei contenuti e per facilitare la governance e il processo decisionale. Il flusso di lavoro è definito tramite Modelli di flusso di lavoro , composti di una serie di passaggi e creati e gestiti in [!UICONTROL Editor modelli di flusso di lavoro].
+I flussi di lavoro consentono ad Experience Manager la gestione dei processi aziendali e vengono utilizzati per l&#39;elaborazione automatica dei contenuti e per facilitare la governance e i processi che richiedono decisioni umane. Il flusso di lavoro è definito tramite modelli di flusso di lavoro composti da una serie di passaggi e creati e gestiti in [!UICONTROL Editor modello flusso di lavoro].
 
 >[!VIDEO](https://video.tv.adobe.com/v/22201?quality=12&learn=on)

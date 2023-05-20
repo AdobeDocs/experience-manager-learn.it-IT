@@ -1,7 +1,7 @@
 ---
 title: AEM Forms con schema e dati JSON
 seo-title: AEM Forms with JSON Schema and Data
-description: Esercitazione in più parti per illustrarti i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
+description: Tutorial in più parti per illustrare i passaggi necessari per creare un modulo adattivo con schema JSON e interrogare i dati inviati.
 seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
 topics: development
@@ -23,14 +23,14 @@ ht-degree: 0%
 
 # AEM Forms con schema e dati JSON
 
-Esercitazione in più parti per illustrarti i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
+Tutorial in più parti per illustrare i passaggi necessari per creare un modulo adattivo con schema JSON e interrogare i dati inviati.
 
-Per seguire questa esercitazione, è consigliabile aver installato quanto segue
+Per seguire questa esercitazione, si consiglia di installare quanto segue
 
-* AEM 6.3 o versioni successive con il pacchetto aggiuntivo di moduli appropriato
+* AEM 6.3 o versione successiva con moduli appropriati e pacchetto aggiuntivo
 
 * Database MySQL 8
 
-* Workbench di lavoro di MySQL 8
+* MySQL 8 Workbench
 
-Si consiglia inoltre di avere un certo livello di esperienza con AEM e AEM Forms. È inoltre necessario avere familiarità con l’installazione di MySQL DB e MySQL workbench
+Si consiglia inoltre di avere un certo livello di esperienza con AEM e AEM Forms. È inoltre necessario avere familiarità con l&#39;installazione di MySQL DB e MySQL Workbench

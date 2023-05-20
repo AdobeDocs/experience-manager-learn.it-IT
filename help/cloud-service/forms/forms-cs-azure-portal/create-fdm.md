@@ -1,6 +1,6 @@
 ---
-title: Crea modello dati modulo con backup di archiviazione di Azure
-description: Integrare AEM Forms CS con l’archiviazione di Azure utilizzando il modello dati modulo
+title: Crea modello dati modulo di archiviazione con backup di Azure
+description: Integrare AEM Forms CS con l’archiviazione di Azure utilizzando il modello dati del modulo
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Crea modello dati modulo con backup di archiviazione di Azure
+# Crea modello dati modulo di archiviazione con backup di Azure
 
-Crea modello dati modulo con backup di archiviazione di Azure
+Crea modello dati modulo di archiviazione con backup di Azure
 
 >[!VIDEO](https://video.tv.adobe.com/v/335385?quality=12&learn=on)

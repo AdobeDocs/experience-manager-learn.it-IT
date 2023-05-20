@@ -1,6 +1,6 @@
 ---
 title: Utilizzare la pipeline CI/CD in Adobe Cloud Manager
-description: Adobe Cloud Manager fornisce una pipeline CI/CD semplice, ma flessibile e self-service che consente AEM team di progetto di distribuire il codice in modo rapido, sicuro e coerente a tutti gli ambienti AEM ospitati in AMS. Questa serie video esplora l’impostazione e l’esecuzione della pipeline CI/CD di Cloud Manager in scenari di errore e di successo.
+description: Adobe Cloud Manager fornisce una pipeline CI/CD self-service semplice ma flessibile che consente ai team di progetto dell’AEM di distribuire il codice in modo rapido, sicuro e coerente in tutti gli ambienti AEM ospitati in AMS. Questa serie di video illustra la configurazione e l’esecuzione della pipeline CI/CD di Cloud Manager in scenari di errore e di successo.
 sub-product: Experience Manager Cloud Manager, Experience Manager
 topics: cicd, performance, best-practices, development, governance
 doc-type: feature video
@@ -21,41 +21,41 @@ ht-degree: 2%
 
 # Utilizzare la pipeline CI/CD in Adobe Cloud Manager
 
-Adobe Cloud Manager fornisce una pipeline CI/CD semplice, ma flessibile e self-service che consente AEM team di progetto di distribuire il codice in modo rapido, sicuro e coerente a tutti gli ambienti AEM ospitati in AMS. Questa serie video esplora l’impostazione e l’esecuzione della pipeline CI/CD di Cloud Manager in scenari di errore e di successo.
+Adobe Cloud Manager fornisce una pipeline CI/CD self-service semplice ma flessibile che consente ai team di progetto dell’AEM di distribuire il codice in modo rapido, sicuro e coerente in tutti gli ambienti AEM ospitati in AMS. Questa serie di video illustra la configurazione e l’esecuzione della pipeline CI/CD di Cloud Manager in scenari di errore e di successo.
 
 ## Introduzione
 
-Breve introduzione ai programmi Cloud Manager e Cloud Manager.
+Introduzione rapida ai programmi Cloud Manager e Cloud Manager.
 
 >[!NOTE]
 >
->In questi video, i tempi di creazione, test e distribuzione sono stati accelerati per ridurre il tempo del video. In genere, un’esecuzione completa della pipeline richiede 45 minuti o più (incluso il test di prestazioni obbligatorio di 30 minuti), a seconda della dimensione del progetto, del numero di istanze AEM e dei processi UAT.
+>In tutti questi video, i tempi di build, test e implementazione sono stati velocizzati per ridurre il tempo dedicato al video. Un’esecuzione completa della pipeline richiede in genere 45 minuti o più (incluso il test delle prestazioni obbligatorio di 30 minuti), a seconda delle dimensioni del progetto, del numero di istanze AEM e dei processi UAT.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23082?quality=12&learn=on)
 
 ## Configurazione della pipeline CI/CD
 
-Questo video esplora la configurazione della pipeline per il programma in Cloud Manager.
+Questo video illustra la configurazione della pipeline per il programma in Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23083?quality=12&learn=on)
 
 ## Esecuzione di una pipeline non riuscita
 
-Questo video esplora l’esecuzione della pipeline CI/CD utilizzando il codice che non supera i controlli di qualità richiesti da Cloud Manager, utilizzando **[!DNL yellow]** ramo archivio.
+Questo video illustra l’esecuzione della pipeline CI/CD utilizzando un codice che non supera i controlli di qualità richiesti da Cloud Manager, utilizzando **[!DNL yellow]** ramo archivio.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23084?quality=12&learn=on)
 
 ## Esecuzione della pipeline riuscita
 
-Questo video esplora l’esecuzione corretta della pipeline CI/CD utilizzando il codice che supera i controlli di qualità richiesti da Cloud Manager, utilizzando **[!DNL master]** ramo archivio.
+Questo video illustra l’esecuzione corretta della pipeline CI/CD utilizzando il codice che supera i controlli di qualità richiesti da Cloud Manager, utilizzando **[!DNL master]** ramo archivio.
 
-Questo video tocca anche [!UICONTROL Attività] in Cloud Manager, che consente di reinserire in esecuzioni attive o di rivedere esecuzioni completate o non riuscite.
+Questo video illustra anche [!UICONTROL Attività] in Cloud Manager, che consente il rientro nelle esecuzioni attive o la revisione delle esecuzioni completate o non riuscite.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23085?quality=12&learn=on)
 
 ## Materiali di supporto
 
 * [Guida utente di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=it)
-* [Scarica la scansione del codice [!DNL SonarQube] regole](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)
+* [Scarica analisi codice [!DNL SonarQube] regole](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)
    * *XLSX disponibile nella parte inferiore della sezione collegata*
-* [[!DNL SonarQube] Indice delle regole Java™](https://rules.sonarsource.com/java/)
+* [[!DNL SonarQube] Indice regole Java™](https://rules.sonarsource.com/java/)

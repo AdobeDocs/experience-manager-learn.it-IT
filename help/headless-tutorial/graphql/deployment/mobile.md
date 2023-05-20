@@ -1,6 +1,6 @@
 ---
-title: Implementazioni mobili headless AEM
-description: Scopri le considerazioni sulla distribuzione per le distribuzioni senza intestazione per dispositivi mobili AEM.
+title: Installazioni mobili headless AEM
+description: Scopri le considerazioni sulla distribuzione per le distribuzioni mobili headless AEM.
 version: Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
@@ -8,33 +8,33 @@ role: Developer, Architect
 level: Intermediate
 kt: 10796
 thumbnail: KT-10796.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+exl-id: 1f536079-b3ce-4807-be88-804378e75d37
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 2%
 
 ---
 
+# Installazioni mobili headless AEM
 
-# Implementazioni mobili headless AEM
+Le implementazioni per dispositivi mobili headless AEM sono app mobile native per iOS, Android™, ecc. che consumano e interagiscono con i contenuti dell’AEM in modo headless.
 
-Le implementazioni mobili headless AEM sono app mobili native per iOS, Android™, ecc. che consumano e interagiscono con i contenuti in AEM in modo headless.
-
-Le implementazioni per dispositivi mobili richiedono una configurazione minima, in quanto le connessioni HTTP a AEM API headless non vengono avviate nel contesto di un browser.
+Le distribuzioni per dispositivi mobili richiedono una configurazione minima, in quanto le connessioni HTTP alle API headless dell’AEM non vengono avviate nel contesto di un browser.
 
 ## Configurazioni di distribuzione
 
-La seguente configurazione di distribuzione deve essere sul posto per le distribuzioni di app mobili.
+La seguente configurazione di distribuzione deve essere implementata per le distribuzioni di app per dispositivi mobili.
 
 | L’app mobile si connette a | Autore AEM | AEM Publish | Anteprima AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [Filtri del Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ↓ | ↓ |
+| [Filtri del Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Condivisione delle risorse tra le origini (CORS) | ✘ | ✘ | ✘ |
-| [Host AEM](./configurations/aem-hosts.md) | ↓ | ↓ | ↓ |
+| [Host AEM](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Esempio di app per dispositivi mobili
 
-Adobe fornisce esempi di app mobili iOS e Android™.
+Adobe fornisce app mobili iOS e Android™.
 
 <div class="columns is-multiline">
     <!-- iOS app -->
@@ -50,7 +50,7 @@ Adobe fornisce esempi di app mobili iOS e Android™.
            <div class="card-content is-padded-small">
                <div class="content">
                    <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/ios-swiftui-app.md" title="app iOS">app iOS</a></p>
-                   <p class="is-size-6">Un’app iOS di esempio, scritta in SwiftUI, che consuma contenuti da AEM API GraphQL headless.</p>
+                   <p class="is-size-6">Un’app iOS di esempio, scritta in SwiftUI, che utilizza contenuti delle API GraphQL headless dell’AEM.</p>
                    <a href="../example-apps/ios-swiftui-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza esempio</span>
                    </a>
@@ -71,7 +71,7 @@ Adobe fornisce esempi di app mobili iOS e Android™.
            <div class="card-content is-padded-small">
                <div class="content">
                    <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/android-app.md" title="App Android™">App Android™</a></p>
-                   <p class="is-size-6">Esempio di app Java™ Android™ che consuma contenuti dalle API GraphQL headless AEM.</p>
+                   <p class="is-size-6">Un esempio di app Java™ Android™ che utilizza contenuti delle API GraphQL headless dell’AEM.</p>
                    <a href="../example-apps/android-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza esempio</span>
                    </a>
@@ -80,5 +80,3 @@ Adobe fornisce esempi di app mobili iOS e Android™.
        </div>
     </div>
 </div>
-
-

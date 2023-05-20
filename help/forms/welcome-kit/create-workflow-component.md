@@ -1,13 +1,14 @@
 ---
-title: Crea processo flusso di lavoro del kit di benvenuto
-description: Crea una pagina dei siti di AEM con collegamenti per scaricare le risorse in base ai dati del modulo inviati.
+title: Processo per creare il flusso di lavoro del kit di benvenuto
+description: Crea una pagina dei siti AEM con collegamenti per scaricare risorse in base ai dati del modulo inviato.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2022-12-14T00:00:00Z
-source-git-commit: 0e27907066c7d688549a980ccd17b3f17d74b60b
+exl-id: ba9e80af-aecd-4558-a236-798c823e695c
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 0%
@@ -16,13 +17,13 @@ ht-degree: 0%
 
 # Componente flusso di lavoro
 
-Il componente del flusso di lavoro acquisisce informazioni relative alla pagina in cui sono elencate le risorse quali il modello di pagina, il tipo di risorsa componente e la cartella di base per memorizzare le pagine generate.
+Il componente Flusso di lavoro acquisisce informazioni relative alla pagina in cui sono elencate le risorse, ad esempio il modello di pagina, il tipo di risorsa del componente e la cartella di base in cui archiviare le pagine generate.
 
-![componente flusso di lavoro](assets/workflow-component.png)
+![workflow-component](assets/workflow-component.png)
 
 ## Implementazione del processo del flusso di lavoro
 
-Il seguente codice Java è stato associato al componente del flusso di lavoro. Il codice crea la pagina del kit di benvenuto, estrae i valori dalle variabili del flusso di lavoro (submitterName e documentsSelected). Questi valori vengono quindi impostati come proprietà dei componenti utilizzati nella pagina. Il codice imposta anche il valore della variabile del processo del flusso di lavoro **welcomekiturl**.
+Il seguente codice Java è stato associato al componente del flusso di lavoro. Il codice crea la pagina del kit di benvenuto ed estrae i valori dalle variabili del flusso di lavoro (submitterName e documentsSelected). Questi valori vengono quindi impostati come proprietà dei componenti utilizzati nella pagina. Il codice imposta anche il valore della variabile di processo del flusso di lavoro **welcomeUrl**.
 
 ```java
 package com.welcomekit.core.workflowprocess;
@@ -161,7 +162,3 @@ public class CreatePage implements WorkflowProcess {
   }
 }
 ```
-
-
-
-

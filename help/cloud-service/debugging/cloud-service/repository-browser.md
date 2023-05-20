@@ -1,6 +1,6 @@
 ---
-title: Debug AEM con il browser del repository
-description: Repository Browser è un potente strumento che fornisce visibilità AEM'archivio dati sottostante, consentendo un facile debug dell'ambiente as a Cloud Service AEM.
+title: Debug di AEM con il Browser dell’archivio
+description: Il Browser dell’archivio è un potente strumento che fornisce visibilità all’archivio dati sottostante dell’AEM, consentendo un facile debug dell’ambiente as a Cloud Service dell’AEM.
 feature: Developer Tools
 topics: development
 version: Cloud Service
@@ -20,31 +20,31 @@ ht-degree: 0%
 
 ---
 
-# Debug AEM as a Cloud Service con il browser del repository
+# Debug di AEM as a Cloud Service con il Browser dell’archivio
 
-Repository Browser è un potente strumento che fornisce visibilità AEM&#39;archivio dati sottostante, consentendo un facile debug dell&#39;ambiente as a Cloud Service AEM. Il browser Repository supporta una visualizzazione in sola lettura delle risorse e delle proprietà di AEM in Produzione, Stage e Sviluppo, nonché dei servizi Author, Publish e Preview.
+Il Browser dell’archivio è un potente strumento che fornisce visibilità all’archivio dati sottostante dell’AEM, consentendo un facile debug dell’ambiente as a Cloud Service dell’AEM. Il Browser dell’archivio supporta una visualizzazione in sola lettura delle risorse e delle proprietà di AEM in Produzione, Stage e Sviluppo, nonché nei servizi Author, Publish e Preview.
 
 >[!VIDEO](https://video.tv.adobe.com/v/341464?quality=12&learn=on)
 
-Browser del repository __SOLO__ disponibile in ambienti AEM as a Cloud Service (utilizza [CRXDE Lite](../aem-sdk-local-quickstart/other-tools.md#crxde-lite) per eseguire il debug dell&#39;SDK AEM locale).
+Il browser dell’archivio è __SOLO__ disponibile in ambienti AEM as a Cloud Service (usare [CRXDE Lite](../aem-sdk-local-quickstart/other-tools.md#crxde-lite) per eseguire il debug dell’SDK AEM locale).
 
-## Accesso al browser del repository
+## Accesso al browser dell’archivio
 
-Per accedere al browser del repository su AEM as a Cloud Service:
+Per accedere al Browser dell’archivio in AEM as a Cloud Service:
 
-1. Assicurati che l&#39;utente abbia [l&#39;accesso richiesto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#access-prerequisites)
+1. Assicurati che l’utente abbia [l&#39;accesso richiesto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#access-prerequisites)
 1. Accedi a [Cloud Manager](https://my.cloudmanager.adobe.com)
-1. Selezionare il programma contenente l&#39;ambiente as a Cloud Service AEM cui eseguire il debug
-1. Apri [Console per sviluppatori](./developer-console.md) corrispondente all&#39;ambiente as a Cloud Service AEM di cui eseguire il debug
-1. Seleziona la __Browser del repository__ scheda
-1. Selezionare il livello di servizio AEM per sfogliare
+1. Seleziona il programma contenente l’ambiente AEM as a Cloud Service di cui eseguire il debug
+1. Apri [Console per sviluppatori](./developer-console.md) corrispondente all&#39;ambiente AEM as a Cloud Service per il debug
+1. Seleziona la __Browser dell’archivio__ scheda
+1. Seleziona il livello di servizio AEM da sfogliare
    + Tutti gli autori
    + Tutti gli editori
    + Tutte le anteprime
-1. Seleziona __Apri browser Repository__
+1. Seleziona __Apri Browser Archivio__
 
-Il browser Repository si apre per il livello di servizio selezionato (Autore, Pubblica o Anteprima) in modalità di sola lettura, visualizzando le risorse e le proprietà a cui l’utente ha accesso.
+Il Browser dell’archivio si apre per il livello di servizio selezionato (Autore, Pubblica o Anteprima) in modalità di sola lettura, visualizzando le risorse e le proprietà a cui l’utente ha accesso.
 
-## Accesso a Publish e Preview
+## Accesso a pubblicazione e anteprima
 
-Per impostazione predefinita, l’accesso a Pubblica o Anteprima è limitato, riducendo le risorse disponibili nel browser dell’archivio. [Per visualizzare tutte le risorse in Pubblica (o Anteprima), aggiungi gli utenti a un ruolo Pubblica (o Anteprima) Amministratori .](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#navigate-the-hierarchy)
+Per impostazione predefinita, l’accesso a Pubblica o Anteprima è limitato, riducendo le risorse disponibili nel Browser dell’archivio. [Per visualizzare tutte le risorse in Pubblica (o Anteprima), aggiungi gli utenti al ruolo Amministratori Pubblica (o Anteprima).](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#navigate-the-hierarchy)

@@ -1,49 +1,50 @@
 ---
-title: Controllo dello stato del Dispatcher AMS
-description: AMS fornisce uno script cgi-bin di controllo dello stato che i bilanciatori di caricamento cloud verranno eseguiti per vedere se AEM è sano e dovrebbe rimanere in servizio per il traffico pubblico.
+title: Verifica stato del dispatcher di AMS
+description: AMS fornisce uno script cgi-bin per il controllo dello stato che i load balancer cloud eseguiranno per verificare se l’AEM è integro e deve rimanere in servizio per il traffico pubblico.
 version: 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: df3afc60f765c18915eca3bb2d3556379383fafc
+exl-id: 69b4e469-52cc-441b-b6e5-2fe7ef18da90
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '1139'
 ht-degree: 1%
 
 ---
 
-# Controllo dello stato del Dispatcher AMS
+# Verifica stato del dispatcher di AMS
 
 [Sommario](./overview.md)
 
 [&lt;- Precedente: File di sola lettura](./immutable-files.md)
 
-Quando si dispone di una linea di base AMS installata dispatcher, viene fornito con alcuni freebies.  Una di queste funzionalità è un insieme di script di controllo dello stato di salute.
-Questi script consentono al load balancer che esegue lo stack AEM di sapere quali gambe sono sane e di mantenerle in servizio.
+Quando hai installato una linea di base AMS, il dispatcher è dotato di alcune versioni gratuite.  Una di queste funzionalità è un set di script di verifica stato.
+Questi script consentono al load balancer che si trova di fronte allo stack AEM di sapere quali gambe sono sane e di mantenerle in servizio.
 
-![GIF animato che mostra il flusso di traffico](assets/load-balancer-healthcheck/health-check.gif "Passaggi del controllo dello stato")
+![Animated GIF che mostra il flusso di traffico](assets/load-balancer-healthcheck/health-check.gif "Passaggi della verifica stato")
 
-## Verifica stato del bilanciamento del carico di base
+## Verifica stato di base del load balancer
 
-Quando il traffico dei clienti arriva attraverso Internet per raggiungere la tua istanza di AEM, passerà attraverso un load balancer
+Quando il traffico del cliente arriva tramite Internet per raggiungere l’istanza AEM, passa attraverso un load balancer
 
-![L&#39;immagine mostra il flusso di traffico da Internet ad aem tramite un load balancer](assets/load-balancer-healthcheck/load-balancer-traffic-flow.png "load-balancer-traffic-flow")
+![L’immagine mostra il flusso di traffico da Internet ad AEM tramite un load balancer](assets/load-balancer-healthcheck/load-balancer-traffic-flow.png "load-balancer-traffic-flow")
 
-Ogni richiesta che arriva tramite il load balancer arrotonda il robin a ogni istanza.  Il load balancer dispone di un meccanismo di controllo dello stato integrato per assicurarsi che invii traffico a un host integro.
+Ogni richiesta proveniente dal load balancer arrotonderà robin a ogni istanza.  Il load balancer dispone di un meccanismo di verifica dello stato integrato per assicurarsi che stia inviando traffico a un host integro.
 
-Il controllo predefinito è in genere un controllo della porta per vedere se i server di destinazione nel load balancer sono in ascolto sul traffico della porta si accende (cioè TCP 80 e 443)
+Il controllo predefinito è in genere un controllo delle porte per verificare se i server di destinazione nel load balancer sono in ascolto sul traffico delle porte attivato (ad esempio, TCP 80 e 443)
 
-> `Note:` Mentre questo funziona non ha un vero indicatore su se AEM è sano.  Verifica solo se Dispatcher (server web Apache) è in esecuzione.
+> `Note:` Mentre questo funziona non ha un vero e proprio metro di valutazione se l&#39;AEM è sano.  Viene verificato solo se Dispatcher (server web Apache) è in esecuzione.
 
-## Verifica integrità AMS
+## Verifica stato AMS
 
-Per evitare di inviare traffico a un dispatcher sano che sta affrontando un&#39;istanza di AEM non sana, AMS ha creato alcuni extra che valutano la salute della gamba e non solo il Dispatcher.
+Per evitare di inviare traffico a un dispatcher sano che si trova di fronte a un’istanza AEM non sana, AMS ha creato alcuni extra che valutano lo stato della gamba e non solo del Dispatcher.
 
-![L&#39;immagine mostra i diversi pezzi per il controllo dello stato di salute al lavoro](assets/load-balancer-healthcheck/health-check-pieces.png "controlli sanitari")
+![L&#39;immagine mostra i diversi elementi per il funzionamento del controllo di integrità](assets/load-balancer-healthcheck/health-check-pieces.png "guarigione - pezzi")
 
-Il controllo dello stato di salute comprende i seguenti pezzi
+Il controllo dello stato di salute comprende i seguenti elementi
 - 1 `Load balancer`
 - 1 `Apache web server`
 - 3 `Apache *VirtualHost* config files`
@@ -51,35 +52,35 @@ Il controllo dello stato di salute comprende i seguenti pezzi
 - 1 `AEM instance`
 - 1 `AEM package`
 
-Scopriremo cosa ogni pezzo deve fare e la sua importanza
+Copriremo cosa ogni pezzo è impostato per fare e la loro importanza
 
 ### Pacchetto AEM
 
-Per indicare se AEM funziona, è necessario che esegua alcune operazioni di base di compilazione delle pagine e distribuisca la pagina.  Adobe Managed Services ha creato un pacchetto di base contenente la pagina di test.  La pagina verifica che l’archivio sia attivo e che sia possibile eseguire il rendering delle risorse e del modello di pagina.
+Per indicare se l’AEM funziona è necessario che esegua alcune operazioni di base di compilazione delle pagine e distribuisca la pagina.  Adobe Managed Services ha creato un pacchetto di base contenente la pagina di test.  La pagina verifica che l’archivio sia attivo e che sia possibile eseguire il rendering delle risorse e del modello di pagina.
 
-![L&#39;immagine mostra il pacchetto AMS nel gestore di pacchetti CRX](assets/load-balancer-healthcheck/health-check-package.png "pacchetto di controllo sanitario")
+![L’immagine mostra il pacchetto AMS nel gestore di pacchetti CRX](assets/load-balancer-healthcheck/health-check-package.png "health-check-package")
 
-Ecco la pagina.  Verrà visualizzato l&#39;ID del repository dell&#39;installazione
+Ecco la pagina.  Mostrerà l’ID archivio dell’installazione
 
-![L’immagine mostra la pagina Regent AMS](assets/load-balancer-healthcheck/health-check-page.png "pagina di verifica dello stato")
+![Immagine che illustra la pagina Regent di AMS](assets/load-balancer-healthcheck/health-check-page.png "health-check-page")
 
-> `Note:` Ci assicuriamo che la pagina non sia memorizzabile nella cache.  Non controllerebbe lo stato effettivo se ogni volta che restituiva una pagina memorizzata nella cache.
+> `Note:` Ci assicuriamo che la pagina non sia memorizzabile in cache.  Non controllerebbe lo stato effettivo se ogni volta che restituisse una pagina memorizzata in cache!
 
-Questo è l&#39;endpoint del peso leggero che possiamo verificare per vedere che AEM è in funzione.
+Questo è l&#39;endpoint &quot;leggero&quot; che possiamo testare per vedere che l&#39;AEM è funzionante.
 
 ### Configurazione del load balancer
 
-Configuriamo i bilanciatori di carico in modo che puntino a un endpoint CGI-BIN invece di utilizzare un controllo di porta.
+I load balancer vengono configurati in modo da puntare a un endpoint CGI-BIN anziché utilizzare un controllo delle porte.
 
-![L&#39;immagine mostra la configurazione del controllo dello stato di salute del load balancer di AWS](assets/load-balancer-healthcheck/aws-settings.png "aws-lb-settings")
+![L’immagine mostra la configurazione del controllo di integrità del load balancer di AWS](assets/load-balancer-healthcheck/aws-settings.png "aws-lb-settings")
 
-![L&#39;immagine mostra la configurazione del controllo dello stato di salute del load balancer di Azure](assets/load-balancer-healthcheck/azure-settings.png "azure-lb-settings")
+![L’immagine mostra la configurazione del controllo di integrità del load balancer di Azure](assets/load-balancer-healthcheck/azure-settings.png "azure-lb-settings")
 
-### Verifica dello stato di Apache degli host virtuali
+### Host Virtuali Di Controllo Integrità Apache
 
 #### Host virtuale CGI-BIN `(/etc/httpd/conf.d/available_vhosts/ams_health.vhost)`
 
-Questa è la `<VirtualHost>` File di configurazione Apache che consente l&#39;esecuzione dei file CGI-Bin.
+Questo è il `<VirtualHost>` File di configurazione Apache che abilita l’esecuzione dei file CGI-Bin.
 
 ```
 Listen 81
@@ -90,19 +91,19 @@ Listen 81
 </VirtualHost>
 ```
 
-> `Note:` i file cgi-bin sono script eseguibili.  Questo può essere un vettore di attacco vulnerabile e questi script utilizzati da AMS non sono accessibili al pubblico solo dal load balancer su cui eseguire il test.
+> `Note:` i file cgi-bin sono script che possono essere eseguiti.  Questo può essere un vettore di attacco vulnerabile e questi script utilizzati da AMS non sono accessibili pubblicamente, ma sono disponibili solo per il test eseguito dal load balancer.
 
 
-#### Host virtuali di manutenzione non sicuri
+#### Host virtuali di manutenzione non integri
 
 - `/etc/httpd/conf.d/available_vhosts/000_unhealthy_author.vhost`
 - `/etc/httpd/conf.d/available_vhosts/000_unhealthy_publish.vhost`
 
-Questi file sono denominati `000_` come prefisso di proposito.  È configurato intenzionalmente per utilizzare lo stesso nome di dominio del sito live.  L&#39;intenzione è quella di abilitare questo file quando il controllo di integrità rileva un problema con uno dei backend AEM.  Quindi offri una pagina di errore invece di un solo codice di risposta HTTP 503 senza pagina.  Ruberà il traffico dal normale `.vhost` file perché è caricato prima di quello `.vhost` file durante la condivisione dello stesso `ServerName` o `ServerAlias`.  Il risultato è che le pagine destinate a un determinato dominio passano all’host non integro invece di quello predefinito con il traffico normale.
+Questi file sono denominati `000_` come prefisso di proposito.  È configurato intenzionalmente per utilizzare lo stesso nome di dominio del sito live.  L’intenzione è quella di abilitare questo file quando il controllo di integrità rileva la presenza di un problema con uno dei backend dell’AEM.  Quindi offri una pagina di errore invece di un semplice codice di risposta HTTP 503 senza pagina.  Ruberà il traffico dal normale `.vhost` perché è stato caricato prima di `.vhost` durante la condivisione dello stesso `ServerName` o `ServerAlias`.  Il risultato è che le pagine destinate a un particolare dominio devono passare al vhost non integro invece di quello predefinito da cui normalmente passa il traffico.
 
-Quando gli script di controllo dello stato vengono eseguiti, disconnettono lo stato di integrità corrente.  Una volta al minuto c&#39;è un cronjob in esecuzione sul server che cerca voci non integre nel log.  Se rileva che l’istanza di AEM dell’autore non è integra, abilita il symlink:
+Quando vengono eseguiti gli script di verifica stato, questi disconnettono lo stato di integrità corrente.  Una volta al minuto sul server è in esecuzione un processo cronologico che cerca voci non integre nel registro.  Se rileva che l’istanza AEM dell’autore non è integra, abilita il collegamento simbolico:
 
-Voce di registro:
+Voce registro:
 
 ```
 # grep "ERROR\|publish" /var/log/lb/health_check.log
@@ -110,14 +111,14 @@ E, [2022-11-23T20:13:54.984379 #26794] ERROR -- : AUTHOR -- Exception caught: Co
 I, [2022-11-23T20:13:54.984403 #26794]  INFO -- : [checkpublish]-author:0-publish:1-[checkpublish]
 ```
 
-Cron per rilevare l&#39;errore e reagire:
+Cron raccoglie l’errore e reagisce:
 
 ```
 # grep symlink /var/log/lb/health_check_reload.log
 I, [2022-11-23T20:34:19.213179 #2275]  INFO -- : ADDING VHOST symlink /etc/httpd/conf.d/available_vhosts/000_unhealthy_author.vhost => /etc/httpd/conf.d/enabled_vhosts/000_unhealthy_author.vhost
 ```
 
-Puoi controllare se l’autore o i siti pubblicati possono caricare questa pagina di errore configurando l’impostazione della modalità di ricaricamento in `/var/www/cgi-bin/health_check.conf`
+Puoi controllare se i siti di authoring o pubblicati possono presentare questo errore di caricamento della pagina configurando l’impostazione della modalità di ricaricamento in `/var/www/cgi-bin/health_check.conf`
 
 ```
 # grep RELOAD_MODE /var/www/cgi-bin/health_check.conf
@@ -125,17 +126,17 @@ RELOAD_MODE='author'
 ```
 
 Opzioni valide:
-- author
-   - Questa è l’opzione predefinita.
-   - In questo modo verrà creata una pagina di manutenzione per l’autore quando non è integro
+- creazione
+   - Questa è l&#39;opzione predefinita.
+   - Verrà visualizzata una pagina di manutenzione per l’autore quando non è integro
 - pubblicazione
    - Questa opzione consente di impostare una pagina di manutenzione per l’editore quando non è integra
-- all
-   - Questa opzione consente di impostare una pagina di manutenzione per l’autore o l’editore o per entrambi se non sono integri
+- tutti
+   - Questa opzione consente di impostare una pagina di manutenzione per l’autore o l’editore o per entrambi i siti se non sono integri
 - nessuno
-   - Questa opzione ignora questa funzione del controllo dello stato di salute
+   - Questa opzione ignora questa funzione della verifica stato
 
-Quando osservi `VirtualHost` per queste impostazioni verrà visualizzato che caricano lo stesso documento di una pagina di errore per ogni richiesta che viene attivata:
+Osservando il `VirtualHost` impostandoli, vedrai che caricano lo stesso documento come pagina di errore per ogni richiesta che arriva quando è abilitato:
 
 ```
 <VirtualHost *:80>
@@ -172,42 +173,42 @@ X-Dispatcher: dispatcher1useast1
 X-Vhost: unhealthy-author
 ```
 
-Invece di una pagina vuota, riceveranno invece questa pagina.
+Invece di una pagina vuota riceveranno questa pagina.
 
-![L&#39;immagine mostra la pagina di manutenzione predefinita](assets/load-balancer-healthcheck/unhealthy-page.png "pagina non valida")
+![L’immagine mostra la pagina di manutenzione predefinita](assets/load-balancer-healthcheck/unhealthy-page.png "unhealthy-page")
 
 ### Script CGI-Bin
 
-Nelle impostazioni del load balancer è possibile configurare 5 script diversi dal CSE che modificano il comportamento o i criteri per estrarre un Dispatcher dal load balancer.
+Il CSE può configurare 5 script diversi nelle impostazioni del load balancer che modificano il comportamento o i criteri quando estrarre un Dispatcher dal load balancer.
 
 #### /bin/checkauthor
 
-Questo script utilizzato controllerà e registrerà tutte le istanze in cui si trova in primo piano ma restituirà un errore solo se il `author` AEM&#39;istanza non è valida
+Questo script, se utilizzato, controlla e registra tutte le istanze in primo piano, ma restituisce un errore solo se `author` Istanza AEM non integra
 
-> `Note:` Tieni presente che se l’istanza di pubblicazione AEM non era integra, il dispatcher resterebbe in servizio per consentire il flusso di traffico verso l’istanza di authoring AEM
+> `Note:` Tieni presente che se l’istanza AEM di pubblicazione non è integra, il dispatcher rimane in servizio per consentire il flusso di traffico verso l’istanza AEM di authoring
 
 #### /bin/checkpublish (predefinito)
 
-Questo script utilizzato controllerà e registrerà tutte le istanze in cui si trova in primo piano ma restituirà un errore solo se il `publish` AEM&#39;istanza non è valida
+Questo script, se utilizzato, controlla e registra tutte le istanze in primo piano, ma restituisce un errore solo se `publish` Istanza AEM non integra
 
-> `Note:` Tieni presente che se l’istanza di AEM dell’autore non è integra, il dispatcher resterà in servizio per consentire il flusso del traffico verso l’istanza di AEM di pubblicazione
+> `Note:` Tieni presente che se l’istanza AEM dell’autore non fosse integra, dispatcher rimarrebbe in servizio per consentire il flusso di traffico verso l’istanza AEM di pubblicazione
 
-#### /bin/checkeyer
+#### /bin/checkeither
 
-Questo script utilizzato controllerà e registrerà tutte le istanze in cui si trova in primo piano ma restituirà un errore solo se il `author` o `publisher` AEM&#39;istanza non è valida
+Questo script, se utilizzato, controlla e registra tutte le istanze in primo piano, ma restituisce un errore solo se `author` o `publisher` Istanza AEM non integra
 
-> `Note:` Tieni presente che se l’istanza di pubblicazione AEM o l’istanza AEM dell’autore non era integra, il dispatcher ritirerebbe il servizio.  Ciò significa che se uno di loro fosse sano non riceverebbe traffico
+> `Note:` Tieni presente che se l’istanza AEM di pubblicazione o l’istanza AEM di authoring non fosse integra, il dispatcher si ritirerebbe dal servizio.  Significa che se uno di loro fosse sano, non riceverebbe traffico
 
 #### /bin/checkboth
 
-Questo script utilizzato controllerà e registrerà tutte le istanze in cui si trova in primo piano ma restituirà un errore solo se il `author` e `publisher` AEM&#39;istanza non è valida
+Questo script, se utilizzato, controlla e registra tutte le istanze in primo piano, ma restituisce un errore solo se `author` e `publisher` Istanza AEM non integra
 
-> `Note:` Tieni presente che se l’istanza di pubblicazione AEM o l’istanza di AEM dell’autore non era integra, il dispatcher non ritirerà il servizio.  Ciò significa che se uno di loro non è in buona salute continuerà a ricevere traffico e a dare errori alle persone che richiedono risorse.
+> `Note:` Tieni presente che se l’istanza AEM di pubblicazione o l’istanza AEM di authoring non fosse integra, il dispatcher non si ritirerebbe dal servizio.  Ciò significa che se uno di questi non fosse integro continuerebbe a ricevere traffico e a fornire errori alle persone che richiedono risorse.
 
-#### /bin/health
+#### /bin/integro
 
-Questo script utilizzato controllerà e registrerà tutte le istanze in cui si trova in primo piano ma restituirà comunque integro indipendentemente dal fatto che AEM restituisca o meno un errore.
+Questo script, se utilizzato, controlla e registra tutte le istanze che sta fronteggiando, ma tornerà integro indipendentemente dal fatto che l’AEM restituisca o meno un errore.
 
-> `Note:` Questo script viene utilizzato quando il controllo di integrità non funziona come desiderato e consente a un override di mantenere AEM istanze nel load balancer.
+> `Note:` Questo script viene utilizzato quando il controllo di integrità non funziona come desiderato e consente a un override di mantenere le istanze AEM nel load balancer.
 
-[Avanti -> Collegamenti simbolici GIT](./git-symlinks.md)
+[Successivo -> Collegamenti simbolici GIT](./git-symlinks.md)

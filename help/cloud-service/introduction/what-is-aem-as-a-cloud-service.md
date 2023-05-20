@@ -1,6 +1,6 @@
 ---
-title: Che cosa è AEM as a Cloud Service?
-description: Scopri cos’è AEM as a Cloud Service e come si differenzia dall’altra versione di Adobe Experience Manager.
+title: Cos’è l’AEM as a Cloud Service?
+description: Scopri cos’è AEM as a Cloud Service e come si differenzia da altre versioni di Adobe Experience Manager.
 role: Architect, Developer
 level: Beginner
 type: Tutorial
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Che cosa è AEM as a Cloud Service?
+# Cos’è l’AEM as a Cloud Service?
 
-Scopri cos’è AEM as a Cloud Service e come si differenzia dall’altra versione di Adobe Experience Manager.
+Scopri cos’è AEM as a Cloud Service e come si differenzia da altre versioni di Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330546?quality=12&learn=on)

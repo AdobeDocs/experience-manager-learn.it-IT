@@ -1,6 +1,6 @@
 ---
 title: Creazione del primo servizio OSGi con AEM Forms
-description: Crea il tuo primo servizio OSGi con AEM Forms
+description: Creare il primo servizio OSGi con AEM Forms
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -17,13 +17,13 @@ ht-degree: 2%
 
 # Servizio OSGi
 
-Un servizio OSGi è un&#39;interfaccia di classe o servizio Java, insieme a una serie di proprietà del servizio come coppie nome/valore. Le proprietà del servizio differenziano tra i diversi provider di servizi che forniscono servizi con la stessa interfaccia di servizio.
+Un servizio OSGi è una classe Java o un’interfaccia di servizio, insieme a una serie di proprietà di servizio come coppie nome/valore. Le proprietà del servizio distinguono tra i diversi provider di servizi che forniscono servizi con la stessa interfaccia di servizio.
 
-Un servizio OSGi viene definito semanticamente dalla relativa interfaccia di servizio e implementato come oggetto di servizio. La funzionalità di un servizio è definita dalle interfacce che implementa. Pertanto, applicazioni diverse possono implementare lo stesso servizio. Le interfacce di servizio consentono ai bundle di interagire mediante interfacce di binding, non tramite implementazioni. Specificare un&#39;interfaccia di servizio con il minor numero possibile di dettagli di implementazione.
+Un servizio OSGi è definito semanticamente dalla relativa interfaccia di servizio e implementato come oggetto di servizio. La funzionalità di un servizio è definita dalle interfacce implementate. In questo modo, applicazioni diverse possono implementare lo stesso servizio. Le interfacce di servizio consentono ai bundle di interagire tramite interfacce di binding, non tramite implementazioni. È necessario specificare un’interfaccia di servizio con il minor numero di dettagli di implementazione possibile.
 
 ## Definire l’interfaccia
 
-Interfaccia semplice con un metodo per unire i dati con <span class="x x-first x-last">XDP</span> modello.
+Un&#39;interfaccia semplice con un metodo per unire i dati con <span class="x x-first x-last">XDP</span> modello.
 
 ```java
 package com.mysite.samples;
@@ -39,7 +39,7 @@ public interface MyfirstInterface
 
 ## Implementare l’interfaccia
 
-Crea un nuovo pacchetto denominato `com.mysite.samples.impl` per mantenere l’implementazione dell’interfaccia.
+Crea un nuovo pacchetto denominato `com.mysite.samples.impl` per l’implementazione dell’interfaccia.
 
 ```java
 package com.mysite.samples.impl;
@@ -77,9 +77,9 @@ public class MyfirstInterfaceImpl implements MyfirstInterface {
 }
 ```
 
-Annotazione `@Component(...)` alla riga 10 marca questa classe Java come componente OSGi e la registra come servizio OSGi.
+L’annotazione `@Component(...)` sulla riga 10 contrassegna questa classe Java come componente OSGi e la registra come servizio OSGi.
 
-La `@Reference` annotazione fa parte dei servizi dichiarativi OSGi e viene utilizzata per inserire un riferimento [Outputservice](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) nella variabile `outputService`.
+Il `@Reference` l’annotazione fa parte di servizi dichiarativi OSGi e viene utilizzata per inserire un riferimento di [Servizio di output](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) nella variabile `outputService`.
 
 
 ## Creare e distribuire il bundle
@@ -87,13 +87,13 @@ La `@Reference` annotazione fa parte dei servizi dichiarativi OSGi e viene utili
 * Apri **finestra del prompt dei comandi**
 * Accedi a `c:\aemformsbundles\mysite\core`
 * Esegui il comando `mvn clean install -PautoInstallBundle`
-* Il comando precedente genera e distribuisce automaticamente il bundle nella tua istanza AEM in esecuzione su localhost:4502
+* Il comando precedente genera e distribuisce automaticamente il bundle nell’istanza AEM in esecuzione su localhost:4502
 
-Il bundle sarà disponibile anche nella seguente posizione `C:\AEMFormsBundles\mysite\core\target`. Il bundle può anche essere distribuito in AEM utilizzando il [Console web Felix.](http://localhost:4502/system/console/bundles)
+Il bundle sarà disponibile anche nella seguente posizione `C:\AEMFormsBundles\mysite\core\target`. Il pacchetto può essere distribuito all&#39;AEM utilizzando [Console web Felix.](http://localhost:4502/system/console/bundles)
 
 ## Utilizzo del servizio
 
-Ora puoi utilizzare il servizio nella pagina JSP. Il seguente frammento di codice mostra come accedere al servizio e utilizzare i metodi implementati dal servizio
+Ora puoi utilizzare il servizio nella pagina JSP. Il seguente snippet di codice mostra come accedere al servizio e utilizzare i metodi implementati dal servizio
 
 ```java
 MyFirstAEMFormsService myFirstAEMFormsService = sling.getService(com.mysite.samples.MyFirstAEMFormsService.class);
@@ -104,14 +104,14 @@ Il pacchetto di esempio contenente la pagina JSP può essere [scaricato da qui](
 
 [Il bundle completo è disponibile per il download](assets/mysite.core-1.0.0-SNAPSHOT.jar)
 
-## Test del pacchetto
+## Testare il pacchetto
 
-Importa e installa il pacchetto in AEM utilizzando il [gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+Importare e installare il pacchetto in AEM utilizzando [gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 
-Utilizza un postman per effettuare una chiamata POST e fornire i parametri di input come mostrato nella schermata sottostante
+Utilizza Postman per effettuare una chiamata POST e fornire i parametri di input come mostrato nella schermata seguente
 ![postino](assets/test-service-postman.JPG)
 
 ## Passaggi successivi
 
-[Crea servlet Sling](./create-servlet.md)
+[Crea Sling Servlet](./create-servlet.md)
 

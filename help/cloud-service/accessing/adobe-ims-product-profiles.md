@@ -1,5 +1,5 @@
 ---
-title: Profili di prodotto e AEM di Adobe IMS
+title: Profili di prodotto di Adobe IMS e AEM
 description: I profili di prodotto di Adobe IMS consentono agli utenti di accedere a un servizio AEM Author e forniscono una linea di base di accesso, a seconda del profilo di prodotto a cui sono iscritti.
 topic: Administration, Security
 feature: User and Groups
@@ -16,7 +16,7 @@ ht-degree: 80%
 
 ---
 
-# Profili di prodotto Adobe IMS {#adobe-ims-product-profiles}
+# Profili di prodotto di Adobe IMS {#adobe-ims-product-profiles}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_productprofiles"
@@ -30,4 +30,4 @@ I profili di prodotto di Adobe IMS consentono agli utenti di accedere a un servi
 
 ## Risorse aggiuntive
 
-+ [Gestione dei prodotti e dell’accesso utente nella documentazione di Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#managing-products-and-user-access-in-admin-console)
++ [Gestione dei prodotti e dell’accesso degli utenti nella documentazione di Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#managing-products-and-user-access-in-admin-console)

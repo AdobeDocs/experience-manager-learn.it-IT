@@ -1,6 +1,6 @@
 ---
-title: Come eseguire lo strumento di eliminazione del processo dalla riga di comando
-description: Passaggi per eseguire lo strumento di eliminazione del processo dalla riga di comando per eliminare i record dalla tabella di Job Manager
+title: Esecuzione dello strumento di rimozione dei processi dalla riga di comando
+description: Passaggi per eseguire lo strumento di rimozione dei processi dalla riga di comando per eliminare i record dalla tabella Gestione processi
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Come eseguire lo strumento di eliminazione del processo dalla riga di comando
+# Esecuzione dello strumento di rimozione dei processi dalla riga di comando
 
-*Questo video illustra i passaggi necessari per eseguire lo strumento di eliminazione del processo dalla riga di comando.*
+*Questo video illustra i passaggi necessari per eseguire lo strumento di rimozione dei processi dalla riga di comando.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335508?quality=12&learn=on)

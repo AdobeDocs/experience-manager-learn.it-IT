@@ -1,6 +1,6 @@
 ---
-title: Riferimenti a contenuto non risorsa - Editor frammento di contenuto
-description: Scopri in che modo i campi Contenuto frammento di contenuto supportano il riferimento a vari tipi di contenuto AEM, come Frammenti esperienza e Pagine.
+title: Riferimenti a contenuti non relativi a risorse - Editor frammenti di contenuto
+description: Scopri come i campi Contenuto frammento di contenuto supportano il riferimento a vari tipi di contenuti AEM, ad esempio Frammenti di esperienza e Pagine.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -17,8 +17,8 @@ ht-degree: 0%
 ---
 
 
-# Riferimenti al contenuto non di risorse
+# Riferimenti a contenuti non relativi a risorse
 
-Scopri in che modo i campi Contenuto frammento di contenuto supportano il riferimento a vari tipi di contenuto AEM, come Frammenti esperienza e Pagine.
+Scopri come i campi Contenuto frammento di contenuto supportano il riferimento a vari tipi di contenuti AEM, ad esempio Frammenti di esperienza e Pagine.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419313/?learn=on)

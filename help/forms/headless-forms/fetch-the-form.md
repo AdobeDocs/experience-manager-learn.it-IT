@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # Recupera il JSON del modulo
 
-Accedi alla tua istanza di authoring di AEM Forms e crea un nuovo adattivo utilizzando **Vuoto con componenti core** modello. Pubblica il modulo nell’istanza di pubblicazione.
+Accedi all’istanza Autore AEM Forms e crea un nuovo file adattivo utilizzando **Vuoto con i Componenti core** modello. Pubblica il modulo nell’istanza di pubblicazione.
 
-Per incorporare il modulo, prima recuperiamo il json del modulo adattivo effettuando una chiamata get sul server di pubblicazione.
+Per incorporare il modulo, per prima cosa recuperiamo il json del modulo adattivo effettuando una chiamata di accesso al nostro server di pubblicazione.
 
-Il seguente frammento di codice recupera il json del modulo adattivo denominato **contacto**
+Il seguente snippet di codice recupera il json del modulo adattivo denominato **contatto**
 
 ```javascript
 const getForm = async () => {
@@ -32,7 +32,7 @@ const getForm = async () => {
       }
 ```
 
-Di seguito è riportato il codice completo del componente della funzione Contatto
+Di seguito è riportato il codice completo del componente della funzione di contatto.
 
 ```javascript
 import Form from './components/Form';
@@ -75,4 +75,4 @@ export default function Contact(){
 }
 ```
 
-Il codice di cui sopra utilizza componenti html nativi mappati ai componenti utilizzati nel modulo adattivo. Ad esempio, stiamo mappando il componente modulo adattivo per l’input di testo al componente TextField. Componenti nativi utilizzati nell’articolo [può essere scaricato da qui](./assets/native-components.zip)
+Il codice di cui sopra utilizza componenti HTML nativi mappati sui componenti utilizzati nel modulo adattivo. Ad esempio, stiamo mappando il componente del modulo adattivo per l’immissione di testo al componente TextField. I componenti nativi utilizzati nell’articolo [può essere scaricato da qui](./assets/native-components.zip)

@@ -1,5 +1,5 @@
 ---
-title: Crea account di archiviazione di Azure
+title: Crea account di archiviazione Azure
 description: Crea e configura l’account di archiviazione Azure per l’API Batch.
 type: Documentation
 role: Developer
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Introduzione
 
-Un account di archiviazione di Azure contiene tutti gli oggetti dati di archiviazione di Azure, inclusi BLOB, condivisioni di file, code, tabelle e dischi. L’account di archiviazione fornisce uno spazio dei nomi univoco per i dati di archiviazione di Azure accessibile da qualsiasi punto del mondo tramite HTTP o HTTPS. I dati nel tuo account di storage sono durevoli e altamente disponibili, sicuri e altamente scalabili.
+Un account di archiviazione Azure contiene tutti gli oggetti dati di archiviazione Azure, inclusi BLOB, condivisioni di file, code, tabelle e dischi. L’account di archiviazione fornisce uno spazio dei nomi univoco per i dati di archiviazione di Azure, accessibile da qualsiasi parte del mondo tramite HTTP o HTTPS. I dati dell&#39;account di storage sono duraturi e altamente disponibili, sicuri e ampiamente scalabili.
 Il video seguente illustra il processo di configurazione dell’account di archiviazione di Azure.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340127?quality=12&learn=on)

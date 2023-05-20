@@ -1,7 +1,7 @@
 ---
 title: Miglioramenti dell’editor di regole in AEM Forms
 seo-title: Rule Editor Improvements in AEM Forms
-description: L'editor di regole consente agli utenti di aggiungere logica AEM Adaptive Forms. AEM 6.3 migliora l'editor di regole in diversi modi rendendo l'aggiunta di informazioni più semplice e veloce sia per gli utenti tecnici che per quelli non tecnici.
+description: L’editor di regole consente agli utenti di aggiungere logica al Forms adattivo dell’AEM. L’AEM 6.3 migliora l’editor delle regole in diversi modi, rendendo più facile e veloce l’aggiunta di dati intelligenti per gli utenti tecnici e non tecnici.
 seo-description: The rule editor enables users to add logic to AEM Adaptive Forms. AEM 6.3 improves the rule editor in several ways making it easier and faster for both technical and non-technical users alike to add intelligence.
 uuid: 35e8cc7c-04cf-43b4-bbc7-41bfd909cfba
 feature: Adaptive Forms
@@ -25,17 +25,17 @@ ht-degree: 0%
 
 # Miglioramenti dell’editor di regole in AEM Forms {#rule-editor-improvements-in-aem-forms}
 
-L&#39;editor di regole consente agli utenti di aggiungere logica AEM Adaptive Forms. AEM 6.3 migliora l&#39;editor di regole in diversi modi rendendo l&#39;aggiunta di informazioni più semplice e veloce sia per gli utenti tecnici che per quelli non tecnici.
+L’editor di regole consente agli utenti di aggiungere logica al Forms adattivo dell’AEM. L’AEM 6.3 migliora l’editor delle regole in diversi modi, rendendo più facile e veloce l’aggiunta di dati intelligenti per gli utenti tecnici e non tecnici.
 
 >[!VIDEO](https://video.tv.adobe.com/v/19653?quality=12&learn=on)
 
-**Alcuni dei miglioramenti apportati all’Editor di regole includono:**
+**Alcuni dei miglioramenti apportati all’editor di regole includono:**
 
-* I componenti modulo con più valori visualizzano automaticamente le opzioni dei componenti
-* Possibilità di specificare un servizio Web WSDL nell’editor visivo
+* I componenti modulo con più valori visualizzano automaticamente le opzioni del componente
+* Possibilità di specificare un servizio Web WSDL nell&#39;editor visivo
 * Possibilità di disabilitare le regole
-* Miglioramenti all&#39;editor di codice come:
+* Sono stati apportati miglioramenti all’editor di codice, ad esempio:
 * Evidenziazione della sintassi
    * Rientro automatico
-   * Suggerimenti e suggerimenti per oggetti, funzioni e proprietà del modulo
+   * Suggerimenti e suggerimenti per oggetti Form, funzioni e proprietà
    * Completamento automatico dei nomi dei componenti e delle funzioni JavaScript comuni

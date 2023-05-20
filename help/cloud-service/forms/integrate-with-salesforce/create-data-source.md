@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Crea origine dati
 
-Crea un’origine dati basata su REST utilizzando il file swagger creato nel passaggio precedente
+Creare un’origine dati con supporto REST utilizzando il file swagger creato nel passaggio precedente
 
 >[!VIDEO](https://video.tv.adobe.com/v/331755?quality=12&learn=on)

@@ -1,5 +1,5 @@
 ---
-title: Creare un modulo adattivo per utilizzare la configurazione dei Cloud Services Acrobat Sign creata
+title: Creazione di un modulo adattivo per utilizzare la configurazione di Cloud Services Acrobat Sign creata
 description: Creare un modulo adattivo da utilizzare con Acrobat Sign
 type: Documentation
 role: Developer

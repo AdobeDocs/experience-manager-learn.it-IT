@@ -1,6 +1,6 @@
 ---
-title: Generazione di URL e codici di incorporamento per AEM risorse Dynamic Media
-description: Passaggi per generare l’URL pubblico e il codice di incorporamento per una risorsa in Dynamic Media
+title: Generazione di URL e codici da incorporare per le risorse Dynamic Media dell’AEM
+description: Passaggi per generare l’URL pubblico e il codice da incorporare per una risorsa in Dynamic Media
 role: Developer
 level: Intermediate
 version: Cloud Service
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# Generazione di URL e codici di incorporamento per AEM risorse Dynamic Media
+# Generazione di URL e codici da incorporare per le risorse Dynamic Media dell’AEM
 
-Questo video illustra i passaggi necessari per generare un URL pubblico o un codice di incorporamento per una risorsa.
+Questo video illustra i passaggi per generare un URL pubblico o un codice di incorporamento per una risorsa.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335364?quality=12&learn=on)

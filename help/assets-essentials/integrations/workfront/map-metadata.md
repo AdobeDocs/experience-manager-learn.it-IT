@@ -1,6 +1,6 @@
 ---
 title: Mappatura dei metadati tra Adobe Workfront e AEM Assets Essentials
-description: Scopri come configurare la mappatura dei metadati tra campi Workfront e proprietà Assets Essentials, nonché come configurare Assets Essentials per la visualizzazione dei metadati mappati.
+description: Scopri come configurare la mappatura dei metadati tra i campi di Workfront e le proprietà di Assets Essentials, nonché come configurare Assets Essentials per visualizzare i metadati mappati.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management, Integrations
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Metadati mappatura
+# Mappatura dei metadati
 
-Scopri come configurare la mappatura dei metadati tra campi Workfront e proprietà Assets Essentials, nonché come configurare Assets Essentials per visualizzare i valori mappati.
+Scopri come configurare la mappatura dei metadati tra i campi di Workfront e le proprietà di Assets Essentials, nonché come configurare Assets Essentials per visualizzare i valori mappati.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336458?quality=12&learn=on)

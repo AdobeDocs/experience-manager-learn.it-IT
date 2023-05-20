@@ -1,6 +1,6 @@
 ---
-title: Confronto delle varianti RTE - Editor frammento di contenuto
-description: Scopri come AEM è possibile confrontare e sincronizzare facilmente il campo RTE all’interno delle varianti dei frammenti di contenuto. Confrontando e sincronizzando queste varianti, puoi garantire messaggi coerenti tra tutti i canali che utilizzano il frammento di contenuto.
+title: Confronto varianti editor Rich Text - Editor frammenti di contenuto
+description: Scopri come l’AEM consente di confrontare e sincronizzare facilmente i campi dell’Editor Rich Text all’interno delle varianti di Frammento di contenuto. Confrontando e sincronizzando queste varianti, puoi garantire una messaggistica coerente su tutti i canali che utilizzano il frammento di contenuto.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -17,8 +17,8 @@ ht-degree: 0%
 ---
 
 
-# Confronto delle varianti dell’editor Rich Text
+# Confronto varianti editor Rich Text
 
-Scopri come AEM è possibile confrontare e sincronizzare facilmente il campo RTE all’interno delle varianti dei frammenti di contenuto. Confrontando e sincronizzando queste varianti, puoi garantire messaggi coerenti tra tutti i canali che utilizzano il frammento di contenuto.
+Scopri come l’AEM consente di confrontare e sincronizzare facilmente i campi dell’Editor Rich Text all’interno delle varianti di Frammento di contenuto. Confrontando e sincronizzando queste varianti, puoi garantire una messaggistica coerente su tutti i canali che utilizzano il frammento di contenuto.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419314/?learn=on)

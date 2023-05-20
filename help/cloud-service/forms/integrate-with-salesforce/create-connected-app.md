@@ -1,6 +1,6 @@
 ---
-title: Crea un'app connessa Salesforce.
-description: L’app connessa consente di integrare Salesforce con applicazioni di terze parti, come AEM Forms con Salesforce.
+title: Crea l’app collegata a Salesforce.
+description: L’app collegata consente di integrare Salesforce con applicazioni di terze parti, come AEM Forms e Salesforce.
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,11 +18,11 @@ ht-degree: 0%
 
 ---
 
-# Creare un’app connessa
+# Crea app connessa
 
-Un’app connessa è un framework che consente a un’applicazione esterna di integrarsi con Salesforce utilizzando API e protocolli standard, come SAML, OAuth e OpenID Connect. Le app collegate utilizzano questi protocolli per autenticare, autorizzare e fornire l&#39;accesso singolo (SSO) per le app esterne.
+Un’app connessa è un framework che consente a un’applicazione esterna di integrarsi con Salesforce utilizzando API e protocolli standard, come SAML, OAuth e OpenID Connect. Le app collegate utilizzano questi protocolli per autenticare, autorizzare e fornire Single Sign-On (SSO) per le app esterne.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331757?quality=12&learn=on)
 
 >[!NOTE]
->Assicurati di creare un account in [Salesforce Developer Edition](https://developer.salesforce.com/signup) poiché le API REST sono abilitate per impostazione predefinita nell’edizione per sviluppatori.
+>Assicurati di creare un account in [Salesforce Developer Edition](https://developer.salesforce.com/signup) in quanto le API REST sono abilitate per impostazione predefinita nell’edizione per sviluppatori.

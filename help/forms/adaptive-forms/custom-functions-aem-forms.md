@@ -1,6 +1,6 @@
 ---
 title: Funzioni personalizzate in AEM Forms
-description: Creare e utilizzare funzioni personalizzate in Modulo adattivo
+description: Creare e utilizzare funzioni personalizzate in un modulo adattivo
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -18,26 +18,26 @@ ht-degree: 0%
 
 # Funzioni personalizzate
 
-AEM Forms 6.5 ha introdotto la possibilità di definire funzioni JavaScript che possono essere utilizzate per definire regole di business complesse utilizzando l’editor di regole.
-AEM Forms fornisce numerose funzioni personalizzate preconfigurate, ma sarà necessario definire le proprie funzioni personalizzate e utilizzarle in più moduli.
+In AEM Forms 6.5 è stata introdotta la possibilità di definire funzioni JavaScript da utilizzare per definire regole di business complesse tramite l’editor di regole.
+AEM Forms fornisce una serie di funzioni personalizzate pronte all’uso, ma sarà necessario definire funzioni personalizzate e utilizzarle in più moduli.
 
-Per definire la prima funzione personalizzata, effettua le seguenti operazioni:
+Per definire la prima funzione personalizzata, procedere come segue:
 * [Accedi a crx](http://localhost:4502/crx/de/index.jsp#/apps/experience-league/clientlibs)
-* Crea una nuova cartella sotto le app denominate experience-league (questo nome di cartella può essere un nome a tua scelta)
+* Crea una nuova cartella in app denominata Experience-league (il nome della cartella può essere scelto dall’utente).
 * Salva le modifiche.
-* Sotto la cartella experience-league crea un nuovo nodo di tipo cq:ClientLibraryFolder chiamato clientlibs.
-* Seleziona la nuova cartella clientlibs e aggiungi le proprietà allowProxy e categories come mostrato nella schermata iniziale e salva le modifiche.
+* Nella cartella experience-league crea un nuovo nodo di tipo cq:ClientLibraryFolder denominato clientlibs.
+* Seleziona la cartella clientlibs appena creata e aggiungi le proprietà allowProxy e Categories come mostrato nella schermata e salva le modifiche.
 
 ![client-lib](assets/custom-functions.png)
-* Crea una cartella denominata **js** in **clientlibs** cartella
-* Crea un file denominato **function.js** in **js** cartella
-* Crea un file denominato **js.txt** in **clientlibs** cartella. Salva le modifiche.
-* La struttura della cartella deve essere simile alla schermata seguente.
+* Crea una cartella denominata **js** sotto **clientlibs** cartella
+* Crea un file denominato **function.js** sotto **js** cartella
+* Crea un file denominato **js.txt** sotto **clientlibs** cartella. Salva le modifiche.
+* La struttura delle cartelle deve essere simile alla schermata seguente.
 
 ![Editor regola](assets/folder-structure.png)
 
-* Fai doppio clic su function.js per aprire l&#39;editor.
-Copia il seguente codice in function.js e salva le modifiche.
+* Fai doppio clic su functions.js per aprire l’editor.
+Copia il seguente codice in functions.js e salva le modifiche.
 
 ```javascript
 /**
@@ -71,12 +71,12 @@ function convertUTC(strUTCString)
 }
 ```
 
-Per favore [fare riferimento a jsdoc ](https://jsdoc.app/index.html)per ulteriori informazioni sull’annotazione delle funzioni javascript.
+Per favore [fai riferimento a jsdoc ](https://jsdoc.app/index.html)per ulteriori dettagli sull’annotazione delle funzioni javascript.
 Il codice di cui sopra ha due funzioni:
-**getCountyNamesList** - restituisce un array di stringa
+**getCountyNamesList** - restituisce una matrice di stringa
 **convertUTC** - Converte la marca temporale UTC in fuso orario locale
 
-Apri js.txt e incolla il seguente codice e salva le modifiche.
+Apri il file js.txt e incolla il seguente codice, quindi salva le modifiche.
 
 ```javascript
 #base=js
@@ -86,9 +86,9 @@ functions.js
 La riga #base=js specifica in quale directory si trovano i file JavaScript.
 Le righe seguenti indicano la posizione del file JavaScript rispetto alla posizione di base.
 
-In caso di problemi nella creazione delle funzioni personalizzate, puoi [scarica e installa il pacchetto](assets/custom-functions.zip) nella tua istanza AEM.
+In caso di problemi durante la creazione delle funzioni personalizzate, non esitare a [scarica e installa questo pacchetto](assets/custom-functions.zip) nel suo caso di AEM.
 
 ## Utilizzo delle funzioni personalizzate
 
-Il video seguente illustra i passaggi necessari per utilizzare una funzione personalizzata nell’editor di regole di un modulo adattivo
+Il video seguente illustra i passaggi necessari per utilizzare la funzione personalizzata nell’editor di regole di un modulo adattivo
 >[!VIDEO](https://video.tv.adobe.com/v/340305?quality=12&learn=on)

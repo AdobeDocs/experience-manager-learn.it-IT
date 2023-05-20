@@ -1,6 +1,6 @@
 ---
-title: Configurare il modulo adattivo per attivare il flusso di lavoro
-description: Trigger workflow on Adaptive Form submission.
+title: Configurare un modulo adattivo per attivare il flusso di lavoro
+description: Attiva il flusso di lavoro per l’invio di moduli adattivi.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ---
 
-# Configure Adaptive Form to trigger workflow
+# Configurare un modulo adattivo per attivare il flusso di lavoro
 
 Configurare un modulo adattivo per attivare il flusso di lavoro di revisione
 

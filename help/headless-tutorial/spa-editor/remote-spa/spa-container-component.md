@@ -1,6 +1,6 @@
 ---
 title: Aggiungere componenti contenitore React modificabili a un SPA remoto
-description: Scopri come aggiungere componenti contenitore modificabili a un SPA remoto che consente AEM autori di trascinarvi componenti.
+description: Scopri come aggiungere componenti contenitore modificabili a un SPA remoto che consentono agli autori di AEM di trascinarvi i componenti.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
@@ -13,40 +13,40 @@ exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
 source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
 workflow-type: tm+mt
 source-wordcount: '1109'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 # Componenti contenitore modificabili
 
-[Componenti fissi](./spa-fixed-component.md) offre una certa flessibilità per l’authoring dei contenuti SPA, tuttavia questo approccio è rigido e richiede agli sviluppatori di definire con precisione la composizione dei contenuti modificabili. Per supportare la creazione di esperienze eccezionali da parte degli autori, SPA Editor supporta l’utilizzo di componenti contenitore nella SPA. I componenti contenitore consentono agli autori di trascinare e rilasciare i componenti consentiti nel contenitore e di crearli, proprio come nelle tradizionali funzioni di authoring di AEM Sites.
+[Componenti fissi](./spa-fixed-component.md) offre una certa flessibilità per l’authoring dei contenuti SPA, tuttavia questo approccio è rigido e richiede agli sviluppatori di definire la composizione esatta dei contenuti modificabili. Per supportare la creazione di esperienze eccezionali da parte degli autori, l’Editor SPA supporta l’utilizzo di componenti contenitore nell’SPA. I componenti contenitore consentono agli autori di trascinare e rilasciare i componenti consentiti nel contenitore e di crearli, come fanno nell’authoring AEM Sites tradizionale.
 
 ![Componenti contenitore modificabili](./assets/spa-container-component/intro.png)
 
-In questo capitolo, aggiungiamo un contenitore modificabile alla vista home che consente agli autori di comporre e impostare il layout di esperienze di contenuti avanzati utilizzando i componenti React modificabili direttamente nel SPA.
+In questo capitolo viene aggiunto un contenitore modificabile alla visualizzazione Home che consente agli autori di comporre e creare il layout di esperienze con contenuti avanzati utilizzando i componenti React modificabili direttamente nell’SPA.
 
 ## Aggiornare l’app WKND
 
 Per aggiungere un componente contenitore alla vista Home:
 
-+ Importa i componenti AEM React Modificabili `ResponsiveGrid` component
-+ Importare e registrare componenti React modificabili personalizzati (Testo e Immagine) da utilizzare nel componente ResponsiveGrid
++ Importare i componenti modificabili di React dell’AEM `ResponsiveGrid` componente
++ Importare e registrare componenti React modificabili personalizzati (testo e immagine) da utilizzare nel componente ResponsiveGrid
 
 ### Utilizzare il componente ResponsiveGrid
 
-Per aggiungere un’area modificabile alla vista Home:
+Per aggiungere un&#39;area modificabile alla vista Home:
 
 1. Apri e modifica `react-app/src/components/Home.js`
-1. Importa `ResponsiveGrid` componente da `@adobe/aem-react-editable-components` e aggiungilo al `Home` componente.
-1. Imposta i seguenti attributi nel `<ResponsiveGrid...>` component
+1. Importa `ResponsiveGrid` componente da `@adobe/aem-react-editable-components` e aggiungerlo al `Home` componente.
+1. Imposta i seguenti attributi su `<ResponsiveGrid...>` componente
    + `pagePath = '/content/wknd-app/us/en/home'`
    + `itemPath = 'root/responsivegrid'`
 
-   Questo istruisce il `ResponsiveGrid` per recuperare il relativo contenuto dalla risorsa AEM:
+   Questo istruisce il `ResponsiveGrid` componente per recuperarne il contenuto dalla risorsa AEM:
 
    + `/content/wknd-app/us/en/home/jcr:content/root/responsivegrid`
 
-   La `itemPath` mappe `responsivegrid` nodo definito nel `Remote SPA Page` Modello AEM e viene creato automaticamente sulle nuove AEM Pagine create da `Remote SPA Page` Modello AEM.
+   Il `itemPath` mappa su `responsivegrid` nodo definito in `Remote SPA Page` modello AEM e viene creato automaticamente nelle nuove pagine AEM create dal `Remote SPA Page` Modello AEM.
 
    Aggiorna `Home.js` per aggiungere `<ResponsiveGrid...>` componente.
 
@@ -72,21 +72,21 @@ Per aggiungere un’area modificabile alla vista Home:
    }
    ```
 
-La `Home.js` dovrebbe essere simile a:
+Il `Home.js` il file dovrebbe avere un aspetto simile a:
 
 ![Home.js](./assets/spa-container-component/home-js.png)
 
 ## Creare componenti modificabili
 
-Per ottenere l’effetto completo dei contenitori di esperienza di authoring flessibili forniti in SPA Editor. È già stato creato un componente Titolo modificabile, ma ne sono disponibili alcuni altri che consentono agli autori di utilizzare i componenti Testo e Immagine modificabili nel componente Griglia dinamica appena aggiunto.
+Ottenere il pieno effetto dei contenitori di esperienza di authoring flessibili forniti nell’editor SPA. È già stato creato un componente Titolo modificabile, ma creiamo alcuni altri che consentono agli autori di utilizzare componenti Testo e Immagine modificabili nel componente ResponsiveGrid appena aggiunto.
 
-I nuovi componenti Testo e Reazione immagine modificabili vengono creati utilizzando il pattern di definizione del componente modificabile esportato in [componenti fissi modificabili](./spa-fixed-component.md).
+I nuovi componenti Testo e Immagine modificabili di React vengono creati utilizzando il pattern di definizione del componente modificabile esportato in [componenti fissi modificabili](./spa-fixed-component.md).
 
 ### Componente testo modificabile
 
-1. Apri il progetto SPA nell’IDE
-1. Crea un componente React in `src/components/editable/core/Text.js`
-1. Aggiungi il codice seguente a `Text.js`
+1. Aprire il progetto SPA nell’IDE
+1. Creare un componente React in `src/components/editable/core/Text.js`
+1. Aggiungi il seguente codice a `Text.js`
 
    ```javascript
    import React from 'react'
@@ -113,8 +113,8 @@ I nuovi componenti Testo e Reazione immagine modificabili vengono creati utilizz
    }
    ```
 
-1. Crea un componente React modificabile in `src/components/editable/EditableText.js`
-1. Aggiungi il codice seguente a `EditableText.js`
+1. Creare un componente React modificabile in `src/components/editable/EditableText.js`
+1. Aggiungi il seguente codice a `EditableText.js`
 
    ```javascript
    import React from 'react'
@@ -143,15 +143,15 @@ I nuovi componenti Testo e Reazione immagine modificabili vengono creati utilizz
    export default EditableText;
    ```
 
-L’implementazione del componente Testo modificabile avrà l’aspetto seguente:
+L’implementazione del componente Testo modificabile deve essere simile alla seguente:
 
 ![Componente testo modificabile](./assets/spa-container-component/text-js.png)
 
 ### Componente immagine
 
-1. Apri il progetto SPA nell’IDE
-1. Crea un componente React in `src/components/editable/core/Image.js`
-1. Aggiungi il codice seguente a `Image.js`
+1. Aprire il progetto SPA nell’IDE
+1. Creare un componente React in `src/components/editable/core/Image.js`
+1. Aggiungi il seguente codice a `Image.js`
 
    ```javascript
    import React from 'react'
@@ -200,8 +200,8 @@ L’implementazione del componente Testo modificabile avrà l’aspetto seguente
    };
    ```
 
-1. Crea un componente React modificabile in `src/components/editable/EditableImage.js`
-1. Aggiungi il codice seguente a `EditableImage.js`
+1. Creare un componente React modificabile in `src/components/editable/EditableImage.js`
+1. Aggiungi il seguente codice a `EditableImage.js`
 
 ```javascript
 import { EditableComponent, MapTo } from '@adobe/aem-react-editable-components';
@@ -251,17 +251,17 @@ export default EditableImage;
    ...
    ```
 
-L’implementazione del componente Immagine modificabile avrà l’aspetto seguente:
+L’implementazione del componente Immagine modificabile sarà simile alla seguente:
 
 ![Componente immagine modificabile](./assets/spa-container-component/image-js.png)
 
 
 ### Importare i componenti modificabili
 
-La nuova creazione `EditableText` e `EditableImage` I componenti React sono indicati in SPA e vengono istanziati dinamicamente in base al JSON restituito da AEM. Per garantire che questi componenti siano disponibili per l’SPA, crea istruzioni di importazione per tali componenti in `Home.js`
+Il nuovo `EditableText` e `EditableImage` I componenti React sono indicati nell’SPA e vengono istanziati in modo dinamico in base al JSON restituito dall’AEM. Per garantire che questi componenti siano disponibili per l’SPA, crea le relative istruzioni di importazione in `Home.js`
 
-1. Apri il progetto SPA nell’IDE
-1. Aprire il file `src/Home.js`
+1. Aprire il progetto SPA nell’IDE
+1. Apri il file `src/Home.js`
 1. Aggiungi istruzioni di importazione per `AEMText` e `AEMImage`
 
    ```javascript
@@ -276,90 +276,90 @@ Il risultato dovrebbe essere simile al seguente:
 
 ![Home.js](./assets/spa-container-component/home-js-imports.png)
 
-Se queste importazioni sono _not_ inoltre, `EditableText` e `EditableImage` Il codice non viene richiamato da SPA, pertanto i componenti non sono mappati ai tipi di risorse specificati.
+Se tali importazioni sono _non_ aggiunto, il `EditableText` e `EditableImage` Il codice non può essere richiamato dall’SPA e, pertanto, i componenti non sono mappati sui tipi di risorse forniti.
 
 ## Configurazione del contenitore in AEM
 
-I componenti contenitore AEM utilizzano i criteri per dettare i componenti consentiti. Si tratta di una configurazione critica quando si utilizza SPA Editor, in quanto solo i componenti AEM che hanno mappato SPA controparti dei componenti possono essere sottoposti a rendering dal SPA. Assicurati che siano consentiti solo i componenti per i quali abbiamo fornito SPA implementazioni:
+I componenti contenitore AEM utilizzano i criteri per determinare i componenti consentiti. Si tratta di una configurazione critica quando si utilizza l’editor SPA, in quanto solo i componenti AEM che hanno mappato le controparti dei componenti SPA possono essere sottoposti a rendering da parte dell’SPA. Assicurati che siano consentiti solo i componenti per i quali abbiamo fornito le implementazioni SPA:
 
-+ `EditableTitle` mappato su `wknd-app/components/title`
-+ `EditableText` mappato su `wknd-app/components/text`
-+ `EditableImage` mappato su `wknd-app/components/image`
++ `EditableTitle` mappato a `wknd-app/components/title`
++ `EditableText` mappato a `wknd-app/components/text`
++ `EditableImage` mappato a `wknd-app/components/image`
 
-Per configurare il contenitore reponsivegrid del modello di pagina SPA remota:
+Per configurare il contenitore reponsivegrid del modello Pagina SPA remota:
 
 1. Accedi ad AEM Author
-1. Passa a __Strumenti > Generale > Modelli > App WKND__
+1. Accedi a __Strumenti > Generale > Modelli > App WKND__
 1. Modifica __Pagina Report SPA__
 
-   ![Criteri della griglia reattiva](./assets/spa-container-component/templates-remote-spa-page.png)
+   ![Criteri griglia reattiva](./assets/spa-container-component/templates-remote-spa-page.png)
 
-1. Seleziona __Struttura__ nel commutatore di modalità in alto a destra
-1. Tocca per selezionare la __Contenitore di layout__
-1. Tocca __Criterio__ icona nella barra a comparsa
+1. Seleziona __Struttura__ nel commutatore modalità in alto a destra
+1. Tocca per selezionare __Contenitore di layout__
+1. Tocca il __Policy__ icona nella barra a comparsa
 
-   ![Criteri della griglia reattiva](./assets/spa-container-component/templates-policies-action.png)
+   ![Criteri griglia reattiva](./assets/spa-container-component/templates-policies-action.png)
 
-1. Sulla destra, sotto il __Componenti consentiti__ scheda, espandi __APP WKND - CONTENUTO__
-1. Assicurati che siano selezionati solo i seguenti elementi:
+1. A destra, sotto __Componenti consentiti__ , espandere __APP WKND - CONTENUTO__
+1. Accertati che siano selezionati solo i seguenti elementi:
    + Immagine
    + Testo
    + Titolo
 
-   ![Pagina SPA remota](./assets/spa-container-component/templates-allowed-components.png)
+   ![Pagina SPA remoto](./assets/spa-container-component/templates-allowed-components.png)
 
-1. Toccate __Chiudi__
+1. Tocca __Fine__
 
-## Creazione del contenitore in AEM
+## Authoring del contenitore nell’AEM
 
-Dopo l’aggiornamento del SPA per incorporare il `<ResponsiveGrid...>`, wrapper per tre componenti React modificabili (`EditableTitle`, `EditableText`e `EditableImage`) e AEM viene aggiornato con un criterio Modello corrispondente, possiamo iniziare a creare contenuto nel componente contenitore .
+Dopo che l’SPA è stato aggiornato per incorporare il `<ResponsiveGrid...>`, wrapper per tre componenti React modificabili (`EditableTitle`, `EditableText`, e `EditableImage`), e l’AEM viene aggiornato con un criterio del modello corrispondente, possiamo iniziare a creare contenuti nel componente contenitore.
 
 1. Accedi ad AEM Author
-1. Passa a __Sites > App WKND__
-1. Tocca __Pagina principale__ e seleziona __Modifica__ dalla barra delle azioni superiore
-   + Viene visualizzato un componente Testo &quot;Ciao a tutti&quot;, che viene aggiunto automaticamente durante la generazione del progetto dall’archetipo AEM progetto
-1. Seleziona __Modifica__ dal selettore modalità in alto a destra dell’Editor pagina
+1. Accedi a __Sites > App WKND__
+1. Tocca __Home__ e seleziona __Modifica__ dalla barra delle azioni superiore
+   + Viene visualizzato un componente di testo &quot;Hello World&quot;, che veniva aggiunto automaticamente durante la generazione del progetto dall’archetipo del progetto AEM
+1. Seleziona __Modifica__ dal selettore modalità in alto a destra nell’Editor pagina
 1. Individua il __Contenitore di layout__ area modificabile sotto il titolo
-1. Apri __Barra laterale dell’Editor pagina__, quindi seleziona la __Vista Componenti__
-1. Trascina i seguenti componenti nel __Contenitore di layout__
+1. Apri __Barra laterale dell’Editor pagina__, e seleziona la __Vista Componenti__
+1. Trascina i seguenti componenti in __Contenitore di layout__
    + Immagine
    + Titolo
 1. Trascina i componenti per riordinarli nell’ordine seguente:
    1. Titolo
    1. Immagine
    1. Testo
-1. __Autore__ la __Titolo__ component
-   1. Tocca il componente Titolo e tocca il __chiave__ icona a __modifica__ il componente Titolo
-   1. Aggiungi il testo seguente:
-      + Titolo: __L&#39;estate sta arrivando, sfruttiamo al massimo!__
+1. __Autore__ il __Titolo__ componente
+   1. Tocca il componente Titolo, quindi tocca il __chiave inglese__ icona a __modifica__ il componente Titolo
+   1. Aggiungere il testo seguente:
+      + Titolo: __L&#39;estate sta arrivando, sfruttiamola al massimo!__
       + Tipo: __H1__
-   1. Toccate __Chiudi__
-1. __Autore__ la __Immagine__ component
-   1. Trascina un’immagine dalla barra laterale (dopo il passaggio alla visualizzazione Risorse) sul componente Immagine
-   1. Tocca il componente Immagine e tocca il __chiave__ icona da modificare
-   1. Controlla la __L&#39;immagine è decorativa__ spunta
-   1. Toccate __Chiudi__
-1. __Autore__ la __Testo__ component
-   1. Per modificare il componente Testo , toccate il componente Testo e toccate il pulsante __chiave__ icona
-   1. Aggiungi il testo seguente:
-      + _In questo momento, è possibile ottenere il 15% su tutte le avventure di 1 settimana, e il 20% di sconto su tutte le avventure che sono 2 settimane o più! Al momento del pagamento, aggiungi il codice della campagna SOMMERISVENING per ottenere i tuoi sconti!_
-   1. Toccate __Chiudi__
+   1. Tocca __Fine__
+1. __Autore__ il __Immagine__ componente
+   1. Trascina un’immagine in dalla barra laterale (dopo il passaggio alla vista Risorse) del componente Immagine
+   1. Tocca il componente Immagine, quindi tocca __chiave inglese__ icona da modificare
+   1. Controlla la __L&#39;immagine è decorativa__ casella di controllo
+   1. Tocca __Fine__
+1. __Autore__ il __Testo__ componente
+   1. Modifica il componente Testo toccando il componente Testo e toccando il __chiave inglese__ icona
+   1. Aggiungere il testo seguente:
+      + _In questo momento, puoi ottenere il 15% su tutte le avventure di 1 settimana e il 20% di sconto su tutte le avventure che sono di 2 settimane o più! Al momento del pagamento, aggiungi il codice della campagna SUMMERISCOMING per ottenere i tuoi sconti!_
+   1. Tocca __Fine__
 
-1. I componenti vengono ora creati, ma vengono sovrapposti verticalmente.
+1. I componenti ora sono creati, ma si sovrappongono in verticale.
 
    ![Componenti creati](./assets/spa-container-component/authored-components.png)
 
-Utilizza AEM modalità Layout per modificare le dimensioni e il layout dei componenti.
+Utilizza la modalità Layout AEM per regolare le dimensioni e il layout dei componenti.
 
 1. Passa a __Modalità Layout__ utilizzo del selettore modalità in alto a destra
 1. __Ridimensiona__ i componenti Immagine e Testo, in modo che siano affiancati
-   + __Immagine__ dovrebbe essere __8 colonne__
-   + __Testo__ dovrebbe essere __3 colonne__
+   + __Immagine__ il componente deve essere __Larghezza 8 colonne__
+   + __Testo__ il componente deve essere __Larghezza 3 colonne__
 
-   ![Componenti di layout](./assets/spa-container-component/layout-components.png)
+   ![Componenti layout](./assets/spa-container-component/layout-components.png)
 
-1. __Anteprima__ le modifiche in AEM Editor pagina
-1. Aggiorna l’app WKND in esecuzione localmente su [http://localhost:3000](Http://localhost:3000) per visualizzare le modifiche create!
+1. __Anteprima__ le modifiche apportate nell’Editor pagina per AEM
+1. Aggiorna l’app WKND in esecuzione localmente il [http://localhost:3000](Http://localhost:3000) per visualizzare le modifiche create.
 
    ![Componente contenitore in SPA](./assets/spa-container-component/localhost-final.png)
 
@@ -368,12 +368,12 @@ Utilizza AEM modalità Layout per modificare le dimensioni e il layout dei compo
 
 Hai aggiunto un componente contenitore che consente agli autori di aggiungere componenti modificabili all’app WKND. Ora sai come:
 
-+ Utilizza i componenti AEM React Modificabili `ResponsiveGrid` nel SPA
-+ Creare e registrare componenti React modificabili (Testo e Immagine) da utilizzare nel SPA tramite il componente contenitore
++ Utilizzare i componenti modificabili del React dell’AEM `ResponsiveGrid` componente dell&#39;SPA
++ Creare e registrare componenti React modificabili (testo e immagine) da utilizzare nell’SPA tramite il componente contenitore
 + Configurare il modello Pagina SPA remota per consentire i componenti abilitati per SPA
 + Aggiungere componenti modificabili al componente contenitore
-+ Componenti di authoring e layout nell’Editor SPA
++ Componenti di authoring e layout nell’editor SPA
 
 ## Passaggi successivi
 
-Il passaggio successivo utilizza la stessa tecnica per [aggiungi un componente modificabile a un percorso Dettagli avventura](./spa-dynamic-routes.md) nel SPA.
+Il passaggio successivo utilizza la stessa tecnica per [aggiungere un componente modificabile a un ciclo di lavorazione Dettagli avventura](./spa-dynamic-routes.md) dell&#39;SPA.

@@ -1,6 +1,6 @@
 ---
 title: Consegna e ritiro
-description: Scopri come utilizzare AEM funzioni di archiviazione e check-out per facilitare la collaborazione tra più utenti sulle risorse.
+description: Scopri come utilizzare le funzioni di check-in e check-out dell’AEM per facilitare la collaborazione tra più utenti sulle risorse.
 feature: Asset Management
 version: Cloud Service
 kt: 4542
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Consegna e ritiro
 
-Scopri come utilizzare AEM funzioni di archiviazione e check-out per facilitare la collaborazione tra più utenti sulle risorse.
+Scopri come utilizzare le funzioni di check-in e check-out dell’AEM per facilitare la collaborazione tra più utenti sulle risorse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32048?quality=12&learn=on)

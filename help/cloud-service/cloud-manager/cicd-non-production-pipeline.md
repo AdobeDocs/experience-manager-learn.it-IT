@@ -1,5 +1,5 @@
 ---
-title: Utilizzo di Adobe Cloud Manager - Pipeline di non produzione CI/CD
+title: Utilizzo della pipeline CI/CD non di produzione di Adobe Cloud Manager
 description: 'Le pipeline CI/CD non di produzione sono suddivise in due categorie: pipeline di qualità del codice e pipeline di implementazione. Le pipeline di qualità del codice instradano tutto il codice da un ramo Git per la generazione e la valutazione in base alla scansione della qualità del codice di Cloud Manager. Le pipeline di implementazione supportano l’implementazione automatica del codice dall’archivio Git in qualsiasi ambiente non di produzione, ovvero qualsiasi ambiente con provisioning AEM che non sia Stage o Production.'
 topics: Administration
 audience: administrator

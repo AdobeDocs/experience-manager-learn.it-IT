@@ -1,6 +1,6 @@
 ---
-title: Conversione di stringhe separate da virgola in array di stringhe nel flusso di lavoro AEM Forms
-description: quando il modello dati del modulo dispone di un array di stringhe come uno dei parametri di input, sarà necessario massaggiare i dati generati dall’azione di invio di un modulo adattivo prima di richiamare l’azione di invio del modello dati del modulo.
+title: Conversione di stringhe separate da virgole in una matrice di stringhe in AEM Forms Workflow
+description: quando il modello dati del modulo ha una matrice di stringhe come uno dei parametri di input, è necessario massaggiare i dati generati dall’azione di invio di un modulo adattivo prima di richiamare l’azione di invio del modello dati del modulo.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -16,30 +16,30 @@ ht-degree: 0%
 
 ---
 
-# Conversione di una stringa separata da virgole in una matrice di stringhe {#setting-value-of-json-data-element-in-aem-forms-workflow}
+# Conversione di stringhe separate da virgole in una matrice di stringhe {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
-Quando il modulo è basato su un modello di dati modulo con una matrice di stringhe come parametro di input, è necessario manipolare i dati del modulo adattivo inviati per inserire una matrice di stringhe. Ad esempio, se hai associato un campo casella di controllo a un elemento del modello dati del modulo di tipo matrice stringa, i dati del campo casella di controllo si trovano in un formato stringa separato da virgole. Il codice di esempio riportato di seguito mostra come sostituire la stringa separata da virgole con una matrice di stringhe.
+Quando il modulo è basato su un modello di dati del modulo con una matrice di stringhe come parametro di input, è necessario modificare i dati del modulo adattivo inviati per inserire una matrice di stringhe. Ad esempio, se hai associato un campo casella di controllo a un elemento del modello dati del modulo di tipo array di stringhe, i dati del campo casella di controllo sono in un formato stringa separato da virgole. Il codice di esempio riportato di seguito illustra come sostituire la stringa separata da virgole con una matrice di stringhe.
 
 ## Creare un passaggio del processo
 
-Un passaggio del processo viene utilizzato in un flusso di lavoro AEM quando si desidera che il flusso di lavoro esegua una determinata logica. Il passaggio del processo può essere associato a uno script ECMA o a un servizio OSGi. Il nostro passaggio di processo personalizzato esegue il servizio OSGi.
+Un passaggio di processo viene utilizzato in un flusso di lavoro AEM quando si desidera che il flusso di lavoro esegua una determinata logica. La fase del processo può essere associata a uno script ECMA o a un servizio OSGi. Il passaggio del processo personalizzato esegue il servizio OSGi.
 
-I dati inviati sono nel seguente formato. Il valore dell&#39;elemento businessUnits è una stringa separata da virgole che deve essere convertita in una matrice di stringa.
+Il formato dei dati inviati è il seguente. Il valore dell&#39;elemento businessUnits è una stringa separata da virgole che deve essere convertita in una matrice di stringa.
 
-![dati inviati](assets/submitted-data-string.png)
+![submit-data](assets/submitted-data-string.png)
 
-I dati di input per l’endpoint rimanente associato al modello dati del modulo richiedono un array di stringhe come mostrato in questa schermata. Il codice personalizzato nel passaggio del processo converte i dati inviati nel formato corretto.
+I dati di input per il resto dell’endpoint associato al modello dati del modulo prevedono un array di stringhe come mostrato in questa schermata. Il codice personalizzato nel passaggio del processo converte i dati inviati nel formato corretto.
 
 ![fdm-string-array](assets/string-array-fdm.png)
 
-Passiamo al passaggio del processo il percorso dell’oggetto JSON e il nome dell’elemento. Il codice nel passaggio del processo sostituisce i valori separati da virgola dell&#39;elemento in una matrice di stringhe.
-![fase del processo](assets/create-string-array.png)
+Passiamo il percorso dell’oggetto JSON e il nome dell’elemento al passaggio del processo. Il codice nel passaggio del processo sostituisce i valori separati da virgola dell’elemento in una matrice di stringhe.
+![passaggio del processo](assets/create-string-array.png)
 
 >[!NOTE]
 >
->Assicurati che il percorso del file dati nelle opzioni di invio del modulo adattivo sia impostato su &quot;Data.xml&quot;. Questo perché il codice nel passaggio del processo cerca un file denominato Data.xml sotto la cartella payload.
+>Assicurati che il percorso del file di dati nelle opzioni di invio del modulo adattivo sia impostato su &quot;Data.xml&quot;. Questo perché il codice nel passaggio del processo cerca un file denominato Data.xml nella cartella del payload.
 
-## Codice fase del processo
+## Elabora codice passaggio
 
 ```java
 import java.io.BufferedReader;
@@ -141,4 +141,4 @@ public class CreateStringArray implements WorkflowProcess {
 }
 ```
 
-Il bundle campione può essere [scaricato da qui](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar)
+Il bundle di esempio può essere [scaricato da qui](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar)

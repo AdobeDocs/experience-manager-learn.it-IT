@@ -1,6 +1,6 @@
 ---
 title: Utilizzo di Assets Essentials
-description: Scopri come scaricare risorse in Assets Essentials.
+description: Scopri come scaricare le risorse in Assets Essentials.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Utilizzo di Assets Essentials
 
-Scopri come filtrare, cercare e scaricare risorse in Assets Essentials.
+Scopri come filtrare, cercare e scaricare le risorse in Assets Essentials.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335861?quality=12&learn=on)

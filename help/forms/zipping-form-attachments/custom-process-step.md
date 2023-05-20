@@ -1,6 +1,6 @@
 ---
-title: Passaggio del processo personalizzato per gli allegati di file zip
-description: Passaggio del processo personalizzato per aggiungere gli allegati del modulo adattivo a un file zip e memorizzare il file zip in una variabile del flusso di lavoro
+title: Passaggio di processo personalizzato per file zip allegati
+description: Passaggio di processo personalizzato per aggiungere gli allegati del modulo adattivo a un file zip e archiviare il file zip in una variabile di flusso di lavoro
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -18,14 +18,14 @@ ht-degree: 1%
 # Passaggio processo personalizzato
 
 
-È stata implementata una fase di processo personalizzata per creare il file zip contenente gli allegati del modulo. Se non hai familiarità con la creazione del bundle OSGi, ti preghiamo di: [seguire queste istruzioni](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+È stato implementato un passaggio di processo personalizzato per creare il file zip contenente gli allegati del modulo. Se non hai familiarità con la creazione del bundle OSGi, [segui queste istruzioni](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
 
 Il codice nel passaggio del processo personalizzato esegue le seguenti operazioni
 
-* Esegui una query per tutti gli allegati del modulo adattivo nella cartella payload. Il nome della cartella viene passato come argomento del processo al passaggio del processo.
+* Esegui una query per tutti gli allegati del modulo adattivo nella cartella del payload. Il nome della cartella viene passato come argomento del processo al passaggio del processo.
 
-* Creare un file zip contenente gli allegati del modulo e archiviarlo nella cartella payload.
-* Imposta il valore della variabile del flusso di lavoro (no_of_attachment)
+* Crea un file zip contenente gli allegati del modulo e archivialo nella cartella del payload.
+* Imposta il valore della variabile del flusso di lavoro (no_of_attachments)
 
 
 
@@ -159,8 +159,8 @@ public class ZipFormAttachments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> Assicurati di avere una variabile chiamata  *no_of_attachment* di tipo Double nel flusso di lavoro perché questo codice funzioni.
+> Assicurati di disporre di una variabile denominata  *no_of_attachments* di tipo Doppio nel flusso di lavoro affinché questo codice funzioni.
 
 ## Passaggi successivi
 
-[Compilare le variabili del flusso di lavoro ArrayList con gli allegati e il nome dell&#39;allegato](./custom-process-step.md)
+[Popolare le variabili del flusso di lavoro ArrayList con Allegati e Nome allegato](./custom-process-step.md)

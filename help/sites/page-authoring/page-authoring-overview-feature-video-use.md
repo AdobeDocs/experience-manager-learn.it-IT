@@ -22,13 +22,13 @@ ht-degree: 21%
 
 ---
 
-# Creazione di una pagina {#authoring-page-aem-sites}
+# Authoring di una pagina {#authoring-page-aem-sites}
 
 Scopri come creare una pagina in Adobe Experience Manager Sites utilizzando l’interfaccia utente dell’Editor sito.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31828?quality=12&learn=on)
 
-In questo video vengono descritte le seguenti funzionalità o funzionalità:
+In questo video vengono trattate le seguenti funzionalità:
 
 * Creazione di una pagina basata su un modello
 * Introduce diverse modalità di authoring per una pagina
@@ -37,17 +37,17 @@ In questo video vengono descritte le seguenti funzionalità o funzionalità:
    * Sviluppatore
    * Timewarp  
 * Funzioni dell’Editor pagina
-   * Finder componente
+   * Ricerca componenti
    * Trova risorsa
 * Aggiunta di contenuto a un componente esistente
 * Aggiunta di un nuovo componente alla pagina
 * Proprietà pagina
    * Pubblica pagina
-   * Annullare la pubblicazione di una pagina
+   * Annulla pubblicazione pagina
    * Modifica modello
    * Visualizza come pubblicato
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Modifica della documentazione del contenuto di una pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it)
+* [Modifica della documentazione sul contenuto di una pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it)
 * [Guida rapida all’authoring delle pagine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)

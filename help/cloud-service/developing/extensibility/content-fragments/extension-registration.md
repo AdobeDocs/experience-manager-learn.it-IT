@@ -1,6 +1,6 @@
 ---
-title: Registrazione dell’estensione della console Frammento di contenuto AEM
-description: Scopri come registrare le estensioni della console Frammenti di contenuto .
+title: Registrazione dell’estensione della console Frammenti di contenuto AEM
+description: Scopri come registrare le estensioni della console Frammenti di contenuto.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -9,25 +9,25 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
+exl-id: ef2290d9-ba40-429b-b10d-e82d6c1c20f6
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
 
 ---
 
+# Registrazione dell’estensione
 
-# Registrazione delle estensioni
+Le estensioni della Console Frammenti di contenuto AEM sono app App Builder specializzate, basate su React e utilizzano [Spettro di reazione](https://react-spectrum.adobe.com/react-spectrum/) Framework interfaccia utente.
 
-AEM le estensioni della console Frammenti di contenuto sono app specializzate di App Builder, basate su React e utilizzano l’ [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/) Framework di interfaccia utente.
+Per definire dove e come viene visualizzata la console Frammenti di contenuto AEM con l’estensione, sono necessarie due configurazioni specifiche nell’app App Builder dell’estensione: il routing dell’app e la registrazione dell’estensione.
 
-Per definire dove e come viene visualizzata la AEM console Frammenti di contenuto l’estensione, nell’app App Builder dell’estensione sono necessarie due configurazioni specifiche: routing dell&#39;app e registrazione dell&#39;estensione.
+## Route delle app{#app-routes}
 
-## Indirizzi delle app{#app-routes}
+Dell&#39;estensione `App.js` dichiara il [Router React](https://reactrouter.com/en/main) che include una route di indice che registra l’estensione nella console Frammenti di contenuto AEM.
 
-L&#39;estensione `App.js` dichiara la [Reagisce router](https://reactrouter.com/en/main) che include una route di indice che registra l&#39;estensione nella AEM console Frammenti di contenuto.
-
-La route di indice viene richiamata quando viene inizialmente caricata AEM console Frammenti di contenuto e la destinazione di questo percorso definisce come l&#39;estensione viene esposta nella console.
+La route dell’indice viene richiamata quando inizialmente viene caricata la console Frammenti di contenuto AEM e la destinazione di questa route definisce il modo in cui l’estensione viene esposta nella console.
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/App.js`
 
@@ -50,26 +50,26 @@ function App(props) {
 }
 ```
 
-## Registrazione delle estensioni
+## Registrazione dell’estensione
 
-`ExtensionRegistration.js` deve essere caricato immediatamente tramite la via di indicizzazione dell&#39;estensione e agisce sul punto di registrazione dell&#39;estensione, definendo:
+`ExtensionRegistration.js` deve essere caricato immediatamente tramite la route di indice dell’estensione e agisce sul punto di registrazione dell’estensione, definendo:
 
-1. il tipo di estensione; a [menu intestazione](./header-menu.md) o [barra delle azioni](./action-bar.md) pulsante .
-   + [Menu Intestazione](./header-menu.md#extension-registration) le estensioni sono identificate dalle `headerMenu` proprietà sotto `methods`.
-   + [Barra delle azioni](./action-bar.md#extension-registration) le estensioni sono identificate dalle `actionBar` proprietà sotto `methods`.
-1. Definizione del pulsante di estensione, in `getButton()` funzione . Questa funzione restituisce un oggetto con campi:
+1. Il tipo di estensione; a [menu intestazione](./header-menu.md) o [barra delle azioni](./action-bar.md) pulsante.
+   + [Menu intestazione](./header-menu.md#extension-registration) le estensioni sono identificate dalla proprietà `headerMenu` proprietà in `methods`.
+   + [Barra delle azioni](./action-bar.md#extension-registration) le estensioni sono identificate dalla proprietà `actionBar` proprietà in `methods`.
+1. La definizione del pulsante di estensione, in `getButton()` funzione. Questa funzione restituisce un oggetto con campi:
    + `id` è un ID univoco per il pulsante
-   + `label` è l’etichetta del pulsante di estensione nella console Frammento di contenuto AEM
-   + `icon` è l’icona del pulsante di estensione nella console Frammento di contenuto AEM. L’icona è un [React Spectrum](https://spectrum.adobe.com/page/icons/) nome dell’icona, con gli spazi rimossi.
-1. Gestore di clic per il pulsante, in definito in un `onClick()` funzione .
-   + [Menu Intestazione](./header-menu.md#extension-registration) Le estensioni non trasmettono parametri al gestore di clic.
-   + [Barra delle azioni](./action-bar.md#extension-registration) Le estensioni forniscono un elenco dei percorsi di frammento di contenuto selezionati nella sezione `selections` parametro .
+   + `label` è l’etichetta del pulsante di estensione nella console Frammenti di contenuto AEM
+   + `icon` è l’icona del pulsante di estensione nella console Frammenti di contenuto AEM. L’icona è un [Spettro di reazione](https://spectrum.adobe.com/page/icons/) nome dell’icona, con spazi rimossi.
+1. Il gestore di clic per il pulsante, in definito in `onClick()` funzione.
+   + [Menu intestazione](./header-menu.md#extension-registration) le estensioni non trasmettono parametri al gestore di clic.
+   + [Barra delle azioni](./action-bar.md#extension-registration) fornisce un elenco dei percorsi dei frammenti di contenuto selezionati nella `selections` parametro.
 
-### Estensione Menu intestazione
+### Estensione del menu intestazione
 
-![Estensione Menu intestazione](./assets/extension-registration/header-menu.png)
+![Estensione del menu intestazione](./assets/extension-registration/header-menu.png)
 
-I pulsanti di estensione del menu intestazione vengono visualizzati quando non è selezionato alcun frammento di contenuto. Poiché le estensioni del menu di intestazione non agiscono in una selezione di frammenti di contenuto, non vengono forniti frammenti di contenuto al relativo `onClick()` handler.
+I pulsanti di estensione del menu Intestazione vengono visualizzati quando non è selezionato alcun frammento di contenuto. Poiché le estensioni del menu di intestazione non agiscono sulla selezione di un frammento di contenuto, non viene fornito alcun frammento di contenuto al relativo `onClick()` handler.
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -108,7 +108,7 @@ function ExtensionRegistration() {
   <div class="is-flex is-padded-small is-padded-big-mobile">
     <div>
       <p class="has-text-weight-bold is-size-36 is-size-27-touch is-margin-bottom-big has-text-blackest">Passa alla creazione di un’estensione del menu di intestazione</p>
-      <p class="has-text-blackest">Scopri come registrare e definire un’estensione del menu di intestazione nella AEM console Frammenti di contenuto .</p>
+      <p class="has-text-blackest">Scopri come registrare e definire un’estensione del menu di intestazione nella console Frammenti di contenuto AEM.</p>
       <div class="has-align-start is-margin-top-big">
         <a href="./header-menu.md" target="_blank" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
           <span class="spectrum-Button-label has-no-wrap has-text-weight-bold" title="Scopri come creare un’estensione del menu di intestazione">Scopri come creare un’estensione del menu di intestazione</span>
@@ -118,11 +118,11 @@ function ExtensionRegistration() {
   </div>
 </div>
 
-### Estensione barra delle azioni
+### Estensione della barra delle azioni
 
-![Estensione barra delle azioni](./assets/extension-registration/action-bar.png)
+![Estensione della barra delle azioni](./assets/extension-registration/action-bar.png)
 
-I pulsanti di estensione della barra delle azioni vengono visualizzati quando si selezionano uno o più frammenti di contenuto. I percorsi selezionati del frammento di contenuto sono resi disponibili all’estensione tramite `selections` nel `onClick(..)` handler.
+I pulsanti di estensione della barra delle azioni vengono visualizzati quando sono selezionati uno o più frammenti di contenuto. I percorsi del frammento di contenuto selezionato vengono resi disponibili per l’estensione tramite `selections` parametro, nel pulsante `onClick(..)` handler.
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -161,7 +161,7 @@ function ExtensionRegistration() {
   <div class="is-flex is-padded-small is-padded-big-mobile">
     <div>
       <p class="has-text-weight-bold is-size-36 is-size-27-touch is-margin-bottom-big has-text-blackest">Passa alla creazione di un'estensione della barra delle azioni</p>
-      <p class="has-text-blackest">Scopri come registrare e definire un’estensione della barra delle azioni nella AEM console Frammenti di contenuto .</p>
+      <p class="has-text-blackest">Scopri come registrare e definire un’estensione della barra delle azioni nella console Frammenti di contenuto AEM.</p>
       <div class="has-align-start is-margin-top-big">
         <a href="./action-bar.md" target="_blank" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
           <span class="spectrum-Button-label has-no-wrap has-text-weight-bold" title="Scopri come creare un’estensione della barra delle azioni">Scopri come creare un’estensione della barra delle azioni</span>
@@ -173,21 +173,21 @@ function ExtensionRegistration() {
 
 ## Includi estensioni in modo condizionale
 
-AEM le estensioni della console Frammenti di contenuto possono eseguire logiche personalizzate per limitare l’aspetto dell’estensione nella console Frammenti di contenuto AEM. Questo controllo viene eseguito prima del `register` chiama `ExtensionRegistration` e restituisce immediatamente se l&#39;estensione non deve essere visualizzata.
+Le estensioni della Console Frammenti di contenuto dell’AEM possono eseguire una logica personalizzata per limitare il momento in cui l’estensione viene visualizzata nella Console Frammenti di contenuto dell’AEM. Questo controllo viene eseguito prima del `register` chiama in `ExtensionRegistration` e restituisce immediatamente se l’estensione non deve essere visualizzata.
 
-Questo controllo ha un contesto limitato disponibile:
+Il contesto disponibile per questo controllo è limitato:
 
-+ L&#39;host AEM su cui viene caricata l&#39;estensione.
-+ Token di accesso AEM dell&#39;utente corrente.
++ L’host AEM su cui viene caricata l’estensione.
++ Token di accesso AEM dell’utente corrente.
 
-I controlli più comuni per il caricamento di un&#39;estensione sono:
+I controlli più comuni per il caricamento di un’estensione sono:
 
-+ Utilizzo dell’host AEM (`new URLSearchParams(window.location.search).get('repo')`) per determinare se l&#39;estensione deve essere caricata.
-   + Mostra l’estensione solo AEM ambienti che fanno parte di un programma specifico (come mostrato nell’esempio di seguito).
-   + Mostra l’estensione solo in un ambiente AEM specifico (ad es. AEM host).
-+ Utilizzo di un [Azione Adobe I/O Runtime](./runtime-action.md) per effettuare una chiamata HTTP a AEM per determinare se l&#39;utente corrente deve visualizzare l&#39;estensione.
++ Utilizzo dell&#39;host AEM (`new URLSearchParams(window.location.search).get('repo')`) per determinare se l&#39;estensione deve essere caricata.
+   + Mostra l’estensione solo sugli ambienti AEM che fanno parte di un programma specifico (come mostrato nell’esempio di seguito).
+   + Mostrare l’estensione solo in un ambiente AEM specifico (ad es. host AEM).
++ Utilizzo di un [Azione Adobe I/O Runtime](./runtime-action.md) effettuare una chiamata HTTP all’AEM per determinare se l’utente corrente deve visualizzare l’estensione.
 
-L&#39;esempio seguente illustra la limitazione dell&#39;estensione a tutti gli ambienti del programma `p12345`.
+L’esempio seguente illustra come limitare l’estensione a tutti gli ambienti nel programma `p12345`.
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 

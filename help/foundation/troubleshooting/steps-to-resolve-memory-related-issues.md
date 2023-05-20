@@ -1,5 +1,5 @@
 ---
-title: Passaggi per risolvere i problemi relativi alla memoria in AEM
+title: Passaggi per risolvere i problemi relativi alla memoria nell’AEM
 description: Passaggi per indagare e risolvere i problemi relativi alla memoria
 type: Troubleshooting
 role: Admin
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Passaggi per risolvere i problemi relativi alla memoria in AEM
+# Passaggi per risolvere i problemi relativi alla memoria nell’AEM
 
-*Questo video illustra i passaggi per risolvere i problemi relativi alla memoria in AEM.*
+*Questo video illustra i passaggi per risolvere i problemi relativi alla memoria nell’AEM.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335473?quality=12&learn=on)

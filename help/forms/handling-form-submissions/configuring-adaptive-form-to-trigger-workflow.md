@@ -1,6 +1,6 @@
 ---
-title: Configurazione del modulo adattivo per attivare AEM panoramica del flusso di lavoro
-description: Configurare le opzioni di payload quando si attiva AEM flusso di lavoro all’invio del modulo
+title: Panoramica sulla configurazione del modulo adattivo per attivare il flusso di lavoro AEM
+description: Configurare le opzioni di payload quando si attiva il flusso di lavoro AEM all’invio del modulo
 feature: Workflow
 topics: integrations
 audience: developer
@@ -21,24 +21,24 @@ ht-degree: 3%
 
 ---
 
-# Configurazione del modulo adattivo per attivare AEM flusso di lavoro
+# Configurazione del modulo adattivo per attivare il flusso di lavoro AEM
 
 ## Prerequisiti
 
-Il modulo di esempio utilizzato in questo flusso di lavoro si basa su un modello di modulo adattivo personalizzato che deve essere importato nel server AEM. Dopo l’importazione del modello è necessario importare il modulo di esempio fornito.
+Il modulo di esempio utilizzato in questo flusso di lavoro è basato su un modello di modulo adattivo personalizzato che deve essere importato nel server AEM. Il modulo di esempio fornito deve essere importato dopo l’importazione del modello.
 
-### Ottenere i modelli di modulo adattivi
+### Ottenere i modelli di modulo adattivo
 
-* Scarica [Modello di modulo adattivo](assets/af-form-template.zip)
-* [Importa il modello utilizzando il gestore dei pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
-* Carica e installa il modello di modulo adattivo
+* Scarica [Modello modulo adattivo](assets/af-form-template.zip)
+* [Importare il modello utilizzando Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+* Caricare e installare il modello di modulo adattivo
 
 ### Ottieni il modulo adattivo di esempio
 
 * Scarica [Modulo adattivo](assets/peak-application-form.zip)
 * Sfoglia per [Modulo E Documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Fai clic su Crea -> Caricamento file
-* Il modulo adattivo di esempio viene posizionato in una cartella denominata [Forms applicazione](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
+* Il modulo adattivo di esempio viene inserito in una cartella denominata [Forms applicazione](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
 Il video seguente spiega come configurare un modulo adattivo per attivare un flusso di lavoro AEM
 >[!VIDEO](https://video.tv.adobe.com/v/40258?quality=12&learn=on)

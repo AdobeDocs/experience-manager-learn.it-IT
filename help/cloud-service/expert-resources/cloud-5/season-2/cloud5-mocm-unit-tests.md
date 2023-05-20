@@ -1,5 +1,5 @@
 ---
-title: Cloud 5 - Mysteries of Cloud Manager - Test di unità
+title: Cloud 5 - Misteri di Cloud Manager - Test di unità
 description: Test di unità con AEM e Cloud Manager
 version: Cloud Service
 role: Admin, Developer
@@ -15,13 +15,13 @@ ht-degree: 4%
 
 ---
 
-# Cloud 5 - Mysteries of Cloud Manager - Test di unità
+# Cloud 5 - Misteri di Cloud Manager - Test di unità
 
-Un passo spesso trascurato nello sviluppo del software, i test di unità sono un&#39;attività estremamente importante che ogni sviluppatore deve completare. AEM fornisce molti controlli di qualità predefiniti in modo nativo, ma non possono testare tutto ciò che si può aver personalizzato o modificato.
+Un passaggio spesso trascurato nello sviluppo di software, gli unit test sono un&#39;attività estremamente importante che ogni sviluppatore dovrebbe completare. L’AEM fornisce in modo nativo molti controlli di qualità predefiniti, ma non può testare tutto ciò che puoi aver personalizzato o modificato.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343623?quality=12&learn=on)
 
 ## Contenuto trattato in questo video
 
-+ Panoramica dei controlli automatici
++ Panoramica di Controlli automatizzati
 + [Regole per la qualità del codice personalizzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html)

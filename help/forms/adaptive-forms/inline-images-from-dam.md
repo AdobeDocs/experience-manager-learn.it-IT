@@ -1,6 +1,6 @@
 ---
-title: Visualizzazione delle immagini DAM in linea in Forms adattivo
-description: Visualizzare le immagini DAM in linea in Forms adattivo
+title: Visualizzazione di immagini DAM in linea in Adaptive Forms
+description: Visualizzare immagini DAM in linea in Adaptive Forms
 feature: Adaptive Forms
 topics: development
 version: 6.4,6.5
@@ -10,20 +10,21 @@ level: Experienced
 last-substantial-update: 2022-10-20T00:00:00Z
 thumbnail: inline-dam.jpg
 kt: kt-11307
-source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
+exl-id: 339eb16e-8ad8-4b98-939c-b4b5fd04d67e
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
 
 ---
 
-# Visualizza l&#39;immagine DAM in Forms adattivo
+# Visualizzare l’immagine DAM in Adaptive Forms
 
-Un caso d&#39;uso comune è quello di visualizzare le immagini che risiedono nell&#39;archivio crx in linea in un modulo adattivo.
+Un caso d’uso comune consiste nel visualizzare le immagini residenti nell’archivio crx in linea in un modulo adattivo.
 
 ## Aggiungi immagine segnaposto
 
-Il primo passaggio consiste nell’anteporre un div segnaposto al componente pannello. Nel codice sottostante il componente pannello è identificato dal nome della classe CSS del foto-upload. La funzione JavaScript fa parte della libreria client associata ai moduli adattivi. Questa funzione viene chiamata nell&#39;evento initialize del componente file allegato.
+Il primo passaggio consiste nell’anteporre un div segnaposto al componente pannello. Nel codice seguente il componente pannello è identificato dal nome della classe CSS photo-upload. La funzione JavaScript fa parte della libreria client associata ai moduli adattivi. Questa funzione viene chiamata nell’evento di inizializzazione del componente file allegato.
 
 ```javascript
 /**
@@ -37,7 +38,7 @@ function addPlaceholderDiv(){
 
 ### Visualizza immagine in linea
 
-Dopo che l’utente ha selezionato l’immagine, il campo nascosto ImageName viene popolato con il nome immagine selezionato. Questo nome immagine viene quindi passato alla funzione damURLToFile che richiama la funzione createFile per convertire un URL in un BLOB per FileReader.readAsDataURL().
+Dopo che l’utente ha selezionato l’immagine, nel campo nascosto NomeImmagine viene inserito il nome immagine selezionato. Questo nome di immagine viene quindi passato alla funzione damURLToFile che richiama la funzione createFile per convertire un URL in un BLOB per FileReader.readAsDataURL().
 
 ```javascript
 /**
@@ -82,8 +83,8 @@ async function createFile(imageName){
 
 ### Distribuisci sul server
 
-* Scarica e installa la [libreria client e immagini di esempio](assets/InlineDAMImage.zip) nell’istanza di AEM utilizzando AEM Package Manager.
-* Scarica e installa la [modulo di esempio](assets/FieldInspectionForm.zip) sulla tua istanza AEM utilizzando AEM package manager.
-* Posiziona il browser su [ModuloIspezioneFile](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)
-* Selezionare una delle staffe
-* Dovresti visualizzare l’immagine visualizzata nel modulo
+* Scarica e installa [libreria client e immagini di esempio](assets/InlineDAMImage.zip) sull’istanza AEM tramite Gestione pacchetti AEM.
+* Scarica e installa [modulo di esempio](assets/FieldInspectionForm.zip) sull’istanza di AEM utilizzando Gestione pacchetti AEM.
+* Puntare il browser a [ModuloIspezioneFile](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)
+* Selezionate uno degli staffaggi
+* Dovresti visualizzare l’immagine nel modulo

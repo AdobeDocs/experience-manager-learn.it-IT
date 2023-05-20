@@ -1,6 +1,6 @@
 ---
-title: Passaggi per risolvere i problemi di conversione del PDFG per più utenti in una configurazione di Windows
-description: Risolvere i problemi relativi a più problemi di PDF Generator per l'utente durante l'installazione di Windows.
+title: Procedura per risolvere i problemi di conversione PDFG per più utenti in un'installazione di Windows
+description: Risolvere i problemi relativi a più PDF Generator utente in Installazione di Windows.
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Passaggi per risolvere i problemi di conversione del PDFG per più utenti in una configurazione di Windows
+# Procedura per risolvere i problemi di conversione PDFG per più utenti in un&#39;installazione di Windows
 
-*Questo video descrive il processo di risoluzione dei problemi di conversione del PDFG per più utenti in una configurazione di Windows.*
+*Questo video descrive il processo di risoluzione dei problemi di conversione PDFG per più utenti in una configurazione di Windows.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335550?quality=12&learn=on)

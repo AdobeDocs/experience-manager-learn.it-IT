@@ -1,6 +1,6 @@
 ---
-title: Imposta Sling Dynamic Include per AEM
-description: Una guida dettagliata all’installazione e all’utilizzo di Apache Sling Dynamic Include con AEM Dispatcher in esecuzione su Apache HTTP Web Server.
+title: Configurare Sling Dynamic Include per AEM
+description: Una procedura video per l’installazione e l’utilizzo di Apache Sling Dynamic Include con Dispatcher AEM in esecuzione sul server web Apache HTTP.
 version: 6.4, 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
@@ -21,18 +21,18 @@ ht-degree: 5%
 
 # Configurazione [!DNL Sling Dynamic Include]
 
-Una guida video dettagliata sull’installazione e l’utilizzo di [!DNL Apache Sling Dynamic Include] con [Dispatcher AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) in esecuzione [!DNL Apache HTTP Web Server].
+Una procedura video per l’installazione e l’utilizzo di [!DNL Apache Sling Dynamic Include] con [Dispatcher AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it) in esecuzione [!DNL Apache HTTP Web Server].
 
 >[!VIDEO](https://video.tv.adobe.com/v/17040?quality=12&learn=on)
 
 >[!NOTE]
 >
-> Assicurati che AEM Dispatcher sia installata localmente la versione più recente.
+> Assicurati che la versione più recente di Dispatcher per l’AEM sia installata localmente.
 
-1. Scarica e installa la [[!DNL Sling Dynamic Include] fascio](https://sling.apache.org/downloads.cgi).
-1. Configura [!DNL Sling Dynamic Include] tramite [!DNL OSGi Configuration Factory] a **http://&lt;host>:&lt;port>/system/console/configMgr/org.apache.sling.dinamicinclude.Configuration**.
+1. Scarica e installa [[!DNL Sling Dynamic Include] fascio](https://sling.apache.org/downloads.cgi).
+1. Configura [!DNL Sling Dynamic Include] tramite [!DNL OSGi Configuration Factory] a **http://&lt;host>:&lt;port>/system/console/configMgr/org.apache.sling.dynamicinclude.Configuration**.
 
-   Oppure, per aggiungere a una base di codice AEM, crea la **sling:OsgiConfig** nodo in:
+   Oppure, per aggiungere elementi a una base di codice AEM, crea la **sling:OsgiConfig** nodo in:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -56,7 +56,7 @@ Una guida video dettagliata sull’installazione e l’utilizzo di [!DNL Apache 
    -->
    ```
 
-1. (Facoltativo) Ripeti l’ultimo passaggio per consentire l’attivazione dei componenti [contenuto bloccato (iniziale) dei modelli modificabili](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/page-templates-editable.html) da servire tramite [!DNL SDI] anche. La ragione della configurazione aggiuntiva è che il contenuto bloccato dei modelli modificabili viene servito da `/conf` anziché `/content`.
+1. (Facoltativo) Ripeti l’ultimo passaggio per consentire l’utilizzo di componenti [contenuto bloccato (iniziale) di modelli modificabili](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/page-templates-editable.html) da notificare tramite [!DNL SDI] anche. Il motivo della configurazione aggiuntiva è che il contenuto bloccato dei modelli modificabili viene distribuito da `/conf` invece di `/content`.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -80,7 +80,7 @@ Una guida video dettagliata sull’installazione e l’utilizzo di [!DNL Apache 
    -->
    ```
 
-1. Aggiorna [!DNL Apache HTTPD Web server]s `httpd.conf` per abilitare [!DNL Include] modulo .
+1. Aggiorna [!DNL Apache HTTPD Web server]di `httpd.conf` file per attivare [!DNL Include] modulo.
 
    ```shell
    $ sudo vi .../httpd.conf
@@ -90,7 +90,7 @@ Una guida video dettagliata sull’installazione e l’utilizzo di [!DNL Apache 
    LoadModule include_module libexec/apache2/mod_include.so
    ```
 
-1. Aggiorna [!DNL vhost] file da rispettare include direttive.
+1. Aggiornare il [!DNL vhost] file da rispettare includi le direttive.
 
    ```shell
    $ sudo vi .../vhosts/aem-publish.local.conf
@@ -115,7 +115,7 @@ Una guida video dettagliata sull’installazione e l’utilizzo di [!DNL Apache 
    </VirtualHost>
    ```
 
-1. Aggiorna il file di configurazione dispatcher.any per supportare (1) `nocache` e (2) abilitare il supporto TTL.
+1. Aggiorna il file di configurazione dispatcher.any per supportare (1) `nocache` e (2) abilitano il supporto TTL.
 
    ```shell
    $ sudo vi .../conf/dispatcher.any
@@ -133,7 +133,7 @@ Una guida video dettagliata sull’installazione e l’utilizzo di [!DNL Apache 
 
    >[!TIP]
    >
-   > Lasciare il finale `*` fuori nel glob `*.nocache.html*` regola precedente, può [problemi nelle richieste di risorse secondarie](https://github.com/AdobeDocs/experience-manager-learn.en/issues/16).
+   > Uscita dal finale `*` nel globo `*.nocache.html*` regola precedente, può causare [problemi nelle richieste di risorse secondarie](https://github.com/AdobeDocs/experience-manager-learn.en/issues/16).
 
    ```shell
    /cache {
@@ -142,7 +142,7 @@ Una guida video dettagliata sull’installazione e l’utilizzo di [!DNL Apache 
    }
    ```
 
-1. Riavvia sempre [!DNL Apache HTTP Web Server] dopo aver apportato modifiche ai relativi file di configurazione o `dispatcher.any`.
+1. Riavvia sempre [!DNL Apache HTTP Web Server] dopo aver apportato modifiche ai file di configurazione o `dispatcher.any`.
 
    ```shell
    $ sudo apachectl restart
@@ -150,7 +150,7 @@ Una guida video dettagliata sull’installazione e l’utilizzo di [!DNL Apache 
 
 >[!NOTE]
 >
->Se utilizzi [!DNL Sling Dynamic Includes] per il server edge-side include (ESI), assicurati di memorizzare nella cache le informazioni rilevanti [intestazioni di risposta nella cache del dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders). Le intestazioni possibili includono:
+>Se sta usando [!DNL Sling Dynamic Includes] per gestire le inclusioni lato edge (ESI), assicurati di memorizzare nella cache le [intestazioni di risposta nella cache del dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders). Le intestazioni possibili includono:
 >
 >* &quot;Cache-Control&quot;
 >* &quot;Content-Disposition&quot;

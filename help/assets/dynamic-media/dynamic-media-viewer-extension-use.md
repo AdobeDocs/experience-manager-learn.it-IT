@@ -23,20 +23,20 @@ Per i clienti con Dynamic Media e Adobe Analytics, ora puoi monitorare l’utili
 
 >[!NOTE]
 >
-> Esegui Adobe Experience Manager in modalità Dynamic Media Scene7 per questa funzionalità. È inoltre necessario [integrare Adobe Experience Platform Launch con la tua istanza AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=it).
+> Esegui Adobe Experience Manager in modalità Dynamic Media Scene7 per questa funzionalità. È inoltre necessario [integrare Adobe Experience Platform Launch con l’istanza AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=it).
 
-Con l’introduzione dell’estensione Dynamic Media Viewer, Adobe Experience Manager offre ora il supporto di analisi avanzato per le risorse fornite con i visualizzatori Dynamic Media (5.13), fornendo un controllo più granulare sul tracciamento degli eventi quando un visualizzatore Dynamic Media viene utilizzato in una pagina Sites.
+Con l’introduzione dell’estensione Dynamic Media Viewer, Adobe Experience Manager offre ora il supporto di analisi avanzate per le risorse fornite con i visualizzatori Dynamic Media (5.13), fornendo un controllo più granulare sul tracciamento degli eventi quando un visualizzatore Dynamic Media viene utilizzato su una pagina Sites.
 
-Se disponi già di AEM Assets e Sites, puoi integrare la proprietà Launch con l’istanza di authoring AEM. Una volta associata l’integrazione di launch al sito web, puoi aggiungere alla pagina un componente multimediale dinamico con il tracciamento degli eventi per i visualizzatori abilitati.
+Se disponi già di AEM Assets e Sites, puoi integrare la proprietà Launch con l’istanza Autore AEM. Una volta che l’integrazione di launch è associata al sito web, puoi aggiungere alla pagina componenti Dynamic Media con il tracciamento degli eventi per i visualizzatori abilitato.
 
-Per i clienti AEM Assets-only o Dynamic Media Classic, l’utente può ottenere il codice da incorporare per un visualizzatore e aggiungerlo alla pagina. Le librerie Script di Launch possono quindi essere aggiunte manualmente alla pagina per il tracciamento degli eventi del visualizzatore.
+Per i clienti solo AEM Assets o Dynamic Media Classic, l’utente può ottenere il codice di incorporamento di un visualizzatore e aggiungerlo alla pagina. Le librerie di script di Launch possono quindi essere aggiunte manualmente alla pagina per il tracciamento degli eventi del visualizzatore.
 
-Nella tabella seguente sono elencati gli eventi del visualizzatore Dynamic Media e i relativi argomenti supportati:
+Nella tabella seguente sono elencati gli eventi di Dynamic Media Viewer e i relativi argomenti supportati:
 
 <table>
    <tbody>
       <tr>
-         <td>Nome evento del visualizzatore</td>
+         <td>Nome evento visualizzatore</td>
          <td>Riferimento argomento</td>
       </tr>
       <tr>
@@ -108,7 +108,7 @@ Nella tabella seguente sono elencati gli eventi del visualizzatore Dynamic Media
          <td> %event.detail.dm.METADATA.type% </td>
       </tr>
       <tr>
-         <td> PIETRA </td>
+         <td> MILESTONE </td>
          <td> %event.detail.dm.MILESTONE.milestone% </td>
       </tr>
       <tr>
@@ -128,19 +128,19 @@ Nella tabella seguente sono elencati gli eventi del visualizzatore Dynamic Media
          <td> %event.detail.dm.PLAY.timestamp% </td>
       </tr>
       <tr>
-         <td> SPIN </td>
+         <td> ROTAZIONE </td>
          <td> %event.detail.dm.SPIN.framenumber% </td>
       </tr>
       <tr>
-         <td> FERMARE </td>
+         <td> INTERROMPI </td>
          <td> %event.detail.dm.STOP.timestamp% </td>
       </tr>
       <tr>
-         <td> SWAP </td>
+         <td> SCAMBIA </td>
          <td> %event.detail.dm.SWAP.asset% </td>
       </tr>
       <tr>
-         <td> CAPPELLO </td>
+         <td> CAMPIONE </td>
          <td> %event.detail.dm.SWATCH.frame% </td>
       </tr>
       <tr>

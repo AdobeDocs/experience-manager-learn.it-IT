@@ -1,6 +1,6 @@
 ---
-title: Configurare un modulo adattivo per la compilazione e la firma da parte dell’utente
-description: In questo caso, il compilatore e il firmatario sono la stessa persona.
+title: Configurare un modulo adattivo che l’utente dovrà compilare e firmare
+description: In questo scenario, il compilatore del modulo e il firmatario sono la stessa persona.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -20,6 +20,6 @@ ht-degree: 0%
 # Configurare un modulo adattivo per lo scenario di compilazione e firma
 
 
-In questo video viene configurato il modulo in cui il compilatore e il firmatario sono la stessa persona
+Questo video configura il modulo in cui la stessa persona compila e firma
 
 >[!VIDEO](https://video.tv.adobe.com/v/332439?quality=12&learn=on)

@@ -1,5 +1,5 @@
 ---
-title: Creare un account di Cloud Service Adobe Target in AEM
+title: Creare un account di Cloud Service Adobe Target nell’AEM
 description: Integra Adobe Experience Manager as a Cloud Service con Adobe Target utilizzando l’autenticazione Cloud Service e Adobe IMS.
 topics: integrations, administration, development
 audience: administrator, developer
@@ -19,14 +19,14 @@ ht-degree: 0%
 
 ---
 
-# Creare un account di Cloud Service Adobe Target {#adobe-target-cloud-service}
+# Crea account di Cloud Service Adobe Target {#adobe-target-cloud-service}
 
-Il video seguente illustra come collegare AEM as a Cloud Service con Adobe Target.
+Il video seguente illustra come collegare AEM as a Cloud Service ad Adobe Target.
 
-Questa integrazione consente al servizio AEM Author di comunicare direttamente con Adobe Target e inviare frammenti esperienza da AEM a Target come offerte.  Questa integrazione *not* aggiungi JavaScript di Adobe Target (AT.js) alle pagine web AEM Sites, per le quali è integrato [AEM con Launch utilizzando l’estensione Target](../experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md).
+Questa integrazione consente al servizio di authoring di AEM di comunicare direttamente con Adobe Target e di inviare frammenti di esperienza dall’AEM a Target come offerte.  Questa integrazione *non* aggiungere JavaScript di Adobe Target (AT.js) alle pagine web di AEM Sites, per che integrano [AEM con Launch tramite l’estensione Target](../experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md).
 
 >[!VIDEO](https://video.tv.adobe.com/v/41244?quality=12&learn=on)
 
 >[!CAUTION]
 >
->C&#39;è un problema noto con la configurazione dei Cloud Services Adobe Target mostrata nel video. Fino a quando questo problema non viene risolto, segui gli stessi passaggi nel video ma utilizza il [configurazione legacy di Adobe Target Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html).
+>Esiste un problema noto con la configurazione dei Cloud Services Adobe Target mostrato nel video. Fino a quando questo problema non viene risolto, segui gli stessi passaggi del video, ma utilizza [configurazione dei Cloud Services legacy Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/aem-target-implementation/using-aem-cloud-services.html).

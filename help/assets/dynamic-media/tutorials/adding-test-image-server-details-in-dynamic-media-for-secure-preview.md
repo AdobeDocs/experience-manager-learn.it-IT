@@ -1,6 +1,6 @@
 ---
 title: Configurazione di un server di anteprima protetto per AEM Dynamic Media
-description: Configura il server di immagini di prova per l'anteprima protetta tramite AEM Dynamic Media Classic App.
+description: Configura il server immagini di prova per un’anteprima sicura utilizzando l’app Dynamic Media Classic per AEM.
 version: Cloud Service
 role: Developer
 level: Intermediate
@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Configurazione di un server di anteprima protetto per AEM Dynamic Media
 
-Questo video illustra come aggiungere dettagli di un server immagini di prova (filtri IP client) in Dynamic Media per un’anteprima protetta tramite Dynamic Media Classic App.
+Questo video illustra come aggiungere i dettagli di un server immagini di prova (filtri IP del client) in Dynamic Media per un’anteprima protetta tramite l’app Dynamic Media Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335462?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Passaggi per ripristinare la password predefinita per l'amministratore in AEM Forms OSGi
-description: Passaggi per ripristinare la password predefinita per l'amministratore in AEM Forms OSGi
+title: Procedura per ripristinare la password predefinita per l’amministratore in AEM Forms OSGi
+description: Procedura per ripristinare la password predefinita per l’amministratore in AEM Forms OSGi
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Passaggi per ripristinare la password predefinita per l&#39;amministratore in AEM Forms OSGi
+# Procedura per ripristinare la password predefinita per l’amministratore in AEM Forms OSGi
 
 *Questo video illustra i passaggi per reimpostare la password predefinita per l’amministratore in AEM Forms OSGi.*
 

@@ -17,6 +17,6 @@ ht-degree: 75%
 # Tutorial sulla cache di AEM Dispatcher{#dispatcher-tutorial}
 
 + [Panoramica](overview.md)
-+ [1 - Concetti, schemi e antipattern](chapter-1.md)
-+ [2 - Modello dell&#39;infrastruttura](chapter-2.md)
-+ [3 - Argomenti avanzati della memorizzazione in cache](chapter-3.md)
++ [1 - Concetti, modelli e antipatemi](chapter-1.md)
++ [2 - Schema dell&#39;infrastruttura](chapter-2.md)
++ [3 - Argomenti avanzati sulla memorizzazione in cache](chapter-3.md)

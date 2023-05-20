@@ -1,6 +1,6 @@
 ---
-title: Barra di ricerca per l’amministrazione delle risorse
-description: La barra di ricerca per l’amministrazione delle risorse consente di cercare le risorse utilizzando criteri personalizzati in Omnisearch.
+title: Barra di ricerca amministrazione risorse
+description: La barra di ricerca di amministrazione delle risorse consente di cercare le risorse utilizzando criteri personalizzati in Omnisearch.
 sub-product: Experience Manager Assets
 feature: Search
 version: Cloud Service
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# Barra di ricerca per l’amministrazione delle risorse
+# Barra di ricerca amministrazione risorse
 
-La barra di ricerca per l’amministrazione delle risorse consente di cercare le risorse utilizzando criteri personalizzati in Omnisearch.
+La barra di ricerca di amministrazione delle risorse consente di cercare le risorse utilizzando criteri personalizzati in Omnisearch.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35842?quality=12&learn=on)

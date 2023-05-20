@@ -1,6 +1,6 @@
 ---
-title: Implementazione della fase del processo personalizzato con la finestra di dialogo
-description: Scrittura di allegati di moduli adattivi nel file system utilizzando un passaggio del processo personalizzato
+title: Implementazione del passaggio del processo personalizzato con la finestra di dialogo
+description: Scrittura di allegati del modulo adattivo nel file system mediante un passaggio del processo personalizzato
 feature: Workflow
 version: 6.5
 topic: Development
@@ -10,31 +10,31 @@ last-substantial-update: 2021-06-09T00:00:00Z
 exl-id: 149d2c8c-bf44-4318-bba8-bec7e25da01b
 source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
 
 # Passaggio processo personalizzato
 
-Questa esercitazione è destinata ai clienti AEM Forms che devono implementare un componente flusso di lavoro personalizzato. Il primo passaggio nella creazione del componente flusso di lavoro è scrivere il codice Java che sarà associato al componente flusso di lavoro. Per lo scopo di questa esercitazione scriveremo una semplice classe java per memorizzare gli allegati del modulo adattivo al file system. Questo codice java leggerà gli argomenti specificati nel componente del flusso di lavoro.
+Questo tutorial è destinato ai clienti di AEM Forms che devono implementare un componente del flusso di lavoro personalizzato. Il primo passaggio nella creazione di un componente del flusso di lavoro consiste nella scrittura del codice Java che verrà associato al componente del flusso di lavoro. Ai fini di questo tutorial, scriveremo una semplice classe Java per memorizzare gli allegati del modulo adattivo nel file system. Questo codice Java leggerà gli argomenti specificati nel componente del flusso di lavoro.
 
-I seguenti passaggi sono necessari per scrivere la classe java e distribuire la classe come bundle OSGi
+Per scrivere la classe Java e distribuirla come bundle OSGi, sono necessari i seguenti passaggi
 
 ## Crea progetto Maven
 
-Il primo passo è quello di creare un progetto Maven utilizzando il tipo di archivio Maven Adobe appropriato. I passaggi dettagliati sono elencati in questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una volta importato il progetto Maven in eclipse, puoi iniziare a scrivere il tuo primo componente OSGi che può essere utilizzato nel passaggio del processo.
+Il primo passaggio consiste nel creare un progetto Maven utilizzando l’archetipo Maven di Adobe appropriato. I passaggi dettagliati sono elencati in [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una volta importato il progetto Maven nell’eclissi, sei pronto per iniziare a scrivere il primo componente OSGi che può essere utilizzato nel passaggio del processo.
 
 
-### Crea una classe che implementa WorkflowProcess
+### Crea classe che implementa WorkflowProcess
 
-Apri il progetto Maven nell’ambiente IDE. Espandi **nome progetto** > **nucleo centrale** cartella. Espandi la cartella src/main/java . Dovresti visualizzare un pacchetto che termina con &quot;core&quot;. Crea una classe Java che implementa WorkflowProcess in questo pacchetto. Sarà necessario sovrascrivere il metodo execute . La firma del metodo execute è come segue public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)throws WorkflowException
+Apri il progetto Maven nell’IDE dell’eclissi. Espandi **nomeprogetto** > **core** cartella. Espandi la cartella src/main/java. Dovresti vedere un pacchetto che termina con &quot;core&quot;. Creare la classe Java che implementa WorkflowProcess in questo pacchetto. Dovrai sovrascrivere il metodo di esecuzione. La firma del metodo execute è la seguente: public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)throws WorkflowException
 
-In questa esercitazione verranno scritti gli allegati aggiunti al modulo adattivo nel file system come parte del flusso di lavoro AEM.
+In questa esercitazione scriveremo gli allegati aggiunti al modulo adattivo nel file system come parte del flusso di lavoro AEM.
 
 Per eseguire questo caso d’uso, è stata scritta la seguente classe java
 
-Diamo un&#39;occhiata a questo codice
+Vediamo questo codice
 
 ```java
 package com.mysite.core;
@@ -116,20 +116,20 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
 ```
 
 
-* attachmentPath - Si tratta della stessa posizione specificata nel modulo adattivo quando hai configurato l&#39;azione di invio del modulo adattivo per richiamare AEM flusso di lavoro. Si tratta di un nome della cartella in cui si desidera salvare gli allegati in AEM rispetto al payload del flusso di lavoro.
+* attachmentsPath: si tratta della stessa posizione specificata nel modulo adattivo quando è stata configurata l’azione di invio del modulo adattivo per richiamare il flusso di lavoro AEM. Questo è il nome della cartella in cui si desidera salvare gli allegati in AEM rispetto al payload del flusso di lavoro.
 
-* saveToLocation : percorso in cui salvare gli allegati nel file system del server di AEM.
+* saveToLocation: è la posizione in cui si desidera salvare gli allegati nel file system del server AEM.
 
-Questi due valori vengono passati come argomenti di processo utilizzando la finestra di dialogo del componente flusso di lavoro
+Questi due valori vengono passati come argomenti del processo utilizzando la finestra di dialogo del componente flusso di lavoro
 
 ![ProcessStep](assets/custom-workflow-component.png)
 
-Il servizio QueryBuilder viene utilizzato per eseguire query sui nodi di tipo nt:file nella cartella attachmentPath. Il resto del codice esegue un&#39;iterazione attraverso i risultati della ricerca per creare un oggetto Document e salvarlo nel file system
+Il servizio QueryBuilder viene utilizzato per eseguire query sui nodi di tipo nt:file nella cartella attachmentPath. Il resto del codice scorre i risultati della ricerca per creare l&#39;oggetto Document e salvarlo nel file system
 
 
 >[!NOTE]
 >
->Poiché si utilizza un oggetto Document specifico per AEM Forms, è necessario includere nel progetto maven la dipendenza aemfd-client-sdk.
+>Poiché si utilizza un oggetto Document specifico di AEM Forms, è necessario includere nel progetto Maven la dipendenza aemfd-client-sdk.
 
 ```xml
 <dependency>
@@ -146,5 +146,5 @@ Il servizio QueryBuilder viene utilizzato per eseguire query sui nodi di tipo nt
 
 ## Passaggi successivi
 
-Crea il tuo [componente flusso di lavoro personalizzato](./custom-workflow-component.md)
+Crea [componente flusso di lavoro personalizzato](./custom-workflow-component.md)
 

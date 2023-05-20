@@ -1,7 +1,7 @@
 ---
 title: Utilizzo dell’Editor pagina con AEM Sites
 seo-title: Using the Page Editor with Adobe Experience Manager Sites
-description: Il video seguente evidenzia diverse delle funzioni principali dell’editor per siti dell’interfaccia utente touch in Adobe Experience Manager.
+description: Il video seguente evidenzia diverse delle funzioni principali dell’editor di siti dell’interfaccia touch di Adobe Experience Manager.
 seo-description: The following video highlights several of the top features of the Touch-UI Sites editor in Adobe Experience Manager.
 feature: Page Editor
 topics: authoring
@@ -18,13 +18,13 @@ exl-id: b120fb79-729e-4155-ba10-e5f7bb07eefa
 source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
 # Utilizzo dell’Editor pagina {#using-page-editor-with-aem-sites}
 
-AEM Editor pagina del sito è un potente strumento per la creazione e la modifica di contenuti web. Gli strumenti e le funzionalità dell’Editor pagina sono accessibili dalla barra degli strumenti dell’interfaccia utente dell’Editor pagina.
+L’Editor pagina del sito AEM è uno strumento utile per creare e modificare contenuti web. Gli strumenti e le funzionalità dell’Editor pagina sono accessibili dalla barra degli strumenti dell’interfaccia utente.
 
 Il video seguente evidenzia le funzioni principali dell’Editor pagina.
 
@@ -32,29 +32,29 @@ Il video seguente evidenzia le funzioni principali dell’Editor pagina.
 
 Le funzioni dell’editor pagina includono:
 
-* Trascinamento di componenti e risorse
+* Trascinare componenti e risorse
 * Pannello Struttura contenuto che fornisce un indice di tutti i componenti della pagina
 * Il pannello Informazioni pagina consente di accedere a informazioni aggiuntive e azioni rapide per un autore di contenuti
    * Apri proprietà
-   * Pagina di rollout
+   * Rollout pagina
    * Avvia flusso di lavoro
-   * Blocca pagina / Sblocca pagina
-   * Pubblicare/Annullare la pubblicazione di una pagina
+   * Blocca pagina/Sblocca pagina
+   * Pubblicare o annullare la pubblicazione di una pagina
    * Modifica modello
    * Visualizza come pubblicato
    * Visualizza in Amministrazione
    * Aiuto
 * Aggiunta di icone e descrizioni dei componenti al pannello dei componenti
-* Collegamento diretto per modificare le risorse nel DAM
+* Collegamento diretto per la modifica delle risorse in DAM
 * Emulatore per la modifica dei contenuti in linea e la gestione più rapida dei componenti sulla griglia reattiva
-* Modalità di modifica delle pagine
-   * Modalità Modifica
+* Modalità di modifica pagina
+   * Modalità modifica
    * Modalità Layout
    * Modalità Sviluppatore
-* Completamento automatico e ricerca di parole chiave per il campo del modulo di pathfinder
+* Completamento automatico e ricerca di parole chiave per il campo modulo di ricerca percorsi
 * Barra di stato del flusso di lavoro per la pagina corrente
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Modifica della documentazione del contenuto di una pagina](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guida utente all’authoring di siti](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [Modifica della documentazione sul contenuto di una pagina](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
+* [Guida utente all’authoring di Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)

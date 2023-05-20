@@ -1,6 +1,6 @@
 ---
 title: Creazione di un modulo adattivo
-description: Nella Parte1 creeremo Modulo adattivo, aggiungeremo e configureremo la barra degli strumenti con i pulsanti appropriati.
+description: Nella parte 1 verrà creato un modulo adattivo, verrà aggiunta e configurata una barra degli strumenti con i pulsanti appropriati.
 feature: Adaptive Forms
 kt: 4208
 thumbnail: 22173.jpg
@@ -10,8 +10,8 @@ level: Beginner
 exl-id: de3a0444-64ae-45a1-8329-aafa6f5add49
 source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '54'
+ht-degree: 3%
 
 ---
 
@@ -25,4 +25,4 @@ Verrà creato un modulo adattivo basato sul modello creato nella lezione precede
 
 ## Passaggi successivi
 
-[Aggiungi pannelli figlio al pannello principale](./configuring-root-panel-and-adding-child-panels.md)
+[Aggiungere pannelli secondari al pannello principale](./configuring-root-panel-and-adding-child-panels.md)

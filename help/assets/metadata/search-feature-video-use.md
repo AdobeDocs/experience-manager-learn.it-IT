@@ -1,6 +1,6 @@
 ---
 title: Utilizzo della ricerca in AEM Assets
-description: In questi video, esaminiamo alcuni miglioramenti alla ricerca Assets introdotti in AEM. Gli autori possono incrementare determinate risorse nei risultati della ricerca per parola chiave aggiornando le rispettive proprietà dei metadati. Sono inoltre disponibili alcune configurazioni avanzate per i predicati Asset OmniSearch.
+description: In questi video vengono esaminati alcuni miglioramenti introdotti nella ricerca delle risorse in AEM. Gli autori possono aumentare il numero di determinate risorse nei risultati della ricerca per parola chiave aggiornando le rispettive proprietà dei metadati. Vengono inoltre esaminate alcune configurazioni avanzate per i predicati Assets OmniSearch.
 version: 6.4, 6.5
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # Utilizzo della ricerca in AEM Assets{#using-search-in-aem-assets}
 
-In questi video, esaminiamo alcuni miglioramenti alla ricerca Assets introdotti in AEM. Gli autori possono incrementare determinate risorse nei risultati della ricerca per parola chiave aggiornando le rispettive proprietà dei metadati. Sono inoltre disponibili alcune configurazioni avanzate per i predicati Asset OmniSearch.
+In questi video vengono esaminati alcuni miglioramenti introdotti nella ricerca delle risorse in AEM. Gli autori possono aumentare il numero di determinate risorse nei risultati della ricerca per parola chiave aggiornando le rispettive proprietà dei metadati. Vengono inoltre esaminate alcune configurazioni avanzate per i predicati Assets OmniSearch.
 
-## Incremento della ricerca con i metadati delle risorse {#search-boost-asset}
+## Ottimizzazione delle ricerche con i metadati delle risorse {#search-boost-asset}
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766?quality=12&learn=on)
 
-## Configurazione avanzata dei predicati per più valori e per la ricerca di tag {#multi-value-tag-predicates}
+## Configurazione avanzata di predicati di ricerca con più valori e tag {#multi-value-tag-predicates}
 
-La **predicato di ricerca multivalore** è reso disponibile per una semplice corrispondenza del testo nei risultati della ricerca. Sono stati apportati diversi miglioramenti al predicato Tag anche per filtrare in modo più efficiente i risultati della ricerca delle risorse.
+Il **predicato di ricerca con più valori** è disponibile per una facile corrispondenza del testo nei risultati di ricerca. Sono stati apportati diversi miglioramenti al predicato Tag per filtrare in modo più efficiente i risultati della ricerca di risorse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16457?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Varianti dei frammenti di contenuto
-description: Scopri come creare varianti di frammenti di contenuto ed esaminare alcuni casi d’uso comuni.
+description: Scopri come creare varianti di Frammenti di contenuto ed esplorare alcuni casi d’uso comuni.
 version: Cloud Service
 topic: Headless, Content Management
 feature: Content Fragments, GraphQL API
@@ -19,13 +19,13 @@ ht-degree: 8%
 
 # Varianti dei frammenti di contenuto
 
-Scopri come creare varianti di frammenti di contenuto ed esaminare alcuni casi d’uso comuni.
+Scopri come creare varianti di Frammenti di contenuto ed esplorare alcuni casi d’uso comuni.
 
 In questo video:
 
 + Scopri come creare una variante di un frammento di contenuto
-+ Scopri come utilizzare le varianti in uno scenario reale
-+ Esamina la sintassi GraphQL per richiedere una variante specifica
++ Scopri come le varianti possono essere utilizzate in uno scenario reale
++ Controlla la sintassi GraphQL per richiedere una variante specifica
 
 >[!VIDEO](https://video.tv.adobe.com/v/333295?quality=12&learn=on)
 

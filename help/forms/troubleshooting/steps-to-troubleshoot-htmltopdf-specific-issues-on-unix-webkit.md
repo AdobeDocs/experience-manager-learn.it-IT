@@ -1,6 +1,6 @@
 ---
-title: Passaggi per la risoluzione dei problemi specifici di HtmltoPDF su una configurazione Unix (conversione WebKit)
-description: Risolvere i problemi relativi a HtmltoPDF utilizzando Webkit su configurazione UNIX.
+title: Procedura per la risoluzione dei problemi specifici di HtmltoPDF in una configurazione Unix (conversione WebKit)
+description: Risolvere i problemi relativi a HtmltoPDF utilizzando Webkit su UNIX Setup.
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Passaggi per la risoluzione dei problemi specifici di HtmltoPDF su una configurazione Unix (conversione WebKit)
+# Procedura per la risoluzione dei problemi specifici di HtmltoPDF in una configurazione Unix (conversione WebKit)
 
-*Questo video illustra il processo di risoluzione dei problemi specifici di HtmltoPDF su una configurazione Unix (conversione WebKit).*
+*Questo video illustra il processo di risoluzione dei problemi specifici di HtmltoPDF in una configurazione Unix (conversione WebKit).*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335548?quality=12&learn=on)

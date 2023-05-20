@@ -1,6 +1,6 @@
 ---
 title: Passaggi per abilitare la traccia ORB dettagliata
-description: Configurare registri ORB dettagliati per la risoluzione dei problemi relativi a PDF Generator
+description: Configurazione di registri ORB dettagliati per la risoluzione dei problemi relativi a PDF Generator
 type: Troubleshooting
 role: Admin
 level: Intermediate

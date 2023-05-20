@@ -1,6 +1,6 @@
 ---
-title: Informazioni sul Visualizzatore risorse con AEM Dynamic Media
-description: I miglioramenti AEM visualizzatore Dynamic Media consentono AEM autori di definire e personalizzare il modo in cui le risorse vengono presentate agli utenti del sito web.
+title: Informazioni su Asset Viewer con AEM Dynamic Media
+description: I miglioramenti apportati al visualizzatore Dynamic Media dell’AEM consentono agli autori dell’AEM di definire e personalizzare il modo in cui le risorse vengono presentate agli utenti del sito web.
 sub-product: Experience Manager Assets
 feature: Viewer Presets, Image Profiles
 version: 6.4, 6.5
@@ -15,16 +15,16 @@ ht-degree: 0%
 
 ---
 
-# Informazioni sul Visualizzatore risorse con AEM Dynamic Media{#understanding-the-asset-viewer-with-aem-dynamic-media}
+# Informazioni su Asset Viewer con AEM Dynamic Media{#understanding-the-asset-viewer-with-aem-dynamic-media}
 
-I miglioramenti AEM visualizzatore Dynamic Media consentono AEM autori di definire e personalizzare il modo in cui le risorse vengono presentate agli utenti del sito web.
+I miglioramenti apportati al visualizzatore Dynamic Media dell’AEM consentono agli autori dell’AEM di definire e personalizzare il modo in cui le risorse vengono presentate agli utenti del sito web.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17783?quality=12&learn=on)
 
 Alcuni miglioramenti importanti includono:
 
-* Seleziona in modo intuitivo un elemento visualizzatore dal predefinito per visualizzatori e personalizza le impostazioni, senza dover conoscere il componente visualizzatore.
-* Descrizioni utili per i modificatori che illustrano le impostazioni e i parametri del visualizzatore.
-* Mostra/Nascondi opzione CSS per apportare modifiche CSS avanzate. Possibilità di importare CSS personalizzati.
-* Galleria OOTB di pulsanti hotspot che riducono lo sviluppo di nuovi pulsanti.
-* Funzionalità di rendering grafica a pulsante alto pixel per display Retina.
+* Seleziona in modo intuitivo un elemento visualizzatore dal predefinito visualizzatore e personalizza le impostazioni, senza dover conoscere il componente visualizzatore.
+* Descrizioni comandi utili per i modificatori che spiegano le impostazioni e i parametri del visualizzatore.
+* Mostra/Nascondi opzione CSS per apportare modifiche CSS avanzate. Possibilità di importare file CSS personalizzati.
+* Galleria di pulsanti per punti attivi che riduce al minimo lo sviluppo di nuovi pulsanti.
+* Capacità di rendering di immagini con pulsanti ad alta risoluzione per i display retina.

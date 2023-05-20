@@ -1,6 +1,6 @@
 ---
-title: Creazione di versioni di pagina per le pagine AEM sito
-description: Il video seguente illustra come creare una versione di pagina, visualizzarne l’anteprima, ripristinare una versione di pagina e confrontare la versione corrente della pagina con le versioni salvate.
+title: Creazione di versioni di pagina per le pagine del sito AEM
+description: Il video seguente illustra come creare una versione di pagina, visualizzare in anteprima, ripristinare una versione di pagina e confrontare la versione corrente della pagina con una versione salvata.
 topics: authoring
 audience: author, marketer
 doc-type: feature video
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 # Creazione di versioni di pagina {#creating-page-versions-aem-sites}
 
-Il controllo delle versioni di pagina consente agli autori di contenuti di tenere traccia delle modifiche associate a una pagina creando una versione di pagina e offre l’opzione di visualizzare in anteprima una versione, ripristinarla e confrontare una versione con la versione corrente di una pagina.
+Il controllo delle versioni di una pagina consente agli autori di contenuto di tenere traccia delle modifiche associate a una pagina creando una versione della pagina e fornisce un’opzione per visualizzare in anteprima una versione, ripristinarla e confrontarla con la versione corrente di una pagina.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32151?quality=12&learn=on)
 
-Il controllo delle versioni crea un’istantanea di una pagina in un momento specifico. Con il controllo delle versioni è possibile eseguire le seguenti operazioni:
+Il controllo delle versioni crea un&#39;istantanea di una pagina in un determinato momento. Con il controllo delle versioni è possibile eseguire le azioni seguenti:
 * Creare una nuova versione per una pagina
-* Ripristinare una versione precedente di una pagina per annullare una modifica apportata, ad esempio
-* Confrontare la versione corrente di una pagina con una versione precedente con le differenze nel testo e nelle immagini evidenziate
+* Ripristinare una pagina a una versione precedente per annullare una modifica apportata a una pagina, ad esempio
+* Confronta la versione corrente di una pagina con una versione precedente, evidenziando differenze nel testo e nelle immagini

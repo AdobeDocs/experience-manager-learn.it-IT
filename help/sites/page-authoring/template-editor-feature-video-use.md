@@ -1,7 +1,7 @@
 ---
 title: Utilizzo di modelli di pagina modificabili con AEM Sites
 seo-title: Using Editable Page Templates with Adobe Experience Manager Sites
-description: I modelli modificabili consentono agli autori specializzati di creare e aggiornare modelli di pagina e gestire configurazioni di criteri avanzate con AEM Sites.
+description: I modelli modificabili consentono agli autori specializzati di creare e aggiornare modelli di pagina e gestire configurazioni avanzate delle policy con AEM Sites.
 seo-description: Editable templates allow specialized authors to create and update page templates and manage advanced policy configurations with Adobe Experience Manager Sites.
 feature: Editable Templates
 topics: authoring
@@ -23,19 +23,19 @@ ht-degree: 4%
 
 # Utilizzo di modelli di pagina modificabili{#using-template-editor-with-aem-sites}
 
-I modelli modificabili consentono agli autori specializzati di creare e aggiornare modelli di pagina e gestire configurazioni di criteri avanzate con Adobe Experience Manager (AEM) Sites.
+I modelli modificabili consentono agli autori specializzati di creare e aggiornare modelli di pagina e gestire configurazioni avanzate delle policy con Adobe Experience Manager (AEM) Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/326784?quality=12&learn=on)
 
-I modelli modificabili sono la raccomandazione per la creazione di un nuovo AEM Sites.
+I modelli modificabili sono il consiglio per la creazione di un nuovo AEM Sites.
 
-**Esperienza di authoring coerente** - I miglioramenti nell’authoring di AEM Sites vengono trasferiti alla modifica dei modelli, inclusa la modalità Layout in linea e il pannello Struttura contenuto.
+**Esperienza di authoring coerente** - I miglioramenti nell’authoring di AEM Sites vengono trasferiti alla modifica dei modelli, incluse la modalità Layout in linea e il pannello della struttura dei contenuti.
 
-**Configurazioni dei criteri avanzate** - Di seguito sono illustrate alcune configurazioni avanzate dei criteri rese disponibili con Modelli modificabili:
+**Configurazioni avanzate dei criteri** - Di seguito vengono illustrate alcune configurazioni avanzate dei criteri rese disponibili con i modelli modificabili:
 
-* **Contenitore di layout** : possibilità di configurare i componenti consentiti, gestire la mappatura Trascina + Rilascia di risorse e le colonne Griglia reattiva .
-* **Componente testo** - possibilità di configurare i plug-in dell’editor Rich Text con una nuova interfaccia utente e di riutilizzare i criteri dell’editor Rich Text tra i modelli.
-* **Componente immagine** - possibilità di attivare/disattivare funzioni quali ritaglio, caricamento file desktop con una nuova interfaccia utente e riutilizzo dei criteri immagine tra modelli.
+* **Contenitore di layout** : possibilità di configurare i componenti consentiti, gestire la mappatura Trascina + Rilascia delle risorse e le colonne Griglia reattiva.
+* **Componente Testo** : possibilità di configurare i plug-in dell’Editor Rich Text con una nuova interfaccia utente e di riutilizzare i criteri RTE tra i modelli.
+* **Componente Immagine** : possibilità di attivare/disattivare funzioni quali il ritaglio, il caricamento di file sul desktop con una nuova interfaccia utente e di riutilizzare i criteri per le immagini nei modelli.
 
 I modelli modificabili si trovano in **Strumenti** `>` **Generale** `>` **Modelli**.\
 URL modelli modificabili (istanza AEM locale): [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)

@@ -1,6 +1,6 @@
 ---
-title: Tag AEM, cartelle collegate a un progetto e metadati di cartelle per Workfront per AEM connettore avanzato
-description: Scopri come gestire i tag AEM utilizzati sulle risorse tramite dati Workfront, utilizzare le cartelle collegate ai progetti e i dati Workfront per AEM gli schemi di metadati delle cartelle di risorse.
+title: Tag AEM, cartelle collegate a un progetto e metadati di cartelle per il connettore avanzato di Workfront per AEM
+description: Scopri come utilizzare i tag AEM sulle risorse tramite i dati Workfront, utilizzare cartelle collegate a progetti e dati Workfront per AEM schemi di metadati delle cartelle di risorse.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, Architect, Developer
@@ -21,12 +21,12 @@ ht-degree: 0%
 
 ![Serie di esperti AEM](./assets/banner.png)
 
-Scopri come utilizzare i tag AEM sulle risorse tramite dati Workfront, configurare e utilizzare cartelle collegate a un progetto e i dati Workfront per AEM schemi di metadati delle cartelle di risorse.
+Scopri come utilizzare i tag AEM sulle risorse tramite i dati Workfront, configurare e utilizzare le cartelle collegate a un progetto e i dati Workfront per gli schemi di metadati delle cartelle di risorse AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340333?quality=12&learn=on)
 
-_Parte tre di una [serie di esperti in quattro parti su Workfront per Experience Manager connettore avanzato](./overview.md)_
+_Parte tre di a [serie di esperti in quattro parti sul connettore avanzato Workfront per Experience Manager](./overview.md)_
 
 ## Correzioni
 
-+ __@ 4:34 e 6:20__ La sintassi dei tag AEM non è corretta. Display video `we-retail:apparel/footwear`. La sintassi corretta è `["we-retail:apparel/footwear"]` o più in generale `["namespace:tag/childtag"]`.
++ __@ 4:34 e 6:20__ La sintassi dei tag AEM non è corretta. Visualizzazioni video `we-retail:apparel/footwear`. La sintassi corretta è `["we-retail:apparel/footwear"]` o più in generale `["namespace:tag/childtag"]`.

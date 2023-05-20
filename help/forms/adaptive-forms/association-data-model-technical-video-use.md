@@ -1,6 +1,6 @@
 ---
-title: Utilizzo di modelli di dati di associazione con AEM Forms
-description: Aggiungi associazioni tra entità nel modello dati modulo
+title: Utilizzo dei modelli di dati di associazione con AEM Forms
+description: Aggiungere associazioni tra entità nel modello dati modulo
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
 topic: Development
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Utilizzo di modelli di dati di associazione con AEM Forms{#using-association-data-models-with-aem-forms}
+# Utilizzo dei modelli di dati di associazione con AEM Forms{#using-association-data-models-with-aem-forms}
 
 Creare associazioni tra 2 entità nel modello dati modulo
 

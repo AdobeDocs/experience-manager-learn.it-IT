@@ -1,6 +1,6 @@
 ---
-title: Report sui campi di dati del modulo inviati tramite Adobe Analytics
-description: Integrare AEM Forms CS con Adobe Analytics per generare rapporti sui campi dei dati del modulo
+title: Generare rapporti sui campi dati del modulo inviati tramite Adobe Analytics
+description: Integrare AEM Forms CS con Adobe Analytics per creare rapporti sui campi dati dei moduli
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -9,7 +9,8 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 12557
-source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
+exl-id: b9dc505d-72c8-4b6a-974b-fc619ff7c256
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
@@ -20,14 +21,14 @@ ht-degree: 0%
 
 Nella proprietà Tags sono stati aggiunti due nuovi elementi dati (ApplicantsStateOfResidence e validationError).
 
-![adattivo](assets/data_elements.png)
+![modulo adattivo](assets/data_elements.png)
 
-## RicorrenteStateOfResidence
+## StatoDiResidenzaRichiedente
 
-La **RicorrenteStateOfResidence** elemento dati configurato selezionando **Core** nel menu a discesa dell’estensione e **Codice personalizzato** per il tipo di elemento dati come mostrato nella schermata sottostante
-![residenza del richiedente-Stato](assets/applicantstateofresidence.png)
+Il **StatoDiResidenzaRichiedente** l’elemento dati è stato configurato selezionando **Core** nel menu a discesa dell’estensione e **Codice personalizzato** per il tipo di elemento dati, come illustrato nella schermata seguente
+![Stato-richiedente-residenza](assets/applicantstateofresidence.png)
 
-Il seguente codice personalizzato è stato utilizzato per acquisire il valore dal **_stato_** campo modulo adattivo.
+Il seguente codice personalizzato è stato utilizzato per acquisire il valore da **_stato_** campo modulo adattivo.
 
 ```javascript
 // use the GuideBridge API to access adaptive form elements
@@ -39,11 +40,11 @@ return ApplicantsStateOfResidence;
 
 ## validationError
 
-La **ValidationError** elemento dati configurato selezionando **Core** nel menu a discesa dell’estensione e **Codice personalizzato** per il tipo di elemento dati come mostrato nella schermata sottostante
+Il **Errore di convalida** l’elemento dati è stato configurato selezionando **Core** nel menu a discesa dell’estensione e **Codice personalizzato** per il tipo di elemento dati, come illustrato nella schermata seguente
 
-![errore di convalida](assets/validation-error.png)
+![validation-error](assets/validation-error.png)
 
-Il seguente codice personalizzato è stato scritto per impostare il valore dell&#39;elemento dati validationError.
+Il seguente codice personalizzato è stato scritto per impostare il valore dell’elemento dati validationError.
 
 ```javascript
 var validationError = "";

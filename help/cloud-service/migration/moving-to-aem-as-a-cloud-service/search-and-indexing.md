@@ -1,6 +1,6 @@
 ---
 title: Ricerca e indicizzazione in AEM as a Cloud Service
-description: Scopri AEM indici di ricerca di as a Cloud Service, come convertire le definizioni AEM 6 e come distribuire gli indici.
+description: Scopri gli indici di ricerca di AEM as a Cloud Service, come convertire le definizioni degli indici AEM 6 e come distribuire gli indici.
 version: Cloud Service
 feature: Search
 topic: Migration, Upgrade
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Ricerca e indicizzazione
 
-Scopri AEM indici di ricerca di as a Cloud Service, come convertire AEM 6 definizioni di indice in modo AEM compatibile as a Cloud Service e come distribuire gli indici in AEM as a Cloud Service.
+Scopri gli indici di ricerca di AEM as a Cloud Service, come convertire le definizioni degli indici AEM 6 affinché siano compatibili con AEM as a Cloud Service e come distribuire gli indici in AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336963?quality=12&learn=on)
 
@@ -26,25 +26,25 @@ Scopri AEM indici di ricerca di as a Cloud Service, come convertire AEM 6 defini
 
 ![Strumento Convertitore indice](./assets/index-converter.png)
 
-Come parte del refactoring della base di codice, utilizza il [Strumento di conversione indice](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) per convertire le definizioni personalizzate dell&#39;indice Oak in definizioni di indici compatibili as a Cloud Service.
+Come parte del refactoring della base di codice, utilizza [Strumento Convertitore indice](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) per convertire le definizioni dell’indice Oak personalizzato in definizioni dell’indice compatibili con l’as a Cloud Service AEM.
 
 ## Attività chiave
 
-+ Utilizza la [Adobe I/O Workflow Migrator](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) strumento per migrare i flussi di lavoro per l’elaborazione delle risorse e utilizzare i microservizi Asset compute.
-+ Imposta un [ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it) e distribuire gli indici personalizzati. Assicurati che gli indici aggiornati siano aggiornati.
-+ Distribuisci la base di codice aggiornata in un ambiente di sviluppo AEM as a Cloud Service e continua a eseguire la convalida.
-+ Se modifichi un indice preconfigurato **SEMPRE** copia la definizione di indice più recente da un ambiente as a Cloud Service AEM in esecuzione nella versione più recente. Modifica la definizione dell&#39;indice copiata in base alle tue esigenze.
++ Utilizza il [Adobe I/O Workflow Migrator](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) strumento per migrare i flussi di lavoro di elaborazione delle risorse in modo da utilizzare i microservizi Asset compute.
++ Configurare un [ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it) e distribuire gli indici personalizzati. Assicurati che gli indici aggiornati siano aggiornati.
++ Distribuisci la base di codice aggiornata in un ambiente di sviluppo as a Cloud Service per AEM e continua a convalidarla.
++ Se si modifica un indice preconfigurato **SEMPRE** copia la definizione dell’indice più recente da un ambiente AEM as a Cloud Service in esecuzione sulla versione più recente. Modifica la definizione dell’indice copiato in base alle tue esigenze.
 
-## Esercitazione pratica
+## Esercizio pratico
 
-Applica la tua conoscenza provando quello che hai imparato con questo esercizio pratico.
+Applica la tua conoscenza sperimentando ciò che hai imparato con questo esercizio pratico.
 
-Prima di provare l&#39;esercizio pratico, assicurati di aver visto e compreso il video precedente e i seguenti materiali:
+Prima di provare l&#39;esercizio pratico, assicurati di aver guardato e compreso il video precedente e i seguenti materiali:
 
-+ [Pensare diversamente a AEM as a Cloud Service](./introduction.md)
++ [Pensare diversamente all’AEM as a Cloud Service](./introduction.md)
 + [Modernizzazione archivio](./repository-modernization.md)
 
-Inoltre, assicurati di aver completato l&#39;esercizio pratico precedente:
+Inoltre, assicurati di aver completato il precedente esercizio pratico:
 
 + [Esercitazione pratica sullo strumento Content Transfer (Trasferimento contenuti)](./content-migration/content-transfer-tool.md#hands-on-exercise)
 
@@ -53,18 +53,18 @@ Inoltre, assicurati di aver completato l&#39;esercizio pratico precedente:
         <td style="width:150px">
             <a  rel="noreferrer"
                 target="_blank"
-                href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session7-indexes#cloud-acceleration-bootcamp---session-7-search-and-indexing"><img alt="Esercitazione pratica dell’archivio GitHub" src="./assets/github.png"/>
+                href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session7-indexes#cloud-acceleration-bootcamp---session-7-search-and-indexing"><img alt="Esercitazione pratica archivio GitHub" src="./assets/github.png"/>
             </a>        
         </td>
         <td style="width:100%;margin-bottom:1rem;">
-            <div style="font-size:1.25rem;font-weight:400;">Hands-on con indici</div>
+            <div style="font-size:1.25rem;font-weight:400;">Pratico con gli indici</div>
             <p style="margin:1rem 0">
                 Esplora la definizione e la distribuzione degli indici Oak in AEM as a Cloud Service.
             </p>
             <a  rel="noreferrer"
                 target="_blank"
                 href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session7-indexes#cloud-acceleration-bootcamp---session-7-search-and-indexing" class="spectrum-Button spectrum-Button--primary spectrum-Button--sizeM">
-                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Prova l'indicizzazione</span>
+                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Prova l’indicizzazione</span>
             </a>
         </td>
     </tr>

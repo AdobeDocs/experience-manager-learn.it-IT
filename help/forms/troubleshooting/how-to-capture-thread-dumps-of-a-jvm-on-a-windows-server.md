@@ -1,6 +1,6 @@
 ---
-title: Come acquisire immagini di thread di una JVM su un server Windows
-description: Passaggi per acquisire i dump di thread di un processo Java su un server Windows
+title: Acquisire le immagini thread di una JVM su un server Windows
+description: Passaggi per acquisire le immagini thread di un processo Java su un server Windows
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Come acquisire immagini di thread di una JVM su un server Windows
+# Acquisire le immagini thread di una JVM su un server Windows
 
-*Questo video illustra i passaggi necessari per acquisire le immagini heap di una JVM su un server Windows.*
+*Questo video illustra i passaggi per acquisire le immagini heap di una JVM su un server Windows.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335493?quality=12&learn=on)

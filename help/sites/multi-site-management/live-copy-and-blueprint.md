@@ -1,6 +1,6 @@
 ---
-title: Comprendere la relazione tra una live copy e la relativa blueprint
-description: Il video seguente spiega come una Live Copy è correlata alla sua Blueprint in AEM Sites.
+title: Comprendere la relazione tra una Live Copy e la relativa blueprint
+description: Il video seguente spiega come una Live Copy è correlata alla sua blueprint in AEM Sites.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -20,8 +20,8 @@ ht-degree: 0%
 
 ---
 
-# Live Copy e stampa blu {#livecopy-blueprint}
+# Live Copy e blueprint {#livecopy-blueprint}
 
-Comprendere la relazione tra una live copy e la relativa blueprint in AEM Sites.
+Comprendere la relazione tra una Live Copy e la relativa blueprint in AEM Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36676?quality=12&learn=on)

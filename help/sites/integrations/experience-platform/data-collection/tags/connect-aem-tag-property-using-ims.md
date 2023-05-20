@@ -1,6 +1,6 @@
 ---
-title: Connetti AEM con la proprietà tag utilizzando IMS
-description: Scopri come connettersi AEM con Tag Property utilizzando la configurazione IMS in AEM. Questa configurazione autentica AEM con l’API Launch e consente AEM comunicare tramite le API Launch per accedere alle proprietà dei tag.
+title: Connettere l’AEM con la proprietà Tag utilizzando IMS
+description: Scopri come collegare l’AEM con Tag Property utilizzando la configurazione IMS nell’AEM. Questa configurazione autentica l’AEM con l’API Launch e consente all’AEM di comunicare tramite le API Launch per accedere alle proprietà Tag.
 topics: integrations
 audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
@@ -19,33 +19,33 @@ ht-degree: 2%
 
 ---
 
-# Connetti AEM con la proprietà tag utilizzando IMS{#connect-aem-and-tag-property-using-ims}
+# Connettere l’AEM con la proprietà Tag utilizzando IMS{#connect-aem-and-tag-property-using-ims}
 
 >[!NOTE]
 >
->Il processo di ridenominazione di Adobe Experience Platform Launch come set di tecnologie di raccolta dati è in corso di implementazione nell’interfaccia utente, nel contenuto e nella documentazione del prodotto AEM, pertanto il termine Launch è ancora in uso qui.
+>Il processo di ridenominazione di Adobe Experience Platform Launch come set di tecnologie di raccolta dati è in fase di implementazione nell’interfaccia utente, nel contenuto e nella documentazione del prodotto AEM, pertanto il termine Launch viene ancora utilizzato qui.
 
-Scopri come connettersi AEM con Tag Property utilizzando la configurazione IMS (Identity Management System) in AEM. Questa configurazione autentica AEM con l’API Launch e consente AEM comunicare tramite le API Launch per accedere alle proprietà dei tag.
+Scopri come collegare l’AEM con la proprietà Tag utilizzando la configurazione IMS (Identity Management System) nell’AEM. Questa configurazione autentica l’AEM con l’API Launch e consente all’AEM di comunicare tramite le API Launch per accedere alle proprietà Tag.
 
 ## Creare o riutilizzare la configurazione IMS
 
-La configurazione IMS tramite il progetto Adobe Developer Console è necessaria per integrare AEM con la nuova proprietà tag creata. Questa configurazione consente AEM comunicare con l’applicazione Tag utilizzando le API di Launch e IMS gestisce l’aspetto relativo alla sicurezza di questa integrazione.
+Per integrare l’AEM con la nuova proprietà Tag è necessaria la configurazione IMS utilizzando il progetto della console Adobe Developer. Questa configurazione consente all’AEM di comunicare con l’applicazione Tags utilizzando le API Launch e IMS gestisce l’aspetto della sicurezza di questa integrazione.
 
-Ogni volta che viene eseguito il provisioning di un ambiente AEM come Cloud Service, vengono create automaticamente alcune configurazioni IMS come Asset compute, Adobe Analytics e Adobe Launch. Creazione automatica **Adobe Launch** È possibile utilizzare la configurazione IMS o creare una nuova configurazione IMS se utilizzi AEM ambiente 6.X.
+Ogni volta che viene eseguito il provisioning di un ambiente AEM come Cloud Service, vengono create automaticamente alcune configurazioni IMS come Asset compute, Adobe Analytics e Adobe Launch. Creazione automatica **Adobe lancio** È possibile utilizzare la configurazione IMS oppure è necessario creare una nuova configurazione IMS se si utilizza l’ambiente AEM 6.X.
 
-Revisione creata automaticamente **Adobe Launch** Configurazione IMS tramite i passaggi seguenti.
+Revisione creata automaticamente **Adobe lancio** Configurazione IMS tramite i passaggi seguenti.
 
 1. In AEM apri il menu **Strumenti**
 
-1. Nella sezione Sicurezza , seleziona Configurazioni Adobe IMS.
+1. Nella sezione Sicurezza, seleziona Configurazioni Adobe IMS.
 
-1. Seleziona la **Adobe Launch** scheda e fai clic su **Proprietà**, esamina i dettagli da **Certificato** e **Account** schede. Quindi fai clic su **Annulla** per tornare senza modificare i dettagli creati automaticamente.
+1. Seleziona la **Adobe lancio** e fai clic su **Proprietà**, controlla i dettagli da **Certificato** e **Account** schede. Quindi fai clic su **Annulla** per tornare senza modificare i dettagli creati automaticamente.
 
-1. Seleziona la **Adobe Launch** scheda e questa volta fai clic su **Verifica stato**, dovresti visualizzare le **Completato** come sotto.
+1. Seleziona la **Adobe lancio** e questa volta fai clic **Verifica stato**, dovresti visualizzare **Completato** messaggio simile al seguente.
 
-   ![Configurazione di Adobe Launch Healthy IMS](assets/adobe-launch-healthy-ims-config.png)
+   ![Adobe di configurazione IMS integra per Launch](assets/adobe-launch-healthy-ims-config.png)
 
 
 ## Passaggi successivi
 
-[Creare una configurazione di Cloud Service Launch in AEM](create-aem-launch-cloud-service.md)
+[Creare una configurazione del Cloud Service Launch nell’AEM](create-aem-launch-cloud-service.md)

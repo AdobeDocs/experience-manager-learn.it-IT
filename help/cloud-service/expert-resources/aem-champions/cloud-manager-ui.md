@@ -1,6 +1,6 @@
 ---
-title: Suggerimenti e trucchi per AEM Champion - Interfaccia utente di Cloud Manager
-description: Scopri questi suggerimenti su come utilizzare l’interfaccia utente di Cloud Manager da AEM campione ed esperto, Rakesh Pasupuleti.
+title: Suggerimenti e trucchi per i campioni di AEM - Interfaccia utente di Cloud Manager
+description: Consulta questi suggerimenti su come utilizzare l’interfaccia utente di Cloud Manager dal campione ed esperto di AEM, Rakesh Pasupuleti.
 version: Cloud Service
 feature: Cloud Manager
 topic: Administration
@@ -17,9 +17,9 @@ ht-degree: 2%
 ---
 
 
-# Suggerimenti e trucchi per AEM Champion - Interfaccia utente di Cloud Manager
+# Suggerimenti e trucchi per i campioni di AEM - Interfaccia utente di Cloud Manager
 
-Dai un&#39;occhiata a questi suggerimenti dal tuo collega, Rakesh Pasupuleti. Rakesh è un campione di Adobe Experience Manager e spiega come navigare e comprendere l’interfaccia utente di Cloud Manager.
+Consulta questi suggerimenti dal tuo collega tecnico, Rakesh Pasupuleti. Rakesh è un campione di Adobe Experience Manager e spiega come navigare e comprendere l’interfaccia utente di Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419298?quality=12&learn=on)
 

@@ -23,8 +23,8 @@ Scopri come abilitare, creare, aggiornare ed eseguire query persistenti in AEM.
 
 In questo video:
 
-+ Scopri come abilitare le query persistenti GraphQL
++ Scopri come abilitare le query persistenti di GraphQL
 + Scopri come creare, aggiornare ed eseguire query GraphQL
-+ Comprendere i vantaggi delle query persistenti su query lato client
++ Comprendere i vantaggi delle query persistenti rispetto alle query lato client
 
 >[!VIDEO](https://video.tv.adobe.com/v/333429?quality=12&learn=on)

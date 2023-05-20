@@ -1,6 +1,6 @@
 ---
-title: Sviluppo di stati delle risorse in AEM Sites
-description: 'API di stato delle risorse di Adobe Experience Manager, è un framework pluggable per l''esposizione dei messaggi di stato in AEM diverse interfacce web dell''editor. '
+title: Sviluppo degli stati delle risorse in AEM Sites
+description: Le API di stato delle risorse di Adobe Experience Manager sono un framework collegabile per esporre i messaggi di stato in AEM in varie interfacce web dell’editor.
 topics: development
 audience: developer
 doc-type: tutorial
@@ -16,46 +16,46 @@ ht-degree: 2%
 
 # Sviluppo degli stati delle risorse {#developing-resource-statuses-in-aem-sites}
 
-API di stato delle risorse di Adobe Experience Manager, è un framework pluggable per l&#39;esposizione dei messaggi di stato in AEM diverse interfacce web dell&#39;editor.
+Le API di stato delle risorse di Adobe Experience Manager sono un framework collegabile per esporre i messaggi di stato in AEM in varie interfacce web dell’editor.
 
 ## Panoramica {#overview}
 
-Il framework Stato risorsa per editor fornisce API lato server e lato client per la visualizzazione e l&#39;interazione con gli stati dell&#39;editor, in modo standard e uniforme.
+Il framework Resource Status for Editors fornisce API lato server e lato client per visualizzare e interagire con gli stati dell&#39;editor in modo standard e uniforme.
 
-Le barre di stato dell’editor sono disponibili in modo nativo negli editor Pagina, Frammento esperienza e Modelli di AEM.
+Le barre di stato dell’editor sono disponibili in modo nativo negli editor di pagine, frammenti di esperienza e modelli dell’AEM.
 
-Esempi di casi di utilizzo per provider di stato delle risorse personalizzati:
+Di seguito sono riportati alcuni esempi di casi di utilizzo per provider di stato risorse personalizzati:
 
-* Notifica agli autori di una pagina entro 2 ore dall’attivazione pianificata
-* Notifica agli autori dell’attivazione di una pagina negli ultimi 15 minuti
-* Notifica agli autori che una pagina è stata modificata negli ultimi 5 minuti e da chi
+* Avviso agli autori quando una pagina si trova entro 2 ore dall&#39;attivazione pianificata
+* Avviso agli autori che una pagina è stata attivata negli ultimi 15 minuti
+* Avviso agli autori della modifica di una pagina negli ultimi 5 minuti e indicazione di chi ha eseguito la modifica
 
 ![Panoramica sullo stato delle risorse dell’editor AEM](assets/sample-editor-resource-status-screenshot.png)
 
-## Framework del provider dello stato della risorsa {#resource-status-provider-framework}
+## Framework provider stato risorse {#resource-status-provider-framework}
 
-Durante lo sviluppo di stati delle risorse personalizzati, il lavoro di sviluppo è composto da:
+Quando si sviluppano stati delle risorse personalizzati, il lavoro di sviluppo è composto da:
 
-1. Implementazione ResourceStatusProvider, responsabile per determinare se è necessario uno stato, e informazioni di base sullo stato: titolo, messaggio, priorità, variante, icona e azioni disponibili.
-2. Facoltativamente, JavaScript GraniteUI che implementa la funzionalità di eventuali azioni disponibili.
+1. Implementazione di ResourceStatusProvider, responsabile di determinare se è necessario uno stato e informazioni di base sullo stato: titolo, messaggio, priorità, variante, icona e azioni disponibili.
+2. Facoltativamente, GraniteUI JavaScript che implementa la funzionalità di tutte le azioni disponibili.
 
    ![architettura dello stato delle risorse](assets/sample-editor-resource-status-application-architecture.png)
 
-3. La risorsa di stato fornita come parte degli editor di pagine, frammenti esperienza e modelli viene assegnato un tipo tramite le risorse &quot;[!DNL statusType]&quot; proprietà.
+3. La risorsa di stato fornita come parte degli editor di pagine, frammenti di esperienza e modelli riceve un tipo tramite le risorse &quot;[!DNL statusType]&quot;.
 
    * Editor pagina: `editor`
    * Editor frammento esperienza: `editor`
    * Editor modelli: `template-editor`
 
-4. La risorsa di stato `statusType` corrisponde a registrato `CompositeStatusType` OSGi configurato `name` proprietà.
+4. Risorsa di stato `statusType` corrisponde a registrato `CompositeStatusType` Configurazione OSGi `name` proprietà.
 
-   Per tutte le corrispondenze, la variabile `CompositeStatusType's` i tipi vengono raccolti e utilizzati per raccogliere `ResourceStatusProvider` implementazioni con questo tipo, tramite `ResourceStatusProvider.getType()`.
+   Per tutte le corrispondenze, il `CompositeStatusType's` vengono raccolti e utilizzati per raccogliere `ResourceStatusProvider` implementazioni di questo tipo, tramite `ResourceStatusProvider.getType()`.
 
-5. La corrispondenza `ResourceStatusProvider` viene passato `resource` nell’editor e determina se il `resource` ha lo stato da visualizzare. Se è necessario lo stato, questa implementazione è responsabile della creazione di 0 o di molti `ResourceStatuses` per restituire, ciascuna rappresenta uno stato da visualizzare.
+5. La corrispondenza `ResourceStatusProvider` ha superato il `resource` nell&#39;editor e determina se `resource` ha lo stato da visualizzare. Se lo stato è necessario, questa implementazione è responsabile della generazione di 0 o molti `ResourceStatuses` per tornare, ciascuno rappresenta uno stato da visualizzare.
 
-   In genere un `ResourceStatusProvider` restituisce 0 o 1 `ResourceStatus` per `resource`.
+   In genere, un `ResourceStatusProvider` restituisce 0 o 1 `ResourceStatus` per `resource`.
 
-6. ResourceStatus è un&#39;interfaccia che può essere implementata dal cliente o dall&#39;utile `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` può essere utilizzato per creare uno stato. Uno stato è composto da:
+6. ResourceStatus è un&#39;interfaccia che può essere implementata dal cliente o l&#39;interfaccia `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` può essere utilizzato per creare uno stato. Uno stato è composto da:
 
    * Titolo
    * Messaggio
@@ -65,7 +65,7 @@ Durante lo sviluppo di stati delle risorse personalizzati, il lavoro di sviluppo
    * Azioni
    * Dati
 
-7. Facoltativamente, se `Actions` sono forniti per `ResourceStatus` oggetto , per associare funzionalità ai collegamenti azione nella barra di stato sono necessarie clientlibs di supporto.
+7. Facoltativamente, se `Actions` sono fornite per `ResourceStatus` oggetto, clientlibs di supporto sono necessari per associare la funzionalità ai collegamenti delle azioni nella barra di stato.
 
    ```js
    (function(jQuery, document) {
@@ -78,10 +78,10 @@ Durante lo sviluppo di stati delle risorse personalizzati, il lavoro di sviluppo
    })(jQuery, document);
    ```
 
-8. Qualsiasi JavaScript o CSS di supporto per le azioni, deve essere sottoposto a proxy tramite le rispettive librerie client di ogni editor per garantire che il codice front-end sia disponibile nell&#39;editor.
+8. Qualsiasi JavaScript o CSS che supporti le azioni deve essere inviato come proxy attraverso le rispettive librerie client di ogni editor per garantire che il codice front-end sia disponibile nell’editor.
 
-   * Categoria editor di pagine: `cq.authoring.editor.sites.page`
-   * Categoria dell’editor dei frammenti esperienza: `cq.authoring.editor.sites.page`
+   * Categoria editor pagina: `cq.authoring.editor.sites.page`
+   * Categoria editor frammento esperienza: `cq.authoring.editor.sites.page`
    * Categoria editor modelli: `cq.authoring.editor.sites.template`
 
 ## Visualizza il codice {#view-the-code}

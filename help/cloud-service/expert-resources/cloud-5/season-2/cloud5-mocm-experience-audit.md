@@ -1,6 +1,6 @@
 ---
-title: Cloud 5 - Mysteries of Cloud Manager - Experience Audit
-description: Esame di Cloud Manager e approfondimento della funzione Experience Audit
+title: Cloud 5 - Misteri di Cloud Manager - Audit dell’esperienza
+description: Analisi di Cloud Manager e approfondimento della funzione Audit dell’esperienza
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ---
 
-# Cloud 5 - Mysteries of Cloud Manager - Experience Audit
+# Cloud 5 - Misteri di Cloud Manager - Audit dell’esperienza
 
-Nella prima parte di una serie in tre parti, esploriamo le nozioni di base di Cloud Manager e immergiamo i piedi nelle funzionalità di Experience Audit.
+Nella prima parte di una serie in tre parti, esploriamo le nozioni di base di Cloud Manager e immergiamo i piedi nelle funzionalità di audit dell’esperienza.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343620?quality=12&learn=on)
 
 ## Contenuto trattato in questo video
 
 + Panoramica di Cloud Manager
-+ Familiarizzazione dell’interfaccia
++ Familiarizzazione dell&#39;interfaccia

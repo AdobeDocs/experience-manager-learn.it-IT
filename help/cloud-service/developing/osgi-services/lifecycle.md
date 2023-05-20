@@ -1,6 +1,6 @@
 ---
-title: Ciclo di vita dei componenti OSGi
-description: Scopri il ciclo di vita dei componenti OSGi, incluso come associare un servizio OSGi agli eventi del ciclo di vita di attivazione, modifica e disattivazione.
+title: Ciclo di vita del componente OSGi
+description: Scopri il ciclo di vita dei componenti OSGi, e come associare un servizio OSGi agli eventi di attivazione, modifica e disattivazione del ciclo di vita.
 role: Developer
 level: Beginner
 topic: Development
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Ciclo di vita del componente OSGi
 
-Scopri il ciclo di vita del componente OSGi, incluso come associare un servizio OSGi a:
+Scopri il ciclo di vita dei componenti OSGi e come associare un servizio OSGi a:
 
 + Attiva
 + Modificato
@@ -29,8 +29,8 @@ Scopri il ciclo di vita del componente OSGi, incluso come associare un servizio 
 
 ## Riferimenti
 
-+ [@Attiva JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Activate.html)
-+ [@JavaDocs modificato](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Modified.html)
++ [@Activate JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Activate.html)
++ [@Modified JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Modified.html)
 + [@Deactivate JavaDocs](https://javadoc.io/static/com.adobe.aem/aem-sdk-api/2021.7.5658.20210723T140305Z-210600/org/osgi/service/component/annotations/Deactivate.html)
 
 ## Codice

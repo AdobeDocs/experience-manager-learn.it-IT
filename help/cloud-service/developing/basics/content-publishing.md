@@ -1,6 +1,6 @@
 ---
-title: Come funziona la pubblicazione dei contenuti in AEM as a Cloud Service?
-description: Scopri come funziona la pubblicazione dei contenuti in AEM as a Cloud Service, compresi i concetti di Distribuzione dei contenuti e pipeline di Adobe.
+title: Come funziona la pubblicazione dei contenuti nell’AEM as a Cloud Service?
+description: Scopri come funziona la pubblicazione dei contenuti in AEM as a Cloud Service, compresi i concetti di Distribuzione dei contenuti e la pipeline di Adobe.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Pubblicazione dei contenuti
 
-Scopri come funziona la pubblicazione dei contenuti in AEM as a Cloud Service, compresi i concetti di Distribuzione dei contenuti e pipeline di Adobe.
+Scopri come funziona la pubblicazione dei contenuti in AEM as a Cloud Service, compresi i concetti di Distribuzione dei contenuti e la pipeline di Adobe.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330554?quality=12&learn=on)

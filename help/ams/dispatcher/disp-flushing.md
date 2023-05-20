@@ -1,19 +1,19 @@
 ---
-title: Scaricamento del Dispatcher AEM
-description: Scopri come AEM invalidare i vecchi file di cache dal Dispatcher.
+title: Scaricamento del dispatcher AEM
+description: Scopri in che modo l’AEM invalida i vecchi file della cache da Dispatcher.
 version: 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
+exl-id: 461873a1-1edf-43a3-b4a3-14134f855d86
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '2223'
 ht-degree: 0%
 
 ---
-
 
 # URL personalizzati del dispatcher
 
@@ -21,76 +21,76 @@ ht-degree: 0%
 
 [&lt;- Precedente: Uso e nozioni di base sulle variabili](./variables.md)
 
-Questo documento fornisce indicazioni su come si verifica lo scaricamento e illustra il meccanismo che esegue lo scaricamento e l’invalidazione della cache.
+Questo documento fornisce indicazioni su come avviene lo scaricamento e illustra il meccanismo che esegue lo scaricamento e l’invalidazione della cache.
 
 
 ## Come funziona
 
-### Ordine di funzionamento
+### Ordine delle operazioni
 
-Il flusso di lavoro tipico è meglio descritto quando gli autori di contenuti attivano una pagina, quando l’editore riceve il nuovo contenuto, innesca una richiesta di scaricamento al Dispatcher come mostrato nel diagramma seguente:
-![l’autore attiva il contenuto, il che induce l’editore a inviare una richiesta di scaricamento a Dispatcher](assets/disp-flushing/dispatcher-flushing-order-of-events.png "ordine degli eventi del dispatcher-flushing")
-Questa concatenazione di eventi evidenzia che gli elementi vengono scaricati solo quando sono nuovi o sono cambiati.  In questo modo, il contenuto è stato ricevuto dall’editore prima di cancellare la cache per evitare race condition in cui lo scaricamento potrebbe verificarsi prima che le modifiche possano essere recuperate dall’editore.
+Il flusso di lavoro tipico è meglio descritto quando gli autori di contenuti attivano una pagina, quando l’editore riceve il nuovo contenuto innesca una richiesta di scaricamento al Dispatcher come mostrato nel diagramma seguente:
+![l’autore attiva il contenuto, che porta l’editore a inviare una richiesta di scaricamento a Dispatcher](assets/disp-flushing/dispatcher-flushing-order-of-events.png "dispatcher-flushing-order-of-events")
+Questo concatenamento di eventi evidenzia che gli elementi vengono scaricati solo quando sono nuovi o sono stati modificati.  In questo modo il contenuto viene ricevuto dall’editore prima di cancellare la cache per evitare race condition in cui lo scaricamento potrebbe verificarsi prima che le modifiche possano essere prelevate dall’editore.
 
 ## Agenti di replica
 
 Sull’autore c’è un agente di replica configurato per indicare all’editore che quando qualcosa viene attivato si attiva per inviare il file e tutte le sue dipendenze all’editore.
 
-Quando l’editore riceve il file, dispone di un agente di replica configurato per puntare al Dispatcher che si attiva sull’evento on-receive.  Successivamente serializza una richiesta di scaricamento e la invia al Dispatcher.
+Quando l’editore riceve il file, questo ha un agente di replica configurato per puntare al Dispatcher che attiva l’evento al ricevimento.  Successivamente, serializza una richiesta di scaricamento e la invia a Dispatcher.
 
-### AGENTE DI REPLICA DELL&#39;AUTORE
+### AGENTE DI REPLICA AUTORE
 
-Di seguito sono riportati alcuni esempi di schermate di un agente di replica standard configurato
+Ecco alcuni esempi di schermate di un agente di replica standard configurato
 ![schermata dell’agente di replica standard dalla pagina web AEM /etc/replication.html](assets/disp-flushing/author-rep-agent-example.png "author-rep-agent-example")
 
 In genere sono configurati 1 o 2 agenti di replica sull’autore per ogni editore a cui replicano il contenuto.
 
-Il primo è l’agente di replica standard a cui spinge le attivazioni dei contenuti.
+Il primo è l’agente di replica standard che invia le attivazioni dei contenuti a.
 
-Il secondo è l&#39;agente inverso.  Questo è facoltativo ed è configurato per controllare ogni pubblicazione outbox per vedere se c&#39;è nuovo contenuto da richiamare nell&#39;autore come attività di replica inversa
+Il secondo è l&#39;agente inverso.  Questo è facoltativo ed è impostato per controllare ogni uscita degli editori per vedere se ci sono nuovi contenuti da richiamare nell’autore come attività di replica inversa
 
-### AGENTE DI REPLICA DELL&#39;EDITORE
+### AGENTE DI REPLICA DEL SERVER DI PUBBLICAZIONE
 
 Ecco un esempio di schermata di un agente di replica di scaricamento standard configurato
-![schermata dell&#39;agente di replica di scaricamento standard dalla pagina web AEM /etc/replication.html](assets/disp-flushing/publish-flush-rep-agent-example.png "publish-flush-rep-agent-example")
+![schermata dell’agente di replica di scaricamento standard dalla pagina web AEM /etc/replication.html](assets/disp-flushing/publish-flush-rep-agent-example.png "esempio publish-flush-rep-agent-example")
 
-### REPLICA FLUSH DEL DISPATCHER CHE RICEVE UN HOST VIRTUALE
+### REPLICA DI SVUOTAMENTO DEL DISPATCHER CHE RICEVE L’HOST VIRTUALE
 
-Il modulo Dispatcher cerca intestazioni particolari per sapere quando una richiesta di POST è qualcosa da trasmettere a AEM rendering o se è serializzata come richiesta di scaricamento e deve essere gestita dal gestore del Dispatcher stesso.
+Il modulo Dispatcher cerca intestazioni particolari per sapere se una richiesta POST è da passare ai rendering AEM o se si tratta di una richiesta serializzata come richiesta di scaricamento e deve essere gestita dal gestore Dispatcher stesso.
 
 Ecco una schermata della pagina di configurazione che mostra questi valori:
-![immagine della scheda delle impostazioni della schermata di configurazione principale con il tipo di serializzazione mostrato come Dispatcher Flush](assets/disp-flushing/disp-flush-agent1.png "disp-flush-agent1")
+![immagine della scheda delle impostazioni della schermata di configurazione principale con il Tipo di serializzazione indicato come Dispatcher Flush](assets/disp-flushing/disp-flush-agent1.png "disp-flush-agent1")
 
-La pagina delle impostazioni predefinite mostra la `Serialization Type` come `Dispatcher Flush` e imposta il livello di errore
+La pagina di impostazione predefinita mostra `Serialization Type` as `Dispatcher Flush` e imposta il livello di errore
 
-![Schermata della scheda di trasporto dell’agente di replica.  Mostra l’URI a cui inviare la richiesta di scaricamento.  /dispatcher/invalidate.cache](assets/disp-flushing/disp-flush-agent2.png "disp-flush-agent2")
+![Schermata della scheda di trasporto dell’agente di replica.  Questo mostra l’URI a cui inviare la richiesta di scaricamento.  /dispatcher/invalidate.cache](assets/disp-flushing/disp-flush-agent2.png "disp-flush-agent2")
 
-Sulla `Transport` è possibile visualizzare la scheda `URI` impostato per puntare l’indirizzo IP del Dispatcher che riceverà le richieste di scaricamento.  Il percorso `/dispatcher/invalidate.cache` non è il modo in cui il modulo determina se si tratta di uno scaricamento, è solo un endpoint ovvio che puoi vedere nel log di accesso per sapere che si tratta di una richiesta di scaricamento.  Sulla `Extended` esamineremo gli elementi disponibili per qualificare questa è una richiesta di scaricamento al modulo Dispatcher.
+Il giorno `Transport` scheda che puoi visualizzare `URI` è impostato per puntare all’indirizzo IP del Dispatcher che riceverà le richieste di scaricamento.  Il percorso `/dispatcher/invalidate.cache` non è il modo in cui il modulo determina se si tratta di uno scaricamento, è solo un endpoint ovvio che puoi vedere nel registro di accesso per sapere se si tratta di una richiesta di scaricamento.  Il giorno `Extended` scheda esamineremo gli elementi presenti per qualificare questa come richiesta di scaricamento al modulo di Dispatcher.
 
-![Schermata della scheda Extended dell’agente di replica.  Prendi nota delle intestazioni che vengono inviate con la richiesta POST inviata per comunicare al Dispatcher di eseguire il flush](assets/disp-flushing/disp-flush-agent3.png "disp-flush-agent3")
+![Schermata della scheda Extended dell’agente di replica.  Nota le intestazioni che vengono inviate con la richiesta POST per indicare al Dispatcher di eseguire lo scaricamento](assets/disp-flushing/disp-flush-agent3.png "disp-flush-agent3")
 
-La `HTTP Method` per le richieste di scaricamento è solo un `GET` richiesta con alcune intestazioni di richiesta speciali:
+Il `HTTP Method` per le richieste di scaricamento è solo una `GET` richiesta con alcune intestazioni di richiesta speciali:
 - CQ-Action
-   - Questa utilizza una variabile AEM basata sulla richiesta e il valore è tipicamente *attiva o elimina*
+   - Questa utilizza una variabile AEM basata sulla richiesta e il valore è tipicamente *attivare o eliminare*
 - CQ-Handle
    - Questa utilizza una variabile AEM basata sulla richiesta e il valore è tipicamente il percorso completo dell’elemento scaricato, ad esempio `/content/dam/logo.jpg`
 - CQ-Path
    - Questa utilizza una variabile AEM basata sulla richiesta e il valore è tipicamente il percorso completo dell’elemento scaricato, ad esempio `/content/dam`
 - Host
-   - Qui è dove `Host` L’intestazione viene modificata in modo da eseguire il targeting di uno specifico `VirtualHost` configurato sul server web Apache del dispatcher (`/etc/httpd/conf.d/enabled_vhosts/aem_flush.vhost`).  È un valore hardcoded che corrisponde a una voce nel `aem_flush.vhost` file `ServerName` o `ServerAlias`
+   - Qui è dove `Host` L’intestazione viene modificata per eseguire il targeting di un `VirtualHost` configurato sul server web Apache di Dispatcher (`/etc/httpd/conf.d/enabled_vhosts/aem_flush.vhost`).  È un valore hardcoded che corrisponde a una voce nella `aem_flush.vhost` del file `ServerName` o `ServerAlias`
 
-![Schermata di un agente di replica standard che mostra che l’agente di replica reagisce e si attiva quando nuovi elementi sono stati ricevuti da un evento di replica dall’autore che pubblica i contenuti](assets/disp-flushing/disp-flush-agent4.png "disp-flush-agent4")
+![Schermata di un agente di replica standard che mostra che l’agente di replica reagisce e si attiva quando nuovi elementi sono stati ricevuti da un evento di replica da parte dell’autore che pubblica il contenuto](assets/disp-flushing/disp-flush-agent4.png "disp-flush-agent4")
 
-Sulla `Triggers` prenderemo nota dei trigger attivati che usiamo e di cosa sono
+Il giorno `Triggers` scheda prenderemo nota dei trigger attivati che usiamo e cosa sono
 
 - `Ignore default`
-   - Questo è abilitato in modo che l’agente di replica non venga attivato all’attivazione di una pagina.  Quando un’istanza di authoring apporta una modifica a una pagina, questo attiverebbe uno scaricamento.  Poiché questo è un editore, non vogliamo attivare quel tipo di evento.
+   - Questa opzione è abilitata in modo che l’agente di replica non venga attivato al momento dell’attivazione di una pagina.  Questo avviene quando un’istanza Autore doveva apportare una modifica a una pagina innescando uno scaricamento.  Trattandosi di un editore, non vogliamo innescare questo tipo di evento.
 - `On Receive`
-   - Quando viene ricevuto un nuovo file, si desidera attivare lo scaricamento.  Quindi, quando l’autore ci invia un file aggiornato, attiveremo e invieremo una richiesta di scaricamento a Dispatcher.
+   - Quando si riceve un nuovo file, si desidera attivare uno scaricamento.  Quindi, quando l’autore ci invia un file aggiornato, attiveremo e invieremo una richiesta di scaricamento a Dispatcher.
 - `No Versioning`
-   - Controlliamo questo per evitare che l&#39;editore generi nuove versioni perché è stato ricevuto un nuovo file.  Sostituiremo semplicemente il file che abbiamo e ci affidiamo all’autore per tenere traccia delle versioni invece che dell’editore.
+   - Questa opzione è selezionata per evitare che l’editore generi nuove versioni perché è stato ricevuto un nuovo file.  Sostituiremo semplicemente il file che abbiamo e ci affidiamo all’autore per tenere traccia delle versioni invece che all’editore.
 
-Ora, se guardiamo come si presenta una tipica richiesta di scaricamento sotto forma di una `curl` command
+Ora, se guardiamo a come appare una tipica richiesta di scaricamento sotto forma di `curl` comando
 
 ```
 $ curl \ 
@@ -103,87 +103,87 @@ $ curl \
 http://10.43.0.32:80/dispatcher/invalidate.cache
 ```
 
-Questo esempio di scaricamento scarica `/content/dam` mediante l&#39;aggiornamento del `.stat` in quella directory.
+Questo esempio di scaricamento scarica il `/content/dam` aggiornando il percorso `.stat` in tale directory.
 
-## La `.stat` file
+## Il `.stat` file
 
-Il meccanismo di scaricamento è semplice e vogliamo spiegare l&#39;importanza del `.stat` file generati nella directory principale dei documenti in cui vengono creati i file di cache.
+Il meccanismo di scaricamento è semplice e vogliamo spiegare l&#39;importanza del `.stat` file generati nella directory principale dei documenti in cui vengono creati i file della cache.
 
-Dentro `.vhost` e `_farm.any` file configuriamo una direttiva document root per specificare dove si trova la cache e dove memorizzare/servire i file quando arriva una richiesta di un utente finale.
+All&#39;interno del `.vhost` e `_farm.any` file configuriamo una direttiva document root per specificare dove si trova la cache e dove memorizzare/elaborare i file da quando arriva una richiesta da un utente finale.
 
-Se esegui il seguente comando sul server Dispatcher, inizierai a trovare `.stat` file
+Se dovessi eseguire il seguente comando sul server di Dispatcher, inizieresti a trovare `.stat` file
 
 ```
 $ find /mnt/var/www/html/ -type f -name ".stat"
 ```
 
-Ecco un diagramma dell’aspetto di questa struttura di file quando hai elementi nella cache e hai ricevuto una richiesta di scaricamento inviata ed elaborata dal modulo Dispatcher
+Ecco un diagramma che mostra come apparirà questa struttura di file quando si hanno elementi nella cache e una richiesta di scaricamento inviata ed elaborata dal modulo Dispatcher
 
-![file di stato misti con contenuto e date mostrati con i livelli di stato mostrati](assets/disp-flushing/dispatcher-statfiles.png "dispatcher-statfiles")
+![file di stato misti con contenuto e date mostrati con i livelli di stat](assets/disp-flushing/dispatcher-statfiles.png "dispatcher-statfiles")
 
-### LIVELLO DI FILE STAT
+### LIVELLO DEL FILE STAT
 
-Notate che in ogni directory c&#39;era un `.stat` file presente.  Questo è un indicatore che si è verificato uno scaricamento.  Nell’esempio sopra il `statfilelevel` impostazione impostata su `3` all’interno del file di configurazione della farm corrispondente.
+In ogni directory era presente un tag `.stat` file presente.  Questo è un indicatore di scaricamento.  Nell’esempio precedente `statfilelevel` è stato impostato su `3` all’interno del file di configurazione della farm corrispondente.
 
-La `statfilelevel` l’impostazione indica quante cartelle in fondo al modulo attraversano e aggiornano un `.stat` file.  Il file .stat è vuoto, non è altro che un nome di file con un datestamp e potrebbe anche essere creato manualmente ma eseguendo il comando touch sulla riga di comando del server Dispatcher.
+Il `statfilelevel` indica quante cartelle in profondità il modulo attraverserà e aggiornerà una `.stat` file.  Il file .stat è vuoto, non è altro che un nome file con un datestamp e potrebbe anche essere creato manualmente, ma eseguendo il comando touch sulla riga di comando del server di Dispatcher.
 
-Se l’impostazione del livello del file stat è troppo alta, ogni richiesta di scaricamento attraversa la struttura della directory toccando i file stat.  Questo può diventare un hit importante delle prestazioni su grandi cache tree e può influenzare le prestazioni complessive del tuo Dispatcher.
+Se l’impostazione del livello del file stat è troppo alta, ogni richiesta di scaricamento attraversa la struttura della directory toccando i file stat.  Questo può diventare un problema importante per le prestazioni su grandi strutture di cache e può influire sulle prestazioni complessive del Dispatcher.
 
-Se imposti questo livello di file troppo basso, una richiesta di scaricamento può cancellare più di quanto previsto.  Il che a sua volta provocherebbe l’esecuzione più frequente della cache con meno richieste servite dalla cache e potrebbe causare problemi di prestazioni.
+Se si imposta questo livello di file su un valore troppo basso, una richiesta di scaricamento potrebbe cancellare più di quanto previsto.  Il che, a sua volta, causerebbe un abbandono della cache più frequente con un minor numero di richieste distribuite dalla cache e potrebbe causare problemi di prestazioni.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
-Imposta la `statfilelevel` a un livello ragionevole.  Osserva la struttura delle cartelle e assicurati che sia configurata per consentire scaricamenti concisi senza dover attraversare troppe directory.   Testalo e assicurati che sia adatto alle tue esigenze durante un test delle prestazioni del sistema.
+Imposta il `statfilelevel` a un livello ragionevole.  Osserva la struttura delle cartelle e accertati che sia configurata in modo da consentire scaricamenti concisi senza dover attraversare troppe directory.   Testalo e assicurati che sia adatto alle tue esigenze durante un test delle prestazioni del sistema.
 
-Un buon esempio è un sito che supporta le lingue.  La struttura contenuto tipica avrebbe le seguenti directory
+Un buon esempio è un sito che supporta le lingue.  La struttura ad albero tipica dei contenuti avrebbe le seguenti directory
 
 `/content/brand1/en/us/`
 
-In questo esempio, utilizza un’impostazione a livello di file stat pari a 4.  Questo ti garantirà quando scaricherai il contenuto che vive sotto il <b>`us`</b> cartella che non farà scaricare anche le cartelle della lingua.
+In questo esempio, utilizza un’impostazione del livello del file stat pari a 4.  In questo modo, quando esegui uno scaricamento del contenuto che si trova sotto <b>`us`</b> in modo da non scaricare anche le cartelle delle lingue.
 </div>
 
-### HANDSHAKE A MARCA TEMPORALE FILE STATO
+### STAT FILE TIMESTAMP HANDSHAKE
 
-Quando una richiesta di contenuto arriva nella stessa routine si verifica
+Quando una richiesta di contenuto arriva nella stessa routine, si verifica
 
 1. Timestamp del `.stat` viene confrontato con la marca temporale del file richiesto
-2. Se la `.stat` è più recente del file richiesto che elimina il contenuto memorizzato nella cache e ne recupera uno nuovo da AEM e lo memorizza nella cache.  Quindi distribuisce il contenuto
-3. Se la `.stat` il file è più vecchio del file richiesto, quindi sa che il file è fresco e può servire il contenuto.
+2. Se il `.stat` è più recente del file richiesto. Elimina il contenuto memorizzato in cache, ne recupera uno nuovo dall’AEM e lo memorizza in cache.  Quindi fornisce il contenuto
+3. Se il `.stat` è più vecchio del file richiesto, riconosce che il file è nuovo e può distribuire il contenuto.
 
-### GESTIONE CACHE - ESEMPIO 1
+### CACHE HANDSHAKE - ESEMPIO 1
 
 Nell’esempio precedente una richiesta per il contenuto `/content/index.html`
 
-L&#39;ora del `index.html` il file è 2019-11-01 @ 6:21PM
+L’ora del `index.html` il file è 2019-11-01 @ 6:21PM
 
-L&#39;ora del più vicino `.stat` il file è 2019-11-01 @ 12:22PM
+L’ora del più vicino `.stat` il file è 2019-11-01 @ 12:22PM
 
-Comprendendo ciò che abbiamo letto sopra, puoi vedere che il file di indice è più recente del `.stat` il file e il file verranno serviti dalla cache all&#39;utente finale che lo ha richiesto
+In base a quanto detto in precedenza, puoi notare che il file di indice è più recente del `.stat` e il file verrebbe distribuito dalla cache all&#39;utente finale che lo ha richiesto
 
-### GESTIONE CACHE - ESEMPIO 2
+### CACHE HANDSHAKE - ESEMPIO 2
 
 Nell’esempio precedente una richiesta per il contenuto `/content/dam/logo.jpg`
 
-L&#39;ora del `logo.jpg` il file è 2019-10-31 @ 1:13PM
+L’ora del `logo.jpg` il file è 2019-10-31 @ 1:13PM
 
-L&#39;ora del più vicino `.stat` il file è 2019-11-01 @ 12:22PM
+L’ora del più vicino `.stat` il file è 2019-11-01 @ 12:22PM
 
-Come puoi vedere in questo esempio, il file è più vecchio del `.stat` file e verrà rimosso e uno nuovo estratto da AEM per sostituirlo nella cache prima di essere servito all&#39;utente finale che lo ha richiesto.
+Come puoi vedere in questo esempio, il file è più vecchio del `.stat` e verrà rimosso e uno nuovo estratto da AEM per sostituirlo nella cache prima di essere servito all’utente finale che lo ha richiesto.
 
-## Impostazioni dei file farm
+## Impostazioni file farm
 
-La documentazione è disponibile per tutte le opzioni di configurazione: [https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it)
+La documentazione qui presente è valida per tutte le opzioni di configurazione: [https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it)
 
-Vogliamo evidenziare alcuni di questi che riguardano lo scaricamento della cache
+Vogliamo evidenziarne alcune che riguardano lo scaricamento della cache
 
-### Fatture di scarico
+### Svuota farm
 
-Ci sono due chiavi `document root` directory che memorizzano in cache i file dal traffico dell’autore e dell’editore.  Per mantenere queste directory aggiornate con contenuto fresco, sarà necessario svuotare la cache.  Queste richieste di scaricamento non vogliono essere agganciate alle normali configurazioni del tuo farm del traffico cliente che potrebbero rifiutare la richiesta o eseguire qualcosa di indesiderato.  Forniamo invece due farm di scaricamento per questa attività:
+Sono disponibili due chiavi `document root` directory che memorizzeranno nella cache i file provenienti dal traffico di authoring e di pubblicazione.  Per mantenere queste directory aggiornate con nuovi contenuti, è necessario svuotare la cache.  Tali richieste di scaricamento non desiderano rimanere impigliate nelle normali configurazioni della farm di traffico del cliente che potrebbero rifiutare la richiesta o eseguire azioni indesiderate.  Invece forniamo due farm di scaricamento per questa attività:
 
 - `/etc/httpd.conf.d/available_farms/001_ams_author_flush_farm.any`
 - `/etc/httpd.conf.d/available_farms/001_ams_publish_flush_farm.any`
 
-Questi file di farm non fanno altro che svuotare le directory radice dei documenti.
+Questi file di farm non eseguono alcuna operazione, ma eseguono il flushing delle directory principali dei documenti.
 
 ```
 /publishflushfarm {  
@@ -213,9 +213,9 @@ Questi file di farm non fanno altro che svuotare le directory radice dei documen
 }
 ```
 
-### Radice documento
+### Directory principale documento
 
-Questa voce di configurazione si trova nella seguente sezione del file farm:
+Questa voce di configurazione è contenuta nella seguente sezione del file farm:
 
 ```
 /myfarm { 
@@ -223,17 +223,17 @@ Questa voce di configurazione si trova nella seguente sezione del file farm:
         /docroot
 ```
 
-Specifica la directory in cui desideri che il Dispatcher venga popolato e gestito come directory cache.
+Specifica la directory in cui vuoi che Dispatcher si popola e che desideri gestire come directory cache.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-Questa directory deve corrispondere all’impostazione Apache document root per il dominio configurato per l’utilizzo dal server web.
+Questa directory deve corrispondere all’impostazione della directory principale dei documenti Apache per il dominio per cui il server web è configurato per l’utilizzo.
 
-Avere cartelle docroot nidificate per ogni farm che vive una sottocartella della radice dei documenti Apache è un&#39;idea terribile per molti motivi.
+Annidare le cartelle docroot in ogni farm che si trova in una sottocartella della directory principale dei documenti Apache è una pessima idea per molti motivi.
 </div>
 
-### Livello file di stato
+### Livello dei file stat
 
-Questa voce di configurazione si trova nella seguente sezione del file farm:
+Questa voce di configurazione è contenuta nella seguente sezione del file farm:
 
 ```
 /myfarm { 
@@ -241,9 +241,9 @@ Questa voce di configurazione si trova nella seguente sezione del file farm:
         /statfileslevel
 ```
 
-Questa impostazione misura la profondità `.stat` i file dovranno essere generati quando arriva una richiesta di scaricamento.
+Questa impostazione misura la profondità `.stat` I file dovranno essere generati quando arriva una richiesta di scaricamento.
 
-`/statfileslevel` impostato al numero seguente con la directory principale del documento di `/var/www/html/` avrebbe i seguenti risultati durante lo scaricamento `/content/dam/brand1/en/us/logo.jpg`
+`/statfileslevel` impostato al seguente numero con la directory principale del documento di `/var/www/html/` avrebbe i seguenti risultati durante lo scaricamento `/content/dam/brand1/en/us/logo.jpg`
 
 - 0 - Creazione dei seguenti file stat
    - `/var/www/html/.stat`
@@ -278,12 +278,12 @@ Questa impostazione misura la profondità `.stat` i file dovranno essere generat
 
 Tieni presente che quando si verifica l’handshake con marca temporale, cerca il più vicino `.stat` file.
 
-avere `.stat` livello di file 0 e un file stat solo in `/var/www/html/.stat` significa che il contenuto sotto cui vive `/var/www/html/content/dam/brand1/en/us/` cerca il più vicino `.stat` file e attraversa 5 cartelle per trovare l’unica `.stat` file esistente al livello 0 e confronta le date con un file specifico.  Ciò significa che uno scaricamento a quel livello alto di un livello invaliderebbe sostanzialmente tutti gli elementi memorizzati nella cache.
+con un `.stat` livello di file 0 e un file stat solo in corrispondenza di `/var/www/html/.stat` significa che il contenuto che risiede in `/var/www/html/content/dam/brand1/en/us/` cerca il più vicino `.stat` e sfogliare fino a 5 cartelle per trovare le uniche `.stat` che esiste al livello 0 e ne confronta le date.  Ciò significa che uno scaricamento a un tale livello invaliderebbe essenzialmente tutti gli elementi memorizzati in cache.
 </div>
 
-### Invalidazione consentita
+### Annullamento della validità consentito
 
-Questa voce di configurazione si trova nella seguente sezione del file farm:
+Questa voce di configurazione è contenuta nella seguente sezione del file farm:
 
 ```
 /myfarm { 
@@ -291,7 +291,7 @@ Questa voce di configurazione si trova nella seguente sezione del file farm:
         /allowedClients {
 ```
 
-All’interno di questa configurazione puoi inserire un elenco di indirizzi IP che possono inviare richieste di scaricamento.  Se una richiesta di scaricamento arriva nel Dispatcher deve provenire da un IP attendibile.  Se hai configurato in modo errato o invii una richiesta di scaricamento da un indirizzo IP non attendibile, nel file di log verrà visualizzato il seguente errore:
+All’interno di questa configurazione inserisci un elenco di indirizzi IP che possono inviare richieste di scaricamento.  Se una richiesta di scaricamento arriva a Dispatcher, deve provenire da un IP attendibile.  Se non lo hai configurato correttamente o invii una richiesta di scaricamento da un indirizzo IP non attendibile, visualizzerai il seguente errore nel file di registro:
 
 ```
 [Mon Nov 11 22:43:05 2019] [W] [pid 3079 (tid 139859875088128)] Flushing rejected from 10.43.0.57
@@ -299,7 +299,7 @@ All’interno di questa configurazione puoi inserire un elenco di indirizzi IP c
 
 ### Regole di invalidazione
 
-Questa voce di configurazione si trova nella seguente sezione del file farm:
+Questa voce di configurazione è contenuta nella seguente sezione del file farm:
 
 ```
 /myfarm { 
@@ -309,7 +309,7 @@ Questa voce di configurazione si trova nella seguente sezione del file farm:
 
 Queste regole indicano in genere quali file possono essere invalidati con una richiesta di scaricamento.
 
-Per evitare che file importanti vengano invalidati con l’attivazione di una pagina, puoi attivare delle regole che specificano quali file possono essere invalidati e quali devono essere invalidati manualmente.  Ecco un esempio di set di configurazione che consente solo l’annullamento della convalida dei file html:
+Per evitare che file importanti vengano invalidati con l’attivazione di una pagina, puoi impostare delle regole che specificano quali file possono essere invalidati e quali devono essere invalidati manualmente.  Di seguito è riportato un esempio di configurazione che consente di invalidare solo i file html:
 
 ```
 /invalidate { 
@@ -320,11 +320,11 @@ Per evitare che file importanti vengano invalidati con l’attivazione di una pa
 
 ## Test / Risoluzione dei problemi
 
-Quando attivi una pagina e ottieni la luce verde che l’attivazione della pagina ha avuto successo, devi aspettarti che anche il contenuto attivato venga scaricato dalla cache.
+Quando attivi una pagina e si accende la luce verde di conferma dell’attivazione della pagina, devi tenere in conto che il contenuto attivato verrà anche scaricato dalla cache.
 
-Aggiorna la pagina e vedi le cose vecchie! cosa? c&#39;era una luce verde?!
+Ricarichi la pagina e vedi le cose vecchie! cosa!? c&#39;era una luce verde?!
 
-Seguiamo alcuni passaggi manuali attraverso il processo di scaricamento per farci un&#39;idea di cosa potrebbe essere sbagliato.  Dalla shell dell’editore esegui la seguente richiesta di scaricamento utilizzando curl:
+Seguiamo alcuni passaggi manuali attraverso il processo di scaricamento per capire cosa c’è che non va.  Dalla shell dell’editore esegui la seguente richiesta di scaricamento utilizzando curl:
 
 ```
 $ curl -H "CQ-Action: Activate" \ 
@@ -346,7 +346,7 @@ $ curl -H "CQ-Action: Activate" \
 http://169.254.196.222/dispatcher/invalidate.cache
 ```
 
-Dopo aver disattivato il comando di richiesta al Dispatcher, dovrai vedere cosa viene fatto nei log e cosa viene fatto con il `.stat files`.  Per confermare che la richiesta di scaricamento ha colpito il modulo Dispatcher, devi visualizzare le seguenti voci
+Dopo aver inviato il comando di richiesta a Dispatcher, vuoi vedere cosa è successo nei registri e cosa è successo con `.stat files`.  Suddividi il file di registro e dovresti vedere le seguenti voci per confermare che la richiesta di scaricamento è giunta al modulo Dispatcher
 
 ```
 [Wed Nov 13 16:54:12 2019] [I] [pid 19173:tid 140542721578752] Activation detected: action=Activate [/content/dam/logo.jpg] 
@@ -356,13 +356,13 @@ Dopo aver disattivato il comando di richiesta al Dispatcher, dovrai vedere cosa 
 [Wed Nov 13 16:54:12 2019] [I] [pid 19173:tid 140542721578752] "GET /dispatcher/invalidate.cache" 200 purge [publishfarm/-] 0ms
 ```
 
-Ora che vediamo il modulo raccolto e riconosciuto la richiesta di scaricamento, dobbiamo vedere come ha influenzato il `.stat` file.  Esegui il seguente comando e osserva l’aggiornamento delle marche temporali quando esegui un altro scaricamento:
+Ora che vediamo che il modulo ha raccolto e riconosciuto la richiesta di scaricamento, dobbiamo vedere in che modo ha influenzato il `.stat` file.  Esegui il seguente comando e osserva l’aggiornamento dei timestamp mentre viene eseguito un altro scaricamento:
 
 ```
 $ watch -n 3 "find /mnt/var/www/html/ -type f -name ".stat" | xargs ls -la $1"
 ```
 
-Come è possibile vedere dall&#39;output del comando le marche temporali della corrente `.stat` file
+Come puoi vedere dall’output del comando, i timestamp della corrente `.stat` file
 
 ```
 -rw-r--r--. 1 apache apache 0 Nov 13 16:54 /mnt/var/www/html/content/dam/.stat 
@@ -370,7 +370,7 @@ Come è possibile vedere dall&#39;output del comando le marche temporali della c
 -rw-r--r--. 1 apache apache 0 Nov 13 16:54 /mnt/var/www/html/.stat
 ```
 
-Ora, se rieseguiamo lo scaricamento, potrai vedere l’aggiornamento dei timestamp
+Ora, se eseguiamo nuovamente lo scaricamento, vedrai l’aggiornamento dei timestamp
 
 ```
 -rw-r--r--. 1 apache apache 0 Nov 13 17:17 /mnt/var/www/html/content/dam/.stat 
@@ -378,7 +378,7 @@ Ora, se rieseguiamo lo scaricamento, potrai vedere l’aggiornamento dei timesta
 -rw-r--r--. 1 apache apache 0 Nov 13 17:17 /mnt/var/www/html/.stat
 ```
 
-Confrontiamo le marche temporali dei nostri contenuti con le nostre `.stat` timestamp dei file
+Confrontiamo i timestamp dei contenuti con i `.stat` timestamp dei file
 
 ```
 $ stat /mnt/var/www/html/content/customer/en-us/.stat 
@@ -400,8 +400,8 @@ Modify: 2019-11-11 22:41:59.642450601 +0000
 Change: 2019-11-11 22:41:59.642450601 +0000
 ```
 
-Se osservi una qualsiasi delle marche temporali, noterai che il contenuto ha un’ora più recente rispetto alla `.stat` file che indica al modulo di elaborare il file dalla cache perché è più recente del `.stat` file.
+Osservando uno dei timestamp, noterai che il contenuto ha un orario più recente rispetto al `.stat` file che indica al modulo di distribuire il file dalla cache perché è più recente del `.stat` file.
 
-Inserisci semplicemente qualcosa aggiornato le marche temporali di questo file che non lo qualificano come &quot;scaricato&quot; o sostituito.
+Inserisci semplicemente qualcosa di aggiornato nei timestamp di questo file che non si qualifica per essere &quot;scaricato&quot; o sostituito.
 
 [Successivo -> URL personalizzati](./disp-vanity-url.md)

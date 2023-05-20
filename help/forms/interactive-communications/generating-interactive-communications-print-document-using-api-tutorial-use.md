@@ -1,7 +1,7 @@
 ---
-title: Generazione del documento di comunicazione interattiva per il canale di stampa tramite il meccanismo di cartelle dell'orologio
+title: Generazione di documenti di comunicazione interattiva per il canale di stampa mediante il meccanismo della cartella di controllo
 seo-title: Generating Interactive Communications Document for print channel using watch folder mechanism
-description: Utilizzare la cartella controllata per generare documenti del canale di stampa
+description: Usa cartella controllata per generare documenti del canale di stampa
 seo-description: Use watched folder to generate print channel documents
 feature: Interactive Communication
 topics: development
@@ -21,15 +21,15 @@ ht-degree: 0%
 
 ---
 
-# Generazione del documento di comunicazione interattiva per il canale di stampa tramite il meccanismo di cartelle dell&#39;orologio
+# Generazione di documenti di comunicazione interattiva per il canale di stampa mediante il meccanismo della cartella di controllo
 
-Dopo aver progettato e testato il documento del canale di stampa, in genere è necessario generare il documento effettuando una chiamata REST o generando documenti di stampa utilizzando il meccanismo della cartella di controllo.
+Dopo aver progettato e testato il documento del canale di stampa, in genere è necessario generare il documento effettuando una chiamata REST o generare documenti di stampa utilizzando il meccanismo della cartella di controllo.
 
-Questo articolo spiega il caso d&#39;uso per la generazione di documenti del canale di stampa utilizzando il meccanismo di cartelle controllate.
+Questo articolo spiega il caso d’uso della generazione di documenti del canale di stampa utilizzando il meccanismo delle cartelle controllate.
 
-Quando rilasci un file nella cartella controllata, viene eseguito uno script associato alla cartella controllata. Questo script è spiegato nell&#39;articolo sottostante.
+Quando rilasci un file nella cartella controllata, viene eseguito uno script associato alla cartella controllata. Questo script è spiegato nell’articolo seguente.
 
-Il file rilasciato nella cartella controllata presenta la seguente struttura. Il codice genera istruzioni per tutti i numeri di conto elencati nel documento XML.
+Il file rilasciato nella cartella controllata ha la seguente struttura. Il codice genera istruzioni per tutti i numeri di conto elencati nel documento XML.
 
 &lt;accountnumbers>
 
@@ -43,23 +43,23 @@ Il file rilasciato nella cartella controllata presenta la seguente struttura. Il
 
 &lt;/accountnumbers>
 
-L&#39;elenco di codice seguente effettua le seguenti operazioni:
+L’elenco di codici riportato di seguito effettua le seguenti operazioni:
 
-Linea 1 - Percorso del documento InteractiveCommunications
+Riga 1: percorso di InteractiveCommunicationsDocument
 
-Linee 15-20: Ottenere l&#39;elenco dei numeri di account dal documento XML rilasciato nella cartella controllata
+Righe 15-20: consente di ottenere l&#39;elenco dei numeri di conto dal documento XML rilasciato nella cartella controllata
 
-Linee 24 -25: Ottenere i canali PrintChannelService e Print Channel associati al documento.
+Righe 24 -25: ottenere il servizio PrintChannelService e il canale di stampa associati al documento.
 
-Linea 30: Passa il numero di account come elemento chiave al modello dati del modulo.
+Riga 30: passa il numero di account come elemento chiave al modello dati del modulo.
 
-Linee 32-36: Impostare le opzioni dati per il documento da generare.
+Righe 32-36: impostare le opzioni dati per il documento da generare.
 
-Linea 38: Eseguire il rendering del documento.
+Riga 38: eseguire il rendering del documento.
 
 Righe 39-40 - Salva il documento generato nel file system.
 
-L’endpoint REST del modello dati modulo prevede un ID come parametro di input. questo id è mappato su un attributo di richiesta denominato account number come mostrato nella schermata seguente.
+L’endpoint REST del modello dati modulo prevede un ID come parametro di input. questo id è mappato su un attributo di richiesta denominato accountnumber come mostrato nella schermata seguente.
 
 ![requestattribute](assets/requestattributeprintchannel.gif)
 
@@ -111,26 +111,26 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 ```
 
 
-**Per eseguire il test sul sistema locale, segui le seguenti istruzioni:**
+**Per eseguire il test sul sistema locale, attenersi alle seguenti istruzioni:**
 
-* Imposta Tomcat come descritto in questo [articolo.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat ha il file war che genera i dati del campione.
-* Imposta il servizio aka utente del sistema come descritto in questo [articolo](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
-Assicurati che questo utente di sistema abbia le autorizzazioni di lettura sul nodo seguente. Per assegnare le autorizzazioni di accesso a [amministratore utente](https://localhost:4502/useradmin) e cerca l&#39;utente di sistema &quot;dati&quot; e concedi le autorizzazioni di lettura sul nodo seguente tasto di tabulazione sulla scheda autorizzazioni
+* Imposta Tomcat come descritto in questo [articolo.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat ha il file .war che genera i dati di esempio.
+* Configurare il servizio come utente di sistema come descritto in questo [articolo](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
+Verificare che l&#39;utente del sistema disponga delle autorizzazioni di lettura per il nodo seguente. Per assegnare le autorizzazioni di accesso a [amministratore utenti](https://localhost:4502/useradmin) e cerca l’utente di sistema &quot;data&quot; e concedi le autorizzazioni di lettura per il nodo seguente dalla scheda autorizzazioni
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af
-* Importa i seguenti pacchetti in AEM utilizzando il gestore pacchetti. Questo pacchetto contiene quanto segue:
+* Importa i seguenti pacchetti in AEM utilizzando Gestione pacchetti. Questo pacchetto contiene quanto segue:
 
 
 * [Esempio di documento di comunicazione interattiva](assets/retirementstatementprint.zip)
-* [Script cartelle controllate](assets/printchanneldocumentusingwatchedfolder.zip)
+* [Script cartella controllata](assets/printchanneldocumentusingwatchedfolder.zip)
 * [Configurazione origine dati](assets/datasource.zip)
 
-* Apri il file /etc/fd/watchfolder/scripts/PrintPDF.ecma . Assicurarsi che il percorso del documento interattivoCommunicationsDocument nella riga 1 indichi il documento corretto che si desidera stampare
+* Apri il file /etc/fd/watchfolder/scripts/PrintPDF.ecma. Verificare che il percorso del documento di comunicazione interattivo nella riga 1 punti al documento corretto da stampare
 
-* Modifica saveLocation in base alle tue preferenze sulla Linea 2
+* Modificare il valore di saveLocation in base alla preferenza nella riga 2
 
-* Crea il file accounts.xml con il seguente contenuto
+* Crea il file accountnumbers.xml con il seguente contenuto
 
 ```xml
 <accountnumbers>
@@ -144,12 +144,12 @@ Assicurati che questo utente di sistema abbia le autorizzazioni di lettura sul n
 ```
 
 
-* Rilascia il file accounts.number.xml nella cartella C:\RenderPrintChannel\input folder.
+* Trascina il file accountnumbers.xml nella cartella C:\RenderPrintChannel\input.
 
 * I file PDF generati vengono scritti in saveLocation come specificato nello script ecma.
 
 >[!NOTE]
 >
->Se si prevede di utilizzarlo su un sistema operativo non Windows, passare a
+>Se si prevede di utilizzarlo in un sistema operativo non Windows, passare a
 >
->/etc/fd/watchfolder /config/PrintChannelDocument e cambia folderPath secondo le tue preferenze
+>/etc/fd/watchfolder /config/PrintChannelDocument e modifica il folderPath in base alle tue preferenze

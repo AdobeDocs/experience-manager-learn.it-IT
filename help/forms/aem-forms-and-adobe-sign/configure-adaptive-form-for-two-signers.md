@@ -1,6 +1,6 @@
 ---
-title: Accordo di noleggio con 2 firmatari
-description: Accordo di noleggio con 2 firmatari. Il video illustra i vari passaggi necessari per configurare un modulo adattivo con 2 firmatari.
+title: Contratto di noleggio con 2 firmatari
+description: Contratto di noleggio con 2 firmatari. Il video illustra i vari passaggi necessari per configurare un modulo adattivo con 2 firmatari.
 feature: Adaptive Forms,Acrobat Sign
 thumbnail: 39294.jpg
 kt: 6071
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 ---
 
-# Accordo di noleggio con 2 firmatari
+# Contratto di noleggio con 2 firmatari
 
 Il video illustra i vari passaggi necessari per configurare un modulo adattivo con 2 firmatari.
 

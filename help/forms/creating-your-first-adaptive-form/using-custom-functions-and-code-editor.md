@@ -1,6 +1,6 @@
 ---
-title: Utilizzo di funzioni e editor di codice
-description: Utilizzo di funzioni e editor di codice per creare regole di business
+title: Utilizzo delle funzioni e dell’editor di codice
+description: Utilizzo di funzioni ed editor di codice per l’authoring di regole business
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 4270
@@ -16,24 +16,24 @@ ht-degree: 0%
 
 ---
 
-# Utilizzo di funzioni e editor di codice personalizzati {#using-functions-and-code-editor}
+# Utilizzo di funzioni personalizzate ed editor di codice {#using-functions-and-code-editor}
 
-In questa parte utilizzeremo funzioni personalizzate e l’editor di codice per creare regole di business.
+In questa parte utilizzeremo le funzioni personalizzate e l’editor di codice per creare regole aziendali.
 
-hai già installato [ClientLib con funzione personalizzata](assets/client-libs-and-logo.zip) precedente in questa esercitazione.
+hai già installato [ClientLib con funzione personalizzata](assets/client-libs-and-logo.zip) precedenti in questa esercitazione.
 
-In genere una libreria client è costituita da file CSS e Javascript. Questa libreria client contiene un file javascript che espone una funzione per compilare i valori degli elenchi a discesa.
+In genere, una libreria client è costituita da file CSS e JavaScript. Questa libreria client contiene un file JavaScript che espone una funzione per popolare i valori dell’elenco a discesa.
 
 
-## Funzione per popolare elenco a discesa {#function-to-populate-drop-down-list}
+## Funzione per popolare l&#39;elenco a discesa {#function-to-populate-drop-down-list}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22282?quality=12&learn=on)
 
-### Imposta il titolo del riepilogo del pannello {#set-the-summary-title-of-panels}
+### Imposta il titolo di riepilogo del pannello {#set-the-summary-title-of-panels}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
 
-#### Pannello Convalida {#validate-panels-using-rule-editor}
+#### Convalida pannello {#validate-panels-using-rule-editor}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28409?quality=12&learn=on)
 
@@ -60,12 +60,12 @@ else
   }
 ```
 
-È possibile rimuovere il commento alla riga 1 per eseguire il debug del codice nella finestra del browser.
+Puoi rimuovere il commento dalla riga 1 per eseguire il debug del codice nella finestra del browser.
 
-Linea 4 - Ottieni il pannello corrente
+Riga 4: visualizza il pannello corrente
 
-Linea 5 - Convalida il pannello corrente.
+Riga 5 - Convalida il pannello corrente.
 
-Linea 9 - Se non si verificano errori, passare al pannello successivo
+Riga 9 - Se non si verificano errori, passa al pannello successivo
 
-Visualizzare l’anteprima del modulo e verificare la nuova funzionalità abilitata.
+Visualizzare l&#39;anteprima del modulo e verificare la funzionalità appena attivata.

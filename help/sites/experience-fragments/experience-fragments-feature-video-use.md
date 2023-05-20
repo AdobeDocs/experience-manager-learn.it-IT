@@ -1,6 +1,6 @@
 ---
-title: Utilizzo di frammenti esperienza AEM
-description: Frammenti esperienza consente agli autori di contenuti di riutilizzare contenuti tra canali diversi, tra cui pagine di Sites e sistemi di terze parti.
+title: Utilizzo dei frammenti esperienza AEM
+description: Frammenti di esperienza consente agli autori di contenuti di riutilizzare i contenuti tra canali diversi, incluse le pagine Sites e i sistemi di terze parti.
 sub-product: Experience Manager Sites
 feature: Experience Fragments
 topic: Content Management
@@ -21,15 +21,15 @@ ht-degree: 2%
 
 # Utilizzo di Frammenti esperienza {#using-aem-experience-fragments}
 
-Frammenti esperienza consente agli autori di contenuti di riutilizzare contenuti tra canali diversi, tra cui pagine di Sites e sistemi di terze parti.
+Frammenti di esperienza consente agli autori di contenuti di riutilizzare i contenuti tra canali diversi, incluse le pagine Sites e i sistemi di terze parti.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331785?quality=12&learn=on)
 
-Un frammento esperienza è un set raggruppato di componenti che, se combinato, creano un’esperienza. Ad esempio, un *Titolo*, *Immagine*, *Descrizione* e *Pulsante Invito all&#39;azione* può essere combinato per creare un’esperienza teaser.
+Un frammento di esperienza è un set raggruppato di componenti che, se combinati, crea un’esperienza. Ad esempio, un *Titolo*, *Immagine*, *Descrizione*, e *Pulsante Invito all&#39;azione* può essere combinato per formare un’esperienza teaser.
 
-Con i frammenti esperienza, gli addetti al marketing possono:
+Con Frammenti di esperienza, gli addetti al marketing possono:
 
-* Riutilizzare un’esperienza su più canali (sia canali di proprietà che punti di contatto di terze parti)
+* Riutilizzare un’esperienza tra canali diversi (canali di proprietà e punti di contatto di terze parti)
 * Creare varianti di un’esperienza per casi d’uso specifici
-* Mantieni le varianti sincronizzate con l’utilizzo di Live Copy
-* Esperienze di post social su Facebook e Pinterest pronte all&#39;uso
+* Mantieni le varianti sincronizzate con l’utilizzo della Live Copy
+* Esperienze di post social in Facebook e Pinterest pronte all’uso

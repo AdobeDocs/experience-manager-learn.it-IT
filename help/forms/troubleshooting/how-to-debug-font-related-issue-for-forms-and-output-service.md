@@ -1,5 +1,5 @@
 ---
-title: Come eseguire il debug dei problemi relativi ai font con le conversioni dei servizi Forms e Output
+title: Come eseguire il debug del problema relativo ai font con le conversioni del servizio Forms e Output
 description: Passaggi per eseguire il debug del problema relativo ai font con il servizio Forms e Output
 type: Troubleshooting
 role: Developer
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Come acquisire le garanzie per eseguire il debug dei problemi relativi ai font con le conversioni del servizio Forms e Output
+# Come acquisire i materiali collaterali per eseguire il debug del problema relativo ai font con le conversioni del servizio Forms e Output
 
-*Questo video illustra il processo di acquisizione dei materiali collaterali per eseguire il debug dei problemi relativi ai font con le conversioni dei servizi Forms e Output .*
+*Questo video illustra il processo di acquisizione dei materiali collaterali per eseguire il debug del problema relativo ai font con le conversioni del servizio Forms e Output .*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335487?quality=12&learn=on)

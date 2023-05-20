@@ -1,5 +1,5 @@
 ---
-title: Passaggi per ripristinare la password predefinita per l’amministratore in AEM Forms JEE
+title: Passaggi per reimpostare la password predefinita per l’amministratore in AEM Forms JEE
 description: Reimposta la password dell'utente amministratore dalla password predefinita
 type: Troubleshooting
 role: Admin
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Passaggi per ripristinare la password predefinita per l’amministratore in AEM Forms JEE
+# Passaggi per reimpostare la password predefinita per l’amministratore in AEM Forms JEE
 
-*Questo video illustra i passaggi per ripristinare la password predefinita per l’amministratore in AEM Forms JEE.*
+*Questo video illustra i passaggi per reimpostare la password predefinita per l’amministratore in AEM Forms JEE.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335541?quality=12&learn=on)

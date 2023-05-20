@@ -1,6 +1,6 @@
 ---
-title: Cloud 5 - Scheduler dei processi Sling
-description: Pianificazione AEM processo nel cloud
+title: Cloud 5 - Pianificazione processi Sling
+description: Pianificazione dei processi AEM nel cloud
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ---
 
-# Cloud 5 - Scheduler dei processi Sling
+# Cloud 5 - Pianificazione processi Sling
 
-La pianificazione e il consumo dei processi sono diversi da una distribuzione AEM non cluster. Questo video mostra alcuni gotchas e cose da cercare durante l&#39;esecuzione di queste attività.
+La pianificazione e l’utilizzo dei processi sono diversi da una distribuzione AEM non cluster. Questo video mostra alcuni errori e aspetti da considerare durante l’esecuzione di queste attività.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343473?quality=12&learn=on)
 
 ## Contenuto trattato in questo video
 
 + Panoramica dei processi nel cloud
-+ Esempi di codice del consumer e del programmatore di lavoro
++ Esempi di codici consumer e scheduler del processo

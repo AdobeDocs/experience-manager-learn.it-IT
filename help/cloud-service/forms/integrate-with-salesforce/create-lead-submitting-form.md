@@ -1,6 +1,6 @@
 ---
-title: Invia il modulo utilizzando l’azione di invio del modello dati modulo
-description: Creare un modulo adattivo per testare l’integrazione di Salesforce creando un oggetto Lead all’invio del modulo
+title: Inviare un modulo utilizzando l’azione di invio del modello dati modulo
+description: Creare un modulo adattivo per testare l’integrazione Salesforce creando un oggetto Lead all’invio del modulo
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# Generazione del lead di test dall’invio del modulo
+# Generazione di lead di test dall’invio del modulo
 
-Creare un modulo adattivo basato sul modello di dati del modulo forza di vendita e verificare la creazione di un lead in Salesforce inviando il modulo
+Creare un modulo adattivo basato sul modello dati del modulo forza vendita e verificare la creazione di un lead in Salesforce inviando il modulo
 
 >[!VIDEO](https://video.tv.adobe.com/v/331758?quality=12&learn=on)

@@ -1,5 +1,5 @@
 ---
-title: Pannello Persone
+title: Configurare il pannello persone
 description: Configura il pannello persone aggiungendo il frammento dei dettagli del coniuge.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ---
 
-# Pannello Persone
+# Configurare il pannello persone
 
 Aggiungi il frammento dei dettagli del coniuge al pannello persone.
 

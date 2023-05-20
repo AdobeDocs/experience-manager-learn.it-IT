@@ -1,6 +1,6 @@
 ---
 title: Utilizzo dell’operazione Inserisci risorsa collegata
-description: Scopri come utilizzare le risorse da AEM Assets utilizzando l’operazione Inserisci collegamento .
+description: Scopri come utilizzare le risorse da AEM Assets utilizzando l’operazione Inserisci collegamento.
 sub-product: Experience Manager Assets
 feature: Adobe Asset Link
 version: Cloud Service
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Inserisci collegato{#place-linked}
+# Inserisci con collegamento{#place-linked}
 
-Scopri come utilizzare le risorse da AEM Assets utilizzando l’operazione Inserisci collegamento .
+Scopri come utilizzare le risorse da AEM Assets utilizzando l’operazione Inserisci collegamento.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34839?quality=12&learn=on)

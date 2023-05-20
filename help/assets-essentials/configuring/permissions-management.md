@@ -1,5 +1,5 @@
 ---
-title: Gestione delle autorizzazioni Assets Essentials
+title: Gestione autorizzazioni Assets Essentials
 description: Scopri come la gestione delle autorizzazioni di AEM Assets Essentials consente alle organizzazioni di controllare l’accesso alle risorse, proteggere il proprio marchio e garantire la conformità.
 version: Cloud Service
 feature: Assets Essentials

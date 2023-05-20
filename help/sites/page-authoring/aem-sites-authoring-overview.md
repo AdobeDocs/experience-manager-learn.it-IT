@@ -24,11 +24,11 @@ ht-degree: 30%
 
 # Panoramica sull’authoring {#authoring-overview}
 
-Il video seguente offre una panoramica dei concetti di base sull’authoring in un ambiente di authoring AEM per AEM Sites.
+Il video seguente fornisce una panoramica dei concetti di base dell’authoring in un ambiente di authoring AEM per AEM Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33594?quality=12&learn=on)
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Modifica della documentazione del contenuto di una pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it)
+* [Modifica della documentazione sul contenuto di una pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it)
 * [Guida rapida all’authoring delle pagine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)

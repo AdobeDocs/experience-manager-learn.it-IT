@@ -1,6 +1,6 @@
 ---
-title: Consegna del documento di comunicazione interattiva - Web Channel AEM Forms
-description: Consegna del documento del canale web tramite link in email
+title: Consegna del documento di comunicazione interattiva - Canale web AEM Forms
+description: Consegna del documento del canale web tramite collegamento via e-mail
 feature: Interactive Communication
 audience: developer
 activity: implement
@@ -17,17 +17,17 @@ ht-degree: 0%
 
 ---
 
-# Email Delivery of Web Channel Document
+# Consegna e-mail del documento del canale web
 
-Una volta definito e verificato il documento di comunicazione interattiva del canale web, è necessario un meccanismo di consegna per consegnare il documento del canale web al destinatario.
+Dopo aver definito e testato il documento di comunicazione interattiva per il canale web, è necessario un meccanismo di consegna per consegnare il documento al destinatario.
 
-In questo articolo, consideriamo l’e-mail come un meccanismo di consegna per il documento del canale web. Il destinatario riceverà un collegamento al documento del canale web via e-mail.Facendo clic sul collegamento, all&#39;utente viene richiesto di eseguire l&#39;autenticazione e il documento del canale web viene compilato con i dati specifici dell&#39;utente connesso.
+In questo articolo, consideriamo le e-mail come un meccanismo di consegna per il documento del canale web. Il destinatario riceverà un collegamento al documento del canale web tramite e-mail.Facendo clic sul collegamento, all’utente viene richiesto di eseguire l’autenticazione e il documento del canale web viene compilato con i dati specifici dell’utente connesso.
 
-Diamo un&#39;occhiata al seguente frammento di codice. Questo codice fa parte di GET.jsp che viene attivato quando l&#39;utente fa clic sul collegamento nell&#39;e-mail per visualizzare il documento del canale web. L&#39;utente connesso viene ottenuto utilizzando il jackrabbit UserManager. Una volta ottenuto l&#39;utente connesso, otteniamo il valore della proprietà accountNumber associata al profilo dell&#39;utente.
+Diamo un’occhiata al seguente frammento di codice. Questo codice fa parte di GET.jsp che viene attivato quando l’utente fa clic sul collegamento nell’e-mail per visualizzare il documento del canale web. Otteniamo l’utente connesso utilizzando l’UserManager di jackrabbit. Una volta ottenuto l’utente connesso, viene visualizzato il valore della proprietà accountNumber associata al profilo dell’utente.
 
-Associamo quindi il valore accountNumber a una chiave denominata numero di conto nella mappa. La chiave **numero contabile** è definito nel modale dei dati del modulo come attributo di richiesta. Il valore di questo attributo viene passato come parametro di input al metodo del servizio di lettura Form Data Modal.
+Associamo quindi il valore accountNumber a una chiave denominata accountnumber nella mappa. Chiave **numero account** è definito nel modale dei dati del modulo come un attributo di richiesta. Il valore di questo attributo viene passato come parametro di input al metodo del servizio di lettura modale dati modulo.
 
-Linea 7: Stiamo inviando la richiesta ricevuta a un altro servlet, in base al tipo di risorsa identificato dall’URL del documento di comunicazione interattiva. La risposta restituita da questo secondo servlet è inclusa nella risposta del primo servlet.
+Riga 7: stiamo inviando la richiesta ricevuta a un altro servlet, in base al tipo di risorsa identificato dall’URL del documento di comunicazione interattiva. La risposta restituita da questo secondo servlet è inclusa nella risposta del primo servlet.
 
 ```java
 org.apache.jackrabbit.api.security.user.UserManager um = ((org.apache.jackrabbit.api.JackrabbitSession) session).getUserManager();
@@ -39,12 +39,12 @@ CustomParameterRequest wrapperRequest = new CustomParameterRequest(slingRequest,
 wrapperRequest.getRequestDispatcher("/content/forms/af/401kstatement/irastatement/channels/web.html").include(wrapperRequest, response);
 ```
 
-![Metodo di inclusione](assets/includemethod.jpg)
+![Includi approccio metodo](assets/includemethod.jpg)
 
 Rappresentazione visiva del codice della riga 7
 
 ![Configurazione del parametro di richiesta](assets/requestparameter.png)
 
-Attributo di richiesta definito per il servizio di lettura del modale dei dati del modulo
+Attributo richiesta definito per il servizio di lettura del modale dati modulo
 
-[Pacchetto di AEM di esempio](assets/webchanneldelivery.zip).
+[Esempio di pacchetto AEM](assets/webchanneldelivery.zip).

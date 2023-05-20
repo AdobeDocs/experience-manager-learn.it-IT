@@ -1,6 +1,6 @@
 ---
 title: Convertitore indice
-description: Scopri in che modo Index Converter converte automaticamente le definizioni di indice AEM esistenti in AEM compatibili.
+description: Scopri in che modo il Convertitore indice converte automaticamente le definizioni di indice AEM esistenti affinché siano compatibili con gli as a Cloud Service AEM.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -18,6 +18,6 @@ ht-degree: 9%
 
 # Convertitore indice
 
-Scopri in che modo Index Converter converte automaticamente le definizioni di indice AEM esistenti in AEM compatibili.
+Scopri in che modo il Convertitore indice converte automaticamente le definizioni di indice AEM esistenti affinché siano compatibili con gli as a Cloud Service AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336696?quality=12&learn=on)

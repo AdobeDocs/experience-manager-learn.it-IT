@@ -1,7 +1,7 @@
 ---
-title: Installa e configura Tomcat
+title: Installare e configurare Tomcat
 seo-title: Install and Configure Tomcat
-description: Questa è parte 1 di tutorial multistep per la creazione del tuo primo documento di comunicazione interattivo.In questa parte, installeremo TOMCAT e distribuiremo il file sampleRest.war in TOMCAT.
+description: Questa è la parte 1 del tutorial a più passaggi per creare il tuo primo documento di comunicazione interattivo.In questa parte, installeremo TOMCAT e distribuiremo il file sampleRest.war in TOMCAT.
 uuid: c6d4c74c-ea16-4c63-92c9-182d087fd88c
 feature: Interactive Communication
 topics: development
@@ -21,24 +21,24 @@ ht-degree: 1%
 
 ---
 
-# Installa e configura Tomcat {#install-and-configure-tomcat}
+# Installare e configurare Tomcat {#install-and-configure-tomcat}
 
-In questa parte, installiamo TOMCAT e distribuiamo il file sampleRest.war in TOMCAT. L’endpoint REST esposto da questo file WAR è la base del modello dati Origine dati e Modulo.
+In questa parte, viene installato TOMCAT e viene distribuito il file sampleRest.war in TOMCAT. L’endpoint REST esposto da questo file WAR è la base per il nostro modello dati Origine dati e Modulo.
 
 Per impostare tomcat, seguire le seguenti istruzioni:
 
 1. Scarica e installa JDK1.8.
-2. Imposta JAVA_HOME per puntare a JDK1.8.
-3. Scarica [gatto](https://tomcat.apache.org/). Questo file di guerra è stato testato con Tomcat versione 8.5.x e 9.0.x.
-4. Scarica la versione tomcat della tua preferenza. È possibile scaricare lo zip windows a 64 bit sotto la sezione core.
-5. Decomprimi i contenuti nella cartella c:\tomcat.
-6. Dovresti vedere qualcosa del genere nel tuo c drive **c:\tomcat\apache-tomcat-8.5.27** a seconda della versione del vostro gatto
-7. Crea una variabile di ambiente denominata &quot;CATALINA_HOME&quot; e imposta il suo valore sulla cartella di installazione tomcat esempio c:\tomcat\apache- tomcat-8.5.27
-8. Copia il file SampleRest.war nella cartella webapps della tua installazione Tomcat
-9. Avvia la nuova finestra del prompt dei comandi.
-10. Passa a &lt;tomcat install=&quot;&quot; folder=&quot;&quot;>\bin ed esegui startup.bat
-11. Una volta avviato il tuo gatto, prova l&#39;endpoint esposto da file WAR per [clic qui](http://localhost:8080/SampleRest/webapi/getStatement/9586)
-12. È necessario ottenere dati di esempio come risultato di questa chiamata.
+2. Impostare JAVA_HOME su JDK1.8.
+3. Scarica [tomcat](https://tomcat.apache.org/). Questo file di guerra è stato testato con Tomcat versione 8.5.x e 9.0.x.
+4. Scarica la versione tomcat della tua preferenza. Puoi scaricare lo zip di Windows a 64 bit nella sezione core.
+5. Decomprimere il contenuto nel file c:\tomcat.
+6. Dovresti vedere qualcosa di simile nell&#39;unità C **c:\tomcat\apache-tomcat-8.5.27** a seconda della versione della tomcat
+7. Creare una variabile di ambiente denominata &quot;CATALINA_HOME&quot; e impostarne il valore sulla cartella di installazione tomcat esempio c:\tomcat\apache- tomcat-8.5.27
+8. Copia il file SampleRest.war nella cartella webapps dell’installazione Tomcat.
+9. Avvia una nuova finestra del prompt dei comandi.
+10. Accedi a &lt;tomcat install=&quot;&quot; folder=&quot;&quot;>\bin ed eseguire startup.bat
+11. Una volta avviato il tomcat, verifica l’endpoint esposto da WAR File eseguendo il test di [clic qui](http://localhost:8080/SampleRest/webapi/getStatement/9586)
+12. Dovresti ottenere dati di esempio come risultato di questa chiamata.
 
 Congratulazioni !!!. Hai configurato tomcat e distribuito il file SampleRest.war.
 

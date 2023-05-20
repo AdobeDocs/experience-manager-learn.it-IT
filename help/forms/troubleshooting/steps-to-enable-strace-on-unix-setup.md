@@ -1,6 +1,6 @@
 ---
-title: Passaggi per abilitare la traccia della striscia (configurazione Unix)
-description: Configurare i log delle stringhe per la risoluzione dei problemi relativi a PDF Generator
+title: Passaggi per abilitare la traccia della traccia (configurazione Unix)
+description: Configurare i registri di traccia per la risoluzione dei problemi di PDF Generator
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Passaggi per abilitare la traccia della striscia nella configurazione Unix
+# Passaggi per abilitare la traccia della traccia in configurazione Unix
 
-*Questo video illustra i passaggi necessari per abilitare la traccia delle stringhe nella configurazione Unix per AEM Forms PDFG.*
+*Questo video illustra i passaggi per abilitare la traccia dello strace nella configurazione Unix per AEM Forms PDFG.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335525?quality=12&learn=on)

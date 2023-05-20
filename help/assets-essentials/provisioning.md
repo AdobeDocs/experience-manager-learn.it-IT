@@ -1,6 +1,6 @@
 ---
 title: Provisioning di Assets Essentials
-description: Scopri come distribuire Assets Essentials utilizzando Cloud Manager ed effettuare il provisioning dell’accesso utente.
+description: Scopri come distribuire Assets Essentials utilizzando Cloud Manager ed eseguire il provisioning dell’accesso utente.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Provisioning di Assets Essentials
 
-Scopri come distribuire Assets Essentials utilizzando Cloud Manager ed effettuare il provisioning dell’accesso utente.
+Scopri come distribuire Assets Essentials utilizzando Cloud Manager ed eseguire il provisioning dell’accesso utente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335952?quality=12&learn=on)

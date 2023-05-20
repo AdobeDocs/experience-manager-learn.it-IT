@@ -1,7 +1,7 @@
 ---
-title: Invio della pagina di ringraziamento
+title: Pagina di ringraziamento invio
 seo-title: Submitting To Thank You Page
-description: Visualizza una pagina di ringraziamento all’invio del modulo adattivo
+description: Visualizzare una pagina di ringraziamento all’invio del modulo adattivo
 seo-description: Display a thank you page on submitting Adaptive Form
 uuid: ec695b87-083a-47f6-92ac-c9a6dc2b85fb
 feature: Adaptive Forms
@@ -23,25 +23,25 @@ ht-degree: 0%
 
 ---
 
-# Invio della pagina di ringraziamento {#submitting-to-thank-you-page}
+# Pagina di ringraziamento invio {#submitting-to-thank-you-page}
 
-L’opzione Invia a endpoint REST passa i dati compilati nel modulo a una pagina di conferma configurata come parte della richiesta HTTP GET. Puoi aggiungere il nome dei campi da richiedere. Il formato della richiesta è:
+L’opzione Invia all’endpoint REST trasmette i dati compilati nel modulo a una pagina di conferma configurata come parte della richiesta HTTP GET. Puoi aggiungere il nome dei campi da richiedere. Il formato della richiesta è:
 
-\{fieldName\} = \{parameterName\}. Ad esempio, submitterName è il nome di un campo modulo adattivo e il nome del parametro è il nome del mittente. Nella pagina di ringraziamento, è possibile accedere al parametro del mittente utilizzando request.getParameter(&quot;submitter&quot;) per ottenere il valore del campo del nome del mittente.
+\{fieldName\} = \{parameterName\}. Ad esempio, submitterName è il nome di un campo di un modulo adattivo e submitter è il nome del parametro. Nella pagina di ringraziamento, è possibile accedere al parametro submitter utilizzando request.getParameter(&quot;submitter&quot;) per ottenere il valore del campo del nome del submitter.
 
 `submitterName=submitter`
 
-Nella schermata seguente, stiamo inviando il modulo adattivo per ringraziarti la pagina che si trova in /content/grankyou. A questa pagina di ringraziamento, trasmettiamo 3 attributi di richiesta che contengono i valori del campo modulo.
+Nella schermata seguente, stiamo inviando il modulo adattivo per ringraziarti alla pagina che si trova in /content/thankyou. A questa pagina di ringraziamento, stiamo passando 3 attributi di richiesta che contengono i valori dei campi modulo.
 
 ![Pagina di ringraziamento](assets/thankyoupage.gif)
 
-È inoltre possibile inviare all’endpoint esterno tramite POST. Per farlo, devi solo selezionare la casella di controllo &quot;abilita richiesta post&quot; e fornire l’URL per l’endpoint esterno. Quando si invia il modulo, si ottiene una pagina di ringraziamento e l’endpoint POST viene richiamato simultaneamente.
+Puoi anche inviare all’endpoint esterno tramite POST. A questo scopo, seleziona la casella di controllo &quot;abilita richiesta post&quot; e fornisci l’URL dell’endpoint esterno. Quando si invia il modulo, viene visualizzata una pagina di ringraziamento e l&#39;endpoint POST viene richiamato contemporaneamente.
 
-![Acquisire la configurazione](assets/capture.gif)
+![Configurazione acquisizione](assets/capture.gif)
 
-Per testare questa funzionalità sul server, segui le istruzioni riportate di seguito:
+Per testare questa funzionalità sul server, attenersi alle istruzioni riportate di seguito:
 
-* Importa [file di risorse associato a questo articolo in AEM utilizzando il gestore pacchetti](assets/submittingtorestendpoint.zip)
-* Posiziona il browser sul [Modulo di richiesta Time Off](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Importa [file di risorse associato a questo articolo in AEM utilizzando Gestione pacchetti](assets/submittingtorestendpoint.zip)
+* Puntare il browser al [Modulo di richiesta di indisponibilità](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Compila il campo richiesto e invia il modulo
-* Dovresti ottenere la pagina di ringraziamento con le tue informazioni popolate sulla pagina
+* Dovresti ottenere la pagina di ringraziamento con le informazioni inserite nella pagina

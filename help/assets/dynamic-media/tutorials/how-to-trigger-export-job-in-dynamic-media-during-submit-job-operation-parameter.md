@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Attivazione di un processo di esportazione in AEM Dynamic Media
 
-Questo video illustra i passaggi necessari per attivare il processo di esportazione in Dynamic Media durante l’invio del parametro per l’operazione di lavoro.
+Questo video illustra i passaggi per attivare il processo di esportazione in Dynamic Media durante l’invio del parametro dell’operazione processo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335454?quality=12&learn=on)

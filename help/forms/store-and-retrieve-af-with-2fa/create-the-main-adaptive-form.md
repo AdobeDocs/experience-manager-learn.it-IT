@@ -1,6 +1,6 @@
 ---
 title: Creare il modulo adattivo principale
-description: Crea i moduli adattivi per acquisire le informazioni dei richiedenti e il modulo adattivo per recuperare il modulo adattivo salvato
+description: Creare i moduli adattivi per acquisire le informazioni sui richiedenti e i moduli adattivi per recuperare il modulo adattivo salvato
 feature: Adaptive Forms
 type: Tutorial
 activity: implement
@@ -20,20 +20,20 @@ ht-degree: 0%
 
 # Creare il modulo adattivo principale
 
-Il modulo **StoreAFWithAttachments** è il modulo adattivo principale. Questo modulo adattivo è il punto di ingresso del caso d’uso. In questo modulo vengono acquisiti i dettagli utente, compreso il numero di cellulare. Questo modulo ha anche la possibilità di aggiungere alcuni allegati. Quando si fa clic sul pulsante Save and Exit , il codice lato server viene eseguito per memorizzare i dati del modulo nel database e viene generato un ID applicazione univoco che viene presentato all’utente per la custodia sicura. Questo ID applicazione viene utilizzato per recuperare il numero di cellulare associato all&#39;applicazione.
+Il modulo **StoreAFWithAttachments** è il modulo adattivo principale. Questo modulo adattivo è il punto di ingresso per il caso d’uso. In questo modulo vengono acquisiti i dettagli utente, incluso il numero di cellulare. Questo modulo consente inoltre di aggiungere alcuni allegati. Quando si fa clic sul pulsante Salva ed esci, viene eseguito il codice lato server per memorizzare i dati del modulo nel database e viene generato un ID applicazione univoco che viene presentato all’utente per la conservazione sicura. Questo ID applicazione viene utilizzato per recuperare il numero di cellulare associato all’applicazione.
 
-![modulo di applicazione principale](assets/6552.JPG)
+![modulo di domanda principale](assets/6552.JPG)
 
 Questo modulo è associato a **bootboxjs540,storeAFWithAttachments** librerie client create in precedenza nel corso e un flusso di lavoro AEM che viene attivato all’invio del modulo.
 
 
-* I moduli di esempio sono basati su [modello di modulo adattivo personalizzato](assets/custom-template-with-page-component.zip) che deve essere importato in AEM affinché il rendering dei moduli di esempio sia corretto.
+* I moduli di esempio si basano su [modello di modulo adattivo personalizzato](assets/custom-template-with-page-component.zip) che deve essere importato nell&#39;AEM affinché i moduli di esempio vengano riprodotti correttamente.
 
-* Completato [Modulo StoreAfWithAttachments](assets/store-af-with-attachments-form.zip) può essere scaricato e importato nell’istanza AEM.
+* Il completamento [Modulo StoreAfWithAttachments](assets/store-af-with-attachments-form.zip) possono essere scaricati e importati nell’istanza AEM.
 
-* La [Flusso di lavoro AEM associato a questo modulo](assets/workflow-model-store-af-with-attachments.zip) è necessario importarlo nell’istanza AEM affinché il modulo funzioni.
+* Il [Flusso di lavoro AEM associato a questo modulo](assets/workflow-model-store-af-with-attachments.zip) devono essere importati nell’istanza AEM affinché il modulo funzioni.
 
 
 ## Passaggi successivi
 
-[Creazione del modulo per il recupero del modulo salvato](./retrieve-saved-form.md)
+[Creare il modulo recuperando il modulo salvato](./retrieve-saved-form.md)

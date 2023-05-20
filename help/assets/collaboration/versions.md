@@ -1,6 +1,6 @@
 ---
 title: Versioni
-description: Scopri come AEM creare e gestire le versioni delle risorse.
+description: Scopri in che modo l’AEM crea e gestisce le versioni delle risorse.
 feature: Asset Management
 version: Cloud Service
 kt: 4671
@@ -19,6 +19,6 @@ ht-degree: 11%
 
 # Versioni
 
-Scopri come AEM creare e gestire le versioni delle risorse.
+Scopri in che modo l’AEM crea e gestisce le versioni delle risorse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32052?quality=12&learn=on)

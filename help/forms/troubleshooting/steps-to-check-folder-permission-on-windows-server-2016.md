@@ -1,6 +1,6 @@
 ---
-title: Passaggi per controllare l'autorizzazione alla cartella in Windows Server2016
-description: Verificare che l'utente PDFG disponga delle autorizzazioni necessarie per la cartella in Windows Server 2016
+title: Procedura per controllare l'autorizzazione della cartella in Windows Server2016
+description: Verificare che l'utente PDFG disponga dell'autorizzazione per la cartella richiesta in Windows Server 2016
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Passaggi per controllare l&#39;autorizzazione alla cartella in Windows Server 2016 per AEM Forms PDFG
+# Passaggi per verificare l’autorizzazione della cartella in Windows Server 2016 per AEM Forms PDFG
 
-*Questo video illustra i passaggi aggiuntivi per controllare Autorizzazione cartella in Windows Server 2016.*
+*Questo video illustra i passaggi aggiuntivi per verificare le autorizzazioni per le cartelle in Windows Server 2016.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335519?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Lavori di traduzione
-description: Scopri come aggiungere un processo di traduzione a un progetto di traduzione esistente.
+description: Scopri come aggiungere un lavoro di traduzione a un progetto di traduzione esistente.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 # Lavori di traduzione {#translation-jobs}
 
-Scopri come aggiungere un processo di traduzione a un progetto di traduzione esistente.
+Scopri come aggiungere un lavoro di traduzione a un progetto di traduzione esistente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36488?quality=12&learn=on)

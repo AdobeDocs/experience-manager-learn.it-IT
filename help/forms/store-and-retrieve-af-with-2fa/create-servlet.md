@@ -1,6 +1,6 @@
 ---
 title: Crea servlet
-description: Crea un servlet per gestire le richieste di POST per salvare i dati del modulo
+description: Creare un servlet per gestire le richieste dei POST al fine di salvare i dati del modulo
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -19,9 +19,9 @@ ht-degree: 2%
 
 # Crea servlet
 
-Il passaggio successivo consiste nel creare un servlet che chiami i metodi appropriati del nostro servizio OSGi personalizzato. Il servlet ha accesso ai dati del modulo adattivo e alle informazioni sugli allegati dei file. Il servlet restituisce un ID applicazione univoco che può essere utilizzato per recuperare il modulo adattivo parzialmente completato.
+Il passaggio successivo consiste nel creare un servlet che chiami i metodi appropriati del nostro servizio OSGi personalizzato. Il servlet ha accesso ai dati del modulo adattivo e alle informazioni sugli allegati. Il servlet restituisce un ID applicazione univoco che può essere utilizzato per recuperare il modulo adattivo parzialmente completato.
 
-Questo servlet viene richiamato quando l’utente fa clic sul pulsante Salva ed esci sul modulo adattivo
+Questo servlet viene richiamato quando l’utente fa clic sul pulsante Salva ed esci nel modulo adattivo
 
 ```java
 package com.techmarketing.core.servlets;
@@ -81,4 +81,4 @@ public class StoreDataInDBWithAttachmentsInfo extends SlingAllMethodsServlet {
 
 ## Passaggi successivi
 
-[Rendering del modulo con dati del modulo salvati](./retrieve-saved-form.md)
+[Rendering modulo con dati modulo salvati](./retrieve-saved-form.md)

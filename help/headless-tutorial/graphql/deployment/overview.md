@@ -1,6 +1,6 @@
 ---
-title: Implementazioni senza titolo AEM
-description: Scopri le varie considerazioni sulla distribuzione per le app AEM Headless.
+title: Distribuzioni headless AEM
+description: Scopri le varie considerazioni sulla distribuzione delle app headless AEM.
 version: Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
@@ -9,35 +9,35 @@ level: Intermediate
 kt: 10794
 thumbnail: kt-10794.jpg
 last-substantial-update: 2022-08-26T00:00:00Z
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+exl-id: 6de58ca0-9444-4272-9487-15a9e3c89231
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
+# Distribuzioni headless AEM
 
-# Implementazioni senza titolo AEM
+Le implementazioni client headless AEM possono assumere diverse forme: SPA ospitato da AEM, SPA esterno, sito web, app mobile o persino processo server-to-server.
 
-AEM le implementazioni client headless si presentano in molti modi; SPA in hosting AEM, SPA esterni, sito web, app mobile o persino processo server-to-server.
-
-A seconda del client e della modalità di distribuzione, le distribuzioni senza intestazione AEM hanno considerazioni diverse.
+A seconda del client e della modalità di distribuzione, le distribuzioni headless AEM hanno considerazioni diverse.
 
 ## Architettura del servizio AEM
 
-Prima di esaminare le considerazioni relative all’implementazione, è fondamentale comprendere AEM’architettura logica e la separazione e i ruoli dei livelli di servizio di AEM as a Cloud Service. AEM as a Cloud Service è composto da due servizi logici:
+Prima di esaminare le considerazioni relative alla distribuzione, è fondamentale comprendere l&#39;architettura logica dell&#39;AEM e la separazione e i ruoli dei livelli di servizio dell&#39;as a Cloud Service AEM. AEM as a Cloud Service è composto da due servizi logici:
 
-+ __AEM Author__ è il servizio in cui i team creano, collaborano e pubblicano frammenti di contenuto (e altre risorse).
-+ __Pubblicazione AEM__ è il servizio che sono stati pubblicati Frammenti di contenuto (e altre risorse) vengono replicati per il consumo generale.
-+ __Anteprima AEM__ è il servizio che imita il comportamento di AEM Publish, ma con il contenuto pubblicato a tale servizio a scopo di anteprima o revisione. AEM anteprima è destinata al pubblico interno e non alla distribuzione generale dei contenuti. L’utilizzo di Anteprima AEM è facoltativo, in base al flusso di lavoro desiderato.
++ __Autore AEM__ è il servizio in cui i team creano, collaborano e pubblicano Frammenti di contenuto (e altre risorse).
++ __Pubblicazione AEM__ è il servizio pubblicato I frammenti di contenuto (e altre risorse) vengono replicati per l’utilizzo generale.
++ __Anteprima AEM__ è il servizio che imita il comportamento di AEM Publish, ma il cui contenuto è pubblicato a scopo di anteprima o revisione. L’anteprima AEM è destinata al pubblico interno e non alla distribuzione generale di contenuti. L’utilizzo di Anteprima AEM è facoltativo, in base al flusso di lavoro desiderato.
 
 ![Architettura del servizio AEM](./assets/overview/aem-service-architecture.png)
 
-Architettura di distribuzione headless as a Cloud Service tipica AEM
+Architettura di distribuzione headless tipica as a Cloud Service all’AEM
 
-I client AEM headless che operano in una capacità di produzione generalmente interagiscono con AEM Publish, che contiene il contenuto approvato e pubblicato. I clienti che interagiscono con AEM Author devono prestare particolare attenzione, in quanto AEM Author è sicuro per impostazione predefinita, richiede l’autorizzazione per tutte le richieste e può contenere anche contenuti in corso di elaborazione o non approvati.
+I client AEM headless che operano in una capacità di produzione in genere interagiscono con AEM Publish, che contiene il contenuto approvato e pubblicato. I clienti che interagiscono con AEM Author devono prestare particolare attenzione, in quanto AEM Author è protetto per impostazione predefinita e richiede l’autorizzazione per tutte le richieste; può inoltre contenere contenuto in corso di lavorazione o non approvato.
 
-## Implementazioni client headless
+## Distribuzioni client headless
 
 <div class="columns is-multiline">
     <!-- Single-page App (SPA) -->
@@ -53,7 +53,7 @@ I client AEM headless che operano in una capacità di produzione generalmente in
            <div class="card-content is-padded-small">
                <div class="content">
                    <p class="headline is-size-6 has-text-weight-bold"><a href="./spa.md" title="App a pagina singola (SPA)">App a pagina singola (SPA)</a></p>
-                   <p class="is-size-6">Scopri le considerazioni sulla distribuzione delle app a pagina singola (SPA).</p>
+                   <p class="is-size-6">Scopri le considerazioni sulla distribuzione per le app a pagina singola (SPA).</p>
                    <a href="./spa.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri</span>
                    </a>
@@ -74,7 +74,7 @@ I client AEM headless che operano in una capacità di produzione generalmente in
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="./web-component.md" title="Componente Web/JS">Componente Web/JS</a></p>
-               <p class="is-size-6">Scopri le considerazioni sulla distribuzione per i componenti web e i consumatori JavaScript headless basati su browser.</p>
+               <p class="is-size-6">Scopri le considerazioni sulla distribuzione per i componenti web e i consumatori headless JavaScript basati su browser.</p>
                <a href="./web-component.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri</span>
                </a>
@@ -95,7 +95,7 @@ I client AEM headless che operano in una capacità di produzione generalmente in
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="./mobile.md" title="App mobili">App mobile</a></p>
-               <p class="is-size-6">Scopri le considerazioni sulla distribuzione delle app mobili.</p>
+               <p class="is-size-6">Scopri le considerazioni sulla distribuzione per le app per dispositivi mobili.</p>
                <a href="./mobile.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri</span>
                </a>
@@ -116,7 +116,7 @@ I client AEM headless che operano in una capacità di produzione generalmente in
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="./server-to-server.md" title="App server-to-server">App server-to-server</a></p>
-               <p class="is-size-6">Informazioni sulle considerazioni di implementazione per le app server-to-server</p>
+               <p class="is-size-6">Scopri le considerazioni sulla distribuzione per le app server-to-server</p>
                <a href="./server-to-server.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri</span>
                </a>

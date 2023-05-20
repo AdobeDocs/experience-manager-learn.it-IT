@@ -1,49 +1,49 @@
 ---
-title: Informazioni sulla cache in Dispatcher
-description: Comprendi il funzionamento del modulo Dispatcher nella cache.
+title: Dispatcher informazioni sul caching
+description: Scopri in che modo il modulo Dispatcher funziona la sua cache.
 topic: Administration, Performance
 version: 6.5
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 04cd4002af7028ee9e3b1e1455b6346c56446245
+exl-id: 66ce0977-1b0d-4a63-a738-8a2021cf0bd5
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 1%
 
 ---
 
-
-# Informazioni sulla memorizzazione in cache
+# Informazioni sul caching
 
 [Sommario](./overview.md)
 
 [&lt;- Precedente: Spiegazione dei file di configurazione](./explanation-config-files.md)
 
-Questo documento illustra come avviene la memorizzazione in cache di Dispatcher e come può essere configurata
+Questo documento spiega come avviene il caching in Dispatcher e come può essere configurato
 
-## Directory di memorizzazione nella cache
+## Memorizzazione in cache delle directory
 
-Utilizziamo le seguenti directory di cache predefinite nelle installazioni della linea di base
+Nelle installazioni della linea di base vengono utilizzate le seguenti directory di cache predefinite
 
 - Autore
    - `/mnt/var/www/author`
 - Editore
    - `/mnt/var/www/html`
 
-Quando ogni richiesta attraversa il Dispatcher, le richieste seguono le regole configurate per mantenere una versione cache locale per rispondere agli elementi idonei
+Quando ogni richiesta attraversa Dispatcher, le richieste seguono le regole configurate per mantenere una versione cache locale in grado di rispondere agli elementi idonei
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
-Manteniamo intenzionalmente il carico di lavoro pubblicato separato dal carico di lavoro dell&#39;autore perché quando Apache cerca un file nel DocumentRoot non sa da quale istanza AEM proviene. Pertanto, anche se la cache è disabilitata nella farm dell’autore, se DocumentRoot dell’autore è uguale a quella dell’editore, i file della cache vengono distribuiti quando presente. Ciò significa che distribuirai i file dell’autore per dalla cache pubblicata e produrrai un’esperienza di mix davvero terribile per i tuoi visitatori.
+Il carico di lavoro pubblicato viene intenzionalmente tenuto separato dal carico di lavoro dell’autore perché quando Apache cerca un file in DocumentRoot non sa da quale istanza AEM proviene. Pertanto, anche se la cache è disabilitata nella farm di authoring, se DocumentRoot dell’autore è uguale a publisher, i file presenti nella cache verranno distribuiti. Ciò significa che distribuirai i file di authoring per dalla cache pubblicata e che farai un’esperienza di mix davvero terribile per i visitatori.
 
-Anche mantenere directory DocumentRoot separate per contenuti pubblicati diversi è una pessima idea. Sarà necessario creare più elementi nella cache che non differiscono tra siti come clientlibs, nonché impostare un agente di flush di replica per ogni DocumentRoot configurato. Incremento della quantità di scaricamento in head con ogni attivazione di pagina. Utilizza lo spazio dei nomi dei file e i percorsi completi nella cache ed evita più DocumentRoot per i siti pubblicati.
+Anche mantenere directory DocumentRoot separate per contenuti pubblicati diversi è una pessima idea. Dovrai creare più elementi re-memorizzati nella cache che non differiscano tra i siti come clientlibs, nonché impostare un agente di svuotamento della replica per ogni DocumentRoot configurato. Aumentare la quantità di svuotamento sopra la testina con ogni attivazione della pagina. Utilizza lo spazio dei nomi dei file e i relativi percorsi nella cache completa ed evita più DocumentRoot per i siti pubblicati.
 </div>
 
 ## File di configurazione
 
-Il Dispatcher controlla ciò che si qualifica come memorizzabile in cache nel `/cache {` di qualsiasi file farm. 
-Nelle farm di configurazione della linea di base AMS, troverai i nostri &quot;include&quot; come mostrato di seguito:
+Dispatcher controlla ciò che è qualificato come &quot;in cache&quot; in `/cache {` sezione di qualsiasi file farm. 
+Nelle farm di configurazione della linea di base di AMS, troverai le nostre inclusioni come mostrato di seguito:
 
 
 ```
@@ -54,17 +54,17 @@ Nelle farm di configurazione della linea di base AMS, troverai i nostri &quot;in
 ```
 
 
-Quando crei le regole per cosa memorizzare in cache o meno, fai riferimento alla documentazione [qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Quando crei le regole per ciò che deve essere memorizzato in cache o meno, consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
 
 
-## Creazione di cache
+## Caching di Author
 
 Abbiamo visto molte implementazioni in cui le persone non memorizzano in cache i contenuti di authoring. 
-Stanno perdendo un enorme miglioramento delle prestazioni e della reattività per i loro autori.
+Gli autori non riescono a ottenere un enorme miglioramento delle prestazioni e della reattività.
 
-Parliamo della strategia adottata per configurare la farm degli autori in modo che venga memorizzata correttamente nella cache.
+Parliamo della strategia adottata per configurare la farm di authoring in modo che venga memorizzata correttamente la cache.
 
-Di seguito è riportato un autore di base `/cache {` sezione del file farm dell’autore:
+Ecco un autore di base `/cache {` sezione del file farm dell’autore:
 
 
 ```
@@ -91,14 +91,14 @@ Di seguito è riportato un autore di base `/cache {` sezione del file farm dell�
 }
 ```
 
-Le cose importanti da notare qui sono che `/docroot` è impostato sulla directory cache per l’autore.
+Le cose importanti da notare sono che `/docroot` è impostato sulla directory della cache per l’authoring.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
-Assicurati che `DocumentRoot` nel `.vhost` il file corrisponde alle farm `/docroot` parameter
+Assicurati che le `DocumentRoot` nel file dell&#39;autore `.vhost` file corrisponde alle farm `/docroot` parametro
 </div>
 
-L’istruzione &quot;include&quot; delle regole di cache include il file `/etc/httpd/conf.dispatcher.d/cache/ams_author_cache.any` che contiene le seguenti regole:
+L’istruzione cache rules include il file `/etc/httpd/conf.dispatcher.d/cache/ams_author_cache.any` che contiene le seguenti regole:
 
 ```
 /0000 { 
@@ -131,25 +131,25 @@ L’istruzione &quot;include&quot; delle regole di cache include il file `/etc/h
 }
 ```
 
-In uno scenario di authoring, il contenuto cambia continuamente e di proposito. Desideri memorizzare nella cache solo gli elementi che non verranno modificati frequentemente.
-Abbiamo delle regole da memorizzare nella cache `/libs` poiché fanno parte della linea di base AEM installare e cambierebbero fino a quando non avrai installato Service Pack, Cumulative Fix Pack, Upgrade o Hotfix. La memorizzazione in cache di questi elementi ha un senso e offre enormi vantaggi all&#39;esperienza di authoring degli utenti finali che utilizzano il sito.
+In uno scenario di authoring, il contenuto cambia continuamente e di proposito. Desideri memorizzare nella cache solo gli elementi che non verranno modificati di frequente.
+Abbiamo regole da memorizzare in cache `/libs` perché fanno parte dell’installazione AEM linea di base e cambierebbero finché non hai installato un Service Pack, un Cumulative Fix Pack, un aggiornamento o un Hotfix. La memorizzazione in cache di questi elementi ha molto senso e offre agli utenti finali che utilizzano il sito enormi vantaggi in termini di esperienza di authoring.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
-Tieni presente che anche queste regole memorizzano nella cache <b>`/apps`</b> è qui che vive il codice dell&#39;applicazione personalizzata. Se stai sviluppando il codice su questa istanza, allora si rivelerà molto confuso quando salvi il file e non vedi se riflette nell&#39;interfaccia utente perché serve una copia in cache. In questo caso, se distribuisci il codice in AEM, anche questo non è frequente e parte dei passaggi di distribuzione dovrebbe essere la cancellazione della cache dell’autore. Anche in questo caso il vantaggio è enorme, rendendo il codice memorizzabile nella cache più veloce per gli utenti finali.
+Tieni presente che anche queste regole memorizzano in cache <b>`/apps`</b> qui risiede il codice personalizzato dell’applicazione. Se stai sviluppando il codice in questa istanza, allora si dimostrerà molto confuso quando salvi il file e non vedi se si riflette nell&#39;interfaccia utente a causa di esso che serve una copia memorizzata nella cache. L’intenzione qui è che se esegui una distribuzione del codice nell’AEM, anche questa sarebbe infrequente e parte dei passaggi di distribuzione dovrebbe consistere nel cancellare la cache di authoring. Anche in questo caso, il vantaggio è enorme e rende il codice memorizzabile in cache più veloce per gli utenti finali.
 </div>
 
 
-## ServeOnStale (Servizio AKA su Stale / SOS)
+## ServeOnStale (o Serve su Stale/SOS)
 
-Questa è una delle gemme di una funzione del Dispatcher. Se l’editore è sotto carico o non risponde, in genere genera un codice di risposta http 502 o 503. Se questo accade e questa funzione è abilitata, Dispatcher sarà istruito a continuare a servire il contenuto ancora presente nella cache come miglior sforzo, anche se non è una nuova copia. È meglio servire qualcosa se ce l&#39;hai invece di mostrare un messaggio di errore che non offre funzionalità.
+Questa è una delle gemme di una funzione di Dispatcher. Se l’editore è sotto carico o non risponde, in genere genera un codice di risposta http 502 o 503. Se questo accade e questa funzione è abilitata, Dispatcher verrà istruito a distribuire comunque tutto il contenuto ancora nella cache come best practice, anche se non si tratta di una nuova copia. È meglio distribuire qualcosa se lo si ha, piuttosto che semplicemente mostrare un messaggio di errore che non offre alcuna funzionalità.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
-Tieni presente che se il renderer dell’editore dispone di un timeout del socket o di un messaggio di errore 500, questa funzione non verrà attivata. Se AEM non è raggiungibile, questa funzione non funziona
+Tieni presente che se il renderer del server di pubblicazione ha un timeout del socket o un messaggio di errore 500, questa funzione non verrà attivata. Se l&#39;AEM è semplicemente irraggiungibile questa funzione non fa nulla
 </div>
 
-Questa impostazione può essere impostata in qualsiasi farm, ma ha senso applicarla solo ai file farm di pubblicazione. Ecco un esempio di sintassi della funzione abilitata in un file farm:
+Questa impostazione può essere impostata in qualsiasi farm, ma ha senso applicarla solo ai file farm di pubblicazione. Di seguito è riportato un esempio di sintassi della funzione abilitata in un file farm:
 
 ```
 /cache { 
@@ -160,23 +160,23 @@ Questa impostazione può essere impostata in qualsiasi farm, ma ha senso applica
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
-Uno dei comportamenti normali del modulo Dispatcher è che se una richiesta ha un parametro di query nell’URI (generalmente mostrato come `/content/page.html?myquery=value`) salterà la memorizzazione in cache del file e andrà direttamente all&#39;istanza AEM. Considera questa richiesta come una pagina dinamica e non dovrebbe essere memorizzata nella cache. Questo può causare effetti negativi sull’efficienza della cache.
+Uno dei comportamenti normali del modulo Dispatcher è che se una richiesta ha un parametro di query nell’URI (in genere mostrato come `/content/page.html?myquery=value`) salta la memorizzazione in cache del file e passa direttamente all’istanza AEM. Sta considerando questa richiesta come una pagina dinamica e non deve essere memorizzata in cache. Questo può causare effetti negativi sull’efficienza della cache.
 </div>
 <br/>
 
-Vedi questo [articolo](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner) mostrare quanto importanti parametri di query possono influenzare le prestazioni del sito.
+Vedi questo [articolo](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner) mostrare come importanti parametri di query possono influenzare le prestazioni del sito.
 
-Per impostazione predefinita, si desidera impostare il `ignoreUrlParams` regole per consentire `*`.  Ciò significa che tutti i parametri di query vengono ignorati e consentono la memorizzazione in cache di tutte le pagine indipendentemente dai parametri utilizzati.
+Per impostazione predefinita, si desidera impostare `ignoreUrlParams` regole da consentire `*`.  Ciò significa che tutti i parametri di query vengono ignorati e consentono di memorizzare in cache tutte le pagine, indipendentemente dai parametri utilizzati.
 
-Ecco un esempio in cui qualcuno ha creato un meccanismo di riferimento per i collegamenti profondi dei social media che utilizza il riferimento all&#39;argomento nell&#39;URI per sapere da dove proviene la persona.
+Ecco un esempio in cui qualcuno ha creato un meccanismo di riferimento per collegamenti profondi (deep link) nei social media che utilizza il riferimento dell’argomento nell’URI per sapere da dove proviene la persona.
 
 <b>Esempio ignorabile:</b>
 
 - https://www.we-retail.com/home.html?reference=android
 - https://www.we-retail.com/home.html?reference=facebook
 
-La pagina è memorizzabile nella cache al 100%, ma non memorizza in cache perché gli argomenti sono presenti. 
-Configurazione della `ignoreUrlParams` come elenco consentiti aiuterà a risolvere questo problema:
+La pagina è memorizzabile nella cache al 100% ma non la memorizza in cache perché gli argomenti sono presenti. 
+Configurazione del `ignoreUrlParams` come elenco consentiti aiuterà a risolvere questo problema:
 
 ```
 /cache { 
@@ -185,16 +185,16 @@ Configurazione della `ignoreUrlParams` come elenco consentiti aiuterà a risolve
     }
 ```
 
-Ora, quando il Dispatcher visualizza la richiesta, ignorerà il fatto che la richiesta ha il `query` parametro di `?` riferimento e memorizzazione in cache della pagina
+Ora, quando Dispatcher visualizza la richiesta, ignora il fatto che la richiesta ha il `query` parametro di `?` fare riferimento alla pagina e memorizzarla nella cache
 
 <b>Esempio dinamico:</b>
 
 - https://www.we-retail.com/search.html?q=fruit
 - https://www.we-retail.com/search.html?q=vegetables
 
-Tieni presente che se disponi di parametri di query che apportano una modifica alla pagina, viene eseguito il rendering dell’output, dovrai escluderli dall’elenco ignorato e rendere nuovamente la pagina non memorizzabile nella cache.  Ad esempio, una pagina di ricerca che utilizza un parametro di query modifica l’html non elaborato di cui è stato eseguito il rendering.
+Tieni presente che se disponi di parametri di query che apportano modifiche a una pagina, viene eseguito il rendering dell’output, dovrai escluderli dall’elenco ignorato e rendere di nuovo la pagina non memorizzabile in cache.  Ad esempio, una pagina di ricerca che utilizza un parametro di query modifica l’HTML non elaborato sottoposto a rendering.
 
-Ecco quindi la fonte HTML di ogni ricerca:
+Ecco quindi la sorgente html di ogni ricerca:
 
 `/search.html?q=fruit`:
 
@@ -234,10 +234,10 @@ Ecco quindi la fonte HTML di ogni ricerca:
 </html>
 ```
 
-Se hai visitato `/search.html?q=fruit` in primo luogo, avrebbe messo in cache l&#39;html con i risultati che mostrano i frutti.
+Se hai visitato `/search.html?q=fruit` prima memorizzava nella cache l’html e i risultati mostravano i loro frutti.
 
-Poi visita `/search.html?q=vegetables` secondo, ma mostrerebbe i risultati della frutta.
-Questo perché il parametro di query di `q` viene ignorato per quanto riguarda la memorizzazione in cache.  Per evitare questo problema, è necessario prendere nota delle pagine che eseguono il rendering di HTML diversi in base ai parametri di query e negare il caching per tali pagine.
+Poi visiti `/search.html?q=vegetables` secondo, ma mostrerebbe risultati di frutta.
+Questo perché il parametro query di `q` viene ignorato per quanto riguarda il caching.  Per evitare questo problema è necessario prendere nota delle pagine che eseguono il rendering di diversi HTML in base ai parametri di query e negare il caching per tali pagine.
 
 Esempio:
 
@@ -249,27 +249,27 @@ Esempio:
     }
 ```
 
-Le pagine che utilizzano parametri di query tramite Javascript continueranno a funzionare completamente ignorando i parametri in questa impostazione.  Perché non cambiano il file html a riposo.  Utilizzano javascript per aggiornare i browser dom in tempo reale sul browser locale.  Ciò significa che se utilizzi i parametri di query con javascript è molto probabile che tu possa ignorare questo parametro per il caching delle pagine.  Consenti a quella pagina di memorizzare in cache e godere del guadagno di prestazioni!
+Le pagine che utilizzano parametri di query tramite JavaScript continueranno a funzionare completamente ignorando i parametri di questa impostazione.  Perché non cambiano il file html a riposo.  Utilizzano JavaScript per aggiornare i browser dom in tempo reale sul browser locale.  Ciò significa che se utilizzi i parametri di query con JavaScript, è molto probabile che tu possa ignorare questo parametro per il caching delle pagine.  Consenti alla pagina di memorizzare in cache e ottenere prestazioni migliori.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
-Tenere traccia di queste pagine richiede un certo livello di manutenzione, ma ne vale la pena.  È possibile chiedere al CSE di eseguire un rapporto sul traffico dei siti web per ottenere un elenco di tutte le pagine che utilizzano parametri di query negli ultimi 90 giorni per poter analizzare e assicurarsi di sapere quali pagine esaminare e quali parametri di query non ignorare
+Tenere traccia di queste pagine richiede una certa manutenzione, ma vale la pena migliorare le prestazioni.  Puoi chiedere al tuo CSE di eseguire un rapporto sul traffico dei tuoi siti web per fornirti un elenco di tutte le pagine che utilizzano i parametri di query negli ultimi 90 giorni per analizzare e assicurarti di sapere quali pagine esaminare e quali parametri di query non ignorare
 </div>
 <br/>
 
-## Memorizzazione in cache delle intestazioni di risposta
+## Memorizzazione nella cache delle intestazioni di risposta
 
-È piuttosto ovvio che il Dispatcher memorizza in cache `.html` pagine e clientlibs (es. `.js`, `.css`), ma sapevi che può anche memorizzare nella cache intestazioni di risposta particolari lungo il lato del contenuto in un file con lo stesso nome ma un `.h` estensione file. Questo consente la risposta successiva non solo al contenuto, ma anche alle intestazioni di risposta che dovrebbero accompagnarlo dalla cache.
+È abbastanza ovvio che Dispatcher memorizza in cache `.html` pagine e clientlibs (ad es. `.js`, `.css`), ma sapevi che può anche memorizzare in cache determinate intestazioni di risposta lungo il contenuto di un file con lo stesso nome ma con un `.h` estensione file. Questo consente di rispondere successivamente non solo al contenuto, ma anche alle intestazioni di risposta che devono accompagnarlo dalla cache.
 
-AEM può gestire più di una semplice codifica UTF-8
+L&#39;AEM può gestire più della semplice codifica UTF-8
 
-A volte gli elementi hanno intestazioni speciali che aiutano a controllare i dettagli di codifica del TTL della cache e gli ultimi timestamp modificati.
+A volte gli elementi hanno intestazioni speciali che aiutano a controllare i dettagli di codifica della cache TTL e le ultime marche temporali modificate.
 
-Questi valori quando vengono memorizzati nella cache per impostazione predefinita e il webserver Apache httpd eseguirà il proprio lavoro di elaborazione della risorsa con i suoi normali metodi di gestione dei file, che normalmente si limitano all’indovinazione dei tipi mime in base alle estensioni dei file.
+Quando vengono memorizzati nella cache, questi valori vengono rimossi per impostazione predefinita e il server web Apache httpd esegue il proprio lavoro di elaborazione della risorsa con i normali metodi di gestione dei file, normalmente limitati alla indovinazione del tipo mime in base alle estensioni dei file.
 
-Se disponi della cache di Dispatcher per la risorsa e le intestazioni desiderate, puoi esporre l’esperienza corretta e garantire che tutti i dettagli lo rendano al browser dei client.
+Se disponi della cache di Dispatcher per la risorsa e le intestazioni desiderate, puoi esporre l’esperienza corretta e verificare che tutti i dettagli vengano visualizzati nel browser dei client.
 
-Ecco un esempio di farm con le intestazioni da memorizzare nella cache specificate:
+Ecco un esempio di farm con le intestazioni da memorizzare in cache specificate:
 
 ```
 /cache { 
@@ -285,36 +285,36 @@ Ecco un esempio di farm con le intestazioni da memorizzare nella cache specifica
 ```
 
 
-Nell’esempio che hanno configurato AEM per servire le intestazioni, la rete CDN cerca di sapere quando annullare la validità della cache. Ciò significa che ora AEM in modo appropriato determinare quali file vengono invalidati in base alle intestazioni.
+Nell’esempio hanno configurato l’AEM per distribuire le intestazioni che la rete CDN cerca per sapere quando annullare la validità della cache. Ciò significa che ora l’AEM può determinare correttamente quali file vengono invalidati in base alle intestazioni.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
 
-Tieni presente che non puoi utilizzare espressioni regolari o corrispondenze globali. È una lista letterale delle intestazioni da memorizzare in cache. Inserisci solo un elenco delle intestazioni letterali che desideri memorizzare in cache.
+Tieni presente che non puoi utilizzare espressioni regolari o la corrispondenza glob. È un elenco letterale delle intestazioni da memorizzare in cache. Inserisci solo un elenco delle intestazioni letterali da memorizzare in cache.
 </div>
 
 
-## Periodo di tolleranza per annullamento automatico validità
+## Invalida automaticamente periodo di tolleranza
 
-Nei sistemi AEM che svolgono molte attività da parte degli autori che eseguono molte attivazioni di pagina è possibile avere una race condition in cui si verificano ripetuti invalidamenti. Le richieste di scaricamento ripetute in modo significativo non sono necessarie e puoi generare una certa tolleranza per non ripetere uno scaricamento finché il periodo di tolleranza non viene cancellato.
+Sui sistemi AEM con un’elevata attività da parte di autori che eseguono molte attivazioni di pagina, si può verificare una race condition che causa ripetuti invalidamenti. Le richieste di scaricamento ripetute in modo massiccio non sono necessarie e puoi introdurre una certa tolleranza per non ripetere uno scaricamento finché il periodo di tolleranza non è trascorso.
 
-### Esempio di funzionamento:
+### Esempio di come funziona:
 
-Se hai 5 richieste di annullamento della validità `/content/exampleco/en/` tutto avviene in un periodo di 3 secondi.
+Se hai 5 richieste di annullamento della validità `/content/exampleco/en/` il tutto avviene in un periodo di 3 secondi.
 
-Con questa funzione disattivata, invalideresti la directory della cache `/content/exampleco/en/` 5 volte
+Con questa funzione, la directory della cache verrà invalidata `/content/exampleco/en/` 5 volte
 
-Attivando questa funzione e impostandola su 5 secondi, invaliderebbe la directory della cache `/content/exampleco/en/` <b>una volta</b>
+Attivando questa funzione e impostandola su 5 secondi, la directory della cache verrebbe invalidata `/content/exampleco/en/` <b>una volta</b>
 
-Ecco un esempio di sintassi di questa funzione configurata per un periodo di tolleranza di 5 secondi:
+Di seguito è riportato un esempio di sintassi di questa funzione configurata per un periodo di tolleranza di 5 secondi:
 
 ```
 /cache { 
     /gracePeriod "5"
 ```
 
-## Invalidazione basata su TTL
+## Annullamento della validità basato su TTL
 
-Una nuova funzionalità del modulo Dispatcher era `Time To Live (TTL)` opzioni di invalidazione basate per gli elementi memorizzati nella cache. Quando un elemento viene memorizzato nella cache, cerca la presenza di intestazioni di controllo della cache e genera un file nella directory della cache con lo stesso nome e un `.ttl` estensione.
+Una nuova funzione del modulo Dispatcher era `Time To Live (TTL)` opzioni di annullamento della validità basate sugli elementi memorizzati in cache. Quando un elemento viene memorizzato nella cache, cerca la presenza di intestazioni di controllo cache e genera un file nella directory cache con lo stesso nome e un `.ttl` estensione.
 
 Ecco un esempio della funzione configurata nel file di configurazione della farm:
 
@@ -324,12 +324,12 @@ Ecco un esempio della funzione configurata nel file di configurazione della farm
 ```
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-Tieni presente che AEM deve ancora essere configurato per inviare intestazioni TTL per Dispatcher per rispettarle. L’attivazione di questa funzione consente solo a Dispatcher di sapere quando rimuovere i file per i quali AEM invia intestazioni di controllo cache. Se AEM non inizia a inviare intestazioni TTL, Dispatcher non farà nulla di speciale qui.
+Tieni presente che l’AEM deve ancora essere configurato per inviare le intestazioni TTL in modo che Dispatcher le onori. L’attivazione di questa funzione consente solo a Dispatcher di sapere quando rimuovere i file per i quali l’AEM ha inviato le intestazioni di controllo cache. Se l’AEM non inizia a inviare intestazioni TTL, Dispatcher non farà nulla di speciale qui.
 </div>
 
 ## Regole filtro cache
 
-Ecco un esempio di configurazione della linea di base per cui gli elementi devono essere memorizzati nella cache su un editore:
+Di seguito è riportato un esempio di configurazione di base per la quale gli elementi da memorizzare in cache su un editore:
 
 ```
 /cache{ 
@@ -343,8 +343,8 @@ Ecco un esempio di configurazione della linea di base per cui gli elementi devon
     }
 ```
 
-Vogliamo rendere il nostro sito pubblicato più greedy possibile e memorizzare in cache tutto.
+Vogliamo rendere il nostro sito pubblicato il più greedy possibile e memorizzare tutto in cache.
 
-Se ci sono elementi che interrompono l&#39;esperienza quando è presente nella cache, puoi aggiungere regole per rimuovere l&#39;opzione per memorizzare in cache quell&#39;elemento. Come vedi nell’esempio precedente, i token csrf non dovrebbero mai essere memorizzati nella cache e sono stati esclusi. Ulteriori dettagli sulla stesura di queste regole sono disponibili [qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Se vi sono elementi che interrompono l’esperienza quando vengono memorizzati nella cache, puoi aggiungere regole per rimuovere l’opzione di memorizzare in cache tale elemento. Come vedi nell’esempio precedente, i token csrf non devono mai essere memorizzati in cache e sono stati esclusi. Ulteriori dettagli sulla stesura di queste regole sono disponibili sul sito [qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
 
-[Successivo -> Uso e nozioni di base sulle variabili](./variables.md)
+[Successivo -> Utilizzo e nozioni di base sulle variabili](./variables.md)

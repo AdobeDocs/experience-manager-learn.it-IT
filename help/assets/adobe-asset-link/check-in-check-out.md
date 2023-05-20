@@ -1,6 +1,6 @@
 ---
-title: Consegna e ritiro
-description: Adobe Asset Link consente di estrarre AEM Assets direttamente dall’app creativa su cui stai lavorando e di iniziare immediatamente a apportare modifiche. Puoi facilmente archiviare le risorse in AEM Assets con il controllo delle versioni e i commenti appropriati dopo averle modificate nell’app Creative Cloud.
+title: Check-In, Check-Out
+description: Adobe Asset Link ti consente di estrarre AEM Assets direttamente dall’app creativa su cui stai lavorando e di iniziare immediatamente ad apportare modifiche. Puoi archiviare facilmente le risorse in AEM Assets con il controllo delle versioni e i commenti corretti dopo averli modificati nell’app Creative Cloud.
 sub-product: Experience Manager Assets
 feature: Adobe Asset Link
 version: 6.4, 6.5, Cloud Service
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Consegna e ritiro {#check-in-check-out}
+# Check-In, Check-Out {#check-in-check-out}
 
-Adobe Asset consente di estrarre AEM Assets direttamente dall’app creativa su cui stai lavorando e di iniziare immediatamente a apportare modifiche. Puoi facilmente archiviare le risorse in AEM Assets con il controllo delle versioni e i commenti appropriati dopo averle modificate nell’app Creative Cloud.
+Adobe Asset consente di estrarre AEM Assets direttamente dall’app creativa su cui stai lavorando e di iniziare immediatamente ad apportare modifiche. Puoi archiviare facilmente le risorse in AEM Assets con il controllo delle versioni e i commenti corretti dopo averli modificati nell’app Creative Cloud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33886?quality=12&learn=on)

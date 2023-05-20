@@ -1,6 +1,6 @@
 ---
 title: Utilizzo dell’importazione in blocco con AEM Assets
-description: Lo strumento di importazione in serie AEM as a Cloud Service consente agli amministratori di importare le risorse in blocco dall’archiviazione cloud (Azure Blob Storage o Amazon S3) in modo sicuro ed efficiente.
+description: Lo strumento Importazione in blocco in AEM as a Cloud Service consente agli amministratori di importare risorse in blocco dall’archiviazione cloud (Azure Blob Storage o Amazon S3) in modo sicuro ed efficiente.
 version: Cloud Service
 doc-type: technical-video
 topics: Migration
@@ -23,15 +23,15 @@ ht-degree: 0%
 
 # Utilizzo dell’importazione in blocco
 
-Lo strumento di importazione in serie AEM as a Cloud Service consente agli amministratori di importare le risorse in blocco dall’archiviazione cloud (Azure Blob Storage o Amazon S3) in modo sicuro ed efficiente.
+Lo strumento Importazione in blocco in AEM as a Cloud Service consente agli amministratori di importare risorse in blocco dall’archiviazione cloud (Azure Blob Storage o Amazon S3) in modo sicuro ed efficiente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680?quality=12&learn=on)
 
-## Importazione in serie programmata
+## Pianifica importazione in blocco
 
-L’importazione in blocco supporta l’esecuzione pianificata delle configurazioni, tra cui:
+L’importazione in blocco supporta l’esecuzione pianificata di configurazioni, tra cui:
 
-+ Esecuzione singola a una data e ora definite
-+ Esecuzioni nel periodo ogni ora, giorno o settimana
++ Esecuzione singola a una data e un’ora definite
++ Esecuzioni del periodo ogni ora, giorno o settimana
 
-![Pianificazione delle importazioni in blocco](./assets/bulk-import/schedule.png)
+![Pianificazione importazione in blocco](./assets/bulk-import/schedule.png)

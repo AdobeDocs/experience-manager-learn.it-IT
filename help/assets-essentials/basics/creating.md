@@ -1,6 +1,6 @@
 ---
 title: Creazione di contenuti con Assets Essentials
-description: Scopri come caricare le risorse, creare versioni e persino modificare le risorse utilizzando Adobe Photoshop Express.
+description: Scopri come caricare le risorse, creare versioni e persino modificarle con Adobe Photoshop Express.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Creazione di contenuti con Assets Essentials
 
-Scopri come caricare le risorse, creare versioni e persino modificare le risorse utilizzando Adobe Photoshop Express.
+Scopri come caricare le risorse, creare versioni e persino modificarle con Adobe Photoshop Express.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335746?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Come abilitare il download delle rappresentazioni in Brand Portal.
-description: Passaggi per abilitare il download del rendering in Brand Portal
+description: Passaggi per abilitare il download della rappresentazione in Brand Portal
 role: Developer
 level: Beginner
 version: Cloud Service
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Abilitare il download delle rappresentazioni in Brand Portal
 
-*Questo video illustra i passaggi necessari per abilitare il download delle rappresentazioni in Brand Portal.*
+*Questo video illustra i passaggi per abilitare il download delle rappresentazioni in Brand Portal.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335449?quality=12&learn=on)

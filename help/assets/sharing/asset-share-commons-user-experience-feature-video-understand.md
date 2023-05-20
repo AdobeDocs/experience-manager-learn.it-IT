@@ -1,6 +1,6 @@
 ---
-title: Informazioni sull’esperienza utente di Asset Share Commons
-description: Materiali per la comprensione funzionale e tecnica di Assets Share Commons
+title: Esperienza utente di Asset Share Commons
+description: Materiali per le conoscenze tecniche e funzionali di Assets Share Commons
 version: 6.4, 6.5
 topic: Content Management
 role: User
@@ -14,21 +14,21 @@ ht-degree: 1%
 
 ---
 
-# Informazioni sull’esperienza utente di Asset Share Commons{#understanding-asset-share-commons}
+# Esperienza utente di Asset Share Commons{#understanding-asset-share-commons}
 
-Breve introduzione alle esperienze di authoring e utente di Asset Share Commons.
+Introduzione rapida alle esperienze utente e di authoring di Asset Share Commons.
 
 ## Esperienza utente
 
 >[!VIDEO](https://video.tv.adobe.com/v/20497?quality=12&learn=on)
 
-Il video fornisce una guida dettagliata dell’esperienza utente per Asset Share Commons. La revisione riguarda le funzionalità della pagina Ricerca, della pagina Dettagli risorsa e diverse azioni come Download, Condivisione e Aggiungi al carrello.
+Il video fornisce una descrizione ridotta dell’esperienza utente per Asset Share Commons. La revisione verte sulle funzionalità della pagina Ricerca, della pagina Dettagli risorsa, nonché su diverse azioni quali Scarica, Condividi e Aggiungi al carrello.
 
-## Esperienza di authoring
+## Esperienza di creazione
 
 >[!VIDEO](https://video.tv.adobe.com/v/20498?quality=12&learn=on)
 
-Questo video fornisce una panoramica dettagliata delle funzionalità di base per l’authoring dei componenti in Asset Share Commons, al fine di fornire un’idea del livello di authoring.
+Questo video fornisce una panoramica ridotta delle funzionalità di base di authoring dei componenti in Asset Share Commons, per fornire un’idea del livello di capacità di authoring.
 
 ## Risorse aggiuntive{#additional-resources}
 

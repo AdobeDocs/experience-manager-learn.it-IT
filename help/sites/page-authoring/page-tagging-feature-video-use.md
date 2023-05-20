@@ -1,7 +1,7 @@
 ---
-title: Utilizzo dei tag pagina con AEM Sites
+title: Utilizzo dell’assegnazione tag pagina con AEM Sites
 seo-title: Using Page Tagging with Adobe Experience Manager Sites
-description: Il video seguente illustra come classificare in modo rapido e semplice i contenuti di un sito web in Adobe Experience Manager utilizzando i tag pagina.
+description: Il video seguente illustra come classificare in modo rapido e semplice il contenuto di un sito web in Adobe Experience Manager utilizzando i tag pagina.
 seo-description: The following video highlights how to quickly and easily classify content within a website in Adobe Experience Manager using page tags.
 feature: Page Editor
 topics: authoring

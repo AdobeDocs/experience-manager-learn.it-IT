@@ -1,5 +1,5 @@
 ---
-title: Come abilitare l'output di debug per Workbench
+title: Abilitare l’output di debug per Workbench
 description: Passaggi per acquisire i registri di debug per Workbench
 type: Troubleshooting
 role: Admin
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Come abilitare l&#39;output di debug per Workbench
+# Abilitare l’output di debug per Workbench
 
-*Questo video illustra il processo per abilitare l’output di debug per Workbench .*
+*Questo video illustra il processo per abilitare l’output di debug per Workbench.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335497?quality=12&learn=on)

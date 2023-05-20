@@ -1,5 +1,5 @@
 ---
-title: Passaggi per avviare manualmente la cinghia
+title: Passaggi per l'avvio manuale
 description: Passaggi per avviare manualmente il database se l'inizializzazione del database non funziona
 type: Troubleshooting
 role: Admin
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ---
 
-# Passaggi da avviare manualmente se l&#39;inizializzazione del database non funziona
+# Passaggi per l&#39;avvio manuale se l&#39;inizializzazione del database non funziona
 
 *Questo video illustra il processo di avvio manuale se l’inizializzazione del database non funziona.*
 

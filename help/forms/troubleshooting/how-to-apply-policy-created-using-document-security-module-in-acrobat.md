@@ -1,6 +1,6 @@
 ---
-title: Come applicare i criteri creati utilizzando il modulo di protezione dei documenti in Acrobat
-description: Configurare Acrobat per applicare criteri a un documento utilizzando la protezione dei documenti
+title: Applicare la policy creata utilizzando il modulo Document Security in Acrobat
+description: Configurare Acrobat per applicare la policy a un documento utilizzando Document Security
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Come applicare i criteri creati utilizzando il modulo di protezione dei documenti in Acrobat
+# Applicare la policy creata utilizzando il modulo Document Security in Acrobat
 
-*Questo video illustra il processo di applicazione dei criteri creati utilizzando il modulo di sicurezza dei documenti in Acrobat.*
+*Questo video illustra come applicare i criteri creati utilizzando il modulo Document Security in Acrobat.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335486?quality=12&learn=on)

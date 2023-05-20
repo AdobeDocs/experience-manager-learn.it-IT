@@ -1,5 +1,5 @@
 ---
-title: Salva i dati inviati nella variabile stringa
+title: Salvare i dati inviati nella variabile stringa
 description: Passaggio di processo personalizzato per estrarre i dati associati e salvarli in una variabile di flusso di lavoro di tipo stringa
 feature: Adaptive Forms
 version: 6.5
@@ -9,7 +9,8 @@ level: Beginner
 kt: 11199
 last-substantial-update: 2022-10-02T00:00:00Z
 thumbnail: string-variable.jpg
-source-git-commit: e1c16ff347f5f398c7bc47233049427eeffa2aab
+exl-id: 65dcbfbb-7eb5-4fa3-aeb3-587c59ee2fe9
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%
@@ -18,15 +19,15 @@ ht-degree: 0%
 
 # Estrarre i dati associati e salvarli in una variabile stringa
 
-Questa funzionalità ti consente di includere i dati inviati nel corpo dell’e-mail. Il passaggio del processo personalizzato estrae il **dati associati** dall’invio del modulo adattivo e popola una variabile di tipo stringa con i dati. È quindi possibile utilizzare questa variabile di stringa per inserire i dati nel modello di posta elettronica.
-La schermata seguente mostra gli argomenti che è necessario passare al passaggio del processo personalizzato
-![fase del processo](assets/save-submitted-data-string.png)
+Questa funzionalità consente di includere i dati inviati nel corpo dell’e-mail. Il passaggio del processo personalizzato estrae il **dati associati** dall’invio del modulo adattivo e compila una variabile di tipo stringa con i dati. È quindi possibile utilizzare questa variabile di stringa per inserire i dati nel modello di posta elettronica.
+La schermata seguente mostra gli argomenti da passare al passaggio del processo personalizzato
+![passaggio del processo](assets/save-submitted-data-string.png)
 
-I seguenti parametri:
+Di seguito sono riportati i parametri
 
 * `data.xml` - Il file contenente i dati inviati . Se il formato è in json, il nome del file può essere data.json
 
-Il passaggio del processo personalizzato estrae quindi i dati associati e li archivia nella variabile submitDataString definita nel flusso di lavoro
+Il passaggio del processo personalizzato estrae quindi i dati associati e li memorizza nella variabile submitDataString definita nel flusso di lavoro
 
 
 [Il bundle personalizzato può essere scaricato da qui](assets/AEMFormsProcessStep.core-1.0.0-SNAPSHOT.jar)

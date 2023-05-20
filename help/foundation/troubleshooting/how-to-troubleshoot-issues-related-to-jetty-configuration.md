@@ -1,6 +1,6 @@
 ---
 title: Come risolvere i problemi relativi alla configurazione Jetty in AEM
-description: Passaggi per indagare i problemi relativi alla configurazione di jetty
+description: Passaggi per analizzare i problemi relativi alla configurazione del pontile
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Come risolvere i problemi relativi alla configurazione Jetty in AEM
 
-*Questo video illustra i passaggi necessari per risolvere i problemi relativi alla configurazione Jetty in AEM.*
+*Questo video illustra i passaggi per risolvere i problemi relativi alla configurazione di Jetty nell’AEM.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335470?quality=12&learn=on)

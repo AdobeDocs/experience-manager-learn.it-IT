@@ -1,6 +1,6 @@
 ---
 title: Collaborazione in Assets Essentials
-description: Scopri come collaborare all’interno della gestione delle risorse utilizzando commenti, annotazioni e attività.
+description: Scopri come collaborare nella gestione delle risorse utilizzando commenti, annotazioni e attività.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management

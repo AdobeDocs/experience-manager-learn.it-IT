@@ -1,6 +1,6 @@
 ---
-title: Utilizzo del ritaglio avanzato di Dynamic Media per i video
-description: Dynamic Media Smart Crop for video utilizza Adobe Sensei per monitorare in modo intelligente il punto di interesse del video, garantendo che i video abbiano un aspetto ottimale su tutte le dimensioni dello schermo.
+title: Utilizzo di Ritaglio avanzato Dynamic Media per i video
+description: Dynamic Media Smart Crop for video utilizza Adobe Sensei per monitorare in modo intelligente il punto di interesse nel video, garantendo che i video abbiano un aspetto ottimale su tutte le dimensioni di schermo.
 feature: Smart Crop, Video Profiles, Viewer Presets
 version: Cloud Service
 kt: 5977
@@ -16,12 +16,12 @@ ht-degree: 0%
 
 ---
 
-# Utilizzo del ritaglio avanzato di Dynamic Media per i video {#using-smart-crop-video}
+# Utilizzo di Ritaglio avanzato Dynamic Media per i video {#using-smart-crop-video}
 
-Dynamic Media Smart Crop for video utilizza Adobe Sensei per monitorare in modo intelligente il punto di interesse del video, garantendo che i video abbiano un aspetto ottimale su tutte le dimensioni dello schermo.
+Dynamic Media Smart Crop for video utilizza Adobe Sensei per monitorare in modo intelligente il punto di interesse nel video, garantendo che i video abbiano un aspetto ottimale su tutte le dimensioni di schermo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37958?quality=12&learn=on)
 
 >[!NOTE]
 >
->Il video precedente presuppone che il servizio AEM sia in esecuzione in modalità Dynamic Media S7. [Le istruzioni sulla configurazione di AEM con Dynamic Media sono disponibili qui.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)
+>Il video precedente presuppone che il servizio AEM sia in esecuzione in modalità Dynamic Media S7. [Le istruzioni per la configurazione di AEM con Dynamic Media sono disponibili qui.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)

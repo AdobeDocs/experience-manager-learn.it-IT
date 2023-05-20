@@ -1,7 +1,7 @@
 ---
 title: Utilizzo di Multi Site Manager con AEM Sites
 seo-title: Using Multi Site Manager Touch UI Interfaces with Adobe Experience Manager
-description: Panoramica di Live Copy e Gestione configurazione Blueprint sono interfacce con interfaccia touch abilitate per l’utilizzo con Multi Site Manager.
+description: Panoramica Live Copy e Gestione configurazione blueprint sono interfacce abilitate per l’interfaccia touch per l’utilizzo di Multi Site Manager.
 seo-description: Live Copy Overview and Blueprint Configuration Manager are Touch UI Enabled interfaces for working with Multi Site Manager with Adobe Experience Manager.
 feature: Multi Site Manager
 topics: localization, authoring, content-architecture
@@ -24,19 +24,19 @@ ht-degree: 17%
 
 # Utilizzo di Multi Site Manager {#using-multi-site-manager-with-aem-sites}
 
-Panoramica di Live Copy e Gestione configurazione Blueprint sono interfacce AEM Author per lavorare con [Multi Site Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html?lang=it) in Adobe Experience Manager Sites.
+Panoramica della Live Copy e Gestione configurazione blueprint sono interfacce di AEM Author con cui lavorare [Gestore multisito](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html?lang=it) in Adobe Experience Manager Sites.
 
 ## Panoramica Live Copy {#live-copy-overview}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17054?quality=12&learn=on)
 
-*Panoramica di Live Copy è un’interfaccia utente touch utilizzata per gestire le Live Copy e i rispettivi progetti. Questa funzione, introdotta in AEM 6.3, sostituisce il Centro di controllo Blueprint dell’interfaccia classica.*
+*Panoramica Live Copy è un’interfaccia utente touch utilizzata per la gestione delle Live Copy e delle rispettive blueprint. Questa funzione, introdotta in AEM 6.3, sostituisce il Centro controllo blueprint dell’interfaccia classica.*
 
-## Gestione configurazione Blueprint - Interfaccia touch {#blueprint-config-mgr}
+## Gestione configurazione blueprint - Interfaccia utente touch {#blueprint-config-mgr}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17056?quality=12&learn=on)
 
-*AEM 6.3 introduce un&#39;interfaccia utente touch per gestire le configurazioni Blueprint da utilizzare in Multi Site Manager.*
+*AEM 6.3 introduce un’interfaccia utente touch per gestire le configurazioni di blueprint da utilizzare in Multi Site Manager.*
 
 ## Risorse aggiuntive {#additional-resources}
 

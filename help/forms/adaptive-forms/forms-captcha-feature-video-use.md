@@ -21,31 +21,31 @@ Aggiunta e utilizzo di un CAPTCHA con AEM Adaptive Forms.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336?quality=12&learn=on)
 
-*Questo video illustra il processo di aggiunta di un CAPTCHA a un modulo adattivo AEM utilizzando sia il servizio AEM CAPTCHA integrato sia il servizio reCAPTCHA di Google.*
+*Questo video illustra il processo di aggiunta di un CAPTCHA a un modulo adattivo dell’AEM utilizzando sia il servizio integrato AEM CAPTCHA che il servizio Google reCAPTCHA.*
 
 >[!NOTE]
 >
->Questa funzione è disponibile solo a partire da AEM 6.3.
+>Questa funzione è disponibile solo con AEM 6.3 e versioni successive.
 
 >[!NOTE]
 >
 >**Per configurare reCaptcha sull’istanza di pubblicazione, segui i passaggi**
 >
->Configura reCaptach sull&#39;istanza dell&#39;autore
+>Configurare reCaptach nell’istanza di authoring
 >
->apri Felix [console web](http://localhost:4502/system/console/bundles) sull&#39;istanza dell&#39;autore
+>apri il Felix [console web](http://localhost:4502/system/console/bundles) sull’istanza di authoring
 >
->cerca il bundle com.adobe.granite.crypto.file
+>cerca bundle com.adobe.granite.crypto.file
 >
->Nota l&#39;id del bundle. Nel mio caso sono 20
+>Prendi nota dell’ID bundle. Nella mia istanza è 20
 >
 >Passa all’ID bundle nel file system dell’istanza di authoring
 >
 >* &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
-* Copia i file HMAC e master
+* Copiare i file HMAC e master
 >
-Apri [console web felix](http://localhost:4502/system/console/bundles) nell’istanza di pubblicazione. Cerca il bundle com.adobe.granite.crypto.file . Nota l&#39;id del bundle
-Passa all&#39;id bundle nel file system della tua istanza di pubblicazione
+Apri [console web felix](http://localhost:4502/system/console/bundles) nell’istanza di pubblicazione. Cerca il bundle com.adobe.granite.crypto.file. Nota l’ID del bundle
+Passa all’ID bundle nel file system dell’istanza di pubblicazione
 * &lt;publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
 * eliminare i file HMAC e master esistenti.
 * incolla i file HMAC e master copiati dall&#39;istanza di authoring

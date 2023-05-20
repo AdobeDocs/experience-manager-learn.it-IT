@@ -1,6 +1,6 @@
 ---
-title: Genera token di accesso nell’azione di App Builder
-description: Scopri come generare un token di accesso utilizzando le credenziali JWT da utilizzare in un’azione di App Builder.
+title: Generare il token di accesso nell’azione di App Builder
+description: Scopri come generare un token di accesso utilizzando le credenziali JWT per l’utilizzo in un’azione di App Builder.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -8,30 +8,30 @@ role: Developer
 level: Intermediate
 kt: 11743
 last-substantial-update: 2023-01-17T00:00:00Z
-source-git-commit: 40679e80fd9270dd9fad8174a986fd1fdd5e3d29
+exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 1%
 
 ---
 
+# Generare il token di accesso nell’azione di App Builder
 
-# Genera token di accesso nell’azione di App Builder
+Potrebbe essere necessario che le azioni di App Builder interagiscano con le API Adobe associate ai progetti della console Adobe Developer. Anche l&#39;app di App Builder viene distribuita.
 
-Le azioni di App Builder potrebbero dover interagire con le API di Adobe associate ai progetti Adobe Developer Console in cui viene distribuita anche l’app di App Builder.
-
-Potrebbe essere necessaria l’azione App Builder per generare il proprio token di accesso associato al progetto Adobe Developer Console desiderato.
+Questo potrebbe richiedere che l’azione Generatore app generi il proprio token di accesso associato al progetto Adobe Developer Console desiderato.
 
 >[!IMPORTANT]
 >
-> Revisione [Documentazione sulla sicurezza di App Builder](https://developer.adobe.com/app-builder/docs/guides/security/) per capire quando è appropriato generare token di accesso rispetto all’utilizzo dei token di accesso forniti.
+> Revisione [Documentazione sulla sicurezza di App Builder](https://developer.adobe.com/app-builder/docs/guides/security/) per capire quando è appropriato generare token di accesso anziché utilizzare quelli forniti.
 >
-> L’azione personalizzata potrebbe dover fornire i propri controlli di sicurezza per garantire che solo i consumatori autorizzati possano accedere all’azione di App Builder e ai servizi Adobe dietro di essa.
+> L’azione personalizzata potrebbe dover fornire propri controlli di sicurezza per garantire che solo i consumatori autorizzati possano accedere all’azione di App Builder e ai servizi Adobe associati.
 
 
 ## file .env
 
-Nel progetto App Builder `.env` aggiungi chiavi personalizzate per ciascuna delle credenziali JWT del progetto Adobe Developer Console. I valori delle credenziali JWT possono essere ottenuti dal progetto Adobe Developer Console __Credenziali__ > __Account di servizio (JWT)__ per una determinata area di lavoro.
+Nel progetto App Builder di `.env` , aggiungi le chiavi personalizzate per ciascuna delle credenziali JWT del progetto Adobe Developer Console. I valori delle credenziali JWT possono essere ottenuti dal file della console di Adobe Developer __Credenziali__ > __Account di servizio (JWT)__ per una determinata area di lavoro.
 
 ![Credenziali del servizio JWT della console Adobe Developer](./assets/jwt-auth/jwt-credentials.png)
 
@@ -45,14 +45,14 @@ JWT_METASCOPES=https://ims-na1.adobelogin.com/s/ent_analytics_bulk_ingest_sdk,ht
 JWT_PRIVATE_KEY=LS0tLS1C..kQgUFJJVkFURSBLRVktLS0tLQ==
 ```
 
-I valori per `JWT_CLIENT_ID`, `JWT_CLIENT_SECRET`, `JWT_TECHNICAL_ACCOUNT_ID`, `JWT_IMS_ORG` può essere copiato direttamente dalla schermata Credenziali JWT del progetto Adobe Developer Console.
+I valori per `JWT_CLIENT_ID`, `JWT_CLIENT_SECRET`, `JWT_TECHNICAL_ACCOUNT_ID`, `JWT_IMS_ORG` possono essere copiate direttamente dalla schermata delle credenziali JWT del progetto Adobe Developer Console.
 
 ### Metascopi
 
-Determina le API di Adobe e i relativi metascopi con cui interagisce l’azione App Builder. Elencare metascopi con delimitatori virgola nel `JWT_METASCOPES` chiave. I metascopi validi sono elencati in [Documentazione del metascopio JWT di Adobe](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/).
+Determina le API Adobe e i relativi metascopi con cui l&#39;azione di App Builder interagisce. Elencare metascopi con delimitatori virgola in `JWT_METASCOPES` chiave. I metascopi validi sono elencati in [Documentazione di Adobe JWT Metascope](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/).
 
 
-Ad esempio, è possibile aggiungere il seguente valore al `JWT_METASCOPES` nella `.env`:
+Ad esempio, il seguente valore potrebbe essere aggiunto al `JWT_METASCOPES` chiave nella `.env`:
 
 ```
 ...
@@ -62,46 +62,46 @@ JWT_METASCOPES=https://ims-na1.adobelogin.com/s/ent_analytics_bulk_ingest_sdk,ht
 
 ### Chiave privata
 
-La `JWT_PRIVATE_KEY` devono essere formattati in modo particolare in quanto si tratta nativamente di un valore su più righe, che non è supportato in `.env` file. Il modo più semplice è codificare la chiave privata in base64. Codifica base64 della chiave privata (`-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----`) può essere eseguita utilizzando strumenti nativi forniti dal sistema operativo in uso.
+Il `JWT_PRIVATE_KEY` deve essere formattato in modo speciale in quanto si tratta di un valore nativo su più righe non supportato in `.env` file. Il modo più semplice è codificare la chiave privata in base64. Codifica Base64 della chiave privata (`-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----`) può essere eseguita utilizzando gli strumenti nativi forniti dal sistema operativo in uso.
 
 >[!BEGINTABS]
 
 >[!TAB macOS]
 
 1. Apri `Terminal`
-1. Esegui il comando `base64 -i /path/to/private.key | pbcopy`
-1. L&#39;output base64 viene copiato automaticamente negli Appunti
+1. Eseguire il comando `base64 -i /path/to/private.key | pbcopy`
+1. L&#39;output base64 viene automaticamente copiato negli Appunti
 1. Incolla in `.env` come valore della chiave corrispondente
 
 >[!TAB Windows]
 
 1. Apri `Command Prompt`
-1. Esegui il comando `certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
-1. Esegui il comando `findstr /v CERTIFICATE C:\path\to\encoded-private.key`
-1. Copia l&#39;output base64 negli appunti
+1. Eseguire il comando `certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
+1. Eseguire il comando `findstr /v CERTIFICATE C:\path\to\encoded-private.key`
+1. Copiare l&#39;output base64 negli Appunti
 1. Incolla in `.env` come valore della chiave corrispondente
 
 >[!TAB Linux®]
 
-1. Terminale aperto
-1. Esegui il comando `base64 private.key`
-1. Copia l&#39;output base64 negli appunti
+1. Apri terminale
+1. Eseguire il comando `base64 private.key`
+1. Copiare l&#39;output base64 negli Appunti
 1. Incolla in `.env` come valore della chiave corrispondente
 
 >[!ENDTABS]
 
-Ad esempio, la seguente chiave privata con codifica base64 potrebbe essere aggiunta al `JWT_PRIVATE_KEY` nella `.env`:
+Ad esempio, la seguente chiave privata con codifica base64 può essere aggiunta al `JWT_PRIVATE_KEY` chiave nella `.env`:
 
 ```
 ...
 JWT_PRIVATE_KEY=LS0tLS1C..kQgUFJJVkFURSBLRVktLS0tLQ==
 ```
 
-## Mappatura degli ingressi
+## Mappatura degli input
 
-Con il valore delle credenziali JWT impostato in `.env` devono essere mappati sugli input dell&#39;azione AppBuilder per poter essere letti nell&#39;azione stessa. A questo scopo, aggiungi voci per ogni variabile nella `ext.config.yaml` action `inputs` nel formato: `PARAMS_INPUT_NAME: $ENV_KEY`.
+Con il valore delle credenziali JWT impostato in `.env` , devono essere mappati agli input dell&#39;azione AppBuilder per poter essere letti nell&#39;azione stessa. A questo scopo, aggiungi voci per ciascuna variabile nella `ext.config.yaml` azione `inputs` nel formato: `PARAMS_INPUT_NAME: $ENV_KEY`.
 
-Esempio:
+Ad esempio:
 
 ```yaml
 operations:
@@ -130,12 +130,12 @@ runtimeManifest:
             final: true
 ```
 
-Le chiavi definite in `inputs` sono disponibili nella `params` oggetto fornito all’azione App Builder.
+Le chiavi definite in `inputs` sono disponibili sul `params` oggetto fornito all&#39;azione di App Builder.
 
 
 ## Credenziali JWT per accedere al token
 
-Nell’azione App Builder , le credenziali JWT sono disponibili nella `params` e utilizzabile da [`@adobe/jwt-auth`](https://www.npmjs.com/package/@adobe/jwt-auth) per generare un token di accesso, che a sua volta può accedere ad altre API e servizi di Adobe.
+Nell’azione App Builder, le credenziali JWT sono disponibili nel `params` e utilizzabile da [`@adobe/jwt-auth`](https://www.npmjs.com/package/@adobe/jwt-auth) generare un token di accesso, che a sua volta può accedere ad altre API e servizi Adobe.
 
 ```javascript
 const fetch = require("node-fetch");

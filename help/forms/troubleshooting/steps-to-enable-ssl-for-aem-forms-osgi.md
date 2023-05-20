@@ -1,6 +1,6 @@
 ---
 title: Passaggi per abilitare SSL per l’istanza OSGi di AEM Forms
-description: Configurare SSL su AEM Forms OSGI per accedere a AEM tramite HTTPS
+description: Configurare SSL su AEM Forms OSGI per accedere all’AEM tramite HTTPS
 type: Troubleshooting
 role: Admin
 level: Intermediate

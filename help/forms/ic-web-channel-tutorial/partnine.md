@@ -1,7 +1,7 @@
 ---
-title: Aggiunta di una tabella al pannello di bilanciamento dei conti
+title: Aggiunta di una tabella al pannello dei saldi dei conti
 seo-title: Adding table to account balance panel
-description: Questa è la parte 9 dell'esercitazione su più passaggi per la creazione del primo documento di comunicazione interattivo. In questa parte verrà aggiunta una tabella al pannello Saldo account.
+description: Questa è la parte 9 del tutorial a più passaggi per creare il tuo primo documento di comunicazione interattivo.In questa parte, aggiungeremo una tabella al pannello Bilanciamento account.
 seo-description: This is part 9 of multistep tutorial for creating your first interactive communication document.In this part, we will add a table to the Account Balance panel.
 uuid: 8f268c73-c543-418d-b65e-5beaf9660e42
 feature: Interactive Communication
@@ -22,30 +22,30 @@ ht-degree: 1%
 
 ---
 
-# Aggiunta di una tabella al pannello di bilanciamento dei conti{#adding-table-to-account-balance-panel}
+# Aggiunta di una tabella al pannello dei saldi dei conti{#adding-table-to-account-balance-panel}
 
 In questa parte verrà aggiunta una tabella al pannello Saldo conto.
 
-Accedi ad AEM Forms e passa a Adobe Experience Manager > Forms > Forms e documenti.
+Accedi ad AEM Forms e passa a Adobe Experience Manager > Forms > Forms &amp; Documents.
 
-Apri la cartella 401KStatement .
+Aprire la cartella 401KStatement.
 
-Apri l&#39;istruzione 401KSin modalità di modifica.
+Aprire 401KStatement in modalità di modifica.
 
-Toccare l&#39;area di destinazione Saldo conto e fare clic sull&#39;icona &quot;+&quot; per visualizzare la finestra di dialogo inserisci componente.
+Tocca l’area di destinazione Saldo conto e fai clic sull’icona &quot;+&quot; per visualizzare la finestra di dialogo Inserisci componente.
 
-Selezionare Tabella per inserire il componente tabella.
+Selezionate Tabella (Table) per inserire il componente tabella.
 
-Con la versione AEM Forms 6.4 è stata introdotta la possibilità di visualizzare dati tabulari utilizzando le tabelle nel documento di comunicazione interattiva. Il video seguente illustra i passaggi necessari per configurare una tabella nel documento del canale web.
+Con AEM Forms versione 6.4 è stata introdotta la possibilità di visualizzare dati tabulari utilizzando tabelle contenute nel documento di comunicazione interattiva. Il video seguente illustra i passaggi necessari per configurare una tabella nel documento del canale web.
 
-**Configurazione della tabella nel documento del canale web - AEM Forms 6.4**
+**Configurazione della tabella nel documento del canale web: AEM Forms 6.4**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22360?quality=12&learn=on)
 
-Configurazione della tabella nel documento del canale web - AEM modulo 6.5
+Configurazione della tabella nel documento del canale web - Modulo AEM 6.5
 
 >[!VIDEO](https://video.tv.adobe.com/v/27847?quality=12&learn=on)
 
 ## Passaggi successivi
 
-[Configura grafico a colonne](./partten.md)
+[Configura istogramma](./partten.md)

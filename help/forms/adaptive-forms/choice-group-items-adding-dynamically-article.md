@@ -1,6 +1,6 @@
 ---
-title: Aggiunta di elementi al componente gruppo di scelta
-description: Aggiunta dinamica di elementi al componente gruppo di scelta
+title: Aggiunta di articoli al componente gruppo di scelta
+description: Aggiungi elementi al componente gruppo di scelta in modo dinamico
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -17,20 +17,20 @@ ht-degree: 0%
 
 # Aggiunta dinamica di elementi al componente gruppo di scelta
 
-AEM Forms 6.5 ha introdotto la possibilità di aggiungere in modo dinamico elementi a un componente per un gruppo di scelta Forms adattivo come CheckBox, Pulsante di scelta e Elenco immagini.
+In AEM Forms 6.5 è stata introdotta la possibilità di aggiungere elementi in modo dinamico a un componente del gruppo di scelta di Forms adattivo, ad esempio CheckBox, Pulsante di scelta ed Elenco immagini.
 
 
 Puoi aggiungere elementi utilizzando l’editor visivo e l’editor di codice, a seconda del caso d’uso.
 
-**Utilizzo dell’editor visivo:** Puoi compilare gli elementi del gruppo di scelta dai risultati di una chiamata di funzione o di una chiamata di servizio. Ad esempio, puoi impostare gli elementi del gruppo di scelta utilizzando la risposta di una chiamata API REST.
+**Utilizzo dell’editor visivo:** Puoi popolare gli elementi del gruppo di scelta dai risultati di una chiamata di funzione o di un servizio. Ad esempio, puoi impostare gli elementi del gruppo di scelta utilizzando la risposta di una chiamata API REST.
 
-Nella schermata seguente, stiamo impostando le opzioni di Periodo di prestito (anni) ai risultati di una chiamata di servizio chiamata getLoanPeriods.
+Nella schermata seguente, stiamo impostando le opzioni di Periodo(anni) di prestito sui risultati di una chiamata al servizio denominata getLoanPeriods.
 
 ![Editor regola](assets/ruleeditor.png)
 
-**Utilizzo dell’editor di codice**: Quando si desidera impostare in modo dinamico gli elementi del gruppo di scelta in base ai valori immessi nel modulo. Ad esempio, lo snippet di codice seguente imposta gli elementi della casella di controllo sui valori immessi nei campi del nome del richiedente e del coniuge del modulo adattivo.
+**Utilizzo dell’editor di codice**: quando si desidera impostare gli elementi nel gruppo di scelta in modo dinamico in base ai valori immessi nel modulo. Ad esempio, il seguente frammento di codice imposta gli elementi della casella di controllo sui valori immessi nei campi del nome del candidato e del coniuge del modulo adattivo.
 
-Nello snippet di codice, stiamo impostando gli elementi di WorkingMembers che è un componente casella di controllo. La matrice per gli elementi viene generata in modo dinamico recuperando i valori dei campi di testo nomecandidato e coniuge dei moduli adattivi
+Nel frammento di codice si impostano gli elementi di WorkingMembers che è un componente casella di controllo. L’array per gli elementi viene generato dinamicamente recuperando i valori dei campi di testo di nome richiedente e coniuge dei moduli adattivi
 
 ```javascript
  
@@ -72,31 +72,31 @@ I dati presentati sono i seguenti
 
 >[!VIDEO](https://video.tv.adobe.com/v/26848?quality=12&learn=on)
 
-Per provare questo sul tuo sistema:
+Per provare questo sul sistema:
 
 **Utilizzo dell’editor di codice per aggiungere elementi**
 
 * [Scaricare le risorse](assets/usingthecodeeditor.zip)
 * [Apri Forms E Documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Fai clic su &quot;Crea | Caricamento file&quot; e carica il file scaricato nel passaggio precedente
-* [Anteprima dei moduli](http://localhost:4502/content/dam/formsanddocuments/simpleform/jcr:content?wcmmode=disabled)
-* Immettere il nome del candidato e selezionare lo stato civile da sposare
-* Inserire il nome del coniuge
+* Fai clic su &quot;Crea&quot; | Caricamento file&quot; e carica il file scaricato nel passaggio precedente
+* [Visualizzare l’anteprima dei moduli](http://localhost:4502/content/dam/formsanddocuments/simpleform/jcr:content?wcmmode=disabled)
+* Inserire il nome del candidato e selezionare lo stato civile da sposato
+* Inserisci il nome del coniuge
 * Fai clic su Avanti
 * Dovresti vedere la casella di controllo compilata con il nome del richiedente e con il nome del coniuge se lo stato civile è sposato
 
 **Utilizzo dell’editor visivo per aggiungere elementi**
 
 * [Scaricare le risorse](assets/usingthevisualeditor.zip)
-* Installa Tomcat se non lo hai già. [Le istruzioni per l&#39;installazione di tomcat sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
+* Installa Tomcat se non lo hai già. [Le istruzioni per installare tomcat sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
 * [Distribuisci il file SampleRest.war contenuto in questo file zip nel tuo Tomcat](assets/sample-rest.zip)
 * [Apri Forms E Documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Fai clic su &quot;Crea | Caricamento file&quot; e carica il file scaricato nel passaggio precedente
-* [Anteprima dei moduli](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
-* Inserire l&#39;importo del prestito e la tabulazione fuori dal campo. Questo attiverà la regola che visualizza il campo del periodo di prestito.
-* Selezionare il periodo di prestito appropriato (gli elementi per il periodo di prestito sono compilati dalla chiamata di riserva)
+* Fai clic su &quot;Crea&quot; | Caricamento file&quot; e carica il file scaricato nel passaggio precedente
+* [Visualizzare l’anteprima dei moduli](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
+* Inserire l&#39;importo del prestito e la tabulazione del campo. Ciò attiverà la regola che visualizza il campo del periodo del prestito.
+* Selezionare il periodo di prestito appropriato (gli articoli per il periodo di prestito sono compilati dalla chiamata rest)
 * Selezionare il tasso di interesse e fare clic su &quot;Ottieni programma di ammortamento&quot;
-* La tabella di ammortamento dovrebbe essere compilata. Il programma di ammortamento viene recuperato utilizzando una chiamata REST.
+* Compilare la tabella di ammortamento. La pianificazione dell’ammortamento viene recuperata utilizzando una chiamata REST.
 
 >[!NOTE]
-> Si presume che tomcat sia in funzione sulla porta 8080 e AEM sulla porta 4502
+> Si presume che tomcat sia in esecuzione sulla porta 8080 e AEM sulla porta 4502

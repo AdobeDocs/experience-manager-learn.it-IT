@@ -1,6 +1,6 @@
 ---
-title: Modifica le impostazioni di configurazione dell'origine dati.
-description: Modifica il nome host e altre impostazioni in Impostazioni di configurazione dell'origine dati.
+title: Modificare le impostazioni di configurazione dell'origine dati.
+description: Modifica il nome host e altre impostazioni in Impostazioni configurazione origine dati.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -17,14 +17,14 @@ ht-degree: 0%
 
 # Possibilità di modificare le impostazioni di configurazione dell&#39;origine dati{#ability-to-modify-data-source-configuration-settings}
 
-Fino alla versione di AEM Forms 6.4, una volta configurata un’origine dati non era possibile modificare lo schema, l’host, il percorso di base per il servizio RESTful. Questo problema si è verificato se si desidera sottoporre a test le origini dati in ambienti diversi.
+Fino alla versione di AEM Forms 6.4, una volta configurata l’origine dati non era possibile modificare lo schema, l’host e il percorso di base del servizio RESTful. Questo problema si verificava se si desiderava testare le origini dati in ambienti diversi.
 
-Con il rilascio di AEM Forms 6.5, ora è possibile modificare facilmente le proprietà di cui sopra. Con questa nuova funzionalità è ora possibile creare modelli di dati per moduli rispetto agli ambienti di sviluppo; una volta ottenuti i risultati desiderati, è possibile modificare le proprietà in modo che puntino a un ambiente diverso.
+Con il rilascio di AEM Forms 6.5, ora puoi modificare facilmente le proprietà di cui sopra. Con questa nuova funzionalità, è ora possibile creare modelli di dati modulo rispetto agli ambienti di sviluppo e, una volta soddisfatti dei risultati, è possibile modificare le proprietà in modo che puntino a un ambiente diverso.
 
 Le schermate seguenti mostrano le impostazioni di configurazione dell’origine dati in AEM Forms 6.4 e Forms 6.5
 
 **Configurazione dell’origine dati in AEM 6.4**
 
 ![Configurazione 64DataSource](assets/64release.gif)
-**Configurazione dell’origine dati modificabile in AEM 6.5 e versioni successive**
+**Configurazione origine dati modificabile in AEM 6.5 e versioni successive**
 ![Configurazione 65DataSource](assets/modifiabledatasource.jfif)

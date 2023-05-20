@@ -1,6 +1,6 @@
 ---
 title: Passaggi per risolvere i problemi di replica in AEM
-description: Passaggi per indagare e risolvere i problemi relativi alla replica
+description: Passaggi per analizzare e risolvere i problemi relativi alla replica
 type: Troubleshooting
 role: Admin
 level: Beginner
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Passaggi per risolvere i problemi di replica in AEM
 
-*Questo video illustra i passaggi necessari per risolvere i problemi di replica in AEM.*
+*Questo video illustra i passaggi per risolvere i problemi di replica in AEM.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335471?quality=12&learn=on)

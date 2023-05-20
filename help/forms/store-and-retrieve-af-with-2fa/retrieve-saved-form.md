@@ -1,6 +1,6 @@
 ---
 title: Recupera modulo adattivo salvato
-description: Servlet per eseguire il rendering del modulo adattivo con i dati salvati
+description: Servlet per eseguire il rendering del modulo adattivo con dati salvati
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -20,7 +20,7 @@ ht-degree: 1%
 # Recupera modulo salvato
 
 Il passaggio successivo consiste nel creare un servlet che esegua il rendering del modulo adattivo con i dati salvati e i relativi allegati.
-Il seguente codice del servlet viene eseguito dopo la verifica del codice OTP. I dati del modulo adattivo e la relativa mappa di allegati file associata all’ID applicazione univoco vengono recuperati dal database. L’oggetto di richiesta viene compilato con i dati del modulo adattivo salvato e la mappa degli allegati del file. La richiesta viene quindi inoltrata per eseguire il rendering del modulo &quot;storeafwithattachment&quot; precompilato con i dati originali e i relativi allegati.
+Il seguente codice servlet viene eseguito dopo la verifica del codice OTP. I dati del modulo adattivo e la mappa dei relativi allegati associata all’ID applicazione univoco vengono recuperati dal database. L’oggetto della richiesta viene compilato con i dati del modulo adattivo salvati e la mappa degli allegati. La richiesta viene quindi inoltrata per eseguire il rendering del modulo &quot;storeafwithattachments&quot; precompilato con i dati originali e i relativi allegati.
 
 ```java
 package store.and.fetch.core.servlets;
@@ -107,4 +107,4 @@ public class RenderForm extends SlingAllMethodsServlet {
 
 ## Passaggi successivi
 
-[Creare una libreria client per richiamare il servlet per memorizzare i dati del modulo](./create-client-lib.md)
+[Crea libreria client per richiamare il servlet per archiviare i dati del modulo](./create-client-lib.md)

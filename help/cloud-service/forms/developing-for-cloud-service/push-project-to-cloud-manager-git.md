@@ -1,6 +1,6 @@
 ---
-title: Invia progetto AEM all’archivio cloud manager
-description: Push dell’archivio Git locale all’archivio cloud manager
+title: Invia progetto AEM all’archivio di Cloud Manager
+description: Invia l’archivio Git locale all’archivio di Cloud Manager
 solution: Experience Manager
 type: Documentation
 role: Developer
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 ---
 
-# Push AEM progetto a cloud manager git repo
+# Invia progetto AEM all’archivio Git di Cloud Manager
 
-Nel passaggio precedente abbiamo sincronizzato il nostro progetto AEM con il Forms adattivo e i temi creati nell&#39;istanza AEM.
-Ora è necessario aggiungere queste modifiche al nostro archivio Git locale e quindi inviare l’archivio Git locale all’archivio Git di Cloud Manager.
-Apri il prompt dei comandi e passa a c:\cloudmanager\aem-banking-app Execute the following commands
+Nel passaggio precedente abbiamo sincronizzato il nostro progetto AEM con il Forms adattivo e i temi creati nell’istanza AEM.
+Ora è necessario aggiungere queste modifiche all’archivio Git locale e quindi inviare l’archivio Git locale all’archivio Git di Cloud Manager.
+Apri il prompt dei comandi e passa a c:\cloudmanager\aem-banking-app Esegui i seguenti comandi
 
 ```
 git add .
@@ -32,10 +32,10 @@ In questo modo i nuovi file vengono aggiunti al ramo stage dell’archivio Git l
 git commit -m "My First AF"
 ```
 
-In questo modo i file vengono inviati al ramo principale del nostro archivio git locale
+In questo modo i file vengono inviati al ramo principale dell’archivio Git locale
 
 ```
 git push -f bankingapp master:"MyFirstAF"
 ```
 
-Nel comando di cui sopra stiamo spingendo il nostro ramo principale dal nostro archivio Git locale al ramo MyFirstAF dell&#39;archivio cloud manager identificato dal nome descrittivo delle applicazioni bancarie.
+Con il comando precedente stiamo spingendo il ramo principale dal nostro archivio Git locale al ramo MyFirstAF dell’archivio di Cloud Manager identificato dal nome descrittivo bankingapp.

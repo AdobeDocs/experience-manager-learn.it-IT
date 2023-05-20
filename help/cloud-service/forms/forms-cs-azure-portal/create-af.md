@@ -1,6 +1,6 @@
 ---
-title: Memorizzazione dei dati del modulo adattivo nell’archiviazione di Azure
-description: Creare e configurare un modulo adattivo per memorizzare i dati nell’archiviazione di Azure
+title: Memorizzare i dati del modulo adattivo nell’archiviazione Azure
+description: Creare e configurare un modulo adattivo per archiviare i dati nell’archiviazione di Azure
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Crea modello dati modulo con backup di archiviazione di Azure
+# Crea modello dati modulo di archiviazione con backup di Azure
 
-Crea il modello dati del modulo di back-end di archiviazione BLOB di Azure.
+Crea modello dati modulo back-end archiviazione BLOB di Azure.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335423?quality=12&learn=on)

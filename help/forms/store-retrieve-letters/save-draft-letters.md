@@ -1,5 +1,5 @@
 ---
-title: Salvare e recuperare le bozze di testo
+title: Salvare e recuperare le bozze di lettere
 description: Scopri come salvare e recuperare le bozze di lettere
 feature: Interactive Communication
 topics: development
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 ---
 
-# Salvare e recuperare le bozze di testo
+# Salvare e recuperare le bozze di lettere
 
-Il codice seguente viene utilizzato per salvare l&#39;istanza della lettera. I metadati dell&#39;istanza della lettera vengono memorizzati nel _bozze_ tabella. Viene generata e restituita una stringa univoca (DraftID). Questa stringa univoca viene quindi utilizzata per recuperare l&#39;istanza di lettera salvata.
+Il codice seguente viene utilizzato per salvare l’istanza della lettera. I metadati dell’istanza della lettera vengono memorizzati nel _icdraft_ tabella. Viene generata e restituita una stringa univoca (draftID). Questa stringa univoca viene quindi utilizzata per recuperare l’istanza della lettera salvata.
 
 ```java
 public String save(CCRDocumentInstance letterToSave) throws CCRDocumentException {
@@ -70,7 +70,7 @@ public String save(CCRDocumentInstance letterToSave) throws CCRDocumentException
 ## Ottieni lettera
 
 Il codice seguente è stato scritto per recuperare la bozza di lettera salvata.
-Per caricare le istanze di una lettera salvata è necessario fornire il valore DraftID. In base a questa bozza di ID, eseguiamo una query sul database per ottenere i metadati aggiuntivi sulla lettera. Lo stesso DraftID viene utilizzato per creare i dati della lettera leggendo il codice xml appropriato dal file system. Viene quindi costruito e restituito un oggetto CCRDocumentInstance .
+Per caricare le istanze di una lettera salvata è necessario fornire il valore draftID. In base a questo ID bozza, eseguiamo una query sul database per ottenere i metadati aggiuntivi sulla lettera. Lo stesso draftID viene utilizzato per creare i dati della lettera leggendo l&#39;xml appropriato dal file system. Viene quindi creato e restituito un oggetto CCRDocumentInstance.
 
 
 ```java
@@ -101,7 +101,7 @@ public CCRDocumentInstance get(String draftID) throws CCRDocumentException {
 
 ### Aggiorna lettera
 
-Il codice seguente è stato utilizzato per aggiornare l&#39;istanza di lettera salvata. I dati aggiornati della lettera vengono scritti nel file system utilizzando l&#39;ID lettera.
+Il codice seguente è stato utilizzato per aggiornare l’istanza della lettera salvata. I dati della lettera aggiornata vengono scritti nel file system utilizzando l&#39;ID della lettera.
 
 ```java
 public void update(CCRDocumentInstance letterInstanceToUpdate) throws CCRDocumentException {
@@ -122,8 +122,8 @@ public void update(CCRDocumentInstance letterInstanceToUpdate) throws CCRDocumen
 
 ### Ottieni tutte le lettere salvate
 
-AEM Forms non fornisce alcuna interfaccia utente preconfigurata per elencare le lettere salvate. Per questo articolo elencherò le istanze di lettere salvate in formato tabulare utilizzando un modulo adattivo.
-È possibile personalizzare la query per recuperare le istanze di lettere salvate. In questo esempio, sto chiedendo l&#39;istanza di lettera salvata da &quot;admin&quot;.
+AEM Forms non fornisce alcuna interfaccia utente predefinita per elencare le lettere salvate. Per questo articolo elenco le istanze di lettere salvate in formato tabulare utilizzando un modulo adattivo.
+È possibile personalizzare la query per recuperare le istanze di lettere salvate. In questo esempio, sto cercando l’istanza della lettera salvata da &quot;admin&quot;.
 
 ```java
     public List < CCRDocumentInstance > getAll(String arg0, Date arg1, Date arg2, Map < String, Object > arg3) throws CCRDocumentException {
@@ -170,4 +170,4 @@ AEM Forms non fornisce alcuna interfaccia utente preconfigurata per elencare le 
 
 ### Progetto Eclipse
 
-Il progetto eclipse con implementazione di esempio può essere [scaricato da qui](assets/icdrafts-eclipse-project.zip)
+Il progetto di eclissi con implementazione di esempio può essere [scaricato da qui](assets/icdrafts-eclipse-project.zip)

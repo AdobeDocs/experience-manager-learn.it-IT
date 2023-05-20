@@ -1,6 +1,6 @@
 ---
 title: Utilizzo del modello Sightly per visualizzare i dati della casella in entrata
-description: Aggiungi colonne personalizzate per visualizzare i dati aggiuntivi del flusso di lavoro utilizzando il modello Sightly
+description: Aggiungi colonne personalizzate per visualizzare dati aggiuntivi del flusso di lavoro utilizzando il modello Sightly
 feature: Adaptive Forms
 topics: development
 audience: developer
@@ -15,20 +15,20 @@ exl-id: d09b46ed-3516-44cf-a616-4cb6e9dfdf41
 source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 # Utilizzo del modello Sightly per visualizzare i dati della casella in entrata
 
-È possibile utilizzare un modello Sightly per formattare i dati da visualizzare nelle colonne della casella in entrata. In questo esempio verranno visualizzate le icone coral-ui a seconda del valore della colonna reddito . La schermata seguente mostra l&#39;uso di icone nella colonna reddito
-![icone dei redditi](assets/income-column.PNG)
+È possibile utilizzare il modello Sightly per formattare i dati da visualizzare nelle colonne della casella in entrata. In questo esempio visualizzeremo icone di interfaccia utente coral a seconda del valore della colonna reddito. La schermata seguente mostra l’uso delle icone nella colonna delle entrate
+![icone di reddito](assets/income-column.PNG)
 
-[Modello a vista](assets/sightly-template.zip) utilizzato per visualizzare le icone dell&#39;interfaccia utente coral personalizzata è fornito come parte di questo articolo.
+[Il modello Sightly](assets/sightly-template.zip) utilizzato per visualizzare le icone dell’interfaccia utente coral personalizzate, come parte di questo articolo.
 
 ## Modello Sightly
 
-Segue il modello Sightly. Il codice nel modello visualizza l&#39;icona a seconda del reddito. Le icone sono disponibili come parte del [libreria di icone dell&#39;interfaccia utente coral](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) viene con AEM.
+Di seguito è riportato il modello Sightly. Il codice nel modello visualizza l’icona a seconda del reddito. Le icone sono disponibili come parte del [libreria icona interfaccia utente coral](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) con l&#39;AEM.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
@@ -45,7 +45,7 @@ Segue il modello Sightly. Il codice nel modello visualizza l&#39;icona a seconda
 
 ## Implementazione del servizio
 
-Il codice seguente è l&#39;implementazione del servizio per la visualizzazione della colonna reddito .
+Il codice seguente è l’implementazione del servizio per visualizzare la colonna delle entrate.
 
 La riga 12 associa la colonna al modello Sightly
 
@@ -82,17 +82,17 @@ return val;
 
 >[!NOTE]
 >
->Questo articolo presuppone che tu abbia installato [flusso di lavoro di esempio](assets/review-workflow.zip) e [modulo di esempio](assets/snap-form.zip) da [articolo precedente](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html) in questa serie.
+>Questo articolo presuppone che tu abbia installato [workflow di esempio](assets/review-workflow.zip) e [modulo di esempio](assets/snap-form.zip) da [articolo precedente](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html) in questa serie.
 
 * [Accedi a crx come utente amministratore](http://localhost:4502/crx/de/index.jsp)
-* [modello Importazione guidata](assets/sightly-template.zip)
-* [Accedi a AEM console Web](http://localhost:4502/system/console/bundles)
-* [Distribuzione e avvio del bundle di personalizzazione della casella in entrata](assets/income-column-customization.jar)
-* [Apri la inbox](http://localhost:4502/aem/inbox)
-* Apri Admin Control facendo clic su Vista a elenco accanto al pulsante Crea
-* Aggiungi la colonna reddito alla casella in entrata e salva le modifiche
+* [importa modello sightly](assets/sightly-template.zip)
+* [Accedi alla console web AEM](http://localhost:4502/system/console/bundles)
+* [Distribuire e avviare il bundle di personalizzazione della casella in entrata](assets/income-column-customization.jar)
+* [Apri la casella in entrata](http://localhost:4502/aem/inbox)
+* Per aprire Admin Control (Controllo amministratore), fai clic su List View (Vista elenco) accanto al pulsante Create (Crea).
+* Aggiungi la colonna delle entrate alla casella in entrata e salva le modifiche
 * [Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
 * Seleziona la _stato civile_ e invia il modulo
 * [Visualizza casella in entrata](http://localhost:4502/aem/inbox)
 
-L’invio del modulo attiverà il flusso di lavoro e un’attività verrà assegnata all’utente &quot;amministratore&quot;. Dovresti trovare l&#39;icona appropriata nella colonna reddito
+L’invio del modulo attiverà il flusso di lavoro e un’attività verrà assegnata all’utente &quot;amministratore&quot;. Dovresti visualizzare l’icona appropriata sotto la colonna delle entrate

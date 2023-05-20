@@ -1,6 +1,6 @@
 ---
-title: Utilizzo del Jar AEM Quickstart
-description: Scopri come installare ed eseguire un’istanza locale di Adobe Experience Manager in pochi minuti con il jar AEM Quickstart. Il jar AEM Quickstart è un runtime AEM che può essere installato ed eseguito su un computer locale.
+title: Utilizzo di Quickstart Jar per AEM
+description: Scopri come installare ed eseguire un’istanza locale di Adobe Experience Manager in pochi minuti con il file jar Quickstart dell’AEM. Il file jar Quickstart dell’AEM è un runtime AEM che può essere installato ed eseguito su un computer locale.
 topic: Development
 version: Cloud Service
 kt: 4677
@@ -13,9 +13,9 @@ ht-degree: 0%
 ---
 
 
-# Utilizzo del Jar AEM Quickstart
+# Utilizzo di Quickstart Jar per AEM
 
-Scopri come installare ed eseguire un’istanza locale di Adobe Experience Manager in pochi minuti con il jar AEM Quickstart. Il jar AEM Quickstart è un runtime AEM che può essere installato ed eseguito su un computer locale.
+Scopri come installare ed eseguire un’istanza locale di Adobe Experience Manager in pochi minuti con il file jar Quickstart dell’AEM. Il file jar Quickstart dell’AEM è un runtime AEM che può essere installato ed eseguito su un computer locale.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32551?quality=12&learn=on)
 

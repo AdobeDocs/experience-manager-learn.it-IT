@@ -1,6 +1,6 @@
 ---
-title: Combinazione di newsletter selezionate in un unico file
-description: Combina le newsletter selezionate utilizzando il servizio assembler
+title: Combinazione delle newsletter selezionate in un unico file
+description: Combina le newsletter selezionate utilizzando il servizio Assembler
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -15,14 +15,14 @@ ht-degree: 1%
 
 ---
 
-# Combina le newsletter selezionate in un pdf
+# Combina le newsletter selezionate in un unico PDF
 
-Le selezioni dell&#39;utente vengono memorizzate in un campo nascosto. Il valore di questo campo nascosto viene passato al servlet che combinerà le selezioni in un unico pdf utilizzando [Servizio Forms Assembler](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html).
+Le selezioni dell’utente vengono memorizzate in un campo nascosto. Il valore di questo campo nascosto viene passato al servlet che combina le selezioni in un unico pdf utilizzando [Servizio assemblatore Forms](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html).
 
 
-## Servlet per assemblare file pdf
+## Servlet per assemblare file PDF
 
-Il codice seguente effettua l&#39;assemblaggio delle newsletter selezionate. Il codice crea una mappa dei documenti dalle selezioni dell&#39;utente. Da questa mappa viene creato un DDX e questo DDX insieme alla mappa dei documenti viene passato al metodo invoke del servizio Assembler per ottenere il documento combinato. Il pdf assemblato viene memorizzato nel repository e il relativo percorso viene restituito all&#39;applicazione chiamante.
+Il codice seguente esegue l&#39;assemblaggio delle newsletter selezionate. Il codice crea una mappa dei documenti dalle selezioni dell&#39;utente. Da questa mappa viene creato un DDX e questo DDX insieme alla mappa dei documenti viene passato al metodo invoke del servizio Assembler per ottenere il documento combinato. Il PDF assemblato viene memorizzato nell’archivio e il relativo percorso viene restituito all’applicazione chiamante.
 
 ```java
 protected void doPost(SlingHttpServletRequest request,SlingHttpServletResponse response)
@@ -78,9 +78,9 @@ protected void doPost(SlingHttpServletRequest request,SlingHttpServletResponse r
    }
 ```
 
-## Funzioni di utilità
+## Funzioni utility
 
-Le seguenti funzioni di utilità sono state utilizzate per assemblare le newsletter. Queste funzioni di utilità creano DDX dalla mappa dei documenti e convertono org.w3c.dom.Document in un oggetto documento AEMFD.
+Nell&#39;assemblaggio delle newsletter sono state utilizzate le seguenti funzioni di utilità. Queste funzioni di utilità creano DDX da una mappa di documenti e convertono org.w3c.dom.Document in un oggetto documento AEMFD.
 
 
 ```java

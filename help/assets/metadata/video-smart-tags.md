@@ -1,6 +1,6 @@
 ---
 title: Tag video avanzati in AEM Assets
-description: Experience Manager Assets sfrutta Adobe Sensei per assegnare tag intelligenti alle risorse video con parole chiave che descrivono gli elementi chiave del video, facilitandone la ricerca tramite parole chiave da parte AEM utenti.
+description: Experience Manager Assets sfrutta Adobe Sensei per assegnare tag intelligenti alle risorse video con parole chiave che descrivono elementi chiave del video, consentendo loro di individuarli facilmente tramite la ricerca per parole chiave da parte degli utenti AEM.
 feature: Smart Tags
 version: Cloud Service
 kt: 6445
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Tag video avanzati
 
-Experience Manager Assets sfrutta Adobe Sensei per assegnare tag intelligenti alle risorse video con parole chiave che descrivono gli elementi chiave del video, facilitandone la ricerca tramite parole chiave da parte AEM utenti.
+Experience Manager Assets sfrutta Adobe Sensei per assegnare tag intelligenti alle risorse video con parole chiave che descrivono elementi chiave del video, consentendo loro di individuarli facilmente tramite la ricerca per parole chiave da parte degli utenti AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/327005?quality=12&learn=on)

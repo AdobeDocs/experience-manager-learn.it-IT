@@ -1,6 +1,6 @@
 ---
-title: Precompilare il modulo adattivo con i dati dell’archiviazione di Azure
-description: Scopri come utilizzare il servizio di precompilazione di AEM Forms per compilare moduli adattivi dall’archiviazione BLOB di Azure.
+title: Precompila modulo adattivo con dati dall’archiviazione Azure
+description: Scopri come utilizzare il servizio di precompilazione di AEM Forms per compilare i moduli adattivi dall’archiviazione BLOB di Azure.
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Precompilare il modulo adattivo con i dati dell’archiviazione di Azure
+# Precompila modulo adattivo con dati dall’archiviazione Azure
 
-Scopri come utilizzare il servizio di precompilazione di AEM Forms per compilare moduli adattivi dall’archiviazione BLOB di Azure.
+Scopri come utilizzare il servizio di precompilazione di AEM Forms per compilare i moduli adattivi dall’archiviazione BLOB di Azure.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335714?quality=12&learn=on)

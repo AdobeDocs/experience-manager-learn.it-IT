@@ -1,6 +1,6 @@
 ---
 title: Memorizzazione e recupero dei dati del modulo dal database MySQL - Servlet per memorizzare i dati del modulo
-description: Esercitazione in più parti per illustrare i passaggi necessari per memorizzare e recuperare i dati dei moduli
+description: Tutorial in più parti per illustrare i passaggi necessari per l’archiviazione e il recupero dei dati del modulo
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 ---
 
-# Servlet per memorizzare i dati del modulo
+# Servlet per archiviare i dati del modulo
 
-Il passaggio successivo consiste nel creare un servlet che inserisca o aggiorni i dati del modulo. Il servlet chiama i metodi appropriati del servizio OSGi per inserire o aggiornare il database. I dati del modulo adattivo memorizzato sono associati a un GUID. Lo stesso GUID viene quindi utilizzato per aggiornare i dati del modulo. Questo servlet viene chiamato quando si fa clic sul pulsante &quot;SaveAndContinueLater&quot; (Salva e continua).
+Il passaggio successivo consiste nel creare un servlet che inserirà o aggiornerà i dati del modulo. Il servlet richiama i metodi appropriati del servizio OSGi per inserire o aggiornare il database. I dati del modulo adattivo archiviati sono associati a un GUID. Lo stesso GUID viene quindi utilizzato per aggiornare i dati del modulo. Questo servlet viene richiamato quando si fa clic sul pulsante &quot;SaveAndContinueLater&quot; (Salva e continua più tardi).
 
 ```java
 package com.aemforms.saveandcontinue.core.servlets;

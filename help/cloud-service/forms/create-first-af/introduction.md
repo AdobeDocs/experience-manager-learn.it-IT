@@ -1,6 +1,6 @@
 ---
 title: Creare il primo modulo adattivo
-description: Video introduttivo sul corso sulla creazione del primo modulo adattivo
+description: Video introduttivo al corso sulla creazione del primo modulo adattivo
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer

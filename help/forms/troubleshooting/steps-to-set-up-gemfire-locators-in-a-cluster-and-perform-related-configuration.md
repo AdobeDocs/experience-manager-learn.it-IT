@@ -1,6 +1,6 @@
 ---
-title: Passaggi per configurare i localizzatori gemfire in un cluster ed eseguire la configurazione correlata
-description: Configurare i localizzatori di gemme in un cluster
+title: Passaggi per configurare i localizzatori di incendio in un cluster ed eseguire la configurazione correlata
+description: Configurare i localizzatori gemfire in un cluster
 type: Troubleshooting
 role: Admin
 level: Experienced
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Passaggi per configurare i localizzatori gemfire in un cluster ed eseguire la configurazione correlata
+# Passaggi per configurare i localizzatori di incendio in un cluster ed eseguire la configurazione correlata
 
-*Questo video illustra i passaggi necessari per configurare i localizzatori gemfire in un cluster ed eseguire la relativa configurazione.*
+*Questo video illustra i passaggi necessari per configurare i localizzatori di falò in un cluster ed eseguire la configurazione correlata.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335544?quality=12&learn=on)

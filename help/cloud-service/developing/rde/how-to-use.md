@@ -1,6 +1,6 @@
 ---
-title: Come utilizzare l'ambiente di sviluppo rapido
-description: Scopri come utilizzare l’ambiente di sviluppo rapido per distribuire codice e contenuti dal computer locale.
+title: Come utilizzare l’ambiente di sviluppo rapido
+description: Scopri come utilizzare l’ambiente di sviluppo rapido per implementare codice e contenuti dal computer locale.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -9,50 +9,50 @@ level: Beginner
 jira: KT-11862
 thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
 
 ---
 
+# Come utilizzare l’ambiente di sviluppo rapido
 
-# Come utilizzare l&#39;ambiente di sviluppo rapido
+Scopri **come utilizzare** Rapid Development Environment (RDE) nell’AEM as a Cloud Service. Distribuisci codice e contenuti per velocizzare i cicli di sviluppo del codice quasi finale nell’RDE, dall’ambiente di sviluppo integrato (IDE) preferito.
 
-Scopri **come utilizzare** Ambiente di sviluppo rapido (RDE) in AEM as a Cloud Service. Distribuisci codice e contenuti per cicli di sviluppo più rapidi del codice quasi finale all&#39;RDE, dal tuo ambiente di sviluppo integrato (IDE) preferito.
+Utilizzo di [Progetto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) scopri come implementare vari artefatti dell’AEM AEM nell’RDE eseguendo gli `install` comando dall&#39;IDE preferito.
 
-Utilizzo [AEM progetto Siti WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) scopri come distribuire vari artefatti AEM all’RDE eseguendo AEM-RDE `install` comando dal tuo IDE preferito.
-
-- Distribuzione di codice AEM e pacchetti di contenuti (tutto, ui.apps)
-- Distribuzione di file di configurazione e bundle OSGi
+- Implementazione del pacchetto di codice e contenuti AEM (all, ui.apps)
+- Distribuzione del bundle OSGi e del file di configurazione
 - Apache e Dispatcher configurano la distribuzione come file zip
-- File individuali come HTL, `.content.xml` Distribuzione (finestra di dialogo XML)
+- Singoli file come HTL, `.content.xml` Distribuzione (finestra di dialogo XML)
 - Rivedi altri comandi RDE come `status, reset and delete`
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415491?quality=12&learn=on)
 
 ## Prerequisito
 
-Clona il [Siti WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) proiettare e aprirlo nel tuo IDE preferito per distribuire gli artefatti AEM sull’RDE.
+Clona il [Siti WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) proiettarlo e aprirlo nell’IDE preferito per distribuire gli artefatti AEM sull’RDE.
 
 ```shell
 $ git clone git@github.com:adobe/aem-guides-wknd.git
 ```
 
-Quindi, crealo e distribuiscilo nell&#39;SDK AEM locale eseguendo il seguente comando maven.
+Quindi, generalo e implementalo nell’AEM-SDK locale eseguendo il seguente comando maven.
 
 ```
 $ cd aem-guides-wknd/
 $ mvn clean install -PautoInstallSinglePackage
 ```
 
-## Distribuire artefatti AEM utilizzando il plug-in AEM-RDE
+## Distribuire gli artefatti AEM utilizzando il plug-in AEM-RDE
 
-Utilizzo della `aem:rde:install` comando, distribuiamo vari artefatti AEM.
+Utilizzo di `aem:rde:install` , distribuiamo vari artefatti AEM.
 
-### Distribuzione `all` e `dispatcher` pacchetti
+### Distribuisci `all` e `dispatcher` pacchetti
 
-Un punto di partenza comune è quello di implementare prima il `all` e `dispatcher` esegue i seguenti comandi.
+Un punto di partenza comune è la prima implementazione di `all` e `dispatcher` mediante l&#39;esecuzione dei seguenti comandi.
 
 ```shell
 # Install the 'all' package
@@ -62,14 +62,14 @@ $ aio aem:rde:install all/target/aem-guides-wknd.all-2.1.3-SNAPSHOT.zip
 $ aio aem:rde:install dispatcher/target/aem-guides-wknd.dispatcher.cloud-2.1.3-SNAPSHOT.zip
 ```
 
-Dopo le distribuzioni corrette, verifica il sito WKND sia sui servizi di authoring che di pubblicazione. Dovresti essere in grado di aggiungere, modificare il contenuto sulle pagine del sito WKND e pubblicarlo.
+In caso di distribuzioni corrette, verifica il sito WKND sia nell’istanza di authoring che in quella di pubblicazione. Dovresti essere in grado di aggiungere, modificare e pubblicare il contenuto delle pagine del sito WKND.
 
 ### Migliorare e distribuire un componente
 
-Miglioriamo il `Hello World Component` e distribuirlo all&#39;RDE.
+Miglioriamo la `Hello World Component` e distribuirlo nell&#39;RDE.
 
-1. Apri la finestra di dialogo XML (`.content.xml`) da `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/_cq_dialog/` cartella
-1. Aggiungi il `Description` campo di testo dopo quello esistente `Text` campo di dialogo
+1. Apri la finestra di dialogo XML (`.content.xml`) file da `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/_cq_dialog/` cartella
+1. Aggiungi il `Description` campo di testo dopo il `Text` campo finestra di dialogo
 
    ```xml
    ...
@@ -82,7 +82,7 @@ Miglioriamo il `Hello World Component` e distribuirlo all&#39;RDE.
    ```
 
 1. Apri `helloworld.html` file da `ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld` cartella
-1. Rendering `Description` dopo l&#39;esistente `<div>` elemento `Text` proprietà.
+1. Rendering `Description` proprietà dopo il `<div>` elemento del `Text` proprietà.
 
    ```html
    ...
@@ -93,9 +93,9 @@ Miglioriamo il `Hello World Component` e distribuirlo all&#39;RDE.
    ...
    ```
 
-1. Verifica le modifiche sull’SDK AEM locale eseguendo la build maven o sincronizzando i singoli file.
+1. Verifica le modifiche su AEM-SDK locale eseguendo la build Maven o sincronizzando i singoli file.
 
-1. Implementare le modifiche all’RDE tramite `ui.apps` o distribuendo i singoli file Dialog e HTL.
+1. Distribuire le modifiche all&#39;RDE tramite `ui.apps` o distribuendo i singoli file Dialog e HTL.
 
    ```shell
    # Using 'ui.apps' package
@@ -112,24 +112,24 @@ Miglioriamo il `Hello World Component` e distribuirlo all&#39;RDE.
    $ aio aem:rde:install ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/_cq_dialog/.content.xml -t content-xml -p /apps/wknd/components/helloworld/_cq_dialog/.content.xml
    ```
 
-1. Verifica le modifiche all’RDE aggiungendo o modificando il `Hello World Component` su una pagina del sito WKND.
+1. Verificare le modifiche apportate all&#39;RDE aggiungendo o modificando `Hello World Component` in una pagina del sito WKND.
 
-### Consulta la sezione `install` opzioni di comando
+### Rivedi `install` opzioni di comando
 
-Nell&#39;esempio di comando di distribuzione dei singoli file riportato sopra, la `-t` e `-p` i flag vengono utilizzati per indicare rispettivamente il tipo e la destinazione del percorso JCR. Esaminiamo i dati disponibili `install` opzioni di comando eseguendo il comando seguente.
+Nell&#39;esempio di comando di distribuzione di singoli file sopra riportato, il `-t` e `-p` I flag vengono utilizzati rispettivamente per indicare il tipo e la destinazione del percorso JCR. Esaminiamo le `install` opzioni di comando eseguendo il comando seguente.
 
 ```shell
 $ aio aem:rde:install --help
 ```
 
-Le bandiere sono auto-esplicative, `-s` Questo flag è utile per eseguire il targeting della distribuzione solo per i servizi di authoring o pubblicazione. Utilizza la `-t` flag durante la distribuzione di **content-file o content-xml** insieme ai `-p` flag per specificare il percorso JCR di destinazione nell’ambiente RDE AEM.
+I contrassegni sono auto-esplicativi, `-s` Questo flag è utile per indirizzare la distribuzione solo ai servizi di authoring o pubblicazione. Utilizza il `-t` durante la distribuzione di **content-file o content-xml** file insieme a `-p` flag per specificare il percorso JCR di destinazione nell’ambiente AEM RDE.
 
-### Distribuzione del bundle OSGi
+### Distribuire il bundle OSGi
 
-Per scoprire come distribuire il bundle OSGi, miglioriamo il `HelloWorldModel` Classe Java™ e implementalo nell&#39;RDE.
+Per scoprire come distribuire il bundle OSGi, miglioriamo il `HelloWorldModel` Java™ e distribuirla all&#39;RDE.
 
 1. Apri `HelloWorldModel.java` file da `core/src/main/java/com/adobe/aem/guides/wknd/core/models` cartella
-1. Aggiorna `init()` come segue:
+1. Aggiornare il `init()` metodo come segue:
 
    ```java
    ...
@@ -140,8 +140,8 @@ Per scoprire come distribuire il bundle OSGi, miglioriamo il `HelloWorldModel` C
    ...
    ```
 
-1. Verifica le modifiche nell’SDK AEM locale distribuendo il `core` bundle tramite comando maven
-1. Distribuire le modifiche all&#39;RDE eseguendo il seguente comando
+1. Verificare le modifiche sull’AEM-SDK locale implementando `core` bundle tramite il comando maven
+1. Distribuire le modifiche all&#39;RDE eseguendo il comando seguente
 
    ```shell
    $ cd core
@@ -149,9 +149,9 @@ Per scoprire come distribuire il bundle OSGi, miglioriamo il `HelloWorldModel` C
    $ aio aem:rde:install target/aem-guides-wknd.core-2.1.3-SNAPSHOT.jar
    ```
 
-1. Verifica le modifiche all’RDE aggiungendo o modificando il `Hello World Component` su una pagina del sito WKND.
+1. Verificare le modifiche apportate all&#39;RDE aggiungendo o modificando `Hello World Component` in una pagina del sito WKND.
 
-### Distribuzione della configurazione OSGi
+### Distribuire la configurazione OSGi
 
 Puoi distribuire i singoli file di configurazione o il pacchetto di configurazione completo, ad esempio:
 
@@ -167,14 +167,14 @@ $ aio aem:rde:install target/aem-guides-wknd.ui.config-2.1.3-SNAPSHOT.zip
 
 >[!TIP]
 >
->Per installare una configurazione OSGi solo su un&#39;istanza di authoring o pubblicazione, utilizza la `-s` bandiera.
+>Per installare una configurazione OSGi solo su un’istanza Autore o Publish, utilizza `-s` flag.
 
 
-### Implementare la configurazione di Apache o Dispatcher
+### Distribuire la configurazione di Apache o Dispatcher
 
-File di configurazione di Apache o Dispatcher **non può essere distribuito singolarmente**, ma l’intera struttura di cartelle di Dispatcher deve essere distribuita sotto forma di un file ZIP.
+File di configurazione di Apache o Dispatcher **impossibile distribuire singolarmente**, ma l’intera struttura di cartelle di Dispatcher deve essere distribuita sotto forma di un file ZIP.
 
-1. Apporta una modifica desiderata nel file di configurazione del `dispatcher` per scopi dimostrativi, aggiorna il `dispatcher/src/conf.d/available_vhosts/wknd.vhost` per memorizzare nella cache `html` file solo per 60 secondi.
+1. Apportare la modifica desiderata nel file di configurazione del `dispatcher` a scopo dimostrativo, aggiorna il `dispatcher/src/conf.d/available_vhosts/wknd.vhost` per memorizzare nella cache `html` solo per 60 secondi.
 
    ```
    ...
@@ -187,8 +187,8 @@ File di configurazione di Apache o Dispatcher **non può essere distribuito sing
    ...
    ```
 
-1. Verifica le modifiche localmente, vedi [Eseguire il Dispatcher localmente](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#run-dispatcher-locally) per ulteriori dettagli.
-1. Distribuisci le modifiche all’RDE eseguendo il seguente comando:
+1. Verifica le modifiche localmente, vedi [Eseguire Dispatcher localmente](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#run-dispatcher-locally) per ulteriori dettagli.
+1. Distribuire le modifiche apportate all&#39;RDE eseguendo il comando seguente:
 
    ```shell
    $ cd dispatcher
@@ -196,11 +196,11 @@ File di configurazione di Apache o Dispatcher **non può essere distribuito sing
    $ aio aem:rde:install target/aem-guides-wknd.dispatcher.cloud-2.1.3-SNAPSHOT.zip
    ```
 
-1. Verifica le modifiche nell’RDE
+1. Verificare le modifiche nell&#39;RDE
 
-## Comandi aggiuntivi del plug-in RDE AEM
+## Comandi aggiuntivi del plug-in AEM RDE
 
-Esaminiamo i comandi aggiuntivi del plug-in RDE AEM per gestire e interagiamo con l’RDE dal computer locale.
+Esaminiamo i comandi aggiuntivi del plug-in AEM RDE per gestire e interagire con l’RDE dal computer locale.
 
 ```shell
 $ aio aem:rde --help
@@ -218,17 +218,17 @@ aem rde restart  Restart the author and publish of an RDE
 aem rde status   Get a list of the bundles and configs deployed to the current rde.
 ```
 
-Utilizzando i comandi di cui sopra, il tuo RDE può essere gestito dal tuo IDE preferito per un ciclo di vita di sviluppo/distribuzione più veloce.
+Utilizzando i comandi di cui sopra, l&#39;RDE può essere gestito dall&#39;IDE preferito per velocizzare il ciclo di sviluppo/implementazione.
 
 ## Passaggio successivo
 
-Scopri le [ciclo di vita di sviluppo/distribuzione tramite RDE](./development-life-cycle.md) per fornire funzionalità con rapidità.
+Scopri di più su [ciclo di vita di sviluppo/implementazione tramite RDE](./development-life-cycle.md) per offrire funzioni in modo rapido.
 
 
 ## Risorse aggiuntive
 
 [Documentazione sui comandi RDE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#rde-cli-commands)
 
-[Plug-in Adobe I/O Runtime CLI per le interazioni con gli ambienti di sviluppo rapido AEM](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
+[Plug-in Adobe I/O Runtime CLI per interazioni con ambienti di sviluppo rapido AEM](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[Configurazione AEM progetto](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
+[Configurazione del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)

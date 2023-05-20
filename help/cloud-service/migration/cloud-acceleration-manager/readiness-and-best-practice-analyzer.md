@@ -1,6 +1,6 @@
 ---
-title: Analisi di preparazione e best practice
-description: Scopri in che modo Best Practice Analyzer può aiutare a preparare l'applicazione per il passaggio ad Experience Manager as a Cloud Service
+title: Preparazione e Best Practice Analyzer
+description: Scopri in che modo Best Practice Analyzer può contribuire a preparare l’applicazione per lo spostamento in Experience Manager as a Cloud Service
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Analisi di preparazione e best practice
+# Preparazione e Best Practice Analyzer
 
 Scopri in che modo Best Practice Analyzer può aiutarti a prepararti a passare da AEM on-premise o Adobe Managed Services ad Experience Manager as a Cloud Service.
 

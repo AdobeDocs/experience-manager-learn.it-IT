@@ -1,6 +1,6 @@
 ---
 title: Timeline e casella in entrata
-description: Acquisisci familiarità con le principali console web di AEM Assets utilizzate per la collaborazione.
+description: Acquisisci familiarità con le console web chiave in AEM Assets utilizzate per la collaborazione.
 sub-product: Experience Manager Assets
 feature: Workflow
 version: Cloud Service
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Timeline e casella in entrata
 
-Acquisisci familiarità con le principali console web di AEM Assets utilizzate per la collaborazione.
+Acquisisci familiarità con le console web chiave in AEM Assets utilizzate per la collaborazione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32051?quality=12&learn=on)

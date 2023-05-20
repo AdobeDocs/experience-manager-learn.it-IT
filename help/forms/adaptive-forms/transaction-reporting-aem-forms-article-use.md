@@ -1,6 +1,6 @@
 ---
 title: Utilizzo del reporting delle transazioni in AEM Forms
-description: I rapporti sulle transazioni in AEM Forms ti consentono di tenere un conteggio di tutte le transazioni effettuate a partire da una data specifica nella distribuzione AEM Forms.
+description: I rapporti sulle transazioni in AEM Forms ti consentono di tenere un conteggio di tutte le transazioni effettuate a partire da una data specificata nella distribuzione AEM Forms.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -17,34 +17,34 @@ ht-degree: 1%
 
 # Utilizzo del reporting delle transazioni in AEM Forms{#using-transaction-reporting-in-aem-forms}
 
-Con AEM Forms 6.4.1 è stato introdotto il reporting delle transazioni per acquisire il numero di invii dei moduli, il rendering dei documenti utilizzando document services e il rendering delle comunicazioni interattive (canali web e di stampa). Questa funzionalità è principalmente destinata ai clienti che desiderano concedere in licenza il software in base al numero di invii e/o documenti di moduli sottoposti a rendering. Questa funzionalità è attualmente disponibile solo sullo stack AEM Forms OSGI.
+Con AEM Forms 6.4.1 è stato introdotto il reporting delle transazioni per acquisire il numero di invii di moduli, il rendering dei documenti utilizzando i servizi documentali e il rendering delle comunicazioni interattive (canali Web e di stampa). Questa funzionalità è destinata principalmente ai clienti che desiderano concedere in licenza il software in base al numero di invii di moduli e/o documenti sottoposti a rendering. Questa funzionalità è attualmente disponibile solo nello stack OSGI di AEM Forms.
 
 ## Abilitazione del reporting delle transazioni {#enabling-transaction-reporting}
 
-Per impostazione predefinita, la registrazione delle transazioni è disabilitata. Per abilitare la registrazione delle transazioni, segui i passaggi indicati di seguito:
+Per impostazione predefinita, la registrazione delle transazioni è disabilitata. Per abilitare la registrazione delle transazioni, procedere come segue:
 
 * [Apri configMgr](http://localhost:4502/system/console/configMgr)
-* Cerca &quot;Report transazioni Forms&quot;
-* Selezionare la casella di controllo &quot;Registra transazioni&quot;
+* Cerca &quot;Forms Transaction Reporting&quot; (Generazione rapporti transazioni)
+* Selezionare la casella di controllo Registra transazioni
 * Salva le modifiche
 
-Una volta abilitato il reporting delle transazioni, è possibile inviare Adaptive Forms, generare documenti utilizzando document services o eseguire il rendering di documenti di comunicazione interattiva per visualizzare il reporting delle transazioni in azione.
+Una volta abilitata la generazione di rapporti sulle transazioni, puoi inviare Forms adattivo, generare documenti utilizzando servizi documentali o eseguire il rendering di documenti di comunicazione interattiva per vedere la generazione di rapporti sulle transazioni in azione.
 
-## Visualizzazione del rapporto transazioni {#viewing-transaction-report}
+## Visualizzazione del rapporto sulle transazioni {#viewing-transaction-report}
 
-Per visualizzare il rapporto sulle transazioni, accedi ad AEM Forms come amministratore. Solo i membri del gruppo fd-Administrator possono visualizzare il rapporto sulle transazioni.
+Per visualizzare il rapporto sulle transazioni, accedi ad AEM Forms come amministratore. Solo i membri del gruppo fd-Administrator possono visualizzare il report delle transazioni.
 
-Seleziona Strumenti | Forms | Visualizza rapporto transazioni
+Seleziona strumenti | FORMS | Visualizza rapporto transazione
 
-o visualizzare il rapporto sulla transazione facendo clic su [qui](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
+oppure visualizzare il report della transazione facendo clic su [qui](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 
 ![Reporting sulle transazioni](assets/transactionreporting.gif)
 
-Nella schermata precedente Documento elaborato è il numero di documenti generati utilizzando document services. Documenti resi indica il numero di documenti di comunicazione interattiva (Web e stampa) sottoposti a rendering. Forms Inviato indica il numero di invii di moduli adattivi.
+Nella schermata precedente Documento elaborato indica il numero di documenti generati utilizzando i servizi documentali. Documenti sottoposti a rendering indica il numero di documenti di comunicazione interattiva (Web e stampa) sottoposti a rendering. Forms inviato indica il numero di invii di moduli adattivi.
 
-Una transazione rimane nel buffer per un periodo specificato (tempo buffer scaricamento + tempo di replica inversa). Per impostazione predefinita, il conteggio delle transazioni impiega circa 90 secondi per riflettere nel report delle transazioni.
+Una transazione rimane nel buffer per un periodo specificato (tempo buffer di scaricamento + tempo replica inversa). Per impostazione predefinita, occorrono circa 90 secondi prima che il conteggio delle transazioni venga visualizzato nel rapporto sulle transazioni.
 
-Azioni come l’invio di un modulo PDF, l’utilizzo dell’interfaccia utente dell’agente per visualizzare in anteprima una comunicazione interattiva o l’utilizzo di metodi di invio di moduli non standard non vengono contabilizzate come transazioni. AEM Forms fornisce un’API per registrare tali transazioni. Chiama l&#39;API dalle tue implementazioni personalizzate per registrare una transazione.
+Azioni quali l’invio di un modulo PDF, l’utilizzo dell’interfaccia utente dell’agente per visualizzare in anteprima una comunicazione interattiva o l’utilizzo di metodi di invio di moduli non standard non vengono considerate transazioni. AEM Forms fornisce un’API per registrare tali transazioni. Chiama l’API dalle implementazioni personalizzate per registrare una transazione.
 
 Se visualizzi il rapporto sulle transazioni nell’istanza di authoring, assicurati che la replica inversa sia configurata su tutte le istanze di pubblicazione.
 

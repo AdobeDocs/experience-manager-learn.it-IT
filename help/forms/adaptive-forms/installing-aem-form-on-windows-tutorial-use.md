@@ -1,6 +1,6 @@
 ---
 title: Passaggi semplificati per l’installazione di AEM Forms su Windows
-description: Procedura rapida e semplice per installare AEM Forms in Windows
+description: Passaggi semplici e veloci per installare AEM Forms su Windows
 feature: Adaptive Forms
 type: Tutorial
 version: 6.5
@@ -20,70 +20,70 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->Non fare mai doppio clic sul jar di avvio rapido AEM se si intende utilizzare AEM Forms.
+>Se intendi utilizzare AEM Forms, non fare mai doppio clic sul file jar di Avvio rapido dell’AEM.
 >
->Inoltre, assicurati che non ci siano spazi nel percorso della cartella di installazione di AEM Forms.
+>Inoltre, accertati che nel percorso della cartella di installazione di AEM Forms non siano presenti spazi.
 >
->Ad esempio, non installare AEM Forms in c:\jack and jill\AEM Forms folder
+>Ad esempio, non installare AEM Forms nella cartella c:\jack e jill\AEM Forms
 
 >[!NOTE]
 >
->Se stai installando AEM Forms 6.5, assicurati di aver installato i seguenti redistribuibili Microsoft Visual C++ a 32 bit.
+>Se si sta installando AEM Forms 6.5, assicurarsi di aver installato i seguenti ridistribuibili di Microsoft Visual C++ a 32 bit.
 >
 >* Microsoft Visual C++ 2008 ridistribuibile
 >* Microsoft Visual C++ 2010 ridistribuibile
 >* Microsoft Visual C++ 2012 ridistribuibile
->* Microsoft Visual C++ 2013 ridistribuibile (a partire dalla versione 6.5)
+>* Microsoft Visual C++ 2013 ridistribuibile (versione 6.5)
 
 
-Anche se consigliamo di seguire [documentazione ufficiale](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) per l’installazione di AEM Forms. Per installare e configurare AEM Forms nell’ambiente Windows, effettua le seguenti operazioni:
+Anche se si consiglia di seguire [documentazione ufficiale](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) per installare AEM Forms. Per installare e configurare AEM Forms in un ambiente Windows è possibile seguire la procedura descritta di seguito.
 
-* Assicurati di avere installato il JDK appropriato
-   * AEM 6.2 è necessario: Oracle SE 8 JDK 1.8.x (64 bit)
-   * AEM 6.3 e AEM 6.4 è necessario: Oracle SE 8 JDK 1.8.x (64 bit)
-   * AEM 6.5 è necessario JDK 8 o JDK 11
-   * [Requisiti JDK ufficiali](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=it) sono elencati qui
-* Assicurati che JAVA_HOME sia impostato per puntare al JDK che hai installato.
-   * Per creare la variabile JAVA_HOME in windows, segui la procedura seguente:
+* Assicurarsi di aver installato il JDK appropriato
+   * AEM 6.2 richiesto: Oracle SE 8 JDK 1.8.x (64 bit)
+   * AEM 6.3 e AEM 6.4: Oracle SE 8 JDK 1.8.x (64 bit)
+   * AEM 6.5 sono necessari JDK 8 o JDK 11
+   * [Requisiti ufficiali JDK](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=it) sono elencati qui
+* Verificare che JAVA_HOME sia impostato in modo da puntare al JDK installato.
+   * Per creare la variabile JAVA_HOME in Windows, effettuare le seguenti operazioni:
       * Fare clic con il pulsante destro del mouse su Risorse del computer e selezionare Proprietà
-      * Nella scheda Avanzate , seleziona Variabili di ambiente e crea una nuova variabile di sistema denominata JAVA_HOME.
-      * Imposta il valore della variabile in modo che punti a JDK installato sul tuo sistema. Ad esempio c:\program files\java\jdk1.8.0_25
+      * Nella scheda Avanzate selezionare Variabili di ambiente e creare una nuova variabile di sistema denominata JAVA_HOME.
+      * Imposta il valore della variabile in modo che punti a JDK installato nel sistema. Ad esempio c:\programmi\java\jdk1.8.0_25
 
-* Crea una cartella denominata AEMForms sull&#39;unità C
+* Creare una cartella denominata AEMForms sull&#39;unità C
 * Individua AEMQuickStart.Jar e spostalo nella cartella AEMForms
-* Copia il file license.properties nella cartella AEMForms
+* Copiare il file license.properties in questa cartella AEMForms
 * Crea un file batch denominato &quot;StartAemForms.bat&quot; con il seguente contenuto:
    * `java -d64 -Xmx2048M -jar AEM_6.5_Quickstart.jar -gui`
-      * Qui AEM_6.5_Quickstart.jar è il nome del mio jar AEM quickstart.
-   * È possibile rinominare il jar con qualsiasi nome, ma assicurarsi che il nome sia riportato nel file batch. Salva il file batch nella cartella AEMForms.
+      * Qui AEM_6.5_Quickstart.jar è il nome del file jar quickstart dell&#39;AEM.
+   * Puoi rinominare il file jar con qualsiasi nome, ma assicurati che tale nome sia riportato nel file batch. Salvate il file batch nella cartella AEMForms.
 
-* Apri un nuovo prompt dei comandi e passa a _c:\aemforms_.
+* Aprire un nuovo prompt dei comandi e passare a _c:\aemforms_.
 
-* Esegui il file StartAemForms.bat dal prompt dei comandi.
+* Eseguire il file StartAemForms.bat dal prompt dei comandi.
 
-* Si dovrebbe ottenere una piccola finestra di dialogo che indica l&#39;avanzamento dell&#39;avvio.
+* Dovrebbe essere visualizzata una piccola finestra di dialogo che indica l&#39;avanzamento dell&#39;avvio.
 
-* Una volta completato l&#39;avvio, apri il file sling.properties . Si trova in c:\AEMForms\crx-quickstart\conf folder.
+* Al termine dell’avvio, apri il file sling.properties. Si trova nella cartella c:\AEMForms\crx-quickstart\conf.
 
-* Copiare le 2 righe seguenti verso il fondo del file
-   * **sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.&#42;** **sling.bootdelegation.class.org.bouncyCastle.jce.provider.BouncyCastleProvider=org.bouncyCastle.&#42;**
-* Queste due proprietà sono necessarie per il funzionamento di document services
-* Salva il file sling.properties
-* [Scarica il pacchetto aggiuntivo per i moduli appropriati](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it)
-* Installa il pacchetto add-on dei moduli utilizzando [gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp).
-* Dopo aver installato add on package, segui i seguenti passaggi
+* Copia le 2 righe seguenti verso la parte inferiore del file
+   * **sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.&#42;** **sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.&#42;**
+* Queste due proprietà sono necessarie per il funzionamento dei servizi documentali
+* Salvare il file sling.properties
+* [Scaricare il pacchetto aggiuntivo appropriato per i moduli](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it)
+* Installare il pacchetto di componenti aggiuntivi per Forms tramite [gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp).
+* Dopo aver installato il pacchetto add on, è necessario seguire i seguenti passaggi
 
    * **Assicurati che tutti i bundle siano in stato attivo. (Ad eccezione del bundle Firme AEMFD).**
-   * **Normalmente ci vorrebbero 5 o più minuti perché tutti i bundle raggiungano lo stato attivo.**
+   * **In genere sono necessari 5 o più minuti perché tutti i bundle raggiungano lo stato attivo.**
 
-   * **Una volta che tutti i bundle sono attivi (ad eccezione del bundle AEMFD Signatures), riavvia il sistema per completare l&#39;installazione di AEM Forms**
+   * **Una volta che tutti i bundle sono attivi (eccetto il bundle Firme AEMFD), riavvia il sistema per completare l’installazione di AEM Forms**
 
-## pacchetto sun.util.calendar all&#39;elenco Consentiti
+## pacchetto sun.util.calendar all’elenco Consentiti
 
 1. Apri la console web Felix nel tuo [finestra del browser](http://localhost:4502/system/console/configMgr)
-1. Cerca e apri la configurazione del firewall di deserializzazione: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
+1. Cerca e apri Configurazione firewall deserializzazione: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 1. Aggiungi `sun.util.calendar` come nuova voce in `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
 1. Salva le modifiche.
 
 Congratulazioni!!! Ora hai installato e configurato AEM Forms sul tuo sistema.
-A seconda delle esigenze è possibile configurare  [Estensioni Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) o [ PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) sul server
+A seconda delle tue esigenze puoi configurare  [Estensioni Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) o [ PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) sul server

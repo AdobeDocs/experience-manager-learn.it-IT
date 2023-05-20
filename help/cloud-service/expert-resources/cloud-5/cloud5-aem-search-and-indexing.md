@@ -1,6 +1,6 @@
 ---
-title: Ricerca e indicizzazione di Cloud 5 AEM
-description: Ci immergiamo le dita nell'oceano che è ricerca e indicizzazione
+title: Ricerca e indicizzazione AEM Cloud 5
+description: Immergiamo le dita nell'oceano che è ricerca e indicizzazione
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -16,14 +16,14 @@ ht-degree: 8%
 
 ---
 
-# Ricerca e indicizzazione di Cloud 5 AEM
+# Ricerca e indicizzazione AEM Cloud 5
 
-Un veloce tuffo nelle acque profonde di ricerca e indicizzazione. Un argomento impegnativo che speriamo di contribuire ad educare i clienti a migliorare l&#39;efficienza.
+Immergiti rapidamente nelle profondità della ricerca e dell’indicizzazione. Un argomento impegnativo che speriamo di poter aiutare a trasmettere in modo più efficace.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342374?quality=12&learn=on)
 
 ## Contenuto trattato in questo video
 
-+ Ricerca e indice [Panoramica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=it)
++ Ricerca e indicizzazione [Panoramica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=it)
 + AEM [Convertitore indice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html)
-+ Serie di esperti [Immersione profonda](../../../cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
++ Serie Expert [Approfondimento](../../../cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)

@@ -1,6 +1,6 @@
 ---
 title: Distribuire le risorse di esempio sul server
-description: Verifica la funzionalità Salva come bozza per le comunicazioni interattive
+description: Verificare la funzionalità Salva come bozza per le comunicazioni interattive
 feature: Interactive Communication
 topics: development
 audience: developer
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 # Distribuire le risorse di esempio sul server
 
-Segui le istruzioni riportate di seguito per far funzionare questa funzionalità sul server AEM
+Seguire le istruzioni riportate di seguito per utilizzare questa funzionalità sul proprio server AEM
 
 * [Creare lo schema del database](assets/icdrafts.sql)
 * [Importare la libreria client](assets/icdrafts.zip)
@@ -33,16 +33,16 @@ Segui le istruzioni riportate di seguito per far funzionare questa funzionalità
 | Nome proprietà | Valore proprietà |
 |---|---|
 | Nome origine dati | SaveAndContinue |
-| Classe del driver JDBC | com.mysql.cj.jdbc.Driver |
-| URL di connessione JDBC | jdbc:mysql://localhost:3306/aemformstutorial?autoReconnect=true&amp;useSSL=false&amp;characterEncoding=utf8&amp;useUnicode=true |
+| Classe driver JDBC | com.mysql.cj.jdbc.Driver |
+| URL connessione JDBC | jdbc:mysql://localhost:3306/aemformstutorial?autoReconnect=true&amp;useSSL=false&amp;characterEncoding=utf8&amp;useUnicode=true |
 
-* [Distribuzione del bundle icbots](assets/icdrafts.icdrafts.core-1.0-SNAPSHOT.jar)
-* Assicurati di _Abilita Salva con CCRDocumentInstanceService_ nella configurazione OSGI come mostrato di seguito
+* [Distribuire il bundle icdraft](assets/icdrafts.icdrafts.core-1.0-SNAPSHOT.jar)
+* Assicurati di _Abilita salvataggio tramite CCRDocumentInstanceService_ nella configurazione OSGI come mostrato di seguito
    ![Abilita bozze](assets/enable-drafts.png)
-* Apri qualsiasi comunicazione interattiva. Fai clic su Salva come bozza per salvare
+* Apri una comunicazione interattiva. Fate clic sul pulsante Salva come bozza per salvare
 * [Visualizza bozze salvate](http://localhost:4502/content/dam/formsanddocuments/saveddrafts/jcr:content?wcmmode=disabled)
 
 >[!NOTE]
->I file xml vengono memorizzati nella cartella principale dell&#39;installazione del server AEM. Il progetto eclipse >ti viene fornito per personalizzare la soluzione in base alle tue esigenze.
+>I file xml vengono memorizzati nella cartella principale dell&#39;installazione del server AEM. Il progetto di eclissi >è fornito per personalizzare la soluzione in base alle tue esigenze.
 
-Il progetto eclipse con implementazione di esempio può essere [scaricato da qui](assets/icdrafts-eclipse-project.zip)
+Il progetto di eclissi con implementazione di esempio può essere [scaricato da qui](assets/icdrafts-eclipse-project.zip)

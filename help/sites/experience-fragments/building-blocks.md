@@ -1,6 +1,6 @@
 ---
-title: Come utilizzare i blocchi predefiniti dei frammenti esperienza
-description: I blocchi predefiniti sono una sottofunzione dei frammenti esperienza che consente di riutilizzare i componenti creati tra le varianti dei frammenti esperienza.
+title: Come utilizzare i blocchi predefiniti per frammenti esperienza
+description: I blocchi predefiniti sono una sottofunzione dei Frammenti esperienza che consente di riutilizzare i componenti creati tra diverse varianti di Frammenti esperienza.
 sub-product: Experience Manager Sites
 version: Cloud Service
 feature: Experience Fragments
@@ -21,7 +21,7 @@ ht-degree: 0%
 # Blocchi predefiniti con frammenti esperienza {#building-blocks}
 
 
-I blocchi predefiniti sono una sottofunzione dei frammenti esperienza. I blocchi predefiniti consentono agli autori di contenuti di riutilizzare i componenti tra diverse varianti di Frammenti esperienza.
+I blocchi predefiniti sono una sottofunzione dei Frammenti esperienza. I blocchi predefiniti consentono agli autori di contenuti di riutilizzare i componenti tra diverse varianti di Frammenti esperienza.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331786?quality=12&learn=on)
 
@@ -29,5 +29,5 @@ I blocchi predefiniti sono una sottofunzione dei frammenti esperienza. I blocchi
 >
 > Il modello utilizzato per i frammenti esperienza deve includere **Blocchi predefiniti** come componente consentito.
 
-* I blocchi predefiniti semplificano il riutilizzo dei componenti tra le diverse varianti.
-* Le modifiche al blocco predefinito principale vengono automaticamente applicate a qualsiasi riferimento. Le modifiche al layout del blocco predefinito non vengono modificate.
+* I blocchi predefiniti consentono di riutilizzare facilmente i componenti tra diverse varianti.
+* Le modifiche al blocco predefinito principale vengono automaticamente riportate in tutti i riferimenti. Le modifiche al layout del blocco predefinito non vengono influenzate.

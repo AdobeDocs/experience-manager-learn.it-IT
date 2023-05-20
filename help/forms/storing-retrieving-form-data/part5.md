@@ -1,6 +1,6 @@
 ---
-title: Memorizzazione e recupero dei dati dei moduli dal database MySQL - Creare un modello di modulo adattivo e un componente pagina
-description: Esercitazione in più parti per illustrare i passaggi necessari per memorizzare e recuperare i dati dei moduli
+title: Memorizzazione e recupero dei dati del modulo dal database MySQL - Creare un modello di modulo adattivo e il componente Pagina
+description: Tutorial in più parti per illustrare i passaggi necessari per l’archiviazione e il recupero dei dati del modulo
 feature: Adaptive Forms
 type: Tutorial
 activity: implement
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Creare un modello di modulo adattivo e un componente pagina
+# Creare un modello di modulo adattivo e il componente Pagina
 
-Verrà ora creato un nuovo modello di modulo adattivo e un componente di pagina per testare questo caso d’uso. Tutti i moduli adattivi creati con questo nuovo modello avranno quindi la possibilità di memorizzare e recuperare i dati del modulo.
+Ora creeremo un nuovo modello di modulo adattivo e un nuovo componente pagina per testare questo caso d’uso. Ogni modulo adattivo creato con questo nuovo modello avrà quindi la possibilità di memorizzare e recuperare i dati del modulo.
 Il video seguente illustra i passaggi necessari per creare un nuovo modello di modulo adattivo
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=12&learn=on)

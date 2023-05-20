@@ -1,6 +1,6 @@
 ---
 title: Gestione di Assets Essentials
-description: Scopri le nozioni di base per la creazione di una struttura di cartelle e le operazioni di base quali spostamento, copia e ridenominazione.
+description: Scopri le nozioni di base sulla creazione di una struttura di cartelle e sulle operazioni di base come spostamento, copia e ridenominazione.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Gestione di Assets Essentials
 
-Scopri le nozioni di base per la creazione di una struttura di cartelle e le operazioni di base quali spostamento, copia e ridenominazione.
+Scopri le nozioni di base sulla creazione di una struttura di cartelle e sulle operazioni di base come spostamento, copia e ridenominazione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335733?quality=12&learn=on)

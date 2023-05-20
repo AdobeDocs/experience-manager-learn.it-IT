@@ -1,6 +1,6 @@
 ---
-title: Memorizzazione e recupero dei dati dei moduli dal database MySQL
-description: Esercitazione in più parti per illustrare i passaggi necessari per memorizzare e recuperare i dati dei moduli
+title: Memorizzazione e recupero dei dati del modulo dal database MySQL
+description: Tutorial in più parti per illustrare i passaggi necessari per l’archiviazione e il recupero dei dati del modulo
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 ---
 
-# Creare il servizio OSGi per recuperare i dati
+# Crea servizio OSGi per recuperare i dati
 
-Il codice seguente è stato scritto per memorizzare e recuperare i dati del modulo adattivo memorizzati. Viene utilizzata una semplice query per recuperare i dati del modulo adattivo associati a un GUID specificato. I dati recuperati vengono quindi restituiti all’applicazione chiamante. In questo codice viene fatto riferimento alla stessa origine dati creata nel passaggio precedente
+Il seguente codice è stato scritto per memorizzare e recuperare i dati memorizzati del modulo adattivo. Viene utilizzata una query semplice per recuperare i dati del modulo adattivo associati a un determinato GUID. I dati recuperati vengono quindi restituiti all&#39;applicazione chiamante. Questo codice fa riferimento alla stessa origine dati creata nel passaggio precedente
 
 
 ```java
@@ -154,7 +154,7 @@ public class FetchFormData implements com.aemforms.saveandcontinue.core.FetchSto
 
 ## Interfaccia
 
-Di seguito è riportata la dichiarazione dell’interfaccia utilizzata
+Di seguito è riportata la dichiarazione di interfaccia utilizzata
 
 ```java
 package com.aemforms.saveandcontinue.core;

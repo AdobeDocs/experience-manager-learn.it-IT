@@ -1,5 +1,5 @@
 ---
-title: Salvare e riprendere le lettere
+title: Salva e riprendi lettere
 seo-title: Save and resume letters
 description: Scopri come salvare e recuperare le bozze di lettere
 seo-description: Learn how to save and retrieve draft letters
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 # Introduzione
 
-Le comunicazioni interattive consentono agli agenti di preparare corrispondenze ad-hoc per salvare le corrispondenze parzialmente completate e recuperarle per continuare a funzionare. AEM Forms fornisce [Interfaccia Service Provider](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html). Il cliente deve implementare questa interfaccia per ottenere la funzionalità Save and Resume .
+Le comunicazioni interattive consentono agli agenti che preparano corrispondenze ad hoc di salvare le corrispondenze parzialmente completate e di recuperare le stesse per continuare a lavorare. AEM Forms offre [Interfaccia Service Provider](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html). Il cliente deve implementare questa interfaccia per ottenere la funzionalità Salva e riprendi.
 
-Questo articolo utilizza il database MySQL per memorizzare i metadati dell&#39;istanza della lettera. I dati della lettera vengono memorizzati nel file system.
+In questo articolo viene utilizzato il database MySQL per memorizzare i metadati dell&#39;istanza della lettera. I dati della lettera vengono memorizzati nel file system.
 
 Il video seguente illustra il caso d’uso:
 
@@ -34,8 +34,8 @@ Il video seguente illustra il caso d’uso:
 
 ## Prerequisiti
 
-Per implementare la soluzione in modo da soddisfare le tue esigenze è necessario quanto segue
+Per implementare la soluzione in base alle tue esigenze, dovrai disporre dei seguenti elementi
 
 * Esperienza di lavoro con AEM Forms
-* AEM Server 6.5 con Forms Add on
-* Deve essere familiare nella creazione di bundle OSGI
+* Server AEM 6.5 con componente aggiuntivo Forms
+* Deve avere familiarità con la creazione di bundle OSGI

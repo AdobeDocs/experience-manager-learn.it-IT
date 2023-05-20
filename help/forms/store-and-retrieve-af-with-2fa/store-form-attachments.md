@@ -1,6 +1,6 @@
 ---
-title: Memorizzare gli allegati del modulo
-description: Estrai gli allegati del modulo e archiviali in una nuova posizione nell’archivio CRX.
+title: Memorizza allegati modulo
+description: Estrarre gli allegati del modulo e archiviarli in una nuova posizione nell’archivio CRX.
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -17,12 +17,12 @@ ht-degree: 1%
 
 ---
 
-# Memorizzare gli allegati del modulo
+# Memorizza allegati modulo
 
-Quando aggiungi allegati a un modulo adattivo, gli allegati vengono memorizzati in una posizione temporanea nell’archivio CRX. Affinché il nostro caso d’uso funzioni, dobbiamo memorizzare gli allegati del modulo in una nuova posizione nell’archivio CRX.
+Quando si aggiungono allegati a un modulo adattivo, gli allegati vengono memorizzati in una posizione temporanea nell’archivio CRX. Affinché il caso d’uso funzioni, è necessario memorizzare gli allegati del modulo in una nuova posizione nell’archivio CRX.
 
-Il servizio OSGi viene creato per memorizzare gli allegati del modulo in una nuova posizione nell’archivio CRX. Viene creata una nuova mappa di file con la nuova posizione degli allegati nel CRX e viene restituita all&#39;applicazione chiamante.
-Di seguito è riportata la FileMap inviata al servlet. La chiave è il campo modulo adattivo e il valore è la posizione temporanea dell’allegato. Nel nostro servlet estrarremo l&#39;allegato e lo memorizzeremo in una nuova posizione nell&#39;archivio AEM e aggiorneremo il FileMap con la nuova posizione
+Il servizio OSGi viene creato per memorizzare gli allegati del modulo in una nuova posizione nell’archivio CRX. Viene creata una nuova mappa file con la nuova posizione degli allegati nel CRX e viene restituita all’applicazione chiamante.
+Di seguito è riportato il FileMap inviato al servlet. La chiave è il campo del modulo adattivo e il valore è la posizione temporanea dell’allegato. Nel nostro servlet estraeremo l’allegato e lo memorizzeremo in una nuova posizione nell’archivio AEM e aggiorneremo FileMap con la nuova posizione
 
 ```java
 {
@@ -31,7 +31,7 @@ Di seguito è riportata la FileMap inviata al servlet. La chiave è il campo mod
 }
 ```
 
-Di seguito è riportato il codice che estrae gli allegati dalla richiesta e li memorizza in **/content/afattachment** cartella
+Di seguito è riportato il codice che estrae gli allegati dalla richiesta e li memorizza in **/content/afattachments** cartella
 
 ```java
 public String storeAFAttachments(JSONObject fileMap, SlingHttpServletRequest request) {
@@ -72,7 +72,7 @@ public String storeAFAttachments(JSONObject fileMap, SlingHttpServletRequest req
 }
 ```
 
-Questa è la nuova FileMap con la posizione aggiornata degli allegati del modulo
+Nuovo FileMap con la posizione aggiornata degli allegati del modulo
 
 ```java
 {

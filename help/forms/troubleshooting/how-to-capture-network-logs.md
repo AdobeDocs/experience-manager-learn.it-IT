@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Come acquisire i registri di rete/gli strumenti da utilizzare
 
-*Questo video illustra i passaggi necessari per acquisire i registri di rete/gli strumenti da utilizzare.*
+*Questo video illustra i passaggi necessari per acquisire i registri di rete e gli strumenti da utilizzare.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335491?quality=12&learn=on)

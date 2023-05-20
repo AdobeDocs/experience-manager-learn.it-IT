@@ -1,6 +1,6 @@
 ---
 title: Casella in entrata AEM
-description: Personalizzare la casella in entrata aggiungendo nuove colonne in base ai dati del flusso di lavoro
+description: Personalizza la casella in entrata aggiungendo nuove colonne basate sui dati del flusso di lavoro
 feature: Adaptive Forms
 topics: development
 audience: developer
@@ -22,24 +22,24 @@ ht-degree: 5%
 
 # Casella in entrata AEM
 
-AEM Casella in entrata consolida le notifiche e le attività da vari componenti AEM, inclusi i flussi di lavoro Forms. Quando viene attivato un flusso di lavoro dei moduli contenente un passaggio dell’attività Assegna, l’applicazione associata viene elencata come un’attività nella casella in entrata dell’assegnatario.
+La Casella in entrata AEM consolida le notifiche e le attività da vari componenti AEM, inclusi i flussi di lavoro Forms. Quando viene attivato un flusso di lavoro dei moduli contenente un passaggio Assegna attività, l’applicazione associata viene elencata come attività nella casella in entrata dell’assegnatario.
 
-L’interfaccia utente della casella in entrata fornisce viste elenco e calendario per visualizzare le attività. È inoltre possibile configurare le impostazioni di visualizzazione. È possibile filtrare le attività in base a vari parametri.
+L&#39;interfaccia utente Casella in entrata fornisce viste elenco e calendario per visualizzare le attività. È inoltre possibile configurare le impostazioni di visualizzazione. Puoi filtrare le attività in base a vari parametri.
 
-È possibile personalizzare un Casella in entrata Experience Manager per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare colonne aggiuntive in base ai dati di un flusso di lavoro.
+È possibile personalizzare la casella in entrata di un Experience Manager per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare colonne aggiuntive in base ai dati di un flusso di lavoro.
 
 >[!NOTE]
 >
->Per personalizzare le colonne della casella in entrata, devi essere membro di amministratori o amministratori di flusso di lavoro
+>Per personalizzare le colonne della casella in entrata, è necessario essere amministratori o amministratori del flusso di lavoro
 
 ## Personalizzazione delle colonne
 
-[Avvia AEM inbox](http://localhost:4502/aem/inbox)
-Apri Admin Control facendo clic sul pulsante _Vista a elenco_ e quindi selezionare _Controllo amministratore_ come mostrato nella schermata sottostante
+[Avvia casella in entrata AEM](http://localhost:4502/aem/inbox)
+Apri Admin Control facendo clic sul pulsante _Vista a elenco_ e quindi selezionando _Admin Control_ come mostrato nella schermata seguente
 
 ![admin-control](assets/open-customization.png)
 
-Nell’interfaccia utente di personalizzazione delle colonne è possibile eseguire le operazioni seguenti
+Nell’interfaccia utente di personalizzazione delle colonne puoi eseguire le seguenti operazioni
 
 * Elimina colonne
 * Riordinare le colonne
@@ -47,14 +47,14 @@ Nell’interfaccia utente di personalizzazione delle colonne è possibile esegui
 
 ## Personalizzazione branding
 
-Nella personalizzazione del branding puoi effettuare le seguenti operazioni
+Nella personalizzazione del branding è possibile effettuare le seguenti operazioni
 
 * Aggiungi il logo della tua organizzazione
 * Personalizza il testo dell’intestazione
 * Personalizzare il collegamento della guida
-* Nascondi opzioni navigazione
+* Nascondi opzioni di navigazione
 
-![branding della casella in entrata](assets/branding-customization.PNG)
+![inbox-branding](assets/branding-customization.PNG)
 
 ## Passaggi successivi
 

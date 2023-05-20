@@ -1,6 +1,6 @@
 ---
 title: Video ed esercitazioni di AEM Foundation
-description: Guarda i nostri video e tutorial per ottenere aiuto con Adobe Experience Manager Foundation.
+description: Guarda i nostri video e tutorial per ricevere assistenza su Adobe Experience Manager Foundation.
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
@@ -21,13 +21,13 @@ Adobe Experience Manager fornisce un set comune di funzionalità disponibili per
 
 * **[Utilizza AEM flusso di lavoro (video)](./workflow/use-workflow.md)**
 
-   *AEM Workflow consente di collaborare, gestire ed elaborare i contenuti in AEM.*
+   *Il flusso di lavoro dell’AEM consente di collaborare, gestire ed elaborare i contenuti all’interno dell’AEM.*
 
 * **[Comprendere Cloud Manager per AEM (video)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
-   *Cloud Manager per AEM consente di gestire, ispezionare e self-service facilmente gli ambienti di AEM.*
+   *Cloud Manager per AEM consente di gestire, ispezionare e gestire in modo autonomo gli ambienti AEM.*
 
 * **[Utilizzare la pipeline CI/CD di Cloud Manager (video)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
-   *Scopri come utilizzare la pipeline CI/CD di Cloud Manager per garantire implementazioni sicure e coerenti.*
+   *Scopri come utilizzare la pipeline CI/CD di Cloud Manager per garantire distribuzioni sicure e coerenti.*
 
 </div>
 
@@ -40,7 +40,7 @@ Adobe Experience Manager fornisce un set comune di funzionalità disponibili per
 
 <div id="staff-picks-section">
 
-## Scatole dello staff
+## Scelte del personale
 
 <table>
 <tr>
@@ -54,33 +54,33 @@ Adobe Experience Manager fornisce un set comune di funzionalità disponibili per
     </a>
     </div>
     <p>
-    <em>Cloud Manager per AEM fornisce una soluzione semplice ma solida che consente di gestire, ispezionare e self-service facilmente gli ambienti di AEM.</em>
+    <em>Cloud Manager per AEM fornisce una soluzione semplice ma solida che consente di gestire, ispezionare e gestire in modo autonomo gli ambienti AEM.</em>
     <p>
   </td>
    <td>
     <a href="./development/set-up-sling-dynamic-include.md">
-    <img alt="Configurazione Sling Dynamic Include (SDI)" src="./development/assets/set-up-sling-dynamic-include/thumbnail.png" />
+    <img alt="Configurazione di Sling Dynamic Include (SDI)" src="./development/assets/set-up-sling-dynamic-include/thumbnail.png" />
     </a>
      <div>
      <a href="./development/set-up-sling-dynamic-include.md">
-    <strong>Configurazione Sling Dynamic Include (SDI)</strong>
+    <strong>Configurazione di Sling Dynamic Include (SDI)</strong>
     </a>
     </div>
     <p>
-    <em>Scopri come impostare Sling Dynamic Include (SDI) e consentire ai componenti AEM dinamici di distribuire sempre nuovi contenuti.</em>
+    <em>Scopri come impostare Sling Dynamic Include (SDI) e consentire ai componenti AEM dinamici di distribuire sempre contenuti freschi.</em>
     <p>
   </td>
   <td>
     <a href="./administration/understand-reasons-to-upgrade.md">
-    <img alt="Perché effettuare l’aggiornamento AEM" src="./administration/assets/understand-reasons-to-upgrade/thumbnail.png" />
+    <img alt="Perché aggiornare l’AEM" src="./administration/assets/understand-reasons-to-upgrade/thumbnail.png" />
     </a>
     <div>
     <a href="./administration/understand-reasons-to-upgrade.md">
-    <strong>Perché effettuare l’aggiornamento AEM</strong>
+    <strong>Perché aggiornare l’AEM</strong>
     </a>
     </div>
     <p>
-    <em>Analisi dettagliata delle funzioni chiave da comprendere durante l’aggiornamento all’ultima versione di AEM.</em>
+    <em>Una suddivisione ad alto livello delle funzioni chiave da comprendere, quando si prende in considerazione l’aggiornamento alla versione più recente dell’AEM.</em>
     </p>
   </td>
 </tr>
@@ -90,7 +90,7 @@ Adobe Experience Manager fornisce un set comune di funzionalità disponibili per
 
 ## Risorse aggiuntive
 
-* [AEM tutorial as a Cloud Service](/help/cloud-service/overview.md)
-* [Video ed esercitazioni di AEM Sites](/help/sites/overview.md)
-* [Video ed esercitazioni di AEM Assets](/help/assets/overview.md)
-* [Video ed esercitazioni di AEM Forms](/help/forms/overview.md)
+* [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
+* [Video e tutorial su AEM Sites](/help/sites/overview.md)
+* [Video e tutorial su AEM Assets](/help/assets/overview.md)
+* [Video e tutorial su AEM Forms](/help/forms/overview.md)

@@ -1,6 +1,6 @@
 ---
-title: Come acquisire immagini heap di una JVM su un server Windows
-description: Acquisire le immagini heap dell'esecuzione del processo Java su un server windows
+title: Acquisire le immagini heap di una JVM su un server Windows
+description: Acquisire le immagini heap del processo Java in esecuzione su un server Windows
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Come acquisire immagini heap di una JVM su un server Windows
+# Acquisire le immagini heap di una JVM su un server Windows
 
-*Questo video illustra i passaggi necessari per acquisire le immagini heap di una JVM su un server Windows.*
+*Questo video illustra i passaggi per acquisire le immagini heap di una JVM su un server Windows.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335490?quality=12&learn=on)

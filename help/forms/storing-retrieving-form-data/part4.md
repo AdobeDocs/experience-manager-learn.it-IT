@@ -1,6 +1,6 @@
 ---
 title: Memorizzazione e recupero dei dati del modulo dal database MySQL - Crea libreria client
-description: Esercitazione in più parti per illustrare i passaggi necessari per memorizzare e recuperare i dati dei moduli
+description: Tutorial in più parti per illustrare i passaggi necessari per l’archiviazione e il recupero dei dati del modulo
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # Creare una libreria client
 
-AEM libreria client gestisce tutto il codice JavaScript lato client. Per questo articolo, ho creato un semplice JavaScript per recuperare i dati del modulo adattivo utilizzando l’API del bridge guida. Una volta recuperati i dati del modulo adattivo, la chiamata di POST viene effettuata al servlet per inserire o aggiornare i dati del modulo adattivo nel database. La funzione getALLUrlParams restituisce i parametri nell&#39;URL. Se il parametro guid è presente nell&#39;URL, è necessario eseguire l&#39;operazione di aggiornamento, se non si tratta di un&#39;operazione di inserimento. Il resto della funzionalità viene gestito nel codice associato all&#39;evento click della classe savebutton.
+La libreria client AEM gestisce tutto il codice JavaScript lato client. Per questo articolo, ho creato un semplice JavaScript per recuperare i dati del modulo adattivo utilizzando l’API del ponte guida. Una volta recuperati i dati del modulo adattivo, viene effettuata la chiamata POST al servlet per inserire o aggiornare i dati del modulo adattivo nel database. La funzione getALLUrlParams restituisce i parametri nell’URL. Se il parametro guid è presente nell’URL, è necessario eseguire l’operazione di aggiornamento, in caso contrario si tratta di un’operazione di inserimento. Il resto della funzionalità viene gestito nel codice associato all’evento click della classe .savebutton.
 
 >[!NOTE]
 >
->La libreria client viene fornita come parte di questa esercitazione risorse
+>La libreria client viene fornita come parte di questa esercitazione sulle risorse
 
 ```javascript
 function getAllUrlParams(url) {

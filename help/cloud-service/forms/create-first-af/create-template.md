@@ -1,6 +1,6 @@
 ---
 title: Creazione di un modello di modulo adattivo
-description: Il modello di modulo adattivo definisce la struttura e il contenuto iniziale del modulo adattivo.
+description: Il modello per moduli adattivi definisce la struttura e il contenuto iniziale del modulo adattivo.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Creare un modello di modulo adattivo
 
-Un modello di modulo adattivo è specializzato AEM modello di pagina, con determinate proprietà e struttura del contenuto utilizzata per creare il modulo adattivo. Il modello dispone di layout, stili e struttura di contenuto iniziale di base preconfigurati. Ogni modulo adattivo è basato su un modello.
+Un modello di modulo adattivo è un modello di pagina AEM specializzato, con determinate proprietà e struttura di contenuto utilizzate per creare il modulo adattivo. Il modello dispone di layout, stili e struttura di contenuto iniziale di base preconfigurati. Ogni modulo adattivo si basa su un modello.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332223?quality=12&learn=on)

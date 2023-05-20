@@ -1,6 +1,6 @@
 ---
 title: Configurazione delle estensioni di Reader in AEM Forms OSGi
-description: Aggiungi credenziali di estensioni di Reader all’archivio attendibilità in AEM Forms OSGi
+description: Aggiungere le credenziali delle estensioni di Reader all’archivio fonti attendibili in AEM Forms OSGi
 feature: Reader Extensions
 audience: developer
 type: Tutorial
@@ -17,31 +17,31 @@ ht-degree: 0%
 
 ---
 
-# Aggiungi credenziale estensioni di Reader{#configuring-reader-extension-osgi}
+# Aggiungi credenziali estensioni di Reader{#configuring-reader-extension-osgi}
 
-Il servizio DocAssurance può applicare diritti di utilizzo ai documenti PDF. Per applicare i diritti di utilizzo ai documenti PDF, configurare i certificati.
+Il servizio DocAssurance può applicare diritti di utilizzo ai documenti PDF. Per applicare i diritti di utilizzo ai documenti di PDF, configura i certificati.
 
-## Crea un keystore per l&#39;utente fd-service
+## Crea keystore per utente fd-service
 
-La credenziale delle estensioni del lettore è associata all’utente del servizio fd. Per aggiungere le credenziali all’utente del servizio fd, segui i passaggi seguenti. Se hai già creato il keystore per l&#39;utente fd-service, salta questa sezione
+Le credenziali delle estensioni Reader sono associate all&#39;utente fd-service. Per aggiungere le credenziali all&#39;utente di fd-service, attenersi alla seguente procedura. Se hai già creato il keystore per l&#39;utente fd-service, salta questa sezione
 
-* Accedi alla tua istanza di AEM Author come amministratore
+* Accedi all’istanza di AEM Author come amministratore
 * Vai a Strumenti-Protezione-Utenti
-* Scorri verso il basso l&#39;elenco degli utenti fino a trovare l&#39;account utente del servizio fd
-* Fai clic sull&#39;utente del servizio fd
+* Scorri verso il basso l’elenco degli utenti fino a trovare l’account utente fd-service
+* Fai clic sull’utente fd-service
 * Fai clic sulla scheda keystore
-* Fai clic su Crea KeyStore
-* Impostare la password di accesso KeyStore e salvare le impostazioni per creare la password KeyStore
+* Fai clic su Crea registro chiavi
+* Imposta la password di accesso al registro chiavi e salva le impostazioni per creare la password del registro chiavi
 
-### Aggiungi le credenziali al keystore utente fd-service
+### Aggiungi credenziali al keystore utente fd-service
 
-Segui il video per aggiungere le credenziali all&#39;utente del servizio fd
+Segui il video per aggiungere le credenziali all’utente fd-service
 
 >[!VIDEO](https://video.tv.adobe.com/v/335849?quality=12&learn=on)
 
 
-Il comando per elencare i dettagli del file pfx è. Il seguente comando presuppone che ti trovi nella stessa directory del file pfx .
+Il comando per elencare i dettagli del file pfx è. Il comando seguente presuppone che ci si trovi nella stessa directory del file pfx.
 
 **keytool -v -list -storetype pkcs12 -keystore &lt;name of=&quot;&quot; your=&quot;&quot; pfx=&quot;&quot; file=&quot;&quot;>**
 
-Ad esempio keytool -v -list -storetype pkcs12 -keystore 1005566.pfx dove 1005566.pfx è il nome del mio file pfx
+Ad esempio, keytool -v -list -storetype pkcs12 -keystore 1005566.pfx dove 1005566.pfx è il nome del file pfx

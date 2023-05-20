@@ -1,6 +1,6 @@
 ---
 title: Utilizzo dei componenti core di Dynamic Media
-description: 'Passaggi: utilizzare i componenti Dynamic Media nella pagina Sites'
+description: Passaggi utilizzo dei componenti di Dynamic Media nella pagina Sites
 role: Developer
 level: Intermediate
 version: Cloud Service
@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Utilizzo dei componenti core di Dynamic Media
 
-Questo video illustra il processo di utilizzo dei componenti core abilitati per Dynamic Media in una pagina web AEM Sites.
+Questo video illustra come utilizzare i Componenti core abilitati per Dynamic Media in una pagina web di AEM Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335461?quality=12&learn=on)

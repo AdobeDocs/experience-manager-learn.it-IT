@@ -1,6 +1,6 @@
 ---
 title: Introduzione ai livelli Author e Publish
-description: Introduzione ai livelli Author e Publish , parte dell’architettura di Adobe Experience Manager.
+description: Introduzione ai livelli Author e Publish, parte dell’architettura di Adobe Experience Manager.
 topics: publishing, architecture
 audience: administrator, developer
 doc-type: technical video
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 # Introduzione ai livelli Author e Publish {#introduction-author-publish}
 
-Introduzione ai livelli Author e Publish , parte dell’architettura di Adobe Experience Manager.
+Introduzione ai livelli Author e Publish, parte dell’architettura di Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32033?quality=12&learn=on)

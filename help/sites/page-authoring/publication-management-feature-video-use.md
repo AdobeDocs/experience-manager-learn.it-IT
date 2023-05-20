@@ -1,6 +1,6 @@
 ---
 title: Pubblicazione di pagine con AEM Sites
-description: Adobe Experience Manager Sites offre diverse opzioni per la pubblicazione e l’annullamento della pubblicazione dei contenuti. Questo video esplora i vari metodi e le relative funzionalità.
+description: Adobe Experience Manager Sites offre diverse opzioni per la pubblicazione e l’annullamento della pubblicazione dei contenuti. Questo video esplora i vari metodi e le loro funzionalità.
 feature-set: Experience Manager
 version: 6.4, 6.5, Cloud Service
 kt: 4322
@@ -19,19 +19,19 @@ ht-degree: 1%
 
 # Pubblicazione delle pagine {#using-publication-management-with-aem-sites}
 
-AEM Sites offre diverse opzioni per la pubblicazione e l’annullamento della pubblicazione dei contenuti. Questo video esplora i vari metodi e le relative funzionalità.
+AEM Sites offre diverse opzioni per la pubblicazione e l’annullamento della pubblicazione dei contenuti. Questo video esplora i vari metodi e le loro funzionalità.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32193?quality=12&learn=on)
 
 AEM Sites fornisce diversi metodi per pubblicare e annullare la pubblicazione dei contenuti, in base al flusso di lavoro dell’autore.
 
 * Pubblicazione della pagina corrente dall’Editor pagina di AEM Sites
-   * Pubblica la pagina corrente e consente la selezione facoltativa di riferimenti
+   * Pubblica la pagina corrente e consente la selezione facoltativa dei riferimenti
    * Annullare la pubblicazione della pagina corrente
 * Pubblicazione rapida dall’amministratore di AEM Sites
-   * Pubblicazione con un solo clic delle pagine selezionate e pubblicazione automatica di tutti i riferimenti non pubblicati
+   * Pubblicazione con un clic delle pagine selezionate e pubblicazione automatica di tutti i riferimenti non pubblicati
 * Gestisci pubblicazione dall’amministratore di AEM Sites
-   * Console affidabile per la gestione dettagliata dei contenuti di pubblicazione in blocco e di annullamento della pubblicazione.
+   * Solida console per la gestione dettagliata dei contenuti in blocco, sia per la pubblicazione che per l’annullamento della pubblicazione.
 
 ## Risorse aggiuntive {#additional-resources}
 

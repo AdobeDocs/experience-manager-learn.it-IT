@@ -1,6 +1,6 @@
 ---
 title: Memorizzazione e recupero dei dati del modulo dal database MySQL - Configura origine dati
-description: Esercitazione in più parti per illustrare i passaggi necessari per memorizzare e recuperare i dati dei moduli
+description: Tutorial in più parti per illustrare i passaggi necessari per l’archiviazione e il recupero dei dati del modulo
 version: 6.4,6.5
 feature: Adaptive Forms
 topic: Development
@@ -16,23 +16,23 @@ ht-degree: 4%
 
 # Configura origine dati
 
-Esistono diversi modi con cui AEM abilitare l’integrazione con il database esterno. Una delle pratiche più comuni e standard dell&#39;integrazione del database è l&#39;utilizzo delle proprietà di configurazione DataSource in pool di connessione Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
-Il primo passaggio consiste nel scaricare e distribuire il [Driver MySql](https://mvnrepository.com/artifact/mysql/mysql-connector-java) in AEM.
-Crea un’origine dati in pool di connessione Apache Sling e fornisci le proprietà specificate nella schermata sottostante. Lo schema di database viene fornito come parte di questa esercitazione risorse.
+Esistono molti modi in cui l’AEM consente l’integrazione con il database esterno. Una delle procedure più comuni e standard per l’integrazione del database è l’utilizzo delle proprietà di configurazione dell’origine dati in pool di connessione Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
+Il primo passaggio consiste nel scaricare e implementare la [Driver MySql](https://mvnrepository.com/artifact/mysql/mysql-connector-java) nell&#39;AEM.
+Crea un’origine dati in pool di connessione Apache Sling e fornisci le proprietà come specificato nella schermata seguente. Lo schema di database viene fornito come parte di queste risorse di esercitazione.
 
-![sorgente dati](assets/save-continue.PNG)
+![data-source](assets/save-continue.PNG)
 
-Nel database è presente una tabella denominata formdata con le 3 colonne mostrate nella schermata sottostante.
+Database dispone di una tabella denominata formdata con le tre colonne, come illustrato nella schermata seguente.
 
-![base dati](assets/data-base-tables.PNG)
+![database](assets/data-base-tables.PNG)
 
-Il file sql per creare lo schema può essere [scaricato da qui](assets/form-data-db.sql). Per creare lo schema e la tabella, è necessario importare il file utilizzando Workbench di MySql.
+Il file SQL per creare lo schema può essere [scaricato da qui](assets/form-data-db.sql). Per creare lo schema e la tabella, è necessario importare il file utilizzando MySql Workbench.
 
 >[!NOTE]
->Assicurati di assegnare un nome alla tua origine dati **SaveAndContinue**. Il codice di esempio utilizza il nome per connettersi al database.
+>Assegna un nome all’origine dati **SaveAndContinue**. Il codice di esempio utilizza il nome per connettersi al database.
 
 | Nome proprietà | Valore |
 | ------------------------|---------------------------------------|
 | Nome origine dati | SaveAndContinue |
 | Classe driver JDBC | com.mysql.cj.jdbc.Driver |
-| URI di connessione JDBC | jdbc:mysql://localhost:3306/aemformstutorial |
+| URI connessione JDBC | jdbc:mysql://localhost:3306/aemformstutorial |

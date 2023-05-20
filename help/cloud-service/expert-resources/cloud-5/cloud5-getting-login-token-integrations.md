@@ -1,6 +1,6 @@
 ---
-title: Ottenimento di un token di accesso per le integrazioni
-description: Una guida dettagliata su come ottenere un token di accesso per le integrazioni di Cloud Service e alcuni casi d’uso per farlo.
+title: Ottenere un token di accesso per le integrazioni
+description: Una guida approfondita su come ottenere un token di accesso per le integrazioni di Cloud Service e alcuni casi d’uso.
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -15,20 +15,20 @@ ht-degree: 0%
 
 ---
 
-# Ottenimento di un token di accesso per le integrazioni
+# Ottenere un token di accesso per le integrazioni
 
-Una guida dettagliata su come ottenere un token di accesso per le integrazioni di Cloud Service e alcuni casi d’uso per farlo.
+Una guida approfondita su come ottenere un token di accesso per le integrazioni di Cloud Service e alcuni casi d’uso.
 
 >[!VIDEO](https://video.tv.adobe.com/v/341277?quality=12&learn=on)
 
 ## Contenuto trattato in questo video
 
-+ Metodi di accesso predefiniti per l’integratore di sistema
-   + token di accesso locali
-   + token dell’account di servizio
-+ Integrazioni della console per sviluppatori
-   + Profili appropriati per accedere a json
-+ Verifica dell’account tecnico
++ Metodi di accesso predefiniti di System Integrator
+   + token di accesso locale
+   + token dell’account del servizio
++ &quot;Integrazioni&quot; della console per sviluppatori
+   + Profili appropriati per accedere a JSON
++ Verifica tecnica dell’account
 + Utilizzo semplice di un token generato
 
-Per un&#39;occhiata più dettagliata su questo argomento, puoi fare riferimento all&#39;esercitazione su [autenticazione basata su token](/help/headless-tutorial/authentication/overview.md).
+Per informazioni più dettagliate su questo argomento, consulta l’esercitazione su [autenticazione basata su token](/help/headless-tutorial/authentication/overview.md).

@@ -1,6 +1,6 @@
 ---
-title: Automazione dei contenuti con servizi di Creative Cloud
-description: Applica le funzionalità Photoshop e Lightroom con l’automazione dei contenuti di Adobe Experience Manager Assets.
+title: Automazione dei contenuti con i servizi Creative Cloud
+description: Applicare le funzionalità di Photoshop e Lightroom con Adobe Experience Manager Assets Content Automation.
 version: Cloud Service
 topic: Content Management
 feature: Asset Processing, Renditions
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Panoramica dell’automazione dei contenuti con i servizi Creative Cloud
 
-Una panoramica applica le funzionalità Photoshop e Lightroom con l’automazione dei contenuti di Adobe Experience Manager Assets.
+Panoramica sull’applicazione delle funzionalità di Photoshop e Lightroom con Adobe Experience Manager Assets Content Automation.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333197?quality=12&learn=on)

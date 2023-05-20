@@ -1,5 +1,5 @@
 ---
-title: Crea interfaccia servizio
+title: Crea interfaccia di servizio
 description: Definisci i metodi nell’interfaccia da esporre
 solution: Experience Manager
 type: Documentation
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # Interfaccia
 
-Crea un&#39;interfaccia con le seguenti 2 definizioni di metodi.
+Creare un&#39;interfaccia con le seguenti due definizioni di metodo.
 
 ```java
 package com.aemforms.doccloud.core;

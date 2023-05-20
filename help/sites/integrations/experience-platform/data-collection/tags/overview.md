@@ -1,6 +1,6 @@
 ---
-title: Integrazione dei tag di raccolta dati di Experience Platform (Launch) e dei AEM
-description: I tag nella raccolta dati di Experience Platform sono la soluzione di gestione tag di nuova generazione di Adobe e il modo migliore per distribuire Adobe Analytics, Target, Audience Manager e molte altre soluzioni. Ottieni una panoramica dei tag (precedentemente noti come Launch) e dell’integrazione consigliata con Adobe Experience Manager.
+title: Integrazione dei tag di raccolta dati Experience Platform (Launch) e AEM
+description: I tag in Raccolta dati di Experience Platform sono la soluzione di gestione dei tag di nuova generazione di Adobe e il modo migliore per distribuire Adobe Analytics, Target, Audience Manager e molte altre soluzioni. Ottieni una panoramica dei Tag (noti in precedenza come Launch) e dell’integrazione consigliata con Adobe Experience Manager.
 topics: integrations
 audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
@@ -20,35 +20,35 @@ ht-degree: 2%
 
 ---
 
-# Integrazione dei tag e dei AEM di raccolta dati di Experience Platform {#overview}
+# Integrazione dei tag di raccolta dati Experience Platform e AEM {#overview}
 
-Scopri come integrare l’Experience Platform _Tag per la raccolta dati_ (precedentemente noto come Launch) con Adobe Experience Manager.
+Scopri come integrare l’Experience Platform _Tag di raccolta dati_ (precedentemente noto come Launch) con Adobe Experience Manager.
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch è stato classificato come una suite di tecnologie di raccolta dati in Adobe Experience Platform. Di conseguenza, sono state introdotte diverse modifiche terminologiche nella documentazione del prodotto. Consulta quanto segue [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) per un riferimento consolidato delle modifiche terminologiche.
+>Adobe Experience Platform Launch è stato ridefinito come suite di tecnologie di raccolta dati in Adobe Experience Platform. Di conseguenza, sono state introdotte diverse modifiche terminologiche nella documentazione del prodotto. Fai riferimento a quanto segue [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) per un riferimento consolidato delle modifiche terminologiche.
 
 
-I tag sono la tecnologia di nuova generazione di Adobe Experience Platform per la gestione dei tag. I tag forniscono il modo più semplice per implementare Adobe Analytics, Target, Audience Manager e molte altre soluzioni. Panoramica dei tag e dell’integrazione consigliata con Adobe Experience Manager.
+I tag sono la tecnologia di nuova generazione di Adobe Experience Platform per la gestione dei tag. I tag forniscono il modo più semplice per distribuire Adobe Analytics, Target, Audience Manager e molte altre soluzioni. Ottieni una panoramica dei tag e dell’integrazione consigliata con Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3417061?quality=12&learn=on)
 
 
 ## Prerequisiti
 
-Quando si integrano i tag di raccolta dati di Experience Platform, sono necessari i seguenti elementi:
+Per l’integrazione dei tag di raccolta dati Experience Platform sono necessari i seguenti elementi.
 
-+ Accesso AEM amministratore all’ambiente as a Cloud Service AEM
++ Accesso dell’amministratore AEM all’ambiente as a Cloud Service AEM
 + Un sito di riferimento come [WKND](https://github.com/adobe/aem-guides-wknd) implementato su di esso.
-+ Accesso alla soluzione Adobe Experience Platform Data Collection
-+ Accesso dell&#39;amministratore di sistema a [Console Adobe Developer](https://developer.adobe.com/developer-console/)
++ Accesso alla soluzione di raccolta dati Adobe Experience Platform
++ Accesso amministratore di sistema a [Console Adobe Developer](https://developer.adobe.com/developer-console/)
 
 
-## Fasi di alto livello
+## Passaggi di alto livello
 
-+ In Raccolta dati di Adobe Experience Platform, crea una proprietà Tag e modificala in _Aggiungi regola_. Then _Aggiungi libreria_, seleziona la regola appena aggiunta, approvala e pubblicala.
-+ Collegare AEM e tag utilizzando la configurazione IMS esistente (o nuova)
-+ In AEM, crea una configurazione di Launch Cloud Services, quindi applicala a un sito esistente e infine verifica che la proprietà Tags e le relative librerie siano caricate sul sito Pubblicato o Autore.
++ In Raccolta dati di Adobe Experience Platform, crea una proprietà Tag e modificala in _Aggiungi regola_. Then _Aggiungi libreria_, seleziona la regola appena aggiunta, la approva e la pubblica.
++ Connettere AEM e tag utilizzando la configurazione IMS esistente (o nuova)
++ In AEM, crea una configurazione Launch per i servizi cloud, applicala a un sito esistente e infine verifica che la proprietà Tags e le relative librerie siano caricate sul sito Published o Author.
 
 ## Passaggi successivi
 
@@ -56,6 +56,6 @@ Quando si integrano i tag di raccolta dati di Experience Platform, sono necessar
 
 ## Risorse aggiuntive {#additional-resources}
 
-+ [Integrazioni di Experience Platform con le applicazioni Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
++ [Integrazioni Experience Platform con applicazioni Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
 + [Panoramica sui tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [Implementazione dell’Experience Cloud nei siti web con tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html)
++ [Implementazione dell’Experience Cloud nei siti web con i tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html)

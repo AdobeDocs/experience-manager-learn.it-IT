@@ -1,6 +1,6 @@
 ---
 title: Nozioni di base sullo sviluppo dei servizi OSGi
-description: Scopri le basi dello sviluppo di un servizio OSGi
+description: Informazioni di base sullo sviluppo di un servizio OSGi
 role: Developer
 level: Beginner
 topic: Development
@@ -18,10 +18,10 @@ ht-degree: 1%
 
 # Servizi OSGi
 
-Scopri le basi dello sviluppo dei servizi OSGi, tra cui:
+Scopri le nozioni di base sullo sviluppo dei servizi OSGi, tra cui:
 
 + Come convertire un Java POJO in un servizio OSGi
-+ Come collegare un servizio OSGi a un&#39;interfaccia Java
++ Associare un servizio OSGi a un’interfaccia Java
 
 >[!VIDEO](https://video.tv.adobe.com/v/335476?quality=12&learn=on)
 

@@ -1,7 +1,7 @@
 ---
-title: AEM Forms con schema e dati JSON[Parte 1]
+title: AEM Forms con schema JSON e dati[Parte 1]
 seo-title: AEM Forms with JSON Schema and Data[Part1]
-description: Esercitazione in più parti per illustrarti i passaggi necessari per creare un modulo adattivo con schema JSON e per eseguire query sui dati inviati.
+description: Tutorial in più parti per illustrare i passaggi necessari per creare un modulo adattivo con schema JSON e interrogare i dati inviati.
 seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
 topics: development
@@ -20,20 +20,20 @@ ht-degree: 0%
 
 ---
 
-# Creare un modulo adattivo basato su uno schema JSON
+# Creare un modulo adattivo basato sullo schema JSON
 
 
-Con AEM Forms 6.3 è stata introdotta la possibilità di creare Forms adattivo basato sullo schema JSON. I dettagli sulla creazione di Forms adattivo con schema JSON sono descritti in dettaglio in questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html).
+Con la versione 6.3 di AEM Forms è stata introdotta la possibilità di creare Forms adattivo basato sullo schema JSON. I dettagli sulla creazione di Forms adattivo con schema JSON sono illustrati in dettaglio in questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html).
 
-Una volta creato un modulo adattivo basato sullo schema JSON, il passaggio successivo consiste nell’archiviare i dati inviati nel database. A questo scopo utilizzeremo il nuovo tipo di dati JSON introdotto da vari fornitori di database. Ai fini di questo articolo utilizzeremo il database MySql 8 per memorizzare i dati inviati.
+Dopo aver creato un modulo adattivo basato sullo schema JSON, il passaggio successivo consiste nell’archiviare i dati inviati nel database. A questo scopo utilizzeremo il nuovo tipo di dati JSON introdotto da vari fornitori di database. Ai fini del presente articolo utilizzeremo il database MySql 8 per memorizzare i dati inviati.
 
-Database MySql 8 utilizzato per questo articolo. MySQL ha introdotto un nuovo tipo di dati denominato [JSON](https://dev.mysql.com/doc/refman/8.0/en/json.html). Questo semplifica l’archiviazione e la query degli oggetti JSON. Stiamo memorizzando i dati inviati in una colonna di tipo JSON nel nostro database.
+Database MySql 8 utilizzato per questo articolo. MySQL ha introdotto un nuovo tipo di dati denominato [JSON](https://dev.mysql.com/doc/refman/8.0/en/json.html). In questo modo è più semplice archiviare ed eseguire query sugli oggetti JSON. I dati inviati vengono memorizzati in una colonna di tipo JSON nel database.
 
-La schermata seguente mostra i dati del modulo inviati memorizzati nel tipo di dati JSON. La colonna &quot;formdata&quot; è di tipo JSON. Abbiamo inoltre memorizzato il nome del modulo associato ai dati nel nome del modulo della colonna
+La schermata seguente mostra i dati del modulo inviati memorizzati nel tipo di dati JSON. La colonna &quot;formdata&quot; è di tipo JSON. Il nome del modulo associato ai dati è stato inoltre memorizzato nella colonna nomemodulo
 
 >[!NOTE]
 >
->Assicurati che il file di schema json sia denominato in modo appropriato. Ad esempio, deve essere denominato nel seguente formato &lt;name>schema.json. Quindi il file di schema può essere mutuo.schema.json o credit.schema.json.
+>Assicurati che il file dello schema JSON sia denominato in modo appropriato. Ad esempio, deve essere denominato nel seguente formato &lt;name>schema.json. Pertanto, il file dello schema può essere mortgage.schema.json o credit.schema.json.
 
 
 ![datastore](assets/datastored.gif)

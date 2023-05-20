@@ -1,5 +1,5 @@
 ---
-title: Crea un file swagger per descrivere l’API REST di Salesforce
+title: Crea un file Swagger per descrivere l’API REST di Salesforce
 description: Il file Swagger definirà gli endpoint API e i parametri di input e output
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
@@ -20,8 +20,8 @@ ht-degree: 0%
 
 # Crea file Swagger
 
-Descrivi l’API REST di Salesforce utilizzando la specifica [OPEN API 2.0](https://swagger.io/docs/specification/2-0/basic-structure/)
+Descrivi l’API REST di Salesforce utilizzando [SPECIFICA OPEN API 2.0](https://swagger.io/docs/specification/2-0/basic-structure/)
 
 >[!VIDEO](https://video.tv.adobe.com/v/331754?quality=12&learn=on)
 
-Il file swagger può essere scaricato è [disponibile qui](assets/sfdc-rest-swagger.zip)
+Il file Swagger può essere scaricato è [disponibile qui](assets/sfdc-rest-swagger.zip)

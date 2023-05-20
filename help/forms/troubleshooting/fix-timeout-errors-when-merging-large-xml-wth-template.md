@@ -1,6 +1,6 @@
 ---
-title: Correggere gli errori di timeout durante l'unione di file di dati xml di grandi dimensioni con il modello xdp
-description: Unisci file xml di grandi dimensioni con un modello in AEM Forms
+title: Correggere gli errori di timeout durante l’unione di file di dati XML di grandi dimensioni con un modello XDP
+description: Unione di file XML di grandi dimensioni con un modello in AEM Forms
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -8,36 +8,37 @@ version: 6.5
 feature: Output Service,Forms Service
 topic: Administration
 kt: 11091
-source-git-commit: 164741ce5ae7d00f904365589438c2eaaf1e05db
+exl-id: 933ec5f6-3e9c-4271-bc35-4ecaf6dbc434
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 5%
 
 ---
 
-# Come abilitare la creazione di file pdf unendo file di dati xml di grandi dimensioni con modelli xdp
+# Come abilitare la creazione di file PDF unendo file di dati XML di grandi dimensioni con modelli XDP
 
-Quando si uniscono file di dati xml di grandi dimensioni con il modello xdp, si può vedere il seguente errore nel file di log
+Quando si uniscono file di dati XML di grandi dimensioni con un modello XDP, è possibile che nel file di registro venga visualizzato il seguente errore
 
 ```txt
 POST /services/OutputService/GeneratePdfOutput HTTP/1.1] com.adobe.fd.output.internal.exception.OutputServiceException AEM_OUT_001_003:Unexpected Exception: client timeout reached org.omg.CORBA.TIMEOUT: client timeout reached
 ```
 
-Per correggere l&#39;errore precedente, procedi come segue
+Per correggere l&#39;errore precedente, eseguire le operazioni seguenti
 
-## Modificare il timeout delle variabili
+## Modificare il timeout di aries
 
-* Arresta AEM server
+* Arresta server AEM
 * Crea una cartella denominata **installare** nella cartella crx-quickstart dell&#39;installazione AEM
-* Crea un file denominato **org.apache.aries.transaction.config** con il seguente contenuto aries.transaction.timeout=&quot;1200&quot; nella cartella di installazione. Puoi modificare il valore del timeout in base alle tue esigenze. Il valore di timeout è espresso in secondi
+* Crea un file denominato **org.apache.aries.transaction.config** con i seguenti contenuti aries.transaction.timeout=&quot;1200&quot; nella cartella di installazione. Puoi modificare il valore di timeout in base alle tue esigenze. Il valore di timeout è in secondi
 
 >[!NOTE]
-> Una volta creata la configurazione org.apache.aries.transaction, puoi modificare i valori di timeout della transazione dalla [configMgr](http://localhost:4502/system/console/configMgr) invece di modificare il file
+> Una volta creata la configurazione org.apache.aries.transaction, è possibile modificare i valori di timeout della transazione da [configMgr](http://localhost:4502/system/console/configMgr) invece di modificare il file
 
 
 ## Modificare le impostazioni del provider Jacorb ORB
 
 * [Apri OSGi ConfigMgr](http://localhost:4502/system/console/configMgr)
 * Cerca **Provider ORB Jacorb**
-* Aggiungi la seguente voce jacorb.connection.client.pending_reply_timeout=600000 L&#39;impostazione precedente imposta il timeout della risposta in sospeso (noto anche come timeout client CORBA) a 600 secondi.
+* Aggiungi la voce seguente jacorb.connection.client.pending_reply_timeout=600000 L’impostazione precedente imposta su 600 secondi il timeout della risposta in sospeso (noto anche come timeout del client CORBA).
 * Salva le modifiche

@@ -1,6 +1,6 @@
 ---
-title: Guida introduttiva a AEM Headless - GraphQL
-description: Scopri le API GraphQL di Experience Manager e le relative funzionalità.
+title: Guida introduttiva a AEM headless - GraphQL
+description: Scopri le API GraphQL di Experience Manager e le loro funzionalità.
 feature: Content Fragments, GraphQL API, APIs
 topic: Headless, Content Management
 role: Developer
@@ -17,18 +17,18 @@ ht-degree: 11%
 
 # Guida introduttiva ad AEM Headless: GraphQL {#getting-started-with-aem-headless}
 
-AEM le API GraphQL per i frammenti di contenuto supporta scenari CMS headless in cui le applicazioni client esterne eseguono il rendering delle esperienze utilizzando contenuti gestiti in AEM.
+Le API GraphQL dell’AEM per i frammenti di contenuto supportano scenari CMS headless in cui le applicazioni client esterne eseguono il rendering di esperienze utilizzando contenuti gestiti in AEM.
 
-Un’API di distribuzione dei contenuti moderna è fondamentale per l’efficienza e le prestazioni delle applicazioni front-end basate su Javascript. L’utilizzo di un’API REST comporta delle sfide:
+Una moderna API di distribuzione dei contenuti è fondamentale per l’efficienza e le prestazioni delle applicazioni front-end basate su JavaScript. L’utilizzo di un’API REST presenta alcune difficoltà:
 
-* Numerose richieste per il recupero di un oggetto alla volta
-* Spesso il contenuto viene &quot;consegnato in eccesso&quot;, il che significa che l’applicazione riceve più di quanto necessario
+* Numero elevato di richieste per il recupero di un oggetto alla volta
+* Contenuti spesso &quot;in eccesso&quot;, ovvero l’applicazione riceve più del necessario
 
-Per superare queste sfide, GraphQL fornisce un’API basata su query che consente ai clienti di eseguire query AEM solo per il contenuto necessario e di ricevere utilizzando una singola chiamata API.
+Per superare queste sfide, GraphQL fornisce un’API basata su query che consente ai clienti di eseguire query sull’AEM solo per il contenuto di cui hanno bisogno e di ricevere utilizzando una singola chiamata API.
 
 >[!VIDEO](https://video.tv.adobe.com/v/328618?quality=12&learn=on)
 
-Questo video è una panoramica dell’API GraphQL implementata in AEM. L’API GraphQL in AEM è progettata principalmente per distribuire frammenti di contenuto AEM alle applicazioni downstream come parte di un’implementazione headless.
+Questo video offre una panoramica dell’API GraphQL implementata nell’AEM. L’API GraphQL nell’AEM è progettata principalmente per distribuire i frammenti di contenuto AEM alle applicazioni a valle come parte di una distribuzione headless.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_headless_graphql_overview"
@@ -36,23 +36,23 @@ Questo video è una panoramica dell’API GraphQL implementata in AEM. L’API G
 >abstract="Scopri come distribuire frammenti di contenuto utilizzando GraphQL."
 >additional-url="https://video.tv.adobe.com/v/328618/?captions=ita" text="Panoramica di GraphQL in AEM"
 
-## AEM serie video GraphQL headless
+## Serie video GraphQL headless AEM
 
-Scopri AEM funzionalità di GraphQL tramite la dettagliata documentazione sui frammenti di contenuto e le API e gli strumenti di sviluppo di GraphQL AEM.
+Scopri le funzionalità di GraphQL per l’AEM tramite la procedura dettagliata dettagliata per frammenti di contenuto, API di GraphQL per l’AEM e strumenti di sviluppo.
 
-* [AEM serie video GraphQL headless](./video-series/modeling-basics.md)
+* [Serie video GraphQL headless AEM](./video-series/modeling-basics.md)
 
-## Tutorial AEM senza testa di GraphQL
+## Tutorial pratico su GraphQL headless AEM
 
-Scopri AEM funzionalità di GraphQL creando un’app React che consuma frammenti di contenuto tramite AEM API GraphQL.
+Esplora le funzionalità del GraphQL AEM creando un’app React che utilizza frammenti di contenuto tramite API GraphQL AEM.
 
-* [Tutorial AEM senza testa di GraphQL](./multi-step/overview.md)
+* [Tutorial pratico su GraphQL headless AEM](./multi-step/overview.md)
 
-## AEM GraphQL e servizi di contenuti AEM
+## GraphQL AEM e servizi di contenuti AEM
 
-|  | API di GraphQL AEM | AEM Content Services |
+|  | API GraphQL dell’AEM | Servizi di contenuti AEM |
 |--------------------------------|:-----------------|:---------------------|
-| Definizione dello schema | Modelli per frammenti di contenuto strutturati | Componenti AEM |
+| Definizione schema | Modelli per frammenti di contenuto strutturati | Componenti AEM |
 | Contenuto | Frammenti di contenuto | Componenti AEM |
-| Ricerca dei contenuti | Query per GraphQL | Per AEM pagina |
-| Formato di consegna | JSON GraphQL | JSON AEM ComponentExporter |
+| Individuazione dei contenuti | Query basata su GraphQL | Per pagina AEM |
+| Formato di consegna | JSON GRAPHQL | JSON per l’esportazione di componenti AEM |

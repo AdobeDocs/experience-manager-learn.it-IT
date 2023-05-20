@@ -1,6 +1,6 @@
 ---
 title: Panoramica della gestione multisito in AEM Sites
-description: Il video seguente fornisce una panoramica dei concetti di base della gestione multisito in AEM Sites.
+description: Il video seguente offre una panoramica dei concetti di base della gestione multisito in AEM Sites.
 feature: language-copy, live-copy, multi-site-manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Panoramica della gestione multisito
 
-Il video seguente fornisce una panoramica dei concetti di base della gestione multisito in AEM Sites.
+Il video seguente offre una panoramica dei concetti di base della gestione multisito in AEM Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33594?quality=12&learn=on)

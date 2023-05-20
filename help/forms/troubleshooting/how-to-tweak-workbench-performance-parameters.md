@@ -1,6 +1,6 @@
 ---
 title: Come modificare i parametri delle prestazioni di Workbench
-description: Passaggi per modificare i parametri delle prestazioni di Workbench
+description: Passaggi per modificare i parametri delle prestazioni del workbench
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Come modificare i parametri delle prestazioni di Workbench
 
-*Questo video illustra il processo per modificare i parametri delle prestazioni di Workbench .*
+*Questo video illustra il processo di modifica dei parametri delle prestazioni di Workbench.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335511?quality=12&learn=on)

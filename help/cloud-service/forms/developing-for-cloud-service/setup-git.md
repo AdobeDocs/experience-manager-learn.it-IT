@@ -16,27 +16,27 @@ ht-degree: 0%
 
 ---
 
-# Installa Git
+# Installare Git
 
 
-[Installa Git](https://git-scm.com/downloads). È possibile selezionare le impostazioni predefinite e completare il processo di installazione.
-Vai al prompt dei comandi Vai a c:\cloudmanager\aem-banking-app type in git —version. Dovresti vedere la versione di GIT installata sul tuo sistema
+[Installare Git](https://git-scm.com/downloads). È possibile selezionare le impostazioni predefinite e completare il processo di installazione.
+Vai al prompt dei comandi e passa a c:\cloudmanager\aem-banking-app type in git —version. Dovresti visualizzare la versione di GIT installata nel sistema
 
 ## Inizializza archivio Git locale
 
-Assicurati di essere nella c:\cloudmanager\aem-banking-app folder
+Verifica di trovarti nella cartella c:\cloudmanager\aem-banking-app
 
 ```
 git init
 ```
 
-Il comando precedente inizializza il progetto come archivio locale git
+Il comando precedente inizializzerà il progetto come archivio locale Git
 
 ```
 git add .
 ```
 
-In questo modo tutti i file di progetto vengono aggiunti all’archivio Git, pronto per il commit nell’archivio Git
+In questo modo tutti i file di progetto vengono aggiunti all’archivio Git pronto per il commit nell’archivio Git
 
 ```
 git commit -m "initial commit"
@@ -46,10 +46,10 @@ In questo modo i file vengono inviati all’archivio Git
 
 
 
-## Registra l’archivio cloud manager con il nostro archivio Git locale
+## Registrare l’archivio di Cloud Manager con il nostro archivio Git locale
 
-Accedere al repository di cloud manager
-![accedere alle informazioni del rep](assets/cloud-manager-repo.png)
+Accedere all’archivio di cloud manager
+![accedere alle informazioni sulla rappresentazione](assets/cloud-manager-repo.png)
 Ottieni le credenziali dell’archivio di Cloud Manager
 ![get-credentials](assets/cloud-manager-repo1.png)
 
@@ -65,18 +65,18 @@ salva la password nel file di configurazione
 git config --global user.password "XXXX"
 ```
 
-(La password è la password dell’archivio Git di cloud manager)
+(la password è la password dell’archivio Git di Cloud Manager)
 
-Registra l’archivio Git di cloud manager con il tuo archivio Git locale. Il comando sottostante associa **bankapp** con l’archivio git di cloud manager remoto. Avreste potuto usare un nome qualsiasi invece di **bankapp**
+Registra l’archivio Git di Cloud Manager con l’archivio Git locale. Il comando seguente associa **bankingapp** con l’archivio git di cloud manager remoto. Avresti potuto usare un nome qualsiasi al posto di **bankingapp**
 
 
 ```shell
 git remote add bankingapp https://git.cloudmanager.adobe.com/<cloud-manager-repo-path>
 ```
 
-(Assicurati di utilizzare l&#39;URL del tuo archivio)
+(Assicurati di utilizzare l’URL dell’archivio)
 
-Controlla se l&#39;archivio remoto è registrato
+Verifica se l’archivio remoto è registrato
 
 ```java
 git remote -v

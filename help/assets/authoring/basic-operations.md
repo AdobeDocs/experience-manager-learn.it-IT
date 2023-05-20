@@ -1,6 +1,6 @@
 ---
 title: Operazioni di base
-description: Scopri le operazioni di base di AEM Assets e come creare cartelle, nonché caricare, copiare, spostare ed eliminare risorse.
+description: Scopri le operazioni di base di AEM Assets, tra cui come creare cartelle, nonché caricare, copiare, spostare ed eliminare risorse.
 feature: Asset Management
 role: User
 level: Beginner
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Operazioni di base
 
-Scopri le operazioni di base di AEM Assets e come creare cartelle, nonché caricare, copiare, spostare ed eliminare risorse.
+Scopri le operazioni di base di AEM Assets, tra cui come creare cartelle, nonché caricare, copiare, spostare ed eliminare risorse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32044?quality=12&learn=on)

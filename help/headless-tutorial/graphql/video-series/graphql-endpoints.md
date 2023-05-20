@@ -1,6 +1,6 @@
 ---
 title: Endpoint GraphQL
-description: Scopri come abilitare, eseguire query su e pubblicare e proteggere gli endpoint GraphQL.
+description: Scopri come abilitare, eseguire query e pubblicare e proteggere endpoint di GraphQL.
 version: Cloud Service
 topic: Headless, Content Management
 feature: Content Fragments, GraphQL API
@@ -19,12 +19,12 @@ ht-degree: 0%
 
 # Endpoint GraphQL
 
-Scopri come abilitare, eseguire query su e pubblicare e proteggere gli endpoint GraphQL.
+Scopri come abilitare, eseguire query e pubblicare e proteggere endpoint di GraphQL.
 
 In questo video:
 
-+ Scopri come abilitare gli endpoint GraphQL
-+ Scopri come eseguire query GraphQL contro gli endpoint
-+ Come pubblicare gli endpoint GraphQL
++ Scopri come abilitare gli endpoint di GraphQL
++ Scopri come eseguire query GraphQL sugli endpoint
++ Come pubblicare gli endpoint di GraphQL
 
 >[!VIDEO](https://video.tv.adobe.com/v/333339?quality=12&learn=on)

@@ -1,5 +1,5 @@
 ---
-title: Filtri del Dispatcher per AEM GraphQL
+title: Filtri di Dispatcher per AEM GraphQL
 description: Scopri come configurare i filtri di AEM Publish Dispatcher per l’utilizzo con AEM GraphQL.
 version: Cloud Service
 feature: GraphQL API
@@ -8,38 +8,38 @@ role: Developer, Architect
 level: Intermediate
 kt: 10829
 thumbnail: kt-10829.jpg
-source-git-commit: 442020d854d8f42c5d8a1340afd907548875866e
+exl-id: b76b7c46-5cbd-4039-8fd6-9f0f10a4a84f
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 2%
 
 ---
 
-
 # Filtri del Dispatcher
 
-Adobe Experience Manager as a Cloud Service utilizza i filtri AEM Publish Dispatcher per garantire solo le richieste che devono raggiungere AEM raggiungere AEM di portata. Per impostazione predefinita, tutte le richieste sono negate e i pattern per gli URL consentiti devono essere aggiunti esplicitamente.
+Adobe Experience Manager as a Cloud Service utilizza i filtri del Dispatcher di pubblicazione di AEM per garantire che solo le richieste che devono raggiungere l’AEM raggiungano l’AEM. Per impostazione predefinita, tutte le richieste sono negate e i modelli per gli URL consentiti devono essere aggiunti esplicitamente.
 
 | Tipo di client | [App a pagina singola (SPA)](../spa.md) | [Componente Web/JS](../web-component.md) | [Mobile](../mobile.md) | [Server-to-server](../server-to-server.md) |
 |------------------------------------------:|:---------------------:|:----------------:|:---------:|:----------------:|
-| Richiede la configurazione dei filtri del Dispatcher | ↓ | ↓ | ↓ | ↓ |
+| Richiede la configurazione dei filtri di Dispatcher | ✔ | ✔ | ✔ | ✔ |
 
 >[!TIP]
 >
-> Di seguito sono riportati alcuni esempi di configurazioni. Assicurati di regolarli per allinearli ai requisiti del progetto.
+> Le seguenti configurazioni sono esempi. Assicurati di regolarli per allinearli ai requisiti del progetto.
 
-## Configurazione del filtro del Dispatcher
+## Configurazione del filtro di Dispatcher
 
-La configurazione del filtro AEM Publish Dispatcher definisce i pattern URL consentiti per raggiungere AEM e deve includere il prefisso URL per l’endpoint di query AEM persistente.
+La configurazione del filtro del Dispatcher di pubblicazione di AEM definisce i pattern di URL consentiti per raggiungere l’AEM e deve includere il prefisso URL per l’endpoint di query persistente dell’AEM.
 
-| Il client si connette a | Autore AEM | AEM Publish | Anteprima AEM |
+| Il client si collega a | Autore AEM | AEM Publish | Anteprima AEM |
 |------------------------------------------:|:----------:|:-------------:|:-------------:|
-| Richiede la configurazione dei filtri del Dispatcher | ✘ | ↓ | ↓ |
+| Richiede la configurazione dei filtri di Dispatcher | ✘ | ✔ | ✔ |
 
-Aggiungi un `allow` regola con il pattern URL `/graphql/execute.json/*`, e assicurati l&#39;ID del file (ad esempio `/0600`, è univoco nel file farm di esempio).
-Ciò consente la richiesta HTTP GET all’endpoint della query persistente, ad esempio `HTTP GET /graphql/execute.json/wknd-shared/adventures-all` da ad AEM Publish.
+Aggiungi un `allow` regola con il pattern URL `/graphql/execute.json/*`, e garantire l&#39;ID file (ad esempio `/0600`, è univoco nel file farm di esempio).
+Questo consente la richiesta HTTP GET all’endpoint di query persistente, ad esempio `HTTP GET /graphql/execute.json/wknd-shared/adventures-all` fino a AEM Publish.
 
-Se utilizzi i frammenti esperienza nell’esperienza AEM headless, procedi allo stesso modo per questi percorsi.
+Se utilizzi Frammenti di esperienza nell’esperienza AEM headless, procedi allo stesso modo per questi percorsi.
 
 + `dispatcher/src/conf.dispatcher.d/filters/filters.any`
 
@@ -54,4 +54,4 @@ Se utilizzi i frammenti esperienza nell’esperienza AEM headless, procedi allo 
 
 ### Esempio di configurazione dei filtri
 
-+ [Un esempio del filtro Dispatcher si trova nel progetto WKND.](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.dispatcher.d/filters/filters.any#L28)
++ [Un esempio del filtro di Dispatcher è disponibile nel progetto WKND.](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.dispatcher.d/filters/filters.any#L28)

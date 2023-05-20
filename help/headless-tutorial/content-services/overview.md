@@ -1,5 +1,5 @@
 ---
-title: Guida introduttiva a AEM Headless - Content Services
+title: Guida introduttiva di Headless AEM - Content Services
 description: Un tutorial completo che illustra come creare ed esporre contenuti utilizzando AEM Headless.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
@@ -15,37 +15,37 @@ ht-degree: 6%
 
 # Guida introduttiva ad AEM Headless - Content Services
 
-AEM Content Services sfrutta le pagine AEM tradizionali per comporre endpoint API REST headless e AEM componenti definiscono o fanno riferimento al contenuto da esporre su questi endpoint.
+AEM Content Services sfrutta le pagine AEM tradizionali per comporre endpoint API REST headless; i componenti AEM definiscono o fanno riferimento al contenuto da esporre su tali endpoint.
 
-AEM Content Services consente di utilizzare le stesse astrazioni di contenuto utilizzate per creare pagine web in AEM Sites, per definire il contenuto e gli schemi di queste API HTTP. L’utilizzo di pagine AEM e componenti AEM consente agli addetti al marketing di comporre e aggiornare rapidamente API JSON flessibili che possono alimentare qualsiasi applicazione.
+AEM Content Services consente di utilizzare le stesse astrazioni di contenuto utilizzate per l’authoring di pagine web in AEM Sites, per definire il contenuto e gli schemi di queste API HTTP. L’utilizzo delle pagine AEM e dei componenti AEM consente agli addetti al marketing di comporre e aggiornare rapidamente API JSON flessibili in grado di alimentare qualsiasi applicazione.
 
 ## Tutorial su Content Services
 
-Un tutorial end-to-end che illustra come creare ed esporre contenuti utilizzando AEM e utilizzati da un’app mobile nativa, in uno scenario CMS headless.
+Un tutorial end-to-end che illustra come creare ed esporre contenuti utilizzando l’AEM e utilizzati da un’app mobile nativa, in uno scenario CMS headless.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28315?quality=12&learn=on)
 
-Questa esercitazione esplora come AEM Content Services può essere utilizzato per sviluppare l&#39;esperienza di un&#39;app mobile che visualizza informazioni sull&#39;evento (musica, prestazioni, arte, ecc.) che è curato dal team WKND.
+Questo tutorial esplora come utilizzare i servizi di contenuti AEM per potenziare l’esperienza di un’app mobile che visualizza informazioni sugli eventi (musica, prestazioni, immagini, ecc.) curata dal team WKND.
 
-Questa esercitazione tratterà i seguenti argomenti:
+Questo tutorial tratta i seguenti argomenti:
 
-* Creare contenuti che rappresentano un evento utilizzando frammenti di contenuto
-* Definire un punto finale AEM Content Services utilizzando i modelli e le pagine di AEM Sites che espongono i dati evento come JSON
-* Scopri come AEM i componenti core WCM possono essere utilizzati per consentire agli esperti di marketing di creare endpoint JSON
-* Utilizzare AEM JSON di Content Services da un’app mobile
-   * L&#39;utilizzo di Android è dovuto al fatto che dispone di un emulatore multipiattaforma che tutti gli utenti (Windows, macOS e Linux) di questa esercitazione possono utilizzare per eseguire l&#39;app nativa.
+* Creare contenuti che rappresentano un evento utilizzando Frammenti di contenuto
+* Definire un endpoint di AEM Content Services utilizzando i modelli e le pagine di AEM Sites che espongono i dati dell’evento come JSON
+* Scopri come utilizzare i componenti core WCM dell’AEM per consentire agli addetti al marketing di creare endpoint JSON
+* Utilizzare JSON AEM Content Services da un’app mobile
+   * Android viene utilizzato perché dispone di un emulatore multipiattaforma che tutti gli utenti (Windows, macOS e Linux) di questo tutorial possono utilizzare per eseguire l’app nativa.
 
 ## Progetto GitHub
 
-Il codice sorgente e i pacchetti di contenuto sono disponibili nel [Guide AEM - Progetto GitHub WKND per dispositivi mobili](https://github.com/adobe/aem-guides-wknd-mobile).
+Il codice sorgente e i pacchetti di contenuti sono disponibili nel [Guide AEM - Progetto WKND Mobile GitHub](https://github.com/adobe/aem-guides-wknd-mobile).
 
-Se trovi un problema con l&#39;esercitazione o il codice, lascia un [Problema GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
+Se riscontri un problema con l’esercitazione o con il codice, lascia un [Problema GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
 
-## AEM GraphQL e servizi di contenuti AEM
+## GraphQL AEM e servizi di contenuti AEM
 
-|  | API di GraphQL AEM | AEM Content Services |
+|  | API GraphQL dell’AEM | Servizi di contenuti AEM |
 |--------------------------------|:-----------------|:---------------------|
-| Definizione dello schema | Modelli per frammenti di contenuto strutturati | Componenti AEM |
+| Definizione schema | Modelli per frammenti di contenuto strutturati | Componenti AEM |
 | Contenuto | Frammenti di contenuto | Componenti AEM |
-| Ricerca dei contenuti | Query per GraphQL | Per AEM pagina |
-| Formato di consegna | JSON GraphQL | JSON AEM ComponentExporter |
+| Individuazione dei contenuti | Query basata su GraphQL | Per pagina AEM |
+| Formato di consegna | JSON GRAPHQL | JSON per l’esportazione di componenti AEM |

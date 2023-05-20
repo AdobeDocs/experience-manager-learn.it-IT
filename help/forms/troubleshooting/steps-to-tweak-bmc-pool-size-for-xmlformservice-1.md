@@ -1,5 +1,5 @@
 ---
-title: Passaggi per modificare la dimensione del pool bmc per il servizio XMLForm (1 di 2)
+title: Passaggi per modificare le dimensioni del pool bmc per il servizio XMLForm (1 di 2)
 description: Configurare i parametri XMLFormService
 type: Troubleshooting
 role: Developer
@@ -17,8 +17,8 @@ ht-degree: 0%
 ---
 
 
-# Passaggi per modificare la dimensione del pool bmc per XMLFormService (1 di 2)
+# Passaggi per modificare le dimensioni del pool bmc per XMLFormService (1 di 2)
 
-*Questo video illustra i passaggi per modificare le dimensioni del pool bmc per XMLFormService(1 di 2).*
+*Questo video illustra i passaggi necessari per modificare le dimensioni del pool bmc per XMLFormService(1 di 2).*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335552?quality=12&learn=on)

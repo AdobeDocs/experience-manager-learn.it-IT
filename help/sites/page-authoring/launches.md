@@ -1,6 +1,6 @@
 ---
-title: Come utilizzare i lanci in AEM Sites
-description: I lanci in AEM Sites consentono di creare, creare e rivedere i contenuti per le versioni future.
+title: Come utilizzare Launches in AEM Sites
+description: I lanci in AEM Sites consentono di creare, scrivere e rivedere contenuti per le versioni future.
 topic: Content Management
 feature: Launches
 level: Intermediate, Experienced
@@ -18,6 +18,6 @@ ht-degree: 1%
 
 # Lanci
 
-I lanci in AEM Sites consentono di creare, creare e rivedere contenuti del sito web per le versioni future. Durante la creazione del lancio il sito web di produzione può continuare a evolvere e cambiare giorno per giorno come lo farebbe normalmente.
+I lanci in AEM Sites consentono di creare, scrivere e rivedere contenuti per siti web per le versioni future. Durante la creazione del lancio, il sito web di produzione può continuare a evolvere e cambiare giorno dopo giorno, come di consueto.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331285?quality=12&learn=on)

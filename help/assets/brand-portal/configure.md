@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Configurare AEM Assets Brand Portal
 
-*Questo video illustra i passaggi per la configurazione di AEM Assets Brand Portal.*
+*Questo video illustra i passaggi per configurare AEM Assets Brand Portal.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335448?quality=12&learn=on)

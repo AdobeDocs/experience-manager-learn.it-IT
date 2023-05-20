@@ -1,5 +1,5 @@
 ---
-title: Installazione dell'edizione della community IntelliJ
+title: Installazione di IntelliJ community edition
 description: Installare e importare il progetto AEM in IntelliJ
 solution: Experience Manager
 type: Documentation
@@ -18,28 +18,28 @@ ht-degree: 0%
 
 # Installazione di IntelliJ
 
-Installa [Edizione comunitaria IntelliJ](https://www.jetbrains.com/idea/download/#section=windows). È possibile accettare le impostazioni predefinite durante l&#39;installazione.
+Installa [edizione della community IntelliJ](https://www.jetbrains.com/idea/download/#section=windows). Durante l&#39;installazione è possibile accettare le impostazioni predefinite, se consigliate.
 
-## Importa progetto AEM
+## Importare il progetto AEM
 
 * Avvia IntelliJ
-* Importa il progetto AEM creato nel passaggio precedente. Dopo l’importazione del progetto, la schermata dovrebbe avere un aspetto simile a questo ![aem-banking-app](assets/aem-banking-app.png). In genere lavorerai con i sottoprogetti core,ui.apps,ui.config e ui.content.
-* Se non vedi la finestra Maven e terminale, vai a visualizzare->Finestra Strumenti e seleziona Maven e Terminal.
+* Importa il progetto AEM creato nel passaggio precedente. Dopo l’importazione del progetto, lo schermo avrà un aspetto simile al seguente ![aem-banking-app](assets/aem-banking-app.png). In genere, puoi utilizzare i sottoprogetti core, ui.apps, ui.config e ui.content.
+* Se la finestra Maven e il terminale non sono visualizzati, passare alla finestra Visualizza->Strumenti e selezionare Maven e Terminal.
 
-## Aggiungi il modulo dei font
+## Aggiungere il modulo font
 
-Se desideri utilizzare font personalizzati nel file PDF, dovrai inviare i font personalizzati all’istanza AEM Forms CS. Segui i seguenti passaggi
+Se desideri utilizzare font personalizzati nel file PDF, devi inviarli all’istanza di AEM Forms CS. Segui i seguenti passaggi
 
 * Crea una cartella denominata **font** in C:\CloudManager\aem-banking-application
-* Estrarre il contenuto di [font.zip](assets/fonts.zip) nella cartella dei font appena creati
-* Nel modulo dei font sono inclusi alcuni font personalizzati.Puoi aggiungere i font personalizzati della tua organizzazione a C:\CloudManager\aem-banking-application\fonts\src\main\resources folder of the fonts module
+* Estrai il contenuto di [font.zip](assets/fonts.zip) nella cartella dei tipi di carattere appena creata
+* Nel modulo font sono inclusi alcuni font personalizzati.È possibile aggiungere i font personalizzati della propria organizzazione alla cartella C:\CloudManager\aem-banking-application\fonts\src\main\resources del modulo font
 * Apri il file C:\CloudManager\aem-banking-application\pom.xml
 * Aggiungi la seguente riga  ```<module>fonts</module>``` nella sezione moduli del file pom.xml
-* Salva il tuo pom.xml
-* Aggiornare il progetto aem-banking-application in IntelliJ
+* Salvare pom.xml
+* Aggiorna il progetto dell&#39;applicazione aem-banking in IntelliJ
 
-Struttura del progetto con modulo dei font
+Struttura del progetto con modulo font
 ![fonts-module](assets/fonts-module.png)
 
-Modulo Font incluso nel POM dei progetti
+Modulo font incluso nel POM dei progetti
 ![font-pom](assets/fonts-module-pom.png)

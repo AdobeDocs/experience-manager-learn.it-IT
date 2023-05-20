@@ -1,6 +1,6 @@
 ---
 title: Selezionare e scaricare il contenuto della cartella DAM
-description: Tutorial per compilare il componente casella di controllo con il contenuto della cartella DAM e consentire all’utente di scaricare il contenuto selezionato.
+description: Tutorial per popolare il componente casella di controllo con il contenuto della cartella DAM e consentire all’utente di scaricare il contenuto selezionato.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -17,18 +17,18 @@ ht-degree: 3%
 
 # Introduzione
 
-Un caso d’uso comune è quello di elencare i contenuti delle cartelle DAM (file pdf, documenti word, ecc.) utilizzando il componente casella di controllo e consentire all’utente di selezionare i file da scaricare. I file selezionati verranno assemblati in un unico file che l&#39;utente può scaricare.
+Un caso d’uso comune consiste nell’elencare i contenuti della cartella DAM (file PDF, documenti Word, ecc.) utilizzando il componente Casella di controllo e consentire all’utente di selezionare i file da scaricare. I file selezionati verranno assemblati in un unico file scaricabile dall&#39;utente.
 
-![caso d&#39;uso](assets/newsletters-download1.png)
+![caso d’uso](assets/newsletters-download1.png)
 
 ## Prerequisiti
 
-Sarà necessario quanto segue:
+Avrà bisogno di quanto segue:
 
-* Un&#39;istanza funzionante di AEM con il pacchetto aggiuntivo di Form installato
+* Istanza funzionante di AEM con pacchetto del componente aggiuntivo modulo installato
 
 * [Ambiente di sviluppo configurato in base a questo documento](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
 
 ## Passaggi successivi
 
-[Popolare il gruppo di scelta](./populating-choice-group-with-dam-folder-content.md)
+[Popolare gruppo di scelta](./populating-choice-group-with-dam-folder-content.md)

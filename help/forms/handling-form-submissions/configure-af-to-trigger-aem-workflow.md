@@ -1,6 +1,6 @@
 ---
-title: Configurazione del modulo adattivo per attivare AEM flusso di lavoro
-description: Informazioni sulle varie opzioni per la configurazione di Moduli adattivi per attivare AEM Flusso di lavoro
+title: Configurazione del modulo adattivo per attivare il flusso di lavoro AEM
+description: Informazioni sulle varie opzioni di configurazione del modulo adattivo per attivare il flusso di lavoro AEM
 feature: Workflow
 topics: integrations
 audience: developer
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Configurazione del modulo adattivo per attivare AEM flusso di lavoro
+# Configurazione del modulo adattivo per attivare il flusso di lavoro AEM
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28316?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Indice immagine di prova AEM
-description: Questo file contiene riferimenti alle immagini utilizzate nei materiali di marketing di AEM trial.
+title: Indice immagine delle prove AEM
+description: Questo file contiene riferimenti alle immagini utilizzate nei materiali di marketing per gli studi AEM.
 index: false
 hidefromtoc: true
 hide: true
@@ -12,11 +12,11 @@ ht-degree: 0%
 
 ---
 
-# Indice immagine di prova AEM
+# Indice immagine delle prove AEM
 
-I file immagine devono essere inseriti nel `assets` cartella che si trova accanto a questo file.
+I file di immagine devono essere inseriti nel `assets` cartella che si trova accanto al file.
 
 Ogni file di immagine da pubblicare deve essere collegato da questo file utilizzando la sintassi:
 
-![Account personale immagine e-mail pronto per la prova](./assets/select-personal-account.png)
+![Account personale immagine e-mail pronta per la prova](./assets/select-personal-account.png)
 ![Slack immagine e-mail](./assets/Slack-email-image.png)

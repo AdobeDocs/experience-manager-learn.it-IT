@@ -1,6 +1,6 @@
 ---
-title: Informazioni sulle proprietà della pagina in AEM Sites
-description: Il video seguente introduce i metadati delle proprietà della pagina associati a una pagina in Adobe Experience Manager.
+title: Informazioni sulle proprietà di pagina in AEM Sites
+description: Il video seguente introduce i metadati delle proprietà di pagina associati a una pagina in Adobe Experience Manager.
 version: 6.4, 6.5
 topic: Content Management
 feature: Page Editor
@@ -22,7 +22,7 @@ Il video seguente introduce le proprietà di pagina associate a una pagina in Ad
 
 >[!VIDEO](https://video.tv.adobe.com/v/32192?quality=12&learn=on)
 
-In questo video sono trattati i seguenti elementi di proprietà della pagina:
+In questo video vengono trattati i seguenti elementi delle proprietà della pagina:
 
 * Base
    * Titolo e tag
@@ -56,6 +56,6 @@ In questo video sono trattati i seguenti elementi di proprietà della pagina:
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Modifica della documentazione delle proprietà di una pagina](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html)
-* [Modifica della documentazione del contenuto di una pagina](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
+* [Documentazione sulla modifica delle proprietà di pagina](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html)
+* [Modifica della documentazione sul contenuto di una pagina](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
 * [Guida rapida all’authoring delle pagine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)

@@ -1,6 +1,6 @@
 ---
-title: Miglioramenti dell’editor di temi in AEM Forms
-description: Miglioramenti all’Editor tema per i moduli adattivi in AEM 6.3
+title: Miglioramenti dell’Editor temi in AEM Forms
+description: Miglioramenti all’Editor temi per i moduli adattivi nell’AEM 6.3
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -15,12 +15,12 @@ ht-degree: 0%
 
 ---
 
-# Miglioramenti dell’editor di temi in AEM Forms{#theme-editor-improvements-in-aem-forms}
+# Miglioramenti dell’Editor temi in AEM Forms{#theme-editor-improvements-in-aem-forms}
 
-Miglioramenti all’Editor tema per i moduli adattivi in AEM 6.3
+Miglioramenti all’Editor temi per i moduli adattivi nell’AEM 6.3
 
 >[!VIDEO](https://video.tv.adobe.com/v/19497?quality=12&learn=on)
 
 >[!NOTE]
 >
->Questa funzione è disponibile solo a partire da AEM 6.3.
+>Questa funzione è disponibile solo con AEM 6.3 e versioni successive.

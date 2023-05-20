@@ -1,27 +1,27 @@
 ---
-title: Variabili nel flusso di lavoro AEM[Parte4]
+title: Variabili nel flusso di lavoro dell’AEM[Parte4]
 description: Utilizzo di variabili di tipo XML, JSON, ArrayList, Document in un flusso di lavoro AEM
 version: 6.5
-topic: Sviluppo
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 269e43f7-24cf-4786-9439-f51bfe91d39c
+source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
 
-
 # Variabile ArrayList nel flusso di lavoro AEM
 
-Le variabili di tipo ArrayList sono state introdotte in AEM Forms 6.5. Un caso d&#39;uso comune per l&#39;utilizzo della variabile ArrayList è quello di definire percorsi personalizzati da utilizzare nell&#39;oggetto AssignTask.
+Variabili di tipo ArrayList sono state introdotte in AEM Forms 6.5. Un caso d’uso comune per l’utilizzo della variabile ArrayList consiste nel definire route personalizzate da utilizzare in AssignTask.
 
-Per utilizzare la variabile ArrayList in un flusso di lavoro AEM, è necessario creare un modulo adattivo che generi elementi ripetuti nei dati inviati. Una pratica comune consiste nel definire uno schema contenente un elemento array. Ai fini di questo articolo, ho creato un semplice schema JSON contenente elementi array. Il caso d&#39;uso è quello di un dipendente che compila una nota spese. Nella nota spese, acquisiamo il nome del responsabile del mittente e il nome del manager del responsabile. I nomi del manager vengono memorizzati in un array denominato managerchain. La schermata seguente mostra il modulo della nota spese e i dati dell&#39;invio di Adattivo Forms.
+Per utilizzare la variabile ArrayList in un flusso di lavoro AEM, è necessario creare un modulo adattivo che generi elementi ripetuti nei dati inviati. Una pratica comune consiste nel definire uno schema contenente un elemento array. Ai fini di questo articolo, ho creato un semplice schema JSON contenente elementi di array. Il caso d’uso è quello di un dipendente che compila una nota spese. Nella nota spese vengono acquisiti il nome del responsabile dell&#39;autore della sottomissione e il nome del responsabile. I nomi dei manager vengono memorizzati in un array denominato managerchain. La schermata seguente mostra il modulo nota spese e i dati dell’invio di Adaptive Forms.
 
-![rapporto costi](assets/expensereport.jpg)
+![expenserreport](assets/expensereport.jpg)
 
-Di seguito sono riportati i dati dell’invio del modulo adattivo. Il modulo adattivo era basato sullo schema JSON, i dati associati allo schema vengono memorizzati nell&#39;elemento dati dell&#39;elemento afBoundData. La catena di gestione è un array e dobbiamo compilare ArrayList con l&#39;elemento nome dell&#39;oggetto all&#39;interno dell&#39;array della catena di gestione.
+Di seguito sono riportati i dati dell’invio del modulo adattivo. Il modulo adattivo era basato su schema JSON e i dati associati allo schema vengono memorizzati nell’elemento dati dell’elemento afBoundData. Il managerchain è un array ed è necessario compilare ArrayList con l&#39;elemento name dell&#39;oggetto all&#39;interno dell&#39;array managerchain.
 
 ```json
 {
@@ -62,21 +62,21 @@ Di seguito sono riportati i dati dell’invio del modulo adattivo. Il modulo ada
 }
 ```
 
-Per inizializzare la variabile ArrayList della stringa di sottotipo è possibile utilizzare la modalità di mappatura JSON Dot Notation o XPath. La schermata seguente mostra la compilazione di una variabile ArrayList denominata CustomRoutes utilizzando la notazione del punto JSON. Assicurati di puntare a un elemento in un oggetto array come mostrato nella schermata sottostante. Compilazione dell&#39;oggetto ArrayList CustomRoutes con i nomi dell&#39;oggetto array managerchain in corso.
-L&#39;ArrayList CustomRoutes viene quindi utilizzato per popolare i cicli nel componente AssignTask
-![percorsi personalizzati](assets/arraylist.jpg)
-Una volta inizializzata la variabile ArrayList CustomRoutes con i valori dei dati inviati, i percorsi del componente AssignTask vengono quindi compilati utilizzando la variabile CustomRoutes. La schermata seguente mostra i percorsi personalizzati in un oggetto AssignTask
+Per inizializzare la variabile ArrayList della stringa del sottotipo è possibile utilizzare la modalità di mappatura JSON Dot Notation o XPath. La schermata seguente mostra come popolare una variabile ArrayList denominata CustomRoutes utilizzando la notazione in punti JSON. Assicurati di puntare a un elemento in un oggetto array, come illustrato nella schermata seguente. Stiamo popolando il CustomRoutes ArrayList con i nomi dell’oggetto array managerchain.
+Il componente CustomRoutes ArrayList viene quindi utilizzato per popolare i cicli di lavorazione nel componente AssignTask
+![customroute](assets/arraylist.jpg)
+Una volta inizializzata la variabile CustomRoutes ArrayList con i valori dei dati inviati, le route del componente AssignTask vengono quindi popolate utilizzando la variabile CustomRoutes. La schermata seguente mostra le route personalizzate in un oggetto AssignTask
 ![asingtask](assets/customactions.jpg)
 
-Per testare questo flusso di lavoro sul sistema, segui i seguenti passaggi
+Per testare questo flusso di lavoro sul sistema, segui i passaggi seguenti
 
-* Scarica e salva il file ArrayListVariable.zip nel file system
-* [Importare il ](assets/arraylistvariable.zip) file zip utilizzando Gestione pacchetti AEM
-* [Apri il modulo TravelExpenseReport](http://localhost:4502/content/dam/formsanddocuments/helpx/travelexpensereport/jcr:content?wcmmode=disabled)
-* Inserire un paio di spese e i nomi dei 2 manager
+* Scaricare e salvare il file ArrayListVariable.zip nel file system
+* [Importa il file zip](assets/arraylistvariable.zip) utilizzo di Gestione pacchetti AEM
+* [Aprire la maschera TravelExpenseReport](http://localhost:4502/content/dam/formsanddocuments/helpx/travelexpensereport/jcr:content?wcmmode=disabled)
+* Inserire un paio di spese e i nomi dei due responsabili
 * Premi il pulsante Invia
-* [Apri la inbox](http://localhost:4502/aem/inbox)
-* Verrà visualizzata una nuova attività denominata &quot;Assegna a amministratore spese&quot;
+* [Apri la casella in entrata](http://localhost:4502/aem/inbox)
+* Dovresti trovare una nuova attività denominata &quot;Assegna all’amministratore delle spese&quot;
 * Apri il modulo associato all’attività
-* Dovresti visualizzare due percorsi personalizzati con i nomi dei manager
-   [Esplora il flusso di lavoro ReviewExpenseReportWorkflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) Questo flusso di lavoro utilizza la variabile ArrayList, la variabile di tipo JSON, l&#39;editor di regole nel componente Or-Split
+* Dovrebbero essere presenti due route personalizzate con i nomi del manager
+   [Esplora il flusso di lavoro ReviewExpenseReportWorkflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) Questo flusso di lavoro utilizza la variabile ArrayList, la variabile di tipo JSON, l’editor di regole nel componente Or-Split

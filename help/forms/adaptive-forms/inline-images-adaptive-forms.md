@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione di immagini in linea in Forms adattivo
+title: Visualizzazione di immagini in linea in Adaptive Forms
 description: Visualizzare le immagini caricate in linea in Adaptive Forms
 feature: Adaptive Forms
 topics: development
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 ---
 
-# Immagini in linea in Forms adattivo
+# Immagini in linea in Adaptive Forms
 
-Un caso d’uso comune è la visualizzazione dell’immagine caricata come immagine in linea in Modulo adattivo. Per impostazione predefinita, l’immagine caricata viene visualizzata come collegamento e questa esperienza può essere migliorata visualizzando l’immagine in Modulo adattivo. Questo articolo illustra i passaggi necessari per visualizzare le immagini in linea.
+Un caso d’uso comune consiste nel visualizzare l’immagine caricata come immagine in linea in Modulo adattivo. Per impostazione predefinita, l’immagine caricata viene visualizzata come collegamento e questa esperienza può essere migliorata visualizzando l’immagine in Modulo adattivo. Questo articolo illustra i passaggi necessari per visualizzare le immagini in linea.
 
 ## Aggiungi immagine segnaposto
 
-Il primo passo è quello di anteporre un div segnaposto al componente file allegato. Nel codice sottostante il componente allegato file è identificato dal nome della classe CSS del file di caricamento foto. La funzione JavaScript fa parte della libreria client associata ai moduli adattivi. Questa funzione viene chiamata nell&#39;evento initialize del componente file allegato.
+Il primo passaggio consiste nell’anteporre un div segnaposto al componente allegato. Nel codice seguente il componente file allegato è identificato dal nome della classe CSS photo-upload. La funzione JavaScript fa parte della libreria client associata ai moduli adattivi. Questa funzione viene chiamata nell’evento di inizializzazione del componente file allegato.
 
 ```javascript
 /**
@@ -37,7 +37,7 @@ function addTempImage(){
 
 ### Visualizza immagine in linea
 
-Dopo che l&#39;utente ha caricato l&#39;immagine, la funzione elencata di seguito viene richiamata nell&#39;evento commit del componente file allegato. La funzione riceve l&#39;oggetto file caricato come argomento.
+Dopo che l’utente ha caricato l’immagine, la funzione indicata di seguito viene richiamata in caso di commit del componente file allegato. La funzione riceve l’oggetto file caricato come argomento.
 
 ```javascript
 /**
@@ -65,7 +65,7 @@ function consumeImage (file) {
 
 ### Distribuisci sul server
 
-* Scarica e installa la [libreria client](assets/inline-image-client-library.zip) sulla tua istanza AEM utilizzando AEM package manager.
-* Scarica e installa la [modulo di esempio](assets/inline-image-af.zip) sulla tua istanza AEM utilizzando AEM package manager.
-* Posiziona il browser su [Aggiungi immagine in linea](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
-* Fai clic sul pulsante &quot;Allega la tua foto&quot; per aggiungere l&#39;immagine
+* Scarica e installa [libreria client](assets/inline-image-client-library.zip) sull’istanza AEM utilizzando Gestione pacchetti AEM.
+* Scarica e installa [modulo di esempio](assets/inline-image-af.zip) sull’istanza di AEM utilizzando Gestione pacchetti AEM.
+* Puntare il browser a [Aggiungi immagine in linea](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
+* Fai clic sul pulsante &quot;Allega la tua foto&quot; per aggiungere un’immagine

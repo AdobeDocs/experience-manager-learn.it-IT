@@ -1,6 +1,6 @@
 ---
 title: Come risolvere i problemi relativi alle prestazioni in AEM
-description: Passaggi per indagare i problemi relativi alle prestazioni
+description: Passaggi per analizzare i problemi relativi alle prestazioni
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Come risolvere i problemi relativi alle prestazioni in AEM
 
-*Questo video illustra i passaggi necessari per risolvere eventuali problemi relativi alle prestazioni in AEM.*
+*Questo video illustra i passaggi per risolvere i problemi relativi alle prestazioni in AEM.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335472?quality=12&learn=on)

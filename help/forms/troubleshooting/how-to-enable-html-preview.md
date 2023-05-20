@@ -1,5 +1,5 @@
 ---
-title: Anteprima Designer HTML - Come abilitare Anteprima HTML
+title: 'Designer Preview HTML Preview: come abilitare Preview HTML'
 description: Passaggi per configurare l’anteprima di HTML in Designer
 type: Troubleshooting
 role: Developer
@@ -17,8 +17,8 @@ ht-degree: 0%
 ---
 
 
-# Come abilitare Preview HTML
+# Abilitare Preview HTML
 
-*Questo video illustra i passaggi necessari per abilitare l’anteprima di HTML in Designer.*
+*Questo video illustra i passaggi necessari per abilitare preview HTML in Designer.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335498?quality=12&learn=on)

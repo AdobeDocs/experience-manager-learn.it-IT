@@ -1,6 +1,6 @@
 ---
 title: Suggerimenti e trucchi per i frammenti di contenuto
-description: Gerarchia del sito, tassonomia e suggerimenti per l’assegnazione tag Best practice
+description: Best practice per gerarchia dei siti, tassonomia e suggerimenti sui tag
 hide: true
 hidefromtoc: true
 source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8

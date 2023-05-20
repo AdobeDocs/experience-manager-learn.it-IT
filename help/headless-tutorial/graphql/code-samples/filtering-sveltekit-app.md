@@ -1,6 +1,6 @@
 ---
 title: App SvelteKit semplice
-description: Una semplice app SvelteKit che mostra le avventure WKND modellate utilizzando frammenti di contenuto.
+description: Una semplice app SvelteKit che mostra le avventure WKND modellate utilizzando Frammenti di contenuto.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -12,21 +12,21 @@ index: false
 hide: true
 recommendations: noCatalog, noDisplay
 hidefromtoc: true
-source-git-commit: a0a1c7e5d3dd74454b9b8ab787ce7447e73ee098
+exl-id: 2e5bd50e-c0d7-4292-8097-e0a17f41a91a
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
 
 ---
 
+# Filtraggio dell’app SvelteKit
 
-# Applicazione SvelteKit filtro
+Esplora la capacità delle API GraphQL headless dell’AEM di elencare i dati utilizzando una [SvelteKit](https://kit.svelte.dev/) app. Questa app SvelteKit crea un elenco di avventure WKND, che possono essere selezionate per visualizzarne i dettagli.
 
-Esplorare AEM API GraphQL headless la possibilità di elencare i dati utilizzando un [SvelteKit](https://kit.svelte.dev/) app. Questa app SvelteKit crea un elenco di avventure WKND, che può essere selezionato per visualizzare i dettagli dell&#39;avventura.
-
-Questo codice illustra l&#39;utilizzo di Adobe [Client AEM headless per JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) per richiamare query GraphQL persistenti da SvelteKit. Questa app utilizza `wknd-shared/adventures-all` query persistente per raccogliere tutte le avventure e ottenere un elenco dei tipi di attività disponibili. I dettagli dell&#39;avventura sono richiesti tramite il `wknd-shared/adventures-by-slug` query persistente.
+Questo codice illustra l’utilizzo di Adobe [Client AEM headless per JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) per richiamare query GraphQL persistenti da SvelteKit. Questa app utilizza `wknd-shared/adventures-all` query persistente per raccogliere tutte le avventure e derivare un elenco di tipi di attività disponibili. I dettagli dell’avventura sono richiesti tramite `wknd-shared/adventures-by-slug` query persistente.
 
 Questo codice:
 
-+ Si collega a un servizio AEM Publish e non richiede l’autenticazione
++ Si connette a un servizio di pubblicazione AEM e non richiede l’autenticazione
 + Utilizza le query persistenti di WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-slug`

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Come risolvere i problemi di dipendenza con le librerie C++ in Designer
 
-*Questo video illustra i passaggi necessari per risolvere eventuali problemi di dipendenza con le librerie C++ in Designer.*
+*Questo video illustra i passaggi per risolvere i problemi di dipendenza con le librerie C++ in Designer.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335576?quality=12&learn=on)

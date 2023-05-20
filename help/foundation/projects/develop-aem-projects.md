@@ -1,6 +1,6 @@
 ---
-title: Sviluppa progetti in AEM
-description: Un’esercitazione sullo sviluppo che illustra come sviluppare per AEM progetti.  In questa esercitazione verrà creato un modello di progetto personalizzato che può essere utilizzato per creare nuovi progetti all’interno di AEM per gestire flussi di lavoro e attività di creazione dei contenuti.
+title: Sviluppare progetti in AEM
+description: Un tutorial di sviluppo che illustra come sviluppare per i progetti AEM.  In questo tutorial verrà creato un modello di progetto personalizzato che può essere utilizzato per creare nuovi progetti in AEM per la gestione dei flussi di lavoro e delle attività di authoring dei contenuti.
 version: 6.4, 6.5
 feature: Projects, Workflow
 topics: collaboration, development, governance
@@ -18,9 +18,9 @@ ht-degree: 1%
 
 ---
 
-# Sviluppa progetti in AEM
+# Sviluppare progetti in AEM
 
-Questa è un’esercitazione sullo sviluppo che illustra come sviluppare per [!DNL AEM Projects].  In questa esercitazione verrà creato un modello di progetto personalizzato che può essere utilizzato per creare nuovi progetti all’interno di AEM per gestire flussi di lavoro e attività di creazione dei contenuti.
+Questo tutorial di sviluppo illustra come sviluppare per [!DNL AEM Projects].  In questo tutorial verrà creato un modello di progetto personalizzato che può essere utilizzato per creare nuovi progetti in AEM per la gestione dei flussi di lavoro e delle attività di authoring dei contenuti.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16904?quality=12&learn=on)
 
@@ -28,28 +28,28 @@ Questa è un’esercitazione sullo sviluppo che illustra come sviluppare per [!D
 
 ## Introduzione {#introduction}
 
-[[!DNL AEM Projects]](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html) è una funzione di AEM progettata per facilitare la gestione e il raggruppamento di tutti i flussi di lavoro e le attività associate alla creazione di contenuti come parte di un’implementazione di AEM Sites o Assets.
+[[!DNL AEM Projects]](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html) è una funzione dell’AEM progettata per semplificare la gestione e il raggruppamento di tutti i flussi di lavoro e le attività associati alla creazione di contenuti come parte di un’implementazione di AEM Sites o Assets.
 
-AEM progetti vengono forniti con diversi [Modelli di progetto OTB](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTemplates). Durante la creazione di un nuovo progetto, gli autori possono scegliere tra questi modelli disponibili. Le implementazioni AEM di grandi dimensioni con requisiti aziendali unici dovranno creare modelli di progetto personalizzati, personalizzati e adattati alle loro esigenze. Creando un modello di progetto personalizzato, gli sviluppatori possono configurare il dashboard del progetto, collegarsi ai flussi di lavoro personalizzati e creare ruoli di business aggiuntivi per un progetto. Esamineremo la struttura di un modello di progetto e creeremo un modello di progetto di esempio.
+Progetti AEM viene fornito con diversi [Modelli di progetto preconfigurati](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTemplates). Durante la creazione di un nuovo progetto, gli autori possono scegliere tra questi modelli disponibili. Le implementazioni di grandi dimensioni dell’AEM con requisiti di business univoci richiedono la creazione di modelli di progetto personalizzati, personalizzati in base alle esigenze. Creando un modello di progetto personalizzato, gli sviluppatori possono configurare il dashboard del progetto, connettersi ai flussi di lavoro personalizzati e creare ruoli di business aggiuntivi per un progetto. Daremo un&#39;occhiata alla struttura di un modello di progetto e ne creeremo uno di esempio.
 
-![Scheda di progetto personalizzata](./assets/develop-aem-projects/custom-project-card.png)
+![Scheda Progetto Personalizzata](./assets/develop-aem-projects/custom-project-card.png)
 
 ## Configurazione
 
-Questa esercitazione passerà attraverso il codice necessario per creare un modello di progetto personalizzato. È possibile scaricare e installare la [pacchetto allegato](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip) a un ambiente locale per seguire l’esercitazione. Puoi anche accedere all’intero progetto Maven ospitato su [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide).
+Questo tutorial illustra il codice necessario per creare un modello di progetto personalizzato. È possibile scaricare e installare [pacchetto allegato](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip) in un ambiente locale da seguire insieme all’esercitazione. Puoi anche accedere all’intero progetto Maven in hosting su [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide).
 
 * [Pacchetto tutorial completato](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Archivio completo del codice su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Questa esercitazione presuppone alcune conoscenze di base su [Pratiche di sviluppo AEM](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/the-basics.html) e una certa familiarità con [Configurazione AEM progetto Maven](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). Tutti i codici menzionati sono destinati ad essere utilizzati come riferimento e devono essere distribuiti solo in un [AEM di sviluppo locale](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
+Questo tutorial presuppone una conoscenza di base di [Pratiche di sviluppo dell&#39;AEM](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/the-basics.html) e una certa familiarità con [Configurazione del progetto AEM Maven](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). Tutto il codice menzionato è destinato a essere utilizzato come riferimento e deve essere distribuito solo a un [sviluppo locale istanza AEM](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
 
 ## Struttura di un modello di progetto
 
-I modelli di progetto devono essere posti sotto il controllo del codice sorgente e devono trovarsi sotto la cartella dell&#39;applicazione in /apps. Idealmente dovrebbero essere posizionati in una sottocartella con la convenzione di denominazione di **&#42;/projects/templates/**&lt;my-template>. Inserendo seguendo questa convenzione di denominazione, tutti i nuovi modelli personalizzati saranno automaticamente disponibili per gli autori durante la creazione di un progetto. La configurazione dei modelli di progetto disponibili è impostata in: **/content/projects/jcr:content** nodo per **cq:allowedTemplates** proprietà. Per impostazione predefinita, si tratta di un’espressione regolare: **/(apps|libs)/.&#42;/projects/templates/.&#42;**
+I modelli di progetto devono essere inseriti nel controllo del codice sorgente e trovarsi nella cartella dell’applicazione in /apps. Idealmente dovrebbero essere posizionate in una sottocartella con la convenzione di denominazione di **&#42;/projects/templates/**&lt;my-template>. Utilizzando questa convenzione per i nomi, eventuali nuovi modelli personalizzati diventano automaticamente disponibili per gli autori durante la creazione di un progetto. La configurazione dei modelli di progetto disponibili è impostata su: **/content/projects/jcr:content** nodo in base al **cq:allowedTemplates** proprietà. Per impostazione predefinita, questa è un’espressione regolare: **/(apps|libs)/.&#42;/projects/templates/.&#42;**
 
-Il nodo principale di un modello di progetto avrà una **jcr:primaryType** di **cq:Template**. Sotto il nodo principale di ci sono 3 nodi: **gadget**, **ruoli** e **workflow**. Questi nodi sono tutti **nt:unstructured**. Sotto il nodo principale può anche essere un file thumbnail.png che viene visualizzato quando si seleziona il modello nella procedura guidata Crea progetto.
+Il nodo principale di un modello di progetto avrà **jcr:primaryType** di **cq:Template**. Sotto il nodo principale di sono presenti 3 nodi: **gadget**, **ruoli**, e **workflow**. Questi nodi sono tutti **nt:unstructured**. Sotto il nodo principale può trovarsi anche un file thumbnail.png che viene visualizzato quando si seleziona il modello nella procedura guidata Crea progetto.
 
-La struttura a nodo intero:
+Struttura completa dei nodi:
 
 ```shell
 /apps/<my-app>
@@ -61,25 +61,25 @@ La struttura a nodo intero:
                    + workflows (nt:unstructured)
 ```
 
-### Directory principale dei modelli di progetto
+### Directory principale modello di progetto
 
-Il nodo principale del modello di progetto è di tipo **cq:Template**. Su questo nodo è possibile configurare le proprietà **jcr:title** e **jcr:description** visualizzato nella Creazione guidata progetto. Esiste anche una proprietà denominata **procedura guidata** che fa riferimento a un modulo che popolerà le proprietà del progetto. Il valore predefinito di: **/libs/cq/core/content/projects/wizard/steps/defaultproject.html** dovrebbe funzionare bene per la maggior parte dei casi, in quanto consente all&#39;utente di compilare le proprietà di base del progetto e aggiungere membri del gruppo.
+Il nodo principale del modello di progetto è di tipo **cq:Template**. In questo nodo puoi configurare le proprietà **jcr:title** e **jcr:descrizione** visualizzato nella Creazione guidata progetto. Esiste anche una proprietà denominata **procedura guidata** che punta a un modulo che popolerà le Proprietà del progetto. Il valore predefinito di: **/libs/cq/core/content/projects/wizard/steps/defaultproject.html** funziona correttamente per la maggior parte dei casi, in quanto consente all’utente di popolare le proprietà di progetto di base e aggiungere membri al gruppo.
 
-*&#42;La Creazione guidata progetto non utilizza il servlet Sling POST. Vengono invece inviati valori a un servlet personalizzato:**com.adobe.cq.projects.impl.servlet.ProjectServlet**. È necessario tenerne conto quando si aggiungono campi personalizzati.*
+*&#42;Nota: la Creazione guidata progetto non utilizza il servlet Sling POST. Invece, i valori vengono inviati a un servlet personalizzato:**com.adobe.cq.projects.impl.servlet.ProjectServlet**. Da tenere in considerazione quando si aggiungono campi personalizzati.*
 
-Un esempio di procedura guidata personalizzata può essere trovato per il modello di progetto di traduzione: **/libs/cq/core/content/projects/Wizard/translationproject/defaultproject**.
+Un esempio di procedura guidata personalizzata è disponibile per il modello di progetto di traduzione: **/libs/cq/core/content/projects/wizard/translationproject/defaultproject**.
 
 ### Gadget {#gadgets}
 
-In questo nodo non sono presenti proprietà aggiuntive, ma gli elementi secondari del controllo nodo gadget, che consentono di comporre il dashboard del progetto quando viene creato un nuovo progetto. [Porzioni del progetto](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTiles) (noti anche come gadget o pod) sono schede semplici che popolano la posizione di lavoro di un progetto. Un elenco completo delle tessere di ootb si trova in: **/libs/cq/gui/components/projects/admin/pod. **I proprietari dei progetti possono sempre aggiungere/rimuovere riquadri dopo la creazione di un progetto.
+Su questo nodo non sono presenti proprietà aggiuntive, ma i figli del nodo gadget controllano quali tessere di progetto popolano il dashboard del progetto quando viene creato un nuovo progetto. [Riquadri progetto](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTiles) (noti anche come gadget o pod) sono schede semplici che popolano l’area di lavoro di un progetto. Un elenco completo delle tessere ootb è disponibile in: **/libs/cq/gui/components/projects/admin/pod. **I proprietari dei progetti possono sempre aggiungere/rimuovere tessere dopo la creazione di un progetto.
 
 ### Ruoli {#roles}
 
-Ce ne sono 3 [Ruoli predefiniti](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#UserRolesinaProject) per ogni progetto: **Osservatori**, **Editori** e **Proprietari**. Aggiungendo nodi figlio sotto il nodo dei ruoli è possibile aggiungere ulteriori ruoli di progetto specifici per il business per il modello. Puoi quindi collegare questi ruoli a flussi di lavoro specifici associati al progetto.
+Ci sono 3 [Ruoli predefiniti](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#UserRolesinaProject) per ogni progetto: **Osservatori**, **Editor**, e **Proprietari**. Aggiungendo nodi secondari sotto il nodo dei ruoli è possibile aggiungere ulteriori ruoli di progetto specifici per l’azienda per il modello. Puoi quindi collegare questi ruoli a flussi di lavoro specifici associati al progetto.
 
 ### Flussi di lavoro {#workflows}
 
-Uno dei motivi più attraenti per la creazione di un modello di progetto personalizzato è la possibilità di configurare i flussi di lavoro disponibili per l’utilizzo con il progetto. Possono utilizzare flussi di lavoro OOTB o flussi di lavoro personalizzati. Sotto **workflow** un nodo deve essere **modelli** nodo (anche `nt:unstructured`) e i nodi secondari sotto specificano i modelli di flusso di lavoro disponibili. La proprietà **modelId **punta al modello di flusso di lavoro in /etc/workflow e alla proprietà **procedura guidata** fa riferimento alla finestra di dialogo utilizzata all’avvio del flusso di lavoro. Un grande vantaggio di Progetti è la possibilità di aggiungere una finestra di dialogo personalizzata (procedura guidata) per acquisire metadati specifici aziendali all’inizio del flusso di lavoro, che può stimolare ulteriori azioni all’interno del flusso di lavoro.
+Uno dei motivi più interessanti per la creazione di un modello di progetto personalizzato è la possibilità di configurare i flussi di lavoro disponibili per l&#39;utilizzo con il progetto. che possono generare flussi di lavoro integrati o personalizzati. Sotto **workflow** nodo deve essere un **modelli** nodo (anche `nt:unstructured`) e nodi secondari sotto specificano i modelli di flusso di lavoro disponibili. La proprietà **modelId **punta al modello di flusso di lavoro in /etc/workflow e alla proprietà **procedura guidata** punta alla finestra di dialogo utilizzata all’avvio del flusso di lavoro. Un grande vantaggio di Progetti è la possibilità di aggiungere una finestra di dialogo personalizzata (procedura guidata) per acquisire metadati specifici dell’azienda all’inizio del flusso di lavoro, che possono stimolare ulteriori azioni all’interno del flusso di lavoro.
 
 ```shell
 <projects-template-root> (cq:Template)
@@ -92,9 +92,9 @@ Uno dei motivi più attraenti per la creazione di un modello di progetto persona
 
 ## Creazione di un modello di progetto {#creating-project-template}
 
-Poiché i nodi vengono copiati/configurati principalmente, utilizzeremo CRXDE Lite. Nell&#39;istanza AEM locale apri [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
+Poiché stiamo principalmente copiando/configurando nodi, utilizzeremo CRXDE Lite. Nell’istanza AEM locale, apri [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
 
-1. Inizia creando una nuova cartella sotto di essa `/apps/&lt;your-app-folder&gt;` denominato `projects`. Crea un&#39;altra cartella sotto quella denominata `templates`.
+1. Per iniziare, crea una nuova cartella sotto `/apps/&lt;your-app-folder&gt;` denominato `projects`. Crea un’altra cartella sotto a quella denominata `templates`.
 
    ```shell
    /apps/aem-guides/projects-tasks/
@@ -102,9 +102,9 @@ Poiché i nodi vengono copiati/configurati principalmente, utilizzeremo CRXDE Li
                                 + templates (nt:folder)
    ```
 
-1. Per semplificare le operazioni, inizieremo il modello personalizzato dal modello Progetto semplice esistente.
+1. Per semplificare, verrà avviato il modello personalizzato dal modello di progetto semplice esistente.
 
-   1. Copia e incolla il nodo **/libs/cq/core/content/projects/templates/default** sotto il *modelli* cartella creata nel passaggio 1.
+   1. Copiare e incollare il nodo **/libs/cq/core/content/projects/templates/default** sotto *modelli* cartella creata al passaggio 1.
 
    ```shell
    /apps/aem-guides/projects-tasks/
@@ -112,11 +112,11 @@ Poiché i nodi vengono copiati/configurati principalmente, utilizzeremo CRXDE Li
                      + default (cq:Template)
    ```
 
-1. Ora dovresti avere un percorso come **/apps/aem-guides/projects-task/projects/templates/authoring-project**.
+1. Ora dovresti avere un percorso come **/apps/aem-guides/projects-tasks/projects/templates/authoring-project**.
 
-   1. Modifica le **jcr:title** e **jcr:description** proprietà del nodo author-project su valori di titolo e descrizione personalizzati.
+   1. Modifica il **jcr:title** e **jcr:descrizione** proprietà del nodo autore-progetto per personalizzare i valori del titolo e della descrizione.
 
-      1. Lascia la **procedura guidata** proprietà che punta alle proprietà predefinite di Project.
+      1. Lascia **procedura guidata** proprietà che punta alle proprietà predefinite di Project.
 
    ```shell
    /apps/aem-guides/projects-tasks/projects/
@@ -127,11 +127,11 @@ Poiché i nodi vengono copiati/configurati principalmente, utilizzeremo CRXDE Li
                       - wizard = "/libs/cq/core/content/projects/wizard/steps/defaultproject.html"
    ```
 
-1. Per questo modello di progetto si desidera utilizzare Attività.
-   1. Aggiungi un nuovo **nt:unstructured** nodo sotto authoring-project/gadget chiamato **attività**.
-   1. Aggiungi proprietà stringa al nodo attività per **cardWeight** = &quot;100&quot;, **jcr:title**= &quot;Attività&quot;, e **sling:resourceType**=&quot;cq/gui/components/projects/admin/pod/taskpod&quot;.
+1. Per questo modello di progetto vogliamo utilizzare le Attività.
+   1. Aggiungi un nuovo **nt:unstructured** nodo sotto authoring-project/gadgets denominato **attività**.
+   1. Aggiungi proprietà stringa al nodo attività per **cardWeight** = &quot;100&quot; **jcr:title**=&quot;Tasks&quot;, e **sling:resourceType**=&quot;cq/gui/components/projects/admin/pod/taskpod&quot;.
 
-   Ora il [Riquadro attività](https://experienceleague.adobe.com/docs/#Tasks) viene visualizzato per impostazione predefinita quando viene creato un nuovo progetto.
+   Ora il [Riquadro Attività](https://experienceleague.adobe.com/docs/#Tasks) viene visualizzato per impostazione predefinita quando viene creato un nuovo progetto.
 
    ```shell
    ../projects/templates/authoring-project
@@ -148,14 +148,14 @@ Poiché i nodi vengono copiati/configurati principalmente, utilizzeremo CRXDE Li
                  - sling:resourceType = "cq/gui/components/projects/admin/pod/taskpod"
    ```
 
-1. Aggiungeremo un Ruolo Approvatore personalizzato al nostro modello di progetto.
+1. Al modello di progetto verrà aggiunto un Ruolo Approvatore personalizzato.
 
    1. Sotto il nodo del modello di progetto (authoring-project) aggiungi un nuovo **nt:unstructured** nodo etichettato **ruoli**.
-   1. Aggiungi un altro **nt:unstructured** nodo di approvatori etichettati come figlio del nodo ruoli.
-   1. Aggiungi proprietà stringa **jcr:title** = &quot;**Approvatori**&quot;, **roleclasse** =&quot;**proprietario**&quot;, **roleide**=&quot;**approvatori**&quot;.
-      1. Il nome del nodo approvatori, nonché jcr:title e roleid possono essere qualsiasi valore di stringa (purché roleid sia univoco).
-      1. **roleclasse** governa le autorizzazioni applicate per quel ruolo in base al [3 Ruoli OOTB](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User Ruoli in un progetto): **proprietario**, **editor** e **osservatore**.
-      1. In generale, se il ruolo personalizzato è più di un ruolo manageriale, il ruolo può essere **proprietario;** se si tratta di un ruolo di authoring più specifico, come Fotografo o o Designer, allora **editor** il roleclass dovrebbe bastare. La grande differenza tra **proprietario** e **editor** i proprietari del progetto possono aggiornare le proprietà del progetto e aggiungere nuovi utenti al progetto.
+   1. Aggiungi un altro **nt:unstructured** nodo etichettato approvatori come figlio del nodo ruoli.
+   1. Aggiungi proprietà stringa **jcr:title** = &quot;**Approvatori**&quot;, **rotocalco** =&quot;**proprietario**&quot;, **roleid**=&quot;**approvatori**&quot;.
+      1. Il nome del nodo approvatori, nonché jcr:title e roleid possono essere qualsiasi valore stringa (purché roleid sia univoco).
+      1. **rotocalco** disciplina le autorizzazioni applicate per quel ruolo in base al [3 ruoli inclusi](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User Ruoli in un progetto): **proprietario**, **editor**, e **osservatore**.
+      1. In generale, se il ruolo personalizzato è più di un ruolo manageriale, allora la classe a rulli può essere **proprietario;** se si tratta di un ruolo di authoring più specifico come Fotografo o Designer **editor** la lente a rotelle dovrebbe bastare. La grande differenza tra **proprietario** e **editor** I proprietari del progetto possono aggiornare le proprietà del progetto e aggiungere nuovi utenti al progetto.
 
    ```shell
    ../projects/templates/authoring-project
@@ -167,7 +167,7 @@ Poiché i nodi vengono copiati/configurati principalmente, utilizzeremo CRXDE Li
                 - roleid = "approver"
    ```
 
-1. Copiando il modello Progetto semplice si otterranno 4 flussi di lavoro OOTB configurati. Ogni nodo sotto i flussi di lavoro/modelli punta a un flusso di lavoro specifico e a una finestra di dialogo di avvio guidata per quel flusso di lavoro. Successivamente in questa esercitazione verrà creato un flusso di lavoro personalizzato per il progetto. Per il momento elimina i nodi sotto i flussi di lavoro/modelli:
+1. Copiando il modello di progetto semplice si otterranno 4 flussi di lavoro integrati configurati. Ogni nodo sotto i flussi di lavoro/modelli punta a un flusso di lavoro specifico e a una procedura guidata di dialogo iniziale per tale flusso di lavoro. Più avanti in questo tutorial verrà creato un flusso di lavoro personalizzato per questo progetto. Per ora elimina i nodi sotto il flusso di lavoro/modelli:
 
    ```shell
    ../projects/templates/authoring-project
@@ -178,10 +178,10 @@ Poiché i nodi vengono copiati/configurati principalmente, utilizzeremo CRXDE Li
                - (remove ootb models)
    ```
 
-1. Per facilitare l’identificazione del modello di progetto da parte degli autori di contenuti, puoi aggiungere una miniatura personalizzata. La dimensione consigliata è 319x319 pixel.
-   1. In CRXDE Lite crea un nuovo file di pari livello con i nodi di gadget, ruoli e flussi di lavoro denominati **thumbnail.png**.
-   1. Salva e quindi passa alla `jcr:content` e fai doppio clic sul `jcr:data` (evitare di fare clic su &quot;visualizza&quot;).
-      1. Questo dovrebbe richiedere una modifica `jcr:data` e puoi caricare una miniatura personalizzata.
+1. Per facilitare agli autori di contenuti l’identificazione del modello di progetto, puoi aggiungere una miniatura personalizzata. La dimensione consigliata è di 319x319 pixel.
+   1. In CRXDE Lite crea un nuovo file come nodo di pari livello di gadget, ruoli e flussi di lavoro denominato **thumbnail.png**.
+   1. Salva e quindi accedi al `jcr:content` e fare doppio clic sul pulsante `jcr:data` (evitare di fare clic su &#39;visualizza&#39;).
+      1. Dovresti ricevere una modifica `jcr:data` e puoi caricare una miniatura personalizzata.
 
    ```shell
    ../projects/templates/authoring-project
@@ -191,7 +191,7 @@ Poiché i nodi vengono copiati/configurati principalmente, utilizzeremo CRXDE Li
        + thumbnail.png (nt:file)
    ```
 
-Rappresentazione XML del modello di progetto completata:
+Rappresentazione XML completata del modello di progetto:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -251,70 +251,70 @@ Rappresentazione XML del modello di progetto completata:
 
 Ora possiamo testare il nostro modello di progetto creando un nuovo progetto.
 
-1. Dovresti visualizzare il modello personalizzato come una delle opzioni per la creazione del progetto.
+1. Il modello personalizzato dovrebbe essere visualizzato come una delle opzioni per la creazione del progetto.
 
    ![Scegli modello](./assets/develop-aem-projects/choose-template.png)
 
-1. Dopo aver selezionato il modello personalizzato, fai clic su &quot;Successivo&quot; e osserva che durante la compilazione dei membri del progetto puoi aggiungerli come ruolo di Approvatore.
+1. Dopo aver selezionato il modello personalizzato, fai clic su &quot;Successivo&quot; e osserva che quando popolerai i membri del progetto puoi aggiungerli come ruolo di Approvatore.
 
    ![Approva](./assets/develop-aem-projects/user-approver.png)
 
-1. Fai clic su &quot;Crea&quot; per completare la creazione del progetto in base al modello personalizzato. Noterai sul Dashboard di progetto che il Riquadro attività e gli altri riquadri configurati sotto i gadget vengono visualizzati automaticamente.
+1. Fai clic su Crea per completare la creazione del progetto basato sul modello personalizzato. Noterai nella dashboard del progetto che la sezione Attività e le altre tessere configurate in gadget vengono visualizzate automaticamente.
 
-   ![Riquadro attività](./assets/develop-aem-projects/tasks-tile.png)
+   ![Sezione attività](./assets/develop-aem-projects/tasks-tile.png)
 
 
 ## Perché Workflow?
 
-Tradizionalmente, AEM flussi di lavoro che si basano su un processo di approvazione hanno utilizzato i passaggi del flusso di lavoro Partecipante. La casella in entrata AEM include informazioni dettagliate sulle attività e sul flusso di lavoro e sull’integrazione con i progetti AEM. Queste funzioni rendono più attraente l’utilizzo dei passaggi del processo Crea attività di progetti .
+In genere, i flussi di lavoro AEM incentrati su un processo di approvazione utilizzano i passaggi del flusso di lavoro Partecipante. La Casella in entrata AEM include informazioni dettagliate su Attività e Flusso di lavoro e su una migliore integrazione con i progetti AEM. Queste funzioni rendono più interessante l&#39;utilizzo delle fasi del processo di creazione dei progetti.
 
-### Perché eseguire le attività?
+### Perché le Attività?
 
-L&#39;utilizzo di un passaggio di creazione attività sui passaggi Partecipante tradizionali offre un paio di vantaggi:
+L’utilizzo di un passaggio di creazione attività rispetto ai passaggi partecipanti tradizionali offre un paio di vantaggi:
 
-* **Data di inizio e di scadenza** - semplifica la gestione del tempo da parte degli autori, la nuova funzione Calendario utilizza queste date.
-* **Priorità** - priorità integrate Bassa, Normale e Alta consentono agli autori di dare priorità al lavoro
-* **Commenti filettati** - poiché gli autori lavorano su un compito hanno la possibilità di lasciare i commenti aumentando la collaborazione
-* **Visibilità** - I riquadri attività e le visualizzazioni con Progetti consentono ai responsabili di visualizzare il tempo trascorso
-* **Integrazione del progetto** - Attività già integrate con ruoli e dashboard di Project
+* **Data di inizio e di scadenza** - consente agli autori di gestire facilmente il proprio orario, la nuova funzione Calendario sfrutta queste date.
+* **Priorità** : le priorità predefinite di Bassa, Normale e Alta consentono agli autori di assegnare la priorità all’opera
+* **Commenti concatenati** - gli autori possono lasciare commenti, aumentando la collaborazione
+* **Visibilità** - Le sezioni dei task e le viste con Progetti consentono ai responsabili di visualizzare il modo in cui il tempo viene trascorso
+* **Integrazione dei progetti** - Le attività sono già integrate con i ruoli e le dashboard di Project
 
-Come per i passaggi Partecipante, le Attività possono essere assegnate e indirizzate in modo dinamico. I metadati dell’attività, come Titolo, Priorità possono essere impostati in modo dinamico in base alle azioni precedenti, come verrà illustrato nell’esercitazione seguente.
+Analogamente ai passaggi Partecipante, le attività possono essere assegnate e instradate in modo dinamico. I metadati delle attività come Titolo, Priorità possono anche essere impostati in modo dinamico in base alle azioni precedenti, come vedremo con la seguente esercitazione.
 
-Anche se le attività presentano alcuni vantaggi rispetto ai passaggi partecipanti, comportano un sovraccarico aggiuntivo e non sono utili al di fuori di un progetto. Inoltre, tutti i comportamenti dinamici delle Attività devono essere codificati utilizzando script ecma che hanno le proprie limitazioni.
+Anche se le attività hanno alcuni vantaggi rispetto ai passaggi dei partecipanti, hanno un sovraccarico aggiuntivo e non sono così utili al di fuori di un progetto. Inoltre, tutti i comportamenti dinamici delle attività devono essere codificati utilizzando script ecma con proprie limitazioni.
 
-## Requisiti del caso d’uso di esempio {#goals-tutorial}
+## Requisiti di esempio per i casi d’uso {#goals-tutorial}
 
 ![Diagramma del processo del flusso di lavoro](./assets/develop-aem-projects/workflow-process-diagram.png)
 
-Il diagramma precedente illustra i requisiti di alto livello per il flusso di lavoro di approvazione del campione.
+Il diagramma precedente illustra i requisiti di alto livello per il flusso di lavoro di approvazione del nostro esempio.
 
 Il primo passaggio consiste nel creare un&#39;attività per completare la modifica di un contenuto. L’iniziatore del flusso di lavoro potrà scegliere l’assegnatario di questa prima attività.
 
-Una volta completata la prima attività, l’assegnatario avrà tre opzioni per indirizzare il flusso di lavoro:
+Una volta completata la prima attività, l’assegnatario disporrà di tre opzioni per l’instradamento del flusso di lavoro:
 
-**Normale **- il ciclo normale crea un&#39;attività assegnata al gruppo di approvatori del progetto per la revisione e l&#39;approvazione. La priorità dell’attività è Normale e la data di scadenza è di 5 giorni dalla creazione.
+**Normale **: il ciclo normale crea un&#39;attività assegnata al gruppo Approvatore del progetto da esaminare e approvare. La priorità dell&#39;attività è Normale e la data di scadenza è 5 giorni dalla data di creazione.
 
-**Rotta** - il routing rapido crea anche un&#39;attività assegnata al gruppo Approvatore del progetto. La priorità dell’attività è Alta e la data di scadenza è solo 1 giorno.
+**Affrettati** - L&#39;instradamento rapido crea anche un&#39;attività assegnata al gruppo Approvatore del progetto. La priorità dell&#39;attività è Alta e la data di scadenza è solo 1 giorno.
 
-**Ignora** - in questo flusso di lavoro di esempio, il partecipante iniziale ha la possibilità di ignorare il gruppo di approvazione. (sì, questo potrebbe vanificare lo scopo di un flusso di lavoro &quot;Approvazione&quot;, ma ci consente di illustrare funzionalità di routing aggiuntive)
+**Ignora** - in questo flusso di lavoro di esempio il partecipante iniziale ha la possibilità di ignorare il gruppo di approvazione. (sì, questo potrebbe vanificare lo scopo di un flusso di lavoro di approvazione, ma ci permette di illustrare ulteriori funzionalità di indirizzamento)
 
-Il gruppo di approvatori può approvare il contenuto o inviarlo nuovamente all’assegnatario iniziale per la rielaborazione. Nel caso in cui venga rimandato per la rielaborazione, viene creata una nuova attività con l’etichetta appropriata &quot;Inviato indietro per la rielaborazione&quot;.
+Il gruppo di approvatori può approvare il contenuto o inviarlo nuovamente all&#39;assegnatario iniziale per la rilavorazione. Se viene rimandata per la rielaborazione, viene creata una nuova attività con l’etichetta appropriata &quot;Rinviata per la rielaborazione&quot;.
 
-L’ultimo passaggio del flusso di lavoro utilizza la fase del processo ootb Attiva pagina/Risorsa e replica il payload.
+L’ultimo passaggio del flusso di lavoro utilizza il passaggio del processo di attivazione pagina/risorsa e replica il payload.
 
 ## Creare il modello di flusso di lavoro
 
-1. Dal menu di avvio AEM passare a Strumenti -> Flusso di lavoro -> Modelli. Fai clic su &quot;Crea&quot; nell’angolo in alto a destra per creare un nuovo modello di flusso di lavoro.
+1. Dal menu Start di AEM, vai a Strumenti -> Flusso di lavoro -> Modelli. Fai clic su Crea nell’angolo in alto a destra per creare un nuovo modello di flusso di lavoro.
 
-   Assegna un titolo al nuovo modello: &quot;Flusso di lavoro di approvazione del contenuto&quot; e un nome url: &quot;content-authorization-workflow&quot;.
+   Assegna al nuovo modello un titolo: &quot;Flusso di lavoro di approvazione del contenuto&quot; e un nome URL: &quot;content-approval-workflow&quot;.
 
-   ![Finestra di dialogo Crea flusso di lavoro](./assets/develop-aem-projects/workflow-create-dialog.png)
+   ![Finestra di dialogo per creazione flusso di lavoro](./assets/develop-aem-projects/workflow-create-dialog.png)
 
-   Per ulteriori informazioni relative a [creazione di flussi di lavoro qui](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-models.html).
+   Per ulteriori informazioni relative a [creazione di flussi di lavoro leggi qui](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-models.html).
 
-1. Come best practice, i flussi di lavoro personalizzati devono essere raggruppati nella propria cartella sotto /etc/workflow/models. In CRXDE Lite crea una nuova **&#39;nt:folder&#39;** sotto /etc/workflow/models denominati **&quot;aem-guides&quot;**. L’aggiunta di una sottocartella assicura che i flussi di lavoro personalizzati non vengano accidentalmente sovrascritti durante gli aggiornamenti o le installazioni del Service Pack.
+1. Come best practice, i flussi di lavoro personalizzati devono essere raggruppati in una cartella separata sotto /etc/workflow/models. In CRXDE Lite crea un nuovo **&#39;nt:folder&#39;** sotto /etc/workflow/models denominato **&quot;aem-guides&quot;**. L’aggiunta di una sottocartella assicura che i flussi di lavoro personalizzati non vengano accidentalmente sovrascritti durante gli aggiornamenti o le installazioni di Service Pack.
 
-   &#42;Nota che è importante non inserire mai la cartella o i flussi di lavoro personalizzati sotto le sottocartelle ootb come /etc/workflow/models/dam o /etc/workflow/models/projects, in quanto l&#39;intera sottocartella può anche essere sovrascritta da aggiornamenti o service pack.
+   &#42;Tieni presente che è importante non posizionare mai la cartella o i flussi di lavoro personalizzati sotto le sottocartelle ootb come /etc/workflow/models/dam o /etc/workflow/models/projects, in quanto anche l’intera sottocartella potrebbe essere sovrascritta da aggiornamenti o service pack.
 
    ![Posizione del modello di flusso di lavoro in 6.3](./assets/develop-aem-projects/custom-workflow-subfolder.png)
 
@@ -322,38 +322,38 @@ L’ultimo passaggio del flusso di lavoro utilizza la fase del processo ootb Att
 
    >[!NOTE]
    >
-   >Se utilizzi AEM 6.4+, la posizione del Flusso di lavoro è cambiata. Vedi [qui per maggiori dettagli.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-best-practices.html#LocationsWorkflowModels)
+   >Se utilizzi AEM 6.4+ la posizione del flusso di lavoro è cambiata. Consulta [qui per ulteriori dettagli.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-best-practices.html#LocationsWorkflowModels)
 
-   Se utilizzi AEM 6.4+, il modello di flusso di lavoro viene creato in `/conf/global/settings/workflow/models`. Ripeti i passaggi precedenti con la directory /conf e aggiungi una sottocartella denominata `aem-guides` e sposta `content-approval-workflow` sotto.
+   Se utilizzi AEM 6.4+, il modello di flusso di lavoro viene creato in `/conf/global/settings/workflow/models`. Ripeti i passaggi precedenti con la directory /conf e aggiungi una sottocartella denominata `aem-guides` e spostare il `content-approval-workflow` sotto di esso.
 
-   ![Percorso moderno di definizione del flusso di lavoro](./assets/develop-aem-projects/modern-workflow-definition-location.png)
+   ![Percorso definizione flusso di lavoro moderno](./assets/develop-aem-projects/modern-workflow-definition-location.png)
 Posizione del modello di flusso di lavoro in 6.4+
 
-1. Introdotto in AEM 6.3 è la possibilità di aggiungere fasi del flusso di lavoro a un determinato flusso di lavoro. Le fasi vengono visualizzate all’utente dalla casella in entrata nella scheda Informazioni flusso di lavoro. Mostra all’utente la fase corrente del flusso di lavoro e le fasi che lo precedono e seguono.
+1. Introdotta in AEM 6.3 è la possibilità di aggiungere Fasi del flusso di lavoro a un determinato flusso di lavoro. Le fasi vengono visualizzate dall&#39;utente nella casella Posta in arrivo della scheda Informazioni flusso di lavoro. Mostrerà all’utente la fase corrente del flusso di lavoro e le fasi precedenti e successive.
 
-   Per configurare le aree di visualizzazione, apri la finestra di dialogo Proprietà pagina dal pulsante SideKick. La quarta scheda è etichettata &quot;Stadi&quot;. Aggiungi i seguenti valori per configurare le tre fasi di questo flusso di lavoro:
+   Per configurare le fasi, apri la finestra di dialogo Proprietà pagina dalla barra laterale. La quarta scheda è etichettata &quot;Stadi&quot;. Aggiungi i seguenti valori per configurare le tre fasi di questo flusso di lavoro:
 
    1. Modifica contenuto
    1. Approvazione
    1. Pubblicazione
 
-   ![configurazione delle fasi del flusso di lavoro](./assets/develop-aem-projects/workflow-model-stage-properties.png)
+   ![configurazione fasi flusso di lavoro](./assets/develop-aem-projects/workflow-model-stage-properties.png)
 
-   Configura le fasi del flusso di lavoro dalla finestra di dialogo Proprietà pagina .
+   Configura gli Stadi del Flusso di lavoro dalla finestra di dialogo Proprietà pagina.
 
    ![barra di avanzamento del flusso di lavoro](./assets/develop-aem-projects/workflow-info-progress.png)
 
-   La barra di avanzamento del flusso di lavoro visualizzata dalla casella in entrata AEM.
+   Barra di avanzamento del flusso di lavoro visualizzata dalla casella in entrata AEM.
 
-   Facoltativamente, puoi caricare un **Immagine** nelle Proprietà pagina utilizzate come miniatura del flusso di lavoro quando gli utenti la selezionano. Le dimensioni dell&#39;immagine devono essere 319x319 pixel. Aggiunta di un **Descrizione** In Proprietà pagina viene visualizzato anche quando un utente accede per selezionare il flusso di lavoro.
+   Facoltativamente, puoi caricare un **Immagine** alle Proprietà pagina utilizzate come miniatura del flusso di lavoro quando viene selezionata dagli utenti. Le dimensioni dell’immagine devono essere di 319x319 pixel. Aggiunta di un **Descrizione** Le proprietà della pagina vengono visualizzate anche quando un utente va a selezionare il flusso di lavoro.
 
-1. Il processo del flusso di lavoro Crea attività progetto è progettato per creare un’attività come passaggio nel flusso di lavoro. Solo una volta completata l’attività, il flusso di lavoro procederà. Un aspetto importante del passaggio Crea attività progetto è che può leggere i valori dei metadati del flusso di lavoro e usarli per creare in modo dinamico l&#39;attività.
+1. Il processo di flusso di lavoro Crea attività progetto è progettato per creare un’attività come passaggio nel flusso di lavoro. Solo dopo aver completato l’attività il flusso di lavoro proseguirà. Un aspetto importante del passaggio Crea attività progetto è che può leggere i valori dei metadati del flusso di lavoro e utilizzarli per creare l’attività in modo dinamico.
 
-   Elimina innanzitutto il Passaggio partecipante che viene creato per impostazione predefinita. Dalla barra laterale nel menu dei componenti , espandi la **&quot;Progetti&quot;** sottotitolo e trascina e rilascia la **&quot;Crea attività progetto&quot;** sul modello.
+   Elimina innanzitutto il Passaggio partecipante creato per impostazione predefinita. Dalla barra laterale nel menu dei componenti, espandi la sezione **&quot;Progetti&quot;** sottotitolo e trascina i tasti **&quot;Crea attività progetto&quot;** sul modello.
 
    Fai doppio clic sul passaggio &quot;Crea attività progetto&quot; per aprire la finestra di dialogo del flusso di lavoro. Configura le seguenti proprietà:
 
-   Questa scheda è comune per tutti i passaggi del processo del flusso di lavoro e imposteremo il Titolo e la Descrizione (che non saranno visibili all’utente finale). La proprietà importante che imposteremo è Workflow Stage su **&quot;Modifica contenuto&quot;** dal menu a discesa.
+   Questa scheda è comune a tutti i passaggi del processo del flusso di lavoro e verranno impostati Titolo e Descrizione (non visibili all’utente finale). La proprietà importante che verrà impostata è Workflow Stage (Fase del flusso di lavoro) **&quot;Modifica contenuto&quot;** dal menu a discesa.
 
    ```shell
    Common Tab
@@ -363,7 +363,7 @@ Posizione del modello di flusso di lavoro in 6.4+
        Workflow Stage = "Edit Content"
    ```
 
-   Il processo del flusso di lavoro Crea attività progetto è progettato per creare un’attività come passaggio nel flusso di lavoro. La scheda Attività consente di impostare tutti i valori dell’attività. Nel nostro caso vogliamo che l&#39;Assegnatario sia dinamico in modo da lasciarlo vuoto. Il resto dei valori della proprietà:
+   Il processo di flusso di lavoro Crea attività progetto è progettato per creare un’attività come passaggio nel flusso di lavoro. La scheda Attività consente di impostare tutti i valori dell&#39;attività. Nel nostro caso, vogliamo che l’assegnatario sia dinamico, quindi lasceremo il campo vuoto. I restanti valori della proprietà:
 
    ```shell
    Task Tab
@@ -374,7 +374,7 @@ Posizione del modello di flusso di lavoro in 6.4+
        Due In - Days = "2"
    ```
 
-   La scheda di routing è una finestra di dialogo facoltativa che può specificare le azioni disponibili per l’utente che completa l’attività. Queste azioni sono solo valori stringa e vengono salvate nei metadati del flusso di lavoro. Questi valori possono essere letti da script e/o fasi di processo successive nel flusso di lavoro per &quot;indirizzare&quot; in modo dinamico il flusso di lavoro. In base ai [obiettivi del flusso di lavoro](#goals-tutorial) verranno aggiunte tre azioni a questa scheda:
+   La scheda di instradamento è una finestra di dialogo facoltativa che può specificare le azioni disponibili per l&#39;utente che completa l&#39;operazione. Queste azioni sono solo valori stringa e vengono salvate nei metadati del flusso di lavoro. Questi valori possono essere letti da script e/o passaggi di processo più avanti nel flusso di lavoro per &quot;indirizzare&quot; dinamicamente il flusso di lavoro. In base al [obiettivi del flusso di lavoro](#goals-tutorial) a questa scheda verranno aggiunte tre azioni:
 
    ```shell
    Routing Tab
@@ -385,7 +385,7 @@ Posizione del modello di flusso di lavoro in 6.4+
            "Bypass Approval"
    ```
 
-   Questa scheda ci consente di configurare uno script di attività pre-creazione in cui possiamo decidere programmaticamente vari valori dell’attività prima che venga creata. È possibile puntare lo script su un file esterno o incorporare uno script breve direttamente nella finestra di dialogo. Nel nostro caso, punteremo lo Script di attività pre-creazione su un file esterno. Nel passaggio 5 creeremo lo script.
+   Questa scheda consente di configurare uno script pre-creazione attività in cui è possibile decidere in modo programmatico vari valori dell&#39;attività prima che venga creata. Abbiamo la possibilità di puntare lo script a un file esterno o di incorporare uno script breve direttamente nella finestra di dialogo. Nel nostro caso, lo script pre-creazione attività verrà indirizzato a un file esterno. Nel passaggio 5 creeremo tale script.
 
    ```shell
    Advanced Settings Tab
@@ -393,11 +393,11 @@ Posizione del modello di flusso di lavoro in 6.4+
       Pre-Create Task Script = "/apps/aem-guides/projects/scripts/start-task-config.ecma"
    ```
 
-1. Nel passaggio precedente abbiamo fatto riferimento a uno script di attività pre-creazione. Ora creeremo lo script in cui imposteremo l’assegnatario dell’attività in base al valore di un valore di metadati del flusso di lavoro &quot;**assegnatario**&quot;. La **&quot;assegnatario&quot;** viene impostato quando il flusso di lavoro viene avviato. Leggeremo anche i metadati del flusso di lavoro per scegliere dinamicamente la priorità dell&#39;attività leggendo il &quot;**taskPriority&quot;** valore dei metadati del flusso di lavoro e **&quot;taskDueDate&quot; **impostato in modo dinamico alla scadenza della prima attività.
+1. Nel passaggio precedente si faceva riferimento a uno script di pre-creazione attività. Ora creeremo quello script in cui imposteremo l’assegnatario dell’attività in base al valore di un valore di metadati del flusso di lavoro &quot;**assegnatario**&quot;. Il **&quot;assegnatario&quot;** Il valore viene impostato quando il flusso di lavoro viene avviato. Leggeremo anche i metadati del flusso di lavoro per scegliere dinamicamente la priorità dell’attività leggendo il file &quot;**taskPriority&quot;** valore dei metadati del flusso di lavoro e ** &quot;taskDueDate&quot; **da impostare in modo dinamico alla scadenza della prima attività.
 
-   A scopo organizzativo abbiamo creato una cartella sotto la cartella dell’app in cui sono contenuti tutti gli script relativi al progetto: **/apps/aem-guides/projects-task/projects/scripts**. Crea un nuovo file sotto questa cartella denominato **&quot;start-task-config.ecma&quot;**. &#42;Assicurati che il percorso del file start-task-config.ecma corrisponda al percorso impostato nella scheda Impostazioni avanzate del passaggio 4.
+   Per motivi organizzativi, abbiamo creato una cartella sotto la cartella dell’app contenente tutti gli script relativi al progetto: **/apps/aem-guides/projects-tasks/projects/scripts**. Crea un nuovo file sotto questa cartella denominato **&quot;start-task-config.ecma&quot;**. &#42;Si noti che il percorso del file start-task-config.ecma corrisponde al percorso impostato nella scheda Impostazioni avanzate al passaggio 4.
 
-   Aggiungi quanto segue come contenuto del file :
+   Aggiungi quanto segue come contenuto del file:
 
    ```
    // start-task-config.ecma
@@ -418,7 +418,7 @@ Posizione del modello di flusso di lavoro in 6.4+
    task.setProperty("taskPriority", taskPriority);
    ```
 
-1. Torna al flusso di lavoro di approvazione dei contenuti . Trascina e rilascia **Divisione OR** (nella barra laterale sotto la categoria &quot;Flusso di lavoro&quot;) sotto la **Avvia attività** Passo. Nella finestra di dialogo comune selezionare il pulsante di scelta per 3 rami. La divisione OR leggerà il valore dei metadati del flusso di lavoro **&quot;lastTaskAction&quot;** per determinare il percorso del flusso di lavoro. La **&quot;lastTaskAction&quot;** viene impostata su uno dei valori della scheda Indirizzamento configurata nel passaggio 4. Per ciascuna delle schede Ramo compilare il **Script** area di testo con i seguenti valori:
+1. Torna al flusso di lavoro di approvazione dei contenuti. Trascina la selezione **Suddivisione O** componente (che si trova nella barra laterale sotto la categoria &quot;Flusso di lavoro&quot;) sotto **Avvia attività** Passaggio. Nella finestra di dialogo Comune, seleziona il pulsante di opzione per 3 rami. La suddivisione O leggerà il valore dei metadati del flusso di lavoro **&quot;lastTaskAction&quot;** per determinare il percorso del flusso di lavoro. Il **&quot;lastTaskAction&quot;** è impostata su uno dei valori della scheda Indirizzamento configurata nel passaggio 4. Per ciascuna scheda Ramo, compila **Script** area di testo con i seguenti valori:
 
    ```
    function check() {
@@ -456,9 +456,9 @@ Posizione del modello di flusso di lavoro in 6.4+
    }
    ```
 
-   &#42;Si sta effettuando una corrispondenza diretta di stringa per determinare il percorso, quindi è importante che i valori impostati negli script di ramo corrispondano ai valori di route impostati nel passaggio 4.
+   &#42;Si noti che viene eseguita una corrispondenza Stringa diretta per determinare la route, pertanto è importante che i valori impostati negli script Branch corrispondano ai valori di Route impostati nel passaggio 4.
 
-1. Trascina e rilascia un altro &quot;**Crea attività progetto**&quot; passare al modello all&#39;estrema sinistra (Ramo 1) sotto la divisione OR. Compila la finestra di dialogo con le seguenti proprietà:
+1. Trascina un altro elemento &quot;**Crea attività progetto**&quot; posiziona il cursore sul modello all’estrema sinistra (Ramo 1) sotto la divisione OR. Compila la finestra di dialogo con le seguenti proprietà:
 
    ```
    Common Tab
@@ -480,11 +480,11 @@ Posizione del modello di flusso di lavoro in 6.4+
        "Send Back for Revision"
    ```
 
-   Poiché si tratta del percorso di approvazione normale, la priorità dell&#39;attività è impostata su Media. Inoltre, assegniamo al gruppo di approvatori 5 giorni per completare l’attività. Assegnatario viene lasciato vuoto nella scheda Attività in quanto lo assegneremo in modo dinamico nella scheda Impostazioni avanzate. Al completamento di questa attività, assegniamo al gruppo di approvatori due percorsi possibili: **&quot;Approva e pubblica&quot;** se approvano il contenuto e possono essere pubblicati e **&quot;Porta indietro per la revisione&quot;** in caso di problemi che l’editor originale deve correggere. L’approvatore può lasciare dei commenti che l’editor originale vedrà se il flusso di lavoro gli viene restituito.
+   Poiché questo è il percorso di approvazione normale, la priorità dell&#39;attività è impostata su Medio. Inoltre, al gruppo Approvatori vengono concessi 5 giorni per completare l&#39;Attività. L’assegnatario viene lasciato vuoto nella scheda Attività poiché questo viene assegnato in modo dinamico nella scheda Impostazioni avanzate. Al completamento di questa attività, al gruppo approvatori vengono assegnati due percorsi possibili: **&quot;Approva e pubblica&quot;** se approvano il contenuto e può essere pubblicato e **&quot;Invia di nuovo per revisione&quot;** in caso di problemi che l’editor originale deve risolvere. L’approvatore può lasciare commenti che l’editor originale visualizzerà se il flusso di lavoro gli viene restituito.
 
-In precedenza, in questa esercitazione abbiamo creato un modello di progetto che includeva un ruolo approvatori. Ogni volta che viene creato un nuovo progetto da questo modello viene creato un gruppo specifico per il progetto per il ruolo Approvatori. Come un Passaggio partecipante, un&#39;attività può essere assegnata solo a un Utente o Gruppo. Desideriamo assegnare questa attività al gruppo di progetto corrispondente al gruppo di approvatori. Tutti i flussi di lavoro avviati da un progetto avranno metadati che mappano i ruoli del progetto al gruppo specifico del progetto.
+Nelle sezioni precedenti di questo tutorial è stato creato un modello di progetto con un ruolo Approvatori. Ogni volta che viene creato un nuovo progetto da questo modello, viene creato un gruppo specifico per il progetto per il ruolo Approvatori. Proprio come un Passaggio Partecipante, un&#39;attività può essere assegnata solo a un Utente o a un Gruppo. Questa attività deve essere assegnata al gruppo di progetti che corrisponde al gruppo di approvatori. Tutti i flussi di lavoro avviati all’interno di un progetto avranno metadati che mappano i Ruoli del progetto al gruppo specifico del progetto.
 
-Copia e incolla il seguente codice nel **Script** area di testo della scheda **Impostazioni avanzate **2. Questo codice legge i metadati del flusso di lavoro e assegna l&#39;attività al gruppo Approvatori del progetto. Se non è in grado di trovare il valore del gruppo di approvatori, tornerà ad assegnare l&#39;attività al gruppo Amministratori.
+Copia e incolla il seguente codice nel **Script** area di testo della scheda **Impostazioni avanzate **. Questo codice legge i metadati del flusso di lavoro e assegna l’attività al gruppo Approvatori del progetto. Se non è possibile trovare il valore del gruppo approvatori, verrà eseguito il fallback assegnando l&#39;attività al gruppo Administrators.
 
 ```
 var projectApproverGrp = workflowData.getMetaDataMap().get("project.group.approvers","administrators");
@@ -492,7 +492,7 @@ var projectApproverGrp = workflowData.getMetaDataMap().get("project.group.approv
 task.setCurrentAssignee(projectApproverGrp);
 ```
 
-1. Trascina e rilascia un altro &quot;**Crea attività progetto**&quot; passare al modello al ramo centrale (ramo 2) sotto la divisione OR. Compila la finestra di dialogo con le seguenti proprietà:
+1. Trascina un altro elemento &quot;**Crea attività progetto**&quot; posiziona il modello nel ramo centrale (Ramo 2) sotto la divisione OR. Compila la finestra di dialogo con le seguenti proprietà:
 
    ```
    Common Tab
@@ -514,9 +514,9 @@ task.setCurrentAssignee(projectApproverGrp);
        "Send Back for Revision"
    ```
 
-   Poiché si tratta del percorso di approvazione di Rush, la priorità dell&#39;attività è impostata su Alta. Inoltre, assegniamo al gruppo di approvatori un solo giorno per completare l&#39;attività. Assegnatario viene lasciato vuoto nella scheda Attività in quanto lo assegneremo in modo dinamico nella scheda Impostazioni avanzate.
+   Poiché questo è il percorso di approvazione rapida, la priorità dell&#39;attività è impostata su Alta. Inoltre, al gruppo Approvatori viene assegnato un solo giorno per completare l&#39;attività. L’assegnatario viene lasciato vuoto nella scheda Attività poiché questo viene assegnato in modo dinamico nella scheda Impostazioni avanzate.
 
-   È possibile riutilizzare lo stesso frammento di script del passaggio 7 per compilare il **Script** area di testo nella scheda** Impostazioni avanzate **. Copia+Incolla il codice seguente:
+   Possiamo riutilizzare lo stesso frammento di script del passaggio 7 per popolare **Script** area di testo nella scheda** Impostazioni avanzate **. Copia e incolla il codice seguente:
 
    ```
    var projectApproverGrp = workflowData.getMetaDataMap().get("project.group.approvers","administrators");
@@ -524,7 +524,7 @@ task.setCurrentAssignee(projectApproverGrp);
    task.setCurrentAssignee(projectApproverGrp);
    ```
 
-1. Trascinare un componente** No Operation** sul ramo a destra (ramo 3). Il componente Nessuna operazione non esegue alcuna azione e viene anticipato immediatamente, rappresentando il desiderio dell&#39;editor originale di ignorare il passaggio di approvazione. Tecnicamente potremmo uscire da questo ramo senza alcuna fase del flusso di lavoro, ma come best practice aggiungeremo un passaggio Nessuna operazione. Questo rende chiaro agli altri sviluppatori qual è lo scopo della Ramo 3.
+1. Trascina + rilascia un componente** nessuna operazione** all’estrema destra del ramo (Ramo 3). Il componente Nessuna operazione non esegue alcuna azione e avanza immediatamente, rappresentando il desiderio dell’editor originale di ignorare il passaggio di approvazione. Tecnicamente potremmo lasciare questo ramo senza alcun passaggio del flusso di lavoro, ma come best practice aggiungeremo un passaggio Nessuna operazione. Questo chiarisce agli altri sviluppatori qual è lo scopo del ramo 3.
 
    Fai doppio clic sul passaggio del flusso di lavoro e configura il Titolo e la Descrizione:
 
@@ -535,13 +535,13 @@ task.setCurrentAssignee(projectApproverGrp);
        Description = "Placeholder step to indicate that the original editor decided to bypass the approver group."
    ```
 
-   ![modello di workflow O divisione](./assets/develop-aem-projects/workflow-stage-after-orsplit.png)
+   ![modello di flusso di lavoro o suddivisione](./assets/develop-aem-projects/workflow-stage-after-orsplit.png)
 
-   Il modello di flusso di lavoro dovrebbe essere simile a questo dopo che tutti e tre i rami nella suddivisione OR sono stati configurati.
+   Il modello di flusso di lavoro deve essere simile a questo dopo la configurazione di tutti e tre i rami nella suddivisione O.
 
-1. Poiché il gruppo dei approvatori ha la possibilità di inviare il flusso di lavoro all&#39;editor originale per ulteriori revisioni, ci affideremo al **Goto** per leggere l’ultima azione intrapresa e indirizzare il flusso di lavoro all’inizio o lasciarlo continuare.
+1. Poiché il gruppo Approvatori ha la possibilità di inviare nuovamente il flusso di lavoro all’editor originale per ulteriori revisioni, ci baseremo su **Vai a** passaggio per leggere l’ultima azione eseguita e instradare il flusso di lavoro all’inizio o lasciarlo continuare.
 
-   Trascina+Rilascia il componente Passaggio a (disponibile nella barra laterale in Flusso di lavoro) sotto la divisione OR (O) in cui si unisce nuovamente. Fai doppio clic su e configura le seguenti proprietà nella finestra di dialogo:
+   Trascina il componente Vai al passaggio (che si trova nella barra laterale in Flusso di lavoro) sotto la divisione O dove si unisce di nuovo. Fai doppio clic su e configura le seguenti proprietà nella finestra di dialogo:
 
    ```
    Common Tab
@@ -554,11 +554,11 @@ task.setCurrentAssignee(projectApproverGrp);
        The step to go to. = "Start Task Creation"
    ```
 
-   L’ultimo elemento che configureremo è lo Script come parte del passaggio del processo Passaggio . Il valore Script può essere incorporato tramite la finestra di dialogo o configurato per puntare a un file esterno. Lo script GoScript deve contenere un **function check()** e restituisce true se il flusso di lavoro deve passare al passaggio specificato. Un ritorno di false restituisce risultati nel flusso di lavoro in avanzamento.
+   L’ultimo elemento che configureremo è lo script come parte del passaggio del processo Vai a. Il valore Script può essere incorporato tramite la finestra di dialogo o configurato per puntare a un file esterno. Lo script Vai a deve contenere **function check()** e restituisce true se il flusso di lavoro deve andare al passaggio specificato. Se si restituiscono risultati falsi, il flusso di lavoro continua.
 
-   Se il gruppo approvatore sceglie il **&quot;Porta indietro per la revisione&quot;** action (configurata nei passaggi 7 e 8), quindi vogliamo restituire il flusso di lavoro al **&quot;Avvia creazione attività&quot;** passo.
+   Se il gruppo di approvatori sceglie **&quot;Invia di nuovo per revisione&quot;** (configurato nei passaggi 7 e 8), il flusso di lavoro deve essere restituito al **&quot;Avvia creazione attività&quot;** passaggio.
 
-   Nella scheda Processo aggiungere lo snippet seguente all’area di testo Script:
+   Nella scheda Processo aggiungere il frammento seguente all&#39;area di testo Script:
 
    ```
    function check() {
@@ -572,17 +572,17 @@ task.setCurrentAssignee(projectApproverGrp);
    }
    ```
 
-1. Per pubblicare il payload utilizzeremo l’ootb **Attiva pagina/risorsa** Passaggio del processo. Questo passaggio del processo richiede poca configurazione e aggiunge il payload del flusso di lavoro alla coda di replica per l’attivazione. Aggiungeremo il passaggio sotto il passaggio Goto e in questo modo sarà possibile raggiungerlo solo se il gruppo Approvatore ha approvato il contenuto per la pubblicazione o se l’editor originale ha scelto il percorso Bypass Approvazione.
+1. Per pubblicare il payload utilizzeremo l’ootb **Attiva pagina/risorsa** Passaggio del processo. Questo passaggio del processo richiede una configurazione ridotta e aggiungerà il payload del flusso di lavoro alla coda di replica per l’attivazione. Il passaggio successivo al passaggio Vai a verrà aggiunto e potrà essere raggiunto solo se il gruppo di approvatori ha approvato il contenuto per la pubblicazione o se l’editor originale ha scelto il percorso Ignora approvazione.
 
-   Trascina e rilascia **Attiva pagina/risorsa** Passaggio del processo (che si trova nella barra laterale in Flusso di lavoro WCM) sotto Passaggio a nel modello.
+   Trascina la selezione **Attiva pagina/risorsa** Passaggio del processo (disponibile nella barra laterale in Flusso di lavoro WCM) sotto il Passaggio vai a nel modello.
 
-   ![modello di workflow completato](assets/develop-aem-projects/workflow-model-final.png)
+   ![modello flusso di lavoro completato](assets/develop-aem-projects/workflow-model-final.png)
 
-   Aspetto del modello di flusso di lavoro dopo l’aggiunta del passaggio Passaggio e Attiva pagina/risorsa .
+   Descrizione dell’aspetto del modello di flusso di lavoro dopo l’aggiunta del passaggio Vai a e il passaggio Attiva pagina/risorsa.
 
-1. Se il gruppo Approvatore invia nuovamente il contenuto per la revisione, desideriamo informarlo l’editor originale. A tal fine, possiamo modificare dinamicamente le proprietà di creazione dell’attività. Verrà impostato il valore della proprietà lastActionTaken di **&quot;Porta indietro per la revisione&quot;**. Se tale valore è presente, modificheremo il titolo e la descrizione per indicare che l’attività è il risultato del ritrasferimento del contenuto per la revisione. Inoltre, aggiorneremo la priorità **&quot;Alta&quot;** in modo che sia il primo elemento su cui lavora l&#39;editor. Infine, imposteremo la data di scadenza dell’attività a un giorno dal momento in cui il flusso di lavoro è stato rimandato per la revisione.
+1. Se il gruppo di approvatori invia nuovamente il contenuto per la revisione, lo comunicheremo all’editor originale. Possiamo farlo modificando dinamicamente le proprietà di creazione dell’Attività. Verrà disattivato il valore della proprietà lastActionTaken di **&quot;Invia di nuovo per revisione&quot;**. Se tale valore è presente, verranno modificati il titolo e la descrizione per indicare che questa attività è il risultato del rinvio del contenuto per la revisione. Aggiorneremo inoltre la priorità a **&quot;Alta&quot;** in modo che sia il primo elemento su cui lavora l’editor. Infine, verrà impostata una data di scadenza dell’attività a un giorno dal momento in cui il flusso di lavoro è stato rimandato per la revisione.
 
-   Sostituire l&#39;inizio `start-task-config.ecma` script (creato nel passaggio 5) con quanto segue:
+   Sostituisci l’inizio `start-task-config.ecma` script (creato nel passaggio 5) con quanto segue:
 
    ```
    // start-task-config.ecma
@@ -623,23 +623,23 @@ task.setCurrentAssignee(projectApproverGrp);
    }
    ```
 
-## Crea la procedura guidata di avvio del flusso di lavoro {#start-workflow-wizard}
+## Creare la procedura guidata &quot;Avvia flusso di lavoro&quot; {#start-workflow-wizard}
 
-Quando scegli un flusso di lavoro dall’interno di un progetto, devi specificare una procedura guidata per avviare il flusso di lavoro. Procedura guidata predefinita: `/libs/cq/core/content/projects/workflowwizards/default_workflow` consente all’utente di inserire un titolo del flusso di lavoro, un commento iniziale e un percorso di payload per l’esecuzione del flusso di lavoro. Sono inoltre disponibili diversi altri esempi in: `/libs/cq/core/content/projects/workflowwizards`.
+Quando si avvia un flusso di lavoro da un progetto, è necessario specificare una procedura guidata per avviare il flusso di lavoro. Procedura guidata predefinita: `/libs/cq/core/content/projects/workflowwizards/default_workflow` consente all’utente di immettere un Titolo flusso di lavoro, un commento di inizio e un percorso di payload per il flusso di lavoro da eseguire. Ci sono anche diversi altri esempi trovati in: `/libs/cq/core/content/projects/workflowwizards`.
 
-La creazione di una procedura guidata personalizzata può essere molto efficace in quanto puoi raccogliere informazioni critiche prima dell’avvio del flusso di lavoro. I dati vengono memorizzati come parte dei metadati del flusso di lavoro e i processi del flusso di lavoro possono leggerli e cambiare dinamicamente il comportamento in base ai valori inseriti. Verrà creata una procedura guidata personalizzata per assegnare dinamicamente la prima attività nel flusso di lavoro in base a un valore di avvio guidato.
+La creazione di una procedura guidata personalizzata può essere molto utile in quanto consente di raccogliere informazioni critiche prima dell’avvio del flusso di lavoro. I dati vengono memorizzati come parte dei metadati del flusso di lavoro e i processi del flusso di lavoro possono leggerli e cambiare dinamicamente il comportamento in base ai valori immessi. Verrà creata una procedura guidata personalizzata per assegnare dinamicamente la prima attività nel flusso di lavoro in base a un valore della procedura guidata iniziale.
 
-1. In CRXDE-Lite creeremo una sottocartella sotto `/apps/aem-guides/projects-tasks/projects` cartella denominata &quot;procedure guidate&quot;. Copia la procedura guidata predefinita da: `/libs/cq/core/content/projects/workflowwizards/default_workflow` sotto la cartella delle procedure guidate appena creata e rinominarla in **inizio approvazione contenuto**. Il percorso completo dovrebbe ora essere: `/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start`.
+1. In CRXDE-Lite creeremo una sottocartella sotto a `/apps/aem-guides/projects-tasks/projects` cartella denominata &quot;procedure guidate&quot;. Copia la procedura guidata predefinita da: `/libs/cq/core/content/projects/workflowwizards/default_workflow` sotto la cartella delle procedure guidate appena creata e rinominala in **content-approval-start**. Ora il percorso completo dovrebbe essere: `/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start`.
 
-   La procedura guidata predefinita è una procedura guidata a 2 colonne con la prima colonna che mostra Titolo, Descrizione e Miniatura del modello di flusso di lavoro selezionato. La seconda colonna include i campi Titolo flusso di lavoro, Commento iniziale e Percorso payload. La procedura guidata è un modulo standard per l’interfaccia utente touch e utilizza lo standard [Componenti modulo per l’interfaccia utente Granite](https://experienceleague.adobe.com/docs/) per compilare i campi.
+   La procedura guidata predefinita è una procedura guidata a due colonne la cui prima colonna mostra Titolo, Descrizione e Miniatura del modello di flusso di lavoro selezionato. La seconda colonna include campi per Titolo flusso di lavoro, Commento iniziale e Percorso payload. La procedura guidata è un modulo interfaccia utente touch standard e utilizza [Componenti modulo interfaccia utente Granite](https://experienceleague.adobe.com/docs/) per compilare i campi.
 
-   ![procedura guidata flusso di lavoro di approvazione del contenuto](./assets/develop-aem-projects/content-approval-start-wizard.png)
+   ![procedura guidata flusso di lavoro di approvazione contenuti](./assets/develop-aem-projects/content-approval-start-wizard.png)
 
-1. Verrà aggiunto un campo aggiuntivo alla procedura guidata utilizzato per impostare l’assegnatario della prima attività nel flusso di lavoro (vedi [Creare il modello di flusso di lavoro](#create-workflow-model): Passaggio 5).
+1. Verrà aggiunto un campo aggiuntivo alla procedura guidata utilizzato per impostare l’assegnatario della prima attività nel flusso di lavoro (vedi [Creare il modello di flusso di lavoro](#create-workflow-model): passaggio 5).
 
-   Sotto `../content-approval-start/jcr:content/items/column2/items` crea un nuovo nodo di tipo `nt:unstructured` denominato **&quot;assegna&quot;**. Verrà utilizzato il componente Selettore utente per progetti (basato su [Componente Selettore utenti Granite](https://experienceleague.adobe.com/docs/)). Questo campo modulo consente di limitare facilmente la selezione di utenti e gruppi solo a quelli appartenenti al progetto corrente.
+   Sotto `../content-approval-start/jcr:content/items/column2/items` crea un nuovo nodo di tipo `nt:unstructured` denominato **&quot;assegna&quot;**. Verrà utilizzato il componente Selettore utente Progetti (basato su [Componente Selettore utente Granite](https://experienceleague.adobe.com/docs/)). Questo campo modulo consente di limitare facilmente la selezione di utenti e gruppi solo a quelli appartenenti al progetto corrente.
 
-   Di seguito è riportata la rappresentazione XML del **assegnare** nodo:
+   Di seguito è riportata la rappresentazione XML del **assegna** nodo:
 
    ```xml
    <assign
@@ -655,19 +655,19 @@ La creazione di una procedura guidata personalizzata può essere molto efficace 
        required="{Boolean}true"/>
    ```
 
-1. Verrà inoltre aggiunto un campo di selezione della priorità che determinerà la priorità della prima attività nel flusso di lavoro (vedi [Creare il modello di flusso di lavoro](#create-workflow-model): Passaggio 5).
+1. Verrà inoltre aggiunto un campo di selezione della priorità che determinerà la priorità della prima attività nel flusso di lavoro (vedere [Creare il modello di flusso di lavoro](#create-workflow-model): passaggio 5).
 
-   Sotto `/content-approval-start/jcr:content/items/column2/items` crea un nuovo nodo di tipo `nt:unstructured` denominato **priorità**. Useremo il [Componente Seleziona interfaccia Granite](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) per compilare il campo modulo.
+   Sotto `/content-approval-start/jcr:content/items/column2/items` crea un nuovo nodo di tipo `nt:unstructured` denominato **priorità**. Utilizzeremo [Componente Seleziona interfaccia utente Granite](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) per compilare il campo modulo.
 
-   Sotto **priorità** nodo verrà aggiunto un **items** nodo **nt:unstructured**. Sotto **items** aggiungere altri 3 nodi per popolare le opzioni di selezione per Alta, Media e Bassa. Ogni nodo è di tipo **nt:unstructured** e dovrebbe avere **text** e **value** proprietà. Sia il testo che il valore devono essere dello stesso valore:
+   Sotto **priorità** verrà aggiunto un nodo **elementi** nodo di **nt:unstructured**. Sotto **elementi** nodo aggiungi altri 3 nodi per popolare le opzioni di selezione Alta, Media e Bassa. Ogni nodo è di tipo **nt:unstructured** e deve avere **text** e **valore** proprietà. Sia il testo che il valore devono avere lo stesso valore:
 
    1. Alta
    1. Media
    1. Bassa
 
-   Per il nodo Medium aggiungere una proprietà booleana aggiuntiva denominata &quot;**selezionato&quot;** con un valore impostato su **true**. In questo modo il valore predefinito nel campo di selezione sarà Medio.
+   Per il nodo Medio aggiungi un’ulteriore proprietà booleana denominata &quot;**selected&quot;** con un valore impostato su **true**. In questo modo il valore predefinito nel campo di selezione sarà Medio.
 
-   Di seguito è riportata una rappresentazione XML della struttura del nodo e delle proprietà:
+   Di seguito è riportata una rappresentazione XML della struttura e delle proprietà del nodo:
 
    ```xml
    <priority
@@ -693,7 +693,7 @@ La creazione di una procedura guidata personalizzata può essere molto efficace 
    </priority>
    ```
 
-1. L’iniziatore del flusso di lavoro potrà impostare la data di scadenza dell’attività iniziale. Useremo il [Selettore data dell’interfaccia Granite](https://experienceleague.adobe.com/docs/) campo modulo per acquisire questo input. Verrà inoltre aggiunto un campo nascosto con un [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) per garantire che l&#39;input sia memorizzato come proprietà del tipo Date nel JCR.
+1. Consentiremo all’iniziatore del flusso di lavoro di impostare la scadenza dell’attività iniziale. Utilizzeremo [Selezione data interfaccia utente Granite](https://experienceleague.adobe.com/docs/) per acquisire questo input. Verrà inoltre aggiunto un campo nascosto con [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) per garantire che l’input venga memorizzato come proprietà di tipo Data nel JCR.
 
    Aggiungi due **nt:unstructured** nodi con le seguenti proprietà rappresentate in XML:
 
@@ -715,17 +715,17 @@ La creazione di una procedura guidata personalizzata può essere molto efficace 
        value="Calendar"/>
    ```
 
-1. Puoi visualizzare il codice completo della finestra di dialogo di avvio della procedura guidata [qui](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/projects-tasks-guide/ui.apps/src/main/content/jcr_root/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start/.content.xml).
+1. È possibile visualizzare il codice completo della finestra di dialogo di avvio della procedura guidata [qui](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/projects-tasks-guide/ui.apps/src/main/content/jcr_root/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start/.content.xml).
 
 ## Collegamento del flusso di lavoro e del modello di progetto {#connecting-workflow-project}
 
-L’ultima cosa che dobbiamo fare è garantire che il modello di flusso di lavoro sia disponibile per essere avviato da uno dei progetti. A questo scopo, è necessario visitare nuovamente il Modello di progetto creato nella parte 1 di questa serie.
+L’ultima cosa da fare è assicurarci che il modello di flusso di lavoro sia disponibile per essere avviato dall’interno di uno dei progetti. A tal fine, è necessario rivedere il Modello di progetto creato nella parte 1 di questa serie.
 
-La configurazione del flusso di lavoro è un’area di un modello di progetto che specifica i flussi di lavoro disponibili da utilizzare con tale progetto. La configurazione è anche responsabile di specificare la procedura guidata Avvia flusso di lavoro quando si attiva il flusso di lavoro (creato in [passaggi precedenti)](#start-workflow-wizard). La configurazione del flusso di lavoro di un modello di progetto è &quot;live&quot;, il che significa che l’aggiornamento della configurazione del flusso di lavoro avrà effetto sui nuovi progetti creati e sui progetti esistenti che utilizzano il modello.
+La configurazione del flusso di lavoro è un&#39;area di un modello di progetto che specifica i flussi di lavoro disponibili da utilizzare con quel progetto. La configurazione è anche responsabile della specifica dell’Avvio guidato flusso di lavoro durante l’avvio del flusso di lavoro (creato nel [passaggi precedenti)](#start-workflow-wizard). La configurazione del flusso di lavoro di un modello di progetto è &quot;live&quot;, il che significa che l’aggiornamento della configurazione del flusso di lavoro avrà effetto sui nuovi progetti creati e sui progetti esistenti che utilizzano il modello.
 
-1. In CRXDE-Lite passa al modello di progetto di authoring creato in precedenza in `/apps/aem-guides/projects-tasks/projects/templates/authoring-project/workflows/models`.
+1. In CRXDE-Lite passa al modello di progetto di authoring creato in precedenza alle `/apps/aem-guides/projects-tasks/projects/templates/authoring-project/workflows/models`.
 
-   Sotto il nodo dei modelli aggiungi un nuovo nodo denominato **approvazione del contenuto** con un tipo di nodo **nt:unstructured**. Aggiungi le seguenti proprietà al nodo :
+   Sotto il nodo dei modelli aggiungi un nuovo nodo denominato **contentapproval** con un tipo di nodo **nt:unstructured**. Aggiungi le seguenti proprietà al nodo:
 
    ```xml
    <contentapproval
@@ -737,10 +737,10 @@ La configurazione del flusso di lavoro è un’area di un modello di progetto ch
 
    >[!NOTE]
    >
-   >Se utilizzi AEM 6.4, la posizione del Flusso di lavoro è cambiata. Punto `modelId` alla posizione del modello di flusso di lavoro runtime in `/var/workflow/models/aem-guides/content-approval-workflow`
+   >Se utilizzi AEM 6.4, la posizione del flusso di lavoro è cambiata. Puntare il `modelId` alla posizione del modello di flusso di lavoro di runtime in `/var/workflow/models/aem-guides/content-approval-workflow`
    >
    >
-   >Vedi [qui per ulteriori dettagli sul cambiamento nella posizione del flusso di lavoro.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-best-practices.html#LocationsWorkflowModels)
+   >Consulta [qui per ulteriori dettagli sulla modifica della posizione del flusso di lavoro.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-best-practices.html#LocationsWorkflowModels)
 
    ```xml
    <contentapproval
@@ -750,10 +750,10 @@ La configurazione del flusso di lavoro è un’area di un modello di progetto ch
    />
    ```
 
-1. Una volta aggiunto il flusso di lavoro Approvazione del contenuto al modello di progetto, dovrebbe essere disponibile per avviare il flusso di lavoro dal riquadro del progetto. Procedi e lancia e gioca con i vari cicli che abbiamo creato.
+1. Una volta che il flusso di lavoro di approvazione del contenuto è stato aggiunto al modello di progetto, dovrebbe essere disponibile per l’avvio dalla sezione Flusso di lavoro del progetto. Lanciate e giocate con i vari percorsi che abbiamo creato.
 
 ## Materiali di supporto
 
-* [Download del pacchetto tutorial completato](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
+* [Scarica pacchetto di esercitazione completato](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Archivio completo del codice su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 * [Documentazione sui progetti AEM](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html)

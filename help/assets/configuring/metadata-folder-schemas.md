@@ -1,6 +1,6 @@
 ---
-title: Schemi di cartelle di metadati
-description: Gli schemi di cartelle di metadati consentono agli utenti di gestire e rivedere direttamente i metadati associati alle cartelle di risorse, anziché direttamente sulle risorse.
+title: Schemi cartelle metadati
+description: Gli schemi di cartelle di metadati consentono agli utenti di gestire e rivedere essi stessi i metadati associati alle cartelle di risorse, anziché direttamente sulle risorse.
 feature: Metadata
 version: Cloud Service
 kt: 4983
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Schemi di cartelle di metadati
+# Schemi cartelle metadati
 
-Gli schemi di cartelle di metadati consentono agli utenti di gestire e rivedere direttamente i metadati associati alle cartelle di risorse, anziché direttamente sulle risorse.
+Gli schemi di cartelle di metadati consentono agli utenti di gestire e rivedere essi stessi i metadati associati alle cartelle di risorse, anziché direttamente sulle risorse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34071?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Sitemaps
-description: Scopri come incrementare il SEO creando sitemap per AEM Sites.
+title: Sitemap
+description: Scopri come incrementare l’ottimizzazione SEO (Search Engine Optimization) creando sitemap per AEM Sites.
 version: Cloud Service
 feature: Core Components
 topic: Content Management
@@ -17,23 +17,23 @@ ht-degree: 5%
 
 ---
 
-# Sitemaps
+# Sitemap
 
-Scopri come incrementare il SEO creando sitemap per AEM Sites.
+Scopri come incrementare l’ottimizzazione SEO (Search Engine Optimization) creando sitemap per AEM Sites.
 
 >[!WARNING]
 >
->Questo video illustra l’utilizzo di URL relativi nella mappa del sito. Sitemaps [devono utilizzare URL assoluti](https://sitemaps.org/protocol.html). Vedi [Configurazioni](#absolute-sitemap-urls) come abilitare gli URL assoluti, poiché questo non è trattato nel video seguente.
+>Questo video illustra l’utilizzo di URL relativi nella mappa del sito. Sitemap [deve utilizzare URL assoluti](https://sitemaps.org/protocol.html). Consulta [Configurazioni](#absolute-sitemap-urls) per informazioni su come abilitare gli URL assoluti, in quanto ciò non è trattato nel video seguente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
 
 ## Configurazioni
 
-### URL assoluti della mappa del sito{#absolute-sitemap-urls}
+### URL sitemap assoluti{#absolute-sitemap-urls}
 
-AEM mappa del sito supporta gli URL assoluti utilizzando [Mappatura Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Questo viene fatto creando nodi di mappatura sui servizi AEM che generano sitemap (in genere il servizio AEM Publish).
+La mappa del sito AEM supporta gli URL assoluti utilizzando [Mappatura Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Ciò avviene attraverso la creazione di nodi di mappatura sui servizi AEM che generano sitemap (in genere il servizio AEM Publish).
 
-Esempio di definizione di un nodo di mappatura Sling per `https://wknd.com` può essere definito in `/etc/map/https` come segue:
+Esempio di definizione del nodo di mappatura Sling per `https://wknd.com` può essere definito in `/etc/map/https` come segue:
 
 | Percorso | Nome proprietà | Tipo di proprietà | Valore proprietà |
 |------|----------|---------------|-------|
@@ -41,14 +41,14 @@ Esempio di definizione di un nodo di mappatura Sling per `https://wknd.com` può
 | `/etc/map/https/wknd-site` | `sling:internalRedirect` | Stringa | `/content/wknd/(.*)` |
 | `/etc/map/https/wknd-site` | `sling:match` | Stringa | `wknd.com/$1` |
 
-La schermata seguente illustra una configurazione simile ma per `http://wknd.local` (mappatura hostname locale in esecuzione su `http`).
+La schermata seguente illustra una configurazione simile, ma per `http://wknd.local` (mapping di nome host locale in esecuzione su `http`).
 
-![Configurazione URL assoluti della mappa del sito](../assets/sitemaps/sitemaps-absolute-urls.jpg)
+![Configurazione degli URL assoluti di Sitemap](../assets/sitemaps/sitemaps-absolute-urls.jpg)
 
 
-### Configurazione OSGi dello scheduler di Sitemap
+### Configurazione OSGi dell’utilità di pianificazione di Sitemap
 
-Definisce la [Configurazione di fabbrica OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) per la frequenza (utilizzando [espressioni cron](http://www.cronmaker.com)) le mappe dei siti vengono rigenerate e memorizzate nella cache in AEM.
+Definisce il [Configurazione di fabbrica OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) per la frequenza (utilizzando [espressioni cron](http://www.cronmaker.com)) le sitemap vengono rigenerate e memorizzate nella cache dell&#39;AEM.
 
 `ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 
@@ -60,9 +60,9 @@ Definisce la [Configurazione di fabbrica OSGi](http://localhost:4502/system/cons
 }
 ```
 
-### Regola del filtro Consentiti da Dispatcher
+### Regola di filtro Consentiti di Dispatcher
 
-Consenti richieste HTTP per l&#39;indice della mappa del sito e i file della mappa del sito.
+Consenti richieste HTTP per i file di indice e mappa del sito della mappa del sito.
 
 `dispatcher/src/conf.dispatcher.d/filters/filters.any`
 
@@ -73,9 +73,9 @@ Consenti richieste HTTP per l&#39;indice della mappa del sito e i file della map
 /0200 { /type "allow" /path "/content/*" /selectors '(sitemap-index|sitemap)' /extension "xml" }
 ```
 
-### Regola di riscrittura del server web Apache
+### Regola di riscrittura server web Apache
 
-Assicurati `.xml` le richieste HTTP della mappa del sito vengono indirizzate alla pagina AEM sottostante corretta. Se non si utilizza la abbreviazione degli URL, o se le mappature Sling vengono utilizzate per ottenere la riduzione degli URL, questa configurazione non è necessaria.
+Assicurare `.xml` Le richieste HTTP di sitemap vengono indirizzate alla pagina AEM sottostante corretta. Se non si utilizza l’abbreviazione degli URL o si utilizzano mappature Sling per ottenere l’abbreviazione degli URL, questa configurazione non è necessaria.
 
 `dispatcher/src/conf.d/rewrites/rewrite.rules`
 
@@ -87,8 +87,8 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## Riferimenti
 
-+ [Documentazione AEM Sitemap](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
-+ [Documentazione della mappa del sito Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
-+ [Documentazione Sitemap.org](https://www.sitemaps.org/protocol.html)
-+ [Documentazione del file di indice Sitemap.org](https://www.sitemaps.org/protocol.html#index)
-+ [Cronista](http://www.cronmaker.com/)
++ [Documentazione di AEM Sitemap](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
++ [Documentazione di Apache Sling Sitemap](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
++ [Documentazione di Sitemap.org Sitemap](https://www.sitemaps.org/protocol.html)
++ [Documentazione del file di indice Sitemap.org Sitemap](https://www.sitemaps.org/protocol.html#index)
++ [Cronmaker](http://www.cronmaker.com/)

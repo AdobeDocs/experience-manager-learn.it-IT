@@ -1,5 +1,5 @@
 ---
-title: Configurare il pannello dei redditi
+title: Configura pannello reddito
 description: Aggiungi il componente tabella al pannello reddito.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 ---
 
-# Configurare il pannello dei redditi
+# Configura pannello reddito
 
-Aggiungi la componente tabella al pannello dei redditi per acquisire le fonti di reddito del richiedente.
+Aggiungere un componente tabella al pannello reddito per acquisire le fonti di reddito del richiedente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332233?quality=12&learn=on)

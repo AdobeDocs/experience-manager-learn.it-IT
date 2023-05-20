@@ -1,6 +1,6 @@
 ---
-title: Distribuzione di SPA per AEM GraphQL
-description: Scopri le considerazioni sulla distribuzione per le distribuzioni di app a pagina singola (SPA) AEM senza intestazione.
+title: Implementazione dell’SPA per AEM GraphQL
+description: Scopri le considerazioni sulla distribuzione di app a pagina singola (SPA) AEM headless.
 version: Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
@@ -9,89 +9,89 @@ level: Intermediate
 kt: 10587
 thumbnail: KT-10587.jpg
 mini-toc-levels: 2
-source-git-commit: b2bf2a8e454d7ccd09819f2a38e58f7c303cb066
+exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 1%
 
 ---
 
+# Distribuzioni di SPA headless AEM
 
-# Implementazioni di AEM Headless SPA
+Le distribuzioni di app AEM headless a pagina singola (SPA) coinvolgono applicazioni basate su JavaScript create utilizzando framework come React o Vue, che utilizzano e interagiscono con i contenuti in AEM in modo headless.
 
-Le implementazioni delle app (SPA) a pagina singola AEM headless coinvolgono applicazioni basate su JavaScript create utilizzando framework come React o Vue, che utilizzano e interagiscono con i contenuti in AEM in modo headless.
+Distribuire un SPA che interagisca con l’AEM in modo headless implica ospitare l’SPA e renderlo accessibile tramite un browser web.
 
-La distribuzione di un SPA che interagisce AEM in modo headless comporta l’hosting del SPA e la sua accessibilità tramite un browser web.
+## Ospitare l&#39;SPA
 
-## Host del SPA
+Un SPA è costituito da una raccolta di risorse web native: **HTML, CSS e JavaScript**. Queste risorse vengono generate durante il _build_ processo (ad esempio, `npm run build`) e implementato in un host per l&#39;utilizzo da parte degli utenti finali.
 
-Un SPA è composto da una raccolta di risorse web native: **HTML, CSS e JavaScript**. Queste risorse vengono generate durante la _build_ processo (ad esempio, `npm run build`) e distribuita in un host per il consumo da parte degli utenti finali.
+Sono disponibili vari **hosting** a seconda dei requisiti aziendali:
 
-Ci sono varie **hosting** a seconda dei requisiti aziendali:
+1. **Provider cloud** come **Azure** o **AWS**.
 
-1. **Provider cloud** quali **Azure** o **AWS**.
+2. **On-premise** hosting in un&#39;azienda **data center**
 
-2. **On-Premise** hosting in un&#39;azienda **centro dati**
-
-3. **Piattaforme di hosting front-end** quali **AWS Amplifica**, **Servizio app di Azure**, **Netliare**, **Heroku**, **Vercel**, ecc.
+3. **Piattaforme di hosting front-end** come **AWS Amplify**, **Servizio app Azure**, **Netlify**, **Heroku**, **Vercel**, ecc.
 
 ## Configurazioni di distribuzione
 
-La considerazione principale quando si ospita un SPA che interagisce con AEM headless, è se l’accesso al SPA avviene tramite dominio (o host) AEM o su un dominio diverso.  Il motivo è SPA le applicazioni web in esecuzione nei browser web e sono quindi soggette ai criteri di sicurezza dei browser web.
+Quando si ospita un SPA che interagisce con l&#39;AEM headless, la considerazione principale è se l&#39;SPA è accessibile tramite il dominio AEM (o host) o su un dominio diverso.  Il motivo è che SPA è applicazioni web in esecuzione nei browser web e quindi sono soggette ai criteri di sicurezza dei browser web.
 
 ### Dominio condiviso
 
-Un SPA e AEM condividono i domini quando entrambi gli utenti finali hanno accesso dallo stesso dominio. Esempio:
+Un SPA e un AEM condividono domini quando entrambi sono accessibili agli utenti finali dallo stesso dominio. Ad esempio:
 
-+ AEM è accessibile tramite: `https://wknd.site/`
-+ SPA è accessibile tramite `https://wknd.site/spa`
++ L’AEM è accessibile tramite: `https://wknd.site/`
++ L’accesso a SPA avviene tramite `https://wknd.site/spa`
 
-Poiché sia AEM che SPA sono accessibili dallo stesso dominio, i browser web consentono al SPA di creare endpoint XHR per AEM Headless senza la necessità di CORS e consentono la condivisione di cookie HTTP (come AEM `login-token` cookie).
+Poiché sia l’AEM che l’SPA sono accessibili dallo stesso dominio, i browser web consentono all’SPA di creare endpoint da XHR a AEM headless senza la necessità di CORS e consentono la condivisione di cookie HTTP (come AEM `login-token` cookie).
 
-Il modo in cui il traffico SPA e AEM viene instradato sul dominio condiviso, dipende da te: CDN con origini multiple, server HTTP con proxy inverso, hosting del SPA direttamente in AEM e così via.
+Sta a te definire il modo in cui il traffico SPA e AEM viene instradato sul dominio condiviso: rete CDN con più origini, server HTTP con proxy inverso, hosting dell’SPA direttamente nell’AEM e così via.
 
-Di seguito sono riportate le configurazioni di distribuzione necessarie per le distribuzioni di produzione SPA, se ospitate sullo stesso dominio di AEM.
+Di seguito sono riportate le configurazioni di distribuzione necessarie per le distribuzioni di produzione dell’SPA, se ospitate sullo stesso dominio dell’AEM.
 
-| SPA si connette a | Autore AEM | AEM Publish | Anteprima AEM |
+| L’SPA si connette a | Autore AEM | AEM Publish | Anteprima AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [Filtri del Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ↓ | ↓ |
+| [Filtri del Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Condivisione delle risorse tra le origini (CORS) | ✘ | ✘ | ✘ |
 | Host AEM | ✘ | ✘ | ✘ |
 
 ### Domini diversi
 
-Un SPA e AEM hanno domini diversi quando gli utenti finali accedono da un dominio diverso. Esempio:
+Un SPA e un AEM hanno domini diversi quando gli utenti finali vi accedono dal diverso dominio. Ad esempio:
 
-+ AEM è accessibile tramite: `https://wknd.site/`
-+ SPA è accessibile tramite `https://wknd-app.site/`
++ L’AEM è accessibile tramite: `https://wknd.site/`
++ L’accesso a SPA avviene tramite `https://wknd-app.site/`
 
-Poiché l’accesso a AEM e SPA da domini diversi, i browser web applicano criteri di sicurezza come [condivisione delle risorse tra origini (CORS)](./configurations/cors.md)e impedisce la condivisione di cookie HTTP (come AEM `login-token` cookie).
+Poiché l’accesso all’AEM e all’SPA avviene da domini diversi, i browser web applicano politiche di sicurezza quali [condivisione delle risorse tra origini (CORS)](./configurations/cors.md)e impediscono la condivisione di cookie HTTP (come AEM `login-token` cookie).
 
-Di seguito sono riportate le configurazioni di distribuzione necessarie per SPA distribuzioni di produzione, quando ospitate su un dominio diverso da AEM.
+Di seguito sono riportate le configurazioni di distribuzione necessarie per le distribuzioni di produzione dell’SPA, se ospitate su un dominio diverso da quello dell’AEM.
 
-| SPA si connette a | Autore AEM | Pubblicazione AEM | Anteprima AEM |
+| L’SPA si connette a | Autore AEM | AEM Publish | Anteprima AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [Filtri del Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ↓ | ↓ |
-| [Condivisione delle risorse tra le origini (CORS)](./configurations/cors.md) | ↓ | ↓ | ↓ |
-| [Host AEM](./configurations/aem-hosts.md) | ↓ | ↓ | ↓ |
+| [Filtri del Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| [Condivisione delle risorse tra le origini (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |
+| [Host AEM](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
-#### Esempio SPA distribuzione su domini diversi
+#### Esempio di implementazione dell’SPA in domini diversi
 
-In questo esempio, il SPA viene distribuito su un dominio Netlify (`https://main--sparkly-marzipan-b20bf8.netlify.app/`) e il SPA utilizza AEM API GraphQL dal dominio di pubblicazione AEM (`https://publish-p65804-e666805.adobeaemcloud.com`). Le seguenti schermate evidenziano i requisiti CORS.
+In questo esempio, l&#39;SPA viene distribuito a un dominio Netlify (`https://main--sparkly-marzipan-b20bf8.netlify.app/`) e l’SPA utilizza le API AEM GraphQL dal dominio di pubblicazione AEM (`https://publish-p65804-e666805.adobeaemcloud.com`). Le schermate seguenti evidenziano il requisito CORS.
 
-1. Il SPA viene servito da un dominio Netlify, ma effettua una chiamata XHR a AEM API GraphQL su un dominio diverso. Questa richiesta intersito richiede [CORS](./configurations/cors.md) da configurare su AEM per consentire la richiesta del dominio Netlify di accedere al relativo contenuto.
+1. L’SPA viene gestito da un dominio Netlify, ma effettua una chiamata XHR alle API GraphQL dell’AEM su un dominio diverso. Questa richiesta cross-site richiede [CORS](./configurations/cors.md) essere configurato sull’AEM per consentire al dominio Netlify di richiedere l’accesso al suo contenuto.
 
-   ![Richiesta SPA servita da host SPA e AEM ](assets/spa/cors-requirement.png)
+   ![Richiesta SPA trasmessa da SPA e da host AEM ](assets/spa/cors-requirement.png)
 
-2. Ispezione della richiesta XHR all’API GraphQL AEM, la `Access-Control-Allow-Origin` è presente, indicando al browser Web che AEM consente la richiesta da questo dominio Netlify di accedere al relativo contenuto.
+2. Ispezione della richiesta XHR all’API GraphQL dell’AEM, il `Access-Control-Allow-Origin` è presente, indicando al browser web che l’AEM consente a questa richiesta del dominio Netlify di accedere al suo contenuto.
 
-   Se il AEM [CORS](./configurations/cors.md) Mancava o non includeva il dominio Netlify, il browser web avrebbe fallito la richiesta XHR e segnalato un errore CORS.
+   Se l&#39;AEM [CORS](./configurations/cors.md) era mancante o non includeva il dominio Netlify, il browser Web non riusciva a soddisfare la richiesta XHR e segnalava un errore CORS.
 
-   ![API GraphQL AEM intestazione di risposta CORS](assets/spa/cors-response-headers.png)
+   ![Intestazione di risposta CORS AEM GraphQL API](assets/spa/cors-response-headers.png)
 
 ## Esempio di app a pagina singola
 
-Adobe fornisce un esempio di app a pagina singola codificata in React.
+Un Adobe fornisce un’app a pagina singola codificata in React.
 
 <div class="columns is-multiline">
 <!-- React app -->
@@ -99,15 +99,15 @@ Adobe fornisce un esempio di app a pagina singola codificata in React.
    <div class="card">
        <div class="card-image">
            <figure class="image is-16by9">
-               <a href="../example-apps/react-app.md" title="Reagisce all'app" tabindex="-1">
-                   <img class="is-bordered-r-small" src="../example-apps/assets/react-app/react-app-card.png" alt="Reagisce all'app">
+               <a href="../example-apps/react-app.md" title="React app" tabindex="-1">
+                   <img class="is-bordered-r-small" src="../example-apps/assets/react-app/react-app-card.png" alt="React app">
                </a>
            </figure>
        </div>
        <div class="card-content is-padded-small">
            <div class="content">
-               <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/react-app.md" title="Reagisce all'app">Reagisce all'app</a></p>
-               <p class="is-size-6">Un’app a pagina singola di esempio, scritta in React, che consuma contenuti dalle API GraphQL AEM headless.</p>
+               <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/react-app.md" title="React app">React app</a></p>
+               <p class="is-size-6">Un’app a pagina singola di esempio, scritta in React, che utilizza contenuti delle API GraphQL headless dell’AEM.</p>
                <a href="../example-apps/react-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza esempio</span>
                </a>
@@ -128,7 +128,7 @@ Adobe fornisce un esempio di app a pagina singola codificata in React.
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/next-js.md" title="App Next.js">App Next.js</a></p>
-               <p class="is-size-6">Un’app a pagina singola di esempio, scritta in Next.js, che consuma contenuti dalle API GraphQL AEM headless.</p>
+               <p class="is-size-6">Un’app a pagina singola di esempio, scritta in Next.js, che utilizza contenuti delle API GraphQL headless dell’AEM.</p>
                <a href="../example-apps/next-js.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza esempio</span>
                </a>

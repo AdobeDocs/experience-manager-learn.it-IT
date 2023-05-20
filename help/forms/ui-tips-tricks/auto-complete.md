@@ -1,6 +1,6 @@
 ---
 title: Funzionalità di completamento automatico in AEM Forms
-description: Consente agli utenti di trovare e selezionare rapidamente da un elenco prepopolato di valori durante la digitazione, sfruttando le funzioni di ricerca e filtro.
+description: Consente agli utenti di trovare e selezionare rapidamente da un elenco precompilato di valori durante la digitazione, sfruttando le funzionalità di ricerca e filtro.
 feature: Adaptive Forms
 type: Tutorial
 version: 6.5
@@ -9,27 +9,28 @@ role: Developer
 level: Beginner
 kt: 11374
 last-substantial-update: 2022-11-01T00:00:00Z
-source-git-commit: 4af14b7d72ebdbea04e68a9a64afa1a96d1c1aeb
+exl-id: e9a696f9-ba63-462d-93a8-e9a7a1e94e72
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
 
 ---
 
-# Implementazione automatica completata
+# Implementazione del completamento automatico
 
-Implementa la funzionalità di completamento automatico nei moduli AEM utilizzando la funzione di completamento automatico di jquery.
-L’esempio incluso in questo articolo utilizza una varietà di origini dati (array statico, array dinamico popolato da una risposta REST API) per popolare i suggerimenti man mano che l’utente inizia a digitare nel campo di testo.
+Implementare la funzionalità di completamento automatico nei moduli AEM utilizzando la funzione di completamento automatico di jquery.
+L’esempio incluso in questo articolo utilizza diverse origini di dati (array statico, array dinamico popolato da una risposta API REST) per compilare i suggerimenti quando l’utente inizia a digitare nel campo di testo.
 
-Il codice utilizzato per eseguire la funzionalità di completamento automatico è associato all’evento initialize del campo .
+Il codice utilizzato per eseguire la funzionalità di completamento automatico è associato all’evento di inizializzazione del campo.
 
 ## Suggerimento per l&#39;indirizzo
 
-![suggerimenti per il paese](assets/auto-complete2.png)
+![country-suggestions](assets/auto-complete2.png)
 
 
 
-Di seguito è riportato il codice utilizzato per fornire suggerimenti sull&#39;indirizzo della strada
+Di seguito è riportato il codice utilizzato per fornire suggerimenti sugli indirizzi stradali
 
 ```javascript
 $(".streetAddress input").autocomplete({
@@ -62,11 +63,11 @@ $(".streetAddress input").autocomplete({
 
 
 
-## Suggerimenti con emoji
+## Suggerimenti con le emoji
 
-![suggerimenti per il paese](assets/auto-complete3.png)
+![country-suggestions](assets/auto-complete3.png)
 
-Il codice seguente è stato utilizzato per visualizzare le emoji nell&#39;elenco dei suggerimenti
+Il seguente codice è stato utilizzato per visualizzare le emoji nell’elenco dei suggerimenti
 
 ```javascript
 var values=["Wolf \u{1F98A}", "Lion \u{1F981}","Puppy \u{1F436}","Giraffe \u{1F992}","Frog \u{1F438}"];
@@ -77,8 +78,8 @@ minLength: 1, source: values, delay: 0
 );
 ```
 
-La [è possibile scaricare il modulo di esempio](assets/auto-complete-form.zip) da qui. Assicurati di fornire il tuo nome utente/chiave API utilizzando l&#39;editor di codice per il codice per effettuare chiamate REST con successo.
+Il [il modulo di esempio può essere scaricato](assets/auto-complete-form.zip) da qui. Assicurati di fornire un nome utente/chiave API personalizzato utilizzando l’editor di codice per il codice per effettuare chiamate REST riuscite.
 
 >[!NOTE]
 >
-> Per il completamento automatico, assicurati che il modulo utilizzi la seguente libreria client **cq.jquery.ui**. Questa libreria client viene fornita con AEM.
+> Affinché il completamento automatico funzioni, assicurati che il modulo utilizzi la seguente libreria client **cq.jquery.ui**. Questa libreria client viene fornita con AEM.

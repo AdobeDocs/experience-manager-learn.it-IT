@@ -1,5 +1,5 @@
 ---
-title: Layout dei file di base del Dispatcher AMS
+title: Layout dei file di base del dispatcher di AMS
 description: Comprendere il layout di base dei file Apache e Dispatcher.
 version: 6.5
 topic: Administration, Development
@@ -7,25 +7,25 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
+exl-id: 8a3f2bb9-3895-45c6-8bb5-15a6d2aac50e
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 1%
 
 ---
 
-
 # Layout dei file di base
 
 [Sommario](./overview.md)
 
-[&lt;- Precedente: Cos’è &quot;Il Dispatcher&quot;](./what-is-the-dispatcher.md)
+[&lt;- Precedente: Che cos’è &quot;Dispatcher&quot;](./what-is-the-dispatcher.md)
 
-In questo documento viene illustrato il set di file di configurazione standard AMS e il modo di pensare alla base di questo standard di configurazione
+Questo documento illustra il set di file di configurazione standard AMS e il concetto alla base di questo standard di configurazione
 
-## Struttura predefinita della cartella Enterprise Linux
+## Struttura predefinita delle cartelle di Enterprise Linux
 
-In AMS l’installazione di base utilizza Enterprise Linux come sistema operativo di base. Quando installi Apache Webserver, ha un set di file di installazione predefinito. Di seguito sono elencati i file predefiniti che vengono installati installando gli RPM di base forniti dall’archivio yum
+In AMS l&#39;installazione di base utilizza Enterprise Linux come sistema operativo di base. Durante l’installazione di Apache Webserver, è presente un set di file di installazione predefinito. Di seguito sono riportati i file predefiniti che vengono installati installando i RPM di base forniti dall&#39;archivio YUM
 
 ```
 /etc/httpd/ 
@@ -50,15 +50,15 @@ In AMS l’installazione di base utilizza Enterprise Linux come sistema operativ
 └── run -> /run/httpd
 ```
 
-Seguendo e rispettando la progettazione/struttura dell&#39;installazione otteniamo i seguenti vantaggi:
+Seguendo e rispettando la progettazione/struttura dell&#39;installazione, otteniamo i seguenti vantaggi:
 
-- Maggiore semplicità nel supporto di un layout prevedibile
-- Conosciuto automaticamente da chiunque abbia lavorato sulle installazioni HTTPD di Enterprise Linux in passato
-- Permette cicli di patch completamente supportati dal sistema operativo senza conflitti o regolazioni manuali
-- Evita violazioni SELinux di contesti di file etichettati erroneamente
+- Supporto più semplice di un layout prevedibile
+- Automaticamente familiare a tutti coloro che hanno lavorato sulle installazioni HTTPD di Enterprise Linux in passato
+- Consente cicli di patch completamente supportati dal sistema operativo senza conflitti o regolazioni manuali
+- Evita violazioni SELinux di contesti di file con etichetta errata
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-Le immagini dei server Adobe Managed Services dispongono in genere di piccole unità radice del sistema operativo.  Mettiamo i nostri dati in un volume separato che è tipicamente montato in `/mnt` Poi usiamo quel volume invece dei valori predefiniti per le seguenti directory predefinite
+Le immagini dei server Adobe Managed Services in genere dispongono di unità radice del sistema operativo di piccole dimensioni.  I dati vengono inseriti in un volume separato che in genere viene montato in `/mnt`. Quindi utilizziamo tale volume al posto dei valori predefiniti per le seguenti directory predefinite
 
 `DocumentRoot`
 - Predefiniti:`/var/www/html`
@@ -68,49 +68,49 @@ Le immagini dei server Adobe Managed Services dispongono in genere di piccole un
 - Predefiniti: `/var/log/httpd`
 - AMS: `/mnt/var/log/httpd`
 
-Tieni presente che le directory vecchie e nuove sono mappate al punto di montaggio originale per evitare confusione.
-L&#39;utilizzo di un volume separato non è vitale ma è degno di nota
+Tieni presente che le directory vecchia e nuova sono mappate al punto di montaggio originale per evitare confusione.
+L&#39;utilizzo di un volume separato non è fondamentale, ma è importante
 </div>
 
 ## Componenti aggiuntivi AMS
 
-AMS aggiunge all’installazione di base di Apache Web Server.
+AMS aggiunge all’installazione di base del server web Apache.
 
-### Radici documenti
+### Directory principali documenti
 
-Directory documento predefinite AMS:
+Directory principali documenti predefinite AMS:
 - Autore:
    - `/mnt/var/www/author/`
 - Pubblicazione:
    - `/mnt/var/www/html/`
-- Manutenzione catch-all e del controllo dello stato di salute
+- Manutenzione di Catch-All e Health Check
    - `/mnt/var/www/default/`
 
-### Staging e directory VirtualHost abilitati
+### Directory VirtualHost abilitate e di gestione temporanea
 
-Le seguenti directory ti consentono di creare file di configurazione con un’area di gestione temporanea che puoi utilizzare sui file e abilitarli solo quando sono pronti.
+Le directory seguenti consentono di creare file di configurazione con un&#39;area di gestione temporanea che è possibile utilizzare per i file e attivarli solo quando sono pronti.
 - `/etc/httpd/conf.d/available_vhosts/`
-   - Questa cartella ospita tutti i file VirtualHost/denominati `.vhost`
+   - Questa cartella ospita tutti i file VirtualHost denominati `.vhost`
 - `/etc/httpd/conf.d/enabled_vhosts/`
-   - Quando sei pronto a utilizzare il `.vhost` file, hai `available_vhosts` collegarli a una cartella tramite un percorso relativo `enabled_vhosts` directory
+   - Quando sei pronto a utilizzare il `.vhost` all&#39;interno del `available_vhosts` cartella symlink mediante un percorso relativo nella cartella `enabled_vhosts` directory
 
 ### Aggiuntivo `conf.d` Directory
 
-Ci sono altre parti comuni nelle configurazioni di Apache e abbiamo creato delle sottodirectory per consentire un modo pulito di separare quei file e non avere tutti i file in un&#39;unica directory
+Esistono altri elementi comuni nelle configurazioni di Apache e abbiamo creato sottodirectory per consentire di separare in modo ordinato tali file e non avere tutti i file in una directory
 
-#### Directory di riscrittura
+#### Riscrive la directory
 
-Questa directory può contenere tutte le `_rewrite.rules` file creati che contengono la tipica rewriteRulesyntax che coinvolge i server web Apache [mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) modulo
+Questa directory può contenere tutte le `_rewrite.rules` file creati che contengono la tipica sintassi RewriteRulesyntax che coinvolge i server web Apache [mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) modulo
 
 - `/etc/httpd/conf.d/rewrites/`
 
-#### Directory degli elenchi consentiti
+#### Directory whitelists
 
-Questa directory può contenere tutte le `_whitelist.rules` file creati che contengono i `IP Allow` o `Require IP`sintassi che coinvolga i server web Apache [controlli di accesso](https://httpd.apache.org/docs/2.4/howto/access.html)
+Questa directory può contenere tutte le `_whitelist.rules` file creati che contengono i file tipici `IP Allow` o `Require IP`sintassi per i server web Apache [controlli di accesso](https://httpd.apache.org/docs/2.4/howto/access.html)
 
 - `/etc/httpd/conf.d/whitelists/`
 
-#### Directory delle variabili
+#### Directory variabili
 
 Questa directory può contenere tutte le `.vars` file creati che contengono variabili utilizzabili nei file di configurazione
 
@@ -118,61 +118,61 @@ Questa directory può contenere tutte le `.vars` file creati che contengono vari
 
 ### Directory di configurazione specifica per il modulo Dispatcher
 
-Apache Web Server è molto estensibile e quando un modulo ha molti file di configurazione, è consigliabile creare la propria directory di configurazione sotto la directory di base di installazione invece di eseguire il cluttering di quella predefinita.
+Il server web Apache è molto estensibile e, quando un modulo dispone di molti file di configurazione, è consigliabile creare una directory di configurazione personalizzata nella directory della base di installazione, invece di riempire quella predefinita.
 
-Seguiamo le best practice e creiamo la nostra
+Seguiamo la best practice e ne creiamo una nostra
 
-#### Directory dei file di configurazione del modulo
+#### Directory del file di configurazione del modulo
 
 - `/etc/httpd/conf.dispatcher.d/`
 
 #### Staging e farm abilitata
 
-Le seguenti directory ti consentono di creare file di configurazione con un’area di gestione temporanea che puoi utilizzare sui file e abilitarli solo quando sono pronti.
+Le directory seguenti consentono di creare file di configurazione con un&#39;area di gestione temporanea che è possibile utilizzare per i file e attivarli solo quando sono pronti.
 - `/etc/httpd/conf.dispatcher.d/available_farms/`
-   - Questa cartella ospita tutti i `/myfarm {` file denominati `_farm.any`
+   - Questa cartella contiene tutte le `/myfarm {` file denominati `_farm.any`
 - `/etc/httpd/conf.dispatcher.d/enabled_farms/`
-   - Quando sei pronto a utilizzare il file farm, all’interno della cartella available_farms puoi collegarli utilizzando un percorso relativo nella directory enabled_farms
+   - Quando si è pronti a utilizzare il file farm, all&#39;interno della cartella available_farms è presente un collegamento simbolico utilizzando un percorso relativo nella directory enabled_farms
 
 ### Aggiuntivo `conf.dispatcher.d` Directory
 
-Ci sono altre parti che sono sottosezioni delle configurazioni dei file farm di Dispatcher e abbiamo creato delle sottodirectory per consentire un modo pulito di separare quei file e non avere tutti i file in un&#39;unica directory
+Sono disponibili parti aggiuntive che costituiscono sottosezioni delle configurazioni dei file di farm di Dispatcher. Abbiamo creato sottodirectory per consentire di separare in modo ordinato tali file e non disporre di tutti i file in una directory
 
 #### Directory cache
 
-Questa directory contiene tutti i `_cache.any`, `_invalidate.any` file creati che contengono le regole su come si desidera che il modulo gestisca gli elementi di memorizzazione in cache provenienti da AEM e la sintassi delle regole di invalidazione.  Maggiori dettagli su questa sezione sono disponibili qui [qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Questa directory contiene tutte le `_cache.any`, `_invalidate.any` i file creati che contengono le regole su come desideri che il modulo gestisca gli elementi di caching provenienti da AEM, nonché la sintassi delle regole di invalidazione.  Maggiori dettagli su questa sezione sono disponibili qui [qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
 
 - `/etc/httpd/conf.dispatcher.d/cache/`
 
-#### Directory delle intestazioni client
+#### Directory intestazioni client
 
-Questa directory può contenere tutte le `_clientheaders.any` file creati che contengono elenchi di intestazioni client da passare a AEM quando arriva una richiesta.  Maggiori dettagli su questa sezione sono [qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it)
+Questa directory può contenere tutte le `_clientheaders.any` file creati che contengono elenchi di intestazioni client da passare a AEM quando arriva una richiesta.  Ulteriori dettagli su questa sezione sono [qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it)
 
 - `/etc/httpd/conf.dispatcher.d/clientheaders/`
 
-#### Directory dei filtri
+#### Directory filtri
 
-Questa directory può contenere tutte le `_filters.any` file creati che contengono tutte le regole di filtro per bloccare o consentire al traffico attraverso Dispatcher di raggiungere AEM
+Questa directory può contenere tutte le `_filters.any` file creati che contengono tutte le regole del filtro per bloccare o consentire il traffico attraverso Dispatcher per raggiungere l’AEM
 
 - `/etc/httpd/conf.dispatcher.d/filters/`
 
-#### Directory dei render
+#### Directory dei rendering
 
-Questa directory può contenere tutte le `_renders.any` file creati che contengono i dettagli di connettività a ogni server back-end da cui il dispatcher utilizzerà il contenuto
+Questa directory può contenere tutte le `_renders.any` file creati che contengono i dettagli di connettività a ciascun server backend da cui dispatcher utilizzerà il contenuto
 
 - `/etc/httpd/conf.dispatcher.d/renders/`
 
 #### Directory Vhosts
 
-Questa directory può contenere tutte le `_vhosts.any` file creati che contengono un elenco dei nomi di dominio e dei percorsi da abbinare a una particolare farm in un particolare server back-end
+Questa directory può contenere tutte le `_vhosts.any` file creati che contengono un elenco dei nomi di dominio e dei percorsi da associare a una particolare farm a un particolare server back-end
 
 - `/etc/httpd/conf.dispatcher.d/vhosts/`
 
 ## Struttura completa delle cartelle
 
-AMS ha strutturato ciascuno dei file con estensioni di file personalizzate e con l’intento di evitare problemi di spazio dei nomi/conflitti e confusione.
+AMS ha strutturato ciascuno dei file con estensioni di file personalizzate con l’intenzione di evitare problemi/conflitti di spazio dei nomi e qualsiasi confusione.
 
-Ecco un esempio di set di file standard da una distribuzione predefinita AMS:
+Di seguito è riportato un esempio di un set di file standard da una distribuzione predefinita di AMS:
 
 ```
 /etc/httpd/
@@ -265,36 +265,36 @@ Ecco un esempio di set di file standard da una distribuzione predefinita AMS:
 └── run -> /run/httpd
 ```
 
-## Mantenere la soluzione ideale
+## La scelta ideale
 
-Enterprise Linux ha cicli di patch per il pacchetto Apache Webserver (httpd).
+Enterprise Linux dispone di cicli di patch per il pacchetto Apache Webserver (httpd).
 
-Minore è il numero di file predefiniti installati che vengono modificati meglio è, per motivi che se ci sono correzioni di sicurezza patch o miglioramenti di configurazione vengono applicati tramite il comando RPM / Yum non applicherà le correzioni sopra un file modificato.
+I file predefiniti meno installati si modificano meglio, per motivi che se ci sono correzioni di sicurezza o miglioramenti di configurazione sono applicati tramite il comando RPM / Yum non applicherà le correzioni sopra un file alterato.
 
-Invece crea un `.rpmnew` accanto all&#39;originale.  Questo significa che perderai alcune modifiche che avresti voluto e creato più rifiuti nelle cartelle di configurazione.
+Viene invece creato un `.rpmnew` accanto all&#39;originale.  In questo modo, potresti perdere alcune modifiche desiderate e creare più oggetti inattivi nelle cartelle di configurazione.
 
-Ad esempio, gli RPM durante l’installazione dell’aggiornamento esamineranno `httpd.conf` se è nel `unaltered` dichiarare *replace* il file e otterrai gli aggiornamenti vitali.  Se la `httpd.conf` era `altered` allora *non sostituirà* il file e invece creerà un file di riferimento denominato `httpd.conf.rpmnew` e le molte correzioni desiderate saranno in quel file che non si applica all&#39;avvio del servizio.
+ovvero Il RPM durante l&#39;installazione dell&#39;aggiornamento verrà esaminato `httpd.conf` se si trova in `unaltered` dichiarerà che *replace* il file e riceverai gli aggiornamenti vitali.  Se il `httpd.conf` è stato `altered` allora *non sostituirà* il file e creerà un file di riferimento denominato `httpd.conf.rpmnew` e le numerose correzioni desiderate si troveranno in quel file che non si applica all&#39;avvio del servizio.
 
-Enterprise Linux è stato configurato correttamente per gestire questo caso d&#39;uso in modo migliore.  Forniscono aree in cui puoi estendere o sovrascrivere i valori predefiniti impostati per te.  All&#39;interno dell&#39;installazione di base di httpd troverai il file `/etc/httpd/conf/httpd.conf`e presenta una sintassi simile a:
+Enterprise Linux è stato configurato correttamente per gestire questo caso d’uso in modo migliore.  Offrono aree in cui è possibile estendere o ignorare i valori predefiniti impostati.  All&#39;interno dell&#39;installazione di base di httpd troverai il file `/etc/httpd/conf/httpd.conf`e contiene una sintassi simile alla seguente:
 
 ```
 Include conf.modules.d/.conf
 IncludeOptional conf.d/.conf
 ```
 
-L’idea è che Apache desideri estendere i moduli e le configurazioni nell’aggiunta di nuovi file al `/etc/httpd/conf.d/` e `/etc/httpd/conf.modules.d/` directory con estensione di file `.conf`
+L’idea è che Apache desideri estendere i moduli e le configurazioni per aggiungere nuovi file al `/etc/httpd/conf.d/` e `/etc/httpd/conf.modules.d/` directory con estensione di file `.conf`
 
-Come esempio perfetto quando aggiungi il modulo Dispatcher ad Apache, crei un modulo `.so` in ` /etc/httpd/modules/` e quindi includerlo aggiungendo un file in `/etc/httpd/conf.modules.d/02-dispatcher.conf` con il contenuto per caricare il modulo `.so` file
+Come esempio perfetto quando si aggiunge il modulo Dispatcher ad Apache si crea un modulo `.so` file in ` /etc/httpd/modules/` e quindi includerlo aggiungendo un file in `/etc/httpd/conf.modules.d/02-dispatcher.conf` con i contenuti per caricare il modulo `.so` file
 
 ```
 LoadModule dispatcher_module modules/mod_dispatcher.so
 ```
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Avviso:</b>
-non abbiamo modificato alcun file già esistente fornito da Apache.  Invece abbiamo semplicemente aggiunto le nostre alle directory che dovevano seguire.
+non sono stati modificati i file già esistenti forniti da Apache.  Invece ha aggiunto il nostro alle directory che dovevano andare.
 </div><br/>
 
-Ora utilizziamo il modulo nel file . <b>`/etc/httpd/conf.d/dispatcher_vhost.conf`</b> che inizializza il modulo e carica il file di configurazione iniziale specifico del modulo
+Ora utilizziamo il modulo nel nostro file <b>`/etc/httpd/conf.d/dispatcher_vhost.conf`</b> che inizializza il modulo e carica il file di configurazione iniziale specifico per il modulo
 
 ```
 <IfModule disp_apache2.c> 
@@ -303,6 +303,6 @@ Ora utilizziamo il modulo nel file . <b>`/etc/httpd/conf.d/dispatcher_vhost.con
 </IfModule>
 ```
 
-Noterai che abbiamo aggiunto file e moduli ma non abbiamo modificato alcun file originale.  Questo ci offre la funzionalità desiderata e ci protegge dalle correzioni di patch desiderate mancanti, oltre a mantenere il più alto livello di compatibilità con ogni aggiornamento del pacchetto.
+Anche in questo caso, noterete che abbiamo aggiunto file e moduli ma non modificato alcun file originale.  Questo ci offre la funzionalità desiderata e ci protegge da eventuali correzioni di patch desiderate mancanti, oltre a mantenere il massimo livello di compatibilità con ogni aggiornamento del pacchetto.
 
 [Avanti -> Spiegazione dei file di configurazione](./explanation-config-files.md)

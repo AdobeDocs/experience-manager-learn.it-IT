@@ -1,6 +1,6 @@
 ---
-title: Condivisione dei collegamenti pubblici di Assets Essentials
-description: Scopri in che modo il collegamento di condivisione di Assets Essentials consente agli utenti di condividere risorse con soggetti interessati interni ed esterni, riducendo al contempo il rischio di condivisione di risorse errate ... (Le descrizioni devono essere comprese tra 60 e 160 caratteri)
+title: Condivisione di collegamenti pubblici Assets Essentials
+description: Scopri come il collegamento di condivisione di Assets Essentials consente agli utenti di condividere risorse con soggetti interessati interni ed esterni, riducendo al contempo il rischio di condividere risorse errate ... (Le descrizioni devono essere comprese tra 60 e 160 caratteri)
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management

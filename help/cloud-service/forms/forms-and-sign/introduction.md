@@ -1,6 +1,6 @@
 ---
-title: Integrare Adobe Experience Manager Forms as Cloud Service con Acrobat Sign
-description: Video introduttivo sul corso sull’integrazione di Forms CS con Acrobat Sign
+title: Integrare Adobe Experience Manager Forms as a Cloud Service con Acrobat Sign
+description: Video introduttivo al corso sull’integrazione di Forms CS con Acrobat Sign
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer

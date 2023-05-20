@@ -1,6 +1,6 @@
 ---
-title: Impostazioni e flussi di lavoro avanzati per Workfront per AEM connettore avanzato
-description: Scopri come configurare le impostazioni avanzate per Workfront per AEM connettore avanzato e come configurare flussi di lavoro e avviatori avanzati in AEM per gestire la sincronizzazione dei dati tra AEM e Workfront.
+title: Impostazioni avanzate e flussi di lavoro per il connettore ottimizzato di Workfront per AEM
+description: Scopri le impostazioni avanzate del connettore avanzato Workfront per AEM e come configurare flussi di lavoro e moduli di avvio avanzati in AEM per gestire la sincronizzazione dei dati tra AEM e Workfront.
 version: Cloud Service
 topic: Content Management, Integrations
 role: Admin, Architect, Developer
@@ -21,8 +21,8 @@ ht-degree: 0%
 
 ![Serie di esperti AEM](./assets/banner.png)
 
-Scopri come configurare le impostazioni avanzate per Workfront per AEM connettore avanzato e come configurare flussi di lavoro e avviatori avanzati in AEM per gestire la sincronizzazione dei dati tra AEM e Workfront.
+Scopri le impostazioni avanzate del connettore avanzato Workfront per AEM e come configurare flussi di lavoro e moduli di avvio avanzati in AEM per gestire la sincronizzazione dei dati tra AEM e Workfront.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340397?quality=12&learn=on)
 
-_Parte quattro di a [serie di esperti in quattro parti su Workfront per Experience Manager connettore avanzato](./overview.md)_
+_Parte quarta di a [serie di esperti in quattro parti sul connettore avanzato Workfront per Experience Manager](./overview.md)_

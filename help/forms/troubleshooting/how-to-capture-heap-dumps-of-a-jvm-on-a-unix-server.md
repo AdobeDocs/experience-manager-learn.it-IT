@@ -1,6 +1,6 @@
 ---
-title: Come catturare le immagini heap di una JVM su un server unix
-description: Cattura le immagini heap dell'esecuzione del processo Java su un server unix
+title: Acquisire le immagini heap di una JVM su un server unix
+description: Acquisire le immagini heap del processo Java in esecuzione su un server unix
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Come catturare le immagini heap di una JVM su un server unix
+# Acquisire le immagini heap di una JVM su un server unix
 
-*Questo video illustra i passaggi necessari per acquisire le immagini heap di una JVM su un server unix.*
+*Questo video illustra i passaggi per acquisire le immagini heap di una JVM su un server unix.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335489?quality=12&learn=on)

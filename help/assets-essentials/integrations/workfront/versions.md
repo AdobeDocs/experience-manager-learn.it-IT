@@ -1,6 +1,6 @@
 ---
-title: Mantenimento della cronologia delle versioni con Adobe Workfront e Assets Essentials
-description: Scopri in che modo Adobe Workfront e Experience Manager Assets Essentials ti aiutano a gestire le versioni dei documenti Workfront e delle risorse Assets Essentials.
+title: Gestione della cronologia delle versioni con Adobe Workfront e Assets Essentials
+description: Scopri in che modo Adobe Workfront e Experience Manager Assets Essentials consentono di gestire le versioni dei documenti Workfront e delle risorse Assets Essentials.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management, Integrations
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Manutenzione della cronologia delle versioni
 
-Scopri in che modo Adobe Workfront e Experience Manager Assets Essentials ti aiutano a gestire le versioni dei documenti Workfront e delle risorse Assets Essentials.
+Scopri in che modo Adobe Workfront e Experience Manager Assets Essentials consentono di gestire le versioni dei documenti Workfront e delle risorse Assets Essentials.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336314?quality=12&learn=on)

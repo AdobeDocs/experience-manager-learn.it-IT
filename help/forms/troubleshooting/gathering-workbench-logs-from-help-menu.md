@@ -1,6 +1,6 @@
 ---
 title: Come raccogliere i registri di Workbench dal menu Aiuto
-description: Procedura per raccogliere i registri di Workbench dal menu Aiuto
+description: Passaggi per raccogliere i registri di Workbench dal menu Aiuto
 type: Troubleshooting
 role: Developer
 level: Beginner
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Raccolta dei registri di Workbench dal menu Aiuto
 
-*Questo video illustra la procedura per raccogliere i registri di Workbench dal menu Aiuto .*
+*Questo video illustra il processo di raccolta dei registri di Workbench dal menu Aiuto .*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335501?quality=12&learn=on)

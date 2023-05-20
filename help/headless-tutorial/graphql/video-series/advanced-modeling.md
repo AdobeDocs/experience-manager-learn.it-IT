@@ -1,6 +1,6 @@
 ---
 title: Modellazione avanzata per GraphQL
-description: Scopri come creare relazioni tra modelli di frammenti di contenuto in Adobe Experience Manager (AEM) e come sfruttare queste relazioni nelle query GraphQL.
+description: Scopri come creare relazioni tra i modelli per frammenti di contenuto in Adobe Experience Manager (AEM) e come sfruttare queste relazioni nelle query GraphQL.
 version: Cloud Service
 topic: Headless, Content Management
 feature: Content Fragments, GraphQL API
@@ -19,12 +19,12 @@ ht-degree: 0%
 
 # Modellazione avanzata per GraphQL
 
-Scopri come creare relazioni tra modelli di frammenti di contenuto in Adobe Experience Manager (AEM) e come sfruttare queste relazioni nelle query GraphQL.
+Scopri come creare relazioni tra i modelli per frammenti di contenuto in Adobe Experience Manager (AEM) e come sfruttare queste relazioni nelle query GraphQL.
 
 In questo video:
 
 + Scopri come utilizzare i riferimenti ai frammenti di contenuto per collegare uno o più frammenti di contenuto
-+ Scopri come effettuare un collegamento profondo ad altri frammenti di contenuto all’interno di un campo di testo RTF
-+ Creazione di query GraphQL che restituiscono dati dall’interno di frammenti di contenuto a cui si fa riferimento
++ Scopri come creare collegamenti profondi ad altri frammenti di contenuto all’interno di un campo in formato Rich Text
++ Creare query GraphQL che restituiscono dati dall’interno di frammenti di contenuto di riferimento
 
 >[!VIDEO](https://video.tv.adobe.com/v/332859?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Creare librerie client
-description: Crea clientlibrary per gestire l'evento click del pulsante "Save and Exit"
+description: Crea clientlibrary per gestire l’evento clic del pulsante "Salva ed esci"
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -17,11 +17,11 @@ ht-degree: 6%
 
 ---
 
-# Creare una libreria client
+# Crea libreria client
 
-Crea [libreria client](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=it) che includerà il codice per richiamare il metodo `doAjaxSubmitWithFileAttachment` del `guideBridge` API sull’evento clic del pulsante identificato dalla classe CSS **savebutton**.  Trasmettiamo i dati del modulo adattivo, `fileMap`e `mobileNumber` all&#39;endpoint che ascolta `**/bin/storeafdatawithattachments`
+Crea [libreria client](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=it) che includerà il codice per richiamare il metodo `doAjaxSubmitWithFileAttachment` del `guideBridge` API sull’evento clic del pulsante identificato dalla classe CSS **savebutton**.  Trasmettiamo i dati del modulo adattivo, `fileMap`e `mobileNumber` all’endpoint in ascolto su `**/bin/storeafdatawithattachments`
 
-Una volta salvati i dati del modulo, viene generato un ID applicazione univoco che viene presentato all’utente in una finestra di dialogo. Quando si chiude la finestra di dialogo, l’utente viene portato al modulo che consente loro di recuperare il modulo adattivo salvato utilizzando l’ID applicazione univoco.
+Dopo il salvataggio dei dati del modulo, viene generato un ID applicazione univoco che viene presentato all&#39;utente in una finestra di dialogo. Quando si chiude la finestra di dialogo, l’utente viene reindirizzato al modulo che consente di recuperare il modulo adattivo salvato utilizzando l’ID applicazione univoco.
 
 ```java
 $(document).ready(function () {
@@ -67,7 +67,7 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> Abbiamo usato [libreria javascript di bootbox](http://bootboxjs.com/examples.html) per visualizzare la finestra di dialogo
+> Abbiamo utilizzato [libreria javascript bootbox](http://bootboxjs.com/examples.html) per visualizzare la finestra di dialogo
 
 Le librerie client utilizzate in questo esempio possono essere [scaricato da qui](assets/client-libraries.zip)
 

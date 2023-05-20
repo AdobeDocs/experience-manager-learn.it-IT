@@ -1,6 +1,6 @@
 ---
-title: Come creare un ambiente di sviluppo rapido
-description: Scopri come configurare l’ambiente di sviluppo rapido per AEM as a Cloud Service.
+title: Come impostare un ambiente di sviluppo rapido
+description: Scopri come impostare un ambiente di sviluppo rapido per AEM as a Cloud Service.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -9,24 +9,24 @@ level: Beginner
 jira: KT-11861
 thumbnail: KT-11861.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: ab9ee81a-176e-4807-ba39-1ea5bebddeb2
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 4%
 
 ---
 
+# Come impostare un ambiente di sviluppo rapido
 
-# Come creare un ambiente di sviluppo rapido
-
-Scopri **come impostare** Ambiente di sviluppo rapido (RDE) in AEM as a Cloud Service.
+Scopri **come impostare** Rapid Development Environment (RDE) nell’AEM as a Cloud Service.
 
 Questo video mostra:
 
 - Aggiunta di un RDE al programma tramite Cloud Manager
-- Flusso di accesso RDE tramite Adobe IMS, simile a qualsiasi altro ambiente AEM as a Cloud Service
+- Flusso degli accessi RDE con Adobe IMS: come è simile a qualsiasi altro ambiente AEM as a Cloud Service
 - Configurazione di [CLI estensibile Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) noto anche come `aio CLI`
-- Configurazione e configurazione di AEM RDE e Cloud Manager `aio CLI` plugin
+- Configurazione di AEM RDE e Cloud Manager `aio CLI` plugin
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415490?quality=12&learn=on)
 
@@ -39,11 +39,11 @@ Questo video mostra:
 
 ## Configurazione locale
 
-Per distribuire il [Progetto WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) codice e contenuto nell’RDE dal computer locale, completa i seguenti passaggi.
+Per distribuire [Progetto WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) codice e contenuto nell&#39;RDE dal computer locale, completa i passaggi seguenti.
 
 ### CLI estensibile Adobe I/O Runtime
 
-Installa Adobe I/O Runtime Extensible CLI, noto anche come `aio CLI` eseguendo il comando seguente dalla riga di comando.
+Installare Adobe I/O Runtime Extensible CLI, noto anche come `aio CLI` eseguendo il comando seguente dalla riga di comando.
 
 ```shell
 $ npm install -g @adobe/aio-cli
@@ -51,7 +51,7 @@ $ npm install -g @adobe/aio-cli
 
 ### Plug-in AEM
 
-Installa i plug-in Cloud Manager e AEM RDE utilizzando `aio cli`s `plugins:install` comando.
+Installare i plug-in di Cloud Manager e AEM RDE utilizzando `aio cli`di `plugins:install` comando.
 
 ```shell
 $ aio plugins:install @adobe/aio-cli-plugin-cloudmanager
@@ -61,25 +61,25 @@ $ aio plugins:install @adobe/aio-cli-plugin-aem-rde
 
 Il plug-in Cloud Manager consente agli sviluppatori di interagire con Cloud Manager dalla riga di comando.
 
-Il plug-in RDE AEM, consente agli sviluppatori di distribuire codice e contenuto dal computer locale.
+Il plug-in AEM RDE consente agli sviluppatori di distribuire codice e contenuto dal computer locale.
 
-Inoltre, per aggiornare i plug-in utilizza il `aio plugins:update` comando.
+Inoltre, per aggiornare i plug-in utilizza `aio plugins:update` comando.
 
-## Configurare AEM plug-in
+## Configurare i plug-in AEM
 
-I plug-in AEM devono essere configurati per interagire con il tuo RDE. Innanzitutto, utilizza l’interfaccia utente di Cloud Manager e copia i valori dell’ID organizzazione, programma e ambiente.
+I plug-in dell’AEM devono essere configurati per interagire con l’RDE. Innanzitutto, utilizza l’interfaccia utente di Cloud Manager e copia i valori dell’ID organizzazione, programma e ambiente.
 
-1. ID organizzazione: Copia il valore da **Immagine profilo > Informazioni account (interno) > Finestra modale > ID organizzazione corrente**
+1. ID organizzazione: copia il valore da **Immagine profilo > Informazioni account (interno) > Finestra modale > ID organizzazione corrente**
 
    ![ID organizzazione](./assets/Org-ID.png)
 
-1. ID programma: Copia il valore da **Panoramica del programma > Ambienti > {ProgramName}-rde > URI del browser > numeri tra `program/` e`/environment`**
+1. ID programma: copia il valore da **Panoramica programma > Ambienti > {ProgramName}-rde > URI browser > numeri tra `program/` e`/environment`**
 
-1. ID ambiente: Copia il valore da **Panoramica del programma > Ambienti > {ProgramName}-rde > URI del browser > numeri dopo`environment/`**
+1. ID ambiente: copia il valore da **Panoramica programma > Ambienti > {ProgramName}-rde > URI browser > numeri dopo`environment/`**
 
    ![ID programma e ambiente](./assets/Program-Environment-Id.png)
 
-1. Quindi, utilizzando il `aio cli`s `config:set` impostare questi valori eseguendo il comando seguente.
+1. Quindi, utilizzando `aio cli`di `config:set` per impostare questi valori, eseguire il comando seguente.
 
    ```shell
    $ aio config:set cloudmanager_orgid <org-id>
@@ -89,13 +89,13 @@ I plug-in AEM devono essere configurati per interagire con il tuo RDE. Innanzitu
    $ aio config:set cloudmanager_environmentid <env-id>
    ```
 
-Puoi verificare i valori di configurazione correnti eseguendo il comando seguente.
+Puoi verificare i valori di configurazione correnti eseguendo il seguente comando.
 
 ```shell
 $ aio config:list
 ```
 
-Inoltre, per cambiare o sapere a quale organizzazione si è attualmente connessi, puoi utilizzare il comando sottostante.
+Inoltre, per cambiare organizzazione o sapere a quale organizzazione si è attualmente connessi, è possibile utilizzare il comando seguente.
 
 ```shell
 $ aio where
@@ -103,17 +103,17 @@ $ aio where
 
 ## Verifica accesso RDE
 
-Verifica l’installazione e la configurazione del plug-in RDE AEM eseguendo il seguente comando.
+Verificare l&#39;installazione e la configurazione del plug-in AEM RDE eseguendo il comando seguente.
 
 ```shell
 $ aio aem:rde:status
 ```
 
-Le informazioni sullo stato dell’RDE vengono visualizzate come lo stato dell’ambiente, l’elenco di _progetto AEM_ bundle e configurazioni sul servizio di authoring e pubblicazione.
+Le informazioni sullo stato RDE vengono visualizzate come stato dell’ambiente, l’elenco delle _il tuo progetto AEM_ bundle e configurazioni nel servizio Author e Publish.
 
 ## Passaggio successivo
 
-Scopri [come utilizzare](./how-to-use.md) un RDE per distribuire codice e contenuti dall&#39;IDE (Integrated Development Environment) preferito per cicli di sviluppo più rapidi.
+Scopri [come utilizzare](./how-to-use.md) un RDE per distribuire codice e contenuti dall&#39;ambiente di sviluppo integrato (IDE) preferito per cicli di sviluppo più rapidi.
 
 
 ## Risorse aggiuntive
@@ -122,8 +122,8 @@ Scopri [come utilizzare](./how-to-use.md) un RDE per distribuire codice e conten
 
 Configurazione di [CLI estensibile Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) noto anche come `aio CLI`
 
-[Utilizzo e comandi di AIO CLI](https://github.com/adobe/aio-cli#usage)
+[Utilizzo e comandi della CLI AIO](https://github.com/adobe/aio-cli#usage)
 
-[Plug-in Adobe I/O Runtime CLI per le interazioni con gli ambienti di sviluppo rapido AEM](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
+[Plug-in Adobe I/O Runtime CLI per interazioni con ambienti di sviluppo rapido AEM](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[Plug-in CLI di Cloud Manager AIO](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+[Plug-in CLI AIO di Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager)

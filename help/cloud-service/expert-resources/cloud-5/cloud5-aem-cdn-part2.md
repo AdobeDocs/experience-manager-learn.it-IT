@@ -1,6 +1,6 @@
 ---
 title: Cloud 5 AEM CDN parte 2
-description: la seconda parte dell’utilizzo della rete CDN AEM e immergiti in diverse opzioni.
+description: seconda parte dell’utilizzo della rete CDN dell’AEM e approfondimento delle varie opzioni.
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 ---
 
-# Parte 2 CDN cloud 5 AEM
+# Cloud 5 AEM CDN parte 2
 
-La seconda parte dell’utilizzo della rete CDN AEM e immergiti in diverse opzioni.
+La seconda parte dell’utilizzo della rete CDN dell’AEM e approfondisci varie opzioni.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340994?quality=12&learn=on)
 
-## Contenuto della seconda parte della presente serie
+## Contenuto della seconda parte di questa serie
 
-+ Ottimizzazione delle immagini al volo - caso d&#39;uso di contenuti multimediali dinamici
-+ Reindirizzamenti del codice del paese
-+ Analisi e reporting del traffico CDN
++ Ottimizzazione immediata delle immagini: caso di utilizzo di Dynamic Media
++ Reindirizzamenti codice paese
++ Analisi del traffico CDN e reporting
 + Porta la tua CDN (BYOCDN)
 
-[Visualizza parte 1](cloud5-aem-cdn-part1.md)
+[Visualizza Parte 1](cloud5-aem-cdn-part1.md)

@@ -1,6 +1,6 @@
 ---
-title: Come incorporare i font per Forms e le conversioni del servizio di output
-description: Passaggi per incorporare i font per Forms e le conversioni dei servizi di output
+title: Incorporare font per Forms e convertire i servizi di output
+description: Passaggi per incorporare i font per le conversioni di Forms e dei servizi di output
 type: Troubleshooting
 role: Admin
 level: Experienced
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Come incorporare i font per Forms e le conversioni del servizio di output
+# Incorporare font per Forms e convertire i servizi di output
 
-*Questo video illustra i passaggi per incorporare i font per Forms e le conversioni dei servizi di output.*
+*Questo video illustra i passaggi per incorporare font per Forms e convertire i servizi di output.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335496?quality=12&learn=on)

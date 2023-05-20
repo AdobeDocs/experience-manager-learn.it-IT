@@ -1,7 +1,7 @@
 ---
-title: Configurazione del grafico a linee per il primo documento di comunicazione interattivo parte 8
+title: Configurazione del grafico a linee per il primo documento di comunicazione interattivo - Parte 8
 seo-title: Configuring line chart for your first interactive communication document
-description: Questa è la parte 8 dell'esercitazione su più passaggi per la creazione del primo documento di comunicazione interattiva. In questa parte verrà aggiunto un grafico a linee al pannello di avanzamento dell'account.
+description: Questa è la parte 8 di un tutorial a più passaggi per creare il tuo primo documento di comunicazione interattiva. In questa parte verrà aggiunto un grafico a linee al pannello di avanzamento dell’account.
 seo-description: This is part 8 of multistep tutorial for creating your first interactive communications document. In this part, we will add a Line chart to the account progress panel.
 uuid: 08c3e7af-e3cb-4ee0-bdc1-d112bfa70e40
 feature: Interactive Communication
@@ -24,29 +24,29 @@ ht-degree: 2%
 
 # Configurazione del grafico a linee per il primo documento di comunicazione interattivo
 
-In questa parte verrà aggiunto un grafico a linee al pannello di avanzamento dell&#39;account.
+In questa parte verrà aggiunto un grafico a linee al pannello di avanzamento dell’account.
 
-Accedi ad AEM Forms e passa a Adobe Experience Manager > Forms > Forms e documenti.
+Accedi ad AEM Forms e passa a Adobe Experience Manager > Forms > Forms &amp; Documents.
 
-Apri la cartella 401KStatement .
+Aprire la cartella 401KStatement.
 
-Apri l&#39;istruzione 401KSin modalità di modifica.
+Aprire 401KStatement in modalità di modifica.
 
-AEM Forms 6.4 ha semplificato notevolmente la visualizzazione dei dati utilizzando vari tipi di grafici. Useremo un grafico a linee per visualizzare i saldi per anno.
+AEM Forms 6.4 ha semplificato notevolmente la visualizzazione dei dati utilizzando vari tipi di grafici. Verrà utilizzato un grafico a linee per visualizzare i saldi per anno.
 
-Tocca **Avanzamento account** area di destinazione a destra e fare clic sull&#39;icona &quot;+&quot; per visualizzare la finestra di dialogo inserisci componente.
+Tocca il **Avanzamento account** nell’area di destinazione a destra, fai clic sull’icona &quot;+&quot; per visualizzare la finestra di dialogo inserisci componente.
 
-Selezionare Grafico per inserire il componente grafico.
+Seleziona Grafico per inserire il componente Grafico.
 
-Configura il componente grafico in base alle impostazioni nella schermata seguente e salva le impostazioni facendo clic sull&#39;icona del segno di spunta blu.
+Configura il componente grafico in base alle impostazioni riportate nella schermata seguente e salva le impostazioni facendo clic sull’icona del segno di spunta blu.
 
-Assicurarsi di selezionare l&#39;elemento corretto del modello dati del modulo asse x e y.
+Assicurati di selezionare l’elemento del modello dati del modulo corretto sugli assi x e y.
 
-**Impostazioni grafico a linee in AEM Forms 6.4**
+**Impostazioni dei grafici a linee in AEM Forms 6.4**
 
 ![linechart64](assets/linechart.png)
 
-**Impostazioni grafico a linee in AEM Forms 6.5**
+**Impostazioni dei grafici a linee in AEM Forms 6.5**
 
 ![linechart64](assets/linechart65.PNG)
 

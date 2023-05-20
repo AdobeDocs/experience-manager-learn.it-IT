@@ -1,6 +1,6 @@
 ---
 title: Aggiunta di elementi cartella DAM al componente gruppo di scelta
-description: Aggiunta dinamica di elementi al componente gruppo di scelta
+description: Aggiungi elementi al componente gruppo di scelta in modo dinamico
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -17,13 +17,13 @@ ht-degree: 1%
 
 # Aggiunta dinamica di elementi al componente gruppo di scelta
 
-AEM Forms 6.5 ha introdotto la possibilità di aggiungere in modo dinamico elementi a un componente per un gruppo di scelta Forms adattivo come CheckBox, Pulsante di scelta e Elenco immagini. In questo articolo esamineremo il caso d’uso per la compilazione di un componente del gruppo di scelta con il contenuto della cartella DAM. Nella schermata scattati i 3 file si trovano nella cartella denominata newsletter.Ogni volta che una nuova newsletter viene aggiunta alla cartella, il componente gruppo di scelta viene aggiornato per elencare automaticamente il suo contenuto. L&#39;utente può selezionare una o più newsletter da scaricare.
+In AEM Forms 6.5 è stata introdotta la possibilità di aggiungere elementi in modo dinamico a un componente del gruppo di scelta di Forms adattivo, ad esempio CheckBox, Pulsante di scelta ed Elenco immagini. In questo articolo esamineremo il caso d’uso per compilare un componente del gruppo di scelta con il contenuto della cartella DAM. Nella schermata i 3 file si trovano nella cartella denominata newsletter.Ogni volta che una nuova newsletter viene aggiunta alla cartella, il componente del gruppo di scelta verrà aggiornato per elencare automaticamente il suo contenuto. L&#39;utente può selezionare una o più newsletter da scaricare.
 
 ![Editor regola](assets/newsletters-download.png)
 
 ## Crea un servlet per restituire il contenuto della cartella DAM
 
-Il codice seguente è stato scritto per restituire il contenuto della cartella DAM in formato JSON.
+Il seguente codice è stato scritto per restituire il contenuto della cartella DAM in formato JSON.
 
 ```java
 package com.newsletters.core.servlets;
@@ -82,9 +82,9 @@ public class ListFolderContent extends SlingSafeMethodsServlet {
 }
 ```
 
-## Creare una libreria client con la funzione JavaScript
+## Creare una libreria client con funzione JavaScript
 
-Il servlet viene richiamato da una funzione JavaScript. La funzione restituisce un oggetto array che verrà utilizzato per compilare il componente gruppo di scelta
+Il servlet viene richiamato da una funzione JavaScript. La funzione restituisce un oggetto array che verrà utilizzato per popolare il componente gruppo di scelta
 
 ```javascript
 /**
@@ -110,10 +110,10 @@ function getDAMFolderAssets(damFolder) {
 
 ## Creare un modulo adattivo
 
-Creare un modulo adattivo e associarlo alla libreria client **listfolk assets**. Aggiungi al modulo un componente casella di controllo. Utilizza l’editor di regole per popolare le opzioni della casella di controllo come mostrato nella schermata
+Creare un modulo adattivo e associarlo alla libreria client **listfolderassets**. Aggiungi al modulo un componente casella di controllo. Utilizza l’editor di regole per popolare le opzioni della casella di controllo come mostrato nella schermata
 ![set-options](assets/set-options-newsletter.png)
 
-Stiamo richiamando la funzione javascript chiamata **getDAMFolderAssets** e passare il percorso delle risorse della cartella DAM all’elenco nel modulo.
+Stiamo richiamando la funzione JavaScript denominata **getDAMFolderAssets** e il passaggio del percorso delle risorse della cartella DAM da elencare nel modulo.
 
 ## Passaggi successivi
 

@@ -1,6 +1,6 @@
 ---
 title: Utilizzo di modelli di dati per moduli basati su JDBC con AEM Forms
-description: Questo video illustra come creare un modello dati modulo basato su un’origine dati JDBC, un modulo adattivo basato sul modello dati del modulo e come utilizzare l’operazione "INSERT" utilizzando il modello dati del modulo.
+description: Questo video illustra come creare un modello dati modulo basato su un’origine dati JDBC, un modulo adattivo basato sul modello dati modulo e come utilizzare l’operazione "INSERISCI" utilizzando il modello dati modulo.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -17,10 +17,10 @@ ht-degree: 0%
 
 # Utilizzo di modelli di dati per moduli basati su JDBC con AEM Forms {#using-jdbc-based-form-data-models-with-aem-forms}
 
-Questo video illustra come creare un modello dati modulo basato su un’origine dati JDBC, un modulo adattivo basato sul modello dati del modulo e come utilizzare l’operazione &quot;INSERT&quot; utilizzando il modello dati del modulo.
+Questo video illustra come creare un modello dati modulo basato su un’origine dati JDBC, un modulo adattivo basato sul modello dati modulo e come utilizzare l’operazione &quot;INSERISCI&quot; utilizzando il modello dati modulo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17736?quality=12&learn=on)
 
 >[!NOTE]
 >
->È possibile utilizzare qualsiasi origine dati RDBMS, purché i driver di database richiesti siano distribuiti per AEM come bundle OSGi. L’impostazione di un’origine dati RDBMS in AEM è descritta in [Configurazione dell’integrazione dei dati con AEM Forms](/help/forms/adaptive-forms/data-integration-technical-video-setup.md).
+>È possibile utilizzare qualsiasi origine dati RDBMS, purché i driver di database richiesti vengano distribuiti all’AEM come bundle OSGi. L’impostazione di un’origine dati RDBMS nell’AEM è descritta in [Configurare l’integrazione dei dati con AEM Forms](/help/forms/adaptive-forms/data-integration-technical-video-setup.md).

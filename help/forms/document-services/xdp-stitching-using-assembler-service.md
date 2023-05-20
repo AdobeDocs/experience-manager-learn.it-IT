@@ -1,5 +1,5 @@
 ---
-title: Stitching XDP utilizzando il servizio assemblatore
+title: Unione XDP tramite il servizio Assembler
 description: Utilizzo del servizio Assembler in AEM Forms per unire xdp
 feature: Assembler
 version: 6.4,6.5
@@ -7,19 +7,20 @@ topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2022-12-19T00:00:00Z
-source-git-commit: 8f17e98c56c78824e8850402e3b79b3d47901c0b
+exl-id: e116038f-7d86-41ee-b1b0-7b8569121d6d
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 2%
 
 ---
 
-# Stitching XDP utilizzando il servizio assembler
+# Stitching XDP tramite il servizio Assembler
 
-Questo articolo fornisce le risorse per dimostrare la capacità di unire documenti xdp utilizzando il servizio assembler.
-Il seguente codice jsp è stato scritto per inserire un sottomodulo chiamato **indirizzo** dal documento xdp denominato address.xdp in un punto di inserimento denominato **indirizzo** nel documento master.xdp. L&#39;xdp risultante è stato salvato nella cartella principale dell&#39;installazione AEM.
+Questo articolo fornisce le risorse per dimostrare la capacità di unire i documenti XDP utilizzando il servizio Assembler.
+Il seguente codice jsp è stato scritto per inserire un sottomodulo denominato **indirizzo** da un documento xdp denominato address.xdp in un punto di inserimento denominato **indirizzo** nel documento master.xdp. L’XDP risultante è stato salvato nella cartella principale dell’installazione AEM.
 
-Il servizio Assembler si basa su documenti DDX validi per descrivere la manipolazione dei documenti PDF. Puoi fare riferimento alla [Documento di riferimento DDX qui](assets/ddxRef.pdf).Page 40 contiene informazioni sull’unione di xdp.
+Il servizio Assembler si basa su documenti DDX validi per descrivere la manipolazione dei documenti PDF. È possibile fare riferimento a [Documento di riferimento DDX qui](assets/ddxRef.pdf).Pagina 40 contiene informazioni sull’unione xdp.
 
 ```java
     javax.servlet.http.Part ddxFile = request.getPart("xdpstitching.ddx");
@@ -51,7 +52,7 @@ Il servizio Assembler si basa su documenti DDX validi per descrivere la manipola
     finalXDP.copyToFile(new java.io.File("stitched.xdp"));
 ```
 
-Il file DDX da inserire in un altro file xdp è elencato di seguito. Il DDX inserisce il sottomodulo  **indirizzo** da address.xdp nel punto di inserimento denominato **indirizzo** nel master.xdp. Il documento risultante denominato **stitched.xdp** viene salvato nel file system.
+Il file DDX per inserire frammenti in un altro xdp è elencato di seguito. DDX inserisce la sottomaschera  **indirizzo** da address.xdp nel punto di inserimento denominato **indirizzo** in master.xdp. Il documento risultante denominato **stitched.xdp** viene salvato nel file system.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -64,25 +65,25 @@ Il file DDX da inserire in un altro file xdp è elencato di seguito. Il DDX inse
 </DDX>
 ```
 
-Per far funzionare questa funzionalità sul server AEM
+Per utilizzare questa funzionalità sul server AEM
 
 * Scarica [Pacchetto di unione XDP](assets/xdp-stitching.zip) al sistema locale.
-* Carica e installa il pacchetto utilizzando [gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
-* [Estrai il contenuto di questo file zip](assets/xdp-and-ddx.zip) per ottenere il file xdp e DDX di esempio
+* Carica e installa il pacchetto utilizzando [gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+* [Estrai il contenuto di questo file zip](assets/xdp-and-ddx.zip) per ottenere i file xdp e DDX di esempio
 
-**Dopo aver installato il pacchetto dovrai inserire nell&#39;elenco Consentiti i seguenti URL in Adobe Granite CSRF Filter.**
+**Dopo aver installato il pacchetto, dovrai inserire nell&#39;elenco Consentiti i seguenti URL in Adobe Granite CSRF Filter.**
 
-1. Segui i passaggi indicati di seguito per inserire nell&#39;elenco Consentiti i percorsi sopra menzionati.
+1. Segui i passaggi indicati di seguito per inserire nell&#39;elenco Consentiti i percorsi menzionati in precedenza.
 1. [Accedi a configMgr](http://localhost:4502/system/console/configMgr)
-1. Ricerca filtro CSRF Granite Adobe
+1. Cerca Adobe di filtro CSRF Granite
 1. Aggiungi il seguente percorso nelle sezioni escluse e salva `/content/AemFormsSamples/assemblerservice`
-1. Cerca &quot;filtro Sling Referrer&quot;
-1. Selezionare la casella di controllo &quot;Consenti vuoto&quot;. (Questa impostazione deve essere utilizzata solo a scopo di test) Esistono diversi modi per testare il codice di esempio. La più rapida e semplice è quella di utilizzare l&#39;app Postman. Postman consente di effettuare richieste POST al server. Installa l&#39;app Postman sul tuo sistema.
-Avvia l’app e immetti il seguente URL per testare l’API dei dati di esportazione http://localhost:4502/content/AemFormsSamples/assemblerservice.html
+1. Cerca &quot;Sling Referrer filter&quot; (Filtro referrer Sling)
+1. Selezionare la casella di controllo Consenti vuoto. (Questa impostazione deve essere utilizzata solo a scopo di test) Esistono diversi modi per testare il codice di esempio. Il metodo più rapido e semplice consiste nell’utilizzare l’app Postman. Postman consente di effettuare richieste POST al server. Installa l’app Postman sul sistema.
+Avvia l&#39;app e immetti il seguente URL per testare l&#39;API per l&#39;esportazione dei dati http://localhost:4502/content/AemFormsSamples/assemblerservice.html
 
-Fornisci i seguenti parametri di input come specificato nella schermata. È possibile utilizzare i documenti di esempio scaricati in precedenza,
+Fornire i seguenti parametri di input come specificato nella schermata. Puoi utilizzare i documenti di esempio scaricati in precedenza,
 ![xdp-stitch-postman](assets/xdp-stitching-postman.png)
 
 >[!NOTE]
 >
->Assicurati che l&#39;installazione di AEM Forms sia completa. Tutti i tuoi bundle devono essere in stato attivo.
+>Assicurati che l’installazione di AEM Forms sia stata completata. Tutti i bundle devono essere in stato attivo.

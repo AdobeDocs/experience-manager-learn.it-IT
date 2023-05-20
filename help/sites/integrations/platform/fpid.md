@@ -1,6 +1,6 @@
 ---
-title: Generare FPID Adobe Experience Platform con AEM
-description: Scopri come generare o aggiornare i cookie FPID di Adobe Experience Platform utilizzando AEM.
+title: Generare FPID di Adobe Experience Platform con AEM
+description: Scopri come generare o aggiornare i cookie FPID di Adobe Experience Platform utilizzando l’AEM.
 version: Cloud Service
 feature: Integrations, APIs, Dispatcher
 topic: Integrations, Personalization, Development
@@ -9,7 +9,8 @@ level: Beginner
 last-substantial-update: 2022-10-20T00:00:00Z
 kt: 11336
 thumbnail: kt-11336.jpeg
-source-git-commit: aeeed85ec05de9538b78edee67db4d632cffaaab
+exl-id: 18a22f54-da58-4326-a7b0-3b1ac40ea0b5
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 0%
@@ -18,56 +19,56 @@ ht-degree: 0%
 
 # Generare FPID di Experience Platform con AEM
 
-L’integrazione di Adobe Experience Manager (AEM) con Adobe Experience Platform (AEP) richiede AEM per generare e mantenere un cookie FPID (Device ID) univoco per il tracciamento dell’attività dell’utente.
+L’integrazione di Adobe Experience Manager (AEM) con Adobe Experience Platform (AEP) richiede che l’AEM generi e mantenga un cookie FPID (first party device ID) univoco per poter tenere traccia in modo univoco dell’attività dell’utente.
 
-Leggi la documentazione di supporto a [scopri in che modo gli ID dispositivo e gli ID Experience Cloud di prima parte funzionano insieme](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=en).
+Leggere la documentazione di supporto per [scopri i dettagli della collaborazione tra gli ID dispositivo di prima parte e gli ID Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=en).
 
-Di seguito è riportata una panoramica del funzionamento degli FPID quando si utilizza AEM come host web.
+Di seguito è riportata una panoramica del funzionamento degli FPID quando si utilizza l’AEM come host web.
 
 ![FPID ed ECID con AEM](./assets/aem-platform-fpid-architecture.png)
 
-## Genera e persiste il FPID con AEM
+## Generare e mantenere l’FPID con AEM
 
-Il servizio AEM Publish ottimizza le prestazioni memorizzando nella cache il maggior numero possibile di richieste, sia nella cache CDN che AEM Dispatcher.
+Il servizio di pubblicazione AEM ottimizza le prestazioni memorizzando nella cache le richieste il maggior numero possibile di richieste, sia nella cache CDN che in quella del Dispatcher AEM.
 
-È fondamentale che le richieste HTTP generino il cookie FPID univoco per utente e restituiscano il valore FPID non vengano mai memorizzate nella cache e vengano servite direttamente da AEM Publish, in grado di implementare la logica per garantire l’univocità.
+Le richieste HTTP imperative che generano il cookie FPID univoco per utente e restituiscono il valore FPID non vengono mai memorizzate nella cache e vengono gestite direttamente da AEM Publish, che può implementare una logica per garantire l’univocità.
 
-Evita di generare il cookie FPID sulle richieste per pagine web o altre risorse memorizzabili in cache, in quanto la combinazione del requisito di univocità di FPID renderebbe queste risorse inmemorizzabili nella cache.
+Evita di generare il cookie FPID nelle richieste di pagine web o di altre risorse memorizzabili in cache, in quanto la combinazione dei requisiti di univocità dell’FPID renderebbe queste risorse non memorizzabili in cache.
 
-Il diagramma seguente descrive come il servizio AEM Publish gestisce gli FPID.
+Il diagramma seguente descrive come AEM Publish Service gestisce gli FPID.
 
-![Diagramma di flusso FPID e AEM](./assets/aem-fpid-flow.png)
+![Diagramma di flusso dell’FPID e dell’AEM](./assets/aem-fpid-flow.png)
 
-1. Il browser Web richiede una pagina web ospitata da AEM. La richiesta può essere servita utilizzando una copia in cache della pagina web da CDN o AEM cache del Dispatcher.
-1. Se la pagina web non può essere servita da CDN o AEM cache del Dispatcher, la richiesta raggiunge il servizio AEM Publish, che genera la pagina web richiesta.
-1. La pagina web viene quindi restituita al browser Web, popolando le cache che non potevano soddisfare la richiesta. Con AEM, si prevede che le percentuali di hit della cache di CDN e AEM Dispatcher siano superiori al 90%.
-1. La pagina web contiene JavaScript che effettua una richiesta XHR (AJAX) asincrona non memorizzabile nella cache a un servlet FPID personalizzato in AEM Publish Service. Poiché si tratta di una richiesta non memorizzabile nella cache (in virtù del parametro di query casuale e delle intestazioni Cache-Control), non viene mai memorizzata nella cache da CDN o AEM Dispatcher, e raggiunge sempre il servizio AEM Publish per generare la risposta.
-1. Il servlet FPID personalizzato nel servizio AEM Publish elabora la richiesta, genera un nuovo FPID quando non viene trovato alcun cookie FPID esistente o estende la durata di qualsiasi cookie FPID esistente. Il servlet restituisce anche il FPID nel corpo della risposta da utilizzare per JavaScript lato client. Fortunatamente la logica del servlet FPID personalizzata è leggera, impedendo a questa richiesta di influire sulle prestazioni del servizio AEM Publish.
-1. La risposta per la richiesta XHR restituisce al browser con il cookie FPID e il FPID come JSON nel corpo della risposta per l’utilizzo da parte di Platform Web SDK.
+1. Il browser web richiede una pagina web ospitata dall’AEM. La richiesta può essere gestita utilizzando una copia memorizzata nella cache della pagina web dalla CDN o dalla cache del Dispatcher AEM.
+1. Se la pagina web non può essere servita da cache CDN o Dispatcher AEM, la richiesta raggiunge il servizio di pubblicazione AEM, che genera la pagina web richiesta.
+1. La pagina web viene quindi restituita al browser web, popolando le cache che non potevano servire la richiesta. Con l’AEM, prevedi che le percentuali di hit della cache di Dispatcher CDN e AEM siano superiori al 90%.
+1. La pagina web contiene JavaScript che effettua una richiesta XHR (AJAX) asincrona non memorizzabile in cache a un servlet FPID personalizzato nel servizio di pubblicazione AEM. Poiché si tratta di una richiesta non memorizzabile in cache (in virtù del parametro di query casuale e delle intestazioni Cache-Control), non viene mai memorizzata nella cache da CDN o Dispatcher AEM e raggiunge sempre il servizio AEM Publish per generare la risposta.
+1. Il servlet FPID personalizzato nel servizio di pubblicazione di AEM elabora la richiesta, generando un nuovo FPID quando non viene trovato alcun cookie FPID esistente o estendendo la durata di qualsiasi cookie FPID esistente. Il servlet restituisce anche l’FPID nel corpo della risposta per l’utilizzo da parte di JavaScript lato client. Fortunatamente la logica del servlet FPID personalizzata è leggera e impedisce a questa richiesta di influire sulle prestazioni del servizio di pubblicazione AEM.
+1. La risposta per la richiesta XHR restituisce al browser con il cookie FPID e l’FPID come JSON nel corpo della risposta per l’utilizzo da parte di Platform Web SDK.
 
 ## Esempio di codice
 
-Il codice e la configurazione seguenti possono essere distribuiti al servizio AEM Publish per creare un endpoint che genera, o estende la durata di un cookie FPID esistente e restituisce il FPID come JSON.
+Il codice e la configurazione seguenti possono essere distribuiti al servizio di pubblicazione AEM per creare un endpoint che genera o estende la durata di un cookie FPID esistente e restituisce l’FPID come JSON.
 
-### AEM servlet cookie FPID
+### Servlet per cookie AEM FPID
 
 È necessario creare un endpoint HTTP AEM per generare o estendere un cookie FPID, utilizzando un [Servlet Sling](https://sling.apache.org/documentation/the-sling-engine/servlets.html#registering-a-servlet-using-java-annotations-1).
 
-+ Il servlet è associato a `/bin/aem/fpid` poiché l’autenticazione non è necessaria per accedervi. Se è richiesta l’autenticazione, eseguire il binding a un tipo di risorsa Sling.
-+ Il servlet accetta richieste HTTP GET. La risposta è contrassegnata con `Cache-Control: no-store` per evitare il caching, ma questo endpoint deve essere richiesto utilizzando anche parametri di query univoci di svuotamento della cache.
++ Il servlet è associato a `/bin/aem/fpid` poiché per accedervi non è necessaria l’autenticazione. Se è richiesta l’autenticazione, effettua un binding a un tipo di risorsa Sling.
++ Il servlet accetta le richieste HTTP GET. La risposta è contrassegnata con `Cache-Control: no-store` per evitare il caching, ma questo endpoint deve essere richiesto utilizzando anche parametri di query univoci per il busting della cache.
 
-Quando una richiesta HTTP raggiunge il servlet, il servlet controlla se nella richiesta esiste un cookie FPID:
+Quando una richiesta HTTP raggiunge il servlet, quest’ultimo controlla se nella richiesta esiste un cookie FPID:
 
-+ Se esiste un cookie FPID, estende la durata del cookie e raccogli il suo valore da scrivere nella risposta.
++ Se è presente un cookie FPID, estendi la durata del cookie e raccogli il relativo valore per scriverlo nella risposta.
 + Se non esiste un cookie FPID, genera un nuovo cookie FPID e salva il valore da scrivere nella risposta.
 
-Il servlet scrive quindi il FPID nella risposta come oggetto JSON nel modulo: `{ fpid: "<FPID VALUE>" }`.
+Il servlet scrive quindi l’FPID nella risposta come oggetto JSON nel formato: `{ fpid: "<FPID VALUE>" }`.
 
-È importante fornire il FPID al client nel corpo in quanto il cookie FPID è contrassegnato `HttpOnly`, che significa che solo il server può leggere il suo valore e che JavaScript lato client non può farlo.
+È importante fornire l’FPID al client nel corpo, poiché il cookie FPID è contrassegnato `HttpOnly`, il che significa che solo il server può leggerne il valore, mentre JavaScript lato client non può.
 
-Il valore FPID dal corpo della risposta viene utilizzato per parametrizzare le chiamate tramite l’SDK per web di Platform.
+Il valore FPID dal corpo della risposta viene utilizzato per parametrizzare le chiamate utilizzando Platform Web SDK.
 
-Di seguito è riportato un codice di esempio di un endpoint del servlet AEM (disponibile tramite `HTTP GET /bin/aep/fpid`) che genera o aggiorna un cookie FPID e restituisce il FPID come JSON.
+Di seguito è riportato un esempio di codice di un endpoint servlet AEM (disponibile tramite `HTTP GET /bin/aep/fpid`) che genera o aggiorna un cookie FPID e restituisce l’FPID come JSON.
 
 + `core/src/main/java/com/adobe/aem/guides/wkndexamples/core/aep/impl/FpidServlet.java`
 
@@ -144,24 +145,24 @@ public class FpidServlet extends SlingAllMethodsServlet {
 }
 ```
 
-### script HTML
+### Script HTML
 
-Per richiamare il servlet in modo asincrono, è necessario aggiungere alla pagina un JavaScript personalizzato lato client, generando o aggiornando il cookie FPID e restituendo il FPID nella risposta.
+È necessario aggiungere alla pagina un JavaScript lato client personalizzato per richiamare in modo asincrono il servlet, generando o aggiornando il cookie FPID e restituendo l’FPID nella risposta.
 
-Questo script JavaScript è tipicamente aggiunto alla pagina utilizzando uno dei seguenti metodi:
+Questo script JavaScript viene in genere aggiunto alla pagina utilizzando uno dei seguenti metodi:
 
 + [Tag in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 + [Libreria client AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/clientlibs.html?lang=en)
 
-La chiamata XHR al servlet FPID AEM personalizzato è rapida, anche se asincrona, quindi è possibile per un utente visitare una pagina web servita da AEM e navigare via prima che la richiesta possa essere completata.
-In questo caso, lo stesso processo tenterà di nuovo di caricare la pagina successiva di una pagina web da AEM.
+La chiamata XHR al servlet FPID dell’AEM personalizzato è veloce, anche se asincrona, quindi è possibile per un utente visitare una pagina web servita dall’AEM e spostarsi prima che la richiesta possa essere completata.
+In questo caso, lo stesso processo tenterà di nuovo al successivo caricamento di una pagina web da AEM.
 
-HTTP GET al servlet FPID AEM (`/bin/aep/fpid`) è parametrizzato con un parametro di query casuale per garantire che qualsiasi infrastruttura tra il browser e il servizio AEM Publish non memorizzi in cache la risposta della richiesta.
-Analogamente, la `Cache-Control: no-store` l’intestazione della richiesta viene aggiunta per supportare l’eliminazione della memorizzazione in cache.
+Il GET HTTP al servlet FPID dell’AEM (`/bin/aep/fpid`) è parametrizzato con un parametro di query casuale per garantire che qualsiasi infrastruttura tra il browser e il servizio AEM Publish non memorizzi la risposta della richiesta nella cache.
+Analogamente, il `Cache-Control: no-store` viene aggiunta un’intestazione di richiesta per supportare l’evitazione del caching.
 
-Dopo una chiamata del servlet FPID AEM, il FPID viene recuperato dalla risposta JSON e utilizzato dal [SDK per web per Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/tags-configuration/install-web-sdk.html?lang=en) per inviarlo alle API di Experience Platform.
+In seguito a una chiamata del servlet dell’FPID dell’AEM, l’FPID viene recuperato dalla risposta JSON e utilizzato dal [Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/tags-configuration/install-web-sdk.html?lang=en) per inviarlo alle API Experience Platform.
 
-Consulta la documentazione di Experience Platform per ulteriori informazioni su [utilizzo di FPID in identityMap](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html#identityMap)
+Per ulteriori informazioni su, consulta la documentazione di Experience Platform. [utilizzo degli FPID in identityMap](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html#identityMap)
 
 ```javascript
 ...
@@ -184,11 +185,11 @@ Consulta la documentazione di Experience Platform per ulteriori informazioni su 
 </script>
 ```
 
-### Filtro Consentiti del Dispatcher
+### Filtro di autorizzazione Dispatcher
 
-Infine, le richieste HTTP GET al servlet FPID personalizzato devono essere consentite tramite AEM Dispatcher `filter.any` configurazione.
+Infine, le richieste HTTP di GET al servlet FPID personalizzato devono essere consentite tramite il dispatcher dell’AEM `filter.any` configurazione.
 
-Se questa configurazione del Dispatcher non è implementata correttamente, HTTP GET le richieste a `/bin/aep/fpid` risulta in un 404.
+Se questa configurazione di Dispatcher non viene implementata correttamente, il GET HTTP richiede a `/bin/aep/fpid` si ottiene un 404.
 
 + `dispatcher/src/conf.dispatcher.d/filters/filters.any`
 
@@ -198,10 +199,8 @@ Se questa configurazione del Dispatcher non è implementata correttamente, HTTP 
 
 ## Risorse di Experience Platform
 
-Consulta la seguente documentazione di Experience Platform per gli ID dispositivo di prime parti (FPID) e per gestire i dati di identità con Platform Web SDK.
+Consulta la seguente documentazione di Experience Platform per gli ID dispositivo di prime parti (FPID) e per la gestione dei dati di identità con Platform Web SDK.
 
 + [Generare ID dispositivo di prime parti](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html)
 + [ID dispositivo di prime parti nell’SDK per web di Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html)
-+ [Dati di identità nell’SDK per web di Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html)
-
-
++ [Dati di identità in Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html)

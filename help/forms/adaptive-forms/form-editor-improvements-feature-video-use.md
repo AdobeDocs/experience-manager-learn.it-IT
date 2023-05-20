@@ -1,6 +1,6 @@
 ---
-title: Miglioramenti dell’Editor moduli in AEM Forms
-description: AEM 6.3 introduce diverse nuove funzioni e miglioramenti in questa versione per semplificare l’esperienza di authoring di moduli e documenti adattivi. I miglioramenti consentono di ridurre i tempi di commercializzazione e consentono agli utenti aziendali di lavorare con moduli e documenti
+title: Miglioramenti dell’editor di moduli in AEM Forms
+description: AEM 6.3 introduce diverse nuove funzioni e miglioramenti in questa versione per semplificare l’esperienza di authoring di moduli e documenti adattivi. I miglioramenti consentono di ridurre i tempi di commercializzazione e consentono agli utenti aziendali di utilizzare moduli e documenti
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -15,24 +15,24 @@ ht-degree: 0%
 
 ---
 
-# Miglioramenti dell’Editor moduli in AEM Forms {#form-editor-improvements-in-aem-forms}
+# Miglioramenti dell’editor di moduli in AEM Forms {#form-editor-improvements-in-aem-forms}
 
-AEM 6.3 introduce diverse nuove funzioni e miglioramenti in questa versione per semplificare l’esperienza di authoring di moduli e documenti adattivi. I miglioramenti consentono di ridurre i tempi di commercializzazione e consentono agli utenti aziendali di lavorare con moduli e documenti
+AEM 6.3 introduce diverse nuove funzioni e miglioramenti in questa versione per semplificare l’esperienza di authoring di moduli e documenti adattivi. I miglioramenti consentono di ridurre i tempi di commercializzazione e consentono agli utenti aziendali di utilizzare moduli e documenti
 
 >[!VIDEO](https://video.tv.adobe.com/v/19500?quality=12&learn=on)
 
-**Alcuni dei principali miglioramenti per l’Editor di moduli adattivi includono:**
+**Alcuni dei principali miglioramenti per l’editor di moduli adattivi includono:**
 
-* [Esperienza utente finale migliorata](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
+* [Migliore esperienza dell&#39;utente finale](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
 
-* Compilazione automatica dei campi del modulo
+* Riempimento automatico dei campi modulo
 * Rich Text per un componente casella di testo
 * Tipi di input specializzati per i campi modulo
 
 * [Modifica in linea del titolo del componente](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
 * [Convalida predefinita nei componenti](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
-* [Scelte rapide da tastiera per un’esperienza di authoring dei contenuti più rapida](https://helpx.adobe.com/aem-forms/6-3/keyboard-shortcuts.html#AdaptiveFormEditor)
+* [Scelte rapide da tastiera per un’esperienza di authoring più rapida dei contenuti](https://helpx.adobe.com/aem-forms/6-3/keyboard-shortcuts.html#AdaptiveFormEditor)
 * [Supporto per lo schema JSON per la creazione di moduli adattivi](https://helpx.adobe.com/aem-forms/6-3/adaptive-form-json-schema-form-model.html)
 * [CAPTCHA nei moduli adattivi](https://helpx.adobe.com/aem-forms/6-3/captcha-adaptive-forms.html)
-* [Integrazione Acrobat Sign migliorata](https://helpx.adobe.com/aem-forms/6-3/working-with-adobe-sign.html)
-* [Invio asincrono di moduli](https://helpx.adobe.com/aem-forms/6-3/asynchronous-submissions-adaptive-forms.html)
+* [Integrazione avanzata di Acrobat Sign](https://helpx.adobe.com/aem-forms/6-3/working-with-adobe-sign.html)
+* [Invio asincrono dei moduli](https://helpx.adobe.com/aem-forms/6-3/asynchronous-submissions-adaptive-forms.html)

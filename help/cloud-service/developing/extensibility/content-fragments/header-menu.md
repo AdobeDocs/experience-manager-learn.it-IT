@@ -1,6 +1,6 @@
 ---
-title: Estensioni del menu dell’intestazione della console Frammento di contenuto AEM
-description: Scopri come creare un’estensione del menu di intestazione della console Frammento di contenuto AEM.
+title: Estensioni del menu di intestazione della console Frammenti di contenuto AEM
+description: Scopri come creare estensioni del menu di intestazione della console Frammenti di contenuto AEM.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -9,30 +9,30 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+exl-id: 92d6e98e-24d0-4229-9d30-850f6b72ab43
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
 
 ---
 
+# Estensione del menu intestazione
 
-# Estensione del menu Intestazione
+![Estensione del menu intestazione](./assets/header-menu/header-menu.png){align="center"}
 
-![Estensione del menu Intestazione](./assets/header-menu/header-menu.png){align="center"}
+Estensioni che includono un menu di intestazione, introduce un pulsante nell’intestazione della Console Frammenti di contenuto AEM che viene visualizzata quando __no__ I frammenti di contenuto sono selezionati. Poiché i pulsanti dell’estensione del menu di intestazione vengono visualizzati solo quando non è selezionato alcun frammento di contenuto, in genere non agiscono sui frammenti di contenuto esistenti. Invece, i menu di intestazione in genere:
 
-Estensioni che includono un menu di intestazione, introdurre un pulsante nell’intestazione della AEM console Frammenti di contenuto che viene visualizzato quando __no__ I frammenti di contenuto sono selezionati. Poiché i pulsanti di estensione del menu intestazione vengono visualizzati solo quando non è selezionato alcun frammento di contenuto, in genere non agiscono sui frammenti di contenuto esistenti. Invece, le estensioni dei menu di intestazione in genere:
++ Creare nuovi frammenti di contenuto utilizzando una logica personalizzata, ad esempio creando un set di frammenti di contenuto collegati tramite riferimenti ai contenuti.
++ Agire su un set di frammenti di contenuto selezionato a livello di programmazione, ad esempio esportare tutti i frammenti di contenuto creati nell’ultima settimana.
 
-+ Crea nuovi frammenti di contenuto utilizzando una logica personalizzata, ad esempio per creare un set di frammenti di contenuto collegati tramite riferimenti di contenuto.
-+ In base a un set di frammenti di contenuto selezionato a livello di programmazione, ad esempio l’esportazione di tutti i frammenti di contenuto creati nell’ultima settimana.
+## Registrazione dell’estensione
 
-## Registrazione delle estensioni
+`ExtensionRegistration.js` è il punto di ingresso per l’estensione AEM e definisce:
 
-`ExtensionRegistration.js` è il punto di ingresso dell&#39;estensione AEM e definisce:
-
-1. il tipo di estensione; nel caso di un pulsante del menu intestazione.
-1. Definizione del pulsante di estensione, in `getButton()` funzione .
-1. Il gestore di clic per il pulsante, nella `onClick()` funzione .
+1. Il tipo di estensione; nel caso di un pulsante del menu di intestazione.
+1. La definizione del pulsante di estensione, in `getButton()` funzione.
+1. Il gestore di clic per il pulsante, nel `onClick()` funzione.
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -70,12 +70,12 @@ function ExtensionRegistration() {
 
 ![Finestra modale](./assets/modal/modal.png)
 
-AEM le estensioni del menu dell’intestazione della console Frammenti di contenuto possono richiedere:
+Le estensioni del menu di intestazione della Console Frammenti di contenuto AEM possono richiedere:
 
-+ Un ulteriore input dell’utente per eseguire l’azione desiderata.
-+ La possibilità di fornire all’utente informazioni dettagliate sul risultato dell’azione.
++ Input aggiuntivo dall’utente per eseguire l’azione desiderata.
++ Possibilità di fornire all’utente informazioni dettagliate sul risultato dell’azione.
 
-Per supportare questi requisiti, l’estensione AEM della console Frammenti di contenuto consente un modale personalizzato per il rendering come applicazione React.
+Per supportare questi requisiti, l’estensione della Console Frammenti di contenuto AEM consente una finestra modale personalizzata che viene riprodotta come applicazione React.
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -104,7 +104,7 @@ function ExtensionRegistration() {
   <div class="is-flex is-padded-small is-padded-big-mobile">
     <div>
       <p class="has-text-weight-bold is-size-36 is-size-27-touch is-margin-bottom-big has-text-blackest">Passa alla creazione di un modale</p>
-      <p class="has-text-blackest">Scopri come creare un modale da visualizzare facendo clic sul pulsante dell’estensione del menu di intestazione.</p>
+      <p class="has-text-blackest">Scopri come creare un modale da visualizzare facendo clic sul pulsante dell’estensione del menu dell’intestazione.</p>
       <div class="has-align-start is-margin-top-big">
         <a href="./modal.md" target="_blank" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
           <span class="spectrum-Button-label has-no-wrap has-text-weight-bold" title="Scopri come creare un modale">Scopri come creare un modale</span>
@@ -114,16 +114,16 @@ function ExtensionRegistration() {
   </div>
 </div>
 
-## Nessun modale
+## Nessuna finestra modale
 
-A volte, AEM estensioni del menu dell’intestazione della console Frammento di contenuto non richiedono ulteriore interazione con l’utente, ad esempio:
+A volte, le estensioni del menu di intestazione della console Frammenti di contenuto AEM non richiedono un’ulteriore interazione con l’utente, ad esempio:
 
 + Richiamare un processo back-end che non richiede l’input dell’utente, ad esempio l’importazione o l’esportazione.
-+ Apertura di una nuova pagina web, ad esempio alla documentazione interna sulle linee guida per i contenuti.
++ Apertura di una nuova pagina web, ad esempio per consultare la documentazione interna sulle linee guida sui contenuti.
 
-In questi casi, l’estensione AEM della console Frammenti di contenuto non richiede un [modale](#modal)e può eseguire il lavoro direttamente nel menu intestazione del pulsante `onClick` handler.
+In questi casi, l’estensione della Console Frammenti di contenuto AEM non richiede un’ [modale](#modal)e può eseguire il lavoro direttamente nel pulsante del menu intestazione `onClick` handler.
 
-L’estensione AEM console Frammenti di contenuto consente di sovrapporre la console Frammento di contenuto AEM durante l’esecuzione del lavoro, impedendo all’utente di eseguire ulteriori azioni. L’utilizzo dell’indicatore di avanzamento è facoltativo, ma utile per comunicare all’utente l’avanzamento del lavoro sincrono.
+L’estensione della console Frammenti di contenuto AEM consente a un indicatore di avanzamento di sovrapporsi alla console Frammenti di contenuto AEM durante l’esecuzione del lavoro, impedendo all’utente di eseguire ulteriori azioni. L&#39;uso dell&#39;indicatore di avanzamento è facoltativo, ma utile per comunicare all&#39;utente l&#39;avanzamento del lavoro sincrono.
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 

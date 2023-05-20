@@ -1,6 +1,6 @@
 ---
-title: Passaggi per la risoluzione dei problemi specifici di HtmltoPDF in una configurazione di Windows
-description: Risoluzione dei problemi HtmltoPDF su Windows
+title: Procedura per la risoluzione dei problemi specifici di HtmltoPDF in un'installazione di Windows
+description: Risolvere i problemi relativi a HtmltoPDF in Windows
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ---
 
-# Passaggi per la risoluzione dei problemi specifici di HtmltoPDF in una configurazione di Windows
+# Procedura per la risoluzione dei problemi specifici di HtmltoPDF in un&#39;installazione di Windows
 
-*Questo video illustra il processo di risoluzione dei problemi specifici di HtmltoPDF in una configurazione di Windows.*
+*Questo video illustra come risolvere i problemi specifici di HtmltoPDF in una configurazione di Windows.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335545?quality=12&learn=on)

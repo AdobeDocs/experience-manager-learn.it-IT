@@ -1,6 +1,6 @@
 ---
 title: Passaggi per acquisire i registri di debug per i moduli mobili
-description: Configurare i registri di debug per i problemi di debug relativi ai moduli mobile
+description: Configurare i registri di debug per i problemi di debug relativi ai moduli mobili
 type: Troubleshooting
 role: Admin
 level: Beginner
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Passaggi per acquisire i registri di debug per i moduli mobili
 
-*Questo video illustra i passaggi necessari per acquisire i registri di debug per i moduli mobili.*
+*Questo video illustra i passaggi per acquisire i registri di debug per i moduli mobili.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335516?quality=12&learn=on)

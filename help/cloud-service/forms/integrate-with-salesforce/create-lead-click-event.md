@@ -1,5 +1,5 @@
 ---
-title: Crea un oggetto Lead nel database Salesforce sull'evento click di un pulsante
+title: Creare un oggetto Lead nel database Salesforce in base all’evento clic di un pulsante
 description: Crea come lead richiamando l’operazione post del modello dati modulo
 type: Documentation
 role: Developer
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Verificare l’integrazione
+# Testare l’integrazione
 
-Crea un modulo adattivo basato sul modello dati modulo forza vendita e verifica la creazione di un lead a Salesforce sull’evento clic di un pulsante
+Creare un modulo adattivo basato sul modello di dati del modulo per la forza vendita e verificare la creazione di un lead in Salesforce quando si fa clic su un pulsante
 
 >[!VIDEO](https://video.tv.adobe.com/v/331892?quality=12&learn=on)

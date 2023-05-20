@@ -1,6 +1,6 @@
 ---
-title: Utilizzo di video interattivi con AEM Dynamic Media
-description: AEM Assets’ ora è in grado di creare video interattivi in cui gli utenti possono dividere un video in segmenti più piccoli o combinare segmenti di piccole dimensioni per creare un segmento di grandi dimensioni, associando così le chiamate all’azione.
+title: Video interattivo con AEM Dynamic Media
+description: AEM Assets ora ha la funzionalità di creare video interattivi, in cui gli utenti possono dividere un video in segmenti più piccoli o combinare segmenti piccoli per creare un segmento più grande, consentendo in tal modo agli utenti di associare l’invito all’azione.
 feature: Video Profiles, Viewer Presets, Mixed Media Sets
 version: 6.4, 6.5
 topic: Content Management
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ---
 
-# Utilizzo di video interattivi con AEM Dynamic Media{#using-interactive-video-with-aem-dynamic-media}
+# Video interattivo con AEM Dynamic Media{#using-interactive-video-with-aem-dynamic-media}
 
-AEM Assets’ ora è in grado di creare video interattivi in cui gli utenti possono dividere un video in segmenti più piccoli o combinare segmenti di piccole dimensioni per creare un segmento di grandi dimensioni, associando così le chiamate all’azione.
+AEM Assets ora ha la funzionalità di creare video interattivi, in cui gli utenti possono dividere un video in segmenti più piccoli o combinare segmenti piccoli per creare un segmento più grande, consentendo in tal modo agli utenti di associare l’invito all’azione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16516?quality=12&learn=on)

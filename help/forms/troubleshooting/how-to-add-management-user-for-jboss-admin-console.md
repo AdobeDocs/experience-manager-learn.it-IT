@@ -1,6 +1,6 @@
 ---
-title: Come aggiungere l'utente di gestione per la console di amministrazione JBoss
-description: Configura l'utente di gestione per la console di amministrazione JBOSS
+title: Aggiungere un utente di gestione per l’Admin Console JBoss
+description: Configurare l’utente di gestione per Admin Console JBOSS
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ---
 
-# Come aggiungere l&#39;utente di gestione per la console di amministrazione JBoss
+# Aggiungere un utente di gestione per l’Admin Console JBoss
 
-*Questo video illustra i passaggi per aggiungere un utente di gestione per la console di amministrazione JBoss.*
+*Questo video illustra i passaggi per aggiungere un utente di gestione per l’Admin Console JBoss.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335484?quality=12&learn=on)
