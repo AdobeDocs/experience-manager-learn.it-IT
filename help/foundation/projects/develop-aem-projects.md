@@ -11,7 +11,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 481b8877e252b885da307fcf4d96f8a50f026fa6
 workflow-type: tm+mt
 source-wordcount: '4571'
 ht-degree: 1%
@@ -154,7 +154,7 @@ Poiché stiamo principalmente copiando/configurando nodi, utilizzeremo CRXDE Lit
    1. Aggiungi un altro **nt:unstructured** nodo etichettato approvatori come figlio del nodo ruoli.
    1. Aggiungi proprietà stringa **jcr:title** = &quot;**Approvatori**&quot;, **rotocalco** =&quot;**proprietario**&quot;, **roleid**=&quot;**approvatori**&quot;.
       1. Il nome del nodo approvatori, nonché jcr:title e roleid possono essere qualsiasi valore stringa (purché roleid sia univoco).
-      1. **rotocalco** disciplina le autorizzazioni applicate per quel ruolo in base al [3 ruoli inclusi](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User Ruoli in un progetto): **proprietario**, **editor**, e **osservatore**.
+      1. **rotocalco** disciplina le autorizzazioni applicate per quel ruolo in base al [3 ruoli inclusi](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User%20Roles%20in%20a%20Project): **proprietario**, **editor**, e **osservatore**.
       1. In generale, se il ruolo personalizzato è più di un ruolo manageriale, allora la classe a rulli può essere **proprietario;** se si tratta di un ruolo di authoring più specifico come Fotografo o Designer **editor** la lente a rotelle dovrebbe bastare. La grande differenza tra **proprietario** e **editor** I proprietari del progetto possono aggiornare le proprietà del progetto e aggiungere nuovi utenti al progetto.
 
    ```shell
