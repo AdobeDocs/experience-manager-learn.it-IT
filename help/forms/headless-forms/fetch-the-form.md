@@ -7,10 +7,10 @@ kt: 13285
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: c6e83a627743c40355559d9cdbca2b70db7f23ed
+source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 0%
+source-wordcount: '149'
+ht-degree: 1%
 
 ---
 
@@ -76,3 +76,7 @@ export default function Contact(){
 ```
 
 Il codice di cui sopra utilizza componenti HTML nativi mappati sui componenti utilizzati nel modulo adattivo. Ad esempio, stiamo mappando il componente del modulo adattivo per l’immissione di testo al componente TextField. I componenti nativi utilizzati nell’articolo [può essere scaricato da qui](./assets/native-components.zip)
+
+## Passaggi successivi
+
+[Seleziona un modulo dall’elenco a discesa](./select-form-from-drop-down-list.md)
