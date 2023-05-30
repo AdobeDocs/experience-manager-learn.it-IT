@@ -10,10 +10,10 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-25T00:00:00Z
 jira: KT-13328
 thumbnail: KT-13328.jpeg
-source-git-commit: 19c31819f3df7c6c43753d6ec4de8f6ecf4e55dd
+source-git-commit: 3831c6ed1467018c9f5bf15aa9f6b8ee78034c02
 workflow-type: tm+mt
-source-wordcount: '1542'
-ht-degree: 3%
+source-wordcount: '1646'
+ht-degree: 2%
 
 ---
 
@@ -73,7 +73,7 @@ Il documento sul documento SDR fornisce una panoramica completa del piano di att
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419874?quality=12&learn=on)
 
-Per maggiori informazioni sui concetti e sui vari elementi da includere nel documento SDR, visita [Creare e gestire un documento Solution Design Reference (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html). Puoi anche scaricare un modello Excel di esempio, ma è disponibile anche la versione specifica WKND [qui](./assets/Analytics-SDR-Template.xlsx).
+Per maggiori informazioni sui concetti e sui vari elementi da includere nel documento SDR, visita [Creare e gestire un documento Solution Design Reference (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html). Puoi anche scaricare un modello Excel di esempio, ma è disponibile anche la versione specifica WKND [qui](./assets/Initial-WKND-WebSDK-BRD-SDR.xlsx).
 
 ## Configurazione di Analytics - suite di rapporti, Analysis Workspace
 
@@ -83,7 +83,7 @@ In questa esercitazione,  `eVar5, eVar6, and eVar7` track  _Nome pagina WKND, ID
 
 Per analizzare, raccogliere informazioni e condividerle con altri dai dati raccolti, viene creato un progetto in Analysis Workspace.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419874?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419875?quality=12&learn=on)
 
 Per ulteriori informazioni sulla configurazione e i concetti di Analytics, si consiglia vivamente di utilizzare le risorse seguenti:
 
@@ -121,6 +121,10 @@ In [esercitazione precedente](./web-sdk.md), viene creata una proprietà tag con
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419882?quality=12&learn=on)
+
+>[!TIP]
+>
+>Puoi consultare il codice Data Element ed Rule-Event mostrato nel video, **espandi l’elemento pannello a soffietto sottostante**. Tuttavia, se NON utilizzi Adobe Client Data Layer, devi modificare il codice seguente, ma il concetto di definizione degli elementi dati e di utilizzo degli stessi nella definizione della regola è ancora applicabile.
 
 +++ Codice elemento dati e regola-evento
 
@@ -209,6 +213,13 @@ In [esercitazione precedente](./web-sdk.md), viene creata una proprietà tag con
 
 Per ulteriori informazioni sull’integrazione dei componenti core AEM con Adobe Client Data Layer, consulta [Utilizzo di Adobe Client Data Layer con i componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=it).
 
+
+>[!INFO]
+>
+>Per una comprensione completa del **Mappa variabili** nel documento Solution Design Reference (SDR), accedere alla versione WKND completa per il download [qui](./assets/Final-WKND-WebSDK-BRD-SDR.xlsx).
+
+
+
 ## Verifica proprietà tag aggiornata in WKND
 
 Per garantire che la proprietà tag aggiornata sia generata, pubblicata e funzioni correttamente nelle pagine del sito WKND. Utilizza il browser web Google Chrome [Estensione Adobe Experience Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob):
@@ -235,7 +246,7 @@ Il set di dati è un costrutto di archiviazione e gestione per una raccolta di d
 
 Analysis Workspace è uno strumento potente all’interno di Adobe Analytics che consente di esplorare e visualizzare i dati in modo flessibile e interattivo. Fornisce un’interfaccia di trascinamento per creare rapporti personalizzati, eseguire segmentazioni avanzate e applicare varie visualizzazioni di dati.
 
-Riapriamo il progetto Analysis Workspace creato in [Configurazione analisi](#setup-analytics---report-suite-analysis-workspace) passaggio. In **Pagine principali** , esamina varie metriche quali visite, visitatori univoci, voci, frequenza di rimbalzo e altro ancora. Per valutare le prestazioni delle pagine WKND e dei CTA della home page, trascina le dimensioni (Nome pagina WKND, Nome CTA WKND) e le metriche specifiche per WKND (Evento clic WKND CTA). Queste informazioni sono utili per gli esperti di marketing per capire quali CTA sono più efficaci e prendere decisioni basate sui dati in linea con i loro obiettivi aziendali.
+Riapriamo il progetto Analysis Workspace creato in [Configurazione analisi](#setup-analytics---report-suite-analysis-workspace) passaggio. In **Pagine principali** , esamina varie metriche quali visite, visitatori univoci, voci, frequenza di rimbalzo e altro ancora. Per valutare le prestazioni delle pagine WKND e dei CTA della home page, trascina le dimensioni (Nome pagina WKND, Nome CTA WKND) e le metriche specifiche per WKND (Evento clic WKND CTA). Queste informazioni sono utili per gli esperti di marketing per capire quali CTA sono più efficaci e prendere decisioni basate sui dati, in linea con i loro obiettivi aziendali.
 
 Per visualizzare i percorsi di utenti, utilizza la visualizzazione Flusso, che inizia con **Nome pagina WKND** ed espanderli in vari percorsi.
 
@@ -250,6 +261,12 @@ L’implementazione di Adobe Analytics è fondamentale per consentire ai team di
 Implementando i passaggi consigliati e utilizzando le risorse fornite, come il documento Solution Design Reference (SDR) e la comprensione dei concetti chiave di Analytics, gli esperti di marketing possono raccogliere e analizzare i dati in modo efficace.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419888?quality=12&learn=on)
+
+
+>[!AVAILABILITY]
+>
+>Se preferisci il **video end-to-end** che copre l’intero processo di integrazione invece dei singoli video delle fasi di configurazione, puoi fare clic su [qui](https://video.tv.adobe.com/v/3419889/) per accedervi.
+
 
 ## Risorse aggiuntive
 
