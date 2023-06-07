@@ -11,9 +11,9 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 434f56e143bc0f969723de48abd26d49a308af9b
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '4061'
+source-wordcount: '4057'
 ht-degree: 0%
 
 ---
@@ -433,7 +433,7 @@ Creare un&#39;interfaccia Java™ pubblica per il nome del destinatario. Il `Byl
 
    Il `isEmpty()` viene utilizzato per determinare se il componente ha contenuto da riprodurre o se è in attesa di essere configurato.
 
-   Nota che non esiste un metodo per l&#39;immagine; [questo verrà rivisto in seguito](#tackling-the-image-problem).
+   Si noti che non esiste un metodo per l&#39;immagine; [questo verrà rivisto in seguito](#tackling-the-image-problem).
 
 1. I pacchetti Java™ che contengono classi Java™ pubbliche, in questo caso un modello Sling, devono avere una versione utilizzando  `package-info.java` file.
 
@@ -446,7 +446,7 @@ Creare un&#39;interfaccia Java™ pubblica per il nome del destinatario. Il `Byl
    import org.osgi.annotation.versioning.Version;
    ```
 
-Ogni volta che viene apportata una modifica ai file di questo pacchetto, il [la versione del pacchetto deve essere regolata semanticamente](https://semver.org/). In caso contrario, il [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin) rileva una versione del pacchetto non valida e interrompe la generazione. Fortunatamente, in caso di errore, il plug-in Maven segnala la versione del pacchetto Java™ non valida e la versione corretta. Aggiornare il `@Version("...")` dichiarazione nel pacchetto Java™ che viola `package-info.java` alla versione consigliata dal plug-in per la correzione.
+Ogni volta che viene apportata una modifica ai file di questo pacchetto, il [la versione del pacchetto deve essere regolata semanticamente](https://semver.org/). In caso contrario, il [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd) rileva una versione del pacchetto non valida e interrompe la generazione. Fortunatamente, in caso di errore, il plug-in Maven segnala la versione del pacchetto Java™ non valida e la versione corretta. Aggiornare il `@Version("...")` dichiarazione nel pacchetto Java™ che viola `package-info.java` alla versione consigliata dal plug-in per la correzione.
 
 ### Implementazione in linea {#byline-implementation}
 

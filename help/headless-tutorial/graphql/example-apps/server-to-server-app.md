@@ -9,9 +9,9 @@ level: Beginner
 kt: 10798
 thumbnail: KT-10798.jpg
 exl-id: 39b21a29-a75f-4a6c-ba82-377cf5cc1726
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '471'
 ht-degree: 5%
 
 ---
@@ -22,18 +22,18 @@ Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità he
 
 ![App server-to-server Node.js con AEM Headless](./assets/server-to-server-app/server-to-server-app.png)
 
-Visualizza [codice sorgente su GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server-app)
+Visualizza [codice sorgente su GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server)
 
 ## Prerequisiti {#prerequisites}
 
 I seguenti strumenti devono essere installati localmente:
 
-+ [Node.js v18](https://nodejs.org/it/)
++ [Node.js v18](https://nodejs.org/it)
 + [Git](https://git-scm.com/)
 
 ## Requisiti AEM
 
-L’applicazione Node.js funziona con le seguenti opzioni di distribuzione AEM. Tutte le distribuzioni richiedono [Sito WKND v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) da installare.
+L’applicazione Node.js funziona con le seguenti opzioni di distribuzione AEM. Tutte le distribuzioni richiedono [Sito WKND v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases) da installare.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=it)
 + Facoltativamente [credenziali del servizio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) se si autorizzano richieste (ad esempio, connessione al servizio AEM Author).
@@ -77,7 +77,7 @@ Questa applicazione Node.js può connettersi ad AEM Author o AEM Publish in base
 
 ## Il codice
 
-Di seguito è riportato un riepilogo della modalità di creazione dell’applicazione Node.js server-to-server, della connessione a AEM Headless per il recupero di contenuti tramite query persistenti GraphQL e della modalità di presentazione di tali dati. Il codice completo è disponibile su [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server-app).
+Di seguito è riportato un riepilogo della modalità di creazione dell’applicazione Node.js server-to-server, della connessione a AEM Headless per il recupero di contenuti tramite query persistenti GraphQL e della modalità di presentazione di tali dati. Il codice completo è disponibile su [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server).
 
 Il caso d’uso comune per le app AEM headless server-to-server prevede la sincronizzazione dei dati dei frammenti di contenuto dall’AEM in altri sistemi. Tuttavia questa applicazione è intenzionalmente semplice e stampa i risultati JSON dalla query persistente.
 
@@ -143,7 +143,7 @@ async function run() {
 
 ### Esegui query persistente GraphQL
 
-Le query persistenti dell’AEM vengono eseguite su HTTP GET, pertanto [Client AEM headless per Node.js](https://github.com/adobe/aem-headless-client-nodejs) viene utilizzato per [eseguire le query GraphQL persistenti;](https://github.com/adobe/aem-headless-client-nodejs#within-asyncawait) contro l’AEM e recupera il contenuto dell’avventura.
+Le query persistenti dell’AEM vengono eseguite tramite HTTP GET, pertanto [Client AEM headless per Node.js](https://github.com/adobe/aem-headless-client-nodejs) viene utilizzato per [eseguire le query GraphQL persistenti;](https://github.com/adobe/aem-headless-client-nodejs#within-asyncawait) contro l’AEM e recupera il contenuto dell’avventura.
 
 La query persistente viene richiamata chiamando `aemHeadlessClient.runPersistedQuery(...)`e passando il nome della query GraphQL persistente. Una volta che GraphQL restituisce i dati, trasmettili al `doSomethingWithDataFromAEM(..)` , che stampa i risultati, ma in genere invia i dati a un altro sistema o genera un output in base ai dati recuperati.
 

@@ -12,9 +12,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1621'
 ht-degree: 0%
 
 ---
@@ -26,12 +26,12 @@ Scopri come è possibile supportare più visualizzazioni nell’SPA mediante la 
 ## Obiettivo
 
 1. Comprendi le opzioni di indirizzamento del modello SPA disponibili quando utilizzi l’Editor SPA.
-1. Scopri come utilizzare [Router React](https://reacttraining.com/react-router/) per navigare tra le diverse visioni del SPA.
+1. Scopri come utilizzare [Router React](https://reacttraining.com/react-router) per navigare tra le diverse visioni del SPA.
 1. Utilizza i componenti core React dell’AEM per implementare una navigazione dinamica guidata dalla gerarchia di pagine dell’AEM.
 
 ## Cosa verrà creato
 
-Questo capitolo aggiunge la navigazione a un SPA in AEM. Il menu di navigazione è gestito dalla gerarchia di pagine dell’AEM e utilizzerà il modello JSON fornito da [Componente core Navigazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html).
+Questo capitolo aggiunge la navigazione a un SPA in AEM. Il menu di navigazione è gestito dalla gerarchia di pagine dell’AEM e utilizzerà il modello JSON fornito da [Componente core Navigazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html).
 
 ![Navigazione aggiunta](assets/navigation-routing/navigation-added.png)
 
@@ -209,9 +209,9 @@ Quindi, esamina il modello JSON che guida l’esperienza multi-view dell’SPA.
 
 ## Indirizzamento Inspect React  {#react-routing}
 
-La navigazione e il routing sono implementati con [Router React](https://reactrouter.com/). React Router è una raccolta di componenti di navigazione per le applicazioni React. [Componenti core React dell’AEM](https://github.com/adobe/aem-react-core-wcm-components-base) utilizza le funzioni di React Router per implementare **Navigazione** componente utilizzato nei passaggi precedenti.
+La navigazione e il routing sono implementati con [Router React](https://reactrouter.com/en/main). React Router è una raccolta di componenti di navigazione per le applicazioni React. [Componenti core React dell’AEM](https://github.com/adobe/aem-react-core-wcm-components-base) utilizza le funzioni di React Router per implementare **Navigazione** componente utilizzato nei passaggi precedenti.
 
-Successivamente, verificare come React Router è integrato con l&#39;SPA ed eseguire esperimenti utilizzando React Router [Collegamento](https://reactrouter.com/web/api/Link) componente.
+Successivamente, verificare come React Router è integrato con l&#39;SPA ed eseguire esperimenti utilizzando React Router [Collegamento](https://reactrouter.com/en/main/components/link) componente.
 
 1. Nell’IDE apri il file `index.js` a `ui.frontend/src/index.js`.
 
@@ -238,7 +238,7 @@ Successivamente, verificare come React Router è integrato con l&#39;SPA ed eseg
    });
    ```
 
-   Tieni presente che `App` è racchiuso in `Router` componente da [Router React](https://reacttraining.com/react-router/). Il `ModelManager`, fornito dall’SDK JS per l’editor di SPA dell’AEM, aggiunge le route dinamiche alle pagine AEM in base all’API del modello JSON.
+   Tieni presente che `App` è racchiuso in `Router` componente da [Router React](https://reacttraining.com/react-router). Il `ModelManager`, fornito dall’SDK JS per l’editor di SPA dell’AEM, aggiunge le route dinamiche alle pagine AEM in base all’API del modello JSON.
 
 1. Apri il file `Page.js` a `ui.frontend/src/components/Page/Page.js`
 
@@ -260,7 +260,7 @@ Successivamente, verificare come React Router è integrato con l&#39;SPA ed eseg
    Il `Page` La componente SPA utilizza `MapTo` funzione da mappare **Pagine** in AEM ad una corrispondente componente dell’SPA. Il `withRoute` consente di indirizzare dinamicamente l’SPA alla pagina AEM-figlio appropriata in base al `cqPath` proprietà.
 
 1. Apri `Header.js` componente in `ui.frontend/src/components/Header/Header.js`.
-1. Aggiornare il `Header` per racchiudere `<h1>` tag in una [Collegamento](https://reactrouter.com/web/api/Link) alla home page:
+1. Aggiornare il `Header` per racchiudere `<h1>` tag in una [Collegamento](https://reactrouter.com/en/main/components/link) alla home page:
 
    ```diff
      //Header.js
