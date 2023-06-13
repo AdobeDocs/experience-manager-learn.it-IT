@@ -10,7 +10,7 @@ jira: KT-13464
 thumbnail: KT-13464.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-source-git-commit: c54d078c6282f8ace936dd4a9ee0d5cc39490230
+source-git-commit: e59c9d1f17c6ade169e834a21b9d5f50ac3a569e
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Pulsante personalizzato sulla barra degli strumenti dell’Editor Rich Text
 
-![Esempio di estensione della barra degli strumenti dell’Editor frammento di contenuto](./assets/rte-toolbar/hero.png){align="center"}
+![Esempio di estensione della barra degli strumenti dell’Editor frammento di contenuto](./assets/rte/rte-toolbar-hero.png){align="center"}
 
 È possibile aggiungere pulsanti personalizzati alla **Barra degli strumenti dell’editor Rich Text** nell’Editor frammento di contenuto utilizzando `rte` punto di estensione. Questo esempio mostra come aggiungere un pulsante personalizzato denominato _Aggiungi suggerimento_ sulla barra degli strumenti dell’editor Rich Text e modificare il contenuto all’interno dell’editor Rich Text.
 
