@@ -10,20 +10,15 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-09T00:00:00Z
 jira: KT-12433
 thumbnail: KT-12433.jpeg
-source-git-commit: b3cc9c4fbd36cdf5be46e4546a174fea0c8da05c
+exl-id: 60a3e18a-090f-4b0e-8ba0-d4afd30577dd
+source-git-commit: d81c66e041abbd56e7115f37732550cf10e59359
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 2%
+source-wordcount: '1671'
+ht-degree: 1%
 
 ---
 
 # Personalizzare esperienze AEM headless con frammenti di contenuto
-
->[!IMPORTANT]
->
-> L’esportazione dei frammenti di contenuto da Adobe Experience Manager ad Adobe Target è disponibile in nell’as a Cloud Service AEM [canale prerelease](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it#new-features).
-
-
 
 Questa esercitazione esplora il modo in cui i frammenti di contenuto AEM vengono esportati in Adobe Target e quindi utilizzati per personalizzare esperienze headless tramite l’SDK web per Adobe. Il [App WKND di React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) viene utilizzato per esplorare il modo in cui un’attività Target personalizzata che utilizza le offerte con frammenti di contenuto può essere aggiunta all’esperienza, per promuovere un’avventura WKND.
 
