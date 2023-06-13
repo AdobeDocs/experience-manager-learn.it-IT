@@ -10,7 +10,7 @@ jira: KT-13309
 thumbnail: KT-13309.jpg
 doc-type: article
 last-substantial-update: 2023-06-02T00:00:00Z
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+source-git-commit: c54d078c6282f8ace936dd4a9ee0d5cc39490230
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Questo esempio si estende al punto di estensione `headerBar` per aggiungere un p
 
 | Interfaccia utente AEM estesa | Punto di estensione |
 | ------------------------ | --------------------- | 
-| [Console Frammenti di contenuto](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Menu intestazione](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/) |
+| [Editor frammento di contenuto](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Menu intestazione](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/) |
 
 ## Estensione di esempio
 
