@@ -9,9 +9,9 @@ version: Cloud Service
 topic: Development
 kt: 8842
 exl-id: 274018b9-91fe-45ad-80f2-e7826fddb37e
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '235'
 ht-degree: 2%
 
 ---
@@ -34,3 +34,7 @@ Questo tutorial farà riferimento in futuro a questa struttura di cartelle.
 * Apri la finestra del prompt dei comandi e passa a **c:\cloudmanager**
 * Copiare e incollare il contenuto del [file di testo](assets/creating-maven-project.txt) nella finestra del prompt dei comandi. Potrebbe essere necessario modificare DarchetypeVersion=30 a seconda del [ultima versione](https://github.com/adobe/aem-project-archetype/releases). L&#39;ultima versione era 30 al momento della stesura di questo articolo.
 * Esegui il comando premendo Invio. Se tutto va correttamente, dovrebbe comparire il messaggio di completamento della generazione.
+
+## Passaggi successivi
+
+[Installazione di IntelliJ](./intellij-set-up.md)

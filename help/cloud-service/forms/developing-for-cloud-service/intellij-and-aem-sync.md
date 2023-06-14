@@ -9,10 +9,10 @@ version: Cloud Service
 topic: Development
 kt: 8844
 exl-id: 9a7ed792-ca0d-458f-b8dd-9129aba37df6
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 2%
+source-wordcount: '515'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ Installa [Cygwin](https://www.cygwin.com/). Ho installato nella cartella C:\cygw
 
 Creare una cartella denominata adoberepo in c:\cloudmanager.
 
-[Installare lo strumento repository].(https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo).Installing lo strumento repo non è altro che copiare il file repo e inserirlo nella cartella c:\cloudmanger\adoberepo.
+[Installare lo strumento repository](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) L&#39;installazione dello strumento repo richiede solo la copia del file repo e il suo inserimento nella cartella c:\cloudmanger\adoberepo.
 
 Aggiungere quanto segue alla variabile di ambiente Path C:\cygwin64\bin;C:\CloudManager\adoberepo;
 
@@ -35,7 +35,7 @@ Aggiungere quanto segue alla variabile di ambiente Path C:\cygwin64\bin;C:\Cloud
 * Avvia IntelliJ
 * Premi Ctrl+Alt+S per aprire la finestra delle impostazioni.
 * Selezionare Strumenti->Strumenti esterni, quindi fare clic sul segno + e immettere quanto segue come mostrato nella schermata.
-   ![rep](assets/repo.png)
+  ![rep](assets/repo.png)
 * Assicurati di creare un gruppo denominato repo digitando &quot;repo&quot; nel campo a discesa Gruppo e tutti i comandi creati appartengono al **repository** gruppo
 
 
@@ -85,3 +85,7 @@ Per configurare rapidamente l’istanza Cloud Ready sul sistema locale, segui i 
 * Crea la seguente struttura di cartelle.C:\aemformscs\aem-sdk\author\crx-quickstart\install
 * Copia aem-forms-addon-xxxxxx.far nella cartella di installazione
 * Apri il prompt dei comandi e passa a c:\aemformscs\aem-sdk\author immetti il seguente comando java -jar aem-author-p4502.jar -gui. Questo distribuirà il pacchetto di componenti aggiuntivi per Forms nell’istanza AEM.
+
+## Passaggi successivi
+
+[Sincronizzare i moduli e i modelli AEM con il progetto AEM](./deploy-your-first-form.md)

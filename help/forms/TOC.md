@@ -8,9 +8,9 @@ breadcrumb-title: Tutorial su AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 3bbf80d5c301953b3a34ef8256702ac7445c40da
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1828'
 ht-degree: 2%
 
 ---
@@ -237,6 +237,7 @@ ht-degree: 2%
    + [4 - Selezionare il modulo da compilare](headless-forms/select-form-from-drop-down-list.md)
    + [5 - Visualizzare i moduli in formato scheda](headless-forms/display-forms-card-view.md)
    + [6 - Visualizza modulo selezionato](headless-forms/open-form-card-view.md)
+   + [7 - Gestire l’invio dei moduli](headless-forms/display-thank-you-message.md)
 
 + React App con Forms e Acrobat Sign {#react-ic-sign}
    + [1 - Introduzione](react-ic-sign/introduction.md)

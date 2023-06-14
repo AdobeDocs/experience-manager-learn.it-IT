@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 kt: 8852
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -40,18 +40,28 @@ public class HandleFormSubmissison extends SlingAllMethodsServlet {
 }
 ```
 
-## Crea invio personalizzato
+## Crea gestore di invio personalizzato
 
-Crea l’invio personalizzato nella cartella app/bankingapplication nello stesso modo in cui crei nella [versioni precedenti di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en)
+Creare un’azione di invio personalizzata in `apps/bankingapplication` cartella nello stesso modo in cui si crea in [versioni precedenti di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en). Ai fini di questa esercitazione, creo una cartella denominata SubmitToAEMServlet in `apps/bankingapplication` nell’archivio CRX.
+
 Il codice seguente nel file post.POST.jsp inoltra semplicemente la richiesta al servlet installato in /bin/formstutorial. Questo è lo stesso servlet creato nel passaggio precedente
 
 ```java
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/formstutorial",null,null);
 ```
 
+Nel progetto AEM in IntelliJ, fare clic con il pulsante destro del mouse su `apps/bankingapplication` cartella e seleziona Nuovo | Pacchetto e tipo in SubmitToAEMServlet dopo apps.bankingapplication nella finestra di dialogo Nuovo pacchetto. Fai clic con il pulsante destro del mouse sul nodo SubmitToAEMServlet e seleziona archivio | Ottieni il comando per sincronizzare il progetto AEM con l’archivio del server AEM.
+
+
 ## Configurare un modulo adattivo
 
-Ora puoi configurare il modulo adattivo per l’invio a questo gestore di invio personalizzato denominato **Invia a AEM Servlet**
+Ora puoi configurare qualsiasi modulo adattivo per l’invio a questo gestore di invio personalizzato denominato **Invia a AEM Servlet**
+
+## Passaggi successivi
+
+[Abilita componenti di Forms Portal](./forms-portal-components.md)
+
+
 
 
 

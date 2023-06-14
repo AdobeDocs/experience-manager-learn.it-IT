@@ -9,9 +9,9 @@ version: Cloud Service
 topic: Development
 kt: 9006
 exl-id: 77c00a35-43bf-485f-ac12-0fffb307dc16
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -46,3 +46,7 @@ Includi la voce appropriata nel file filter.xml del progetto ui.content
 >[!NOTE]
 >
 >Ora, quando crei e distribuisci il progetto utilizzando Cloud Manager, dovrai immettere nuovamente la chiave di accesso di Azure nella configurazione dei servizi cloud. Per evitare di immettere nuovamente la chiave di accesso, si consiglia di creare una configurazione in base al contesto utilizzando le variabili di ambiente come spiegato in [articolo successivo](./context-aware-fdm.md)
+
+## Passaggi successivi
+
+[Creare una configurazione in base al contesto](./context-aware-fdm.md)
