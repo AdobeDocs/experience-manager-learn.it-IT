@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
+source-git-commit: 7b98f583f8b54fb9c9c706521c310282dcc17ea3
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 24%
+source-wordcount: '396'
+ht-degree: 25%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 24%
    + [Cartelle della linea di base](configuring/baseline-folders.md)
    + [Autorizzazioni linea di base](configuring/baseline-permissions.md)
    + [Assegnazione dei tag](configuring/tagging.md)
-   + [Schemi di metadati](configuring/metadata-schemas.md)
+   + [Schemi metadati](configuring/metadata-schemas.md)
    + [Profili metadati](configuring/metadata-profiles.md)
    + [Schemi cartelle metadati](configuring/metadata-folder-schemas.md)
    + [Barra di ricerca amministrazione risorse](configuring/assets-admin-search-rail.md)
@@ -50,6 +50,7 @@ ht-degree: 24%
    + [Migliora la ricerca](./search-and-discovery/search-boost.md)
 
 + Funzionalità avanzate{#advanced}
+   + [Risorse 3D](./advanced/3d-assets.md)
    + [Output PDF delle annotazioni](./advanced/customizing-annotations-pdf-output.md)
    + [Informazioni sulla risorsa](./advanced/asset-insights-launch-tutorial.md)
    + [Rapporti sulle risorse](./advanced/asset-reports.md)
@@ -72,13 +73,13 @@ ht-degree: 24%
       + [Configurare AEM Brand Portal](brand-portal/configure.md)
       + [Configurare Asset Sourcing](brand-portal/configure-asset-sourcing.md)
       + [Abilita download rappresentazione](brand-portal/enable-renditions-download.md)
+
    + Condivisione risorse{#assets-share}
       + [Asset Share Commons](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
       + [Configurare Asset Share Commons (Condivisione risorse) sull’AEM locale](./sharing/asset-share-commons-technical-video-setup.md)
       + [Virgole condivisione risorse tempistiche](./sharing/asset-share-commons-feature-video-theming.md)
       + [Asset Share Commons Kit di risorse](./sharing/asset-share/asset-share-commons-asset-kits.md)
    + [Risorse collegate](./sharing/connected-assets.md)
-
 
 + Integrazione con flussi di lavoro creativi{#creative-workflows}
    + [App desktop AEM](./creative-workflows/aem-desktop-app.md)
@@ -126,6 +127,7 @@ ht-degree: 24%
    + Utilizzo di con AEM Sites {#dm-with-aem-sites}
       + [Frammenti di esperienza](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Componenti core Dynamic Media](dynamic-media/dynamic-media-core-components.md)
+
    + Esercitazioni {#tutorials}
       + [Creazione di set carosello](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
       + [Creazione di set di immagini](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
@@ -141,7 +143,6 @@ ht-degree: 24%
       + [Eliminazione configurazione Dynamic Media](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
       + [Download di risorse nell’app Dynamic Media Classic](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [API IPS di Dynamic Media Classic](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
-
 
 + Integrazione Workfront{#workfront}
    + Connettore avanzato{#enhanced-connector}
