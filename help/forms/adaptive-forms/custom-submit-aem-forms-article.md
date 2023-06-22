@@ -8,10 +8,10 @@ role: Developer
 level: Experienced
 exl-id: 64b586a6-e9ef-4a3d-8528-55646ab03cc4
 last-substantial-update: 2021-04-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 2dceb4dd4ee1079c100c9cbca94332d61d17ef57
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 1%
+source-wordcount: '207'
+ht-degree: 3%
 
 ---
 
@@ -24,11 +24,15 @@ Questo articolo illustra i passaggi necessari per creare un’azione di invio pe
 * Accedi a crx
 * Crea un nodo di tipo &quot;sling :folder &quot; in app. Chiamiamo questo nodo CustomSubmitHelpx.
 * Salva il nodo appena creato.
-* Aggiungi le due proprietà seguenti al nodo appena creato
-* NomeProprietà | Valore proprietà
-* guideComponentType | fd/af/components/guidesubmittype
-* guideDataModel | xfa,xsd,basico
-* jcr :description | CustomSubmitHelpx
+* Aggiungi le tre proprietà seguenti al nodo appena creato
+
+| Nome proprietà | Valore proprietà |
+|----------------    | ---------------------------------|
+| guideComponentType | fd/af/components/guidesubmittype |
+| guideDataModel | xfa,xsd,base |
+| jcr :description | CustomSubmitHelpx |
+
+
 * Salva le modifiche
 * Crea un nuovo file denominato post.POST.jsp sotto il nodo CustomSubmitHelpx. Quando viene inviato un modulo adattivo, viene chiamato questo JSP. Puoi scrivere il codice JSP in base alle tue esigenze in questo file. Il codice seguente inoltra la richiesta al servlet.
 
