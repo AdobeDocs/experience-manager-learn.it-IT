@@ -10,9 +10,9 @@ jira: KT-13466
 thumbnail: KT-13466.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-source-git-commit: 8e99c660fed409d44d34cf4edf6bf1b59fa29e34
+source-git-commit: c965d5ff3f49f4859779e657674dab8602fb831b
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Aggiungere badge all’editor Rich Text
 
-![Esempio di badge dell’Editor frammento di contenuto](./assets/rte/rte-badge-home.png){align="center"}
+>[!VIDEO](https://video.tv.adobe.com/v/3420831?quality=12&learn=on)
 
 [Badge editor Rich Text](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/)  sono estensioni che rendono non modificabile il testo nell’Editor Rich Text (RTE). Ciò significa che un badge dichiarato come tale può essere rimosso solo completamente e non può essere modificato parzialmente. Questi badge supportano anche colorazioni speciali all’interno dell’editor Rich Text, indicando chiaramente agli autori di contenuto che il testo è un badge e quindi non modificabile. Inoltre, forniscono indicazioni visive sul significato del testo del badge.
 
