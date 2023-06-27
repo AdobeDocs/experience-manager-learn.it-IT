@@ -3,13 +3,14 @@ title: Workfront, ad Experience Manager sessioni connettore ottimizzate
 description: Scopri le nozioni di base del connettore avanzato di Adobe Workfront e Experience Manager Assets.
 version: Cloud Service
 topic: Content Management, Integrations
+feature: Asset Management
 role: Admin, User
 level: Beginner
 kt: 9754
 thumbnail: kt-9754.jpeg
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 4f279c0d-270f-433e-b047-88c02f5b1e78
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%

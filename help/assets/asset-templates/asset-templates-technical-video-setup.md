@@ -3,10 +3,11 @@ title: Configurare modelli di risorse con AEM Assets e InDesign Server
 description: I modelli di risorse consentono agli addetti al marketing di creare, gestire e distribuire risorse digitali sia per la stampa che per quella digitale. La creazione di brochure di marketing, biglietti da visita, volantini, annunci e cartoline è molto più semplice con i modelli di risorse se integrati con il server InDesign. La configurazione del server InDesign con AEM è descritta in questa sezione.
 version: 6.4, 6.5
 topic: Content Management
+feature: Templates
 role: Developer
 level: Intermediate
 exl-id: 5b764d86-8ced-46ed-838e-4bd2e75fd64c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%

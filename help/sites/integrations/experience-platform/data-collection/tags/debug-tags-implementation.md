@@ -9,10 +9,11 @@ activity: setup
 kt: 6047
 thumbnail: 38567.jpg
 topic: Integrations
+feature: Integrations
 role: Developer
 level: Intermediate
 exl-id: 647447ca-3c29-4efe-bb3a-d3f53a936a2a
-source-git-commit: 1d2daf53cd28fcd35cb2ea5c50e29b447790917a
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -43,16 +44,16 @@ Per abilitare il debug lato client, chiama il `setDebug(true)` metodo su `_satel
 
 ## Debug tramite Adobe Experience Platform Debugger
 
-Adobe fornisce Adobe Experience Platform Debugger [Estensione Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) e [Componente aggiuntivo Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) per eseguire il debug, comprendere e ottenere informazioni approfondite sull’integrazione.
+L’Adobe fornisce un Adobe Experience Platform Debugger [Estensione Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) e [Componente aggiuntivo Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) per eseguire il debug, comprendere e ottenere informazioni approfondite sull’integrazione.
 
-1. Apri l’estensione Adobe Experience Platform Debugger e apri la pagina del sito nell’istanza Publish
+1. Apri l’estensione Adobe Experience Platform Debugger e apri la pagina del sito nell’istanza Publish.
 
 1. In **Adobe Experience Platform Debugger > Riepilogo > Tag Adobe Experience Platform** verificare i dettagli della proprietà Tag come Nome, Versione, Data build, Ambiente ed Estensioni.
 
-   ![Dettagli delle proprietà di tag e debugger di Adobe Experience Platform](assets/tag-property-details.png)
+   ![Dettagli proprietà Adobe Experience Platform Debugger e tag](assets/tag-property-details.png)
 
 ## Risorse aggiuntive {#additional-resources}
 
-+ [Introduzione a Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [Introduzione all’Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
 
 + [Riferimento a un oggetto satellite](https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/satellite-object.html)

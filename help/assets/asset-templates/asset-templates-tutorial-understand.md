@@ -3,10 +3,11 @@ title: Informazioni sui file e i modelli di risorse InDesign in AEM Assets
 description: Questo tutorial video illustra come definire un file InDesign e tutte le considerazioni che lo accompagnano, da utilizzare nella funzione Modelli di risorse di AEM Assets.
 version: 6.4, 6.5
 topic: Content Management
+feature: Templates
 role: User
 level: Intermediate
 exl-id: c418e94a-b18e-429a-b41c-2bf32e158598
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 1%
@@ -35,6 +36,7 @@ Questo tutorial video illustra come definire un file InDesign e tutte le conside
 4. Aggiungere l&#39;immagine del logo FPO ([fornito nel file zip](assets/asset-templates-tutorial-video--supporting-files.zip)) all&#39;elemento Logo nella pagina mastro.
 
    * **Clic destro** e seleziona **Raccordo > Opzioni raccordo cornice... > Raccordo contenuto > Riempi cornice in modo proporzionale**
+
    [Ulteriori informazioni sulle opzioni di Raccordo fotogrammi](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames), e che è adatto al tuo caso d’uso.
 
 5. Copiare l&#39;intestazione (Logo e Nome società) dal modello principale in Pagina e Pagina tramite Incolla nella posizione.
