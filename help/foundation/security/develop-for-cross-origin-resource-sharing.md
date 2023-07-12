@@ -7,10 +7,10 @@ role: Developer
 level: Beginner
 feature: Security
 exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: 46728ac6ad37590413e247d23262233626b0575b
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 0%
+source-wordcount: '318'
+ht-degree: 3%
 
 ---
 
@@ -94,26 +94,48 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ## Configurazione del Dispatcher {#dispatcher-configuration}
 
-Per consentire la memorizzazione in cache e il serving delle intestazioni CORS sul contenuto memorizzato in cache, aggiungi quanto segue [Configurazione /clientheaders](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) a tutte le pubblicazioni AEM che supportano `dispatcher.any` file.
+### Consentire le intestazioni di richiesta CORS
+
+Per consentire il necessario [Intestazioni di richiesta HTTP da passare all’AEM per l’elaborazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders), devono essere consentiti nel `/clientheaders` configurazione.
 
 ```
-/myfarm { 
-  ...
-  /clientheaders {
-      "Access-Control-Allow-Origin"
-      "Access-Control-Expose-Headers"
-      "Access-Control-Max-Age"
-      "Access-Control-Allow-Credentials"
-      "Access-Control-Allow-Methods"
-      "Access-Control-Allow-Headers"
-  }
-  ...
+/clientheaders {
+   ...
+   "Origin"
+   "Access-Control-Request-Method"
+   "Access-Control-Request-Headers"
+}
+```
+
+### Memorizzazione nella cache delle intestazioni di risposta CORS
+
+Per consentire la memorizzazione in cache e il serving delle intestazioni CORS sul contenuto memorizzato in cache, aggiungi quanto segue [/cache /headers, configurazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#caching-http-response-headers) alla pubblicazione AEM `dispatcher.any` file.
+
+```
+/publishfarm {
+    ...
+    /cache {
+        ...
+        # CORS HTTP response headers
+        # https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#the_http_response_headers
+        /headers {
+            ...
+            "Access-Control-Allow-Origin"
+            "Access-Control-Expose-Headers"
+            "Access-Control-Max-Age"
+            "Access-Control-Allow-Credentials"
+            "Access-Control-Allow-Methods"
+            "Access-Control-Allow-Headers"
+        }
+    ...
+    }
+...
 }
 ```
 
 **Riavviare l&#39;applicazione server Web** dopo aver apportato modifiche al `dispatcher.any` file.
 
-È probabile che la cancellazione completa della cache sia necessaria per garantire che le intestazioni siano memorizzate nella cache in modo appropriato alla successiva richiesta dopo un `/clientheaders` aggiornamento della configurazione.
+È probabile che la cancellazione completa della cache sia necessaria per garantire che le intestazioni siano memorizzate nella cache in modo appropriato alla successiva richiesta dopo un `/cache /headers` aggiornamento della configurazione.
 
 ## Materiali di supporto {#supporting-materials}
 
