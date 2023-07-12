@@ -15,10 +15,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: b120fb79-729e-4155-ba10-e5f7bb07eefa
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: d0027647ce3157173d2592728757150199db930d
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 9%
+source-wordcount: '127'
+ht-degree: 8%
 
 ---
 
@@ -26,35 +26,15 @@ ht-degree: 9%
 
 L’Editor pagina del sito AEM è uno strumento utile per creare e modificare contenuti web. Gli strumenti e le funzionalità dell’Editor pagina sono accessibili dalla barra degli strumenti dell’interfaccia utente.
 
-Il video seguente evidenzia le funzioni principali dell’Editor pagina.
+Il video seguente evidenzia alcune delle funzioni principali dell’Editor pagina.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32011?quality=12&learn=on)
 
-Le funzioni dell’editor pagina includono:
 
-* Trascinare componenti e risorse
-* Pannello Struttura contenuto che fornisce un indice di tutti i componenti della pagina
-* Il pannello Informazioni pagina consente di accedere a informazioni aggiuntive e azioni rapide per un autore di contenuti
-   * Apri proprietà
-   * Rollout pagina
-   * Avvia flusso di lavoro
-   * Blocca pagina/Sblocca pagina
-   * Pubblicare o annullare la pubblicazione di una pagina
-   * Modifica modello
-   * Visualizza come pubblicato
-   * Visualizza in Amministrazione
-   * Aiuto
-* Aggiunta di icone e descrizioni dei componenti al pannello dei componenti
-* Collegamento diretto per la modifica delle risorse in DAM
-* Emulatore per la modifica dei contenuti in linea e la gestione più rapida dei componenti sulla griglia reattiva
-* Modalità di modifica pagina
-   * Modalità modifica
-   * Modalità Layout
-   * Modalità Sviluppatore
-* Completamento automatico e ricerca di parole chiave per il campo modulo di ricerca percorsi
-* Barra di stato del flusso di lavoro per la pagina corrente
+Consulta la [Documentazione AEM per una panoramica completa delle funzionalità dell’Editor pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=it).
 
 ## Risorse aggiuntive {#additional-resources}
 
+* [Documentazione dell’Editor pagina per l’AEM[(https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html)
 * [Modifica della documentazione sul contenuto di una pagina](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guida utente all’authoring di Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [Guida utente all’authoring di siti](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
