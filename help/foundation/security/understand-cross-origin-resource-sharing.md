@@ -12,9 +12,9 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 325c0204c33686e09deb82dd159557e0b8743df6
+source-git-commit: d2a9596ddadd897793a0fce8421aa8b246b45b12
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '1007'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ Se non è configurato alcun criterio, [!DNL CORS] alle richieste non verrà data
 #### [!UICONTROL Intestazioni esposte]
 
 * `"exposedheaders" <header>`
-* Elenco di parametri di intestazione che indicano le intestazioni di risposta a cui i browser possono accedere.
+* Elenco di parametri di intestazione che indicano le intestazioni di risposta a cui i browser possono accedere. Per le richieste CORS (non pre-flight), se non vuote questi valori vengono copiati nel `Access-Control-Expose-Headers` intestazione di risposta. I valori nell’elenco (nomi delle intestazioni) vengono quindi resi accessibili al browser; senza di esso, tali intestazioni non sono leggibili dal browser.
 
 #### [!UICONTROL Età massima]
 
@@ -74,7 +74,7 @@ Se non è configurato alcun criterio, [!DNL CORS] alle richieste non verrà data
 #### [!UICONTROL Intestazioni supportate]
 
 * `"supportedheaders" <header>`
-* Elenco di `header` parametri che indicano quali intestazioni HTTP possono essere utilizzate quando si effettua la richiesta effettiva.
+* Elenco di `header` parametri che indicano quali intestazioni di richiesta HTTP possono essere utilizzate quando si effettua la richiesta effettiva.
 
 #### [!UICONTROL Metodi consentiti]
 
@@ -98,8 +98,7 @@ Il sito 1 è uno scenario di base, anonimamente accessibile e di sola lettura in
   ],
   "supportedmethods":[
     "GET",
-    "HEAD",
-    "OPTIONS"
+    "HEAD"
   ],
   "alloworigin":[
     "http://127.0.0.1:3000",
@@ -140,7 +139,6 @@ Il sito 2 è più complesso e richiede richieste autorizzate e mutanti (POST, PU
     "HEAD"
     "POST",
     "DELETE",
-    "OPTIONS",
     "PUT"
   ],
   "alloworigin":[
