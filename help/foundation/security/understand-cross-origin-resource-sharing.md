@@ -12,10 +12,10 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 73bb813c961cf988355984b0385998a493ee3716
+source-git-commit: 325c0204c33686e09deb82dd159557e0b8743df6
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 1%
+source-wordcount: '966'
+ht-degree: 2%
 
 ---
 
@@ -182,7 +182,22 @@ In generale, le stesse considerazioni per il caching dei contenuti in Dispatcher
 | No | AEM Publish | Autenticato | Evita di memorizzare nella cache le intestazioni CORS nelle richieste autenticate. Questo si allinea alla linea guida comune di non memorizzare in cache le richieste autenticate, in quanto è difficile determinare in che modo lo stato di autenticazione/autorizzazione dell’utente richiedente influirà sulla risorsa consegnata. |
 | Sì | AEM Publish | Anonimo | Le intestazioni di risposta delle richieste anonime memorizzabili nella cache di Dispatcher possono essere memorizzate anche nella cache, in modo che le richieste CORS future possano accedere al contenuto memorizzato nella cache. Qualsiasi modifica alla configurazione CORS in AEM Publish **deve** essere seguito da un annullamento della validità delle risorse cache interessate. Le best practice impongono distribuzioni di codice o configurazione per cui la cache del dispatcher viene eliminata, in quanto è difficile determinare quale contenuto memorizzato in cache può essere influenzato. |
 
-Per consentire la memorizzazione nella cache delle intestazioni CORS, aggiungi la seguente configurazione a tutti i file dispatcher.any di AEM Publish che supportano.
+### Consentire le intestazioni di richiesta CORS
+
+Per consentire il necessario [Intestazioni di richiesta HTTP da passare all’AEM per l’elaborazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders), devono essere consentiti nel `/clientheaders` configurazione.
+
+```
+/clientheaders {
+   ...
+   "Origin"
+   "Access-Control-Request-Method"
+   "Access-Control-Request-Headers"
+}
+```
+
+### Memorizzazione nella cache delle intestazioni di risposta CORS
+
+Per consentire la memorizzazione in cache e il serving delle intestazioni CORS sul contenuto memorizzato in cache, aggiungi quanto segue [/cache /headers, configurazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#caching-http-response-headers) alla pubblicazione AEM `dispatcher.any` file.
 
 ```
 /publishfarm {
