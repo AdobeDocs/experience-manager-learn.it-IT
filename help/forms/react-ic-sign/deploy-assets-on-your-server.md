@@ -9,9 +9,9 @@ level: Beginner
 kt: 13099
 last-substantial-update: 2023-04-13T00:00:00Z
 exl-id: 44f4261b-d6fe-42ad-a3aa-2a36ca897b5e
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: cc24ebca488ea286e8a4605edfb39420c1c10022
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -25,14 +25,21 @@ Le seguenti risorse/configurazioni sono state distribuite su un server di pubbli
 * [Esempio di modello di comunicazione interattiva](assets/waiver-interactive-communication.zip)
 * [Distribuire il bundle DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip)
 * Aggiungi la seguente voce nel servizio User Mapper di Apache Sling Service utilizzando OSGi configMgr
-   **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
-* [Il codice di esempio dell’app React può essere scaricato da qui](assets/src.zip)
+  **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
 
+## Distribuire l’app di reazione di esempio
 
+* [Scarica l’app di reazione di esempio](assets/mult-step-form1.zip)
+* Decomprimi il contenuto dell’app React in una nuova cartella
+* Passa alla cartella ed esegui i seguenti comandi
 
-L’app di reazione di esempio deve essere distribuita nell’ambiente locale
+```java
+npm install
+npm start
+```
 
-Dovrai modificare l’URL dell’endpoint in modo che corrisponda al tuo ambiente. Apri il file EmergencyContact.js e modifica l’URL nel metodo fetch.
+Apri il file EmergencyContact.js e modifica l’URL nel metodo di recupero in base all’ambiente in uso.
+
 
 ```javascript
  const getWebForm=async()=>
@@ -49,6 +56,6 @@ Dovrai modificare l’URL dell’endpoint in modo che corrisponda al tuo ambient
  
 ```
 
-Per abilitare l’esecuzione di chiamate POST all’endpoint AEM dall’app REACT, devi specificare le voci appropriate nel campo Origini consentite nella configurazione dei criteri di condivisione risorse tra origini diverse di Adobe Granite
+Per abilitare l’esecuzione di chiamate POST all’endpoint AEM dall’app REACT, è necessario specificare le voci appropriate nel campo Origini consentite nella configurazione dei criteri di condivisione risorse tra origini diverse di Adobe Granite.
 
 ![cors-setting](assets/cors-settings.png)
