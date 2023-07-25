@@ -7,10 +7,12 @@ topic: Integrations
 role: Developer
 level: Intermediate
 last-substantial-update: 2022-06-04T00:00:00Z
+badgeIntegration: label="Integrazione" type="positive"
+badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '830'
 ht-degree: 1%
 
 ---
@@ -66,6 +68,7 @@ Viene creata una suite di rapporti con raccolta dati in tempo reale per il tracc
 >[!VIDEO](https://video.tv.adobe.com/v/25945?quality=12&learn=on)
 
 >[!NOTE]
+>
 La raccolta dei dati in tempo reale e il reporting delle risorse AEM devono essere abilitati per la suite di rapporti Adobe Analytics. L’abilitazione di AEM Asset Reporting riserva le variabili di analisi per il tracciamento degli insight sulle risorse.
 
 Per la configurazione di AEM Assets Insights sono necessarie le seguenti credenziali
@@ -83,6 +86,7 @@ Aggiunta dell’estensione Adobe Analytics, creazione di regole di caricamento p
 >[!VIDEO](https://video.tv.adobe.com/v/25946?quality=12&learn=on)
 
 >[!NOTE]
+>
 Assicurati di replicare tutte le modifiche dall’istanza di authoring a quella di pubblicazione.
 
 ### Regola 1: tracciamento pagina (pagetracker.js) {#rule-page-tracker-pagetracker-js}

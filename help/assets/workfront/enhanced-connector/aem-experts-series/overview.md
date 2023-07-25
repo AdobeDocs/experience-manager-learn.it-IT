@@ -1,6 +1,6 @@
 ---
-title: Workfront, ad Experience Manager sessioni connettore ottimizzate
-description: Scopri le nozioni di base del connettore avanzato di Adobe Workfront e Experience Manager Assets.
+title: Integrare Workfront e AEM Assets utilizzando il connettore avanzato
+description: Scopri le nozioni di base sull’integrazione avanzata del connettore Adobe Workfront e Experience Manager Assets.
 version: Cloud Service
 topic: Content Management, Integrations
 feature: Asset Management
@@ -9,19 +9,21 @@ level: Beginner
 kt: 9754
 thumbnail: kt-9754.jpeg
 last-substantial-update: 2022-09-02T00:00:00Z
+badgeIntegration: label="Integrazione" type="positive"
+badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 4f279c0d-270f-433e-b047-88c02f5b1e78
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
 
-# Connettore avanzato Workfront per Experience Manager, serie Expert
+# Integrare Workfront e AEM Assets con il connettore avanzato
 
 ![Serie di esperti AEM](./assets/banner.png)
 
-Unisciti agli esperti Workfront e Experience Manager Assets di Adobe in questa serie di video in quattro parti mentre mostrano e discutono i pro e i contro di Workfront, ad Experience Manager il connettore avanzato.
+Unisciti agli esperti Workfront e Experience Manager Assets di Adobe in questa serie di video in quattro parti mentre mostrano e discutono i pro e i contro dell’integrazione di Workfront e AEM Assets utilizzando il connettore avanzato.
 
 Questa serie di esperti in quattro parti fa seguito a un gruppo di Adobi - dai product manager ai consulenti e ai partner di Adobi - che discute di:
 

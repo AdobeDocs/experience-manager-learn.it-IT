@@ -7,10 +7,12 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="Integrazione" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: 9b191211-2030-4b62-acad-c7eb45b807ca
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '354'
 ht-degree: 3%
 
 ---
@@ -36,10 +38,9 @@ Per utilizzare le offerte dei frammenti di esperienza AEM per potenziare le atti
    * Experience Cloud fornito con le seguenti soluzioni
       * [Adobe Target](https://experiencecloud.adobe.com)
 
-      >[!NOTE]
-      >
-      > È necessario fornire al cliente Experience Platform Launch e Adobe I/O da [Supporto Adobe](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) o contattare l&#39;amministratore di sistema
-
+     >[!NOTE]
+     >
+     > È necessario fornire al cliente Experience Platform Launch e Adobe I/O da [Supporto Adobe](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) o contattare l&#39;amministratore di sistema
 
 ### Integrazione dell’AEM con Adobe Target
 

@@ -3,13 +3,15 @@ title: Creazione di un profilo campagna all’invio di un modulo adattivo
 description: Questo articolo illustra i passaggi necessari per creare un profilo in Adobe Campaign Standard all’invio di un modulo adattivo. Questo processo utilizza un meccanismo di invio personalizzato per gestire l’invio del modulo adattivo.
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
-topic: Development
+topic: Integrations, Development
 role: Developer
 level: Experienced
+badgeIntegration: label="Integrazione" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: deef09d9-82ec-4e61-b7ee-e72d1cd4e9e0
-source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---

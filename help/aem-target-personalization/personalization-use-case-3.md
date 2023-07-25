@@ -7,10 +7,12 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="Integrazione" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: 1550e6a7-04b5-4a40-9d7b-88074283402f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '585'
 ht-degree: 2%
 
 ---
@@ -48,7 +50,6 @@ Per questo esercizio, è necessario coinvolgere i seguenti utenti e per eseguire
 1. L’addetto al marketing crea un’attività di destinazione A/B in Adobe Target.
    1. Dalla finestra di Adobe Target, passa a **Attività** scheda.
    2. Clic **Crea attività** e seleziona il tipo di attività come **Test A/B**
-
       ![Adobe Target - Crea attività](assets/personalization-use-case-2/create-ab-activity.png)
    3. Seleziona la **Web** e scegli il **Compositore esperienza visivo**.
    4. Inserisci il **URL attività** e fai clic su **Successivo** per aprire il Compositore esperienza visivo.
@@ -63,7 +64,6 @@ Per questo esercizio, è necessario coinvolgere i seguenti utenti e per eseguire
       ![Selezione contenitore](assets/personalization-use-case-3/container-selection.png)
    9. Fai clic sul contenitore da ridisporre e trascinalo nella posizione desiderata. Ridisponiamo il *I migliori torrefattori* contenitore dalla prima riga della prima colonna alla prima riga della terza colonna. Ora il *I migliori torrefattori* il contenitore è accanto a *Mostre fotografiche* contenitore.
       ![Scambio contenitore](assets/personalization-use-case-3/container-swap.png)
-
       **Dopo lo scambio**
       ![Contenitore scambiato](assets/personalization-use-case-3/after-swap-1-3.png)
    10. Analogamente, ridisporre le posizioni per gli altri contenitori di carte.

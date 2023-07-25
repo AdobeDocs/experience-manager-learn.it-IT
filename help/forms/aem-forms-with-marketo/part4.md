@@ -3,14 +3,16 @@ title: AEM Forms con Marketo (Parte 4)
 description: Tutorial per integrare AEM Forms con Marketo utilizzando AEM Forms Form Data Model.
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
-topic: Development
+topic: Integrations, Development
 role: Developer
 level: Experienced
+badgeIntegration: label="Integrazione" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 6b44e6b2-15f7-45b2-8d21-d47f122c809d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 1%
+source-wordcount: '332'
+ht-degree: 2%
 
 ---
 
@@ -38,3 +40,7 @@ Se utilizzi i bundle forniti con questo articolo, potrebbe essere utile abilitar
 
 + `com.marketoandforms.core.impl.MarketoServiceImpl`
 + `com.marketoandforms.core.MarketoConfigurationService`
+
+## Congratulazioni
+
+Hai integrato correttamente AEM Forms con Marketo utilizzando AEM Forms Form Data Model.

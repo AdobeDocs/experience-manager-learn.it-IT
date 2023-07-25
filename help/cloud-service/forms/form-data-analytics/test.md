@@ -7,13 +7,15 @@ role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
 feature: Adaptive Forms
-topic: Development
+topic: Integrations, Development
 kt: 12557
+badgeIntegration: label="Integrazione" type="positive"
+badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 43665a1e-4101-4b54-a6e0-d189e825073e
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 1%
+source-wordcount: '207'
+ht-degree: 2%
 
 ---
 
@@ -50,8 +52,12 @@ Interagisci con il modulo mantenendo aperta la finestra della console. Dovresti 
 
 ![console-debug](assets/debug.png)
 
-## Utilizzare Adobe Experience Platform Debugger
+## Utilizza Adobe Experience Platform Debugger
 
 Aggiungi il [Estensione debugger AEP](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) al browser (è necessario accedere) per ottenere ulteriori informazioni di debug
 
 ![platform-debugger](assets/platform-debugger.png)
+
+## Congratulazioni
+
+Hai integrato correttamente AEM Forms as a Cloud Service con Adobe Analytics per creare rapporti sui campi dati dei moduli.

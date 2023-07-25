@@ -7,10 +7,12 @@ topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+version: 6.5
+badgeIntegration: label="Integrazione" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -46,4 +48,3 @@ Le acroforme sono moduli creati con Acrobat. È possibile creare un nuovo modulo
 >* spazio singolo
 >* carattere di sottolineatura singolo
 >* caratteri alfanumerici
-

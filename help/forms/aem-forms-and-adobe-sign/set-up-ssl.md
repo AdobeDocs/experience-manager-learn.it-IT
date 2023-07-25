@@ -8,11 +8,13 @@ kt: 6046
 topic: Development
 role: Admin
 level: Intermediate
+badgeIntegration: label="Integrazione" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: e94cde31-e589-4b71-b5de-bcd898393b8a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 0%
+source-wordcount: '90'
+ht-degree: 3%
 
 ---
 
@@ -21,4 +23,9 @@ ht-degree: 0%
 Uno dei prerequisiti per l’integrazione di AEM Forms con Acrobat Sign è avere l’istanza AEM configurata per l’utilizzo di SSL. Configurazione SSL guidata di Adobe Experience Manager per semplificare la configurazione di un’istanza AEM da eseguire su HTTPS.
 Il video seguente illustra i passaggi necessari per configurare SSL utilizzando la procedura guidata
 
->[!VIDEO](https://video.tv.adobe.com/v/17993?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17993&learn=on)
+
+## Passaggi successivi
+
+[Creare un’applicazione API Acrobat Sign](./create-adobe-sign-api-application.md)
+

@@ -9,10 +9,11 @@ level: Intermediate
 kt: 6409
 thumbnail: KT-6296.jpg
 exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
+badgeIntegration: label="Integrazione" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
-source-git-commit: 5a8d3983a22df4e273034c8d8441b31e6bc764ba
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '2161'
+source-wordcount: '2162'
 ht-degree: 0%
 
 ---
@@ -152,12 +153,10 @@ Quindi, crea una tabella per creare una rappresentazione visiva del modo in cui 
 1. Suddividiamo la pagina in base al tipo di modello. Seleziona la metrica del modello di pagina dai componenti, quindi trascina la metrica Modello pagina nella dimensione Nome pagina. Ora puoi visualizzare il nome della pagina suddiviso per il relativo tipo di modello.
 
    * **Prima**
-
-      ![eVar5](assets/create-analytics-workspace/evar5.png)
+     ![eVar5](assets/create-analytics-workspace/evar5.png)
 
    * **Dopo**
-
-      ![Metriche eVar5](assets/create-analytics-workspace/evar5-metrics.png)
+     ![Metriche eVar5](assets/create-analytics-workspace/evar5-metrics.png)
 
 1. Per capire come gli utenti interagiscono con i pulsanti CTA quando si trovano nelle pagine del sito WKND, è necessario aggiungere la metrica ID pulsante (eVar8).
 
@@ -244,11 +243,9 @@ Quindi, scariciamo il modello di classificazione per la variabile Button Id (eVa
 1. Dal Finder dei componenti, cerca **Pulsanti CTA WKND** e trascina **Pulsanti CTA WKND (ID pulsante)** nella metrica ID pulsante e sostituiscila.
 
    * **Prima**
-
-      ![Pulsante area di lavoro prima](assets/create-analytics-workspace/wknd-button-before.png)
+     ![Pulsante area di lavoro prima](assets/create-analytics-workspace/wknd-button-before.png)
    * **Dopo**
-
-      ![Pulsante area di lavoro dopo](assets/create-analytics-workspace/wknd-button-after.png)
+     ![Pulsante area di lavoro dopo](assets/create-analytics-workspace/wknd-button-after.png)
 
 1. Puoi notare che la metrica Id pulsante che conteneva l’ID pulsante di un pulsante di invito all’azione (CTA) ora viene sostituita con un nome corrispondente fornito nel modello di classificazione.
 1. Confrontiamo la tabella dell’area di lavoro di Analytics con la pagina Home di WKND e comprendiamo il conteggio dei clic dei pulsanti CTA e la relativa analisi. In base ai dati della tabella a forma libera dell’area di lavoro, è chiaro che 22 volte gli utenti hanno fatto clic sul pulsante **SCIA ORA** pulsante e quattro volte per il WKND Home Page Camping in Western Australia **Ulteriori informazioni** pulsante.

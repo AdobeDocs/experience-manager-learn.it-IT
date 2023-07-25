@@ -7,11 +7,13 @@ kt: 6039
 topic: Development
 role: User
 level: Beginner
+badgeIntegration: label="Integrazione" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: ee3dc77d-a888-473f-b2a6-7f7a4e969358
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 0%
+source-wordcount: '96'
+ht-degree: 3%
 
 ---
 
@@ -20,3 +22,7 @@ ht-degree: 0%
 Il video seguente illustra i passaggi necessari per creare e configurare un modulo adattivo per la generazione automatica di un documento record. Il video illustra inoltre i passaggi necessari per configurare un modulo adattivo per attivare un flusso di lavoro AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/38348?quality=12&learn=on)
+
+## Passaggi successivi
+
+[Configura modulo adattivo per firmatario singolo](./configure-adaptive-form-for-single-signer.md)

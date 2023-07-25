@@ -5,15 +5,17 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="Integrazione" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: b632883f-65fd-4f89-bf39-ec2bce352d2d
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 1%
+source-wordcount: '842'
+ht-degree: 0%
 
 ---
 
-# Guida introduttiva ad AEM e Adobe Target {#getting-started-with-aem-target}
+# Integrare AEM Sites e Adobe Target {#getting-started-with-aem-target}
 
 AEM e Target sono entrambe soluzioni potenti con funzionalità apparentemente sovrapposte. A volte i clienti hanno difficoltà a capire come e quando utilizzare questi prodotti insieme per fornire esperienze personalizzate. Per offrire un’esperienza ottimizzata a ogni utente finale, i diversi team all’interno dell’organizzazione dovrebbero collaborare strettamente e definire i propri ruoli.
 
@@ -38,7 +40,7 @@ Ora disponiamo di contenuti personalizzati sotto forma di offerte dell’AEM in 
 * Target&#x200B; utilizza il markup dei frammenti esperienza AEM come offerte nelle attività
 * Target fornisce Experience Fragment HTML, AEM fornisce le immagini di riferimento
 
-   ![Personalizzazione mediante il diagramma Frammenti esperienza](assets/personalization-use-case-1/use-case-1-diagram.png)
+  ![Personalizzazione mediante il diagramma Frammenti esperienza](assets/personalization-use-case-1/use-case-1-diagram.png)
 
 **Per implementare questo scenario, devi:**
 
@@ -59,7 +61,7 @@ Il Compositore esperienza visivo è una delle funzionalità principali di Adobe 
 * Il nuovo contenuto netto viene creato utilizzando Adobe Target VEC
 * Applicabile sia ai siti ospitati dall’AEM che ai siti non ospitati dall’AEM
 
-   ![Personalizzazione mediante il diagramma del Compositore esperienza visivo](assets/personalization-use-case-3/use-case-diagram-3.png)
+  ![Personalizzazione mediante il diagramma del Compositore esperienza visivo](assets/personalization-use-case-3/use-case-diagram-3.png)
 
 **Per implementare questo scenario, devi:**
 
@@ -77,7 +79,7 @@ L’integrazione di Adobe Experience Manager con Adobe Target ti aiuta a fornire
 * Nessun nuovo contenuto qui creato
 * Applicabile a siti AEM e non AEM
 
-   ![diagramma](assets/personalization-use-case-2/use-case-2-diagram.png)
+  ![diagramma](assets/personalization-use-case-2/use-case-2-diagram.png)
 
 **Per implementare questo scenario, devi:**
 

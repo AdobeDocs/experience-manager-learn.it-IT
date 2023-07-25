@@ -1,29 +1,30 @@
 ---
-title: Integrazione di Adobe Experience Manager con Adobe Target
-seo-title: An article covering different ways to integrate Adobe Experience Manager(AEM) with Adobe Target for delivering personalized content.
+title: Integrazione di AEM Sites con Adobe Target
+seo-title: An article covering different ways to integrate Adobe Experience Manager (AEM) Sites with Adobe Target for delivering personalized content.
 description: Un articolo che illustra come configurare Adobe Experience Manager con Adobe Target per diversi scenari.
 seo-description: An article covering how to set up Adobe Experience Manager with Adobe Target for different scenarios.
 feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="Integrazione" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: 54a30cd9-d94a-4de5-82a1-69ab2263980d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '661'
 ht-degree: 5%
 
 ---
 
-# Integrazione di Adobe Experience Manager con Adobe Target
+# Integrazione di AEM Sites con Adobe Target
 
-In questa sezione verrà illustrato come configurare Adobe Experience Manager con Adobe Target per diversi scenari. In base allo scenario e ai requisiti organizzativi.
+In questa sezione verrà illustrato come configurare Adobe Experience Manager Sites con Adobe Target per diversi scenari. In base allo scenario e ai requisiti organizzativi.
 
 * **Aggiungi libreria JavaScript di Adobe Target (richiesta per tutti gli scenari)**
 Per i siti in hosting su AEM, puoi aggiungere librerie Target al sito utilizzando, [Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). Launch offre un modo semplice di implementare e gestire tutti i tag necessari per fornire ai clienti esperienze personalizzate.
 * **Aggiungi i Cloud Services Adobe Target (obbligatorio per lo scenario Frammenti esperienza)**
-Per i clienti AEM che desiderano utilizzare le offerte dei frammenti di esperienza per creare un’attività in Adobe Target, dovranno integrare Adobe Target con AEM utilizzando i Cloud Services legacy. Questa integrazione è necessaria per inviare i frammenti di esperienza dall’AEM a Target come offerte HTML/JSON e per mantenere la sincronizzazione con l’AEM. 
-*Questa integrazione è necessaria per attuare lo scenario 1.*
+Per i clienti AEM che desiderano utilizzare le offerte dei frammenti di esperienza per creare un’attività in Adobe Target, dovranno integrare Adobe Target con AEM utilizzando i Cloud Services legacy. Questa integrazione è necessaria per inviare i frammenti di esperienza dall’AEM a Target come offerte HTML/JSON e per mantenere la sincronizzazione con l’AEM. *Questa integrazione è necessaria per attuare lo scenario 1.*
 
 ## Prerequisiti
 

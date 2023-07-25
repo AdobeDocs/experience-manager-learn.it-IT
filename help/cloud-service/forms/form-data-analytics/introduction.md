@@ -1,36 +1,40 @@
 ---
-title: Generare rapporti sui campi dati del modulo inviati tramite Adobe Analytics
-description: Integrare AEM Forms CS con Adobe Analytics per creare rapporti sui campi dati dei moduli
+title: Integrare AEM Forms con Adobe Analytics per creare rapporti sui campi dati dei moduli
+description: Integra AEM Forms as a Cloud Service con Adobe Analytics per creare rapporti sui campi dati dei moduli
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
 feature: Adaptive Forms
-topic: Development
+topic: Integrations, Development
 kt: 12557
+badgeIntegration: label="Integrazione" type="positive"
+badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 369c563e-c847-438a-a783-bc6a9f81b77c
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 0%
+source-wordcount: '157'
+ht-degree: 2%
 
 ---
 
-# Generare rapporti sui valori dei campi dati modulo ed errori di convalida dei campi modulo utilizzando Adobe Analytics
+# Integrare AEM Forms con Adobe Analytics per creare rapporti sui campi dati dei moduli
 
-Scopri come implementare le analisi sui moduli adattivi utilizzando Tag e Adobe Analytics. Questo esempio illustra i passaggi di configurazione e implementazione per generare rapporti dettagliati sul modo in cui i visitatori interagiscono con i moduli.
+Scopri come integrare AEM Forms as a Cloud Service con Adobe Analytics nei moduli adattivi utilizzando i tag Experience Platform. Questo esempio illustra i passaggi di configurazione e implementazione per generare rapporti dettagliati sul modo in cui i visitatori interagiscono con i moduli.
 
 ## Prerequisiti
 
 Per ottenere il massimo da questa esercitazione, ti consigliamo di soddisfare i seguenti prerequisiti:
 
-* Esperienza con AEM Forms CS
-* Accesso ai tag Adobe
+* Esperienza con AEM Forms as a Cloud Service
+* Accesso ai tag Experience Platform
 * Accesso ad Adobe Analytics
-
-
 
 Questa esercitazione utilizza un semplice modulo adattivo integrato in AEM Forms e misura l’invio dei moduli per i valori dello stato di residenza, nonché i campi che generano errori di convalida.
 
 ![modulo adattivo](assets/use-case.png)
+
+## Passaggi successivi
+
+[Creare elementi dati](./data-elements.md)

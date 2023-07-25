@@ -1,6 +1,6 @@
 ---
-title: Raccogliere dati di pagina con Adobe Analytics
-description: Utilizza Adobe Client Data Layer basato sugli eventi per raccogliere dati sull’attività dell’utente su un sito web creato con Adobe Experience Manager. Scopri come utilizzare le regole di tag per ascoltare questi eventi e inviare dati a una suite di rapporti di Adobe Analytics.
+title: Integrare AEM Sites con Adobe Analytics con l’estensione tag Adobe Analytics
+description: Integra AEM Sites con Adobe Analytics, utilizzando Adobe Client Data Layer basato sugli eventi per raccogliere i dati sull’attività dell’utente su un sito web creato con Adobe Experience Manager. Scopri come utilizzare le regole di tag per ascoltare questi eventi e inviare dati a una suite di rapporti di Adobe Analytics.
 version: Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer
@@ -8,22 +8,23 @@ role: Developer
 level: Intermediate
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
+badgeIntegration: label="Integrazione" type="positive"
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
-source-git-commit: 6a5e62a2a897adc421585e79c5f36f6aa759feaa
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '2447'
+source-wordcount: '2470'
 ht-degree: 2%
 
 ---
 
-# Raccogliere dati di pagina con Adobe Analytics
+# Integrare AEM Sites e Adobe Analytics
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch è stato ridefinito come suite di tecnologie di raccolta dati in Adobe Experience Platform. Di conseguenza, sono state introdotte diverse modifiche terminologiche nella documentazione del prodotto. Fai riferimento a quanto segue [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) per un riferimento consolidato delle modifiche terminologiche.
 
 
-Scopri come utilizzare le funzioni integrate di [Adobe Client Data Layer con componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it) per raccogliere dati su una pagina in Adobe Experience Manager Sites. [Tag nell’Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) e [Estensione Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) vengono utilizzati per creare regole per inviare dati di pagina ad Adobe Analytics.
+Scopri come integrare AEM Sites e Adobe Analytics con l’estensione tag Adobe Analytics, utilizzando le funzioni integrate di [Adobe Client Data Layer con componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it) per raccogliere dati su una pagina in Adobe Experience Manager Sites. [Tag nell’Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) e [Estensione Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) vengono utilizzati per creare regole per inviare dati di pagina ad Adobe Analytics.
 
 ## Cosa intendi creare {#what-build}
 
