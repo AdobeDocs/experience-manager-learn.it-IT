@@ -11,14 +11,16 @@ thumbnail: KT-13464.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 2b72c282-bce8-4f2a-bce6-f2f31e96ec88
-source-git-commit: 6f537a0c7605b96f6c6b43ff8c5bf634369171cc
+source-git-commit: 6a82bbb2bbfc95e3292735ac8490eecd5e7ddb84
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
 
 # Pulsante personalizzato sulla barra degli strumenti dell’Editor Rich Text
+
+Scopri come aggiungere un pulsante personalizzato alla barra degli strumenti dell’Editor Rich Text (RTE) nell’Editor frammenti di contenuto AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420768?quality=12&learn=on)
 
