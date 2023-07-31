@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2023-05-14T00:00:00Z
 exl-id: 5e423f2c-90d2-474f-8bdc-fa15ae976f18
-source-git-commit: 861b171b8ebbcf9565bdc94fb84a043ecb99c00a
+source-git-commit: 929fd045b81652463034b54c557de04df3d4e64a
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -22,7 +22,10 @@ ht-degree: 0%
 I flussi di lavoro con avvio automatico estendono l’elaborazione delle risorse in AEM as a Cloud Service richiamando automaticamente il flusso di lavoro personalizzato al momento del caricamento o della rielaborazione al termine dell’elaborazione delle risorse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37323?quality=12&learn=on)
-> `Notice`: utilizza i flussi di lavoro con avvio automatico per personalizzare le risorse nella post-elaborazione anziché i moduli di avvio dei flussi di lavoro. I flussi di lavoro con avvio automatico sono _solo_ richiamato una volta completata l’elaborazione di una risorsa, anziché moduli di avvio che possono essere richiamati più volte durante l’elaborazione della risorsa.
+
+>[!NOTE]
+>
+>Utilizza l’avvio automatico dei flussi di lavoro per personalizzare le risorse nella post-elaborazione anziché utilizzare i moduli di avvio dei flussi di lavoro. I flussi di lavoro con avvio automatico sono _solo_ richiamato una volta completata l’elaborazione di una risorsa, anziché moduli di avvio che possono essere richiamati più volte durante l’elaborazione della risorsa.
 
 ## Personalizzazione del flusso di lavoro di post-elaborazione
 
@@ -37,7 +40,11 @@ Per personalizzare il flusso di lavoro di post-elaborazione, copia il post-elabo
    ![Modifica del nome](assets/auto-start-workflow-change-name.png)
 6. Aggiungi i passaggi per soddisfare i requisiti aziendali, in questo caso aggiungendo un’attività al termine dell’elaborazione delle risorse. Assicurati che l’ultimo passaggio del flusso di lavoro sia sempre il _Flusso di lavoro completato_ passaggio<br/>
    ![Aggiungi passaggi del flusso di lavoro](assets/auto-start-workflow-customize-steps.png)
-   > `Note`: i flussi di lavoro con avvio automatico vengono eseguiti con ogni caricamento o rielaborazione di risorse; pertanto, è necessario considerare attentamente le implicazioni in termini di scalabilità dei passaggi del flusso di lavoro, in particolare per le operazioni in blocco come [Importazioni in blocco](../../cloud-service/migration/bulk-import.md) o migrazioni.
+
+   >[!NOTE]
+   >
+   >I flussi di lavoro con avvio automatico vengono eseguiti con ogni caricamento o rielaborazione di risorse; pertanto, è necessario considerare attentamente le implicazioni in termini di scalabilità dei passaggi del flusso di lavoro, in particolare per le operazioni in blocco come [Importazioni in blocco](../../cloud-service/migration/bulk-import.md) o migrazioni.
+
 7. Seleziona la _Sincronizza_ per salvare le modifiche e sincronizzare il modello di workflow
 
 ## Utilizzo di un flusso di lavoro di post-elaborazione personalizzato
