@@ -9,11 +9,11 @@ role: Developer
 level: Beginner
 kt: 10721
 thumbnail: KT-10721.jpg
-last-substantial-update: 2022-10-03T00:00:00Z
+last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: 4f67bb37-416a-49d9-9d7b-06c3573909ca
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '811'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ I seguenti strumenti devono essere installati localmente:
 
 ## Requisiti AEM
 
-L’app Next.js funziona con le seguenti opzioni di distribuzione AEM. Tutte le distribuzioni richiedono [WKND Shared v2.1.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) o [Sito WKND v2.1.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) da installare nell’ambiente as a Cloud Service AEM.
+L’app Next.js funziona con le seguenti opzioni di distribuzione AEM. Tutte le distribuzioni richiedono [WKND Shared v3.0.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) o [Sito WKND v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) da installare nell’ambiente as a Cloud Service AEM.
 
 Questo esempio di app Next.js è progettata per connettersi a __Pubblicazione AEM__ servizio.
 
@@ -112,43 +112,73 @@ Seguendo le best practice di AEM Headless, l’app Next.js utilizza query persis
 + `wknd/adventures-all` query persistente, che restituisce tutte le avventure in AEM con un set abbreviato di proprietà. Questa query persistente guida l’elenco di avventure della visualizzazione iniziale.
 
 ```
-# Retrieves a list of all adventures
-{
-    adventureList {
-        items {
-            _path
-            slug
-            title
-            price
-            tripLength
-            primaryImage {
-                ... on ImageRef {
-                _path
-                mimeType
-                width
-                height
-                }
-            }
+# Retrieves a list of all Adventures
+#
+# Optional query variables:
+# - { "offset": 10 }
+# - { "limit": 5 }
+# - { 
+#    "imageFormat": "JPG",
+#    "imageWidth": 1600,
+#    "imageQuality": 90 
+#   }
+query ($offset: Int, $limit: Int, $sort: String, $imageFormat: AssetTransformFormat=JPG, $imageWidth: Int=1200, $imageQuality: Int=80) {
+  adventureList(
+    offset: $offset
+    limit: $limit
+    sort: $sort
+    _assetTransform: {
+      format: $imageFormat
+      width: $imageWidth
+      quality: $imageQuality
+      preferWebp: true
+  }) {
+    items {
+      _path
+      slug
+      title
+      activity
+      price
+      tripLength
+      primaryImage {
+        ... on ImageRef {
+          _path
+          _dynamicUrl
         }
+      }
     }
+  }
 }
 ```
 
 + `wknd/adventure-by-slug` query persistente, che restituisce una singola avventura di `slug` (proprietà personalizzata che identifica in modo univoco un’avventura) con un set completo di proprietà. Questa query persistente attiva le visualizzazioni dei dettagli dell’avventura.
 
 ```
-# Retrieves an adventure Content Fragment based on it's slug
-# Example query variables: 
-# {"slug": "bali-surf-camp"} 
-# Technically returns an adventure list but since the the slug 
-# property is set to be unique in the CF Model, only a single CF is expected
+# Retrieves an Adventure Fragment based on it's unique slug.
+#
+# Required query variables:
+# - {"slug": "bali-surf-camp"}
+#
+# Optional query variables:
+# - { 
+#     "imageFormat": "JPG",
+#     "imageSeoName": "my-adventure",
+#     "imageWidth": 1600,
+#     "imageQuality": 90 
+#   }
+#  
+# This query returns an adventure list but since the the slug property is set to be unique in the Content Fragment Model, only a single Content Fragment is expected.
 
-query($slug: String!) {
-  adventureList(filter: {
-        slug: {
-          _expressions: [ { value: $slug } ]
-        }
-      }) {
+query ($slug: String!, $imageFormat:AssetTransformFormat=JPG, $imageSeoName: String, $imageWidth: Int=1200, $imageQuality: Int=80) {
+  adventureList(
+    filter: {slug: {_expressions: [{value: $slug}]}}
+    _assetTransform: {
+      format: $imageFormat
+      seoName: $imageSeoName
+      width: $imageWidth
+      quality: $imageQuality
+      preferWebp: true
+  }) {
     items {
       _path
       title
@@ -163,22 +193,22 @@ query($slug: String!) {
       primaryImage {
         ... on ImageRef {
           _path
-          mimeType
-          width
-          height
+          _dynamicUrl
         }
       }
       description {
         json
         plaintext
+        html
       }
       itinerary {
         json
         plaintext
+        html
       }
     }
     _references {
-      ...on AdventureModel {
+      ... on AdventureModel {
         _path
         slug
         title
@@ -192,7 +222,7 @@ query($slug: String!) {
 
 ### Esegui query persistente GraphQL
 
-Le query persistenti dell’AEM vengono eseguite tramite HTTP GET, pertanto [Client AEM headless per JavaScript](https://github.com/adobe/aem-headless-client-js) viene utilizzato per [eseguire le query GraphQL persistenti;](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) contro l’AEM e carica il contenuto dell’avventura nell’app.
+Le query persistenti dell’AEM vengono eseguite su HTTP GET, pertanto [Client AEM headless per JavaScript](https://github.com/adobe/aem-headless-client-js) viene utilizzato per [eseguire le query GraphQL persistenti;](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) contro l’AEM e carica il contenuto dell’avventura nell’app.
 
 Ogni query persistente ha una funzione corrispondente in `src/lib//aem-headless-client.js`, che chiama l’endpoint GraphQL dell’AEM e restituisce i dati dell’avventura.
 
@@ -219,9 +249,9 @@ async getAllAdventures() {
 
 // And so on, and so forth ... 
 
-async getAdventureSlugs() { ... }
+async getAdventureSlugs(queryVariables) { ... }
 
-async getAdventuresBySlug(slug) { ... }
+async getAdventuresBySlug(slug, queryVariables) { ... }
 ...
 ```
 
@@ -231,17 +261,17 @@ L’app Next.js utilizza due pagine per presentare i dati dell’avventura.
 
 + `src/pages/index.js`
 
-   Usa [getServerSideProps() di Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) per chiamare `getAllAdventures()` e mostra ogni avventura come una scheda.
+  Usa [getServerSideProps() di Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) per chiamare `getAllAdventures()` e mostra ogni avventura come una scheda.
 
-   L&#39;uso di `getServerSiteProps()` consente il rendering lato server di questa pagina Next.js.
+  L&#39;uso di `getServerSiteProps()` consente il rendering lato server di questa pagina Next.js.
 
 + `src/pages/adventures/[...slug].js`
 
-   A [Route dinamica Next.js](https://nextjs.org/docs/routing/dynamic-routes) mostra i dettagli di una singola avventura. Questo percorso dinamico preacquisisce i dati di ogni avventura utilizzando [getStaticProps() di Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) tramite una chiamata a `getAdventureBySlug(..)` utilizzando `slug` param passato tramite la selezione di avventura sul `adventures/index.js` pagina.
+  A [Route dinamica Next.js](https://nextjs.org/docs/routing/dynamic-routes) mostra i dettagli di una singola avventura. Questo percorso dinamico preacquisisce i dati di ogni avventura utilizzando [getStaticProps() di Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) tramite una chiamata a `getAdventureBySlug(slug, queryVariables)` utilizzando `slug` param passato tramite la selezione di avventura sul `adventures/index.js` pagina e `queryVariables` per controllare il formato, la larghezza e la qualità dell&#39;immagine.
 
-   La route dinamica è in grado di prerecuperare i dettagli di tutte le avventure utilizzando [getStaticPaths() di Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) e popolando tutte le permutazioni di route possibili in base all’elenco completo delle avventure restituite dalla query GraphQL  `getAdventurePaths()`
+  La route dinamica è in grado di prerecuperare i dettagli di tutte le avventure utilizzando [getStaticPaths() di Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) e popolando tutte le permutazioni di route possibili in base all’elenco completo delle avventure restituite dalla query GraphQL  `getAdventurePaths()`
 
-   L&#39;uso di `getStaticPaths()` e `getStaticProps(..)` ha consentito la generazione di siti statici per queste pagine Next.js.
+  L&#39;uso di `getStaticPaths()` e `getStaticProps(..)` ha consentito la generazione di siti statici per queste pagine Next.js.
 
 ## Configurazione della distribuzione
 

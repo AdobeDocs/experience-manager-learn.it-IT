@@ -9,12 +9,12 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-last-substantial-update: 2022-11-09T00:00:00Z
+last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 6%
+source-wordcount: '892'
+ht-degree: 4%
 
 ---
 
@@ -32,17 +32,16 @@ A [tutorial completo e dettagliato](https://experienceleague.adobe.com/docs/expe
 
 I seguenti strumenti devono essere installati localmente:
 
-+ [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
 + [Node.js v18](https://nodejs.org/it/)
 + [Git](https://git-scm.com/)
 
 ## Requisiti AEM
 
-L’applicazione React funziona con le seguenti opzioni di implementazione dell’AEM. Tutte le distribuzioni richiedono [Sito WKND v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/tag/aem-guides-wknd-2.1.0) da installare.
+L’applicazione React funziona con le seguenti opzioni di implementazione dell’AEM. Tutte le distribuzioni richiedono [Sito WKND v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) da installare.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=it)
 + Configurazione locale con [l’SDK di AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it)
-+ [QuickStart per AEM 6.5 SP13+](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it?lang=en#install-local-aem-instances)
+   + Richiede [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
 
 L’applicazione React è progettata per connettersi a un __Pubblicazione AEM__ Tuttavia, può originare il contenuto da AEM Author se l’autenticazione viene fornita nella configurazione dell’applicazione React.
 
@@ -60,7 +59,7 @@ L’applicazione React è progettata per connettersi a un __Pubblicazione AEM__ 
 
    ```plain
    # Server namespace
-   REACT_APP_HOST_URI=http://localhost:4503
+   REACT_APP_HOST_URI=https://publish-p123-e456.adobeaemcloud.com
    
    #AUTH (Choose one method)
    # Authentication methods: 'service-token', 'dev-token', 'basic' or leave blank to use no authentication
@@ -100,43 +99,73 @@ Seguendo le best practice di AEM Headless, l’applicazione React utilizza query
 + `wknd/adventures-all` query persistente, che restituisce tutte le avventure in AEM con un set abbreviato di proprietà. Questa query persistente guida l’elenco di avventure della visualizzazione iniziale.
 
 ```
-# Retrieves a list of all adventures
-{
-    adventureList {
-        items {
-            _path
-            slug
-            title
-            price
-            tripLength
-            primaryImage {
-                ... on ImageRef {
-                _path
-                mimeType
-                width
-                height
-                }
-            }
+# Retrieves a list of all Adventures
+#
+# Optional query variables:
+# - { "offset": 10 }
+# - { "limit": 5 }
+# - { 
+#    "imageFormat": "JPG",
+#    "imageWidth": 1600,
+#    "imageQuality": 90 
+#   }
+query ($offset: Int, $limit: Int, $sort: String, $imageFormat: AssetTransformFormat=JPG, $imageWidth: Int=1200, $imageQuality: Int=80) {
+  adventureList(
+    offset: $offset
+    limit: $limit
+    sort: $sort
+    _assetTransform: {
+      format: $imageFormat
+      width: $imageWidth
+      quality: $imageQuality
+      preferWebp: true
+  }) {
+    items {
+      _path
+      slug
+      title
+      activity
+      price
+      tripLength
+      primaryImage {
+        ... on ImageRef {
+          _path
+          _dynamicUrl
         }
+      }
     }
+  }
 }
 ```
 
 + `wknd/adventure-by-slug` query persistente, che restituisce una singola avventura di `slug` (proprietà personalizzata che identifica in modo univoco un’avventura) con un set completo di proprietà. Questa query persistente attiva le visualizzazioni dei dettagli dell’avventura.
 
 ```
-# Retrieves an adventure Content Fragment based on it's slug
-# Example query variables: 
-# {"slug": "bali-surf-camp"} 
-# Technically returns an adventure list but since the the slug 
-# property is set to be unique in the CF Model, only a single CF is expected
+# Retrieves an Adventure Fragment based on it's unique slug.
+#
+# Required query variables:
+# - {"slug": "bali-surf-camp"}
+#
+# Optional query variables:
+# - { 
+#     "imageFormat": "JPG",
+#     "imageSeoName": "my-adventure",
+#     "imageWidth": 1600,
+#     "imageQuality": 90 
+#   }
+#  
+# This query returns an adventure list but since the the slug property is set to be unique in the Content Fragment Model, only a single Content Fragment is expected.
 
-query($slug: String!) {
-  adventureList(filter: {
-        slug: {
-          _expressions: [ { value: $slug } ]
-        }
-      }) {
+query ($slug: String!, $imageFormat:AssetTransformFormat=JPG, $imageSeoName: String, $imageWidth: Int=1200, $imageQuality: Int=80) {
+  adventureList(
+    filter: {slug: {_expressions: [{value: $slug}]}}
+    _assetTransform: {
+      format: $imageFormat
+      seoName: $imageSeoName
+      width: $imageWidth
+      quality: $imageQuality
+      preferWebp: true
+  }) {
     items {
       _path
       title
@@ -151,22 +180,22 @@ query($slug: String!) {
       primaryImage {
         ... on ImageRef {
           _path
-          mimeType
-          width
-          height
+          _dynamicUrl
         }
       }
       description {
         json
         plaintext
+        html
       }
       itinerary {
         json
         plaintext
+        html
       }
     }
     _references {
-      ...on AdventureModel {
+      ... on AdventureModel {
         _path
         slug
         title
@@ -180,7 +209,7 @@ query($slug: String!) {
 
 ### Esegui query persistente GraphQL
 
-Le query persistenti dell’AEM vengono eseguite tramite HTTP GET, pertanto [Client AEM headless per JavaScript](https://github.com/adobe/aem-headless-client-js) viene utilizzato per [eseguire le query GraphQL persistenti;](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) contro l’AEM e carica il contenuto dell’avventura nell’app.
+Le query persistenti dell’AEM vengono eseguite su HTTP GET, pertanto [Client AEM headless per JavaScript](https://github.com/adobe/aem-headless-client-js) viene utilizzato per [eseguire le query GraphQL persistenti;](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) contro l’AEM e carica il contenuto dell’avventura nell’app.
 
 A ogni query persistente corrisponde un React [useEffect](https://reactjs.org/docs/hooks-effect.html) agganciare `src/api/usePersistedQueries.js`, che chiama in modo asincrono l’endpoint per query persistenti HTTP AEM GET e restituisce i dati relativi all’avventura.
 
@@ -196,18 +225,20 @@ Ogni funzione a sua volta richiama il `aemHeadlessClient.runPersistedQuery(...)`
  *
  * @returns an array of Adventure JSON objects, and array of errors
  */
-export function useAdventuresByActivity(adventureActivity) {
+export function useAdventuresByActivity(adventureActivity, params = {}) {
   ...
+  let queryVariables = params;
+
   // If an activity is provided (i.e "Camping", "Hiking"...) call wknd-shared/adventures-by-activity query
   if (adventureActivity) {
     // The key is 'activity' as defined in the persisted query
-    const queryParameters = { activity: adventureActivity };
+    queryVariables = { ...queryVariables, activity: adventureActivity };
 
     // Call the AEM GraphQL persisted query named "wknd-shared/adventures-by-activity" with parameters
-    response = await fetchPersistedQuery("wknd-shared/adventures-by-activity", queryParameters);
+    response = await fetchPersistedQuery("wknd-shared/adventures-by-activity", queryVariables);
   } else {
     // Else call the AEM GraphQL persisted query named "wknd-shared/adventures-all" to get all adventures
-    response = await fetchPersistedQuery("wknd-shared/adventures-all");
+    response = await fetchPersistedQuery("wknd-shared/adventures-all", queryVariables);
   }
   
   ... 
@@ -252,17 +283,17 @@ L’applicazione React utilizza due visualizzazioni per presentare i dati dell�
 
 + `src/components/Adventures.js`
 
-   Richiama `getAdventuresByActivity(..)` da `src/api/usePersistedQueries.js` e mostra le avventure restituite in un elenco.
+  Richiama `getAdventuresByActivity(..)` da `src/api/usePersistedQueries.js` e mostra le avventure restituite in un elenco.
 
 + `src/components/AdventureDetail.js`
 
-   Richiama `getAdventureBySlug(..)` utilizzando `slug` param passato tramite la selezione di avventura sul `Adventures` e visualizza i dettagli di una singola avventura.
+  Richiama `getAdventureBySlug(..)` utilizzando `slug` param passato tramite la selezione di avventura sul `Adventures` e visualizza i dettagli di una singola avventura.
 
 ### Variabili di ambiente
 
 Diversi [variabili di ambiente](https://create-react-app.dev/docs/adding-custom-environment-variables) sono utilizzati per connettersi a un ambiente AEM. Il valore predefinito si connette a AEM Publish in esecuzione il `http://localhost:4503`. Aggiornare il `.env.development` file, per modificare la connessione AEM:
 
-+ `REACT_APP_HOST_URI=http://localhost:4502`: impostato sull’host di destinazione AEM
++ `REACT_APP_HOST_URI=https://publish-p123-e456.adobeaemcloud.com`: impostato sull’host di destinazione AEM
 + `REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json`: imposta il percorso dell’endpoint GraphQL. Questa app React non la utilizza, in quanto utilizza solo query persistenti.
 + `REACT_APP_AUTH_METHOD=`: metodo di autenticazione preferito. Facoltativo, per impostazione predefinita non viene utilizzata alcuna autenticazione.
    + `service-token`: utilizza le credenziali del servizio per ottenere un token di accesso su AEM as a Cloud Service
@@ -281,6 +312,4 @@ Se ci si connette a un ambiente di authoring AEM, il [è necessario configurare 
 
 ### Condivisione delle risorse tra le origini (CORS)
 
-Questa applicazione React si basa su una configurazione CORS basata su AEM in esecuzione nell’ambiente AEM di destinazione e presuppone che l’app React sia in esecuzione su `http://localhost:3000` in modalità di sviluppo. Il [Configurazione CORS](https://github.com/adobe/aem-guides-wknd/blob/main/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author/com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql.cfg.json) fa parte del [Sito WKND](https://github.com/adobe/aem-guides-wknd).
-
-![Configurazione CORS](assets/react-app/cross-origin-resource-sharing-configuration.png)
+Questa applicazione React si basa su una configurazione CORS basata su AEM in esecuzione nell’ambiente AEM di destinazione e presuppone che l’app React sia in esecuzione su `http://localhost:3000` in modalità di sviluppo.  Rivedi[Documentazione sull’implementazione di AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa.html) per ulteriori informazioni su come configurare CORS.

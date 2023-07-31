@@ -8,10 +8,11 @@ role: Developer
 level: Beginner
 kt: 10798
 thumbnail: KT-10798.jpg
+last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: 39b21a29-a75f-4a6c-ba82-377cf5cc1726
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '472'
 ht-degree: 5%
 
 ---
@@ -33,7 +34,7 @@ I seguenti strumenti devono essere installati localmente:
 
 ## Requisiti AEM
 
-L’applicazione Node.js funziona con le seguenti opzioni di distribuzione AEM. Tutte le distribuzioni richiedono [Sito WKND v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases) da installare.
+L’applicazione Node.js funziona con le seguenti opzioni di distribuzione AEM. Tutte le distribuzioni richiedono [Sito WKND v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) da installare.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=it)
 + Facoltativamente [credenziali del servizio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) se si autorizzano richieste (ad esempio, connessione al servizio AEM Author).
@@ -88,25 +89,42 @@ Seguendo le best practice di AEM Headless, l’applicazione utilizza le query pe
 + `wknd/adventures-all` query persistente, che restituisce tutte le avventure in AEM con un set abbreviato di proprietà. Questa query persistente guida l’elenco di avventure della visualizzazione iniziale.
 
 ```
-# Retrieves a list of all adventures
-{
-    adventureList {
-        items {
-            _path
-            slug
-            title
-            price
-            tripLength
-            primaryImage {
-                ... on ImageRef {
-                _path
-                mimeType
-                width
-                height
-                }
-            }
+# Retrieves a list of all Adventures
+#
+# Optional query variables:
+# - { "offset": 10 }
+# - { "limit": 5 }
+# - { 
+#    "imageFormat": "JPG",
+#    "imageWidth": 1600,
+#    "imageQuality": 90 
+#   }
+query ($offset: Int, $limit: Int, $sort: String, $imageFormat: AssetTransformFormat=JPG, $imageWidth: Int=1200, $imageQuality: Int=80) {
+  adventureList(
+    offset: $offset
+    limit: $limit
+    sort: $sort
+    _assetTransform: {
+      format: $imageFormat
+      width: $imageWidth
+      quality: $imageQuality
+      preferWebp: true
+  }) {
+    items {
+      _path
+      slug
+      title
+      activity
+      price
+      tripLength
+      primaryImage {
+        ... on ImageRef {
+          _path
+          _dynamicUrl
         }
+      }
     }
+  }
 }
 ```
 
@@ -143,7 +161,7 @@ async function run() {
 
 ### Esegui query persistente GraphQL
 
-Le query persistenti dell’AEM vengono eseguite tramite HTTP GET, pertanto [Client AEM headless per Node.js](https://github.com/adobe/aem-headless-client-nodejs) viene utilizzato per [eseguire le query GraphQL persistenti;](https://github.com/adobe/aem-headless-client-nodejs#within-asyncawait) contro l’AEM e recupera il contenuto dell’avventura.
+Le query persistenti dell’AEM vengono eseguite su HTTP GET, pertanto [Client AEM headless per Node.js](https://github.com/adobe/aem-headless-client-nodejs) viene utilizzato per [eseguire le query GraphQL persistenti;](https://github.com/adobe/aem-headless-client-nodejs#within-asyncawait) contro l’AEM e recupera il contenuto dell’avventura.
 
 La query persistente viene richiamata chiamando `aemHeadlessClient.runPersistedQuery(...)`e passando il nome della query GraphQL persistente. Una volta che GraphQL restituisce i dati, trasmettili al `doSomethingWithDataFromAEM(..)` , che stampa i risultati, ma in genere invia i dati a un altro sistema o genera un output in base ai dati recuperati.
 

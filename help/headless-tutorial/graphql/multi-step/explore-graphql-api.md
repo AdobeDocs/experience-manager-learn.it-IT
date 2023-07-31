@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 1%
@@ -391,7 +391,7 @@ In seguito a revisione e verifica, pubblica `GraphQL Endpoint` E `Persisted Quer
 
 ## File di soluzione {#solution-files}
 
-Scarica i contenuti, i modelli e le query persistenti creati negli ultimi tre capitoli: [tutorial-solution-content.zip](assets/explore-graphql-api/tutorial-solution-content.zip)
+Scarica i contenuti, i modelli e le query persistenti creati negli ultimi tre capitoli: [basic-tutorial-solution.content.zip](assets/explore-graphql-api/basic-tutorial-solution.content.zip)
 
 ## Risorse aggiuntive
 
