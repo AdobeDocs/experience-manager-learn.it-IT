@@ -2,7 +2,8 @@
 title: Utilizzare la procedura guidata SSL nell’AEM
 description: Configurazione SSL guidata di Adobe Experience Manager per semplificare la configurazione di un’istanza AEM da eseguire su HTTPS.
 seo-description: Adobe Experience Manager's SSL setup wizard to make it easier to set up an AEM instance to run over HTTPS.
-version: 6.4, 6.5
+version: 6.5, Cloud Service
+jira: KT-13465
 topics: security, operations
 feature: Security
 activity: use
@@ -14,20 +15,19 @@ topic: Security
 role: Developer
 level: Beginner
 exl-id: 4e69e115-12a6-4a57-90da-b91e345c6723
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: f6e9d1f1991abf34765b28e6e05382a58a6203e3
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 0%
+source-wordcount: '447'
+ht-degree: 1%
 
 ---
 
 # Utilizzare la procedura guidata SSL nell’AEM
 
-Configurazione SSL guidata di Adobe Experience Manager per semplificare la configurazione di un’istanza AEM da eseguire su HTTPS.
+Scopri come impostare SSL in Adobe Experience Manager per eseguirlo su HTTPS utilizzando la procedura guidata SSL integrata.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17993?quality=12&learn=on)
 
-Apri __Configurazione SSL guidata__ può essere aperto direttamente passando a __AEM Author > Strumenti > Sicurezza > Configurazione SSL__.
 
 >[!NOTE]
 >
@@ -35,19 +35,63 @@ Apri __Configurazione SSL guidata__ può essere aperto direttamente passando a _
 >
 >I certificati autofirmati devono essere utilizzati solo a scopo di sviluppo.
 
-## Download di chiavi private e certificati autofirmati
+## Utilizzo della Configurazione guidata SSL
 
-Il seguente file zip contiene [!DNL DER] e [!DNL CRT] file necessari per la configurazione di AEM SSL su localhost e destinati esclusivamente allo sviluppo locale.
+Accedi a __AEM Author > Strumenti > Sicurezza > Configurazione SSL__ e aprire __Configurazione SSL guidata__.
+
+![Configurazione SSL guidata](assets/use-the-ssl-wizard/ssl-config-wizard.png)
+
+### Crea credenziali archivio
+
+Per creare un _Archivio chiavi_ associato al `ssl-service` utente di sistema e un _Archivio fonti attendibili_, utilizza __Memorizza credenziali__ passaggio della procedura guidata.
+
+1. Immettere la password e confermarla per __Archivio chiavi__ associato al `ssl-service` utente di sistema.
+1. Immetti la password e conferma la password per il __Archivio fonti attendibili__. Si tratta di un archivio fonti attendibili a livello di sistema e, se è già stato creato, la password immessa viene ignorata.
+
+   ![Configurazione SSL - Memorizza credenziali](assets/use-the-ssl-wizard/store-credentials.png)
+
+### Carica chiave privata e certificato
+
+Per caricare _chiave privata_ e _Certificato SSL_, utilizza __Chiave e certificato__ passaggio della procedura guidata.
+
+In genere, il reparto IT fornisce il certificato e la chiave attendibili della CA, tuttavia è possibile utilizzare il certificato autofirmato per __sviluppo__ e __test__ finalità.
+
+Per creare o scaricare il certificato autofirmato, vedi la [Chiave privata e certificato autofirmati](#self-signed-private-key-and-certificate).
+
+1. Carica __Chiave privata__ nel formato DER (Distinguished Encoding Rules). A differenza di PEM, i file con codifica DER non contengono istruzioni di testo normale come `-----BEGIN CERTIFICATE-----`
+1. Carica il associato __Certificato SSL__ nel `.crt` formato.
+
+   ![Configurazione SSL - Chiave privata e certificato](assets/use-the-ssl-wizard/privatekey-and-certificate.png)
+
+### Aggiorna i dettagli del connettore SSL
+
+Per aggiornare _nome host_ e _porta_ utilizzare il __Connettore SSL__ passaggio della procedura guidata.
+
+1. Aggiornare o verificare __Nome host HTTPS__ , deve corrispondere al valore `Common Name (CN)` dal certificato.
+1. Aggiornare o verificare __Porta HTTPS__ valore.
+
+   ![Configurazione SSL - Dettagli connettore SSL](assets/use-the-ssl-wizard/ssl-connector-details.png)
+
+### Verificare la configurazione SSL
+
+1. Per verificare l’SSL, fai clic su __Vai all’URL HTTPS__ pulsante.
+1. Se utilizzi un certificato con firma autografa, visualizzerai `Your connection is not private` errore.
+
+   ![Configurazione SSL - Verifica AEM tramite HTTPS](assets/use-the-ssl-wizard/verify-aem-over-ssl.png)
+
+## Chiave privata e certificato autofirmati
+
+Il seguente file zip contiene [!DNL DER] e [!DNL CRT] file necessari per la configurazione locale di AEM SSL e destinati esclusivamente allo sviluppo locale.
 
 Il [!DNL DER] e [!DNL CERT] I file vengono forniti per comodità e generati seguendo i passaggi descritti nella sezione Generate Private Key (Genera chiave privata) e Self-Signed Certificate (Certificato autofirmato) di seguito.
 
 Se necessario, la passphrase del certificato è **admin**.
 
-localhost - chiave privata e certificato autofirmato.zip (scadenza: luglio 2028)
+Questo localhost - chiave privata e certificato autofirmato.zip (scade a luglio 2028)
 
 [Scarica il file del certificato](assets/use-the-ssl-wizard/certificate.zip)
 
-## Generazione di chiavi private e certificati autofirmati
+### Generazione di chiavi private e certificati autofirmati
 
 Il video precedente illustra la configurazione e l’impostazione di SSL in un’istanza di authoring AEM utilizzando certificati autofirmati. I seguenti comandi utilizzano [[!DNL OpenSSL]](https://www.openssl.org/) può generare una chiave privata e un certificato da utilizzare nel passaggio 2 della procedura guidata.
 
