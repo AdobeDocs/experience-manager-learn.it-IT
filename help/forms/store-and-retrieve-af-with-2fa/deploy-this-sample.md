@@ -10,9 +10,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: cdfae631-86d7-438f-9baf-afd621802723
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '391'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ In questo esempio si utilizza il database MySQL per memorizzare i dati del modul
 
 ## Crea origine dati
 
-Devi creare un’origine dati denominata **StoreAndRetrieveAfData**. Il codice nel bundle OSGi utilizza questo nome di origine dati
+È necessario creare un’origine dati in pool di connessione Apache Sling denominata **StoreAndRetrieveAfData** che punta allo schema di database creato nel passaggio precedente. Il codice nel bundle OSGi utilizza questo nome di origine dati.
 
 ## Crea modello dati modulo
 
@@ -43,13 +43,13 @@ Creare un account sviluppatore con [Nexmo](https://dashboard.nexmo.com/) per l&#
 
 ## Distribuisci i seguenti bundle OSGi
 
-Distribuisci il bundle che presenta [codice per memorizzare e recuperare dati dal database](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)
+Distribuisci il bundle che presenta [codice per memorizzare e recuperare dati dal database](assets/SaveAndResume.core-1.0.0-SNAPSHOT.jar)
 Scarica e decomprimi il file [development withserviceuser.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip).
 Distribuisci il file DevelopingWithServiceUser.jar utilizzando la console web Felix.
 
 ## Distribuire la libreria client
 
-Nell&#39;esempio vengono utilizzate 2 librerie client. Importa questi [librerie client](assets/client-libraries.zip) nell’AEM.
+Nell&#39;esempio vengono utilizzate 2 librerie client. Importa questi [librerie client](assets/store-af-with-attachments-client-lib.zip) nell’AEM.
 
 ## Importare il modello di modulo adattivo personalizzato
 
@@ -59,7 +59,7 @@ I moduli di esempio utilizzati in questa demo sono basati su un modello personal
 
 I 2 moduli che costituiscono questo campione devono essere importati nell’AEM. I moduli di esempio possono essere [scaricato da qui](assets/sample-forms.zip)
 
-Apri [ModuloAccount](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) in modalità di modifica. Specifica i valori Chiave API e Segreto API nei campi appropriati del modulo adattivo.
+Apri [ModuloAccount](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) in modalità di modifica. Specifica i valori Chiave API vonage e Segreto API nei campi appropriati del modulo adattivo.
 
 ## Testare la soluzione
 
