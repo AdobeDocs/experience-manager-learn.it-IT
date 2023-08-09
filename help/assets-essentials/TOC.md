@@ -46,4 +46,4 @@ ht-degree: 24%
 
 + [Integrazione con Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=it)
 
-+ [Documentazione](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html).
++ [Documentazione](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html)
