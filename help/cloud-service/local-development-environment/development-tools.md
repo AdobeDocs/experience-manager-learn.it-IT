@@ -10,9 +10,9 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
 workflow-type: tm+mt
-source-wordcount: '1498'
+source-wordcount: '1484'
 ht-degree: 7%
 
 ---
@@ -35,9 +35,29 @@ Tieni presente che `~` viene utilizzato come abbreviazione per la directory uten
 Experience Manager è un’applicazione Java e pertanto richiede SDK Java per supportare lo sviluppo e l’SDK as a Cloud Service AEM.
 
 1. [Scarica e installa l’SDK Java 11 più recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-1. Verifica che Java 11 SDK sia installato eseguendo il comando:
-   + Windows: `java -version`
-   + macOS/Linux: `java --version`
+1. Verifica che l’SDK di Java 11 Oracle sia installato eseguendo il comando:
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java --version
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -version
+```
+
+>[!TAB Linux]
+
+```shell
+$ java --version
+```
+
+>[!ENDTABS]
 
 ![Java](./assets/development-tools/java.png)
 
@@ -65,14 +85,21 @@ Se utilizzi Homebrew, segui la __Installa con Homebrew__ nelle sezioni seguenti.
 
 [Git](https://git-scm.com/) è il sistema di gestione del controllo del codice sorgente utilizzato da [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/source-code-repository.html), e pertanto è necessario per lo sviluppo.
 
-+ Installare Git utilizzando Homebrew
-   1. Apri il terminale/prompt dei comandi
-   1. Esegui il comando: `brew install git`
-   1. Verifica che Git sia installato utilizzando il comando: `git --version`
-+ In alternativa, scaricare e installare Git (macOS, Linux o Windows)
-   1. [Scaricare e installare Git](https://git-scm.com/downloads)
-   1. Apri il terminale/prompt dei comandi
-   1. Verifica che Git sia installato utilizzando il comando: `git --version`
+>[!BEGINTABS]
+
+>[!TAB Installare Git utilizzando Homebrew]
+
+1. Apri il terminale/prompt dei comandi
+1. Esegui il comando: `$ brew install git`
+1. Verifica che Git sia installato utilizzando il comando: `$ git --version`
+
+>[!TAB Scaricare e installare Git]
+
+1. [Scaricare e installare Git](https://git-scm.com/downloads)
+1. Apri il terminale/prompt dei comandi
+1. Verifica che Git sia installato utilizzando il comando: `$ git --version`
+
+>[!ENDTABS]
 
 ![Git](./assets/development-tools/git.png)
 
@@ -80,16 +107,23 @@ Se utilizzi Homebrew, segui la __Installa con Homebrew__ nelle sezioni seguenti.
 
 [Node.js](https://nodejs.org) è un ambiente runtime JavaScript utilizzato per lavorare con le risorse front-end di un progetto AEM __ui.frontend__ sottoprogetto. Node.js è distribuito con [npm](https://www.npmjs.com/), è il gestore di pacchetti di fatto Node.js, utilizzato per gestire le dipendenze JavaScript.
 
-+ Installare Node.js utilizzando Homebrew
-   1. Apri il terminale/prompt dei comandi
-   1. Esegui il comando: `brew install node`
-   1. Verifica che Node.js sia installato utilizzando il comando: `node -v`
-   1. Verificare che npm sia installato, utilizzando il comando: `npm -v`
-+ Oppure, scarica e installa Node.js (macOS, Linux o Windows)
-   1. [Scaricare e installare Node.js](https://nodejs.org/it/download/)
-   1. Apri il terminale/prompt dei comandi
-   1. Verifica che Node.js sia installato utilizzando il comando: `node -v`
-   1. Verificare che npm sia installato, utilizzando il comando: `npm -v`
+>[!BEGINTABS]
+
+>[!TAB Installare Node.js utilizzando Homebrew]
+
+1. Apri il terminale/prompt dei comandi
+1. Esegui il comando: `$ brew install node`
+1. Verifica che Node.js sia installato utilizzando il comando: `$ node -v`
+1. Verificare che npm sia installato, utilizzando il comando: `$ npm -v`
+
+>[!TAB Scaricare e installare Node.js]
+
+1. [Scaricare e installare Node.js](https://nodejs.org/it/download/)
+2. Apri il terminale/prompt dei comandi
+3. Verifica che Node.js sia installato utilizzando il comando: `$ node -v`
+4. Verificare che npm sia installato, utilizzando il comando: `$ npm -v`
+
+>[!ENDTABS]
 
 ![Node.js e npm](./assets/development-tools/nodejs-and-npm.png)
 
@@ -103,15 +137,23 @@ Se utilizzi Homebrew, segui la __Installa con Homebrew__ nelle sezioni seguenti.
 
 Apache Maven è lo strumento da riga di comando Java open-source utilizzato per creare progetti AEM generati dall’archetipo Maven del progetto AEM. Tutte le principali IDE ([IDEA IntelliJ](https://www.jetbrains.com/idea/), [Codice di Visual Studio](https://code.visualstudio.com/), [Eclipse](https://www.eclipse.org/), ecc.) dispongono del supporto Maven integrato.
 
-+ Installare Maven utilizzando Homebrew
-   1. Apri il terminale/prompt dei comandi
-   1. Esegui il comando: `brew install maven`
-   1. Verifica che Maven sia installato, utilizzando il comando: `mvn -v`
-+ Oppure, scarica e installa Maven (macOS, Linux o Windows)
-   1. [Scarica Maven](https://maven.apache.org/download.cgi)
-   1. [Installare Maven](https://maven.apache.org/install.html)
-   1. Apri il terminale/prompt dei comandi
-   1. Verifica che Maven sia installato, utilizzando il comando: `mvn -v`
+
+>[!BEGINTABS]
+
+>[!TAB Installare Maven utilizzando Homebrew]
+
+1. Apri il terminale/prompt dei comandi
+1. Esegui il comando: `$ brew install maven`
+1. Verifica che Maven sia installato, utilizzando il comando: `$ mvn -v`
+
+>[!TAB Scaricare e installare Maven]
+
+1. [Scarica Maven](https://maven.apache.org/download.cgi)
+1. [Installare Maven](https://maven.apache.org/install.html)
+1. Apri il terminale/prompt dei comandi
+1. Verifica che Maven sia installato, utilizzando il comando: `$ mvn -v`
+
+>[!ENDTABS]
 
 ![Maven](./assets/development-tools/maven.png)
 
@@ -165,7 +207,6 @@ Il plug-in AEM Rapid Development Environment consente all&#39;interfaccia CLI de
 Il plug-in Adobe I/O Cloud Manager consente all&#39;interfaccia CLI dell&#39;aio di generare ed eseguire processi di lavoro Asset compute tramite `aio asset-compute` comando.
 
 1. Esegui `aio plugins:install @adobe/aio-cli-plugin-asset-compute` per installare [plug-in di Asset compute aio](https://github.com/adobe/aio-cli-plugin-asset-compute).
-
 
 ## Configurare l’IDE di sviluppo
 

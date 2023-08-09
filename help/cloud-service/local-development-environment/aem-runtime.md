@@ -10,10 +10,10 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
 workflow-type: tm+mt
-source-wordcount: '1800'
-ht-degree: 9%
+source-wordcount: '1792'
+ht-degree: 10%
 
 ---
 
@@ -32,12 +32,32 @@ Tieni presente che `~` viene utilizzato come abbreviazione per la directory uten
 
 ## Installare Java
 
-L’Experience Manager è un’applicazione Java e quindi richiede l’SDK Java per supportare gli strumenti di sviluppo.
+Experience Manager è un’applicazione Java e pertanto richiede Oracle Java SDK per supportare gli strumenti di sviluppo.
 
 1. [Scarica e installa la versione più recente di Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-1. Verifica che Java 11 SDK sia installato eseguendo il comando:
-   + Windows:`java -version`
-   + macOS/Linux: `java --version`
+1. Verifica che l’SDK di Java 11 Oracle sia installato eseguendo il comando:
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java --version
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -version
+```
+
+>[!TAB Linux]
+
+```shell
+$ java --version
+```
+
+>[!ENDTABS]
 
 ![Java](./assets/aem-runtime/java.png)
 
@@ -69,7 +89,18 @@ Il servizio di authoring AEM locale offre agli sviluppatori un’esperienza loca
    Tu *non può* avvia AEM come Cloud Service Quickstart Jar [facendo doppio clic](#troubleshooting-double-click).
 1. Accedi al servizio AEM Author locale all’indirizzo [http://localhost:4502](Http://localhost:4502) in un browser Web
 
-Windows:
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ mkdir -p ~/aem-sdk/author
+$ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
+$ cd ~/aem-sdk/author
+$ java -jar aem-author-p4502.jar
+```
+
+>[!TAB Windows]
 
 ```shell
 $ mkdir -p c:\Users\<My User>\aem-sdk\author
@@ -78,7 +109,7 @@ $ cd c:\Users\<My User>\aem-sdk\author
 $ java -jar aem-author-p4502.jar
 ```
 
-macOS/Linux:
+>[!TAB Linux]
 
 ```shell
 $ mkdir -p ~/aem-sdk/author
@@ -86,6 +117,9 @@ $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
 $ cd ~/aem-sdk/author
 $ java -jar aem-author-p4502.jar
 ```
+
+>[!ENDTABS]
+
 
 ## Configurare il servizio AEM Publish locale
 
@@ -100,16 +134,9 @@ Il servizio AEM Publish locale offre agli sviluppatori l’esperienza locale che
    Tu *non può* avvia AEM come Cloud Service Quickstart Jar [facendo doppio clic](#troubleshooting-double-click).
 1. Accedi al servizio di pubblicazione AEM locale all’indirizzo [http://localhost:4503](Http://localhost:4503) in un browser Web
 
-Windows:
+>[!BEGINTABS]
 
-```shell
-$ mkdir -p c:\Users\<My User>\aem-sdk\publish
-$ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\publish\aem-publish-p4503.jar
-$ cd c:\Users\<My User>\aem-sdk\publish
-$ java -jar aem-publish-p4503.jar
-```
-
-macOS/Linux:
+>[!TAB macOS]
 
 ```shell
 $ mkdir -p ~/aem-sdk/publish
@@ -118,9 +145,35 @@ $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
 ```
 
+>[!TAB Windows]
+
+```shell
+$ mkdir -p c:\Users\<My User>\aem-sdk\publish
+$ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\publish\aem-publish-p4503.jar
+$ cd c:\Users\<My User>\aem-sdk\publish
+$ java -jar aem-publish-p4503.jar
+```
+
+>[!TAB Linux]
+
+```shell
+$ mkdir -p ~/aem-sdk/publish
+$ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
+$ cd ~/aem-sdk/publish
+$ java -jar aem-publish-p4503.jar
+```
+
+>[!ENDTABS]
+
+
 ## Configurare i servizi AEM locali in modalità prerelease
 
 Il runtime AEM locale può essere avviato in [modalità prerelease](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it) consentire a uno sviluppatore di utilizzare le funzioni della versione successiva dell’AEM as a Cloud Service. La versione prerelease è abilitata trasmettendo il `-r prerelease` discussione sul primo avvio del runtime locale dell’AEM. Può essere utilizzato con i servizi AEM Author e AEM Publish locali.
+
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
 
 ```shell
 # For AEM Author service in prerelease mode
@@ -129,6 +182,28 @@ $ java -jar aem-author-p4502.jar -r prerelease
 # For AEM Publish service in prerelease mode
 $ java -jar aem-publish-p4503.jar -r prerelease
 ```
+
+>[!TAB Windows]
+
+```shell
+# For AEM Author service in prerelease mode
+$ java -jar aem-author-p4502.jar -r prerelease
+
+# For AEM Publish service in prerelease mode
+$ java -jar aem-publish-p4503.jar -r prerelease
+```
+
+>[!TAB Linux]
+
+```shell
+# For AEM Author service in prerelease mode
+$ java -jar aem-author-p4502.jar -r prerelease
+
+# For AEM Publish service in prerelease mode
+$ java -jar aem-publish-p4503.jar -r prerelease
+```
+
+>[!ENDTABS]
 
 ## Simula distribuzione contenuto {#content-distribution}
 
@@ -209,7 +284,7 @@ Aggiorna l’SDK dell’AEM almeno mensilmente l’ultimo giovedì di ogni mese,
 
 L’aggiornamento dell’SDK dell’AEM crea effettivamente un nuovo runtime dell’AEM, incluso un nuovo archivio, il che significa che tutte le modifiche apportate a un precedente archivio dell’SDK dell’AEM vengono perse. Di seguito sono riportate alcune valide strategie per contribuire a mantenere contenuti permanenti tra gli aggiornamenti dell’SDK AEM e possono essere utilizzate in modo discreto o insieme:
 
-1. Crea un pacchetto di contenuti dedicato a contenere contenuti di &quot;esempio&quot; per aiutarti nello sviluppo e mantienilo in Git. Tutti i contenuti che devono essere mantenuti tramite gli aggiornamenti dell’SDK AEM verranno mantenuti in questo pacchetto e ridistribuiti dopo l’aggiornamento dell’SDK AEM.
+1. Crea un pacchetto di contenuti dedicato a contenere contenuti di &quot;esempio&quot; per facilitare lo sviluppo e mantienilo in Git. Tutti i contenuti che devono essere mantenuti tramite gli aggiornamenti dell’SDK AEM verranno mantenuti in questo pacchetto e ridistribuiti dopo l’aggiornamento dell’SDK AEM.
 1. Utilizzare [oak-upgrade](https://jackrabbit.apache.org/oak/docs/migration.html) con `includepaths` per copiare il contenuto dal precedente archivio AEM SDK al nuovo archivio AEM SDK.
 1. Esegui il backup di qualsiasi contenuto utilizzando Gestione pacchetti AEM e pacchetti di contenuti nell’SDK AEM precedente e reinstallali nel nuovo SDK AEM.
 
@@ -227,11 +302,51 @@ Questo perché Quickstart Jar as a Cloud Service dall’AEM non supporta il dopp
 
 Per avviare il servizio AEM Author: `cd` nella directory contenente il file Jar Quickstart ed esegui il comando:
 
-`$ java -jar aem-author-p4502.jar`
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java -jar aem-author-p4502.jar
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -jar aem-author-p4502.jar
+```
+
+>[!TAB Linux]
+
+```shell
+$ java -jar aem-author-p4502.jar
+```
+
+>[!ENDTABS]
 
 oppure, per avviare il servizio AEM Publish, `cd` nella directory contenente il file Jar Quickstart ed esegui il comando:
 
-`$ java -jar aem-publish-p4503.jar`
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java -jar aem-author-p4503.jar
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -jar aem-author-p4503.jar
+```
+
+>[!TAB Linux]
+
+```shell
+$ java -jar aem-author-p4503.jar
+```
+
+>[!ENDTABS]
 
 ### L’avvio del file JAR Quickstart dalla riga di comando si interrompe immediatamente{#troubleshooting-java-8}
 
@@ -249,12 +364,30 @@ Quickstart: aborting
 ```
 
 Questo perché AEM as a Cloud Service richiede Java SDK 11 e stai eseguendo una versione diversa, molto probabilmente Java 8. Per risolvere il problema, scaricare e installare [Oracle Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14).
-Una volta installato Java SDK 11, verifica che si tratti della versione attiva eseguendo quanto segue dalla riga di comando.
 
-Una volta installato l’SDK Java 11, verifica che si tratti della versione attiva eseguendo il comando dalla riga di comando:
+Una volta installato l’SDK Oracle Java 11, verifica che si tratti della versione attiva eseguendo il comando dalla riga di comando:
 
-+ Windows: `java -version`
-+ macOS/Linux: `java --version`
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java --version
+```
+
+>[!TAB Windows]
+
+```shell
+$ java -version
+```
+
+>[!TAB Linux]
+
+```shell
+$ java --version
+```
+
+>[!ENDTABS]
 
 ## Risorse aggiuntive
 
