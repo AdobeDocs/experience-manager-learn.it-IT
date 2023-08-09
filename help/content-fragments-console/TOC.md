@@ -32,4 +32,4 @@ ht-degree: 25%
    + [Riferimenti a contenuti non relativi a risorse](editor/non-asset-content-references.md)
    + [Confronto varianti editor Rich Text](editor/rte-variant-compare.md)
 + [Estensibilità](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/extensibility/content-fragments/overview.html)
-+ [Documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=it).
++ [Documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=it)
