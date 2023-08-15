@@ -10,7 +10,7 @@ doc-type: Code Sample
 last-substantial-update: 2023-07-14T00:00:00Z
 jira: KT-13651
 thumbnail: KT-13651.jpeg
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 38db146129ceab83af50bf97cd6eb2d7179adbbf
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Scopri come generare e aggiungere token AEM CSRF alle richieste consentite di POST, PUT ed Delete all’AEM per gli utenti autenticati.
 
-AEM richiede un token CSRF valido per l’invio di __autenticato__ __POST__, __PUT o __DELETE__ Richieste HTTP ai servizi Author e Publish di AEM.
+AEM richiede un token CSRF valido per l’invio di __autenticato__ __POST__, __PUT o __DELETE__ Richieste HTTP ai servizi di authoring e pubblicazione dell’AEM.
 
 Il token CSRF non è richiesto per __GET__ richieste, oppure __anonimo__ richieste.
 
@@ -61,7 +61,7 @@ document.querySelector('form').addEventListener('submit', async (event) => {
     let csrfTokenInput = form.querySelector('input[name=":cq_csrf_token"]');
     if (!csrfTokenInput?.value) {
         // If the form does not have a CSRF token input, add one.
-        form.insertAdjacentHTML('afterend', `<input type="hidden" name=":cq_csrf_token" value="${json.token}">`);
+        form.insertAdjacentHTML('beforeend', `<input type="hidden" name=":cq_csrf_token" value="${json.token}">`);
     } else {
         // If the form already has a CSRF token input, update the value.
         csrfTokenInput.value = json.token;
@@ -101,7 +101,7 @@ await fetch('/path/to/aem/endpoint', {
 
 ## Configurazione del Dispatcher
 
-Quando si utilizzano i token CSRF nel servizio AEM Publish, è necessario aggiornare la configurazione di Dispatcher per consentire le richieste di GET all’endpoint del token CSRF. La seguente configurazione consente le richieste GET all’endpoint token CSRF nel servizio AEM Publish. Se questa configurazione non viene aggiunta, l’endpoint del token CSRF restituisce una risposta 404 Not Found.
+Quando si utilizzano token CSRF nel servizio di pubblicazione AEM, è necessario aggiornare la configurazione di Dispatcher per consentire le richieste di GET all’endpoint del token CSRF. La seguente configurazione consente le richieste GET all’endpoint del token CSRF nel servizio di pubblicazione AEM. Se questa configurazione non viene aggiunta, l’endpoint del token CSRF restituisce una risposta 404 Not Found.
 
 * `dispatcher/src/conf.dispatcher.d/filters/filters.any`
 
