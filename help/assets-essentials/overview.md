@@ -5,35 +5,35 @@ recommendations: disable
 last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: aem-assets-essentials-videos.jpg
 exl-id: 6a8534fa-bc99-438b-9107-2a428e06619c
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 137f7166a6a10ecd95a85114b27a1a3bd608b965
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '134'
 ht-degree: 14%
 
 ---
 
-# Video su Assets Essentials
+# Video sugli Assets Essentials
 
 ![Assets Essentials](./assets/overview/hero.png)
 
 Experience Manager Assets Essentials offre un’interfaccia utente semplificata per una gestione semplificata delle risorse e la collaborazione.
 
-Guarda questi video su come utilizzare Assets Essentials per gestire le tue risorse e come integrarlo con Adobe Percorsi Orchestrator.
+Guarda questi video su come utilizzare gli Assets Essentials per gestire le tue risorse e come integrarli con Adobe Workfront e Adobe Percorsi Orchestrator.
 
-## Ulteriori informazioni su Assets Essentials
+## Ulteriori informazioni sugli Assets Essentials
 
 <table>
 <td>
    <a href="./basics/managing.md">
-   <img alt="Guida introduttiva ad Assets Essentials" src="./assets/overview/getting-started.png" />
+   <img alt="Introduzione agli Assets Essentials" src="./assets/overview/getting-started.png" />
    </a>
    <div>
       <a href="./basics/managing.md">
-      <strong>Guida introduttiva ad Assets Essentials</strong>
+      <strong>Introduzione agli Assets Essentials</strong>
       </a>
    </div>
    <p>
-      <em>Scopri le nozioni di base di Assets Essentials.</em>
+      <em>Scopri le nozioni di base sugli Assets Essentials.</em>
    </p>
 </td>
 <td>
@@ -42,11 +42,11 @@ Guarda questi video su come utilizzare Assets Essentials per gestire le tue riso
    </a>
    <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html">
-      <strong>Documentazione di Assets Essentials</strong>
+      <strong>Documentazione sugli Assets Essentials</strong>
       </a>
    </div>
    <p>
-      <em>Consulta la documentazione del prodotto Assets Essentials.</em>
+      <em>Consulta la documentazione degli Assets Essentials.</em>
    <p>
 </td>
 <td>
@@ -59,7 +59,7 @@ Guarda questi video su come utilizzare Assets Essentials per gestire le tue riso
       </a>
    </div>
    <p>
-      <em>Scopri come Assets Essentials si integra con Adobe Journey Optimizer.</em>
+      <em>Scopri come gli Assets Essentials si integrano con Adobe Journey Optimizer.</em>
    <p>
 </td>
 </table>
