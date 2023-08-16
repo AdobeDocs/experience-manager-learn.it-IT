@@ -8,9 +8,9 @@ breadcrumb-title: Tutorial su AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: cc24ebca488ea286e8a4605edfb39420c1c10022
+source-git-commit: 17f6148ce6f897052d9d13f23e3f1792646eb958
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1838'
 ht-degree: 2%
 
 ---
@@ -46,6 +46,7 @@ ht-degree: 2%
    + [Elenchi a discesa a cascata](some-useful-integrations/geonames-org.md)
    + [Integrare con ServiceNow](some-useful-integrations/service-now.md)
    + [Inviare messaggi di posta elettronica con SendGrid](some-useful-integrations/send-grid.md)
+   + [Archivia dati modulo in Azure Storage](some-useful-integrations/store-form-data-in-azure-storage.md)
 + Creazione del bundle OSGi {#creating-your-first-osgi-bundle}
    + [1 - Configurare l’ambiente](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [2 - Creare il servizio OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
