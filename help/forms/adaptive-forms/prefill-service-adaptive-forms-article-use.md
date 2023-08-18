@@ -8,9 +8,9 @@ role: Developer
 level: Intermediate
 exl-id: f2c324a3-cbfa-4942-b3bd-dc47d8a3f7b5
 last-substantial-update: 2021-11-27T00:00:00Z
-source-git-commit: 381812397fa7d15f6ee34ef85ddf0aa0acc0af42
+source-git-commit: cf37afeb9bea65b540c9cfde75070d4106a01976
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Per precompilare un modulo adattivo utilizzando il servizio di precompilazione, 
 Nel frammento di codice riportato di seguito è disponibile una classe che implementa l&#39;interfaccia DataXMLProvider. Possiamo accedere all’utente connesso e quindi recuperare le informazioni del profilo dell’utente connesso. Quindi creiamo un documento XML con un elemento del nodo principale denominato &quot;data&quot; e aggiungiamo gli elementi appropriati a questo nodo di dati. Una volta costruito il documento XML, viene restituito il flusso di input del documento XML.
 
 Questa classe viene quindi creata in bundle OSGi e implementata in AEM. Una volta distribuito il bundle, questo servizio di precompilazione è disponibile per essere utilizzato come servizio di precompilazione del modulo adattivo.
+
+>[!NOTE]
+>
+>Puoi precompilare il modulo utilizzando i dati xml o json utilizzando l’approccio elencato in questo articolo .
 
 ```java
 package com.aem.prefill.core;
