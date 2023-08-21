@@ -3,7 +3,7 @@ title: Utilizzare la procedura guidata SSL nell’AEM
 description: Configurazione SSL guidata di Adobe Experience Manager per semplificare la configurazione di un’istanza AEM da eseguire su HTTPS.
 seo-description: Adobe Experience Manager's SSL setup wizard to make it easier to set up an AEM instance to run over HTTPS.
 version: 6.5, Cloud Service
-jira: KT-13465
+jira: KT-13839
 topics: security, operations
 feature: Security
 activity: use
@@ -15,7 +15,8 @@ topic: Security
 role: Developer
 level: Beginner
 exl-id: 4e69e115-12a6-4a57-90da-b91e345c6723
-source-git-commit: f6e9d1f1991abf34765b28e6e05382a58a6203e3
+last-substantial-update: 2023-08-08T00:00:00Z
+source-git-commit: 1a8e3f37554f98c1366a1a06cb4a7b867866dd1b
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 1%
@@ -37,7 +38,7 @@ Scopri come impostare SSL in Adobe Experience Manager per eseguirlo su HTTPS uti
 
 ## Utilizzo della Configurazione guidata SSL
 
-Accedi a __AEM Author > Strumenti > Sicurezza > Configurazione SSL__ e aprire __Configurazione SSL guidata__.
+Accedi a __AEM Author > Tools > Security > SSL Configuration (Creazione > Strumenti > Sicurezza > Configurazione SSL)__ e aprire __Configurazione SSL guidata__.
 
 ![Configurazione SSL guidata](assets/use-the-ssl-wizard/ssl-config-wizard.png)
 
