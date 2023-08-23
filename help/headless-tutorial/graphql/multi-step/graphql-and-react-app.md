@@ -1,6 +1,6 @@
 ---
 title: Creare un’app React che interroga l’AEM utilizzando l’API GraphQL - Guida introduttiva di AEM Headless - GraphQL
-description: Introduzione ad Adobe Experience Manager (AEM) e GraphQL. Crea un’app React che recupera contenuti/dati dall’API GraphQL dell’AEM. Scopri anche come viene utilizzato l’SDK JS dell’AEM headless.
+description: Introduzione a Adobe Experience Manager (AEM) e GraphQL. Crea un’app React che recupera contenuti/dati dall’API GraphQL dell’AEM. Scopri anche come viene utilizzato l’SDK JS dell’AEM headless.
 version: Cloud Service
 mini-toc-levels: 1
 kt: 6716
@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
+source-git-commit: 65244bf81666c20fd5d9d804ad8ea97df8b83d9f
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1218'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,7 @@ Per ottenere l’app React:
    >
    > Assicurati di aver pubblicato la configurazione del progetto, i modelli per frammenti di contenuto, i frammenti di contenuto creati, gli endpoint di GraphQL e le query persistenti dei passaggi precedenti.
    >
-   > Se hai eseguito i passaggi precedenti sull’SDK di AEM Author locale, puoi puntare a `http://localhost:4502` e `REACT_APP_AUTH_METHOD`valore di a `basic`.
+   > Se hai eseguito i passaggi precedenti sull’SDK dell’AEM Author locale, puoi puntare a `http://localhost:4502` e `REACT_APP_AUTH_METHOD`valore di a `basic`.
 
 
 1. Dalla riga di comando, vai al `aem-guides-wknd-graphql/basic-tutorial` cartella
@@ -490,6 +490,10 @@ Una volta completato, selezionando il nome di una persona nella vista Team, vien
 
 Rivedere l’app [http://localhost:3000/](Http://localhost:3000/) e fai clic su _Membri_ collegamenti. Inoltre, puoi aggiungere più team e/o membri al team Alpha aggiungendo Frammenti di contenuto all’AEM.
 
+>[!IMPORTANT]
+>
+>Per verificare le modifiche apportate all’implementazione o se non riesci a far funzionare l’app dopo le modifiche di cui sopra, fai riferimento a [esercitazione di base](https://github.com/adobe/aem-guides-wknd-graphql/tree/solution/basic-tutorial) ramo della soluzione.
+
 ## Sotto il cappuccio
 
 Apri il file del browser **Strumenti per sviluppatori** > **Rete** e _Filtro_ per `all-teams` richiesta. Osserva la richiesta API di GraphQL `/graphql/execute.json/my-project/all-teams` è effettuato contro `http://localhost:3000` e **NOT** rispetto al valore di `REACT_APP_HOST_URI` (ad esempio, <https://publish-p123-e456.adobeaemcloud.com>). Le richieste vengono effettuate rispetto al dominio dell’app React perché [configurazione proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) è abilitato tramite `http-proxy-middleware` modulo.
@@ -509,6 +513,6 @@ module.exports = function(app) {
 
 L’utilizzo del proxy locale non è adatto per la distribuzione nell’ambiente di produzione e ulteriori dettagli sono disponibili all’indirizzo _Distribuzione di produzione_ sezione.
 
-## Congratulazioni. {#congratulations}
+## Congratulazioni.{#congratulations}
 
 Congratulazioni. Hai creato correttamente l’app React per utilizzare e visualizzare dati dalle API GraphQL dell’AEM come parte di un’esercitazione di base.
