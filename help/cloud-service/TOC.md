@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+source-git-commit: 6cbd8f3c49d44e75337715c35c198008da8ae7b9
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1023'
 ht-degree: 21%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 21%
       + [Experience Manager - Modelli e archetipi per governance e personale](./introduction/experience-manager-governance-and-staffing-models.md)
       + [Come velocizzare i contenuti con Adobe Experience Manager](./introduction/drive-content-velocity-for-sites.md)
       + [Accelerare la velocità dei contenuti con i sistemi AEM](./introduction/accelerate-content-velocity-aem.md)
-+ Integrazioni Experience Cloud{#integrations}
++ Integrazioni di Experience Cloud{#integrations}
    + [Integrazioni](./integrations/experience-cloud.md)
    + [Adobe Target](./integrations/target.md)
 + Tecnologia di base {#underlying-technology}
@@ -128,6 +128,10 @@ ht-degree: 21%
          + [Avvisi di attraversamento](./debugging/cloud-service/risks/traversals.md)
 + Consegna dei contenuti{#content-delivery}
    + [Reindirizzamenti URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html)
++ Memorizzazione in cache{#caching}
+   + [Panoramica](./caching/overview.md)
+   + [Servizio di pubblicazione AEM](./caching/publish.md)
+   + [Servizio di authoring AEM](./caching/author.md)
 + Accesso all’AEM{#accessing}
    + [Panoramica](./accessing/overview.md)
    + [Utenti Adobe IMS](./accessing/adobe-ims-users.md)
@@ -193,7 +197,7 @@ ht-degree: 21%
       + [5 - Creare un modulo](./forms/developing-for-cloud-service/deploy-your-first-form.md)
       + [6 - Gestore di invio personalizzato](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
       + [7 - Abilitare i componenti di Forms Portal](./forms/developing-for-cloud-service/forms-portal-components.md)
-      + [8 - Includi Cloud Services e FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [8 - Includi Cloud Service e FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
       + [9 - Configurazione cloud in base al contesto](./forms/developing-for-cloud-service/context-aware-fdm.md)
       + [10 - Effettuare il push in Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [11 - Implementazione nell’ambiente di sviluppo](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
