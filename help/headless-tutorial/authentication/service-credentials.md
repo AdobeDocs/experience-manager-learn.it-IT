@@ -14,16 +14,16 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: f8ed9fddb5f244860ba229b46a80638a7269d95e
+source-git-commit: 65d8fd58f421a186e3624918c70cc5d79ec23700
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1967'
 ht-degree: 0%
 
 ---
 
 # Credenziali del servizio
 
-Le integrazioni con Adobe Experience Manager (AEM) as a Cloud Service devono essere in grado di eseguire l’autenticazione al servizio AEM in modo sicuro. La console per sviluppatori AEM consente di accedere alle credenziali del servizio, utilizzate per facilitare l’interazione programmatica tra applicazioni, sistemi e servizi esterni e i servizi Author o Publish di AEM tramite HTTP.
+Le integrazioni con Adobe Experience Manager (AEM) as a Cloud Service devono essere in grado di eseguire l’autenticazione al servizio AEM in modo sicuro. La console per sviluppatori AEM consente di accedere alle credenziali del servizio, utilizzate per facilitare l’interazione programmatica tra applicazioni, sistemi e servizi esterni e i servizi di creazione o pubblicazione dell’AEM tramite HTTP.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
@@ -224,6 +224,7 @@ Una volta che l’utente AEM dell’account tecnico esiste nell’AEM (dopo la p
 1. Accedi a __Strumenti__ > __Sicurezza__ > __Utenti__
 1. Individuare l’utente AEM con il __Nome di accesso__ identificati nel passaggio 1 e aprono i relativi __Proprietà__
 1. Accedi a __Gruppi__ e aggiungi il __Utenti DAM__ gruppo (con accesso in scrittura alle risorse)
+   + [Consulta l’elenco dei gruppi di utenti AEM forniti](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups) per aggiungere l’utente del servizio a per ottenere le autorizzazioni ottimali. Se nessun gruppo di utenti AEM fornito è sufficiente, creane uno tuo e aggiungi le autorizzazioni appropriate.
 1. Tocca __Salva e chiudi__
 
 Se l&#39;account tecnico è autorizzato in AEM a disporre delle autorizzazioni di scrittura per le risorse, eseguire nuovamente l&#39;applicazione:
@@ -258,6 +259,6 @@ L&#39;output sul terminale è simile al seguente:
 
 ![Aggiornamento metadati per utilizzo limitato WKND](./assets/service-credentials/asset-metadata.png)
 
-## Congratulazioni. 
+## Congratulazioni.
 
 Ora che abbiamo effettuato l’accesso a livello di programmazione a AEM as a Cloud Service utilizzando un token di accesso per lo sviluppo locale e un token di accesso per il servizio pronto per la produzione.
