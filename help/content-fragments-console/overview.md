@@ -9,10 +9,10 @@ level: Beginner
 doc-type: Catalog
 last-substantial-update: 2023-05-12T00:00:00Z
 exl-id: 68caf431-8d81-4a72-a768-7b04082870d3
-source-git-commit: 73c7a13586edc5dbe16c16e017ee6f8ac91c1380
+source-git-commit: 89bc02b9ead98063ea31301b2e1f5a4d43cb5760
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 12%
+source-wordcount: '241'
+ht-degree: 11%
 
 ---
 
@@ -28,17 +28,17 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
 
 
 <div class="columns is-multiline">
-    <!-- Overview -->
+    <!-- Console overview -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
-      aria-label="Overview" tabindex="1">
+      aria-label="Console overview" tabindex="1">
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./basics/content-fragments-console.md" title="Panoramica"
+            <a href="./basics/content-fragments-console.md" title="Panoramica della console"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3409492?format=jpeg"
-                alt="Panoramica">
+                alt="Panoramica della console">
             </a>
           </figure>
         </div>
@@ -47,7 +47,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">5 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./basics/content-fragments-console.md" title="Panoramica">Panoramica</a>
+              <a href="./basics/content-fragments-console.md" title="Panoramica">Panoramica della console</a>
             </p>
             <p class="is-size-6">Breve panoramica della console Frammenti di contenuto.</p>
             <a href="./basics/content-fragments-console.md" class="spectrum-Button
@@ -60,6 +60,38 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
         </div>
       </div>
     </div>
+    <!-- Editor overview -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Editor overview" tabindex="1">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./basics/content-fragment-editor.md" title="Panoramica dell’editor"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3424373?format=jpeg"
+                alt="Panoramica dell’editor">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">4 minuti</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./basics/content-fragment-editor.md" title="Panoramica">Panoramica dell’editor</a>
+            </p>
+            <p class="is-size-6">Breve panoramica dell’editor dei frammenti di contenuto.</p>
+            <a href="./basics/content-fragment-editor.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Guarda il video</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>    
     <!-- Fast filtering -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
       aria-label="Fast filtering" tabindex="2">

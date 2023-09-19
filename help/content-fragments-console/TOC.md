@@ -1,6 +1,6 @@
 ---
 user-guide-title: Video della console Frammenti di contenuto AEM
-user-guide-description: Raccolta di video per la console Frammenti di contenuto di Adobe Experience Manager.
+user-guide-description: Raccolta di video per la console Frammenti di contenuto Adobe Experience Manager.
 breadcrumb-title: Video della console Frammenti di contenuto AEM
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
@@ -10,10 +10,10 @@ feature: Content Fragments
 topic: Content Management
 role: User
 team: TM
-source-git-commit: 73c7a13586edc5dbe16c16e017ee6f8ac91c1380
+source-git-commit: 89bc02b9ead98063ea31301b2e1f5a4d43cb5760
 workflow-type: tm+mt
-source-wordcount: '67'
-ht-degree: 25%
+source-wordcount: '70'
+ht-degree: 22%
 
 ---
 
@@ -22,7 +22,8 @@ ht-degree: 25%
 
 + [Panoramica](overview.md)
 + Funzioni di base{#basics}
-   + [Panoramica](./basics/content-fragments-console.md)
+   + [Panoramica della console](./basics/content-fragments-console.md)
+   + [Panoramica dell’editor](./basics/content-fragment-editor.md)
 + Ricerca e rilevamento{#search}
    + [Filtro rapido](search/fast-filtering.md)
    + [Riferimenti](search/references.md)
