@@ -7,16 +7,21 @@ role: Developer
 level: Beginner
 feature: Security
 exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
-source-git-commit: 46728ac6ad37590413e247d23262233626b0575b
+source-git-commit: 6754ccd7c17bcfa30b7200cb67f5ebd290912cb4
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '376'
 ht-degree: 3%
 
 ---
 
 # Sviluppo per la condivisione CORS (Cross-Origin Resource Sharing)
 
-Un breve esempio di utilizzo [!DNL CORS] per accedere ai contenuti AEM da un’applicazione web esterna tramite JavaScript lato client.
+Un breve esempio di utilizzo [!DNL CORS] per accedere ai contenuti AEM da un’applicazione web esterna tramite JavaScript lato client. In questo esempio viene utilizzata la configurazione OSGi CORS per abilitare l’accesso CORS all’AEM. L’approccio di configurazione OSGi è fattibile quando:
+
++ Una singola origine accede al contenuto della pubblicazione AEM
++ Per l’authoring AEM è necessario l’accesso CORS
+
+Se è richiesto l’accesso multiorigine alla pubblicazione dell’AEM, consulta [questa documentazione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837?quality=12&learn=on)
 
