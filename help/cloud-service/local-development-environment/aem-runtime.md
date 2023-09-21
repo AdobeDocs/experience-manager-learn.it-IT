@@ -1,6 +1,6 @@
 ---
-title: Configurare il runtime AEM locale per lo sviluppo as a Cloud Service dell’AEM
-description: Configura il runtime AEM locale utilizzando Quickstart Jar dell’SDK dell’AEM as a Cloud Service.
+title: Configurare l’SDK AEM locale per lo sviluppo as a Cloud Service dell’AEM
+description: Imposta il runtime locale dell’SDK AEM utilizzando Quickstart Jar dell’SDK dell’AEM as a Cloud Service.
 feature: Developer Tools
 version: Cloud Service
 kt: 4678, 4677
@@ -10,14 +10,14 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
+source-git-commit: 2a412126ac7a67a756d4101d56c1715f0da86453
 workflow-type: tm+mt
-source-wordcount: '1792'
+source-wordcount: '1793'
 ht-degree: 10%
 
 ---
 
-# Configurare il runtime AEM locale {#set-up-local-aem-runtime}
+# Configurare l’SDK AEM locale {#set-up-local-aem-sdk}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_aemruntime"
@@ -76,18 +76,18 @@ L’SDK per AEM as a Cloud Service, o SDK AEM, contiene il Jar Quickstart utiliz
 
 1. Decomprimi il download `aem-sdk-XXX.zip` file
 
-## Configurare il servizio AEM Author locale{#set-up-local-aem-author-service}
+## Configurare il servizio Autore AEM locale{#set-up-local-aem-author-service}
 
-Il servizio di authoring AEM locale offre agli sviluppatori un’esperienza locale che gli esperti di marketing digitale e gli autori di contenuti condivideranno per creare e gestire i contenuti.  Il servizio di authoring di AEM è progettato sia come ambiente di authoring che come ambiente di anteprima; su di esso è possibile eseguire la maggior parte delle convalide dello sviluppo delle funzioni, il che lo rende un elemento fondamentale del processo di sviluppo locale.
+Il servizio di authoring AEM locale offre agli sviluppatori un’esperienza locale che gli esperti di marketing digitale e gli autori di contenuti condivideranno per creare e gestire i contenuti.  Il servizio di authoring AEM è progettato sia come ambiente di authoring che come ambiente di anteprima, consentendo di eseguire la maggior parte delle convalide dello sviluppo delle funzioni in base a esso, rendendolo un elemento fondamentale del processo di sviluppo locale.
 
 1. Creare la cartella `~/aem-sdk/author`
 1. Copia il __JAR Quickstart__ file in  `~/aem-sdk/author` e rinominarlo in `aem-author-p4502.jar`
-1. Avvia il servizio AEM Author locale eseguendo quanto segue dalla riga di comando:
+1. Avvia il servizio di authoring AEM locale eseguendo quanto segue dalla riga di comando:
    + `java -jar aem-author-p4502.jar`
       + Immetti la password amministratore come `admin`. Qualsiasi password amministratore è accettabile, tuttavia si consiglia di utilizzare l’impostazione predefinita per lo sviluppo locale per ridurre la necessità di riconfigurare.
 
    Tu *non può* avvia AEM come Cloud Service Quickstart Jar [facendo doppio clic](#troubleshooting-double-click).
-1. Accedi al servizio AEM Author locale all’indirizzo [http://localhost:4502](Http://localhost:4502) in un browser Web
+1. Accedi al servizio di authoring AEM locale all’indirizzo [http://localhost:4502](Http://localhost:4502) in un browser Web
 
 >[!BEGINTABS]
 
@@ -121,13 +121,13 @@ $ java -jar aem-author-p4502.jar
 >[!ENDTABS]
 
 
-## Configurare il servizio AEM Publish locale
+## Configurare il servizio di pubblicazione AEM locale
 
-Il servizio AEM Publish locale offre agli sviluppatori l’esperienza locale che gli utenti finali dell’AEM avranno, ad esempio la navigazione nel sito web ospitato sull’AEM. Un servizio di pubblicazione AEM locale è importante in quanto si integra con l’SDK dell’AEM [Strumenti di Dispatcher](./dispatcher-tools.md) e consente agli sviluppatori di testare e mettere a punto l’esperienza finale per l’utente finale.
+Il servizio di pubblicazione AEM locale offre agli sviluppatori l’esperienza locale di cui godono gli utenti finali dell’AEM, ad esempio navigando nel sito Web ospitato su AEM. È importante un servizio di pubblicazione AEM locale, in quanto si integra con l’SDK dell’AEM [Strumenti di Dispatcher](./dispatcher-tools.md) e consente agli sviluppatori di testare e mettere a punto l’esperienza finale per l’utente finale.
 
 1. Creare la cartella `~/aem-sdk/publish`
 1. Copia il __JAR Quickstart__ file in  `~/aem-sdk/publish` e rinominarlo in `aem-publish-p4503.jar`
-1. Avvia il servizio AEM Publish locale eseguendo quanto segue dalla riga di comando:
+1. Avvia il servizio di pubblicazione AEM locale eseguendo quanto segue dalla riga di comando:
    + `java -jar aem-publish-p4503.jar`
       + Immetti la password amministratore come `admin`. Qualsiasi password amministratore è accettabile, tuttavia si consiglia di utilizzare l’impostazione predefinita per lo sviluppo locale per ridurre la necessità di riconfigurare.
 
@@ -168,7 +168,7 @@ $ java -jar aem-publish-p4503.jar
 
 ## Configurare i servizi AEM locali in modalità prerelease
 
-Il runtime AEM locale può essere avviato in [modalità prerelease](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it) consentire a uno sviluppatore di utilizzare le funzioni della versione successiva dell’AEM as a Cloud Service. La versione prerelease è abilitata trasmettendo il `-r prerelease` discussione sul primo avvio del runtime locale dell’AEM. Può essere utilizzato con i servizi AEM Author e AEM Publish locali.
+Il runtime AEM locale può essere avviato in [modalità prerelease](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=it) consentire a uno sviluppatore di utilizzare le funzioni della versione successiva dell’AEM as a Cloud Service. La versione prerelease è abilitata trasmettendo il `-r prerelease` discussione sul primo avvio del runtime locale dell’AEM. Può essere utilizzato sia con i servizi locali di creazione AEM che con i servizi di pubblicazione AEM.
 
 
 >[!BEGINTABS]
@@ -259,14 +259,14 @@ Le permutazioni disponibili sono le seguenti:
 
 Il numero di porta può essere una qualsiasi porta disponibile sul computer di sviluppo locale, tuttavia per convenzione:
 
-+ Porta __4502__ viene utilizzato per __servizio AEM Author locale__
-+ Porta __4503__ viene utilizzato per __servizio AEM Publish locale__
++ Porta __4502__ viene utilizzato per __servizio di authoring AEM locale__
++ Porta __4503__ viene utilizzato per __servizio di pubblicazione AEM locale__
 
 Cambiarli potrebbe richiedere modifiche alle configurazioni dell’SDK dell’AEM
 
 ## Arresto di un runtime AEM locale
 
-Per arrestare un runtime AEM locale, è possibile aprire la finestra della riga di comando utilizzata per avviare il runtime AEM, scegliendo il servizio AEM Author o Publish, quindi toccare `Ctrl-C`. Attendere la chiusura dell&#39;AEM. Al termine del processo di arresto, è disponibile il prompt dei comandi.
+Per arrestare un runtime AEM AEM locale, aprire la finestra della riga di comando utilizzata per avviare il runtime AEM, quindi toccare `Ctrl-C`. Attendere la chiusura dell&#39;AEM. Al termine del processo di arresto, è disponibile il prompt dei comandi.
 
 ## Attività di configurazione runtime AEM locali opzionali
 
@@ -300,7 +300,7 @@ Quando si fa doppio clic sul file JAR Quickstart per iniziare, viene visualizzat
 
 Questo perché Quickstart Jar as a Cloud Service dall’AEM non supporta il doppio clic sul Jar Quickstart per avviare l’AEM a livello locale. È invece necessario eseguire il file Jar da tale riga di comando.
 
-Per avviare il servizio AEM Author: `cd` nella directory contenente il file Jar Quickstart ed esegui il comando:
+Per avviare il servizio di creazione AEM: `cd` nella directory contenente il file Jar Quickstart ed esegui il comando:
 
 >[!BEGINTABS]
 
@@ -324,7 +324,7 @@ $ java -jar aem-author-p4502.jar
 
 >[!ENDTABS]
 
-oppure, per avviare il servizio AEM Publish, `cd` nella directory contenente il file Jar Quickstart ed esegui il comando:
+oppure, per avviare il servizio di pubblicazione AEM, `cd` nella directory contenente il file Jar Quickstart ed esegui il comando:
 
 >[!BEGINTABS]
 
