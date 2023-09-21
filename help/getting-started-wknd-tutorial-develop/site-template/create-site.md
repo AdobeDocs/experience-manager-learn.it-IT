@@ -11,9 +11,9 @@ kt: 7496
 thumbnail: KT-7496.jpg
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: 0c6294ac468ad4ead041a68f381c6781a5c29b44
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '1013'
 ht-degree: 1%
 
 ---
@@ -26,6 +26,10 @@ Come parte della Creazione Rapida dei Siti, utilizza la Creazione guidata Siti i
 
 I passaggi descritti in questo capitolo si svolgono in un ambiente Adobe Experience Manager as a Cloud Service. Assicurati di disporre di accesso amministrativo all’ambiente AEM. Si consiglia di utilizzare un [Programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) e [Ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) al completamento di questa esercitazione.
 
+[Programma di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) anche per questo tutorial è possibile utilizzare gli ambienti; tuttavia, assicurati che le attività di questo tutorial non influiscano sul lavoro eseguito sugli ambienti di destinazione, poiché distribuisce contenuto e codice nell’ambiente AEM di destinazione.
+
+Il [SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html) può essere utilizzato per parti di questa esercitazione. Aspetti di questo tutorial che si basano su servizi cloud, come [distribuzione di temi con la pipeline front-end di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html), non può essere eseguita con l’SDK per AEM.
+
 Rivedi [documentazione sull’onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) per ulteriori dettagli.
 
 ## Obiettivo {#objective}
@@ -34,7 +38,7 @@ Rivedi [documentazione sull’onboarding](https://experienceleague.adobe.com/doc
 1. Comprendere il ruolo dei modelli di sito.
 1. Esplora il sito AEM generato.
 
-## Accedi ad Adobe Experience Manager Author {#author}
+## Accedi a Adobe Experience Manager Author {#author}
 
 Come primo passo, accedi all’ambiente as a Cloud Service dell’AEM. Gli ambienti AEM sono suddivisi tra **Servizio Author** e un **Servizio di pubblicazione**.
 
@@ -131,10 +135,10 @@ Quindi, genera un nuovo sito utilizzando il Modello del sito dell&#39;esercizio 
 
    *Contenuto di esempio fornito dal modello del sito*
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Congratulazioni, hai appena creato il tuo primo sito AEM!
 
 ### Passaggi successivi {#next-steps}
 
-Utilizza l’editor pagina in Adobe Experience Manager, AEM, per aggiornare il contenuto del sito in [Creare contenuti e pubblicare](author-content-publish.md) capitolo. Scopri come configurare i Componenti atomici per aggiornare il contenuto. Scopri la differenza tra un ambiente AEM Author e uno AEM Publish e come pubblicare gli aggiornamenti sul sito live.
+Utilizza l’editor pagina in Adobe Experience Manager, AEM, per aggiornare il contenuto del sito in [Creare contenuti e pubblicare](author-content-publish.md) capitolo. Scopri come configurare i Componenti atomici per aggiornare il contenuto. Scopri la differenza tra gli ambienti di authoring e pubblicazione di AEM e come pubblicare gli aggiornamenti sul sito live.
