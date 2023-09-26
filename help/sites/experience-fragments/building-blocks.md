@@ -11,7 +11,7 @@ doc-type: feature video
 kt: 660
 thumbnail: 331786.jpg
 exl-id: cc758602-3c20-4eca-9b87-f04b6dc96bfe
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
@@ -20,6 +20,7 @@ ht-degree: 0%
 
 # Blocchi predefiniti con frammenti esperienza {#building-blocks}
 
+{{edge-delivery-services-and-page-editor}}
 
 I blocchi predefiniti sono una sottofunzione dei Frammenti esperienza. I blocchi predefiniti consentono agli autori di contenuti di riutilizzare i componenti tra diverse varianti di Frammenti esperienza.
 
@@ -30,4 +31,4 @@ I blocchi predefiniti sono una sottofunzione dei Frammenti esperienza. I blocchi
 > Il modello utilizzato per i frammenti esperienza deve includere **Blocchi predefiniti** come componente consentito.
 
 * I blocchi predefiniti consentono di riutilizzare facilmente i componenti tra diverse varianti.
-* Le modifiche al blocco predefinito principale vengono automaticamente riportate in tutti i riferimenti. Le modifiche al layout del blocco predefinito non vengono influenzate.
+* Le modifiche apportate al blocco predefinito principale vengono riportate automaticamente in tutti i riferimenti. Le modifiche al layout del blocco predefinito non vengono influenzate.

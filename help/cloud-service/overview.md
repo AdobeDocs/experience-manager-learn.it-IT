@@ -4,7 +4,7 @@ description: Una raccolta di tutorial per Adobe Experience Manager (AEM) as a Cl
 sub-product: Experience Manager as a Cloud Service
 kt: 3289
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 11%
@@ -12,6 +12,8 @@ ht-degree: 11%
 ---
 
 # Video ed esercitazioni as a Cloud Service sull’AEM {#overview}
+
+{{edge-delivery-services}}
 
 Adobe Experience Manager (AEM) ora è disponibile as a Cloud Service. AEM as a Cloud Service introduce la nuova generazione della linea di prodotti di Experience Manager, sulla base degli investimenti e delle innovazioni precedenti, preservando ed estendendo tutti i casi d’uso e le funzionalità.
 
@@ -22,24 +24,19 @@ Adobe Experience Manager (AEM) ora è disponibile as a Cloud Service. AEM as a C
 ## Novità
 
 * **[Autenticazione basata su token (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
-
-   *Scopri come utilizzare l’autenticazione basata su token per interagire con AEM as a Cloud Service tramite HTTP*
+  *Scopri come utilizzare l’autenticazione basata su token per interagire con AEM as a Cloud Service tramite HTTP*
 
 * **[GraphQL headless (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it)**
-
-   *Scopri come utilizzare le API GraphQL dell’AEM per sviluppare esperienze in un’applicazione esterna.*
+  *Scopri come utilizzare le API GraphQL dell’AEM per sviluppare esperienze in un’applicazione esterna.*
 
 * **[Importazione in blocco (video)](./migration/bulk-import.md)**
-
-   *Scopri come importare in blocco le risorse in AEM da Azure Blob Storage o Amazon S3*
+  *Scopri come importare in blocco le risorse in AEM da Azure Blob Storage o Amazon S3*
 
 * **[Asset compute processo di lavoro metadati (tutorial)](./asset-compute/advanced/metadata.md)**
-
-   *Scopri come riscrivere i metadati delle risorse in AEM da un lavoratore Asset compute*
+  *Scopri come riscrivere i metadati delle risorse in AEM da un lavoratore Asset compute*
 
 * **[Estensibilità dei microservizi Asset compute (tutorial)](./asset-compute/overview.md)**
-
-   *Scopri come sviluppare Asset compute worker per generare rappresentazioni personalizzate delle risorse*
+  *Scopri come sviluppare Asset compute worker per generare rappresentazioni personalizzate delle risorse*
 
 </div>
 

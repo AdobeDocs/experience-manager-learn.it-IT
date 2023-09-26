@@ -13,7 +13,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: f2cf4063-0b08-4b4f-91e6-70e5a148f931
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 20%
@@ -21,6 +21,8 @@ ht-degree: 20%
 ---
 
 # Creazione del primo SPA Angular in AEM {#introduction}
+
+{{edge-delivery-services}}
 
 Benvenuti in un tutorial in più parti progettato per gli sviluppatori che non hanno mai utilizzato **Editor SPA** in Adobe Experience Manager (AEM). Questo tutorial illustra l’implementazione di un’applicazione di Angular per un brand di lifestyle fittizio, WKND. L’app Angular è sviluppata e progettata per essere implementata con l’Editor SPA dell’AEM, che mappa i componenti Angular ai componenti AEM. L’SPA completo, implementato nell’AEM, può essere creato in modo dinamico con i tradizionali strumenti di modifica in linea dell’AEM.
 

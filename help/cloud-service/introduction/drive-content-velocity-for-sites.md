@@ -3,7 +3,7 @@ title: Come velocizzare i contenuti con Adobe Experience Manager
 description: Scopri la velocità dei contenuti e il loro valore nelle organizzazioni aziendali. Immergiti in quattro principi di implementazione efficace e nelle insidie da considerare lungo il percorso.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: de31d6e97b84781aa05ca441fc6e9fc4bc59ccc3
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '2814'
 ht-degree: 0%
@@ -12,7 +12,9 @@ ht-degree: 0%
 
 # Come velocizzare i contenuti con Adobe Experience Manager
 
-In qualità di leader nell’esperienza dei clienti, sappiamo quanto sia difficile per te garantire la possibilità di disporre della struttura e dei principi giusti per velocizzare la realizzazione dei contenuti, componenti essenziali per sbloccare il vero valore della piattaforma Adobe Experience Manager. In questo articolo verrà illustrato la velocità dei contenuti e il loro valore all&#39;interno delle organizzazioni aziendali. Ora esamineremo quattro principi di implementazione efficace e le insidie da tenere presenti lungo il percorso.
+{{edge-delivery-services}}
+
+In qualità di leader nell’esperienza dei clienti, sappiamo quanto sia difficile per te garantire la possibilità di disporre della struttura e dei principi giusti per velocizzare la realizzazione dei contenuti, componenti essenziali per liberare il vero valore della piattaforma Adobe Experience Manager. In questo articolo verrà illustrato la velocità dei contenuti e il loro valore all&#39;interno delle organizzazioni aziendali. Ora esamineremo quattro principi di implementazione efficace e le insidie da tenere presenti lungo il percorso.
 
 ## Definizione della velocità contenuto
 
@@ -26,7 +28,7 @@ Comporta lo sviluppo di una &quot;architettura delle persone&quot; sottostante c
 
 ## Perché è importante
 
-Spesso, quando viene introdotta una nuova soluzione aziendale come Adobe Experience Manager (AEM), l’obiettivo è semplicemente quello di sostenere la soluzione e concentrarsi solo sulla base tecnica. Gran parte del lavoro che alla fine trasformerebbe l&#39;organizzazione viene rimandato.
+Spesso, quando viene introdotta una nuova soluzione aziendale come Adobe Experience Manager (AEM), l&#39;obiettivo è semplicemente quello di sostenere la soluzione e concentrarsi solo sulle basi tecniche. Gran parte del lavoro che alla fine trasformerebbe l&#39;organizzazione viene rimandato.
 
 Questo è un errore. Ignorare i necessari cambiamenti aziendali e funzionali può limitare notevolmente la realizzazione del valore e portare a un ciclo di personalizzazione, velocità di trascinamento e limitazione della potenza esplosiva dell&#39;AEM.
 
@@ -130,7 +132,7 @@ Di seguito sono riportate quattro fasi cardine da realizzare durante la fase di 
 
    Da una prospettiva multi-brand, passare a paradigmi &quot;universali&quot; (anziché specifici per pagina) consente un riutilizzo e un rebranding più rapidi, guidando una sperimentazione iterativa e rapida con campagne per creare la migliore esperienza del cliente. Velocità = flessibilità creativa e coinvolgimento del pubblico.
 
-   Inoltre, l’utilizzo di un framework basato sui contenuti consente intrinsecamente un’adozione più semplice di frammenti di contenuto e frammenti di esperienza. Queste soluzioni possono essere create da un framework centralizzato dall’interno di Adobe Experience Manager, riducendo in tal modo l’inefficiente authoring in silos. Questo aiuterà a promuovere l’unità nell’esperienza di authoring e a enfatizzare i contenuti strategici presenti nel sito.
+   Inoltre, l’utilizzo di un framework basato sui contenuti consente intrinsecamente un’adozione più semplice di frammenti di contenuto e frammenti di esperienza. Queste soluzioni possono essere create da un framework centralizzato direttamente da Adobe Experience Manager, riducendo in tal modo l&#39;inefficiente authoring in silos. Questo aiuterà a promuovere l’unità nell’esperienza di authoring e a enfatizzare i contenuti strategici presenti nel sito.
 
 1. **Creare un sistema di progettazione**
 

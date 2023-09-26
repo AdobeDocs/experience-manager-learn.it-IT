@@ -15,7 +15,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: b120fb79-729e-4155-ba10-e5f7bb07eefa
-source-git-commit: 1623e1eaf966e625e1ec402a2996e8beb1e1cd03
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 15%
@@ -23,6 +23,8 @@ ht-degree: 15%
 ---
 
 # Utilizzo dell’Editor pagina {#using-page-editor-with-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 L’Editor pagina del sito AEM è uno strumento utile per creare e modificare contenuti web. Gli strumenti e le funzionalità dell’Editor pagina sono accessibili dalla barra degli strumenti dell’interfaccia utente.
 

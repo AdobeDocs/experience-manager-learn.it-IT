@@ -1,7 +1,7 @@
 ---
 title: Informazioni sul layout dinamico con AEM Sites
 seo-title: Understanding Responsive Layout with AEM Sites
-description: AEM consente di avere un layout dinamico per le pagine utilizzando il componente Contenitore di layout. Con il layout reattivo, gli autori dei contenuti possono creare contenuti reattivi per dispositivi diversi e visualizzare in anteprima l’esperienza dell’utente finale in ambito AEM.
+description: AEM consente di creare un layout dinamico per le pagine utilizzando il componente Contenitore di layout. Con il layout reattivo, gli autori dei contenuti possono creare contenuti reattivi per dispositivi diversi e visualizzare in anteprima l’esperienza dell’utente finale in ambito AEM.
 seo-description: Covers the steps to author responsive layout for different devices
 feature: Page Editor, Editable Templates
 topics: authoring, responsive
@@ -15,16 +15,18 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c125c0e0-1ed2-463e-bd34-767d009479eb
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '110'
-ht-degree: 1%
+ht-degree: 17%
 
 ---
 
-# Informazioni sul layout dinamico {#understanding-responsive-layout-with-aem-sites}
+# Informazioni sul layout reattivo {#understanding-responsive-layout-with-aem-sites}
 
-Adobe Experience Manager Sites consente all’autore di gestire la larghezza di un componente in base alla larghezza del dispositivo per facilitare la progettazione di un sito reattivo. Con la modalità Layout e il Contenitore di layout gli utenti possono creare contenuti dinamici per diversi dispositivi e visualizzare in anteprima l’esperienza dell’utente finale, senza uscire dall’interfaccia utente dell’AEM.
+{{edge-delivery-services-and-page-editor}}
+
+Adobe Experience Manager Sites consente all’autore di gestire la larghezza di un componente in base alla larghezza del dispositivo per facilitare la progettazione di un sito reattivo. Con la modalità Layout e il Contenitore di layout gli utenti possono creare contenuti reattivi per diversi dispositivi e visualizzare in anteprima l’esperienza dell’utente finale, senza uscire dall’interfaccia utente dell’AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32012?quality=12&learn=on)
 

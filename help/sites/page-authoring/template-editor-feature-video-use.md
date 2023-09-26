@@ -14,7 +14,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2213d1f2-37ed-4897-a68d-04ef423395a3
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 4%
@@ -22,6 +22,8 @@ ht-degree: 4%
 ---
 
 # Utilizzo di modelli di pagina modificabili{#using-template-editor-with-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 I modelli modificabili consentono agli autori specializzati di creare e aggiornare modelli di pagina e gestire configurazioni avanzate delle policy con Adobe Experience Manager (AEM) Sites.
 

@@ -9,7 +9,7 @@ level: Intermediate
 kt: 10900
 thumbnail: kt-10900.jpeg
 exl-id: e055b356-dd26-4366-8608-5a0ccf5b4c49
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 2%
@@ -17,6 +17,8 @@ ht-degree: 2%
 ---
 
 # Come utilizzare i componenti modificabili di React dell’AEM v2
+
+{{edge-delivery-services}}
 
 L&#39;AEM fornisce [Componenti modificabili di React AEM v2](https://www.npmjs.com/package/@adobe/aem-react-editable-components): SDK basato su Node.js che consente la creazione di componenti React che supportano la modifica di componenti nel contesto tramite l’Editor SPA dell’AEM.
 

@@ -10,7 +10,7 @@ kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '3040'
 ht-degree: 1%
@@ -18,6 +18,8 @@ ht-degree: 1%
 ---
 
 # Pagine e modelli {#pages-and-template}
+
+{{edge-delivery-services-and-page-editor}}
 
 In questo capitolo, esaminiamo la relazione tra un componente della pagina base e i modelli modificabili. Scopri come creare un modello di articolo senza stili basato su alcuni modelli di [Adobe XD](https://helpx.adobe.com/support/xd.html). Durante la creazione del modello, sono trattati i Componenti core e le configurazioni avanzate dei criteri dei modelli modificabili.
 
@@ -218,7 +220,7 @@ Passaggi di alto livello per il video precedente:
 1. Sostituisci **Per autore** Titolo con il testo &quot;di Stacey Roswells&quot;.
 1. Aggiornare il **Testo** per includere un paragrafo per compilare l&#39;articolo. È possibile utilizzare il seguente file di testo come copia: [la-skate-parks-copy.txt](assets/pages-templates/la-skateparks-copy.txt).
 1. Aggiungi un altro **Testo** componente.
-   * Aggiorna il componente per includere la citazione: &quot;Non c’è posto migliore da condividere di Los Angeles&quot;.
+   * Aggiorna il componente per includere la citazione: &quot;Non c&#39;è posto migliore da condividere di Los Angeles&quot;.
    * Modifica l’Editor Rich Text in modalità a schermo intero e modifica le virgolette per utilizzare **Blocco offerta** elemento.
 1. Continua a popolare il corpo dell’articolo in modo che corrisponda ai modelli.
 1. Configurare **Scarica** per utilizzare una versione PDF dell’articolo.
@@ -252,7 +254,7 @@ Utilizza lo strumento CRXDE-Lite su un’istanza AEM locale per visualizzare la 
 
    Dovresti essere in grado di mappare liberamente ciascuno dei nodi ai componenti creati. Scopri se è possibile identificare i diversi Contenitori di layout utilizzati esaminando i nodi con il prefisso `container`.
 
-1. Quindi, controlla il componente Pagina in `/apps/wknd/components/page`. Visualizza le proprietà del componente in CRXDE Lite:
+1. Quindi, controlla il componente Pagina in `/apps/wknd/components/page`. Visualizza le proprietà del componente in CRXDE Liti:
 
    ![Proprietà del componente Pagina](assets/pages-templates/page-component-properties.png)
 
@@ -262,7 +264,7 @@ Utilizza lo strumento CRXDE-Lite su un’istanza AEM locale per visualizzare la 
 
 1. Inspect è un altro componente dei componenti WKND, il `Breadcrumb` componente da: `/apps/wknd/components/breadcrumb`. Notare che lo stesso `sling:resourceSuperType` , ma questa volta punta a `core/wcm/components/breadcrumb/v2/breadcrumb`. Questo è un altro esempio di utilizzo del modello di componente Proxy per includere un Componente core. Infatti, tutti i componenti nella base di codice WKND sono proxy dei Componenti core AEM (ad eccezione del componente demo personalizzato HelloWorld). È consigliabile riutilizzare quante più funzionalità possibile dei Componenti core *prima di* scrittura di codice personalizzato.
 
-1. Quindi, controlla la pagina dei componenti core all’indirizzo `/libs/core/wcm/components/page/v2/page` utilizzo di CRXDE Lite:
+1. Quindi, controlla la pagina dei componenti core all’indirizzo `/libs/core/wcm/components/page/v2/page` utilizzo di CRXDE Liti:
 
    >[!NOTE]
    >
@@ -359,7 +361,7 @@ I passaggi successivi vengono eseguiti nell’IDE VSCode utilizzando [Sincronizz
    >
    > Per garantire distribuzioni coerenti per il sito di riferimento WKND, alcuni rami del progetto sono configurati in modo tale che `ui.content` sovrascrive eventuali modifiche nel JCR. Questo è per progettazione, ovvero per i rami della soluzione, in quanto il codice e gli stili sono scritti per criteri specifici.
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Congratulazioni, hai creato un modello e una pagina con Adobe Experience Manager Sites.
 

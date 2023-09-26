@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: d24649d4b1411f57a46595edddb601ac49b51643
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 15%
@@ -13,6 +13,8 @@ ht-degree: 15%
 ---
 
 # Video e tutorial su AEM Sites {#overview}
+
+{{edge-delivery-services}}
 
 Adobe Experience Manager (AEM) Sites è una piattaforma leader per la gestione delle esperienze. La presente guida utente contiene video e tutorial sulle numerose funzioni e caratteristiche di AEM Sites.
 
@@ -22,24 +24,19 @@ Adobe Experience Manager (AEM) Sites è una piattaforma leader per la gestione d
 ## Novità
 
 * **[Utilizzo di Launches con AEM Sites (video)](./page-authoring/launches.md)**
-
-   *Scopri i lanci di AEM Sites e come utilizzarli per preparare il contenuto del sito web per le versioni future.*
+  *Scopri i lanci di AEM Sites e come utilizzarli per preparare il contenuto del sito web per le versioni future.*
 
 * **[Personalizzare Adobe Client Data Layer con i componenti AEM (tutorial)](./integrations/adobe-client-data-layer/data-layer-customize.md)**
-
-   *Scopri come aggiornare Adobe Client Data Layer con il contenuto dei Componenti AEM personalizzati.*
+  *Scopri come aggiornare Adobe Client Data Layer con il contenuto dei Componenti AEM personalizzati.*
 
 * **[Guida introduttiva di AEM Headless GraphQL (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it)**
-
-   *Come esporre contenuti dall’AEM che devono essere utilizzati da un’app mobile nativa utilizzando le API GraphQL dell’AEM.*
+  *Come esporre contenuti dall’AEM che devono essere utilizzati da un’app mobile nativa utilizzando le API GraphQL dell’AEM.*
 
 * **[Utilizzo di frammenti di contenuto (serie video)](./content-fragments/content-fragments-feature-video-use.md)**
-
-   *I frammenti di contenuto sono parti di contenuto indipendenti dal canale, riutilizzabili.*
+  *I frammenti di contenuto sono parti di contenuto indipendenti dal canale, riutilizzabili.*
 
 * **[Utilizzo dell’editor SPA (video)](./spa-editor/spa-editor-framework-feature-video-use.md)**
-
-   *Scopri le funzionalità di modifica dell’AEM per le applicazioni a pagina singola (SPA).*
+  *Scopri le funzionalità di modifica dell’AEM per le applicazioni a pagina singola (SPA).*
 
 </div>
 

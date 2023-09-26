@@ -10,7 +10,7 @@ level: Beginner
 kt: 7985
 thumbnail: 333477.jpg
 exl-id: a55c1dda-f74a-4914-aa1b-c4de8ad1253e
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -18,6 +18,8 @@ ht-degree: 0%
 ---
 
 # Guida introduttiva ad AEM Sites - Creazione rapida di siti {#site-template}
+
+{{edge-delivery-services}}
 
 Scopri come utilizzare un approccio low-code per creare il tuo primo sito in Adobe Experience Manager con Creazione rapida di siti e un modello di sito predefinito. Utilizza componenti e modelli predefiniti per rendere rapidamente operativo un sito. Utilizza un flusso di lavoro basato su Adobe XD per applicare stili e personalizzazioni specifici per il tuo marchio solo con CSS e JavaScript. Consigliato per nuovi progetti e sviluppatori.
 

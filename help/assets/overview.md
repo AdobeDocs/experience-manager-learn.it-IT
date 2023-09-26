@@ -4,7 +4,7 @@ description: Guarda i nostri video per ricevere supporto e assistenza sulle riso
 sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 15%
@@ -13,7 +13,9 @@ ht-degree: 15%
 
 # Video e tutorial su AEM Assets {#overview}
 
-Adobe Experience Manager (AEM) Assets è uno strumento di gestione delle risorse digitali su AEM Platform che consente agli utenti di creare, gestire e condividere le proprie risorse digitali (immagini, video, documenti e clip audio) in un archivio basato su Web. La presente guida utente contiene video e tutorial sulle numerose funzioni e caratteristiche di AEM Assets.
+{{edge-delivery-services}}
+
+Adobe Experience Manager (AEM) Assets è uno strumento di gestione delle risorse digitali su AEM Platform che consente agli utenti di creare, gestire e condividere le proprie risorse digitali (immagini, video, documenti e clip audio) in un archivio basato su web. La presente guida utente contiene video e tutorial sulle numerose funzioni e caratteristiche di AEM Assets.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_assets_overview"
@@ -67,15 +69,15 @@ Scopri cos’è AEM Assets e come potrebbe essere utilizzato per raggiungere gli
 </td>
 <td>
    <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-   <img alt="Panoramica di Dynamic Media" src="./assets/overview/dynamic-media.png" />
+   <img alt="Panoramica di Dynamic Medie" src="./assets/overview/dynamic-media.png" />
    </a>
    <div>
       <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-      <strong>Panoramica di Dynamic Media</strong>
+      <strong>Panoramica di Dynamic Medie</strong>
       </a>
    </div>
    <p>
-      <em>Gestire e accedere ai contenuti multimediali tramite Dynamic Media</em>
+      <em>Gestire e accedere ai contenuti multimediali tramite Dynamic Medie</em>
    <p>
 </td>
 </table>

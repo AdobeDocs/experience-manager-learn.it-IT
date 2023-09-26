@@ -11,16 +11,18 @@ mini-toc-levels: 1
 index: y
 exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
 recommendations: disable
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '476'
-ht-degree: 31%
+ht-degree: 32%
 
 ---
 
 # Guida introduttiva ad AEM Sites - Archetipo progetto {#project-archetype}
 
-Benvenuti in un tutorial in più parti progettato per sviluppatori e sviluppatrici che non hanno mai utilizzato Adobe Experience Manager (AEM). Questo tutorial illustra l’implementazione di un sito AEM per un brand di lifestyle fittizio, WKND.
+{{edge-delivery-services-and-page-editor}}
+
+Benvenuti in un tutorial in più parti progettato per sviluppatori e sviluppatrici che utilizzano per la prima volta Adobe Experience Manager (AEM). Questo tutorial illustra l’implementazione di un sito AEM per un brand di lifestyle fittizio, WKND.
 
 Questa esercitazione inizia utilizzando [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) per generare un nuovo progetto.
 

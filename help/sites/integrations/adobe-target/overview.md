@@ -13,7 +13,7 @@ level: Beginner
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2bc6cd90-7b23-4dde-bb07-bca0de9fa509
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -21,6 +21,8 @@ ht-degree: 0%
 ---
 
 # Integrare AEM Sites e Adobe Target
+
+{{edge-delivery-services-and-page-editor}}
 
 Scopri come integrare AEM Sites e Adobe Target per offrire esperienze personalizzate.
 
