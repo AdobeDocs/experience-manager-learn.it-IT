@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 7b98f583f8b54fb9c9c706521c310282dcc17ea3
+source-git-commit: 90d0d4876869b05c2ce00fd8cf18c474a6a00e27
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 25%
+source-wordcount: '401'
+ht-degree: 24%
 
 ---
 
@@ -64,6 +64,9 @@ ht-degree: 25%
    + [Tag avanzati per video](metadata/video-smart-tags.md)
    + [Importare ed esportare i metadati](metadata/metadata-import-export.md)
 
++ Servizi di consegna Edge{#edge-delivery-services}
+   + [plugin Sidekick](./edge-delivery-services/sidekick-plugin.md)
+
 + Condivisione e distribuzione{#sharing}
    + [Scarica risorse](./sharing/download.md)
    + [Pubblica risorse](./sharing/publish.md)
@@ -105,10 +108,10 @@ ht-degree: 25%
    + [Azioni Photoshop](./content-automation/photoshop-actions.md)
 
 + Dynamic Media{#dynamic-media}
-   + [Panoramica di Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
+   + [Panoramica di Dynamic Medie](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Applicazione desktop Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Immagini {#images}
-      + [Snapshot Dynamic Media](dynamic-media/dynamic-media-snapshot.md)
+      + [Snapshot Dynamic Medie](dynamic-media/dynamic-media-snapshot.md)
       + [Ritaglio avanzato](dynamic-media/smart-crop-feature-video-use.md)
       + [Nitidezza delle immagini](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
       + [Gestione colore](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
@@ -117,16 +120,16 @@ ht-degree: 25%
       + [Lettore video](dynamic-media/dynamic-media-video-player-feature-video-use.md)
       + [Video a 360°](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
       + [Miniature video personalizzate](dynamic-media/dynamic-media-video-thumbnails-feature-video-use.md)
-      + [Ritaglio video avanzato Dynamic Media](dynamic-media/dynamic-media-smart-crop-video.md)
+      + [Ritaglio video avanzato Dynamic Medie](dynamic-media/dynamic-media-smart-crop-video.md)
    + Visualizzatori {#viewers}
       + [Visualizzatori](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
       + [Visualizzatori per immagini panoramiche e verticali](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
       + [Visualizzatori con Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
    + 3D {#3d}
-      + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
+      + [Dynamic Medie 3D](dynamic-media/dynamic-media-3d-feature-video.md)
    + Utilizzo di con AEM Sites {#dm-with-aem-sites}
       + [Frammenti di esperienza](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
-      + [Componenti core Dynamic Media](dynamic-media/dynamic-media-core-components.md)
+      + [Componenti core Dynamic Medie](dynamic-media/dynamic-media-core-components.md)
 
    + Esercitazioni {#tutorials}
       + [Creazione di set carosello](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
@@ -139,8 +142,8 @@ ht-degree: 25%
       + [Generazione di URL e codici da incorporare](dynamic-media/tutorials/how-to-generate-public-url-or-embed-code-for-an-asset.md)
       + [Attivazione di un processo di esportazione](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
       + [Annullamento della validità della cache CDN](dynamic-media/tutorials/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
-      + [Utilizzo dei componenti core di Dynamic Media](dynamic-media/tutorials/using-dm-components-on-site-page.md)
-      + [Eliminazione configurazione Dynamic Media](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
+      + [Utilizzo dei componenti core di Dynamic Medie](dynamic-media/tutorials/using-dm-components-on-site-page.md)
+      + [Eliminazione configurazione Dynamic Medie](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
       + [Download di risorse nell’app Dynamic Media Classic](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [API IPS di Dynamic Media Classic](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
 
