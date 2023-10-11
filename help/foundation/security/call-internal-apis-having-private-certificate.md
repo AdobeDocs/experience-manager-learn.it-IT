@@ -10,17 +10,19 @@ kt: 11548
 thumbnail: KT-11548.png
 doc-type: article
 last-substantial-update: 2023-08-25T00:00:00Z
-source-git-commit: d4859d8af066d456f16f76869e99432aaa5b9863
+exl-id: c88aa724-9680-450a-9fe8-96e14c0c6643
+source-git-commit: 68aaa58c8f95e72e1a7cb89f849c77d1210f31ee
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
 
-
 # Chiamata delle API interne con certificati privati
 
 Scopri come effettuare chiamate HTTPS da AEM alle API web utilizzando certificati privati o autofirmati.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424853?quality=12&learn=on)
 
 Per impostazione predefinita, quando si tenta di stabilire una connessione HTTPS a un’API web che utilizza un certificato autofirmato, la connessione non riesce e viene visualizzato il messaggio di errore:
 
@@ -148,3 +150,10 @@ Segui i passaggi seguenti:
 Un approccio convenzionale per richiamare in modo efficace le API interne con certificati privati comporta la modifica del keystore JVM. Ciò si ottiene importando i certificati privati utilizzando Java™ [keytool](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549) comando.
 
 Tuttavia, questo metodo non è allineato con le best practice di sicurezza e l’AEM offre un’opzione superiore tramite l’utilizzo di **Archivio attendibile globale** e [ServizioArchivioChiavi](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html).
+
+
+## Pacchetto soluzione
+
+Il progetto Node.js di esempio illustrato nel video può essere scaricato da [qui](assets/internal-api-call/REST-APIs.zip).
+
+Il codice servlet dell’AEM è disponibile nel documento WKND Sites Project `tutorial/web-api-invocation` filiale, [vedi](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).
