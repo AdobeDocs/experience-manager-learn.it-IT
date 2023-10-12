@@ -8,7 +8,7 @@ sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
 kt: 2963
 index: y
-source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
+source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 19%
@@ -20,7 +20,7 @@ ht-degree: 19%
 
 + [Panoramica di AEM headless](./overview.md)
 + GraphQL {#graphql}
-   + [Portale per sviluppatori AEM headless](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
+   + [Portale per sviluppatori AEM headless](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it){target=_blank}
    + [Panoramica](./graphql/overview.md)
    + Configurazione rapida {#quick-setup}
       + [Servizio cloud](./graphql/quick-setup/cloud-service.md)
@@ -113,7 +113,7 @@ ht-degree: 19%
    + [3 - Creazione di frammenti di contenuto di eventi](./content-services/chapter-3.md)
    + [4 - Definizione dei modelli di Content Services](./content-services/chapter-4.md)
    + [5 - Authoring delle pagine di Content Services](./content-services/chapter-5.md)
-   + [6 - Esposizione dei contenuti su AEM Publish per la distribuzione](./content-services/chapter-6.md)
+   + [6 - Pubblicazione dei contenuti su AEM per la distribuzione](./content-services/chapter-6.md)
    + [7 - Utilizzo di servizi di contenuti AEM da un’app mobile](./content-services/chapter-7.md)
 + Esempi di codice {#code-samples}
    + [Filtraggio dell’app React](./graphql/code-samples/filtering-react-app.md)
