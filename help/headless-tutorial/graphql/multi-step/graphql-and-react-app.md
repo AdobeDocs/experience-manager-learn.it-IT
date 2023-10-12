@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 65244bf81666c20fd5d9d804ad8ea97df8b83d9f
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 2%
@@ -89,7 +89,7 @@ Per ottenere l’app React:
    $ npm start
    ```
 
-1. L’app React viene avviata in modalità di sviluppo su [http://localhost:3000/](Http://localhost:3000/). Le modifiche apportate all’app React durante l’esercitazione vengono applicate immediatamente.
+1. L’app React viene avviata in modalità di sviluppo su [http://localhost:3000/](Http://localhost:3000/). Le modifiche apportate all’app React durante l’esercitazione vengono riportate immediatamente.
 
 ![App React parzialmente implementata](./assets/graphql-and-external-app/partially-implemented-react-app.png)
 
@@ -100,7 +100,7 @@ Per ottenere l’app React:
 >
 > //*********************************
 >
->  // TODO :: implementa questa procedura seguendo i passaggi dell’esercitazione di AEM headless
+>  // TODO Per implementarlo, segui i passaggi descritti nell’esercitazione su AEM headless
 >
 >  //*********************************
 >
@@ -488,7 +488,7 @@ Una volta completato, selezionando il nome di una persona nella vista Team, vien
 
 ## Prova l’app
 
-Rivedere l’app [http://localhost:3000/](Http://localhost:3000/) e fai clic su _Membri_ collegamenti. Inoltre, puoi aggiungere più team e/o membri al team Alpha aggiungendo Frammenti di contenuto all’AEM.
+Rivedere l’app [http://localhost:3000/](Http://localhost:3000/) e fai clic su _Membri_ collegamenti. Inoltre, puoi aggiungere più team e/o membri all’Alpha Team aggiungendo Frammenti di contenuto all’AEM.
 
 >[!IMPORTANT]
 >
@@ -496,7 +496,7 @@ Rivedere l’app [http://localhost:3000/](Http://localhost:3000/) e fai clic su 
 
 ## Sotto il cappuccio
 
-Apri il file del browser **Strumenti per sviluppatori** > **Rete** e _Filtro_ per `all-teams` richiesta. Osserva la richiesta API di GraphQL `/graphql/execute.json/my-project/all-teams` è effettuato contro `http://localhost:3000` e **NOT** rispetto al valore di `REACT_APP_HOST_URI` (ad esempio, <https://publish-p123-e456.adobeaemcloud.com>). Le richieste vengono effettuate rispetto al dominio dell’app React perché [configurazione proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) è abilitato tramite `http-proxy-middleware` modulo.
+Apri il file del browser **Strumenti per sviluppatori** > **Rete** e _Filtro_ per `all-teams` richiesta. Osserva la richiesta API di GraphQL `/graphql/execute.json/my-project/all-teams` è effettuato contro `http://localhost:3000` e **NOT** rispetto al valore di `REACT_APP_HOST_URI`, ad esempio `<https://publish-pxxx-exxx.adobeaemcloud.com`. Le richieste vengono effettuate rispetto al dominio dell’app React perché [configurazione proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) è abilitato tramite `http-proxy-middleware` modulo.
 
 
 ![Richiesta API GraphQL tramite Proxy](assets/graphql-and-external-app/graphql-api-request-via-proxy.png)

@@ -1,6 +1,6 @@
 ---
 title: Creare librerie client
-description: Crea clientlibrary per gestire l’evento clic del pulsante "Salva ed esci"
+description: Crea una libreria client per gestire l’evento clic del pulsante "Salva ed esci"
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -10,16 +10,16 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: c90eea73-bd44-40af-aa98-d766aa572415
-source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '148'
 ht-degree: 6%
 
 ---
 
 # Crea libreria client
 
-Crea [libreria client](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=it) che includerà il codice per richiamare il metodo `doAjaxSubmitWithFileAttachment` del `guideBridge` API sull’evento clic del pulsante identificato dalla classe CSS **savebutton**.  Trasmettiamo i dati del modulo adattivo, `fileMap`e `mobileNumber` all’endpoint in ascolto su `**/bin/storeafdatawithattachments`
+Crea [libreria client](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=it) che includerà il codice per richiamare il metodo `doAjaxSubmitWithFileAttachment` del `guideBridge` API sull’evento clic del pulsante identificato dalla classe CSS **pulsante salva**.  Trasmettiamo i dati del modulo adattivo, `fileMap`e `mobileNumber` all’endpoint in ascolto su `**/bin/storeafdatawithattachments`
 
 Dopo il salvataggio dei dati del modulo, viene generato un ID applicazione univoco che viene presentato all&#39;utente in una finestra di dialogo. Quando si chiude la finestra di dialogo, l’utente viene reindirizzato al modulo che consente di recuperare il modulo adattivo salvato utilizzando l’ID applicazione univoco.
 
@@ -67,9 +67,9 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> Abbiamo utilizzato [libreria javascript bootbox](http://bootboxjs.com/examples.html) per visualizzare la finestra di dialogo
+> Abbiamo utilizzato [libreria JavaScript di avvio](https://bootboxjs.com/examples.html) per visualizzare la finestra di dialogo
 
-Le librerie client utilizzate in questo esempio possono essere [scaricato da qui](assets/store-af-with-attachments-client-lib.zip)
+Le librerie client utilizzate in questo esempio possono essere [scaricato da qui.](assets/store-af-with-attachments-client-lib.zip)
 
 ## Passaggi successivi
 

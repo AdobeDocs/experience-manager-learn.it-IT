@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '613'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ Scopri come caricare, trasmettere parametri alla richiesta di pagina e attivare 
 
 ## Regola di caricamento pagina
 
-Adobe Client Data Layer è un livello dati basato su eventi. Quando viene caricato il livello dati della pagina AEM, viene attivato un evento `cmp:show` . Nel video, la sezione `Launch Library Loaded` viene richiamata utilizzando un evento personalizzato. Di seguito sono riportati i frammenti di codice utilizzati nel video per l’evento personalizzato e per gli elementi dati.
+Adobe Client Data Layer è un livello dati basato su eventi. Quando il livello dati della pagina AEM viene caricato, attiva un evento `cmp:show` . Nel video, la sezione `Launch Library Loaded` viene richiamata utilizzando un evento personalizzato. Di seguito sono riportati i frammenti di codice utilizzati nel video per l’evento personalizzato e per gli elementi dati.
 
 ### Evento pagina visualizzata personalizzata{#page-event}
 
@@ -41,7 +41,7 @@ Nella proprietà Launch, aggiungi un nuovo **Evento** al **Regola**
 + __Tipo evento:__ Codice personalizzato
 + __Nome:__ Gestore di Evento Page Show (o qualcosa di descrittivo)
 
-Tocca il __Apri editor__ può essere incollato nel seguente frammento di codice. Questo codice __deve__ essere aggiunto al __Configurazione evento__ e una successiva __Azione__.
+Tocca il __Apri editor__ e incolla il seguente frammento di codice. Questo codice __deve__ essere aggiunto al __Configurazione evento__ e una successiva __Azione__.
 
 ```javascript
 // Define the event handler function
@@ -162,7 +162,7 @@ window.targetGlobalSettings = {
 ## Collegamenti di supporto
 
 + [Documentazione di Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki)
-+ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 + [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
 + [Utilizzo della documentazione di Adobe Client Data Layer e Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it)
-+ [Introduzione all’Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html)
++ [Introduzione all’Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

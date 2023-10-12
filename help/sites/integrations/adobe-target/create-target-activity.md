@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: f581a4fb-1182-44bb-8c46-4250cf37b55f
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '124'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Scopri come creare e testare un’attività di Adobe Target utilizzando le offer
 
 ## Prerequisiti
 
-Per creare attività di Adobe Target utilizzando le offerte con frammenti di esperienza, è necessario completare la seguente configurazione:
+Per creare attività di Adobe Target utilizzando le offerte dei frammenti di esperienza, è necessario completare la seguente configurazione:
 
 1. [Aggiungere Adobe Target al sito Web AEM](./add-target-launch-extension.md)
 1. [Attivare una chiamata Adobe Target da Launch](./load-and-fire-target.md)
@@ -38,5 +38,5 @@ Per creare attività di Adobe Target utilizzando le offerte con frammenti di esp
 
 ## Collegamenti di supporto
 
-* [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
+* [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 * [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)

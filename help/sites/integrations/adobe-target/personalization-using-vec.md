@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '522'
 ht-degree: 2%
 
 ---
@@ -27,14 +27,14 @@ Scopri come creare un’attività di test A/B di Target utilizzando il Composito
 
 ## Prerequisiti
 
-Per utilizzare il Compositore esperienza visivo su un sito web AEM, è necessario completare la seguente configurazione:
+Per utilizzare il Compositore esperienza visivo su un sito web dell’AEM, è necessario completare la seguente configurazione:
 
 1. [Aggiungere Adobe Target al sito Web AEM](./add-target-launch-extension.md)
 1. [Attivare una chiamata Adobe Target da Launch](./load-and-fire-target.md)
 
 ## Panoramica dello scenario
 
-La pagina Home del sito WKND mostra le attività locali o la cosa migliore da fare intorno a una città sotto forma di schede informative. In qualità di addetto al marketing, ti è stato assegnato il compito di modificare la home page, apportando modifiche testuali al teaser della sezione avventura e comprendendo in che modo migliora la conversione.
+Nella home page del sito WKND, sotto forma di schede informative, vengono visualizzate le attività locali o le operazioni migliori da eseguire in una città. In qualità di addetto al marketing, ti è stato assegnato il compito di modificare la home page, apportando modifiche testuali al teaser della sezione avventura e comprendendo in che modo migliora la conversione.
 
 ## Passaggi per creare un test A/B utilizzando il Compositore esperienza visivo
 
@@ -50,7 +50,7 @@ La pagina Home del sito WKND mostra le attività locali o la cosa migliore da fa
 
    ![URL attività](assets/ab-test-url.png)
 
-1. Dopo aver creato una nuova attività, il Compositore esperienza visivo visualizza due schede a sinistra: *Esperienza A* e *Esperienza B*. Seleziona un&#39;esperienza dall&#39;elenco. È possibile aggiungere nuove esperienze all’elenco utilizzando **Aggiungi esperienza** pulsante.
+1. Dopo aver creato un’attività, il Compositore esperienza visivo visualizza due schede a sinistra: *Esperienza A* e *Esperienza B*. Seleziona un&#39;esperienza dall&#39;elenco. È possibile aggiungere nuove esperienze all’elenco utilizzando **Aggiungi esperienza** pulsante.
 
    ![Esperienza A](assets/experience.png)
 
@@ -86,9 +86,9 @@ La pagina Home del sito WKND mostra le attività locali o la cosa migliore da fa
 
 ## Riepilogo
 
-In questo capitolo, un addetto marketing è stato in grado di creare un’esperienza utilizzando il Compositore esperienza visivo trascinando, scambiando e modificando il layout e il contenuto di una pagina web senza modificare alcun codice per eseguire un test.
+In questo capitolo, un addetto al marketing può creare un’esperienza utilizzando il Compositore esperienza visivo trascinando, scambiando e modificando il layout e il contenuto di una pagina web senza modificare il codice per eseguire un test.
 
 ## Collegamenti di supporto
 
-+ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 + [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
