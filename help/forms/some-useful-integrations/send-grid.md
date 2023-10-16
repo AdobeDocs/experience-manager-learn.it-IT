@@ -8,7 +8,8 @@ topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2023-07-14T00:00:00Z
-source-git-commit: cc24ebca488ea286e8a4605edfb39420c1c10022
+exl-id: 62b73f4b-69d8-4ede-9d57-3d6472d25d5a
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -76,4 +77,3 @@ Il payload di esempio per il servizio è il seguente. Sostituire i valori dei se
 Assicurati che `template_id` corrisponde all&#39;ID del modello di messaggio di posta elettronica dinamico SendGrid e gli indirizzi di posta elettronica sono validi e verificati da SendGrid. I valori in `personalizations` consentono di personalizzare l’e-mail utilizzando i dati immessi dall’utente dal modulo adattivo.
 
 Seguendo questi passaggi e personalizzando il payload fornito, puoi testare in modo efficace l’integrazione dei modelli dinamici SendGrid con AEM Forms.
-

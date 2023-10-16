@@ -10,13 +10,13 @@ jira: KT-13453
 thumbnail: KT-13453.jpeg
 doc-type: article
 last-substantial-update: 2023-06-07T00:00:00Z
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+exl-id: 87143cf9-e932-4ad6-afe2-cce093c520f4
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
 
 ---
-
 
 # Colonne griglia personalizzate
 
@@ -202,13 +202,13 @@ Esempio di JSON per frammenti di contenuto disponibile come elemento del `fragme
 }
 ```
 
-Se sono necessari altri dati per compilare la colonna personalizzata, è possibile effettuare richieste HTTP ad AEM Author per recuperare i dati.
+Se sono necessari altri dati per compilare la colonna personalizzata, è possibile effettuare richieste HTTP all’autore AEM per recuperare i dati.
 
 >[!IMPORTANT]
 >
-> Assicurati che l’istanza di AEM Author sia configurata per consentire [richieste cross-origin](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) dalle origini su cui è in esecuzione l’app AppBuilder. Le origini consentite includono `https://localhost:9080`, l&#39;origine di AppBuilder Stage e l&#39;origine di AppBuilder Production.
+> Assicurati che l’istanza di authoring dell’AEM sia configurata per consentire [richieste cross-origin](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) dalle origini su cui è in esecuzione l’app AppBuilder. Le origini consentite includono `https://localhost:9080`, l&#39;origine di AppBuilder Stage e l&#39;origine di AppBuilder Production.
 >
-> In alternativa, l’estensione può chiamare un [Azione AppBuilder](../../runtime-action.md) che effettua la richiesta ad AEM Author per conto dell’estensione.
+> In alternativa, l’estensione può chiamare un [Azione AppBuilder](../../runtime-action.md) che presenta la richiesta all’autore dell’AEM per conto dell’estensione.
 
 
 ```javascript

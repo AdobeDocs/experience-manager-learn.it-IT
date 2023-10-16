@@ -12,11 +12,11 @@ jira: KT-13328
 thumbnail: KT-13328.jpeg
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
-exl-id: 9f54995f-4ce7-45f2-9021-6fdfe42ff89a
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+exl-id: 0cc3d3bc-e4ea-4ab2-8878-adbcf0c914f5
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '1637'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ Tracciando le visualizzazioni di pagina, il team è in grado di analizzare quali
 
 Per l’integrazione di Adobe Analytics tramite Platform Web SDK sono necessari i seguenti elementi.
 
-Sono stati completati i passaggi di configurazione della **[Integrare Experience Platform Web SDK](./web-sdk.md)** esercitazione.
+Sono stati completati i passaggi di configurazione della **[Integrare Experienci Platform Web SDK](./web-sdk.md)** esercitazione.
 
 In entrata **AEM come Cloud Service**:
 
@@ -60,7 +60,7 @@ In entrata **Experience Platform**:
 
 Se non disponi delle autorizzazioni necessarie, l’amministratore di sistema utilizza [Adobe Admin Console](https://adminconsole.adobe.com/) può concedere le autorizzazioni necessarie.
 
-Prima di approfondire il processo di integrazione di AEM e Analytics tramite Platform Web SDK, _ricapitolare i componenti essenziali e gli elementi chiave_ che sono stati stabiliti nel [Integrare Experience Platform Web SDK](./web-sdk.md) esercitazione. Fornisce una solida base per l’integrazione.
+Prima di approfondire il processo di integrazione di AEM e Analytics tramite Platform Web SDK, _ricapitolare i componenti essenziali e gli elementi chiave_ che sono stati stabiliti nel [Integrare Experienci Platform Web SDK](./web-sdk.md) esercitazione. Fornisce una solida base per l’integrazione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419873?quality=12&learn=on)
 
@@ -228,7 +228,7 @@ Per garantire che la proprietà tag aggiornata sia generata, pubblicata e funzio
 
 + Per verificare che la proprietà tag sia la versione più recente, controlla la data di build.
 
-+ Per verificare i dati dell’evento XDM per PageView e HomePage CTA Click, utilizza l’opzione di menu Experience Platform Web SDK all’interno dell’estensione.
++ Per verificare i dati dell’evento XDM per PageView e HomePage CTA Click, utilizza l’opzione di menu Experienci Platform Web SDK all’interno dell’estensione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419883?quality=12&learn=on)
 
@@ -240,7 +240,7 @@ Per generare una quantità significativa di traffico a scopo di test, viene svil
 
 ## Verifica del set di dati: WKND pageview, dati CTA
 
-Il set di dati è un costrutto di archiviazione e gestione per una raccolta di dati come una tabella di database che segue uno schema. Il set di dati creato in [esercitazione precedente](./web-sdk.md) viene riutilizzato per verificare che i dati di pageview e CTA click vengano acquisiti nel set di dati Experience Platform. Nell’interfaccia utente del set di dati, vengono visualizzati vari dettagli quali record totali, dimensioni e batch acquisiti, insieme a un grafico a barre visivamente accattivante.
+Il set di dati è un costrutto di archiviazione e gestione per una raccolta di dati come una tabella di database che segue uno schema. Il set di dati creato in [esercitazione precedente](./web-sdk.md) viene riutilizzato per verificare che i dati di pageview e CTA click vengano acquisiti nel set di dati Experienci Platform. Nell’interfaccia utente del set di dati, vengono visualizzati vari dettagli quali record totali, dimensioni e batch acquisiti, insieme a un grafico a barre visivamente accattivante.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419885?quality=12&learn=on)
 
@@ -272,9 +272,9 @@ Implementando i passaggi consigliati e utilizzando le risorse fornite, come il d
 
 ## Risorse aggiuntive
 
-+ [Integrare Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform/web-sdk.html)
++ [Integrare Experienci Platform Web SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform/web-sdk.html)
 + [Utilizzo di Adobe Client Data Layer con i Componenti core](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=it)
-+ [Integrazione dei tag di raccolta dati Experience Platform e AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
++ [Integrazione dei tag di raccolta dati Experienci Platform e AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=it)
 + [Panoramica di Adobe Experience Platform Web SDK e Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
 + [Tutorial su Raccolta dati](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
-+ [Panoramica di Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [Panoramica Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

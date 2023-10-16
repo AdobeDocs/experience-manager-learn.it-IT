@@ -10,17 +10,17 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-16T00:00:00Z
 jira: KT-13270
 thumbnail: KT-13270.jpeg
-source-git-commit: 12b3888552d5a131628dabf380840f0586798ea5
+exl-id: 2b726473-5a32-4046-bce8-6da3c57a1b60
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-
 # API e React di AEM headless
 
-Benvenuti in questo capitolo di esercitazione in cui esploreremo la configurazione di un’app React per la connessione con le API headless di Adobe Experience Manager (AEM) tramite l’SDK AEM headless. Scopriremo come recuperare i dati dei frammenti di contenuto dalle API GraphQL dell’AEM e come visualizzarli nell’app React.
+Benvenuti in questo capitolo di esercitazione in cui esploreremo la configurazione di un’app React per connettersi con le API headless di Adobe Experience Manager (AEM) tramite l’SDK AEM headless. Scopriremo come recuperare i dati dei frammenti di contenuto dalle API GraphQL dell’AEM e come visualizzarli nell’app React.
 
 Le API headless dell’AEM consentono di accedere ai contenuti dell’AEM da qualsiasi app client. Ti guideremo attraverso la configurazione della tua app React per connettersi alle API AEM headless tramite l’SDK AEM headless. Questa configurazione stabilisce un canale di comunicazione riutilizzabile tra l’app React e l’AEM.
 

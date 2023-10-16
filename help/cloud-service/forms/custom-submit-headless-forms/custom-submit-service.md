@@ -9,13 +9,13 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 13520
-source-git-commit: 2dceb4dd4ee1079c100c9cbca94332d61d17ef57
+exl-id: c23275d7-daf7-4a42-83b6-4d04b297c470
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 1%
 
 ---
-
 
 # Creazione di un invio personalizzato
 
@@ -125,15 +125,3 @@ Dopo aver eseguito correttamente la pipeline, dovresti essere in grado di associ
 ## Passaggi successivi
 
 [Visualizzare la risposta personalizzata nell’app di react](./handle-response-react-app.md)
-
-
-
-
-
-
-
-
-
-
-
-

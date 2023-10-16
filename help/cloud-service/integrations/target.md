@@ -1,6 +1,6 @@
 ---
 title: Integrare AEM Headless e Target
-description: Scopri come integrare AEM Headless e Adobe Target per personalizzare le esperienze headless utilizzando l’SDK per web di Experience Platform.
+description: Scopri come integrare AEM Headless e Adobe Target per personalizzare le esperienze headless utilizzando l’SDK per web di Experienci Platform.
 version: Cloud Service
 feature: Content Fragments, Integrations
 topic: Personalization, Headless
@@ -12,8 +12,8 @@ jira: KT-12433
 thumbnail: KT-12433.jpeg
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM headless as a Cloud Service" before-title="false"
-exl-id: 60a3e18a-090f-4b0e-8ba0-d4afd30577dd
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+exl-id: be886c64-9b8e-498d-983c-75f32c34be4b
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '1679'
 ht-degree: 1%
@@ -60,11 +60,11 @@ Il Cloud Service Adobe Target, configurato in una configurazione in base al cont
 
 +++Espandi per istruzioni dettagliate
 
-1. Accedi a __Servizio AEM Author__ come amministratore DAM
+1. Accedi a __Servizio di authoring AEM__ come amministratore DAM
 1. Accedi a __Risorse > File__, individua la cartella di risorse con `/conf` applicato a
 1. Seleziona la cartella delle risorse e fai clic su __Proprietà__ dalla barra delle azioni superiore
 1. Seleziona la scheda __Servizi cloud__
-1. Assicurati che la configurazione cloud sia impostata sulla configurazione in base al contesto (`/conf`) che contiene la configurazione di Cloud Services Adobe Target.
+1. Assicurati che la configurazione cloud sia impostata sulla configurazione in base al contesto (`/conf`) che contiene la configurazione di Cloud Service Adobe Target.
 1. Seleziona __Adobe Target__ dal __Configurazioni Cloud Service__ a discesa.
 1. Seleziona __Salva e chiudi__ in alto a destra
 
@@ -116,7 +116,7 @@ Frammenti di contenuto esistenti in [gerarchia di cartelle di AEM Assets configu
 1. Seleziona la __Tipo__ e selezionando __Frammenti di contenuto__
 1. Verifica che il frammento di contenuto esportato dall’AEM venga visualizzato nell’elenco
    + Passa il puntatore del mouse sull’offerta e seleziona __Visualizza__ pulsante
-   + Rivedi __Informazioni offerta__ e visualizzare __Collegamento profondo AEM__ che apre il frammento di contenuto direttamente nel servizio AEM Author
+   + Rivedi __Informazioni offerta__ e visualizzare __Collegamento profondo AEM__ che apre il frammento di contenuto direttamente nel servizio di authoring AEM
 
 +++
 
@@ -147,7 +147,7 @@ In questo esempio utilizziamo una semplice attività A/B, ma è possibile utiliz
    + In questo esempio, esegui il targeting di una posizione personalizzata denominata `wknd-adventure-promo`
 1. Sotto __Contenuto__ seleziona il contenuto predefinito, quindi fai clic su __Modifica frammento di contenuto__
 1. Seleziona il frammento di contenuto esportato da distribuire per questa esperienza e fai clic su __Fine__
-1. Rivedi il JSON per l’offerta di frammenti di contenuto nell’area di testo Contenuto; si tratta dello stesso JSON disponibile nel servizio di authoring di AEM tramite l’azione Anteprima del frammento di contenuto.
+1. Rivedi il JSON per l’offerta di frammenti di contenuto nell’area di testo del contenuto; si tratta dello stesso JSON disponibile nel servizio di authoring di AEM tramite l’azione Anteprima del frammento di contenuto.
 1. Nella barra a sinistra, aggiungi un’esperienza e seleziona un’offerta di frammento di contenuto diversa da distribuire
 1. Seleziona __Successivo__ e configura le regole di targeting in base alle esigenze dell’attività
    + In questo esempio, lascia il test A/B come suddivisione manuale 50/50.
@@ -463,6 +463,6 @@ Le esperienze mobili Android™ e iOS possono essere personalizzate seguendo mod
 
    ![Offerte di esperienza](./assets/target/offers-in-app.png)
 
-## Congratulazioni. 
+## Congratulazioni.
 
 Ora che abbiamo configurato l’AEM as a Cloud Service per esportare i frammenti di contenuto in Adobe Target, abbiamo utilizzato le offerte di frammenti di contenuto in un’attività Adobe Target e abbiamo fatto emergere tale attività in un’app AEM headless, personalizzando l’esperienza.

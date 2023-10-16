@@ -1,6 +1,6 @@
 ---
-title: Integrare AEM Sites e Experience Platform Web SDK
-description: Scopri come integrare AEM Sites as a Cloud Service con Experience Platform Web SDK. Questo passaggio fondamentale è essenziale per l’integrazione di prodotti Adobe Experience Cloud, come Adobe Analytics, Target o prodotti innovativi recenti come Real-time Customer Data Platform, Customer Journey Analytics e Journey Optimizer.
+title: Integrare AEM Sites e Experienci Platform Web SDK
+description: Scopri come integrare AEM Sites as a Cloud Service con Experienci Platform Web SDK. Questo passaggio fondamentale è essenziale per l’integrazione di prodotti Adobe Experience Cloud, come Adobe Analytics, Target o prodotti innovativi recenti come Real-time Customer Data Platform, Customer Journey Analytics e Journey Optimizer.
 version: Cloud Service
 feature: Integrations
 topic: Integrations, Architecture
@@ -12,25 +12,25 @@ jira: KT-13156
 thumbnail: KT-13156.jpeg
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
-exl-id: b5182d35-ec38-4ffd-ae5a-ade2dd3f856d
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '1354'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-# Integrare AEM Sites e Experience Platform Web SDK
+# Integrare AEM Sites e Experienci Platform Web SDK
 
-Scopri come integrare AEM as a Cloud Service con Experience Platform [SDK per web](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html). Questo passaggio fondamentale è essenziale per l’integrazione di prodotti Adobe Experience Cloud, come Adobe Analytics, Target o prodotti innovativi recenti come Real-time Customer Data Platform, Customer Journey Analytics e Journey Optimizer.
+Scopri come integrare AEM as a Cloud Service con Experienci Platform [SDK per web](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html). Questo passaggio fondamentale è essenziale per l’integrazione di prodotti Adobe Experience Cloud, come Adobe Analytics, Target o prodotti innovativi recenti come Real-time Customer Data Platform, Customer Journey Analytics e Journey Optimizer.
 
 Scopri anche come raccogliere e inviare [WKND - progetto Adobe Experience Manager di esempio](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) dati pageview in [Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html).
 
-Dopo aver completato questa configurazione, hai implementato una solida base. Inoltre, sei pronto per implementare Experience Platform utilizzando applicazioni come [Real-time Customer Data Platform (Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=it), [Customer Journey Analytics (CJA)](https://experienceleague.adobe.com/docs/customer-journey-analytics.html), e [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/docs/journey-optimizer.html). L’implementazione avanzata contribuisce a migliorare il coinvolgimento dei clienti standardizzando il web e i dati dei clienti.
+Dopo aver completato questa configurazione, hai implementato una solida base. Inoltre, sei pronto per implementare Experienci Platform utilizzando applicazioni come [Real-time Customer Data Platform (Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=it), [Customer Journey Analytics (CJA)](https://experienceleague.adobe.com/docs/customer-journey-analytics.html), e [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/docs/journey-optimizer.html). L’implementazione avanzata contribuisce a migliorare il coinvolgimento dei clienti standardizzando il web e i dati dei clienti.
 
 ## Prerequisiti
 
-Durante l’integrazione di Experience Platform Web SDK sono necessari i seguenti elementi.
+Durante l’integrazione di Experienci Platform Web SDK sono necessari i seguenti elementi.
 
 In entrata **AEM come Cloud Service**:
 
@@ -74,7 +74,7 @@ Acquisisci familiarità con il concetto di flussi di dati e argomenti correlati,
 
 ## Crea proprietà tag - Experience Platform
 
-Scopri come creare una proprietà tag (precedentemente nota come Launch) in Experience Platform per aggiungere la libreria JavaScript dell’SDK web al sito web WKND. La proprietà tag appena definita dispone delle seguenti risorse:
+Scopri come creare una proprietà tag (precedentemente nota come Launch) in Experienci Platform per aggiungere la libreria JavaScript dell’SDK web al sito web WKND. La proprietà tag appena definita dispone delle seguenti risorse:
 
 + Estensioni tag: [Core](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) e [Adobe Experience Platform Web SDK](https://exchange.adobe.com/apps/ec/106387/aep-web-sdk)
 + Elementi dati: gli elementi dati del tipo di codice personalizzato che estraggono nome-pagina, sezione-sito e nome-host utilizzando l’Adobe del livello dati client del sito WKND. Inoltre, l’elemento dati del tipo di oggetto XDM conforme alla nuova generazione dello schema XDM WKND precedente [Crea schema XDM](#create-xdm-schema---experience-platform) passaggio.
@@ -173,23 +173,23 @@ Per ulteriori informazioni sull’integrazione dei componenti core AEM con Adobe
 
 ## Connettere la proprietà Tag a AEM
 
-Scopri come collegare all’AEM la proprietà tag creata di recente tramite Adobe IMS e la configurazione di Adobe Launch nell’AEM. Quando viene stabilito un ambiente as a Cloud Service per l’AEM, vengono generate automaticamente diverse configurazioni dell’account tecnico Adobe IMS, incluso Adobe Launch. Tuttavia, per la versione AEM 6.5, è necessario configurarne una manualmente.
+Scopri come collegare all’AEM la proprietà tag creata di recente tramite Adobe IMS e la configurazione di Adobe Launch nell’AEM. Quando viene stabilito un ambiente as a Cloud Service per l’AEM, vengono generate automaticamente diverse configurazioni dell’account tecnico Adobe IMS, incluso Adobe Launch. Tuttavia, per la versione AEM 6.5, è necessario configurarne manualmente una.
 
 Dopo aver collegato la proprietà tag, il sito WKND è in grado di caricare la libreria JavaScript della proprietà tag nelle pagine web utilizzando la configurazione del servizio cloud Adobe Launch.
 
 ### Verifica del caricamento della proprietà tag in WKND
 
-Utilizzo di Adobe Experience Platform Debugger [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) o [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) , verifica se la proprietà tag è in fase di caricamento sulle pagine WKND. Puoi verificare:
+Utilizzo di Adobi Experience Platform Debugger [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) o [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) , verifica se la proprietà tag è in fase di caricamento sulle pagine WKND. Puoi verificare:
 
 + Dettagli della proprietà tag come estensione, versione, nome e altro ancora.
 + Versione della libreria dell’SDK web di Platform, ID dello stream di dati
-+ Oggetto XDM come parte `events` attributo in Experience Platform Web SDK
++ Oggetto XDM come parte `events` attributo in Experienci Platform Web SDK
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418897?quality=12&learn=on)
 
 ## Crea set di dati - Experience Platform
 
-I dati di pageview raccolti tramite Web SDK vengono memorizzati nel data lake di Experience Platform come set di dati. Il set di dati è un costrutto di archiviazione e gestione per una raccolta di dati come una tabella di database che segue uno schema. Scopri come creare un set di dati e configurare lo stream di dati creato in precedenza per inviare dati all’Experience Platform.
+I dati di pageview raccolti tramite Web SDK vengono memorizzati nel data lake di Experienci Platform come set di dati. Il set di dati è un costrutto di archiviazione e gestione per una raccolta di dati come una tabella di database che segue uno schema. Scopri come creare un set di dati e configurare lo stream di dati creato in precedenza per inviare dati all’Experience Platform.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418898?quality=12&learn=on)
@@ -197,16 +197,16 @@ I dati di pageview raccolti tramite Web SDK vengono memorizzati nel data lake di
 Il [Panoramica sui set di dati](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) fornisce ulteriori informazioni su concetti, configurazioni e altre funzionalità di acquisizione.
 
 
-## Dati WKND pageview in Experience Platform
+## Dati WKND pageview in Experienci Platform
 
-Dopo la configurazione dell’SDK per web con AEM, in particolare sul sito WKND, è ora di generare il traffico navigando tra le pagine del sito. Quindi verifica che i dati di pageview vengano acquisiti nel set di dati Experience Platform. Nell’interfaccia utente del set di dati, vengono visualizzati vari dettagli quali record totali, dimensioni e batch acquisiti, insieme a un grafico a barre visivamente accattivante.
+Dopo la configurazione dell’SDK per web con AEM, in particolare sul sito WKND, è ora di generare il traffico navigando tra le pagine del sito. Quindi verifica che i dati di pageview vengano acquisiti nel set di dati Experienci Platform. Nell’interfaccia utente del set di dati, vengono visualizzati vari dettagli quali record totali, dimensioni e batch acquisiti, insieme a un grafico a barre visivamente accattivante.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418899?quality=12&learn=on)
 
 
 ## Riepilogo
 
-Ottimo lavoro Hai completato la configurazione dell’AEM con Experience Platform Web SDK per raccogliere e acquisire dati da un sito web. Con questa base, ora puoi esplorare ulteriori possibilità per migliorare e integrare prodotti come Analytics, Target, Customer Journey Analytics (CJA) e molti altri per creare esperienze ricche e personalizzate per i tuoi clienti. Continua ad apprendere ed esplorare per sfruttare appieno il potenziale di Adobe Experience Cloud.
+Ottimo lavoro Hai completato la configurazione dell’AEM con Experienci Platform Web SDK per raccogliere e acquisire dati da un sito web. Con questa base, ora puoi esplorare ulteriori possibilità per migliorare e integrare prodotti come Analytics, Target, Customer Journey Analytics (CJA) e molti altri per creare esperienze ricche e personalizzate per i tuoi clienti. Continua ad apprendere ed esplorare per sfruttare appieno il potenziale di Adobe Experience Cloud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418900?quality=12&learn=on)
 
@@ -218,7 +218,7 @@ Ottimo lavoro Hai completato la configurazione dell’AEM con Experience Platfor
 ## Risorse aggiuntive
 
 + [Utilizzo di Adobe Client Data Layer con i Componenti core](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=it)
-+ [Integrazione dei tag di raccolta dati Experience Platform e AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
++ [Integrazione dei tag di raccolta dati Experienci Platform e AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=it)
 + [Panoramica di Adobe Experience Platform Web SDK e Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
 + [Tutorial su Raccolta dati](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
-+ [Panoramica di Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [Panoramica Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

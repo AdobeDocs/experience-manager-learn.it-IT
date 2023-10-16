@@ -11,7 +11,8 @@ thumbnail: null
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Assets Essentials" before-title="false"
 last-substantial-update: 2022-10-13T00:00:00Z
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+exl-id: b8d9b213-867e-457d-932d-1fedc4e1b1d7
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 1%
@@ -25,7 +26,7 @@ Scopri come integrare Workfront e AEM Assets Essentials per semplificare la gest
 Per integrare Workfront con AEM Assets Essentials, segui questi passaggi:
 
 1. [Configurare l’integrazione](./configure.md)
-1. [Mappare i campi Workfront ai metadati di Assets Essentials](./map-metadata.md)
+1. [Mappare i campi Workfront ai metadati degli Assets Essentials](./map-metadata.md)
 
 Una volta configurata l’integrazione, puoi:
 

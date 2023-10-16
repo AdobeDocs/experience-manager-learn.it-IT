@@ -8,13 +8,13 @@ level: Beginner
 version: Cloud Service
 topic: Integrations
 kt: 13717
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+exl-id: 7469aa7f-1794-40dd-990c-af5d45e85223
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 10%
 
 ---
-
 
 # Componente Pagina 
 
@@ -36,7 +36,7 @@ Accedi all’istanza AEM Forms locale predisposta per il cloud. Crea la seguente
 | jcr:title | Stringa | Pagina modello modulo adattivo |
 | sling:resourceSuperType | Stringa | `fd/af/components/page2/aftemplatedpage` |
 
-Copia il `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp` e incollalo sotto il `storeandfetch` nodo. Rinomina il `aftemplatedpage.jsp` a `storeandfetch.jsp`.
+Copia il `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp` e incollarlo sotto `storeandfetch` nodo. Rinomina il `aftemplatedpage.jsp` a `storeandfetch.jsp`.
 
 Apri `storeandfetch.jsp` e aggiungi la seguente riga:
 
@@ -84,4 +84,3 @@ In questo codice si ottiene il valore del parametro di richiesta **GUID** e memo
 ### Passaggi successivi
 
 [Associare il componente Pagina al modello](./associate-page-component.md)
-

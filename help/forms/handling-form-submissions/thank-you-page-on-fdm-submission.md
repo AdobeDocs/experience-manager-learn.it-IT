@@ -14,7 +14,8 @@ role: Developer
 level: Beginner
 kt: 13900
 last-substantial-update: 2023-09-09T00:00:00Z
-source-git-commit: adfb805615d2abe34458d5aea685ae47517c5548
+exl-id: 18648914-91cc-470d-8f27-30b750eb2f32
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -52,6 +53,3 @@ Crea un modulo adattivo e configura l’invio del modulo utilizzando l’azione 
 Crea un modulo di ringraziamento basato su questo modello Associa questa pagina di ringraziamento al modulo principale Modifica il codice JSP in [createXml.jsp](http://localhost:4502/apps/thank-you-page-template/component/page/thankyoupage/createxml.jsp) per generare l’xml necessario per precompilare il modulo adattivo.
 Visualizza l’anteprima e invia il modulo adattivo.
 La pagina di ringraziamento deve essere visualizzata e precompilata con i dati specificati nel file XML
-
-
-
