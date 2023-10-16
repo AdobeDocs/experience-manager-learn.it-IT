@@ -9,9 +9,9 @@ role: Developer
 level: Intermediate
 exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
 last-substantial-update: 2021-02-07T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 5fc4a11b7f7f26a62f49cc8614e6bf699cc1697a
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -47,14 +47,11 @@ Per creare il primo file swagger/OpenAPI, segui la [Documentazione di OpenAPI](h
 >[!NOTE]
 > AEM Forms supporta la versione 2.0 delle specifiche OpenAPI (FKA Swagger).
 
-Utilizza il [editor swagger](https://editor.swagger.io/) creare il file swagger per descrivere le operazioni che consentono di recuperare tutti i paesi e gli elementi figlio del paese o dello stato. Il file swagger può essere creato in formato JSON o YAML. Il file Swagger completato può essere scaricato da [qui](assets/swagger-files.zip)
-I file swagger descrivono la seguente API REST
-* [Ottieni tutti i paesi](http://api.geonames.org/countryInfoJSON?username=yourusername)
-* [Ottieni elementi figlio dell&#39;oggetto Geoname](http://api.geonames.org/childrenJSON?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+Utilizza il [editor swagger](https://editor.swagger.io/) creare il file swagger per descrivere le operazioni che consentono di recuperare tutti i paesi e gli elementi figlio del paese o dello stato. Il file swagger può essere creato in formato JSON o YAML.
 
 ## Creare origini dati
 
-Per integrare AEM/AEM Forms con applicazioni di terze parti, è necessario [crea origine dati](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) nella configurazione dei servizi cloud. Utilizza il [file swagger](assets/swagger-files.zip) per creare le origini dati.
+Per integrare AEM/AEM Forms con applicazioni di terze parti, è necessario [crea origine dati](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) nella configurazione dei servizi cloud. Utilizza il [file swagger](assets/geonames-swagger-files.zip) per creare le origini dati.
 Dovrai creare 2 origini dati (una per recuperare tutti i paesi e l’altra per ottenere elementi figlio)
 
 
@@ -84,3 +81,13 @@ L&#39;elenco dei paesi viene compilato la prima volta che il modulo viene inizia
 
 Aggiungi 2 elenchi a discesa denominati contee e città nel modulo per elencare le contee e le città in base al paese e allo stato/provincia selezionati.
 ![esercizio](assets/cascading-drop-down-exercise.png)
+
+
+### Risorse di esempio
+
+È possibile scaricare le seguenti risorse per iniziare subito a creare l’esempio di elenco a discesa a cascata I file Swagger completati possono essere scaricati da [qui](assets/geonames-swagger-files.zip)
+I file swagger descrivono la seguente API REST
+* [Ottieni tutti i paesi](http://api.geonames.org/countryInfoJSON?username=yourusername)
+* [Ottieni elementi figlio dell&#39;oggetto Geoname](http://api.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+
+Il completamento [Il modello dati del modulo può essere scaricato da qui](assets/geonames-api-form-data-model.zip)
