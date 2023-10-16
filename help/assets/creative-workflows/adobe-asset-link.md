@@ -1,15 +1,16 @@
 ---
 title: Adobe Asset Link e AEM
-description: Le risorse Adobe Experience Manager possono essere utilizzate da designer e utenti creativi nelle loro applicazioni desktop Adobe Creative Cloud preferite. L’estensione Adobe Asset Link per Adobe Creative Cloud for enterprise estende la funzionalità di ricerca e navigazione, ordinamento, anteprima, caricamento di risorse, estrazione, modifica, archiviazione e visualizzazione dei metadati delle risorse AEM negli strumenti Creative Cloud come Adobe XD, Photoshop, InDesign e Illustrator.
+description: Le risorse Adobe Experience Manager possono essere utilizzate da designer e utenti creativi nelle applicazioni desktop Adobe Creative Cloud preferite. L’estensione Adobe Asset Link per Adobe Creative Cloud for enterprise estende la funzionalità di ricerca e navigazione, ordinamento, anteprima, caricamento di risorse, estrazione, modifica, archiviazione e visualizzazione dei metadati delle risorse AEM negli strumenti Creative Cloud come Adobe XD, Photoshop, InDesign e Illustrator.
 feature: Adobe Asset Link
 version: 6.4, 6.5, Cloud Service
 topic: Content Management
 role: User
 level: Beginner
 thumbnail: 28988.jpg
+jira: KT-8413, KT-3707
 last-substantial-update: 2022-06-25T00:00:00Z
 exl-id: 6c49f8c2-f468-4b29-b7b6-029c8ab39ce9
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 8dfc538e93ea5dc114cf0a5d57dd82d924e476ff
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 2%
@@ -18,7 +19,7 @@ ht-degree: 2%
 
 # Adobe Asset Link 3.0
 
-Le risorse Adobe Experience Manager possono essere utilizzate da designer e utenti creativi nelle loro applicazioni desktop Adobe Creative Cloud preferite.
+Le risorse Adobe Experience Manager possono essere utilizzate da designer e utenti creativi nelle applicazioni desktop Adobe Creative Cloud preferite.
 
 L’estensione Adobe Asset Link per Adobe Creative Cloud for enterprise estende la funzionalità di ricerca e navigazione, ordinamento, anteprima, caricamento di risorse, estrazione, modifica, archiviazione e visualizzazione dei metadati delle risorse AEM nelle applicazioni Creative Cloud.
 
@@ -44,7 +45,7 @@ Il video seguente illustra un flusso di lavoro comune utilizzato dai creativi ch
    + Adobe InDesign
 
 + Autenticazione automatica per AEM tramite Enterprise ID o Federated ID Adobe
-+ Sfogliare e cercare risorse digitali in AEM
++ Sfogliare e cercare risorse digitali nell’AEM
 + Accedi ai dettagli del file per le risorse residenti in AEM da con il pannello:
    + Miniatura 
    + Metadati di base
@@ -95,10 +96,10 @@ Funzionamento dell’autenticazione Adobe Adobe Asset Link nel contesto di Ident
 ![Architettura Adobe Asset Link](assets/adobe-asset-link-article-understand.png)
 
 1. L’estensione Adobe Asset Link effettua una richiesta di autorizzazione, tramite l’app desktop Adobe Creative Cloud, per Adobe Identity Manage Service (IMS) e, in caso di esito positivo, riceve un token Bearer.
-1. Adobe l’estensione Asset Link si connette ad AEM Author tramite HTTP(S), incluso il token Bearer ottenuto in **Passaggio 1**, utilizzando lo schema (HTTP/HTTPS), l’host e la porta forniti nel JSON delle impostazioni dell’estensione.
+1. L’estensione Adobe Asset Link si connette all’istanza di authoring AEM tramite HTTP(S), incluso il token Bearer ottenuto in **Passaggio 1**, utilizzando lo schema (HTTP/HTTPS), l’host e la porta forniti nel JSON delle impostazioni dell’estensione.
 1. Il gestore di autenticazione Bearer dell’AEM estrae il token Bearer dalla richiesta e lo convalida con Adobe IMS.
 1. Dopo che Adobe IMS convalida il token Bearer, viene creato un utente in AEM (se non esiste già) e sincronizza i dati di profilo e gruppo/appartenenze da Adobe IMS. All’utente AEM viene rilasciato un token di accesso AEM standard, che viene rimandato all’estensione Adobe Asset Link come cookie nella risposta HTTP(S).
-1. Interazioni successive (ossia. esplorazione, ricerca, archiviazione/estrazione di risorse e così via) Con l’estensione Adobe Asset Link, si ottengono richieste HTTP(S) per AEM Author che vengono convalidate utilizzando il token di accesso AEM, utilizzando il gestore di autenticazione del token AEM standard.
+1. Interazioni successive (ossia. esplorazione, ricerca, archiviazione/estrazione di risorse e così via) Con l’estensione Adobe Asset Link, si ottengono richieste HTTP(S) per l’authoring AEM convalidate utilizzando il token di accesso AEM, utilizzando il gestore di autenticazione token AEM standard.
 
 >[!NOTE]
 >
