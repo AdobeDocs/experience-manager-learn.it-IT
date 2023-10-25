@@ -27,15 +27,15 @@ Il `ImageRef` Il tipo dispone di quattro opzioni URL per i riferimenti ai conten
 
 + `_path` è il percorso di riferimento nell’AEM e non include un’origine AEM (nome host)
 + `_dynamicUrl` è l’URL completo della risorsa immagine preferita ottimizzata per il web.
-   + Il `_dynamicUrl` non include un’origine AEM, pertanto il dominio (AEM Author o AEM Publish Service) deve essere fornito dall’applicazione client.
-+ `_authorUrl` è l’URL completo della risorsa immagine in AEM Author
+   + Il `_dynamicUrl` non include un’origine AEM, pertanto il dominio (servizio di authoring AEM o di pubblicazione AEM) deve essere fornito dall’applicazione client.
++ `_authorUrl` è l’URL completo della risorsa immagine nell’istanza di authoring AEM
    + [Autore AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) può essere utilizzato per fornire un’esperienza di anteprima dell’applicazione headless.
-+ `_publishUrl` è l’URL completo della risorsa immagine in AEM Publish
++ `_publishUrl` è l’URL completo della risorsa immagine nella pubblicazione AEM
    + [Pubblicazione AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) è in genere il punto da cui l’implementazione di produzione dell’applicazione headless visualizza le immagini.
 
 Il `_dynamicUrl` è l’URL preferito da utilizzare per le risorse di immagini e deve sostituire l’utilizzo di `_path`, `_authorUrl`, e `_publishUrl` quando possibile.
 
-|  | AEM as a Cloud Service | AEM AS A CLOUD SERVICE RDE | SDK AEM | AEM 6.5 |
+|                                | AEM as a Cloud Service | AEM AS A CLOUD SERVICE RDE | SDK AEM | AEM 6.5 |
 | ------------------------------ |:----------------------:|:--------------------------:|:-------:|:-------:|
 | Supporta le immagini ottimizzate per il web? | ✔ | ✔ | ✘ | ✘ |
 

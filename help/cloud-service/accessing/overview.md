@@ -1,6 +1,6 @@
 ---
 title: Configurazione dell’accesso a AEM as a Cloud Service
-description: AEM as a Cloud Service è la modalità nativa per il cloud di sfruttare le applicazioni AEM e, come tale, sfrutta Adobe IMS (Identity Management System) per facilitare l’accesso degli utenti, sia amministratori che utenti normali, al servizio AEM Author. Scopri in che modo gli utenti Adobe IMS, i gruppi di utenti e i profili di prodotto vengono utilizzati insieme ai gruppi e alle autorizzazioni AEM per fornire accesso specifico ad AEM Author.
+description: AEM as a Cloud Service è la modalità nativa per il cloud di sfruttare le applicazioni AEM e, come tale, sfrutta Adobe IMS (Identity Management System) per facilitare l’accesso degli utenti, sia amministratori che utenti normali, al servizio AEM Author. Scopri in che modo gli utenti Adobe IMS, i gruppi di utenti e i profili di prodotto vengono utilizzati insieme ai gruppi e alle autorizzazioni dell’AEM per fornire accesso specifico all’istanza di authoring dell’AEM.
 version: Cloud Service
 topic: Administration, Security
 feature: User and Groups
@@ -32,7 +32,7 @@ Scopri in che modo gli utenti, i gruppi e i profili di prodotto di Adobe IMS ven
 
 ## Utenti Adobe IMS
 
-Gli utenti che richiedono l’accesso al servizio AEM Author vengono gestiti come [Utenti Adobe IMS](https://helpx.adobe.com/it/enterprise/using/set-up-identity.html) in [AdminConsole di Adobe](https://adminconsole.adobe.com). Scopri cosa si intende per utenti di Adobe IMS, nonché come accedervi e gestirli in Admin Console.
+Gli utenti che richiedono l’accesso al servizio di authoring dell’AEM vengono gestiti come [Utenti Adobe IMS](https://helpx.adobe.com/it/enterprise/using/set-up-identity.html) in [AdminConsole di Adobe](https://adminconsole.adobe.com). Scopri cosa si intende per utenti di Adobe IMS, nonché come accedervi e gestirli in Admin Console.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Gli utenti che richiedono l’accesso al servizio AEM Author vengono gestiti com
 
 ## Gruppi di utenti Adobe IMS
 
-Gli utenti che accedono al servizio AEM Author devono essere organizzati in gruppi logici utilizzando [Gruppi di utenti Adobe IMS](https://helpx.adobe.com/it/enterprise/using/user-groups.html) in [AdminConsole di Adobe](https://adminconsole.adobe.com). I gruppi di utenti Adobe IMS non forniscono autorizzazioni dirette o accesso all’AEM (questo è il compito di [Profili di prodotto di Adobe IMS](#adobe-ims-product-profiles)), tuttavia, rappresentano un ottimo modo per definire raggruppamenti logici di utenti che possono a loro volta essere convertiti in livelli specifici di accesso nel servizio di authoring di AEM, utilizzando i gruppi e le autorizzazioni AEM.
+Gli utenti che accedono al servizio di authoring dell’AEM devono essere organizzati in gruppi logici utilizzando [Gruppi di utenti Adobe IMS](https://helpx.adobe.com/it/enterprise/using/user-groups.html) in [AdminConsole di Adobe](https://adminconsole.adobe.com). I gruppi di utenti Adobe IMS non forniscono autorizzazioni dirette o accesso all’AEM (questo è il compito di [Profili di prodotto di Adobe IMS](#adobe-ims-product-profiles)), tuttavia, rappresentano un ottimo modo per definire raggruppamenti logici di utenti che possono a loro volta essere convertiti a livelli specifici di accesso nel servizio di authoring dell’AEM, utilizzando i gruppi e le autorizzazioni dell’AEM.
 
 [Informazioni sui gruppi di utenti Adobe IMS](./adobe-ims-user-groups.md)
 
@@ -64,7 +64,7 @@ Adobe Experience Manager si basa sugli utenti, i gruppi di utenti e i profili di
 
 ## Procedura dettagliata per l’accesso e le autorizzazioni
 
-Adobe Un riassunto della procedura dettagliata per la configurazione di utenti Adobe IMS, gruppi di utenti e profili di prodotto in AdminConsole e per sfruttare queste astrazioni di Adobe IMS in AEM Author per definire e gestire autorizzazioni specifiche basate su gruppi.
+Adobe Una procedura dettagliata ridotta per la configurazione di utenti Adobe IMS, gruppi di utenti e profili di prodotto in AdminConsole e per sfruttare queste astrazioni di Adobe IMS in AEM Author per definire e gestire autorizzazioni specifiche basate su gruppi.
 
 [Procedura dettagliata per l’accesso e le autorizzazioni AEM](./walk-through.md)
 

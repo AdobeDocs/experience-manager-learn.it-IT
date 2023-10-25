@@ -52,7 +52,7 @@ Esplora le funzionalità del GraphQL AEM creando un’app React che utilizza fra
 
 ## GraphQL AEM e servizi di contenuti AEM
 
-|  | API GraphQL dell’AEM | Servizi di contenuti AEM |
+|                                | API GraphQL dell’AEM | Servizi di contenuti AEM |
 |--------------------------------|:-----------------|:---------------------|
 | Definizione schema | Modelli per frammenti di contenuto strutturati | Componenti AEM |
 | Contenuto | Frammenti di contenuto | Componenti AEM |

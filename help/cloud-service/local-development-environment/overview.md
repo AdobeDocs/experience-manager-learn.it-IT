@@ -27,7 +27,7 @@ ht-degree: 14%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=it" text="Linee guida per lo sviluppo"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html?lang=it" text="Nozioni di base sullo sviluppo"
 
-Questo tutorial illustra come configurare un ambiente di sviluppo locale per Adobe Experience Manager (AEM) utilizzando l’SDK as a Cloud Service dell’AEM. Sono inclusi gli strumenti di sviluppo necessari per sviluppare, generare e compilare progetti AEM, nonché i tempi di esecuzione locali che consentono agli sviluppatori di convalidare rapidamente le nuove funzioni a livello locale prima di distribuirle a AEM as a Cloud Service tramite Adobe Cloud Manager.
+Questo tutorial illustra come configurare un ambiente di sviluppo locale per Adobe Experience Manager (AEM) utilizzando l’SDK as a Cloud Service per l’AEM. Sono inclusi gli strumenti di sviluppo necessari per sviluppare, generare e compilare progetti AEM, nonché i tempi di esecuzione locali che consentono agli sviluppatori di convalidare rapidamente le nuove funzioni a livello locale prima di distribuirle a AEM as a Cloud Service tramite Adobe Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32565?quality=12&learn=on)
 
@@ -36,7 +36,7 @@ Questo tutorial illustra come configurare un ambiente di sviluppo locale per Ado
 L’ambiente di sviluppo locale per l’AEM può essere suddiviso in tre gruppi logici:
 
 + Il __Progetto AEM__ contiene il codice personalizzato, la configurazione e il contenuto dell’applicazione AEM personalizzata.
-+ Il __Runtime AEM locale__ che esegue localmente una versione locale dei servizi AEM Author e Publish.
++ Il __Runtime AEM locale__ che esegue localmente una versione locale dei servizi Author e Publish dell’AEM.
 + Il __Runtime Dispatcher locale__ che esegue una versione locale di Apache HTTP Web Server e Dispatcher.
 
 Questo tutorial illustra come installare e configurare gli elementi evidenziati nel diagramma precedente, fornendo un ambiente di sviluppo locale stabile per lo sviluppo dell’AEM.
@@ -46,7 +46,7 @@ Questo tutorial illustra come installare e configurare gli elementi evidenziati 
 Questo tutorial ha stabilito la posizione degli artefatti dell’SDK as a Cloud Service per l’AEM e il codice del progetto AEM come segue:
 
 + `~/aem-sdk` è una cartella organizzativa contenente i vari strumenti forniti dall’SDK as a Cloud Service dell’AEM
-+ `~/aem-sdk/author` contiene il servizio AEM Author
++ `~/aem-sdk/author` contiene il servizio di authoring AEM
 + `~/aem-sdk/publish` contiene il servizio di pubblicazione AEM
 + `~/aem-sdk/dispatcher` contiene gli strumenti di Dispatcher
 + `~/code/<project name>` contiene il codice sorgente personalizzato del progetto AEM
@@ -68,7 +68,7 @@ Questa sezione del tutorial mostra come:
 
 ## Runtime AEM locale
 
-L’SDK as a Cloud Service dell’AEM fornisce [!DNL QuickStart Jar] che esegue una versione locale dell’AEM. Il [!DNL QuickStart Jar] può essere utilizzato per eseguire il servizio di authoring di AEM o il servizio di pubblicazione di AEM localmente. Tieni presente che mentre [!DNL QuickStart Jar] offre un’esperienza di sviluppo locale; non tutte le funzioni disponibili in AEM as a Cloud Service sono incluse [!DNL QuickStart Jar].
+L’SDK as a Cloud Service dell’AEM fornisce [!DNL QuickStart Jar] che esegue una versione locale dell’AEM. Il [!DNL QuickStart Jar] può essere utilizzato per eseguire il servizio di authoring AEM o il servizio di pubblicazione AEM a livello locale. Tieni presente che mentre [!DNL QuickStart Jar] offre un’esperienza di sviluppo locale; non tutte le funzioni disponibili in AEM as a Cloud Service sono incluse [!DNL QuickStart Jar].
 
 Questa sezione del tutorial mostra come:
 
