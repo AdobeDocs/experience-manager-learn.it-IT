@@ -7,9 +7,10 @@ audience: author, marketer
 topic: Content Management
 feature: Learn From Your Peers
 role: Admin, User
+jira: KT-14254
 level: Beginner, Intermediate
 exl-id: c88c3ec7-9060-43e2-a6a2-d47bba6f7cf3
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
 workflow-type: tm+mt
 source-wordcount: '2034'
 ht-degree: 0%
@@ -190,7 +191,7 @@ Alcune linee guida possono essere utili per decidere come categorizzare i metada
 
 * Che tipo di contenuti e &quot;informazioni aggiuntive&quot; (= metadati) sono necessari per risolvere problemi aziendali/domande aziendali/problemi aziendali?
 * Quali sono le variabili, i &quot;campi&quot; nello schema e quali sono i valori possibili? Quali variabili necessitano di un input di testo libero, quali possono essere ristrette per tipo (numero, data, booleano, ...), un set di valori fissi (ad esempio paesi) o tag da una determinata tassonomia. Quanti tag sono necessari, consentiti?
-* Quali problemi/domande/problemi tecnici possono essere risolti dai metadati?
+* Quali problemi tecnici/domande possono essere risolti dai metadati?
 * Come puoi ottenere/creare tali contenuti/metadati? Quanto costerà ottenere/creare tali metadati?
 * Quali tipi di metadati sono necessari per un particolare gruppo di utenti?
 * Come verranno mantenuti e aggiornati i metadati?

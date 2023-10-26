@@ -6,11 +6,12 @@ level: Beginner, Intermediate
 topic: Administration
 audience: author, marketer, developer
 feature: Learn From Your Peers
+jira: KT-14255
 exl-id: 37ee3234-f91c-4f0a-b0b7-b9167e7847a9
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
 workflow-type: tm+mt
 source-wordcount: '1084'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 5%
 Sono disponibili tre opzioni per installare e gestire un’istanza AEM
 
 * AEMaaCS (servizio cloud): il sistema è sempre attivo, aggiornato e scalabile in modo dinamico in base alle tue esigenze
-* Servizi gestiti di Adobe in cui tecnici dell&#39;assistenza clienti Adobi eseguono tutti gli interventi di manutenzione giornalieri, settimanali e mensili e garantiscono l&#39;installazione di tutti i Service Pack e la sicurezza e il corretto funzionamento del sistema
+* Adobe Managed Services, in cui i tecnici dell&#39;assistenza clienti Adobi eseguono tutti gli interventi di manutenzione giornalieri, settimanali e mensili e garantiscono l&#39;installazione di tutti i Service Pack, la sicurezza e l&#39;operatività del sistema
 * l&#39;esecuzione on-premise, dove è necessario occuparsi dell&#39;intero sistema, inclusi backup, aggiornamenti e sicurezza.
 
 Se scegli di implementare il tuo sistema on-premise, ecco alcune cose da tenere a mente per assicurarti di avere un sistema sicuro ed efficiente. Oltre alle voci &quot;cura e alimentazione&quot;, questo documento indicherà anche diversi elementi AEM Developers dovrebbero tenere a mente di aiutare a mantenere il sistema funzionante bene.
@@ -50,7 +51,7 @@ Ogni aggiornamento del repository crea una nuova revisione del contenuto. Di con
 
 Elimina i file binari Lucene e riduci i requisiti di dimensione dell’archivio dati in esecuzione.
 
-#### [Archivio dati spazzatura](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html)
+#### [Archivio dati spazzatura](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=it)
 
 Quando una risorsa in AEM viene eliminata, il riferimento al record dell’archivio dati sottostante può essere rimosso dalla gerarchia dei nodi, ma il record dell’archivio dati stesso rimane. Questo record dell’archivio dati senza riferimenti diventa &quot;spazzatura&quot; e non deve essere mantenuto. Nei casi in cui esistono numerose risorse senza riferimenti, è utile eliminarle, preservare lo spazio, ottimizzare il backup e le prestazioni di manutenzione del file system.
 
@@ -94,7 +95,7 @@ Pensa a lungo e scopri cosa potrebbe essere riutilizzato. Un piè di pagina? Una
 
 ## Generale
 
-Rimani al passo con i cambiamenti AEM continuando ad imparare - non rimanere bloccati nel passato. Utilizzare [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) e [Servizi di apprendimento digitale Adobe (ADLS)](https://learning.adobe.com/) per affinare le tue abilità.
+Rimani al passo con i cambiamenti AEM continuando ad imparare - non rimanere bloccati nel passato. Utilizzare [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=it) e [Servizi di apprendimento digitale Adobe (ADLS)](https://learning.adobe.com/) per affinare le tue abilità.
 
 ## Conclusione
 

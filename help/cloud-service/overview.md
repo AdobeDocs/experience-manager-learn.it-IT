@@ -5,9 +5,9 @@ sub-product: Experience Manager as a Cloud Service
 kt: 3289
 last-substantial-update: 2023-09-26T00:00:00Z
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
-source-git-commit: e100e0078d3464d72dfca769d96ad7a633a1640c
+source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '280'
 ht-degree: 11%
 
 ---
@@ -24,14 +24,14 @@ Adobe Experience Manager (AEM) ora è disponibile as a Cloud Service. AEM as a C
 
 ## Novità
 
+* **[Protezione dei siti Web con regole per il filtro del traffico, incluse le regole WAF (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)**
+  *Scopri come utilizzare le regole del filtro del traffico, incluse le regole WAF, per proteggere i siti web*
+
 * **[Autenticazione basata su token (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
   *Scopri come utilizzare l’autenticazione basata su token per interagire con AEM as a Cloud Service tramite HTTP*
 
 * **[GraphQL headless (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it)**
   *Scopri come utilizzare le API GraphQL dell’AEM per sviluppare esperienze in un’applicazione esterna.*
-
-* **[Importazione in blocco (video)](./migration/bulk-import.md)**
-  *Scopri come importare in blocco le risorse in AEM da Azure Blob Storage o Amazon S3*
 
 * **[Asset compute processo di lavoro metadati (tutorial)](./asset-compute/advanced/metadata.md)**
   *Scopri come riscrivere i metadati delle risorse in AEM da un lavoratore Asset compute*
