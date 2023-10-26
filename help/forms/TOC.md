@@ -8,9 +8,9 @@ breadcrumb-title: Tutorial su AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: bac637440d1cc5af0e0abb119ca2f4e93f69cf34
+source-git-commit: 5e761ef180182b47c4fd2822b0ad98484db23aab
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1874'
 ht-degree: 2%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 2%
    + [Integrare con ServiceNow](some-useful-integrations/service-now.md)
    + [Inviare messaggi di posta elettronica con SendGrid](some-useful-integrations/send-grid.md)
    + [Archivia dati modulo in Azure Storage](some-useful-integrations/store-form-data-in-azure-storage.md)
+   + [Popolare il modulo con BLOB di Azure](some-useful-integrations/fetch-form-data-from-azure-storage.md)
 + Creazione del bundle OSGi {#creating-your-first-osgi-bundle}
    + [1 - Configurare l’ambiente](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [2 - Creare il servizio OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
@@ -142,6 +143,12 @@ ht-degree: 2%
    + [9 - Creare il modulo principale](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
    + [10 - Creare il modulo MyAccount](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
    + [11 - Distribuire l’esempio](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
++ Importa dati da file PDF{#import-data-from-pdf-form}
+   + [1 - Introduzione](import-data-from-pdf-form/introduction.md)
+   + [2 - Creare un modulo adattivo](import-data-from-pdf-form/create-adaptive-form.md)
+   + [3 - Creare il servizio OSGi](import-data-from-pdf-form/create-osgi-service.md)
+   + [4 - Compilare un modulo adattivo](import-data-from-pdf-form/populate-adaptive-form.md)
+   + [5 - Testare la soluzione](import-data-from-pdf-form/test-the-solution.md)
 + Esportazione dei dati inviati in formato CSV{#export-submitted-data-csv-format}
    + [Esporta dati inviati](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + Moduli HTML5{#html5-forms}
