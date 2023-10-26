@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-20T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
+source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # Come impostare le regole del filtro del traffico, incluse le regole WAF
 
-Scopri **come impostare** Regole del filtro del traffico, incluse le regole WAF. Scopri come creare, distribuire, testare e analizzare i risultati.
+Scopri **come impostare** regole del filtro del traffico, incluse le regole WAF. Scopri come creare, distribuire, testare e analizzare i risultati.
 
 ## Configurazione
 
@@ -118,7 +118,7 @@ Per testare le regole, sono disponibili vari strumenti di terze parti e la tua o
 
 Dopo aver creato, distribuito e testato le regole, puoi analizzare i risultati utilizzando **Elasticsearch, Logstash e Kibana (ELK)** strumenti del dashboard. È in grado di analizzare i registri CDN di AEMCS e visualizzare i risultati sotto forma di vari grafici.
 
-Gli strumenti del dashboard possono essere clonati direttamente dal [Archivio GitHub AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) e seguire i passaggi per installare e caricare **Regole filtro traffico (incluso WAF)** dashboard.
+Gli strumenti del dashboard possono essere clonati direttamente dal [Archivio GitHub AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) e seguire i passaggi per installare e caricare **regole filtro traffico (incluso WAF)** dashboard.
 
 - Dopo aver caricato il dashboard di esempio, la pagina dello strumento del dashboard elastico dovrebbe avere un aspetto simile a quella riportata di seguito:
 
@@ -131,4 +131,4 @@ Gli strumenti del dashboard possono essere clonati direttamente dal [Archivio Gi
 
 ## Passaggio successivo
 
-Scopri come dichiarare le regole del filtro del traffico, incluse le regole WAF, nel [Esempi e analisi dei risultati](./examples-and-analysis.md) capitolo, utilizzando il progetto WKND Sites dell’AEM.
+Scopri come dichiarare le regole del filtro del traffico, incluse le regole WAF, in [Esempi e analisi dei risultati](./examples-and-analysis.md) capitolo, utilizzando il progetto WKND Sites dell’AEM.

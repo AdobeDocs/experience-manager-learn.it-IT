@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-20T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
+source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
@@ -20,24 +20,26 @@ ht-degree: 0%
 
 # Protezione dei siti Web con regole per il filtro del traffico (incluse le regole WAF)
 
-Informazioni su **Regole filtro traffico**, compresa la sottocategoria **Regole WAF (Web Application Firewall)** nell’AEM as a Cloud Service (AEMCS). Scopri come creare, distribuire e testare le regole. Inoltre, analizzare i risultati per proteggere i siti AEM.
+Informazioni su **regole filtro traffico**, compresa la sottocategoria **Regole WAF (Web Application Firewall)** nell’AEM as a Cloud Service (AEMCS). Scopri come creare, distribuire e testare le regole. Inoltre, analizzare i risultati per proteggere i siti AEM.
 
 ## Panoramica
 
-Ridurre il rischio di violazioni della sicurezza è una priorità assoluta per qualsiasi organizzazione. AEMCS offre la funzione Regole filtro del traffico, incluse le regole WAF, per salvaguardare siti web e applicazioni.
+Ridurre il rischio di violazioni della sicurezza è una priorità assoluta per qualsiasi organizzazione. AEMCS offre la funzione delle regole del filtro del traffico, incluse le regole WAF, per salvaguardare siti web e applicazioni.
 
 Le regole del filtro del traffico vengono distribuite in [CDN integrata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) e sono valutati prima che la richiesta raggiunga l’infrastruttura dell’AEM. Con questa funzione, puoi migliorare in modo significativo la sicurezza del tuo sito web, garantendo che solo le richieste legittime siano autorizzate ad accedere all’infrastruttura AEM.
 
 Questa esercitazione ti guida attraverso il processo di creazione, distribuzione, test e analisi dei risultati delle regole del filtro del traffico, incluse le regole WAF.
 
+Per ulteriori informazioni sulle regole del filtro del traffico, consulta [questo articolo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en)
+
 >[!IMPORTANT]
 >
-> La sottocategoria delle regole del filtro del traffico chiamate &quot;regole WAF&quot; richiede una licenza di protezione WAF-DDoS
+> Una sottocategoria di regole del filtro del traffico denominata &quot;regole WAF&quot; richiede una licenza WAF-DDoS Protection
 
 
 ## Passaggio successivo
 
-Scopri [come impostare](./how-to-setup.md) la funzione che consente di creare, distribuire e testare le regole del filtro del traffico. Informazioni sulla configurazione di **Elasticsearch, Logstash e Kibana (ELK)** impilare gli strumenti del dashboard per analizzare i risultati dei registri CDN di AEMCS.
+Scopri [come impostare](./how-to-setup.md) la funzione che ti consente di creare, distribuire e testare le regole del filtro del traffico. Informazioni sulla configurazione di **Elasticsearch, Logstash e Kibana (ELK)** impilare gli strumenti del dashboard per analizzare i risultati dei registri CDN di AEMCS.
 
 
 
