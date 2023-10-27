@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 3%
@@ -118,7 +118,7 @@ Per testare le regole, sono disponibili vari strumenti di terze parti e la tua o
 
 Dopo aver creato, distribuito e testato le regole, puoi analizzare i risultati utilizzando **Elasticsearch, Logstash e Kibana (ELK)** strumenti del dashboard. È in grado di analizzare i registri CDN di AEMCS e visualizzare i risultati sotto forma di vari grafici.
 
-Gli strumenti del dashboard possono essere clonati direttamente dal [Archivio GitHub AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) e seguire i passaggi per installare e caricare **regole filtro traffico (incluso WAF)** dashboard.
+Gli strumenti del dashboard possono essere clonati direttamente dal [Archivio GitHub AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) e seguire i passaggi per installare e caricare **Regole filtro traffico (incluso WAF)** dashboard.
 
 - Dopo aver caricato il dashboard di esempio, la pagina dello strumento del dashboard elastico dovrebbe avere un aspetto simile a quella riportata di seguito:
 
