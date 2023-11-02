@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
+exl-id: 49becbcb-7965-4378-bb8e-b662fda716b7
+source-git-commit: ceb498f751ffc50d0022a16b63f9f52594bc507e
 workflow-type: tm+mt
 source-wordcount: '1512'
 ht-degree: 0%
 
 ---
-
 
 # Esempi e analisi dei risultati delle regole del filtro del traffico, incluse le regole WAF
 
@@ -27,6 +27,8 @@ In questa sezione verranno illustrati alcuni esempi pratici delle regole del fil
 Inoltre, scoprirai come utilizzare gli strumenti della dashboard che acquisiscono i registri CDN di AEMCS per visualizzare le metriche essenziali attraverso gli esempi di dashboard forniti da Adobe.
 
 Per allinearsi ai requisiti specifici, puoi migliorare e creare dashboard personalizzate, ottenendo informazioni più approfondite e ottimizzando le configurazioni delle regole per i siti AEM.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425404?quality=12&learn=on)
 
 ## Esempi
 
@@ -351,4 +353,3 @@ Acquisisci familiarità con gli elementi consigliati [best practice](./best-prac
 [Sintassi delle regole del filtro del traffico](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#rules-syntax)
 
 [Formato registro CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#cdn-log-format)
-

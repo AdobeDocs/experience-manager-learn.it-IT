@@ -10,17 +10,19 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
+exl-id: 4a7acdd2-f442-44ee-8560-f9cb64436acf
+source-git-commit: ceb498f751ffc50d0022a16b63f9f52594bc507e
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
 
 ---
 
-
 # Best practice per le regole del filtro del traffico, incluse le regole WAF
 
 Scopri le best practice consigliate per le regole del filtro del traffico, incluse le regole WAF. È importante notare che le best practice descritte in questo articolo non sono esaustive e non intendono sostituirsi alle politiche e alle procedure di sicurezza aziendali.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425408?quality=12&learn=on)
 
 ## Best practice generali
 
@@ -150,3 +152,6 @@ data:
 ## Riepilogo
 
 In conclusione, questo tutorial ti ha fornito le conoscenze e gli strumenti necessari per rafforzare la sicurezza delle applicazioni web in Adobe Experience Manager as a Cloud Service (AEMCS). Con esempi pratici di regole e informazioni approfondite sull’analisi dei risultati, puoi proteggere efficacemente il tuo sito web e le tue applicazioni.
+
+
+
