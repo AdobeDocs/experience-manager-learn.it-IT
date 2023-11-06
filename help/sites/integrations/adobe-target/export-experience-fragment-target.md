@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2c01cda8-f72f-47f7-a36b-95afd241906e
-source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
+source-git-commit: e9c0974d35493a607969124b2906564fc97bcdea
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '196'
 ht-degree: 4%
 
 ---
@@ -39,11 +39,11 @@ Scopri come esportare Frammenti di esperienza AEM come offerte Adobe Target.
 
 Se si esporta un frammento di esperienza in Adobe Target senza le autorizzazioni corrette in Adobe Admin Console, si verifica il seguente errore nel servizio di authoring dell’AEM:
 
-    ![Errore nell’interfaccia utente dell’API di Target](assets/error-target-offer.png)
+![Errore nell’interfaccia utente dell’API di Target](assets/error-target-offer.png)
 
 ... e i seguenti messaggi di registro in `aemerror` registro:
 
-    ![Errore della console API di Target](assets/target-console-error.png)
+![Errore della console API di Target](assets/target-console-error.png)
 
 #### Risoluzione
 
