@@ -3,9 +3,9 @@ title: Come velocizzare i contenuti con Adobe Experience Manager
 description: Scopri la velocità dei contenuti e il loro valore nelle organizzazioni aziendali. Immergiti in quattro principi di implementazione efficace e nelle insidie da considerare lungo il percorso.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: bd886704f10834bb07b42d6b5c0f116496da36de
 workflow-type: tm+mt
-source-wordcount: '2814'
+source-wordcount: '2795'
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ Di seguito sono riportate quattro fasi cardine da realizzare durante la fase di 
 In generale, è meglio seguire queste regole generali:
 
 * Obiettivo: avere almeno l&#39;80% delle esperienze guidate attraverso [Componenti pronti all’uso](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) e [Sistemi di stili](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Attraverso la testimonianza dei clienti, questo non solo creerà una base più scalabile che consentirà di sfruttare la roadmap del prodotto, ma aumenterà anche la velocità fino al 50%.
-* [Configurazione](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[e](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) e si allontanano dai modelli statici. Quando si impostano modelli modificabili (necessari per utilizzare i sistemi di stile), è necessario assegnare un autore di modelli che controllerà i diversi stili disponibili per una pagina o una sezione del sito web. Questi aggiornamenti al modello stesso sono piuttosto minimi in termini di lavoro quotidiano.
+* [Configurare modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) e si allontanano dai modelli statici. Quando si impostano modelli modificabili (necessari per utilizzare i sistemi di stile), è necessario assegnare un autore di modelli che controllerà i diversi stili disponibili per una pagina o una sezione del sito web. Questi aggiornamenti al modello stesso sono piuttosto minimi in termini di lavoro quotidiano.
 * Utilizzare [Frammenti esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en) ove possibile. Anche se il caso d’uso generale per i frammenti di esperienza è per la distribuzione multicanale, possono essere utilizzati in modo efficace in tutto il sito per popolare il contenuto in un’area alla volta invece di aggiornare manualmente il contenuto in più aree. Questo consente di risparmiare tempo e fatica e permette al team di authoring di lavorare su esperienze più specifiche e avanzate.
 * Creare esperienze più ricche. Utilizzando la regola 80/20 (per quanto sopra), un’organizzazione può utilizzare specifici CSS e sviluppo back-end per determinate esperienze invece degli aggiornamenti di manutenzione comuni.
 * Scegli una base scalabile e un rapido rebrand. I sistemi di stili eseguiti in base a un’implementazione moderna possono consentire un rebranding efficiente su tutta la piattaforma. L’aggiornamento di ampi settori di contenuto tramite la modifica delle interfacce CSS consente di eseguire test e convalide rapidi e aumenta la qualità dell’esperienza del sito con un impatto diretto sul ROI.
