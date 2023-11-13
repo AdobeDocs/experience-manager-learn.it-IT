@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 0565cf592a437acf5080dab1d3ee2d410997f01d
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1007'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ Gli ID dei pod vengono forniti in ogni istruzione di registro e consentono di fi
 
 ## File di registro personalizzati
 
-I Cloud Services AEM non supportano i file di registro personalizzati, ma la registrazione personalizzata.
+I Cloud Service AEM non supportano i file di registro personalizzati, ma la registrazione personalizzata.
 
 Per i registri Java da rendere disponibili in AEM as a Cloud Service (tramite [Cloud Manager](#cloud-manager) o [CLI ADOBE I/O](#aio)), le istruzioni di registro personalizzate devono essere scritte nel `error.log`. Registri scritti in registri denominati personalizzati, ad esempio `example.log`, non sarà accessibile da AEM as a Cloud Service.
 
@@ -47,9 +47,9 @@ I registri possono essere scritti in `error.log` utilizzo di una proprietà di c
 }
 ```
 
-## Registri del servizio Author e Publish di AEM
+## Registri del servizio di authoring e pubblicazione AEM
 
-I servizi Author e Publish di AEM forniscono i registri del server di runtime AEM:
+I servizi di authoring e pubblicazione AEM forniscono i registri del server di runtime AEM:
 
 + `aemerror` è il registro degli errori Java (disponibile all’indirizzo `/crx-quickstart/logs/error.log` nell’SDK per AEM (avvio rapido locale). Di seguito sono riportati i [livelli di registro consigliati](#log-levels) per i logger personalizzati per tipo di ambiente:
    + Sviluppo: `DEBUG`
@@ -58,9 +58,9 @@ I servizi Author e Publish di AEM forniscono i registri del server di runtime AE
 + `aemaccess` elenca le richieste HTTP al servizio AEM con i relativi dettagli
 + `aemrequest` elenca le richieste HTTP effettuate al servizio AEM e la relativa risposta HTTP
 
-## Registri di AEM Publish Dispatcher
+## Registri di Dispatcher per la pubblicazione AEM
 
-Solo AEM Publish Dispatcher fornisce il server web Apache e i registri di Dispatcher, in quanto questi aspetti esistono solo nel livello di pubblicazione AEM e non nel livello di authoring AEM.
+Solo il Dispatcher di pubblicazione dell’AEM fornisce il server web Apache e i registri di Dispatcher, in quanto questi aspetti esistono solo nel livello di pubblicazione dell’AEM e non nel livello di creazione dell’AEM.
 
 + `httpdaccess` elenca le richieste HTTP effettuate al server web Apache/Dispatcher del servizio AEM.
 + `httperror`  elenca i messaggi di registro dal server web Apache e fornisce assistenza per il debug dei moduli Apache supportati, come `mod_rewrite`.
@@ -135,7 +135,7 @@ $ aio cloudmanager:tail-logs 12345 author | grep com.example.MySlingModel
 
 ### Download dei registri{#aio-cli-download-logs}
 
-Adobe I/O CLI consente di scaricare i registri da AEM as a Cloud Service utilizzando [download-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerdownload-logs-environmentid-service-name-days)). Questo fornisce lo stesso risultato finale del download dei registri dall’interfaccia utente web di Cloud Manager, con la differenza che `download-logs` Il comando consolida i registri tra giorni, in base al numero di giorni richiesti per i registri.
+Adobe I/O CLI consente di scaricare i registri dall’AEM as a Cloud Service utilizzando [download-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerdownload-logs-environmentid-service-name-days)). Questo fornisce lo stesso risultato finale del download dei registri dall’interfaccia utente web di Cloud Manager, con la differenza che `download-logs` Il comando consolida i registri tra giorni, in base al numero di giorni richiesti per i registri.
 
 ```
 $ aio config:set cloudmanager_programid <PROGRAM ID>
@@ -203,7 +203,7 @@ A tal fine, è necessario aggiornare le configurazioni OSGi di registrazione per
 Questo approccio presenta aspetti negativi che devono essere presi in considerazione:
 
 + [È consentito un numero limitato di variabili di ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#number-of-variables), e la creazione di una variabile per gestire il livello di registro ne utilizzerà una.
-+ Le variabili di ambiente possono essere gestite solo a livello di programmazione tramite [CLI ADOBE I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) o [API HTTP di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties).
++ Le variabili di ambiente possono essere gestite a livello di programmazione tramite [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html), [CLI ADOBE I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid), e [API HTTP di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties).
 + Le modifiche alle variabili di ambiente devono essere reimpostate manualmente da uno strumento supportato. Dimenticare di reimpostare un ambiente con traffico elevato, come quello di produzione, su un livello di registro meno dettagliato può inondare i registri e influire sulle prestazioni dell’AEM.
 
 _Le variabili specifiche dell’ambiente non funzionano per le configurazioni del server web Apache o del registro di Dispatcher, in quanto non sono configurate tramite la configurazione OSGi._
