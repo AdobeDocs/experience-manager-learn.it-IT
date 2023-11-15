@@ -1,6 +1,6 @@
 ---
 title: Migrazione dei contenuti tramite il servizio di importazione in blocco
-description: Scopri come usare il Servizio di importazione in blocco di AEM as a Cloud Services per importare risorse da origini non AEM.
+description: Scopri come usare il Servizio di importazione in blocco di AEM as a Cloud Service per importare risorse da origini non AEM.
 version: Cloud Service
 topic: Migration, Upgrade
 feature: Migration
@@ -9,16 +9,18 @@ level: Experienced
 kt: 8918
 thumbnail: 336969.jpeg
 exl-id: 4944d3d9-52a0-4255-9e6c-eb119160e400
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 8a4f4a1370d93aa592d5d67208ad5f85034db0bf
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
 
 # Servizio di importazione in blocco
 
-Scopri come usare il Servizio di importazione in blocco di AEM as a Cloud Services per importare risorse da origini non AEM.
+Scopri come usare il Servizio di importazione in blocco di AEM as a Cloud Service per importare risorse da origini non AEM.
+
+
 
 >[!VIDEO](https://video.tv.adobe.com/v/336969?quality=12&learn=on)
 
@@ -28,9 +30,13 @@ Scopri come usare il Servizio di importazione in blocco di AEM as a Cloud Servic
 
 Il servizio di importazione in blocco viene utilizzato per trasferire i file archiviati nell’archiviazione BLOB di Azure o nell’archiviazione Amazon S3 in AEM as a Cloud Service come risorse.
 
+>[!TIP]
+>
+> Le origini di input in questo video mostrano solo Azure Blob Storage e Amazon S3; tuttavia, le origini disponibili continuano a crescere nel tempo. Per un elenco completo delle sorgenti di ingresso supportate, fare riferimento alle opzioni disponibili nel prodotto, oppure [documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
+
 ## Attività chiave
 
-+ Carica i file da importare nel provider di archiviazione cloud (Azure Blob Storage o Amazon S3).
++ Carica i file da importare nel provider di archiviazione cloud.
 + Configura ed esegui il servizio di importazione in blocco dal servizio di authoring as a Cloud Service dell’AEM.
 + Esegui Importazione servizi in blocco come importazione una tantum o pianifica un&#39;importazione periodica.
 
