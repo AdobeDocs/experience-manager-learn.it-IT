@@ -1,6 +1,6 @@
 ---
-title: Anteprima e pubblicazione di contenuti
-description: Una guida dettagliata su come creare e pubblicare contenuti tramite l’authoring dei documenti.
+title: Anteprima e pubblicazione dei contenuti
+description: Come creare e pubblicare contenuti mediante l’authoring dei documenti.
 version: 6.5, Cloud Service
 feature: Authoring
 topic: Content Management
@@ -10,15 +10,15 @@ doc-type: Feature Video
 last-substantial-update: 2023-11-15T00:00:00Z
 jira: KT-14466
 thumbnail: 3425700.jpeg
-source-git-commit: d17544c4f8dda03e5147a1f48dbbdae005ee9438
+source-git-commit: 6c212071c7afcbfa53d69ecc926dc3066d0ac556
 workflow-type: tm+mt
-source-wordcount: '38'
+source-wordcount: '32'
 ht-degree: 0%
 
 ---
 
 
-# Anteprima e pubblicazione di contenuti
+# Anteprima e pubblicazione dei contenuti
 
 {{edge-delivery-services}}
 
