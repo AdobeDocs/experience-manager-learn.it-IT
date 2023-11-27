@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 521f11e24b2d1a89b9c26d4407ca417dc21caa29
+source-git-commit: 54827c36a33437a8bf090eb10cde8ed656446d0b
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 25%
+source-wordcount: '526'
+ht-degree: 26%
 
 ---
 
@@ -67,17 +67,16 @@ ht-degree: 25%
    + [Frammenti di contenuto e frammenti di esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Servizi di consegna Edge{#edge-delivery-services}
    + Sviluppo{#developing}
-      + [Prerequisiti](./edge-delivery-services/developing/prerequisites.md)
-      + [Piastra riscaldante per AEM](./edge-delivery-services/developing/aem-boilerplate.md)
-      + [Archivio dei contenuti](./edge-delivery-services/developing/content-repository.md)
-      + [Piastra riscaldante per AEM](./edge-delivery-services/developing/aem-boilerplate.md)
-      + [Anteprima e pubblicazione](./edge-delivery-services/developing/preview-and-publish.md)
-      + [AEM Sidekick](./edge-delivery-services/developing/sidekick.md)
-      + [Struttura del documento](./edge-delivery-services/developing/document-structure.md)
-      + [Sviluppo locale](./edge-delivery-services/developing/local-development.md)
-      + [Git](./edge-delivery-services/developing/git.md)
+      + [Prerequisiti](edge-delivery-services/developing/prerequisites.md)
+      + [Piastra riscaldante per AEM](edge-delivery-services/developing/aem-boilerplate.md)
+      + [Archivio dei contenuti](edge-delivery-services/developing/content-repository.md)
+      + [Anteprima e pubblicazione](edge-delivery-services/developing/preview-and-publish.md)
+      + [AEM Sidekick](edge-delivery-services/developing/sidekick.md)
+      + [Struttura del documento](edge-delivery-services/developing/document-structure.md)
+      + [Sviluppo locale](edge-delivery-services/developing/local-development.md)
+      + [Git](edge-delivery-services/developing/git.md)
    + Procedura{#how-to}
-      + [Feed RSS](./edge-delivery-services/how-to/rss.md)
+      + [Feed RSS](edge-delivery-services/how-to/rss.md)
 + Sviluppo {#developing}
    + [Servizi di consegna Edge](developing/edge-delivery-services.md)
    + [Archetipo progetto AEM](developing/aem-project-archetype.md)
