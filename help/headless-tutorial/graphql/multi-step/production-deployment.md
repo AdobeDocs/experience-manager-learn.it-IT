@@ -1,16 +1,16 @@
 ---
-title: Implementazione di produzione tramite un servizio di pubblicazione AEM - Guida introduttiva di AEM Headless - GraphQL
-description: Scopri i servizi AEM Author e Publish e il modello di distribuzione consigliato per le applicazioni headless. In questa esercitazione, scopri come utilizzare le variabili di ambiente per modificare dinamicamente un endpoint di GraphQL in base all’ambiente di destinazione. Scopri come configurare correttamente l’AEM per la condivisione CORS (Cross-Origin Resource Sharing).
+title: Distribuzione nell’ambiente di produzione tramite un servizio di pubblicazione AEM - Guida introduttiva di AEM Headless - GraphQL
+description: Scopri i servizi di authoring e pubblicazione dell’AEM e il modello di implementazione consigliato per le applicazioni headless. In questa esercitazione, scopri come utilizzare le variabili di ambiente per modificare dinamicamente un endpoint di GraphQL in base all’ambiente di destinazione. Scopri come configurare correttamente l’AEM per la condivisione CORS (Cross-Origin Resource Sharing).
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 mini-toc-levels: 1
-kt: 7131
+jira: KT-7131
 thumbnail: KT-7131.jpg
 exl-id: 8c8b2620-6bc3-4a21-8d8d-8e45a6e9fc70
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 9%
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 # Implementazione di produzione con un servizio di pubblicazione AEM
 
-In questo tutorial, configurerai un ambiente locale per simulare la distribuzione di contenuti da un’istanza Author a un’istanza Publish. Genererai inoltre la build di produzione di un’app React configurata per utilizzare contenuti dall’ambiente AEM Publish utilizzando le API di GraphQL. Imparerai a utilizzare in modo efficace le variabili di ambiente e ad aggiornare le configurazioni AEM CORS.
+In questo tutorial, configurerai un ambiente locale per simulare la distribuzione di contenuti da un’istanza Author a un’istanza Publish. Genererai inoltre la build di produzione di un’app React configurata per utilizzare contenuti dall’ambiente di pubblicazione AEM utilizzando le API GraphQL. Imparerai a utilizzare in modo efficace le variabili di ambiente e ad aggiornare le configurazioni AEM CORS.
 
 ## Prerequisiti
 
@@ -29,7 +29,7 @@ Questo tutorial fa parte di un tutorial in più parti. Si presume che i passaggi
 
 Scopri come:
 
-* Scopri l’architettura di authoring e pubblicazione di AEM.
+* Scopri l’architettura Author e Publish dell’AEM.
 * Scopri le best practice per la gestione delle variabili di ambiente.
 * Scopri come configurare correttamente l’AEM per la condivisione CORS (Cross-Origin Resource Sharing).
 
@@ -48,7 +48,7 @@ Il diagramma riportato sopra mostra questo diffuso pattern di distribuzione.
 3. Una volta approvato, il contenuto può essere **pubblicato** al servizio di pubblicazione AEM.
 4. **Gli utenti finali interagiscono con la versione di produzione dell’applicazione.** L’applicazione di produzione si connette al servizio di pubblicazione e utilizza le API GraphQL per richiedere e utilizzare i contenuti.
 
-Il tutorial simula la distribuzione precedente aggiungendo un’istanza AEM Publish alla configurazione corrente. Nei capitoli precedenti, l’app React fungeva da anteprima collegandosi direttamente all’istanza di authoring. Una build di produzione dell’app React viene distribuita a un server Node.js statico che si connette alla nuova istanza Publish.
+L&#39;esercitazione simula la distribuzione di cui sopra aggiungendo un&#39;istanza di pubblicazione AEM alla configurazione corrente. Nei capitoli precedenti, l’app React fungeva da anteprima collegandosi direttamente all’istanza di authoring. Una build di produzione dell’app React viene distribuita a un server Node.js statico che si connette alla nuova istanza Publish.
 
 Alla fine, sono in esecuzione tre server locali:
 
@@ -58,7 +58,7 @@ Alla fine, sono in esecuzione tre server locali:
 
 ## Installare l’SDK dell’AEM - Modalità di pubblicazione {#aem-sdk-publish}
 
-Attualmente disponiamo di un’istanza in esecuzione dell’SDK in **Autore** modalità. L’SDK può essere avviato anche in **Pubblica** per simulare un ambiente AEM Publish.
+Attualmente disponiamo di un’istanza in esecuzione dell’SDK in **Autore** modalità. L’SDK può essere avviato anche in **Pubblica** per simulare un ambiente di pubblicazione AEM.
 
 Una guida più dettagliata per la creazione di un ambiente di sviluppo locale [si trova qui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up).
 
@@ -98,7 +98,7 @@ Proprio come nell’istanza Autore, l’istanza Pubblica deve avere gli endpoint
 
    ![Sito di riferimento per l’uscita da WKND](assets/publish-deployment/sign-out-wknd-reference-site.png)
 
-   A differenza dell’istanza di AEM Author, per impostazione predefinita le istanze di AEM Publish hanno accesso anonimo in sola lettura. Vogliamo simulare l’esperienza di un utente anonimo durante l’esecuzione dell’applicazione React.
+   A differenza dell’istanza di creazione dell’AEM, l’impostazione predefinita delle istanze di pubblicazione dell’AEM è l’accesso anonimo in sola lettura. Vogliamo simulare l’esperienza di un utente anonimo durante l’esecuzione dell’applicazione React.
 
 ## Aggiornare le variabili di ambiente per puntare all’istanza Publish {#react-app-publish}
 
@@ -187,7 +187,7 @@ L’app React può essere avviata utilizzando il server Webpack, ma solo per lo 
 
 ## Riferimenti immagine assoluti {#absolute-image-references}
 
-Le immagini appaiono interrotte perché `<img src` L&#39;attributo è impostato su un percorso relativo e punta al server statico Node in corrispondenza di `http://localhost:5000/`. Queste immagini devono invece puntare all’istanza AEM Publish. Esistono diverse possibili soluzioni a questo problema. Quando si utilizza il server di sviluppo Webpack, il file `react-app/src/setupProxy.js` configurare un proxy tra il server webpack e l&#39;istanza di authoring AEM per le richieste di `/content`. Una configurazione proxy può essere utilizzata in un ambiente di produzione, ma deve essere configurata a livello di server web. Ad esempio: [Modulo proxy di Apache](https://httpd.apache.org/docs/2.4/mod/mod_proxy.html).
+Le immagini appaiono interrotte perché `<img src` L&#39;attributo è impostato su un percorso relativo e punta al server statico Node in corrispondenza di `http://localhost:5000/`. Queste immagini devono invece puntare all’istanza Publish dell’AEM. Esistono diverse possibili soluzioni a questo problema. Quando si utilizza il server di sviluppo Webpack, il file `react-app/src/setupProxy.js` configurare un proxy tra il server webpack e l&#39;istanza di authoring AEM per le richieste di `/content`. Una configurazione proxy può essere utilizzata in un ambiente di produzione, ma deve essere configurata a livello di server web. Ad esempio: [Modulo proxy di Apache](https://httpd.apache.org/docs/2.4/mod/mod_proxy.html).
 
 L’app può essere aggiornata per includere un URL assoluto utilizzando `REACT_APP_HOST_URI` variabile di ambiente. Invece, usiamo una funzione dell’API GraphQL dell’AEM per richiedere un URL assoluto all’immagine.
 
@@ -341,7 +341,7 @@ Quindi, simula la pubblicazione di contenuti tra le istanze Autore locale e Pubb
 
 1. Torna all’app React in esecuzione il [http://localhost:5000/](Http://localhost:5000/). Ora puoi fare clic sul Bali Surf Camp per visualizzare i dettagli dell’avventura.
 
-1. Torna all’istanza di AEM Author all’indirizzo [http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp) e aggiorna **Titolo** del frammento. **Salva e chiudi** il frammento. Then **pubblicare** il frammento.
+1. Torna all’istanza di authoring dell’AEM all’indirizzo [http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp) e aggiorna **Titolo** del frammento. **Salva e chiudi** il frammento. Then **pubblicare** il frammento.
 1. Torna a [http://localhost:5000/adventure:/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp](http://localhost:5000/adventure:/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp) e osserva le modifiche pubblicate.
 
    ![Aggiornamento pubblicazione campo surf di Bali](assets/publish-deployment/bali-surf-camp-update.png)
@@ -350,7 +350,7 @@ Quindi, simula la pubblicazione di contenuti tra le istanze Autore locale e Pubb
 
 L’AEM è protetto per impostazione predefinita e non consente alle proprietà web non AEM di effettuare chiamate lato client. La configurazione CORS (Cross-Origin Resource Sharing) dell’AEM può consentire a domini specifici di effettuare chiamate all’AEM.
 
-Quindi, prova la configurazione CORS dell’istanza AEM Publish.
+Quindi, prova la configurazione CORS dell’istanza Publish dell’AEM.
 
 1. Torna alla finestra del terminale in cui l’app React è in esecuzione con il comando `npm run serve`:
 
@@ -399,9 +399,9 @@ Quindi, prova la configurazione CORS dell’istanza AEM Publish.
 
    ![Errore CORS corretto](assets/publish-deployment/cors-error-corrected.png)
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
-Congratulazioni. Ora hai simulato una distribuzione di produzione completa utilizzando un ambiente AEM Publish. Hai anche imparato a utilizzare la configurazione CORS in AEM.
+Congratulazioni. Ora hai simulato una distribuzione di produzione completa utilizzando un ambiente di pubblicazione AEM. Hai anche imparato a utilizzare la configurazione CORS in AEM.
 
 ## Altre risorse
 

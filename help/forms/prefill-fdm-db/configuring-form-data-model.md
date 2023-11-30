@@ -3,13 +3,13 @@ title: Configurazione del modello dati del modulo
 description: Crea modello dati modulo basato su origine dati RDBMS
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 5812
+jira: KT-5812
 thumbnail: kt-5812.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 5fa4638f-9faa-40e0-a20d-fdde3dbb528a
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 1%
@@ -67,7 +67,7 @@ I seguenti passaggi ti guideranno attraverso il processo di creazione dell’ass
 
 * Seleziona un’entità nuova e fai clic su _Aggiungi associazione_
 * Fornisci un titolo e un identificatore significativi all’associazione e alle altre proprietà, come illustrato nella schermata seguente
-   ![associazione](assets/association-entities-1.png)
+  ![associazione](assets/association-entities-1.png)
 
 * Fai clic sul pulsante _modifica_ nella sezione Argomenti
 

@@ -2,17 +2,17 @@
 title: Aggiorna il progetto AEM full stack per utilizzare la pipeline front-end
 description: Scopri come aggiornare il progetto AEM full stack per abilitarlo per la pipeline front-end, in modo da creare e distribuire solo gli artefatti front-end.
 version: Cloud Service
-type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
 level: Intermediate
-kt: 10689
+jira: KT-10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: c4a961fb-e440-4f78-b40d-e8049078b3c0
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 0%
@@ -200,7 +200,7 @@ Il [Selettore della barra](https://experienceleague.adobe.com/docs/experience-ma
 
 Se fai clic su di esso per errore, devi eseguire nuovamente le pipeline per assicurarti che vengano ripristinati il contratto e le modifiche della pipeline front-end.
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Congratulazioni, hai aggiornato il progetto WKND Sites per abilitarlo per il contratto della pipeline front-end.
 

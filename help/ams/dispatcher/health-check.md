@@ -7,8 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: 69b4e469-52cc-441b-b6e5-2fe7ef18da90
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1139'
 ht-degree: 1%
@@ -56,7 +57,7 @@ Copriremo cosa ogni pezzo è impostato per fare e la loro importanza
 
 ### Pacchetto AEM
 
-Per indicare se l’AEM funziona è necessario che esegua alcune operazioni di base di compilazione delle pagine e distribuisca la pagina.  Adobe Managed Services ha creato un pacchetto di base contenente la pagina di test.  La pagina verifica che l’archivio sia attivo e che sia possibile eseguire il rendering delle risorse e del modello di pagina.
+Per indicare se l’AEM funziona è necessario che esegua alcune operazioni di base di compilazione delle pagine e distribuisca la pagina.  Adobe Managed Services ha creato un pacchetto di base che contiene la pagina di test.  La pagina verifica che l’archivio sia attivo e che sia possibile eseguire il rendering delle risorse e del modello di pagina.
 
 ![L’immagine mostra il pacchetto AMS nel gestore di pacchetti CRX](assets/load-balancer-healthcheck/health-check-package.png "health-check-package")
 
@@ -126,7 +127,7 @@ RELOAD_MODE='author'
 ```
 
 Opzioni valide:
-- creazione
+- author
    - Questa è l&#39;opzione predefinita.
    - Verrà visualizzata una pagina di manutenzione per l’autore quando non è integro
 - pubblicazione

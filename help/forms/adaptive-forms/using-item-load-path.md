@@ -3,14 +3,14 @@ title: Utilizzo del percorso di caricamento elementi per compilare l’elenco a 
 description: Configurare e popolare un elenco a discesa per leggere i valori da un nodo crx
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 10961
+jira: KT-10961
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2022-09-20T00:00:00Z
 thumbnail: item-load.jpg
 exl-id: 89c486c8-95c3-4cd4-bf8e-a1b3558f17d6
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Per creare un nodo di questo tipo in crx, segui i passaggi indicati di seguito:
 * Salva
 * Fai clic sul nodo delle nuove risorse creato e impostane le proprietà come mostrato di seguito
 * Sarà necessario creare una proprietà di tipo String denominata assettypes(è possibile denominarla in base alle proprie esigenze).Assicurarsi che la proprietà sia multivalore. Immetti i valori desiderati e salvali.
-   ![item-load-path](assets/item-load-path-crx.png)
+  ![item-load-path](assets/item-load-path-crx.png)
 
 Per caricare questi valori nell’elenco a discesa, specifica il seguente percorso nella proprietà percorso di caricamento elemento  **/content/assets/assettypes**
 

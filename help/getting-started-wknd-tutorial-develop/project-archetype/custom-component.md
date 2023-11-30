@@ -2,16 +2,16 @@
 title: Componente personalizzato
 description: Include la creazione end-to-end di un componente byline personalizzato che visualizza il contenuto creato. Include lo sviluppo di un modello Sling per incapsulare la logica di business per popolare il componente byline e il codice HTL corrispondente per eseguire il rendering del componente.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: Core Components, APIs
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 4072
+jira: KT-4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
+doc-type: Tutorial
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '4057'
 ht-degree: 0%
@@ -327,7 +327,7 @@ Quindi, aggiungi il componente Byline a una pagina in AEM. Perché il componente
 
    Gli autori AEM configurano e creano i componenti tramite le finestre di dialogo. A questo punto, nello sviluppo del componente Byline sono incluse le finestre di dialogo per la raccolta dei dati, tuttavia non è stata ancora aggiunta la logica per il rendering del contenuto creato. Pertanto, viene visualizzato solo il segnaposto.
 
-1. Dopo aver salvato la finestra di dialogo, passa a [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent/root/container/container/byline) e controlla in che modo il contenuto del componente viene memorizzato sul nodo del contenuto del componente byline, nella pagina AEM.
+1. Dopo aver salvato la finestra di dialogo, passa a [CRXDE Liti](http://localhost:4502/crx/de/index.jsp#/content/wknd/us/en/magazine/guide-la-skateparks/jcr%3Acontent/root/container/container/byline) e controlla in che modo il contenuto del componente viene memorizzato sul nodo del contenuto del componente byline, nella pagina AEM.
 
    Trova il nodo di contenuto del componente Byline sotto la pagina Skate Parks di LA, ad esempio `/content/wknd/us/en/magazine/guide-la-skateparks/jcr:content/root/container/container/byline`.
 
@@ -433,7 +433,7 @@ Creare un&#39;interfaccia Java™ pubblica per il nome del destinatario. Il `Byl
 
    Il `isEmpty()` viene utilizzato per determinare se il componente ha contenuto da riprodurre o se è in attesa di essere configurato.
 
-   Si noti che non esiste un metodo per l&#39;immagine; [questo verrà rivisto in seguito](#tackling-the-image-problem).
+   Nota che non esiste un metodo per l&#39;immagine; [questo verrà rivisto in seguito](#tackling-the-image-problem).
 
 1. I pacchetti Java™ che contengono classi Java™ pubbliche, in questo caso un modello Sling, devono avere una versione utilizzando  `package-info.java` file.
 
@@ -922,7 +922,7 @@ Le espressioni vengono aggiunte tramite `@` nell’espressione HTL.
 
 ### Visualizzazione condizionale del segnaposto {#conditionally-displaying-the-placeholder}
 
-La maggior parte degli script HTL per i componenti AEM utilizza **paradigma segnaposto** per fornire un segnale visivo agli autori **indica che un componente non è creato correttamente e non viene visualizzato in AEM Publish**. Per convenzione, questa decisione è basata sull’implementazione di un metodo sul modello Sling di supporto del componente, in questo caso: `Byline.isEmpty()`.
+La maggior parte degli script HTL per i componenti AEM utilizza **paradigma segnaposto** per fornire un segnale visivo agli autori **indica che un componente non è creato correttamente e non viene visualizzato nella pubblicazione AEM**. Per convenzione, questa decisione è basata sull’implementazione di un metodo sul modello Sling di supporto del componente, in questo caso: `Byline.isEmpty()`.
 
 Il `isEmpty()` Il metodo viene richiamato sul modello Sling Byline e il risultato (o meglio è negativo, tramite il `!` è stato salvato in una variabile HTL denominata `hasContent`:
 
@@ -1008,7 +1008,7 @@ A questo scopo, includiamo la risorsa byline corrente, ma forziamo il tipo di ri
 
 ### Revisione del componente Byline non formattato {#reviewing-the-unstyled-byline-component}
 
-1. Dopo aver distribuito l’aggiornamento, accedi al [Guida definitiva agli Skatepark di LA ](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) o ovunque sia stato aggiunto il componente Byline in precedenza nel capitolo.
+1. Dopo aver distribuito l’aggiornamento, accedi al [Guida definitiva agli Skatepark di LA](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html) o ovunque sia stato aggiunto il componente Byline in precedenza nel capitolo.
 
 1. Il **immagine**, **nome**, e **professioni** ora viene visualizzato e uno stile non formattato, ma è presente il componente Byline funzionante.
 
@@ -1089,7 +1089,7 @@ Aggiungi gli stili predefiniti per il componente Byline.
    >
    > Potrebbe essere necessario cancellare la cache del browser per garantire che non vengano forniti CSS non aggiornati e aggiornare la pagina con il componente Byline per ottenere lo stile completo.
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Congratulazioni, hai creato un componente personalizzato partendo da zero utilizzando Adobe Experience Manager.
 

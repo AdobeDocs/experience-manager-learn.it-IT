@@ -7,13 +7,13 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5433
+jira: KT-5433
 thumbnail: kt-5433.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
-source-git-commit: 8ca9535866cc1a673a59ac3743847e68dfedd156
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 1%
@@ -45,7 +45,7 @@ Per accedere e utilizzare la Console per sviluppatori è necessario assegnare le
 1. Verifica che l’organizzazione di Adobe che ha interessato Cloud Manager e i prodotti AEM as a Cloud Service sia attiva nel commutatore dell’organizzazione di Adobe.
 1. Lo sviluppatore deve essere membro di [Prodotti di Cloud Manager __Sviluppatore - Cloud Service__ Profilo prodotto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer).
    + Se questa appartenenza non esiste, lo sviluppatore non potrà accedere a Console sviluppatori.
-1. Lo sviluppatore deve essere membro di [__Utenti AEM__ o __Amministratori AEM__ Profilo prodotto su AEM Author e/o Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles).
+1. Lo sviluppatore deve essere membro di [__Utenti AEM__ o __Amministratori AEM__ Profilo di prodotto su AEM Author e/o Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles).
    + Se l&#39;appartenenza non esiste, il [stato](#status) Le immagini si interromperanno per timeout a causa di un errore 401 Unauthorized.
 
 ### Risoluzione dei problemi di accesso alla Console per sviluppatori
@@ -167,7 +167,7 @@ I servlet consentono di determinare mediante debug:
 
 ## Query
 
-Le query forniscono informazioni approfondite su cosa e come vengono eseguite le query di ricerca sull’AEM. Questa funzionalità è la stessa di  [Avvio rapido locale dell’SDK AEM Strumenti > Prestazioni delle query ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) console.
+Le query forniscono informazioni approfondite su cosa e come vengono eseguite le query di ricerca sull’AEM. Questa funzionalità è la stessa di  [Avvio rapido locale dell’SDK AEM Strumenti > Prestazioni delle query](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) console.
 
 Le query funzionano solo quando viene selezionato un pod specifico, poiché apre la console web Prestazioni query del pod, che richiede allo sviluppatore di avere accesso al servizio AEM.
 

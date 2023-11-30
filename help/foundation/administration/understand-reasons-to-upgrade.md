@@ -1,13 +1,14 @@
 ---
 title: Perché effettuare l'aggiornamento
-description: Analisi delle funzioni chiave per i clienti che intendono effettuare l’aggiornamento all’ultima versione di Adobe Experience Manager 6.
+description: Analisi dettagliata delle funzioni chiave per i clienti che intendono effettuare l'aggiornamento all'ultima versione di Adobe Experience Manager 6.
 version: 6.5
 topic: Upgrade
 feature: Release Information
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
+doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2602'
 ht-degree: 4%
@@ -16,7 +17,7 @@ ht-degree: 4%
 
 # Perché effettuare l&#39;aggiornamento
 
-Analisi delle funzioni chiave per i clienti che intendono effettuare l’aggiornamento all’ultima versione di Adobe Experience Manager 6.
+Analisi dettagliata delle funzioni chiave per i clienti che intendono effettuare l&#39;aggiornamento all&#39;ultima versione di Adobe Experience Manager 6.
 
 ## Funzioni chiave per l’aggiornamento a AEM 6.5
 
@@ -53,7 +54,7 @@ AEM Assets continua a sfruttare la ricca serie di funzionalità per la gestione 
 + **Adobe Stock** L’integrazione di consente di accedere direttamente alle immagini di Adobe Stock dall’esperienza AEM Assets, creando un’esperienza di individuazione dei contenuti fluida.
 + **App desktop AEM** viene rilasciata la versione 2.0 di e viene rivisto, migliorando al contempo le prestazioni e la stabilità.
 + **Risorse collegate** supporta istanze AEM Sites discrete per accedere e utilizzare senza problemi le risorse di un’istanza AEM Assets diversa.
-+ Supporto video aggiornato in **Dynamic Media**, tra cui **Video a 360°** e **Miniature video personalizzate**.
++ Supporto video aggiornato in **Dynamic Medie**, tra cui **Video a 360°** e **Miniature video personalizzate**.
 
 ### Informazioni sui contenuti
 
@@ -69,10 +70,10 @@ L’AEM aumenta la sua capacità di integrazione con altri servizi Adobe:
 
 ### AMS Cloud Manager
 
-[Cloud Manager](https://adobe.ly/2HODmsv), esclusivo per i clienti di Adobe Managed Services (AMS), offre le seguenti funzionalità:
+[Cloud Manager](https://adobe.ly/2HODmsv), esclusivo per i clienti Adobe Managed Services (AMS), offre le seguenti funzionalità:
 
 + Cloud Manager supporta l’estensione del supporto per la distribuzione dell’AEM da AEM Sites a **AEM Assets**, tra cui **test delle prestazioni automatizzati per l’elaborazione delle risorse**.
-+ **Ridimensionamento automatico** del livello di pubblicazione di AEM a soglie predefinite, garantisce un’esperienza utente finale ottimale.
++ **Ridimensionamento automatico** del livello di pubblicazione AEM a soglie predefinite, garantire un’esperienza ottimale per l’utente finale.
 + **Pipeline non di produzione** consente ai team di sviluppo di sfruttare Cloud Manager per verificare continuamente la qualità del codice e distribuirla in ambienti più bassi (Sviluppo e Controllo qualità).
 + **API della pipeline CI/CD** consente ai clienti di interagire in modo programmatico con Cloud Manager, approfondendo le possibilità di integrazione con l’infrastruttura di sviluppo on-premise.
 
@@ -408,7 +409,7 @@ Di seguito è riportata una matrice delle principali funzioni di sicurezza offer
     </tr>
     <tr>
         <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Supporto per l’autenticazione Adobe IMS</a><br>
- </strong>Esclusivamente per Adobe Managed Services (AMS), gestisce centralmente l’accesso alle istanze di AEM Author tramite Adobe IMS (Identity Management System).</td>
+ </strong>Esclusivo di Adobe Managed Services (AMS), gestisce centralmente l’accesso alle istanze di AEM Author tramite Adobe IMS (Identity Management System).</td>
         <td> </td>
         <td> </td>
         <td> </td>
@@ -883,7 +884,7 @@ Di seguito è riportata una matrice delle funzioni principali di Assets offerte 
     </tbody>
 </table>
 
-### AEM Assets Dynamic Media
+### AEM Assets Dynamic Medie
 
 ***✔<sup>+</sup> miglioramenti significativi alla funzione in questa versione.***
 
@@ -893,7 +894,7 @@ Di seguito è riportata una matrice delle funzioni principali di Assets offerte 
 <table>
     <thead>
         <tr>
-            <td>Funzione Dynamic Media</td>
+            <td>Funzione Dynamic Medie</td>
             <td>5.6.x</td>
             <td>6.0</td>
             <td>6.1</td>
@@ -962,7 +963,7 @@ Di seguito è riportata una matrice delle funzioni principali di Assets offerte 
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/delivering-dynamic-media-assets.html" target="_blank">Consegna</a>:</strong>
-            Opzioni flessibili per il collegamento o l'incorporamento di contenuti Dynamic Media e la distribuzione tramite il protocollo HTTP/2.</td>
+            Opzioni flessibili per il collegamento o l'incorporamento di contenuti Dynamic Medie e la distribuzione tramite il protocollo HTTP/2.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -972,7 +973,7 @@ Di seguito è riportata una matrice delle funzioni principali di Assets offerte 
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong>Aggiornamento da Scene7 a Dynamic Media:</strong>
+            <td><strong>Aggiornamento da Scene7 a Dynamic Medie:</strong>
             Possibilità di migrare le risorse principali e continuare a utilizzare gli URL S7 esistenti.</td>
             <td> </td>
             <td> </td>

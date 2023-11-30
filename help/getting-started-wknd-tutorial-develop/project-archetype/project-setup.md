@@ -2,17 +2,17 @@
 title: Introduzione ad AEM Sites - Configurazione del progetto
 description: Crea un progetto Maven con più moduli per gestire il codice e le configurazioni di un sito di Experienci Manager.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: AEM Project Archetype
 topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
-kt: 3418
+jira: KT-3418
 thumbnail: 30152.jpg
+doc-type: Tutorial
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1839'
 ht-degree: 4%
@@ -25,7 +25,7 @@ Questa esercitazione tratta la creazione di un progetto Maven con più moduli pe
 
 ## Prerequisiti {#prerequisites}
 
-Esaminare gli strumenti e le istruzioni necessari per l&#39;impostazione di un [ambiente di sviluppo locale](./overview.md#local-dev-environment). Assicurati di disporre di una nuova istanza di Adobe Experience Manager disponibile localmente e di non aver installato altri pacchetti campione/demo (oltre ai Service Pack richiesti).
+Esaminare gli strumenti e le istruzioni necessari per l&#39;impostazione di un [ambiente di sviluppo locale](./overview.md#local-dev-environment). Assicurati di disporre di una nuova istanza di Adobe Experience Manager disponibile localmente e di non aver installato altri pacchetti campione/demo (diversi dai Service Pack richiesti).
 
 ## Obiettivo {#objective}
 
@@ -39,7 +39,7 @@ Esaminare gli strumenti e le istruzioni necessari per l&#39;impostazione di un [
 
 In questo capitolo, puoi generare un nuovo progetto Adobe Experience Manager utilizzando [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype). Il progetto AEM contiene il codice completo, il contenuto e le configurazioni utilizzati per un’implementazione di Sites. Il progetto generato in questo capitolo funge da base per un’implementazione del sito WKND e viene sviluppato nei capitoli futuri.
 
-**Cos’è un progetto Maven?** - [Apache Maven](https://maven.apache.org/) è uno strumento di gestione del software per la creazione di progetti. *Tutti Adobe Experience Manager* Le implementazioni di utilizzano i progetti Maven per generare, gestire e distribuire codice personalizzato oltre all’AEM.
+**Cos’è un progetto Maven?** - [Apache Maven](https://maven.apache.org/) è uno strumento di gestione del software per la creazione di progetti. *Tutti i Adobe Experience Manager* Le implementazioni di utilizzano i progetti Maven per generare, gestire e distribuire codice personalizzato oltre all’AEM.
 
 **Che cos’è un archetipo Maven?** - A [Archetipo Maven](https://maven.apache.org/archetype/index.html) è un modello o un modello per la generazione di nuovi progetti. L’archetipo del progetto AEM consente di generare un nuovo progetto con uno spazio dei nomi personalizzato e include una struttura di progetto che segue le best practice, accelerando notevolmente lo sviluppo del progetto.
 
@@ -204,7 +204,7 @@ Alla voce, il `ui.apps` modulo osservano che molti `.content.xml` vengono creati
 
 L’archetipo del progetto AEM genera un campione `.gitignore` file che può essere utilizzato come punto di partenza per il quale i file possono essere tranquillamente ignorati. Il file viene generato in `<src>/aem-guides-wknd/.gitignore`.
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Congratulazioni, hai creato il tuo primo progetto AEM!
 
@@ -214,7 +214,7 @@ Comprendere la tecnologia di base di un componente Sites di Adobe Experience Man
 
 ## Comandi Maven avanzati (bonus) {#advanced-maven-commands}
 
-Durante lo sviluppo, potresti lavorare con uno solo dei moduli e voler evitare di creare l’intero progetto per risparmiare tempo. Puoi anche distribuire direttamente a un’istanza di AEM Publish o a un’istanza di AEM non in esecuzione sulla porta 4502.
+Durante lo sviluppo, potresti lavorare con uno solo dei moduli e voler evitare di creare l’intero progetto per risparmiare tempo. È inoltre possibile distribuire direttamente a un&#39;istanza di pubblicazione AEM o a un&#39;istanza di AEM non in esecuzione sulla porta 4502.
 
 Esaminiamo ora alcuni profili e comandi Maven aggiuntivi che puoi utilizzare per una maggiore flessibilità durante lo sviluppo.
 
@@ -254,7 +254,7 @@ Il **[core](https://experienceleague.adobe.com/docs/experience-manager-core-comp
 
 ### Moduli Ui.apps e Ui.content {#apps-content-module}
 
-Il **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** il modulo maven contiene tutto il codice di rendering necessario per il sito sotto `/apps`. Ciò include i file CSS/JS memorizzati in un formato AEM denominato [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=it). Ciò include anche [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) script per il rendering di dynamic HTML. Puoi pensare al **ui.apps** modulo come mappa della struttura nel JCR, ma in un formato che può essere memorizzato in un file system e impegnato nel controllo del codice sorgente. Il **ui.apps** il modulo contiene solo codice.
+Il **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** il modulo maven contiene tutto il codice di rendering necessario per il sito sotto `/apps`. Ciò include i file CSS/JS memorizzati in un formato AEM denominato [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=it). Ciò include anche [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it) script per il rendering di dynamic HTML. Puoi pensare al **ui.apps** modulo come mappa della struttura nel JCR, ma in un formato che può essere memorizzato in un file system e impegnato nel controllo del codice sorgente. Il **ui.apps** il modulo contiene solo codice.
 
 Per creare solo questo modulo:
 

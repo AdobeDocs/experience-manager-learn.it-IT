@@ -1,19 +1,16 @@
 ---
 title: Mappare i componenti dell’SPA ai componenti dell’AEM | Guida introduttiva dell'Angular e dell'editor SPA dell'AEM
-description: Scopri come mappare i componenti Angular ai componenti Adobe Experience Manager (AEM AEM) con l’SDK JS dell’editor dell’SPA. La mappatura dei componenti consente agli utenti di apportare aggiornamenti dinamici ai componenti SPA nell’Editor SPA dell’AEM, in modo simile all’authoring AEM tradizionale.
+description: Scopri come mappare i componenti Angular ai componenti Adobe Experience Manager (AEM) con l’SDK JS dell’editor dell’SPA per AEM. La mappatura dei componenti consente agli utenti di apportare aggiornamenti dinamici ai componenti SPA nell’Editor SPA dell’AEM, in modo simile all’authoring AEM tradizionale.
 feature: SPA Editor
-topics: development
-doc-type: tutorial
 version: Cloud Service
-activity: develop
-audience: developer
-kt: 5311
+jira: KT-5311
 thumbnail: 5311-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2372'
 ht-degree: 1%
@@ -22,7 +19,7 @@ ht-degree: 1%
 
 # Mappare i componenti dell’SPA ai componenti dell’AEM {#map-components}
 
-Scopri come mappare i componenti Angular ai componenti Adobe Experience Manager (AEM AEM) con l’SDK JS dell’editor dell’SPA. La mappatura dei componenti consente agli utenti di apportare aggiornamenti dinamici ai componenti SPA nell’Editor SPA dell’AEM, in modo simile all’authoring AEM tradizionale.
+Scopri come mappare i componenti Angular ai componenti Adobe Experience Manager (AEM) con l’SDK JS dell’editor dell’SPA per AEM. La mappatura dei componenti consente agli utenti di apportare aggiornamenti dinamici ai componenti SPA nell’Editor SPA dell’AEM, in modo simile all’authoring AEM tradizionale.
 
 Questo capitolo approfondisce l’analisi dell’API del modello JSON AEM e di come il contenuto JSON esposto da un componente AEM possa essere inserito automaticamente in un componente Angular come prop.
 
@@ -357,7 +354,7 @@ Prima di passare al codice SPA, controlla il modello JSON fornito dall’AEM.
 
 Il `ImageComponent` è visibile solo nel **server di sviluppo webpack**. Quindi, distribuisci l’SPA aggiornato all’AEM e aggiorna i criteri dei modelli.
 
-1. Interrompi **server di sviluppo webpack** e dal **radice** del progetto, implementa le modifiche all’AEM utilizzando le abilità Maven:
+1. Interrompi **server di sviluppo webpack** e dal **radice** del progetto, implementa le modifiche all’AEM utilizzando le tue competenze Maven:
 
    ```shell
    $ cd aem-guides-wknd-spa
@@ -456,7 +453,7 @@ Esaminiamo ulteriormente il Contenitore di layout.
 
    ![Creazione finale di esempio di capitolo](assets/map-components/final-page.png)
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Congratulazioni, hai imparato a mappare i componenti SPA ai componenti AEM e hai implementato una nuova `Image` componente. Hai anche la possibilità di esplorare le funzionalità reattive del **Contenitore di layout**.
 

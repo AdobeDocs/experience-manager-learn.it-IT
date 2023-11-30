@@ -5,27 +5,27 @@ topics: Migration
 feature: Migration
 role: Architect, Developer
 level: Beginner
-kt: 10427
+jira: KT-10427
 hidefromtoc: true
 hide: true
 index: false
 thumbnail: kt-10427.jpg
 exl-id: 8fcc9364-b84c-4458-82e2-66b47429cd4b
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
 # Avvisi di attraversamento
 
 >[!TIP]
->Aggiungi ai segnalibri questa pagina per riferimenti futuri.
+>Aggiungi un segnalibro a questa pagina per riferimenti futuri.
 
 _Cosa sono gli avvisi di attraversamento?_
 
-Gli avvisi di attraversamento sono __aemerror__ le istruzioni di registro che indicano query con prestazioni insoddisfacenti vengono eseguite sul servizio AEM Publish. Le avvertenze trasversali in genere si manifestano nell’AEM in due modi:
+Gli avvisi di attraversamento sono __aemerror__ le istruzioni di registro che indicano query con prestazioni insoddisfacenti vengono eseguite sul servizio di pubblicazione AEM. Le avvertenze trasversali in genere si manifestano nell’AEM in due modi:
 
 1. __Query lente__ che non utilizzano indici, con conseguente rallentamento dei tempi di risposta.
 1. __Query con errori__, che genera un `RuntimeNodeTraversalException`, con conseguente interruzione dell’esperienza.
@@ -174,7 +174,7 @@ __Modificare (o creare) un indice AEM__ in modo che le restrizioni alle query es
 
 ![Spiega query](./assets/traversals/verify.gif)
 
-Solo se [modifiche alla query](#adjust-the-query) possono essere testate direttamente sull’AEM as a Cloud Service tramite la console per sviluppatori di [Spiega query](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=it#queries){target="_blank"}. Explain Query viene eseguito per il servizio AEM Author; tuttavia, poiché le definizioni degli indici sono le stesse nei servizi Author e Publish, è sufficiente convalidare le query per il servizio AEM Author.
+Solo se [modifiche alla query](#adjust-the-query) possono essere testate direttamente sull’AEM as a Cloud Service tramite la console per sviluppatori di [Spiega query](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=it#queries){target="_blank"}. Explain Query viene eseguito per il servizio di authoring AEM, tuttavia, poiché le definizioni degli indici sono le stesse nei servizi Author e Publish, è sufficiente convalidare le query per il servizio di authoring AEM.
 
 Se [adeguamenti dell&#39;indice](#adjust-the-index) devono essere implementati nell’AEM as a Cloud Service. Con le regolazioni dell’indice implementate, le [Spiega query](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=it#queries){target="_blank"} può essere utilizzato per eseguire e ottimizzare ulteriormente la query.
 

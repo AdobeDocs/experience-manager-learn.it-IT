@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7636
+jira: KT-7636
 thumbnail: kt-7636.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: 4accc1ca-6f4b-449e-bf2e-06f19d2fe17d
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 1%
@@ -56,7 +57,7 @@ La mappatura per le richieste SPA quando l’SPA viene aperto tramite l’editor
 
 Innanzitutto, crea l’intermediario `adventure` Segmento di pagina:
 
-1. Accedi ad AEM Author
+1. Accedi a AEM Author
 1. Accedi a __Sites > App WKND > us > it > Home page app WKND__
    + Questa pagina dell&#39;AEM è mappata come la radice dell&#39;SPA, ed è qui che iniziamo a costruire la struttura della pagina dell&#39;AEM per altre vie SPA.
 1. Tocca __Crea__ e seleziona __Pagina__
@@ -102,7 +103,6 @@ Inserimento di `<ResponsiveGrid...>` nel `AdventureDetail` il componente crea un
 
    + `/content/wknd-app/us/en/home/adventure/${slug}/jcr:content/root/responsivegrid`
 
-
 Aggiorna `AdventureDetail.js` con le seguenti righe:
 
 ```javascript
@@ -143,7 +143,7 @@ Il `AdventureDetail.js` il file dovrebbe avere un aspetto simile a:
 
 Con il `<ResponsiveGrid...>` sul posto, e il suo `pagePath` impostato in modo dinamico in base all’avventura di cui viene eseguito il rendering, tentiamo di creare contenuti al suo interno.
 
-1. Accedi ad AEM Author
+1. Accedi a AEM Author
 1. Accedi a __Sites > App WKND > us > it__
 1. __Modifica__ il __Home page dell’app WKND__ pagina
    + Accedi a __Campo da surf di Bali__ indirizzare il SPA per modificarlo
@@ -168,7 +168,7 @@ Con il `<ResponsiveGrid...>` sul posto, e il suo `pagePath` impostato in modo di
 
 Quando si passa a un percorso di dettagli dell’avventura privo di una pagina AEM mappata, non è possibile creare l’istanza del percorso. Per abilitare l’authoring in queste pagine, è sufficiente creare una pagina AEM con il nome corrispondente nel __Avventura__ pagina!
 
-## Congratulazioni. 
+## Congratulazioni.
 
 Congratulazioni. Hai aggiunto la possibilità di authoring per le route dinamiche nell&#39;SPA.
 

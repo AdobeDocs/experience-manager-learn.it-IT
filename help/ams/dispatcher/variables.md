@@ -7,8 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: 299b32c3-7922-4eee-aa3a-56039a654f70
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 1%
@@ -177,7 +178,7 @@ Define WERETAIL_DOMAIN www.weretail.com
 Define WERETAIL_ALT_DOMAIN www..weretail.net
 ```
 
-Quando crei file di variabili, assegnagli un nome in base al contenuto e in base agli standard di denominazione forniti nel manuale [qui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17477.html#naming-convention).  Nell’esempio precedente puoi vedere che il file delle variabili ospita le diverse voci DNS come variabili da utilizzare nei file di configurazione.
+Quando crei file di variabili, assegnagli un nome in base al loro contenuto e in base agli standard di denominazione forniti nel manuale [qui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17477.html#naming-convention).  Nell’esempio precedente puoi vedere che il file delle variabili ospita le diverse voci DNS come variabili da utilizzare nei file di configurazione.
 
 ## Utilizzo delle variabili
 
@@ -272,7 +273,7 @@ Esempio di configurazione
 
 ```
 <VirtualHost *:80> 
-	DocumentRoot	${PUBLISH_DOCROOT} 
+    DocumentRoot    ${PUBLISH_DOCROOT} 
 ```
 
 Eseguire ora i comandi per visualizzare l&#39;output compilato

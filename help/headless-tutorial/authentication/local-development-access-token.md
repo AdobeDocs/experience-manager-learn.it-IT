@@ -1,20 +1,20 @@
 ---
 title: Token di accesso per lo sviluppo locale
-description: I token di accesso per lo sviluppo locale dell’AEM vengono utilizzati per accelerare lo sviluppo di integrazioni con AEM as a Cloud Service che interagiscono in modo programmatico con i servizi AEM Author o Publish tramite HTTP.
+description: I token di accesso per lo sviluppo locale dell’AEM vengono utilizzati per accelerare lo sviluppo di integrazioni con AEM as a Cloud Service che interagiscono in modo programmatico con i servizi di Author o Publish dell’AEM tramite HTTP.
 version: Cloud Service
-doc-type: tutorial
 topics: Development, Security
 feature: APIs
 activity: develop
 audience: developer
-kt: 6785
+jira: KT-6785
 thumbnail: 330477.jpg
 topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
+doc-type: Tutorial
 exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Gli sviluppatori che creano integrazioni che richiedono un accesso programmatico
 
 ![Ottenere un token di accesso per lo sviluppo locale](assets/local-development-access-token/getting-a-local-development-access-token.png)
 
-Il token di accesso per lo sviluppo locale consente di accedere ai servizi Author e Publish di AEM come utente che ha generato il token, insieme alle relative autorizzazioni. Anche se si tratta di un token di sviluppo, non condividere questo token o archiviarlo nel controllo del codice sorgente.
+Il token di accesso per lo sviluppo locale consente di accedere ai servizi di authoring e pubblicazione dell’AEM come utente che ha generato il token, insieme alle relative autorizzazioni. Anche se si tratta di un token di sviluppo, non condividere questo token o archiviarlo nel controllo del codice sorgente.
 
 1. In entrata [Adobe Admin Console](https://adminconsole.adobe.com/) assicurati che tu, sviluppatore, sia membro di:
    + __Cloud Manager - Sviluppatore__ Profilo di prodotto IMS (consente l’accesso alla Console per sviluppatori AEM)

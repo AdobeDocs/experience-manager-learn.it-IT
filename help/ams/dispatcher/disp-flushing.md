@@ -7,8 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: 461873a1-1edf-43a3-b4a3-14134f855d86
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2223'
 ht-degree: 0%
@@ -231,7 +232,7 @@ Questa directory deve corrispondere all’impostazione della directory principal
 Annidare le cartelle docroot in ogni farm che si trova in una sottocartella della directory principale dei documenti Apache è una pessima idea per molti motivi.
 </div>
 
-### Livello dei file stat
+### Livello file stat
 
 Questa voce di configurazione è contenuta nella seguente sezione del file farm:
 

@@ -7,12 +7,12 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 10721
+jira: KT-10721
 thumbnail: KT-10721.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM headless as a Cloud Service" before-title="false"
 exl-id: 4f67bb37-416a-49d9-9d7b-06c3573909ca
-source-git-commit: 29b9e4a23d8f4ae0494fc43f76f7449062364843
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 1%
@@ -40,9 +40,9 @@ L’app Next.js funziona con le seguenti opzioni di distribuzione AEM. Tutte le 
 
 Questo esempio di app Next.js è progettata per connettersi a __Pubblicazione AEM__ servizio.
 
-### Requisiti di AEM Author
+### Requisiti dell’autore AEM
 
-Il file Next.js è progettato per connettersi a __Pubblicazione AEM__ e accedere a contenuti non protetti. Il file Next.js può essere configurato per la connessione ad AEM Author tramite `.env` proprietà descritte di seguito. Le immagini trasmesse da AEM Author richiedono l’autenticazione e, pertanto, anche l’utente che accede all’app Next.js deve essere registrato in AEM Author.
+Il file Next.js è progettato per connettersi a __Pubblicazione AEM__ e accedere a contenuti non protetti. Next.js può essere configurato per connettersi all’istanza di authoring di AEM tramite `.env` proprietà descritte di seguito. Le immagini trasmesse da AEM Author richiedono l’autenticazione, pertanto anche l’utente che accede all’app Next.js deve essere registrato in AEM Author.
 
 ## Come usare
 
@@ -60,7 +60,7 @@ Il file Next.js è progettato per connettersi a __Pubblicazione AEM__ e accedere
    ...
    ```
 
-   Se ti connetti al servizio AEM Author, è necessario fornire l’autenticazione in quanto il servizio AEM Author è protetto per impostazione predefinita.
+   Se ci si connette al servizio di authoring AEM, è necessario fornire l’autenticazione in quanto il servizio di authoring AEM è protetto per impostazione predefinita.
 
    Per utilizzare un set di account AEM locale `AEM_AUTH_METHOD=basic` e fornire il nome utente e la password nella `AEM_AUTH_USER` e `AEM_AUTH_PASSWORD` proprietà.
 
@@ -223,7 +223,7 @@ query ($slug: String!, $imageFormat:AssetTransformFormat=JPG, $imageSeoName: Str
 
 ### Esegui query persistente GraphQL
 
-Le query persistenti dell’AEM vengono eseguite su HTTP GET, pertanto [Client AEM headless per JavaScript](https://github.com/adobe/aem-headless-client-js) viene utilizzato per [eseguire le query GraphQL persistenti;](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) contro l’AEM e carica il contenuto dell’avventura nell’app.
+Le query persistenti dell’AEM vengono eseguite tramite HTTP GET, pertanto [Client AEM headless per JavaScript](https://github.com/adobe/aem-headless-client-js) viene utilizzato per [eseguire le query GraphQL persistenti;](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) contro l’AEM e carica il contenuto dell’avventura nell’app.
 
 Ogni query persistente ha una funzione corrispondente in `src/lib//aem-headless-client.js`, che chiama l’endpoint GraphQL dell’AEM e restituisce i dati dell’avventura.
 

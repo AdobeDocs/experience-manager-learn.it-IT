@@ -1,19 +1,18 @@
 ---
 title: Integrare un SPA | Guida introduttiva dell'Angular e dell'editor SPA dell'AEM
-description: Scopri come il codice sorgente di un’applicazione a pagina singola (SPA) scritto in Angular può essere integrato in un progetto Adobe Experience Manager (AEM). Scopri come utilizzare strumenti front-end moderni, come lo strumento CLI di Angular, per sviluppare rapidamente l’SPA rispetto all’API modello JSON dell’AEM.
+description: Comprendere come il codice sorgente per un’applicazione a pagina singola (SPA) scritto in Angular può essere integrato con un progetto Adobe Experience Manager (AEM). Scopri come utilizzare strumenti front-end moderni, come lo strumento CLI di Angular, per sviluppare rapidamente l’SPA rispetto all’API modello JSON dell’AEM.
 feature: SPA Editor
-topics: development
-doc-type: tutorial
 version: Cloud Service
 activity: develop
 audience: developer
-kt: 5310
+jira: KT-5310
 thumbnail: 5310-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: e9386885-86de-4e43-933c-2f0a2c04a2f2
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2187'
 ht-degree: 0%
@@ -22,7 +21,7 @@ ht-degree: 0%
 
 # Integrare un SPA {#integrate-spa}
 
-Scopri come il codice sorgente di un’applicazione a pagina singola (SPA) scritto in Angular può essere integrato in un progetto Adobe Experience Manager (AEM). Scopri come utilizzare strumenti front-end moderni, come un server di sviluppo Webpack, per sviluppare rapidamente l’SPA contro l’API modello JSON dell’AEM.
+Comprendere come il codice sorgente per un’applicazione a pagina singola (SPA) scritto in Angular può essere integrato con un progetto Adobe Experience Manager (AEM). Scopri come utilizzare strumenti front-end moderni, come un server di sviluppo Webpack, per sviluppare rapidamente l’SPA contro l’API modello JSON dell’AEM.
 
 ## Obiettivo
 
@@ -648,7 +647,7 @@ Le modifiche apportate al **Intestazione** sono attualmente visibili solo tramit
 
    Ora che l’SPA aggiornato è in AEM, la creazione può continuare.
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Congratulazioni, hai aggiornato l’SPA ed esplorato l’integrazione con l’AEM! Ora conosci due diversi approcci per lo sviluppo dell’SPA rispetto all’API del modello JSON dell’AEM utilizzando **server di sviluppo webpack**.
 

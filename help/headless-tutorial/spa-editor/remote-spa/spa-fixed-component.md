@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7634
+jira: KT-7634
 thumbnail: kt-7634.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: edd18f2f-6f24-4299-a31a-54ccc4f6d86e
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 1%
@@ -163,7 +164,7 @@ Il `Home.js` il file dovrebbe avere un aspetto simile a:
 
 ## Creare il componente Titolo nell’AEM
 
-1. Accedi ad AEM Author
+1. Accedi a AEM Author
 1. Accedi a __Sites > App WKND__
 1. Tocca __Home__ e seleziona __Modifica__ dalla barra delle azioni superiore
 1. Seleziona __Modifica__ dal selettore della modalità di modifica in alto a destra nell’Editor pagina
@@ -176,7 +177,7 @@ Il `Home.js` il file dovrebbe avere un aspetto simile a:
    + Titolo: __WKND Adventures__
    + Tipo/dimensione: __H2__
 
-      ![Finestra di dialogo del componente Titolo](./assets/spa-fixed-component/title-dialog.png)
+     ![Finestra di dialogo del componente Titolo](./assets/spa-fixed-component/title-dialog.png)
 
 1. Tocca __Fine__ per salvare
 1. Visualizzare l’anteprima delle modifiche nell’Editor SPA dell’AEM
@@ -184,7 +185,7 @@ Il `Home.js` il file dovrebbe avere un aspetto simile a:
 
    ![Componente titolo nell’SPA](./assets/spa-fixed-component/title-final.png)
 
-## Congratulazioni. 
+## Congratulazioni.
 
 Hai aggiunto un componente fisso e modificabile all’app WKND. Ora sai come:
 

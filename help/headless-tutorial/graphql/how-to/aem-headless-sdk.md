@@ -6,10 +6,10 @@ topic: Headless
 feature: GraphQL API
 role: Developer
 level: Intermediate
-kt: 10269
+jira: KT-10269
 thumbnail: KT-10269.jpeg
 exl-id: 922a464a-2286-4132-9af8-f5a1fb5ce268
-source-git-commit: 31948793786a2c430533d433ae2b9df149ec5fc0
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 10%
@@ -46,7 +46,7 @@ $ npm i @adobe/aem-headless-client-js
 
 Questo esempio di codice mostra come eseguire query sull’AEM utilizzando [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) modulo npm tramite `async/await` sintassi. L’SDK headless dell’AEM per JavaScript supporta anche [Sintassi della promessa](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client).
 
-Questo codice presuppone una query persistente con il nome `wknd/adventureNames` è stato creato in AEM Author e pubblicato in AEM Publish.
+Questo codice presuppone una query persistente con il nome `wknd/adventureNames` è stato creato su AEM Author e pubblicato su AEM Publish.
 
 ```javascript
 import AEMHeadless from '@adobe/aem-headless-client-js';
@@ -102,7 +102,7 @@ Utilizzo di `useEffect` per effettuare la chiamata GraphQL asincrona in React è
 1. Fornisce il wrapper sincrono per la chiamata asincrona all&#39;AEM.
 1. Riduce l’AEM che richiede inutilmente.
 
-Questo codice presuppone una query persistente con il nome `wknd-shared/adventure-by-slug` è stato creato in AEM Author e pubblicato in AEM Publish utilizzando GraphiQL.
+Questo codice presuppone una query persistente con il nome `wknd-shared/adventure-by-slug` è stato creato su AEM Author e pubblicato su AEM Publish utilizzando GraphiQL.
 
 ```javascript
 import AEMHeadless from '@adobe/aem-headless-client-js';

@@ -2,15 +2,12 @@
 title: Flusso di lavoro principale di Dynamic Media Classic e anteprima delle risorse
 description: 'Scopri il flusso di lavoro principale in Dynamic Media Classic, che include i tre passaggi seguenti: Creazione (e caricamento), Creazione (e pubblicazione) e Consegna. Poi scopri come visualizzare in anteprima le risorse in Dynamic Media Classic.'
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring, architecture, publishing
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 04aacd81-bbb2-4742-9306-f0eabc665a41
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2703'
 ht-degree: 1%
@@ -19,7 +16,7 @@ ht-degree: 1%
 
 # Flusso di lavoro principale di Dynamic Media Classic e anteprima delle risorse {#main-workflow}
 
-Dynamic Media supporta il processo di creazione (e caricamento), authoring (e pubblicazione) e distribuzione. Per iniziare, carica le risorse, quindi esegui un’operazione con tali risorse, ad esempio la creazione di un set di immagini e infine la pubblicazione per renderle live. Il passaggio Build è facoltativo per alcuni flussi di lavoro. Ad esempio, se l’obiettivo è solo quello di ridimensionare e ingrandire le immagini in modo dinamico o di convertire e pubblicare i video per lo streaming, non sono necessari passaggi di generazione.
+Dynamic Medie supporta il processo di creazione (e caricamento), authoring (e pubblicazione) e distribuzione. Per iniziare, carica le risorse, quindi esegui un’operazione con tali risorse, ad esempio la creazione di un set di immagini e infine la pubblicazione per renderle live. Il passaggio Build è facoltativo per alcuni flussi di lavoro. Ad esempio, se l’obiettivo è solo quello di ridimensionare e ingrandire le immagini in modo dinamico o di convertire e pubblicare i video per lo streaming, non sono necessari passaggi di generazione.
 
 ![immagine](assets/main-workflow/create-author-deliver.jpg)
 
@@ -109,7 +106,7 @@ Dopo aver creato e caricato i contenuti, creerai nuove risorse rich media dalle 
 >
 >Assicurati che tutte le risorse siano contrassegnate per la pubblicazione. Anche se per impostazione predefinita tutte le risorse sono contrassegnate automaticamente per la pubblicazione al caricamento, tutte le risorse appena create dal contenuto caricato dovranno essere contrassegnate per la pubblicazione.
 
-Dopo aver creato la nuova risorsa, eseguirai un processo di pubblicazione. Puoi eseguire questa operazione manualmente o pianificare un processo di pubblicazione che viene eseguito automaticamente. La pubblicazione copia tutti i contenuti dalla sfera privata di Dynamic Media Classic a quella pubblica e la sfera server di pubblicazione dell’equazione. Il prodotto di un processo di pubblicazione Dynamic Media è un URL univoco per ogni risorsa pubblicata.
+Dopo aver creato la nuova risorsa, eseguirai un processo di pubblicazione. Puoi eseguire questa operazione manualmente o pianificare un processo di pubblicazione che viene eseguito automaticamente. La pubblicazione copia tutti i contenuti dalla sfera privata di Dynamic Media Classic a quella pubblica e la sfera server di pubblicazione dell’equazione. Il prodotto di un processo di pubblicazione Dynamic Medie è un URL univoco per ogni risorsa pubblicata.
 
 Il server in cui esegui la pubblicazione dipende dal tipo di contenuto e di flusso di lavoro. Ad esempio, tutte le immagini vengono inviate al server immagini e trasmesse in streaming al server FMS. Per comodità si parla di &quot;pubblicazione&quot; come di un singolo evento su un singolo server.
 
@@ -137,7 +134,7 @@ Una volta compreso come vengono assemblati gli URL di Dynamic Media Classic, puo
 
 ### Concetto: Informazioni sul ritardo nella memorizzazione in cache
 
-Le nuove risorse caricate e pubblicate vengono visualizzate immediatamente, mentre le risorse aggiornate possono essere soggette al ritardo di 10 ore nella memorizzazione in cache. Per impostazione predefinita, tutte le risorse pubblicate sono disponibili almeno 10 ore prima della scadenza. Diciamo minimo, perché ogni volta che l&#39;immagine viene visualizzata, inizia un orologio che non scade prima di 10 ore in cui nessuno ha visualizzato quell&#39;immagine. Questo periodo di 10 ore è il &quot;Time to Live&quot; di una risorsa. Una volta scaduta la cache per quella risorsa, è possibile distribuire la versione aggiornata.
+Le nuove risorse caricate e pubblicate vengono visualizzate immediatamente, mentre le risorse aggiornate possono essere soggette al ritardo di 10 ore nella memorizzazione in cache. Per impostazione predefinita, tutte le risorse pubblicate hanno almeno 10 ore prima della scadenza. Diciamo minimo, perché ogni volta che l&#39;immagine viene visualizzata, inizia un orologio che non scade prima di 10 ore in cui nessuno ha visualizzato quell&#39;immagine. Questo periodo di 10 ore è il &quot;Time to Live&quot; di una risorsa. Una volta scaduta la cache per quella risorsa, è possibile distribuire la versione aggiornata.
 
 In genere si tratta di un problema solo se si è verificato un errore e l’immagine/risorsa ha lo stesso nome della versione pubblicata in precedenza, ma si è verificato un problema con l’immagine. Ad esempio, avete caricato accidentalmente una versione a bassa risoluzione o il direttore artistico non ha approvato l&#39;immagine. In questo caso, vuoi richiamare l’immagine originale e sostituirla con una nuova versione utilizzando lo stesso ID risorsa.
 

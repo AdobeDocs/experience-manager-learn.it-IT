@@ -6,11 +6,12 @@ topic: Integrations
 feature: Adobe Client Data Layer, Core Components
 role: Developer
 level: Intermediate, Experienced
-kt: 6265
+jira: KT-6265
 thumbnail: KT-6265.jpg
 last-substantial-update: 2022-09-20T00:00:00Z
+doc-type: Tutorial
 exl-id: 80e4cf2e-dff6-41e8-b09b-187cf2e18e00
-source-git-commit: 99b3ecf7823ff9a116c47c88abc901f8878bbd7a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2008'
 ht-degree: 2%
@@ -424,7 +425,7 @@ Una classe di utilità, `DataLayerBuilder`, esiste per eseguire la maggior parte
    >
    > Se crei un livello dati avanzato per gli oggetti riutilizzati in un’implementazione, si consiglia di estrarre gli elementi del livello dati nei propri oggetti Java™ specifici del livello dati. Ad esempio, i componenti core Commerce hanno aggiunto interfacce per `ProductData` e `CategoryData` poiché possono essere utilizzati su molti componenti all’interno di un’implementazione Commerce. Revisione [il codice nell’archivio aem-cif-core-components](https://github.com/adobe/aem-core-cif-components/tree/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/datalayer) per ulteriori dettagli.
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Hai appena esplorato alcuni modi per estendere e personalizzare Adobe Client Data Layer con i componenti AEM.
 

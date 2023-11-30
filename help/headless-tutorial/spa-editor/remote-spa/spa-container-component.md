@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7635
+jira: KT-7635
 thumbnail: kt-7635.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1109'
 ht-degree: 1%
@@ -288,7 +289,7 @@ I componenti contenitore AEM utilizzano i criteri per determinare i componenti c
 
 Per configurare il contenitore reponsivegrid del modello Pagina SPA remota:
 
-1. Accedi ad AEM Author
+1. Accedi a AEM Author
 1. Accedi a __Strumenti > Generale > Modelli > App WKND__
 1. Modifica __Pagina Report SPA__
 
@@ -314,7 +315,7 @@ Per configurare il contenitore reponsivegrid del modello Pagina SPA remota:
 
 Dopo che l’SPA è stato aggiornato per incorporare il `<ResponsiveGrid...>`, wrapper per tre componenti React modificabili (`EditableTitle`, `EditableText`, e `EditableImage`), e l’AEM viene aggiornato con un criterio del modello corrispondente, possiamo iniziare a creare contenuti nel componente contenitore.
 
-1. Accedi ad AEM Author
+1. Accedi a AEM Author
 1. Accedi a __Sites > App WKND__
 1. Tocca __Home__ e seleziona __Modifica__ dalla barra delle azioni superiore
    + Viene visualizzato un componente di testo &quot;Hello World&quot;, che veniva aggiunto automaticamente durante la generazione del progetto dall’archetipo del progetto AEM
@@ -364,7 +365,7 @@ Utilizza la modalità Layout AEM per regolare le dimensioni e il layout dei comp
    ![Componente contenitore in SPA](./assets/spa-container-component/localhost-final.png)
 
 
-## Congratulazioni. 
+## Congratulazioni.
 
 Hai aggiunto un componente contenitore che consente agli autori di aggiungere componenti modificabili all’app WKND. Ora sai come:
 

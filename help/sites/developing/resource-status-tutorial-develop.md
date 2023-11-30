@@ -3,10 +3,10 @@ title: Sviluppo degli stati delle risorse in AEM Sites
 description: Le API di stato delle risorse di Adobe Experience Manager sono un framework collegabile per esporre i messaggi di stato in AEM in varie interfacce web dell’editor.
 topics: development
 audience: developer
-doc-type: tutorial
+doc-type: Tutorial
 activity: develop
 version: 6.4, 6.5
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Il framework Resource Status for Editors fornisce API lato server e lato client 
 
 Le barre di stato dell’editor sono disponibili in modo nativo negli editor di pagine, frammenti di esperienza e modelli dell’AEM.
 
-Di seguito sono riportati alcuni esempi di casi di utilizzo per provider di stato risorse personalizzati:
+Di seguito sono riportati alcuni esempi di casi d&#39;uso per i provider di stato delle risorse personalizzati:
 
 * Avviso agli autori quando una pagina si trova entro 2 ore dall&#39;attivazione pianificata
 * Avviso agli autori che una pagina è stata attivata negli ultimi 15 minuti

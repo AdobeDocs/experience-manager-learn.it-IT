@@ -7,13 +7,13 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5802
+jira: KT-5802
 thumbnail: KT-5802.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Di seguito è riportato un indice dei problemi e degli errori più comuni, insie
 
 + __Errore__: la rappresentazione viene riprodotta in modo incompleto (quando un’immagine) o è danneggiata e non può essere aperta.
 
-   ![La rappresentazione viene restituita parzialmente disegnata](./assets/troubleshooting/develop__await.png)
+  ![La rappresentazione viene restituita parzialmente disegnata](./assets/troubleshooting/develop__await.png)
 
 + __Causa__: del lavoratore `renditionCallback` è in corso l&#39;uscita dalla funzione prima che la rappresentazione possa essere completamente scritta in `rendition.path`.
 + __Risoluzione__: rivedi il codice di lavoro personalizzato e assicurati che tutte le chiamate asincrone siano rese sincrone utilizzando `await`.
@@ -84,7 +84,7 @@ Lo strumento di sviluppo Asset compute può entrare in uno stato in cui richiama
 + __Causa:__ Questa funzionalità non è stata implementata
 + __Risoluzione:__ Accedi al provider di archiviazione cloud utilizzando le credenziali definite in `.env`. Individua il contenitore utilizzato dagli strumenti di sviluppo (specificati anche in `.env`), accedi a __sorgente__ ed eliminare le immagini di origine. Potrebbe essere necessario eseguire i passaggi descritti in [Menu a discesa dei file di origine non corretto](#source-files-dropdown-incorrect) se i file di origine eliminati continuano a essere visualizzati nel menu a discesa in quanto possono essere memorizzati nella cache locale nello &quot;stato dell’applicazione&quot; degli strumenti di sviluppo.
 
-   ![Archiviazione BLOB di Microsoft Azure](./assets/troubleshooting/dev-tool__remove-source-files.png)
+  ![Archiviazione BLOB di Microsoft Azure](./assets/troubleshooting/dev-tool__remove-source-files.png)
 
 ## Prova{#test}
 
@@ -94,7 +94,7 @@ Lo strumento di sviluppo Asset compute può entrare in uno stato in cui richiama
 + __Causa:__ Il processo di lavoro non è riuscito a generare una rappresentazione a causa di un errore imprevisto, ad esempio un errore di sintassi JavaScript.
 + __Risoluzione:__ Rivedi il di esecuzione del test `test.log` a `/build/test-results/test-worker/test.log`. Individua la sezione in questo file corrispondente al test case non riuscito e individua eventuali errori.
 
-   ![Risoluzione dei problemi - Nessuna rappresentazione generata](./assets/troubleshooting/test__no-rendition-generated.png)
+  ![Risoluzione dei problemi - Nessuna rappresentazione generata](./assets/troubleshooting/test__no-rendition-generated.png)
 
 ### Il test genera una rappresentazione errata causando un errore del test{#tests-generates-incorrect-rendition}
 
@@ -139,11 +139,11 @@ Lo strumento di sviluppo Asset compute può entrare in uno stato in cui richiama
 + __Causa__: bug in `@adobe/aio-cli-plugin-asset-compute` 1.3.x, risultati in `Ctrl-C` non riconosciuto come comando di terminazione.
 + __Risoluzione__: Aggiornamento `@adobe/aio-cli-plugin-asset-compute` alla versione 1.4.1+
 
-   ```
-   $ aio update
-   ```
+  ```
+  $ aio update
+  ```
 
-   ![Risoluzione dei problemi - Aggiornamento aio](./assets/troubleshooting/debug__terminate.png)
+  ![Risoluzione dei problemi - Aggiornamento aio](./assets/troubleshooting/debug__terminate.png)
 
 ## Distribuzione{#deploy}
 

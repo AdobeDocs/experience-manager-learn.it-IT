@@ -1,12 +1,8 @@
 ---
 title: Creare una proprietà tag
 description: Scopri come creare una proprietà Tag con la configurazione minima da integrare con l’AEM. Gli utenti vengono introdotti nell’interfaccia utente Tag e scopri le estensioni, le regole e i flussi di lavoro di pubblicazione.
-topics: integrations
-audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
-doc-type: technical video
-activity: setup
-kt: 5980
+jira: KT-5980
 thumbnail: 38553.jpg
 topic: Integrations
 feature: Integrations
@@ -14,8 +10,9 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: d5de62ef-a2aa-4283-b500-e1f7cb5dec3b
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 1%

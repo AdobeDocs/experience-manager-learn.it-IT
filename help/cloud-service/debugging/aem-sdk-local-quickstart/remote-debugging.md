@@ -1,14 +1,14 @@
 ---
 title: Eseguire il debug remoto dell’SDK dell’AEM
 description: L’avvio rapido locale dell’SDK dell’AEM consente il debug Java remoto dall’IDE, che consente di analizzare l’esecuzione del codice in tempo reale nell’AEM per comprendere l’esatto flusso di esecuzione.
-kt: 5251
+jira: KT-5251
 topic: Development
 feature: Developer Tools
 role: Developer
 level: Beginner, Intermediate
 thumbnail: 34338.jpeg
 exl-id: beac60c6-11ae-4d0c-a055-cd3d05aeb126
-source-git-commit: 45e7c58efd1d89537752fe7f890c0e80f7be7d67
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -29,7 +29,7 @@ $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar
 
 + L’SDK per AEM supporta solo Java 11
 + `address` specifica la porta su cui l&#39;AEM è in ascolto per le connessioni di debug remoto e può essere modificata in qualsiasi porta disponibile nel computer di sviluppo locale.
-+ L&#39;ultimo parametro (esempio: `aem-author-p4502.jar`) è il file JAR Quickstart della SKD dell’AEM. Può essere il servizio AEM Author (`aem-author-p4502.jar`) o il servizio di pubblicazione AEM (`aem-publish-p4503.jar`).
++ L&#39;ultimo parametro (esempio: `aem-author-p4502.jar`) è il file JAR Quickstart della SKD dell’AEM. Può essere il servizio di authoring dell’AEM (`aem-author-p4502.jar`) o il servizio di pubblicazione AEM (`aem-publish-p4503.jar`).
 
 
 ## Istruzioni per la configurazione di IDE

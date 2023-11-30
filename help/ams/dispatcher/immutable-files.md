@@ -7,8 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: 7be6b3f9-cd53-41bc-918d-5ab9b633ffb3
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
@@ -31,7 +32,7 @@ Il layout non impedisce di modificarne il comportamento e di ignorare le modific
 
 Questo ti rassicura anche che, quando AMS esegue le patch dei Dispatcher con le ultime correzioni e miglioramenti di sicurezza, i file non verranno modificati.  Potrai quindi continuare a beneficiare dei miglioramenti e adottare solo le modifiche desiderate.
 ![Mostra una pista da bowling con una palla che scorre lungo la corsia.  La palla ha una freccia con la parola che vi mostra.  I paraurti delle grondaie sono sollevati e sopra di essi si trovano le parole file immutabili.](assets/immutable-files/bowling-file-immutability.png "bowling-file-immutability")
-Come illustrato nell’immagine precedente, i file immutabili non ti impediscono di giocare.  Ti impediscono di danneggiare la prestazione e ti mantengono in corsia.  Questo metodo ci permette di avere alcune caratteristiche molto importanti:
+Come illustrato nell’immagine precedente, i file immutabili non ti impediscono di giocare.  Ti impediscono di danneggiare la prestazione e ti mantengono sulla corsia.  Questo metodo ci permette di avere alcune caratteristiche molto importanti:
 
 - Le personalizzazioni vengono gestite nei propri spazi di sicurezza
 - La sovrapposizione delle modifiche personalizzate rispecchia quella dei metodi di sovrapposizione in AEM

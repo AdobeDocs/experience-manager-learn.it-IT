@@ -1,18 +1,18 @@
 ---
 title: 'Guida introduttiva ad AEM Sites: nozioni di base sui componenti'
-description: Comprendi la tecnologia sottostante di un componente Sites di Adobe Experience Manager (AEM) attraverso un semplice esempio di "HelloWorld". Vengono esplorati gli argomenti di HTL, modelli Sling, librerie lato client e finestre di dialogo per l’authoring.
+description: Comprendi la tecnologia sottostante di un componente Adobe Experience Manager (AEM) Sites attraverso un semplice esempio di "HelloWorld". Vengono esplorati gli argomenti di HTL, modelli Sling, librerie lato client e finestre di dialogo per l’authoring.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: Core Components, Developer Tools
 topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
-kt: 4081
+jira: KT-4081
 thumbnail: 30177.jpg
+doc-type: Tutorial
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Nozioni di base sui componenti {#component-basics}
 
-In questo capitolo, analizziamo la tecnologia di base di un componente Sites di Adobe Experience Manager (AEM) tramite un semplice `HelloWorld` esempio. Sono state apportate piccole modifiche a un componente esistente, riguardanti argomenti quali authoring, HTL, modelli Sling e librerie lato client.
+In questo capitolo, analizziamo la tecnologia di base di un componente Adobe Experience Manager (AEM) Sites tramite un semplice `HelloWorld` esempio. Sono state apportate piccole modifiche a un componente esistente, riguardanti argomenti quali authoring, HTL, modelli Sling e librerie lato client.
 
 ## Prerequisiti {#prerequisites}
 
@@ -333,7 +333,7 @@ Di seguito sono riportati i passaggi di alto livello eseguiti nel video preceden
 
    ![Aggiornamento nozioni di base sui componenti](assets/component-basics/color-update.png)
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Congratulazioni, hai imparato le nozioni di base sullo sviluppo dei componenti in Adobe Experience Manager.
 

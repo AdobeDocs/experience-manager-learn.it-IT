@@ -1,12 +1,8 @@
 ---
 title: Debug di un’implementazione di tag
-description: Introduzione ad alcuni strumenti e tecniche comuni per eseguire il debug di un’implementazione di tag. Scopri come utilizzare la Developer Console del browser e l’estensione Debugger di Experience Platform per identificare gli aspetti chiave di un’implementazione di Tag e risolvere problemi relativi a essi.
-topics: integrations
-audience: administrator
+description: Introduzione ad alcuni strumenti e tecniche comuni per eseguire il debug di un’implementazione di tag. Scopri come utilizzare la Developer Console del browser e l’estensione Debugger di Experienci Platform per identificare gli aspetti chiave di un’implementazione di Tag e risolvere problemi relativi a essi.
 solution: Experience Manager, Data Collection, Experience Platform
-doc-type: technical video
-activity: setup
-kt: 6047
+jira: KT-6047
 thumbnail: 38567.jpg
 topic: Integrations
 feature: Integrations
@@ -14,8 +10,9 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: 647447ca-3c29-4efe-bb3a-d3f53a936a2a
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 1%
@@ -24,7 +21,7 @@ ht-degree: 1%
 
 # Debug di un’implementazione di tag {#debug-tags-implementation}
 
-Introduzione agli strumenti e alle tecniche comuni utilizzati per eseguire il debug di un’implementazione di tag. Scopri come utilizzare la Developer Console del browser e l’estensione Debugger di Experience Platform per identificare gli aspetti chiave di un’implementazione di Tag e risolvere problemi relativi a essi.
+Introduzione agli strumenti e alle tecniche comuni utilizzati per eseguire il debug di un’implementazione di tag. Scopri come utilizzare la Developer Console del browser e l’estensione Debugger di Experienci Platform per identificare gli aspetti chiave di un’implementazione di Tag e risolvere problemi relativi a essi.
 
 >[!VIDEO](https://video.tv.adobe.com/v/38567?quality=12&learn=on)
 
@@ -44,11 +41,11 @@ Per abilitare il debug lato client, chiama il `setDebug(true)` metodo su `_satel
 
    ![Proprietà Tag nelle pagine di authoring e pubblicazione](assets/satellite-object-debugging.png)
 
-## Debug tramite Adobe Experience Platform Debugger
+## Debug tramite Adobi Experience Platform Debugger
 
 L’Adobe fornisce un Adobe Experience Platform Debugger [Estensione Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) e [Componente aggiuntivo Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) per eseguire il debug, comprendere e ottenere informazioni approfondite sull’integrazione.
 
-1. Apri l’estensione Adobe Experience Platform Debugger e apri la pagina del sito nell’istanza Publish.
+1. Apri l’estensione Adobi Experience Platform Debugger e apri la pagina del sito nell’istanza Publish.
 
 1. In **Adobe Experience Platform Debugger > Riepilogo > Tag Adobe Experience Platform** verificare i dettagli della proprietà Tag come Nome, Versione, Data build, Ambiente ed Estensioni.
 

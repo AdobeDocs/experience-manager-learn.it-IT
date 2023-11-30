@@ -3,10 +3,10 @@ user-guide-title: Tutorial sulla cache di AEM Dispatcher
 user-guide-description: Un tutorial che consente di comprendere meglio come funziona Dispatcher e come utilizzarlo.
 sub-product: Experience Manager
 version: 6.4, 6.5
-kt: 2233
+jira: KT-2233
 index: y
 team: TM
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 75%

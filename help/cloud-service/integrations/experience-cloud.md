@@ -6,17 +6,17 @@ feature: Integrations
 topic: Integrations
 role: Leader, Architect, Admin, Developer
 level: Beginner
-kt: 10718
+jira: KT-10718
 thumbnail: KT-10718.png
 last-substantial-update: 2022-11-17T00:00:00Z
 mini-toc-levels: 1
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '928'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
@@ -47,7 +47,7 @@ Fai clic sul prodotto di Experience Cloud per la documentazione su come configur
 
 ## Adobe Acrobat Sign
 
-Adobe Acrobat Sign (precedentemente Acrobat Sign) abilita i flussi di lavoro di firma elettronica per i moduli adattivi di AEM Forms, migliorando i flussi di lavoro per l’elaborazione di documenti per aree legali, vendite, cicli paghe, risorse umane e altre.
+Adobe Acrobat Sign (precedentemente Acrobat Sign) abilita i flussi di lavoro di firma elettronica per i moduli adattivi di AEM Forms, migliorando i flussi di lavoro per l’elaborazione dei documenti per le aree legali, di vendita, del ciclo paghe, delle risorse umane e altre.
 
 ### AEM Forms
 
@@ -82,7 +82,7 @@ L’integrazione di Adobe Analytics con AEM as a Cloud Service consente di monit
 ### AEM Sites
 
 + [Integrazione con Adobe Campaign Classic](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-campaign-classic.html#configure-user)
-+ [Creazione di una newsletter di Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/creating-newsletter.html)
++ [Creazione di una newsletter Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/creating-newsletter.html)
 + [Documentazione dei componenti core E-mail AEM](https://github.com/adobe/aem-core-email-components#aem-email-core-components)
 
 ## Adobe Commerce
@@ -101,12 +101,12 @@ I tag Adobe Experience Platform (precedentemente Adobe Launch, DTM) si integrano
 ### AEM Sites
 
 + [Guida utente sui tag di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [Esercitazione sui tag Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=it)
++ [Esercitazione sui tag Experienci Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=it)
 
 ### AEM Forms
 
 + [Guida utente sui tag di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [Esercitazione sui tag Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=it)
++ [Esercitazione sui tag Experienci Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=it)
 
 ## Adobe Journey Optimizer
 
@@ -137,7 +137,7 @@ Adobe Sensei fornisce tecnologie di intelligenza artificiale e apprendimento aut
 + [Abilita tag avanzati per immagini](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
 + [Tag avanzati personalizzati per le immagini](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/custom-smart-tags.html)
 + [Tag avanzati per video](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/video-smart-tags.html)
-+ [Ritaglio avanzato](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
++ [Ritaglio avanzato](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html?lang=it)
 + [Ricerca visiva](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search.html)
 
 ### AEM Forms

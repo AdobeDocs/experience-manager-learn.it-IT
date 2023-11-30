@@ -7,8 +7,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '962'
 ht-degree: 9%
@@ -42,7 +43,7 @@ Se i modelli per frammenti di contenuto sono **non** abilitato per una configura
 >
 >Consulta la [[!UICONTROL Browser configurazioni] documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=it) per ulteriori informazioni.
 
-1. Accedi ad AEM Author come utente con le autorizzazioni appropriate per modificare la configurazione pertinente.
+1. Accedi a AEM Author come utente con le autorizzazioni appropriate per modificare la configurazione pertinente.
    * Per questa esercitazione, il **admin** può essere utilizzato.
 1. Accedi a **[!UICONTROL Strumento] > [!UICONTROL Generale] > [!UICONTROL Browser configurazioni]**
 1. Tocca il **icona cartella** accanto a **[!DNL WKND Mobile]** per selezionare, quindi tocca il **[!UICONTROL Modifica] pulsante** in alto a sinistra.
@@ -54,10 +55,9 @@ Se i modelli per frammenti di contenuto sono **non** abilitato per una configura
    >
    >Questa modifica alla configurazione non è reversibile da [!UICONTROL Configurazione AEM] Interfaccia web. Per annullare questa configurazione:
    >    
-   >    1. Apri [CRXDE Lite](http://localhost:4502/crx/de)
+   >    1. Apri [CRXDE Liti](http://localhost:4502/crx/de)
    >    1. Accedi a `/conf/wknd-mobile/settings/dam/cfm`
    >    1. Elimina `models` nodo
-
    >    
    >Tutti i modelli per frammenti di contenuto esistenti creati con questa configurazione vengono eliminati e le relative definizioni memorizzate in `/conf/wknd-mobile/settings/dam/cfm/models`.
 
@@ -66,7 +66,7 @@ Se i modelli per frammenti di contenuto sono **non** abilitato per una configura
    1. Accedi a **[!UICONTROL AEM] > [!UICONTROL Risorse] > [!UICONTROL File]**
    1. Seleziona la **[!UICONTROL WKND Mobile] cartella**
    1. Tocca il **[!UICONTROL Proprietà]** nella barra delle azioni superiore per aprire [!UICONTROL Proprietà cartella]
-   1. In entrata [!UICONTROL Proprietà cartella], tocca il pulsante **[!UICONTROL Cloud Services]** scheda
+   1. In entrata [!UICONTROL Proprietà cartella], tocca il pulsante **[!UICONTROL Cloud Service]** scheda
    1. Verificare la **[!UICONTROL Configurazione cloud]** è impostato su **/conf/wknd-mobile**
    1. Tocca **[!UICONTROL Salva e chiudi]** in alto a destra per mantenere le modifiche
 

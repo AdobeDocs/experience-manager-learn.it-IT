@@ -2,15 +2,12 @@
 title: Panoramica video
 description: Dynamic Media Classic viene fornito con la conversione automatica del video al caricamento, lo streaming video su dispositivi desktop e mobili e set video adattivi ottimizzati per la riproduzione in base al dispositivo e alla larghezza di banda. Ulteriori informazioni sui video in Dynamic Media Classic e introduzione ai concetti video e alla terminologia. Quindi approfondisci come caricare e codificare i video, scegli predefiniti video per il caricamento, aggiungi o modifica un predefinito video, visualizza l’anteprima dei video in un visualizzatore video, distribuisci i video ai siti web e mobili, aggiungi didascalie e marcatori capitoli ai video e pubblica i visualizzatori video per gli utenti desktop e mobili.
 feature: Dynamic Media Classic, Video Profiles, Viewer Presets
-doc-type: tutorial
-topics: development, authoring, configuring, videos, video-profiles
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: dfbf316f-3922-4bc7-b3f3-2a5bbdeb7063
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '6118'
 ht-degree: 0%
@@ -196,7 +193,7 @@ Quali sono le proporzioni? Se attorno al video convertito sono visualizzate dell
 
 ### Raggruppamento opzioni video
 
-I predefiniti per video determinano la codifica del video specificando queste impostazioni. Se non conosci questi termini, consulta l’argomento Concetti video di base e terminologia, sopra.
+I predefiniti per video determinano il modo in cui il video viene codificato specificando queste impostazioni. Se non conosci questi termini, consulta l’argomento Concetti video di base e terminologia, sopra.
 
 ![immagine](assets/video-overview/video-overview-3.jpg)
 
@@ -222,7 +219,7 @@ Talvolta potresti aver bisogno di un predefinito per video speciale che non corr
 
    - Ogni account video in streaming ha decine di predefiniti pronti all’uso e, se crei dei tuoi predefiniti personalizzati, li vedi anche qui.
    - Puoi filtrare per tipo utilizzando il menu a discesa. I predefiniti sono divisi in Computer, Mobile e Tablet.
-      ![immagine](assets/video-overview/video-overview-4.jpg)
+     ![immagine](assets/video-overview/video-overview-4.jpg)
 
 2. La colonna Attivo consente di scegliere se visualizzare tutti i predefiniti al momento del caricamento o solo quelli selezionati. Se siete negli Stati Uniti, potete deselezionare i predefiniti PAL europei e, se siete nel Regno Unito/area EMEA, deselezionare i predefiniti NTSC.
 3. Fai clic su **Aggiungi** per creare un predefinito personalizzato. Viene aperto il pannello Aggiungi predefinito video. Il processo è simile alla creazione di un predefinito immagine.
@@ -387,4 +384,4 @@ In alternativa, puoi incorporare il video Dynamic Media Classic MP4 nel codice d
 
 ## Risorse aggiuntive
 
-Osserva [Dynamic Media Skill Builder: video in Dynamic Media Classic](https://seminars.adobeconnect.com/p2ueiaswkuze) webinar on-demand per scoprire come utilizzare le funzioni video in Dynamic Media Classic.
+Osserva [Dynamic Medie Skill Builder: video in Dynamic Media Classic](https://seminars.adobeconnect.com/p2ueiaswkuze) webinar on-demand per scoprire come utilizzare le funzioni video in Dynamic Media Classic.

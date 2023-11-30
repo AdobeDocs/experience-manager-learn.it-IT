@@ -7,12 +7,12 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5251
+jira: KT-5251
 topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 11fb83e9-dbaf-46e5-8102-ae8cc716c6ba
-source-git-commit: 467b0c343a28eb573498a013b5490877e4497fe0
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 2%
@@ -27,16 +27,16 @@ Diversi altri strumenti possono essere utili per eseguire il debug dell’applic
 
 ![CRXDE Lite](./assets/other-tools/crxde-lite.png)
 
-CRXDE Lite è un’interfaccia basata su web per interagire con l’archivio dati JCR, AEM. CRXDE Lite fornisce una visibilità completa in JCR, inclusi nodi, proprietà, valori di proprietà e autorizzazioni.
+CRXDE Liti è un’interfaccia basata su web per interagire con l’archivio dati JCR, AEM. CRXDE Liti fornisce una visibilità completa in JCR, inclusi nodi, proprietà, valori di proprietà e autorizzazioni.
 
-CRXDE Lite si trova in:
+CRXDE Liti si trova in:
 
 + Strumenti > Generale > CRXDE Lite
 + o direttamente da [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
 
 ### Debug del contenuto
 
-CRXDE Lite fornisce accesso diretto a JCR. Il contenuto visibile tramite CRXDE Lite è limitato dalle autorizzazioni concesse all’utente, il che significa che potresti non essere in grado di visualizzare o modificare tutto in JCR a seconda del tuo accesso.
+CRXDE Liti fornisce accesso diretto a JCR. Il contenuto visibile tramite CRXDE Liti è limitato dalle autorizzazioni concesse all’utente, il che significa che potresti non essere in grado di visualizzare o modificare tutto in JCR a seconda del tuo accesso.
 
 + La struttura JCR viene spostata e manipolata utilizzando il riquadro di navigazione a sinistra
 + Selezionando un nodo nel riquadro di navigazione a sinistra, espone la proprietà del nodo nel riquadro inferiore.
@@ -44,19 +44,19 @@ CRXDE Lite fornisce accesso diretto a JCR. Il contenuto visibile tramite CRXDE L
 + Facendo doppio clic su un nodo di file nel menu di navigazione a sinistra, il contenuto del file viene aperto nel riquadro in alto a destra
 + Tocca il pulsante Salva tutto in alto a sinistra per mantenere le modifiche, oppure la freccia giù accanto a Salva tutto per ripristinare eventuali modifiche non salvate.
 
-![CRXDE Lite - Debug del contenuto](./assets/other-tools/crxde-lite__debugging-content.png)
+![CRXDE Liti - Debug del contenuto](./assets/other-tools/crxde-lite__debugging-content.png)
 
-Qualsiasi modifica apportata direttamente all’SDK dell’AEM tramite CRXDE Lite può essere difficile da tracciare e gestire. Se necessario, assicurati che le modifiche apportate tramite CRXDE Lite tornino ai pacchetti di contenuti mutabili del progetto AEM (`ui.content`) e si impegnano a favore di Git. Idealmente, tutte le modifiche al contenuto dell’applicazione hanno origine dalla base di codice e confluiscono nell’SDK dell’AEM tramite le implementazioni, anziché apportare modifiche direttamente all’SDK dell’AEM tramite CRXDE Lite.
+Qualsiasi modifica apportata direttamente all’SDK dell’AEM tramite CRXDE Liti può essere difficile da tracciare e gestire. Se necessario, assicurati che le modifiche apportate tramite CRXDE Liti tornino ai pacchetti di contenuti mutabili del progetto AEM (`ui.content`) e si impegnano a favore di Git. Idealmente, tutte le modifiche al contenuto dell’applicazione hanno origine dalla base di codice e confluiscono nell’SDK dell’AEM tramite le implementazioni, anziché apportare modifiche direttamente all’SDK dell’AEM tramite CRXDE Liti.
 
 ### Debug dei controlli di accesso
 
-CRXDE Lite offre un modo per testare e valutare il controllo degli accessi su un nodo specifico per un utente o un gruppo specifico (o entità principale).
+CRXDE Liti offre un modo per testare e valutare il controllo degli accessi su un nodo specifico per un utente o un gruppo specifico (o entità principale).
 
-Per accedere alla console Test controllo di accesso in CRXDE Lite, passa a:
+Per accedere alla console Test controllo di accesso in CRXDE Liti, passa a:
 
-+ CRXDE Lite > Strumenti > Test controllo accesso ...
++ CRXDE Liti > Strumenti > Test controllo accesso ...
 
-![CRXDE Lite - Test controllo accesso](./assets/other-tools/crxde-lite__test-access-control.png)
+![CRXDE Liti - Test controllo accesso](./assets/other-tools/crxde-lite__test-access-control.png)
 
 1. Utilizzando il campo Percorso, seleziona un percorso JCR da valutare
 1. Utilizzando il campo Principal, selezionare l&#39;utente o il gruppo su cui valutare il percorso

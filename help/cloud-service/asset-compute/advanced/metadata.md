@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6448
+jira: KT-6448
 thumbnail: 327313.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 1%
@@ -47,10 +47,10 @@ Asset compute worker implementa il contratto Asset compute SDK worker API, nel `
 
 ![Flusso logico di lavoro metadati di Asset compute](./assets/metadata/logical-flow.png)
 
-1. Il servizio Author di AEM richiama il processo di lavoro metadati Asset compute, fornendo i __(1 bis)__ binario originale e __(1 ter)__ eventuali parametri definiti nel profilo di elaborazione.
+1. Il servizio di authoring AEM richiama il processo di lavoro metadati Asset compute, fornendo il __(1 bis)__ binario originale e __(1 ter)__ eventuali parametri definiti nel profilo di elaborazione.
 1. L’SDK di Asset compute orchestra l’esecuzione del processo di lavoro dei metadati di Asset compute personalizzato `renditionCallback(...)` funzione, derivando una rappresentazione XMP (XML), in base al binario della risorsa __(1 bis)__ ed eventuali parametri del profilo di elaborazione __(1 ter)__.
 1. Il lavoratore Asset compute salva la rappresentazione XMP (XML) in `rendition.path`.
-1. Dati XMP (XML) scritti in `rendition.path` viene trasportato tramite l’SDK di Asset compute al servizio AEM Author e lo espone come __(4 bis)__ una rappresentazione del testo e __(4 ter)__ persistente nel nodo di metadati della risorsa.
+1. Dati XMP (XML) scritti in `rendition.path` viene trasportato tramite l’SDK di Asset compute al servizio di authoring AEM e lo espone come __(4 bis)__ una rappresentazione del testo e __(4 ter)__ persistente nel nodo di metadati della risorsa.
 
 ## Configurare manifest.yml{#manifest}
 
@@ -288,7 +288,7 @@ Per rivedere i metadati dei colori, mappa due nuovi campi nello schema di metada
 
 ![Schema metadati](./assets/metadata/metadata-schema.png)
 
-1. Nel servizio AEM Author, passa a __Strumenti > Risorse > Schemi metadati__
+1. Nel servizio Author dell’AEM, passa a __Strumenti > Risorse > Schemi metadati__
 1. Accedi a __predefinito__ e selezionare e modificare __immagine__ e aggiungere campi modulo di sola lettura per esporre i metadati colore generati
 1. Aggiungi un __Testo su riga singola__
    + __Etichetta campo__: `Colors Family`
@@ -303,7 +303,7 @@ Per rivedere i metadati dei colori, mappa due nuovi campi nello schema di metada
 
 ![Dettagli risorsa](./assets/metadata/asset-details.png)
 
-1. Nel servizio AEM Author, passa a __Risorse > File__
+1. Nel servizio Author dell’AEM, passa a __Risorse > File__
 1. Passa alla cartella o sottocartella a cui viene applicato il profilo di elaborazione
 1. Carica una nuova immagine (JPEG, PNG, GIF o SVG) nella cartella o rielabora le immagini esistenti utilizzando il file aggiornato [Profilo di elaborazione](#processing-profile)
 1. Al termine dell’elaborazione, seleziona la risorsa e tocca __proprietà__ nella barra delle azioni superiore per visualizzarne i metadati

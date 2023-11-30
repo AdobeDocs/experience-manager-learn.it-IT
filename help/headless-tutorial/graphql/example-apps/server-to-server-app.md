@@ -6,12 +6,12 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 10798
+jira: KT-10798
 thumbnail: KT-10798.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM headless as a Cloud Service" before-title="false"
 exl-id: 39b21a29-a75f-4a6c-ba82-377cf5cc1726
-source-git-commit: d3ee129cb228f02d5a5846465400c04ce81dfbb5
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 5%
@@ -38,9 +38,9 @@ I seguenti strumenti devono essere installati localmente:
 L’applicazione Node.js funziona con le seguenti opzioni di distribuzione AEM. Tutte le distribuzioni richiedono [Sito WKND v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) da installare.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=it)
-+ Facoltativamente [credenziali del servizio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) se si autorizzano richieste (ad esempio, connessione al servizio AEM Author).
++ Facoltativamente [credenziali del servizio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) se si autorizzano richieste (ad esempio, connessione al servizio di authoring AEM).
 
-Questa applicazione Node.js può connettersi ad AEM Author o AEM Publish in base ai parametri della riga di comando.
+Questa applicazione Node.js può connettersi a AEM Author o AEM Publish in base ai parametri della riga di comando.
 
 ## Come usare
 
@@ -63,7 +63,7 @@ Questa applicazione Node.js può connettersi ad AEM Author o AEM Publish in base
    $ node index.js <AEM_HOST> <OPTIONAL_SERVICE_CONFIG_FILE_PATH>
    ```
 
-   Ad esempio, per eseguire l’app su AEM Publish senza autorizzazione:
+   Ad esempio, per eseguire l’app su Pubblicazione AEM senza autorizzazione:
 
    ```shell
    $ node index.js https://publish-p123-e789.adobeaemcloud.com
@@ -162,7 +162,7 @@ async function run() {
 
 ### Esegui query persistente GraphQL
 
-Le query persistenti dell’AEM vengono eseguite su HTTP GET, pertanto [Client AEM headless per Node.js](https://github.com/adobe/aem-headless-client-nodejs) viene utilizzato per [eseguire le query GraphQL persistenti;](https://github.com/adobe/aem-headless-client-nodejs#within-asyncawait) contro l’AEM e recupera il contenuto dell’avventura.
+Le query persistenti dell’AEM vengono eseguite tramite HTTP GET, pertanto [Client AEM headless per Node.js](https://github.com/adobe/aem-headless-client-nodejs) viene utilizzato per [eseguire le query GraphQL persistenti;](https://github.com/adobe/aem-headless-client-nodejs#within-asyncawait) contro l’AEM e recupera il contenuto dell’avventura.
 
 La query persistente viene richiamata chiamando `aemHeadlessClient.runPersistedQuery(...)`e passando il nome della query GraphQL persistente. Una volta che GraphQL restituisce i dati, trasmettili al `doSomethingWithDataFromAEM(..)` , che stampa i risultati, ma in genere invia i dati a un altro sistema o genera un output in base ai dati recuperati.
 

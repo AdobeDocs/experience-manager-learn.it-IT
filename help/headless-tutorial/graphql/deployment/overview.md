@@ -6,11 +6,11 @@ feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
 level: Intermediate
-kt: 10794
+jira: KT-10794
 thumbnail: kt-10794.jpg
 last-substantial-update: 2022-08-26T00:00:00Z
 exl-id: 6de58ca0-9444-4272-9487-15a9e3c89231
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -29,13 +29,13 @@ Prima di esaminare le considerazioni relative alla distribuzione, è fondamental
 
 + __Autore AEM__ è il servizio in cui i team creano, collaborano e pubblicano Frammenti di contenuto (e altre risorse).
 + __Pubblicazione AEM__ è il servizio pubblicato I frammenti di contenuto (e altre risorse) vengono replicati per l’utilizzo generale.
-+ __Anteprima AEM__ è il servizio che imita il comportamento di AEM Publish, ma il cui contenuto è pubblicato a scopo di anteprima o revisione. L’anteprima AEM è destinata al pubblico interno e non alla distribuzione generale di contenuti. L’utilizzo di Anteprima AEM è facoltativo, in base al flusso di lavoro desiderato.
++ __Anteprima AEM__ è il servizio che imita il comportamento di Pubblicazione AEM, ma il cui contenuto è pubblicato a scopo di anteprima o revisione. L’anteprima AEM è destinata al pubblico interno e non alla distribuzione generale di contenuti. L’utilizzo di Anteprima AEM è facoltativo, in base al flusso di lavoro desiderato.
 
 ![Architettura del servizio AEM](./assets/overview/aem-service-architecture.png)
 
 Architettura di distribuzione headless tipica as a Cloud Service all’AEM
 
-I client AEM headless che operano in una capacità di produzione in genere interagiscono con AEM Publish, che contiene il contenuto approvato e pubblicato. I clienti che interagiscono con AEM Author devono prestare particolare attenzione, in quanto AEM Author è protetto per impostazione predefinita e richiede l’autorizzazione per tutte le richieste; può inoltre contenere contenuto in corso di lavorazione o non approvato.
+I client AEM headless che operano in una capacità di produzione in genere interagiscono con la pubblicazione AEM, che contiene il contenuto approvato e pubblicato. I clienti che interagiscono con l’Autore AEM devono prestare particolare attenzione, in quanto l’Autore AEM è sicuro per impostazione predefinita e richiede l’autorizzazione per tutte le richieste; può anche contenere contenuti in corso di lavorazione o non approvati.
 
 ## Distribuzioni client headless
 

@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7631
+jira: KT-7631
 thumbnail: kt-7631.jpeg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 1%
@@ -316,7 +317,7 @@ Questa pagina può anche essere rimossa e ricreata come pagina SPA remota nell�
 
 ## Implementare il progetto AEM nell’SDK dell’AEM
 
-1. Verifica che il servizio AEM Author sia in esecuzione sulla porta 4502
+1. Verificare che il servizio di creazione AEM sia in esecuzione sulla porta 4502
 1. Dalla riga di comando, accedi alla directory principale del progetto AEM Maven
 1. Utilizza Maven per distribuire il progetto al servizio di authoring dell’SDK AEM locale
 
@@ -330,7 +331,7 @@ Questa pagina può anche essere rimossa e ricreata come pagina SPA remota nell�
 
 Con il progetto AEM implementato, c&#39;è un ultimo passaggio per preparare l&#39;Editor SPA per caricare il nostro SPA remoto. In AEM, contrassegna la pagina AEM che corrisponde alla radice SPA,`/content/wknd-app/us/en/home`, generato dall’archetipo del progetto AEM.
 
-1. Accedi ad AEM Author
+1. Accedi a AEM Author
 1. Accedi a __Sites > App WKND > us > it__
 1. Seleziona la __Home page dell’app WKND__, e tocca __Proprietà__
 

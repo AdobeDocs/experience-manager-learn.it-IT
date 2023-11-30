@@ -1,16 +1,16 @@
 ---
 title: Esplora le API di GraphQL - Guida introduttiva di AEM Headless - GraphQL
-description: Introduzione ad Adobe Experience Manager (AEM) e GraphQL. Esplora le API GraphQL dell’AEM utilizzando l’IDE GraphiQL integrato. Scopri come l’AEM genera automaticamente uno schema GraphQL basato su un modello di Frammento di contenuto. Sperimenta la creazione di query di base utilizzando la sintassi GraphQL.
+description: Introduzione a Adobe Experience Manager (AEM) e GraphQL. Esplora le API GraphQL dell’AEM utilizzando l’IDE GraphiQL integrato. Scopri come l’AEM genera automaticamente uno schema GraphQL basato su un modello di Frammento di contenuto. Sperimenta la creazione di query di base utilizzando la sintassi GraphQL.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 6714
+jira: KT-6714
 thumbnail: KT-6714.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 1%
@@ -397,7 +397,7 @@ Scarica i contenuti, i modelli e le query persistenti creati negli ultimi tre ca
 
 Ulteriori informazioni sulle query GraphQL sono disponibili all’indirizzo [Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Congratulazioni, hai creato ed eseguito diverse query GraphQL.
 

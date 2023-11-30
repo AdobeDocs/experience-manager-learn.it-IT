@@ -1,16 +1,16 @@
 ---
 title: Authoring di frammenti di contenuto - Guida introduttiva a AEM headless - GraphQL
-description: Introduzione ad Adobe Experience Manager (AEM) e GraphQL. Crea e modifica un nuovo frammento di contenuto basato su un modello di frammento di contenuto. Scopri come creare varianti di Frammenti di contenuto.
+description: Introduzione a Adobe Experience Manager (AEM) e GraphQL. Crea e modifica un nuovo frammento di contenuto basato su un modello di frammento di contenuto. Scopri come creare varianti di Frammenti di contenuto.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 6713
+jira: KT-6713
 thumbnail: 22451.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: 25c289b093297e870c52028a759d05628d77f634
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 4%
@@ -49,7 +49,7 @@ I frammenti di contenuto sono memorizzati in cartelle in AEM Assets. Per creare 
 
    ![Apri proprietà cartella](assets/author-content-fragments/open-folder-properties.png)
 
-1. Tocca il **Cloud Services** scheda. Nella scheda Configurazione cloud, utilizza Trova percorso per selezionare **Il mio progetto** configurazione. Il valore deve essere `/conf/my-project`.
+1. Tocca il **Cloud Service** scheda. Nella scheda Configurazione cloud, utilizza Trova percorso per selezionare **Il mio progetto** configurazione. Il valore deve essere `/conf/my-project`.
 
    ![Imposta configurazione cloud](assets/author-content-fragments/set-cloud-config-my-project.png)
 
@@ -100,11 +100,11 @@ Successivamente vengono creati diversi frammenti di contenuto in base al **Team*
 
    Tocca **Crea** per creare il frammento Persona.
 
-1. Quindi, ripeti i passaggi per creare un **Team** frammento che rappresenta **Alfa team**:
+1. Quindi, ripeti i passaggi per creare un **Team** frammento che rappresenta **Alpha team**:
 
    * Dove si trova: `/content/dam/my-project/en`
    * Modello per frammenti di contenuto: **Team**
-   * Titolo: **Alfa team**
+   * Titolo: **Alpha team**
    * Nome: `team-alpha`
 
    Tocca **Crea** per creare il frammento Team.
@@ -131,7 +131,7 @@ Quindi popola i frammenti appena creati con i dati.
 
 ## Modifica frammento di contenuto team {#edit-team-content-fragment}
 
-1. Apri **Alfa team** Frammento di contenuto utilizzando l’interfaccia utente Frammento di contenuto.
+1. Apri **Alpha team** Frammento di contenuto utilizzando l’interfaccia utente Frammento di contenuto.
 1. Compila i campi per **Titolo**, **Nome breve**, e **Descrizione**.
 1. Seleziona la **John Doe** e **Alison Smith** Frammenti di contenuto per compilare **Membri team** campo:
 
@@ -141,7 +141,7 @@ Quindi popola i frammenti appena creati con i dati.
    >
    >Puoi anche creare frammenti di contenuto in linea utilizzando **Nuovo frammento di contenuto** pulsante.
 
-1. Tocca **Salva e chiudi** per salvare le modifiche apportate al frammento Alfa team.
+1. Tocca **Salva e chiudi** per salvare le modifiche apportate al frammento di Alpha Team.
 
 ## Pubblicare frammenti di contenuto
 
@@ -154,7 +154,7 @@ In seguito a revisione e verifica, pubblica il `Content Fragments`
 1. Tocca la casella di controllo accanto ai frammenti di contenuto e tocca **Pubblica**.
    ![Pubblica frammento di contenuto](assets/author-content-fragments/publish-content-fragment.png)
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Congratulazioni, hai creato più frammenti di contenuto e creato una variante.
 

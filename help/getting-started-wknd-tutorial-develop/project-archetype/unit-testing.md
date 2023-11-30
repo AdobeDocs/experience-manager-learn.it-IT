@@ -2,17 +2,17 @@
 title: Test di unità
 description: Implementa uno unit test che convalida il comportamento del modello Sling del componente Byline, creato nell’esercitazione del componente personalizzato.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: APIs, AEM Project Archetype
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 4089
+jira: KT-4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
+doc-type: Tutorial
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
 recommendations: noDisplay, noCatalog
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2980'
 ht-degree: 0%
@@ -138,8 +138,6 @@ Gli unit test tipicamente mappano 1-a-1 con le classi Java™. In questo capitol
    1. Identificarlo facilmente come file di test _per_ `BylineImpl.java`
    1. Ma differenzia anche il file di test _da_ la classe oggetto della prova, `BylineImpl.java`
 
-
-
 ## Revisione di BylineImplTest.java {#reviewing-bylineimpltest-java}
 
 A questo punto, il file di test JUnit è una classe Java™ vuota.
@@ -184,7 +182,7 @@ A questo punto, il file di test JUnit è una classe Java™ vuota.
 
    Per iniziare, iniziamo con un singolo metodo di test per ogni metodo pubblico sulla classe che stiamo testando, quindi:
 
-   | BylineImpl.java |  | BylineImplTest.java |
+   | BylineImpl.java |              | BylineImplTest.java |
    | ------------------|--------------|---------------------|
    | getName() | è testato da | testGetName() |
    | getOccupations() | è testato da | testGetOccupations() |

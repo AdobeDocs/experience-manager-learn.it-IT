@@ -6,14 +6,14 @@ feature: Security
 topic: Development, Integrations, Security
 role: Architect, Developer
 level: Intermediate
-kt: 9354
+jira: KT-9354
 thumbnail: KT-9354.png
 last-substantial-update: 2022-10-13T00:00:00Z
 exl-id: d1c1a3cf-989a-4693-9e0f-c1b545643e41
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '468'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -21,14 +21,14 @@ ht-degree: 3%
 
 AEM as a Cloud Service offre funzionalità di rete avanzate che consentono una gestione precisa delle connessioni da e verso i programmi as a Cloud Service AEM.
 
-|  | [Programmi di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) | [Programmi sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) |
+|                                                   | [Programmi di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) | [Programmi sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=it) |
 |---------------------------------------------------|:-----------------------:|:---------------------:|
 | Supporto di reti avanzate | ✔ | ✘ |
 
 
 La rete avanzata AEM comprende tre opzioni per la gestione della connettività con i servizi esterni. Un programma Cloud Manager e i relativi ambienti AEM as a Cloud Service possono utilizzare solo un singolo tipo di configurazione di rete avanzata alla volta, in modo da assicurarsi che venga selezionato il tipo più appropriato.
 
-|  | HTTP/HTTPS su porte standard | HTTP/HTTPS su porte non standard | connessioni non HTTP/HTTPS | IP in uscita dedicato | Elenco &quot;Host non proxy&quot; | Connessione a servizi protetti da VPN | Limita il traffico di pubblicazione AEM per IP |
+|                                   | HTTP/HTTPS su porte standard | HTTP/HTTPS su porte non standard | connessioni non HTTP/HTTPS | IP in uscita dedicato | Elenco &quot;Host non proxy&quot; | Connessione a servizi protetti da VPN | Limitare il traffico di pubblicazione AEM per IP |
 |-----------------------------------|:----------------------------:|:--------------------------------:|:--------------------------:|:-------------------:|:-------------------------------------:|:-------------------------------------:|:----:|
 | __Nessuna rete avanzata__ | ✔ | ✘ | ✘ | ✘ | ✘ | ✘ | ✘ |
 | [__Uscita porta flessibile__](./flexible-port-egress.md) | ✔ | ✔ | ✔ | ✘ | ✘ | ✘ | ✘ |
@@ -112,10 +112,10 @@ Assicurati che le [configurazione di rete avanzata](#advanced-networking) è sta
       </p>
     </td>
    <td>
-      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="Limitazioni di accesso VPN basate su percorso per AEM Publish" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections">Limitazioni di accesso VPN basate su percorso per AEM Publish</a></strong></div>
+      <a  href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections"><img alt="Limitazioni dell’accesso VPN basato su percorsi per la pubblicazione AEM" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#restrict-vpn-to-ingress-connections">Limitazioni dell’accesso VPN basato su percorsi per la pubblicazione AEM</a></strong></div>
       <p>
-            Richiedi accesso VPN per percorsi specifici in AEM Publish.
+            Richiedi accesso VPN per percorsi specifici nella pubblicazione AEM.
       </p>
     </td>
 </tr>

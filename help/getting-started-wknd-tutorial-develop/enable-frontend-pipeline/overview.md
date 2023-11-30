@@ -2,22 +2,22 @@
 title: Abilita pipeline front-end per il progetto standard Archetipo AEM
 description: Scopri come abilitare una pipeline front-end per un progetto AEM standard per una distribuzione più rapida delle risorse statiche come CSS, JavaScript, Fonts, Icone. Separazione dello sviluppo front-end dallo sviluppo back-end full-stack su AEM.
 version: Cloud Service
-type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
 level: Intermediate
-kt: 10689
+jira: KT-10689
 mini-toc-levels: 1
 index: y
 recommendations: disable
 thumbnail: 53409343.jpg
 last-substantial-update: 2022-09-23T00:00:00Z
+doc-type: Tutorial
 exl-id: b795e7e8-f611-4fc3-9846-1d3f1a28ccbc
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -50,7 +50,7 @@ Un correlato [tutorial con più passaggi](https://experienceleague.adobe.com/doc
 
 Il passaggio di distribuzione di questa esercitazione si svolge in un Adobe di Cloud Manager, assicurati di disporre di __Responsabile dell’implementazione__ ruolo, consulta Cloud Manager [Definizioni dei ruoli](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions).
 
-Assicurati di utilizzare il [Programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) e [Ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) al completamento di questa esercitazione.
+Assicurati di utilizzare il [Programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=it) e [Ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) al completamento di questa esercitazione.
 
 ## Passaggi successivi {#next-steps}
 

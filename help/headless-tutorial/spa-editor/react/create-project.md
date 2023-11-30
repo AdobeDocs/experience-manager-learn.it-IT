@@ -1,15 +1,16 @@
 ---
 title: Crea progetto | Guida introduttiva dell’Editor SPA dell’AEM e React
-description: Scopri come generare un progetto Maven di Adobe Experience Manager (AEM) da usare come punto di partenza per un’applicazione React integrata con l’editor AEM SPA.
+description: Scopri come generare un progetto Adobe Experience Manager (AEM) Maven come punto di partenza per un’applicazione React integrata con l’Editor AEM SPA.
 feature: SPA Editor, AEM Project Archetype
 version: Cloud Service
-kt: 413
+jira: KT-413
 thumbnail: 413-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
-source-git-commit: c489a033f34aecaa0af10e3868c258feba6aaae6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 2%
@@ -18,7 +19,7 @@ ht-degree: 2%
 
 # Crea progetto {#spa-editor-project}
 
-Scopri come generare un progetto Maven di Adobe Experience Manager (AEM) da usare come punto di partenza per un’applicazione React integrata con l’editor AEM SPA.
+Scopri come generare un progetto Adobe Experience Manager (AEM) Maven come punto di partenza per un’applicazione React integrata con l’Editor AEM SPA.
 
 ## Obiettivo
 
@@ -29,7 +30,7 @@ Scopri come generare un progetto Maven di Adobe Experience Manager (AEM) da usar
 
 In questo capitolo, viene generato un nuovo progetto AEM, basato sulla [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype). Il progetto AEM viene avviato con un punto di partenza molto semplice per l&#39;SPA React.
 
-**Cos’è un progetto Maven?** - [Apache Maven](https://maven.apache.org/) è uno strumento di gestione del software per la creazione di progetti. *Tutti Adobe Experience Manager* Le implementazioni di utilizzano i progetti Maven per generare, gestire e distribuire il codice personalizzato oltre all’AEM.
+**Cos’è un progetto Maven?** - [Apache Maven](https://maven.apache.org/) è uno strumento di gestione del software per la creazione di progetti. *Tutti i Adobe Experience Manager* Le implementazioni di utilizzano i progetti Maven per generare, gestire e distribuire il codice personalizzato oltre all’AEM.
 
 **Che cos’è un archetipo Maven?** - A [Archetipo Maven](https://maven.apache.org/archetype/index.html) è un modello o un modello per la generazione di nuovi progetti. L’archetipo del progetto AEM ci consente di generare un nuovo progetto con uno spazio dei nomi personalizzato e di includere una struttura di progetto che segue le best practice, accelerando notevolmente il nostro progetto.
 
@@ -222,7 +223,7 @@ Quindi, verifica che si tratti di un’applicazione a pagina singola con l’uti
    >
    > Potrebbe essere utile installare un’estensione del browser per formattare automaticamente l’output JSON.
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Congratulazioni, hai appena creato il tuo primo progetto di editor SPA per l’AEM!
 

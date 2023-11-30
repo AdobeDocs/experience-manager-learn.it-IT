@@ -1,19 +1,19 @@
 ---
 title: Progetto editor SPA | Guida introduttiva dell'Angular e dell'editor SPA dell'AEM
-description: Scopri come utilizzare un progetto Maven di Adobe Experience Manager (AEM) come punto di partenza per un’applicazione di Angular integrata con l’Editor SPA dell’AEM.
+description: Scopri come utilizzare un progetto Maven Adobe Experience Manager (AEM) come punto di partenza per un’applicazione di Angular integrata con l’editor SPA dell’AEM.
 feature: SPA Editor, AEM Project Archetype
 topics: development
 version: Cloud Service
-doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5309
+jira: KT-5309
 thumbnail: 5309-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 49fcd603-ab1a-4f1e-ae1f-49d3ff373439
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1097'
 ht-degree: 3%
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 # Progetto editor SPA {#create-project}
 
-Scopri come utilizzare un progetto Maven di Adobe Experience Manager (AEM) come punto di partenza per un’applicazione di Angular integrata con l’Editor SPA dell’AEM.
+Scopri come utilizzare un progetto Maven Adobe Experience Manager (AEM) come punto di partenza per un’applicazione di Angular integrata con l’editor SPA dell’AEM.
 
 ## Obiettivo
 
@@ -230,7 +230,7 @@ Quindi, verifica che si tratti di un’applicazione a pagina singola con l’uti
    >
    > Potrebbe essere utile installare un’estensione del browser per formattare automaticamente l’output JSON.
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Congratulazioni, hai appena creato il tuo primo progetto di editor SPA per l’AEM!
 

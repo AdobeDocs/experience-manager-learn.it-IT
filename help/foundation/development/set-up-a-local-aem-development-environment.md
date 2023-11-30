@@ -3,16 +3,14 @@ title: Configurare un ambiente locale di sviluppo AEM
 description: Scopri come impostare un ambiente di sviluppo locale, ad Experience Manager. Acquisisci familiarità con l’installazione locale, Apache Maven, gli ambienti di sviluppo integrati e il debug e la risoluzione dei problemi. Utilizzare Eclipse IDE, CRXDE-Lite, Visual Studio Code e IntelliJ.
 version: 6.5
 feature: Developer Tools
-topics: development
-activity: develop
-audience: developer
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
+doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2603'
 ht-degree: 2%
@@ -21,11 +19,11 @@ ht-degree: 2%
 
 # Configurare un ambiente di sviluppo AEM locale
 
-Guida alla configurazione di uno sviluppo locale per Adobe Experience Manager, AEM. Include argomenti importanti sull’installazione locale, Apache Maven, gli ambienti di sviluppo integrati e il debug/risoluzione dei problemi. Sviluppo con **Eclipse IDE, CRXDE Lite, Visual Studio Code e IntelliJ** sono discussi.
+Guida alla configurazione di uno sviluppo locale per Adobe Experience Manager, AEM. Include argomenti importanti sull’installazione locale, Apache Maven, gli ambienti di sviluppo integrati e il debug/risoluzione dei problemi. Sviluppo con **Eclipse IDE, CRXDE Liti, Visual Studio Code e IntelliJ** sono discussi.
 
 ## Panoramica
 
-La configurazione di un ambiente di sviluppo locale è il primo passaggio durante lo sviluppo per Adobe Experience Manager o AEM. Prenditi il tempo necessario per configurare un ambiente di sviluppo di qualità che aumenti la produttività e scriva codice migliore, più rapidamente. Possiamo suddividere l&#39;ambiente di sviluppo locale dell&#39;AEM in quattro aree:
+La creazione di un ambiente di sviluppo locale rappresenta il primo passo per lo sviluppo per Adobe Experience Manager o AEM. Prenditi il tempo necessario per configurare un ambiente di sviluppo di qualità che aumenti la produttività e scriva codice migliore, più rapidamente. Possiamo suddividere l&#39;ambiente di sviluppo locale dell&#39;AEM in quattro aree:
 
 * Istanze AEM locali
 * [!DNL Apache Maven] progetto
@@ -100,7 +98,7 @@ Tutti i progetti AEM devono basarsi sulla versione più recente del **[!DNL AEM 
 
 1. Scarica [Apache Maven](https://maven.apache.org/download.cgi)
 2. Installa [Apache Maven](https://maven.apache.org/install.html) e accertarsi che l&#39;installazione sia stata aggiunta alla riga di comando `PATH`.
-   * [!DNL macOS] Gli utenti possono installare Maven utilizzando [Homebrew](https://brew.sh/)
+   * [!DNL macOS] gli utenti possono installare Maven utilizzando [Homebrew](https://brew.sh/)
 3. Verifica che **[!DNL Maven]** viene installato aprendo un nuovo terminale della riga di comando ed eseguendo le operazioni seguenti:
 
 ```shell
@@ -118,7 +116,7 @@ Default locale: en_US, platform encoding: UTF-8
 
 ## Configurare un ambiente di sviluppo integrato
 
-Un ambiente di sviluppo integrato o IDE è un’applicazione che combina un editor di testo, il supporto della sintassi e strumenti di creazione. A seconda del tipo di sviluppo in corso, un IDE potrebbe essere preferibile rispetto a un altro. Indipendentemente dall’IDE, è importante essere in grado di ***push*** a un’istanza AEM locale per testarla. Occasionalmente è importante ***tirare*** configurazioni da un’istanza AEM locale nel progetto AEM al fine di mantenere un sistema di gestione del controllo del codice sorgente come Git.
+Un ambiente di sviluppo integrato o IDE è un’applicazione che combina un editor di testo, il supporto della sintassi e strumenti di creazione. A seconda del tipo di sviluppo che si sta effettuando, un IDE potrebbe essere preferibile rispetto ad un altro. Indipendentemente dall’IDE, è importante essere in grado di ***push*** a un’istanza AEM locale per testarla. Occasionalmente è importante ***tirare*** configurazioni da un’istanza AEM locale nel progetto AEM al fine di mantenere un sistema di gestione del controllo del codice sorgente come Git.
 
 Di seguito sono riportati alcuni degli IDE più popolari utilizzati con lo sviluppo dell’AEM e i relativi video che mostrano l’integrazione con un’istanza dell’AEM locale.
 
@@ -194,7 +192,7 @@ Il **[IDEA IntelliJ](https://www.jetbrains.com/idea/)** è un potente IDE per lo
 
 ### [!DNL CRXDE Lite]
 
-[CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) è una visualizzazione dell’archivio AEM basata su browser. [!DNL CRXDE Lite] è incorporato nell’AEM e consente a uno sviluppatore di eseguire attività di sviluppo standard come la modifica di file, la definizione di componenti, finestre di dialogo e modelli. [!DNL CRXDE Lite] è ***non*** deve essere un ambiente di sviluppo completo, ma è efficace come strumento di debug. [!DNL CRXDE Lite] è utile quando si estende o si comprende semplicemente il codice del prodotto al di fuori della base di codice. [!DNL CRXDE Lite] fornisce una visualizzazione efficace dell’archivio e un modo per testare e gestire in modo efficace le autorizzazioni.
+[CRXDE Liti](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) è una visualizzazione dell’archivio AEM basata su browser. [!DNL CRXDE Lite] è incorporato nell’AEM e consente a uno sviluppatore di eseguire attività di sviluppo standard come la modifica di file, la definizione di componenti, finestre di dialogo e modelli. [!DNL CRXDE Lite] è ***non*** deve essere un ambiente di sviluppo completo, ma è efficace come strumento di debug. [!DNL CRXDE Lite] è utile quando si estende o si comprende semplicemente il codice del prodotto al di fuori della base di codice. [!DNL CRXDE Lite] fornisce una visualizzazione efficace dell’archivio e un modo per testare e gestire in modo efficace le autorizzazioni.
 
 [!DNL CRXDE Lite] deve essere utilizzato con altri IDE per testare ed eseguire il debug del codice, ma mai come strumento di sviluppo primario. Offre un supporto limitato per la sintassi, non offre funzionalità di completamento automatico e un&#39;integrazione limitata con i sistemi di gestione del controllo del codice sorgente.
 
@@ -210,7 +208,7 @@ Un buon primo passo, quando si verifica un problema, è quello di verificare che
 
 1. **Verifica [!UICONTROL Gestione pacchetti]** per garantire che il pacchetto di codice sia stato caricato e installato: [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp). Controllare la marca temporale per verificare che il pacchetto sia stato installato di recente.
 1. Se esegui aggiornamenti di file incrementali utilizzando uno strumento come [!DNL Repo] o [!DNL AEM Developer Tools], **spunta[!DNL CRXDE Lite]** che il file è stato inviato all’istanza AEM locale e che il contenuto del file viene aggiornato: [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
-1. **Verifica che il bundle sia caricato** se visualizzi problemi relativi al codice Java™ in un bundle OSGi. Apri [!UICONTROL Console web di Adobe Experience Manager]: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles) e cerca il bundle. Assicurati che il bundle abbia **[!UICONTROL Attivo]** stato. Per ulteriori informazioni sulla risoluzione dei problemi relativi a un bundle in un **[!UICONTROL Installato]** stato.
+1. **Verifica che il bundle sia caricato** se visualizzi problemi relativi al codice Java™ in un bundle OSGi. Apri [!UICONTROL Console Web Adobe Experience Manager]: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles) e cerca il bundle. Assicurati che il bundle abbia **[!UICONTROL Attivo]** stato. Per ulteriori informazioni sulla risoluzione dei problemi relativi a un bundle in un **[!UICONTROL Installato]** stato.
 
 #### Controlla i registri
 

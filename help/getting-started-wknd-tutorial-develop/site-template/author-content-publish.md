@@ -1,17 +1,17 @@
 ---
 title: Introduzione all’authoring e alla pubblicazione | Creazione rapida di siti AEM
-description: Utilizza l’editor pagina in Adobe Experience Manager, AEM, per aggiornare il contenuto del sito web. Scopri come i Componenti vengono utilizzati per facilitare l’authoring. Scopri la differenza tra un ambiente AEM Author e uno AEM Publish e come pubblicare le modifiche al sito live.
+description: Utilizza l’editor pagina in Adobe Experience Manager, AEM, per aggiornare il contenuto del sito web. Scopri come i Componenti vengono utilizzati per facilitare l’authoring. Scopri la differenza tra gli ambienti di authoring e pubblicazione dell’AEM e come pubblicare le modifiche sul sito live.
 version: Cloud Service
-type: Tutorial
 topic: Content Management
 feature: Core Components, Page Editor
 role: Developer
 level: Beginner
-kt: 7497
+jira: KT-7497
 thumbnail: KT-7497.jpg
+doc-type: Tutorial
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 3%
@@ -150,7 +150,7 @@ Quindi, passa al servizio Publish per visualizzare le modifiche.
    ![Sito pubblicato](assets/author-content-publish/publish-url-update.png)
 
 1. Utilizzo di **Navigazione** clic del menu **Articolo** > **Hello World** per passare alla pagina Hello World creata in precedenza.
-1. Torna a **Servizio authoring AEM** e apportare alcune modifiche aggiuntive al contenuto nell’Editor pagina.
+1. Torna a **Servizio di authoring AEM** e apportare alcune modifiche aggiuntive al contenuto nell’Editor pagina.
 1. Pubblica queste modifiche direttamente dall’editor pagina facendo clic sul pulsante **Proprietà pagina** icona > **Pubblica pagina**
 
    ![pubblicazione diretta](assets/author-content-publish/page-editor-publish.png)
@@ -165,7 +165,7 @@ Quindi, passa al servizio Publish per visualizzare le modifiche.
 
    Sotto **Segmenti di ambiente** è possibile trovare collegamenti a **Autore** e **Pubblica** servizi.
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Congratulazioni, hai appena creato e pubblicato le modifiche al tuo sito AEM!
 

@@ -2,15 +2,12 @@
 title: Imaging avanzato
 description: La tecnologia Smart Imaging di Dynamic Media Classic migliora le prestazioni di consegna delle immagini ottimizzando automaticamente il formato e la qualità delle immagini in base alle funzionalità del browser client. A tal fine, sfrutta le funzionalità di intelligenza artificiale di Adobe Sensei e utilizza i predefiniti immagine esistenti. Scopri di più sulla tecnologia Smart Imaging e come utilizzarla per offrire ai clienti esperienze migliori attraverso caricamenti di pagina più veloci.
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring, renditions, images
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 678671c3-af25-4da1-bc14-cbc4cc19be8d
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 2%
@@ -39,7 +36,7 @@ Ulteriori informazioni su [Funzionamento dell&#39;imaging avanzato](https://expe
 
 ## Impatto dell&#39;imaging intelligente
 
-Probabilmente dovrai apportare modifiche agli URL, ai predefiniti per immagini e al codice sul tuo sito per sfruttare i vantaggi dell’imaging avanzato. Se si soddisfano i prerequisiti per utilizzare Smart Imaging e si utilizzano solo immagini nei formati JPEG e PNG supportati, non è necessario apportare alcuna modifica.
+Probabilmente dovrai apportare modifiche agli URL, ai predefiniti immagine e al codice sul tuo sito per sfruttare i vantaggi di Smart Imaging. Se si soddisfano i prerequisiti per utilizzare Smart Imaging e si utilizzano solo immagini nei formati JPEG e PNG supportati, non è necessario apportare alcuna modifica.
 
 L’imaging avanzato funziona con le immagini distribuite tramite HTTP, HTTPS e HTTP/2.
 

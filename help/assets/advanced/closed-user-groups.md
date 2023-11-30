@@ -6,11 +6,12 @@ topic: Administration, Security
 feature: User and Groups
 role: Admin
 level: Intermediate
-kt: 649
+jira: KT-649
 thumbnail: 22155.jpg
 last-substantial-update: 2022-06-06T00:00:00Z
+doc-type: Feature Video
 exl-id: a2bf8a82-15ee-478c-b7c3-de8a991dfeb8
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -25,7 +26,7 @@ I gruppi chiusi di utenti (CUG) sono una funzione utilizzata per limitare l’ac
 
 ## Gruppo utenti chiuso (CUG) con AEM Assets
 
-* Progettato per limitare l’accesso alle risorse in un’istanza AEM Publish.
+* Progettato per limitare l’accesso alle risorse in un’istanza di pubblicazione AEM.
 * Consente l’accesso in lettura a un set di utenti/gruppi.
 * Il gruppo utenti chiusi (CUG) può essere configurato solo a livello di cartella. Impossibile impostare CUG su singole risorse.
 * I criteri CUG vengono ereditati automaticamente da tutte le sottocartelle e le risorse applicate.
@@ -35,7 +36,7 @@ I gruppi chiusi di utenti (CUG) sono una funzione utilizzata per limitare l’ac
 
 Sia i gruppi chiusi di utenti (CUG) che gli elenchi di controllo di accesso (ACL) vengono utilizzati per controllare l’accesso al contenuto in AEM e in base agli utenti e ai gruppi di sicurezza AEM. Tuttavia, l’applicazione e l’implementazione di queste funzioni sono molto diverse. Nella tabella seguente vengono riepilogate le distinzioni tra le due feature.
 
-|  | ACL | CUG |
+|                   | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | Uso previsto | Configurare e applicare le autorizzazioni per il contenuto in **corrente** istanza AEM. | Configurare i criteri CUG per il contenuto su AEM **autore** dell&#39;istanza. Applicare criteri CUG per i contenuti su AEM **pubblicare** istanze. |
 | Livelli di autorizzazione | Definisce le autorizzazioni concesse/negate per utenti/gruppi per tutti i livelli: Lettura, Modifica, Crea, Elimina, Lettura ACL, Modifica ACL, Replica. | Consente l’accesso in lettura a un set di utenti/gruppi. Nega l’accesso in lettura a *tutti gli altri* utenti/gruppi. |

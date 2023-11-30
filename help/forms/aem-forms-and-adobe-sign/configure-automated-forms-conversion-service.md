@@ -3,14 +3,14 @@ title: Servizio di conversione automatica dei moduli
 description: Servizio di conversione automatica dei moduli. Questo articolo descrive come un amministratore AEM può configurare il servizio di Automated forms conversion per automatizzare la conversione dei PDF forms in moduli adattivi. Questa guida è rivolta agli amministratori IT e AEM della tua organizzazione.
 feature: Adaptive Forms
 thumbnail: 39493.jpg
-kt: 6114
+jira: KT-6114
 topic: Development
 role: Admin
 level: Beginner
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 0715a2cc-c042-4ddc-85a1-7720f420351b
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 6%
@@ -21,7 +21,7 @@ ht-degree: 6%
 
 Questo articolo descrive come un amministratore AEM può configurare il servizio di Automated forms conversion per automatizzare la conversione dei PDF forms in moduli adattivi. Questa guida è rivolta agli amministratori IT e AEM della tua organizzazione. Le informazioni fornite si basano sul presupposto che chiunque legga questa Guida conosca le seguenti tecnologie:
 
-* Installazione, configurazione e amministrazione di pacchetti Adobe Experience Manager e AEM
+* Installazione, configurazione e amministrazione di pacchetti Adobe Experience Manager e AEM,
 * Utilizzo di sistemi operativi Linux e Microsoft Windows
 * Configurazione dei server di posta SMTP
 

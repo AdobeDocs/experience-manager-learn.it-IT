@@ -6,11 +6,12 @@ feature: Smart Tags
 role: User
 level: Intermediate
 version: 6.4, 6.5, Cloud Service
-kt: 645
+jira: KT-645
 thumbnail: 17019.jpg
 last-substantial-update: 2022-06-09T00:00:00Z
+doc-type: Feature Video
 exl-id: c72dc489-70e6-48ca-99a8-663d4c0652ba
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 30%
@@ -19,7 +20,7 @@ ht-degree: 30%
 
 # Tag avanzati per immagini
 
-Grazie ai tag avanzati per le immagini di AEM Assets, la ricerca di AEM Assets viene incrementata aggiungendo automaticamente tag di metadati derivati alle risorse delle immagini, migliorando l’esperienza di authoring e semplificando e velocizzando la ricerca dell’immagine corretta.
+Grazie ai tag avanzati di AEM Assets per le immagini, la ricerca di AEM Assets viene potenziata aggiungendo automaticamente tag di metadati derivati alle risorse delle immagini, migliorando l’esperienza di authoring e rendendo più semplice e veloce la ricerca dell’immagine corretta.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17019?quality=12&learn=on)
 

@@ -7,13 +7,13 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5434
+jira: KT-5434
 thumbnail: kt-5424.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: b4985c30-3e5e-470e-b68d-0f6c5cbf4690
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2523'
 ht-degree: 0%
@@ -32,15 +32,15 @@ Il passaggio di convalida assicura semplicemente la validità delle configurazio
 
 ### L’ambiente è in uno stato non valido
 
-+ __Messaggio di errore:__ L’ambiente è in uno stato non valido.
-   ![L’ambiente è in uno stato non valido](./assets/build-and-deployment/validation__invalid-state.png)
++ __Messaggio di errore:__ Lo stato dell’ambiente non è valido.
+  ![L’ambiente è in uno stato non valido](./assets/build-and-deployment/validation__invalid-state.png)
 + __Causa:__ L’ambiente di destinazione della pipeline è in uno stato di transizione in cui non può accettare nuove build.
 + __Risoluzione:__ Attendere la risoluzione dello stato in esecuzione (o aggiornamento disponibile). Se l’ambiente viene eliminato, ricrealo o scegli un altro ambiente in cui generare la build.
 
 ### Impossibile trovare l’ambiente associato alla pipeline
 
 + __Messaggio di errore:__ L’ambiente è contrassegnato come eliminato.
-   ![L’ambiente è contrassegnato come eliminato](./assets/build-and-deployment/validation__environment-marked-as-deleted.png)
+  ![L’ambiente è contrassegnato come eliminato](./assets/build-and-deployment/validation__environment-marked-as-deleted.png)
 + __Causa:__ L’ambiente per il quale la pipeline è configurata è stato eliminato.
 Anche se viene ricreato un nuovo ambiente con lo stesso nome, Cloud Manager non associa automaticamente la pipeline a tale ambiente con lo stesso nome.
 + __Risoluzione:__ Modifica la configurazione della pipeline e riseleziona l’ambiente in cui eseguire la distribuzione.
@@ -48,7 +48,7 @@ Anche se viene ricreato un nuovo ambiente con lo stesso nome, Cloud Manager non 
 ### Impossibile trovare il ramo Git associato alla pipeline
 
 + __Messaggio di errore:__ Pipeline non valida: XXXXXX. Reason=Branch=xxxx non trovato nell&#39;archivio.
-   ![Pipeline non valida: XXXXXX. Reason=Branch=xxxx non trovato nell’archivio](./assets/build-and-deployment/validation__branch-not-found.png)
+  ![Pipeline non valida: XXXXXX. Reason=Branch=xxxx non trovato nell’archivio](./assets/build-and-deployment/validation__branch-not-found.png)
 + __Causa:__ Il ramo Git per il quale la pipeline è configurata è stato eliminato.
 + __Risoluzione:__ Ricrea il ramo Git mancante utilizzando lo stesso nome o riconfigura la pipeline per la generazione da un ramo esistente diverso.
 
@@ -135,21 +135,20 @@ AEM as a Cloud Service include automaticamente la versione più recente dei Comp
 Per evitare questo errore, ogni volta che è disponibile un aggiornamento dell’ambiente as a Cloud Service AEM, includi l’aggiornamento come parte della build/distribuzione successiva e assicurati sempre che gli aggiornamenti vengano inclusi dopo l’incremento della versione dei Componenti core nella base di codice dell’applicazione.
 
 + __Sintomi:__
-Il passaggio Genera immagine non riesce e viene visualizzato un messaggio di ERRORE che segnala che 
-`com.adobe.cq.wcm.core.components...` impossibile importare i pacchetti in intervalli di versioni specifici da `core` progetto.
+Il passaggio Genera immagine non riesce e viene visualizzato un messaggio di ERRORE che segnala che `com.adobe.cq.wcm.core.components...` impossibile importare i pacchetti in intervalli di versioni specifici da `core` progetto.
 
-   ```
-   [ERROR] Bundle com.example.core:0.0.3-SNAPSHOT is importing package(s) Package com.adobe.cq.wcm.core.components.models;version=[12.13,13) in start level 20 but no bundle is exporting these for that start level in the required version range.
-   [ERROR] Analyser detected errors on feature 'com.adobe.granite:aem-ethos-app-image:slingosgifeature:aem-runtime-application-publish-dev:1.0.0-SNAPSHOT'. See log output for error messages.
-   [INFO] ------------------------------------------------------------------------
-   [INFO] BUILD FAILURE
-   [INFO] ------------------------------------------------------------------------
-   ```
+  ```
+  [ERROR] Bundle com.example.core:0.0.3-SNAPSHOT is importing package(s) Package com.adobe.cq.wcm.core.components.models;version=[12.13,13) in start level 20 but no bundle is exporting these for that start level in the required version range.
+  [ERROR] Analyser detected errors on feature 'com.adobe.granite:aem-ethos-app-image:slingosgifeature:aem-runtime-application-publish-dev:1.0.0-SNAPSHOT'. See log output for error messages.
+  [INFO] ------------------------------------------------------------------------
+  [INFO] BUILD FAILURE
+  [INFO] ------------------------------------------------------------------------
+  ```
 
 + __Causa:__  Il bundle OSGi dell’applicazione (definito nel `core` project) importa le classi Java dalla dipendenza principale dei Componenti core, a un livello di versione diverso da quello implementato in AEM as a Cloud Service.
 + __Risoluzione:__
    + Utilizzando Git, ripristina un commit di lavoro esistente prima dell’incremento di versione dei Componenti core. Invia questo commit a un ramo Git di Cloud Manager ed esegui un aggiornamento dell’ambiente da questo ramo. Questo aggiornerà AEM as a Cloud Service alla versione più recente dell’AEM, che includerà la versione più recente dei Componenti core. Una volta che l’AEM as a Cloud Service è stato aggiornato alla versione più recente dell’AEM, che avrà la versione più recente dei Componenti core, ridistribuisci il codice che originariamente non riusciva.
-   + Per riprodurre questo problema localmente, assicurati che la versione dell’SDK per AEM sia la stessa versione dell’AEM utilizzata dall’ambiente as a Cloud Service AEM.
+   + Per riprodurre il problema localmente, assicurati che la versione dell’SDK per AEM sia la stessa della versione dell’AEM utilizzata dall’ambiente as a Cloud Service AEM.
 
 
 ### Creazione di un caso di supporto Adobe
@@ -158,11 +157,11 @@ Se gli approcci di risoluzione dei problemi sopra descritti non risolvono il pro
 
 + [Adobe Admin Console](https://adminconsole.adobe.com) > Scheda Supporto > Crea caso
 
-   _Se sei membro di più organizzazioni di Adobe, accertati che l’organizzazione di Adobe con pipeline non riuscita sia selezionata nel selettore Organizzazioni di Adobe prima di creare il caso._
+  _Se sei membro di più organizzazioni di Adobe, accertati che l’organizzazione di Adobe con pipeline non riuscita sia selezionata nel selettore Organizzazioni di Adobe prima di creare il caso._
 
 ## Distribuisci in
 
-Il passaggio Distribuisci su è responsabile dell’esecuzione dell’artefatto di codice generato nell’immagine di creazione, avvia i nuovi servizi Author e Publish di AEM e, una volta completato, rimuove tutti i vecchi servizi Author e Publish di AEM. Anche in questo passaggio vengono installati e aggiornati pacchetti e indici di contenuto variabile.
+Il passaggio Distribuisci su è responsabile dell’acquisizione dell’artefatto di codice generato nell’immagine di compilazione, dell’avvio dei nuovi servizi Autore e Pubblicazione AEM che lo utilizzano e, in caso di esito positivo, rimuove tutti i vecchi servizi Autore e Pubblicazione AEM. Anche in questo passaggio vengono installati e aggiornati pacchetti e indici di contenuto variabile.
 
 Acquisisci familiarità con [Registri AEM as a Cloud Service](./logs.md) prima di eseguire il debug del passaggio Distribuisci in. Il `aemerror` Il registro contiene informazioni sull’avvio e l’arresto dei pod che possono essere utili per la distribuzione in caso di problemi. Tieni presente che il registro disponibile tramite il pulsante Scarica registro nel passaggio Distribuisci in di Cloud Manager non è il `aemerror` e non contiene informazioni dettagliate relative all’avvio delle applicazioni.
 
@@ -173,7 +172,7 @@ I tre motivi principali per cui la distribuzione al passaggio potrebbe non riusc
 ### La pipeline di Cloud Manager contiene una versione AEM precedente
 
 + __Causa:__ Una pipeline di Cloud Manager contiene una versione precedente dell’AEM rispetto a quella distribuita nell’ambiente di destinazione. Questo può accadere quando una pipeline viene riutilizzata e puntata a un nuovo ambiente che esegue una versione successiva dell’AEM. Questo può essere identificato controllando per vedere se la versione dell’AEM dell’ambiente è maggiore della versione dell’AEM della pipeline.
-   ![La pipeline di Cloud Manager contiene una versione AEM precedente](./assets/build-and-deployment/deploy-to__pipeline-holds-old-aem-version.png)
+  ![La pipeline di Cloud Manager contiene una versione AEM precedente](./assets/build-and-deployment/deploy-to__pipeline-holds-old-aem-version.png)
 + __Risoluzione:__
    + Se nell&#39;ambiente di destinazione è disponibile un aggiornamento, selezionare Aggiorna dalle azioni dell&#39;ambiente, quindi eseguire nuovamente la build.
    + Se nell’ambiente di destinazione non è disponibile un aggiornamento, significa che è in esecuzione la versione più recente dell’AEM. Per risolvere questo problema, elimina la pipeline e ricreala.
@@ -184,33 +183,33 @@ I tre motivi principali per cui la distribuzione al passaggio potrebbe non riusc
 Il codice in esecuzione durante l’avvio del servizio AEM appena implementato richiede così tanto tempo che Cloud Manager scade prima che la distribuzione possa essere completata. In questi casi, la distribuzione potrebbe avere esito positivo anche se è stato segnalato lo stato di Cloud Manager Non riuscito.
 
 + __Causa:__ Il codice personalizzato può eseguire operazioni, come query di grandi dimensioni o attraversamenti di contenuti, attivate in anticipo nel bundle OSGi o nei cicli di vita dei componenti, ritardando notevolmente il tempo di avvio dell’AEM.
-+ __Risoluzione:__ Esamina l’implementazione del codice che viene eseguito all’inizio del ciclo di vita del bundle OSGi, quindi controlla `aemerror` registra per i servizi AEM Author e Publish intorno al momento dell’errore (tempo di registrazione in GMT), come mostrato da Cloud Manager, e cerca i messaggi di registro che indicano eventuali processi di esecuzione del registro personalizzati.
++ __Risoluzione:__ Esamina l’implementazione del codice che viene eseguito all’inizio del ciclo di vita del bundle OSGi, quindi controlla `aemerror` registra i servizi di authoring e pubblicazione dell’AEM in prossimità del momento dell’errore (tempo di registrazione in GMT), come mostrato da Cloud Manager, e cerca i messaggi di registro che indicano eventuali processi di esecuzione dei registri personalizzati.
 
 ### Codice o configurazione non compatibile
 
 La maggior parte del codice e delle violazioni della configurazione vengono rilevate in una fase precedente della build, tuttavia il codice personalizzato o la configurazione possono essere incompatibili con l’AEM as a Cloud Service e non vengono rilevate finché non vengono eseguite nel contenitore.
 
 + __Causa:__ Il codice personalizzato può richiamare operazioni lunghe, come query di grandi dimensioni o attraversamenti di contenuti, attivate in anticipo nel bundle OSGi o nei cicli di vita dei componenti, ritardando notevolmente il tempo di avvio dell’AEM.
-+ __Risoluzione:__ Rivedi `aemerror` registra per i servizi di authoring e pubblicazione di AEM in qualsiasi momento (tempo di registrazione in GMT) dell’errore, come mostrato da Cloud Manager.
++ __Risoluzione:__ Rivedi `aemerror` registra per i servizi di authoring e pubblicazione dell’AEM in qualsiasi momento (tempo di registrazione in GMT) dell’errore, come mostrato da Cloud Manager.
    1. Esamina i registri per individuare eventuali ERRORI generati dalle classi Java fornite dall’applicazione personalizzata. Se vengono rilevati problemi, risolvi questi, invia il codice corretto e ricompila la pipeline.
    1. Esamina i registri per individuare eventuali ERRORI segnalati da aspetti dell’AEM che stai estendendo/interagendo con nell’applicazione personalizzata e analizzali; questi ERRORI potrebbero non essere attribuiti direttamente alle classi Java. Se vengono rilevati problemi, risolvi questi, invia il codice corretto e ricompila la pipeline.
 
 ### Inclusione di /var nel pacchetto di contenuti
 
-`/var` è mutabile e contiene diversi contenuti transitori e di runtime. Inclusione `/var` in pacchetti di contenuti (ad es. `ui.content`) implementato tramite Cloud Manager potrebbe causare un errore del passaggio di distribuzione.
+`/var` è modificabile e contiene diversi contenuti transitori e di runtime. Inclusione `/var` in pacchetti di contenuti (ad es. `ui.content`) implementato tramite Cloud Manager potrebbe causare un errore del passaggio di distribuzione.
 
 Questo problema è difficile da identificare in quanto non si verifica un errore nella distribuzione iniziale, ma solo nelle distribuzioni successive. I sintomi più evidenti includono:
 
 + La distribuzione iniziale ha esito positivo, tuttavia il contenuto mutabile nuovo o modificato, che fa parte della distribuzione, non sembra esistere nel servizio di pubblicazione AEM.
-+ L’attivazione/disattivazione del contenuto in AEM Author è bloccata
++ L’attivazione/disattivazione dei contenuti nell’istanza di creazione AEM è bloccata
 + Le distribuzioni successive non riescono nel passaggio di implementazione a, con la distribuzione a un passaggio che non riesce dopo circa 60 minuti.
 
 Per convalidare questo problema, la causa è il comportamento errato:
 
 1. Determinando che almeno un pacchetto di contenuti che fa parte della distribuzione, scrive in `/var`.
 1. Verifica che la coda di distribuzione primaria (in grassetto) sia bloccata in:
-   + AEM Author > Strumenti > Implementazione > Distribuzione
-      ![Coda di distribuzione bloccata](./assets/build-and-deployment/deploy-to__var--distribution.png)
+   + AEM Author > Tools > Deployment > Distribution (Creazione > Strumenti > Implementazione > Distribuzione)
+     ![Coda di distribuzione bloccata](./assets/build-and-deployment/deploy-to__var--distribution.png)
 1. In caso di mancata distribuzione successiva, scarica i registri di &quot;Distribuisci in&quot; di Cloud Manager utilizzando il pulsante Scarica registro:
 
    ![Scarica la distribuzione nei registri](./assets/build-and-deployment/deploy-to__var--download-logs.png)
@@ -229,11 +228,11 @@ Per convalidare questo problema, la causa è il comportamento errato:
 
    Tieni presente che questo registro non conterrà questi indicatori sulle distribuzioni iniziali che riportano come riuscite, ma solo sulle distribuzioni successive con errori.
 
-+ __Causa:__ L’utente del servizio di replica AEM utilizzato per distribuire pacchetti di contenuti nel servizio di pubblicazione AEM non può scrivere in `/var` in AEM Publish. In questo modo la distribuzione del pacchetto di contenuti al servizio di pubblicazione AEM non riesce.
++ __Causa:__ L’utente del servizio di replica AEM utilizzato per distribuire pacchetti di contenuti al servizio di pubblicazione AEM non può scrivere in `/var` sulla pubblicazione AEM. In questo modo la distribuzione del pacchetto di contenuti al servizio di pubblicazione AEM non riesce.
 + __Risoluzione:__ Per risolvere questo problema, vengono elencati i seguenti modi in ordine di preferenza:
    1. Se il `/var` risorse non necessarie rimuovere le risorse in `/var` da pacchetti di contenuti distribuiti come parte dell’applicazione.
-   2. Se il `/var` risorse sono necessarie, definisci le strutture dei nodi utilizzando [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit). Gli script Repoinit possono essere indirizzati ad AEM Author, AEM Publish o a entrambi, tramite le modalità di esecuzione OSGi.
-   3. Se il `/var` Le risorse sono necessarie solo per l’autore dell’AEM e non possono essere ragionevolmente modellate utilizzando [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit), spostali in un pacchetto di contenuti discreto, installato solo in AEM Author da [incorporamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=it#embeddeds) in `all` pacchetto in una cartella runmode di AEM Author (`<target>/apps/example-packages/content/install.author</target>`).
+   2. Se il `/var` risorse sono necessarie, definisci le strutture dei nodi utilizzando [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit). Gli script Repoinit possono essere indirizzati a AEM Author, AEM Publish o a entrambi, tramite le modalità di esecuzione OSGi.
+   3. Se il `/var` Le risorse sono necessarie solo per l’autore dell’AEM e non possono essere ragionevolmente modellate utilizzando [repoinit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit), spostali in un pacchetto di contenuti discreto, installato solo in AEM Author da [incorporamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=it#embeddeds) in `all` pacchetto in una cartella in modalità di esecuzione dell’autore AEM (`<target>/apps/example-packages/content/install.author</target>`).
    4. Fornisci ACL appropriati al `sling-distribution-importer` utente del servizio come descritto [ADOBE KB](https://helpx.adobe.com/in/experience-manager/kb/cm/cloudmanager-deploy-fails-due-to-sling-distribution-aem.html).
 
 ### Creazione di un caso di supporto Adobe
@@ -242,4 +241,4 @@ Se gli approcci di risoluzione dei problemi sopra descritti non risolvono il pro
 
 + [Adobe Admin Console](https://adminconsole.adobe.com) > Scheda Supporto > Crea caso
 
-   _Se sei membro di più organizzazioni di Adobe, accertati che l’organizzazione di Adobe con pipeline non riuscita sia selezionata nel selettore Organizzazioni di Adobe prima di creare il caso._
+  _Se sei membro di più organizzazioni di Adobe, accertati che l’organizzazione di Adobe con pipeline non riuscita sia selezionata nel selettore Organizzazioni di Adobe prima di creare il caso._

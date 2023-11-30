@@ -1,16 +1,15 @@
 ---
 title: Personalizzazione tramite Frammenti di esperienza AEM e Adobe Target
-seo-title: Personalization using Adobe Experience Manager (AEM) Experience Fragments and Adobe Target
 description: Un tutorial end-to-end che mostra come creare e distribuire esperienze personalizzate utilizzando Frammenti di esperienza Adobe Experience Manager e Adobe Target.
-seo-description: An end-to-end tutorial showing how to create and deliver personalized experience using Adobe Experience Manager Experience Fragments and Adobe Target.
 feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: 47446e2a-73d1-44ba-b233-fa1b7f16bc76
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 1%
@@ -51,7 +50,7 @@ Per questo esercizio, è necessario coinvolgere i seguenti utenti e per eseguire
 
 ![Scenario 1 obiettivo AEM](assets/personalization-use-case-1/aem-target-use-case-1-4.png)
 
-1. L’addetto al marketing avvia la discussione della campagna WKND SkateFest con l’Editor di contenuti dell’AEM e ne descrive i requisiti.
+1. L’addetto al marketing avvia la discussione sulla campagna WKND SkateFest con l’Editor di contenuti dell’AEM e ne descrive i requisiti.
    * ***Requisito***: Promuovi la campagna WKND SkateFest sulla home page del sito WKND con contenuti personalizzati per i visitatori di ogni stato degli Stati Uniti. Aggiungi un nuovo blocco di contenuto sotto il carosello della home page contenente un’immagine di sfondo, un testo e un pulsante.
       * **Immagine di sfondo**: l’immagine deve essere pertinente allo stato da cui l’utente visita la pagina del sito WKND.
       * **Testo**: &quot;Registrati alle Audition&quot;
@@ -192,4 +191,4 @@ A questo punto, abbiamo creato con successo i tipi di pubblico per tutti i visit
 
 ## Riepilogo
 
-In questo capitolo, un editor di contenuti è stato in grado di creare tutti i contenuti per supportare la campagna WKND SkateFest all’interno di Adobe Experience Manager ed esportarli in Adobe Target as HTML Offers (Offerte ) per la creazione di Experience Targeting, in base alla geolocalizzazione degli utenti.
+In questo capitolo, un editor di contenuti è stato in grado di creare tutti i contenuti per supportare la campagna WKND SkateFest all’interno di Adobe Experience Manager ed esportarli in Adobe Target as HTML Offers, per la creazione di Experience Targeting, in base alla geolocalizzazione degli utenti.

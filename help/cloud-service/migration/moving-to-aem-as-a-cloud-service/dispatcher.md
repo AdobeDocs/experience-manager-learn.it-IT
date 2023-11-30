@@ -6,10 +6,10 @@ feature: Dispatcher
 topic: Migration, Upgrade
 role: Developer
 level: Experienced
-kt: 8633
+jira: KT-8633
 thumbnail: 336962.jpeg
 exl-id: 81397b21-b4f3-4024-a6da-a9b681453eff
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 6%
@@ -27,7 +27,7 @@ Scopri AEM Dispatcher per AEM as a Cloud Service, concentrandoti sulle modifiche
 
 ![Dispatcher Converter](./assets/dispatcher-converter-diagram.png)
 
-Come parte del refactoring della base di codice, utilizza [Convertitore del Dispatcher per l’AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html) per eseguire il refactoring delle configurazioni esistenti del dispatcher on-premise o di Adobe Managed Services alla configurazione del dispatcher compatibile con AEM as a Cloud Service.
+Come parte del refactoring della base di codice, utilizza [Convertitore del Dispatcher per l’AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html) per eseguire il refactoring delle configurazioni del Dispatcher Managed Services on-premise o Adobe esistenti alla configurazione del Dispatcher compatibile con AEM as a Cloud Service.
 
 ## Attività chiave
 

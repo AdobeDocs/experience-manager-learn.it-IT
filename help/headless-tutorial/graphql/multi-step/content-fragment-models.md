@@ -1,19 +1,19 @@
 ---
 title: Definizione dei modelli per frammenti di contenuto - Guida introduttiva a AEM headless - GraphQL
-description: Introduzione ad Adobe Experience Manager (AEM) e GraphQL. Scopri come modellare il contenuto e creare uno schema con i modelli per frammenti di contenuto in AEM. Rivedi i modelli esistenti e crea un modello. Scopri i diversi tipi di dati utilizzabili per definire uno schema.
+description: Introduzione a Adobe Experience Manager (AEM) e GraphQL. Scopri come modellare il contenuto e creare uno schema con i modelli per frammenti di contenuto in AEM. Rivedi i modelli esistenti e crea un modello. Scopri i diversi tipi di dati utilizzabili per definire uno schema.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 6712
+jira: KT-6712
 thumbnail: 22452.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: 25c289b093297e870c52028a759d05628d77f634
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1115'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -180,7 +180,7 @@ In seguito a revisione e verifica, pubblica `Project Configuration` E `Content F
 
    ![Pubblicare modelli per frammenti di contenuto](assets/content-fragment-models/publish-content-fragment-model.png)
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Congratulazioni, hai appena creato i tuoi primi modelli per frammenti di contenuto.
 

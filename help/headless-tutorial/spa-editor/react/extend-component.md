@@ -2,15 +2,15 @@
 title: Estendere un componente core | Guida introduttiva dell’Editor SPA dell’AEM e React
 description: Scopri come estendere il modello JSON per un Componente core esistente da utilizzare con l’Editor SPA dell’AEM. Comprendere come aggiungere proprietà e contenuti a un componente esistente è una tecnica efficace per espandere le funzionalità di un’implementazione dell’Editor SPA dell’AEM. Scopri come utilizzare il pattern di delega per estendere i modelli Sling e le funzioni di Sling Resource Merger.
 feature: SPA Editor, Core Components
-doc-type: tutorial
 version: Cloud Service
-kt: 5879
+jira: KT-5879
 thumbnail: 5879-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 2%
@@ -488,6 +488,6 @@ Ora, implementa il modello Sling per `BannerModel` di rete.
 
    Nota che il modello JSON viene aggiornato con altre coppie chiave/valore dopo l’implementazione del modello Sling in `BannerModelImpl.java`.
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Congratulazioni, hai imparato a estendere un componente AEM utilizzando e come i modelli e le finestre di dialogo Sling funzionano con il modello JSON.

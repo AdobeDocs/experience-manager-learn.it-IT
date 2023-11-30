@@ -1,15 +1,15 @@
 ---
 title: Utilizzo del testo RTF con AEM headless
-description: Scopri come creare e incorporare contenuti a cui si fa riferimento utilizzando un editor Rich Text su più righe con Frammenti di contenuto di Adobe Experience Manager e come il testo RTF viene distribuito dalle API GraphQL dell’AEM come JSON per essere utilizzato dalle applicazioni headless.
+description: Scopri come creare e incorporare contenuti a cui si fa riferimento utilizzando un editor Rich Text su più righe con Frammenti di contenuto di Adobe Experience Manager e come il testo Rich Text viene distribuito dalle API GraphQL dell’AEM come JSON per essere utilizzato dalle applicazioni headless.
 version: Cloud Service
 doc-type: article
-kt: 9985
+jira: KT-9985
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 level: Intermediate
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1465'
 ht-degree: 0%

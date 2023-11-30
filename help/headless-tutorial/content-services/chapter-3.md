@@ -7,8 +7,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 46ef11a2-81bd-4ff7-b9ef-9f8cba52c6a8
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 3%
@@ -45,7 +46,7 @@ In questo passaggio, crea un nuovo [!DNL Event] per `Punkrock Fest` nel `/conten
 
    Tocca **[!UICONTROL Salva]** nella barra delle azioni superiore per salvare le modifiche.
 
-1. Utilizzo di [Gestione pacchetti AEM](http://localhost:4502/crx/packmgr/index.jsp), installa il pacchetto seguente in AEM Author. Questo pacchetto contiene diversi frammenti di contenuto evento.
+1. Utilizzo di [Gestione pacchetti AEM](http://localhost:4502/crx/packmgr/index.jsp), installa il pacchetto seguente su AEM Author. Questo pacchetto contiene diversi frammenti di contenuto evento.
 
    [Ottieni file: GitHub > Risorse > com.adobe.aem.guides.wknd-mobile.content.chapter-3.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
 
@@ -55,8 +56,8 @@ In questo passaggio, crea un nuovo [!DNL Event] per `Punkrock Fest` nel `/conten
 
 *Questa sezione è solo informativa e ha lo scopo di socializzare la struttura JCR sottostante dei frammenti di contenuto creati da modelli per frammenti di contenuto.*
 
-1. Apri **[CRXDE Lite](http://localhost:4502/crx/de/index.jsp)** su AEM Author.
-1. In CRXDE Lite, nel menu della gerarchia a sinistra, passare a [/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content) che è il nodo che rappresenta [!DNL Punkrock Fest] [!DNL Event] Frammento di contenuto in JCR.
+1. Apri **[CRXDE Liti](http://localhost:4502/crx/de/index.jsp)** su Autore AEM.
+1. In CRXDE Liti, nel menu della gerarchia a sinistra, passare a [/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content) che è il nodo che rappresenta [!DNL Punkrock Fest] [!DNL Event] Frammento di contenuto in JCR.
 1. Espandi [dati](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content/data/master) nodo.
 Revisione in **Riquadro delle proprietà** che ha una proprietà `cq:model` che fa riferimento al [!DNL Event] Definizione del modello per frammenti di contenuto.
    * **`cq:model`**=**`/conf/settings/wknd-mobile/dam/cfm/models/event`**

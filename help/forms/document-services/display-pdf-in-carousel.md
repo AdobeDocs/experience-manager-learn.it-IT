@@ -6,10 +6,10 @@ feature: Adaptive Forms
 topic: Development
 role: Developer
 level: Experienced
-kt: 10292
+jira: KT-10292
 exl-id: c1d248c3-8208-476e-b0ae-cab25575cd6a
 last-substantial-update: 2021-10-12T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 4%
@@ -50,7 +50,7 @@ Per eseguire il test sul server locale, eseguire la procedura seguente:
 
 1. [Importare la libreria client](assets/pdf-carousel-client-lib.zip) nell’istanza AEM locale [utilizzo del gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 1. [Importare il componente carosello pdf](assets/pdf-carousel-component.zip) nell’istanza AEM locale [utilizzo del gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
-1. [Importare il modulo adattivo ](assets/adaptive-form-pdf-carousel.zip) nell’istanza AEM locale [utilizzo del gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+1. [Importare il modulo adattivo](assets/adaptive-form-pdf-carousel.zip) nell’istanza AEM locale [utilizzo del gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 1. [Importa i PDF di esempio da visualizzare](assets/pdf-carousel-sample-documents.zip) nell’istanza AEM locale [utilizzo del collegamento di caricamento file delle risorse](http://localhost:4502/assets.html/content/dam)
 1. [Anteprima modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
 1. Passare alla scheda Documenti da rivedere. Dovresti visualizzare tre documenti PDF nel componente Carosello.

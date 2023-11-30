@@ -1,12 +1,13 @@
 ---
 title: Capitolo 4 - Definizione dei modelli di Content Services - Content Services
-description: Il capitolo 4 del tutorial AEM headless tratta il ruolo dei modelli AEM modificabili nel contesto di AEM Content Services. I modelli modificabili vengono utilizzati per definire la struttura del contenuto JSON che AEM Content Services espone in ultima analisi.
+description: Il capitolo 4 del tutorial AEM Headless tratta il ruolo dei modelli AEM modificabili nel contesto di AEM Content Services. I modelli modificabili vengono utilizzati per definire la struttura del contenuto JSON che AEM Content Services espone in ultima analisi.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: ece0bf0d-c4af-4962-9c00-f2849c2d8f6f
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 0%
@@ -70,14 +71,14 @@ A tal fine, possiamo mappare questi requisiti sui Componenti AEM (e, nel nostro 
    * **[!DNL WKND Mobile > Image]**
 
       * Logo per l’app
+
    * **[!DNL WKND Mobile > Text]**
 
       * Testo introduttivo dell’app
+
    * **[!DNL WKND Mobile > Content Fragment List]**
 
       * Elenco delle categorie di eventi disponibili per la visualizzazione nell’app
-
-
 
 1. Tocca il **[!UICONTROL Fine]** al termine, nell’angolo in alto a destra.
 1. **Aggiorna** finestra del browser per visualizzare [!UICONTROL Componenti consentiti] nella barra a sinistra.

@@ -5,8 +5,9 @@ feature: Dispatcher
 topic: Architecture
 role: Architect
 level: Intermediate
+doc-type: Tutorial
 exl-id: 7c7df08d-02a7-4548-96c0-98e27bcbc49b
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '6187'
 ht-degree: 0%
@@ -170,7 +171,7 @@ Anche questo è un sistema abbastanza comune. Si sovrappongono diversi livelli d
 
 Prendi in considerazione l’illustrazione precedente. Ogni livello di caching introduce un TTL di 2 minuti. Ora - anche il TTL complessivo deve essere di 2 minuti, giusto? Non proprio. Se il livello esterno recupera l&#39;oggetto appena prima che diventi obsoleto, il livello esterno in realtà prolunga il tempo di vita effettivo dell&#39;oggetto. In tal caso, il tempo effettivo di esecuzione può essere compreso tra 2 e 4 minuti. Considera che hai concordato con il tuo reparto aziendale, un giorno è tollerabile - e hai quattro livelli di cache. Il TTL effettivo su ciascun livello non deve superare le sei ore... aumentando la percentuale di mancati riscontri nella cache...
 
-Non stiamo dicendo che è un cattivo schema. Dovresti solo conoscerne i limiti. Ed è una strategia facile e piacevole con cui iniziare. Solo se il traffico del tuo sito aumenta, potresti prendere in considerazione una strategia più precisa.
+Non stiamo dicendo che sia un cattivo schema. Dovresti solo conoscerne i limiti. Ed è una strategia facile e piacevole con cui iniziare. Solo se il traffico del tuo sito aumenta, potresti prendere in considerazione una strategia più precisa.
 
 *Sincronizzazione dell’ora di invalidazione impostando una data specifica*
 
@@ -266,12 +267,12 @@ In alcuni semplici casi, puoi anche andare d’accordo con l’utilizzo di mappe
 
 #### Riferimenti
 
-* [Cache http Commons ACS ](https://adobe-consulting-services.github.io/acs-aem-commons/features/http-cache/index.html)
+* [Cache http Commons ACS](https://adobe-consulting-services.github.io/acs-aem-commons/features/http-cache/index.html)
 * [Ehcache caching framework](https://www.ehcache.org)
 
 ### Termini di base
 
-Non entreremo nella teoria del caching troppo in profondità qui, ma ci sentiamo obbligati a fornire alcune parole di buzz, in modo da avere un buon salto iniziale.
+Non entreremo nella teoria del caching troppo in profondità qui, ma ci sentiamo obbligati a fornire alcune parole di buzz, in modo da avere un buon inizio di salto.
 
 #### Eliminazione della cache
 
@@ -406,9 +407,9 @@ Consigliamo di studiare attentamente la documentazione SDI. Ci sono alcune altre
 
 #### Memorizzazione in cache del modello
 
-![Memorizzazione in cache basata su modello: un business object con due rendering diversi](assets/chapter-3/model-based-caching.png)
+![Memorizzazione in cache basata su modello: un oggetto business con due rendering diversi](assets/chapter-3/model-based-caching.png)
 
-*Memorizzazione in cache basata su modello: un business object con due rendering diversi*
+*Memorizzazione in cache basata su modello: un oggetto business con due rendering diversi*
 
 <br> 
 

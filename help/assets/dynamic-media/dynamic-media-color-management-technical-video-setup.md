@@ -1,28 +1,29 @@
 ---
-title: Gestione del colore con AEM Dynamic Media
-description: Questo video illustra la gestione del colore di Dynamic Media e come utilizzarla per fornire le funzionalità di anteprima della correzione del colore in per AEM Assets.
+title: Gestione del colore con AEM Dynamic Medie
+description: Questo video illustra la gestione del colore di Dynamic Medie e come utilizzarla per fornire le funzionalità di anteprima della correzione del colore in per AEM Assets.
 feature: Image Profiles, Video Profiles
 version: 6.4, 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
+doc-type: Feature Video
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 17%
 
 ---
 
-# Gestione del colore con AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
+# Gestione del colore con AEM Dynamic Medie{#understanding-color-management-with-aem-dynamic-media}
 
-Questo video illustra la gestione del colore di Dynamic Media e come utilizzarla per fornire le funzionalità di anteprima della correzione del colore in per AEM Assets.
+Questo video illustra la gestione del colore di Dynamic Medie e come utilizzarla per fornire le funzionalità di anteprima della correzione del colore in per AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16792?quality=12&learn=on)
 
 >[!NOTE]
 >
->[Abilita Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) nell’AEM di utilizzare questa funzione.
+>[Abilita Dynamic Medie](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) nell’AEM di utilizzare questa funzione.
 
 Questa funzione è disponibile per le versioni AEM 6.1 e 6.2 come Feature Pack.
 
@@ -123,4 +124,4 @@ Di seguito è riportato il modello XML per il nodo di configurazione Gestione co
 
 ## Risorse aggiuntive{#additional-resources}
 
-* [Configurazione della gestione colore di Dynamic Media](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
+* [Configurazione della gestione colore di Dynamic Medie](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)

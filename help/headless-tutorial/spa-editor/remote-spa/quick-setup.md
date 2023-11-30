@@ -5,12 +5,13 @@ topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7629
+jira: KT-7629
 thumbnail: 333181.jpg
 last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 5%
@@ -124,7 +125,7 @@ Verificare che l&#39;SPA sia in esecuzione [http://localhost:3000](Http://localh
 
 ## Creare contenuti nell’editor SPA dell’AEM
 
-Prima di creare il contenuto, disponi le finestre del browser in modo che AEM Author (`http://localhost:4502`) è a sinistra, e l&#39;SPA remoto (`http://localhost:3000`) gira a destra. Questa disposizione consente di vedere come le modifiche ai contenuti originati dall’AEM vengono immediatamente riportate nell’SPA.
+Prima di creare i contenuti, disponi le finestre del browser in modo che AEM Author (`http://localhost:4502`) è a sinistra, e l&#39;SPA remoto (`http://localhost:3000`) gira a destra. Questa disposizione consente di vedere come le modifiche ai contenuti originati dall’AEM vengono immediatamente riportate nell’SPA.
 
 1. Accedi a [Servizio Author dell’SDK dell’AEM](Http://localhost:4502) as `admin`
 1. Accedi a __Sites > App WKND > us > it__
@@ -155,6 +156,6 @@ Prima di creare il contenuto, disponi le finestre del browser in modo che AEM Au
 
 Nuove pagine dell&#39;AEM nel __Home page dell’app WKND > Avventura__ _deve_ hanno un nome di pagina AEM che corrisponde al nome del frammento di contenuto dell’avventura corrispondente. Questo perché il percorso dell’SPA per la mappatura della pagina dell’AEM è basato sull’ultimo segmento del percorso, che è il nome del frammento di contenuto.
 
-## Congratulazioni. 
+## Congratulazioni.
 
 Hai appena avuto un rapido assaggio di come AEM SPA Editor può migliorare il vostro SPA con aree controllate e modificabili! Se sei interessato, vedi il resto dell’esercitazione, ma assicurati di ricominciare da capo, poiché in questa configurazione rapida l’ambiente di sviluppo locale si trova ora allo stato finale dell’esercitazione.

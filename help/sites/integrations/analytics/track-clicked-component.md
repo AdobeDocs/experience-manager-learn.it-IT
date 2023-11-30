@@ -6,11 +6,12 @@ topic: Integrations
 feature: Adobe Client Data Layer
 role: Developer
 level: Intermediate
-kt: 6296
+jira: KT-6296
 thumbnail: KT-6296.jpg
 badgeIntegration: label="Integrazione" type="positive"
+doc-type: Tutorial
 exl-id: ab051363-d3e8-4c07-b1fa-3a5d24757496
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1886'
 ht-degree: 2%
@@ -43,7 +44,7 @@ Questo tutorial è una continuazione di [Raccogliere dati di pagina con Adobe An
 
 * A **Tag, proprietà** con [Estensione Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) abilitato
 * **Adobe Analytics** ID suite di rapporti test/dev e server di tracciamento. Consulta la seguente documentazione per [creazione di una suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
-* [Debugger Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) estensione del browser configurata con la proprietà tag caricata su [Sito WKND](https://wknd.site/us/en.html) o un sito AEM con Adobe Data Layer abilitato.
+* [Debugger Experienci Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) estensione del browser configurata con la proprietà tag caricata su [Sito WKND](https://wknd.site/us/en.html) o un sito AEM con Adobe Data Layer abilitato.
 
 ## Schema Pulsante e teaser di Inspect
 
@@ -89,7 +90,7 @@ Prima di creare le regole nella proprietà tag, è utile rivedere [schema per il
 
 Adobe Client Data Layer è un **evento** livello dati guidato. Ogni volta che si fa clic su uno dei Componenti core, si `cmp:click` viene inviato tramite il livello dati. Per ascoltare `cmp:click` evento, creiamo una regola.
 
-1. Passa a Experience Platform e accedi alla proprietà tag integrata con il sito AEM.
+1. Passa a Experienci Platform e accedi alla proprietà tag integrata con il sito AEM.
 1. Accedi a **Regole** nell’interfaccia utente della proprietà Tag, quindi fai clic su **Aggiungi regola**.
 1. Denomina la regola **CTA selezionato**.
 1. Clic **Eventi** > **Aggiungi** per aprire **Configurazione evento** procedura guidata.
@@ -171,7 +172,7 @@ Quindi crea un elemento dati per acquisire l’ID componente e il titolo su cui 
 
 ### ID componente
 
-1. Passa a Experience Platform e accedi alla proprietà tag integrata con il sito AEM.
+1. Passa a Experienci Platform e accedi alla proprietà tag integrata con il sito AEM.
 1. Accedi a **Elementi dati** e fai clic su **Aggiungi nuovo elemento dati**.
 1. Per **Nome** campo, immetti **ID componente**.
 1. Per **Tipo di elemento dati** campo, seleziona **Codice personalizzato**.
@@ -287,10 +288,10 @@ Attualmente il **CTA selezionato** la regola restituisce semplicemente un’istr
 
 ## Convalidare la chiamata Track Link Beacon and Analytics
 
-Ora che il **CTA selezionato** La regola invia il beacon Analytics. Dovresti essere in grado di visualizzare le variabili di tracciamento Analytics utilizzando Experience Platform Debugger.
+Ora che il **CTA selezionato** La regola invia il beacon Analytics. Dovresti essere in grado di visualizzare le variabili di tracciamento Analytics utilizzando Experienci Platform Debugger.
 
 1. Apri [Sito WKND](https://wknd.site/us/en.html) nel browser.
-1. Fai clic sull’icona Debugger ![Icona di Experience Platform Debugger](assets/track-clicked-component/experience-cloud-debugger.png) per aprire Experience Platform Debugger.
+1. Fai clic sull’icona Debugger ![Icona di Experience Platform Debugger](assets/track-clicked-component/experience-cloud-debugger.png) per aprire Experienci Platform Debugger.
 1. Assicurati che Debugger mappi la proprietà tag a *tuo* Ambiente di sviluppo, come descritto in precedenza e **Registrazione console** è selezionato.
 1. Apri il menu Analytics e verifica che la suite di rapporti sia impostata su *tuo* suite di rapporti.
 
@@ -300,7 +301,7 @@ Ora che il **CTA selezionato** La regola invia il beacon Analytics. Dovresti ess
 
    ![Pulsante CTA su cui fare clic](assets/track-clicked-component/cta-button-to-click.png)
 
-1. Torna a Debugger Experience Platform, scorri verso il basso ed espandi **Richieste di rete** > *Suite di rapporti*. Dovresti essere in grado di trovare **eVar**, **prop**, e **evento** impostata.
+1. Torna a Debugger Experienci Platform, scorri verso il basso ed espandi **Richieste di rete** > *Suite di rapporti*. Dovresti essere in grado di trovare **eVar**, **prop**, e **evento** impostata.
 
    ![Eventi, evar e prop di Analytics tracciati al clic](assets/track-clicked-component/evar-prop-link-clicked-tracked-debugger.png)
 
@@ -314,8 +315,8 @@ Ora che il **CTA selezionato** La regola invia il beacon Analytics. Dovresti ess
 
    >[!NOTE]
    >
-   > Se non trovi alcun registro della console, assicurati che **Registrazione console** è controllato in **Tag Experience Platform** in Experience Platform Debugger.
+   > Se non trovi alcun registro della console, assicurati che **Registrazione console** è controllato in **Tag Experience Platform** in Experienci Platform Debugger.
 
-## Congratulazioni. 
+## Congratulazioni.
 
-Hai appena utilizzato Adobe Client Data Layer e Tag basati sugli eventi in Experience Platform per monitorare i clic di componenti specifici su un sito AEM.
+Hai appena utilizzato Adobe Client Data Layer e Tag basati sugli eventi in Experienci Platform per monitorare i clic di componenti specifici su un sito AEM.

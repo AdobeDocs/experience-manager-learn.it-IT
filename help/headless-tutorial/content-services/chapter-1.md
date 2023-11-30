@@ -7,8 +7,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: f24a75f6-9062-498c-b782-7d9011aa0bcf
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 1%
@@ -30,7 +31,7 @@ Prima di iniziare questo tutorial, assicurati che le seguenti istanze di AEM sia
 
 ## Pacchetti applicazioni mobili WKND{#wknd-mobile-application-packages}
 
-Installa i seguenti pacchetti di contenuti AEM su **entrambi** AEM Author e AEM Publish, utilizzando [!DNL AEM Package Manager].
+Installa i seguenti pacchetti di contenuti AEM su **entrambi** Autore AEM e pubblicazione AEM, utilizzando [!DNL AEM Package Manager].
 
 * [ui.apps: GitHub > Risorse > com.adobe.aem.guides.wknd-mobile.ui.apps-x.x.x.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
    * [!DNL WKND Mobile Empty Template Type]
@@ -62,7 +63,7 @@ Se riscontri un problema con l’esercitazione o con il codice, lascia un [Probl
 
 ## Passa alla fine
 
-Per passare alla fine dell’esercitazione, il [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) il pacchetto di contenuti può essere installato su **entrambi** AEM Author e AEM Publish. Tieni presente che il contenuto e la configurazione non verranno visualizzati come pubblicati in AEM Author. Tuttavia, a causa della distribuzione manuale, tutto il contenuto e la configurazione necessari sono disponibili in AEM Publish e consentono [!DNL WKND Mobile App] per accedere al contenuto.
+Per passare alla fine dell’esercitazione, il [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) il pacchetto di contenuti può essere installato su **entrambi** Autore AEM e pubblicazione AEM. Tieni presente che il contenuto e la configurazione non verranno visualizzati come pubblicati in AEM Author; tuttavia, a causa della distribuzione manuale, tutto il contenuto e la configurazione necessari sono disponibili in AEM Publish e consentono [!DNL WKND Mobile App] per accedere al contenuto.
 
 
 ## Passaggio successivo

@@ -5,8 +5,9 @@ feature: Dynamic Media Classic
 topic: Content Management
 role: Admin
 level: Intermediate
+doc-type: Tutorial
 exl-id: c3fbfb0b-3222-46ff-9248-dea70ce85a23
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -41,5 +42,5 @@ Per ulteriori informazioni su Dynamic Media Classic, consulta le risorse seguent
 
 - [Dynamic Media Classic sull’Experience League: come arrivare al valore](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
 - [Dynamic Media Classic su Experience League - Fare di più](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
-- [Archivi newsletter Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
+- [Archivi newsletter Dynamic Medie](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
 - [Documentazione di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)

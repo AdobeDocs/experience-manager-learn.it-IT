@@ -2,10 +2,7 @@
 title: Comprendere Adobe Cloud Manager
 description: Adobe Cloud Manager fornisce una soluzione semplice ma solida che consente di gestire facilmente gli ambienti AEM, presentarli e renderli self-service.
 sub-product: Experience Manager Cloud Manager, Experience Manager
-topics: best-practices, cicd, development, operations, governance
-doc-type: feature video
-activity: understand
-audience: developer, implementer, administrator, architect
+doc-type: Feature Video
 topic: Architecture
 feature: Cloud Manager
 role: Architect
@@ -13,7 +10,7 @@ level: Beginner
 exl-id: 53279cbb-70c8-4319-b5bb-9a7d350a7f72
 last-substantial-update: 2022-05-10T00:00:00Z
 thumbnail: understand-cloud-manager.jpg
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 16%
@@ -45,7 +42,7 @@ Per una panoramica completa, consulta [Guida utente di Cloud Manager](https://ex
 
 ## Ambienti {#environments}
 
-[Ambienti Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/managing-environments.html) sono composte da istanze AEM Author, AEM Publish e Dispatcher. Diversi ambienti supportano i ruoli e possono essere attivati utilizzando diverse pipeline CI/CD (descritte di seguito). In genere, gli ambienti di Cloud Manager hanno un ambiente Produzione e un ambiente Stage.
+[Ambienti Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/managing-environments.html) sono composte da istanze di AEM Author, AEM Publish e Dispatcher. Diversi ambienti supportano i ruoli e possono essere attivati utilizzando diverse pipeline CI/CD (descritte di seguito). In genere, gli ambienti di Cloud Manager hanno un ambiente Produzione e un ambiente Stage.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318?quality=12&learn=on)
 

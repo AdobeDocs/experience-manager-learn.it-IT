@@ -2,18 +2,15 @@
 title: Creare un componente personalizzato | Guida introduttiva dell'Angular e dell'editor SPA dell'AEM
 description: Scopri come creare un componente personalizzato da utilizzare con l’Editor SPA dell’AEM. Scopri come sviluppare finestre di dialogo di authoring e modelli Sling per estendere il modello JSON e popolare un componente personalizzato.
 feature: SPA Editor
-doc-type: tutorial
-topics: development
 version: Cloud Service
-activity: develop
-audience: developer
-kt: 5831
+jira: KT-5831
 thumbnail: 5831-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 6c1c7f2b-f574-458c-b744-b92419c46f23
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 3%
@@ -158,7 +155,7 @@ Un componente AEM è definito come nodo e proprietà. Nel progetto, questi nodi 
    >
    > Puoi visualizzare molto di più [esempi di finestre di dialogo visualizzando le definizioni dei Componenti core](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components). Puoi anche visualizzare campi modulo aggiuntivi, come `select`, `textarea`, `pathfield`, disponibile sotto `/libs/granite/ui/components/coral/foundation/form` in [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/libs/granite/ui/components/coral/foundation/form).
 
-   Con una componente tradizionale AEM, [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=it) in genere è richiesto uno script. Poiché l’SPA esegue il rendering del componente, non è necessario alcuno script HTL.
+   Con una componente tradizionale AEM, [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it) in genere è richiesto uno script. Poiché l’SPA esegue il rendering del componente, non è necessario alcuno script HTL.
 
 ## Creare il modello Sling
 
@@ -236,6 +233,7 @@ Nel contesto dell’editor SPA, i modelli Sling espongono il contenuto di un com
    Viene aggiunta un’ulteriore &quot;logica di business&quot; per restituire il valore del messaggio in maiuscolo. Questo consente di vedere la differenza tra il valore non elaborato memorizzato dalla finestra di dialogo di authoring e il valore esposto dal modello Sling.
 
    >[!NOTE]
+   >
    È possibile visualizzare [CustomComponentImpl.java finito qui](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
 
 ## Aggiornare il componente Angular
@@ -328,7 +326,7 @@ Quindi, crea il `Custom Component` utilizzando l’editor SPA dell’AEM.
 
    Il valore JSON è impostato su tutte le lettere maiuscole in base alla logica aggiunta al modello Sling.
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Congratulazioni, hai imparato a creare un componente AEM personalizzato e il funzionamento dei modelli e delle finestre di dialogo Sling con il modello JSON.
 

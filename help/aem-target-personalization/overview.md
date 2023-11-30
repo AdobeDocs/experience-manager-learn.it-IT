@@ -7,8 +7,9 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: b632883f-65fd-4f89-bf39-ec2bce352d2d
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 0%
@@ -45,7 +46,7 @@ Ora disponiamo di contenuti personalizzati sotto forma di offerte dell’AEM in 
 **Per implementare questo scenario, devi:**
 
 * [Integrare AEM e Adobe Target tramite Launch e Adobe I/O](./implementation.md#integrating-aem-target-options)
-* [AEM e Adobe Target con Cloud Services legacy](./implementation.md#integrating-aem-target-options)
+* [AEM e Adobe Target con Cloud Service legacy](./implementation.md#integrating-aem-target-options)
 
 ***Dopo aver implementato le integrazioni di cui sopra, esplora le [scenario in dettaglio](./personalization-use-case-1.md).***
 

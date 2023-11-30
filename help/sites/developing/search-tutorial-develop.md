@@ -6,10 +6,11 @@ feature: Search
 topic: Development
 role: Developer
 level: Intermediate, Experienced
+doc-type: Tutorial
 exl-id: aa268c5f-d29e-4868-a58b-444379cb83be
 last-substantial-update: 2022-08-10T00:00:00Z
 thumbnail: 32090.jpg
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 3%
@@ -33,7 +34,7 @@ L’implementazione della ricerca semplice è costituita dai materiali provenien
 
 * [Gestione indice](http://localhost:4502/libs/granite/operations/content/diagnosis/tool.html/granite_oakindexmanager)
 * [Spiega query](http://localhost:4502/libs/granite/operations/content/diagnosis/tool.html/granite_queryperformance)
-* [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/oak%3Aindex/cqPageLucene) > /oak:index/cqPageLucene
+* [CRXDE Liti](http://localhost:4502/crx/de/index.jsp#/oak%3Aindex/cqPageLucene) > /oak:index/cqPageLucene
 * [Gestione pacchetti CRX](http://localhost:4502/crx/packmgr/index.jsp)
 * [Debugger QueryBuilder](http://localhost:4502/libs/cq/search/content/querydebug.html?)
 * [Generatore definizione indice Oak](https://oakutils.appspot.com/generate/index)
@@ -105,8 +106,7 @@ Correzioni e chiarimenti delle discussioni di laboratorio e risposte alle domand
    * Le query DEVONO specificare una restrizione di percorso uguale all&#39;ambito del percorso di query dell&#39;indice oppure essere discendenti di.
    * Indici con ambito più ampio (ad esempio `/oak:index/cqPageLucene`) indicizzerà ANCHE i dati, con conseguente duplicazione dei costi di acquisizione e utilizzo del disco.
    * Può essere necessaria una gestione duplicativa della configurazione (ad es. l’aggiunta degli stessi indexRules a più indici tenant se questi devono soddisfare gli stessi set di query)
-   * Questo approccio è consigliato sul livello di pubblicazione di AEM per la ricerca personalizzata del sito, come in AEM Author, in genere si eseguono query in cima alla struttura del contenuto per tenant diversi (ad esempio, tramite OmniSearch); definizioni di indice diverse possono causare comportamenti diversi solo in base alla restrizione del percorso.
-
+   * Questo approccio è consigliato sul livello di pubblicazione dell’AEM per la ricerca personalizzata del sito, in quanto in AEM Author, è comune che le query vengano eseguite in alto nella struttura del contenuto per tenant diversi (ad esempio, tramite OmniSearch); definizioni di indice diverse possono causare comportamenti diversi solo in base alla restrizione del percorso.
 
 3. **Dove si trova un elenco di tutti gli analizzatori disponibili?**
 

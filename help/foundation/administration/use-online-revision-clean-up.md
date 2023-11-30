@@ -3,15 +3,12 @@ title: Usa pulizia revisioni in linea
 description: Breve introduzione alla funzione di pulizia delle revisioni online. La funzione di pulizia delle revisioni online riduce la necessità di eseguire frequenti operazioni di pulizia delle revisioni offline.
 version: 6.4, 6.5
 feature: JCR
-topics: operations, authoring, performance
-activity: use
-audience: administrator, architect, implementer
-doc-type: technical video
+doc-type: Technical Video
 topic: Administration
 role: Admin
 level: Intermediate
 exl-id: 62a36ab1-3245-43ac-b943-e28ff95661bf
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 0%

@@ -2,15 +2,13 @@
 title: Determinare la struttura delle cartelle e la convenzione di denominazione dei file
 description: La denominazione dei file è forse la decisione più importante che prenderai durante l’implementazione di Dynamic Media Classic. Anche la struttura delle cartelle è importante. Scopri perché è così importante e possibile adottare approcci per la struttura delle cartelle e i nomi dei file.
 feature: Dynamic Media Classic
-doc-type: tutorial
 activity: develop
-topics: development, authoring, configuring, architecture
-audience: all
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 15121896-9196-4ce0-aff2-9178563326b4
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1207'
 ht-degree: 0%
@@ -77,9 +75,9 @@ Si tratta di un sistema molto semplice, utile se si hanno esigenze modeste. Tutt
 | SKU/PID | Categoria | Nome file | ID risorsa |
 | ------- | ----------------------- | ------------------------------------------- | ------------------------------- |
 | AA123 | Visualizzazioni alternative | AA123_1.tif AA123_2.tif AA123_3.tif | AA123_1 AA123_2 AA123_3 |
-|  | Visualizzazioni colorate | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_ROSSO AA123_MARRONE |
-|  | Campioni | AA123_BLU_SW.tif | AA123_BLU_SW |
-|  | Set immagini o set campioni |  | AA123 o AA123_SET | — |
+|         | Visualizzazioni colorate | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_ROSSO AA123_MARRONE |
+|         | Campioni | AA123_BLU_SW.tif | AA123_BLU_SW |
+|         | Set immagini o set campioni |                                             | AA123 o AA123_SET | — |
 
 Quando si tratta di insiemi di set di immagini, ad esempio Set di immagini e Set di campioni, anche il set deve avere un nome univoco. In questo caso, al set si può assegnare lo SKU di base come nome o lo SKU con un&#39;estensione &quot;_SET&quot;.
 

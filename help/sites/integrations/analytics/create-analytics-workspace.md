@@ -6,12 +6,13 @@ topic: Integrations
 feature: Adobe Client Data Layer
 role: User
 level: Intermediate
-kt: 6409
+jira: KT-6409
 thumbnail: KT-6296.jpg
+doc-type: Tutorial
 exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
 badgeIntegration: label="Integrazione" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2162'
 ht-degree: 0%
@@ -53,7 +54,7 @@ Questo tutorial è una continuazione di [Tracciare il componente su cui è stato
 
 * A **Tag, proprietà** con [Estensione Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) abilitato
 * **Adobe Analytics** ID suite di rapporti test/dev e server di tracciamento. Consulta la seguente documentazione per [creazione di una suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
-* [Debugger Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) estensione del browser configurata con una proprietà tag caricata su [Sito WKND](https://wknd.site/us/en.html) o un sito AEM con Adobe Data Layer abilitato.
+* [Debugger Experienci Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) estensione del browser configurata con una proprietà tag caricata su [Sito WKND](https://wknd.site/us/en.html) o un sito AEM con Adobe Data Layer abilitato.
 
 ## Variabili di conversione (eVar) ed Eventi di successo (Evento)
 
@@ -260,6 +261,6 @@ Quindi, scariciamo il modello di classificazione per la variabile Button Id (eVa
 
    ![Condividi progetto](assets/create-analytics-workspace/share.png)
 
-## Congratulazioni. 
+## Congratulazioni.
 
 Hai appena imparato a mappare i dati acquisiti da un sito Adobe Experience Manager a metriche e dimensioni nelle suite di rapporti di Adobe Analytics. Inoltre, ha eseguito una classificazione per le metriche e generato una dashboard di reporting dettagliata utilizzando la funzione Analysis Workspace di Adobe Analytics.

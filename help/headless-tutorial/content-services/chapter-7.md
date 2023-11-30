@@ -5,8 +5,9 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: d6b6d425-842a-43a9-9041-edf78e51d962
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
@@ -41,7 +42,7 @@ Android è utilizzato per i tutorial a causa della capacità di eseguire un emul
 
 ### Configurazione dell’app mobile per un utilizzo non localhost
 
-Se AEM Publish non viene eseguito su **http://localhost:4503** l&#39;host e la porta possono essere aggiornati nel [!DNL Settings] per puntare alla proprietà AEM Publish host/port.
+Se la pubblicazione AEM non viene eseguita su **http://localhost:4503** l&#39;host e la porta possono essere aggiornati nel [!DNL Settings] per puntare alla proprietà AEM Publish host/port.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28344?quality=12&learn=on)
 
@@ -56,7 +57,7 @@ Se AEM Publish non viene eseguito su **http://localhost:4503** l&#39;host e la p
    * Se richiesto **Creare una nuova cartella**, o **Usa esistente**, seleziona **Usa esistente**.
 1. All’avvio iniziale di Android Studio, fai clic con il pulsante destro del mouse sul **wknd-mobile.x.x.x** nell&#39;elenco Progetti e selezionare **Impostazioni modulo aperto**.
    * Sotto **Moduli > wknd-mobile.x.x.x > scheda Dipendenze**, seleziona **Piattaforma API 29 Android**. Toccare OK per chiudere e salvare le modifiche.
-   * In caso contrario, verrà visualizzato un errore &quot;Please select Android SDK&quot; (Seleziona SDK Android) quando si tenta di avviare l’emulatore.
+   * In caso contrario, verrà visualizzato un errore &quot;Please select Android SDK&quot; (Seleziona Android SDK) quando si tenta di avviare l’emulatore.
 1. Apri **AVD Manager** selezionando **Strumenti > AVD Manager** o toccando il **AVD Manager** nella barra superiore.
 1. In **AVD Manager** finestra, fai clic su **+ Crea dispositivo virtuale...** se il dispositivo non è già stato registrato.
    1. A sinistra, seleziona la **Telefono** categoria.
@@ -87,7 +88,7 @@ Perché il modello modificabile dell’API degli eventi (`/content/wknd-mobile/e
 
 ### Flusso di codice di alto livello
 
-1. Apertura di [!DNL WKND Mobile] L’app richiama un `HTTP GET` richiesta a AEM Publish all’indirizzo `/content/wknd-mobile/en/api/events.model.json` per raccogliere i contenuti da inserire nell’interfaccia utente dell’app mobile.
+1. Apertura di [!DNL WKND Mobile] L’app richiama un `HTTP GET` richiesta al AEM Pubblica su `/content/wknd-mobile/en/api/events.model.json` per raccogliere i contenuti da inserire nell’interfaccia utente dell’app mobile.
 2. Dopo aver ricevuto il contenuto dall’AEM, ciascuno dei tre elementi di visualizzazione dell’app mobile, **logo, linea di tag ed elenco eventi**, sono inizializzati con il contenuto dell&#39;AEM.
    * Per associare il contenuto AEM all’elemento di visualizzazione dell’app mobile, il JSON che rappresenta ciascun componente AEM è un oggetto mappato su un POJO Java, che a sua volta è associato all’elemento di visualizzazione Android.
       * Componente immagine JSON → Logo POJO → Logo ImageView
@@ -130,7 +131,7 @@ private void initApp(final List<ViewBinder> viewBinders) {
 
 `onCreate(..)` è l’hook di inizializzazione per l’app mobile e registra i 3 `ViewBinders` responsabile dell’analisi del JSON e dell’associazione dei valori al `View` elementi.
 
-`initApp(...)` GET viene quindi chiamato, il che invia la richiesta HTTP al punto finale di AEM Content Services su AEM Publish per raccogliere il contenuto. Dopo aver ricevuto una risposta JSON valida, la risposta JSON viene passata a ogni `ViewBinder` responsabile dell’analisi del JSON e del suo binding al dispositivo mobile `View` elementi.
+`initApp(...)` GET viene quindi chiamato, il che invia la richiesta HTTP al punto finale di AEM Content Services nella pubblicazione AEM per raccogliere il contenuto. Dopo aver ricevuto una risposta JSON valida, la risposta JSON viene passata a ogni `ViewBinder` responsabile dell’analisi del JSON e del suo binding al dispositivo mobile `View` elementi.
 
 #### Analisi della risposta JSON
 
@@ -160,7 +161,7 @@ Da qui viene effettuato un controllo per una chiave denominata **immagine**, che
 
 Infine, il logo `src` viene caricato in Android ImageView utilizzando [!DNL Glide] libreria helper.
 
-Tieni presente che è necessario fornire lo schema, l’host e la porta AEM (tramite `aemHost`) all&#39;istanza AEM Publish, in quanto AEM Content Services fornirà solo il percorso JCR (ad es. `/content/dam/wknd-mobile/images/wknd-logo.png`) al contenuto di riferimento.
+Tieni presente che è necessario fornire lo schema, l’host e la porta AEM (tramite `aemHost`) all&#39;istanza di pubblicazione dell&#39;AEM, poiché i servizi di contenuto dell&#39;AEM forniranno solo il percorso JCR (ad es. `/content/dam/wknd-mobile/images/wknd-logo.png`) al contenuto di riferimento.
 
 #### POJO immagine{#image-pojo}
 

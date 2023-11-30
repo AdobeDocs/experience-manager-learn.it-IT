@@ -1,27 +1,24 @@
 ---
-title: Informazioni sull’autenticazione Adobe IMS con AEM in Adobe Managed Services
+title: Informazioni sull’autenticazione Adobe IMS con AEM su Adobe Managed Services
 description: Adobe Experience Manager introduce il supporto Admin Console per le istanze AEM e l’autenticazione basata su Adobe IMS (Identity Management System) per AEM su Managed Services.   Questa integrazione consente ai clienti AEM Managed Services di gestire tutti gli utenti Experience Cloud in un’unica console web unificata. Gli utenti e i gruppi possono essere assegnati a profili di prodotto associati alle istanze AEM, consentendo l’accesso gestito a livello centrale alle istanze AEM specifiche.
 version: 6.4, 6.5
 feature: User and Groups
-topics: authentication, security
-activity: understand
-audience: administrator, architect, developer, implementer
-doc-type: technical video
-kt: 781
+doc-type: Technical Video
+jira: KT-781
 topic: Architecture
 role: Architect
 level: Experienced
 exl-id: 52dd8a3f-6461-4acb-87ca-5dd9567d15a6
 last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: KT-781.jpg
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-# Informazioni sull’autenticazione Adobe IMS con AEM in Adobe Managed Services{#understanding-adobe-ims-authentication-with-aem-on-adobe-managed-services}
+# Informazioni sull’autenticazione Adobe IMS con AEM su Adobe Managed Services{#understanding-adobe-ims-authentication-with-aem-on-adobe-managed-services}
 
 Adobe Experience Manager introduce il supporto Admin Console per le istanze AEM e l’autenticazione basata su Adobe Identity Management System (IMS) per AEM su Managed Services.   Questa integrazione consente ai clienti AEM Managed Services di gestire tutti gli utenti Experience Cloud in un’unica console web unificata. Gli utenti e i gruppi possono essere assegnati a profili di prodotto associati alle istanze AEM, consentendo l’accesso gestito a livello centrale alle istanze AEM specifiche.
 
@@ -34,7 +31,7 @@ Adobe Experience Manager introduce il supporto Admin Console per le istanze AEM 
 * Il supporto dell’autenticazione include gli IDP del cliente conformi a SAML2 per l’SSO.
 * Sono supportati solo Enterprise ID o Federated ID (per l’SSO del cliente) (gli ID Adobe personali non sono supportati).
 
-*&#42;Questa funzione è supportata per AEM 6.4 SP3 e versioni successive per i clienti di Adobe Managed Services.*
+*&#42;Questa funzione è supportata per AEM 6.4 SP3 e versioni successive, ad Adobe per i clienti Managed Services.*
 
 ## Best practice {#best-practices}
 

@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6270
+jira: KT-6270
 thumbnail: KT-6270.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: c63c5c75-1deb-4c16-ba33-e2c338ef6251
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Apri `.env` file, rimuovi commento da `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` e fo
 + Se la coppia di chiavi è stata generata da Adobe I/O, è stata scaricata automaticamente come parte della  `config.zip`.
 + Se hai fornito la chiave pubblica a Adobe I/O, dovresti anche essere in possesso della chiave privata corrispondente.
 + In caso contrario, puoi generare nuove coppie di chiavi o caricare nuove chiavi pubbliche nella parte inferiore di:
-   [https://console.adobe.com](https://console.adobe.io) > Il tuo progetto Asset compute App Builder > Aree di lavoro @ Sviluppo > Account di servizio (JWT).
+  [https://console.adobe.com](https://console.adobe.io) > Il tuo progetto Asset compute App Builder > Aree di lavoro @ Sviluppo > Account di servizio (JWT).
 
 Ricorda la `private.key` Il file non deve essere archiviato in Git in quanto contiene segreti, ma deve essere archiviato in un luogo sicuro all’esterno del progetto.
 

@@ -5,8 +5,9 @@ feature: Dispatcher
 topic: Architecture
 role: Architect
 level: Beginner
+doc-type: Tutorial
 exl-id: 3bdb6e36-4174-44b5-ba05-efbc870c3520
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '17460'
 ht-degree: 0%
@@ -461,7 +462,7 @@ Non è consigliabile creare uno schema di risoluzione delle dipendenze. C&#39;è
 
 Abbiamo detto che la navigazione principale o i teaser sono una fonte per le dipendenze. Beh, se carichi la navigazione e i teaser in modo asincrono o li includi con uno script SSI in Apache, non avrai tale dipendenza da tracciare. Approfondiremo il caricamento asincrono dei componenti più avanti in questo documento, quando parleremo di &quot;Inclusioni dinamiche Sling&quot;.
 
-Lo stesso vale per le finestre popup o per il contenuto caricato in un lightbox. Questi pezzi hanno anche raramente una navigazione (o &quot;dipendenze&quot;) e possono essere invalidati come una singola risorsa.
+Lo stesso vale per le finestre popup o per il contenuto caricato in un lightbox. Questi pezzi hanno anche raramente navigazione (o &quot;dipendenze&quot;) e possono essere invalidati come una singola risorsa.
 
 ## Creazione di componenti tenendo presente Dispatcher
 
@@ -576,7 +577,7 @@ Ogni volta che viene richiesta una pagina nuova e non memorizzata nella cache, l
 
 Esiste un’eccezione naturale, in cui questo pattern è utile anche nella sua forma semplice: se il binario viene memorizzato nel componente stesso e non in DAM. Tuttavia, questa opzione è utile solo per le immagini utilizzate una volta sul sito web; se non memorizzi le risorse in DAM, la gestione delle risorse risulta difficoltosa. Immagina semplicemente di esaurire la licenza d’uso per una particolare risorsa. Come puoi scoprire su quali componenti hai utilizzato la risorsa?
 
-Vedi? La &quot;M&quot; in DAM sta per &quot;Gestione&quot;, come in Digital Asset Management. Non vorrai dare via quella caratteristica.
+Vedi? La &quot;M&quot; in DAM sta per &quot;Gestione&quot;, come in Digital Asset Management. Non vorrai dare via quella funzione.
 
 #### Conclusione
 
@@ -662,7 +663,7 @@ Comprenderai i vantaggi di livelli di statfile più profondi un po&#39; più tar
 
 #### Implementazione di un agente di invalidazione personalizzato
 
-Comunque, dobbiamo informare in qualche modo Dispatcher di annullare la validità delle HTML-page se viene modificato un &quot;.jpg&quot; o &quot;.png&quot; per consentire il rendering con un nuovo URL.
+Comunque, dobbiamo informare in qualche modo Dispatcher di annullare la validità dei HTML-page se viene modificato un &quot;.jpg&quot; o &quot;.png&quot; per consentire il rendering con un nuovo URL.
 
 Ciò che abbiamo visto nei progetti è, ad esempio, agenti di replica speciali sul sistema di pubblicazione che inviano richieste di invalidazione per un sito ogni volta che viene pubblicata un’immagine di quel sito.
 
@@ -1296,7 +1297,7 @@ Concluderemo la prima parte di questo libro con una raccolta casuale di suggerim
 
 ### Correggi tempi di invalidazione
 
-Se installi un’istanza di AEM Author e Publish pronta all’uso, la topologia è un po’ strana. L’autore invia contemporaneamente il contenuto ai sistemi di pubblicazione e la richiesta di annullamento della validità ai Dispatcher. Poiché sia i sistemi Publish che Dispatcher sono separati dall’Autore dalle code, la tempistica può essere un po’ infelice. Il Dispatcher può ricevere la richiesta di annullamento della validità dall’Autore prima che il contenuto venga aggiornato nel sistema di pubblicazione.
+Se si installa una funzione di creazione e pubblicazione dell’AEM preconfigurata, la topologia è un po’ strana. L’autore invia contemporaneamente il contenuto ai sistemi di pubblicazione e la richiesta di annullamento della validità ai Dispatcher. Poiché sia i sistemi Publish che Dispatcher sono separati dall’Autore dalle code, la tempistica può essere un po’ infelice. Il Dispatcher può ricevere la richiesta di annullamento della validità dall’Autore prima che il contenuto venga aggiornato nel sistema di pubblicazione.
 
 Se nel frattempo un client richiede tale contenuto, Dispatcher richiederà e memorizzerà il contenuto non aggiornato.
 
@@ -1314,7 +1315,7 @@ Di solito hai iniziato a riapplicare le intestazioni mancanti alle risorse nel s
 
 Particolarmente fastidioso era, che anche con il Dispatcher il primo _non memorizzato in cache_ La risposta al browser proviene dal sistema di pubblicazione con una gamma completa di intestazioni, mentre le risposte successive vengono generate da Dispatcher con un set limitato di intestazioni.
 
-A partire da Dispatcher 4.1.11, Dispatcher può archiviare le intestazioni generate dai sistemi di pubblicazione.
+A partire da Dispatcher 4.1.11, Dispatcher può memorizzare le intestazioni generate dai sistemi di pubblicazione.
 
 In questo modo si evita di duplicare la logica di intestazione nel Dispatcher e si libera la piena potenza espressiva di HTTP e AEM.
 
@@ -1582,7 +1583,7 @@ Il tuo sito ha un pattern di accesso molto particolare. Hai un carico elevato di
 
 Ora è molto probabile che queste pagine siano memorizzate nella cache di Dispatcher, in quanto vengono richieste così di frequente.
 
-Viene inviata una richiesta arbitraria di annullamento della validità a Dispatcher, causando l’annullamento della validità di tutte le pagine, inclusa quella più popolare.
+Viene inviata una richiesta arbitraria di annullamento della validità a Dispatcher, causando l’annullamento della validità di tutte le pagine, inclusa quella più comune.
 
 Di conseguenza, poiché queste pagine sono così popolari, ci sono nuove richieste in arrivo da diversi browser. Prendiamo la home page come esempio.
 
@@ -1877,8 +1878,7 @@ CQ-Handle: <path-pattern>
 * `Deactive:` eliminare `/path-pattern.*`
 ED eliminare `/path-pattern/*`
 * `Delete:`   eliminare `/path-pattern.*`
-ED eliminare 
-`/path-pattern/*`
+ED eliminare `/path-pattern/*`
 * `Test:`   Restituisci &quot;ok&quot; ma non eseguire alcuna operazione
 
 `CQ-Handle: <path-pattern>` : percorso della risorsa di contenuto da invalidare. Nota: `<path-pattern>` è in realtà un &quot;percorso&quot; e non un &quot;modello&quot;.

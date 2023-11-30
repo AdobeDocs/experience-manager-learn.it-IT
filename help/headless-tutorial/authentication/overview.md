@@ -2,18 +2,18 @@
 title: Autenticazione per AEM as a Cloud Service da un’applicazione esterna
 description: Scopri in che modo un’applicazione esterna può autenticare e interagire a livello di programmazione con AEM as a Cloud Service tramite HTTP utilizzando Token di accesso per lo sviluppo locale e Credenziali di servizio.
 version: Cloud Service
-doc-type: tutorial
 topics: Development, Security
 feature: APIs
 activity: develop
 audience: developer
-kt: 6785
+jira: KT-6785
 thumbnail: 330460.jpg
 topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
+doc-type: Tutorial
 exl-id: 63c23f22-533d-486c-846b-fae22a4d68db
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 0%

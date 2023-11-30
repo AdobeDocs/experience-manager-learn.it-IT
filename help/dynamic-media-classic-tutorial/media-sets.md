@@ -5,8 +5,9 @@ feature: Dynamic Media Classic, Image Sets, Mixed Media Sets, Spin Sets
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 45c86ff2-d991-46a7-a8d1-25c9fec142d9
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 1%
@@ -101,7 +102,7 @@ L’URL per il set di file multimediali diversi di cui sopra potrebbe essere vis
 
 - Scopri come [Creare un set di file multimediali diversi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
 
-Per visualizzare un&#39;immagine per lo zoom, un set o un video sul sito Web, è necessario chiamarla in un &quot;visualizzatore&quot; di Dynamic Media Classic. Dynamic Media Classic include i visualizzatori per le risorse rich media come i set di campioni, i set 360 gradi, i video e molti altri.
+Per visualizzare un&#39;immagine per lo zoom, un set o un video sul sito Web, è necessario chiamarla in un &quot;visualizzatore&quot; di Dynamic Media Classic. In Dynamic Media Classic sono inclusi i visualizzatori per le risorse rich media come i set di campioni, i set 360 gradi, i video e molti altri.
 
 Ulteriori informazioni su [Visualizzatori per AEM Assets e Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html).
 
@@ -113,7 +114,7 @@ Ogni predefinito è un set di istruzioni indipendente con nome univoco che defin
 
 Mentre è possibile creare il predefinito da soli (si trovano in **Impostazione > Impostazione applicazione > Predefiniti set di batch** ), come best practice è necessario che il team di consulenza o il supporto tecnico siano configurati per te. Ecco il motivo:
 
-- I predefiniti per set di batch possono essere complessi da impostare, poiché si basano su espressioni regolari e questa sintassi può risultare sconosciuta o confusa a meno che non si sia uno sviluppatore.
+- I predefiniti per set di batch possono essere complessi da impostare, poiché si basano su espressioni regolari e questa sintassi può risultare sconosciuta o confusa a meno che tu non sia uno sviluppatore.
 - Una volta creati, vengono attivati per impostazione predefinita. Non è disponibile la funzione &quot;annulla&quot;. Se inizi a caricare migliaia di immagini e il predefinito non è configurato correttamente, potresti ritrovare centinaia o migliaia di set interrotti da eliminare manualmente.
 
 In precedenza è stata suggerita una semplice convenzione di denominazione che sarebbe molto semplice da creare in un predefinito per set di batch. Tuttavia, poiché i predefiniti sono molto flessibili, possono gestire strategie di denominazione complesse. In breve, le immagini che appartengono a un set devono essere legate insieme da un nome comune, spesso è il numero SKU o l’ID prodotto. In Dynamic Media Classic è possibile impostare una convenzione di denominazione predefinita per tutte le immagini da utilizzare per un predefinito oppure creare più predefiniti, ciascuno con regole di denominazione diverse.

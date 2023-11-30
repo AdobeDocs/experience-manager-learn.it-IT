@@ -2,13 +2,13 @@
 title: Creazione di un frammento di modulo
 description: I moduli AEM forniscono un meccanismo utile per creare segmenti di modulo una sola volta, come un pannello o un gruppo di campi, e riutilizzarli in moduli adattivi.
 feature: Adaptive Forms
-kt: 5862
+jira: KT-5862
 thumbnail: 37325.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 86a67f43-882f-4e97-b528-17492689fcfc
-source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 6%
@@ -26,7 +26,7 @@ Un frammento è una parte riutilizzabile di un modulo. Ad esempio, un frammento 
 
 Fare riferimento a [documentazione del modello di modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) per ulteriori dettagli
 
-Se necessario, puoi scaricare [Coniuge-details-fragment ](assets/spouse-details-fragment.zip) e l&#39;importazione nell&#39;AEM utilizzando [gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+Se necessario, puoi scaricare [Coniuge-details-fragment](assets/spouse-details-fragment.zip) e l&#39;importazione nell&#39;AEM utilizzando [gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 
 ## Passaggi successivi
 

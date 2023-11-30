@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6285
+jira: KT-6285
 thumbnail: 40383.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 4dea9cc4-2133-4ceb-8ced-e9b9874f6d89
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 0%
@@ -31,11 +31,11 @@ La forma più semplice di debug dei processi di lavoro Asset compute utilizza `c
 Queste istruzioni di registro sono disponibili per la revisione in modo diverso in base alla modalità di esecuzione del lavoratore Asset compute:
 
 + Da `aio app run`, registra la stampa in formato standard e [Strumenti di sviluppo](../develop/development-tool.md) Registri di attivazione
-   ![aio app esegui console.log(...)](./assets/debug/console-log__aio-app-run.png)
+  ![aio app esegui console.log(...)](./assets/debug/console-log__aio-app-run.png)
 + Da `aio app test`, registra la stampa su `/build/test-results/test-worker/test.log`
-   ![aio app test console.log(...)](./assets/debug/console-log__aio-app-test.png)
+  ![aio app test console.log(...)](./assets/debug/console-log__aio-app-test.png)
 + Utilizzo di `wskdebug`, registra le istruzioni per la stampa nella console di debug del codice VS (Visualizza > Console di debug), uscita standard
-   ![wskdebug console.log(...)](./assets/debug/console-log__wskdebug.png)
+  ![wskdebug console.log(...)](./assets/debug/console-log__wskdebug.png)
 + Utilizzo di `aio app logs`, le istruzioni di registro vengono stampate nell&#39;output del registro di attivazione
 
 ## Debugging remoto tramite il debugger collegato
@@ -100,7 +100,7 @@ _Click-through del debug di un processo di lavoro Asset compute tramite wskdebug
 1. Assicurati che [variabili di ambiente specifiche per l’area di lavoro](../deploy/runtime.md) sono impostati tramite `AIO_runtime_namespace` e `AIO_runtime_auth`, in base all&#39;area di lavoro che richiede il debug.
 1. Dalla riga di comando, esegui `aio app logs`
    + Se il traffico dell’area di lavoro è pesante, espandi il numero di registri di attivazione tramite `--limit` contrassegno:
-      `$ aio app logs --limit=25`
+     `$ aio app logs --limit=25`
 1. La più recente (fino al fornito `--limit`) i registri di attivazione vengono restituiti come output del comando per la revisione.
 
    ![registri app aio](./assets/debug/aio-app-logs.png)

@@ -3,7 +3,7 @@ title: App React - Esempio di AEM headless
 description: Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Questa applicazione React illustra come eseguire query sui contenuti che utilizzano le API GraphQL dell’AEM utilizzando query persistenti.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 10715
+jira: KT-10715
 thumbnail: KT-10715.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -12,7 +12,7 @@ level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
 badgeVersions: label="AEM headless as a Cloud Service" before-title="false"
-source-git-commit: 6f874fd3da09ce808920a7f8ea3386beda726272
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 4%
@@ -44,7 +44,7 @@ L’applicazione React funziona con le seguenti opzioni di implementazione dell�
 + Configurazione locale con [l’SDK di AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it)
    + Richiede [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
 
-L’applicazione React è progettata per connettersi a un __Pubblicazione AEM__ Tuttavia, può originare il contenuto da AEM Author se l’autenticazione viene fornita nella configurazione dell’applicazione React.
+L’applicazione React è progettata per connettersi a un __Pubblicazione AEM__ Tuttavia, se l’autenticazione viene fornita nella configurazione dell’applicazione React, può ottenere contenuti dall’istanza di authoring AEM.
 
 ## Come usare
 
@@ -210,7 +210,7 @@ query ($slug: String!, $imageFormat:AssetTransformFormat=JPG, $imageSeoName: Str
 
 ### Esegui query persistente GraphQL
 
-Le query persistenti dell’AEM vengono eseguite su HTTP GET, pertanto [Client AEM headless per JavaScript](https://github.com/adobe/aem-headless-client-js) viene utilizzato per [eseguire le query GraphQL persistenti;](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) contro l’AEM e carica il contenuto dell’avventura nell’app.
+Le query persistenti dell’AEM vengono eseguite tramite HTTP GET, pertanto [Client AEM headless per JavaScript](https://github.com/adobe/aem-headless-client-js) viene utilizzato per [eseguire le query GraphQL persistenti;](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) contro l’AEM e carica il contenuto dell’avventura nell’app.
 
 A ogni query persistente corrisponde un React [useEffect](https://reactjs.org/docs/hooks-effect.html) agganciare `src/api/usePersistedQueries.js`, che chiama in modo asincrono l’endpoint per query persistenti HTTP AEM GET e restituisce i dati relativi all’avventura.
 
@@ -292,16 +292,16 @@ L’applicazione React utilizza due visualizzazioni per presentare i dati dell�
 
 ### Variabili di ambiente
 
-Diversi [variabili di ambiente](https://create-react-app.dev/docs/adding-custom-environment-variables) sono utilizzati per connettersi a un ambiente AEM. Il valore predefinito si connette a AEM Publish in esecuzione il `http://localhost:4503`. Aggiornare il `.env.development` file, per modificare la connessione AEM:
+Diversi [variabili di ambiente](https://create-react-app.dev/docs/adding-custom-environment-variables) sono utilizzati per connettersi a un ambiente AEM. L’impostazione predefinita si connette alla pubblicazione AEM in esecuzione il `http://localhost:4503`. Aggiornare il `.env.development` file, per modificare la connessione AEM:
 
 + `REACT_APP_HOST_URI=https://publish-p123-e456.adobeaemcloud.com`: impostato sull’host di destinazione AEM
 + `REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json`: imposta il percorso dell’endpoint GraphQL. Questa app React non la utilizza, in quanto utilizza solo query persistenti.
 + `REACT_APP_AUTH_METHOD=`: metodo di autenticazione preferito. Facoltativo, per impostazione predefinita non viene utilizzata alcuna autenticazione.
    + `service-token`: utilizza le credenziali del servizio per ottenere un token di accesso su AEM as a Cloud Service
    + `dev-token`: utilizza un token di sviluppo per lo sviluppo locale su AEM as a Cloud Service
-   + `basic`: utilizza utente/passaggio per lo sviluppo locale con AEM Author locale
+   + `basic`: utilizzare user/pass per lo sviluppo locale con Autore AEM locale
    + Lascia vuoto per connetterti a AEM senza autenticazione
-+ `REACT_APP_AUTHORIZATION=admin:admin`: imposta le credenziali di autenticazione di base da utilizzare per la connessione a un ambiente AEM Author (solo per lo sviluppo). Se ci si connette a un ambiente di pubblicazione, questa impostazione non è necessaria.
++ `REACT_APP_AUTHORIZATION=admin:admin`: imposta le credenziali di autenticazione di base da utilizzare per la connessione a un ambiente di authoring AEM (solo per lo sviluppo). Se ci si connette a un ambiente di pubblicazione, questa impostazione non è necessaria.
 + `REACT_APP_DEV_TOKEN`: stringa del token di sviluppo. Per connettersi all’istanza remota, oltre all’autenticazione di base (utente:passaggio) puoi utilizzare l’autenticazione Bearer con il token DEV dalla console Cloud
 + `REACT_APP_SERVICE_TOKEN`: percorso del file delle credenziali del servizio. Per connettersi all’istanza remota, l’autenticazione può essere eseguita anche con il token di servizio (scarica il file da Console sviluppatori).
 

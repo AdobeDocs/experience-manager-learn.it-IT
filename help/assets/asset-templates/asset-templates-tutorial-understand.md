@@ -6,8 +6,9 @@ topic: Content Management
 feature: Templates
 role: User
 level: Intermediate
+doc-type: Tutorial
 exl-id: c418e94a-b18e-429a-b41c-2bf32e158598
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 1%
@@ -56,7 +57,7 @@ Questo tutorial video illustra come definire un file InDesign e tutte le conside
 >[!VIDEO](https://video.tv.adobe.com/v/19294?quality=12&learn=on)
 
 1. **Avvia InDesign Server** sulla porta 8080.
-2. Assicurati che **L’istanza di AEM Author è configurata per interagire con l’InDesign Server** e viceversa.
+2. Assicurati che **L’istanza di authoring AEM è configurata per interagire con l’InDesign Server** e viceversa.
 
    * [Configurazione Cloud Service di lavoro IDS](http://localhost:4502/etc/cloudservices/proxy/ids.html)
    * [Configurazione Cloud Service proxy cloud](http://localhost:4502/etc/cloudservices/proxy.html)

@@ -5,11 +5,12 @@ topic: Headless, SPA, Development
 feature: SPA Editor, APIs, Developing
 role: Developer, Architect
 level: Beginner
-kt: 7633
+jira: KT-7633
 thumbnail: kt-7633.jpeg
 last-substantial-update: 2022-11-01T00:00:00Z
+doc-type: Tutorial
 exl-id: b8d43e44-014c-4142-b89c-ff4824b89c78
-source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 0%
@@ -62,8 +63,8 @@ Diverse variabili di ambiente devono essere esposte all’SPA remoto in modo che
       + Questo valore cambia in base all’ambiente AEM (locale, di sviluppo, stage o produzione) e al tipo di servizio AEM (authoring vs. pubblicazione)
    + `REACT_APP_USE_PROXY`: questo evita i problemi CORS durante lo sviluppo dicendo al server di sviluppo react di proxy delle richieste AEM come `/content, /graphql, .model.json` utilizzo `http-proxy-middleware` modulo.
    + `REACT_APP_AUTH_METHOD`: metodo di autenticazione per le richieste AEM servite, le opzioni sono &quot;service-token&quot;, &quot;dev-token&quot;, &quot;basic&quot; o lascia vuoto per i casi di utilizzo senza autenticazione
-      + Richiesto per l’utilizzo con AEM Author
-      + Possibile utilizzo con AEM Publish (se il contenuto è protetto)
+      + Necessario per l’utilizzo con AEM Author
+      + Possibile utilizzo con Pubblicazione AEM (se il contenuto è protetto)
       + Lo sviluppo rispetto all’SDK dell’AEM supporta gli account locali tramite Autenticazione di base. Questo è il metodo utilizzato in questa esercitazione.
       + Durante l’integrazione con AEM as a Cloud Service, utilizzare [token di accesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
    + `REACT_APP_BASIC_AUTH_USER`: AEM __nome utente__ dall’SPA per l’autenticazione durante il recupero del contenuto AEM.
@@ -323,7 +324,7 @@ Ora che l&#39;SPA è stato avviato per l&#39;integrazione con l&#39;AEM, facciam
 
 Con l&#39;SPA in funzione [http://localhost:3000](Http://localhost:3000), apriamolo utilizzando l’Editor SPA dell’AEM. Non è ancora possibile modificare nulla nell’SPA, il che convalida solo l’SPA nell’AEM.
 
-1. Accedi ad AEM Author
+1. Accedi a AEM Author
 1. Accedi a __Sites > App WKND > us > it__
 1. Seleziona la __Home page dell’app WKND__ e tocca __Modifica__ e viene visualizzato l&#39;SPA.
 
@@ -334,7 +335,7 @@ Con l&#39;SPA in funzione [http://localhost:3000](Http://localhost:3000), apriam
 
    ![SPA in esecuzione su http://localhost:3000](./assets/spa-bootstrap/spa-editor.png)
 
-## Congratulazioni. 
+## Congratulazioni.
 
 Hai avviato l’SPA remoto affinché sia compatibile con l’Editor SPA dell’AEM. Ora sai come:
 

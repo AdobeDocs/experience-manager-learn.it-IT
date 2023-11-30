@@ -2,10 +2,7 @@
 title: Utilizzare la pipeline CI/CD in Adobe Cloud Manager
 description: Adobe Cloud Manager fornisce una pipeline CI/CD self-service semplice ma flessibile che consente ai team di progetto dell’AEM di distribuire il codice in modo rapido, sicuro e coerente in tutti gli ambienti AEM ospitati in AMS. Questa serie di video illustra la configurazione e l’esecuzione della pipeline CI/CD di Cloud Manager in scenari di errore e di successo.
 sub-product: Experience Manager Cloud Manager, Experience Manager
-topics: cicd, performance, best-practices, development, governance
-doc-type: feature video
-activity: understand
-audience: all
+doc-type: Feature Video
 topic: Architecture
 feature: Cloud Manager
 role: Developer
@@ -13,7 +10,7 @@ level: Beginner
 exl-id: d5d59ef5-9343-4ac2-9053-a010decdb9b6
 last-substantial-update: 2022-08-15T00:00:00Z
 thumbnail: cm-pipeline.jpg
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 2%

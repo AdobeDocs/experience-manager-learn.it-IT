@@ -3,15 +3,12 @@ title: Sviluppare progetti in AEM
 description: Un tutorial di sviluppo che illustra come sviluppare per i progetti AEM.  In questo tutorial verrà creato un modello di progetto personalizzato che può essere utilizzato per creare nuovi progetti in AEM per la gestione dei flussi di lavoro e delle attività di authoring dei contenuti.
 version: 6.4, 6.5
 feature: Projects, Workflow
-topics: collaboration, development, governance
-activity: develop
-audience: developer, implementer, administrator
-doc-type: tutorial
+doc-type: Tutorial
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: 481b8877e252b885da307fcf4d96f8a50f026fa6
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '4571'
 ht-degree: 1%
@@ -92,7 +89,7 @@ Uno dei motivi più interessanti per la creazione di un modello di progetto pers
 
 ## Creazione di un modello di progetto {#creating-project-template}
 
-Poiché stiamo principalmente copiando/configurando nodi, utilizzeremo CRXDE Lite. Nell’istanza AEM locale, apri [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
+Poiché stiamo principalmente copiando/configurando nodi, utilizzeremo CRXDE Liti. Nell’istanza AEM locale, apri [CRXDE Liti](http://localhost:4502/crx/de/index.jsp).
 
 1. Per iniziare, crea una nuova cartella sotto `/apps/&lt;your-app-folder&gt;` denominato `projects`. Crea un’altra cartella sotto a quella denominata `templates`.
 
@@ -179,7 +176,7 @@ Poiché stiamo principalmente copiando/configurando nodi, utilizzeremo CRXDE Lit
    ```
 
 1. Per facilitare agli autori di contenuti l’identificazione del modello di progetto, puoi aggiungere una miniatura personalizzata. La dimensione consigliata è di 319x319 pixel.
-   1. In CRXDE Lite crea un nuovo file come nodo di pari livello di gadget, ruoli e flussi di lavoro denominato **thumbnail.png**.
+   1. In CRXDE Liti crea un nuovo file come nodo di pari livello di gadget, ruoli e flussi di lavoro denominato **thumbnail.png**.
    1. Salva e quindi accedi al `jcr:content` e fare doppio clic sul pulsante `jcr:data` (evitare di fare clic su &#39;visualizza&#39;).
       1. Dovresti ricevere una modifica `jcr:data` e puoi caricare una miniatura personalizzata.
 
@@ -261,7 +258,7 @@ Ora possiamo testare il nostro modello di progetto creando un nuovo progetto.
 
 1. Fai clic su Crea per completare la creazione del progetto basato sul modello personalizzato. Noterai nella dashboard del progetto che la sezione Attività e le altre tessere configurate in gadget vengono visualizzate automaticamente.
 
-   ![Sezione attività](./assets/develop-aem-projects/tasks-tile.png)
+   ![Riquadro Attività](./assets/develop-aem-projects/tasks-tile.png)
 
 
 ## Perché Workflow?
@@ -312,7 +309,7 @@ L’ultimo passaggio del flusso di lavoro utilizza il passaggio del processo di 
 
    Per ulteriori informazioni relative a [creazione di flussi di lavoro leggi qui](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-models.html).
 
-1. Come best practice, i flussi di lavoro personalizzati devono essere raggruppati in una cartella separata sotto /etc/workflow/models. In CRXDE Lite crea un nuovo **&#39;nt:folder&#39;** sotto /etc/workflow/models denominato **&quot;aem-guides&quot;**. L’aggiunta di una sottocartella assicura che i flussi di lavoro personalizzati non vengano accidentalmente sovrascritti durante gli aggiornamenti o le installazioni di Service Pack.
+1. Come best practice, i flussi di lavoro personalizzati devono essere raggruppati in una cartella separata sotto /etc/workflow/models. In CRXDE Liti crea un nuovo **&#39;nt:folder&#39;** sotto /etc/workflow/models denominato **&quot;aem-guides&quot;**. L’aggiunta di una sottocartella assicura che i flussi di lavoro personalizzati non vengano accidentalmente sovrascritti durante gli aggiornamenti o le installazioni di Service Pack.
 
    &#42;Tieni presente che è importante non posizionare mai la cartella o i flussi di lavoro personalizzati sotto le sottocartelle ootb come /etc/workflow/models/dam o /etc/workflow/models/projects, in quanto anche l’intera sottocartella potrebbe essere sovrascritta da aggiornamenti o service pack.
 
@@ -331,7 +328,7 @@ Posizione del modello di flusso di lavoro in 6.4+
 
 1. Introdotta in AEM 6.3 è la possibilità di aggiungere Fasi del flusso di lavoro a un determinato flusso di lavoro. Le fasi vengono visualizzate dall&#39;utente nella casella Posta in arrivo della scheda Informazioni flusso di lavoro. Mostrerà all’utente la fase corrente del flusso di lavoro e le fasi precedenti e successive.
 
-   Per configurare le fasi, apri la finestra di dialogo Proprietà pagina dalla barra laterale. La quarta scheda è etichettata &quot;Stadi&quot;. Aggiungi i seguenti valori per configurare le tre fasi di questo flusso di lavoro:
+   Per configurare le fasi, apri la finestra di dialogo Proprietà pagina dal Sidekick. La quarta scheda è etichettata &quot;Stadi&quot;. Aggiungi i seguenti valori per configurare le tre fasi di questo flusso di lavoro:
 
    1. Modifica contenuto
    1. Approvazione
@@ -349,7 +346,7 @@ Posizione del modello di flusso di lavoro in 6.4+
 
 1. Il processo di flusso di lavoro Crea attività progetto è progettato per creare un’attività come passaggio nel flusso di lavoro. Solo dopo aver completato l’attività il flusso di lavoro proseguirà. Un aspetto importante del passaggio Crea attività progetto è che può leggere i valori dei metadati del flusso di lavoro e utilizzarli per creare l’attività in modo dinamico.
 
-   Elimina innanzitutto il Passaggio partecipante creato per impostazione predefinita. Dalla barra laterale nel menu dei componenti, espandi la sezione **&quot;Progetti&quot;** sottotitolo e trascina i tasti **&quot;Crea attività progetto&quot;** sul modello.
+   Elimina innanzitutto il Passaggio partecipante creato per impostazione predefinita. Dal Sidekick nel menu dei componenti, espandi il **&quot;Progetti&quot;** sottotitolo e trascina i tasti **&quot;Crea attività progetto&quot;** sul modello.
 
    Fai doppio clic sul passaggio &quot;Crea attività progetto&quot; per aprire la finestra di dialogo del flusso di lavoro. Configura le seguenti proprietà:
 
@@ -418,7 +415,7 @@ Posizione del modello di flusso di lavoro in 6.4+
    task.setProperty("taskPriority", taskPriority);
    ```
 
-1. Torna al flusso di lavoro di approvazione dei contenuti. Trascina la selezione **Suddivisione O** componente (che si trova nella barra laterale sotto la categoria &quot;Flusso di lavoro&quot;) sotto **Avvia attività** Passaggio. Nella finestra di dialogo Comune, seleziona il pulsante di opzione per 3 rami. La suddivisione O leggerà il valore dei metadati del flusso di lavoro **&quot;lastTaskAction&quot;** per determinare il percorso del flusso di lavoro. Il **&quot;lastTaskAction&quot;** è impostata su uno dei valori della scheda Indirizzamento configurata nel passaggio 4. Per ciascuna scheda Ramo, compila **Script** area di testo con i seguenti valori:
+1. Torna al flusso di lavoro di approvazione dei contenuti. Trascina la selezione **Suddivisione O** componente (che si trova nel Sidekick sotto la categoria &quot;Flusso di lavoro&quot;) sotto **Avvia attività** Passaggio. Nella finestra di dialogo Comune, seleziona il pulsante di opzione per 3 rami. La suddivisione O leggerà il valore dei metadati del flusso di lavoro **&quot;lastTaskAction&quot;** per determinare il percorso del flusso di lavoro. Il **&quot;lastTaskAction&quot;** è impostata su uno dei valori della scheda Indirizzamento configurata nel passaggio 4. Per ciascuna scheda Ramo, compila **Script** area di testo con i seguenti valori:
 
    ```
    function check() {
@@ -541,7 +538,7 @@ task.setCurrentAssignee(projectApproverGrp);
 
 1. Poiché il gruppo Approvatori ha la possibilità di inviare nuovamente il flusso di lavoro all’editor originale per ulteriori revisioni, ci baseremo su **Vai a** passaggio per leggere l’ultima azione eseguita e instradare il flusso di lavoro all’inizio o lasciarlo continuare.
 
-   Trascina il componente Vai al passaggio (che si trova nella barra laterale in Flusso di lavoro) sotto la divisione O dove si unisce di nuovo. Fai doppio clic su e configura le seguenti proprietà nella finestra di dialogo:
+   Trascina + rilascia il componente Passaggio a (che si trova nel Sidekick sotto Flusso di lavoro) sotto la divisione O dove si unisce di nuovo. Fai doppio clic su e configura le seguenti proprietà nella finestra di dialogo:
 
    ```
    Common Tab
@@ -574,7 +571,7 @@ task.setCurrentAssignee(projectApproverGrp);
 
 1. Per pubblicare il payload utilizzeremo l’ootb **Attiva pagina/risorsa** Passaggio del processo. Questo passaggio del processo richiede una configurazione ridotta e aggiungerà il payload del flusso di lavoro alla coda di replica per l’attivazione. Il passaggio successivo al passaggio Vai a verrà aggiunto e potrà essere raggiunto solo se il gruppo di approvatori ha approvato il contenuto per la pubblicazione o se l’editor originale ha scelto il percorso Ignora approvazione.
 
-   Trascina la selezione **Attiva pagina/risorsa** Passaggio del processo (disponibile nella barra laterale in Flusso di lavoro WCM) sotto il Passaggio vai a nel modello.
+   Trascina la selezione **Attiva pagina/risorsa** Passaggio del processo (presente nel Sidekick in Flusso di lavoro WCM) sotto il Passaggio vai a nel modello.
 
    ![modello flusso di lavoro completato](assets/develop-aem-projects/workflow-model-final.png)
 

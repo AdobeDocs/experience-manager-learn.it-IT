@@ -1,14 +1,14 @@
 ---
 title: Creazione di un progetto Asset compute per l'estensibilità Asset compute
 description: I progetti Asset compute sono progetti Node.js, generati utilizzando Adobe I/O CLI, che aderiscono a una determinata struttura che consente di distribuirli in Adobe I/O Runtime e integrarli con AEM as a Cloud Service.
-kt: 6269
+jira: KT-6269
 thumbnail: 40197.jpg
 topic: Integrations, Development
 feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
 exl-id: ebb11eab-1412-4af5-bc09-e965b9116ac9
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 2%
@@ -59,9 +59,8 @@ Lo strumento per sviluppatori richiede un file denominato `console.json` che con
    + Spostala in una cartella arbitraria E fai riferimento a tale cartella dal tuo `.env` file con una voce di configurazione `ASSET_COMPUTE_INTEGRATION_FILE_PATH`. Il percorso del file può essere assoluto o relativo alla directory principale del progetto. Ad esempio:
       + `ASSET_COMPUTE_INTEGRATION_FILE_PATH=/Users/example-user/secrets/wkndAemAssetCompute-81368-Development.json`
 
-      Oppure
+     Oppure
       + `ASSET_COMPUTE_INTEGRATION_FILE_PATH=../../secrets/wkndAemAssetCompute-81368-Development.json.json`
-
 
 > NOTA
 > Il file contiene le credenziali. Se memorizzi il file all’interno del progetto, assicurati di aggiungerlo al tuo `.gitignore` per impedire la condivisione. Lo stesso vale per `.env` file — questi file di credenziali non devono essere condivisi o archiviati in Git.

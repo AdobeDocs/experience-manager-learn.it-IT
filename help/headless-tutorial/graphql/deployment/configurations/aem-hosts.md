@@ -6,10 +6,10 @@ feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
 level: Intermediate
-kt: 10831
+jira: KT-10831
 thumbnail: KT-10831.jpg
 exl-id: a932147c-2245-4488-ba1a-99c58045ee2b
-source-git-commit: ec2609ed256ebe6cdd7935f3e8d476c1ff53b500
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1669'
 ht-degree: 1%
@@ -469,7 +469,7 @@ struct AdventureListItemView: View {
 ...
 ```
 
-[È possibile creare nuovi file di configurazione della build](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project?changes=l_3) per connettersi a diversi servizi dell’AEM. I valori specifici della build per `AEM_SCHEME` e `AEM_HOST` vengono utilizzati in base alla build selezionata in XCode, consentendo al client AEM headless personalizzato di interagire con il servizio AEM corretto.
+[È possibile creare nuovi file di configurazione della build](https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project?changes=l_3) per connettersi a diversi servizi dell’AEM. I valori specifici della build per `AEM_SCHEME` e `AEM_HOST` vengono utilizzati in base alla build selezionata in XCode, con conseguente client AEM Headless personalizzato per interagire con il servizio AEM corretto.
 
 +++
 

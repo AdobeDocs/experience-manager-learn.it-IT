@@ -6,10 +6,10 @@ topic: Headless
 feature: GraphQL API
 role: Developer
 level: Intermediate
-kt: 11614
+jira: KT-11614
 thumbnail: KT-10253.jpeg
 exl-id: 04fcc24c-7433-4443-a109-f01840ef1a89
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 25%
@@ -33,7 +33,7 @@ In AEM 6.5 lo strumento IDE GraphiQL deve essere installato manualmente.
 
    ![Installare il pacchetto GraphiQL](assets/graphiql/install-graphiql-package.png)
 
-1. Accedi a **CRXDE Lite** > **Pannello archivio** > seleziona `/content/graphiql` nodo (ad esempio, <http://localhost:4502/crx/de/index.jsp#/content/graphiql>).
+1. Accedi a **CRXDE Liti** > **Pannello archivio** > seleziona `/content/graphiql` nodo (ad esempio, <http://localhost:4502/crx/de/index.jsp#/content/graphiql>).
 1. In **Proprietà** valore di modifica scheda di `endpoint` proprietà a `/content/_cq_graphql/wknd-shared/endpoint.json`.
    ![Modifica valore proprietà endpoint](assets/graphiql/endpoint-prop-value-change.png)
 

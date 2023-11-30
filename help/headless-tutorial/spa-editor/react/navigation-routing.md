@@ -6,13 +6,14 @@ topics: development
 version: Cloud Service
 activity: develop
 audience: developer
-kt: 4988
+jira: KT-4988
 thumbnail: 4988-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1621'
 ht-degree: 0%
@@ -118,7 +119,7 @@ Quindi, crea ulteriori pagine in AEM che fungeranno da diverse visualizzazioni n
 
    ![Osservare le richieste di rete](assets/navigation-routing/inspect-network-requests.png)
 
-   Dopo il caricamento della pagina iniziale, la navigazione successiva non causa un aggiornamento dell’intera pagina e il traffico di rete viene ridotto al minimo quando si torna alle pagine visitate in precedenza.
+   Dopo il caricamento della pagina iniziale, la navigazione successiva non provocherà un aggiornamento dell’intera pagina e il traffico di rete verrà ridotto al minimo quando si tornerà alle pagine visitate in precedenza.
 
 ## Modello JSON per pagina gerarchia {#hierarchy-page-json-model}
 
@@ -238,7 +239,7 @@ Successivamente, verificare come React Router è integrato con l&#39;SPA ed eseg
    });
    ```
 
-   Tieni presente che `App` è racchiuso in `Router` componente da [Router React](https://reacttraining.com/react-router). Il `ModelManager`, fornito dall’SDK JS per l’editor di SPA dell’AEM, aggiunge le route dinamiche alle pagine AEM in base all’API del modello JSON.
+   Tieni presente che `App` è racchiuso in `Router` componente da [Router React](https://reacttraining.com/react-router). Il `ModelManager`, fornito dall’SDK JS per l’editor SPA dell’AEM, aggiunge le route dinamiche alle pagine AEM in base all’API del modello JSON.
 
 1. Apri il file `Page.js` a `ui.frontend/src/components/Page/Page.js`
 
@@ -325,6 +326,6 @@ Successivamente, verificare come React Router è integrato con l&#39;SPA ed eseg
 
    Questo può aiutare a illustrare la differenza tra il routing dell’SPA e i normali collegamenti alle pagine web.
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Congratulazioni, hai imparato come supportare più visualizzazioni nell’SPA mappando le pagine AEM con l’SDK dell’editor SPA. La navigazione dinamica è stata implementata utilizzando React Router e aggiunta al `Header` componente.

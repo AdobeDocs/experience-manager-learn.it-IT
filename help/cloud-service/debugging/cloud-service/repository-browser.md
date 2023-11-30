@@ -7,13 +7,13 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 10004
+jira: KT-10004
 thumbnail: 341464.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 88af40fc-deff-4b92-84b1-88df2dbdd90b
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Il Browser dell’archivio è un potente strumento che fornisce visibilità all�
 
 >[!VIDEO](https://video.tv.adobe.com/v/341464?quality=12&learn=on)
 
-Il browser dell’archivio è __SOLO__ disponibile in ambienti AEM as a Cloud Service (usare [CRXDE Lite](../aem-sdk-local-quickstart/other-tools.md#crxde-lite) per eseguire il debug dell’SDK AEM locale).
+Il browser dell’archivio è __SOLO__ disponibile in ambienti AEM as a Cloud Service (usare [CRXDE Liti](../aem-sdk-local-quickstart/other-tools.md#crxde-lite) per eseguire il debug dell’SDK AEM locale).
 
 ## Accesso al browser dell’archivio
 

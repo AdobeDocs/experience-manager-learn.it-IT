@@ -7,8 +7,9 @@ topic: Content Management
 role: User
 level: Beginner
 last-substantial-update: 2022-06-26T00:00:00Z
+doc-type: Feature Video
 exl-id: a3c3a01e-97a6-494f-b7a9-22057e91f4eb
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 3%
@@ -92,9 +93,9 @@ AEM 6.4.2 consente agli utenti di cercare, visualizzare in anteprima, salvare e 
 
 ![Account tecnico Adobe IMS](assets/screen_shot_2018-10-22at12219pm.png)
 
-#### Configurare i Cloud Services Adobe Stock {#set-up-adobe-stock-cloud-services}
+#### Configurare i Cloud Service Adobe Stock {#set-up-adobe-stock-cloud-services}
 
-1. Creare una nuova configurazione del servizio cloud per Adobe Stock in **Strumenti > Cloud Services.**
+1. Creare una nuova configurazione del servizio cloud per Adobe Stock in **Strumenti > Cloud Service.**
 2. Seleziona la *Configurazione Adobe IMS* creato nella sezione precedente per *Adobe Stock Cloud* configurazione
 
 3. Assicurati di selezionare **AMBIENTE** as PROD.

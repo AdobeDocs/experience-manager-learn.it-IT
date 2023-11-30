@@ -2,15 +2,12 @@
 title: Ritaglio, immagini regolate e destinazioni di zoom
 description: L’immagine master di Dynamic Media Classic supporta la creazione di versioni ritagliate separate di ogni immagine per mostrare i dettagli o per i campioni senza dover creare versioni ritagliate separate di ogni immagine. Scopri come ritagliare le immagini in Dynamic Media Classic e salvarle come nuovo file principale o immagine virtuale, salvare le immagini regolate virtuali e utilizzarle al posto delle risorse principali, nonché creare destinazioni di zoom sulle immagini per mostrare i dettagli evidenziati.
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: a1d83c77-a9e4-4ed1-9b00-65fb002164c0
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2653'
 ht-degree: 0%
@@ -45,7 +42,7 @@ Dynamic Media Classic dispone di alcuni strumenti di modifica delle immagini con
 Puoi accedere allo strumento di ritaglio in Dynamic Media Classic dalla pagina Dettagli di una risorsa o facendo clic sul pulsante **Modifica** pulsante. È possibile utilizzare lo strumento per ritagliare in due modi:
 
 - Modalità di ritaglio predefinita in cui vengono trascinati i quadratini di ridimensionamento della finestra di ritaglio o i valori nella casella Dimensione. Scopri come [Ritaglio manuale](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
-- Rifila. Usate questa opzione per rimuovere spazio vuoto aggiuntivo attorno all&#39;immagine calcolando il numero di pixel che non corrispondono all&#39;immagine. Scopri come [Ritaglio per ritaglio](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
+- Taglio. Usate questa opzione per rimuovere spazio vuoto aggiuntivo attorno all&#39;immagine calcolando il numero di pixel che non corrispondono all&#39;immagine. Scopri come [Ritaglio per ritaglio](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
 
 ### _Ritaglio manuale_
 
@@ -158,7 +155,7 @@ Questo è il flusso di lavoro per la creazione di destinazioni in Dynamic Media 
    - L&#39;immagine verrà caricata nel visualizzatore zoom personalizzato predefinito. Assicurati che il predefinito visualizzatore supporti le destinazioni di zoom: in generale, tutti i predefiniti standard con la parola &quot;Guidato&quot; sono stati progettati per essere utilizzati con le destinazioni di zoom. Per utilizzare le destinazioni, passa il cursore del mouse sulla miniatura di destinazione (o sull’icona del punto attivo) per visualizzare l’etichetta, quindi fai clic su di essa per visualizzare il visualizzatore che ingrandisce tale funzione.
    - Come per tutti gli altri lavori che esegui in Dynamic Media Classic, devi pubblicare per far sì che le destinazioni di zoom siano live sul web. Se utilizzi già un visualizzatore che supporta le destinazioni, queste verranno visualizzate immediatamente (una volta cancellata la cache). Tuttavia, se non utilizzi un visualizzatore abilitato per Zoom Target, questo rimarrà nascosto.
 
-      ![immagine](assets/crop-adjusted-zoom-targets/zoom-target-green-box.jpg)
+     ![immagine](assets/crop-adjusted-zoom-targets/zoom-target-green-box.jpg)
 
 7. Inoltre, se è necessario rimuovere una destinazione, selezionarla facendo clic sulla relativa miniatura e premere il tasto **Elimina destinazione** o premere il tasto DELETE sulla tastiera.
 8. Continua a fare clic su per aggiungere nuove destinazioni, rinominare e/o ridimensionare dopo l’aggiunta.
@@ -176,7 +173,7 @@ Quando caricate lo strumento Destinazione zoom, la dimensione della vista viene 
 
 ![immagine](assets/crop-adjusted-zoom-targets/view-size.jpg)
 
-Potete vedere che il predefinito incorporato ha una dimensione di 900 x 550, il che significa che la destinazione non può mai ottenere più piccolo di quella piuttosto grande. È probabilmente troppo grande — se avete un&#39;immagine di 2000 pixel, potete chiamare solo una funzione che è larga almeno 900 pixel. L’utente può eseguire manualmente lo zoom avanti, ma non puoi guidarli più da vicino. Impostando una dimensione di visualizzazione a 350 x 350, le destinazioni possono ingrandirsi o ingrandirsi. Tuttavia, se nel visualizzatore desiderate un&#39;immagine con zoom più grande, dovrete creare un nuovo predefinito perché il vostro è bloccato a 350 pixel.
+Potete vedere che il predefinito incorporato ha una dimensione di 900 x 550, il che significa che la destinazione non può mai ottenere più piccolo di quella piuttosto grande. Probabilmente è troppo grande — se avete un&#39;immagine di 2000 pixel, potete chiamare solo una caratteristica che è almeno di 900 pixel. L’utente può eseguire manualmente lo zoom avanti, ma non puoi guidarli più da vicino. Impostando una dimensione di visualizzazione a 350 x 350, le destinazioni possono ingrandirsi o ingrandirsi. Tuttavia, se nel visualizzatore desiderate un&#39;immagine con zoom più grande, dovete creare un nuovo predefinito perché il vostro è bloccato a 350 pixel.
 
 ### Creazione o modifica di un predefinito visualizzatore che supporta le destinazioni di zoom
 

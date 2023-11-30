@@ -2,13 +2,13 @@
 title: Video e tutorial su Adobe Experience Manager as a Cloud Service
 description: Una raccolta di tutorial per Adobe Experience Manager (AEM) as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
-kt: 3289
+jira: KT-3289
 last-substantial-update: 2023-09-26T00:00:00Z
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 11%
+ht-degree: 14%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager (AEM) ora è disponibile as a Cloud Service. AEM as a C
 
 ## Novità
 
-* **[Protezione dei siti Web con regole per il filtro del traffico, incluse le regole WAF (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)**
+* **[Protezione dei siti Web con regole per il filtro del traffico, incluse le regole WAF (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=it)**
   *Scopri come utilizzare le regole del filtro del traffico, incluse le regole WAF, per proteggere i siti web*
 
 * **[Autenticazione basata su token (tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**

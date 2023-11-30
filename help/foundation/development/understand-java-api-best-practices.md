@@ -6,10 +6,11 @@ feature: APIs
 topic: Development
 role: Developer
 level: Beginner
+doc-type: Article
 exl-id: b613aa65-f64b-4851-a2af-52e28271ce88
 last-substantial-update: 2022-06-24T00:00:00Z
 thumbnail: aem-java-bp.jpg
-source-git-commit: a156877ff4439ad21fb79f231d273b8983924199
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '2079'
 ht-degree: 2%
@@ -102,6 +103,7 @@ L’API preferita è [Generatore di query AEM](https://experienceleague.adobe.co
 >[!CAUTION]
 >
 >L’API QueryBuilder di AEM genera perdite in un oggetto ResourceResolver. Per limitare questa perdita, segui questa procedura [esempio di codice](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/search/querybuilder/impl/SampleQueryBuilder.java#L164).
+>
 
 ## [!DNL Sling] API
 
@@ -167,7 +169,7 @@ Anche se JCR è un archivio di contenuti AEM, le sue API NON sono il metodo pref
 
 Vi è poca sovrapposizione tra le API OSGi e le API di livello superiore (AEM, [!DNL Sling]e JCR) e la necessità di utilizzare le API OSGi è rara e richiede un elevato livello di esperienza nello sviluppo dell’AEM.
 
-### API OSGi e Apache Felix
+### Confronto tra API OSGi e Apache Felix
 
 OSGi definisce una specifica che tutti i contenitori OSGi devono implementare e rispettare. L’implementazione OSGi dell’AEM, Apache Felix, fornisce anche diverse API proprie.
 
@@ -195,7 +197,7 @@ Inoltre, tieni presente che la definizione del nodo di configurazione OSGi prefe
 
 ### API di AEM Asset
 
-* Preferisci [ `com.day.cq.dam.api`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/dam/api/package-summary.html) oltre [ `com.adobe.granite.asset.api`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/asset/api/package-summary.html).
+* Preferisci [`com.day.cq.dam.api`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/dam/api/package-summary.html) oltre [`com.adobe.granite.asset.api`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/asset/api/package-summary.html).
 
    * Mentre il `com.day.cq` Le API Assets forniscono strumenti complementari per i casi d’uso della gestione delle risorse AEM.
    * Le API di Granite Assets supportano casi d’uso di basso livello per la gestione delle risorse (versione, relazioni).

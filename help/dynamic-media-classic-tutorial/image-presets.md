@@ -2,15 +2,12 @@
 title: Predefiniti immagini
 description: I predefiniti per immagini in Dynamic Media Classic contengono tutte le impostazioni necessarie per creare un'immagine con dimensioni, formato, qualità e nitidezza specifici. I predefiniti per immagini sono un componente chiave del dimensionamento dinamico. Quando osservi un URL in Dynamic Media Classic, puoi facilmente vedere se è in uso un predefinito immagine. Scopri i predefiniti per immagini, perché sono così utili e come crearne uno.
 feature: Dynamic Media Classic, Image Presets
-doc-type: tutorial
-topics: development, authoring, configuring
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: e472db7c-ac3f-4f66-85af-5a4c68ba609e
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 1%

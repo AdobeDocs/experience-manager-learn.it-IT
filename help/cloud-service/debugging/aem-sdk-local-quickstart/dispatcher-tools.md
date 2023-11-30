@@ -1,13 +1,13 @@
 ---
 title: Strumenti di debug di Dispatcher
-description: Gli strumenti di Dispatcher forniscono un ambiente Apache Web Server containerizzato che può essere utilizzato per simulare in locale Dispatcher del servizio di pubblicazione AEM di AEM as a Cloud Services. Il debug dei registri e dei contenuti della cache degli strumenti di Dispatcher può essere fondamentale per garantire la correttezza dell’applicazione AEM end-to-end e delle configurazioni di cache e sicurezza di supporto.
+description: Gli strumenti di Dispatcher forniscono un ambiente Apache Web Server containerizzato che può essere utilizzato per simulare in locale Dispatcher del servizio di pubblicazione AEM di AEM as a Cloud Service. Il debug dei registri e dei contenuti della cache degli strumenti di Dispatcher può essere fondamentale per garantire la correttezza dell’applicazione AEM end-to-end e delle configurazioni di cache e sicurezza di supporto.
 feature: Dispatcher
-kt: 5918
+jira: KT-5918
 topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: f0adf7a6-c7c2-449a-9fa5-402c54b812e5
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Strumenti di debug di Dispatcher
 
-Gli strumenti di Dispatcher forniscono un ambiente Apache Web Server containerizzato che può essere utilizzato per simulare in locale Dispatcher del servizio di pubblicazione AEM di AEM as a Cloud Services.
+Gli strumenti di Dispatcher forniscono un ambiente Apache Web Server containerizzato che può essere utilizzato per simulare in locale Dispatcher del servizio di pubblicazione AEM di AEM as a Cloud Service.
 
 Il debug dei registri e dei contenuti della cache degli strumenti di Dispatcher può essere fondamentale per garantire la correttezza dell’applicazione AEM end-to-end e delle configurazioni di cache e sicurezza di supporto.
 

@@ -7,9 +7,9 @@ level: Beginner, Intermediate
 version: Cloud Service
 feature: Adaptive Forms
 topic: Development
-kt: 9980
+jira: KT-9980
 exl-id: 4c5173f1-d57d-43ac-83e6-399ce4ead203
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Credenziali servizio
 
-Le integrazioni con AEM as a Cloud Service devono essere in grado di autenticarsi in modo sicuro nell’AEM. La Console per sviluppatori dell’AEM genera le Credenziali di servizio, utilizzate da applicazioni, sistemi e servizi esterni per interagire in modo programmatico con i servizi AEM Author o Publish tramite HTTP.
+Le integrazioni con AEM as a Cloud Service devono essere in grado di autenticarsi in modo sicuro nell’AEM. La Console per sviluppatori dell’AEM genera le Credenziali di servizio, che vengono utilizzate da applicazioni, sistemi e servizi esterni per interagire in modo programmatico con i servizi di creazione o pubblicazione dell’AEM su HTTP.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 

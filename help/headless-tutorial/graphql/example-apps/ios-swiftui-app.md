@@ -3,7 +3,7 @@ title: App iOS - Esempio di AEM headless
 description: Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Questa applicazione iOS illustra come eseguire query sui contenuti che utilizzano le API GraphQL dell’AEM utilizzando query persistenti.
 version: Cloud Service
 mini-toc-levels: 2
-kt: 10587
+jira: KT-10587
 thumbnail: KT-10587.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -12,7 +12,7 @@ level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM headless as a Cloud Service" before-title="false"
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: 3e4960bf2d243e33fb9f36fd3fbb45f57260229a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 3%
@@ -52,7 +52,7 @@ L’applicazione iOS è progettata per connettersi a un __Pubblicazione AEM__ Tu
    ```
 
 1. Launch [Xcode](https://developer.apple.com/xcode/) e apri la cartella `ios-app`
-1. Modificare il file `Config.xcconfig` file e aggiornamento `AEM_SCHEME` e `AEM_HOST` affinché corrisponda al servizio AEM Publish di destinazione.
+1. Modificare il file `Config.xcconfig` file e aggiornamento `AEM_SCHEME` e `AEM_HOST` affinché corrisponda al servizio di pubblicazione AEM di destinazione.
 
    ```plain
    // The http/https protocol scheme used to access the AEM_HOST
@@ -61,7 +61,7 @@ L’applicazione iOS è progettata per connettersi a un __Pubblicazione AEM__ Tu
    AEM_HOST = publish-p123-e456.adobeaemcloud.com
    ```
 
-   Se ti connetti ad AEM Author, aggiungi `AEM_AUTH_TYPE` e il supporto delle proprietà di autenticazione `Config.xcconfig`.
+   Se ti connetti a AEM Author, aggiungi `AEM_AUTH_TYPE` e il supporto delle proprietà di autenticazione `Config.xcconfig`.
 
    __Autenticazione di base__
 

@@ -1,15 +1,13 @@
 ---
 title: Tutorial sulle best practice per Dynamic Media Classic
 description: Dynamic Media Classic è l’hub attorno al quale i clienti creano, creano e distribuiscono contenuti rich media. Questo tutorial sulle best practice è stato creato per aiutare gli utenti nuovi e attuali di Dynamic Media Classic a comprendere meglio cosa possono fare con questa potente soluzione rich media di Adobe. In questa sezione imparerai cos’è Dynamic Media Classic e ne vedrai le funzionalità di base e l’interfaccia utente.
-doc-type: tutorial
-audience: all
-activity: develop, use
 feature: Dynamic Media Classic
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 975b85af-ca6a-419e-ab2a-6e1781bfee4a
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 0%

@@ -1,16 +1,16 @@
 ---
 title: Configurazione rapida AEM headless tramite SDK AEM locale
-description: Introduzione ad Adobe Experience Manager (AEM) e GraphQL. Installa l’SDK dell’AEM, aggiungi contenuti di esempio e distribuisci un’applicazione che utilizzi contenuti dell’AEM utilizzando le API GraphQL. Scopri come l’AEM potenzia le esperienze omni-channel.
+description: Introduzione a Adobe Experience Manager (AEM) e GraphQL. Installa l’SDK dell’AEM, aggiungi contenuti di esempio e distribuisci un’applicazione che utilizzi contenuti dell’AEM utilizzando le API GraphQL. Scopri come l’AEM potenzia le esperienze omni-channel.
 version: Cloud Service
 mini-toc-levels: 1
-kt: 6386
+jira: KT-6386
 thumbnail: KT-6386.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1257'
 ht-degree: 2%
@@ -120,7 +120,7 @@ Uno degli obiettivi di questo tutorial è mostrare come utilizzare contenuti AEM
    REACT_APP_AUTHORIZATION=admin:admin
    ```
 
-   Assicurare `REACT_APP_HOST_URI` punta all’SDK dell’AEM locale. Per comodità, questo avvio rapido collega l’app React a  **Autore AEM**. **Autore** richiedono l&#39;autenticazione, pertanto l&#39;app utilizza `admin` per stabilire la connessione. La connessione di un’app ad AEM Author è una pratica comune durante lo sviluppo, in quanto facilita la rapida iterazione del contenuto senza la necessità di pubblicare modifiche.
+   Assicurare `REACT_APP_HOST_URI` punta all’SDK dell’AEM locale. Per comodità, questo avvio rapido collega l’app React a  **Autore AEM**. **Autore** richiedono l&#39;autenticazione, pertanto l&#39;app utilizza `admin` per stabilire la connessione. La connessione di un’app all’istanza di authoring dell’AEM è una pratica comune durante lo sviluppo, in quanto facilita la rapida iterazione dei contenuti senza la necessità di pubblicare modifiche.
 
    >[!NOTE]
    >
@@ -177,7 +177,7 @@ Quando l’app React è in esecuzione, aggiorna i contenuti dell’AEM e osserva
    >
    > Lo strumento GraphiQL e l’API GraphQL sono [approfondimento più avanti nell’esercitazione](../multi-step/explore-graphql-api.md).
 
-## Congratulazioni. {#congratulations}
+## Congratulazioni.{#congratulations}
 
 Congratulazioni, ora disponi di un’applicazione esterna che utilizza contenuti AEM con GraphQL. Puoi controllare il codice nell’app React e continuare a sperimentare la modifica dei frammenti di contenuto esistenti.
 

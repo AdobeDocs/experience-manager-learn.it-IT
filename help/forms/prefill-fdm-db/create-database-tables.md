@@ -3,13 +3,13 @@ title: Creare tabelle di database
 description: Crea database da utilizzare per il modello dati modulo
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 5811
+jira: KT-5811
 thumbnail: kt-5811.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 1136244a-c3e6-45f6-8af8-eb3c100f838e
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 1%
@@ -22,12 +22,12 @@ Il modello dati del modulo può essere basato su origini RDBMS, RESTfull, SOAP o
 
 * **newhire** tabella: in questa tabella vengono memorizzate le nuove informazioni
 
-   ![newhire](assets/newhire-table.png)
+  ![newhire](assets/newhire-table.png)
 
 
 * **beneficiari** tabella: in questa tabella vengono memorizzati i beneficiari
 
-   ![beneficiari](assets/beneficiaries-table.png)
+  ![beneficiari](assets/beneficiaries-table.png)
 
 È possibile importare [file sql](assets/db-schema.sql) utilizzo di MySQL Workbench per creare tabelle con alcuni dati di esempio.
 

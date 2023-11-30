@@ -2,17 +2,17 @@
 title: Rivedi il modulo ui.frontend del progetto full stack
 description: Rivedi il ciclo di sviluppo, distribuzione e durata di consegna front-end di un progetto AEM Sites full-stack basato su Maven.
 version: Cloud Service
-type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
 level: Intermediate
-kt: 10689
+jira: KT-10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: 65e8d41e-002a-4d80-a050-5366e9ebbdea
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 4%
@@ -70,41 +70,41 @@ Le risorse front-end vengono distribuite ai browser web tramite percorsi URI che
 
    1. `webpack.common` - Contiene __comune__ per istruire il bundling e l’ottimizzazione delle risorse WKND. Il __output__ indica dove emettere i file consolidati (noti anche come bundle JavaScript, ma da non confondere con i bundle OSGi dell’AEM) che crea. Il nome predefinito è impostato su `clientlib-site/js/[name].bundle.js`.
 
-   ```javascript
-       ...
-       output: {
-               filename: 'clientlib-site/js/[name].bundle.js',
-               path: path.resolve(__dirname, 'dist')
-           }
-       ...    
-   ```
+  ```javascript
+      ...
+      output: {
+              filename: 'clientlib-site/js/[name].bundle.js',
+              path: path.resolve(__dirname, 'dist')
+          }
+      ...    
+  ```
 
    1. `webpack.dev.js` contiene __sviluppo__ configurazione per webpack-dev-server e punta al modello HTML da utilizzare. Contiene anche una configurazione proxy a un’istanza di AEM in esecuzione su `localhost:4502`.
 
-   ```javascript
-       ...
-       devServer: {
-           proxy: [{
-               context: ['/content', '/etc.clientlibs', '/libs'],
-               target: 'http://localhost:4502',
-           }],
-       ...    
-   ```
+  ```javascript
+      ...
+      devServer: {
+          proxy: [{
+              context: ['/content', '/etc.clientlibs', '/libs'],
+              target: 'http://localhost:4502',
+          }],
+      ...    
+  ```
 
    1. `webpack.prod.js` contiene __produzione__ e utilizza i plug-in per trasformare i file di sviluppo in bundle ottimizzati.
 
-   ```javascript
-       ...
-       module.exports = merge(common, {
-           mode: 'production',
-           optimization: {
-               minimize: true,
-               minimizer: [
-                   new TerserPlugin(),
-                   new CssMinimizerPlugin({ ...})
-           }
-       ...    
-   ```
+  ```javascript
+      ...
+      module.exports = merge(common, {
+          mode: 'production',
+          optimization: {
+              minimize: true,
+              minimizer: [
+                  new TerserPlugin(),
+                  new CssMinimizerPlugin({ ...})
+          }
+      ...    
+  ```
 
 
 * Le risorse in bundle vengono spostate in `ui.apps` modulo che utilizza [aem-clientlib-generator](https://www.npmjs.com/package/aem-clientlib-generator) , utilizzando la configurazione gestita in `clientlib.config.js` file.
@@ -150,7 +150,7 @@ Le risorse front-end distribuite tramite la pipeline full stack vengono distribu
     ....
 ```
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Congratulazioni, hai esaminato il modulo ui.frontend del progetto full stack
 

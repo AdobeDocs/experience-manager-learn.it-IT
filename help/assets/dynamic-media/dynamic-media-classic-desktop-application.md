@@ -3,13 +3,14 @@ title: Utilizzo dell'applicazione desktop Dynamic Media Classic
 description: Adobe introduce un’applicazione desktop per gli utenti di Dynamic Media Classic che non si basa più sulla tecnologia Adobe Flash nel browser.
 feature: Dynamic Media Classic
 version: 6.5
-kt: 5808
+jira: KT-5808
 thumbnail: 36645.jpg
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 1600c0c0-0054-49ce-9b99-f8e6e29d6132
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 1%
@@ -36,5 +37,5 @@ L’app desktop Adobe Dynamic Media Classic è compatibile con i seguenti sistem
 ## Materiali di supporto
 
 * [Documentazione dell’applicazione desktop Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
-* [Domande frequenti su Dynamic Media Adobe](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
+* [Domande frequenti su Dynamic Medie Adobe](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
 * [Scarica l&#39;app Dynamic Media Classic Desktop](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)

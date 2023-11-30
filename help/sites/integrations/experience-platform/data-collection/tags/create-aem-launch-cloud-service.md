@@ -1,12 +1,8 @@
 ---
 title: Creare una configurazione del Cloud Service Launch in AEM Sites
 description: Scopri come creare una configurazione del Cloud Service Launch nell’AEM. La configurazione del Cloud Service Launch può quindi essere applicata a un sito esistente ed è possibile osservare il caricamento delle librerie di tag sia nell’ambiente di authoring che in quello di pubblicazione.
-topics: integrations
-audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
-doc-type: technical video
-activity: setup
-kt: 5982
+jira: KT-5982
 thumbnail: 38566.jpg
 topic: Integrations
 feature: Integrations
@@ -14,8 +10,9 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: a72ddced-37de-4b62-9e28-fa5b6c8ce5b7
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 0%
@@ -34,7 +31,7 @@ Scopri come creare una configurazione del Cloud Service Launch in Adobe Experien
 
 Crea la configurazione del servizio cloud Launch seguendo la procedura riportata di seguito.
 
-1. Dalla sezione **Strumenti** menu, seleziona **Cloud Services** e fai clic su **Configurazioni di Adobe Launch**
+1. Dalla sezione **Strumenti** menu, seleziona **Cloud Service** e fai clic su **Configurazioni di Adobe Launch**
 
 1. Seleziona la cartella di configurazione del sito o fai clic su **Sito WKND** (se utilizzi il progetto della guida WKND) e fai clic su **Crea**
 
@@ -44,7 +41,7 @@ Crea la configurazione del servizio cloud Launch seguendo la procedura riportata
 
 1. Infine, fai clic su **Crea** per completare Launch Cloud Services.
 
-   ![Configurazione Cloud Services di avvio](assets/launch-cloud-services-config.png)
+   ![Configurazione Cloud Service di avvio](assets/launch-cloud-services-config.png)
 
 ## Applicare Launch Cloud Service al sito
 
@@ -54,7 +51,7 @@ Per caricare la proprietà Tag e le relative librerie sul sito AEM, al sito vien
 
 1. Seleziona la pagina root del sito AEM e fai clic su **Proprietà**. Quindi, passa alla **Avanzate** scheda e sotto **Configurazione** , verifica che il valore Configurazione cloud punti a specifici siti `conf` cartella.
 
-   ![Applica configurazione Cloud Services al sito](assets/apply-cloud-services-config-to-site.png)
+   ![Applica configurazione Cloud Service al sito](assets/apply-cloud-services-config-to-site.png)
 
 ## Verificare il caricamento della proprietà Tag nelle pagine Author e Publish
 

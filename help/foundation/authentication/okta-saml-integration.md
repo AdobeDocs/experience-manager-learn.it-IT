@@ -8,15 +8,16 @@ role: Admin
 level: Experienced
 jira: KT-12305
 last-substantial-update: 2023-03-01T00:00:00Z
+doc-type: Tutorial
 exl-id: 460e9bfa-1b15-41b9-b8b7-58b2b1252576
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 2%
 
 ---
 
-# Autenticazione per AEM Author tramite OKTA
+# Autenticazione per l’authoring AEM con OKTA
 
 > Consulta [Autenticazione SAML 2.0](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=it) per le istruzioni su come impostare OKTA con AEM as a Cloud Service.
 
@@ -42,9 +43,9 @@ Memorizza la password dell&#39;archivio fonti attendibili. La password dovrà es
 * Accedi a [Archivio attendibile globale](http://localhost:4502/libs/granite/security/content/truststore.html).
 * Fare clic su &quot;Aggiungi certificato da file CER&quot;. Aggiungi il certificato IdP fornito da OKTA e fai clic su invia.
 
-   >[!NOTE]
-   >
-   >Non mappare il certificato ad alcun utente
+  >[!NOTE]
+  >
+  >Non mappare il certificato ad alcun utente
 
 Quando aggiungi il certificato all’archivio fonti attendibili, devi ottenere l’alias del certificato come mostrato nella schermata seguente. Il nome dell&#39;alias potrebbe essere diverso nel tuo caso.
 

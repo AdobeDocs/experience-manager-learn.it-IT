@@ -7,13 +7,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6282
+jira: KT-6282
 thumbnail: KT-6282.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 7d51ec77-c785-4b89-b717-ff9060d8bda7
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 0%
@@ -37,13 +37,13 @@ Asset compute worker implementa il contratto Asset compute SDK worker API, nel `
 
 ![Flusso logico lavoratore Asset compute](./assets/worker/logical-flow.png)
 
-1. Il servizio Author di AEM richiama il processo di lavoro Asset compute, fornendo il __(1 bis)__ binario originale (`source` parametro ), e __(1 ter)__ qualsiasi parametro definito nel profilo di elaborazione (`rendition.instructions` parametro ).
+1. Il servizio di authoring AEM richiama il lavoratore Asset compute, fornendo il __(1 bis)__ binario originale (`source` parametro ), e __(1 ter)__ qualsiasi parametro definito nel profilo di elaborazione (`rendition.instructions` parametro ).
 1. L’SDK di Asset compute orchestra l’esecuzione del processo di lavoro dei metadati di Asset compute personalizzato `renditionCallback(...)` , che genera una nuova rappresentazione binaria basata sul file binario originale della risorsa __(1 bis)__ ed eventuali parametri __(1 ter)__.
 
    + In questa esercitazione la rappresentazione viene creata &quot;in process&quot;, ovvero il processo di lavoro compone la rappresentazione, tuttavia il binario di origine può essere inviato anche ad altre API di servizi Web per la generazione della rappresentazione.
 
 1. Il processo di lavoro Asset compute salva i dati binari della nuova rappresentazione in `rendition.path`.
-1. Dati binari scritti in `rendition.path` viene trasportato tramite l’SDK di Asset compute al servizio AEM Author ed esposto come __(4 bis)__ una rappresentazione del testo e __(4 ter)__ persistente nel nodo di metadati della risorsa.
+1. Dati binari scritti in `rendition.path` viene trasportato tramite l’SDK di Asset compute al servizio di authoring AEM ed esposto come __(4 bis)__ una rappresentazione del testo e __(4 ter)__ persistente nel nodo di metadati della risorsa.
 
 Il diagramma precedente illustra le preoccupazioni degli sviluppatori Asset compute e il flusso logico alla chiamata del lavoratore Asset compute. Per i curiosi, il [dettagli interni sull’esecuzione dell’Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html) Tuttavia, solo i contratti API SDK Asset compute pubblici possono dipendere da.
 

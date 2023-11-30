@@ -1,13 +1,14 @@
 ---
 title: Come programmare per il sistema di stili dell’AEM
-description: Questo video illustra l’anatomia dei CSS (o LESS) e JavaScript utilizzati per assegnare uno stile al componente Titolo core di Adobe Experience Manager utilizzando il sistema di stili, nonché come questi stili vengono applicati al HTML e al DOM.
+description: Questo video illustra l’anatomia dei CSS (o LESS) e JavaScript utilizzati per assegnare uno stile al componente Titolo core di Adobe Experience Manager utilizzando il sistema di stili, nonché il modo in cui questi stili vengono applicati a HTML e DOM.
 feature: Style System
-version: 6.4, 6.5
+version: 6.4, 6.5, Cloud Service
 topic: Development
 role: Developer
 level: Intermediate, Experienced
+doc-type: Technical Video
 exl-id: 8fbc3819-3214-4c58-8629-a27eb6f0c545
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 1%

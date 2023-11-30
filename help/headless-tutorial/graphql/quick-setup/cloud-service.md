@@ -6,10 +6,10 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 9442
+jira: KT-9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 2%
@@ -158,7 +158,7 @@ _Schermata dei passaggi_
 
 ## 5. Modificare i contenuti in AEM
 
-Con l’app di esempio WKND React che si connette e utilizza i contenuti delle API GraphQL headless dell’AEM, crea contenuti nel servizio AEM Author e scopri come l’esperienza dell’app React si aggiorna insieme.
+Con l’app di esempio WKND React che si connette e utilizza i contenuti delle API GraphQL headless dell’AEM, crea contenuti nel servizio di authoring dell’AEM e scopri come l’esperienza dell’app React si aggiorna insieme.
 
 _Schermata dei passaggi_
 >[!VIDEO](https://video.tv.adobe.com/v/339077?quality=12&learn=on)
@@ -178,7 +178,7 @@ _Schermata dei passaggi_
 1. Aggiorna l’app React in esecuzione su [http://localhost:3000](Http://localhost:3000).
 1. Nell’app React, seleziona l’avventura Ciclismo ora aggiornata e verifica le modifiche al contenuto apportate al frammento di contenuto.
 
-1. Con lo stesso approccio, nel servizio AEM Author:
+1. Con lo stesso approccio, nel servizio di authoring dell’AEM:
    1. Annulla la pubblicazione di un frammento di contenuto Adventure esistente e verifica che sia stato rimosso dall’esperienza di app di React
    1. Crea e pubblica un nuovo frammento di contenuto Avventura e verificane la visualizzazione nell’esperienza di React App
 
@@ -186,7 +186,7 @@ _Schermata dei passaggi_
    >
    > Se non hai familiarità con la creazione e la pubblicazione di nuovi frammenti di contenuto o con l’annullamento della pubblicazione di frammenti di contenuto esistenti, guarda la schermata precedente.
 
-## Congratulazioni. 
+## Congratulazioni.
 
 Congratulazioni. Hai utilizzato correttamente AEM Headless per alimentare un’app React.
 
