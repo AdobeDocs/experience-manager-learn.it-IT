@@ -8,11 +8,10 @@ version: 6.4, 6.5
 feature: PDF Generator
 kt: 7071
 topic: Development
-exl-id: ffa9d243-37e5-420c-91dc-86c73a824083
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 23459de98420d2a489288df4a1b992c17d42972e
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1309'
 ht-degree: 0%
 
 ---
@@ -59,6 +58,8 @@ I PDF XFA dinamici possono modificare il layout in fase di runtime, pertanto le 
 
 * I moduli dinamici supportano script lato client che modificano il layout e l’impaginazione del modulo. Ad esempio, il file Purchase Order.xdp si espanderà e impaginerà per contenere una quantità infinita di dati se vengono salvati come modulo dinamico
 * I moduli dinamici supportano tutte le proprietà del modulo in fase di esecuzione, mentre i moduli statici supportano solo un sottoinsieme
+
+* [Consulta questo documento per comprendere le differenze tra i moduli pdf statici e dinamici](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents.html#:~:text=Dynamic%20forms%20support%20all%20the,forms%20support%20only%20a%20subset)
 
 >[!NOTE]
 >

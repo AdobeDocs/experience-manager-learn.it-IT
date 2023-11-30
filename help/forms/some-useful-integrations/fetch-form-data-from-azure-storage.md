@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 last-substantial-update: 2023-10-23T00:00:00Z
 kt: 14238
-source-git-commit: 5e761ef180182b47c4fd2822b0ad98484db23aab
+source-git-commit: 23459de98420d2a489288df4a1b992c17d42972e
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -46,18 +46,18 @@ public String getBlobData(String blobID) {
 
     } catch (ClientProtocolException e) {
 
-        log.error("Got Client Protocol Exception " + e.getMessage());
+        log.debug("Got Client Protocol Exception " + e.getMessage());
     } catch (IOException e) {
 
-        log.error("Got IOEXception " + e.getMessage());
+        log.debug("Got IOEXception " + e.getMessage());
     }
 
     return null;
 }
 ```
 
-Quando viene eseguito il rendering di un modulo adattivo con un `guid` Nell’URL, il componente pagina personalizzato associato al modello recupera e popola il modulo adattivo con i dati dell’archiviazione di Azure.
-Il componente page associato al modello ha il seguente codice JSP.
+Quando viene eseguito il rendering di un modulo adattivo con un parametro GUID nell’URL, il componente pagina personalizzato associato al modello recupera e popola il modulo adattivo con i dati dall’archiviazione di Azure.
+Di seguito è riportato il codice nell’JSP del componente Pagina associato al modello
 
 ```java
 com.aemforms.saveandfetchfromazure.StoreAndFetchDataFromAzureStorage azureStorage = sling.getService(com.aemforms.saveandfetchfromazure.StoreAndFetchDataFromAzureStorage.class);
@@ -81,9 +81,11 @@ if(guid!=null&&!guid.isEmpty())
 
 * [Importare il modulo adattivo di esempio](./assets/bank-account-sample-form.zip)
 
-* Specifica i valori appropriati nella configurazione del portale di Azure utilizzando la console di configurazione OSGi
+* Specifica i valori appropriati nella configurazione del portale di Azure utilizzando la console di configurazione OSGi.
+
 * [Anteprima e invio del modulo BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 
 * Verifica che i dati siano archiviati nel contenitore di archiviazione Azure desiderato. Copia l’ID BLOB.
+
 * [Anteprima del modulo BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) e specifica l’ID BLOB come parametro GUID nell’URL del modulo da precompilare con i dati dell’archiviazione Azure
 
