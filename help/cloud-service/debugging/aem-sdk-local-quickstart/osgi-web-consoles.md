@@ -2,20 +2,18 @@
 title: Debug dell’SDK AEM tramite la console web OSGi
 description: L’avvio rapido locale dell’SDK dell’AEM dispone di una console web OSGi che fornisce una serie di informazioni e introspezioni nel runtime dell’AEM locale che sono utili per comprendere in che modo l’applicazione viene riconosciuta da e funziona nell’AEM.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 kt: 5265, 5366, 5267
 topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 0929bc1a-376c-4e16-a540-a276fd5af164
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 516
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 2%
+source-wordcount: '369'
+ht-degree: 1%
 
 ---
 

@@ -10,10 +10,11 @@ jira: KT-11861
 thumbnail: KT-11861.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: ab9ee81a-176e-4807-ba39-1ea5bebddeb2
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+duration: 528
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 4%
+source-wordcount: '453'
+ht-degree: 3%
 
 ---
 
@@ -73,9 +74,9 @@ I plug-in dell’AEM devono essere configurati per interagire con l’RDE. Innan
 
    ![ID organizzazione](./assets/Org-ID.png)
 
-1. ID programma: copia il valore da **Panoramica programma > Ambienti > {ProgramName}-rde > URI browser > numeri tra `program/` e`/environment`**
+1. ID programma: copia il valore da **Panoramica del programma > Ambienti > {ProgramName}-rde > URI browser > numeri tra `program/` e`/environment`**
 
-1. ID ambiente: copia il valore da **Panoramica programma > Ambienti > {ProgramName}-rde > URI browser > numeri dopo`environment/`**
+1. ID ambiente: copia il valore da **Panoramica del programma > Ambienti > {ProgramName}-rde > URI browser > numeri dopo`environment/`**
 
    ![ID programma e ambiente](./assets/Program-Environment-Id.png)
 

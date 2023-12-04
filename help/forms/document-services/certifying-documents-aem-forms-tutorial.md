@@ -8,10 +8,11 @@ role: Developer
 level: Intermediate
 exl-id: 1471929f-d269-4adc-88ad-2ad3682305e1
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 105
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 1%
+source-wordcount: '362'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +35,7 @@ Segui i passaggi indicati di seguito per aggiungere il certificato a keystore in
 * **Per trovare l&#39;utente fd-service dovrai scorrere la pagina dei risultati per caricare tutti gli utenti**
 * Fare doppio clic sull&#39;utente di fd-service per aprire la finestra delle impostazioni utente
 * Fai clic su &quot;Aggiungi chiave privata dal file keystore&quot;.Specifica l’alias e la password specifici per il certificato
-   ![add-certificate](assets/adding-certificate-keystore.PNG)
+  ![add-certificate](assets/adding-certificate-keystore.PNG)
 * Salva le modifiche
 
 ## Creazione del servizio OSGI
@@ -55,13 +56,12 @@ Oppure puoi utilizzare il bundle di esempio incluso come parte di queste risorse
 * Scarica e installa [Bundle servizi documenti personalizzati](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * Scarica e installa [Sviluppo con Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [Assicurati di aver aggiunto la seguente voce nel servizio User Mapper di Apache Sling Service](http://localhost:4502/system/console/configMgr)
-
-   **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** come mostrato nella schermata seguente
-   ![User-Mapper](assets/user-mapper-service.PNG)
+  **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** come mostrato nella schermata seguente
+  ![User-Mapper](assets/user-mapper-service.PNG)
 * [Importa modulo adattivo di esempio](assets/certify-pdf-af.zip)
 * [Importare e installare l’invio personalizzato](assets/custom-submit-certify.zip)
 * [Aprire il modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/certifypdf/jcr:content?wcmmode=disabled)
 * Carica documento PDF che deve essere certificato
-   **facoltativo** - Specificare il campo firma da utilizzare per la certificazione del documento
+  **facoltativo** - Specificare il campo firma da utilizzare per la certificazione del documento
 * Fai clic su Invia.
 * Certified PDF deve essere restituito al cliente.

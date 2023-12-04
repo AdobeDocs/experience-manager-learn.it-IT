@@ -2,21 +2,19 @@
 title: Sviluppa un Asset compute di processo di lavoro per metadati
 description: Scopri come creare un processo di lavoro dei metadati di Asset compute che deriva i colori più comunemente utilizzati in una risorsa di immagine e riscrive i nomi dei colori nei metadati della risorsa in AEM.
 feature: Asset Compute Microservices
-topics: metadata, development
 version: Cloud Service
-activity: develop
-audience: developer
-doc-type: tutorial
+doc-type: Tutorial
 jira: KT-6448
 thumbnail: 327313.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 526
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1433'
-ht-degree: 1%
+source-wordcount: '1405'
+ht-degree: 0%
 
 ---
 
@@ -275,7 +273,7 @@ Richiama il lavoratore dall’AEM creando un nuovo servizio Profilo di elaborazi
          + Chiave: `colorFamily`
          + Valore: `pantone`
             + Valori supportati: `basic`, `hex`, `html`, `ntc`, `pantone`, `roygbiv`
-   + __Tipi mime__
+   + __Tipi MIME__
       + __Include:__ `image/jpeg`, `image/png`, `image/gif`, `image/svg`
          + Questi sono gli unici tipi MIME supportati dai moduli npm di terze parti utilizzati per derivare i colori.
       + __Esclusi:__ `Leave blank`

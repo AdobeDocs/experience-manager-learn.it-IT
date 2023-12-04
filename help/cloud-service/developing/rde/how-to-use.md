@@ -10,9 +10,10 @@ jira: KT-11862
 thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
-source-git-commit: 27d065761643030de68176ebb4ca10bc152844df
+duration: 883
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -62,7 +63,7 @@ $ aio aem:rde:install all/target/aem-guides-wknd.all-2.1.3-SNAPSHOT.zip
 $ aio aem:rde:install dispatcher/target/aem-guides-wknd.dispatcher.cloud-2.1.3-SNAPSHOT.zip
 ```
 
-In caso di distribuzioni corrette, verifica il sito WKND sia nell’istanza di authoring che in quella di pubblicazione. Dovresti essere in grado di aggiungere, modificare e pubblicare il contenuto delle pagine del sito WKND.
+In caso di distribuzioni corrette, verifica il sito WKND sia nei servizi di authoring che in quelli di pubblicazione. Dovresti essere in grado di aggiungere, modificare e pubblicare il contenuto delle pagine del sito WKND.
 
 ### Migliorare e distribuire un componente
 
@@ -218,7 +219,7 @@ aem rde restart  Restart the author and publish of an RDE
 aem rde status   Get a list of the bundles and configs deployed to the current rde.
 ```
 
-Utilizzando i comandi di cui sopra, l&#39;RDE può essere gestito dall&#39;IDE preferito per velocizzare il ciclo di sviluppo/implementazione.
+Utilizzando i comandi di cui sopra, il tuo RDE può essere gestito dall’IDE preferito per velocizzare il ciclo di sviluppo/implementazione.
 
 ## Passaggio successivo
 

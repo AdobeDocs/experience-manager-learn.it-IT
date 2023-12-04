@@ -10,10 +10,11 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 227
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 4%
+source-wordcount: '789'
+ht-degree: 2%
 
 ---
 
@@ -84,7 +85,7 @@ Successivamente vengono creati diversi frammenti di contenuto in base al **Team*
 1. Nella barra a sinistra, espandi **Il mio progetto** e tocca **Inglese**.
 1. Tocca **Crea** per visualizzare **Nuovo frammento di contenuto** e immettere i seguenti valori:
 
-   * Dove si trova: `/content/dam/my-project/en`
+   * Posizione: `/content/dam/my-project/en`
    * Modello per frammenti di contenuto: **Persona**
    * Titolo: **John Doe**
    * Nome: `john-doe`
@@ -93,7 +94,7 @@ Successivamente vengono creati diversi frammenti di contenuto in base al **Team*
 1. Tocca **Crea**.
 1. Ripeti i passaggi precedenti per creare un frammento che rappresenta **Alison Smith**:
 
-   * Dove si trova: `/content/dam/my-project/en`
+   * Posizione: `/content/dam/my-project/en`
    * Modello per frammenti di contenuto: **Persona**
    * Titolo: **Alison Smith**
    * Nome: `alison-smith`
@@ -102,7 +103,7 @@ Successivamente vengono creati diversi frammenti di contenuto in base al **Team*
 
 1. Quindi, ripeti i passaggi per creare un **Team** frammento che rappresenta **Alpha team**:
 
-   * Dove si trova: `/content/dam/my-project/en`
+   * Posizione: `/content/dam/my-project/en`
    * Modello per frammenti di contenuto: **Team**
    * Titolo: **Alpha team**
    * Nome: `team-alpha`

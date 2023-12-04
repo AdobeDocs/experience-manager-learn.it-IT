@@ -13,10 +13,11 @@ mini-toc-levels: 1
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 211
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 17%
+source-wordcount: '684'
+ht-degree: 10%
 
 ---
 
@@ -134,15 +135,15 @@ Adobe Sensei fornisce tecnologie di intelligenza artificiale e apprendimento aut
 
 ### AEM Assets
 
-+ [Abilita tag avanzati per immagini](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
++ [Tag avanzati per le immagini](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
 + [Tag avanzati personalizzati per le immagini](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/custom-smart-tags.html)
 + [Tag avanzati per video](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/video-smart-tags.html)
-+ [Ritaglio avanzato](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html?lang=it)
++ [Ritaglio avanzato](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
 + [Ricerca visiva](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search.html)
 
 ### AEM Forms
 
-+ [Servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=it)
++ [Servizio automated forms conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=it)
 
 
 ## Adobe Target

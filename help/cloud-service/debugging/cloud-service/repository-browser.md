@@ -2,20 +2,18 @@
 title: Debug di AEM con il Browser dell’archivio
 description: Il Browser dell’archivio è un potente strumento che fornisce visibilità all’archivio dati sottostante dell’AEM, consentendo un facile debug dell’ambiente as a Cloud Service dell’AEM.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 jira: KT-10004
 thumbnail: 341464.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 88af40fc-deff-4b92-84b1-88df2dbdd90b
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 328
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---

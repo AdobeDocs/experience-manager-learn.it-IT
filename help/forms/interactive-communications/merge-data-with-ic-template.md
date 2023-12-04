@@ -2,20 +2,18 @@
 title: Generazione di un documento del canale di stampa mediante l'unione di dati
 description: Scopri come generare un documento del canale di stampa unendo i dati contenuti nel flusso di input
 feature: Interactive Communication
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 3bfbb4ef-0c51-445a-8d7b-43543a5fa191
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 223
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 1%
+source-wordcount: '445'
+ht-degree: 0%
 
 ---
 
@@ -179,7 +177,7 @@ Per eseguire il test sul server, attieniti alla seguente procedura:
 
 * [Apri ChangeOfBeneficiaryForm](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
 * Assicurati che il modulo adattivo sia configurato per l’invio al flusso di lavoro AEM come mostrato di seguito
-   ![immagine](assets/generateic.PNG)
+  ![immagine](assets/generateic.PNG)
 * [Configura il modello di flusso di lavoro.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)Assicurati che la fase del processo e i componenti e-mail di invio siano configurati in base all’ambiente in uso
 * [Visualizzare in anteprima ChangeOfBeneficiaryForm.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) Inserisci alcuni dettagli e invia
 * Il flusso di lavoro deve essere richiamato e il documento del canale di stampa IC deve essere inviato al destinatario specificato nel componente Invia e-mail come allegato

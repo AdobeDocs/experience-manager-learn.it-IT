@@ -11,10 +11,11 @@ thumbnail: kt-10797.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM headless as a Cloud Service" before-title="false"
 exl-id: 4f090809-753e-465c-9970-48cf0d1e4790
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 194
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 5%
+source-wordcount: '488'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +38,7 @@ I seguenti strumenti devono essere installati localmente:
 
 Il componente Web funziona con le seguenti opzioni di distribuzione AEM.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=it)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 + Configurazione locale con [l’SDK di AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it)
    + Richiede [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) (se ci si connette a AEM 6.5 locale o a AEM SDK)
 
@@ -92,7 +93,7 @@ L’app di esempio si basa su [basic-tutorial-solution.content.zip](../multi-ste
    $ npm start
    ```
 
-1. Una nuova finestra del browser apre la pagina HTML statica che incorpora il componente Web in [http://localhost:8080](Http://localhost:8080).
+1. Una nuova finestra del browser apre la pagina HTML statica che incorpora il componente Web in [http://localhost:8080](http://localhost:8080).
 1. Il _Informazioni persona_ Il componente Web viene visualizzato nella pagina Web.
 
 ## Il codice

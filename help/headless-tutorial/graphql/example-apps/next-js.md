@@ -12,10 +12,11 @@ thumbnail: KT-10721.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM headless as a Cloud Service" before-title="false"
 exl-id: 4f67bb37-416a-49d9-9d7b-06c3573909ca
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 303
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 1%
+source-wordcount: '744'
+ht-degree: 0%
 
 ---
 
@@ -99,7 +100,7 @@ Il file Next.js è progettato per connettersi a __Pubblicazione AEM__ e accedere
    $ npm run dev
    ```
 
-1. Una nuova finestra del browser apre l’app Next.js in [http://localhost:3000](Http://localhost:3000)
+1. Una nuova finestra del browser apre l’app Next.js in [http://localhost:3000](http://localhost:3000)
 1. L’app Next.js mostra un elenco di avventure. Quando si seleziona un’avventura, i relativi dettagli vengono aperti in una nuova pagina.
 
 ## Il codice

@@ -2,10 +2,7 @@
 title: Aggiungi navigazione e indirizzamento | Guida introduttiva dell’Editor SPA dell’AEM e React
 description: Scopri come è possibile supportare più visualizzazioni nell’SPA mediante la mappatura su pagine AEM con l’SDK dell’editor dell’SPA. La navigazione dinamica viene implementata utilizzando React Router e React Core Components.
 feature: SPA Editor
-topics: development
 version: Cloud Service
-activity: develop
-audience: developer
 jira: KT-4988
 thumbnail: 4988-spa-react.jpg
 topic: SPA
@@ -13,9 +10,10 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 467
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1481'
 ht-degree: 0%
 
 ---
@@ -42,7 +40,7 @@ Esaminare gli strumenti e le istruzioni necessari per l&#39;impostazione di un [
 
 ## Aggiungi la navigazione al modello {#add-navigation-template}
 
-1. Apri un browser e accedi all’AEM, [http://localhost:4502/](Http://localhost:4502/). La base di codice iniziale deve essere già distribuita.
+1. Apri un browser e accedi all’AEM, [http://localhost:4502/](http://localhost:4502/). La base di codice iniziale deve essere già distribuita.
 1. Accedi a **Modello pagina SPA**: [http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-react/settings/wcm/templates/spa-page-template/structure.html).
 1. Seleziona il più esterno **Contenitore di layout principale** e fai clic sul relativo **Policy** icona. Stai attento **non** per selezionare **Contenitore di layout** non bloccato per l’authoring.
 

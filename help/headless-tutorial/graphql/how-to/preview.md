@@ -11,23 +11,24 @@ last-substantial-update: 2023-03-17T00:00:00Z
 jira: KT-10841
 thumbnail: 3416906.jpeg
 exl-id: 247d40a3-ff67-4c1f-86bf-3794d7ce3e32
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+duration: 532
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
 
 # Anteprima frammento di contenuto
 
-Le applicazioni headless AEM supportano l’anteprima integrata dell’authoring. L’esperienza di anteprima collega l’editor dei frammenti di contenuto dell’Autore AEM all’app personalizzata (indirizzabile tramite HTTP), consentendo un collegamento diretto all’app che esegue il rendering del frammento di contenuto visualizzato in anteprima.
+Le applicazioni headless AEM supportano l’anteprima integrata dell’authoring. L’esperienza di anteprima collega l’editor dei frammenti di contenuto dell’autore AEM con l’app personalizzata (indirizzabile tramite HTTP), consentendo un collegamento diretto nell’app che esegue il rendering del frammento di contenuto visualizzato in anteprima.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
 
 Per utilizzare l’anteprima del frammento di contenuto, è necessario soddisfare diverse condizioni:
 
 1. L’app deve essere distribuita in un URL accessibile agli autori
-1. L’app deve essere configurata per la connessione al servizio AEM Author (anziché al servizio AEM Publish)
+1. L’app deve essere configurata per la connessione al servizio di authoring AEM (anziché al servizio di pubblicazione AEM)
 1. L’app deve essere progettata con URL o percorsi che possono utilizzare [ID o percorso del frammento di contenuto](#url-expressions) per selezionare i frammenti di contenuto da visualizzare in anteprima nell’esperienza dell’app.
 
 ## URL di anteprima
@@ -36,17 +37,17 @@ URL di anteprima, utilizzo [Espressioni URL](#url-expressions), sono impostati n
 
 ![URL di anteprima del modello per frammenti di contenuto](./assets/preview/cf-model-preview-url.png)
 
-1. Accedi al servizio AEM Author come amministratore
+1. Accedere al servizio di creazione AEM come amministratore
 1. Accedi a __Strumenti > Generale > Modelli per frammenti di contenuto__
 1. Seleziona la __Modello per frammenti di contenuto__ e seleziona __Proprietà__ dalla barra delle azioni superiore.
 1. Immetti l’URL di anteprima per il modello per frammenti di contenuto utilizzando [Espressioni URL](#url-expressions)
-   + L’URL di anteprima deve puntare a una distribuzione dell’app che si connette al servizio AEM Author.
+   + L’URL di anteprima deve puntare a una distribuzione dell’app che si connette al servizio di authoring AEM.
 
 ### Espressioni URL
 
 Per ogni modello per frammenti di contenuto può essere impostato un URL di anteprima. L’URL di anteprima può essere parametrizzato per frammento di contenuto utilizzando le espressioni URL elencate nella tabella seguente. È possibile utilizzare più espressioni URL in un singolo URL di anteprima.
 
-|  | Espressione URL | Valore |
+|                                         | Espressione URL | Valore |
 | --------------------------------------- | ----------------------------------- | ----------- |
 | Percorso frammento di contenuto | `${contentFragment.path}` | `/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali` |
 | ID frammento di contenuto | `${contentFragment.id}` | `12c34567-8901-2aa3-45b6-d7890aa1c23c` |

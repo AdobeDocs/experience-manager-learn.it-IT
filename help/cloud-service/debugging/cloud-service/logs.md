@@ -2,21 +2,19 @@
 title: Registri
 description: I registri fungono da strumenti di prima linea per il debug delle applicazioni AEM in AEM as a Cloud Service, ma dipendono dalla registrazione adeguata nell’applicazione AEM implementata.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 jira: KT-5432
 thumbnail: kt-5432.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 321
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 3%
+source-wordcount: '948'
+ht-degree: 0%
 
 ---
 
@@ -53,7 +51,7 @@ I servizi di authoring e pubblicazione AEM forniscono i registri del server di r
 
 + `aemerror` è il registro degli errori Java (disponibile all’indirizzo `/crx-quickstart/logs/error.log` nell’SDK per AEM (avvio rapido locale). Di seguito sono riportati i [livelli di registro consigliati](#log-levels) per i logger personalizzati per tipo di ambiente:
    + Sviluppo: `DEBUG`
-   + Ambiente di staging: `WARN`
+   + Fase: `WARN`
    + Produzione: `ERROR`
 + `aemaccess` elenca le richieste HTTP al servizio AEM con i relativi dettagli
 + `aemrequest` elenca le richieste HTTP effettuate al servizio AEM e la relativa risposta HTTP
@@ -65,11 +63,11 @@ Solo il Dispatcher di pubblicazione dell’AEM fornisce il server web Apache e i
 + `httpdaccess` elenca le richieste HTTP effettuate al server web Apache/Dispatcher del servizio AEM.
 + `httperror`  elenca i messaggi di registro dal server web Apache e fornisce assistenza per il debug dei moduli Apache supportati, come `mod_rewrite`.
    + Sviluppo: `DEBUG`
-   + Ambiente di staging: `WARN`
+   + Fase: `WARN`
    + Produzione: `ERROR`
 + `aemdispatcher` elenca i messaggi di registro provenienti dai moduli di Dispatcher, inclusi il filtraggio e la trasmissione dei messaggi dalla cache.
    + Sviluppo: `DEBUG`
-   + Ambiente di staging: `WARN`
+   + Fase: `WARN`
    + Produzione: `ERROR`
 
 ## Cloud Manager{#cloud-manager}
@@ -173,7 +171,7 @@ Le linee guida generali di Adobe sui livelli di registro per l’ambiente AEM as
 
 + Sviluppo locale (AEM SDK): `DEBUG`
 + Sviluppo: `DEBUG`
-+ Ambiente di staging: `WARN`
++ Fase: `WARN`
 + Produzione: `ERROR`
 
 Impostando il livello di registro più appropriato per ogni tipo di ambiente con AEM as a Cloud Service, i livelli di registro vengono mantenuti nel codice

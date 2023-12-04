@@ -1,6 +1,6 @@
 ---
 title: Panoramica sull’authoring in AEM Sites
-description: Il video seguente offre una panoramica dei concetti di base dell’authoring in un ambiente di authoring AEM. Usa la console Sites come base.
+description: Il video seguente offre una panoramica dei concetti di base dell’authoring in un ambiente di authoring AEM. Utilizza la console Sites come base.
 feature: Page Editor, Editable Templates
 version: 6.4, 6.5, Cloud Service
 jira: KT-4242
@@ -10,10 +10,11 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: e71b106d-a44b-44af-ba85-7fb5806cdb83
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 226
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '79'
-ht-degree: 30%
+source-wordcount: '65'
+ht-degree: 13%
 
 ---
 

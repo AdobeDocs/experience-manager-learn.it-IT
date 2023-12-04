@@ -2,7 +2,6 @@
 title: Configurazione delle estensioni di Reader in AEM Forms OSGi
 description: Aggiungere le credenziali delle estensioni di Reader all’archivio fonti attendibili in AEM Forms OSGi
 feature: Reader Extensions
-audience: developer
 type: Tutorial
 version: 6.4,6.5
 topic: Administration
@@ -10,7 +9,8 @@ role: Admin
 level: Beginner
 exl-id: 1f16acfd-e8fd-4b0d-85c4-ed860def6d02
 last-substantial-update: 2020-08-01T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 328
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -23,9 +23,9 @@ Il servizio DocAssurance può applicare diritti di utilizzo ai documenti PDF. Pe
 
 ## Crea keystore per utente fd-service
 
-Le credenziali delle estensioni Reader sono associate all&#39;utente fd-service. Per aggiungere le credenziali all&#39;utente di fd-service, attenersi alla seguente procedura. Se hai già creato il keystore per l&#39;utente fd-service, salta questa sezione
+Le credenziali delle estensioni Reader sono associate all&#39;utente fd-service. Per aggiungere le credenziali all&#39;utente fd-service, procedere come segue. Se hai già creato il keystore per l&#39;utente fd-service, salta questa sezione
 
-* Accedi all’istanza di AEM Author come amministratore
+* Accedi all’istanza di authoring dell’AEM come amministratore
 * Vai a Strumenti-Protezione-Utenti
 * Scorri verso il basso l’elenco degli utenti fino a trovare l’account utente fd-service
 * Fai clic sull’utente fd-service

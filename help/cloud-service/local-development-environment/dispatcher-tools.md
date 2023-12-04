@@ -10,10 +10,11 @@ jira: KT-4679
 thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 765
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 9%
+source-wordcount: '1622'
+ht-degree: 4%
 
 ---
 
@@ -26,9 +27,9 @@ ht-degree: 9%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=it" text="Dispatcher nel cloud"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html" text="Scarica l’SDK di AEM as a Cloud Service"
 
-Dispatcher di Adobe Experience Manager (AEM) è un modulo server web Apache HTTP che fornisce sicurezza e prestazioni tra il livello di CDN e di pubblicazione AEM. Dispatcher è parte integrante dell’architettura complessiva di Experience Manager e necessario nella configurazione di sviluppo locale.
+Dispatcher di Adobe Experience Manager (AEM) è un modulo server web Apache HTTP che fornisce sicurezza e prestazioni tra il livello di CDN e di pubblicazione AEM. Dispatcher è parte integrante dell’architettura Experience Manager complessiva e deve far parte della configurazione di sviluppo locale.
 
-L’SDK di AEM as a Cloud Service include la versione consigliata degli strumenti per Dispatcher, che facilita la configurazione, la convalida e la simulazione locale di Dispatcher. Gli strumenti di Dispatcher sono costituiti da:
+L’SDK per AEM as a Cloud Service include la versione consigliata degli strumenti di Dispatcher, che facilita la configurazione, la convalida e la simulazione locale di Dispatcher. Gli strumenti di Dispatcher sono costituiti da:
 
 + un set di base di file di configurazione del server web HTTP Apache e del Dispatcher, che si trova in `.../dispatcher-sdk-x.x.x/src`
 + uno strumento CLI per la convalida della configurazione, disponibile all&#39;indirizzo `.../dispatcher-sdk-x.x.x/bin/validate`
@@ -234,9 +235,9 @@ I registri degli strumenti di Dispatcher vengono emessi in uscita standard quand
 I parametri utili per il debug di Dispatcher includono:
 
 + `DISP_LOG_LEVEL=Debug` imposta la registrazione del modulo Dispatcher al livello di debug
-   + Il valore predefinito è: `Warn`
+   + Valore predefinito: `Warn`
 + `REWRITE_LOG_LEVEL=Debug` imposta la registrazione del modulo di riscrittura del server web Apache HTTP sul livello Debug
-   + Il valore predefinito è: `Warn`
+   + Valore predefinito: `Warn`
 + `DISP_RUN_MODE` imposta la &quot;modalità di esecuzione&quot; dell’ambiente Dispatcher, caricando i file di configurazione di Dispatcher per le modalità di esecuzione corrispondenti.
    + Impostazione predefinita `dev`
 + Valori validi: `dev`, `stage`, o `prod`

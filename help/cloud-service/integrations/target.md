@@ -13,10 +13,11 @@ thumbnail: KT-12433.jpeg
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM headless as a Cloud Service" before-title="false"
 exl-id: be886c64-9b8e-498d-983c-75f32c34be4b
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+duration: 1721
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1679'
-ht-degree: 1%
+source-wordcount: '1618'
+ht-degree: 0%
 
 ---
 
@@ -63,7 +64,7 @@ Il Cloud Service Adobe Target, configurato in una configurazione in base al cont
 1. Accedi a __Servizio di authoring AEM__ come amministratore DAM
 1. Accedi a __Risorse > File__, individua la cartella di risorse con `/conf` applicato a
 1. Seleziona la cartella delle risorse e fai clic su __Proprietà__ dalla barra delle azioni superiore
-1. Seleziona la scheda __Servizi cloud__
+1. Seleziona la __Cloud Service__ scheda
 1. Assicurati che la configurazione cloud sia impostata sulla configurazione in base al contesto (`/conf`) che contiene la configurazione di Cloud Service Adobe Target.
 1. Seleziona __Adobe Target__ dal __Configurazioni Cloud Service__ a discesa.
 1. Seleziona __Salva e chiudi__ in alto a destra

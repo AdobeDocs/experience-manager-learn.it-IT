@@ -8,10 +8,11 @@ role: Developer
 level: Experienced
 exl-id: 50db6155-ee83-4ddb-9e3a-56e8709222db
 last-substantial-update: 2020-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 127
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 3%
+source-wordcount: '366'
+ht-degree: 0%
 
 ---
 
@@ -93,8 +94,7 @@ Il JSON restituito dall’API viene quindi analizzato per impostare i campi del 
 Per attivare questa funzionalità sul server, attieniti alla seguente procedura
 
 * Installa e avvia il server AEM Forms.
-
->!![NOTE] Questa funzionalità è stata testata su AEM Forms 6.3 e versioni successive
+> Questa funzionalità è stata testata su AEM Forms 6.3 e versioni successive
 * [Ottieni chiave API Google](https://developers.google.com/maps/documentation/javascript/get-api-key).
 * [Importa in AEM le risorse correlate a questo articolo.](assets/geolocationapi.zip)
 * [Apri il frammento di modulo adattivo in modalità di modifica.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)

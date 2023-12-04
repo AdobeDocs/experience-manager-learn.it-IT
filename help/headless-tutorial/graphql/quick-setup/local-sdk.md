@@ -10,10 +10,11 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 328
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1257'
-ht-degree: 2%
+source-wordcount: '1151'
+ht-degree: 1%
 
 ---
 
@@ -135,7 +136,7 @@ Uno degli obiettivi di questo tutorial è mostrare come utilizzare contenuti AEM
    $ npm start
    ```
 
-1. Una nuova finestra del browser apre automaticamente l’app il [http://localhost:3000](Http://localhost:3000).
+1. Una nuova finestra del browser apre automaticamente l’app il [http://localhost:3000](http://localhost:3000).
 
    ![React Starter App](assets/quick-setup/aem-sdk/react-app__home-view.png)
 
@@ -164,7 +165,7 @@ Quando l’app React è in esecuzione, aggiorna i contenuti dell’AEM e osserva
    ![Modifica frammento di contenuto](assets/setup/modify-content-fragment-bali.png)
 
 1. Clic **Salva** per salvare le modifiche.
-1. Aggiorna l’app React in [http://localhost:3000](Http://localhost:3000) per visualizzare le modifiche:
+1. Aggiorna l’app React in [http://localhost:3000](http://localhost:3000) per visualizzare le modifiche:
 
    ![Aggiornamento di Bali Surf Camp Adventure](assets/setup/overnight-bali-surf-camp-changes.png)
 

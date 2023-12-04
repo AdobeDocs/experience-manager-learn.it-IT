@@ -11,9 +11,10 @@ last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: edd18f2f-6f24-4299-a31a-54ccc4f6d86e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 246
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '534'
 ht-degree: 1%
 
 ---
@@ -181,7 +182,7 @@ Il `Home.js` il file dovrebbe avere un aspetto simile a:
 
 1. Tocca __Fine__ per salvare
 1. Visualizzare l’anteprima delle modifiche nell’Editor SPA dell’AEM
-1. Aggiorna l’app WKND in esecuzione localmente il [http://localhost:3000](Http://localhost:3000) e visualizzare le modifiche apportate al titolo immediatamente riflesse.
+1. Aggiorna l’app WKND in esecuzione localmente il [http://localhost:3000](http://localhost:3000) e visualizzare le modifiche apportate al titolo immediatamente riflesse.
 
    ![Componente titolo nell’SPA](./assets/spa-fixed-component/title-final.png)
 

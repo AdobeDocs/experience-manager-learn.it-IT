@@ -3,9 +3,10 @@ title: Accelerare la velocità dei contenuti con i sistemi AEM
 description: Scopri come utilizzare i sistemi di stile AEM per consentire a designer, autori di contenuti e sviluppatori della tua organizzazione di creare e distribuire esperienze alla velocità e alla scalabilità che i clienti si aspettano.
 solution: Experience Manager
 exl-id: 449cd133-6ab6-456e-a0ad-30e3dea9b75b
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+duration: 230
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '817'
 ht-degree: 0%
 
 ---

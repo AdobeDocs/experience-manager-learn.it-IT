@@ -9,9 +9,10 @@ level: Intermediate
 last-substantial-update: 2022-09-07T00:00:00Z
 thumbnail: ecma-fragments.jpg
 exl-id: 6b0bd2f1-b8ee-4f96-9813-8c11aedd3621
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+duration: 120
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 0%
 In questo articolo utilizzeremo il servizio di output per generare file pdf utilizzando frammenti xdp. L’xdp principale e i frammenti risiedono nell’archivio crx. È importante simulare la struttura delle cartelle del file system in AEM. Ad esempio, se utilizzi un frammento nella cartella Frammenti nell’XDP, devi creare una cartella denominata **frammenti** nella cartella di base in AEM. La cartella base conterrà il modello xdp di base. Ad esempio, se nel file system è presente la seguente struttura
 * c:\xdptemplates - Conterrà il modello xdp di base
 * c:\xdptemplates\fragments - Questa cartella conterrà frammenti e il modello principale farà riferimento al frammento come mostrato di seguito
-   ![fragment-xdp](assets/survey-fragment.png).
+  ![fragment-xdp](assets/survey-fragment.png).
 * La cartella xdpdocuments conterrà il modello di base e i frammenti in **frammenti** cartella
 
 Puoi creare la struttura richiesta utilizzando [interfaccia utente per moduli e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
@@ -67,7 +68,7 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 **Per testare il pacchetto di esempio sul sistema**
 * [Distribuire il bundle DevelopingWithServiceUSer](assets/DevelopingWithServiceUser.jar)
 * Aggiungi la voce **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** nella modifica del servizio mappatura utenti, come illustrato nella schermata seguente
-   ![modifica mappatore utenti](assets/user-mapper-service-amendment.png)
+  ![modifica mappatore utenti](assets/user-mapper-service-amendment.png)
 * [Scarica e importa i file xdp di esempio e gli script ECMA](assets/watched-folder-fragments-ecma.zip).
 Verrà creata una struttura di cartelle controllate nella cartella c:/fragmentsandoutputservice
 

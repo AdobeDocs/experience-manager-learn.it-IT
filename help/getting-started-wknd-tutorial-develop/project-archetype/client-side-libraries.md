@@ -11,10 +11,11 @@ thumbnail: 30359.jpg
 doc-type: Tutorial
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 752
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2799'
-ht-degree: 2%
+source-wordcount: '2546'
+ht-degree: 0%
 
 ---
 
@@ -81,7 +82,7 @@ Le librerie lato client forniscono un meccanismo per organizzare e gestire i fil
 1. Gestire le dipendenze da framework di terze parti in modo organizzato
 1. Riduci al minimo il numero di richieste lato client concatenando CSS/JS in una o due richieste.
 
-Ulteriori informazioni sull’utilizzo di [Le librerie lato client sono disponibili qui.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=it)
+Ulteriori informazioni sull’utilizzo di [Le librerie lato client sono disponibili qui.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)
 
 Le librerie lato client presentano alcune limitazioni. In particolare, è un supporto limitato per i linguaggi front-end più popolari come Sass, LESS e TypeScript. Nell’esercitazione, vediamo in che modo il **ui.frontend** Questo modulo può essere utile per risolvere il problema.
 
@@ -361,7 +362,7 @@ Questa tecnica è utile se la maggior parte degli stili e del codice front-end v
    > webpack-dev-server --open --config ./webpack.dev.js
    ```
 
-1. Dovrebbe aprirsi una nuova finestra del browser in [http://localhost:8080/](Http://localhost:8080/) con markup statico.
+1. Dovrebbe aprirsi una nuova finestra del browser in [http://localhost:8080/](http://localhost:8080/) con markup statico.
 
 1. Modifica il file `src/main/webpack/site/_variables.scss` file. Sostituisci il `$text-color` regola con quanto segue:
 
@@ -372,7 +373,7 @@ Questa tecnica è utile se la maggior parte degli stili e del codice front-end v
 
    Salva le modifiche.
 
-1. Dovresti vedere automaticamente le modifiche riflesse nel browser su [http://localhost:8080](Http://localhost:8080).
+1. Dovresti vedere automaticamente le modifiche riflesse nel browser su [http://localhost:8080](http://localhost:8080).
 
    ![Modifiche al server di sviluppo Webpack locale](assets/client-side-libraries/local-webpack-dev-server.png)
 

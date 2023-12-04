@@ -10,9 +10,10 @@ thumbnail: kt-7633.jpeg
 last-substantial-update: 2022-11-01T00:00:00Z
 doc-type: Tutorial
 exl-id: b8d43e44-014c-4142-b89c-ff4824b89c78
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 478
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -316,13 +317,13 @@ Ora che l&#39;SPA è stato avviato per l&#39;integrazione con l&#39;AEM, facciam
    $ npm run start
    ```
 
-1. Sfoglia SPA su [http://localhost:3000](Http://localhost:3000). Tutto dovrebbe avere un bell&#39;aspetto!
+1. Sfoglia SPA su [http://localhost:3000](http://localhost:3000). Tutto dovrebbe avere un bell&#39;aspetto!
 
 ![SPA in esecuzione su http://localhost:3000](./assets/spa-bootstrap/localhost-3000.png)
 
 ## Aprire l’SPA nell’Editor SPA dell’AEM
 
-Con l&#39;SPA in funzione [http://localhost:3000](Http://localhost:3000), apriamolo utilizzando l’Editor SPA dell’AEM. Non è ancora possibile modificare nulla nell’SPA, il che convalida solo l’SPA nell’AEM.
+Con l&#39;SPA in funzione [http://localhost:3000](http://localhost:3000), apriamolo utilizzando l’Editor SPA dell’AEM. Non è ancora possibile modificare nulla nell’SPA, il che convalida solo l’SPA nell’AEM.
 
 1. Accedi a AEM Author
 1. Accedi a __Sites > App WKND > us > it__

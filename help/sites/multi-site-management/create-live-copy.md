@@ -1,5 +1,5 @@
 ---
-title: Crea una Live Copy
+title: Creare una Live Copy
 description: Scopri come creare una Live Copy per il sito da una blueprint utilizzando la procedura guidata Crea Live Copy.
 feature: Language Copy, Multi Site Manager
 doc-type: Feature Video
@@ -10,14 +10,15 @@ topic: Localization
 role: User
 level: Beginner
 exl-id: 44540dee-909b-4140-b007-402ef9af58c4
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 320
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '46'
-ht-degree: 17%
+ht-degree: 0%
 
 ---
 
-# Crea una Live Copy {#create-livecopy}
+# Creare una Live Copy {#create-livecopy}
 
 Scopri come creare una Live Copy per il sito da una blueprint utilizzando la procedura guidata Crea Live Copy.
 

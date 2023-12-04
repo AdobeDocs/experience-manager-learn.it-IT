@@ -4,14 +4,14 @@ description: Che tu sia un amministratore, un autore o uno sviluppatore, la manu
 role: Admin
 level: Beginner, Intermediate
 topic: Administration
-audience: author, marketer, developer
 feature: Learn From Your Peers
 jira: KT-14255
 exl-id: 37ee3234-f91c-4f0a-b0b7-b9167e7847a9
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+duration: 266
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 7%
+source-wordcount: '998'
+ht-degree: 3%
 
 ---
 
@@ -39,7 +39,7 @@ Molti clienti eseguono i backup delle istantanee, che richiedono solo pochi minu
 
 ### Manutenzione ordinaria
 
-#### [manutenzione indice](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=it)
+#### [manutenzione indice](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en)
 
 Gli indici consentono di eseguire le query il più rapidamente possibile, liberando risorse per altre operazioni. Assicurati che gli indici siano in forma di punta! L’AEM annulla le query che eseguono invece di utilizzare un indice per evitare che una query non valida influisca sulle prestazioni complessive dell’AEM.
 
@@ -55,7 +55,7 @@ Elimina i file binari Lucene e riduci i requisiti di dimensione dell’archivio 
 
 Quando una risorsa in AEM viene eliminata, il riferimento al record dell’archivio dati sottostante può essere rimosso dalla gerarchia dei nodi, ma il record dell’archivio dati stesso rimane. Questo record dell’archivio dati senza riferimenti diventa &quot;spazzatura&quot; e non deve essere mantenuto. Nei casi in cui esistono numerose risorse senza riferimenti, è utile eliminarle, preservare lo spazio, ottimizzare il backup e le prestazioni di manutenzione del file system.
 
-#### [Eliminazione flussi di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=it)
+#### [Svuotamento flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html)
 
 Minimizzare il numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione.
 
@@ -63,7 +63,7 @@ Minimizzare il numero di istanze del flusso di lavoro aumenta le prestazioni del
 
 Gli eventi AEM idonei per la registrazione di audit generano molti dati archiviati. Questi dati possono crescere rapidamente nel tempo a causa di repliche, caricamenti di risorse e altre attività del sistema.
 
-#### [Sicurezza](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=it)
+#### [Sicurezza](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en)
 
 Accertati che le best practice relative agli elenchi di controllo per la sicurezza siano seguite attentamente per garantire l’istanza più sicura dell’AEM.
 
@@ -95,7 +95,7 @@ Pensa a lungo e scopri cosa potrebbe essere riutilizzato. Un piè di pagina? Una
 
 ## Generale
 
-Rimani al passo con i cambiamenti AEM continuando ad imparare - non rimanere bloccati nel passato. Utilizzare [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=it) e [Servizi di apprendimento digitale Adobe (ADLS)](https://learning.adobe.com/) per affinare le tue abilità.
+Rimani al passo con i cambiamenti AEM continuando ad imparare - non rimanere bloccati nel passato. Utilizzare [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) e [Servizi di apprendimento digitale Adobe (ADLS)](https://learning.adobe.com/) per affinare le tue abilità.
 
 ## Conclusione
 

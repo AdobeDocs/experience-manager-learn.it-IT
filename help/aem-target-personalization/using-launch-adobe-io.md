@@ -9,10 +9,11 @@ badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: b1d7ce04-0127-4539-a5e1-802d7b9427dd
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 748
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 5%
+source-wordcount: '1021'
+ht-degree: 4%
 
 ---
 
@@ -26,7 +27,7 @@ ht-degree: 5%
    * Experience Cloud con le seguenti soluzioni
       * [Adobe Experience Platform Launch](https://experiencecloud.adobe.com)
       * [Adobe Target](https://experiencecloud.adobe.com)
-      * [Console per sviluppatori di Adobe](https://developer.adobe.com/console/)
+      * [Console Adobe Developer](https://developer.adobe.com/console/)
 
      >[!NOTE]
      >Devi disporre dell&#39;autorizzazione per sviluppare, approvare, pubblicare, gestire le estensioni e gestire gli ambienti in Launch. Se non riesci a completare nessuna di queste operazioni perché le opzioni dell’interfaccia utente non sono disponibili, rivolgiti al tuo amministratore Experience Cloud per richiedere l’accesso. Per ulteriori informazioni sulle autorizzazioni di Launch, [consulta la documentazione](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).

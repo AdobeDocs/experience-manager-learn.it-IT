@@ -1,6 +1,6 @@
 ---
 title: Informazioni sul layout dinamico con AEM Sites
-description: AEM consente di creare un layout dinamico per le pagine utilizzando il componente Contenitore di layout. Con il layout reattivo, gli autori dei contenuti possono creare contenuti reattivi per dispositivi diversi e visualizzare in anteprima l’esperienza dell’utente finale in ambito AEM.
+description: AEM consente di avere un layout dinamico per le pagine utilizzando il componente Contenitore di layout. Con il layout reattivo, gli autori dei contenuti possono creare contenuti reattivi per dispositivi diversi e visualizzare in anteprima l’esperienza dell’utente finale in ambito AEM.
 feature: Page Editor, Editable Templates
 version: 6.4, 6.5
 jira: KT-4252
@@ -10,10 +10,11 @@ role: User
 level: Intermediate
 doc-type: Feature Video
 exl-id: c125c0e0-1ed2-463e-bd34-767d009479eb
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 380
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 17%
+source-wordcount: '104'
+ht-degree: 1%
 
 ---
 

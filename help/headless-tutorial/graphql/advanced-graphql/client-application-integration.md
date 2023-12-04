@@ -7,10 +7,11 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: d0576962-a86a-4742-8635-02be1ec3243f
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+duration: 345
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 2%
+source-wordcount: '927'
+ht-degree: 1%
 
 ---
 
@@ -83,7 +84,7 @@ Per accelerare l’esercitazione, viene fornita un’app JS di React iniziale.
 
    >[!NOTE]
    > 
-   > Le istruzioni precedenti consistono nel collegare l’app React a **Servizio di pubblicazione AEM**, tuttavia per connettersi al **Servizio AEM Author** ottenere un token di sviluppo locale per l’ambiente di destinazione as a Cloud Service per AEM.
+   > Le istruzioni precedenti consistono nel collegare l’app React a **Servizio di pubblicazione AEM**, tuttavia per connettersi al **Servizio di authoring AEM** ottenere un token di sviluppo locale per l’ambiente di destinazione as a Cloud Service per AEM.
    >
    > È anche possibile collegare l’app a una [istanza Autore locale con SDK AEMaaCS](/help/headless-tutorial/graphql/quick-setup/local-sdk.md) utilizzo dell’autenticazione di base.
 
@@ -96,7 +97,7 @@ Per accelerare l’esercitazione, viene fornita un’app JS di React iniziale.
    $ npm start
    ```
 
-1. Viene caricata una nuova finestra del browser [http://localhost:3000](Http://localhost:3000)
+1. Viene caricata una nuova finestra del browser [http://localhost:3000](http://localhost:3000)
 
 
 1. Tocca **Campeggio** > **Yosemite Backpacking** per visualizzare i dettagli dell’avventura Yosemite Backpacking.
@@ -111,7 +112,7 @@ Per accelerare l’esercitazione, viene fornita un’app JS di React iniziale.
 
 >[!IMPORTANT]
 >
->    Se ti stai chiedendo perché la richiesta API di GraphQL viene effettuata contro `http://localhost:3000` e NON rispetto al dominio del servizio di pubblicazione AEM, rivedi [Sotto il cappuccio](../multi-step/graphql-and-react-app.md#under-the-hood) dall&#39;esercitazione di base.
+>    Se ti stai chiedendo perché la richiesta API di GraphQL viene effettuata contro `http://localhost:3000` e NON rispetto al dominio del servizio di pubblicazione AEM, revisione [Sotto il cappuccio](../multi-step/graphql-and-react-app.md#under-the-hood) dall&#39;esercitazione di base.
 
 
 ## Rivedi il codice
@@ -319,6 +320,6 @@ La vista principale dell’app WKND React ti consente di filtrare queste avventu
 * Facendo clic su un’opzione di posizione desiderata dall’elenco, vengono visualizzate solo le avventure corrispondenti.
 * Se esiste una sola avventura corrispondente, viene visualizzata la vista Dettagli avventura.
 
-## Congratulazioni
+## Complimenti
 
 Congratulazioni. Ora hai completato l’integrazione e l’implementazione delle query persistenti nell’app WKND di esempio.

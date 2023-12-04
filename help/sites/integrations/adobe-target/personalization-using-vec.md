@@ -1,8 +1,6 @@
 ---
 title: Personalizzazione mediante Visual Experience Composer
 description: Scopri come creare un’attività di Adobe Target utilizzando il Compositore esperienza visivo.
-topics: integrations, authoring, personalization, activity, offers
-audience: all
 version: Cloud Service
 jira: KT-6352
 thumbnail: 6352-personalization-using-vec.jpg
@@ -14,10 +12,11 @@ badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 142
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 2%
+source-wordcount: '514'
+ht-degree: 0%
 
 ---
 
@@ -69,7 +68,7 @@ Nella home page del sito WKND, sotto forma di schede informative, vengono visual
 
 1. Clic **Successivo** per passare al Targeting e mantenere un’allocazione manuale del traffico di 50-50 tra le due esperienze.
 
-   ![Impostazione destinazione](assets/targeting.png)
+   ![Targeting](assets/targeting.png)
 
 1. Per Obiettivi e impostazioni, scegli l’origine per la generazione di rapporti come Adobe Target e seleziona la metrica Obiettivo come Conversione con un’azione di visualizzazione della pagina.
 

@@ -9,10 +9,11 @@ level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: 53baef9c-aa4e-4f18-ab30-ef9f4f5513ee
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 286
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 4%
+source-wordcount: '988'
+ht-degree: 0%
 
 ---
 
@@ -86,7 +87,7 @@ Ecco il problema: gli URL personalizzati si trovano nella cartella base di `/` c
 
 Semplice: Dispatcher dispone di un meccanismo di filtro automatico per l’autorizzazione. Occorre installare un pacchetto AEM e quindi configurare Dispatcher in modo che punti alla pagina del pacchetto.
 
-[https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components)
+[https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/vanityurls-components)
 
 Il file farm di Dispatcher contiene una sezione di configurazione:
 

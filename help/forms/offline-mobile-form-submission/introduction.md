@@ -1,20 +1,16 @@
 ---
 title: Attivare il flusso di lavoro AEM all’introduzione dell’invio del modulo HTM5
-seo-title: Trigger AEM Workflow on HTML5 Form Submission
 description: Continua a compilare il modulo mobile in modalità offline e invia il modulo mobile per attivare il flusso di lavoro AEM
-seo-description: Continue filling mobile form in offline mode and submit mobile form to trigger AEM workflow
 feature: Mobile Forms
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 88295af5-3022-4462-9194-46d8c979bc8b
 last-substantial-update: 2021-04-07T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 360
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -27,8 +23,8 @@ Un caso d’uso comune prevede la possibilità di eseguire il rendering di XDP c
 Per eseguire questo caso d’uso è necessario effettuare i seguenti passaggi:
 
 * Possibilità di generare PDF interattivi/compilabili con i dati immessi nel modulo mobile
-* Gestire l’invio di PDF da Acrobat/Reader
-* Attiva il flusso di lavoro di Adobe Experience Manager (AEM) per rivedere il PDF inviato
+* Gestire l’invio PDF da Acrobat/Reader
+* Attiva il flusso di lavoro Adobe Experience Manager (AEM) per rivedere il PDF inviato
 
 Questo tutorial illustra i passaggi necessari per eseguire il caso d’uso precedente. Il codice di esempio e le risorse correlate a questa esercitazione sono [disponibile qui.](part-four.md)
 

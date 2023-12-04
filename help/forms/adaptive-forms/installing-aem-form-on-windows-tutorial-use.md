@@ -9,10 +9,11 @@ role: Admin
 level: Beginner
 exl-id: 80288765-0b51-44a9-95d3-3bdb2da38615
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 757c8ad251d058bbe48cc3cd354fec533ec4e968
+duration: 158
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 6%
+source-wordcount: '545'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +35,6 @@ ht-degree: 6%
 >* Microsoft Visual C++ 2010 ridistribuibile
 >* Microsoft Visual C++ 2012 ridistribuibile
 >* Microsoft Visual C++ 2013 ridistribuibile (versione 6.5)
-
 
 Anche se si consiglia di seguire [documentazione ufficiale](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) per installare AEM Forms. Per installare e configurare AEM Forms in un ambiente Windows è possibile seguire la procedura descritta di seguito.
 
@@ -69,7 +69,7 @@ Anche se si consiglia di seguire [documentazione ufficiale](https://helpx.adobe.
    * **sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.&#42;** **sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.&#42;**
 * Queste due proprietà sono necessarie per il funzionamento dei servizi documentali
 * Salvare il file sling.properties
-* [Scaricare il pacchetto aggiuntivo appropriato per i moduli](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it)
+* [Scaricare il pacchetto aggiuntivo appropriato per i moduli](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)
 * Installare il pacchetto di componenti aggiuntivi per Forms tramite [gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp).
 * Dopo aver installato il pacchetto add on, è necessario seguire i seguenti passaggi
 
@@ -85,5 +85,5 @@ Anche se si consiglia di seguire [documentazione ufficiale](https://helpx.adobe.
 1. Aggiungi `sun.util.calendar` come nuova voce in `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
 1. Salva le modifiche.
 
-Congratulazioni!!! Ora hai installato e configurato AEM Forms sul tuo sistema.
-A seconda delle tue esigenze puoi configurare  [Estensioni Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) o [ PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) sul server
+Complimenti!!! Ora hai installato e configurato AEM Forms sul tuo sistema.
+A seconda delle tue esigenze puoi configurare  [Estensioni Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) o [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) sul server

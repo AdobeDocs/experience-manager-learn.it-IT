@@ -1,10 +1,7 @@
 ---
 title: Utilizzo di Adobe Cloud Manager - Ambienti
 description: Gli ambienti di Cloud Manager sono composti dai servizi di creazione AEM, pubblicazione AEM e Dispatcher. Diversi ambienti supportano i ruoli e possono essere attivati utilizzando diverse pipeline CI/CD. In genere, gli ambienti di Cloud Manager hanno un ambiente Produzione, un ambiente Stage e un ambiente Sviluppo.
-topics: Administration
-audience: administrator
 doc-type: feature video
-activity: use
 version: Cloud Service
 jira: KT-6871
 thumbnail: 26318.jpg
@@ -13,9 +10,10 @@ feature: Cloud Manager, Environments
 role: Architect, Developer, Admin
 level: Beginner
 exl-id: f4311522-b8fb-4375-9ecc-73e0207a63b2
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 204
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '93'
 ht-degree: 0%
 
 ---

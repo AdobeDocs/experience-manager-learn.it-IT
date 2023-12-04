@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 exl-id: 5c250bbb-bac6-427d-8aca-1fbb1229e02c
 last-substantial-update: 2020-10-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 100
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,7 @@ Per soddisfare questo requisito, viene fornito un bundle OSGi di esempio che pu�
 
 La schermata seguente mostra come utilizzare il passaggio del processo in [Flusso di lavoro AEM](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html) per acquisire commenti e memorizzarli come proprietà di metadati. &quot;Commenti del flusso di lavoro di acquisizione&quot; è il nome della classe Java che deve essere utilizzata nel passaggio del processo. È necessario trasmettere il nome della proprietà dei metadati che conterrà i commenti. Nella schermata seguente, managerComments è la proprietà dei metadati che memorizzerà i commenti.
 
-![workflowcomments1](assets/workflowcomments1.gif)
+![workflowcommenti1](assets/workflowcomments1.gif)
 
 Per testare questa funzionalità sul sistema, attieniti alla seguente procedura:
 * [Assicurati che il passaggio del processo nel flusso di lavoro sia configurato per utilizzare l’opzione Acquisisci commenti del flusso di lavoro](http://localhost:4502/editor.html/conf/global/settings/workflow/models/CaptureComments.html)

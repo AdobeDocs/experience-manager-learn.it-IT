@@ -1,15 +1,15 @@
 ---
 title: Valutazione della maturità di AEM Sites
 description: Questo elenco di controllo fornisce una panoramica delle domande chiave a cui tu e il tuo team dovreste rispondere durante la valutazione della maturità della tua istanza di AEM Sites
-audience: author, marketer, developer
 role: Admin
 level: Intermediate
 topic: Administration
 feature: Learn From Your Peers
 exl-id: 22164a0e-7239-43f4-8356-c12f68133255
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+duration: 83
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---

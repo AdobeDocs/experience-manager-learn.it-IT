@@ -2,19 +2,17 @@
 title: Creazione del primo bundle OSGi con moduli AEM
 description: Crea il tuo primo bundle OSGi utilizzando Maven ed Eclipse
 feature: Adaptive Forms
-topics: development
-audience: developer
 doc-type: article
-activity: setup
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 240
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 2%
+source-wordcount: '816'
+ht-degree: 0%
 
 ---
 
@@ -100,7 +98,7 @@ Vai a **File -> Importa** e seleziona **Progetti Maven esistenti** come mostrato
 
 ![data-source](assets/import-mvn-project.JPG)
 
-Fai clic su Avanti
+Fai clic su Successivo
 
 Seleziona la `c:\aemformsbundles\learningaemform`s facendo clic sul pulsante **Sfoglia** pulsante
 

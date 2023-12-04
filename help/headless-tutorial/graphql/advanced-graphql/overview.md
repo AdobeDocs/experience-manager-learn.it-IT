@@ -7,10 +7,11 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
-source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
+duration: 508
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 1%
+source-wordcount: '1052'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 1%
 
 {{aem-headless-trials-promo}}
 
-Questo tutorial completo continua [esercitazione di base](../multi-step/overview.md) che tratta le nozioni di base di Adobe Experience Manager (AEM) Headless e GraphQL. Il tutorial avanzato illustra gli aspetti approfonditi dell’utilizzo dei modelli per frammenti di contenuto, dei frammenti di contenuto e delle query persistenti GraphQL dell’AEM, incluso l’utilizzo delle query persistenti GraphQL in un’applicazione client.
+Questo tutorial completo continua [esercitazione di base](../multi-step/overview.md) sulle nozioni di base di Adobe Experience Manager (AEM) Headless e GraphQL. Il tutorial avanzato illustra gli aspetti approfonditi dell’utilizzo dei modelli per frammenti di contenuto, dei frammenti di contenuto e delle query persistenti GraphQL dell’AEM, incluso l’utilizzo delle query persistenti GraphQL in un’applicazione client.
 
 ## Prerequisiti
 
@@ -80,7 +81,7 @@ Osserva che il `WKND Shared Endpoint` è già stato creato. Per creare un endpoi
 
 >[!NOTE]
 >
-> Dopo aver salvato l’endpoint, viene visualizzata una finestra modale per la visita alla console Sicurezza, che consente di regolare le impostazioni di sicurezza se si desidera configurare l’accesso all’endpoint. Tuttavia, le autorizzazioni di sicurezza stesse non rientrano nell’ambito di questa esercitazione. Per ulteriori informazioni, consulta [Documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=it).
+> Dopo aver salvato l’endpoint, viene visualizzata una finestra modale per la visita alla console Sicurezza, che consente di regolare le impostazioni di sicurezza se si desidera configurare l’accesso all’endpoint. Tuttavia, le autorizzazioni di sicurezza stesse non rientrano nell’ambito di questa esercitazione. Per ulteriori informazioni, consulta [Documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
 
 ### Rivedi la struttura del contenuto WKND e la cartella principale della lingua
 
@@ -106,7 +107,7 @@ Per assegnare la cartella principale della lingua alla configurazione, seleziona
 
 ![Seleziona proprietà](assets/overview/properties.png)
 
-Quindi, passa a **Cloud Services** e seleziona l’icona della cartella in **Configurazione cloud** campo.
+Quindi, passa a **Cloud Service** e seleziona l’icona della cartella in **Configurazione cloud** campo.
 
 ![Configurazione cloud](assets/overview/cloud-conf.png)
 

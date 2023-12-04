@@ -9,10 +9,11 @@ level: Beginner
 last-substantial-update: 2022-06-15T00:00:00Z
 doc-type: Feature Video
 exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 2561
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 2%
+source-wordcount: '1703'
+ht-degree: 0%
 
 ---
 
@@ -111,7 +112,7 @@ Le organizzazioni possono personalizzare l’URL del portale con un prefisso alt
 Tieni presente che solo il prefisso dell’URL di Brand Portal può essere personalizzato e non l’intero URL.
 Ad esempio, un’organizzazione con un dominio esistente `wknd.brand-portal.adobe.com` può ottenere `wkndinc.brand-portal.adobe.com` creato su richiesta.
 
-Tuttavia, l’istanza di authoring dell’AEM può essere [configurato](https://helpx.adobe.com/it/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) solo con l’URL dell’ID tenant e non con l’URL dell’alias tenant (alternativo).
+Tuttavia, l’istanza di authoring dell’AEM può essere [configurato](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) solo con l’URL dell’ID tenant e non con l’URL dell’alias tenant (alternativo).
 
 **Caso d’uso** : le organizzazioni possono soddisfare le loro esigenze di branding personalizzando l’URL del portale, anziché attenersi all’URL fornito dall’Adobe.
 
@@ -158,7 +159,7 @@ Sono state aggiunte sei nuove configurazioni che consentono agli amministratori 
 
 ### Adobe I/O di interfaccia utente di Hosts per configurare le integrazioni OAuth
 
-Brand Portal utilizza Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) per la creazione di un’applicazione JWT, che consente di configurare le integrazioni OAuth per consentire l’integrazione di AEM Assets con Brand Portal. In precedenza, l’interfaccia utente per la configurazione delle integrazioni OAuth era ospitata in `https://marketing.adobe.com/developer/`. Per ulteriori informazioni sull’integrazione di AEM Assets con Brand Portal per la pubblicazione di risorse e raccolte in Brand Portal, consulta [Configurare l’integrazione di AEM Assets con Brand Portal](https://helpx.adobe.com/it/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
+Brand Portal utilizza Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) per la creazione di un’applicazione JWT, che consente di configurare le integrazioni OAuth per consentire l’integrazione di AEM Assets con Brand Portal. In precedenza, l’interfaccia utente per la configurazione delle integrazioni OAuth era ospitata in `https://marketing.adobe.com/developer/`. Per ulteriori informazioni sull’integrazione di AEM Assets con Brand Portal per la pubblicazione di risorse e raccolte in Brand Portal, consulta [Configurare l’integrazione di AEM Assets con Brand Portal](https://helpx.adobe.com/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
 
 ## Funzionalità e miglioramenti di Brand Portal febbraio 2018{#brand-portal-features-and-enhancements-632}
 
@@ -205,7 +206,7 @@ Nuove funzionalità ottimizzate orientate all’allineamento di Brand Portal con
 ## Risorse aggiuntive{#additional-resources}
 
 * [Novità di Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=it#introduction)
-* [Agenti di replica di creazione AEM](https://helpx.adobe.com/it/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
+* [Agenti di replica di creazione AEM](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [Guida al download accelerato](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [Documentazione di AEM Assets Brand Portal Adobe](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal.html)
 * [Documentazione di AEM Assets Dynamic Medie Adobe](https://experienceleague.adobe.com/docs/)

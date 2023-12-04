@@ -12,10 +12,11 @@ thumbnail: 30152.jpg
 doc-type: Tutorial
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 659
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1839'
-ht-degree: 4%
+source-wordcount: '1684'
+ht-degree: 1%
 
 ---
 
@@ -254,7 +255,7 @@ Il **[core](https://experienceleague.adobe.com/docs/experience-manager-core-comp
 
 ### Moduli Ui.apps e Ui.content {#apps-content-module}
 
-Il **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** il modulo maven contiene tutto il codice di rendering necessario per il sito sotto `/apps`. Ciò include i file CSS/JS memorizzati in un formato AEM denominato [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=it). Ciò include anche [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it) script per il rendering di dynamic HTML. Puoi pensare al **ui.apps** modulo come mappa della struttura nel JCR, ma in un formato che può essere memorizzato in un file system e impegnato nel controllo del codice sorgente. Il **ui.apps** il modulo contiene solo codice.
+Il **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** il modulo maven contiene tutto il codice di rendering necessario per il sito sotto `/apps`. Ciò include i file CSS/JS memorizzati in un formato AEM denominato [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). Ciò include anche [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it) script per il rendering di dynamic HTML. Puoi pensare al **ui.apps** modulo come mappa della struttura nel JCR, ma in un formato che può essere memorizzato in un file system e impegnato nel controllo del codice sorgente. Il **ui.apps** il modulo contiene solo codice.
 
 Per creare solo questo modulo:
 

@@ -10,14 +10,15 @@ exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
 doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 4693
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2603'
-ht-degree: 2%
+source-wordcount: '2413'
+ht-degree: 0%
 
 ---
 
-# Configurare un ambiente di sviluppo AEM locale
+# Configurare un ambiente locale di sviluppo AEM
 
 Guida alla configurazione di uno sviluppo locale per Adobe Experience Manager, AEM. Include argomenti importanti sull’installazione locale, Apache Maven, gli ambienti di sviluppo integrati e il debug/risoluzione dei problemi. Sviluppo con **Eclipse IDE, CRXDE Liti, Visual Studio Code e IntelliJ** sono discussi.
 

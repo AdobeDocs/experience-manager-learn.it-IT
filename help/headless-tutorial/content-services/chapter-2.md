@@ -1,18 +1,17 @@
 ---
 title: Capitolo 2 - Definizione dei modelli per frammenti di contenuto dell’evento - Content Services
-seo-title: Getting Started with AEM Content Services - Chapter 2 - Defining Event Content Fragment Models
 description: Il capitolo 2 del tutorial AEM Headless tratta dell’abilitazione e della definizione dei modelli per frammenti di contenuto utilizzati per definire una struttura di dati normalizzata e un’interfaccia di authoring per la creazione di eventi.
-seo-description: Chapter 2 of the AEM Headless tutorial covers enabling and defining Content Fragment Models used to define a normalized data structure and authoring interface for creating Events.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 472
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 9%
+source-wordcount: '940'
+ht-degree: 0%
 
 ---
 

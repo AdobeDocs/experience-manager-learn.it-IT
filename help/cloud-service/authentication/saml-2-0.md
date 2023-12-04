@@ -10,10 +10,11 @@ jira: KT-9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 2511
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '3123'
-ht-degree: 2%
+source-wordcount: '3137'
+ht-degree: 1%
 
 ---
 
@@ -116,7 +117,7 @@ L&#39;archivio fonti attendibili globale è configurato con il certificato pubbl
 
 ![Replica l&#39;archivio fonti attendibili globale in pubblicazione AEM](./assets/saml-2-0/global-trust-store-replicate.png)
 
-1. Passa a __Strumenti > Implementazione > Pacchetti__.
+1. Accedi a __Strumenti > Implementazione > Pacchetti__.
 1. Creare un pacchetto
    + Nome pacchetto: `Global Trust Store`
    + Versione: `1.0.0`
@@ -142,7 +143,7 @@ _La creazione di un keystore per il servizio di autenticazione è necessaria qua
 
    _Utilizza la seguente soluzione alternativa temporanea utilizzando i pacchetti:_
 
-   1. Passa a __Strumenti > Implementazione > Pacchetti__.
+   1. Accedi a __Strumenti > Implementazione > Pacchetti__.
    1. Creare un pacchetto
       + Nome pacchetto: `Authentication Service`
       + Versione: `1.0.0`
@@ -229,7 +230,7 @@ La firma AuthnRequest e la crittografia delle asserzioni SAML sono facoltative, 
 
    _Utilizza la seguente soluzione alternativa temporanea utilizzando i pacchetti:_
 
-   1. Passa a __Strumenti > Implementazione > Pacchetti__.
+   1. Accedi a __Strumenti > Implementazione > Pacchetti__.
    1. Creare un pacchetto
       + Nome pacchetto: `Authentication Service`
       + Versione: `1.0.0`
@@ -395,7 +396,7 @@ La pubblicazione AEM supporta una singola configurazione del filtro Referrer, in
 
 Configurazioni OSGi per ambiente (`config.publish.dev`, `config.publish.stage`, e `config.publish.prod`) può essere definito con attributi specifici se `allow.hosts` (o `allow.hosts.regex`) variano da ambiente a ambiente.
 
-## Configurare la condivisione risorse tra le origini (CORS, Cross-Origin Resource Sharing)
+## Configurare la condivisione CORS (Cross-Origin Resource Sharing)
 
 Durante il processo di autenticazione SAML, l’IDP avvia un POST HTTP lato client per la pubblicazione AEM `.../saml_login` punto finale. Se l’IDP e la pubblicazione AEM esistono su host/domini diversi, la pubblicazione AEM __Condivisione risorse CRoss-Origin (CORS)__ deve essere configurato per consentire i POST HTTP dall’host/dominio dell’IDP.
 

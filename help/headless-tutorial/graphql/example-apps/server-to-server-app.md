@@ -11,10 +11,11 @@ thumbnail: KT-10798.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM headless as a Cloud Service" before-title="false"
 exl-id: 39b21a29-a75f-4a6c-ba82-377cf5cc1726
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 203
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 5%
+source-wordcount: '437'
+ht-degree: 0%
 
 ---
 
@@ -30,14 +31,14 @@ Visualizza [codice sorgente su GitHub](https://github.com/adobe/aem-guides-wknd-
 
 I seguenti strumenti devono essere installati localmente:
 
-+ [Node.js v18](https://nodejs.org/it)
++ [Node.js v18](https://nodejs.org/en)
 + [Git](https://git-scm.com/)
 
 ## Requisiti AEM
 
 L’applicazione Node.js funziona con le seguenti opzioni di distribuzione AEM. Tutte le distribuzioni richiedono [Sito WKND v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) da installare.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=it)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 + Facoltativamente [credenziali del servizio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) se si autorizzano richieste (ad esempio, connessione al servizio di authoring AEM).
 
 Questa applicazione Node.js può connettersi a AEM Author o AEM Publish in base ai parametri della riga di comando.

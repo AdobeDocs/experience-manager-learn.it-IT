@@ -11,10 +11,11 @@ last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 432
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1246'
-ht-degree: 1%
+source-wordcount: '1230'
+ht-degree: 0%
 
 ---
 
@@ -137,7 +138,7 @@ La mappatura può essere eseguita con [Mappatura Sling](https://sling.apache.org
 
 1. Nell’IDE, apri il file `ui.content` sottoprogetto
 1. Accedi a  `src/main/content/jcr_root`
-1. Crea una cartella . `etc`
+1. Creare una cartella `etc`
 1. In entrata `etc`, crea una cartella `map`
 1. In entrata `map`, crea una cartella `http`
 1. In entrata `http`, crea un file `.content.xml` con il contenuto:
@@ -350,7 +351,7 @@ Ricorda che abbiamo cambiato il tipo di questa pagina in quello di __Pagina SPA 
 
 Questa configurazione deve essere impostata solo sulla pagina AEM che corrisponde alla radice dell’SPA. Tutte le pagine AEM sotto questa pagina ereditano il valore.
 
-## Congratulazioni
+## Complimenti
 
 Hai preparato le configurazioni dell’AEM e le hai distribuite all’autore AEM locale. Ora sai come:
 

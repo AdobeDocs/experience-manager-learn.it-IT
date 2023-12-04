@@ -9,10 +9,11 @@ level: Beginner
 jira: KT-9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 868
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 2%
+source-wordcount: '1078'
+ht-degree: 0%
 
 ---
 
@@ -100,7 +101,7 @@ _Schermata dei passaggi_
       1. Seleziona __Trigger distribuzione > In caso di modifiche Git__
       1. Seleziona __Comportamento in caso di errori di metriche importanti > Continua immediatamente__
       1. Seleziona __Continua__
-   1. Sulla scheda __Codice sorgente__
+   1. Il giorno __Codice sorgente__ scheda
       1. Seleziona __Codice full stack__ opzione
       1. Seleziona la __Ambiente di sviluppo as a Cloud Service AEM__ dal __Ambienti di implementazione idonei__ casella di selezione
       1. Seleziona `aem-headless-quick-setup-wknd` nel __Archivio__ casella di selezione
@@ -154,7 +155,7 @@ _Schermata dei passaggi_
    $ npm start
    ```
 
-1. L’app React, in esecuzione localmente, inizia il [http://localhost:3000](Http://localhost:3000) e visualizza un elenco di avventure, derivate dall’AEM as a Cloud Service utilizzando le API GraphQL dell’AEM Headless.
+1. L’app React, in esecuzione localmente, inizia il [http://localhost:3000](http://localhost:3000) e visualizza un elenco di avventure, derivate dall’AEM as a Cloud Service utilizzando le API GraphQL dell’AEM Headless.
 
 ## 5. Modificare i contenuti in AEM
 
@@ -175,7 +176,7 @@ _Schermata dei passaggi_
    + Immagine principale: `/content/dam/wknd-shared/en/activities/cycling/mountain-biking.jpg`
 1. Seleziona __Salva__ nella barra delle azioni superiore
 1. Seleziona __Pubblicazione rapida__ dalla barra delle azioni superiore __...__
-1. Aggiorna l’app React in esecuzione su [http://localhost:3000](Http://localhost:3000).
+1. Aggiorna l’app React in esecuzione su [http://localhost:3000](http://localhost:3000).
 1. Nell’app React, seleziona l’avventura Ciclismo ora aggiornata e verifica le modifiche al contenuto apportate al frammento di contenuto.
 
 1. Con lo stesso approccio, nel servizio di authoring dell’AEM:

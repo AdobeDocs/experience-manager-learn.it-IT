@@ -6,10 +6,11 @@ topic: Development
 role: Developer
 level: Beginner
 thumbnail: 30476.jpeg
-source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
+duration: 433
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 51%
+source-wordcount: '290'
+ht-degree: 49%
 
 ---
 
@@ -28,7 +29,7 @@ L’obiettivo di questa esercitazione in più parti è quello di insegnare a uno
 
 L’esercitazione è progettata per funzionare con **AEM as a Cloud Service** ed è retrocompatibile con **AEM 6.5+** e **AEM 6.4.2+**.
 
-**[Visualizza l’esercitazione qui!](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)**
+**[Visualizza l’esercitazione qui.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)**
 
 ## Distribuzione di WKND a AEM as a Cloud Service{#deploying-wknd-to-aem-as-a-cloud-service}
 

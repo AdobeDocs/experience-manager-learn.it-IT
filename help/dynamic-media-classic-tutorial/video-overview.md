@@ -7,9 +7,10 @@ role: User
 level: Beginner
 doc-type: Tutorial
 exl-id: dfbf316f-3922-4bc7-b3f3-2a5bbdeb7063
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1587
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '6118'
+source-wordcount: '6032'
 ht-degree: 0%
 
 ---
@@ -96,7 +97,7 @@ Prima di iniziare, parliamo di alcuni termini che dovresti conoscere per utilizz
    - Un file video contiene in genere più tracce, ovvero una traccia video (senza audio) e una o più tracce audio (senza video), intercorrelate e sincronizzate.
    - Il formato del file video determina l&#39;organizzazione di queste diverse tracce di dati e metadati.
 
-- **Codec.** Un codec video descrive l’algoritmo con cui un video viene codificato utilizzando la compressione. L&#39;audio viene codificato anche attraverso un codec audio.
+- **Codec** Un codec video descrive l’algoritmo con cui un video viene codificato utilizzando la compressione. L&#39;audio viene codificato anche attraverso un codec audio.
 
    - I codec riducono al minimo la quantità di informazioni necessarie per riprodurre il video. Anziché informazioni sui singoli frame, vengono memorizzate solo le informazioni sulle differenze tra un frame e quello successivo.
    - Poiché la maggior parte dei video cambia poco da un fotogramma all&#39;altro, i codec consentono tassi di compressione elevati, che si traducono in dimensioni di file più piccole.
@@ -112,8 +113,8 @@ Prima di iniziare, parliamo di alcuni termini che dovresti conoscere per utilizz
 
 - **Proporzioni di visualizzazione.** Rapporto tra la larghezza di un video e l’altezza di un video. Se le proporzioni del video non corrispondono a quelle del lettore, è possibile che vengano visualizzate delle &quot;barre nere&quot; o dello spazio vuoto. Due proporzioni comuni per la visualizzazione dei video:
 
-   - 4:3 (1.33:1). Utilizzato per quasi tutti i contenuti televisivi a definizione standard.
-   - 16:9 (1.78:1). Utilizzato per quasi tutti i contenuti TV widescreen, ad alta definizione (HDTV) e film.
+   - 4:3 (1,33:1). Utilizzato per quasi tutti i contenuti televisivi a definizione standard.
+   - 16:9 (1,78:1). Utilizzato per quasi tutti i contenuti TV widescreen, ad alta definizione (HDTV) e film.
 
 - **Velocità in bit/velocità dati.** Quantità di dati codificata per costituire un singolo secondo di riproduzione video (in kilobit al secondo).
 

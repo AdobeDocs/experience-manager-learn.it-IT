@@ -8,10 +8,11 @@ role: Developer
 level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
 last-substantial-update: 2021-04-23T00:00:00Z
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
+duration: 199
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 1%
+source-wordcount: '665'
+ht-degree: 0%
 
 ---
 
@@ -83,7 +84,7 @@ Vai a **File -> Importa** e seleziona **Progetti Maven esistenti** come mostrato
 
 ![data-source](assets/import-mvn-project.JPG)
 
-Fai clic su Avanti
+Fai clic su Successivo
 
 Selezionare c:\aemformsbundles\miosito facendo clic sul pulsante **Sfoglia** pulsante
 
@@ -118,7 +119,7 @@ Per creare il progetto, effettua le seguenti operazioni:
 * Accedi a `c:\aemformsbundles\mysite\core`
 * Esegui il comando `mvn clean install -PautoInstallBundle`
 Il comando precedente crea e installa il bundle nel server AEM in esecuzione su `http://localhost:4502`. Il bundle è disponibile anche sul file system all’indirizzo
-   `C:\AEMFormsBundles\mysite\core\target` e possono essere distribuiti tramite [Console web Felix](http://localhost:4502/system/console/bundles)
+  `C:\AEMFormsBundles\mysite\core\target` e possono essere distribuiti tramite [Console web Felix](http://localhost:4502/system/console/bundles)
 
 ## Passaggi successivi
 

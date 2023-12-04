@@ -8,14 +8,15 @@ role: Admin
 level: Experienced
 exl-id: 85c9b51e-92bb-4376-8684-57c9c3204b2f
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 203
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 1%
+source-wordcount: '733'
+ht-degree: 0%
 
 ---
 
-# Autenticazione per AEM Author tramite OKTA
+# Autenticazione per l’authoring AEM con OKTA
 
 Il primo passaggio consiste nel configurare l’app sul portale OKTA. Una volta approvata l’app dall’amministratore OKTA, potrai accedere al certificato IdP e all’URL di accesso single sign-on. Di seguito sono riportate le impostazioni utilizzate in genere per la registrazione di una nuova applicazione.
 
@@ -39,9 +40,9 @@ Memorizza la password dell&#39;archivio fonti attendibili. La password dovrà es
 * Accedi a [Archivio attendibile globale](http://localhost:4502/libs/granite/security/content/truststore.html).
 * Fare clic su &quot;Aggiungi certificato da file CER&quot;. Aggiungi il certificato IdP fornito da OKTA e fai clic su invia.
 
-   >[!NOTE]
-   >
-   >Non mappare il certificato ad alcun utente
+  >[!NOTE]
+  >
+  >Non mappare il certificato ad alcun utente
 
 Quando si aggiunge il certificato all’archivio fonti attendibili, si deve ottenere l’alias del certificato come mostrato nella schermata seguente. Il nome dell&#39;alias potrebbe essere diverso nel tuo caso.
 

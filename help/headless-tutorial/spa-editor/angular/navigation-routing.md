@@ -2,10 +2,7 @@
 title: Aggiungi navigazione e indirizzamento | Guida introduttiva dell'Angular e dell'editor SPA dell'AEM
 description: Scopri come sono supportate più visualizzazioni nell’SPA utilizzando le pagine AEM e l’SDK dell’editor SPA. La navigazione dinamica viene implementata utilizzando i percorsi Angular e aggiunta a un componente Intestazione esistente.
 feature: SPA Editor
-topics: development
 version: Cloud Service
-activity: develop
-audience: developer
 jira: KT-5312
 thumbnail: 5312-spa-angular.jpg
 topic: SPA
@@ -13,10 +10,11 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 936
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2712'
-ht-degree: 1%
+source-wordcount: '2531'
+ht-degree: 0%
 
 ---
 
@@ -119,7 +117,7 @@ Nei capitoli precedenti, il `HeaderComponent` il componente è stato aggiunto co
 
 ## Aggiungere il componente Header al modello SPA {#add-header-template}
 
-1. Apri un browser e accedi all’AEM, [http://localhost:4502/](Http://localhost:4502/). La base di codice iniziale deve essere già distribuita.
+1. Apri un browser e accedi all’AEM, [http://localhost:4502/](http://localhost:4502/). La base di codice iniziale deve essere già distribuita.
 2. Accedi a **[!UICONTROL Modello pagina SPA]**: [http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html).
 3. Seleziona il più esterno **[!UICONTROL Contenitore di layout principale]** e fai clic sul relativo **[!UICONTROL Policy]** icona. Stai attento **non** per selezionare **[!UICONTROL Contenitore di layout]** non bloccato per l’authoring.
 
@@ -518,7 +516,7 @@ Ora che il `NavigationComponent` è stato implementato, il `HeaderComponent` dev
    $ npm start
    ```
 
-2. Apri una scheda del browser e passa a [http://localhost:4200/](Http://localhost:4200/).
+2. Apri una scheda del browser e passa a [http://localhost:4200/](http://localhost:4200/).
 
    Il **server di sviluppo webpack** deve essere configurato per fungere da proxy del modello JSON da un&#39;istanza locale di AEM (`ui.frontend/proxy.conf.json`). Questo ci consentirà di codificare direttamente in base al contenuto creato in AEM dall’esercitazione precedente.
 
@@ -579,7 +577,7 @@ Ora che il `NavigationComponent` è stato implementato, il `HeaderComponent` dev
 
    Dal momento che `NavigationComponent` viene ora utilizzato come parte del `HeaderComponent` deve essere dichiarato come parte del banco di prova.
 
-7. Salva le modifiche apportate ai file aperti e torna a **server di sviluppo webpack**: [http://localhost:4200/](Http://localhost:4200/)
+7. Salva le modifiche apportate ai file aperti e torna a **server di sviluppo webpack**: [http://localhost:4200/](http://localhost:4200/)
 
    ![Navigazione intestazione completata](assets/navigation-routing/completed-header.png)
 

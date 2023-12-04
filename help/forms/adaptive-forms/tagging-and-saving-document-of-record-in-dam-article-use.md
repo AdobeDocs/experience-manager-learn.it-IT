@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
 last-substantial-update: 2019-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 274
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -170,7 +171,7 @@ Per fare in modo che questo esempio funzioni sul tuo sistema, segui i passaggi e
 * [Importare le risorse dell’articolo](assets/tag-and-store-in-dam-assets.zip) utilizzo del gestore di pacchetti AEM
 * Apri [modulo di esempio in modalità anteprima](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Compila tutti i campi** e invia il modulo.
 * [Passa alla cartella dei picchi in DAM](http://localhost:4502/assets.html/content/dam/Peak). Dovresti vedere DoR nella cartella Peak. Controllare le proprietà del documento. Deve essere contrassegnato in modo appropriato.
-Congratulazioni!! L&#39;esempio è stato installato correttamente nel sistema
+Complimenti!! L&#39;esempio è stato installato correttamente nel sistema
 
 * Esaminiamo la [workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) che viene attivata all’invio del modulo.
 * Il primo passaggio del flusso di lavoro crea un nome file univoco concatenando il nome dei richiedenti e la provincia di residenza.

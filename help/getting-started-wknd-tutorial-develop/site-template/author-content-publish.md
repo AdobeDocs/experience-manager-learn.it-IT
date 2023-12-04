@@ -11,10 +11,11 @@ thumbnail: KT-7497.jpg
 doc-type: Tutorial
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
 recommendations: noDisplay, noCatalog
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 350
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1330'
-ht-degree: 3%
+source-wordcount: '1285'
+ht-degree: 1%
 
 ---
 
@@ -155,7 +156,7 @@ Quindi, passa al servizio Publish per visualizzare le modifiche.
 
    ![pubblicazione diretta](assets/author-content-publish/page-editor-publish.png)
 
-1. Torna a **Servizio di pubblicazione AEM** per visualizzare le modifiche. Molto probabilmente **non** visualizzare immediatamente gli aggiornamenti. Questo perché il **Servizio di pubblicazione AEM** include [caching tramite un server web Apache e CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html?lang=it). Per impostazione predefinita, il contenuto di HTML viene memorizzato nella cache per circa 5 minuti.
+1. Torna a **Servizio di pubblicazione AEM** per visualizzare le modifiche. Molto probabilmente **non** visualizzare immediatamente gli aggiornamenti. Questo perché il **Servizio di pubblicazione AEM** include [caching tramite un server web Apache e CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/caching.html). Per impostazione predefinita, il contenuto di HTML viene memorizzato nella cache per circa 5 minuti.
 
 1. Per ignorare la cache a scopo di test/debug, è sufficiente aggiungere un parametro di query come `?nocache=true`. L’URL sarà simile al seguente `https://publish-pYYYY-eXXXX.adobeaemcloud.com/content/wknd/en/article/hello-world.html?nocache=true`. Ulteriori dettagli sulla strategia e sulle configurazioni di caching disponibili [si trova qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/overview.html).
 

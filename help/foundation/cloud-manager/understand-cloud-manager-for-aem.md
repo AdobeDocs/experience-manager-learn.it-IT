@@ -10,10 +10,11 @@ level: Beginner
 exl-id: 53279cbb-70c8-4319-b5bb-9a7d350a7f72
 last-substantial-update: 2022-05-10T00:00:00Z
 thumbnail: understand-cloud-manager.jpg
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1044
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 16%
+source-wordcount: '464'
+ht-degree: 14%
 
 ---
 
@@ -74,7 +75,7 @@ Il [Pipeline CI/CD di produzione](https://experienceleague.adobe.com/docs/experi
 
 ## Pipeline CI/CD non di produzione {#cicd-non-production-pipeline}
 
-[Le pipeline CI/CD non di produzione sono suddivise in due categorie: pipeline di qualità del codice e pipeline di implementazione. ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html) Le pipeline di qualità del codice instradano tutto il codice da un ramo Git per la generazione e la valutazione in base alla scansione della qualità del codice di Cloud Manager. Le pipeline di implementazione supportano l’implementazione automatica del codice dall’archivio Git in qualsiasi ambiente non di produzione, ovvero qualsiasi ambiente con provisioning AEM che non sia Stage o Production.
+[Pipeline CI/CD non di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html) sono suddivisi in due categorie: pipeline di qualità del codice e pipeline di distribuzione. Le pipeline di qualità del codice instradano tutto il codice da un ramo Git per la generazione e la valutazione in base alla scansione della qualità del codice di Cloud Manager. Le pipeline di implementazione supportano l’implementazione automatica del codice dall’archivio Git in qualsiasi ambiente non di produzione, ovvero qualsiasi ambiente con provisioning AEM che non sia Stage o Production.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316?quality=12&learn=on)
 

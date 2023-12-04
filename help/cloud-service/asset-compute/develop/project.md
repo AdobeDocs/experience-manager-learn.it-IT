@@ -8,10 +8,11 @@ feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
 exl-id: ebb11eab-1412-4af5-bc09-e965b9116ac9
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 223
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 2%
+source-wordcount: '577'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +33,7 @@ Utilizza il [Plug-in di Asset compute CLI Adobe I/O](../set-up/development-envir
    + Questo comando può generare un browser Web che richiede l&#39;Adobe I/O dell&#39;autenticazione. In caso contrario, fornisci le credenziali di Adobe associate al [servizi e prodotti Adobe richiesti](../set-up/accounts-and-services.md). Se non riesci ad accedere, segui questa procedura [queste istruzioni su come generare un progetto](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user).
 1. __Seleziona organizzazione__
    + Seleziona l’organizzazione di Adobe con AEM as a Cloud Service, App Builder è registrato con
-1. __Seleziona un progetto__
+1. __Seleziona progetto__
    + Individua e seleziona il progetto. Questo è il [Titolo progetto](../set-up/app-builder.md) creato dal modello di progetto App Builder, in questo caso `WKND AEM Asset Compute`
 1. __Seleziona area di lavoro__
    + Seleziona la `Development` workspace
@@ -54,7 +55,7 @@ Lo strumento per sviluppatori richiede un file denominato `console.json` che con
 1. Seleziona l’area di lavoro del progetto per scaricare `console.json` credenziali per, in questo caso seleziona `Development`
 1. Vai alla directory principale del progetto di Adobe I/O e tocca __Scarica tutto__ nell’angolo superiore destro.
 1. Un file viene scaricato come `.json` file con prefisso del progetto e dell’area di lavoro, ad esempio: `wkndAemAssetCompute-81368-Development.json`
-1. Puoi effettuare le seguenti operazioni
+1. È possibile:
    + Rinomina il file come `console.json` e spostarlo nella directory principale del progetto Asset compute worker. Questo è l’approccio di questa esercitazione.
    + Spostala in una cartella arbitraria E fai riferimento a tale cartella dal tuo `.env` file con una voce di configurazione `ASSET_COMPUTE_INTEGRATION_FILE_PATH`. Il percorso del file può essere assoluto o relativo alla directory principale del progetto. Ad esempio:
       + `ASSET_COMPUTE_INTEGRATION_FILE_PATH=/Users/example-user/secrets/wkndAemAssetCompute-81368-Development.json`

@@ -8,10 +8,11 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1753
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '4571'
-ht-degree: 1%
+source-wordcount: '4460'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +39,7 @@ Questo tutorial illustra il codice necessario per creare un modello di progetto 
 * [Pacchetto tutorial completato](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Archivio completo del codice su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Questo tutorial presuppone una conoscenza di base di [Pratiche di sviluppo dell&#39;AEM](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/the-basics.html) e una certa familiarità con [Configurazione del progetto AEM Maven](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). Tutto il codice menzionato è destinato a essere utilizzato come riferimento e deve essere distribuito solo a un [sviluppo locale istanza AEM](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
+Questo tutorial presuppone una conoscenza di base di [Pratiche di sviluppo dell&#39;AEM](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/the-basics.html) e una certa familiarità con [Configurazione del progetto AEM Maven](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). Tutto il codice menzionato è destinato a essere utilizzato come riferimento e deve essere distribuito solo a un [sviluppo locale istanza AEM](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
 
 ## Struttura di un modello di progetto
 
@@ -258,7 +259,7 @@ Ora possiamo testare il nostro modello di progetto creando un nuovo progetto.
 
 1. Fai clic su Crea per completare la creazione del progetto basato sul modello personalizzato. Noterai nella dashboard del progetto che la sezione Attività e le altre tessere configurate in gadget vengono visualizzate automaticamente.
 
-   ![Riquadro Attività](./assets/develop-aem-projects/tasks-tile.png)
+   ![Sezione attività](./assets/develop-aem-projects/tasks-tile.png)
 
 
 ## Perché Workflow?

@@ -9,9 +9,10 @@ role: Developer
 level: Intermediate
 exl-id: 0c77a853-fa71-46ac-8626-99bc69d6222d
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 226
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,7 @@ A partire da AEM Forms 6.4, ora è possibile utilizzare il modello dati del modu
 
 Per testare questa funzionalità sul server, attieniti alle istruzioni seguenti
 * [Scarica e distribuisci il bundle setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Questo è il bundle OSGI personalizzato che imposta le proprietà dei metadati.
->!![NOTE]In AEM Forms 6.5 e versioni successive questa funzionalità è disponibile come [descrive qui](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
+>In AEM Forms 6.5 e versioni successive questa funzionalità è disponibile come [descrive qui](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
 
 * Configurare tomcat con il file SampleRest.war come descritto [qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html).Il file .war distribuito in Tomcat ha il codice per restituire il punteggio di credito del richiedente. Il credito è un numero casuale compreso tra 200 e 800
 
@@ -36,5 +37,5 @@ Per testare questa funzionalità sul server, attieniti alle istruzioni seguenti
    * Modulo adattivo per attivare il flusso di lavoro all’invio.
 * Apri [ModuloApplicazioneIpoteca](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Inserisci i dettagli e invia. All’invio del modulo [flusso di lavoro per richiesta di prestito](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) viene attivato.
 
-![ flusso di lavoro ](assets/fdm-as-service-step-workflow.PNG).
+![ workflow ](assets/fdm-as-service-step-workflow.PNG).
 Il flusso di lavoro utilizza il componente Dividi o per instradare l’applicazione all’amministratore se il punteggio di credito è superiore a 500. Se il punteggio di credito è inferiore a 500, l’applicazione viene instradata a cavery

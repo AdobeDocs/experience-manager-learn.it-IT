@@ -1,19 +1,15 @@
 ---
 title: AEM Forms con schema JSON e dati[Part3]
-seo-title: AEM Forms with JSON Schema and Data[Part3]
 description: Tutorial in più parti per illustrare i passaggi necessari per creare un modulo adattivo con schema JSON e interrogare i dati inviati.
-seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 412eea77-3cf4-43bb-9d2f-ae860cd9d3be
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+duration: 163
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
@@ -27,7 +23,7 @@ Per poter eseguire una query sui dati inviati, è necessario memorizzare lo sche
 
 Quando viene inviato un modulo adattivo, verifichiamo se lo schema JSON associato si trova nel database. Se lo schema JSON non esiste, lo schema JSON viene recuperato e memorizzato nella tabella appropriata. Inoltre, associamo il nome del modulo allo schema JSON. La schermata seguente mostra la tabella in cui sono memorizzati gli schemi JSON.
 
-![schemajson](assets/jsonschemas.gif)
+![jsonschema](assets/jsonschemas.gif)
 
 ```java
 public String getJSONSchema(String afPath) {

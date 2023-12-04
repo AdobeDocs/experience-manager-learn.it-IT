@@ -1,18 +1,15 @@
 ---
 title: Acroforms con AEM Forms
-seo-title: Merge Adaptive Form data with Acroform
 description: Parte 1 dell’integrazione di Acroforms con AEM Forms. Creazione di un modulo adattivo tramite Acroform e unione dei dati per ottenere un PDF.
 feature: adaptive-forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.5
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+duration: 165
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---

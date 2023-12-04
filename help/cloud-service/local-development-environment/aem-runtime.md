@@ -10,10 +10,11 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-source-git-commit: 9b733c7070191adb34c9e7c05c92b0567c080e14
+duration: 563
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1793'
-ht-degree: 10%
+source-wordcount: '1695'
+ht-degree: 8%
 
 ---
 
@@ -132,7 +133,7 @@ Il servizio di pubblicazione AEM locale offre agli sviluppatori l’esperienza l
       + Immetti la password amministratore come `admin`. Qualsiasi password amministratore è accettabile, tuttavia si consiglia di utilizzare l’impostazione predefinita per lo sviluppo locale per ridurre la necessità di riconfigurare.
 
    Tu *non può* avvia AEM come Cloud Service Quickstart Jar [facendo doppio clic](#troubleshooting-double-click).
-1. Accedi al servizio di pubblicazione AEM locale all’indirizzo [http://localhost:4503](Http://localhost:4503) in un browser Web
+1. Accedi al servizio di pubblicazione AEM locale all’indirizzo [http://localhost:4503](http://localhost:4503) in un browser Web
 
 >[!BEGINTABS]
 

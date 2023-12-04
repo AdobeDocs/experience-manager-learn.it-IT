@@ -8,10 +8,11 @@ role: Leader, Architect, Developer, Admin, User
 level: Beginner
 doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 820
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2602'
-ht-degree: 4%
+source-wordcount: '2586'
+ht-degree: 1%
 
 ---
 
@@ -92,12 +93,12 @@ Di seguito è riportata una matrice delle principali funzionalità di base offer
         <tr>
             <td>Funzione Foundation</td>
             <td>5.6.x</td>
-            <td>6.0</td>
-            <td>6.1</td>
+            <td>6,0</td>
+            <td>6,1</td>
             <td>6.2</td>
             <td>6.3</td>
             <td>6.4</td>
-            <td>6.5</td>
+            <td>6,5</td>
         </tr>
     </thead>
     <tbody>
@@ -146,7 +147,7 @@ Di seguito è riportata una matrice delle principali funzionalità di base offer
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/it/experience-manager/6-5/sites/deploying/using/revision-cleanup.html" target="_blank">Pulizia revisioni online</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/revision-cleanup.html" target="_blank">Pulizia revisioni online</a>:</strong>
                 Manutenzione dell'archivio senza tempi di inattività del server.</td>
             <td> </td>
             <td> </td>
@@ -286,12 +287,12 @@ Di seguito è riportata una matrice delle principali funzioni di sicurezza offer
         <tr>
             <td>Funzione di sicurezza</td>
             <td>5.6.x</td>
-            <td>6.0</td>
-            <td>6.1</td>
+            <td>6,0</td>
+            <td>6,1</td>
             <td>6.2</td>
             <td>6.3</td>
             <td>6.4</td>
-            <td>6.5</td>
+            <td>6,5</td>
         </tr>
     </thead>
     <tbody>
@@ -307,7 +308,7 @@ Di seguito è riportata una matrice delle principali funzioni di sicurezza offer
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank">Gestione archivio chiavi</a></strong>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank">Gestione archivio chiavi</a></strong>
             <br> Archivio attendibilità globale, certificati e chiavi gestiti all'interno dell'archivio.</td>
         <td></td>
         <td>✔</td>
@@ -329,7 +330,7 @@ Di seguito è riportata una matrice delle principali funzioni di sicurezza offer
         <td>✔</td>
     </tr>
     <tr>
-        <td><a href="https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong>CORS</strong> <strong>supporto</strong></a>
+        <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong>CORS</strong> <strong>supporto</strong></a>
             <br> Supporto di Cross-Origin Resource Sharing per una maggiore flessibilità delle applicazioni.</td>
         <td></td>
         <td></td>
@@ -436,12 +437,12 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
         <tr>
             <td><strong>Funzione Sites</strong></td>
             <td>5.6.x</td>
-            <td>6.0</td>
-            <td>6.1</td>
+            <td>6,0</td>
+            <td>6,1</td>
             <td>6.2</td>
             <td>6.3</td>
             <td>6.4</td>
-            <td>6.5</td>
+            <td>6,5</td>
         </tr>
     </thead>
     <tbody>
@@ -523,7 +524,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">Traduzione dei contenuti</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">Traduzione dei contenuti</a>:</strong>
             Il framework Plug and Play si integra con i principali servizi di traduzione di terze parti del settore.</td>
             <td></td>
             <td></td>
@@ -684,12 +685,12 @@ Di seguito è riportata una matrice delle funzioni principali di Assets offerte 
         <tr>
             <td>Funzionalità risorse</td>
             <td>5.6.x</td>
-            <td>6.0</td>
-            <td>6.1</td>
+            <td>6,0</td>
+            <td>6,1</td>
             <td>6.2</td>
             <td>6.3</td>
             <td>6.4</td>
-            <td>6.5</td>
+            <td>6,5</td>
         </tr>
     </thead>
     <tbody>
@@ -896,12 +897,12 @@ Di seguito è riportata una matrice delle funzioni principali di Assets offerte 
         <tr>
             <td>Funzione Dynamic Medie</td>
             <td>5.6.x</td>
-            <td>6.0</td>
-            <td>6.1</td>
+            <td>6,0</td>
+            <td>6,1</td>
             <td>6.2</td>
             <td>6.3 +FP</td>
             <td>6.4</td>
-            <td>6.5</td>
+            <td>6,5</td>
         </tr>
     </thead>
     <tbody>
@@ -999,12 +1000,12 @@ Di seguito è riportata una matrice delle principali funzioni del componente agg
         <tr>
             <td>Funzione Forms</td>
             <td>5.6.x</td>
-            <td>6.0</td>
-            <td>6.1</td>
+            <td>6,0</td>
+            <td>6,1</td>
             <td>6.2</td>
             <td>6.3</td>
             <td>6.4</td>
-            <td>6.5</td>
+            <td>6,5</td>
         </tr>
     </thead>
     <tbody>

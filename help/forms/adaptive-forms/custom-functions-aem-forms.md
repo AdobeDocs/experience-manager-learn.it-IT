@@ -9,9 +9,10 @@ level: Beginner
 jira: KT-9685
 exl-id: 07fed661-0995-41ab-90c4-abde35a14a4c
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 322
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ Per definire la prima funzione personalizzata, procedere come segue:
 * Crea un file denominato **js.txt** sotto **clientlibs** cartella. Salva le modifiche.
 * La struttura delle cartelle deve essere simile alla schermata seguente.
 
-![Editor regola](assets/folder-structure.png)
+![Editor regole](assets/folder-structure.png)
 
 * Fai doppio clic su functions.js per aprire l’editor.
 Copia il seguente codice in functions.js e salva le modifiche.

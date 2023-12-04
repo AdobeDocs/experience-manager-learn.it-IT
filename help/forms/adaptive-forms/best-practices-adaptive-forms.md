@@ -8,9 +8,10 @@ role: Developer
 level: Beginner
 exl-id: fbfc74d7-ba7c-495a-9e3b-63166a3025ab
 last-substantial-update: 2020-09-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 83
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '281'
 ht-degree: 1%
 
 ---
@@ -37,6 +38,7 @@ I moduli di Adobe Experience Manager (AEM) possono aiutarti a trasformare transa
    * I frammenti di modulo devono essere considerati durante lo sviluppo di moduli di grandi dimensioni. Attiva il caricamento lento dei frammenti di modulo per tempi di caricamento più rapidi
    * **DataModel**
       * Si consiglia di associare il modulo adattivo al modello dati appropriato
+
    * **Eventi oggetto**
       * Il codice relativo alla visibilità di un oggetto deve sempre essere posizionato nell&#39;evento di visibilità di tale oggetto.
    * **Script**

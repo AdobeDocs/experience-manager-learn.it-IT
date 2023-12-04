@@ -8,10 +8,11 @@ role: Developer
 level: Intermediate
 doc-type: Feature Video
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 343
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 17%
+source-wordcount: '337'
+ht-degree: 11%
 
 ---
 
@@ -92,8 +93,8 @@ Di seguito è riportato il modello XML per il nodo di configurazione Gestione co
 | AdobeRGB | RGB | Adobe RGB (1998) |
 | AppleRGB | RGB | Apple RGB |
 | CIERGB | RGB | CIE RGB |
-| CoatedFogra27 | CMYK | FOGRA27 rivestito (ISO 12647-2:2004) |
-| CoatedFogra39 | CMYK | FOGRA39 rivestita (ISO 12647-2:2004) |
+| Fogra27 rivestito | CMYK | FOGRA27 rivestito (ISO 12647-2:2004) |
+| Fogra39 rivestito | CMYK | FOGRA39 rivestita (ISO 12647-2:2004) |
 | GraCol rivestito | CMYK | GracoL 2006 rivestito (ISO 12647-2:2004) |
 | ColorMatchRGB | RGB | ColorMatch RGB |
 | EuropaISOCoato | CMYK | Europa FOGRA27 con rivestimento ISO |
@@ -114,7 +115,7 @@ Di seguito è riportato il modello XML per il nodo di configurazione Gestione co
 | SheetfedUncoated | CMYK | U.S. Sheetfed non rivestito v2 |
 | SMPTE | RGB | SMPTE-C |
 | sRGB | sRGB RGB | IEC61966-2.1 |
-| UncoatedFogra29 | CMYK | FOGRA29 non rivestito (ISO 12647-2:2004) |
+| Fogra non rivestito29 | CMYK | FOGRA29 non rivestito (ISO 12647-2:2004) |
 | WebCoated | CMYK | SWOP (U.S. Web Coated) v2 |
 | WebCoatedFogra28 | CMYK | FOGRA28 rivestito con web (ISO 12647-2:2004) |
 | WebCoatedGrade3 | CMYK | Carta rivestita SWOP 2006 Grado 3 |

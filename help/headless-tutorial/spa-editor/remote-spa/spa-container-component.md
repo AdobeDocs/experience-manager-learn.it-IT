@@ -11,9 +11,10 @@ last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 453
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1112'
 ht-degree: 1%
 
 ---
@@ -360,7 +361,7 @@ Utilizza la modalità Layout AEM per regolare le dimensioni e il layout dei comp
    ![Componenti layout](./assets/spa-container-component/layout-components.png)
 
 1. __Anteprima__ le modifiche apportate nell’Editor pagina per AEM
-1. Aggiorna l’app WKND in esecuzione localmente il [http://localhost:3000](Http://localhost:3000) per visualizzare le modifiche create.
+1. Aggiorna l’app WKND in esecuzione localmente il [http://localhost:3000](http://localhost:3000) per visualizzare le modifiche create.
 
    ![Componente contenitore in SPA](./assets/spa-container-component/localhost-final.png)
 

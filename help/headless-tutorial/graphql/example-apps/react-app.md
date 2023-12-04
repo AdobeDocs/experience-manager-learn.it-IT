@@ -12,10 +12,11 @@ level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
 badgeVersions: label="AEM headless as a Cloud Service" before-title="false"
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 374
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 4%
+source-wordcount: '799'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +41,7 @@ I seguenti strumenti devono essere installati localmente:
 
 L’applicazione React funziona con le seguenti opzioni di implementazione dell’AEM. Tutte le distribuzioni richiedono [Sito WKND v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) da installare.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=it)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 + Configurazione locale con [l’SDK di AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it)
    + Richiede [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
 
@@ -85,7 +86,7 @@ L’applicazione React è progettata per connettersi a un __Pubblicazione AEM__ 
    $ npm start
    ```
 
-1. Viene caricata una nuova finestra del browser [http://localhost:3000](Http://localhost:3000)
+1. Viene caricata una nuova finestra del browser [http://localhost:3000](http://localhost:3000)
 1. Nell’applicazione deve essere visualizzato un elenco di avventure dal sito di riferimento WKND.
 
 ## Il codice

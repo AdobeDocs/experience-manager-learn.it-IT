@@ -9,10 +9,11 @@ level: Beginner
 jira: KT-6060
 thumbnail: 39151.jpg
 exl-id: 7d7942ae-7e38-4abd-9900-5b8e3542f5e1
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 332
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 95%
+source-wordcount: '196'
+ht-degree: 90%
 
 ---
 
@@ -32,4 +33,4 @@ Adobe Experience Manager si basa sugli utenti, i gruppi di utenti e i profili di
 ## Risorse aggiuntive
 
 + [Supporto IMS per Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=it)
-+ [Gruppi di utenti forniti da AEM e relative autorizzazioni](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups)
++ [Gruppi di utenti forniti dall’AEM e relative autorizzazioni](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups)

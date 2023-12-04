@@ -5,32 +5,30 @@ topic: Development
 role: Developer
 sub-product: Experience Manager Forms
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: 96ff44c4b9806205682ab305d391614f92bb2536
+duration: 98
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
 
 # Esercitazioni e video su AEM Forms {#overview}
 
-Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la creazione, la gestione, la pubblicazione e l’aggiornamento di moduli digitali complessi, garantendo al contempo l’integrazione con processi back-end, regole aziendali e dati. Questa guida utente contiene video e tutorial sulle numerose funzioni e caratteristiche di AEM Forms
+Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la creazione, la gestione, la pubblicazione e l’aggiornamento di moduli digitali complessi, garantendo al contempo l’integrazione con i processi back-end, le regole aziendali e i dati. Questa guida utente contiene video e tutorial sulle numerose funzioni e caratteristiche di AEM Forms
 
 <div id="whats-new-section">
 
 ## Novità
 
 * **[Gestione dei messaggi di errore nel passaggio del servizio Richiama modello dati modulo](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
-
-   *Una variabile in un modello di flusso di lavoro è un modo per memorizzare un valore in base al relativo tipo di dati*
+  *Una variabile in un modello di flusso di lavoro è un modo per memorizzare un valore in base al relativo tipo di dati*
 
 * **[Grafici Multi-Series nei documenti di comunicazione interattiva (video)](./interactive-communications/multiseriescharts.md)**
-
-   *Tracciare più serie nello stesso grafico. I grafici a serie multiple vengono in genere utilizzati in associazione con il tipo di grafico a linee, a barre o a colonne.*
+  *Tracciare più serie nello stesso grafico. I grafici a serie multiple vengono in genere utilizzati in associazione con il tipo di grafico a linee, a barre o a colonne.*
 
 * **[Creazione di modelli di flusso di lavoro riutilizzabili](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
-
-   *Creare modelli di flusso di lavoro non associati a un modulo specifico*
+  *Creare modelli di flusso di lavoro non associati a un modulo specifico*
 
 </div>
 

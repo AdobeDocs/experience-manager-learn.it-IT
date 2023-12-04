@@ -13,10 +13,11 @@ thumbnail: KT-13328.jpeg
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 0cc3d3bc-e4ea-4ab2-8878-adbcf0c914f5
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+duration: 2373
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1637'
-ht-degree: 3%
+source-wordcount: '1533'
+ht-degree: 0%
 
 ---
 
@@ -89,7 +90,7 @@ Per analizzare, raccogliere informazioni e condividerle con altri dai dati racco
 
 Per ulteriori informazioni sulla configurazione e i concetti di Analytics, si consiglia vivamente di utilizzare le risorse seguenti:
 
-+ [Suite per report](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html)
++ [Suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html)
 + [Variabili di conversione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html)
 + [Eventi di successo](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html)
 + [Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)
@@ -276,5 +277,5 @@ Implementando i passaggi consigliati e utilizzando le risorse fornite, come il d
 + [Utilizzo di Adobe Client Data Layer con i Componenti core](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=it)
 + [Integrazione dei tag di raccolta dati Experienci Platform e AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=it)
 + [Panoramica di Adobe Experience Platform Web SDK e Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
-+ [Tutorial su Raccolta dati](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
++ [Tutorial sulla raccolta dati](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
 + [Panoramica Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

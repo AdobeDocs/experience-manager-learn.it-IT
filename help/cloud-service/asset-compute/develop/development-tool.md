@@ -2,20 +2,18 @@
 title: Strumento di sviluppo Asset compute
 description: Lo strumento di sviluppo Asset compute è un web harness locale che consente agli sviluppatori di configurare ed eseguire i processi di lavoro Asset Computer a livello locale, al di fuori del contesto dell’SDK dell’AEM rispetto alle risorse Asset compute in Adobe I/O Runtime.
 feature: Asset Compute Microservices
-topics: renditions, development
 version: Cloud Service
-activity: develop
-audience: developer
-doc-type: tutorial
+doc-type: Tutorial
 jira: KT-6283
 thumbnail: 40241.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: cbe08570-e353-4daf-94d1-a91a8d63406d
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 216
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---

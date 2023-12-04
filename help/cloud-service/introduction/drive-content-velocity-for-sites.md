@@ -3,9 +3,10 @@ title: Come velocizzare i contenuti con Adobe Experience Manager
 description: Scopri la velocità dei contenuti e il loro valore nelle organizzazioni aziendali. Immergiti in quattro principi di implementazione efficace e nelle insidie da considerare lungo il percorso.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: bd886704f10834bb07b42d6b5c0f116496da36de
+duration: 728
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2795'
+source-wordcount: '2742'
 ht-degree: 0%
 
 ---

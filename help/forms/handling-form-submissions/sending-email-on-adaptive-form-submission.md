@@ -1,24 +1,19 @@
 ---
 title: Invio di e-mail all’invio di moduli adattivi
-seo-title: Sending Email on Adaptive Form Submission
 description: Inviare un messaggio e-mail di conferma per l’invio di moduli adattivi tramite il componente Invia e-mail
-seo-description: Send confirmation email on adaptive form submission using the send email component
-uuid: 6c9549ba-cb56-4d69-902c-45272a8fd17e
 feature: Adaptive Forms
-topics: authoring, integrations
-audience: developer
 doc-type: article
-activity: use
 discoiquuid: 1187357f-2f36-4a04-b708-44bb9c174fb5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 19c5aeec-2893-4ada-b6df-b80c4be2468a
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 60
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 3%
+source-wordcount: '200'
+ht-degree: 0%
 
 ---
 

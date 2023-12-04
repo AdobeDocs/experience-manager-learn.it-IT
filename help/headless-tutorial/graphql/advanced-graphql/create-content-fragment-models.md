@@ -7,9 +7,10 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+duration: 884
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1991'
 ht-degree: 1%
 
 ---
@@ -34,7 +35,7 @@ Questo è un tutorial avanzato. Prima di procedere con questo capitolo, assicura
 
 ## Obiettivi {#objectives}
 
-* Creare modelli di frammenti di contenuto.
+* Creare modelli per frammenti di contenuto.
 * Aggiungi segnaposto per schede, data e ora, oggetti JSON, riferimenti a frammenti e riferimenti a contenuti per i modelli.
 * Aggiungi la convalida ai riferimenti di contenuto.
 
@@ -87,7 +88,7 @@ Quindi, crea un modello per un indirizzo.
 1. Ripetete i passaggi precedenti e aggiungete altri quattro campi &quot;Testo a riga singola&quot; al modello. Utilizza le seguenti etichette:
 
    * Città
-   * Stadio
+   * Stato
    * Codice postale
    * Paese
 
@@ -123,7 +124,7 @@ Quindi, crea un modello che contenga informazioni su una persona.
 1. Per limitare le dimensioni e le dimensioni del file di immagine, esaminiamo alcune opzioni di convalida per il campo Riferimento contenuto.
 
    Sotto **Accetta solo dimensioni file specificate**, selezionare &quot;Minore o uguale a&quot; e di seguito vengono visualizzati campi aggiuntivi.
-   ![Accetta solo dimensione file specificata](assets/define-content-fragment-models/accept-specified-file-size.png)
+   ![Accetta solo dimensioni file specificate](assets/define-content-fragment-models/accept-specified-file-size.png)
 
 1. Per **Max**, immettere &quot;5&quot; e per **Seleziona unità**, selezionare &quot;Megabyte (MB)&quot;. Questa convalida consente di scegliere solo le immagini delle dimensioni specificate.
 
@@ -227,7 +228,7 @@ Esistono alcune best practice relative alla creazione di modelli per frammenti d
 
 * Nidifica i modelli per frammenti di contenuto con la profondità necessaria, ma solo con la necessità. Ricorda che la nidificazione viene eseguita con riferimenti a frammenti o a contenuti. Considerare un massimo di cinque livelli di nidificazione.
 
-## Congratulazioni.  {#congratulations}
+## Congratulazioni. {#congratulations}
 
 Congratulazioni. Ora hai aggiunto le schede, hai utilizzato i tipi di dati di oggetti data e ora e JSON e hai ulteriori informazioni sui riferimenti a frammenti e contenuti. Sono state inoltre aggiunte le regole di convalida dei riferimenti ai contenuti.
 

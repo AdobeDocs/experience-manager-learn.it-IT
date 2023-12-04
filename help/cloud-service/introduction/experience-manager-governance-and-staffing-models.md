@@ -3,16 +3,17 @@ title: Modelli e archetipi per governance e personale
 description: Scopri come rendere operativa la piattaforma Adobe Experience Manager (AEM) e ottenere il massimo dai tuoi sforzi.
 solution: Experience Manager
 exl-id: 808ab7a6-5ec5-4bbd-9a6e-cfc0b447430d
-source-git-commit: dcd69c7444eae0f8c86464c1963bff35e6f11238
+duration: 333
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1147'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Manager (AEM) - Modelli e archetipi per governance e personale
 
-In qualità di leader dell’esperienza del cliente, Adobe comprende quanto sia difficile per te garantire di disporre delle persone e del framework di governance giusti per promuovere l’efficienza operativa. Con i collaudati modelli di gestione del personale e di governance di Adobe, disponi degli strumenti e delle conoscenze necessari per creare una solida base per la gestione dei contenuti e delle risorse. In questo articolo, discuteremo dei modi per rendere operativa la piattaforma Adobe Experience Manager (AEM) e ottenere il massimo valore dalle tue attività.
+In qualità di leader dell’esperienza del cliente, Adobe comprende quanto sia difficile per te garantire di disporre delle persone e del framework di governance giusti per promuovere l’efficienza operativa. Con i collaudati modelli di gestione del personale e di governance di Adobe, disponi degli strumenti e delle conoscenze necessari per creare una solida base per la gestione dei contenuti e delle risorse. In questo articolo verranno illustrati i modi per rendere operativa la piattaforma Adobe Experience Manager (AEM) e ottenere il massimo valore dai tuoi sforzi.
 
 ## Creazione di un framework operativo superiore
 

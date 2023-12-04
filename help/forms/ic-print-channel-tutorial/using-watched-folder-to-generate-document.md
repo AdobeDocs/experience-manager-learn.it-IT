@@ -1,14 +1,8 @@
 ---
 title: Generazione di documenti del canale di stampa tramite cartella controllata
-seo-title: Generating Print Channel Documents Using Watched Folder
 description: Questa è la parte 10 del tutorial a più passaggi per creare il primo documento di comunicazione interattiva per il canale di stampa. In questa parte verranno generati documenti del canale di stampa utilizzando il meccanismo di cartelle controllate.
-seo-description: This is part 10 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will generate print channel documents using the watched folder mechanism.
-uuid: 9e39f4e3-1053-4839-9338-09961ac54f81
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 contentOwner: gbedekar
 discoiquuid: 23fbada3-d776-4b77-b381-22d3ec716ae9
@@ -16,9 +10,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bb05c94-2a7b-4149-b567-186eb08b1c66
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+duration: 98
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -59,7 +54,7 @@ Per generare un documento del canale di stampa utilizzando il meccanismo delle c
 * Verificare che il percorso di interactiveCommunicationsDocument punti al documento corretto che si desidera stampare.( Riga 1)
 * Prendere nota di saveLocation(Line 2).È possibile modificarlo in base alle proprie esigenze.
 * Assicurati che il parametro di input per il modello dati modulo sia associato all’attributo richiesta e che il relativo valore di associazione sia impostato su &quot;accountnumber&quot;. Fai riferimento alla schermata seguente.
-   ![richiesta](assets/requestattributeprintchannel.gif)
+  ![richiesta](assets/requestattributeprintchannel.gif)
 
 * Crea il file accountnumbers.xml con il seguente contenuto
 

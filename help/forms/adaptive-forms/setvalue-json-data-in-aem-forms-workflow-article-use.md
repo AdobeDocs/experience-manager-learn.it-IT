@@ -8,10 +8,11 @@ role: Developer
 level: Experienced
 exl-id: fbe6d341-7941-46f5-bcd8-58b99396d351
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 167
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 1%
+source-wordcount: '656'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +51,7 @@ Per distribuire le risorse sul sistema locale:
 * Puntare il browser a [Forms e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Fai clic su Crea. | Caricamento file
 * Carica il file TimeOffRequestForm.zip
-   **Questo modulo è stato creato con AEM Forms 6.4. Assicurati di utilizzare AEM Forms 6.4 o versione successiva**
+  **Questo modulo è stato creato con AEM Forms 6.4. Assicurati di utilizzare AEM Forms 6.4 o versione successiva**
 * Apri [modulo](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
 * Compila le date di inizio e fine e invia il modulo.
 * Vai a [&quot;Casella in entrata&quot;](http://localhost:4502/aem/inbox)
@@ -60,7 +61,7 @@ Per distribuire le risorse sul sistema locale:
 
 >[!NOTE]
 >
->Poiché stiamo precompilando il modulo adattivo utilizzando il profilo utente, assicurati che l’amministratore [informazioni profilo utente ](http://localhost:4502/security/users.html). Assicurati almeno di aver impostato i valori dei campi Nome, Cognome ed E-mail.
+>Poiché stiamo precompilando il modulo adattivo utilizzando il profilo utente, assicurati che l’amministratore [informazioni profilo utente](http://localhost:4502/security/users.html). Assicurati almeno di aver impostato i valori dei campi Nome, Cognome ed E-mail.
 >Puoi abilitare la registrazione di debug abilitando il logger per com.aemforms.setvalue.core.SetValueInJson [da qui](http://localhost:4502/system/console/slinglog)
 
 >[!NOTE]

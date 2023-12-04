@@ -7,9 +7,10 @@ role: User
 level: Beginner
 doc-type: Tutorial
 exl-id: a1d83c77-a9e4-4ed1-9b00-65fb002164c0
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 686
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2623'
 ht-degree: 0%
 
 ---
@@ -42,7 +43,7 @@ Dynamic Media Classic dispone di alcuni strumenti di modifica delle immagini con
 Puoi accedere allo strumento di ritaglio in Dynamic Media Classic dalla pagina Dettagli di una risorsa o facendo clic sul pulsante **Modifica** pulsante. È possibile utilizzare lo strumento per ritagliare in due modi:
 
 - Modalità di ritaglio predefinita in cui vengono trascinati i quadratini di ridimensionamento della finestra di ritaglio o i valori nella casella Dimensione. Scopri come [Ritaglio manuale](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
-- Taglio. Usate questa opzione per rimuovere spazio vuoto aggiuntivo attorno all&#39;immagine calcolando il numero di pixel che non corrispondono all&#39;immagine. Scopri come [Ritaglio per ritaglio](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
+- Rifila. Usate questa opzione per rimuovere spazio vuoto aggiuntivo attorno all&#39;immagine calcolando il numero di pixel che non corrispondono all&#39;immagine. Scopri come [Ritaglio per ritaglio](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
 
 ### _Ritaglio manuale_
 

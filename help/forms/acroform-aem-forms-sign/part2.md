@@ -1,19 +1,16 @@
 ---
 title: Acroforms con AEM Forms
-seo-title: Merge Adaptive Form data with Acroform
 description: Parte 2 dell’integrazione di Acroforms con AEM Forms. Crea uno schema da un Acroform.
 feature: adaptive-forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.5
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+duration: 54
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 2%
+source-wordcount: '176'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +19,7 @@ ht-degree: 2%
 
 Il passaggio successivo consiste nel creare uno schema dall&#39;Acroform creato nel passaggio precedente. Come parte di questa esercitazione, viene fornita un’applicazione di esempio per creare lo schema. Per creare lo schema, segui le seguenti istruzioni:
 
-1. Accedi a [CRXDE Lite](http://localhost:4502/crx/de)
+1. Accedi a [CRXDE Liti](http://localhost:4502/crx/de)
 2. Apri nel file `/apps/AemFormsSamples/components/createxsd/POST.jsp`
 3. Modificare il `saveLocation` in una cartella appropriata sul disco rigido. Assicurati che la cartella in cui stai salvando sia già stata creata.
 4. Puntare il browser a [Crea XSD](http://localhost:4502/content/DocumentServices/CreateXsd.html) pagina ospitata sull’AEM.

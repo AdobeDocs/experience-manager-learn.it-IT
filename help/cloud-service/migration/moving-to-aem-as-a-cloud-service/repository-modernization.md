@@ -9,10 +9,11 @@ level: Experienced
 jira: KT-8630
 thumbnail: 336958.jpeg
 exl-id: e9bd9035-1f2d-4a34-a581-9c1ec2c7bc04
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1323
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 5%
+source-wordcount: '145'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +25,7 @@ Scopri la modernizzazione dell’archivio, i contenuti mutabili e immutabili, la
 
 ## Strumento Repository Modernizer
 
-![Modernizzatore dell&#39;archivio](./assets/repository-modernizer.png)
+![Repository Modernizer](./assets/repository-modernizer.png)
 
 Come parte del refactoring della base di codice, utilizza [Strumento Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) per ristrutturare una base di codice 6.x in una struttura più moderna.
 

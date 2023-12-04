@@ -10,10 +10,11 @@ role: User
 level: Intermediate
 doc-type: Feature Video
 exl-id: 12490c29-91f4-4bb7-b7b6-7ed7cd3fb76d
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 236
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 8%
+source-wordcount: '188'
+ht-degree: 3%
 
 ---
 
@@ -33,4 +34,4 @@ Gli stili mostrati sono forniti da [Applicazione WKND](https://github.com/adobe/
 
 Vuoi scoprire come sviluppare con il sistema di stili? Consulta le seguenti esercitazioni:
 
-* [Sviluppo con il sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html?lang=it)
+* [Sviluppo con il sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)

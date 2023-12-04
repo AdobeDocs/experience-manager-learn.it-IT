@@ -11,10 +11,11 @@ last-substantial-update: 2023-05-16T00:00:00Z
 jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: ad06b0f3-afa7-4661-aa66-0674d2e6bb43
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+duration: 1162
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 2%
+source-wordcount: '594'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +43,7 @@ Entro la fine di questo capitolo di esercitazione, avrai a disposizione un compo
 
 1. Poiché un elenco di immagini è un frammento di tipo contenitore che include un riferimento ad altri frammenti, è possibile creare nuove offerte direttamente dall’editor.  Crea un frammento di offerta con descrizione e articolo per inclusione e immagine.  È possibile tagliare e incollare il testo dal basso.  Stiamo utilizzando il titolo del frammento come titolo della scheda.
 
-   __Articolo1__
+   __Articolo 1__
 
    _Titolo_
 
@@ -314,7 +315,7 @@ Entro la fine di questo capitolo di esercitazione, avrai a disposizione un compo
 
 1. Ora aggiorniamo la sezione Scheda per identificare il frammento e il tipo di dati per la modifica di ogni scheda.
 
-   In `<div className='card' key={card._path}>`
+   Entro `<div className='card' key={card._path}>`
 
    aggiungi
 

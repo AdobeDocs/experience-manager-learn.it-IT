@@ -7,9 +7,10 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 998d3678-7aef-4872-bd62-0e6ea3ff7999
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+duration: 818
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2911'
+source-wordcount: '2931'
 ht-degree: 1%
 
 ---
@@ -391,7 +392,7 @@ Infine, aggiungiamo i nuovi frammenti di contenuto creati in un’avventura.
 
 1. Seleziona **Salva e chiudi** per salvare il contenuto.
 
-## Congratulazioni. 
+## Congratulazioni.
 
 Congratulazioni. Ora hai creato Frammenti di contenuto basati sui modelli di Frammenti di contenuto avanzati creati nel capitolo precedente. Hai anche creato un criterio di cartella per limitare quali modelli per frammenti di contenuto possono essere selezionati all’interno di una cartella.
 

@@ -1,5 +1,5 @@
 ---
-title: "Capitolo 1 - Concetti, modelli e antipateria di Dispatcher"
+title: Capitolo 1 - Concetti, modelli e strategie antipatcher
 description: Questo capitolo fornisce una breve introduzione sulla storia e le meccaniche di Dispatcher e illustra come questo influenzi il modo in cui uno sviluppatore di AEM progetterebbe i suoi componenti.
 feature: Dispatcher
 topic: Architecture
@@ -7,9 +7,10 @@ role: Architect
 level: Beginner
 doc-type: Tutorial
 exl-id: 3bdb6e36-4174-44b5-ba05-efbc870c3520
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 4820
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '17460'
+source-wordcount: '17384'
 ht-degree: 0%
 
 ---
@@ -50,7 +51,7 @@ Tuttavia, il consiglio di &quot;prima farlo funzionare - poi farlo in fretta&quo
 
 3. Modelli di software che vengono utilizzati e riutilizzati più e più volte, in tutte le parti del sistema. Se il modello software risulta non ottimale, tutti gli artefatti che utilizzano il modello devono essere codificati nuovamente.
 
-Ricorda? In cima a questa pagina abbiamo detto che Dispatcher è una parte essenziale di un’applicazione per l’AEM. L’accesso a un’applicazione web è molto casuale: gli utenti arrivano e partono in momenti imprevedibili. Alla fine: tutto il contenuto sarà (o dovrebbe) essere memorizzato nella cache in Dispatcher. Quindi, se presti molta attenzione, potresti aver capito che la memorizzazione in cache potrebbe essere vista come un artefatto &quot;architetturale&quot; e quindi dovrebbe essere compresa da tutti i membri del team, sviluppatori e amministratori allo stesso modo.
+Ricordi? In cima a questa pagina abbiamo detto che Dispatcher è una parte essenziale di un’applicazione per l’AEM. L’accesso a un’applicazione web è molto casuale: gli utenti arrivano e partono in momenti imprevedibili. Alla fine: tutto il contenuto sarà (o dovrebbe) essere memorizzato nella cache in Dispatcher. Quindi, se presti molta attenzione, potresti aver capito che la memorizzazione in cache potrebbe essere vista come un artefatto &quot;architetturale&quot; e quindi dovrebbe essere compresa da tutti i membri del team, sviluppatori e amministratori allo stesso modo.
 
 Non stiamo dicendo che uno sviluppatore debba effettivamente configurare Dispatcher. Devono conoscere i concetti, in particolare i confini, per assicurarsi che il loro codice possa essere utilizzato anche da Dispatcher.
 
@@ -268,7 +269,7 @@ Esaminiamo un breve riepilogo dell’ultimo capitolo, oltre ad altre eccezioni. 
 
 Nell’ultimo capitolo sono elencate numerose eccezioni che si verificano quando Dispatcher non è in grado di memorizzare in cache una richiesta. Ma ci sono altre cose da considerare: solo perché Dispatcher _può_ memorizzare in cache una richiesta, non significa necessariamente che _dovrebbe_.
 
-Il punto è: la memorizzazione in cache di solito è facile. Dispatcher deve solo memorizzare il risultato di una risposta e restituirlo la volta successiva quando la stessa richiesta è in arrivo. A destra? Sbagliato!
+Il punto è: la memorizzazione in cache di solito è facile. Dispatcher deve solo memorizzare il risultato di una risposta e restituirlo la volta successiva quando la stessa richiesta è in arrivo. Giusto? Sbagliato!
 
 La parte difficile è la _invalidazione_ o _vampate_ della cache. Dispatcher deve scoprire quando una risorsa è cambiata ed è necessario eseguirne di nuovo il rendering.
 
@@ -715,7 +716,7 @@ Il percorso,
 
 `/content/mysite/home/jcr:content/par/respi.img.fp-2018-31-12-23-59.jpg`
 
-non si riferisce a nessuna delle risorse invalidate. Ricorda? Abbiamo solo invalidato una risorsa &quot;fittizia&quot; e ci siamo basati sull’annullamento automatico della validità per considerare &quot;home&quot; non valida. L&#39;immagine stessa potrebbe non essere mai _fisicamente_ eliminato. La cache crescerà e crescerà. Quando le immagini vengono modificate e attivate, ottengono nuovi nomi di file nel file system di Dispatcher.
+non si riferisce a nessuna delle risorse invalidate. Ricordi? Abbiamo solo invalidato una risorsa &quot;fittizia&quot; e ci siamo basati sull’annullamento automatico della validità per considerare &quot;home&quot; non valida. L&#39;immagine stessa potrebbe non essere mai _fisicamente_ eliminato. La cache crescerà e crescerà. Quando le immagini vengono modificate e attivate, ottengono nuovi nomi di file nel file system di Dispatcher.
 
 Ci sono tre problemi per non eliminare fisicamente i file memorizzati in cache e mantenerli a tempo indefinito:
 
@@ -877,7 +878,7 @@ Manca solo il valore della qualità. Il componente sa quale proprietà viene imm
   …
 ```
 
-Questa è una cattiva idea. Ricorda? Le richieste con parametri di query non sono memorizzabili in cache.
+Questa è una cattiva idea. Ricordi? Le richieste con parametri di query non sono memorizzabili in cache.
 
 #### Approccio ingenuo 2: passare informazioni aggiuntive come selettore
 

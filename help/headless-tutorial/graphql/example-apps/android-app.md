@@ -12,10 +12,11 @@ level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM headless as a Cloud Service" before-title="false"
 exl-id: 7873e263-b05a-4170-87a9-59e8b7c65faa
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 235
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 5%
+source-wordcount: '614'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +40,7 @@ I seguenti strumenti devono essere installati localmente:
 
 L’applicazione Android funziona con le seguenti opzioni di implementazione AEM. Tutte le distribuzioni richiedono [Sito WKND v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) da installare.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=it)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 
 L’applicazione Android è progettata per connettersi a un __Pubblicazione AEM__ Tuttavia, può originare il contenuto da AEM Author se l’autenticazione viene fornita nella configurazione dell’applicazione Android.
 

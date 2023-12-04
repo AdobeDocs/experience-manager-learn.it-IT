@@ -8,9 +8,10 @@ role: User
 level: Beginner
 exl-id: 8fbea634-7949-417f-a4d6-9e551fff63f3
 last-substantial-update: 2021-09-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 374
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ Puoi aggiungere elementi utilizzando l’editor visivo e l’editor di codice, a
 
 Nella schermata seguente, stiamo impostando le opzioni di Periodo(anni) di prestito sui risultati di una chiamata al servizio denominata getLoanPeriods.
 
-![Editor regola](assets/ruleeditor.png)
+![Editor regole](assets/ruleeditor.png)
 
 **Utilizzo dell’editor di codice**: quando si desidera impostare gli elementi nel gruppo di scelta in modo dinamico in base ai valori immessi nel modulo. Ad esempio, il seguente frammento di codice imposta gli elementi della casella di controllo sui valori immessi nei campi del nome del candidato e del coniuge del modulo adattivo.
 
@@ -82,7 +83,7 @@ Per provare questo sul sistema:
 * [Visualizzare l’anteprima dei moduli](http://localhost:4502/content/dam/formsanddocuments/simpleform/jcr:content?wcmmode=disabled)
 * Inserire il nome del candidato e selezionare lo stato civile da sposato
 * Inserisci il nome del coniuge
-* Fai clic su Avanti
+* Fai clic su Successivo
 * Dovresti vedere la casella di controllo compilata con il nome del richiedente e con il nome del coniuge se lo stato civile è sposato
 
 **Utilizzo dell’editor visivo per aggiungere elementi**

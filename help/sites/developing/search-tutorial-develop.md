@@ -10,10 +10,11 @@ doc-type: Tutorial
 exl-id: aa268c5f-d29e-4868-a58b-444379cb83be
 last-substantial-update: 2022-08-10T00:00:00Z
 thumbnail: 32090.jpg
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 202
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 3%
+source-wordcount: '627'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +33,7 @@ L’implementazione della ricerca semplice è costituita dai materiali provenien
 
 ### Strumenti {#tools}
 
-* [Gestione indice](http://localhost:4502/libs/granite/operations/content/diagnosis/tool.html/granite_oakindexmanager)
+* [Gestore indice](http://localhost:4502/libs/granite/operations/content/diagnosis/tool.html/granite_oakindexmanager)
 * [Spiega query](http://localhost:4502/libs/granite/operations/content/diagnosis/tool.html/granite_queryperformance)
 * [CRXDE Liti](http://localhost:4502/crx/de/index.jsp#/oak%3Aindex/cqPageLucene) > /oak:index/cqPageLucene
 * [Gestione pacchetti CRX](http://localhost:4502/crx/packmgr/index.jsp)

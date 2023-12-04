@@ -10,10 +10,11 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 611
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1218'
-ht-degree: 2%
+source-wordcount: '1181'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +33,7 @@ _Le schermate IDE di questo capitolo provengono da [Codice di Visual Studio](htt
 
 È necessario installare il seguente software:
 
-- [Node.js v18](https://nodejs.org/it)
+- [Node.js v18](https://nodejs.org/en)
 - [Codice di Visual Studio](https://code.visualstudio.com/)
 
 ## Obiettivi
@@ -89,7 +90,7 @@ Per ottenere l’app React:
    $ npm start
    ```
 
-1. L’app React viene avviata in modalità di sviluppo su [http://localhost:3000/](Http://localhost:3000/). Le modifiche apportate all’app React durante l’esercitazione vengono riportate immediatamente.
+1. L’app React viene avviata in modalità di sviluppo su [http://localhost:3000/](http://localhost:3000/). Le modifiche apportate all’app React durante l’esercitazione vengono riportate immediatamente.
 
 ![App React parzialmente implementata](./assets/graphql-and-external-app/partially-implemented-react-app.png)
 
@@ -488,7 +489,7 @@ Una volta completato, selezionando il nome di una persona nella vista Team, vien
 
 ## Prova l’app
 
-Rivedere l’app [http://localhost:3000/](Http://localhost:3000/) e fai clic su _Membri_ collegamenti. Inoltre, puoi aggiungere più team e/o membri all’Alpha Team aggiungendo Frammenti di contenuto all’AEM.
+Rivedere l’app [http://localhost:3000/](http://localhost:3000/) e fai clic su _Membri_ collegamenti. Inoltre, puoi aggiungere più team e/o membri all’Alpha Team aggiungendo Frammenti di contenuto all’AEM.
 
 >[!IMPORTANT]
 >

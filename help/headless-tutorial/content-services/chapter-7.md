@@ -7,9 +7,10 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: d6b6d425-842a-43a9-9041-edf78e51d962
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 573
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1350'
 ht-degree: 0%
 
 ---
@@ -194,7 +195,7 @@ Dopo ogni passaggio, richiama per aggiornare l’app mobile e verifica l’aggio
 1. Annulla pubblicazione di un **esistente [!DNL Event] Frammento di contenuto**
 1. Pubblica un aggiornamento per **Linea tag**
 
-## Congratulazioni
+## Complimenti
 
 **Hai completato l’esercitazione headless dell’AEM.**
 

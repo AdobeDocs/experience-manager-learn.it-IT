@@ -12,9 +12,10 @@ doc-type: Tutorial
 exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
 badgeIntegration: label="Integrazione" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 596
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2162'
+source-wordcount: '2072'
 ht-degree: 0%
 
 ---
@@ -119,7 +120,7 @@ Quindi, crea un [progetto](https://experienceleague.adobe.com/docs/analytics/ana
 
 1. Dalla barra degli strumenti di Analytics, seleziona **Workspace** e fai clic per **Crea un nuovo progetto**.
 
-   ![Area di lavoro](assets/create-analytics-workspace/create-workspace.png)
+   ![Workspace](assets/create-analytics-workspace/create-workspace.png)
 
 1. Scegli di iniziare da un **progetto vuoto** in alternativa, seleziona uno dei modelli predefiniti, forniti dall’Adobe o dai modelli personalizzati creati dalla tua organizzazione. Sono disponibili diversi modelli, a seconda dell’analisi o del caso d’uso a cui stai pensando. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) informazioni sulle diverse opzioni di modello disponibili.
 
@@ -153,19 +154,19 @@ Quindi, crea una tabella per creare una rappresentazione visiva del modo in cui 
 
 1. Suddividiamo la pagina in base al tipo di modello. Seleziona la metrica del modello di pagina dai componenti, quindi trascina la metrica Modello pagina nella dimensione Nome pagina. Ora puoi visualizzare il nome della pagina suddiviso per il relativo tipo di modello.
 
-   * **Prima**
-     ![eVar5](assets/create-analytics-workspace/evar5.png)
+   * **Prima di**
+     ![EVAR 5](assets/create-analytics-workspace/evar5.png)
 
    * **Dopo**
      ![Metriche eVar5](assets/create-analytics-workspace/evar5-metrics.png)
 
 1. Per capire come gli utenti interagiscono con i pulsanti CTA quando si trovano nelle pagine del sito WKND, è necessario aggiungere la metrica ID pulsante (eVar8).
 
-   ![eVar8](assets/create-analytics-workspace/evar8.png)
+   ![EVAR 8](assets/create-analytics-workspace/evar8.png)
 
 1. Di seguito è riportata una rappresentazione visiva del sito WKND suddivisa per il modello di pagina e per l’interazione dell’utente con i pulsanti CTA (Click to Action) del sito WKND.
 
-   ![eVar8](assets/create-analytics-workspace/evar8-metric.png)
+   ![EVAR 8](assets/create-analytics-workspace/evar8-metric.png)
 
 1. Puoi sostituire il valore ID pulsante con un nome più semplice utilizzando le classificazioni di Adobe Analytics. Puoi trovare ulteriori informazioni su come creare una classificazione per una metrica specifica [qui](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html). In questo caso, abbiamo una metrica di classificazione `Button Section (Button ID)` configurazione per `eVar8` che mappa l’id del pulsante su un nome intuitivo.
 
@@ -243,7 +244,7 @@ Quindi, scariciamo il modello di classificazione per la variabile Button Id (eVa
 
 1. Dal Finder dei componenti, cerca **Pulsanti CTA WKND** e trascina **Pulsanti CTA WKND (ID pulsante)** nella metrica ID pulsante e sostituiscila.
 
-   * **Prima**
+   * **Prima di**
      ![Pulsante area di lavoro prima](assets/create-analytics-workspace/wknd-button-before.png)
    * **Dopo**
      ![Pulsante area di lavoro dopo](assets/create-analytics-workspace/wknd-button-after.png)

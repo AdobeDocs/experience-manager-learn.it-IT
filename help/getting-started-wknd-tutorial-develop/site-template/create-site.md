@@ -11,10 +11,11 @@ thumbnail: KT-7496.jpg
 doc-type: Tutorial
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
 recommendations: noDisplay, noCatalog
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 265
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 1%
+source-wordcount: '959'
+ht-degree: 0%
 
 ---
 
@@ -82,7 +83,7 @@ La maggior parte del tutorial si svolge utilizzando **Servizio Author**.
 Un modello di sito rappresenta un punto di partenza per un nuovo sito. Un modello di sito include alcuni temi di base, modelli di pagina, configurazioni e contenuti di esempio. Spetta esattamente allo sviluppatore il compito di includere nel modello di sito. L’Adobe fornisce un **Modello di sito di base** per accelerare le nuove implementazioni.
 
 1. Apri una nuova scheda del browser e passa al progetto Modello di sito di base su GitHub: [https://github.com/adobe/aem-site-template-standard](https://github.com/adobe/aem-site-template-standard). Il progetto è open-source ed è concesso in licenza per essere utilizzato da chiunque.
-1. Clic **Versioni** e passare alla [versione più recente](https://github.com/adobe/aem-site-template-standard/releases/più recente).
+1. Clic **Versioni** e passare alla [versione più recente](https://github.com/adobe/aem-site-template-standard/releases/latest).
 1. Espandi **Risorse** e scarica il file zip del modello:
 
    ![File ZIP modello sito di base](assets/create-site/template-basic-zip-file.png)

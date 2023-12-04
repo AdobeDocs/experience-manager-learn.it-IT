@@ -1,18 +1,17 @@
 ---
 title: Capitolo 1 - Configurazione e download dei tutorial - Content Services
-seo-title: Getting Started with AEM Content Services - Chapter 1 -  Tutorial Set up
 description: Il capitolo 1 del tutorial AEM headless illustra la configurazione di base dell’istanza AEM per il tutorial.
-seo-description: Chapter 1 of the AEM Headless tutorial the baseline setup for the AEM instance for the tutorial.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: f24a75f6-9062-498c-b782-7d9011aa0bcf
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 118
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 1%
+source-wordcount: '366'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +37,7 @@ Installa i seguenti pacchetti di contenuti AEM su **entrambi** Autore AEM e pubb
    * [!DNL WKND Mobile] Componente proxy per componenti core WCM AEM
    * [!DNL WKND Mobile] CSS delle pagine AEM Content Services (per stili secondari)
 * [ui.content: GitHub > com.adobe.aem.guides.wknd-mobile.ui.content-x.x.x.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
-   * [!DNL WKND Mobile] Struttura sito
+   * [!DNL WKND Mobile] Struttura del sito
    * [!DNL WKND Mobile] Struttura delle cartelle DAM
    * [!DNL WKND Mobile] risorse immagine
 

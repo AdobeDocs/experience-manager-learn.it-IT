@@ -1,6 +1,6 @@
 ---
 title: Operazioni di base in AEM Sites
-description: Il video seguente offre una panoramica delle operazioni di base nell’ambiente di authoring AEM. Usa la console Sites come base.
+description: Il video seguente offre una panoramica delle operazioni di base nell’ambiente di authoring AEM. Utilizza la console Sites come base.
 feature: Page Editor, Editable Templates
 version: 6.4, 6.5, Cloud Service
 jira: KT-4495
@@ -10,10 +10,11 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 896d378c-c20e-4343-b592-277f4c71065e
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 310
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 26%
+source-wordcount: '320'
+ht-degree: 9%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 26%
 
 {{edge-delivery-services-and-page-editor}}
 
-Il video seguente offre una panoramica delle operazioni di base nell’ambiente di authoring AEM. Usa la console Sites come base.
+Il video seguente offre una panoramica delle operazioni di base nell’ambiente di authoring AEM. Utilizza la console Sites come base.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31784?quality=12&learn=on)
 
@@ -29,18 +30,18 @@ In questo video vengono trattate le seguenti funzionalità:
 
 * Interfaccia touch
 * Il pannello di navigazione globale è costituito da:
-   * Navigazione: rappresentata da una bussola 
+   * Navigazione: rappresentata da una bussola
 
      | Console | Scopo |
      |---|---|
      | Risorse | Queste console consentono di importare e gestire le risorse digitali quali immagini, video, documenti e file audio. Queste risorse possono quindi essere utilizzate da qualsiasi sito web in esecuzione sulla stessa istanza AEM | Communities | Questa console consente di creare e gestire i siti della community per il coinvolgimento e l&#39;abilitazione | Commerce | Questo consente di gestire prodotti, cataloghi di prodotti e ordini relativi ai siti Commerce |
      | Frammenti di esperienza | Un frammento di esperienza è un’esperienza autonoma che può essere riutilizzata su tutti i canali, supporta le varianti e non richiede di copiare e incollare le esperienze o parti di esse |
      | Forms | Questa console consente di creare, gestire ed elaborare moduli e documenti |
-     | Personalizzazione | Questa console fornisce un set di strumenti per la creazione e modifica di contenuti mirati e la presentazione di esperienze personali |
+     | Personalizzazione | Questa console fornisce un framework di strumenti per la creazione e modifica di contenuti mirati e la presentazione di esperienze personalizzate |
      | Progetti | La console Progetti consente di accedere direttamente ai progetti . I progetti sono dashboard virtuali. Possono essere utilizzati per creare un team, quindi fornire al team l’accesso a risorse, flussi di lavoro e attività, consentendo alle persone di lavorare su un obiettivo comune |
      | Sites | Le console Sites ti consentono di creare, visualizzare e gestire siti web in esecuzione sull’istanza AEM. Da queste console puoi creare, modificare, copiare, spostare ed eliminare pagine web, avviare flussi di lavoro e pubblicare pagine |
 
-   * Strumenti: rappresentati da un martello
+   * Strumenti - Rappresentati da un martello
 * Ricerca Omni
 * Solution Switcher
 * Aiuto

@@ -11,9 +11,10 @@ last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 49becbcb-7965-4378-bb8e-b662fda716b7
-source-git-commit: c32497a7fdcf144d30bb8c0e58527013b66013b0
+duration: 667
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1449'
 ht-degree: 0%
 
 ---
@@ -74,7 +75,7 @@ data:
 
   ![Accesso WKND](./assets/wknd-login.png)
 
-#### Analisi di{#analyzing}
+#### Analisi{#analyzing}
 
 Analizziamo i risultati della `publish-auth-requests` scaricando i registri CDN di AEMCS da Cloud Manager e utilizzando [strumenti dashboard](how-to-setup.md#analyze-results-using-elk-dashboard-tool), configurato nel capitolo precedente.
 
@@ -149,7 +150,7 @@ data:
 
 - Ripeti il passaggio precedente sia dall’indirizzo IP utilizzato nella regola che da un indirizzo IP diverso (ad esempio, utilizzando il telefono cellulare).
 
-#### Analisi di
+#### Analisi
 
 Per analizzare i risultati del `block-internal-paths` regola, segui gli stessi passaggi descritti in [esempio precedente](#analyzing).
 
@@ -206,7 +207,7 @@ data:
 
   ![Attacco Vegeta DoS](./assets/vegeta-dos-attack.png)
 
-#### Analisi di
+#### Analisi
 
 Per analizzare i risultati del `prevent-dos-attacks` regola, segui gli stessi passaggi descritti in [esempio precedente](#analyzing).
 
@@ -242,7 +243,7 @@ Iniziamo attaccando il sito WKND senza aggiungere una regola WAF (o utilizzando 
 
   Per informazioni sulla simulazione di un attacco, vedere [Nikto - Sintonizzazione scansione](https://github.com/sullo/nikto/wiki/Scan-Tuning) che indica come specificare il tipo di attacchi di test da includere o escludere.
 
-##### Analisi di
+##### Analisi
 
 Per analizzare i risultati della simulazione dell&#39;attacco, seguire gli stessi passaggi descritti nella [esempio precedente](#analyzing).
 
@@ -312,7 +313,7 @@ data:
   $ ./nikto.pl -useragent "AttackSimulationAgent (Demo/1.0)" -D V -Tuning 9 -ssl -h https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html
   ```
 
-##### Analisi di
+##### Analisi
 
 Ripeti gli stessi passaggi descritti in [esempio precedente](#analyzing).
 

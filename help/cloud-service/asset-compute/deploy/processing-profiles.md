@@ -2,21 +2,19 @@
 title: Integrare i lavoratori Asset compute con i profili di elaborazione AEM
 description: AEM as a Cloud Service si integra con i processi di lavoro Asset compute implementati in Adobe I/O Runtime tramite i Profili elaborazione AEM Assets. I Profili di elaborazione sono configurati nel servizio Author in modo da elaborare specifiche risorse tramite processi di lavoro personalizzati e archiviare i file generati da tali processi di lavoro come rappresentazioni delle risorse.
 feature: Asset Compute Microservices
-topics: renditions, development
 version: Cloud Service
-activity: develop
-audience: developer
-doc-type: tutorial
+doc-type: Tutorial
 jira: KT-6287
 thumbnail: KT-6287.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 1b398c8c-6b4e-4046-b61e-b44c45f973ef
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 179
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 2%
+source-wordcount: '622'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +52,7 @@ Crea innanzitutto un nuovo Profilo di elaborazione che richiamerà il processo d
          + Chiave: `brightness`
          + Valore: `0.10`
       + Queste coppie chiave/valore vengono passate nel processo di lavoro Asset compute e sono disponibili tramite `rendition.instructions` Oggetto JavaScript.
-   + __Tipi mime__
+   + __Tipi MIME__
       + __Include:__ `image/jpeg`, `image/png`, `image/gif`, `image/bmp`, `image/tiff`
          + Questi tipi MIME sono gli unici moduli npm del lavoratore. Questo elenco limita i valori elaborati dal lavoratore personalizzato.
       + __Esclusi:__ `Leave blank`
@@ -75,7 +73,7 @@ Crea innanzitutto un nuovo Profilo di elaborazione che richiamerà il processo d
 
    ![Rappresentazione generata](./assets/processing-profiles/rendition.png)
 
-## Completato!
+## Finito!
 
 Congratulazioni. Hai terminato il [esercitazione](../overview.md) su come estendere i microservizi Asset compute as a Cloud Service AEM! Ora dovresti avere la possibilità di configurare, sviluppare, testare, eseguire il debug e distribuire processi di lavoro di Asset compute personalizzati per l’utilizzo da parte del servizio di authoring as a Cloud Service dell’AEM.
 
@@ -85,7 +83,7 @@ L’ultimo progetto di Asset compute è disponibile su Github all’indirizzo:
 
 + [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
-_Github contains è lo stato finale del progetto, completamente popolato con i casi di lavoro e test, ma non contiene credenziali, ad esempio. `.env`, `.config.json` oppure `.aio`._
+_Github contains è lo stato finale del progetto, completamente popolato con i casi di lavoro e test, ma non contiene credenziali, ad esempio. `.env`, `.config.json` o `.aio`._
 
 ## Risoluzione dei problemi
 

@@ -10,10 +10,11 @@ mini-toc-levels: 1
 jira: KT-7131
 thumbnail: KT-7131.jpg
 exl-id: 8c8b2620-6bc3-4a21-8d8d-8e45a6e9fc70
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 655
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 9%
+source-wordcount: '2137'
+ht-degree: 5%
 
 ---
 
@@ -35,7 +36,7 @@ Scopri come:
 
 ## Pattern di distribuzione pubblicazione autore {#deployment-pattern}
 
-Un ambiente AEM completo è costituito da authoring, pubblicazione e Dispatcher. Il servizio di authoring è il luogo in cui gli utenti interni creano, gestiscono e visualizzano in anteprima i contenuti. Il servizio di pubblicazione è considerato l’ambiente &quot;live&quot; ed è normalmente ciò con cui gli utenti finali interagiscono. I contenuti vengono modificati e approvati nel servizio di authoring e quindi distribuiti al servizio di pubblicazione.
+Un ambiente AEM completo è costituito da authoring, pubblicazione e Dispatcher. Il servizio di authoring è il luogo in cui gli utenti interni creano, gestiscono e visualizzano in anteprima i contenuti. Il servizio di pubblicazione è considerato l’ambiente &quot;live&quot; ed è normalmente ciò con cui gli utenti finali interagiscono. I contenuti, dopo essere stati modificati e approvati nel servizio di authoring, vengono distribuiti al servizio di pubblicazione.
 
 Il modello di implementazione più comune per le applicazioni headless AEM consiste nella connessione della versione di produzione dell’applicazione a un servizio di pubblicazione AEM.
 
@@ -46,7 +47,7 @@ Il diagramma riportato sopra mostra questo diffuso pattern di distribuzione.
 1. A **Autore del contenuto** utilizza il servizio di authoring AEM per creare, modificare e gestire i contenuti.
 2. L’**autore del contenuto** e altri utenti interni possono visualizzare in anteprima il contenuto direttamente sul servizio di authoring. È possibile impostare una versione di anteprima dell’applicazione che si connette al servizio di authoring.
 3. Una volta approvato, il contenuto può essere **pubblicato** al servizio di pubblicazione AEM.
-4. **Gli utenti finali interagiscono con la versione di produzione dell’applicazione.** L’applicazione di produzione si connette al servizio di pubblicazione e utilizza le API GraphQL per richiedere e utilizzare i contenuti.
+4. **Utenti finali** interagire con la versione di produzione dell’applicazione. L’applicazione di produzione si connette al servizio di pubblicazione e utilizza le API GraphQL per richiedere e utilizzare i contenuti.
 
 L&#39;esercitazione simula la distribuzione di cui sopra aggiungendo un&#39;istanza di pubblicazione AEM alla configurazione corrente. Nei capitoli precedenti, l’app React fungeva da anteprima collegandosi direttamente all’istanza di authoring. Una build di produzione dell’app React viene distribuita a un server Node.js statico che si connette alla nuova istanza Publish.
 
@@ -171,7 +172,7 @@ L’app React può essere avviata utilizzando il server Webpack, ma solo per lo 
    └────────────────────────────────────────────────────┘
    ```
 
-1. Apri un nuovo browser e passa a [http://localhost:5000/](Http://localhost:5000/). Dovresti vedere l’app React distribuita.
+1. Apri un nuovo browser e passa a [http://localhost:5000/](http://localhost:5000/). Dovresti vedere l’app React distribuita.
 
    ![App React distribuita](assets/publish-deployment/react-app-served-port5000.png)
 
@@ -296,7 +297,7 @@ L’app può essere aggiornata per includere un URL assoluto utilizzando `REACT_
    $ npm run serve
    ```
 
-1. Accedi a [http://localhost:5000/](Http://localhost:5000/) e osservano che le immagini appaiono e che il `<img src''>` attribuire punti a `http://localhost:4503`.
+1. Accedi a [http://localhost:5000/](http://localhost:5000/) e osservano che le immagini appaiono e che il `<img src''>` attribuire punti a `http://localhost:4503`.
 
    ![Immagini interrotte corrette](assets/publish-deployment/broken-images-fixed.png)
 
@@ -339,7 +340,7 @@ Quindi, simula la pubblicazione di contenuti tra le istanze Autore locale e Pubb
 
    Fai clic su **Pubblica** per pubblicare il frammento di contenuto e le risorse dipendenti.
 
-1. Torna all’app React in esecuzione il [http://localhost:5000/](Http://localhost:5000/). Ora puoi fare clic sul Bali Surf Camp per visualizzare i dettagli dell’avventura.
+1. Torna all’app React in esecuzione il [http://localhost:5000/](http://localhost:5000/). Ora puoi fare clic sul Bali Surf Camp per visualizzare i dettagli dell’avventura.
 
 1. Torna all’istanza di authoring dell’AEM all’indirizzo [http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp](http://localhost:4502/editor.html/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp) e aggiorna **Titolo** del frammento. **Salva e chiudi** il frammento. Then **pubblicare** il frammento.
 1. Torna a [http://localhost:5000/adventure:/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp](http://localhost:5000/adventure:/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp) e osserva le modifiche pubblicate.

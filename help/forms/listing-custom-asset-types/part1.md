@@ -1,14 +1,8 @@
 ---
 title: Registrazione di tipi di risorse personalizzati
-seo-title: Registering Custom Asset Types
 description: Abilitazione dei tipi di risorse personalizzati per l’inserimento nell’elenco in AEMForms Portal
-seo-description: Enabling custom asset types for listing in AEMForms Portal
-uuid: eaf29eb0-a0f6-493e-b267-1c5c4ddbe6aa
 feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 discoiquuid: 99944f44-0985-4320-b437-06c5adfc60a1
 topic: Development
@@ -16,10 +10,11 @@ role: Developer
 level: Experienced
 exl-id: da613092-e03b-467c-9b9e-668142df4634
 last-substantial-update: 2019-07-11T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 173
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 2%
+source-wordcount: '644'
+ht-degree: 0%
 
 ---
 
@@ -79,7 +74,7 @@ Specificando la proprietà del percorso a **&quot;/content/dam&quot;** si sta fo
 1. Crea un nodo di tipo &quot;nt:unstructured&quot; sotto i criteri di ricerca del nodo. Denomina questo nodo &quot;filetypes&quot;
 1. Aggiungi le seguenti 2 proprietà a questo nodo &quot;filetypes&quot;
 
-   1. name: ./jcr:content/metadata/dc:format
+   1. nome: ./jcr:content/metadata/dc:format
    1. valore: video/mp4
 
 1. Ciò significa che le risorse con la proprietà dc:format uguale a video/mp4 sono considerate un tipo di risorsa &quot;Video Mp4&quot;. Per i criteri di ricerca è possibile utilizzare qualsiasi proprietà elencata nel nodo &quot;jcr:content/metadata&quot;

@@ -1,12 +1,8 @@
 ---
 title: Elencare tipi di risorse personalizzati in AEM Forms
 description: Parte 2 dell’elenco dei tipi di risorse personalizzate in AEM Forms
-uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
 feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 discoiquuid: 4b940465-0bd7-45a2-8d01-e4d640c9aedf
 topic: Development
@@ -14,9 +10,10 @@ role: Developer
 level: Experienced
 exl-id: f221d8ee-0452-4690-a936-74bab506d7ca
 last-substantial-update: 2019-07-10T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 184
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -78,7 +75,7 @@ Di seguito è riportato un elenco dei vari tipi di risorse che utilizzano il com
 
 ## Configurare Il Componente Ricerca Ed Elenco {#configure-search-and-lister-component}
 
-Dopo aver definito il modello personalizzato, è necessario associarlo al componente &quot;Ricerca ed elenco&quot;. Puntare il browser [a questo url ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
+Dopo aver definito il modello personalizzato, è necessario associarlo al componente &quot;Ricerca ed elenco&quot;. Puntare il browser [a questo url](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
 
 Passa alla modalità Progettazione e configura il sistema paragrafo in modo da includere il componente Ricerca ed elenco nel gruppo di componenti consentiti. Il componente Ricerca ed elenco fa parte del gruppo Servizi basati su documenti.
 
@@ -108,7 +105,7 @@ La schermata seguente mostra i tipi di risorse configurati per l’inserzione
 
 ![assettipi](assets/assettypes.png)
 
-Dopo aver configurato il componente Portale di ricerca ed elenco, è ora di visualizzare il lister in azione. Puntare il browser [a questo url ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). I risultati dovrebbero essere simili all’immagine mostrata di seguito.
+Dopo aver configurato il componente Portale di ricerca ed elenco, è ora di visualizzare il lister in azione. Puntare il browser [a questo url](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). I risultati dovrebbero essere simili all’immagine mostrata di seguito.
 
 >[!NOTE]
 >

@@ -8,9 +8,10 @@ role: User
 level: Intermediate
 exl-id: 6e4b901a-6534-4c34-b315-2f2620b74247
 last-substantial-update: 2019-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+duration: 64
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
@@ -28,6 +29,6 @@ Row1 è configurato per l’aumento di dimensione a seconda dei dati restituiti 
 
 [Installa Tomcat come specificato qui](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
 [Distribuisci il file SampleRest.war contenuto in questo file zip nel tuo Tomcat](assets/sample-rest.zip)
-[Installare le risorse ](assets/amortizationschedule.zip) utilizzo del gestore di pacchetti AEM
+[Installare le risorse](assets/amortizationschedule.zip) utilizzo del gestore di pacchetti AEM
 [Aprire il modulo Programma di ammortamento](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
 Inserire il valore appropriato e fare clic su Calcola pianificazione ammortamento che deve essere compilata nel modulo
