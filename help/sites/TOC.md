@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 54827c36a33437a8bf090eb10cde8ed656446d0b
+source-git-commit: bd33d076cf9caa7c900ef4fe8b1a17e27a791cae
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 26%
+source-wordcount: '491'
+ht-degree: 18%
 
 ---
 
@@ -18,6 +18,7 @@ ht-degree: 26%
 
 + [Panoramica](overview.md)
 + Authoring dei documenti {#document-authoring}
+   + [Panoramica](document-authoring/overview.md)
    + [Configurazione](document-authoring/set-up.md)
    + [Anteprima e pubblicazione](document-authoring/preview-and-publish.md)
    + [Struttura del documento](document-authoring/document-structure.md)
@@ -65,7 +66,8 @@ ht-degree: 26%
    + [Utilizzo di Frammenti esperienza](experience-fragments/experience-fragments-feature-video-use.md)
    + [Blocchi predefiniti](experience-fragments/building-blocks.md)
    + [Frammenti di contenuto e frammenti di esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
-+ Servizi di consegna Edge{#edge-delivery-services}
++ Edge Delivery Services{#edge-delivery-services}
+   + [Panoramica](./edge-delivery-services/overview.md)
    + Sviluppo{#developing}
       + [Prerequisiti](edge-delivery-services/developing/prerequisites.md)
       + [Piastra riscaldante per AEM](edge-delivery-services/developing/aem-boilerplate.md)
@@ -80,8 +82,8 @@ ht-degree: 26%
 + Sviluppo {#developing}
    + [Servizi di consegna Edge](developing/edge-delivery-services.md)
    + [Archetipo progetto AEM](developing/aem-project-archetype.md)
-   + [Guida introduttiva di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it){target=_blank}
-   + [Guida introduttiva ad AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it){target=_blank}
+   + [Guida introduttiva ad AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it){target=_blank}
+   + [Guida introduttiva di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it){target=_blank}
    + [Guida introduttiva all’Editor SPA dell’AEM e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
    + [Estensione delle proprietà di pagina](developing/page-properties-technical-video-develop.md)
    + [Punti di interruzione reattivi](developing/responsive-breakpoints.md)
@@ -109,7 +111,7 @@ ht-degree: 26%
 + Gestione multisito {#multi-site-management}
    + [Introduzione alla copia per lingua](./multi-site-management/language-copy-overview.md)
    + [Live Copy e blueprint](./multi-site-management/live-copy-and-blueprint.md)
-   + [Crea una Live Copy](./multi-site-management/create-live-copy.md)
+   + [Creare una Live Copy](./multi-site-management/create-live-copy.md)
    + [Gestire l’ereditarietà di una Live Copy su un componente](./multi-site-management/manage-component-inheritance-live-copy.md)
    + [Gestire l’ereditarietà di una Live Copy su una pagina](./multi-site-management/manage-page-inheritance-live-copy.md)
    + [Console panoramica Live Copy](./multi-site-management/live-copy-overview-console.md)
