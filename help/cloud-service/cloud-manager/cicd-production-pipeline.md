@@ -11,10 +11,10 @@ role: Architect, Developer, Admin
 level: Beginner
 exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
 duration: 423
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 8a042c561c1a7e48152c2b067d92d709ab5fd53e
 workflow-type: tm+mt
 source-wordcount: '147'
-ht-degree: 53%
+ht-degree: 51%
 
 ---
 
@@ -24,17 +24,17 @@ ht-degree: 53%
 >id="aemcloud_devops_prodpipeline"
 >title="Pipeline CI/CD di produzione"
 >abstract="La configurazione della pipeline CI/CD di produzione definisce il trigger che avvia la pipeline, i parametri che controllano l’implementazione di produzione e i parametri di test delle prestazioni."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it#deployment-process" text="Implementare il codice"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it#deployment-production-phase" text="Fase dalla distribuzione alla produzione"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=en" text="Implementare il codice"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=en" text="Fase dalla distribuzione alla produzione"
 
 ## Configurazione
 
-Il [Pipeline CI/CD di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) La configurazione definisce il trigger che avvierà la pipeline, i parametri che controllano la distribuzione di produzione e i parametri di test delle prestazioni.
+Il [Pipeline CI/CD di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/pipelines/configuring-production-pipelines.html) La configurazione definisce il trigger che avvierà la pipeline, i parametri che controllano la distribuzione di produzione e i parametri di test delle prestazioni.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314?quality=12&learn=on)
 
 ### Esecuzione delle pipeline
 
-Il [Pipeline CI/CD di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=it) viene utilizzato per generare e distribuire il codice nell’ambiente di produzione tramite Stage, riducendo il time-to-value.
+Il [Pipeline CI/CD di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) viene utilizzato per generare e distribuire il codice nell’ambiente di produzione tramite Stage, riducendo il time-to-value.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317?quality=12&learn=on)
