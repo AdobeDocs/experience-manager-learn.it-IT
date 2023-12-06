@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: b770fc33ee0752911135d1a94144406bad8f295b
+source-git-commit: 43c021b051806380b3211f2d7357555622217b91
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 21%
+source-wordcount: '1072'
+ht-degree: 16%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 21%
 + [Panoramica](./overview.md)
 + Sperimentazioni AEM {#aem-trials}
    + [Immagini](./aem-trials/images.md)
-+ Introduzione ad AEM as a Cloud Service{#introduction}
++ Introduzione all’AEM as a Cloud Service{#introduction}
    + [Cos’è l’AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Architettura](./introduction/architecture.md)
    + [Cloud Manager](./introduction/cloud-manager.md)
@@ -27,7 +27,7 @@ ht-degree: 21%
       + [Experience Manager - Modelli e archetipi per governance e personale](./introduction/experience-manager-governance-and-staffing-models.md)
       + [Come velocizzare i contenuti con Adobe Experience Manager](./introduction/drive-content-velocity-for-sites.md)
       + [Accelerare la velocità dei contenuti con i sistemi AEM](./introduction/accelerate-content-velocity-aem.md)
-+ Integrazioni di Experience Cloud{#integrations}
++ Integrazioni Experience Cloud{#integrations}
    + [Integrazioni](./integrations/experience-cloud.md)
    + [Adobe Target](./integrations/target.md)
 + Tecnologia di base {#underlying-technology}
@@ -37,7 +37,7 @@ ht-degree: 21%
    + [Sling](./underlying-technology/introduction-sling.md)
    + [Servizi di authoring e pubblicazione](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
-+ Servizi di consegna Edge {#edge-delivery-services}
++ Edge Delivery Services {#edge-delivery-services}
    + [Plug-in Sidekick AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
 + Cloud Manager {#cloud-manager}
    + [Programmi](./cloud-manager/programs.md)
@@ -99,7 +99,7 @@ ht-degree: 21%
       + [Ciclo di vita del componente OSGi](./developing/osgi-services/lifecycle.md)
       + [Nozioni di base sulle configurazioni OSGi](./developing/osgi-services/configurations.md)
       + [Configurazioni OSGi con OCD](./developing/osgi-services/configurations-ocd.md)
-   + Avanzate {#advanced}
+   + Avanzate{#advanced}
       + [Memorizzazione in cache delle varianti di pagina](./developing/advanced/variant-caching.md)
       + [Protezione CSRF](./developing/advanced/csrf-protection.md)
       + [Spazi dei nomi personalizzati](./developing/advanced/custom-namespaces.md)
@@ -134,6 +134,9 @@ ht-degree: 21%
    + [Servizio di pubblicazione AEM](./caching/publish.md)
    + [Servizio di authoring AEM](./caching/author.md)
    + [Analisi percentuale riscontri cache CDN](./caching/cdn-cache-hit-ratio-analysis.md)
+   + Procedura{#how-to}
+      + [Abilita caching](./caching/how-to/enable-caching.md)
+      + [Disattiva caching](./caching/how-to/disable-caching.md)
 + Accesso all’AEM{#accessing}
    + [Panoramica](./accessing/overview.md)
    + [Utenti Adobe IMS](./accessing/adobe-ims-users.md)
@@ -322,10 +325,10 @@ ht-degree: 21%
    + Test e debug{#test-debug}
       + [Eseguire il test di un lavoratore](./asset-compute/test-debug/test.md)
       + [Debug di un processo di lavoro](./asset-compute/test-debug/debug.md)
-   + Implementare{#deploy}
+   + Distribuisci{#deploy}
       + [Implementare in Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
       + [Integrare con AEM](./asset-compute/deploy/processing-profiles.md)
-   + Avanzate {#advanced}
+   + Avanzate{#advanced}
       + [Lavoratori metadati](./asset-compute/advanced/metadata.md)
    + [Risoluzione dei problemi](./asset-compute/troubleshooting.md)
 
