@@ -1,26 +1,28 @@
 ---
-title: Integrazione Adobi Express
-description: Scopri come ottimizzare le catene di fornitura dei contenuti con AEM Assets e Adobi Express, migliorando la produttività e l’accessibilità per tutti i membri del gruppo.
+title: AEM ASSETS e ADOBI EXPRESS
+description: Scopri come creare e modificare facilmente i contenuti in AEM Assets utilizzando Adobi Express.
 version: Cloud Service
 feature: Integrations
-topic: Integrations, Content Management
-role: User
-level: Intermediate
-last-substantial-update: 2023-10-26T00:00:00Z
-jira: KT-14192
-thumbnail: 3425193.jpeg
+topic: Integrations, Content Management, Content Supply Chain
+role: Admin, User
+level: Beginner
 doc-type: Feature Video
-exl-id: 4da1b1ff-5472-4282-a998-ae344e7b8309
-duration: 610
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 500
+last-substantial-update: 2023-12-06T00:00:00Z
+jira: KT-14645
+thumbnail: 3425972.jpeg
+source-git-commit: e5c50ffb379f497ed72efd63528af4f874b18ade
 workflow-type: tm+mt
-source-wordcount: '49'
+source-wordcount: '86'
 ht-degree: 0%
 
 ---
 
-# Integrazione Adobi Express
 
-Scopri come ottimizzare le catene di fornitura dei contenuti con AEM Assets e [Adobe Express](https://www.adobe.com/express/), migliorando la produttività e l&#39;accessibilità per tutti i membri del gruppo.
+# AEM ASSETS e ADOBI EXPRESS
 
->[!VIDEO](https://video.tv.adobe.com/v/3425193/?learn=on)
+Scopri come creare e modificare facilmente i contenuti in Adobe Experience Manager Assets utilizzando Adobi Express. Questo video illustra come ottimizzare i flussi di lavoro per i contenuti, sia modificare le risorse esistenti che crearne di nuove, in modo semplice ed efficiente.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425972/?learn=on)
+
+Scopri come impostare [Componente aggiuntivo AEM Assets per Adobe Express](./adobe-express-aem-assets-add-on.md) per accedere facilmente ad AEM Assets da Adobi Express.

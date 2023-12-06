@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: f6491d04f7f23da75366904a7965103465d33f87
+source-git-commit: e5c50ffb379f497ed72efd63528af4f874b18ade
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 25%
+source-wordcount: '402'
+ht-degree: 16%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 25%
    + [Tag avanzati per video](metadata/video-smart-tags.md)
    + [Importare ed esportare i metadati](metadata/metadata-import-export.md)
 
-+ Servizi di consegna Edge{#edge-delivery-services}
++ Edge Delivery Services{#edge-delivery-services}
    + [plugin Sidekick](./edge-delivery-services/sidekick-plugin.md)
 
 + Condivisione e distribuzione{#sharing}
@@ -84,13 +84,14 @@ ht-degree: 25%
       + [Asset Share Commons Kit di risorse](./sharing/asset-share/asset-share-commons-asset-kits.md)
    + [Risorse collegate](./sharing/connected-assets.md)
 
-+ Integrazione con flussi di lavoro creativi{#creative-workflows}
++ Creative Workflows{#creative-workflows}
    + [Adobe Express](./creative-workflows/adobe-express.md)
+   + [Componente aggiuntivo AEM Assets di Adobe Express](./creative-workflows/adobe-express-aem-assets-add-on.md)
    + [App desktop AEM](./creative-workflows/aem-desktop-app.md)
-   + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
+   + [Adobe collegamento risorsa](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
-+ Adobe Asset Link{#adobe-asset-link}
++ Adobe collegamento risorsa{#adobe-asset-link}
    + [Configurazione](./adobe-asset-link/setup.md)
    + [Accedi ad Adobe Asset Link](./adobe-asset-link/launch-adobe-asset-link.md)
    + [Panoramica dei pannelli](./adobe-asset-link/panel-overview.md)
@@ -108,7 +109,7 @@ ht-degree: 25%
    + [Operazioni creative](./content-automation/creative-operations.md)
    + [Azioni Photoshop](./content-automation/photoshop-actions.md)
 
-+ Dynamic Media{#dynamic-media}
++ Dynamic Medie{#dynamic-media}
    + [Panoramica di Dynamic Medie](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Applicazione desktop Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Immagini {#images}
@@ -132,7 +133,7 @@ ht-degree: 25%
       + [Frammenti di esperienza](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Componenti core Dynamic Medie](dynamic-media/dynamic-media-core-components.md)
 
-   + Esercitazioni {#tutorials}
+   + Tutorials {#tutorials}
       + [Creazione di set carosello](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
       + [Creazione di set di immagini](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
       + [Creazione di predefiniti immagine](dynamic-media/tutorials/creating-image-presets.md)
@@ -164,7 +165,7 @@ ht-degree: 25%
    + [Ricerca traduzione avanzata](translation/smart-translation-search-feature-video-use.md)
    + [Configurare la ricerca di traduzione intelligente](translation/smart-translation-search-technical-video-setup.md)
 
-+ Modelli per risorse{#asset-templates}
++ Modelli di risorse{#asset-templates}
    + [Informazioni sui modelli di risorse](asset-templates/asset-templates-tutorial-understand.md)
    + [Utilizzo dei modelli di risorse](asset-templates/asset-templates-feature-video-use.md)
    + [Configurare i modelli di risorse](asset-templates/asset-templates-technical-video-setup.md)
