@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-11-30T00:00:00Z
 jira: KT-14224
 thumbnail: KT-14224.jpeg
-source-git-commit: 43c021b051806380b3211f2d7357555622217b91
+exl-id: 22b1869e-5bb5-437d-9cb5-2d27f704c052
+source-git-commit: 783f84c821ee9f94c2867c143973bf8596ca6437
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
-
 
 # Disabilitare il caching CDN
 
@@ -48,16 +48,16 @@ Esaminiamo ognuna di queste opzioni.
 
 Questa opzione è l’approccio consigliato per disabilitare la memorizzazione in cache, ma è disponibile solo per la pubblicazione AEM. Per aggiornare le intestazioni della cache, utilizza `mod_headers` modulo e `<LocationMatch>` nel file vhost del server HTTP Apache. La sintassi generale è la seguente:
 
-    &quot;conf
-    &lt;locationmatch url=&quot;&quot; url_regex=&quot;&quot;>
-    # Rimuove l&#39;intestazione di risposta del nome, se esistente. Se sono presenti più intestazioni con lo stesso nome, verranno rimosse tutte.
-    Intestazione unset Cache-Control
-    Scadenza annullamento impostazione intestazione
-    
-    # Indica alla rete CDN di non memorizzare la risposta nella cache.
-    Set di intestazioni Cache-Control &quot;private&quot;
-    &lt;/locationmatch>
-    &quot;
+```
+<LocationMatch "$URL$ || $URL_REGEX$">
+    # Removes the response header of this name, if it exists. If there are multiple headers of the same name, all will be removed.
+    Header unset Cache-Control
+    Header unset Expires
+
+    # Instructs the CDN to not cache the response.
+    Header set Cache-Control "private"
+</LocationMatch>
+```
 
 #### Esempio
 
@@ -68,16 +68,17 @@ Per ignorare la cache CSS esistente, è necessario modificare il file CSS per ge
 1. Nel progetto AEM, individua il file vhsot desiderato da `dispatcher/src/conf.d/available_vhosts` directory.
 1. Aggiorna il vhost (ad es. `wknd.vhost`) file come segue:
 
-       &quot;conf
-       &lt;locationmatch etc.clientlibs=&quot;&quot;>*\.(css)$&quot;>
-       # Rimuove l&#39;intestazione di risposta del nome, se esistente. Se sono presenti più intestazioni con lo stesso nome, verranno rimosse tutte.
-       Intestazione unset Cache-Control
-       Scadenza annullamento impostazione intestazione
-       
-       # Indica alla rete CDN di non memorizzare la risposta nella cache.
-       Set di intestazioni Cache-Control &quot;private&quot;
-       &lt;/locationmatch>
-       &quot;
+   ```
+   <LocationMatch "^/etc.clientlibs/.*\.(css)$">
+       # Removes the response header of this name, if it exists. If there are multiple headers of the same name, all will be removed.
+       Header unset Cache-Control
+       Header unset Expires
+   
+       # Instructs the CDN to not cache the response.
+       Header set Cache-Control "private"
+   </LocationMatch>
+   ```
+
    I file vhost in `dispatcher/src/conf.d/enabled_vhosts` directory sono **symlink** ai file in `dispatcher/src/conf.d/available_vhosts` , quindi assicurati di creare symlink se non presente.
 1. Implementare le modifiche vhost nell’ambiente AEM as a Cloud Service desiderato utilizzando [Cloud Manager - Pipeline di configurazione a livello web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) o [Comandi RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
 
@@ -85,6 +86,6 @@ Per ignorare la cache CSS esistente, è necessario modificare il file CSS per ge
 
 Questa opzione è disponibile sia per la pubblicazione AEM che per l’authoring. Per aggiornare le intestazioni della cache, utilizza `SlingHttpServletResponse` oggetto nel codice Java™ personalizzato (servlet Sling, filtro servlet Sling). La sintassi generale è la seguente:
 
-    &quot;java
-    response.setHeader(&quot;Cache-Control&quot;, &quot;private&quot;);
-    &quot;
+```java
+response.setHeader("Cache-Control", "private");
+```
