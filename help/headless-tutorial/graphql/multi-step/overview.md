@@ -12,10 +12,10 @@ level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
 duration: 81
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 90c3ef479b289c9b319735fd28a1e39875c421a9
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 3%
+source-wordcount: '266'
+ht-degree: 4%
 
 ---
 
@@ -48,7 +48,7 @@ Per seguire questa esercitazione sono necessari i seguenti elementi:
 
 ### Ambiente AEM
 
-Per completare questa esercitazione, si consiglia di accedere come amministratore AEM a un ambiente as a Cloud Service AEM. Se non hai accesso all’ambiente AEM as a Cloud Service, puoi utilizzare [SDK Quickstart as a Cloud Service per AEM locale](/help/cloud-service/local-development-environment/aem-runtime.md). Tuttavia, è importante notare che alcune schermate dell’interfaccia utente del prodotto, come la navigazione per frammenti di contenuto, sono diverse.
+Per completare questa esercitazione, si consiglia di disporre dell&#39;accesso amministratore AEM a un ambiente as a Cloud Service AEM. Se non hai accesso a un ambiente AEM as a Cloud Service, [iscriversi allo studio dell’AEM Headless](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=it) esplorare le funzionalità headless dell’AEM.
 
 ## Iniziamo!
 
