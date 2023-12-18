@@ -11,9 +11,9 @@ role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
 duration: 227
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 234c163a2936ca07bdf259038f1b22c4363fae3c
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '853'
 ht-degree: 2%
 
 ---
@@ -75,6 +75,10 @@ I frammenti di contenuto sono memorizzati in cartelle in AEM Assets. Per creare 
 
 
 ## Creare un frammento di contenuto {#create-content-fragment}
+
+>[!TIP]
+>
+>Per gli utenti locali dell’SDK AEM: utilizza l’interfaccia utente di AEM Assets per creare e creare frammenti di contenuto, invece dell’interfaccia utente Frammenti di contenuto descritta di seguito. Per istruzioni dettagliate, fare riferimento a [Documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html).
 
 Successivamente vengono creati diversi frammenti di contenuto in base al **Team** e **Persona** modelli.
 
@@ -145,6 +149,10 @@ Quindi popola i frammenti appena creati con i dati.
 1. Tocca **Salva e chiudi** per salvare le modifiche apportate al frammento di Alpha Team.
 
 ## Pubblicare frammenti di contenuto
+
+>[!TIP]
+>
+>Per gli utenti locali dell’SDK AEM: utilizza l’interfaccia utente di AEM Assets per pubblicare frammenti di contenuto, invece dell’interfaccia utente Frammenti di contenuto descritta di seguito. Per istruzioni dettagliate, fare riferimento a [Documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html#publishing-and-referencing-a-fragment).
 
 In seguito a revisione e verifica, pubblica il `Content Fragments`
 
