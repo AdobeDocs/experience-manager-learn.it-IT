@@ -9,11 +9,11 @@ level: Beginner
 doc-type: Tutorial
 duration: 0
 last-substantial-update: 2023-12-07T00:00:00Z
-jira: KT-14649
-thumbnail: KT-14649.jpeg
-source-git-commit: 55f5cef46f7451ebb5b42b8cf17e71efeb0329c2
+jira: KT-14734
+thumbnail: KT-14734.jpeg
+source-git-commit: 839d552199fe7d10a0cde4011bdfe8cf42cc8ec9
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -81,4 +81,6 @@ Per semplificare, questa applicazione web in hosting recupera solo il primo batc
 
 ## Risorse aggiuntive
 
-- [Codice sorgente del webhook Glitch](https://glitch.com/edit/#!/indigo-speckle-antler)
+- [Codice sorgente del webhook Glitch](https://glitch.com/edit/#!/indigo-speckle-antler) è disponibile come riferimento. È una semplice applicazione React che utilizza [Spettro di reazione Adobe](https://react-spectrum.adobe.com/react-spectrum/index.html) componenti per il rendering dell’interfaccia utente.
+
+- [API di inserimento nel journal degli eventi di Adobe I/O](https://developer.adobe.com/events/docs/guides/api/journaling_api/) fornisce informazioni dettagliate sull’API, come primo, successivo e ultimo batch di eventi, impaginazione e altro ancora.
