@@ -13,7 +13,7 @@ duration: 26
 source-git-commit: 8a042c561c1a7e48152c2b067d92d709ab5fd53e
 workflow-type: tm+mt
 source-wordcount: '80'
-ht-degree: 67%
+ht-degree: 68%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 67%
 >title="Distribuzione del codice"
 >abstract="Integra l’archivio Git di Cloud Manager con un archivio Git esterno e distribuisci un progetto in AEM as a Cloud Service"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/merge-projects.html?lang=it#cloud-manager" text="Unire i progetti"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=en" text="Distribuzione del codice con Cloud Manager"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=it" text="Distribuzione del codice con Cloud Manager"
 
 Integra l’archivio Git di Cloud Manager con un archivio Git esterno e distribuisci un progetto in AEM as a Cloud Service
 
