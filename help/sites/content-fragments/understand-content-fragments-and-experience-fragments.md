@@ -10,7 +10,7 @@ level: Beginner
 doc-type: Article
 exl-id: ccbc68d1-a83e-4092-9a49-53c56c14483e
 duration: 242
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 7e1f538b111815a7934b798e0dac3587d8962c31
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 2%
@@ -36,7 +36,7 @@ I frammenti di contenuto e i frammenti di esperienza di Adobe Experience Manager
 <li>Un composito riutilizzabile di uno o più componenti AEM che definiscono il contenuto e la presentazione che costituiscono un <strong>esperienza</strong> che ha senso da solo</li>
 </ul>
 </td>
-</tr><tr><td><strong>Tenant core</strong></td>
+</tr><tr><td><strong>Principi di base</strong></td>
 <td><ul>
 <li>Incentrato sui contenuti</li>
 <li>Definito da un <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments-models.html?lang=en" target="_blank">modello dati strutturato basato su moduli.</a></li>
