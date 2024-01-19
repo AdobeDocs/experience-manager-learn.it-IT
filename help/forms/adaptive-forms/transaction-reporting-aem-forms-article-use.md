@@ -9,16 +9,16 @@ level: Beginner
 exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 96
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 4b88045a626b5e7bd1386e62ee54ac6fe2ce9282
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
 
 # Utilizzo del reporting delle transazioni in AEM Forms{#using-transaction-reporting-in-aem-forms}
 
-Con AEM Forms 6.4.1 è stato introdotto il reporting delle transazioni per acquisire il numero di invii di moduli, il rendering dei documenti utilizzando i servizi documentali e il rendering delle comunicazioni interattive (canali Web e di stampa). Questa funzionalità è destinata principalmente ai clienti che desiderano concedere in licenza il software in base al numero di invii di moduli e/o documenti sottoposti a rendering. Questa funzionalità è attualmente disponibile solo nello stack OSGI di AEM Forms.
+Con AEM Forms 6.4.1 è stato introdotto il reporting delle transazioni per acquisire il numero di invii di moduli, il rendering dei documenti utilizzando i servizi documentali e il rendering delle comunicazioni interattive (canali Web e di stampa). Questa funzionalità è attualmente disponibile solo nello stack OSGI di AEM Forms.
 
 ## Abilitazione del reporting delle transazioni {#enabling-transaction-reporting}
 
@@ -35,7 +35,7 @@ Una volta abilitata la generazione di rapporti sulle transazioni, puoi inviare F
 
 Per visualizzare il rapporto sulle transazioni, accedi ad AEM Forms come amministratore. Solo i membri del gruppo fd-Administrator possono visualizzare il report delle transazioni.
 
-Seleziona strumenti | FORMS | Visualizza rapporto transazione
+Seleziona strumenti | Forms | Visualizza report transazioni
 
 oppure visualizzare il report della transazione facendo clic su [qui](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 
