@@ -9,8 +9,8 @@ topic: Headless, Content Management
 level: Intermediate
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-duration: 952
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 878
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 0%
@@ -63,7 +63,7 @@ Controlla la **Traducibile** , se il contenuto deve essere localizzato. È possi
 
 Durante la creazione di una query GraphQL, gli sviluppatori possono scegliere tipi di risposta diversi da `html`, `plaintext`, `markdown`, e `json` da un campo con più righe.
 
-Gli sviluppatori possono utilizzare [Anteprima JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html) nell’editor dei frammenti di contenuto per mostrare tutti i valori del frammento di contenuto corrente che possono essere restituiti utilizzando l’API GraphQL.
+Gli sviluppatori possono utilizzare [Anteprima JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=it) nell’editor dei frammenti di contenuto per mostrare tutti i valori del frammento di contenuto corrente che possono essere restituiti utilizzando l’API GraphQL.
 
 ## Query persistente GraphQL
 

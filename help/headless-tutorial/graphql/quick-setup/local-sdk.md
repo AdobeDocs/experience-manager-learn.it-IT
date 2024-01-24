@@ -10,8 +10,8 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-duration: 328
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 297
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Configurazione rapida AEM headless tramite SDK AEM locale {#setup}
 
-La configurazione rapida AEM Headless ti consente di utilizzare AEM Headless utilizzando il contenuto del progetto di esempio del sito WKND e un esempio di app React (SPA) che consuma il contenuto rispetto alle API AEM Headless GraphQL. Questa guida utilizza [SDK AS A CLOUD SERVICE AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html).
+La configurazione rapida AEM Headless ti consente di utilizzare AEM Headless utilizzando il contenuto del progetto di esempio del sito WKND e un esempio di app React (SPA) che consuma il contenuto rispetto alle API AEM Headless GraphQL. Questa guida utilizza [SDK AS A CLOUD SERVICE AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=it).
 
 ## Prerequisiti {#prerequisites}
 

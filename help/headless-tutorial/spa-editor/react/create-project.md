@@ -1,5 +1,5 @@
 ---
-title: Crea progetto | Guida introduttiva dell’Editor SPA dell’AEM e React
+title: Crea progetto | Guida introduttiva all’Editor SPA dell’AEM e React
 description: Scopri come generare un progetto Adobe Experience Manager (AEM) Maven come punto di partenza per un’applicazione React integrata con l’Editor AEM SPA.
 feature: SPA Editor, AEM Project Archetype
 version: Cloud Service
@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
-duration: 344
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 306
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%

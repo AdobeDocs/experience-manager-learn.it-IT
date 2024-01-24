@@ -7,8 +7,8 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
-duration: 884
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 829
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 1%
@@ -49,7 +49,7 @@ Il video seguente fornisce una breve introduzione ai modelli per frammenti di co
 
 Creiamo alcuni modelli per frammenti di contenuto per l’app WKND. Per un’introduzione di base alla creazione di modelli per frammenti di contenuto, consulta il capitolo appropriato nella sezione [esercitazione di base](../multi-step/content-fragment-models.md).
 
-1. Accedi a **Strumenti** > **Generale** > **Modelli per frammenti di contenuto**.
+1. Passa a **Strumenti** > **Generale** > **Modelli per frammenti di contenuto**.
 
    ![Percorso modelli per frammenti di contenuto](assets/define-content-fragment-models/content-fragment-models-path.png)
 

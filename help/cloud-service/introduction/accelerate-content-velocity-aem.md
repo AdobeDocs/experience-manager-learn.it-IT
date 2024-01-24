@@ -3,8 +3,8 @@ title: Accelerare la velocità dei contenuti con i sistemi AEM
 description: Scopri come utilizzare i sistemi di stile AEM per consentire a designer, autori di contenuti e sviluppatori della tua organizzazione di creare e distribuire esperienze alla velocità e alla scalabilità che i clienti si aspettano.
 solution: Experience Manager
 exl-id: 449cd133-6ab6-456e-a0ad-30e3dea9b75b
-duration: 230
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 191
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '817'
 ht-degree: 0%
@@ -62,7 +62,7 @@ I sistemi di stile sono disponibili in alcuni gusti diversi:
    * Questa dovrebbe essere la rappresentazione più utilizzata
 * Prova a visualizzare solo le opzioni di stile che hanno un effetto quando possibile
    * Se vengono esposte combinazioni inefficaci, assicurarsi che non causino effetti negativi
-   * Ad es. Stile di layout che determina la posizione dell&#39;immagine ed è accompagnato da uno stile di visualizzazione inefficace che controlla la posizione dell&#39;immagine
+   * Ad esempio, uno stile di layout che determina la posizione dell&#39;immagine ed è accompagnato da uno stile di visualizzazione inefficace che controlla la posizione dell&#39;immagine
 * Opzione per gli stili di layout rispetto agli stili di visualizzazione combinati
    * Riduce il numero di permutazioni che devono essere controllate per verificarne la qualità
    * Garantisce il rispetto degli standard del marchio

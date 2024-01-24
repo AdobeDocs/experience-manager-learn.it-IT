@@ -10,8 +10,8 @@ topic: Development
 feature: Developer Tools
 jira: KT-8852
 exl-id: 983e0394-7142-481f-bd5e-6c9acefbfdd0
-duration: 78
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 60
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Il codice seguente nel file post.POST.jsp inoltra semplicemente la richiesta al 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/formstutorial",null,null);
 ```
 
-Nel progetto AEM in IntelliJ, fare clic con il pulsante destro del mouse su `apps/bankingapplication` cartella e seleziona Nuovo | Pacchetto e tipo in SubmitToAEMServlet dopo apps.bankingapplication nella finestra di dialogo Nuovo pacchetto. Fai clic con il pulsante destro del mouse sul nodo SubmitToAEMServlet e seleziona archivio | Ottieni il comando per sincronizzare il progetto AEM con l’archivio del server AEM.
+Nel progetto AEM in IntelliJ, fare clic con il pulsante destro del mouse su `apps/bankingapplication` cartella e seleziona Nuovo | Creare un pacchetto e digitare SubmitToAEMServlet dopo apps.bankingapplication nella finestra di dialogo Nuovo pacchetto. Fai clic con il pulsante destro del mouse sul nodo SubmitToAEMServlet e seleziona archivio | Ottieni il comando per sincronizzare il progetto AEM con l’archivio del server AEM.
 
 
 ## Configurare un modulo adattivo

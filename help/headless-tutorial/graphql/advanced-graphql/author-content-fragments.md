@@ -7,8 +7,8 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 998d3678-7aef-4872-bd62-0e6ea3ff7999
-duration: 818
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 732
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '2931'
 ht-degree: 1%
@@ -163,7 +163,7 @@ Seguire lo stesso processo descritto nella [sezione precedente](#fragment-refere
 | Immagine profilo | /content/dam/wknd-shared/en/contributors/stacey-roswells.jpg |
 | Biografia | Stacey Roswells è un esperto arrampicatore e avventuriero alpino. Nato a Baltimora, nel Maryland, Stacey è il più giovane di sei figli. Il padre di Stacey era un tenente colonnello della US Navy e la madre era un&#39;istruttrice di danza moderna. La famiglia di Stacey si spostò frequentemente con gli incarichi di lavoro del padre, e scattò le prime foto quando il padre era di stanza in Thailandia. Qui Stacey imparò a scalare la roccia. |
 | Livello di esperienza istruttore | Avanzate  |
-| Competenze | Arrampicata | Sci | Zainetto |
+| Competenze | Arrampicata | Sci | Backpacking |
 
 **Kumar Selvaraj**
 
@@ -175,7 +175,7 @@ Seguire lo stesso processo descritto nella [sezione precedente](#fragment-refere
 | Immagine profilo | /content/dam/wknd-shared/en/contributors/kumar-selvaraj.jpg |
 | Biografia | Kumar Selvaraj è un istruttore professionista certificato AMGA il cui obiettivo principale è quello di aiutare gli studenti a migliorare le loro abilità di arrampicata e trekking. |
 | Livello di esperienza istruttore | Avanzate  |
-| Competenze | Arrampicata | Zainetto |
+| Competenze | Arrampicata | Backpacking |
 
 **Ayo Ogunseinde**
 
@@ -187,7 +187,7 @@ Seguire lo stesso processo descritto nella [sezione precedente](#fragment-refere
 | Immagine profilo | /content/dam/wknd-shared/en/contributors/ayo-ogunseinde-237739.jpg |
 | Biografia | Ayo Ogunseinde è un alpinista professionista e istruttore di zaino che vive a Fresno, California centrale. L&#39;obiettivo di Ayo è quello di guidare gli escursionisti nelle loro avventure nel parco nazionale più epico. |
 | Livello di esperienza istruttore | Avanzate  |
-| Competenze | Arrampicata | Ciclismo | Zainetto |
+| Competenze | Arrampicata | Ciclismo | Backpacking |
 
 Lascia **Informazioni aggiuntive** campo vuoto.
 

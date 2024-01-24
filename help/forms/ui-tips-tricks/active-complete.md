@@ -10,8 +10,8 @@ level: Beginner
 jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
-duration: 111
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 102
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 14%
@@ -36,7 +36,7 @@ Apri il modulo in modalità di modifica Accertati di trovarti nel livello di sti
 Lo stato predefinito si trova quando apri l’editor di stili per la scheda, come illustrato nella schermata seguente
 ![navigation-tab](assets/navigation-tab.png)
 
-Imposta le proprietà CSS per lo stato predefinito come mostrato di seguito | Categoria | Nome proprietà | Valore proprietà | |:—|:—|:—| | Dimension e funzioni | Larghezza | 50 px | | Testo | Spessore font| Grassetto | | Testo Colore | | #FFF | |Testo | Altezza linea| 3 | |Testo | Allineamento testo | Sinistra | Colore di sfondo | #056dae |
+Imposta le proprietà CSS per lo stato predefinito come mostrato di seguito | Categoria | Nome proprietà | Valore proprietà | |:—|:—|:—| | Dimension e posizione | Larghezza | 50 px | | Testo | Spessore font| Bold | | Testo | Colore | #FFF | |Testo | Altezza riga| 3 | |Testo | Allineamento testo | Sinistra | |Contesto| Colore | #056dae |
 
 Salva le modifiche
 

@@ -10,8 +10,8 @@ jira: KT-9401
 thumbnail: 338824.jpg
 doc-type: Feature Video
 exl-id: a62e936f-c231-474d-9671-58815b2cb652
-duration: 2440
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 2424
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Adobe configurazione di Asset Link
 
-Impatta rapidamente la tua organizzazione rendendo più semplice per i team creativi e di marketing collaborare alle risorse nel processo di creazione dei contenuti. Se sei nell’IT, scopri come configurare rapidamente Adobe Asset Link senza alcun costo, che collega le tue app Creative Cloud, tra cui Photoshop, Illustrator, InDesign e XD, ad Adobe Experience Manager Assets.
+Impatta rapidamente la tua organizzazione rendendo più semplice per i team creativi e di marketing collaborare alle risorse nel processo di creazione dei contenuti. Se sei nell’IT, scopri come configurare rapidamente Adobe Asset Link senza alcun costo, che collega ad Adobe Experience Manager Assets le tue app Creative Cloud, tra cui Photoshop, Illustrator, InDesign e XD.
 
 ## Configurazione di Asset Link per AEM as a Cloud Service
 

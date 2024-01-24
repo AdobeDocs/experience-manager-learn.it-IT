@@ -7,11 +7,11 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-duration: 472
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 421
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '940'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -87,7 +87,7 @@ Grazie alla mappatura è possibile definire i frammenti di contenuto utilizzati 
 
 ## Creazione del modello per frammenti di contenuto
 
-1. Accedi a **[!UICONTROL Strumenti] > [!UICONTROL Generale] > [!UICONTROL Modelli per frammenti di contenuto]**.
+1. Passa a **[!UICONTROL Strumenti] > [!UICONTROL Generale] > [!UICONTROL Modelli per frammenti di contenuto]**.
 1. Tocca il **[!DNL WKND Mobile]** cartella da aprire.
 1. Tocca **[!UICONTROL Crea]** per aprire la procedura guidata di creazione del modello per frammenti di contenuto.
 1. Invio **[!DNL Event]** come **[!UICONTROL Titolo modello]** *(descrizione facoltativa)* e tocca **[!UICONTROL Crea]** per salvare.

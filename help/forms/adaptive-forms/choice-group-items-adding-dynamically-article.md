@@ -8,8 +8,8 @@ role: User
 level: Beginner
 exl-id: 8fbea634-7949-417f-a4d6-9e551fff63f3
 last-substantial-update: 2021-09-10T00:00:00Z
-duration: 374
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 350
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -79,7 +79,7 @@ Per provare questo sul sistema:
 
 * [Scaricare le risorse](assets/usingthecodeeditor.zip)
 * [Apri Forms E Documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Fai clic su &quot;Crea&quot; | Caricamento file&quot; e carica il file scaricato nel passaggio precedente
+* Fai clic su &quot;Crea&quot; | File Upload&quot; e carica il file scaricato nel passaggio precedente
 * [Visualizzare l’anteprima dei moduli](http://localhost:4502/content/dam/formsanddocuments/simpleform/jcr:content?wcmmode=disabled)
 * Inserire il nome del candidato e selezionare lo stato civile da sposato
 * Inserisci il nome del coniuge
@@ -92,7 +92,7 @@ Per provare questo sul sistema:
 * Installa Tomcat se non lo hai già. [Le istruzioni per installare tomcat sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
 * [Distribuisci il file SampleRest.war contenuto in questo file zip nel tuo Tomcat](assets/sample-rest.zip)
 * [Apri Forms E Documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Fai clic su &quot;Crea&quot; | Caricamento file&quot; e carica il file scaricato nel passaggio precedente
+* Fai clic su &quot;Crea&quot; | File Upload&quot; e carica il file scaricato nel passaggio precedente
 * [Visualizzare l’anteprima dei moduli](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
 * Inserire l&#39;importo del prestito e la tabulazione del campo. Ciò attiverà la regola che visualizza il campo del periodo del prestito.
 * Selezionare il periodo di prestito appropriato (gli articoli per il periodo di prestito sono compilati dalla chiamata rest)

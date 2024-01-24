@@ -13,8 +13,8 @@ thumbnail: KT-13156.jpeg
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
-duration: 1398
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 1353
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 1%
@@ -207,7 +207,7 @@ Dopo la configurazione dell’SDK per web con AEM, in particolare sul sito WKND,
 
 ## Riepilogo
 
-Ottimo lavoro Hai completato la configurazione dell’AEM con Experienci Platform Web SDK per raccogliere e acquisire dati da un sito web. Con questa base, ora puoi esplorare ulteriori possibilità per migliorare e integrare prodotti come Analytics, Target, Customer Journey Analytics (CJA) e molti altri per creare esperienze ricche e personalizzate per i tuoi clienti. Continua ad apprendere ed esplorare per sfruttare appieno il potenziale di Adobe Experience Cloud.
+Ottimo lavoro! Hai completato la configurazione dell’AEM con Experienci Platform Web SDK per raccogliere e acquisire dati da un sito web. Con questa base, ora puoi esplorare ulteriori possibilità per migliorare e integrare prodotti come Analytics, Target, Customer Journey Analytics (CJA) e molti altri per creare esperienze ricche e personalizzate per i tuoi clienti. Continua ad apprendere ed esplorare per sfruttare appieno il potenziale di Adobe Experience Cloud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418900?quality=12&learn=on)
 
