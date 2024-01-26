@@ -11,7 +11,7 @@ jira: KT-11603, KT-13382
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: c5c1df23-1c04-4c04-b0cd-e126c31d5acc
 duration: 637
-source-git-commit: 2a22a1bbe8474b8b7ca95f2b364fd7540b26b894
+source-git-commit: f48fb02887d909a102718dc5a0c4d1ecd2b1ef34
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -39,9 +39,9 @@ Per creare un URL che monti l’estensione non di produzione in AEM, è necessar
 Ad esempio, per visualizzare in anteprima un’estensione per la console Frammenti di contenuto:
 
 1. Accedi all’ambiente AEM as a Cloud Service desiderato.
-2. Seleziona la __Frammenti di contenuto__ icona.
-3. Attendi che la console Frammenti di contenuto AEM venga caricata nel browser.
-4. Copia l’URL della console Frammenti di contenuto AEM dalla barra degli indirizzi del browser; dovrebbe essere simile al seguente:
+1. Seleziona la __Frammenti di contenuto__ icona.
+1. Attendi che la console Frammenti di contenuto AEM venga caricata nel browser.
+1. Copia l’URL della console Frammenti di contenuto AEM dalla barra degli indirizzi del browser; dovrebbe essere simile al seguente:
 
    ```
    https://experience.adobe.com/?repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
@@ -80,11 +80,11 @@ Prendi nota dell’URL dell’applicazione locale, indicato qui sopra come `-> h
    https://experience.adobe.com/?devMode=true&ext=https://localhost:9080&repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
    ```
 
-2. Copia e incolla l’URL di anteprima nel browser.
+1. Copia e incolla l’URL di anteprima nel browser.
 
    + All&#39;inizio potrebbe essere necessario, e poi periodicamente, [accetta il certificato HTTPS](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) per l&#39;host dell&#39;applicazione locale (`https://localhost:9080`).
 
-3. L’interfaccia utente dell’AEM viene caricata con la versione locale dell’estensione inserita per la verifica.
+1. L’interfaccia utente dell’AEM viene caricata con la versione locale dell’estensione inserita per la verifica.
 
 >[!IMPORTANT]
 >
@@ -144,9 +144,9 @@ Per semplificare la creazione degli URL di anteprima e anteprima descritti sopra
 Il bookmarklet seguente visualizza l&#39;anteprima del [build di sviluppo locale](#verify-local-development-builds) dell&#39;estensione il `https://localhost:9080`. Per visualizzare l&#39;anteprima [build stage](#verify-stage-builds), crea un bookmarklet con `previewApp` variabile impostata sull’URL dell’app App Builder implementata.
 
 1. Crea un segnalibro nel browser.
-2. Modifica il segnalibro.
-3. Assegna a un segnalibro un nome significativo, ad esempio `AEM UI Extension Preview (localhost:9080)`.
-4. Impostare l&#39;URL del segnalibro sul codice seguente:
+1. Modifica il segnalibro.
+1. Assegna a un segnalibro un nome significativo, ad esempio `AEM UI Extension Preview (localhost:9080)`.
+1. Impostare l&#39;URL del segnalibro sul codice seguente:
 
    ```javascript
    javascript: (() => {
@@ -161,7 +161,7 @@ Il bookmarklet seguente visualizza l&#39;anteprima del [build di sviluppo locale
    })();
    ```
 
-5. Passa a un’interfaccia utente AEM estensibile su cui caricare l’estensione di anteprima, quindi fai clic sul bookmarklet.
+1. Passa a un’interfaccia utente AEM estensibile su cui caricare l’estensione di anteprima, quindi fai clic sul bookmarklet.
 
 >[!TIP]
 >
