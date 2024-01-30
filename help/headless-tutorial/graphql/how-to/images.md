@@ -11,7 +11,7 @@ thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 duration: 377
-source-git-commit: 2aec84f0fbd34678a4e25200ae0cdc6396beca95
+source-git-commit: d178059f6f00228586e692465f7f437129bffaae
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 4%
@@ -97,7 +97,7 @@ Il `$path` variabile utilizzata nel `_path` il filtro richiede il percorso compl
 Il `_assetTransform` definisce il modo in cui `_dynamicUrl` è stato creato per ottimizzare il rendering dell’immagine trasmessa. Gli URL delle immagini ottimizzate per il web possono essere regolati anche sul client modificando i parametri di query dell’URL.
 
 | Parametro GraphQL | Descrizione | Obbligatorio | Valori delle variabili GraphQL |
-|:---------|:----------|:-------------------------------|:--:|:--------------------------|
+|-------------------|------------------------------------------------------------------------------------------------------|----------|-------------------------------------------------------------|
 | `format` | Formato della risorsa immagine. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`, `WEBP`, `WEBPLL`, `WEBPLY` |
 | `seoName` | Nome del segmento di file nell’URL. Se non specificato, viene utilizzato il nome della risorsa immagine. | ✘ | Alfanumerico, `-`, o `_` |
 | `crop` | Il fotogramma ritagliato estratto dall&#39;immagine deve rientrare nelle dimensioni dell&#39;immagine | ✘ | Interi positivi che definiscono un’area di ritaglio entro i limiti delle dimensioni dell’immagine originale |
@@ -107,6 +107,7 @@ Il `_assetTransform` definisce il modo in cui `_dynamicUrl` è stato creato per 
 | `quality` | Qualità immagine in percentuale rispetto alla qualità originale. | ✘ | 1-100 |
 | `width` | Larghezza dell&#39;immagine di output in pixel. Quando `size` è fornito `width` viene ignorato. | ✘ | Numero intero positivo |
 | `preferWebP` | Se `true` e AEM serve un WebP se il browser lo supporta, indipendentemente dal `format`. | ✘ | `true`, `false` |
+
 
 ## Risposta GraphQL
 
