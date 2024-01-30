@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: aa6cd605c617de45003a96b1c14e37f055a8c566
+source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
 workflow-type: tm+mt
-source-wordcount: '1103'
-ht-degree: 16%
+source-wordcount: '1119'
+ht-degree: 17%
 
 ---
 
@@ -122,8 +122,8 @@ ht-degree: 16%
    + Debug di AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
       + [Panoramica](./debugging/cloud-service/overview.md)
       + [Registri](./debugging/cloud-service/logs.md)
-      + [Generazione e implementazione](./debugging/cloud-service/build-and-deployment.md)
-      + [Console per sviluppatori](./debugging/cloud-service/developer-console.md)
+      + [Build e implementazione](./debugging/cloud-service/build-and-deployment.md)
+      + [Console di sviluppo](./debugging/cloud-service/developer-console.md)
       + [Browser dell’archivio](./debugging/cloud-service/repository-browser.md)
       + Rischi{#risks}
          + [Avvisi di attraversamento](./debugging/cloud-service/risks/traversals.md)
@@ -149,9 +149,9 @@ ht-degree: 16%
    + [SAML 2.0](./authentication/saml-2-0.md)
 + Reti avanzate{#networking}
    + [Panoramica](./networking/advanced-networking.md)
-   + [Uscita porta flessibile](./networking/flexible-port-egress.md)
-   + [Indirizzo IP in uscita dedicato](./networking/dedicated-egress-ip-address.md)
-   + [Virtual Private Network](./networking/vpn.md)
+   + [Uscita da porta flessibile](./networking/flexible-port-egress.md)
+   + [Indirizzo IP di uscita dedicato](./networking/dedicated-egress-ip-address.md)
+   + [Rete privata virtuale](./networking/vpn.md)
    + Esempi di codice{#examples}
       + [HTTP/HTTPS su porte non standard per l’uscita della porta flessibile](./networking/examples/http-on-non-standard-ports-flexible-port-egress.md)
       + [HTTP/HTTPS per indirizzo IP/VPN in uscita dedicato](./networking/examples/http-dedicated-egress-ip-vpn.md)
@@ -169,6 +169,8 @@ ht-degree: 16%
    + Esempi{#examples}
       + [Webhook - Ricezione di eventi AEM](./eventing/examples/webhook.md)
       + [Inserimento nel journal - Carica eventi AEM](./eventing/examples/journaling.md)
+      + [Azione Adobe I/O Runtime - Ricezione di eventi AEM](./eventing/examples/runtime-action.md)
+      + [Azione Adobe I/O Runtime - Elabora eventi AEM](./eventing/examples/event-processing-using-runtime-action.md)
 + Migrazione {#migration}
    + [Strumento trasferimento contenuti](./migration/content-transfer-tool.md)
    + [Importazione in blocco delle risorse](./migration/bulk-import.md)

@@ -11,9 +11,9 @@ duration: 573
 last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '912'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Le distinzioni chiave degli eventi AEM comprendono:
 - Il codice consumer dell’evento viene eseguito al di fuori dell’AEM, non nella stessa JVM dell’AEM.
 - Il codice prodotto AEM è responsabile della definizione degli eventi e del loro invio agli Eventi Adobi I/O.
 - Le informazioni sull’evento sono standardizzate e inviate in formato JSON. Per ulteriori informazioni, consulta [cloudevents](https://cloudevents.io/).
-- Per comunicare di nuovo all’AEM, il consumatore dell’evento utilizza l’API AEM as a Cloud Service.
+- Per comunicare nuovamente con l’AEM, il consumatore dell’evento utilizza l’API as a Cloud Service dell’AEM.
 
 
 ## Perché e quando usarlo
@@ -83,7 +83,7 @@ Se già abilitato, vedi [Abilitare gli eventi AEM nell’ambiente AEM Cloud Serv
 
 Per iscriverti a AEM Events, non devi scrivere alcun codice nell’AEM, ma solo un [Console Adobe Developer](https://developer.adobe.com/) il progetto è configurato. La console Adobe Developer è un gateway per API, SDK, eventi, runtime e App Builder Adobe.
 
-In questo caso, un _progetto_ nella console Adobe Developer consente di abbonarti agli eventi emessi dagli ambienti AEM as a Cloud Service e configurare la consegna degli eventi ai sistemi esterni.
+In questo caso, un _progetto_ nella console Adobe Developer consente di abbonarti agli eventi emessi dall’ambiente as a Cloud Service AEM e configurare la consegna degli eventi ai sistemi esterni.
 
 Per ulteriori informazioni, consulta [Come abbonarsi a eventi AEM nella console Adobe Developer](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console).
 
@@ -92,7 +92,7 @@ Per ulteriori informazioni, consulta [Come abbonarsi a eventi AEM nella console 
 Esistono due metodi principali per consumare gli eventi AEM: _push_ e il _tirare_ metodo.
 
 - **Metodo push**: in questo approccio, il consumatore dell’evento riceve una notifica proattiva da Adobe I/O Events quando un evento diventa disponibile. Le opzioni di integrazione includono Webhook, Adobe I/O Runtime e Amazon EventBridge.
-- **Metodo pull**: qui, il consumatore dell’evento esegue attivamente il polling di Eventi di Adobe I/O per verificare la presenza di nuovi eventi. L’opzione di integrazione primaria per questo metodo è l’API di inserimento nel journal di Adobe I/O.
+- **Metodo pull**: qui, il consumatore dell’evento esegue attivamente il polling di Eventi di Adobe I/O per verificare la presenza di nuovi eventi. L’opzione di integrazione principale per questo metodo è l’API di Adobe Developer Journaling.
 
 Per ulteriori informazioni, consulta [Elaborazione di eventi AEM tramite eventi Adobi I/O](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#aem-events-processing-via-adobe-io).
 
@@ -101,7 +101,7 @@ Per ulteriori informazioni, consulta [Elaborazione di eventi AEM tramite eventi 
 <table>
   <tr>
     <td>
-        <a  href="./examples/webhook.md"><img alt="Ricevere eventi AEM su un webhook" src="./assets/examples/webhook/Eventing-webhook.png"/></a>
+        <a  href="./examples/webhook.md"><img alt="Ricevere eventi AEM su un webhook" src="./assets/examples/webhook/webhook-example.png"/></a>
         <div><strong><a href="./examples/webhook.md">Ricevere eventi AEM su un webhook</a></strong></div>
         <p>
           Utilizza l’Adobe fornito dal webhook per ricevere gli eventi AEM e rivedere i dettagli dell’evento.
@@ -115,4 +115,20 @@ Per ulteriori informazioni, consulta [Elaborazione di eventi AEM tramite eventi 
         </p>
       </td>
     </tr>
+  <tr>
+    <td>
+        <a  href="./examples/runtime-action.md"><img alt="Ricevi eventi AEM su azione Adobe I/O Runtime" src="./assets/examples/runtime-action/eventing-runtime.png"/></a>
+        <div><strong><a href="./examples/runtime-action.md">Ricevi eventi AEM su azione Adobe I/O Runtime</a></strong></div>
+        <p>
+          Ricevi gli Eventi AEM e rivedi i dettagli dell’evento.
+        </p>
+      </td>
+      <td>
+        <a  href="./examples/event-processing-using-runtime-action.md"><img alt="Elaborazione di eventi AEM tramite Azione Adobe I/O Runtime" src="./assets/examples/event-processing-using-runtime-action/event-processing.png"/></a>
+        <div><strong><a href="./examples/event-processing-using-runtime-action.md">Elaborazione di eventi AEM tramite Azione Adobe I/O Runtime</a></strong></div>
+        <p>
+          Scopri come elaborare gli eventi AEM ricevuti utilizzando Azione Adobe I/O Runtime. L’elaborazione degli eventi include il callback dell’AEM, la persistenza dei dati dell’evento e la loro visualizzazione nell’SPA.
+        </p>
+      </td>
+  </tr>    
 </table>

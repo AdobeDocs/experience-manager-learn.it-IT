@@ -8,10 +8,10 @@ role: Architect, Developer
 level: Beginner
 doc-type: Tutorial
 duration: 163
-last-substantial-update: 2023-12-07T00:00:00Z
+last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14734
 thumbnail: KT-14734.jpeg
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 0%
@@ -22,6 +22,8 @@ ht-degree: 0%
 # Giornale di registrazione ed eventi AEM
 
 Scopri come recuperare il set iniziale di eventi AEM dal diario ed esplorare i dettagli di ogni evento.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427052?quality=12&learn=on)
 
 Il journal è un metodo pull per utilizzare gli eventi AEM e un journal è un elenco ordinato di eventi. Utilizzando l’API di inserimento nel journal degli eventi di Adobe I/O, puoi recuperare gli eventi AEM dal journal ed elaborarli nell’applicazione. Questo approccio consente di gestire gli eventi in base a una frequenza specifica ed elaborarli in modo efficiente in blocco. Consulta la sezione [Inserimento nel journal](https://developer.adobe.com/events/docs/guides/journaling_intro/) per informazioni approfondite, incluse considerazioni essenziali come i periodi di conservazione, l’impaginazione e altro ancora.
 
