@@ -8,9 +8,9 @@ level: Beginner
 version: 6.5
 topic: Integrations
 jira: KT-14794
-source-git-commit: 236d288c8b88948c5004ab777169768065df16f2
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '104'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ Questa esercitazione spiega come implementare un semplice caso d’uso della pre
 
 Per implementare il caso d’uso precedente in AEM Forms, è necessario quanto segue
 
-* Istanza di AEM Forms 6.5.19
+* Istanza di AEM Forms 6.5.19 o successiva
 * [Account del portale di Azure](https://portal.azure.com/)
 
 

@@ -10,9 +10,9 @@ last-substantial-update: 2023-08-14T00:00:00Z
 jira: KT-13781
 exl-id: 2bec5953-2e0c-4ae6-ae98-34492d4cfbe4
 duration: 159
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 
 Questo articolo illustra come effettuare chiamate REST per archiviare i dati AEM Forms inviati nell’archiviazione di Azure.
 Per memorizzare i dati del modulo inviati nell’archiviazione di Azure, è necessario seguire la procedura seguente.
+
+>[!NOTE]
+>Il codice di questo articolo non funziona con un modulo adattivo basato su componenti core. [L’articolo equivalente per il modulo adattivo basato su componenti core è disponibile qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
+
 
 ## Crea account di archiviazione Azure
 
@@ -45,6 +49,7 @@ Assicurarsi di specificare le autorizzazioni appropriate e la data di fine appro
 ## Fornisci il token SAS Blob e l’URI di archiviazione
 
 Per rendere il codice più generico, le due proprietà possono essere configurate utilizzando la configurazione OSGi come mostrato di seguito. Il _**emformstutoriale**_ è il nome dell’account di archiviazione, _**moduli sottomissioni**_ è il contenitore in cui verranno memorizzati i dati.
+Verificare che / sia presente alla fine dell&#39;URI di archiviazione e che il token SAS inizi con?
 ![configurazione osgi](./assets/azure-portal-osgi-configuration.png)
 
 
@@ -98,7 +103,8 @@ https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken D
 
 * [Importare il modulo adattivo di esempio](./assets/bank-account-sample-form.zip)
 
-* Specifica i valori appropriati nella configurazione del portale di Azure utilizzando la console di configurazione OSGi
+* [Specifica i valori appropriati nella configurazione del portale di Azure utilizzando la console di configurazione OSGi](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
+
 * [Anteprima e invio del modulo BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 
 * Verifica che i dati siano archiviati nel contenitore di archiviazione Azure desiderato. Copia l’ID BLOB.

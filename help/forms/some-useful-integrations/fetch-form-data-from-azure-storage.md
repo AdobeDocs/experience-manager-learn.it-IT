@@ -10,9 +10,9 @@ last-substantial-update: 2023-10-23T00:00:00Z
 jira: KT-14238
 duration: 81
 exl-id: 77f93aad-0cab-4e52-b0fd-ae5af23a13d0
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,9 @@ ht-degree: 0%
 
 Questo articolo illustra come compilare un modulo adattivo con i dati memorizzati nell’archivio di Azure.
 Si presume che i dati del modulo adattivo siano stati memorizzati nell’archivio di Azure e che ora si desideri precompilare il modulo adattivo con tali dati.
+>[!NOTE]
+>Il codice di questo articolo non funziona con un modulo adattivo basato su componenti core.[L’articolo equivalente per il modulo adattivo basato su componenti core è disponibile qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
+
 
 ## Crea richiesta GET
 
@@ -83,7 +86,7 @@ if(guid!=null&&!guid.isEmpty())
 
 * [Importare il modulo adattivo di esempio](./assets/bank-account-sample-form.zip)
 
-* Specifica i valori appropriati nella configurazione del portale di Azure utilizzando la console di configurazione OSGi.
+* [Specifica i valori appropriati nella configurazione del portale di Azure utilizzando la console di configurazione OSGi.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
 
 * [Anteprima e invio del modulo BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 

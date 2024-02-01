@@ -9,9 +9,9 @@ level: Experienced
 exl-id: 64b586a6-e9ef-4a3d-8528-55646ab03cc4
 last-substantial-update: 2021-04-09T00:00:00Z
 duration: 59
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '232'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,11 @@ ht-degree: 1%
 # Scrittura di un invio personalizzato in AEM Forms {#writing-a-custom-submit-in-aem-forms}
 
 Modo rapido e semplice per creare un’azione di invio personalizzata per il modulo adattivo
+
+>[!NOTE]
+>Il codice di questo articolo non funziona con un modulo adattivo basato su componenti core.
+>[L’articolo equivalente per il modulo adattivo basato su componenti core è disponibile qui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/custom-submit-headless-forms/custom-submit-service.html?lang=en)
+
 
 Questo articolo illustra i passaggi necessari per creare un’azione di invio personalizzata per la gestione dell’invio di Forms adattivi.
 

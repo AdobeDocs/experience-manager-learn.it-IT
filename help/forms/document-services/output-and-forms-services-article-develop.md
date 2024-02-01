@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2024-01-29T00:00:00Z
-source-git-commit: 959683f23b7b04e315a5a68c13045e1f7973cf94
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -61,12 +61,18 @@ La riga 6 esporta i dati xml dal file PDF
 1. /content/AemFormsSamples/outputservice
 1. /content/AemFormsSamples/renderxdp
 1. Cerca &quot;Sling Referrer filter&quot; (Filtro referrer Sling)
-1. Selezionare la casella di controllo Consenti vuoto. (Questa impostazione deve essere utilizzata solo a scopo di test) Esistono diversi modi per testare il codice di esempio. Il metodo più rapido e semplice consiste nell’utilizzare l’app Postman. Postman consente di effettuare richieste POST al server. Installa l’app Postman sul sistema.
-Avvia l’app e immetti il seguente URL per testare l’API di esportazione dei dati
+1. Selezionare la casella di controllo Consenti vuoto. (questa impostazione deve essere utilizzata solo a scopo di test)
 
-Assicurarsi di aver selezionato &quot;POST&quot; dall&#39;elenco a discesa http://localhost:4502/content/AemFormsSamples/exportdata.html Assicurarsi di specificare &quot;Autorizzazione&quot; come &quot;Autenticazione di base&quot;. Specifica il nome utente e la password del server AEM Passa alla scheda &quot;Corpo&quot; e specifica i parametri di richiesta come mostrato nell’immagine seguente
-![esportare](assets/postexport.png)
-Quindi fare clic sul pulsante Invia
+## Verifica dei campioni
+
+Esistono diversi modi per testare il codice di esempio. Il metodo più rapido e semplice consiste nell’utilizzare l’app Postman. Postman consente di effettuare richieste POST al server.
+
+* Installa l’app Postman sul sistema.
+* Avvia l’app e immetti l’URL appropriato
+* Accertati di aver selezionato &quot;POST&quot; dall’elenco a discesa
+* Assicurarsi di specificare Autorizzazione come Autenticazione di base. Specificare il nome utente e la password del server AEM
+* Specifica i parametri della richiesta nella scheda corpo
+* Fai clic sul pulsante Invia
 
 La confezione contiene 4 campioni. Nei paragrafi seguenti viene illustrato quando utilizzare il servizio di output o il servizio Forms, l&#39;URL del servizio, i parametri di input previsti da ciascun servizio
 
