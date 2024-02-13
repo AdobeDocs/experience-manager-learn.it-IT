@@ -1,6 +1,6 @@
 ---
-title: Come creare feed RSS in Edge Delivery Services
-description: Scopri come creare feed RSS utilizzando i Edge Delivery Services.
+title: Personalizzare il Sidekick di Edge Delivery Services
+description: Scopri come personalizzare il Sidekick Edge Delivery Services.
 version: 6.5, Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -12,15 +12,15 @@ jira: KT-14491
 thumbnail: 3425725.jpeg
 duration: 90
 exl-id: fe6f5262-05c3-4078-b25e-702d830350b2
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 1a9c23d1021ce9fc29e914ca25e6609d3ab16732
 workflow-type: tm+mt
-source-wordcount: '31'
+source-wordcount: '28'
 ht-degree: 0%
 
 ---
 
-# Feed RSS
+# Personalizza Sidekick
 
-Scopri come creare feed RSS utilizzando i Edge Delivery Services.
+Scopri come personalizzare il Sidekick Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425725/?learn=on)
