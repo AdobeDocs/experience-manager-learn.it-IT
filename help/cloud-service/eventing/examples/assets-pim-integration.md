@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
-source-git-commit: f679b4e5e97c9ffba2f04fceaf554e8a231ddfa6
+source-git-commit: 6ef17e61190f58942dcf9345b2ea660d972a8f7e
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -21,15 +21,19 @@ ht-degree: 0%
 
 # Eventi AEM Assets per l’integrazione con la soluzione PIM
 
-** NOTA: questo tutorial utilizza API AEM as a Cloud Service sperimentali.  Per accedere a queste API, devi accettare un contratto software preliminare e far sì che queste API siano abilitate manualmente per il tuo ambiente da ingegneri Adobi.  Per richiedere l’accesso, rivolgiti al supporto Adobe. **
+>[!IMPORTANT]
+>
+>Questa esercitazione utilizza API as a Cloud Service AEM sperimentali. Per accedere a queste API, devi accettare un contratto software preliminare e far sì che queste API siano abilitate manualmente per il tuo ambiente da ingegneri Adobi. Per richiedere l’accesso, contatta il supporto Adobe.
 
-Scopri come integrare AEM Assets con un sistema di terze parti, ad esempio un sistema di gestione delle informazioni sui prodotti (PIM, Product Information Management) o di gestione delle linee di prodotto (PLM, Product Line Management), per aggiornare i metadati delle risorse **utilizzo di eventi I/O AEM nativi**. Dopo aver ricevuto un evento AEM Assets, i metadati della risorsa possono essere aggiornati nell’AEM, nel PIM o in entrambi i sistemi, in base ai requisiti aziendali. Tuttavia, in questo esempio verrà illustrato come aggiornare i metadati delle risorse in AEM.
+Scopri come integrare AEM Assets con un sistema di terze parti, ad esempio un sistema di gestione delle informazioni sui prodotti (PIM, Product Information Management) o di gestione delle linee di prodotto (PLM, Product Line Management), per aggiornare i metadati delle risorse **utilizzo di eventi I/O AEM nativi**. Dopo aver ricevuto un evento AEM Assets, i metadati della risorsa possono essere aggiornati nell’AEM, nel PIM o in entrambi i sistemi, in base ai requisiti aziendali. Tuttavia, questo esempio illustra come aggiornare i metadati delle risorse in AEM.
 
-Per eseguire l’aggiornamento dei metadati della risorsa **codice esterno all’AEM**, utilizzeremo [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/), una piattaforma senza server. Il flusso di elaborazione degli eventi è il seguente:
+Per eseguire l’aggiornamento dei metadati della risorsa **codice esterno all’AEM**, il [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/), viene utilizzata una piattaforma senza server.
+
+Il flusso di elaborazione degli eventi è il seguente:
 
 ![Eventi AEM Assets per l’integrazione con la soluzione PIM](../assets/examples/assets-pim-integration/aem-assets-pim-integration.png)
 
-1. Il servizio di authoring AEM attiva un _Elaborazione risorsa completata_ evento quando viene completato il caricamento di una risorsa e tutte le attività di elaborazione della risorsa sono state completate.  In attesa del completamento dell’elaborazione, prima di procedere verificheremo che tutte le elaborazioni predefinite, ad esempio l’estrazione dei metadati, siano state completate.
+1. Il servizio di authoring AEM attiva un _Elaborazione risorsa completata_ evento quando viene completato il caricamento di una risorsa e tutte le attività di elaborazione della risorsa sono state completate. In attesa del completamento dell’elaborazione, viene verificata la corretta esecuzione di tutte le elaborazioni predefinite, ad esempio l’estrazione dei metadati.
 1. L&#39;evento viene inviato al [Eventi Adobe I/O](https://developer.adobe.com/events/) servizio.
 1. Il servizio Eventi di Adobe I/O trasmette l’evento al [Azione Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) per l’elaborazione.
 1. L’azione Adobe I/O Runtime richiama l’API del sistema PIM per recuperare metadati aggiuntivi come SKU, informazioni sul fornitore o altri dettagli.
@@ -106,7 +110,7 @@ Per eseguire il recupero e l’aggiornamento dei metadati, aggiorna la sezione c
 
 Fai riferimento alla allegata [WKND-Assets-PIM-Integration.zip](../assets/examples/assets-pim-integration/WKND-Assets-PIM-Integration.zip) file per il codice completo, e la sezione seguente evidenzia i file chiave.
 
-- Il `src/dx-excshell-1/actions/generic/mockPIMCommunicator.js` Il file ironizza sulla chiamata API PIM per recuperare metadati aggiuntivi come SKU e nome del fornitore.  Questo file viene utilizzato a scopo dimostrativo.  Una volta che il flusso end-to-end funziona, sostituisci questa funzione con una chiamata al tuo vero sistema PIM per recuperare i metadati per la risorsa.
+- Il `src/dx-excshell-1/actions/generic/mockPIMCommunicator.js` Il file ironizza sulla chiamata API PIM per recuperare metadati aggiuntivi come SKU e nome del fornitore. Questo file viene utilizzato a scopo dimostrativo. Una volta che il flusso end-to-end funziona, sostituisci questa funzione con una chiamata al tuo vero sistema PIM per recuperare i metadati per la risorsa.
 
   ```javascript
   /**
@@ -209,7 +213,7 @@ Fai riferimento alla allegata [WKND-Assets-PIM-Integration.zip](../assets/exampl
 
 - Il `src/dx-excshell-1/actions/model` la cartella contiene `aemAssetEvent.js` e `errors.js` file, utilizzati dall’azione per analizzare l’evento ricevuto e gestire rispettivamente gli errori.
 
-- Il `src/dx-excshell-1/actions/generic/index.js` utilizza i moduli sopra indicati per orchestrare il recupero e l’aggiornamento dei metadati.
+- Il `src/dx-excshell-1/actions/generic/index.js` utilizza i moduli precedentemente menzionati per orchestrare il recupero e l’aggiornamento dei metadati.
 
   ```javascript
   ...
@@ -277,7 +281,7 @@ $ aio app deploy
 
 Per verificare l’integrazione di AEM Assets e PIM, effettua le seguenti operazioni:
 
-- Per visualizzare i metadati fittizi forniti da PIM come SKU e Nome fornitore, crea uno schema di metadati in AEM Assets consulta [Schemi di metadati](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/metadata-schemas.html) che visualizza le proprietà dei metadati SKU e nome fornitore.
+- Per visualizzare i metadati fittizi forniti da PIM come SKU e Nome fornitore, crea uno schema di metadati in AEM Assets consulta [Schema metadati](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/metadata-schemas.html) che visualizza le proprietà dei metadati SKU e nome fornitore.
 
 - Carica una risorsa nel servizio di authoring AEM e verifica l’aggiornamento dei metadati.
 
@@ -291,5 +295,5 @@ La sincronizzazione dei metadati delle risorse tra AEM e altri sistemi come PIM 
 - La nuova API Assets Author viene utilizzata per aggiornare i metadati delle risorse in AEM.
 - L&#39;autenticazione API utilizza OAuth server-to-server (ossia il flusso delle credenziali del client); vedi [Guida all&#39;implementazione delle credenziali server-to-server di OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/).
 - Al posto di Adobe I/O Runtime Actions, è possibile utilizzare altri webhook o Amazon EventBridge per ricevere l&#39;evento AEM Assets ed elaborare l&#39;aggiornamento dei metadati.
-- Eventi asset tramite AEM Eventing consente alle aziende di automatizzare e semplificare i processi critici, promuovendo l&#39;efficienza e la coerenza tra gli ecosistemi di contenuti.
+- Eventi Asset tramite AEM Eventing consentono alle aziende di automatizzare e semplificare i processi critici, promuovendo l’efficienza e la coerenza nell’ecosistema dei contenuti.
 
