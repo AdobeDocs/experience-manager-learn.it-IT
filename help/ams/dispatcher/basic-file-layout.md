@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 8a3f2bb9-3895-45c6-8bb5-15a6d2aac50e
 duration: 354
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -59,20 +59,23 @@ Seguendo e rispettando la progettazione/struttura dell&#39;installazione, otteni
 - Consente cicli di patch completamente supportati dal sistema operativo senza conflitti o regolazioni manuali
 - Evita violazioni SELinux di contesti di file con etichetta errata
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-Le immagini dei server Managed Services di Adobe hanno in genere unità radice del sistema operativo di piccole dimensioni.  I dati vengono inseriti in un volume separato che in genere viene montato in `/mnt`. Quindi utilizziamo tale volume al posto dei valori predefiniti per le seguenti directory predefinite
+>[!BEGINSHADEBOX &quot;Nota&quot;]
+
+Le immagini dei server Managed Services di Adobe hanno in genere unità radice del sistema operativo di piccole dimensioni.  I dati vengono inseriti in un volume separato, solitamente montato in `/mnt`
+Quindi utilizziamo quel volume invece dei valori predefiniti per le seguenti directory predefinite
 
 `DocumentRoot`
 - Predefinito:`/var/www/html`
 - AMS:`/mnt/var/www/html`
 
 `Log Directory`
-- Predefinito: `/var/log/httpd`
-- AMS: `/mnt/var/log/httpd`
+- Predefinito: `/var/log/httpd`
+- AMS: `/mnt/var/log/httpd`
 
 Tieni presente che le directory vecchia e nuova sono mappate al punto di montaggio originale per evitare confusione.
 L&#39;utilizzo di un volume separato non è fondamentale, ma è importante
-</div>
+
+>[!ENDSHADEBOX]
 
 ## Componenti aggiuntivi AMS
 
@@ -292,9 +295,9 @@ Come esempio perfetto quando si aggiunge il modulo Dispatcher ad Apache si crea 
 LoadModule dispatcher_module modules/mod_dispatcher.so
 ```
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Avviso:</b>
-non sono stati modificati i file già esistenti forniti da Apache.  Invece ha aggiunto il nostro alle directory che dovevano andare.
-</div><br/>
+>[!NOTE]
+>
+>Non sono stati modificati i file già esistenti forniti da Apache. Invece, abbiamo aggiunto la nostra alle directory che avrebbero dovuto usare.
 
 Ora utilizziamo il modulo nel nostro file <b>`/etc/httpd/conf.d/dispatcher_vhost.conf`</b> che inizializza il modulo e carica il file di configurazione iniziale specifico per il modulo
 

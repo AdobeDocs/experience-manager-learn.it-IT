@@ -9,9 +9,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 66ce0977-1b0d-4a63-a738-8a2021cf0bd5
 duration: 491
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1708'
 ht-degree: 0%
 
 ---
@@ -35,12 +35,11 @@ Nelle installazioni della linea di base vengono utilizzate le seguenti directory
 
 Quando ogni richiesta attraversa Dispatcher, le richieste seguono le regole configurate per mantenere una versione cache locale in grado di rispondere agli elementi idonei
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-
-Il carico di lavoro pubblicato viene intenzionalmente tenuto separato dal carico di lavoro dell’autore perché quando Apache cerca un file in DocumentRoot non sa da quale istanza AEM proviene. Pertanto, anche se la cache è disabilitata nella farm di authoring, se DocumentRoot dell’autore è uguale a publisher, i file presenti nella cache verranno distribuiti. Ciò significa che distribuirai i file di authoring per dalla cache pubblicata e che farai un’esperienza di mix davvero terribile per i visitatori.
-
-Anche mantenere directory DocumentRoot separate per contenuti pubblicati diversi è una pessima idea. Dovrai creare più elementi re-memorizzati nella cache che non differiscano tra i siti come clientlibs, nonché impostare un agente di svuotamento della replica per ogni DocumentRoot configurato. Aumentare la quantità di svuotamento sopra la testina con ogni attivazione della pagina. Utilizza lo spazio dei nomi dei file e i relativi percorsi nella cache completa ed evita più DocumentRoot per i siti pubblicati.
-</div>
+>[!NOTE]
+>
+>Il carico di lavoro pubblicato viene intenzionalmente tenuto separato dal carico di lavoro dell’autore perché quando Apache cerca un file in DocumentRoot non sa da quale istanza AEM proviene. Pertanto, anche se la cache è disabilitata nella farm di authoring, se DocumentRoot dell’autore è uguale a publisher, i file presenti nella cache verranno distribuiti. Ciò significa che distribuirai i file di authoring per dalla cache pubblicata e che farai un’esperienza di mix davvero terribile per i visitatori.
+>
+>Anche mantenere directory DocumentRoot separate per contenuti pubblicati diversi è una pessima idea. Dovrai creare più elementi re-memorizzati nella cache che non differiscano tra i siti come clientlibs, nonché impostare un agente di svuotamento della replica per ogni DocumentRoot configurato. Aumentare la quantità di svuotamento sopra la testina con ogni attivazione della pagina. Utilizza lo spazio dei nomi dei file e i relativi percorsi nella cache completa ed evita più DocumentRoot per i siti pubblicati.
 
 ## File di configurazione
 
@@ -95,10 +94,9 @@ Ecco un autore di base `/cache {` sezione del file farm dell’autore:
 
 Le cose importanti da notare sono che `/docroot` è impostato sulla directory della cache per l’authoring.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-
-Assicurati che le `DocumentRoot` nel file dell&#39;autore `.vhost` file corrisponde alle farm `/docroot` parametro
-</div>
+>[!NOTE]
+>
+>Assicurati che le `DocumentRoot` nel file dell&#39;autore `.vhost` file corrisponde alle farm `/docroot` parametro
 
 L’istruzione cache rules include il file `/etc/httpd/conf.dispatcher.d/cache/ams_author_cache.any` che contiene le seguenti regole:
 
@@ -136,20 +134,17 @@ L’istruzione cache rules include il file `/etc/httpd/conf.dispatcher.d/cache/a
 In uno scenario di authoring, il contenuto cambia continuamente e di proposito. Desideri memorizzare nella cache solo gli elementi che non verranno modificati di frequente.
 Abbiamo regole da memorizzare in cache `/libs` perché fanno parte dell’installazione AEM linea di base e cambierebbero finché non hai installato un Service Pack, un Cumulative Fix Pack, un aggiornamento o un Hotfix. La memorizzazione in cache di questi elementi ha molto senso e offre agli utenti finali che utilizzano il sito enormi vantaggi in termini di esperienza di authoring.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-
-Tieni presente che anche queste regole memorizzano in cache <b>`/apps`</b> qui risiede il codice personalizzato dell’applicazione. Se stai sviluppando il codice in questa istanza, allora si dimostrerà molto confuso quando salvi il file e non vedi se si riflette nell&#39;interfaccia utente a causa di esso che serve una copia memorizzata nella cache. L’intenzione qui è che se esegui una distribuzione del codice nell’AEM, anche questa sarebbe infrequente e parte dei passaggi di distribuzione dovrebbe consistere nel cancellare la cache di authoring. Anche in questo caso, il vantaggio è enorme e rende il codice memorizzabile in cache più veloce per gli utenti finali.
-</div>
-
+>[!NOTE]
+>
+>Tieni presente che anche queste regole memorizzano in cache <b>`/apps`</b> qui risiede il codice personalizzato dell’applicazione. Se stai sviluppando il codice in questa istanza, allora si dimostrerà molto confuso quando salvi il file e non vedi se si riflette nell&#39;interfaccia utente a causa di esso che serve una copia memorizzata nella cache. L’intenzione qui è che se esegui una distribuzione del codice nell’AEM, anche questa sarebbe infrequente e parte dei passaggi di distribuzione dovrebbe consistere nel cancellare la cache di authoring. Anche in questo caso, il vantaggio è enorme e rende il codice memorizzabile in cache più veloce per gli utenti finali.
 
 ## ServeOnStale (o Serve su Stale/SOS)
 
 Questa è una delle gemme di una funzione di Dispatcher. Se l’editore è sotto carico o non risponde, in genere genera un codice di risposta http 502 o 503. Se questo accade e questa funzione è abilitata, Dispatcher verrà istruito a distribuire comunque tutto il contenuto ancora nella cache come best practice, anche se non si tratta di una nuova copia. È meglio distribuire qualcosa se lo si ha, piuttosto che semplicemente mostrare un messaggio di errore che non offre alcuna funzionalità.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-
-Tieni presente che se il renderer del server di pubblicazione ha un timeout del socket o un messaggio di errore 500, questa funzione non verrà attivata. Se l&#39;AEM è semplicemente irraggiungibile questa funzione non fa nulla
-</div>
+>[!NOTE]
+>
+>Tieni presente che se il renderer del server di pubblicazione ha un timeout del socket o un messaggio di errore 500, questa funzione non verrà attivata. Se l&#39;AEM è semplicemente irraggiungibile questa funzione non fa nulla
 
 Questa impostazione può essere impostata in qualsiasi farm, ma ha senso applicarla solo ai file farm di pubblicazione. Di seguito è riportato un esempio di sintassi della funzione abilitata in un file farm:
 
@@ -160,11 +155,9 @@ Questa impostazione può essere impostata in qualsiasi farm, ma ha senso applica
 
 ## Memorizzazione in cache di pagine con parametri di query/argomenti
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-
-Uno dei comportamenti normali del modulo Dispatcher è che se una richiesta ha un parametro di query nell’URI (in genere mostrato come `/content/page.html?myquery=value`) salta la memorizzazione in cache del file e passa direttamente all’istanza AEM. Sta considerando questa richiesta come una pagina dinamica e non deve essere memorizzata in cache. Questo può causare effetti negativi sull’efficienza della cache.
-</div>
-<br/>
+>[!NOTE]
+>
+>Uno dei comportamenti normali del modulo Dispatcher è che se una richiesta ha un parametro di query nell’URI (in genere mostrato come `/content/page.html?myquery=value`) salta la memorizzazione in cache del file e passa direttamente all’istanza AEM. Sta considerando questa richiesta come una pagina dinamica e non deve essere memorizzata in cache. Questo può causare effetti negativi sull’efficienza della cache.
 
 Vedi questo [articolo](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner) mostrare come importanti parametri di query possono influenzare le prestazioni del sito.
 
@@ -172,7 +165,7 @@ Per impostazione predefinita, si desidera impostare `ignoreUrlParams` regole da 
 
 Ecco un esempio in cui qualcuno ha creato un meccanismo di riferimento per collegamenti profondi (deep link) nei social media che utilizza il riferimento dell’argomento nell’URI per sapere da dove proviene la persona.
 
-<b>Esempio ignorabile:</b>
+*Esempio ignorabile:*
 
 - https://www.we-retail.com/home.html?reference=android
 - https://www.we-retail.com/home.html?reference=facebook
@@ -253,11 +246,9 @@ Esempio:
 
 Le pagine che utilizzano parametri di query tramite JavaScript continueranno a funzionare completamente ignorando i parametri di questa impostazione.  Perché non cambiano il file html a riposo.  Utilizzano JavaScript per aggiornare i browser dom in tempo reale sul browser locale.  Ciò significa che se utilizzi i parametri di query con JavaScript, è molto probabile che tu possa ignorare questo parametro per il caching delle pagine.  Consenti alla pagina di memorizzare in cache e ottenere prestazioni migliori.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-
-Tenere traccia di queste pagine richiede una certa manutenzione, ma vale la pena migliorare le prestazioni.  Puoi chiedere al tuo CSE di eseguire un rapporto sul traffico dei tuoi siti web per fornirti un elenco di tutte le pagine che utilizzano i parametri di query negli ultimi 90 giorni per analizzare e assicurarti di sapere quali pagine esaminare e quali parametri di query non ignorare
-</div>
-<br/>
+>[!NOTE]
+>
+>Tenere traccia di queste pagine richiede una certa manutenzione, ma vale la pena migliorare le prestazioni.  Puoi chiedere al tuo CSE di eseguire un rapporto sul traffico dei tuoi siti web per fornirti un elenco di tutte le pagine che utilizzano i parametri di query negli ultimi 90 giorni per analizzare e assicurarti di sapere quali pagine esaminare e quali parametri di query non ignorare
 
 ## Memorizzazione nella cache delle intestazioni di risposta
 
@@ -289,11 +280,9 @@ Ecco un esempio di farm con le intestazioni da memorizzare in cache specificate:
 
 Nell’esempio hanno configurato l’AEM per distribuire le intestazioni che la rete CDN cerca per sapere quando annullare la validità della cache. Ciò significa che ora l’AEM può determinare correttamente quali file vengono invalidati in base alle intestazioni.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-
-Tieni presente che non puoi utilizzare espressioni regolari o la corrispondenza glob. È un elenco letterale delle intestazioni da memorizzare in cache. Inserisci solo un elenco delle intestazioni letterali da memorizzare in cache.
-</div>
-
+>[!NOTE]
+>
+>Tieni presente che non puoi utilizzare espressioni regolari o la corrispondenza glob. È un elenco letterale delle intestazioni da memorizzare in cache. Inserisci solo un elenco delle intestazioni letterali da memorizzare in cache.
 
 ## Invalida automaticamente periodo di tolleranza
 
@@ -325,9 +314,9 @@ Ecco un esempio della funzione configurata nel file di configurazione della farm
     /enableTTL "1"
 ```
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-Tieni presente che l’AEM deve ancora essere configurato per inviare le intestazioni TTL in modo che Dispatcher le onori. L’attivazione di questa funzione consente solo a Dispatcher di sapere quando rimuovere i file per i quali l’AEM ha inviato le intestazioni di controllo cache. Se l’AEM non inizia a inviare intestazioni TTL, Dispatcher non farà nulla di speciale qui.
-</div>
+>[!NOTE]
+>
+>Tieni presente che l’AEM deve ancora essere configurato per inviare le intestazioni TTL in modo che Dispatcher le onori. L’attivazione di questa funzione consente solo a Dispatcher di sapere quando rimuovere i file per i quali l’AEM ha inviato le intestazioni di controllo cache. Se l’AEM non inizia a inviare intestazioni TTL, Dispatcher non farà nulla di speciale qui.
 
 ## Regole filtro cache
 

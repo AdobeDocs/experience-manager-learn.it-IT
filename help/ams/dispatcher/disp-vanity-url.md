@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 53baef9c-aa4e-4f18-ab30-ef9f4f5513ee
 duration: 267
-source-git-commit: 0deeaac90e9d181a60b407e17087650e0be1ff28
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1159'
 ht-degree: 0%
 
 ---
@@ -182,9 +182,8 @@ Utilizza entrambi i metodi, ma ecco i consigli e i criteri su quale utilizzare q
 - Se il reindirizzamento è un endpoint di base che non cambia spesso e che è usato di frequente, utilizza un `mod_rewrite` regola.
 - Se lo spazio dei nomi personalizzato (ad esempio: `/aboutus`) deve essere riutilizzato per molti marchi nella stessa istanza AEM e quindi utilizzare le regole di riscrittura.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-
-Se desideri utilizzare la funzione di reindirizzamento AEM ed evitare lo spazio dei nomi, puoi creare una convenzione di denominazione. Utilizzo di URL personalizzati nidificati come `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
-</div>
+>[!NOTE]
+>
+>Se desideri utilizzare la funzione di reindirizzamento AEM ed evitare lo spazio dei nomi, puoi creare una convenzione di denominazione. Utilizzo di URL personalizzati nidificati come `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
 
 [Successivo -> Registrazione comune](./common-logs.md)

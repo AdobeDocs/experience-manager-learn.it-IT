@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7fe1b4a5-6813-4ece-b3da-40af575ea0ed
 duration: 252
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '796'
 ht-degree: 0%
 
 ---
@@ -59,10 +59,9 @@ L’esecuzione di uno dei metodi suggeriti eliminerebbe il messaggio di errore d
 
 ## Filtra Rifiuti
 
-
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-Queste voci non vengono sempre visualizzate anche se si verificano dei rifiuti quando il livello di registro è troppo basso. Impostalo su Info o debug per verificare se i filtri rifiutano le richieste.
-</div>
+>[!NOTE]
+>
+>Queste voci non vengono sempre visualizzate anche se si verificano dei rifiuti quando il livello di registro è troppo basso. Impostalo su Info o debug per verificare se i filtri rifiutano le richieste.
 
 Voce di registro di esempio:
 
@@ -76,10 +75,9 @@ oppure:
 Fri Jul 20 22:16:55 2018 I pid 128803 "GET /system/console/" ! - 8ms publishfarm/-
 ```
 
-<div style="color: #000;border-left: 6px solid red;background-color:#ddffff;"><b>Attenzione:</b>
-
-Devi capire se le regole del Dispatcher sono state impostate per escludere tale richiesta. In questo caso, la pagina che ha tentato di visitare è stata rifiutata di proposito e non vogliamo fare nulla al riguardo.
-</div>
+>[!CAUTION]
+>
+>Devi capire se le regole del Dispatcher sono state impostate per escludere tale richiesta. In questo caso, la pagina che ha tentato di visitare è stata rifiutata di proposito e non vogliamo fare nulla al riguardo.
 
 Se il registro è simile alla voce seguente:
 
@@ -136,9 +134,9 @@ Questo significa che viene misurato il recupero dal livello di rendering rispett
 
 Per ottenere questo numero il più alto possibile.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-Anche se le impostazioni della cache si trovano nel file della farm per memorizzare in cache tutto ciò che potrebbe scaricarsi con una frequenza o aggressività eccessive, ciò può causare una percentuale inferiore di riscontri nella cache
-</div>
+>[!NOTE]
+>
+>Anche se le impostazioni della cache si trovano nel file della farm per memorizzare in cache tutto ciò che potrebbe scaricarsi con una frequenza o aggressività eccessive, ciò può causare una percentuale inferiore di riscontri nella cache
 
 ## Directory mancante
 

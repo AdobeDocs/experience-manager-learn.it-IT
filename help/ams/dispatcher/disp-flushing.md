@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 461873a1-1edf-43a3-b4a3-14134f855d86
 duration: 653
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '2227'
+source-wordcount: '2225'
 ht-degree: 0%
 
 ---
@@ -133,16 +133,17 @@ Se l’impostazione del livello del file stat è troppo alta, ogni richiesta di 
 
 Se si imposta questo livello di file su un valore troppo basso, una richiesta di scaricamento potrebbe cancellare più di quanto previsto.  Il che, a sua volta, causerebbe un abbandono della cache più frequente con un minor numero di richieste distribuite dalla cache e potrebbe causare problemi di prestazioni.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
+>[!BEGINSHADEBOX &quot;Nota&quot;]
 
-Imposta il `statfilelevel` a un livello ragionevole.  Osserva la struttura delle cartelle e accertati che sia configurata in modo da consentire scaricamenti concisi senza dover attraversare troppe directory.   Testalo e assicurati che sia adatto alle tue esigenze durante un test delle prestazioni del sistema.
+Imposta il `statfilelevel` a un livello ragionevole. Osserva la struttura delle cartelle e accertati che sia configurata in modo da consentire scaricamenti concisi senza dover attraversare troppe directory. Testalo e assicurati che sia adatto alle tue esigenze durante un test delle prestazioni del sistema.
 
-Un buon esempio è un sito che supporta le lingue.  La struttura ad albero tipica dei contenuti avrebbe le seguenti directory
+Un buon esempio è un sito che supporta le lingue. La struttura ad albero tipica dei contenuti avrebbe le seguenti directory
 
 `/content/brand1/en/us/`
 
-In questo esempio, utilizza un’impostazione del livello del file stat pari a 4.  In questo modo, quando esegui uno scaricamento del contenuto che si trova sotto <b>`us`</b> in modo da non scaricare anche le cartelle delle lingue.
-</div>
+In questo esempio, utilizza un’impostazione del livello del file stat pari a 4. In questo modo, quando esegui uno scaricamento del contenuto che si trova sotto **`us`** in modo da non scaricare anche le cartelle delle lingue.
+
+>[!ENDSHADEBOX]
 
 ### STAT FILE TIMESTAMP HANDSHAKE
 
@@ -227,11 +228,11 @@ Questa voce di configurazione è contenuta nella seguente sezione del file farm:
 
 Specifica la directory in cui vuoi che Dispatcher si popola e che desideri gestire come directory cache.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-Questa directory deve corrispondere all’impostazione della directory principale dei documenti Apache per il dominio per cui il server web è configurato per l’utilizzo.
-
-Annidare le cartelle docroot in ogni farm che si trova in una sottocartella della directory principale dei documenti Apache è una pessima idea per molti motivi.
-</div>
+>[!NOTE]
+>
+>Questa directory deve corrispondere all’impostazione della directory principale dei documenti Apache per il dominio per cui il server web è configurato per l’utilizzo.
+>
+>Annidare le cartelle docroot in ogni farm che si trova in una sottocartella della directory principale dei documenti Apache è una pessima idea per molti motivi.
 
 ### Livello file stat
 
@@ -275,13 +276,11 @@ Questa impostazione misura la profondità `.stat` I file dovranno essere generat
    - `/var/www/html/content/damn/brand1/en/.stat`
    - `/var/www/html/content/damn/brand1/en/us/.stat`
 
-
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Nota:</b>
-
-Tieni presente che quando si verifica l’handshake con marca temporale, cerca il più vicino `.stat` file.
-
-con un `.stat` livello di file 0 e un file stat solo in corrispondenza di `/var/www/html/.stat` significa che il contenuto che risiede in `/var/www/html/content/dam/brand1/en/us/` cerca il più vicino `.stat` e sfogliare fino a 5 cartelle per trovare le uniche `.stat` che esiste al livello 0 e ne confronta le date.  Ciò significa che uno scaricamento a un tale livello invaliderebbe essenzialmente tutti gli elementi memorizzati in cache.
-</div>
+>[!NOTE]
+>
+>Tieni presente che quando si verifica l’handshake con marca temporale, cerca il più vicino `.stat` file.
+>
+>Avere un `.stat` livello di file 0 e un file stat solo in corrispondenza di `/var/www/html/.stat` significa che il contenuto che risiede in `/var/www/html/content/dam/brand1/en/us/` cerca il più vicino `.stat` e sfogliare fino a 5 cartelle per trovare le uniche `.stat` che esiste al livello 0 e ne confronta le date. Ciò significa che uno scaricamento a un tale livello invaliderebbe essenzialmente tutti gli elementi memorizzati in cache.
 
 ### Annullamento della validità consentito
 
