@@ -6,9 +6,9 @@ role: Developer
 sub-product: Experience Manager Forms
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
 duration: 88
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 6825b0a4c9770f77e5078c81154080e94d3fd5f4
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -16,21 +16,6 @@ ht-degree: 0%
 # Esercitazioni e video su AEM Forms {#overview}
 
 Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la creazione, la gestione, la pubblicazione e l’aggiornamento di moduli digitali complessi, garantendo al contempo l’integrazione con i processi back-end, le regole aziendali e i dati. Questa guida utente contiene video e tutorial sulle numerose funzioni e caratteristiche di AEM Forms
-
-<div id="whats-new-section">
-
-## Novità
-
-* **[Gestione dei messaggi di errore nel passaggio del servizio Richiama modello dati modulo](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
-  *Una variabile in un modello di flusso di lavoro è un modo per memorizzare un valore in base al relativo tipo di dati*
-
-* **[Grafici Multi-Series nei documenti di comunicazione interattiva (video)](./interactive-communications/multiseriescharts.md)**
-  *Tracciare più serie nello stesso grafico. I grafici a serie multiple vengono in genere utilizzati in associazione con il tipo di grafico a linee, a barre o a colonne.*
-
-* **[Creazione di modelli di flusso di lavoro riutilizzabili](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
-  *Creare modelli di flusso di lavoro non associati a un modulo specifico*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -88,8 +73,6 @@ Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la 
 </table>
 
 </div>
-
-
 
 
 ## Risorse aggiuntive

@@ -6,10 +6,10 @@ sub-product: Experience Manager Sites
 topic: Content Management
 doc-type: Catalog
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: 6825b0a4c9770f77e5078c81154080e94d3fd5f4
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 16%
+source-wordcount: '175'
+ht-degree: 9%
 
 ---
 
@@ -18,21 +18,6 @@ ht-degree: 16%
 {{edge-delivery-services}}
 
 Adobe Experience Manager (AEM) Sites è una piattaforma leader per la gestione delle esperienze. La presente guida utente contiene video e tutorial sulle numerose funzioni e caratteristiche di AEM Sites.
-
-<div id="whats-new-section">
-
-## Novità
-
-* **[Panoramica di AEM e Edge Delivery Services (video)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it)**
-  *Scopri il mondo completo di Adobe Experience Manager (AEM), che comprende AEM Sites, AEM Assets, AEM Headless, AEM Forms e Edge Delivery Services in questo video di panoramica informativa.*
-
-* **[Cosa sono l&#39;AEM e i Edge Delivery Services? (Video)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html)**
-  *Scopri il valore che Adobe Experience Manager (AEM) e i Edge Delivery Services forniscono.*
-
-* **[Panoramica dell’AEM con architettura dei Edge Delivery Services (video)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)**
-  *Scopri tutto sull’architettura di AEM as a Cloud Service!*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -49,11 +34,11 @@ Adobe Experience Manager (AEM) Sites è una piattaforma leader per la gestione d
 <tr>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it">
-      <img alt="Guida introduttiva ai AEM Sites: esercitazione WKND" src="./assets/aem-wknd-tutorial.png" />
+      <img alt="Guida introduttiva ad AEM Sites: tutorial WKND" src="./assets/aem-wknd-tutorial.png" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it">
-    <strong>Guida introduttiva di AEM Sites</strong>
+    <strong>Guida introduttiva ad AEM Sites</strong>
     </a>
     </div>
     <p>
@@ -66,7 +51,7 @@ Adobe Experience Manager (AEM) Sites è una piattaforma leader per la gestione d
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it">
-    <strong>Guida introduttiva ad AEM Headless</strong>
+    <strong>Guida introduttiva di AEM Headless</strong>
     </a>
     </div>
     <p>
