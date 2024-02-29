@@ -9,7 +9,7 @@ level: Intermediate
 doc-type: Article
 exl-id: c9ee29d4-a8a5-4e61-bc99-498674887da5
 duration: 524
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 3b6de935b5f1fb5ee2d0e50372188f1eba7baeaa
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Questo non elimina la necessità per più team di dipendere e potenzialmente agg
 
 Per garantire che le modifiche apportate a questo pacchetto di base non interrompano la funzionalità del sistema, consigliamo a uno sviluppatore senior o a un team di sviluppatori di mantenere la supervisione. Un’opzione consiste nell’avere un unico team che gestisca tutte le modifiche a questo pacchetto; un’altra consiste nell’inviare ai team le richieste pull che vengono esaminate e unite da queste risorse. È importante che i team progettino e approvino un modello di governance e che gli sviluppatori lo seguano.
 
-## Gestione dell’ambito di implementazione  {#managing-deployment-scope}
+## Gestione dell’ambito di implementazione {#managing-deployment-scope}
 
 Poiché i diversi team distribuiscono il codice nello stesso archivio, è importante che non si sovrascrivano reciprocamente le modifiche. L’AEM dispone di un meccanismo per controllare questo fenomeno durante la distribuzione dei pacchetti di contenuti, il filtro. file xml. È importante che non vi sia sovrapposizione tra i filtri.  file xml, altrimenti la distribuzione di un team potrebbe potenzialmente cancellare la precedente distribuzione di un altro team. Per illustrare questo punto, vedi i seguenti esempi di file di filtro ben creati e problematici:
 
