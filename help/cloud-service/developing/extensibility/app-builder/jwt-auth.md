@@ -1,5 +1,5 @@
 ---
-title: Generare il token di accesso nell’azione di App Builder
+title: Generare il token di accesso JWT nell’azione di App Builder
 description: Scopri come generare un token di accesso utilizzando le credenziali JWT per l’utilizzo in un’azione di App Builder.
 feature: Developer Tools
 version: Cloud Service
@@ -10,18 +10,18 @@ jira: KT-11743
 last-substantial-update: 2023-01-17T00:00:00Z
 exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
 duration: 161
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: c77dd9c2872e7e43863d83837cedbff50a7d3c1a
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 0%
+source-wordcount: '456'
+ht-degree: 1%
 
 ---
 
-# Generare il token di accesso nell’azione di App Builder
+# Generare il token di accesso JWT nell’azione di App Builder
 
 Potrebbe essere necessario che le azioni di App Builder interagiscano con le API Adobe associate ai progetti della console Adobe Developer. Anche l&#39;app di App Builder viene distribuita.
 
-Questo potrebbe richiedere che l’azione Generatore app generi il proprio token di accesso associato al progetto Adobe Developer Console desiderato.
+Questo potrebbe richiedere che l’azione di App Builder generi il proprio token di accesso JWT associato al progetto Adobe Developer Console desiderato.
 
 >[!IMPORTANT]
 >
@@ -70,22 +70,22 @@ Il `JWT_PRIVATE_KEY` deve essere formattato in modo speciale in quanto si tratta
 >[!TAB macOS]
 
 1. Apri `Terminal`
-1. Eseguire il comando `base64 -i /path/to/private.key | pbcopy`
+1. Esegui il comando `base64 -i /path/to/private.key | pbcopy`
 1. L&#39;output base64 viene automaticamente copiato negli Appunti
 1. Incolla in `.env` come valore della chiave corrispondente
 
 >[!TAB Windows]
 
 1. Apri `Command Prompt`
-1. Eseguire il comando `certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
-1. Eseguire il comando `findstr /v CERTIFICATE C:\path\to\encoded-private.key`
+1. Esegui il comando `certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
+1. Esegui il comando `findstr /v CERTIFICATE C:\path\to\encoded-private.key`
 1. Copiare l&#39;output base64 negli Appunti
 1. Incolla in `.env` come valore della chiave corrispondente
 
 >[!TAB Linux®]
 
 1. Apri terminale
-1. Eseguire il comando `base64 private.key`
+1. Esegui il comando `base64 private.key`
 1. Copiare l&#39;output base64 negli Appunti
 1. Incolla in `.env` come valore della chiave corrispondente
 
