@@ -8,9 +8,9 @@ breadcrumb-title: Tutorial su AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: b2062d9c67dc029c8d0e41f82f634f930e8249a6
+source-git-commit: ae2a2cbde1bf21314cc77863014cb0f013b6e0bb
 workflow-type: tm+mt
-source-wordcount: '2032'
+source-wordcount: '2034'
 ht-degree: 2%
 
 ---
@@ -220,12 +220,13 @@ ht-degree: 2%
    + [Gestisci invio PDF](offline-mobile-form-submission/part-two.md)
    + [Flusso di lavoro per revisione PDF](offline-mobile-form-submission/part-three.md)
    + [Implementare sul sistema](offline-mobile-form-submission/part-four.md)
-+ Query dei dati inviati{#querying-submitted-data}
-   + [Introduzione](querying-submitted-data/introduction.md)
-   + [Creazione di un modulo basato su schema JSON](querying-submitted-data/part1.md)
-   + [Memorizza i dati inviati](querying-submitted-data/part2.md)
-   + [Memorizzare lo schema JSON](querying-submitted-data/part3.md)
-   + [Eseguire una query sui dati inviati](querying-submitted-data/part4.md)
++ Query invio modulo{#query-form-submissions}
+   + [Introduzione](query-form-submissions/introduction.md)
+   + [Creare campi ricercabili](query-form-submissions/part1.md)
+   + [Creare un invio personalizzato](query-form-submissions/part2.md)
+   + [Creare un’interfaccia query](query-form-submissions/part3.md)
+   + [Servizio di precompilazione scrittura](query-form-submissions/part4.md)
+   + [Distribuire l’esempio](query-form-submissions/part5.md)
 + Elenco dei tipi di risorse personalizzate in Forms Portal{#listing-custom-asset-types}
    + [Parte 1 - Registrazione dei tipi di risorse personalizzate](listing-custom-asset-types/part1.md)
    + [Parte 2 - Creazione di un modello personalizzato](listing-custom-asset-types/part2.md)
@@ -286,7 +287,9 @@ ht-degree: 2%
    + [Assembla allegati modulo](document-services/assemble-form-attachments.md)
    + [Utili servizi di utilità](document-services/useful-utility-services.md)
 + Forms Designer{#forms-designer}
+   + [Visualizzazione Struttura](forms-designer/design-view.md)
    + [Creare il primo modulo](forms-designer/create-simple-form.md)
+   + [Crea modello di modulo](forms-designer/creating-form-template.md)
    + [Script del modulo](forms-designer/first-script-designer.md)
    + [Associazione dati XML](forms-designer/xml-data-binding.md)
    + [Associazione al database](forms-designer/binding-to-mysql-db.md)
