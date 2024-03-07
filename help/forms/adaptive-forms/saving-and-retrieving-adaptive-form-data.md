@@ -8,9 +8,9 @@ type: Tutorial
 version: 6.4,6.5
 last-substantial-update: 2019-06-09T00:00:00Z
 duration: 691
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ Questo articolo illustra i passaggi necessari per salvare e recuperare i dati de
 
 L’origine dati in pool di connessione Apache Sling è configurata per puntare al database che verrà utilizzato per memorizzare i dati del modulo adattivo. La schermata seguente mostra la configurazione della mia istanza. Le seguenti proprietà possono essere copiate e incollate
 
-* Nome origine dati:aemformstutorial: è il nome utilizzato nel codice.
+* `Datasource Name:aemformstutorial` - Questo è il nome utilizzato nel mio codice.
 
-* Classe driver JDBC:com.mysql.jdbc.Driver
+* `JDBC Driver Class:com.mysql.jdbc.Driver`
 
-* URL connessione JDBC:jdbc:mysql://localhost:3306/aemformstutorial
+* `JDBC Connection URL:jdbc:mysql://localhost:3306/aemformstutorial`
 
 ![connection pool](assets/storingdata.PNG)
 

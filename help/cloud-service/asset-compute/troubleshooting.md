@@ -11,9 +11,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
 duration: 335
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1218'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Di seguito è riportato un indice dei problemi e degli errori più comuni, insie
 
 ### File Console.json mancante nel progetto Asset compute{#missing-console-json}
 
-+ __Errore:__ Errore: file richiesti mancanti al momento della convalida (.../node_module/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY) in corrispondenza di setupAssetCompute asincrono (.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:AA)
++ __Errore:__ Errore: file richiesti mancanti al momento della convalida (`.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY`) in modalità asincrona setupAssetCompute (`.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY`)
 + __Causa:__ Il `console.json` file mancante nella directory principale del progetto Asset compute
 + __Risoluzione:__ Scarica un nuovo `console.json` crea il tuo progetto di Adobe I/O
    1. In console.adobe.io, apri il progetto Adobe I/O per il quale il progetto Asset compute è configurato
@@ -84,7 +84,7 @@ Lo strumento di sviluppo Asset compute può entrare in uno stato in cui richiama
 
   ![Archiviazione BLOB di Microsoft Azure](./assets/troubleshooting/dev-tool__remove-source-files.png)
 
-## Prova{#test}
+## Test{#test}
 
 ### Nessuna rappresentazione generata durante l’esecuzione del test{#test-no-rendition-generated}
 

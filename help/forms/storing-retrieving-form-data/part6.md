@@ -8,9 +8,9 @@ level: Experienced
 version: 6.4,6.5
 exl-id: f520e7a4-d485-4515-aebc-8371feb324eb
 duration: 67
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '243'
 ht-degree: 1%
 
 ---
@@ -36,9 +36,9 @@ Per testare questa funzionalità nell’istanza di AEM Forms, segui i passaggi s
 
 | Nome proprietà | Valore |
 | ------------------------|---------------------------------------|
-| Nome origine dati | SaveAndContinue |
-| Classe driver JDBC | com.mysql.cj.jdbc.Driver |
-| URI connessione JDBC | jdbc:mysql://localhost:3306/aemformstutorial |
+| Nome origine dati | `SaveAndContinue` |
+| Classe driver JDBC | `com.mysql.cj.jdbc.Driver` |
+| URI connessione JDBC | `jdbc:mysql://localhost:3306/aemformstutorial` |
 
 * Apri [Modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/demostoreandretrieveformdata/jcr:content?wcmmode=disabled)
 * Immettere alcuni dettagli e fare clic sul pulsante Salva e continua più tardi.
