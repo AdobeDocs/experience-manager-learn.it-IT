@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7fe1b4a5-6813-4ece-b3da-40af575ea0ed
 duration: 252
-source-git-commit: 19beb662b63476f4745291338d944502971638a3
+source-git-commit: 80c04ce1ad7d60c1fc75ecc194dd54a2ad5b82fa
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 0%
@@ -130,7 +130,7 @@ Voce di registro di esempio:
 Fri Jul 20 23:00:19 2018 I pid 16004 (tid 140134145820416) Current cache hit ratio: 87.94 %
 ```
 
-Questo significa che viene misurato il recupero dal livello di rendering rispetto a quello dalla cache. Se desideri ottenere un valore superiore all’80% dalla cache, segui la documentazione [qui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html%3Flang%3Den):
+Questo significa che viene misurato il recupero dal livello di rendering rispetto a quello dalla cache. Se desideri ottenere un valore superiore all’80% dalla cache, segui la documentazione [qui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=it):
 
 Per ottenere questo numero il più alto possibile.
 
@@ -169,7 +169,7 @@ Thu Sep 27 17:35:11 2018 W pid 18936 Unable to fetch vanity URLs from 10.43.0.42
 
 Questo errore si verifica quando il Dispatcher è stato configurato per l’utilizzo del filtro automatico dinamico per consentire gli URL personalizzati, ma la configurazione non è stata completata con l’installazione del pacchetto sul renderer AEM.
 
-Per risolvere questo problema, installa il feature pack per gli URL personalizzati nell’istanza AEM e consenti che sia pronto per l’utente anonimo. Dettagli [qui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html%3Flang%3Den)
+Per risolvere questo problema, installa il feature pack per gli URL personalizzati nell’istanza AEM e consenti che sia pronto per l’utente anonimo. Dettagli [qui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html)
 
 L’impostazione di un URL personalizzato funzionante è simile al seguente:
 
