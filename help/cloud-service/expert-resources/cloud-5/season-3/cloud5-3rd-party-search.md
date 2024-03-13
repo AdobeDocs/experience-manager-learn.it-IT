@@ -1,5 +1,5 @@
 ---
-title: Cloud 5 - Ricerca di terze parti
+title: 'Cloud 5: ricerca di terze parti'
 description: Scopri come integrare al meglio la ricerca di terze parti nei Edge Delivery Services.
 version: Cloud Service
 feature: Edge Delivery Services
@@ -8,16 +8,16 @@ role: Admin, Developer
 level: Intermediate
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: d7608c552fad52492d36fb64587a5939c0cde7a2
+exl-id: 0f41b049-bbbb-47c8-a3f8-25b5c68bdd39
+source-git-commit: cc32f64dfa6494a62dcb7f7cbfc8461faf6cddb1
 workflow-type: tm+mt
-source-wordcount: '36'
+source-wordcount: '32'
 ht-degree: 0%
 
 ---
 
-# Cloud 5 - Ricerca di terze parti
+# Cloud 5: ricerca di terze parti
 
 Scopri come integrare al meglio la ricerca di terze parti nei Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427040?quality=12&learn=on)
-
