@@ -4,13 +4,13 @@ description: La terza stagione ti consente di conoscere il servizio di consegna 
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
-source-git-commit: d8d15d8dd820797e829fe664d74867822782a4c1
+exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
+source-git-commit: 958dc50dfef808470139a2cab214c6cfeb98ff55
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
-
 
 # Cloud 5 stagione 3
 
@@ -84,6 +84,20 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
             <p>
                 <br/>
                 Esplora gli eventi attivati al momento della pubblicazione e dell’annullamento della pubblicazione nei Edge Delivery Services, nonché i casi d’uso e gli esempi per l’utilizzo di tali eventi.
+            </p>
+        </td>  
+        <td>
+            <a href="./season-3/cloud5-query-indexes.md">
+                <img alt="Indici di query e formule di Excel" src="https://video.tv.adobe.com/v/3427787?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-query-indexes.md">
+                <strong>Indici di query e formule di Excel</strong></a>        
+                <br/><em>con James Talbot e Varun Mitra, AEM Engineering</em>
+            </div>
+            <p>
+                <br/>
+                Esplora gli indici di query e come scrivere formule di Excel per manipolare e ordinare i set di dati.
             </p>
         </td>   
     </tr>  
