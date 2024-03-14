@@ -9,7 +9,8 @@ version: Cloud Service
 topic: Integrations
 jira: KT-14795
 duration: 60
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+exl-id: 9abe9f9d-8fb3-4e01-a830-1dad1c27274d
+source-git-commit: 3dc1aea74e2a7cf30da9f6fb96ecc5c7edcf6e34
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -22,7 +23,7 @@ Nella versione precedente di AEM Form(6.5), era necessario scrivere un codice pe
 
 Questo articolo illustra i passaggi necessari per precompilare/precompilare un modulo adattivo con dati recuperati dall’elenco di SharePoint utilizzando il servizio di precompilazione del modello dati del modulo.
 
-Questo articolo presuppone che tu abbia [modulo adattivo configurato correttamente per inviare dati a sharepoint list.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
+Questo articolo presuppone che tu abbia [modulo adattivo configurato correttamente per inviare dati all’elenco SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
 
 Di seguito sono riportati i dati dell&#39;elenco SharePoint
 ![sharepoint-list](assets/list-data.png)
@@ -52,7 +53,3 @@ Visualizzare l’anteprima del modulo includendo `submissionid` nell’URL, come
 ```html
 http://localhost:4502/content/dam/formsanddocuments/contactusform/jcr:content?wcmmode=disabled&submissionid=57e12249-751a-4a38-a81f-0a4422b24412
 ```
-
-
-
-
