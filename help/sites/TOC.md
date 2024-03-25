@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: f5f80a898420445335ed34f20aac6579199cc817
+source-git-commit: 29f1cc8d891c57e9878c650fd8e02a32bfa73051
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 17%
+source-wordcount: '500'
+ht-degree: 19%
 
 ---
 
@@ -56,6 +56,8 @@ ht-degree: 17%
    + [Lanci](page-authoring/launches.md)
    + Impara Dai Tuoi Colleghi {#expert-advice}
       + [Suggerimenti gerarchia siti](page-authoring/expert-advice/site-hierarchy.md)
++ IA generativa {#generative-ai}
+   + [Genera varianti](./generative-ai/generate-variations.md)
 + Frammenti di contenuto {#content-fragments}
    + [Console Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [Authoring dei frammenti di contenuto](content-fragments/content-fragments-feature-video-use.md)
@@ -82,7 +84,7 @@ ht-degree: 17%
       + [Condivisione social media](edge-delivery-services/how-to/social-media-sharing.md)
       + [Eliminazione di pagine](edge-delivery-services/how-to/delete-page.md)
 + Sviluppo {#developing}
-   + [Servizi di consegna Edge](developing/edge-delivery-services.md)
+   + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [Archetipo progetto AEM](developing/aem-project-archetype.md)
    + [Guida introduttiva ad AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it){target=_blank}
    + [Guida introduttiva di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it){target=_blank}
