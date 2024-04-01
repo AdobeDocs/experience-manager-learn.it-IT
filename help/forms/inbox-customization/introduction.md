@@ -11,7 +11,7 @@ level: Experienced
 exl-id: 3e1d86ab-e0c4-45d4-b998-75a44a7e4a3f
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 54
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 5%
@@ -32,7 +32,7 @@ L&#39;interfaccia utente Casella in entrata fornisce viste elenco e calendario p
 
 ## Personalizzazione delle colonne
 
-[Avvia casella in entrata AEM](http://localhost:4502/aem/inbox)
+[Apri casella in entrata AEM](http://localhost:4502/aem/inbox)
 Apri Admin Control facendo clic sul pulsante _Vista a elenco_ e quindi selezionando _Admin Control_ come mostrato nella schermata seguente
 
 ![admin-control](assets/open-customization.png)

@@ -14,10 +14,10 @@ badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
 duration: 218
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 10%
+source-wordcount: '682'
+ht-degree: 12%
 
 ---
 
@@ -95,9 +95,9 @@ L’integrazione di Adobe Commerce con AEM as a Cloud Service consente ai brand 
 + [Guida utente di AEM Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=it)
 
 
-## Tag Adobe Experience Platform
+## Tag in Adobe Experience Platform
 
-I tag Adobe Experience Platform (precedentemente Adobe Launch, DTM) si integrano perfettamente con AEM, fornendo un modo semplice di implementare e gestire [analisi](#adobe-analytics), [targeting](#adobe-target)Tag pubblicitari, di marketing e necessari per coinvolgere le esperienze dei clienti.
+I tag in Adobe Experience Platform si integrano perfettamente con l’AEM, fornendo un modo semplice di implementare e gestire [analisi](#adobe-analytics), [targeting](#adobe-target)Tag pubblicitari, di marketing e necessari per coinvolgere le esperienze dei clienti.
 
 ### AEM Sites
 

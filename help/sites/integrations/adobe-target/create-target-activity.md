@@ -13,7 +13,7 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: f581a4fb-1182-44bb-8c46-4250cf37b55f
 duration: 268
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Scopri come creare e testare un’attività di Adobe Target utilizzando le offer
 Per creare attività di Adobe Target utilizzando le offerte dei frammenti di esperienza, è necessario completare la seguente configurazione:
 
 1. [Aggiungere Adobe Target al sito Web AEM](./add-target-launch-extension.md)
-1. [Attivare una chiamata Adobe Target da Launch](./load-and-fire-target.md)
+1. [Attivare una chiamata Adobe Target dai tag](./load-and-fire-target.md)
 1. [Integrare il servizio AEM Author con Adobe Target](./setup-aem-target-cloud-service.md)
 1. [Esportare i frammenti esperienza AEM in Adobe Target](./export-experience-fragment-target.md)
 

@@ -12,19 +12,14 @@ badgeIntegration: label="Integrazione" type="positive"
 doc-type: Tutorial
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
 duration: 668
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '2307'
+source-wordcount: '2262'
 ht-degree: 1%
 
 ---
 
 # Integrare AEM Sites e Adobe Analytics
-
->[!NOTE]
->
->Adobe Experience Platform Launch è stato ridefinito come suite di tecnologie di raccolta dati in Adobe Experience Platform. Di conseguenza, sono state introdotte diverse modifiche terminologiche nella documentazione del prodotto. Fai riferimento a quanto segue [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) per un riferimento consolidato delle modifiche terminologiche.
-
 
 Scopri come integrare AEM Sites e Adobe Analytics con l’estensione tag Adobe Analytics, utilizzando le funzioni integrate di [Adobe Client Data Layer con componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it) per raccogliere dati su una pagina in Adobe Experience Manager Sites. [Tag nell’Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) e [Estensione Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) vengono utilizzati per creare regole per inviare dati di pagina ad Adobe Analytics.
 

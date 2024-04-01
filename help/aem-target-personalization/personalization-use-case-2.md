@@ -10,9 +10,9 @@ badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 53cafd06-3a0a-4995-947d-179146b89234
 duration: 159
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '577'
 ht-degree: 1%
 
 ---
@@ -42,19 +42,19 @@ Per questo esercizio, è necessario coinvolgere i seguenti utenti e per eseguire
 
 * **AEM**
    * [Istanza di authoring e pubblicazione AEM](./implementation.md#getting-aem) in esecuzione rispettivamente su localhost 4502 e 4503.
-   * [AEM integrato con Adobe Target tramite Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
+   * [AEM integrato con Adobe Target tramite tag](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
    * Accesso al Adobe Experience Cloud delle organizzazioni - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud fornito con le seguenti soluzioni
       * [Adobe Target](https://experiencecloud.adobe.com)
 
-## Attività editor contenuti
+## Attività dell’editor di contenuti
 
 1. L’addetto al marketing avvia la discussione sulla riprogettazione della home page WKND con l’editor di contenuti AEM e ne descrive i requisiti.
    * ***Requisito*** : riprogetta la home page del sito WKND con una progettazione basata su schede.
 2. In base ai requisiti, AEM Content Editor crea quindi una nuova home page del sito WKND con una progettazione basata su schede e pubblica la nuova home page.
 
-## Attività degli addetti marketing
+## Attività degli addetti al marketing
 
 1. L’addetto al marketing crea un’attività di destinazione A/B con l’offerta di reindirizzamento come esperienza e il 100% del traffico del sito web assegnato alla nuova home page, con l’aggiunta dell’obiettivo di successo e delle metriche.
    1. Dalla finestra di Adobe Target, passa a **Attività** scheda.

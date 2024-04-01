@@ -10,7 +10,7 @@ badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: b632883f-65fd-4f89-bf39-ec2bce352d2d
 duration: 219
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Ora disponiamo di contenuti personalizzati sotto forma di offerte dell’AEM in 
 
 **Per implementare questo scenario, devi:**
 
-* [Integrare AEM e Adobe Target tramite Launch e Adobe I/O](./implementation.md#integrating-aem-target-options)
+* [Integrare AEM e Adobe Target utilizzando tag e Adobe I/O](./implementation.md#integrating-aem-target-options)
 * [AEM e Adobe Target con Cloud Service legacy](./implementation.md#integrating-aem-target-options)
 
 ***Dopo aver implementato le integrazioni di cui sopra, esplora le [scenario in dettaglio](./personalization-use-case-1.md).***
@@ -67,7 +67,7 @@ Il Compositore esperienza visivo è una delle funzionalità principali di Adobe 
 
 **Per implementare questo scenario, devi:**
 
-* [Integrare AEM e Adobe Target tramite Launch e Adobe I/O](./implementation.md#integrating-aem-target-options)
+* [Integrare AEM e Adobe Target utilizzando tag e Adobe I/O](./implementation.md#integrating-aem-target-options)
 
 ***Dopo aver implementato l’integrazione di cui sopra, è possibile esplorare i [scenario in dettaglio.](./personalization-use-case-3.md)***
 
@@ -85,6 +85,6 @@ L’integrazione di Adobe Experience Manager con Adobe Target ti aiuta a fornire
 
 **Per implementare questo scenario, devi:**
 
-* [Integrare AEM e Adobe Target tramite Launch e Adobe I/O](./implementation.md#integrating-aem-target-options)
+* [Integrare AEM e Adobe Target utilizzando tag e Adobe I/O](./implementation.md#integrating-aem-target-options)
 
 ***Dopo aver implementato l’integrazione di cui sopra, è possibile esplorare i [scenario in dettaglio.](./personalization-use-case-2.md)***

@@ -12,18 +12,14 @@ badgeIntegration: label="Integrazione" type="positive"
 doc-type: Tutorial
 exl-id: ab051363-d3e8-4c07-b1fa-3a5d24757496
 duration: 527
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '1750'
 ht-degree: 1%
 
 ---
 
 # Tracciare il componente su cui è stato fatto clic con Adobe Analytics
-
->[!NOTE]
->
->Adobe Experience Platform Launch è stato ridefinito come suite di tecnologie di raccolta dati in Adobe Experience Platform. Di conseguenza, sono state introdotte diverse modifiche terminologiche nella documentazione del prodotto. Fai riferimento a quanto segue [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) per un riferimento consolidato delle modifiche terminologiche.
 
 Utilizzare la funzionalità basata su eventi [Adobe Client Data Layer con componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it) per tenere traccia dei clic su componenti specifici su un sito Adobe Experience Manager. Scopri come utilizzare le regole nella proprietà tag per rilevare gli eventi di clic, filtrare per componente e inviare i dati a un Adobe Analytics con un beacon di tracciamento dei collegamenti.
 

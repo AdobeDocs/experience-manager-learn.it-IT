@@ -14,9 +14,9 @@ badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
 duration: 1360
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1232'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ In entrata **Experience Platform**:
 + Accesso a **Schemi** in Gestione dati
 + Accesso a **Set di dati** in Gestione dati
 + Accesso a **Flussi di dati** in Raccolta dati
-+ Accesso a **Tag** (precedentemente noto come Launch) in Raccolta dati
++ Accesso a **Tag** in Raccolta dati
 
 Se non disponi delle autorizzazioni necessarie, l’amministratore di sistema utilizza [Adobe Admin Console](https://adminconsole.adobe.com/) può concedere le autorizzazioni necessarie.
 
@@ -75,7 +75,7 @@ Acquisisci familiarità con il concetto di flussi di dati e argomenti correlati,
 
 ## Crea proprietà tag - Experience Platform
 
-Scopri come creare una proprietà tag (precedentemente nota come Launch) in Experienci Platform per aggiungere la libreria JavaScript dell’SDK web al sito web WKND. La proprietà tag appena definita dispone delle seguenti risorse:
+Scopri come creare una proprietà tag in Experienci Platform per aggiungere la libreria JavaScript dell’SDK web al sito web WKND. La proprietà tag appena definita dispone delle seguenti risorse:
 
 + Estensioni tag: [Core](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) e [Adobe Experience Platform Web SDK](https://exchange.adobe.com/apps/ec/106387/aep-web-sdk)
 + Elementi dati: gli elementi dati del tipo di codice personalizzato che estraggono nome-pagina, sezione-sito e nome-host utilizzando l’Adobe del livello dati client del sito WKND. Inoltre, l’elemento dati del tipo di oggetto XDM conforme alla nuova generazione dello schema XDM WKND precedente [Crea schema XDM](#create-xdm-schema---experience-platform) passaggio.
@@ -139,26 +139,26 @@ Durante la creazione e la pubblicazione della libreria di tag utilizzando **Flus
   var pageShownEventHandler = function(evt) {
   // defensive coding to avoid a null pointer exception
   if(evt.hasOwnProperty("eventInfo") && evt.eventInfo.hasOwnProperty("path")) {
-      //trigger Launch Rule and pass event
+      // trigger tags Rule and pass event
       console.debug("cmp:show event: " + evt.eventInfo.path);
       var event = {
-          //include the path of the component that triggered the event
+          // include the path of the component that triggered the event
           path: evt.eventInfo.path,
-          //get the state of the component that triggered the event
+          // get the state of the component that triggered the event
           component: window.adobeDataLayer.getState(evt.eventInfo.path)
       };
   
-      //Trigger the Launch Rule, passing in the new 'event' object
-      // the 'event' obj can now be referenced by the reserved name 'event' by other Launch data elements
+      // Trigger the tags Rule, passing in the new 'event' object
+      // the 'event' obj can now be referenced by the reserved name 'event' by other tags data elements
       // i.e 'event.component['someKey']'
       trigger(event);
       }
   }
   
-  //set the namespace to avoid a potential race condition
+  // set the namespace to avoid a potential race condition
   window.adobeDataLayer = window.adobeDataLayer || [];
   
-  //push the event listener for cmp:show into the data layer
+  // push the event listener for cmp:show into the data layer
   window.adobeDataLayer.push(function (dl) {
       //add event listener for 'cmp:show' and callback to the 'pageShownEventHandler' function
       dl.addEventListener("cmp:show", pageShownEventHandler);
@@ -174,9 +174,9 @@ Per ulteriori informazioni sull’integrazione dei componenti core AEM con Adobe
 
 ## Connettere la proprietà Tag a AEM
 
-Scopri come collegare all’AEM la proprietà tag creata di recente tramite Adobe IMS e la configurazione di Adobe Launch nell’AEM. Quando viene stabilito un ambiente as a Cloud Service per l’AEM, vengono generate automaticamente diverse configurazioni dell’account tecnico Adobe IMS, incluso Adobe Launch. Tuttavia, per la versione AEM 6.5, è necessario configurarne manualmente una.
+Scopri come collegare all’AEM la proprietà tag creata di recente tramite Adobe IMS e i tag nella configurazione di Adobe Experience Platform nell’AEM. Quando viene stabilito un ambiente AEM as a Cloud Service, vengono generate automaticamente diverse configurazioni dell’account tecnico Adobe IMS, inclusi i tag. Tuttavia, per la versione AEM 6.5, è necessario configurarne manualmente una.
 
-Dopo aver collegato la proprietà tag, il sito WKND è in grado di caricare la libreria JavaScript della proprietà tag nelle pagine web utilizzando la configurazione del servizio cloud Adobe Launch.
+Dopo aver collegato la proprietà tag, il sito WKND è in grado di caricare la libreria JavaScript della proprietà tag nelle pagine web utilizzando i tag nella configurazione del servizio cloud Adobe Experience Platform.
 
 ### Verifica del caricamento della proprietà tag in WKND
 

@@ -10,9 +10,9 @@ badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 9b191211-2030-4b62-acad-c7eb45b807ca
 duration: 357
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '360'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ In questa sezione verrà illustrato come configurare Adobe Experience Manager (A
 
 >[!NOTE]
 >
-> Il Cloud Service legacy AEM con Adobe Target è **solo** utilizzato per stabilire una connessione back-end diretta da AEM Author ad Adobe Target che faciliti la pubblicazione di contenuti dall’AEM a Target. Adobe Launch viene utilizzato per esporre Adobe Target sull’esperienza del sito web rivolto al pubblico fornito dall’AEM.
+> Il Cloud Service legacy AEM con Adobe Target è **solo** utilizzato per stabilire una connessione back-end diretta da AEM Author ad Adobe Target che faciliti la pubblicazione di contenuti dall’AEM a Target. I tag in Adobe Experience Platform vengono utilizzati per esporre Adobe Target sull’esperienza del sito web rivolto al pubblico fornito dall’AEM.
 
 Per utilizzare le offerte dei frammenti di esperienza AEM per potenziare le attività di personalizzazione, procedi al capitolo successivo e integra l’AEM con Adobe Target utilizzando i servizi cloud precedenti. Questa integrazione è necessaria per inviare i frammenti di esperienza dall’AEM a Target come offerte HTML/JSON e mantenere la sincronizzazione tra le offerte di Target e l’AEM. Questa integrazione è necessaria per implementare [Scenario 1 discusso nella sezione panoramica](./overview.md#personalization-using-aem-experience-fragment).
 
@@ -40,7 +40,7 @@ Per utilizzare le offerte dei frammenti di esperienza AEM per potenziare le atti
 
      >[!NOTE]
      >
-     > È necessario fornire al cliente Experience Platform Launch e Adobe I/O da [Supporto Adobe](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) o contattare l&#39;amministratore di sistema
+     > È necessario fornire al cliente la raccolta dati e l’Adobe I/O da [Supporto Adobe](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) o contattare l&#39;amministratore di sistema
 
 ### Integrazione dell’AEM con Adobe Target
 
