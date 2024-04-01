@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial su AEM Foundation
 user-guide-description: Raccolta di video e tutorial su Adobe Experience Manager Foundation.
 sub-product: Experience Manager
 index: y
-source-git-commit: 5fe651bc0dc73397ae9602a28d63b7dc084fcc70
+source-git-commit: a504ace72b1b90c6e7c711a939595b95f24733e6
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '233'
 ht-degree: 14%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 14%
    + [Sviluppare progetti AEM](./projects/develop-aem-projects.md)
    + [Usa progetto principale](./projects/use-project-masters.md)
 + Sicurezza {#security}
+   + [Informazioni sulla prevenzione DoS/DoS](./security/understanding-dos-and-prevention-approaches.md)
    + [Sviluppo per la condivisione CORS (Cross-Origin Resource Sharing)](./security/develop-for-cross-origin-resource-sharing.md)
    + [Comprendere la condivisione CORS (Cross-Origin Resource Sharing)](./security/understand-cross-origin-resource-sharing.md)
    + [Utilizzare la procedura guidata SSL](./security/use-the-ssl-wizard.md)
