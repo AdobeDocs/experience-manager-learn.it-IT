@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
 duration: 296
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: e4c50b66f15b129197f22e104cedf698a1dac079
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 1%
@@ -126,7 +126,7 @@ Il sito 1 è uno scenario di base, anonimamente accessibile e di sola lettura in
     "X-Requested-With",
     "Content-Type",
     "Access-Control-Request-Method",
-    "Access-Control-Request-Headers",
+    "Access-Control-Request-Headers"
   ]
 }
 ```
@@ -181,9 +181,9 @@ In generale, le stesse considerazioni per il caching dei contenuti in Dispatcher
 
 | Memorizzabile in cache | Ambiente | Stato di autenticazione | Spiegazione |
 |-----------|-------------|-----------------------|-------------|
-| No | AEM Publish | Autenticato | Il caching del Dispatcher nell’istanza di authoring dell’AEM è limitato alle risorse statiche non create. Questo rende difficile e poco pratico memorizzare nella cache la maggior parte delle risorse su AEM Author, incluse le intestazioni di risposta HTTP. |
-| No | AEM Publish | Autenticato | Evita di memorizzare nella cache le intestazioni CORS nelle richieste autenticate. Questo si allinea alla linea guida comune di non memorizzare in cache le richieste autenticate, in quanto è difficile determinare in che modo lo stato di autenticazione/autorizzazione dell’utente richiedente influirà sulla risorsa consegnata. |
-| Sì | AEM Publish | Anonimo | Le intestazioni di risposta delle richieste anonime memorizzabili nella cache di Dispatcher possono essere memorizzate anche nella cache, in modo che le richieste CORS future possano accedere al contenuto memorizzato nella cache. Qualsiasi modifica alla configurazione CORS durante la pubblicazione AEM **deve** essere seguito da un annullamento della validità delle risorse cache interessate. Le best practice impongono distribuzioni di codice o configurazione per cui la cache del dispatcher viene eliminata, in quanto è difficile determinare quale contenuto memorizzato in cache può essere influenzato. |
+| No | Pubblicazione AEM | Autenticato | Il caching del Dispatcher nell’istanza di authoring dell’AEM è limitato alle risorse statiche non create. Questo rende difficile e poco pratico memorizzare nella cache la maggior parte delle risorse su AEM Author, incluse le intestazioni di risposta HTTP. |
+| No | Pubblicazione AEM | Autenticato | Evita di memorizzare nella cache le intestazioni CORS nelle richieste autenticate. Questo si allinea alla linea guida comune di non memorizzare in cache le richieste autenticate, in quanto è difficile determinare in che modo lo stato di autenticazione/autorizzazione dell’utente richiedente influirà sulla risorsa consegnata. |
+| Sì | Pubblicazione AEM | Anonimo | Le intestazioni di risposta delle richieste anonime memorizzabili nella cache di Dispatcher possono essere memorizzate anche nella cache, in modo che le richieste CORS future possano accedere al contenuto memorizzato nella cache. Qualsiasi modifica alla configurazione CORS durante la pubblicazione AEM **deve** essere seguito da un annullamento della validità delle risorse cache interessate. Le best practice impongono distribuzioni di codice o configurazione per cui la cache del dispatcher viene eliminata, in quanto è difficile determinare quale contenuto memorizzato in cache può essere influenzato. |
 
 ### Consentire le intestazioni di richiesta CORS
 
