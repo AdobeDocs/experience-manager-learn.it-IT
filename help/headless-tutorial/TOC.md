@@ -8,10 +8,10 @@ sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
 jira: KT-2963
 index: y
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: c498783aceaf3bb389baaeaeefbe9d8d0125a82e
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 19%
+source-wordcount: '341'
+ht-degree: 13%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 19%
    + [Portale per sviluppatori AEM headless](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it){target=_blank}
    + [Panoramica](./graphql/overview.md)
    + Configurazione rapida {#quick-setup}
-      + [Servizio cloud](./graphql/quick-setup/cloud-service.md)
+      + [Cloud Service](./graphql/quick-setup/cloud-service.md)
       + [SDK AEM](./graphql/quick-setup/local-sdk.md)
    + Serie video{#video-series}
       + [1 - Nozioni di base sulla modellazione](./graphql/video-series/modeling-basics.md)
@@ -67,6 +67,7 @@ ht-degree: 19%
    + [Contenuto localizzato](./graphql/how-to/localized-content.md)
    + [Set di risultati di grandi dimensioni](./graphql/how-to/large-result-sets.md)
    + [Anteprima](./graphql/how-to/preview.md)
+   + [Contenuto protetto](./graphql/how-to/protected-content.md)
    + [SDK headless per AEM](./graphql/how-to/aem-headless-sdk.md)
    + [Installare GraphiQL su AEM 6.5](./graphql/how-to/install-graphiql-aem-6-5.md)
    + Esempi {#example-apps}
