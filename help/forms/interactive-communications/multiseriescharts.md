@@ -10,7 +10,7 @@ level: Beginner
 exl-id: f4af7cb9-cc3b-4bec-9428-ab4f1a3cf41a
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 446
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 4f818f2ad01d9ecadcf5593aa038c7db15b4d496
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 In AEM Forms 6.5 è stata introdotta la possibilità di creare e configurare grafici a più serie. I grafici a serie multiple vengono in genere utilizzati in associazione con il tipo di grafico a linee, a barre o a colonne. Il grafico seguente è un buon esempio di grafico a serie multiple. Il grafico mostra la crescita di 10.000 dollari in 3 diversi fondi comuni di investimento in un periodo di tempo. Per poter creare e utilizzare grafici di questo tipo in AEM Forms, è necessario creare il modello dati modulo appropriato.
 
-![Grafico a più serie](assets/seriescharts.jfif)
+![Grafico a più serie](assets/series_charts.png)
 
 Per creare grafici a serie multiple in AEM Forms, è necessario creare un modello dati modulo appropriato con le entità e le associazioni necessarie. La schermata seguente evidenzia le entità e le associazioni tra le 3 entità. Al livello superiore, abbiamo un&#39;entità denominata &quot;Organizzazione&quot;, che ha un&#39;associazione uno-a-molti con l&#39;entità del Fondo. L&#39;entità fondo, a sua volta, ha un&#39;associazione uno-a-molti con l&#39;entità performance.
 
-![Modello dati modulo](assets/formdatamodel.jfif)
+![Modello dati modulo](assets/form_data_model.png)
 
 ## Crea modello dati modulo per grafici a più serie
 
