@@ -5,9 +5,9 @@ sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experie
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
-source-git-commit: 2be59ef6c6e42854a614722ced9b40988d9d4881
+source-git-commit: 3f30c5bc85b09e2f3bc17fa591a85cd92c811126
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,20 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
                 <br/>
                 Esplora gli indici di query e come scrivere formule di Excel per manipolare e ordinare i set di dati nei Edge Delivery Services.
             </p>
-        </td>   
+        </td>  
+        <td>
+            <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
+                <img alt="Porta la tua CDN di Cloudflare" src="https://video.tv.adobe.com/v/3428100?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
+                <strong>Porta la tua CDN di Cloudflare</strong></a>        
+                <br/><em>con James Talbot e Kunwar Saluja, AEM Engineering</em>
+            </div>
+            <p>
+                <br/>
+                Scopri come configurare in Edge Delivery Services la tua rete CDN di Cloudflare.
+            </p>
+        </td>           
     </tr>  
 </table>
