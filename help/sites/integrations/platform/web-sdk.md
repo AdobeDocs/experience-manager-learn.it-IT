@@ -14,9 +14,9 @@ badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
 duration: 1360
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
-source-wordcount: '1232'
+source-wordcount: '1229'
 ht-degree: 1%
 
 ---
@@ -180,7 +180,7 @@ Dopo aver collegato la proprietà tag, il sito WKND è in grado di caricare la l
 
 ### Verifica del caricamento della proprietà tag in WKND
 
-Utilizzo di Adobi Experience Platform Debugger [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) o [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) , verifica se la proprietà tag è in fase di caricamento sulle pagine WKND. Puoi verificare:
+Utilizzo di Adobi Experience Platform Debugger [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) , verifica se la proprietà tag è in fase di caricamento sulle pagine WKND. Puoi verificare:
 
 + Dettagli della proprietà tag come estensione, versione, nome e altro ancora.
 + Versione della libreria dell’SDK web di Platform, ID dello stream di dati

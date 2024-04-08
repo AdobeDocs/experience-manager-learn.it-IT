@@ -9,7 +9,7 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1603
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
 source-wordcount: '4441'
 ht-degree: 0%
@@ -26,9 +26,9 @@ Questo tutorial di sviluppo illustra come sviluppare per [!DNL AEM Projects]. In
 
 ## Introduzione {#introduction}
 
-[[!DNL AEM Projects]](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html) è una funzione dell’AEM progettata per semplificare la gestione e il raggruppamento di tutti i flussi di lavoro e le attività associati alla creazione di contenuti come parte di un’implementazione di AEM Sites o Assets.
+[[!DNL AEM Projects]](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) è una funzione dell’AEM progettata per semplificare la gestione e il raggruppamento di tutti i flussi di lavoro e le attività associati alla creazione di contenuti come parte di un’implementazione di AEM Sites o Assets.
 
-Progetti AEM viene fornito con diversi [Modelli di progetto preconfigurati](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html). Durante la creazione di un progetto, gli autori possono scegliere tra questi modelli disponibili. Le implementazioni di grandi dimensioni dell’AEM con requisiti di business univoci richiedono la creazione di modelli di progetto personalizzati, personalizzati in base alle esigenze. Creando un modello di progetto personalizzato, gli sviluppatori possono configurare il dashboard del progetto, connettersi ai flussi di lavoro personalizzati e creare ruoli di business aggiuntivi per un progetto. Esamineremo la struttura di un modello di progetto e ne creeremo uno di esempio.
+Progetti AEM viene fornito con diversi [Modelli di progetto preconfigurati](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects). Durante la creazione di un progetto, gli autori possono scegliere tra questi modelli disponibili. Le implementazioni di grandi dimensioni dell’AEM con requisiti di business univoci richiedono la creazione di modelli di progetto personalizzati, personalizzati in base alle esigenze. Creando un modello di progetto personalizzato, gli sviluppatori possono configurare il dashboard del progetto, connettersi ai flussi di lavoro personalizzati e creare ruoli di business aggiuntivi per un progetto. Esamineremo la struttura di un modello di progetto e ne creeremo uno di esempio.
 
 ![Scheda Progetto Personalizzata](./assets/develop-aem-projects/custom-project-card.png)
 
@@ -39,7 +39,7 @@ Questo tutorial illustra il codice necessario per creare un modello di progetto 
 * [Pacchetto tutorial completato](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Archivio completo del codice su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Questo tutorial presuppone una conoscenza di base di [Pratiche di sviluppo dell&#39;AEM](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/the-basics.html) e una certa familiarità con [Configurazione del progetto AEM Maven](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html). Tutto il codice menzionato è destinato a essere utilizzato come riferimento e deve essere distribuito solo a un [sviluppo locale istanza AEM](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/deploy.html).
+Questo tutorial presuppone una conoscenza di base di [Pratiche di sviluppo dell&#39;AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) e una certa familiarità con [Configurazione del progetto AEM Maven](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html). Tutto il codice menzionato è destinato a essere utilizzato come riferimento e deve essere distribuito solo a un [sviluppo locale istanza AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
 
 ## Struttura di un modello di progetto
 
@@ -69,11 +69,11 @@ Un esempio di procedura guidata personalizzata è disponibile per il modello di 
 
 ### Gadget {#gadgets}
 
-Su questo nodo non sono presenti proprietà aggiuntive, ma i figli del nodo gadget controllano quali tessere di progetto popolano il dashboard del progetto quando viene creato un nuovo progetto. [Riquadri progetto](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html) (noti anche come gadget o pod) sono schede semplici che popolano l’area di lavoro di un progetto. Un elenco completo delle tessere ootb è disponibile in: **/libs/cq/gui/components/projects/admin/pod. **I proprietari dei progetti possono sempre aggiungere/rimuovere tessere dopo la creazione di un progetto.
+Su questo nodo non sono presenti proprietà aggiuntive, ma i figli del nodo gadget controllano quali tessere di progetto popolano il dashboard del progetto quando viene creato un nuovo progetto. [Riquadri progetto](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) (noti anche come gadget o pod) sono schede semplici che popolano l’area di lavoro di un progetto. Un elenco completo delle tessere ootb è disponibile in: **/libs/cq/gui/components/projects/admin/pod. **I proprietari dei progetti possono sempre aggiungere/rimuovere tessere dopo la creazione di un progetto.
 
 ### Ruoli {#roles}
 
-Sono tre [Ruoli predefiniti](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html) per ogni progetto: **Osservatori**, **Editor**, e **Proprietari**. Aggiungendo nodi secondari sotto il nodo dei ruoli, puoi aggiungere ulteriori Ruoli di progetto specifici per l’azienda per il modello. Puoi quindi collegare questi ruoli a flussi di lavoro specifici associati al progetto.
+Sono tre [Ruoli predefiniti](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) per ogni progetto: **Osservatori**, **Editor**, e **Proprietari**. Aggiungendo nodi secondari sotto il nodo dei ruoli, puoi aggiungere ulteriori Ruoli di progetto specifici per l’azienda per il modello. Puoi quindi collegare questi ruoli a flussi di lavoro specifici associati al progetto.
 
 ### Flussi di lavoro {#workflows}
 
@@ -152,7 +152,7 @@ Poiché stiamo principalmente copiando/configurando nodi, utilizzeremo CRXDE Lit
    1. Aggiungi un altro **nt:unstructured** nodo etichettato approvatori come figlio del nodo ruoli.
    1. Aggiungi proprietà stringa **jcr:title** = &quot;**Approvatori**&quot;, **rotocalco** =&quot;**proprietario**&quot;, **roleid**=&quot;**approvatori**&quot;.
       1. Il nome del nodo approvatori, nonché jcr:title e roleid possono essere qualsiasi valore stringa (purché roleid sia univoco).
-      1. **rotocalco** disciplina le autorizzazioni applicate per quel ruolo in base al [tre ruoli preconfigurati](https://docs.adobe.com/content/docs/en/aem/6-3/author/projects.html): **proprietario**, **editor**, e **osservatore**.
+      1. **rotocalco** disciplina le autorizzazioni applicate per quel ruolo in base al [tre ruoli preconfigurati](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects): **proprietario**, **editor**, e **osservatore**.
       1. In generale, se il ruolo personalizzato è più di un ruolo manageriale, allora la classe a rulli può essere **proprietario;** se si tratta di un ruolo di authoring più specifico come Fotografo o Designer **editor** la lente a rotelle dovrebbe bastare. La grande differenza tra **proprietario** e **editor** I proprietari del progetto possono aggiornare le proprietà del progetto e aggiungere nuovi utenti al progetto.
 
    ```shell
@@ -308,7 +308,7 @@ L’ultimo passaggio del flusso di lavoro utilizza il passaggio del processo di 
 
    ![Finestra di dialogo per creazione flusso di lavoro](./assets/develop-aem-projects/workflow-create-dialog.png)
 
-   [Per ulteriori informazioni sulla creazione di flussi di lavoro, consulta questo articolo](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
+   [Per ulteriori informazioni sulla creazione di flussi di lavoro, consulta questo articolo](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-models).
 
 1. Come best practice, i flussi di lavoro personalizzati devono essere raggruppati in una cartella separata sotto /etc/workflow/models. In CRXDE Liti, crea un’ **&#39;nt:folder&#39;** sotto /etc/workflow/models denominato **&quot;aem-guides&quot;**. L’aggiunta di una sottocartella assicura che i flussi di lavoro personalizzati non vengano accidentalmente sovrascritti durante gli aggiornamenti o le installazioni di Service Pack.
 
@@ -320,7 +320,7 @@ L’ultimo passaggio del flusso di lavoro utilizza il passaggio del processo di 
 
    >[!NOTE]
    >
-   >Se utilizzi AEM 6.4+ la posizione del flusso di lavoro è cambiata. Consulta [qui per ulteriori dettagli.](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)
+   >Se utilizzi AEM 6.4+ la posizione del flusso di lavoro è cambiata. Consulta [qui per ulteriori dettagli.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
 
    Se utilizzi AEM 6.4+, il modello di flusso di lavoro viene creato in `/conf/global/settings/workflow/models`. Ripeti i passaggi precedenti con la directory /conf e aggiungi una sottocartella denominata `aem-guides` e spostare il `content-approval-workflow` sotto di esso.
 
@@ -660,7 +660,7 @@ La creazione di una procedura guidata personalizzata può essere molto utile in 
    Sotto **priorità** verrà aggiunto un nodo **elementi** nodo di **nt:unstructured**. Sotto **elementi** nodo aggiungi altri 3 nodi per popolare le opzioni di selezione Alta, Media e Bassa. Ogni nodo è di tipo **nt:unstructured** e deve avere **text** e **valore** proprietà. Sia il testo che il valore devono avere lo stesso valore:
 
    1. Alta
-   1. Media
+   1. Medium
    1. Bassa
 
    Per il nodo Medio aggiungi un’ulteriore proprietà booleana denominata &quot;**selected&quot;** con un valore impostato su **true**. In questo modo il valore predefinito nel campo di selezione sarà Medio.
@@ -738,7 +738,7 @@ La configurazione del flusso di lavoro è un&#39;area di un modello di progetto 
    >Se utilizzi AEM 6.4, la posizione del flusso di lavoro è cambiata. Puntare il `modelId` alla posizione del modello di flusso di lavoro di runtime in `/var/workflow/models/aem-guides/content-approval-workflow`
    >
    >
-   >Consulta [qui per ulteriori dettagli sulla modifica della posizione del flusso di lavoro.](https://docs.adobe.com/content/help/en/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)
+   >Consulta [qui per ulteriori dettagli sulla modifica della posizione del flusso di lavoro.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
 
    ```xml
    <contentapproval
@@ -754,4 +754,4 @@ La configurazione del flusso di lavoro è un&#39;area di un modello di progetto 
 
 * [Scarica pacchetto di esercitazione completato](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Archivio completo del codice su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
-* [Documentazione sui progetti AEM](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/projects/projects.html)
+* [Documentazione sui progetti AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects)

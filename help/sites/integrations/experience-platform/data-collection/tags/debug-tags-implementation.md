@@ -13,9 +13,9 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: 647447ca-3c29-4efe-bb3a-d3f53a936a2a
 duration: 279
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '266'
 ht-degree: 1%
 
 ---
@@ -44,11 +44,11 @@ Per abilitare il debug lato client, chiama il `setDebug(true)` metodo su `_satel
 
 ## Debug tramite Adobi Experience Platform Debugger
 
-L’Adobe fornisce un Adobe Experience Platform Debugger [Estensione Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) e [Componente aggiuntivo Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) per eseguire il debug, comprendere e ottenere informazioni approfondite sull’integrazione.
+L’Adobe fornisce un Adobe Experience Platform Debugger [Estensione Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) per eseguire il debug, comprendere e ottenere informazioni approfondite sull’integrazione.
 
 1. Apri l’estensione Adobi Experience Platform Debugger e apri la pagina del sito nell’istanza Publish.
 
-1. In **Adobe Experience Platform Debugger > Riepilogo > Tag Adobe Experience Platform** verificare i dettagli della proprietà Tag come Nome, Versione, Data build, Ambiente ed Estensioni.
+2. In **Adobe Experience Platform Debugger > Riepilogo > Tag Adobe Experience Platform** verificare i dettagli della proprietà Tag come Nome, Versione, Data build, Ambiente ed Estensioni.
 
    ![Dettagli proprietà Adobe Experience Platform Debugger e tag](assets/tag-property-details.png)
 

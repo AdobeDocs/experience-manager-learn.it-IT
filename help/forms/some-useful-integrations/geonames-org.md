@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
 last-substantial-update: 2021-02-07T00:00:00Z
 duration: 218
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Un elenco a discesa a cascata è una serie di controlli DropDownList dipendenti 
 
 >[!VIDEO](https://video.tv.adobe.com/v/340344?quality=12&learn=on)
 
-Ai fini di questa esercitazione, ho utilizzato [API REST Geonames](http://api.geonames.org/) per dimostrare questa capacità.
+Ai fini di questa esercitazione, ho utilizzato [API REST Geonames](https://www.geonames.org/export/web-services.html) per dimostrare questa capacità.
 Esistono diverse organizzazioni che forniscono questo tipo di servizio e, purché dispongano di API REST ben documentate, puoi facilmente integrarle con AEM Forms utilizzando la funzionalità di integrazione dei dati
 
 Sono stati seguiti i seguenti passaggi per implementare gli elenchi a discesa a cascata in AEM Forms
@@ -88,7 +88,7 @@ Aggiungi 2 elenchi a discesa denominati contee e città nel modulo per elencare 
 
 È possibile scaricare le seguenti risorse per iniziare subito a creare l’esempio di elenco a discesa a cascata I file Swagger completati possono essere scaricati da [qui](assets/geonames-swagger-files.zip)
 I file swagger descrivono la seguente API REST
-* [Ottieni tutti i paesi](http://api.geonames.org/countryInfoJSON?username=yourusername)
-* [Ottieni elementi figlio dell&#39;oggetto Geoname](http://api.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+* [Ottieni tutti i paesi](https://secure.geonames.org/countryInfoJSON?username=yourusername)
+* [Ottieni elementi figlio dell&#39;oggetto Geoname](https://secure.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
 
 Il completamento [Il modello dati del modulo può essere scaricato da qui](assets/geonames-api-form-data-model.zip)
