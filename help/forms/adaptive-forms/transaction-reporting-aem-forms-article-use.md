@@ -9,16 +9,16 @@ level: Beginner
 exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 81
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 0f853040911ad92aea0ebac57011e659d7f0b7c0
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
 
 # Utilizzo del reporting delle transazioni in AEM Forms{#using-transaction-reporting-in-aem-forms}
 
-Con AEM Forms 6.4.1 è stato introdotto il reporting delle transazioni per acquisire il numero di invii di moduli, il rendering dei documenti utilizzando i servizi documentali e il rendering delle comunicazioni interattive (canali Web e di stampa). Questa funzionalità è attualmente disponibile solo nello stack OSGI di AEM Forms.
+Con AEM Forms 6.4.1 è stato introdotto il reporting delle transazioni per acquisire il numero di invii di moduli, il rendering dei documenti utilizzando i servizi documentali e il rendering delle comunicazioni interattive (canali Web e di stampa). Questa funzionalità è stata introdotta con AEM Forms 6.4.1 per lo stack OSGi di AEM Forms e 6.5.20 per lo stack JEE di AEM Forms.
 
 ## Abilitazione del reporting delle transazioni {#enabling-transaction-reporting}
 
