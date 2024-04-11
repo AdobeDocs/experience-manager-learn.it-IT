@@ -11,10 +11,10 @@ doc-type: Catalog
 duration: 40
 last-substantial-update: 2023-12-01T00:00:00Z
 exl-id: 172a477f-d277-43c1-8e47-68870b02203c
-source-git-commit: be3f8fe8ae5c76e17325fd87d0924cc27f8c3e60
+source-git-commit: d75c9913e8401bcf86440c0d256b9c3a9d780bbc
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 11%
+source-wordcount: '591'
+ht-degree: 9%
 
 ---
 
@@ -541,6 +541,70 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
         </div>
       </div>
     </div>
+    <!-- Intro Generate Variation -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Generate Variations" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/generate-variations.md" title="Genera varianti"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3428307/?format=jpeg"
+                alt="Genera varianti">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minuti</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/generate-variations.md" title="Genera varianti">Genera varianti</a>
+            </p>
+            <p class="is-size-6">Introduzione a Generare varianti nei Edge Delivery Services e informazioni su come può essere utile agli esperti marketing.</p>
+            <a href="./how-to/generate-variations.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Guarda il video</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <!--  Configure Sidekick for Generative Variations  -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="Configure Sidekick for Generate Variations" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/generate-variations-sidekick-config.md" title="Configura Sidekick per Genera varianti"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3428306/?format=jpeg"
+                alt="Configura Sidekick per Genera varianti">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">1 minuti</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/generate-variations-sidekick-config.md" title="Configura Sidekick per Genera varianti">Configura Sidekick per Genera varianti</a>
+            </p>
+            <p class="is-size-6">Scopri come configurare la barra laterale per Generare varianti nell’authoring dei documenti Edge Delivery Services.</p>
+            <a href="./how-to/generate-variations-sidekick-config.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Guarda il video</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>          
     <!-- GenAI Prompt Templates -->
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
       aria-label="Use GenAI Prompt Templates" tabindex="7">
@@ -564,6 +628,70 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             </p>
             <p class="is-size-6">Scopri come utilizzare i modelli di prompt di IA generativi per generare varianti di contenuto.</p>
             <a href="./how-to/prompt-templates-for-content-variations.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Guarda il video</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <!-- Custom Prompt Templates -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="GenAI Custom Prompt Templates" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/custom-prompt-templates.md" title="Modelli di richiesta personalizzati GenAI"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3428316/?format=jpeg"
+                alt="Modelli di richiesta personalizzati GenAI">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minuti</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/custom-prompt-templates.md" title="Modelli di richiesta personalizzati GenAI">Modelli di prompt personalizzati GenAI</a>
+            </p>
+            <p class="is-size-6">Scopri come creare i modelli di prompt personalizzati di IA generativi per la generazione di varianti di contenuto.</p>
+            <a href="./how-to/custom-prompt-templates.md" class="spectrum-Button
+              spectrum-Button--outline spectrum-Button--primary
+              spectrum-Button--sizeM">
+              <span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Guarda il video</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <!-- Saving Custom Prompt Templates -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen"
+      aria-label="GenAI Save Prompt Templates" tabindex="7">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9">
+            <a href="./how-to/save-custom-prompt-template.md" title="Modelli di richiesta di salvataggio GenAI"
+              tabindex="-1">
+              <img class="is-bordered-r-small"
+                src="https://video.tv.adobe.com/v/3428317/?format=jpeg"
+                alt="Modelli di richiesta di salvataggio GenAI">
+            </a>
+          </figure>
+        </div>
+        <div class="card-content is-padded-small">
+          <div class="content">
+            <p style="float: right;font-style: italic; color: #363636"
+              class="is-size-6">2 minuti</p>
+            <p class="headline is-size-6 has-text-weight-bold">
+              <a href="./how-to/save-custom-prompt-template.md" title="Modelli di richiesta di salvataggio GenAI">Modelli di richiesta di salvataggio GenAI</a>
+            </p>
+            <p class="is-size-6">Scopri come salvare i modelli di prompt personalizzati di IA generativa per la generazione di varianti di contenuto.</p>
+            <a href="./how-to/save-custom-prompt-template.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap

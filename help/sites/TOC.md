@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: be3f8fe8ae5c76e17325fd87d0924cc27f8c3e60
+source-git-commit: d75c9913e8401bcf86440c0d256b9c3a9d780bbc
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 19%
+source-wordcount: '517'
+ht-degree: 18%
 
 ---
 
@@ -36,7 +36,11 @@ ht-degree: 19%
       + [Testo alternativo immagine](./document-authoring/how-to/image-alt-text.md)
       + [Impedisci indicizzazione motore di ricerca](./document-authoring/how-to/no-index.md)
       + [Navigazione reattiva](document-authoring/how-to/responsive-navigation.md)
+      + [Genera varianti](./document-authoring/how-to/generate-variations.md)
+      + [Configura Sidekick per Genera varianti](./document-authoring/how-to/generate-variations-sidekick-config.md)
       + [Modelli di prompt GenAI](./document-authoring/how-to/prompt-templates-for-content-variations.md)
+      + [Modelli di prompt personalizzati GenAI](./document-authoring/how-to/custom-prompt-templates.md)
+      + [Salvataggio di modelli di prompt personalizzati GenAI](./document-authoring/how-to/save-custom-prompt-template.md)
 + Authoring delle pagine {#page-authoring}
    + [Authoring](page-authoring/aem-sites-authoring-overview.md)
    + [Navigazione](page-authoring/basic-handling-sites-feature-video-use.md)
