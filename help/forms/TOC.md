@@ -8,9 +8,9 @@ breadcrumb-title: Tutorial su AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 73c15a195c438dd7a07142bba719c6f820bf298a
+source-git-commit: eb4463ae0270725c5b0bd96e9799bada25b06303
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2059'
 ht-degree: 2%
 
 ---
@@ -105,6 +105,10 @@ ht-degree: 2%
    + [Pre-popolamento di HTML5 Forms](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Modello dati modulo con Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Aggiunta dinamica di elementi al componente Scelta](adaptive-forms/choice-group-items-adding-dynamically-article.md)
++ Compila un modulo PDF con ChatBot{#chatbot-and-aem-forms}
+   + [1 - Introduzione](chatbot-and-aem-forms/introduction.md)
+   + [2 - Analizzare i dati ChatBot](chatbot-and-aem-forms/parse-chat-bot-data.md)
+   + [3 - Creare PDF](chatbot-and-aem-forms/merge-data-with-template.md)
 + Moduli basati su Componenti core{#core-component-based-forms}
    + [Accedere ai dati dei moduli tramite l’API GuideBridge](core-components/submit-data-using-guidebridge-api.md)
 + Selezionare e assemblare il contenuto della cartella DAM{#select-dam-folder-content}
