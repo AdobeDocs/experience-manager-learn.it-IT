@@ -10,7 +10,7 @@ level: Beginner
 exl-id: 4e69e115-12a6-4a57-90da-b91e345c6723
 last-substantial-update: 2023-08-08T00:00:00Z
 duration: 595
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 153ce0ff2d433bdbce05ef7fba4856356c0f6d4c
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Per aggiornare _nome host_ e _porta_ utilizzare il __Connettore SSL__ passaggio 
 ### Verificare la configurazione SSL
 
 1. Per verificare l’SSL, fai clic su __Vai all’URL HTTPS__ pulsante.
-1. Se utilizzi un certificato con firma autografa, visualizzerai `Your connection is not private` errore.
+1. Se utilizzi un certificato autofirmato, puoi vedere `Your connection is not private` errore.
 
    ![Configurazione SSL - Verifica AEM tramite HTTPS](assets/use-the-ssl-wizard/verify-aem-over-ssl.png)
 
