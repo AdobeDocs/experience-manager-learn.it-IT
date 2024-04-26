@@ -9,10 +9,11 @@ level: Intermediate
 jira: KT-9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
+last-substantial-update: 2024-04-26T00:00:00Z
 duration: 906
-source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+source-git-commit: 4e3f77a9e687042901cd3b175d68a20df63a9b65
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1280'
 ht-degree: 2%
 
 ---
@@ -25,15 +26,16 @@ Scopri come impostare e utilizzare l’uscita flessibile della porta per support
 
 L’uscita flessibile della porta consente di collegare a AEM as a Cloud Service regole specifiche e personalizzate per l’inoltro delle porte, consentendo di effettuare connessioni dall’AEM a servizi esterni.
 
-Un programma Cloud Manager può avere solo __singolo__ tipo di infrastruttura di rete. Assicurati che l’indirizzo IP in uscita dedicato sia il più [tipo appropriato di infrastruttura di rete](./advanced-networking.md)  per l’AEM as a Cloud Service prima di eseguire i seguenti comandi.
+Un programma Cloud Manager può avere solo __singolo__ tipo di infrastruttura di rete. Garantire che l&#39;uscita della porta flessibile sia la più [tipo appropriato di infrastruttura di rete](./advanced-networking.md) per l’AEM as a Cloud Service prima di eseguire i seguenti comandi.
 
 >[!MORELIKETHIS]
 >
-> Leggere l’as a Cloud Service AEM [documentazione sulla configurazione di rete avanzata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#flexible-port-egress) per ulteriori dettagli sull’uscita da porta flessibile.
+> Leggere l’as a Cloud Service AEM [documentazione sulla configurazione di rete avanzata](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) per ulteriori dettagli sull’uscita da porta flessibile.
+
 
 ## Prerequisiti
 
-Quando si imposta l&#39;uscita di porta flessibile, è necessario quanto segue:
+Durante l’impostazione o la configurazione dell’uscita di porta flessibile con le API di Cloud Manager sono necessari i seguenti elementi:
 
 + Progetto della console Adobe Developer con API di Cloud Manager abilitata e [Autorizzazioni di Proprietario business di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
 + Accesso a [Credenziali di autenticazione dell’API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
@@ -49,13 +51,45 @@ Per ulteriori dettagli, consulta la procedura dettagliata seguente per scoprire 
 
 Questa esercitazione utilizza `curl` per effettuare le configurazioni API di Cloud Manager. Il fornito `curl` I comandi presuppongono una sintassi Linux/macOS. Se si utilizza il prompt dei comandi di Windows, sostituire `\` carattere di interruzione di riga con `^`.
 
+
 ## Abilita uscita porta flessibile per programma
 
 Iniziare abilitando l&#39;uscita della porta flessibile su AEM as a Cloud Service.
 
+>[!BEGINTABS]
+
+>[!TAB Cloud Manager]
+
+L’uscita dalla porta flessibile può essere abilitata utilizzando Cloud Manager. I passaggi seguenti descrivono come abilitare l’uscita di porta flessibile su AEM as a Cloud Service utilizzando Cloud Manager.
+
+1. Accedi a [Adobe Experience Manager Cloud Manager](https://experience.adobe.com/cloud-manager/) Proprietario business di Cloud Manager.
+1. Passa al programma desiderato.
+1. Nel menu a sinistra, passa a __Servizi > Infrastruttura di rete__.
+1. Seleziona la __Aggiungere l&#39;infrastruttura di rete__ pulsante.
+
+   ![Aggiungere l&#39;infrastruttura di rete](./assets/cloud-manager__add-network-infrastructure.png)
+
+1. In __Aggiungere l&#39;infrastruttura di rete__ , seleziona la __Uscita porta flessibile__ e selezionare la __Regione__ per creare l’indirizzo IP in uscita dedicato.
+
+   ![Aggiungi uscita porta flessibile](./assets/flexible-port-egress/select-type.png)
+
+1. Seleziona __Salva__ per confermare l’aggiunta dell’uscita della porta flessibile.
+
+   ![Conferma creazione uscita porta flessibile](./assets/flexible-port-egress/confirmation.png)
+
+1. Attendere che l&#39;infrastruttura di rete venga creata e contrassegnata come __Pronto__. Questo processo può richiedere fino a 1 ora.
+
+   ![Stato creazione uscita porta flessibile](./assets/flexible-port-egress/ready.png)
+
+Con l’uscita della porta flessibile creata, ora puoi configurare le regole di inoltro della porta utilizzando le API di Cloud Manager come descritto di seguito.
+
+>[!TAB API di Cloud Manager]
+
+L’uscita dalla porta flessibile può essere abilitata utilizzando le API di Cloud Manager. I passaggi seguenti descrivono come abilitare l’uscita di porta flessibile su AEM as a Cloud Service utilizzando l’API di Cloud Manager.
+
 1. Innanzitutto, determina l’area in cui è configurato il networking avanzato utilizzando l’API di Cloud Manager. [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operazione. Il `region name` è richiesto per effettuare chiamate API successive di Cloud Manager. In genere, viene utilizzata l’area in cui risiede l’ambiente di produzione.
 
-   Trova l’area geografica dell’ambiente AEM as a Cloud Service in [Cloud Manager](https://my.cloudmanager.adobe.com) sotto [dettagli dell’ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#viewing-environment). Il nome dell’area visualizzato in Cloud Manager può essere [mappato al codice di regione](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments.it) utilizzato nell’API di Cloud Manager.
+   Trova l’area geografica dell’ambiente AEM as a Cloud Service in [Cloud Manager](https://my.cloudmanager.adobe.com) sotto [dettagli dell’ambiente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). Il nome dell’area visualizzato in Cloud Manager può essere [mappato al codice di regione](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments.it) utilizzato nell’API di Cloud Manager.
 
    __richiesta HTTP listRegions__
 
@@ -67,7 +101,7 @@ Iniziare abilitando l&#39;uscita della porta flessibile su AEM as a Cloud Servic
        -H 'Content-Type: application/json' 
    ```
 
-1. Abilitare l’uscita con porta flessibile per un programma Cloud Manager utilizzando l’API di Cloud Manager [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operazione. Utilizza il `region` codice ottenuto dall’API di Cloud Manager `listRegions` operazione.
+2. Abilitare l’uscita con porta flessibile per un programma Cloud Manager utilizzando l’API di Cloud Manager [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operazione. Utilizza il `region` codice ottenuto dall’API di Cloud Manager `listRegions` operazione.
 
    __richiesta HTTP createNetworkInfrastructure__
 
@@ -82,7 +116,7 @@ Iniziare abilitando l&#39;uscita della porta flessibile su AEM as a Cloud Servic
 
    Attendi 15 minuti affinché il programma Cloud Manager esegua il provisioning dell’infrastruttura di rete.
 
-1. Verifica che l’ambiente sia stato completato __uscita porta flessibile__ configurazione tramite l’API di Cloud Manager [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) funzionamento, utilizzando `id` restituito dalla richiesta HTTP createNetworkInfrastructure nel passaggio precedente.
+3. Verifica che l’ambiente sia stato completato __uscita porta flessibile__ configurazione tramite l’API di Cloud Manager [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) funzionamento, utilizzando `id` restituiti dal `createNetworkInfrastructure` richiesta HTTP nel passaggio precedente.
 
    __richiesta HTTP getNetworkInfrastructure__
 
@@ -95,6 +129,10 @@ Iniziare abilitando l&#39;uscita della porta flessibile su AEM as a Cloud Servic
    ```
 
    Verifica che la risposta HTTP contenga un __stato__ di __pronto__. Se non è ancora pronto, ricontrolla lo stato ogni pochi minuti.
+
+Con l’uscita della porta flessibile creata, ora puoi configurare le regole di inoltro della porta utilizzando le API di Cloud Manager come descritto di seguito.
+
+>[!ENDTABS]
 
 ## Configurare proxy di uscita di porta flessibili per ambiente
 
@@ -185,7 +223,7 @@ Quando si effettuano chiamate HTTP/HTTPS a servizi esterni su porte non standard
 
 >[!TIP]
 >
-> Consulta la documentazione sull’uscita della porta flessibile di AEM as a Cloud Service per [insieme completo di regole di instradamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#flexible-port-egress-traffic-routing).
+> Consulta la documentazione sull’uscita della porta flessibile di AEM as a Cloud Service per [insieme completo di regole di instradamento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 #### Esempi di codice
 
