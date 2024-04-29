@@ -9,9 +9,10 @@ level: Intermediate
 jira: KT-13757
 thumbnail: xx.jpg
 doc-type: Tutorial
-source-git-commit: 3b500873ee7307df590ac66dea541a1adf14d726
+exl-id: 57478aa1-c9ab-467c-9de0-54807ae21fb1
+source-git-commit: 03cb7ef0cf79a21ec1b96caf6c11e6f5119f777c
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -42,15 +43,14 @@ Per implementare le autorizzazioni basate sui metadati:
    ```json
    {
      "restrictionPropertyNames":[
-       "status"
+       "status",
+       "brand"
      ],
-     "restrictionPaths":[
-       "/content/dam"
-     ]
+     "enabled":true
    }
    ```
 
-1. Sostituisci i nomi delle proprietà e i percorsi di restrizione con i valori richiesti.
+1. Sostituisci i nomi delle proprietà con i valori richiesti.
 
 
 Prima di aggiungere voci di controllo dell’accesso basate su restrizioni, è necessario aggiungere una nuova voce di livello superiore per negare prima l’accesso in lettura a tutti i gruppi soggetti alla valutazione delle autorizzazioni per le risorse (ad esempio, &quot;collaboratori&quot; o simili):
