@@ -7,18 +7,24 @@ feature: GraphQL API
 role: Developer, Architect
 level: Intermediate
 jira: KT-15233
-last-substantial-update: 2024-04-01T00:00:00Z
-source-git-commit: c498783aceaf3bb389baaeaeefbe9d8d0125a82e
+last-substantial-update: 2024-05-01T00:00:00Z
+exl-id: c4b093d4-39b8-4f0b-b759-ecfbb6e9e54f
+source-git-commit: a3d2b2343269d2cfc7cecc5817ef1e07a66a88d3
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1151'
 ht-degree: 0%
 
 ---
 
-
 # Protezione dei contenuti in AEM headless
 
 Garantire l’integrità e la sicurezza dei dati durante la trasmissione di contenuti headless AEM da AEM Publish è fondamentale per la trasmissione di contenuti sensibili. Questo tutorial illustra come proteggere il contenuto fornito dagli endpoint API GraphQL headless dell’AEM.
+
+Le indicazioni contenute in questo tutorial in caso di requisiti rigorosi per la disponibilità esclusiva di contenuti per utenti o gruppi di utenti specifici. È fondamentale distinguere tra contenuti di marketing personalizzati e contenuti privati, come PII o dati finanziari personali, per evitare confusione e risultati indesiderati. Questo tutorial tratta la protezione dei contenuti privati.
+
+Quando si parla di contenuti di marketing, si fa riferimento a contenuti personalizzati per singoli utenti o gruppi, che non sono destinati al consumo generico. Tuttavia, è essenziale comprendere che, sebbene questo contenuto possa essere destinato a determinati utenti, la sua esposizione al di fuori del contesto previsto (ad esempio, attraverso la manipolazione delle richieste HTTP) non pone un rischio legale, di sicurezza o di reputazione.
+
+Si sottolinea che tutti i contenuti trattati in questo articolo sono considerati privati e possono essere visualizzati solo da utenti o gruppi designati. I contenuti di marketing spesso non richiedono protezione, ma la loro distribuzione a utenti specifici può essere gestita dall’applicazione e memorizzata nella cache per migliorare le prestazioni.
 
 Questo manuale non tratta:
 
@@ -114,4 +120,3 @@ Tieni presente che questo comporterà una riduzione delle prestazioni in quanto 
 ## Protezione degli endpoint API di GraphQL headless AEM
 
 Questa guida non descrive come proteggere [Endpoint API per GraphQL headless AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/graphql-api/graphql-endpoint) ma si concentra piuttosto sulla messa in sicurezza dei contenuti da loro forniti. Tutti gli utenti, inclusi gli utenti anonimi, possono accedere agli endpoint contenenti contenuto protetto. Verrà restituito solo il contenuto accessibile dai gruppi utenti chiusi dell’utente. Se nessun contenuto è accessibile, la risposta API headless dell’AEM avrà ancora un codice di stato di risposta HTTP 200, ma i risultati saranno vuoti. In genere, la protezione del contenuto è sufficiente, in quanto gli endpoint stessi non espongono intrinsecamente dati sensibili. Se devi proteggere gli endpoint, applica ad essi gli ACL nella pubblicazione AEM tramite [Script di inizializzazione dell’archivio Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios).
-
