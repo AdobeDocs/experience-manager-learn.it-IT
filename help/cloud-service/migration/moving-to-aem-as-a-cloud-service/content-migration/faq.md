@@ -11,9 +11,9 @@ jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
 duration: 569
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 85d516d57d818d23372ab7482d25e33242ef0426
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '1884'
 ht-degree: 0%
 
 ---
@@ -77,22 +77,6 @@ La quantità di risorse impiegate dal processo di estrazione CTT dipende dal num
 
 Se per la migrazione vengono utilizzati ambienti clone, questo non influirà sull’utilizzo delle risorse del server di produzione live, ma presenta alcuni aspetti negativi per quanto riguarda la sincronizzazione dei contenuti tra produzione live e clone
 
-### D: nel sistema di authoring di origine, l’SSO è configurato per consentire agli utenti di eseguire l’autenticazione nell’istanza di authoring. In questo caso devo utilizzare la funzione di mappatura utenti di CTT?
-
-La risposta breve è &quot;**Sì**&quot;.
-
-Estrazione e acquisizione CTT **senza** la mappatura utenti migra solo il contenuto, i principi associati (utenti, gruppi) dall’AEM sorgente ad AEMaaCS. Tuttavia, questi utenti (identità) presenti in Adobe IMS devono poter accedere (con provisioning) all’istanza di AEMaaCS per eseguire correttamente l’autenticazione. Il lavoro di [strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html) corrisponde a mappare l’utente AEM locale all’utente IMS in modo che l’autenticazione e le autorizzazioni funzionino insieme.
-
-In questo caso, il provider di identità SAML è configurato su Adobe IMS per utilizzare un’Enterprise ID Federated/invece di essere configurato direttamente su AEM utilizzando il gestore di autenticazione.
-
-### D: Nel mio sistema di authoring di origine, abbiamo configurato l’autenticazione di base per gli utenti per l’autenticazione nell’istanza di authoring con gli utenti AEM locali. In questo caso devo utilizzare la funzione di mappatura utenti di CTT?
-
-La risposta breve è &quot;**Sì**&quot;.
-
-L’estrazione e l’acquisizione CTT senza mappatura utente eseguono la migrazione del contenuto e dei principi associati (utenti, gruppi) dall’AEM di origine ad AEMaaCS. Tuttavia, questi utenti (identità) presenti in Adobe IMS devono poter accedere (con provisioning) all’istanza di AEMaaCS per eseguire correttamente l’autenticazione. Il lavoro di [strumento di mappatura utenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html) corrisponde a mappare l’utente AEM locale all’utente IMS in modo che l’autenticazione e le autorizzazioni funzionino insieme.
-
-In questo caso, gli utenti utilizzano Adobe ID personale e Adobe ID viene utilizzato dall’amministratore IMS per fornire l’accesso a AEMaaCS.
-
 ### D: Cosa significano i termini &quot;cancella&quot; e &quot;sovrascrivi&quot; nel contesto del CTT?
 
 Nel contesto di [fase di estrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#extraction-setup-phase), Le opzioni consentono di sovrascrivere i dati nel contenitore di staging dai cicli di estrazione precedenti o di aggiungervi il differenziale (aggiunto/aggiornato/eliminato). Il contenitore di staging non è un elemento valido, ma è il contenitore di archiviazione BLOB associato al set di migrazione. Ogni set di migrazione ottiene il proprio contenitore di staging.
@@ -107,6 +91,7 @@ Sì, è possibile ma richiede un&#39;attenta pianificazione per quanto riguarda:
    + Verifica se è accettabile migrare tutte le risorse come parte di un set di migrazione e quindi portare siti che le utilizzano in fasi
 + Nello stato corrente, il processo di acquisizione dell’autore rende l’istanza di authoring non disponibile per l’authoring dei contenuti anche se il livello di pubblicazione può ancora gestire i contenuti
    + Questo significa che finché l’acquisizione non viene completata nell’ambiente di authoring, le attività di authoring dei contenuti vengono congelate
++ Gli utenti non vengono più migrati, anche se i gruppi
 
 Prima di pianificare le migrazioni, controlla il processo di estrazione e acquisizione integrativa come documentato.
 
@@ -160,7 +145,6 @@ Il processo CTT richiede connettività alle risorse seguenti:
 
 + L’ambiente as a Cloud Service AEM di destinazione: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 + Il servizio di archiviazione BLOB di Azure: `casstorageprod.blob.core.windows.net`
-+ Endpoint I/O mappatura utenti: `usermanagement.adobe.io`
 
 Per ulteriori informazioni su, consulta la documentazione di [connettività di origine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#source-environment-connectivity).
 
@@ -198,7 +182,7 @@ Se il numero di risorse o nodi nell’ambiente di origine si trova all’estremi
 + Continua a lavorare on-premise / Autore di prodotti AMS
 + Da ora in poi, esegui tutti gli altri cicli di verifica della migrazione con `wipe=true`
    + Nota: questa operazione migra l&#39;archivio nodi completo, ma solo i BLOB modificati anziché quelli interi. Il set precedente di BLOB è presente nell’archivio BLOB di Azure dell’istanza AEMaaCS di destinazione.
-   + Utilizza questa verifica delle migrazioni per misurare la durata della migrazione, la mappatura utente, il test e la convalida di tutte le altre funzionalità.
+   + Utilizza questa prova delle migrazioni per misurare la durata della migrazione, il test e la convalida di tutte le altre funzionalità
 + Infine, prima della settimana di pubblicazione, effettua una cancellazione=migrazione effettiva
    + Connettere Dynamic Medie su AEMaaCS
    + Disconnetti configurazione DM da origine locale AEM
