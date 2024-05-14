@@ -5,10 +5,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 doc-type: Catalog
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+source-git-commit: d0e1513b4e6ea536b40f3dbb69a0f512f7521164
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 18%
+source-wordcount: '177'
+ht-degree: 20%
 
 ---
 
@@ -56,16 +56,16 @@ Scopri AEM Assets e come utilizzarlo per raggiungere gli obiettivi aziendali del
    </p>
 </td>
 <td>
-   <a href="./advanced/asset-insights-launch-tutorial.md">
-   <img alt="Approfondimenti AEM Assets" src="./assets/overview/asset-insights.png"/>
+   <a href="../assets-essentials/overview.md">
+   <img alt="AEM Assets Essentials" src="../assets-essentials/assets/overview/getting-started.png"/>
    </a>
    <div>
-      <a href="./advanced/asset-insights-launch-tutorial.md">
-      <strong>Utilizzo di Informazioni su risorse AEM con i tag</strong>
+      <a href="../assets-essentials/overview.md">
+      <strong>Introduzione agli Assets Essentials</strong>
       </a>
    </div>
    <p>
-      <em>Ottenere informazioni sull’utilizzo delle risorse</em>
+      <em>Accelera la creazione di esperienze dal concetto alla progettazione fino alla consegna.</em>
    <p>
 </td>
 <td>
