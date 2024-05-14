@@ -9,7 +9,7 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1603
-source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+source-git-commit: b778fa9334d70b61b0d0fa31b6c62ac03490b11e
 workflow-type: tm+mt
 source-wordcount: '4441'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Questo tutorial illustra il codice necessario per creare un modello di progetto 
 * [Pacchetto tutorial completato](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Archivio completo del codice su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Questo tutorial presuppone una conoscenza di base di [Pratiche di sviluppo dell&#39;AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) e una certa familiarità con [Configurazione del progetto AEM Maven](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html). Tutto il codice menzionato è destinato a essere utilizzato come riferimento e deve essere distribuito solo a un [sviluppo locale istanza AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
+Questo tutorial presuppone una conoscenza di base di [Pratiche di sviluppo dell&#39;AEM](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) e una certa familiarità con [Configurazione del progetto AEM Maven](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=en). Tutto il codice menzionato è destinato a essere utilizzato come riferimento e deve essere distribuito solo a un [sviluppo locale istanza AEM](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
 
 ## Struttura di un modello di progetto
 
@@ -129,7 +129,7 @@ Poiché stiamo principalmente copiando/configurando nodi, utilizzeremo CRXDE Lit
    1. Aggiungi un nuovo **nt:unstructured** nodo sotto authoring-project/gadgets denominato **attività**.
    1. Aggiungi proprietà stringa al nodo attività per **cardWeight** = &quot;100&quot; **jcr:title**=&quot;Tasks&quot;, e **sling:resourceType**=&quot;cq/gui/components/projects/admin/pod/taskpod&quot;.
 
-   Ora il [Riquadro Attività](https://experienceleague.adobe.com/docs/#Tasks) viene visualizzato per impostazione predefinita quando viene creato un nuovo progetto.
+   Ora il [Riquadro Attività](https://experienceleague.adobe.com/en/docs) viene visualizzato per impostazione predefinita quando viene creato un nuovo progetto.
 
    ```shell
    ../projects/templates/authoring-project
@@ -629,13 +629,13 @@ La creazione di una procedura guidata personalizzata può essere molto utile in 
 
 1. In CRXDE-Lite creeremo una sottocartella sotto a `/apps/aem-guides/projects-tasks/projects` cartella denominata &quot;procedure guidate&quot;. Copia la procedura guidata predefinita da: `/libs/cq/core/content/projects/workflowwizards/default_workflow` sotto la cartella delle procedure guidate appena creata e rinominala in **content-approval-start**. Ora il percorso completo dovrebbe essere: `/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start`.
 
-   La procedura guidata predefinita è una procedura guidata a due colonne la cui prima colonna mostra Titolo, Descrizione e Miniatura del modello di flusso di lavoro selezionato. La seconda colonna include campi per Titolo flusso di lavoro, Commento iniziale e Percorso payload. La procedura guidata è un modulo interfaccia utente touch standard e utilizza [Componenti modulo interfaccia utente Granite](https://experienceleague.adobe.com/docs/) per compilare i campi.
+   La procedura guidata predefinita è una procedura guidata a due colonne la cui prima colonna mostra Titolo, Descrizione e Miniatura del modello di flusso di lavoro selezionato. La seconda colonna include campi per Titolo flusso di lavoro, Commento iniziale e Percorso payload. La procedura guidata è un modulo interfaccia utente touch standard e utilizza [Componenti modulo interfaccia utente Granite](https://experienceleague.adobe.com/en/docs) per compilare i campi.
 
    ![procedura guidata flusso di lavoro di approvazione contenuti](./assets/develop-aem-projects/content-approval-start-wizard.png)
 
 1. Verrà aggiunto un campo aggiuntivo alla procedura guidata utilizzato per impostare l’assegnatario della prima attività nel flusso di lavoro (vedi [Creare il modello di flusso di lavoro](#create-workflow-model): passaggio 5).
 
-   Sotto `../content-approval-start/jcr:content/items/column2/items` crea un nuovo nodo di tipo `nt:unstructured` denominato **&quot;assegna&quot;**. Verrà utilizzato il componente Selettore utente Progetti (basato su [Componente Selettore utente Granite](https://experienceleague.adobe.com/docs/)). Questo campo modulo consente di limitare facilmente la selezione di utenti e gruppi solo a quelli appartenenti al progetto corrente.
+   Sotto `../content-approval-start/jcr:content/items/column2/items` crea un nuovo nodo di tipo `nt:unstructured` denominato **&quot;assegna&quot;**. Verrà utilizzato il componente Selettore utente Progetti (basato su [Componente Selettore utente Granite](https://experienceleague.adobe.com/en/docs)). Questo campo modulo consente di limitare facilmente la selezione di utenti e gruppi solo a quelli appartenenti al progetto corrente.
 
    Di seguito è riportata la rappresentazione XML del **assegna** nodo:
 
@@ -655,7 +655,7 @@ La creazione di una procedura guidata personalizzata può essere molto utile in 
 
 1. Verrà inoltre aggiunto un campo di selezione della priorità che determinerà la priorità della prima attività nel flusso di lavoro (vedere [Creare il modello di flusso di lavoro](#create-workflow-model): passaggio 5).
 
-   Sotto `/content-approval-start/jcr:content/items/column2/items` crea un nuovo nodo di tipo `nt:unstructured` denominato **priorità**. Utilizzeremo [Componente Seleziona interfaccia utente Granite](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) per compilare il campo modulo.
+   Sotto `/content-approval-start/jcr:content/items/column2/items` crea un nuovo nodo di tipo `nt:unstructured` denominato **priorità**. Utilizzeremo [Componente Seleziona interfaccia utente Granite](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions) per compilare il campo modulo.
 
    Sotto **priorità** verrà aggiunto un nodo **elementi** nodo di **nt:unstructured**. Sotto **elementi** nodo aggiungi altri 3 nodi per popolare le opzioni di selezione Alta, Media e Bassa. Ogni nodo è di tipo **nt:unstructured** e deve avere **text** e **valore** proprietà. Sia il testo che il valore devono avere lo stesso valore:
 
@@ -691,7 +691,7 @@ La creazione di una procedura guidata personalizzata può essere molto utile in 
    </priority>
    ```
 
-1. Consentiremo all’iniziatore del flusso di lavoro di impostare la scadenza dell’attività iniziale. Utilizzeremo [Selezione data interfaccia utente Granite](https://experienceleague.adobe.com/docs/) per acquisire questo input. Verrà inoltre aggiunto un campo nascosto con [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) per garantire che l’input venga memorizzato come proprietà di tipo Data nel JCR.
+1. Consentiremo all’iniziatore del flusso di lavoro di impostare la scadenza dell’attività iniziale. Utilizzeremo [Selezione data interfaccia utente Granite](https://experienceleague.adobe.com/en/docs) per acquisire questo input. Verrà inoltre aggiunto un campo nascosto con [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) per garantire che l’input venga memorizzato come proprietà di tipo Data nel JCR.
 
    Aggiungi due **nt:unstructured** nodi con le seguenti proprietà rappresentate in XML:
 
