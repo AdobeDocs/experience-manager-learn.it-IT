@@ -10,8 +10,8 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 896d378c-c20e-4343-b592-277f4c71065e
-duration: 289
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 269
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 9%
@@ -36,7 +36,7 @@ In questo video vengono trattate le seguenti funzionalità:
      |---|---|
      | Risorse | Queste console consentono di importare e gestire le risorse digitali quali immagini, video, documenti e file audio. Queste risorse possono quindi essere utilizzate da qualsiasi sito web in esecuzione sulla stessa istanza AEM | Communities | Questa console consente di creare e gestire i siti della community per il coinvolgimento e l&#39;abilitazione | Commerce | Questo consente di gestire prodotti, cataloghi di prodotti e ordini relativi ai siti Commerce |
      | Frammenti di esperienza | Un frammento di esperienza è un’esperienza autonoma che può essere riutilizzata su tutti i canali, supporta le varianti e non richiede di copiare e incollare le esperienze o parti di esse |
-     | Forms | Questa console consente di creare, gestire ed elaborare moduli e documenti |
+     | Moduli | Questa console consente di creare, gestire ed elaborare moduli e documenti |
      | Personalizzazione | Questa console fornisce un framework di strumenti per la creazione e modifica di contenuti mirati e la presentazione di esperienze personalizzate |
      | Progetti | La console Progetti consente di accedere direttamente ai progetti . I progetti sono dashboard virtuali. Possono essere utilizzati per creare un team, quindi fornire al team l’accesso a risorse, flussi di lavoro e attività, consentendo alle persone di lavorare su un obiettivo comune |
      | Sites | Le console Sites ti consentono di creare, visualizzare e gestire siti web in esecuzione sull’istanza AEM. Da queste console puoi creare, modificare, copiare, spostare ed eliminare pagine web, avviare flussi di lavoro e pubblicare pagine |

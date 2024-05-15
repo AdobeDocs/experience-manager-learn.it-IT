@@ -1,5 +1,5 @@
 ---
-title: Protezione dei siti Web con regole per il filtro del traffico (incluse le regole WAF)
+title: Protezione dei siti web con regole di filtro del traffico (comprese le regole WAF)
 description: Scopri le regole del filtro del traffico, inclusa la sua sottocategoria di regole del firewall per applicazioni web (WAF). Come creare, distribuire e testare le regole. Inoltre, analizzare i risultati per proteggere i siti AEM.
 version: Cloud Service
 feature: Security
@@ -11,15 +11,15 @@ last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: e6d67204-2f76-441c-a178-a34798fe266d
-duration: 177
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 165
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 6%
+ht-degree: 13%
 
 ---
 
-# Protezione dei siti Web con regole per il filtro del traffico (incluse le regole WAF)
+# Protezione dei siti web con regole di filtro del traffico (comprese le regole WAF)
 
 Informazioni su **regole filtro traffico**, compresa la sottocategoria **Regole WAF (Web Application Firewall)** nell’AEM as a Cloud Service (AEMCS). Scopri come creare, distribuire e testare le regole. Inoltre, analizzare i risultati per proteggere i siti AEM.
 

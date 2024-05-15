@@ -12,8 +12,8 @@ index: y
 recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: d6da05e4-bd65-4625-b9a4-cad8eae3c9d7
-duration: 270
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 225
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -38,7 +38,7 @@ In questo capitolo viene creata ed eseguita una pipeline front-end in Adobe Clou
 
 Si tratta di un tutorial in più parti in cui si presume che i passaggi descritti in [Aggiorna progetto AEM standard](./update-project.md) sono state completate.
 
-Assicurati di avere [privilegi per creare e distribuire pipeline in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) e [accesso a un ambiente as a Cloud Service AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html).
+Assicurati di avere [privilegi per creare e distribuire pipeline in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) e [accesso a un ambiente as a Cloud Service AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=it).
 
 ## Rinomina pipeline esistente
 

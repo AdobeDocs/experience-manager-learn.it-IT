@@ -10,8 +10,8 @@ doc-type: Article
 exl-id: b613aa65-f64b-4851-a2af-52e28271ce88
 last-substantial-update: 2022-06-24T00:00:00Z
 thumbnail: aem-java-bp.jpg
-duration: 520
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 416
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1726'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Questo ordine è una regola generale, il che significa che esistono eccezioni. M
 
    * È meglio utilizzare in modo coerente l’API di livello inferiore piuttosto che creare un mix.
 
-## API AEM
+## API AEM
 
 * [**JavaDocs API per AEM**](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html)
 

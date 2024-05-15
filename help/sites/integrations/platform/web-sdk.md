@@ -13,8 +13,8 @@ thumbnail: KT-13156.jpeg
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
-duration: 1360
-source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+duration: 1303
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1229'
 ht-degree: 1%
@@ -66,7 +66,7 @@ Il [Panoramica del sistema XDM](https://experienceleague.adobe.com/docs/experien
 
 ## Crea stream di dati - Experience Platform
 
-Un flusso di dati indica alla Platform Edge Network dove inviare i dati raccolti. Può essere inviato ad Experience Platform, Analytics o Adobe Target.
+Un flusso di dati indica all’Edge Network di Platform dove inviare i dati raccolti. Può essere inviato ad Experience Platform, Analytics o Adobe Target.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418895?quality=12&learn=on)
@@ -79,7 +79,7 @@ Scopri come creare una proprietà tag in Experienci Platform per aggiungere la l
 
 + Estensioni tag: [Core](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) e [Adobe Experience Platform Web SDK](https://exchange.adobe.com/apps/ec/106387/aep-web-sdk)
 + Elementi dati: gli elementi dati del tipo di codice personalizzato che estraggono nome-pagina, sezione-sito e nome-host utilizzando l’Adobe del livello dati client del sito WKND. Inoltre, l’elemento dati del tipo di oggetto XDM conforme alla nuova generazione dello schema XDM WKND precedente [Crea schema XDM](#create-xdm-schema---experience-platform) passaggio.
-+ Regola: invia dati a Platform Edge Network ogni volta che viene visitata una pagina web WKND utilizzando Adobe Client Data Layer attivato `cmp:show` evento.
++ Regola: invia dati all’Edge Network di Platform ogni volta che viene visitata una pagina web WKND utilizzando l’Adobe Livello dati client attivato `cmp:show` evento.
 
 Durante la creazione e la pubblicazione della libreria di tag utilizzando **Flusso di pubblicazione**, è possibile utilizzare **Aggiungi tutte le risorse modificate** pulsante. Per selezionare tutte le risorse come Elemento dati, Regola ed Estensioni tag invece di identificare e selezionare una singola risorsa. Inoltre, durante la fase di sviluppo, puoi pubblicare la libreria solo in _Sviluppo_ quindi verificarlo e promuoverlo nell&#39;ambiente _Fase_ o _Produzione_ ambiente.
 

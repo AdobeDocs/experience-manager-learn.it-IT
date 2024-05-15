@@ -10,8 +10,8 @@ jira: KT-10587
 thumbnail: KT-10587.jpg
 mini-toc-levels: 2
 exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
-duration: 220
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 136
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 1%
@@ -53,7 +53,7 @@ Sta a te definire il modo in cui il traffico SPA e AEM viene instradato sul domi
 
 Di seguito sono riportate le configurazioni di distribuzione necessarie per le distribuzioni di produzione dell’SPA, se ospitate sullo stesso dominio dell’AEM.
 
-| L’SPA si connette a | Autore AEM | AEM Publish | Anteprima AEM |
+| L’SPA si connette a | Autore AEM | Pubblicazione AEM | Anteprima AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtri del Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Condivisione delle risorse tra le origini (CORS) | ✘ | ✘ | ✘ |
@@ -70,7 +70,7 @@ Poiché l’accesso all’AEM e all’SPA avviene da domini diversi, i browser w
 
 Di seguito sono riportate le configurazioni di distribuzione necessarie per le distribuzioni di produzione dell’SPA, se ospitate su un dominio diverso da quello dell’AEM.
 
-| L’SPA si connette a | Autore AEM | AEM Publish | Anteprima AEM |
+| L’SPA si connette a | Autore AEM | Pubblicazione AEM | Anteprima AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtri del Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [Condivisione delle risorse tra le origini (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |

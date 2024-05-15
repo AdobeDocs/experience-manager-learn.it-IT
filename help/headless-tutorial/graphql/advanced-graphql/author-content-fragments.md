@@ -7,8 +7,8 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 998d3678-7aef-4872-bd62-0e6ea3ff7999
-duration: 825
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 609
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2931'
 ht-degree: 1%
@@ -394,7 +394,7 @@ Infine, aggiungiamo i nuovi frammenti di contenuto creati in un’avventura.
 
 ## Congratulazioni.
 
-Congratulazioni. Ora hai creato Frammenti di contenuto basati sui modelli di Frammenti di contenuto avanzati creati nel capitolo precedente. Hai anche creato un criterio di cartella per limitare quali modelli per frammenti di contenuto possono essere selezionati all’interno di una cartella.
+Congratulazioni Ora hai creato Frammenti di contenuto basati sui modelli di Frammenti di contenuto avanzati creati nel capitolo precedente. Hai anche creato un criterio di cartella per limitare quali modelli per frammenti di contenuto possono essere selezionati all’interno di una cartella.
 
 ## Passaggi successivi
 

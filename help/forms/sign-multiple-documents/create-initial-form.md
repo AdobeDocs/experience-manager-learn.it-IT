@@ -9,11 +9,11 @@ level: Intermediate
 jira: KT-6892
 thumbnail: 6892.jpg
 exl-id: d7c55dc8-d886-4629-bb50-d927308d12e3
-duration: 47
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 35
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -23,10 +23,10 @@ Il modulo iniziale (Modulo di rifinanziamento) viene utilizzato per la firma di 
 
 | Tipo di campo | Nome | Scopo | Nascosto | Valore predefinito |
 | ------------------------|---------------------------------------|--------------------|--------|----------------- |
-| CampoTesto | firmato | Per indicare lo stato di firma | Y | N |
-| CampoTesto | GUID | Per identificare in modo univoco il modulo | Y | 3889 |
-| CampoTesto | customerName | Per acquisire il nome del cliente | N |
-| CampoTesto | customerEmail | E-mail del cliente per inviare la notifica | N |
+| TextField | firmato | Per indicare lo stato di firma | Y | N |
+| TextField | GUID | Per identificare in modo univoco il modulo | Y | 3889 |
+| TextField | customerName | Per acquisire il nome del cliente | N |
+| TextField | customerEmail | E-mail del cliente per inviare la notifica | N |
 | Casella di controllo | formsToSign | Gli elementi identificano i moduli nel pacchetto | N |
 
 Il modulo iniziale deve essere configurato per attivare un flusso di lavoro AEM denominato **signmultipleforms**

@@ -14,11 +14,11 @@ thumbnail: 53409343.jpg
 last-substantial-update: 2022-09-23T00:00:00Z
 doc-type: Tutorial
 exl-id: b795e7e8-f611-4fc3-9846-1d3f1a28ccbc
-duration: 227
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 206
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -51,7 +51,7 @@ Un correlato [tutorial con più passaggi](https://experienceleague.adobe.com/doc
 
 Il passaggio di distribuzione di questa esercitazione si svolge in un Adobe di Cloud Manager, assicurati di disporre di __Responsabile dell’implementazione__ ruolo, consulta Cloud Manager [Definizioni dei ruoli](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions).
 
-Assicurati di utilizzare il [Programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) e [Ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) al completamento di questa esercitazione.
+Assicurati di utilizzare il [Programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) e [Ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=it) al completamento di questa esercitazione.
 
 ## Passaggi successivi {#next-steps}
 

@@ -7,11 +7,11 @@ topic: Security, Development
 role: Admin, Architect, Developer
 level: Beginner
 doc-type: Article
-duration: 0
+duration: 75
 last-substantial-update: 2024-03-30T00:00:00Z
 jira: KT-15219
 exl-id: 1d7dd829-e235-4884-a13f-b6ea8f6b4b0b
-source-git-commit: f84a6cc54838e5bf87cfa173ef17df4ec745ebcb
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 1%
@@ -49,7 +49,7 @@ La tabella seguente descrive come prevenire e attenuare gli attacchi DoS e DDoS:
         <tr>
             <td>ModSecurity</td>
             <td>ModSecurity (o "mod_security", modulo Apache) è una soluzione open-source e multipiattaforma che fornisce protezione da una serie di attacchi contro le applicazioni web.<br/> In AEM as a Cloud Service, questo è applicabile solo al servizio di pubblicazione AEM poiché non esiste un server web Apache e un Dispatcher AEM davanti al servizio AEM Author.</td>
-            <td colspan="3"><a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection" target="_blank">Abilita ModSecurity </a></td>
+            <td colspan="3"><a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection" target="_blank">Abilita ModSecurity </a></td>
         </tr>
         <tr>
             <td>Regole filtro traffico</td>

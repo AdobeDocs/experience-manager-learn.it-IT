@@ -10,8 +10,8 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: b4985c30-3e5e-470e-b68d-0f6c5cbf4690
-duration: 671
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 534
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '2476'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Anche se viene ricreato un nuovo ambiente con lo stesso nome, Cloud Manager non 
 + __Causa:__ Il ramo Git per il quale la pipeline è configurata è stato eliminato.
 + __Risoluzione:__ Ricrea il ramo Git mancante utilizzando lo stesso nome o riconfigura la pipeline per la generazione da un ramo esistente diverso.
 
-## Test di compilazione e di unità
+## Build e unit test
 
 ![Test di compilazione e di unità](./assets/build-and-deployment/build-and-unit-testing.png)
 
@@ -76,7 +76,7 @@ Per risolvere i problemi di scansione del codice, scarica il rapporto in formato
 
 Per ulteriori dettagli, consulta Regole specifiche per l’AEM, consulta la documentazione di Cloud Manager. [regole di scansione del codice specifiche per AEM personalizzate](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html).
 
-## Genera immagini
+## Immagini di build
 
 ![Genera immagini](./assets/build-and-deployment/build-images.png)
 

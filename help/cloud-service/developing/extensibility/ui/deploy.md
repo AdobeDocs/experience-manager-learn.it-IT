@@ -10,8 +10,8 @@ recommendations: noDisplay, noCatalog
 jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 2e37165d-c003-4206-8133-54e37ca35b8e
-duration: 214
-source-git-commit: 678bda0ea6f6c727170c596e9d3d5f0687ec830f
+duration: 166
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Distribuisci l’estensione nell’area di lavoro di produzione. Le estensioni d
 
 ![Approvazione dell’estensione](./assets/deploy/adobe-exchange.png){align="center"}
 
-1. Accedi a [Scambio Adobe](https://exchange.adobe.com/)
+1. Accedi a [Adobe Exchange](https://exchange.adobe.com/)
 1. Accedi a __Gestisci__ > __App in attesa di revisione__
 1. __Revisione__ l’app App Builder per l’estensione
 1. Se le modifiche dell’estensione sono accettabili __Accetta__ la revisione. Questo inietta immediatamente l’estensione su tutti i servizi di authoring as a Cloud Service dell’AEM all’interno dell’organizzazione Adobe.
@@ -91,7 +91,7 @@ L&#39;aggiornamento e l&#39;estensione dell&#39;app App Builder seguono lo stess
 
 Per distribuire una nuova versione di un&#39;estensione, è necessario prima revocarla o rimuoverla. L’estensione è revocata ma non è disponibile nelle console AEM.
 
-1. Accedi a [Scambio Adobe](https://exchange.adobe.com/)
+1. Accedi a [Adobe Exchange](https://exchange.adobe.com/)
 1. Accedi a __Gestisci__ > __App di App Builder__
 1. __Revoca__ l’estensione da aggiornare
 
@@ -130,7 +130,7 @@ Distribuisci l’estensione nell’area di lavoro di produzione. Le estensioni d
 
 ![Approvazione dell’estensione](./assets/deploy/adobe-exchange.png){align="center"}
 
-1. Accedi a [Scambio Adobe](https://exchange.adobe.com/)
+1. Accedi a [Adobe Exchange](https://exchange.adobe.com/)
 1. Accedi a __Gestisci__ > __App in attesa di revisione__
 1. __Revisione__ l’app App Builder per l’estensione
 1. Se le modifiche dell’estensione sono accettabili __Accetta__ la revisione. Questo inietta immediatamente l’estensione su tutti i servizi di authoring as a Cloud Service dell’AEM all’interno dell’organizzazione Adobe.
@@ -141,8 +141,8 @@ Una volta approvata la richiesta di estensione, questa diventa immediatamente at
 
 ![Rimuovere un’estensione](./assets/deploy/revoke.png)
 
-Per rimuovere un&#39;estensione, revocarla o rimuoverla da Adobe Exchange. Quando l’estensione viene revocata, viene rimossa da tutti i servizi di authoring as a Cloud Service dell’AEM.
+Per rimuovere un&#39;estensione, revocala (o rimuoverla) dall&#39;Adobe Exchange. Quando l’estensione viene revocata, viene rimossa da tutti i servizi di authoring as a Cloud Service dell’AEM.
 
-1. Accedi a [Scambio Adobe](https://exchange.adobe.com/)
+1. Accedi a [Adobe Exchange](https://exchange.adobe.com/)
 1. Accedi a __Gestisci__ > __App di App Builder__
 1. __Revoca__ l’estensione da rimuovere

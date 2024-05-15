@@ -11,8 +11,8 @@ thumbnail: KT-6265.jpg
 last-substantial-update: 2022-09-20T00:00:00Z
 doc-type: Tutorial
 exl-id: 80e4cf2e-dff6-41e8-b09b-187cf2e18e00
-duration: 547
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 452
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1813'
 ht-degree: 1%
@@ -424,7 +424,7 @@ Una classe di utilità, `DataLayerBuilder`, esiste per eseguire la maggior parte
 
    >[!NOTE]
    >
-   > Se crei un livello dati avanzato per gli oggetti riutilizzati in un’implementazione, si consiglia di estrarre gli elementi del livello dati nei propri oggetti Java™ specifici del livello dati. Ad esempio, i componenti core Commerce hanno aggiunto interfacce per `ProductData` e `CategoryData` poiché possono essere utilizzati su molti componenti all’interno di un’implementazione Commerce. Revisione [il codice nell’archivio aem-cif-core-components](https://github.com/adobe/aem-core-cif-components/tree/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/datalayer) per ulteriori dettagli.
+   > Se crei un livello dati avanzato per gli oggetti riutilizzati in un’implementazione, si consiglia di estrarre gli elementi del livello dati nei propri oggetti Java™ specifici del livello dati. Ad esempio, i Componenti core di Commerce dispongono di interfacce per `ProductData` e `CategoryData` poiché possono essere utilizzate su molti componenti all’interno di un’implementazione Commerce. Revisione [il codice nell’archivio aem-cif-core-components](https://github.com/adobe/aem-core-cif-components/tree/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/datalayer) per ulteriori dettagli.
 
 ## Congratulazioni. {#congratulations}
 

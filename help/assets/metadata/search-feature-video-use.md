@@ -3,8 +3,8 @@ title: Utilizzo della ricerca in AEM Assets
 description: In questi video vengono esaminati alcuni miglioramenti introdotti nella ricerca delle risorse in AEM. Gli autori possono aumentare il numero di determinate risorse nei risultati della ricerca per parola chiave aggiornando le rispettive proprietà dei metadati. Vengono inoltre esaminate alcune configurazioni avanzate per i predicati Assets OmniSearch.
 version: 6.4, 6.5
 doc-type: Feature Video
-duration: 379
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 373
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 0%

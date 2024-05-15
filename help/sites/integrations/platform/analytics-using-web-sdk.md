@@ -13,8 +13,8 @@ thumbnail: KT-13328.jpeg
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 0cc3d3bc-e4ea-4ab2-8878-adbcf0c914f5
-duration: 2330
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+duration: 2252
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
@@ -97,7 +97,7 @@ Per ulteriori informazioni sulla configurazione e i concetti di Analytics, si co
 
 ## Aggiornare lo stream di dati - Aggiungere il servizio Analytics
 
-Un flusso di dati indica alla Platform Edge Network dove inviare i dati raccolti. In [esercitazione precedente](./web-sdk.md), viene configurato un Datastream per inviare i dati all’Experience Platform. Questo flusso di dati viene aggiornato per inviare i dati alla suite di rapporti di Analytics configurata in [sopra](#setup-analytics---report-suite-analysis-workspace) passaggio.
+Un flusso di dati indica all’Edge Network di Platform dove inviare i dati raccolti. In [esercitazione precedente](./web-sdk.md), viene configurato un Datastream per inviare i dati all’Experience Platform. Questo flusso di dati viene aggiornato per inviare i dati alla suite di rapporti di Analytics configurata in [sopra](#setup-analytics---report-suite-analysis-workspace) passaggio.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419876?quality=12&learn=on)
 

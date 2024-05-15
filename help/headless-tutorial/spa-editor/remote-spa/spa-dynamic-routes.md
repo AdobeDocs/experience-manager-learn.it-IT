@@ -11,8 +11,8 @@ last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: 4accc1ca-6f4b-449e-bf2e-06f19d2fe17d
-duration: 260
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 202
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 0%
@@ -171,7 +171,7 @@ Quando si passa a un percorso di dettagli dell’avventura privo di una pagina A
 
 ## Congratulazioni.
 
-Congratulazioni. Hai aggiunto la possibilità di authoring per le route dinamiche nell&#39;SPA.
+Congratulazioni Hai aggiunto la possibilità di authoring per le route dinamiche nell&#39;SPA.
 
 + È stato aggiunto il componente ResponsiveGrid del componente React Editable dell’AEM a una route dinamica
 + Sono state create pagine AEM per supportare la creazione di due percorsi specifici nell&#39;SPA (Bali Surf Camp e Beervana a Portland)

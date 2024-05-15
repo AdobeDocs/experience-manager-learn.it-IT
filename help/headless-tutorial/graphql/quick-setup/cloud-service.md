@@ -9,8 +9,8 @@ level: Beginner
 jira: KT-9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
-duration: 850
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 781
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1078'
 ht-degree: 0%
@@ -189,7 +189,7 @@ _Schermata dei passaggi_
 
 ## Congratulazioni.
 
-Congratulazioni. Hai utilizzato correttamente AEM Headless per alimentare un’app React.
+Congratulazioni Hai utilizzato correttamente AEM Headless per alimentare un’app React.
 
 Per comprendere in dettaglio come l’app React utilizza contenuti provenienti da AEM as a Cloud Service, vedi [tutorial AEM headless](../multi-step/overview.md). Il tutorial esplora come vengono creati i frammenti di contenuto in AEM e come questa app React utilizza i contenuti come JSON.
 

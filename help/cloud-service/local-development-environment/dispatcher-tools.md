@@ -10,8 +10,8 @@ jira: KT-4679
 thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-duration: 730
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 624
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1621'
 ht-degree: 4%
@@ -105,7 +105,7 @@ Tutti i comandi emessi di seguito presuppongono che la directory di lavoro corre
 ## Comprendere i file di configurazione di Dispatcher
 
 >[!TIP]
-Experience Manager di progetti creati da [Progetto AEM Archetipo Maven](https://github.com/adobe/aem-project-archetype) sono precompilati in questo set di file di configurazione di Dispatcher, pertanto non è necessario copiarli dalla cartella Src degli strumenti di Dispatcher.
+> Experience Manager di progetti creati da [Progetto AEM Archetipo Maven](https://github.com/adobe/aem-project-archetype) sono precompilati in questo set di file di configurazione di Dispatcher, pertanto non è necessario copiarli dalla cartella Src degli strumenti di Dispatcher.
 
 Gli strumenti di Dispatcher forniscono un set di file di configurazione del server web Apache HTTP e del Dispatcher che definiscono il comportamento per tutti gli ambienti, incluso lo sviluppo locale.
 
@@ -353,7 +353,7 @@ Phase 3 finished
 
 Il `host.docker.internal` è un nome host fornito al Docker contain che viene risolto nell’host. Per docs.docker.com ([macOS](https://docs.docker.com/desktop/networking/), [Windows](https://docs.docker.com/desktop/networking/)):
 
->A partire da Docker 18.03 si consiglia di connettersi al nome DNS speciale host.docker.internal, che viene risolto nell&#39;indirizzo IP interno utilizzato dall&#39;host
+> A partire da Docker 18.03 si consiglia di connettersi al nome DNS speciale host.docker.internal, che viene risolto nell&#39;indirizzo IP interno utilizzato dall&#39;host
 
 Quando `bin/docker_run src host.docker.internal:4503 8080` risultati nel messaggio __In attesa che host.docker.internal sia disponibile__, quindi:
 

@@ -10,8 +10,8 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
-duration: 500
-source-git-commit: 0400242f6a99bc5209a8b483469d5fd88eac077e
+duration: 432
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1405'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Gli Asset compute personalizzati possono produrre dati XMP (XML) che vengono rim
 I casi d’uso comuni includono:
 
 + Integrazioni con sistemi di terze parti, ad esempio un sistema PIM (Product Information Management system), in cui è necessario recuperare e memorizzare nella risorsa metadati aggiuntivi
-+ Integrazioni con i servizi Adobe, ad esempio IA per l’analisi di contenuti e commercio, per migliorare i metadati delle risorse con attributi di apprendimento automatico aggiuntivi
++ Integrazioni con i servizi Adobe, come IA per contenuti e Commerce, per migliorare i metadati delle risorse con attributi di apprendimento automatico aggiuntivi
 + Derivazione dei metadati della risorsa dal suo binario e memorizzazione come metadati della risorsa in AEM as a Cloud Service
 
 ## Come procedere

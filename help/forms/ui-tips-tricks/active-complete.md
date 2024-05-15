@@ -10,8 +10,8 @@ level: Beginner
 jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
-duration: 115
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 68
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 14%
@@ -50,7 +50,7 @@ Assicurati di essere nello stato Attivo e di applicare lo stile alle seguenti pr
 | Testo | Spessore carattere | Grassetto |
 | Testo | Colore | #FFF |
 | Testo | Altezza riga | 3 |
-| Testo | Allineamento testo | A sinistra |
+| Testo | Allineamento testo | Sinistra |
 | Informazioni di base | Colore | #056dae |
 
 Personalizzare lo stile dell&#39;immagine di sfondo come mostrato nella schermata seguente
@@ -71,7 +71,7 @@ Accertati di essere nello stato visitato e assegna uno stile alle seguenti propr
 | Testo | Spessore carattere | Grassetto |
 | Testo | Colore | #FFF |
 | Testo | Altezza riga | 3 |
-| Testo | Allineamento testo | A sinistra |
+| Testo | Allineamento testo | Sinistra |
 | Informazioni di base | Colore | #056dae |
 
 Personalizzare lo stile dell&#39;immagine di sfondo come mostrato nella schermata seguente

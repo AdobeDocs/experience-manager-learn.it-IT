@@ -9,11 +9,11 @@ topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 8092fbb4-234f-472e-a405-8a45734b7c65
-duration: 73
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 60
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '314'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -33,7 +33,7 @@ Le pipeline di Adobe Cloud Manager distribuiscono l’applicazione AEM tramite u
 
 [Debug della build e della distribuzione as a Cloud Service dell’AEM](./build-and-deployment.md)
 
-## Console per sviluppatori
+## Console di sviluppo
 
 La Developer Console fornisce una serie di informazioni e introspezioni in ambienti AEM as a Cloud Service che sono utili per comprendere come l’applicazione viene riconosciuta da e funziona all’interno di AEM as a Cloud Service.
 

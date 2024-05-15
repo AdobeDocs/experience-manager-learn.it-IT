@@ -1,5 +1,5 @@
 ---
-title: Blocco degli attacchi DoS e DDoS tramite le regole del filtro del traffico
+title: Bloccare gli attacchi DoS e DDoS utilizzando le regole di filtro del traffico
 description: Scopri come bloccare gli attacchi DoS e DDoS utilizzando le regole del filtro del traffico sulla rete CDN fornita dall’as a Cloud Service AEM.
 version: Cloud Service
 feature: Security, Operations
@@ -7,19 +7,19 @@ topic: Security, Administration, Performance
 role: Admin, Architect
 level: Intermediate
 doc-type: Tutorial
-duration: 0
+duration: 436
 last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 2ab958f672b0d5b029bcdf7937b2f72d43ba651f
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1918'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Blocco degli attacchi DoS e DDoS tramite le regole del filtro del traffico
+# Bloccare gli attacchi DoS e DDoS utilizzando le regole di filtro del traffico
 
 Scopri come bloccare gli attacchi Denial of Service (DoS) e Distributed Denial of Service (DDoS) utilizzando **filtro traffico limite di velocità** regole e altre strategie nella rete CDN gestita dall’AEM as a Cloud Service (AEMCS). Questi attacchi causano picchi di traffico sulla rete CDN e potenzialmente sul servizio di pubblicazione AEM (ovvero origine) e possono influire sui tempi di risposta e sulla disponibilità del sito.
 

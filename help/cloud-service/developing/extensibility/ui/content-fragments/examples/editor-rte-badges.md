@@ -11,8 +11,8 @@ thumbnail: KT-13466.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 83acbddb-9168-4d8b-84b5-97577d8a1ead
-duration: 555
-source-git-commit: 6f1245e804f0311c3f833ea8b2324cbc95272f52
+duration: 538
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 0%
@@ -39,11 +39,11 @@ Inoltre, il **Numero di telefono** ha uno stile diverso (blu), che è un caso d�
 
 Per semplificare, in questo esempio viene utilizzato [Spettro di reazione Adobe](https://react-spectrum.adobe.com/react-spectrum/index.html) per sviluppare l’interfaccia utente del widget o della finestra di dialogo e i numeri di telefono del servizio clienti WKND hardcoded. Per controllare la mancata modifica e il diverso aspetto di stile del contenuto, `#` viene utilizzato nel `prefix` e `suffix` attributo della definizione dei badge.
 
-## Punti di estensione
+## Punti dell’estensione
 
 Questo esempio si estende al punto di estensione `rte` per aggiungere un badge all’editor Rich Text nell’Editor frammenti di contenuto.
 
-| Interfaccia utente AEM estesa | Punti di estensione |
+| Interfaccia utente AEM estesa | Punti dell’estensione |
 | ------------------------ | --------------------- | 
 | [Editor frammento di contenuto](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Badge editor Rich Text](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) e [Widget editor Rich Text](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
 

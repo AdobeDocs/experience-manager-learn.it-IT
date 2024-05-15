@@ -11,8 +11,8 @@ last-substantial-update: 2023-01-05T00:00:00Z
 jira: KT-11664
 thumbnail: kt-11664.jpeg
 exl-id: 8b48c28f-ba7f-4255-be96-a7ce18ca208b
-duration: 70
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 52
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Apri `ui.content/src/main/content/jcr_root/conf/<app name>/settings/wcm/template
 
 Creare nodi di emulatori in `/ui.apps/src/main/content/jcr_root/apps/<app name>/emulators`
 
-Ad esempio: `/ui.apps/src/main/content/jcr_root/apps/wknd-examples/emulators/phone-landscape`. Copiare un nodo emulatore di riferimento da `/libs/wcm/mobile/components/emulators` in CRXDE Liti per aggiornare la copia e velocizzare la definizione del nodo.
+Ad esempio, `/ui.apps/src/main/content/jcr_root/apps/wknd-examples/emulators/phone-landscape`. Copiare un nodo emulatore di riferimento da `/libs/wcm/mobile/components/emulators` in CRXDE Liti per aggiornare la copia e velocizzare la definizione del nodo.
 
 ![Creare nuovi emulatori](./assets/responsive-breakpoints/create-new-emulators.jpg)
 

@@ -8,7 +8,9 @@ role: Developer
 level: Experienced
 jira: KT-15025
 last-substantial-update: 2024-02-26T00:00:00Z
-source-git-commit: acfd982ce471c8510cb59ed4d353f1d47dcfb5dc
+exl-id: cae160f2-21a5-409c-942d-53061451b249
+duration: 97
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -124,4 +126,3 @@ Per eseguire il test sul server locale, segui questi passaggi semplificati:
 1. Completa alcuni campi modulo.
 1. Invia il modulo per avviare il flusso di lavoro AEM.
 1. Trova il PDF renderizzato nella cartella del payload del flusso di lavoro.
-
