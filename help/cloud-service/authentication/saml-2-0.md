@@ -8,12 +8,12 @@ role: Architect, Developer
 level: Intermediate
 jira: KT-9351
 thumbnail: 343040.jpeg
-last-substantial-update: 2022-10-17T00:00:00Z
+last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-duration: 2177
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+duration: 2200
+source-git-commit: 11c9173cbb2da75bfccba278e33fc4ca567bbda1
 workflow-type: tm+mt
-source-wordcount: '3060'
+source-wordcount: '3357'
 ht-degree: 1%
 
 ---
@@ -456,3 +456,66 @@ $ git push adobe saml-auth:develop
 ```
 
 Distribuire il ramo Git di Cloud Manager di destinazione (in questo esempio, `develop`), utilizzando una pipeline di distribuzione full stack.
+
+## Richiamare l’autenticazione SAML
+
+Il flusso di autenticazione SAML può essere richiamato da una pagina web del sito AEM, creando un collegamento creato appositamente o un pulsante. I parametri descritti di seguito possono essere impostati a livello di programmazione in base alle necessità, ad esempio un pulsante di accesso può impostare `saml_request_path`: è il punto in cui l’utente viene indirizzato, in seguito a una corretta autenticazione SAML, a diverse pagine AEM, in base al contesto del pulsante.
+
+### richiesta GET
+
+L’autenticazione SAML può essere richiamata creando una richiesta HTTP GET nel formato:
+
+`HTTP GET /system/sling/login`
+
+e fornendo parametri di query:
+
+| Nome parametro query | Valore parametro query |
+|----------------------|-----------------------|
+| `resource` | Qualsiasi percorso JCR, o percorso secondario, su cui il gestore di autenticazione SAML è in ascolto, come definito nella [Adobe di configurazione OSGi del gestore autenticazione SAML 2.0 Granite](#configure-saml-2-0-authentication-handler) `path` proprietà. |
+| `saml_request_path` | Percorso URL a cui deve essere indirizzato l’utente dopo l’autenticazione SAML riuscita. |
+
+Ad esempio, questo collegamento HTML attiverà il flusso di accesso SAML e, in caso di esito positivo, condurrà l’utente a `/content/wknd/us/en/protected/page.html`. Questi parametri di query possono essere impostati a livello di programmazione in base alle esigenze.
+
+```html
+<a href="/system/sling/login?resource=/content/wknd&saml_request_path=/content/wknd/us/en/protected/page.html">
+    Log in using SAML
+</a>
+```
+
+## richiesta POST
+
+L’autenticazione SAML può essere richiamata creando una richiesta HTTP POST nel formato:
+
+`HTTP POST /system/sling/login`
+
+e fornendo i dati del modulo:
+
+| Nome dati modulo | Valore dati modulo |
+|----------------------|-----------------------|
+| `resource` | Qualsiasi percorso JCR, o percorso secondario, su cui il gestore di autenticazione SAML è in ascolto, come definito nella [Adobe di configurazione OSGi del gestore autenticazione SAML 2.0 Granite](#configure-saml-2-0-authentication-handler) `path` proprietà. |
+| `saml_request_path` | Percorso URL a cui deve essere indirizzato l’utente dopo l’autenticazione SAML riuscita. |
+
+
+Questo pulsante HTML, ad esempio, utilizza un POST HTTP per attivare il flusso di accesso SAML e, in caso di esito positivo, porta l’utente a `/content/wknd/us/en/protected/page.html`. Questi parametri dei dati del modulo possono essere impostati a livello di programmazione in base alle esigenze.
+
+```html
+<form action="/system/sling/login" method="POST">
+    <input type="hidden" name="resource" value="/content/wknd">
+    <input type="hidden" name="saml_request_path" value="/content/wknd/us/en/protected/page.html">
+    <input type="submit" value="Log in using SAML">
+</form>
+```
+
+### Configurazione del Dispatcher
+
+Entrambi i metodi HTTP GET e POST richiedono l&#39;accesso client all&#39;AEM `/system/sling/login` e quindi devono essere consentiti tramite Dispatcher per l’AEM.
+
+Consenti i pattern URL necessari in base all’utilizzo di GET o POST
+
+```
+# Allow GET-based SAML authentication invocation
+/0191 { /type "allow" /method "GET" /url "/system/sling/login" /query="*" }
+
+# Allow POST-based SAML authentication invocation
+/0192 { /type "allow" /method "POST" /url "/system/sling/login" }
+```
