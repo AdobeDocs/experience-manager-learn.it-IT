@@ -12,9 +12,9 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: b67bf642-3341-48d0-8ea9-5f262febf414
 duration: 292
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '575'
 ht-degree: 3%
 
 ---
@@ -119,9 +119,11 @@ Per testare le regole, sono disponibili vari strumenti di terze parti e la tua o
 
 ### Analizzare i risultati utilizzando gli strumenti del dashboard
 
-Dopo aver creato, distribuito e testato le regole, puoi analizzare i risultati utilizzando **Elasticsearch, Logstash e Kibana (ELK)** strumenti del dashboard. È in grado di analizzare i registri CDN di AEMCS e visualizzare i risultati sotto forma di vari grafici.
+Dopo aver creato, distribuito e testato le regole, puoi analizzare i risultati utilizzando **CDN** registri e **AEMCS-CDN-Log-Analysis-Tooling**. Gli strumenti forniscono un set di dashboard per visualizzare i risultati per lo stack Splunk e ELK (Elasticsearch, Logstash e Kibana).
 
-Gli strumenti del dashboard possono essere clonati direttamente dal [Archivio GitHub AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) e seguire i passaggi per installare e caricare **Regole filtro traffico (incluso WAF)** dashboard.
+Gli utensili possono essere clonati da [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) Archivio GitHub. Quindi, segui le istruzioni per installare e caricare **Dashboard traffico CDN** e **Dashboard WAF** dashboard per lo strumento di osservabilità preferito.
+
+In questa esercitazione utilizzeremo lo stack ELK. Segui le [Contenitore ELK Docker per analisi registro CDN AEMCS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) istruzioni per impostare la pila ELK.
 
 - Dopo aver caricato il dashboard di esempio, la pagina dello strumento del dashboard elastico dovrebbe avere un aspetto simile a quella riportata di seguito:
 

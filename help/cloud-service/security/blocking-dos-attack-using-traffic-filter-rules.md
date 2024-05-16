@@ -12,9 +12,9 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1968'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Comprendiamo le protezioni DDoS predefinite per il tuo sito web AEM:
 - **Blocco:** La rete CDN di Adobe blocca il traffico verso l’origine se supera un tasso definito dall’Adobe da un particolare indirizzo IP, per PoP (punto di presenza) della rete CDN.
 - **Avvisi:** Il Centro azioni invia una notifica di avviso di picco di traffico all’origine quando il traffico supera una determinata velocità. Questo avviso viene attivato quando il traffico verso una determinata PoP CDN supera un valore _definito dall&#39;Adobe_ frequenza di richieste per indirizzo IP. Consulta [Avvisi sulle regole del filtro traffico](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) per ulteriori dettagli.
 
-Queste protezioni integrate devono essere considerate una base per la capacità di un&#39;organizzazione di ridurre al minimo l&#39;impatto sulle prestazioni di un attacco DDoS. Poiché ogni sito web ha caratteristiche di prestazioni diverse e potrebbe notare un deterioramento delle prestazioni prima che il limite di velocità definito dall’Adobe venga raggiunto, si consiglia di estendere le protezioni predefinite tramite _configurazione del cliente_.
+Queste protezioni integrate devono essere considerate una base per la capacità di un&#39;organizzazione di ridurre al minimo l&#39;impatto sulle prestazioni di un attacco DDoS. Poiché ogni sito web ha caratteristiche di prestazioni diverse e può notare un deterioramento delle prestazioni prima che venga raggiunto il limite di velocità definito dall’Adobe, si consiglia di estendere le protezioni predefinite tramite _configurazione del cliente_.
 
 Vediamo alcune misure aggiuntive consigliate che i clienti possono adottare per proteggere i propri siti web dagli attacchi DDoS:
 
@@ -76,14 +76,20 @@ L’Adobe invia un avviso di picco di traffico all’origine come [Notifica Cent
 
 ## Analisi dei pattern di traffico {#analyze-traffic}
 
-Se il sito è già attivo, puoi analizzare i pattern di traffico utilizzando i registri CDN e uno dei seguenti metodi:
+Se il sito è già attivo, puoi analizzare i pattern di traffico utilizzando i registri CDN e i dashboard forniti con gli Adobi.
+
+- **Dashboard traffico CDN**: fornisce informazioni sul traffico tramite CDN e il tasso di richieste Origin, i tassi di errore 4xx e 5xx e le richieste non memorizzate in cache. Fornisce inoltre il numero massimo di richieste CND e Origin al secondo per indirizzo IP del client e ulteriori informazioni per ottimizzare le configurazioni CDN.
+
+- **Percentuale riscontri cache CDN**: fornisce informazioni sul rapporto di hit della cache totale e sul conteggio totale delle richieste per stato HIT, PASS e MISS. Fornisce anche gli URL principali HIT, PASS e MISS.
+
+Configurare gli strumenti del dashboard utilizzando _una delle opzioni seguenti_:
 
 ### ELK - configurazione degli strumenti del dashboard
 
 Il **Elasticsearch, Logstash e Kibana (ELK)** gli strumenti del dashboard forniti da Adobe possono essere utilizzati per analizzare i registri CDN. Questo strumento include una dashboard che visualizza i pattern di traffico e semplifica la determinazione delle soglie ottimali per le regole del filtro del traffico del limite di frequenza.
 
-- Clona il [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Archivio GitHub.
-- Impostare gli utensili seguendo la [Come impostare il contenitore ELK Docker](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool?tab=readme-ov-file#how-to-set-up-the-elk-docker-container) passaggi.
+- Clona il [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) Archivio GitHub.
+- Impostare gli utensili seguendo la [Come impostare il contenitore ELK Docker](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container) passaggi.
 - Come parte della configurazione, importa `traffic-filter-rules-analysis-dashboard.ndjson` per visualizzare i dati. Il _Traffico CDN_ Il dashboard include visualizzazioni che mostrano il numero massimo di richieste per IP/POP al server Edge e all’origine della rete CDN.
 - Dalla sezione [Cloud Manager](https://my.cloudmanager.adobe.com/)di _Ambienti_ , scarica i registri CDN del servizio di pubblicazione AEMCS.
 
@@ -95,9 +101,9 @@ Il **Elasticsearch, Logstash e Kibana (ELK)** gli strumenti del dashboard fornit
 
 ### Splunk: configurazione degli strumenti del dashboard
 
-Clienti che hanno [Inoltro registro Splunk abilitato](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) può creare un nuovo dashboard per analizzare i pattern di traffico. Il seguente file XML consente di creare un dashboard in Splunk:
+Clienti che hanno [Inoltro registro Splunk abilitato](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) può creare nuovi dashboard per analizzare i pattern di traffico.
 
-- [CDN - Dashboard traffico](./assets/traffic-dashboard.xml): questo dashboard fornisce informazioni approfondite sui pattern di traffico nei server Edge e Origine della rete CDN. Include visualizzazioni che mostrano il numero massimo di richieste per IP/POP al server Edge e all’origine della rete CDN.
+Per creare dashboard in Splunk, segui [Dashboard Splunk per l’analisi del registro CDN di AEMCS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md#splunk-dashboards-for-aemcs-cdn-log-analysis) passaggi.
 
 ### Visualizzazione dei dati
 

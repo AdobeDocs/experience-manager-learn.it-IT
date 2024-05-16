@@ -12,9 +12,9 @@ jira: KT-13312
 thumbnail: KT-13312.jpeg
 exl-id: 43aa7133-7f4a-445a-9220-1d78bb913942
 duration: 276
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1458'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,9 @@ I registri CDN sono disponibili in formato JSON, che contiene vari campi tra cui
 Ai fini di questa esercitazione, il [Progetto WKND AEM](https://github.com/adobe/aem-guides-wknd) viene implementato nell’ambiente as a Cloud Service dell’AEM e viene attivato un piccolo test delle prestazioni utilizzando [Apache JMeter](https://jmeter.apache.org/).
 
 Questo tutorial è strutturato in modo da illustrare il processo seguente:
+
 1. Download dei registri CDN tramite Cloud Manager
-1. Analisi di questi registri CDN, che possono essere eseguiti con due approcci: una dashboard installata localmente o un Jupityer Notebook a cui si accede in remoto (per chi ha una licenza di Adobe Experience Platform)
+1. L’analisi di questi registri CDN può essere eseguita con due approcci: un dashboard installato localmente o un notebook Splunk o Jupityer accessibile in remoto (per chi ha una licenza di Adobe Experience Platform)
 1. Ottimizzazione della configurazione della cache CDN
 
 ## Scarica registri CDN
@@ -60,24 +61,27 @@ Se il file di registro scaricato proviene da _oggi_ l&#39;estensione del file è
 
 ## Analizzare i registri CDN scaricati
 
-Per ottenere informazioni approfondite, ad esempio il rapporto hit della cache e i principali URL dei tipi di cache di tipo MISS e PASS, analizza il file di registro CDN scaricato. Queste informazioni aiutano a ottimizzare [Configurazione cache CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=it) e migliorare le prestazioni del sito.
+Per ottenere informazioni approfondite, ad esempio il rapporto hit della cache e i principali URL dei tipi di cache di tipo MISS e PASS, analizza il file di registro CDN scaricato. Queste informazioni aiutano a ottimizzare [Configurazione cache CDN](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching) e migliorare le prestazioni del sito.
 
-Per analizzare i registri CDN, questo articolo presenta due opzioni: **Elasticsearch, Logstash e Kibana (ELK)** [strumenti dashboard](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) e [Jupyter Notebook](https://jupyter.org/). Gli strumenti del dashboard ELK possono essere installati localmente sul notebook, mentre gli strumenti del notebook Jupityr sono accessibili in remoto [come parte di Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data.html?lang=en) senza installare software aggiuntivo, per coloro che hanno concesso in licenza Adobe Experience Platform.
+Per analizzare i registri CDN, questa esercitazione presenta tre opzioni:
 
+1. **Elasticsearch, Logstash e Kibana (ELK)**: Il [Strumenti per dashboard ELK](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) può essere installato localmente.
+1. **Splunk**: Il [Strumenti dashboard Splunk](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) richiede l’accesso a Splunk e [Inoltro registro AEMCS abilitato](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) per acquisire i registri CDN.
+1. [Jupyter Notebook](https://jupyter.org/): è accessibile da remoto tramite [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) senza installare software aggiuntivo, per i clienti che hanno concesso in licenza Adobe Experience Platform.
 
 ### Opzione 1: utilizzo degli strumenti del dashboard ELK
 
 Il [Stack ELK](https://www.elastic.co/elastic-stack) è un insieme di strumenti che forniscono una soluzione scalabile per cercare, analizzare e visualizzare i dati. È costituito da Elasticsearch, Logstash e Kibana.
 
-Per identificare i dettagli chiave, utilizziamo [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) progetto di strumenti del dashboard. Questo progetto fornisce un contenitore Docker dello stack ELK e un dashboard Kibana preconfigurato per analizzare i registri CDN.
+Per identificare i dettagli chiave, utilizziamo [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) progetto. Questo progetto fornisce un contenitore Docker dello stack ELK e un dashboard Kibana preconfigurato per analizzare i registri CDN.
 
-1. Segui i passaggi da [Come impostare il contenitore ELK Docker](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool#how-to-set-up-the-elk-docker-container) e assicurati di importare **Percentuale riscontri cache CDN** Dashboard Kibana.
+1. Segui i passaggi da [Come impostare il contenitore ELK Docker](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container) e assicurati di importare **Percentuale riscontri cache CDN** Dashboard Kibana.
 
 1. Per identificare la percentuale di riscontri nella cache CDN e i primi URL, effettua le seguenti operazioni:
 
-   1. Copia i file di registro CDN scaricati all’interno della cartella specifica dell’ambiente.
+   1. Copia i file di registro CDN scaricati all’interno della cartella dei registri specifica dell’ambiente, ad esempio, `ELK/logs/stage`.
 
-   1. Apri **Percentuale riscontri cache CDN** dashboard facendo clic sull’angolo in alto a sinistra Menu di navigazione > Analytics > Dashboard > CDN Cache Hit Ratio (Rapporto hit cache CDN).
+   1. Apri **Percentuale riscontri cache CDN** dashboard facendo clic sull’angolo superiore sinistro _Menu di navigazione > Analytics > Dashboard > Rapporto riscontri cache CDN_.
 
       ![Percentuale riscontri cache CDN - Dashboard Kibana](assets/cdn-logs-analysis/cdn-cache-hit-ratio-dashboard.png){width="500" zoomable="yes"}
 
@@ -126,11 +130,22 @@ Per filtrare i registri acquisiti per nome host, segui i passaggi seguenti:
 
 Allo stesso modo, aggiungi altri filtri al dashboard in base ai requisiti di analisi.
 
-### Opzione 2: utilizzo di Jupyter Notebook
+### Opzione 2: utilizzo degli strumenti del dashboard Splunk
 
-Per coloro che preferiscono non installare il software localmente (ad esempio, gli strumenti del dashboard ELK della sezione precedente), esiste un&#39;altra opzione, ma richiede una licenza per Adobe Experience Platform.
+Il [Splunk](https://www.splunk.com/) è un popolare strumento di analisi dei registri che consente di aggregare, analizzare i registri e creare visualizzazioni a scopo di monitoraggio e risoluzione dei problemi.
 
-Il [Jupyter Notebook](https://jupyter.org/) è un’applicazione web open-source che consente di creare documenti contenenti codice, testo e visualizzazione. Viene utilizzato per la trasformazione dei dati, la visualizzazione e la modellazione statistica. È possibile accedervi da remoto [come parte di Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data.html?lang=en).
+Per identificare i dettagli chiave, utilizziamo [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) progetto. Questo progetto fornisce un dashboard Splunk per analizzare i registri CDN.
+
+1. Segui i passaggi da [Dashboard Splunk per l’analisi del registro CDN di AEMCS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) e assicurati di importare **Percentuale riscontri cache CDN** Dashboard Splunk.
+1. Se necessario, aggiorna il _Indice, tipo di origine e altro_ filtrare i valori nel dashboard Splunk.
+
+   ![Dashboard Splunk](assets/cdn-logs-analysis/splunk-CHR-dashboard.png){width="500" zoomable="yes"}
+
+### Opzione 3: utilizzo di Jupyter Notebook
+
+Per coloro che preferiscono non installare il software localmente (ovvero, gli strumenti del dashboard ELK della sezione precedente), esiste un&#39;altra opzione, ma richiede una licenza per Adobe Experience Platform.
+
+Il [Jupyter Notebook](https://jupyter.org/) è un’applicazione web open-source che consente di creare documenti contenenti codice, testo e visualizzazione. Viene utilizzato per la trasformazione dei dati, la visualizzazione e la modellazione statistica. È possibile accedervi da remoto [come parte di Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data).
 
 #### Download del file del blocco appunti Python interattivo
 
@@ -181,6 +196,6 @@ Puoi migliorare Jupyter Notebook per analizzare i registri CDN in base alle tue 
 
 Dopo aver analizzato i registri CDN, puoi ottimizzare la configurazione della cache CDN per migliorare le prestazioni del sito. La best practice per l’AEM prevede un rapporto di hit della cache pari o superiore al 90%.
 
-Per ulteriori informazioni, consulta [Ottimizza configurazione cache CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#caching).
+Per ulteriori informazioni, consulta [Ottimizza configurazione cache CDN](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching).
 
 Il progetto WKND dell’AEM ha una configurazione CDN di riferimento. Per ulteriori informazioni, consulta [Configurazione CDN](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L137-L190) dal `wknd.vhost` file.
