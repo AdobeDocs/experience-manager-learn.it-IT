@@ -10,9 +10,9 @@ topic: Integrations
 jira: KT-15126
 exl-id: b369ed05-ba25-4b0e-aa3b-e7fc1621067d
 duration: 52
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: e8e51fadaa824d615524a8c4c41aefb656d0391d
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '290'
 ht-degree: 1%
 
 ---
@@ -39,8 +39,9 @@ Questo articolo presuppone che tu abbia [modulo adattivo configurato correttamen
 * Configura la fase FDM di richiamo per utilizzare il modello dati del modulo creato nella fase precedente.
 * ![fdm-associato](assets/fdm-insert-1.png)
 
-* ![map-input-parameters](assets/fdm-insert-2.png)
-* Osserva l’utilizzo della notazione in punti JSON. I dati inviati sono nel formato seguente e stiamo estraendo l’oggetto ContactUS dai dati inviati.
+## Modulo adattivo basato su componenti core
+
+Il formato dei dati inviati è il seguente. È necessario estrarre l’oggetto ContactUS utilizzando la notazione del punto nel passaggio del flusso di lavoro richiama Servizio modello dati modulo, come mostrato nella schermata
 
 ```json
 {
@@ -54,6 +55,41 @@ Questo articolo presuppone che tu abbia [modulo adattivo configurato correttamen
 ```
 
 
+* ![map-input-parameters](assets/fdm-insert-2.png)
+
+
+## Modulo adattivo basato su componenti di base
+
+Il formato dei dati inviati è il seguente. Estrarre l’oggetto JSON ContactUS utilizzando la notazione del punto nel passaggio di flusso di lavoro richiama servizio modello dati modulo
+
+```json
+{
+    "afData": {
+        "afUnboundData": {
+            "data": {}
+        },
+        "afBoundData": {
+            "data": {
+                "ContactUS": {
+                    "Title": "Lord",
+                    "HighNetWorth": "true",
+                    "SubmitterName": "John Doe",
+                    "Products": "Forms"
+                }
+            }
+        },
+        "afSubmissionInfo": {
+            "lastFocusItem": "guide[0].guide1[0].guideRootPanel[0].afJsonSchemaRoot[0]",
+            "stateOverrides": {},
+            "signers": {},
+            "afPath": "/content/dam/formsanddocuments/foundationform",
+            "afSubmissionTime": "20240517100126"
+        }
+    }
+}
+```
+
+![modulo basato su foundation](assets/foundation-based-form.png)
 
 ## Configurare un modulo adattivo per attivare il flusso di lavoro AEM
 
