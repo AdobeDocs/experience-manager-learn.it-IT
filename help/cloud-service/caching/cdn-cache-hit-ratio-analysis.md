@@ -12,9 +12,9 @@ jira: KT-13312
 thumbnail: KT-13312.jpeg
 exl-id: 43aa7133-7f4a-445a-9220-1d78bb913942
 duration: 276
-source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
+source-git-commit: 8051f262f978cdf5aff48cb27e5408a7ee3c0b9d
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1476'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Per scaricare i registri CDN, effettua le seguenti operazioni:
 
    ![Scaricare i registri - Cloud Manager](assets/cdn-logs-analysis/download-logs.png){width="500" zoomable="yes"}
 
-1. In **Scarica registri** , seleziona la **Pubblica** Servizio dal menu a discesa, quindi fai clic sull&#39;icona di download accanto al **cdn** riga.
+1. In **Scarica registri** , seleziona la **Pubblica** Servizio dal menu a discesa, quindi fai clic sull&#39;icona di download accanto al **CDN** riga.
 
    ![Registri CDN - Cloud Manager](assets/cdn-logs-analysis/download-cdn-logs.png){width="500" zoomable="yes"}
 
@@ -67,7 +67,7 @@ Per analizzare i registri CDN, questa esercitazione presenta tre opzioni:
 
 1. **Elasticsearch, Logstash e Kibana (ELK)**: Il [Strumenti per dashboard ELK](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) può essere installato localmente.
 1. **Splunk**: Il [Strumenti dashboard Splunk](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) richiede l’accesso a Splunk e [Inoltro registro AEMCS abilitato](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) per acquisire i registri CDN.
-1. [Jupyter Notebook](https://jupyter.org/): è accessibile da remoto tramite [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) senza installare software aggiuntivo, per i clienti che hanno concesso in licenza Adobe Experience Platform.
+1. **Jupyter Notebook**: è accessibile da remoto tramite [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) senza installare software aggiuntivo, per i clienti che hanno concesso in licenza Adobe Experience Platform.
 
 ### Opzione 1: utilizzo degli strumenti del dashboard ELK
 
@@ -140,6 +140,10 @@ Per identificare i dettagli chiave, utilizziamo [AEMCS-CDN-Log-Analysis-Tooling]
 1. Se necessario, aggiorna il _Indice, tipo di origine e altro_ filtrare i valori nel dashboard Splunk.
 
    ![Dashboard Splunk](assets/cdn-logs-analysis/splunk-CHR-dashboard.png){width="500" zoomable="yes"}
+
+>[!NOTE]
+>
+>L’interfaccia utente e i grafici nel dashboard di splunk sono diversi dal dashboard ELK, tuttavia, i dettagli delle chiavi sono simili.
 
 ### Opzione 3: utilizzo di Jupyter Notebook
 
