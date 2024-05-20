@@ -12,7 +12,7 @@ last-substantial-update: 2024-05-17T00:00:00Z
 jira: KT-15505
 thumbnail: KT-15505.jpeg
 exl-id: 830c2486-099b-454f-bc07-6bf36e81ac8d
-source-git-commit: 8051f262f978cdf5aff48cb27e5408a7ee3c0b9d
+source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -60,7 +60,7 @@ Per avviare rapidamente l’analisi del registro, Adobe fornisce dashboard prede
 
 Per le organizzazioni che sfruttano [Splunk](https://www.splunk.com/en_us/products/observability-cloud.html) e chi ha abilitato l’inoltro dei registri AEMCS alle proprie istanze Splunk può importare rapidamente dashboard predefinite. Questa configurazione facilita l’analisi accelerata dei registri, fornendo informazioni fruibili per ottimizzare le implementazioni AEM e attenuare le minacce alla sicurezza, come gli attacchi DOS.
 
-È possibile iniziare a utilizzare [Dashboard Splunk per l’analisi del registro CDN di AEMCS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md#splunk-dashboards-for-aemcs-cdn-log-analysis) guida.
+È possibile iniziare a utilizzare [Dashboard Splunk per l’analisi del registro CDN di AEMCS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md#splunk-dashboards-for-aemcs-cdn-log-analysis) guida.
 
 
 ## Integrazione ELK

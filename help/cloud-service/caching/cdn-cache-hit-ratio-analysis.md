@@ -12,7 +12,7 @@ jira: KT-13312
 thumbnail: KT-13312.jpeg
 exl-id: 43aa7133-7f4a-445a-9220-1d78bb913942
 duration: 276
-source-git-commit: 8051f262f978cdf5aff48cb27e5408a7ee3c0b9d
+source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Per ottenere informazioni approfondite, ad esempio il rapporto hit della cache e
 Per analizzare i registri CDN, questa esercitazione presenta tre opzioni:
 
 1. **Elasticsearch, Logstash e Kibana (ELK)**: Il [Strumenti per dashboard ELK](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) può essere installato localmente.
-1. **Splunk**: Il [Strumenti dashboard Splunk](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) richiede l’accesso a Splunk e [Inoltro registro AEMCS abilitato](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) per acquisire i registri CDN.
+1. **Splunk**: Il [Strumenti dashboard Splunk](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) richiede l’accesso a Splunk e [Inoltro registro AEMCS abilitato](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) per acquisire i registri CDN.
 1. **Jupyter Notebook**: è accessibile da remoto tramite [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) senza installare software aggiuntivo, per i clienti che hanno concesso in licenza Adobe Experience Platform.
 
 ### Opzione 1: utilizzo degli strumenti del dashboard ELK
@@ -136,7 +136,7 @@ Il [Splunk](https://www.splunk.com/) è un popolare strumento di analisi dei reg
 
 Per identificare i dettagli chiave, utilizziamo [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) progetto. Questo progetto fornisce un dashboard Splunk per analizzare i registri CDN.
 
-1. Segui i passaggi da [Dashboard Splunk per l’analisi del registro CDN di AEMCS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) e assicurati di importare **Percentuale riscontri cache CDN** Dashboard Splunk.
+1. Segui i passaggi da [Dashboard Splunk per l’analisi del registro CDN di AEMCS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) e assicurati di importare **Percentuale riscontri cache CDN** Dashboard Splunk.
 1. Se necessario, aggiorna il _Indice, tipo di origine e altro_ filtrare i valori nel dashboard Splunk.
 
    ![Dashboard Splunk](assets/cdn-logs-analysis/splunk-CHR-dashboard.png){width="500" zoomable="yes"}
