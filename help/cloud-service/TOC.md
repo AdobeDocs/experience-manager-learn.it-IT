@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: c67fad3da9b9eaa740c4351448108af3b1542912
+source-git-commit: 272ed4e4782b03f284886a3046440960df538286
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1220'
 ht-degree: 16%
 
 ---
@@ -400,6 +400,7 @@ ht-degree: 16%
       + Stagione 3{#season-3}
          + [Ricerca di terze parti](./expert-resources/cloud-5/season-3/cloud5-3rd-party-search.md)
          + [Real User Monitoring (RUM)](./expert-resources/cloud-5/season-3/cloud5-rum.md)
+         + [Esplora Real User Monitoring (RUM)](./expert-resources/cloud-5/season-3/cloud5-rum-explorer.md)
          + [Lavoratori Edge](./expert-resources/cloud-5/season-3/cloud5-edge-workers.md)
          + [Pubblicare, annullare la pubblicazione di eventi in Edge Delivery Services](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
          + [Indici di query e formule di Excel](./expert-resources/cloud-5/season-3/cloud5-query-indexes.md)
