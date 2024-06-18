@@ -12,9 +12,9 @@ index: y
 doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
 duration: 164
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 3cc9b4fa0a30d36638a8c28a73663ffa455ba4a3
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 Il reindirizzamento URL è un aspetto comune nell’ambito delle operazioni sul sito web. Gli architetti e gli amministratori devono trovare la soluzione migliore per gestire i reindirizzamenti URL che offrano flessibilità e tempi di reindirizzamento rapidi.
 
-Assicurati di conoscere il [AEM (6.x) alias AEM Classic](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-2.html#the-%E2%80%9Clegacy%E2%80%9D-setup) e [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/architecture.html#runtime-architecture) infrastrutture. Le principali differenze sono:
+Assicurati di conoscere il [AEM (6.x) alias AEM Classic](https://experienceleague.adobe.com/en/docs/experience-manager-learn/dispatcher-tutorial/chapter-2) e [AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/architecture) infrastrutture. Le principali differenze sono:
 
-1. AEM as a Cloud Service ha [CDN integrata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)Tuttavia, i clienti possono fornire una rete CDN (BYOCDN) davanti alla rete CDN gestita dall’AEM.
+1. AEM as a Cloud Service ha [CDN integrata](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn)Tuttavia, i clienti possono fornire una rete CDN (BYOCDN) davanti alla rete CDN gestita dall’AEM.
 1. AEM 6.x non include una rete CDN gestita dall’AEM sia in locale che in Adobe Managed Services (AMS) e i clienti devono apportare il proprio contributo.
 
 Gli altri servizi dell’AEM (Autore/Pubblicazione AEM e Dispatcher) sono concettualmente simili tra AEM 6.x e AEM as a Cloud Service.
@@ -34,7 +34,8 @@ Le soluzioni di reindirizzamento URL AEM sono le seguenti:
 
 |                                                   | Gestito e implementato come codice progetto AEM | Possibilità di modifica da parte del team marketing/contenuti | AEM compatibile con il Cloud Service | Dove avviene l’esecuzione del reindirizzamento |
 |---------------------------------------------------|:-----------------------:|:---------------------:|:---------------------:| :---------------------:|
-| [In Edge tramite porta la tua CDN](#at-edge-via-bring-your-own-cdn) | ✘ | ✘ | ✔ | Edge/CDN |
+| [Edge tramite CDN gestita da AEM](#at-edge-via-aem-managed-cdn) | ✔ | ✘ | ✔ | Edge/CDN (integrato) |
+| [In Edge tramite porta la tua CDN (BYOCDN)](#at-edge-via-bring-your-own-cdn) | ✘ | ✘ | ✔ | Edge/CDN (BYOCDN) |
 | [Apache `mod_rewrite` regole come configurazione di Dispatcher](#apache-mod_rewrite-module) | ✔ | ✘ | ✔ | Dispatcher |
 | [ACS Commons - Gestione mappa di reindirizzamento](#redirect-map-manager) | ✘ | ✔ | ✘ | Dispatcher |
 | [ACS Commons - Gestione reindirizzamento](#redirect-manager) | ✘ | ✔ | ✔ | AEM |
@@ -45,20 +46,28 @@ Le soluzioni di reindirizzamento URL AEM sono le seguenti:
 
 Di seguito sono riportate le opzioni di soluzione nell’ordine in cui sono più vicine al browser del visitatore del sito web.
 
+### Edge tramite CDN gestita da AEM {#at-edge-via-aem-managed-cdn}
+
+Questa opzione è disponibile solo per i clienti AEM as a Cloud Service.
+
+Il [CDN gestita da AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn) fornisce una soluzione di reindirizzamento a livello di Edge, riducendo in tal modo i round trip all’origine. Il [Reindirizzamenti lato client](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#client-side-redirectors) consente di configurare le regole di reindirizzamento nel codice del progetto AEM e di distribuirle utilizzando [Pipeline di configurazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager). Il file di configurazione CDN (`cdn.yaml`) non deve superare i 100 KB.
+
+La gestione dei reindirizzamenti a livello Edge o CDN offre vantaggi in termini di prestazioni.
+
 ### In Edge tramite porta la tua CDN
 
-Alcuni servizi CDN forniscono soluzioni di reindirizzamento a livello di Edge, riducendo così i round trip all’origine. Consulta [Redirector Akamai Edge](https://techdocs.akamai.com/cloudlets/docs/what-edge-redirector), [Funzioni AWS CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html). Consulta il provider di servizi CDN per informazioni sulla funzionalità di reindirizzamento a livello Edge.
+Alcuni servizi CDN forniscono soluzioni di reindirizzamento a livello Edge, riducendo in tal modo i round trip all’origine. Consulta [Redirector Akamai Edge](https://techdocs.akamai.com/cloudlets/docs/what-edge-redirector), [Funzioni AWS CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html). Consulta il provider di servizi CDN per informazioni sulla funzionalità di reindirizzamento a livello Edge.
 
-La gestione dei reindirizzamenti a livello Edge o CDN offre vantaggi in termini di prestazioni, ma non è gestita come parte dell’AEM, bensì come progetto discreto. Per evitare problemi è fondamentale un processo ben concepito per gestire e distribuire le regole di reindirizzamento.
+La gestione dei reindirizzamenti a livello Edge o CDN offre vantaggi in termini di prestazioni, ma non è gestita come parte dell’AEM, bensì come progetto discreto. Per evitare problemi è fondamentale un processo ben definito per gestire e distribuire le regole di reindirizzamento.
 
 
 ### Apache `mod_rewrite` modulo
 
 Una soluzione comune utilizza [Modulo Apache mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html). Il [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype) fornisce una struttura di progetto di Dispatcher per entrambi [AEM 6.x](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.ams#file-structure) e [AEM as a Cloud Service](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud#file-structure) progetto. Le regole di riscrittura predefinite (immutabili) e personalizzate sono definite nella `conf.d/rewrites` e il motore di riscrittura è attivato per `virtualhosts` che ascolta sulla porta `80` tramite `conf.d/dispatcher_vhost.conf` file. Un esempio di implementazione è disponibile nella [Progetto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd/tree/main/dispatcher/src/conf.d/rewrites).
 
-In AEM as a Cloud Service, queste regole di reindirizzamento sono gestite come parte del codice AEM e distribuite tramite Cloud Manager [Pipeline di configurazione a livello web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html#web-tier-config-pipelines) o [Pipeline full stack](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html#full-stack-pipeline). Pertanto, è in gioco il processo specifico del progetto AEM per gestire, distribuire e tracciare le regole di reindirizzamento.
+In AEM as a Cloud Service, queste regole di reindirizzamento sono gestite come parte del codice AEM e distribuite tramite Cloud Manager [Pipeline di configurazione a livello web](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines) o [Pipeline full stack](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines). Pertanto, è in gioco il processo specifico del progetto AEM per gestire, distribuire e tracciare le regole di reindirizzamento.
 
-La maggior parte dei servizi CDN memorizza nella cache i reindirizzamenti HTTP 301 e 302 a seconda dei `Cache-Control` o `Expires` intestazioni. Questo aiuta ad evitare il round trip dopo il reindirizzamento iniziale proveniente da Apache/Dispatcher.
+La maggior parte dei servizi CDN memorizza nella cache i reindirizzamenti HTTP 301 e 302 a seconda dei `Cache-Control` o `Expires` intestazioni. Aiuta ad evitare il round trip dopo il reindirizzamento iniziale proveniente da Apache/Dispatcher.
 
 
 ### ACS AEM Commons
@@ -71,11 +80,11 @@ Sono disponibili due funzioni in [ACS AEM Commons](https://adobe-consulting-serv
 
 #### Gestione reindirizzamento
 
-[Gestione reindirizzamento](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) consente agli utenti dell’AEM di gestire e pubblicare facilmente i reindirizzamenti dall’AEM. L’implementazione si basa sul filtro servlet Java™, che corrisponde al consumo tipico delle risorse JVM. Questa funzione elimina anche la dipendenza dal team di sviluppo AEM e dalle implementazioni AEM. Redirect Manager è entrambi **AEM as a Cloud Service** e **AEM 6.x** compatibile. Mentre la richiesta reindirizzata iniziale deve raggiungere il servizio di pubblicazione AEM per generare la cache 301/302 (la maggior parte) delle CDN per impostazione predefinita, consentendo alle richieste successive di essere reindirizzate al server Edge/CDN.
+[Gestione reindirizzamento](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) consente agli utenti dell’AEM di gestire e pubblicare facilmente i reindirizzamenti dall’AEM. L’implementazione si basa sul filtro servlet Java™, che corrisponde al consumo tipico delle risorse JVM. Questa funzione elimina anche la dipendenza dal team di sviluppo AEM e dalle implementazioni AEM. Redirect Manager è entrambi **AEM as a Cloud Service** e **AEM 6.x** compatibile. La richiesta reindirizzata iniziale deve invece pervenire al servizio di pubblicazione AEM per generare la cache 301/302 (la maggior parte) delle CDN per impostazione predefinita, consentendo di reindirizzare le richieste successive al server Edge/CDN.
 
 ### Il `Redirect` proprietà page
 
-La soluzione preconfigurata `Redirect` proprietà di pagina da [Scheda Avanzate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/page-properties.html#advanced) consente agli autori di contenuto di definire la posizione di reindirizzamento per la pagina corrente. Questa soluzione è ideale per scenari di reindirizzamento per pagina e non dispone di una posizione centrale per visualizzare e gestire i reindirizzamenti della pagina.
+La soluzione preconfigurata `Redirect` proprietà di pagina da [Scheda Avanzate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties.html) consente agli autori di contenuto di definire la posizione di reindirizzamento per la pagina corrente. Questa soluzione è ideale per scenari di reindirizzamento per pagina e non dispone di una posizione centrale per visualizzare e gestire i reindirizzamenti della pagina.
 
 ## Quale soluzione è adatta per l’implementazione
 
