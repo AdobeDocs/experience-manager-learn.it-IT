@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: a8fc8fa19ae19e27b07fa81fc931eca51cb982a1
+source-git-commit: cbba149b23b4d8ecad35f263dc282a3da481fc9f
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1229'
 ht-degree: 16%
 
 ---
@@ -19,8 +19,8 @@ ht-degree: 16%
 + [Panoramica](./overview.md)
 + Sperimentazioni AEM {#aem-trials}
    + [Immagini](./aem-trials/images.md)
-+ Introduzione all’AEM as a Cloud Service{#introduction}
-   + [Cos’è l’AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
++ Introduzione ad AEM as a Cloud Service{#introduction}
+   + [Cos’è AEM as a Cloud Service?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Architettura](./introduction/architecture.md)
    + [Cloud Manager](./introduction/cloud-manager.md)
    + Strategia e leadership di pensiero{#strategy}
@@ -35,7 +35,7 @@ ht-degree: 16%
    + [OSGi](./underlying-technology/introduction-osgi.md)
    + [Archivio dei contenuti Java](./underlying-technology/introduction-jcr.md)
    + [Sling](./underlying-technology/introduction-sling.md)
-   + [Servizi di authoring e pubblicazione](./underlying-technology/introduction-author-publish.md)
+   + [Servizi Author e Publish](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Edge Delivery Services {#edge-delivery-services}
    + [Plug-in Sidekick AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
@@ -68,7 +68,7 @@ ht-degree: 16%
          + [Verifica webhook Github](./developing/extensibility/app-builder/github-webhook-verification.md)
       + Estensibilità dell’interfaccia utente{#ui}
          + [Panoramica](./developing/extensibility/ui/overview.md)
-         + [Progetto console Adobe Developer](./developing/extensibility/ui/adobe-developer-console-project.md)
+         + [Progetto Adobe Developer Console](./developing/extensibility/ui/adobe-developer-console-project.md)
          + [Inizializza app](./developing/extensibility/ui/app-initialization.md)
          + [Registra estensione](./developing/extensibility/ui/extension-registration.md)
          + [Finestra modale](./developing/extensibility/ui/modal.md)
@@ -141,7 +141,7 @@ ht-degree: 16%
    + [Reindirizzamenti URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
 + Memorizzazione in cache{#caching}
    + [Panoramica](./caching/overview.md)
-   + [Servizio di pubblicazione AEM](./caching/publish.md)
+   + [Servizio Publish AEM](./caching/publish.md)
    + [Servizio di authoring AEM](./caching/author.md)
    + [Analisi percentuale riscontri cache CDN](./caching/cdn-cache-hit-ratio-analysis.md)
    + Procedura{#how-to}
@@ -230,7 +230,7 @@ ht-degree: 16%
       + [8 - Abilitare i componenti di Forms Portal](./forms/developing-for-cloud-service/forms-portal-components.md)
       + [9 - Includi Cloud Service e FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
       + [10 - Configurazione cloud in base al contesto](./forms/developing-for-cloud-service/context-aware-fdm.md)
-      + [11 - Effettuare il push in Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
+      + [11 - Invia a Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [12 - Implementazione nell’ambiente di sviluppo](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
       + [13 - Aggiornamento dell’archetipo Maven](./forms/developing-for-cloud-service/updating-project-archetype.md)
    + Creare un modulo adattivo{#create-first-af}
@@ -326,7 +326,7 @@ ht-degree: 16%
       + [Estrarre gli allegati dai dati inviati](./forms/forms-cs-and-power-automate/send-af-attachments-in-email.md)
    + Integrare con Microsoft Dynamics{#formscs-dynamics-crm}
       + [Crea applicazione Dynamics](./forms/formscs-dynamics-crm/create-dynamics-account.md)
-      + [Configura origine dati](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
+      + [Configurare Data Source](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
       + [Crea modello dati modulo](./forms/formscs-dynamics-crm/create-form-data-model.md)
       + [Creare un modulo adattivo](./forms/formscs-dynamics-crm/create-adaptive-form.md)
    + Integrare con Salesforce{#integrate-with-salesforce}
@@ -372,9 +372,9 @@ ht-degree: 16%
    + [Autenticazione basata su token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html){target=_blank}
 + Risorse di esperti {#expert-resources}
    + Campioni AEM {#aem-champions}
-      + [Playbook di onboarding di Cloud Manager](./expert-resources/aem-champions/onboarding-playbook.md)
-      + [Tipi di ambiente di Cloud Manager](./expert-resources/aem-champions/environment-types.md)
-      + [Interfaccia utente di Cloud Manager](./expert-resources/aem-champions/cloud-manager-ui.md)
+      + [Playbook di onboarding Cloud Manager](./expert-resources/aem-champions/onboarding-playbook.md)
+      + [Tipi di ambiente Cloud Manager](./expert-resources/aem-champions/environment-types.md)
+      + [Interfaccia utente Cloud Manager](./expert-resources/aem-champions/cloud-manager-ui.md)
    + [Serie di esperti AEM](./expert-resources/expert-series/aem-experts-series.md)
    + Cloud 5{#cloud-5}
       + [Introduzione](./expert-resources/cloud-5/cloud5-introduction.md)
@@ -390,7 +390,7 @@ ht-degree: 16%
       + [Migrazione 2](./expert-resources/cloud-5/cloud5-aem-content-migration-part-2.md)
       + [Convalida Dispatcher](./expert-resources/cloud-5/cloud5-aem-dispatcher-validator.md)
       + [Ricerca e indicizzazione](./expert-resources/cloud-5/cloud5-aem-search-and-indexing.md)
-      + [Generatore di app Adobe](./expert-resources/cloud-5/cloud5-adobe-app-builder.md)
+      + [Adobe App Builder](./expert-resources/cloud-5/cloud5-adobe-app-builder.md)
       + Stagione 2{#season-2}
          + [Frammenti](./expert-resources/cloud-5/season-2/cloud5-experience-v-content-fragments.md)
          + [Repo Modernizer](./expert-resources/cloud-5/season-2/cloud5-repo-modernizer.md)
@@ -405,9 +405,8 @@ ht-degree: 16%
       + Stagione 3{#season-3}
          + [Ricerca di terze parti](./expert-resources/cloud-5/season-3/cloud5-3rd-party-search.md)
          + [Real User Monitoring (RUM)](./expert-resources/cloud-5/season-3/cloud5-rum.md)
-         + [Esplora Real User Monitoring (RUM)](./expert-resources/cloud-5/season-3/cloud5-rum-explorer.md)
          + [Lavoratori Edge](./expert-resources/cloud-5/season-3/cloud5-edge-workers.md)
-         + [Pubblicare, annullare la pubblicazione di eventi in Edge Delivery Services](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
+         + [Publish, annulla la pubblicazione di eventi in Edge Delivery Services](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
          + [Indici di query e formule di Excel](./expert-resources/cloud-5/season-3/cloud5-query-indexes.md)
          + [Porta la tua CDN di Cloudflare](./expert-resources/cloud-5/season-3/cloud5-byo-cloudflare-cdn.md)
          + [Integrare AEM Assets](./expert-resources/cloud-5/season-3/cloud5-integrate-assets.md)
