@@ -8,13 +8,13 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-15752
-source-git-commit: a8fc8fa19ae19e27b07fa81fc931eca51cb982a1
+exl-id: 6f2b280d-c2b5-4b75-88e4-2296329d69e7
+source-git-commit: a12b1778413079646814cb25567abfc26a429340
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 2%
 
 ---
-
 
 # Configurare l’ambiente di sviluppo
 
@@ -22,7 +22,7 @@ Se hai già configurato l’ambiente di sviluppo, puoi tranquillamente saltare q
 
 [Crea progetto Maven](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started)
 
-[Installa IntelliJ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up) - Non aggiungere il modulo font per questa esercitazione.
+[Installa IntelliJ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up) - È possibile saltare l&#39;aggiunta del modulo font per questa esercitazione.
 
 [Inizializza Git](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git)
 
@@ -31,4 +31,3 @@ Se hai già configurato l’ambiente di sviluppo, puoi tranquillamente saltare q
 ## Passaggi successivi
 
 [Crea componente indirizzo](./creating-address-component.md)
-

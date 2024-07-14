@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Passaggi per acquisire i registri di debug per i moduli mobili
 
-*Questo video illustra i passaggi per acquisire i registri di debug per i moduli mobili.*
+*Questo video illustra i passaggi necessari per acquisire i registri di debug per i moduli mobili.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335516?quality=12&learn=on)

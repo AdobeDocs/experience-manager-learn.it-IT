@@ -1,5 +1,5 @@
 ---
-title: Utilizzo della firma scarabocchio in Forms Designer
+title: Utilizzo della firma a mano in Forms Designer
 description: Breve video che descrive l’aggiunta di una firma scarabocchio ad AEM Forms
 version: 6.5
 feature: Forms Designer,Designer
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Utilizzo della firma scarabocchio in AEM Forms Designer
+# Utilizzo della firma a mano in AEM Forms Designer
 
 Breve video che descrive l’aggiunta di una firma scarabocchio ad AEM Forms
 

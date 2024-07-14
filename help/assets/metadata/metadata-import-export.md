@@ -29,18 +29,18 @@ Scopri come utilizzare le funzioni di importazione ed esportazione dei metadati 
 
 >[!TIP]
 >
-> Quando apri un file CSV di esportazione dei metadati in Excel, utilizza [Importazione Excel](https://support.microsoft.com/en-us/office/import-data-from-a-csv-html-or-text-file-b62efe49-4d5b-4429-b788-e1211b5e90f6) anziché fare doppio clic sul file per evitare problemi con i file CSV con codifica UTF-8.
+> Quando apri il file CSV di esportazione dei metadati in Excel, utilizza l&#39;[importazione Excel](https://support.microsoft.com/en-us/office/import-data-from-a-csv-html-or-text-file-b62efe49-4d5b-4429-b788-e1211b5e90f6) invece di fare doppio clic sul file per evitare problemi con i file CSV con codifica UTF-8.
 >
 > Per aprire il file CSV di esportazione dei metadati in Excel, effettua le seguenti operazioni:
 > 
 > 1. Apri Microsoft Excel
 > 1. Seleziona __File > Nuovo__ per creare un foglio di calcolo vuoto
-> 1. Con il foglio di calcolo vuoto aperto, seleziona __File > Importa__
-> 1. Seleziona __Testo__ file e fai clic su __Importa__
+> 1. Con il foglio di calcolo vuoto aperto, selezionare __File > Importa__
+> 1. Seleziona il file __Testo__ e fai clic su __Importa__
 > 1. Seleziona il file CSV esportato dal file system e fai clic su __Ottieni dati__
-> 1. Nel passaggio 1 dell&#39;Importazione guidata, selezionare __Delimitato__ e imposta __Origine file__ a __Unicode (UTF-8)__ e fai clic su __Successivo__
-> 1. Al passaggio 2, impostare __Delimitatori__ a __Virgola__ e fai clic su __Successivo__
-> 1. Al passaggio 3, lasciare __Formato dati colonna__ così com’è, e fai clic su __Fine__
+> 1. Nel passaggio 1 dell&#39;importazione guidata, selezionare __Delimitato__ e impostare __Origine file__ su __Unicode (UTF-8)__, quindi fare clic su __Avanti__
+> 1. Al passaggio 2, imposta __Delimitatori__ su __Virgola__ e fai clic su __Avanti__
+> 1. Al passaggio 3, lasciare invariato il formato dati __Colonna__ e fare clic su __Fine__
 > 1. Seleziona __Importa__ per aggiungere i dati al foglio di calcolo
 
 ## Importazione metadati {#metadata-import}
@@ -72,7 +72,7 @@ Scopri come utilizzare le funzioni di importazione ed esportazione dei metadati 
    * Errato: `Dc:Title {{String}}`
 
 * Il tipo di proprietà non distingue tra maiuscole e minuscole
-* Tutti i valori validi [Tipi di proprietà JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) sono supportati
+* Sono supportati tutti i tipi di proprietà [JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) validi
 
 * Formato proprietà con più valori - `<metadata property name> {{<property type : MULTI }}`
 

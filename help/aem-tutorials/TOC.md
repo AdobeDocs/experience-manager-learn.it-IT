@@ -21,10 +21,10 @@ ht-degree: 8%
 + [AEM come Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it){target=_blank}
 + [AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it){target=_blank}
 + [Fondazione AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=it){target=_blank}
-+ [Guide AEM](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html){target=_blank}
++ [AEM Guides](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html){target=_blank}
 + Tutorials a più passaggi {#multi}
    + [Guida introduttiva ad AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it){target=_blank}
-   + [Guida introduttiva all’Editor SPA dell’AEM e React](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
-   + [Guida introduttiva di AEM e Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
-   + [Tutorial Dynamic Media Classic su AEM 6.x](https://experienceleague.adobe.com/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview.html){target=_blank}
-   + [Esercitazione sulla cache di Dispatcher AEM 6.x](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html){target=_blank}
+   + [Guida introduttiva all&#39;editor SPA AEM e React](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
+   + [Guida introduttiva a AEM e Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
+   + [Esercitazione Dynamic Media Classic AEM 6.x](https://experienceleague.adobe.com/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview.html){target=_blank}
+   + [Tutorial sulla cache di Dispatcher per AEM 6.x](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html){target=_blank}

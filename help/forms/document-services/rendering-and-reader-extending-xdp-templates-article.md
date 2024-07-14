@@ -25,7 +25,7 @@ Ad esempio, nel portale Forms di AEM Forms, quando un utente fa clic su XDP, pos
 
 Per eseguire questo caso d’uso è necessario effettuare le seguenti operazioni.
 
-* Aggiungi il certificato Estensioni di Reader all’utente &quot;fd-service&quot;. Sono elencati i passaggi per aggiungere le credenziali delle estensioni di Reader [qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
+* Aggiungi il certificato Estensioni di Reader all’utente &quot;fd-service&quot;. I passaggi per aggiungere le credenziali delle estensioni di Reader sono elencati [qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
 
 
 * È inoltre possibile fare riferimento al video su [configurazione delle credenziali delle estensioni di Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
@@ -126,7 +126,7 @@ public @interface DocSvcConfiguration {
 
 Il passaggio successivo consiste nel creare un servlet con un metodo GET per restituire all’utente il reader extended PDF. In questo caso, all’utente viene richiesto di salvare il PDF nel proprio file system. Questo perché il PDF viene riprodotto come Dynamic PDF e i visualizzatori pdf forniti con i browser non gestiscono i PDF dinamici.
 
-Di seguito è riportato il codice del servlet. Trasmettiamo a questo servlet il percorso dell’XDP nell’archivio CRX.
+Di seguito è riportato il codice del servlet. Il percorso dell’XDP nell’archivio CRX viene passato a questo servlet.
 
 Viene quindi chiamato il metodo renderAndExtendXdp di com.aemformssamples.documentservices.core.DocumentServices.
 
@@ -204,5 +204,5 @@ Per eseguire il test sul server locale, attieniti alla seguente procedura
 1. [Scarica e importa le risorse relative a questo articolo in AEM utilizzando Gestione pacchetti](assets/renderandextendxdp.zip)
    * Questo pacchetto ha un portale di esempio e un file xdp
 1. Aggiungere il certificato Estensioni di Reader all&#39;utente &quot;fd-service&quot;
-1. Puntare il browser a [pagina web del portale](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
+1. Puntare il browser alla [pagina Web del portale](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
 1. Fai clic sull’icona pdf per riprodurre xdp come file pdf con diritti di utilizzo applicati.

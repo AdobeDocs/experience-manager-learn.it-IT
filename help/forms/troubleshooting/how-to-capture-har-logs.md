@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Come acquisire i registri HAR (archivio HTTP)
 
-*Questo video illustra i passaggi per acquisire i registri HAR (HTTP archive).*
+*Questo video illustra i passaggi per acquisire i registri HAR (archivio HTTP).*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335488?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Comprendere Adobe Cloud Manager
-description: Adobe Cloud Manager fornisce una soluzione semplice ma solida che consente di gestire facilmente gli ambienti AEM, presentarli e renderli self-service.
+description: Adobe Cloud Manager fornisce una soluzione semplice ma solida che consente una gestione semplice, introspettiva e self-service degli ambienti AEM.
 sub-product: Experience Manager Cloud Manager, Experience Manager
 doc-type: Feature Video
 topic: Architecture
@@ -20,11 +20,11 @@ ht-degree: 15%
 
 # Comprendere Adobe Cloud Manager
 
-Adobe Cloud Manager fornisce una soluzione semplice ma solida che consente di gestire facilmente gli ambienti AEM, presentarli e renderli self-service.
+Adobe Cloud Manager fornisce una soluzione semplice ma solida che consente una gestione semplice, introspettiva e self-service degli ambienti AEM.
 
 ## Panoramica di Cloud Manager
 
-Questa serie di video esplora le funzioni chiave di Cloud Manager per l’AEM, tra cui:
+Questa serie di video esplora le funzioni chiave di Cloud Manager per l&#39;AEM, tra cui:
 
 * [Programmi](#programs)
 * [Ambienti](#environments)
@@ -33,29 +33,29 @@ Questa serie di video esplora le funzioni chiave di Cloud Manager per l’AEM, t
 * [Pipeline CI/CD non di produzione](#cicd-non-production-pipeline)
 * [Attività](#activity)
 
-Per una panoramica completa, consulta [Guida utente di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=it).
+Per una panoramica completa, consultare la [Guida utente di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=it).
 
 ## Programmi {#programs}
 
-[Programmi di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html) rappresentano insiemi di ambienti AEM che supportano set logici di iniziative aziendali, in genere corrispondenti a un contratto del livello di servizio (SLA) acquistato. Ad esempio, un programma può rappresentare le risorse dell’AEM per supportare i siti web pubblici globali, mentre un altro programma può rappresentare un DAM centrale interno.
+[I programmi Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html) rappresentano insiemi di ambienti AEM che supportano set logici di iniziative aziendali, in genere corrispondenti a un contratto del livello di servizio (SLA) acquistato. Ad esempio, un programma può rappresentare le risorse dell’AEM per supportare i siti web pubblici globali, mentre un altro programma può rappresentare un DAM centrale interno.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26313?quality=12&learn=on)
 
 ## Ambienti {#environments}
 
-[Ambienti Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/managing-environments.html) sono composte da istanze di AEM Author, AEM Publish e Dispatcher. Diversi ambienti supportano i ruoli e possono essere attivati utilizzando diverse pipeline CI/CD (descritte di seguito). In genere, gli ambienti di Cloud Manager hanno un ambiente Produzione e un ambiente Stage.
+[Gli ambienti Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/managing-environments.html) sono composti da istanze di AEM Author, AEM Publish e Dispatcher. Diversi ambienti supportano i ruoli e possono essere attivati utilizzando diverse pipeline CI/CD (descritte di seguito). In genere, gli ambienti Cloud Manager dispongono di un ambiente Produzione e di un ambiente Stage.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318?quality=12&learn=on)
 
 ## Rapporti {#reports}
 
-[Rapporti di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html) fornisce una vista degli ambienti del programma e delle istanze AEM attraverso una serie di grafici che riferiscono e tengono traccia di varie metriche per ogni istanza AEM.
+I [report Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html) forniscono una visualizzazione degli ambienti e delle istanze AEM del programma tramite un set di grafici che forniscono rapporti e tengono traccia di varie metriche per ogni istanza AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26315?quality=12&learn=on)
 
 ## Pipeline CI/CD di produzione {#cicd-production-pipeline}
 
-*[Utilizzare la pipeline CI/CD in Adobe Cloud Manager](./use-the-cicd-pipeline-in-cloud-manager-for-aem.md) Le serie video forniscono informazioni approfondite sull’esecuzione della pipeline di produzione, inclusa l’esplorazione delle distribuzioni non riuscite e riuscite.*
+*[Utilizzare la pipeline CI/CD nella serie video Adobe Cloud Manager](./use-the-cicd-pipeline-in-cloud-manager-for-aem.md) fornisce informazioni approfondite sull&#39;esecuzione della pipeline di produzione, inclusa l&#39;esplorazione delle distribuzioni non riuscite e riuscite.*
 
 >[!NOTE]
 >
@@ -63,26 +63,26 @@ Per una panoramica completa, consulta [Guida utente di Cloud Manager](https://ex
 
 ### Configurazione
 
-Il [Pipeline CI/CD di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html) La configurazione definisce il trigger che avvia la pipeline e i parametri che controllano la distribuzione di produzione e i parametri di test delle prestazioni.
+La configurazione della [pipeline CI/CD di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html) definisce il trigger che avvia la pipeline e i parametri che controllano la distribuzione di produzione e i parametri di test delle prestazioni.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314?quality=12&learn=on)
 
 ### Esecuzione delle pipeline
 
-Il [Pipeline CI/CD di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) viene utilizzato per generare e distribuire il codice nell’ambiente di produzione tramite Stage, riducendo il time-to-value.
+La pipeline di produzione [CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) viene utilizzata per generare e distribuire il codice nell&#39;ambiente di produzione tramite Stage, riducendo il time-to-value.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317?quality=12&learn=on)
 
 ## Pipeline CI/CD non di produzione {#cicd-non-production-pipeline}
 
-[Pipeline CI/CD non di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html) sono suddivisi in due categorie: pipeline di qualità del codice e pipeline di distribuzione. Le pipeline di qualità del codice instradano tutto il codice da un ramo Git per la generazione e la valutazione in base alla scansione della qualità del codice di Cloud Manager. Le pipeline di implementazione supportano l’implementazione automatica del codice dall’archivio Git in qualsiasi ambiente non di produzione, ovvero qualsiasi ambiente con provisioning AEM che non sia Stage o Production.
+[Le pipeline CI/CD non di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html) sono suddivise in due categorie: pipeline di qualità del codice e pipeline di distribuzione. Le pipeline di qualità del codice instradano tutto il codice da un ramo Git per la generazione e la valutazione in base alla scansione della qualità del codice di Cloud Manager. Le pipeline di implementazione supportano l’implementazione automatica del codice dall’archivio Git in qualsiasi ambiente non di produzione, ovvero qualsiasi ambiente con provisioning AEM che non sia Stage o Production.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316?quality=12&learn=on)
 
 ## Attività {#activity}
 
-Cloud Manager fornisce una vista consolidata dell’attività di un programma, elencando tutte le esecuzioni della pipeline CI/CD, sia di produzione che non di produzione, consentendo la visibilità delle attività passate e presenti e visualizzando tutti i dettagli delle attività.
+Cloud Manager fornisce una vista consolidata dell’attività di un programma, elencando tutte le esecuzioni della pipeline CI/CD, sia di produzione che non di produzione, consentendo la visibilità delle attività passate e presenti e i dettagli di qualsiasi attività possono essere rivisti.
 
-Cloud Manager si integra anche a livello di utente con [Notifiche Adobe Experience Cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/notifications.html), che fornisce una visione onnipresente degli eventi e delle azioni di interesse.
+Cloud Manager si integra inoltre a livello di singolo utente con [Notifiche Adobe Experience Cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/notifications.html), fornendo una visualizzazione onnipresente degli eventi e delle azioni di interesse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26319?quality=12&learn=on)

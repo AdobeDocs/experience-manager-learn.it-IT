@@ -29,7 +29,7 @@ Aprire 401KStatement in modalità di modifica.
 
 AEM Forms 6.4 ha semplificato notevolmente la visualizzazione dei dati utilizzando vari tipi di grafici. Verrà utilizzato un grafico a linee per visualizzare i saldi per anno.
 
-Tocca il **Avanzamento account** nell’area di destinazione a destra, fai clic sull’icona &quot;+&quot; per visualizzare la finestra di dialogo inserisci componente.
+Tocca l&#39;area di destinazione **Avanzamento account** a destra e fai clic sull&#39;icona &quot;+&quot; per visualizzare la finestra di dialogo Inserisci componente.
 
 Seleziona Grafico per inserire il componente Grafico.
 
@@ -37,11 +37,11 @@ Configura il componente grafico in base alle impostazioni riportate nella scherm
 
 Assicurati di selezionare l’elemento del modello dati del modulo corretto sugli assi x e y.
 
-**Impostazioni dei grafici a linee in AEM Forms 6.4**
+**Impostazioni grafico a linee in AEM Forms 6.4**
 
 ![linechart64](assets/linechart.png)
 
-**Impostazioni dei grafici a linee in AEM Forms 6.5**
+**Impostazioni grafico a linee in AEM Forms 6.5**
 
 ![linechart64](assets/linechart65.PNG)
 

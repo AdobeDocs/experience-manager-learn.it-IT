@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Test automatizzato di Adaptive Forms tramite l’SDK Calvin
 
-Calvin SDK è un’API di utilità per sviluppatori di Adaptive Forms per testare Adaptive Forms. L’SDK Calvin è basato su [Framework di test di Hobbes.js](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it). L’SDK Calvin è disponibile da AEM Forms 6.3 in poi.
+Calvin SDK è un’API di utilità per sviluppatori di Adaptive Forms per testare Adaptive Forms. L&#39;SDK Calvin è basato sul framework di test [Hobbes.js](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it). L’SDK Calvin è disponibile da AEM Forms 6.3 in poi.
 
 In questo tutorial, creerai quanto segue:
 
@@ -31,7 +31,7 @@ In questo tutorial, creerai quanto segue:
 
 ## Guida introduttiva {#getting-started}
 
-[Scaricare e installare le risorse tramite Gestione pacchetti](assets/testingadaptiveformsusingcalvinsdk1.zip)Il pacchetto contiene script di esempio e diversi Forms adattivi. Questi Forms adattivi sono generati con la versione 6.3 di AEM Forms. Si consiglia di creare nuovi moduli specifici per la versione di AEM Forms in uso, se si esegue il test su AEM Forms 6.4 o versione successiva. Gli script di esempio mostrano varie API dell’SDK Calvin disponibili per testare Adaptive Forms. I passaggi generali per testare l’AEM Adaptive Forms sono i seguenti:
+[Scarica e installa Assets utilizzando Gestione pacchetti](assets/testingadaptiveformsusingcalvinsdk1.zip)Il pacchetto contiene script di esempio e diversi Forms adattivi.Questi Forms adattivi sono generati con la versione 6.3 di AEM Forms. Si consiglia di creare nuovi moduli specifici per la versione di AEM Forms in uso, se si esegue il test su AEM Forms 6.4 o versione successiva. Gli script di esempio mostrano varie API dell’SDK Calvin disponibili per testare Adaptive Forms. I passaggi generali per testare l’AEM Adaptive Forms sono i seguenti:
 
 * Passare al modulo da testare
 * Imposta il valore del campo
@@ -50,9 +50,9 @@ var mortgageFormTS = new hobs.TestSuite("Mortgage Form Test", {
 
 Il codice riportato sopra crea una nuova suite di test.
 
-* Il nome della suite di test in questo caso è &quot; `Mortgage Form Test` &quot;.
+* Il nome della suite di test in questo caso è &#39; `Mortgage Form Test` &#39;.
 * Fornito è il percorso assoluto nel AEM del file js che contiene la suite di test.
-* Parametro di registro se impostato su &#39; `true` &quot;, rende la suite di test disponibile nell’interfaccia utente di test.
+* Il parametro register, se impostato su &#39; `true` &#39;, rende la suite di test disponibile nell&#39;interfaccia utente di test.
 
 ```javascript
 .addTestCase(new hobs.TestCase("Calculate amount to borrow")
@@ -69,16 +69,16 @@ Il codice riportato sopra crea una nuova suite di test.
 
 È possibile aggiungere dei test case alla suite di test da eseguire su un modulo adattivo.
 
-* Per aggiungere un test case al gruppo di test, utilizza `addTestCase` metodo dell&#39;oggetto TestSuite.
-* Il `addTestCase` Il metodo accetta un oggetto TestCase come parametro.
-* Per creare TestCase, utilizza `hobs.TestCase(..)` metodo.
+* Per aggiungere un test case al gruppo di test, utilizzare il metodo `addTestCase` dell&#39;oggetto TestSuite.
+* Il metodo `addTestCase` utilizza un oggetto TestCase come parametro.
+* Per creare TestCase, utilizzare il metodo `hobs.TestCase(..)`.
 * Nota: il primo parametro è il nome del test case che verrà visualizzato nell’interfaccia utente.
 * Dopo aver creato un test case è possibile aggiungere azioni al test case.
-* Azioni, tra cui `navigateTo`, `asserts.isTrue` possono essere aggiunte come azioni al test case.
+* Le azioni che includono `navigateTo`, `asserts.isTrue` possono essere aggiunte come azioni al test case.
 
 ## Esecuzione dei test automatizzati {#running-the-automated-tests}
 
-[Openthetestsuite](http://localhost:4502/libs/granite/testing/hobbes.html)Espandi la Suite di test ed esegui i test. Se tutto viene eseguito correttamente, verrà visualizzato il seguente output.
+[Openthetestsuite](http://localhost:4502/libs/granite/testing/hobbes.html)Espandere la suite di test ed eseguire i test. Se tutto viene eseguito correttamente, verrà visualizzato il seguente output.
 
 ![calvinsdk](assets/calvinimage.png)
 

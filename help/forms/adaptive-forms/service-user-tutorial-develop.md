@@ -25,14 +25,14 @@ Ulteriori informazioni sui dettagli di [creazione e utilizzo di utenti del servi
 
 Questo articolo illustra come creare un utente di sistema e configurare le proprietà di mappatura utente.
 
-1. Accedi a [http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)
+1. Passa a [http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)
 1. Accedi come &#39; admin &#39;
 1. Fai clic su &quot;Amministrazione utenti&quot;
 1. Fai clic su &quot;Crea utente di sistema&quot;
 1. Imposta il tipo di ID utente come &quot;data&quot; e fai clic sull’icona verde per completare il processo di creazione dell’utente di sistema
 1. [Apri Configuration Manager](http://localhost:4502/system/console/configMgr)
-1. Cerca _Servizio User Mapper di Apache Sling_ e fai clic su per aprire le proprietà
-1. Fai clic su *+* (più) per aggiungere la seguente mappatura del servizio
+1. Cerca _Servizio User Mapper di Apache Sling Service_ e fai clic per aprire le proprietà
+1. Fai clic sull&#39;icona *+* (segno più) per aggiungere la seguente mappatura del servizio
 
    * DevelopingWithServiceUser.core:getresourceresolver=data
    * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
@@ -44,14 +44,14 @@ Nell’impostazione di configurazione precedente DevelopingWithServiceUser.core 
 Possiamo anche ottenere il risolutore risorse per conto dell’utente fd-service. Questo utente del servizio viene utilizzato per i servizi documentali. Ad esempio, se desideri certificare/applicare i diritti di utilizzo, utilizzeremo il risolutore risorse dell’utente fd-service per eseguire le operazioni
 
 1. [Scarica e decomprimi il file zip associato a questo articolo.](assets/developingwithserviceuser.zip)
-1. Accedi a [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
+1. Passa a [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 1. Carica e avvia il bundle OSGi
 1. Assicurati che il bundle sia in stato attivo
-1. Ora hai creato una *Utente di sistema* e ha anche implementato *Pacchetto utenti del servizio*.
+1. Hai creato un *utente di sistema* e distribuito anche il *bundle utente di servizio*.
 
    Per fornire l’accesso a /content, assegna all’utente di sistema (&quot;dati&quot;) le autorizzazioni di lettura sul nodo del contenuto.
 
-   1. Accedi a [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
+   1. Passa a [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
    1. Cerca dati utente &#39;. Si tratta dello stesso utente di sistema creato nel passaggio precedente.
    1. Fai doppio clic sull’utente e quindi fai clic sulla scheda &quot;Autorizzazioni&quot;
    1. Concedi l’accesso in lettura alla cartella &quot;content&quot;.

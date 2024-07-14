@@ -1,6 +1,6 @@
 ---
 title: 'Designer Preview HTML Preview: come abilitare Preview HTML'
-description: Passaggi per configurare l’anteprima di HTML in Designer
+description: Procedura per configurare HTML Preview in Designer
 type: Troubleshooting
 role: Developer
 level: Intermediate

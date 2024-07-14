@@ -29,12 +29,12 @@ Per eseguire il caso d’uso precedente, in genere si scrive un servizio OSGi ch
 
 ## Crea progetto Maven
 
-Il primo passaggio consiste nel creare un progetto Maven utilizzando l’archetipo Maven di Adobe appropriato. I passaggi dettagliati sono elencati in [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una volta importato il progetto Maven in Eclipse, sei pronto per iniziare a scrivere il primo componente OSGi che può essere utilizzato nel passaggio del processo.
+Il primo passaggio consiste nel creare un progetto Maven utilizzando l’archetipo Maven di Adobe appropriato. I passaggi dettagliati sono elencati in questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una volta importato il progetto Maven in Eclipse, sei pronto per iniziare a scrivere il primo componente OSGi che può essere utilizzato nel passaggio del processo.
 
 
 ### Crea classe che implementa WorkflowProcess
 
-Apri il progetto Maven nell’IDE Eclipse. Espandi **nomeprogetto** > **core** cartella. Espandi `src/main/java` cartella. Dovresti vedere un pacchetto che termina con `core`. Creare una classe Java™ che implementa WorkflowProcess in questo pacchetto. Sarà necessario sovrascrivere il metodo execute. La firma del metodo execute è la seguente:
+Apri il progetto Maven nell’IDE Eclipse. Espandere la cartella **projectname** > **core**. Espandere la cartella `src/main/java`. Dovresti trovare un pacchetto che termina con `core`. Creare una classe Java™ che implementa WorkflowProcess in questo pacchetto. Sarà necessario sovrascrivere il metodo execute. La firma del metodo execute è la seguente:
 
 ```java
 public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) throws WorkflowException 
@@ -42,9 +42,9 @@ public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaData
 
 Il metodo execute consente di accedere alle tre variabili seguenti:
 
-**WorkItem**: la variabile workItem consente di accedere ai dati relativi al flusso di lavoro. È disponibile la documentazione API pubblica [qui.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkItem**: la variabile workItem consentirà l&#39;accesso ai dati relativi al flusso di lavoro. La documentazione API pubblica è disponibile [qui.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**WorkflowSession**: questa variabile workflowSession consente di controllare il flusso di lavoro. È disponibile la documentazione API pubblica [qui](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html).
+**WorkflowSession**: questa variabile workflowSession consente di controllare il flusso di lavoro. La documentazione API pubblica è disponibile [qui](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html).
 
 **MetaDataMap**: tutti i metadati associati al flusso di lavoro. Tutti gli argomenti di processo passati alla fase del processo sono disponibili utilizzando l&#39;oggetto MetaDataMap.[Documentazione API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
@@ -133,7 +133,7 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
             }
 ```
 
-Riga 1 - definisce le proprietà del componente. Il `process.label` Questa proprietà viene visualizzata quando si associa il componente OSGi alla fase del processo, come illustrato in una delle schermate seguenti.
+Riga 1 - definisce le proprietà del componente. La proprietà `process.label` è quella che verrà visualizzata quando si associa il componente OSGi al passaggio del processo, come mostrato in una delle schermate seguenti.
 
 Righe 13-15 - Gli argomenti di processo passati a questo componente OSGi vengono suddivisi utilizzando il separatore &quot;,&quot;. I valori per attachmentPath e saveToLocation vengono quindi estratti dalla matrice di stringhe.
 
@@ -143,19 +143,19 @@ Righe 13-15 - Gli argomenti di processo passati a questo componente OSGi vengono
 
 Questi due valori vengono passati come argomenti del processo, come illustrato nella schermata seguente.
 
-![ProcessStep](assets/implement-process-step.gif)
+![PassaggioProcesso](assets/implement-process-step.gif)
 
 Il servizio QueryBuilder viene utilizzato per eseguire query sui nodi di tipo `nt:file` nella cartella attachmentsPath. Il resto del codice scorre i risultati della ricerca per creare l&#39;oggetto Document e salvarlo nel file system.
 
 
 >[!NOTE]
 >
->Poiché si utilizza un oggetto Document specifico di AEM Forms, è necessario includere nel progetto Maven la dipendenza aemfd-client-sdk. L’ID del gruppo è `com.adobe.aemfd` e l’id degli artefatti è `aemfd-client-sdk`.
+>Poiché si utilizza un oggetto Document specifico di AEM Forms, è necessario includere nel progetto Maven la dipendenza aemfd-client-sdk. L&#39;ID gruppo è `com.adobe.aemfd` e l&#39;ID artefatti è `aemfd-client-sdk`.
 
 #### Creare e distribuire
 
 [Crea il bundle come descritto qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
-[Assicurati che il bundle sia distribuito e in stato attivo](http://localhost:4502/system/console/bundles)
+[Assicurarsi che il bundle sia distribuito e in stato attivo](http://localhost:4502/system/console/bundles)
 
 Crea un modello di flusso di lavoro. Trascina e rilascia il passaggio del processo nel modello di flusso di lavoro. Associare la fase del processo con &quot;Salva allegati modulo adattivo nel file system&quot;.
 

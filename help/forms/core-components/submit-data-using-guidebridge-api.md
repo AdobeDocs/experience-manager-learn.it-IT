@@ -25,7 +25,7 @@ Per eseguire questo caso d’uso, è necessario accedere e inviare i dati del mo
 I dati del modulo vengono salvati nell’evento clic di un pulsante utilizzando l’editor di regole
 ![editor di regole](assets/rule-editor.png)
 
-È stata scritta la seguente funzione JavaScript per inviare i dati all&#39;endpoint specificato
+La seguente funzione JavaScript è stata scritta per inviare i dati all&#39;endpoint specificato
 
 ```javascript
 /**

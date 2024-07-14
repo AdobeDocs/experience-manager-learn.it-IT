@@ -32,7 +32,7 @@ Adobe Experience Manager (AEM) e Adobe Target sono soluzioni potenti con funzion
 
 Questo video illustra tre approcci per l’utilizzo di AEM e Target e spiega cosa funziona meglio per la tua organizzazione.
 
-* __Scenario 1__ Personalizzazione tramite le offerte dei frammenti di esperienza AEM
+* __Scenario 1:__ Personalization utilizzando le offerte dei frammenti di esperienza AEM
 
    1. [Aggiungere Adobe Target al sito Web AEM](./add-target-launch-extension.md)
    1. [Attivare una chiamata Adobe Target dai tag](./load-and-fire-target.md)
@@ -40,13 +40,13 @@ Questo video illustra tre approcci per l’utilizzo di AEM e Target e spiega cos
    1. [Esportare i frammenti esperienza AEM in Adobe Target](./export-experience-fragment-target.md)
    1. [Personalizzare parte di una pagina web utilizzando le offerte dei frammenti di esperienza](./create-target-activity.md)
 
-* __Scenario 2__ Personalizzazione mediante il Compositore esperienza visivo
+* __Scenario 2:__ Personalization con Compositore esperienza visivo
 
    1. [Aggiungere Adobe Target al sito Web AEM](./add-target-launch-extension.md)
    1. [Attivare una chiamata Adobe Target dai tag](./load-and-fire-target.md)
    1. [Personalizzare parte di una pagina web utilizzando il Compositore esperienza visivo](./personalization-using-vec.md)
 
-* __Scenario 3__ Personalizzazione delle esperienze di pagine web complete
+* __Scenario 3:__ Personalization di esperienze di pagine Web complete
 
    1. [Aggiungere Adobe Target al sito Web AEM](./add-target-launch-extension.md)
    1. [Attivare una chiamata Adobe Target dai tag](./load-and-fire-target.md)

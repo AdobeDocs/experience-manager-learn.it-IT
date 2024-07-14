@@ -19,7 +19,7 @@ ht-degree: 4%
 
 # Introduzione
 
-Questa esercitazione spiega come implementare un semplice caso d’uso della precompilazione **componente core** modulo basato sui dati e sugli allegati inviati.
+In questa esercitazione imparerai a implementare un semplice caso d&#39;uso per precompilare un modulo basato su **Componente core** con i dati e gli allegati inviati.
 
 ## Prerequisiti
 

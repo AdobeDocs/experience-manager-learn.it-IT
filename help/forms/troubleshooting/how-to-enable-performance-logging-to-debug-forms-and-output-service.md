@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Abilitare la registrazione delle prestazioni in AEM Forms per eseguire il debug dei problemi relativi al servizio Forms e di output
 
-*Questo video illustra il processo per abilitare la registrazione delle prestazioni in AEM Forms per eseguire il debug dei problemi relativi al servizio Forms &amp; output.*
+*Questo video illustra la procedura per abilitare la registrazione delle prestazioni in AEM Forms per eseguire il debug dei problemi relativi al servizio Forms &amp; output .*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335499?quality=12&learn=on)

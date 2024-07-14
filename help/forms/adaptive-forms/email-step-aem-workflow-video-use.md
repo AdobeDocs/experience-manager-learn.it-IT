@@ -28,7 +28,7 @@ Come parte di questo articolo, ti guideremo attraverso il seguente caso d’uso:
 1. All’invio del modulo, viene attivato il flusso di lavoro AEM
 1. Il flusso di lavoro AEM utilizza il componente Invia e-mail per inviare un’e-mail con il DoR come allegato
 
-Prima di utilizzare il passaggio Invia e-mail, accertati di configurare il servizio e-mail Day CQ dal [configMgr](http://localhost:4502/system/console/configMgr). Fornisci i valori specifici dell’ambiente
+Prima di utilizzare il passaggio Invia e-mail, accertati di configurare il servizio di posta Day CQ da [configMgr](http://localhost:4502/system/console/configMgr). Fornisci i valori specifici dell’ambiente
 
 ![Configura servizio di posta Day CQ](assets/mailservice.png)
 
@@ -42,13 +42,13 @@ Per eseguire l&#39;esempio sul sistema, eseguire le operazioni seguenti:
 
 1. [Distribuire il bundle Developingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-1. [Scarica e installa il bundle setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)Questo bundle contiene il codice per la creazione delle proprietà dei metadati come parte del passaggio del processo del flusso di lavoro.
+1. [Scarica e installa il bundle setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)Questo bundle contiene il codice per la creazione delle proprietà dei metadati come parte del passaggio del flusso di lavoro.
 1. [Configura servizio di posta Day CQ](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html)
 1. [Importa e installa in CRX le risorse associate a questo articolo utilizzando Gestione pacchetti](assets/emaildoraemformskt.zip)
 1. Avvia il [modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled). Compila i campi obbligatori e invia.
 1. Dovresti ricevere un’e-mail con DocumentOfRecord come allegato
 
-Esplora [modello di flusso di lavoro](http://localhost:4502/editor.html/conf/global/settings/workflow/models/emaildor.html)
+Esplora il [modello di flusso di lavoro](http://localhost:4502/editor.html/conf/global/settings/workflow/models/emaildor.html)
 
 Dai un’occhiata al passaggio del processo di flusso di lavoro. Il codice personalizzato associato alla fase del processo crea i nomi delle proprietà dei metadati e ne imposta i valori dai dati inviati. Questi valori vengono quindi utilizzati dal componente Invia e-mail.
 
@@ -57,4 +57,4 @@ Dai un’occhiata al passaggio del processo di flusso di lavoro. Il codice perso
 >In AEM Forms 6.5 e versioni successive non è necessario questo codice personalizzato per creare le proprietà dei metadati. Utilizza la funzionalità delle variabili nel flusso di lavoro AEM
 
 Assicurati che la scheda Allegati del componente Invia e-mail sia configurata come da schermata seguente
-![Scheda Invia allegato e-mail](assets/sendemailcomponentconfigure.jpg)Il valore &quot;DOR.pdf&quot; deve corrispondere al valore specificato nel percorso del documento record specificato nelle opzioni di invio del modulo adattivo.
+![Invia allegato e-mail](assets/sendemailcomponentconfigure.jpg)Il valore &quot;DOR.pdf&quot; deve corrispondere al valore specificato nel percorso del documento record specificato nelle opzioni di invio del modulo adattivo.

@@ -21,19 +21,19 @@ ht-degree: 0%
 Dimostrazione della funzionalità di trascinamento per la creazione di PDF con AEM Forms
 
 PDFG sta per PDF Generation. Ciò significa che è possibile convertire diversi formati di file in PDF. I documenti più comuni sono i documenti di Microsoft Office. PDFG fa parte di AEM Forms dalla versione 6.1.
-[Il JavaScript per l’API PDFG è elencato qui](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html)
+[Il file javadoc per l&#39;API PDFG è elencato qui](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html)
 
-Le risorse associate a questo articolo ti consentiranno di trascinare e rilasciare i documenti di MS Office o il file JPG nella zona di rilascio della pagina HTML. Una volta eliminato il documento, viene richiamato il servizio PDFG e convertito il documento in PDF e salvato nel file system del server AEM.
+Le risorse associate a questo articolo ti consentiranno di trascinare e rilasciare documenti di MS Office o file JPG HTML nella zona di rilascio della pagina. Una volta eliminato il documento, viene richiamato il servizio PDFG e convertito il documento in PDF e salvato nel file system del server AEM.
 
 Per installare le risorse demo, effettua le seguenti operazioni
 
 1. Configurare PDFG come indicato in questo documento [qui](https://helpx.adobe.com/experience-manager/6-4/forms/using/install-configure-pdf-generator.html).
 1. Segui la documentazione relativa alla tua versione di AEM Forms.
 1. [Importa e installa le risorse correlate a questo articolo utilizzando Gestione pacchetti.](assets/createpdfgdemov2.zip)
-1. [Passa a post.jsp](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) in CRX
+1. [Passa a post.jsp](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) nel CRX
 1. Modifica la posizione di salvataggio in base alle preferenze (riga 9)
 1. Salva le modifiche.
-1. Apri [pagina html](http://localhost:4502/content/DocumentServices/CreatePDFG.html) per trascinare e rilasciare i file per la conversione.
+1. Apri la [pagina HTML](http://localhost:4502/content/DocumentServices/CreatePDFG.html) per trascinare i file per la conversione.
 1. Rilascia un file di Word o un file jpg nella zona di rilascio.
 1. Il documento di input viene convertito in PDF e salvato nella stessa posizione di cui al punto 4.
 

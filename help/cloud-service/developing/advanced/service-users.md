@@ -14,7 +14,7 @@ duration: 1053
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '62'
-ht-degree: 4%
+ht-degree: 11%
 
 ---
 
@@ -26,8 +26,8 @@ Scopri come creare e utilizzare gli utenti del servizio nel codice AEM per forni
 
 ## Riferimenti
 
-+ [Documentazione sull’inizializzazione dell’archivio Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html)
-+ [Documentazione di autenticazione del servizio Sling](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html)
++ [Documentazione sull&#39;inizializzazione dell&#39;archivio Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html)
++ [Documentazione sull&#39;autenticazione del servizio Sling](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html)
 
 ## Codice
 

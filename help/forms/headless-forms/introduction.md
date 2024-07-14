@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Incorporazione di un modulo adattivo headless
 
-Questo [Il tutorial illustra le varie API headless](https://opensource.adobe.com/aem-forms-af-runtime/api/#section/Introduction) che ti consentono di elencare, visualizzare e inviare il modulo.
+Questa esercitazione di [riguarderà le varie API headless](https://opensource.adobe.com/aem-forms-af-runtime/api/#section/Introduction) che ti consentono di elencare, visualizzare e inviare il modulo.
 
 Questo articolo tratta le varie API headless fornite per consentirti di elencare, visualizzare e inviare moduli adattivi in modo headless.
 
@@ -26,7 +26,7 @@ Questo articolo presuppone che tu disponga di un’app a pagina singola esistent
 
 La schermata seguente mostra un modulo per contattarci incorporato nell’SPA
 
-![contact-us-form](./assets/contact-us-form.png)
+![modulo per i contatti](./assets/contact-us-form.png)
 
 ## Prerequisiti
 
@@ -34,7 +34,7 @@ La schermata seguente mostra un modulo per contattarci incorporato nell’SPA
 
 * Istanza in esecuzione di AEM Forms 6.5.16
 
-* [Abilitare i moduli headless nell’istanza di authoring e pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en)
+* [Abilita i moduli headless nell&#39;istanza di authoring e pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en)
 
 ## Passaggi successivi
 

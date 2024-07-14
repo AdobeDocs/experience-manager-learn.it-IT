@@ -25,7 +25,7 @@ Scopri come generare un’immagine utilizzando OpenAI o DALL·E 2 e caricarla in
 
 >[!VIDEO](https://video.tv.adobe.com/v/3413093?quality=12&learn=on)
 
-Questo esempio di estensione della console Frammenti di contenuto AEM è un [barra delle azioni](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) che genera l’immagine digitale dall’input del linguaggio naturale utilizzando [API OpenAI](https://openai.com/api/) o [DALL·E 2](https://openai.com/dall-e-2/). L’immagine generata viene caricata nel DAM dell’AEM e la proprietà immagine del frammento di contenuto selezionato viene aggiornata per fare riferimento a questa immagine appena generata e caricata da DAM.
+Questo esempio di estensione della console Frammenti di contenuto AEM è un&#39;estensione [action bar](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) che genera un&#39;immagine digitale dall&#39;input del linguaggio naturale utilizzando [API OpenAI](https://openai.com/api/) o [DALL·E 2](https://openai.com/dall-e-2/). L’immagine generata viene caricata nel DAM dell’AEM e la proprietà immagine del frammento di contenuto selezionato viene aggiornata per fare riferimento a questa immagine appena generata e caricata da DAM.
 
 In questo esempio imparerai:
 
@@ -35,17 +35,17 @@ In questo esempio imparerai:
 
 Il flusso funzionale dell’estensione di esempio è il seguente:
 
-![Flusso di azione di Adobe I/O Runtime per la generazione di immagini digitali](./assets/digital-image-generation/flow.png){align="center"}
+![Flusso di azioni Adobe I/O Runtime per la generazione di immagini digitali](./assets/digital-image-generation/flow.png){align="center"}
 
-1. Seleziona Frammento di contenuto e fai clic su dell’estensione `Generate Image` pulsante in [barra delle azioni](#extension-registration) apre il [modale](#modal).
-1. Il [modale](#modal) visualizza un modulo di input personalizzato creato con [Spettro di reazione](https://react-spectrum.adobe.com/react-spectrum/).
-1. L’invio del modulo invia l’utente fornito `Image Description` testo, il frammento di contenuto selezionato e l’host AEM per [azione Adobe I/O Runtime personalizzata](#adobe-io-runtime-action).
-1. Il [Azione Adobe I/O Runtime](#adobe-io-runtime-action) convalida gli input.
-1. Poi chiama OpenAI’s [Generazione di immagini](https://beta.openai.com/docs/guides/images/image-generation-beta) API e utilizza `Image Description` testo per specificare l&#39;immagine da generare.
-1. Il [generazione di immagini](https://beta.openai.com/docs/guides/images/image-generation-beta) l&#39;endpoint crea un&#39;immagine originale di dimensioni _1024x1024_ pixel utilizzando il valore del parametro della richiesta di prompt e restituisce l’URL dell’immagine generato come risposta.
-1. Il [Azione Adobe I/O Runtime](#adobe-io-runtime-action) scarica l’immagine generata in fase di esecuzione di App Builder.
-1. Quindi avvia il caricamento dell’immagine dal runtime di App Builder a AEM DAM in un percorso predefinito.
-1. L’as a Cloud Service AEM salva l’immagine in DAM e restituisce le risposte di esito positivo o negativo all’azione Adobe I/O Runtime. La risposta di caricamento corretta aggiorna il valore della proprietà dell’immagine del frammento di contenuto selezionato utilizzando un’altra richiesta HTTP all’AEM dall’azione Adobe I/O Runtime.
+1. Seleziona Frammento di contenuto e fai clic sul pulsante `Generate Image` dell&#39;estensione nella [barra delle azioni](#extension-registration) per aprire [modale](#modal).
+1. [modale](#modal) visualizza un modulo di input personalizzato creato con [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/).
+1. L&#39;invio del modulo invia all&#39;utente il testo `Image Description` fornito, il frammento di contenuto selezionato e l&#39;host AEM all&#39;[azione Adobe I/O Runtime personalizzata](#adobe-io-runtime-action).
+1. L&#39;[azione Adobe I/O Runtime](#adobe-io-runtime-action) convalida gli input.
+1. Successivamente, chiama l&#39;API [Image generation](https://beta.openai.com/docs/guides/images/image-generation-beta) di OpenAI e utilizza il testo `Image Description` per specificare quale immagine deve essere generata.
+1. L&#39;endpoint [generazione immagine](https://beta.openai.com/docs/guides/images/image-generation-beta) crea un&#39;immagine originale con dimensioni di _1024x1024_ pixel utilizzando il valore del parametro della richiesta di richiesta di richiesta di conferma e restituisce l&#39;URL immagine generato come risposta.
+1. L&#39;[azione Adobe I/O Runtime](#adobe-io-runtime-action) scarica l&#39;immagine generata nel runtime di App Builder.
+1. Quindi avvia il caricamento dell’immagine dal runtime di App Builder al DAM AEM in un percorso predefinito.
+1. AEM as a Cloud Service salva l’immagine in DAM e restituisce le risposte di esito positivo o negativo all’azione Adobe I/O Runtime. La risposta di caricamento corretta aggiorna il valore della proprietà dell’immagine del frammento di contenuto selezionato utilizzando un’altra richiesta HTTP all’AEM dall’azione Adobe I/O Runtime.
 1. Il modale riceve la risposta dall’azione Adobe I/O Runtime e fornisce il collegamento dei dettagli della risorsa AEM dell’immagine appena generata e caricata.
 
 ## Punto di estensione
@@ -58,26 +58,26 @@ Questo esempio si estende al punto di estensione `actionBar` per aggiungere un p
 
 ## Estensione di esempio
 
-L’esempio utilizza un progetto Adobe Developer Console esistente e le seguenti opzioni durante l’inizializzazione dell’app di App Builder tramite `aio app init`.
+Nell&#39;esempio viene utilizzato un progetto Adobe Developer Console esistente e le opzioni seguenti durante l&#39;inizializzazione dell&#39;app App Builder tramite `aio app init`.
 
-+ Selezionare i modelli da cercare: `All Extension Points`
-+ Scegliere i modelli da installare:` @adobe/aem-cf-admin-ui-ext-tpl`
-+ Nome dell’estensione: `Image generation`
-+ Fornisci una breve descrizione dell’estensione: `An example action bar extension that generates an image using OpenAI and uploads it to AEM DAM.`
-+ Quale versione vuoi iniziare?: `0.0.1`
++ Scegliere i modelli da cercare: `All Extension Points`
++ Scegli i modelli da installare:` @adobe/aem-cf-admin-ui-ext-tpl`
++ Specificare il nome dell&#39;estensione: `Image generation`
++ Fornire una breve descrizione dell&#39;estensione: `An example action bar extension that generates an image using OpenAI and uploads it to AEM DAM.`
++ Quale versione iniziare?: `0.0.1`
 + Come procedere?
    + `Add a custom button to Action Bar`
-      + Fornisci il nome dell’etichetta del pulsante: `Generate Image`
+      + Specificare il nome dell&#39;etichetta per il pulsante: `Generate Image`
       + È necessario visualizzare un modale per il pulsante? `y`
    + `Add server-side handler`
       + Adobe I/O Runtime consente di richiamare il codice senza server su richiesta. Specificare il nome dell&#39;azione: `generate-image`
 
-L&#39;app generata per l&#39;estensione App Builder viene aggiornata come descritto di seguito.
+L&#39;app di estensione App Builder generata viene aggiornata come descritto di seguito.
 
 ### Configurazione iniziale
 
-1. Registrati gratis [API OpenAI](https://openai.com/api/) e creare un [Chiave API](https://beta.openai.com/account/api-keys)
-1. Aggiungi questa chiave al progetto App Builder `.env` file
+1. Registrati per un account API ](https://openai.com/api/) OpenAI gratuito [e crea una [chiave API](https://beta.openai.com/account/api-keys)
+1. Aggiungi questa chiave al file `.env` del progetto App Builder
 
    ```
        # Specify your secrets here
@@ -91,7 +91,7 @@ L&#39;app generata per l&#39;estensione App Builder viene aggiornata come descri
        ...
    ```
 
-1. Superato `OPENAI_API_KEY` come parametro per l&#39;azione Adobe I/O Runtime, aggiorna il `src/aem-cf-console-admin-1/ext.config.yaml`
+1. Passa `OPENAI_API_KEY` come parametro per l&#39;azione Adobe I/O Runtime, aggiorna `src/aem-cf-console-admin-1/ext.config.yaml`
 
    ```yaml
        ...
@@ -112,30 +112,30 @@ L&#39;app generata per l&#39;estensione App Builder viene aggiornata come descri
    ```
 
 1. Installa nelle librerie di Node.js
-   1. [Libreria OpenAI Node.js](https://github.com/openai/openai-node#installation) - per richiamare facilmente l’API OpenAI
+   1. [Libreria OpenAI Node.js](https://github.com/openai/openai-node#installation) - per richiamare facilmente l&#39;API OpenAI
    1. [Caricamento AEM](https://github.com/adobe/aem-upload#install) - per caricare immagini nelle istanze AEM-CS.
 
 
 >[!TIP]
 >
->Nelle sezioni seguenti vengono fornite informazioni sui file JavaScript delle azioni chiave React e Adobe I/O Runtime. Per riferimento, i file chiave da `web-src` e  `actions` del progetto AppBuilder, vedere [adobe-appbuilder-cfc-ext-image-generation-code.zip](./assets/digital-image-generation/adobe-appbuilder-cfc-ext-image-generation-code.zip).
+>Nelle sezioni seguenti vengono fornite informazioni sui file JavaScript delle azioni chiave di React e Adobe I/O Runtime. Per riferimento, vengono forniti i file chiave della cartella `web-src` e `actions` del progetto AppBuilder, vedi [adobe-appbuilder-cfc-ext-image-generation-code.zip](./assets/digital-image-generation/adobe-appbuilder-cfc-ext-image-generation-code.zip).
 
 
 ### Route delle app{#app-routes}
 
-Il `src/aem-cf-console-admin-1/web-src/src/components/App.js` contiene [Router React](https://reactrouter.com/en/main).
+`src/aem-cf-console-admin-1/web-src/src/components/App.js` contiene il [router React](https://reactrouter.com/en/main).
 
 Esistono due insiemi logici di route:
 
-1. La prima route mappa le richieste a `index.html`, che richiama il componente React responsabile della [registrazione dell&#39;estensione](#extension-registration).
+1. La prima route mappa le richieste a `index.html`, che richiama il componente React responsabile della [registrazione estensione](#extension-registration).
 
    ```javascript
    <Route index element={<ExtensionRegistration />} />
    ```
 
-1. Il secondo set di route associa gli URL ai componenti React che eseguono il rendering del contenuto della finestra modale dell’estensione. Il `:selection` param rappresenta un percorso di frammento di contenuto elenco delimitato.
+1. Il secondo set di route associa gli URL ai componenti React che eseguono il rendering del contenuto della finestra modale dell’estensione. Il parametro `:selection` rappresenta un percorso di frammento di contenuto elenco delimitato.
 
-   Se l’estensione dispone di più pulsanti per richiamare azioni discrete, ciascuno [registrazione dell&#39;estensione](#extension-registration) viene mappato su un percorso definito qui.
+   Se l&#39;estensione dispone di più pulsanti per richiamare azioni discrete, ogni [registrazione estensione](#extension-registration) viene mappata a una route definita qui.
 
    ```javascript
    <Route
@@ -146,11 +146,11 @@ Esistono due insiemi logici di route:
 
 ### Registrazione dell’estensione
 
-`ExtensionRegistration.js`, mappato a `index.html` è il punto di ingresso per l&#39;estensione AEM e definisce:
+`ExtensionRegistration.js`, mappato alla route `index.html`, è il punto di ingresso per l&#39;estensione AEM e definisce:
 
-1. La posizione del pulsante di estensione viene visualizzata nell’esperienza di authoring AEM (`actionBar` o `headerMenu`)
-1. Definizione del pulsante di estensione in `getButtons()` funzione
-1. Il gestore di clic per il pulsante, nel `onClick()` funzione
+1. La posizione del pulsante di estensione viene visualizzata nell&#39;esperienza di creazione AEM (`actionBar` o `headerMenu`)
+1. Definizione del pulsante di estensione nella funzione `getButtons()`
+1. Gestore di clic per il pulsante, nella funzione `onClick()`
 
 + `src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -211,19 +211,19 @@ export default ExtensionRegistration;
 
 ### Finestra modale
 
-Ogni percorso dell&#39;estensione, come definito in [`App.js`](#app-routes), viene mappato su un componente React che viene riprodotto nel modale dell’estensione.
+Ogni route dell&#39;estensione, definita in [`App.js`](#app-routes), viene mappata a un componente React che esegue il rendering nella finestra modale dell&#39;estensione.
 
-In questa app di esempio è presente un componente React modale (`GenerateImageModal.js`) che ha quattro stati:
+Nell&#39;app di esempio è presente un componente React modale (`GenerateImageModal.js`) con quattro stati:
 
 1. Caricamento, che indica che l’utente deve attendere
 1. Il messaggio di avviso che suggerisce agli utenti di selezionare un solo frammento di contenuto alla volta
 1. Il modulo Genera immagine che consente all’utente di fornire una descrizione dell’immagine nel linguaggio naturale.
 1. La risposta dell’operazione di generazione delle immagini, che fornisce il collegamento dei dettagli delle risorse AEM dell’immagine caricata appena generata.
 
-È importante sottolineare che qualsiasi interazione con l’AEM derivante dall’estensione deve essere delegata ad un [Azione AppBuilder Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), un processo separato senza server in esecuzione in [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
+È importante sottolineare che qualsiasi interazione con AEM dall&#39;estensione deve essere delegata a un&#39;azione di Adobe I/O Runtime [AppBuilder](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), che è un processo separato senza server in esecuzione in [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
 L’utilizzo delle azioni di Adobe I/O Runtime per comunicare con l’AEM ed evitare problemi di connettività CORS (Cross-Origin Resource Sharing).
 
-Quando _Genera immagine_ viene inviato un modulo personalizzato `onSubmitHandler()` richiama l’azione Adobe I/O Runtime, passando la descrizione dell’immagine, l’host AEM corrente (dominio) e il token di accesso AEM dell’utente. L’azione chiama quindi OpenAI’s [Generazione di immagini](https://beta.openai.com/docs/guides/images/image-generation-beta) API per generare un’immagine utilizzando la descrizione dell’immagine inviata. Utilizzo successivo [Caricamento AEM](https://github.com/adobe/aem-upload) del modulo nodo `DirectBinaryUpload` classe carica l&#39;immagine generata su AEM e infine utilizza [API per frammenti di contenuto AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) per aggiornare i frammenti di contenuto.
+Quando il modulo _Genera immagine_ viene inviato, un `onSubmitHandler()` personalizzato richiama l&#39;azione Adobe I/O Runtime, trasmettendo la descrizione dell&#39;immagine, l&#39;host AEM corrente (dominio) e il token di accesso AEM dell&#39;utente. L&#39;azione chiama quindi l&#39;API [Image generation](https://beta.openai.com/docs/guides/images/image-generation-beta) di OpenAI per generare un&#39;immagine utilizzando la descrizione dell&#39;immagine inviata. Successivamente, utilizzando la classe `DirectBinaryUpload` del modulo nodo [Caricamento AEM](https://github.com/adobe/aem-upload), carica l&#39;immagine generata nell&#39;AEM e infine utilizza l&#39;[API per frammenti di contenuto AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) per aggiornare i frammenti di contenuto.
 
 Quando viene ricevuta la risposta dall’azione Adobe I/O Runtime, il modale viene aggiornato per visualizzare i risultati dell’operazione di generazione dell’immagine.
 
@@ -482,25 +482,25 @@ export default function GenerateImageModal() {
 
 >[!NOTE]
 >
->In `buildAssetDetailsURL()` funzione, il `aemAssetdetailsURL` valore variabile presuppone che il valore [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html#overview) è abilitato. Se hai disabilitato Unified Shell, devi rimuovere `/ui#/aem` dal valore della variabile.
+>Nella funzione `buildAssetDetailsURL()`, il valore della variabile `aemAssetdetailsURL` presuppone che [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html#overview) sia abilitato. Se Unified Shell è stato disabilitato, è necessario rimuovere `/ui#/aem` dal valore della variabile.
 
 
 ### Azione Adobe I/O Runtime
 
-Un’app di App Builder per l’estensione dell’AEM può definire o utilizzare 0 o più azioni Adobe I/O Runtime.
+Un’app App Builder per l’estensione dell’AEM può definire o utilizzare 0 o più azioni Adobe I/O Runtime.
 L’azione runtime di Adobe è responsabile del lavoro che richiede l’interazione con AEM, Adobe o servizi web di terze parti.
 
-In questa app di esempio, il `generate-image` L&#39;azione Adobe I/O Runtime è responsabile di:
+In questa app di esempio, l&#39;azione Adobe I/O Runtime `generate-image` è responsabile di:
 
-1. Generazione di un’immagine tramite [Generazione di immagini API OpenAI](https://beta.openai.com/docs/guides/images/image-generation-beta) servizio
-1. Caricamento dell’immagine generata nell’istanza AEM-CS tramite [Caricamento AEM](https://github.com/adobe/aem-upload) libreria
+1. Generazione di un&#39;immagine mediante il servizio [OpenAI API Image Generation](https://beta.openai.com/docs/guides/images/image-generation-beta)
+1. Caricamento dell&#39;immagine generata nell&#39;istanza AEM-CS tramite la libreria [Caricamento AEM](https://github.com/adobe/aem-upload)
 1. Effettuare una richiesta HTTP all’API Frammento di contenuto dell’AEM per aggiornare la proprietà immagine del Frammento di contenuto.
 1. Restituzione delle informazioni chiave di operazioni riuscite e non riuscite per la visualizzazione da parte del modale (`GenerateImageModal.js`)
 
 
 #### Punto di ingresso (`index.js`)
 
-Il `index.js` orchestrare le attività superiori a 1-3 utilizzando i rispettivi moduli JavaScript, ovvero `generate-image-using-openai, upload-generated-image-to-aem, update-content-fragement`. Questi moduli e il codice associato sono descritti nella sezione successiva [sottosezioni](#image-generation-module---generate-image-using-openaijs).
+`index.js` orchestra le attività da 1 a 3 utilizzando i rispettivi moduli di JavaScript, ovvero `generate-image-using-openai, upload-generated-image-to-aem, update-content-fragement`. Questi moduli e il codice associato sono descritti nelle [sottosezioni](#image-generation-module---generate-image-using-openaijs) successive.
 
 + `src/aem-cf-console-admin-1/actions/generate-image/index.js`
 
@@ -595,7 +595,7 @@ exports.main = main;
 
 #### Generazione di immagini
 
-Questo modulo è responsabile della chiamata di OpenAI [Generazione immagini](https://beta.openai.com/docs/guides/images/image-generation-beta) endpoint che utilizza [openai](https://github.com/openai/openai-node) libreria. Per ottenere la chiave segreta API OpenAI definita nella `.env` file, utilizza `params.OPENAI_API_KEY`.
+Questo modulo è responsabile della chiamata dell&#39;endpoint [Image Generation](https://beta.openai.com/docs/guides/images/image-generation-beta) di OpenAI tramite la libreria [openai](https://github.com/openai/openai-node). Per ottenere la chiave segreta API OpenAI definita nel file `.env`, utilizza `params.OPENAI_API_KEY`.
 
 + `src/aem-cf-console-admin-1/actions/generate-image/generate-image-using-openai.js`
 
@@ -653,9 +653,9 @@ module.exports = {
 
 #### Carica in AEM
 
-Questo modulo è responsabile del caricamento in AEM dell’immagine generata da OpenAI tramite [Caricamento AEM](https://github.com/adobe/aem-upload) libreria. L’immagine generata viene scaricata per la prima volta in fase di esecuzione per App Builder utilizzando Node.js [File system](https://nodejs.org/api/fs.html) e una volta completato il caricamento su AEM, viene eliminata.
+Questo modulo è responsabile del caricamento dell&#39;immagine generata da OpenAI in AEM utilizzando la libreria [Caricamento AEM](https://github.com/adobe/aem-upload). L&#39;immagine generata viene scaricata per la prima volta in App Builder Runtime utilizzando la libreria Node.js [File System](https://nodejs.org/api/fs.html) e, una volta completato il caricamento nell&#39;AEM, viene eliminata.
 
-Nel codice sottostante `uploadGeneratedImageToAEM` La funzione orchestra il download delle immagini generate in fase di runtime, lo carica su AEM e lo elimina da runtime. L&#39;immagine viene caricata in `/content/dam/wknd-shared/en/generated` percorso, accertati che in DAM siano presenti tutte le cartelle e che ne siano presenti i prerequisiti da utilizzare [Caricamento AEM](https://github.com/adobe/aem-upload) libreria.
+Nel codice sottostante `uploadGeneratedImageToAEM` la funzione orchestra il download delle immagini generate in fase di runtime, caricalo su AEM ed eliminalo da runtime. L&#39;immagine è stata caricata nel percorso `/content/dam/wknd-shared/en/generated`. Assicurarsi che tutte le cartelle siano presenti in DAM e che il relativo prerequisito sia l&#39;utilizzo della libreria [Caricamento AEM](https://github.com/adobe/aem-upload).
 
 + `src/aem-cf-console-admin-1/actions/generate-image/upload-generated-image-to-aem.js`
 

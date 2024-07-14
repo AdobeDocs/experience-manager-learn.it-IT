@@ -15,7 +15,7 @@ exl-id: 0f3e50f0-88d8-46be-be8b-0f547c3633a6
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
 workflow-type: tm+mt
 source-wordcount: '87'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -34,7 +34,7 @@ Come impostare un ambiente di sviluppo locale per i Edge Delivery Services.
    $ sudo npm install -g @adobe/aem-cli
    ```
 
-1. Cambia la directory in una directory di progetto che sia un archivio Git creato da [Piastra riscaldante per AEM](https://github.com/adobe/aem-boilerplate) modello.
+1. Cambia la directory nella directory del progetto che è un archivio Git creato dal modello [Piastra di avvio AEM](https://github.com/adobe/aem-boilerplate).
 
    ```
    $ git clone git@github.com:my-org/my-project.git

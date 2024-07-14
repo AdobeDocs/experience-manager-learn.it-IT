@@ -1,5 +1,5 @@
 ---
-title: Utilizzo Del Modello Dati Modulo Per Pubblicare Dati Binari
+title: Utilizzo Del Modello Dati Modulo Per I Dati Binari Post
 description: Pubblicazione di dati binari in AEM DAM tramite il modello dati modulo
 feature: Workflow
 version: 6.4,6.5
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Utilizzo Del Modello Dati Modulo Per Pubblicare Dati Binari{#using-form-data-model-to-post-binary-data}
+# Utilizzo Del Modello Dati Modulo Per I Dati Binari Post{#using-form-data-model-to-post-binary-data}
 
 A partire da AEM Forms 6.4, ora è possibile richiamare il Servizio modello dati modulo come passaggio nel flusso di lavoro AEM. Questo articolo illustra un caso d’uso esemplificativo per la pubblicazione di documenti di record tramite il servizio modello dati modulo.
 
@@ -42,24 +42,24 @@ Input servizio
 
 >[!NOTE]
 >
->Suggerimenti per la risoluzione dei problemi: se per qualche motivo il file DOR.pdf non viene creato in DAM, reimposta le impostazioni di autenticazione dell’origine dati facendo clic su [qui](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam). Si tratta delle impostazioni di autenticazione dell’AEM, che per impostazione predefinita è amministratore/amministratore.
+>Suggerimenti per la risoluzione dei problemi - Se per qualche motivo il file DOR.pdf non è stato creato in DAM, reimpostare le impostazioni di autenticazione dell&#39;origine dati facendo clic [qui](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam). Si tratta delle impostazioni di autenticazione dell’AEM, che per impostazione predefinita è amministratore/amministratore.
 
 Per testare questa funzionalità sul server, segui i passaggi indicati di seguito:
 
 1.[Distribuire il bundle Developingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-1. [Scarica e distribuisci il bundle setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)Questo bundle OSGI personalizzato viene utilizzato per creare la proprietà dei metadati e impostarne il valore dai dati del modulo inviati.
+1. [Scarica e distribuisci il bundle setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Questo bundle OSGI personalizzato viene utilizzato per creare la proprietà dei metadati e impostarne il valore dai dati del modulo inviati.
 
-1. [Importare le risorse](assets/postdortodam.zip) associato a questo articolo nell’AEM utilizzando Gestione pacchetti.Si otterrà quanto segue
+1. [Importa le risorse](assets/postdortodam.zip) associate a questo articolo in AEM utilizzando Gestione pacchetti.Si otterrà quanto segue
 
    1. Modello flusso di lavoro
    1. Modulo adattivo configurato per l’invio al flusso di lavoro AEM
    1. Origine dati configurata per utilizzare il file PostToDam.JSON
-   1. Modello dati modulo che utilizza l’origine dati
+   1. Modello dati modulo che utilizza il Data Source
 
-1. Punta il tuo [per aprire il modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+1. Scegli il browser [ per aprire il modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 1. Compila il modulo e invia.
 1. Se il documento di record viene creato e memorizzato, controlla l’applicazione Assets.
 
 
-[File Swagger](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) utilizzato nella creazione dell&#39;origine dati è disponibile come riferimento
+[Il file Swagger](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) utilizzato per la creazione dell&#39;origine dati è disponibile come riferimento

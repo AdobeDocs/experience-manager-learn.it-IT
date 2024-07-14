@@ -1,6 +1,6 @@
 ---
 title: Debug di un’implementazione di tag
-description: Introduzione ad alcuni strumenti e tecniche comuni per eseguire il debug di un’implementazione di tag. Scopri come utilizzare la Developer Console del browser e l’estensione Debugger di Experienci Platform per identificare gli aspetti chiave di un’implementazione di Tag e risolvere problemi relativi a essi.
+description: Introduzione ad alcuni strumenti e tecniche comuni per eseguire il debug di un’implementazione di tag. Scopri come utilizzare la Developer Console del browser e l’estensione Debugger di Experience Platform per identificare gli aspetti chiave di un’implementazione di Tag e risolvere problemi relativi a essi.
 solution: Experience Manager, Data Collection, Experience Platform
 jira: KT-6047
 thumbnail: 38567.jpg
@@ -22,15 +22,15 @@ ht-degree: 1%
 
 # Debug di un’implementazione di tag {#debug-tags-implementation}
 
-Introduzione agli strumenti e alle tecniche comuni utilizzati per eseguire il debug di un’implementazione di tag. Scopri come utilizzare la Developer Console del browser e l’estensione Debugger di Experienci Platform per identificare gli aspetti chiave di un’implementazione di Tag e risolvere problemi relativi a essi.
+Introduzione agli strumenti e alle tecniche comuni utilizzati per eseguire il debug di un’implementazione di tag. Scopri come utilizzare la Developer Console del browser e l’estensione Debugger di Experience Platform per identificare gli aspetti chiave di un’implementazione di Tag e risolvere problemi relativi a essi.
 
 >[!VIDEO](https://video.tv.adobe.com/v/38567?quality=12&learn=on)
 
 ## Debug lato client tramite oggetto Satellite
 
-Il debug lato client è utile per verificare il caricamento della regola della proprietà Tag o l’ordine di esecuzione. Ogni volta che una proprietà Tag viene aggiunta al sito Web, il `_satellite` L’oggetto JavaScript è presente nel browser per facilitare l’evento lato client e il tracciamento dei dati.
+Il debug lato client è utile per verificare il caricamento della regola della proprietà Tag o l’ordine di esecuzione. Ogni volta che una proprietà Tag viene aggiunta al sito Web, l&#39;oggetto JavaScript `_satellite` è presente nel browser per facilitare l&#39;evento lato client e il tracciamento dei dati.
 
-Per abilitare il debug lato client, chiama il `setDebug(true)` metodo su `_satellite` oggetto.
+Per abilitare il debug lato client, chiamare il metodo `setDebug(true)` sull&#39;oggetto `_satellite`.
 
 1. Apri la console del browser ed esegui il comando seguente.
 
@@ -38,22 +38,22 @@ Per abilitare il debug lato client, chiama il `setDebug(true)` metodo su `_satel
        _satellite.setDebug(true);
    ```
 
-1. Ricarica la pagina del sito AEM e verifica la visualizzazione del registro della console _regola attivata_ messaggio simile al seguente.
+1. Ricarica la pagina del sito AEM e nel registro della console di verifica viene visualizzato il messaggio _regola attivata_ come riportato di seguito.
 
-   ![Proprietà Tag nelle pagine di authoring e pubblicazione](assets/satellite-object-debugging.png)
+   ![Proprietà tag nelle pagine Author e Publish](assets/satellite-object-debugging.png)
 
-## Debug tramite Adobi Experience Platform Debugger
+## Debug tramite Adobe Experience Platform Debugger
 
-L’Adobe fornisce un Adobe Experience Platform Debugger [Estensione Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) per eseguire il debug, comprendere e ottenere informazioni approfondite sull’integrazione.
+Adobe fornisce l&#39;Adobe Experience Platform Debugger [estensione Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) per eseguire il debug, comprendere e ottenere informazioni approfondite sull&#39;integrazione.
 
-1. Apri l’estensione Adobi Experience Platform Debugger e apri la pagina del sito nell’istanza Publish.
+1. Apri l’estensione Adobe Experience Platform Debugger e apri la pagina del sito nell’istanza Publish.
 
-2. In **Adobe Experience Platform Debugger > Riepilogo > Tag Adobe Experience Platform** verificare i dettagli della proprietà Tag come Nome, Versione, Data build, Ambiente ed Estensioni.
+2. Nella sezione **Adobe Experience Platform Debugger > Riepilogo > Tag Adobe Experience Platform**, verifica i dettagli delle proprietà tag come Nome, Versione, Data build, Ambiente ed Estensioni.
 
    ![Dettagli proprietà Adobe Experience Platform Debugger e tag](assets/tag-property-details.png)
 
 ## Risorse aggiuntive {#additional-resources}
 
-+ [Introduzione all’Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [Introduzione all&#39;Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
 
-+ [Riferimento a un oggetto satellite](https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/satellite-object.html)
++ [Riferimento oggetto satellite](https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/satellite-object.html)

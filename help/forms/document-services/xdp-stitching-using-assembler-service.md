@@ -19,9 +19,9 @@ ht-degree: 0%
 # Stitching XDP tramite il servizio Assembler
 
 Questo articolo fornisce le risorse per dimostrare la capacità di unire i documenti XDP utilizzando il servizio Assembler.
-Il seguente codice jsp è stato scritto per inserire un sottomodulo denominato **indirizzo** da un documento xdp denominato address.xdp in un punto di inserimento denominato **indirizzo** nel documento master.xdp. L’XDP risultante è stato salvato nella cartella principale dell’installazione AEM.
+Il seguente codice jsp è stato scritto per inserire un sottomodulo denominato **address** da un documento xdp denominato address.xdp in un punto di inserimento denominato **address** nel documento master.xdp. L’XDP risultante è stato salvato nella cartella principale dell’installazione AEM.
 
-Il servizio Assembler si basa su documenti DDX validi per descrivere la manipolazione dei documenti PDF. È possibile fare riferimento a [Documento di riferimento DDX qui](assets/ddxRef.pdf).Pagina 40 contiene informazioni sull’unione xdp.
+Il servizio Assembler si basa su documenti DDX validi per descrivere la manipolazione dei documenti PDF. È possibile fare riferimento al documento di riferimento [DDX qui](assets/ddxRef.pdf).La pagina 40 contiene informazioni sull&#39;unione xdp.
 
 ```java
     javax.servlet.http.Part ddxFile = request.getPart("xdpstitching.ddx");
@@ -53,7 +53,7 @@ Il servizio Assembler si basa su documenti DDX validi per descrivere la manipola
     finalXDP.copyToFile(new java.io.File("stitched.xdp"));
 ```
 
-Il file DDX per inserire frammenti in un altro xdp è elencato di seguito. DDX inserisce la sottomaschera  **indirizzo** da address.xdp nel punto di inserimento denominato **indirizzo** in master.xdp. Il documento risultante denominato **stitched.xdp** viene salvato nel file system.
+Il file DDX per inserire frammenti in un altro xdp è elencato di seguito. Il DDX inserisce il sottomodulo **address** da address.xdp nel punto di inserimento denominato **address** nel master.xdp. Il documento risultante denominato **stitched.xdp** è stato salvato nel file system.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -68,19 +68,21 @@ Il file DDX per inserire frammenti in un altro xdp è elencato di seguito. DDX i
 
 Per utilizzare questa funzionalità sul server AEM
 
-* Scarica [Pacchetto di unione XDP](assets/xdp-stitching.zip) al sistema locale.
-* Carica e installa il pacchetto utilizzando [gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
-* [Estrai il contenuto di questo file zip](assets/xdp-and-ddx.zip) per ottenere i file xdp e DDX di esempio
+* Scarica il pacchetto di unione [XDP](assets/xdp-stitching.zip) nel sistema locale.
+* Carica e installa il pacchetto utilizzando [Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+* [Estrai il contenuto di questo file zip](assets/xdp-and-ddx.zip) per ottenere il file xdp e DDX di esempio
 
-**Dopo aver installato il pacchetto, dovrai inserire nell&#39;elenco Consentiti i seguenti URL in Adobe Granite CSRF Filter.**
+**Dopo aver installato il pacchetto, sarà necessario inserire nell&#39;elenco Consentiti i seguenti URL in Adobe Granite CSRF Filter.**
 
 1. Segui i passaggi indicati di seguito per inserire nell&#39;elenco Consentiti i percorsi menzionati in precedenza.
-1. [Accedi a configMgr](http://localhost:4502/system/console/configMgr)
+1. [Accesso a configMgr](http://localhost:4502/system/console/configMgr)
 1. Cerca Adobe di filtro CSRF Granite
 1. Aggiungi il seguente percorso nelle sezioni escluse e salva `/content/AemFormsSamples/assemblerservice`
 1. Cerca &quot;Sling Referrer filter&quot; (Filtro referrer Sling)
-1. Selezionare la casella di controllo Consenti vuoto. (Questa impostazione deve essere utilizzata solo a scopo di test) Esistono diversi modi per testare il codice di esempio. Il metodo più rapido e semplice consiste nell’utilizzare l’app Postman. Postman consente di effettuare richieste POST al server. Installa l’app Postman sul sistema.
-Avvia l&#39;app e immetti il seguente URL per testare l&#39;API per l&#39;esportazione dei dati http://localhost:4502/content/AemFormsSamples/assemblerservice.html
+1. Selezionare la casella di controllo Consenti vuoto. (questa impostazione deve essere utilizzata solo a scopo di test)
+Esistono diversi modi per testare il codice di esempio. Il metodo più rapido e semplice consiste nell’utilizzare l’app Postman. Postman consente di effettuare richieste POST al server. Installa l’app Postman sul sistema.
+Avvia l’app e immetti il seguente URL per testare l’API di esportazione dei dati
+http://localhost:4502/content/AemFormsSamples/assemblerservice.html
 
 Fornire i seguenti parametri di input come specificato nella schermata. Puoi utilizzare i documenti di esempio scaricati in precedenza,
 ![xdp-stitch-postman](assets/xdp-stitching-postman.png)

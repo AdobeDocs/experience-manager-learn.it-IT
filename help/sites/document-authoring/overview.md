@@ -22,7 +22,7 @@ ht-degree: 9%
 
 Scopri come configurare l’authoring dei documenti consentendo agli autori di AEM di modificare e pubblicare documenti utilizzando i documenti di Microsoft Word o Google.
 
-Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=it) per informazioni dettagliate sulla configurazione dell’authoring dei documenti.
+Rivedi la [documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=it) per i dettagli completi sulla configurazione dell&#39;authoring dei documenti.
 
 ## Guida introduttiva all’authoring dei documenti
 
@@ -46,7 +46,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">5 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="set-up.md" title="Impostazione dell&apos;authoring dei documenti">Configurare l’authoring dei documenti</a>
+              <a href="set-up.md" title="Impostazione dell&apos;authoring dei documenti">Configura creazione documento</a>
             </p>
             <p class="is-size-6">Scopri come impostare l’authoring dei documenti.</p>
             <a href="set-up.md" class="spectrum-Button
@@ -78,7 +78,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">4 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="preview-and-publish.md" title="Anteprima e pubblicazione dei contenuti">Panoramica dell’editor</a>
+              <a href="preview-and-publish.md" title="Anteprima e pubblicazione dei contenuti">Panoramica dell'editor</a>
             </p>
             <p class="is-size-6">Breve panoramica sull’anteprima e la pubblicazione dei contenuti utilizzando AEM Sidekick.</p>
             <a href="preview-and-publish.md" class="spectrum-Button
@@ -109,7 +109,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="document-structure.md" title="Struttura documento">Struttura del documento</a>
+              <a href="document-structure.md" title="Struttura documento">Struttura documento</a>
             </p>
             <p class="is-size-6">Esplora la struttura dei documenti.</p>
             <a href="document-structure.md" class="spectrum-Button
@@ -140,7 +140,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="default-content-and-sections.md" title="Contenuto e sezioni predefiniti">Attiva/Disattiva nuovo editor</a>
+              <a href="default-content-and-sections.md" title="Contenuto e sezioni predefiniti">Attivazione/disattivazione nuovo editor</a>
             </p>
             <p class="is-size-6">Esplora i concetti di authoring dei documenti relativi alle sezioni e ai contenuti predefiniti.</p>
             <a href="default-content-and-sections.md" class="spectrum-Button
@@ -203,7 +203,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="redirects.md" title="Reindirizzamenti">Creare reindirizzamenti</a>
+              <a href="redirects.md" title="Reindirizzamenti">Crea reindirizzamenti</a>
             </p>
             <p class="is-size-6">Scopri come vengono creati i reindirizzamenti utilizzando l’authoring dei documenti.</p>
             <a href="redirects.md" class="spectrum-Button
@@ -235,7 +235,8 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="bulk-metadata.md" title="Metadati in blocco">Copie per lingua</a>
+              <a href="bulk-metadata.md" title="Metadati in blocco">Lingua
+                copie</a>
             </p>
             <p class="is-size-6">Scopri come vengono gestiti i metadati in blocco nella creazione dei documenti.</p>
             <a href="bulk-metadata.md" class="spectrum-Button
@@ -368,7 +369,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-audit.md" title="Audit del documento">Audit del documento</a>
+              <a href="./how-to/document-audit.md" title="Audit del documento">Controllo documento</a>
             </p>
             <p class="is-size-6">Esplora in che modo l’authoring dei documenti gestisce il controllo dei documenti.</p>
             <a href="page-metadata.md" class="spectrum-Button
@@ -432,7 +433,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-versions.md" title="Versioni documento">Versioni dei documenti</a>
+              <a href="./how-to/document-versions.md" title="Versioni documento">Versioni del documento</a>
             </p>
             <p class="is-size-6">Esplorare il modo in cui l'authoring dei documenti gestisce le versioni dei documenti.</p>
             <a href="./how-to/document-versions.md" class="spectrum-Button
@@ -528,7 +529,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/image-alt-text.md" title="Utilizzo di Testo alternativo">Authoring del testo alternativo dell’immagine</a>
+              <a href="./how-to/image-alt-text.md" title="Utilizzo di Testo alternativo">Authoring del testo alternativo dell'immagine</a>
             </p>
             <p class="is-size-6">Scopri in che modo l’authoring dei documenti gestisce il testo alternativo dell’immagine.</p>
             <a href="./how-to/image-alt-text.md" class="spectrum-Button
@@ -624,7 +625,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/migration-using-importer.md" title="Migrazione del sito tramite Importazione">Migrazione del sito tramite Importazione</a>
+              <a href="./how-to/migration-using-importer.md" title="Migrazione del sito tramite Importazione">Migrazione del sito tramite Importer</a>
             </p>
             <p class="is-size-6">Scopri come migrare i siti in Edge Delivery Services utilizzando lo strumento Importazione AEM.</p>
             <a href="./how-to/migration-using-importer.md" class="spectrum-Button
@@ -656,7 +657,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">3 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/customizing-importer.md" title="Personalizzazione dell’importazione">Personalizzazione dell’importazione</a>
+              <a href="./how-to/customizing-importer.md" title="Personalizzazione dell’importazione">Personalizzazione dell'importazione</a>
             </p>
             <p class="is-size-6">Scopri come personalizzare lo strumento AEM Importer per la migrazione dei siti.</p>
             <a href="./how-to/customizing-importer.md" class="spectrum-Button
@@ -688,7 +689,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">3 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/bulk-importing-using-importer.md" title="Importazione in blocco tramite l&apos;Importazione">Importazione in blocco tramite l'Importazione</a>
+              <a href="./how-to/bulk-importing-using-importer.md" title="Importazione in blocco tramite l&apos;Importazione">Importazione in blocco tramite Importer</a>
             </p>
             <p class="is-size-6">Scopri come importare in blocco le pagine web utilizzando lo strumento AEM Importer durante la migrazione del sito.</p>
             <a href="./how-to/bulk-importing-using-importer.md" class="spectrum-Button
@@ -821,7 +822,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Genera varianti - Modelli di prompt personalizzati">Genera varianti - Modelli di prompt personalizzati</a>
+              <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Genera varianti - Modelli di prompt personalizzati">Genera varianti - Modelli di richiesta personalizzati</a>
             </p>
             <p class="is-size-6">Scopri come creare modelli di prompt personalizzati per Genera varianti.</p>
             <a href="./how-to/generate-variations/custom-prompt-templates.md" class="spectrum-Button
@@ -885,7 +886,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/using-target-audiences.md" title="Generare varianti - Utilizzo dei tipi di pubblico di Adobe Target">Generare varianti - Utilizzo dei tipi di pubblico di Adobe Target</a>
+              <a href="./how-to/generate-variations/using-target-audiences.md" title="Generare varianti - Utilizzo dei tipi di pubblico di Adobe Target">Genera varianti - Utilizzo dei tipi di pubblico di Adobe Target</a>
             </p>
             <p class="is-size-6">Scopri come utilizzare i tipi di pubblico di Adobe Target per indirizzare il pubblico giusto per le varianti di contenuto.</p>
             <a href="./how-to/generate-variations/using-target-audiences.md" class="spectrum-Button
@@ -917,7 +918,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="Genera varianti - Utilizzo dei tipi di pubblico dei file CSV">Genera varianti - Utilizzo dei tipi di pubblico dei file CSV</a>
+              <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="Genera varianti - Utilizzo dei tipi di pubblico dei file CSV">Genera varianti - Utilizzo di tipi di pubblico per file CSV</a>
             </p>
             <p class="is-size-6">Scopri come utilizzare i file CSV del pubblico per indirizzare il pubblico giusto per le varianti di contenuto.</p>
             <a href="./how-to/generate-variations/using-csv-file-audiences.md" class="spectrum-Button
@@ -981,7 +982,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/actions.md" title="Genera varianti: azioni su una variante generata">Genera varianti: azioni su una variante generata</a>
+              <a href="./how-to/generate-variations/actions.md" title="Genera varianti: azioni su una variante generata">Genera varianti - Azioni su una variante generata</a>
             </p>
             <p class="is-size-6">Esplora le azioni che possono essere utilizzate in una variante di contenuto generato.</p>
             <a href="./how-to/generate-variations/actions.md" class="spectrum-Button
@@ -1013,7 +1014,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/trust-privacy.md" title="Genera varianti: attendibilità e privacy">Genera varianti: attendibilità e privacy</a>
+              <a href="./how-to/generate-variations/trust-privacy.md" title="Genera varianti: attendibilità e privacy">Genera varianti - Attendibilità e privacy</a>
             </p>
             <p class="is-size-6">Esplorare il modo in cui Adobe gestisce l’affidabilità e la privacy per Genera varianti.</p>
             <a href="./how-to/generate-variations/trust-privacy.md" class="spectrum-Button
@@ -1077,7 +1078,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/docs/experience-manag
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/setup-experimentation-framework.md" title="Impostazione del quadro di sperimentazione">Impostazione del quadro di sperimentazione</a>
+              <a href="./how-to/setup-experimentation-framework.md" title="Impostazione del quadro di sperimentazione">Configurazione del framework di sperimentazione</a>
             </p>
             <p class="is-size-6">Scopri come impostare il framework di sperimentazione nell’authoring di documenti in Edge Delivery Services.</p>
             <a href="./how-to/setup-experimentation-framework.md" class="spectrum-Button

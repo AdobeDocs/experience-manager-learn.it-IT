@@ -1,6 +1,6 @@
 ---
-title: Cos’è l’AEM as a Cloud Service?
-description: Esplora cosa sono gli as a Cloud Service e i Edge Delivery Services dell’AEM e il valore che forniscono.
+title: Cos’è AEM as a Cloud Service?
+description: Scopri cosa sono AEM as a Cloud Service e i Edge Delivery Services e il loro valore.
 role: Architect, Developer
 level: Beginner
 type: Tutorial
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 ---
 
-# Cos’è l’AEM as a Cloud Service?
+# Cos’è AEM as a Cloud Service?
 
 {{edge-delivery-services}}
 
-Esplora cosa sono gli as a Cloud Service e i Edge Delivery Services dell’AEM e il valore che forniscono.
+Scopri cosa sono AEM as a Cloud Service e i Edge Delivery Services e il loro valore.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330546?quality=12&learn=on)

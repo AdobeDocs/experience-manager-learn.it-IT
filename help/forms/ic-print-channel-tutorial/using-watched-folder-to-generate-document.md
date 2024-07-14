@@ -26,11 +26,11 @@ Dopo aver creato e testato il documento del canale di stampa, è necessario un m
 
 Quando configuri una cartella controllata in AEM, associ uno script ECMA o un codice Java che viene eseguito quando un file viene rilasciato nella cartella controllata. In questo articolo, ci concentreremo sullo script ECMA che genererà documenti del canale di stampa e li salverà nel file system.
 
-La configurazione della cartella controllata e lo script ECMA fanno parte delle risorse importate in [inizio di questa esercitazione](introduction.md)
+La configurazione della cartella controllata e lo script ECMA fanno parte delle risorse importate all&#39;[inizio di questa esercitazione](introduction.md)
 
 Il file di input rilasciato nella cartella controllata ha la seguente struttura. Lo script ECMA legge i numeri di account e genera il documento del canale di stampa per ciascuno di questi account.
 
-Per ulteriori dettagli sullo script ECMA per la generazione di documenti, [fai riferimento a questo articolo](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
+Per ulteriori dettagli sullo script ECMA per la generazione di documenti, [fare riferimento a questo articolo](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
 
 ```xml
 <accountnumbers>

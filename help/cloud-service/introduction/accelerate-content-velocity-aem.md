@@ -28,7 +28,7 @@ I sistemi di stile dell’AEM presentano quattro vantaggi chiave:
 
 La configurazione in 5 passaggi è molto simile a un flusso di lavoro standard per lo sviluppo di componenti.
 
-| **Leader** | **Designer** | **Sviluppatore/Architetto** | **Autore del modello** | **Autore del contenuto** |
+| **Leadership** | **Designer** | **Sviluppatore/Architetto** | **Autore modello** | **Autore contenuto** |
 | --- | --- | --- | --- | --- |
 | Determina il contenuto e gli obiettivi per quel componente | Determina la presentazione visiva ed esperienziale del contenuto | Sviluppa CSS e JS per supportare l’esperienza; definisce e fornisce i nomi delle classi da utilizzare | Configura i criteri dei modelli per i componenti con stili aggiungendo i nomi di classi CSS definiti dagli sviluppatori. I nomi descrittivi devono essere utilizzati per ogni stile. | Durante la creazione di pagine, applica gli stili necessari per ottenere l’aspetto desiderato |
 
@@ -53,7 +53,7 @@ I sistemi di stile sono disponibili in alcuni gusti diversi:
 
 >[!NOTE]
 >
->Per una demo di queste funzioni, consigliamo di guardare [Webinar Customer Success](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) con Will Brisbane e Joseph Van Buskirk.
+>Per una demo di queste funzioni, si consiglia di guardare il [webinar Customer Success](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) con Will Brisbane e Joseph Van Buskirk.
 
 ## Best practice
 
@@ -91,6 +91,6 @@ Le cose sono semplicemente più pulite. Le HTML all’interno dei Componenti cor
 
 Infine, l&#39;uso dei sistemi di stile è più arte che scienza. Come abbiamo discusso, esistono diverse best practice, ma avrai la possibilità di personalizzare la configurazione della tua organizzazione.
 
-Per ulteriori informazioni, consulta la [Webinar Customer Success](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) con Will Brisbane e Joseph Van Buskirk.
+Per ulteriori informazioni, consulta il nostro [webinar Customer Success](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) con Will Brisbane e Joseph Van Buskirk.
 
-Per ulteriori informazioni su strategia e leadership di pensiero, visita [Customer Success](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.
+Ulteriori informazioni su strategia e leadership di pensiero nell&#39;hub [Customer Success](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html).

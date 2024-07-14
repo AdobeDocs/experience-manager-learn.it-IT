@@ -25,13 +25,13 @@ ht-degree: 0%
 Ai fini di questo articolo, stiamo creando un modello personalizzato per visualizzare i tipi di risorse personalizzati e i tipi di risorse OOTB sulla stessa pagina. Per creare un modello personalizzato, segui le seguenti istruzioni
 
 1. Crea una cartella sling: in /apps. Denomina il componente myportalcomponent
-1. Aggiungi una proprietà &quot;fpContentType&quot;. Imposta il suo valore su &quot;**/libs/fd/ fp/formTemplate&quot;.**
+1. Aggiungi una proprietà &quot;fpContentType&quot;. Imposta il relativo valore su &quot;**/libs/fd/ fp/formTemplate&quot;.**
 1. Aggiungi una proprietà &quot;title&quot; e impostane il valore su &quot;custom template&quot;. Questo è il nome che verrà visualizzato nell’elenco a discesa del componente Ricerca ed elenco
 1. Crea un &quot;template.html&quot; in questa cartella. Questo file contiene il codice per applicare uno stile e visualizzare i vari tipi di risorse.
 
 ![appsfolder](assets/appsfolder_.png)
 
-Di seguito è riportato un elenco dei vari tipi di risorse che utilizzano il componente Ricerca e lister. Creiamo elementi HTML separati per ogni tipo di risorsa, come mostrato dal tag data-type = &quot;videos&quot;. Per il tipo di risorsa &quot;video&quot; utilizziamo &lt;video> per riprodurre il video in linea. Per il tipo di risorsa &quot;worddocuments&quot; usiamo un markup HTML diverso.
+Di seguito è riportato un elenco dei vari tipi di risorse che utilizzano il componente Ricerca e lister. Creiamo elementi HTML separati per ogni tipo di risorsa, come mostrato dal tag data-type = &quot;videos&quot;. Per il tipo di risorsa &quot;video&quot; utilizziamo l’elemento &lt;video> per riprodurre il video in linea. Per il tipo di risorsa &quot;worddocuments&quot; usiamo un markup HTML diverso.
 
 ```html
 <div class="__FP_boxes-container __FP_single-color">
@@ -75,7 +75,7 @@ Di seguito è riportato un elenco dei vari tipi di risorse che utilizzano il com
 
 ## Configurare Il Componente Ricerca Ed Elenco {#configure-search-and-lister-component}
 
-Dopo aver definito il modello personalizzato, è necessario associarlo al componente &quot;Ricerca ed elenco&quot;. Puntare il browser [a questo url](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
+Dopo aver definito il modello personalizzato, è necessario associarlo al componente &quot;Ricerca ed elenco&quot;. Puntare il browser [ a questo URL](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
 
 Passa alla modalità Progettazione e configura il sistema paragrafo in modo da includere il componente Ricerca ed elenco nel gruppo di componenti consentiti. Il componente Ricerca ed elenco fa parte del gruppo Servizi basati su documenti.
 
@@ -103,13 +103,13 @@ Configura i tipi di risorse da elencare nel portale. Per configurare i tipi di s
 
 La schermata seguente mostra i tipi di risorse configurati per l’inserzione
 
-![assettipi](assets/assettypes.png)
+![tipi di risorse](assets/assettypes.png)
 
-Dopo aver configurato il componente Portale di ricerca ed elenco, è ora di visualizzare il lister in azione. Puntare il browser [a questo url](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). I risultati dovrebbero essere simili all’immagine mostrata di seguito.
+Dopo aver configurato il componente Portale di ricerca ed elenco, è ora di visualizzare il lister in azione. Puntare il browser [ a questo URL](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). I risultati dovrebbero essere simili all’immagine mostrata di seguito.
 
 >[!NOTE]
 >
->Se il portale elenca tipi di risorse personalizzati su un server di pubblicazione, assicurati di concedere l’autorizzazione di lettura all’utente &quot;fd-service&quot; sul nodo **/apps/fd/fp/extensions/querybuilder**
+>Se nel portale sono elencati tipi di risorse personalizzati in un server di pubblicazione, assicurati di concedere l&#39;autorizzazione di lettura all&#39;utente &quot;fd-service&quot; nel nodo **/apps/fd/fp/extensions/querybuilder**
 
-![assettipi](assets/assettypeslistings.png)
-[Scarica e installa questo pacchetto utilizzando Gestione pacchetti.](assets/customassettypekt1.zip) Contiene documenti mp4 e word di esempio e file xdp utilizzati come tipi di risorse da elencare utilizzando il componente Ricerca e lister
+![tipi di risorse](assets/assettypeslistings.png)
+[Scaricare e installare il pacchetto utilizzando Gestione pacchetti.](assets/customassettypekt1.zip) Contiene documenti mp4 e word di esempio e file xdp utilizzati come tipi di risorse da elencare utilizzando il componente di ricerca e lister

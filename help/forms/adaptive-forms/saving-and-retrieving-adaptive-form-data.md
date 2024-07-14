@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Questo articolo illustra i passaggi necessari per salvare e recuperare i dati dei moduli adattivi dal database. Database MySQL utilizzato per memorizzare i dati del modulo adattivo. Ad alto livello, per ottenere il caso d’uso sono necessari i seguenti passaggi:
 
-* [Configura origine dati](#Configure-Data-Source)
+* [Configurare Data Source](#Configure-Data-Source)
 * [Creare un servlet per scrivere i dati nel database](#create-servlet)
 * [Crea servizio OSGI per recuperare i dati memorizzati](#create-osgi-service)
 * [Crea libreria client](#create-client-library)
@@ -28,7 +28,7 @@ Questo articolo illustra i passaggi necessari per salvare e recuperare i dati de
 * [Dimostrazione delle funzionalità](#capability-demo)
 * [Distribuisci sul server](#deploy-on-your-server)
 
-## Configura origine dati {#Configure-Data-Source}
+## Configurare Data Source {#Configure-Data-Source}
 
 L’origine dati in pool di connessione Apache Sling è configurata per puntare al database che verrà utilizzato per memorizzare i dati del modulo adattivo. La schermata seguente mostra la configurazione della mia istanza. Le seguenti proprietà possono essere copiate e incollate
 
@@ -38,7 +38,7 @@ L’origine dati in pool di connessione Apache Sling è configurata per puntare 
 
 * `JDBC Connection URL:jdbc:mysql://localhost:3306/aemformstutorial`
 
-![connection pool](assets/storingdata.PNG)
+![pool di connessioni](assets/storingdata.PNG)
 
 ### Crea servlet {#create-servlet}
 

@@ -32,7 +32,7 @@ La schermata seguente mostra i dati del modulo inviati memorizzati nel tipo di d
 >Assicurati che il file dello schema JSON sia denominato in modo appropriato. Ad esempio, deve essere denominato nel seguente formato &lt;name>schema.json. Pertanto, il file dello schema può essere mortgage.schema.json o credit.schema.json.
 
 
-![datastore](assets/datastored.gif)
+![datastored](assets/datastored.gif)
 
 
 [Schemi JSON di esempio che possono essere utilizzati per creare Forms adattivo.](assets/samplejsonschemas.zip). Scarica e decomprimi il file zip per ottenere gli schemi JSON

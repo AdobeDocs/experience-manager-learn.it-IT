@@ -21,39 +21,39 @@ ht-degree: 0%
 
 # Elaborazione di eventi AEM tramite Azione Adobe I/O Runtime
 
-Scopri come elaborare gli eventi AEM ricevuti utilizzando [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) Azione. Questo esempio migliora quello precedente [Azione Adobe I/O Runtime ed eventi AEM](runtime-action.md), assicurati di averlo completato prima di procedere con questo.
+Scopri come elaborare gli eventi AEM ricevuti utilizzando l’azione [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/). Questo esempio migliora l&#39;esempio precedente [Azione Adobe I/O Runtime ed Eventi AEM](runtime-action.md). Prima di procedere con questo esempio, assicurati di averlo completato.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427054?quality=12&learn=on)
 
-In questo esempio, l’elaborazione dell’evento memorizza i dati dell’evento originale e l’evento ricevuto come messaggio di attività nell’archiviazione di Adobe I/O Runtime. Tuttavia, se l’evento è di _Frammento di contenuto modificato_ digita, quindi chiama anche il servizio di authoring AEM per trovare i dettagli della modifica. Infine, visualizza i dettagli dell’evento in un’applicazione a pagina singola (SPA).
+In questo esempio, l’elaborazione dell’evento memorizza i dati dell’evento originale e l’evento ricevuto come messaggio di attività nell’archiviazione di Adobe I/O Runtime. Tuttavia, se l&#39;evento è del tipo _Frammento di contenuto modificato_, chiama anche il servizio di authoring AEM per trovare i dettagli della modifica. Infine, visualizza i dettagli dell’evento in un’applicazione a pagina singola (SPA).
 
 ## Prerequisiti
 
 Per completare questa esercitazione, è necessario:
 
-- Ambiente as a Cloud Service AEM con [Evento AEM abilitato](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Inoltre, il campione [Siti WKND](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) il progetto deve essere distribuito su di esso.
+- Ambiente AEM as a Cloud Service con [evento AEM abilitato](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Inoltre, il progetto [WKND Sites](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) di esempio deve essere distribuito su di esso.
 
-- Accesso a [Console Adobe Developer](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
+- Accesso a [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
 
-- [ADOBE DEVELOPER CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) installato nel computer locale.
+- [Adobe Developer CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) installato nel computer locale.
 
-- Progetto inizializzato localmente dall’esempio precedente [Azione Adobe I/O Runtime ed eventi AEM](./runtime-action.md#initialize-project-for-local-development).
+- Progetto inizializzato localmente dall&#39;esempio precedente [Adobe I/O Runtime Action and AEM Events](./runtime-action.md#initialize-project-for-local-development).
 
 >[!IMPORTANT]
 >
->L’evento AEM as a Cloud Service è disponibile solo per gli utenti registrati in modalità pre-release. Per abilitare gli eventi AEM nell’ambiente as a Cloud Service AEM, contattare [Squadra AEM-Eventing](mailto:grp-aem-events@adobe.com).
+>L’evento AEM as a Cloud Service è disponibile solo per gli utenti registrati in modalità non definitiva. Per abilitare gli eventi AEM nel tuo ambiente AEM as a Cloud Service, contatta il [team AEM-Eventing](mailto:grp-aem-events@adobe.com).
 
 ## Azione processore eventi AEM
 
-In questo esempio, il processore eventi [azione](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) esegue le seguenti attività:
+In questo esempio, il processore eventi [action](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) esegue le attività seguenti:
 
 - Analizza l&#39;evento ricevuto in un messaggio di attività.
-- Se l’evento ricevuto è di _Frammento di contenuto modificato_ digita, richiama il servizio di authoring AEM per trovare i dettagli della modifica.
+- Se l&#39;evento ricevuto è di tipo _Frammento di contenuto modificato_, richiamare il servizio di authoring AEM per trovare i dettagli della modifica.
 - Persiste i dati dell’evento originale, il messaggio dell’attività e gli eventuali dettagli di modifica nell’archiviazione di Adobe I/O Runtime.
 
 Per eseguire le attività di cui sopra, iniziamo aggiungendo un’azione al progetto, sviluppando moduli JavaScript per eseguire le attività di cui sopra e infine aggiornando il codice dell’azione per utilizzare i moduli sviluppati.
 
-Fai riferimento alla allegata [WKND-AEM-Eventing-Runtime-Action.zip](../assets/examples/event-processing-using-runtime-action/WKND-AEM-Eventing-Runtime-Action.zip) file per il codice completo, e la sezione seguente evidenzia i file chiave.
+Per il codice completo, fai riferimento al file [WKND-AEM-Eventing-Runtime-Action.zip](../assets/examples/event-processing-using-runtime-action/WKND-AEM-Eventing-Runtime-Action.zip) allegato e la sezione seguente evidenzia i file chiave.
 
 ### Aggiungi azione
 
@@ -63,7 +63,7 @@ Fai riferimento alla allegata [WKND-AEM-Eventing-Runtime-Action.zip](../assets/e
   aio app add action
   ```
 
-- Seleziona `@adobe/generator-add-action-generic` come modello di azione, assegna all’azione il nome `aem-event-processor`.
+- Selezionare `@adobe/generator-add-action-generic` come modello di azione e denominare l&#39;azione `aem-event-processor`.
 
   ![Aggiungi azione](../assets/examples/event-processing-using-runtime-action/add-action-template.png)
 
@@ -71,7 +71,7 @@ Fai riferimento alla allegata [WKND-AEM-Eventing-Runtime-Action.zip](../assets/e
 
 Per eseguire le attività sopra indicate, sviluppiamo i seguenti moduli JavaScript.
 
-- Il `src/dx-excshell-1/actions/aem-event-processor/eventValidator.js` Il modulo determina se l’evento ricevuto è di _Frammento di contenuto modificato_ tipo.
+- Il modulo `src/dx-excshell-1/actions/aem-event-processor/eventValidator.js` determina se l&#39;evento ricevuto è di tipo _Frammento di contenuto modificato_.
 
   ```javascript
   async function needsAEMCallback(aemEvent) {
@@ -98,7 +98,7 @@ Per eseguire le attività sopra indicate, sviluppiamo i seguenti moduli JavaScri
   module.exports = needsAEMCallback;
   ```
 
-- Il `src/dx-excshell-1/actions/aem-event-processor/loadEventDetailsFromAEM.js` Il modulo chiama il servizio di authoring AEM per trovare i dettagli della modifica.
+- Il modulo `src/dx-excshell-1/actions/aem-event-processor/loadEventDetailsFromAEM.js` chiama il servizio di authoring AEM per trovare i dettagli della modifica.
 
   ```javascript
   ...
@@ -166,9 +166,9 @@ Per eseguire le attività sopra indicate, sviluppiamo i seguenti moduli JavaScri
   ...
   ```
 
-  Fai riferimento a [Tutorial sulle credenziali del servizio AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en) per saperne di più. Inoltre, il [File di configurazione di App Builder](https://developer.adobe.com/app-builder/docs/guides/configuration/) per la gestione di segreti e parametri di azione.
+  Per ulteriori informazioni, consulta l&#39;[esercitazione sulle credenziali del servizio AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en). Inoltre, i [file di configurazione di App Builder](https://developer.adobe.com/app-builder/docs/guides/configuration/) per la gestione di segreti e parametri di azione.
 
-- Il `src/dx-excshell-1/actions/aem-event-processor/storeEventData.js` Il modulo memorizza i dati dell’evento originale, il messaggio di attività e gli eventuali dettagli di modifica nell’archiviazione di Adobe I/O Runtime.
+- Il modulo `src/dx-excshell-1/actions/aem-event-processor/storeEventData.js` memorizza i dati dell&#39;evento originale, il messaggio di attività e gli eventuali dettagli di modifica nell&#39;archivio di Adobe I/O Runtime.
 
   ```javascript
   ...
@@ -193,7 +193,7 @@ Per eseguire le attività sopra indicate, sviluppiamo i seguenti moduli JavaScri
 
 ### Aggiorna codice azione
 
-Infine, aggiorna il codice dell’azione in `src/dx-excshell-1/actions/aem-event-processor/index.js` per utilizzare i moduli sviluppati.
+Infine, aggiorna il codice dell&#39;azione in `src/dx-excshell-1/actions/aem-event-processor/index.js` per utilizzare i moduli sviluppati.
 
 ```javascript
 ...
@@ -251,10 +251,10 @@ if (params.challenge) {
 
 ## Risorse aggiuntive
 
-- Il `src/dx-excshell-1/actions/model` la cartella contiene `aemEvent.js` e `errors.js` file, utilizzati dall’azione per analizzare l’evento ricevuto e gestire rispettivamente gli errori.
-- Il `src/dx-excshell-1/actions/load-processed-aem-events` La cartella contiene il codice dell’azione, che viene utilizzato dall’SPA per caricare gli eventi AEM elaborati dall’archivio Adobe I/O Runtime.
-- Il `src/dx-excshell-1/web-src` contiene il codice SPA, che visualizza gli Eventi AEM elaborati.
-- Il `src/dx-excshell-1/ext.config.yaml` Il file contiene la configurazione dell&#39;azione e i parametri.
+- La cartella `src/dx-excshell-1/actions/model` contiene `aemEvent.js` e `errors.js` file, utilizzati dall&#39;azione rispettivamente per analizzare l&#39;evento ricevuto e gestire gli errori.
+- La cartella `src/dx-excshell-1/actions/load-processed-aem-events` contiene il codice dell&#39;azione. Questa azione viene utilizzata dall&#39;SPA per caricare gli eventi AEM elaborati dall&#39;archivio Adobe I/O Runtime.
+- La cartella `src/dx-excshell-1/web-src` contiene il codice SPA, che visualizza gli eventi AEM elaborati.
+- Il file `src/dx-excshell-1/ext.config.yaml` contiene la configurazione dell&#39;azione e i parametri.
 
 ## Concetto e soluzioni chiave
 

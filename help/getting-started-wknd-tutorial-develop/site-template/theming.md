@@ -27,13 +27,13 @@ Alla fine il nostro sito viene aggiornato per includere stili corrispondenti al 
 
 ## Prerequisiti {#prerequisites}
 
-Si tratta di un tutorial in più parti in cui si presume che i passaggi descritti in [Modelli di pagina](./page-templates.md) capitolo sono stati completati.
+Questo è un tutorial in più parti e si presume che i passaggi descritti nel capitolo [Modelli di pagina](./page-templates.md) siano stati completati.
 
 ## Obiettivi
 
 1. Scopri come scaricare e modificare le origini del tema di un sito.
 1. Scopri come confrontare il codice con il sito live per un’anteprima in tempo reale.
-1. Comprendere il flusso di lavoro end-to-end per distribuire aggiornamenti compilati CSS e JavaScript come parte di un tema utilizzando la pipeline front-end di Adobe Cloud Manager.
+1. Comprendi il flusso di lavoro end-to-end per distribuire aggiornamenti compilati di CSS e JavaScript come parte di un tema utilizzando la pipeline front-end di Adobe Cloud Manager.
 
 ## Aggiornare un tema {#theme-update}
 
@@ -45,12 +45,12 @@ Passaggi di alto livello per il video:
 
 1. Creare un utente locale in AEM da utilizzare con un server di sviluppo proxy.
 1. Scarica le sorgenti del tema dall’AEM e aprile utilizzando un IDE locale, come VSCode.
-1. Modifica le origini del tema e utilizza un server di sviluppo proxy per visualizzare in anteprima le modifiche CSS e JavaScript in tempo reale.
+1. Modifica le origini del tema e utilizza un server di sviluppo proxy per visualizzare in anteprima le modifiche a CSS e JavaScript in tempo reale.
 1. Aggiorna le sorgenti del tema in modo che l’articolo della rivista corrisponda agli stili e ai modelli del marchio WKND.
 
 ### File di soluzione
 
-Scarica gli stili completati per [Tema di esempio WKND](assets/theming/WKND-THEME-src-1.1.zip)
+Scarica gli stili completati per il tema di esempio [WKND](assets/theming/WKND-THEME-src-1.1.zip)
 
 ## Distribuire un tema utilizzando una pipeline front-end {#deploy-theme}
 
@@ -60,8 +60,8 @@ Distribuire gli aggiornamenti a un tema in un ambiente AEM utilizzando la pipeli
 
 Passaggi di alto livello per il video:
 
-1. Crea un nuovo Git [archivio in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html)
-1. Aggiungi il progetto delle origini del tema all’archivio Git di Cloud Manager:
+1. Crea un nuovo archivio Git [ in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html)
+1. Aggiungi il progetto origini tema all’archivio Git Cloud Manager:
 
    ```shell
    $ cd <PATH_TO_THEME_SOURCES_FOLDER>
@@ -71,7 +71,7 @@ Passaggi di alto livello per il video:
    $ git remote add origin <CLOUD_MANAGER_GIT_REPOSITORY_URL>
    ```
 
-1. Configurare un [Pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html) in Cloud Manager per distribuire il codice front-end.
+1. Configura una [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html) in Cloud Manager per distribuire il codice front-end.
 1. Esegui la pipeline front-end per distribuire gli aggiornamenti all’ambiente AEM di destinazione.
 
 ### Esempio di pronti contro termine
@@ -87,4 +87,4 @@ Congratulazioni, hai appena aggiornato e implementato un tema per AEM!
 
 ### Passaggi successivi {#next-steps}
 
-Approfondisci lo sviluppo dell’AEM e scopri di più sulla tecnologia di base creando un sito utilizzando [Archetipo progetto AEM](../project-archetype/overview.md).
+Approfondisci lo sviluppo dell&#39;AEM e comprendi meglio la tecnologia sottostante creando un sito utilizzando [Archetipo progetto AEM](../project-archetype/overview.md).

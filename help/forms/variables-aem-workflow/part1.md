@@ -31,13 +31,13 @@ La variabile stringa può essere compilata da Xpathing nella variabile XML. Ques
 >
 >**/afData/afUnboundData/data/submitterName**
 
-I dati del modulo adattivo vengono memorizzati sotto l’elemento dati come mostrato sopra. **_Nell’espressione XPath submitterName indica il nome del campo di testo nel modulo adattivo._**
+I dati del modulo adattivo vengono memorizzati sotto l’elemento dati come mostrato sopra. **_In XPath submitterName è il nome del campo di testo nel modulo adattivo._**
 
 >[!NOTE]
 >
 >**AEM Forms 6.5.0** - Quando si crea una variabile di tipo XML per acquisire i dati inviati nel modello di flusso di lavoro, non associare l&#39;XSD alla variabile. Questo perché quando invii un modulo adattivo basato su XSD, i dati inviati non sono conformi a XSD. I dati del reclamo XSD sono racchiusi nell&#39;elemento /afData/afBoundData/.
 >
->**AEM Forms 6.5.1** - Se associ XSD alla variabile XML, puoi sfogliare gli elementi dello schema per eseguire la mappatura della variabile. Non potrai accedere ai dati del modulo non associati agli elementi dello schema. Se il caso d’uso prevede l’accesso a dati associati a elementi dello schema e a dati non associati, non associare lo schema alla variabile XML nel flusso di lavoro.Sarà necessario utilizzare l’espressione XPath appropriata per accedere ai dati necessari
+>**AEM Forms 6.5.1** - Se associ XSD alla variabile XML, puoi sfogliare gli elementi dello schema per eseguire il mapping delle variabili. Non potrai accedere ai dati del modulo non associati agli elementi dello schema. Se il caso d’uso prevede l’accesso a dati associati a elementi dello schema e a dati non associati, non associare lo schema alla variabile XML nel flusso di lavoro.Sarà necessario utilizzare l’espressione XPath appropriata per accedere ai dati necessari
 
 ## Creazione di variabili XML
 
@@ -45,7 +45,7 @@ I dati del modulo adattivo vengono memorizzati sotto l’elemento dati come most
 
 ### Utilizzo di uno schema con una variabile XML
 
-**Mappatura di una variabile XML con lo schema. Utilizza questa funzionalità da AEM Forms 6.5.1 in poi**
+**Mappatura di una variabile XML con lo schema. Utilizza questa funzionalità con AEM Forms 6.5.1 e versioni successive**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28098?quality=12&learn=on)
 
@@ -57,6 +57,6 @@ Per far sì che le risorse funzionino sul sistema, segui i passaggi seguenti:
 
 * [Scaricare e importare le risorse in AEM utilizzando Gestione pacchetti](assets/xmlandstringvariable.zip)
 * [Esplora il modello di flusso di lavoro](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) per comprendere le variabili utilizzate nel flusso di lavoro
-* [Configurare il servizio e-mail](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
-* [Aprire il modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)
+* [Configura il servizio e-mail](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
+* [Apri il modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)
 * Compila i dettagli e invia il modulo.

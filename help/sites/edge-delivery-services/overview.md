@@ -14,7 +14,7 @@ exl-id: 4f08bc07-0c9c-42fc-af42-3d51af9f37c4
 source-git-commit: df15dc0426918a0e2263efe6fb0de953f49385df
 workflow-type: tm+mt
 source-wordcount: '332'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -24,9 +24,9 @@ Scopri come rendere i siti web veloci con i Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427989/?learn=on)
 
-Rivedi [documentazione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) per informazioni complete sui Edge Delivery Services e sulle relative funzionalità.
+Consulta la [documentazione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) per informazioni complete sui Edge Delivery Services e sulle relative funzionalità.
 
-## Introduzione ai Edge Delivery Services
+## Guida introduttiva a Edge Delivery Services
 
 <div class="columns is-multiline">
     <!-- Prerequisites -->
@@ -70,7 +70,8 @@ Rivedi [documentazione](https://experienceleague.adobe.com/en/docs/experience-ma
             <a href="./developing/aem-boilerplate.md" title="Usa modello boilerplate"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="Imposta piastra di cottura">
+                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="Configurazione
+                Piastra calda">
             </a>
           </figure>
         </div>
@@ -160,10 +161,10 @@ Rivedi [documentazione](https://experienceleague.adobe.com/en/docs/experience-ma
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./developing/preview-and-publish.md" title="Anteprima e pubblicazione dei contenuti"
+            <a href="./developing/preview-and-publish.md" title="Anteprima e contenuti Publish"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Anteprima e pubblicazione dei contenuti">
+                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Anteprima e contenuti Publish">
             </a>
           </figure>
         </div>
@@ -172,7 +173,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/en/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/preview-and-publish.md" title="Anteprima e pubblicazione dei contenuti">Anteprima e pubblicazione dei contenuti</a>
+              <a href="./developing/preview-and-publish.md" title="Anteprima e contenuti Publish">Anteprima e pubblicazione del contenuto</a>
             </p>
             <p class="is-size-6">Visualizzare in anteprima e pubblicare i contenuti utilizzando AEM Sidekick.</p>
             <a href="./developing/preview-and-publish.md" class="spectrum-Button
@@ -204,7 +205,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/en/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/sidekick.md" title="Utilizzare Sidekick">Utilizzare il AEM Sidekick</a>
+              <a href="./developing/sidekick.md" title="Utilizzare Sidekick">Utilizza il AEM Sidekick</a>
             </p>
             <p class="is-size-6">Scopri come utilizzare il AEM Sidekick.</p>
             <a href="./developing/sidekick.md" class="spectrum-Button
@@ -236,7 +237,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/en/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/document-structure.md" title="Struttura documento">Struttura del documento</a>
+              <a href="./developing/document-structure.md" title="Struttura documento">Struttura documento</a>
             </p>
             <p class="is-size-6">Esplora la struttura del documento, inclusi il contenuto, le sezioni e i blocchi predefiniti </p>
             <a href="./developing/document-structure.md" class="spectrum-Button
@@ -337,7 +338,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/en/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/rss.md" title="Crea feed RSS">Creazione di feed RSS</a>
+              <a href="./how-to/rss.md" title="Crea feed RSS">Crea feed RSS</a>
             </p>
             <p class="is-size-6">Informazioni su come creare feed RSS.</p>
             <a href="./how-to/rss.md" class="spectrum-Button
@@ -401,7 +402,7 @@ Rivedi [documentazione](https://experienceleague.adobe.com/en/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/delete-page.md" title="Eliminazione di pagine">Eliminazione di pagine</a>
+              <a href="./how-to/delete-page.md" title="Eliminazione di pagine">Eliminazione pagine</a>
             </p>
             <p class="is-size-6">Scopri come eliminare le pagine.</p>
             <a href="./how-to/delete-page.md" class="spectrum-Button

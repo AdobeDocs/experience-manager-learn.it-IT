@@ -24,7 +24,7 @@ Per generare un documento di comunicazione interattiva utilizzando l’API, è n
 * Creare un servizio di precompilazione
 * Genera documento di comunicazione interattiva
 
-Il nome del servizio `ccm-print-test` viene utilizzato per accedere a questo servizio. Una volta definito il servizio di precompilazione, puoi accedervi nell’implementazione del servlet o del passaggio del processo di flusso di lavoro per generare il documento del canale di stampa.
+Per accedere al servizio viene utilizzato il nome del servizio `ccm-print-test`. Una volta definito il servizio di precompilazione, puoi accedervi nell’implementazione del servlet o del passaggio del processo di flusso di lavoro per generare il documento del canale di stampa.
 
 ```java
 package com.acrobatsign.core;
@@ -318,4 +318,4 @@ public String getWidgetURL(String widgetId) throws ClientProtocolException, IOEx
 
 ## Passaggi successivi
 
-Scrivi un [Wrapper del servizio OSGi per esporre l’API di Acrobat Sign](./wrapper-sign-api.md)
+Scrivi un wrapper del servizio [OSGi per esporre l&#39;API Acrobat Sign](./wrapper-sign-api.md)

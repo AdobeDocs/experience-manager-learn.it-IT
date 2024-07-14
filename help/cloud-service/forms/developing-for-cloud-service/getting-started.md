@@ -27,14 +27,14 @@ Questa esercitazione ti guiderà attraverso i passaggi necessari per creare un p
 
 Questo tutorial farà riferimento in futuro a questa struttura di cartelle.
 
-* [Installare JDK 11](https://www.oracle.com/java/technologies/downloads/#java11-windows). Ho scaricato jdk-11.0.6_windows-x64_bin.zip
+* [Installa JDK 11](https://www.oracle.com/java/technologies/downloads/#java11-windows). Ho scaricato jdk-11.0.6_windows-x64_bin.zip
 * [Maven](https://maven.apache.org/guides/getting-started/windows-prerequisites.html).Ad esempio, se hai installato Maven nella cartella c:\maven, dovrai creare una variabile di ambiente denominata M2_HOME con il valore C:\maven\apache-maven-3.6.0. Aggiungere quindi M2_HOME\bin al percorso e salvare l&#39;impostazione.
 
 ## Creare un progetto Maven utilizzando l’archetipo di progetto AEM
 
-* Crea una cartella denominata **cloudmanager**(è possibile assegnare qualsiasi nome) nell&#39;unità c
+* Crea una cartella denominata **cloudmanager**(puoi assegnarle qualsiasi nome) nell&#39;unità C
 * Apri la finestra del prompt dei comandi e passa a **c:\cloudmanager**
-* Copiare e incollare il contenuto del [file di testo](assets/creating-maven-project.txt) nella finestra del prompt dei comandi. Potrebbe essere necessario modificare DarchetypeVersion=30 a seconda del [ultima versione](https://github.com/adobe/aem-project-archetype/releases). L&#39;ultima versione era 30 al momento della stesura di questo articolo.
+* Copiare e incollare il contenuto del [file di testo](assets/creating-maven-project.txt) nella finestra del prompt dei comandi. Potrebbe essere necessario modificare DarchetypeVersion=30 a seconda della [versione più recente](https://github.com/adobe/aem-project-archetype/releases). L&#39;ultima versione era 30 al momento della stesura di questo articolo.
 * Esegui il comando premendo Invio. Se tutto va correttamente, dovrebbe comparire il messaggio di completamento della generazione.
 
 ## Passaggi successivi

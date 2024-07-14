@@ -20,13 +20,13 @@ ht-degree: 0%
 
 # Registrazione dell’estensione
 
-Le estensioni dell’interfaccia utente dell’AEM sono app specializzate per App Builder, basate su React e utilizzano [Spettro di reazione](https://react-spectrum.adobe.com/react-spectrum/) Framework interfaccia utente.
+Le estensioni dell&#39;interfaccia utente AEM sono app App Builder specializzate, basate su React e utilizzano il framework dell&#39;interfaccia utente [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/).
 
-Per definire dove e come viene visualizzata l&#39;estensione dell&#39;interfaccia utente AEM, sono necessarie due configurazioni nell&#39;app App Builder dell&#39;estensione: il routing dell&#39;app e la registrazione dell&#39;estensione.
+Per definire dove e come viene visualizzata l’estensione dell’interfaccia utente AEM, sono necessarie due configurazioni nell’app App Builder dell’estensione: il routing dell’app e la registrazione dell’estensione.
 
 ## Route delle app{#app-routes}
 
-Dell&#39;estensione `App.js` dichiara il [Router React](https://reactrouter.com/en/main) che include una route di indice che registra l’estensione nell’interfaccia utente dell’AEM.
+Il `App.js` dell&#39;estensione dichiara il [router React](https://reactrouter.com/en/main) che include una route di indice che registra l&#39;estensione nell&#39;interfaccia utente AEM.
 
 La route dell&#39;indice viene richiamata al caricamento iniziale dell&#39;interfaccia utente AEM e la destinazione di questa route definisce il modo in cui l&#39;estensione viene esposta nella console.
 
@@ -53,15 +53,15 @@ function App(props) {
 
 ## Registrazione dell’estensione
 
-`ExtensionRegistration.js` deve essere caricato immediatamente tramite la route di indice dell&#39;estensione e agisce sul punto di registrazione dell&#39;estensione.
+`ExtensionRegistration.js` deve essere caricato immediatamente tramite la route dell&#39;indice dell&#39;estensione e agisce come punto di registrazione dell&#39;estensione.
 
-In base al modello di estensione dell’interfaccia utente AEM selezionato quando [inizializzazione dell&#39;estensione app Builder](./app-initialization.md), sono supportati diversi punti di estensione.
+In base al modello di estensione dell&#39;interfaccia utente AEM selezionato durante l&#39;inizializzazione dell&#39;estensione dell&#39;app App Builder](./app-initialization.md), sono supportati diversi punti di estensione.[
 
 + [Punti di estensione dell’interfaccia utente per frammenti di contenuto](./content-fragments/overview.md#extension-points)
 
 ## Includi estensioni in modo condizionale
 
-Le estensioni dell’interfaccia utente AEM possono eseguire una logica personalizzata per limitare gli ambienti AEM in cui viene visualizzata l’estensione. Questo controllo viene eseguito prima del `register` chiama in `ExtensionRegistration` e restituisce immediatamente se l’estensione non deve essere visualizzata.
+Le estensioni dell’interfaccia utente AEM possono eseguire una logica personalizzata per limitare gli ambienti AEM in cui viene visualizzata l’estensione. Questo controllo viene eseguito prima della chiamata `register` nel componente `ExtensionRegistration` e restituisce immediatamente se l&#39;estensione non deve essere visualizzata.
 
 Il contesto disponibile per questo controllo è limitato:
 
@@ -73,9 +73,9 @@ I controlli più comuni per il caricamento di un’estensione sono:
 + Utilizzo dell&#39;host AEM (`new URLSearchParams(window.location.search).get('repo')`) per determinare se l&#39;estensione deve essere caricata.
    + Mostra l’estensione solo sugli ambienti AEM che fanno parte di un programma specifico (come mostrato nell’esempio di seguito).
    + Mostra l’estensione solo in un ambiente AEM specifico (host AEM).
-+ Utilizzo di un [Azione Adobe I/O Runtime](./runtime-action.md) effettuare una chiamata HTTP all’AEM per determinare se l’utente corrente deve visualizzare l’estensione.
++ Utilizzo di un&#39;azione [Adobe I/O Runtime](./runtime-action.md) per effettuare una chiamata HTTP all&#39;AEM per determinare se l&#39;utente corrente deve visualizzare l&#39;estensione.
 
-L’esempio seguente illustra come limitare l’estensione a tutti gli ambienti nel programma `p12345`.
+L&#39;esempio seguente illustra la limitazione dell&#39;estensione a tutti gli ambienti nel programma `p12345`.
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 

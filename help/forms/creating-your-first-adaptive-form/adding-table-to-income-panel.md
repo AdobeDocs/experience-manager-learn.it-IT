@@ -29,7 +29,7 @@ Verrà aggiunta una tabella al pannello Entrate. Configura le righe della tabell
 
 ## Rendi dinamica la tabella dei redditi {#make-the-income-table-dynamic}
 
-**Assicurati di essere in modalità di modifica. Il pulsante Modifica si trova in alto a destra nel browser.**
+**Assicurarsi di essere in modalità di modifica. Il pulsante Modifica si trova nella parte superiore destra del browser.**
 
 * Per impostazione predefinita, quando si inserisce una tabella in un modulo adattivo, la tabella non è dinamica, il che significa che non è possibile aggiungere nuove righe alla tabella in fase di esecuzione.
 
@@ -48,4 +48,4 @@ Verrà aggiunta una tabella al pannello Entrate. Configura le righe della tabell
 
 ## Passaggi successivi
 
-[Configurare il pannello Risorse](./configuring-assets-panel.md)
+[Configurare il pannello Assets](./configuring-assets-panel.md)

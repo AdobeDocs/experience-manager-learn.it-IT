@@ -1,6 +1,6 @@
 ---
 title: Creare un layout con Forms Designer
-description: Questa è la parte 4 del tutorial in più parti per la creazione del primo documento di comunicazione interattiva per il canale di stampa.In questa parte viene esaminato il file di layout creato con AEM Forms Designer.
+description: Questa è la parte 4 del tutorial in più parti per la creazione del primo documento di comunicazione interattiva per il canale di stampa.In questa parte, osserviamo il file di layout creato con AEM Forms Designer.
 feature: Interactive Communication
 doc-type: Tutorial
 version: 6.4,6.5
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Creare un layout con Forms Designer {#create-layout-using-forms-designer}
 
-In questa parte verrà esaminato il file di layout creato con AEM Forms Designer.
+In questa parte viene esaminato il file di layout creato con AEM Forms Designer.
 
 Ogni documento del canale di stampa si basa su un modello creato con lo strumento AEM Forms Designer. In genere, si creano sezioni o aree di destinazione nel modello per contenere frammenti di documenti, immagini o frammenti di layout. Idealmente, il layout non ha alcun contenuto definito. In questo modo il layout viene separato dal contenuto, che è la pratica consigliata.
 

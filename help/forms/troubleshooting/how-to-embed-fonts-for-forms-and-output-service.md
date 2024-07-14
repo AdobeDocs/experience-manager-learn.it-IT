@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Incorporare font per Forms e convertire i servizi di output
 
-*Questo video illustra i passaggi per incorporare font per Forms e convertire i servizi di output.*
+*Questo video illustra i passaggi per incorporare i tipi di carattere per Forms e le conversioni dei servizi di output.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335496?quality=12&learn=on)

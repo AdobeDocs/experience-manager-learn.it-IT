@@ -29,10 +29,10 @@ Il video seguente evidenzia alcune delle funzioni principali dell’Editor pagin
 >[!VIDEO](https://video.tv.adobe.com/v/32011?quality=12&learn=on)
 
 
-Consulta la [Documentazione AEM per una panoramica completa delle funzionalità dell’Editor pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=it).
+Consulta la [documentazione AEM per una panoramica completa delle funzionalità dell&#39;Editor pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=it).
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Documentazione dell’editor di pagine AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=it)
-* [Modifica della documentazione sul contenuto di una pagina](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guida utente all’authoring di siti](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [Documentazione dell&#39;editor di pagine AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=it)
+* [Modifica della documentazione del contenuto della pagina](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
+* [Guida utente per l&#39;authoring di siti](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)

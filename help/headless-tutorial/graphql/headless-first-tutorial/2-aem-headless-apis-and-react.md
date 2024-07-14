@@ -34,13 +34,13 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
 
 ## Clonare l’app React
 
-1. Clona l’app da [Github](https://github.com/lamontacrook/headless-first/tree/main) eseguendo il comando seguente sulla riga di comando.
+1. Clona l&#39;app da [Github](https://github.com/lamontacrook/headless-first/tree/main) eseguendo il comando seguente sulla riga di comando.
 
    ```
    $ git clone git@github.com:lamontacrook/headless-first.git
    ```
 
-1. Cambia in `headless-first` e installarle.
+1. Passare alla directory `headless-first` e installare le dipendenze.
 
    ```
    $ cd headless-first
@@ -49,7 +49,7 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
 
 ## Configurare l’app React
 
-1. Crea un file denominato `.env` nella directory principale del progetto. In entrata `.env` imposta i seguenti valori:
+1. Creare un file denominato `.env` nella directory principale del progetto. In `.env` impostare i seguenti valori:
 
    ```
    REACT_APP_AEM=<URL of the AEM instance>
@@ -58,37 +58,37 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
    REACT_APP_TOKEN=<developer token>
    ```
 
-1. Puoi recuperare un token sviluppatore in Cloud Manager. Accedi a [Adobe Cloud Manager](https://experience.adobe.com/). Clic __Experience Manager > Cloud Manager__. Scegli il programma appropriato, quindi fai clic sui puntini di sospensione accanto all’ambiente.
+1. Puoi recuperare un token sviluppatore in Cloud Manager. Accedi a [Adobe Cloud Manager](https://experience.adobe.com/). Fare clic su __Experience Manager > Cloud Manager__. Scegli il programma appropriato, quindi fai clic sui puntini di sospensione accanto all’ambiente.
 
-   ![Console per sviluppatori AEM](./assets/2/developer-console.png)
+   ![Developer Console AEM](./assets/2/developer-console.png)
 
-   1. Fai clic su nella __Integrazioni__ scheda
-   1. Clic __Scheda Token locale e ottieni token di sviluppo locale__ pulsante
+   1. Fai clic sulla scheda __Integrazioni__
+   1. Fai clic sulla scheda Token locale e sul pulsante Ottieni token di sviluppo locale ____
    1. Copia il token di accesso che inizia dopo la virgoletta aperta fino a prima della virgoletta di chiusura.
-   1. Incolla il token copiato come valore per `REACT_APP_TOKEN` nel `.env` file.
-   1. Ora creiamo l’app eseguendo `npm ci` sulla riga di comando.
-   1. Ora avvia l’app React ed eseguendo `npm run start` sulla riga di comando.
-   1. In entrata [./src/utils](https://github.com/lamontacrook/headless-first/tree/main/src/utils) un file denominato `context.js`  include il codice per impostare i valori nella `.env` nel contesto dell&#39;app.
+   1. Incolla il token copiato come valore per `REACT_APP_TOKEN` nel file `.env`.
+   1. Ora creiamo l&#39;app eseguendo `npm ci` sulla riga di comando.
+   1. Avviare l&#39;app React ed eseguire `npm run start` sulla riga di comando.
+   1. Tra [./src/utils](https://github.com/lamontacrook/headless-first/tree/main/src/utils) un file denominato `context.js` include il codice per impostare i valori nel file `.env` nel contesto dell&#39;app.
 
 ## Eseguire l’app React
 
-1. Avviare l’app React eseguendo `npm run start` sulla riga di comando.
+1. Avviare l&#39;app React eseguendo `npm run start` sulla riga di comando.
 
    ```
    $ npm run start
    ```
 
-   L’app React verrà avviata e aprirà una finestra del browser per `http://localhost:3000`. Le modifiche all’app React verranno ricaricate automaticamente nel browser.
+   L&#39;app React verrà avviata e aprirà una finestra del browser per `http://localhost:3000`. Le modifiche all’app React verranno ricaricate automaticamente nel browser.
 
 ## Connessione alle API headless dell’AEM
 
-1. Per collegare l’app React a AEM as a Cloud Service, aggiungiamo alcuni elementi a `App.js`. In `React` importa, aggiungi `useContext`.
+1. Per collegare l&#39;app React ad AEM as a Cloud Service, aggiungiamo alcuni elementi a `App.js`. Nell&#39;importazione `React`, aggiungi `useContext`.
 
    ```javascript
    import React, {useContext} from 'react';
    ```
 
-   Importa `AppContext` dal `context.js` file.
+   Importa `AppContext` dal file `context.js`.
 
    ```javascript
    import { AppContext } from './utils/context';
@@ -100,7 +100,7 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
    const context = useContext(AppContext);
    ```
 
-   Infine, inserisci il codice restituito in `<AppContext.Provider> ... </AppContext.Provider>`.
+   Infine, racchiudere il codice restituito in `<AppContext.Provider> ... </AppContext.Provider>`.
 
    ```javascript
    ...
@@ -138,15 +138,15 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
    export default App;
    ```
 
-1. Importa `AEMHeadless` SDK Questo SDK è una libreria helper utilizzata dall’app per interagire con le API headless dell’AEM.
+1. Importa l&#39;SDK `AEMHeadless`. Questo SDK è una libreria helper utilizzata dall’app per interagire con le API headless dell’AEM.
 
-   Aggiungi questa istruzione di importazione al `home.js`.
+   Aggiungi questa istruzione di importazione a `home.js`.
 
    ```javascript
    import AEMHeadless from '@adobe/aem-headless-client-js';
    ```
 
-   Aggiungi quanto segue `{ useContext, useEffect, useState }` al` React` istruzione import.
+   Aggiungi `{ useContext, useEffect, useState }` seguente all&#39;istruzione di importazione ` React`.
 
    ```javascript
    import React, { useContext, useEffect, useState } from 'react';
@@ -158,7 +158,7 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
    import { AppContext } from '../../utils/context';
    ```
 
-   All&#39;interno del `Home` componente, ottieni il `context` variabile dalla `AppContext`.
+   All&#39;interno del componente `Home`, ottenere la variabile `context` da `AppContext`.
 
    ```javascript
    const Home = () => {
@@ -167,7 +167,7 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
    }
    ```
 
-1. Inizializzare l’SDK headless dell’AEM all’interno di una  `useEffect()`, poiché l’SDK headless dell’AEM deve cambiare quando  `context` modifiche alle variabili.
+1. Inizializza l&#39;SDK headless dell&#39;AEM in un `useEffect()`, poiché l&#39;SDK headless dell&#39;AEM deve cambiare quando cambia la variabile `context`.
 
    ```javascript
    useEffect(() => {
@@ -181,7 +181,7 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
 
    >[!NOTE]
    >
-   > È presente un `context.js` file in `/utils` ovvero la lettura di elementi da `.env` file. Per riferimento, `context.url` è l’URL dell’ambiente as a Cloud Service dell’AEM. Il `context.endpoint` è il percorso completo dell’endpoint creato nella lezione precedente. Infine, la `context.token` è il token di sviluppo.
+   > È presente un file `context.js` in `/utils` che sta leggendo elementi dal file `.env`. Per riferimento, `context.url` è l&#39;URL dell&#39;ambiente AEM as a Cloud Service. `context.endpoint` è il percorso completo dell&#39;endpoint creato nella lezione precedente. Infine, `context.token` è il token sviluppatore.
 
 
 1. Creare uno stato di React che espone il contenuto proveniente dall’SDK headless dell’AEM.
@@ -193,7 +193,7 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
    }
    ```
 
-1. Connetti l’app all’AEM. Utilizza la query persistente creata nella lezione precedente. Aggiungiamo il seguente codice all&#39;interno del `useEffect` dopo l’inizializzazione dell’SDK headless dell’AEM. Rendi `useEffect` a seconda del  `context` come mostrato di seguito.
+1. Connetti l’app all’AEM. Utilizza la query persistente creata nella lezione precedente. Aggiungiamo il seguente codice all&#39;interno di `useEffect` dopo l&#39;inizializzazione dell&#39;SDK headless dell&#39;AEM. Rendi `useEffect` dipendente dalla variabile `context`, come illustrato di seguito.
 
 
    ```javascript
@@ -226,7 +226,7 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
 
 ## Rendering contenuto frammento di contenuto
 
-1. Visualizza i Frammenti di contenuto nell’app. Restituisce un `<div>` con il titolo del teaser.
+1. Visualizza i Frammenti di contenuto nell’app. Restituisce `<div>` con il titolo del teaser.
 
    ```javascript
    return (
@@ -238,7 +238,7 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
 
    Sullo schermo dovrebbe essere visualizzato il campo del titolo del teaser.
 
-1. L’ultimo passaggio consiste nell’aggiungere il teaser alla pagina. Il pacchetto include un componente teaser di React. Innanzitutto, includiamo l’importazione. Nella parte superiore della sezione `home.js` file, aggiungi la riga:
+1. L’ultimo passaggio consiste nell’aggiungere il teaser alla pagina. Il pacchetto include un componente teaser di React. Innanzitutto, includiamo l’importazione. Nella parte superiore del file `home.js`, aggiungi la riga:
 
    `import Teaser from '../../components/teaser/teaser';`
 

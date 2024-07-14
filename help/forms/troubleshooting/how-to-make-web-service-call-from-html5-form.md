@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Come effettuare una chiamata al servizio web dal modulo HTML5
 
-*Questo video illustra la procedura per effettuare chiamate al servizio web dal modulo HTML5.*
+*Questo video illustra la procedura per effettuare chiamate al servizio Web dal modulo HTML5.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335505?quality=12&learn=on)

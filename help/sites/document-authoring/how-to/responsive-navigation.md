@@ -1,6 +1,6 @@
 ---
 title: Navigazione reattiva
-description: Scopri come eseguire la navigazione reattiva nell’authoring dei documenti di consegna Edge.
+description: Scopri come eseguire la navigazione reattiva nell’authoring dei documenti di Edge Delivery.
 version: 6.5, Cloud Service
 feature: Authoring
 topic: Content Management

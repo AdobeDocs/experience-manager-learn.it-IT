@@ -25,4 +25,4 @@ Genera varianti in Adobe Experience Manager è uno strumento dinamico che ottimi
 
 ## Utilizzo di Generate Variations (Genera varianti) nell’authoring AEM
 
-+ __Authoring dei documenti:__ Scopri come utilizzare Genera varianti per la creazione di documenti dinamica e personalizzata, elevando i siti web basati su documenti in esperienze più coinvolgenti. [Visualizza documentazione](https://www.aem.live/docs/sidekick-generate-variations)
++ __Authoring dei documenti:__ scopri come utilizzare Genera varianti per la creazione di documenti dinamica e personalizzata, elevando i siti web basati su documenti a esperienze più coinvolgenti. [Visualizza documentazione](https://www.aem.live/docs/sidekick-generate-variations)

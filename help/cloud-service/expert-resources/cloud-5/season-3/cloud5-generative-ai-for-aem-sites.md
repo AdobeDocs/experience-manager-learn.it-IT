@@ -22,6 +22,6 @@ ht-degree: 0%
 
 # IA generativa in AEM Sites
 
-Esplora le nuove funzioni di intelligenza artificiale generativa disponibili nell’authoring dei documenti di AEM Sites. Verranno illustrate le funzionalità, l&#39;integrazione con Adobe Firefly e Adobi Express, la tecnologia utilizzata sul back-end, i modelli di dati utilizzati e il modo in cui questi modelli vengono formati.
+Esplora le nuove funzioni di intelligenza artificiale generativa disponibili nell’authoring dei documenti di AEM Sites. Verranno illustrate le funzionalità, l&#39;integrazione con Adobe Firefly e Adobe Express, la tecnologia utilizzata sul back-end, i modelli di dati utilizzati e il modo in cui questi modelli vengono formati.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428436/?learn=on)

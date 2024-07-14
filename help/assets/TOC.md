@@ -19,14 +19,14 @@ ht-degree: 17%
 
 + [Panoramica](overview.md)
 
-+ Configurazione{#configuring}
++ Configurazione di {#configuring}
    + [Cartelle della linea di base](configuring/baseline-folders.md)
    + [Autorizzazioni linea di base](configuring/baseline-permissions.md)
    + [Assegnazione dei tag](configuring/tagging.md)
    + [Schemi metadati](configuring/metadata-schemas.md)
    + [Profili metadati](configuring/metadata-profiles.md)
    + [Schemi cartelle metadati](configuring/metadata-folder-schemas.md)
-   + [Barra di ricerca amministrazione risorse](configuring/assets-admin-search-rail.md)
+   + [Barra di ricerca amministrazione Assets](configuring/assets-admin-search-rail.md)
    + [Profili di elaborazione](configuring/processing-profiles.md)
    + [Flussi di lavoro con avvio automatico](configuring/auto-start-workflows.md)
 
@@ -38,7 +38,7 @@ ht-degree: 17%
    + [Rappresentazioni](./authoring/renditions.md)
    + [Correlare e non correlare](./authoring/relate-unrelate.md)
 
-+ Collaborazione{#collaboration}
++ Collaboration{#collaboration}
    + [Osserva](./collaboration/watch.md)
    + [Timeline e casella in entrata](./collaboration/timeline-and-inbox.md)
    + [Commenti e annotazioni](./collaboration/comments-and-annotations.md)
@@ -55,9 +55,9 @@ ht-degree: 17%
    + [Trova immagini simili](./search-and-discovery/find-similar-images.md)
 
 + Funzionalità avanzate{#advanced}
-   + [Risorse 3D](./advanced/3d-assets.md)
+   + [Assets 3D](./advanced/3d-assets.md)
    + [Output PDF delle annotazioni](./advanced/customizing-annotations-pdf-output.md)
-   + [Rapporti sulle risorse](./advanced/asset-reports.md)
+   + [Rapporti di Assets](./advanced/asset-reports.md)
    + [Tag bloccati](./advanced/blocked-tags.md)
    + [Estrai archivio](./advanced/extract-archive.md)
    + [Autorizzazioni (CUG)](./advanced/closed-user-groups.md)
@@ -75,7 +75,7 @@ ht-degree: 17%
    + [plugin Sidekick](./edge-delivery-services/sidekick-plugin.md)
 
 + Condivisione e distribuzione{#sharing}
-   + [Scarica risorse](./sharing/download.md)
+   + [Scarica Assets](./sharing/download.md)
    + [Esporta risorse](./sharing/export.md)
    + [Pubblica risorse](./sharing/publish.md)
 
@@ -90,8 +90,8 @@ ht-degree: 17%
       + [Virgole condivisione risorse tempistiche](./sharing/asset-share-commons-feature-video-theming.md)
       + [Asset Share Commons Kit di risorse](./sharing/asset-share/asset-share-commons-asset-kits.md)
 
-+ Creative Workflows{#creative-workflows}
-   + [Integrazione Adobi Express](./creative-workflows/adobe-express.md)
++ Flussi di lavoro creativi{#creative-workflows}
+   + [Integrazione Adobe Express](./creative-workflows/adobe-express.md)
    + [ADOBE EXPRESS e AEM ASSETS](./creative-workflows/adobe-express-aem-assets.md)
    + [App desktop AEM](./creative-workflows/aem-desktop-app.md)
    + [Adobe collegamento risorsa](./creative-workflows/adobe-asset-link.md)
@@ -135,7 +135,7 @@ ht-degree: 17%
       + [Visualizzatori con Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
    + 3D {#3d}
       + [Dynamic Medie 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + Utilizzo di con AEM Sites {#dm-with-aem-sites}
+   + Utilizzo con AEM Sites {#dm-with-aem-sites}
       + [Frammenti di esperienza](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Componenti core Dynamic Medie](dynamic-media/dynamic-media-core-components.md)
 
@@ -145,14 +145,14 @@ ht-degree: 17%
       + [Creazione di predefiniti immagine](dynamic-media/tutorials/creating-image-presets.md)
       + [Creazione di profili immagine di ritaglio avanzato](dynamic-media/tutorials/creating-image-profile-smart-crop.md)
       + [Creazione di profili video](dynamic-media/tutorials/creating-video-profile-to-process-videos-in-dynamic-media.md)
-      + [Elaborazione risorse](dynamic-media/tutorials/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
+      + [Elaborazione di Assets](dynamic-media/tutorials/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
       + [Configurazione di un server di anteprima protetto](dynamic-media/tutorials/adding-test-image-server-details-in-dynamic-media-for-secure-preview.md)
       + [Generazione di URL e codici da incorporare](dynamic-media/tutorials/how-to-generate-public-url-or-embed-code-for-an-asset.md)
       + [Attivazione di un processo di esportazione](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
       + [Annullamento della validità della cache CDN](dynamic-media/tutorials/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
       + [Utilizzo dei componenti core di Dynamic Medie](dynamic-media/tutorials/using-dm-components-on-site-page.md)
       + [Eliminazione configurazione Dynamic Medie](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
-      + [Download di risorse nell’app Dynamic Media Classic](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
+      + [Download di Assets nell’app Dynamic Media Classic](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [API IPS di Dynamic Media Classic](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
 
 + Integrazione Workfront{#workfront}
@@ -167,11 +167,11 @@ ht-degree: 17%
          + [Impostazioni avanzate e flussi di lavoro](./workfront/enhanced-connector/aem-experts-series/advanced-settings-and-workflows.md)
 
 + Traduzione {#translation}
-   + [Traduzione file di origine](translation/source-file-translation-feature-video-use.md)
+   + [Traduzione file Source](translation/source-file-translation-feature-video-use.md)
    + [Ricerca traduzione avanzata](translation/smart-translation-search-feature-video-use.md)
    + [Configurare la ricerca di traduzione intelligente](translation/smart-translation-search-technical-video-setup.md)
 
-+ Modelli di risorse{#asset-templates}
++ Modelli risorse{#asset-templates}
    + [Informazioni sui modelli di risorse](asset-templates/asset-templates-tutorial-understand.md)
    + [Utilizzo dei modelli di risorse](asset-templates/asset-templates-feature-video-use.md)
    + [Configurare i modelli di risorse](asset-templates/asset-templates-technical-video-setup.md)

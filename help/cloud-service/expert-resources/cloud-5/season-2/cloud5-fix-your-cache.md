@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Cloud 5 - Correggi il tuo... Cache
 
-In una seconda serie in due parti, esploriamo alcune cose che puoi osservare che velocizzeranno la memorizzazione nella cache su AEM as a Cloud Service.
+In una serie in due parti della seconda stagione, esploriamo alcuni aspetti che potrai esaminare per velocizzare la memorizzazione nella cache su AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343475?quality=12&learn=on)
 

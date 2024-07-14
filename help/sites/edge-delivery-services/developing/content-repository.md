@@ -21,11 +21,11 @@ ht-degree: 0%
 
 # Archivio dei contenuti
 
-Per integrare Adobe Experience Manager (AEM) con i Edge Delivery Services, inizia con la configurazione di [SharePoint](#sharepoint) o [Unità Google](#google-drive) come archivio dei contenuti. Entrambe le piattaforme funzionano bene con l’AEM, consentendo una gestione e distribuzione fluide dei contenuti. Scegli quello che si allinea alle tue preferenze e segui i passaggi per iniziare a usare AEM e Edge Delivery Services.
+Per integrare Adobe Experience Manager (AEM) con i Edge Delivery Services, configurare [SharePoint](#sharepoint) o [Google Drive](#google-drive) come repository dei contenuti. Entrambe le piattaforme funzionano bene con l’AEM, consentendo una gestione e distribuzione fluide dei contenuti. Scegli quello che si allinea alle tue preferenze e segui i passaggi per iniziare a usare AEM e Edge Delivery Services.
 
 ## Opzioni di authoring dei documenti
 
-Sono disponibili due archivi di contenuti supportati per [authoring dei documenti](../../document-authoring/set-up.md), [SharePoint](#sharepoint) e [Unità Google](#google-drive).
+Esistono due archivi di contenuti supportati per [authoring dei documenti](../../document-authoring/set-up.md), [SharePoint](#sharepoint) e [Google Drive](#google-drive).
 
 >[!BEGINTABS]
 

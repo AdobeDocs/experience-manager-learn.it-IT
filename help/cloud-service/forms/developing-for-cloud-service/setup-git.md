@@ -20,8 +20,10 @@ ht-degree: 0%
 # Installare Git
 
 
-[Installare Git](https://git-scm.com/downloads). È possibile selezionare le impostazioni predefinite e completare il processo di installazione.
-Vai al prompt dei comandi e passa a c:\cloudmanager\aem-banking-app type in git —version. Dovresti visualizzare la versione di GIT installata nel sistema
+[Installa Git](https://git-scm.com/downloads). È possibile selezionare le impostazioni predefinite e completare il processo di installazione.
+Vai al prompt dei comandi
+Passa a c:\cloudmanager\aem-banking-app
+digita in git - version. Dovresti visualizzare la versione di GIT installata nel sistema
 
 ## Inizializza archivio Git locale
 
@@ -68,7 +70,7 @@ git config --global user.password "XXXX"
 
 (la password è la password dell’archivio Git di Cloud Manager)
 
-Registra l’archivio Git di Cloud Manager con l’archivio Git locale. Il comando seguente associa **bankingapp** con l’archivio git di cloud manager remoto. Avresti potuto usare un nome qualsiasi al posto di **bankingapp**
+Registra l’archivio Git di Cloud Manager con l’archivio Git locale. Il comando seguente associa **bankingapp** all&#39;archivio Git di Cloud Manager remoto. Avresti potuto usare un nome qualsiasi invece di **bankingapp**
 
 
 ```shell

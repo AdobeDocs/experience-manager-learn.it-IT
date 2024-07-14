@@ -23,13 +23,13 @@ In AEM Forms 6.5 è stata introdotta la possibilità di aggiungere elementi in m
 
 Puoi aggiungere elementi utilizzando l’editor visivo e l’editor di codice, a seconda del caso d’uso.
 
-**Utilizzo dell’editor visivo:** Puoi popolare gli elementi del gruppo di scelta dai risultati di una chiamata di funzione o di un servizio. Ad esempio, puoi impostare gli elementi del gruppo di scelta utilizzando la risposta di una chiamata API REST.
+**Utilizzo dell&#39;editor visivo:** È possibile popolare gli elementi del gruppo di scelta dai risultati di una chiamata di funzione o di servizio. Ad esempio, puoi impostare gli elementi del gruppo di scelta utilizzando la risposta di una chiamata API REST.
 
 Nella schermata seguente, stiamo impostando le opzioni di Periodo(anni) di prestito sui risultati di una chiamata al servizio denominata getLoanPeriods.
 
 ![Editor regole](assets/ruleeditor.png)
 
-**Utilizzo dell’editor di codice**: quando si desidera impostare gli elementi nel gruppo di scelta in modo dinamico in base ai valori immessi nel modulo. Ad esempio, il seguente frammento di codice imposta gli elementi della casella di controllo sui valori immessi nei campi del nome del candidato e del coniuge del modulo adattivo.
+**Utilizzo dell&#39;editor di codice**: quando si desidera impostare gli elementi nel gruppo di scelta in modo dinamico in base ai valori immessi nel modulo. Ad esempio, il seguente frammento di codice imposta gli elementi della casella di controllo sui valori immessi nei campi del nome del candidato e del coniuge del modulo adattivo.
 
 Nel frammento di codice si impostano gli elementi di WorkingMembers che è un componente casella di controllo. L’array per gli elementi viene generato dinamicamente recuperando i valori dei campi di testo di nome richiedente e coniuge dei moduli adattivi
 
@@ -65,35 +65,35 @@ I dati presentati sono i seguenti
 </afUnboundData>
 ```
 
-**Aggiunta di elementi tramite l’editor di regole**
+**Aggiunta di elementi tramite l&#39;editor di regole**
 
 >[!VIDEO](https://video.tv.adobe.com/v/26847?quality=12&learn=on)
 
-**Aggiunta di elementi tramite l’editor di codice**
+**Aggiunta di elementi tramite l&#39;editor di codice**
 
 >[!VIDEO](https://video.tv.adobe.com/v/26848?quality=12&learn=on)
 
 Per provare questo sul sistema:
 
-**Utilizzo dell’editor di codice per aggiungere elementi**
+**Utilizzo dell&#39;editor di codice per aggiungere elementi**
 
 * [Scaricare le risorse](assets/usingthecodeeditor.zip)
 * [Apri Forms E Documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Fai clic su &quot;Crea&quot; | File Upload&quot; e carica il file scaricato nel passaggio precedente
-* [Visualizzare l’anteprima dei moduli](http://localhost:4502/content/dam/formsanddocuments/simpleform/jcr:content?wcmmode=disabled)
+* [Anteprima moduli](http://localhost:4502/content/dam/formsanddocuments/simpleform/jcr:content?wcmmode=disabled)
 * Inserire il nome del candidato e selezionare lo stato civile da sposato
 * Inserisci il nome del coniuge
 * Fai clic su Successivo
 * Dovresti vedere la casella di controllo compilata con il nome del richiedente e con il nome del coniuge se lo stato civile è sposato
 
-**Utilizzo dell’editor visivo per aggiungere elementi**
+**Utilizzo dell&#39;editor visivo per aggiungere elementi**
 
 * [Scaricare le risorse](assets/usingthevisualeditor.zip)
 * Installa Tomcat se non lo hai già. [Le istruzioni per installare tomcat sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
 * [Distribuisci il file SampleRest.war contenuto in questo file zip nel tuo Tomcat](assets/sample-rest.zip)
 * [Apri Forms E Documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Fai clic su &quot;Crea&quot; | File Upload&quot; e carica il file scaricato nel passaggio precedente
-* [Visualizzare l’anteprima dei moduli](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
+* [Anteprima moduli](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
 * Inserire l&#39;importo del prestito e la tabulazione del campo. Ciò attiverà la regola che visualizza il campo del periodo del prestito.
 * Selezionare il periodo di prestito appropriato (gli articoli per il periodo di prestito sono compilati dalla chiamata rest)
 * Selezionare il tasso di interesse e fare clic su &quot;Ottieni programma di ammortamento&quot;

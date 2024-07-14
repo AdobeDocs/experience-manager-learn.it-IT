@@ -28,15 +28,15 @@ Scopri come localizzare e tradurre i frammenti di contenuto con Adobe Experience
 
 I frammenti di contenuto sono un tipo di contenuto riconosciuto che l’AEM estrae per inviarli a un servizio di traduzione esterno. Sono supportati diversi casi d’uso preconfigurati:
 
-1. Un frammento di contenuto può essere [selezionati direttamente nella console Assets per la copia e la traduzione in lingua](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
+1. Un frammento di contenuto può essere [selezionato direttamente nella console Assets per la copia e la traduzione in lingua](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
 2. I frammenti di contenuto a cui si fa riferimento in una pagina Sites vengono copiati nella cartella della lingua appropriata ed estratti per la traduzione quando la pagina Sites è selezionata per la copia per lingua.
 3. Le risorse multimediali in linea incorporate in un frammento di contenuto possono essere estratte e tradotte.
 4. Le raccolte di risorse associate a un frammento di contenuto possono essere estratte e tradotte.
 
 ## Editor regole di traduzione {#translation-rules-editor}
 
-Il comportamento di traduzione di Experience Manager può essere aggiornato utilizzando **Editor regole di traduzione**. Per aggiornare la traduzione, passa a **Strumenti** > **Generale** > **Configurazione traduzione** a [http://localhost:4502/libs/cq/translation/translationrules/contexts.html](http://localhost:4502/libs/cq/translation/translationrules/contexts.html).
+Il comportamento di traduzione di Experience Manager può essere aggiornato utilizzando **Editor regole di traduzione**. Per aggiornare la traduzione, passa a **Strumenti** > **Generale** > **Configurazione traduzione** all&#39;indirizzo [http://localhost:4502/libs/cq/translation/translationrules/contexts.html](http://localhost:4502/libs/cq/translation/translationrules/contexts.html).
 
-Le configurazioni pronte all’uso fanno riferimento a Frammenti di contenuto in `fragmentPath` con un tipo di risorsa `core/wcm/components/contentfragment/v1/contentfragment`. Tutti i componenti che ereditano da `v1/contentfragment` sono riconosciute dalla configurazione predefinita.
+Le configurazioni pronte all&#39;uso fanno riferimento a frammenti di contenuto in `fragmentPath` con un tipo di risorsa `core/wcm/components/contentfragment/v1/contentfragment`. Tutti i componenti che ereditano da `v1/contentfragment` sono riconosciuti dalla configurazione predefinita.
 
 ![Editor regole di traduzione](assets/translation-configuration.png)

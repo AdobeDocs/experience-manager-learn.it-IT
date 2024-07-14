@@ -22,5 +22,5 @@ Il passaggio successivo consiste nell&#39;unire i dati XML con il modello per ge
 
 ## Utilizzo di OutputService per generare il PDF
 
-Il [generatePDF](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-) per generare il PDF è stato utilizzato il metodo OutputService.
+Per generare il PDF è stato utilizzato il metodo [generatePDF](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-) di OutputService.
 Il PDF generato è stato quindi inviato per le firme utilizzando l’API REST di Adobe Sign.

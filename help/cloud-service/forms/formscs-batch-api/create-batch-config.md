@@ -22,7 +22,7 @@ ht-degree: 0%
 Per utilizzare un’API batch, crea una configurazione batch ed esegui un’esecuzione basata su tale configurazione. Il video seguente mostra una dimostrazione della creazione di una configurazione batch utilizzando l’API
 
 >[!NOTE]
->Assicurarsi che l’utente AEM appartenga a ```forms-users``` per effettuare chiamate API.
+>Assicurarsi che l&#39;utente AEM appartenga al gruppo ```forms-users``` per effettuare chiamate API.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/340241?quality=12&learn=on)

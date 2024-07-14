@@ -23,7 +23,7 @@ ht-degree: 2%
 
 In questa parte viene creato il documento di comunicazione interattiva per il canale di stampa.
 
-Dopo aver definito e configurato Origine dati e Modello dati modulo, ora creeremo la nostra comunicazione interattiva per il canale di stampa
+Dopo aver definito e configurato Data Source e Form Data Model, verrà creata la comunicazione interattiva per il canale di stampa
 
 >[!VIDEO](https://video.tv.adobe.com/v/37888?quality=12&learn=on)
 

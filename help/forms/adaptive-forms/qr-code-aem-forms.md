@@ -9,7 +9,8 @@ role: Developer
 level: Beginner
 jira: KT-15603
 last-substantial-update: 2024-05-28T00:00:00Z
-source-git-commit: e20d9f80cc7e1c6f5f6c81233d9a5178551e2fa2
+exl-id: 0c6079f4-601e-4a82-976c-71dbb2faa671
+source-git-commit: 1977e5103de72a0db5f446eba539d4ae5b810e74
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
@@ -44,7 +45,7 @@ L&#39;&quot;url&quot; è l&#39;url che deve essere incorporato nel codice qr. Qu
 
 
 
-Il codice che segue utilizza il metodo makeCode della libreria QRCode.js nella libreria client del componente qr-code-generator. Il codice QR generato viene aggiunto al div identificato da id **&quot;qrcode&quot;**.
+Il codice seguente utilizza il metodo makeCode della libreria QRCode.js nella libreria client del componente qr-code-generator. Il codice QR generato viene aggiunto al div identificato dall&#39;ID **&quot;qrcode&quot;**.
 
 ```javascript
 $(document).ready(function()
@@ -59,6 +60,4 @@ $(document).ready(function()
 
 * [Scarica e installa il componente codice QR tramite Gestione pacchetti.](assets/qrcode.zip)
 * [Scarica e installa il modulo adattivo di esempio tramite Gestione pacchetti.](assets/form-with-qr-code.zip)
-* [Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/qrcode/w9form/jcr:content?wcmmode=disabled). La sezione della guida del modulo include il codice QR.
-
-
+* [Anteprima modulo](http://localhost:4502/content/dam/formsanddocuments/qrcode/w9form/jcr:content?wcmmode=disabled). La sezione della guida del modulo include il codice QR.

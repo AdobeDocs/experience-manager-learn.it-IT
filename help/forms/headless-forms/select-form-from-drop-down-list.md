@@ -18,13 +18,13 @@ ht-degree: 1%
 
 # Selezionare un modulo da compilare da un elenco a discesa
 
-Gli elenchi a discesa forniscono un modo compatto e organizzato per presentare un elenco di opzioni agli utenti. Gli elementi nell’elenco a discesa verranno compilati con i risultati di [API listforms](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms)
+Gli elenchi a discesa forniscono un modo compatto e organizzato per presentare un elenco di opzioni agli utenti. Gli elementi nell&#39;elenco a discesa verranno compilati con i risultati dell&#39;[API listforms](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms)
 
 ![vista a schede](./assets/forms-drop-down.png)
 
 ## Elenco a discesa
 
-Il seguente codice è stato utilizzato per popolare l’elenco a discesa con i risultati della chiamata API listforms. In base alla selezione dell’utente, viene visualizzato il modulo adattivo che l’utente deve compilare e inviare. [Componenti dell’interfaccia utente materiale](https://mui.com/) sono stati utilizzati per creare questa interfaccia
+Il seguente codice è stato utilizzato per popolare l’elenco a discesa con i risultati della chiamata API listforms. In base alla selezione dell’utente, viene visualizzato il modulo adattivo che l’utente deve compilare e inviare. [I componenti dell&#39;interfaccia utente materiali](https://mui.com/) sono stati utilizzati per creare questa interfaccia
 
 ```javascript
 import * as React from 'react';
@@ -129,7 +129,7 @@ Per creare questa interfaccia utente sono state utilizzate le due seguenti chiam
 * [ListForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms). La chiamata per recuperare i moduli viene effettuata una sola volta quando viene eseguito il rendering del componente. I risultati della chiamata API sono memorizzati nella variabile afForms.
 Nel codice riportato sopra, scorriamo i moduli af utilizzando la funzione di mappatura. Per ogni elemento nell’array afForms, viene creato e aggiunto al componente Select un componente MenuItem.
 
-* Recupera modulo: viene effettuata una chiamata GET al [getForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition), in cui l’id è l’id del modulo adattivo selezionato dall’utente nell’elenco a discesa. Il risultato di questa chiamata di GET viene memorizzato in selectedForm.
+* Recupera modulo: viene effettuata una chiamata GET a [getForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition), dove l’ID è l’ID del modulo adattivo selezionato dall’utente nell’elenco a discesa. Il risultato di questa chiamata di GET viene memorizzato in selectedForm.
 
 ```
 const resp = await fetch(`/adobe/forms/af/${formID}`);

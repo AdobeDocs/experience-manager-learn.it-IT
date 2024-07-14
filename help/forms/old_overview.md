@@ -21,7 +21,7 @@ Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la 
 * **[Gestione dei messaggi di errore nel passaggio del servizio Richiama modello dati modulo](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
   *Una variabile in un modello di flusso di lavoro è un modo per memorizzare un valore in base al relativo tipo di dati*
 
-* **[Grafici Multi-Series nei documenti di comunicazione interattiva (video)](./interactive-communications/multiseriescharts.md)**
+* **[Grafici a più serie nei documenti di comunicazione interattiva (video)](./interactive-communications/multiseriescharts.md)**
   *Tracciare più serie nello stesso grafico. I grafici a serie multiple vengono in genere utilizzati in associazione con il tipo di grafico a linee, a barre o a colonne.*
 
 * **[Creazione di modelli di flusso di lavoro riutilizzabili](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
@@ -37,7 +37,7 @@ Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la 
     </a>
     <div>
       <a href="./creating-your-first-adaptive-form/introduction-and-setup.md">
-    <strong>Creare il primo modulo adattivo</strong>
+    <strong>Crea il tuo primo modulo adattivo</strong>
     </a>
     </div>
     <p>
@@ -50,11 +50,11 @@ Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la 
     </a>
     <div>
       <a href="./ic-print-channel-tutorial/introduction.md">
-    <strong>Crea il primo documento del canale di stampa</strong>
+    <strong>Crea il tuo primo documento del canale di stampa</strong>
     </a>
     </div>
     <p>
-    <em>Le comunicazioni interattive centralizzano e gestiscono la creazione, l’assemblaggio e la distribuzione di corrispondenze sicure, personalizzate e interattive, quali corrispondenza aziendale, documenti, dichiarazioni, note sui benefit, e-mail di marketing, fatture e kit di benvenuto. </em>
+    <em>Le comunicazioni interattive centralizzano e gestiscono la creazione, l'assemblaggio e la distribuzione di corrispondenze sicure, personalizzate e interattive quali corrispondenza aziendale, documenti, dichiarazioni, note sui benefit, messaggi di marketing, fatture e kit di benvenuto. </em>
     <p>
   </td>
   <td>
@@ -92,7 +92,7 @@ Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la 
     </a>
     </div>
     <p>
-    <em> Distinguere tra l’accesso umano e automatizzato ai moduli</em>
+    <em> Distinzione tra accesso umano e automatico ai moduli</em>
     <p>
   </td>
   <td>
@@ -101,11 +101,11 @@ Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la 
     </a>
     <div>
     <a href="https://forms.enablementadobe.com/content/dam/formsanddocuments/summaryscreen/jcr:content?wcmmode=disabled">
-    <strong>Rivedi dati modulo</strong>
+    <strong>Verifica dati modulo</strong>
     </a>
     </div>
     <p>
-    <em>Visualizzare l'anteprima dei dati del modulo prima di inviarlo.</em>
+    <em>Anteprima dei dati del modulo prima dell'invio del modulo.</em>
     </p>
   </td>
   <td>
@@ -134,11 +134,11 @@ Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la 
     </a>
     <div>
       <a href="https://forms.enablementadobe.com/content/forms/af/rentalagreement.html">
-    <strong>Modello di contratto di locazione</strong>
+    <strong>Esempio di contratto di locazione</strong>
     </a>
     </div>
     <p>
-    <em>Contratto di noleggio tra tenant e proprietario compilato e firmato utilizzando AEM Forms e Acrobat Sign</em>
+    <em>Contratto di locazione tra il tenant e il proprietario compilato e firmato utilizzando AEM Forms e Acrobat Sign</em>
     <p>
   </td>
   <td>
@@ -151,7 +151,7 @@ Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la 
     </a>
     </div>
     <p>
-    <em>Creare un NDA in modo dinamico e inviarlo per la firma utilizzando Acrobat Sign</em>
+    <em>Crea un NDA in modo dinamico e invia per la firma tramite Acrobat Sign</em>
     </p>
   </td>
   <td>
@@ -164,7 +164,7 @@ Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la 
       </a>
     </div>
     <p>
-    <em>Firmare facilmente più documenti utilizzando Forms e Acrobat Sign</em>
+    <em>Firma facilmente più documenti utilizzando Forms e Acrobat Sign</em>
     <p>
   </td>
 </tr>
@@ -175,10 +175,10 @@ Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la 
 
 ## Risorse aggiuntive
 
-* [Experience League - Esplorare l’AEM](https://experienceleague.adobe.com/?lang=it#recommended/solutions/experience-manager)
-* [Documentazione sull’authoring di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [Experience League - Esplora AEM](https://experienceleague.adobe.com/?lang=it#recommended/solutions/experience-manager)
+* [Documentazione sull&#39;authoring di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
 * [Documentazione sullo sviluppo per AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
-* [Documentazione sull’amministrazione di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
+* [Documentazione sull&#39;amministrazione di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
 * [Documentazione sulla distribuzione di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
 * [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutorial su AEM Assets](/help/assets/overview.md)

@@ -24,9 +24,9 @@ ht-degree: 0%
 Il primo passaggio nella creazione del modello dati del modulo basato su RDBMS consiste nella configurazione dell’origine dati in pool di connessione Apache Sling. Per configurare l’origine dati, effettua le seguenti operazioni:
 
 * Puntare il browser a [configMgr](http://localhost:4502/system/console/configMgr)
-* Cerca **Origine dati in pool di connessione Apache Sling**
+* Cerca **origine dati in pool di connessione Apache Sling**
 * Aggiungi una nuova voce e fornisci i valori come mostrato nella schermata.
-* ![data-source](assets/data-source.png)
+* ![origine dati](assets/data-source.png)
 * Salva le modifiche
 
 >[!NOTE]
@@ -35,13 +35,13 @@ Il primo passaggio nella creazione del modello dati del modulo basato su RDBMS c
 
 ## Creazione modello dati modulo
 
-* Puntare il browser a [Integrazioni di dati](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)
-* Clic _Crea_->_Modello dati modulo_
-* Fornisci un nome e un titolo significativi per il modello di dati del modulo, ad esempio **Dipendente**
-* Clic _Successivo_
+* Scegli il browser per [integrazioni dati](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)
+* Fai clic su _Crea_->_Modello dati modulo_
+* Fornisci nome e titolo significativi al modello dati del modulo, ad esempio **Dipendente**
+* Fai clic su _Avanti_
 * Seleziona l’origine dati creata nella sezione o nei forum precedenti
-* Clic _Crea_->Modifica per aprire il modello dati del modulo appena creato in modalità di modifica
-* Espandi _forum_ per visualizzare lo schema dipendente. Espandere il nodo dipendente per visualizzare le 2 tabelle
+* Fai clic su _Crea_->Modifica per aprire il modello dati del modulo appena creato in modalità di modifica
+* Espandi il nodo _forum_ per visualizzare lo schema dipendente. Espandere il nodo dipendente per visualizzare le 2 tabelle
 
 ## Aggiungere entità al modello
 
@@ -58,19 +58,19 @@ Il primo passaggio nella creazione del modello dati del modulo basato su RDBMS c
 * ![get-service](assets/get-service.png)
 >[!NOTE]
 > Il servizio get richiede un valore mappato alla colonna empID di newhire entity.Esistono diversi modi per trasmettere questo valore e in questa esercitazione l&#39;empID viene trasmesso attraverso il parametro di richiesta denominato empID.
-* Clic _Fine_ per salvare gli argomenti per il servizio get
-* Clic _Fine_ per salvare le modifiche apportate al modello dati del modulo
+* Fai clic su _Fine_ per salvare gli argomenti per il servizio di recupero
+* Fai clic su _Fine_ per salvare le modifiche apportate al modello dati del modulo
 
 ## Aggiungi associazione tra 2 entità
 
 Le associazioni definite tra le entità di database non vengono create automaticamente nel modello dati del modulo. Le associazioni tra entità devono essere definite utilizzando l’editor dei modelli di dati dei moduli. Ogni entità può avere uno o più beneficiari, è necessario definire un&#39;associazione uno-a-molti tra l&#39;entità newhire e le entità beneficiari.
 I seguenti passaggi ti guideranno attraverso il processo di creazione dell’associazione uno-a-molti
 
-* Seleziona un’entità nuova e fai clic su _Aggiungi associazione_
+* Seleziona un&#39;entità e fai clic su _Aggiungi associazione_
 * Fornisci un titolo e un identificatore significativi all’associazione e alle altre proprietà, come illustrato nella schermata seguente
   ![associazione](assets/association-entities-1.png)
 
-* Fai clic sul pulsante _modifica_ nella sezione Argomenti
+* Fai clic sull&#39;icona _modifica_ nella sezione Argomenti
 
 * Specificate i valori come mostrato in questa schermata
 * ![associazione-2](assets/association-entities.png)
@@ -79,7 +79,7 @@ I seguenti passaggi ti guideranno attraverso il processo di creazione dell’ass
 
 ## Test del modello dati del modulo
 
-Il modello dati del modulo ora dispone di **_ottenere_** servizio che accetta empID e restituisce i dettagli del newhire e dei suoi beneficiari. Per testare il servizio GET, segui i passaggi elencati di seguito.
+Il nostro modello per dati modulo ora dispone del servizio **_get_** che accetta empID e restituisce i dettagli del newhire e dei relativi beneficiari. Per testare il servizio GET, segui i passaggi elencati di seguito.
 
 * Seleziona entità nuova
 * Fai clic su _Oggetto modello di test_

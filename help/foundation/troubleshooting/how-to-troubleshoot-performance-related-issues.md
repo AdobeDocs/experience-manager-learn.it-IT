@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Come risolvere i problemi relativi alle prestazioni in AEM
 
-*Questo video illustra i passaggi per risolvere i problemi relativi alle prestazioni in AEM.*
+*Questo video illustra i passaggi necessari per risolvere i problemi relativi alle prestazioni in AEM.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335472?quality=12&learn=on)

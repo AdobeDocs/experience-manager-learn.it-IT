@@ -23,13 +23,13 @@ Le comunicazioni interattive sono una novità di AEM Forms 6.4. Questo documento
 
 ## Prerequisiti {#prerequistes}
 
-[Scarica e importa la risorsa correlata a questo tutorial in AEM utilizzando il gestore di pacchetti.](assets/gettingstartedassets.zip)Questo file zip contiene immagini, frammenti di documento, file di configurazione e layout delle cartelle controllate (xdp) come parte del pacchetto risorse
+[Scaricare e importare la risorsa correlata a questa esercitazione in AEM utilizzando Gestione pacchetti.](assets/gettingstartedassets.zip)Questo file zip contiene immagini, frammenti di documenti, file di configurazione e layout delle cartelle controllate (xdp) come parte del pacchetto risorse
 
-[Scarica e decomprimi questo file.](assets/warfileandswaggerfile.zip) Questo file contiene il file SampleRest.war che deve essere distribuito su Tomcat e sul file swagger che deve essere utilizzato per la configurazione dell’origine dati.
+[Scarica e decomprimi il file.](assets/warfileandswaggerfile.zip) Questo file contiene il file SampleRest.war che deve essere distribuito su Tomcat e sul file swagger che deve essere utilizzato per la configurazione dell&#39;origine dati.
 
 Dopo aver completato questa esercitazione, avrai imparato quanto segue:
 
-* Crea origine dati
+* Creazione di Data Source
 * Crea modello dati modulo
 * Creare frammenti di documenti
 * Configurare tabelle e grafici

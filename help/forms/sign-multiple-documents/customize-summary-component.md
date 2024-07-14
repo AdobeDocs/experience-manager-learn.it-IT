@@ -32,9 +32,9 @@ Il nuovo componente è basato sul componente di riepilogo fornito con il prodott
 ![component-prop](assets/componentprop.PNG)
 
 È stato aggiunto un pulsante per passare al modulo successivo per la firma
-![template-code](assets/template-code.PNG)
+![codice-modello](assets/template-code.PNG)
 
-Summary.jsp ha il seguente codice. Ha un riferimento alla libreria client identificata dall’ID categoria **getnextform**
+Summary.jsp ha il seguente codice. Contiene un riferimento alla libreria client identificata dall&#39;ID categoria **getnextform**
 
 ```java
 <%--

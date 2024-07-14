@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # AEM Forms Short: crea script modulo semplice
 
-Breve video che descrive la creazione e la verifica di script in AEM Forms Designer
+Breve video che descrive la creazione e il test di script in AEM Forms Designer
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427627/?learn=on)

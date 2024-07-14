@@ -20,7 +20,7 @@ ht-degree: 4%
 
 Un caso d’uso comune prevede la possibilità di compilare un modulo adattivo da un modulo PDF parzialmente completato.
 
-Per dimostrare questo caso d’uso, utilizzeremo [Modulo IRS F23](./assets/f23.pdf)
+Per dimostrare questo caso d&#39;uso, utilizzeremo [IRS modulo F23](./assets/f23.pdf)
 
 ## Prerequisiti
 

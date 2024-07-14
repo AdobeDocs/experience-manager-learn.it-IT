@@ -27,7 +27,7 @@ https://forms.enablementadobe.com/content/forms/af/testingxml.html?FirstName=Joh
 
 Per eseguire questo caso d’uso è stato creato un nuovo modello di modulo adattivo associato a un componente pagina. In questo componente pagina è disponibile una JSP per l’acquisizione dei parametri di query e la creazione di una struttura xml da utilizzare per compilare il modulo adattivo.
 
-I dettagli sulla creazione di un nuovo modello di modulo adattivo e di un nuovo componente pagina sono [spiegato in questo video.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en)
+I dettagli sulla creazione di un nuovo modello di modulo adattivo e di un nuovo componente pagina sono [illustrati in questo video.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en)
 
 Di seguito è riportato il codice utilizzato nella pagina jsp
 

@@ -28,4 +28,4 @@ Scopri come configurare Workfront e AEM Assets per gestire e sincronizzare i met
 
 >[!VIDEO](https://video.tv.adobe.com/v/340332?quality=12&learn=on)
 
-_Parte seconda di a [serie di esperti in quattro parti sul connettore avanzato Workfront per Experience Manager](./overview.md)_
+_Parte due di una serie di esperti in [quattro parti su Workfront, ad Experience Manager connettore avanzato](./overview.md)_

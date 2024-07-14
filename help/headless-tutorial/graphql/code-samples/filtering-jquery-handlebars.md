@@ -1,6 +1,6 @@
 ---
 title: Filtraggio con jQuery e Handlebars
-description: Un’implementazione JavaScript con jQuery e Handlebars che filtra le avventure WKND da visualizzare. .
+description: Un’implementazione di JavaScript che utilizza jQuery e Handlebars che filtra le avventure WKND da visualizzare. .
 version: Cloud Service
 mini-toc-levels: 1
 feature: Content Fragments, GraphQL API
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 # Filtraggio con jQuery e Handlebars
 
-Scopri la capacità delle API GraphQL headless dell’AEM di filtrare i dati utilizzando un’app JavaScript che utilizza [jQuery](https://jquery.com/) e [Handlebars](https://handlebarsjs.com/). Questa app crea un elenco di attività WKND filtrabili per tipo di attività.
+Esplora le API GraphQL headless AEM per filtrare i dati utilizzando un&#39;app JavaScript che utilizza [jQuery](https://jquery.com/) e [Handlebars](https://handlebarsjs.com/). Questa app crea un elenco di attività WKND filtrabili per tipo di attività.
 
-Questo codice illustra l’utilizzo di Adobe [Client AEM headless per JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) per richiamare query GraphQL persistenti. Questa app utilizza `wknd-shared/adventures-all` query persistente per raccogliere tutte le avventure e derivare un elenco di tipi di attività disponibili. Quando un utente seleziona un Tipo di attività, il tipo selezionato viene passato al `wknd-shared/adventures-by-activity` persistente e recupera i dettagli dell’avventura solo per quelle avventure del tipo di attività specificato.
+Questo codice illustra l&#39;utilizzo del client headless AEM [ di Adobe per JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) per richiamare query GraphQL persistenti. Questa app utilizza la query persistente `wknd-shared/adventures-all` per raccogliere tutte le avventure e ottenere un elenco dei tipi di attività disponibili. Quando un utente seleziona un tipo di attività, il tipo selezionato viene passato alla query persistente `wknd-shared/adventures-by-activity` e recupera i dettagli dell&#39;avventura solo per le avventure del tipo di attività specificato.
 
 Questo codice:
 
-+ Si connette a un servizio di pubblicazione AEM e non richiede l’autenticazione
-+ Utilizza le query persistenti di WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-activity`
++ Si connette a un servizio Publish AEM e non richiede l&#39;autenticazione
++ Utilizza le query persistenti WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-activity`

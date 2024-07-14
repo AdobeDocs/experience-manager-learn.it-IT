@@ -17,9 +17,9 @@ ht-degree: 35%
 # Guida introduttiva di AEM e Target {#aem-target-tutorial}
 
 + [Panoramica](./overview.md)
-+ [Personalizzazione tramite frammenti di esperienza AEM](./personalization-use-case-1.md)
-+ [Personalizzazione mediante Visual Experience Composer](./personalization-use-case-3.md)
-+ [Personalizzazione delle esperienze di pagine web complete](./personalization-use-case-2.md)
++ [Personalization con frammenti esperienza AEM](./personalization-use-case-1.md)
++ [Personalization con Compositore esperienza visivo](./personalization-use-case-3.md)
++ [Personalization delle esperienze di pagine web complete](./personalization-use-case-2.md)
 + Implementazione {#aem-target-implementation}
    + [Introduzione](./implementation.md)
    + [AEM e Adobe Target utilizzando tag e Adobe I/O](./using-launch-adobe-io.md)

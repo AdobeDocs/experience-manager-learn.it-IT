@@ -1,5 +1,5 @@
 ---
-title: Creazione di un modello di dati modulo senza origine dati
+title: Creazione di un modello di dati modulo senza Data Source
 description: A partire da AEM Forms 6.4, ora è possibile definire il modello dati del modulo (FDM) senza associarlo a un’origine dati. Il video seguente illustra i passaggi necessari per creare FDM senza alcuna origine dati.
 feature: Workflow
 version: 6.4,6.5
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Creazione di un modello di dati modulo senza origine dati {#creating-form-data-model-without-data-source}
+# Creazione di un modello di dati modulo senza Data Source {#creating-form-data-model-without-data-source}
 
 A partire da AEM Forms 6.4, ora è possibile definire il modello dati del modulo (FDM) senza associarlo a un’origine dati. Il video seguente illustra i passaggi necessari per creare FDM senza alcuna origine dati.
 

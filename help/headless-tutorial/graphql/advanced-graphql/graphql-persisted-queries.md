@@ -17,13 +17,13 @@ ht-degree: 1%
 
 # Query GraphQL persistenti
 
-Le query persistenti sono query memorizzate nel server Adobe Experience Manager (AEM). I client possono inviare una richiesta HTTP GET con il nome della query per eseguirla. Il vantaggio di questo approccio è la possibilità di memorizzazione in cache. Mentre le query GraphQL lato client possono essere eseguite anche utilizzando richieste HTTP POST, che non possono essere memorizzate nella cache, le query persistenti possono essere memorizzate nella cache da cache HTTP o da una rete CDN, migliorando le prestazioni. Le query persistenti consentono di semplificare le richieste e migliorare la sicurezza, in quanto sono incapsulate nel server e l’amministratore AEM ne ha il pieno controllo. È **best practice e vivamente consigliati** per utilizzare le query persistenti quando si lavora con l’API GraphQL dell’AEM.
+Le query persistenti sono query memorizzate nel server Adobe Experience Manager (AEM). I client possono inviare una richiesta HTTP GET con il nome della query per eseguirla. Il vantaggio di questo approccio è la possibilità di memorizzazione in cache. Mentre le query GraphQL lato client possono essere eseguite anche utilizzando richieste HTTP POST, che non possono essere memorizzate nella cache, le query persistenti possono essere memorizzate nella cache da cache HTTP o da una rete CDN, migliorando le prestazioni. Le query persistenti consentono di semplificare le richieste e migliorare la sicurezza, in quanto sono incapsulate nel server e l’amministratore AEM ne ha il pieno controllo. È **buona prassi ed è vivamente consigliato** utilizzare query persistenti quando si lavora con l&#39;API GraphQL dell&#39;AEM.
 
 Nel capitolo precedente, hai esplorato alcune query GraphQL avanzate per raccogliere dati per l’app WKND. In questo capitolo, rendi le query persistenti a AEM e scopri come utilizzare il controllo della cache sulle query persistenti.
 
 ## Prerequisiti {#prerequisites}
 
-Questo documento fa parte di un&#39;esercitazione in più parti. Assicurati che il [capitolo precedente](explore-graphql-api.md) è stato completato prima di procedere con questo capitolo.
+Questo documento fa parte di un&#39;esercitazione in più parti. Prima di procedere con questo capitolo, assicurati che il [capitolo precedente](explore-graphql-api.md) sia stato completato.
 
 ## Obiettivi {#objectives}
 
@@ -32,15 +32,15 @@ In questo capitolo, scopri come:
 * Mantenere le query GraphQL con i parametri
 * Utilizzare parametri di controllo cache con query persistenti
 
-## Revisione _Query persistenti GraphQL_ configurazione
+## Rivedi l&#39;impostazione di configurazione _Query GraphQL persistenti_
 
-Vediamo un po&#39; _Query persistenti GraphQL_ sono abilitati per il progetto del sito WKND nell’istanza AEM.
+Esaminiamo che _le query persistenti di GraphQL_ sono abilitate per il progetto del sito WKND nell&#39;istanza dell&#39;AEM.
 
-1. Accedi a **Strumenti** > **Generale** > **Browser configurazioni**.
+1. Passa a **Strumenti** > **Generale** > **Browser configurazioni**.
 
-1. Seleziona **WKND condiviso**, quindi seleziona **Proprietà** nella barra di navigazione superiore per aprire le proprietà di configurazione. Nella pagina Proprietà di configurazione, dovresti notare che il **Query persistenti GraphQL** autorizzazione abilitata.
+1. Seleziona **Condiviso WKND**, quindi seleziona **Proprietà** nella barra di navigazione superiore per aprire le proprietà di configurazione. Nella pagina Proprietà di configurazione, dovresti notare che l&#39;autorizzazione **Query persistenti GraphQL** è abilitata.
 
-   ![Proprietà di configurazione](assets/graphql-persisted-queries/configuration-properties.png)
+   ![Proprietà configurazione](assets/graphql-persisted-queries/configuration-properties.png)
 
 ## Mantenere le query GraphQL utilizzando lo strumento GraphiQL Explorer incorporato
 
@@ -157,7 +157,7 @@ In questa sezione, rendiamo persistente la query GraphQL che viene successivamen
 
    Verifica che la query funzioni prima di salvarla.
 
-1. Tocca Avanti Salva con nome e immetti `adventure-details-by-slug` come Nome query.
+1. Tocca quindi Salva con nome e immetti `adventure-details-by-slug` come nome della query.
 
    ![Mantieni query GraphQL](assets/graphql-persisted-queries/persist-graphql-query.png)
 
@@ -171,7 +171,7 @@ Per eseguire una query persistente, l’applicazione client effettua una richies
 GET <AEM_HOST>/graphql/execute.json/<Project-Config-Name>/<Persisted-Query-Name>
 ```
 
-Per eseguire una query persistente _con una variabile_, la sintassi precedente diventa:
+Per eseguire una query persistente _con una variabile_, la sintassi precedente cambia in:
 
 ```
 GET <AEM_HOST>/graphql/execute.json/<Project-Config-Name>/<Persisted-Query-Name>;variable1=value1;variable2=value2
@@ -179,15 +179,15 @@ GET <AEM_HOST>/graphql/execute.json/<Project-Config-Name>/<Persisted-Query-Name>
 
 I caratteri speciali come punto e virgola (;), segno di uguale (=), barre (/) e spazio devono essere convertiti per utilizzare la codifica UTF-8 corrispondente.
 
-Eseguendo la `getAllAdventureDetailsBySlug` query dal terminale della riga di comando, esaminiamo questi concetti in azione.
+Eseguendo la query `getAllAdventureDetailsBySlug` dal terminale della riga di comando, questi concetti vengono esaminati in azione.
 
-1. Apri GraphiQL Explorer e fai clic sul pulsante **ellissi** (...) accanto alla query persistente `getAllAdventureDetailsBySlug`, quindi fai clic su **Copia URL**. Incolla l’URL copiato in un riquadro di testo, come illustrato di seguito:
+1. Apri GraphiQL Explorer e fai clic sui **puntini di sospensione** (...) accanto alla query persistente `getAllAdventureDetailsBySlug`, quindi fai clic su **Copia URL**. Incolla l’URL copiato in un riquadro di testo, come illustrato di seguito:
 
    ```code
        http://<AEM_HOST>/graphql/execute.json/wknd-shared/getAllAdventureDetailsBySlug;slug=
    ```
 
-1. Aggiungi `yosemite-backpacking` come valore variabile
+1. Aggiungi `yosemite-backpacking` come valore della variabile
 
    ```code
        http://<AEM_HOST>/graphql/execute.json/wknd-shared/getAllAdventureDetailsBySlug;slug=yosemite-backpacking
@@ -199,7 +199,7 @@ Eseguendo la `getAllAdventureDetailsBySlug` query dal terminale della riga di co
        http://<AEM_HOST>/graphql/execute.json/wknd-shared/getAllAdventureDetailsBySlug%3Bslug%3Dyosemite-backpacking
    ```
 
-1. Apri un terminale della riga di comando e utilizza [Curl](https://curl.se/) eseguire la query
+1. Apri un terminale della riga di comando e utilizzando [Curl](https://curl.se/) esegui la query
 
    ```shell
    $ curl -X GET http://<AEM_HOST>/graphql/execute.json/wknd-shared/getAllAdventureDetailsBySlug%3Bslug%3Dyosemite-backpacking
@@ -207,9 +207,9 @@ Eseguendo la `getAllAdventureDetailsBySlug` query dal terminale della riga di co
 
 >[!TIP]
 >
->    Se esegui la query di cui sopra nell’ambiente di authoring AEM, devi inviare le credenziali. Consulta [Token di accesso per lo sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html) per dimostrarlo e [Chiamata dell&#39;API AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api) per informazioni dettagliate sulla documentazione.
+>    Se esegui la query di cui sopra nell’ambiente di authoring AEM, devi inviare le credenziali. Consulta [Token di accesso per lo sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html) per una dimostrazione e [Chiamata dell&#39;API AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api) per i dettagli della documentazione.
 
-Inoltre, rivedi [Eseguire una query persistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#execute-persisted-query), [Utilizzo delle variabili di query](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#query-variables), e [Codifica dell’URL della query per l’utilizzo da parte di un’app](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#encoding-query-url) per apprendere l’esecuzione di query persistenti da parte delle applicazioni client.
+Rivedi inoltre [Come eseguire una query persistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#execute-persisted-query), [Utilizzando le variabili di query](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#query-variables) e [Codificare l&#39;URL della query per l&#39;utilizzo da parte di un&#39;app](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#encoding-query-url) per apprendere l&#39;esecuzione di query persistenti da parte delle applicazioni client.
 
 ## Aggiornamento dei parametri di controllo cache nelle query persistenti {#cache-control-all-adventures}
 
@@ -217,21 +217,21 @@ L’API GraphQL dell’AEM ti consente di aggiornare i parametri predefiniti di 
 
 * 60 secondi è il valore TTL predefinito (maxage=60) per il client (ad esempio, un browser)
 
-* 7200 secondi, TTL predefinito (s-maxage=7200) per Dispatcher e CDN, o cache condivise
+* 7200 secondi, TTL predefinito (s-maxage=7200) per Dispatcher e CDN; noto anche come cache condivise
 
-Utilizza il `adventures-all` per aggiornare i parametri di controllo cache. La risposta alla query è grande ed è utile controllarne la `age` nella cache. Questa query persistente viene utilizzata in seguito per aggiornare [applicazione client](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md).
+Utilizzare la query `adventures-all` per aggiornare i parametri di controllo cache. La risposta alla query è grande ed è utile controllarne `age` nella cache. Questa query persistente viene utilizzata in seguito per aggiornare [l&#39;applicazione client](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md).
 
-1. Apri GraphiQL Explorer e fai clic sul pulsante **ellissi** (...) accanto alla query persistente, quindi fai clic su **Intestazioni** per aprire **Configurazione cache** modale.
+1. Apri GraphiQL Explorer e fai clic sui **puntini di sospensione** (...) accanto alla query persistente, quindi fai clic su **Intestazioni** per aprire il modale **Configurazione cache**.
 
-   ![Opzione Intestazione GraphQL persistente](assets/graphql-persisted-queries/persist-graphql-header-option.png)
-
-
-1. In **Configurazione cache** modale, aggiorna il `max-age` valore intestazione a `600 `secondi (10 minuti), quindi fai clic su **Salva**
-
-   ![Mantieni configurazione cache GraphQL](assets/graphql-persisted-queries/persist-graphql-cache-config.png)
+   ![Opzione Intestazione GraphQL Persistente](assets/graphql-persisted-queries/persist-graphql-header-option.png)
 
 
-Revisione [Memorizzazione in cache delle query persistenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#caching-persisted-queries) per ulteriori informazioni sui parametri di controllo cache predefiniti.
+1. Nel modale **Configurazione cache**, aggiorna il valore dell&#39;intestazione `max-age` a `600 `secondi (10 minuti), quindi fai clic su **Salva**
+
+   ![Mantieni configurazione cache di GraphQL](assets/graphql-persisted-queries/persist-graphql-cache-config.png)
+
+
+Rivedi [Memorizzazione in cache delle query persistenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#caching-persisted-queries) per ulteriori informazioni sui parametri predefiniti di controllo cache.
 
 
 ## Congratulazioni.
@@ -240,4 +240,4 @@ Congratulazioni Ora hai imparato a rendere persistenti le query GraphQL con para
 
 ## Passaggi successivi
 
-In [capitolo successivo](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md), implementerai le richieste di query persistenti nell’app WKND.
+Nel [prossimo capitolo](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md), implementerai le richieste di query persistenti nell&#39;app WKND.

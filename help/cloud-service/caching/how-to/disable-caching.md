@@ -1,6 +1,6 @@
 ---
 title: Disabilitare il caching CDN
-description: Scopri come disabilitare la memorizzazione nella cache delle risposte HTTP nella rete CDN di AEM as a Cloud Service.
+description: Scopri come disattivare la memorizzazione nella cache delle risposte HTTP nella rete CDN di AEM as a Cloud Service.
 version: Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
@@ -21,17 +21,17 @@ ht-degree: 0%
 
 # Disabilitare il caching CDN
 
-Scopri come disabilitare la memorizzazione nella cache delle risposte HTTP nella rete CDN di AEM as a Cloud Service. La memorizzazione nella cache delle risposte è controllata da `Cache-Control`, `Surrogate-Control`, o `Expires` Intestazioni cache di risposta HTTP.
+Scopri come disattivare la memorizzazione nella cache delle risposte HTTP nella rete CDN di AEM as a Cloud Service. La memorizzazione nella cache delle risposte è controllata da `Cache-Control`, `Surrogate-Control` o `Expires` intestazioni cache di risposta HTTP.
 
-Queste intestazioni di cache sono in genere impostate nelle configurazioni host del Dispatcher AEM utilizzando `mod_headers`, ma può anche essere impostato nel codice Java™ personalizzato eseguito nella pubblicazione AEM stessa.
+Queste intestazioni di cache sono in genere impostate nelle configurazioni vhost di Dispatcher AEM utilizzando `mod_headers`, ma possono anche essere impostate nel codice Java™ personalizzato in esecuzione nello stesso Publish AEM.
 
 ## Comportamento di caching predefinito
 
-Rivedi il comportamento di caching predefinito per Pubblicazione e authoring AEM quando un [Archetipo progetto AEM](./enable-caching.md#default-caching-behavior) viene implementato un progetto basato sull’AEM.
+Rivedi il comportamento di caching predefinito per Publish AEM e Author quando viene distribuito un progetto AEM basato su [AEM Project Archetype](./enable-caching.md#default-caching-behavior).
 
 ## Disattiva caching
 
-La disattivazione della memorizzazione nella cache può avere un impatto negativo sulle prestazioni dell’istanza AEM as a Cloud Service, pertanto occorre prestare attenzione quando si disattiva il comportamento predefinito della memorizzazione nella cache.
+La disattivazione della memorizzazione nella cache può avere un impatto negativo sulle prestazioni dell’istanza di AEM as a Cloud Service, pertanto è necessario prestare attenzione quando si disattiva il comportamento di memorizzazione nella cache predefinito.
 
 Tuttavia, in alcuni casi può essere utile disattivare la memorizzazione in cache, ad esempio:
 
@@ -40,14 +40,14 @@ Tuttavia, in alcuni casi può essere utile disattivare la memorizzazione in cach
 
 Per disabilitare il caching, puoi aggiornare le intestazioni della cache in due modi.
 
-1. **Configurazione vhost di Dispatcher:** Disponibile solo per pubblicazione AEM.
-1. **Codice Java™ personalizzato:** Disponibile sia per pubblicazione AEM che per creazione.
+1. **Configurazione vhost Dispatcher:** disponibile solo per Publish AEM.
+1. **Codice Java™ personalizzato:** Disponibile per AEM Publish e Author.
 
 Esaminiamo ognuna di queste opzioni.
 
-### Configurazione vhost di Dispatcher
+### Configurazione vhost Dispatcher
 
-Questa opzione è l’approccio consigliato per disabilitare la memorizzazione in cache, ma è disponibile solo per la pubblicazione AEM. Per aggiornare le intestazioni della cache, utilizza `mod_headers` modulo e `<LocationMatch>` nel file vhost del server HTTP Apache. La sintassi generale è la seguente:
+Questa opzione è l’approccio consigliato per disabilitare la memorizzazione in cache, ma è disponibile solo per AEM Publish. Per aggiornare le intestazioni della cache, utilizzare il modulo `mod_headers` e la direttiva `<LocationMatch>` nel file vhost del server HTTP Apache. La sintassi generale è la seguente:
 
 ```
 <LocationMatch "$URL$ || $URL_REGEX$">
@@ -62,12 +62,12 @@ Questa opzione è l’approccio consigliato per disabilitare la memorizzazione i
 
 #### Esempio
 
-Per disattivare la memorizzazione in cache CDN di **Tipi di contenuto CSS** per alcuni scopi di risoluzione dei problemi, segui questi passaggi.
+Per disattivare la memorizzazione nella cache CDN dei **tipi di contenuto CSS** per alcune operazioni di risoluzione dei problemi, eseguire la procedura seguente.
 
 Per ignorare la cache CSS esistente, è necessario modificare il file CSS per generare una nuova chiave cache per il file CSS.
 
-1. Nel progetto AEM, individua il file vhsot desiderato da `dispatcher/src/conf.d/available_vhosts` directory.
-1. Aggiorna il vhost (ad es. `wknd.vhost`) file come segue:
+1. Nel progetto AEM, individuare il file vhsot desiderato dalla directory `dispatcher/src/conf.d/available_vhosts`.
+1. Aggiornare il file vhost (ad esempio `wknd.vhost`) come segue:
 
    ```
    <LocationMatch "^/etc.clientlibs/.*\.(css)$">
@@ -80,12 +80,12 @@ Per ignorare la cache CSS esistente, è necessario modificare il file CSS per ge
    </LocationMatch>
    ```
 
-   I file vhost in `dispatcher/src/conf.d/enabled_vhosts` directory sono **symlink** ai file in `dispatcher/src/conf.d/available_vhosts` , quindi assicurati di creare symlink se non presente.
-1. Implementare le modifiche vhost nell’ambiente AEM as a Cloud Service desiderato utilizzando [Cloud Manager - Pipeline di configurazione a livello web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) o [Comandi RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
+   I file vhost nella directory `dispatcher/src/conf.d/enabled_vhosts` sono **symlinks** ai file nella directory `dispatcher/src/conf.d/available_vhosts`. Assicurarsi quindi di creare symlink se non presenti.
+1. Distribuisci le modifiche vhost nell&#39;ambiente AEM as a Cloud Service desiderato utilizzando [Cloud Manager - Pipeline di configurazione a livello web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) o [Comandi RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
 
 ### Codice Java™ personalizzato
 
-Questa opzione è disponibile sia per la pubblicazione AEM che per l’authoring. Per aggiornare le intestazioni della cache, utilizza `SlingHttpServletResponse` oggetto nel codice Java™ personalizzato (servlet Sling, filtro servlet Sling). La sintassi generale è la seguente:
+Questa opzione è disponibile sia per AEM Publish che per Author. Per aggiornare le intestazioni della cache, utilizzare l&#39;oggetto `SlingHttpServletResponse` nel codice Java™ personalizzato (servlet Sling, filtro servlet Sling). La sintassi generale è la seguente:
 
 ```java
 response.setHeader("Cache-Control", "private");

@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # Distribuzioni dei componenti web headless AEM
 
-AEM headless [Componente Web](https://developer.mozilla.org/en-US/docs/Web/Web_Components)Le implementazioni /JS sono app JavaScript pure che vengono eseguite in un browser web e che utilizzano e interagiscono con i contenuti dell’AEM in modo headless. Le distribuzioni di Componente Web/JS sono diverse da [Distribuzioni SPA](./spa.md) in quanto non utilizzano un solido framework SPA, e ci si aspetta che siano incorporati nel contesto di qualsiasi sito web, consegnino, trasmettano contenuti dall&#39;AEM.
+Le distribuzioni del [componente Web](https://developer.mozilla.org/en-US/docs/Web/Web_Components)/JS headless AEM sono app JavaScript pure eseguite in un browser Web che utilizzano e interagiscono con il contenuto in AEM in modo headless. Le distribuzioni di componenti Web/JS differiscono dalle [distribuzioni SPA](./spa.md) in quanto non utilizzano un solido framework SPA e si prevede che siano incorporate nel contesto di qualsiasi sito Web, distribuzione o contenuto emergente dell&#39;AEM.
 
 
 ## Configurazioni di distribuzione
@@ -28,8 +28,8 @@ La seguente configurazione di distribuzione deve essere implementata per le dist
 
 | Componente web/app JS si connette a | Autore AEM | Pubblicazione AEM | Anteprima AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [Filtri del Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
-| [Condivisione delle risorse tra le origini (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |
+| [Filtri Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| [Condivisione risorse tra origini](./configurations/cors.md) | ✔ | ✔ | ✔ |
 | [Host AEM](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Esempio di componente Web
@@ -50,7 +50,7 @@ In questo Adobe viene illustrato un componente Web.
            <div class="card-content is-padded-small">
                <div class="content">
                    <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/web-component.md" title="Componente Web">Componente Web</a></p>
-                   <p class="is-size-6">Componente web di esempio, scritto in JavaScript puro, che utilizza contenuti delle API GraphQL headless dell’AEM.</p>
+                   <p class="is-size-6">Componente web di esempio, scritto in puro JavaScript, che utilizza contenuti delle API GraphQL headless dell’AEM.</p>
                    <a href="../example-apps/web-component.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza esempio</span>
                    </a>

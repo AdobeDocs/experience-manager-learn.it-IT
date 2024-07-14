@@ -1,6 +1,6 @@
 ---
 title: Risoluzione dei problemi di AEM as a Cloud Service
-description: Scopri come risolvere i problemi ed eseguire il debug dell’SDK dell’AEM, dell’AEM as a Cloud Service e del processo di compilazione e distribuzione.
+description: Scopri come risolvere i problemi ed eseguire il debug dell’SDK per AEM, di AEM as a Cloud Service e del processo di build e distribuzione.
 version: Cloud Service
 topic: Migration, Upgrade
 feature: Migration
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Risoluzione dei problemi di AEM as a Cloud Service
 
-Scopri come risolvere i problemi ed eseguire il debug dell’SDK dell’AEM, dell’AEM as a Cloud Service e del processo di compilazione e distribuzione.
+Scopri come risolvere i problemi ed eseguire il debug dell’SDK per AEM, di AEM as a Cloud Service e del processo di build e distribuzione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336964?quality=12&learn=on)

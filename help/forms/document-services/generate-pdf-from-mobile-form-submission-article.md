@@ -116,8 +116,8 @@ Per testare questa funzionalità sul tuo server, segui i seguenti passaggi:
 
 * [Scarica e installa il pacchetto associato a questo articolo.](assets/pdf-from-mobile-form-submission.zip)
 
-* Assicurati che i profili URL di invio e Rendering HTML siano impostati correttamente visualizzando la pagina delle proprietà di  [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
+* Assicurati che l&#39;URL di invio e il profilo di rendering HTML siano impostati correttamente visualizzando la pagina delle proprietà di [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
 
-* [Visualizzare l’anteprima di XDP come HTML](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
+* [Anteprima XDP come html](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
 
 * Aggiungi un’immagine al modulo e invia. Dovresti riprendere PDF con l&#39;immagine.

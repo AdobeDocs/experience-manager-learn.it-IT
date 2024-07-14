@@ -20,7 +20,7 @@ ht-degree: 3%
 
 Verrà creato un modulo adattivo basato sul modello creato nella lezione precedente e verrà configurata la barra degli strumenti con i pulsanti appropriati.
 
-**Creare il primo modulo adattivo**
+**Crea il tuo primo modulo adattivo**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22173?quality=12&learn=on)
 

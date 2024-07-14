@@ -29,7 +29,7 @@ Questo tutorial illustra i passaggi necessari per creare il profilo Campaign all
 
 ## Crea servizio AEM {#create-aem-service}
 
-Crea un servizio AEM per creare un profilo Adobe Campaign. Questo servizio AEM recupererà le credenziali di Adobe Campaign dalla configurazione OSGI. Una volta ottenute le credenziali della campagna, viene generato il token di accesso e viene eseguita la chiamata HTTP Post per creare il profilo in Adobe Campaign utilizzando il token di accesso. Di seguito è riportato il codice per la creazione del profilo.
+Crea un servizio AEM per creare un profilo Adobe Campaign. Questo servizio AEM recupererà le credenziali di Adobe Campaign dalla configurazione OSGI. Una volta ottenute le credenziali della campagna, viene generato il token di accesso e viene eseguita la chiamata HTTP Post per creare il profilo in Adobe Campaign. Di seguito è riportato il codice per la creazione del profilo.
 
 ```java
 package aemformwithcampaign.core.services.impl;
@@ -246,7 +246,7 @@ return null;
 
 Crea un gestore di invio personalizzato per gestire l’invio del modulo adattivo. In questo gestore di invio personalizzato effettueremo una chiamata al metodo createProfile di CampaignService. Il metodo createProfile accetta un oggetto JSONObject che rappresenta il profilo da creare.
 
-Per ulteriori informazioni sul gestore di invio personalizzato in AEM Forms, segui questa procedura [link](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
+Per ulteriori informazioni sul gestore di invio personalizzato in AEM Forms, segui questo [collegamento](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
 
 Di seguito è riportato il codice nell’invio personalizzato
 
@@ -266,9 +266,9 @@ String pkey = addNewProfile.createProfile(profile);
 Una volta definito il servizio e l’azione di invio personalizzata, siamo pronti a testare la nostra soluzione. Per testare la soluzione, effettuare le seguenti operazioni
 
 
-* [Accertati di aver seguito i passaggi descritti qui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Importare un modulo adattivo e un gestore di invio personalizzato tramite Gestione pacchetti](assets/create-acs-profile-on-af-submission.zip).Questo pacchetto contiene un modulo adattivo configurato per l’invio all’azione di invio personalizzata.
-* Visualizzare in anteprima [modulo](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
+* [Assicurarsi di aver seguito i passaggi descritti qui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [Importa modulo adattivo e gestore di invio personalizzato tramite Gestione pacchetti](assets/create-acs-profile-on-af-submission.zip). Questo pacchetto contiene un modulo adattivo configurato per l&#39;invio all&#39;azione di invio personalizzata.
+* Anteprima del [modulo](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
 * Compila tutti i campi e invia
 * Viene creato un nuovo profilo nell’istanza ACS
 

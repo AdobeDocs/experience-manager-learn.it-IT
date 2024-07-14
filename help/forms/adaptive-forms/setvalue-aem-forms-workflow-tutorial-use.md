@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Imposta il valore di un elemento XML nei dati inviati da Adaptive Forms nel flusso di lavoro OSGI di AEM Forms.
 
-![ImpostaValore](assets/setvalue.png)
+![ValoreSet](assets/setvalue.png)
 
 LiveCycle utilizzato per impostare un componente valore che consente di impostare il valore di un elemento XML.
 
@@ -40,10 +40,10 @@ Per distribuire le risorse sul sistema locale, effettua le seguenti operazioni:
 
 * [Distribuire il bundle Developingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Distribuire il bundle di esempio](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Questo è il bundle OSGI personalizzato che ti consente di impostare i valori di un elemento nei dati XML inviati
+* [Distribuisci il bundle di esempio](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Questo è il bundle OSGI personalizzato che ti consente di impostare i valori di un elemento nei dati XML inviati
 
 * [Scarica ed estrai il contenuto del file zip](assets/setvalueassets.zip)
-* Puntare il browser a [gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+* Puntare il browser a [Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 * Importa e installa setValueWorkflow.zip. Questo include il modello di flusso di lavoro di esempio.
 * Puntare il browser a [Forms e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Fai clic su Crea. | Caricamento file

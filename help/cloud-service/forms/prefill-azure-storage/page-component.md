@@ -24,11 +24,11 @@ Un componente pagina è un componente normale responsabile del rendering di una 
 ## Crea componente pagina
 
 Accedi all’istanza AEM Forms locale predisposta per il cloud. Crea la seguente struttura nella cartella delle app
-![page-component](./assets/page-component1.png)
+![componente-pagina](./assets/page-component1.png)
 
 1. Fai clic con il pulsante destro del mouse sulla cartella della pagina e crea un nodo denominato storeandfetch di tipo cq:Component
 1. Salva le modifiche
-1. Aggiungi le seguenti proprietà alla `storeandfetch` nodo e salvataggio
+1. Aggiungi le seguenti proprietà al nodo `storeandfetch` e salva
 
 | **Nome proprietà** | **Tipo di proprietà** | **Valore proprietà** |
 |-------------------------|-------------------|----------------------------------------|
@@ -37,7 +37,7 @@ Accedi all’istanza AEM Forms locale predisposta per il cloud. Crea la seguente
 | jcr:title | Stringa | Pagina modello modulo adattivo |
 | sling:resourceSuperType | Stringa | `fd/af/components/page2/aftemplatedpage` |
 
-Copia il `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp` e incollarlo sotto `storeandfetch` nodo. Rinomina il `aftemplatedpage.jsp` a `storeandfetch.jsp`.
+Copiare `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp` e incollarlo nel nodo `storeandfetch`. Rinomina `aftemplatedpage.jsp` in `storeandfetch.jsp`.
 
 Apri `storeandfetch.jsp` e aggiungi la seguente riga:
 
@@ -58,7 +58,8 @@ Il codice finale deve essere simile al seguente
 <cq:include script="azureportal.jsp"/>
 ```
 
-Crea un file denominato azureportal.jsp sotto il nodo storeandfetch, copia il seguente codice in azureportal.jsp e salva le modifiche
+Crea un file denominato azureportal.jsp sotto il nodo storeandfetch
+copia il seguente codice in azureportal.jsp e salva le modifiche
 
 ```jsp
 <%@page session="false" %>
@@ -78,7 +79,7 @@ Crea un file denominato azureportal.jsp sotto il nodo storeandfetch, copia il se
 %>
 ```
 
-In questo codice si ottiene il valore del parametro di richiesta **GUID** e memorizzarlo in una variabile denominata BlobId. Questo BlobId viene quindi trasmesso nella richiesta sling utilizzando l’attributo paramMap. Affinché questo codice funzioni, si presume che sia presente un modulo basato su un modello di dati del modulo supportato dall’archiviazione di Azure e che il servizio di lettura del modello di dati del modulo sia associato a un attributo di richiesta denominato BlobId, come illustrato nella schermata seguente.
+In questo codice si ottiene il valore del parametro di richiesta **guid** e lo si archivia in una variabile denominata BlobId. Questo BlobId viene quindi trasmesso nella richiesta sling utilizzando l’attributo paramMap. Affinché questo codice funzioni, si presume che sia presente un modulo basato su un modello di dati del modulo supportato dall’archiviazione di Azure e che il servizio di lettura del modello di dati del modulo sia associato a un attributo di richiesta denominato BlobId, come illustrato nella schermata seguente.
 
 ![fdm-request-attribute](./assets/fdm-request-attribute.png)
 

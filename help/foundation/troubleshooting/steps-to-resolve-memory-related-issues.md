@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Passaggi per risolvere i problemi relativi alla memoria nell’AEM
 
-*Questo video illustra i passaggi per risolvere i problemi relativi alla memoria nell’AEM.*
+*Questo video illustra i passaggi per risolvere i problemi relativi alla memoria in AEM.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335473?quality=12&learn=on)

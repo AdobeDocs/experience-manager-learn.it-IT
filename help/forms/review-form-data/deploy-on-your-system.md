@@ -23,6 +23,6 @@ Distribuire [summary-component](assets/summarize-component.zip).
 
 [Distribuire il modulo adattivo di esempio](assets/sample-adaptive-form.zip).
 
-[Visualizzare l’anteprima del modulo di esempio](http://localhost:4502/content/dam/formsanddocuments/testsummary/jcr:content?wcmmode=disabled)
+[Anteprima del modulo di esempio](http://localhost:4502/content/dam/formsanddocuments/testsummary/jcr:content?wcmmode=disabled)
 
-Compila i campi modulo e passa alla schermata di riepilogo facendo clic sul pulsante **avanti** per visualizzare i dati del modulo. Puoi anche modificare i dati del modulo facendo clic sull’icona della matita.
+Compila i campi del modulo e passa alla schermata di riepilogo facendo clic sul pulsante **avanti** per visualizzare i dati del modulo. Puoi anche modificare i dati del modulo facendo clic sull’icona della matita.

@@ -26,18 +26,18 @@ Scopri come collegare l’AEM alla proprietà tags utilizzando la configurazione
 
 ## Creare o riutilizzare la configurazione IMS
 
-Per integrare l’AEM con la nuova proprietà Tag è necessaria la configurazione IMS utilizzando il progetto della console Adobe Developer. Questa configurazione consente all’AEM di comunicare con l’applicazione Tags utilizzando le API di tag e IMS gestisce l’aspetto della sicurezza di questa integrazione.
+La configurazione IMS tramite il progetto Adobe Developer Console è necessaria per integrare l’AEM con la nuova proprietà Tag. Questa configurazione consente all’AEM di comunicare con l’applicazione Tags utilizzando le API di tag e IMS gestisce l’aspetto della sicurezza di questa integrazione.
 
-Ogni volta che viene eseguito il provisioning di un ambiente AEM as a Cloud Service, vengono create automaticamente alcune configurazioni IMS come Asset compute, Adobe Analytics e tag. Creazione automatica **tag in Adobe Experience Platform** È possibile utilizzare la configurazione IMS oppure è necessario creare una nuova configurazione IMS se si utilizza l’ambiente AEM 6.X.
+Ogni volta che viene eseguito il provisioning di un ambiente AEM as a Cloud Service, vengono create automaticamente alcune configurazioni IMS come Asset Compute, Adobe Analytics e tag. È possibile utilizzare i **tag creati automaticamente nella configurazione IMS di Adobe Experience Platform** oppure è necessario creare una nuova configurazione IMS se si utilizza un ambiente AEM 6.X.
 
-Revisione creata automaticamente **tag in Adobe Experience Platform** Configurazione IMS tramite i passaggi seguenti.
+Rivedi i **tag creati automaticamente nella configurazione IMS di Adobe Experience Platform** utilizzando la procedura seguente.
 
-1. In AEM Author apri il file **Strumenti** menu
+1. In AEM Author apri il menu **Strumenti**
 1. Nella sezione Sicurezza, seleziona Configurazioni Adobe IMS.
-1. Seleziona la **Adobe lancio** e fai clic su **Proprietà**, controlla i dettagli da **Certificato** e **Account** schede. Quindi fai clic su **Annulla** per tornare senza modificare i dettagli creati automaticamente.
-1. Seleziona la **Adobe lancio** e questa volta fai clic **Verifica stato**, dovresti visualizzare **Completato** messaggio simile al seguente.
+1. Seleziona la scheda **Adobe Launch** e fai clic su **Proprietà**, controlla i dettagli dalle schede **Certificato** e **Account**. Quindi fai clic su **Annulla** per tornare senza modificare i dettagli creati automaticamente.
+1. Seleziona la scheda **Adobe Launch** e ora fai clic su **Verifica stato**. Dovresti visualizzare il messaggio **Success** come di seguito.
 
-   ![Configurazione IMS integra nei tag](assets/adobe-launch-healthy-ims-config.png)
+   ![Configurazione IMS integra tag](assets/adobe-launch-healthy-ims-config.png)
 
 ## Passaggi successivi
 

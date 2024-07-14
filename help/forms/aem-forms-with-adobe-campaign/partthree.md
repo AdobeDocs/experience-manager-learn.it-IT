@@ -21,7 +21,7 @@ ht-degree: 1%
 
 In questa parte, precompiliamo il Modulo adattivo con le informazioni del profilo recuperate da ACS. AEM Forms dispone di questa potente funzionalità per la precompilazione dei moduli adattivi.
 
-Per ulteriori informazioni sulla precompilazione dei moduli adattivi, consulta questo articolo [esercitazione](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
+Per ulteriori informazioni sulla precompilazione dei moduli adattivi, consulta questa [esercitazione](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
 Per precompilare il modulo adattivo recuperando i dati da ACS, supponiamo che vi sia un profilo in ACS che ha la stessa e-mail dell’utente AEM connesso. Ad esempio, se l’ID e-mail della persona che ha effettuato l’accesso a AEM è csimms@adobe.com, prevediamo di trovare un profilo in ACS la cui e-mail è csimms@adobe.com.
 
@@ -233,10 +233,10 @@ return "Pre Fill Forms Using Campaign Profile";
 
 Per eseguire questa operazione sul sistema, attenersi alle seguenti istruzioni:
 
-* [Accertati di aver seguito i passaggi descritti qui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [Assicurarsi di aver seguito i passaggi descritti qui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Importare un modulo adattivo di esempio in AEM utilizzando il gestore di pacchetti](assets/pre-fill-af-from-campaign.zip)
 * Assicurati di accedere all’AEM con un utente il cui ID e-mail è condiviso da un profilo in Adobe Campaign. Ad esempio, se l’ID e-mail dell’utente AEM è johndoe@adobe.com, è necessario disporre di un profilo in ACS la cui e-mail è johndoe@adobe.com.
-* [Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
+* [Anteprima modulo](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
 
 ## Passaggi successivi
 

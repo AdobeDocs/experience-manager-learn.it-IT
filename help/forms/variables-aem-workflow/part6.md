@@ -179,5 +179,5 @@ public class LogWorkflowVariables implements WorkflowProcess {
 
 ## Distribuire il bundle di esempio
 
-[Distribuire il bundle di logger delle variabili](assets/VariableLogger.core-1.0.0-SNAPSHOT.jar) utilizzando la console web Felix.
+[Distribuisci il bundle del logger delle variabili](assets/VariableLogger.core-1.0.0-SNAPSHOT.jar) utilizzando la console Web Felix.
 Associa questo bundle a un passaggio del processo nel flusso di lavoro AEM per registrare il valore della variabile String e Document.

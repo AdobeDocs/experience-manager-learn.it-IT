@@ -1,5 +1,5 @@
 ---
-title: Cloud 5 Convalida del Dispatcher AEM
+title: Convalida Dispatcher AEM Cloud 5
 description: Questo episodio si concentra un po’ più a fondo sulla convalida del dispatcher e sulle sfumature che offre.
 version: Cloud Service
 role: Admin, Developer
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ---
 
-# Cloud 5 Convalida del Dispatcher AEM
+# Convalida Dispatcher AEM Cloud 5
 
 Un rapido esempio di come utilizzare la convalida del dispatcher nei flussi di lavoro di sviluppo AEM.
 

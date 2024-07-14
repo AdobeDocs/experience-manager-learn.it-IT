@@ -1,6 +1,6 @@
 ---
 title: Cloud 5 AEM CDN Parte 1
-description: Questa è la parte 1 di un approfondimento della rete CDN dell'AEM as a Cloud Service.
+description: Questa è la parte 1 di un approfondimento della rete CDN di AEM as a Cloud Service.
 version: Cloud Service
 feature: Developer Tools
 role: Admin, Developer
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Cloud 5 AEM CDN Parte 1
 
-Questo è un approfondimento della rete CDN fornita come parte di AEM as a Cloud Service, compreso di cosa è capace e se portare la tua rete CDN. Questa è la parte 1 di 2.
+Questo video offre informazioni approfondite sulla rete CDN fornita come parte di AEM as a Cloud Service, tra cui di cosa è capace e se desideri utilizzare una tua rete CDN. Questa è la parte 1 di 2.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340760?quality=12&learn=on)
 

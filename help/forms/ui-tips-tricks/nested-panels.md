@@ -24,7 +24,7 @@ Se nel modulo sono presenti schede di navigazione a sinistra e una delle schede 
 
 ## Creare un modulo adattivo
 
-Crea un modulo adattivo con la seguente struttura. Il pannello principale ha pannelli secondari che vengono visualizzati come schede a sinistra. Alcuni di questi &quot;**schede**&quot; dispongono di pannelli figlio aggiuntivi. Ad esempio, la scheda Famiglia include due pannelli figlio denominati Coniuge e Figli.
+Crea un modulo adattivo con la seguente struttura. Il pannello principale ha pannelli secondari che vengono visualizzati come schede a sinistra. Alcune di queste &quot;**schede**&quot; contengono pannelli figlio aggiuntivi. Ad esempio, la scheda Famiglia include due pannelli figlio denominati Coniuge e Figli.
 
 Viene aggiunta anche una barra degli strumenti sotto FormContainer con i pulsanti Prec e Next
 
@@ -39,13 +39,13 @@ Per modificare questo comportamento predefinito, è necessario effettuare le seg
 >[!VIDEO](https://video.tv.adobe.com/v/338369?quality=12&learn=on)
 
 
-Aggiungi il codice seguente all’evento click del **Successivo** tramite l’editor di codice
+Aggiungi il codice seguente all&#39;evento click del pulsante **Next** utilizzando l&#39;editor di codice
 
 ```javascript
 window.guideBridge.setFocus(null, 'nextItemDeep', true);
 ```
 
-Aggiungi il codice seguente all’evento click del **Precedente** tramite l’editor di codice
+Aggiungi il codice seguente all&#39;evento click del pulsante **Prev** utilizzando l&#39;editor di codice
 
 ```javascript
 window.guideBridge.setFocus(null, 'prevItemDeep', true);

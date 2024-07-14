@@ -26,7 +26,7 @@ In questo capitolo, esploreremo alcune query GraphQL comuni per raccogliere cont
 
 ## Prerequisiti {#prerequisites}
 
-Si tratta di un tutorial in più parti in cui si presume che i passaggi descritti in [Creazione di frammenti di contenuto](./author-content-fragments.md) sono state completate.
+Questa esercitazione è in più parti e si presume che i passaggi descritti in [Creazione di frammenti di contenuto](./author-content-fragments.md) siano stati completati.
 
 ## Obiettivi {#objectives}
 
@@ -40,20 +40,20 @@ Si tratta di un tutorial in più parti in cui si presume che i passaggi descritt
 
 È necessario configurare un endpoint GraphQL per abilitare le query API GraphQL per i frammenti di contenuto.
 
-1. Dalla schermata iniziale dell’AEM, passa a **Strumenti** > **Generale** > **GraphQL**.
+1. Dalla schermata iniziale AEM, passa a **Strumenti** > **Generale** > **GraphQL**.
 
-   ![Passa all’endpoint GraphQL](assets/explore-graphql-api/navigate-to-graphql-endpoint.png)
+   ![Passa all&#39;endpoint GraphQL](assets/explore-graphql-api/navigate-to-graphql-endpoint.png)
 
-1. Tocca **Crea** nell’angolo in alto a destra, nella finestra di dialogo risultante inserisci i seguenti valori:
+1. Tocca **Crea** nell&#39;angolo in alto a destra, nella finestra di dialogo risultante immetti i seguenti valori:
 
    * Nome*: **Endpoint progetto personale**.
-   * Utilizza lo schema GraphQL fornito da ... *: **Il mio progetto**
+   * Utilizza lo schema GraphQL fornito da ... *: **Progetto personale**
 
    ![Crea endpoint GraphQL](assets/explore-graphql-api/create-graphql-endpoint.png)
 
-   Tocca **Crea** per salvare l’endpoint.
+   Tocca **Crea** per salvare l&#39;endpoint.
 
-   Gli endpoint di GraphQL creati in base alla configurazione di un progetto abilitano solo le query sui modelli appartenenti a tale progetto. In questo caso, le uniche query per **Persona** e **Team** possono essere utilizzati.
+   Gli endpoint di GraphQL creati in base alla configurazione di un progetto abilitano solo le query sui modelli appartenenti a tale progetto. In questo caso, è possibile utilizzare solo le query sui modelli **Person** e **Team**.
 
    >[!NOTE]
    >
@@ -65,23 +65,23 @@ Si tratta di un tutorial in più parti in cui si presume che i passaggi descritt
 
 ## Utilizzo dell’IDE GraphiQL
 
-Il [GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) consente agli sviluppatori di creare e testare query sui contenuti nell’ambiente AEM corrente. Lo strumento GraphiQL consente inoltre agli utenti di: **persistere o salvare** query che devono essere utilizzate dalle applicazioni client in un&#39;impostazione di produzione.
+Lo strumento [GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) consente agli sviluppatori di creare e testare query sul contenuto nell&#39;ambiente AEM corrente. Lo strumento GraphiQL consente inoltre agli utenti di **salvare o mantenere** le query da utilizzare dalle applicazioni client in un&#39;impostazione di produzione.
 
 Quindi, esplora la potenza dell’API GraphQL dell’AEM utilizzando l’IDE GraphiQL integrato.
 
-1. Dalla schermata iniziale dell’AEM, passa a **Strumenti** > **Generale** > **Editor query di GraphQL**.
+1. Dalla schermata iniziale AEM, passa a **Strumenti** > **Generale** > **Editor query GraphQL**.
 
-   ![Passare all’IDE GraphiQL](assets/explore-graphql-api/navigate-graphql-query-editor.png)
+   ![Passa a IDE GraphiQL](assets/explore-graphql-api/navigate-graphql-query-editor.png)
 
    >[!NOTE]
    >
-   > In, le versioni precedenti di AEM e IDE GraphiQL potrebbero non essere integrate. Può essere installato manualmente seguendo queste istruzioni [istruzioni](#install-graphiql).
+   > In, le versioni precedenti di AEM e IDE GraphiQL potrebbero non essere integrate. Può essere installato manualmente seguendo queste [istruzioni](#install-graphiql).
 
-1. Nell’angolo in alto a destra, accertati che Endpoint sia impostato su **Endpoint progetto personale**.
+1. Nell&#39;angolo in alto a destra, accertati che l&#39;endpoint sia impostato su **Endpoint progetto personale**.
 
    ![Imposta endpoint GraphQL](assets/explore-graphql-api/set-my-project-endpoint.png)
 
-In questo modo tutte le query verranno estese ai modelli creati nel **Il mio progetto** progetto.
+Tutte le query verranno estese ai modelli creati nel progetto **Progetto personale**.
 
 ### Eseguire una query su un elenco di frammenti di contenuto {#query-list-cf}
 
@@ -100,25 +100,25 @@ Un requisito comune consiste nell’eseguire query per più frammenti di contenu
    } 
    ```
 
-1. Premere il tasto **Play** nel menu principale per eseguire la query. Dovresti visualizzare i risultati dei frammenti di contenuto del capitolo precedente:
+1. Premi il pulsante **Riproduci** nel menu principale per eseguire la query. Dovresti visualizzare i risultati dei frammenti di contenuto del capitolo precedente:
 
    ![Risultati elenco persone](assets/explore-graphql-api/all-teams-list.png)
 
-1. Posiziona il cursore sotto il `title` testo e immetti **CTRL+spazio** per attivare suggerimenti sul codice. Aggiungi `shortname` e `description` alla query.
+1. Posizionare il cursore sotto il testo `title` e immettere **CTRL+spazio** per attivare il suggerimento del codice. Aggiungere `shortname` e `description` alla query.
 
-   ![Query di aggiornamento con hit di codice](assets/explore-graphql-api/update-query-codehinting.png)
+   ![Aggiorna query con codice ](assets/explore-graphql-api/update-query-codehinting.png)
 
-1. Eseguire nuovamente la query premendo il tasto **Play** e dovresti vedere che i risultati includono le proprietà aggiuntive di `shortname` e `description`.
+1. Eseguire nuovamente la query premendo il pulsante **Riproduci**. I risultati dovrebbero includere le proprietà aggiuntive di `shortname` e `description`.
 
-   ![risultati con nome breve e descrizione](assets/explore-graphql-api/updated-query-shortname-description.png)
+   ![risultati nome breve e descrizione](assets/explore-graphql-api/updated-query-shortname-description.png)
 
-   Il `shortname` è una proprietà semplice e `description` è un campo di testo su più righe e l’API GraphQL consente di scegliere vari formati per i risultati, come `html`, `markdown`, `json`, o `plaintext`.
+   `shortname` è una proprietà semplice e `description` è un campo di testo su più righe e l&#39;API GraphQL consente di scegliere vari formati per i risultati come `html`, `markdown`, `json` o `plaintext`.
 
 ### Query per frammenti nidificati
 
-Successivamente, esperimento con query è il recupero di frammenti nidificati, ricorda che il **Team** il modello fa riferimento al **Persona** modello.
+Successivamente, l&#39;esperimento con l&#39;esecuzione di query sta recuperando i frammenti nidificati. Ricordare che il modello **Team** fa riferimento al modello **Person**.
 
-1. Aggiorna la query per includere `teamMembers` proprietà. Ricorda che si tratta di un **Riferimento frammento** al modello della persona. È possibile restituire le proprietà del modello Persona:
+1. Aggiornare la query per includere la proprietà `teamMembers`. Ricorda che questo è un campo **Riferimento frammento** per il modello della persona. È possibile restituire le proprietà del modello Persona:
 
    ```graphql
    query allTeams {
@@ -175,7 +175,7 @@ Successivamente, esperimento con query è il recupero di frammenti nidificati, r
    }
    ```
 
-   La possibilità di eseguire query sui frammenti nidificati è una potente funzione dell’API GraphQL dell’AEM. In questo semplice esempio, la nidificazione è profonda solo due livelli. Tuttavia, è possibile nidificare ulteriormente i frammenti. Ad esempio, se è stato **Indirizzo** modello associato a un **Persona** sarebbe possibile restituire dati da tutti e tre i modelli in una singola query.
+   La possibilità di eseguire query sui frammenti nidificati è una potente funzione dell’API GraphQL dell’AEM. In questo semplice esempio, la nidificazione è profonda solo due livelli. Tuttavia, è possibile nidificare ulteriormente i frammenti. Ad esempio, se a un modello **Person** è associato un **Address**, è possibile restituire dati da tutti e tre i modelli in una singola query.
 
 ### Filtrare un elenco di frammenti di contenuto {#filter-list-cf}
 
@@ -204,19 +204,19 @@ Vediamo ora come è possibile filtrare i risultati in un sottoinsieme di frammen
    }  
    ```
 
-   La query precedente esegue una ricerca in tutti i frammenti Persona nel sistema. Il filtro aggiunto all’inizio della query esegue un confronto sulla `name` e la stringa della variabile `$name`.
+   La query precedente esegue una ricerca in tutti i frammenti Persona nel sistema. Il filtro aggiunto all&#39;inizio della query esegue un confronto sul campo `name` e sulla stringa di variabile `$name`.
 
-1. In **Variabili di query** immetti quanto segue:
+1. Nel pannello **Variabili query** immetti quanto segue:
 
    ```json
    {"name": "John Doe"}
    ```
 
-1. Esegui la query. È previsto che solo **Persone** Il frammento di contenuto viene restituito con il valore `John Doe`.
+1. Eseguire la query. È previsto che venga restituito solo il frammento di contenuto **Persone** con il valore `John Doe`.
 
    ![Utilizzare le variabili di query per filtrare](assets/explore-graphql-api/using-query-variables-filter.png)
 
-   Esistono molte altre opzioni per filtrare e creare query complesse. Consulta [Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
+   Esistono molte altre opzioni per filtrare e creare query complesse. Vedere [Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
 
 1. Migliora la query precedente per recuperare l’immagine del profilo
 
@@ -251,7 +251,7 @@ Vediamo ora come è possibile filtrare i risultati in un sottoinsieme di frammen
    } 
    ```
 
-   Il `profilePicture` è un riferimento di contenuto e deve essere un’immagine, pertanto è incorporato `ImageRef` viene utilizzato l&#39;oggetto. Questo ci consente di richiedere dati aggiuntivi sull’immagine da usare come riferimento, come `width` e `height`.
+   `profilePicture` è un riferimento a contenuto e dovrebbe essere un&#39;immagine, pertanto viene utilizzato l&#39;oggetto predefinito `ImageRef`. Questo consente di richiedere dati aggiuntivi sull&#39;immagine da usare come riferimento, come `width` e `height`.
 
 ### Eseguire una query su un singolo frammento di contenuto {#query-single-cf}
 
@@ -270,7 +270,7 @@ Vediamo ora come è possibile filtrare i risultati in un sottoinsieme di frammen
    }
    ```
 
-1. Immetti quanto segue per **Variabili di query**:
+1. Immetti quanto segue per le **variabili di query**:
 
    ```json
    {"path": "/content/dam/my-project/en/alison-smith"}
@@ -280,7 +280,7 @@ Vediamo ora come è possibile filtrare i risultati in un sottoinsieme di frammen
 
 ## Query persistenti {#persist-queries}
 
-Quando uno sviluppatore è soddisfatto della query e dei dati dei risultati restituiti dalla query, il passaggio successivo consiste nel memorizzare o mantenere la query nell’AEM. Il [Query persistenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) sono il meccanismo preferito per esporre l’API GraphQL alle applicazioni client. Una volta che una query è stata resa persistente, può essere richiesta utilizzando una richiesta GET e memorizzata nella cache ai livelli Dispatcher e CDN. Le prestazioni delle query persistenti sono molto migliori. Oltre ai vantaggi in termini di prestazioni, le query persistenti garantiscono che i dati aggiuntivi non vengano accidentalmente esposti alle applicazioni client. Ulteriori dettagli su [Le query persistenti si trovano qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
+Quando uno sviluppatore è soddisfatto della query e dei dati dei risultati restituiti dalla query, il passaggio successivo consiste nel memorizzare o mantenere la query nell’AEM. Le [query persistenti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) sono il meccanismo preferito per esporre l&#39;API GraphQL alle applicazioni client. Una volta che una query è stata resa persistente, può essere richiesta utilizzando una richiesta GET e memorizzata nella cache ai livelli Dispatcher e CDN. Le prestazioni delle query persistenti sono molto migliori. Oltre ai vantaggi in termini di prestazioni, le query persistenti garantiscono che i dati aggiuntivi non vengano accidentalmente esposti alle applicazioni client. Ulteriori dettagli su [Query persistenti sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
 
 Quindi, affinché persistano due query semplici, queste vengono utilizzate nel capitolo successivo.
 
@@ -307,12 +307,12 @@ Quindi, affinché persistano due query semplici, queste vengono utilizzate nel c
 
    Verifica che la query funzioni.
 
-1. Tocco successivo **Salva con nome** e immetti `all-teams` come **Nome query**.
+1. Tocca **Salva con nome** e immetti `all-teams` come **Nome query**.
 
    La query deve essere visualizzata in **Query persistenti** nella barra a sinistra.
 
    ![Query persistente di tutti i team](assets/explore-graphql-api/all-teams-persisted-query.png)
-1. Tocca quindi i puntini di sospensione **...** accanto alla query persistente e tocca **Copia URL** per copiare il percorso negli Appunti.
+1. Tocca i puntini di sospensione **...** accanto alla query persistente e tocca **Copia URL** per copiare il percorso negli Appunti.
 
    ![Copia URL query persistente](assets/explore-graphql-api/copy-persistent-query-url.png)
 
@@ -366,29 +366,29 @@ Quindi, affinché persistano due query semplici, queste vengono utilizzate nel c
    }
    ```
 
-1. Salva la query con nome: `person-by-name`.
+1. Salvare la query con nome: `person-by-name`.
 1. Dovresti salvare due query persistenti:
 
    ![Query persistenti finali](assets/explore-graphql-api/final-persisted-queries.png)
 
 
-## Pubblicare endpoint GraphQL e query persistenti
+## Endpoint Publish GraphQL e query persistenti
 
-In seguito a revisione e verifica, pubblica `GraphQL Endpoint` E `Persisted Queries`
+Al momento della revisione e della verifica, pubblicare `GraphQL Endpoint` e `Persisted Queries`
 
-1. Dalla schermata iniziale dell’AEM, passa a **Strumenti** > **Generale** > **GraphQL**.
+1. Dalla schermata iniziale AEM, passa a **Strumenti** > **Generale** > **GraphQL**.
 
-1. Tocca la casella di controllo accanto a **Endpoint progetto personale** e tocca **Pubblica**
+1. Tocca la casella di controllo accanto a **Endpoint progetto personale** e tocca **Publish**
 
-   ![Pubblica endpoint GraphQL](assets/explore-graphql-api/publish-graphql-endpoint.png)
+   ![Endpoint GraphQL Publish](assets/explore-graphql-api/publish-graphql-endpoint.png)
 
-1. Dalla schermata iniziale dell’AEM, passa a **Strumenti** > **Generale** > **Editor query di GraphQL**
+1. Dalla schermata iniziale AEM, passa a **Strumenti** > **Generale** > **Editor query GraphQL**
 
-1. Tocca il **all-teams** query dal pannello Query persistenti e tocca **Pubblica**
+1. Tocca la query **all-teams** dal pannello Query persistenti e tocca **Publish**
 
-   ![Pubblicare query persistenti](assets/explore-graphql-api/publish-persisted-query.png)
+   ![Query persistenti Publish](assets/explore-graphql-api/publish-persisted-query.png)
 
-1. Ripeti il passaggio precedente per `person-by-name` query
+1. Ripeti il passaggio precedente per la query `person-by-name`
 
 ## File di soluzione {#solution-files}
 
@@ -396,7 +396,7 @@ Scarica i contenuti, i modelli e le query persistenti creati negli ultimi tre ca
 
 ## Risorse aggiuntive
 
-Ulteriori informazioni sulle query GraphQL sono disponibili all’indirizzo [Imparare a utilizzare GraphQL con AEM: contenuto di esempio e query](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
+Ulteriori informazioni sulle query GraphQL in [Imparare a utilizzare GraphQL con AEM - Contenuto di esempio e query](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
 
 ## Congratulazioni. {#congratulations}
 
@@ -404,9 +404,9 @@ Congratulazioni, hai creato ed eseguito diverse query GraphQL.
 
 ## Passaggi successivi {#next-steps}
 
-Nel prossimo capitolo, [Creare un’app React](./graphql-and-react-app.md), scopri come un’applicazione esterna può eseguire query sugli endpoint AEM GraphQL e utilizzare queste due query persistenti. Vengono inoltre presentate alcune informazioni di base sulla gestione degli errori durante l’esecuzione di query GraphQL.
+Nel prossimo capitolo, [Genera app React](./graphql-and-react-app.md), scopri come un&#39;applicazione esterna può eseguire query sugli endpoint GraphQL dell&#39;AEM e utilizzare queste due query persistenti. Vengono inoltre presentate alcune informazioni di base sulla gestione degli errori durante l’esecuzione di query GraphQL.
 
 ## Installare lo strumento GraphiQL (facoltativo) {#install-graphiql}
 
-In, alcune versioni di AEM (6.X.X) lo strumento IDE GraphiQL deve essere installato manualmente, utilizza [istruzioni da qui](../how-to/install-graphiql-aem-6-5.md).
+In, alcune versioni di AEM (6.X.X) lo strumento IDE GraphiQL deve essere installato manualmente, utilizza le [istruzioni qui](../how-to/install-graphiql-aem-6-5.md).
 

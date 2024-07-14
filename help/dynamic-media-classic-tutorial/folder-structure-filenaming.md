@@ -29,7 +29,7 @@ La gerarchia delle cartelle è importante per te e per la tua azienda solo a sco
 
 Un’altra considerazione importante è il numero di risorse o cartelle da archiviare in ogni cartella. Se in una cartella sono memorizzate più risorse, le prestazioni diminuiscono quando si visualizzano le risorse in Dynamic Media Classic. Non memorizzare migliaia di risorse in una cartella. Piuttosto, sviluppa una gerarchia organizzativa con meno di 500 risorse o cartelle all’interno di un determinato ramo della gerarchia. Non si tratta di un requisito rigido, ma aiuta a mantenere tempi di risposta accettabili durante la visualizzazione o la ricerca delle risorse. In effetti, si consiglia di creare gerarchie ampie e superficiali, anziché strette e profonde.
 
-Il modo più semplice per creare le cartelle consiste nel caricare l’intera struttura di cartelle tramite FTP e abilitare l’opzione **Includi sottocartelle**. Questa opzione consente a Dynamic Media Classic di ricreare la struttura di cartelle sul sito FTP in Dynamic Media Classic.
+Il modo più semplice per creare le cartelle consiste nel caricare l&#39;intera struttura di cartelle tramite FTP e abilitare l&#39;opzione **Includi sottocartelle**. Questa opzione consente a Dynamic Media Classic di ricreare la struttura di cartelle sul sito FTP in Dynamic Media Classic.
 
 È consigliabile considerare la struttura delle cartelle prima di iniziare a caricare tutti i file, in quanto è molto più semplice organizzare e gestire i file e le cartelle localmente nel computer che in Dynamic Media Classic. Ad esempio, in Dynamic Media Classic è possibile trascinare solo file, ma non intere cartelle.
 
@@ -45,7 +45,7 @@ Per la strategia delle cartelle, considera ciò che ha senso per la tua organizz
 
 Come scegliere di denominare i file è forse la prima decisione più importante che si farà per quanto riguarda Dynamic Media Classic. Questo perché tutte le risorse in Dynamic Media Classic devono avere nomi univoci, indipendentemente da dove sono memorizzate nell’account.
 
-Tutti gli URL e le transazioni in Dynamic Media Classic sono guidati da un ID risorsa, che è l’identificatore univoco di una risorsa nel database. Quando carichi un file, l’ID risorsa viene creato scegliendo il nome del file e rimuovendo l’estensione. Ad esempio: _896649.jpg_ ottiene risorsa _896649 ID_.
+Tutti gli URL e le transazioni in Dynamic Media Classic sono guidati da un ID risorsa, che è l’identificatore univoco di una risorsa nel database. Quando carichi un file, l’ID risorsa viene creato scegliendo il nome del file e rimuovendo l’estensione. Ad esempio, _896649.jpg_ ottiene la risorsa _ID 896649_.
 
 Regole relative agli ID risorsa:
 
@@ -61,7 +61,7 @@ La maggior parte degli utenti basa la convenzione di denominazione sul proprio S
 
 La strategia di denominazione deve essere flessibile per espansioni future, in modo da evitare di dover rinominare dopo l’avvio. Di seguito sono riportate alcune strategie di denominazione tipiche:
 
-**Nessuna immagine alternativa.** In questo scenario, disponi di una sola immagine per prodotto e non di visualizzazioni alternative o colorate. Assegna un nome a ogni immagine in base al suo SKU univoco o al numero ID prodotto. Quando la pagina viene caricata, il modello di pagina chiama l’ID risorsa con lo stesso numero SKU.
+**Nessuna immagine alternativa.** In questo scenario, si dispone di una sola immagine per prodotto e non si dispone di visualizzazioni alternative o colorate. Assegna un nome a ogni immagine in base al suo SKU univoco o al numero ID prodotto. Quando la pagina viene caricata, il modello di pagina chiama l’ID risorsa con lo stesso numero SKU.
 
 | SKU/PID | Nome file | ID risorsa |
 | ------- | ---------- | -------- |
@@ -70,7 +70,7 @@ La strategia di denominazione deve essere flessibile per espansioni future, in m
 
 Si tratta di un sistema molto semplice, utile se si hanno esigenze modeste. Tuttavia non è molto flessibile. Solo perché oggi non si dispone di immagini alternative non significa che non si avranno quelle immagini domani. Il prossimo scenario offre maggiore flessibilità.
 
-**Utilizzando l’immagine, viste alternative, versioni colorate, campioni.** Questa strategia consente viste alternative e/o colorate, se disponibili. Invece di denominare l&#39;immagine solo dopo lo SKU, aggiungete un modificatore come &quot;_1&quot; e &quot;_2&quot; per le viste alternative e un codice colore di &quot;_RED&quot; o &quot;_BLU&quot; per le viste colorate. Se sono presenti sia immagini colorate che viste alternative per lo stesso prodotto, è possibile aggiungere &quot;_RED_1&quot; e &quot;_RED_2&quot; per la prima e la seconda vista di colore rosso. I campioni vengono denominati con lo SKU, il codice colore e l&#39;estensione &quot;_SW&quot;.
+**Utilizzo dell&#39;immagine, visualizzazioni alternative, versioni colorate, campioni.** Questa strategia consente viste alternative e/o colorate, se disponibili. Invece di denominare l&#39;immagine solo dopo lo SKU, aggiungete un modificatore come &quot;_1&quot; e &quot;_2&quot; per le viste alternative e un codice colore di &quot;_RED&quot; o &quot;_BLU&quot; per le viste colorate. Se sono presenti sia immagini colorate che viste alternative per lo stesso prodotto, è possibile aggiungere &quot;_RED_1&quot; e &quot;_RED_2&quot; per la prima e la seconda vista di colore rosso. I campioni vengono denominati con lo SKU, il codice colore e l&#39;estensione &quot;_SW&quot;.
 
 | SKU/PID | Categoria | Nome file | ID risorsa |
 | ------- | ----------------------- | ------------------------------------------- | ------------------------------- |

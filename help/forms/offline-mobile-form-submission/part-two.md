@@ -18,12 +18,12 @@ ht-degree: 0%
 
 # Gestisci invio PDF
 
-In questa parte verrà creato un semplice servlet che verrà eseguito su Pubblicazione AEM per gestire l’invio di PDF da Acrobat/Reader. Questo servlet a sua volta, effettua una richiesta HTTP POST a un servlet in esecuzione in un’istanza di authoring AEM responsabile del salvataggio dei dati inviati come `nt:file` nodo nell’archivio dell’autore dell’AEM.
+In questa parte verrà creato un semplice servlet che viene eseguito su AEM Publish per gestire l’invio di PDF da Acrobat/Reader. Questo servlet a sua volta effettua una richiesta HTTP POST a un servlet in esecuzione in un’istanza di authoring AEM responsabile del salvataggio dei dati inviati come nodo `nt:file` nell’archivio di Author AEM.
 
-Di seguito è riportato il codice del servlet che gestisce l’invio dei PDF. In questo servlet effettuiamo una chiamata POST a un servlet installato su **/bin/startworkflow** in un’istanza dell’Autore AEM. Questo servlet salva i dati del modulo nell’archivio dell’Autore dell’AEM.
+Di seguito è riportato il codice del servlet che gestisce l’invio dei PDF. In questo servlet effettuiamo una chiamata POST a un servlet montato su **/bin/startworkflow** in un&#39;istanza Autore AEM. Questo servlet salva i dati del modulo nell’archivio dell’Autore dell’AEM.
 
 
-## Servlet di pubblicazione AEM
+## Servlet Publish per AEM
 
 ```java
 package com.aemforms.handlepdfsubmission.core.servlets;
@@ -100,7 +100,7 @@ public class HandlePDFSubmission extends SlingAllMethodsServlet {
 
 ## Servlet di creazione AEM
 
-Il passaggio successivo consiste nell’archiviare i dati inviati nell’archivio dell’autore dell’AEM. Servlet installato su `/bin/startworkflow` salva i dati inviati.
+Il passaggio successivo consiste nell’archiviare i dati inviati nell’archivio dell’autore dell’AEM. Il servlet installato su `/bin/startworkflow` salva i dati inviati.
 
 ```java
 import java.io.BufferedReader;
@@ -198,6 +198,6 @@ public class StartWorkflow extends SlingAllMethodsServlet {
 }
 ```
 
-Un modulo di avvio del flusso di lavoro AEM è configurato per essere attivato ogni volta che viene aggiunta una nuova risorsa di tipo `nt:file` viene creato in `/content/pdfsubmissions` nodo. Questo flusso di lavoro creerà un PDF non interattivo o statico unendo i dati inviati con il modello xdp. Il pdf generato viene quindi assegnato a un utente per la revisione e l’approvazione.
+Un modulo di avvio del flusso di lavoro AEM è configurato per essere attivato ogni volta che viene creata una nuova risorsa di tipo `nt:file` nel nodo `/content/pdfsubmissions`. Questo flusso di lavoro creerà un PDF non interattivo o statico unendo i dati inviati con il modello xdp. Il pdf generato viene quindi assegnato a un utente per la revisione e l’approvazione.
 
-Per memorizzare i dati inviati in `/content/pdfsubmissions` , utilizziamo `GetResolver` Il servizio OSGi consente di salvare i dati inviati utilizzando `fd-service` che è disponibile in ogni installazione di AEM Forms.
+Per archiviare i dati inviati nel nodo `/content/pdfsubmissions`, utilizziamo il servizio OSGi `GetResolver` che ci consente di salvare i dati inviati utilizzando l&#39;utente di sistema `fd-service` disponibile in ogni installazione di AEM Forms.

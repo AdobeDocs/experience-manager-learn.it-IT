@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Passaggi per reimpostare la password predefinita per l’amministratore in AEM Forms JEE
 
-*Questo video illustra i passaggi per reimpostare la password predefinita per l’amministratore in AEM Forms JEE.*
+*Questo video illustra i passaggi per reimpostare la password predefinita per l&#39;amministratore in AEM Forms JEE.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335541?quality=12&learn=on)

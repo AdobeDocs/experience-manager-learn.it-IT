@@ -76,21 +76,21 @@ public class MyFirstAEMFormsServlet extends SlingAllMethodsServlet
 Per creare il progetto, effettua le seguenti operazioni:
 
 * Apri **finestra del prompt dei comandi**
-* Accedi a `c:\aemformsbundles\mysite\core`
+* Passa a `c:\aemformsbundles\mysite\core`
 * Esegui il comando `mvn clean install -PautoInstallBundle`
 * Il comando precedente crea e distribuisce automaticamente il bundle nell’istanza AEM in esecuzione su localhost:4502
 
-Il bundle è disponibile anche nella seguente posizione `C:\AEMFormsBundles\mysite\core\target`. Il pacchetto può essere distribuito all&#39;AEM utilizzando [Console web Felix.](http://localhost:4502/system/console/bundles)
+Il bundle è disponibile anche nel seguente percorso `C:\AEMFormsBundles\mysite\core\target`. Il bundle può anche essere distribuito in AEM utilizzando la [console Web Felix.](http://localhost:4502/system/console/bundles)
 
 
 ## Test del servlet Resolver
 
-Puntare il browser al [URL resolver servlet](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Questo indica il servlet richiamato per un determinato percorso come mostrato nella schermata seguente
-![servlet-resolver](assets/servlet-resolver.JPG)
+Puntare il browser all&#39;[URL resolver servlet](http://localhost:4502/system/console/servletresolver?url=%2Fbin%2FmergedataWithAcroform&amp;method=POST). Questo indica il servlet richiamato per un determinato percorso come mostrato nella schermata seguente
+![risolutore servlet](assets/servlet-resolver.JPG)
 
 ## Test del servlet tramite Postman
 
-![Test del servlet tramite Postman](assets/test-servlet-postman.JPG)
+![Verifica il servlet tramite Postman](assets/test-servlet-postman.JPG)
 
 ## Passaggi successivi
 

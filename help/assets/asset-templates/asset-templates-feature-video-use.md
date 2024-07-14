@@ -1,6 +1,6 @@
 ---
 title: Utilizzo dei modelli di risorse con AEM Assets e InDesign Server
-description: AEM Assets Template consente agli addetti al marketing di creare, gestire e distribuire risorse digitali per la stampa e il digitale. La creazione di brochure per i contrassegni, biglietti da visita, volantini, annunci e cartoline è molto più semplice con i modelli di risorse se integrati con il server InDesign.
+description: AEM Assets Template consente agli addetti al marketing di creare, gestire e distribuire risorse digitali per la stampa e il digitale. La creazione di brochure per i contrassegni, biglietti da visita, volantini, annunci e cartoline è molto più semplice con i modelli di Assets se integrati con il server InDesign.
 version: 6.4, 6.5
 topic: Content Management
 feature: Templates
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # Utilizzo dei modelli di risorse con AEM Assets e InDesign Server{#using-asset-templates-with-aem-assets-and-indesign-server}
 
-AEM Assets Template consente agli addetti al marketing di creare, gestire e distribuire risorse digitali per la stampa e il digitale. La creazione di brochure per i contrassegni, biglietti da visita, volantini, annunci e cartoline è molto più semplice con i modelli di risorse se integrati con il server InDesign.
+AEM Assets Template consente agli addetti al marketing di creare, gestire e distribuire risorse digitali per la stampa e il digitale. La creazione di brochure per i contrassegni, biglietti da visita, volantini, annunci e cartoline è molto più semplice con i modelli di Assets se integrati con il server InDesign.
 
 >[!NOTE]
 >
->Per i passaggi sulla configurazione di InDesign Server, rivedi [Configurare modelli di risorse con InDesign Server](asset-templates-technical-video-setup.md).
+>Per i passaggi sulla configurazione di InDesign Server, rivedi [Configurare i modelli Assets con InDesign Server](asset-templates-technical-video-setup.md).
 
 ## Panoramica {#overview}
 

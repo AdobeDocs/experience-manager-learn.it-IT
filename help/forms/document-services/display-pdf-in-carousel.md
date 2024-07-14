@@ -21,9 +21,9 @@ ht-degree: 1%
 
 Un caso d’uso comune prevede la visualizzazione di più documenti PDF alla casella di compilazione del modulo, da esaminare prima dell’invio del modulo.
 
-Per eseguire questo caso d’uso abbiamo utilizzato [API di incorporamento Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+Per eseguire questo caso d&#39;uso è stata utilizzata l&#39;[API di incorporamento Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
 
-[Qui puoi trovare una demo live di questo esempio.](https://forms.enablementadobe.com/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
+[Qui è possibile trovare una demo live di questo esempio.](https://forms.enablementadobe.com/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
 
 Per completare l’integrazione sono stati eseguiti i seguenti passaggi
 
@@ -37,21 +37,24 @@ Per completare l’integrazione sono stati eseguiti i seguenti passaggi
 
 ## Creare un modulo adattivo
 
-Creare un modulo adattivo basato su alcune schede (questo esempio contiene 3 schede) Aggiungere alcuni componenti del modulo adattivo nelle prime due schede Aggiungere il componente Carosello pdf nella terza scheda Configurare il componente Carosello pdf come mostrato nella schermata seguente
-![pdf-carosello](assets/pdf-carousel-af-component.png)
+Crea un modulo adattivo basato su alcune schede (in questo esempio sono presenti 3 schede)
+Aggiungi alcuni componenti per moduli adattivi nelle prime due schede
+Aggiungi il componente Carosello pdf nella terza scheda
+Configura il componente pdf-carosello come illustrato nella schermata seguente
+![carosello-pdf](assets/pdf-carousel-af-component.png)
 
-**Incorpora chiave API PDF** : questa è la chiave che puoi utilizzare per incorporare il PDF. Questa chiave funziona solo con localhost. Puoi creare [la tua chiave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) e associarlo ad un altro dominio.
+**Incorpora chiave API PDF**: è la chiave che puoi utilizzare per incorporare il PDF. Questa chiave funziona solo con localhost. Puoi creare [la tua chiave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) e associarla ad un altro dominio.
 
-**Specifica documenti PDF** - Qui puoi specificare i documenti pdf da visualizzare nel carosello.
+**Specifica documenti PDF** - Qui puoi specificare i documenti PDF da visualizzare nel carosello.
 
 
 ## Distribuire l’esempio sul server
 
 Per eseguire il test sul server locale, eseguire la procedura seguente:
 
-1. [Importare la libreria client](assets/pdf-carousel-client-lib.zip) nell’istanza AEM locale [utilizzo del gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
-1. [Importare il componente carosello pdf](assets/pdf-carousel-component.zip) nell’istanza AEM locale [utilizzo del gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
-1. [Importare il modulo adattivo](assets/adaptive-form-pdf-carousel.zip) nell’istanza AEM locale [utilizzo del gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
-1. [Importa i PDF di esempio da visualizzare](assets/pdf-carousel-sample-documents.zip) nell’istanza AEM locale [utilizzo del collegamento di caricamento file delle risorse](http://localhost:4502/assets.html/content/dam)
+1. [Importa la libreria client](assets/pdf-carousel-client-lib.zip) nell&#39;istanza AEM locale [tramite Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+1. [Importa il componente carosello pdf](assets/pdf-carousel-component.zip) nell&#39;istanza AEM locale [utilizzando Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+1. [Importa il modulo adattivo](assets/adaptive-form-pdf-carousel.zip) nell&#39;istanza AEM locale [tramite Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+1. [Importa i pdf di esempio da visualizzare](assets/pdf-carousel-sample-documents.zip) nell&#39;istanza AEM locale [utilizzando il collegamento per il caricamento dei file delle risorse](http://localhost:4502/assets.html/content/dam)
 1. [Anteprima modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
 1. Passare alla scheda Documenti da rivedere. Dovresti visualizzare tre documenti PDF nel componente Carosello.

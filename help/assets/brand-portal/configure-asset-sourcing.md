@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Configurazione di Asset sourcing con Brand Portal
 
-*Questo video illustra il processo di configurazione dell’origine delle risorse con Brand Portal.*
+*Questo video illustra il processo di configurazione dell&#39;origine delle risorse con Brand Portal.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335451?quality=12&learn=on)

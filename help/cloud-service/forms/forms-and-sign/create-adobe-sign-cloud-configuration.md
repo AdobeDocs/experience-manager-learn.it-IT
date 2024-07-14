@@ -33,7 +33,7 @@ Il video seguente illustra i passaggi necessari per creare la configurazione dei
 
 Se ricevi un errore durante la configurazione della configurazione cloud di Adobe Sign, puoi effettuare le seguenti operazioni per risolvere i problemi
 * Assicurati che l’URL di reindirizzamento specificato nell’applicazione API Acrobat Sign sia nel seguente formato
-&lt;your instance=&quot;&quot; name=&quot;&quot;>/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/&lt;container>.
+&lt;nome istanza>/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/&lt;contenitore>.
 Ad esempio: https://author-p24107-e32034.adobeaemcloud.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/FormsCS. FormsCS è il nome del contenitore che conterrà la configurazione cloud
 * Verifica che l’URL di OAuth sia corretto
 * Verifica l&#39;ID client e il segreto client

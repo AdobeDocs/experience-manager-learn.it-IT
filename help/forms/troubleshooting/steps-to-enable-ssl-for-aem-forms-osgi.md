@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Passaggi per abilitare SSL per l’istanza OSGi di AEM Forms
 
-*Questo video illustra i passaggi per abilitare SSL per l’istanza OSGi di AEM Forms.*
+*Questo video illustra i passaggi necessari per abilitare SSL per l&#39;istanza OSGi di AEM Forms.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335524?quality=12&learn=on)

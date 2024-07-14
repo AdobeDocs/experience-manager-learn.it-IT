@@ -21,14 +21,14 @@ Il passaggio successivo consiste nel creare uno schema dall&#39;Acroform creato 
 
 1. Accedi a [CRXDE Liti](http://localhost:4502/crx/de)
 2. Apri nel file `/apps/AemFormsSamples/components/createxsd/POST.jsp`
-3. Modificare il `saveLocation` in una cartella appropriata sul disco rigido. Assicurati che la cartella in cui stai salvando sia già stata creata.
-4. Puntare il browser a [Crea XSD](http://localhost:4502/content/DocumentServices/CreateXsd.html) pagina ospitata sull’AEM.
+3. Cambia `saveLocation` in una cartella appropriata sul disco rigido. Assicurati che la cartella in cui stai salvando sia già stata creata.
+4. Puntare il browser alla pagina [Crea XSD](http://localhost:4502/content/DocumentServices/CreateXsd.html) ospitata su AEM.
 5. Trascina e rilascia Acroform.
 6. Controlla la cartella specificata nel passaggio 3. Il file dello schema viene salvato in questa posizione.
 
 ## Carica Acroform
 
-Affinché questa demo possa funzionare sul sistema, è necessario creare una cartella denominata `acroforms` in AEM Assets. Carica Acroform in questo `acroforms` cartella.
+Affinché questa demo possa funzionare sul sistema, è necessario creare una cartella denominata `acroforms` in AEM Assets. Caricare Acroform in questa cartella `acroforms`.
 
 >[!NOTE]
 >

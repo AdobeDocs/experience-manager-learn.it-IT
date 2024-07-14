@@ -25,28 +25,28 @@ I componenti React modificabili possono essere &quot;fissi&quot; o codificati ne
 
 ![Componenti fissi](./assets/spa-fixed-component/intro.png)
 
-In questo capitolo, sostituiamo il titolo della visualizzazione Home, &quot;Current Adventures&quot;, che è un testo hardcoded in `Home.js` con un componente Titolo fisso ma modificabile. I componenti fissi garantiscono il posizionamento del titolo, ma consentono anche la creazione del testo del titolo e la modifica al di fuori del ciclo di sviluppo.
+In questo capitolo, il titolo della visualizzazione Home, &quot;Avventure correnti&quot;, che è testo hardcoded in `Home.js`, viene sostituito con un componente Titolo fisso ma modificabile. I componenti fissi garantiscono il posizionamento del titolo, ma consentono anche la creazione del testo del titolo e la modifica al di fuori del ciclo di sviluppo.
 
 ## Aggiornare l’app WKND
 
-Per aggiungere una __Fisso__ nella vista Home:
+Per aggiungere un componente __Fisso__ alla visualizzazione Home:
 
 + Creare un componente Titolo modificabile personalizzato e registrarlo nel tipo di risorsa Titolo del progetto
 + Posizionare il componente Titolo modificabile nella vista Home del SPA
 
 ### Creare un componente Titolo di React modificabile
 
-Nella visualizzazione Home dell’SPA, sostituisci il testo hardcoded `<h2>Current Adventures</h2>` con un componente Titolo modificabile personalizzato. Prima di poter utilizzare il componente Titolo, è necessario:
+Nella visualizzazione Home SPA sostituire il testo hardcoded `<h2>Current Adventures</h2>` con un componente Titolo modificabile personalizzato. Prima di poter utilizzare il componente Titolo, è necessario:
 
 1. Creare un componente React titolo personalizzato
 1. Decorare il componente Titolo personalizzato utilizzando i metodi di `@adobe/aem-react-editable-components` per renderlo modificabile.
-1. Registrare il componente Titolo modificabile con `MapTo` in modo che possa essere utilizzato in [componente contenitore in un secondo momento](./spa-container-component.md).
+1. Registra il componente Titolo modificabile con `MapTo` in modo che possa essere utilizzato in [componente contenitore in un secondo momento](./spa-container-component.md).
 
 Per effettuare questo collegamento:
 
-1. Apri progetto SPA remoto all’indirizzo `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app` nell’IDE
-1. Creare un componente React in `react-app/src/components/editable/core/Title.js`
-1. Aggiungi il seguente codice a `Title.js`.
+1. Apri progetto SPA remoto in `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app` nell&#39;IDE
+1. Crea un componente React in `react-app/src/components/editable/core/Title.js`
+1. Aggiungere il codice seguente a `Title.js`.
 
    ```javascript
    import React from 'react'
@@ -95,8 +95,8 @@ Per effettuare questo collegamento:
 
    Leggi i commenti del codice per i dettagli sull’implementazione.
 
-1. Creare un componente React in `react-app/src/components/editable/EditableTitle.js`
-1. Aggiungi il seguente codice a `EditableTitle.js`.
+1. Crea un componente React in `react-app/src/components/editable/EditableTitle.js`
+1. Aggiungere il codice seguente a `EditableTitle.js`.
 
    ```javascript
    // Import the withMappable API provided bu the AEM SPA Editor JS SDK
@@ -132,14 +132,14 @@ Per effettuare questo collegamento:
    export default EditableTitle;
    ```
 
-   Questo `EditableTitle` Il componente React racchiude il `Title` Componente React, avvolgimento e decorazione per essere modificabile in AEM SPA Editor.
+   Questo componente React `EditableTitle` racchiude il componente React `Title`, racchiudendolo e decorandolo per renderlo modificabile nell&#39;editor SPA dell&#39;AEM.
 
 ### Utilizzare il componente React EditableTitle
 
 Ora che il componente React EditableTitle è registrato in e disponibile per l’utilizzo nell’app React, sostituisci il testo del titolo hardcoded nella vista Home.
 
 1. Modifica `react-app/src/components/Home.js`
-1. In `Home()` in basso, importa `EditableTitle` e sostituisci il titolo hardcoded con il nuovo `AEMTitle` componente:
+1. In `Home()`, in basso, importa `EditableTitle` e sostituisci il titolo hardcoded con il nuovo componente `AEMTitle`:
 
    ```javascript
    ...
@@ -159,32 +159,32 @@ Ora che il componente React EditableTitle è registrato in e disponibile per l�
    }
    ```
 
-Il `Home.js` il file dovrebbe avere un aspetto simile a:
+Il file `Home.js` deve essere simile al seguente:
 
 ![Home.js](./assets/spa-fixed-component/home-js-update.png)
 
 ## Creare il componente Titolo nell’AEM
 
 1. Accedi a AEM Author
-1. Accedi a __Sites > App WKND__
+1. Passa a __Sites > App WKND__
 1. Tocca __Home__ e seleziona __Modifica__ dalla barra delle azioni superiore
-1. Seleziona __Modifica__ dal selettore della modalità di modifica in alto a destra nell’Editor pagina
+1. Seleziona __Modifica__ dal selettore della modalità di modifica in alto a destra nell&#39;Editor pagina
 1. Passa il cursore del mouse sul testo del titolo predefinito sotto il logo WKND e sopra l’elenco delle avventure, fino a visualizzare il contorno blu della modifica
-1. Tocca per esporre la barra delle azioni del componente, quindi tocca il __chiave inglese__  per modificare
+1. Tocca per esporre la barra delle azioni del componente, quindi tocca la __chiave inglese__ per modificare
 
    ![Barra delle azioni del componente Titolo](./assets/spa-fixed-component/title-action-bar.png)
 
 1. Creare il componente Titolo:
-   + Titolo: __WKND Adventures__
-   + Tipo/dimensione: __H2__
+   + Titolo: __Avventure WKND__
+   + Tipo/Dimensione: __H2__
 
      ![Finestra di dialogo del componente Titolo](./assets/spa-fixed-component/title-dialog.png)
 
 1. Tocca __Fine__ per salvare
 1. Visualizzare l’anteprima delle modifiche nell’Editor SPA dell’AEM
-1. Aggiorna l’app WKND in esecuzione localmente il [http://localhost:3000](http://localhost:3000) e visualizzare le modifiche apportate al titolo immediatamente riflesse.
+1. Aggiorna l&#39;app WKND in esecuzione localmente su [http://localhost:3000](http://localhost:3000) e visualizza immediatamente le modifiche apportate al titolo.
 
-   ![Componente titolo nell’SPA](./assets/spa-fixed-component/title-final.png)
+   ![Componente titolo in SPA](./assets/spa-fixed-component/title-final.png)
 
 ## Congratulazioni.
 
@@ -196,4 +196,4 @@ Hai aggiunto un componente fisso e modificabile all’app WKND. Ora sai come:
 
 ## Passaggi successivi
 
-I passaggi successivi sono i seguenti: [aggiungi un componente contenitore AEM ResponsiveGrid](./spa-container-component.md) all’SPA, che consente all’autore di aggiungere all’SPA e di modificarne i componenti.
+I passaggi successivi consistono nell&#39;aggiungere [un componente contenitore di AEM ResponsiveGrid](./spa-container-component.md) all&#39;SPA che consente all&#39;autore di aggiungere e modificare componenti all&#39;SPA.

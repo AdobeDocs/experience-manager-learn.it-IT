@@ -28,43 +28,43 @@ Per fare in modo che questo caso d’uso funzioni sul tuo sistema, segui le segu
 
 ## Crea database
 
-In questo esempio si utilizza il database MySQL per memorizzare i dati del modulo adattivo. Sarà necessario creare il [schema del database importando il file di schema](assets/data-base-schema.sql) in MySQL Workbench.
+In questo esempio si utilizza il database MySQL per memorizzare i dati del modulo adattivo. Sarà necessario creare lo schema di database [ importando il file di schema](assets/data-base-schema.sql) in MySQL Workbench.
 
 ## Crea origine dati
 
-È necessario creare un’origine dati in pool di connessione Apache Sling denominata **StoreAndRetrieveAfData** che punta allo schema di database creato nel passaggio precedente. Il codice nel bundle OSGi utilizza questo nome di origine dati.
+È necessario creare un&#39;origine dati in pool di connessione Apache Sling denominata **StoreAndRetrieveAfData** che punta allo schema di database creato nel passaggio precedente. Il codice nel bundle OSGi utilizza questo nome di origine dati.
 
 ## Crea modello dati modulo
 
-È necessario creare il modello dati del modulo in base a questa origine dati denominata **StoreAndRetrieveAfData**. Questo modello di dati modulo viene utilizzato per recuperare il numero di telefono cellulare associato all’ID applicazione. Il modello dati del modulo può essere [scaricato da qui.](assets/2-Factor-Authentication-DataSource-and-FDM.zip)
+È necessario creare il modello dati modulo in base a questa origine dati denominata **StoreAndRetrieveAfData**. Questo modello di dati modulo viene utilizzato per recuperare il numero di telefono cellulare associato all’ID applicazione. Il modello dati del modulo può essere [scaricato da qui.](assets/2-Factor-Authentication-DataSource-and-FDM.zip)
 
 ## Creare un account sviluppatore con nexmo
 
-Creare un account sviluppatore con [Nexmo](https://dashboard.nexmo.com/) per l&#39;invio e la verifica dei codici OTP. Prendi nota della chiave API e della chiave segreta API. L’origine dati e il modello dati del modulo sono già stati creati per te in base a questo servizio e sono inclusi nelle risorse menzionate nel passaggio precedente.
+Crea un account sviluppatore con [Nexmo](https://dashboard.nexmo.com/) per inviare e verificare i codici OTP. Prendi nota della chiave API e della chiave segreta API. L’origine dati e il modello dati del modulo sono già stati creati per te in base a questo servizio e sono inclusi nelle risorse menzionate nel passaggio precedente.
 
 ## Distribuisci i seguenti bundle OSGi
 
-Distribuisci il bundle che presenta [codice per memorizzare e recuperare dati dal database](assets/SaveAndResume.core-1.0.0-SNAPSHOT.jar)
-Scarica e decomprimi il file [development withserviceuser.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip).
+Distribuisci il bundle con [codice per archiviare e recuperare dati dal database](assets/SaveAndResume.core-1.0.0-SNAPSHOT.jar)
+Scarica e decomprimi [develingwithserviceuser.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip).
 Distribuisci il file DevelopingWithServiceUser.jar utilizzando la console web Felix.
 
 ## Distribuire la libreria client
 
-Nell&#39;esempio vengono utilizzate 2 librerie client. Importa questi [librerie client](assets/store-af-with-attachments-client-lib.zip) nell’AEM.
+Nell&#39;esempio vengono utilizzate 2 librerie client. Importa queste [librerie client](assets/store-af-with-attachments-client-lib.zip) in AEM.
 
 ## Importare il modello di modulo adattivo personalizzato
 
-I moduli di esempio utilizzati in questa demo sono basati su un modello personalizzato. Importa [modello personalizzato in AEM](assets/custom-template-with-page-component.zip)
+I moduli di esempio utilizzati in questa demo sono basati su un modello personalizzato. Importa il modello personalizzato [ in AEM](assets/custom-template-with-page-component.zip)
 
 ## Importare i moduli adattivi di esempio
 
-I 2 moduli che costituiscono questo campione devono essere importati nell’AEM. I moduli di esempio possono essere [scaricato da qui](assets/sample-forms.zip)
+I 2 moduli che costituiscono questo campione devono essere importati nell’AEM. I moduli di esempio possono essere [scaricati da qui](assets/sample-forms.zip)
 
 Apri [ModuloAccount](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) in modalità di modifica. Specifica i valori Chiave API vonage e Segreto API nei campi appropriati del modulo adattivo.
 
 ## Testare la soluzione
 
-Visualizzare in anteprima [StoreAFWithAttachments](http://localhost:4502/content/dam/formsanddocuments/storeafwithattachments/jcr:content?wcmmode=disabled)
+Visualizza l&#39;anteprima di [StoreAFWithAttachments](http://localhost:4502/content/dam/formsanddocuments/storeafwithattachments/jcr:content?wcmmode=disabled)
 Inserisci il numero di cellulare, compreso il prefisso internazionale, inserisci i dettagli utente e aggiungi alcuni allegati. Fai clic sul pulsante &quot;Salva ed esci&quot; per salvare il modulo adattivo e i relativi allegati
 
 

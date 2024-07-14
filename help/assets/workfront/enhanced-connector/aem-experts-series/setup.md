@@ -29,4 +29,4 @@ Scopri come impostare e configurare Workfront, ad Experience Manager un connetto
 
 >[!VIDEO](https://video.tv.adobe.com/v/340331?quality=12&learn=on)
 
-_Questa è parte di un [serie di esperti in quattro parti sul connettore avanzato Workfront per Experience Manager](./overview.md)_
+_Parte uno di una serie di esperti in [quattro parti in Workfront, ad Experience Manager connettore avanzato](./overview.md)_

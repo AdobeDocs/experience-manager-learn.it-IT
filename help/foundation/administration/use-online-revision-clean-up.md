@@ -26,4 +26,4 @@ Breve introduzione alla funzione di pulizia delle revisioni online, che riduce l
 
 * [AEM [!DNL JMX MBean - SegmentRevisionGarbageCollection]](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+revision+garbage+collection%2Ctype%3DSegmentRevisionGarbageCollection)
 
-* [AEM [!DNL OSGi Configuration] - [!UICONTROL Servizio NodeStore del segmento Oak]](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService)
+* [AEM [!DNL OSGi Configuration] - [!UICONTROL Servizio Oak Segment NodeStore]](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService)

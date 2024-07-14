@@ -27,7 +27,7 @@ Quando rilasci un file nella cartella controllata, viene eseguito uno script ass
 
 Il file rilasciato nella cartella controllata ha la seguente struttura. Il codice genera istruzioni per tutti i numeri di conto elencati nel documento XML.
 
-&lt;accountnumbers>
+&lt;numeri account>
 
 &lt;accountnumber>509840&lt;/accountnumber>
 
@@ -107,11 +107,11 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 ```
 
 
-**Per eseguire il test sul sistema locale, attenersi alle seguenti istruzioni:**
+**Per eseguire il test nel sistema locale, seguire le istruzioni seguenti:**
 
-* Imposta Tomcat come descritto in questo [articolo.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat ha il file .war che genera i dati di esempio.
+* Configurare Tomcat come descritto in questo articolo di [.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat ha il file .war che genera i dati di esempio.
 * Configurare il servizio come utente di sistema come descritto in questo [articolo](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
-Verificare che l&#39;utente del sistema disponga delle autorizzazioni di lettura per il nodo seguente. Per assegnare le autorizzazioni di accesso a [amministratore utenti](https://localhost:4502/useradmin) e cerca l’utente di sistema &quot;data&quot; e concedi le autorizzazioni di lettura per il nodo seguente dalla scheda autorizzazioni
+Verificare che l&#39;utente del sistema disponga delle autorizzazioni di lettura per il nodo seguente. Per concedere le autorizzazioni di accesso a [user admin](https://localhost:4502/useradmin) e cercare i &quot;dati&quot; dell&#39;utente di sistema e concedere le autorizzazioni di lettura per il nodo seguente, toccare la scheda delle autorizzazioni
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af

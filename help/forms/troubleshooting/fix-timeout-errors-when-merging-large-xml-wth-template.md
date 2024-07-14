@@ -30,16 +30,20 @@ Per correggere l&#39;errore precedente, eseguire le operazioni seguenti
 ## Modificare il timeout di aries
 
 * Arresta server AEM
-* Crea una cartella denominata **installare** nella cartella crx-quickstart dell&#39;installazione AEM
-* Crea un file denominato **org.apache.aries.transaction.config** con i seguenti contenuti aries.transaction.timeout=&quot;1200&quot; nella cartella di installazione. Puoi modificare il valore di timeout in base alle tue esigenze. Il valore di timeout è in secondi
+* Crea una cartella denominata **install** nella cartella crx-quickstart dell&#39;installazione AEM
+* Crea un file denominato **org.apache.aries.transaction.config** con il seguente contenuto
+aries.transaction.timeout=&quot;1200&quot;
+nella cartella di installazione. Puoi modificare il valore di timeout in base alle tue esigenze. Il valore di timeout è in secondi
 
 >[!NOTE]
-> Una volta creata la configurazione org.apache.aries.transaction, è possibile modificare i valori di timeout della transazione da [configMgr](http://localhost:4502/system/console/configMgr) invece di modificare il file
+> Dopo aver creato la configurazione org.apache.aries.transaction è possibile modificare i valori di timeout della transazione da [configMgr](http://localhost:4502/system/console/configMgr) anziché modificare il file
 
 
 ## Modificare le impostazioni del provider Jacorb ORB
 
 * [Apri OSGi ConfigMgr](http://localhost:4502/system/console/configMgr)
 * Cerca **Provider ORB Jacorb**
-* Aggiungi la voce seguente jacorb.connection.client.pending_reply_timeout=600000 L’impostazione precedente imposta su 600 secondi il timeout della risposta in sospeso (noto anche come timeout del client CORBA).
+* Aggiungi la seguente voce
+jacorb.connection.client.pending_reply_timeout=600000
+L’impostazione precedente imposta il timeout della risposta in sospeso (noto anche come timeout del client CORBA) su 600 secondi.
 * Salva le modifiche

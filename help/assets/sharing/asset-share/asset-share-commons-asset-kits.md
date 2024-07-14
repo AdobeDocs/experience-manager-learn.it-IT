@@ -21,8 +21,8 @@ ht-degree: 0%
 
 # Asset Share Commons Asset Kit
 
-Scopri come utilizzare Asset Share Common di [kit risorse](https://opensource.adobe.com/asset-share-commons/pages/asset-kit/overview/) per generare pagine web personalizzate e condivisibili in cui sono elencate le risorse da cartelle o raccolte AEM Assets.
+Scopri come utilizzare il [asset kit](https://opensource.adobe.com/asset-share-commons/pages/asset-kit/overview/) di Asset Share Common per generare pagine web personalizzate e condivisibili in cui sono elencate le risorse delle cartelle o raccolte AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415467?quality=12&learn=on)
 
-_[Kit risorse](https://opensource.adobe.com/asset-share-commons/pages/asset-kit/overview/) è disponibile solo in Asset Share Commons 2.5.4+_
+_[Il kit risorse](https://opensource.adobe.com/asset-share-commons/pages/asset-kit/overview/) è disponibile solo in Asset Share Commons 2.5.4+_

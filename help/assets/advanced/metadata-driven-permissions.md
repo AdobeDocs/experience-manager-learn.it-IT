@@ -34,10 +34,10 @@ Per configurare le autorizzazioni basate sui metadati è necessario accedere a u
 
 ## Configurazione OSGi {#configure-permissionable-properties}
 
-Per implementare le autorizzazioni basate sui metadati, uno sviluppatore deve implementare una configurazione OSGi in AEM as a Cloud Service, che consenta a specifiche proprietà di metadati delle risorse di abilitare le autorizzazioni basate sui metadati.
+Per implementare le autorizzazioni basate sui metadati, uno sviluppatore deve distribuire una configurazione OSGi in AEM as a Cloud Service che consenta a specifiche proprietà di metadati delle risorse di abilitare le autorizzazioni basate sui metadati.
 
-1. Determina le proprietà dei metadati della risorsa da utilizzare per il controllo degli accessi. I nomi delle proprietà sono i nomi delle proprietà JCR sul `jcr:content/metadata` risorsa. Nel nostro caso sarà una proprietà chiamata `status`.
-1. Creare una configurazione OSGi `com.adobe.cq.dam.assetmetadatarestrictionprovider.impl.DefaultRestrictionProviderConfiguration.cfg.json` nel progetto AEM Maven.
+1. Determina le proprietà dei metadati della risorsa da utilizzare per il controllo degli accessi. I nomi delle proprietà sono i nomi delle proprietà JCR nella risorsa `jcr:content/metadata` della risorsa. Nel nostro caso sarà una proprietà denominata `status`.
+1. Crea una configurazione OSGi `com.adobe.cq.dam.assetmetadatarestrictionprovider.impl.DefaultRestrictionProviderConfiguration.cfg.json` nel progetto AEM Maven.
 1. Incolla il seguente JSON nel file creato:
 
    ```json
@@ -54,33 +54,33 @@ Per implementare le autorizzazioni basate sui metadati, uno sviluppatore deve im
 
 ## Reimposta autorizzazioni risorsa base
 
-Prima di aggiungere voci di controllo dell’accesso basate su restrizioni, è necessario aggiungere una nuova voce di livello superiore per negare prima l’accesso in lettura a tutti i gruppi soggetti alla valutazione delle autorizzazioni per le risorse (ad esempio, &quot;collaboratori&quot; o simili):
+Prima di aggiungere voci di controllo dell’accesso basate su restrizioni, è necessario aggiungere una nuova voce di livello superiore per negare prima l’accesso in lettura a tutti i gruppi soggetti alla valutazione delle autorizzazioni per Assets (ad esempio, &quot;collaboratori&quot; o simili):
 
-1. Accedi a __Strumenti → Autorizzazioni → di sicurezza__ screen
-1. Seleziona la __Collaboratori__ gruppo (o altro gruppo personalizzato a cui appartengono tutti i gruppi di utenti)
-1. Clic __Aggiungi ACE__ nell&#39;angolo superiore destro dello schermo
+1. Passa alla schermata __Strumenti → Autorizzazioni → di sicurezza__
+1. Seleziona il gruppo __Collaboratori__ (o un altro gruppo personalizzato a cui appartengono tutti i gruppi di utenti)
+1. Fai clic su __Aggiungi ACE__ nell&#39;angolo superiore destro della schermata
 1. Seleziona `/content/dam` per __Percorso__
-1. Invio `jcr:read` per __Privilegi__
+1. Immetti `jcr:read` per __Privilegi__
 1. Seleziona `Deny` per __Tipo di autorizzazione__
-1. In Restrizioni, seleziona `rep:ntNames` e immetti `dam:Asset` come __Valore di restrizione__
-1. Clic __Salva__
+1. In Restrizioni, selezionare `rep:ntNames` e immettere `dam:Asset` come __Valore restrizione__
+1. Fai clic su __Salva__
 
 ![Nega accesso](./assets/metadata-driven-permissions/deny-access.png)
 
 ## Concedere l’accesso alle risorse tramite metadati
 
-È ora possibile aggiungere voci di controllo dell’accesso per concedere l’accesso in lettura ai gruppi di utenti in base al [valori delle proprietà dei metadati della risorsa configurati](#configure-permissionable-properties).
+È ora possibile aggiungere voci di controllo di accesso per concedere l&#39;accesso in lettura ai gruppi di utenti in base ai [valori configurati per la proprietà dei metadati delle risorse](#configure-permissionable-properties).
 
-1. Accedi a __Strumenti → Autorizzazioni → di sicurezza__ screen
+1. Passa alla schermata __Strumenti → Autorizzazioni → di sicurezza__
 1. Seleziona i gruppi di utenti che devono avere accesso alle risorse
-1. Clic __Aggiungi ACE__ nell&#39;angolo superiore destro dello schermo
+1. Fai clic su __Aggiungi ACE__ nell&#39;angolo superiore destro della schermata
 1. Seleziona `/content/dam` (o una sottocartella) per __Percorso__
-1. Invio `jcr:read` per __Privilegi__
+1. Immetti `jcr:read` per __Privilegi__
 1. Seleziona `Allow` per __Tipo di autorizzazione__
-1. Sotto __Restrizioni__, seleziona una delle opzioni [nomi di proprietà dei metadati della risorsa configurati nella configurazione OSGi](#configure-permissionable-properties)
-1. Immetti il valore della proprietà dei metadati richiesta nella __Valore di restrizione__ campo
-1. Fai clic su __+__ per aggiungere la limitazione alla voce di controllo accesso
-1. Clic __Salva__
+1. In __Restrizioni__, seleziona uno dei [nomi di proprietà dei metadati delle risorse configurati nella configurazione OSGi](#configure-permissionable-properties)
+1. Immetti il valore della proprietà metadati richiesta nel campo __Valore restrizione__
+1. Fai clic sull&#39;icona __+__ per aggiungere la restrizione alla voce di controllo di accesso
+1. Fai clic su __Salva__
 
 ![Consenti accesso](./assets/metadata-driven-permissions/allow-access.png)
 
@@ -92,7 +92,7 @@ La cartella di esempio contiene un paio di risorse.
 
 Una volta configurate le autorizzazioni e impostate di conseguenza le proprietà dei metadati della risorsa, gli utenti (nel nostro caso, gli utenti addetti al marketing) vedranno solo la risorsa approvata.
 
-![Visualizzazione addetto marketing](./assets/metadata-driven-permissions/marketeer-view.png)
+![Visualizzazione addetto al marketing](./assets/metadata-driven-permissions/marketeer-view.png)
 
 ## Vantaggi e considerazioni
 
@@ -106,10 +106,10 @@ I vantaggi delle autorizzazioni basate sui metadati includono:
 >
 > È importante notare che:
 > 
-> - Le proprietà dei metadati vengono valutate in base alle restrizioni utilizzando __Uguaglianza stringa__ (`=`) (altri tipi di dati o operatori non sono ancora supportati, per un valore maggiore di (`>`) o proprietà Date)
+> - Le proprietà dei metadati vengono valutate in base alle restrizioni utilizzando __Uguaglianza stringa__ (`=`) (altri tipi di dati o operatori non sono ancora supportati, per valori maggiori di (`>`) o proprietà Data)
 > - Per consentire più valori per una proprietà di restrizione, è possibile aggiungere ulteriori restrizioni alla voce di controllo dell&#39;accesso selezionando la stessa proprietà dal menu a discesa &quot;Seleziona tipo&quot; e immettendo un nuovo valore di restrizione (ad esempio `status=approved`, `status=wip`) e facendo clic su &quot;+&quot; per aggiungere la restrizione alla voce
 > ![Consenti più valori](./assets/metadata-driven-permissions/allow-multiple-values.png)
-> - __Restrizioni AND__ sono supportate tramite più restrizioni in una singola voce di controllo dell’accesso con nomi di proprietà diversi (ad esempio `status=approved`, `brand=Adobe`) verrà valutata come una condizione AND, ovvero al gruppo di utenti selezionato verrà concesso l’accesso in lettura alle risorse con `status=approved AND brand=Adobe`
+> - Sono supportate __restrizioni AND__, tramite più restrizioni in una singola voce di controllo di accesso con nomi di proprietà diversi (ad esempio `status=approved`, `brand=Adobe`) verrà valutata come condizione AND, ovvero al gruppo di utenti selezionato verrà concesso l&#39;accesso in lettura alle risorse con `status=approved AND brand=Adobe`
 > ![Consenti più restrizioni](./assets/metadata-driven-permissions/allow-multiple-restrictions.png)
-> - __Limitazioni per le operazioni OR__ sono supportati aggiungendo una nuova voce di controllo dell’accesso con una restrizione della proprietà dei metadati che stabilirà una condizione OR per le voci, ad esempio una singola voce con restrizione `status=approved` e una singola voce con `brand=Adobe` verrà valutato come `status=approved OR brand=Adobe`
+> - Le __restrizioni OR__ sono supportate aggiungendo una nuova voce di controllo di accesso con una restrizione di proprietà dei metadati che stabilirà una condizione OR per le voci. Ad esempio, una singola voce con restrizione `status=approved` e una singola voce con `brand=Adobe` verranno valutate come `status=approved OR brand=Adobe`
 > ![Consenti più restrizioni](./assets/metadata-driven-permissions/allow-multiple-aces.png)

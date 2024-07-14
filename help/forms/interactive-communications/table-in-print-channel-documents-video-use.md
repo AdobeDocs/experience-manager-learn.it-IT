@@ -23,7 +23,7 @@ Il video seguente illustra i passaggi necessari per utilizzare il componente tab
 
 >[!VIDEO](https://video.tv.adobe.com/v/27769?quality=12&learn=on)
 
-Le tabelle vengono utilizzate per visualizzare i dati in modo tabulare. Le righe della tabella devono aumentare o diminuire a seconda dei dati restituiti dall&#39;origine dati. Per utilizzare una tabella in un documento del canale di stampa, è necessario creare un file di layout (file xdp) con AEM Forms Designer. In questo file di layout, aggiungiamo la tabella con il numero di colonne richiesto. Verificare che il tipo di oggetto campo colonna sia TextField o Numeric Field a seconda dei requisiti. Per ogni colonna, i campi assicurano che l&#39;associazione dati sia impostata su Usa nome.
+Le tabelle vengono utilizzate per visualizzare i dati in modo tabulare. Le righe della tabella devono aumentare o diminuire a seconda dei dati restituiti dall&#39;origine dati. Per utilizzare una tabella nel documento del canale di stampa, è necessario creare un file di layout (file xdp) con AEM Forms Designer. In questo file di layout, aggiungiamo la tabella con il numero di colonne richiesto. Verificare che il tipo di oggetto campo colonna sia TextField o Numeric Field a seconda dei requisiti. Per ogni colonna, i campi assicurano che l&#39;associazione dati sia impostata su Usa nome.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Le tabelle vengono utilizzate per visualizzare i dati in modo tabulare. Le righe
    * Documento di comunicazione interattiva
    * sampleretirementaccountdata.json
 
-* Aprire il documento di comunicazione interattiva in [modalità di modifica](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
+* Apri il documento di comunicazione interattiva in [modalità di modifica](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
 
 * Aggiungi il frammento di layout TableDemo alla sezione Contributi.
 * Associate le celle della tabella agli elementi appropriati del modello dati modulo, come mostrato nel video

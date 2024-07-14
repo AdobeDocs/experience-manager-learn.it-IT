@@ -31,9 +31,9 @@ Questo tutorial tratta i seguenti argomenti:
 
 - Breve panoramica di Universal Editor
 - Configurazione dell’ambiente di sviluppo locale
-   - **SDK AEM**: fornisce i contenuti memorizzati all’interno dei frammenti di contenuto per l’app React utilizzando le API di GraphQL.
-   - **React app**: una semplice interfaccia utente che visualizza il contenuto dell’AEM.
-   - **Servizio editor universale**: a _copia locale del servizio Universal Editor_ che associa Universal Editor e l’SDK dell’AEM.
+   - **AEM SDK**: fornisce i contenuti archiviati nei frammenti di contenuto per l&#39;app React utilizzando le API di GraphQL.
+   - **React app**: interfaccia utente semplice che visualizza il contenuto dell&#39;AEM.
+   - **Universal Editor Service**: una _copia locale del servizio Universal Editor_ che associa Universal Editor e l&#39;SDK AEM.
 - Come dotare l’app React per modificare i contenuti con l’editor universale
 - Come modificare i contenuti dell’app React utilizzando l’editor universale
 
@@ -50,14 +50,14 @@ L’editor universale consente ad autori e sviluppatori di contenuti (front-end 
 
 ## App React di esempio
 
-Questa esercitazione utilizza [**Team WKND**](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial#react-app---basic-tutorial---teampersons) come app React di esempio. Il **Team WKND** L’app React visualizza un elenco dei membri del gruppo e dei relativi dettagli.
+Questa esercitazione utilizza [**Team WKND**](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial#react-app---basic-tutorial---teampersons) come app React di esempio. L&#39;app React **WKND Teams** visualizza un elenco dei membri del team e i relativi dettagli.
 
-I dettagli del team come titolo, descrizione e membri del team vengono memorizzati come _Team_ Frammenti di contenuto nell’AEM. Allo stesso modo, i dettagli della persona come nome, biografia e immagine del profilo vengono memorizzati come _Persona_ Frammenti di contenuto nell’AEM.
+I dettagli del team come titolo, descrizione e membri del team sono archiviati come _Frammenti di contenuto del team_ in AEM. Allo stesso modo, i dettagli della persona come nome, biografia e immagine del profilo vengono memorizzati come _Frammenti di contenuto della persona_ nell&#39;AEM.
 
-Il contenuto dell’app React è fornito dall’AEM utilizzando le API GraphQL e l’interfaccia utente è creata utilizzando due componenti React, `Teams` e `Person`.
+Il contenuto dell&#39;app React viene fornito dall&#39;AEM tramite le API GraphQL e l&#39;interfaccia utente viene creata utilizzando due componenti React, `Teams` e `Person`.
 
-È disponibile un tutorial corrispondente per scoprire come creare **Team WKND** React app. Puoi trovare l’esercitazione [qui](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview).
+È disponibile un tutorial corrispondente per scoprire come creare l&#39;app React **WKND Teams**. L&#39;esercitazione [è disponibile qui](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview).
 
 ## Passaggio successivo
 
-Scopri come [configurare l’ambiente di sviluppo locale](./local-development-setup.md).
+Scopri come [configurare l&#39;ambiente di sviluppo locale](./local-development-setup.md).

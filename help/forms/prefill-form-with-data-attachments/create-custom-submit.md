@@ -40,7 +40,7 @@ Per soddisfare il caso d’uso, è stato creato un servizio di invio personalizz
 }
 ```
 
-L’elemento _**contractcopy**_ rappresenta un componente allegato e viene utilizzato per acquisire gli allegati inviati con il modulo.
+L&#39;elemento _**contractcopy**_ rappresenta un componente file allegato e viene utilizzato per acquisire gli allegati inviati con il modulo.
 Per poter precompilare il modulo adattivo con i dati e i relativi allegati, gli allegati inviati verranno salvati nel portale di Azure e l’elemento dati dell’oggetto contractcopy nei dati inviati verrà aggiornato con l’URL dell’allegato salvato.
 Il servizio di invio personalizzato estrae e memorizza gli allegati nel portale di Azure.  I dati inviati aggiornati avranno un aspetto simile a questo
 

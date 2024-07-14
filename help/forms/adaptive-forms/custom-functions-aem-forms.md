@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Funzioni personalizzate
 
-In AEM Forms 6.5 è stata introdotta la possibilità di definire funzioni JavaScript da utilizzare per definire regole di business complesse tramite l’editor di regole.
+In AEM Forms 6.5 è stata introdotta la possibilità di definire funzioni di JavaScript che possono essere utilizzate per definire regole di business complesse utilizzando l’editor di regole.
 AEM Forms fornisce una serie di funzioni personalizzate pronte all’uso, ma sarà necessario definire funzioni personalizzate e utilizzarle in più moduli.
 
 Per definire la prima funzione personalizzata, procedere come segue:
@@ -29,10 +29,10 @@ Per definire la prima funzione personalizzata, procedere come segue:
 * Nella cartella experience-league crea un nuovo nodo di tipo cq:ClientLibraryFolder denominato clientlibs.
 * Seleziona la cartella clientlibs appena creata e aggiungi le proprietà allowProxy e Categories come mostrato nella schermata e salva le modifiche.
 
-![client-lib](assets/custom-functions.png)
-* Crea una cartella denominata **js** sotto **clientlibs** cartella
-* Crea un file denominato **function.js** sotto **js** cartella
-* Crea un file denominato **js.txt** sotto **clientlibs** cartella. Salva le modifiche.
+![libreria client](assets/custom-functions.png)
+* Crea una cartella denominata **js** nella cartella **clientlibs**
+* Crea un file denominato **functions.js** nella cartella **js**
+* Crea un file denominato **js.txt** nella cartella **clientlibs**. Salva le modifiche.
 * La struttura delle cartelle deve essere simile alla schermata seguente.
 
 ![Editor regole](assets/folder-structure.png)
@@ -72,10 +72,10 @@ function convertUTC(strUTCString)
 }
 ```
 
-Per favore [fai riferimento a jsdoc](https://jsdoc.app/index.html)per ulteriori dettagli sull’annotazione delle funzioni javascript.
+[Per ulteriori dettagli sull&#39;annotazione delle funzioni JavaScript, fare riferimento a jsdoc](https://jsdoc.app/index.html).
 Il codice di cui sopra ha due funzioni:
 **getCountyNamesList** - restituisce una matrice di stringa
-**convertUTC** - Converte la marca temporale UTC in fuso orario locale
+**convertUTC** - Converte il timestamp UTC in fuso orario locale
 
 Apri il file js.txt e incolla il seguente codice, quindi salva le modifiche.
 
@@ -87,7 +87,7 @@ functions.js
 La riga #base=js specifica in quale directory si trovano i file JavaScript.
 Le righe seguenti indicano la posizione del file JavaScript rispetto alla posizione di base.
 
-In caso di problemi durante la creazione delle funzioni personalizzate, non esitare a [scarica e installa questo pacchetto](assets/custom-functions.zip) nel suo caso di AEM.
+Se non riesci a creare le funzioni personalizzate, puoi [scaricare e installare questo pacchetto](assets/custom-functions.zip) nella tua istanza AEM.
 
 ## Utilizzo delle funzioni personalizzate
 

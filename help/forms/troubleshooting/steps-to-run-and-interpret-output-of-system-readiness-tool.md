@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Passaggi per eseguire e interpretare l’output di AEM Forms PDFG System Readiness Tool
 
-*Questo video illustra il processo di esecuzione e interpretazione dell’output di AEM Forms PDFG System Readiness Tool (SRT).*
+*Questo video illustra il processo di esecuzione e interpretazione dell&#39;output di AEM Forms PDFG System Readiness Tool (SRT).*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335543?quality=12&learn=on)

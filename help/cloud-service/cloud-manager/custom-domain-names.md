@@ -21,9 +21,9 @@ ht-degree: 0%
 
 # Aggiungi nome di dominio personalizzato
 
-Scopri come aggiungere un nome di dominio personalizzato al sito web AEM as a Cloud Service.
+Scopri come aggiungere un nome di dominio personalizzato al sito web di AEM as a Cloud Service.
 
-In questa esercitazione, il branding dell’esempio [WKND AEM](https://github.com/adobe/aem-guides-wknd) viene migliorato aggiungendo un nome di dominio personalizzato indirizzabile HTTPS `wknd.enablementadobe.com` con Transport Layer Security (TLS).
+In questa esercitazione, il branding del sito [AEM WKND](https://github.com/adobe/aem-guides-wknd) di esempio viene migliorato aggiungendo un nome di dominio personalizzato indirizzabile HTTPS `wknd.enablementadobe.com` con Transport Layer Security (TLS).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427903?quality=12&learn=on)
 
@@ -35,14 +35,14 @@ I passaggi di alto livello sono i seguenti:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427909?quality=12&learn=on)
 
-- [OpenSSL](https://www.openssl.org/) e [scavare](https://www.isc.org/blogs/dns-checker/) sono installati nel computer locale.
+- [OpenSSL](https://www.openssl.org/) e [dig](https://www.isc.org/blogs/dns-checker/) sono installati nel computer locale.
 - Accesso a servizi di terze parti:
-   - Autorità di certificazione (CA): per richiedere il certificato firmato per il dominio del sito, come [CifraCertificato](https://www.digicert.com/)
+   - Autorità di certificazione (CA): per richiedere il certificato firmato per il dominio del sito, ad esempio [DigitCert](https://www.digicert.com/)
    - Servizio di hosting DNS (Domain Name System): consente di aggiungere record DNS per il dominio personalizzato, ad esempio DNS di Azure o Route 53 di AWS.
-- Accesso a [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/) come Proprietario business o Manager implementazione.
-- Esempio [WKND AEM](https://github.com/adobe/aem-guides-wknd) il sito viene distribuito nell’ambiente AEMCS di [programma di produzione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs) tipo.
+- Accesso a [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/) come proprietario business o ruolo Responsabile della distribuzione.
+- Il sito [AEM WKND](https://github.com/adobe/aem-guides-wknd) di esempio è stato distribuito nell&#39;ambiente AEMCS di tipo [programma di produzione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
 
-Se non hai accesso a servizi di terze parti, _collaborare con il team di sicurezza o hosting per completare i passaggi_.
+Se non hai accesso a servizi di terze parti, _collabora con il tuo team di sicurezza o di hosting per completare i passaggi_.
 
 ## Genera certificato SSL
 
@@ -50,7 +50,7 @@ Se non hai accesso a servizi di terze parti, _collaborare con il team di sicurez
 
 Sono disponibili due opzioni:
 
-- Utilizzo di `openssl` strumento da riga di comando: è possibile generare una chiave privata e una richiesta di firma del certificato (CSR, Certificate Signing Request) per il dominio del sito. Per richiedere un certificato firmato, invia la CSR a un’autorità di certificazione (CA).
+- Utilizzo dello strumento da riga di comando `openssl`: è possibile generare una chiave privata e una richiesta di firma del certificato (CSR, Certificate Signing Request) per il dominio del sito. Per richiedere un certificato firmato, invia la CSR a un’autorità di certificazione (CA).
 
 - Il team di hosting fornisce la chiave privata e il certificato firmato richiesti per il sito.
 
@@ -67,7 +67,7 @@ Per richiedere un certificato firmato, fornisci alla CA la CSR generata seguendo
 
 ### Verifica certificato firmato
 
-È consigliabile rivedere il certificato firmato prima di aggiungerlo a Cloud Manager. Puoi rivedere i dettagli del certificato utilizzando il seguente comando:
+È consigliabile rivedere il certificato firmato prima di aggiungerlo al Cloud Manager. Puoi rivedere i dettagli del certificato utilizzando il seguente comando:
 
 ```bash
 # Review the certificate details
@@ -76,15 +76,15 @@ $ openssl crl2pkcs7 -nocrl -certfile <YOUR-SIGNED-CERT>.crt | openssl pkcs7 -pri
 
 Il certificato firmato può contenere la catena di certificati, che include i certificati radice e intermedi insieme al certificato dell’entità finale.
 
-Adobe Cloud Manager accetta il certificato dell’entità finale e la catena di certificati _in campi modulo separati_, quindi è necessario estrarre il certificato dell’entità finale e la catena di certificati dal certificato firmato.
+L&#39;Adobe Cloud Manager accetta il certificato dell&#39;entità finale e la catena di certificati _in campi modulo separati_, pertanto è necessario estrarre il certificato dell&#39;entità finale e la catena di certificati dal certificato firmato.
 
-In questa esercitazione, il [CifraCertificato](https://www.digicert.com/) certificato firmato rilasciato contro `*.enablementadobe.com` Il dominio viene utilizzato come esempio. L’entità finale e la catena di certificati vengono estratte aprendo il certificato firmato in un editor di testo e copiando il contenuto tra `-----BEGIN CERTIFICATE-----` e `-----END CERTIFICATE-----` marcatori.
+In questa esercitazione, il certificato firmato [DigitCert](https://www.digicert.com/) rilasciato per il dominio `*.enablementadobe.com` viene utilizzato come esempio. L&#39;entità finale e la catena di certificati vengono estratte aprendo il certificato firmato in un editor di testo e copiando il contenuto tra i marcatori `-----BEGIN CERTIFICATE-----` e `-----END CERTIFICATE-----`.
 
 ## Aggiungere un certificato SSL in Cloud Manager
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427906?quality=12&learn=on)
 
-Per aggiungere il certificato SSL in Cloud Manager, segui la [Aggiungi certificato SSL](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate) documentazione.
+Per aggiungere il certificato SSL in Cloud Manager, segui la documentazione [Aggiungi certificato SSL](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate).
 
 ## Verifica del nome di dominio
 
@@ -92,9 +92,9 @@ Per aggiungere il certificato SSL in Cloud Manager, segui la [Aggiungi certifica
 
 Per verificare il nome di dominio, effettua le seguenti operazioni:
 
-- Aggiungi il nome di dominio in Cloud Manager seguendo la [Aggiungi nome di dominio personalizzato](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name) documentazione.
-- AEM Aggiungere un’ [Record TXT](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-text-record) nel servizio di hosting DNS.
-- Verificare i passaggi precedenti eseguendo una query sui server DNS utilizzando `dig` comando.
+- Aggiungere il nome di dominio in Cloud Manager seguendo la documentazione di [Aggiungi nome di dominio personalizzato](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name).
+- Aggiungi un [record TXT](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-text-record) specifico per AEM nel servizio di hosting DNS.
+- Verificare i passaggi precedenti eseguendo una query sui server DNS tramite il comando `dig`.
 
 ```bash
 # General syntax, the `_aemverification` is prefix provided by Adobe
@@ -129,7 +129,7 @@ _aemverification.wknd.enablementadobe.com. 3600    IN TXT "adobe-aem-verificatio
 
 In questa esercitazione, il DNS di Azure viene utilizzato come esempio. Per aggiungere il record TXT, devi seguire la documentazione del servizio di hosting DNS.
 
-Rivedi [Verifica dello stato del nome di dominio](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status) in caso di problemi.
+In caso di problemi, consulta la documentazione [Verifica dello stato del nome di dominio](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status).
 
 ## Configura record DNS
 
@@ -137,13 +137,13 @@ Rivedi [Verifica dello stato del nome di dominio](https://experienceleague.adobe
 
 Per configurare il record DNS per il dominio personalizzato, eseguire la procedura seguente:
 
-- Determina il tipo di record DNS (CNAME o APEX) in base al tipo di dominio, ad esempio dominio radice (APEX) o sottodominio (CNAME), e segui la [Configurazione delle impostazioni DNS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings) documentazione.
+- Determinare il tipo di record DNS (CNAME o APEX) in base al tipo di dominio, ad esempio dominio radice (APEX) o sottodominio (CNAME), e seguire la documentazione [Configurazione delle impostazioni DNS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings).
 - Aggiungi il record DNS nel servizio di hosting DNS.
-- Attiva la convalida del record DNS seguendo [Verifica dello stato del record DNS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status) documentazione.
+- Attiva la convalida del record DNS seguendo la documentazione di [Verifica dello stato del record DNS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status).
 
-In questo tutorial, as a **sottodominio** `wknd.enablementadobe.com` viene utilizzato il tipo di record CNAME che punta a `cdn.adobeaemcloud.com` viene aggiunto.
+In questa esercitazione, quando si utilizza un **sottodominio** `wknd.enablementadobe.com`, viene aggiunto il tipo di record CNAME che punta a `cdn.adobeaemcloud.com`.
 
-Tuttavia, se utilizzi il **dominio principale**, è necessario aggiungere il tipo di record APEX (A, ALIAS o ANAME) che punta agli indirizzi IP specifici forniti da Adobe.
+Tuttavia, se si utilizza il **dominio principale**, è necessario aggiungere il tipo di record APEX (alias A, ALIAS o ANAME) che punta agli indirizzi IP specifici forniti da Adobe.
 
 ## Verifica del sito
 
@@ -153,6 +153,6 @@ Per verificare che il sito sia accessibile utilizzando il nome di dominio person
 
 ## Video end-to-end
 
-Puoi anche guardare il video end-to-end che illustra la panoramica, i prerequisiti e i passaggi precedenti per aggiungere un nome di dominio personalizzato al sito ospitato dall’AEM in modalità as a Cloud Service.
+Puoi anche guardare il video end-to-end che illustra la panoramica, i prerequisiti e i passaggi precedenti per aggiungere un nome di dominio personalizzato al sito ospitato da AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427817?quality=12&learn=on)

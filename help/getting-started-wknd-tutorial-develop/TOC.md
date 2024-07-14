@@ -1,5 +1,5 @@
 ---
-user-guide-title: 'Guida introduttiva ai AEM Sites: esercitazione WKND'
+user-guide-title: 'Guida introduttiva ad AEM Sites: tutorial WKND'
 user-guide-description: Tutorial in più parti per sviluppatori che non hanno mai utilizzato AEM. Implementa un sito AEM per un brand fittizio del settore lifestyle, WKND. Abilita la pipeline front-end per velocizzare lo sviluppo nel ciclo di implementazione.
 breadcrumb-title: Tutorial WKND di AEM Sites
 solution: Experience Manager, Experience Manager Sites
@@ -10,16 +10,16 @@ audience: developer
 index: y
 source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 46%
+source-wordcount: '124'
+ht-degree: 40%
 
 ---
 
 
-# Guida introduttiva ai AEM Sites: esercitazione WKND {#getting-started-wknd-tutorial-develop}
+# Guida introduttiva ad AEM Sites: tutorial WKND {#getting-started-wknd-tutorial-develop}
 
 + [Panoramica dei tutorial WKND](overview.md)
-+ Archetipo progetto {#project-archetype}
++ Archetipo Progetto {#project-archetype}
    + [Panoramica](./project-archetype/overview.md)
    + [1 - Configurazione del progetto](./project-archetype/project-setup.md)
    + [2 - Nozioni di base sui componenti](./project-archetype/component-basics.md)
@@ -28,7 +28,7 @@ ht-degree: 46%
    + [5 - Sistema di stili](./project-archetype/style-system.md)
    + [6 - Componente personalizzato](./project-archetype/custom-component.md)
    + [7 - Test di unità](./project-archetype/unit-testing.md)
-+ Creazione rapida di siti {#site-template}
++ Creazione rapida sito {#site-template}
    + [Panoramica](./site-template/overview.md)
    + [1 - Creare un sito](./site-template/create-site.md)
    + [2 - Introduzione all’authoring e alla pubblicazione](./site-template/author-content-publish.md)

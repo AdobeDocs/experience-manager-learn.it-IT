@@ -25,7 +25,7 @@ Il rapporto Bandwidth &amp; Storage (Larghezza di banda e spazio di archiviazion
 
 ![immagine](assets/valuable-reports/reports-1.jpg)
 
-_Il rapporto Bandwidth &amp; Storage (Larghezza di banda e spazio di archiviazione) indica che questo account supera il limite di 30 GB._
+_Il report Larghezza di banda e spazio di archiviazione mostra questo account al di sopra del limite di archiviazione di 30 GB._
 
 ## Rapporto errori immagine
 
@@ -33,7 +33,7 @@ Ogni volta che un URL richiede un’immagine mancante, il server immagini genera
 
 ![immagine](assets/valuable-reports/reports-2.jpg)
 
-_Rapporto di errore immagine._
+_Segnalazione errori immagine._
 
 ## Conclusione
 
@@ -41,7 +41,7 @@ Ci auguriamo che tu abbia trovato utile il contenuto di questa guida alle best p
 
 Per ulteriori informazioni su Dynamic Media Classic, consulta le risorse seguenti:
 
-- [Dynamic Media Classic sull’Experience League: come arrivare al valore](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
-- [Dynamic Media Classic su Experience League - Fare di più](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
+- [Dynamic Media Classic su Experience League - Valore](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
+- [Dynamic Media Classic su Experience League - Ulteriori operazioni](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
 - [Archivi newsletter Dynamic Medie](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
 - [Documentazione di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)

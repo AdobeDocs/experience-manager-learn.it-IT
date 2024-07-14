@@ -1,5 +1,5 @@
 ---
-title: Impostare gli strumenti di sviluppo per lo sviluppo as a Cloud Service dell'AEM
+title: Impostare gli strumenti di sviluppo per lo sviluppo AEM as a Cloud Service
 description: Configurare un computer di sviluppo locale con tutti gli strumenti di base necessari per lo sviluppo locale contro l'AEM.
 feature: Developer Tools
 version: Cloud Service
@@ -29,13 +29,13 @@ ht-degree: 6%
 
 Per sviluppare per Adobe Experience Manager (AEM) è necessario installare e configurare un set minimo di strumenti specifici nel computer dello sviluppatore, Questi strumenti sostengono lo sviluppo e la creazione di progetti AEM.
 
-Tieni presente che `~` viene utilizzato come abbreviazione per la directory utente. In Windows, equivale a `%HOMEPATH%`.
+`~` viene utilizzato come abbreviazione per la directory dell&#39;utente. In Windows equivale a `%HOMEPATH%`.
 
 ## Installare Java
 
-Experience Manager è un’applicazione Java e pertanto richiede SDK Java per supportare lo sviluppo e l’SDK as a Cloud Service AEM.
+Experience Manager è un’applicazione Java e pertanto richiede SDK Java per supportare lo sviluppo e l’SDK AEM as a Cloud Service.
 
-1. [Scarica e installa l’SDK Java 11 più recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
+1. [Scarica e installa la versione più recente Java 11 SDK](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
 1. Verifica che l’SDK di Java 11 Oracle sia installato eseguendo il comando:
 
 >[!BEGINTABS]
@@ -64,7 +64,7 @@ $ java --version
 
 ## Installa Homebrew
 
-_L&#39;uso di Homebrew è facoltativo, ma consigliato._
+_L&#39;utilizzo di Homebrew è facoltativo, ma consigliato._
 
 Homebrew è un gestore di pacchetti open-source per macOS, Windows e Linux. Tutti gli strumenti di supporto possono essere installati separatamente, Homebrew fornisce un modo conveniente per installare e aggiornare una varietà di strumenti di sviluppo necessari per lo sviluppo Experience Manager.
 
@@ -76,7 +76,7 @@ Homebrew è un gestore di pacchetti open-source per macOS, Windows e Linux. Tutt
 
 >[!TAB macOS]
 
-[Homebrew su macOS](https://brew.sh/) richiede [Xcode](https://apps.apple.com/us/app/xcode/id497799835) o [Strumenti della riga di comando](https://developer.apple.com/download/more/), installabile tramite il comando:
+[Homebrew in macOS](https://brew.sh/) richiede [Xcode](https://apps.apple.com/us/app/xcode/id497799835) o [Strumenti riga di comando](https://developer.apple.com/download/more/), installabile tramite il comando:
 
 ```shell
 $ xcode-select --install
@@ -84,37 +84,37 @@ $ xcode-select --install
 
 >[!TAB Windows]
 
-[Installare Homebrew su Windows 10](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
+[Installa Homebrew in Windows 10](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
 
 >[!TAB Linux]
 
-[Installare Homebrew su Linux](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
+[Installa Homebrew su Linux](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
 
 >[!ENDTABS]
 
 1. Verificare che Homebrew sia installato eseguendo il comando: `brew --version`
 
-![Homebrew](./assets/development-tools/homebrew.png)
+![Ebraico](./assets/development-tools/homebrew.png)
 
-Se utilizzi Homebrew, segui la __Installa con Homebrew__ nelle sezioni seguenti. Se sei __non__ utilizzando Homebrew, installare gli strumenti utilizzando i collegamenti specifici del sistema operativo.
+Se utilizzi Homebrew, segui le istruzioni __Installa utilizzando Homebrew__ nelle sezioni seguenti. Se __non__ utilizzi Homebrew, installa gli strumenti utilizzando i collegamenti specifici del sistema operativo.
 
 ## Installare Git
 
-[Git](https://git-scm.com/) è il sistema di gestione del controllo del codice sorgente utilizzato da [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/source-code-repository.html), e pertanto è necessario per lo sviluppo.
+[Git](https://git-scm.com/) è il sistema di gestione del controllo del codice sorgente utilizzato da [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/source-code-repository.html) ed è pertanto necessario per lo sviluppo.
 
 >[!BEGINTABS]
 
->[!TAB Installare Git utilizzando Homebrew]
+>[!TAB Installa Git utilizzando Homebrew]
 
 1. Apri il terminale/prompt dei comandi
-1. Esegui il comando: `$ brew install git`
-1. Verifica che Git sia installato utilizzando il comando: `$ git --version`
+1. Eseguire il comando: `$ brew install git`
+1. Verificare che Git sia installato utilizzando il comando: `$ git --version`
 
->[!TAB Scaricare e installare Git]
+>[!TAB Scarica e installa Git]
 
-1. [Scaricare e installare Git](https://git-scm.com/downloads)
+1. [Scarica e installa Git](https://git-scm.com/downloads)
 1. Apri il terminale/prompt dei comandi
-1. Verifica che Git sia installato utilizzando il comando: `$ git --version`
+1. Verificare che Git sia installato utilizzando il comando: `$ git --version`
 
 >[!ENDTABS]
 
@@ -122,23 +122,23 @@ Se utilizzi Homebrew, segui la __Installa con Homebrew__ nelle sezioni seguenti.
 
 ## Installare Node.js (e npm){#node-js}
 
-[Node.js](https://nodejs.org) è un ambiente runtime JavaScript utilizzato per lavorare con le risorse front-end di un progetto AEM __ui.frontend__ sottoprogetto. Node.js è distribuito con [npm](https://www.npmjs.com/), è il gestore di pacchetti di fatto Node.js, utilizzato per gestire le dipendenze JavaScript.
+[Node.js](https://nodejs.org) è un ambiente runtime di JavaScript utilizzato per le risorse front-end del sottoprogetto __ui.frontend__ di un progetto AEM. Node.js è distribuito con [npm](https://www.npmjs.com/), è il gestore di pacchetti Node.js, utilizzato per gestire le dipendenze di JavaScript.
 
 >[!BEGINTABS]
 
->[!TAB Installare Node.js utilizzando Homebrew]
+>[!TAB Installa Node.js utilizzando Homebrew]
 
 1. Apri il terminale/prompt dei comandi
-1. Esegui il comando: `$ brew install node`
-1. Verifica che Node.js sia installato utilizzando il comando: `$ node -v`
-1. Verificare che npm sia installato, utilizzando il comando: `$ npm -v`
+1. Eseguire il comando: `$ brew install node`
+1. Verificare che Node.js sia installato utilizzando il comando: `$ node -v`
+1. Verificare che npm sia installato utilizzando il comando: `$ npm -v`
 
->[!TAB Scaricare e installare Node.js]
+>[!TAB Scarica e installa Node.js]
 
-1. [Scaricare e installare Node.js](https://nodejs.org/it/download/)
+1. [Scarica e installa Node.js](https://nodejs.org/it/download/)
 2. Apri il terminale/prompt dei comandi
-3. Verifica che Node.js sia installato utilizzando il comando: `$ node -v`
-4. Verificare che npm sia installato, utilizzando il comando: `$ npm -v`
+3. Verificare che Node.js sia installato utilizzando il comando: `$ node -v`
+4. Verificare che npm sia installato utilizzando il comando: `$ npm -v`
 
 >[!ENDTABS]
 
@@ -146,29 +146,29 @@ Se utilizzi Homebrew, segui la __Installa con Homebrew__ nelle sezioni seguenti.
 
 >[!TIP]
 >
->[Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype)I progetti AEM basati su installano una versione isolata di Node.js al momento della compilazione. È consigliabile mantenere sincronizzata (o vicina) la versione del sistema di sviluppo locale con le versioni di Node.js e npm specificate nel progetto Reactor pom.xml del progetto AEM Maven.
+>I progetti AEM basati su [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype) installano una versione isolata di Node.js al momento della compilazione. È consigliabile mantenere sincronizzata (o vicina) la versione del sistema di sviluppo locale con le versioni di Node.js e npm specificate nel progetto Reactor pom.xml del progetto AEM Maven.
 >
->Vedi questo esempio [Progetto AEM pom.xml](https://github.com/adobe/aem-guides-wknd/blob/9ac94f3f40c978a53ec88fae79fbc17dd2db72f2/pom.xml#L117-L118) per individuare le versioni di Node.js e npm.
+>Consulta questo esempio [AEM Project Reactor pom.xml](https://github.com/adobe/aem-guides-wknd/blob/9ac94f3f40c978a53ec88fae79fbc17dd2db72f2/pom.xml#L117-L118) per sapere dove individuare le versioni di Node.js e npm.
 
 ## Installare Maven
 
-Apache Maven è lo strumento da riga di comando Java open-source utilizzato per creare progetti AEM generati dall’archetipo Maven del progetto AEM. Tutte le principali IDE ([IDEA IntelliJ](https://www.jetbrains.com/idea/), [Codice di Visual Studio](https://code.visualstudio.com/), [Eclipse](https://www.eclipse.org/), ecc.) dispongono del supporto Maven integrato.
+Apache Maven è lo strumento da riga di comando Java open-source utilizzato per creare progetti AEM generati dall’archetipo Maven del progetto AEM. Tutti gli IDE principali ([IntelliJ IDEA](https://www.jetbrains.com/idea/), [Visual Studio Code](https://code.visualstudio.com/), [Eclipse](https://www.eclipse.org/), ecc.) dispongono del supporto Maven integrato.
 
 
 >[!BEGINTABS]
 
->[!TAB Installare Maven utilizzando Homebrew]
+>[!TAB Installa Maven utilizzando Homebrew]
 
 1. Apri il terminale/prompt dei comandi
-1. Esegui il comando: `$ brew install maven`
-1. Verifica che Maven sia installato, utilizzando il comando: `$ mvn -v`
+1. Eseguire il comando: `$ brew install maven`
+1. Verificare che Maven sia installato utilizzando il comando: `$ mvn -v`
 
->[!TAB Scaricare e installare Maven]
+>[!TAB Scarica e installa Maven]
 
 1. [Scarica Maven](https://maven.apache.org/download.cgi)
-1. [Installare Maven](https://maven.apache.org/install.html)
+1. [Installa Maven](https://maven.apache.org/install.html)
 1. Apri il terminale/prompt dei comandi
-1. Verifica che Maven sia installato, utilizzando il comando: `$ mvn -v`
+1. Verificare che Maven sia installato utilizzando il comando: `$ mvn -v`
 
 >[!ENDTABS]
 
@@ -176,39 +176,39 @@ Apache Maven è lo strumento da riga di comando Java open-source utilizzato per 
 
 ## Configurare Adobe I/O CLI{#aio-cli}
 
-Il [CLI ADOBE I/O](https://github.com/adobe/aio-cli), o `aio`, fornisce accesso alla riga di comando a diversi servizi di Adobe, tra cui [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) e [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). Adobe I/O CLI svolge un ruolo fondamentale nello sviluppo su AEM as a Cloud Service in quanto consente agli sviluppatori di:
+[Adobe I/O CLI](https://github.com/adobe/aio-cli) o `aio` fornisce l&#39;accesso alla riga di comando a diversi servizi Adobe, tra cui [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) e [Asset Compute](https://github.com/adobe/aio-cli-plugin-asset-compute). L’interfaccia CLI di Adobe I/O svolge un ruolo fondamentale nello sviluppo su AEM as a Cloud Service, in quanto consente agli sviluppatori di:
 
 + Registri di coda da AEM as a Cloud Service Services
-+ Gestire le pipeline di Cloud Manager dalla CLI
-+ Distribuisci in [Ambienti di sviluppo rapido AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
++ Gestire le pipeline Cloud Manager da CLI
++ Distribuisci in [ambienti di sviluppo rapido AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
 
 ### Installare Adobe I/O CLI
 
-1. Assicurare [Node.js è installato](#node-js) poiché Adobe I/O CLI è un modulo npm
+1. Verificare che [Node.js sia installato](#node-js) poiché l&#39;interfaccia CLI di Adobe I/O è un modulo npm
    + Esegui `node --version` per confermare
-1. Esegui `npm install -g @adobe/aio-cli` per installare `aio` modulo npm a livello globale
+1. Eseguire `npm install -g @adobe/aio-cli` per installare il modulo npm `aio` a livello globale
 
 ### Configurare il plug-in Adobe I/O CLI Cloud Manager{#aio-cloud-manager}
 
-Il plug-in Adobe I/O Cloud Manager consente all’interfaccia della riga di comando aio di interagire con Adobe Cloud Manager tramite `aio cloudmanager` comando.
+Il plug-in Cloud Manager Adobe I/O consente all&#39;interfaccia CLI dell&#39;aio di interagire con Adobe Cloud Manager tramite il comando `aio cloudmanager`.
 
-1. Esegui `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` per installare [Plug-in aio Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+1. Eseguire `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` per installare il plug-in di Cloud Manager [aio](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
 #### Configurare l’autenticazione CLI Adobe I/O
 
-Per consentire all’interfaccia della riga di comando Adobe I/O di comunicare con Cloud Manager, viene [L’integrazione di Cloud Manager deve essere creata in Adobe I/O Console](https://github.com/adobe/aio-cli-plugin-cloudmanager)Per eseguire l&#39;autenticazione, è necessario ottenere le credenziali, e.
+Affinché Adobe I/O CLI possa comunicare con Cloud Manager, è necessario creare un&#39;integrazione di [Cloud Manager in Adobe I/O Console](https://github.com/adobe/aio-cli-plugin-cloudmanager) e ottenere le credenziali per l&#39;autenticazione.
 
 1. Accedi a [console.adobe.io](https://console.adobe.io)
 1. Assicurati che l’organizzazione che include il prodotto Cloud Manager a cui connettersi sia attiva nello switcher dell’organizzazione Adobe
-1. Crea un nuovo elemento o apri un elemento esistente [programma di Adobe I/O](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md)
+1. Crea un nuovo programma di Adobe I/O [esistente](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md) o aprilo
    + I progetti Adobe I/O Console sono semplicemente raggruppamenti organizzativi di integrazioni, creazione o utilizzo di e progetti esistenti in base a come desideri gestire le integrazioni.
    + Se crei un nuovo progetto, seleziona &quot;Progetto vuoto&quot; se richiesto (anziché &quot;Crea da modello&quot;).
-   + I programmi della console di Adobe I/O sono concetti diversi rispetto ai programmi di Cloud Manager
-1. Creare una nuova integrazione API di Cloud Manager
+   + I programmi Adobe I/O Console sono concetti diversi rispetto ai programmi Cloud Manager
+1. Creare una nuova integrazione API Cloud Manager
    + Seleziona il tipo di autenticazione &quot;Service Account (JWT)&quot; obsoleto (OAuth non è al momento supportato per CLI).
    + Crea o carica le chiavi.
    + Seleziona il profilo di prodotto &quot;Sviluppatore - Cloud Service&quot;
-1. Per ottenere le credenziali dell’account di servizio (JWT) necessarie per popolare la CLI di Adobe I/O [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication)
+1. Per ottenere le credenziali dell&#39;account di servizio (JWT) è necessario compilare [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication) di Adobe I/O CLI
 
    ```json
    //config.json 
@@ -223,24 +223,24 @@ Per consentire all’interfaccia della riga di comando Adobe I/O di comunicare c
    }
    ```
 
-1. Carica `config.json` file in Adobe I/O CLI
+1. Carica il file `config.json` in Adobe I/O CLI
    + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager ./path/to/config.json --file --json`
-1. Carica `private.key` file in Adobe I/O CLI
+1. Carica il file `private.key` in Adobe I/O CLI
    + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager.private_key ./path/to/private.key --file`
 
-Inizio [esecuzione di comandi](https://github.com/adobe/aio-cli-plugin-cloudmanager#commands) per Cloud Manager tramite Adobe I/O CLI.
+Inizia [l&#39;esecuzione dei comandi](https://github.com/adobe/aio-cli-plugin-cloudmanager#commands) per Cloud Manager tramite Adobe I/O CLI.
 
 ### Configurare il plug-in AEM Rapid Development Environment{#rde}
 
-Il plug-in AEM Rapid Development Environment consente all&#39;interfaccia CLI dell&#39;aio di interagire con AEM as a Cloud Service [Ambienti di sviluppo rapido](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html) tramite `aio aem:rde` comando.
+Il plug-in AEM Rapid Development Environment consente all&#39;interfaccia della riga di comando aio di interagire con AEM as a Cloud Service [Rapid Development Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html) tramite il comando `aio aem:rde`.
 
-1. Esegui `aio plugins:install @adobe/aio-cli-plugin-aem-rde` per installare [Plug-in per ambienti di sviluppo rapido AEM](https://github.com/adobe/aio-cli-plugin-aem-rde).
+1. Eseguire `aio plugins:install @adobe/aio-cli-plugin-aem-rde` per installare il plug-in [AEM Rapid Development Environments](https://github.com/adobe/aio-cli-plugin-aem-rde).
 
 ### Configurare il plug-in di Asset compute CLI Adobe I/O{#aio-asset-compute}
 
-Il plug-in Adobe I/O Cloud Manager consente all&#39;interfaccia CLI dell&#39;aio di generare ed eseguire processi di lavoro Asset compute tramite `aio asset-compute` comando.
+Il plug-in Cloud Manager Adobe I/O consente all&#39;interfaccia CLI dell&#39;aio di generare ed eseguire processi di lavoro Asset Compute tramite il comando `aio asset-compute`.
 
-1. Esegui `aio plugins:install @adobe/aio-cli-plugin-asset-compute` per installare [plug-in di Asset compute aio](https://github.com/adobe/aio-cli-plugin-asset-compute).
+1. Eseguire `aio plugins:install @adobe/aio-cli-plugin-asset-compute` per installare il plug-in di Asset compute [aio](https://github.com/adobe/aio-cli-plugin-asset-compute).
 
 ## Configurare l’IDE di sviluppo
 
@@ -248,29 +248,29 @@ Lo sviluppo AEM consiste principalmente nello sviluppo Java e front-end (JavaScr
 
 ### IDEA IntelliJ
 
-__[IDEA IntelliJ](https://www.jetbrains.com/idea/)__ è un potente IDE per lo sviluppo Java. IntelliJ IDEA è disponibile in due versioni, una versione Community gratuita e una versione Ultimate commerciale (a pagamento). La versione comunitaria gratuita è sufficiente per lo sviluppo dell&#39;AEM, tuttavia [espande il set di funzionalità](https://www.jetbrains.com/idea/download).
+__[IntelliJ IDEA](https://www.jetbrains.com/idea/)__ è un potente IDE per lo sviluppo Java. IntelliJ IDEA è disponibile in due versioni, una versione Community gratuita e una versione Ultimate commerciale (a pagamento). La versione gratuita di Community è sufficiente per lo sviluppo di AEM, tuttavia Ultimate [espande il suo set di funzionalità](https://www.jetbrains.com/idea/download).
 
 >[!VIDEO](https://video.tv.adobe.com/v/26089?quality=12&learn=on)
 
 + [Scarica IntelliJ IDEA](https://www.jetbrains.com/idea/download)
-+ [Scaricare lo strumento Repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#installation)
++ [Scarica lo strumento repository](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#installation)
 
 ### Codice Microsoft Visual Studio
 
-__[Codice di Visual Studio](https://code.visualstudio.com/)__ (VS Code) è uno strumento gratuito open source per sviluppatori front-end. Visual Studio Code può essere configurato per integrare la sincronizzazione dei contenuti con l&#39;AEM con l&#39;aiuto di uno strumento di Adobe, __[repository](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)__.
+__[Visual Studio Code](https://code.visualstudio.com/)__ (VS Code) è uno strumento gratuito open-source per sviluppatori front-end. È possibile configurare Visual Studio Code per integrare la sincronizzazione dei contenuti con AEM con l&#39;aiuto di uno strumento di Adobe, __[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)__.
 
-Visual Studio Code è la scelta ideale per gli sviluppatori front-end che creano principalmente codice front-end, JavaScript, CSS e HTML. Mentre VS Code dispone del supporto Java tramite [estensioni](https://code.visualstudio.com/docs/java/java-tutorial), potrebbe non disporre di alcune delle funzioni avanzate fornite da più specifiche per Java.
+Visual Studio Code è la scelta ideale per gli sviluppatori front-end che creano principalmente codice front-end, ovvero JavaScript, CSS e HTML. Anche se il codice VS dispone del supporto Java tramite [estensioni](https://code.visualstudio.com/docs/java/java-tutorial), potrebbero mancare alcune delle funzioni avanzate fornite da più specifiche di Java.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25907?quality=12&learn=on)
 
 + [Scarica codice Visual Studio](https://code.visualstudio.com/Download)
-+ [Scaricare lo strumento Repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)
-+ [Scarica estensione codice VS aemfed](https://aemfed.io/)
++ [Scarica lo strumento repository](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)
++ [Scarica l&#39;estensione codice VS aemfed](https://aemfed.io/)
 + [Scarica estensione codice VS sincronizzazione AEM](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)
 
 ### Eclipse
 
-__[IDE Eclipse](https://www.eclipse.org/ide/)__ è un popolare IDE per lo sviluppo Java e supporta  __[Strumenti per sviluppatori AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)__ plug-in fornito da Adobe, che fornisce un’interfaccia grafica in-IDE per l’authoring e la sincronizzazione dei contenuti JCR con un’istanza AEM locale.
+__[Eclipse IDE](https://www.eclipse.org/ide/)__ è uno dei più diffusi IDE per lo sviluppo Java e supporta il plug-in __[Strumenti per sviluppatori AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)__ fornito da Adobe, che fornisce un&#39;interfaccia grafica interna all&#39;IDE per la creazione e la sincronizzazione dei contenuti JCR con un&#39;istanza AEM locale.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 

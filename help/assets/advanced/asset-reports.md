@@ -1,5 +1,5 @@
 ---
-title: Rapporti sulle risorse in AEM Assets
+title: Rapporti di Assets in AEM Assets
 description: AEM Assets fornisce un framework di reporting a livello aziendale in grado di adattarsi per archivi di grandi dimensioni tramite un’esperienza utente intuitiva.
 feature: Asset Reports
 topic: Administration
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Rapporti sulle risorse{#using-reports-in-aem-assets}
+# Rapporti di Assets{#using-reports-in-aem-assets}
 
 AEM Assets fornisce un framework di reporting a livello aziendale in grado di adattarsi per archivi di grandi dimensioni tramite un’esperienza utente intuitiva.
 
@@ -28,4 +28,4 @@ AEM Assets fornisce un framework di reporting a livello aziendale in grado di ad
 
 >[!IMPORTANT]
 >
->AEM 6.5 consente di configurare [rapporti sulle risorse](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html#prerequisite-for-reporting), che consente agli amministratori di definire cosa viene tracciato e incluso nei rapporti.
+>AEM 6.5 offre la possibilità di configurare [rapporti sulle risorse](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html#prerequisite-for-reporting), consentendo agli amministratori di definire ciò che viene tracciato e incluso nei rapporti.

@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Abilitare il rapporto di download delle risorse
 
-*Questo video illustra i passaggi necessari per abilitare il rapporto di download delle risorse.*
+*Questo video illustra i passaggi necessari per abilitare il report di download delle risorse.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335463?quality=12&learn=on)

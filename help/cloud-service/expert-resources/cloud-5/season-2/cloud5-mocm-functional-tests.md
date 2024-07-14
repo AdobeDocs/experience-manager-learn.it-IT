@@ -26,4 +26,4 @@ Per impostazione predefinita, AEM as a Cloud Service completa molti test funzion
 
 + [Test funzionali](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/functional-testing.html)
 + [Test per fumo AEM](https://github.com/adobe/aem-test-samples/)
-+ [Client di test AEM](https://github.com/adobe/aem-testing-clients/)
++ [Client di prova AEM](https://github.com/adobe/aem-testing-clients/)

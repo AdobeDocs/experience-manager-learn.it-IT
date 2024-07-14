@@ -39,11 +39,11 @@ Esistono due flussi di operazionalizzazione per [!DNL AEM Sites] e [!DNL AEM Ass
 
 1. Strategia e lavoro di trasformazione, ad esempio grandi progetti tra organizzazioni
 
-![flussi di operatività](assets/streams-of-operationalization.png)
+![flussi di operazionalizzazione](assets/streams-of-operationalization.png)
 
 ### Ruoli risorsa AEM di alto livello
 
-**Intervallo generale:** Questa linea di base supporta modelli centralizzati e decentralizzati. Se avete un modello decentralizzato, l&#39;AEM può essere usato in modo astratto. Il ruolo Proprietario prodotto deve essere utilizzato in modo creativo, ma è anche necessario disporre di un Proprietario prodotto che sia il proprietario dei diversi stili di un tipo di risorsa e di un altro che sovrintenda all’intera organizzazione.
+**Distanza generale:** Questa linea di base supporta modelli centralizzati e decentralizzati. Se avete un modello decentralizzato, l&#39;AEM può essere usato in modo astratto. Il ruolo Proprietario prodotto deve essere utilizzato in modo creativo, ma è anche necessario disporre di un Proprietario prodotto che sia il proprietario dei diversi stili di un tipo di risorsa e di un altro che sovrintenda all’intera organizzazione.
 
 1. Ruoli di esecuzione e funzionamento di base
 
@@ -61,7 +61,7 @@ Esistono due flussi di operazionalizzazione per [!DNL AEM Sites] e [!DNL AEM Ass
 
 **Scenari di esempio**
 
-1. **Esecuzione e funzionamento:**
+1. **Esegui e utilizza:**
 
 Di seguito sono riportati alcuni esempi di ruolo per uno scenario leggero (società di abbigliamento sportivo) e pesante (società di cosmetici):
 
@@ -81,11 +81,11 @@ Di seguito sono riportati alcuni esempi di ruolo per uno scenario leggero (socie
    * 4 principali amministratori PMI per marchio
    * 1 architetto tecnico
 
-### Di alto livello [!DNL AEM Sites] ruoli
+### Ruoli [!DNL AEM Sites] di alto livello
 
 1. Funzionamento di base
 
-   **Intervallo generale:** Gli sviluppatori CSS creano nuove interfacce per i componenti. Adobe Sr Business Consultant, Joseph Van Buskirk, consiglia di &quot;Ottenere componenti staccati e sistemi di stile. Questo è il ruolo che permette di risparmiare sui costi. L’80% delle esperienze create deve essere eseguito utilizzando i componenti core o creati in precedenza.&quot; L’obiettivo è quello di riutilizzare i componenti core o personalizzati con nuovi stili utilizzando uno sviluppatore CSS (o un team di sviluppo front-end).
+   **Distanza generale:** gli sviluppatori CSS creano nuove interfacce per i componenti. Adobe Sr Business Consultant, Joseph Van Buskirk, consiglia di &quot;Ottenere componenti staccati e sistemi di stile. Questo è il ruolo che permette di risparmiare sui costi. L’80% delle esperienze create deve essere eseguito utilizzando i componenti core o creati in precedenza.&quot; L’obiettivo è quello di riutilizzare i componenti core o personalizzati con nuovi stili utilizzando uno sviluppatore CSS (o un team di sviluppo front-end).
 
    Esempi di ruoli:
 
@@ -126,12 +126,12 @@ Di seguito sono riportati alcuni esempi di ruolo per uno scenario client leggero
 
 ### Takeaway chiave
 
-**Comprendere gli archetipi** avvio lento, comprensione e analisi degli archetipi. Sii creativo e flessibile, tenendo presente che non esiste un modello corretto da seguire.
+**Comprendere gli archetipi**: iniziare lentamente, comprendere e analizzare gli archetipi. Sii creativo e flessibile, tenendo presente che non esiste un modello corretto da seguire.
 
-**Comprendere la roadmap** - Alcune organizzazioni devono eseguire molte attività cardine. Preparati ad allocare più risorse tecniche di quante tu possa stimare.
+**Comprendi la tua roadmap** - Alcune organizzazioni devono eseguire molte attività cardine. Preparati ad allocare più risorse tecniche di quante tu possa stimare.
 
-**Utilizzo delle risorse interne** - Le lacune possono presentarsi in modo imprevisto. Potresti essere in grado di compilarli più rapidamente reperendo i membri interni del team, anziché eseguire ricerche all’esterno dell’organizzazione.
+**Sfruttamento delle risorse interne** - Le lacune potrebbero verificarsi in modo imprevisto. Potresti essere in grado di compilarli più rapidamente reperendo i membri interni del team, anziché eseguire ricerche all’esterno dell’organizzazione.
 
-Per una discussione più approfondita su modelli e archetipi di governance e gestione del personale, segui questa discussione della durata di un’ora: [Archetipi di ruolo e creazione di un framework operativo per [!DNL AEM Assets] e [!DNL Sites]](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
+Per una discussione più approfondita su modelli e archetipi di governance e assegnazione del personale, ascolta questa discussione sul pannello di un&#39;ora: [Archetipi di ruolo e Creazione di un framework operativo per [!DNL AEM Assets] e [!DNL Sites]](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
 
-Per ulteriori informazioni su strategia e leadership di pensiero, visita [Customer Success](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.
+Ulteriori informazioni su strategia e leadership di pensiero nell&#39;hub [Customer Success](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html).

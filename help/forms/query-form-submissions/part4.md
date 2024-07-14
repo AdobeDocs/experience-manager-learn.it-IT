@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Precompilare il modulo con i dati e gli allegati inviati
 
-Quando **Amministratore** Se si fa clic su ViewLink nella tabella dei risultati di ricerca, il modulo viene precompilato con i dati inviati.
+Quando l&#39;**Amministratore** fa clic su ViewLink nella tabella dei risultati della ricerca, il modulo viene precompilato con i dati inviati.
 
 È stato utilizzato un servizio di precompilazione per recuperare i dati associati all’ID BLOB dal portale di Azure.
 

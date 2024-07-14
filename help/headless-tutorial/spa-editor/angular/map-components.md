@@ -27,18 +27,18 @@ Questo capitolo approfondisce l’analisi dell’API del modello JSON AEM e di c
 ## Obiettivo
 
 1. Scopri come mappare i componenti dell’AEM ai componenti dell’SPA.
-2. Comprendere la differenza tra **Contenitore** componenti e **Contenuto** componenti.
+2. Comprendere la differenza tra i componenti **Container** e i componenti **Content**.
 3. Crea un nuovo componente Angular mappato su un componente AEM esistente.
 
 ## Cosa verrà creato
 
-In questo capitolo verrà esaminato come `Text` La componente SPA è mappata all&#39;AEM `Text`componente. Una nuova `Image` Viene creata la componente SPA che può essere utilizzata nell’SPA e creata nell’AEM. Funzioni pronte all’uso di **Contenitore di layout** e **Editor modelli** Le policy verranno inoltre utilizzate per creare una visualizzazione con un aspetto leggermente più variabile.
+Questo capitolo esaminerà come il componente SPA `Text` fornito è mappato al componente `Text` dell&#39;AEM. Viene creato un nuovo componente `Image` per l&#39;SPA che può essere utilizzato nell&#39;SPA e creato nell&#39;AEM. Le funzionalità predefinite dei criteri **Contenitore di layout** e **Editor modelli** verranno utilizzate anche per creare una visualizzazione con un aspetto leggermente più variabile.
 
-![Creazione finale di esempio di capitolo](./assets/map-components/final-page.png)
+![Authoring finale del capitolo](./assets/map-components/final-page.png)
 
 ## Prerequisiti
 
-Esaminare gli strumenti e le istruzioni necessari per l&#39;impostazione di un [ambiente di sviluppo locale](overview.md#local-dev-environment).
+Esaminare gli strumenti e le istruzioni necessari per configurare un [ambiente di sviluppo locale](overview.md#local-dev-environment).
 
 ### Ottieni il codice
 
@@ -56,61 +56,61 @@ Esaminare gli strumenti e le istruzioni necessari per l&#39;impostazione di un [
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-   Se si utilizza [AEM 6.x](overview.md#compatibility) aggiungi `classic` profilo:
+   Se utilizzi [AEM 6.x](overview.md#compatibility), aggiungi il profilo `classic`:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/map-components-solution) oppure controllare il codice localmente passando alla filiale `Angular/map-components-solution`.
+Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/map-components-solution) o estrarre il codice localmente passando al ramo `Angular/map-components-solution`.
 
 ## Approccio di mappatura
 
 Il concetto di base è quello di mappare un componente SPA a un componente AEM. I componenti AEM, esegui lato server, esportano contenuti come parte dell’API del modello JSON. Il contenuto JSON viene utilizzato dall’SPA, che esegue il lato client nel browser. Viene creata una mappatura 1:1 tra i componenti SPA e un componente AEM.
 
-![Panoramica di alto livello sulla mappatura di un componente AEM in un componente Angular](./assets/map-components/high-level-approach.png)
+![Panoramica di alto livello sulla mappatura di un componente AEM a un componente Angular](./assets/map-components/high-level-approach.png)
 
-*Panoramica di alto livello sulla mappatura di un componente AEM in un componente Angular*
+*Panoramica di alto livello sulla mappatura di un componente AEM a un componente Angular*
 
 ## Inspect il componente Testo
 
-Il [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype) fornisce un `Text` componente mappato sull’AEM [Componente testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html). Questo è un esempio **contenuto** componente, in quanto esegue il rendering *contenuto* dall&#39;AEM.
+L&#39;[Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype) fornisce un componente `Text` mappato al [Componente testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) dell&#39;AEM. Questo è un esempio di un componente **content**, in quanto esegue il rendering di *content* dall&#39;AEM.
 
 Vediamo come funziona il componente.
 
 ### Inspect il modello JSON
 
-1. Prima di passare al codice SPA, è importante comprendere il modello JSON fornito dall’AEM. Accedi a [Libreria dei componenti core](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html) e visualizzare la pagina del componente Testo. La libreria dei componenti core fornisce esempi di tutti i componenti core dell’AEM.
-2. Seleziona la **JSON** per uno degli esempi:
+1. Prima di passare al codice SPA, è importante comprendere il modello JSON fornito dall’AEM. Passa alla [libreria dei componenti core](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html) e visualizza la pagina per il componente Testo. La libreria dei componenti core fornisce esempi di tutti i componenti core dell’AEM.
+2. Selezionare la scheda **JSON** per uno degli esempi:
 
    ![Modello JSON di testo](./assets/map-components/text-json.png)
 
-   Dovresti vedere tre proprietà: `text`, `richText`, e `:type`.
+   Dovrebbero essere visualizzate tre proprietà: `text`, `richText` e `:type`.
 
-   `:type` è una proprietà riservata che elenca `sling:resourceType` (o percorso) della componente AEM. Il valore di `:type` è ciò che viene utilizzato per mappare la componente AEM alla componente SPA.
+   `:type` è una proprietà riservata che elenca `sling:resourceType` (o percorso) del componente AEM. Il valore di `:type` è quello utilizzato per mappare il componente AEM al componente SPA.
 
    `text` e `richText` sono proprietà aggiuntive esposte al componente SPA.
 
 ### Inspect il componente Testo
 
-1. Apri un nuovo terminale e passa a `ui.frontend` all&#39;interno del progetto. Esegui `npm install` e poi `npm start` per avviare **server di sviluppo webpack**:
+1. Aprire un nuovo terminale e passare alla cartella `ui.frontend` all&#39;interno del progetto. Eseguire `npm install` e quindi `npm start` per avviare il **server di sviluppo Webpack**:
 
    ```shell
    $ cd ui.frontend
    $ npm run start:mock
    ```
 
-   Il `ui.frontend` è attualmente configurato per utilizzare il [modello JSON fittizio](./integrate-spa.md#mock-json).
+   Il modulo `ui.frontend` è attualmente configurato per utilizzare il [modello JSON fittizio](./integrate-spa.md#mock-json).
 
-2. Dovresti visualizzare una nuova finestra del browser aperta a [http://localhost:4200/content/wknd-spa-angular/us/en/home.html](http://localhost:4200/content/wknd-spa-angular/us/en/home.html)
+2. Dovresti visualizzare una nuova finestra del browser aperta per [http://localhost:4200/content/wknd-spa-angular/us/en/home.html](http://localhost:4200/content/wknd-spa-angular/us/en/home.html)
 
-   ![Server di sviluppo Webpack con contenuti fittizi](assets/map-components/initial-start.png)
+   ![Server di sviluppo Webpack con contenuto fittizio](assets/map-components/initial-start.png)
 
-3. Nell’IDE che preferisci, apri il progetto AEM per l’SPA WKND. Espandi `ui.frontend` e aprire il file **text.component.ts** in `ui.frontend/src/app/components/text/text.component.ts`:
+3. Nell’IDE che preferisci, apri il progetto AEM per l’SPA WKND. Espandere il modulo `ui.frontend` e aprire il file **text.component.ts** in `ui.frontend/src/app/components/text/text.component.ts`:
 
-   ![Codice sorgente del componente Angular Text.js](assets/map-components/vscode-ide-text-js.png)
+   ![Codice Source del componente Angular Text.js](assets/map-components/vscode-ide-text-js.png)
 
-4. La prima area da esaminare è `class TextComponent` a ~riga 35:
+4. La prima area da ispezionare è `class TextComponent` a ~riga 35:
 
    ```js
    export class TextComponent {
@@ -129,11 +129,11 @@ Vediamo come funziona il componente.
    }
    ```
 
-   [@Input](https://angular.io/api/core/Input) decorator viene utilizzato per dichiarare i campi i cui valori sono impostati tramite l’oggetto JSON mappato, rivisto in precedenza.
+   [@Input()](https://angular.io/api/core/Input) decorator viene utilizzato per dichiarare i campi i cui valori sono impostati tramite l&#39;oggetto JSON mappato, rivisto in precedenza.
 
-   `@HostBinding('innerHtml') get content()` è un metodo che espone il contenuto del testo creato dal valore di `this.text`. Nel caso in cui il contenuto sia un testo RTF (determinato dal `this.richText` flag) La sicurezza integrata dell’Angular viene ignorata. Angular [Strumento di pulizia](https://angular.io/api/platform-browser/DomSanitizer) viene utilizzato per &quot;scorrere&quot; il HTML non elaborato e impedire vulnerabilità cross-site scripting. Il metodo è associato al `innerHtml` proprietà utilizzando [@HostBinding](https://angular.io/api/core/HostBinding) decoratore.
+   `@HostBinding('innerHtml') get content()` è un metodo che espone il contenuto del testo creato dal valore di `this.text`. Nel caso in cui il contenuto sia in formato Rich Text (determinato dal flag `this.richText`), la sicurezza incorporata dell&#39;Angular viene ignorata. [DomSanitizer](https://angular.io/api/platform-browser/DomSanitizer) di Angular viene utilizzato per &quot;scorrere&quot; le HTML non elaborate e impedire vulnerabilità cross-site scripting. Il metodo è associato alla proprietà `innerHtml` utilizzando il decoratore [@HostBinding](https://angular.io/api/core/HostBinding).
 
-5. Ispezionare quindi `TextEditConfig` a ~riga 24:
+5. Ispeziona `TextEditConfig` alla riga 24:
 
    ```js
    const TextEditConfig = {
@@ -143,21 +143,21 @@ Vediamo come funziona il componente.
    };
    ```
 
-   Il codice di cui sopra è responsabile di determinare quando eseguire il rendering del segnaposto nell’ambiente di authoring dell’AEM. Se il `isEmpty` restituisce il metodo **true** quindi viene eseguito il rendering del segnaposto.
+   Il codice di cui sopra è responsabile di determinare quando eseguire il rendering del segnaposto nell’ambiente di authoring dell’AEM. Se il metodo `isEmpty` restituisce **true**, viene eseguito il rendering del segnaposto.
 
-6. Infine, dai un&#39;occhiata al `MapTo` chiama alla riga 53:
+6. Infine, dare un&#39;occhiata alla chiamata `MapTo` a ~riga 53:
 
    ```js
    MapTo('wknd-spa-angular/components/text')(TextComponent, TextEditConfig );
    ```
 
-   **MapTo** viene fornito dall’SDK JS dell’Editor SPA dell’AEM (`@adobe/cq-angular-editable-components`). Il percorso `wknd-spa-angular/components/text` rappresenta il `sling:resourceType` della componente AEM. Questo percorso viene abbinato al `:type` esposti dal modello JSON osservato in precedenza. **MapTo** analizza la risposta del modello JSON e trasmette i valori corretti al `@Input()` variabili della componente SPA.
+   **MapTo** è fornito dall&#39;SDK JS dell&#39;editor SPA dell&#39;AEM (`@adobe/cq-angular-editable-components`). Il percorso `wknd-spa-angular/components/text` rappresenta `sling:resourceType` del componente AEM. Questo percorso viene confrontato con `:type` esposto dal modello JSON osservato in precedenza. **MapTo** analizza la risposta del modello JSON e trasmette i valori corretti alle variabili `@Input()` del componente SPA.
 
-   Potete trovare l&#39;AEM `Text` definizione del componente in `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components/text`.
+   La definizione del componente `Text` dell&#39;AEM è disponibile in `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components/text`.
 
-7. Sperimenta modificando il **en.model.json** file in `ui.frontend/src/mocks/json/en.model.json`.
+7. Prova a modificare il file **en.model.json** in `ui.frontend/src/mocks/json/en.model.json`.
 
-   Alla ~riga 62 aggiorna il primo `Text` valore da utilizzare **`H1`** e **`u`** tag:
+   Alla ~riga 62 aggiornare il primo valore `Text` per utilizzare un tag **`H1`** e **`u`**:
 
    ```json
        "text": {
@@ -167,17 +167,17 @@ Vediamo come funziona il componente.
        }
    ```
 
-   Torna al browser per visualizzare gli effetti prodotti da **server di sviluppo webpack**:
+   Torna al browser per visualizzare gli effetti gestiti dal server di sviluppo **webpack**:
 
    ![Modello di testo aggiornato](assets/map-components/updated-text-model.png)
 
-   Prova a attivare/disattivare `richText` proprietà tra **true** / **false** per visualizzare la logica di rendering in azione.
+   Prova a impostare la proprietà `richText` tra **true** / **false** per visualizzare la logica di rendering in azione.
 
-8. Inspect **text.component.html** a `ui.frontend/src/app/components/text/text.component.html`.
+8. Inspect **text.component.html** in `ui.frontend/src/app/components/text/text.component.html`.
 
-   Questo file è vuoto perché l’intero contenuto del componente è impostato da `innerHTML` proprietà.
+   Questo file è vuoto perché l&#39;intero contenuto del componente è impostato dalla proprietà `innerHTML`.
 
-9. Inspect **app.module.ts** a `ui.frontend/src/app/app.module.ts`.
+9. Inspect **app.module.ts** in `ui.frontend/src/app/app.module.ts`.
 
    ```js
    @NgModule({
@@ -194,29 +194,29 @@ Vediamo come funziona il componente.
    export class AppModule {}
    ```
 
-   Il **TextComponent** non è incluso esplicitamente, ma piuttosto in modo dinamico tramite **AEMResponsiveGridComponent** fornite dall’SDK JS dell’editor SPA dell’AEM. Pertanto deve essere elencato nella sezione **app.module.ts**&#39; [entryComponents](https://angular.io/guide/entry-components) array.
+   **TextComponent** non è incluso in modo esplicito, ma in modo dinamico tramite **AEMResponsiveGridComponent** fornito dall&#39;SDK JS dell&#39;editor SPA dell&#39;AEM. Pertanto deve essere elencato nell&#39;array **app.module.ts**&#39; [entryComponents](https://angular.io/guide/entry-components).
 
 ## Creare il componente Immagine
 
-Quindi, crea un&#39; `Image` Componente Angular mappato sull’AEM [Componente immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=it). Il `Image` è un altro esempio di **contenuto** componente.
+Creare quindi un componente Angular `Image` mappato al [componente immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=it) dell&#39;AEM. Il componente `Image` è un altro esempio di un componente **content**.
 
 ### Inspect il JSON
 
 Prima di passare al codice SPA, controlla il modello JSON fornito dall’AEM.
 
-1. Accedi a [Esempi di immagini nella libreria dei componenti core](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html).
+1. Passa a [Esempi di immagini nella libreria dei componenti core](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html).
 
-   ![JSON del componente core immagine](./assets/map-components/image-json.png)
+   ![Componente core immagine JSON](./assets/map-components/image-json.png)
 
-   Proprietà di `src`, `alt`, e `title` sono utilizzati per popolare l’SPA `Image` componente.
+   Le proprietà di `src`, `alt` e `title` vengono utilizzate per popolare il componente SPA `Image`.
 
    >[!NOTE]
    >
-   > Sono esposte altre proprietà immagine (`lazyEnabled`, `widths`) che consentono a uno sviluppatore di creare un componente adattivo e a caricamento lento. Il componente integrato in questa esercitazione è semplice e **non** utilizza queste proprietà avanzate.
+   > Sono esposte altre proprietà Image (`lazyEnabled`, `widths`) che consentono a uno sviluppatore di creare un componente adattivo e a caricamento lento. Il componente creato in questa esercitazione è semplice e **non** utilizza queste proprietà avanzate.
 
-2. Torna all’IDE e apri la `en.model.json` a `ui.frontend/src/mocks/json/en.model.json`. Poiché si tratta di un componente nuovo per il nostro progetto, dobbiamo &quot;simulare&quot; il JSON dell’immagine.
+2. Torna all&#39;IDE e apri `en.model.json` alle `ui.frontend/src/mocks/json/en.model.json`. Poiché si tratta di un componente nuovo per il nostro progetto, dobbiamo &quot;simulare&quot; il JSON dell’immagine.
 
-   Alla ~riga 70 aggiungi una voce JSON per il `image` modello (non dimenticare la virgola finale) `,` dopo il secondo `text_386303036`) e aggiorna il `:itemsOrder` array.
+   Alla ~riga 70 aggiungere una voce JSON per il modello `image` (non dimenticare la virgola finale `,` dopo il secondo `text_386303036`) e aggiornare l&#39;array `:itemsOrder`.
 
    ```json
    ...
@@ -241,24 +241,24 @@ Prima di passare al codice SPA, controlla il modello JSON fornito dall’AEM.
            ],
    ```
 
-   Il progetto include un&#39;immagine di esempio in `/mock-content/adobestock-140634652.jpeg` utilizzato con **server di sviluppo webpack**.
+   Il progetto include un&#39;immagine di esempio in `/mock-content/adobestock-140634652.jpeg` utilizzata con il server di sviluppo **Webpack**.
 
-   È possibile visualizzare [en.model.json qui](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/map-components-solution/ui.frontend/src/mocks/json/en.model.json).
+   Puoi visualizzare il [en.model.json completo qui](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/map-components-solution/ui.frontend/src/mocks/json/en.model.json).
 
 3. Aggiungete una foto d&#39;archivio che verrà visualizzata dal componente.
 
-   Crea una nuova cartella denominata **immagini** sotto `ui.frontend/src/mocks`. Scarica [adobestock-140634652.jpeg](assets/map-components/adobestock-140634652.jpeg) e inseriscilo nella nuova **immagini** cartella. Se lo desideri, puoi usare la tua immagine personale.
+   Crea una nuova cartella denominata **images** sotto `ui.frontend/src/mocks`. Scarica [adobestock-140634652.jpeg](assets/map-components/adobestock-140634652.jpeg) e inseriscilo nella cartella **images** appena creata. Se lo desideri, puoi usare la tua immagine personale.
 
 ### Implementare il componente Immagine
 
-1. Interrompi **server di sviluppo webpack** se avviato.
-2. Creare un nuovo componente Immagine eseguendo l’interfaccia della riga di comando Angular `ng generate component` comando da `ui.frontend` cartella:
+1. Arrestare il server di sviluppo **webpack** se avviato.
+2. Creare un nuovo componente Immagine eseguendo il comando Angular CLI `ng generate component` dalla cartella `ui.frontend`:
 
    ```shell
    $ ng generate component components/image
    ```
 
-3. Nell’IDE, apri **image.component.ts** a `ui.frontend/src/app/components/image/image.component.ts` e aggiornare come segue:
+3. Nell&#39;IDE, apri **image.component.ts** in `ui.frontend/src/app/components/image/image.component.ts` e aggiorna come segue:
 
    ```js
    import {Component, Input, OnInit} from '@angular/core';
@@ -293,15 +293,15 @@ Prima di passare al codice SPA, controlla il modello JSON fornito dall’AEM.
    MapTo('wknd-spa-angular/components/image')(ImageComponent, ImageEditConfig);
    ```
 
-   `ImageEditConfig` è la configurazione per determinare se eseguire il rendering del segnaposto di authoring in AEM, in base al `src` La proprietà è compilata.
+   `ImageEditConfig` è la configurazione per determinare se eseguire il rendering del segnaposto autore in AEM, in base al popolamento della proprietà `src`.
 
-   `@Input()` di `src`, `alt`, e `title` sono le proprietà mappate dall’API JSON.
+   `@Input()` di `src`, `alt` e `title` sono le proprietà mappate dall&#39;API JSON.
 
-   `hasImage()` è un metodo che determinerà se l’immagine deve essere sottoposta a rendering.
+   `hasImage()` è un metodo che determinerà se l&#39;immagine deve essere sottoposta a rendering.
 
-   `MapTo` mappa il componente SPA sul componente AEM che si trova all’indirizzo `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components/image`.
+   `MapTo` associa il componente SPA al componente AEM situato in `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components/image`.
 
-4. Apri **image.component.html** e aggiornarla come segue:
+4. Apri **image.component.html** e aggiornalo come segue:
 
    ```html
    <ng-container *ngIf="hasImage">
@@ -309,9 +309,9 @@ Prima di passare al codice SPA, controlla il modello JSON fornito dall’AEM.
    </ng-container>
    ```
 
-   Verrà eseguito il rendering del `<img>` elemento if `hasImage` restituisce **true**.
+   L&#39;elemento `<img>` verrà eseguito se `hasImage` restituisce **true**.
 
-5. Apri **image.component.scss** e aggiornarla come segue:
+5. Apri **image.component.scss** e aggiornalo come segue:
 
    ```scss
    :host-context {
@@ -327,17 +327,17 @@ Prima di passare al codice SPA, controlla il modello JSON fornito dall’AEM.
 
    >[!NOTE]
    >
-   > Il `:host-context` la regola è **critico** affinché il segnaposto dell’editor SPA dell’AEM funzioni correttamente. Questa regola è necessaria almeno per tutti i componenti SPA destinati a essere creati nell’editor di pagine AEM.
+   > La regola `:host-context` è **critica** perché il segnaposto dell&#39;editor SPA AEM funzioni correttamente. Questa regola è necessaria almeno per tutti i componenti SPA destinati a essere creati nell’editor di pagine AEM.
 
-6. Apri `app.module.ts` e aggiungi `ImageComponent` al `entryComponents` array:
+6. Apri `app.module.ts` e aggiungi `ImageComponent` all&#39;array `entryComponents`:
 
    ```js
    entryComponents: [TextComponent, PageComponent, ImageComponent],
    ```
 
-   Mi piace `TextComponent`, il `ImageComponent` viene caricato in modo dinamico e deve essere incluso nel `entryComponents` array.
+   Come `TextComponent`, `ImageComponent` è caricato in modo dinamico e deve essere incluso nell&#39;array `entryComponents`.
 
-7. Avvia il **server di sviluppo webpack** per visualizzare `ImageComponent` rendering.
+7. Avvia il server di sviluppo **webpack** per visualizzare il rendering `ImageComponent`.
 
    ```shell
    $ npm run start:mock
@@ -349,76 +349,76 @@ Prima di passare al codice SPA, controlla il modello JSON fornito dall’AEM.
 
    >[!NOTE]
    >
-   > **Sfida bonus**: implementa un nuovo metodo per visualizzare il valore di `title` come didascalia sotto l&#39;immagine.
+   > **Richiesta bonus**: implementa un nuovo metodo per visualizzare il valore di `title` come didascalia sotto l&#39;immagine.
 
 ## Aggiornamento delle politiche in AEM
 
-Il `ImageComponent` è visibile solo nel **server di sviluppo webpack**. Quindi, distribuisci l’SPA aggiornato all’AEM e aggiorna i criteri dei modelli.
+Il componente `ImageComponent` è visibile solo nel server di sviluppo **webpack**. Quindi, distribuisci l’SPA aggiornato all’AEM e aggiorna i criteri dei modelli.
 
-1. Interrompi **server di sviluppo webpack** e dal **radice** del progetto, implementa le modifiche all’AEM utilizzando le tue competenze Maven:
+1. Arresta il **server di sviluppo Webpack** e dalla **radice** del progetto, distribuisci le modifiche all&#39;AEM utilizzando le abilità Maven:
 
    ```shell
    $ cd aem-guides-wknd-spa
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-2. Dalla schermata iniziale dell’AEM, vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Modelli]** > **[WKND ANGULAR SPA](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-angular)**.
+2. Dalla schermata iniziale dell&#39;AEM, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Modelli]** > **[Angular SPA WKND](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-angular)**.
 
-   Seleziona e modifica il **Pagina SPA**:
+   Seleziona e modifica la **pagina SPA**:
 
    ![Modifica modello pagina SPA](assets/map-components/edit-spa-page-template.png)
 
-3. Seleziona la **Contenitore di layout** e fai clic su **policy** per modificare il criterio:
+3. Seleziona il **Contenitore di layout** e fai clic sulla relativa icona **criterio** per modificare il criterio:
 
-   ![Criterio contenitore layout](./assets/map-components/layout-container-policy.png)
+   ![Criteri contenitore layout](./assets/map-components/layout-container-policy.png)
 
-4. Sotto **Componenti consentiti** > **Angular WKND SPA - Contenuto** > controllare la **Immagine** componente:
+4. In **Componenti consentiti** > **Angular SPA WKND - Contenuto** > controlla il componente **Immagine**:
 
    ![Componente immagine selezionato](assets/map-components/check-image-component.png)
 
-   Sotto **Componenti predefiniti** > **Aggiungi mappatura** e scegli la **Immagine - Angular WKND SPA - Contenuto** componente:
+   In **Componenti predefiniti** > **Aggiungi mappatura** e scegli l&#39;**Immagine - Angular WKND SPA - Contenuto** componente:
 
    ![Imposta componenti predefiniti](assets/map-components/default-components.png)
 
-   Immetti un **tipo mime** di `image/*`.
+   Immetti un tipo **mime** di `image/*`.
 
-   Clic **Fine** per salvare gli aggiornamenti dei criteri.
+   Fai clic su **Fine** per salvare gli aggiornamenti dei criteri.
 
-5. In **Contenitore di layout** fai clic su **policy** icona per **Testo** componente:
+5. Nel **Contenitore di layout** fare clic sull&#39;icona **criterio** per il componente **Testo**:
 
-   ![Icona del componente Testo](./assets/map-components/edit-text-policy.png)
+   ![Icona criterio componente testo](./assets/map-components/edit-text-policy.png)
 
-   Crea un nuovo criterio denominato **Testo WKND SPA**. Sotto **Plug-in** > **Formattazione** > seleziona tutte le caselle per abilitare opzioni di formattazione aggiuntive:
+   Crea un nuovo criterio denominato **Testo SPA WKND**. In **Plug-in** > **Formattazione** > seleziona tutte le caselle per abilitare opzioni di formattazione aggiuntive:
 
    ![Abilita formattazione editor Rich Text](assets/map-components/enable-formatting-rte.png)
 
-   Sotto **Plug-in** > **Stili paragrafo** > seleziona la casella per **Abilita stili di paragrafo**:
+   In **Plug-in** > **Stili di paragrafo** > seleziona la casella per **Abilitare gli stili di paragrafo**:
 
-   ![Abilita stili di paragrafo](./assets/map-components/text-policy-enable-paragraphstyles.png)
+   ![Abilita stili paragrafo](./assets/map-components/text-policy-enable-paragraphstyles.png)
 
-   Clic **Fine** per salvare l&#39;aggiornamento del criterio.
+   Fai clic su **Fine** per salvare l&#39;aggiornamento dei criteri.
 
-6. Accedi a **Homepage** [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html).
+6. Passa alla **home page** [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html).
 
-   Dovresti anche poter modificare il `Text` e aggiungi altri stili di paragrafo in **a schermo intero** modalità.
+   Dovresti anche poter modificare il componente `Text` e aggiungere altri stili di paragrafo in modalità **schermo intero**.
 
    ![Modifica Rich Text A Schermo Intero](assets/map-components/full-screen-rte.png)
 
-7. Dovresti anche poter trascinare e rilasciare un’immagine dalla **Asset Finder**:
+7. Dovresti anche essere in grado di trascinare e rilasciare un&#39;immagine da **Asset Finder**:
 
    ![Trascina e rilascia l&#39;immagine](./assets/map-components/drag-drop-image.gif)
 
-8. Aggiungi le tue immagini tramite [AEM Assets](http://localhost:4502/assets.html/content/dam) o installare la base di codice completata per lo standard [Sito di riferimento WKND](https://github.com/adobe/aem-guides-wknd/releases/latest). Il [Sito di riferimento WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) include molte immagini che possono essere riutilizzate sull’SPA WKND. Il pacchetto può essere installato utilizzando [Gestione pacchetti AEM](http://localhost:4502/crx/packmgr/index.jsp).
+8. Aggiungi le tue immagini tramite [AEM Assets](http://localhost:4502/assets.html/content/dam) o installa la base di codice completata per il [sito di riferimento WKND standard](https://github.com/adobe/aem-guides-wknd/releases/latest). Il [sito di riferimento WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) include molte immagini che possono essere riutilizzate nell&#39;SPA WKND. È possibile installare il pacchetto utilizzando [Gestione pacchetti AEM](http://localhost:4502/crx/packmgr/index.jsp).
 
    ![Gestione pacchetti installa wknd.all](./assets/map-components/package-manager-wknd-all.png)
 
 ## Inspect il contenitore di layout
 
-Supporto per **Contenitore di layout** viene fornito automaticamente dall’SDK dell’editor SPA dell’AEM. Il **Contenitore di layout**, come indicato dal nome, è un **contenitore** componente. I componenti contenitore sono componenti che accettano strutture JSON che rappresentano *altro* e crearne un&#39;istanza dinamica.
+Il supporto per **Contenitore di layout** viene fornito automaticamente dall&#39;SDK dell&#39;editor SPA dell&#39;AEM. Il **contenitore di layout**, come indicato dal nome, è un componente **contenitore**. I componenti contenitore sono componenti che accettano strutture JSON che rappresentano *altri* componenti e ne creano un&#39;istanza dinamica.
 
 Esaminiamo ulteriormente il Contenitore di layout.
 
-1. Nell’IDE, apri **responsive-grid.component.ts** a `ui.frontend/src/app/components/responsive-grid`:
+1. Nell&#39;IDE, apri **responsive-grid.component.ts** alle `ui.frontend/src/app/components/responsive-grid`:
 
    ```js
    import { AEMResponsiveGridComponent,MapTo } from '@adobe/cq-angular-editable-components';
@@ -426,63 +426,63 @@ Esaminiamo ulteriormente il Contenitore di layout.
    MapTo('wcm/foundation/components/responsivegrid')(AEMResponsiveGridComponent);
    ```
 
-   Il `AEMResponsiveGridComponent` è implementato come parte dell’SDK dell’SPA Editor dell’AEM ed è incluso nel progetto tramite `import-components`.
+   `AEMResponsiveGridComponent` è implementato come parte dell&#39;SDK dell&#39;editor SPA dell&#39;AEM ed è incluso nel progetto tramite `import-components`.
 
 2. In un browser passa a [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json)
 
    ![API modello JSON - Griglia reattiva](./assets/map-components/responsive-grid-modeljson.png)
 
-   Il **Contenitore di layout** il componente ha `sling:resourceType` di `wcm/foundation/components/responsivegrid` ed è riconosciuto dall&#39;editor SPA utilizzando `:type` proprietà, proprio come `Text` e `Image` componenti.
+   Il componente **Contenitore di layout** ha `sling:resourceType` di `wcm/foundation/components/responsivegrid` ed è riconosciuto dall&#39;editor SPA tramite la proprietà `:type`, proprio come i componenti `Text` e `Image`.
 
-   Le stesse funzionalità di ridimensionamento di un componente mediante [Modalità Layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) sono disponibili con l’editor SPA.
+   Con l&#39;editor SPA sono disponibili le stesse funzionalità di ridimensionamento di un componente mediante la [modalità layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode).
 
-3. Torna a [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). Aggiungi ulteriori **Immagine** e provare a ridimensionarli utilizzando **Layout** opzione:
+3. Torna a [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). Aggiungi altri componenti **Immagine** e prova a ridimensionarli utilizzando l&#39;opzione **Layout**:
 
-   ![Ridimensionare l’immagine utilizzando la modalità Layout](./assets/map-components/responsive-grid-layout-change.gif)
+   ![Ridimensiona l&#39;immagine utilizzando la modalità Layout](./assets/map-components/responsive-grid-layout-change.gif)
 
-4. Riapri il modello JSON [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json) e osservano `columnClassNames` come parte del JSON:
+4. Riapri il modello JSON [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json) e osserva `columnClassNames` come parte del JSON:
 
    ![Nomi classi colonna](./assets/map-components/responsive-grid-classnames.png)
 
-   Il nome della classe `aem-GridColumn--default--4` indica che il componente deve avere una larghezza di 4 colonne in base a una griglia a 12 colonne. Maggiori dettagli su [la griglia reattiva si trova qui](https://adobe-marketing-cloud.github.io/aem-responsivegrid/).
+   Il nome di classe `aem-GridColumn--default--4` indica che il componente deve avere una larghezza di 4 colonne in base a una griglia a 12 colonne. Ulteriori dettagli sulla [griglia reattiva sono disponibili qui](https://adobe-marketing-cloud.github.io/aem-responsivegrid/).
 
-5. Torna all’IDE e nella `ui.apps` è presente una libreria lato client definita in `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/clientlibs/clientlib-grid`. Apri il file `less/grid.less`.
+5. Tornare all&#39;IDE e nel modulo `ui.apps` è presente una libreria lato client definita in `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/clientlibs/clientlib-grid`. Aprire il file `less/grid.less`.
 
-   Questo file determina i punti di interruzione (`default`, `tablet`, e `phone`) utilizzato da **Contenitore di layout**. Questo file è stato progettato per essere personalizzato in base alle specifiche del progetto. Attualmente i punti di interruzione sono impostati su `1200px` e `650px`.
+   Questo file determina i punti di interruzione (`default`, `tablet` e `phone`) utilizzati dal **Contenitore di layout**. Questo file è stato progettato per essere personalizzato in base alle specifiche del progetto. Attualmente i punti di interruzione sono impostati su `1200px` e `650px`.
 
-6. Dovresti essere in grado di utilizzare le funzionalità reattive e i criteri Rich Text aggiornati di `Text` per creare una visualizzazione simile alla seguente:
+6. Dovresti essere in grado di utilizzare le funzionalità reattive e i criteri Rich Text aggiornati del componente `Text` per creare una visualizzazione simile alla seguente:
 
-   ![Creazione finale di esempio di capitolo](assets/map-components/final-page.png)
+   ![Authoring finale del capitolo](assets/map-components/final-page.png)
 
 ## Congratulazioni. {#congratulations}
 
-Congratulazioni, hai imparato a mappare i componenti SPA ai componenti AEM e hai implementato una nuova `Image` componente. Hai anche la possibilità di esplorare le funzionalità reattive del **Contenitore di layout**.
+Congratulazioni, hai imparato a mappare i componenti SPA ai componenti AEM e hai implementato un nuovo componente `Image`. Hai anche la possibilità di esplorare le funzionalità reattive del **Contenitore di layout**.
 
-Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/map-components-solution) oppure controllare il codice localmente passando alla filiale `Angular/map-components-solution`.
+Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/map-components-solution) o estrarre il codice localmente passando al ramo `Angular/map-components-solution`.
 
 ### Passaggi successivi {#next-steps}
 
-[Navigazione e indirizzamento](navigation-routing.md) - Scopri come è possibile supportare più visualizzazioni nell’SPA mediante la mappatura su pagine AEM con l’SDK dell’Editor SPA. La navigazione dinamica viene implementata utilizzando il router Angular e aggiunta a un componente Intestazione esistente.
+[Navigazione e indirizzamento](navigation-routing.md) - Scopri come è possibile supportare più visualizzazioni nell&#39;SPA effettuando il mapping alle pagine AEM con l&#39;SDK dell&#39;editor SPA. La navigazione dinamica viene implementata utilizzando il router Angular e aggiunta a un componente Intestazione esistente.
 
 ## Bonus: mantenere le configurazioni per il controllo del codice sorgente {#bonus}
 
 In molti casi, soprattutto all’inizio di un progetto AEM, è utile mantenere le configurazioni, come i modelli e le relative policy di contenuto, per il controllo del codice sorgente. In questo modo tutti gli sviluppatori lavorano sullo stesso set di contenuti e configurazioni e possono garantire ulteriore coerenza tra gli ambienti. Quando un progetto raggiunge un certo livello di maturità, la pratica di gestione dei modelli può essere affidata a uno speciale gruppo di utenti esperti.
 
-I passaggi successivi verranno eseguiti utilizzando l&#39;IDE di Visual Studio Code e [Sincronizzazione AEM VSCode](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) ma potrebbe utilizzare qualsiasi strumento e IDE configurato per **tirare** o **importa** contenuti provenienti da un’istanza locale dell’AEM.
+I passaggi successivi verranno eseguiti utilizzando l&#39;IDE del codice di Visual Studio e [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync), ma potrebbero essere eseguiti utilizzando qualsiasi strumento e qualsiasi IDE configurato per **richiamare** o **importare** contenuto da un&#39;istanza locale di AEM.
 
-1. Nell&#39;IDE di Visual Studio Code verificare di avere **Sincronizzazione AEM VSCode** installato tramite l’estensione Marketplace:
+1. Nell&#39;IDE di Visual Studio Code verificare che sia installato **VSCode AEM Sync** tramite l&#39;estensione Marketplace:
 
    ![Sincronizzazione AEM VSCode](./assets/map-components/vscode-aem-sync.png)
 
-2. Espandi **ui.content** in Esplora progetti e passare a `/conf/wknd-spa-angular/settings/wcm/templates`.
+2. Espandi il modulo **ui.content** in Esplora progetti e passa a `/conf/wknd-spa-angular/settings/wcm/templates`.
 
-3. **Clic con il pulsante destro** il `templates` cartella e seleziona **Importa da server AEM**:
+3. **Fare clic con il pulsante destro del mouse** sulla cartella `templates` e selezionare **Importa da server AEM**:
 
    ![Modello di importazione VSCode](assets/map-components/import-aem-servervscode.png)
 
-4. Ripeti i passaggi per importare il contenuto, ma seleziona la **criteri** cartella situata in `/conf/wknd-spa-angular/settings/wcm/policies`.
+4. Ripeti i passaggi per importare il contenuto, ma seleziona la cartella **criteri** che si trova in `/conf/wknd-spa-angular/settings/wcm/policies`.
 
-5. Inspect `filter.xml` file che si trova in `ui.content/src/main/content/META-INF/vault/filter.xml`.
+5. Inspect il file `filter.xml` che si trova in `ui.content/src/main/content/META-INF/vault/filter.xml`.
 
    ```xml
    <!--ui.content filter.xml-->
@@ -495,6 +495,6 @@ I passaggi successivi verranno eseguiti utilizzando l&#39;IDE di Visual Studio C
     </workspaceFilter>
    ```
 
-   Il `filter.xml` Il file è responsabile dell’identificazione dei percorsi dei nodi installati con il pacchetto. Osserva `mode="merge"` in ciascuno dei filtri che indica che il contenuto esistente non verrà modificato, viene aggiunto solo il nuovo contenuto. Poiché gli autori dei contenuti potrebbero aggiornare questi percorsi, è importante che una distribuzione del codice **non** sovrascrivi il contenuto. Consulta la [Documentazione di FileVault](https://jackrabbit.apache.org/filevault/filter.html) per ulteriori dettagli sull’utilizzo degli elementi filtro.
+   Il file `filter.xml` è responsabile dell&#39;identificazione dei percorsi dei nodi installati con il pacchetto. Osserva `mode="merge"` su ciascuno dei filtri che indica che il contenuto esistente non verrà modificato, ma che verrà aggiunto solo il nuovo contenuto. Poiché gli autori di contenuto potrebbero aggiornare questi percorsi, è importante che una distribuzione del codice **non** sovrascriva il contenuto. Per ulteriori informazioni sull&#39;utilizzo degli elementi del filtro, vedere la [documentazione di FileVault](https://jackrabbit.apache.org/filevault/filter.html).
 
-   Confronta `ui.content/src/main/content/META-INF/vault/filter.xml` e `ui.apps/src/main/content/META-INF/vault/filter.xml` per comprendere i diversi nodi gestiti da ciascun modulo.
+   Confrontare `ui.content/src/main/content/META-INF/vault/filter.xml` e `ui.apps/src/main/content/META-INF/vault/filter.xml` per comprendere i diversi nodi gestiti da ciascun modulo.

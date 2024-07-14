@@ -25,7 +25,8 @@ Database relazionali: MySQL, Microsoft SQL Server, IBM DB2 e Oracle RDBMS
 1. Profilo utente AEM
 1. Servizi Web RESTful
 1. Servizi web basati su SOAP
-1. Servizi OData Questo articolo evidenzia l’integrazione delle informazioni sul profilo utente AEM con Adaptive Forms.
+1. Servizi OData
+Questo articolo evidenzierà l’integrazione delle informazioni sul profilo utente dell’AEM con Adaptive Forms.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17432?quality=12&learn=on)
 

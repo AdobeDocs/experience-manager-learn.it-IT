@@ -27,7 +27,7 @@ Il codice utilizzato per eseguire la funzionalità di completamento automatico �
 
 ## Suggerimento per l&#39;indirizzo
 
-![country-suggestions](assets/auto-complete2.png)
+![suggerimenti paese](assets/auto-complete2.png)
 
 
 
@@ -66,7 +66,7 @@ $(".streetAddress input").autocomplete({
 
 ## Suggerimenti con le emoji
 
-![country-suggestions](assets/auto-complete3.png)
+![suggerimenti paese](assets/auto-complete3.png)
 
 Il seguente codice è stato utilizzato per visualizzare le emoji nell’elenco dei suggerimenti
 
@@ -79,7 +79,7 @@ minLength: 1, source: values, delay: 0
 );
 ```
 
-Il [il modulo di esempio può essere scaricato](assets/auto-complete-form.zip) da qui. Assicurati di fornire un nome utente/chiave API personalizzato utilizzando l’editor di codice per il codice per effettuare chiamate REST riuscite.
+Il modulo di esempio [ può essere scaricato](assets/auto-complete-form.zip) da qui. Assicurati di fornire un nome utente/chiave API personalizzato utilizzando l’editor di codice per il codice per effettuare chiamate REST riuscite.
 
 >[!NOTE]
 >

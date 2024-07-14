@@ -23,15 +23,15 @@ ht-degree: 0%
 
 # App Next.js di base
 
-Questo [Next.js](https://nextjs.org/) app illustra come eseguire query sui contenuti che utilizzano le API GraphQL dell’AEM utilizzando query persistenti. Questa applicazione esegue il rendering di un’avventura filtrabile in WKND Adventures e, dopo aver selezionato un’avventura, ne visualizza i dettagli completi.
+Questa app [Next.js](https://nextjs.org/) illustra come eseguire query sui contenuti che utilizzano le API GraphQL dell&#39;AEM tramite query persistenti. Questa applicazione esegue il rendering di un’avventura filtrabile in WKND Adventures e, dopo aver selezionato un’avventura, ne visualizza i dettagli completi.
 
 Questo codice:
 
-+ Si connette a un servizio di pubblicazione AEM e non richiede l’autenticazione
-+ Utilizza le query persistenti di WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-slug`
++ Si connette a un servizio Publish AEM e non richiede l&#39;autenticazione
++ Utilizza le query persistenti WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-slug`
 
-Per una recensione più approfondita della modalità di creazione di questa app Next.js, consulta [esempio di documentazione dell’app Next.js](../example-apps/next-js.md).
+Per un&#39;analisi più approfondita della modalità di creazione dell&#39;app Next.js, consulta la [documentazione dell&#39;app Next.js esempio](../example-apps/next-js.md).
 
 >[!IMPORTANT]
 >
-> Codesandbox.io non supporta la modifica dell’applicazione Next.js nell’IDE incorporato. Per modificare questo esempio di codice: [apri l’app Next.js direttamente su codesandbox.io](https://codesandbox.io/s/wknd-next-js-app-u8x5f8).
+> Codesandbox.io non supporta la modifica dell’applicazione Next.js nell’IDE incorporato. Per modificare questo esempio di codice, [apri l&#39;app Next.js direttamente su codesandbox.io](https://codesandbox.io/s/wknd-next-js-app-u8x5f8).

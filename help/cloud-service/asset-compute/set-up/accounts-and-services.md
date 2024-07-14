@@ -1,6 +1,6 @@
 ---
 title: Impostare account e servizi per l'estensibilità di Asset compute
-description: Lo sviluppo di lavoratori Asset compute richiede l’accesso ad account e servizi tra cui AEM as a Cloud Service, App Builder e l’archiviazione cloud fornita da Microsoft o Amazon.
+description: Lo sviluppo di processi di lavoro Asset Compute richiede l’accesso ad account e servizi tra cui AEM as a Cloud Service, App Builder e l’archiviazione cloud fornita da Microsoft o Amazon.
 feature: Asset Compute Microservices
 version: Cloud Service
 doc-type: Tutorial
@@ -39,53 +39,53 @@ Tutti i servizi Adobe devono essere accessibili tramite la stessa organizzazione
 
 ## AEM as a Cloud Service{#aem-as-a-cloud-service}
 
-Per configurare i profili di elaborazione AEM Assets in modo da richiamare il processo di lavoro Asset compute personalizzato, è necessario accedere a un ambiente AEM as a Cloud Service.
+È necessario accedere a un ambiente AEM as a Cloud Service per configurare i profili di elaborazione di AEM Assets in modo da richiamare il processo di lavoro Asset Compute personalizzato.
 
 È consigliabile poter utilizzare un programma sandbox o un ambiente di sviluppo non sandbox.
 
-Tieni presente che un SDK per AEM locale non è sufficiente per completare questa esercitazione, poiché l’SDK per AEM locale non è in grado di comunicare con i microservizi Asset compute, è necessario un ambiente AEM as a Cloud Service.
+Tieni presente che un SDK per AEM locale non è sufficiente per completare questa esercitazione, poiché l’SDK per AEM locale non è in grado di comunicare con i microservizi Asset Compute, è necessario un vero ambiente AEM as a Cloud Service.
 
 ## App Builder{#app-builder}
 
-Il [App Builder](https://developer.adobe.com/app-builder/) Il framework viene utilizzato per creare e distribuire azioni personalizzate in Adobe I/O Runtime, la piattaforma senza server di Adobe. I progetti di Asset compute dell’AEM sono progetti App Builder appositamente creati che si integrano con AEM Assets tramite i Profili di elaborazione e forniscono la possibilità di accedere ed elaborare i dati binari delle risorse.
+Il framework [App Builder](https://developer.adobe.com/app-builder/) viene utilizzato per la creazione e la distribuzione di azioni personalizzate in Adobe I/O Runtime, la piattaforma senza server di Adobe. I progetti di Asset compute AEM sono progetti App Builder appositamente creati che si integrano con AEM Assets tramite i Profili di elaborazione e forniscono la possibilità di accedere ed elaborare i dati binari delle risorse.
 
 Per accedere ad App Builder, iscriviti per l’anteprima.
 
-1. [Registrati alla versione di prova di App Builder](https://developer.adobe.com/app-builder/trial/).
+1. [Iscriviti alla versione di prova di App Builder](https://developer.adobe.com/app-builder/trial/).
 1. Attendi circa 2-10 giorni prima di continuare l’esercitazione e ricevi una notifica via e-mail che informa del provisioning.
-   + Se non sei sicuro di aver effettuato il provisioning, continua con i passaggi successivi e se non riesci a creare una __App Builder__ progetto in [Console Adobe Developer](https://developer.adobe.com/console/) non è ancora stato eseguito il provisioning.
+   + Se non sei sicuro di aver eseguito il provisioning, continua con i passaggi successivi e se non riesci a creare un progetto __App Builder__ in [Adobe Developer Console](https://developer.adobe.com/console/) non hai ancora eseguito il provisioning.
 
 ## Archiviazione cloud
 
-L’archiviazione cloud è necessaria per lo sviluppo locale di progetti Asset compute.
+L’archiviazione cloud è necessaria per lo sviluppo locale di progetti Asset Compute.
 
-Quando i processi di lavoro Asset compute vengono distribuiti in Adobe I/O Runtime per l’uso diretto da AEM as a Cloud Service, questa archiviazione cloud non è strettamente necessaria in quanto AEM fornisce l’archiviazione cloud da cui la risorsa viene letta e in cui viene scritto il rendering.
+Quando i processi di lavoro Asset Compute vengono distribuiti in Adobe I/O Runtime per l’utilizzo diretto da parte di AEM as a Cloud Service, questa archiviazione cloud non è strettamente necessaria in quanto AEM fornisce l’archiviazione cloud da cui la risorsa viene letta e in cui viene scritto il rendering.
 
 ### Archiviazione BLOB di Microsoft Azure{#azure-blob-storage}
 
-Se non disponi già dell’accesso all’archiviazione BLOB di Microsoft Azure, registrati per [account gratuito per 12 mesi](https://azure.microsoft.com/en-us/free/).
+Se non disponi già dell&#39;accesso all&#39;archiviazione BLOB di Microsoft Azure, registrati per un account di [12 mesi gratuito](https://azure.microsoft.com/en-us/free/).
 
-Tuttavia, questa esercitazione utilizzerà Azure Blob Storage [Amazon S3](#amazon-s3) può essere utilizzato anche solo come variante minore dell’esercitazione.
+Questo tutorial utilizzerà Azure Blob Storage, tuttavia [Amazon S3](#amazon-s3) può essere utilizzato come solo variante secondaria dell&#39;esercitazione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40377?quality=12&learn=on)
 
 _Click-through del provisioning di Azure Blob Storage (nessun audio)_
 
-1. Accedi al tuo [Account di Microsoft Azure](https://azure.microsoft.com/en-us/account/).
-1. Accedi a __Account di archiviazione__ Sezione Servizi di Azure
+1. Accedi al tuo [account Microsoft Azure](https://azure.microsoft.com/en-us/account/).
+1. Passare alla sezione __Account di archiviazione__ Servizi di Azure
 1. Tocca __+ Aggiungi__ per creare un nuovo account di archiviazione BLOB
-1. Crea un nuovo __Gruppo di risorse__ secondo necessità, ad esempio: `aem-as-a-cloud-service`
-1. Fornisci un __Nome account di archiviazione__, ad esempio: `aemguideswkndassetcomput`
-   + Il __Nome account di archiviazione__  utilizzato per [configurazione dell’archiviazione cloud](../develop/environment-variables.md) nello strumento di sviluppo Asset compute locale
-   + Il __Chiavi di accesso__ associati all&#39;account di archiviazione sono necessari anche quando [configurazione dell’archiviazione cloud](../develop/environment-variables.md).
-1. Lascia tutto il resto come predefinito, quindi tocca il __Revisione e creazione__ pulsante
-   + Facoltativamente, seleziona la __posizione__ vicino a te.
-1. Verifica la correttezza della richiesta di provisioning e tocca __Crea__ pulsante se soddisfatto
+1. Crea un nuovo __gruppo di risorse__ in base alle esigenze, ad esempio: `aem-as-a-cloud-service`
+1. Fornisci un __nome account di archiviazione__, ad esempio: `aemguideswkndassetcomput`
+   + Il __nome account di archiviazione__ utilizzato per [la configurazione dell&#39;archiviazione cloud](../develop/environment-variables.md) nello strumento di sviluppo Asset compute locale
+   + Le __chiavi di accesso__ associate all&#39;account di archiviazione sono necessarie anche durante la [configurazione dell&#39;archiviazione cloud](../develop/environment-variables.md).
+1. Lascia tutto il resto come predefinito e tocca il pulsante __Rivedi + crea__
+   + Se necessario, seleziona la __posizione__ vicina.
+1. Verifica la correttezza della richiesta di provisioning e tocca il pulsante __Crea__ se soddisfatto
 
 ### Amazon S3{#amazon-s3}
 
-Utilizzo di [Archiviazione BLOB di Microsoft Azure](#azure-blob-storage) Tuttavia, si consiglia di completare questa esercitazione [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&amp;trk=ft_card) può essere utilizzato anche.
+Per completare questa esercitazione si consiglia di utilizzare [Archiviazione BLOB di Microsoft Azure](#azure-blob-storage), tuttavia è possibile utilizzare anche [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&amp;trk=ft_card).
 
-Se utilizzi l’archiviazione Amazon S3, specifica le credenziali dell’archiviazione cloud Amazon S3 quando [configurazione delle variabili di ambiente del progetto](../develop/environment-variables.md#amazon-s3).
+Se utilizzi l&#39;archiviazione Amazon S3, specifica le credenziali dell&#39;archiviazione cloud Amazon S3 durante [la configurazione delle variabili di ambiente del progetto](../develop/environment-variables.md#amazon-s3).
 
-Per eseguire il provisioning dell’archiviazione cloud appositamente per questa esercitazione, consigliamo di utilizzare [Archiviazione BLOB di Azure](#azure-blob-storage).
+Se devi eseguire il provisioning dell&#39;archiviazione cloud appositamente per questa esercitazione, ti consigliamo di utilizzare [Archiviazione BLOB di Azure](#azure-blob-storage).

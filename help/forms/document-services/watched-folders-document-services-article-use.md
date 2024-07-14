@@ -28,15 +28,15 @@ Questo articolo tratta il caso di utilizzo dell’unione di dati con un modello 
 
 Il servizio di output è un servizio OSGi che fa parte di AEM Document Services. Il servizio di output supporta vari formati di output e funzioni di progettazione dell’output di AEM Forms Designer. Il servizio di output può convertire modelli XFA e dati XML per generare documenti di stampa in vari formati.
 
-Per ulteriori informazioni sul servizio di output, [fai clic qui](https://helpx.adobe.com/aem-forms/6/output-service.html).
+Per ulteriori informazioni sul servizio di output, [fare clic qui](https://helpx.adobe.com/aem-forms/6/output-service.html).
 Per impostare la cartella controllata sul sistema, attenersi alla seguente procedura:
-* [Scarica ed estrai il contenuto del file zip](assets/outputservicewatchedfolderkt.zip).Questo file zip contiene un pacchetto per la creazione di cartelle controllate e file di esempio per testare il servizio di output utilizzando il meccanismo delle cartelle controllate
+* [Scarica ed estrai il contenuto del file zip](assets/outputservicewatchedfolderkt.zip). Questo file zip contiene un pacchetto per la creazione di cartelle controllate e file di esempio per testare il servizio di output utilizzando il meccanismo delle cartelle controllate
    * Sistema Windows
 
       * Importare outputservicewatchedfolder.zip in AEM utilizzando Gestione pacchetti
       * In questo modo viene creata nell&#39;unità C una cartella controllata denominata outputservicewatchedfolder.
    * Sistema non Windows
-      * [Apri l’impostazione di configurazione della cartella controllata](http://localhost:4502/crx/de/index.jsp#/etc/fd/watchfolder/config/outputservice)
+      * [Aprire l&#39;impostazione di configurazione della cartella controllata](http://localhost:4502/crx/de/index.jsp#/etc/fd/watchfolder/config/outputservice)
       * Impostare la proprietà del percorso della cartella del nodo di assistenza in uscita in modo che punti a una posizione appropriata
       * Salva le modifiche
       * Il percorso indicato sopra è la cartella controllata.

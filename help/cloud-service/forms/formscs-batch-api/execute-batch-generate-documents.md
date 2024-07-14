@@ -26,7 +26,7 @@ Per eseguire il batch, effettua una richiesta POST alla seguente API
 ```
 
 Questa API prevede un oggetto json vuoto come parametro nel corpo della richiesta.
-Questa API restituisce un URL univoco nell’intestazione di risposta identificata da **posizione** chiave.
+Questa API restituisce un URL univoco nell&#39;intestazione di risposta identificata dalla chiave **location**.
 Una richiesta di GET a questo URL univoco ti dirà lo stato dell’esecuzione batch
 
 Il video seguente illustra l’attivazione della configurazione batch

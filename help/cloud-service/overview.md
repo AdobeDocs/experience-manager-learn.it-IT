@@ -1,6 +1,6 @@
 ---
 title: Video e tutorial su Adobe Experience Manager as a Cloud Service
-description: Una raccolta di tutorial per Adobe Experience Manager (AEM) as a Cloud Service
+description: Una raccolta di tutorial per gli as a Cloud Service di Adobe Experience Manager (AEM)
 sub-product: Experience Manager as a Cloud Service
 jira: KT-3289
 last-substantial-update: 2023-09-26T00:00:00Z
@@ -13,11 +13,11 @@ ht-degree: 5%
 
 ---
 
-# Video ed esercitazioni as a Cloud Service sull’AEM {#overview}
+# Video e tutorial su AEM as a Cloud Service {#overview}
 
 {{edge-delivery-services}}
 
-Adobe Experience Manager (AEM) è ora disponibile in versione as a Cloud Service. AEM as a Cloud Service introduce la nuova generazione della linea di prodotti di Experience Manager, sulla base degli investimenti e delle innovazioni precedenti, preservando ed estendendo tutti i casi d’uso e le funzionalità.
+Adobe Experience Manager (AEM) è ora disponibile in as a Cloud Service. AEM as a Cloud Service introduce la nuova generazione della linea di prodotti di Experience Manager, sulla base degli investimenti e delle innovazioni precedenti, preservando ed estendendo tutti i casi d’uso e le funzionalità.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31085?quality=12&learn=on)
 
@@ -39,11 +39,11 @@ Adobe Experience Manager (AEM) è ora disponibile in versione as a Cloud Service
       </a>
       <div>
          <a href="./accessing/overview.md">
-         <strong>Tutorial sulla configurazione dell’accesso all’AEM</strong>
+         <strong>Tutorial sulla configurazione dell'accesso a AEM</strong>
          </a>
       </div>
       <p>
-         <em>Configura gli utenti IMS in Adobe Admin Console per accedere all’AEM.</em>
+         <em>Configurare gli utenti IMS in Adobe Admin Console per accedere all'AEM.</em>
       <p>
    </td>   
    <td>
@@ -52,11 +52,11 @@ Adobe Experience Manager (AEM) è ora disponibile in versione as a Cloud Service
       </a>
       <div>
          <a href="./local-development-environment/overview.md">
-         <strong>Tutorial di configurazione dell’ambiente di sviluppo locale</strong>
+         <strong>Esercitazione di configurazione dell'ambiente di sviluppo locale</strong>
          </a>
       </div>
       <p>
-         <em>Prepara il tuo computer di sviluppo locale per lo sviluppo as a Cloud Service AEM!</em>
+         <em>Prepara il tuo computer di sviluppo locale per lo sviluppo AEM as a Cloud Service!</em>
       <p>
    </td>   
    <td>
@@ -65,11 +65,11 @@ Adobe Experience Manager (AEM) è ora disponibile in versione as a Cloud Service
       </a>
       <div>
          <a href="./debugging/aem-sdk-local-quickstart/overview.md">
-         <strong>Debug dell’SDK per AEM</strong>
+         <strong>Debug dell'SDK per AEM</strong>
          </a>
       </div>
       <p>
-         <em>Esplora gli strumenti utilizzati per eseguire il debug dell’applicazione nell’avvio rapido locale dell’SDK dell’AEM as a Cloud Service.</em>
+         <em>Esplora gli strumenti utilizzati per eseguire il debug dell'applicazione nell'avvio rapido locale dell'SDK di AEM as a Cloud Service.</em>
       <p>
    </td>
 </table>

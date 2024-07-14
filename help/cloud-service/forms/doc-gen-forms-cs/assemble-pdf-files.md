@@ -20,7 +20,7 @@ ht-degree: 0%
 # Manipolare i file PDF utilizzando l’endpoint DDX di richiamo
 
 
-Il passaggio successivo consiste nell’effettuare una chiamata HTTP POST all’endpoint con i parametri necessari. Il modello e i file di dati vengono forniti come file di risorse. Le proprietà del PDF generato sono specificate tramite il parametro dell’opzione nella richiesta. La proprietà embedFonts viene utilizzata per incorporare font personalizzati nel PDF generato. Segui [questa documentazione](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html) per distribuire font personalizzati nell’istanza cloud di Forms. Le proprietà sono specificate nel file di risorse options.json. Poiché, l’endpoint dispone dell’autenticazione basata su token, il token di accesso viene trasmesso nell’intestazione della richiesta.
+Il passaggio successivo consiste nell’effettuare una chiamata HTTP POST all’endpoint con i parametri necessari. Il modello e i file di dati vengono forniti come file di risorse. Le proprietà del PDF generato sono specificate tramite il parametro dell’opzione nella richiesta. La proprietà embedFonts viene utilizzata per incorporare font personalizzati nel PDF generato. Segui [questa documentazione](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html) per distribuire font personalizzati nella tua istanza cloud di Forms. Le proprietà sono specificate nel file di risorse options.json. Poiché, l’endpoint dispone dell’autenticazione basata su token, il token di accesso viene trasmesso nell’intestazione della richiesta.
 
 Il seguente codice è stato utilizzato per generare pdf unendo i dati con il modello
 

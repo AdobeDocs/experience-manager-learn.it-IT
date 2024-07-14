@@ -28,55 +28,55 @@ Analisi dettagliata delle funzioni chiave per i clienti che intendono effettuare
 
 Adobe Experience Manager 6.5 continua a migliorare la stabilità, le prestazioni e la supportabilità del sistema tramite:
 
-+ **Java 11** (mantenendo il supporto Java 8).
++ Supporto di **Java 11** (mantenendo il supporto di Java 8).
 
 ### Creazione e gestione di siti Web
 
 AEM Sites presenta una serie di funzioni progettate per accelerare la creazione e l’espansione di siti web:
 
-+ **Editor SPA** Il supporto di consente di creare completamente l’SPA (applicazioni a pagina singola) nell’AEM, offrendo un’esperienza di authoring ricca e intuitiva.
-+_ **SDK JavaScript**, un kit di avvio per progetti SPA e strumenti di supporto per la creazione di, consentono agli sviluppatori front-end di sviluppare applicazioni a pagina singola compatibili con l’Editor SPA indipendentemente dall’AEM.
-+ **Componenti core** aggiunge una moltitudine di nuovi componenti, **Libreria dei componenti** nonché una serie di miglioramenti ai Componenti core esistenti.
-+ Ulteriori informazioni **Traduzioni** i miglioramenti semplificano la traduzione di AEM Sites.
++ Il supporto per **SPA Editor** consente di creare completamente SPA (applicazioni a pagina singola) nell&#39;AEM, supportando un&#39;esperienza di authoring avanzata e intuitiva per gli addetti al marketing.
++_ **JavaScript SDK**, un kit di avvio per progetti SPA e strumenti di supporto per la creazione, consente agli sviluppatori front-end di sviluppare applicazioni a pagina singola compatibili con l&#39;editor SPA indipendentemente dall&#39;AEM.
++ **Componenti core** aggiunge una moltitudine di nuovi componenti, una **Libreria componenti** e una serie di miglioramenti ai Componenti core esistenti.
++ Ulteriori miglioramenti alle **traduzioni** consentono di semplificare la traduzione di AEM Sites.
 
 ### Esperienze fluide
 
 L’AEM continua a utilizzare le esperienze fluide con strumenti nuovi e migliorati che facilitano l’utilizzo di contenuti al di fuori dell’AEM.
 
-+ **Frammenti di contenuto** supporta il confronto delle versioni, le differenze di versione e le annotazioni.
-+ **API HTTP di risorse AEM** supporta l&#39;esposizione **Frammenti di contenuto** direttamente in DAM come **JSON**.
-  **Frammenti esperienza** supporto **Ricerca full-text** e **Annullamento della validità della cache del dispatcher AEM** per riferimento **Pagine**.
++ **I frammenti di contenuto** supportano il confronto delle versioni/le differenze e le annotazioni.
++ L&#39;API HTTP Assets **di** AEM supporta l&#39;esposizione di **frammenti di contenuto** direttamente in DAM come **JSON**.
+  **I frammenti di esperienza** supportano **la ricerca full-text** e **l&#39;annullamento della validità della cache di Dispatcher dell&#39;AEM** per fare riferimento a **pagine**.
 
 ### Gestione risorse
 
 AEM Assets continua a sfruttare la ricca serie di funzionalità per la gestione delle risorse per migliorare l’utilizzo, la gestione e la comprensione di DAM. AEM 6.5 continua a migliorare l’integrazione tra Adobe Creative Cloud e i flussi di lavoro creativi.
 
-+ **Adobe collegamento risorsa** collega i contenuti creativi direttamente ad AEM Assets da Adobe Creative Cloud tools.
-+ **Adobe Stock** L’integrazione di consente di accedere direttamente alle immagini di Adobe Stock dall’esperienza AEM Assets, creando un’esperienza di individuazione dei contenuti fluida.
-+ **App desktop AEM** viene rilasciata la versione 2.0 di e viene rivisto, migliorando al contempo le prestazioni e la stabilità.
-+ **Risorse collegate** supporta istanze AEM Sites discrete per accedere e utilizzare senza problemi le risorse di un’istanza AEM Assets diversa.
-+ Supporto video aggiornato in **Dynamic Medie**, tra cui **Video a 360°** e **Miniature video personalizzate**.
++ **Adobe Asset Link** collega i contenuti creativi direttamente ad AEM Assets dagli strumenti di Adobe Creative Cloud.
++ L&#39;integrazione di **Adobe Stock** consente l&#39;accesso diretto alle immagini Adobe Stock direttamente dall&#39;esperienza AEM Assets, creando un&#39;esperienza di individuazione dei contenuti senza soluzione di continuità.
++ **L&#39;app desktop AEM** rilascia la versione 2.0 e si ripensa migliorando le prestazioni e la stabilità.
++ **Assets** connesso supporta istanze AEM Sites discrete per accedere e utilizzare in modo semplice le risorse di un&#39;istanza AEM Assets diversa.
++ Supporto video aggiornato in **Dynamic Medie**, inclusi **360 video** e **anteprime video personalizzate**.
 
 ### Informazioni sui contenuti
 
 L’AEM continua a costruire la sua integrazione con le tecnologie intelligenti, sfruttando l’apprendimento automatico e l’intelligenza artificiale per migliorare tutte le esperienze.
 
-+ **Adobe collegamento risorsa** aggiunge **Ricerca somiglianza visiva**, consentendo la facile individuazione e utilizzo di immagini simili all&#39;interno di **Strumenti Adobe Creative Cloud**.
++ **Adobe Asset Link** aggiunge **Visual Similarity Search**, che consente di individuare e utilizzare immagini simili in modo semplice in **strumenti di Adobe Creative Cloud**.
 
 ### Integrazioni
 
 L’AEM aumenta la sua capacità di integrazione con altri servizi Adobe:
 
-+ **Frammenti esperienza** approfondisce la loro integrazione con **Adobe Target** sostenendo **Esporta come JSON** ad Adobe Target e la possibilità di **eliminare le offerte basate su frammenti di esperienza** da **Adobe Target**.
++ **Frammenti di esperienza** approfondisce l&#39;integrazione con **Adobe Target** supportando **Esporta come JSON** in Adobe Target e la possibilità di **eliminare le offerte basate su frammenti di esperienza** da **Adobe Target**.
 
-### AMS Cloud Manager
+### AMS CLOUD MANAGER
 
 [Cloud Manager](https://adobe.ly/2HODmsv), esclusivo per i clienti Adobe Managed Services (AMS), offre le seguenti funzionalità:
 
-+ Cloud Manager supporta l’estensione del supporto per la distribuzione dell’AEM da AEM Sites a **AEM Assets**, tra cui **test delle prestazioni automatizzati per l’elaborazione delle risorse**.
-+ **Ridimensionamento automatico** del livello di pubblicazione AEM a soglie predefinite, garantire un’esperienza ottimale per l’utente finale.
-+ **Pipeline non di produzione** consente ai team di sviluppo di sfruttare Cloud Manager per verificare continuamente la qualità del codice e distribuirla in ambienti più bassi (Sviluppo e Controllo qualità).
-+ **API della pipeline CI/CD** consente ai clienti di interagire in modo programmatico con Cloud Manager, approfondendo le possibilità di integrazione con l’infrastruttura di sviluppo on-premise.
++ Cloud Manager supporta l&#39;estensione del supporto per la distribuzione AEM da AEM Sites a **AEM Assets**, incluso **test delle prestazioni automatizzati per l&#39;elaborazione delle risorse**.
++ **Ridimensionamento automatico** del livello Publish AEM a soglie predefinite, per garantire un&#39;esperienza utente ottimale.
++ **Pipeline non di produzione** consentono ai team di sviluppo di sfruttare Cloud Manager per verificare continuamente la qualità del codice e distribuirle in ambienti di livello inferiore (sviluppo e controllo qualità).
++ Le **API della pipeline CI/CD** consentono ai clienti di interagire in modo programmatico con Cloud Manager, approfondendo le possibilità di integrazione con l&#39;infrastruttura di sviluppo on-premise.
 
 ## Funzioni di base
 
@@ -84,9 +84,9 @@ Di seguito è riportata una matrice delle principali funzionalità di base offer
 
 + [Note sulla versione di AEM Foundation](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html)
 
-***✔<sup>+</sup> miglioramenti significativi alla funzione in questa versione.***
+***✔<sup>+</sup> miglioramenti significativi alla funzionalità in questa versione.***
 
-***✔<sup>SP</sup> indica che la funzione è disponibile tramite un Service Pack o un Feature Pack.***
+***✔<sup>SP</sup> indica che la funzionalità è disponibile tramite un Service Pack o un Feature Pack.***
 
 <table>
     <thead>
@@ -116,7 +116,7 @@ Di seguito è riportata una matrice delle principali funzionalità di base offer
         </tr>
         <tr>
             <td>
-                <strong><a href="https://jackrabbit.apache.org/oak/docs/index.html" target="_blank">Archivio dei contenuti Oak</a>:</strong> Fornisce prestazioni e scalabilità di gran lunga superiori rispetto al predecessore Jackrabbit 2.</td>
+                <strong><a href="https://jackrabbit.apache.org/oak/docs/index.html" target="_blank">Archivio dei contenuti Oak</a>:</strong> Fornisce prestazioni e scalabilità notevolmente superiori rispetto al predecessore Jackrabbit 2.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -126,7 +126,7 @@ Di seguito è riportata una matrice delle principali funzionalità di base offer
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/indexing-via-the-oak-run-jar.html">Supporto per l’indice oak-run.jar</a>:</strong> Sono state migliorate la reindicizzazione, la raccolta di statistiche e il controllo di coerenza degli indici Oak.</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/indexing-via-the-oak-run-jar.html">Supporto indice oak-run.jar</a>:</strong> Miglioramento della reindicizzazione, della raccolta delle statistiche e della verifica di coerenza degli indici Oak.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -147,7 +147,7 @@ Di seguito è riportata una matrice delle principali funzionalità di base offer
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/revision-cleanup.html" target="_blank">Pulizia revisioni online</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/revision-cleanup.html" target="_blank">Pulizia revisioni in linea</a>:</strong>
                 Manutenzione dell'archivio senza tempi di inattività del server.</td>
             <td> </td>
             <td> </td>
@@ -159,8 +159,8 @@ Di seguito è riportata una matrice delle principali funzionalità di base offer
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/storage-elements-in-aem-6.html" target="_blank">Archiviazione archivio TarMK o MongoMK</a>:</strong>
-                <br> Opzioni per l'utilizzo di uno storage basato su file semplice e performante di TarMK (versione di nuova generazione di TarPM)
-                <br> o scalare orizzontalmente con un archivio supportato da MongoDB con MongoMK.</td>
+                <br> Opzioni per l'utilizzo di un archivio basato su file semplice e performante di TarMK (versione di nuova generazione di TarPM)
+                <br> o scalabilità orizzontale con un archivio supportato da MongoDB con MongoMK.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -192,7 +192,7 @@ Di seguito è riportata una matrice delle principali funzionalità di base offer
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong>Parità delle funzioni dell’interfaccia touch:</strong>
+            <td><strong>Parità funzionalità interfaccia utente touch:</strong>
                 Miglioramenti continui all’interfaccia utente di authoring per una maggiore velocità, una maggiore produttività e parità di funzioni con l’interfaccia classica.</td>
             <td> </td>
             <td> </td>
@@ -225,7 +225,7 @@ Di seguito è riportata una matrice delle principali funzionalità di base offer
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/upgrade.html" target="_blank">Miglioramenti degli aggiornamenti</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/upgrade.html" target="_blank">Miglioramenti all'aggiornamento</a>:</strong>
             I miglioramenti degli aggiornamenti consentono aggiornamenti in sede più semplici e rapidi dell’AEM.</td>
             <td> </td>
             <td> </td>
@@ -236,7 +236,7 @@ Di seguito è riportata una matrice delle principali funzionalità di base offer
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/it/experience-manager/htl/using/overview.html" target="_blank">Lingua del modello HTL</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/it/experience-manager/htl/using/overview.html" target="_blank">Linguaggio del modello HTL</a>:</strong>
             Motore di modelli moderno che separa la presentazione dalla logica. Riduce notevolmente i tempi di sviluppo dei componenti. Sono state aggiunte funzioni incrementali a ogni versione.</td>
             <td> </td>
             <td>✔</td>
@@ -260,7 +260,7 @@ Di seguito è riportata una matrice delle principali funzionalità di base offer
         </tr>
         <tr>
             <td><strong><a href="https://adobe.ly/2HODmsv" target="_blank">Cloud Manager</a>: </strong>
-                Esclusivo per i clienti Adobe Managed Services (AMS), Cloud Manager accelera lo sviluppo e la distribuzione tramite una pipeline CI/CD allo stato dell’arte.</td>
+                Esclusivamente per i clienti Adobe Managed Services (AMS), Cloud Manager accelera lo sviluppo e la distribuzione tramite una pipeline CI/CD allo stato dell’arte.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -278,9 +278,9 @@ Di seguito è riportata una matrice delle principali funzioni di sicurezza offer
 
 + [Note sulla versione di sicurezza](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html#Security)
 
-***✔ indica che sono stati apportati miglioramenti significativi alla funzione in questa versione.***
+***✔ indica che in questa versione sono stati apportati miglioramenti significativi alla funzionalità.***
 
-***✔<sup>+</sup> indica che la funzione è disponibile tramite un Service Pack o un Feature Pack.***
+***✔<sup>+</sup> indica che la funzionalità è disponibile tramite un Service Pack o un Feature Pack.***
 
 <table>
     <thead>
@@ -298,7 +298,7 @@ Di seguito è riportata una matrice delle principali funzioni di sicurezza offer
     <tbody>
         <tr>
         <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-service-users.html" target="_blank">Utenti del servizio</a></strong>
-            <br> Le autorizzazioni suddivise in compartimenti evitano l’uso superfluo dei privilegi di amministratore.</td>
+            <br> Le autorizzazioni per la suddivisione in compartimenti evitano l'uso non necessario dei privilegi di amministratore.</td>
         <td></td>
         <td>✔</td>
         <td>✔</td>
@@ -309,7 +309,7 @@ Di seguito è riportata una matrice delle principali funzioni di sicurezza offer
     </tr>
     <tr>
         <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank">Gestione archivio chiavi</a></strong>
-            <br> Archivio attendibilità globale, certificati e chiavi gestiti all'interno dell'archivio.</td>
+            <br> Archivio attendibilità globale, certificati e chiavi tutti gestiti all'interno dell'archivio.</td>
         <td></td>
         <td>✔</td>
         <td>✔</td>
@@ -319,8 +319,8 @@ Di seguito è riportata una matrice delle principali funzioni di sicurezza offer
         <td>✔</td>
     </tr>
     <tr>
-        <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/csrf-protection.html" target="_blank"><strong>CSRF</strong> <strong>protezione</strong></a>
-            <br> Protezione preconfigurata contro la falsificazione di richieste cross-site.</td>
+        <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/csrf-protection.html" target="_blank"><strong>CSRF</strong> <strong>protezione</strong></a>
+            <br> protezione preconfigurata contro la falsificazione di richieste tra siti diversi.</td>
         <td></td>
         <td></td>
         <td>✔</td>
@@ -330,8 +330,8 @@ Di seguito è riportata una matrice delle principali funzioni di sicurezza offer
         <td>✔</td>
     </tr>
     <tr>
-        <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong>CORS</strong> <strong>supporto</strong></a>
-            <br> Supporto di Cross-Origin Resource Sharing per una maggiore flessibilità delle applicazioni.</td>
+        <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong>CORS</strong> <strong>supporto</strong></a>
+            <br> Supporto per la condivisione delle risorse tra le origini per una maggiore flessibilità dell'applicazione.</td>
         <td></td>
         <td></td>
         <td></td>
@@ -341,8 +341,8 @@ Di seguito è riportata una matrice delle principali funzioni di sicurezza offer
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://experienceleague.adobe.com/docs/" target="_blank">Migliore supporto per l’autenticazione SAML</a><br>
- </strong>Sono stati risolti i problemi di reindirizzamento SAML migliorato, informazioni di gruppo ottimizzate e crittografia delle chiavi.
+        <td><strong><a href="https://experienceleague.adobe.com/docs/" target="_blank">Supporto dell'autenticazione SAML migliorato</a><br>
+ </strong>Sono stati risolti problemi di reindirizzamento SAML migliorato, informazioni sul gruppo ottimizzato e crittografia delle chiavi.
             <br>
         </td>
         <td></td>
@@ -354,7 +354,7 @@ Di seguito è riportata una matrice delle principali funzioni di sicurezza offer
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html" target="_blank">Configurazione LDAP as a OSGi</a><br>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html" target="_blank">LDAP come configurazione OSGi</a><br>
  </strong>Gestione e aggiornamenti semplificati dell'autenticazione LDAP.</td>
         <td></td>
         <td>✔</td>
@@ -377,7 +377,7 @@ Di seguito è riportata una matrice delle principali funzioni di sicurezza offer
     </tr>
     <tr>
         <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/user-group-ac-admin.html" target="_blank">Miglioramenti CUG</a><br>
- </strong>L’implementazione di Gruppo utenti chiuso è stata riscritta per risolvere i problemi di prestazioni e scalabilità.</td>
+ </strong>L'implementazione del gruppo utenti chiuso è stata riscritta per risolvere i problemi di prestazioni e scalabilità.</td>
         <td></td>
         <td></td>
         <td></td>
@@ -387,7 +387,7 @@ Di seguito è riportata una matrice delle principali funzioni di sicurezza offer
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/platform-repository/using/ssl-wizard-technical-video-use.html" target="_blank">SSL Wizard</a></strong>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/platform-repository/using/ssl-wizard-technical-video-use.html" target="_blank">Procedura guidata SSL</a></strong>
             <br> Interfaccia utente per semplificare la configurazione e la gestione di SSL.</td>
         <td> </td>
         <td> </td>
@@ -398,8 +398,8 @@ Di seguito è riportata una matrice delle principali funzioni di sicurezza offer
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/encapsulated-token.html" target="_blank">Supporto di token incapsulati</a></strong>
-            <br> Non è più necessario che le sessioni "permanenti" supportino l’autenticazione orizzontale tra le istanze di pubblicazione.</td>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/encapsulated-token.html" target="_blank">Supporto token incapsulato</a></strong>
+            <br> Non è più necessario che le sessioni "permanenti" supportino l'autenticazione orizzontale tra le istanze di pubblicazione.</td>
         <td> </td>
         <td> </td>
         <td>✔</td>
@@ -409,8 +409,8 @@ Di seguito è riportata una matrice delle principali funzioni di sicurezza offer
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Supporto per l’autenticazione Adobe IMS</a><br>
- </strong>Esclusivo di Adobe Managed Services (AMS), gestisce centralmente l’accesso alle istanze di AEM Author tramite Adobe IMS (Identity Management System).</td>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Supporto per l'autenticazione Adobe IMS</a><br>
+ </strong>Esclusivo per Adobe Managed Services (AMS), consente di gestire centralmente l'accesso alle istanze di AEM Author tramite Adobe IMS (Identity Management System).</td>
         <td> </td>
         <td> </td>
         <td> </td>
@@ -428,9 +428,9 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
 
 + [Note sulla versione di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/release-notes/sites.html)
 
-***✔<sup>+</sup> miglioramenti significativi alla funzione in questa versione.***
+***✔<sup>+</sup> miglioramenti significativi alla funzionalità in questa versione.***
 
-***✔<sup>SP</sup> indica che la funzione è disponibile tramite un Service Pack o un Feature Pack.***
+***✔<sup>SP</sup> indica che la funzionalità è disponibile tramite un Service Pack o un Feature Pack.***
 
 <table>
     <thead>
@@ -447,7 +447,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
     </thead>
     <tbody>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/page-editor-feature-video-use.html" target="_blank">Authoring delle pagine ottimizzate per il tocco</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/page-editor-feature-video-use.html" target="_blank">Authoring pagine ottimizzate per il tocco</a>:</strong>
             Consente agli editor di utilizzare tablet e computer con schermi touch screen.</td>
             <td></td>
             <td>✔</td>
@@ -524,7 +524,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">Traduzione dei contenuti</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">Traduzione contenuto</a>:</strong>
             Il framework Plug and Play si integra con i principali servizi di traduzione di terze parti del settore.</td>
             <td></td>
             <td></td>
@@ -546,7 +546,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/launches.html" target="_blank">Lanci</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/launches.html" target="_blank">Avvii</a>:</strong>
             Sviluppare contenuti per una versione futura senza interrompere l’authoring quotidiano.</td>
             <td>✔</td>
             <td>✔</td>
@@ -579,7 +579,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong>Content Services:</strong>
+            <td><strong>Servizi contenuto:</strong>
             Esporta contenuti dall’AEM come JSON per il consumo tra dispositivi e applicazioni.</td>
             <td> </td>
             <td> </td>
@@ -590,7 +590,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong>Integrazione di Adobe Analytics e informazioni sui contenuti:</strong>
+            <td><strong>Integrazione di Adobe Analytics e informazioni sul contenuto:</strong>
                 Facile integrazione di Adobe Analytics e DTM. Visualizza le informazioni sulle prestazioni nell’ambiente di authoring.</td>
             <td> </td>
             <td>✔</td>
@@ -601,7 +601,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/content-targeting-touch.html" target="_blank">Integrazione di Adobe Target</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/content-targeting-touch.html" target="_blank">Integrazione Adobe Target</a>:</strong>
             Procedura guidata dettagliata per creare esperienze mirate e librerie di offerte riutilizzabili.</td>
             <td> </td>
             <td> </td>
@@ -612,7 +612,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaign.html" target="_blank">Integrazione di Adobe Campaign</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaign.html" target="_blank">Integrazione Adobe Campaign</a>:</strong>
             Semplice integrazione con la soluzione della campagna e-mail di nuova generazione.</td>
             <td> </td>
             <td>✔</td>
@@ -623,7 +623,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=it" target="_blank">Tag nell’integrazione di Adobe Experience Platform</a>:</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=it" target="_blank">Tag nell'integrazione di Adobe Experience Platform</a>:</strong>
             Integrazione con il servizio cloud di gestione tag di nuova generazione di Adobe.</td>
             <td> </td>
             <td> </td>
@@ -634,7 +634,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong>Schermi:</strong>
+            <td><strong>Screens:</strong>
             Gestisci le esperienze per i chioschi e le soluzioni di digital signage.</td>
             <td> </td>
             <td> </td>
@@ -672,18 +672,18 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
 
 ## Funzioni di Assets
 
-Di seguito è riportata una matrice delle funzioni principali di Assets offerte dall’AEM. Alcune di queste funzioni sono state introdotte nelle versioni precedenti con miglioramenti incrementali aggiunti in ciascuna versione.
+Di seguito è riportata una matrice delle principali funzioni di Assets offerte dall’AEM. Alcune di queste funzioni sono state introdotte nelle versioni precedenti con miglioramenti incrementali aggiunti in ciascuna versione.
 
 + [Note sulla versione di AEM Assets](https://helpx.adobe.com/experience-manager/6-5/release-notes/assets.html)
 
-***✔ indica che sono stati apportati miglioramenti significativi alla funzione in questa versione.***
+***✔ indica che in questa versione sono stati apportati miglioramenti significativi alla funzionalità.***
 
-***✔<sup>+</sup> indica che la funzione è disponibile tramite un Service Pack o un Feature Pack.***
+***✔<sup>+</sup> indica che la funzionalità è disponibile tramite un Service Pack o un Feature Pack.***
 
 <table>
     <thead>
         <tr>
-            <td>Funzionalità risorse</td>
+            <td>Funzione Assets</td>
             <td>5.6.x</td>
             <td>6,0</td>
             <td>6,1</td>
@@ -695,7 +695,7 @@ Di seguito è riportata una matrice delle funzioni principali di Assets offerte 
     </thead>
     <tbody>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html" target="_blank">Interfaccia touch</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html" target="_blank">Interfaccia utente ottimizzata per il tocco</a>:</strong>
             Gestisci le risorse su un computer desktop o su dispositivi touch.</td>
             <td> </td>
             <td>✔</td>
@@ -717,7 +717,7 @@ Di seguito è riportata una matrice delle funzioni principali di Assets offerte 
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank">Attività</a> e Gestione dei flussi di lavoro:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank">Attività</a> e Gestione flussi di lavoro:</strong>
             Flussi di lavoro e compiti predefiniti per la revisione e l’approvazione delle risorse digitali che sfruttano i progetti AEM.</td>
             <td> </td>
             <td>✔</td>
@@ -739,7 +739,7 @@ Di seguito è riportata una matrice delle funzioni principali di Assets offerte 
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/mac-api-assets.html" target="_blank">API HTTP di Assets</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/mac-api-assets.html" target="_blank">API HTTP Assets</a>:</strong>
             Interagire a livello di programmazione con le risorse tramite HTTP e JSON.</td>
             <td> </td>
             <td> </td>
@@ -772,7 +772,7 @@ Di seguito è riportata una matrice delle funzioni principali di Assets offerte 
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/use-assets-across-connected-assets-instances.html" target="_blank">Risorse collegate</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/use-assets-across-connected-assets-instances.html" target="_blank">Assets connesso</a>:</strong>
             Le istanze di AEM Sites possono accedere e utilizzare senza problemi le risorse di un’istanza di AEM Assets diversa.</td>
             <td> </td>
             <td> </td>
@@ -794,7 +794,7 @@ Di seguito è riportata una matrice delle funzioni principali di Assets offerte 
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/multilingual-assets.html" target="_blank">Risorse multilingue</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/multilingual-assets.html" target="_blank">Assets multilingue</a>:</strong>
             Supporto della traduzione automatica dei metadati delle risorse con directory principali della lingua.</td>
             <td> </td>
             <td> </td>
@@ -816,7 +816,7 @@ Di seguito è riportata una matrice delle funzioni principali di Assets offerte 
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/assets/using/smart-translation-search-feature-video-use.html" target="_blank">Ricerca traduzione avanzata</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/assets/using/smart-translation-search-feature-video-use.html" target="_blank">Ricerca Smart Translation</a>:</strong>
             Traduci automaticamente i termini di ricerca quando cerchi AEM Assets.</td>
             <td> </td>
             <td> </td>
@@ -827,7 +827,7 @@ Di seguito è riportata una matrice delle funzioni principali di Assets offerte 
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/indesign.html" target="_blank">Integrazione di Adobe InDesign Server</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/indesign.html" target="_blank">Integrazione Adobe InDesign Server</a>:</strong>
             Genera cataloghi di prodotti. Creazione di brochure, volantini e annunci di stampa in base ai modelli InDesign.</td>
             <td> </td>
             <td> </td>
@@ -851,7 +851,7 @@ Di seguito è riportata una matrice delle funzioni principali di Assets offerte 
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Libreria immagini Adobe</a>:</strong>
-                <br> Librerie PDF di Photoshop e Acrobat utilizzate per la manipolazione di file di alta qualità.</td>
+                <br> librerie Photoshop e Acrobat PDF utilizzate per la manipolazione di file di alta qualità.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -872,7 +872,7 @@ Di seguito è riportata una matrice delle funzioni principali di Assets offerte 
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/aem-assets-adobe-stock.html" target="_blank">Integrazione di Adobe Stock</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/aem-assets-adobe-stock.html" target="_blank">Integrazione Adobe Stock</a>:</strong>
             Accedi e utilizza senza problemi le immagini Adobe Stock direttamente dall’AEM.</td>
             <td> </td>
             <td> </td>
@@ -887,9 +887,9 @@ Di seguito è riportata una matrice delle funzioni principali di Assets offerte 
 
 ### AEM Assets Dynamic Medie
 
-***✔<sup>+</sup> miglioramenti significativi alla funzione in questa versione.***
+***✔<sup>+</sup> miglioramenti significativi alla funzionalità in questa versione.***
 
-***✔<sup>SP</sup> indica che la funzione è disponibile tramite un Service Pack o un Feature Pack.***
+***✔<sup>SP</sup> indica che la funzionalità è disponibile tramite un Service Pack o un Feature Pack.***
 
 
 <table>
@@ -907,7 +907,7 @@ Di seguito è riportata una matrice delle funzioni principali di Assets offerte 
     </thead>
     <tbody>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets.html" target="_blank">Imaging</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets.html" target="_blank">Immagini</a>:</strong>
             Distribuzione dinamica di immagini in formati e dimensioni diversi, incluso Smart Crop.</td>
             <td> </td>
             <td></td>
@@ -941,7 +941,7 @@ Di seguito è riportata una matrice delle funzioni principali di Assets offerte 
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong>Set (<a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/image-sets.html" target="_blank">Immagine</a>, <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/spin-sets.html" target="_blank">Rotazione</a>, <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/mixed-media-sets.html" target="_blank">File multimediali diversi</a>):</strong>
+            <td><strong>Set (<a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/image-sets.html" target="_blank">Immagine</a>, <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/spin-sets.html" target="_blank">Rotazione</a>, <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/mixed-media-sets.html" target="_blank">File Multimediali Misti</a>):</strong>
             Consente agli utenti di eseguire zoom, scorrimento, rotazione e simulazione di un'esperienza di visualizzazione a 360 gradi.</td>
             <td> </td>
             <td>✔</td>
@@ -991,9 +991,9 @@ Di seguito è riportata una matrice delle funzioni principali di Assets offerte 
 
 Di seguito è riportata una matrice delle principali funzioni del componente aggiuntivo AEM Forms offerte dall’AEM. Alcune di queste funzioni sono state introdotte nelle versioni precedenti con miglioramenti incrementali aggiunti in ciascuna versione.
 
-***✔<sup>+</sup> miglioramenti significativi alla funzione in questa versione.***
+***✔<sup>+</sup> miglioramenti significativi alla funzionalità in questa versione.***
 
-***✔<sup>SP</sup> indica che la funzione è disponibile tramite un Service Pack o un Feature Pack.***
+***✔<sup>SP</sup> indica che la funzionalità è disponibile tramite un Service Pack o un Feature Pack.***
 
 <table>
     <thead>
@@ -1054,7 +1054,7 @@ Di seguito è riportata una matrice delle principali funzioni del componente agg
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedintegrationwithAdobeSign" target="_blank">Integrazione di Acrobat Sign</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedintegrationwithAdobeSign" target="_blank">Integrazione Acrobat Sign</a>:</strong>
             Consenti la distribuzione di scenari di firma basati su moduli integrati di Acrobat Sign.</td>
             <td> </td>
             <td> </td>
@@ -1100,7 +1100,7 @@ Di seguito è riportata una matrice delle principali funzioni del componente agg
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/user-guide.html?topic=/experience-manager/6-5/forms/morehelp/integrations.ug.js" target="_blank">Integrazione con Marketing Cloud</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/user-guide.html?topic=/experience-manager/6-5/forms/morehelp/integrations.ug.js" target="_blank">Integrazione con il Marketing Cloud</a>:</strong>
             Integrazione con Adobe Analytics e Adobe Target per migliorare e misurare le esperienze dei clienti.</td>
             <td> </td>
             <td> </td>
@@ -1111,7 +1111,7 @@ Di seguito è riportata una matrice delle principali funzioni del componente agg
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-managing-forms.html" target="_blank">Gestore moduli</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-managing-forms.html" target="_blank">Gestione moduli</a>:</strong>
             Posizione singola per gestire tutti i moduli/documenti/corrispondenza, ad esempio abilitare analisi, traduzione, test A/B, revisioni e pubblicazioni.
             </td>
             <td> </td>
@@ -1145,7 +1145,7 @@ Di seguito è riportata una matrice delle principali funzioni del componente agg
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong>Flusso di lavoro (J2EE) per l'elaborazione Forms:</strong>
+            <td><strong>Flusso di lavoro (J2EE) per elaborazione Forms:</strong>
             Crea flussi di lavoro complessi incentrati su moduli e documenti utilizzando un IDE intuitivo.</td>
             <td></td>
             <td>✔</td>
@@ -1168,7 +1168,7 @@ Di seguito è riportata una matrice delle principali funzioni del componente agg
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#Simplifiedauthoringexperience" target="_blank">Framework di prova</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#Simplifiedauthoringexperience" target="_blank">Framework di test</a>:</strong>
             Utilizza il framework Calvin e il plug-in Chrome per supportare ed eseguire il debug dei moduli adattivi.</td>
             <td> </td>
             <td> </td>

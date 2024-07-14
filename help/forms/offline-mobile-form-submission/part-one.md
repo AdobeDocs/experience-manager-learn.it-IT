@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Crea profilo personalizzato
 
-In questa parte verrà creato un [profilo personalizzato.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Un profilo è responsabile del rendering di XDP come HTML. Viene fornito un profilo predefinito per il rendering di XDP come HTML. Rappresenta una versione personalizzata del servizio Forms Rendition per dispositivi mobili. Puoi utilizzare il servizio Rappresentazione moduli mobile per personalizzare l’aspetto, il comportamento e le interazioni del Forms mobile. Nel nostro profilo personalizzato acquisiremo i dati compilati nel modulo mobile utilizzando l’API guidebridge. Questi dati vengono quindi inviati a un servlet personalizzato che genererà un PDF interattivo e li invierà nuovamente all’applicazione chiamante.
+In questa parte verrà creato un profilo personalizzato [.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Un profilo è responsabile del rendering di XDP come HTML. Viene fornito un profilo predefinito per il rendering di XDP come HTML. Rappresenta una versione personalizzata del servizio Forms Rendition per dispositivi mobili. Puoi utilizzare il servizio Rappresentazione moduli mobile per personalizzare l’aspetto, il comportamento e le interazioni del Forms mobile. Nel nostro profilo personalizzato acquisiremo i dati compilati nel modulo mobile utilizzando l’API guidebridge. Questi dati vengono quindi inviati a un servlet personalizzato che genererà un PDF interattivo e li invierà nuovamente all’applicazione chiamante.
 
-Ottenere i dati del modulo utilizzando `formBridge` API JavaScript. Noi utilizziamo il `getDataXML()` metodo:
+Ottenere i dati del modulo utilizzando l&#39;API JavaScript `formBridge`. Si utilizza il metodo `getDataXML()`:
 
 ```javascript
 window.formBridge.getDataXML({success:suc,error:err});
@@ -59,7 +59,7 @@ var suc = function(obj) {
 
 ## Genera Interactive PDF
 
-Di seguito è riportato il codice servlet responsabile del rendering del pdf interattivo e della restituzione del pdf all’applicazione chiamante. Il servlet richiama `mobileFormToInteractivePdf` metodo del servizio OSGi DocumentServices personalizzato.
+Di seguito è riportato il codice servlet responsabile del rendering del pdf interattivo e della restituzione del pdf all’applicazione chiamante. Il servlet richiama il metodo `mobileFormToInteractivePdf` del servizio OSGi DocumentServices personalizzato.
 
 ```java
 import java.io.File;
@@ -121,7 +121,7 @@ public class GenerateInteractivePDF extends SlingAllMethodsServlet {
 
 ### Rendering di Interactive PDF
 
-Il codice che segue utilizza [API del servizio Forms](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) per eseguire il rendering di PDF interattivi con i dati del modulo mobile.
+Il codice seguente utilizza l&#39;[API del servizio Forms](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) per eseguire il rendering di Interactive PDF con i dati del modulo mobile.
 
 ```java
 public Document mobileFormToInteractivePdf(Document xmlData,String path) {
@@ -144,7 +144,7 @@ public Document mobileFormToInteractivePdf(Document xmlData,String path) {
 }
 ```
 
-Per visualizzare la possibilità di scaricare PDF interattivi da un modulo mobile parzialmente compilato: [fai clic qui](https://forms.enablementadobe.com/content/dam/formsanddocuments/xdptemplates/schengenvisa.xdp/jcr:content).
+Per visualizzare la possibilità di scaricare PDF interattivi da un modulo mobile parzialmente completato, [fai clic qui](https://forms.enablementadobe.com/content/dam/formsanddocuments/xdptemplates/schengenvisa.xdp/jcr:content).
 Una volta scaricato il PDF, il passaggio successivo consiste nell’inviare il PDF per attivare un flusso di lavoro AEM. Questo flusso di lavoro unisce i dati del PDF inviato e genera il PDF non interattivo da rivedere.
 
 Il profilo personalizzato creato per questo caso d’uso è disponibile come parte di queste risorse di esercitazione.

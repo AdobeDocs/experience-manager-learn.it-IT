@@ -39,7 +39,7 @@ Il bundle di esempio può essere [scaricato da qui](assets/aemformsutilityfuncti
 
 ## Codice di esempio per l&#39;utilizzo dei servizi di utilità
 
-Di seguito è riportato il codice utilizzato nella pagina JSP per creare org.w3c.dom.Document da una stringa e convertire il documento e memorizzarlo nell’archivio CRX, come illustrato nel seguente frammento di codice.
+Di seguito è riportato il codice utilizzato nella pagina JSP per creare org.w3c.dom.Document da una stringa e convertire il documento e memorizzarlo nell&#39;archivio CRX, come illustrato nel seguente frammento di codice.
 
 ```java
  aemformsutilityfunctions.core.AemFormsUtilities aemFormsUtilities = sling.getService(aemformsutilityfunctions.core.AemFormsUtilities.class);
@@ -50,7 +50,7 @@ aemFormsUtilities.saveDocumentInCrx("/content/xmlfiles",".xml",xmlStringDoc);
 ## Prerequisiti
 
 
-È necessario distribuire [Sviluppo con ServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) e avvia il bundle.
+È necessario distribuire [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) e avviare il bundle.
 
 
-Se desideri salvare i documenti nell’archivio CRX utilizzando questo servizio di utilità, segui la [articolo sviluppo con utente del servizio](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Assicurati di fornire [autorizzazioni richieste](http://localhost:4502/useradmin) sulle cartelle CRX appropriate per l&#39;utente fd-service.
+Se vuoi salvare i documenti nell&#39;archivio di CRX utilizzando questo servizio di utilità, segui l&#39;articolo [sviluppo con utente del servizio](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Assicurati di fornire all&#39;utente fd-service le [autorizzazioni richieste](http://localhost:4502/useradmin) nelle cartelle di CRX appropriate.

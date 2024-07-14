@@ -32,4 +32,4 @@ Una guida approfondita su come ottenere un token di accesso per le integrazioni 
 + Verifica tecnica dell’account
 + Utilizzo semplice di un token generato
 
-Per informazioni più dettagliate su questo argomento, consulta l’esercitazione su [autenticazione basata su token](/help/headless-tutorial/authentication/overview.md).
+Per informazioni più dettagliate su questo argomento, puoi fare riferimento al tutorial su [autenticazione basata su token](/help/headless-tutorial/authentication/overview.md).

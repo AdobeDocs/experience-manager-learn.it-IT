@@ -1,6 +1,6 @@
 ---
-title: Aggiunta di componenti alla sezione Risorse
-description: Configura il layout del Pannello a soffietto per il pannello Risorse. Il layout del Pannello a soffietto offre una migliore esperienza per l’utente finale per l’aggiunta di sezioni ripetibili.
+title: Sezione Aggiunta di componenti ad Assets
+description: Configura il layout del Pannello a soffietto per il pannello Assets. Il layout del Pannello a soffietto offre una migliore esperienza per l'utente finale per l'aggiunta di sezioni ripetibili.
 feature: Adaptive Forms
 version: 6.4,6.5
 jira: KT-4212
@@ -17,11 +17,11 @@ ht-degree: 3%
 
 ---
 
-# Aggiunta di componenti al pannello Risorse {#adding-components-to-assets-section}
+# Aggiunta di componenti al pannello Assets {#adding-components-to-assets-section}
 
-Configura il layout del Pannello a soffietto per il pannello Risorse. Il layout del Pannello a soffietto offre una migliore esperienza per l’utente finale per l’aggiunta di sezioni ripetibili.
+Configura il layout del Pannello a soffietto per il pannello Assets. Il layout del Pannello a soffietto offre una migliore esperienza per l&#39;utente finale per l&#39;aggiunta di sezioni ripetibili.
 
-**Configurare il pannello Risorse**
+**Configura pannello Assets**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22200?quality=12&learn=on)
 

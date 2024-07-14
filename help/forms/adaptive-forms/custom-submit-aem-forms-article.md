@@ -22,7 +22,7 @@ Modo rapido e semplice per creare un’azione di invio personalizzata per il mod
 
 >[!NOTE]
 >Il codice di questo articolo non funziona con un modulo adattivo basato su componenti core.
->[L’articolo equivalente per il modulo adattivo basato su componenti core è disponibile qui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/custom-submit-headless-forms/custom-submit-service.html?lang=en)
+>[L&#39;articolo equivalente per il modulo adattivo basato su componenti core è disponibile qui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/custom-submit-headless-forms/custom-submit-service.html?lang=en)
 
 
 Questo articolo illustra i passaggi necessari per creare un’azione di invio personalizzata per la gestione dell’invio di Forms adattivi.

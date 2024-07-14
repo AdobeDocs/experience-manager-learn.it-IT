@@ -1,5 +1,5 @@
 ---
-title: Collaborazione negli Assets Essentials
+title: Collaboration negli Assets Essentials
 description: Scopri come collaborare nella gestione delle risorse utilizzando commenti, annotazioni e attività.
 version: Cloud Service
 feature: Assets Essentials
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Collaborazione negli Assets Essentials
+# Collaboration negli Assets Essentials
 
 Scopri come collaborare alla gestione delle risorse utilizzando commenti, annotazioni e attività.
 

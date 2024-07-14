@@ -1,5 +1,5 @@
 ---
-title: Configura origine dati
+title: Configurare Data Source
 description: Crea origine dati che punta al database MySQL
 feature: Adaptive Forms
 type: Tutorial
@@ -18,17 +18,17 @@ ht-degree: 3%
 
 ---
 
-# Configura origine dati
+# Configurare Data Source
 
-Esistono molti modi in cui l’AEM consente l’integrazione con un database esterno. Una delle procedure più comuni e standard per l’integrazione del database è l’utilizzo delle proprietà di configurazione dell’origine dati in pool di connessione Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
-Il primo passaggio consiste nel scaricare e implementare la [Driver MySQL](https://mvnrepository.com/artifact/mysql/mysql-connector-java) all&#39;AEM.
+Esistono molti modi in cui l’AEM consente l’integrazione con un database esterno. Una delle procedure più comuni e standard per l&#39;integrazione del database è l&#39;utilizzo delle proprietà di configurazione DataSource in pool di connessione Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
+Il primo passaggio consiste nel scaricare e distribuire i [driver MySQL](https://mvnrepository.com/artifact/mysql/mysql-connector-java) appropriati in AEM.
 Quindi, imposta le proprietà dell’origine dati in pool di connessione Sling specifiche per il database. La schermata seguente mostra le impostazioni utilizzate per questa esercitazione. Lo schema di database viene fornito come parte di queste risorse di esercitazione.
 
 >[!NOTE]
->Assegna un nome all’origine dati `StoreAndRetrieveAfData` poiché questo è il nome utilizzato nel servizio OSGi.
+>Assicurati di denominare l&#39;origine dati `StoreAndRetrieveAfData` in quanto è il nome utilizzato nel servizio OSGi.
 
 
-![data-source](assets/data-source.JPG)
+![origine dati](assets/data-source.JPG)
 
 | Nome proprietà | Valore proprietà |   |
 |---------------------|------------------------------------------------------------------------------------|---|
@@ -41,27 +41,27 @@ Quindi, imposta le proprietà dell’origine dati in pool di connessione Sling s
 ## Crea database
 
 
-Ai fini di questo caso d’uso è stato utilizzato il seguente database. Il database ha una tabella denominata `formdatawithattachments` con le 4 colonne come mostrato nella schermata seguente.
+Ai fini di questo caso d’uso è stato utilizzato il seguente database. Il database include una tabella denominata `formdatawithattachments` con le 4 colonne, come illustrato nella schermata seguente.
 ![database](assets/table-schema.JPG)
 
 * La colonna **afdata** conterrà i dati del modulo adattivo.
 * La colonna **attachmentsInfo** conterrà le informazioni sugli allegati del modulo.
-* Le colonne **phoneNumber** conterrà il numero di cellulare della persona che compila il modulo.
+* Le colonne **numeroTelefono** conterranno il numero di cellulare della persona che compila il modulo.
 
-Creare il database importando [schema di database](assets/data-base-schema.sql)
+Creare il database importando lo [schema di database](assets/data-base-schema.sql)
 utilizzo di MySQL Workbench.
 
 ## Crea modello dati modulo
 
 Crea il modello dati del modulo e basalo sull’origine dati creata nel passaggio precedente.
-Configurare **ottenere** servizio di questo modello di dati modulo come mostrato nella schermata seguente.
-Assicurati di non restituire un array nella **ottenere** servizio.
+Configura il servizio **get** di questo modello dati modulo come mostrato nella schermata seguente.
+Assicurarsi di non restituire un array nel servizio **get**.
 
-Scopo del presente **ottenere** Il servizio deve recuperare il numero di telefono associato all&#39;id applicazione.
+Questo servizio **get** ha lo scopo di recuperare il numero di telefono associato all&#39;ID applicazione.
 
 ![get-service](assets/get-service.JPG)
 
-Questo modello di dati modulo verrà quindi utilizzato nel **ModuloAccount** per recuperare il numero di telefono associato all’id applicazione.
+Questo modello di dati modulo verrà quindi utilizzato in **ModuloAccountPersonale** per recuperare il numero di telefono associato all&#39;ID applicazione.
 
 ## Passaggi successivi
 

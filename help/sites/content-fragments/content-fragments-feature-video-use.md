@@ -22,7 +22,7 @@ I frammenti di contenuto sono un’astrazione di contenuto in AEM che consente d
 
 I Frammenti di contenuto AEM sono contenuti editoriali basati su testo che possono includere alcuni elementi di dati strutturati associati, ma considerati contenuti puri senza informazioni di progettazione o layout. I frammenti di contenuto vengono generalmente creati come contenuti indipendenti dal canale, destinati a essere utilizzati e riutilizzati su tutti i canali, che a loro volta racchiudono il contenuto in un’esperienza specifica del contesto.
 
-Questa serie di video tratta il ciclo di vita dell’authoring dei frammenti di contenuto in AEM. Dettagli su [la distribuzione di frammenti di contenuto è disponibile qui](content-fragments-delivery-feature-video-use.md).
+Questa serie di video tratta il ciclo di vita dell’authoring dei frammenti di contenuto in AEM. I dettagli sulla [distribuzione di frammenti di contenuto sono disponibili qui](content-fragments-delivery-feature-video-use.md).
 
 1. Abilitazione e definizione di modelli per frammenti di contenuto
 2. Authoring dei frammenti di contenuto
@@ -38,7 +38,7 @@ Questa serie di video tratta il ciclo di vita dell’authoring dei frammenti di 
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452?quality=12&learn=on)
 
-I modelli per frammenti di contenuto dell’AEM, schemi di dati dei frammenti di contenuto, devono essere abilitati tramite AEM [[!UICONTROL Browser configurazioni]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=it), che consente di definire i modelli per frammenti di contenuto in base alla configurazione.
+I modelli per frammenti di contenuto AEM, ovvero gli schemi di dati dei frammenti di contenuto, devono essere abilitati tramite il [[!UICONTROL browser configurazioni]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=it) dell&#39;AEM, che consente di definire i modelli per frammenti di contenuto in base alla configurazione.
 
 ## Creare frammenti di contenuto {#creating-content-fragments}
 
@@ -48,7 +48,7 @@ Le configurazioni AEM vengono applicate alle gerarchie di cartelle di AEM Assets
 
 I frammenti di contenuto possono avere più varianti, ciascuna delle quali è destinata a un caso d’uso diverso (pensiero, non necessariamente canale) per il contenuto.
 
-*Esempio di biografia atleta per l’importazione:*\
+*Esempio di biografia atleta per l&#39;importazione:*\
 **[sandra-sprient-bio.txt](assets/sandra-sprient-bio.txt)**
 
 ## Download di frammenti di contenuto {#downloading-content-fragments}
@@ -57,7 +57,7 @@ I frammenti di contenuto possono avere più varianti, ciascuna delle quali è de
 
 I frammenti di contenuto AEM possono essere scaricati da AEM Author come file ZIP contenente varianti, elementi e metadati.
 
-*Esempio di file ZIP di download di frammenti di contenuto:*\
+*Esempio di file zip per il download di frammenti di contenuto:*\
 **[daniel_schreder.zip](assets/daniel_schreder.zip)**
 
 ## Funzionalità editoriali per frammenti di contenuto {#editorial-capabilities}
@@ -70,7 +70,7 @@ I frammenti di contenuto AEM possono essere scaricati da AEM Author come file ZI
 
 ## Passaggi successivi
 
-Informazioni su [distribuzione di frammenti di contenuto](content-fragments-delivery-feature-video-use.md).
+Scopri come [distribuire frammenti di contenuto](content-fragments-delivery-feature-video-use.md).
 
 ## Risorse aggiuntive {#additional-resources}
 

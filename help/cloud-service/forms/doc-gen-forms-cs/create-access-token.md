@@ -21,7 +21,7 @@ ht-degree: 0%
 # Scambia il codice JWT con un token di accesso
 
 
-Il codice JWT creato nel passaggio precedente viene scambiato con le API Adobe IMS per un token di accesso, che può quindi essere utilizzato per accedere a AEM as a Cloud Service. Per richiedere un token di accesso, invia una richiesta POST contenente JWT, client_id, client_secret al servizio di autenticazione IMS.
+Il codice JWT creato nel passaggio precedente viene scambiato con le API Adobe IMS per un token di accesso, che può quindi essere utilizzato per accedere ad AEM as a Cloud Service. Per richiedere un token di accesso, invia una richiesta POST contenente JWT, client_id, client_secret al servizio di autenticazione IMS.
 
 Il codice seguente è stato utilizzato per generare il codice JWT di scambio per un token di accesso
 

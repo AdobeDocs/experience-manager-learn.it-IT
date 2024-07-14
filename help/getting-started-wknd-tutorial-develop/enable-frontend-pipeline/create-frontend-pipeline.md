@@ -22,13 +22,13 @@ ht-degree: 0%
 
 # Distribuire utilizzando la pipeline front-end
 
-In questo capitolo viene creata ed eseguita una pipeline front-end in Adobe Cloud Manager. Crea solo i file da `ui.frontend` e li distribuisce nella rete CDN integrata in AEM as a Cloud Service. In questo modo ci si allontana dalla  `/etc.clientlibs` distribuzione di risorse front-end basata su.
+In questo capitolo viene creata ed eseguita una pipeline front-end in Adobe Cloud Manager. Crea i file solo dal modulo `ui.frontend` e li distribuisce nel CDN incorporato in AEM as a Cloud Service. In questo modo si esce dalla consegna delle risorse front-end basata su `/etc.clientlibs`.
 
 
 ## Obiettivi {#objectives}
 
 * Crea ed esegui una pipeline front-end.
-* Verificare che le risorse front-end NON vengano consegnate da `/etc.clientlibs` ma da un nuovo nome host che inizia con `https://static-`
+* Verificare che le risorse front-end NON vengano recapitate da `/etc.clientlibs` ma da un nuovo nome host che inizia con `https://static-`
 
 ## Utilizzo della pipeline front-end
 
@@ -36,67 +36,67 @@ In questo capitolo viene creata ed eseguita una pipeline front-end in Adobe Clou
 
 ## Prerequisiti {#prerequisites}
 
-Si tratta di un tutorial in più parti in cui si presume che i passaggi descritti in [Aggiorna progetto AEM standard](./update-project.md) sono state completate.
+Questo è un tutorial in più parti e si presume che i passaggi descritti in [Aggiorna progetto standard AEM](./update-project.md) siano stati completati.
 
-Assicurati di avere [privilegi per creare e distribuire pipeline in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) e [accesso a un ambiente as a Cloud Service AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=it).
+Assicurati di disporre di [privilegi per la creazione e la distribuzione di pipeline in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=en#role-definitions) e di [accesso a un ambiente AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=it).
 
 ## Rinomina pipeline esistente
 
-Rinomina la pipeline esistente da __Implementa in Dev__ a  __Distribuzione FullStack WKND in Dev__ passando al __Configurazione__ della scheda __Nome pipeline non di produzione__ campo. Questo per rendere esplicito se una pipeline è full stack o front-end semplicemente osservandone il nome.
+Rinomina la pipeline esistente da __Distribuisci in Dev__ a __Distribuzione WKND fullStack in Dev__ andando al campo __Nome pipeline non di produzione__ della scheda __Configurazione__. Questo per rendere esplicito se una pipeline è full stack o front-end semplicemente osservandone il nome.
 
 ![Rinomina pipeline](assets/fullstack-wknd-deploy-dev-pipeline.png)
 
 
-Anche nel __Codice sorgente__ , accertati che i valori dei campi Repository e Ramo Git siano corretti e che il ramo presenti le modifiche al contratto della pipeline front-end.
+Inoltre, nella scheda __Codice Source__, accertati che i valori dei campi Archivio e Ramo Git siano corretti e che il ramo presenti le modifiche al contratto della pipeline front-end.
 
-![Pipeline di configurazione del codice sorgente](assets/fullstack-wknd-source-code-config.png)
+![Pipeline di configurazione del codice Source](assets/fullstack-wknd-source-code-config.png)
 
 
 ## Creare una pipeline front-end
 
-A __SOLO__ generare e distribuire le risorse front-end da `ui.frontend` eseguire i passaggi seguenti:
+Per __ONLY__ generare e distribuire le risorse front-end dal modulo `ui.frontend`, effettuare le seguenti operazioni:
 
-1. Nell’interfaccia utente di Cloud Manager, da __Pipeline__ , fare clic su __Aggiungi__ , quindi seleziona __Aggiungi pipeline non di produzione__ (o __Aggiungi pipeline di produzione__) in base all’ambiente as a Cloud Service AEM in cui desideri eseguire l’implementazione.
+1. Nell&#39;interfaccia utente di Cloud Manager, dalla sezione __Pipeline__, fai clic sul pulsante __Aggiungi__, quindi seleziona __Aggiungi pipeline non di produzione__ (o __Aggiungi pipeline di produzione__) in base all&#39;ambiente AEM as a Cloud Service in cui desideri eseguire la distribuzione.
 
-1. In __Aggiungi pipeline non di produzione__ , come parte del __Configurazione__ passaggi, seleziona la __Pipeline di implementazione__ opzione, denominala come __Distribuzione WKND FrontEnd in Dev__ e fai clic su __Continua__
+1. Nella finestra di dialogo __Aggiungi pipeline non di produzione__, come parte dei passaggi __Configurazione__, seleziona l&#39;opzione __Pipeline di distribuzione__, assegna a essa il nome __Distribuzione WKND FrontEnd a Dev__, quindi fai clic su __Continua__
 
 ![Creare configurazioni pipeline front-end](assets/create-frontend-pipeline-configs.png)
 
-1. Nell&#39;ambito del __Codice sorgente__ passaggi, seleziona la __Codice front-end__ e scegliere l&#39;ambiente da __Ambienti di implementazione idonei__. In __Codice sorgente__ sezione verificare che i valori dei campi Archivio e Ramo Git siano corretti e che il ramo presenti modifiche al contratto della pipeline front-end.
-E __più importante__ per __Posizione codice__ campo il valore è `/ui.frontend` e infine, fai clic su __Salva__.
+1. Come parte dei passaggi per __Codice Source__, seleziona l&#39;opzione __Codice front-end__ e scegli l&#39;ambiente da __Ambienti di distribuzione idonei__. Nella sezione __Codice Source__ verifica che i valori dei campi Archivio e Ramo Git siano corretti e che il ramo presenti le modifiche al contratto della pipeline front-end.
+E __soprattutto__ per il campo __Posizione codice__ il valore è `/ui.frontend`. Infine, fai clic su __Salva__.
 
-![Creare il codice sorgente della pipeline front-end](assets/create-frontend-pipeline-source-code.png)
+![Crea codice Source per pipeline front-end](assets/create-frontend-pipeline-source-code.png)
 
 
 ## Sequenza di distribuzione
 
-* Esegui prima la nuova versione rinominata __Distribuzione FullStack WKND in Dev__ per rimuovere i file clientlib WKND dall’archivio AEM. E soprattutto preparare l’AEM per il contratto di pipeline front-end aggiungendo __Configurazione Sling__ file (`SiteConfig`, `HtmlPageItemsConfig`).
+* Eseguire prima la pipeline __FullStack WKND Deploy in Dev__ rinominata per rimuovere i file clientlib WKND dall&#39;archivio AEM. E soprattutto preparare l&#39;AEM per il contratto della pipeline front-end aggiungendo __file di configurazione Sling__ (`SiteConfig`, `HtmlPageItemsConfig`).
 
 ![Sito WKND non formattato](assets/unstyled-wknd-site.png)
 
 >[!WARNING]
 >
->Dopo, il __Distribuzione FullStack WKND in Dev__ completamento della pipeline avrai un’ __non formattato__ Sito WKND, che potrebbe apparire danneggiato. Pianifica un’interruzione o esegui la distribuzione nelle ore dispari; si tratta di un’interruzione una tantum da pianificare durante il passaggio iniziale dall’utilizzo di una singola pipeline full stack alla pipeline front-end.
+>Dopo il completamento della pipeline __FullStack WKND Distribuisci su Dev__, si avrà un sito WKND __non formattato__, che potrebbe apparire danneggiato. Pianifica un’interruzione o esegui la distribuzione nelle ore dispari; si tratta di un’interruzione una tantum da pianificare durante il passaggio iniziale dall’utilizzo di una singola pipeline full stack alla pipeline front-end.
 
 
-* Infine, esegui il __Distribuzione WKND FrontEnd in Dev__ pipeline da compilare `ui.frontend` e distribuire le risorse front-end direttamente nella rete CDN.
+* Infine, esegui la pipeline __Distribuzione WKND FrontEnd su Dev__ per compilare solo il modulo `ui.frontend` e distribuire le risorse front-end direttamente nella rete CDN.
 
 >[!IMPORTANT]
 >
->Noterai che il __non formattato__ Il sito WKND è tornato alla normalità e questa volta __FrontEnd__ l’esecuzione della pipeline era molto più veloce della pipeline full stack.
+>Il sito WKND __unstyled__ è tornato alla normalità e questa volta l&#39;esecuzione della pipeline __FrontEnd__ è stata molto più veloce della pipeline full stack.
 
 ## Verificare le modifiche di stile e il nuovo paradigma di consegna
 
-* Apri il sito WKND qualsiasi pagina e potrai vedere il colore del testo. __Rosso Adobe__ e i file delle risorse front-end (CSS, JS) vengono consegnati dalla CDN. Il nome host della richiesta di risorsa inizia con `https://static-pXX-eYY.p123-e456.adobeaemcloud.com/$HASH_VALUE$/theme/site.css` e allo stesso modo il site.js o qualsiasi altra risorsa statica a cui si fa riferimento nel `HtmlPageItemsConfig` file.
+* Apri la pagina qualsiasi del sito WKND e potrai vedere il colore del testo __rosso Adobe__ e i file delle risorse front-end (CSS, JS) vengono consegnati dalla rete CDN. Il nome host della richiesta di risorsa inizia con `https://static-pXX-eYY.p123-e456.adobeaemcloud.com/$HASH_VALUE$/theme/site.css` e allo stesso modo il sito.js o qualsiasi altra risorsa statica a cui si fa riferimento nel file `HtmlPageItemsConfig`.
 
 
-![Sito WKND appena formattato](assets/newly-styled-wknd-site.png)
+![Sito WKND di nuovo stile](assets/newly-styled-wknd-site.png)
 
 
 
 >[!TIP]
 >
->Il `$HASH_VALUE$` qui è uguale a quello che si vede nel __Distribuzione WKND FrontEnd in Dev__  della pipeline __HASH CONTENUTO__ campo. L’AEM riceve una notifica dell’URL CDN della risorsa front-end, il valore viene memorizzato in `/conf/wknd/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/jcr:content` in __prefixPath__ proprietà.
+>Il `$HASH_VALUE$` qui è lo stesso visualizzato nel campo __HASH CONTENUTO__ della pipeline __Distribuzione WKND FrontEnd per sviluppo__. L&#39;AEM riceve una notifica dell&#39;URL CDN della risorsa front-end. Il valore viene archiviato in `/conf/wknd/sling:configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/jcr:content` nella proprietà __prefixPath__.
 
 
 ![Correlazione valore hash](assets/hash-value-correlartion.png)
@@ -109,4 +109,4 @@ Congratulazioni, hai creato, eseguito e verificato la pipeline front-end che cre
 
 ## Passaggi successivi {#next-steps}
 
-Nel prossimo capitolo, [Considerazioni](considerations.md), rivedrai l’impatto sul processo di sviluppo front-end e back-end.
+Nel prossimo capitolo, [Considerazioni](considerations.md), verrà esaminato l&#39;impatto sul processo di sviluppo front-end e back-end.

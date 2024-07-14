@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Abilitare l’output di debug per Workbench
 
-*Questo video illustra il processo per abilitare l’output di debug per Workbench.*
+*Questo video illustra il processo per abilitare l&#39;output di debug per Workbench .*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335497?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Esperienza utente di Asset Share Commons
-description: Materiali per le conoscenze tecniche e funzionali di Assets Share Commons
+description: Materiali per la comprensione funzionale e tecnica di Assets Share Commons
 version: 6.4, 6.5
 topic: Content Management
 feature: Asset Distribution
@@ -35,5 +35,5 @@ Questo video fornisce una panoramica ridotta delle funzionalità di base di auth
 
 ## Risorse aggiuntive{#additional-resources}
 
-* [Download delle versioni di Asset Share Commons](https://github.com/Adobe-Marketing-Cloud/asset-share-commons/releases)
+* [Download della versione di Asset Share Commons](https://github.com/Adobe-Marketing-Cloud/asset-share-commons/releases)
 * [Download della versione di ACS AEM Commons 3.11.0+](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)

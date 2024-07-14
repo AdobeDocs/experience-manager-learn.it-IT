@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Verificare un’estensione
 
-Le estensioni dell’interfaccia utente AEM possono essere verificate in base a qualsiasi ambiente as a Cloud Service AEM nell’organizzazione di Adobi a cui appartiene l’estensione.
+Le estensioni dell’interfaccia utente AEM possono essere verificate in base a qualsiasi ambiente AEM as a Cloud Service nell’organizzazione di Adobe a cui appartiene l’estensione.
 
 Il test di un’estensione viene eseguito tramite un URL appositamente creato che indica all’AEM di caricarla, solo per tale richiesta.
 
@@ -32,14 +32,14 @@ Il test di un’estensione viene eseguito tramite un URL appositamente creato ch
 
 ## URL interfaccia utente AEM
 
-![URL della console Frammenti di contenuto AEM](./assets/verify/content-fragment-console-url.png){align="center"}
+![URL console Frammenti di contenuto AEM](./assets/verify/content-fragment-console-url.png){align="center"}
 
 Per creare un URL che monti l’estensione non di produzione in AEM, è necessario ottenere l’URL dell’interfaccia utente dell’AEM in cui viene inserita l’estensione. Passa all’ambiente AEM as a Cloud Service per verificare l’estensione su e apri l’interfaccia utente su cui deve essere visualizzata l’estensione.
 
 Ad esempio, per visualizzare in anteprima un’estensione per la console Frammenti di contenuto:
 
 1. Accedi all’ambiente AEM as a Cloud Service desiderato.
-1. Seleziona la __Frammenti di contenuto__ icona.
+1. Seleziona l&#39;icona __Frammenti di contenuto__.
 1. Attendi che la console Frammenti di contenuto AEM venga caricata nel browser.
 1. Copia l’URL della console Frammenti di contenuto AEM dalla barra degli indirizzi del browser; dovrebbe essere simile al seguente:
 
@@ -52,7 +52,7 @@ Questo URL viene utilizzato di seguito per la creazione degli URL per lo svilupp
 ## Verificare le build di sviluppo locali
 
 1. Apri una riga di comando nella directory principale del progetto di estensione.
-1. Eseguire l’estensione dell’interfaccia utente AEM come app locale di App Builder
+1. Eseguire l’estensione dell’interfaccia utente AEM come app App Builder locale
 
    ```shell
    $ aio app run
@@ -65,14 +65,14 @@ Questo URL viene utilizzato di seguito per la creazione degli URL per lo svilupp
      -> https://experience.adobe.com/?devMode=true#/custom-apps/?localDevUrl=https://localhost:9080
    ```
 
-Prendi nota dell’URL dell’applicazione locale, indicato qui sopra come `-> https://localhost:9080`
+Prendi nota dell&#39;URL dell&#39;applicazione locale, indicato sopra come `-> https://localhost:9080`
 
-1. Apertura iniziale (e ogni volta che viene visualizzato un errore di connessione) `https://localhost:9080` (o qualsiasi sia l’URL dell’applicazione locale) nel browser web e accetta manualmente [il certificato HTTPS](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users).
-1. Aggiungi i due parametri di query seguenti al [URL dell’interfaccia utente AEM](#aem-ui-url)
+1. Inizialmente (e ogni volta che viene visualizzato un errore di connessione) apri `https://localhost:9080` (o qualsiasi URL dell&#39;applicazione locale sia) nel browser Web e accetta manualmente [il certificato HTTPS](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users).
+1. Aggiungi i due parametri di query seguenti all&#39;URL dell&#39;interfaccia utente [AEM](#aem-ui-url)
    + `&devMode=true`
-   + `&ext=<LOCAL APPLICATION URL>`, di solito `&ext=https://localhost:9080`.
+   + `&ext=<LOCAL APPLICATION URL>`, in genere `&ext=https://localhost:9080`.
 
-   Aggiungi i due parametri di query sopra riportati (`devMode` e `ext`) come __primo__ parametri di query nell’URL. Percorsi hash di utilizzo dell’interfaccia utente estensibile dell’AEM (`#/@wknd/aem/...`), in modo che i parametri dopo il `#` non funziona.
+   Aggiungere i due parametri di query sopra indicati (`devMode` e `ext`) come __primi__ parametri di query nell&#39;URL. L&#39;interfaccia utente estensibile dell&#39;AEM utilizza route hash (`#/@wknd/aem/...`), pertanto non corregge correttamente la post-correzione dei parametri dopo che `#` non funziona.
 
    L’URL di anteprima deve essere simile al seguente:
 
@@ -82,7 +82,7 @@ Prendi nota dell’URL dell’applicazione locale, indicato qui sopra come `-> h
 
 1. Copia e incolla l’URL di anteprima nel browser.
 
-   + All&#39;inizio potrebbe essere necessario, e poi periodicamente, [accetta il certificato HTTPS](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) per l&#39;host dell&#39;applicazione locale (`https://localhost:9080`).
+   + Potrebbe essere necessario inizialmente e quindi periodicamente [accettare il certificato HTTPS](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) per l&#39;host dell&#39;applicazione locale (`https://localhost:9080`).
 
 1. L’interfaccia utente dell’AEM viene caricata con la versione locale dell’estensione inserita per la verifica.
 
@@ -93,15 +93,15 @@ Prendi nota dell’URL dell’applicazione locale, indicato qui sopra come `-> h
 ## Verifica le build della fase
 
 1. Apri una riga di comando nella directory principale del progetto di estensione.
-1. Assicurati che l’area di lavoro Stage sia attiva (o qualsiasi area di lavoro venga utilizzata per la verifica).
+1. Assicurati che l’area di lavoro Stage sia attiva (o qualsiasi ambiente Workspace venga utilizzato per la verifica).
 
    ```shell
    $ aio app use -w Stage
    ```
 
-   Unisci eventuali modifiche apportate a `.env` e `.aio`.
+   Unisci le modifiche apportate a `.env` e `.aio`.
 
-1. Distribuisci l&#39;app App Builder aggiornata dell&#39;estensione. Se non è stato eseguito l&#39;accesso, eseguire `aio login` prima.
+1. Distribuisci l’estensione aggiornata dell’app App Builder. Se non si è connessi, eseguire prima `aio login`.
 
    ```shell
    $ aio app deploy
@@ -117,11 +117,11 @@ Prendi nota dell’URL dell’applicazione locale, indicato qui sopra come `-> h
    Successful deployment 🏄
    ```
 
-1. Aggiungi i due parametri di query seguenti al [URL dell’interfaccia utente AEM](#aem-ui-url)
+1. Aggiungi i due parametri di query seguenti all&#39;URL dell&#39;interfaccia utente [AEM](#aem-ui-url)
    + `&devMode=true`
    + `&ext=<DEPLOYED APPLICATION URL>`
 
-   Aggiungi i due parametri di query sopra riportati (`devMode` e `ext`) come __primo__ parametri di query nell’URL, poiché le interfacce utente AEM estensibili utilizzano una route hash (`#/@wknd/aem/...`), in modo che i parametri dopo il `#` non funziona.
+   Aggiungere i due parametri di query sopra indicati (`devMode` e `ext`) come __primi__ parametri di query nell&#39;URL, poiché le interfacce utente AEM estensibili utilizzano una route hash (`#/@wknd/aem/...`), pertanto non è corretto postfissare i parametri dopo che `#` non funziona.
 
    L’URL di anteprima deve essere simile al seguente:
 
@@ -134,18 +134,18 @@ Prendi nota dell’URL dell’applicazione locale, indicato qui sopra come `-> h
 
 Quando si utilizza questo approccio, l’estensione Staged viene inserita solo nella console Frammenti di contenuto AEM quando si accede con l’URL della fase dell’mestiere.
 
-1. È possibile aggiornare le estensioni implementate eseguendo `aio app deploy` e queste modifiche si riflettono automaticamente quando si utilizza l’URL di anteprima.
-1. Per rimuovere un’estensione per la verifica, esegui `aio app undeploy`.
+1. È possibile aggiornare le estensioni distribuite eseguendo nuovamente `aio app deploy`. Queste modifiche verranno applicate automaticamente quando si utilizza l&#39;URL di anteprima.
+1. Per rimuovere un&#39;estensione per la verifica, eseguire `aio app undeploy`.
 
 ## Anteprima bookmarklet
 
 Per semplificare la creazione degli URL di anteprima e anteprima descritti sopra, è possibile creare un bookmarklet JavaScript che carica l’estensione.
 
-Il bookmarklet seguente visualizza l&#39;anteprima del [build di sviluppo locale](#verify-local-development-builds) dell&#39;estensione il `https://localhost:9080`. Per visualizzare l&#39;anteprima [build stage](#verify-stage-builds), crea un bookmarklet con `previewApp` variabile impostata sull’URL dell’app App Builder implementata.
+Il bookmarklet seguente visualizza in anteprima le [build di sviluppo locali](#verify-local-development-builds) dell&#39;estensione in `https://localhost:9080`. Per visualizzare in anteprima [le build della fase](#verify-stage-builds), crea un bookmarklet con la variabile `previewApp` impostata sull&#39;URL dell&#39;app App Builder distribuita.
 
 1. Crea un segnalibro nel browser.
 1. Modifica il segnalibro.
-1. Assegna a un segnalibro un nome significativo, ad esempio `AEM UI Extension Preview (localhost:9080)`.
+1. Assegnare a un segnalibro un nome significativo, ad esempio `AEM UI Extension Preview (localhost:9080)`.
 1. Impostare l&#39;URL del segnalibro sul codice seguente:
 
    ```javascript
@@ -165,4 +165,4 @@ Il bookmarklet seguente visualizza l&#39;anteprima del [build di sviluppo locale
 
 >[!TIP]
 >
-> Se l&#39;estensione App Builder non viene caricata, quando si utilizza, `&ext=https://localhost:9080`, apri l’host e la porta direttamente in una scheda del browser e accetta il certificato autofirmato. Riprovare con il bookmarklet.
+> Se l&#39;estensione App Builder non viene caricata, quando si utilizza, `&ext=https://localhost:9080`, aprire l&#39;host e la porta direttamente in una scheda del browser e accettare il certificato autofirmato. Riprovare con il bookmarklet.

@@ -23,11 +23,11 @@ ht-degree: 1%
 
 # App React di base
 
-Questo [React](https://reactjs.org/) app illustra come eseguire query sui contenuti che utilizzano le API GraphQL dell’AEM utilizzando query persistenti. Questa applicazione esegue il rendering di un’avventura filtrabile in WKND Adventures e, dopo aver selezionato un’avventura, ne visualizza i dettagli completi.
+Questa app [React](https://reactjs.org/) illustra come eseguire query sui contenuti che utilizzano le API GraphQL dell&#39;AEM utilizzando query persistenti. Questa applicazione esegue il rendering di un’avventura filtrabile in WKND Adventures e, dopo aver selezionato un’avventura, ne visualizza i dettagli completi.
 
 Questo codice:
 
-+ Si connette a un servizio di pubblicazione AEM e non richiede l’autenticazione
-+ Utilizza le query persistenti di WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-slug`
++ Si connette a un servizio Publish AEM e non richiede l&#39;autenticazione
++ Utilizza le query persistenti WKND: `wknd-shared/adventures-all` e `wknd-shared/adventures-by-slug`
 
-Per una recensione più approfondita della modalità di creazione di questa app Next.js, consulta [esempio di documentazione dell’app React](../example-apps/react-app.md).
+Per un&#39;analisi più approfondita della modalità di creazione dell&#39;app Next.js, consulta l&#39;[esempio di documentazione sull&#39;app React](../example-apps/react-app.md).

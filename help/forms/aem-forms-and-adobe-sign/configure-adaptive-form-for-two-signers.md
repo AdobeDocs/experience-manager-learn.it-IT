@@ -24,7 +24,7 @@ Il video illustra i vari passaggi necessari per configurare un modulo adattivo c
 
 >[!VIDEO](https://video.tv.adobe.com/v/39294?quality=12&learn=on)
 
-Le risorse relative a questo video possono essere scaricate dai seguenti collegamenti
+Assets relativo a questo video può essere scaricato dai seguenti collegamenti
 
 * [Modello modulo adattivo](assets/tenancy-agreement-template.zip)
 * [Modulo contratto di locazione](assets/rental-agreement-form.zip)

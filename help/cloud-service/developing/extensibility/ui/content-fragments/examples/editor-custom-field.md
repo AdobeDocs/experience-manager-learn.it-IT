@@ -24,7 +24,7 @@ Scopri come creare campi personalizzati nell’Editor frammento di contenuto AEM
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
 
-Le estensioni dell’interfaccia utente AEM devono essere sviluppate utilizzando [Spettro di reazione Adobe](https://react-spectrum.adobe.com/react-spectrum/index.html) mantenendo un aspetto coerente con il resto dell’AEM, oltre a disporre di un’ampia libreria di funzionalità predefinite che riducono i tempi di sviluppo.
+Le estensioni dell&#39;interfaccia utente dell&#39;AEM devono essere sviluppate utilizzando il framework [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html), in quanto mantiene un aspetto coerente con il resto dell&#39;AEM e dispone anche di un&#39;ampia libreria di funzionalità predefinite, riducendo i tempi di sviluppo.
 
 ## Punto di estensione
 
@@ -32,26 +32,26 @@ Questo esempio sostituisce un campo esistente nell’Editor frammento di contenu
 
 | Interfaccia utente AEM estesa | Punto di estensione |
 | ------------------------ | --------------------- | 
-| [Editor frammento di contenuto](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Rendering di elementi modulo personalizzati](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/) |
+| [Editor frammento di contenuto](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Rendering elemento modulo personalizzato](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/) |
 
 ## Estensione di esempio
 
 Questo esempio illustra come limitare i valori dei campi nell’Editor frammento di contenuto a un set predeterminato sostituendo il campo standard con un elenco a discesa personalizzato di SKU predefinite. Gli autori possono selezionare da questo elenco SKU specifico. Anche se gli SKU provengono in genere da un sistema di gestione delle informazioni sui prodotti (PIM, Product Information Management), questo esempio semplifica la creazione di un elenco statico degli SKU.
 
-Il codice sorgente di questo esempio è [disponibile per il download](./assets/editor-custom-field/content-fragment-editor-custom-field-src.zip).
+Il codice sorgente per questo esempio è [disponibile per il download](./assets/editor-custom-field/content-fragment-editor-custom-field-src.zip).
 
 ### Definizione del modello per frammenti di contenuto
 
-Questo esempio si associa a qualsiasi campo Frammento di contenuto il cui nome è `sku` (tramite un [corrispondenza espressione regolare](#extension-registration) di `^sku$`) e lo sostituisce con un campo personalizzato. Nell’esempio viene utilizzato il modello WKND Adventure Content Fragment che è stato aggiornato e la definizione è la seguente:
+Questo esempio associa a qualsiasi campo Frammento di contenuto il cui nome è `sku` (tramite una [corrispondenza espressione regolare](#extension-registration) di `^sku$`) e lo sostituisce con un campo personalizzato. Nell’esempio viene utilizzato il modello WKND Adventure Content Fragment che è stato aggiornato e la definizione è la seguente:
 
-![Definizione del modello per frammenti di contenuto](./assets/editor-custom-field/content-fragment-editor.png)
+![Definizione modello frammento di contenuto](./assets/editor-custom-field/content-fragment-editor.png)
 
 Nonostante il campo SKU personalizzato venga visualizzato come elenco a discesa, il modello sottostante è configurato come campo di testo. L’implementazione del campo personalizzato deve solo essere allineata al nome e al tipo di proprietà appropriati, facilitando la sostituzione del campo standard con la versione a discesa personalizzata.
 
 
 ### Route delle app
 
-Nel componente React principale `App.js`, includi `/sku-field` route per il rendering di `SkuField` Componente React.
+Nel componente React principale `App.js`, includere la route `/sku-field` per eseguire il rendering del componente React `SkuField`.
 
 `src/aem-cf-editor-1/web-src/src/components/App.js`
 
@@ -85,14 +85,14 @@ function App() {
 ...
 ```
 
-Questo percorso personalizzato di `/sku-field` mappa su `SkuField` il componente viene utilizzato di seguito nella [Registrazione dell’estensione](#extension-registration).
+Questa route personalizzata di `/sku-field` è mappata al componente `SkuField` ed è utilizzata di seguito nella [registrazione estensione](#extension-registration).
 
 ### Registrazione dell’estensione
 
 `ExtensionRegistration.js`, mappato alla route index.html, è il punto di ingresso per l&#39;estensione AEM e definisce:
 
-+ La definizione del widget in `getDefinitions()` funzione con `fieldNameExp` e `url` attributi. L’elenco completo degli attributi disponibili è disponibile nella sezione [Riferimento API per il rendering di elementi modulo personalizzati](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/#api-reference).
-+ Il `url` valore attributo, un percorso URL relativo (`/index.html#/skuField`) per caricare l&#39;interfaccia utente del campo.
++ Definizione del widget nella funzione `getDefinitions()` con attributi `fieldNameExp` e `url`. L&#39;elenco completo degli attributi disponibili è disponibile nel [Riferimento API di rendering elemento modulo personalizzato](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/#api-reference).
++ Il valore dell&#39;attributo `url`, un percorso URL relativo (`/index.html#/skuField`) per caricare l&#39;interfaccia utente del campo.
 
 `src/aem-cf-editor-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -132,13 +132,13 @@ export default ExtensionRegistration;
 
 ### Campo personalizzato
 
-Il `SkuField` Il componente React aggiorna l’Editor frammento di contenuto con un’interfaccia utente personalizzata, utilizzando Adobe React Spectrum per il modulo di selezione. Gli elementi di rilievo includono:
+Il componente React di `SkuField` aggiorna l&#39;Editor frammento di contenuto con un&#39;interfaccia utente personalizzata, utilizzando Adobe React Spectrum per il modulo di selezione. Gli elementi di rilievo includono:
 
-+ Utilizzo `useEffect` per l’inizializzazione e la connessione all’Editor frammenti di contenuto AEM, con uno stato di caricamento visualizzato fino al completamento dell’installazione.
-+ Il rendering all&#39;interno di un iFrame regola dinamicamente l&#39;altezza dell&#39;iFrame tramite `onOpenChange` funzione per adattarsi al menu a discesa del selettore dello spettro di React Adobe.
-+ Comunica le selezioni dei campi all&#39;host utilizzando `connection.host.field.onChange(value)` nel `onSelectionChange` che garantisce la convalida e il salvataggio automatico del valore selezionato in base alle linee guida del modello per frammenti di contenuto.
++ Utilizzo di `useEffect` per l&#39;inizializzazione e la connessione all&#39;Editor frammenti di contenuto dell&#39;AEM, con uno stato di caricamento visualizzato fino al completamento dell&#39;installazione.
++ Durante il rendering all&#39;interno di un iFrame, l&#39;altezza dell&#39;iFrame viene regolata dinamicamente tramite la funzione `onOpenChange` per adattarsi al menu a discesa del selettore dello spettro di React Adobe.
++ Comunica le selezioni dei campi all&#39;host utilizzando `connection.host.field.onChange(value)` nella funzione `onSelectionChange`, assicurandosi che il valore selezionato sia convalidato e salvato automaticamente in base alle linee guida del modello per frammenti di contenuto.
 
-I campi personalizzati vengono riprodotti all’interno di un iFrame inserito nell’Editor frammento di contenuto. La comunicazione tra il codice di campo personalizzato e l’Editor frammento di contenuto avviene esclusivamente tramite `connection` oggetto, stabilito dal `attach` funzione dalla `@adobe/uix-guest` pacchetto.
+I campi personalizzati vengono riprodotti all’interno di un iFrame inserito nell’Editor frammento di contenuto. La comunicazione tra il codice di campo personalizzato e l&#39;Editor frammento di contenuto avviene esclusivamente tramite l&#39;oggetto `connection`, stabilito dalla funzione `attach` dal pacchetto `@adobe/uix-guest`.
 
 `src/aem-cf-editor-1/web-src/src/components/SkuField.js`
 

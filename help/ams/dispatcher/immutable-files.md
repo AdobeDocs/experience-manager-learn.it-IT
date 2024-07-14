@@ -1,5 +1,5 @@
 ---
-title: File di sola lettura o immutabili del dispatcher di AMS
+title: File AMS Dispatcher di sola lettura o immutabili
 description: Informazioni sul motivo per cui alcuni file sono di sola lettura o non modificabili e su come apportare le modifiche funzionali desiderate
 version: 6.5
 topic: Administration, Development
@@ -186,7 +186,7 @@ Di seguito è riportato un esempio di risposta di quali file non sono modificabi
 
 ### Variabili
 
-Le variabili consentono di apportare modifiche funzionali senza modificare i file di configurazione stessi.  Alcuni elementi della configurazione possono essere regolati regolando i valori delle variabili.  Un esempio che è possibile evidenziare dal file `/etc/httpd/conf.d/dispatcher_vhost.conf` viene visualizzato qui:
+Le variabili consentono di apportare modifiche funzionali senza modificare i file di configurazione stessi.  Alcuni elementi della configurazione possono essere regolati regolando i valori delle variabili.  Un esempio che è possibile evidenziare dal file `/etc/httpd/conf.d/dispatcher_vhost.conf` è mostrato qui:
 
 ```
 Include /etc/httpd/conf.d/variables/ams_default.vars
@@ -199,7 +199,7 @@ IfModule disp_apache2.c
 /IfModule
 ```
 
-Scopri come la direttiva DispatcherLogLevel ha una variabile di `DISP_LOG_LEVEL` invece del valore normale che vedete lì.  Sopra quella sezione di codice vedrai anche un’istruzione &quot;include&quot; in un file di variabili.  Il file della variabile `/etc/httpd/conf.d/variables/ams_default.vars` è dove vogliamo guardare dopo.  Di seguito sono elencati i contenuti di tale file di variabili:
+Osserva come la direttiva DispatcherLogLevel ha una variabile di `DISP_LOG_LEVEL` invece del valore normale che dovresti vedere.  Sopra quella sezione di codice vedrai anche un’istruzione &quot;include&quot; in un file di variabili.  Il file della variabile `/etc/httpd/conf.d/variables/ams_default.vars` è quello che si desidera esaminare successivamente.  Di seguito sono elencati i contenuti di tale file di variabili:
 
 ```
 Define DISP_LOG_LEVEL info
@@ -211,11 +211,11 @@ Define PUBLISH_FORCE_SSL 0
 Define LIVECYCLE_FORCE_SSL 1
 ```
 
-Vedi sopra che il valore corrente di `DISP_LOG_LEVEL` la variabile è `info`.  Possiamo modificarlo per tracciare o eseguire il debug o il valore/livello del numero desiderato.  Ora ovunque controlli il livello di registro si regola automaticamente.
+Il valore corrente della variabile `DISP_LOG_LEVEL` è `info`.  Possiamo modificarlo per tracciare o eseguire il debug o il valore/livello del numero desiderato.  Ora ovunque controlli il livello di registro si regola automaticamente.
 
 ### Metodo di sovrapposizione
 
-Devi comprendere il file di inclusione di livello superiore perché sarà il punto di partenza per effettuare qualsiasi personalizzazione.  Per iniziare con un semplice esempio, prendiamo uno scenario in cui vogliamo aggiungere un nuovo nome di dominio che intendiamo far puntare a questo Dispatcher.  L’esempio di dominio che utilizzeremo is we-retail.adobe.com.  Per prima cosa copieremo un file di configurazione esistente in un nuovo file in cui possiamo aggiungere le modifiche:
+Devi comprendere il file di inclusione di livello superiore perché sarà il punto di partenza per effettuare qualsiasi personalizzazione.  Per iniziare con un semplice esempio, abbiamo uno scenario in cui vogliamo aggiungere un nuovo nome di dominio che intendiamo puntare a questo Dispatcher.  L’esempio di dominio che utilizzeremo is we-retail.adobe.com.  Per prima cosa copieremo un file di configurazione esistente in un nuovo file in cui possiamo aggiungere le modifiche:
 
 ```
 $ cp /etc/httpd/conf.d/available_vhosts/aem_publish.vhost /etc/httpd/conf.d/available_vhosts/weretail_publish.vhost
@@ -259,13 +259,13 @@ VirtualHost *:80
 /VirtualHost
 ```
 
-Ora abbiamo aggiornato il nostro `ServerName` e `ServerAlias` per corrispondere ai nuovi nomi di dominio, nonché per aggiornare altre intestazioni di breadcrumb.  Ora attiviamo il nostro nuovo file per consentire ad Apache di sapere come utilizzarlo:
+Ora abbiamo aggiornato `ServerName` e `ServerAlias` per farli corrispondere ai nuovi nomi di dominio, nonché per aggiornare altre intestazioni di breadcrumb.  Ora attiviamo il nostro nuovo file per consentire ad Apache di sapere come utilizzarlo:
 
 ```
 $ cd /etc/httpd/conf.d/enabled_vhosts/; ln -s ../available_vhosts/weretail_publish.vhost .
 ```
 
-Ora il server web Apache sa che il dominio è qualcosa per cui dovrebbe produrre traffico, ma dobbiamo ancora informare il modulo Dispatcher che ha un nuovo nome di dominio da rispettare.  Inizieremo creando un nuovo `*_vhost.any` file `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` e all&#39;interno di quel file inseriremo il nome di dominio che vogliamo onorare:
+Ora il server web Apache sa che il dominio è qualcosa per cui dovrebbe produrre traffico, ma dobbiamo ancora informare il modulo Dispatcher che ha un nuovo nome di dominio da rispettare.  Inizieremo creando un nuovo file `*_vhost.any` `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` e all&#39;interno di tale file inseriremo il nome di dominio che vogliamo rispettare:
 
 ```
 "we-retail.adobe.com"
@@ -301,7 +301,7 @@ Dopo:
 }
 ```
 
-Ora abbiamo aggiornato il nome della farm e l’inclusione che utilizza nel `/virtualhosts` sezione della configurazione farm.  È necessario abilitare questo nuovo file farm in modo che possa essere utilizzato nella configurazione in esecuzione:
+Il nome della farm è stato aggiornato e l&#39;inclusione utilizzata nella sezione `/virtualhosts` della configurazione farm.  È necessario abilitare questo nuovo file farm in modo che possa essere utilizzato nella configurazione in esecuzione:
 
 ```
 $ cd /etc/httpd/conf.dispatcher.d/enabled_farms/; ln -s ../available_farms/400_weretail_publish_farm.any .
@@ -313,4 +313,4 @@ Ora dovremmo semplicemente ricaricare il servizio server web e utilizzare il nos
 >
 >Da notare che abbiamo cambiato solo le parti necessarie e abbiamo sfruttato le inclusioni e il codice esistenti forniti con i file di configurazione della linea di base.  Dobbiamo solo delineare l&#39;elemento che dobbiamo cambiare.  Semplifica le cose e ci consente di mantenere meno codici
 
-[Successivo -> Verifica stato del Dispatcher](./health-check.md)
+[Successivo -> Verifica stato Dispatcher](./health-check.md)

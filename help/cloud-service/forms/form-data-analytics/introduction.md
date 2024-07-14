@@ -22,14 +22,14 @@ ht-degree: 2%
 
 # Integrare AEM Forms con Adobe Analytics per creare rapporti sui campi dati dei moduli
 
-Scopri come integrare AEM Forms as a Cloud Service con Adobe Analytics nei moduli adattivi utilizzando i tag Experienci Platform. Questo esempio illustra i passaggi di configurazione e implementazione per generare rapporti dettagliati sul modo in cui i visitatori interagiscono con i moduli.
+Scopri come integrare AEM Forms as a Cloud Service con Adobe Analytics nei moduli adattivi utilizzando i tag Experience Platform. Questo esempio illustra i passaggi di configurazione e implementazione per generare rapporti dettagliati sul modo in cui i visitatori interagiscono con i moduli.
 
 ## Prerequisiti
 
 Per ottenere il massimo da questa esercitazione, ti consigliamo di soddisfare i seguenti prerequisiti:
 
 * Esperienza con AEM Forms as a Cloud Service
-* Accesso ai tag Experienci Platform
+* Accesso ai tag Experience Platform
 * Accesso ad Adobe Analytics
 
 Questa esercitazione utilizza un semplice modulo adattivo integrato in AEM Forms e misura l’invio dei moduli per i valori dello stato di residenza, nonché i campi che generano errori di convalida.

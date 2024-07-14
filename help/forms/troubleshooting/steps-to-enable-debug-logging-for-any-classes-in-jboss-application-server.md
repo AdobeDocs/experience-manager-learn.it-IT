@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Passaggi per abilitare la registrazione di debug per qualsiasi classe nel server applicazioni JBoss
 
-*Questo video illustra i passaggi per abilitare la registrazione di debug per qualsiasi classe nel server applicazioni JBoss.*
+*Questo video illustra i passaggi necessari per abilitare la registrazione di debug per qualsiasi classe nel server applicazioni JBoss.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335522?quality=12&learn=on)

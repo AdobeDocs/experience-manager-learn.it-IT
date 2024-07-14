@@ -24,7 +24,7 @@ ht-degree: 6%
 
 Benvenuti al tutorial in più parti per gli sviluppatori che desiderano integrare un SPA remoto basato su React (o Next.js) esistente con contenuti AEM modificabili tramite l’editor AEM SPA.
 
-Questo tutorial si basa su [App GraphQL WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it), app React che utilizza contenuti di frammenti di contenuto AEM tramite API GraphQL AEM, ma non fornisce alcuna funzione di authoring nel contesto dei contenuti SPA.
+Questo tutorial si basa sull&#39;[app WKND GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it), un&#39;app React che utilizza contenuti di frammenti di contenuto AEM tramite le API GraphQL dell&#39;AEM, ma non fornisce alcuna funzione di authoring nel contesto dei contenuti SPA.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
@@ -32,16 +32,16 @@ Questo tutorial si basa su [App GraphQL WKND](https://experienceleague.adobe.com
 
 Il tutorial che illustra come un SPA remoto, o un SPA in esecuzione al di fuori del contesto dell’AEM, può essere aggiornato per utilizzare e distribuire contenuti creati in AEM.
 
-La maggior parte delle attività del tutorial si concentrano sullo sviluppo JavaScript, tuttavia vengono trattati gli aspetti critici che ruotano intorno all’AEM. Questi aspetti includono la definizione di dove il contenuto viene creato e memorizzato nell&#39;AEM e la mappatura delle vie dell&#39;SPA verso le Pagine AEM.
+La maggior parte delle attività del tutorial si concentrano sullo sviluppo di JavaScript, tuttavia vengono trattati gli aspetti critici che ruotano intorno all’AEM. Questi aspetti includono la definizione di dove il contenuto viene creato e memorizzato nell&#39;AEM e la mappatura delle vie dell&#39;SPA verso le Pagine AEM.
 
-L’esercitazione è progettata per funzionare con **AEM as a Cloud Service** ed è composto da due progetti:
+Il tutorial è progettato per funzionare con **AEM as a Cloud Service** ed è composto da due progetti:
 
-1. Il __Progetto AEM__ contiene la configurazione e il contenuto che devono essere distribuiti all’AEM.
-1. __App WKND__ Il progetto è l&#39;SPA da integrare con AEM SPA Editor
+1. Il __progetto AEM__ contiene configurazione e contenuto che devono essere distribuiti all&#39;AEM.
+1. Il progetto __App WKND__ è l&#39;SPA da integrare con l&#39;editor SPA dell&#39;AEM
 
 ## Codice più recente
 
-+ Il punto iniziale del codice di questo tutorial è disponibile su [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa-tutorial) nel `remote-spa-tutorial` cartella.
++ Il punto iniziale del codice di questo tutorial si trova su [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa-tutorial) nella cartella `remote-spa-tutorial`.
 
 ## Prerequisiti
 
@@ -57,15 +57,15 @@ Questo tutorial richiede quanto segue:
 
 Questo tutorial presuppone:
 
-+ [Codice Microsoft® Visual Studio](https://visualstudio.microsoft.com/) come IDE
++ [Microsoft® Visual Studio Code](https://visualstudio.microsoft.com/) come IDE
 + Una directory di lavoro di `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial`
-+ Esecuzione dell’SDK dell’AEM come servizio di authoring il `http://localhost:4502`
-+ Esecuzione dell’SDK dell’AEM con il `admin` account con password `admin`
-+ Esecuzione dell’SPA il `http://localhost:3000`
++ Esecuzione dell&#39;SDK AEM come servizio Author in `http://localhost:4502`
++ Esecuzione dell&#39;SDK AEM con l&#39;account `admin` locale con password `admin`
++ Esecuzione dell&#39;SPA su `http://localhost:3000`
 
 >[!NOTE]
 >
-> **Hai bisogno di assistenza per configurare l’ambiente di sviluppo locale?** Consulta la [seguente guida per configurare un ambiente di sviluppo locale utilizzando SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it).
+> **Hai bisogno di assistenza per configurare l&#39;ambiente di sviluppo locale?** Consulta la [seguente guida per configurare un ambiente di sviluppo locale utilizzando SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it).
 
 ## 1. Configurare AEM per l’editor SPA
 
@@ -99,4 +99,4 @@ Infine, utilizzare i concetti illustrati nei capitoli precedenti per le route di
 
 ## Risorse aggiuntive
 
-+ [Componenti modificabili di React dell’AEM SPA](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
++ [Componenti modificabili di React dell&#39;SPA dell&#39;AEM](https://www.npmjs.com/package/@adobe/aem-react-editable-components)

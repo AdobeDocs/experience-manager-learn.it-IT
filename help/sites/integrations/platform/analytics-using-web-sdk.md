@@ -23,7 +23,7 @@ ht-degree: 0%
 
 # Integrare AEM Sites e Adobe Analytics con Platform Web SDK
 
-Scopri **approccio moderno** su come integrare Adobe Experience Manager (AEM) e Adobe Analytics utilizzando Platform Web SDK. Questo tutorial completo ti guida attraverso il processo di raccolta diretta [WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) dati sui clic di pageview e CTA. Ottieni informazioni preziose visualizzando i dati raccolti in Adobe Analysis Workspace, dove puoi esplorare varie metriche e dimensioni. Inoltre, esplora il set di dati di Platform per verificare e analizzare i dati. Unisciti a noi in questo percorso per sfruttare la potenza di AEM e Adobe Analytics per un processo decisionale basato sui dati.
+Scopri l’**approccio moderno** su come integrare Adobe Experience Manager (AEM) e Adobe Analytics utilizzando Platform Web SDK. Questo tutorial completo ti guida attraverso il processo di raccolta diretta dei dati di [WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) pageview e CTA click. Ottieni informazioni preziose visualizzando i dati raccolti in Adobe Analysis Workspace, dove puoi esplorare varie metriche e dimensioni. Inoltre, esplora il set di dati di Platform per verificare e analizzare i dati. Unisciti a noi in questo percorso per sfruttare la potenza di AEM e Adobe Analytics per un processo decisionale basato sui dati.
 
 ## Panoramica
 
@@ -38,30 +38,30 @@ Tracciando le visualizzazioni di pagina, il team è in grado di analizzare quali
 
 Per l’integrazione di Adobe Analytics tramite Platform Web SDK sono necessari i seguenti elementi.
 
-Sono stati completati i passaggi di configurazione della **[Integrare Experienci Platform Web SDK](./web-sdk.md)** esercitazione.
+Sono stati completati i passaggi di configurazione dell&#39;esercitazione **[Integrate Experience Platform Web SDK](./web-sdk.md)**.
 
-In entrata **AEM come Cloud Service**:
+In **AEM come Cloud Service**:
 
-+ [Accesso dell’amministratore AEM all’ambiente as a Cloud Service AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=it)
-+ Accesso a Cloud Manager da parte di Deployment Manager
-+ Clona e implementa [WKND - progetto Adobe Experience Manager di esempio](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) nell’ambiente as a Cloud Service dell’AEM.
++ [Accesso amministratore AEM all&#39;ambiente AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=it)
++ Accesso di Responsabile dell’implementazione a Cloud Manager
++ Clona e distribuisci [WKND - progetto Adobe Experience Manager di esempio](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) nell&#39;ambiente AEM as a Cloud Service.
 
-In entrata **Adobe Analytics**:
+In **Adobe Analytics**:
 
-+ Accesso per creare **Suite di rapporti**
-+ Accesso per creare **Analysis Workspace**
++ Accesso per creare **Report Suite**
++ Accesso per la creazione di **Analysis Workspace**
 
-In entrata **Experience Platform**:
+In **Experience Platform**:
 
-+ Accesso alla produzione predefinita, **Prod** sandbox.
++ Accesso alla sandbox di produzione predefinita **Prod**.
 + Accesso a **Schemi** in Gestione dati
 + Accesso a **Set di dati** in Gestione dati
-+ Accesso a **Flussi di dati** in Raccolta dati
-+ Accesso a **Tag**  in Raccolta dati
++ Accesso a **Datastreams** in Raccolta dati
++ Accesso a **Tag** in Raccolta dati
 
-Se non disponi delle autorizzazioni necessarie, l’amministratore di sistema utilizza [Adobe Admin Console](https://adminconsole.adobe.com/) può concedere le autorizzazioni necessarie.
+Se non disponi delle autorizzazioni necessarie, l&#39;amministratore di sistema che utilizza [Adobe Admin Console](https://adminconsole.adobe.com/) può concedere le autorizzazioni necessarie.
 
-Prima di approfondire il processo di integrazione di AEM e Analytics tramite Platform Web SDK, _ricapitolare i componenti essenziali e gli elementi chiave_ che sono stati stabiliti nel [Integrare Experienci Platform Web SDK](./web-sdk.md) esercitazione. Fornisce una solida base per l’integrazione.
+Prima di approfondire il processo di integrazione di AEM e Analytics tramite Platform Web SDK, _ricapitoliamo i componenti essenziali e gli elementi chiave_ stabiliti nell&#39;esercitazione [Integrate Experience Platform Web SDK](./web-sdk.md). Fornisce una solida base per l’integrazione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419873?quality=12&learn=on)
 
@@ -76,13 +76,13 @@ Il documento sul documento SDR fornisce una panoramica completa del piano di att
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419874?quality=12&learn=on)
 
-Per maggiori informazioni sui concetti e sui vari elementi da includere nel documento SDR, visita [Creare e gestire un documento Solution Design Reference (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html). Puoi anche scaricare un modello Excel di esempio, ma è disponibile anche la versione specifica WKND [qui](./assets/Initial-WKND-WebSDK-BRD-SDR.xlsx).
+Per ulteriori informazioni sui concetti e sui vari elementi da includere nel documento SDR, visitare il documento [Creazione e manutenzione di un riferimento alla progettazione della soluzione (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html). Puoi anche scaricare un modello Excel di esempio, tuttavia è disponibile anche la versione specifica per WKND [qui](./assets/Initial-WKND-WebSDK-BRD-SDR.xlsx).
 
 ## Configurazione di Analytics: suite di rapporti, Analysis Workspace
 
 Il primo passaggio consiste nel configurare Adobe Analytics, in particolare una suite di rapporti con variabili di conversione (o eVar) ed eventi di successo. Le variabili di conversione vengono utilizzate per misurare la causa e l’effetto. Gli eventi di successo vengono utilizzati per tenere traccia delle azioni.
 
-In questa esercitazione,  `eVar5, eVar6, and eVar7` track  _Nome pagina WKND, ID CTA WKND e nome CTA WKND_ rispettivamente e `event7` viene utilizzato per tracciare  _Evento clic CTA WKND_.
+In questa esercitazione, `eVar5, eVar6, and eVar7` tiene traccia rispettivamente di _Nome pagina WKND, ID CTA WKND e Nome CTA WKND_ e `event7` viene utilizzato per tenere traccia di _Evento clic CTA WKND_.
 
 Per analizzare, raccogliere informazioni e condividerle con altri dai dati raccolti, viene creato un progetto in Analysis Workspace.
 
@@ -97,41 +97,41 @@ Per ulteriori informazioni sulla configurazione e i concetti di Analytics, si co
 
 ## Aggiornare lo stream di dati - Aggiungere il servizio Analytics
 
-Un flusso di dati indica all’Edge Network di Platform dove inviare i dati raccolti. In [esercitazione precedente](./web-sdk.md), viene configurato un Datastream per inviare i dati all’Experience Platform. Questo flusso di dati viene aggiornato per inviare i dati alla suite di rapporti di Analytics configurata in [sopra](#setup-analytics---report-suite-analysis-workspace) passaggio.
+Un flusso di dati indica all’Edge Network di Platform dove inviare i dati raccolti. Nell&#39;[esercitazione precedente](./web-sdk.md), è configurato uno stream di dati per inviare i dati all&#39;Experience Platform. Questo flusso di dati è stato aggiornato per inviare i dati alla suite di rapporti di Analytics configurata nel passaggio [precedente](#setup-analytics---report-suite-analysis-workspace).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419876?quality=12&learn=on)
 
 ## Crea schema XDM
 
-Lo schema Experience Data Model (XDM) consente di standardizzare i dati raccolti. In [esercitazione precedente](./web-sdk.md), uno schema XDM con `AEP Web SDK ExperienceEvent` viene creato un gruppo di campi. Inoltre, utilizzando questo schema XDM viene creato un set di dati per memorizzare i dati raccolti nell’Experience Platform.
+Lo schema Experience Data Model (XDM) consente di standardizzare i dati raccolti. Nell&#39;[esercitazione precedente](./web-sdk.md), viene creato uno schema XDM con `AEP Web SDK ExperienceEvent` un gruppo di campi. Inoltre, utilizzando questo schema XDM viene creato un set di dati per memorizzare i dati raccolti nell’Experience Platform.
 
 Tuttavia, tale schema XDM non dispone di gruppi di campi specifici per Adobe Analytics per inviare i dati evento eVar. Viene creato un nuovo schema XDM invece di aggiornare lo schema esistente per evitare di memorizzare i dati evento eVar nella piattaforma.
 
-Il nuovo schema XDM creato ha `AEP Web SDK ExperienceEvent` e `Adobe Analytics ExperienceEvent Full Extension` gruppi di campi.
+Lo schema XDM appena creato ha `AEP Web SDK ExperienceEvent` e `Adobe Analytics ExperienceEvent Full Extension` gruppi di campi.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419877?quality=12&learn=on)
 
 
 ## Aggiorna proprietà tag
 
-In [esercitazione precedente](./web-sdk.md), viene creata una proprietà tag con elementi dati e una regola per raccogliere, mappare e inviare i dati di visualizzazione della pagina. Deve essere migliorato per:
+Nell&#39;[esercitazione precedente](./web-sdk.md) viene creata una proprietà tag contenente elementi dati e una regola per raccogliere, mappare e inviare i dati pageview. Deve essere migliorato per:
 
 + Mappatura del nome della pagina su `eVar5`
-+ Attivazione di **pageview** Chiamata di Analytics (o beacon di invio)
++ Attivazione della chiamata di Analytics **pageview** ( o invia beacon)
 + Raccolta di dati CTA tramite Adobe Client Data Layer
-+ Mappatura dell’ID e del nome CTA su `eVar6` e `eVar7` rispettivamente. Inoltre, il conteggio dei clic CTA per `event7`
-+ Attivazione di **clic collegamento** Chiamata di Analytics (o beacon di invio)
++ Mappatura di ID e nome CTA rispettivamente su `eVar6` e `eVar7`. Inoltre, il conteggio dei clic CTA su `event7`
++ Attivazione della chiamata di **clic sul collegamento** Analytics ( o invia beacon)
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419882?quality=12&learn=on)
 
 >[!TIP]
 >
->Puoi consultare il codice Data Element ed Rule-Event mostrato nel video, **espandi l’elemento pannello a soffietto sottostante**. Tuttavia, se NON utilizzi Adobe Client Data Layer, devi modificare il codice seguente, ma il concetto di definizione degli elementi dati e di utilizzo degli stessi nella definizione della regola è ancora applicabile.
+>L&#39;elemento dati e il codice di evento regola mostrati nel video sono disponibili come riferimento, **espandi il seguente elemento pannello a soffietto**. Tuttavia, se NON utilizzi Adobe Client Data Layer, devi modificare il codice seguente, ma il concetto di definizione degli elementi dati e di utilizzo degli stessi nella definizione della regola è ancora applicabile.
 
 +++ Codice elemento dati e regola-evento
 
-+ Il `Component ID` Codice elemento dati.
++ Codice elemento dati `Component ID`.
 
   ```javascript
   if(event && event.path && event.path.includes('.')) {    
@@ -143,7 +143,7 @@ In [esercitazione precedente](./web-sdk.md), viene creata una proprietà tag con
   }
   ```
 
-+ Il `Component Name` Codice elemento dati.
++ Codice elemento dati `Component Name`.
 
   ```javascript
   if(event && event.component && event.component.hasOwnProperty('dc:title')) {
@@ -155,7 +155,7 @@ In [esercitazione precedente](./web-sdk.md), viene creata una proprietà tag con
   }    
   ```
 
-+ Il `all pages - on load` **Rule-Condition** codice
++ Codice `all pages - on load` **Rule-Condition**
 
   ```javascript
   if(event && event.component && event.component.hasOwnProperty('@type') && event.component.hasOwnProperty('xdm:template')) {
@@ -165,7 +165,7 @@ In [esercitazione precedente](./web-sdk.md), viene creata una proprietà tag con
   }    
   ```
 
-+ Il `home page - cta click` **Rule-Event** codice
++ Codice `home page - cta click` **Rule-Event**
 
   ```javascript
   var componentClickedHandler = function(evt) {
@@ -197,7 +197,7 @@ In [esercitazione precedente](./web-sdk.md), viene creata una proprietà tag con
   });    
   ```
 
-+ Il `home page - cta click` **Rule-Condition** codice
++ Codice `home page - cta click` **Rule-Condition**
 
   ```javascript
   if(event && event.component && event.component.hasOwnProperty('@type')) {
@@ -214,22 +214,22 @@ In [esercitazione precedente](./web-sdk.md), viene creata una proprietà tag con
 
 +++
 
-Per ulteriori informazioni sull’integrazione dei componenti core AEM con Adobe Client Data Layer, consulta [Utilizzo di Adobe Client Data Layer con i componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=it).
+Per ulteriori informazioni sull&#39;integrazione dei componenti core AEM con Adobe Client Data Layer, fare riferimento alla [guida Utilizzo di Adobe Client Data Layer con i componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=it).
 
 
 >[!INFO]
 >
->Per una comprensione completa del **Mappa variabili** nel documento Solution Design Reference (SDR), accedere alla versione WKND completa per il download [qui](./assets/Final-WKND-WebSDK-BRD-SDR.xlsx).
+>Per informazioni complete sui dettagli delle proprietà della scheda **Mappa variabili** nel documento Solution Design Reference (SDR), accedi alla versione WKND completa per il download [qui](./assets/Final-WKND-WebSDK-BRD-SDR.xlsx).
 
 
 
 ## Verifica proprietà tag aggiornata in WKND
 
-Per garantire che la proprietà tag aggiornata sia generata, pubblicata e funzioni correttamente nelle pagine del sito WKND. Utilizza il browser web Google Chrome [Estensione Adobe Experience Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob):
+Per garantire che la proprietà tag aggiornata sia generata, pubblicata e funzioni correttamente nelle pagine del sito WKND. Utilizza l&#39;estensione di Adobe Experience Platform Debugger [](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) del browser Web Google Chrome:
 
 + Per verificare che la proprietà tag sia la versione più recente, controlla la data di build.
 
-+ Per verificare i dati dell’evento XDM per PageView e HomePage CTA Click, utilizza l’opzione di menu Experienci Platform Web SDK all’interno dell’estensione.
++ Per verificare i dati dell’evento XDM per PageView e HomePage CTA Click, utilizza l’opzione di menu Experience Platform Web SDK all’interno dell’estensione.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419883?quality=12&learn=on)
 
@@ -241,7 +241,7 @@ Per generare una quantità significativa di traffico a scopo di test, viene svil
 
 ## Verifica del set di dati: WKND pageview, dati CTA
 
-Il set di dati è un costrutto di archiviazione e gestione per una raccolta di dati come una tabella di database che segue uno schema. Il set di dati creato in [esercitazione precedente](./web-sdk.md) viene riutilizzato per verificare che i dati di pageview e CTA click vengano acquisiti nel set di dati Experienci Platform. Nell’interfaccia utente del set di dati, vengono visualizzati vari dettagli quali record totali, dimensioni e batch acquisiti, insieme a un grafico a barre visivamente accattivante.
+Il set di dati è un costrutto di archiviazione e gestione per una raccolta di dati come una tabella di database che segue uno schema. Il set di dati creato nell&#39;[esercitazione precedente](./web-sdk.md) viene riutilizzato per verificare che i dati di clic di pageview e CTA vengano acquisiti nel set di dati Experience Platform. Nell’interfaccia utente del set di dati, vengono visualizzati vari dettagli quali record totali, dimensioni e batch acquisiti, insieme a un grafico a barre visivamente accattivante.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419885?quality=12&learn=on)
 
@@ -249,9 +249,9 @@ Il set di dati è un costrutto di archiviazione e gestione per una raccolta di d
 
 Analysis Workspace è uno strumento potente all’interno di Adobe Analytics che consente di esplorare e visualizzare i dati in modo flessibile e interattivo. Fornisce un’interfaccia di trascinamento per creare rapporti personalizzati, eseguire segmentazioni avanzate e applicare varie visualizzazioni di dati.
 
-Riapriamo il progetto Analysis Workspace creato in [Configurazione analisi](#setup-analytics---report-suite-analysis-workspace) passaggio. In **Pagine principali** , esamina varie metriche quali visite, visitatori univoci, voci, frequenza di rimbalzo e altro ancora. Per valutare le prestazioni delle pagine WKND e dei CTA della home page, trascina le dimensioni (Nome pagina WKND, Nome CTA WKND) e le metriche specifiche per WKND (Evento clic WKND CTA). Queste informazioni sono utili per gli esperti di marketing per capire quali CTA sono più efficaci e prendere decisioni basate sui dati, in linea con i loro obiettivi aziendali.
+Riapriamo il progetto Analysis Workspace creato nel passaggio [Configura analisi](#setup-analytics---report-suite-analysis-workspace). Nella sezione **Pagine principali**, esamina varie metriche quali visite, visitatori univoci, voci, frequenza di rimbalzo e altro ancora. Per valutare le prestazioni delle pagine WKND e dei CTA della home page, trascina le dimensioni (Nome pagina WKND, Nome CTA WKND) e le metriche specifiche per WKND (Evento clic WKND CTA). Queste informazioni sono utili per gli esperti di marketing per capire quali CTA sono più efficaci e prendere decisioni basate sui dati, in linea con i loro obiettivi aziendali.
 
-Per visualizzare i percorsi di utenti, utilizza la visualizzazione Flusso, che inizia con **Nome pagina WKND** ed espanderli in vari percorsi.
+Per visualizzare i percorsi di utenti, utilizza la visualizzazione Flusso, che inizia con **Nome pagina WKND** ed espande in vari percorsi.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419886?quality=12&learn=on)
 
@@ -268,14 +268,14 @@ Implementando i passaggi consigliati e utilizzando le risorse fornite, come il d
 
 >[!AVAILABILITY]
 >
->Se preferisci il **video end-to-end** che copre l’intero processo di integrazione invece dei singoli video delle fasi di configurazione, puoi fare clic su [qui](https://video.tv.adobe.com/v/3419889/) per accedervi.
+>Se preferisci il **video end-to-end** che copre l&#39;intero processo di integrazione invece dei singoli video delle fasi di configurazione, puoi fare clic [qui](https://video.tv.adobe.com/v/3419889/) per accedervi.
 
 
 ## Risorse aggiuntive
 
-+ [Integrare Experienci Platform Web SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform/web-sdk.html)
++ [Integrare Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform/web-sdk.html)
 + [Utilizzo di Adobe Client Data Layer con i Componenti core](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=it)
-+ [Integrazione dei tag di raccolta dati Experienci Platform e AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=it)
++ [Integrazione dei tag di raccolta dati Experience Platform e AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=it)
 + [Panoramica di Adobe Experience Platform Web SDK e Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
-+ [Tutorial sulla raccolta dati](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
++ [Esercitazioni sulla raccolta dati](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
 + [Panoramica Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

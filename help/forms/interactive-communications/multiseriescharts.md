@@ -38,7 +38,7 @@ Per creare grafici a serie multiple in AEM Forms, è necessario creare un modell
 Per eseguire il test sul sistema, attieniti alla seguente procedura
 
 * [Scarica e importa MutualFundFactSheet.zip utilizzando Gestione pacchetti AEM.](assets/mutualfundfactsheet.zip)
-* [Scarica SeriesChartSampleData.json sul disco rigido.](assets/serieschartsampledata.json) Si tratta dei dati di esempio utilizzati per compilare il grafico.
+* [Scarica SeriesChartSampleData.json sul disco rigido.](assets/serieschartsampledata.json) Dati di esempio utilizzati per popolare il grafico.
 * [Passare a Forms e documenti.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Selezionare delicatamente il modello di comunicazione interattiva &quot;MutualGrowthFactSheet&quot;.
 * Fai clic sull’anteprima | Stampa canale | Carica dati di esempio.

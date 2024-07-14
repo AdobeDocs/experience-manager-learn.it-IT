@@ -51,11 +51,11 @@ Ogni aggiornamento del repository crea una nuova revisione del contenuto. Di con
 
 Elimina i file binari Lucene e riduci i requisiti di dimensione dell’archivio dati in esecuzione.
 
-#### [Archivio dati spazzatura](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=it)
+#### [Spazzatura archivio dati](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/data-store-garbage-collection.html?lang=it)
 
 Quando una risorsa in AEM viene eliminata, il riferimento al record dell’archivio dati sottostante può essere rimosso dalla gerarchia dei nodi, ma il record dell’archivio dati stesso rimane. Questo record dell’archivio dati senza riferimenti diventa &quot;spazzatura&quot; e non deve essere mantenuto. Nei casi in cui esistono numerose risorse senza riferimenti, è utile eliminarle, preservare lo spazio, ottimizzare il backup e le prestazioni di manutenzione del file system.
 
-#### [Svuotamento flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html)
+#### [Eliminazione flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html)
 
 Minimizzare il numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione.
 
@@ -73,7 +73,7 @@ Monitora lo spazio su disco per assicurarti di averne a sufficienza per l’arch
 
 ## Sviluppatore
 
-Prova a non utilizzare componenti personalizzati: utilizzare [Componenti core](https://www.aemcomponents.dev/). L’obiettivo dovrebbe essere quello di utilizzare l’80-90% dei componenti core e i componenti personalizzati solo con moderazione. Questo spesso richiede un nuovo modo di esaminare i componenti su una pagina: è necessario rendersi conto che i componenti possono essere facilmente rinominati da uno sviluppatore front-end che utilizza CSS. Tieni presente che questi componenti core possono essere incorporati l’uno nell’altro per ottenere risultati piuttosto complessi. Diventa creativo!
+Provare a non utilizzare componenti personalizzati. Utilizzare [componenti core](https://www.aemcomponents.dev/). L’obiettivo dovrebbe essere quello di utilizzare l’80-90% dei componenti core e i componenti personalizzati solo con moderazione. Questo spesso richiede un nuovo modo di esaminare i componenti su una pagina: è necessario rendersi conto che i componenti possono essere facilmente rinominati da uno sviluppatore front-end che utilizza CSS. Tieni presente che questi componenti core possono essere incorporati l’uno nell’altro per ottenere risultati piuttosto complessi. Diventa creativo!
 
 ### [Sistemi di stili](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en)
 
@@ -95,8 +95,8 @@ Pensa a lungo e scopri cosa potrebbe essere riutilizzato. Un piè di pagina? Una
 
 ## Generale
 
-Rimani al passo con i cambiamenti AEM continuando ad imparare - non rimanere bloccati nel passato. Utilizzare [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) e [Servizi di apprendimento digitale Adobe (ADLS)](https://learning.adobe.com/) per affinare le tue abilità.
+Rimani al passo con i cambiamenti AEM continuando ad imparare - non rimanere bloccati nel passato. Utilizza [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) e [Adobe Digital Learning Services (ADLS)](https://learning.adobe.com/) per affinare le tue abilità.
 
 ## Conclusione
 
-L&#39;AEM può essere un sistema vasto, e ci vogliono molti tipi di persone per farlo &quot;cantare&quot;. Dagli amministratori agli sviluppatori (sia sviluppatori front-end che hardcore Java) agli autori: c’è qualcosa per tutti! E se non avete voglia di occuparvi dell&#39;amministrazione quotidiana, c&#39;è sempre AMS e AEM as a Cloud Service.
+L&#39;AEM può essere un sistema vasto, e ci vogliono molti tipi di persone per farlo &quot;cantare&quot;. Dagli amministratori agli sviluppatori (sia sviluppatori front-end che hardcore Java) agli autori: c’è qualcosa per tutti! E se non hai voglia di gestire l&#39;amministrazione quotidiana, AMS e AEM as a Cloud Service sono sempre disponibili.

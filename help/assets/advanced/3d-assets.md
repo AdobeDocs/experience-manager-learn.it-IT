@@ -1,5 +1,5 @@
 ---
-title: Risorse 3D
+title: Assets 3D
 description: Scopri il supporto per risorse 3D in AEM Assets as a Cloud Service.
 version: Cloud Service
 feature: 3D Assets

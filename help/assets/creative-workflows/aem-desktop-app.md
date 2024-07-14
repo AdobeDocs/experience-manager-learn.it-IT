@@ -32,8 +32,8 @@ Utilizza l’app desktop AEM per semplificare l’accesso a qualsiasi risorsa ge
 
 >[!NOTE]
 >
-> [Adobe collegamento risorsa](./adobe-asset-link.md) è la soluzione dedicata di Adobe per l’utilizzo di risorse AEM nelle applicazioni Adobe Creative Cloud: Photoshop, Illustrator, InDesign. Quando si utilizza AEM Assets in queste applicazioni, Adobe Asset Link è da preferirsi rispetto all’app desktop AEM.
+> [Adobe Asset Link](./adobe-asset-link.md) è la soluzione dedicata di Adobe per l&#39;utilizzo di risorse AEM nelle applicazioni Adobe Creative Cloud: Photoshop, Illustrator, InDesign. Quando si utilizza AEM Assets in queste applicazioni, Adobe Asset Link è da preferirsi rispetto all’app desktop AEM.
 
 ## Risorse aggiuntive
 
-+ [Scarica la più recente app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)
++ [Scarica l&#39;ultima app desktop per AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)

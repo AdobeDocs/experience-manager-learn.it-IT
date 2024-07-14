@@ -1,5 +1,5 @@
 ---
-title: Comunicazioni as a Cloud Service AEM Forms
+title: AEM Forms as a Cloud Service Communications
 description: Scopri in che modo AEM Forms as a Cloud Service supporta il caso d’uso Comunicazioni.
 version: Cloud Service
 feature: Output Service

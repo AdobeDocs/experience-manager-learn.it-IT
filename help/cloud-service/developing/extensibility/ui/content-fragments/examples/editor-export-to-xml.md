@@ -21,9 +21,9 @@ ht-degree: 1%
 
 # Esporta frammento di contenuto in XML
 
-![Esempio di estensione del menu dell’intestazione dell’Editor frammento di contenuto](./assets/export-to-xml/hero.png){align="center"}
+![Esempio di estensione del menu dell&#39;intestazione dell&#39;Editor frammenti di contenuto](./assets/export-to-xml/hero.png){align="center"}
 
-È possibile aggiungere pulsanti personalizzati al menu dell’intestazione dell’Editor frammento di contenuto utilizzando `headerMenu` punto di estensione. Questo esempio mostra come aggiungere un pulsante al menu di intestazione e come gestire l’evento clic per esportare il frammento di contenuto attivo come XML o CSV.
+I pulsanti personalizzati possono essere aggiunti al menu di intestazione dell&#39;Editor frammento di contenuto utilizzando il punto di estensione `headerMenu`. Questo esempio mostra come aggiungere un pulsante al menu di intestazione e come gestire l’evento clic per esportare il frammento di contenuto attivo come XML o CSV.
 
 I pulsanti di intestazione possono esistere come un singolo pulsante o come un pulsante con elementi secondari. Questo esempio mostra come implementare un pulsante con elementi secondari, ma include il codice di commento per implementare un singolo pulsante.
 
@@ -45,7 +45,7 @@ Il codice mostra come è possibile ottenere il contenuto del frammento di conten
 
 `ExtensionRegistration.js`, mappato alla route index.html, è il punto di ingresso per l&#39;estensione AEM e definisce:
 
-+ Viene visualizzata la posizione del pulsante di estensione (`headerMenu`) nell’esperienza di authoring dell’AEM
++ La posizione del pulsante di estensione viene visualizzata (`headerMenu`) nell&#39;esperienza di creazione AEM
 + Definizione del pulsante di estensione nella funzione getButton()
 + Il gestore di clic per il pulsante, nella funzione onClick() o un elenco di elementi secondari e i relativi gestori di clic.
 
@@ -148,13 +148,13 @@ export default ExtensionRegistration;
 
 #### Dati dei frammenti di contenuto
 
-Il frammento di contenuto attivo può essere recuperato utilizzando `getContentFragment()` metodo su `guestConnection.host.contentFragment` oggetto.
+Il frammento di contenuto attivo può essere recuperato utilizzando il metodo `getContentFragment()` sull&#39;oggetto `guestConnection.host.contentFragment`.
 
 ```javascript
 const contentFragment = await guestConnection.host.contentFragment.getContentFragment();
 ```
 
-Il `contentFragment` L’oggetto contiene tutte le informazioni sul Frammento di contenuto, tra cui il percorso, il modello, i metadati, il contenuto principale ed eventuali varianti.
+L&#39;oggetto `contentFragment` contiene tutte le informazioni sul frammento di contenuto, inclusi il percorso, il modello, i metadati, il contenuto principale ed eventuali varianti.
 
 ```json
 {

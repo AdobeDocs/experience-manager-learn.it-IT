@@ -33,7 +33,7 @@ Le funzionalità di AEM Sites per la visualizzazione delle differenze di pagina 
 * **Verde**: nuovo contenuto
 * **Rosso**: contenuto rimosso
 
-**Modifiche ai componenti**
+**Modifiche al componente**
 
 * **Verde**: nuovo componente
 * **Rosso**: componente rimosso
@@ -47,4 +47,4 @@ La funzione Differenza pagina può essere utilizzata anche per identificare la d
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Documentazione sulle differenze tra pagine](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/page-diff.html)
+* [Documentazione sulle differenze di pagina](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/page-diff.html)

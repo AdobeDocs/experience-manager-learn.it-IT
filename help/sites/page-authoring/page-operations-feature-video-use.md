@@ -29,5 +29,5 @@ Scopri come eseguire operazioni di base di gestione delle pagine per una pagina 
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Modifica della documentazione sul contenuto di una pagina](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
+* [Modifica della documentazione sul contenuto delle pagine](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
 * [Guida rapida all’authoring delle pagine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)

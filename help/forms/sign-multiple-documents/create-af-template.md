@@ -25,12 +25,12 @@ Ai fini di questa esercitazione verrà creato un nuovo modello di modulo adattiv
 
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=12&learn=on)
 
-[Puoi seguire questo articolo per comprendere il processo di creazione di un modello di modulo adattivo e di un componente pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en#storing-and-retrieving-form-data)
+[Segui questo articolo per comprendere il processo di creazione di un modello di modulo adattivo e di un componente pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en#storing-and-retrieving-form-data)
 
 
 ## Risorse
 
-Il modello e il componente pagina utilizzati in questa esercitazione possono essere [scaricato da qui](assets/sign-multiple-forms-template.zip)
+Il modello e il componente pagina utilizzati in questa esercitazione possono essere [scaricati da qui](assets/sign-multiple-forms-template.zip)
 
 ## Passaggi successivi
 

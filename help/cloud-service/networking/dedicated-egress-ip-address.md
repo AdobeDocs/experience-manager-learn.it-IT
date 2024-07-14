@@ -24,31 +24,31 @@ Scopri come impostare e utilizzare l’indirizzo IP in uscita dedicato, che cons
 
 ## Cos’è l’indirizzo IP in uscita dedicato?
 
-L’indirizzo IP in uscita dedicato consente alle richieste dell’AEM as a Cloud Service di utilizzare un indirizzo IP dedicato, consentendo ai servizi esterni di filtrare le richieste in ingresso in base a tale indirizzo IP. Mi piace [porte di uscita flessibili](./flexible-port-egress.md), l’IP in uscita dedicato consente l’uscita su porte non standard.
+L’indirizzo IP in uscita dedicato consente alle richieste di AEM as a Cloud Service di utilizzare un indirizzo IP dedicato, consentendo ai servizi esterni di filtrare le richieste in ingresso in base a tale indirizzo IP. Come [porte di uscita flessibili](./flexible-port-egress.md), l&#39;IP di uscita dedicato consente di uscire su porte non standard.
 
-Un programma Cloud Manager può avere solo __singolo__ tipo di infrastruttura di rete. Assicurati che l’indirizzo IP in uscita dedicato sia il più [tipo appropriato di infrastruttura di rete](./advanced-networking.md) per l’AEM as a Cloud Service prima di eseguire i seguenti comandi.
+Un programma Cloud Manager può avere solo un tipo di infrastruttura di rete __singolo__. Prima di eseguire i seguenti comandi, assicurati che l&#39;indirizzo IP in uscita dedicato sia il tipo di infrastruttura di rete ](./advanced-networking.md) più [appropriato per il tuo AEM as a Cloud Service.
 
 >[!MORELIKETHIS]
 >
-> Leggere l’as a Cloud Service AEM [documentazione sulla configurazione di rete avanzata](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) per ulteriori dettagli sull’indirizzo IP in uscita dedicato.
+> Per ulteriori dettagli sull&#39;indirizzo IP in uscita dedicato, leggi la [documentazione sulla configurazione di rete avanzata di AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 ## Prerequisiti
 
-Durante la configurazione dell’indirizzo IP in uscita dedicato tramite le API di Cloud Manager sono necessari i seguenti elementi:
+Quando si imposta un indirizzo IP in uscita dedicato utilizzando le API di Cloud Manager, è necessario quanto segue:
 
-+ API di Cloud Manager con [Autorizzazioni di Proprietario business di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
-+ Accesso a [Credenziali di autenticazione API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
++ API Cloud Manager con [autorizzazioni Proprietario business Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
++ Accesso a [credenziali di autenticazione API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
    + ID organizzazione (ID organizzazione IMS)
    + ID client (alias chiave API)
    + Token di accesso (token Bearer)
 + ID del programma Cloud Manager
-+ ID dell’ambiente di Cloud Manager
++ ID dell’ambiente Cloud Manager
 
 Per ulteriori dettagli, consulta la procedura dettagliata seguente per scoprire come impostare, configurare e ottenere le credenziali API di Cloud Manager e come utilizzarle per effettuare una chiamata API di Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342235?quality=12&learn=on)
 
-Questa esercitazione utilizza `curl` per effettuare le configurazioni API di Cloud Manager. Il fornito `curl` I comandi presuppongono una sintassi Linux/macOS. Se si utilizza il prompt dei comandi di Windows, sostituire `\` carattere di interruzione di riga con `^`.
+Questo tutorial utilizza `curl` per creare le configurazioni API di Cloud Manager. I comandi `curl` forniti assumono una sintassi Linux/macOS. Se si utilizza il prompt dei comandi di Windows, sostituire il carattere di interruzione di riga `\` con `^`.
 
 ## Abilita indirizzo IP in uscita dedicato sul programma
 
@@ -58,37 +58,37 @@ Per iniziare, abilita e configura l’indirizzo IP in uscita dedicato su AEM as 
 
 >[!TAB Cloud Manager]
 
-Con Cloud Manager è possibile abilitare un indirizzo IP in uscita dedicato. I passaggi seguenti descrivono come abilitare l’indirizzo IP in uscita dedicato su AEM as a Cloud Service utilizzando Cloud Manager.
+È possibile abilitare un indirizzo IP in uscita dedicato utilizzando Cloud Manager. I passaggi seguenti descrivono come abilitare l’indirizzo IP in uscita dedicato su AEM as a Cloud Service utilizzando Cloud Manager.
 
-1. Accedi a [Adobe Experience Manager Cloud Manager](https://experience.adobe.com/cloud-manager/) Proprietario business di Cloud Manager.
+1. Accedi a [Adobe Experience Manager Cloud Manager](https://experience.adobe.com/cloud-manager/) come Proprietario business Cloud Manager.
 1. Passa al programma desiderato.
-1. Nel menu a sinistra, passa a __Servizi > Infrastruttura di rete__.
-1. Seleziona la __Aggiungere l&#39;infrastruttura di rete__ pulsante.
+1. Nel menu a sinistra, passare a __Servizi > Infrastruttura di rete__.
+1. Selezionare il pulsante __Aggiungi infrastruttura di rete__.
 
-   ![Aggiungere l&#39;infrastruttura di rete](./assets/cloud-manager__add-network-infrastructure.png)
+   ![Aggiungi infrastruttura di rete](./assets/cloud-manager__add-network-infrastructure.png)
 
-1. In __Aggiungere l&#39;infrastruttura di rete__ , seleziona la __Indirizzo IP in uscita dedicato__ e selezionare la __Regione__ per creare l’indirizzo IP in uscita dedicato.
+1. Nella finestra di dialogo __Aggiungi infrastruttura di rete__, seleziona l&#39;opzione __Indirizzo IP in uscita dedicato__ e la __Area__ per creare l&#39;indirizzo IP in uscita dedicato.
 
    ![Aggiungi indirizzo IP in uscita dedicato](./assets/dedicated-egress-ip-address/select-type.png)
 
-1. Seleziona __Salva__ per confermare l’aggiunta dell’indirizzo IP in uscita dedicato.
+1. Seleziona __Salva__ per confermare l&#39;aggiunta dell&#39;indirizzo IP in uscita dedicato.
 
    ![Conferma creazione indirizzo IP in uscita dedicato](./assets/dedicated-egress-ip-address/confirmation.png)
 
-1. Attendere che l&#39;infrastruttura di rete venga creata e contrassegnata come __Pronto__. Questo processo può richiedere fino a 1 ora.
+1. Attendere che l&#39;infrastruttura di rete venga creata e contrassegnata come __Pronta__. Questo processo può richiedere fino a 1 ora.
 
    ![Stato creazione indirizzo IP in uscita dedicato](./assets/dedicated-egress-ip-address/ready.png)
 
 Una volta creato l’indirizzo IP in uscita dedicato, puoi configurarlo utilizzando le API di Cloud Manager come descritto di seguito.
 
->[!TAB API di Cloud Manager]
+>[!TAB API Cloud Manager]
 
-È possibile abilitare un indirizzo IP in uscita dedicato utilizzando le API di Cloud Manager. I passaggi seguenti descrivono come abilitare l’indirizzo IP in uscita dedicato su AEM as a Cloud Service utilizzando l’API di Cloud Manager.
+È possibile abilitare un indirizzo IP in uscita dedicato utilizzando le API di Cloud Manager. I passaggi seguenti descrivono come abilitare l’indirizzo IP in uscita dedicato su AEM as a Cloud Service utilizzando l’API Cloud Manager.
 
 
-1. Innanzitutto, determina l’area geografica in cui è necessaria la rete avanzata, utilizzando l’API di Cloud Manager. [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operazione. Il `region name` è richiesto per effettuare chiamate API successive di Cloud Manager. In genere, viene utilizzata l’area in cui risiede l’ambiente di produzione.
+1. In primo luogo, determinare l&#39;area in cui è necessaria la rete avanzata utilizzando l&#39;operazione [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) dell&#39;API Cloud Manager. `region name` è necessario per effettuare chiamate API Cloud Manager successive. In genere, viene utilizzata l’area in cui risiede l’ambiente di produzione.
 
-   Trova l’area geografica dell’ambiente AEM as a Cloud Service in [Cloud Manager](https://my.cloudmanager.adobe.com) sotto [dettagli dell’ambiente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). Il nome dell’area visualizzato in Cloud Manager può essere [mappato al codice di regione](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments.it) utilizzato nell’API di Cloud Manager.
+   Trova l&#39;area geografica dell&#39;ambiente AEM as a Cloud Service in [Cloud Manager](https://my.cloudmanager.adobe.com) nei [dettagli ambiente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). Il nome dell&#39;area visualizzato in Cloud Manager può essere [mappato al codice dell&#39;area](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments.it) utilizzato nell&#39;API Cloud Manager.
 
    __richiesta HTTP listRegions__
 
@@ -100,9 +100,9 @@ Una volta creato l’indirizzo IP in uscita dedicato, puoi configurarlo utilizza
        -H 'Content-Type: application/json' 
    ```
 
-2. Abilitare l’indirizzo IP in uscita dedicato per un programma Cloud Manager utilizzando l’API di Cloud Manager [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operazione. Utilizza il `region` codice ottenuto dall’API di Cloud Manager `listRegions` operazione.
+2. Abilitare l&#39;indirizzo IP in uscita dedicato per un programma Cloud Manager utilizzando l&#39;operazione API Cloud Manager [createNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/). Utilizza il codice `region` appropriato ottenuto dall&#39;operazione `listRegions` dell&#39;API Cloud Manager.
 
-   __richiesta HTTP createNetworkInfrastructure__
+   __createNetworkInfrastructure richiesta HTTP__
 
    ```shell
    $ curl -X POST https://cloudmanager.adobe.io/api/program/{programId}/networkInfrastructures \
@@ -113,9 +113,9 @@ Una volta creato l’indirizzo IP in uscita dedicato, puoi configurarlo utilizza
        -d '{ "kind": "dedicatedEgressIp", "region": "va7" }'
    ```
 
-   Attendi 15 minuti affinché il programma Cloud Manager esegua il provisioning dell’infrastruttura di rete.
+   Attendere 15 minuti affinché il programma Cloud Manager esegua il provisioning dell&#39;infrastruttura di rete.
 
-3. Verifica che il programma sia stato completato __indirizzo IP in uscita dedicato__ configurazione tramite l’API di Cloud Manager [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) funzionamento, utilizzando `id` restituiti dal `createNetworkInfrastructure` richiesta HTTP nel passaggio precedente.
+3. Verificare che il programma abbia completato la configurazione di __indirizzo IP in uscita dedicato__ tramite l&#39;operazione [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) dell&#39;API Cloud Manager, utilizzando `id` restituito dalla richiesta HTTP `createNetworkInfrastructure` nel passaggio precedente.
 
    __richiesta HTTP getNetworkInfrastructure__
 
@@ -127,7 +127,7 @@ Una volta creato l’indirizzo IP in uscita dedicato, puoi configurarlo utilizza
        -H 'Content-Type: application/json'
    ```
 
-   Verifica che la risposta HTTP contenga un __stato__ di __pronto__. Se non è ancora pronto, ricontrolla lo stato ogni pochi minuti.
+   Verificare che la risposta HTTP contenga un __stato__ di __pronto__. Se non è ancora pronto, ricontrolla lo stato ogni pochi minuti.
 
 Una volta creato l’indirizzo IP in uscita dedicato, puoi configurarlo utilizzando le API di Cloud Manager come descritto di seguito.
 
@@ -136,7 +136,7 @@ Una volta creato l’indirizzo IP in uscita dedicato, puoi configurarlo utilizza
 
 ## Configurare proxy di indirizzi IP in uscita dedicati per ambiente
 
-1. Configurare __indirizzo IP in uscita dedicato__ configurazione in ogni ambiente AEM as a Cloud Service tramite l’API di Cloud Manager [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operazione.
+1. Configura la configurazione dell&#39;__indirizzo IP in uscita dedicato__ in ogni ambiente AEM as a Cloud Service utilizzando l&#39;operazione [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) dell&#39;API Cloud Manager.
 
    __enableEnvironmentAdvancedNetworkingConfiguration richiesta HTTP__
 
@@ -149,9 +149,9 @@ Una volta creato l’indirizzo IP in uscita dedicato, puoi configurarlo utilizza
        -d @./dedicated-egress-ip-address.json
    ```
 
-   Definire i parametri JSON in una `dedicated-egress-ip-address.json` e forniti a curl tramite `... -d @./dedicated-egress-ip-address.json`.
+   Definisci i parametri JSON in un `dedicated-egress-ip-address.json` e forniti per curl tramite `... -d @./dedicated-egress-ip-address.json`.
 
-   [Scarica l’esempio di indirizzo IP in uscita dedicato.json](./assets/dedicated-egress-ip-address.json). Questo file è solo un esempio. Configura il file come richiesto in base ai campi facoltativi/obbligatori documentati in [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
+   [Scarica l&#39;esempio di indirizzo-ip-in-uscita.json](./assets/dedicated-egress-ip-address.json). Questo file è solo un esempio. Configura il file come richiesto in base ai campi facoltativi/obbligatori documentati in [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
 
    ```json
    {
@@ -174,19 +174,19 @@ Una volta creato l’indirizzo IP in uscita dedicato, puoi configurarlo utilizza
    }
    ```
 
-   La firma HTTP della configurazione dell’indirizzo IP in uscita dedicato è diversa solo da [porta di uscita flessibile](./flexible-port-egress.md#enable-dedicated-egress-ip-address-per-environment) in quanto supporta anche il `nonProxyHosts` configurazione.
+   La firma HTTP della configurazione dell&#39;indirizzo IP in uscita dedicato differisce solo dalla [porta di uscita flessibile](./flexible-port-egress.md#enable-dedicated-egress-ip-address-per-environment) in quanto supporta anche la configurazione opzionale `nonProxyHosts`.
 
-   `nonProxyHosts` dichiara un set di host per i quali la porta 80 o 443 deve essere instradata attraverso gli intervalli di indirizzi IP condivisi predefiniti anziché attraverso l’IP in uscita dedicato. `nonProxyHosts` può essere utile in quanto il traffico in uscita attraverso gli IP condivisi viene ottimizzato automaticamente da Adobe.
+   `nonProxyHosts` dichiara un set di host per i quali la porta 80 o 443 deve essere instradata attraverso gli intervalli di indirizzi IP condivisi predefiniti anziché attraverso l&#39;IP in uscita dedicato. `nonProxyHosts` può essere utile in quanto il traffico in uscita attraverso gli IP condivisi viene ottimizzato automaticamente da Adobe.
 
-   Per ogni `portForwards` mappatura, la rete avanzata definisce la seguente regola di inoltro:
+   Per ogni mappatura `portForwards`, la rete avanzata definisce la seguente regola di inoltro:
 
    | Host proxy | Porta proxy |  | Host esterno | Porta esterna |
    |---------------------------------|----------|----------------|------------------|----------|
    | `AEM_PROXY_HOST` | `portForwards.portOrig` | → | `portForwards.name` | `portForwards.portDest` |
 
-1. Per ogni ambiente, verifica che le regole di uscita siano attive utilizzando l’API di Cloud Manager. [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operazione.
+1. Per ogni ambiente, verifica che le regole di uscita siano attive utilizzando l&#39;operazione API [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) di Cloud Manager.
 
-   __richiesta HTTP getEnvironmentAdvancedNetworkingConfiguration__
+   __getEnvironmentAdvancedNetworkingConfiguration richiesta HTTP__
 
    ```shell
    $ curl -X GET https://cloudmanager.adobe.io/api/program/{programId}/environment/{environmentId}/advancedNetworking \
@@ -196,19 +196,19 @@ Una volta creato l’indirizzo IP in uscita dedicato, puoi configurarlo utilizza
        -H 'Content-Type: application/json'
    ```
 
-1. Le configurazioni degli indirizzi IP in uscita dedicati possono essere aggiornate utilizzando l’API di Cloud Manager [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) operazione. Ricorda `enableEnvironmentAdvancedNetworkingConfiguration` è un `PUT` , pertanto tutte le regole devono essere fornite con ogni chiamata di questa operazione.
+1. Le configurazioni degli indirizzi IP in uscita dedicati possono essere aggiornate utilizzando l&#39;operazione API [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) di Cloud Manager. Ricorda che `enableEnvironmentAdvancedNetworkingConfiguration` è un&#39;operazione `PUT`, pertanto tutte le regole devono essere fornite con ogni chiamata di questa operazione.
 
-1. Ottenere il __indirizzo IP in uscita dedicato__ utilizzando un sistema di risoluzione DNS (ad esempio [DNSChecker.org](https://dnschecker.org/)) sull&#39;host: `p{programId}.external.adobeaemcloud.com`, o eseguendo `dig` dalla riga di comando.
+1. Ottenere l&#39;__indirizzo IP in uscita dedicato__ utilizzando un sistema di risoluzione DNS (ad esempio [DNSChecker.org](https://dnschecker.org/)) nell&#39;host `p{programId}.external.adobeaemcloud.com` oppure eseguendo `dig` dalla riga di comando.
 
    ```shell
    $ dig +short p{programId}.external.adobeaemcloud.com
    ```
 
-   Il nome host non può essere `pinged`, in quanto è un’uscita e _non_ e l&#39;ingresso.
+   Il nome host non può essere `pinged`, poiché è in uscita e _non_ e in ingresso.
 
-   L’indirizzo IP in uscita dedicato è condiviso da tutti gli ambienti AEM as a Cloud Service nel programma.
+   L’indirizzo IP in uscita dedicato è condiviso da tutti gli ambienti AEM as a Cloud Service del programma.
 
-1. Ora puoi utilizzare l’indirizzo IP in uscita dedicato nel codice AEM e nella configurazione personalizzati. Spesso quando si utilizza un indirizzo IP in uscita dedicato, i servizi esterni a cui l’AEM as a Cloud Service si connette sono configurati per consentire solo il traffico da questo indirizzo IP dedicato.
+1. Ora puoi utilizzare l’indirizzo IP in uscita dedicato nel codice AEM e nella configurazione personalizzati. Spesso, quando si utilizza un indirizzo IP in uscita dedicato, i servizi esterni a cui AEM as a Cloud Service si connette sono configurati per consentire solo il traffico da questo indirizzo IP dedicato.
 
 ## Connessione a servizi esterni tramite indirizzo IP in uscita dedicato
 
@@ -223,7 +223,7 @@ Le richieste HTTP/HTTPS dall’AEM sulle porte standard (80/443) sono consentite
 
 >[!TIP]
 >
-> Consulta la documentazione dedicata dell’indirizzo IP in uscita dell’as a Cloud Service AEM per [insieme completo di regole di instradamento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
+> Consulta la documentazione dedicata sugli indirizzi IP in uscita di AEM as a Cloud Service per [l&#39;intero set di regole di routing](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 
 ### HTTP/HTTPS
@@ -238,7 +238,7 @@ Quando si creano connessioni HTTP/HTTPS dall’AEM, quando si utilizza un indiri
     <a  href="./examples/http-dedicated-egress-ip-vpn.md"><img alt="HTTP/HTTPS" src="./assets/code-examples__http.png"/></a>
     <div><strong><a href="./examples/http-dedicated-egress-ip-vpn.md">HTTP/HTTPS</a></strong></div>
     <p>
-        Esempio di codice Java™ per rendere la connessione HTTP/HTTPS dall’AEM as a Cloud Service a un servizio esterno utilizzando il protocollo HTTP/HTTPS.
+        Esempio di codice Java™ per stabilire una connessione HTTP/HTTPS da AEM as a Cloud Service a un servizio esterno utilizzando il protocollo HTTP/HTTPS.
     </p>
 </td>   
 <td></td>   
@@ -255,7 +255,7 @@ Durante la creazione di connessioni non HTTP/HTTPS (ad es. SQL, SMTP e così via
 | `AEM_PROXY_HOST` | Host proxy per connessioni non HTTP/HTTPS | `System.getenv("AEM_PROXY_HOST")` | `$[env:AEM_PROXY_HOST]` |
 
 
-Le connessioni ai servizi esterni vengono quindi richiamate tramite `AEM_PROXY_HOST` e la porta mappata (`portForwards.portOrig`), che AEM indirizza quindi al nome host esterno mappato (`portForwards.name`) e porta (`portForwards.portDest`).
+Le connessioni ai servizi esterni vengono quindi chiamate tramite `AEM_PROXY_HOST` e la porta mappata (`portForwards.portOrig`), che AEM indirizza quindi al nome host esterno mappato (`portForwards.name`) e alla porta (`portForwards.portDest`).
 
 | Host proxy | Porta proxy |  | Host esterno | Porta esterna |
 |---------------------------------|----------|----------------|------------------|----------|

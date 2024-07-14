@@ -23,7 +23,7 @@ Passaggi necessari per la creazione del profilo Adobe Campaign Standard tramite 
 
 ## Crea autenticazione personalizzata {#create-custom-authentication}
 
-Durante la creazione di un’origine dati con il file swagger, AEM Forms supporta i seguenti tipi di autenticazione
+Durante la creazione di Data Source con il file swagger, AEM Forms supporta i seguenti tipi di autenticazione
 
 * Nessuno
 * OAuth 2.0
@@ -31,7 +31,7 @@ Durante la creazione di un’origine dati con il file swagger, AEM Forms support
 * Chiave API
 * Autenticazione personalizzata
 
-![campaign fdm](assets/campaignfdm.gif)
+![campaignFdm](assets/campaignfdm.gif)
 
 Dovremo utilizzare l’autenticazione personalizzata per effettuare chiamate REST ad Adobe Campaign Standard.
 
@@ -102,20 +102,21 @@ private Logger log = LoggerFactory.getLogger(CampaignAuthentication.class);
 }
 ```
 
-## Crea origine dati {#create-data-source}
+## Creazione di Data Source {#create-data-source}
 
 Il primo passaggio consiste nel creare il file Swagger. Il file swagger definisce l’API REST che verrà utilizzata per creare un profilo in Adobe Campaign Standard. Il file swagger definisce i parametri di input e i parametri di output dell’API REST.
 
-Un&#39;origine dati viene creata utilizzando il file Swagger. Durante la creazione di Origine dati è possibile specificare il tipo di autenticazione. In questo caso utilizzeremo l’autenticazione personalizzata per l’autenticazione su Adobe Campaign. Il codice elencato sopra è stato utilizzato per l’autenticazione su Adobe Campaign.
+Un&#39;origine dati viene creata utilizzando il file Swagger. Durante la creazione di Data Source è possibile specificare il tipo di autenticazione. In questo caso utilizzeremo l’autenticazione personalizzata per l’autenticazione su Adobe Campaign. Il codice elencato sopra è stato utilizzato per l’autenticazione su Adobe Campaign.
 
-Un file swagger di esempio viene fornito come parte del file della risorsa relativo a questo articolo.**Assicurati di modificare l’host e basePath nel file swagger in modo che corrispondano all’istanza ACS**
+Un file swagger di esempio viene fornito come parte del file della risorsa relativo a questo articolo.**Assicurati di modificare l&#39;host e basePath nel file Swagger in modo che corrispondano alla tua istanza ACS**
 
 ## Testare la soluzione {#test-the-solution}
 
 Per testare la soluzione, segui i passaggi seguenti:
-* [Accertati di aver seguito i passaggi descritti qui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [Assicurarsi di aver seguito i passaggi descritti qui](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Scarica e decomprimi questo file per ottenere il file Swagger](assets/create-acs-profile-swagger-file.zip)
-* Creare un’origine dati utilizzando il file swagger Creare un modello dati per i moduli e basarlo sull’origine dati creata nel passaggio precedente
+* Creare Data Source utilizzando il file Swagger
+Crea modello dati modulo e basalo sul Source dati creato nel passaggio precedente
 * Crea un modulo adattivo basato sul modello dati del modulo creato nel passaggio precedente.
 * Trascina e rilascia i seguenti elementi dalla scheda origini dati al modulo adattivo
 

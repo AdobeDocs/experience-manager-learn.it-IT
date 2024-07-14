@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Visualizzazione Struttura in AEM Forms Designer
 
-Breve video sulla vista Progettazione in AEM Forms Designer
+Breve video sulla vista designer in AEM Forms Designer
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427615/?learn=on)

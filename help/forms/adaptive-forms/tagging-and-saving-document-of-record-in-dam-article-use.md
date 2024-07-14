@@ -168,16 +168,16 @@ Per fare in modo che questo esempio funzioni sul tuo sistema, segui i passaggi e
 
 * Fai clic su Crea | File Carica e carica il file tag-and-store-in-dam-adaptive-form.zip
 
-* [Importare le risorse dell’articolo](assets/tag-and-store-in-dam-assets.zip) utilizzo del gestore di pacchetti AEM
-* Apri [modulo di esempio in modalità anteprima](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Compila tutti i campi** e invia il modulo.
-* [Passa alla cartella dei picchi in DAM](http://localhost:4502/assets.html/content/dam/Peak). Dovresti vedere DoR nella cartella Peak. Controllare le proprietà del documento. Deve essere contrassegnato in modo appropriato.
+* [Importa le risorse dell&#39;articolo](assets/tag-and-store-in-dam-assets.zip) tramite Gestione pacchetti AEM
+* Apri il [modulo di esempio in modalità anteprima](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Compila tutti i campi** e invia il modulo.
+* [Vai alla cartella dei picchi in DAM](http://localhost:4502/assets.html/content/dam/Peak). Dovresti vedere DoR nella cartella Peak. Controllare le proprietà del documento. Deve essere contrassegnato in modo appropriato.
 Complimenti!! L&#39;esempio è stato installato correttamente nel sistema
 
-* Esaminiamo la [workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) che viene attivata all’invio del modulo.
+* Esaminiamo il [flusso di lavoro](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) che viene attivato all&#39;invio del modulo.
 * Il primo passaggio del flusso di lavoro crea un nome file univoco concatenando il nome dei richiedenti e la provincia di residenza.
 * Il secondo passaggio del flusso di lavoro passa la gerarchia dei tag e gli elementi dei campi modulo che devono essere taggati. Il passaggio del processo estrae il valore dai dati inviati e crea il titolo del tag che deve essere contrassegnato nel documento.
 * Se desideri memorizzare il DoR in una cartella diversa in DAM, specifica il percorso della cartella utilizzando le proprietà di configurazione specificate nella schermata seguente.
 
 Gli altri due parametri sono specifici per DoR e Percorso file di dati, come specificato nelle opzioni di invio del modulo adattivo. Assicurati che i valori specificati qui corrispondano ai valori specificati nelle opzioni di invio del modulo adattivo.
 
-![Tag Dor](assets/tag_dor_service_configuration.gif)
+![Porta tag](assets/tag_dor_service_configuration.gif)

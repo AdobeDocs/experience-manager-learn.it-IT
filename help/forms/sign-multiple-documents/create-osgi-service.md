@@ -165,7 +165,7 @@ public void updateSignatureStatus(String formData, String guid) {
 
 ## Ottieni modulo successivo da firmare
 
-Il seguente codice è stato utilizzato per ottenere il modulo successivo per la firma per un determinato customerID con stato 0. Se la query SQL non restituisce alcuna riga, verrà restituita la stringa **&quot;AllDone&quot;** che indica che non sono presenti altri moduli per la firma per l’id cliente specificato.
+Il seguente codice è stato utilizzato per ottenere il modulo successivo per la firma per un determinato customerID con stato 0. Se la query SQL non restituisce alcuna riga, verrà restituita la stringa **&quot;AllDone&quot;** che indica che non sono presenti altri moduli per la firma per l&#39;ID cliente specificato.
 
 ```java
 @Override
@@ -205,7 +205,7 @@ public String getNextFormToSign(int customerID) {
 
 ## Risorse
 
-Il pacchetto OSGi con i servizi sopra menzionati può essere [scaricato da qui](assets/sign-multiple-forms.jar)
+Il bundle OSGi con i servizi sopra menzionati può essere [scaricato da qui](assets/sign-multiple-forms.jar)
 
 ## Passaggi successivi
 

@@ -22,15 +22,15 @@ ht-degree: 0%
 
 # Best practice per l’indicizzazione nell’AEM
 
-Scopri le best practice di indicizzazione in Adobe Experience Manager (AEM). Apache [Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/query.html) potenzia la ricerca di contenuti in AEM e i seguenti sono punti chiave:
+Scopri le best practice di indicizzazione in Adobe Experience Manager (AEM). Apache [Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/query.html) potenzia la ricerca dei contenuti nell&#39;AEM e i punti chiave sono i seguenti:
 
-- Come funzione integrata, AEM fornisce vari indici per supportare le funzionalità di ricerca e query, ad esempio `damAssetLucene`, `cqPageLucene` e altro ancora.
-- Tutte le definizioni degli indici sono memorizzate nell’archivio in `/oak:index` nodo.
+- Per supportare la funzionalità di ricerca e query, AEM fornisce vari indici, ad esempio `damAssetLucene`, `cqPageLucene` e altro ancora.
+- Tutte le definizioni degli indici sono archiviate nell&#39;archivio nel nodo `/oak:index`.
 - AEM as a Cloud Service supporta solo gli indici Oak Lucene.
-- La configurazione dell’indice deve essere gestita nella base di codice del progetto AEM e distribuita utilizzando le pipeline CI/CD di Cloud Manager.
-- Se per una determinata query sono disponibili più indici, il **viene utilizzato un indice con il costo stimato più basso**.
-- Se non è disponibile alcun indice per una determinata query, la struttura del contenuto viene attraversata per trovare il contenuto corrispondente. Tuttavia, il limite predefinito tramite `org.apache.jackrabbit.oak.query.QueryEngineSettingsService` deve attraversare solo 10.000 nodi.
-- I risultati di una query sono **filtrato all&#39;ultimo** per garantire che l&#39;utente corrente disponga dell&#39;accesso in lettura. Ciò significa che i risultati della query potrebbero essere inferiori al numero di nodi indicizzati.
+- La configurazione dell’indice deve essere gestita nella base di codice del progetto AEM e implementata utilizzando le pipeline CI/CD di Cloud Manager.
+- Se per una determinata query sono disponibili più indici, viene utilizzato l&#39;**indice con il costo stimato più basso**.
+- Se non è disponibile alcun indice per una determinata query, la struttura del contenuto viene attraversata per trovare il contenuto corrispondente. Tuttavia, il limite predefinito tramite `org.apache.jackrabbit.oak.query.QueryEngineSettingsService` è quello di attraversare solo 10.000 nodi.
+- I risultati di una query sono **filtrati almeno** per garantire che l&#39;utente corrente disponga dell&#39;accesso in lettura. Ciò significa che i risultati della query potrebbero essere inferiori al numero di nodi indicizzati.
 - La reindicizzazione dell’archivio dopo le modifiche della definizione dell’indice richiede tempo e dipende dalle dimensioni dell’archivio.
 
 Per disporre di una funzionalità di ricerca efficiente e corretta che non influisca sulle prestazioni dell’istanza AEM, è importante comprendere le best practice per l’indicizzazione.
@@ -39,45 +39,45 @@ Per disporre di una funzionalità di ricerca efficiente e corretta che non influ
 
 A volte, è necessario creare indici personalizzati per supportare i requisiti di ricerca. Tuttavia, segui le linee guida riportate di seguito prima di creare indici personalizzati:
 
-- Comprendi i requisiti di ricerca e verifica se gli indici OOTB possono supportare i requisiti di ricerca. Utilizzare **Strumento Prestazioni query**, disponibile all’indirizzo [SDK locale](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) e AEMCS tramite Developer Console oppure `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`.
+- Comprendi i requisiti di ricerca e verifica se gli indici OOTB possono supportare i requisiti di ricerca. Utilizza **Strumento Prestazioni query**, disponibile presso [SDK locale](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) e AEMCS tramite Developer Console o `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`.
 
-- Definisci una query ottimale, utilizza [ottimizzazione delle query](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) diagramma di flusso e [Scheda di riferimento rapido per le query JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en) per riferimento.
+- Definisci una query ottimale, utilizza il [diagramma di flusso dell&#39;ottimizzazione delle query](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) e [Scheda di riferimento rapido per le query JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en) per riferimento.
 
-- Se gli indici OOTB non supportano i requisiti di ricerca, sono disponibili due opzioni. Tuttavia, è necessario rivedere [Suggerimenti per la creazione di indici efficienti](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
+- Se gli indici OOTB non supportano i requisiti di ricerca, sono disponibili due opzioni. Tuttavia, consulta i [suggerimenti per la creazione di indici efficienti](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
    - Personalizza l’indice OOTB: opzione preferita in quanto è facile da mantenere e aggiornare.
    - Indice completamente personalizzato: solo se l’opzione precedente non funziona.
 
 ### Personalizzare l’indice OOTB
 
-- In entrata **AEMCS**, quando si personalizza l’utilizzo dell’indice OOTB **\&lt;ootbindexname>-\&lt;productversion>-custom-\&lt;customversion>** convenzione di denominazione. Ad esempio: `cqPageLucene-custom-1` o `damAssetLucene-8-custom-1`. Questo consente di unire la definizione dell’indice personalizzato ogni volta che l’indice OOTB viene aggiornato. Consulta [Modifiche agli indici predefiniti](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/indexing) per ulteriori dettagli.
+- In **AEMCS**, per personalizzare l&#39;indice OOTB, utilizzare la convenzione di denominazione **\&lt;NomeIndiceOOTBI>-\&lt;VersioneProdotto>-custom-\&lt;VersionePersonalizzata>**. Ad esempio, `cqPageLucene-custom-1` o `damAssetLucene-8-custom-1`. Questo consente di unire la definizione dell’indice personalizzato ogni volta che l’indice OOTB viene aggiornato. Per ulteriori dettagli, vedi [Modifiche agli indici predefiniti](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/indexing).
 
-- In entrata **AEM 6.X**, la denominazione precedente _non funziona_, tuttavia è sufficiente aggiornare l’indice OOTB con le proprietà necessarie nel `indexRules` nodo.
+- In **AEM 6.X**, la denominazione _non funziona_, ma è sufficiente aggiornare l&#39;indice OOTB con le proprietà necessarie nel nodo `indexRules`.
 
-- Copia sempre la definizione più recente dell’indice OOTB dall’istanza AEM utilizzando CRX DE Package Manager (/crx/packmgr/), rinominala e aggiungi personalizzazioni all’interno del file XML.
+- Copiate sempre la definizione dell&#39;indice OOTB più recente dall&#39;istanza AEM utilizzando Gestione pacchetti di CRX DE (/crx/packmgr/), rinominatela e aggiungete personalizzazioni all&#39;interno del file XML.
 
-- Memorizza la definizione dell’indice nel progetto AEM in `ui.apps/src/main/content/jcr_root/_oak_index` e distribuiscilo utilizzando le pipeline CI/CD di Cloud Manager. Consulta [Distribuzione di definizioni indice personalizzate](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/indexing) per ulteriori dettagli.
+- Archivia la definizione dell&#39;indice nel progetto AEM in `ui.apps/src/main/content/jcr_root/_oak_index` e distribuiscila con le pipeline CI/CD di Cloud Manager. Per ulteriori dettagli, vedere [Distribuzione delle definizioni di indice personalizzato](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/indexing).
 
 ### Indice completamente personalizzato
 
 La creazione di un indice completamente personalizzato deve essere l’ultima opzione disponibile e solo se quella precedente non funziona.
 
-- Quando crei un indice completamente personalizzato, utilizza **\&lt;prefix>.\&lt;customindexname>-\&lt;version>-custom-\&lt;customversion>** convenzione di denominazione. Ad esempio, `wknd.adventures-1-custom-1`. Questo consente di evitare conflitti di denominazione. Qui, `wknd` è il prefisso `adventures` è il nome dell’indice personalizzato. Questa convenzione è applicabile sia per AEM 6.X che per AEMCS e aiuta a preparare la futura migrazione ad AEMCS.
+- Per creare un indice completamente personalizzato, utilizzare **\&lt;prefisso>.Convenzione di denominazione \&lt;customIndexName>-\&lt;version>-custom-\&lt;customVersion>**. Ad esempio, `wknd.adventures-1-custom-1`. Questo consente di evitare conflitti di denominazione. `wknd` è il prefisso e `adventures` è il nome di indice personalizzato. Questa convenzione è applicabile sia per AEM 6.X che per AEMCS e aiuta a preparare la futura migrazione ad AEMCS.
 
-- AEMCS supporta solo gli indici Lucene; pertanto, per prepararsi alla futura migrazione ad AEMCS, utilizza sempre gli indici Lucene. Consulta [Indici Lucene e indici proprietà](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing) per ulteriori dettagli.
+- AEMCS supporta solo gli indici Lucene; pertanto, per prepararsi alla futura migrazione ad AEMCS, utilizza sempre gli indici Lucene. Per ulteriori dettagli, vedi [Indici Lucene vs Indici proprietà](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing).
 
-- Evita di creare un indice personalizzato sullo stesso tipo di nodo dell’indice OOTB. È invece possibile personalizzare l’indice OOTB con le proprietà necessarie nella sezione `indexRules` nodo. Ad esempio, non creare un indice personalizzato sul `dam:Asset` tipo di nodo, ma personalizza la `damAssetLucene` indice. _È stata una causa comune di problemi funzionali e di prestazioni_.
+- Evita di creare un indice personalizzato sullo stesso tipo di nodo dell’indice OOTB. Personalizzare invece l&#39;indice OOTB con le proprietà necessarie nel nodo `indexRules`. Ad esempio, non creare un indice personalizzato sul tipo di nodo `dam:Asset`, ma personalizzare l&#39;indice `damAssetLucene` OOTB. _È stata una causa comune di problemi funzionali e di prestazioni_.
 
-- Inoltre, evita di aggiungere più tipi di nodo, ad esempio `cq:Page` e `cq:Tag` nelle regole di indicizzazione (`indexRules`). È invece possibile creare indici separati per ogni tipo di nodo.
+- Evitare inoltre di aggiungere più tipi di nodo, ad esempio `cq:Page` e `cq:Tag`, nel nodo delle regole di indicizzazione (`indexRules`). È invece possibile creare indici separati per ogni tipo di nodo.
 
-- Come menzionato nella sezione precedente, memorizza la definizione dell’indice nel progetto AEM all’indirizzo `ui.apps/src/main/content/jcr_root/_oak_index` e distribuiscilo utilizzando le pipeline CI/CD di Cloud Manager. Consulta [Distribuzione di definizioni indice personalizzate](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/indexing) per ulteriori dettagli.
+- Come indicato nella sezione precedente, archivia la definizione dell’indice nel progetto AEM in `ui.apps/src/main/content/jcr_root/_oak_index` e distribuiscila con le pipeline CI/CD di Cloud Manager. Per ulteriori dettagli, vedere [Distribuzione delle definizioni di indice personalizzato](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/indexing).
 
 - Le linee guida per la definizione dell’indice sono:
-   - Tipo di nodo (`jcr:primaryType`) dovrebbe essere `oak:QueryIndexDefinition`
-   - Tipo di indice (`type`) dovrebbe essere `lucene`
-   - Proprietà asincrona (`async`) dovrebbe essere `async,nrt`
-   - Utilizzare `includedPaths` ed evitare `excludedPaths` proprietà. Sempre impostato `queryPaths` allo stesso valore di `includedPaths` valore.
-   - Per applicare la restrizione del percorso, utilizzare `evaluatePathRestrictions` e impostarla su `true`.
-   - Utilizzare `tags` proprietà per assegnare tag all&#39;indice e durante la query specificare il valore dei tag per utilizzare l&#39;indice. La sintassi generale della query è `<query> option(index tag <tagName>)`.
+   - Il tipo di nodo (`jcr:primaryType`) deve essere `oak:QueryIndexDefinition`
+   - Il tipo di indice (`type`) deve essere `lucene`
+   - La proprietà asincrona (`async`) deve essere `async,nrt`
+   - Usa `includedPaths` ed evita la proprietà `excludedPaths`. Imposta sempre il valore `queryPaths` sullo stesso valore del valore `includedPaths`.
+   - Per applicare la restrizione del percorso, utilizzare la proprietà `evaluatePathRestrictions` e impostarla su `true`.
+   - Utilizzare la proprietà `tags` per assegnare tag all&#39;indice e durante la query specificare il valore dei tag per utilizzare l&#39;indice. La sintassi generale della query è `<query> option(index tag <tagName>)`.
 
   ```xml
   /oak:index/wknd.adventures-1-custom-1
@@ -98,55 +98,55 @@ Per comprendere le best practice, esaminiamo alcuni esempi.
 
 #### Utilizzo non corretto della proprietà tags
 
-L’immagine seguente mostra la definizione dell’indice personalizzata e incorporata, evidenziando `tags` , entrambi gli indici utilizzano lo stesso `visualSimilaritySearch` valore.
+Nell&#39;immagine seguente viene illustrata la definizione dell&#39;indice personalizzato e OOTB, evidenziando la proprietà `tags`. Entrambi gli indici utilizzano lo stesso valore `visualSimilaritySearch`.
 
-![Utilizzo non corretto della proprietà tags](./assets/understand-indexing-best-practices/incorrect-tags-property.png)
-
-##### Analisi
-
-Si tratta di un utilizzo improprio del `tags` nell&#39;indice personalizzato. Il motore di query Oak seleziona l’indice personalizzato rispetto alla causa dell’indice OOTB con il costo stimato più basso.
-
-Il modo corretto è personalizzare l’indice OOTB e aggiungere le proprietà necessarie nel `indexRules` nodo. Consulta [Personalizzazione dell’indice OOTB](#customize-the-ootb-index) per ulteriori dettagli.
-
-#### Indice sul `dam:Asset` tipo di nodo
-
-L’immagine seguente mostra l’indice personalizzato per `dam:Asset` tipo di nodo con `includedPaths` impostata su un percorso specifico.
-
-![Indice sul tipo di nodo dam:Asset](./assets/understand-indexing-best-practices/index-for-damAsset-type.png)
+![Utilizzo non corretto della proprietà tag](./assets/understand-indexing-best-practices/incorrect-tags-property.png)
 
 ##### Analisi
 
-Se esegui una ricerca omnisearch su Assets, restituisce risultati non corretti in quanto l’indice personalizzato presenta un costo stimato inferiore.
+Utilizzo non corretto della proprietà `tags` nell&#39;indice personalizzato. Il motore di query di Oak seleziona l’indice personalizzato rispetto alla causa dell’indice OOTB che rappresenta il costo stimato più basso.
 
-Non creare un indice personalizzato sul `dam:Asset` tipo di nodo, ma personalizza la `damAssetLucene` indice con le proprietà necessarie nel `indexRules` nodo.
+Il modo corretto è personalizzare l&#39;indice OOTB e aggiungere le proprietà necessarie nel nodo `indexRules`. Per ulteriori dettagli, vedere [Personalizzazione dell&#39;indice OOTB](#customize-the-ootb-index).
+
+#### Indice sul tipo di nodo `dam:Asset`
+
+Nell&#39;immagine seguente viene illustrato l&#39;indice personalizzato per il tipo di nodo `dam:Asset` con la proprietà `includedPaths` impostata su un percorso specifico.
+
+![Indice nel tipo di nodo dam:Asset](./assets/understand-indexing-best-practices/index-for-damAsset-type.png)
+
+##### Analisi
+
+Se esegui omnisearch su Assets, restituisce risultati non corretti in quanto l’indice personalizzato presenta un costo stimato inferiore.
+
+Non creare un indice personalizzato sul tipo di nodo `dam:Asset`, ma personalizzare l&#39;indice `damAssetLucene` OOTB con le proprietà necessarie nel nodo `indexRules`.
 
 #### Più tipi di nodo nelle regole di indicizzazione
 
-L’immagine seguente mostra l’indice personalizzato con più tipi di nodo sotto il `indexRules` nodo.
+L&#39;immagine seguente mostra l&#39;indice personalizzato con più tipi di nodo sotto il nodo `indexRules`.
 
 ![Più tipi di nodo nelle regole di indicizzazione](./assets/understand-indexing-best-practices/multiple-nodetypes-in-index.png)
 
 ##### Analisi
 
-Non è consigliabile aggiungere più tipi di nodo in un singolo indice, tuttavia, è consigliabile indicizzare i tipi di nodo nello stesso indice se i tipi di nodo sono strettamente correlati, ad esempio `cq:Page` e `cq:PageContent`.
+Non è consigliabile aggiungere più tipi di nodo in un singolo indice. Tuttavia, è possibile indicizzare tipi di nodo nello stesso indice se i tipi di nodo sono strettamente correlati, ad esempio `cq:Page` e `cq:PageContent`.
 
-Una soluzione valida è quella di personalizzare la `cqPageLucene` e `damAssetLucene` , aggiungi le proprietà necessarie sotto il `indexRules` nodo.
+Una soluzione valida consiste nel personalizzare l&#39;indice OOTB `cqPageLucene` e `damAssetLucene` e aggiungere le proprietà necessarie nel nodo `indexRules` esistente.
 
-#### Assenza di `queryPaths` proprietà
+#### Assenza della proprietà `queryPaths`
 
-L’immagine seguente mostra l’indice personalizzato (non seguendo anche la convenzione di denominazione) senza `queryPaths` proprietà.
+L&#39;immagine seguente mostra l&#39;indice personalizzato (non conforme anche alla convenzione di denominazione) senza la proprietà `queryPaths`.
 
 ![Assenza della proprietà queryPaths](./assets/understand-indexing-best-practices/absense-of-queryPaths-prop.png)
 
 ##### Analisi
 
-Sempre impostato `queryPaths` allo stesso valore di `includedPaths` valore. Inoltre, per applicare la restrizione del percorso, impostare `evaluatePathRestrictions` proprietà a `true`.
+Imposta sempre il valore `queryPaths` sullo stesso valore del valore `includedPaths`. Inoltre, per applicare la restrizione del percorso, impostare la proprietà `evaluatePathRestrictions` su `true`.
 
 #### Query con tag di indice
 
-L’immagine seguente mostra l’indice personalizzato con `tags` e come utilizzarla durante la query.
+Nell&#39;immagine seguente viene illustrato l&#39;indice personalizzato con la proprietà `tags` e come utilizzarlo durante l&#39;esecuzione di una query.
 
-![Query con tag di indice](./assets/understand-indexing-best-practices/tags-prop-usage.png)
+![Query con tag indice](./assets/understand-indexing-best-practices/tags-prop-usage.png)
 
 ```
 /jcr:root/content/dam//element(*,dam:Asset)[(jcr:content/@contentFragment = 'true' and jcr:contains(., '/content/sitebuilder/test/mysite/live/ja-jp/mypage'))]order by @jcr:created descending option (index tag assetPrefixNodeNameSearch)
@@ -154,21 +154,21 @@ L’immagine seguente mostra l’indice personalizzato con `tags` e come utilizz
 
 ##### Analisi
 
-Dimostra come impostare in modo corretto e non in conflitto `tags` valore della proprietà nell&#39;indice e utilizzarlo durante la query. La sintassi generale della query è `<query> option(index tag <tagName>)`. Vedi anche [Tag indice opzione query](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)
+Viene illustrato come impostare il valore della proprietà `tags` non in conflitto e corretto nell&#39;indice e utilizzarlo durante l&#39;esecuzione di query. La sintassi generale della query è `<query> option(index tag <tagName>)`. Vedi anche [Tag indice opzione query](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-option-index-tag)
 
 #### Indice personalizzato
 
-L’immagine seguente mostra l’indice personalizzato con `suggestion` per ottenere la funzionalità di ricerca avanzata.
+L&#39;immagine seguente mostra l&#39;indice personalizzato con il nodo `suggestion` per ottenere la funzionalità di ricerca avanzata.
 
 ![Indice personalizzato](./assets/understand-indexing-best-practices/custom-index-with-suggestion-node.png)
 
 ##### Analisi
 
-È un caso d’uso valido creare un indice personalizzato per [ricerca avanzata](https://jackrabbit.apache.org/oak/docs/query/lucene.html#advanced-search-features) funzionalità. Tuttavia, il nome dell’indice deve seguire il **\&lt;prefix>.\&lt;customindexname>-\&lt;version>-custom-\&lt;customversion>** convenzione di denominazione.
+È un caso d&#39;uso valido creare un indice personalizzato per la funzionalità di [ricerca avanzata](https://jackrabbit.apache.org/oak/docs/query/lucene.html#advanced-search-features). Tuttavia, il nome dell&#39;indice deve seguire **\&lt;prefisso>.Convenzione di denominazione \&lt;customIndexName>-\&lt;version>-custom-\&lt;customVersion>**.
 
 ## Ottimizzazione dell’indice disabilitando Apache Tika
 
-L’AEM utilizza [Apache Tika](https://tika.apache.org/) per _estrazione di metadati e contenuto di testo da un file_ tipi come PDF, Word, Excel e altro ancora. Il contenuto estratto viene memorizzato nell’archivio e indicizzato dall’indice Oak Lucene.
+L&#39;AEM utilizza [Apache Tika](https://tika.apache.org/) per _estrarre metadati e contenuto di testo da file_ di tipo PDF, Word, Excel e altro. Il contenuto estratto viene memorizzato nell’archivio e indicizzato dall’indice Oak Lucene.
 
 A volte gli utenti non hanno bisogno della possibilità di cercare all’interno del contenuto di un file o di una risorsa; in questi casi, puoi migliorare le prestazioni di indicizzazione disabilitando Apache Tika. I vantaggi sono i seguenti:
 
@@ -185,7 +185,7 @@ A volte gli utenti non hanno bisogno della possibilità di cercare all’interno
 
 Per disabilitare Apache Tika per tipo mime, procedi come segue:
 
-- Aggiungi il `tika` nodo di `nt:unstructured` digita nella definizione di indice personalizzata o OOBT. Nell’esempio seguente, il tipo mime PDF è disabilitato per OOTB `damAssetLucene` indice.
+- Aggiungere il nodo `tika` di tipo `nt:unstructured` nella definizione dell&#39;indice OOBT o personalizzato. Nell&#39;esempio seguente, il tipo MIME PDF è disabilitato per l&#39;indice OOTB `damAssetLucene`.
 
 ```xml
 /oak:index/damAssetLucene
@@ -197,7 +197,7 @@ Per disabilitare Apache Tika per tipo mime, procedi come segue:
     </tika>
 ```
 
-- Aggiungi il `config.xml` con i seguenti dettagli sotto `tika` nodo.
+- Aggiungi `config.xml` con i dettagli seguenti sotto il nodo `tika`.
 
 ```xml
 <properties>
@@ -209,9 +209,9 @@ Per disabilitare Apache Tika per tipo mime, procedi come segue:
 </properties>
 ```
 
-- Per aggiornare l&#39;indice memorizzato, impostare `refresh` proprietà a `true` sotto il nodo di definizione dell’indice, vedi [Proprietà definizione indice](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition:~:text=Defaults%20to%2010000-,refresh,-Optional%20boolean%20property) per ulteriori dettagli.
+- Per aggiornare l&#39;indice archiviato, impostare la proprietà `refresh` su `true` nel nodo di definizione dell&#39;indice. Per ulteriori dettagli, vedere [Proprietà definizione indice](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition:~:text=Defaults%20to%2010000-,refresh,-Optional%20boolean%20property).
 
-L&#39;immagine seguente mostra la `damAssetLucene` indice con `tika` nodo e `config.xml` che disabilita il PDF e altri tipi mime.
+L&#39;immagine seguente mostra l&#39;indice OOTB `damAssetLucene` con il nodo `tika` e il file `config.xml` che disabilita il PDF e altri tipi MIME.
 
 ![Indice damAssetLucene OOTB con nodo tika](./assets/understand-indexing-best-practices/ootb-index-with-tika-node.png)
 
@@ -219,11 +219,11 @@ L&#39;immagine seguente mostra la `damAssetLucene` indice con `tika` nodo e `con
 
 Per disabilitare completamente Apache Tika, procedi come segue:
 
-- Aggiungi `includePropertyTypes` proprietà in `/oak:index/<INDEX-NAME>/indexRules/<NODE-TYPE>` e imposta il valore su `String`. Ad esempio, nell’immagine seguente, il `includePropertyTypes` viene aggiunta la proprietà per `dam:Asset` tipo di nodo dell&#39;OOBT `damAssetLucene` indice.
+- Aggiungere la proprietà `includePropertyTypes` in `/oak:index/<INDEX-NAME>/indexRules/<NODE-TYPE>` e impostare il valore su `String`. Nell&#39;immagine seguente, ad esempio, viene aggiunta la proprietà `includePropertyTypes` per il tipo di nodo `dam:Asset` dell&#39;indice OOBT `damAssetLucene`.
 
 ![Proprietà IncludePropertyTypes](./assets/understand-indexing-best-practices/includePropertyTypes-prop.png)
 
-- Aggiungi `data` con le seguenti proprietà sotto `properties` , assicurati che sia il primo nodo sopra la definizione della proprietà. Per esempio, vedi l’immagine seguente:
+- Aggiungi `data` con le proprietà di seguito sotto il nodo `properties`, assicurati che sia il primo nodo sopra la definizione della proprietà. Per esempio, vedi l’immagine seguente:
 
 ```xml
 /oak:index/<INDEX-NAME>/indexRules/<NODE-TYPE>/properties/data
@@ -235,9 +235,9 @@ Per disabilitare completamente Apache Tika, procedi come segue:
     - analyze = false
 ```
 
-![Data, proprietà](./assets/understand-indexing-best-practices/data-prop.png)
+![Proprietà dati](./assets/understand-indexing-best-practices/data-prop.png)
 
-- Reindicizza la definizione dell’indice aggiornato impostando `reindex` proprietà a `true` nel nodo di definizione dell’indice.
+- Reindicizzare la definizione dell&#39;indice aggiornato impostando la proprietà `reindex` su `true` nel nodo di definizione dell&#39;indice.
 
 ## Strumenti utili
 
@@ -245,29 +245,29 @@ Esaminiamo alcuni strumenti che possono aiutarti a definire, analizzare e ottimi
 
 ### Strumento di creazione dell’indice
 
-Il [Generatore definizione indice Oak](https://oakutils.appspot.com/generate/index) aiuto dello strumento **per generare la definizione dell’indice** in base alle query di input. È un buon punto di partenza per creare un indice personalizzato.
+Lo strumento [Oak Index Definition Generator](https://oakutils.appspot.com/generate/index) consente a **di generare la definizione dell&#39;indice** in base alle query di input. È un buon punto di partenza per creare un indice personalizzato.
 
 ### Strumento Analizza indice
 
-Il [Analisi definizione indice](https://oakutils.appspot.com/analyze/index) aiuto dello strumento **analizzare la definizione dell’indice** e fornisce consigli per migliorare la definizione dell’indice.
+Lo strumento [Index Definition Analyzer](https://oakutils.appspot.com/analyze/index) consente a **di analizzare la definizione dell&#39;indice** e fornisce suggerimenti per migliorare la definizione dell&#39;indice.
 
 ### Strumento Prestazioni query
 
-La soluzione _Strumento Prestazioni query_ disponibile all&#39;indirizzo [SDK locale](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) e AEMCS tramite Developer Console oppure `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell` aiuta **per analizzare le prestazioni della query** e [Scheda di riferimento rapido per le query JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en) per definire la query ottimale.
+Lo strumento per le prestazioni delle query _OOTB_ disponibile in [Local SDK](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) e AEMCS tramite Developer Console o `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell` consente a **di analizzare le prestazioni delle query** e [JCR Query Cheat Sheet](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en) di definire la query ottimale.
 
 ### Strumenti e suggerimenti per la risoluzione dei problemi
 
 La maggior parte dei seguenti sono applicabili per AEM 6.X e per la risoluzione dei problemi locali.
 
-- Gestore indice disponibile all’indirizzo `http://host:port/libs/granite/operations/content/diagnosistools/indexManager.html` per ottenere informazioni sull’indice come tipo, ultimo aggiornamento, dimensione.
+- Gestione indici disponibile in `http://host:port/libs/granite/operations/content/diagnosistools/indexManager.html` per ottenere informazioni sull&#39;indice come tipo, ultimo aggiornamento, dimensione.
 
-- Registrazione dettagliata della query Oak e pacchetti Java™ relativi all’indicizzazione come `org.apache.jackrabbit.oak.plugins.index`, `org.apache.jackrabbit.oak.query`, e `com.day.cq.search` tramite `http://host:port/system/console/slinglog` per la risoluzione dei problemi.
+- Registrazione dettagliata della query Oak e dei pacchetti Java™ correlati all&#39;indicizzazione come `org.apache.jackrabbit.oak.plugins.index`, `org.apache.jackrabbit.oak.query` e `com.day.cq.search` tramite `http://host:port/system/console/slinglog` per la risoluzione dei problemi.
 
-- MBean JMX di _IndexStats_ Tipo disponibile all&#39;indirizzo `http://host:port/system/console/jmx` per ottenere informazioni sull’indice come stato, avanzamento o statistiche relative all’indicizzazione asincrona. Fornisce inoltre _FailingIndexStats_, se non ci sono risultati qui, significa che nessun indice è danneggiato. AsyncIndexerService contrassegna qualsiasi indice che non viene aggiornato per 30 minuti (configurabile) come danneggiato e interrompe l’indicizzazione. Se una query non fornisce i risultati previsti, è utile che gli sviluppatori la verifichino prima di procedere con la reindicizzazione, in quanto è computazionalmente costosa e richiede tempo.
+- MBean JMX di tipo _IndexStats_ disponibile in `http://host:port/system/console/jmx` per ottenere informazioni sull&#39;indice come stato, avanzamento o statistiche relative all&#39;indicizzazione asincrona. Fornisce anche _FailingIndexStats_. Se non sono presenti risultati, significa che nessun indice è danneggiato. AsyncIndexerService contrassegna qualsiasi indice che non viene aggiornato per 30 minuti (configurabile) come danneggiato e interrompe l’indicizzazione. Se una query non fornisce i risultati previsti, è utile che gli sviluppatori la verifichino prima di procedere con la reindicizzazione, in quanto è computazionalmente costosa e richiede tempo.
 
-- MBean JMX di _LuceneIndex_ Tipo disponibile all&#39;indirizzo `http://host:port/system/console/jmx` per le statistiche dell&#39;indice di Lucene come dimensione, numero di documenti per definizione dell&#39;indice.
+- MBean JMX di tipo _LuceneIndex_ disponibile alle `http://host:port/system/console/jmx` per le statistiche dell&#39;indice Lucene come dimensione, numero di documenti per definizione dell&#39;indice.
 
-- MBean JMX di _QueryStat_ Tipo disponibile all&#39;indirizzo `http://host:port/system/console/jmx` per le statistiche delle query Oak, comprese le query lente e popolari con dettagli quali query, tempo di esecuzione.
+- MBean JMX di tipo _QueryStat_ disponibile in `http://host:port/system/console/jmx` per le statistiche delle query di Oak, incluse query lente e popolari con dettagli quali query e tempo di esecuzione.
 
 ## Risorse aggiuntive
 
@@ -275,5 +275,5 @@ Per ulteriori informazioni, consulta la seguente documentazione:
 
 - [Query e indicizzazione Oak](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/deploying/queries-and-indexing)
 - [Best practice per query e indicizzazione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices)
-- [Best practice per query e indicizzazione](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
+- [Procedure consigliate per query e indicizzazione](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing)
 

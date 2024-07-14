@@ -49,7 +49,7 @@ L’URL per il set di immagini precedente potrebbe essere visualizzato come:
 ![immagine](assets/media-sets/image-set-url-1.png)
 
 - Ulteriori informazioni sui set di immagini con [Guida rapida ai set di immagini](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/quick-start-image-sets.html).
-- Scopri come [Creare un set di immagini](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set).
+- Scopri come [creare un set di immagini](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set).
 
 ### Set campioni
 
@@ -61,14 +61,14 @@ I set di campioni non colorano le immagini (un equivoco comune). Le immagini ven
 
 ![immagine](assets/media-sets/image-set-2.jpg)
 
-_Esempio di un set di campioni_
+_Esempio di set di campioni_
 
 L’URL per il set di campioni di cui sopra potrebbe essere visualizzato come:
 
 ![immagine](assets/media-sets/image-set_url.png)
 
-- Ulteriori informazioni sui set di campioni sono disponibili con [Guida rapida ai set di campioni](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html).
-- Scopri come [Creare un set di campioni](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set).
+- Ulteriori informazioni sui set di campioni con [Guida rapida ai set di campioni](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html).
+- Scopri come [creare un set di campioni](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set).
 
 ### Set 360 gradi
 
@@ -85,7 +85,7 @@ L’URL per il set 360 gradi precedente potrebbe essere visualizzato come:
 ![immagine](assets/media-sets/spin-set.png)
 
 - Ulteriori informazioni sui set 360 gradi con [Guida rapida ai set 360 gradi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html).
-- Scopri come [Creare un set 360 gradi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set).
+- Scopri come [creare un set 360 gradi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set).
 
 ## Set di file multimediali diversi
 
@@ -101,7 +101,7 @@ L’URL per il set di file multimediali diversi di cui sopra potrebbe essere vis
 
 - Ulteriori informazioni sui set di file multimediali diversi con [Guida rapida ai set di file multimediali diversi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html).
 
-- Scopri come [Creare un set di file multimediali diversi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
+- Scopri come [creare un set di file multimediali diversi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
 
 Per visualizzare un&#39;immagine per lo zoom, un set o un video sul sito Web, è necessario chiamarla in un &quot;visualizzatore&quot; di Dynamic Media Classic. In Dynamic Media Classic sono inclusi i visualizzatori per le risorse rich media come i set di campioni, i set 360 gradi, i video e molti altri.
 
@@ -113,7 +113,7 @@ Finora abbiamo discusso su come creare i set manualmente utilizzando la funzione
 
 Ogni predefinito è un set di istruzioni indipendente con nome univoco che definisce come creare il set utilizzando immagini che corrispondono alle convenzioni di denominazione definite. Nel predefinito puoi innanzitutto definire le convenzioni di denominazione per le risorse da raggruppare in un set. È quindi possibile creare un predefinito per set di batch per fare riferimento a queste immagini.
 
-Mentre è possibile creare il predefinito da soli (si trovano in **Impostazione > Impostazione applicazione > Predefiniti set di batch** ), come best practice è necessario che il team di consulenza o il supporto tecnico siano configurati per te. Ecco il motivo:
+Anche se è possibile creare il predefinito in modo autonomo (si trovano in **Configurazione > Impostazione applicazione > Predefiniti set di batch** ), è consigliabile che il team di consulenza o il supporto tecnico lo configurino automaticamente. Ecco il motivo:
 
 - I predefiniti per set di batch possono essere complessi da impostare, poiché si basano su espressioni regolari e questa sintassi può risultare sconosciuta o confusa a meno che tu non sia uno sviluppatore.
 - Una volta creati, vengono attivati per impostazione predefinita. Non è disponibile la funzione &quot;annulla&quot;. Se inizi a caricare migliaia di immagini e il predefinito non è configurato correttamente, potresti ritrovare centinaia o migliaia di set interrotti da eliminare manualmente.
@@ -122,17 +122,17 @@ In precedenza è stata suggerita una semplice convenzione di denominazione che s
 
 I predefiniti per set di batch vengono applicati solo al caricamento; non possono essere eseguiti dopo il caricamento delle immagini. È quindi importante pianificare la convenzione di denominazione e creare un predefinito prima di iniziare a caricare tutte le immagini.
 
-Una volta creati i predefiniti, l’amministratore della società può scegliere se sono attivi o inattivi. Attivo significa che apparirà sulla pagina di caricamento in **Opzioni processo**, mentre i predefiniti inattivi rimarranno nascosti.
+Una volta creati i predefiniti, l’amministratore della società può scegliere se sono attivi o inattivi. Attivo significa che apparirà nella pagina di caricamento in **Opzioni processo**, mentre i predefiniti inattivi rimarranno nascosti.
 
-Scopri come [Creare un predefinito per set di batch](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#creating-a-batch-set-preset).
+Scopri come [creare un predefinito per set di batch](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#creating-a-batch-set-preset).
 
 ### Utilizzo dei predefiniti per set di batch al caricamento
 
 Di seguito è illustrato l’utilizzo dei predefiniti per set di batch al caricamento, una volta creati:
 
-1. Clic **Carica** e scegliere **Da desktop** o **Tramite FTP**.
-2. Clic **Opzioni processo**.
-3. Apri **Predefiniti set di batch** e selezionare o deselezionare il predefinito per utilizzarlo con il caricamento.
+1. Fai clic su **Carica** e scegli **Dal desktop** o **Tramite FTP**.
+2. Fare clic su **Opzioni processo**.
+3. Apri l&#39;opzione **Predefiniti set di batch** e seleziona o deseleziona il predefinito per utilizzarlo con il caricamento.
 4. Al termine del caricamento, cerca i set finiti nella cartella.
 
 Ulteriori informazioni su [Predefiniti set di batch](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#batch-set-presets).

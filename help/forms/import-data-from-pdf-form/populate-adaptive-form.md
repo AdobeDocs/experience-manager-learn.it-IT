@@ -58,8 +58,8 @@ function handleFiles(formData) {
 }
 ```
 
-Servlet installato su **_/bin/ExtractDataFromPDF_** estrae i dati dal file PDF e restituisce il percorso del nodo crx in cui vengono memorizzati i dati estratti.
-Il [SetData di GuideBridge](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html#setData__anchor) viene quindi utilizzato per impostare i dati del modulo adattivo.
+Il servlet montato su **_/bin/ExtractDataFromPDF_** estrae i dati dal file PDF e restituisce il percorso del nodo crx in cui sono memorizzati i dati estratti.
+Viene quindi utilizzato il metodo [GuideBridge setData](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html#setData__anchor) per impostare i dati del modulo adattivo.
 
 ## Passaggi successivi
 

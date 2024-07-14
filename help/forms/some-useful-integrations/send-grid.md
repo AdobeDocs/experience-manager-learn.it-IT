@@ -31,9 +31,9 @@ Segui le istruzioni dettagliate riportate in questo documento per sfruttare la p
 
 Prima di procedere con l’invio di e-mail utilizzando i modelli dinamici SendGrid da AEM Forms, assicurati di aver soddisfatto i seguenti prerequisiti:
 
-1. **Account SendGrid**: registrati per un account SendGrid all’indirizzo [https://sendgrid.com](https://sendgrid.com) per accedere ai servizi di consegna e-mail. Per integrare SendGrid con AEM Forms sono necessarie le credenziali dell’account.
-1. **Familiarità con la creazione di origini dati**: hai una conoscenza pratica della creazione di origini dati in AEM Forms. Se necessario, consulta la documentazione su [creazione di origini dati](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) per istruzioni dettagliate.
-1. **Familiarità con il modello dati del modulo**: scopri il concetto di modello dati modulo in AEM Forms. Se necessario, consulta la documentazione su [creazione di modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) per assicurarti di avere la comprensione necessaria.
+1. **Account SendGrid**: registrati a un account SendGrid all&#39;indirizzo [https://sendgrid.com](https://sendgrid.com) per accedere ai servizi di consegna e-mail. Per integrare SendGrid con AEM Forms sono necessarie le credenziali dell’account.
+1. **Familiarità con la creazione di origini dati**: acquisisci conoscenze pratiche sulla creazione di origini dati in AEM Forms. Se necessario, consultare la documentazione relativa alla [creazione di origini dati](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) per istruzioni dettagliate.
+1. **Familiarità con il modello dati modulo**: comprendere il concetto di modello dati modulo in AEM Forms. Se necessario, consulta la documentazione sulla [creazione di modelli di dati del modulo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) per assicurarti di avere le informazioni necessarie.
 
 Soddisfacendo questi prerequisiti, avrai a disposizione le conoscenze e le risorse essenziali per inviare efficacemente le e-mail utilizzando i modelli dinamici SendGrid di AEM Forms.
 
@@ -49,10 +49,10 @@ Puoi utilizzare il file Swagger fornito come riferimento o punto di partenza per
 
 Per testare la funzionalità descritta in questa guida, segui questi passaggi:
 
-1. Scarica il file [file swagger](assets/SendGridWithDynamicTemplate.yaml) fornite nella cartella delle risorse.
+1. Scarica il [file Swagger](assets/SendGridWithDynamicTemplate.yaml) fornito nella cartella delle risorse.
 2. Creare un&#39;origine dati Restful utilizzando il file Swagger scaricato e le credenziali SendGrid.
 3. Crea un modello dati modulo basato sull’origine dati Restful.
-4. Richiama `mail/send` Funzionamento POST del modello dati modulo in base alle tue esigenze. Ad esempio, puoi attivare l’e-mail al clic del pulsante o includerla nel flusso di lavoro di AEM Forms.
+4. Richiama l&#39;operazione POST `mail/send` del modello dati modulo in base alle tue esigenze. Ad esempio, puoi attivare l’e-mail al clic del pulsante o includerla nel flusso di lavoro di AEM Forms.
 
 Il payload di esempio per il servizio è il seguente. Sostituire i valori dei segnaposto con i propri dati:
 
@@ -75,6 +75,6 @@ Il payload di esempio per il servizio è il seguente. Sostituire i valori dei se
 }
 ```
 
-Assicurati che `template_id` corrisponde all&#39;ID del modello di messaggio di posta elettronica dinamico SendGrid e gli indirizzi di posta elettronica sono validi e verificati da SendGrid. I valori in `personalizations` consentono di personalizzare l’e-mail utilizzando i dati immessi dall’utente dal modulo adattivo.
+Verificare che `template_id` corrisponda all&#39;ID del modello di posta elettronica dinamica SendGrid e che gli indirizzi di posta elettronica siano validi e verificati da SendGrid. I valori nella sezione `personalizations` ti consentono di personalizzare l&#39;e-mail utilizzando i dati immessi dall&#39;utente dal modulo adattivo.
 
 Seguendo questi passaggi e personalizzando il payload fornito, puoi testare in modo efficace l’integrazione dei modelli dinamici SendGrid con AEM Forms.

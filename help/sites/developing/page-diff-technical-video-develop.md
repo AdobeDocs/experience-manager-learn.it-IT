@@ -26,9 +26,9 @@ Questo video mostra come fornire stili personalizzati per la funzionalità Diffe
 
 >[!NOTE]
 >
->Questo video aggiunge file CSS personalizzati alla libreria client we.Retail, dove le modifiche devono essere apportate al progetto AEM Sites del personalizzatore, nell’esempio di codice seguente: `my-project`.
+>Questo video aggiunge file CSS personalizzati alla libreria client we.Retail, dove le modifiche devono essere apportate al progetto AEM Sites del personalizzatore, nel codice di esempio seguente: `my-project`.
 
-La differenza di pagina AEM ottiene il CSS OOTB tramite un caricamento diretto di `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
+La differenza di pagina dell&#39;AEM ottiene il CSS OOTB tramite un caricamento diretto di `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
 
 A causa di questo carico diretto di CSS, anziché utilizzare una categoria di librerie client, è necessario trovare un altro punto di inserimento per gli stili personalizzati, e questo punto di inserimento personalizzato è la libreria client di authoring del progetto.
 
@@ -36,7 +36,7 @@ Questo ha il vantaggio di consentire che queste sostituzioni di stile personaliz
 
 ### Preparare la libreria client di authoring {#prepare-the-authoring-clientlib}
 
-Assicurare l&#39;esistenza di un `authoring` clientlib per il progetto all’indirizzo `/apps/my-project/clientlib/authoring.`
+Verificare l&#39;esistenza di una clientlib `authoring` per il progetto in `/apps/my-project/clientlib/authoring.`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -47,7 +47,7 @@ Assicurare l&#39;esistenza di un `authoring` clientlib per il progetto all’ind
 
 ### Fornisci CSS personalizzato {#provide-the-custom-css}
 
-Aggiungi a del progetto `authoring` clientlib a `css.txt` che punta al file meno che fornirà gli stili di sostituzione. [Meno](https://lesscss.org/) è preferibile a causa delle sue molte funzioni convenienti, tra cui il wrapping delle classi, utilizzato in questo esempio.
+Aggiungi alla libreria client `authoring` del progetto una `css.txt` che punti al file meno che fornirà gli stili di sostituzione. [Less](https://lesscss.org/) è preferito a causa delle sue molte funzioni convenienti, tra cui il wrapping delle classi, utilizzato in questo esempio.
 
 ```shell
 base=./css
@@ -55,7 +55,7 @@ base=./css
 htmldiff.less
 ```
 
-Creare `less` file che contiene le sostituzioni di stile in `/apps/my-project/clientlibs/authoring/css/htmldiff.less`e fornire gli stili di sovrapposizione necessari.
+Creare il file `less` che contiene le sostituzioni di stile in `/apps/my-project/clientlibs/authoring/css/htmldiff.less` e fornire gli stili sovrascritti in base alle esigenze.
 
 ```css
 /* Wrap with body to gives these rules more specificity than the OOTB */
@@ -103,9 +103,9 @@ body {
 
 ### Includere il CSS clientlib di authoring tramite il componente pagina {#include-the-authoring-clientlib-css-via-the-page-component}
 
-Includere la categoria clientlibs di authoring nella pagina base del progetto `/apps/my-project/components/structure/page/customheaderlibs.html` direttamente prima del `</head>` per garantire il caricamento degli stili.
+Includi la categoria clientlibs di authoring nella pagina base del progetto `/apps/my-project/components/structure/page/customheaderlibs.html` direttamente prima del tag `</head>` per garantire il caricamento degli stili.
 
-Questi stili devono essere limitati a [!UICONTROL Modifica] e [!UICONTROL anteprima] modalità WCM.
+Questi stili devono essere limitati alle modalità WCM [!UICONTROL Modifica] e [!UICONTROL anteprima].
 
 ```xml
 <head>
@@ -117,7 +117,7 @@ Questi stili devono essere limitati a [!UICONTROL Modifica] e [!UICONTROL antepr
 
 Il risultato finale di una pagina con differenze e gli stili sopra applicati sarà simile al seguente (HTML aggiunto e Componente modificato).
 
-![Differenza tra pagine](assets/page-diff.png)
+![Differenza di pagina](assets/page-diff.png)
 
 ## Risorse aggiuntive {#additional-resources}
 

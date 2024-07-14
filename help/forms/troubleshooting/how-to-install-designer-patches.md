@@ -1,5 +1,5 @@
 ---
-title: Come installare le patch di Designer
+title: Installazione delle patch di Designer
 description: Questo articolo illustra i passaggi necessari per installare le patch di AEM Forms Designer
 type: Troubleshooting
 role: Admin
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ---
 
-# Come installare le patch di Designer
+# Installazione delle patch di Designer
 
 *Questo video illustra il processo di installazione delle patch di Designer.*
 

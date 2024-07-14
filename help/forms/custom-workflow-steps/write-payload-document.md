@@ -27,7 +27,7 @@ Il processo personalizzato accetta i seguenti argomenti separati da virgole
 ChangeBeneficiary.pdf,c:\confirmation
 ```
 
-Il primo argomento è il nome del documento da salvare nel file system. Il secondo argomento è il percorso della cartella in cui si desidera salvare il documento. Ad esempio, nel caso d’uso precedente il documento viene scritto in `c:\confirmation\ChangeBeneficiary.pdf`
+Il primo argomento è il nome del documento da salvare nel file system. Il secondo argomento è il percorso della cartella in cui si desidera salvare il documento. Ad esempio, nel caso d&#39;uso precedente il documento è scritto in `c:\confirmation\ChangeBeneficiary.pdf`
 
 La schermata seguente mostra gli argomenti da passare al passaggio del processo personalizzato
 ![write-payload-file-system](assets/write-payload-file-system.png)

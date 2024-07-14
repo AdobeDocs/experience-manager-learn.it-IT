@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Passaggi per l&#39;avvio manuale se l&#39;inizializzazione del database non funziona
 
-*Questo video illustra il processo di avvio manuale se l’inizializzazione del database non funziona.*
+*Questo video illustra il processo di avvio manuale se l&#39;inizializzazione del database non funziona.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335515?quality=12&learn=on)

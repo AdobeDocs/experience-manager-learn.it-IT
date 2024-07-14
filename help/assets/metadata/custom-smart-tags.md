@@ -28,9 +28,9 @@ Puoi quindi sfruttare i tag avanzati personalizzati, o tag avanzati migliorati, 
 ## Impostare tag avanzati personalizzati per le immagini per AEM 6.x{#set-up}
 
 >[!NOTE]
-> I tag avanzati personalizzati per le immagini vengono automaticamente predisposti per gli as a Cloud Service AEM.
+> Per le immagini viene eseguito automaticamente il provisioning dei tag avanzati personalizzati per AEM as a Cloud Service.
 
-I tag avanzati personalizzati per le immagini richiedono [Tag avanzati per le immagini da configurare](./image-smart-tags.md#set-up).
+Tag avanzati personalizzati per le immagini richiede [Tag avanzati per le immagini da configurare](./image-smart-tags.md#set-up).
 
 Scopri come configurare la formazione dei tag avanzati in AEM Assets utilizzando il Servizio di contenuti avanzati e un Adobe I/O. Tag avanzati personalizzati per le immagini
 
@@ -38,4 +38,4 @@ Scopri come configurare la formazione dei tag avanzati in AEM Assets utilizzando
 
 ## Risorse aggiuntive
 
-* AEM 6.4 richiede [Service Pack più recente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
+* AEM 6.4 richiede il [Service Pack più recente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).

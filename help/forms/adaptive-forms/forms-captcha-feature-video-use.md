@@ -22,7 +22,7 @@ Aggiunta e utilizzo di un CAPTCHA con AEM Adaptive Forms.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336?quality=12&learn=on)
 
-*Questo video illustra il processo di aggiunta di un CAPTCHA a un modulo adattivo dell’AEM utilizzando sia il servizio integrato AEM CAPTCHA che il servizio Google reCAPTCHA.*
+*Questo video illustra il processo di aggiunta di un CAPTCHA a un modulo adattivo dell&#39;AEM utilizzando sia il servizio integrato CAPTCHA dell&#39;AEM che il servizio reCAPTCHA di Google.*
 
 >[!NOTE]
 >
@@ -30,11 +30,11 @@ Aggiunta e utilizzo di un CAPTCHA con AEM Adaptive Forms.
 
 >[!NOTE]
 >
->**Per configurare reCaptcha sull’istanza di pubblicazione, segui i passaggi**
+>**Per configurare reCaptcha nell&#39;istanza di pubblicazione, eseguire la procedura seguente**
 >
 >Configurare reCaptach nell’istanza di authoring
 >
->apri il Felix [console web](http://localhost:4502/system/console/bundles) sull’istanza di authoring
+>apri la [console web](http://localhost:4502/system/console/bundles) Felix nell&#39;istanza di authoring
 >
 >cerca bundle com.adobe.granite.crypto.file
 >
@@ -45,7 +45,7 @@ Aggiunta e utilizzo di un CAPTCHA con AEM Adaptive Forms.
 >* &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
 * Copiare i file HMAC e master
 >
-Apri [console web felix](http://localhost:4502/system/console/bundles) nell’istanza di pubblicazione. Cerca il bundle com.adobe.granite.crypto.file. Nota l’ID del bundle
+Apri la [console Web Felix](http://localhost:4502/system/console/bundles) nell&#39;istanza di pubblicazione. Cerca il bundle com.adobe.granite.crypto.file. Nota l’ID del bundle
 >
 Passa all’ID bundle nel file system dell’istanza di pubblicazione
 >

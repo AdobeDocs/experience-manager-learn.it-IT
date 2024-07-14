@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Cambia visualizzazione
 
-Scopri come passare in modo efficiente tra [Visualizzazioni risorse e amministrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/overview.html#persona-based-experiences) in AEM Assets as a Cloud Service, per una gestione ottimale delle risorse.
+Scopri come passare in modo efficiente dalla visualizzazione [Assets alla visualizzazione Amministratore](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/overview.html#persona-based-experiences) in AEM Assets as a Cloud Service, garantendo una gestione ottimale delle risorse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426806/?learn=on)

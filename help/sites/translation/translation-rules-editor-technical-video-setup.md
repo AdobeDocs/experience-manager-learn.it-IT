@@ -22,7 +22,7 @@ L’interfaccia utente per la configurazione della traduzione consente a un uten
 
 >[!NOTE]
 >
-> Il video seguente è stato registrato su AEM 6.3. AEM 6.4+ introduce una nuova struttura di archivio per l’archiviazione del file XML delle regole di traduzione. Quando si utilizza l’interfaccia utente di Configurazione della traduzione in AEM 6.4+, le regole vengono salvate nella posizione `/conf/global/settings/translation/rules/translation_rules.xml`. Consulta [Identificazione del contenuto da tradurre](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html) per ulteriori dettagli.
+> Il video seguente è stato registrato su AEM 6.3. AEM 6.4+ introduce una nuova struttura di archivio per l’archiviazione del file XML delle regole di traduzione. Quando si utilizza l&#39;interfaccia utente di configurazione della traduzione in AEM 6.4+, le regole vengono salvate nel percorso `/conf/global/settings/translation/rules/translation_rules.xml`. Per ulteriori dettagli, vedere [Identificazione del contenuto da tradurre](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/18135?quality=12&learn=on)
 
@@ -40,7 +40,7 @@ Accedi all’interfaccia utente per la configurazione della traduzione:
 
 ## Prima dell’AEM 6.3 {#prior-to-aem}
 
-Nelle versioni precedenti dell’AEM le regole di traduzione venivano aggiornate manualmente modificando un file XML che si trovava nel flusso di lavoro di traduzione: `/etc/workflow/models/translation/translation_rules.xml`.
+Nelle versioni precedenti dell&#39;AEM le regole di traduzione sono state aggiornate manualmente modificando un file XML che si trova nel flusso di lavoro di traduzione: `/etc/workflow/models/translation/translation_rules.xml`.
 
 ## Risorse aggiuntive {#additional-resources}
 

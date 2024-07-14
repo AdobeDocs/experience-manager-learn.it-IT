@@ -1,6 +1,6 @@
 ---
-title: Flusso di lavoro principale di Dynamic Media Classic e anteprima delle risorse
-description: 'Scopri il flusso di lavoro principale in Dynamic Media Classic, che include i tre passaggi seguenti: Creazione (e caricamento), Creazione (e pubblicazione) e Consegna. Poi scopri come visualizzare in anteprima le risorse in Dynamic Media Classic.'
+title: Flusso di lavoro principale di Dynamic Media Classic e anteprima di Assets
+description: 'Scopri il flusso di lavoro principale in Dynamic Media Classic, che include i tre passaggi seguenti: Creazione (e caricamento), Authoring (e Publish) e Consegna. Poi scopri come visualizzare in anteprima le risorse in Dynamic Media Classic.'
 feature: Dynamic Media Classic
 topic: Content Management
 role: User
@@ -15,23 +15,23 @@ ht-degree: 0%
 
 ---
 
-# Flusso di lavoro principale di Dynamic Media Classic e anteprima delle risorse {#main-workflow}
+# Flusso di lavoro principale di Dynamic Media Classic e anteprima di Assets {#main-workflow}
 
-Dynamic Medie supporta il processo di creazione (e caricamento), authoring (e pubblicazione) e distribuzione. Per iniziare, carica le risorse, quindi esegui un’operazione con tali risorse, ad esempio la creazione di un set di immagini e infine la pubblicazione per renderle live. Il passaggio Build è facoltativo per alcuni flussi di lavoro. Ad esempio, se l’obiettivo è solo quello di ridimensionare e ingrandire le immagini in modo dinamico o di convertire e pubblicare i video per lo streaming, non sono necessari passaggi di generazione.
+Dynamic Medie supporta i processi di creazione (e caricamento), authoring (e Publish) e consegna. Per iniziare, carica le risorse, quindi esegui un’operazione con tali risorse, ad esempio la creazione di un set di immagini e infine la pubblicazione per renderle live. Il passaggio Build è facoltativo per alcuni flussi di lavoro. Ad esempio, se l’obiettivo è solo quello di ridimensionare e ingrandire le immagini in modo dinamico o di convertire e pubblicare i video per lo streaming, non sono necessari passaggi di generazione.
 
 ![immagine](assets/main-workflow/create-author-deliver.jpg)
 
 Il flusso di lavoro nelle soluzioni Dynamic Media Classic consiste in tre passaggi principali:
 
 1. Creare (e caricare) SourceContent
-2. Creare (e pubblicare) risorse
-3. Consegna risorse
+2. Creazione (e Publish) di Assets
+3. Distribuisci Assets
 
 ## Passaggio 1: creare (e caricare)
 
 Inizio del flusso di lavoro. In questo passaggio, raccogli o crei il contenuto sorgente che si adatta al flusso di lavoro che stai utilizzando e lo carichi in Dynamic Media Classic. Il sistema supporta più tipi di file per immagini, video e font, ma anche per PDF, Adobe Illustrator e Adobe InDesign.
 
-Consulta l’elenco completo di [Tipi di file supportati](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
+Vedere l&#39;elenco completo dei [tipi di file supportati](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
 
 Puoi caricare il contenuto sorgente in diversi modi:
 
@@ -44,27 +44,27 @@ La modalità predefinita è Da desktop, in cui è possibile cercare i file nella
 
 >[!TIP]
 >
->Non aggiungere manualmente le cartelle. Esegui un caricamento da FTP e utilizza **Includi sottocartelle** per ricreare la struttura delle cartelle all’interno di Dynamic Media Classic.
+>Non aggiungere manualmente le cartelle. Esegui un caricamento da FTP e utilizza l&#39;opzione **Includi sottocartelle** per ricreare la struttura delle cartelle in Dynamic Media Classic.
 
-Le due opzioni di caricamento più importanti sono attivate per impostazione predefinita: **Contrassegna per pubblicazione**, di cui abbiamo parlato prima, e **Sovrascrivere**. Sovrascrivi significa che se il file che viene caricato ha lo stesso nome di un file già presente nel sistema, il nuovo file sostituirà la versione esistente. Se deselezioni questa opzione, il file potrebbe non essere caricato.
+Le due opzioni di caricamento più importanti sono abilitate per impostazione predefinita: **Contrassegna per Publish**, già discusso in precedenza, e **Sovrascrivi**. Sovrascrivi significa che se il file che viene caricato ha lo stesso nome di un file già presente nel sistema, il nuovo file sostituirà la versione esistente. Se deselezioni questa opzione, il file potrebbe non essere caricato.
 
 ### Opzioni Di Sovrascrittura Durante Il Caricamento Delle Immagini
 
 L’opzione Sovrascrivi immagine può essere impostata per l’intera azienda in quattro varianti che spesso vengono fraintese. In breve, puoi impostare le regole in modo che le risorse con lo stesso nome vengano sovrascritte più frequentemente oppure desideri che le sovrascritture si verifichino meno frequentemente (in tal caso la nuova immagine verrà rinominata con un’estensione &quot;-1&quot; o &quot;-2&quot;).
 
-- **Sovrascrivi in cartella corrente, nome/estensione immagine di base uguale**.
+- **Sovrascrivi nella cartella corrente, nome/estensione immagine di base uguale**.
 Questa opzione è la regola più rigorosa per la sostituzione. È necessario caricare l&#39;immagine sostitutiva nella stessa cartella dell&#39;originale e che l&#39;immagine sostitutiva abbia la stessa estensione del nome file dell&#39;originale. Se questi requisiti non vengono soddisfatti, viene creato un duplicato.
 
-- **Sovrascrivi in cartella corrente, nome come risorsa base, ignora estensione**.
+- **Sovrascrivi nella cartella corrente, nome come risorsa base, senza estensione**.
 Richiede di caricare l&#39;immagine sostitutiva nella stessa cartella dell&#39;originale, tuttavia l&#39;estensione del nome file può essere diversa dall&#39;originale. Ad esempio, chair.tif sostituisce chair.jpg.
 
 - **Sovrascrivi in qualsiasi cartella, nome/estensione come risorsa base**.
 Richiede che l’immagine sostitutiva abbia la stessa estensione del nome file dell’immagine originale (ad esempio, chair.jpg deve sostituire chair.jpg, non chair.tif ). Tuttavia, è possibile caricare l&#39;immagine sostitutiva in una cartella diversa da quella originale. L&#39;immagine aggiornata si trova nella nuova cartella; il file non è più disponibile nella posizione originale.
 
-- **Sovrascrivi in qualsiasi cartella, nome come risorsa base, ignora estensione**.
+- **Sovrascrivi in qualsiasi cartella, con lo stesso nome della risorsa di base, indipendentemente dall&#39;estensione**.
 Questa opzione è la regola di sostituzione più inclusiva. È possibile caricare un&#39;immagine sostitutiva in una cartella diversa da quella originale, caricare un file con un&#39;estensione diversa e sostituire il file originale. Se il file originale si trova in una cartella diversa, l&#39;immagine sostitutiva risiede nella nuova cartella in cui è stata caricata.
 
-Ulteriori informazioni su [Opzione Sovrascrivi immagini](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
+Ulteriori informazioni sull&#39;opzione [Sovrascrivi immagini](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
 
 Sebbene non sia obbligatorio, durante il caricamento utilizzando uno dei due metodi descritti sopra, è possibile specificare le Opzioni processo per quel particolare caricamento, ad esempio per pianificare un caricamento ricorrente, impostare le opzioni di ritaglio al momento del caricamento e molte altre ancora. Questi possono essere utili per alcuni flussi di lavoro, quindi vale la pena considerare se possono esserlo per i tuoi.
 
@@ -86,20 +86,20 @@ Allo stesso modo, potete caricare il vostro video sorgente principale su Dynamic
 
 ### Regole generali per determinare le dimensioni ottimali per le immagini caricate
 
-**Carica le immagini con le dimensioni più grandi che desideri.**
+**Carica le immagini con le dimensioni massime necessarie.**
 
 - Per eseguire lo zoom, caricate un&#39;immagine ad alta risoluzione con una gamma di 1500-2500 pixel nelle dimensioni più lunghe. Considera la quantità di dettagli che desideri fornire, la qualità delle immagini sorgente e le dimensioni del prodotto mostrato. Ad esempio, caricate un&#39;immagine da 1000 pixel per un anello minuscolo, ma un&#39;immagine da 3000 pixel per un&#39;intera scena della stanza.
 - Se non è necessario eseguire lo zoom, caricalo nelle dimensioni esatte visualizzate. Ad esempio, se desideri inserire nelle pagine loghi o immagini di banner, caricale esattamente alla dimensione 1:1 e chiamale esattamente a quella dimensione.
 
-**Non sovrastimare o far esplodere le immagini prima di caricarle su Dynamic Media Classic.** Ad esempio, non eseguire l’upsampling di un’immagine più piccola per renderla un’immagine da 2000 pixel. Non avrà un buon aspetto. Rendi le tue immagini il più possibile perfette prima di caricarle.
+**Non eseguire mai l&#39;upsampling delle immagini prima di caricarle in Dynamic Media Classic.** Ad esempio, non eseguire l&#39;upsampling di un&#39;immagine più piccola per renderla un&#39;immagine di 2000 pixel. Non avrà un buon aspetto. Rendi le tue immagini il più possibile perfette prima di caricarle.
 
-**Non esiste una dimensione minima per lo zoom, ma per impostazione predefinita i visualizzatori non eseguiranno lo zoom oltre il 100%.** Se l&#39;immagine è troppo piccola, non verrà ingrandita affatto o verrà ingrandita solo di una piccola quantità per evitare che risulti danneggiata.
+**Non esiste una dimensione minima per lo zoom, ma per impostazione predefinita i visualizzatori non eseguiranno lo zoom oltre il 100%.** Se l&#39;immagine è troppo piccola, non verrà ingrandita o verrà ingrandita solo una piccola quantità per evitare che risulti danneggiata.
 
-**Non esiste un valore minimo per la dimensione dell’immagine, ma si sconsiglia di caricare immagini giganti.** Un’immagine gigante può essere considerata di oltre 4000 pixel. Caricare immagini di queste dimensioni può mostrare potenziali difetti come granelli di polvere o peli nell&#39;immagine. Tali immagini occupano più spazio sul server Dynamic Media Classic, il che può comportare il superamento dei limiti di archiviazione previsti dal contratto.
+**Non esiste un valore minimo per la dimensione dell&#39;immagine, tuttavia si sconsiglia di caricare immagini giganti.** Un&#39;immagine gigante può essere considerata di oltre 4000 pixel. Caricare immagini di queste dimensioni può mostrare potenziali difetti come granelli di polvere o peli nell&#39;immagine. Tali immagini occupano più spazio sul server Dynamic Media Classic, il che può comportare il superamento dei limiti di archiviazione previsti dal contratto.
 
 Ulteriori informazioni su [Caricamento dei file](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
 
-## Passaggio 2: Creazione (e pubblicazione)
+## Passaggio 2: Autore (e Publish)
 
 Dopo aver creato e caricato i contenuti, creerai nuove risorse rich media dalle risorse caricate eseguendo uno o più flussi di lavoro secondari. Questo include tutti i diversi tipi di raccolte di set: Set di immagini, Campioni, Rotazioni e File multimediali diversi, nonché Modelli. Include anche un video. In seguito verranno forniti maggiori dettagli su ogni tipo di set di raccolta di immagini e sui rich media video. Tuttavia, nella maggior parte dei casi, per iniziare seleziona una o più risorse (o non hai selezionato alcuna risorsa) e scegli il tipo di risorsa da generare. Ad esempio, puoi selezionare un’immagine principale e alcune visualizzazioni di tale immagine e scegliere di creare un set di immagini, una raccolta di visualizzazioni alternative dello stesso prodotto.
 
@@ -107,15 +107,15 @@ Dopo aver creato e caricato i contenuti, creerai nuove risorse rich media dalle 
 >
 >Assicurati che tutte le risorse siano contrassegnate per la pubblicazione. Anche se per impostazione predefinita tutte le risorse sono contrassegnate automaticamente per la pubblicazione al caricamento, tutte le risorse appena create dal contenuto caricato dovranno essere contrassegnate per la pubblicazione.
 
-Dopo aver creato la nuova risorsa, eseguirai un processo di pubblicazione. Puoi eseguire questa operazione manualmente o pianificare un processo di pubblicazione che viene eseguito automaticamente. La pubblicazione copia tutti i contenuti dalla sfera privata di Dynamic Media Classic a quella pubblica e la sfera server di pubblicazione dell’equazione. Il prodotto di un processo di pubblicazione Dynamic Medie è un URL univoco per ogni risorsa pubblicata.
+Dopo aver creato la nuova risorsa, eseguirai un processo di pubblicazione. Puoi eseguire questa operazione manualmente o pianificare un processo di pubblicazione che viene eseguito automaticamente. La pubblicazione copia tutti i contenuti dalla sfera privata di Dynamic Media Classic a quella pubblica e la sfera server di pubblicazione dell’equazione. Il prodotto di un processo Dynamic Medie Publish è un URL univoco per ogni risorsa pubblicata.
 
 Il server in cui esegui la pubblicazione dipende dal tipo di contenuto e di flusso di lavoro. Ad esempio, tutte le immagini vengono inviate al server immagini e trasmesse in streaming al server FMS. Per comodità si parla di &quot;pubblicazione&quot; come di un singolo evento su un singolo server.
 
-La pubblicazione pubblica tutti i contenuti contrassegnati per la pubblicazione, non solo i contenuti. In genere, un singolo amministratore pubblica le per conto di tutti anziché di singoli utenti che eseguono una pubblicazione. L’amministratore può pubblicare in base alle esigenze o impostare un processo ricorrente giornaliero, settimanale o anche ogni 10 minuti che verrà pubblicato automaticamente. Pubblicare secondo un programma appropriato per la tua azienda.
+La pubblicazione pubblica tutti i contenuti contrassegnati per la pubblicazione, non solo i contenuti. In genere, un singolo amministratore pubblica le per conto di tutti anziché di singoli utenti che eseguono una pubblicazione. L’amministratore può pubblicare in base alle esigenze o impostare un processo ricorrente giornaliero, settimanale o anche ogni 10 minuti che verrà pubblicato automaticamente. Publish in base a un programma appropriato per la tua azienda.
 
 >[!TIP]
 >
->Automatizza i processi di pubblicazione e pianifica l’esecuzione di una pubblicazione completa ogni giorno alle 00:00 o in qualsiasi momento della sera.
+>Automatizza i processi di pubblicazione e pianifica l’esecuzione di un Full Publish ogni giorno alle 00:00 o in qualsiasi momento della sera.
 
 ### Concetto: Informazioni sull’URL di Dynamic Media Classic
 
@@ -139,18 +139,18 @@ Le nuove risorse caricate e pubblicate vengono visualizzate immediatamente, ment
 
 In genere si tratta di un problema solo se si è verificato un errore e l’immagine/risorsa ha lo stesso nome della versione pubblicata in precedenza, ma si è verificato un problema con l’immagine. Ad esempio, avete caricato accidentalmente una versione a bassa risoluzione o il direttore artistico non ha approvato l&#39;immagine. In questo caso, vuoi richiamare l’immagine originale e sostituirla con una nuova versione utilizzando lo stesso ID risorsa.
 
-Scopri come [Cancella manualmente la cache per gli URL da aggiornare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/invalidate-cdn-cache-dynamic-media.html?lang=it).
+Scopri come [cancellare manualmente la cache per gli URL da aggiornare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/invalidate-cdn-cache-dynamic-media.html?lang=it).
 
 >[!TIP]
 >
 >Per evitare problemi di ritardo nella memorizzazione in cache, lavora sempre in anticipo: una sera, un giorno, due settimane, ecc. Costruisci in tempo per il QA/l&#39;accettazione da parte delle parti interne per comprovare il tuo lavoro prima di rilasciarlo al pubblico. Lavorare ancora una sera prima consente di apportare modifiche e ripubblicare quella sera. La mattina sono trascorse 10 ore e la cache viene aggiornata con l’immagine corretta.
 
-- Ulteriori informazioni su [Creazione di un processo di pubblicazione](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
-- Ulteriori informazioni su [Pubblicazione](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html).
+- Ulteriori informazioni sulla [creazione di un processo di pubblicazione](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
+- Ulteriori informazioni sulla [pubblicazione](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html).
 
 ## Passaggio 3: consegnare
 
-Ricorda che il prodotto finale di un flusso di lavoro Dynamic Media Classic è un URL che punta alla risorsa. L’URL può puntare a una singola immagine, a un set di immagini, a un set 360 gradi o a un altro insieme di immagini o video. Devi prendere quell’URL e fare qualcosa con esso, ad esempio modificare il HTML in modo che il `<IMG>` i tag puntano all’immagine Dynamic Media Classic anziché a un’immagine proveniente dal sito corrente.
+Ricorda che il prodotto finale di un flusso di lavoro Dynamic Media Classic è un URL che punta alla risorsa. L’URL può puntare a una singola immagine, a un set di immagini, a un set 360 gradi o a un altro insieme di immagini o video. È necessario utilizzare l&#39;URL ed eseguire un&#39;operazione, ad esempio modificare il HTML in modo che i tag `<IMG>` puntino all&#39;immagine Dynamic Media Classic anziché a un&#39;immagine proveniente dal sito corrente.
 
 Nel passaggio Consegna, devi integrare tali URL nel sito web, nell’app mobile, nella campagna e-mail o in qualsiasi altro punto di contatto digitale in cui desideri visualizzare la risorsa.
 
@@ -172,16 +172,16 @@ Esempio di un collegamento (in rosso) che aprirà un set di immagini in un visua
 >
 >Devi integrare gli URL di Dynamic Media Classic nel tuo sito web, nell’app mobile, nella posta elettronica e in altri punti di contatto digitali: Dynamic Media Classic non può farlo per te!
 
-## Anteprima delle risorse
+## Anteprima di Assets
 
-È probabile che tu voglia visualizzare in anteprima le risorse caricate, che stai creando o modificando, per essere certo che vengano visualizzate nel modo desiderato quando i clienti le visualizzano. È possibile accedere alla finestra Anteprima facendo clic su qualsiasi **Anteprima** , nella miniatura della risorsa, nella parte superiore della sezione **Sfoglia/Genera pannello**, o andando in **File > Anteprima**. In una finestra del browser, viene visualizzata un’anteprima di qualsiasi risorsa presente nel pannello, che si tratti di un’immagine, di un video o di una risorsa creata come un set di immagini.
+È probabile che tu voglia visualizzare in anteprima le risorse caricate, che stai creando o modificando, per essere certo che vengano visualizzate nel modo desiderato quando i clienti le visualizzano. Per accedere alla finestra Anteprima, fai clic su qualsiasi pulsante **Anteprima** nella miniatura della risorsa, nella parte superiore del **pannello Sfoglia/Genera**, oppure vai a **File > Anteprima**. In una finestra del browser, viene visualizzata un’anteprima di qualsiasi risorsa presente nel pannello, che si tratti di un’immagine, di un video o di una risorsa creata come un set di immagini.
 
 ### Anteprima dimensione dinamica (predefiniti immagine)
 
-È possibile visualizzare in anteprima le immagini in più dimensioni utilizzando **Dimensioni** anteprima. Viene caricato un elenco dei predefiniti immagine disponibili. I predefiniti immagine verranno discussi in seguito, ma vengono considerati come &quot;ricette&quot; per il caricamento dell&#39;immagine in una dimensione specifica con quantità specifiche di nitidezza e qualità dell&#39;immagine.
+Puoi visualizzare l&#39;anteprima delle immagini in più dimensioni utilizzando l&#39;anteprima **Dimensioni**. Viene caricato un elenco dei predefiniti immagine disponibili. I predefiniti immagine verranno discussi in seguito, ma vengono considerati come &quot;ricette&quot; per il caricamento dell&#39;immagine in una dimensione specifica con quantità specifiche di nitidezza e qualità dell&#39;immagine.
 
 ### Anteprima zoom
 
-È inoltre possibile utilizzare **Zoom** opzione per visualizzare l’anteprima dell’immagine in uno dei molti predefiniti di zoom predefiniti, basati su diversi visualizzatori di zoom inclusi.
+È inoltre possibile utilizzare l&#39;opzione **Zoom** per visualizzare l&#39;anteprima dell&#39;immagine in uno dei numerosi predefiniti di zoom predefiniti, basati su visualizzatori di zoom inclusi diversi.
 
-Ulteriori informazioni su [Anteprima delle risorse](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/previewing-asset.html).
+Ulteriori informazioni su [Anteprima di Assets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/previewing-asset.html).

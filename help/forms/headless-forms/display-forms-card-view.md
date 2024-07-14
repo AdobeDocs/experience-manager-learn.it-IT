@@ -21,13 +21,13 @@ ht-degree: 0%
 Il formato di visualizzazione delle schede è un modello di progettazione che presenta informazioni o dati sotto forma di schede. Ogni scheda rappresenta una parte discreta di contenuto o immissione di dati e in genere è costituita da un contenitore visivamente distinto con elementi specifici disposti al suo interno.
 Le schede cliccabili in React sono componenti interattivi che assomigliano a schede o tessere e possono essere cliccate o toccate dall’utente. Quando un utente fa clic o tocca una scheda su cui è possibile fare clic, attiva un’azione o un comportamento specifico, ad esempio passare a un’altra pagina, aprire un modulo o aggiornare l’interfaccia utente.
 
-In questo articolo utilizzeremo [API listforms](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) per recuperare i moduli e visualizzarli in formato scheda e aprire il modulo adattivo all’evento clic.
+In questo articolo utilizzeremo l&#39;API [listforms](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) per recuperare i moduli, visualizzarli in formato scheda e aprire il modulo adattivo all&#39;evento clic.
 
 ![vista a schede](./assets/card-view-forms.png)
 
 ## Modello scheda
 
-Il codice seguente è stato utilizzato per progettare il modello di scheda. Nel modello di scheda vengono visualizzati il titolo e la descrizione del modulo adattivo e il logo di Adobe. [Componenti dell’interfaccia utente materiale](https://mui.com/) sono stati utilizzati nella creazione di questo layout.
+Il codice seguente è stato utilizzato per progettare il modello di scheda. Nel modello di scheda vengono visualizzati il titolo e la descrizione del modulo adattivo e il logo di Adobe. [Componenti dell&#39;interfaccia utente materiali](https://mui.com/) sono stati utilizzati nella creazione di questo layout.
 
 
 

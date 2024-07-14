@@ -1,6 +1,6 @@
 ---
 title: File di registro AEM di Cloud 5
-description: Questo articolo approfondisce le modalità di accesso ai registri in AEM as a Cloud Service, tra cui come accedervi tramite l’interfaccia utente e dalle API.
+description: Questo articolo approfondisce le modalità di accesso ai registri in AEM as a Cloud Service, incluso come accedervi tramite l’interfaccia utente e dalle API.
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 # File di registro AEM di Cloud 5
 
-Questo articolo approfondisce le modalità di accesso ai registri in AEM as a Cloud Service, tra cui come accedervi tramite l’interfaccia utente e dalle API.
+Questo articolo approfondisce le modalità di accesso ai registri in AEM as a Cloud Service, incluso come accedervi tramite l’interfaccia utente e dalle API.
 
 >[!VIDEO](https://video.tv.adobe.com/v/341156?quality=12&learn=on)
 
@@ -27,6 +27,6 @@ Questo articolo approfondisce le modalità di accesso ai registri in AEM as a Cl
 + File di registro [Panoramica](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=it)
 + Accesso ai file di registro tramite l’interfaccia utente
 + Utilizzo di Adobe CLI
-   + [CLI estensibile Adobe I/O](https://github.com/adobe/aio-cli)
+   + [Adobe I/O CLI estensibile](https://github.com/adobe/aio-cli)
    + [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
 + File di registro coda

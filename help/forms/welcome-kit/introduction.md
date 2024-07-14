@@ -24,6 +24,7 @@ Questa esercitazione ti aiuta a creare una pagina AEM con collegamenti per scari
 
 Avrà bisogno di quanto segue:
 
-Un’istanza funzionante dell’AEM con il pacchetto del componente aggiuntivo Modulo installato Componenti core
+Istanza funzionante di AEM con pacchetto del componente aggiuntivo modulo installato
+Componenti core installati
 
 [Ambiente di sviluppo configurato in base a questo documento](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)

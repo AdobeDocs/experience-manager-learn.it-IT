@@ -64,7 +64,7 @@ Poiché i modelli di base sono generalmente progettati in Photoshop ma distribui
 I progetti modello possono essere relativamente semplici o estremamente complessi a seconda delle regole e delle esigenze aziendali dell’applicazione. I modelli di base vengono chiamati dal server immagini. Tuttavia, a causa della flessibilità dell’ambiente Dynamic Media Classic, è possibile nidificare modelli anche all’interno di altri modelli, consentendo di creare immagini abbastanza complesse che possono essere collegate da variabili comunemente denominate.
 
 - Ulteriori informazioni su [Nozioni di base sui modelli](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html).
-- Scopri come creare un [Modello di base](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template).
+- Scopri come creare un [modello base](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template).
 
 ## Creazione di un modello di base
 
@@ -72,16 +72,16 @@ Quando si utilizza un modello di base, in genere si seguono i passaggi del fluss
 
 ![immagine](assets/basic-templates/basic-templates-1.png)
 
-_Il flusso di lavoro Modello di base._
+_Flusso di lavoro del modello di base._
 
 1. Progetta e crea le risorse. La maggior parte degli utenti esegue questa operazione in Adobe Photoshop. Progetta le risorse nelle dimensioni esatte necessarie: se si tratta di un’immagine di 200 pixel per una pagina di miniature, impostala su 200 pixel. Se avete bisogno di ingrandirla, progettatela ad una dimensione di circa 2000 pixel. Utilizzate Photoshop (e/o Illustrator salvati come bitmap) per creare le risorse e Dynamic Media Classic per assemblare le parti, gestire i livelli e aggiungere variabili.
-2. Dopo aver progettato le risorse grafiche, caricale in Dynamic Media Classic. Invece di caricare singole risorse da PSD, ti consigliamo di caricare l’intero file di PSD a livelli e di fare in modo che Dynamic Media Classic crei un file per livello, utilizzando **Mantieni livelli** opzione al caricamento (vedi di seguito per ulteriori dettagli). _Flusso di lavoro per testo: se crei testo dinamico, carica anche i font. Il testo dinamico è variabile e controllato tramite l’URL. Se il testo è statico o contiene solo poche frasi brevi che non cambiano, ad esempio tag che indicano &quot;Nuovo&quot; o &quot;Vendita&quot; anziché &quot;X% Off&quot; e la X è un numero variabile, si consiglia di eseguire il pre-rendering del testo in Photoshop e di caricarlo come livelli rasterizzati come immagini. È più semplice e consente di applicare al testo lo stile desiderato._
-3. Creare il modello in Dynamic Media Classic utilizzando l&#39;editor di nozioni di base del modello del menu Genera e aggiungere livelli immagine. Flusso di lavoro per testo: crea livelli di testo nello stesso editor. Questo passaggio è necessario quando si crea un modello manualmente in Dynamic Media Classic. Scegliete una dimensione dell&#39;area di lavoro che corrisponda alla progettazione, trascinate le immagini sull&#39;area di lavoro e impostate le proprietà del livello (dimensioni, rotazione, opacità, ecc.). Non state inserendo tutti i livelli possibili sul modello, solo un segnaposto per livello immagine. _Flusso di lavoro per il testo: puoi creare livelli di testo con lo strumento Testo, in modo analogo a come si creano livelli di testo in Photoshop. Potete scegliere un carattere e il relativo stile utilizzando le stesse opzioni disponibili con lo strumento testo Photoshop._ Un altro flusso di lavoro consiste nel caricare un PSD e far sì che Dynamic Media Classic generi un modello &quot;gratuito&quot;, e possa anche ricreare livelli di testo. Questo aspetto verrà discusso più dettagliatamente in seguito.
-4. Una volta creati i livelli, aggiungi parametri (variabili) a qualsiasi proprietà di qualsiasi livello che desideri controllare tramite l’URL, inclusa l’origine del livello (l’immagine stessa ). _Flusso di lavoro per il testo: puoi anche aggiungere parametri ai livelli di testo, sia per controllare il contenuto del testo e le dimensioni e la posizione del livello stesso, sia per tutte le opzioni di formattazione come il colore del font, le dimensioni del font, il tracciamento orizzontale, ecc._
+2. Dopo aver progettato le risorse grafiche, caricale in Dynamic Media Classic. Invece di caricare singole risorse da PSD, ti consigliamo di caricare l&#39;intero file di PSD con livelli e di fare in modo che Dynamic Media Classic crei un file per livello, utilizzando l&#39;opzione **Mantieni livelli** al momento del caricamento (vedi di seguito per ulteriori dettagli). _Flusso di lavoro testo: se crei testo dinamico, carica anche i tuoi font. Il testo dinamico è variabile e controllato tramite l’URL. Se il testo è statico o contiene solo poche frasi brevi che non cambiano, ad esempio tag che indicano &quot;Nuovo&quot; o &quot;Vendita&quot; anziché &quot;X% Off&quot; e la X è un numero variabile, si consiglia di eseguire il pre-rendering del testo in Photoshop e di caricarlo come livelli rasterizzati come immagini. È più semplice e lo stile del testo è quello desiderato._
+3. Creare il modello in Dynamic Media Classic utilizzando l&#39;editor di nozioni di base del modello del menu Genera e aggiungere livelli immagine. Flusso di lavoro per testo: crea livelli di testo nello stesso editor. Questo passaggio è necessario quando si crea un modello manualmente in Dynamic Media Classic. Scegliete una dimensione dell&#39;area di lavoro che corrisponda alla progettazione, trascinate le immagini sull&#39;area di lavoro e impostate le proprietà del livello (dimensioni, rotazione, opacità, ecc.). Non state inserendo tutti i livelli possibili sul modello, solo un segnaposto per livello immagine. _Flusso di lavoro per il testo: è possibile creare livelli di testo con lo strumento Testo, in modo analogo alla creazione di livelli di testo in Photoshop. Potete scegliere un carattere e il relativo stile utilizzando le stesse opzioni disponibili con lo strumento testo Photoshop._ Un altro flusso di lavoro consiste nel caricare un PSD e far sì che Dynamic Media Classic generi un modello &quot;gratuito&quot; e possa anche ricreare i livelli di testo. Questo aspetto verrà discusso più dettagliatamente in seguito.
+4. Una volta creati i livelli, aggiungi parametri (variabili) a qualsiasi proprietà di qualsiasi livello che desideri controllare tramite l’URL, inclusa l’origine del livello (l’immagine stessa ). _Flusso di lavoro testo: è inoltre possibile aggiungere parametri ai livelli di testo, sia per controllare il contenuto del testo e le dimensioni e la posizione del livello stesso, sia per tutte le opzioni di formattazione, ad esempio il colore del carattere, la dimensione del carattere, il tracciamento orizzontale e così via._
 5. Crea un predefinito immagine che corrisponda alle dimensioni del modello. È consigliabile eseguire questa operazione in modo che il modello venga sempre chiamato a una dimensione 1:1 e anche per aggiungere nitidezza a qualsiasi livello di immagine di grandi dimensioni che venga ridimensionato per adattarsi al modello. Se stai creando un modello da ingrandire, questo passaggio non è necessario.
-6. Pubblica, copia l’URL dall’anteprima Dynamic Media Classic e testalo in un browser.
+6. Publish, copia l’URL dall’anteprima Dynamic Media Classic e testalo in un browser.
 
-## Preparazione e caricamento delle risorse dei modelli in Dynamic Media Classic
+## Preparazione e caricamento del modello Assets in Dynamic Media Classic
 
 Prima di caricare le risorse modello in Dynamic Media Classic, devi completare alcuni passaggi preparatori.
 
@@ -111,13 +111,13 @@ Se è necessario generare testo dinamico, verranno caricati e pubblicati anche i
 
 Dynamic Media Classic supporta i caratteri OTF (Standard OpenType), TTF (TrueType) e PostScript Type 1. Mac: non sono supportati solo i tipi di carattere per valigie, i file di raccolta dei tipi di carattere, i tipi di carattere di sistema di Windows e i tipi di carattere proprietari dei computer (come i tipi di carattere utilizzati dalle macchine per l&#39;incisione o il ricamo). Sarà quindi necessario convertirli in uno dei formati di carattere standard o sostituirli con un tipo di carattere simile da utilizzare in Dynamic Media Classic e sul server immagini.
 
-Dopo il caricamento in Dynamic Media Classic dei font, come qualsiasi altra risorsa, è necessario pubblicarli anche nel server immagini. Un errore molto comune del modello consiste nel dimenticare di pubblicare i tipi di carattere, che si tradurrà in un errore di immagine: il server immagini non sostituirà un altro tipo di carattere. Inoltre, se desideri utilizzare il **Estrai testo** durante il caricamento, è necessario caricare i file dei caratteri prima di caricare il PSD che utilizza tali caratteri. Il **Estrai testo** La funzione tenterà di ricreare il testo come livello di testo modificabile e inserirlo all&#39;interno di un modello di Dynamic Media Classic. Questo argomento viene discusso nel prossimo argomento, Opzioni di PSD.
+Dopo il caricamento in Dynamic Media Classic dei font, come qualsiasi altra risorsa, è necessario pubblicarli anche nel server immagini. Un errore molto comune del modello consiste nel dimenticare di pubblicare i tipi di carattere, che si tradurrà in un errore di immagine: il server immagini non sostituirà un altro tipo di carattere. Inoltre, se desideri utilizzare l&#39;opzione **Estrai testo** durante il caricamento, devi caricare i file dei font prima di caricare il PSD che utilizza tali font. La funzionalità **Estrai testo** tenterà di ricreare il testo come livello di testo modificabile e inserirlo in un modello di Dynamic Media Classic. Questo argomento viene discusso nel prossimo argomento, Opzioni di PSD.
 
 Tenere presente che i tipi di carattere hanno più nomi interni spesso diversi dal nome del file esterno. Puoi visualizzarne tutti i diversi nomi nella pagina Dettagli della risorsa in Dynamic Media Classic. Di seguito sono riportati i nomi dei caratteri Adobe Caslon Pro Semibold, elencati nella scheda Metadati di Dynamic Media Classic:
 
 ![immagine](assets/basic-templates/basic-templates-4.jpg)
 
-_Scheda Metadati nella pagina Dettagli di un tipo di carattere in Dynamic Media Classic._
+_Scheda Metadati nella pagina Dettagli per un tipo di carattere in Dynamic Media Classic._
 
 Dynamic Media Classic utilizza il nome file di questo tipo di carattere (ACaslonPro-Semibold) come ID risorsa, ma non è questo il nome utilizzato dal modello. Il modello utilizza il nome RTF (Rich Text Format), riportato in basso. RTF è la &quot;lingua&quot; nativa del motore di testo di Image Server.
 
@@ -131,9 +131,9 @@ Non è necessario caricare un file Photoshop (PSD) per creare un modello; un mod
 
 - **Mantieni livelli.** Questa è l&#39;opzione più importante. Questo comunica a Dynamic Media Classic di creare una risorsa immagine per livello Photoshop. Se questa opzione è deselezionata, tutte le altre opzioni sono disattivate e il PSD viene appiattito in una singola immagine.
 - **Crea** **Modello.** Questa opzione accetta i vari livelli generati e crea automaticamente un modello combinandoli nuovamente. Un inconveniente nell’utilizzo della maschera generata automaticamente è che Dynamic Media Classic inserisce tutti i livelli in un unico file, mentre è necessario un solo segnaposto per livello. È facile eliminare i livelli aggiuntivi, ma se ne hanno molti è più veloce ricrearli. Assicurati di rinominare il nuovo modello; in caso contrario, verrà sovrascritto la prossima volta che ricarichi lo stesso PSD.
-- **Estrai testo.** In questo modo i livelli di testo nel PSD vengono ricreati come livelli di testo nel modello utilizzando il font caricato. Questo passaggio è necessario se il testo si trova in un percorso in Photoshop e si desidera mantenerlo nel modello. Questa funzione richiede l’utilizzo di **Crea modello** , in quanto il testo estratto può essere creato solo da un modello generato al momento del caricamento.
-- **Estendi livelli a dimensione sfondo.** Questa impostazione rende ogni livello delle stesse dimensioni dell&#39;area di lavoro PSD generale. Questo è molto utile per i livelli che rimarranno sempre fissi nella posizione: in caso contrario, quando si scambiano le immagini nello stesso livello, potrebbe essere necessario riposizionarle.
-- **Denominazione livelli.** Questo spiega a Dynamic Media Classic come denominare ogni risorsa generata per livello. Consigliamo: **Photoshop** **e livello** **Nome** o PHOTOSHOP e **Layer** **Numero**. Entrambe le opzioni utilizzano il nome del PSD come prima parte del nome e aggiungono il nome o il numero del livello alla fine. Ad esempio, se hai un PSD denominato &quot;shirt.psd&quot; e contiene livelli denominati &quot;front&quot;, &quot;sleeves&quot; e &quot;collar&quot;, se effettui il caricamento utilizzando **PHOTOSHOP e** Layer **Nome** Dynamic Media Classic genera gli ID risorsa &quot;shirt_front&quot;, &quot;shirt_sleeves&quot; e &quot;shirt_collar&quot;. L’utilizzo di una di queste opzioni consente di garantire che il nome sia univoco in Dynamic Media Classic.
+- **Estrai testo.** In questo modo vengono ricreati i livelli di testo nel PSD come livelli di testo nel modello utilizzando il font caricato. Questo passaggio è necessario se il testo si trova in un percorso in Photoshop e si desidera mantenerlo nel modello. Questa funzionalità richiede l&#39;utilizzo dell&#39;opzione **Crea modello**, in quanto il testo estratto può essere creato solo da un modello generato al caricamento.
+- **Estendi livelli a dimensione sfondo.** Questa impostazione rende ogni livello della stessa dimensione dell&#39;area di lavoro PSD generale. Questo è molto utile per i livelli che rimarranno sempre fissi nella posizione: in caso contrario, quando si scambiano le immagini nello stesso livello, potrebbe essere necessario riposizionarle.
+- **Denominazione livelli.** Questo indica a Dynamic Media Classic come denominare ogni risorsa generata per livello. È consigliabile **Photoshop** **e Layer** **Name** o Photoshop e **Layer** **Number**. Entrambe le opzioni utilizzano il nome del PSD come prima parte del nome e aggiungono il nome o il numero del livello alla fine. Se ad esempio si dispone di un PSD denominato &quot;shirt.psd&quot; e di livelli denominati &quot;front&quot;, &quot;sleeves&quot; e &quot;collar&quot;, se si carica utilizzando l&#39;opzione **Photoshop e** Layer **Name**, Dynamic Media Classic genererà gli ID risorsa &quot;shirt_front&quot;, &quot;shirt_sleeves&quot; e &quot;shirt_collar&quot;. L’utilizzo di una di queste opzioni consente di garantire che il nome sia univoco in Dynamic Media Classic.
 
 ## Creazione di un modello con livelli immagine
 
@@ -147,27 +147,27 @@ Nel centro a sinistra è visualizzata l&#39;area di lavoro con un&#39;anteprima 
 
 ![immagine](assets/basic-templates/basic-templates-5.jpg)
 
-_Crea modello: pagina Nozioni di base._
+_Pagina Nozioni di base sui modelli di compilazione._
 
-- **Anteprima/Area di lavoro.** La finestra principale. Qui è possibile spostare, ridimensionare e ruotare i livelli con il mouse. I profili dei livelli vengono visualizzati come linee tratteggiate.
+- **Anteprima/Area di lavoro.** Finestra principale. Qui è possibile spostare, ridimensionare e ruotare i livelli con il mouse. I profili dei livelli vengono visualizzati come linee tratteggiate.
 - **Livelli.** È simile al pannello livelli di Photoshop. I livelli aggiunti al modello verranno visualizzati qui. I livelli vengono impilati dall&#39;alto verso il basso: il livello superiore nel pannello Livelli viene visualizzato sopra gli altri sotto di esso nell&#39;elenco.
-- **Proprietà livello.** Qui è possibile regolare tutte le proprietà di un livello utilizzando i controlli numerici. Selezionate un livello, quindi regolatene le proprietà.
-- **Composito** **URL.** Nella parte inferiore dell’interfaccia utente si trova l’area URL composito. Questo non verrà discusso in questa sezione del tutorial, tuttavia qui vedrai il tuo modello decostruito come una serie di modificatori URL di Image Server. Quest&#39;area è modificabile. Se si ha familiarità con i comandi di Image Server, è possibile modificare manualmente il modello qui. Tuttavia è possibile romperlo anche. Come Photoshop, la numerazione dei livelli inizia da 0. L&#39;area di lavoro è il livello 0 e il primo livello aggiunto è il livello 1. I metodi di fusione determinano il modo in cui i pixel di un livello si fondono con i pixel sottostanti. Potete creare una serie di effetti speciali utilizzando i metodi di fusione.
+- **Proprietà livello.** Qui è possibile regolare tutte le proprietà di un livello utilizzando controlli numerici. Selezionate un livello, quindi regolatene le proprietà.
+- **URL composito** **.** Nella parte inferiore dell&#39;interfaccia utente si trova l&#39;area URL composito. Questo non verrà discusso in questa sezione del tutorial, tuttavia qui vedrai il tuo modello decostruito come una serie di modificatori URL di Image Server. Quest&#39;area è modificabile. Se si ha familiarità con i comandi di Image Server, è possibile modificare manualmente il modello qui. Tuttavia è possibile romperlo anche. Come Photoshop, la numerazione dei livelli inizia da 0. L&#39;area di lavoro è il livello 0 e il primo livello aggiunto è il livello 1. I metodi di fusione determinano il modo in cui i pixel di un livello si fondono con i pixel sottostanti. Potete creare una serie di effetti speciali utilizzando i metodi di fusione.
 
 #### Utilizzo dell’Editor nozioni di base sui modelli
 
 Di seguito sono riportati i passaggi del flusso di lavoro per avviare il modello di base:
 
-1. In Dynamic Media Classic, vai a **Genera > Nozioni di base sui modelli**. Non è possibile selezionare nulla oppure iniziare selezionando un&#39;immagine, che diventa il primo livello del modello.
-2. Scegli una dimensione e premi **OK**. Questa dimensione deve corrispondere a quella progettata in Photoshop. L’editor modelli verrà caricato.
+1. In Dynamic Media Classic, vai a **Genera > Nozioni di base modello**. Non è possibile selezionare nulla oppure iniziare selezionando un&#39;immagine, che diventa il primo livello del modello.
+2. Scegliere una dimensione e premere **OK**. Questa dimensione deve corrispondere a quella progettata in Photoshop. L’editor modelli verrà caricato.
 3. Se non hai selezionato un’immagine al passaggio 1, cerca o individua un’immagine nel pannello delle risorse a sinistra e trascinala sull’area di lavoro.
 
    - L’immagine viene automaticamente ridimensionata in base alle dimensioni dell’area di lavoro. Se prevedi di scambiare le immagini ad alta risoluzione, in genere inserisci una delle tue immagini P-TIFF di grandi dimensioni (2000 px) e utilizzala come segnaposto.
    - Questo dovrebbe essere il livello più in basso del modello, tuttavia è possibile riordinare i livelli in un secondo momento.
 
 4. Ridimensionare o riposizionare il livello direttamente nell&#39;area di lavoro oppure regolando le impostazioni nel pannello Proprietà livello.
-5. Trascinate livelli immagine aggiuntivi in base alle esigenze. Se desiderate aggiungere anche gli effetti dei livelli. Consulta l’argomento _Aggiunta di effetti livello_, di seguito.
-6. Clic **Salva**, scegli una posizione e assegna un nome al modello. È possibile visualizzare in anteprima, ma a questo punto il modello apparirà esattamente come un&#39;immagine Photoshop appiattita, non è ancora modificabile.
+5. Trascinate livelli immagine aggiuntivi in base alle esigenze. Se desiderate aggiungere anche gli effetti dei livelli. Consulta l&#39;argomento _Aggiunta di effetti di livello_, di seguito.
+6. Fai clic su **Salva**, scegli una posizione e assegna un nome al modello. È possibile visualizzare in anteprima, ma a questo punto il modello apparirà esattamente come un&#39;immagine Photoshop appiattita, non è ancora modificabile.
 
 ### Aggiunta di effetti livello
 
@@ -176,17 +176,17 @@ Il server immagini supporta alcuni effetti di livello programmatici, ovvero effe
 - **Ombra esterna**. Applica un&#39;ombreggiatura al di fuori dei limiti del livello, posizionata da un offset pixel x e y.
 - **Ombra interna**. Applica un&#39;ombreggiatura all&#39;interno dei limiti del livello, posizionata da un offset pixel x e y.
 - **Bagliore esterno**. Applica un effetto alone in modo uniforme intorno a tutti gli spigoli del livello.
-- **Bagliore interno**. Applica un effetto alone in modo uniforme all&#39;interno di tutti gli spigoli del livello.
+- **Bagliore Interno**. Applica un effetto alone in modo uniforme all&#39;interno di tutti gli spigoli del livello.
 
 ![immagine](assets/basic-templates/basic-templates-6.jpg)
 
 _Un livello con e senza ombra esterna_
 
-Per aggiungere un effetto, fare clic su **Aggiungi effetto** e scegliete un effetto dal menu. Come per i livelli normali, potete selezionare un effetto nel pannello Livelli e utilizzare il pannello Proprietà livello per regolarne le impostazioni.
+Per aggiungere un effetto, fare clic su **Aggiungi effetto** e scegliere un effetto dal menu. Come per i livelli normali, potete selezionare un effetto nel pannello Livelli e utilizzare il pannello Proprietà livello per regolarne le impostazioni.
 
 Gli effetti ombra vengono spostati orizzontalmente o verticalmente dal livello, mentre gli effetti alone vengono applicati uniformemente in tutte le direzioni. Gli effetti interni agiscono sopra le parti opache del livello, mentre gli effetti esterni influiscono solo sulle aree trasparenti.
 
-Ulteriori informazioni su[Aggiunta di effetti livello](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#using-shadow-and-glow-effects-on-layers).
+Ulteriori informazioni sull&#39;aggiunta di [effetti livello](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#using-shadow-and-glow-effects-on-layers).
 
 ### Aggiunta di parametri
 
@@ -206,15 +206,15 @@ Infine, il set iniziale di parametri diventa i valori predefiniti delle propriet
 
 Questo è il flusso di lavoro per la creazione dei parametri:
 
-1. Fai clic su **Parametri** accanto al nome del livello per il quale si desidera creare i parametri. Viene visualizzata la schermata Parametri. Elenca ogni proprietà del livello e il relativo valore.
-1. Seleziona la **On** accanto al nome di ogni proprietà che si desidera trasformare in un parametro. Viene visualizzato un nome di parametro predefinito. Puoi aggiungere parametri solo alle proprietà che sono cambiate dal loro stato predefinito.
+1. Fare clic sul pulsante **Parametri** accanto al nome del livello per il quale si desidera creare i parametri. Viene visualizzata la schermata Parametri. Elenca ogni proprietà del livello e il relativo valore.
+1. Selezionare l&#39;opzione **Il** accanto al nome di ogni proprietà che si desidera trasformare in un parametro. Viene visualizzato un nome di parametro predefinito. Puoi aggiungere parametri solo alle proprietà che sono cambiate dal loro stato predefinito.
 
-   - Ad esempio, se aggiungete un livello e lo mantenete nella posizione xy predefinita di 0,0, Dynamic Media Classic non esporrà un **Posizione** proprietà. Per risolvere il problema, spostate il livello di almeno un pixel. Ora Dynamic Media Classic esporrà **Posizione** come proprietà puoi parametrizzare.
-   - Per aggiungere un parametro alla proprietà mostra/nascondi (che attiva e disattiva il livello ), fate clic sul pulsante **Spettacolo** o **Nascondi livello** per disattivare il livello (se lo si desidera, è possibile riattivarlo in seguito). Dynamic Media Classic ora esporrà un **Nascondi** che possono essere parametrizzate.
+   - Ad esempio, se aggiungi un livello e lo mantieni nella posizione xy predefinita di 0,0, Dynamic Media Classic non esporrà una proprietà **Position**. Per risolvere il problema, spostate il livello di almeno un pixel. Ora Dynamic Media Classic esporrà **Position** come proprietà che puoi parametrizzare.
+   - Per aggiungere un parametro alla proprietà mostra/nascondi (che attiva e disattiva il livello ), fai clic sull&#39;icona **Mostra** o **Nascondi livello** per disattivare il livello (puoi riattivarlo in seguito se lo desideri). Dynamic Media Classic esporrà una proprietà **Hide** che può essere parametrizzata.
 
 1. Rinomina i nomi dei parametri predefiniti con un nome più facile da identificare nell’URL. Ad esempio, se desiderate aggiungere un parametro per modificare il livello del banner sopra un&#39;immagine, modificate il nome di default &quot;layer_2_src&quot; in &quot;banner&quot;.
-1. Premi **Chiudi** per uscire dalla schermata Parametri.
-1. Ripetere questo processo per gli altri livelli facendo clic sul pulsante **Parametri** e l&#39;aggiunta e la ridenominazione dei parametri.
+1. Premere **Chiudi** per uscire dalla schermata Parametri.
+1. Ripetere il processo per gli altri livelli facendo clic sul pulsante **Parametri** e aggiungendo e rinominando i parametri.
 1. Al termine, salva le modifiche.
 
 >[!TIP]
@@ -256,7 +256,7 @@ La buona notizia è che Dynamic Media Classic genera l&#39;RTF per voi. Ogni vol
 Potete creare livelli di testo in un modello in Dynamic Media Classic nei due modi seguenti:
 
 1. Strumento Testo in Dynamic Media Classic. Questo metodo verrà discusso di seguito. L’editor nozioni di base modello dispone di uno strumento che consente di creare una casella di testo, immettere testo e formattare il testo. Dynamic Media Classic genera il file RTF in base alle esigenze e lo inserisce in un livello separato.
-2. Estrai testo (al caricamento). L&#39;altro metodo consiste nel creare il livello testo in Photoshop e salvarlo nel PSD come livello testo normale (invece di rasterizzarlo come livello immagine). Quindi carica il file in Dynamic Media Classic e utilizza **Estrai testo** opzione. Dynamic Media Classic convertirà ogni livello di testo Photoshop in un livello di testo Image Server utilizzando i comandi RTF. Se si utilizza questo metodo, assicurarsi di caricare i font in Dynamic Media Classic, altrimenti Dynamic Media Classic sostituirà un font predefinito al momento del caricamento e non sarà possibile sostituire nuovamente il font corretto.
+2. Estrai testo (al caricamento). L&#39;altro metodo consiste nel creare il livello testo in Photoshop e salvarlo nel PSD come livello testo normale (invece di rasterizzarlo come livello immagine). Caricare quindi il file in Dynamic Media Classic e utilizzare l&#39;opzione **Estrai testo**. Dynamic Media Classic convertirà ogni livello di testo Photoshop in un livello di testo Image Server utilizzando i comandi RTF. Se si utilizza questo metodo, assicurarsi di caricare i font in Dynamic Media Classic, altrimenti Dynamic Media Classic sostituirà un font predefinito al momento del caricamento e non sarà possibile sostituire nuovamente il font corretto.
 
 ### Editor di testo
 
@@ -266,29 +266,29 @@ Il testo viene immesso tramite l&#39;Editor di testo. L’editor di testo è un�
 
 _Editor testo nozioni di base modello._
 
-La maggior parte del lavoro verrà svolto in **Anteprima** , che consente di immettere il testo e di visualizzarlo come apparirà nel modello. È inoltre disponibile un **Sorgente** , utilizzato per modificare manualmente il file RTF, se necessario.
+La maggior parte del lavoro verrà eseguita nella scheda **Anteprima**, che consente di immettere il testo e di visualizzarlo come apparirà nel modello. È inoltre disponibile una scheda **Source**, utilizzata per modificare manualmente il file RTF, se necessario.
 
-Il flusso di lavoro generale consiste nell’utilizzare **Anteprima** per digitare del testo.
+Il flusso di lavoro generale prevede l&#39;utilizzo della scheda **Anteprima** per digitare del testo.
 
-Selezionare quindi il testo e scegliere una formattazione come il colore del carattere, la dimensione del carattere o la giustificazione utilizzando i controlli nella parte superiore. Dopo aver formattato il testo nel modo desiderato, fare clic su **Applica** per visualizzare l&#39;aggiornamento nell&#39;anteprima dell&#39;area di lavoro. Chiudete quindi l&#39;Editor di testo per tornare alla finestra principale Nozioni di base modello.
+Selezionare quindi il testo e scegliere una formattazione come il colore del carattere, la dimensione del carattere o la giustificazione utilizzando i controlli nella parte superiore. Dopo aver applicato lo stile desiderato al testo, fare clic su **Applica** per visualizzarne l&#39;aggiornamento nell&#39;anteprima dell&#39;area di lavoro. Chiudete quindi l&#39;Editor di testo per tornare alla finestra principale Nozioni di base modello.
 
 #### Utilizzo dell’Editor di testo
 
 Di seguito sono riportati i passaggi del flusso di lavoro per l’aggiunta di testo all’interno della pagina di creazione delle nozioni di base sui modelli:
 
-1. Fai clic su **Testo** nella parte superiore della pagina di build.
+1. Fai clic sul pulsante dello strumento **Testo** nella parte superiore della pagina di compilazione.
 2. Trascinare fuori una casella di testo in cui si desidera visualizzare il testo. La finestra Editor di testo si apre in una finestra modale. Il modello verrà visualizzato in background, ma non potrà essere modificato fino a quando non terminerai la modifica del testo.
 3. Digitare il testo di esempio che si desidera visualizzare al primo caricamento del modello. Ad esempio, se crei una casella di testo per un’immagine e-mail personalizzata, il testo potrebbe indicare &quot;Hi Name. Ora è il momento di risparmiare!&quot; In seguito, aggiungerai un parametro di testo per sostituire Nome con un valore inviato sull’URL. Il testo verrà visualizzato nel modello sotto la finestra solo dopo aver fatto clic su **Applica**.
 4. Per formattare il testo, selezionarlo trascinando con il mouse e scegliere un controllo di formattazione nell&#39;interfaccia utente.
 
    - Sono disponibili molte opzioni di formattazione. Alcuni dei più comuni sono il carattere (faccia), la dimensione e il colore del carattere, nonché la giustificazione sinistra/centro/destra.
    - Non dimenticare di selezionare prima il testo. In caso contrario, non sarà possibile applicare alcuna formattazione.
-   - Per scegliere un carattere diverso, assicurarsi di selezionare il testo e aprire il menu Carattere. L’editor mostrerà un elenco di tutti i font caricati in Dynamic Media Classic. Se nel computer è installato anche un tipo di carattere, questo verrà visualizzato in nero. Se non è installato nel computer, verrà visualizzato in rosso. Tuttavia, verrà comunque riprodotto nella finestra di anteprima quando fai clic su **Applica**. È sufficiente caricare i tipi di carattere in Dynamic Media Classic per renderli disponibili a chiunque utilizzi Dynamic Media Classic. Dopo la pubblicazione, il server immagini utilizzerà questi tipi di carattere per generare il testo. Gli utenti non dovranno installare alcun tipo di carattere per visualizzare il testo creato, in quanto fa parte di un&#39;immagine.
-   - A differenza di Photoshop e Illustrator, il server immagini può allineare il testo verticalmente nella casella di testo. L&#39;impostazione predefinita è l&#39;allineamento in alto. Per modificare questa impostazione, selezionare il testo e scegliere **In mezzo** o **In basso** dal **Allineamento verticale** menu.
+   - Per scegliere un carattere diverso, assicurarsi di selezionare il testo e aprire il menu Carattere. L’editor mostrerà un elenco di tutti i font caricati in Dynamic Media Classic. Se nel computer è installato anche un tipo di carattere, questo verrà visualizzato in nero. Se non è installato nel computer, verrà visualizzato in rosso. Tuttavia, il rendering verrà comunque eseguito nella finestra di anteprima quando si fa clic su **Applica**. È sufficiente caricare i tipi di carattere in Dynamic Media Classic per renderli disponibili a chiunque utilizzi Dynamic Media Classic. Dopo la pubblicazione, il server immagini utilizzerà questi tipi di carattere per generare il testo. Gli utenti non dovranno installare alcun tipo di carattere per visualizzare il testo creato, in quanto fa parte di un&#39;immagine.
+   - A differenza di Photoshop e Illustrator, il server immagini può allineare il testo verticalmente nella casella di testo. L&#39;impostazione predefinita è l&#39;allineamento in alto. Per modificare il testo, selezionare **Medio** o **Inferiore** dal menu **Allineamento verticale**.
    - Se si rende il testo troppo grande per la casella (o se la casella di testo è troppo piccola), tutto o parte di esso verrà ritagliato e scomparirà. Ridurre la dimensione del carattere o ingrandire la casella.
 
-5. Clic **Applica** per rendere effettive le modifiche nella finestra area di lavoro. Devi fare clic su **Applica**, altrimenti le modifiche andranno perse.
-6. Al termine, fai clic su **Chiudi**. Se desiderate tornare alla modalità di modifica, fate doppio clic sul livello di testo per riaprire l&#39;Editor di testo.
+5. Fai clic su **Applica** per vedere le modifiche apportate nella finestra dell&#39;area di lavoro. Fai clic su **Applica**, altrimenti le modifiche andranno perse.
+6. Al termine, fare clic su **Chiudi**. Se desiderate tornare alla modalità di modifica, fate doppio clic sul livello di testo per riaprire l&#39;Editor di testo.
 
 L&#39;editor di testo visualizza in anteprima la dimensione esatta del carattere se questo è installato localmente nel sistema.
 
@@ -312,25 +312,25 @@ Potete vedere la frase Sandalo al cioccolato — è il testo stesso.
 - È possibile visualizzare un valore RGB: \red56\green53\blue4, che corrisponde al colore del testo.
 - Anche se la dimensione del carattere è 20, non viene visualizzato il numero 20. Viene tuttavia visualizzato un comando \fs40. Per qualche motivo, RTF misura i caratteri come punti intermedi. \fs40 è quindi la dimensione del carattere.
 
-Sebbene siano disponibili informazioni sufficienti per creare i parametri, nella documentazione di Image Server è disponibile un riferimento completo di tutti i comandi RTF. Visita il [Documentazione di Image Server](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html#concept-0d3136db7f6f49668274541cd4b6364c).
+Sebbene siano disponibili informazioni sufficienti per creare i parametri, nella documentazione di Image Server è disponibile un riferimento completo di tutti i comandi RTF. Visita la [documentazione di Image Server](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html#concept-0d3136db7f6f49668274541cd4b6364c).
 
 #### Aggiunta di parametri ai livelli di testo
 
 Ecco i passaggi per aggiungere parametri ai livelli di testo.
 
-1. Fai clic su **Parametri** (una &quot;P&quot;) accanto al nome del livello di testo per il quale si desidera creare i parametri. Viene visualizzata la schermata Parametri. Il **Comune** scheda elenca ogni proprietà sul livello e il relativo valore. Qui puoi aggiungere parametri di livello regolari.
-1. Fai clic sul pulsante **Testo** scheda. Qui puoi vedere il file RTF nella parte superiore; i parametri che aggiungi si trovano sotto di esso.
-1. Per aggiungere un parametro, evidenziate prima il valore da modificare e fate clic sul pulsante **Aggiungi parametro** pulsante. Accertatevi di selezionare solo i valori per i comandi e non l&#39;intero comando. Ad esempio, per impostare un parametro per il nome del font nel file RTF di esempio qui sopra, evidenzierei solo &quot;Poor Richard&quot; e aggiungerei un parametro a questo, ma non anche il &quot;\f0&quot;. Quando fai clic su **Aggiungi parametro** , viene visualizzato nell&#39;elenco seguente e il valore del parametro viene visualizzato in rosso nel file RTF mentre è ancora selezionato. Se devi rimuovere un parametro, fai clic sulla casella di controllo accanto a **On** per disattivare tale parametro, che scompare.
+1. Fare clic sul pulsante **Parametri** (una &quot;P&quot;) accanto al nome del livello di testo per il quale si desidera creare i parametri. Viene visualizzata la schermata Parametri. Nella scheda **Comune** sono elencate tutte le proprietà del livello e il relativo valore. Qui puoi aggiungere parametri di livello regolari.
+1. Fai clic sulla scheda **Testo**. Qui puoi vedere il file RTF nella parte superiore; i parametri che aggiungi si trovano sotto di esso.
+1. Per aggiungere un parametro, evidenziare innanzitutto il valore da modificare e fare clic sul pulsante **Aggiungi parametro**. Accertatevi di selezionare solo i valori per i comandi e non l&#39;intero comando. Ad esempio, per impostare un parametro per il nome del font nel file RTF di esempio qui sopra, evidenzierei solo &quot;Poor Richard&quot; e aggiungerei un parametro a questo, ma non anche il &quot;\f0&quot;. Quando si fa clic su **Aggiungi parametro**, questo viene visualizzato nell&#39;elenco seguente e il valore del parametro viene visualizzato in rosso nell&#39;RTF mentre è ancora selezionato. Se devi rimuovere un parametro, fai clic sulla casella di controllo accanto a **Attivato** per disattivare il parametro, che scompare.
 1. Fai clic su per rinominare il parametro con un nome più significativo.
 1. Al termine, il file RTF viene evidenziato in verde, dove sono presenti dei parametri, e i relativi nomi e valori sono elencati di seguito.
-1. Clic **Chiudi** per uscire dalla schermata Parametri. Quindi premere **Salva** , per salvare il modello. Se la modifica è terminata, premere **Chiudi** per uscire dalla pagina Nozioni di base sui modelli.
-1. Clic **Anteprima** per testare il modello in Dynamic Media Classic. Per verificare i parametri di testo, digitate nuovo testo o nuovi valori nella finestra di anteprima. Per modificare il carattere, è necessario digitare il nome RTF esatto del carattere.
+1. Fare clic su **Chiudi** per uscire dalla schermata Parametri. Quindi premi **Salva** per salvare il modello. Se hai terminato la modifica, premi **Chiudi** per uscire dalla pagina Nozioni di base sui modelli.
+1. Fai clic su **Anteprima** per verificare il modello in Dynamic Media Classic. Per verificare i parametri di testo, digitate nuovo testo o nuovi valori nella finestra di anteprima. Per modificare il carattere, è necessario digitare il nome RTF esatto del carattere.
 
 >[!TIP]
 >
->Per aggiungere parametri al colore del testo, aggiungete separatamente i parametri per il rosso, il verde e il blu. Ad esempio, se il file RTF è `\red56\green53\blue46`, si aggiungono parametri separati di rosso, verde e blu per i valori 56, 53 e 46. Nell’URL, puoi modificare il colore chiamando tutti e tre: `&$red=56&$green=53&$blue=46`.
+>Per aggiungere parametri al colore del testo, aggiungete separatamente i parametri per il rosso, il verde e il blu. Ad esempio, se il valore RTF è `\red56\green53\blue46`, aggiungere parametri separati di colore rosso, verde e blu per i valori 56, 53 e 46. Nell&#39;URL, è necessario modificare il colore chiamando tutti e tre: `&$red=56&$green=53&$blue=46`.
 
-Scopri come [Creare parametri di testo dinamici](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html#creating-dynamic-text-parameters).
+Scopri come [creare parametri di testo dinamico](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html#creating-dynamic-text-parameters).
 
 ## Pubblicazione e creazione di URL di modelli
 
@@ -344,7 +344,7 @@ Un predefinito immagine per un modello non contiene informazioni speciali. Se di
 
 Per visualizzare le modifiche inviate live al server immagini, è necessario eseguire una pubblicazione. Tieni presente cosa deve essere pubblicato: i vari livelli delle risorse immagine, i font per il testo dinamico e il modello stesso. Analogamente ad altre risorse rich media di Dynamic Media Classic come i set di immagini e i set 360 gradi, un modello base è una costruzione artificiale: è una riga nel database che fa riferimento alle immagini e ai font utilizzando una serie di comandi Image Server. Quando pubblichi il modello, tutto ciò che fai è aggiornare i dati sul server immagini.
 
-Ulteriori informazioni su [Pubblicazione del modello](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/publishing-templates.html).
+Ulteriori informazioni sulla [pubblicazione del modello](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/publishing-templates.html).
 
 ### Costruzione URL modello
 

@@ -33,7 +33,7 @@ Selezionate Tabella (Table) per inserire il componente tabella.
 
 Con AEM Forms versione 6.4 è stata introdotta la possibilità di visualizzare dati tabulari utilizzando tabelle contenute nel documento di comunicazione interattiva. Il video seguente illustra i passaggi necessari per configurare una tabella nel documento del canale web.
 
-**Configurazione della tabella nel documento del canale web: AEM Forms 6.4**
+**Configurazione della tabella nel documento del canale web - AEM Forms 6.4**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22360?quality=12&learn=on)
 

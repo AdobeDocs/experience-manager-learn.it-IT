@@ -22,11 +22,11 @@ ht-degree: 0%
 È possibile utilizzare il modello Sightly per formattare i dati da visualizzare nelle colonne della casella in entrata. In questo esempio visualizzeremo icone di interfaccia utente coral a seconda del valore della colonna reddito. La schermata seguente mostra l’uso delle icone nella colonna delle entrate
 ![icone di reddito](assets/income-column.PNG)
 
-[Il modello Sightly](assets/sightly-template.zip) utilizzato per visualizzare le icone dell’interfaccia utente coral personalizzate, come parte di questo articolo.
+[Il modello Sightly](assets/sightly-template.zip) utilizzato per visualizzare le icone dell&#39;interfaccia utente Coral personalizzate è fornito come parte di questo articolo.
 
 ## Modello Sightly
 
-Di seguito è riportato il modello Sightly. Il codice nel modello visualizza l’icona a seconda del reddito. Le icone sono disponibili come parte del [libreria icona interfaccia utente coral](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) con l&#39;AEM.
+Di seguito è riportato il modello Sightly. Il codice nel modello visualizza l’icona a seconda del reddito. Le icone sono disponibili come parte della [libreria di icone dell&#39;interfaccia utente coral](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) fornita con AEM.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
@@ -80,17 +80,17 @@ return val;
 
 >[!NOTE]
 >
->Questo articolo presuppone che tu abbia installato [workflow di esempio](assets/review-workflow.zip) e [modulo di esempio](assets/snap-form.zip) da [articolo precedente](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html) in questa serie.
+>Questo articolo presuppone che tu abbia installato il [flusso di lavoro di esempio](assets/review-workflow.zip) e il [modulo di esempio](assets/snap-form.zip) di [articolo precedente](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html) in questa serie.
 
 * [Accedi a crx come utente amministratore](http://localhost:4502/crx/de/index.jsp)
 * [importa modello sightly](assets/sightly-template.zip)
-* [Accedi alla console web AEM](http://localhost:4502/system/console/bundles)
+* [Accesso alla console Web AEM](http://localhost:4502/system/console/bundles)
 * [Distribuire e avviare il bundle di personalizzazione della casella in entrata](assets/income-column-customization.jar)
-* [Apri la casella in entrata](http://localhost:4502/aem/inbox)
+* [Apri la tua casella in entrata](http://localhost:4502/aem/inbox)
 * Per aprire Admin Control (Controllo amministratore), fai clic su List View (Vista elenco) accanto al pulsante Create (Crea).
 * Aggiungi la colonna delle entrate alla casella in entrata e salva le modifiche
-* [Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Seleziona la _stato civile_ e invia il modulo
+* [Anteprima modulo](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
+* Seleziona lo _stato civile_ e invia il modulo
 * [Visualizza casella in entrata](http://localhost:4502/aem/inbox)
 
 L’invio del modulo attiverà il flusso di lavoro e un’attività verrà assegnata all’utente &quot;amministratore&quot;. Dovresti visualizzare l’icona appropriata sotto la colonna delle entrate

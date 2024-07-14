@@ -83,8 +83,8 @@ async function createFile(imageName){
 
 ### Distribuisci sul server
 
-* Scarica e installa [libreria client e immagini di esempio](assets/InlineDAMImage.zip) sull’istanza AEM tramite Gestione pacchetti AEM.
-* Scarica e installa [modulo di esempio](assets/FieldInspectionForm.zip) sull’istanza di AEM utilizzando Gestione pacchetti AEM.
-* Puntare il browser a [ModuloIspezioneFile](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)
+* Scarica e installa la [libreria client e le immagini di esempio](assets/InlineDAMImage.zip) nell&#39;istanza AEM tramite Gestione pacchetti AEM.
+* Scarica e installa il [modulo di esempio](assets/FieldInspectionForm.zip) nella tua istanza AEM utilizzando Gestione pacchetti AEM.
+* Puntare il browser a [FileInspectionForm](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)
 * Selezionate uno degli staffaggi
 * Dovresti visualizzare l’immagine nel modulo

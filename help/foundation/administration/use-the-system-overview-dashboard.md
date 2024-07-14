@@ -18,16 +18,16 @@ ht-degree: 0%
 
 # Utilizzare il dashboard Panoramica sistema
 
-Adobe Experience Manager (AEM) [!UICONTROL Panoramica del sistema] fornisce una vista di alto livello della configurazione, dell’hardware e dello stato dell’istanza dell’AEM, il tutto da un singolo dashboard.
+La [!UICONTROL Panoramica del sistema] di Adobe Experience Manager (AEM) fornisce una panoramica di alto livello della configurazione, dell&#39;hardware e dell&#39;integrità dell&#39;istanza AEM, il tutto da un singolo dashboard.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
 
-1. La panoramica del sistema è accessibile da: **Inizio AEM** > **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Panoramica del sistema]**
+1. È possibile accedere alla panoramica del sistema da: **Inizio AEM** > **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Panoramica del sistema]**
 
-   Direttamente a **`<server-host>/libs/granite/operations/content/systemoverview.html`**
+   Direttamente alle **`<server-host>/libs/granite/operations/content/systemoverview.html`**
 
-1. Le informazioni provenienti dal [!UICONTROL Panoramica del sistema] possono essere esportati facendo clic sul pulsante [!UICONTROL Scarica] pulsante. Le informazioni sono esposte anche tramite i seguenti [!DNL REST] endpoint:
-1. Di seguito è riportato un output di esempio del JSON esportato da [!UICONTROL Panoramica del sistema]:
+1. È possibile esportare le informazioni della [!UICONTROL panoramica del sistema] facendo clic sul pulsante [!UICONTROL Scarica]. Le informazioni vengono esposte anche tramite il seguente endpoint [!DNL REST]:
+1. Di seguito è riportato un output di esempio del codice JSON esportato dalla [!UICONTROL panoramica del sistema]:
 
    ```json
    {

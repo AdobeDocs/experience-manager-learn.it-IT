@@ -27,14 +27,15 @@ Per creare la configurazione cloud in base al contesto, sono necessari i seguent
 
 ## Creare variabili di ambiente
 
-È possibile configurare e gestire le variabili di ambiente standard tramite Cloud Manager. Vengono fornite all’ambiente di runtime e possono essere utilizzate nelle configurazioni OSGi. [Le variabili di ambiente possono essere valori specifici dell’ambiente o segreti dell’ambiente, in base alle modifiche apportate.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en)
+È possibile configurare e gestire le variabili di ambiente standard tramite Cloud Manager. Vengono fornite all’ambiente di runtime e possono essere utilizzate nelle configurazioni OSGi. [Le variabili di ambiente possono essere valori specifici dell&#39;ambiente o segreti dell&#39;ambiente, in base alle modifiche apportate.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en)
 
 
 
 La schermata seguente mostra le variabili di ambiente azure_key e azure_connection_string definite
-![environment_variables](assets/environment-variables.png)
+![variabili_ambiente](assets/environment-variables.png)
 
-Queste variabili di ambiente possono quindi essere specificate nei file di configurazione da utilizzare nell’ambiente appropriato. Ad esempio, se desideri che tutte le istanze di authoring utilizzino queste variabili di ambiente, definisci il file di configurazione nella cartella config.author come specificato di seguito
+Queste variabili di ambiente possono quindi essere specificate nei file di configurazione da utilizzare nell’ambiente appropriato
+Ad esempio, se desideri che tutte le istanze di authoring utilizzino queste variabili di ambiente, definisci il file di configurazione nella cartella config.author come specificato di seguito
 
 ## Crea file di configurazione
 
@@ -46,7 +47,7 @@ org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integr
 
 ![config.author](assets/config-author.png)
 
-Copiare il testo seguente nel file creato nel passaggio precedente. Il codice in questo file esegue l&#39;override del valore delle proprietà accountName e accountKey con le variabili di ambiente **azure_connection_string** e **azure_key**.
+Copiare il testo seguente nel file creato nel passaggio precedente. Il codice di questo file esegue l&#39;override del valore delle proprietà accountName e accountKey con le variabili di ambiente **azure_connection_string** e **azure_key**.
 
 ```json
 {

@@ -31,7 +31,7 @@ ht-degree: 2%
    + [7 - Aggiunta della tabella al pannello reddito](creating-your-first-adaptive-form/adding-table-to-income-panel.md)
    + [8 - Configurazione del pannello delle risorse](creating-your-first-adaptive-form/configuring-assets-panel.md)
    + [9 - Utilizzo di funzioni personalizzate ed editor di codice](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
-+ Gestione degli invii dei moduli {#handling-af-form-submissions}
++ Gestione degli invii di moduli {#handling-af-form-submissions}
    + [Creazione di un flusso di lavoro di revisione](handling-form-submissions/creating-a-review-workflow.md)
    + [Configurazione del modulo adattivo per attivare il flusso di lavoro](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
    + [Visualizzazione della pagina di ringraziamento](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
@@ -89,18 +89,18 @@ ht-degree: 2%
    + [Acquisizione di commenti sul flusso di lavoro](adaptive-forms/capturing-workflow-comments-aem-workflow-article.md)
    + [Memorizzazione dei dati del modulo inviati nel database](adaptive-forms/storing-adaptive-form-data-in-db.md)
    + [Inserimento di un allegato modulo nel database](adaptive-forms/inserting-form-attachment-in-db.md)
-   + [Modifica configurazione origine dati](adaptive-forms/modify-data-source-configuration-settings-article.md)
+   + [Modifica configurazione Source dati](adaptive-forms/modify-data-source-configuration-settings-article.md)
    + [Sovrascrivi proprietà modello dati modulo](adaptive-forms/override-fdm-values.md)
    + [Servizio modello dati modulo nel flusso di lavoro AEM 6.4](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
    + [Gestione dei messaggi di errore nel passaggio del servizio del modello di dati del modulo](adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)
    + [Servizio modello dati modulo nel flusso di lavoro AEM 6.5.1](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)
-   + [Modello dati modulo senza origine dati](adaptive-forms/form-data-model-without-data-source-feature-video-use.md)
+   + [Modello dati modulo senza Data Source](adaptive-forms/form-data-model-without-data-source-feature-video-use.md)
    + [Elemento modello dati modulo calcolato](adaptive-forms/computed-form-data-model-elements-aem-forms-feature-video.md)
-   + [Configurazione dell’origine dati JDBC in AEM Forms](adaptive-forms/data-integration-technical-video-setup.md)
+   + [Configurazione di JDBC Data Source in AEM Forms](adaptive-forms/data-integration-technical-video-setup.md)
    + [Modello dati modulo basato su JDBC](adaptive-forms/jdbc-data-model-technical-video-use.md)
    + [Creare associazioni tra 2 entità nel modello dati modulo](adaptive-forms/association-data-model-technical-video-use.md)
    + [Utilizzo del servizio invoke del modello dati modulo nell’editor di regole](adaptive-forms/service-data-model-technical-video-use.md)
-   + [Pubblicare dati binari in AEM DAM utilizzando il modello dati modulo](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
+   + [Dati binari di Post a AEM DAM utilizzando il modello dati modulo](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
    + [Creazione di modelli di flussi di lavoro riutilizzabili](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
    + [Flusso di lavoro AEM passaggio processo personalizzato](adaptive-forms/custom-process-step-aem-workflow.md)
    + [Pre-popolamento di HTML5 Forms](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
@@ -110,9 +110,9 @@ ht-degree: 2%
    + [1 - Introduzione](chatbot-and-aem-forms/introduction.md)
    + [2 - Analizzare i dati ChatBot](chatbot-and-aem-forms/parse-chat-bot-data.md)
    + [3 - Creare PDF](chatbot-and-aem-forms/merge-data-with-template.md)
-+ Moduli basati su Componenti core{#core-component-based-forms}
++ Core - Moduli basati su componenti{#core-component-based-forms}
    + [Accedere ai dati dei moduli tramite l’API GuideBridge](core-components/submit-data-using-guidebridge-api.md)
-+ Selezionare e assemblare il contenuto della cartella DAM{#select-dam-folder-content}
++ Seleziona e assembla il contenuto della cartella DAM{#select-dam-folder-content}
    + [1- Introduzione](display-and-assemble-dam-folder-contents/introduction.md)
    + [2 - Popolare il gruppo di scelta](display-and-assemble-dam-folder-contents/populating-choice-group-with-dam-folder-content.md)
    + [3 - Assemblare le risorse selezionate](display-and-assemble-dam-folder-contents/assemble-selected-newsletters.md)
@@ -123,13 +123,13 @@ ht-degree: 2%
    + [3 - Configurazione del modello dati del modulo](prefill-fdm-db/configuring-form-data-model.md)
    + [4 - Ottieni parametro richiesta](prefill-fdm-db/get-request-parameter.md)
    + [5 - Creare un modulo adattivo](prefill-fdm-db/create-adaptive-form.md)
-+ Suggerimenti e trucchi per l’interfaccia utente{#ui-tips-and-tricks}
++ Suggerimenti e trucchi per l&#39;interfaccia utente{#ui-tips-and-tricks}
    + [Attiva/disattiva testo campo password](ui-tips-tricks/toggle-password.md)
    + [Pulsanti della barra degli strumenti Spazio](ui-tips-tricks/toolbar-buttons.md)
    + [Navigare tra le schede con pannelli nidificati](ui-tips-tricks/nested-panels.md)
    + [Aggiungere icone alle schede di navigazione](ui-tips-tricks/active-complete.md)
    + [Campi Completamento automatico](ui-tips-tricks/auto-complete.md)
-+ Personalizzazione della casella in entrata{#inbox-customization}
++ Personalizzazione della posta in arrivo{#inbox-customization}
    + [1 - Introduzione](inbox-customization/introduction.md)
    + [2 - Aggiungere una colonna personalizzata](inbox-customization/add-married-column.md)
    + [3 - Utilizzo del modello Sightly](inbox-customization/use-sightly-template.md)
@@ -143,9 +143,9 @@ ht-degree: 2%
    + [2 - Creare un invio personalizzato](prefill-form-with-data-attachments/create-custom-submit.md)
    + [3 - Creare la configurazione OSGi](prefill-form-with-data-attachments/create-osgi-configuration.md)
    + [4 - Creare un servizio di preriempimento](prefill-form-with-data-attachments/create-prefill-service.md)
-+ Memorizzazione e recupero di moduli adattivi{#store-and-retrieve-af-with-2fa}
++ Archiviazione e recupero di moduli adattivi{#store-and-retrieve-af-with-2fa}
    + [1 - Introduzione](store-and-retrieve-af-with-2fa/introduction.md)
-   + [2 - Configurare l’origine dati](store-and-retrieve-af-with-2fa/configure-data-source.md)
+   + [2 - Configurare Data Source](store-and-retrieve-af-with-2fa/configure-data-source.md)
    + [3 - Memorizza allegati modulo](store-and-retrieve-af-with-2fa/store-form-attachments.md)
    + [4 - Memorizza dati modulo](store-and-retrieve-af-with-2fa/store-form-data.md)
    + [5 - Creare un servlet](store-and-retrieve-af-with-2fa/create-servlet.md)
@@ -163,10 +163,10 @@ ht-degree: 2%
    + [5 - Testare la soluzione](import-data-from-pdf-form/test-the-solution.md)
 + Esportazione dei dati inviati in formato CSV{#export-submitted-data-csv-format}
    + [Esporta dati inviati](export-submitted-data-csv-format/export-submitted-data-csv.md)
-+ HTML5 FORMS{#html5-forms}
++ HTML5 Forms{#html5-forms}
    + [Crea modulo HTML5](html5-forms/create-html5-form.md)
    + [Gestire l’invio di moduli HTML5](html5-forms/handle-html5-form-submission.md)
-+ AEM FORMS e ACROBAT SIGN{#forms-and-sign}
++ AEM Forms e Acrobat Sign{#forms-and-sign}
    + [Introduzione](aem-forms-and-adobe-sign/introduction.md)
    + [Configurare SSL](aem-forms-and-adobe-sign/set-up-ssl.md)
    + [Creare un’applicazione API Acrobat Sign](aem-forms-and-adobe-sign/create-adobe-sign-api-application.md)
@@ -214,15 +214,15 @@ ht-degree: 2%
    + [1 - Introduzione](review-form-data/introduction.md)
    + [2 - Crea componente](review-form-data/create-component.md)
    + [3 - Distribuire le risorse](review-form-data/deploy-on-your-system.md)
-+ Memorizzazione e recupero dei dati del modulo nel database MySQL{#storing-and-retrieving-form-data}
++ Memorizzazione e recupero dei dati del modulo in MySQL DB{#storing-and-retrieving-form-data}
    + [Introduzione](storing-retrieving-form-data/introduction.md)
-   + [Configura origine dati](storing-retrieving-form-data/part1.md)
+   + [Configurare Data Source](storing-retrieving-form-data/part1.md)
    + [Servizio per memorizzare i dati](storing-retrieving-form-data/part3.md)
    + [Crea servlet](storing-retrieving-form-data/part2.md)
    + [Libreria client](storing-retrieving-form-data/part4.md)
    + [Modello modulo adattivo](storing-retrieving-form-data/part5.md)
    + [Distribuire risorse di esempio](storing-retrieving-form-data/part6.md)
-+ Attivazione del flusso di lavoro AEM dall’invio di un modulo mobile{#offline-mobile-form-submission}
++ Attivazione del flusso di lavoro AEM dall&#39;invio del modulo mobile{#offline-mobile-form-submission}
    + [Introduzione](offline-mobile-form-submission/introduction.md)
    + [Profilo personalizzato](offline-mobile-form-submission/part-one.md)
    + [Gestisci invio PDF](offline-mobile-form-submission/part-two.md)
@@ -235,13 +235,13 @@ ht-degree: 2%
    + [Creare un’interfaccia query](query-form-submissions/part3.md)
    + [Servizio di precompilazione scrittura](query-form-submissions/part4.md)
    + [Distribuire l’esempio](query-form-submissions/part5.md)
-+ Elenco dei tipi di risorse personalizzate in Forms Portal{#listing-custom-asset-types}
++ Elenco dei tipi di risorse personalizzati in Forms Portal{#listing-custom-asset-types}
    + [Parte 1 - Registrazione dei tipi di risorse personalizzate](listing-custom-asset-types/part1.md)
    + [Parte 2 - Creazione di un modello personalizzato](listing-custom-asset-types/part2.md)
 + AEM Forms con Marketo{#aem-forms-with-marketo}
    + [Parte 1 - Introduzione](aem-forms-with-marketo/part1.md)
    + [Parte 2 - Autenticazione personalizzata](aem-forms-with-marketo/part2.md)
-   + [Parte 3 - Origine dati](aem-forms-with-marketo/part3.md)
+   + [Parte 3 - Data Source](aem-forms-with-marketo/part3.md)
    + [Parte 4 - Tutti gli elementi insieme](aem-forms-with-marketo/part4.md)
 
 + AEM Forms con Adobe Campaign Standard{#aem-forms-with-adobe-campaign}
@@ -265,7 +265,7 @@ ht-degree: 2%
    + [6 - Visualizza modulo selezionato](headless-forms/open-form-card-view.md)
    + [7 - Gestire l’invio dei moduli](headless-forms/display-thank-you-message.md)
 
-+ React App con Forms e Acrobat Sign {#react-ic-sign}
++ App React con Forms e Acrobat Sign {#react-ic-sign}
    + [1 - Introduzione](react-ic-sign/introduction.md)
    + [2 - Genera documento](react-ic-sign/create-ic-document.md)
    + [3 - Wrapper API di Acrobat Sign](react-ic-sign/wrapper-sign-api.md)
@@ -312,7 +312,7 @@ ht-degree: 2%
 {#ic-print-channel-tutorial}
    + [1 - Introduzione](ic-print-channel-tutorial/introduction.md)
    + [2 - Configurazione Tomcat](ic-print-channel-tutorial/set-up-tomcat.md)
-   + [3 - Creare un’origine dati](ic-print-channel-tutorial/create-data-source.md)
+   + [3 - Creazione di Data Source](ic-print-channel-tutorial/create-data-source.md)
    + [4 - Creare un modello di dati modulo](ic-print-channel-tutorial/create-form-data-model.md)
    + [5 - Creare un layout XDP con Forms Designer](ic-print-channel-tutorial/create-xdp-layout-using-forms-designer.md)
    + [6 - Creare un frammento di documento](ic-print-channel-tutorial/create-document-fragment.md)
@@ -322,7 +322,7 @@ ht-degree: 2%
    + [10 - Aggiunta della tabella al canale di stampa](ic-print-channel-tutorial/adding-table-to-print-channel.md)
    + [11 - Utilizzo della cartella controllata per generare documenti](ic-print-channel-tutorial/using-watched-folder-to-generate-document.md)
    + [12 - Apertura dell’interfaccia utente dell’agente all’invio del modulo](ic-print-channel-tutorial/opening-agent-ui-on-form-submission.md)
-+ Salvare e recuperare le lettere bozza {#store-retrieve-letters}
++ Salva e recupera bozze di lettere {#store-retrieve-letters}
    + [Introduzione](store-retrieve-letters/introduction.md)
    + [Implementazione](store-retrieve-letters/save-draft-letters.md)
    + [Distribuire l’esempio](store-retrieve-letters/deploy-on-your-server.md)
@@ -336,10 +336,10 @@ ht-degree: 2%
    + [Generazione di documenti di comunicazione interattiva per il canale di stampa tramite Cartelle di controllo](interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
    + [Personalizzare l’editor di testo](interactive-communications/customize-text-editor.md)
 
-+ Comunicazioni Interattive Per Canale Web {#ic-web-channel-tutorial}
++ Comunicazioni Interattive Per Il Canale Web {#ic-web-channel-tutorial}
    + [1 - Introduzione](ic-web-channel-tutorial/introduction.md)
    + [2 - Configurazione Tomcat](ic-web-channel-tutorial/partone.md)
-   + [3 - Creare un’origine dati](ic-web-channel-tutorial/parttwo.md)
+   + [3 - Creazione di Data Source](ic-web-channel-tutorial/parttwo.md)
    + [4 - Creare un modello di dati modulo](ic-web-channel-tutorial/partthree.md)
    + [5 - Creazione del modello di documento canale web](ic-web-channel-tutorial/partfour.md)
    + [6 - Creazione di un frammento di documento](ic-web-channel-tutorial/partfive.md)
@@ -383,7 +383,7 @@ ht-degree: 2%
    + [PDFG: passaggi per risolvere i problemi di conversione PDFG multiutente in Windows](troubleshooting/steps-to-troubleshoot-multi-user-pdfg-conversion-on-windows.md)
    + [PDFG: passaggi per risolvere problemi specifici di OpenOffice su Unix](troubleshooting/steps-to-troubleshoot-openoffice-specific-issues-on-unix.md)
    + [PDFG: passaggi per risolvere problemi specifici di OpenOffice in Windows](troubleshooting/steps-to-troubleshoot-openoffice-specific-issues-on-windows.md)
-   + [Document Security: come applicare la policy creata utilizzando il modulo Document Security in Acrobat](troubleshooting/how-to-apply-policy-created-using-document-security-module-in-acrobat.md)
+   + [Sicurezza dei documenti: come applicare i criteri creati utilizzando il modulo di sicurezza dei documenti in Acrobat](troubleshooting/how-to-apply-policy-created-using-document-security-module-in-acrobat.md)
    + [Gestione utente: come aggiungere utenti o gruppi in AEM Forms JEE](troubleshooting/how-to-add-users-or-groups-in-aem-forms-jee.md)
    + [Gestione utente: come aumentare il timeout della sessione di messaggistica unificata](troubleshooting/how-to-increase-um-session-timeout.md)
    + [Workbench: collegamento del workbench tramite https](troubleshooting/connecting-workbench-using-https.md)
@@ -391,7 +391,7 @@ ht-degree: 2%
    + [Workbench: abilitare l’output di debug per Workbench](troubleshooting/how-to-enable-debug-output-for-workbench.md)
    + [Workbench: come modificare i parametri della memoria del workbench](troubleshooting/how-to-tweak-workbench-memory-parameters.md)
    + [Workbench: come modificare i parametri delle prestazioni del workbench](troubleshooting/how-to-tweak-workbench-performance-parameters.md)
-   + [Designer: Dipendenza di Designer da C++ ridistribuibile](troubleshooting/dependency-of-vc-on-designer.md)
+   + [Designer: dipendenza di Designer da C++ ridistribuibile](troubleshooting/dependency-of-vc-on-designer.md)
    + [Designer: come abilitare HTML Preview](troubleshooting/how-to-enable-html-preview.md)
    + [Designer: come abilitare PDF Preview](troubleshooting/how-to-enable-pdf-preview.md)
    + [Designer: come installare le patch di Designer](troubleshooting/how-to-install-designer-patches.md)

@@ -20,6 +20,6 @@ ht-degree: 2%
 
 # Introduzione
 
-Scopri come memorizzare i dati di invio as a Cloud Service da AEM Forms a un account di archiviazione Azure.
+Scopri come memorizzare i dati di invio di AEM Forms as a Cloud Service in un account di archiviazione Azure.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336028?quality=12&learn=on)

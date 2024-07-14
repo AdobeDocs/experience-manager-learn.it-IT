@@ -21,21 +21,21 @@ ht-degree: 0%
 Questo tutorial è destinato ai clienti di AEM Forms che necessitano di creare un componente flusso di lavoro personalizzato. Il componente flusso di lavoro verrà configurato per eseguire il codice scritto nel passaggio precedente. Il componente del flusso di lavoro può specificare gli argomenti del processo per il codice. In questo articolo esploreremo il componente del flusso di lavoro associato al codice.
 
 
-[Scaricare il componente del flusso di lavoro personalizzato](assets/saveFiles.zip)
-Importare il componente del flusso di lavoro [utilizzo di gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+[Scarica il componente del flusso di lavoro personalizzato](assets/saveFiles.zip)
+Importa il componente del flusso di lavoro [tramite Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 
 Il componente del flusso di lavoro personalizzato si trova in /apps/AEMFormsDemoListings/workflowcomponent/SaveFiles
 
 Selezionare il nodo SaveFiles ed esaminarne le proprietà
 
-**componentGroup** : il valore di questa proprietà determina la categoria del componente del flusso di lavoro.
+**componentGroup** - Il valore di questa proprietà determina la categoria del componente del flusso di lavoro.
 
-**jcr:Titolo** : titolo del componente del flusso di lavoro.
+**jcr:Title** - Titolo del componente del flusso di lavoro.
 
-**sling:resourceSuperType** Il valore di questa proprietà determinerà l’ereditarietà di questo componente. In questo caso ereditiamo dal componente processo
+**sling:resourceSuperType** Il valore di questa proprietà determinerà l&#39;ereditarietà di questo componente. In questo caso ereditiamo dal componente processo
 
 
-![component-properties](assets/component-properties1.png)
+![proprietà-componente](assets/component-properties1.png)
 
 ## cq:dialog
 
@@ -49,14 +49,15 @@ Gli argomenti di processo per il processo si trovano sotto il nodo processargs
 ![process-args](assets/process-arguments.png)
 
 L’autore specifica gli argomenti come mostrato nella schermata seguente
-![workflow-component](assets/custom-workflow-component.png)
+![componente-flusso di lavoro](assets/custom-workflow-component.png)
 
-I valori vengono memorizzati come proprietà del nodo di metadati. Ad esempio il valore **c:\formsallegati** verrà memorizzato nella proprietà saveToLocation del nodo di metadati
+I valori vengono memorizzati come proprietà del nodo di metadati. Ad esempio, il valore **c:\formsattachments** verrà memorizzato nella proprietà saveToLocation del nodo metadati
 ![salva-posizione](assets/save-to-location.png)
 
 ## cq:editConfig
 
-Cq:EditConfig è semplicemente un nodo con il tipo primario cq:EditConfig e il nome cq:editConfig sotto la radice del componente. Il comportamento di modifica di un componente viene configurato aggiungendo un nodo cq:editConfig di tipo cq:EditConfig sotto il nodo del componente (di tipo cq:Component)
+Cq:EditConfig è semplicemente un nodo con il tipo principale cq:EditConfig e il nome cq:editConfig sotto la radice del componente
+Il comportamento di modifica di un componente viene configurato aggiungendo un nodo cq:editConfig di tipo cq:EditConfig sotto il nodo del componente (di tipo cq:Component)
 
 ![edit-config](assets/cq-edit-config.png)
 
@@ -64,6 +65,6 @@ cq:formParameters (tipo di nodo nt:unstructured): definisce parametri aggiuntivi
 
 
 Osserva le proprietà del nodo cq:formParameters
-![from-parameters-properties](assets/form-parameters-properties.png)
+![da-parametri-proprietà](assets/form-parameters-properties.png)
 
 Il valore della proprietà PROCESS indica il codice Java che verrà associato al componente del flusso di lavoro.

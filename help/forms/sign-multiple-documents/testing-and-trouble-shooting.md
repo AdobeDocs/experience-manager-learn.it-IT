@@ -22,13 +22,13 @@ ht-degree: 0%
 
 ## Anteprima del modulo di rifinanziamento
 
-Il caso d’uso viene attivato quando l’agente del servizio clienti compila e invia [modulo di rifinanziamento](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
+Il caso d&#39;uso viene attivato quando l&#39;agente del servizio clienti compila e invia [il modulo di rifinanziamento](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
 
 Il flusso di lavoro Firma più Forms viene attivato all’invio di questo modulo e il cliente riceve una notifica e-mail con un collegamento per avviare il processo di compilazione e firma del modulo.
 
 ## Compila i moduli nella confezione
 
-Il cliente è invitato a compilare e firmare il primo modulo della confezione. Dopo aver firmato correttamente il modulo, il cliente può passare al modulo successivo nel pacchetto. Una volta compilati e firmati tutti i moduli, al cliente viene consegnato &quot;**AllDone**&quot;.
+Il cliente è invitato a compilare e firmare il primo modulo della confezione. Dopo aver firmato correttamente il modulo, il cliente può passare al modulo successivo nel pacchetto. Una volta compilati e firmati tutti i moduli, al cliente viene presentato il modulo &quot;**AllDone**&quot;.
 
 ## Risoluzione dei problemi
 
@@ -50,4 +50,4 @@ Dopo aver firmato correttamente un modulo nel pacchetto, viene attivato il fluss
 
 ### Mancata visualizzazione della maschera AllDone
 
-Quando non sono presenti altri moduli per l&#39;accesso al pacchetto, il modulo AllDone viene presentato all&#39;utente.Se il modulo AllDone non viene visualizzato, controllare l&#39;URL utilizzato nella riga 33 del file GetNextFormToSign.js che fa parte del **getnextform** libreria client.
+Quando non sono presenti altri moduli per l&#39;accesso al pacchetto, il modulo AllDone viene presentato all&#39;utente.Se il modulo AllDone non viene visualizzato, controllare l&#39;URL utilizzato nella riga 33 del file GetNextFormToSign.js che fa parte della libreria client **getnextform**.

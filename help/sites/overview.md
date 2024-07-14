@@ -42,7 +42,7 @@ Adobe Experience Manager (AEM) Sites è una piattaforma leader per la gestione d
     </a>
     </div>
     <p>
-    <em>Una guida introduttiva per gli sviluppatori che desiderano implementare AEM Sites.</em>
+    <em>Guida introduttiva per gli sviluppatori che desiderano implementare AEM Sites.</em>
     <p>
   </td>
   <td>
@@ -51,24 +51,24 @@ Adobe Experience Manager (AEM) Sites è una piattaforma leader per la gestione d
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it">
-    <strong>Guida introduttiva di AEM Headless</strong>
+    <strong>Guida introduttiva di AEM headless</strong>
     </a>
     </div>
     <p>
-    <em>Guida introduttiva per gli sviluppatori che desiderano utilizzare l’AEM come CMS headless.</em>
+    <em>Guida introduttiva per gli sviluppatori che desiderano utilizzare l'AEM come CMS headless.</em>
     </p>
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
-      <img alt="Guida introduttiva all’Editor SPA dell’AEM" src="./assets/aem-wknd-spa-editor-tutorial.png" />
+      <img alt="Guida introduttiva all’editor SPA dell’AEM" src="./assets/aem-wknd-spa-editor-tutorial.png" />
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
-        <strong>Guida introduttiva all’Editor SPA dell’AEM</strong>
+        <strong>Guida introduttiva all'editor SPA dell'AEM</strong>
       </a>
     </div>
     <p>
-    <em>Guida introduttiva per gli sviluppatori sull’integrazione di un’applicazione a pagina singola (SPA) con l’AEM.</em>
+    <em>Guida introduttiva per gli sviluppatori sull'integrazione di un'applicazione a pagina singola (SPA) con AEM.</em>
     <p>
   </td>
 </tr>
@@ -78,9 +78,9 @@ Adobe Experience Manager (AEM) Sites è una piattaforma leader per la gestione d
 
 ## Risorse aggiuntive
 
-* [Documentazione di authoring di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [Documentazione sull&#39;authoring di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
 * [Documentazione sullo sviluppo per AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
-* [Documentazione sull’amministrazione di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
+* [Documentazione sull&#39;amministrazione di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
 * [Documentazione sulla distribuzione di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
 * [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutorial su AEM Assets](/help/assets/overview.md)

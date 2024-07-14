@@ -1,6 +1,6 @@
 ---
-title: Utilizzo e comprensione delle variabili nella configurazione del Dispatcher per AEM
-description: Scopri come utilizzare le variabili nei file di configurazione dei moduli Apache e Dispatcher per portarli al livello successivo.
+title: Utilizzo e informazioni sulle variabili nella configurazione di AEM Dispatcher
+description: Scopri come utilizzare le variabili nei file di configurazione dei moduli Apache e Dispatcher per portarle al livello successivo.
 version: 6.5
 topic: Administration, Development
 feature: Dispatcher
@@ -34,7 +34,7 @@ Possiamo sfruttarli per fare un sacco di cose utili come:
 - Assicurati che tutto ciò che è specifico per l’ambiente non sia in linea nelle configurazioni, ma estratto per garantire che i file di configurazione da sviluppo funzionino nella produzione con lo stesso output funzionale.
 - Attiva/disattiva le funzioni e modifica i livelli di registro dei file immutabili forniti da AMS e non consentirti di modificare.
 - Modifica che include da utilizzare in base a variabili come `RUNMODE` e `ENV_TYPE`
-- Corrispondenza `DocumentRoot`di e `VirtualHost` Nomi DNS tra le configurazioni di Apache e le configurazioni dei moduli.
+- Abbina i nomi DNS di `DocumentRoot` e `VirtualHost` tra le configurazioni Apache e le configurazioni dei moduli.
 
 ## Utilizzo delle variabili della linea di base
 
@@ -42,9 +42,9 @@ Poiché i file della linea di base AMS sono di sola lettura e immutabili, è pos
 
 ### Variabili della linea di base
 
-Le variabili predefinite di AMS sono dichiarate nel file `/etc/httpd/conf.d/variables/ootb.vars`.  Questo file non è modificabile, ma esiste per assicurarti che le variabili non abbiano valori Null.  Vengono inclusi prima e dopo rispetto a quelli inclusi `/etc/httpd/conf.d/variables/ams_default.vars`.  Puoi modificare il file per modificare i valori di queste variabili o anche includere gli stessi nomi e valori delle variabili nel file.
+Le variabili predefinite di AMS sono dichiarate nel file `/etc/httpd/conf.d/variables/ootb.vars`.  Questo file non è modificabile, ma esiste per assicurarti che le variabili non abbiano valori Null.  Vengono inclusi prima e poi dopo rispetto a `/etc/httpd/conf.d/variables/ams_default.vars`.  Puoi modificare il file per modificare i valori di queste variabili o anche includere gli stessi nomi e valori delle variabili nel file.
 
-Ecco un esempio del contenuto del file `/etc/httpd/conf.d/variables/ams_default.vars`:
+Di seguito è riportato un esempio del contenuto del file `/etc/httpd/conf.d/variables/ams_default.vars`:
 
 ```
 Define DISP_LOG_LEVEL info
@@ -56,7 +56,7 @@ Define PUBLISH_FORCE_SSL 0
 
 ### Esempio 1 - Forza SSL
 
-Le variabili mostrate sopra `AUHOR_FORCE_SSL`, o `PUBLISH_FORCE_SSL` può essere impostato su 1 per attivare le regole di riscrittura che obbligano gli utenti finali quando arrivano su richiesta http a essere reindirizzati a https
+Le variabili mostrate sopra `AUHOR_FORCE_SSL` o `PUBLISH_FORCE_SSL` possono essere impostate su 1 per attivare le regole di riscrittura che obbligano gli utenti finali quando arrivano su richiesta http a essere reindirizzati a https
 
 Ecco la sintassi del file di configurazione che consente il funzionamento di questo interruttore:
 
@@ -75,7 +75,7 @@ Come puoi vedere, le regole di riscrittura includono ciò che ha il codice per r
 
 ### Esempio 2 - Livello di registrazione
 
-Le variabili `DISP_LOG_LEVEL` può essere utilizzato per impostare ciò che si desidera avere per il livello di registro effettivamente utilizzato nella configurazione in esecuzione.
+Le variabili `DISP_LOG_LEVEL` possono essere utilizzate per impostare ciò che si desidera avere per il livello di registro effettivamente utilizzato nella configurazione in esecuzione.
 
 Di seguito è riportato un esempio di sintassi presente nei file di configurazione della linea di base di AMS:
 
@@ -86,7 +86,7 @@ Di seguito è riportato un esempio di sintassi presente nei file di configurazio
 </IfModule>
 ```
 
-Per aumentare il livello di registrazione di Dispatcher, aggiorna la `ams_default.vars` variabile `DISP_LOG_LEVEL` al livello desiderato.
+Per aumentare il livello di registrazione di Dispatcher, è sufficiente aggiornare la variabile `ams_default.vars` `DISP_LOG_LEVEL` al livello desiderato.
 
 Esempio Valori può essere un numero intero o la parola:
 
@@ -100,7 +100,7 @@ Esempio Valori può essere un numero intero o la parola:
 
 ### Esempio 3 - Whitelist
 
-Le variabili `AUTHOR_WHITELIST_ENABLED` e `PUBLISH_WHITELIST_ENABLED` può essere impostato su 1 per attivare regole di riscrittura che includono regole per consentire o impedire il traffico dell’utente finale in base all’indirizzo IP.  L’attivazione di questa funzione deve essere combinata con la creazione di un file di regole di whitelist da includere.
+Le variabili `AUTHOR_WHITELIST_ENABLED` e `PUBLISH_WHITELIST_ENABLED` possono essere impostate su 1 per attivare regole di riscrittura che includono regole per consentire o non consentire il traffico dell&#39;utente finale in base all&#39;indirizzo IP.  L’attivazione di questa funzione deve essere combinata con la creazione di un file di regole di whitelist da includere.
 
 Di seguito sono riportati alcuni esempi di sintassi di come la variabile abilita le inclusioni dei file della whitelist e un esempio di file della whitelist
 
@@ -124,13 +124,13 @@ Di seguito sono riportati alcuni esempi di sintassi di come la variabile abilita
 </RequireAny>
 ```
 
-Come puoi vedere la `sample_whitelist.rules` applica la restrizione IP, ma l’attivazione della variabile ne consente l’inclusione nella proprietà `sample.vhost`
+Come puoi vedere `sample_whitelist.rules` applica la restrizione IP, ma l&#39;attivazione della variabile ne consente l&#39;inclusione in `sample.vhost`
 
 ## Dove inserire le variabili
 
 ### Argomenti di avvio server Web
 
-AMS inserirà variabili specifiche per server/topologia negli argomenti di avvio del processo Apache all’interno del file `/etc/sysconfig/httpd`
+AMS inserirà variabili specifiche per server/topologia negli argomenti di avvio del processo Apache nel file `/etc/sysconfig/httpd`
 
 Questo file ha variabili predefinite, come illustrato di seguito:
 
@@ -153,7 +153,7 @@ Questi non sono elementi che puoi modificare ma che puoi sfruttare nei file di c
 
 ### File di variabili (`.vars`)
 
-Le variabili personalizzate fornite dal codice devono essere contenute in `.vars` file nella directory `/etc/httpd/conf.d/variables/`
+Le variabili personalizzate fornite dal codice devono essere contenute in `.vars` file nella directory `/etc/httpd/conf.d/variables/`
 
 Questi file possono contenere qualsiasi variabile personalizzata desiderata; alcuni esempi di sintassi sono disponibili nei seguenti file di esempio
 
@@ -178,42 +178,42 @@ Define WERETAIL_DOMAIN www.weretail.com
 Define WERETAIL_ALT_DOMAIN www..weretail.net
 ```
 
-Quando crei file di variabili, assegnagli un nome in base al loro contenuto e in base agli standard di denominazione forniti nel manuale [qui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17477.html#naming-convention).  Nell’esempio precedente puoi vedere che il file delle variabili ospita le diverse voci DNS come variabili da utilizzare nei file di configurazione.
+Quando crei i tuoi file di variabili, assegnagli un nome in base al loro contenuto e in base agli standard di denominazione forniti nel manuale [qui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17477.html#naming-convention).  Nell’esempio precedente puoi vedere che il file delle variabili ospita le diverse voci DNS come variabili da utilizzare nei file di configurazione.
 
 ## Utilizzo delle variabili
 
 Dopo aver definito le variabili nei file delle variabili, è necessario sapere come utilizzarle correttamente negli altri file di configurazione.
 
-Utilizzeremo l’esempio `.vars` file dall’alto per illustrare un caso d’uso corretto.
+Per illustrare un caso d&#39;uso corretto, verranno utilizzati i file di esempio `.vars` riportati sopra.
 
-Il file verrà creato per includere tutte le variabili basate sull’ambiente a livello globale `/etc/httpd/conf.d/000_load_env_vars.conf`
+Si desidera includere tutte le variabili basate sull&#39;ambiente a livello globale. Verrà creato il file `/etc/httpd/conf.d/000_load_env_vars.conf`
 
 ```
 IncludeOptional /etc/httpd/conf.d/variables/*_${ENV_TYPE}.vars
 IncludeOptional /etc/httpd/conf.d/variables/*_${RUNMODE}.vars
 ```
 
-Sappiamo che all’avvio del servizio httpd vengono richiamate le variabili impostate da AMS in `/etc/sysconfig/httpd` e ha l’insieme di variabili `ENV_TYPE` e `RUNMODE`
+Sappiamo che quando il servizio httpd viene avviato, estrae le variabili impostate da AMS in `/etc/sysconfig/httpd` e ha il set di variabili `ENV_TYPE` e `RUNMODE`
 
-Quando questo valore globale `.conf` il file viene estratto verrà estratto in anticipo perché l’ordine di inclusione dei file in `conf.d` è l&#39;ordine di caricamento alfanumerico significa 000 nel nome file per garantire che venga caricato prima degli altri file nella directory.
+Quando il file `.conf` globale viene richiamato, verrà richiamato in anticipo perché l&#39;ordine di inclusione dei file in `conf.d` è l&#39;ordine di caricamento alfanumerico medio 000 nel nome file assicurerà che venga caricato prima degli altri file nella directory.
 
-L’istruzione include utilizza anche una variabile nel nome del file.  Questo può cambiare quale file verrà effettivamente caricato in base al valore presente in `ENV_TYPE` e `RUNMODE` variabili.
+L’istruzione include utilizza anche una variabile nel nome del file.  Questo può cambiare quale file verrà effettivamente caricato in base al valore presente nelle variabili `ENV_TYPE` e `RUNMODE`.
 
-Se il `ENV_TYPE` il valore è `dev` il file che viene utilizzato è:
+Se il valore `ENV_TYPE` è `dev`, allora il file che viene utilizzato è:
 
 `/etc/httpd/conf.d/variables/weretail_domains_dev.vars`
 
-Se il `ENV_TYPE` il valore è `stage` il file che viene utilizzato è:
+Se il valore `ENV_TYPE` è `stage`, allora il file che viene utilizzato è:
 
 `/etc/httpd/conf.d/variables/weretail_domains_stage.vars`
 
-Se il `RUNMODE` il valore è `preview` il file che viene utilizzato è:
+Se il valore `RUNMODE` è `preview`, allora il file che viene utilizzato è:
 
 `/etc/httpd/conf.d/variables/weretail_domains_preview.vars`
 
 Quando quel file viene incluso ci consentirà di utilizzare i nomi delle variabili memorizzati all&#39;interno di.
 
-Nel nostro `/etc/httpd/conf.d/available_vhosts/weretail.vhost` file possiamo cambiare la normale sintassi che funzionava solo per dev:
+Nel file `/etc/httpd/conf.d/available_vhosts/weretail.vhost` è possibile cambiare la normale sintassi che funzionava solo per dev:
 
 ```
 <VirtualHost *:80> 
@@ -229,7 +229,7 @@ Con una nuova sintassi che utilizza il potere delle variabili per funzionare per
  ServerAlias ${WERETAIL_ALT_DOMAIN}
 ```
 
-Nel nostro `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` file possiamo cambiare la normale sintassi che funzionava solo per dev:
+Nel file `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` è possibile cambiare la normale sintassi che funzionava solo per dev:
 
 ```
 "dev.weretail.com" 
@@ -259,7 +259,7 @@ Aspetto delle variabili nella configurazione Apache compilata:
 $ source /etc/sysconfig/httpd;/sbin/httpd -t -D DUMP_CONFIG | grep -v "#"
 ```
 
-Aspetto delle variabili nella configurazione compilata di Dispatcher:
+Aspetto delle variabili nella configurazione Dispatcher compilata:
 
 ```
 $ source /etc/sysconfig/httpd;/sbin/httpd -t -D DUMP_ANY
@@ -285,7 +285,7 @@ $ source /etc/sysconfig/httpd;/sbin/httpd -t -D DUMP_CONFIG | grep DocumentRoot
 DocumentRoot /mnt/var/www/html
 ```
 
-Configurazione Dispatcher Compilata:
+Configurazione Dispatcher compilata:
 
 ```
 $ source /etc/sysconfig/httpd;/sbin/httpd -t -D DUMP_ANY | grep docroot

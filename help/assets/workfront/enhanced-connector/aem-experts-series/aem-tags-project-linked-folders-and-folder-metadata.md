@@ -29,8 +29,8 @@ Scopri come utilizzare i tag AEM sulle risorse tramite i dati Workfront, configu
 
 >[!VIDEO](https://video.tv.adobe.com/v/340333?quality=12&learn=on)
 
-_Parte tre di a [serie di esperti in quattro parti sul connettore avanzato Workfront per Experience Manager](./overview.md)_
+_Parte tre di una serie di esperti in [quattro parti su Workfront, ad Experience Manager connettore avanzato](./overview.md)_
 
 ## Correzioni
 
-+ __@ 4:34 e 6:20__ La sintassi dei tag AEM non è corretta. Visualizzazioni video `we-retail:apparel/footwear`. La sintassi corretta è `["we-retail:apparel/footwear"]` o più in generale `["namespace:tag/childtag"]`.
++ La sintassi dei tag AEM __@ 4:34 e 6:20__ non è corretta. Nel video viene visualizzato `we-retail:apparel/footwear`. La sintassi corretta è `["we-retail:apparel/footwear"]` o più in generale `["namespace:tag/childtag"]`.

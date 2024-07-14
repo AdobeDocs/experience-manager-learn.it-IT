@@ -28,7 +28,7 @@ ACS ha un set completo di API esposte che consente di interfacciare ACS con la t
 
 Per integrare AEM Forms con ACS è necessario seguire i seguenti passaggi:
 
-* [Configura l’accesso API nell’istanza ACS.](https://experienceleague.adobe.com/docs/campaign-standard/using/working-with-apis/get-started-apis.html?lang=en)
+* [Configura l&#39;accesso API nell&#39;istanza ACS.](https://experienceleague.adobe.com/docs/campaign-standard/using/working-with-apis/get-started-apis.html?lang=en)
 * Crea token web JSON.
 * Scambia il token web JSON con il servizio Identity Management Adobe per un token di accesso.
 * Includi questo token di accesso nell’intestazione HTTP di autorizzazione, insieme a X-API-Key in ogni richiesta all’istanza ACS.
@@ -36,11 +36,11 @@ Per integrare AEM Forms con ACS è necessario seguire i seguenti passaggi:
 Per iniziare, segui le seguenti istruzioni
 
 * [Scarica e decomprimi le risorse correlate a questa esercitazione.](assets/aem-forms-and-acs-bundles.zip)
-* Distribuire i bundle utilizzando [Console web Felix](http://localhost:4502/system/console/bundles)
+* Distribuisci i bundle utilizzando [la console Web Felix](http://localhost:4502/system/console/bundles)
 * Specifica le impostazioni appropriate per Adobe Campaign nella configurazione Felix OSGI.
-* [Creare un utente di servizio come indicato in questo articolo](/help/forms/adaptive-forms/service-user-tutorial-develop.md). Assicurati di distribuire il bundle OSGi associato all’articolo.
+* [Crea un utente del servizio come menzionato in questo articolo](/help/forms/adaptive-forms/service-user-tutorial-develop.md). Assicurati di distribuire il bundle OSGi associato all’articolo.
 * Memorizza la chiave privata ACS in etc/key/campaign/private.key. Dovrai creare una cartella denominata campaign in etc/key.
-* [Fornisci l’accesso in lettura alla cartella della campagna ai &quot;dati&quot; dell’utente del servizio.](http://localhost:4502/useradmin)
+* [Fornire l&#39;accesso in lettura alla cartella della campagna ai &quot;dati&quot; dell&#39;utente del servizio.](http://localhost:4502/useradmin)
 
 ## Passaggi successivi
 

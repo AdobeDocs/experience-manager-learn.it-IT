@@ -21,6 +21,6 @@ ht-degree: 0%
 
 ## Assembla file PDF
 
-Modifica il `assemble2pdfs.ddx` file per assemblare file 3 PDF.
+Modificare il file `assemble2pdfs.ddx` in modo da assemblare i file 3 PDF.
 
 Il terzo pdf verrà inserito nella cartella resources/pdfiles.

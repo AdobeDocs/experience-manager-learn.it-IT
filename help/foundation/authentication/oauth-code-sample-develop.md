@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Gli ambiti OAuth estensibili di Adobe Experience Manager consentono il controllo degli accessi per le risorse da un&#39;applicazione client autorizzata da un utente finale. Il diagramma seguente illustra il flusso delle richieste nel contesto dell’AEM.
 
-![Flusso ambiti OAuth](./assets/oauth-code-sample-develop/oauth-scopes-flow.png)
+![Flusso Ambiti Oauth](./assets/oauth-code-sample-develop/oauth-scopes-flow.png)
 
 L’AEM ha tre ambiti:
 

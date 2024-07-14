@@ -45,7 +45,7 @@ public class HandleFormSubmissison extends SlingAllMethodsServlet {
 
 ## Crea gestore di invio personalizzato
 
-Creare un’azione di invio personalizzata in `apps/bankingapplication` cartella nello stesso modo in cui si crea in [versioni precedenti di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en). Ai fini di questa esercitazione, creo una cartella denominata SubmitToAEMServlet in `apps/bankingapplication` nell’archivio CRX.
+Creare l&#39;azione di invio personalizzata nella cartella `apps/bankingapplication` nello stesso modo in cui si creerebbe nelle [versioni precedenti di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-submit-aem-forms-article.html?lang=en). Ai fini di questa esercitazione, creo una cartella denominata SubmitToAEMServlet nel nodo `apps/bankingapplication` nell&#39;archivio CRX.
 
 Il codice seguente nel file post.POST.jsp inoltra semplicemente la richiesta al servlet installato in /bin/formstutorial. Questo è lo stesso servlet creato nel passaggio precedente
 
@@ -53,12 +53,12 @@ Il codice seguente nel file post.POST.jsp inoltra semplicemente la richiesta al 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/formstutorial",null,null);
 ```
 
-Nel progetto AEM in IntelliJ, fare clic con il pulsante destro del mouse su `apps/bankingapplication` cartella e seleziona Nuovo | Creare un pacchetto e digitare SubmitToAEMServlet dopo apps.bankingapplication nella finestra di dialogo Nuovo pacchetto. Fai clic con il pulsante destro del mouse sul nodo SubmitToAEMServlet e seleziona archivio | Ottieni il comando per sincronizzare il progetto AEM con l’archivio del server AEM.
+Nel progetto AEM in IntelliJ, fare clic con il pulsante destro del mouse sulla cartella `apps/bankingapplication` e selezionare Nuovo | Creare un pacchetto e digitare SubmitToAEMServlet dopo apps.bankingapplication nella finestra di dialogo Nuovo pacchetto. Fai clic con il pulsante destro del mouse sul nodo SubmitToAEMServlet e seleziona archivio | Ottieni il comando per sincronizzare il progetto AEM con l’archivio del server AEM.
 
 
 ## Configurare un modulo adattivo
 
-Ora puoi configurare qualsiasi modulo adattivo per l’invio a questo gestore di invio personalizzato denominato **Invia a AEM Servlet**
+Ora puoi configurare qualsiasi modulo adattivo da inviare a questo gestore di invio personalizzato denominato **Invia a servlet AEM**
 
 ## Passaggi successivi
 

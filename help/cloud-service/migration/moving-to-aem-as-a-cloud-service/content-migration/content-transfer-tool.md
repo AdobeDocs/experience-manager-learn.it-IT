@@ -1,6 +1,6 @@
 ---
 title: Migrazione dei contenuti tramite lo strumento Content Transfer (Trasferimento contenuti)
-description: Scopri come lo strumento Content Transfer consente di migrare i contenuti dall’AEM 6 a AEM as a Cloud Service.
+description: Scopri come lo strumento Content Transfer consente di migrare i contenuti ad AEM as a Cloud Service dall’AEM 6.
 version: Cloud Service
 topic: Migration, Upgrade
 feature: Migration
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # Strumento trasferimento contenuti
 
-Scopri come lo strumento Content Transfer consente di migrare i contenuti all’AEM as a Cloud Service dalla versione 6.3+ dell’AEM.
+Scopri come lo strumento Content Transfer consente di migrare i contenuti ad AEM as a Cloud Service da AEM 6.3+.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336970?quality=12&learn=on)
 
@@ -28,18 +28,18 @@ Scopri come lo strumento Content Transfer consente di migrare i contenuti all’
 
 ![Ciclo di vita dello strumento Content Transfer](../assets/content-transfer-tool.png)
 
-Lo strumento Content Transfer (Trasferimento contenuti) è installato in AEM 6.3+ e trasferisce i contenuti a AEM as a Cloud Service.
+Lo strumento Content Transfer (Trasferimento contenuti) è installato in AEM 6.3+ e trasferisce i contenuti ad AEM as a Cloud Service.
 
 ## Attività chiave
 
-+ Scarica il file [ultimo strumento di trasferimento dei contenuti](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2).
-+ Trasferisci il contenuto finale di AEM Author 6.3+ al servizio AEM as a Cloud Service Author.
++ Scarica lo [strumento Content Transfer più recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2).
++ Trasferisci i contenuti finali di AEM Author 6.3+ al servizio AEM as a Cloud Service Author.
    + Installa lo strumento Content Transfer (Trasferimento contenuti) in AEM 6.3+ Author contenente i contenuti finali da trasferire.
    + Esegui lo strumento Content Transfer (Trasferimento contenuti) in batch, trasferendo set di contenuti.
-+ Trasferisci il contenuto finale della pubblicazione AEM 6.3+ al servizio di pubblicazione as a Cloud Service AEM.
-   + Installa lo strumento Content Transfer (Trasferimento contenuti) nella pubblicazione AEM 6.3+ contenente il contenuto finale da trasferire.
++ Trasferisci i contenuti finali di AEM Publish 6.3+ al servizio AEM as a Cloud Service Publish.
+   + Installa lo strumento Content Transfer (Trasferimento contenuti) sul Publish AEM 6.3+ contenente i contenuti finali da trasferire.
    + Esegui lo strumento Content Transfer (Trasferimento contenuti) in batch, trasferendo set di contenuti.
-+ Facoltativamente, contenuti &quot;integrativi&quot; sull’AEM as a Cloud Service, trasferendo nuovi contenuti dall’ultimo trasferimento di contenuti
++ Facoltativamente, contenuti &quot;integrativi&quot; su AEM as a Cloud Service, trasferendo nuovi contenuti dall’ultimo trasferimento di contenuti
 
 ## Esercizio pratico
 
@@ -66,12 +66,12 @@ Inoltre, assicurati di aver completato il precedente esercizio pratico:
         <td style="width:100%;margin-bottom:1rem;">
             <div style="font-size:1.25rem;font-weight:400;">Strumento di trasferimento dei contenuti</div>
             <p style="margin:1rem 0">
-                Scopri in che modo lo strumento Content Transfer (Trasferimento contenuti) può spostare automaticamente il contenuto dall’AEM 6 all’AEM as a Cloud Service.
+                Scopri in che modo lo strumento Content Transfer (Trasferimento contenuti) può spostare automaticamente il contenuto dall’AEM 6 ad AEM as a Cloud Service.
             </p>
             <a  rel="noreferrer"
                 target="_blank"
                 href="https://github.com/adobe/aem-cloud-engineering-video-series-exercises/tree/session6-transfercontent#cloud-acceleration-bootcamp---session-6-content" class="spectrum-Button spectrum-Button--primary spectrum-Button--sizeM">
-                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Prova lo strumento Content Transfer (Trasferimento contenuti)</span>
+                <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Prova lo strumento Content Transfer</span>
             </a>
         </td>
     </tr>
@@ -79,6 +79,6 @@ Inoltre, assicurati di aver completato il precedente esercizio pratico:
 
 ## Altre risorse
 
-+ [Download dello strumento Content Transfer (Trasferimento contenuti)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2)
-+ [Video tutorial sul Servizio di importazione in blocco](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/bulk-import.html)
++ [Download dello strumento Content Transfer](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2)
++ [Video descrittivo del servizio di importazione in blocco](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/bulk-import.html)
 

@@ -22,20 +22,20 @@ ht-degree: 1%
 
 # Definire la regola
 
-Nella proprietà Tags abbiamo creato 2 nuovi [regole](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html) (**Errore di convalida del campo e FormSubmit**).
+Nella proprietà Tags sono state create 2 nuove [regole](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html) (**Errore di convalida campo e FormSubmit**).
 
 ![modulo adattivo](assets/rules.png)
 
 
 ## Errore di convalida campo
 
-Il **Errore di convalida campo** la regola viene attivata ogni volta che si verifica un errore di convalida nel campo del modulo adattivo. Ad esempio, nel modulo, se il numero di telefono o l’e-mail non sono nel formato previsto, viene visualizzato un messaggio di errore di convalida.
+La regola **Errore di convalida campo** viene attivata ogni volta che si verifica un errore di convalida nel campo del modulo adattivo. Ad esempio, nel modulo, se il numero di telefono o l’e-mail non sono nel formato previsto, viene visualizzato un messaggio di errore di convalida.
 
-La regola Errore di convalida del campo viene configurata impostando l’evento su _**Adobe Experience Manager Forms-Error**_ come mostrato nella schermata
+La regola Errore di convalida campo è configurata impostando l&#39;evento su _**Adobe Experience Manager Forms-Error**_ come mostrato nella schermata
 
 
 
-![Stato-richiedente-residenza](assets/field_validation_error_rule.png)
+![residenza-stato-richiedente](assets/field_validation_error_rule.png)
 
 Adobe Analytics - Imposta variabili è configurato come segue
 
@@ -45,16 +45,16 @@ Adobe Analytics - Imposta variabili è configurato come segue
 
 La regola di invio del modulo viene attivata ogni volta che un modulo adattivo viene inviato correttamente.
 
-La regola di invio del modulo è configurata utilizzando _**Adobe Experience Manager Forms - Invia**_ evento
+La regola di invio del modulo è configurata utilizzando l&#39;evento _**Adobe Experience Manager Forms - Submit**_
 
-![form-submit-rule](assets/form-submit-rule.png)
+![regola-invio-modulo](assets/form-submit-rule.png)
 
-Nella regola Invio modulo, il valore dell’elemento dati _**RicorrentiStatoDiResidenza**_ è mappato su prop5 e il valore dell&#39;elemento di dati FormTitle è mappato su prop8.
+Nella regola Form Submit, il valore dell&#39;elemento dati _**ApplicantsStateOfResidence**_ è mappato a prop5 e il valore dell&#39;elemento dati FormTitle è mappato a prop8.
 
 Adobe Analytics - Imposta variabili è configurato come segue.
 ![form-submit-rule-set-variables](assets/form-submit-set-variable.png)
 
-Quando sei pronto a testare il codice dei tag,[pubblicare le modifiche apportate ai tag](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html) mediante il flusso di pubblicazione.
+Quando sei pronto a testare il codice dei tag,[pubblica le modifiche apportate ai tag](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html) utilizzando il flusso di pubblicazione.
 
 ## Passaggi successivi
 

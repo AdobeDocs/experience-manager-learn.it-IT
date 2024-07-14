@@ -25,16 +25,16 @@ Diversi altri strumenti possono essere utili per eseguire il debug dell’applic
 
 ![CRXDE Lite](./assets/other-tools/crxde-lite.png)
 
-CRXDE Liti è un’interfaccia basata su web per interagire con l’archivio dati JCR, AEM. CRXDE Liti fornisce una visibilità completa in JCR, inclusi nodi, proprietà, valori di proprietà e autorizzazioni.
+CRXDE Lite è un’interfaccia basata su web per interagire con il JCR, l’archivio dati dell’AEM. CRXDE Lite fornisce una visibilità completa in JCR, inclusi nodi, proprietà, valori di proprietà e autorizzazioni.
 
-CRXDE Liti si trova in:
+CRXDE Lite si trova in:
 
 + Strumenti > Generale > CRXDE Lite
 + o direttamente da [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
 
 ### Debug del contenuto
 
-CRXDE Liti fornisce accesso diretto a JCR. Il contenuto visibile tramite CRXDE Liti è limitato dalle autorizzazioni concesse all’utente, il che significa che potresti non essere in grado di visualizzare o modificare tutto in JCR a seconda del tuo accesso.
+CRXDE Lite fornisce accesso diretto a JCR. Il contenuto visibile tramite CRXDE Lite è limitato dalle autorizzazioni concesse all’utente, il che significa che potresti non essere in grado di visualizzare o modificare tutto in JCR a seconda del tuo accesso.
 
 + La struttura JCR viene spostata e manipolata utilizzando il riquadro di navigazione a sinistra
 + Selezionando un nodo nel riquadro di navigazione a sinistra, espone la proprietà del nodo nel riquadro inferiore.
@@ -44,17 +44,17 @@ CRXDE Liti fornisce accesso diretto a JCR. Il contenuto visibile tramite CRXDE L
 
 ![CRXDE Liti - Debug del contenuto](./assets/other-tools/crxde-lite__debugging-content.png)
 
-Qualsiasi modifica apportata direttamente all’SDK dell’AEM tramite CRXDE Liti può essere difficile da tracciare e gestire. Se necessario, assicurati che le modifiche apportate tramite CRXDE Liti tornino ai pacchetti di contenuti mutabili del progetto AEM (`ui.content`) e si impegnano a favore di Git. Idealmente, tutte le modifiche al contenuto dell’applicazione hanno origine dalla base di codice e confluiscono nell’SDK dell’AEM tramite le implementazioni, anziché apportare modifiche direttamente all’SDK dell’AEM tramite CRXDE Liti.
+Qualsiasi modifica apportata direttamente all’SDK dell’AEM tramite CRXDE Lite può essere difficile da tracciare e gestire. Se necessario, assicurati che le modifiche apportate tramite CRXDE Lite tornino ai pacchetti di contenuti mutabili del progetto AEM (`ui.content`) e siano salvate in Git. Idealmente, tutte le modifiche al contenuto dell’applicazione hanno origine dalla base di codice e confluiscono nell’SDK dell’AEM tramite le implementazioni, anziché apportare modifiche direttamente all’SDK dell’AEM tramite CRXDE Lite.
 
 ### Debug dei controlli di accesso
 
-CRXDE Liti offre un modo per testare e valutare il controllo degli accessi su un nodo specifico per un utente o un gruppo specifico (o entità principale).
+CRXDE Lite offre un modo per testare e valutare il controllo degli accessi su un nodo specifico per un utente o un gruppo specifico (o entità principale).
 
-Per accedere alla console Test controllo di accesso in CRXDE Liti, passa a:
+Per accedere alla console Test controllo di accesso in CRXDE Lite, passa a:
 
 + CRXDE Liti > Strumenti > Test controllo accesso ...
 
-![CRXDE Liti - Test controllo accesso](./assets/other-tools/crxde-lite__test-access-control.png)
+![CRXDE Liti - Verifica controllo accesso](./assets/other-tools/crxde-lite__test-access-control.png)
 
 1. Utilizzando il campo Percorso, seleziona un percorso JCR da valutare
 1. Utilizzando il campo Principal, selezionare l&#39;utente o il gruppo su cui valutare il percorso
@@ -62,11 +62,11 @@ Per accedere alla console Test controllo di accesso in CRXDE Liti, passa a:
 
 Di seguito sono riportati i risultati:
 
-+ __Percorso__ ribadisce il percorso valutato
-+ __Entità__ ripete l&#39;utente o il gruppo per il quale è stato valutato il percorso
-+ __Entità__ elenca tutte le entità principali di cui fa parte l&#39;entità selezionata.
++ __Il percorso__ ripete il percorso valutato
++ __Entità__ ribadisce l&#39;utente o il gruppo per cui è stato valutato il percorso
++ __Entità__ elenca tutte le entità di cui fa parte l&#39;entità selezionata.
    + È utile per comprendere le appartenenze ai gruppi transitivi che possono fornire autorizzazioni tramite ereditarietà
-+ __Privilegi nel percorso__ elenca tutte le autorizzazioni JCR di cui dispone l’entità selezionata sul percorso valutato
++ __I privilegi nel percorso__ elencano tutte le autorizzazioni JCR di cui dispone l&#39;entità selezionata nel percorso valutato
 
 ## Spiega query
 
@@ -77,13 +77,13 @@ Spiega lo strumento basato sul web Query nell’avvio rapido locale dell’SDK d
 Spiega query si trova in:
 
 + Strumenti > Diagnosi > Prestazioni query > Scheda Spiega query
-+ [http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) > Scheda Spiega query
++ [http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) > Spiega scheda Query
 
 ## Debugger QueryBuilder
 
 ![Debugger QueryBuilder](./assets/other-tools/query-debugger.png)
 
-QueryBuilder Debugger è uno strumento basato su Web che consente di eseguire il debug e comprendere le query di ricerca utilizzando AEM [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) sintassi.
+QueryBuilder Debugger è uno strumento basato sul Web che consente di eseguire il debug e comprendere le query di ricerca utilizzando la sintassi [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) dell&#39;AEM.
 
 QueryBuilder Debugger si trova in:
 

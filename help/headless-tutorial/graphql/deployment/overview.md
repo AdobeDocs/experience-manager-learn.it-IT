@@ -26,17 +26,17 @@ A seconda del client e della modalità di distribuzione, le distribuzioni headle
 
 ## Architettura del servizio AEM
 
-Prima di esaminare le considerazioni relative alla distribuzione, è fondamentale comprendere l&#39;architettura logica dell&#39;AEM e la separazione e i ruoli dei livelli di servizio dell&#39;as a Cloud Service AEM. AEM as a Cloud Service è composto da due servizi logici:
+Prima di esaminare le considerazioni relative all’implementazione, è fondamentale comprendere l’architettura logica dell’AEM e la separazione e i ruoli dei livelli di servizio di AEM as a Cloud Service. AEM as a Cloud Service è costituito da due servizi logici:
 
-+ __Autore AEM__ è il servizio in cui i team creano, collaborano e pubblicano Frammenti di contenuto (e altre risorse).
-+ __Pubblicazione AEM__ è il servizio pubblicato I frammenti di contenuto (e altre risorse) vengono replicati per l’utilizzo generale.
-+ __Anteprima AEM__ è il servizio che imita il comportamento di Pubblicazione AEM, ma il cui contenuto è pubblicato a scopo di anteprima o revisione. L’anteprima AEM è destinata al pubblico interno e non alla distribuzione generale di contenuti. L’utilizzo di Anteprima AEM è facoltativo, in base al flusso di lavoro desiderato.
++ __Autore AEM__ è il servizio in cui i team creano, collaborano e pubblicano frammenti di contenuto (e altre risorse).
++ __AEM Publish__ è il servizio pubblicato I frammenti di contenuto (e altre risorse) vengono replicati per l&#39;utilizzo generale.
++ __Anteprima AEM__ è il servizio che imita il comportamento di AEM Publish, ma con contenuto pubblicato per l&#39;anteprima o la revisione. L’anteprima AEM è destinata al pubblico interno e non alla distribuzione generale di contenuti. L’utilizzo di Anteprima AEM è facoltativo, in base al flusso di lavoro desiderato.
 
 ![Architettura del servizio AEM](./assets/overview/aem-service-architecture.png)
 
-Architettura di distribuzione headless tipica as a Cloud Service all’AEM
+Architettura di distribuzione AEM as a Cloud Service headless tipica_
 
-I client AEM headless che operano in una capacità di produzione in genere interagiscono con la pubblicazione AEM, che contiene il contenuto approvato e pubblicato. I clienti che interagiscono con l’Autore AEM devono prestare particolare attenzione, in quanto l’Autore AEM è sicuro per impostazione predefinita e richiede l’autorizzazione per tutte le richieste; può anche contenere contenuti in corso di lavorazione o non approvati.
+I client AEM headless che operano in una capacità di produzione in genere interagiscono con AEM Publish, che contiene il contenuto approvato e pubblicato. I clienti che interagiscono con l’Autore AEM devono prestare particolare attenzione, in quanto l’Autore AEM è sicuro per impostazione predefinita e richiede l’autorizzazione per tutte le richieste; può anche contenere contenuti in corso di lavorazione o non approvati.
 
 ## Distribuzioni client headless
 

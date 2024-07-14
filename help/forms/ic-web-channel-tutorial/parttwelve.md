@@ -50,7 +50,7 @@ Accedi ad AEM Forms.
 ## Verifica consegna e-mail del documento del canale web {#test-email-delivery-of-web-channel-document}
 
 * [Installare le risorse di esempio tramite Gestione pacchetti](assets/webchanneldelivery.zip)
-* [Accedi a crx](http://localhost:4502/crx/de/index.jsp#)
+* [Accesso a crx](http://localhost:4502/crx/de/index.jsp#)
 
 * Passa a /home/users
 
@@ -68,7 +68,7 @@ Accedi ad AEM Forms.
 
 >[!NOTE]
 >
->Dai un&#39;occhiata al **/apps/AEMForms/fetchad/GET.jsp** file in crx. Assicurarsi che la variabile stringa webChannelDocument punti a un percorso di documento di comunicazione valido.
+>Osserva il file **/apps/AEMForms/fetchad/GET.jsp** in crx. Assicurarsi che la variabile stringa webChannelDocument punti a un percorso di documento di comunicazione valido.
 
 ## Passaggi successivi
 

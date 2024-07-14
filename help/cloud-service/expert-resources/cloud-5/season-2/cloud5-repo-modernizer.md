@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Cloud 5 - Modernizzatore dell’archivio
 
-I ragazzi esaminano come il modernizzatore dell’archivio ti aiuta a passare a AEM as a Cloud Service con una panoramica utile di come funziona e perché.
+I ragazzi analizzano in che modo il modernizzatore dell’archivio consente la transizione ad AEM as a Cloud Service con un’utile panoramica sul suo funzionamento e sul perché.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342865?quality=12&learn=on)
 
 ## Contenuto trattato in questo video
 
 + [CLI AIO](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)
-+ [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)
++ [Modernizzatore archivio](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer)

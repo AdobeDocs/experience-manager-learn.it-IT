@@ -21,7 +21,7 @@ Benvenuto nella terza stagione della Cloud 5 Series di AEM Engineering. Uno dei 
 
 ## Casella di suggerimento
 
-Visita il [Casella di suggerimento](https://forms.office.com/r/74P5Xz4UH0) per l&#39;invio di idee argomento.
+Visitare la [Casella suggerimenti](https://forms.office.com/r/74P5Xz4UH0) per inviare idee per argomenti.
 
 ## Stagione 3
 
@@ -49,7 +49,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
             </a>
             <div>
                 <a href="./season-3/cloud5-rum.md">
-                <strong>Real User Monitoring (RUM)</strong></a>        
+                <strong>Monitoraggio utenti reali (RUM)</strong></a>        
                 <br/><em>con James Talbot e Damian Langsweirdt, AEM Engineering</em>
             </div>
             <p>
@@ -79,7 +79,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
             </a>
             <div>
                 <a href="./season-3/cloud5-edge-workers.md">
-                <strong>Lavoratori Edge</strong></a>        
+                <strong>Lavori Edge</strong></a>        
                 <br/><em>con James Talbot e Amol Anand, AEM Engineering</em>
             </div>
             <p>
@@ -95,7 +95,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
             </a>
             <div>
                 <a href="./season-3/cloud5-publish-events.md">
-                <strong>Publish, annulla la pubblicazione di eventi in Edge Delivery Services</strong></a>        
+                <strong>Publish, annulla pubblicazione eventi in Edge Delivery Services</strong></a>        
                 <br/><em>con James Talbot e Amol Anand, AEM Engineering</em>
             </div>
             <p>
@@ -123,8 +123,8 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
             </a>
             <div>
                 <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
-                <strong>Porta la tua CDN di Cloudflare</strong></a>        
-                <br/><em>con James Talbot e Kunwar Saluja, AEM Engineering</em>
+                <strong>Porta il tuo CDN Cloudflare</strong></a>        
+                <br/><em>con James Talbot e Kunwar Saluja, Ingegneria AEM</em>
             </div>
             <p>
                 <br/>
@@ -139,7 +139,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
             </a>
             <div>
                 <a href="./season-3/cloud5-integrate-assets.md">
-                <strong>Integrare AEM Assets con l’authoring dei documenti</strong></a>        
+                <strong>Integrare AEM Assets con l'authoring dei documenti</strong></a>        
                 <br/><em>con James Talbot e Darin Kuntze, AEM Engineering</em>
             </div>
             <p>
@@ -167,8 +167,8 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
             </a>
             <div>
                 <a href="./season-3/cloud5-exploring-universal-editor.md">
-                <strong>Esplorazione dell’editor universale</strong></a>        
-                <br/><em>con James Talbot e Dirk Rudolph, AEM Engineering</em>
+                <strong>Esplorazione dell'editor universale</strong></a>        
+                <br/><em>con James Talbot e Dirk Rudolph, Ingegneria AEM</em>
             </div>
             <p>
                 <br/>                

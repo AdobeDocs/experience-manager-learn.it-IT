@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Come acquisire i materiali collaterali per eseguire il debug del problema relativo ai font con le conversioni del servizio Forms e Output
 
-*Questo video illustra il processo di acquisizione dei materiali collaterali per eseguire il debug del problema relativo ai font con le conversioni del servizio Forms e Output .*
+*Questo video illustra il processo di acquisizione dei materiali collaterali per eseguire il debug del problema relativo ai tipi di carattere con le conversioni del servizio Forms e Output.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335487?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Cloud 5 - Stagione 2
-description: La seconda stagione ti consente di conoscere Adobe Experience Manager (AEM) as a Cloud Service dagli esperti ingegneri di Adobe che lo creano e dai servizi specializzati che lo forniscono.
+description: La seconda stagione ti consente di conoscere Adobe Experience Manager (AEM) as a Cloud Service dagli esperti ingegneri di Adobe che lo costruiscono e dai servizi specializzati che lo forniscono.
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
@@ -19,11 +19,11 @@ ht-degree: 1%
 
 ## Introduzione
 
-Benvenuto nella serie Cloud 5 della seconda stagione di AEM Engineering. Uno dei problemi principali nella fase di implementazione di qualsiasi prodotto è la disponibilità di un numero sufficiente di campioni di codice e/o di dimostrazioni in tempo reale di tali campioni, strumenti o API. L’obiettivo di questa serie è quello di fornire informazioni utili sull’AEM as a Cloud Service in 5 minuti o meno.
+Benvenuto nella serie Cloud 5 della seconda stagione di AEM Engineering. Uno dei problemi principali nella fase di implementazione di qualsiasi prodotto è la disponibilità di un numero sufficiente di campioni di codice e/o di dimostrazioni in tempo reale di tali campioni, strumenti o API. L’obiettivo di questa serie è quello di fornire informazioni utili su AEM as a Cloud Service in 5 minuti o meno.
 
 ## Casella di suggerimento
 
-Visita il [Casella di suggerimento](https://forms.office.com/r/74P5Xz4UH0) per l&#39;invio di idee argomento.
+Visitare la [Casella suggerimenti](https://forms.office.com/r/74P5Xz4UH0) per inviare idee per argomenti.
 
 ## Stagione 2
 
@@ -37,7 +37,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
             </a>
             <div>
                 <a href="season-2/cloud5-experience-v-content-fragments.md"><strong>Frammenti</strong></a>        
-                <br/><em>con Darin Kuntze e James Talbot, Senior Cloud Architects</em>
+                <br/><em>con Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
             </div>
             <p>
                 <br/>
@@ -49,8 +49,8 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
                  <img alt="Modernizzatore dell&apos;archivio" src="./imgs/s2/001-thumb.png"/>
             </a>
             <div>
-                <a href="season-2/cloud5-repo-modernizer.md"><strong>Repository Modernizer</strong></a> 
-               <br/><em>con Darin Kuntze e James Talbot, Senior Cloud Architects</em>
+                <a href="season-2/cloud5-repo-modernizer.md"><strong>Modernizzatore archivio</strong></a> 
+               <br/><em>con Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
             </div>
             <p>
                 <br/>
@@ -63,7 +63,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
             </a>
             <div>
                   <a href="season-2/cloud5-admin-console.md"><strong>Admin Console</strong></a>
-               <br/><em>con Darin Kuntze e James Talbot, Senior Cloud Architects</em>
+               <br/><em>con Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
             </div>
             <p>
             <br/>
@@ -78,7 +78,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
             </a>
             <div>
                   <a href="season-2/cloud5-sling-job-scheduler.md"><strong>Processi Sling</strong></a>
-               <br/><em>con Darin Kuntze e James Talbot, Senior Cloud Architects</em>
+               <br/><em>con Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
             </div>
             <p>
             <br/>
@@ -90,8 +90,8 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
                  <img alt="Inizializzatore archivio (repoinit)" src="./imgs/s2/004-thumb.png"/>
             </a>
             <div>
-                  <a href="season-2/cloud5-repoinit.md"><strong>Inizializzatore dell’archivio Sling</strong></a>
-               <br/><em>con Darin Kuntze e James Talbot, Senior Cloud Architects</em>
+                  <a href="season-2/cloud5-repoinit.md"><strong>Inizializzatore archivio Sling</strong></a>
+               <br/><em>con Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
             </div>
             <p>
             <br/>
@@ -108,7 +108,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
       </div>
       <p>
          <br/>
-             Esplora le aree per ottimizzare la cache e velocizzare l’esecuzione del sito su AEM as a Cloud Service.
+             Esplora le aree per ottimizzare la cache e accelerare l’esecuzione del sito su AEM as a Cloud Service.
       </p>
    </td> 
   </tr>
@@ -118,12 +118,12 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
                <img alt="Correggi...Riscrive" src="./imgs/s2/006-thumb.png"/>
             </a>
       <div>
-            <a href="season-2/cloud5-fix-your-rewrites.md"><strong>Correggi... Riscrittura</strong></a>
-         <br/><em>con Darin Kuntze e James Talbot, Senior Cloud Architects</em>
+            <a href="season-2/cloud5-fix-your-rewrites.md"><strong>Correggi... Riscrive</strong></a>
+         <br/><em>con Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
       </div>
       <p>
         <br/>
-         Informazioni rapide sugli elementi che aiuteranno ad accelerare lo sviluppo e l’ottimizzazione della riscrittura su AEM as a Cloud Service.
+         Informazioni rapide sugli elementi che ti aiuteranno a velocizzare lo sviluppo e l’ottimizzazione della riscrittura su AEM as a Cloud Service.
       </p>
      </td>   
      <td>
@@ -131,7 +131,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
                <img alt="Misteri di Cloud Manager... Audit dell’esperienza" src="./imgs/s2/007-thumb.png"/>
                </a>
       <div>
-            <a href="season-2/cloud5-mocm-experience-audit.md"><strong>Misteri di Cloud Manager... Audit dell’esperienza</strong></a>
+            <a href="season-2/cloud5-mocm-experience-audit.md"><strong>Misteri di Cloud Manager... Audit dell'esperienza</strong></a>
          <br/><em>con Darin Kuntze, Senior Cloud Architect</em>
       </div>
       <p>
@@ -149,7 +149,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
       </div>
       <p>
         <br/>
-        Darin e Bryan illustrano come Cloud Manager integra l’esecuzione di unit test e il reporting sulla copertura del codice nella propria pipeline CI/CD per incoraggiare e promuovere la best practice per il test del codice AEM.
+        Darin e Bryan discutono di come Cloud Manager integra l’esecuzione di unit test e il reporting sulla copertura del codice nella sua pipeline CI/CD per incoraggiare e promuovere la best practice per il codice AEM di unit test.
       </p>
    </td> 
   </tr>
@@ -163,7 +163,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
                 <em>con Darin Kuntze &amp; Bryan Stopp, Senior Cloud Architects</em>
             </div>
             <p><br/>
-                Darin e Bryan illustrano diversi tipi di test funzionali integrati nel processo di distribuzione as a Cloud Service dell’AEM per garantire la qualità e l’affidabilità del codice.
+                Darin e Bryan illustrano diversi tipi di test funzionali integrati nel processo di distribuzione di AEM as a Cloud Service per garantire la qualità e l’affidabilità del codice.
             </p>
         </td>
         <td></td>

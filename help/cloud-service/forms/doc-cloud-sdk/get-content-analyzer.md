@@ -26,7 +26,7 @@ Crea un frammento JSON che definisce:
 + parametri
 + output.
 
-I dettagli di questo [I parametri di modulo sono disponibili qui.](https://documentcloud.adobe.com/document-services/index.html#post-createPDF)
+I dettagli del parametro [form sono disponibili qui.](https://documentcloud.adobe.com/document-services/index.html#post-createPDF)
 
 Il codice di esempio riportato di seguito genera il frammento JSON per tutti i tipi di documenti di Office 365.
 

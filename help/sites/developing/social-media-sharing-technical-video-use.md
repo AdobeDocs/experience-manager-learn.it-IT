@@ -22,7 +22,7 @@ Esplora la configurazione e l’utilizzo del componente Condivisione social medi
 
 >[!VIDEO](https://video.tv.adobe.com/v/18897?quality=12&learn=on)
 
-Questo video illustra le seguenti funzioni del componente Condivisione social media (parte di [Componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)) utilizzando [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail) sito web di esempio.
+Questo video illustra le seguenti funzionalità del componente Condivisione social media (parte di [Componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)) tramite il sito Web di esempio [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail).
 
 * 0:00 - Aggiunta e configurazione del componente Condivisione social media
 * 1:00 - Condivisione con Facebook
@@ -35,12 +35,12 @@ Questo video illustra le seguenti funzioni del componente Condivisione social me
 
 [http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl](http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl)
 
-[Esternalizzatore AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) deve essere impostato sia su AEM Author che su AEM Publish, per mappare la modalità di esecuzione di pubblicazione sul dominio accessibile al pubblico utilizzato per accedere a AEM Publish.
+[L&#39;esternalizzatore dell&#39;AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) deve essere configurato sia su AEM Author che su AEM Publish per mappare la modalità di esecuzione di pubblicazione al dominio pubblicamente accessibile utilizzato per accedere a AEM Publish.
 
-In questo video utilizziamo `/etc/hosts` da spoofare *www.example.com* per risolvere in localhost e utilizzare un [configurazione di base del Dispatcher AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) per consentire a www.example.com di eseguire la pubblicazione iniziale dell’AEM.
+In questo video, `/etc/hosts` viene utilizzato per falsificare *www.example.com* per risolvere in localhost e viene utilizzata una [configurazione di base di Dispatcher per l&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) per consentire a www.example.com di visualizzare il Publish AEM.
 
 ## Materiali di supporto {#supporting-materials}
 
-* [Scaricare i componenti core dell’AEM](https://github.com/adobe/aem-core-wcm-components/releases)
+* [Scarica i componenti core AEM](https://github.com/adobe/aem-core-wcm-components/releases)
 * [Scarica We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
 * [Installazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)

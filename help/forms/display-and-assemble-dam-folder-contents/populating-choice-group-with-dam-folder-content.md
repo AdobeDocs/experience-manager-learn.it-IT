@@ -83,7 +83,7 @@ public class ListFolderContent extends SlingSafeMethodsServlet {
 }
 ```
 
-## Creare una libreria client con funzione JavaScript
+## Creare una libreria client con la funzione JavaScript
 
 Il servlet viene richiamato da una funzione JavaScript. La funzione restituisce un oggetto array che verrà utilizzato per popolare il componente gruppo di scelta
 
@@ -111,11 +111,11 @@ function getDAMFolderAssets(damFolder) {
 
 ## Creare un modulo adattivo
 
-Creare un modulo adattivo e associarlo alla libreria client **listfolderassets**. Aggiungi al modulo un componente casella di controllo. Utilizza l’editor di regole per popolare le opzioni della casella di controllo come mostrato nella schermata
+Crea un modulo adattivo e associalo alla libreria client **listfolderassets**. Aggiungi al modulo un componente casella di controllo. Utilizza l’editor di regole per popolare le opzioni della casella di controllo come mostrato nella schermata
 ![set-options](assets/set-options-newsletter.png)
 
-Stiamo richiamando la funzione JavaScript denominata **getDAMFolderAssets** e il passaggio del percorso delle risorse della cartella DAM da elencare nel modulo.
+Si sta richiamando la funzione JavaScript denominata **getDAMFolderAssets** e si sta passando il percorso delle risorse della cartella DAM da elencare nel modulo.
 
 ## Passaggi successivi
 
-[Assembla risorse selezionate](./assemble-selected-newsletters.md)
+[Assembla Assets selezionato](./assemble-selected-newsletters.md)

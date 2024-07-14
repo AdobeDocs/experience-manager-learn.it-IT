@@ -26,7 +26,7 @@ Seguire le istruzioni riportate di seguito per utilizzare questa funzionalità s
 * [Importare il modulo adattivo](assets/SavedDraftsAdaptiveForm.zip)
 * Crea origine dati denominata _SaveAndContinue_
 
-![Crea origine dati](assets/data-source.png)
+![Crea Data Source](assets/data-source.png)
 
 | Nome proprietà | Valore proprietà |
 |---|---|
@@ -35,7 +35,7 @@ Seguire le istruzioni riportate di seguito per utilizzare questa funzionalità s
 | URL connessione JDBC | `jdbc:mysql://localhost:3306/aemformstutorial?autoReconnect=true&useSSL=false&characterEncoding=utf8&useUnicode=true` |
 
 * [Distribuire il bundle icdraft](assets/icdrafts.icdrafts.core-1.0-SNAPSHOT.jar)
-* Assicurati di _Abilita salvataggio tramite CCRDocumentInstanceService_ nella configurazione OSGI come mostrato di seguito
+* Assicurati di _abilitare il salvataggio utilizzando CCRDocumentInstanceService_ nella configurazione OSGI come mostrato di seguito
   ![Abilita bozze](assets/enable-drafts.png)
 * Apri una comunicazione interattiva. Fate clic sul pulsante Salva come bozza per salvare
 * [Visualizza bozze salvate](http://localhost:4502/content/dam/formsanddocuments/saveddrafts/jcr:content?wcmmode=disabled)
@@ -43,4 +43,4 @@ Seguire le istruzioni riportate di seguito per utilizzare questa funzionalità s
 >[!NOTE]
 >I file xml vengono memorizzati nella cartella principale dell&#39;installazione del server AEM. Il progetto di eclissi >è fornito per personalizzare la soluzione in base alle tue esigenze.
 
-Il progetto di eclissi con implementazione di esempio può essere [scaricato da qui](assets/icdrafts-eclipse-project.zip)
+Il progetto eclipse con implementazione di esempio può essere [scaricato da qui](assets/icdrafts-eclipse-project.zip)

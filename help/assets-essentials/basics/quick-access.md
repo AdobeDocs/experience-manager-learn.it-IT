@@ -21,6 +21,6 @@ ht-degree: 5%
 
 # Accesso rapido
 
-Scopri in che modo il widget di accesso rapido di My Workspace può aumentare la produttività e semplificare il flusso di lavoro fungendo da obiettivo personale in AEM Assets, mantenendo a portata di mano tutte le risorse necessarie per le attività assegnate.
+Scopri in che modo il widget di accesso rapido di My Workspace può aumentare la produttività e semplificare il flusso di lavoro, fungendo da obiettivo personale in AEM Assets, mantenendo a portata di mano tutte le risorse necessarie per le attività assegnate.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420975/?learn=on)

@@ -35,7 +35,7 @@ Entro la fine di questo capitolo di esercitazione, avrai a disposizione un compo
 
    ![create-imagelist-fragment](./assets/3/create-imagelist-fragment.png)
 
-   Desideriamo creare un frammento del tipo `imagelist` (il modello è `imagelist`) e gli assegneremo il titolo `imagelist`.
+   Si desidera creare un frammento di tipo `imagelist` (il modello è `imagelist`) e gli verrà assegnato il titolo `imagelist`.
 
    Nell’editor dei frammenti di contenuto è possibile selezionare un frammento da includere o creare.  Seleziona Crea un frammento.
 
@@ -191,7 +191,7 @@ Entro la fine di questo capitolo di esercitazione, avrai a disposizione un compo
    Eu facilisis sed odio morbi quis. Consequat semper viverra nam libero justo laoreet sit amet. Eget mi proin sed libero enim sed faucibus. Vitae tempus quam pellentesque nec nam aliquam sem. Justo donec enim diam vulputate ut pharetra sit. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Mauris pellentesque pulvinar pellentesque habitant morbi. Iaculis at erat pellentesque adipiscing. Libero id faucibus nisl tincidunt eget nullam non nisi est. Interdum consectetur libero id faucibus nisl tincidunt. Volutpat odio facilisis mauris sit amet massa. Tristique senectus et netus et malesuada fames ac turpis egestas. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Sapien et ligula ullamcorper malesuada proin libero. Interdum consectetur libero id faucibus nisl tincidunt.
    ```
 
-1. Torniamo all’editor delle query e recuperiamo questo nuovo componente.  Tieni presente che stiamo facendo riferimento al `OfferModel` nella nostra query e nei metadati, che utilizzeremo per il titolo della scheda.
+1. Torniamo all’editor delle query e recuperiamo questo nuovo componente.  Tieni presente che nella query si fa riferimento a `OfferModel` e ai metadati, che utilizzeremo per il titolo della scheda.
 
    ```graphql
    query imageList {
@@ -227,13 +227,13 @@ Entro la fine di questo capitolo di esercitazione, avrai a disposizione un compo
    }
    ```
 
-1. Ora connetti questo alla nostra app.  Nel nostro `home.js`, faremo riferimento alla nuova query. Sopra `useEffect()` imposteremo `list` e `setList`.
+1. Ora connetti questo alla nostra app.  In `home.js` verrà fatto riferimento alla nuova query. Sopra `useEffect()` verranno impostati `list` e `setList`.
 
    ```javascript
    const [list, setList] = useState({});
    ```
 
-   Interno `useEffect()` una nuova richiesta per la query imagelist.
+   All&#39;interno di `useEffect()` una nuova richiesta per la query dell&#39;elenco di immagini.
 
    ```javascript
    sdk.runPersistedQuery('pure-headless/imagelist')
@@ -295,7 +295,7 @@ Entro la fine di questo capitolo di esercitazione, avrai a disposizione un compo
 
 ## Abilita editor universale
 
-1. Aggiungi `<meta />` all&#39;app.  Apri `App.js` e inserisci importazione nella parte superiore del file.
+1. Aggiungi `<meta />` all&#39;app.  Apri `App.js` e inserisci l&#39;importazione nella parte superiore del file.
 
    ```javascript
    import { Helmet } from 'react-helmet';
@@ -311,7 +311,7 @@ Entro la fine di questo capitolo di esercitazione, avrai a disposizione un compo
 
    >[!TIP]
    >
-   > Stiamo utilizzando la libreria Helmet per rendere questo dinamico basato sulla `.env` , tuttavia è possibile codificarlo nel file `index.html`.
+   > Stiamo utilizzando la libreria Helmet per rendere dinamico questo sistema in base al file `.env`, tuttavia è possibile codificarlo in `index.html`.
 
 1. Ora aggiorniamo la sezione Scheda per identificare il frammento e il tipo di dati per la modifica di ogni scheda.
 
@@ -331,13 +331,13 @@ Entro la fine di questo capitolo di esercitazione, avrai a disposizione un compo
 
 1. Ora identifica ciò che è modificabile.
 
-   Al `<h3 />` aggiungi:
+   A `<h3 />` aggiungi:
 
    ```javascript
    itemProp="_metadata" itemType="text"
    ```
 
-   Al nostro `<div />` aggiungi:
+   A `<div />` aggiungi:
 
    ```javascript
    itemProp="description" itemType="richtext"

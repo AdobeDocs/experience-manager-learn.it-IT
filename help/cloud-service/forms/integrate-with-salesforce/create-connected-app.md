@@ -26,4 +26,4 @@ Un’app connessa è un framework che consente a un’applicazione esterna di in
 >[!VIDEO](https://video.tv.adobe.com/v/331757?quality=12&learn=on)
 
 >[!NOTE]
->Assicurati di creare un account in [Salesforce Developer Edition](https://developer.salesforce.com/signup) in quanto le API REST sono abilitate per impostazione predefinita nell’edizione per sviluppatori.
+>Assicurarsi di creare un account in [Salesforce Developer Edition](https://developer.salesforce.com/signup) in quanto le API REST sono abilitate per impostazione predefinita nell&#39;edizione per sviluppatori.

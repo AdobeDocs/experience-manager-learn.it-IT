@@ -40,15 +40,15 @@ Questo video illustra la configurazione della pipeline per il programma in Cloud
 
 ## Esecuzione di una pipeline non riuscita
 
-Questo video illustra l’esecuzione della pipeline CI/CD utilizzando un codice che non supera i controlli di qualità richiesti da Cloud Manager, utilizzando **[!DNL yellow]** ramo archivio.
+Questo video illustra l’esecuzione della pipeline CI/CD utilizzando un codice che non supera i controlli di qualità richiesti da Cloud Manager, utilizzando il ramo dell’archivio **[!DNL yellow]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23084?quality=12&learn=on)
 
 ## Esecuzione della pipeline riuscita
 
-Questo video illustra l’esecuzione corretta della pipeline CI/CD utilizzando il codice che supera i controlli di qualità richiesti da Cloud Manager, utilizzando **[!DNL master]** ramo archivio.
+Questo video illustra l’esecuzione corretta della pipeline CI/CD utilizzando il codice che supera i controlli di qualità richiesti da Cloud Manager, utilizzando il ramo dell’archivio **[!DNL master]**.
 
-Questo video illustra anche [!UICONTROL Attività] in Cloud Manager, che consente il rientro nelle esecuzioni attive o la revisione delle esecuzioni completate o non riuscite.
+Questo video tocca anche la console [!UICONTROL Attività] in Cloud Manager, che consente il rientro nelle esecuzioni attive o la revisione delle esecuzioni completate o non riuscite.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23085?quality=12&learn=on)
 

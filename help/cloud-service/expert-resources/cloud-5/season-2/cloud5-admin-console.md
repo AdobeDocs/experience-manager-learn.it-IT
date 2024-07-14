@@ -24,5 +24,5 @@ Vi siete mai chiesti come mai ogni voce faccia nel contesto dell&#39;AEM all&#39
 
 ## Contenuto trattato in questo video
 
-+ [Comprendere l’Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html)
++ [Comprendere l&#39;Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html)
 + [Panoramica Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html)

@@ -1,5 +1,5 @@
 ---
-title: Configurare l’origine dati AEM
+title: Configurare AEM Data Source
 description: Configura origine dati supportata MySQL per archiviare e recuperare i dati del modulo
 feature: Adaptive Forms
 topic: Development
@@ -19,11 +19,11 @@ ht-degree: 3%
 
 # Configurare l’origine dati
 
-Esistono molti modi in cui l’AEM consente l’integrazione con un database esterno. Uno dei modi più comuni per integrare un database è utilizzare le proprietà di configurazione dell’origine dati in pool di connessione Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
-Il primo passaggio consiste nel scaricare e implementare la [Driver MySql](https://mvnrepository.com/artifact/mysql/mysql-connector-java) nell&#39;AEM.
+Esistono molti modi in cui l’AEM consente l’integrazione con un database esterno. Uno dei modi più comuni per integrare un database consiste nell&#39;utilizzare le proprietà di configurazione DataSource in pool di connessione Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
+Il primo passaggio consiste nel scaricare e distribuire i [driver MySql](https://mvnrepository.com/artifact/mysql/mysql-connector-java) appropriati in AEM.
 Crea un’origine dati in pool di connessione Apache Sling e fornisci le proprietà come specificato nella schermata seguente. Lo schema di database viene fornito come parte di queste risorse di esercitazione.
 
-![data-source](assets/data-source.PNG)
+![origine dati](assets/data-source.PNG)
 
 Database dispone di una tabella denominata formdata con le tre colonne, come illustrato nella schermata seguente.
 
@@ -31,7 +31,7 @@ Database dispone di una tabella denominata formdata con le tre colonne, come ill
 
 
 >[!NOTE]
->Assegna un nome all’origine dati **emformstutoriale**. Il codice di esempio utilizza il nome per connettersi al database.
+>Assicurati di denominare l&#39;origine dati **aemformstutorial**. Il codice di esempio utilizza il nome per connettersi al database.
 
 | Nome proprietà | Valore |
 | ------------------------|--------------------------------------- |

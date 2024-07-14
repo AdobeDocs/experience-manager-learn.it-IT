@@ -30,6 +30,6 @@ Per creare un nodo di questo tipo in crx, segui i passaggi indicati di seguito:
 * Sarà necessario creare una proprietà di tipo String denominata assettypes(è possibile denominarla in base alle proprie esigenze).Assicurarsi che la proprietà sia multivalore. Immetti i valori desiderati e salvali.
   ![item-load-path](assets/item-load-path-crx.png)
 
-Per caricare questi valori nell’elenco a discesa, specifica il seguente percorso nella proprietà percorso di caricamento elemento  **/content/assets/assettypes**
+Per caricare questi valori nell&#39;elenco a discesa, fornire il seguente percorso nella proprietà percorso di caricamento elemento **/content/assets/assettypes**
 
 Il pacchetto di esempio può essere [scaricato da qui](assets/item-load-path-package.zip)

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Aggiungere un utente di gestione per l’Admin Console JBoss
 
-*Questo video illustra i passaggi per aggiungere un utente di gestione per l’Admin Console JBoss.*
+*Questo video illustra i passaggi necessari per aggiungere un utente di gestione per l&#39;Admin Console JBoss.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335484?quality=12&learn=on)

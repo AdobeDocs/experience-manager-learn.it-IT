@@ -26,7 +26,7 @@ Le seguenti risorse/configurazioni sono state distribuite su un server di pubbli
 * [Esempio di modello di comunicazione interattiva](assets/waiver-interactive-communication.zip)
 * [Distribuire il bundle DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip)
 * Aggiungi la seguente voce nel servizio User Mapper di Apache Sling Service utilizzando OSGi configMgr
-  **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
+  **Sviluppo con ServiceUser.core:getformsresourceresolver=fd-service**
 
 ## Distribuire l’app di reazione di esempio
 
@@ -61,4 +61,4 @@ Per abilitare l’esecuzione di chiamate POST all’endpoint AEM dall’app REAC
 
 ![cors-setting](assets/cors-settings.png)
 
-Consulta [CORS con AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html) per ulteriori dettagli sulle opzioni di configurazione CORS.
+Per ulteriori dettagli sulle opzioni di configurazione CORS, vedi [informazioni su CORS con AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html).

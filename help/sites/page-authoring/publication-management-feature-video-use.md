@@ -30,13 +30,13 @@ AEM Sites offre diverse opzioni per la pubblicazione e l’annullamento della pu
 AEM Sites fornisce diversi metodi per pubblicare e annullare la pubblicazione dei contenuti, in base al flusso di lavoro dell’autore.
 
 * Pubblicazione della pagina corrente dall’Editor pagina di AEM Sites
-   * Pubblica la pagina corrente e consente la selezione facoltativa dei riferimenti
+   * Publish la pagina corrente e consente la selezione facoltativa dei riferimenti
    * Annullare la pubblicazione della pagina corrente
-* Pubblicazione rapida dall’amministratore di AEM Sites
+* Publish rapido dall’amministratore di AEM Sites
    * Pubblicazione con un clic delle pagine selezionate e pubblicazione automatica di tutti i riferimenti non pubblicati
 * Gestisci pubblicazione dall’amministratore di AEM Sites
    * Solida console per la gestione dettagliata dei contenuti in blocco, sia per la pubblicazione che per l’annullamento della pubblicazione.
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Documentazione sulla pubblicazione delle pagine](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/publishing-pages.html)
+* [Pubblicazione della documentazione delle pagine](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/publishing-pages.html)

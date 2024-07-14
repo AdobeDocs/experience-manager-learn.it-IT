@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Acquisire le immagini heap di una JVM su un server Windows
 
-*Questo video illustra i passaggi per acquisire le immagini heap di una JVM su un server Windows.*
+*Questo video illustra i passaggi necessari per acquisire le immagini heap di una JVM in un server Windows.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335490?quality=12&learn=on)

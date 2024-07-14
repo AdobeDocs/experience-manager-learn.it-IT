@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Creare e configurare l’account Dynamics
 
-[Login](https://dynamics.microsoft.com/en-us/) al tuo account Microsoft Dynamics. Puoi creare una [account di prova gratuito](https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/) se non disponi di un account Dynamics.
+[Accedi](https://dynamics.microsoft.com/en-us/) al tuo account Microsoft Dynamics. Se non disponi di un account Dynamics, puoi creare un account di prova gratuito [](https://dynamics.microsoft.com/en-us/dynamics-365-free-trial/).
 
 >[!NOTE]
 >Sostituire il numero del server e della porta nell&#39;URI seguente per ottenere l&#39;URI di un nuovo tentativo. Per configurare l&#39;applicazione con Azure Active Directory è necessario riprovare l&#39;URI.

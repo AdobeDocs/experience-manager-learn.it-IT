@@ -86,7 +86,7 @@ Alcuni esempi di codice che comunemente si trovano in un modulo core includono:
 * Moduli di avvio dei flussi di lavoro
 * Elementi di progettazione comuni utilizzati nei vari siti
 
-*Architettura di progetto modulare*
+*Architettura del progetto modulare*
 
 Questo non elimina la necessità per più team di dipendere e potenzialmente aggiornare lo stesso set di codice. Creando un progetto di base, abbiamo ridotto la dimensione della base di codice condivisa tra i team, riducendo ma non eliminando la necessità di risorse condivise.
 

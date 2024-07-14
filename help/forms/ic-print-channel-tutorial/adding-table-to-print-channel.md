@@ -22,7 +22,7 @@ ht-degree: 1%
 # Aggiunta di una tabella alla sezione Contributi
 
 In questa parte verrà aggiunta una tabella alla sezione Contributi.
-Fare riferimento a [Utilizzo delle tabelle nel canale di stampa](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) per ulteriori dettagli sull&#39;utilizzo delle tabelle nel documento canale di stampa.
+Fare riferimento a [Utilizzo delle tabelle nel canale di stampa](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) per ulteriori dettagli sull&#39;utilizzo delle tabelle nel documento del canale di stampa.
 
 Accedi ad AEM Forms e passa a Adobe Experience Manager > Forms > Forms &amp; Documents.
 

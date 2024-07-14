@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Le query GraphQL headless dell’AEM possono restituire risultati di grandi dimensioni. Questo articolo descrive come lavorare con risultati di grandi dimensioni in AEM Headless per garantire le migliori prestazioni per la tua applicazione.
 
-AEM Headless supporta [offset/limite](#list-query) e [paginazione basata su cursore](#paginated-query) esegue query su sottoinsiemi più piccoli di un set di risultati più grande. È possibile effettuare più richieste per raccogliere tutti i risultati necessari.
+AEM Headless supporta [offset/limit](#list-query) e [impaginazione basata su cursore](#paginated-query) query in sottoinsiemi più piccoli di un set di risultati più grande. È possibile effettuare più richieste per raccogliere tutti i risultati necessari.
 
 Gli esempi seguenti utilizzano piccoli sottoinsiemi di risultati (quattro record per richiesta) per dimostrare le tecniche. In un’applicazione reale, utilizzeresti un numero maggiore di record per richiesta per migliorare le prestazioni. 50 record per richiesta è una buona linea di base.
 
@@ -37,7 +37,7 @@ Quando si utilizzano set di dati di grandi dimensioni, è possibile utilizzare s
 
 ### Scostamento/limite
 
-Query elenco, utilizzo `limit` e `offset` fornisce un approccio semplice che specifica il punto di partenza (`offset`) e il numero di record da recuperare (`limit`). Questo approccio consente di selezionare un sottoinsieme di risultati da qualsiasi punto all’interno dell’intero insieme di risultati, ad esempio passare a una pagina di risultati specifica. Anche se è facile da implementare, può essere lento e inefficiente quando si tratta di risultati di grandi dimensioni, in quanto il recupero di molti record richiede la scansione di tutti i record precedenti. Questo approccio può anche causare problemi di prestazioni quando il valore di offset è elevato, in quanto potrebbe richiedere il recupero e l&#39;eliminazione di molti risultati.
+Le query elenco, che utilizzano `limit` e `offset`, forniscono un approccio semplice che specifica il punto iniziale (`offset`) e il numero di record da recuperare (`limit`). Questo approccio consente di selezionare un sottoinsieme di risultati da qualsiasi punto all’interno dell’intero insieme di risultati, ad esempio passare a una pagina di risultati specifica. Anche se è facile da implementare, può essere lento e inefficiente quando si tratta di risultati di grandi dimensioni, in quanto il recupero di molti record richiede la scansione di tutti i record precedenti. Questo approccio può anche causare problemi di prestazioni quando il valore di offset è elevato, in quanto potrebbe richiedere il recupero e l&#39;eliminazione di molti risultati.
 
 #### Query GraphQL
 
@@ -65,7 +65,7 @@ query adventuresByOffetAndLimit($offset:Int!, $limit:Int) {
 
 #### Risposta GraphQL
 
-La risposta JSON risultante contiene la seconda, la terza, la quarta e la quinta avventura più costosa. Le prime due avventure nei risultati hanno lo stesso prezzo (`4500` quindi il [query elenco](#list-queries) specifica le avventure con lo stesso prezzo, quindi viene ordinato per titolo in ordine crescente.)
+La risposta JSON risultante contiene la seconda, la terza, la quarta e la quinta avventura più costosa. Le prime due avventure nei risultati hanno lo stesso prezzo (`4500`, quindi la [query elenco](#list-queries) specifica che le avventure con lo stesso prezzo sono ordinate in base al titolo in ordine crescente.)
 
 ```json
 {
@@ -100,7 +100,7 @@ La risposta JSON risultante contiene la seconda, la terza, la quarta e la quinta
 
 ### Query impaginata
 
-L’impaginazione basata su cursore, disponibile nelle query impaginate, comporta l’utilizzo di un cursore (un riferimento a un record specifico) per recuperare il set successivo di risultati. Questo approccio è più efficiente in quanto evita la necessità di analizzare tutti i record precedenti per recuperare il sottoinsieme di dati richiesto. Le query impaginate sono ideali per eseguire iterazioni attraverso set di risultati di grandi dimensioni dall’inizio, fino a un certo punto al centro o fino alla fine. Query elenco, utilizzo `limit` e `offset` fornisce un approccio semplice che specifica il punto di partenza (`offset`) e il numero di record da recuperare (`limit`). Questo approccio consente di selezionare un sottoinsieme di risultati da qualsiasi punto all’interno dell’intero insieme di risultati, ad esempio passare a una pagina di risultati specifica. Anche se è facile da implementare, può essere lento e inefficiente quando si tratta di risultati di grandi dimensioni, in quanto il recupero di molti record richiede la scansione di tutti i record precedenti. Questo approccio può anche causare problemi di prestazioni quando il valore di offset è elevato, in quanto potrebbe richiedere il recupero e l&#39;eliminazione di molti risultati.
+L’impaginazione basata su cursore, disponibile nelle query impaginate, comporta l’utilizzo di un cursore (un riferimento a un record specifico) per recuperare il set successivo di risultati. Questo approccio è più efficiente in quanto evita la necessità di analizzare tutti i record precedenti per recuperare il sottoinsieme di dati richiesto. Le query impaginate sono ideali per eseguire iterazioni attraverso set di risultati di grandi dimensioni dall’inizio, fino a un certo punto al centro o fino alla fine. Le query elenco, che utilizzano `limit` e `offset`, forniscono un approccio semplice che specifica il punto iniziale (`offset`) e il numero di record da recuperare (`limit`). Questo approccio consente di selezionare un sottoinsieme di risultati da qualsiasi punto all’interno dell’intero insieme di risultati, ad esempio passare a una pagina di risultati specifica. Anche se è facile da implementare, può essere lento e inefficiente quando si tratta di risultati di grandi dimensioni, in quanto il recupero di molti record richiede la scansione di tutti i record precedenti. Questo approccio può anche causare problemi di prestazioni quando il valore di offset è elevato, in quanto potrebbe richiedere il recupero e l&#39;eliminazione di molti risultati.
 
 #### Query GraphQL
 
@@ -134,7 +134,7 @@ query adventuresByPaginated($first:Int, $after:String) {
 
 #### Risposta GraphQL
 
-La risposta JSON risultante contiene la seconda, la terza, la quarta e la quinta avventura più costosa. Le prime due avventure nei risultati hanno lo stesso prezzo (`4500` quindi il [query elenco](#list-queries) specifica le avventure con lo stesso prezzo, quindi viene ordinato per titolo in ordine crescente.)
+La risposta JSON risultante contiene la seconda, la terza, la quarta e la quinta avventura più costosa. Le prime due avventure nei risultati hanno lo stesso prezzo (`4500`, quindi la [query elenco](#list-queries) specifica che le avventure con lo stesso prezzo sono ordinate in base al titolo in ordine crescente.)
 
 ```json
 {
@@ -177,7 +177,7 @@ La risposta JSON risultante contiene la seconda, la terza, la quarta e la quinta
 
 #### Set successivo di risultati impaginati
 
-Il successivo set di risultati può essere recuperato utilizzando `after` e il `endCursor` valore della query precedente. Se non sono presenti altri risultati da recuperare, `hasNextPage` è `false`.
+È possibile recuperare il successivo set di risultati utilizzando il parametro `after` e il valore `endCursor` della query precedente. Se non sono presenti altri risultati da recuperare, `hasNextPage` è `false`.
 
 ##### Variabili di query
 
@@ -190,7 +190,7 @@ Il successivo set di risultati può essere recuperato utilizzando `after` e il `
 
 ## Esempi di reazione
 
-Di seguito sono riportati alcuni esempi di React che mostrano come utilizzare [offset e limite](#offset-and-limit) e [paginazione basata su cursore](#cursor-based-pagination) approcci. In genere il numero di risultati per richiesta è maggiore, tuttavia ai fini di questi esempi, il limite è impostato su 5.
+Di seguito sono riportati alcuni esempi di React che mostrano come utilizzare gli approcci [offset e limit](#offset-and-limit) e [impaginazione basata su cursore](#cursor-based-pagination). In genere il numero di risultati per richiesta è maggiore, tuttavia ai fini di questi esempi, il limite è impostato su 5.
 
 ### Esempio di offset e limite
 
@@ -200,7 +200,7 @@ Utilizzando offset e limite, è possibile recuperare e visualizzare facilmente s
 
 #### useEffect hook
 
-Il `useEffect` hook richiama una query persistente (`adventures-by-offset-and-limit`) che recupera un elenco di Avventure. La query utilizza `offset` e `limit` parametri per specificare il punto iniziale e il numero di risultati da recuperare. Il `useEffect` viene richiamato quando `page` modifiche al valore.
+L&#39;hook `useEffect` richiama una query persistente (`adventures-by-offset-and-limit`) che recupera un elenco di avventure. La query utilizza i parametri `offset` e `limit` per specificare il punto iniziale e il numero di risultati da recuperare. L&#39;hook `useEffect` viene richiamato quando il valore `page` cambia.
 
 
 ```javascript
@@ -243,7 +243,7 @@ export function useOffsetLimitAdventures(page, limit) {
 
 #### Componente
 
-Il componente utilizza `useOffsetLimitAdventures` hook per recuperare un elenco di avventure. Il `page` il valore viene incrementato e diminuito per recuperare il set di risultati successivo e precedente. Il `hasMore` viene utilizzato per determinare se il pulsante della pagina successiva deve essere abilitato.
+Il componente utilizza l&#39;hook `useOffsetLimitAdventures` per recuperare un elenco di avventure. Il valore `page` viene incrementato e diminuito per recuperare il set di risultati successivo e precedente. Il valore `hasMore` viene utilizzato per determinare se il pulsante Pagina successiva deve essere abilitato.
 
 ```javascript
 import { useState } from "react";
@@ -312,7 +312,7 @@ Utilizzando la paginazione basata su cursore, è possibile recuperare e visualiz
 
 #### Hook UseEffect
 
-Il `useEffect` hook richiama una query persistente (`adventures-by-paginated`) che recupera un elenco di Avventure. La query utilizza `first` e `after` parametri per specificare il numero di risultati da recuperare e il cursore da cui iniziare. `fetchData` viene eseguito un ciclo continuo, raccogliendo il successivo set di risultati impaginati, fino a quando non sono presenti altri risultati da recuperare.
+L&#39;hook `useEffect` richiama una query persistente (`adventures-by-paginated`) che recupera un elenco di avventure. La query utilizza i parametri `first` e `after` per specificare il numero di risultati da recuperare e il cursore da cui iniziare. `fetchData` esegue un ciclo continuo, raccogliendo il successivo set di risultati impaginati, fino a quando non sono presenti altri risultati da recuperare.
 
 ```javascript
 import { useState, useEffect } from "react";
@@ -367,7 +367,7 @@ export function usePaginatedAdventures() {
 
 #### Componente
 
-Il componente utilizza `usePaginatedAdventures` hook per recuperare un elenco di avventure. Il `queryCount` Il valore viene utilizzato per visualizzare il numero di richieste HTTP effettuate per recuperare l’elenco delle Avventure.
+Il componente utilizza l&#39;hook `usePaginatedAdventures` per recuperare un elenco di avventure. Il valore `queryCount` viene utilizzato per visualizzare il numero di richieste HTTP effettuate per recuperare l&#39;elenco di Avventure.
 
 ```javascript
 import { useState } from "react";

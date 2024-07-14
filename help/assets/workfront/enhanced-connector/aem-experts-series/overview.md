@@ -55,7 +55,7 @@ Questa serie di esperti in quattro parti fa seguito a un gruppo di Adobi - dai p
              src="./assets/custom-forms.png">
       </a>
       <div>
-         <a href="./custom-forms.md"><strong>Moduli personalizzati e mappatura metadati di Workfront</strong></a>
+         <a href="./custom-forms.md"><strong>Moduli personalizzati Workfront e mappatura metadati</strong></a>
          <br/><em>Parte 2/4</em>
       </div>
       <p>

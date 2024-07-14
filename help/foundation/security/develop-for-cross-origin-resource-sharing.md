@@ -18,33 +18,33 @@ ht-degree: 0%
 
 # Sviluppo per la condivisione CORS (Cross-Origin Resource Sharing)
 
-Un breve esempio di utilizzo [!DNL CORS] per accedere ai contenuti AEM da un’applicazione web esterna tramite JavaScript lato client. In questo esempio viene utilizzata la configurazione OSGi CORS per abilitare l’accesso CORS all’AEM. L’approccio di configurazione OSGi è fattibile quando:
+Breve esempio di utilizzo di [!DNL CORS] per accedere ai contenuti AEM da un&#39;applicazione Web esterna tramite JavaScript lato client. In questo esempio viene utilizzata la configurazione OSGi CORS per abilitare l’accesso CORS all’AEM. L’approccio di configurazione OSGi è fattibile quando:
 
-* Una singola origine accede al contenuto della pubblicazione AEM
+* Una singola origine accede ai contenuti Publish dell’AEM
 * Per l’authoring AEM è necessario l’accesso CORS
 
-Se è richiesto l’accesso multiorigine alla pubblicazione dell’AEM, consulta [questa documentazione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
+Se è richiesto l&#39;accesso a più origini al Publish AEM, consulta [questa documentazione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837?quality=12&learn=on)
 
 In questo video:
 
-* **www.example.com** mappa su localhost tramite `/etc/hosts`
-* **aem-publish.local** mappa su localhost tramite `/etc/hosts`
-* SimpleHTTPServer (un wrapper per [[!DNL Python]SimpleHTTPServer di](https://docs.python.org/2/library/simplehttpserver.html)) sta servendo la pagina HTML tramite la porta 8000.
-   * _Non più disponibile in Mac App Store. Utilizza simili, ad esempio [Jeeves](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._
-* [!DNL AEM Dispatcher] è in esecuzione su [!DNL Apache HTTP Web Server] 2.4 e richiesta di reverse-proxy a `aem-publish.local` a `localhost:4503`.
+* **www.example.com** è mappato a localhost tramite `/etc/hosts`
+* **aem-publish.local** è mappato a localhost tramite `/etc/hosts`
+* SimpleHTTPServer (un wrapper per SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html) di [[!DNL Python]) sta distribuendo la pagina HTML tramite la porta 8000.
+   * _Non più disponibile in Mac App Store. Usa simili come [Jeeves](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._
+* [!DNL AEM Dispatcher] è in esecuzione in [!DNL Apache HTTP Web Server] 2.4 e la richiesta di reverse-proxying a `aem-publish.local` in `localhost:4503` è in esecuzione.
 
-Per ulteriori dettagli, consulta [Condivisione CORS (Cross-Origin Resource Sharing) nell’AEM](./understand-cross-origin-resource-sharing.md).
+Per ulteriori dettagli, rivedi [Informazioni su Cross-Origin Resource Sharing (CORS) in AEM](./understand-cross-origin-resource-sharing.md).
 
-## www.example.com HTML e JavaScript
+## www.example.com HTML e JAVASCRIPT
 
 La logica di questa pagina Web è
 
 1. Facendo clic sul pulsante
-1. Crea un [!DNL AJAX GET] richiesta a `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`
-1. Recupera il `jcr:title` formare la risposta JSON
-1. Inietta il `jcr:title` nel DOM
+1. Invia una richiesta [!DNL AJAX GET] a `http://aem-publish.local/content/we-retail/.../experience/_jcr_content.1.json`
+1. Recupera `jcr:title` dalla risposta JSON
+1. Inserisce `jcr:title` nel DOM
 
 ```xml
 <html>
@@ -79,7 +79,7 @@ La logica di questa pagina Web è
 
 ## Configurazione di fabbrica OSGi
 
-Configurazione OSGi factory per [!DNL Cross-Origin Resource Sharing] è disponibile tramite:
+La factory di configurazione OSGi per [!DNL Cross-Origin Resource Sharing] è disponibile tramite:
 
 * `http://<host>:<port>/system/console/configMgr > [!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]`
 
@@ -99,11 +99,11 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 />
 ```
 
-## Configurazione del Dispatcher {#dispatcher-configuration}
+## Configurazione Dispatcher {#dispatcher-configuration}
 
 ### Consentire le intestazioni di richiesta CORS
 
-Per consentire il necessario [Intestazioni di richiesta HTTP da passare all’AEM per l’elaborazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders), devono essere consentiti nel `/clientheaders` configurazione.
+Per consentire alle intestazioni di richiesta HTTP [di passare all&#39;AEM per l&#39;elaborazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders), è necessario che siano consentite nella configurazione `/clientheaders` di Dispatcher.
 
 ```
 /clientheaders {
@@ -116,7 +116,7 @@ Per consentire il necessario [Intestazioni di richiesta HTTP da passare all’AE
 
 ### Memorizzazione nella cache delle intestazioni di risposta CORS
 
-Per consentire la memorizzazione in cache e il serving delle intestazioni CORS sul contenuto memorizzato in cache, aggiungi quanto segue [/cache /headers, configurazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#caching-http-response-headers) alla pubblicazione AEM `dispatcher.any` file.
+Per consentire il caching e il serving delle intestazioni CORS sul contenuto memorizzato nella cache, aggiungere la seguente configurazione [/cache /headers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#caching-http-response-headers) al file AEM Publish `dispatcher.any`.
 
 ```
 /publishfarm {
@@ -140,9 +140,9 @@ Per consentire la memorizzazione in cache e il serving delle intestazioni CORS s
 }
 ```
 
-**Riavviare l&#39;applicazione server Web** dopo aver apportato modifiche al `dispatcher.any` file.
+**Riavviare l&#39;applicazione server Web** dopo aver apportato modifiche al file `dispatcher.any`.
 
-È probabile che la cancellazione completa della cache sia necessaria per garantire che le intestazioni siano memorizzate nella cache in modo appropriato alla successiva richiesta dopo un `/cache /headers` aggiornamento della configurazione.
+È probabile che la cancellazione completa della cache sia necessaria per garantire che le intestazioni siano memorizzate nella cache in modo appropriato alla successiva richiesta dopo un aggiornamento della configurazione di `/cache /headers`.
 
 ## Materiali di supporto {#supporting-materials}
 
@@ -150,5 +150,5 @@ Per consentire la memorizzazione in cache e il serving delle intestazioni CORS s
 * [Python SimpleHTTPServer](https://docs.python.o:qrg/2/library/simplehttpserver.html) (compatibile con Windows/macOS/Linux)
 
 * [Condivisione CORS (Cross-Origin Resource Sharing) nell’AEM](./understand-cross-origin-resource-sharing.md)
-* [Condivisione risorse tra origini (W3C)](https://www.w3.org/TR/cors/)
+* [Condivisione risorse tra le origini (W3C)](https://www.w3.org/TR/cors/)
 * [Controllo accesso HTTP (Mozilla MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)

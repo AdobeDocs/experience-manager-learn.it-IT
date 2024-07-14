@@ -30,7 +30,7 @@ ht-degree: 20%
    + [Collaborazione](basics/collaborating.md)
    + [Condivisione collegamenti](basics/link-sharing.md)
 
-+ Configurazione{#configuring}
++ Configurazione di {#configuring}
    + [Area di lavoro personale](configuring/my-workspace.md)
    + [Moduli di metadati](configuring/metadata-forms.md)
    + [Gestione delle autorizzazioni](configuring/permissions-management.md)
@@ -38,13 +38,13 @@ ht-degree: 20%
 
 + [Integrazione Creative Cloud](integrations/creative-cloud.md)
 
-+ Integrazione con Adobe Workfront{#workfront}
++ Integrazione Adobe Workfront{#workfront}
    + [Panoramica](./integrations/workfront/overview.md)
    + [Configurazione](./integrations/workfront/configure.md)
    + [Mappatura dei metadati](./integrations/workfront/map-metadata.md)
    + [Invio di documenti e collegamento di risorse](./integrations/workfront/link-send.md)
    + [Cronologia delle versioni](./integrations/workfront/versions.md)
 
-+ [Integrazione con Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=it){target=_blank}
++ [Integrazione Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=it){target=_blank}
 
 + [Documentazione](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html){target=_blank}

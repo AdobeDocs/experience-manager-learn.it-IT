@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Abilitare il download delle rappresentazioni in Brand Portal
 
-*Questo video illustra i passaggi per abilitare il download delle rappresentazioni in Brand Portal.*
+*Questo video illustra i passaggi necessari per abilitare il download delle rappresentazioni in Brand Portal.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335449?quality=12&learn=on)

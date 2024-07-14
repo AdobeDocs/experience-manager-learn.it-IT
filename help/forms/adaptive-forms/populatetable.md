@@ -23,12 +23,13 @@ In questo articolo esaminiamo come popolare la tabella dei moduli adattivi recup
 ![clickevent](assets/amortization.PNG)
 
 Row1 è configurato per l’aumento di dimensione a seconda dei dati restituiti dalla chiamata del servizio. Osserva le impostazioni di ripetizione specificate qui. Il valore -1 indica un numero illimitato di righe nella tabella
-![Riga 1](assets/rowconfiguration.PNG)
+![Riga1](assets/rowconfiguration.PNG)
 
 ## Distribuisci sul server
 
 [Installa Tomcat come specificato qui](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
 [Distribuisci il file SampleRest.war contenuto in questo file zip nel tuo Tomcat](assets/sample-rest.zip)
-[Installare le risorse](assets/amortizationschedule.zip) utilizzo del gestore di pacchetti AEM
-[Aprire il modulo Programma di ammortamento](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
-Inserire il valore appropriato e fare clic su Calcola pianificazione ammortamento che deve essere compilata nel modulo
+[Installare le risorse](assets/amortizationschedule.zip) tramite Gestione pacchetti AEM
+[Aprire il modulo di pianificazione ammortamento](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
+Immetti il valore appropriato e fai clic su calcola
+La pianificazione dell&#39;ammortamento dovrebbe essere compilata nel modulo

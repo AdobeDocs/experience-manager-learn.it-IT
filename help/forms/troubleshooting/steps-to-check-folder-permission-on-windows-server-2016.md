@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Passaggi per verificare l’autorizzazione della cartella in Windows Server 2016 per AEM Forms PDFG
 
-*Questo video illustra i passaggi aggiuntivi per verificare le autorizzazioni per le cartelle in Windows Server 2016.*
+*Questo video illustra i passaggi aggiuntivi per controllare le autorizzazioni per le cartelle in Windows Server 2016.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335519?quality=12&learn=on)

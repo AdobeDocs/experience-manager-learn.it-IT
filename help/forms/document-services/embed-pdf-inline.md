@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Un caso d’uso comune è la visualizzazione di un documento PDF con i dati immessi dal compilatore del modulo.
 
-Per eseguire questo caso d’uso abbiamo utilizzato [API di incorporamento Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
+Per eseguire questo caso d&#39;uso è stata utilizzata l&#39;[API di incorporamento Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html).
 
 Per completare l’integrazione sono stati eseguiti i seguenti passaggi
 
@@ -31,7 +31,7 @@ Per completare l’integrazione sono stati eseguiti i seguenti passaggi
 
 ## Libreria client
 
-Il seguente codice viene eseguito quando `viewPDF` clic sul pulsante della casella di controllo. I dati del modulo adattivo e il nome del modello vengono passati all’endpoint per generare il pdf. Il pdf generato viene quindi visualizzato nel compilatore di moduli utilizzando la libreria JavaScript PDF da incorporare.
+Il codice seguente viene eseguito quando si fa clic sul pulsante di selezione `viewPDF`. I dati del modulo adattivo e il nome del modello vengono passati all’endpoint per generare il pdf. Il pdf generato viene quindi visualizzato nel compilatore di moduli utilizzando la libreria JavaScript PDF incorporata.
 
 ```javascript
 $(document).ready(function() {
@@ -93,31 +93,32 @@ $(document).ready(function() {
 
 ## Generare XSD dai dati xml
 
-È possibile utilizzare uno qualsiasi degli strumenti online gratuiti per [genera XSD](https://www.freeformatter.com/xsd-generator.html) dai dati xml generati nel passaggio precedente.
+Puoi utilizzare uno degli strumenti online gratuiti per [generare XSD](https://www.freeformatter.com/xsd-generator.html) dai dati xml generati nel passaggio precedente.
 
 ## Carica il modello
 
-Assicurati di caricare il modello xdp in [AEM Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) utilizzo del pulsante crea
+Assicurati di caricare il modello xdp in [AEM Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) utilizzando il pulsante Crea
 
 
 ## Creare un modulo adattivo
 
 Crea un modulo adattivo basato sull’XSD del passaggio precedente.
-Aggiungi una nuova scheda all’adattatore. Aggiungi un componente casella di controllo e un componente pdf da incorporare a questa scheda Assicurati di denominare la vista casella di controllo PDF.
+Aggiungi una nuova scheda all’adattatore. Aggiungi un componente casella di controllo e un componente pdf da incorporare a questa scheda
+Accertatevi di denominare la casella di controllo viewPDF.
 Configura il componente incorpora-pdf come illustrato nella schermata seguente
-![embed-pdf](assets/embed-pdf-configuration.png)
+![pdf-incorporato](assets/embed-pdf-configuration.png)
 
-**Incorpora chiave API PDF** : questa è la chiave che puoi utilizzare per incorporare il PDF. Questa chiave funziona solo con localhost. Puoi creare [la tua chiave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) e associarlo ad un altro dominio.
+**Incorpora chiave API PDF**: è la chiave che puoi utilizzare per incorporare il PDF. Questa chiave funziona solo con localhost. Puoi creare [la tua chiave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) e associarla ad un altro dominio.
 
-**Endpoint che restituisce il PDF** : questo è il servlet personalizzato che unirà i dati con il modello xdp e restituirà il pdf.
+**Endpoint che restituisce il pdf**: questo è il servlet personalizzato che unirà i dati con il modello xdp e restituirà il pdf.
 
-**Nome modello** : percorso dell’xdp. In genere, viene memorizzato nella cartella formsanddocuments.
+**Nome modello** - Percorso dell&#39;XDP. In genere, viene memorizzato nella cartella formsanddocuments.
 
-**Nome file PDF** : stringa che verrà visualizzata nel componente pdf da incorporare.
+**Nome file PDF**: stringa che verrà visualizzata nel componente pdf incorporato.
 
 ## Creare un servlet personalizzato
 
-È stato creato un servlet personalizzato per unire i dati con il modello XDP e restituire il pdf. Il codice per eseguire questa operazione è elencato di seguito. Il servlet personalizzato fa parte del [bundle incorporpdf](assets/embedpdf.core-1.0-SNAPSHOT.jar)
+È stato creato un servlet personalizzato per unire i dati con il modello XDP e restituire il pdf. Il codice per eseguire questa operazione è elencato di seguito. Il servlet personalizzato fa parte del [bundle embedded pdf](assets/embedpdf.core-1.0-SNAPSHOT.jar)
 
 ```java
 import java.io.ByteArrayInputStream;
@@ -227,9 +228,9 @@ public class StreamPDFToEmbed extends SlingAllMethodsServlet {
 
 Per eseguire il test sul server locale, attieniti alla seguente procedura:
 
-1. [Scaricare e installare il bundle di incorporpdf](assets/embedpdf.core-1.0-SNAPSHOT.jar).
+1. [Scarica e installa il bundle di incorporpdf](assets/embedpdf.core-1.0-SNAPSHOT.jar).
 Questo ha il servlet per unire i dati con il modello XDP e riportare in streaming il pdf.
-1. Aggiungi il percorso /bin/getPDFToEmbed nella sezione dei percorsi esclusi del filtro CSRF di Granite di Adobe utilizzando [ConfigMgr AEM](http://localhost:4502/system/console/configMgr). Nell’ambiente di produzione si consiglia di utilizzare il [Framework di protezione CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
+1. Aggiungere il percorso /bin/getPDFToEmbed nella sezione percorsi esclusi del filtro CSRF di Adobe Granite utilizzando [AEM ConfigMgr](http://localhost:4502/system/console/configMgr). Nell&#39;ambiente di produzione è consigliabile utilizzare il [framework di protezione CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
 1. [Importare la libreria client e il componente personalizzato](assets/embed-pdf.zip)
 1. [Importare il modulo e il modello adattivo](assets/embed-pdf-form-and-xdp.zip)
 1. [Anteprima modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)

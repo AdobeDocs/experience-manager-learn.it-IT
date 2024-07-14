@@ -23,7 +23,7 @@ ht-degree: 7%
 
 Una visione consolidata dei meccanismi di autenticazione (e occasionalmente di autorizzazione) supportati dall’AEM.
 
-*La tabella seguente descrive come gli utenti possono autenticarsi in AEM.*
+*Nella tabella seguente viene descritto come gli utenti possono eseguire l&#39;autenticazione in AEM.*
 
 <table>
     <tbody>
@@ -95,4 +95,4 @@ Una visione consolidata dei meccanismi di autenticazione (e occasionalmente di a
     </tbody>
 </table>
 
-⁕ *Forniti tramite progetti della community, ma non direttamente supportati dall’Adobe.*
+⁕ *Fornito tramite progetti community, ma non direttamente supportato dall&#39;Adobe.*

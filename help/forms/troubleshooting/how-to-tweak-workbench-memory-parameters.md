@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Come modificare i parametri di memoria di Workbench
 
-*Questo video illustra come modificare i parametri di memoria di Workbench.*
+*Questo video illustra il processo di modifica dei parametri di memoria di Workbench .*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335509?quality=12&learn=on)

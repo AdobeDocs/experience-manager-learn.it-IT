@@ -23,10 +23,10 @@ Nella versione precedente di AEM Form(6.5), era necessario scrivere un codice pe
 
 Questo articolo illustra i passaggi necessari per precompilare/precompilare un modulo adattivo con dati recuperati dall’elenco di SharePoint utilizzando il servizio di precompilazione del modello dati del modulo.
 
-Questo articolo presuppone che tu abbia [modulo adattivo configurato correttamente per inviare dati all’elenco SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
+In questo articolo si presuppone che [il modulo adattivo sia stato configurato correttamente per l&#39;invio di dati all&#39;elenco di SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
 
 Di seguito sono riportati i dati dell&#39;elenco SharePoint
-![sharepoint-list](assets/list-data.png)
+![elenco SharePoint](assets/list-data.png)
 
 Per precompilare un modulo adattivo con i dati associati a un determinato GUID, è necessario eseguire i seguenti passaggi
 
@@ -44,11 +44,11 @@ Il servizio GET completamente configurato si presenta così
 ## Configurare il modulo adattivo per l’utilizzo del servizio di precompilazione del modello di dati del modulo
 
 * Apri un modulo adattivo basato sul modello dati del modulo elenco punti di condivisione. Associa il servizio di precompilazione del modello di dati del modulo
-  ![form-prefill-service](assets/form-prefill-service.png)
+  ![modulo-precompilato-servizio](assets/form-prefill-service.png)
 
 ## Testare il modulo
 
-Visualizzare l’anteprima del modulo includendo `submissionid` nell’URL, come illustrato di seguito
+Visualizza l&#39;anteprima del modulo includendo `submissionid` nell&#39;URL come mostrato di seguito
 
 ```html
 http://localhost:4502/content/dam/formsanddocuments/contactusform/jcr:content?wcmmode=disabled&submissionid=57e12249-751a-4a38-a81f-0a4422b24412

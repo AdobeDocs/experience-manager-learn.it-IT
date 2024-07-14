@@ -24,7 +24,7 @@ In questo articolo, consideriamo le e-mail come un meccanismo di consegna per il
 
 Diamo un’occhiata al seguente frammento di codice. Questo codice fa parte di GET.jsp che viene attivato quando l’utente fa clic sul collegamento nell’e-mail per visualizzare il documento del canale web. Otteniamo l’utente connesso utilizzando l’UserManager di jackrabbit. Una volta ottenuto l’utente connesso, viene visualizzato il valore della proprietà accountNumber associata al profilo dell’utente.
 
-Associamo quindi il valore accountNumber a una chiave denominata accountnumber nella mappa. Chiave **numero account** è definito nel modale dei dati del modulo come un attributo di richiesta. Il valore di questo attributo viene passato come parametro di input al metodo del servizio di lettura modale dati modulo.
+Associamo quindi il valore accountNumber a una chiave denominata accountnumber nella mappa. La chiave **accountnumber** è definita nel modale dei dati del modulo come un attributo di richiesta. Il valore di questo attributo viene passato come parametro di input al metodo del servizio di lettura modale dati modulo.
 
 Riga 7: stiamo inviando la richiesta ricevuta a un altro servlet, in base al tipo di risorsa identificato dall’URL del documento di comunicazione interattiva. La risposta restituita da questo secondo servlet è inclusa nella risposta del primo servlet.
 
@@ -42,8 +42,8 @@ wrapperRequest.getRequestDispatcher("/content/forms/af/401kstatement/irastatemen
 
 Rappresentazione visiva del codice della riga 7
 
-![Configurazione del parametro di richiesta](assets/requestparameter.png)
+![Configurazione parametro richiesta](assets/requestparameter.png)
 
 Attributo richiesta definito per il servizio di lettura del modale dati modulo
 
-[Esempio di pacchetto AEM](assets/webchanneldelivery.zip).
+[Pacchetto AEM di esempio](assets/webchanneldelivery.zip).

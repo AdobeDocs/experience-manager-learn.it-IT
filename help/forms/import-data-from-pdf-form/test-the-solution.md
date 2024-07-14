@@ -20,7 +20,7 @@ ht-degree: 0%
 Puoi distribuire le risorse di esempio per far funzionare questa soluzione nell’istanza AEM Forms locale
 
 * [Importa la libreria client e il componente personalizzato per caricare il modulo pdf tramite Gestione pacchetti](./assets/client-libs-custom-component.zip)
-* Scarica e distribuisci il bundle utilizzando la console web OSGi[Bundle servizi documenti personalizzati](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* Scarica e distribuisci il bundle utilizzando la console web OSGi [Sviluppo con Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* Scarica e distribuisci il bundle utilizzando la console web OSGi[importa dati da file pdf](./assets/onlineToOffline.core-1.0.0-SNAPSHOT.jar)
-* Aggiungi la voce _**DevelopingWithServiceUser.core:getresourceresolver=data**_ nel _**Servizio User Mapper di Apache Sling**_ Console di configurazione OSGi
+* Scarica e distribuisci il bundle utilizzando la console Web OSGi[Bundle servizi documentali personalizzati](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* Scarica e distribuisci il bundle utilizzando la console Web OSGi [Sviluppo con Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* Scarica e distribuisci il bundle utilizzando la console Web OSGi[importa dati dal file pdf](./assets/onlineToOffline.core-1.0.0-SNAPSHOT.jar)
+* Aggiungi la voce _**DevelopingWithServiceUser.core:getresourceresolver=data**_ nella console di configurazione OSGi _**Apache Sling Service User Mapper Service**_

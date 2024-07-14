@@ -16,7 +16,7 @@ ht-degree: 20%
 
 {{edge-delivery-services}}
 
-Adobe Experience Manager (AEM) Assets è uno strumento di gestione delle risorse digitali su AEM Platform che consente agli utenti di creare, gestire e condividere le proprie risorse digitali (immagini, video, documenti e clip audio) in un archivio basato su web. La presente guida utente contiene video e tutorial sulle numerose funzioni e caratteristiche di AEM Assets.
+Adobe Experience Manager (AEM) Assets è uno strumento di gestione delle risorse digitali su AEM Platform che consente agli utenti di creare, gestire e condividere le proprie risorse digitali (immagini, video, documenti e clip audio) in un archivio basato su Web. La presente guida utente contiene video e tutorial sulle numerose funzioni e caratteristiche di AEM Assets.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_assets_overview"
@@ -48,7 +48,7 @@ Scopri AEM Assets e come utilizzarlo per raggiungere gli obiettivi aziendali del
    </a>
    <div>
       <a href="./creative-workflows/aem-desktop-app.md">
-      <strong>Utilizzo dell’app desktop AEM</strong>
+      <strong>Utilizzo dell'app desktop AEM</strong>
       </a>
    </div>
    <p>
@@ -61,11 +61,11 @@ Scopri AEM Assets e come utilizzarlo per raggiungere gli obiettivi aziendali del
    </a>
    <div>
       <a href="../assets-essentials/overview.md">
-      <strong>Introduzione agli Assets Essentials</strong>
+      <strong>Guida introduttiva agli Assets Essentials</strong>
       </a>
    </div>
    <p>
-      <em>Accelera la creazione di esperienze dal concetto alla progettazione fino alla consegna.</em>
+      <em>Accelera la creazione dell'esperienza dal concetto alla progettazione fino alla consegna.</em>
    <p>
 </td>
 <td>
@@ -78,7 +78,7 @@ Scopri AEM Assets e come utilizzarlo per raggiungere gli obiettivi aziendali del
       </a>
    </div>
    <p>
-      <em>Gestire e accedere ai contenuti multimediali tramite Dynamic Medie</em>
+      <em>Gestione e accesso ai contenuti multimediali tramite Dynamic Medie</em>
    <p>
 </td>
 </table>

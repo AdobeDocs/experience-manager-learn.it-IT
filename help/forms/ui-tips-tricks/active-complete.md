@@ -27,16 +27,25 @@ Se disponi di un modulo adattivo con navigazione a sinistra nella scheda, potreb
 ## Creare un modulo adattivo
 
 Per creare il modulo di esempio è stato utilizzato un semplice modulo adattivo basato sul modello Base e sul tema Canvas 3.0.
-Il [icone utilizzate in questo articolo](assets/icons.zip) può essere scaricato da qui.
+Le [icone utilizzate in questo articolo](assets/icons.zip) possono essere scaricate da qui.
 
 
 ## Personalizzare lo stile dello stato predefinito
 
-Apri il modulo in modalità di modifica Accertati di trovarti nel livello di stile e seleziona una scheda qualsiasi (ad esempio la scheda Generale).
+Apri il modulo in modalità di modifica
+Accertatevi di trovarvi nel livello di stile e selezionate una scheda qualsiasi (ad esempio la scheda Generale).
 Lo stato predefinito si trova quando apri l’editor di stili per la scheda, come illustrato nella schermata seguente
-![navigation-tab](assets/navigation-tab.png)
+![scheda di navigazione](assets/navigation-tab.png)
 
-Imposta le proprietà CSS per lo stato predefinito come mostrato di seguito | Categoria | Nome proprietà | Valore proprietà | |:—|:—|:—| | Dimension e posizione | Larghezza | 50 px | | Testo | Spessore font| Bold | | Testo | Colore | #FFF | |Testo | Altezza riga| 3 | |Testo | Allineamento testo | Sinistra | |Contesto| Colore | #056dae |
+Imposta le proprietà CSS per lo stato predefinito come mostrato di seguito
+| Categoria | Nome proprietà  |  Valore proprietà |
+|:—|:—|:—|
+| Dimension e posizione | Larghezza | 50 px |
+| Testo | Spessore font| Bold |
+| Testo | Colore | #FFF |
+|Testo | Altezza riga| 3 |
+|Testo  | Allineamento testo | Sinistra |
+|Contesto| Colore | #056dae |
 
 Salva le modifiche
 
@@ -59,7 +68,7 @@ Salva le modifiche.
 
 
 
-![stato attivo](assets/active-state.png)
+![stato-attivo](assets/active-state.png)
 
 ## Personalizzare lo stile dello stato visitato
 

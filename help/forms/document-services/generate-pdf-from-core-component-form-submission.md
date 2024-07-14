@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Ecco il testo rivisto con l’iniziale maiuscola &quot;Componenti core&quot;:
 
-Uno scenario tipico prevede la generazione di un PDF dai dati inviati tramite un modulo adattivo basato su Componenti core. Questi dati sono sempre in formato JSON. Per generare un PDF utilizzando l’API di Render PDF, è necessario convertire i dati JSON in formato XML. Il `toString` metodo di `org.json.XML` viene utilizzato per questa conversione. Per ulteriori informazioni, consulta [documentazione di `org.json.XML.toString` metodo](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-).
+Uno scenario tipico prevede la generazione di un PDF dai dati inviati tramite un modulo adattivo basato su Componenti core. Questi dati sono sempre in formato JSON. Per generare un PDF utilizzando l’API di Render PDF, è necessario convertire i dati JSON in formato XML. Per questa conversione viene utilizzato il metodo `toString` di `org.json.XML`. Per ulteriori dettagli, fare riferimento alla [documentazione del metodo `org.json.XML.toString`](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-).
 
 ## Moduli adattivi basati su schema JSON
 
@@ -35,15 +35,15 @@ Per semplificare il processo, segui questi passaggi perfezionati:
 1. Passa a &quot;File&quot; > &quot;Proprietà modulo&quot; > &quot;Anteprima&quot;.
 1. Seleziona &quot;Generate Preview Data&quot; (Genera dati anteprima).
 1. Fai clic su &quot;Genera&quot;.
-1. Assegna un nome file significativo, ad esempio `form-data.xml`.
+1. Assegnare un nome file significativo, ad esempio `form-data.xml`.
 
 ### Genera schema JSON dai dati XML
 
-È possibile utilizzare qualsiasi strumento online gratuito per [convertire XML in JSON](https://jsonformatter.org/xml-to-jsonschema) utilizzando i dati XML generati nel passaggio precedente.
+Puoi utilizzare qualsiasi strumento online gratuito per [convertire XML in JSON](https://jsonformatter.org/xml-to-jsonschema) utilizzando i dati XML generati nel passaggio precedente.
 
 ### Processo di flusso di lavoro personalizzato per convertire JSON in XML
 
-Il codice fornito converte JSON in XML, memorizzando l’XML risultante in una variabile di processo del flusso di lavoro denominata `dataXml`.
+Il codice fornito converte JSON in XML, memorizzando l&#39;XML risultante in una variabile di processo del flusso di lavoro denominata `dataXml`.
 
 ```java
 import org.slf4j.LoggerFactory;
@@ -119,9 +119,9 @@ Per gestire l’invio di un modulo, crea un flusso di lavoro che includa due pas
 
 Per eseguire il test sul server locale, segui questi passaggi semplificati:
 
-1. [Scarica e installa il bundle personalizzato tramite la console web OSGi dell’AEM](assets/convertJsonToXML.core-1.0.0-SNAPSHOT.jar).
-1. [Importare il pacchetto del flusso di lavoro](assets/workflow_to_render_pdf.zip).
-1. [Importare il modulo adattivo di esempio e il modello XDP](assets/adaptive_form_and_xdp_template.zip).
+1. [Scarica e installa il bundle personalizzato tramite la console Web OSGi dell&#39;AEM](assets/convertJsonToXML.core-1.0.0-SNAPSHOT.jar).
+1. [Importa il pacchetto del flusso di lavoro](assets/workflow_to_render_pdf.zip).
+1. [Importa il modulo adattivo di esempio e il modello XDP](assets/adaptive_form_and_xdp_template.zip).
 1. [Anteprima del modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/f23/jcr:content?wcmmode=disabled).
 1. Completa alcuni campi modulo.
 1. Invia il modulo per avviare il flusso di lavoro AEM.

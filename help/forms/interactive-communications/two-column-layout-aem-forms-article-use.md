@@ -28,9 +28,9 @@ Di seguito sono riportati i passaggi di alto livello per la creazione di layout 
 * Crea una seconda pagina master con un&#39;area di contenuto (impostazione predefinita)
 * Selezionare la scheda di impaginazione (Sottomaschera senza titolo) (pagina 1) e (Sottomaschera senza titolo) (pagina 2) e impostare le proprietà come mostrato nelle schermate seguenti.
 
-![page1](assets/untitledsubform_paginationproperties.gif)
+![pagina1](assets/untitledsubform_paginationproperties.gif)
 
-![page2](assets/untitled_subformpage2.gif)
+![pagina2](assets/untitled_subformpage2.gif)
 
 Una volta impostate le proprietà di impaginazione, è possibile aggiungere sottomaschere o aree di destinazione in (Sottomaschera senza titolo) (pagina 1).
 
@@ -39,4 +39,4 @@ Una volta impostate le proprietà di impaginazione, è possibile aggiungere sott
 Per eseguire il test sul server locale, scarica le risorse correlate a questo articolo. Scorri verso il basso fino alla parte inferiore della pagina
 
 * [Scarica e installa Sample Print Channel Document utilizzando Gestione pacchetti](assets/print-channel-with-two-column-layout.zip)
-* [Anteprima del documento Canale di stampa](http://localhost:4502/content/dam/formsanddocuments/2columnlayout/jcr:content?channel=print&amp;mode=preview&amp;dataRef=service%3A%2F%2FFnDTestData&amp;wcmmode=disabled)
+* [Anteprima documento canale di stampa](http://localhost:4502/content/dam/formsanddocuments/2columnlayout/jcr:content?channel=print&amp;mode=preview&amp;dataRef=service%3A%2F%2FFnDTestData&amp;wcmmode=disabled)

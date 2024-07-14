@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Passaggi per abilitare la traccia della traccia in configurazione Unix
 
-*Questo video illustra i passaggi per abilitare la traccia dello strace nella configurazione Unix per AEM Forms PDFG.*
+*Questo video illustra i passaggi necessari per abilitare la traccia dello strace nella configurazione Unix per AEM Forms PDFG.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335525?quality=12&learn=on)

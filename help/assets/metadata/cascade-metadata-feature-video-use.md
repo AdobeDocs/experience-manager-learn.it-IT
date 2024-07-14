@@ -27,8 +27,8 @@ La gestione avanzata dei metadati consente agli utenti di creare regole di campi
 
 Per un determinato campo di metadati è possibile abilitare tre set di regole dinamiche:
 
-1. **Requisito** : un campo può essere contrassegnato dinamicamente come necessario per essere basato sul valore di un altro campo a discesa.
+1. **Requisito**: un campo può essere contrassegnato dinamicamente come obbligatorio in base al valore di un altro campo a discesa.
 
-2. **Visibilità** : i campi possono sempre essere visibili o solo visibili in base al valore di un altro campo a discesa.
+2. **Visibilità**: i campi possono essere sempre visibili o visibili solo in base al valore di un altro campo a discesa.
 
-3. **Scelte** : (applicabile solo ai campi a discesa) filtra le scelte mostrate all’utente in base al valore attualmente selezionato di un altro campo a discesa.
+3. **Scelte** : (applicabile solo ai campi a discesa) filtra le scelte mostrate all&#39;utente in base al valore attualmente selezionato di un altro campo a discesa.

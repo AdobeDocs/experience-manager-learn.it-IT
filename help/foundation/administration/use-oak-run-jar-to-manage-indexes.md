@@ -1,6 +1,6 @@
 ---
 title: Utilizzare oak-run.jar per gestire gli indici
-description: Il comando index di oak-run.jar consolida una serie di funzioni per la gestione degli indici Oak in AEM, dalla raccolta delle statistiche sugli indici all'esecuzione di controlli di coerenza degli indici e alla reindicizzazione degli stessi indici.
+description: Il comando index di oak-run.jar consolida una serie di funzioni per la gestione degli indici Oak nell’AEM, dalla raccolta delle statistiche sugli indici all’esecuzione di controlli di coerenza degli indici fino alla reindicizzazione degli stessi indici.
 version: 6.4, 6.5
 feature: Search
 doc-type: Technical Video
@@ -18,18 +18,18 @@ ht-degree: 0%
 
 # Utilizzare oak-run.jar per gestire gli indici
 
-[!DNL oak-run.jar]Il comando index consolida una serie di funzionalità da gestire [!DNL Oak]200 indici in AEM, dalla raccolta delle statistiche sugli indici, all&#39;esecuzione di controlli di coerenza degli indici e alla reindicizzazione degli stessi indici.
+Il comando index di [!DNL oak-run.jar] consolida una serie di funzionalità per la gestione degli indici [!DNL Oak]200 in AEM, dalla raccolta delle statistiche sugli indici, all&#39;esecuzione di verifiche di coerenza degli indici e alla reindicizzazione degli stessi indici.
 
 >[!NOTE]
 >
 >In questo articolo e nei video i termini indicizzazione e reindicizzazione sono utilizzati in modo intercambiabile e vengono considerati come la stessa operazione.
 
-## [!DNL oak-run.jar] informazioni di base sui comandi index
+## Nozioni di base sui comandi dell&#39;indice [!DNL oak-run.jar]
 
 >[!VIDEO](https://video.tv.adobe.com/v/21475?quality=12&learn=on)
 
-* Versione di [[!DNL oak-run.jar]](https://repository.apache.org/service/local/artifact/maven/redirect?r=releases&amp;g=org.apache.jackrabbit&amp;a=oak-run&amp;v=1.8.0) La versione di Oak utilizzata deve corrispondere alla versione di Oak utilizzata nell’istanza AEM.
-* Gestione degli indici tramite [!DNL oak-run.jar] sfrutta **[!DNL index]** con diversi flag per supportare diverse operazioni.
+* La versione di [[!DNL oak-run.jar]](https://repository.apache.org/service/local/artifact/maven/redirect?r=releases&amp;g=org.apache.jackrabbit&amp;a=oak-run&amp;v=1.8.0) utilizzata deve corrispondere alla versione di Oak utilizzata nell&#39;istanza AEM.
+* La gestione degli indici tramite [!DNL oak-run.jar] sfrutta il comando **[!DNL index]** con vari flag per supportare diverse operazioni.
 
    * `java -jar oak-run*.jar index ...`
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/21477?quality=12&learn=on)
 
-* `oak-run.jar` esegue il dump di tutte le definizioni di indice, delle statistiche di indice importanti e del contenuto dell’indice per l’analisi offline.
+* `oak-run.jar` esegue il dump di tutte le definizioni di indice, delle statistiche di indice importanti e del contenuto di indice per l&#39;analisi offline.
 * La raccolta delle statistiche dell’indice è sicura per l’esecuzione sulle istanze AEM in uso.
 
 ## Verifica coerenza indice
@@ -47,34 +47,34 @@ ht-degree: 0%
 * `oak-run.jar` determina rapidamente se gli indici Oak Lucene sono danneggiati.
 * La verifica di coerenza può essere eseguita in modo sicuro sull’istanza AEM in uso per i livelli di verifica di coerenza 1 e 2.
 
-## Indicizzazione online di TarMK con [!DNL oak-run.jar] {#tarmkonlineindexingwithoakrunjar}
+## Indicizzazione TarMK Online con [!DNL oak-run.jar] {#tarmkonlineindexingwithoakrunjar}
 
 >[!VIDEO](https://video.tv.adobe.com/v/21479?quality=12&learn=on)
 
-* Indicizzazione online di [!DNL TarMK] utilizzo [!DNL oak-run.jar] è più veloce dell&#39;impostazione `reindex=true` il `oak:queryIndexDefinition` nodo. Nonostante questo aumento delle prestazioni, l’indicizzazione online tramite [!DNL oak-run.jar] richiede comunque una finestra di manutenzione per eseguire l’indicizzazione.
+* L&#39;indicizzazione online di [!DNL TarMK] tramite [!DNL oak-run.jar] è più veloce dell&#39;impostazione di `reindex=true` nel nodo `oak:queryIndexDefinition`. Nonostante questo aumento delle prestazioni, l&#39;indicizzazione online con [!DNL oak-run.jar] richiede ancora una finestra di manutenzione per eseguire l&#39;indicizzazione.
 
-* Indicizzazione online di [!DNL TarMK] utilizzo [!DNL oak-run.jar] dovrebbe **non** essere eseguita in relazione alle istanze AEM al di fuori della finestra di manutenzione delle istanze AEM.
+* L&#39;indicizzazione online di [!DNL TarMK] utilizzando [!DNL oak-run.jar] deve **non** essere eseguita su istanze AEM al di fuori della finestra di manutenzione delle istanze AEM.
 
 ## Indicizzazione offline di TarMK con oak-run.jar
 
 >[!VIDEO](https://video.tv.adobe.com/v/21478?quality=12&learn=on)
 
-* Indicizzazione offline di [!DNL TarMK] utilizzo [!DNL oak-run.jar] è il più semplice [!DNL oak-run.jar] approccio basato sull’indicizzazione per [!DNL TarMK] in quanto richiede un singolo [!DNL oak-run.jar] tuttavia richiede la chiusura dell&#39;istanza AEM.
+* L&#39;indicizzazione offline di [!DNL TarMK] tramite [!DNL oak-run.jar] è l&#39;approccio di indicizzazione basato su [!DNL oak-run.jar] più semplice per [!DNL TarMK] in quanto richiede un singolo comando [!DNL oak-run.jar], ma richiede la chiusura dell&#39;istanza AEM.
 
 ## Indicizzazione fuori banda di TarMK con oak-run.jar
 
 >[!VIDEO](https://video.tv.adobe.com/v/21480?quality=12&learn=on)
 
-* Indicizzazione fuori banda su [!DNL TarMK] utilizzo [!DNL oak-run.jar] riduce al minimo l’impatto dell’indicizzazione sulle istanze AEM in uso.
+* L&#39;indicizzazione fuori banda in [!DNL TarMK] con [!DNL oak-run.jar] riduce al minimo l&#39;impatto dell&#39;indicizzazione sulle istanze AEM in uso.
 * L’indicizzazione fuori banda è l’approccio consigliato per le installazioni AEM in cui il tempo di reindicizzazione supera le finestre di manutenzione disponibili.
 
 ## Indicizzazione online di MongoMK con oak-run.jar
 
-* Indice online con [!DNL oak-run.jar] il [!DNL MongoMK] e [!DNL RDBMK] è il metodo consigliato per la reindicizzazione [!DNL MongoMK] (e [!DNL RDBMK]) installazioni AEM. **Nessun altro metodo deve essere utilizzato per [!DNL MongoMK] o [!DNL RDBMK].**
+* L&#39;indice online con [!DNL oak-run.jar] in [!DNL MongoMK] e [!DNL RDBMK] è il metodo consigliato per la reindicizzazione di [!DNL MongoMK] (e [!DNL RDBMK]) installazioni AEM. **Nessun altro metodo deve essere utilizzato per [!DNL MongoMK] o [!DNL RDBMK].**
 * Questa indicizzazione deve essere eseguita solo su una singola istanza AEM nel cluster.
-* Indicizzazione online di [!DNL MongoMK] è sicuro da eseguire su un cluster AEM in esecuzione, in quanto l’attraversamento dell’archivio si verifica su un solo [!DNL MongoDB] consentendo agli altri utenti di continuare a soddisfare le richieste senza un impatto significativo sulle prestazioni.
+* L&#39;indicizzazione online di [!DNL MongoMK] è sicura per un cluster AEM in esecuzione, poiché l&#39;attraversamento dell&#39;archivio si verifica solo su un singolo nodo [!DNL MongoDB], consentendo agli altri di continuare a servire le richieste senza un impatto significativo sulle prestazioni.
 
-Il [!DNL oak-run.jar] comando index per eseguire un&#39;indicizzazione online di [!DNL MongoMK] è il [uguale al [!DNL TarMK] Indicizzazione online con [!DNL oak-run.jar]](#tarmkonlineindexingwithoakrunjar) con la differenza che il parametro dell’archivio segmenti punta al [!DNL MongoDB] istanza che contiene l’archivio Nodi.
+Il comando [!DNL oak-run.jar] per l&#39;indicizzazione in linea di [!DNL MongoMK] è [uguale all&#39;indicizzazione in linea di  [!DNL TarMK] con [!DNL oak-run.jar]](#tarmkonlineindexingwithoakrunjar), con la differenza che il parametro dell&#39;archivio segmenti punta all&#39;istanza di [!DNL MongoDB] che contiene l&#39;archivio nodi.
 
 ```
 java -jar oak-run*.jar index
@@ -87,5 +87,5 @@ java -jar oak-run*.jar index
 ## Materiali di supporto
 
 * [Scarica [!DNL oak-run.jar]](https://repository.apache.org/#nexus-search;gav~org.apache.jackrabbit~oak-run~~~~kw,versionexpand)
-   * *Assicurati che la versione scaricata corrisponda alla versione di Oak installata su AEM come descritto in precedenza*
-* [Documentazione del comando di indice Apache Jackrabbit Oak-run.jar](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html)
+   * *Verificare che la versione scaricata corrisponda alla versione di Oak installata nell&#39;AEM come descritto in precedenza*
+* [Documentazione comando indice Apache Jackrabbit Oak oak-run.jar](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html)

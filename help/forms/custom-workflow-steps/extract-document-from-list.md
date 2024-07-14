@@ -31,7 +31,7 @@ Questo articolo illustra i passaggi necessari per utilizzare il componente del f
 * Variabile di tipo Document.(Questa variabile contiene il documento estratto da ArrayList)
 
 * Aggiungi il componente personalizzato al flusso di lavoro e configurane le proprietà
-  ![extract-item-workflow](assets/extract-document-array-list.png)
+  ![estrarre-elemento-flusso di lavoro](assets/extract-document-array-list.png)
 
 ## Configurare un modulo adattivo
 
@@ -48,7 +48,7 @@ Questo articolo illustra i passaggi necessari per utilizzare il componente del f
 
 [Importare il modulo adattivo](assets/test-attachment-extractions-adaptive-form.zip)
 
-[Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/testattachmentsextractions/jcr:content?wcmmode=disabled)
+[Anteprima modulo](http://localhost:4502/content/dam/formsanddocuments/testattachmentsextractions/jcr:content?wcmmode=disabled)
 
 Aggiungere un allegato al modulo e inviarlo.
 

@@ -1,5 +1,5 @@
 ---
-title: Memorizzazione e recupero dei dati del modulo dal database MySQL - Configura origine dati
+title: Memorizzazione e recupero dei dati del modulo dal database MySQL - Configurare Data Source
 description: Tutorial in più parti per illustrare i passaggi necessari per l’archiviazione e il recupero dei dati del modulo
 version: 6.4,6.5
 feature: Adaptive Forms
@@ -15,13 +15,13 @@ ht-degree: 1%
 
 ---
 
-# Configura origine dati
+# Configurare Data Source
 
-Esistono molti modi in cui l’AEM consente l’integrazione con il database esterno. Una delle procedure più comuni e standard per l’integrazione del database è l’utilizzo delle proprietà di configurazione dell’origine dati in pool di connessione Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
-Il primo passaggio consiste nel scaricare e implementare la [Driver MySql](https://mvnrepository.com/artifact/mysql/mysql-connector-java) nell&#39;AEM.
+Esistono molti modi in cui l’AEM consente l’integrazione con il database esterno. Una delle procedure più comuni e standard per l&#39;integrazione del database consiste nell&#39;utilizzo delle proprietà di configurazione DataSource in pool di connessione Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
+Il primo passaggio consiste nel scaricare e distribuire i [driver MySql](https://mvnrepository.com/artifact/mysql/mysql-connector-java) appropriati in AEM.
 Crea un’origine dati in pool di connessione Apache Sling e fornisci le proprietà come specificato nella schermata seguente. Lo schema di database viene fornito come parte di queste risorse di esercitazione.
 
-![data-source](assets/save-continue.PNG)
+![origine dati](assets/save-continue.PNG)
 
 Database dispone di una tabella denominata formdata con le tre colonne, come illustrato nella schermata seguente.
 
@@ -30,7 +30,7 @@ Database dispone di una tabella denominata formdata con le tre colonne, come ill
 Il file SQL per creare lo schema può essere [scaricato da qui](assets/form-data-db.sql). Per creare lo schema e la tabella, è necessario importare il file utilizzando MySql Workbench.
 
 >[!NOTE]
->Assegna un nome all’origine dati **SaveAndContinue**. Il codice di esempio utilizza il nome per connettersi al database.
+>Assicurati di denominare l&#39;origine dati **SaveAndContinue**. Il codice di esempio utilizza il nome per connettersi al database.
 
 | Nome proprietà | Valore |
 | ------------------------|---------------------------------------|

@@ -20,7 +20,7 @@ ht-degree: 0%
 # Testare la soluzione
 
 Dopo la distribuzione del codice, crea un modulo adattivo basato sui componenti core. Associa il modulo adattivo al servizio di precompilazione come mostrato nella schermata seguente.
-![preriempimento-servizio](assets/pre-fill-service.png)
+![servizio di precompilazione](assets/pre-fill-service.png)
 
 Ogni volta che viene eseguito il rendering del modulo, viene eseguito il servizio di precompilazione associato e il modulo viene compilato con i dati restituiti dal servizio di precompilazione.
 

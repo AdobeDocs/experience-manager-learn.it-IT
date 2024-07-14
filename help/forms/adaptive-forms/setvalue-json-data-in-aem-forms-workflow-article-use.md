@@ -45,23 +45,23 @@ Per distribuire le risorse sul sistema locale:
 * [Scarica e distribuisci il bundle setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Questo è il bundle OSGI personalizzato che ti consente di impostare i valori di un elemento nei dati JSON inviati.
 
 * [Scarica ed estrai il contenuto del file zip](assets/set-value-jsondata.zip)
-   * Puntare il browser a [gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+   * Puntare il browser a [Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
       * Importa e installa SetValueOfElementInJSONDataWorkflow.zip.Questo pacchetto include il modello di flusso di lavoro di esempio e il modello dati del modulo associati al modulo.
 
 * Puntare il browser a [Forms e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Fai clic su Crea. | Caricamento file
 * Carica il file TimeOffRequestForm.zip
   **Questo modulo è stato creato con AEM Forms 6.4. Assicurati di utilizzare AEM Forms 6.4 o versione successiva**
-* Apri [modulo](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
+* Apri il [modulo](http://localhost:4502/content/dam/formsanddocuments/timeoffrequest/jcr:content?wcmmode=disabled)
 * Compila le date di inizio e fine e invia il modulo.
-* Vai a [&quot;Casella in entrata&quot;](http://localhost:4502/aem/inbox)
+* Vai a [&quot;Posta in arrivo&quot;](http://localhost:4502/aem/inbox)
 * Aprire il modulo associato all&#39;attività.
 * Osserva che i campi nel primo pannello sono disattivati.
 * Osserva che ora è visibile il pannello per approvare o rifiutare la richiesta.
 
 >[!NOTE]
 >
->Poiché stiamo precompilando il modulo adattivo utilizzando il profilo utente, assicurati che l’amministratore [informazioni profilo utente](http://localhost:4502/security/users.html). Assicurati almeno di aver impostato i valori dei campi Nome, Cognome ed E-mail.
+>Poiché il modulo adattivo viene precompilato utilizzando il profilo utente, assicurati che l&#39;amministratore [fornisca informazioni sul profilo utente](http://localhost:4502/security/users.html). Assicurati almeno di aver impostato i valori dei campi Nome, Cognome ed E-mail.
 >Puoi abilitare la registrazione di debug abilitando il logger per com.aemforms.setvalue.core.SetValueInJson [da qui](http://localhost:4502/system/console/slinglog)
 
 >[!NOTE]

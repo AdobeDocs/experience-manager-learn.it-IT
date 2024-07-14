@@ -23,9 +23,9 @@ ht-degree: 0%
 
 Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Questa applicazione server-to-server illustra come eseguire query sui contenuti che utilizzano le API GraphQL dell’AEM utilizzando query persistenti e stamparle sul terminale.
 
-![App server-to-server Node.js con AEM Headless](./assets/server-to-server-app/server-to-server-app.png)
+![App server-to-server Node.js con AEM headless](./assets/server-to-server-app/server-to-server-app.png)
 
-Visualizza [codice sorgente su GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server)
+Visualizza il [codice sorgente in GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server)
 
 ## Prerequisiti {#prerequisites}
 
@@ -36,16 +36,16 @@ I seguenti strumenti devono essere installati localmente:
 
 ## Requisiti AEM
 
-L’applicazione Node.js funziona con le seguenti opzioni di distribuzione AEM. Tutte le distribuzioni richiedono [Sito WKND v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) da installare.
+L’applicazione Node.js funziona con le seguenti opzioni di distribuzione AEM. Tutte le distribuzioni richiedono l&#39;installazione del sito [WKND v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest).
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ Facoltativamente [credenziali del servizio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) se si autorizzano richieste (ad esempio, connessione al servizio di authoring AEM).
++ Facoltativamente, [credenziali del servizio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) se si autorizzano le richieste (ad esempio, la connessione al servizio di creazione AEM).
 
 Questa applicazione Node.js può connettersi a AEM Author o AEM Publish in base ai parametri della riga di comando.
 
 ## Come usare
 
-1. Clona il `adobe/aem-guides-wknd-graphql` archivio:
+1. Clona l&#39;archivio `adobe/aem-guides-wknd-graphql`:
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
@@ -64,7 +64,7 @@ Questa applicazione Node.js può connettersi a AEM Author o AEM Publish in base 
    $ node index.js <AEM_HOST> <OPTIONAL_SERVICE_CONFIG_FILE_PATH>
    ```
 
-   Ad esempio, per eseguire l’app su Pubblicazione AEM senza autorizzazione:
+   Ad esempio, per eseguire l’app su AEM Publish senza autorizzazione:
 
    ```shell
    $ node index.js https://publish-p123-e789.adobeaemcloud.com
@@ -80,7 +80,7 @@ Questa applicazione Node.js può connettersi a AEM Author o AEM Publish in base 
 
 ## Il codice
 
-Di seguito è riportato un riepilogo della modalità di creazione dell’applicazione Node.js server-to-server, della connessione a AEM Headless per il recupero di contenuti tramite query persistenti GraphQL e della modalità di presentazione di tali dati. Il codice completo è disponibile su [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server).
+Di seguito è riportato un riepilogo della modalità di creazione dell’applicazione Node.js server-to-server, della connessione a AEM Headless per il recupero di contenuti tramite query persistenti GraphQL e della modalità di presentazione di tali dati. Il codice completo si trova su [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server).
 
 Il caso d’uso comune per le app AEM headless server-to-server prevede la sincronizzazione dei dati dei frammenti di contenuto dall’AEM in altri sistemi. Tuttavia questa applicazione è intenzionalmente semplice e stampa i risultati JSON dalla query persistente.
 
@@ -88,7 +88,7 @@ Il caso d’uso comune per le app AEM headless server-to-server prevede la sincr
 
 Seguendo le best practice di AEM Headless, l’applicazione utilizza le query persistenti AEM GraphQL per eseguire query sui dati dell’avventura. L’applicazione utilizza due query persistenti:
 
-+ `wknd/adventures-all` query persistente, che restituisce tutte le avventure in AEM con un set abbreviato di proprietà. Questa query persistente guida l’elenco di avventure della visualizzazione iniziale.
++ Query persistente `wknd/adventures-all`, che restituisce tutte le avventure in AEM con un set abbreviato di proprietà. Questa query persistente guida l’elenco di avventure della visualizzazione iniziale.
 
 ```
 # Retrieves a list of all Adventures
@@ -163,9 +163,9 @@ async function run() {
 
 ### Esegui query persistente GraphQL
 
-Le query persistenti dell’AEM vengono eseguite tramite HTTP GET, pertanto [Client AEM headless per Node.js](https://github.com/adobe/aem-headless-client-nodejs) viene utilizzato per [eseguire le query GraphQL persistenti;](https://github.com/adobe/aem-headless-client-nodejs#within-asyncawait) contro l’AEM e recupera il contenuto dell’avventura.
+Le query persistenti dell&#39;AEM vengono eseguite tramite HTTP GET. Pertanto, il client [AEM Headless per Node.js](https://github.com/adobe/aem-headless-client-nodejs) viene utilizzato per [eseguire le query GraphQL persistenti](https://github.com/adobe/aem-headless-client-nodejs#within-asyncawait) contro l&#39;AEM e recupera il contenuto dell&#39;avventura.
 
-La query persistente viene richiamata chiamando `aemHeadlessClient.runPersistedQuery(...)`e passando il nome della query GraphQL persistente. Una volta che GraphQL restituisce i dati, trasmettili al `doSomethingWithDataFromAEM(..)` , che stampa i risultati, ma in genere invia i dati a un altro sistema o genera un output in base ai dati recuperati.
+La query persistente viene richiamata chiamando `aemHeadlessClient.runPersistedQuery(...)` e passando il nome della query GraphQL persistente. Una volta che GraphQL restituisce i dati, passarli alla funzione `doSomethingWithDataFromAEM(..)` semplificata, che stampa i risultati, ma in genere invia i dati a un altro sistema o genera un output in base ai dati recuperati.
 
 ```js
 // index.js

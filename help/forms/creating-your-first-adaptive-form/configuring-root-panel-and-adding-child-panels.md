@@ -25,7 +25,7 @@ Aggiungete i pannelli secondari al pannello principale.
 >[!VIDEO](https://video.tv.adobe.com/v/28536?quality=12&learn=on)
 
 >[!NOTE]
->Quando aggiungi pannelli secondari al pannello principale, **Assicurati di essere in modalità di modifica. Il pulsante Modifica si trova in alto a destra nel browser.**
+>Quando aggiungi pannelli secondari al pannello principale, **Assicurati di essere in modalità di modifica. Il pulsante Modifica si trova nella parte superiore destra del browser.**
 
 ## Passaggi successivi
 

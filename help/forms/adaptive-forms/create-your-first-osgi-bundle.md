@@ -24,44 +24,44 @@ Un bundle OSGi è un file di archivio Java™ che contiene codice Java, risorse 
 
 ## Installare JDK
 
-Installa la versione supportata di JDK. Ho usato JDK1.8. Assicurati di aver aggiunto **JAVA_HOME** nelle variabili di ambiente e punta alla cartella principale dell’installazione JDK.
+Installa la versione supportata di JDK. Ho usato JDK1.8. Assicurati di aver aggiunto **JAVA_HOME** nelle variabili di ambiente e di puntare alla cartella principale dell&#39;installazione JDK.
 Aggiungere %JAVA_HOME%/bin al percorso
 
-![data-source](assets/java-home.JPG)
+![origine dati](assets/java-home.JPG)
 
 >[!NOTE]
 > Non usi JDK 15. Non è supportato dall&#39;AEM.
 
 ### Verifica la versione JDK
 
-Aprire una nuova finestra del prompt dei comandi e digitare: `java -version`. Dovresti recuperare la versione di JDK identificata da `JAVA_HOME` variabile
+Aprire una nuova finestra del prompt dei comandi e digitare: `java -version`. È necessario recuperare la versione di JDK identificata dalla variabile `JAVA_HOME`
 
-![data-source](assets/java-version.JPG)
+![origine dati](assets/java-version.JPG)
 
 ## Installare Maven
 
 Maven è uno strumento di automazione della build utilizzato principalmente per i progetti Java. Per installare Maven nel sistema locale, segui la procedura riportata di seguito.
 
 * Crea una cartella denominata `maven` nell&#39;unità C
-* Scarica il file [archivio zip binario](http://maven.apache.org/download.cgi)
-* Estrai il contenuto dell’archivio zip in `c:\maven`
-* Creare una variabile di ambiente denominata `M2_HOME` con un valore di `C:\maven\apache-maven-3.6.0`. Nel mio caso, il **mvn** versione 3.6.0. Al momento di scrivere questo articolo, l’ultima versione di Maven è la 3.6.3
-* Aggiungi il `%M2_HOME%\bin` al percorso
+* Scarica l&#39;[archivio zip binario](http://maven.apache.org/download.cgi)
+* Estrai il contenuto dell&#39;archivio zip in `c:\maven`
+* Creare una variabile di ambiente denominata `M2_HOME` con valore `C:\maven\apache-maven-3.6.0`. Nel mio caso, la versione **mvn** è 3.6.0. Al momento di scrivere questo articolo, l’ultima versione di Maven è la 3.6.3
+* Aggiungi `%M2_HOME%\bin` al tuo percorso
 * Salva le modifiche
-* Apri un nuovo prompt dei comandi e digita `mvn -version`. Dovresti visualizzare **mvn** versione elencata come mostrato nella schermata seguente
+* Aprire un nuovo prompt dei comandi e digitare in `mvn -version`. Dovresti vedere la versione **mvn** elencata come mostrato nella schermata seguente
 
-![data-source](assets/mvn-version.JPG)
+![origine dati](assets/mvn-version.JPG)
 
 ## Settings.xml
 
-A Maven `settings.xml` definisce i valori che configurano l’esecuzione Maven in vari modi. Nella maggior parte dei casi viene utilizzato per definire una posizione di repository locale, server di repository remoti alternativi e informazioni di autenticazione per gli archivi privati.
+Un file Maven `settings.xml` definisce valori che configurano l’esecuzione Maven in vari modi. Nella maggior parte dei casi viene utilizzato per definire una posizione di repository locale, server di repository remoti alternativi e informazioni di autenticazione per gli archivi privati.
 
-Accedi a `C:\Users\<username>\.m2 folder`
-Estrai il contenuto di [settings.zip](assets/settings.zip) e inseriscilo nel file `.m2` cartella.
+Passa a `C:\Users\<username>\.m2 folder`
+Estrarre il contenuto del file [settings.zip](assets/settings.zip) e inserirlo nella cartella `.m2`.
 
 ## Installare Eclipse
 
-Installa la versione più recente di [eclissi](https://www.eclipse.org/downloads/)
+Installa la versione più recente di [eclipse](https://www.eclipse.org/downloads/)
 
 ## Crea il primo progetto
 
@@ -87,37 +87,38 @@ Se tutto va bene, dovresti visualizzare un messaggio di generazione riuscita nel
 
 ## Crea un progetto di eclissi dal progetto Maven
 
-Cambiare la directory di lavoro in `learningaemforms`.
-In esecuzione `mvn eclipse:eclipse` dalla riga di comando Il comando precedente legge il file POM e crea progetti Eclipse con metadati corretti in modo che Eclipse comprenda i tipi di progetto, le relazioni, il classpath e così via.
+Cambia la directory di lavoro in `learningaemforms`.
+Esecuzione di `mvn eclipse:eclipse` dalla riga di comando
+Il comando precedente legge il file pom e crea progetti Eclipse con metadati corretti, in modo che Eclipse comprenda i tipi di progetto, le relazioni, il percorso di classe e così via.
 
 ## Importa il progetto nell&#39;eclissi
 
-Launch **Eclipse**
+Avvia **Eclipse**
 
 Vai a **File -> Importa** e seleziona **Progetti Maven esistenti** come mostrato qui
 
-![data-source](assets/import-mvn-project.JPG)
+![origine dati](assets/import-mvn-project.JPG)
 
 Fai clic su Successivo
 
-Seleziona la `c:\aemformsbundles\learningaemform`s facendo clic sul pulsante **Sfoglia** pulsante
+Selezionare `c:\aemformsbundles\learningaemform` facendo clic sul pulsante **Sfoglia**
 
-![data-source](assets/select-mvn-project.JPG)
+![origine dati](assets/select-mvn-project.JPG)
 
 >[!NOTE]
 >Puoi scegliere di importare i moduli appropriati in base alle tue esigenze. Seleziona e importa solo il modulo core, se desideri creare solo codice Java nel progetto.
 
-Clic **Fine** per avviare il processo di importazione
+Fai clic su **Fine** per avviare il processo di importazione
 
-Il progetto viene importato in Eclipse e vengono visualizzati diversi `learningaemforms.xxxx` cartelle
+Il progetto viene importato in Eclipse e sono presenti diverse `learningaemforms.xxxx` cartelle
 
-Espandi `src/main/java` sotto `learningaemforms.core` cartella. Questa è la cartella in cui si sta scrivendo la maggior parte del codice.
+Espandere `src/main/java` nella cartella `learningaemforms.core`. Questa è la cartella in cui si sta scrivendo la maggior parte del codice.
 
-![data-source](assets/learning-core.JPG)
+![origine dati](assets/learning-core.JPG)
 
 ## Creare il progetto
 
-Dopo aver scritto il servizio OSGi, o servlet, devi creare il progetto per generare il bundle OSGi che può essere distribuito utilizzando la console web Felix. Fare riferimento a [AEMFD Client SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) per includere l’SDK client appropriato nel progetto Maven. È necessario includere l’SDK del client AEM FD nella sezione delle dipendenze di `pom.xml` del progetto principale, come illustrato di seguito.
+Dopo aver scritto il servizio OSGi, o servlet, devi creare il progetto per generare il bundle OSGi che può essere distribuito utilizzando la console web Felix. Fai riferimento a [AEMFD Client SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) per includere l&#39;SDK client appropriato nel progetto Maven. È necessario includere l&#39;SDK del client AEM FD nella sezione delle dipendenze di `pom.xml` del progetto principale, come illustrato di seguito.
 
 ```xml
 <dependency>
@@ -130,6 +131,6 @@ Dopo aver scritto il servizio OSGi, o servlet, devi creare il progetto per gener
 Per creare il progetto, effettua le seguenti operazioni:
 
 * Apri **finestra del prompt dei comandi**
-* Accedi a `c:\aemformsbundles\learningaemforms\core`
+* Passa a `c:\aemformsbundles\learningaemforms\core`
 * Esegui il comando `mvn clean install`
 Se tutto va bene, dovresti vedere il bundle nella seguente posizione `C:\AEMFormsBundles\learningaemforms\core\target`. Questo pacchetto è ora pronto per essere implementato in AEM utilizzando la console web Felix.

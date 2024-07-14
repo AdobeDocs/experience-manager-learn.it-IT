@@ -1,6 +1,6 @@
 ---
 title: Credenziali del servizio AEM Forms
-description: Scarica le credenziali del servizio da AEM Developer Console.
+description: Scarica le credenziali del servizio dal Developer Console dell’AEM.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Credenziali del servizio AEM Forms
 
-Le integrazioni con AEM as a Cloud Service devono essere in grado di autenticarsi in modo sicuro nell’AEM. La console per sviluppatori AEM genera le credenziali del servizio, utilizzate da applicazioni, sistemi e servizi esterni per interagire in modo programmatico con i servizi di creazione o pubblicazione AEM tramite HTTP.
+Le integrazioni con AEM as a Cloud Service devono essere in grado di eseguire l’autenticazione all’AEM in modo sicuro. Il Developer Console dell’AEM genera le Credenziali di servizio, che vengono utilizzate da applicazioni, sistemi e servizi esterni per interagire in modo programmatico con i servizi AEM Author o Publish tramite HTTP.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 

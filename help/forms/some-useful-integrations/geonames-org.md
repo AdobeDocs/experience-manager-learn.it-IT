@@ -25,40 +25,41 @@ Un elenco a discesa a cascata è una serie di controlli DropDownList dipendenti 
 
 >[!VIDEO](https://video.tv.adobe.com/v/340344?quality=12&learn=on)
 
-Ai fini di questa esercitazione, ho utilizzato [API REST Geonames](https://www.geonames.org/export/web-services.html) per dimostrare questa capacità.
+Ai fini di questa esercitazione, ho utilizzato [API REST Geonames](https://www.geonames.org/export/web-services.html) per dimostrare questa funzionalità.
 Esistono diverse organizzazioni che forniscono questo tipo di servizio e, purché dispongano di API REST ben documentate, puoi facilmente integrarle con AEM Forms utilizzando la funzionalità di integrazione dei dati
 
 Sono stati seguiti i seguenti passaggi per implementare gli elenchi a discesa a cascata in AEM Forms
 
 ## Crea account sviluppatore
 
-Creare un account sviluppatore con [Geonames](https://www.geonames.org/login). Prendi nota del nome utente. Questo nome utente è necessario per richiamare le API REST di geonames.org.
+Crea un account sviluppatore con [Geonames](https://www.geonames.org/login). Prendi nota del nome utente. Questo nome utente è necessario per richiamare le API REST di geonames.org.
 
 ## Crea file Swagger/OpenAPI
 
 OpenAPI Specification (precedentemente Swagger Specification) è un formato di descrizione API per le API REST. Un file OpenAPI ti consente di descrivere l’intera API, tra cui:
 
 * Endpoint disponibili (/users) e operazioni su ciascun endpoint (GET /users, POST /users)
-* Parametri di operazione Input e output per ogni operazione Metodi di autenticazione
+* Parametri di funzionamento Input e output per ogni operazione
+Metodi di autenticazione
 * Informazioni di contatto, licenza, condizioni d’uso e altre informazioni.
 * Le specifiche API possono essere scritte in YAML o JSON. Il formato è facile da imparare e leggibile sia per gli esseri umani che per le macchine.
 
-Per creare il primo file swagger/OpenAPI, segui la [Documentazione di OpenAPI](https://swagger.io/docs/specification/2-0/basic-structure/)
+Per creare il primo file swagger/OpenAPI, segui la [documentazione OpenAPI](https://swagger.io/docs/specification/2-0/basic-structure/)
 
 >[!NOTE]
 > AEM Forms supporta la versione 2.0 delle specifiche OpenAPI (FKA Swagger).
 
-Utilizza il [editor swagger](https://editor.swagger.io/) creare il file swagger per descrivere le operazioni che consentono di recuperare tutti i paesi e gli elementi figlio del paese o dello stato. Il file swagger può essere creato in formato JSON o YAML.
+Utilizza l&#39;[editor Swagger](https://editor.swagger.io/) per creare il file Swagger e descrivere le operazioni di recupero di tutti i paesi e degli elementi figlio del paese o dello stato. Il file swagger può essere creato in formato JSON o YAML.
 
 ## Creare origini dati
 
-Per integrare AEM/AEM Forms con applicazioni di terze parti, è necessario [crea origine dati](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) nella configurazione dei servizi cloud. Utilizza il [file swagger](assets/geonames-swagger-files.zip) per creare le origini dati.
+Per integrare AEM/AEM Forms con applicazioni di terze parti, è necessario [creare l&#39;origine dati](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) nella configurazione dei servizi cloud. Utilizza i [file Swagger](assets/geonames-swagger-files.zip) per creare le tue origini dati.
 Dovrai creare 2 origini dati (una per recuperare tutti i paesi e l’altra per ottenere elementi figlio)
 
 
 ## Crea modello dati modulo
 
-L’integrazione dei dati di AEM Forms offre un’interfaccia utente intuitiva per la creazione e l’utilizzo di [modelli dati modulo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Basare il modello dati del modulo sulle origini dati create nel passaggio precedente. Modello dati modulo con 2 origini dati
+L&#39;integrazione dei dati di AEM Forms fornisce un&#39;interfaccia utente intuitiva per la creazione e l&#39;utilizzo di [modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Basare il modello dati del modulo sulle origini dati create nel passaggio precedente. Modello dati modulo con 2 origini dati
 
 ![fdm](assets/geonames-fdm.png)
 
@@ -84,11 +85,12 @@ Aggiungi 2 elenchi a discesa denominati contee e città nel modulo per elencare 
 ![esercizio](assets/cascading-drop-down-exercise.png)
 
 
-### Risorse di esempio
+### Assets di esempio
 
-È possibile scaricare le seguenti risorse per iniziare subito a creare l’esempio di elenco a discesa a cascata I file Swagger completati possono essere scaricati da [qui](assets/geonames-swagger-files.zip)
+Scarica le seguenti risorse per iniziare subito a creare l’esempio dell’elenco a discesa a cascata
+I file Swagger completati possono essere scaricati da [qui](assets/geonames-swagger-files.zip)
 I file swagger descrivono la seguente API REST
 * [Ottieni tutti i paesi](https://secure.geonames.org/countryInfoJSON?username=yourusername)
 * [Ottieni elementi figlio dell&#39;oggetto Geoname](https://secure.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
 
-Il completamento [Il modello dati del modulo può essere scaricato da qui](assets/geonames-api-form-data-model.zip)
+Il [modello dati modulo completato può essere scaricato da qui](assets/geonames-api-form-data-model.zip)

@@ -38,11 +38,11 @@ Image serving è probabilmente la funzione più utilizzata di Dynamic Media Clas
 
 In questa guida verranno illustrate le seguenti funzionalità principali di Dynamic Media Classic.
 
-- **Dynamic Imaging.** Il termine principale per la modifica in tempo reale, la formattazione e il dimensionamento, lo zoom e la panoramica interattivi; il colore e il campione di trama; 360 gradi di rotazione; modelli di immagine; e visualizzatori multimediali.
+- **Dynamic Imaging.** Il termine generale per la modifica in tempo reale, la formattazione e il ridimensionamento, lo zoom e la panoramica interattivi, il colore e il campione di texture, la rotazione a 360 gradi, i modelli di immagine e i visualizzatori multimediali.
 - **Video.** Carica i video finali, pubblicali e scaricali progressivamente in visualizzatori video configurabili.
-- **Imaging avanzato.** Tecnologia che sfrutta le funzionalità di intelligenza artificiale di Adobe Sensei e funziona con i &quot;predefiniti immagine&quot; esistenti per migliorare le prestazioni di consegna delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
+- **Imaging avanzato.Tecnologia** che sfrutta le funzionalità di intelligenza artificiale di Adobe Sensei e funziona con i &quot;predefiniti immagine&quot; esistenti per migliorare le prestazioni di consegna delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
 
-Per scoprire le funzionalità aggiuntive della soluzione, visita il [Documentazione di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
+Per scoprire ulteriori funzionalità della soluzione, visita la [documentazione di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
 
 ## Interfaccia utente di Dynamic Media Classic
 
@@ -50,26 +50,26 @@ L’interfaccia utente principale di Dynamic Media Classic è costituita da tre 
 
 ![immagine](assets/overview/overview-dmc-ui-ew.png)
 
-_Interfaccia utente Dynamic Media Classic_
+_Interfaccia utente di Dynamic Media Classic_
 
-**Barra di navigazione globale.** Nella parte superiore dello schermo, puoi utilizzare i pulsanti di questa barra per accedere alle aree e alle funzionalità chiave della soluzione. Ad esempio, lo utilizzerai per accedere alle funzionalità di caricamento, aprire varie aree di creazione risorse (set di immagini, set 360 gradi, ecc.), eseguire attività importanti come la configurazione di predefiniti immagine e predefiniti visualizzatore e pubblicare le risorse. Da qui puoi anche monitorare i tuoi processi, vedere le attività recenti e scegliere tra una varietà di opzioni di aiuto.
+**Barra di spostamento globale.** Nella parte superiore dello schermo, utilizzerai i pulsanti di questa barra per accedere alle aree e alle funzionalità chiave della soluzione. Ad esempio, lo utilizzerai per accedere alle funzionalità di caricamento, aprire varie aree di creazione risorse (set di immagini, set 360 gradi, ecc.), eseguire attività importanti come la configurazione di predefiniti immagine e predefiniti visualizzatore e pubblicare le risorse. Da qui puoi anche monitorare i tuoi processi, vedere le attività recenti e scegliere tra una varietà di opzioni di aiuto.
 
-**Libreria risorse.** Sul lato sinistro dello schermo è posizionato il pannello Libreria risorse, che consente di organizzare le risorse in cartelle e sottocartelle create dall’utente. Nella parte superiore del pannello, trovi i filtri di ricerca che facilitano l’individuazione delle risorse. La ricerca avanzata ti consente di eseguire ricerche specificando più opzioni come criteri per la ricerca, inclusi i campi di metadati nascosti associati a tale risorsa. Nella parte inferiore del pannello, puoi visualizzare gli elementi eliminati facendo clic sull’icona Cestino. Inizialmente, non si inizia con alcuna cartella, tranne la cartella di livello superiore, che ha lo stesso nome del nome account.
+**Libreria risorse.** Sul lato sinistro dello schermo è posizionato il pannello Libreria risorse, che consente di organizzare le risorse in cartelle e sottocartelle create dall&#39;utente. Nella parte superiore del pannello, trovi i filtri di ricerca che facilitano l’individuazione delle risorse. La ricerca avanzata ti consente di eseguire ricerche specificando più opzioni come criteri per la ricerca, inclusi i campi di metadati nascosti associati a tale risorsa. Nella parte inferiore del pannello, puoi visualizzare gli elementi eliminati facendo clic sull’icona Cestino. Inizialmente, non si inizia con alcuna cartella, tranne la cartella di livello superiore, che ha lo stesso nome del nome account.
 
 >[!NOTE]
 >
->Le risorse nel Cestino verranno eliminate automaticamente in modo permanente sette giorni dopo l’inserimento, a meno che non vengano ripristinate.
+>Assets nel Cestino verrà eliminato automaticamente in modo permanente sette giorni dopo che sono stati messi lì a meno che non li ripristini.
 
-**Sfoglia/Genera pannello.** Questo è il centro dell’interfaccia utente, dove sfoglierai le risorse in modalità Sfoglia oppure, se è attiva la modalità Build, la utilizzerai come area di lavoro per la creazione di risorse come parte di un flusso di lavoro. Al primo accesso viene visualizzato il pannello Sfoglia. Al centro dello schermo sono presenti le versioni in miniatura delle immagini in visualizzazione Griglia. È possibile passare a una vista a elenco oppure selezionare una risorsa e visualizzarne i dettagli utilizzando la vista Dettaglio.
+**Sfoglia/Genera pannello.** Questo è il centro dell&#39;interfaccia utente, dove sfoglierai le risorse in modalità Sfoglia oppure, se è attiva la modalità Build, la utilizzerai come area di lavoro per la creazione di risorse come parte di un flusso di lavoro. Al primo accesso viene visualizzato il pannello Sfoglia. Al centro dello schermo sono presenti le versioni in miniatura delle immagini in visualizzazione Griglia. È possibile passare a una vista a elenco oppure selezionare una risorsa e visualizzarne i dettagli utilizzando la vista Dettaglio.
 
 >[!IMPORTANT]
 >
->Accanto a ogni ID risorsa è presente **Contrassegna per pubblicazione** switch. Quando l’interruttore è attivato (verde), questo indica che la risorsa è contrassegnata per la pubblicazione.
+>Accanto a ogni ID risorsa è presente l&#39;opzione **Contrassegna per Publish**. Quando l’interruttore è attivato (verde), questo indica che la risorsa è contrassegnata per la pubblicazione.
 
 ![immagine](assets/overview/overview-mark-for-publish.png)
 
 >[!TIP]
 >
->Seleziona la **Pubblica dopo il caricamento** nella finestra di dialogo Carica per pubblicare automaticamente le risorse al momento del caricamento.
+>Seleziona la casella di controllo **Publish dopo il caricamento** nella finestra di dialogo Carica per pubblicare automaticamente le risorse al momento del caricamento.
 
-Ulteriori informazioni su [Navigazione nell’interfaccia di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).
+Ulteriori informazioni su [Navigazione nell&#39;interfaccia utente di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).

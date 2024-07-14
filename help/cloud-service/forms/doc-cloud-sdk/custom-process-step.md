@@ -20,7 +20,8 @@ ht-degree: 0%
 
 # Passaggio processo personalizzato
 
-Di seguito è riportato il codice completo del passaggio del processo personalizzato che converte e sostituisce i file nativi con i file PDF convertiti. Questo passaggio personalizzato cerca tutti gli allegati sotto il nome della cartella fornito come argomento del processo nel flusso di lavoro.
+Di seguito è riportato il codice completo del passaggio del processo personalizzato che converte e sostituisce i file nativi con i file PDF convertiti.
+Questo passaggio personalizzato cerca tutti gli allegati sotto il nome della cartella fornito come argomento del processo nel flusso di lavoro.
 Questo passaggio del processo personalizzato utilizza i metodi del servizio DocumentCloudSDKService personalizzato per la creazione di PDF.
 
 

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Passaggi per configurare i localizzatori di incendio in un cluster ed eseguire la configurazione correlata
 
-*Questo video illustra i passaggi necessari per configurare i localizzatori di falò in un cluster ed eseguire la configurazione correlata.*
+*Questo video illustra i passaggi necessari per configurare i localizzatori di falsi in un cluster ed eseguire la configurazione correlata.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335544?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Strumento trasferimento contenuti
-description: Scopri come lo strumento Content Transfer consente di spostare in modo efficiente il contenuto da AEM 6.5 a AEM as a Cloud Service.
+description: Scopri come lo strumento Content Transfer consente di spostare in modo efficiente il contenuto da AEM 6.5 ad AEM as a Cloud Service.
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -19,6 +19,6 @@ ht-degree: 13%
 
 # Strumento trasferimento contenuti
 
-Scopri come lo strumento Content Transfer consente di spostare in modo efficiente il contenuto da AEM 6.5 a AEM as a Cloud Service.
+Scopri come lo strumento Content Transfer consente di spostare in modo efficiente il contenuto da AEM 6.5 ad AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336692?quality=12&learn=on)

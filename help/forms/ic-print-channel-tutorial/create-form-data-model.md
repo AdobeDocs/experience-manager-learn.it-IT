@@ -22,11 +22,11 @@ ht-degree: 0%
 
 In questa parte verrà creato il modello dati modulo. Il modello dati modulo consente di configurare e connettersi a diverse origini dati. Fornisce un’interfaccia utente intuitiva per creare uno schema di rappresentazione dei dati unificato di entità e servizi aziendali tra origini dati connesse. Il video seguente illustra i passaggi per creare il modello dati del modulo.
 
-**Creazione di un modello di dati modulo in AEM Forms**
+**Creazione del modello dati modulo in AEM Forms**
 
 >[!VIDEO](https://video.tv.adobe.com/v/27763?quality=12&learn=on)
 
-Il modello dati del modulo dipende da un’origine dati configurata correttamente. Come base per questo modello dati modulo utilizziamo l’origine dati configurata nel passaggio precedente.
+Il modello dati del modulo dipende da un Source dati configurato correttamente. Utilizziamo il Data Source configurato nel passaggio precedente come base per questo modello di dati del modulo.
 
 Il modello dati modulo è la base di tutte le comunicazioni interattive. L’operazione Get/Read del modello dati modulo recupera i dati dall’origine dati backend e viene utilizzata per compilare il documento di comunicazioni interattive.
 

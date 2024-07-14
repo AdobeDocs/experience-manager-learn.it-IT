@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # Esplorare l’API GraphQL dell’AEM
 
-L’API GraphQL nell’AEM consente di esporre i dati dei frammenti di contenuto alle applicazioni a valle. Nell’esercitazione di base [tutorial su GraphQL in più passaggi](../multi-step/explore-graphql-api.md), hai utilizzato GraphiQL Explorer per testare e perfezionare le query GraphQL.
+L’API GraphQL nell’AEM consente di esporre i dati dei frammenti di contenuto alle applicazioni a valle. Nell&#39;esercitazione di base [esercitazione di GraphQL in più passaggi](../multi-step/explore-graphql-api.md), hai utilizzato GraphiQL Explorer per testare e perfezionare le query GraphQL.
 
-In questo capitolo, puoi utilizzare GraphiQL Explorer per definire query più avanzate per raccogliere dati dei frammenti di contenuto creati in [capitolo precedente](../advanced-graphql/author-content-fragments.md).
+In questo capitolo, puoi utilizzare GraphiQL Explorer per definire query più avanzate per raccogliere i dati dei frammenti di contenuto creati nel [capitolo precedente](../advanced-graphql/author-content-fragments.md).
 
 ## Prerequisiti {#prerequisites}
 
@@ -38,30 +38,30 @@ In questo capitolo imparerai a:
 ## Utilizzo di GraphiQL Explorer
 
 
-Il [GraphiQL Explorer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) consente agli sviluppatori di creare e testare query sui contenuti nell’ambiente AEM corrente. Lo strumento GraphiQL consente inoltre agli utenti di: **persistere o salvare** query che devono essere utilizzate dalle applicazioni client in un&#39;impostazione di produzione.
+Lo strumento [GraphiQL Explorer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) consente agli sviluppatori di creare e testare query sul contenuto nell&#39;ambiente AEM corrente. Lo strumento GraphiQL consente inoltre agli utenti di **salvare o mantenere** le query da utilizzare dalle applicazioni client in un&#39;impostazione di produzione.
 
-Quindi, esplora la potenza dell’API GraphQL dell’AEM utilizzando GraphiQL Explorer incorporato.
+Quindi, esplora la potenza dell’API GraphQL dell’AEM utilizzando l’Explorer GraphiQL integrato.
 
-1. Dalla schermata iniziale dell’AEM, passa a **Strumenti** > **Generale** > **Editor query di GraphQL**.
+1. Dalla schermata iniziale AEM, passa a **Strumenti** > **Generale** > **Editor query GraphQL**.
 
-   ![Passare all’IDE GraphiQL](assets/explore-graphql-api/navigate-graphql-query-editor.png)
+   ![Passa a IDE GraphiQL](assets/explore-graphql-api/navigate-graphql-query-editor.png)
 
 >[!IMPORTANT]
 >
->In, alcune versioni di AEM (6.X.X) lo strumento GraphiQL Explorer (alias IDE GraphiQL) devono essere installate manualmente, segui [istruzioni da qui](../how-to/install-graphiql-aem-6-5.md).
+>In, alcune versioni di AEM (6.X.X) lo strumento GraphiQL Explorer (o IDE GraphiQL) devono essere installate manualmente, segui [le istruzioni da qui](../how-to/install-graphiql-aem-6-5.md).
 
-1. Nell’angolo in alto a destra, accertati che Endpoint sia impostato su **Endpoint condiviso WKND**. Modifica del _Endpoint_ in questo campo viene visualizzato il valore esistente _Query persistenti_ nell’angolo in alto a sinistra.
+1. Nell&#39;angolo in alto a destra, accertarsi che l&#39;endpoint sia impostato su **Endpoint condiviso WKND**. Se si modifica il valore dell&#39;elenco a discesa _Endpoint_, nell&#39;angolo in alto a sinistra verranno visualizzate le _query persistenti_ esistenti.
 
    ![Imposta endpoint GraphQL](assets/explore-graphql-api/set-wknd-shared-endpoint.png)
 
-In questo modo tutte le query verranno estese ai modelli creati nel **WKND condiviso** progetto.
+Tutte le query verranno estese ai modelli creati nel progetto **WKND Shared**.
 
 
 ## Filtrare un elenco di frammenti di contenuto utilizzando le variabili di query
 
-Nel precedente [tutorial su GraphQL in più passaggi](../multi-step/explore-graphql-api.md), hai definito e utilizzato query persistenti di base per ottenere i dati dei frammenti di contenuto. In questo caso, espandi questa conoscenza e filtra i dati dei frammenti di contenuto passando le variabili alle query persistenti.
+Nell&#39;[esercitazione di GraphQL in più passaggi](../multi-step/explore-graphql-api.md) precedente hai definito e utilizzato query persistenti di base per ottenere i dati dei frammenti di contenuto. In questo caso, espandi questa conoscenza e filtra i dati dei frammenti di contenuto passando le variabili alle query persistenti.
 
-Durante lo sviluppo di applicazioni client, in genere è necessario filtrare i frammenti di contenuto in base a argomenti dinamici. L’API GraphQL dell’AEM consente di trasmettere questi argomenti come variabili in una query per evitare la costruzione di stringhe sul lato client in fase di esecuzione. Per ulteriori informazioni sulle variabili di GraphQL, vedi [Documentazione di GraphQL](https://graphql.org/learn/queries/#variables).
+Durante lo sviluppo di applicazioni client, in genere è necessario filtrare i frammenti di contenuto in base a argomenti dinamici. L’API GraphQL dell’AEM consente di trasmettere questi argomenti come variabili in una query per evitare la costruzione di stringhe sul lato client in fase di esecuzione. Per ulteriori informazioni sulle variabili di GraphQL, consulta la [documentazione di GraphQL](https://graphql.org/learn/queries/#variables).
 
 Per questo esempio, esegui una query su tutti gli Istruttori con una particolare abilità.
 
@@ -94,9 +94,9 @@ Per questo esempio, esegui una query su tutti gli Istruttori con una particolare
    }
    ```
 
-   Il `listPersonBySkill` la query precedente accetta una variabile (`skillFilter`) obbligatorio `String`. Questa query esegue una ricerca in tutti i frammenti di contenuto della persona e li filtra in base al `skills` e la stringa passata `skillFilter`.
+   La query `listPersonBySkill` di cui sopra accetta una variabile (`skillFilter`) che è un `String` obbligatorio. Questa query esegue una ricerca in tutti i frammenti di contenuto della persona e li filtra in base al campo `skills` e alla stringa passata in `skillFilter`.
 
-   Il `listPersonBySkill` include `contactInfo` , che è un riferimento frammento al modello Informazioni di contatto definito nei capitoli precedenti. Il modello Informazioni contatto contiene `phone` e `email` campi. Almeno uno di questi campi nella query deve essere presente per funzionare correttamente.
+   `listPersonBySkill` include la proprietà `contactInfo`, che è un riferimento frammento al modello Informazioni di contatto definito nei capitoli precedenti. Il modello Informazioni contatto contiene `phone` e `email` campi. Almeno uno di questi campi nella query deve essere presente per funzionare correttamente.
 
    ```graphql
    contactInfo {
@@ -105,7 +105,7 @@ Per questo esempio, esegui una query su tutti gli Istruttori con una particolare
          }
    ```
 
-1. Quindi, definiamo `skillFilter` e ottenere tutti gli Istruttori che sono esperti nello sci. Incolla la seguente stringa JSON nel pannello Variabili di query nell’IDE GraphiQL:
+1. Quindi, definiamo `skillFilter` e ottieni tutti gli istruttori esperti nello sci. Incolla la seguente stringa JSON nel pannello Variabili di query nell’IDE GraphiQL:
 
    ```json
    {
@@ -145,13 +145,13 @@ Per questo esempio, esegui una query su tutti gli Istruttori con una particolare
    }
    ```
 
-Premere il tasto **Play** nel menu principale per eseguire la query. Dovresti visualizzare i risultati dei frammenti di contenuto del capitolo precedente:
+Premi il pulsante **Riproduci** nel menu principale per eseguire la query. Dovresti visualizzare i risultati dei frammenti di contenuto del capitolo precedente:
 
 ![Risultati persona per abilità](assets/explore-graphql-api/person-by-skill.png)
 
 ## Filtrare il contenuto all’interno di un riferimento a un frammento
 
-L’API GraphQL dell’AEM consente di eseguire query sui frammenti di contenuto nidificati. Nel capitolo precedente, hai aggiunto tre nuovi riferimenti di frammento a un frammento di contenuto Adventure: `location`, `instructorTeam`, e `administrator`. Ora, filtriamo tutte le avventure per qualsiasi amministratore che ha un nome specifico.
+L’API GraphQL dell’AEM consente di eseguire query sui frammenti di contenuto nidificati. Nel capitolo precedente sono stati aggiunti tre nuovi riferimenti di frammento a un frammento di contenuto Adventure: `location`, `instructorTeam` e `administrator`. Ora, filtriamo tutte le avventure per qualsiasi amministratore che ha un nome specifico.
 
 >[!CAUTION]
 >
@@ -190,7 +190,7 @@ L’API GraphQL dell’AEM consente di eseguire query sui frammenti di contenuto
    }
    ```
 
-   Il `getAdventureAdministratorDetailsByAdministratorName` query filtra tutte le avventure per qualsiasi `administrator` di `fullName` &quot;Jacob Wester&quot;, che restituisce informazioni provenienti da due frammenti di contenuto nidificati: Adventure e Instructor.
+   La query `getAdventureAdministratorDetailsByAdministratorName` filtra tutte le avventure per qualsiasi `administrator` di `fullName` &quot;Jacob Wester&quot;, restituendo informazioni da due frammenti di contenuto nidificati: Avventura e Istruttore.
 
 1. Esegui la query. Il risultato dovrebbe essere simile al seguente:
 
@@ -230,7 +230,7 @@ L’API GraphQL dell’AEM consente di eseguire query sui frammenti di contenuto
 
 ## Eseguire una query per i riferimenti in linea da un campo di testo su più righe {#query-rte-reference}
 
-L’API GraphQL dell’AEM consente di eseguire query per contenuti e riferimenti a frammenti all’interno di campi di testo su più righe. Nel capitolo precedente, sono stati aggiunti entrambi i tipi di riferimento al **Descrizione** del frammento di contenuto del team di Yosemite. Ora, recuperiamo questi riferimenti.
+L’API GraphQL dell’AEM consente di eseguire query per contenuti e riferimenti a frammenti all’interno di campi di testo su più righe. Nel capitolo precedente, hai aggiunto entrambi i tipi di riferimento nel campo **Descrizione** del frammento di contenuto del team di Yosemite. Ora, recuperiamo questi riferimenti.
 
 1. Nell’IDE GraphiQL, incolla la seguente query nel pannello a sinistra:
 
@@ -276,13 +276,13 @@ L’API GraphQL dell’AEM consente di eseguire query per contenuti e riferiment
    }
    ```
 
-   Il `getTeamByAdventurePath` La query filtra tutte le avventure per percorso e restituisce i dati per `instructorTeam` riferimento frammento di una specifica avventura.
+   La query `getTeamByAdventurePath` filtra tutte le avventure in base al percorso e restituisce i dati per il riferimento al frammento `instructorTeam` di una specifica avventura.
 
    `_references` è un campo generato dal sistema e utilizzato per visualizzare riferimenti, inclusi quelli inseriti in campi di testo su più righe.
 
-   Il `getTeamByAdventurePath` query recupera più riferimenti. In primo luogo, utilizza il `ImageRef` oggetto da recuperare `_path` e `__typename` di immagini inserite come riferimenti di contenuto nel campo di testo su più righe. Quindi, utilizza `LocationModel` per recuperare i dati del frammento di contenuto Posizione inserito nello stesso campo.
+   La query `getTeamByAdventurePath` recupera più riferimenti. In primo luogo, utilizza l&#39;oggetto predefinito `ImageRef` per recuperare `_path` e `__typename` di immagini inserite come riferimenti al contenuto nel campo di testo su più righe. Quindi, utilizza `LocationModel` per recuperare i dati del frammento di contenuto della posizione inserito nello stesso campo.
 
-   La query include anche `_metadata` campo. Questo consente di recuperare il nome del frammento di contenuto del team e di visualizzarlo successivamente nell’app WKND.
+   La query include anche il campo `_metadata`. Questo consente di recuperare il nome del frammento di contenuto del team e di visualizzarlo successivamente nell’app WKND.
 
 1. Quindi, incolla la seguente stringa JSON nel pannello Variabili di query per ottenere l’avventura di backpacking di Yosemite:
 
@@ -344,14 +344,14 @@ L’API GraphQL dell’AEM consente di eseguire query per contenuti e riferiment
    }
    ```
 
-   Il `_references` mostra sia l’immagine del logo che il frammento di contenuto della Yosemite Valley Lodge inserito nel **Descrizione** campo.
+   Il campo `_references` mostra sia l&#39;immagine del logo che il frammento di contenuto della Loggia di Yosemite Valley inserito nel campo **Descrizione**.
 
 
 ## Eseguire query tramite direttive
 
-A volte, durante lo sviluppo di applicazioni client, è necessario modificare la struttura delle query in modo condizionale. In questo caso, l’API GraphQL dell’AEM consente di utilizzare le direttive GraphQL per modificare il comportamento delle query in base ai criteri forniti. Per ulteriori informazioni sulle direttive GraphQL, vedere [Documentazione di GraphQL](https://graphql.org/learn/queries/#directives).
+A volte, durante lo sviluppo di applicazioni client, è necessario modificare la struttura delle query in modo condizionale. In questo caso, l’API GraphQL dell’AEM consente di utilizzare le direttive GraphQL per modificare il comportamento delle query in base ai criteri forniti. Per ulteriori informazioni sulle direttive di GraphQL, consulta la [documentazione di GraphQL](https://graphql.org/learn/queries/#directives).
 
-In [sezione precedente](#query-rte-reference), hai imparato a eseguire query per i riferimenti in linea all’interno di campi di testo su più righe. Il contenuto è stato recuperato da `description` archiviato in `plaintext` formato. Quindi, espandiamo la query e utilizziamo una direttiva per recuperare in modo condizionale `description` nel `json` e.
+Nella [sezione precedente](#query-rte-reference), hai imparato a eseguire query per riferimenti in linea all&#39;interno di campi di testo su più righe. Il contenuto è stato recuperato dal campo `description` nel formato `plaintext`. Quindi, espandiamo la query e utilizziamo una direttiva per recuperare `description` in modo condizionale anche nel formato `json`.
 
 1. Nell’IDE GraphiQL, incolla la seguente query nel pannello a sinistra:
 
@@ -398,7 +398,7 @@ In [sezione precedente](#query-rte-reference), hai imparato a eseguire query per
    }
    ```
 
-   La query precedente accetta un’altra variabile (`includeJson`) obbligatorio `Boolean`, nota anche come direttiva della query. Una direttiva può essere utilizzata per includere in modo condizionale i dati provenienti da `description` campo in `json` formato basato sul valore booleano passato `includeJson`.
+   La query precedente accetta un&#39;altra variabile (`includeJson`) che è un `Boolean` obbligatorio, noto anche come direttiva della query. È possibile utilizzare una direttiva per includere in modo condizionale i dati del campo `description` nel formato `json` in base al valore booleano passato in `includeJson`.
 
 1. Quindi, incolla la seguente stringa JSON nel pannello Variabili di query:
 
@@ -409,9 +409,9 @@ In [sezione precedente](#query-rte-reference), hai imparato a eseguire query per
    }
    ```
 
-1. Esegui la query. Dovresti ottenere lo stesso risultato della sezione precedente su [come eseguire una query per i riferimenti in linea all’interno di campi di testo su più righe](#query-rte-reference).
+1. Esegui la query. Si dovrebbe ottenere lo stesso risultato ottenuto nella sezione precedente su [come eseguire una query per i riferimenti in linea all&#39;interno di campi di testo con più righe](#query-rte-reference).
 
-1. Aggiornare il `includeJson` direttiva a `true` ed esegui nuovamente la query. Il risultato dovrebbe essere simile al seguente:
+1. Aggiornare la direttiva `includeJson` in `true` ed eseguire di nuovo la query. Il risultato dovrebbe essere simile al seguente:
 
    ```json
    {
@@ -501,7 +501,7 @@ In [sezione precedente](#query-rte-reference), hai imparato a eseguire query per
 
 ## Query per il tipo di contenuto Oggetto JSON
 
-Ricorda che nel capitolo precedente sull’authoring dei frammenti di contenuto, hai aggiunto un oggetto JSON in **Meteo per stagione** campo. Ora recuperiamo tali dati all’interno del frammento di contenuto Posizione.
+Ricorda che nel capitolo precedente sull’authoring dei frammenti di contenuto, hai aggiunto un oggetto JSON nel campo **Meteo per stagione**. Ora recuperiamo tali dati all’interno del frammento di contenuto Posizione.
 
 1. Nell’IDE GraphiQL, incolla la seguente query nel pannello a sinistra:
 
@@ -599,7 +599,7 @@ Ricorda che nel capitolo precedente sull’authoring dei frammenti di contenuto,
    }
    ```
 
-   Il `weatherBySeason` contiene l’oggetto JSON aggiunto al capitolo precedente.
+   Il campo `weatherBySeason` contiene l&#39;oggetto JSON aggiunto nel capitolo precedente.
 
 ## Esegui query per tutto il contenuto contemporaneamente
 
@@ -726,4 +726,4 @@ Congratulazioni Sono state testate query avanzate per raccogliere i dati dei fra
 
 ## Passaggi successivi
 
-In [capitolo successivo](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md), scoprirai come rendere persistenti le query GraphQL e perché è consigliabile utilizzare le query persistenti nelle applicazioni.
+Nel [prossimo capitolo](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md), scoprirai come rendere persistenti le query GraphQL e perché è consigliabile utilizzare le query persistenti nelle applicazioni.

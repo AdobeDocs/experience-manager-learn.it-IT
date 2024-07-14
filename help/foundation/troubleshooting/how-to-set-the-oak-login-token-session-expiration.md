@@ -1,5 +1,5 @@
 ---
-title: Impostare la scadenza della sessione per il token di accesso Oak
+title: Impostare la scadenza della sessione per il token di accesso di Oak
 description: Passaggi per impostare il timeout della scadenza della sessione del token di origine Oak
 type: Troubleshooting
 role: Admin
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Impostare la scadenza della sessione per il token di accesso Oak
+# Impostare la scadenza della sessione per il token di accesso di Oak
 
-*Questo video illustra i passaggi per impostare la scadenza della sessione per il token di accesso Oak.*
+*Questo video illustra i passaggi necessari per impostare la scadenza della sessione del token di accesso di Oak.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335468?quality=12&learn=on)

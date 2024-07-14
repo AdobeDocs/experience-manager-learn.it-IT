@@ -47,21 +47,21 @@ Al termine di questa esercitazione, avrai una solida conoscenza di come sfruttar
 
 ### AEM as a Cloud Service
 
-Questo tutorial richiede l’accesso come amministratore a un ambiente as a Cloud Service AEM.
+Questo tutorial richiede l’accesso come amministratore a un ambiente AEM as a Cloud Service.
 
 ### Software
 
 + [Node.js v16+](https://nodejs.org/it/)
-   + Controlla la versione del nodo eseguendo `node -v` dalla riga di comando
+   + Controllare la versione del nodo eseguendo `node -v` dalla riga di comando
 + [npm 6+](https://www.npmjs.com/)
    + Controllare la versione npm eseguendo `npm -v` dalla riga di comando
 + [Git](https://git-scm.com/)
-   + Controlla la versione Git eseguendo il comando `git -v` dalla riga di comando
+   + Verifica la versione Git eseguendo `git -v` dalla riga di comando
 
-Utilizzare [gestione versione nodo (nvm)](https://github.com/nvm-sh/nvm) per gestire la disponibilità di più versioni di node.js sullo stesso computer.
+Utilizzare [node version manager (nvm)](https://github.com/nvm-sh/nvm) per gestire più versioni di node.js nello stesso computer.
 
 Assicurarsi di disporre dei privilegi per installare il software a livello globale nel computer.
 
 ## Passaggio successivo
 
-Ora che l’ambiente è configurato, passiamo al passaggio successivo: [Configurare e creare contenuti in AEM as a Cloud Service](./1-content-modeling.md)
+Ora che l&#39;ambiente è configurato, passiamo al passaggio successivo: [Configura e crea contenuti in AEM as a Cloud Service](./1-content-modeling.md)

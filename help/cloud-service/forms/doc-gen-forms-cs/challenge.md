@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Modifica il codice in modo che trasmetta l’URL del modello come uno dei parametri di richiesta POST.
 
-Il codice in `DocumentGeneration.java` deve essere modificato per trasmettere l’URL del modello.
+È necessario modificare il codice in `DocumentGeneration.java` per passare l&#39;URL del modello.

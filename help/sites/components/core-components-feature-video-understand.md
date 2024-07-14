@@ -34,4 +34,4 @@ I componenti core AEM sono set di componenti standard da utilizzare con Adobe Ex
 
 * [Progetto GitHub](https://github.com/adobe/aem-core-wcm-components)
 * [Esempi di componenti core](https://www.aemcomponents.dev/)
-* [Documentazione dei Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+* [Documentazione dei componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)

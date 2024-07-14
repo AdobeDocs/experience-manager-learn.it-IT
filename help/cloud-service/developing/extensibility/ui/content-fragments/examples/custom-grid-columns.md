@@ -23,11 +23,11 @@ ht-degree: 0%
 
 ![Colonna griglia personalizzata della console Frammenti di contenuto](./assets/custom-grid-columns/hero.png){align="center"}
 
-È possibile aggiungere colonne di griglia personalizzate alla Console Frammenti di contenuto utilizzando  `contentFragmentGrid` punto di estensione. Questo esempio mostra come aggiungere una colonna personalizzata che visualizzi la pagina Frammenti di contenuto, in base alla data dell’ultima modifica, in formato leggibile.
+È possibile aggiungere colonne griglia personalizzate alla console Frammenti di contenuto utilizzando il punto di estensione `contentFragmentGrid`. Questo esempio mostra come aggiungere una colonna personalizzata che visualizzi la pagina Frammenti di contenuto, in base alla data dell’ultima modifica, in formato leggibile.
 
 ## Punto di estensione
 
-Questo esempio si estende al punto di estensione `contentFragmentGrid` per aggiungere una colonna personalizzata alla Console Frammenti di contenuto.
+Questo esempio si estende al punto di estensione `contentFragmentGrid` per aggiungere una colonna personalizzata alla console Frammenti di contenuto.
 
 | Interfaccia utente AEM estesa | Punto di estensione |
 | ------------------------ | --------------------- | 
@@ -35,18 +35,18 @@ Questo esempio si estende al punto di estensione `contentFragmentGrid` per aggiu
 
 ## Estensione di esempio
 
-Nell&#39;esempio seguente viene creata una colonna personalizzata. `Age` che mostra l’età del frammento di contenuto in un formato leggibile dagli utenti. La pagina viene calcolata a partire dall’ultima data modificata del frammento di contenuto.
+Nell&#39;esempio seguente viene creata una colonna personalizzata, `Age`, che visualizza la pagina del frammento di contenuto in formato leggibile. La pagina viene calcolata a partire dall’ultima data modificata del frammento di contenuto.
 
 Il codice mostra come è possibile ottenere i metadati del frammento di contenuto nel file di registrazione dell’estensione e come è possibile esportare il contenuto JSON del frammento di contenuto.
 
-In questo esempio viene utilizzato [Luxon](https://moment.github.io/luxon/) per calcolare la durata del frammento di contenuto, installato tramite `npm i luxon`.
+In questo esempio viene utilizzata la libreria [Luxon](https://moment.github.io/luxon/) per calcolare la durata del frammento di contenuto, installato tramite `npm i luxon`.
 
 ### Registrazione dell’estensione
 
 `ExtensionRegistration.js`, mappato alla route index.html, è il punto di ingresso per l&#39;estensione AEM e definisce:
 
-+ La posizione dell’estensione si inietta (`contentFragmentGrid`) nell’esperienza di authoring dell’AEM
-+ La definizione della colonna personalizzata, nel `getColumns()` funzione
++ La posizione dell&#39;estensione si inietta (`contentFragmentGrid`) nell&#39;esperienza di creazione AEM
++ Definizione della colonna personalizzata nella funzione `getColumns()`
 + I valori di ogni colonna personalizzata, per riga
 
 ```javascript
@@ -149,7 +149,7 @@ export default ExtensionRegistration;
 
 #### Dati dei frammenti di contenuto
 
-Il `render(..)` metodo in `getColumns()` viene passato un array di frammenti. Ogni oggetto nell’array rappresenta una riga nella griglia e contiene i seguenti metadati sul frammento di contenuto. Questi metadati possono essere utilizzati per le colonne personalizzate più comuni nella griglia.
+Il metodo `render(..)` in `getColumns()` ha passato una matrice di frammenti. Ogni oggetto nell’array rappresenta una riga nella griglia e contiene i seguenti metadati sul frammento di contenuto. Questi metadati possono essere utilizzati per le colonne personalizzate più comuni nella griglia.
 
 
 ```javascript
@@ -161,7 +161,7 @@ render: async function (fragments) {
 }
 ```
 
-Esempio di JSON per frammenti di contenuto disponibile come elemento del `fragments` parametro in `render(..)` metodo.
+Esempio di JSON per frammenti di contenuto disponibile come elemento del parametro `fragments` nel metodo `render(..)`.
 
 ```json
 {
@@ -208,9 +208,9 @@ Se sono necessari altri dati per compilare la colonna personalizzata, è possibi
 
 >[!IMPORTANT]
 >
-> Assicurati che l’istanza di authoring dell’AEM sia configurata per consentire [richieste cross-origin](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) dalle origini su cui è in esecuzione l’app AppBuilder. Le origini consentite includono `https://localhost:9080`, l&#39;origine di AppBuilder Stage e l&#39;origine di AppBuilder Production.
+> Assicurati che l&#39;istanza di authoring dell&#39;AEM sia configurata in modo da consentire [richieste tra origini diverse](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) dalle origini su cui è in esecuzione l&#39;app AppBuilder. Le origini consentite includono `https://localhost:9080`, l&#39;origine dello stage di AppBuilder e l&#39;origine della produzione di AppBuilder.
 >
-> In alternativa, l’estensione può chiamare un [Azione AppBuilder](../../runtime-action.md) che presenta la richiesta all’autore dell’AEM per conto dell’estensione.
+> In alternativa, l&#39;estensione può chiamare un&#39;azione [AppBuilder](../../runtime-action.md) personalizzata che invia la richiesta all&#39;autore AEM per conto dell&#39;estensione.
 
 
 ```javascript
@@ -227,9 +227,9 @@ const response = await fetch(`${context.aemHost}${fragment.id.slice('/content/da
 
 #### Definizione colonna
 
-Il risultato del metodo di rendering è un oggetto JavaScript le cui chiavi sono il percorso del frammento di contenuto (o `fragment.id`) e il valore è un valore da visualizzare nella colonna.
+Il risultato del metodo di rendering è un oggetto JavaScript le cui chiavi sono il percorso del frammento di contenuto (o `fragment.id`) e il cui valore è da visualizzare nella colonna.
 
-Ad esempio, i risultati di questa estensione per `age` le colonne sono:
+Ad esempio, i risultati di questa estensione per la colonna `age` sono:
 
 ```json
 {

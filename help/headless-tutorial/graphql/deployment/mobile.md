@@ -29,13 +29,13 @@ La seguente configurazione di distribuzione deve essere implementata per le dist
 
 | L’app mobile si connette a | Autore AEM | Pubblicazione AEM | Anteprima AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [Filtri del Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| [Filtri Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Condivisione delle risorse tra le origini (CORS) | ✘ | ✘ | ✘ |
 | [Host AEM](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Esempio di app per dispositivi mobili
 
-Adobe fornisce app mobili iOS e Android™.
+Un Adobe fornisce app mobili iOS e Android™.
 
 <div class="columns is-multiline">
     <!-- iOS app -->
@@ -64,14 +64,14 @@ Adobe fornisce app mobili iOS e Android™.
        <div class="card">
            <div class="card-image">
                <figure class="image is-16by9">
-                   <a href="../example-apps/android-app.md" title="App Android™" tabindex="-1">
-                       <img class="is-bordered-r-small" src="../example-apps/assets/android-java-app/android-app-card.png" alt="App Android">
+                   <a href="../example-apps/android-app.md" title="app Android™" tabindex="-1">
+                       <img class="is-bordered-r-small" src="../example-apps/assets/android-java-app/android-app-card.png" alt="app Android">
                    </a>
                </figure>
            </div>
            <div class="card-content is-padded-small">
                <div class="content">
-                   <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/android-app.md" title="App Android™">App Android™</a></p>
+                   <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/android-app.md" title="app Android™">app Android™</a></p>
                    <p class="is-size-6">Un esempio di app Java™ Android™ che utilizza contenuti delle API GraphQL headless dell’AEM.</p>
                    <a href="../example-apps/android-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza esempio</span>

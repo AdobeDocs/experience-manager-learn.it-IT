@@ -1,6 +1,6 @@
 ---
-title: Microservizi AEM Assets e passaggio a AEM as a Cloud Service
-description: Scopri in che modo i microservizi asset compute di AEM Assets as a Cloud Service ti consentono di generare in modo automatico ed efficiente qualsiasi rendering per le risorse, sostituendo questo ruolo del flusso di lavoro AEM tradizionale.
+title: Microservizi AEM Assets e passaggio ad AEM as a Cloud Service
+description: Scopri in che modo i microservizi asset compute di AEM Assets as a Cloud Service consentono di generare automaticamente ed efficacemente rendering per le risorse, sostituendo questo ruolo del flusso di lavoro AEM tradizionale.
 version: Cloud Service
 feature: Asset Compute Microservices
 topic: Migration, Upgrade
@@ -17,24 +17,24 @@ ht-degree: 1%
 
 ---
 
-# Microservizi AEM Assets - Passaggio a AEM as a Cloud Service
+# Microservizi AEM Assets - Passaggio ad AEM as a Cloud Service
 
-Scopri in che modo i microservizi asset compute di AEM Assets as a Cloud Service ti consentono di generare in modo automatico ed efficiente qualsiasi rendering per le risorse, sostituendo questo ruolo del flusso di lavoro AEM tradizionale.
+Scopri in che modo i microservizi asset compute di AEM Assets as a Cloud Service consentono di generare automaticamente ed efficacemente rendering per le risorse, sostituendo questo ruolo del flusso di lavoro AEM tradizionale.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336990?quality=12&learn=on)
 
 ## Strumento di migrazione flusso di lavoro
 
-![Strumento Migrazione flussi di lavoro risorse](./assets/asset-workflow-migration.png)
+![Strumento di migrazione flusso di lavoro risorse](./assets/asset-workflow-migration.png)
 
-Come parte del refactoring della base di codice, utilizza [Strumento Asset Workflow Migration (Migrazione flussi di lavoro risorse)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/asset-workflow-migration-tool.html?lang=it) per migrare i flussi di lavoro esistenti e utilizzare i microservizi Asset compute in AEM as a Cloud Service.
+Come parte del refactoring della base di codice, utilizza lo strumento [Asset Workflow Migration (Migrazione flussi di lavoro risorse)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/asset-workflow-migration-tool.html?lang=it) per migrare i flussi di lavoro esistenti e utilizzare i microservizi Asset Compute in AEM as a Cloud Service.
 
 ## Attività chiave
 
-+ Utilizza il [Adobe I/O Workflow Migrator](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationworkflow-migrator) strumento per migrare i flussi di lavoro di elaborazione delle risorse in modo da utilizzare i microservizi Asset compute.
-+ Configurare un [ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it) e distribuire i flussi di lavoro aggiornati. Per i flussi di lavoro complessi può essere necessario un adeguamento manuale.
++ Utilizza lo strumento [Adobe I/O Workflow Migrator](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationworkflow-migrator) per migrare i flussi di lavoro di elaborazione delle risorse e utilizzare i microservizi Asset Compute.
++ Imposta un [ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it) e distribuisci i flussi di lavoro aggiornati. Per i flussi di lavoro complessi può essere necessario un adeguamento manuale.
 + Continua a eseguire l’iterazione in un ambiente di sviluppo locale utilizzando l’SDK dell’AEM fino a quando il flusso di lavoro aggiornato non corrisponde alla parità delle funzioni.
-+ Distribuisci la base di codice aggiornata in un ambiente di sviluppo as a Cloud Service per AEM e continua a convalidarla.
++ Distribuisci la base di codice aggiornata in un ambiente di sviluppo AEM as a Cloud Service e continua a convalidarla.
 
 ## Esercizio pratico
 
@@ -42,7 +42,7 @@ Applica la tua conoscenza sperimentando ciò che hai imparato con questo eserciz
 
 Prima di provare l&#39;esercizio pratico, assicurati di aver guardato e compreso il video precedente e i seguenti materiali:
 
-+ [Pensare diversamente all’AEM as a Cloud Service](./introduction.md)
++ [Pensare diversamente ad AEM as a Cloud Service](./introduction.md)
 + [Onboarding](./onboarding.md)
 
 Inoltre, assicurati di aver completato il precedente esercizio pratico:

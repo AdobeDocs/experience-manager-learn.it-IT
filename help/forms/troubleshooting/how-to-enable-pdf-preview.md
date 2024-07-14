@@ -1,6 +1,6 @@
 ---
-title: 'Designer Preview PDF Disabilitato: come abilitare Preview PDF'
-description: Passaggi per configurare l’anteprima di PDF in Designer
+title: 'Designer Preview PDF disabilitato: come abilitare Preview PDF'
+description: Procedura per configurare PDF Preview in Designer
 type: Troubleshooting
 role: Developer
 level: Intermediate

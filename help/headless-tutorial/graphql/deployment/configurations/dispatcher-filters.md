@@ -1,6 +1,6 @@
 ---
-title: Filtri di Dispatcher per AEM GraphQL
-description: Scopri come configurare i filtri del Dispatcher di pubblicazione dell’AEM da utilizzare con il GraphQL dell’AEM.
+title: Filtri Dispatcher per AEM GraphQL
+description: Scopri come configurare i filtri AEM Publish Dispatcher da utilizzare con AEM GraphQL.
 version: Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
@@ -17,9 +17,9 @@ ht-degree: 2%
 
 ---
 
-# Filtri del Dispatcher
+# Filtri Dispatcher
 
-Adobe Experience Manager as a Cloud Service utilizza i filtri del Dispatcher di pubblicazione dell’AEM per garantire che solo le richieste che devono raggiungere l’AEM raggiungano l’AEM. Per impostazione predefinita, tutte le richieste sono negate e i modelli per gli URL consentiti devono essere aggiunti esplicitamente.
+Adobe Experience Manager as a Cloud Service utilizza i filtri Dispatcher di AEM Publish per garantire che solo le richieste che devono raggiungere l’AEM raggiungano l’AEM. Per impostazione predefinita, tutte le richieste sono negate e i modelli per gli URL consentiti devono essere aggiunti esplicitamente.
 
 | Tipo di client | [App a pagina singola (SPA)](../spa.md) | [Componente Web/JS](../web-component.md) | [Mobile](../mobile.md) | [Server-to-server](../server-to-server.md) |
 |------------------------------------------:|:---------------------:|:----------------:|:---------:|:----------------:|
@@ -29,16 +29,16 @@ Adobe Experience Manager as a Cloud Service utilizza i filtri del Dispatcher di 
 >
 > Le seguenti configurazioni sono esempi. Assicurati di regolarli per allinearli ai requisiti del progetto.
 
-## Configurazione del filtro di Dispatcher
+## Configurazione filtro Dispatcher
 
-La configurazione del filtro del Dispatcher di pubblicazione dell’AEM definisce i pattern di URL consentiti per raggiungere l’AEM e deve includere il prefisso URL per l’endpoint di query persistente dell’AEM.
+La configurazione del filtro AEM Publish Dispatcher definisce i pattern URL consentiti per raggiungere l’AEM e deve includere il prefisso URL per l’endpoint della query persistente AEM.
 
 | Il client si collega a | Autore AEM | Pubblicazione AEM | Anteprima AEM |
 |------------------------------------------:|:----------:|:-------------:|:-------------:|
 | Richiede la configurazione dei filtri di Dispatcher | ✘ | ✔ | ✔ |
 
-Aggiungi un `allow` regola con il pattern URL `/graphql/execute.json/*`, e garantire l&#39;ID file (ad esempio `/0600`, è univoco nel file farm di esempio).
-Questo consente la richiesta HTTP GET all’endpoint di query persistente, ad esempio `HTTP GET /graphql/execute.json/wknd-shared/adventures-all` fino a Pubblicazione AEM.
+Aggiungere una regola `allow` con il pattern URL `/graphql/execute.json/*` e verificare che l&#39;ID file (ad esempio `/0600`, sia univoco nel file farm di esempio).
+Questo consente la richiesta HTTP di GET all&#39;endpoint di query persistente, ad esempio `HTTP GET /graphql/execute.json/wknd-shared/adventures-all`, fino a AEM Publish.
 
 Se utilizzi Frammenti di esperienza nell’esperienza AEM headless, procedi allo stesso modo per questi percorsi.
 
@@ -55,4 +55,4 @@ Se utilizzi Frammenti di esperienza nell’esperienza AEM headless, procedi allo
 
 ### Esempio di configurazione dei filtri
 
-+ [Un esempio del filtro di Dispatcher è disponibile nel progetto WKND.](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.dispatcher.d/filters/filters.any#L28)
++ [Un esempio del filtro Dispatcher è disponibile nel progetto WKND.](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.dispatcher.d/filters/filters.any#L28)

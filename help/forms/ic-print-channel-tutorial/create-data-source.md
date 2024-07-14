@@ -25,7 +25,7 @@ In questa parte verrà creata un&#39;origine dati supportata REST.  Il video seg
 
 >[!VIDEO](https://video.tv.adobe.com/v/27765?quality=12&learn=on)
 
-Utilizza il file Swagger fornito come parte delle risorse relative a questa esercitazione. Le risorse sono disponibili in [introduzione](introduction.md) di questa esercitazione.
+Utilizza il file Swagger fornito come parte delle risorse relative a questa esercitazione. Le risorse sono disponibili in [introduction](introduction.md) di questa esercitazione.
 
 ## Passaggi successivi
 

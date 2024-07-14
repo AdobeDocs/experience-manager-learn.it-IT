@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Salvare e recuperare le bozze di lettere
 
-Il codice seguente viene utilizzato per salvare l’istanza della lettera. I metadati dell’istanza della lettera vengono memorizzati nel _icdraft_ tabella. Viene generata e restituita una stringa univoca (draftID). Questa stringa univoca viene quindi utilizzata per recuperare l’istanza della lettera salvata.
+Il codice seguente viene utilizzato per salvare l’istanza della lettera. I metadati dell&#39;istanza della lettera sono memorizzati nella tabella _icdraft_. Viene generata e restituita una stringa univoca (draftID). Questa stringa univoca viene quindi utilizzata per recuperare l’istanza della lettera salvata.
 
 ```java
 public String save(CCRDocumentInstance letterToSave) throws CCRDocumentException {
@@ -168,4 +168,4 @@ AEM Forms non fornisce alcuna interfaccia utente predefinita per elencare le let
 
 ### Progetto Eclipse
 
-Il progetto di eclissi con implementazione di esempio può essere [scaricato da qui](assets/icdrafts-eclipse-project.zip)
+Il progetto eclipse con implementazione di esempio può essere [scaricato da qui](assets/icdrafts-eclipse-project.zip)

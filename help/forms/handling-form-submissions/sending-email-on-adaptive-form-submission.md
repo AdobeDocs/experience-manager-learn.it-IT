@@ -27,11 +27,11 @@ Osserva la sintassi per inserire i valori dei campi modulo nell’e-mail. Abbiam
 
 Quando il modulo adattivo viene inviato, il destinatario riceverà un’e-mail.
 
-![InviaE-mail](assets/sendemailaction.gif)
+![InviaEmail](assets/sendemailaction.gif)
 
 ## Configurazioni necessarie {#configurations-needed}
 
-Dovrai configurare il servizio Day CQ Mail. Per configurare questa funzione, fai clic sul browser per [Felix Configuration Manager](http://localhost:4502/system/console/configMgr)
+Dovrai configurare il servizio Day CQ Mail. Per configurare questa impostazione, puntare il browser su [Felix Configuration Manager](http://localhost:4502/system/console/configMgr)
 
 La schermata mostra le proprietà di configurazione per il server di posta Adobe.
 
@@ -39,7 +39,7 @@ La schermata mostra le proprietà di configurazione per il server di posta Adobe
 
 Per provare questa operazione sul server, attenersi alle istruzioni riportate di seguito.
 
-* [Importare le risorse](assets/timeoffrequest.zip) associato a questo articolo in AEM utilizzando il gestore di pacchetti.
+* [Importa le risorse](assets/timeoffrequest.zip) associate a questo articolo in AEM utilizzando Gestione pacchetti.
 
 * Apri [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
 

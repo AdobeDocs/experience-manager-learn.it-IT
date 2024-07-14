@@ -1,6 +1,6 @@
 ---
 title: Ricerca
-description: Scopri come utilizzare AEM Omnisearch per individuare rapidamente le risorse.
+description: Scopri come utilizzare Omnisearch di AEM per individuare rapidamente le risorse.
 feature: Search
 version: Cloud Service
 jira: KT-4312
@@ -21,6 +21,6 @@ ht-degree: 9%
 
 # Ricerca{#aem-assets-search}
 
-Scopri come utilizzare AEM Omnisearch per individuare rapidamente le risorse.
+Scopri come utilizzare Omnisearch di AEM per individuare rapidamente le risorse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32054?quality=12&learn=on)

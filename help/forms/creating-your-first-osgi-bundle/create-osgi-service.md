@@ -24,7 +24,7 @@ Un servizio OSGi è definito semanticamente dalla relativa interfaccia di serviz
 
 ## Definire l’interfaccia
 
-Un&#39;interfaccia semplice con un metodo per unire i dati con <span class="x x-first x-last">XDP</span> modello.
+Interfaccia semplice con un metodo per unire i dati con il modello <span class="x x-first x-last">XDP</span>.
 
 ```java
 package com.mysite.samples;
@@ -40,7 +40,7 @@ public interface MyfirstInterface
 
 ## Implementare l’interfaccia
 
-Crea un nuovo pacchetto denominato `com.mysite.samples.impl` per l’implementazione dell’interfaccia.
+Creare un nuovo pacchetto denominato `com.mysite.samples.impl` per l&#39;implementazione dell&#39;interfaccia.
 
 ```java
 package com.mysite.samples.impl;
@@ -78,19 +78,19 @@ public class MyfirstInterfaceImpl implements MyfirstInterface {
 }
 ```
 
-L’annotazione `@Component(...)` sulla riga 10 contrassegna questa classe Java come componente OSGi e la registra come servizio OSGi.
+L&#39;annotazione `@Component(...)` alla riga 10 contrassegna questa classe Java come componente OSGi e la registra come servizio OSGi.
 
-Il `@Reference` l’annotazione fa parte di servizi dichiarativi OSGi e viene utilizzata per inserire un riferimento di [Servizio di output](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) nella variabile `outputService`.
+L&#39;annotazione `@Reference` fa parte dei servizi dichiarativi OSGi e viene utilizzata per inserire un riferimento di [Outputservice](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) nella variabile `outputService`.
 
 
 ## Creare e distribuire il bundle
 
 * Apri **finestra del prompt dei comandi**
-* Accedi a `c:\aemformsbundles\mysite\core`
+* Passa a `c:\aemformsbundles\mysite\core`
 * Esegui il comando `mvn clean install -PautoInstallBundle`
 * Il comando precedente genera e distribuisce automaticamente il bundle nell’istanza AEM in esecuzione su localhost:4502
 
-Il bundle sarà disponibile anche nella seguente posizione `C:\AEMFormsBundles\mysite\core\target`. Il pacchetto può essere distribuito all&#39;AEM utilizzando [Console web Felix.](http://localhost:4502/system/console/bundles)
+Il bundle sarà disponibile anche nel seguente percorso `C:\AEMFormsBundles\mysite\core\target`. Il bundle può anche essere distribuito in AEM utilizzando la [console Web Felix.](http://localhost:4502/system/console/bundles)
 
 ## Utilizzo del servizio
 
@@ -107,7 +107,7 @@ Il pacchetto di esempio contenente la pagina JSP può essere [scaricato da qui](
 
 ## Testare il pacchetto
 
-Importare e installare il pacchetto in AEM utilizzando [gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+Importa e installa il pacchetto in AEM utilizzando [Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 
 Utilizza Postman per effettuare una chiamata POST e fornire i parametri di input come mostrato nella schermata seguente
 ![postino](assets/test-service-postman.JPG)

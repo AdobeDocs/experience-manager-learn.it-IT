@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # Guida introduttiva di Headless AEM - Content Services
 
-AEM Content Services sfrutta le pagine AEM tradizionali per comporre endpoint API REST headless; i componenti AEM definiscono o fanno riferimento al contenuto da esporre su tali endpoint.
+I Content Services dell’AEM sfruttano le pagine AEM tradizionali per comporre endpoint API REST headless; i Componenti AEM definiscono o fanno riferimento al contenuto da esporre su tali endpoint.
 
 AEM Content Services consente di utilizzare le stesse astrazioni di contenuto utilizzate per l’authoring di pagine web in AEM Sites, per definire il contenuto e gli schemi di queste API HTTP. L’utilizzo delle pagine AEM e dei componenti AEM consente agli addetti al marketing di comporre e aggiornare rapidamente API JSON flessibili in grado di alimentare qualsiasi applicazione.
 
@@ -35,13 +35,13 @@ Questo tutorial tratta i seguenti argomenti:
 * Definire un endpoint di AEM Content Services utilizzando i modelli e le pagine di AEM Sites che espongono i dati dell’evento come JSON
 * Scopri come utilizzare i componenti core WCM dell’AEM per consentire agli addetti al marketing di creare endpoint JSON
 * Utilizzare JSON AEM Content Services da un’app mobile
-   * Android viene utilizzato perché dispone di un emulatore multipiattaforma che tutti gli utenti (Windows, macOS e Linux) di questo tutorial possono utilizzare per eseguire l’app nativa.
+   * L’utilizzo di Android è dovuto al fatto che dispone di un emulatore multipiattaforma che tutti gli utenti (Windows, macOS e Linux) di questo tutorial possono utilizzare per eseguire l’app nativa.
 
 ## Progetto GitHub
 
-Il codice sorgente e i pacchetti di contenuti sono disponibili nel [Guide AEM - Progetto WKND Mobile GitHub](https://github.com/adobe/aem-guides-wknd-mobile).
+Il codice sorgente e i pacchetti di contenuti sono disponibili nel [progetto GitHub mobile WKND di AEM Guides](https://github.com/adobe/aem-guides-wknd-mobile).
 
-Se riscontri un problema con l’esercitazione o con il codice, lascia un [Problema GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
+Se riscontri un problema con l&#39;esercitazione o con il codice, lascia un [problema GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
 
 ## GraphQL AEM e servizi di contenuti AEM
 

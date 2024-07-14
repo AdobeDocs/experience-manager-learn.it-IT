@@ -1,5 +1,5 @@
 ---
-title: Personalizzazione mediante Visual Experience Composer
+title: Personalization con Compositore esperienza visivo
 description: Scopri come creare un’attività di Adobe Target utilizzando il Compositore esperienza visivo.
 version: Cloud Service
 jira: KT-6352
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ---
 
-# Personalizzazione mediante Visual Experience Composer {#personalization-vec}
+# Personalization con Compositore esperienza visivo {#personalization-vec}
 
 Scopri come creare un’attività di test A/B di Target utilizzando il Compositore esperienza visivo.
 
@@ -37,19 +37,19 @@ Nella home page del sito WKND, sotto forma di schede informative, vengono visual
 
 ## Passaggi per creare un test A/B utilizzando il Compositore esperienza visivo
 
-1. Accedi a [Adobe Experience Cloud](https://experience.adobe.com/), toccare __Target__, passare alla __Attività__ scheda
+1. Accedi a [Adobe Experience Cloud](https://experience.adobe.com/), tocca __Target__, passa alla scheda __Attività__
 
-   + Se non vede __Target__ sul dashboard Experience Cloud, assicurati che nel selettore organizzazione in alto a destra sia selezionata l’organizzazione di Adobe corretta e che all’utente sia stato concesso l’accesso a Target in [Adobe Admin Console](https://adminconsole.adobe.com/).
+   + Se non vedi __Target__ nel dashboard di Experience Cloud, accertati che nel commutatore dell&#39;organizzazione in alto a destra sia selezionata l&#39;organizzazione di Adobe corretta e che all&#39;utente sia stato concesso l&#39;accesso a Target in [Adobe Admin Console](https://adminconsole.adobe.com/).
 
-1. Clic **Crea attività** e quindi scegliere **Test A/B** attività
+1. Fai clic sul pulsante **Crea attività** e scegli **Attività test A/B**
 
    ![Attività A/B](assets/ab-target-activity.png)
 
-1. Seleziona la **Compositore esperienza visivo** , fornire l&#39;URL attività e quindi fare clic su **Successivo**
+1. Seleziona l&#39;opzione **Compositore esperienza visivo**, specifica l&#39;URL attività, quindi fai clic su **Avanti**
 
    ![URL attività](assets/ab-test-url.png)
 
-1. Dopo aver creato un’attività, il Compositore esperienza visivo visualizza due schede a sinistra: *Esperienza A* e *Esperienza B*. Seleziona un&#39;esperienza dall&#39;elenco. È possibile aggiungere nuove esperienze all’elenco utilizzando **Aggiungi esperienza** pulsante.
+1. Dopo aver creato un&#39;attività, nel Compositore esperienza visivo vengono visualizzate due schede a sinistra: *Esperienza A* e *Esperienza B*. Seleziona un&#39;esperienza dall&#39;elenco. Puoi aggiungere nuove esperienze all&#39;elenco utilizzando il pulsante **Aggiungi esperienza**.
 
    ![Esperienza A](assets/experience.png)
 
@@ -57,16 +57,16 @@ Nella home page del sito WKND, sotto forma di schede informative, vengono visual
 
    ![Elemento](assets/select-element.png)
 
-1. Cambia il testo da *Campeggio a Western Australia* a *Le avventure dell&#39;Australia*. In Modifiche viene visualizzato un elenco delle modifiche aggiunte a un’esperienza. Puoi fare clic sull’elemento modificato e modificarlo per visualizzarne il selettore CSS e il nuovo contenuto aggiunto.
+1. Cambia il testo da *Campeggio in Australia Occidentale* a *Avventure dell&#39;Australia*. In Modifiche viene visualizzato un elenco delle modifiche aggiunte a un’esperienza. Puoi fare clic sull’elemento modificato e modificarlo per visualizzarne il selettore CSS e il nuovo contenuto aggiunto.
 
    ![Avventure](assets/adventures.png)
 
-1. Rinomina *Esperienza A* a *Avventura*
-1. Allo stesso modo, aggiorna il testo su *Esperienza B* da *Campeggio a Western Australia* a *Esplora la natura selvaggia australiana*.
+1. Rinomina *Esperienza A* in *Avventura*
+1. Allo stesso modo, aggiorna il testo su *Esperienza B* da *Campeggio in Australia Occidentale* a *Esplora il deserto australiano*.
 
    ![Esplora](assets/explore.png)
 
-1. Clic **Successivo** per passare al Targeting e mantenere un’allocazione manuale del traffico di 50-50 tra le due esperienze.
+1. Fai clic su **Avanti** per passare al targeting e mantieni un&#39;allocazione manuale del traffico di 50-50 tra le due esperienze.
 
    ![Targeting](assets/targeting.png)
 
@@ -89,4 +89,4 @@ In questo capitolo, un addetto al marketing può creare un’esperienza utilizza
 
 ## Collegamenti di supporto
 
-+ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
++ [Debugger Adobe Experience Cloud - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)

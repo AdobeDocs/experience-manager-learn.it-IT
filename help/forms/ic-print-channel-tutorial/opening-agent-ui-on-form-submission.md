@@ -57,12 +57,12 @@ Riga 12-13: inoltra la richiesta al servlet
 Per testare questa funzionalità sul server
 
 * [Importa e installa le risorse correlate a questo articolo utilizzando Gestione pacchetti.](assets/launch-agent-ui.zip)
-* [Accedi a configMgr](http://localhost:4502/system/console/configMgr)
+* [Accesso a configMgr](http://localhost:4502/system/console/configMgr)
 * Cerca _Filtro CSRF Adobe Granite_
-* Aggiungi _/content/getprintchannel_ nei Percorsi esclusi
+* Aggiungi _/content/getprintchannel_ nei percorsi esclusi
 * Salva le modifiche.
 * [Apri POST.jsp](http://localhost:4502/apps/AEMForms/openprintchannel/POST.jsp). Verificare che la stringa passata a FormFieldRequestParameter sia documentId valido.(riga 19).
-* [Apri la pagina web](http://localhost:4502/content/OpenPrintChannel.html) e inserire il numero di conto e sottomettere il modulo.
+* [Aprire la pagina Web](http://localhost:4502/content/OpenPrintChannel.html), immettere il numero di account e inviare il modulo.
 * L’interfaccia utente dell’agente deve aprirsi con i dati precompilati specifici del numero account immesso nel modulo.
 
 >[!NOTE]

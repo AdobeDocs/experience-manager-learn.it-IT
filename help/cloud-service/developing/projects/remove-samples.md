@@ -26,7 +26,7 @@ Scopri come pulire e rimuovere il codice di esempio generato da un progetto AEM 
 
 ## Riferimenti
 
-+ [Archetipo progetto AEM Maven](https://github.com/adobe/aem-project-archetype)
++ [Archetipo progetto Maven AEM](https://github.com/adobe/aem-project-archetype)
 
 ## Comandi
 
@@ -46,13 +46,13 @@ rm -rf ui.frontend/src/main/webpack/components/_helloworld.css
 
 ## Modifiche
 
-Rimuovi il `<div class="helloworld" ...></div>` da:
+Rimuovi `<div class="helloworld" ...></div>` da:
 
 ```
 ui.frontend/src/main/webpack/static/index.html
 ```
 
-Rimuovi il `<helloworld>` definizione dell’istanza del componente da:
+Rimuovi la definizione dell&#39;istanza del componente `<helloworld>` da:
 
 ```
 ui.content/src/main/content/jcr_root/content/wknd-examples/us/en/.content.xml

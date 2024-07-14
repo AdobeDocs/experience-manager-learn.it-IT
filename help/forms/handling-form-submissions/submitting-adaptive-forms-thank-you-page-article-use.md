@@ -32,11 +32,11 @@ Nella schermata seguente, stiamo inviando il modulo adattivo per ringraziarti al
 
 Puoi anche inviare all’endpoint esterno tramite POST. A questo scopo, seleziona la casella di controllo &quot;abilita richiesta post&quot; e fornisci l’URL dell’endpoint esterno. Quando si invia il modulo, viene visualizzata una pagina di ringraziamento e l&#39;endpoint POST viene richiamato contemporaneamente.
 
-![Configurazione acquisizione](assets/capture.gif)
+![Acquisisci configurazione](assets/capture.gif)
 
 Per testare questa funzionalità sul server, attenersi alle istruzioni riportate di seguito:
 
-* Importa [file di risorse associato a questo articolo in AEM utilizzando Gestione pacchetti](assets/submittingtorestendpoint.zip)
-* Puntare il browser al [Modulo di richiesta di indisponibilità](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Importa il file [assets associato a questo articolo in AEM utilizzando Gestione pacchetti](assets/submittingtorestendpoint.zip)
+* Puntare il browser al [modulo di richiesta di indisponibilità](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Compila il campo richiesto e invia il modulo
 * Dovresti ottenere la pagina di ringraziamento con le informazioni inserite nella pagina

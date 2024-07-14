@@ -25,8 +25,8 @@ AEM Assets Dynamic Medie integra i punti attivi delle risorse con i frammenti di
 
 >[!NOTE]
 >
->L’utilizzo dei frammenti di esperienza AEM con i punti attivi di AEM Assets Dynamic Medie richiede [AEM gestito nel Dynamic Medie](https://experienceleague.adobe.com/docs/) modalità.
+>L&#39;utilizzo dei frammenti di esperienza AEM con i punti attivi di AEM Assets Dynamic Medie richiede l&#39;esecuzione di [AEM in modalità Dynamic Medie](https://experienceleague.adobe.com/docs/).
 
 La variante del frammento di esperienza pop-up mostrata nel video è disponibile come pacchetto AEM di seguito.
 
-Scarica [Frammenti di esperienza - Risorse Dynamic Medie](assets/experience-fragmentsdynamic-mediaassets-100.zip)
+Scarica [Frammenti esperienza Dynamic Medie Assets](assets/experience-fragmentsdynamic-mediaassets-100.zip)

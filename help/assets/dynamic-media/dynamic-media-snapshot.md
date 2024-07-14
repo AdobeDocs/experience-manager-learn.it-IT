@@ -25,7 +25,7 @@ Dynamic Medie Snapshot è uno strumento di dimostrazione visiva, progettato per 
 >[!VIDEO](https://video.tv.adobe.com/v/3419421/?learn=on)
 
 <a href="https://snapshot.scene7.com/" class="spectrum-Button spectrum-Button--primary spectrum-Button--sizeM">
-  <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Avvia istantanea Dynamic Medie</span>
+  <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Avvia Snapshot Dynamic Medie</span>
 </a>
 
 ## Risorse aggiuntive

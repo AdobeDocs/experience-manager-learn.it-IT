@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ---
 
-# Configura origine dati
+# Configurare Data Source
 
 L’integrazione dei dati di AEM Forms consente di configurare e connettersi a diverse origini dati. Sono supportati i seguenti tipi pronti all’uso. Tuttavia, con una piccola personalizzazione, puoi anche integrare con altre origini dati.
 
@@ -27,8 +27,8 @@ L’integrazione dei dati di AEM Forms consente di configurare e connettersi a d
 1. Servizi web basati su SOAP
 1. Servizi OData
 
-Per l’integrazione di AEM Forms con Marketo, utilizziamo i servizi web RESTful. Il primo passaggio nell’integrazione consiste nel configurare una [origine dati.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Utilizza il file swagger fornito come parte di questa esercitazione. La schermata seguente mostra le proprietà importanti da specificare durante la configurazione dell’origine dati.
-![datasource](assets/datasource.png)
+Per l’integrazione di AEM Forms con Marketo, utilizziamo i servizi web RESTful. Il primo passaggio dell&#39;integrazione consiste nel configurare un&#39;origine dati [.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Utilizzare il file Swagger fornito come parte di questa esercitazione. La schermata seguente mostra le proprietà importanti da specificare durante la configurazione dell’origine dati.
+![origine dati](assets/datasource.png)
 
 Il &quot;marketo.json&quot; è il file swagger e viene fornito come parte delle risorse di questo tutorial.
 L’host delle proprietà è specifico per l’istanza Marketo.
@@ -38,7 +38,7 @@ Il tipo di autenticazione è personalizzato e l’implementazione dell’autenti
 
 Dopo aver configurato l’origine dati, il passaggio successivo consiste nel creare un modello dati del modulo basato sull’origine dati configurata nel passaggio precedente. Per creare un modello dati modulo, segui i passaggi seguenti:
 
-Puntare il browser al [pagina delle integrazioni di dati.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Elenca tutte le integrazioni di dati create nell’istanza AEM.
+Puntare il browser alla pagina [ integrazioni dati.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Elenca tutte le integrazioni di dati create nell&#39;istanza AEM.
 
 1. Fai clic su Crea. | Modello dati modulo
 1. Fornisci un titolo significativo come FormsAndMarketo e fai clic su Avanti
@@ -51,7 +51,7 @@ Puntare il browser al [pagina delle integrazioni di dati.](http://localhost:4502
 1. Scheda della scheda Servizi
 1. Seleziona l’unico servizio elencato e fai clic su Test Service
 1. Specifica un leadId valido e fai clic su Prova. Se tutto va bene, dovresti recuperare i dettagli del lead come mostrato nella schermata seguente
-   ![risultati test](assets/testresults.png)
+   ![risultati del test](assets/testresults.png)
 
 ## Passaggi successivi
 

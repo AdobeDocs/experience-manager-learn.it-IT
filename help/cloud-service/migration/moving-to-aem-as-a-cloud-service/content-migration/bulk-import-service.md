@@ -27,22 +27,22 @@ Scopri come usare il Servizio di importazione in blocco di AEM as a Cloud Servic
 
 ## Utilizzo del servizio di importazione in blocco
 
-![Ciclo di vita del servizio di importazione in blocco](../assets/bulk-import-service.png)
+![Ciclo di vita servizio importazione in blocco](../assets/bulk-import-service.png)
 
 Il servizio di importazione in blocco viene utilizzato per trasferire i file archiviati nell’archiviazione BLOB di Azure o nell’archiviazione Amazon S3 in AEM as a Cloud Service come risorse.
 
 >[!TIP]
 >
-> Le origini di input in questo video mostrano solo Azure Blob Storage e Amazon S3; tuttavia, le origini disponibili continuano a crescere nel tempo. Per un elenco completo delle sorgenti di ingresso supportate, fare riferimento alle opzioni disponibili nel prodotto, oppure [documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
+> Le origini di input in questo video mostrano solo Azure Blob Storage e Amazon S3; tuttavia, le origini disponibili continuano a crescere nel tempo. Per un elenco completo delle origini di input supportate, fare riferimento alle opzioni disponibili nel prodotto o alla [documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
 
 ## Attività chiave
 
 + Carica i file da importare nel provider di archiviazione cloud.
-+ Configura ed esegui il servizio di importazione in blocco dal servizio di authoring as a Cloud Service dell’AEM.
++ Configura ed esegui il servizio Importazione in blocco dal servizio AEM as a Cloud Service Author.
 + Esegui Importazione servizi in blocco come importazione una tantum o pianifica un&#39;importazione periodica.
 
 ## Altre risorse
 
 + [Opzioni di configurazione del servizio di importazione in blocco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#configure-bulk-ingestor-tool)
-+ [Sessione Adobe Developers Live sull’acquisizione delle risorse](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html)
++ [Sessione Adobe Developers Live per l&#39;acquisizione delle risorse](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html)
 

@@ -26,7 +26,7 @@ Scopri come utilizzare la ricerca contestuale in Adobe Experience Manager Assets
 
 ## Attiva/disattiva ricerca contestuale
 
-Per abilitare o disabilitare la ricerca contestuale per tutti gli utenti, gli amministratori AEM possono farlo accedendo al __Impostazioni generali__ e attivazione __Ricerca contestuale__ passa all&#39;impostazione desiderata.
+Per abilitare o disabilitare la ricerca contestuale per tutti gli utenti, gli amministratori dell&#39;AEM possono passare alle __Impostazioni generali__ e impostare il parametro __Ricerca contestuale__ sull&#39;impostazione desiderata.
 
 Per impostazione predefinita, la ricerca contestuale è abilitata per tutti gli utenti.
 

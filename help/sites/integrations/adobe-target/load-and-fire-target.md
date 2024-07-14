@@ -28,19 +28,19 @@ Scopri come caricare, trasmettere parametri alla richiesta di pagina e attivare 
 
 ## Regola di caricamento pagina
 
-Adobe Client Data Layer è un livello dati basato su eventi. Quando il livello dati della pagina AEM viene caricato, attiva un evento `cmp:show` . Nel video, la sezione `tags Library Loaded` viene richiamata utilizzando un evento personalizzato. Di seguito sono riportati i frammenti di codice utilizzati nel video per l’evento personalizzato e per gli elementi dati.
+Adobe Client Data Layer è un livello dati basato su eventi. Quando il livello dati della pagina AEM viene caricato, attiva un evento `cmp:show`. Nel video, la regola `tags Library Loaded` viene richiamata utilizzando un evento personalizzato. Di seguito sono riportati i frammenti di codice utilizzati nel video per l’evento personalizzato e per gli elementi dati.
 
 ### Evento pagina visualizzata personalizzata{#page-event}
 
-![Configurazione dell’evento di visualizzazione della pagina e codice personalizzato](assets/load-and-fire-target-call.png)
+![Configurazione evento visualizzata pagina e codice personalizzato](assets/load-and-fire-target-call.png)
 
-Nella proprietà tags, aggiungi un nuovo **Evento** al **Regola**
+Nella proprietà tags, aggiungi un nuovo **evento** alla **regola**
 
 + __Estensione:__ Core
 + __Tipo evento:__ Codice personalizzato
-+ __Nome:__ Gestore di Evento Page Show (o qualcosa di descrittivo)
++ __Nome:__ Gestore eventi di visualizzazione pagina (o qualcosa di descrittivo)
 
-Tocca il __Apri editor__ e incolla il seguente frammento di codice. Questo codice __deve__ essere aggiunto al __Configurazione evento__ e una successiva __Azione__.
+Tocca il pulsante __Apri editor__ e incolla il seguente frammento di codice. Il codice __deve__ essere aggiunto alla __Configurazione evento__ e a una successiva __Azione__.
 
 ```javascript
 // Define the event handler function
@@ -80,20 +80,20 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Una funzione personalizzata definisce `pageShownEventHandler`, e ascolta gli eventi emessi dai Componenti core AEM, deriva le informazioni rilevanti dal Componente core, lo racchiude in un oggetto evento e attiva i tag Event con le informazioni derivate sull’evento al suo payload.
+Una funzione personalizzata definisce `pageShownEventHandler` e ascolta gli eventi emessi dai Componenti core AEM, ricava le informazioni rilevanti dal Componente core, le inserisce in un oggetto evento e attiva i tag Event con le informazioni derivate dell&#39;evento al suo payload.
 
-La regola dei tag viene attivata utilizzando `trigger(...)` funzione che è __solo__ disponibile all&#39;interno della definizione dello snippet di codice personalizzato dell&#39;evento di una regola.
+La regola dei tag viene attivata utilizzando la funzione `trigger(...)` dei tag, che è __only__ disponibile nella definizione dello snippet di codice personalizzato dell&#39;evento di una regola.
 
-Il `trigger(...)` La funzione considera un oggetto evento come un parametro che a sua volta è esposto nei tag Elementi dati, da un altro nome riservato nei tag denominati `event`. Gli elementi dati nei tag ora possono fare riferimento ai dati di questo oggetto evento da `event` oggetto utilizzando una sintassi simile a `event.component['someKey']`.
+La funzione `trigger(...)` considera un oggetto evento come parametro che a sua volta è esposto in Tag elementi dati, con un altro nome riservato nei tag denominati `event`. Gli elementi dati nei tag ora possono fare riferimento ai dati di questo oggetto evento dall&#39;oggetto `event` utilizzando una sintassi come `event.component['someKey']`.
 
-Se `trigger(...)` viene utilizzato al di fuori del contesto del tipo di evento Codice personalizzato di un evento (ad esempio, in un’azione ), l’errore JavaScript `trigger is undefined` viene generato sul sito Web integrato con la proprietà tags.
+Se `trigger(...)` viene utilizzato al di fuori del contesto del tipo di evento Codice personalizzato di un evento (ad esempio, in un&#39;azione ), l&#39;errore di JavaScript `trigger is undefined` viene generato nel sito Web integrato con la proprietà tags.
 
 
 ### Elementi dati
 
 ![Elementi dati](assets/data-elements.png)
 
-Gli elementi dati dei tag mappano i dati dall’oggetto evento [attivato nell’evento Page Shown personalizzato](#page-event) alle variabili disponibili in Adobe Target, tramite il tipo di elemento dati Custom Code dell’estensione Core.
+Gli elementi dati dei tag associano i dati dell&#39;oggetto evento [attivato nell&#39;evento Page Shown personalizzato](#page-event) alle variabili disponibili in Adobe Target tramite il tipo di elemento dati Codice personalizzato dell&#39;estensione Core.
 
 #### Elemento dati ID pagina
 
@@ -137,7 +137,7 @@ Questo codice restituisce il titolo della pagina AEM.
 
 #### Messaggio di errore quando il cookie mboxDisable non è impostato
 
-![Errore di dominio del cookie di Target](assets/target-cookie-error.png)
+![Errore dominio cookie di destinazione](assets/target-cookie-error.png)
 
 ```
 > AT: [page-init] Adobe Target content delivery is disabled. Ensure that you can save cookies to your current domain, there is no "mboxDisable" cookie and there is no "mboxDisable" parameter in the query string.
@@ -146,7 +146,7 @@ Questo codice restituisce il titolo della pagina AEM.
 #### Soluzione
 
 I clienti di Target utilizzano talvolta istanze basate su cloud con Target per test o semplici prove di concetto. Questi domini e molti altri sono parte dell&#39;elenco dei suffissi pubblici .
-I browser moderni non salvano i cookie se si utilizzano questi domini, a meno che non si personalizzi `cookieDomain` impostazione tramite `targetGlobalSettings()`.
+I browser moderni non salvano i cookie se si utilizzano questi domini, a meno che non si personalizzi l&#39;impostazione `cookieDomain` utilizzando `targetGlobalSettings()`.
 
 ```
 window.targetGlobalSettings = {  
@@ -161,6 +161,6 @@ window.targetGlobalSettings = {
 ## Collegamenti di supporto
 
 + [Documentazione di Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki)
-+ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-+ [Utilizzo della documentazione di Adobe Client Data Layer e Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it)
-+ [Introduzione all’Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [Debugger Adobe Experience Cloud - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
++ [Utilizzo della documentazione Adobe Client Data Layer e Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it)
++ [Introduzione all&#39;Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

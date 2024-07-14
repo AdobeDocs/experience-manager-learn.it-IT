@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Passaggi per verificare e installare i ridistribuibili Microsoft Visual C++ a 32 bit richiesti
 
-*Questo video illustra il processo di verifica e installazione dei ridistribuibili Microsoft Visual C++ a 32 bit richiesti.*
+*Questo video illustra il processo di verifica e installazione dei redistribuibili Microsoft Visual C++ a 32 bit richiesti.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335520?quality=12&learn=on)

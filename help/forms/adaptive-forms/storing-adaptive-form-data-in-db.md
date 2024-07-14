@@ -29,7 +29,7 @@ Il caso d’uso prevede l’attivazione di un flusso di lavoro AEM all’invio d
 
    * Cercare &quot;Pool di connessioni JDBC&quot;. Crea un nuovo connection pool JDBC Day Commons. Specificare le impostazioni specifiche del database.
 
-   * ![Configurazione OSGi pool di connessioni JDBC](assets/aemformstutorial-jdbc.png)
+   * ![Configurazione OSGi del pool di connessioni JDBC](assets/aemformstutorial-jdbc.png)
 
 ## Specifica dettagli database
 
@@ -213,9 +213,9 @@ public class InsertAfData implements WorkflowProcess {
 * Specificare i dettagli del database utilizzando configMgr
 * [Scarica il file ZIP ed estrae il suo contenuto sul disco rigido](assets/article-assets.zip)
 
-   * Distribuisci il file jar tramite [Console web AEM](http://localhost:4502/system/console/bundles). Questo file jar contiene il codice per memorizzare i dati del modulo nel database.
+   * Distribuisci il file JAR utilizzando [console Web AEM](http://localhost:4502/system/console/bundles). Questo file jar contiene il codice per memorizzare i dati del modulo nel database.
 
-   * Importa i due file zip in [AEM utilizzando Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp). Questo ti darà la [workflow di esempio](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) e [modulo adattivo di esempio](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) che attiverà il flusso di lavoro all’invio del modulo. Osserva gli argomenti del processo nel passaggio del flusso di lavoro. Questi argomenti indicano il nome del modulo e il nome del file di dati che conterrà i dati del modulo adattivo. Il file di dati viene memorizzato nella cartella del payload nell’archivio crx. Osserva come [modulo adattivo](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) è configurato per attivare il flusso di lavoro AEM all’invio e la configurazione del file di dati (data.xml)
+   * Importa i due file zip in [AEM utilizzando Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp). Questo ti permetterà di ottenere il [flusso di lavoro di esempio](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) e il [modulo adattivo di esempio](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) che attiveranno il flusso di lavoro all&#39;invio del modulo. Osserva gli argomenti del processo nel passaggio del flusso di lavoro. Questi argomenti indicano il nome del modulo e il nome del file di dati che conterrà i dati del modulo adattivo. Il file di dati viene memorizzato nella cartella del payload nell’archivio crx. Nota come il [modulo adattivo](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) è configurato per attivare il flusso di lavoro AEM all&#39;invio e la configurazione del file di dati (data.xml)
 
    * Visualizza l’anteprima, compila il modulo e invia. Dovresti visualizzare una nuova riga creata nel database
 

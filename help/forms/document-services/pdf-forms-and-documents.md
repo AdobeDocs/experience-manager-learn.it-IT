@@ -28,15 +28,15 @@ Di seguito è riportato un esempio di file PDF/A in Acrobat DC.
 
 ![Pdfa](assets/pdfa-file-in-acrobat.png)
 
-I file di esempio possono essere [scaricato da qui](assets/pdf-file-types.zip)
+I file di esempio possono essere [scaricati da qui](assets/pdf-file-types.zip)
 
 ## PDF dell&#39;architettura XML Forms (PDF XFA)
 
-In Adobe, il termine modulo XFA PDF viene utilizzato per fare riferimento al Forms interattivo e dinamico creato con AEM Forms Designer. Il Forms e i file creati con Designer si basano sull’architettura XFA (XML Forms Architecture) di Adobe. In molti modi, il formato di file PDF XFA è più vicino a un file HTML che a un file PDF tradizionale. Il codice seguente, ad esempio, mostra l&#39;aspetto di un oggetto di testo semplice in un file PDF XFA.
+In Adobe, il termine modulo XFA PDF viene utilizzato per fare riferimento al Forms interattivo e dinamico creato con AEM Forms Designer. Forms e i file creati con Designer si basano sull&#39;architettura XFA (XML Forms Architecture) di Adobe. In molti modi, il formato di file PDF XFA è più vicino a un file HTML che a un file PDF tradizionale. Il codice seguente, ad esempio, mostra l&#39;aspetto di un oggetto di testo semplice in un file PDF XFA.
 
 ![Campo di testo](assets/text-field.JPG)
 
-I Forms XFA sono basati su XML. Questo formato ben strutturato e flessibile consente a un server AEM Forms di trasformare i file Designer in formati diversi, tra cui PDF tradizionale, PDF/A e HTML. È possibile visualizzare la struttura XML completa del Forms in Designer selezionando la scheda Origine XML dell&#39;Editor di layout. In AEM Forms Designer è possibile creare Forms XFA sia statici che dinamici.
+I Forms XFA sono basati su XML. Questo formato ben strutturato e flessibile consente a un server AEM Forms di trasformare i file Designer in diversi formati, tra cui PDF tradizionale, PDF/A e HTML. È possibile visualizzare la struttura XML completa del Forms in Designer selezionando la scheda Source XML dell&#39;Editor di layout. In AEM Forms Designer è possibile creare Forms XFA sia statici che dinamici.
 
 ## Static PDF
 
@@ -65,7 +65,7 @@ I PDF XFA dinamici possono modificare il layout in fase di runtime, pertanto le 
 
 >[!NOTE]
 >
-> È possibile creare file PDF dinamici utilizzando AEM Forms Designer salvando il file XDP come Adobe di modulo XML dinamico
+> È possibile creare PDF dinamici utilizzando AEM Forms Designer salvando XDP come Adobe di modulo XML dinamico
 
 >[!NOTE]
 >
@@ -86,7 +86,8 @@ Un documento certificato fornisce ai PDF documenti e forma i destinatari con ult
 
 ### Acroform
 
-Acroforms è la tecnologia di moduli interattivi precedente di Adobe; risale alla versione 3 di Acrobat. L&#39;Adobe fornisce [Riferimento API di Acrobat Forms](assets/FormsAPIReference.pdf), del maggio 2003, per fornire i dettagli tecnici di questa tecnologia. Le acroforme sono una combinazione dei seguenti elementi:
+Acroforms è la tecnologia di moduli interattivi precedente di Adobe; risale alla versione 3 di Acrobat. In questo Adobe viene fornito il [riferimento API di Acrobat Forms](assets/FormsAPIReference.pdf), datato maggio 2003, per fornire i dettagli tecnici di questa tecnologia. Le acroforme sono una combinazione di
+seguenti elementi:
 
 * PDF tradizionale che definisce il layout statico e gli elementi grafici del modulo.
 * Campi modulo interattivi aggiunti tramite gli strumenti modulo del programma Adobe Acrobat. Questi strumenti di modulo sono un piccolo sottoinsieme di ciò che è disponibile in AEM Forms Designer.

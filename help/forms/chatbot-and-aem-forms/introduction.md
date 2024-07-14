@@ -20,9 +20,9 @@ ht-degree: 2%
 
 Benvenuti nel nostro tutorial sull’utilizzo di un ChatBot per compilare un modulo PDF con Adobe Experience Manager Forms (AEM Forms) e inviarlo per la firma digitale utilizzando Adobe Sign.
 
-Il ChatBot è stato creato utilizzando [chatbot](https://www.chatbot.com/).
+ChatBot è stato creato utilizzando [chatbot](https://www.chatbot.com/).
 
-Ai fini di questo tutorial, i dati acquisiti in ChatBot verranno uniti a un [Modulo W-9](assets/fw9.xdp)
+Ai fini di questa esercitazione, verranno uniti i dati acquisiti in ChatBot con un modulo [W-9](assets/fw9.xdp)
 
 Il video seguente illustra il caso d’uso.
 

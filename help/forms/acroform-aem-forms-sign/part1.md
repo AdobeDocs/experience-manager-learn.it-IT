@@ -28,7 +28,7 @@ Le acroforme sono moduli creati con Acrobat. È possibile creare un nuovo modulo
 
 >[!NOTE]
 >
->Se desideri inviare l’acroforma compilabile per la firma utilizzando Acrobat Sign, assegna un nome ai campi di conseguenza. Ad esempio, puoi denominare un campo **`Sig_es_:signer1:signature`**. Questa è la sintassi che Acrobat Sign comprende.
+>Se desideri inviare l’acroforma compilabile per la firma utilizzando Acrobat Sign, assegna un nome ai campi di conseguenza. Ad esempio, è possibile denominare un campo **`Sig_es_:signer1:signature`**. Questa è la sintassi che Acrobat Sign comprende.
 
 >[!NOTE]
 >

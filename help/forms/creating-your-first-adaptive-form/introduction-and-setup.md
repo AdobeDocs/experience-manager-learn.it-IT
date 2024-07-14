@@ -32,9 +32,9 @@ Avrà bisogno di quanto segue:
 
 * **Si presume che sia in esecuzione AEM Forms versione 6.4 o successiva su localhost:4502.**
 
-* [Scaricare il client-libs-and-logo](assets/client-libs-and-logo.zip) e [getting-started-fragment](assets/getting-started-fragment.zip) sul disco rigido.
+* [Scarica il client-libs-and-logo](assets/client-libs-and-logo.zip) e il [getting-started-fragment](assets/getting-started-fragment.zip) sul disco rigido.
 
-* Importa i file zip in AEM utilizzando [gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+* Importa i file zip in AEM utilizzando [Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 
 ## Passaggi successivi
 

@@ -21,11 +21,11 @@ ht-degree: 0%
 
 # Modelli di pagina {#page-templates}
 
-In questo capitolo verrà esplorata la relazione tra un modello di pagina e una pagina. Creeremo un modello di articolo per la rivista non stilato, basato su alcuni modelli di [AdobeXD](https://www.adobe.com/products/xd.html). Durante la creazione del modello, vengono trattati i Componenti core e le configurazioni avanzate dei criteri.
+In questo capitolo verrà esplorata la relazione tra un modello di pagina e una pagina. Verrà creato un modello di articolo non formattato per Magazine basato su alcuni modelli di [AdobeXD](https://www.adobe.com/products/xd.html). Durante la creazione del modello, vengono trattati i Componenti core e le configurazioni avanzate dei criteri.
 
 ## Prerequisiti {#prerequisites}
 
-Si tratta di un tutorial in più parti in cui si presume che i passaggi descritti in [Creare contenuti e pubblicare modifiche](./author-content-publish.md) capitolo sono stati completati.
+Questo è un tutorial in più parti e si presume che i passaggi descritti nel capitolo [Modifica contenuto e pubblicazione](./author-content-publish.md) siano stati completati.
 
 ## Obiettivo
 
@@ -44,8 +44,8 @@ Quando crei una pagina, devi selezionare un modello, che viene utilizzato come b
 Sono disponibili 3 aree principali di [Modelli di pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=it):
 
 1. **Struttura** - definisce i componenti che fanno parte del modello. Non sono modificabili dagli autori di contenuti.
-1. **Contenuto iniziale** : definisce i componenti con cui inizia il modello, che possono essere modificati e/o eliminati dagli autori di contenuto
-1. **Criteri** : definisce le configurazioni sul comportamento dei componenti e sulle opzioni disponibili per gli autori.
+1. **Contenuto iniziale** - definisce i componenti con cui inizia il modello, che possono essere modificati e/o eliminati dagli autori di contenuto
+1. **Criteri**: definisce le configurazioni sul comportamento dei componenti e sulle opzioni disponibili per gli autori.
 
 Quindi, crea un nuovo modello in AEM che corrisponda alla struttura dei modelli. Ciò si verificherà in un’istanza locale dell’AEM. Segui i passaggi descritti nel video seguente:
 
@@ -58,11 +58,11 @@ Puoi utilizzare la miniatura seguente per identificare il modello (o caricarne u
 
 ### Pacchetto soluzione
 
-Una versione completata [Soluzione del modello Magazine](assets/page-templates/WKND-Magazine-Template-SOLUTION-1.1.zip) può essere scaricato e installato tramite Gestione pacchetti.
+È possibile scaricare e installare una [soluzione completata del modello di rivista](assets/page-templates/WKND-Magazine-Template-SOLUTION-1.1.zip) tramite Gestione pacchetti.
 
 ## Aggiornare intestazione e piè di pagina con frammenti esperienza {#experience-fragments}
 
-Una pratica comune durante la creazione di contenuti globali, ad esempio un’intestazione o un piè di pagina, consiste nell’utilizzare un’ [Frammento esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Frammenti di esperienza, consente agli utenti di combinare più componenti per creare un singolo componente di riferimento. I frammenti di esperienza hanno il vantaggio di supportare la gestione multisito e [localizzazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
+Per la creazione di contenuto globale, ad esempio un&#39;intestazione o un piè di pagina, è in genere consigliabile utilizzare un [frammento di esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Frammenti di esperienza, consente agli utenti di combinare più componenti per creare un singolo componente di riferimento. I frammenti di esperienza hanno il vantaggio di supportare la gestione multisito e la [localizzazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
 
 Il modello Sito ha generato un&#39;intestazione e un piè di pagina. Quindi, aggiorna i Frammenti esperienza in modo che corrispondano ai modelli. Segui i passaggi descritti nel video seguente:
 
@@ -70,7 +70,7 @@ Il modello Sito ha generato un&#39;intestazione e un piè di pagina. Quindi, agg
 
 Passaggi di alto livello per il video seguente:
 
-1. Scaricare il pacchetto di contenuti di esempio **[WKND-Starter-Assets-Skate-Article-1.2.zip](assets/page-templates/WKND-Starter-Assets-Skate-Article-1.2.zip)**.
+1. Scarica il pacchetto di contenuti di esempio **[WKND-Starter-Assets-Skate-Article-1.2.zip](assets/page-templates/WKND-Starter-Assets-Skate-Article-1.2.zip)**.
 1. Carica e installa il pacchetto di contenuti utilizzando Gestione pacchetti.
 1. Aggiorna i frammenti esperienza intestazione e piè di pagina per utilizzare il logo WKND
 
@@ -80,7 +80,7 @@ Quindi, crea una nuova pagina utilizzando il modello Pagina articolo rivista. Cr
 
 >[!VIDEO](https://video.tv.adobe.com/v/332917?quality=12&learn=on)
 
-Utilizza il [testo fornito](./assets/page-templates/la-skateparks-copy.txt) per popolare il corpo dell&#39;articolo.
+Utilizza il testo [fornito](./assets/page-templates/la-skateparks-copy.txt) per popolare il corpo dell&#39;articolo.
 
 ## Congratulazioni. {#congratulations}
 
@@ -88,8 +88,8 @@ Congratulazioni, hai appena creato un nuovo modello e una nuova pagina con Adobe
 
 ### Passaggi successivi {#next-steps}
 
-A questo punto la pagina dell’articolo della rivista e il sito non corrispondono agli stili del brand per WKND. Segui le [Theming](theming.md) esercitazione per scoprire le best practice per aggiornare il codice front-end CSS e JavaScript utilizzato per applicare stili globali al sito.
+A questo punto la pagina dell’articolo della rivista e il sito non corrispondono agli stili del brand per WKND. Segui l&#39;esercitazione [Theming](theming.md) per scoprire le best practice per aggiornare il codice front-end CSS e JavaScript utilizzato per applicare stili globali al sito.
 
 ### Pacchetto soluzione
 
-È disponibile un pacchetto di soluzione per questo capitolo da scaricare: [WKND-Magazine-Template-SOLUTION-1.0.zip](assets/page-templates/WKND-Magazine-Template-SOLUTION-1.0.zip).
+È possibile scaricare un pacchetto di soluzione per questo capitolo: [WKND-Magazine-Template-SOLUTION-1.0.zip](assets/page-templates/WKND-Magazine-Template-SOLUTION-1.0.zip).

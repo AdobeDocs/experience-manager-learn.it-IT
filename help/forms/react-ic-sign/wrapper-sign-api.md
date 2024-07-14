@@ -22,14 +22,14 @@ ht-degree: 0%
 È stato sviluppato un bundle AEM personalizzato per creare e restituire il modulo web all’utente finale
 
 * [Crea documento transitorio](https://secure.na1.echosign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument). Il documento caricato tramite questa chiamata è definito transitorio poiché è disponibile solo per 7 giorni dopo il caricamento. L’ID documento transitorio restituito può essere utilizzato nelle chiamate API in cui è necessario fare riferimento al file caricato. La richiesta di documento transitorio è una richiesta multipla costituita da tre parti: nome file, tipo mime e flusso di file. Con questa richiesta puoi caricare un solo file alla volta.
-* [Crea modulo web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget).Questo è un endpoint primario utilizzato per creare un nuovo modulo web. Il modulo web è stato creato in stato ATTIVO per ospitarlo immediatamente.
-* [Recuperare il modulo web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/getWidgets).Recupera il sito web dell’utente. Questo modulo web viene quindi presentato all’applicazione chiamante per la firma del documento.
+* [Crea modulo Web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget).Si tratta di un endpoint primario utilizzato per creare un nuovo modulo Web. Il modulo web è stato creato in stato ATTIVO per ospitarlo immediatamente.
+* [Recupera il modulo Web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/getWidgets).Recupera il modulo Web dell&#39;utente. Questo modulo web viene quindi presentato all’applicazione chiamante per la firma del documento.
 
 ## Creare la configurazione OSGi di Acrobat Sign
 
 L’API REST di Acrobat Sign richiede la chiave di integrazione e l’e-mail associate alla chiave di integrazione. Questi due valori vengono forniti come proprietà di configurazione OSGi, come illustrato di seguito
 
-![configurazione di accesso](assets/sign-configuration.png)
+![firma-configurazione](assets/sign-configuration.png)
 
 ```java
 package com.acrobatsign.core.configuration;

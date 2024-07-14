@@ -42,6 +42,6 @@ Segui il video per aggiungere le credenziali all’utente fd-service
 
 Il comando per elencare i dettagli del file pfx è. Il comando seguente presuppone che ci si trovi nella stessa directory del file pfx.
 
-**keytool -v -list -storetype pkcs12 -keystore &lt;name of=&quot;&quot; your=&quot;&quot; pfx=&quot;&quot; file=&quot;&quot;>**
+**keytool -v -list -storetype pkcs12 -keystore &lt;nome del file .pfx>**
 
 Ad esempio, keytool -v -list -storetype pkcs12 -keystore 1005566.pfx dove 1005566.pfx è il nome del file pfx

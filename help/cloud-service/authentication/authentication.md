@@ -49,7 +49,7 @@ Per informazioni dettagliate su come impostare e utilizzare l’approccio di aut
       <a  href="./saml-2-0.md"><img alt="SAML 2.0" src="./assets/card--saml-2-0.png"/></a>
       <div><strong><a href="./saml-2-0.md">SAML 2.0</a></strong></div>
       <p>
-        Autentica l’utente del sito web in un IDP utilizzando l’integrazione SAML 2.0 del servizio di pubblicazione AEM.
+        Autentica l’utente del sito web in un IDP utilizzando l’integrazione SAML 2.0 del servizio Publish dell’AEM.
       </p>
     </td>   
    <td>

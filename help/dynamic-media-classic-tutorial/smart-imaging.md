@@ -21,7 +21,7 @@ Uno degli aspetti più importanti dell’esperienza del cliente sul sito web o s
 
 L’imaging intelligente beneficia inoltre dell’aumento delle prestazioni derivante dalla piena integrazione con il servizio Adobe di prima qualità. Questo servizio individua il percorso Internet ottimale tra server, reti e peer point con latenza e/o frequenza di perdita dei pacchetti più bassa rispetto al percorso predefinito su Internet.
 
-Ulteriori informazioni su [Imaging avanzato](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html).
+Ulteriori informazioni su [Smart Imaging](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html).
 
 ## Vantaggi dell&#39;imaging intelligente
 
@@ -33,7 +33,7 @@ Poiché le immagini rappresentano la maggior parte del tempo di caricamento di u
 
 Come accennato in precedenza, Smart Imaging sfrutta le funzionalità di intelligenza artificiale di Adobe Sensei e funziona con i predefiniti immagine esistenti per convertire automaticamente le immagini in formati di immagine di nuova generazione ottimali, come WebP, mantenendo al contempo la fedeltà visiva.
 
-Ulteriori informazioni su [Funzionamento dell&#39;imaging avanzato](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), inclusi dettagli quali i formati immagine supportati (e cosa accade se non li utilizzi) e il loro impatto sui predefiniti immagine esistenti in uso.
+Ulteriori informazioni su [Funzionamento di Smart Imaging](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), inclusi dettagli quali i formati immagine supportati (e cosa accade se non si utilizzano tali formati) e il relativo impatto sui predefiniti immagine esistenti in uso.
 
 ## Impatto dell&#39;imaging intelligente
 
@@ -51,8 +51,8 @@ L’abilitazione di Smart Imaging inizia con l’invio di una richiesta al suppo
 
 Dopo aver attivato Smart Imaging, è necessario verificare che funzioni come previsto.
 
-Probabilmente hai ulteriori domande sull’imaging avanzato. Abbiamo compilato un elenco di domande frequenti (FAQ) con le risposte. Leggi le [Domande frequenti](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html).
+Probabilmente hai ulteriori domande sull’imaging avanzato. Abbiamo compilato un elenco di domande frequenti (FAQ) con le risposte. Leggi le [domande frequenti](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html).
 
 ## Risorse aggiuntive
 
-Osserva [Dynamic Media Classic: ottimizzazione delle prestazioni delle pagine Skill Builder](https://seminars.adobeconnect.com/pzc1gw0cihpv) webinar on-demand per ulteriori informazioni sulla tecnologia Smart Imaging.
+Guarda il webinar on-demand [Dynamic Media Classic Optimizing Page Performance Skill Builder](https://seminars.adobeconnect.com/pzc1gw0cihpv) per ulteriori informazioni sull&#39;imaging avanzato.

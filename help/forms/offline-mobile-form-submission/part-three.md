@@ -22,20 +22,20 @@ L’ultimo e ultimo passaggio consiste nel creare un flusso di lavoro AEM che ge
 
 La schermata seguente mostra i passaggi coinvolti nel flusso di lavoro.
 
-![workflow](assets/workflow.PNG)
+![flusso di lavoro](assets/workflow.PNG)
 
 ## Genera passaggio del flusso di lavoro di PDF non interattivo
 
-Il modello XDP e i dati da unire con il modello sono specificati qui. I dati da unire sono i dati inviati dal PDF. I dati inviati vengono memorizzati nel nodo `/content/pdfsubmissions`.
+Il modello XDP e i dati da unire con il modello sono specificati qui. I dati da unire sono i dati inviati dal PDF. I dati inviati sono archiviati nel nodo `/content/pdfsubmissions`.
 
-![workflow](assets/generate-pdf1.PNG)
+![flusso di lavoro](assets/generate-pdf1.PNG)
 
-Il PDF generato viene assegnato alla variabile del flusso di lavoro denominata `submittedPDF`.
+Il PDF generato è assegnato alla variabile del flusso di lavoro denominata `submittedPDF`.
 
-![workflow](assets/generate-pdf2.PNG)
+![flusso di lavoro](assets/generate-pdf2.PNG)
 
 ### Assegna il PDF generato per la revisione e l’approvazione
 
-Il componente Assegna flusso di lavoro delle attività viene utilizzato qui per assegnare il PDF generato per la revisione e l’approvazione. La variabile `submittedPDF` viene utilizzato nella scheda Forms and Documents del componente Assegna attività del flusso di lavoro.
+Il componente Assegna flusso di lavoro delle attività viene utilizzato qui per assegnare il PDF generato per la revisione e l’approvazione. La variabile `submittedPDF` è utilizzata nella scheda Forms e Documenti del componente del flusso di lavoro Assegna attività.
 
-![workflow](assets/assign-task.PNG)
+![flusso di lavoro](assets/assign-task.PNG)

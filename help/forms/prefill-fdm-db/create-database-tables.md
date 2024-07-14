@@ -21,16 +21,16 @@ ht-degree: 1%
 
 Il modello dati del modulo può essere basato su origini RDBMS, RESTfull, SOAP o OData. Questo corso è incentrato sulla precompilazione di un modulo adattivo utilizzando un modello di dati del modulo supportato da un’origine dati RDBMS. Ai fini di questa esercitazione è stato utilizzato il database MYSQL. Abbiamo creato le due tabelle seguenti per dimostrare il caso d’uso
 
-* **newhire** tabella: in questa tabella vengono memorizzate le nuove informazioni
+* **newhire** tabella - Questa tabella memorizza le informazioni newhire
 
   ![newhire](assets/newhire-table.png)
 
 
-* **beneficiari** tabella: in questa tabella vengono memorizzati i beneficiari
+* Tabella **beneficiari** - Memorizza i nuovi beneficiari
 
   ![beneficiari](assets/beneficiaries-table.png)
 
-È possibile importare [file sql](assets/db-schema.sql) utilizzo di MySQL Workbench per creare tabelle con alcuni dati di esempio.
+È possibile importare il [file SQL](assets/db-schema.sql) utilizzando MySQL Workbench per creare in tabelle con alcuni dati di esempio.
 
 ## Passaggi successivi
 

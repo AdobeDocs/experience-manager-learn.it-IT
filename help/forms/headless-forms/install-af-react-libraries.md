@@ -32,11 +32,11 @@ Aggiorna il file package.json per includere le dipendenze seguenti. Al momento d
 
 >[!NOTE]
 >
->L’elenco a discesa e il layout della scheda in questa esercitazione sono stati creati utilizzando [Libreria interfaccia utente materiale](https://mui.com/). Dovrai scaricare i pacchetti di interfaccia utente Materiali appropriati per far funzionare il codice sul tuo sistema.
+>L&#39;elenco a discesa e il layout della scheda in questa esercitazione sono stati creati utilizzando [Libreria interfaccia utente materiali](https://mui.com/). Dovrai scaricare i pacchetti di interfaccia utente Materiali appropriati per far funzionare il codice sul tuo sistema.
 
 ## Imposta proxy
 
-La condivisione CORS (Cross-Origin Resource Sharing) è un meccanismo di sicurezza che impedisce ai browser web di effettuare richieste a un dominio diverso da quello su cui è ospitata l’app. Possono verificarsi errori CORS quando si tenta di recuperare dati da un’API ospitata su un dominio diverso. Configurando un proxy, puoi aggirare le restrizioni CORS e effettuare richieste all’API dall’app React. Ho utilizzato il seguente codice in un file denominato setUpProxy.js nella cartella src. **Assicurati di modificare la destinazione in modo che punti all’istanza Publish.**
+La condivisione CORS (Cross-Origin Resource Sharing) è un meccanismo di sicurezza che impedisce ai browser web di effettuare richieste a un dominio diverso da quello su cui è ospitata l’app. Possono verificarsi errori CORS quando si tenta di recuperare dati da un’API ospitata su un dominio diverso. Configurando un proxy, puoi aggirare le restrizioni CORS e effettuare richieste all’API dall’app React. Ho utilizzato il seguente codice in un file denominato setUpProxy.js nella cartella src. **Assicurarsi di modificare la destinazione in modo che punti all&#39;istanza di pubblicazione.**
 
 ```
 const { createProxyMiddleware } = require('http-proxy-middleware');
@@ -56,7 +56,7 @@ module.exports = function(app) {
 };
 ```
 
-È inoltre necessario installare e aggiungere **http-proxy-middleware** al progetto.
+È inoltre necessario installare e aggiungere il modulo **http-proxy-middleware** al progetto.
 
 ## Passaggi successivi
 

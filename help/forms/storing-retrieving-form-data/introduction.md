@@ -25,7 +25,7 @@ Questo tutorial illustra i passaggi necessari per salvare e recuperare i dati de
 
 * Effettuare una chiamata POST a un servlet. Questo servlet memorizza i dati nel database. I dati archiviati sono associati a un GUID
 
-* Per compilare il modulo adattivo con i dati memorizzati, è necessario recuperare i dati associati al GUID e popolare il modulo adattivo utilizzando **request.setAttribute** metodo.
+* Per compilare il modulo adattivo con i dati memorizzati, è necessario recuperare i dati associati al GUID e popolare il modulo adattivo utilizzando il metodo **request.setAttribute**.
 
 ## Dimostrazione del caso d’uso
 

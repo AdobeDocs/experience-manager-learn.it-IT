@@ -20,11 +20,11 @@ ht-degree: 0%
 
 Il componente Flusso di lavoro acquisisce informazioni relative alla pagina in cui sono elencate le risorse, ad esempio il modello di pagina, il tipo di risorsa del componente e la cartella di base in cui archiviare le pagine generate.
 
-![workflow-component](assets/workflow-component.png)
+![componente-flusso di lavoro](assets/workflow-component.png)
 
 ## Implementazione del processo del flusso di lavoro
 
-Il seguente codice Java è stato associato al componente del flusso di lavoro. Il codice crea la pagina del kit di benvenuto ed estrae i valori dalle variabili del flusso di lavoro (submitterName e documentsSelected). Questi valori vengono quindi impostati come proprietà dei componenti utilizzati nella pagina. Il codice imposta anche il valore della variabile di processo del flusso di lavoro **welcomeUrl**.
+Il seguente codice Java è stato associato al componente del flusso di lavoro. Il codice crea la pagina del kit di benvenuto ed estrae i valori dalle variabili del flusso di lavoro (submitterName e documentsSelected). Questi valori vengono quindi impostati come proprietà dei componenti utilizzati nella pagina. Il codice imposta inoltre il valore della variabile **welcomekiturl** del processo di workflow.
 
 ```java
 package com.welcomekit.core.workflowprocess;

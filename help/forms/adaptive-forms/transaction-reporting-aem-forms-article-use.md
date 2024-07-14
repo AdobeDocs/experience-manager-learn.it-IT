@@ -37,9 +37,9 @@ Per visualizzare il rapporto sulle transazioni, accedi ad AEM Forms come amminis
 
 Seleziona strumenti | Forms | Visualizza report transazioni
 
-oppure visualizzare il report della transazione facendo clic su [qui](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
+oppure visualizzare il report delle transazioni facendo clic [qui](http://localhost:4502/mnt/overlay/fd/transaction/gui/content/report.html)
 
-![Reporting sulle transazioni](assets/transactionreporting.gif)
+![Generazione rapporti sulle transazioni](assets/transactionreporting.gif)
 
 Nella schermata precedente Documento elaborato indica il numero di documenti generati utilizzando i servizi documentali. Documenti sottoposti a rendering indica il numero di documenti di comunicazione interattiva (Web e stampa) sottoposti a rendering. Forms inviato indica il numero di invii di moduli adattivi.
 
@@ -49,4 +49,4 @@ Azioni quali l’invio di un modulo PDF, l’utilizzo dell’interfaccia utente 
 
 Se visualizzi il rapporto sulle transazioni nell’istanza di authoring, assicurati che la replica inversa sia configurata su tutte le istanze di pubblicazione.
 
-Per ulteriori informazioni sulla generazione di rapporti sulle transazioni [fai clic qui](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
+Per ulteriori informazioni sulla segnalazione delle transazioni [fai clic qui](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)

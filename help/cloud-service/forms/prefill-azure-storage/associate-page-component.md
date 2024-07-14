@@ -18,7 +18,7 @@ ht-degree: 4%
 
 # Associare il componente Pagina al modello
 
-Il passaggio successivo consiste nell’associare il componente Pagina al nuovo modello di modulo adattivo. In questo modo il codice nel componente Pagina viene eseguito ogni volta che viene eseguito il rendering di un modulo adattivo basato sul nuovo modello. Ai fini del presente tutorial, viene utilizzato un nuovo modello di modulo adattivo denominato **StoreAndRestoreFromAzure** è stato creato in **AzurePortalStorage** cartella.
+Il passaggio successivo consiste nell’associare il componente Pagina al nuovo modello di modulo adattivo. In questo modo il codice nel componente Pagina viene eseguito ogni volta che viene eseguito il rendering di un modulo adattivo basato sul nuovo modello. Ai fini di questa esercitazione, nella cartella **AzurePortalStorage** è stato creato un nuovo modello di modulo adattivo denominato **StoreAndRestoreFromAzure**.
 Passa al nodo /conf/AzurePortalStorage/settings/wcm/templates/storeandrestore efromazure/initial/jcr:content, aggiungi la seguente proprietà e salva le modifiche.
 
 | **Nome proprietà** | **Tipo di proprietà** | **Valore proprietà** |
@@ -26,7 +26,9 @@ Passa al nodo /conf/AzurePortalStorage/settings/wcm/templates/storeandrestore ef
 | sling:resourceType | Stringa | azureportalpagecomponent/component/page/storeandfetch |
 
 Passa a /conf/AzurePortalStorage/settings/wcm/templates/storeandrestore efromazure/structure/jcr:content node, aggiungi la seguente proprietà e salva le modifiche.
-| **Nome proprietà**  | **Tipo di proprietà** | **Valore proprietà**                                    | --------------------|-------------------|-------------------------------------------------------| | sling:resourceType | Stringa | azureportalpagecomponent/component/page/storeandfetch |
+| **Nome proprietà**  | **Tipo di proprietà** | **Valore proprietà**                                    |
+--------------------|-------------------|-------------------------------------------------------|
+| sling:resourceType | Stringa            | azureportalpagecomponent/component/page/storeandfetch |
 
 
 ## Passaggi successivi

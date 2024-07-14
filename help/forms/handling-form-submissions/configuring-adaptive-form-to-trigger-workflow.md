@@ -28,15 +28,15 @@ Il modulo di esempio utilizzato in questo flusso di lavoro è basato su un model
 ### Ottenere i modelli di modulo adattivo
 
 * Scarica [Modello modulo adattivo](assets/af-form-template.zip)
-* [Importare il modello utilizzando Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+* [Importa il modello utilizzando Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 * Caricare e installare il modello di modulo adattivo
 
 ### Ottieni il modulo adattivo di esempio
 
 * Scarica [Modulo adattivo](assets/peak-application-form.zip)
-* Sfoglia per [Modulo E Documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Passa a [Modulo e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Fai clic su Crea -> Caricamento file
-* Il modulo adattivo di esempio viene inserito in una cartella denominata [Forms applicazione](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
+* Il modulo adattivo di esempio si trova in una cartella denominata [Application Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
 Il video seguente spiega come configurare un modulo adattivo per attivare un flusso di lavoro AEM
 >[!VIDEO](https://video.tv.adobe.com/v/40258?quality=12&learn=on)

@@ -33,7 +33,7 @@ L&#39;interfaccia utente Casella in entrata fornisce viste elenco e calendario p
 ## Personalizzazione delle colonne
 
 [Apri casella in entrata AEM](http://localhost:4502/aem/inbox)
-Apri Admin Control facendo clic sul pulsante _Vista a elenco_ e quindi selezionando _Admin Control_ come mostrato nella schermata seguente
+Apri Admin Control facendo clic sull&#39;icona _Vista elenco_ e selezionando _Controllo amministratore_ come illustrato nella schermata seguente
 
 ![admin-control](assets/open-customization.png)
 

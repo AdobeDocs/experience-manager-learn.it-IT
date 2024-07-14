@@ -1,6 +1,6 @@
 ---
 title: Tag avanzati per le immagini con AEM Assets
-description: I tag avanzati per le immagini consentono di migliorare le funzionalità di ricerca AEM aggiungendo automaticamente e in modo intelligente tag di metadati alle risorse di immagini in base al contenuto dell’immagine.
+description: I tag avanzati per le immagini consentono di migliorare le funzionalità di ricerca dell’AEM aggiungendo automaticamente e in modo intelligente tag di metadati alle risorse di immagini in base al contenuto.
 topic: Content Management
 feature: Smart Tags
 role: User
@@ -28,7 +28,7 @@ Grazie ai tag avanzati di AEM Assets per le immagini, la ricerca di AEM Assets v
 ## Preparazione per AEM 6.x{#set-up}
 
 >[!NOTE]
-> Viene eseguito automaticamente il provisioning di tag avanzati per le immagini per AEM as a Cloud Service.
+> Il provisioning di Tag avanzati per le immagini viene eseguito automaticamente per AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17023?quality=12&learn=on)
 

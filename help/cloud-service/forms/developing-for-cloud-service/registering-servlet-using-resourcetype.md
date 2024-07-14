@@ -24,7 +24,9 @@ I servlet di binding per percorsi presentano diversi svantaggi rispetto all’as
 
 * I servlet associati al percorso non possono essere controllati per l’accesso utilizzando gli ACL predefiniti dell’archivio JCR
 * I servlet associati al percorso possono essere registrati solo in un percorso e non in un tipo di risorsa (ovvero senza gestione dei suffissi)
-* Se un servlet associato al percorso non è attivo, ad esempio se il bundle manca o non viene avviato, un POST potrebbe produrre risultati imprevisti. in genere, creazione di un nodo in corrispondenza di `/bin/xyz` che in seguito sovrappone il percorso dei servlet. Il binding della mappatura non è trasparente per uno sviluppatore che guarda solo all’archivio. Dati questi inconvenienti, si consiglia vivamente di associare i servlet ai tipi di risorse anziché ai percorsi
+* Se un servlet associato al percorso non è attivo, ad esempio se il bundle manca o non viene avviato, un POST potrebbe produrre risultati imprevisti. in genere viene creato un nodo in `/bin/xyz` che successivamente sovrappone l&#39;associazione del percorso dei servlet
+la mappatura non è trasparente per uno sviluppatore che guarda solo l’archivio
+Dati questi inconvenienti, si consiglia di associare i servlet ai tipi di risorse anziché ai percorsi
 
 ## Crea servlet
 
@@ -82,10 +84,10 @@ public class GetFieldChoices extends SlingAllMethodsServlet implements Serializa
 ## Creare risorse in CRX
 
 * Accedi al tuo SDK AEM locale.
-* Crea una risorsa denominata `fetchchoices` (puoi denominare il nodo come preferisci) di tipo `cq:Page` sotto il nodo del contenuto.
+* Creare una risorsa denominata `fetchchoices` (è possibile denominare il nodo come desiderato) di tipo `cq:Page` nel nodo di contenuto.
 * Salva le modifiche
 * Crea un nodo denominato `jcr:content` di tipo `cq:PageContent` e salva le modifiche
-* Aggiungi le seguenti proprietà alla `jcr:content` nodo
+* Aggiungi le seguenti proprietà al nodo `jcr:content`
 
 | Nome proprietà | Valore proprietà |
 |--------------------|--------------------|
@@ -93,21 +95,21 @@ public class GetFieldChoices extends SlingAllMethodsServlet implements Serializa
 | sling:resourceType | `azure/fetchchoices` |
 
 
-Il `sling:resourceType` il valore deve corrispondere a resourceTypes=&quot;azure/fetchoptions specificato nel servlet.
+Il valore `sling:resourceType` deve corrispondere a resourceTypes=&quot;azure/fetchoptions specificato nel servlet.
 
-Ora puoi richiamare il servlet richiedendo la risorsa con `sling:resourceType` = `azure/fetchchoices` nel suo percorso completo, con eventuali selettori o estensioni registrati nel servlet Sling.
+Ora puoi richiamare il servlet richiedendo la risorsa con `sling:resourceType` = `azure/fetchchoices` nel suo percorso completo, con eventuali selettori o estensioni registrate nel servlet Sling.
 
 ```html
 http://localhost:4502/content/fetchchoices/jcr:content.json?formPath=/content/forms/af/forrahul/jcr:content/guideContainer
 ```
 
-Il percorso `/content/fetchchoices/jcr:content` è il percorso della risorsa e dell’estensione `.json` è quanto specificato nel servlet
+Il percorso `/content/fetchchoices/jcr:content` è il percorso della risorsa ed estensione `.json` è ciò che è specificato nel servlet
 
 ## Sincronizza il progetto AEM
 
 1. Apri il progetto AEM nel tuo editor preferito. Ho usato intelliJ per questo.
 1. Crea una cartella denominata `fetchchoices` in `\aem-banking-application\ui.content\src\main\content\jcr_root\content`
-1. Clic destro `fetchchoices` cartella e seleziona `repo | Get Command` Questa voce di menu è impostata in un capitolo precedente di questa esercitazione.
+1. Fare clic con il pulsante destro del mouse sulla cartella `fetchchoices` e selezionare `repo | Get Command` (questa voce di menu è impostata in un capitolo precedente di questa esercitazione).
 
 Questo dovrebbe sincronizzare il nodo dall’AEM al progetto AEM locale.
 
@@ -119,7 +121,7 @@ Aggiorna il file filter.xml nella cartella aem-banking-application\ui.content\sr
 <filter root="/content/fetchchoices" mode="merge"/>
 ```
 
-Ora puoi inviare le modifiche a un ambiente as a Cloud Service AEM utilizzando Cloud Manager.
+Ora puoi inviare le modifiche a un ambiente AEM as a Cloud Service utilizzando Cloud Manager.
 
 ## Passaggi successivi
 

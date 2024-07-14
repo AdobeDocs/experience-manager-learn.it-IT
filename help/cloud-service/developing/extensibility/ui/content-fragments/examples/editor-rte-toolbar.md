@@ -25,23 +25,23 @@ Scopri come aggiungere un pulsante personalizzato alla barra degli strumenti del
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420768?quality=12&learn=on)
 
-È possibile aggiungere pulsanti personalizzati alla **Barra degli strumenti dell’editor Rich Text** nell’Editor frammento di contenuto utilizzando `rte` punto di estensione. Questo esempio mostra come aggiungere un pulsante personalizzato denominato _Aggiungi suggerimento_ sulla barra degli strumenti dell’editor Rich Text e modificare il contenuto all’interno dell’editor Rich Text.
+I pulsanti personalizzati possono essere aggiunti alla barra degli strumenti **Editor Rich Text** nell&#39;Editor frammenti di contenuto utilizzando il punto di estensione `rte`. In questo esempio viene illustrato come aggiungere un pulsante personalizzato denominato _Aggiungi suggerimento_ alla barra degli strumenti dell&#39;editor Rich Text e modificare il contenuto dell&#39;editor Rich Text.
 
-Utilizzo di `rte` del punto di estensione `getCustomButtons()` metodo è possibile aggiungere uno o più pulsanti personalizzati al **Barra degli strumenti dell’editor Rich Text**. È inoltre possibile aggiungere o rimuovere pulsanti standard dell’editor Rich Text, come _Copia, Incolla, Grassetto e Corsivo_ utilizzo `getCoreButtons()` e `removeButtons)` metodi.
+Utilizzando il metodo `getCustomButtons()` del punto di estensione di `rte` è possibile aggiungere uno o più pulsanti personalizzati alla barra degli strumenti **Editor Rich Text**. È inoltre possibile aggiungere o rimuovere pulsanti standard dell&#39;editor Rich Text come _Copia, Incolla, Grassetto e Corsivo_ utilizzando i metodi `getCoreButtons()` e `removeButtons)` rispettivamente.
 
-In questo esempio viene illustrato come inserire una nota o un suggerimento evidenziato utilizzando l&#39;opzione _Aggiungi suggerimento_ pulsante della barra degli strumenti. Il contenuto della nota o del suggerimento evidenziato presenta una formattazione speciale applicata tramite elementi HTML e le classi CSS associate. Il contenuto segnaposto e il codice HTML vengono inseriti utilizzando `onClick()` metodo di callback di `getCustomButtons()`.
+In questo esempio viene illustrato come inserire una nota o un suggerimento evidenziato utilizzando il pulsante personalizzato _Aggiungi suggerimento_ della barra degli strumenti. Il contenuto della nota o del suggerimento evidenziato presenta una formattazione speciale applicata tramite elementi HTML e le classi CSS associate. Il contenuto segnaposto e il codice HTML vengono inseriti utilizzando il metodo di callback `onClick()` di `getCustomButtons()`.
 
 ## Punto di estensione
 
-Questo esempio si estende al punto di estensione `rte` per aggiungere un pulsante personalizzato alla barra degli strumenti dell’Editor Rich Text nell’Editor frammento di contenuto.
+Questo esempio si estende al punto di estensione `rte` per aggiungere un pulsante personalizzato alla barra degli strumenti dell’editor Rich Text nell’Editor frammento di contenuto.
 
 | Interfaccia utente AEM estesa | Punto di estensione |
 | ------------------------ | --------------------- | 
-| [Editor frammento di contenuto](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Barra degli strumenti dell’editor Rich Text](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/) |
+| [Editor frammento di contenuto](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Barra degli strumenti Editor Rich Text](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/) |
 
 ## Estensione di esempio
 
-Nell&#39;esempio seguente viene creata una _Aggiungi suggerimento_ nella barra degli strumenti dell’editor Rich Text. L’azione clic inserisce il testo segnaposto nella posizione corrente del punto di inserimento nell’editor Rich Text.
+Nell&#39;esempio seguente viene creato un pulsante personalizzato _Aggiungi suggerimento_ nella barra degli strumenti dell&#39;editor Rich Text. L’azione clic inserisce il testo segnaposto nella posizione corrente del punto di inserimento nell’editor Rich Text.
 
 Il codice mostra come aggiungere il pulsante personalizzato con un’icona e registrare la funzione di gestione dei clic.
 
@@ -49,12 +49,12 @@ Il codice mostra come aggiungere il pulsante personalizzato con un’icona e reg
 
 `ExtensionRegistration.js`, mappato alla route index.html, è il punto di ingresso per l&#39;estensione AEM e definisce:
 
-+ Definizione del pulsante della barra degli strumenti dell’editor Rich Text in `getCustomButtons()` funzione con `id, tooltip and icon` attributi.
-+ Il gestore di clic per il pulsante, nel `onClick()` funzione.
-+ La funzione di gestione dei clic riceve `state` come argomento per ottenere il contenuto dell’editor Rich Text in formato HTML o testo. Tuttavia, in questo esempio non viene utilizzato.
-+ La funzione del gestore di clic restituisce un array di istruzioni. Questo array ha un oggetto con `type` e `value` attributi. Per inserire il contenuto, `value` attributi frammento di codice HTML, il `type` utilizza l&#39; `insertContent`. Se è presente un caso d’uso per sostituire il contenuto, il caso d’uso `replaceContent` tipo di istruzione.
++ Definizione del pulsante della barra degli strumenti dell&#39;editor Rich Text nella funzione `getCustomButtons()` con attributi `id, tooltip and icon`.
++ Gestore di clic per il pulsante, nella funzione `onClick()`.
++ La funzione del gestore di clic riceve l&#39;oggetto `state` come argomento per ottenere il contenuto dell&#39;editor Rich Text in formato HTML o testo. Tuttavia, in questo esempio non viene utilizzato.
++ La funzione del gestore di clic restituisce un array di istruzioni. Questo array ha un oggetto con `type` e `value` attributi. Per inserire il contenuto, lo snippet di codice HTML degli attributi `value`, l&#39;attributo `type` utilizza `insertContent`. Se esiste un caso d&#39;uso per sostituire il contenuto, il caso d&#39;uso è il tipo di istruzione `replaceContent`.
 
-Il `insertContent` value è una stringa HTML, `<div class=\"cmp-contentfragment__element-tip\"><div>TIP</div><div>Add your tip text here...</div></div>`. Le classi CSS `cmp-contentfragment__element-tip` utilizzato per visualizzare il valore non sono definiti nel widget, ma sono implementati nell’esperienza web su cui viene visualizzato il campo Frammento di contenuto.
+Il valore `insertContent` è una stringa HTML, `<div class=\"cmp-contentfragment__element-tip\"><div>TIP</div><div>Add your tip text here...</div></div>`. Le classi CSS `cmp-contentfragment__element-tip` utilizzate per visualizzare il valore non sono definite nel widget, ma implementate nell&#39;esperienza Web in cui viene visualizzato il campo Frammento di contenuto.
 
 
 `src/aem-cf-editor-1/web-src/src/components/ExtensionRegistration.js`

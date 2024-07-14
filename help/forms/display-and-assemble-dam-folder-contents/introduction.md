@@ -20,7 +20,7 @@ ht-degree: 4%
 
 Un caso d’uso comune consiste nell’elencare i contenuti della cartella DAM (file PDF, documenti Word, ecc.) utilizzando il componente Casella di controllo e consentire all’utente di selezionare i file da scaricare. I file selezionati verranno assemblati in un unico file scaricabile dall&#39;utente.
 
-![caso d’uso](assets/newsletters-download1.png)
+![caso d&#39;uso](assets/newsletters-download1.png)
 
 ## Prerequisiti
 

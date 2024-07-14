@@ -22,7 +22,7 @@ ht-degree: 0%
 
 {{edge-delivery-services}}
 
-L&#39;AEM fornisce [Componenti modificabili di React AEM v2](https://www.npmjs.com/package/@adobe/aem-react-editable-components): SDK basato su Node.js che consente la creazione di componenti React che supportano la modifica di componenti nel contesto tramite l’Editor SPA dell’AEM.
+L&#39;AEM fornisce [AEM React Editable Components v2](https://www.npmjs.com/package/@adobe/aem-react-editable-components), un SDK basato su Node.js che consente la creazione di componenti React che supportano la modifica di componenti nel contesto tramite l&#39;Editor SPA dell&#39;AEM.
 
 + [modulo npm](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 + [Progetto Github](https://github.com/adobe/aem-react-editable-components)
@@ -33,18 +33,18 @@ Per ulteriori dettagli ed esempi di codice per AEM React Editable Components v2,
 
 + [Integrazione con la documentazione AEM](https://github.com/adobe/aem-react-editable-components/tree/master/src/core)
 + [Documentazione del componente modificabile](https://github.com/adobe/aem-react-editable-components/tree/master/src/components)
-+ [Documentazione degli helper](https://github.com/adobe/aem-react-editable-components/tree/master/src/api)
++ [Documentazione Helpers](https://github.com/adobe/aem-react-editable-components/tree/master/src/api)
 
 ## Pagine AEM
 
-I componenti modificabili di AEM React funzionano sia con l’editor SPA che con le app Remote SPA React. I contenuti che popolano i componenti React modificabili, devono essere esposti tramite pagine AEM che estendono il [Componente pagina SPA](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html). I componenti AEM, mappati su componenti React modificabili, devono implementare l’AEM [Framework di esportazione dei componenti](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) - quali [Componenti WCM core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
+I componenti modificabili di AEM React funzionano sia con l’editor SPA che con le app Remote SPA React. Il contenuto dei componenti React modificabili deve essere esposto tramite pagine AEM che estendono il [componente Pagina SPA](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html). I componenti AEM mappati su componenti React modificabili devono implementare il framework [Component Exporter](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) dell&#39;AEM, ad esempio [Componenti WCM core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it).
 
 
 ## Dipendenze
 
 Assicurati che l’app React sia in esecuzione su Node.js 14+.
 
-L’insieme minimo di dipendenze che l’app React deve utilizzare per AEM React Editable Components v2 è: `@adobe/aem-react-editable-components`, `@adobe/aem-spa-component-mapping`, e  `@adobe/aem-spa-page-model-manager`.
+Il set minimo di dipendenze per l&#39;app React per l&#39;utilizzo dei componenti modificabili di AEM React v2 è: `@adobe/aem-react-editable-components`, `@adobe/aem-spa-component-mapping` e `@adobe/aem-spa-page-model-manager`.
 
 
 + `package.json`
@@ -64,16 +64,16 @@ L’insieme minimo di dipendenze che l’app React deve utilizzare per AEM React
 
 >[!WARNING]
 >
-> [Base componenti WCM core React AEM](https://github.com/adobe/aem-react-core-wcm-components-base) e [SPA dei componenti WCM core React dell’AEM](https://github.com/adobe/aem-react-core-wcm-components-spa) non sono compatibili con React Editable Components v2 dell’AEM.
+> [Base componenti WCM core AEM React](https://github.com/adobe/aem-react-core-wcm-components-base) e [I componenti WCM core AEM React SPA](https://github.com/adobe/aem-react-core-wcm-components-spa) non sono compatibili con i componenti modificabili AEM React v2.
 
 ## Editor SPA
 
-Quando si utilizza l’app React Editable Components di AEM con un’app React basata sull’editor di SPA, l’AEM `ModelManager` SDK, come SDK:
+AEM Quando si utilizza l’SDK AEM `ModelManager` per i componenti modificabili di React con un’app di React basata sull’editor SPA:
 
 1. Recupera i contenuti dall’AEM
-1. Popola i componenti React Edible con contenuto AEM
+1. Popola i componenti React Edible con il contenuto AEM
 
-Racchiudi l’app React con un ModelManager inizializzato ed esegui il rendering dell’app React. L’app React deve contenere un’istanza del `<Page>` componente esportato da `@adobe/aem-react-editable-components`. Il `<Page>` ha la logica per creare in modo dinamico componenti React in base al `.model.json` fornite dall&#39;AEM.
+Racchiudi l’app React con un ModelManager inizializzato ed esegui il rendering dell’app React. L&#39;app React deve contenere un&#39;istanza del componente `<Page>` esportato da `@adobe/aem-react-editable-components`. Il componente `<Page>` ha una logica per la creazione dinamica dei componenti React in base a `.model.json` forniti dall&#39;AEM.
 
 + `src/index.js`
 
@@ -101,11 +101,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 ```
 
-Il `<Page>` viene passato come rappresentazione della pagina AEM come JSON, tramite `pageModel` fornite da `ModelManager`. Il `<Page>` crea in modo dinamico componenti React per gli oggetti nel `pageModel` facendo corrispondere `resourceType` con un componente React che si registra nel tipo di risorsa tramite `MapTo(..)`.
+`<Page>` viene passato come rappresentazione della pagina AEM come JSON tramite `pageModel` fornito da `ModelManager`. Il componente `<Page>` crea in modo dinamico i componenti React per gli oggetti in `pageModel` confrontando `resourceType` con un componente React che si registra nel tipo di risorsa tramite `MapTo(..)`.
 
 ## Componenti modificabili
 
-Il `<Page>` ha superato la rappresentazione della pagina AEM come JSON, tramite il `ModelManager`. Il `<Page>` componente crea quindi in modo dinamico componenti React per ogni oggetto nel JSON, confrontando i `resourceType` valore con un componente React che si registra nel tipo di risorsa tramite il componente `MapTo(..)` chiamata. Ad esempio, per creare un’istanza viene utilizzato quanto segue
+`<Page>` ha passato la rappresentazione della pagina AEM come JSON tramite `ModelManager`. Il componente `<Page>` crea quindi in modo dinamico i componenti React per ogni oggetto nel JSON facendo corrispondere il valore `resourceType` dell&#39;oggetto JS con un componente React che si registra nel tipo di risorsa tramite la chiamata `MapTo(..)` del componente. Ad esempio, per creare un’istanza viene utilizzato quanto segue
 
 + `HTTP GET /content/.../home.model.json`
 
@@ -179,7 +179,7 @@ export default MapTo("wknd-examples/components/example")(EditableExample);
 I componenti modificabili possono essere riutilizzati e incorporati l’uno nell’altro. Quando si incorpora un componente modificabile in un altro, è necessario tenere presenti due considerazioni chiave:
 
 1. Il contenuto JSON dell’AEM per il componente che incorpora deve contenere il contenuto per soddisfare i componenti incorporati. A tal fine, crea una finestra di dialogo per il componente AEM che raccoglie i dati necessari.
-1. L’istanza &quot;non modificabile&quot; del componente React deve essere incorporata, anziché l’istanza &quot;modificabile&quot; racchiusa in `<EditableComponent>`. Il motivo è che, se il componente incorporato ha `<EditableComponent>` wrapper, l’editor SPA tenta di vestire il componente interno con il chrome di modifica (casella blu al passaggio del mouse), anziché il componente esterno di incorporamento.
+1. L&#39;istanza &quot;non modificabile&quot; del componente React deve essere incorporata, anziché l&#39;istanza &quot;modificabile&quot; con `<EditableComponent>`. Il motivo è che, se il componente incorporato ha il wrapper `<EditableComponent>`, l&#39;editor SPA tenta di vestire il componente interno con il cromo di modifica (casella di selezione blu), anziché il componente esterno di incorporamento.
 
 + `HTTP GET /content/.../home.model.json`
 

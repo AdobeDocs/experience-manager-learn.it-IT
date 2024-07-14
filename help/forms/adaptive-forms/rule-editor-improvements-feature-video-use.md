@@ -24,7 +24,7 @@ L’editor di regole consente agli utenti di aggiungere logica al Forms adattivo
 
 >[!VIDEO](https://video.tv.adobe.com/v/19653?quality=12&learn=on)
 
-**Alcuni dei miglioramenti apportati all’editor di regole includono:**
+**Alcuni dei miglioramenti apportati all&#39;editor di regole includono:**
 
 * I componenti modulo con più valori visualizzano automaticamente le opzioni del componente
 * Possibilità di specificare un servizio Web WSDL nell&#39;editor visivo

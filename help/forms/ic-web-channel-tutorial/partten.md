@@ -37,7 +37,7 @@ ht-degree: 0%
 
 * Seleziona l’icona &quot;matita&quot; per modificare il testo predefinito.
 
-* Sostituisci il testo predefinito con &quot;**Il tuo reddito di pensione Outlook&quot;**
+* Sostituisci il testo predefinito con &quot;**Prospettiva reddito da pensione&quot;**
 
 **Configura area di destinazione RightPanel**
 
@@ -49,13 +49,13 @@ ht-degree: 0%
 
 * Seleziona l’icona &quot;matita&quot; per modificare il testo predefinito.
 
-* Sostituisci il testo predefinito con &quot;**Reddito da pensione mensile stimato&quot;**
+* Sostituisci il testo predefinito con &quot;**Reddito di pensionamento mensile stimato&quot;**
 
 ## Aggiungi frammento documento di Outlook reddito da pensione {#add-retirement-income-outlook-document-fragment}
 
-* Fai clic sull’icona Risorse e applica il filtro per visualizzare le risorse di tipo &quot;Frammenti di documento&quot;. Trascinare il frammento di documento RetirementIncomeOutlook nell&#39;area di destinazione del pannello sinistro.
+* Fai clic sull’icona Assets e applica il filtro per visualizzare le risorse di tipo &quot;Frammenti di documento&quot;. Trascinare il frammento di documento RetirementIncomeOutlook nell&#39;area di destinazione del pannello sinistro.
 
-* Puoi consultare [a questa pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) quando si aggiunge un frammento di documento ad aree di contenuto.
+* Puoi fare riferimento a [a questa pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) quando aggiungi un frammento di documento alle aree di contenuto.
 
 ## Grafico Ad Entrate Mensili Stimate {#adding-estimated-monthly-income-chart}
 
@@ -63,11 +63,11 @@ ht-degree: 0%
 
 **AEM Forms 6.4 - Configurazione del grafico a colonne Reddito mensile stimato**
 
-![form64](assets/estimatedmonthlyincomechart.png)
+![modulo64](assets/estimatedmonthlyincomechart.png)
 
 **AEM Forms 6.5 - Configurazione del grafico a colonne Reddito mensile stimato**
 
-![forms65](assets/estimatedmonthlyincomechart65.PNG)
+![moduli65](assets/estimatedmonthlyincomechart65.PNG)
 
 ## Passaggi successivi
 

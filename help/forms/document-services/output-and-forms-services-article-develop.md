@@ -22,7 +22,7 @@ Scopri come sviluppare con l’API di servizio Output e Forms in AEM Forms.
 
 In questo articolo prenderemo in considerazione quanto segue
 
-* [Servizio di output](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) : in genere questo servizio viene utilizzato per unire i dati xml con un modello xdp o un PDF per generare un PDF appiattito.
+* [Servizio di output](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) - In genere questo servizio viene utilizzato per unire i dati XML con il modello xdp o il PDF per generare il PDF appiattito.
 * [FormsService](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html) - Si tratta di un servizio molto versatile che consente di eseguire il rendering di xdp come pdf ed esportare/importare dati da e in file PDF.
 
 
@@ -45,17 +45,17 @@ La riga 5 acquisisce il blocco di FormsService
 
 La riga 6 esporta i dati xml dal file PDF
 
-**Per testare il pacchetto di esempio sul sistema**
+**Per eseguire il test del pacchetto di esempio nel sistema**
 
 [Scaricare e installare il pacchetto utilizzando Gestione pacchetti AEM](assets/using-output-and-form-service-api.zip)
 
 
 
 
-**Dopo aver installato il pacchetto, dovrai inserire nell&#39;elenco Consentiti i seguenti URL in Adobe Granite CSRF Filter.**
+**Dopo aver installato il pacchetto, sarà necessario inserire nell&#39;elenco Consentiti i seguenti URL in Adobe Granite CSRF Filter.**
 
 1. Segui i passaggi indicati di seguito per inserire nell&#39;elenco Consentiti i percorsi menzionati in precedenza.
-1. [Accedi a configMgr](http://localhost:4502/system/console/configMgr)
+1. [Accesso a configMgr](http://localhost:4502/system/console/configMgr)
 1. Cerca Adobe di filtro CSRF Granite
 1. Aggiungi i seguenti 3 percorsi nelle sezioni escluse e salva
 1. /content/AemFormsSamples/mergedata
@@ -84,8 +84,8 @@ La confezione contiene 4 campioni. Nei paragrafi seguenti viene illustrato quand
 * **URL POST**: http://localhost:4502/content/AemFormsSamples/outputservice.html
 * **Parametri richiesta -**
 
-   * **xdp_or_pdf_file** : il file xdp o pdf con cui vuoi unire i dati
-   * **xmlfile**: file di dati xml unito con xdp_or_pdf_file
+   * **xdp_or_pdf_file**: il file xdp o pdf con cui unire i dati
+   * **xmlfile**: il file di dati xml unito con xdp_or_pdf_file
    * **saveLocation**: percorso in cui salvare il documento sottoposto a rendering nel file system. Ad esempio c:\\documents\\sample.pdf
 
 ### Utilizzo dell’API FormsService
@@ -97,8 +97,8 @@ La confezione contiene 4 campioni. Nei paragrafi seguenti viene illustrato quand
 
 * **Parametri richiesta:**
 
-   * **pdfile** : file pdf con cui unire i dati
-   * **xmlfile**: file di dati xml unito al file pdf
+   * **pdffile**: il file pdf con cui si desidera unire i dati
+   * **xmlfile**: il file di dati xml unito al file pdf
    * **saveLocation**: percorso in cui salvare il documento sottoposto a rendering nel file system. Esempio `c:\\outputsample.pdf`.
 
 #### Esporta dati
@@ -107,7 +107,7 @@ La confezione contiene 4 campioni. Nei paragrafi seguenti viene illustrato quand
 * **URL POST** - http://localhost:4502/content/AemFormsSamples/exportdata.html
 * **Parametri richiesta:**
 
-   * **pdfile** : file pdf da cui esportare i dati
+   * **pdffile**: il file PDF da cui si desidera esportare i dati
    * **saveLocation**: percorso in cui salvare i dati esportati nel file system. Ad esempio c:\\documents\\export_data.xml
 
 #### Rendering XDP

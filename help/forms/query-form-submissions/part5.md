@@ -22,16 +22,16 @@ ht-degree: 0%
 
 Per utilizzare questo caso sul server locale, eseguire la procedura seguente.Si presume che l&#39;istanza AEM sia in esecuzione su localhost, porta 4502.
 
-* [Installare il pacchetto](assets/azuredemo.all-1.0.0-SNAPSHOT.zip) utilizzo di gestione pacchetti.
+* [Installare il pacchetto](assets/azuredemo.all-1.0.0-SNAPSHOT.zip) utilizzando Gestione pacchetti.
 
 * Fornisci le credenziali del portale di Azure utilizzando OSGi configMgr
   ![azure-portal](assets/azure-portal-config.png)
 Verificare che l&#39;URI di archiviazione termini con una barra e che il token SAS inizi con un ?
-* Accedi a [AzureDemo](http://localhost:4502/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/azuredemo)
+* Passa a [AzureDemo](http://localhost:4502/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/azuredemo)
 
 * Modifica le impostazioni di autenticazione delle seguenti 3 origini dati in base all’ambiente in uso
   ![origini dati](assets/fdm-data-sources.png)
 
-* Anteprima e invio [Modulo ContactUs](http://localhost:4502/content/dam/formsanddocuments/azureportal/contactus/jcr:content?wcmmode=disabled)
+* Anteprima e invio del [modulo Contattaci](http://localhost:4502/content/dam/formsanddocuments/azureportal/contactus/jcr:content?wcmmode=disabled)
 
-* [Eseguire una query sull’invio del modulo](http://localhost:4502/content/dam/formsanddocuments/azureportal/queryformsubmissions/jcr:content?wcmmode=disabled)
+* [Eseguire una query sull&#39;invio del modulo](http://localhost:4502/content/dam/formsanddocuments/azureportal/queryformsubmissions/jcr:content?wcmmode=disabled)

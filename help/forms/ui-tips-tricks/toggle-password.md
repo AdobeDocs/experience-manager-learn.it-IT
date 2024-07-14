@@ -21,13 +21,13 @@ ht-degree: 0%
 # Attiva/disattiva visibilità campi password
 
 Un caso d’uso comune consiste nel consentire ai compilatori di moduli di attivare o disattivare la visibilità del testo immesso nel campo della password.
-Per eseguire questo caso d’uso, ho utilizzato l’icona dell’occhio di [Libreria eccezionale di caratteri](https://fontawesome.com/). I file CSS e eye.svg richiesti sono inclusi nella libreria client creata per questa dimostrazione.
+Per eseguire questo caso d&#39;uso, ho utilizzato l&#39;icona dell&#39;occhio della [Libreria di caratteri fantastici](https://fontawesome.com/). I file CSS e eye.svg richiesti sono inclusi nella libreria client creata per questa dimostrazione.
 
 
 
 ## Codice di esempio
 
-Il modulo adattivo dispone di un campo di tipo PasswordBox denominato **ssnField**.
+Il modulo adattivo contiene un campo di tipo PasswordBox denominato **ssnField**.
 
 Il seguente codice viene eseguito al caricamento del modulo
 
@@ -51,7 +51,7 @@ $(document).ready(function() {
 });
 ```
 
-Il seguente CSS è stato utilizzato per posizionare **occhio** icona nel campo della password
+Il seguente file CSS è stato utilizzato per posizionare l&#39;icona **occhio** nel campo password
 
 ```javascript
 .svg-inline--fa {
@@ -68,8 +68,8 @@ Il seguente CSS è stato utilizzato per posizionare **occhio** icona nel campo d
 
 ## Esempio di implementazione dell’interruttore della password
 
-* Scarica il file [libreria client](assets/simple-ui-tips.zip)
-* Scarica il file [modulo di esempio](assets/simple-ui-tricks-form.zip)
-* Importare la libreria client utilizzando [interfaccia utente gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
-* Importare il modulo di esempio utilizzando [Forms e documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
+* Scarica la [libreria client](assets/simple-ui-tips.zip)
+* Scarica il [modulo di esempio](assets/simple-ui-tricks-form.zip)
+* Importa la libreria client utilizzando l&#39;[interfaccia utente di Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+* Importa il modulo di esempio utilizzando [Forms e il documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Anteprima modulo](http://localhost:4502/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)

@@ -22,7 +22,7 @@ In questo articolo, vedremo come utilizzare l’API di geolocalizzazione di Goog
 
 Sono stati seguiti i seguenti passaggi per utilizzare l’API di geolocalizzazione in Adaptive Forms.
 
-1. [Ottieni chiave API](https://developers.google.com/maps/documentation/javascript/get-api-key) da Google per utilizzare la piattaforma Google Maps. È possibile ottenere una chiave di prova valida per 1 anno.
+1. [Ottieni la chiave API](https://developers.google.com/maps/documentation/javascript/get-api-key) da Google per utilizzare la piattaforma Google Maps. È possibile ottenere una chiave di prova valida per 1 anno.
 
 1. Il frammento di modulo adattivo è stato creato con campi che contengono l’indirizzo corrente
 
@@ -75,7 +75,7 @@ var url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+position.c
 }
 ```
 
-![Campi popolati con API di geolocalizzazione](assets/capture-4.gif)
+![Campi popolati con api geoloaction](assets/capture-4.gif)
 
 Nella riga 1 utilizziamo l’API di geolocalizzazione HTML per ottenere la posizione corrente. Una volta ottenuta la posizione corrente, questa viene passata alla funzione showPosition.
 
@@ -96,11 +96,11 @@ Per attivare questa funzionalità sul server, attieniti alla seguente procedura
 * Installa e avvia il server AEM Forms.
 > Questa funzionalità è stata testata su AEM Forms 6.3 e versioni successive
 * [Ottieni chiave API Google](https://developers.google.com/maps/documentation/javascript/get-api-key).
-* [Importa in AEM le risorse correlate a questo articolo.](assets/geolocationapi.zip)
-* [Apri il frammento di modulo adattivo in modalità di modifica.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
+* [Importa le risorse correlate a questo articolo in AEM.](assets/geolocationapi.zip)
+* [Apri il frammento del modulo adattivo in modalità di modifica.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
 * Apri l’editor di regole per il componente Scelta immagine.
-* Sostituisci il &lt;your_api_key> con la chiave API di Google.
+* Sostituisci &lt;your_api_key> con la chiave API di Google.
 * Salva le modifiche.
-* [Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
+* [Anteprima modulo](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
 * Fai clic sull’icona &quot;geolocalizzazione&quot;.
 * Il modulo deve essere compilato con la posizione corrente.

@@ -1,6 +1,6 @@
 ---
 title: Editor frammento di contenuto
-description: Breve introduzione all’editor dei frammenti di contenuto AEM.
+description: Breve introduzione all’editor dei frammenti di contenuto dell’AEM.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Editor frammento di contenuto
 
-Breve introduzione all’editor dei frammenti di contenuto AEM.
+Breve introduzione all’editor dei frammenti di contenuto dell’AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424373/?learn=on)

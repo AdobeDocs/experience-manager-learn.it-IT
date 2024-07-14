@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ## Introduzione
 
-Benvenuto nella serie Cloud 5 di AEM Engineering. Uno dei problemi principali nella fase di implementazione di qualsiasi prodotto è la disponibilità di un numero sufficiente di campioni di codice e/o di dimostrazioni in tempo reale di tali campioni, strumenti o API. L’obiettivo di questa serie è quello di fornire informazioni utili sull’AEM as a Cloud Service in 5 minuti o meno.
+Benvenuto nella serie Cloud 5 di AEM Engineering. Uno dei problemi principali nella fase di implementazione di qualsiasi prodotto è la disponibilità di un numero sufficiente di campioni di codice e/o di dimostrazioni in tempo reale di tali campioni, strumenti o API. L’obiettivo di questa serie è quello di fornire informazioni utili su AEM as a Cloud Service in 5 minuti o meno.
 
-Visita il [Casella di suggerimento](https://forms.office.com/r/74P5Xz4UH0) per l&#39;invio di idee argomento.
+Visitare la [Casella suggerimenti](https://forms.office.com/r/74P5Xz4UH0) per inviare idee per argomenti.
 
 ## Stagione 1
 
@@ -32,12 +32,12 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
       <img alt="AEM CDN Parte 1" src="./imgs/001-thumb.png"/>
       </a>
       <div>
-         <a href="./cloud5-aem-cdn-part1.md"><strong>Approfondimento sulla rete CDN dell’AEM (parte 1)</strong></a>         
-         <br/><em>con Darin Kuntze e James Talbot, Senior Cloud Architects</em>
+         <a href="./cloud5-aem-cdn-part1.md"><strong>Approfondimento rete CDN AEM (parte 1)</strong></a>         
+         <br/><em>con Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
       </div>
       <p>
         <br/>
-         La Parte 1 offre una panoramica della rete CDN di AEM as a Cloud Service e di come utilizzarla nella tua implementazione.
+         La parte 1 presenta la CDN di AEM as a Cloud Service e illustra come utilizzarla nella tua implementazione.
       </p>
      </td>   
      <td>
@@ -45,12 +45,12 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
          <img alt="AEM CDN Parte 2" src="./imgs/002-thumb.png"/>
       </a>
       <div>
-         <a href="./cloud5-aem-cdn-part2.md"><strong>Approfondimento sulla rete CDN dell’AEM (parte 2)</strong></a>
-         <br/><em>con Darin Kuntze e James Talbot, Senior Cloud Architects</em>
+         <a href="./cloud5-aem-cdn-part2.md"><strong>Approfondimento rete CDN AEM (parte 2)</strong></a>
+         <br/><em>con Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
       </div>
       <p>
         <br/>
-         La Parte 2 è una continuazione del nostro sguardo alla rete CDN as a Cloud Service AEM. Rispondiamo ad alcune delle domande e dei miti più comuni sulle funzioni che ottieni con la nuova CDN.
+         La Parte 2 è una continuazione del nostro sguardo alla rete CDN di AEM as a Cloud Service. Rispondiamo ad alcune delle domande e dei miti più comuni sulle funzioni che ottieni con la nuova CDN.
       </p>
    </td>
      <td>
@@ -59,7 +59,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
         </a>
       <div>
          <a href="./cloud5-aem-log-files.md"><strong>File di registro e registrazione</strong></a>
-         <br/><em>con Darin Kuntze e James Talbot, Senior Cloud Architects</em>
+         <br/><em>con Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
       </div>
       <p>
         <br/>
@@ -74,7 +74,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
         </a>
       <div>
         <a href="./cloud5-getting-login-token-integrations.md"><strong>Integrazione con i token di accesso</strong></a>        
-         <br/><em>con Darin Kuntze e James Talbot, Senior Cloud Architects</em>
+         <br/><em>con Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
       </div>
       <p>
         <br/>
@@ -87,11 +87,11 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
        </a>  
       <div>
         <a href="./cloud5-aem-dispatcher-cloud.md"><strong>Dispatcher nel cloud</strong></a>
-         <br/><em>con Darin Kuntze e James Talbot, Senior Cloud Architects</em>
+         <br/><em>con Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
       </div>
       <p>
         <br/>
-        Darin e James discutono il Dispatcher nel cloud AEM, incluse alcune best practice e differenze rispetto ad AMS/On-Prem. 
+        Darin e James discutono il Dispatcher nell’AEM Cloud, incluse alcune best practice e differenze rispetto ad AMS/On-Prem. 
       </p>
    </td>
      <td>
@@ -115,7 +115,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
         </a>
       <div>
         <a href="./cloud5-aem-content-migration-part-2.md"><strong>Migrazione (parte 2)</strong></a>     
-         <br/><em>con Darin Kuntze e James Talbot, Senior Cloud Architects</em>
+         <br/><em>con Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
       </div>
       <p>
         <br/>
@@ -128,7 +128,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
         </a>
       <div>
          <a href="./cloud5-aem-dispatcher-validator.md"><strong>Convalida Dispatcher</strong></a>
-         <br/><em>con Darin Kuntze e James Talbot, Senior Cloud Architects</em>
+         <br/><em>con Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
       </div>
       <p>
         <br/>
@@ -141,7 +141,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
         </a>
       <div>
          <a href="./cloud5-aem-search-and-indexing.md"><strong>Suggerimenti per indicizzazione e ricerca</strong></a>
-         <br/><em>con Darin Kuntze e James Talbot, Senior Cloud Architects</em>
+         <br/><em>con Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
       </div>
       <p>
         <br/>
@@ -152,14 +152,14 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
     <tr>
         <td>
             <a href="./cloud5-adobe-app-builder.md">
-                <img alt="Generatore di app Adobe" src="./imgs/010-thumb.png"/>
+                <img alt="Adobe App Builder" src="./imgs/010-thumb.png"/>
             </a>
             <div>
-                <a href="./cloud5-adobe-app-builder.md"><strong>Generatore di app Adobe</strong></a><br/>        
-                <em>con Darin Kuntze e James Talbot, Senior Cloud Architects e Amol Anand</em>
+                <a href="./cloud5-adobe-app-builder.md"><strong>Adobe App Builder</strong></a><br/>        
+                <em>con Darin Kuntze &amp; James Talbot, Senior Cloud Architects &amp; Amol Anand</em>
             </div>
             <p><br/>
-                Vieni a scoprire alcune cose interessanti che puoi fare con Adobe App Builder e scopri qualcosa di nuovo sul futuro delle personalizzazioni nel cloud.
+                Vieni a scoprire alcune cose interessanti che puoi fare con Adobe App Builder e qualcosa di nuovo sul futuro delle personalizzazioni nel cloud.
             </p>
         </td>
         <td></td>

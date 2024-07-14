@@ -22,7 +22,7 @@ Limitazione dell’editor di regole per moduli adattivi a gruppi specifici nell�
 
 >[!VIDEO](https://video.tv.adobe.com/v/19470?quality=12&learn=on)
 
-*Questo video illustra come limitare l’editor di regole per moduli adattivi a gruppi specifici nell’AEM.*
+*Questo video illustra come limitare l&#39;editor di regole per moduli adattivi a gruppi specifici nell&#39;AEM.*
 
 >[!NOTE]
 >

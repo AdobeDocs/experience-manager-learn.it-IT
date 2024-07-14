@@ -24,12 +24,13 @@ Per scrivere la classe Java e distribuirla come bundle OSGi, sono necessari i se
 
 ## Crea progetto Maven
 
-Il primo passaggio consiste nel creare un progetto Maven utilizzando l’archetipo Maven di Adobe appropriato. I passaggi dettagliati sono elencati in [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una volta importato il progetto Maven nell’eclissi, sei pronto per iniziare a scrivere il primo componente OSGi che può essere utilizzato nel passaggio del processo.
+Il primo passaggio consiste nel creare un progetto Maven utilizzando l’archetipo Maven di Adobe appropriato. I passaggi dettagliati sono elencati in questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una volta importato il progetto Maven nell’eclissi, sei pronto per iniziare a scrivere il primo componente OSGi che può essere utilizzato nel passaggio del processo.
 
 
 ### Crea classe che implementa WorkflowProcess
 
-Apri il progetto Maven nell’IDE dell’eclissi. Espandi **nomeprogetto** > **core** cartella. Espandi la cartella src/main/java. Dovresti vedere un pacchetto che termina con &quot;core&quot;. Creare la classe Java che implementa WorkflowProcess in questo pacchetto. Dovrai sovrascrivere il metodo di esecuzione. La firma del metodo execute è la seguente: public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)throws WorkflowException
+Apri il progetto Maven nell’IDE dell’eclissi. Espandere la cartella **projectname** > **core**. Espandi la cartella src/main/java. Dovresti vedere un pacchetto che termina con &quot;core&quot;. Creare la classe Java che implementa WorkflowProcess in questo pacchetto. Dovrai sovrascrivere il metodo di esecuzione. La firma del metodo execute è la seguente
+public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) genera WorkflowException
 
 In questa esercitazione scriveremo gli allegati aggiunti al modulo adattivo nel file system come parte del flusso di lavoro AEM.
 
@@ -123,7 +124,7 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
 
 Questi due valori vengono passati come argomenti del processo utilizzando la finestra di dialogo del componente flusso di lavoro
 
-![ProcessStep](assets/custom-workflow-component.png)
+![PassaggioProcesso](assets/custom-workflow-component.png)
 
 Il servizio QueryBuilder viene utilizzato per eseguire query sui nodi di tipo nt:file nella cartella attachmentPath. Il resto del codice scorre i risultati della ricerca per creare l&#39;oggetto Document e salvarlo nel file system
 
@@ -143,9 +144,9 @@ Il servizio QueryBuilder viene utilizzato per eseguire query sui nodi di tipo nt
 #### Creare e distribuire
 
 [Crea il bundle come descritto qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
-[Assicurati che il bundle sia distribuito e in stato attivo](http://localhost:4502/system/console/bundles)
+[Assicurarsi che il bundle sia distribuito e in stato attivo](http://localhost:4502/system/console/bundles)
 
 ## Passaggi successivi
 
-Crea [componente flusso di lavoro personalizzato](./custom-workflow-component.md)
+Crea il [componente flusso di lavoro personalizzato](./custom-workflow-component.md)
 

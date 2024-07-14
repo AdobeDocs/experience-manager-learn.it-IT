@@ -20,7 +20,8 @@ ht-degree: 0%
 
 # Includi la configurazione dei servizi cloud nel progetto
 
-Creare un contenitore di configurazione denominato &quot;FormTutorial&quot; per la configurazione dei servizi cloud Creare una configurazione dei servizi cloud per l’archiviazione di Azure denominata &quot;FormsCSAndAzureBlob&quot; nel contenitore &quot;FormTutorial&quot; fornendo i dettagli dell’account di archiviazione di Azure e la chiave di accesso di Azure.
+Crea un contenitore di configurazione denominato &quot;FormTutorial&quot; per la configurazione dei servizi cloud
+Crea una configurazione dei servizi cloud per l’archiviazione di Azure denominata &quot;FormsCSAndAzureBlob&quot; nel contenitore &quot;FormTutorial&quot; fornendo i dettagli dell’account di archiviazione di Azure e la chiave di accesso di Azure.
 
 Apri il progetto AEM in IntelliJ. Assicurati di aggiungere la cartella FormTutorial come mostrato di seguito nel progetto ui.content
 ![cloud-services-configuration](assets/cloud-services-configuration.png)
@@ -36,7 +37,7 @@ Assicurati di aggiungere la seguente voce nel file filter.xml del progetto ui.co
 ## Includi modello dati modulo nel progetto
 
 Crea un modello di dati modulo basato sulla configurazione dei servizi cloud creata nel passaggio precedente. Per includere il modello dati modulo nel progetto, creare la struttura di cartelle appropriata nel progetto AEM in intelliJ. Ad esempio, il modello dati del modulo si trova in una cartella denominata registrazioni
-![fdm-content](assets/ui-content-fdm.png)
+![contenuto-fdm](assets/ui-content-fdm.png)
 
 Includi la voce appropriata nel file filter.xml del progetto ui.content
 
@@ -47,7 +48,7 @@ Includi la voce appropriata nel file filter.xml del progetto ui.content
 
 >[!NOTE]
 >
->Ora, quando crei e distribuisci il progetto utilizzando Cloud Manager, dovrai immettere nuovamente la chiave di accesso di Azure nella configurazione dei servizi cloud. Per evitare di immettere nuovamente la chiave di accesso, si consiglia di creare una configurazione in base al contesto utilizzando le variabili di ambiente come spiegato in [articolo successivo](./context-aware-fdm.md)
+>Ora, quando crei e distribuisci il progetto utilizzando Cloud Manager, dovrai immettere nuovamente la chiave di accesso di Azure nella configurazione dei servizi cloud. Per evitare di immettere nuovamente la chiave di accesso, si consiglia di creare una configurazione in base al contesto utilizzando le variabili di ambiente come spiegato nel [prossimo articolo](./context-aware-fdm.md)
 
 ## Passaggi successivi
 

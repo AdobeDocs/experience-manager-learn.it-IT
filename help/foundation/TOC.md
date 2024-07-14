@@ -58,7 +58,7 @@ ht-degree: 14%
    + [Come indagare i problemi correlati all’indicizzazione nell’AEM](./troubleshooting/how-to-investigate-indexing-related-issues.md)
    + [Come indagare i problemi correlati alla SAML nell’AEM](./troubleshooting/how-to-investigate-saml-related-issues.md)
    + [Come indagare i problemi correlati alla ricerca in AEM](./troubleshooting/how-to-investigate-search-related-issues.md)
-   + [Impostare la scadenza della sessione per il token di accesso Oak](./troubleshooting/how-to-set-the-oak-login-token-session-expiration.md)
+   + [Impostare la scadenza della sessione per il token di accesso di Oak](./troubleshooting/how-to-set-the-oak-login-token-session-expiration.md)
    + [Come risolvere i problemi relativi alla configurazione Jetty](./troubleshooting/how-to-troubleshoot-issues-related-to-jetty-configuration.md)
    + [Come risolvere i problemi relativi alle prestazioni](./troubleshooting/how-to-troubleshoot-performance-related-issues.md)
    + [Passaggi per risolvere i problemi relativi alla memoria nell’AEM](./troubleshooting/steps-to-resolve-memory-related-issues.md)

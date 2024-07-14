@@ -37,7 +37,7 @@ La schermata seguente spiega le impostazioni dell’editor di regole
 
 ## Debugging
 
-Se utilizzi i bundle forniti con questo articolo, potrebbe essere utile abilitare [registri di debug](http://localhost:4502/system/console/slinglog) per le seguenti classi:
+Se utilizzi i bundle forniti con questo articolo, puoi abilitare [registri di debug](http://localhost:4502/system/console/slinglog) per le seguenti classi:
 
 + `com.marketoandforms.core.impl.MarketoServiceImpl`
 + `com.marketoandforms.core.MarketoConfigurationService`

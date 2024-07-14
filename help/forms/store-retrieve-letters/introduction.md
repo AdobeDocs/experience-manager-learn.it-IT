@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Introduzione
 
-Le comunicazioni interattive consentono agli agenti che preparano corrispondenze ad hoc di salvare le corrispondenze parzialmente completate e di recuperare le stesse per continuare a lavorare. AEM Forms offre [Interfaccia Service Provider](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html). Il cliente deve implementare questa interfaccia per ottenere la funzionalità Salva e riprendi.
+Le comunicazioni interattive consentono agli agenti che preparano corrispondenze ad hoc di salvare le corrispondenze parzialmente completate e di recuperare le stesse per continuare a lavorare. AEM Forms fornisce [Interfaccia provider di servizi](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html). Il cliente deve implementare questa interfaccia per ottenere la funzionalità Salva e riprendi.
 
 In questo articolo viene utilizzato il database MySQL per memorizzare i metadati dell&#39;istanza della lettera. I dati della lettera vengono memorizzati nel file system.
 

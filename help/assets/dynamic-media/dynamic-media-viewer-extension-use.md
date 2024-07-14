@@ -25,7 +25,7 @@ Per i clienti con Dynamic Medie e Adobe Analytics, ora puoi monitorare l’utili
 
 >[!NOTE]
 >
-> Esegui Adobe Experience Manager in modalità Dynamic Medie Scene7 per questa funzionalità. È inoltre necessario [integrare i tag con l’istanza AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=it).
+> Esegui Adobe Experience Manager in modalità Dynamic Medie Scene7 per questa funzionalità. Devi anche [integrare i tag con la tua istanza AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=it).
 
 Con l’introduzione dell’estensione Dynamic Medie Viewer, Adobe Experience Manager offre ora il supporto di analisi avanzate per le risorse fornite con i visualizzatori Dynamic Medie (5.13), fornendo un controllo più granulare sul tracciamento degli eventi quando un visualizzatore Dynamic Medie viene utilizzato su una pagina Sites.
 
@@ -166,6 +166,6 @@ Nella tabella seguente sono elencati gli eventi di Dynamic Medie Viewer e i rela
 
 ## Risorse aggiuntive{#additional-resources}
 
-* [Integrazione dell’AEM con i tag in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=it)
+* [Integrazione dell&#39;AEM con i tag in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=it)
 * [Esecuzione di Adobe Experience Manager in modalità Dynamic Medie Scene7](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=en)
-* [Integrazione dei visualizzatori Dynamic Medie con Adobe Analytics tramite i tag](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-extension-use.html)
+* [Integrazione dei visualizzatori Dynamic Medie con Adobe Analytics tramite tag](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-extension-use.html)

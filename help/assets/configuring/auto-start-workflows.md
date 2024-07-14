@@ -27,36 +27,36 @@ I flussi di lavoro con avvio automatico estendono l’elaborazione delle risorse
 
 >[!NOTE]
 >
->Utilizza l’avvio automatico dei flussi di lavoro per personalizzare le risorse nella post-elaborazione anziché utilizzare i moduli di avvio dei flussi di lavoro. I flussi di lavoro con avvio automatico sono _solo_ richiamato una volta completata l’elaborazione di una risorsa, anziché moduli di avvio che possono essere richiamati più volte durante l’elaborazione della risorsa.
+>Utilizza l’avvio automatico dei flussi di lavoro per personalizzare le risorse nella post-elaborazione anziché utilizzare i moduli di avvio dei flussi di lavoro. I flussi di lavoro con avvio automatico sono _solo_ richiamati al termine dell&#39;elaborazione di una risorsa, anziché moduli di avvio che possono essere richiamati più volte durante l&#39;elaborazione della risorsa.
 
-## Personalizzazione del flusso di lavoro di post-elaborazione
+## Personalizzazione del flusso di lavoro di elaborazione Post
 
-Per personalizzare il flusso di lavoro di post-elaborazione, copia il post-elaborazione predefinito di Assets Cloud [modello di flusso di lavoro](../../foundation/workflow/use-the-workflow-editor.md).
+Per personalizzare il flusso di lavoro Elaborazione Post, copia il [modello flusso di lavoro](../../foundation/workflow/use-the-workflow-editor.md) predefinito Elaborazione Assets Cloud Post.
 
-1. Inizia dalla schermata Modelli di flusso di lavoro passando a _Strumenti_ > _Flusso di lavoro_ > _Modelli_
-2. Trova e seleziona la _Post-elaborazione Assets cloud_ modello di flusso di lavoro<br/>
-   ![Seleziona il modello di flusso di lavoro di post-elaborazione di Assets Cloud](assets/auto-start-workflow-select-workflow.png)
-3. Seleziona la _Copia_ per creare un flusso di lavoro personalizzato
-4. Seleziona il modello di flusso di lavoro Now (che verrà chiamato _Post-elaborazione Assets cloud1_) e fare clic su _Modifica_ per modificare il workflow
-5. Dalla scheda Proprietà flusso di lavoro, assegna un nome significativo al flusso di lavoro di post-elaborazione personalizzato<br/>
+1. Inizia dalla schermata Modelli flusso di lavoro passando a _Strumenti_ > _Flusso di lavoro_ > _Modelli_
+2. Trova e seleziona il modello di flusso di lavoro _Elaborazione Post di Assets Cloud_<br/>
+   ![Seleziona il modello di flusso di lavoro di elaborazione Post di Assets Cloud](assets/auto-start-workflow-select-workflow.png)
+3. Seleziona il pulsante _Copia_ per creare il flusso di lavoro personalizzato
+4. Seleziona il modello di flusso di lavoro Now (che si chiamerà _Elaborazione Post di Assets Cloud1_) e fai clic sul pulsante _Modifica_ per modificare il flusso di lavoro
+5. In Proprietà flusso di lavoro, assegna un nome significativo al flusso di lavoro di elaborazione Post personalizzato<br/>
    ![Modifica del nome](assets/auto-start-workflow-change-name.png)
-6. Aggiungi i passaggi per soddisfare i requisiti aziendali, in questo caso aggiungendo un’attività al termine dell’elaborazione delle risorse. Assicurati che l’ultimo passaggio del flusso di lavoro sia sempre il _Flusso di lavoro completato_ passaggio<br/>
-   ![Aggiungi passaggi del flusso di lavoro](assets/auto-start-workflow-customize-steps.png)
+6. Aggiungi i passaggi per soddisfare i requisiti aziendali, in questo caso aggiungendo un’attività al termine dell’elaborazione delle risorse. Assicurati che l&#39;ultimo passaggio del flusso di lavoro sia sempre il _passaggio del flusso di lavoro completato_<br/>
+   ![Aggiungi passaggi flusso di lavoro](assets/auto-start-workflow-customize-steps.png)
 
    >[!NOTE]
    >
-   >I flussi di lavoro con avvio automatico vengono eseguiti con ogni caricamento o rielaborazione di risorse; pertanto, è necessario considerare attentamente le implicazioni in termini di scalabilità dei passaggi del flusso di lavoro, in particolare per le operazioni in blocco come [Importazioni in blocco](../../cloud-service/migration/bulk-import.md) o migrazioni.
+   >I flussi di lavoro con avvio automatico vengono eseguiti con ogni caricamento o rielaborazione di risorse; pertanto, è necessario considerare attentamente le implicazioni in termini di scalabilità dei passaggi del flusso di lavoro, in particolare per le operazioni in blocco, come [Importazioni in blocco](../../cloud-service/migration/bulk-import.md) o migrazioni.
 
-7. Seleziona la _Sincronizza_ per salvare le modifiche e sincronizzare il modello di workflow
+7. Seleziona il pulsante _Sincronizza_ per salvare le modifiche e sincronizzare il modello di flusso di lavoro
 
-## Utilizzo di un flusso di lavoro di post-elaborazione personalizzato
+## Utilizzo di un flusso di lavoro di elaborazione Post personalizzato
 
-La post-elaborazione personalizzata è configurata nelle cartelle. Per configurare un flusso di lavoro di post-elaborazione personalizzato su una cartella:
+L’elaborazione personalizzata di Post è configurata nelle cartelle. Per configurare un flusso di lavoro di elaborazione Post personalizzato in una cartella:
 
 1. Seleziona la cartella per la quale vuoi configurare il flusso di lavoro e modificare le proprietà della cartella
-2. Passa a _Elaborazione risorse_ scheda
-3. Seleziona il flusso di lavoro di post-elaborazione personalizzato in _Avvia flusso di lavoro automaticamente_ casella di selezione<br/>
-   ![Impostare il flusso di lavoro di post-elaborazione](assets/auto-start-workflow-set-workflow.png)
+2. Passa alla scheda _Elaborazione risorse_
+3. Seleziona il flusso di lavoro di elaborazione Post personalizzato nella casella di selezione _Avvia flusso di lavoro automatico_<br/>
+   ![Imposta il flusso di lavoro di elaborazione di Post](assets/auto-start-workflow-set-workflow.png)
 4. Salva le modifiche
 
-Ora il flusso di lavoro di post-elaborazione personalizzato verrà eseguito per tutte le risorse caricate o rielaborate in tale cartella.
+Ora il flusso di lavoro di elaborazione Post personalizzato verrà eseguito per tutte le risorse caricate o rielaborate in tale cartella.

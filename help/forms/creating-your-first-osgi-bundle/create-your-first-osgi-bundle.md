@@ -23,38 +23,38 @@ Un bundle OSGi è un file di archivio Java™ che contiene codice Java, risorse 
 
 ## Installare JDK
 
-Installa la versione supportata di JDK. Ho usato JDK1.8. Assicurati di aver aggiunto **JAVA_HOME** nelle variabili di ambiente e punta alla cartella principale dell’installazione JDK.
+Installa la versione supportata di JDK. Ho usato JDK1.8. Assicurati di aver aggiunto **JAVA_HOME** nelle variabili di ambiente e di puntare alla cartella principale dell&#39;installazione JDK.
 Aggiungere %JAVA_HOME%/bin al percorso
 
-![data-source](assets/java-home.JPG)
+![origine dati](assets/java-home.JPG)
 
 >[!NOTE]
 > Non usi JDK 15. Non è supportato dall&#39;AEM.
 
 ### Verifica la versione JDK
 
-Aprire una nuova finestra del prompt dei comandi e digitare: `java -version`. Dovresti recuperare la versione di JDK identificata da `JAVA_HOME` variabile
+Aprire una nuova finestra del prompt dei comandi e digitare: `java -version`. È necessario recuperare la versione di JDK identificata dalla variabile `JAVA_HOME`
 
-![data-source](assets/java-version.JPG)
+![origine dati](assets/java-version.JPG)
 
 ## Installare Maven
 
 Maven è uno strumento di automazione della build utilizzato principalmente per i progetti Java. Per installare Maven nel sistema locale, segui la procedura riportata di seguito.
 
 * Crea una cartella denominata `maven` nell&#39;unità C
-* Scarica il file [archivio zip binario](https://maven.apache.org/download.cgi)
-* Estrai il contenuto dell’archivio zip in `c:\maven`
-* Creare una variabile di ambiente denominata `M2_HOME` con un valore di `C:\maven\apache-maven-3.6.0`. Nel mio caso, il **mvn** versione 3.6.0. Al momento di scrivere questo articolo, l’ultima versione di Maven è la 3.6.3
-* Aggiungi il `%M2_HOME%\bin` al percorso
+* Scarica l&#39;[archivio zip binario](https://maven.apache.org/download.cgi)
+* Estrai il contenuto dell&#39;archivio zip in `c:\maven`
+* Creare una variabile di ambiente denominata `M2_HOME` con valore `C:\maven\apache-maven-3.6.0`. Nel mio caso, la versione **mvn** è 3.6.0. Al momento di scrivere questo articolo, l’ultima versione di Maven è la 3.6.3
+* Aggiungi `%M2_HOME%\bin` al tuo percorso
 * Salva le modifiche
-* Apri un nuovo prompt dei comandi e digita `mvn -version`. Dovresti visualizzare **mvn** versione elencata come mostrato nella schermata seguente
+* Aprire un nuovo prompt dei comandi e digitare in `mvn -version`. Dovresti vedere la versione **mvn** elencata come mostrato nella schermata seguente
 
-![data-source](assets/mvn-version.JPG)
+![origine dati](assets/mvn-version.JPG)
 
 
 ## Installare Eclipse
 
-Installa la versione più recente di [eclissi](https://www.eclipse.org/downloads/)
+Installa la versione più recente di [eclipse](https://www.eclipse.org/downloads/)
 
 ## Crea il primo progetto
 
@@ -73,37 +73,37 @@ Una volta completato correttamente, dovresti visualizzare un messaggio di genera
 
 ## Crea un progetto di eclissi dal progetto Maven
 
-* Cambiare la directory di lavoro in `mysite`
-* Esegui `mvn eclipse:eclipse` dalla riga di comando. Il comando legge il file POM e crea progetti Eclipse con metadati corretti, in modo che Eclipse comprenda i tipi di progetto, le relazioni, il percorso di classe e così via.
+* Cambia la directory di lavoro in `mysite`
+* Eseguire `mvn eclipse:eclipse` dalla riga di comando. Il comando legge il file POM e crea progetti Eclipse con metadati corretti, in modo che Eclipse comprenda i tipi di progetto, le relazioni, il percorso di classe e così via.
 
 ## Importa il progetto nell&#39;eclissi
 
-Launch **Eclipse**
+Avvia **Eclipse**
 
 Vai a **File -> Importa** e seleziona **Progetti Maven esistenti** come mostrato qui
 
-![data-source](assets/import-mvn-project.JPG)
+![origine dati](assets/import-mvn-project.JPG)
 
 Fai clic su Successivo
 
-Selezionare c:\aemformsbundles\miosito facendo clic sul pulsante **Sfoglia** pulsante
+Selezionare c:\aemformsbundles\miosito facendo clic sul pulsante **Sfoglia**
 
-![data-source](assets/mysite-eclipse-project.png)
+![origine dati](assets/mysite-eclipse-project.png)
 
 >[!NOTE]
 >Puoi scegliere di importare i moduli appropriati in base alle tue esigenze. Seleziona e importa solo il modulo core, se desideri creare solo codice Java nel progetto.
 
-Clic **Fine** per avviare il processo di importazione
+Fai clic su **Fine** per avviare il processo di importazione
 
-Il progetto viene importato in Eclipse e vengono visualizzati diversi `mysite.xxxx` cartelle
+Il progetto viene importato in Eclipse e sono presenti diverse `mysite.xxxx` cartelle
 
-Espandi `src/main/java` sotto `mysite.core` cartella. Questa è la cartella in cui si sta scrivendo la maggior parte del codice.
+Espandere `src/main/java` nella cartella `mysite.core`. Questa è la cartella in cui si sta scrivendo la maggior parte del codice.
 
-![data-source](assets/mysite-core-project.png)
+![origine dati](assets/mysite-core-project.png)
 
 ## Includi AEMFD Client SDK
 
-Devi includere l’sdk del client AEMFD nel progetto per sfruttare i vari servizi forniti con AEM Forms. Fare riferimento a [AEMFD Client SDK](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) per includere l’SDK client appropriato nel progetto Maven. È necessario includere l’SDK del client AEM FD nella sezione delle dipendenze di `pom.xml` del progetto principale, come illustrato di seguito.
+Devi includere l’sdk del client AEMFD nel progetto per sfruttare i vari servizi forniti con AEM Forms. Fai riferimento a [AEMFD Client SDK](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) per includere l&#39;SDK client appropriato nel progetto Maven. È necessario includere l&#39;SDK del client AEM FD nella sezione delle dipendenze di `pom.xml` del progetto principale, come illustrato di seguito.
 
 ```xml
 <dependency>
@@ -116,10 +116,10 @@ Devi includere l’sdk del client AEMFD nel progetto per sfruttare i vari serviz
 Per creare il progetto, effettua le seguenti operazioni:
 
 * Apri **finestra del prompt dei comandi**
-* Accedi a `c:\aemformsbundles\mysite\core`
+* Passa a `c:\aemformsbundles\mysite\core`
 * Esegui il comando `mvn clean install -PautoInstallBundle`
 Il comando precedente crea e installa il bundle nel server AEM in esecuzione su `http://localhost:4502`. Il bundle è disponibile anche sul file system all’indirizzo
-  `C:\AEMFormsBundles\mysite\core\target` e possono essere distribuiti tramite [Console web Felix](http://localhost:4502/system/console/bundles)
+  `C:\AEMFormsBundles\mysite\core\target` e può essere distribuito utilizzando [Console Web Felix](http://localhost:4502/system/console/bundles)
 
 ## Passaggi successivi
 

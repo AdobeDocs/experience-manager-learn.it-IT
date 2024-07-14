@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Questo articolo illustra i passaggi necessari per inserire i dati nell’elenco di SharePoint utilizzando il passaggio FDM di richiamo nel flusso di lavoro AEM.
 
-Questo articolo presuppone che tu abbia [modulo adattivo configurato correttamente per inviare dati all’elenco SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
+In questo articolo si presuppone che [il modulo adattivo sia stato configurato correttamente per l&#39;invio di dati all&#39;elenco di SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
 
 
 ## Creazione di un modello dati modulo basato sull&#39;origine dati dell&#39;elenco SharePoint
@@ -89,7 +89,7 @@ Il formato dei dati inviati è il seguente. Estrarre l’oggetto JSON ContactUS 
 }
 ```
 
-![modulo basato su foundation](assets/foundation-based-form.png)
+![modulo basato su Foundation](assets/foundation-based-form.png)
 
 ## Configurare un modulo adattivo per attivare il flusso di lavoro AEM
 

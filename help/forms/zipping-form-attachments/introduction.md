@@ -26,7 +26,7 @@ In genere, i clienti comprimono gli allegati del modulo o li inviano come file s
 
 ## Inviare gli allegati del modulo in un file zip
 
-Per eseguire il caso d’uso è stato scritto un passaggio di processo del flusso di lavoro personalizzato. In questo passaggio del processo personalizzato viene creato un file zip con gli allegati del modulo creati e memorizzati nella cartella del payload in un file denominato *zipped_attachments.zip*
+Per eseguire il caso d’uso è stato scritto un passaggio di processo del flusso di lavoro personalizzato. In questo passaggio del processo personalizzato un file zip con gli allegati del modulo creati e memorizzati nella cartella del payload in un file denominato *zipped_attachments.zip*
 
 ![invia-allegati-modulo](assets/send-form-attachments.JPG)
 

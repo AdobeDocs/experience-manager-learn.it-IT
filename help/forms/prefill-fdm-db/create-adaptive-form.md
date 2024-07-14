@@ -25,7 +25,7 @@ Finora abbiamo creato quanto segue
 * Origine dati in pool di connessione Apache Sling configurata
 * Modello dati modulo basato su RDBMS
 
-Il passaggio successivo consiste nel creare e configurare un modulo adattivo per l’utilizzo del modello dati del modulo.  Per iniziare subito puoi: [scaricare e importare](assets/fdm-demo-af.zip) modulo di esempio. Il modulo di esempio include una sezione per visualizzare i dettagli del dipendente e un&#39;altra sezione per elencare i beneficiari del dipendente.
+Il passaggio successivo consiste nel creare e configurare un modulo adattivo per l’utilizzo del modello dati del modulo.  Per iniziare puoi [scaricare e importare](assets/fdm-demo-af.zip) modulo di esempio. Il modulo di esempio include una sezione per visualizzare i dettagli del dipendente e un&#39;altra sezione per elencare i beneficiari del dipendente.
 
 ## Associa modulo a modello dati modulo
 
@@ -41,13 +41,13 @@ Il modulo di esempio fornito con questo corso non è associato ad alcun modello 
 
 Il primo passaggio consiste nell’associare il servizio di precompilazione al modulo. Per associare il servizio di preriempimento, effettuare le seguenti operazioni
 
-* Seleziona la `FDMDemo` modulo
-* Clic _Modifica_ per aprire il modulo in modalità di modifica
+* Seleziona il modulo `FDMDemo`
+* Fai clic su _Modifica_ per aprire il modulo in modalità di modifica
 * Seleziona Contenitore modulo nella gerarchia dei contenuti e fai clic sull’icona chiave inglese per aprire il relativo foglio delle proprietà
-* Seleziona _Servizio di precompilazione modello dati modulo_ dall’elenco a discesa Servizio di precompilazione
+* Seleziona _Servizio di precompilazione modello dati modulo_ dall&#39;elenco a discesa Servizio di precompilazione
 * Fai clic su ☑ blu per salvare le modifiche
 
-* ![preriempimento-servizio](assets/fdm-prefill.png)
+* ![servizio di precompilazione](assets/fdm-prefill.png)
 
 ## Configura dettagli dipendente
 
@@ -70,10 +70,10 @@ Il passaggio successivo consiste nel visualizzare i beneficiari del dipendente s
 * Apri il modulo in modalità di modifica.
 * Espandi pannello radice->beneficiari->tabella
 * Selezionare Riga1 e fare clic sull&#39;icona chiave inglese per aprire la relativa finestra delle proprietà.
-* Impostare il riferimento di associazione su **/newhire/GetEmployeeBeneficiaries**
+* Imposta il riferimento binding su **/newhire/GetEmployeeBeneficiaries**
 * Impostare Repeat Settings (Impostazioni ripetizione) - Minimum Count (Conteggio minimo) su 1 e Maximum Count su 5.
 * La configurazione Row1 deve essere simile alla schermata seguente
-  ![row-configure](assets/configure-row.PNG)
+  ![configurazione riga](assets/configure-row.PNG)
 * Fai clic sul ☑ blu per salvare le modifiche
 
 ## Associa celle riga

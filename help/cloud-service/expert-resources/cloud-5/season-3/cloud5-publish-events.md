@@ -1,5 +1,5 @@
 ---
-title: 'Cloud 5: pubblicare e annullare la pubblicazione di eventi in Edge Delivery Services'
+title: 'Cloud 5: Publish, annulla la pubblicazione di eventi in Edge Delivery Services'
 description: Esplora gli eventi attivati al momento della pubblicazione e dell’annullamento della pubblicazione nei Edge Delivery Services, nonché i casi d’uso e gli esempi per l’utilizzo di tali eventi.
 feature: Edge Delivery Services
 topic: Development
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ---
 
-# Cloud 5: pubblicare e annullare la pubblicazione di eventi in Edge Delivery Services
+# Cloud 5: Publish, annulla la pubblicazione di eventi in Edge Delivery Services
 
 Esplora gli eventi attivati al momento della pubblicazione e dell’annullamento della pubblicazione nei Edge Delivery Services, nonché i casi d’uso e gli esempi per l’utilizzo di tali eventi.
 

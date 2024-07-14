@@ -22,7 +22,7 @@ ht-degree: 0%
 Questo passaggio del processo personalizzato consiste nel creare un nuovo documento XML estraendo un nodo da un altro documento XML. Dovrai utilizzarlo quando desideri unire i dati inviati con un modello xdp per generare un PDF. Ad esempio, quando invii un modulo adattivo, i dati da unire con il modello xdp si trovano all’interno dell’elemento dati. In questo caso, è necessario creare un altro documento xml estraendo l’elemento dati appropriato.
 
 La schermata seguente mostra gli argomenti da passare al passaggio del processo personalizzato
-![passaggio del processo](assets/create-xml-process-step.png)
+![passaggio-processo](assets/create-xml-process-step.png)
 Di seguito sono riportati i parametri
 * Data.xml: il file xml da cui estrarre il nodo
 * datatomerge.xml: il nuovo xml creato con il nodo estratto

@@ -31,14 +31,14 @@ Le organizzazioni dispongono di un&#39;ampia varietà di forme. Alcuni di questi
 
 ### Per utilizzare questa funzionalità nel sistema sono necessari i seguenti elementi
 
-* Scarica e distribuisci i bundle utilizzando [Console web Felix](http://localhost:4502/system/console/bundles)
+* Scarica e distribuisci i bundle utilizzando la [console Web Felix](http://localhost:4502/system/console/bundles)
 * [DocumentServicesBundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * [DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [AcroFormsToAEMFormsBundle](https://forms.enablementadobe.com/content/DemoServerBundles/AcroFormToAEMForm.core-1.0-SNAPSHOT.jar)
-* [Scarica e importa questo pacchetto in AEM](assets/acro-form-aem-form.zip). Questo pacchetto contiene il flusso di lavoro di esempio e la pagina HTML per creare XSD da acroform
+* [Scaricare e importare il pacchetto in AEM](assets/acro-form-aem-form.zip). Questo pacchetto contiene il flusso di lavoro di esempio e la pagina HTML per creare XSD da acroform
 * Apri [configMgr](http://localhost:4502/system/console/configMgr)
    * Cerca &quot;Apache Sling Service User Mapper Service&quot; e fai clic per aprire le proprietà
-   * Fai clic su `+` (più) per aggiungere la seguente mappatura del servizio
+   * Fai clic sull&#39;icona `+` (segno più) per aggiungere il seguente mapping dei servizi
       * `DevelopingWithServiceUser.core:getresourceresolver=data`
       * `DevelopingWithServiceUser.core:getformsresourceresolver=fd-service`
    * Fai clic su Salva

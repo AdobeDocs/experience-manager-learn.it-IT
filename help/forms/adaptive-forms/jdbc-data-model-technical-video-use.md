@@ -24,4 +24,4 @@ Questo video illustra come creare un modello dati modulo basato su un’origine 
 
 >[!NOTE]
 >
->È possibile utilizzare qualsiasi origine dati RDBMS, purché i driver di database richiesti vengano distribuiti all’AEM come bundle OSGi. L’impostazione di un’origine dati RDBMS nell’AEM è descritta in [Configurare l’integrazione dei dati con AEM Forms](/help/forms/adaptive-forms/data-integration-technical-video-setup.md).
+>È possibile utilizzare qualsiasi origine dati RDBMS, purché i driver di database richiesti vengano distribuiti all’AEM come bundle OSGi. La configurazione di un&#39;origine dati RDBMS in AEM è inclusa in [Configurazione dell&#39;integrazione dei dati con AEM Forms](/help/forms/adaptive-forms/data-integration-technical-video-setup.md).

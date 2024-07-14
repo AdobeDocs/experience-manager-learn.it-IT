@@ -25,7 +25,7 @@ Scopri come incrementare l’ottimizzazione SEO (Search Engine Optimization) cre
 
 >[!WARNING]
 >
->Questo video illustra l’utilizzo di URL relativi nella mappa del sito. Sitemap [deve utilizzare URL assoluti](https://sitemaps.org/protocol.html). Consulta [Configurazioni](#absolute-sitemap-urls) per informazioni su come abilitare gli URL assoluti, in quanto ciò non è trattato nel video seguente.
+>Questo video illustra l’utilizzo di URL relativi nella mappa del sito. Le mappe del sito [ devono utilizzare URL assoluti](https://sitemaps.org/protocol.html). Per informazioni su come abilitare gli URL assoluti, consulta [Configurazioni](#absolute-sitemap-urls), in quanto questo argomento non è trattato nel video seguente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
 
@@ -33,9 +33,9 @@ Scopri come incrementare l’ottimizzazione SEO (Search Engine Optimization) cre
 
 ### URL sitemap assoluti{#absolute-sitemap-urls}
 
-La mappa del sito AEM supporta gli URL assoluti utilizzando [Mappatura Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Ciò avviene attraverso la creazione di nodi di mappatura sui servizi AEM che generano sitemap (in genere il servizio di pubblicazione AEM).
+La mappa del sito AEM supporta gli URL assoluti utilizzando [Mapping Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Ciò avviene attraverso la creazione di nodi di mappatura sui servizi dell’AEM che generano sitemap (in genere il servizio Publish dell’AEM).
 
-Esempio di definizione del nodo di mappatura Sling per `https://wknd.com` può essere definito in `/etc/map/https` come segue:
+Un esempio di definizione del nodo di mappatura Sling per `https://wknd.com` può essere definito in `/etc/map/https` come segue:
 
 | Percorso | Nome proprietà | Tipo di proprietà | Valore proprietà |
 |------|----------|---------------|-------|
@@ -43,14 +43,14 @@ Esempio di definizione del nodo di mappatura Sling per `https://wknd.com` può e
 | `/etc/map/https/wknd-site` | `sling:internalRedirect` | Stringa | `/content/wknd/(.*)` |
 | `/etc/map/https/wknd-site` | `sling:match` | Stringa | `wknd.com/$1` |
 
-La schermata seguente illustra una configurazione simile, ma per `http://wknd.local` (mapping di nome host locale in esecuzione su `http`).
+La schermata seguente illustra una configurazione simile ma per `http://wknd.local` (una mappatura del nome host locale in esecuzione su `http`).
 
-![Configurazione degli URL assoluti di Sitemap](../assets/sitemaps/sitemaps-absolute-urls.jpg)
+![Configurazione URL assoluti sitemap](../assets/sitemaps/sitemaps-absolute-urls.jpg)
 
 
 ### Configurazione OSGi dell’utilità di pianificazione di Sitemap
 
-Definisce il [Configurazione di fabbrica OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) per la frequenza (utilizzando [espressioni cron](https://cron.help/)) le sitemap vengono rigenerate e memorizzate nella cache dell&#39;AEM.
+Definisce la [configurazione di fabbrica OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) per la frequenza (utilizzando [espressioni cron](https://cron.help/)) con cui le sitemap vengono rigenerate/generate e memorizzate nella cache in AEM.
 
 `ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 
@@ -62,7 +62,7 @@ Definisce il [Configurazione di fabbrica OSGi](http://localhost:4502/system/cons
 }
 ```
 
-### Regola di filtro Consentiti di Dispatcher
+### Regola filtro Consentiti Dispatcher
 
 Consenti richieste HTTP per i file di indice e mappa del sito della mappa del sito.
 
@@ -77,7 +77,7 @@ Consenti richieste HTTP per i file di indice e mappa del sito della mappa del si
 
 ### Regola di riscrittura server web Apache
 
-Assicurare `.xml` Le richieste HTTP di sitemap vengono indirizzate alla pagina AEM sottostante corretta. Se non si utilizza l’abbreviazione degli URL o si utilizzano mappature Sling per ottenere l’abbreviazione degli URL, questa configurazione non è necessaria.
+Assicurarsi che `.xml` richieste HTTP sitemap vengano indirizzate alla pagina AEM sottostante corretta. Se non si utilizza l’abbreviazione degli URL o si utilizzano mappature Sling per ottenere l’abbreviazione degli URL, questa configurazione non è necessaria.
 
 `dispatcher/src/conf.d/rewrites/rewrite.rules`
 
@@ -89,8 +89,8 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## Riferimenti
 
-+ [Documentazione di AEM Sitemap](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
++ [Documentazione Sitemap AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
 + [Documentazione di Apache Sling Sitemap](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
-+ [Documentazione di Sitemap.org Sitemap](https://www.sitemaps.org/protocol.html)
-+ [Documentazione del file di indice Sitemap.org Sitemap](https://www.sitemaps.org/protocol.html#index)
++ [Sitemap.org Documentazione sitemap](https://www.sitemaps.org/protocol.html)
++ [Sitemap.org Documentazione del file di indice Sitemap](https://www.sitemaps.org/protocol.html#index)
 + [Helper Cron](https://cron.help/)

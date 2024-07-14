@@ -26,11 +26,11 @@ La console Componenti offre le seguenti funzionalità:
 
 * Panoramica: elenco di tutti i componenti installati disponibili nell’istanza AEM corrente
 * [!UICONTROL Proprietà]: visualizza metadati come titolo, gruppo e descrizione di un componente
-* [!UICONTROL Criteri]: mostra eventuali criteri esistenti per un dato componente e il modello associato
+* [!UICONTROL Criteri]: visualizza i criteri esistenti per un determinato componente e il modello associato
 * [!UICONTROL Utilizzo live]: visualizza un elenco di pagine in cui è incluso il componente
 
 La console Componenti si trova in **[!UICONTROL Strumenti]** > **[!UICONTROL Generale]** > **[!UICONTROL Componenti]**.
-URL della console Componenti (autore AEM locale): [http://localhost:4502/libs/wcm/core/content/sites/components.html](http://localhost:4502/libs/wcm/core/content/sites/components.html)
+URL della console dei componenti (autore AEM locale): [http://localhost:4502/libs/wcm/core/content/sites/components.html](http://localhost:4502/libs/wcm/core/content/sites/components.html)
 
 ## Risorse aggiuntive {#additional-resources}
 

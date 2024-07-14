@@ -1,5 +1,5 @@
 ---
-title: Cloud 5 - Lavoratori Edge
+title: Cloud 5 - Edge Workers
 description: Scopri l’importanza dei lavoratori edge in AEM Sites e nei Edge Delivery Services e come integrarli con i sistemi back-end.
 feature: Edge Delivery Services
 topic: Development

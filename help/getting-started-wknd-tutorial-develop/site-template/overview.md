@@ -26,15 +26,15 @@ Scopri come utilizzare un approccio low-code per creare il tuo primo sito in Ado
 
 >[!VIDEO](https://video.tv.adobe.com/v/333477?quality=12&learn=on)
 
-* [Kit interfaccia utente di Adobe XD](https://github.com/adobe/aem-site-template-basic/blob/main/files/wireframe.xd)
-* [Modello per sito AEM](https://github.com/adobe/aem-site-template-basic)
+* [Kit interfaccia utente Adobe XD](https://github.com/adobe/aem-site-template-basic/blob/main/files/wireframe.xd)
+* [Modello sito AEM](https://github.com/adobe/aem-site-template-basic)
 
-## Ambiente as a Cloud Service AEM {#environment}
+## Ambiente AEM as a Cloud Service {#environment}
 
-I passaggi descritti in questo tutorial si svolgono in un ambiente Adobe Experience Manager as a Cloud Service. Assicurati di disporre di accesso amministrativo all’ambiente AEM. Si consiglia di utilizzare un [Programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) e [Ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) al completamento di questa esercitazione.
+I passaggi descritti in questo tutorial si svolgono in un ambiente Adobe Experience Manager as a Cloud Service. Assicurati di disporre di accesso amministrativo all’ambiente AEM. Per completare questa esercitazione, si consiglia di utilizzare un [programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) e un [ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html).
 
 ## Passaggi successivi {#next-steps}
 
 Un tutorial dettagliato illustra l’implementazione di un sito AEM per un brand di lifestyle fittizio, WKND, utilizzando la funzione Creazione rapida di siti.
 
-Cosa state aspettando?! Avvia l’esercitazione passando al [Crea sito](create-site.md) e scopri come generare un nuovo progetto Adobe Experience Manager utilizzando un modello di sito.
+Cosa state aspettando?! Avvia l&#39;esercitazione passando al capitolo [Crea sito](create-site.md) e scopri come generare un nuovo progetto Adobe Experience Manager utilizzando un modello di sito.

@@ -24,7 +24,7 @@ In genere, i clienti desiderano esportare i dati del modulo inviato in formato C
 >
 >Questo esempio funziona solo con Forms adattivo non basato su schema o modello dati modulo
 
-![Struttura della tabella](assets/tablestructure.PNG)
+![Struttura tabella](assets/tablestructure.PNG)
 Come puoi notare, il nome dello schema è formale.All’interno di questo schema è presente la tabella formsottomissioni con le seguenti colonne definite
 
 * formdata: questa colonna contiene i formdata inviati
@@ -45,7 +45,7 @@ Il seguente servizio OSGI è stato creato per esportare i dati inviati in format
 
 * Riga 37: è in corso l’accesso all’origine dati in pool di connessione Apache Sling.
 
-* Riga 89: questo è il punto di ingresso del servizio.Il metodo `getCSVFile(..)` assume formName come parametro di input e recupera i dati inviati relativi al nome di modulo specificato.
+* Riga 89: questo è il punto di ingresso del servizio. Il metodo `getCSVFile(..)` prende in formName come parametro di input e recupera i dati inviati relativi al nome di modulo specificato.
 
 >[!NOTE]
 >
@@ -265,7 +265,7 @@ public @interface StoreAndExportConfiguration {
 
 ## Servlet
 
-Di seguito è riportato il codice del servlet che richiama `getCSVFile(..)` metodo del servizio. Il servizio restituisce l&#39;oggetto StringBuffer che viene quindi inviato in streaming all&#39;applicazione chiamante
+Di seguito è riportato il codice del servlet che richiama il metodo `getCSVFile(..)` del servizio. Il servizio restituisce l&#39;oggetto StringBuffer che viene quindi inviato in streaming all&#39;applicazione chiamante
 
 ```java
 package com.aemforms.storeandexport.core.servlets;
@@ -307,6 +307,6 @@ public class StreamCSVFile extends SlingAllMethodsServlet {
 
 ### Distribuisci sul server
 
-* Importa [File SQL](assets/formsubmissions.sql) nel server MySQL utilizzando MySQL Workbench. Questo crea uno schema denominato **emformstutoriale** e tabella denominata **moduli sottomissioni** con alcuni dati di esempio.
-* Distribuisci [Bundle OSGi](assets/store-export.jar) utilizzo della console web Felix
+* Importare il [file SQL](assets/formsubmissions.sql) nel server MySQL utilizzando MySQL Workbench. In questo modo vengono creati lo schema denominato **aemformstutorial** e la tabella denominata **formsubmissions** con alcuni dati di esempio.
+* Distribuisci [Bundle OSGi](assets/store-export.jar) tramite la console Web Felix
 * [Per ottenere gli invii TimeOffRequest](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform). Dovresti ricevere il file CSV inviato in streaming.

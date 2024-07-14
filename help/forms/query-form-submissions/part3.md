@@ -22,7 +22,7 @@ ht-degree: 1%
 
 È stata creata una semplice interfaccia di query per consentire all’&quot;Amministratore&quot; di inserire criteri di ricerca per recuperare invii di moduli specifici. I risultati vengono quindi visualizzati in un semplice formato tabulare con l’opzione per visualizzare un particolare invio di modulo.
 
-![query-submissions](assets/query-submissions.png)
+![invii-query](assets/query-submissions.png)
 
 I menu a discesa in questa interfaccia sono a discesa a cascata. Le opzioni disponibili nel menu a discesa cambiano in base alle selezioni effettuate nel menu a discesa precedente.
 

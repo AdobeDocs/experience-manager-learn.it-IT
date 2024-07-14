@@ -1,6 +1,6 @@
 ---
-title: Distribuire Asset compute worker in Adobe I/O Runtime per l'utilizzo con AEM as a Cloud Service
-description: I progetti Asset compute e i lavoratori in essi contenuti devono essere distribuiti in Adobe I/O Runtime per poter essere utilizzati dagli as a Cloud Service AEM.
+title: Distribuire Asset Compute worker in Adobe I/O Runtime per l'utilizzo con AEM as a Cloud Service
+description: I progetti Asset Compute e i relativi processi di lavoro devono essere distribuiti in Adobe I/O Runtime per poter essere utilizzati da AEM as a Cloud Service.
 feature: Asset Compute Microservices
 version: Cloud Service
 doc-type: Tutorial
@@ -20,45 +20,45 @@ ht-degree: 0%
 
 # Implementare in Adobe I/O Runtime
 
-I progetti Asset compute, e i relativi processi di lavoro, devono essere distribuiti in Adobe I/O Runtime tramite l&#39;interfaccia CLI Adobe I/O per poter essere utilizzati da AEM as a Cloud Service.
+I progetti Asset Compute e i relativi processi di lavoro devono essere distribuiti in Adobe I/O Runtime tramite Adobe I/O CLI, affinché possa essere utilizzato da AEM as a Cloud Service.
 
-Durante la distribuzione in Adobe I/O Runtime per l’utilizzo da parte dei servizi di authoring as a Cloud Service dell’AEM sono necessarie solo due variabili di ambiente:
+Durante la distribuzione in Adobe I/O Runtime per l’utilizzo da parte dei servizi AEM as a Cloud Service Author sono necessarie solo due variabili di ambiente:
 
-+ `AIO_runtime_namespace` punta all’area di lavoro di App Builder per la distribuzione a
-+ `AIO_runtime_auth` sono le credenziali di autenticazione dell’area di lavoro di App Builder
++ `AIO_runtime_namespace` punti a cui distribuire App Builder Workspace
++ `AIO_runtime_auth` sono le credenziali di autenticazione dell&#39;area di lavoro App Builder
 
-Le altre variabili standard definite nel `.env` sono forniti implicitamente da AEM as a Cloud Service quando richiama il lavoratore Asset compute.
+Le altre variabili standard definite nel file `.env` vengono fornite in modo implicito da AEM as a Cloud Service quando richiama il processo di lavoro Asset Compute.
 
 ## Area di lavoro sviluppo
 
-Poiché questo progetto è stato generato con `aio app init` utilizzando `Development` workspace, `AIO_runtime_namespace` è impostato automaticamente su `81368-wkndaemassetcompute-development` con la corrispondenza `AIO_runtime_auth` nel nostro locale `.env` file.  Se un `.env` esiste nella directory utilizzata per emettere il comando deploy, vengono utilizzati i relativi valori, a meno che non vengano sostituiti tramite un&#39;esportazione di variabile a livello di sistema operativo, nel qual modo [fase e produzione](#stage-and-production) le aree di lavoro sono impostate come destinazione.
+Poiché il progetto è stato generato utilizzando `aio app init` utilizzando l&#39;area di lavoro `Development`, `AIO_runtime_namespace` viene impostato automaticamente su `81368-wkndaemassetcompute-development` con `AIO_runtime_auth` corrispondente nel file `.env` locale.  Se nella directory utilizzata per il comando di distribuzione è presente un file `.env`, vengono utilizzati i relativi valori, a meno che non vengano sostituiti tramite un&#39;esportazione della variabile a livello di sistema operativo, ovvero nel modo in cui vengono indirizzate le aree di lavoro [stage e produzione](#stage-and-production).
 
-![distribuzione di app aio tramite variabili .env](./assets/runtime/development__aio.png)
+![distribuzione app aio tramite variabili .env](./assets/runtime/development__aio.png)
 
-Per distribuire nell’area di lavoro, definisci nei progetti `.env` file:
+Per distribuire nell&#39;area di lavoro, definire nel file `.env` dei progetti:
 
 1. Apri la riga di comando nella directory principale del progetto di Asset compute
 1. Esegui il comando `aio app deploy`
-1. Esegui il comando `aio app get-url` per ottenere l’URL del lavoratore da utilizzare nel profilo di elaborazione as a Cloud Service dell’AEM per fare riferimento a questo lavoratore Asset compute personalizzato. Se il progetto contiene più lavoratori, vengono elencati gli URL discreti per ciascun lavoratore.
+1. Eseguire il comando `aio app get-url` per ottenere l&#39;URL del processo di lavoro da utilizzare nel profilo di elaborazione di AEM as a Cloud Service per fare riferimento a questo processo di lavoro Asset compute personalizzato. Se il progetto contiene più lavoratori, vengono elencati gli URL discreti per ciascun lavoratore.
 
-Se gli ambienti di sviluppo locale e gli ambienti di sviluppo as a Cloud Service AEM utilizzano distribuzioni Asset compute separate, le distribuzioni nello sviluppo as a Cloud Service AEM possono essere gestite nello stesso modo in cui [Distribuzioni negli ambienti di staging e produzione](#stage-and-production).
+Se gli ambienti di sviluppo locali e gli ambienti di sviluppo AEM as a Cloud Service utilizzano distribuzioni Asset Compute separate, le distribuzioni in AEM as a Cloud Service Dev possono essere gestite nello stesso modo delle [distribuzioni di staging e produzione](#stage-and-production).
 
 ## Aree di lavoro di staging e produzione{#stage-and-production}
 
-La distribuzione nelle aree di lavoro di staging e produzione viene in genere eseguita dal sistema CI/CD scelto. Il progetto di Asset compute deve essere distribuito in ogni area di lavoro (Stage e quindi Produzione) in modo discreto.
+La distribuzione nelle aree di lavoro di staging e produzione viene in genere eseguita dal sistema CI/CD scelto. Il progetto di Asset compute deve essere distribuito in modo discreto in ogni Workspace (Stage e poi Produzione).
 
-L’impostazione di variabili di ambiente vere sostituisce i valori per le variabili con lo stesso nome in `.env`.
+L&#39;impostazione delle variabili di ambiente vere sostituisce i valori per le variabili con lo stesso nome in `.env`.
 
-![distribuzione di app aio tramite variabili di esportazione](./assets/runtime/stage__export-and-aio.png)
+![distribuzione app aio tramite variabili di esportazione](./assets/runtime/stage__export-and-aio.png)
 
 L’approccio generale, in genere automatizzato da un sistema CI/CD, per la distribuzione negli ambienti di staging e produzione è il seguente:
 
-1. Assicurati che [Modulo npm CLI Adobe I/O e plug-in Asset compute](../set-up/development-environment.md#aio) sono installati
+1. Verificare che il modulo npm CLI Adobe I/O [e il plug-in Asset Compute](../set-up/development-environment.md#aio) siano installati
 1. Consulta il progetto di Asset compute da distribuire da Git
 1. Imposta le variabili di ambiente con i valori corrispondenti all’area di lavoro di destinazione (Stage o Produzione)
-   + Le due variabili richieste sono `AIO_runtime_namespace` e `AIO_runtime_auth` e sono ottenuti per area di lavoro in Adobe I/O Developer Console tramite il __Scarica tutto__ funzionalità.
+   + Le due variabili richieste sono `AIO_runtime_namespace` e `AIO_runtime_auth` e vengono ottenute per area di lavoro in Adobe I/O Developer Console tramite la funzione __Scarica tutto__ di Workspace.
 
-![Console Adobe Developer: spazio dei nomi e autenticazione di runtime AIO](./assets/runtime/stage-auth-namespace.png)
+![Adobe Developer Console - Spazio dei nomi e autenticazione runtime AIO](./assets/runtime/stage-auth-namespace.png)
 
 I valori di queste chiavi possono essere impostati eseguendo i comandi di esportazione dalla riga di comando:
 
@@ -71,13 +71,13 @@ Se i processi di lavoro Asset compute richiedono altre variabili, ad esempio l�
 
 1. Una volta impostate tutte le variabili di ambiente per la distribuzione nell’area di lavoro di destinazione, esegui il comando deploy:
    + `aio app deploy`
-1. Gli URL del lavoratore a cui fa riferimento il profilo di elaborazione as a Cloud Service dell’AEM sono disponibili anche tramite:
+1. Gli URL del lavoratore a cui fa riferimento il profilo di elaborazione di AEM as a Cloud Service sono disponibili anche tramite:
    + `aio app get-url`.
 
 Se la versione del progetto di Asset compute cambia, anche gli URL del lavoratore cambiano in modo da riflettere la nuova versione e l’URL dovrà essere aggiornato nei Profili di elaborazione.
 
 ## Provisioning API di Workspace{#workspace-api-provisioning}
 
-Quando [configurazione del progetto App Builder in Adobe I/O](../set-up/app-builder.md) per supportare lo sviluppo locale, è stata creata una nuova area di lavoro Sviluppo e __Asset compute, Eventi di I/O__ e __API per la gestione degli eventi di I/O__ sono stati aggiunti.
+Quando [il progetto App Builder nell&#39;Adobe I/O](../set-up/app-builder.md) è stato configurato per supportare lo sviluppo locale, è stata creata una nuova area di lavoro Sviluppo e sono state aggiunte __API Asset compute, Eventi di I/O__ e __API Gestione eventi I/O__.
 
-Il __Asset compute, Eventi di I/O__ e __API per la gestione degli eventi di I/O__ Le API vengono aggiunte in modo esplicito solo alle aree di lavoro utilizzate per lo sviluppo locale. Le aree di lavoro che si integrano (esclusivamente) con gli ambienti as a Cloud Service dell’AEM __non__ devono essere aggiunte esplicitamente in quanto le API sono rese disponibili naturalmente per gli as a Cloud Service AEM.
+Le API __Asset Compute, I/O Events__ e __I/O Events Management__ vengono aggiunte in modo esplicito solo alle aree di lavoro utilizzate per lo sviluppo locale. Le aree di lavoro che si integrano (esclusivamente) con gli ambienti AEM as a Cloud Service __non__ richiedono l&#39;aggiunta esplicita di queste API, in quanto sono rese naturalmente disponibili per AEM as a Cloud Service.

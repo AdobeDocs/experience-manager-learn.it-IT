@@ -20,15 +20,15 @@ ht-degree: 0%
 
 Segui i passaggi elencati di seguito per far sì che questo caso d’uso funzioni sull’istanza AEM locale.
 
-* [Distribuire il bundle DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip) contenuto nel file zip.
+* [Distribuisci il bundle DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip) contenuto nel file zip.
 
 * Aggiungi la seguente voce nel servizio User Mapper di Apache Sling Service **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** utilizzando [configMgr](http://localhost:4502/system/console/configMgr).
 
-* [Distribuire il bundle newsletter](assets/Newsletters.core-1.0.0-SNAPSHOT.jar). Questo bundle contiene il codice per elencare il contenuto della cartella e assemblare le newsletter selezionate.
+* [Distribuisci il bundle newsletter](assets/Newsletters.core-1.0.0-SNAPSHOT.jar). Questo bundle contiene il codice per elencare il contenuto della cartella e assemblare le newsletter selezionate.
 
 * [Importare il pacchetto utilizzando Gestione pacchetti](assets/newsletter.zip). Questo pacchetto contiene la libreria client e file PDF di esempio per testare la soluzione.
 
-* [Importare il modulo adattivo di esempio](assets/sample-adaptive-form.zip). In questo modulo verranno elencate le newsletter che è possibile selezionare.
+* [Importa il modulo adattivo di esempio](assets/sample-adaptive-form.zip). In questo modulo verranno elencate le newsletter che è possibile selezionare.
 
-* [Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/downloadarchivednewsletters/jcr:content?wcmmode=disabled).
+* [Anteprima modulo](http://localhost:4502/content/dam/formsanddocuments/downloadarchivednewsletters/jcr:content?wcmmode=disabled).
 Selezionare un paio di newsletter da scaricare.Le newsletter selezionate verranno combinate in un unico PDF e restituite all&#39;utente.

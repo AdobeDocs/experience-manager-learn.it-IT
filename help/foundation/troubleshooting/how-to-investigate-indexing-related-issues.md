@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Come indagare i problemi correlati all’indicizzazione nell’AEM
 
-*Questo video illustra i passaggi necessari per analizzare i problemi correlati all’indicizzazione nell’AEM.*
+*Questo video illustra i passaggi necessari per analizzare i problemi correlati all&#39;indicizzazione in AEM.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335465?quality=12&learn=on)

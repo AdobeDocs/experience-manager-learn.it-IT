@@ -31,9 +31,9 @@ Prima di eseguire lo script è necessario configurarlo con l’URL dell’istanz
 
 ## Esporta script
 
-Lo script, scritto come modulo JavaScript, fa parte di un progetto Node.js, in quanto ha una dipendenza da `node-fetch`. È possibile [scarica il progetto come file zip](./assets/export/export-aem-assets-script.zip), oppure copia lo script seguente in un progetto Node.js vuoto di tipo `module`, ed eseguire `npm install node-fetch` per installare la dipendenza.
+Lo script, scritto come modulo di JavaScript, fa parte di un progetto Node.js, in quanto ha una dipendenza da `node-fetch`. È possibile [scaricare il progetto come file zip](./assets/export/export-aem-assets-script.zip) o copiare lo script seguente in un progetto Node.js vuoto di tipo `module` ed eseguire `npm install node-fetch` per installare la dipendenza.
 
-Questo script descrive la struttura delle cartelle di AEM Assets e scarica risorse e cartelle in una cartella locale sul computer. Utilizza il [API HTTP di AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) per recuperare i dati della cartella e della risorsa e scaricare le rappresentazioni originali delle risorse.
+Questo script descrive la struttura delle cartelle di AEM Assets e scarica risorse e cartelle in una cartella locale sul computer. Utilizza l&#39;[API HTTP di AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) per recuperare i dati della cartella e delle risorse e scarica le rappresentazioni originali delle risorse.
 
 ```javascript
 // export-assets.js
@@ -243,7 +243,7 @@ console.timeEnd('Download AEM assets');
 
 Con lo script scaricato, aggiorna le variabili di configurazione nella parte inferiore dello script.
 
-Il `AEM_ACCESS_TOKEN` possono essere ottenute seguendo i passaggi descritti in [Autenticazione basata su token per AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview) esercitazione. Spesso il token sviluppatore di 24 ore è sufficiente, purché il completamento dell’esportazione richieda meno di 24 ore e l’utente che genera il token abbia accesso in lettura alle risorse da esportare.
+È possibile ottenere `AEM_ACCESS_TOKEN` seguendo i passaggi descritti nell&#39;esercitazione sull&#39;autenticazione basata su token per AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview). [ Spesso il token sviluppatore di 24 ore è sufficiente, purché il completamento dell’esportazione richieda meno di 24 ore e l’utente che genera il token abbia accesso in lettura alle risorse da esportare.
 
 ```javascript
 ...
@@ -270,7 +270,7 @@ const MAX_CONCURRENT_DOWNLOADS = 10;
 
 Esegui lo script utilizzando Node.js per esportare le risorse nel computer locale.
 
-A seconda del numero di risorse e delle loro dimensioni, il completamento dello script potrebbe richiedere un po’ di tempo. Durante l’esecuzione dello script, [registra l’avanzamento](#output) alla console.
+A seconda del numero di risorse e delle loro dimensioni, il completamento dello script potrebbe richiedere un po’ di tempo. Durante l&#39;esecuzione, lo script [registra l&#39;avanzamento](#output) nella console.
 
 ```shell
 $ node export-assets.js
@@ -294,6 +294,6 @@ Downloaded asset: exported-assets/wknd-shared/en/magazine/western-australia/adob
 Download AEM assets: 24.770s
 ```
 
-Le risorse esportate si trovano nella cartella locale specificata nella configurazione `LOCAL_DOWNLOAD_FOLDER`. La struttura di cartelle rispecchia la struttura di cartelle di AEM Assets, con le risorse scaricate nelle sottocartelle appropriate. Questi file possono essere caricati in [provider di archiviazione cloud supportati](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view), per [importazione in blocco](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/bulk-import) in altre istanze AEM o a scopo di backup.
+Le risorse esportate si trovano nella cartella locale specificata nella configurazione `LOCAL_DOWNLOAD_FOLDER`. La struttura di cartelle rispecchia la struttura di cartelle di AEM Assets, con le risorse scaricate nelle sottocartelle appropriate. Questi file possono essere caricati in [provider di archiviazione cloud supportati](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view), per [importazione in blocco](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/bulk-import) in altre istanze AEM o per scopi di backup.
 
 ![Risorse esportate](./assets/export/exported-assets.png)

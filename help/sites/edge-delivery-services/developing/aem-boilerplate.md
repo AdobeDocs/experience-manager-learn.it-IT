@@ -21,6 +21,6 @@ ht-degree: 2%
 
 # Piastra riscaldante per AEM
 
-Configurare l’archivio Git del codice con [Modello boilerplate AEM](https://github.com/adobe/aem-boilerplate) per Edge Delivery Services.
+Configura l&#39;archivio Git del codice con il modello standard [AEM](https://github.com/adobe/aem-boilerplate) per i Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425713/?learn=on)

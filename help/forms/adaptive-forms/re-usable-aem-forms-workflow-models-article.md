@@ -23,8 +23,8 @@ A partire dalla versione 6.5 di AEM Forms, ora è possibile creare modelli di fl
 Per progettare tale flusso di lavoro, esegui i seguenti passaggi
 
 1. Accedere a AEM
-1. Puntare il browser a [modello di flusso di lavoro](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
-1. Clic __Crea > Crea modello__ per aggiungere un modello di workflow
+1. Puntare il browser al [modello flusso di lavoro](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
+1. Fai clic su __Crea > Crea modello__ per aggiungere un modello di flusso di lavoro
 1. Specifica il nome e il titolo appropriati per il modello di flusso di lavoro, quindi fai clic su Fine
 1. Apri il modello appena creato in modalità di modifica
 1. Trascina il componente Assegna attività sul modello di flusso di lavoro
@@ -35,7 +35,8 @@ Per progettare tale flusso di lavoro, esegui i seguenti passaggi
 È possibile specificare il percorso del modulo in tre modi
 
 1. Disponibile in un percorso assoluto: ciò significa che il flusso di lavoro è strettamente associato al modulo adattivo. Questo non è quello che vogliamo qui
-1. **Inviato al flusso di lavoro** - Questo significa che quando il modulo adattivo viene inviato, il motore del flusso di lavoro estrae il nome del modulo dai dati inviati. Questa è l’opzione che deve essere selezionata
-1. Disponibile in un percorso in una variabile: ciò significa che il modulo adattivo viene raccolto dalla variabile del flusso di lavoro. La schermata seguente mostra l’opzione corretta da scegliere per separare il flusso di lavoro dal modulo adattivo
+1. **Inviato al flusso di lavoro** - Ciò significa che quando il modulo adattivo viene inviato, il motore del flusso di lavoro estrae il nome del modulo dai dati inviati. Questa è l’opzione che deve essere selezionata
+1. Disponibile in un percorso in una variabile: ciò significa che il modulo adattivo viene raccolto dalla variabile del flusso di lavoro
+La schermata seguente mostra l’opzione corretta da scegliere per il flusso di lavoro di disaccoppiamento dal modulo adattivo
 
 ![Modelli di flusso di lavoro AEM Forms riutilizzabili](assets/workflomodel.PNG)

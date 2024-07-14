@@ -20,9 +20,9 @@ ht-degree: 0%
 
 È possibile precompilare i campi di un modulo adattivo utilizzando dati esistenti. Quando un utente apre un modulo, i valori di tali campi vengono precompilati. Esistono diversi modi per precompilare i campi dei moduli adattivi. In questo articolo, esamineremo la precompilazione dei moduli adattivi utilizzando il servizio di precompilazione di AEM Forms.
 
-Per ulteriori informazioni sui vari metodi di precompilazione dei moduli adattivi, [segui questa documentazione](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
+Per ulteriori informazioni sui vari metodi di precompilazione dei moduli adattivi, [consulta questa documentazione](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
-Per precompilare un modulo adattivo utilizzando il servizio di precompilazione, è necessario creare una classe che implementi il `com.adobe.forms.common.service.DataXMLProvider` di rete. Il metodo `getDataXMLForDataRef` avrà la logica per generare e restituire i dati utilizzati dal modulo adattivo per precompilare i campi. Con questo metodo, puoi recuperare i dati da qualsiasi origine e restituire il flusso di input del documento di dati. Il codice di esempio seguente recupera le informazioni sul profilo utente dell’utente connesso e crea un documento XML il cui flusso di input viene restituito per essere utilizzato dai moduli adattivi.
+Per precompilare un modulo adattivo utilizzando il servizio di precompilazione, è necessario creare una classe che implementi l&#39;interfaccia `com.adobe.forms.common.service.DataXMLProvider`. Il metodo `getDataXMLForDataRef` avrà la logica per generare e restituire i dati che il modulo adattivo utilizzerà per precompilare i campi. Con questo metodo, puoi recuperare i dati da qualsiasi origine e restituire il flusso di input del documento di dati. Il codice di esempio seguente recupera le informazioni sul profilo utente dell’utente connesso e crea un documento XML il cui flusso di input viene restituito per essere utilizzato dai moduli adattivi.
 
 Nel frammento di codice riportato di seguito è disponibile una classe che implementa l&#39;interfaccia DataXMLProvider. Possiamo accedere all’utente connesso e quindi recuperare le informazioni del profilo dell’utente connesso. Quindi creiamo un documento XML con un elemento del nodo principale denominato &quot;data&quot; e aggiungiamo gli elementi appropriati a questo nodo di dati. Una volta costruito il documento XML, viene restituito il flusso di input del documento XML.
 
@@ -139,12 +139,12 @@ public class PrefillAdaptiveForm implements DataXMLProvider {
 
 Per testare questa funzionalità sul server, eseguire le operazioni seguenti
 
-* Assicurati che l’utente abbia effettuato l’accesso [profilo utente](http://localhost:4502/security/users.html) le informazioni vengono compilate. Nell&#39;esempio vengono cercate le proprietà FirstName, LastName e Email dell&#39;utente connesso.
+* Assicurarsi che le informazioni del profilo dell&#39;utente [connesso](http://localhost:4502/security/users.html) siano compilate. Nell&#39;esempio vengono cercate le proprietà FirstName, LastName e Email dell&#39;utente connesso.
 * [Scarica ed estrai il contenuto del file zip sul computer](assets/prefillservice.zip)
-* Distribuisci il bundle prefill.core-1.0.0-SNAPSHOT utilizzando [Console web AEM](http://localhost:4502/system/console/bundles)
-* Importare il modulo adattivo utilizzando Crea | Caricamento di file da [Sezione FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Assicurati che le [modulo](http://localhost:4502/editor.html/content/forms/af/prefill.html) sta utilizzando **&quot;Servizio AEM Forms PreFill personalizzato&quot;** come servizio di precompilazione. Questo può essere verificato dalle proprietà di configurazione della **Contenitore modulo** sezione.
-* [Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/prefill/jcr:content?wcmmode=disabled). Dovresti vedere il modulo compilato con i valori corretti.
+* Distribuisci il bundle prefill.core-1.0.0-SNAPSHOT utilizzando la [console Web AEM](http://localhost:4502/system/console/bundles)
+* Importare il modulo adattivo utilizzando Crea | Caricamento di file dalla sezione [FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Assicurati che il [modulo](http://localhost:4502/editor.html/content/forms/af/prefill.html) stia utilizzando **&quot;Servizio AEM Forms PreFill personalizzato&quot;** come servizio di precompilazione. Questo può essere verificato dalle proprietà di configurazione della sezione **Contenitore modulo**.
+* [Anteprima modulo](http://localhost:4502/content/dam/formsanddocuments/prefill/jcr:content?wcmmode=disabled). Dovresti vedere il modulo compilato con i valori corretti.
 
 >[!NOTE]
 >

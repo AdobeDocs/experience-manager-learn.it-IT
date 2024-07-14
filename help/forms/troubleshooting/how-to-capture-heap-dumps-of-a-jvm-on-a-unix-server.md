@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Acquisire le immagini heap di una JVM su un server unix
 
-*Questo video illustra i passaggi per acquisire le immagini heap di una JVM su un server unix.*
+*Questo video illustra i passaggi necessari per acquisire le immagini heap di una JVM su un server unix.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335489?quality=12&learn=on)

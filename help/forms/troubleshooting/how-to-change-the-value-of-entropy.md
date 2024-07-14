@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Come modificare il valore dell’entropia
 
-*Questo video illustra i passaggi per modificare il valore dell’entropia.*
+*Questo video illustra i passaggi necessari per modificare il valore dell&#39;entropia.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335494?quality=12&learn=on)

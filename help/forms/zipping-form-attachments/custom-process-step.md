@@ -19,7 +19,7 @@ ht-degree: 1%
 # Passaggio processo personalizzato
 
 
-È stato implementato un passaggio di processo personalizzato per creare il file zip contenente gli allegati del modulo. Se non hai familiarità con la creazione del bundle OSGi, [segui queste istruzioni](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+È stato implementato un passaggio di processo personalizzato per creare il file zip contenente gli allegati del modulo. Se non conosci la creazione del bundle OSGi, [segui queste istruzioni](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
 
 Il codice nel passaggio del processo personalizzato esegue le seguenti operazioni
 
@@ -160,7 +160,7 @@ public class ZipFormAttachments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> Assicurati di disporre di una variabile denominata  *no_of_attachments* di tipo Doppio nel flusso di lavoro affinché questo codice funzioni.
+> Assicurati che nel flusso di lavoro sia presente una variabile denominata *no_of_attachments* di tipo Double affinché il codice funzioni.
 
 ## Passaggi successivi
 

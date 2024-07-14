@@ -23,11 +23,11 @@ In questa parte verrà creato un frammento di documento contenente il nome e l�
 
 >[!VIDEO](https://video.tv.adobe.com/v/22350?quality=12&learn=on)
 
-I frammenti di documento contengono il contenuto testuale dei documenti di comunicazione interattivi. Questo contenuto di testo può essere testo statico o inserito dai valori degli elementi del modello dati sottostante. Ad esempio Gentile {name}, dove Gentile è un testo statico e {name} è il nome dell’elemento dati del modulo. In fase di runtime, questo si risolverà in Dear Gloria Rios o Dear John Jacobs a seconda del valore dell&#39;elemento name.
+I frammenti di documento contengono il contenuto testuale dei documenti di comunicazione interattivi. Questo contenuto di testo può essere testo statico o inserito dai valori degli elementi del modello dati sottostante. Ad esempio Gentile {name}, dove Gentile è testo statico e {name} è il nome dell&#39;elemento dati del modulo. In fase di runtime, questo si risolverà in Dear Gloria Rios o Dear John Jacobs a seconda del valore dell&#39;elemento name.
 
 L’editor Rich Text è abbastanza intuitivo da consentire a un utente aziendale di creare testo e inserire elementi dati del modulo. L’editor dei frammenti di documento consente di formattare il testo, specificare tipi di carattere e stili, inserire caratteri speciali e creare collegamenti ipertestuali.
 
-L’editor del frammento di documento può anche inserire condizioni in linea nel testo, come illustrato in questo [video](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
+L&#39;editor frammento di documento consente inoltre di inserire condizioni in linea nel testo, come illustrato in questo [video](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
 
 >[!NOTE]
 >

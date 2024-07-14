@@ -23,7 +23,8 @@ Di seguito è riportata la schermata di un file xml contenente più record.
 
 ![multi-record-xml](assets/multi-record-xml.PNG)
 
-L’XML dati ha 2 record. Ogni record è rappresentato dall&#39;elemento form1. Questo xml viene passato a OutputService [generatePDFOutputBatch, metodo](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) otteniamo l’elenco dei documenti pdf (uno per record) La firma del metodo generatePDFOutputBatch accetta i seguenti parametri
+L’XML dati ha 2 record. Ogni record è rappresentato dall&#39;elemento form1. Questo xml viene passato al metodo OutputService [generatePDFOutputBatch](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html). Viene visualizzato un elenco di documenti PDF (uno per record)
+La firma del metodo generatePDFOutputBatch accetta i seguenti parametri
 
 * modelli: mappa contenente il modello, identificato da una chiave
 * data: mappa contenente documenti di dati xml, identificati dalla chiave
@@ -128,9 +129,9 @@ Per testare questa funzionalità sul server, attieniti alle seguenti istruzioni:
 
 * [Scarica ed estrai il contenuto del file zip nel file system](assets/mult-records-template-and-xml-file.zip).Questo file zip contiene il modello e il file di dati xml.
 * [Puntare il browser alla console Web Felix](http://localhost:4502/system/console/bundles)
-* [Distribuire il bundle DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
-* [Distribuisci bundle AEMFormsDocumentServices personalizzato](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).Pacchetto personalizzato che genera i PDF utilizzando l’API OutputService
-* [Puntare il browser a Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+* [Distribuisci il bundle DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
+* [Distribuisci bundle AEMFormsDocumentServices personalizzato](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).Pacchetto personalizzato che genera i PDF utilizzando l&#39;API OutputService
+* [Puntare il browser al gestore di pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 * [Importare e installare il pacchetto](assets/generate-multiple-pdf-from-xml.zip). Questo pacchetto contiene una pagina HTML che consente di rilasciare il modello e i file di dati.
 * [Puntare il browser a MultiRecords.html](http://localhost:4502/content/DocumentServices/Multirecord.html?)
 * Trascina e rilascia il modello e il file di dati xml insieme

@@ -22,9 +22,9 @@ AEM 6.3 introduce diverse nuove funzioni e miglioramenti in questa versione per 
 
 >[!VIDEO](https://video.tv.adobe.com/v/19500?quality=12&learn=on)
 
-**Alcuni dei principali miglioramenti per l’editor di moduli adattivi includono:**
+**Alcuni dei principali miglioramenti apportati all&#39;editor di moduli adattivi includono:**
 
-* [Migliore esperienza dell&#39;utente finale](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
+* [Esperienza utente finale migliorata](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
 
 * Riempimento automatico dei campi modulo
 * Rich Text per un componente casella di testo
@@ -32,8 +32,8 @@ AEM 6.3 introduce diverse nuove funzioni e miglioramenti in questa versione per 
 
 * [Modifica in linea del titolo del componente](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
 * [Convalida predefinita nei componenti](https://helpx.adobe.com/aem-forms/6-3/introduction-forms-authoring.html)
-* [Scelte rapide da tastiera per un’esperienza di authoring più rapida dei contenuti](https://helpx.adobe.com/aem-forms/6-3/keyboard-shortcuts.html#AdaptiveFormEditor)
+* [Scelte rapide da tastiera per un&#39;esperienza di authoring dei contenuti più rapida](https://helpx.adobe.com/aem-forms/6-3/keyboard-shortcuts.html#AdaptiveFormEditor)
 * [Supporto per lo schema JSON per la creazione di moduli adattivi](https://helpx.adobe.com/aem-forms/6-3/adaptive-form-json-schema-form-model.html)
 * [CAPTCHA nei moduli adattivi](https://helpx.adobe.com/aem-forms/6-3/captcha-adaptive-forms.html)
 * [Integrazione avanzata di Acrobat Sign](https://helpx.adobe.com/aem-forms/6-3/working-with-adobe-sign.html)
-* [Invio asincrono dei moduli](https://helpx.adobe.com/aem-forms/6-3/asynchronous-submissions-adaptive-forms.html)
+* [Invii asincroni di moduli](https://helpx.adobe.com/aem-forms/6-3/asynchronous-submissions-adaptive-forms.html)

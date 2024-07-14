@@ -1,5 +1,5 @@
 ---
-title: Creare e configurare origine Odata
+title: Creazione e configurazione di Odata Source
 description: Crea e configura la configurazione del servizio cloud per la connessione con Microsoft Dynamics.
 type: Documentation
 role: Developer

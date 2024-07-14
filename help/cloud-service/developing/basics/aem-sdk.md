@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ---
 
-# Introduzione all’SDK as a Cloud Service per l’AEM
+# Introduzione all’SDK di AEM as a Cloud Service
 
 Utilizzo e configurazione dell’SDK per AEM as a Cloud Service.
 

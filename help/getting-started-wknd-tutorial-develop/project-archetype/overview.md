@@ -27,7 +27,7 @@ Benvenuti in un tutorial in più parti progettato per sviluppatori e sviluppatri
 
 Questa esercitazione inizia utilizzando [Archetipo progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) per generare un nuovo progetto.
 
-L’esercitazione è progettata per funzionare con **AEM as a Cloud Service** ed è retrocompatibile con **AEM 6.5.14+**. Il sito viene implementato utilizzando:
+L&#39;esercitazione è progettata per funzionare con **AEM as a Cloud Service** ed è compatibile con le versioni precedenti di **AEM 6.5.14+**. Il sito viene implementato utilizzando:
 
 * [Archetipo di progetto AEM Maven](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
 * [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
@@ -36,30 +36,30 @@ L’esercitazione è progettata per funzionare con **AEM as a Cloud Service** ed
 * [Modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=it)
 * [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=it)
 
-*Si stima che 1-2 ore passino attraverso ogni parte dell&#39;esercitazione.*
+*Si stima che 1-2 ore saranno sufficienti per completare ogni parte dell&#39;esercitazione.*
 
 ## Ambiente di sviluppo locale {#local-dev-environment}
 
-Per completare questa esercitazione è necessario un ambiente di sviluppo locale. Le schermate e i video vengono acquisiti mediante l’SDK as a Cloud Service per l’AEM in esecuzione in un ambiente macOS con [Codice di Visual Studio](https://code.visualstudio.com/) come IDE. I comandi e il codice devono essere indipendenti dal sistema operativo locale, salvo diversa indicazione.
+Per completare questa esercitazione è necessario un ambiente di sviluppo locale. Le schermate e i video vengono acquisiti utilizzando l&#39;SDK AEM as a Cloud Service in esecuzione in un ambiente macOS con [Visual Studio Code](https://code.visualstudio.com/) come IDE. I comandi e il codice devono essere indipendenti dal sistema operativo locale, salvo diversa indicazione.
 
 ### Software richiesto
 
 È necessario installare localmente quanto segue:
 
-* [AEM locale **Autore** istanza](https://experience.adobe.com/#/downloads) (SDK per Cloud Service o 6.5.14+)
+* [Istanza ](https://experience.adobe.com/#/downloads) dell&#39;istanza **Author** dell&#39;AEM locale (SDK di Cloud Service o 6.5.14+)
 * [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 o successivo)
 * [Node.js](https://nodejs.org/it/) (LTS - Supporto a lungo termine)
 * [npm 6+](https://www.npmjs.com/)
 * [Git](https://git-scm.com/)
-* [Codice di Visual Studio](https://code.visualstudio.com/) o IDE equivalente
-   * [Sincronizzazione AEM VSCode](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) - Strumento utilizzato durante l’esercitazione
+* [Codice Visual Studio](https://code.visualstudio.com/) o IDE equivalente
+   * [Sincronizzazione AEM VSCode](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) - Strumento utilizzato durante l&#39;esercitazione
 
 >[!NOTE]
 >
 > **Ti avvicini adesso ad AEM as a Cloud Service?** Consulta la [seguente guida per configurare un ambiente di sviluppo locale utilizzando SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it).
 >
-> **Ti avvicini ora a AEM 6.5?** Consulta la sezione [guida seguente alla configurazione di un ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it).
+> **Nuovo AEM 6.5?** Consulta la [guida seguente per configurare un ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it).
 
 ## GitHub {#github}
 
@@ -71,4 +71,4 @@ Inoltre, ogni parte dell’esercitazione ha un proprio ramo in GitHub. Un utente
 
 ## Passaggi successivi {#next-steps}
 
-Cosa state aspettando? Avvia l’esercitazione passando al [Configurazione del progetto](project-setup.md) e scopri come generare un nuovo progetto Adobe Experience Manager utilizzando l’archetipo di progetto AEM.
+Cosa state aspettando? Avvia l&#39;esercitazione passando al capitolo [Configurazione del progetto](project-setup.md) e scopri come generare un nuovo progetto Adobe Experience Manager utilizzando l&#39;archetipo di progetto AEM.

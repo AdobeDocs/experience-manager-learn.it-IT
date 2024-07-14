@@ -28,4 +28,4 @@ Le miniature video personalizzate di AEM Assets consentono agli autori di selezi
 
 >[!NOTE]
 >
->Dovresti eseguire il tuo [Istanza AEM in Dynamic Medie](https://experienceleague.adobe.com/docs/) modalità
+>Esegui l&#39;istanza [AEM in modalità Dynamic Medie](https://experienceleague.adobe.com/docs/)

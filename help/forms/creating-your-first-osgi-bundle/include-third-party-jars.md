@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Inclusione di bundle di terze parti nel progetto AEM
 
-In questo articolo esamineremo i passaggi necessari per includere il bundle OSGi di terze parti nel tuo progetto AEM. Ai fini di questo articolo includeremo il [jsch-0.1.55.jar](https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar) nel nostro progetto AEM.  SE l’OSGi è disponibile nell’archivio maven, includi la dipendenza del bundle nel file POM.xml del progetto.
+In questo articolo esamineremo i passaggi necessari per includere il bundle OSGi di terze parti nel tuo progetto AEM. Ai fini di questo articolo includeremo [jsch-0.1.55.jar](https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar) nel nostro progetto AEM.  SE l’OSGi è disponibile nell’archivio maven, includi la dipendenza del bundle nel file POM.xml del progetto.
 
 >[!NOTE]
 > Si presume che il file jar di terze parti sia un bundle OSGi
@@ -34,7 +34,7 @@ In questo articolo esamineremo i passaggi necessari per includere il bundle OSGi
 </dependency>
 ```
 
-Se il bundle OSGi si trova nel file system, crea una cartella denominata **localjar** nella directory base del progetto (C:\aemformsbundles\AEMFormsProcessStep\localjar) la dipendenza avrà un aspetto simile al seguente
+Se il bundle OSGi si trova nel file system, crea una cartella denominata **localjar** nella directory base del progetto(C:\aemformsbundles\AEMFormsProcessStep\localjar). La dipendenza sarà simile alla seguente
 
 ```java
 <dependency>
@@ -48,12 +48,13 @@ Se il bundle OSGi si trova nel file system, crea una cartella denominata **local
 
 ## Creare la struttura di cartelle
 
-Stiamo aggiungendo questo pacchetto al nostro progetto AEM **AEMFormsProcessStep** che risiede in **c:\aemformsbundles** cartella
+Stiamo aggiungendo questo bundle al progetto AEM **AEMFormsProcessStep** che si trova nella cartella **c:\aemformsbundles**
 
-* Apri **filter.xml** dalla cartella C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\META-INF\vault del progetto Prendi nota dell’attributo root dell’elemento filtro.
+* Apri **filter.xml** dalla cartella C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\META-INF\vault del progetto
+Prendere nota dell&#39;attributo root dell&#39;elemento filter.
 
 * Crea la seguente struttura di cartelle C:\aemformsbundles\AEMFormsProcessStep\all\src\main\content\jcr_root\apps\AEMFormsProcessStep-vendor-packages\application\install
-* Il **apps/AEMFormsProcessStep-vendor-packages** è il valore dell&#39;attributo principale nel file filter.xml
+* **apps/AEMFormsProcessStep-vendor-packages** è il valore dell&#39;attributo radice nel file filter.xml
 * Aggiornare la sezione delle dipendenze del file POM.xml del progetto
 * Apri il prompt dei comandi. Vai alla cartella del progetto (c:\aemformsbundles\AEMFormsProcessStep) nel mio caso. Esegui il comando seguente
 
@@ -61,5 +62,5 @@ Stiamo aggiungendo questo pacchetto al nostro progetto AEM **AEMFormsProcessStep
 mvn clean install -PautoInstallSinglePackage
 ```
 
-Se tutto va bene, il pacchetto viene installato insieme al bundle di terze parti nell’istanza AEM. Puoi controllare il bundle utilizzando [console web felix](http://localhost:4502/system/console/bundles). Il bundle di terze parti è disponibile nella cartella /apps del file `crx` archivio come mostrato di seguito
+Se tutto va bene, il pacchetto viene installato insieme al bundle di terze parti nell’istanza AEM. Puoi controllare il bundle utilizzando [console Web Felix](http://localhost:4502/system/console/bundles). Il bundle di terze parti è disponibile nella cartella /apps dell&#39;archivio `crx` come mostrato di seguito
 ![terze parti](assets/custom-bundle1.png)

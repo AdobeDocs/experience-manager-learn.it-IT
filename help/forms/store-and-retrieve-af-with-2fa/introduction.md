@@ -25,9 +25,9 @@ Questo tutorial illustra i passaggi necessari per salvare e recuperare i dati de
 
 * Utilizzare l’API GuideBridge per accedere ai dati del modulo adattivo
 
-* Effettuare una chiamata POST a un servlet. Questo servlet memorizza i dati nel database e gli allegati del modulo nell’archivio CRX. I dati memorizzati nel database sono associati a un GUID.
+* Effettuare una chiamata POST a un servlet. Questo servlet memorizza i dati nel database e gli allegati del modulo nel repository di CRX. I dati memorizzati nel database sono associati a un GUID.
 
-* Per compilare il modulo adattivo con i dati memorizzati, è necessario recuperare i dati associati al GUID e popolare il modulo adattivo utilizzando **request.setAttribute** metodo.
+* Per compilare il modulo adattivo con i dati memorizzati, è necessario recuperare i dati associati al GUID e popolare il modulo adattivo utilizzando il metodo **request.setAttribute**.
 
 ## Dimostrazione del caso d’uso
 
@@ -45,4 +45,4 @@ Il pubblico di questo contenuto deve avere un’esperienza nelle seguenti aree:
 
 ## Passaggi successivi
 
-[Configurazione dell’origine dati](./configure-data-source.md)
+[Configurazione di Data Source](./configure-data-source.md)

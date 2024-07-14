@@ -1,6 +1,6 @@
 ---
-title: Registri comuni del dispatcher AEM
-description: Dai un’occhiata alle voci di registro comuni provenienti da Dispatcher e scopri cosa significano e come gestirle.
+title: Registri comuni di AEM Dispatcher
+description: Dai un’occhiata alle voci di registro comuni da Dispatcher e scopri cosa significano e come gestirle.
 version: 6.5
 topic: Administration, Performance
 feature: Dispatcher
@@ -37,7 +37,7 @@ Please consult the documentation at 'https://www.adobe.com/go/docs_dispatcher_co
 method/url/query/protocol/path/selectors/extension/suffix instead.
 ```
 
-A partire dal modulo Dispatcher 4.2.x è stato sconsigliato agli utenti di utilizzare il seguente tipo di corrispondenze nel file dei filtri:
+A partire dal modulo Dispatcher 4.2.x hanno iniziato a scoraggiare gli utenti a utilizzare il seguente tipo di corrispondenze nel loro file di filtri:
 
 ```
 /0041 { /type "allow" /glob "* *.css *"   }
@@ -77,7 +77,7 @@ Fri Jul 20 22:16:55 2018 I pid 128803 "GET /system/console/" ! - 8ms publishfarm
 
 >[!CAUTION]
 >
->Devi capire se le regole del Dispatcher sono state impostate per escludere tale richiesta. In questo caso, la pagina che ha tentato di visitare è stata rifiutata di proposito e non vogliamo fare nulla al riguardo.
+>Devi capire se le regole di Dispatcher sono state impostate per escludere tale richiesta. In questo caso, la pagina che ha tentato di visitare è stata rifiutata di proposito e non vogliamo fare nulla al riguardo.
 
 Se il registro è simile alla voce seguente:
 
@@ -86,8 +86,8 @@ Fri Jul 20 17:26:47 2018 D pid 20051 (tid 139937517123328) Filter rejects:
 GET /etc/designs/exampleco/fonts/montserrat-regular/montserrat-regular-webfont.eot HTTP/1.1
 ```
 
-Questo ci permette di sapere che il nostro file di progettazione `.eot` è bloccato e sarà necessario risolvere il problema.
-Dovremmo quindi esaminare il file dei filtri e aggiungere la seguente riga per consentire `.eot` file tramite
+Questo significa che il file di progettazione `.eot` è bloccato e si desidera risolvere il problema.
+È quindi necessario esaminare il file dei filtri e aggiungere la riga seguente per consentire l&#39;accesso a `.eot` file
 
 ```
 /0011 { /type "allow" /method "GET" /extension 'eot' /path "/etc/designs/*" }
@@ -109,7 +109,7 @@ Fri Jul 20 22:31:15 2018 W pid 3648 Unable to connect socket to 10.43.3.40:4502:
 Fri Jul 20 22:31:15 2018 W pid 3648 Unable to connect to any backend in farm authorfarm
 ```
 
-Ciò si verifica quando l’indirizzo IP configurato nella sezione relativa ai rendering della farm è errato. Oppure l’istanza dell’AEM ha smesso di rispondere o di ascoltare e Dispatcher non è in grado di raggiungerla.
+Ciò si verifica quando l’indirizzo IP configurato nella sezione relativa ai rendering della farm è errato. Oppure l&#39;istanza dell&#39;AEM ha smesso di rispondere o di ascoltare e la Dispatcher non è in grado di raggiungerla.
 
 Controlla le regole del firewall e che l’istanza AEM sia in esecuzione e integra.
 
@@ -120,7 +120,7 @@ Fri Jul 20 22:32:42 2018 I pid 3648 "GET /favicon.ico" 502 - 54034ms authorfarm/
 Fri Jul 20 22:35:45 2018 I pid 3648 "GET /favicon.ico" 503 - 54234ms authorfarm/-
 ```
 
-Ciò significa che l’istanza dell’AEM aveva un socket aperto che poteva raggiungere e che si è interrotta con la risposta. Ciò significa che l’istanza AEM era troppo lenta o non integra e che Dispatcher ha raggiunto le impostazioni di timeout configurate nella sezione relativa al rendering della farm. Aumenta l’impostazione di timeout oppure integra l’istanza dell’AEM.
+Ciò significa che l’istanza dell’AEM aveva un socket aperto che poteva raggiungere e che si è interrotta con la risposta. Ciò significa che l’istanza dell’AEM era troppo lenta o non integra e che Dispatcher ha raggiunto le impostazioni di timeout configurate nella sezione relativa al rendering della farm. Aumenta l’impostazione di timeout oppure integra l’istanza dell’AEM.
 
 ## Livello di memorizzazione in cache
 
@@ -130,7 +130,7 @@ Voce di registro di esempio:
 Fri Jul 20 23:00:19 2018 I pid 16004 (tid 140134145820416) Current cache hit ratio: 87.94 %
 ```
 
-Questo significa che viene misurato il recupero dal livello di rendering rispetto a quello dalla cache. Se desideri ottenere un valore superiore all’80% dalla cache, segui la documentazione [qui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=it):
+Questo significa che viene misurato il recupero dal livello di rendering rispetto a quello dalla cache. Se vuoi ottenere un valore superiore all&#39;80% dalla cache, segui la [guida](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=it):
 
 Per ottenere questo numero il più alto possibile.
 
@@ -187,11 +187,11 @@ Voce di registro di esempio:
 Wed Nov 13 17:17:26 2019 W pid 19173:tid 140542738364160 No farm matches host 'we-retail.com', selected last farm 'publishfarm'
 ```
 
-Questo errore indica che da tutti i file di farm disponibili in `/etc/httpd/conf.dispatcher.d/enabled_farms/` impossibile trovare una voce corrispondente dal `/virtualhost` sezione.
+Questo errore indica che da tutti i file della farm disponibili in `/etc/httpd/conf.dispatcher.d/enabled_farms/` non è stato possibile trovare una voce corrispondente dalla sezione `/virtualhost`.
 
-I file della farm corrispondono al traffico in base al nome di dominio o al percorso in cui è stata presentata la richiesta. Utilizza la corrispondenza glob e, se non corrisponde, significa che la farm non è stata configurata correttamente, digita la voce nella farm, oppure che la voce manca del tutto. Se la farm non corrisponde ad alcuna voce, per impostazione predefinita viene utilizzata l’ultima farm inclusa nello stack di file farm inclusi. In questo esempio era `999_ams_publish_farm.any` che è denominato nome generico di publishfarm.
+I file della farm corrispondono al traffico in base al nome di dominio o al percorso in cui è stata presentata la richiesta. Utilizza la corrispondenza glob e, se non corrisponde, significa che la farm non è stata configurata correttamente, digita la voce nella farm, oppure che la voce manca del tutto. Se la farm non corrisponde ad alcuna voce, per impostazione predefinita viene utilizzata l’ultima farm inclusa nello stack di file farm inclusi. In questo esempio era `999_ams_publish_farm.any`, che è denominato nome generico di publishfarm.
 
-Ecco un esempio di file farm `/etc/httpd/conf.dispatcher.d/enabled_farms/300_weretail_publish_farm.any` che è stato ridotto per evidenziare le parti rilevanti.
+Di seguito è riportato un file farm di esempio `/etc/httpd/conf.dispatcher.d/enabled_farms/300_weretail_publish_farm.any` che è stato ridotto per evidenziare le parti rilevanti.
 
 ## Elemento servito da
 
@@ -201,6 +201,6 @@ Voce di registro di esempio:
 Tue Nov 26 16:41:34 2019 I pid 9208 (tid 140112092391168) "GET /content/we-retail/us/en.html" - + 24034ms publishfarm/0
 ```
 
-La pagina è stata recuperata tramite il metodo GET http per il contenuto `/content/we-retail/us/en.html` e ci sono voluti 24034 millisecondi. La parte a cui prestare attenzione è la fine `publishfarm/0`. Vedrai che il targeting e la corrispondenza corrispondevano al `publishfarm`. Richiesta recuperata dal rendering 0. Ciò significa che questa pagina doveva essere richiesta all’AEM e quindi memorizzata nella cache. Richiediamo di nuovo questa pagina e vediamo cosa succede al registro.
+La pagina è stata recuperata tramite il metodo GET http per il contenuto `/content/we-retail/us/en.html` e ha richiesto 24034 millisecondi. La parte a cui prestare attenzione è alla fine di `publishfarm/0`. Noterai che la destinazione e la corrispondenza coincidono con `publishfarm`. Richiesta recuperata dal rendering 0. Ciò significa che questa pagina doveva essere richiesta all’AEM e quindi memorizzata nella cache. Richiediamo di nuovo questa pagina e vediamo cosa succede al registro.
 
 [Avanti -> File di sola lettura](./immutable-files.md)

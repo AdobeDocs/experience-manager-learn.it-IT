@@ -19,15 +19,15 @@ ht-degree: 1%
 
 # Crea flusso di lavoro principale
 
-Il flusso di lavoro principale viene attivato quando l’utente invia il modulo iniziale (**RefinanceForm**). Di seguito è riportato il flusso di lavoro
+Il workflow principale viene attivato quando l&#39;utente invia il modulo iniziale (**RefinanceForm**). Di seguito è riportato il flusso di lavoro
 
-![main-workflow](assets/main-workflow.PNG)
+![flusso di lavoro principale](assets/main-workflow.PNG)
 
-**Memorizza Forms per la firma** è un passaggio del processo personalizzato.
+**Archivia Forms per la firma** è un passaggio del processo personalizzato.
 
-La motivazione per implementare un passaggio di processo personalizzato è quella di estendere un flusso di lavoro AEM. Il codice seguente implementa un passaggio di processo personalizzato. Il codice estrae i nomi dei moduli da firmare e trasmette i dati del modulo inviati al `insertData` nel servizio SignMultipleForms. Il `insertData` quindi inserisce le righe nel database identificato dall&#39;origine dati **emformstutoriale**.
+La motivazione per implementare un passaggio di processo personalizzato è quella di estendere un flusso di lavoro AEM. Il codice seguente implementa un passaggio di processo personalizzato. Il codice estrae i nomi dei moduli da firmare e trasmette i dati del modulo inviati al metodo `insertData` nel servizio SignMultipleForms. Il metodo `insertData` inserisce quindi le righe nel database identificato dall&#39;origine dati **aemformstutorial**.
 
-Il codice in questo passaggio del processo personalizzato fa riferimento al `SignMultipleForms` servizio.
+Il codice in questo passaggio del processo personalizzato fa riferimento al servizio `SignMultipleForms`.
 
 
 

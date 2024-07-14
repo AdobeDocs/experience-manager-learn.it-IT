@@ -29,17 +29,17 @@ Il browser Componenti ora visualizza in un tema grigio coerente, con i seguenti 
 * **[!UICONTROL Descrizione componente]**
 * **[!UICONTROL Icona componente]**
    * Le prime due lettere del titolo del componente *(impostazione predefinita)*
-   * Immagine PNG personalizzata *(configurato da uno sviluppatore)*
-   * Immagine SVG personalizzata *(configurato da uno sviluppatore)*
-   * Icona CoralUI *(configurato da uno sviluppatore)*
+   * Immagine PNG personalizzata *(configurata da uno sviluppatore)*
+   * Immagine SVG personalizzata *(configurata da uno sviluppatore)*
+   * Icona CoralUI *(configurata da uno sviluppatore)*
 
 ## Opzioni di configurazione per l’icona del componente {#component-icon-configuration-options}
 
 ### Abbreviazioni {#abbreviations}
 
-Per impostazione predefinita, i primi 2 caratteri del titolo del componente (**[cq:Component]@jcr:titolo**) vengono utilizzati come abbreviazione. Ad esempio, se **[cq:Component]@jcr:title=Elenco articoli** l’abbreviazione viene visualizzata come &quot;**Ar**&quot;.
+Per impostazione predefinita, i primi 2 caratteri del titolo del componente (**[cq:Component]@jcr:title**) vengono utilizzati come abbreviazione. Ad esempio, se **[cq:Component]@jcr:title=Article List** l&#39;abbreviazione verrà visualizzata come &quot;**Ar**&quot;.
 
-L’abbreviazione può essere personalizzata tramite il **[cq:Component]@abbreviation** proprietà. Anche se questo valore può accettare più di 2 caratteri, si consiglia di limitare l’abbreviazione a 2 caratteri per evitare disturbi visivi.
+L&#39;abbreviazione può essere personalizzata tramite la proprietà **[cq:Component]@abbreviation**. Anche se questo valore può accettare più di 2 caratteri, si consiglia di limitare l’abbreviazione a 2 caratteri per evitare disturbi visivi.
 
 ```plain
 /apps/.../components/content/my-component
@@ -49,7 +49,7 @@ L’abbreviazione può essere personalizzata tramite il **[cq:Component]@abbrevi
 
 ### Icone di CoralUI {#coralui-icons}
 
-Le icone di CoralUI fornite dall’AEM possono essere utilizzate per le icone dei componenti. Per configurare un&#39;icona di CoralUI, imposta un **[cq:Component]@cq:icona** all&#39;icona HTML dell&#39;icona CoralUI desiderata (enumerata nella [Documentazione di CoralUI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html).
+Le icone di CoralUI fornite dall’AEM possono essere utilizzate per le icone dei componenti. Per configurare un&#39;icona di CoralUI, impostare una proprietà **[cq:Component]@cq:icon** sul valore dell&#39;attributo dell&#39;icona HTML dell&#39;icona di CoralUI desiderata (enumerato nella [documentazione di CoralUI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html).
 
 ```plain
 /apps/.../components/content/my-component
@@ -59,11 +59,11 @@ Le icone di CoralUI fornite dall’AEM possono essere utilizzate per le icone de
 
 ### Immagini PNG {#png-images}
 
-Le immagini PNG possono essere utilizzate per le icone dei componenti. Per configurare un’immagine PNG come icona del componente, aggiungi l’immagine desiderata come icona **nt:file** denominato **cq:icon.png** sotto **[cq:Component]**.
+Le immagini PNG possono essere utilizzate per le icone dei componenti. Per configurare un&#39;immagine PNG come icona del componente, aggiungere l&#39;immagine desiderata come **nt:file** denominata **cq:icon.png** in **[cq:Component]**.
 
-Il PNG deve avere uno sfondo trasparente o un colore di sfondo impostato su **#707070**.
+Il file PNG deve avere uno sfondo trasparente o un colore di sfondo impostato su **#707070**.
 
-Le immagini PNG vengono ridimensionate in **20 px per 20 px**. Tuttavia, per adattarsi a display retinici **40 px** da **40 px** potrebbe essere preferibile.
+Le immagini PNG vengono ridimensionate a **20px di 20px**. Tuttavia, per adattarsi alle visualizzazioni retina **40px** di **40px** potrebbe essere preferibile.
 
 ```plain
 /apps/.../components/content/my-component
@@ -74,9 +74,9 @@ Le immagini PNG vengono ridimensionate in **20 px per 20 px**. Tuttavia, per ada
 
 ### Immagini SVG {#svg-images}
 
-Le immagini SVG (basate su vettori) possono essere utilizzate per le icone dei componenti. Per configurare un’immagine SVG come icona di un componente, aggiungi il SVG desiderato come icona **nt:file** denominato **cq:icon.svg** sotto **[cq:Component]**.
+Le immagini SVG (basate su vettori) possono essere utilizzate per le icone dei componenti. Per configurare un&#39;immagine SVG come icona di un componente, aggiungere il SVG desiderato come **nt:file** denominato **cq:icon.svg** in **[cq:Component]**.
 
-Le immagini SVG devono avere un colore di sfondo impostato su **#707070** e una dimensione di **20 px per 20 px.**
+Le immagini SVG devono avere un colore di sfondo impostato su **#707070** e una dimensione di **20px per 20px.**
 
 ```plain
 /apps/.../components/content/my-component
@@ -87,4 +87,4 @@ Le immagini SVG devono avere un colore di sfondo impostato su **#707070** e una 
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Icone disponibili di CoralUI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)
+* [Icone CoralUI disponibili](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)

@@ -19,14 +19,14 @@ ht-degree: 1%
 # Passaggio processo personalizzato
 
 
-È stato implementato un passaggio di processo personalizzato per popolare le variabili del flusso di lavoro di tipo Elenco array con gli allegati e i nomi degli allegati. Questa variabile viene quindi utilizzata nel componente del flusso di lavoro Invia e-mail. Se non hai familiarità con la creazione del bundle OSGi, [segui queste istruzioni](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+È stato implementato un passaggio di processo personalizzato per popolare le variabili del flusso di lavoro di tipo Elenco array con gli allegati e i nomi degli allegati. Questa variabile viene quindi utilizzata nel componente del flusso di lavoro Invia e-mail. Se non conosci la creazione del bundle OSGi, [segui queste istruzioni](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
 
 Il codice nel passaggio del processo personalizzato esegue le seguenti operazioni
 
 * Esegui una query per tutti gli allegati del modulo adattivo nella cartella del payload. Il nome della cartella viene passato come argomento del processo al passaggio del processo.
 
-* Popolare `listOfDocuments` variabile del flusso di lavoro
-* Popolare `attachmentNames` variabile del flusso di lavoro
+* Popola variabile flusso di lavoro `listOfDocuments`
+* Popola variabile flusso di lavoro `attachmentNames`
 * Imposta il valore della variabile del flusso di lavoro (`no_of_attachments`)
 
 ```java

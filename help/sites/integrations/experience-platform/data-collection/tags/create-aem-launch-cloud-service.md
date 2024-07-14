@@ -22,27 +22,27 @@ ht-degree: 0%
 
 # Creare una configurazione del Cloud Service di tag nell’AEM {#create-launch-cloud-service}
 
-Scopri come creare una configurazione del Cloud Service di tag in Adobe Experience Manager. La configurazione del Cloud Service di tag AEM può quindi essere applicata a un sito esistente ed è possibile osservare il caricamento delle librerie di tag sia nell’ambiente di authoring che in quello di pubblicazione.
+Scopri come creare una configurazione del Cloud Service di tag in Adobe Experience Manager. La configurazione del Cloud Service di tag AEM può quindi essere applicata a un sito esistente ed è possibile osservare il caricamento delle librerie di tag sia negli ambienti di authoring che in quelli di Publish.
 
 ## Crea servizio cloud di tag
 
 Crea la configurazione del servizio cloud di tag utilizzando i passaggi seguenti.
 
-1. Dalla sezione **Strumenti** menu, seleziona **Cloud Service** e fai clic su **Configurazioni di Adobe Launch**
-1. Seleziona la cartella di configurazione del sito o fai clic su **Sito WKND** (se utilizzi il progetto della guida WKND) e fai clic su **Crea**
-1. Dalla sezione _Generale_ , assegna alla configurazione il nome utilizzando la scheda **Titolo** e seleziona **Adobe lancio** dal _Configurazione Adobe IMS associata_ a discesa. Quindi, seleziona il nome della tua azienda da _Azienda_ e seleziona la proprietà creata in precedenza dal menu a discesa _Proprietà_ a discesa.
-1. Dalla sezione _Staging_ e _Produzione_ mantieni le configurazioni predefinite. Tuttavia, si consiglia di rivedere e modificare le configurazioni per la configurazione di produzione reale, in particolare _Carica libreria in modo asincrono_ in base ai requisiti di prestazioni e ottimizzazione. Si noti inoltre che la _URI libreria_ è diverso per Staging e Produzione.
+1. Dal menu **Strumenti**, seleziona la sezione **Cloud Service** e fai clic su **Adobe configurazioni lancio**
+1. Seleziona la cartella di configurazione del tuo sito o seleziona **Sito WKND** (se utilizzi il progetto della guida WKND), quindi fai clic su **Crea**
+1. Dalla scheda _Generale_, assegna un nome alla configurazione utilizzando il campo **Titolo** e seleziona **Avvio Adobe** dal menu a discesa _Configurazione Adobe IMS associata_. Quindi, seleziona il nome della tua società dal menu a discesa _Società_ e seleziona la proprietà creata in precedenza dal menu a discesa _Proprietà_.
+1. Dalla scheda _Gestione temporanea_ e _Produzione_, mantieni le configurazioni predefinite. Tuttavia, si consiglia di rivedere e modificare le configurazioni per la configurazione di produzione reale, in particolare l&#39;interruttore _Carica libreria in modo asincrono_ in base ai requisiti di prestazioni e ottimizzazione. Inoltre, il valore _URI libreria_ è diverso per Staging e Produzione.
 1. Infine, fai clic su **Crea** per completare i servizi cloud di tag.
 
-   ![Configurazione Cloud Service di tag](assets/launch-cloud-services-config.png)
+   ![Configurazione Cloud Service tag](assets/launch-cloud-services-config.png)
 
 ## Applicare il servizio cloud di tag al sito
 
 Per caricare la proprietà Tag e le relative librerie sul sito AEM, al sito viene applicata la configurazione del servizio cloud tags. Nel passaggio precedente la configurazione del servizio cloud viene creata nella cartella del nome del sito (sito WKND), in modo che venga applicata automaticamente. Verificiamola.
 
-1. Dalla sezione **Navigazione** menu, seleziona **Sites** icona.
+1. Dal menu **Navigazione**, seleziona l&#39;icona **Siti**.
 
-1. Seleziona la pagina root del sito AEM e fai clic su **Proprietà**. Quindi, passa alla **Avanzate** scheda e sotto **Configurazione** , verifica che il valore Configurazione cloud punti a specifici siti `conf` cartella.
+1. Selezionare la pagina principale del sito AEM e fare clic su **Proprietà**. Quindi, passa alla scheda **Avanzate** e nella sezione **Configurazione** verifica che il valore Configurazione cloud punti alla cartella `conf` specifica del sito.
 
    ![Applica configurazione Cloud Service al sito](assets/apply-cloud-services-config-to-site.png)
 
@@ -50,17 +50,17 @@ Per caricare la proprietà Tag e le relative librerie sul sito AEM, al sito vien
 
 Ora è il momento di verificare che la proprietà Tag e le relative librerie siano caricate sulla pagina del sito AEM.
 
-1. Apri la pagina del tuo sito preferito in **Visualizza come pubblicato** modalità, nella console del browser dovresti visualizzare il messaggio di registro. È lo stesso messaggio dello snippet di codice JavaScript della regola della proprietà Tag che viene attivato quando _Library Loaded (Page Top)_ viene attivato.
+1. Apri la pagina del tuo sito preferito in modalità **Visualizza come pubblicato**; nella console del browser dovresti visualizzare il messaggio di registro. È lo stesso messaggio dello snippet di codice JavaScript della regola della proprietà Tag che viene attivato quando viene attivato l&#39;evento _Library Loaded (Page Top)_.
 
-1. Per verificare durante la pubblicazione, pubblica innanzitutto il **servizio cloud tag** e aprire la pagina del sito nell’istanza Publish.
+1. Per verificare su Publish, pubblica innanzitutto la configurazione di **tags cloud service** e apri la pagina del sito nell&#39;istanza di Publish.
 
-   ![Proprietà Tag nelle pagine di authoring e pubblicazione](assets/tag-property-on-author-publish-pages.png)
+   ![Proprietà tag nelle pagine Author e Publish](assets/tag-property-on-author-publish-pages.png)
 
 Congratulazioni Hai completato l’integrazione dei tag AEM e raccolta dati che inserisce il codice JavaScript nel sito AEM senza aggiornare il codice del progetto AEM.
 
 ## Sfida: aggiorna e pubblica regola nella proprietà Tag
 
-Utilizzare gli insegnamenti tratti dai precedenti [Creare una proprietà tag](./create-tag-property.md) per completare la semplice sfida, aggiorna la regola esistente aggiungendo un’ulteriore istruzione della console e utilizzando _Flusso di pubblicazione_ implementarlo sul sito AEM.
+Utilizza le lezioni apprese dal precedente [Crea una proprietà tag](./create-tag-property.md) per completare la semplice sfida, aggiorna la regola esistente per aggiungere un&#39;ulteriore istruzione console e utilizza _Flusso di pubblicazione_ per distribuirla sul sito AEM.
 
 ## Passaggi successivi
 

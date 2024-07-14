@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Procedura per la risoluzione dei problemi relativi a errori specifici di OpenOffice in una configurazione di Windows per AEM Forms PDFG Conversion
 
-*Questo video illustra il processo di risoluzione dei problemi relativi a errori specifici di OpenOffice in un&#39;installazione di Windows.*
+*Questo video illustra il processo di risoluzione dei problemi relativi a errori specifici di OpenOffice in una configurazione di Windows.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335481?quality=12&learn=on)

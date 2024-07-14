@@ -1,6 +1,6 @@
 ---
 title: Cos’è "Dispatcher"
-description: Scopri cos’è in realtà un Dispatcher.
+description: Sappiate cos'è in realtà un Dispatcher.
 version: 6.5
 topic: Administration
 feature: Dispatcher
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 [Sommario](./overview.md)
 
-A partire dalla descrizione di base di cosa comporta un Dispatcher per AEM.
+A partire dalla descrizione di base di ciò che comporta un Dispatcher per l’AEM.
 
 ## Server web Apache
 
@@ -29,20 +29,20 @@ Inizia con un’installazione di base del server web Apache su un server Linux.
 
 Spiegazione di base delle funzioni di un server Apache:
 
-- Segue regole semplici per distribuire i file tramite i protocolli HTTP(s) dalla directory dei documenti statici (`DocumentRoot`)
-- File archiviati in un percorso predefinito (`/var/www/html`) corrispondono alle richieste e vengono sottoposte a rendering nel browser del client richiedente
+- Seguono regole semplici per distribuire i file tramite i protocolli HTTP(s) dalla directory dei documenti statici (`DocumentRoot`)
+- I file archiviati in un percorso predefinito (`/var/www/html`) vengono associati alle richieste e sottoposti a rendering nel browser del client richiedente
 
 
 
 
-## File del modulo specifico per AEM (`mod_dispatcher.so`)
+## File modulo specifico per AEM (`mod_dispatcher.so`)
 
 Quindi aggiungi al server web Apache un plug-in denominato modulo Dispatcher.
 
-Spiegazione di base delle funzioni del modulo Dispatcher AEM Adobe:
+Spiegazione di base delle funzioni del modulo Dispatcher dell’AEM di Adobe:
 
 - Aumenta il gestore di file predefinito
-- Filtra le richieste non valide / Protegge la pancia morbida/gli endpoint AEM
+- Filtra le richieste non valide / Protegge la pancia morbida/gli endpoint dell’AEM
 - Bilanciamenti del carico se è presente più di un renderer
 - Consente la creazione di una directory di cache attiva / Supporta lo scaricamento di file stagnanti
 - È la porta d&#39;ingresso di tutte le installazioni AMS e fornisce siti web e risorse al browser del cliente
@@ -54,7 +54,7 @@ Spiegazione di base delle funzioni del modulo Dispatcher AEM Adobe:
 Sapendo quali pezzi vengono installati insieme per creare un server Dispatcher di base, possiamo comprendere il flusso di lavoro del traffico web di base per una configurazione dei servizi Adobe Manager.
 Questo dovrebbe aiutarti a capire quale ruolo svolge nella catena di sistemi che distribuiscono contenuti ai visitatori dei tuoi contenuti AEM.
 
-<b>Distribuzione di contenuto già memorizzato nella cache</b>
+<b>Contenuto già memorizzato nella cache</b>
 
 ```
 End User's Browser request 
@@ -65,7 +65,7 @@ End User's Browser request
                     → End User
 ```
 
-<b>Distribuzione di contenuti freschi da AEM</b>
+<b>Distribuzione di contenuto fresco da AEM</b>
 
 ```
 End User's Browser request 
@@ -78,7 +78,7 @@ End User's Browser request
                             → End User
 ```
 
-<b>Pubblicazione/modifiche dei contenuti</b>
+<b>Pubblicazione contenuti/modifiche</b>
 
 ```
 AEM Author User activates content 

@@ -24,9 +24,9 @@ Quando invii un modulo adattivo a un endpoint REST, vuoi mostrare un messaggio d
 
 La schermata seguente mostra un modulo inviato utilizzando l’azione Invia modello dati modulo con una pagina di ringraziamento configurata
 
-![pagina di ringraziamento](./assets/thank-you-page-fdm-submit.png)
+![grazie](./assets/thank-you-page-fdm-submit.png)
 
-Il POST di un modello dati modulo restituirà sempre un oggetto JSON nella risposta. Questo JSON è disponibile nell’URL della pagina di ringraziamento come parametro di query denominato _fdmSubmitResult_. Puoi analizzare questo parametro di query e visualizzare gli elementi JSON nella pagina di ringraziamento.
+Il POST di un modello dati modulo restituirà sempre un oggetto JSON nella risposta. Questo JSON è disponibile nell&#39;URL della pagina di ringraziamento come parametro di query denominato _fdmSubmitResult_. Puoi analizzare questo parametro di query e visualizzare gli elementi JSON nella pagina di ringraziamento.
 Il codice di esempio seguente analizza la risposta JSON per estrarre il valore del campo number. Il codice xml appropriato viene quindi costruito e trasmesso in slingRequest per compilare il modulo. Questo codice viene in genere scritto nel file jsp del componente page associato al modello di modulo adattivo.
 
 ```java
@@ -46,6 +46,8 @@ Si consiglia di basare la pagina di ringraziamento su un nuovo modello di modulo
 
 Crea un modulo adattivo e configura l’invio del modulo utilizzando l’azione di invio Modello dati modulo.
 [Distribuire il modello di modulo adattivo di esempio](assets/thank-you-page-template.zip)
-Crea un modulo di ringraziamento basato su questo modello Associa questa pagina di ringraziamento al modulo principale Modifica il codice JSP in [createXml.jsp](http://localhost:4502/apps/thank-you-page-template/component/page/thankyoupage/createxml.jsp) per generare l’xml necessario per precompilare il modulo adattivo.
+Crea un modulo di ringraziamento basato su questo modello
+Associa questa pagina di ringraziamento al modulo principale
+Modifica il codice jsp in [createXml.jsp](http://localhost:4502/apps/thank-you-page-template/component/page/thankyoupage/createxml.jsp) per generare il codice xml necessario per precompilare il modulo adattivo.
 Visualizza l’anteprima e invia il modulo adattivo.
 La pagina di ringraziamento deve essere visualizzata e precompilata con i dati specificati nel file XML

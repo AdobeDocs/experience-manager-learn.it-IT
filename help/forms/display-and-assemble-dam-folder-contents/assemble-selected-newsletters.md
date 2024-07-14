@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Combina le newsletter selezionate in un unico PDF
 
-Le selezioni dell’utente vengono memorizzate in un campo nascosto. Il valore di questo campo nascosto viene passato al servlet che combina le selezioni in un unico pdf utilizzando [Servizio assemblatore Forms](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html).
+Le selezioni dell’utente vengono memorizzate in un campo nascosto. Il valore di questo campo nascosto viene passato al servlet che combinerà le selezioni in un unico pdf utilizzando [il servizio Assembler di Forms](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html).
 
 
 ## Servlet per assemblare file PDF

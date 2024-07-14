@@ -25,13 +25,13 @@ Come parte della Creazione Rapida dei Siti, utilizza la Creazione guidata Siti i
 
 ## Prerequisiti {#prerequisites}
 
-I passaggi descritti in questo capitolo si svolgono in un ambiente Adobe Experience Manager as a Cloud Service. Assicurati di disporre di accesso amministrativo all’ambiente AEM. Si consiglia di utilizzare un [Programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) e [Ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html) al completamento di questa esercitazione.
+I passaggi descritti in questo capitolo si svolgono in un ambiente Adobe Experience Manager as a Cloud Service. Assicurati di disporre di accesso amministrativo all’ambiente AEM. Per completare questa esercitazione, si consiglia di utilizzare un [programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) e un [ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html).
 
-[Programma di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) anche per questo tutorial è possibile utilizzare gli ambienti; tuttavia, assicurati che le attività di questo tutorial non influiscano sul lavoro eseguito sugli ambienti di destinazione, poiché distribuisce contenuto e codice nell’ambiente AEM di destinazione.
+Per questa esercitazione è possibile utilizzare anche gli ambienti del [programma di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html). Tuttavia, assicurarsi che le attività di questa esercitazione non influiscano sul lavoro eseguito sugli ambienti di destinazione, poiché questa esercitazione distribuisce il contenuto e il codice nell&#39;ambiente AEM di destinazione.
 
-Il [SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html) può essere utilizzato per parti di questa esercitazione. Aspetti di questo tutorial che si basano su servizi cloud, come [distribuzione di temi con la pipeline front-end di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html), non può essere eseguita con l’SDK per AEM.
+È possibile utilizzare [AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html) per alcune parti di questa esercitazione. Aspetti di questo tutorial che si basano su servizi cloud, come [la distribuzione di temi con la pipeline front-end di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html), non possono essere eseguiti sull&#39;SDK AEM.
 
-Rivedi [documentazione sull’onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) per ulteriori dettagli.
+Per ulteriori dettagli, consulta la [documentazione sull&#39;onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html).
 
 ## Obiettivo {#objective}
 
@@ -41,34 +41,34 @@ Rivedi [documentazione sull’onboarding](https://experienceleague.adobe.com/doc
 
 ## Accedi a Adobe Experience Manager Author {#author}
 
-Come primo passo, accedi all’ambiente as a Cloud Service dell’AEM. Gli ambienti AEM sono suddivisi tra **Servizio Author** e un **Servizio di pubblicazione**.
+Come primo passo, accedi all’ambiente AEM as a Cloud Service. Gli ambienti AEM sono suddivisi tra un **servizio Author** e un **servizio Publish**.
 
-* **Servizio Author** : in cui il contenuto del sito viene creato, gestito e aggiornato. In genere solo gli utenti interni hanno accesso a **Servizio Author** e si trova dietro una schermata di accesso.
-* **Servizio di pubblicazione** : ospita il sito web live. Si tratta del servizio che verrà visualizzato dagli utenti finali ed è generalmente disponibile al pubblico.
+* **Servizio di authoring** - in cui il contenuto del sito viene creato, gestito e aggiornato. In genere solo gli utenti interni hanno accesso al servizio **Author** e si trovano dietro una schermata di accesso.
+* **Servizio Publish** - ospita il sito Web attivo. Si tratta del servizio che verrà visualizzato dagli utenti finali ed è generalmente disponibile al pubblico.
 
-La maggior parte del tutorial si svolge utilizzando **Servizio Author**.
+La maggior parte dell&#39;esercitazione si svolgerà utilizzando il servizio **Author**.
 
 1. Passa a Adobe Experience Cloud [https://experience.adobe.com/](https://experience.adobe.com/). Accedi con il tuo account personale o aziendale/scolastico.
-1. Assicurati che nel menu sia selezionata l’organizzazione corretta e fai clic su **Experience Manager**.
+1. Verificare che nel menu sia selezionata l&#39;organizzazione corretta e fare clic su **Experience Manager**.
 
    ![Home Experience Cloud](assets/create-site/experience-cloud-home-screen.png)
 
-1. Sotto **Cloud Manager** click **Launch**.
-1. Passa il puntatore del mouse sul programma che desideri utilizzare e fai clic sul pulsante **Programma Cloud Manager** icona.
+1. In **Cloud Manager** fare clic su **Launch**.
+1. Passa il puntatore del mouse sul programma che desideri utilizzare e fai clic sull&#39;icona **Programma Cloud Manager**.
 
-   ![Icona del programma Cloud Manager](assets/create-site/cloud-manager-program-icon.png)
+   ![Icona programma Cloud Manager](assets/create-site/cloud-manager-program-icon.png)
 
-1. Nel menu principale fai clic su **Ambienti** per visualizzare gli ambienti con provisioning.
+1. Nel menu principale fai clic su **Ambienti** per visualizzare gli ambienti per i quali è stato eseguito il provisioning.
 
-1. Individua l’ambiente da utilizzare e fai clic su **URL autore**.
+1. Individuare l&#39;ambiente da utilizzare e fare clic sull&#39;**URL autore**.
 
-   ![Accesso all’authoring di sviluppo](assets/create-site/access-dev-environment.png)
+   ![Autore sviluppo accesso](assets/create-site/access-dev-environment.png)
 
    >[!NOTE]
    >
-   >Si consiglia di utilizzare un **Sviluppo** ambiente per questa esercitazione.
+   >Per questa esercitazione si consiglia di utilizzare un ambiente **Sviluppo**.
 
-1. Viene avviata una nuova scheda per l’AEM **Servizio Author**. Clic **Accedi con un Adobe** e dovresti aver effettuato l’accesso automaticamente con le stesse credenziali di Experience Cloud.
+1. Viene avviata una nuova scheda per il servizio **Author dell&#39;AEM**. Fai clic su **Accedi con Adobe** e dovrai accedere automaticamente con le stesse credenziali di Experience Cloud.
 
 1. Dopo il reindirizzamento e l’autenticazione, ora viene visualizzata la schermata iniziale dell’AEM.
 
@@ -76,65 +76,65 @@ La maggior parte del tutorial si svolge utilizzando **Servizio Author**.
 
 >[!NOTE]
 >
-> Problemi di accesso all’Experience Manager? Rivedi [documentazione sull’onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html)
+> Problemi di accesso all’Experience Manager? Consulta la [documentazione sull&#39;onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html)
 
 ## Scarica il modello di sito di base
 
-Un modello di sito rappresenta un punto di partenza per un nuovo sito. Un modello di sito include alcuni temi di base, modelli di pagina, configurazioni e contenuti di esempio. Spetta esattamente allo sviluppatore il compito di includere nel modello di sito. L’Adobe fornisce un **Modello di sito di base** per accelerare le nuove implementazioni.
+Un modello di sito rappresenta un punto di partenza per un nuovo sito. Un modello di sito include alcuni temi di base, modelli di pagina, configurazioni e contenuti di esempio. Spetta esattamente allo sviluppatore il compito di includere nel modello di sito. L&#39;Adobe fornisce un **modello di sito di base** per accelerare le nuove implementazioni.
 
 1. Apri una nuova scheda del browser e passa al progetto Modello di sito di base su GitHub: [https://github.com/adobe/aem-site-template-standard](https://github.com/adobe/aem-site-template-standard). Il progetto è open-source ed è concesso in licenza per essere utilizzato da chiunque.
-1. Clic **Versioni** e passare alla [versione più recente](https://github.com/adobe/aem-site-template-standard/releases/latest).
-1. Espandi **Risorse** e scarica il file zip del modello:
+1. Fai clic su **Versioni** e passa alla [versione più recente](https://github.com/adobe/aem-site-template-standard/releases/latest).
+1. Espandi il menu a discesa **Assets** e scarica il file zip del modello:
 
-   ![File ZIP modello sito di base](assets/create-site/template-basic-zip-file.png)
+   ![CAP modello sito di base](assets/create-site/template-basic-zip-file.png)
 
    Questo file zip viene utilizzato nell’esercizio successivo.
 
    >[!NOTE]
    >
-   > Questo tutorial è scritto utilizzando la versione **1.1.0.** del modello del sito di base. Quando si avvia un nuovo progetto per l’utilizzo in produzione, si consiglia sempre di utilizzare la versione più recente.
+   > Questa esercitazione è stata scritta con la versione **1.1.0** del modello di sito di base. Quando si avvia un nuovo progetto per l’utilizzo in produzione, si consiglia sempre di utilizzare la versione più recente.
 
 ## Crea un nuovo sito
 
 Quindi, genera un nuovo sito utilizzando il Modello del sito dell&#39;esercizio precedente.
 
-1. Ritorno nell’ambiente AEM. Dalla schermata iniziale dell’AEM, vai a **Sites**.
-1. Nell’angolo in alto a destra fai clic su **Crea** > **Sito (modello)**. Verrà visualizzata la **Creazione guidata sito**.
-1. Sotto **Seleziona un modello di sito** fai clic su **Importa** pulsante.
+1. Ritorno nell’ambiente AEM. Dalla schermata iniziale dell&#39;AEM, passa a **Sites**.
+1. Nell&#39;angolo superiore destro fare clic su **Crea** > **Sito (Modello)**. Verrà visualizzata la **Creazione guidata sito**.
+1. In **Seleziona un modello di sito** fare clic sul pulsante **Importa**.
 
-   Carica **.zip** file modello scaricato dall&#39;esercizio precedente.
+   Carica il file modello **.zip** scaricato dall&#39;esercizio precedente.
 
-1. Seleziona la **Modello di base per sito AEM** e fai clic su **Successivo**.
+1. Seleziona il **modello di sito AEM di base** e fai clic su **Avanti**.
 
-   ![Seleziona modello di sito](assets/create-site/select-site-template.png)
+   ![Seleziona modello sito](assets/create-site/select-site-template.png)
 
-1. Sotto **Dettagli sito** > **Titolo sito** Invio `WKND Site`.
+1. In **Dettagli sito** > **Titolo sito** immettere `WKND Site`.
 
    In un’implementazione reale, &quot;Sito WKND&quot; verrebbe sostituito dal nome del brand dell’azienda o dell’organizzazione. In questo tutorial, stiamo simulando la creazione di un sito per un brand di lifestyle fittizio &quot;WKND&quot;.
 
-1. Sotto **Nome sito** Invio `wknd`.
+1. In **Nome sito** immettere `wknd`.
 
    ![Dettagli modello sito](assets/create-site/site-template-details.png)
 
    >[!NOTE]
    >
-   > Se utilizzi un ambiente AEM condiviso, aggiungi un identificatore univoco alla sezione **Nome sito**. Ad esempio `wknd-site-johndoe`. In questo modo più utenti possono completare la stessa esercitazione senza conflitti.
+   > Se utilizzi un ambiente AEM condiviso, aggiungi un identificatore univoco al **Nome sito**. Ad esempio `wknd-site-johndoe`. In questo modo più utenti possono completare la stessa esercitazione senza conflitti.
 
-1. Clic **Crea** per generare il sito. Clic **Fine** nel **Completato** AEM al termine della creazione del sito web.
+1. Fai clic su **Crea** per generare il sito. Fai clic su **Fine** nella finestra di dialogo **Operazione riuscita** al termine della creazione del sito Web da parte dell&#39;AEM.
 
 ## Esplora il nuovo sito
 
 1. Passa alla console AEM Sites, se non è già presente.
-1. Una nuova **Sito WKND** è stato generato. Includerà una struttura del sito con una gerarchia multilingue.
-1. Apri **Inglese** > **Home** selezionando la pagina e facendo clic sul pulsante **Modifica** nella barra dei menu:
+1. È stato generato un nuovo **sito WKND**. Includerà una struttura del sito con una gerarchia multilingue.
+1. Apri la pagina **Inglese** > **Home** selezionando la pagina e facendo clic sul pulsante **Modifica** nella barra dei menu:
 
    ![Gerarchia siti WKND](assets/create-site/wknd-site-starter-hierarchy.png)
 
 1. Il contenuto iniziale è già stato creato e sono disponibili diversi componenti da aggiungere a una pagina. Sperimenta questi componenti per un’idea delle funzionalità. Scopri le nozioni di base di un componente nel prossimo capitolo.
 
-   ![Pagina iniziale](assets/create-site/start-home-page.png)
+   ![Inizia pagina principale](assets/create-site/start-home-page.png)
 
-   *Contenuto di esempio fornito dal modello del sito*
+   *Contenuto di esempio fornito dal modello di sito*
 
 ## Congratulazioni. {#congratulations}
 
@@ -142,4 +142,4 @@ Congratulazioni, hai appena creato il tuo primo sito AEM!
 
 ### Passaggi successivi {#next-steps}
 
-Utilizza l’editor pagina in Adobe Experience Manager, AEM, per aggiornare il contenuto del sito in [Creare contenuti e pubblicare](author-content-publish.md) capitolo. Scopri come configurare i Componenti atomici per aggiornare il contenuto. Scopri la differenza tra gli ambienti di authoring e pubblicazione di AEM e come pubblicare gli aggiornamenti sul sito live.
+Utilizza l&#39;Editor pagina in Adobe Experience Manager, AEM, per aggiornare il contenuto del sito nel capitolo [Crea contenuto e pubblica](author-content-publish.md). Scopri come configurare i Componenti atomici per aggiornare il contenuto. Scopri la differenza tra un ambiente AEM Author e Publish e come pubblicare gli aggiornamenti del sito live.

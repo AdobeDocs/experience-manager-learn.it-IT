@@ -28,13 +28,13 @@ Consente di visualizzare in anteprima e inviare il modulo utilizzando diverse co
 
 I dati del modulo acquisiti in Adobe Analytics vengono presentati in formato ad anello
 
-**Invii per Stato**
+**Invii per stato**
 
 ![applicantsbystate](assets/donut.png)
 
 Errori di convalida campo
 
-![field-validation-error](assets/donut-field-validation.png)
+![errore-convalida-campo](assets/donut-field-validation.png)
 
 ## Debugging
 
@@ -55,7 +55,7 @@ Interagisci con il modulo mantenendo aperta la finestra della console. Dovresti 
 
 ## Utilizza Adobe Experience Platform Debugger
 
-Aggiungi il [Estensione debugger AEP](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) al browser (è necessario accedere) per ottenere ulteriori informazioni di debug
+Aggiungi l&#39;estensione [AEP Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) al browser (è necessario effettuare l&#39;accesso) per ottenere ulteriori informazioni di debug
 
 ![platform-debugger](assets/platform-debugger.png)
 

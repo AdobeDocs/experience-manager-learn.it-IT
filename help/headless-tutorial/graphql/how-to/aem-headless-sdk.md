@@ -29,7 +29,7 @@ L’SDK headless dell’AEM è disponibile per diverse piattaforme:
 
 ## Query GraphQL persistenti
 
-Query dell’AEM tramite GraphQL tramite query persistenti (anziché [query GraphQL definite dal client](#graphl-queries)) consente agli sviluppatori di rendere persistente una query (ma non i relativi risultati) in AEM, quindi di richiedere che la query venga eseguita per nome. Le query persistenti sono simili al concetto di stored procedure nei database SQL.
+L&#39;esecuzione di query AEM tramite GraphQL tramite query persistenti (anziché [query GraphQL definite dal client](#graphl-queries)) consente agli sviluppatori di rendere persistente una query (ma non i relativi risultati) nell&#39;AEM e quindi di richiedere l&#39;esecuzione della query per nome. Le query persistenti sono simili al concetto di stored procedure nei database SQL.
 
 Le query persistenti sono più performanti delle query GraphQL definite dal client, in quanto vengono eseguite utilizzando HTTP GET, che può essere memorizzato nella cache ai livelli CDN e AEM Dispatcher. Anche le query persistenti diventano effettive, definiscono un’API e riducono la necessità per lo sviluppatore di comprendere i dettagli di ciascun modello per frammenti di contenuto.
 
@@ -37,17 +37,17 @@ Le query persistenti sono più performanti delle query GraphQL definite dal clie
 
 Di seguito sono riportati alcuni esempi di codice per l’esecuzione di una query persistente di GraphQL nei confronti dell’AEM.
 
-+++ Esempio JavaScript
++++ Esempio di JavaScript
 
-Installare [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) eseguendo il comando `npm install` dalla directory principale del progetto Node.js.
+Installa [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) eseguendo il comando `npm install` dalla radice del progetto Node.js.
 
 ```
 $ npm i @adobe/aem-headless-client-js
 ```
 
-Questo esempio di codice mostra come eseguire query sull’AEM utilizzando [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) modulo npm tramite `async/await` sintassi. L’SDK headless dell’AEM per JavaScript supporta anche [Sintassi della promessa](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client).
+In questo esempio di codice viene illustrato come eseguire query su AEM utilizzando il modulo npm [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) utilizzando la sintassi `async/await`. L&#39;SDK headless dell&#39;AEM per JavaScript supporta anche la sintassi [Promise](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client).
 
-Questo codice presuppone una query persistente con il nome `wknd/adventureNames` è stato creato su AEM Author e pubblicato su AEM Publish.
+Questo codice presuppone che una query persistente con il nome `wknd/adventureNames` sia stata creata in AEM Author e pubblicata in AEM Publish.
 
 ```javascript
 import AEMHeadless from '@adobe/aem-headless-client-js';
@@ -90,20 +90,20 @@ let { data, errors } = executePersistedQuery('wknd-shared/adventures-by-slug', {
 
 +++ React useEffect(..) esempio
 
-Installare [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) eseguendo il comando `npm install` dalla directory principale del progetto React.
+Installa [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) eseguendo il comando `npm install` dalla radice del progetto React.
 
 ```
 $ npm i @adobe/aem-headless-client-js
 ```
 
-Questo esempio di codice mostra come utilizzare il [React useEffect(..) gancio](https://reactjs.org/docs/hooks-effect.html) per eseguire una chiamata asincrona al GraphQL AEM.
+In questo esempio di codice viene illustrato come utilizzare [React useEffect(..) hook](https://reactjs.org/docs/hooks-effect.html) per eseguire una chiamata asincrona a AEM GraphQL.
 
-Utilizzo di `useEffect` per effettuare la chiamata GraphQL asincrona in React è utile perché:
+L&#39;utilizzo di `useEffect` per effettuare la chiamata GraphQL asincrona in React è utile perché:
 
 1. Fornisce il wrapper sincrono per la chiamata asincrona all&#39;AEM.
 1. Riduce l’AEM che richiede inutilmente.
 
-Questo codice presuppone una query persistente con il nome `wknd-shared/adventure-by-slug` è stato creato su AEM Author e pubblicato su AEM Publish utilizzando GraphiQL.
+Questo codice presuppone che una query persistente con il nome `wknd-shared/adventure-by-slug` sia stata creata in AEM Author e pubblicata in AEM Publish utilizzando GraphiQL.
 
 ```javascript
 import AEMHeadless from '@adobe/aem-headless-client-js';
@@ -186,7 +186,7 @@ export function useAdventureBySlug(slug) {
 }
 ```
 
-Richiama React personalizzato `useEffect` aggancio da un’altra posizione in un componente React.
+Richiama l&#39;hook React `useEffect` personalizzato da un&#39;altra posizione in un componente React.
 
 ```javascript
 import useAdventureBySlug from '...';
@@ -194,7 +194,7 @@ import useAdventureBySlug from '...';
 let { data, errors } = useAdventureBySlug('bali-surf-camp');
 ```
 
-Nuovo `useEffect` È possibile creare hook per ogni query persistente utilizzata dall’app React.
+È possibile creare nuovi hook di `useEffect` per ogni query persistente utilizzata dall&#39;app React.
 
 +++
 
@@ -202,11 +202,11 @@ Nuovo `useEffect` È possibile creare hook per ogni query persistente utilizzata
 
 ## Query GraphQL
 
-AEM supporta le query GraphQL definite dal client, tuttavia è consigliabile utilizzare AEM [query GraphQL persistenti](#persisted-graphql-queries).
+AEM supporta le query GraphQL definite dal client, tuttavia è consigliabile AEM utilizzare [query GraphQL persistenti](#persisted-graphql-queries).
 
 ## Webpack 5+
 
-L’SDK JS per AEM headless dipende da `util` non è incluso in Webpack 5+ per impostazione predefinita. Se utilizzi Webpack 5+ e ricevi il seguente errore:
+L&#39;SDK JS di AEM headless ha dipendenze da `util` che non è incluso in Webpack 5+ per impostazione predefinita. Se utilizzi Webpack 5+ e ricevi il seguente errore:
 
 ```
 Compiled with problems:
@@ -223,7 +223,7 @@ If you don't want to include a polyfill, you can use an empty module like this:
     resolve.fallback: { "util": false }
 ```
 
-Aggiungi quanto segue `devDependencies` al tuo `package.json` file:
+Aggiungi `devDependencies` seguente al file `package.json`:
 
 ```json
   "devDependencies": {
@@ -237,4 +237,4 @@ Aggiungi quanto segue `devDependencies` al tuo `package.json` file:
   },
 ```
 
-Quindi esegui `npm install` per installare le dipendenze.
+Eseguire quindi `npm install` per installare le dipendenze.

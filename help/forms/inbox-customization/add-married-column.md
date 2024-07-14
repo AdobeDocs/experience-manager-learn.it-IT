@@ -21,9 +21,9 @@ ht-degree: 1%
 
 Per visualizzare i dati del flusso di lavoro nella casella in entrata, è necessario definire e popolare le variabili nel flusso di lavoro. Il valore della variabile deve essere impostato prima che un&#39;attività venga assegnata a un utente. Per aiutarti nella tua attività, abbiamo fornito un esempio di flusso di lavoro pronto per essere implementato sul tuo server AEM.
 
-* [Accedi all’AEM](http://localhost:4502/crx/de/index.jsp)
+* [Accesso a AEM](http://localhost:4502/crx/de/index.jsp)
 * [Importare il flusso di lavoro di revisione](assets/review-workflow.zip)
-* [Rivedere il flusso di lavoro](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
+* [Rivedi il flusso di lavoro](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
 
 Questo flusso di lavoro presenta due variabili definite (isMarried e income) e i relativi valori vengono impostati utilizzando il componente variabile impostato. Queste variabili sono rese disponibili come colonne da aggiungere alla casella in entrata dell’AEM
 
@@ -79,15 +79,15 @@ return isMarried(inboxItem);
 
 ## Test sul server
 
-* [Accedi alla console web AEM](http://localhost:4502/system/console/bundles)
+* [Accesso alla console Web AEM](http://localhost:4502/system/console/bundles)
 * [Distribuire e avviare il bundle di personalizzazione della casella in entrata](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
-* [Apri la casella in entrata](http://localhost:4502/aem/inbox)
-* Apri Admin Control facendo clic su _Vista a elenco_ icona accanto a _Crea_ pulsante
+* [Apri la tua casella in entrata](http://localhost:4502/aem/inbox)
+* Apri Admin Control facendo clic sull&#39;icona _Vista elenco_ accanto al pulsante _Crea_
 * Aggiungi colonna Sposato alla casella in entrata e salva le modifiche
-* [Passa a FormsAndDocuments UI](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Importa il modulo di esempio](assets/snap-form.zip) selezionando _Caricamento file_ da _Crea_ menu
-* [Visualizzare l’anteprima del modulo](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Seleziona la _stato civile_ e invia il modulo
+* [Vai all&#39;interfaccia utente FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Importa il modulo di esempio](assets/snap-form.zip) selezionando _Caricamento file_ dal menu _Crea_
+* [Anteprima modulo](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
+* Seleziona lo _stato civile_ e invia il modulo
   [visualizza casella in entrata](http://localhost:4502/aem/inbox)
 
 L’invio del modulo attiverà il flusso di lavoro e un’attività verrà assegnata all’utente &quot;amministratore&quot;. Dovresti visualizzare un valore sotto la colonna Sposato, come illustrato in questa schermata

@@ -22,9 +22,9 @@ ht-degree: 1%
 In questa sezione verrà illustrato come configurare Adobe Experience Manager Sites con Adobe Target per diversi scenari. In base allo scenario e ai requisiti organizzativi.
 
 * **Aggiungi libreria JavaScript di Adobe Target (richiesta per tutti gli scenari)**
-Per i siti in hosting su AEM, puoi aggiungere librerie Target al sito utilizzando, [tag in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). I tag offrono un modo semplice di implementare e gestire tutti i tag necessari per fornire ai clienti esperienze personalizzate significative.
-* **Aggiungi i Cloud Service Adobe Target (obbligatorio per lo scenario Frammenti esperienza)**
-Per i clienti AEM che desiderano utilizzare le offerte dei frammenti di esperienza per creare un’attività in Adobe Target, dovranno integrare Adobe Target con AEM utilizzando i Cloud Service legacy. Questa integrazione è necessaria per inviare i frammenti di esperienza dall’AEM a Target come offerte HTML/JSON e per mantenere la sincronizzazione con l’AEM. *Questa integrazione è necessaria per attuare lo scenario 1.*
+Per i siti ospitati su AEM, puoi aggiungere librerie Target al tuo sito utilizzando, [tag in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). I tag offrono un modo semplice di implementare e gestire tutti i tag necessari per fornire ai clienti esperienze personalizzate significative.
+* **Aggiungi i Cloud Service Adobe Target (necessari per lo scenario Frammenti esperienza)**
+Per i clienti AEM che desiderano utilizzare le offerte dei frammenti di esperienza per creare un’attività in Adobe Target, dovranno integrare Adobe Target con AEM utilizzando i Cloud Service legacy. Questa integrazione è necessaria per inviare i frammenti di esperienza dall’AEM a Target come offerte HTML/JSON e per mantenere la sincronizzazione con l’AEM. *Questa integrazione è necessaria per implementare lo scenario 1.*
 
 ## Prerequisiti
 
@@ -50,36 +50,36 @@ Per i clienti AEM che desiderano utilizzare le offerte dei frammenti di esperien
 
 >[!NOTE]
 >
-> È necessario fornire al cliente la raccolta dati e l’Adobe I/O da [Supporto Adobe](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) o contattare l&#39;amministratore di sistema
+> Al cliente devono essere forniti la raccolta dati e l&#39;Adobe I/O da [Supporto Adobe](https://helpx.adobe.com/it/contact/enterprise-support.ec.html) o contattare l&#39;amministratore di sistema
 
 ### Configurare AEM{#set-up-aem}
 
-Per completare questa esercitazione, è necessario che l’istanza di authoring e pubblicazione di AEM sia completa. L’istanza di authoring è in esecuzione su `http://localhost:4502` e l’istanza di pubblicazione è in esecuzione su `http://localhost:4503`. Per ulteriori informazioni, consulta: [Configurare un ambiente locale di sviluppo AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/local-aem-dev-environment-article-setup.html).
+Per completare questa esercitazione, è necessario che l’istanza di authoring e pubblicazione di AEM sia completa. L&#39;istanza di authoring è in esecuzione su `http://localhost:4502` e l&#39;istanza di pubblicazione su `http://localhost:4503`. Per ulteriori informazioni, vedere: [Configurare un ambiente di sviluppo AEM locale](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/local-aem-dev-environment-article-setup.html).
 
-#### Configurare le istanze di authoring e pubblicazione AEM
+#### Configurare le istanze di AEM Author e Publish
 
-1. Ottieni una copia di [JAR Quickstart per AEM e una licenza.](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware)
+1. Ottieni una copia del file JAR Quickstart di [AEM e una licenza.](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware)
 2. Crea nel computer una struttura di cartelle come quella riportata di seguito:
-   ![Struttura delle cartelle](assets/implementation/aem-setup-1.png)
-3. Rinomina il file jar Quickstart in `aem-author-p4502.jar` e posizionalo sotto il `/author` directory. Aggiungi il `license.properties` file sotto `/author` directory.
-   ![Istanza autore AEM](assets/implementation/aem-setup-author.png)
-4. Crea una copia del file jar Quickstart e rinominalo in `aem-publish-p4503.jar` e posizionalo sotto il `/publish` directory. Aggiungi una copia del `license.properties` file sotto `/publish` directory.
-   ![Istanza pubblicazione AEM](assets/implementation/aem-setup-publish.png)
-5. Fai doppio clic su `aem-author-p4502.jar` per installare l’istanza di authoring. Verrà avviata l&#39;istanza di authoring, in esecuzione sulla porta 4502 del computer locale.
+   ![Struttura cartella](assets/implementation/aem-setup-1.png)
+3. Rinomina il file jar Quickstart in `aem-author-p4502.jar` e inseriscilo sotto la directory `/author`. Aggiungere il file `license.properties` sotto la directory `/author`.
+   ![Istanza Autore AEM](assets/implementation/aem-setup-author.png)
+4. Creare una copia del file jar Quickstart, rinominarlo in `aem-publish-p4503.jar` e posizionarlo sotto la directory `/publish`. Aggiungere una copia del file `license.properties` sotto la directory `/publish`.
+   ![Istanza Publish AEM](assets/implementation/aem-setup-publish.png)
+5. Fare doppio clic sul file `aem-author-p4502.jar` per installare l&#39;istanza Autore. Verrà avviata l&#39;istanza di authoring, in esecuzione sulla porta 4502 del computer locale.
 6. Effettuate l&#39;accesso utilizzando le credenziali riportate di seguito e, una volta effettuato l&#39;accesso, verrete indirizzati alla schermata della home page del AEM.
-nome utente : **admin**
+nome utente: **admin**
 password: **admin**
-   ![Istanza pubblicazione AEM](assets/implementation/aem-author-home-page.png)
-7. Fai doppio clic su `aem-publish-p4503.jar` per installare un’istanza Publish. Puoi notare una nuova scheda che si apre nel browser per l’istanza Publish, in esecuzione sulla porta 4503 e visualizzando la home page di WeRetail. Per questa esercitazione utilizziamo il sito di riferimento WKND e installiamo i pacchetti sull’istanza di authoring.
-8. Vai a AEM Author nel browser Web all’indirizzo `http://localhost:4502`. Nella schermata iniziale dell’AEM, passa a *[Strumenti > Implementazione > Pacchetti](http://localhost:4502/crx/packmgr/index.jsp)*.
-9. Scaricare e caricare i pacchetti per AEM (elencati sopra in *[Prerequisiti > AEM](#aem)*)
+   ![Istanza Publish AEM](assets/implementation/aem-author-home-page.png)
+7. Fare doppio clic sul file `aem-publish-p4503.jar` per installare un&#39;istanza Publish. Puoi notare una nuova scheda che si apre nel browser per l’istanza Publish, in esecuzione sulla porta 4503 e visualizzando la home page di WeRetail. Per questa esercitazione utilizziamo il sito di riferimento WKND e installiamo i pacchetti sull’istanza di authoring.
+8. Passa a AEM Author nel browser Web all&#39;indirizzo `http://localhost:4502`. Nella schermata iniziale dell&#39;AEM, passare a *[Strumenti > Distribuzione > Pacchetti](http://localhost:4502/crx/packmgr/index.jsp)*.
+9. Scarica e carica i pacchetti per AEM (elencati sopra in *[Prerequisiti > AEM](#aem)*)
    * [aem-guides-wknd.ui.apps-0.0.1-SNAPSHOT.zip](https://github.com/adobe/aem-guides-wknd/releases/download/archetype-18.1/aem-guides-wknd.ui.apps-0.0.1-SNAPSHOT.zip)
    * [aem-guides-wknd.ui.content-0.0.1-SNAPSHOT.zip](https://github.com/adobe/aem-guides-wknd/releases/download/archetype-18.1/aem-guides-wknd.ui.content-0.0.1-SNAPSHOT.zip)
    * [core.wcm.components.all-2.5.0.zip](https://github.com/adobe/aem-core-wcm-components/releases/download/core.wcm.components.reactor-2.5.0/core.wcm.components.all-2.5.0.zip)
    * [digital-data-layer.zip](assets/implementation/digital-data-layer.zip)
 
    >[!VIDEO](https://video.tv.adobe.com/v/28377?quality=12&learn=on)
-10. Dopo aver installato i pacchetti in AEM Author, seleziona ogni pacchetto caricato in AEM Package Manager e fai clic su **Altro > Replica** per garantire che i pacchetti vengano distribuiti in Pubblicazione AEM.
+10. Dopo aver installato i pacchetti in AEM Author, selezionare ogni pacchetto caricato in AEM Package Manager e selezionare **Altro > Replica** per assicurarsi che i pacchetti vengano distribuiti in AEM Publish.
 11. A questo punto, hai installato correttamente il sito di riferimento WKND e tutti i pacchetti aggiuntivi necessari per questa esercitazione.
 
 [CAPITOLO SUCCESSIVO](./using-launch-adobe-io.md): nel prossimo capitolo, integrerai i tag con AEM.

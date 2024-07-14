@@ -28,11 +28,11 @@ Frammenti di esperienza consente agli autori di contenuti di riutilizzare i cont
 
 >[!VIDEO](https://video.tv.adobe.com/v/331785?quality=12&learn=on)
 
-Un frammento di esperienza è un set raggruppato di componenti che, se combinati, crea un’esperienza. Ad esempio, un *Titolo*, *Immagine*, *Descrizione*, e *Pulsante Invito all&#39;azione* può essere combinato per formare un’esperienza teaser.
+Un frammento di esperienza è un set raggruppato di componenti che, se combinati, crea un’esperienza. Ad esempio, è possibile combinare un *Titolo*, *Immagine*, *Descrizione* e un *Pulsante di invito all&#39;azione* per creare un&#39;esperienza teaser.
 
 Con Frammenti di esperienza, gli addetti al marketing possono:
 
 * Riutilizzare un’esperienza tra canali diversi (canali di proprietà e punti di contatto di terze parti)
 * Creare varianti di un’esperienza per casi d’uso specifici
 * Mantieni le varianti sincronizzate con l’utilizzo della Live Copy
-* Esperienze di post social in Facebook e Pinterest pronte all’uso
+* Esperienze social Post in Facebook e Pinterest pronte all’uso

@@ -28,19 +28,19 @@ Le applicazioni headless AEM supportano l’anteprima integrata dell’authoring
 Per utilizzare l’anteprima del frammento di contenuto, è necessario soddisfare diverse condizioni:
 
 1. L’app deve essere distribuita in un URL accessibile agli autori
-1. L’app deve essere configurata per la connessione al servizio di authoring AEM (anziché al servizio di pubblicazione AEM)
-1. L’app deve essere progettata con URL o percorsi che possono utilizzare [ID o percorso del frammento di contenuto](#url-expressions) per selezionare i frammenti di contenuto da visualizzare in anteprima nell’esperienza dell’app.
+1. L’app deve essere configurata per la connessione al servizio di authoring AEM (anziché al servizio Publish AEM)
+1. L&#39;app deve essere progettata con URL o route che possono utilizzare [ID o percorso frammento di contenuto](#url-expressions) per selezionare i frammenti di contenuto da visualizzare in anteprima nell&#39;esperienza dell&#39;app.
 
 ## URL di anteprima
 
-URL di anteprima, utilizzo [Espressioni URL](#url-expressions), sono impostati nelle proprietà del modello per frammenti di contenuto.
+Gli URL di anteprima, che utilizzano [espressioni URL](#url-expressions), sono impostati nelle proprietà del modello per frammenti di contenuto.
 
-![URL di anteprima del modello per frammenti di contenuto](./assets/preview/cf-model-preview-url.png)
+![URL anteprima modello frammento di contenuto](./assets/preview/cf-model-preview-url.png)
 
 1. Accedere al servizio di creazione AEM come amministratore
-1. Accedi a __Strumenti > Generale > Modelli per frammenti di contenuto__
-1. Seleziona la __Modello per frammenti di contenuto__ e seleziona __Proprietà__ dalla barra delle azioni superiore.
-1. Immetti l’URL di anteprima per il modello per frammenti di contenuto utilizzando [Espressioni URL](#url-expressions)
+1. Passa a __Strumenti > Generale > Modelli per frammenti di contenuto__
+1. Seleziona il __Modello per frammenti di contenuto__ e fai clic su __Proprietà__ nella barra delle azioni superiore.
+1. Immetti l&#39;URL di anteprima per il modello per frammenti di contenuto utilizzando [espressioni URL](#url-expressions)
    + L’URL di anteprima deve puntare a una distribuzione dell’app che si connette al servizio di authoring AEM.
 
 ### Espressioni URL
@@ -57,12 +57,12 @@ Per ogni modello per frammenti di contenuto può essere impostato un URL di ante
 
 Esempio di URL di anteprima:
 
-+ Un URL di anteprima su __Avventura__ il modello potrebbe essere simile a `https://preview.app.wknd.site/adventure${contentFragment.path}` che si risolve in `https://preview.app.wknd.site/adventure/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali`
-+ Un URL di anteprima su __Articolo__ il modello potrebbe essere simile a `https://preview.news.wknd.site/${contentFragment.model.name}/${contentFragment.id}.html?variation=${contentFragment.variation}` i risolve `https://preview.news.wknd.site/article/99c34317-1901-2ab3-35b6-d7890aa1c23c.html?variation=main`
++ Un URL di anteprima nel modello __Adventure__ potrebbe essere simile a `https://preview.app.wknd.site/adventure${contentFragment.path}` e viene risolto in `https://preview.app.wknd.site/adventure/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali`
++ Un URL di anteprima nel modello __Article__ potrebbe avere un aspetto simile a `https://preview.news.wknd.site/${contentFragment.model.name}/${contentFragment.id}.html?variation=${contentFragment.variation}` che risolve `https://preview.news.wknd.site/article/99c34317-1901-2ab3-35b6-d7890aa1c23c.html?variation=main`
 
 ## Anteprima in-app
 
-Qualsiasi frammento di contenuto che utilizza il modello per frammenti di contenuto configurato dispone di un pulsante Anteprima. Il pulsante Anteprima apre l’URL di anteprima del modello per frammenti di contenuto e inserisce i valori del frammento di contenuto aperto nel [Espressioni URL](#url-expressions).
+Qualsiasi frammento di contenuto che utilizza il modello per frammenti di contenuto configurato dispone di un pulsante Anteprima. Il pulsante Preview apre l&#39;URL di anteprima del modello per frammenti di contenuto e inserisce i valori del frammento di contenuto aperto nelle [espressioni URL](#url-expressions).
 
 ![Pulsante Anteprima](./assets/preview/preview-button.png)
 
@@ -72,13 +72,13 @@ Esegui un aggiornamento rigido (cancellazione della cache locale del browser) qu
 
 Esploriamo l’app WKND, una semplice applicazione React che mostra le avventure dell’AEM utilizzando le API GraphQL headless dell’AEM.
 
-Il codice di esempio è disponibile su [Github.com](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/preview-tutorial).
+Il codice di esempio è disponibile in [Github.com](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/preview-tutorial).
 
 ## URL e route
 
-Gli URL o i percorsi utilizzati per visualizzare in anteprima un frammento di contenuto devono essere componibili utilizzando [Espressioni URL](#url-expressions). In questa versione dell’app WKND abilitata per l’anteprima, i frammenti di contenuto dell’avventura vengono visualizzati tramite `AdventureDetail` componente associato alla route `/adventure<CONTENT FRAGMENT PATH>`. Pertanto, l’URL di anteprima del modello WKND Adventure deve essere impostato su `https://preview.app.wknd.site:3000/adventure${contentFragment.path}` per risolvere questa route.
+Gli URL o i percorsi utilizzati per visualizzare in anteprima un frammento di contenuto devono essere componibili utilizzando [espressioni URL](#url-expressions). In questa versione dell&#39;app WKND abilitata per l&#39;anteprima, i frammenti di contenuto dell&#39;avventura vengono visualizzati tramite il componente `AdventureDetail` associato alla route `/adventure<CONTENT FRAGMENT PATH>`. Pertanto, l&#39;URL di anteprima del modello WKND Adventure deve essere impostato su `https://preview.app.wknd.site:3000/adventure${contentFragment.path}` per risolvere questa route.
 
-L’anteprima del frammento di contenuto funziona solo se l’app dispone di un percorso indirizzabile che può essere popolato con [Espressioni URL](#url-expressions) che esegue il rendering del frammento di contenuto nell’app in modo da consentirne la visualizzazione in anteprima.
+L&#39;anteprima dei frammenti di contenuto funziona solo se l&#39;app dispone di un percorso indirizzabile, che può essere compilato con [espressioni URL](#url-expressions) che eseguono il rendering del frammento di contenuto nell&#39;app in modo da consentirne l&#39;anteprima.
 
 + `src/App.js`
 
@@ -109,7 +109,7 @@ export default App;
 
 ### Visualizzare il contenuto creato
 
-Il `AdventureDetail` Il componente analizza semplicemente il percorso del frammento di contenuto, inserito nell’URL di anteprima tramite il `${contentFragment.path}` [Espressione URL](#url-expressions), dall’URL della route e lo utilizza per raccogliere ed eseguire il rendering di WKND Adventure.
+Il componente `AdventureDetail` analizza semplicemente il percorso del frammento di contenuto, inserito nell&#39;URL di anteprima tramite l&#39;espressione `${contentFragment.path}` [URL](#url-expressions), dall&#39;URL di route e lo utilizza per raccogliere ed eseguire il rendering di WKND Adventure.
 
 + `src/components/AdventureDetail.js`
 

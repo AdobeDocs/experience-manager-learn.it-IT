@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Aggiorna il progetto AEM full stack per utilizzare la pipeline front-end {#update-project-enable-frontend-pipeline}
 
-In questo capitolo, verranno apportate modifiche alla configurazione di __Progetto WKND Sites__ per utilizzare la pipeline front-end per distribuire JavaScript e CSS, anziché richiedere un’esecuzione completa della pipeline full stack. Questo separa lo sviluppo e il ciclo di vita di implementazione degli artefatti front-end e back-end, consentendo un processo di sviluppo più rapido e iterativo complessivo.
+In questo capitolo vengono apportate modifiche di configurazione al progetto __WKND Sites__ per utilizzare la pipeline front-end per distribuire JavaScript e CSS, anziché richiedere un&#39;esecuzione completa della pipeline full stack. Questo separa lo sviluppo e il ciclo di vita di implementazione degli artefatti front-end e back-end, consentendo un processo di sviluppo più rapido e iterativo complessivo.
 
 ## Obiettivi {#objectives}
 
@@ -34,16 +34,16 @@ In questo capitolo, verranno apportate modifiche alla configurazione di __Proget
 
 ## Prerequisiti {#prerequisites}
 
-Questa è un&#39;esercitazione in più parti e si presume che abbiate rivisto [Modulo &#39;ui.frontend&#39;](./review-uifrontend-module.md).
+Questo è un tutorial in più parti e si presume che tu abbia rivisto il modulo [&#39;ui.frontend&#39;](./review-uifrontend-module.md).
 
 
 ## Modifiche al progetto full stack AEM
 
 Per l’esecuzione di un test, sono disponibili tre modifiche di configurazione relative al progetto e una modifica di stile da distribuire, per un totale quindi di quattro modifiche specifiche nel progetto WKND per abilitarlo per il contratto della pipeline front-end.
 
-1. Rimuovi il `ui.frontend` modulo dal ciclo di sviluppo full stack
+1. Rimuovi il modulo `ui.frontend` dal ciclo di compilazione full stack
 
-   * In, la directory principale del progetto WKND Sites `pom.xml` commenta `<module>ui.frontend</module>` voce modulo secondario.
+   * In, la radice del progetto WKND Sites `pom.xml` ha aggiunto un commento alla voce del sottomodulo `<module>ui.frontend</module>`.
 
    ```xml
        ...
@@ -57,7 +57,7 @@ Per l’esecuzione di un test, sono disponibili tre modifiche di configurazione 
        ...
    ```
 
-   * E la dipendenza relativa al commento da `ui.apps/pom.xml`
+   * Dipendenza correlata al commento da `ui.apps/pom.xml`
 
    ```xml
        ...
@@ -76,9 +76,9 @@ Per l’esecuzione di un test, sono disponibili tre modifiche di configurazione 
        ...
    ```
 
-1. Prepara il `ui.frontend` per il contratto della pipeline front-end aggiungendo due nuovi file di configurazione webpack.
+1. Prepara il modulo `ui.frontend` per il contratto della pipeline front-end aggiungendo due nuovi file di configurazione webpack.
 
-   * Copia il `webpack.common.js` as `webpack.theme.common.js`, e modifica `output` proprietà e `MiniCssExtractPlugin`, `CopyWebpackPlugin` parametri di configurazione del plug-in:
+   * Copiare `webpack.common.js` esistente come `webpack.theme.common.js` e modificare la proprietà `output` e i parametri di configurazione del plug-in `MiniCssExtractPlugin`, `CopyWebpackPlugin` come indicato di seguito:
 
    ```javascript
    ...
@@ -100,7 +100,7 @@ Per l’esecuzione di un test, sono disponibili tre modifiche di configurazione 
    ...
    ```
 
-   * Copia il `webpack.prod.js` as `webpack.theme.prod.js`, e modificare il `common` posizione della variabile nel file sopra indicato come
+   * Copiare `webpack.prod.js` esistente come `webpack.theme.prod.js` e modificare la posizione della variabile `common` nel file precedente come
 
    ```javascript
    ...
@@ -117,7 +117,7 @@ Per l’esecuzione di un test, sono disponibili tre modifiche di configurazione 
    >Sta a te nominarli o organizzarli.
 
 
-   * In `package.json` file, assicurati che il  `name` il valore della proprietà è uguale al nome del sito dalla proprietà `/conf` nodo. E sotto `scripts` proprietà, a `build` script che illustra come creare i file front-end da questo modulo.
+   * Nel file `package.json`, assicurarsi che il valore della proprietà `name` sia uguale al nome del sito del nodo `/conf`. E sotto la proprietà `scripts`, uno script `build` che indica come generare i file front-end da questo modulo.
 
    ```javascript
        {
@@ -133,9 +133,9 @@ Per l’esecuzione di un test, sono disponibili tre modifiche di configurazione 
        }
    ```
 
-1. Prepara il `ui.content` per la pipeline front-end aggiungendo due configurazioni Sling.
+1. Prepara il modulo `ui.content` per la pipeline front-end aggiungendo due configurazioni Sling.
 
-   * Crea un file in `com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig` - questo include tutti i file front-end che `ui.frontend` genera un modulo sotto `dist` mediante il processo di creazione webpack.
+   * Crea un file in `com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig`. Sono inclusi tutti i file front-end generati dal modulo `ui.frontend` nella cartella `dist` tramite il processo di compilazione Webpack.
 
    ```xml
    ...
@@ -158,10 +158,10 @@ Per l’esecuzione di un test, sono disponibili tre modifiche di configurazione 
 
    >[!TIP]
    >
-   >    Vedi la sezione completa [HtmlPageItemsConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/.content.xml) nel __Progetto AEM WKND Sites__.
+   >    Vedi [HtmlPageItemsConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig/.content.xml) completo nel __progetto AEM WKND Sites__.
 
 
-   * Secondo `com.adobe.aem.wcm.site.manager.config.SiteConfig` con `themePackageName` valore uguale al valore `package.json` e `name` valore della proprietà e `siteTemplatePath` che punta a un `/libs/wcm/core/site-templates/aem-site-template-stub-2.0.0` valore del percorso stub.
+   * Secondi `com.adobe.aem.wcm.site.manager.config.SiteConfig` con il valore `themePackageName` uguale al valore della proprietà `package.json` e `name` e `siteTemplatePath` che punta a un valore del percorso stub `/libs/wcm/core/site-templates/aem-site-template-stub-2.0.0`.
 
    ```xml
    ...
@@ -176,9 +176,9 @@ Per l’esecuzione di un test, sono disponibili tre modifiche di configurazione 
 
    >[!TIP]
    >
-   >    Vedi, la sezione completa [SiteConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.aem.wcm.site.manager.config.SiteConfig/.content.xml) nel __Progetto AEM WKND Sites__.
+   >    Vedi [SiteConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.aem.wcm.site.manager.config.SiteConfig/.content.xml) completo nel __progetto WKND Sites dell&#39;AEM__.
 
-1. Stiamo modificando un tema o degli stili da distribuire tramite pipeline front-end per un’esecuzione di test `text-color` per Adobe rosso (o selezionarne uno tuo) aggiornando il `ui.frontend/src/main/webpack/base/sass/_variables.scss`.
+1. Uno o più stili cambiano per la distribuzione tramite pipeline front-end per un&#39;esecuzione dei test. Stiamo cambiando `text-color` in rosso Adobe (o puoi sceglierne uno tuo) aggiornando `ui.frontend/src/main/webpack/base/sass/_variables.scss`.
 
    ```css
        $black:     #a40606;
@@ -190,12 +190,12 @@ Infine, invia queste modifiche all’archivio Git di Adobe del programma.
 
 >[!AVAILABILITY]
 >
-> Queste modifiche sono disponibili su GitHub all&#39;interno del [__pipeline front-end__](https://github.com/adobe/aem-guides-wknd/tree/feature/frontend-pipeline) ramo del __Progetto AEM WKND Sites__.
+> Queste modifiche sono disponibili su GitHub all&#39;interno della [__pipeline front-end__](https://github.com/adobe/aem-guides-wknd/tree/feature/frontend-pipeline) del ramo __progetto AEM WKND Sites__.
 
 
-## Attenzione - _Abilita pipeline front-end_ pulsante
+## Attenzione: _pulsante Abilita pipeline front-end_
 
-Il [Selettore della barra](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) di [Sito](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) mostra il **Abilita pipeline front-end** dopo aver selezionato la directory principale del sito o la pagina del sito. Clic **Abilita pipeline front-end** sovrascriverà quanto sopra **Configurazioni Sling**, assicurati che **non si fa clic su** questo pulsante dopo aver distribuito le modifiche di cui sopra tramite l’esecuzione della pipeline di Cloud Manager.
+L&#39;opzione [Sito](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) del selettore della barra](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) mostra il pulsante **Abilita pipeline front-end** quando selezioni la directory principale del sito o la pagina del sito. [ Facendo clic sul pulsante **Abilita pipeline front-end**, verranno ignorate le **configurazioni Sling precedenti**. Assicurarsi che **non si faccia clic su questo pulsante** dopo aver distribuito le modifiche precedenti tramite l&#39;esecuzione della pipeline Cloud Manager.
 
 ![Pulsante Abilita pipeline front-end](assets/enable-front-end-Pipeline-button.png)
 
@@ -207,4 +207,4 @@ Congratulazioni, hai aggiornato il progetto WKND Sites per abilitarlo per il con
 
 ## Passaggi successivi {#next-steps}
 
-Nel prossimo capitolo, [Distribuire utilizzando la pipeline front-end](create-frontend-pipeline.md), creerai ed eseguirai una pipeline front-end e verificherai come __spostato__ dalla distribuzione delle risorse front-end basata su &quot;/etc.clientlibs&quot;.
+Nel prossimo capitolo, [Distribuisci utilizzando la pipeline front-end](create-frontend-pipeline.md), creerai ed eseguirai una pipeline front-end e verificherai come __ci siamo allontanati__ dalla distribuzione di risorse front-end basata su &#39;/etc.clientlibs&#39;.

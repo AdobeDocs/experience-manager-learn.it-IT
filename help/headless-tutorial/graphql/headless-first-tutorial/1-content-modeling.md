@@ -37,20 +37,20 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
 
 ## Configurazione in base al contesto
 
-1. Accedi a __Strumenti > Browser configurazioni__ per creare una configurazione per l’esperienza headless.
+1. Passa a __Strumenti > Browser configurazioni__ per creare una configurazione per l&#39;esperienza headless.
 
    ![Crea cartella](./assets/1/create-configuration.png)
 
-   Fornisci un __titolo__ e __nome__, e verifica __Query persistenti GraphQL__ e __Modelli per frammenti di contenuto__.
+   Specifica un __titolo__ e un __nome__, quindi seleziona __Query GraphQL persistenti__ e __Modelli per frammenti di contenuto__.
 
 
 ## Modelli per frammenti di contenuto
 
-1. Accedi a __Strumenti > Modelli per frammenti di contenuto__ e seleziona la cartella con il nome della configurazione creata al passaggio 1.
+1. Passa a __Strumenti > Modelli per frammenti di contenuto__ e seleziona la cartella con il nome della configurazione creata al passaggio 1.
 
    ![Cartella modelli](./assets/1/model-folder.png)
 
-1. Nella cartella, seleziona __Crea__ e assegna un nome al modello __Teaser__. Aggiungi i seguenti tipi di dati a __Teaser__ modello.
+1. Nella cartella, seleziona __Crea__ e denomina il modello __Teaser__. Aggiungi i seguenti tipi di dati al modello __Teaser__.
 
    | Tipo di dati | Nome | Obbligatorio | Opzioni |
    |----------|------|----------|---------|
@@ -62,7 +62,7 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
 
    ![Modello teaser](./assets/1/teaser-model.png)
 
-1. All’interno della cartella, crea un secondo modello denominato __Offerta__. Fai clic su Crea e assegna al modello il nome &quot;Offerta&quot; e aggiungi i seguenti tipi di dati:
+1. Nella cartella, crea un secondo modello denominato __Offerta__. Fai clic su Crea e assegna al modello il nome &quot;Offerta&quot; e aggiungi i seguenti tipi di dati:
 
    | Tipo di dati | Nome | Obbligatorio | Opzioni |
    |----------|------|----------|---------|
@@ -72,7 +72,7 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
 
    ![Modello di offerta](./assets/1/offer-model.png)
 
-1. All’interno della cartella, crea un terzo modello denominato __Elenco immagini__. Fai clic su Crea e assegna al modello il nome &quot;Elenco immagini&quot; e aggiungi i seguenti tipi di dati:
+1. All&#39;interno della cartella, crea un terzo modello denominato __Elenco immagini__. Fai clic su Crea e assegna al modello il nome &quot;Elenco immagini&quot; e aggiungi i seguenti tipi di dati:
 
    | Tipo di dati | Nome | Obbligatorio | Opzioni |
    |----------|------|----------|---------|
@@ -86,12 +86,12 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
 
    ![Aggiungi cartella](./assets/1/create-folder.png)
 
-1. Dopo aver creato la cartella, selezionala e apri i relativi __Proprietà__.
-1. Nel file __Configurazioni cloud__ , seleziona la configurazione [creato in precedenza](#enable-content-fragments-and-graphql).
+1. Dopo aver creato la cartella, selezionala e apri le relative __proprietà__.
+1. Nella scheda __Configurazioni cloud__ della cartella, seleziona la configurazione [creata in precedenza](#enable-content-fragments-and-graphql).
 
-   ![Configurazione cloud AEM headless della cartella risorse](./assets/1/cloud-config.png)
+   ![Configurazione cloud AEM headless cartella risorse](./assets/1/cloud-config.png)
 
-   Fai clic su nella nuova cartella e crea un teaser. Clic __Crea__ e __Frammento di contenuto__ e seleziona la __Teaser__ modello. Denomina il modello __Eroe__ e fai clic su __Crea__.
+   Fai clic su nella nuova cartella e crea un teaser. Fai clic su __Crea__ e __Frammento di contenuto__ e seleziona il modello __Teaser__. Denomina il modello __Hero__ e fai clic su __Crea__.
 
    | Nome | Note |
    |----------|------|
@@ -101,21 +101,21 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
    | Descrizione | Lascia vuoto |
    | Stile | `Hero` |
 
-   ![frammento protagonista](./assets/1/teaser-model.png)
+   ![frammento hero](./assets/1/teaser-model.png)
 
 ## Endpoint GraphQL
 
-1. Accedi a __Strumenti > GraphQL__
+1. Passa a __Strumenti > GraphQL__
 
-   ![AEM GraphiQL](./assets/1/endpoint-nav.png)
+   ![GraphiQL AEM](./assets/1/endpoint-nav.png)
 
-1. Clic __Crea__ e assegna un nome al nuovo endpoint e scegli la configurazione appena creata.
+1. Fai clic su __Crea__, assegna un nome al nuovo endpoint e scegli la configurazione appena creata.
 
-   ![Endpoint AEM Headless GraphQL](./assets/1/endpoint.png)
+   ![Endpoint GraphQL headless AEM](./assets/1/endpoint.png)
 
 ## Query persistenti GraphQL
 
-1. Testiamo il nuovo endpoint. Accedi a __Strumenti > Editor query di GraphQL__ e scegli il nostro endpoint per il menu a discesa in alto a destra nella finestra.
+1. Testiamo il nuovo endpoint. Passa a __Strumenti > GraphQL Query Editor__ e scegli il nostro endpoint per il menu a discesa in alto a destra nella finestra.
 
 1. Nell’editor delle query, crea alcune query diverse.
 
@@ -174,7 +174,7 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
    }
    ```
 
-   In __variabili di query__ in basso, immettere:
+   Nell&#39;input __variabili query__ in basso, immettere:
 
    ```json
    {
@@ -184,12 +184,12 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
 
    >[!NOTE]
    >
-   > Potrebbe essere necessario modificare la variabile di query `path` in base ai nomi di cartelle e frammenti.
+   > Potrebbe essere necessario modificare la variabile di query `path` in base ai nomi della cartella e del frammento.
 
 
    Esegui la query per ricevere i risultati del frammento di contenuto creato in precedenza.
 
-1. Clic __Salva__  per rendere persistente (salvare) la query e denominarla __teaser__. Questo consente di fare riferimento alla query per nome nell’applicazione.
+1. Fai clic su __Salva__ per salvare la query in modo permanente e denominarla __teaser__. Questo consente di fare riferimento alla query per nome nell’applicazione.
 
 ## Passaggi successivi
 

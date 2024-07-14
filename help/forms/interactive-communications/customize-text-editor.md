@@ -40,10 +40,10 @@ A questo scopo, devi:
 
 Per personalizzare i tipi di carattere modificando il file tbxeditor-config.xml, effettuare le seguenti operazioni:
 
-1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedere come amministratore.
+1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de` e accedi come amministratore.
 1. Nella cartella delle app, crea una cartella denominata config con un percorso/struttura simile a quello della cartella config, in libs/fd/cm/config, seguendo la procedura riportata di seguito:
 
-   1. Fai clic con il pulsante destro del mouse sulla cartella degli elementi nel percorso seguente e seleziona **Sovrapponi nodo**:
+   1. Fare clic con il pulsante destro del mouse sulla cartella degli elementi nel percorso seguente e selezionare **Sovrapponi nodo**:
 
       `/libs/fd/cm/config`
 
@@ -55,22 +55,22 @@ Per personalizzare i tipi di carattere modificando il file tbxeditor-config.xml,
 
       **Posizione:** /apps/
 
-      **Corrispondenza tipi di nodo:** Selezionato
+      **Corrispondenza tipi di nodo:** selezionati
 
       ![Sovrapponi nodo](assets/overlay1.png)
 
-   1. Clic **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Fare clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
-   1. Clic **Salva tutto**.
+   1. Fare clic su **Salva tutto**.
 
 1. Creare una copia del file tbxeditor-config.xml nella cartella di configurazione appena creata, attenendosi alla procedura descritta di seguito.
 
-   1. Fai clic con il pulsante destro del mouse sul file tbxeditor-config.xml in libs/fd/cm/config e seleziona **Copia**.
-   1. Fai clic con il pulsante destro del mouse sulla cartella seguente e seleziona (Copia negli Appunti) **Incolla:**
+   1. Fare clic con il pulsante destro del mouse sul file tbxeditor-config.xml in libs/fd/cm/config e selezionare **Copia**.
+   1. Fare clic con il pulsante destro del mouse sulla cartella seguente e selezionare **Incolla:**
 
       `apps/fd/cm/config`
 
-   1. Il nome del file incollato, per impostazione predefinita, è `copy of tbxeditor-config.xml.` Rinomina il file in `tbxeditor-config.xml` e fai clic su **Salva tutto**.
+   1. Per impostazione predefinita, il nome del file incollato è `copy of tbxeditor-config.xml.`. Rinominare il file in `tbxeditor-config.xml` e fare clic su **Salva tutto**.
 
 1. Apri il file tbxeditor-config.xml in apps/fd/cm/config e apporta le modifiche necessarie.
 
@@ -168,11 +168,11 @@ Per personalizzare i tipi di carattere modificando il file tbxeditor-config.xml,
       * Valori predefiniti per la famiglia e la dimensione del carattere, l&#39;altezza, la spaziatura tra lettere e il formato della data
       * Rientri punto elenco
 
-      Ad esempio, per aggiungere un carattere giapponese denominato Sazanami Mincho Medium, è necessario inserire nel file XML la seguente voce: `<font>Sazanami Mincho Medium</font>`. È inoltre necessario che questo tipo di carattere sia installato nel computer client utilizzato per accedere e utilizzare la personalizzazione del tipo di carattere. Per ulteriori informazioni, consulta [Aggiungere caratteri personalizzati al computer client](#addcustomfonts).
+      Per aggiungere ad esempio un tipo di carattere giapponese denominato Sazanami Mincho Medium, è necessario inserire nel file XML la seguente voce: `<font>Sazanami Mincho Medium</font>`. È inoltre necessario che questo tipo di carattere sia installato nel computer client utilizzato per accedere e utilizzare la personalizzazione del tipo di carattere. Per ulteriori informazioni, vedere [Aggiungere caratteri personalizzati al computer client](#addcustomfonts).
 
       È inoltre possibile modificare le impostazioni predefinite per vari aspetti del testo e, rimuovendo le voci, rimuovere i caratteri dall&#39;editor di testo.
 
-   1. Clic **Salva tutto**.
+   1. Fare clic su **Salva tutto**.
 
 ## Aggiungere caratteri personalizzati al computer client {#addcustomfonts}
 
@@ -180,14 +180,14 @@ Quando si accede a un tipo di carattere nell&#39;editor di testo di comunicazion
 
 Per ulteriori informazioni sull&#39;installazione dei tipi di carattere, vedere:
 
-* [Installare o disinstallare i tipi di carattere in Windows](https://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
-* [Nozioni di base su Mac: Rubrica](https://support.apple.com/en-us/HT201749)
+* [Installa o disinstalla i tipi di carattere in Windows](https://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
+* [Nozioni di base di Mac: Rubrica caratteri](https://support.apple.com/en-us/HT201749)
 
 ## Accedere alle personalizzazioni dei caratteri {#access-font-customizations}
 
-Dopo aver apportato modifiche ai font nel file tbxeditor-config.xml in CRX e aver installato i font richiesti sul computer client utilizzato per accedere ad AEM Forms, le modifiche vengono visualizzate nell’editor di testo.
+Dopo aver apportato modifiche ai font nel file tbxeditor-config.xml in CRX e aver installato i font richiesti nel computer client utilizzato per accedere ad AEM Forms, le modifiche vengono visualizzate nell’editor di testo.
 
-Ad esempio, il tipo di carattere Sazanami Mincho Medium aggiunto nel [Personalizzare i font modificando il file tbxeditor-config.xml in CRX](#customizefonts) nell’interfaccia utente dell’editor di testo viene visualizzata la seguente procedura:
+Ad esempio, il tipo di carattere Sazanami Mincho Medium aggiunto nella procedura [Personalizza i tipi di carattere modificando il file tbxeditor-config.xml in CRX](#customizefonts) viene visualizzato nell&#39;interfaccia utente dell&#39;editor di testo come segue:
 
 ![sazanamiminchointext](assets/sazanamiminchointext.png)
 

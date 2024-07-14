@@ -28,4 +28,4 @@ Per utilizzare l’API dell’operazione in batch di AEM Forms CS, sono necessar
 1. Crea configurazione archivio dati batch
 1. Eseguire l’API Batch
 
-Si consiglia di acquisire familiarità con [Documentazione API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/batch-api.yaml?lang=en) prima di continuare a utilizzare questa esercitazione.
+Prima di continuare a utilizzare questa esercitazione, è consigliabile familiarizzare con la [documentazione API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/batch-api.yaml?lang=en).

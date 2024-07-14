@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Passaggi per abilitare la registrazione di debug per tutte le classi in AEM Forms OSGi
 
-*Questo video illustra i passaggi per abilitare la registrazione di debug per tutte le classi in AEM Forms OSGi.*
+*Questo video illustra i passaggi necessari per abilitare la registrazione di debug per qualsiasi classe in AEM Forms OSGi.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335521?quality=12&learn=on)

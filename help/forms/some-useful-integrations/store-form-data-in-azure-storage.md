@@ -23,12 +23,12 @@ Questo articolo illustra come effettuare chiamate REST per archiviare i dati AEM
 Per memorizzare i dati del modulo inviati nell’archiviazione di Azure, è necessario seguire la procedura seguente.
 
 >[!NOTE]
->Il codice di questo articolo non funziona con un modulo adattivo basato su componenti core. [L’articolo equivalente per il modulo adattivo basato su componenti core è disponibile qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
+>Il codice di questo articolo non funziona con un modulo adattivo basato su componenti core. [L&#39;articolo equivalente per il modulo adattivo basato su componenti core è disponibile qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
 
 
 ## Crea account di archiviazione Azure
 
-[Accedi all’account del portale di Azure e crea un account di archiviazione](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account-1). Assegnare un nome significativo all&#39;account di archiviazione, fare clic su Revisione e quindi su Crea. In questo modo viene creato l&#39;account di archiviazione con tutti i valori predefiniti. Ai fini di questo articolo abbiamo denominato il nostro account di archiviazione `aemformstutorial`.
+[Accedi all&#39;account del portale di Azure e crea un account di archiviazione](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account-1). Assegnare un nome significativo all&#39;account di archiviazione, fare clic su Revisione e quindi su Crea. In questo modo viene creato l&#39;account di archiviazione con tutti i valori predefiniti. Ai fini di questo articolo abbiamo denominato il nostro account di archiviazione `aemformstutorial`.
 
 
 ## Crea contenitore
@@ -43,12 +43,12 @@ Per interagire con il contenitore di archiviazione Azure, verrà utilizzata la f
 Passa al contenitore nell’account di archiviazione, fai clic sui puntini di sospensione e seleziona l’opzione Genera SAS come mostrato nella schermata
 ![sas-on-container](./assets/sas-on-container.png)
 Assicurarsi di specificare le autorizzazioni appropriate e la data di fine appropriata come mostrato nella schermata seguente e fare clic su Genera token SAS e URL. Copia il token SAS Blob e l’URL SAS Blob. Questi due valori verranno utilizzati per effettuare chiamate HTTP
-![shared-access-keys](./assets/shared-access-signature.png)
+![chiavi ad accesso condiviso](./assets/shared-access-signature.png)
 
 
 ## Fornisci il token SAS Blob e l’URI di archiviazione
 
-Per rendere il codice più generico, le due proprietà possono essere configurate utilizzando la configurazione OSGi come mostrato di seguito. Il _**emformstutoriale**_ è il nome dell’account di archiviazione, _**moduli sottomissioni**_ è il contenitore in cui verranno memorizzati i dati.
+Per rendere il codice più generico, le due proprietà possono essere configurate utilizzando la configurazione OSGi come mostrato di seguito. _**aemformstutorial**_ è il nome dell&#39;account di archiviazione, _**formsubmissions**_ è il contenitore in cui verranno archiviati i dati.
 Verificare che / sia presente alla fine dell&#39;URI di archiviazione e che il token SAS inizi con?
 ![configurazione osgi](./assets/azure-portal-osgi-configuration.png)
 
@@ -56,8 +56,9 @@ Verificare che / sia presente alla fine dell&#39;URI di archiviazione e che il t
 ## Crea richiesta PUT
 
 Il passaggio successivo consiste nel creare una richiesta PUT per memorizzare i dati del modulo inviati nell’archiviazione di Azure. Ogni invio di moduli deve essere identificato da un ID BLOB univoco. L’ID BLOB univoco viene in genere creato nel codice e inserito nell’URL della richiesta PUT.
-Di seguito è riportato l’URL parziale della richiesta PUT. Il `aemformstutorial` è il nome dell’account di archiviazione, formsubmissions è il contenitore in cui verranno memorizzati i dati con un ID BLOB univoco. Il resto dell’URL rimarrà invariato.
-https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken Di seguito è riportata una funzione scritta per memorizzare i dati del modulo inviati nell&#39;archiviazione di Azure utilizzando una richiesta PUT. Osserva l’utilizzo del nome del contenitore e dell’UUID nell’URL. Puoi creare un servizio OSGi o un servlet Sling utilizzando il codice di esempio elencato di seguito e archiviare gli invii dei moduli nell’archiviazione di Azure.
+Di seguito è riportato l’URL parziale della richiesta PUT. `aemformstutorial` è il nome dell&#39;account di archiviazione, formsubmissions è il contenitore in cui verranno archiviati i dati con ID BLOB univoco. Il resto dell’URL rimarrà invariato.
+https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken
+Di seguito è riportata una funzione scritta per memorizzare i dati del modulo inviato nell’archiviazione di Azure utilizzando una richiesta PUT. Osserva l’utilizzo del nome del contenitore e dell’UUID nell’URL. Puoi creare un servizio OSGi o un servlet Sling utilizzando il codice di esempio elencato di seguito e archiviare gli invii dei moduli nell’archiviazione di Azure.
 
 ```java
  public String saveFormDatainAzure(String formData) {
@@ -103,10 +104,10 @@ https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken D
 
 * [Importare il modulo adattivo di esempio](./assets/bank-account-sample-form.zip)
 
-* [Specifica i valori appropriati nella configurazione del portale di Azure utilizzando la console di configurazione OSGi](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
+* [Specificare i valori appropriati nella configurazione del portale di Azure utilizzando la console di configurazione OSGi](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
 
 * [Anteprima e invio del modulo BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 
 * Verifica che i dati siano archiviati nel contenitore di archiviazione Azure desiderato. Copia l’ID BLOB.
-* [Anteprima del modulo BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) e specifica l’ID BLOB come parametro GUID nell’URL del modulo da precompilare con i dati dell’archiviazione Azure
+* [Visualizza l&#39;anteprima del modulo BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) e specifica l&#39;ID BLOB come parametro GUID nell&#39;URL per il modulo da precompilare con i dati dall&#39;archiviazione di Azure
 

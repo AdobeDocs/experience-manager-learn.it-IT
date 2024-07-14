@@ -80,13 +80,13 @@ Un modello di metadati è in genere progettato per soddisfare i seguenti casi d�
 * Riferimenti incrociati: metadati associativi che acquisiscono la relazione tra due o più risorse (la sintesi dei metadati consente riferimenti incrociati e un’organizzazione coerente del gruppo)
 * Naviga: la struttura di cartelle in cui sono memorizzate le risorse (utilizzata per recuperare le informazioni navigando)
 
-*I metadati dell’autore supportano principalmente i processi operativi. La pubblicazione supporta casi di utilizzo di recupero e distribuzione.*
+I metadati dell&#39;autore *supportano principalmente i processi operativi. Publish supporta casi di utilizzo di recupero e distribuzione.*
 
 ## Utilizzo dei tag come termini predefiniti
 
 Un tag è una parola chiave o un termine assegnato a un&#39;informazione.vAd esempio, invece di immettere &quot;car&quot;, &quot;vehicle&quot;, &quot;automobile&quot;, un sistema di tag consente un solo valore tra cui scegliere, rendendo la ricerca più prevedibile.  I tag normalizzano e semplificano la categorizzazione delle risorse.
 
-*Nota: anche se l’AEM consente l’assegnazione di tag ad hoc, è consigliabile non utilizzarlo, in quanto potrebbe portare a una tassonomia indefinita e complessa.*
+*Nota: sebbene l&#39;AEM consenta l&#39;assegnazione di tag ad hoc, è consigliabile non utilizzarlo, in quanto potrebbe causare una tassonomia indefinita e complessa.*
 
 Utilizzi comuni dei tag:
 
@@ -111,19 +111,31 @@ Se utilizzati nell’AEM, i tag possono contribuire a ottenere un’implementazi
 Una tassonomia è un sistema di organizzazione dei tag basato su caratteristiche condivise, che in genere sono strutturate gerarchicamente in base alle esigenze organizzative. La struttura può aiutare a trovare un tag più rapidamente o a imporre una generalizzazione.
 Esempio: è necessario suddividere in sottocategorie le immagini d&#39;archivio delle automobili.  La tassonomia potrebbe essere simile alla seguente:
 
-/subject/car/ /subject/car/sportscar /subject/car/sportscar/porsche /subject/car/sportscar/ferrari ... /subject/car/minivan /subject/car/minivan/mercedes /subject/car/minivan/volkswagen ... /subject/car/limousine ...
+/subject/car/
+/subject/car/sportscar
+/subject/car/sportscar/porsche
+/subject/car/sportscar/ferrari
+...
+/subject/car/minivan
+/subject/car/minivan/mercedes
+/subject/car/minivan/volkswagen
+...
+/subject/car/limousine
+...
 
 Ora un utente può scegliere se vuole cercare le immagini di cicatrici sportive in generale o una &quot;Porsche&quot; in particolare. Dopotutto, entrambi sono cicatrici sportive.
 Best practice: evita le tassonomie flat. Le tassonomie piatte non dispongono dei vantaggi descritti in precedenza e richiedono una manutenzione costante
 
-**Utilizzo di una tassonomia come Thesaurus.**  Quando un utente cerca una parola chiave, il sistema crea una seconda ricerca per tutti i sinonimi trovati.
+**Utilizzo di una tassonomia come Thesaurus.** Quando un utente cerca una parola chiave, il sistema crea una seconda ricerca per tutti i sinonimi trovati.
 Inoltre, invece di digitare &quot;car&quot; manualmente, il sistema può fornire un elenco di parole chiave per migliorare la coerenza.
 
-**Utilizzo di una tassonomia come dizionario.** Invece di stampare solo &quot;car&quot;, puoi espandere il singolo tag e utilizzare tutti i sinonimi del tag.
+**Utilizzo di una tassonomia come dizionario.** Anziché stampare solo &quot;car&quot;, è possibile espandere il singolo tag e utilizzare tutti i sinonimi del tag.
 
-**Più categorie.** A differenza di una gerarchia di cartelle, i tag possono essere utilizzati per esprimere più categorizzazioni contemporaneamente. Una risorsa con tag:
+**Più Categorie.** A differenza di una gerarchia di cartelle, i tag possono essere utilizzati per esprimere più categorizzazioni contemporaneamente. Una risorsa con tag:
 
-/subject/car/minivan/mercedes /subject/people/family /color/red
+/subject/car/minivan/mercedes
+/subject/people/family
+/color/red
 
 ## Metadati e tag
 
@@ -145,13 +157,13 @@ Assicurati che i collaboratori di contenuto sappiano come possono proporre modif
 
 ## Best practice con tag e tassonomie
 
-**Standardizzare I Tag.** Crea un glossario che fornisca un vocabolario autorevole. Senza la definizione di standard, la duplicazione dei dati presenterà dei problemi. Inoltre, si consiglia di controllare non solo la tassonomia, ma anche l’utilizzo dei tag.
+**Standardizzare I Tag.** Creare un glossario che fornisce un vocabolario autorevole. Senza la definizione di standard, la duplicazione dei dati presenterà dei problemi. Inoltre, si consiglia di controllare non solo la tassonomia, ma anche l’utilizzo dei tag.
 
-**Non sovraetichettare.** I tag possono perdere il loro significato se distribuiti troppo frequentemente.Applica tag estranei per un’efficienza ottimale.
+**Non sovraccaricare il tag.** I tag possono perdere significato se distribuiti troppo frequentemente.Applica tag estranei per un’efficienza ottimale.
 
-**Rivaluta I Tag Nel Tempo.** Ricorda che la terminologia e il contesto di business raramente rimangono statici. Potrebbe essere necessario standardizzare nuovamente e riapplicare i tag.
+**Rivaluta i tag nel tempo.** Ricorda che la terminologia e il contesto di business raramente rimangono statici. Potrebbe essere necessario standardizzare nuovamente e riapplicare i tag.
 
-**Utilizzo di tag avanzati basati sull’intelligenza artificiale.** Applicazione di tag avanzati [vedi collegamento] è una funzionalità di intelligenza artificiale in AEM per ridurre lo sforzo di assegnare tag alle risorse manualmente. L’assegnazione tag avanzati utilizza un’intelligenza artificiale per dedurre informazioni sull’oggetto di un’immagine. Genera tag descrittivi che descrivono il contenuto di un’immagine.
+**Utilizzo di tag avanzati basati sull&#39;intelligenza artificiale.** L&#39;assegnazione tag avanzati [vedere il collegamento] è una funzionalità di intelligenza artificiale in AEM per ridurre l&#39;impegno di assegnare tag alle risorse manualmente. L’assegnazione tag avanzati utilizza un’intelligenza artificiale per dedurre informazioni sull’oggetto di un’immagine. Genera tag descrittivi che descrivono il contenuto di un’immagine.
 
 ## Qualità e manutenzione dei metadati
 
@@ -159,7 +171,7 @@ Comprendere i requisiti aziendali è un passaggio importante nell’esecuzione d
 
 Inoltre, i metadati devono essere acquisiti il prima possibile durante il processo di creazione dei contenuti. Se i metadati non vengono applicati al momento giusto, ci sono poche possibilità di applicarli retroattivamente.
 
-**Utilizzare i metadati** per migliorare la collaborazione: utilizza Adobe Asset Link, Adobe Bridge e il desktop AEM per collegare i processi creativi e utilizzare i metadati per semplificare i flussi di lavoro creativi. L’utilizzo di questi strumenti arricchisce i metadati e l’esperienza utente nel processo creativo.
+**Utilizzare i metadati** per migliorare la collaborazione: utilizzare Adobe Asset Link, Adobe Bridge e il desktop AEM per collegare i processi creativi e utilizzare i metadati per semplificare i flussi di lavoro creativi. L’utilizzo di questi strumenti arricchisce i metadati e l’esperienza utente nel processo creativo.
 
 ## Best practice per la gestione dei metadati
 
@@ -176,17 +188,17 @@ Alcune linee guida possono essere utili per decidere come categorizzare i metada
 
 **Descrizione** - Se i dati descrivono la risorsa o il contenuto, devono far parte dei metadati allegati.
 
-**Ricerca** - Se i metadati sono utilizzati a fini di ricerca, devono essere allegati.
+**Ricerca** - Se i metadati devono essere utilizzati per la ricerca, devono essere allegati.
 
 **Esposizione** - Se stai esponendo i metadati su una piattaforma di distribuzione a terzi, fai attenzione a non esporre anche i metadati &quot;interni&quot;.
 
-**Durata** - Più a lungo i metadati sono conservati, più è probabile che siano adatti per i metadati allegati.
+**Durata** - Più a lungo i metadati dovrebbero vivere, più è probabile che siano adatti per i metadati allegati.
 
-**Processi aziendali correlati** - Come parte dei metadata, è sicuramente utile disporre di un ID prodotto permanente. Tuttavia, la categoria di un articolo in relazione al catalogo dei prodotti è un metadati discutibile per la risorsa.
+**Processi aziendali correlati** - È sicuramente utile disporre di un ID prodotto permanente come parte dei metadati. Tuttavia, la categoria di un articolo in relazione al catalogo dei prodotti è un metadati discutibile per la risorsa.
 
-**Organizzazione ed elaborazione** - Se la natura dei metadati è di tipo organizzativo, ad esempio se si trovano in un flusso di lavoro di approvazione o se sono di proprietà di un determinato reparto, i metadati esterni devono essere presi in considerazione piuttosto che allegarli alla risorsa.
+**Organizzazione ed elaborazione** - Se la natura dei metadati è di natura organizzativa, ad esempio lo stato in un flusso di lavoro di approvazione o la proprietà di un determinato reparto, i metadati esterni devono essere considerati piuttosto che associare i metadati alla risorsa.
 
-*Per creare la strategia, effettuare le seguenti domande:*
+*Per creare la strategia, porre le seguenti domande:*
 
 * Che tipo di contenuti e &quot;informazioni aggiuntive&quot; (= metadati) sono necessari per risolvere problemi aziendali/domande aziendali/problemi aziendali?
 * Quali sono le variabili, i &quot;campi&quot; nello schema e quali sono i valori possibili? Quali variabili necessitano di un input di testo libero, quali possono essere ristrette per tipo (numero, data, booleano, ...), un set di valori fissi (ad esempio paesi) o tag da una determinata tassonomia. Quanti tag sono necessari, consentiti?

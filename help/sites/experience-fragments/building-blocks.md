@@ -29,7 +29,7 @@ I blocchi predefiniti sono una sottofunzione dei Frammenti esperienza. I blocchi
 
 >[!NOTE]
 >
-> Il modello utilizzato per i frammenti esperienza deve includere **Blocchi predefiniti** come componente consentito.
+> Il modello utilizzato per i frammenti di esperienza deve includere **blocchi predefiniti** come componente consentito.
 
 * I blocchi predefiniti consentono di riutilizzare facilmente i componenti tra diverse varianti.
 * Le modifiche apportate al blocco predefinito principale vengono riportate automaticamente in tutti i riferimenti. Le modifiche al layout del blocco predefinito non vengono influenzate.

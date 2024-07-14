@@ -20,12 +20,12 @@ ht-degree: 1%
 # Estendere i componenti del gruppo di scelta
 
 I componenti core checkbox, menu a discesa e pulsante di opzione sono stati estesi per includere una scheda Proprietà aggiuntive. La scheda delle proprietà aggiuntive dispone di una casella di controllo per indicare se il campo deve essere utilizzato come scheda indice BLOB
-![additional-properties](assets/drop-down-additonal-properties.png). Quando la casella di controllo è selezionata, viene creata una proprietà denominata Searchable e il suo valore è impostato su true nell’archivio jcr, come mostrato nella schermata seguente
+![proprietà aggiuntive](assets/drop-down-additonal-properties.png). Quando la casella di controllo è selezionata, viene creata una proprietà denominata Searchable e il suo valore è impostato su true nell’archivio jcr, come mostrato nella schermata seguente
 ![ricercabile](assets/searchable-true.png).
 
 Il seguente file .content.xml è stato creato nella cartella _cq_dialog.
 
-![a discesa-vista-progetto](assets/drop-down-project-view.png)
+![vista-progetto-a-discesa](assets/drop-down-project-view.png)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

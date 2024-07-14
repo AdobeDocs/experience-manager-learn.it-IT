@@ -27,7 +27,7 @@ I gruppi chiusi di utenti (CUG) sono una funzione utilizzata per limitare l’ac
 
 ## Gruppo utenti chiuso (CUG) con AEM Assets
 
-* Progettato per limitare l’accesso alle risorse in un’istanza di pubblicazione AEM.
+* Progettato per limitare l’accesso alle risorse in un’istanza Publish dell’AEM.
 * Consente l’accesso in lettura a un set di utenti/gruppi.
 * Il gruppo utenti chiusi (CUG) può essere configurato solo a livello di cartella. Impossibile impostare CUG su singole risorse.
 * I criteri CUG vengono ereditati automaticamente da tutte le sottocartelle e le risorse applicate.
@@ -39,12 +39,12 @@ Sia i gruppi chiusi di utenti (CUG) che gli elenchi di controllo di accesso (ACL
 
 |                   | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Uso previsto | Configurare e applicare le autorizzazioni per il contenuto in **corrente** istanza AEM. | Configurare i criteri CUG per il contenuto su AEM **autore** dell&#39;istanza. Applicare criteri CUG per i contenuti su AEM **pubblicare** istanze. |
-| Livelli di autorizzazione | Definisce le autorizzazioni concesse/negate per utenti/gruppi per tutti i livelli: Lettura, Modifica, Crea, Elimina, Lettura ACL, Modifica ACL, Replica. | Consente l’accesso in lettura a un set di utenti/gruppi. Nega l’accesso in lettura a *tutti gli altri* utenti/gruppi. |
-| Pubblicazione | Gli ACL sono *non* pubblicato con il contenuto. | Criteri CUG *sono* pubblicato con il contenuto. |
+| Uso previsto | Configura e applica le autorizzazioni per il contenuto nell&#39;istanza AEM **corrente**. | Configura criteri CUG per il contenuto nell&#39;istanza **author** dell&#39;AEM. Applica criteri CUG per il contenuto nelle istanze **publish** dell&#39;AEM. |
+| Livelli di autorizzazione | Definisce le autorizzazioni concesse/negate per utenti/gruppi per tutti i livelli: Lettura, Modifica, Crea, Elimina, Lettura ACL, Modifica ACL, Replica. | Consente l’accesso in lettura a un set di utenti/gruppi. Nega l&#39;accesso in lettura a *tutti gli altri* utenti/gruppi. |
+| Pubblicazione | Gli ACL sono *non* pubblicati con il contenuto. | I criteri CUG *sono* pubblicati con contenuto. |
 
 ## Collegamenti di supporto {#supporting-links}
 
-* [Gestione delle risorse e dei gruppi chiusi di utenti](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en#closed-user-group)
+* [Gestione di Assets e gruppi di utenti chiusi](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en#closed-user-group)
 * [Creazione di un gruppo utenti chiuso](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html)
 * [Documentazione di Oak Closed User Group](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html)

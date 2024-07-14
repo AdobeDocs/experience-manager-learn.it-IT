@@ -1,6 +1,6 @@
 ---
-title: Assets Essentials nella mia area di lavoro
-description: Scopri come lavorare in modo più efficiente utilizzando i widget configurabili dall’utente di La mia area di lavoro.
+title: Assets Essentials My Workspace
+description: Scopri come utilizzare in modo più efficiente i widget configurabili dall’utente di My Workspace.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -19,8 +19,8 @@ ht-degree: 0%
 
 ---
 
-# La mia area di lavoro negli Assets Essentials
+# Il mio Workspace negli Assets Essentials
 
-Scopri come lavorare in modo più efficiente utilizzando i widget configurabili dall’utente di La mia area di lavoro.
+Scopri come utilizzare in modo più efficiente i widget configurabili dall’utente di My Workspace.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3413809?quality=12&learn=on)

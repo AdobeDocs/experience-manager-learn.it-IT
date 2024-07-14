@@ -19,6 +19,6 @@ ht-degree: 2%
 
 # Pacchetto struttura archivio
 
-AEM Esplorare i [Pacchetto struttura archivio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/repository-structure-package.html?lang=it), la sua importanza e come definirla in modo ottimale.
+Esplora il [pacchetto di struttura dell&#39;archivio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/repository-structure-package.html?lang=it) di un&#39;applicazione AEM, la sua importanza e come definirlo in modo ottimale.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330550?quality=12&learn=on)

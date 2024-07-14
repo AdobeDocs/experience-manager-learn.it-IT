@@ -140,10 +140,10 @@ Riga 23: chiamare il metodo DocumentServices extractBarCode per ottenere i dati 
 
 Per eseguire questa operazione sul sistema, eseguire le operazioni seguenti:
 
-1. [Scarica BarcodeService.zip](assets/barcodeservice.zip) e importare in AEM utilizzando Gestione pacchetti
+1. [Scarica BarcodeService.zip](assets/barcodeservice.zip) e importa in AEM utilizzando Gestione pacchetti
 1. [Scaricare e installare il pacchetto DocumentServices personalizzato](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Scaricare e installare il bundle DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [Scarica il modulo PDF di esempio](assets/barcode.pdf)
-1. Puntare il browser al [modulo adattivo di esempio](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
+1. Porta il browser al [modulo adattivo di esempio](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
 1. Carica il PDF di esempio fornito
 1. Dovresti visualizzare i moduli compilati con i dati

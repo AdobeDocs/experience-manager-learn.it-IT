@@ -127,7 +127,7 @@ public String getBlobData(String blobID) {
 
 Associa il servizio di precompilazione personalizzato al modulo adattivo come mostrato di seguito
 
-![preriempimento-servizio](assets/prefill-service.png)
+![servizio di precompilazione](assets/prefill-service.png)
 
 Visualizza l’anteprima del modulo includendo il parametro guid nell’URL, come illustrato di seguito
 

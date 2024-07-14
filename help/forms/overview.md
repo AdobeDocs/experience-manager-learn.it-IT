@@ -37,7 +37,7 @@ Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la 
     </a>
     <div>
       <a href="./creating-your-first-adaptive-form/introduction-and-setup.md">
-    <strong>Creare il primo modulo adattivo</strong>
+    <strong>Crea il tuo primo modulo adattivo</strong>
     </a>
     </div>
     <p>
@@ -50,11 +50,11 @@ Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la 
     </a>
     <div>
       <a href="./ic-print-channel-tutorial/introduction.md">
-    <strong>Crea il primo documento del canale di stampa</strong>
+    <strong>Crea il tuo primo documento del canale di stampa</strong>
     </a>
     </div>
     <p>
-    <em>Le comunicazioni interattive centralizzano e gestiscono la creazione, l’assemblaggio e la distribuzione di corrispondenze sicure, personalizzate e interattive, quali corrispondenza aziendale, documenti, dichiarazioni, note sui benefit, e-mail di marketing, fatture e kit di benvenuto. </em>
+    <em>Le comunicazioni interattive centralizzano e gestiscono la creazione, l'assemblaggio e la distribuzione di corrispondenze sicure, personalizzate e interattive quali corrispondenza aziendale, documenti, dichiarazioni, note sui benefit, messaggi di marketing, fatture e kit di benvenuto. </em>
     <p>
   </td>
   <td>
@@ -78,9 +78,9 @@ Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la 
 
 ## Risorse aggiuntive
 
-* [Documentazione di authoring di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [Documentazione sull&#39;authoring di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
 * [Documentazione sullo sviluppo per AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
-* [Documentazione sull’amministrazione di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
+* [Documentazione sull&#39;amministrazione di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
 * [Documentazione sulla distribuzione di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
 * [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutorial su AEM Assets](/help/assets/overview.md)

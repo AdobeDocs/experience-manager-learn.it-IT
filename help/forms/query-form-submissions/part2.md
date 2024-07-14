@@ -32,7 +32,7 @@ La schermata seguente mostra i tag di indice BLOB nel portale di Azure
 
 ![blob-index-tags](assets/blob-index-tags.png)
 
-Il codice di invio personalizzato si trova in **_StoreFormDataWithBlobIndexTagsInAzure_** e il codice per l’archiviazione e il recupero dei dati da Azure è nel componente **_SaveAndFetchFromAzure_**
+Il codice di invio personalizzato si trova in **_StoreFormDataWithBlobIndexTagsInAzure_** e il codice per l&#39;archiviazione e il recupero dei dati da Azure si trova nel componente **_SaveAndFetchFromAzure_**
 
 ## Passaggi successivi
 

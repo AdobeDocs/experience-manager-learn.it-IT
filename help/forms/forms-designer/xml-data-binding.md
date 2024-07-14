@@ -1,6 +1,6 @@
 ---
 title: Creare l’associazione dati XML nei moduli basati su XDP
-description: Breve video che descrive l'associazione di un modulo AEM a un'origine dati XML
+description: Breve video che descrive l’associazione di un modulo AEM a un Source dati XML
 version: 6.5
 feature: Forms Designer,Designer
 topic: Development
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Creare l’associazione dati XML in AEM Forms Designer
 
-Breve video che descrive l&#39;associazione di un modulo AEM a un&#39;origine dati XML
+Breve video che descrive l’associazione di un modulo AEM a un Source dati XML
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427625/?learn=on)

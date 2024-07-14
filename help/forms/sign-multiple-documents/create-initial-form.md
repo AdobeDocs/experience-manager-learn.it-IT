@@ -19,7 +19,7 @@ ht-degree: 7%
 
 # Crea modulo iniziale
 
-Il modulo iniziale (Modulo di rifinanziamento) viene utilizzato per la firma di più moduli attivando **Firma più Forms** Flusso di lavoro AEM. È possibile immettere i valori desiderati, ma assicurarsi che i campi riportati di seguito vengano aggiunti al modulo.
+Il modulo iniziale (Modulo di rifinanziamento) viene utilizzato per la firma di più moduli attivando il flusso di lavoro AEM **Firma più Forms**. È possibile immettere i valori desiderati, ma assicurarsi che i campi riportati di seguito vengano aggiunti al modulo.
 
 | Tipo di campo | Nome | Scopo | Nascosto | Valore predefinito |
 | ------------------------|---------------------------------------|--------------------|--------|----------------- |
@@ -29,8 +29,8 @@ Il modulo iniziale (Modulo di rifinanziamento) viene utilizzato per la firma di 
 | TextField | customerEmail | E-mail del cliente per inviare la notifica | N |
 | Casella di controllo | formsToSign | Gli elementi identificano i moduli nel pacchetto | N |
 
-Il modulo iniziale deve essere configurato per attivare un flusso di lavoro AEM denominato **signmultipleforms**
-Assicurarsi che il percorso del file di dati sia impostato su **Dati.xml**. Questo è molto importante, poiché il codice di esempio cerca un file denominato Data.xml nel payload del processo di invio del modulo.
+È necessario configurare il modulo iniziale per attivare un flusso di lavoro AEM denominato **signmultipleforms**
+Verificare che il percorso del file di dati sia impostato su **Data.xml**. Questo è molto importante, poiché il codice di esempio cerca un file denominato Data.xml nel payload del processo di invio del modulo.
 
 ## Risorse
 

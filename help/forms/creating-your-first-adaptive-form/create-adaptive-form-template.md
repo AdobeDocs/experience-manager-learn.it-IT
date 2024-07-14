@@ -23,9 +23,9 @@ Il video seguente illustra il processo di base per la creazione di un modello di
 
 >[!VIDEO](https://video.tv.adobe.com/v/37324?quality=12&learn=on)
 
-Fare riferimento a [documentazione del modello di modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) per ulteriori dettagli
+Per ulteriori informazioni, consulta la [documentazione del modello di modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html)
 
-Se necessario, puoi scaricare [modello di modulo adattivo](assets/peak-application-template.zip) e l&#39;importazione nell&#39;AEM utilizzando [gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+Se necessario, puoi scaricare il [modello di modulo adattivo](assets/peak-application-template.zip) e importarlo in AEM utilizzando [Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 
 ## Passaggi successivi
 

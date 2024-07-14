@@ -19,17 +19,17 @@ ht-degree: 0%
 
 # Estensibilità dell’interfaccia utente AEM
 
-Adobe Experience Manager (AEM) offre una potente interfaccia utente per la creazione di esperienze digitali. Per personalizzare ed estendere l’interfaccia utente, Adobe ha introdotto App Builder. Questo strumento permette agli sviluppatori di migliorare l’esperienza utente senza ricorrere a codifiche complesse tramite JavaScript e React.
+Adobe Experience Manager (AEM) offre una potente interfaccia utente per la creazione di esperienze digitali. Per personalizzare ed estendere l’interfaccia utente, Adobe ha introdotto App Builder. Questo strumento consente agli sviluppatori di migliorare l’esperienza utente senza ricorrere a codifiche complesse utilizzando JavaScript e React.
 
 App Builder fornisce un livello di implementazione per la creazione di estensioni associate per definire correttamente i punti di estensione nell’AEM. App Builder si integra perfettamente con l’AEM, consentendo l’anteprima e il test in tempo reale. L’implementazione delle modifiche all’AEM è rapida e semplice. Utilizzando App Builder, gli sviluppatori risparmiano tempo e fatica, consentendo una rapida prototipazione e collaborazione con le parti interessate.
 
 ## Sviluppare un’estensione dell’interfaccia utente dell’AEM
 
-Le varie interfacce utente di AEM hanno punti di estensione diversi, tuttavia i concetti di base sono gli stessi.
+Le varie interfacce utente dell’AEM hanno punti di estensione diversi, tuttavia i concetti di base sono gli stessi.
 
 I video e le procedure guidate forniti di seguito mostrano l’utilizzo di un’estensione della Console Frammenti di contenuto per illustrare varie attività. Tuttavia, è importante notare che i concetti descritti possono essere applicati a tutte le estensioni dell’interfaccia utente dell’AEM.
 
-1. [Creare un progetto Adobe Developer Console](./adobe-developer-console-project.md)
+1. [Creazione di un progetto Adobe Developer Console](./adobe-developer-console-project.md)
 1. [Inizializzare un’estensione](./app-initialization.md)
 1. [Registrare un&#39;estensione](./extension-registration.md)
 1. Implementare un punto di estensione
@@ -45,4 +45,4 @@ I video e le procedure guidate forniti di seguito mostrano l’utilizzo di un’
 
 ## Documentazione di Adobe Developer
 
-Adobe Developer contiene informazioni per gli sviluppatori sull’estensibilità dell’interfaccia utente dell’AEM. Rivedi il [Contenuto Adobe Developer per ulteriori dettagli tecnici](https://developer.adobe.com/uix/docs/).
+Adobe Developer contiene informazioni per gli sviluppatori sull’estensibilità dell’interfaccia utente dell’AEM. Rivedi il contenuto di [Adobe Developer per ulteriori dettagli tecnici](https://developer.adobe.com/uix/docs/).

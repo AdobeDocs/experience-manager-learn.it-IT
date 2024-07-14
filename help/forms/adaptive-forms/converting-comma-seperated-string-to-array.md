@@ -27,14 +27,14 @@ Un passaggio di processo viene utilizzato in un flusso di lavoro AEM quando si d
 
 Il formato dei dati inviati è il seguente. Il valore dell&#39;elemento businessUnits è una stringa separata da virgole che deve essere convertita in una matrice di stringa.
 
-![submit-data](assets/submitted-data-string.png)
+![dati inviati](assets/submitted-data-string.png)
 
 I dati di input per il resto dell’endpoint associato al modello dati del modulo prevedono un array di stringhe come mostrato in questa schermata. Il codice personalizzato nel passaggio del processo converte i dati inviati nel formato corretto.
 
 ![fdm-string-array](assets/string-array-fdm.png)
 
 Passiamo il percorso dell’oggetto JSON e il nome dell’elemento al passaggio del processo. Il codice nel passaggio del processo sostituisce i valori separati da virgola dell’elemento in una matrice di stringhe.
-![passaggio del processo](assets/create-string-array.png)
+![passaggio-processo](assets/create-string-array.png)
 
 >[!NOTE]
 >

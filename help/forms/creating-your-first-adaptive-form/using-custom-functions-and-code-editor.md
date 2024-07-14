@@ -21,7 +21,7 @@ ht-degree: 0%
 
 In questa parte utilizzeremo le funzioni personalizzate e l’editor di codice per creare regole aziendali.
 
-hai già installato [ClientLib con funzione personalizzata](assets/client-libs-and-logo.zip) precedenti in questa esercitazione.
+hai già installato [ClientLib con funzione personalizzata](assets/client-libs-and-logo.zip) in questa esercitazione.
 
 In genere, una libreria client è costituita da file CSS e JavaScript. Questa libreria client contiene un file JavaScript che espone una funzione per popolare i valori dell’elenco a discesa.
 

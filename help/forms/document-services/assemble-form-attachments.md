@@ -26,16 +26,16 @@ All’invio del modulo, assembla gli allegati del modulo per generare un unico P
 
 ## Crea un componente OSGi che implementa l’interfaccia WorkflowProcess
 
-Crea un componente OSGi che implementa [interfaccia com.adobe.granite.workflow.exec.WorkflowProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html). Il codice di questo componente può essere associato al componente della fase del processo nel flusso di lavoro AEM. Il metodo execute dell’interfaccia com.adobe.granite.workflow.exec.WorkflowProcess è implementato in questo componente.
+Creare un componente OSGi che implementa l&#39;interfaccia [com.adobe.granite.workflow.exec.WorkflowProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html). Il codice di questo componente può essere associato al componente della fase del processo nel flusso di lavoro AEM. Il metodo execute dell’interfaccia com.adobe.granite.workflow.exec.WorkflowProcess è implementato in questo componente.
 
 Quando un modulo adattivo viene inviato per attivare un flusso di lavoro AEM, i dati inviati vengono memorizzati nel file specificato nella cartella del payload. Ad esempio, questo è il file di dati inviato. È necessario assemblare gli allegati specificati sotto il tag idcard e bankstatements.
-![submit-data](assets/submitted-data.JPG).
+![dati inviati](assets/submitted-data.JPG).
 
 ### Ottieni i nomi dei tag
 
 L’ordine degli allegati viene specificato come argomenti delle fasi del processo nel flusso di lavoro, come illustrato nella schermata seguente. Qui stiamo assemblando gli allegati aggiunti al campo idcard seguito da bankstatement
 
-![passaggio del processo](assets/process-step.JPG)
+![passaggio-processo](assets/process-step.JPG)
 
 Il frammento di codice seguente estrae i nomi degli allegati dagli argomenti del processo
 
@@ -45,7 +45,7 @@ String  []attachmentNames  = arg2.get("PROCESS_ARGS","string").toString().split(
 
 ### Crea DDX dai nomi degli allegati
 
-Quindi è necessario creare [XML descrizione documento (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) documento utilizzato dal servizio Assembler per assemblare i documenti. Di seguito è riportato il DDX creato dagli argomenti del processo. L&#39;elemento NoForms consente di appiattire i documenti basati su XFA prima che vengano assemblati. Si noti che gli elementi di origine PDF sono disposti nell&#39;ordine corretto specificato negli argomenti del processo.
+È quindi necessario creare il documento [Document Description XML (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) utilizzato dal servizio Assembler per assemblare i documenti. Di seguito è riportato il DDX creato dagli argomenti del processo. L&#39;elemento NoForms consente di appiattire i documenti basati su XFA prima che vengano assemblati. Si noti che gli elementi di origine PDF sono disposti nell&#39;ordine corretto specificato negli argomenti del processo.
 
 ![ddx-xml](assets/ddx.PNG)
 
@@ -130,19 +130,19 @@ session.save();
 
 Di seguito è riportata la struttura delle cartelle del payload dopo l’assemblaggio e l’archiviazione degli allegati del modulo.
 
-![struttura del payload](assets/payload-structure.JPG)
+![struttura-payload](assets/payload-structure.JPG)
 
 ### Per utilizzare questa funzionalità sul server AEM
 
-* Scarica il file [Assembla modulo allegati modulo](assets/assemble-form-attachments-af.zip) al sistema locale.
-* Importa il modulo da[Forms E Documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) pagina.
-* Scarica [workflow](assets/assemble-form-attachments.zip) e importare in AEM utilizzando Gestione pacchetti.
-* Scarica il file [bundle personalizzato](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
-* Distribuire e avviare il bundle utilizzando [console web](http://localhost:4502/system/console/bundles)
+* Scarica il [modulo Assembla allegati modulo](assets/assemble-form-attachments-af.zip) nel sistema locale.
+* Importa il modulo dalla pagina [Forms And Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Scarica [workflow](assets/assemble-form-attachments.zip) e importa in AEM utilizzando Gestione pacchetti.
+* Scarica il [bundle personalizzato](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
+* Distribuisci e avvia il bundle utilizzando la [console Web](http://localhost:4502/system/console/bundles)
 * Puntare il browser a [Modulo AssembleAttachments](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
 * Aggiungere un allegato nel documento ID e un paio di documenti PDF alla sezione rendiconti bancari
 * Invia il modulo per attivare il flusso di lavoro
-* Controlla il di [cartella payload in crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) per il pdf assemblato
+* Controlla la cartella [payload del flusso di lavoro nella crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) per il PDF assemblato
 
 >[!NOTE]
 > Se hai attivato il logger per il bundle personalizzato, il DDX e il file assemblato vengono scritti nella cartella dell’installazione dell’AEM.

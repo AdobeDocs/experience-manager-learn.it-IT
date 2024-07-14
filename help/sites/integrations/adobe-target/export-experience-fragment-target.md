@@ -38,18 +38,18 @@ Scopri come esportare Frammenti di esperienza AEM come offerte Adobe Target.
 
 Se si esporta un frammento di esperienza in Adobe Target senza le autorizzazioni corrette in Adobe Admin Console, si verifica il seguente errore nel servizio di authoring dell’AEM:
 
-![Errore nell’interfaccia utente dell’API di Target](assets/error-target-offer.png)
+![Errore nell&#39;interfaccia utente API di Target](assets/error-target-offer.png)
 
-... e i seguenti messaggi di registro in `aemerror` registro:
+... e i seguenti messaggi di registro nel registro `aemerror`:
 
-![Errore della console API di Target](assets/target-console-error.png)
+![Errore console API di Target](assets/target-console-error.png)
 
 #### Risoluzione
 
-1. Accedi a [Admin Console](https://adminconsole.adobe.com/) con diritti amministrativi per il profilo di prodotto Adobe Target utilizzato, ma con l’integrazione AEM
+1. Accedi a [Admin Console](https://adminconsole.adobe.com/) con diritti di amministratore per il profilo di prodotto Adobe Target utilizzato ma con integrazione AEM
 2. Seleziona __Prodotti > Adobe Target > Profilo prodotto__
-3. Sotto __Integrazioni__ , seleziona l’integrazione per l’ambiente AEM as a Cloud Service (come progetto Adobe Developer).
-4. Assegna __Editor__ o __Approvatore__ ruolo
+3. Nella scheda __Integrazioni__, seleziona l&#39;integrazione per il tuo ambiente AEM as a Cloud Service (con lo stesso nome del progetto Adobe Developer).
+4. Assegna la mansione __Editor__ o __Approvatore__
 
    ![Errore API di Target](assets/target-permissions.png)
 
@@ -57,4 +57,4 @@ L’aggiunta delle autorizzazioni corrette all’integrazione Adobe Target dovre
 
 ## Collegamenti di supporto
 
-+ [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
++ [Debugger Adobe Experience Cloud - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)

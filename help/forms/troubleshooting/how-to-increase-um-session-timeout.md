@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Come aumentare il timeout della sessione di messaggistica unificata
 
-*Questo video illustra come aumentare il timeout della sessione di messaggistica unificata.*
+*Questo video illustra il processo di aumento del timeout della sessione di messaggistica unificata.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335503?quality=12&learn=on)

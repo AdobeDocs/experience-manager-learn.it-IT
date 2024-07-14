@@ -21,7 +21,7 @@ ht-degree: 0%
 # Creare un token web JSON
 
 I token web JSON sono un metodo RFC 7519 aperto e standard di settore per rappresentare le richieste in modo sicuro tra due parti. In questo esempio sono state utilizzate le librerie JWT.io per generare il codice JWT.
-Le credenziali del servizio scaricate nel passaggio precedente contengono la chiave privata nel formato PKCS#1.Per estrarre la chiave privata da questa stringa abbiamo utilizzato [BouncyCastle](https://www.bouncycastle.org/) librerie. Le librerie di crittografia che fanno parte di Java non supportano il formato PKCS#1.
+Le credenziali del servizio scaricate nel passaggio precedente contengono la chiave privata nel formato PKCS#1.Per estrarre la chiave privata da questa stringa sono state utilizzate [Librerie BouncyCastle](https://www.bouncycastle.org/). Le librerie di crittografia che fanno parte di Java non supportano il formato PKCS#1.
 
 Per generare il codice JWT è stato utilizzato il seguente codice:
 

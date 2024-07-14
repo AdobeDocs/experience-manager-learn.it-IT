@@ -28,4 +28,4 @@ Timewarp è una funzione di Adobe Experience Manager Sites che offre agli autori
 
 ## Altre risorse {#more-resources}
 
-* [Utilizzo delle versioni di pagina - Timewarp](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/page-versions.html)
+* [Utilizzo delle versioni delle pagine - Timewarp](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/page-versions.html)

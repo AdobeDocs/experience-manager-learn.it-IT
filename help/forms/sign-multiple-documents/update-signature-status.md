@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Il flusso di lavoro UpdateSignatureStatus viene attivato quando l’utente ha completato la cerimonia di firma. Di seguito è riportato il flusso di lavoro
 
-![main-workflow](assets/update-signature.PNG)
+![flusso di lavoro principale](assets/update-signature.PNG)
 
 Aggiorna stato firma è un passaggio del processo personalizzato.
 Il motivo principale per l’implementazione della fase di processo personalizzata è l’estensione di un flusso di lavoro AEM. Di seguito è riportato il codice personalizzato utilizzato per aggiornare lo stato della firma.

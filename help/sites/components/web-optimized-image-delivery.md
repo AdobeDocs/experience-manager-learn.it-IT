@@ -1,6 +1,6 @@
 ---
 title: Consegna di immagini ottimizzate per il web
-description: Scopri come abilitare la consegna di immagini ottimizzate per il web sui siti AEM as a Cloud Service utilizzando i Componenti core AEM.
+description: Scopri come abilitare la consegna di immagini ottimizzate per il web sui siti di AEM as a Cloud Service utilizzando i componenti core AEM.
 version: Cloud Service
 feature: Core Components, Configuring, Editable Templates
 topic: Performance, Administration
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Consegna di immagini ottimizzate per il web
 
-Scopri come abilitare la consegna di immagini ottimizzate per il web sui siti AEM as a Cloud Service utilizzando i Componenti core AEM.
+Scopri come abilitare la consegna di immagini ottimizzate per il web sui siti di AEM as a Cloud Service utilizzando i componenti core AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346064?quality=12&learn=on)

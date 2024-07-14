@@ -37,6 +37,6 @@ L’app desktop Adobe Dynamic Media Classic è compatibile con i seguenti sistem
 
 ## Materiali di supporto
 
-* [Documentazione dell’applicazione desktop Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
-* [Domande frequenti su Dynamic Medie Adobe](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
+* [Documentazione dell&#39;applicazione desktop Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
+* [Domande frequenti su Dynamic Medie di Adobe](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
 * [Scarica l&#39;app Dynamic Media Classic Desktop](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)

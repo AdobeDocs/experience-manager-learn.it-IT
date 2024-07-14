@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Tutorial in più parti che illustra i passaggi necessari per creare un componente di riepilogo per la revisione e la modifica dei dati del modulo prima dell’invio.
 
-![review-form-data](assets/review-form-data.png)
+![dati-modulo-revisione](assets/review-form-data.png)
 
 Per seguire questa esercitazione, si consiglia di installare quanto segue:
 

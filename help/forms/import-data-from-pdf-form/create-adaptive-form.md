@@ -30,9 +30,9 @@ Utilizza lo schema per creare il modulo adattivo
 * Fai clic su File | Proprietà modulo | Anteprima.
 * Fai clic su Genera dati di anteprima.
 * Fai clic su Genera.
-* Fornisci un nome file significativo, ad esempio `form-data.xml`
+* Specificare un nome di file significativo, ad esempio `form-data.xml`
 
-È possibile utilizzare uno qualsiasi degli strumenti online gratuiti per [genera XSD](https://www.freeformatter.com/xsd-generator.html) dai dati xml generati nel passaggio precedente.
+Puoi utilizzare uno degli strumenti online gratuiti per [generare XSD](https://www.freeformatter.com/xsd-generator.html) dai dati xml generati nel passaggio precedente.
 
 Crea un modulo adattivo basato sullo schema del passaggio precedente.
 
@@ -40,12 +40,12 @@ Crea un modulo adattivo basato sullo schema del passaggio precedente.
 >Si consiglia sempre di esaminare i dati generati all’invio del modulo adattivo. Questo ti darà una buona idea del formato XML dei dati che devono essere uniti al modulo adattivo.
 
 Dati inviati da un modulo adattivo
-![submit-data](./assets/af-submitted-data.png)
+![dati inviati](./assets/af-submitted-data.png)
 
 Dati esportati dal PDF
-![export-data](./assets/exported-data.png)
+![dati-esportati](./assets/exported-data.png)
 
-Estrarre i dati esportati dai **_topSubform_** viene mantenuto un nodo con i namespace appropriati per unire correttamente i dati con il modulo adattivo.
+Dai dati esportati, dovrai estrarre il nodo **_topmostSubform_** con i namespace appropriati conservati per unire correttamente i dati con il modulo adattivo.
 
 ## Passaggi successivi
 

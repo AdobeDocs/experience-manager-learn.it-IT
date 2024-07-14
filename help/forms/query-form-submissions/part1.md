@@ -32,7 +32,7 @@ Gli autori del modulo possono contrassegnare questi tipi di campi come ricercabi
 
 I campi sono stati estesi creando la seguente struttura
 
-![extended-fields](assets/extend-component.png)
+![campi estesi](assets/extend-component.png)
 
 Di seguito è riportato il contenuto del file .content.xml
 

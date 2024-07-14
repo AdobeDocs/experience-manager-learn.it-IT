@@ -29,4 +29,4 @@ Scopri le impostazioni avanzate del connettore avanzato Workfront per AEM e come
 
 >[!VIDEO](https://video.tv.adobe.com/v/340397?quality=12&learn=on)
 
-_Parte quarta di a [serie di esperti in quattro parti sul connettore avanzato Workfront per Experience Manager](./overview.md)_
+_Parte quattro di una serie di esperti in [quattro parti su Workfront, ad Experience Manager connettore avanzato](./overview.md)_

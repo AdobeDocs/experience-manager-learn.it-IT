@@ -25,7 +25,7 @@ Al completamento di questo corso avrai imparato quanto segue.
 
 * Crea modello dati modulo basato su RDBMS
 * Crea associazione tra 2 entità
-* Popolare la tabella con i dati restituiti da _ottenere_ servizio del modello dati modulo
+* Popola la tabella con i dati restituiti dal servizio _get_ del modello dati modulo
 * Usa attributo di richiesta del modello dati modulo
 
 Il video seguente offre una panoramica del corso

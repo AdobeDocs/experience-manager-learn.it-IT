@@ -20,13 +20,13 @@ ht-degree: 0%
 
 # Estrarre i dati associati e salvarli in una variabile stringa
 
-Questa funzionalità consente di includere i dati inviati nel corpo dell’e-mail. Il passaggio del processo personalizzato estrae il **dati associati** dall’invio del modulo adattivo e compila una variabile di tipo stringa con i dati. È quindi possibile utilizzare questa variabile di stringa per inserire i dati nel modello di posta elettronica.
+Questa funzionalità consente di includere i dati inviati nel corpo dell’e-mail. Il passaggio del processo personalizzato estrae i **dati associati** dall&#39;invio del modulo adattivo e popola una variabile di tipo stringa con i dati. È quindi possibile utilizzare questa variabile di stringa per inserire i dati nel modello di posta elettronica.
 La schermata seguente mostra gli argomenti da passare al passaggio del processo personalizzato
-![passaggio del processo](assets/save-submitted-data-string.png)
+![passaggio-processo](assets/save-submitted-data-string.png)
 
 Di seguito sono riportati i parametri
 
-* `data.xml` - Il file contenente i dati inviati . Se il formato è in json, il nome del file può essere data.json
+* `data.xml` - File con i dati inviati. Se il formato è in json, il nome del file può essere data.json
 
 Il passaggio del processo personalizzato estrae quindi i dati associati e li memorizza nella variabile submitDataString definita nel flusso di lavoro
 

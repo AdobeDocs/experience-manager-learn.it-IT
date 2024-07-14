@@ -24,16 +24,16 @@ Project Masters semplifica notevolmente la gestione di utenti e team con [!DNL A
 
 >[!VIDEO](https://video.tv.adobe.com/v/17740?quality=12&learn=on)
 
-Ora gli amministratori possono creare un **[!DNL Master Project]** e assegnare gli utenti a ruoli/autorizzazioni come parte di un team di progetto. I progetti possono essere creati da un progetto principale ed ereditano automaticamente l’iscrizione Team. Questo offre diversi vantaggi:
+Gli amministratori ora possono creare un **[!DNL Master Project]** e assegnare gli utenti a ruoli/autorizzazioni come parte di un team di progetto. I progetti possono essere creati da un progetto principale ed ereditano automaticamente l’iscrizione Team. Questo offre diversi vantaggi:
 
 * Riutilizzare i team esistenti in più progetti
 * Accelera la creazione dei progetti in quanto non è necessario ricreare i team a mano
 * Gestisci l’iscrizione al Team da una posizione centrale; eventuali aggiornamenti ai Team vengono ereditati automaticamente dai Progetti
 * evita la creazione di ACL duplicati che possono causare problemi di prestazioni
 
-[!DNL Master Projects] può essere creato in [!UICONTROL Master] cartella in [!UICONTROL Progetti AEM]. Una volta creato, il progetto principale viene visualizzato come opzione insieme ai modelli disponibili nella procedura guidata al momento della creazione di nuovi progetti.
+È possibile creare [!DNL Master Projects] nella cartella [!UICONTROL Masters] in [!UICONTROL Progetti AEM]. Una volta creato, il progetto principale viene visualizzato come opzione insieme ai modelli disponibili nella procedura guidata al momento della creazione di nuovi progetti.
 
-[!DNL Project Masters] URL (istanza Autore AEM locale): [http://localhost:4502/projects.html/content/projects/masters](http://localhost:4502/projects.html/content/projects/masters)
+URL [!DNL Project Masters] (istanza Autore AEM locale): [http://localhost:4502/projects.html/content/projects/masters](http://localhost:4502/projects.html/content/projects/masters)
 
 ## Elimina [!DNL Project Masters]
 
@@ -49,8 +49,8 @@ Per visualizzare i progetti principali inattivi, attiva/disattiva il pulsante di
 
 ## Comprendere [!DNL Project Masters]
 
-![Visualizzazione tecnica schemi di progetto](assets/use-project-masters/project-masters-architecture.png)
+![Visualizzazione tecnica progetti principali](assets/use-project-masters/project-masters-architecture.png)
 
-[!DNL Project Masters] definire un insieme di gruppi di utenti AEM (proprietari, editor e osservatori) e consentire ai progetti derivati di fare riferimento e riutilizzare tali gruppi di utenti definiti a livello centrale.
+[!DNL Project Masters] consente di definire un insieme di gruppi di utenti AEM (proprietari, editor e osservatori) e di consentire ai progetti derivati di fare riferimento e riutilizzare tali gruppi di utenti definiti a livello centrale.
 
-Questo riduce il numero complessivo di gruppi di utenti richiesti nell’AEM. Prima di [!DNL Project Masters]In ogni progetto sono stati creati 3 gruppi di utenti con le ACE corrispondenti per applicare il rilascio delle autorizzazioni. Pertanto, 100 progetti hanno prodotto 300 gruppi di utenti. Project Masters consente a un numero qualsiasi di progetti di riutilizzare gli stessi tre gruppi, supponendo che l&#39;appartenenza condivisa sia allineata ai requisiti aziendali del progetto.
+Questo riduce il numero complessivo di gruppi di utenti richiesti nell’AEM. Prima di [!DNL Project Masters], ogni progetto creava 3 gruppi di utenti con le ACE associate per applicare il rilascio delle autorizzazioni. Di conseguenza, 100 progetti generavano 300 gruppi di utenti. Project Masters consente a un numero qualsiasi di progetti di riutilizzare gli stessi tre gruppi, supponendo che l&#39;appartenenza condivisa sia allineata ai requisiti aziendali del progetto.

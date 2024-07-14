@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Come analizzare i problemi correlati a SAML
 
-*Questo video illustra i passaggi necessari per indagare i problemi relativi ai SAML nell’AEM.*
+*Questo video illustra i passaggi necessari per analizzare i problemi correlati a SAML in AEM.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335466?quality=12&learn=on)

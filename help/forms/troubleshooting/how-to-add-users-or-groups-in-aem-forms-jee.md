@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # Aggiungere utenti e gruppi in AEM JEE
 
-*Questo video illustra il processo di aggiunta di utenti e gruppi in Gestione utente.*
+*Questo video illustra il processo di aggiunta di utenti e gruppi in Gestione utenti.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335485?quality=12&learn=on)

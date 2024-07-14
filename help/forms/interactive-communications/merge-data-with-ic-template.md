@@ -162,22 +162,22 @@ String params = arg2.get("PROCESS_ARGS","string").toString();
 
 Per eseguire il test sul server, attieniti alla seguente procedura:
 
-* [Configura il servizio di posta Day CQ.](https://helpx.adobe.com/experience-manager/6-5/communities/using/email.html) Questo è necessario per inviare e-mail con il documento generato come allegato.
+* [Configura il servizio di posta Day CQ.](https://helpx.adobe.com/experience-manager/6-5/communities/using/email.html) Questo è necessario per inviare un messaggio e-mail con il documento generato come allegato.
 * [Distribuire il bundle per lo sviluppo con l’utente del servizio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * Assicurati di aver aggiunto la seguente voce nella configurazione del servizio User Mapper di Apache Sling Service
-* **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
+* **Sviluppo con ServiceUser.core:getformsresourceresolver=fd-service**
 * [Scarica e decomprimi nel file system le risorse correlate a questo articolo](assets/prefillservice.zip)
-* [Importa i seguenti pacchetti utilizzando Gestione pacchetti AEM](http://localhost:4502/crx/packmgr/index.jsp)
+* [Importare i pacchetti seguenti utilizzando Gestione pacchetti AEM](http://localhost:4502/crx/packmgr/index.jsp)
    1. beneficiaryconfirmationic.zip
    2. changeofbeneficiaryform.zip
    3. generatebeneficiaryworkflow.zip
-* [Distribuisci quanto segue utilizzando la console web AEM Felix](http://localhost:4502/system/console/bundles)
+* [Distribuisci quanto segue utilizzando la console Web AEM Felix](http://localhost:4502/system/console/bundles)
 
    * GenerateIC.GenerateIC.core-1.0-SNAPSHOT.jar. Questo bundle contiene il codice menzionato in questo articolo.
 
 * [Apri ChangeOfBeneficiaryForm](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled)
 * Assicurati che il modulo adattivo sia configurato per l’invio al flusso di lavoro AEM come mostrato di seguito
   ![immagine](assets/generateic.PNG)
-* [Configura il modello di flusso di lavoro.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)Assicurati che la fase del processo e i componenti e-mail di invio siano configurati in base all’ambiente in uso
-* [Visualizzare in anteprima ChangeOfBeneficiaryForm.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) Inserisci alcuni dettagli e invia
+* [Configura il modello di flusso di lavoro.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ChangesToBeneficiary.html)Verifica che il passaggio del processo e i componenti e-mail siano configurati in base al tuo ambiente
+* [Anteprima di ChangeOfBeneficiaryForm.](http://localhost:4502/content/dam/formsanddocuments/changebeneficiary/jcr:content?wcmmode=disabled) Compila alcuni dettagli e invia
 * Il flusso di lavoro deve essere richiamato e il documento del canale di stampa IC deve essere inviato al destinatario specificato nel componente Invia e-mail come allegato

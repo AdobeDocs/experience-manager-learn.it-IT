@@ -25,13 +25,13 @@ Scopri la modernizzazione dell’archivio, i contenuti mutabili e immutabili, la
 
 ## Strumento Repository Modernizer
 
-![Repository Modernizer](./assets/repository-modernizer.png)
+![Modernizzatore archivio](./assets/repository-modernizer.png)
 
-Come parte del refactoring della base di codice, utilizza [Strumento Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) per ristrutturare una base di codice 6.x in una struttura più moderna.
+Come parte del refactoring della base di codice, utilizza lo strumento [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) per ristrutturare una base di codice 6.x in una struttura più moderna.
 
 ## Attività chiave
 
-* Utilizza il [Adobe I/O Repository Modernizer](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationrepository-modernizer) strumento per ristrutturare un progetto in modo che corrisponda alla struttura prevista di un progetto as a Cloud Service dell’AEM.
+* Utilizza lo strumento [Adobe I/O Repository Modernizer](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationrepository-modernizer) per ristrutturare un progetto in modo che corrisponda alla struttura prevista di un progetto AEM as a Cloud Service.
 * Regola e correggi manualmente eventuali errori di generazione nella base di codice aggiornata.
-* Configurare un [ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it) e implementa la base di codice aggiornata. Eseguire un&#39;iterazione finché il progetto non si trova in uno stato stabile.
-* Distribuisci la base di codice aggiornata in un ambiente di sviluppo as a Cloud Service per AEM e continua a convalidarla.
+* Configura un [ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it) e distribuisci la base di codice aggiornata. Eseguire un&#39;iterazione finché il progetto non si trova in uno stato stabile.
+* Distribuisci la base di codice aggiornata in un ambiente di sviluppo AEM as a Cloud Service e continua a convalidarla.

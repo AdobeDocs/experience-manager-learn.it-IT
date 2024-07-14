@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Esecuzione dello strumento di rimozione dei processi dalla riga di comando
 
-*Questo video illustra i passaggi necessari per eseguire lo strumento di rimozione dei processi dalla riga di comando.*
+*Questo video illustra i passaggi necessari per eseguire lo strumento di eliminazione dei processi dalla riga di comando.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335508?quality=12&learn=on)

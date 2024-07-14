@@ -18,19 +18,19 @@ ht-degree: 4%
 
 # Utilizzo di Multi Site Manager {#using-multi-site-manager-with-aem-sites}
 
-Le interfacce Panoramica Live Copy e Gestione configurazione blueprint sono interfacce di creazione AEM con cui lavorare [Gestore multisito](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html?lang=it) in Adobe Experience Manager Sites.
+Panoramica Live Copy e Gestione configurazione blueprint sono interfacce di creazione AEM per l&#39;utilizzo di [Multi Site Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html?lang=it) in Adobe Experience Manager Sites.
 
 ## Panoramica Live Copy {#live-copy-overview}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17054?quality=12&learn=on)
 
-*Panoramica Live Copy è un’interfaccia utente touch utilizzata per la gestione delle Live Copy e delle rispettive blueprint. Questa funzione, introdotta in AEM 6.3, sostituisce il Centro controllo blueprint dell’interfaccia classica.*
+*Panoramica Live Copy è un&#39;interfaccia utente touch utilizzata per la gestione delle Live Copy e delle relative blueprint. Questa funzione, introdotta in AEM 6.3, sostituisce il Centro controllo blueprint dell&#39;interfaccia classica.*
 
 ## Gestione configurazione blueprint - Interfaccia utente touch {#blueprint-config-mgr}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17056?quality=12&learn=on)
 
-*AEM 6.3 introduce un’interfaccia utente touch per gestire le configurazioni di blueprint da utilizzare in Multi Site Manager.*
+*AEM 6.3 introduce un&#39;interfaccia utente touch per gestire le configurazioni blueprint da utilizzare in Multi Site Manager.*
 
 ## Risorse aggiuntive {#additional-resources}
 

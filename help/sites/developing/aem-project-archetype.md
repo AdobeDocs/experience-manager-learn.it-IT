@@ -20,7 +20,7 @@ ht-degree: 10%
 
 # [!DNL AEM Project Archetype] {#aem-project-archetype}
 
-Il Progetto AEM contiene tutto il codice e le configurazioni necessari per un&#39;implementazione. Il [!DNL AEM Project Archetype] crea un progetto Adobe Experience Manager minimo basato sulle best practice, da usare come punto di partenza per i progetti AEM.
+Il Progetto AEM contiene tutto il codice e le configurazioni necessari per un&#39;implementazione. [!DNL AEM Project Archetype] crea un progetto Adobe Experience Manager minimo basato sulle best practice come punto di partenza per i progetti AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32550?quality=12&learn=on)
 

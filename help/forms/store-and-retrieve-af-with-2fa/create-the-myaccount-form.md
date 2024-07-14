@@ -20,22 +20,22 @@ ht-degree: 0%
 
 # Creare MyAccountForm
 
-Il modulo **ModuloAccount** viene utilizzato per recuperare il modulo adattivo parzialmente completato dopo che l’utente ha verificato l’id applicazione e il numero di cellulare associato all’id applicazione.
+Il modulo **ModuloAccountPersonale** viene utilizzato per recuperare il modulo adattivo parzialmente completato dopo che l&#39;utente ha verificato l&#39;ID applicazione e il numero di cellulare associato all&#39;ID applicazione.
 
 ![modulo del mio account](assets/6599.JPG)
 
-Quando l’utente immette l’ID applicazione e fa clic su **FetchApplication** , il numero di cellulare associato all’ID applicazione viene recuperato dal database utilizzando l’operazione Get del modello dati del modulo.
+Quando l&#39;utente immette l&#39;ID applicazione e fa clic sul pulsante **FetchApplication**, il numero di cellulare associato all&#39;ID applicazione viene recuperato dal database utilizzando l&#39;operazione Get del modello dati del modulo.
 
-Questo modulo utilizza la chiamata POST del modello dati del modulo per verificare il numero di cellulare utilizzando OTP. L’azione di invio del modulo viene attivata in seguito alla verifica del numero di cellulare eseguita correttamente utilizzando il seguente codice. Stiamo attivando l’evento clic del pulsante di invio denominato **submitForm**.
+Questo modulo utilizza la chiamata POST del modello dati del modulo per verificare il numero di cellulare utilizzando OTP. L’azione di invio del modulo viene attivata in seguito alla verifica del numero di cellulare eseguita correttamente utilizzando il seguente codice. Stiamo attivando l&#39;evento clic del pulsante di invio denominato **submitForm**.
 
 >[!NOTE]
-> Dovrai fornire la chiave API e i valori del segreto API specifici per il tuo [Nexmo](https://dashboard.nexmo.com/) account nei campi appropriati di MyAccountForm
+> Dovrai fornire la chiave API e i valori del segreto API specifici per il tuo account [Nexmo](https://dashboard.nexmo.com/) nei campi appropriati di MyAccountForm
 
 ![trigger-submit](assets/trigger-submit.JPG)
 
 
 
-Questo modulo è associato a un’azione di invio personalizzata che inoltra l’invio del modulo al servlet installato su **/bin/renderaf**
+Questo modulo è associato a un&#39;azione di invio personalizzata che inoltra l&#39;invio del modulo al servlet installato su **/bin/renderaf**
 
 ```java
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/renderaf",null,null);
@@ -46,9 +46,9 @@ Il codice nel servlet installato su **/bin/renderaf** inoltra la richiesta di es
 
 * MyAccountForm può essere [scaricato da qui](assets/my-account-form.zip)
 
-* I moduli di esempio si basano su [modello di modulo adattivo personalizzato](assets/custom-template-with-page-component.zip) che deve essere importato nell&#39;AEM affinché i moduli di esempio vengano riprodotti correttamente.
+* I moduli di esempio si basano su [modello di modulo adattivo personalizzato](assets/custom-template-with-page-component.zip) che deve essere importato in AEM affinché il rendering dei moduli di esempio sia corretto.
 
-* [Gestore di invio personalizzato](assets/custom-submit-my-account-form.zip) associato all’invio MyAccountForm deve essere importato in AEM.
+* [È necessario importare in AEM il gestore di invio personalizzato](assets/custom-submit-my-account-form.zip) associato all&#39;invio MyAccountForm.
 
 ## Passaggi successivi
 

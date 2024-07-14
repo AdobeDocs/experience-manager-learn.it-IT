@@ -1,6 +1,6 @@
 ---
 title: Creare un progetto Adobe Developer Console per l’estensibilità dell’interfaccia utente dell’AEM
-description: Scopri come creare un progetto della console Adobe Developer che ne definisca l’accesso ad altri servizi Adobe e ne gestisca le implementazioni.
+description: Scopri come creare un progetto Adobe Developer Console che ne definisca l’accesso ad altri servizi Adobe e ne gestisca le implementazioni.
 version: Cloud Service
 feature: Developer Tools
 topic: Development
@@ -20,14 +20,14 @@ ht-degree: 0%
 
 ---
 
-# Creazione di un progetto nella console Adobe Developer
+# Creazione di un progetto Adobe Developer Console
 
-Crea un progetto Adobe Developer Console che ne definisca l’accesso ad altri servizi Adobe e ne gestisca le implementazioni.
+Crea un progetto Adobe Developer Console che ne definisce l’accesso ad altri servizi Adobe e ne gestisce le implementazioni.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3412875?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
-> Il video precedente illustra l’utilizzo di un’estensione della Console Frammenti di contenuto per illustrare la creazione di un progetto nella console Adobe Developer. Tuttavia, è importante notare che i concetti descritti possono essere applicati a tutte le estensioni dell’interfaccia utente dell’AEM.
+> Il video precedente illustra l’utilizzo di un’estensione della Console Frammenti di contenuto per illustrare la creazione di un progetto Adobe Developer Console. Tuttavia, è importante notare che i concetti descritti possono essere applicati a tutte le estensioni dell’interfaccia utente dell’AEM.
 
-Consulta la documentazione di Adobe Developer per un [procedura dettagliata per la creazione di un progetto Adobe Developer Console](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console).
+Per una [procedura dettagliata sulla creazione di un progetto Adobe Developer Console](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#create-a-project-in-adobe-developer-console), consulta la documentazione di Adobe Developer.

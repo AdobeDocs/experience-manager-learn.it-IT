@@ -1,6 +1,6 @@
 ---
 title: Configurare Asset Share Commons (Condivisione risorse) sull’AEM locale
-description: Materiali per le conoscenze tecniche e funzionali di Assets Share Commons
+description: Materiali per la comprensione funzionale e tecnica di Assets Share Commons
 version: 6.4, 6.5
 topic: Content Management
 feature: Asset Distribution

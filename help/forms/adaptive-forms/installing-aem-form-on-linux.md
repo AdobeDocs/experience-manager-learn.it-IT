@@ -37,12 +37,13 @@ Quando AEM FORMS OSGi o AEM Forms j2EE vengono distribuiti su Linux, è necessar
 * libXext (libreria per estensioni comuni al protocollo X11)
 * libXinerama (estensione X11 che fornisce supporto per l&#39;estensione di un desktop su più schermi. Il nome è un gioco di parole su Cinerama, un formato di film widescreen che utilizzava più proiettori. libXinerama è la libreria che si interfaccia con l&#39;estensione RandR)
 * libXrandr (l&#39;estensione Xinerama è oggi in gran parte obsoleta ed è stata sostituita dall&#39;estensione RandR)
-* libXrender (libreria client di X Rendering Extension) nss-softokn-freebl (Libreria libera per Servizi di sicurezza di rete)
+* libXrender (libreria client di X Rendering Extension)
+nss-softokn-freebl (Libreria libera per i servizi di sicurezza di rete)
 * zlib (libreria di compressione dati generica, priva di brevetto e senza perdita di dati)
 
 Da Red Hat Enterprise Linux 6 in poi, l&#39;edizione a 32 bit di una libreria avrà l&#39;estensione .686, mentre l&#39;edizione a 64 bit avrà .x86_64. Esempio: expat.i686. Prima di RHEL 6, le edizioni a 32 bit avevano l&#39;estensione .i386. Prima di installare le edizioni a 32 bit, accertarsi che siano installate le edizioni a 64 bit più recenti. Se l’edizione a 64 bit di una libreria è precedente alla versione a 32 bit in fase di installazione, viene visualizzato un errore simile al seguente:
 
-0mErrore: Versioni multilib protette: libsepol-2.5-10.el7.x86_64 != libsepol-2.5-6.el7.i686 [0mErrore: sono stati rilevati problemi di versione di più librerie.]
+0mErrore: Versioni multilib protette: libsepol-2.5-10.el7.x86_64 != libsepol-2.5-6.el7.i686 [0mErrore: sono stati rilevati problemi di versione multilib.]
 
 ## Prima installazione
 
@@ -70,29 +71,60 @@ Su Red Hat Enterprise Linux, utilizzare YellowDog Update Modifier (YUM) per eseg
 
 ## Collegamenti simbolici
 
-Inoltre, è necessario creare i symlink libcurl.so, libcrypto.so e libssl.so che puntano rispettivamente alle versioni a 32 bit delle librerie libcurl, libcrypto e libssl. È possibile trovare i file in /usr/lib/ ln -s /usr/lib/libcurl.so.4.5.0 /usr/lib/libcurl.so ln -s /usr/lib/libcrypto.so.1.1.1c /usr/lib/libcrypto.so ln -s /usr/lib/libssl.so.1.1.1c /usr/lib/libssl.so
+Inoltre, è necessario creare i symlink libcurl.so, libcrypto.so e libssl.so che puntano rispettivamente alle versioni a 32 bit delle librerie libcurl, libcrypto e libssl. I file si trovano in /usr/lib/
+ln -s /usr/lib/libcurl.so.4.5.0 /usr/lib/libcurl.so
+ln -s /usr/lib/libcrypto.so.1.1.1c /usr/lib/libcrypto.so
+ln -s /usr/lib/libssl.so.1.1.1c /usr/lib/libssl.so
 
 ## Aggiornamenti al sistema esistente
 
-Durante l’aggiornamento possono verificarsi conflitti tra le architetture x86_64 e i686, ad esempio: Errore: Errore di controllo della transazione: file /lib/ld-2.28.so dall’installazione di glibc-2.28-72.el8.i686 è in conflitto con il file del pacchetto glibc32-2.28-42.1.el8.x86_64
+possono verificarsi conflitti tra le architetture x86_64 e i686 durante gli aggiornamenti, ad esempio:
+Errore: errore di controllo transazione:
+file /lib/ld-2.28.so da installazione di glibc-2.28-72.el8.i686 in conflitto con il file del pacchetto glibc32-2.28-42.1.el8.x86_64
 
-Se riscontri questo problema, disinstalla prima il pacchetto che causa l’infrazione, come in questo caso: rimuovi glibc32-2.28-42.1.el8.x86_64
+In questo caso, disinstalla prima il pacchetto dannoso, come in questo caso:
+rimuovere glibc32-2.28-42.1.el8.x86_64
 
-Detto e fatto, vuoi che le versioni x86_64 e i686 siano esattamente le stesse, come ad esempio da questo output al comando: yum info glibc
+Ciò detto e fatto, si desidera che le versioni x86_64 e i686 siano esattamente le stesse, come ad esempio da questo output al comando:
+glibc informazioni yum
 
-Ultimo controllo scadenza metadati: 0:41:33 fa su Sab 18 Gen 2020 11:37:8:00 EST.
-Pacchetti installati Nome : glibc Versione : 2.28 Versione : 72.el8 Architettura : i686 Dimensione : 13 M Origine : glibc-2.28-72.el8.src.rpm Archivio : @System Da repository : BaseOS Riepilogo : Le librerie GNU libc URL : http://www.gnu.org/software/glibc/ Licenza : LGPLv2+ e LGPLv2+ con eccezioni e GPLv2+ e GPLv2+ con eccezioni e BSD e Inner-Net e ISC e dominio pubblico e GFDL Descrizione: Il pacchetto glibc contiene librerie standard utilizzate da più programmi su di rete. Per risparmiare spazio su disco e : memoria, nonché per semplificare l’aggiornamento, il codice di sistema comune è : mantenuto in un’unica posizione e condiviso tra i programmi. Questo particolare pacchetto : contiene i più importanti set di librerie condivise: la libreria standard C : e la libreria matematica standard. Senza queste due librerie, un : sistema Linux non funzionerà.
+Ultimo controllo scadenza metadati: 0:41:33 fa il 18 gennaio 2020 11:37:08 AM EST.
+Pacchetti installati
+Nome : glibc
+Versione : 2.28
+Versione : 72.el8
+Architettura : i686
+Dimensioni : 13 M
+Source : glibc-2.28-72.el8.src.rpm
+Archivio : @System
+Da repository: BaseOS
+Riepilogo: librerie GNU libc
+URL : http://www.gnu.org/software/glibc/
+Licenza : LGPLv2+ e LGPLv2+ con eccezioni e GPLv2+ e GPLv2+ con eccezioni e BSD e Inner-Net e ISC e di dominio pubblico e GFDL
+Descrizione: il pacchetto glibc contiene librerie standard utilizzate da: più programmi sul sistema. Per risparmiare spazio su disco e : memoria, nonché per semplificare l’aggiornamento, il codice di sistema comune è : mantenuto in un’unica posizione e condiviso tra i programmi. Questo particolare pacchetto : contiene i più importanti set di librerie condivise: la libreria standard C : e la libreria matematica standard. Senza queste due librerie, un : sistema Linux non funzionerà.
 
-Nome : glibc Versione : 2.28 Versione : 72.el8 Architettura : x86_64 Dimensione : 15 M Origine : glibc-2.28-72.el8.src.rpm Archivio : @System Da repository : BaseOS Riepilogo : Le librerie GNU libc URL : http://www.gnu.org/software/glibc/ Licenza : LGPLv2+ e LGPLv2+ con eccezioni e GPLv2+ e GPLv2+ con eccezioni e BSD e Inner-Net e ISC e pubblico dominio e GFDL Descrizione: il pacchetto glibc contiene librerie standard utilizzate da : più programmi sul sistema. Per risparmiare spazio su disco e : memoria, nonché per semplificare l’aggiornamento, il codice di sistema comune è : mantenuto in un’unica posizione e condiviso tra i programmi. Questo particolare pacchetto : contiene i più importanti set di librerie condivise: la libreria standard C : e la libreria matematica standard. Senza queste due librerie, un : sistema Linux non funzionerà.
+Nome : glibc
+Versione : 2.28
+Versione : 72.el8
+Architettura: x86_64
+Dimensioni : 15 M
+Source : glibc-2.28-72.el8.src.rpm
+Archivio : @System
+Da repository: BaseOS
+Riepilogo: librerie GNU libc
+URL : http://www.gnu.org/software/glibc/
+Licenza : LGPLv2+ e LGPLv2+ con eccezioni e GPLv2+ e GPLv2+ con eccezioni e BSD e Inner-Net e ISC e di dominio pubblico e GFDL
+Descrizione: il pacchetto glibc contiene librerie standard utilizzate da: più programmi sul sistema. Per risparmiare spazio su disco e : memoria, nonché per semplificare l’aggiornamento, il codice di sistema comune è : mantenuto in un’unica posizione e condiviso tra i programmi. Questo particolare pacchetto : contiene i più importanti set di librerie condivise: la libreria standard C : e la libreria matematica standard. Senza queste due librerie, un : sistema Linux non funzionerà.
 
 ## Alcuni utili comandi yum
 
-yum list install yum search [part_of_package_name]
-yum cosa fornisce [nome_pacchetto]
+elenco yum installato
+ricerca yum [part_of_package_name]
+yum che fornisce [nome_pacchetto]
 installazione yum [nome_pacchetto]
-reinstallazione yum [nome_pacchetto]
+reinstallare [nome_pacchetto]
 info yum [nome_pacchetto]
-yum deplist [nome_pacchetto]
-rimuovi yum [nome_pacchetto]
+[nome_pacchetto] deplist yum
+rimuovi [nome_pacchetto]
 yum check-update [nome_pacchetto]
 aggiornamento yum [nome_pacchetto]

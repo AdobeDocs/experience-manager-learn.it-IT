@@ -103,19 +103,19 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 
 Per utilizzare questa funzionalità sul server AEM
 
-* Scarica il file [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) al sistema locale.
-* Carica e installa il pacchetto utilizzando [gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
-* Scarica[Bundle servizi documenti personalizzati](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* Scarica [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) nel sistema locale.
+* Carica e installa il pacchetto utilizzando [Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
+* Scarica[Bundle Document Services personalizzato](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * Scarica [Sviluppo con Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* Distribuire e avviare i bundle utilizzando [console web felix](http://localhost:4502/system/console/bundles)
-* Puntare il browser a [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
+* Distribuisci e avvia i bundle utilizzando la [console Web Felix](http://localhost:4502/system/console/bundles)
+* Scegli il browser per [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
 * Trascina qui un paio di file di PDF
 
 >[!NOTE]
 >
 >Assicurati che l’installazione di AEM Forms sia stata completata. Tutti i bundle devono essere in stato attivo.
 >
->Assicurati di aver aggiunto le librerie Boot delegate RSA e BouncyCastle come indicato in questo [Installazione di AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>Assicurati di aver aggiunto le librerie BouncyCastle e RSA del delegato di avvio, come indicato in questa [Installazione di AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
 >**Avvertenze per questa demo**
 >
