@@ -11,7 +11,7 @@ jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
 duration: 399
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: e29eaefb20d466126d0d31ad8eb598b63a0cebcd
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
@@ -91,7 +91,7 @@ Sì, è possibile ma richiede un&#39;attenta pianificazione per quanto riguarda:
    + Verifica se è accettabile migrare tutte le risorse come parte di un set di migrazione e quindi portare siti che le utilizzano in fasi
 + Nello stato corrente, il processo di acquisizione dell’autore rende l’istanza di authoring non disponibile per l’authoring dei contenuti anche se il livello di pubblicazione può ancora gestire i contenuti
    + Questo significa che finché l’acquisizione non viene completata nell’ambiente di authoring, le attività di authoring dei contenuti vengono congelate
-+ Gli utenti non vengono più migrati, anche se i gruppi
++ La migrazione degli utenti non viene più eseguita, anche se i gruppi lo sono.
 
 Prima di pianificare le migrazioni, controlla il processo di estrazione e acquisizione integrativa come documentato.
 

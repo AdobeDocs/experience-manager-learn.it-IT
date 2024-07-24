@@ -10,31 +10,14 @@ badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
 duration: 78
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 7e0d7e87d72aa1e4450649afa6a962099ceb2db4
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 1%
+source-wordcount: '217'
+ht-degree: 3%
 
 ---
 
-# Configurare Data Source
-
-L’integrazione dei dati di AEM Forms consente di configurare e connettersi a diverse origini dati. Sono supportati i seguenti tipi pronti all’uso. Tuttavia, con una piccola personalizzazione, puoi anche integrare con altre origini dati.
-
-1. Database relazionali: MySQL, Microsoft SQL Server, IBM DB2 e Oracle RDBMS
-1. Profilo utente AEM
-1. Servizi Web RESTful
-1. Servizi web basati su SOAP
-1. Servizi OData
-
-Per l’integrazione di AEM Forms con Marketo, utilizziamo i servizi web RESTful. Il primo passaggio dell&#39;integrazione consiste nel configurare un&#39;origine dati [.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Utilizzare il file Swagger fornito come parte di questa esercitazione. La schermata seguente mostra le proprietà importanti da specificare durante la configurazione dell’origine dati.
-![origine dati](assets/datasource.png)
-
-Il &quot;marketo.json&quot; è il file swagger e viene fornito come parte delle risorse di questo tutorial.
-L’host delle proprietà è specifico per l’istanza Marketo.
-Il tipo di autenticazione è personalizzato e l’implementazione dell’autenticazione deve corrispondere a &quot;AemForms With Marketo&quot;. (a meno che non sia stato modificato nel codice).
-
-## Crea modello dati modulo
+# Crea modello dati modulo
 
 Dopo aver configurato l’origine dati, il passaggio successivo consiste nel creare un modello dati del modulo basato sull’origine dati configurata nel passaggio precedente. Per creare un modello dati modulo, segui i passaggi seguenti:
 

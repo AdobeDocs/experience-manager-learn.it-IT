@@ -8,9 +8,9 @@ breadcrumb-title: Tutorial su AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 82ef2988d55012ae730e9bbc7adeea547863ba51
+source-git-commit: d440662bcfbc8fdea8c1b0e8af7f653b1f8667f9
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2086'
 ht-degree: 2%
 
 ---
@@ -100,7 +100,7 @@ ht-degree: 2%
    + [Modello dati modulo basato su JDBC](adaptive-forms/jdbc-data-model-technical-video-use.md)
    + [Creare associazioni tra 2 entità nel modello dati modulo](adaptive-forms/association-data-model-technical-video-use.md)
    + [Utilizzo del servizio invoke del modello dati modulo nell’editor di regole](adaptive-forms/service-data-model-technical-video-use.md)
-   + [Dati binari di Post a AEM DAM utilizzando il modello dati modulo](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
+   + [Pubblicare dati binari in AEM DAM utilizzando il modello dati modulo](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
    + [Creazione di modelli di flussi di lavoro riutilizzabili](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
    + [Flusso di lavoro AEM passaggio processo personalizzato](adaptive-forms/custom-process-step-aem-workflow.md)
    + [Pre-popolamento di HTML5 Forms](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
@@ -240,8 +240,8 @@ ht-degree: 2%
    + [Parte 2 - Creazione di un modello personalizzato](listing-custom-asset-types/part2.md)
 + AEM Forms con Marketo{#aem-forms-with-marketo}
    + [Parte 1 - Introduzione](aem-forms-with-marketo/part1.md)
-   + [Parte 2 - Autenticazione personalizzata](aem-forms-with-marketo/part2.md)
-   + [Parte 3 - Data Source](aem-forms-with-marketo/part3.md)
+   + [Parte 2 - Data Source](aem-forms-with-marketo/part2.md)
+   + [Parte3 - Modello dati modulo](aem-forms-with-marketo/part3.md)
    + [Parte 4 - Tutti gli elementi insieme](aem-forms-with-marketo/part4.md)
 
 + AEM Forms con Adobe Campaign Standard{#aem-forms-with-adobe-campaign}
@@ -280,6 +280,7 @@ ht-degree: 2%
    + [Utilizzo della cartella controllata in AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Utilizzo del servizio Codice a barre in AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
    + [Utilizzo del servizio PDFG in AEM Forms](document-services/using-pdfg-in-aem-forms.md)
+   + [Crittografa PDF con password di autorizzazione](document-services/encrypt-pdf-permissions-password.md)
    + [Utilizzo del servizio Output e Forms in AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Utilizzo dei frammenti xdp nel servizio di output](document-services/using-fragments-in-output-service.md)
    + [Script ECMA per generare PDF con frammenti](document-services/using-fragments-in-output-service-watched-folder.md)
