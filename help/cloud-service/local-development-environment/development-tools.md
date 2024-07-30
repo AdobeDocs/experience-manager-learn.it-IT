@@ -11,7 +11,7 @@ level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
 duration: 3508
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: e7a85e8d072d808683580a201dd10b3a847efaaa
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 6%
@@ -24,8 +24,8 @@ ht-degree: 6%
 >id="aemcloud_localdev_devtools"
 >title="Configurare gli strumenti di sviluppo"
 >abstract="Per sviluppare per Adobe Experience Manager (AEM) è necessario installare e configurare un set minimo di strumenti specifici nel computer dello sviluppatore, compresi Java, Maven, Adobe I/O CLI, IDE di sviluppo e altri."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=it" text="Linee guida per lo sviluppo"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html?lang=it" text="Nozioni di base sullo sviluppo"
+>additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines" text="Linee guida per lo sviluppo"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk" text="Nozioni di base sullo sviluppo"
 
 Per sviluppare per Adobe Experience Manager (AEM) è necessario installare e configurare un set minimo di strumenti specifici nel computer dello sviluppatore, Questi strumenti sostengono lo sviluppo e la creazione di progetti AEM.
 
