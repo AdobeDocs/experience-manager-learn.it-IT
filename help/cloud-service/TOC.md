@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 4903b0742dca59e621707691f487a430b91e832b
+source-git-commit: e7a85e8d072d808683580a201dd10b3a847efaaa
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1234'
 ht-degree: 16%
 
 ---
@@ -107,6 +107,7 @@ ht-degree: 16%
       + [Caching delle varianti di pagina](./developing/advanced/variant-caching.md)
       + [Protezione CSRF](./developing/advanced/csrf-protection.md)
       + [Spazi dei nomi personalizzati](./developing/advanced/custom-namespaces.md)
+      + [Segreti](./developing/advanced/secrets.md)
       + [Utenti del servizio](./developing/advanced/service-users.md)
       + [API per immagini ottimizzate per il web](./developing/advanced/web-optimized-image-delivery-java-apis.md)
    + Ambiente di sviluppo rapido{#rde}
@@ -283,6 +284,10 @@ ht-degree: 16%
       + [Utilità PDF/A](./forms/forms-cs-assembler/pdfa-utilities.md)
       + [Testare la soluzione](./forms/forms-cs-assembler/test.md)
       + [Sfida](./forms/forms-cs-assembler/challenge.md)
+   + Integrare con Marketo{#froms-cs-with-marketo}
+      + [Introduzione](./forms/forms-cs-with-marketo/part1.md)
+      + [Creazione di Data Source](./forms/forms-cs-with-marketo/part2.md)
+      + [Crea modello dati modulo](./forms/forms-cs-with-marketo/part3.md)
    + Archivia invii modulo con tag indice BLOB{#store-submiited-data-with-metadata-tags}
       + [Introduzione](./forms/store-submiited-data-with-metadata-tags/introduction.md)
       + [Estendi componente gruppo di scelta](./forms/store-submiited-data-with-metadata-tags/extend-choice-group-components.md)

@@ -12,9 +12,9 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
+source-git-commit: 1b493d85303e539e07ba8b080ed55ef2af18bfcb
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '1947'
 ht-degree: 1%
 
 ---
@@ -42,10 +42,6 @@ Vediamo alcune misure aggiuntive consigliate che i clienti possono adottare per 
 - Configura **avvisi** sulle regole del filtro del traffico del limite di frequenza tramite un&#39;&quot;azione di avviso&quot; in modo che, quando la regola viene attivata, venga inviata una notifica al Centro operativo.
 - Aumentare la copertura della cache dichiarando **trasformazioni richiesta** per ignorare i parametri di query.
 
->[!NOTE]
->
->La funzionalità [avvisi regola filtro traffico](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) non è ancora stata rilasciata. Per ottenere l&#39;accesso tramite il programma di adozione anticipata, inviare un&#39;e-mail a **<aemcs-waf-adopter@adobe.com>**.
-
 ### Variazioni delle regole di traffico per limite di tariffa {#rate-limit-variations}
 
 Esistono due varianti delle regole di traffico dei limiti di velocità:
@@ -72,7 +68,6 @@ Come accennato in precedenza, per impostazione predefinita, Adobe blocca il traf
 Idealmente, puoi configurare le regole prima di andare in produzione dal vivo. In pratica, molte organizzazioni dichiarano le regole in modo reattivo solo una volta avvisate di un picco di traffico che indica un probabile attacco.
 
 L&#39;Adobe invia un avviso di picco di traffico all&#39;origine come [Notifica Centro azioni](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/actions-center) quando viene superata una soglia predefinita di traffico da un singolo indirizzo IP per un determinato POP. Se hai ricevuto un avviso di questo tipo, ti consigliamo di configurare una regola per il filtro del traffico del limite di frequenza. Questo avviso predefinito è diverso dagli avvisi che devono essere abilitati esplicitamente dai clienti quando si definiscono le regole del filtro del traffico, e che verranno trattati in una sezione futura.
-
 
 ## Analisi dei pattern di traffico {#analyze-traffic}
 

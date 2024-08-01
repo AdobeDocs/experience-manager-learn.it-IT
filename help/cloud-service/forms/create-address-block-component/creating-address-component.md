@@ -9,10 +9,10 @@ feature: Adaptive Forms
 topic: Development
 jira: KT-15752
 exl-id: 280c9a30-e017-4bc0-9027-096aac82c22c
-source-git-commit: a12b1778413079646814cb25567abfc26a429340
+source-git-commit: b1de5c163607163bc702ea7b8ea4916c414f2a3a
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 1%
+source-wordcount: '297'
+ht-degree: 2%
 
 ---
 
@@ -68,6 +68,16 @@ Selezionare il nodo ``zip`` e impostarne le proprietà come illustrato di seguit
 
 Selezionare il nodo ``state`` e impostarne le proprietà come illustrato di seguito. Osserva il fieldType dello stato: è impostato per essere un menu a discesa
 ![stato](assets/state.png)
+
+## Imposta i valori predefiniti per il campo Stato
+
+Selezionare il nodo ``state`` e aggiungere le seguenti proprietà.
+
+| Nome | Tipo | Valore |
+|----------|----------|---------------------|
+| enum | Stringa[] | CA, NY |
+| enumNames | Stringa[] | California, New York |
+
 
 Il componente addressblock finale si presenterà così
 
