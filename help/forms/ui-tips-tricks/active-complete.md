@@ -11,10 +11,10 @@ jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 364d055b7b2e4f273f906c66328fc14f95321611
 workflow-type: tm+mt
 source-wordcount: '328'
-ht-degree: 14%
+ht-degree: 21%
 
 ---
 
@@ -38,14 +38,15 @@ Lo stato predefinito si trova quando apri l’editor di stili per la scheda, com
 ![scheda di navigazione](assets/navigation-tab.png)
 
 Imposta le proprietà CSS per lo stato predefinito come mostrato di seguito
-| Categoria | Nome proprietà  |  Valore proprietà |
-|:—|:—|:—|
+
+| Categoria | Nome proprietà | Valore proprietà |
+|:---|:---|:---|
 | Dimension e posizione | Larghezza | 50 px |
-| Testo | Spessore font| Bold |
+| Testo | Spessore carattere | Grassetto |
 | Testo | Colore | #FFF |
-|Testo | Altezza riga| 3 |
-|Testo  | Allineamento testo | Sinistra |
-|Contesto| Colore | #056dae |
+| Testo | Altezza riga | 3 |
+| Testo | Allineamento testo | Sinistra |
+| Informazioni di base | Colore | #056dae |
 
 Salva le modifiche
 
