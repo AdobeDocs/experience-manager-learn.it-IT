@@ -9,7 +9,7 @@ level: Intermediate
 jira: KT-15849
 last-substantial-update: 2024-07-19T00:00:00Z
 exl-id: 5df8581c-a44c-449c-bf3b-8cdf57635c4d
-source-git-commit: b823f9e294c42ba258049a942816f9a154a6e1a6
+source-git-commit: d01a56cd1fd3085b0230918b15b4635ba375e346
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Crittografa PDF con una password di autorizzazione
 
-Per copiare, modificare o stampare un documento PDF è necessaria una password di autorizzazione, nota anche come password del proprietario o master. Scopri come utilizzare l&#39;API [DocAssuranceService](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/docassurance/client/api/DocAssuranceService.html) per applicare una password di autorizzazione a un PDF a livello di programmazione
+Per copiare, modificare o stampare un documento PDF è necessaria una password di autorizzazione, nota anche come password del proprietario o master. Scopri come utilizzare l&#39;API [DocAssuranceService](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/docassurance/client/api/DocAssuranceService.html) per applicare una password di autorizzazione a un PDF a livello di programmazione.
 
 Il seguente codice JSP crittografa un PDF con una password di autorizzazione:
 
