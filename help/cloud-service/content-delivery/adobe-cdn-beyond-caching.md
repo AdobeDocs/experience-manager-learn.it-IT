@@ -1,6 +1,6 @@
 ---
 title: 'CDN Adobe: funzioni avanzate oltre il caching'
-description: Scopri le funzioni avanzate di Adobe CDN oltre la memorizzazione in cache, ad esempio la configurazione del traffico sulla CDN, le pagine di errore CDN e altro ancora.
+description: Scopri le funzioni avanzate di Adobe CDN oltre la memorizzazione in cache, ad esempio la configurazione del traffico sulla CDN, la configurazione di token e credenziali, le pagine di errore CDN e altro ancora.
 version: Cloud Service
 feature: Website Performance, CDN Cache
 topic: Architecture, Performance, Content Management
@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
-source-git-commit: cc7fa9bbaa775b0216c839be079504c2b5467878
+source-git-commit: 10f9ca66a1669e1207237128469852ec7514d110
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # CDN Adobe: funzioni avanzate oltre il caching
 
-Scopri le funzioni avanzate di Adobe CDN oltre la memorizzazione in cache, ad esempio la configurazione del traffico sulla CDN, le pagine di errore CDN e altro ancora.
+Scopri le funzioni avanzate della rete CDN (Content Delivery Network) di Adobe, oltre alla memorizzazione in cache, come la configurazione del traffico sulla rete CDN, la configurazione di token e credenziali, le pagine di errore CDN e altro ancora.
 
 Oltre alla memorizzazione in cache dei contenuti, Adobe CDN offre diverse funzioni avanzate che possono aiutare a ottimizzare le prestazioni del sito web. Queste caratteristiche includono:
 
@@ -50,8 +50,7 @@ Comprendiamo le funzionalità chiave relative a _Configurazione delle credenzial
 
 - **Rimuovi token API**: consente di creare una chiave di eliminazione personalizzata per rimuovere un singolo o un gruppo o tutte le risorse dalla cache.
 - **Autenticazione di base**: meccanismo di autenticazione leggero che consente di limitare l&#39;accesso al sito Web o a parte di esso. Richiesto principalmente come parte di vari processi di revisione prima di andare &quot;live&quot;.
-- **Convalida intestazione HTTP**: utilizzato quando una rete CDN gestita dal cliente instrada il traffico verso la rete CDN Adobe. Il CDN di Adobe convalida la richiesta in ingresso in base al valore dell&#39;intestazione `X-AEM-Edge-Key`.
-Consente di creare un valore personalizzato per l&#39;intestazione `X-AEM-Edge-Key`.
+- **Convalida intestazione HTTP**: utilizzato quando una rete CDN gestita dal cliente instrada il traffico verso la rete CDN Adobe. Il CDN di Adobe convalida la richiesta in ingresso in base al valore dell&#39;intestazione `X-AEM-Edge-Key`. Consente di creare un valore personalizzato per l&#39;intestazione `X-AEM-Edge-Key`.
 
 ## Pagine di errore CDN
 
@@ -87,7 +86,7 @@ data:
           location: /us/en/top3.html
 ```
 
-## Risorse aggiuntive
+## Tutorials correlati
 
 [Protezione dei siti Web con regole filtro traffico](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
 
@@ -100,7 +99,3 @@ data:
 [Configurazione credenziali e autenticazione CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 
 [Configurazione delle pagine di errore CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
-
-
-
-
