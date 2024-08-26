@@ -12,9 +12,9 @@ last-substantial-update: 2024-08-12T00:00:00Z
 jira: KT-15121
 thumbnail: KT-15121.jpeg
 exl-id: 8936c3ae-2daf-4d0f-b260-28376ae28087
-source-git-commit: 07225f1ae4455e2fa69c8e488851361c725fe9e8
+source-git-commit: f92e66d6edc929bff1e8cae6adb7f408352aeb77
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -150,7 +150,7 @@ Tuttavia, se si utilizza il **dominio principale**, è necessario aggiungere un 
 
 Per verificare che il sito sia accessibile utilizzando il nome di dominio personalizzato, apri un browser web e passa all’URL del dominio personalizzato. Assicurati che il sito sia accessibile e che il browser mostri una connessione sicura con l’icona del lucchetto.
 
-## Video end-to-end
+## Video end to end
 
 Puoi anche guardare il video end-to-end che illustra la panoramica, i prerequisiti e i passaggi precedenti per aggiungere un nome di dominio personalizzato al sito ospitato da AEM as a Cloud Service.
 
