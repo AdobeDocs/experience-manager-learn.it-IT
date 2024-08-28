@@ -11,7 +11,7 @@ duration: 0
 last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
-source-git-commit: 10f9ca66a1669e1207237128469852ec7514d110
+source-git-commit: 65e77a329226ca7c7ccb1e583d2a045074feeb3d
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -31,12 +31,13 @@ Oltre alla memorizzazione in cache dei contenuti, Adobe CDN offre diverse funzio
 
 Queste funzionalità sono **funzionalità self-service**. Configurato nel file `cdn.yaml` del progetto AEM e distribuito utilizzando la pipeline di configurazione Cloud Manager.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
+
 ## Configurazione del traffico sulla rete CDN
 
 Comprendiamo le funzionalità chiave relative a _Configurazione del traffico sulla rete CDN_:
 
-- **Prevenzione degli attacchi DoS:** la rete CDN Adobe assorbe gli attacchi DoS nella rete
-che impediscono loro di raggiungere il server di origine.
+- **Prevenzione attacchi DoS:** la rete CDN Adobe assorbe gli attacchi DoS a livello di rete, impedendo loro di raggiungere il server di origine.
 - **Limitazione di frequenza:** Per evitare che il server di origine venga sovraccaricato da un numero eccessivo di richieste, è possibile configurare la limitazione di frequenza nella rete CDN.
 - **Firewall applicazione Web (WAF):** WAF protegge il sito Web da vulnerabilità comuni alle applicazioni Web, ad esempio SQL injection, vulnerabilità cross-site scripting e altro ancora. Per utilizzare questa funzione è necessaria la licenza Protezione avanzata o la licenza Protezione WAF-DDoS.
 - **Trasformazione richiesta:** Modificare le richieste in ingresso, ad esempio impostando o disimpostando le intestazioni, modificando i parametri di query, i cookie e altro ancora.
