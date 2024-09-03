@@ -8,9 +8,9 @@ breadcrumb-title: Tutorial su AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: d440662bcfbc8fdea8c1b0e8af7f653b1f8667f9
+source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
 workflow-type: tm+mt
-source-wordcount: '2086'
+source-wordcount: '2089'
 ht-degree: 2%
 
 ---
@@ -224,10 +224,11 @@ ht-degree: 2%
    + [Distribuire risorse di esempio](storing-retrieving-form-data/part6.md)
 + Attivazione del flusso di lavoro AEM dall&#39;invio del modulo mobile{#offline-mobile-form-submission}
    + [Introduzione](offline-mobile-form-submission/introduction.md)
-   + [Profilo personalizzato](offline-mobile-form-submission/part-one.md)
-   + [Gestisci invio PDF](offline-mobile-form-submission/part-two.md)
-   + [Flusso di lavoro per revisione PDF](offline-mobile-form-submission/part-three.md)
-   + [Implementare sul sistema](offline-mobile-form-submission/part-four.md)
+   + [Profilo personalizzato](offline-mobile-form-submission/custom-profile.md)
+   + [Gestire l’invio di moduli](offline-mobile-form-submission/handle-form-submission.md)
+   + [Archivia dati inviati](offline-mobile-form-submission/author-servlet.md)
+   + [Flusso di lavoro per revisione PDF](offline-mobile-form-submission/review-workflow.md)
+   + [Implementare sul sistema](offline-mobile-form-submission/deploy-assets.md)
 + Query invio modulo{#query-form-submissions}
    + [Introduzione](query-form-submissions/introduction.md)
    + [Creare campi ricercabili](query-form-submissions/part1.md)

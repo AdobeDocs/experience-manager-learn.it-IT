@@ -1,5 +1,5 @@
 ---
-title: Attivare il flusso di lavoro AEM all’introduzione dell’invio del modulo HTM5
+title: Attivare il flusso di lavoro AEM all’introduzione dell’invio del modulo HTML5
 description: Continua a compilare il modulo mobile in modalità offline e invia il modulo mobile per attivare il flusso di lavoro AEM
 feature: Mobile Forms
 doc-type: article
@@ -9,10 +9,12 @@ role: Developer
 level: Experienced
 exl-id: 88295af5-3022-4462-9194-46d8c979bc8b
 last-substantial-update: 2021-04-07T00:00:00Z
+jira: kt-16133
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 342
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -26,8 +28,12 @@ Per eseguire questo caso d’uso è necessario effettuare i seguenti passaggi:
 * Gestire l’invio PDF da Acrobat/Reader
 * Attiva il flusso di lavoro Adobe Experience Manager (AEM) per rivedere il PDF inviato
 
-Questo tutorial illustra i passaggi necessari per eseguire il caso d’uso precedente. Il codice di esempio e le risorse correlate a questa esercitazione sono [disponibili qui.](part-four.md)
+Questo tutorial illustra i passaggi necessari per eseguire il caso d’uso precedente. Il codice di esempio e le risorse correlate a questa esercitazione sono [disponibili qui.](./deploy-assets.md)
 
 Il video seguente offre una panoramica del caso d’uso
 
 >[!VIDEO](https://video.tv.adobe.com/v/29677?quality=12&learn=on)
+
+## Passaggi successivi
+
+[Crea profilo personalizzato](./custom-profile.md)
