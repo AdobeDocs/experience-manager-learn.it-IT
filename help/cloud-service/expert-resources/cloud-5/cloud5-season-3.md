@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: 7ef37a71f1daefee484478c3194907d5ce918af4
+source-git-commit: 177cddea03595b686ec75f129c8be7bb14e4c631
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -175,6 +175,8 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
                  Scopri Universal Editor e AEM con i Edge Delivery Services.
             </p>
         </td>
+    </tr>  
+    <tr>
         <td>
             <a href="./season-3/cloud5-import-sites-to-edge-delivery-services.md">
                 <img alt="Importare siti in AEM Sites con Edge Delivery Services" 
@@ -190,5 +192,20 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
                  Scopri come importare siti in AEM Sites con i Edge Delivery Services.
             </p>
         </td>
-    </tr>      
+        <td>
+            <a href="./season-3/cloud5-using-admin-api.md">
+                <img alt="Utilizzo dell’API di amministrazione con i Edge Delivery Services" 
+                     src="https://video.tv.adobe.com/v/3433158?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-using-admin-api.md">
+                <strong>Utilizzo dell'API amministratore</strong></a>        
+                <br/><em>con James Talbot e Varun Mitra, Cloud Architect</em>
+            </div>
+            <p>
+                <br/>                
+                 Scopri come utilizzare l’API amministratore nei Edge Delivery Services per gestire il ciclo di vita dei contenuti e del codice.
+            </p>
+        </td>    
+    </tr>    
 </table>
