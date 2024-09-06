@@ -9,9 +9,11 @@ level: Experienced
 exl-id: 58582acd-cabb-4e28-9fd3-598d3cbac43c
 last-substantial-update: 2020-01-07T00:00:00Z
 duration: 138
-source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
+jira: KT-16142
+badgeVersions: label="AEM Forms 6.5" before-title="false"
+source-git-commit: 8cadbe92a7a2f47c33b0ca0fcf7313dc418ae7a4
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -128,7 +130,6 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 Per testare questa funzionalità sul server, attieniti alle seguenti istruzioni:
 
 * [Scarica le risorse di esempio](assets/mult-records-template-and-xml-file.zip). Questo file zip contiene il modello e il file di dati xml.
-* [Importa ]
 * [Puntare il browser alla console Web Felix](http://localhost:4502/system/console/bundles)
 * [Distribuisci il bundle DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
 * Aggiungi la seguente voce nel servizio User Mapper di Apache Sling Service utilizzando configMgr.
@@ -136,6 +137,8 @@ Per testare questa funzionalità sul server, attieniti alle seguenti istruzioni:
 ```java
 DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 ```
+
+
 
 ![user-mapper-service](assets/user-mapper-service-fd-service.png)
 
