@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: 177cddea03595b686ec75f129c8be7bb14e4c631
+source-git-commit: af962fa9ede0781929e4e7cbbd6b5f00a9dfb0d9
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
@@ -206,6 +206,21 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
                 <br/>                
                  Scopri come utilizzare l’API amministratore nei Edge Delivery Services per gestire il ciclo di vita dei contenuti e del codice.
             </p>
-        </td>    
+        </td>   
+        <td>
+            <a href="./season-3/cloud5-lighthouse-score-optimization.md">
+                <img alt="Ottimizzazione punteggio faro" 
+                     src="https://video.tv.adobe.com/v/3433378?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-lighthouse-score-optimization.md">
+                <strong>Ottimizzazione punteggio faro</strong></a>        
+                <br/><em>con James Talbot e Varun Mitra, Cloud Architect</em>
+            </div>
+            <p>
+                <br/>                
+                 Scopri cos’è un punteggio del faro e le tecniche per ottenere il miglior punteggio possibile.
+            </p>
+        </td>            
     </tr>    
 </table>
