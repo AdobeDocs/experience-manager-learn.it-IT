@@ -4,10 +4,10 @@ breadcrumb-title: Tutorial su AEM Foundation
 user-guide-description: Raccolta di video e tutorial su Adobe Experience Manager Foundation.
 sub-product: Experience Manager
 index: y
-source-git-commit: 231ca44f9708ab0b239e4cbf363e8cf2695eedc2
+source-git-commit: 33415305f6aa183373eaef4bb4978a59325c8a32
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 13%
+source-wordcount: '244'
+ht-degree: 14%
 
 ---
 
@@ -38,6 +38,7 @@ ht-degree: 13%
    + [Comprendere le best practice per le API Java](./development/understand-java-api-best-practices.md)
    + [Comprendere Sling Model Exporter](./development/understand-sling-model-exporter.md)
    + [Comprendere le best practice per l’indicizzazione Oak](./development/understand-indexing-best-practices.md)
+   + [Installare artefatti di terze parti](./development/install-third-party-artifacts.md)
 + Progetti {#projects}
    + [Sviluppare progetti AEM](./projects/develop-aem-projects.md)
    + [Usa progetto principale](./projects/use-project-masters.md)
