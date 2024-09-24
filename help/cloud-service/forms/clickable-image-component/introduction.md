@@ -1,6 +1,6 @@
 ---
-title: Creazione del componente immagine cliccabile
-description: Creazione del componente immagine cliccabile nel Cloud Service AEM Forms
+title: Creare un componente Immagine cliccabile
+description: Crea componenti immagine cliccabili nel Cloud Service AEM Forms.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,14 +10,14 @@ topic: Development
 jira: KT-15968
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: c451472f-d282-4662-9852-8a3e73c5c853
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 1fa202910e6c9d21532c6027647c5f3909931e0e
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '136'
 ht-degree: 0%
 
 ---
 
-# Introduzione
+# Introduzione alle immagini cliccabili
 
 L’utilizzo di immagini cliccabili in Forms può creare un’esperienza utente più coinvolgente, intuitiva e visivamente attraente. Ai fini di questo articolo, abbiamo utilizzato SVG per le immagini cliccabili, in quanto offre diversi vantaggi in particolare in termini di flessibilità di progettazione, prestazioni ed esperienza utente.
 SVG può essere creato utilizzando Adobe Illustrator o uno qualsiasi degli strumenti online gratuiti. Ho usato la [Mappa USA da](https://simplemaps.com/resources/svg-us)mappe semplici per dimostrare il caso d&#39;uso.
