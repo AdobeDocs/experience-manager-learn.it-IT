@@ -13,11 +13,11 @@ duration: 174
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '143'
-ht-degree: 74%
+ht-degree: 75%
 
 ---
 
-# Utenti Adobe IMS {#adobe-ims-users}
+# Utenti di Adobe IMS {#adobe-ims-users}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_users"
