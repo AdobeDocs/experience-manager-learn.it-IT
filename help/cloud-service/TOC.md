@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: acecb13a5b7f3c75bc6cd8eb36d398f8cebfe0a6
+source-git-commit: a224d375605b0abc2f521bfd6992239c77095572
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1300'
 ht-degree: 16%
 
 ---
@@ -157,7 +157,7 @@ ht-degree: 16%
       + [Elimina cache](./caching/how-to/purge-cache.md)
 + Accesso a AEM{#accessing}
    + [Panoramica](./accessing/overview.md)
-   + [Utenti Adobe IMS](./accessing/adobe-ims-users.md)
+   + [Utenti di Adobe IMS](./accessing/adobe-ims-users.md)
    + [Gruppi di utenti di Adobe IMS](./accessing/adobe-ims-user-groups.md)
    + [Profili di prodotto di Adobe IMS](./accessing/adobe-ims-product-profiles.md)
    + [Utenti, gruppi e autorizzazioni AEM](./accessing/aem-users-groups-and-permissions.md)
@@ -217,7 +217,6 @@ ht-degree: 16%
       + [Introduzione](./migration/cloud-acceleration-manager/introduction.md)
       + [Preparazione e Best Practice Analyzer](./migration/cloud-acceleration-manager/readiness-and-best-practice-analyzer.md)
       + [Fase di implementazione](./migration/cloud-acceleration-manager/implementation-phase.md)
-      + [Strumento trasferimento contenuti](./migration/cloud-acceleration-manager/content-transfer-tool.md)
       + [Strumenti di refactoring del codice](./migration/cloud-acceleration-manager/code-refactoring-tools.md)
       + [Code Repository Modernizer](./migration/cloud-acceleration-manager/code-repository-modernizer.md)
       + [Dispatcher Converter](./migration/cloud-acceleration-manager/dispatcher-converter.md)
