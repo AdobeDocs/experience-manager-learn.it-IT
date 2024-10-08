@@ -6,10 +6,10 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
 duration: 112
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: ffd90bec7ef63cac96590e59b1b5a92d043cbc03
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 0%
+source-wordcount: '443'
+ht-degree: 1%
 
 ---
 
@@ -105,47 +105,6 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
       <p>
         <br/>
          Parte uno (di due) dei nostri suggerimenti e trucchi per la migrazione al cloud. Il nostro obiettivo principale nella prima parte è la best practice e il lavoro preparatorio che ti prepara a migrare.
-      </p>
-   </td> 
-  </tr>
-<tr>
-   <td>
-        <a href="./cloud5-aem-content-migration-part-2.md">
-            <img alt="Migrazione (parte 2)" src="./imgs/007-thumb.png"/>
-        </a>
-      <div>
-        <a href="./cloud5-aem-content-migration-part-2.md"><strong>Migrazione (parte 2)</strong></a>     
-         <br/><em>con Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
-      </div>
-      <p>
-        <br/>
-         Parte due (di due) dei nostri suggerimenti e trucchi per migrare al cloud. La seconda parte riguarda principalmente l’utilizzo degli strumenti disponibili per la migrazione.
-      </p>
-     </td>   
-     <td>
-        <a href="./cloud5-aem-dispatcher-validator.md">
-            <img alt="Convalida Dispatcher" src="./imgs/008-thumb.png"/>
-        </a>
-      <div>
-         <a href="./cloud5-aem-dispatcher-validator.md"><strong>Convalida Dispatcher</strong></a>
-         <br/><em>con Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
-      </div>
-      <p>
-        <br/>
-         In linea con le precedenti discussioni sulla migrazione, analizziamo la convalida del dispatcher e alcune delle attività che può eseguire.
-      </p>
-   </td>
-     <td>
-        <a href="./cloud5-aem-search-and-indexing.md">
-            <img alt="Suggerimenti per indicizzazione e ricerca" src="./imgs/009-thumb.png"/>
-        </a>
-      <div>
-         <a href="./cloud5-aem-search-and-indexing.md"><strong>Suggerimenti per indicizzazione e ricerca</strong></a>
-         <br/><em>con Darin Kuntze &amp; James Talbot, Senior Cloud Architects</em>
-      </div>
-      <p>
-        <br/>
-         Per qualcosa di complesso come l’indicizzazione e la ricerca, il team ti mostra alcune semplici vittorie per ottimizzare il tuo tempo di sviluppo e risolvere le cose prima che diventino problemi.
       </p>
    </td> 
   </tr>
