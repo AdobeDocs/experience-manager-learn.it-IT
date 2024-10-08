@@ -11,9 +11,9 @@ last-substantial-update: 2022-07-20T00:00:00Z
 doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
 duration: 4537
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: d731a7131b997fa272013e8d62aa2251e25c08e4
 workflow-type: tm+mt
-source-wordcount: '2413'
+source-wordcount: '2423'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ La creazione di un ambiente di sviluppo locale rappresenta il primo passo per lo
 
 Quando si fa riferimento a un’istanza AEM locale, si parla di una copia di Adobe Experience Manager in esecuzione sul computer personale di uno sviluppatore. ***Tutti*** gli sviluppatori AEM devono iniziare scrivendo ed eseguendo il codice su un&#39;istanza AEM locale.
 
-Se non si ha familiarità con AEM, è possibile installare due modalità di esecuzione di base: ***Autore*** e ***Publish***. ***Autore*** [modalità di esecuzione](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configure-runmodes.html?lang=en) è l&#39;ambiente utilizzato dagli esperti di marketing digitale per creare e gestire i contenuti. Quando si sviluppa la maggior parte del tempo, si distribuisce il codice in un’istanza di authoring. Questo consente di creare pagine e aggiungere e configurare componenti. AEM Sites è un CMS di authoring WYSIWYG e quindi la maggior parte dei CSS e JavaScript può essere testata rispetto a un’istanza di authoring.
+Se non si ha familiarità con AEM, è possibile installare due modalità di esecuzione di base: ***Autore*** e ***Publish***. ***Autore*** [modalità di esecuzione](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configure-runmodes.html?lang=en) è l&#39;ambiente utilizzato dagli esperti di marketing digitale per creare e gestire i contenuti. Quando si sviluppa la maggior parte del tempo, si distribuisce il codice in un’istanza di authoring. Questo consente di creare pagine e aggiungere e configurare componenti. AEM Sites è un CMS di authoring di WYSIWYG e pertanto la maggior parte dei CSS e JavaScript può essere testata rispetto a un’istanza di authoring.
 
 È anche il codice di test *critico* per un&#39;istanza locale di ***Publish***. L&#39;istanza ***Publish*** è l&#39;ambiente AEM con cui i visitatori del sito Web interagiscono. Anche se l&#39;istanza ***Publish*** è lo stesso stack tecnologico dell&#39;istanza ***Author***, esistono alcune distinzioni importanti con le configurazioni e le autorizzazioni. Il codice deve essere testato su un&#39;istanza locale di ***Publish*** prima di essere promosso ad ambienti di livello superiore.
 
@@ -181,6 +181,7 @@ Quando, utilizzando un IDE, assicurati di controllare `classic` nella scheda Pro
 * **[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)** - Strumento simile a FTP per il contenuto JCR
 * **[aemfed](https://aemfed.io/)** - Velocizza il flusso di lavoro front-end AEM
 * **[Sincronizzazione AEM](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - Estensione &#42; supportata dalla community per Visual Studio Code
+* **[Progetto WKND](https://github.com/adobe/aem-guides-wknd)** - Esempio di progetto AEM mostrato in questo video.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25907?quality=12&learn=on)
 
