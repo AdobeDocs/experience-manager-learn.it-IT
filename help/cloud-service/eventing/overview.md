@@ -12,9 +12,9 @@ last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
-source-git-commit: 8d9e6bc44164ff3acfa2c7eadffc60bbc5e8306e
+source-git-commit: ede52c6c9feb0b35bc3729e28591cb4e7c7600f7
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -67,13 +67,12 @@ AEM Eventing offre numerosi vantaggi in termini di architettura del sistema ed e
 L&#39;AEM Eventing, pur essendo potente, ha alcune limitazioni da considerare:
 
 - **Disponibilità limitata ad AEM as a Cloud Service**: al momento, l&#39;evento AEM è disponibile esclusivamente per AEM as a Cloud Service.
-- **Supporto limitato per eventi**: al momento sono supportati solo gli eventi di Frammento di contenuto AEM. Tuttavia, si prevede che il campo di applicazione si espanderà con l&#39;aggiunta di ulteriori eventi in futuro.
+
+- **Tipi di evento disponibili**: esaminare l&#39;elenco corrente dei tipi di evento disponibili [qui](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#available-event-types).
 
 ## Come abilitare
 
-L’evento AEM è abilitato per ogni ambiente AEM as a Cloud Service ed è disponibile solo per gli ambienti in modalità pre-release. Contatta il <a href="mailto:grp-aem-events@adobe.com">team di gestione degli eventi AEM</a> per abilitare l&#39;ambiente AEM con gli eventi AEM.
-
-Se è già abilitato, consulta [Abilitare gli eventi AEM nell&#39;ambiente AEM Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment) per i passaggi successivi.
+Consulta [Abilitare gli eventi AEM nell&#39;ambiente AEM Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment) per i passaggi successivi.
 
 ## Iscrizione
 
