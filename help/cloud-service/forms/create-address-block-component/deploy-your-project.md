@@ -1,6 +1,6 @@
 ---
 title: Creazione del componente indirizzo
-description: Creazione di un nuovo componente core indirizzo nel Cloud Service AEM Forms
+description: Creazione di un nuovo componente core indirizzo in AEM Forms as a Cloud Service
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -9,16 +9,16 @@ feature: Adaptive Forms
 topic: Development
 jira: KT-15752
 exl-id: be25be52-2914-4820-9356-678a326f8edc
-source-git-commit: a12b1778413079646814cb25567abfc26a429340
+source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
 
 # Distribuire il progetto
 
-Prima di iniziare la distribuzione del progetto al Cloud Service AEM Forms, si consiglia di implementarlo nell’istanza cloud locale di AEM Forms.
+Prima di iniziare la distribuzione del progetto nell’as a Cloud Service di AEM Forms, si consiglia di distribuire il progetto nell’istanza cloud locale di AEM Forms.
 
 ## Sincronizzare le modifiche con il progetto AEM
 

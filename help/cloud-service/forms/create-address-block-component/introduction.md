@@ -1,6 +1,6 @@
 ---
 title: Creazione del componente indirizzo
-description: Creazione di un nuovo componente core indirizzo nel Cloud Service AEM Forms
+description: Creazione di un nuovo componente core indirizzo in AEM Forms as a Cloud Service
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,7 +10,7 @@ topic: Development
 jira: KT-15752
 exl-id: 21b6640e-5cfa-4902-9660-a2b1c91b285d
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
-source-git-commit: ed64dd303a384d48f76c9b8e8e925f5d3b8f3247
+source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 47%
@@ -27,7 +27,7 @@ In questa esercitazione verrà creato un componente blocco di indirizzi. Il comp
 
 ## Prerequisiti
 
-* Accesso all’istanza di Cloud Service di AEM Forms
+* Accesso all’istanza di AEM Forms as a Cloud Service
 * Esperienza nello sviluppo di moduli tramite il modulo AEM Forms
 * Esperienza nella configurazione dell’ambiente di sviluppo per AEM/AEM Forms (Git, IntelliJ, ecc.)
 
