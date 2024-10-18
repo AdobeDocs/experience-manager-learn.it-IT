@@ -10,16 +10,17 @@ level: Experienced
 last-substantial-update: 2024-09-17T00:00:00Z
 jira: kt-16215
 badgeVersions: label="AEM Forms 6.5" before-title="false"
-source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
+source-git-commit: c6ffa8f7a398b01fc12e1e2efe4382c941900496
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '195'
 ht-degree: 1%
 
 ---
 
 # Attivare il flusso di lavoro AEM in seguito all’invio di un modulo mobile
 
-Un caso d’uso comune prevede la possibilità di eseguire il rendering di XDP come HTML per le attività di acquisizione dati. All’invio di questo modulo, potrebbe essere necessario attivare un flusso di lavoro AEM. Nel flusso di lavoro dell’AEM potremmo unire i dati con il modello xdp e presentare le PDF generate per la revisione e l’approvazione. Il modulo verrà renderizzato su un’istanza pubblicata e il flusso di lavoro verrà attivato su un’istanza di elaborazione AEM.
+Un caso d’uso comune è quello di eseguire il rendering di XDP come HTML per le attività di acquisizione dati. All’invio di questo modulo potrebbe essere necessario attivare un flusso di lavoro AEM. Nel flusso di lavoro AEM, puoi unire i dati con il modello XDP e presentare le PDF generate per la revisione e l’approvazione. Il modulo viene eseguito su un’istanza pubblicata e il flusso di lavoro viene attivato su un’istanza di elaborazione AEM.
+
 Nel caso di utilizzo sono coinvolti i seguenti passaggi
 
 * L’utente compila e invia un modulo HTML5 (rendering HTML5 di XDP).
