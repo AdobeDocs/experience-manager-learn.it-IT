@@ -10,9 +10,9 @@ topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16276
-source-git-commit: 86d282b426402c9ad6be84e9db92598d0dc54f85
+source-git-commit: a0de7eaa391749b6b0d90e7cf3e363c2d5a232b5
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,11 @@ ht-degree: 0%
 # Verifica le modifiche
 
 Crea un modulo adattivo basato sul modello **&quot;Blank with Core Components&quot;**. Trascinare e rilasciare 3 pulsanti sul modulo e assegnare loro l&#39;etichetta &quot;Corporate&quot;, &quot;Marketing&quot; e &quot;Default&quot;.
-Assegnare le varianti di stile appropriate ai pulsanti Aziendale e Marketing selezionando il pennello di disegno come mostrato
+Assegnare le varianti di stile appropriate ai pulsanti Aziendale e Marketing selezionando il pennello di disegno come mostrato di seguito.
 
 ![stili](assets/marketing-variation.png)
+
+Al terzo pulsante verrà applicato lo stile predefinito.
 
 ## Creare il progetto tema
 
