@@ -10,9 +10,9 @@ topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16276
-source-git-commit: a0de7eaa391749b6b0d90e7cf3e363c2d5a232b5
+source-git-commit: 1ed08d7784833b6c49139da525341af5ee587345
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '253'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Al terzo pulsante verrà applicato lo stile predefinito.
 
 ## Creare il progetto tema
 
-Il passaggio successivo è quello di costruire il progetto tematico. Passa alla cartella principale del progetto tema ed esegui il comando _**npm run build**_ come mostrato nella schermata seguente
+Il passaggio successivo è quello di costruire il progetto tematico. Passa alla cartella principale del progetto tema ed esegui il comando _**npm run build**_ come mostrato nella schermata seguente.
 
 ![build-theme](assets/build-theme.png)
 
@@ -46,4 +46,8 @@ Una volta creato correttamente il progetto tematico, puoi testare le modifiche.
 * I pulsanti devono essere aggiornati con gli stili appropriati, come illustrato di seguito.
 
 ![pulsanti finali](assets/final-state-buttons.png)
+
+## Effettua il push delle modifiche
+
+Se sei soddisfatto delle modifiche, puoi inviare le modifiche all&#39;istanza cloud utilizzando la [pipeline front-end](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline)
 

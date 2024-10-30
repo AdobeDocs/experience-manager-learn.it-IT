@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 7dca86137d476418c39af62c3c7fa612635c0583
+source-git-commit: 1ed08d7784833b6c49139da525341af5ee587345
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1325'
 ht-degree: 15%
 
 ---
@@ -141,7 +141,7 @@ ht-degree: 15%
          + [Avvisi di attraversamento](./debugging/cloud-service/risks/traversals.md)
 + Consegna dei contenuti{#content-delivery}
    + [Nome di dominio personalizzato](./content-delivery/custom-domain-names.md)
-   + [Nome di dominio personalizzato con rete CDN gestita Adobe](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)
+   + [Nome di dominio personalizzato con CDN gestito da Adobe](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)
    + [Nome di dominio personalizzato con CDN cliente](./content-delivery/custom-domain-names-with-customer-managed-cdn.md)
    + [Memorizzazione in cache](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/overview){target=_blank}
    + [CDN Adobe - oltre la memorizzazione nella cache](./content-delivery/adobe-cdn-beyond-caching.md)
@@ -279,6 +279,7 @@ ht-degree: 15%
       + [1. Introduzione](./forms/using-vertical-tabs/introduction.md)
       + [2. Crea modulo](./forms/using-vertical-tabs/create-af.md)
       + [3. Navigazione](./forms/using-vertical-tabs/navigation.md)
+      + [4. Aggiunta di icone](./forms/using-vertical-tabs/icons.md)
    + Utilizzo del servizio di output e moduli{#forms-cs-output-and-forms-service}
       + [Genera PDF](./forms/forms-cs-output-and-forms-service/outputservice.md)
    + Generazione di documenti in AEM Forms CS{#doc-gen-formscs}
