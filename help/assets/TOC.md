@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 3e7668067f9e001b92011a3735fc8debe829e1c9
+source-git-commit: 511823c39f0141155bc1efd7fc599b4b9b05ce69
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 18%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -76,6 +76,7 @@ ht-degree: 18%
    + [plugin Sidekick](./edge-delivery-services/sidekick-plugin.md)
 
 + Content Hub{#content-hub}
+   + [Panoramica](./content-hub/overview.md)
    + [Configurazione](./content-hub/set-up.md)
    + [Aggiungi risorse](./content-hub/add-assets.md)
    + [Scarica Assets](./content-hub/download-assets.md)
@@ -103,10 +104,10 @@ ht-degree: 18%
    + [Integrazione Adobe Express](./creative-workflows/adobe-express.md)
    + [ADOBE EXPRESS e AEM ASSETS](./creative-workflows/adobe-express-aem-assets.md)
    + [App desktop AEM](./creative-workflows/aem-desktop-app.md)
-   + [Adobe collegamento risorsa](./creative-workflows/adobe-asset-link.md)
+   + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
-+ Adobe collegamento risorsa{#adobe-asset-link}
++ Adobe Asset Link{#adobe-asset-link}
    + [Configurazione](./adobe-asset-link/setup.md)
    + [Accedi ad Adobe Asset Link](./adobe-asset-link/launch-adobe-asset-link.md)
    + [Panoramica dei pannelli](./adobe-asset-link/panel-overview.md)
@@ -124,11 +125,11 @@ ht-degree: 18%
    + [Operazioni creative](./content-automation/creative-operations.md)
    + [Azioni Photoshop](./content-automation/photoshop-actions.md)
 
-+ Dynamic Medie{#dynamic-media}
-   + [Panoramica di Dynamic Medie](dynamic-media/dynamic-media-overview-feature-video-use.md)
++ Dynamic Media{#dynamic-media}
+   + [Panoramica di Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Applicazione desktop Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Immagini {#images}
-      + [Snapshot Dynamic Medie](dynamic-media/dynamic-media-snapshot.md)
+      + [Snapshot Dynamic Media](dynamic-media/dynamic-media-snapshot.md)
       + [Ritaglio avanzato](dynamic-media/smart-crop-feature-video-use.md)
       + [Nitidezza delle immagini](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
       + [Gestione colore](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
@@ -136,17 +137,17 @@ ht-degree: 18%
       + [Video a 360°](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
       + [Miniature video personalizzate](dynamic-media/dynamic-media-video-thumbnails-feature-video-use.md)
       + [Streaming adattivo DASH](dynamic-media/dynamic-media-dash.md)
-      + [Ritaglio video avanzato Dynamic Medie](dynamic-media/dynamic-media-smart-crop-video.md)
+      + [Ritaglio video avanzato Dynamic Media](dynamic-media/dynamic-media-smart-crop-video.md)
       + [Lettore video](dynamic-media/dynamic-media-video-player-feature-video-use.md)
    + Visualizzatori {#viewers}
       + [Visualizzatori](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
       + [Visualizzatori per immagini panoramiche e verticali](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
       + [Visualizzatori con Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
    + 3D {#3d}
-      + [Dynamic Medie 3D](dynamic-media/dynamic-media-3d-feature-video.md)
+      + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
    + Utilizzo con AEM Sites {#dm-with-aem-sites}
       + [Frammenti di esperienza](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
-      + [Componenti core Dynamic Medie](dynamic-media/dynamic-media-core-components.md)
+      + [Componenti core Dynamic Media](dynamic-media/dynamic-media-core-components.md)
 
    + Tutorials {#tutorials}
       + [Creazione di set carosello](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
@@ -159,8 +160,8 @@ ht-degree: 18%
       + [Generazione di URL e codici da incorporare](dynamic-media/tutorials/how-to-generate-public-url-or-embed-code-for-an-asset.md)
       + [Attivazione di un processo di esportazione](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
       + [Annullamento della validità della cache CDN](dynamic-media/tutorials/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
-      + [Utilizzo dei componenti core di Dynamic Medie](dynamic-media/tutorials/using-dm-components-on-site-page.md)
-      + [Eliminazione configurazione Dynamic Medie](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
+      + [Utilizzo dei componenti core di Dynamic Media](dynamic-media/tutorials/using-dm-components-on-site-page.md)
+      + [Eliminazione configurazione Dynamic Media](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
       + [Download di Assets nell’app Dynamic Media Classic](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [API IPS di Dynamic Media Classic](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
 
