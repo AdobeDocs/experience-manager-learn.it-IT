@@ -14,7 +14,7 @@ badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 0cc3d3bc-e4ea-4ab2-8878-adbcf0c914f5
 duration: 2252
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 774267b4f4c65c79f185fa3b33383ce9ddd136cb
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
@@ -23,13 +23,13 @@ ht-degree: 0%
 
 # Integrare AEM Sites e Adobe Analytics con Platform Web SDK
 
-Scopri l’**approccio moderno** su come integrare Adobe Experience Manager (AEM) e Adobe Analytics utilizzando Platform Web SDK. Questo tutorial completo ti guida attraverso il processo di raccolta diretta dei dati di [WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) pageview e CTA click. Ottieni informazioni preziose visualizzando i dati raccolti in Adobe Analysis Workspace, dove puoi esplorare varie metriche e dimensioni. Inoltre, esplora il set di dati di Platform per verificare e analizzare i dati. Unisciti a noi in questo percorso per sfruttare la potenza di AEM e Adobe Analytics per un processo decisionale basato sui dati.
+Scopri l’**approccio moderno** su come integrare Adobe Experience Manager (AEM) e Adobe Analytics utilizzando Platform Web SDK. Questo tutorial completo ti guida attraverso il processo di raccolta diretta dei dati di [WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) pageview e dei clic su CTA. Ottieni informazioni preziose visualizzando i dati raccolti in Adobe Analysis Workspace, dove puoi esplorare varie metriche e dimensioni. Inoltre, esplora il set di dati di Platform per verificare e analizzare i dati. Unisciti a noi in questo percorso per sfruttare la potenza di AEM e Adobe Analytics per un processo decisionale basato sui dati.
 
 ## Panoramica
 
-Ottenere informazioni sul comportamento degli utenti è un obiettivo fondamentale per ogni team di marketing. Comprendendo il modo in cui gli utenti interagiscono con i loro contenuti, i team possono prendere decisioni informate, ottimizzare le strategie e ottenere risultati migliori. Per raggiungere questo obiettivo, il team di marketing WKND, un’entità fittizia, ha fissato obiettivi sull’implementazione di Adobe Analytics sul proprio sito web. L’obiettivo principale è quello di raccogliere dati su due metriche chiave: visualizzazioni di pagina e clic di invito all’azione (CTA) nella pagina home.
+Ottenere informazioni sul comportamento degli utenti è un obiettivo fondamentale per ogni team di marketing. Comprendendo il modo in cui gli utenti interagiscono con i loro contenuti, i team possono prendere decisioni informate, ottimizzare le strategie e ottenere risultati migliori. Per raggiungere questo obiettivo, il team di marketing WKND, un’entità fittizia, ha fissato obiettivi sull’implementazione di Adobe Analytics sul proprio sito web. L’obiettivo principale è quello di raccogliere dati su due metriche chiave: visualizzazioni di pagina e clic sugli inviti all’azione della home page (CTA).
 
-Tracciando le visualizzazioni di pagina, il team è in grado di analizzare quali pagine ricevono più attenzione da parte degli utenti. Inoltre, il tracciamento dei clic CTA della home page fornisce informazioni utili sull’efficacia degli elementi di invito all’azione del team. Questi dati possono rivelare quali CTA risuonano con gli utenti, quali necessitano di aggiustamento e potenzialmente scoprire nuove opportunità per migliorare il coinvolgimento degli utenti e favorire le conversioni.
+Tracciando le visualizzazioni di pagina, il team è in grado di analizzare quali pagine ricevono più attenzione da parte degli utenti. Inoltre, il tracciamento dei clic di CTA sulla homepage fornisce informazioni preziose sull’efficacia degli elementi di invito all’azione del team. Questi dati possono rivelare quali CTA risuonano con gli utenti, quali necessitano di aggiustamento e potenzialmente scoprire nuove opportunità per migliorare il coinvolgimento degli utenti e favorire le conversioni.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419872?quality=12&learn=on)
@@ -92,7 +92,7 @@ Per ulteriori informazioni sulla configurazione e i concetti di Analytics, si co
 
 + [Suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html)
 + [Variabili di conversione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html)
-+ [Eventi di successo](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html)
++ [Eventi di successo](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event)
 + [Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)
 
 ## Aggiornare lo stream di dati - Aggiungere il servizio Analytics
@@ -119,7 +119,7 @@ Nell&#39;[esercitazione precedente](./web-sdk.md) viene creata una proprietà ta
 + Mappatura del nome della pagina su `eVar5`
 + Attivazione della chiamata di Analytics **pageview** ( o invia beacon)
 + Raccolta di dati CTA tramite Adobe Client Data Layer
-+ Mappatura di ID e nome CTA rispettivamente su `eVar6` e `eVar7`. Inoltre, il conteggio dei clic CTA su `event7`
++ Mappatura dell&#39;ID CTA e del nome rispettivamente su `eVar6` e `eVar7`. Inoltre, il conteggio dei clic di CTA su `event7`
 + Attivazione della chiamata di **clic sul collegamento** Analytics ( o invia beacon)
 
 
@@ -239,7 +239,7 @@ Per generare una quantità significativa di traffico a scopo di test, viene svil
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419884?quality=12&learn=on)
 
-## Verifica del set di dati: WKND pageview, dati CTA
+## Verifica set di dati: visualizzazione pagina WKND, dati CTA
 
 Il set di dati è un costrutto di archiviazione e gestione per una raccolta di dati come una tabella di database che segue uno schema. Il set di dati creato nell&#39;[esercitazione precedente](./web-sdk.md) viene riutilizzato per verificare che i dati di clic di pageview e CTA vengano acquisiti nel set di dati Experience Platform. Nell’interfaccia utente del set di dati, vengono visualizzati vari dettagli quali record totali, dimensioni e batch acquisiti, insieme a un grafico a barre visivamente accattivante.
 
@@ -249,7 +249,7 @@ Il set di dati è un costrutto di archiviazione e gestione per una raccolta di d
 
 Analysis Workspace è uno strumento potente all’interno di Adobe Analytics che consente di esplorare e visualizzare i dati in modo flessibile e interattivo. Fornisce un’interfaccia di trascinamento per creare rapporti personalizzati, eseguire segmentazioni avanzate e applicare varie visualizzazioni di dati.
 
-Riapriamo il progetto Analysis Workspace creato nel passaggio [Configura analisi](#setup-analytics---report-suite-analysis-workspace). Nella sezione **Pagine principali**, esamina varie metriche quali visite, visitatori univoci, voci, frequenza di rimbalzo e altro ancora. Per valutare le prestazioni delle pagine WKND e dei CTA della home page, trascina le dimensioni (Nome pagina WKND, Nome CTA WKND) e le metriche specifiche per WKND (Evento clic WKND CTA). Queste informazioni sono utili per gli esperti di marketing per capire quali CTA sono più efficaci e prendere decisioni basate sui dati, in linea con i loro obiettivi aziendali.
+Riapriamo il progetto Analysis Workspace creato nel passaggio [Configura analisi](#setup-analytics---report-suite-analysis-workspace). Nella sezione **Pagine principali**, esamina varie metriche quali visite, visitatori univoci, voci, frequenza di rimbalzo e altro ancora. Per valutare le prestazioni delle pagine WKND e dei CTA della home page, trascina le dimensioni (Nome pagina WKND, Nome CTA WKND) e le metriche specifiche per WKND (Evento clic CTA WKND). Queste informazioni sono utili per gli esperti di marketing per capire quali CTA sono più efficaci e prendere decisioni basate sui dati, in linea con i loro obiettivi aziendali.
 
 Per visualizzare i percorsi di utenti, utilizza la visualizzazione Flusso, che inizia con **Nome pagina WKND** ed espande in vari percorsi.
 
@@ -257,7 +257,7 @@ Per visualizzare i percorsi di utenti, utilizza la visualizzazione Flusso, che i
 
 ## Riepilogo
 
-Ottimo lavoro! Hai completato la configurazione di AEM e Adobe Analytics utilizzando Platform Web SDK per raccogliere e analizzare i dati sul clic di visualizzazione pagina e CTA.
+Ottimo lavoro! Hai completato la configurazione di AEM e Adobe Analytics utilizzando Platform Web SDK per raccogliere e analizzare i dati sul clic di visualizzazione della pagina e CTA.
 
 L’implementazione di Adobe Analytics è fondamentale per consentire ai team di marketing di acquisire informazioni sul comportamento degli utenti, prendere decisioni informate, ottimizzare i contenuti e prendere decisioni basate sui dati.
 
