@@ -11,7 +11,7 @@ thumbnail: 343040.jpeg
 last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 49f8df6e658b35aa3ba6e4f70cd39ff225c46120
+source-git-commit: 87dd4873152d4690abb1efcfebd43d10033afa0a
 workflow-type: tm+mt
 source-wordcount: '3919'
 ht-degree: 1%
@@ -24,7 +24,7 @@ Scopri come impostare e autenticare gli utenti finali (non autori AEM) in un IDP
 
 ## Quale SAML per AEM as a Cloud Service?
 
-L’integrazione SAML 2.0 con AEM Publish (o Anteprima), consente agli utenti finali di un’esperienza web basata su AEM di autenticarsi in un IDP (Identity Provider) non Adobe e di accedere all’AEM come utente autorizzato con un nome.
+L’integrazione SAML 2.0 con AEM Publish (o Anteprima), consente agli utenti finali di un’esperienza web basata su AEM di autenticarsi in un IDP (Identity Provider) non Adobe e di accedere all’AEM come utente autorizzato con nome.
 
 |                       | Autore AEM | Pubblicazione AEM |
 |-----------------------|:----------:|:-----------:|
@@ -249,7 +249,7 @@ La configurazione è una configurazione di fabbrica OSGi, il che significa che u
 
 +++ Glossario della configurazione OSGi del gestore autenticazione SAML 2.0
 
-### Configurazione OSGi del gestore autenticazione SAML 2.0 Adobe Granite{#configure-saml-2-0-authentication-handler-osgi-configuration}
+### Configurazione OSGi del gestore autenticazione SAML 2.0 di Adobe Granite{#configure-saml-2-0-authentication-handler-osgi-configuration}
 
 |                                   | Proprietà OSGi | Obbligatorio | Formato del valore | Valore predefinito | Descrizione |
 |-----------------------------------|-------------------------------|:--------:|:---------------------:|---------------------------|-------------|
@@ -283,7 +283,7 @@ La configurazione è una configurazione di fabbrica OSGi, il che significa che u
 
 ### Attributi utente AEM{#aem-user-attributes}
 
-AEM utilizza i seguenti attributi utente, che possono essere compilati tramite la proprietà `synchronizeAttributes` nella configurazione OSGi del gestore autenticazione SAML 2.0 di Adobe Granite.  Qualsiasi attributo IDP può essere sincronizzato con qualsiasi proprietà utente AEM, tuttavia la mappatura a AEM use attribute properties (elencato di seguito) consente al AEM di utilizzarlo naturalmente.
+AEM utilizza i seguenti attributi utente, che possono essere compilati tramite la proprietà `synchronizeAttributes` nella configurazione OSGi del gestore autenticazione di Adobe Granite SAML 2.0.  Qualsiasi attributo IDP può essere sincronizzato con qualsiasi proprietà utente AEM, tuttavia la mappatura a AEM use attribute properties (elencato di seguito) consente al AEM di utilizzarlo naturalmente.
 
 | Attributo utente | Percorso proprietà relativa dal nodo `rep:User` |
 |--------------------------------|--------------------------|
@@ -615,7 +615,7 @@ Consenti i pattern URL necessari in base all’utilizzo di GET o POST
 
 ```
 # Allow GET-based SAML authentication invocation
-/0191 { /type "allow" /method "GET" /url "/system/sling/login" /query="*" }
+/0191 { /type "allow" /method "GET" /url "/system/sling/login" /query "*" }
 
 # Allow POST-based SAML authentication invocation
 /0192 { /type "allow" /method "POST" /url "/system/sling/login" }
