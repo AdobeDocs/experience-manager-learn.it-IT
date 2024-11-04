@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: ec8e2804-1fd6-4e95-af6d-07d840069c8b
 duration: 379
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: ef9c70e7895176e3cd535141a5de3c49886e666e
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1694'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 [&lt;- Precedente: Layout dei file di base](./basic-file-layout.md)
 
-Questo documento analizza e spiega tutti i file di configurazione distribuiti in un server Dispatcher standard fornito con Adobe Managed Services. Il loro uso, le convenzioni di denominazione, ecc...
+Questo documento analizza e spiega tutti i file di configurazione distribuiti in un server Dispatcher standard fornito in Adobe Managed Services. Il loro uso, le convenzioni di denominazione, ecc...
 
 ## Convenzione di denominazione
 
@@ -119,7 +119,7 @@ Quando si estendono funzionalità e configurazioni in Apache Webserver installat
 
 ### La linea di base di Apache include
 
-![](assets/explanation-config-files/Apache-Webserver-Baseline-Includes.png)
+![La linea di base del server web Apache HTTPD include](assets/explanation-config-files/Apache-Webserver-Baseline-Includes.png)
 
 Come mostrato nel diagramma precedente, il file binario httpd cerca solo il file httpd.conf come file di configurazione.  Tale file contiene le seguenti istruzioni:
 
