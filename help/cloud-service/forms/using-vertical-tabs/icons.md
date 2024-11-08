@@ -1,5 +1,5 @@
 ---
-title: Utilizzo delle schede verticali in AEM Forms as a Cloud Service
+title: Aggiunta di icone personalizzate
 description: Aggiungere icone personalizzate alle schede verticali
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
@@ -11,9 +11,10 @@ feature: Adaptive Forms
 thumbnail: 331891.jpg
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16418
-source-git-commit: 1ed08d7784833b6c49139da525341af5ee587345
+exl-id: 20e44be0-5490-4414-9183-bb2d2a80bdf0
+source-git-commit: faa859897b6b9fbb0acff02000611de216ddda3e
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '676'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ L’aggiunta di icone personalizzate alle schede può migliorare l’esperienza 
 
 * Maggiore facilità d’uso: le icone possono comunicare rapidamente lo scopo di ogni scheda, semplificando la ricerca immediata da parte degli utenti. Suggerimenti visivi come le icone consentono agli utenti di navigare in modo più intuitivo.
 
-* Gerarchia visiva e focus: le icone creano una separazione più distinta tra le schede, migliorando la gerarchia visiva. Questo può aiutare le schede importanti a distinguersi e a guidare l’attenzione degli utenti in modo più efficace.
+* Gerarchia visiva e focus: le icone creano una separazione più distinta tra le schede, migliorando la gerarchia visiva. Questo può aiutare le schede importanti a distinguersi e a guidare efficacemente l’attenzione degli utenti.
 Seguendo questo articolo, dovresti essere in grado di posizionare le icone come mostrato di seguito
 
 ![icone](assets/icons.png)
@@ -42,9 +43,9 @@ Le icone contrassegnate in rosso sono le nuove icone aggiunte.
 
 ## Crea mappa-icone per memorizzare le icone
 
-Crea la mappa di icone per il file _variable.scss. La mappa SCSS $icon-map è una raccolta di coppie chiave-valore, in cui ogni chiave rappresenta un nome di icona (come casa, famiglia, ecc.) e ogni valore è il percorso del file di immagine associato a tale icona.
+Crea la mappa di icone nel file _variable.scss. La mappa SCSS $icon-map è una raccolta di coppie chiave-valore, in cui ogni chiave rappresenta un nome di icona (come casa, famiglia, ecc.) e ogni valore è il percorso del file di immagine associato a tale icona.
 
-![variable-scss](assets/variable.scss)
+![variable-scss](assets/variable_scss.png)
 
 ```css
 $icon-map: (
@@ -81,8 +82,7 @@ Aggiungi il codice seguente a _mixin.scss
 
 Il mixin add-icon-to-vertical-tab è progettato per aggiungere un&#39;icona personalizzata accanto al testo su una scheda verticale. Consente di includere facilmente un’immagine come icona nelle schede, posizionandola accanto al testo e formattandola per garantirne la coerenza e l’allineamento.
 
-Raggruppamento del mixin
-Ecco cosa fa ogni parte del mixin:
+Raggruppamento del mixin: ecco cosa fa ogni parte del mixin:
 
 Parametri:
 
