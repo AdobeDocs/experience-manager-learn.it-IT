@@ -9,7 +9,7 @@ level: Intermediate
 last-substantial-update: 2024-01-29T00:00:00Z
 exl-id: d268d5d6-f24f-4db9-b8e0-07dd769c6005
 duration: 122
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 12af84e3d9be24fabb01a64eced6279749668599
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
@@ -52,11 +52,11 @@ La riga 6 esporta i dati xml dal file PDF
 
 
 
-**Dopo aver installato il pacchetto, sarà necessario inserire nell&#39;elenco Consentiti i seguenti URL in Adobe Granite CSRF Filter.**
+**Dopo aver installato il pacchetto, sarà necessario inserire nell&#39;elenco Consentiti i seguenti URL nel filtro CSRF di Adobe Granite.**
 
 1. Segui i passaggi indicati di seguito per inserire nell&#39;elenco Consentiti i percorsi menzionati in precedenza.
 1. [Accesso a configMgr](http://localhost:4502/system/console/configMgr)
-1. Cerca Adobe di filtro CSRF Granite
+1. Cerca il filtro CSRF di Adobe Granite
 1. Aggiungi i seguenti 3 percorsi nelle sezioni escluse e salva
 1. /content/AemFormsSamples/mergedata
 1. /content/AemFormsSamples/exportdata
@@ -119,3 +119,4 @@ La confezione contiene 4 campioni. Nei paragrafi seguenti viene illustrato quand
    * xdpName: nome del file xdp da riprodurre come pdf
 
 [Puoi importare questa raccolta postman per testare l’API](assets/UsingDocumentServicesInAEMForms.postman_collection.json)
+
