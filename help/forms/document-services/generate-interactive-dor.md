@@ -10,9 +10,9 @@ jira: KT-9226
 exl-id: d9618cc8-d399-4850-8714-c38991862045
 last-substantial-update: 2020-02-07T00:00:00Z
 duration: 177
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 2625a9127c36ee191eb67128546864c9f6901663
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Puoi utilizzare uno degli strumenti online gratuiti per [generare XSD](https://w
 
 ### Creare un modulo adattivo
 
-Crea un modulo adattivo basato sull’XSD del passaggio precedente. Associa il modulo per utilizzare la libreria client &quot;irs&quot;. Questa libreria client ha il codice per effettuare una chiamata POST al servlet che restituisce il PDF all’applicazione chiamante
+Crea un modulo adattivo basato sull’XSD del passaggio precedente. Associa il modulo per utilizzare la libreria client &quot;irs&quot;. Questa libreria client ha il codice per effettuare una chiamata POST al servlet che restituisce il PDF all’applicazione chiamante.
 Il seguente codice viene attivato quando si fa clic su _Scarica PDF_
 
 ```javascript
@@ -211,7 +211,7 @@ public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
 }
 ```
 
-Nel codice di esempio, estraiamo il nome xdp e altri parametri dall’oggetto della richiesta. Se il modulo non è basato su XSD, viene creato il documento xml da unire con l’xdp.Se il modulo è basato su XSD, viene semplicemente estratto il nodo appropriato dai dati inviati del modulo adattivo per generare il documento xml da unire con il modello xdp.
+In questo codice di esempio, il nome xdp e altri parametri vengono estratti dall’oggetto della richiesta. Se il modulo non è basato su un XSD, viene creato un nuovo documento XML da unire con l&#39;XDP. Tuttavia, se il modulo è basato su XSD, il nodo pertinente viene estratto direttamente dai dati inviati del modulo adattivo e viene generato un documento XML per unirsi di conseguenza al modello xdp.
 
 ## Distribuire l’esempio sul server
 
@@ -226,6 +226,11 @@ DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 1. [Anteprima modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. Compila alcuni campi del modulo.
 1. Fai clic su Scarica PDF per scaricare il PDF. Potrebbe essere necessario attendere alcuni secondi per il download del PDF.
+
+>[!NOTE]
+>
+>Quando apri il file PDF scaricato utilizzando il visualizzatore pdf del browser, i dati non vengono visualizzati nel pdf. Apri il PDF scaricato utilizzando Adobe Acrobat o Adobe Reader.
+
 
 >[!NOTE]
 >
