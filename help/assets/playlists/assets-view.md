@@ -8,15 +8,15 @@ level: Beginner
 last-substantial-update: 2024-11-01T00:00:00Z
 doc-type: Catalog
 duration: 60
-source-git-commit: 197f8b0d664971283cd893417a43e4e85e1b4923
+exl-id: 76af4062-4d8d-4908-bd3d-ce5a8af2111a
+source-git-commit: c939bf218211ef4f515ac8c7eea67cc5425eb3a9
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '402'
 ht-degree: 1%
 
 ---
 
-
-# AEM Assets Assets visualizzare le playlist
+# AEM Assets Assets visualizzare le playlist video
 
 Esplora queste playlist per padroneggiare la vista dell’amministratore as a Cloud Service di AEM Assets: configurazione, ottimizzazione, utilizzo e integrazione perfetta con i flussi di lavoro creativi. Ottieni le informazioni necessarie per avere successo con AEM Assets as a Cloud Service.
 
@@ -184,5 +184,3 @@ Collaborazione fluida grazie all’integrazione di AEM Assets as a Cloud Service
     </div>
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
-
-
