@@ -11,9 +11,9 @@ thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 870
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 29ac030f3774da2c514525f7cb85f6f48b84369f
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1275'
 ht-degree: 2%
 
 ---
@@ -45,9 +45,7 @@ Quando si imposta o si configura l’uscita di porta flessibile con le API di Cl
 + ID del programma Cloud Manager
 + ID dell’ambiente Cloud Manager
 
-Per ulteriori dettagli, consulta la procedura dettagliata seguente per scoprire come impostare, configurare e ottenere le credenziali API di Cloud Manager e come utilizzarle per effettuare una chiamata API di Cloud Manager.
-
->[!VIDEO](https://video.tv.adobe.com/v/342235?quality=12&learn=on)
+Per ulteriori dettagli [consulta come impostare, configurare e ottenere le credenziali API di Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth), per utilizzarle per effettuare una chiamata API di Cloud Manager.
 
 Questo tutorial utilizza `curl` per creare le configurazioni API di Cloud Manager. I comandi `curl` forniti assumono una sintassi Linux/macOS. Se si utilizza il prompt dei comandi di Windows, sostituire il carattere di interruzione di riga `\` con `^`.
 

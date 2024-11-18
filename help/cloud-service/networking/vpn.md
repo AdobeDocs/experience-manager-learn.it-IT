@@ -11,9 +11,9 @@ thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
 last-substantial-update: 2024-04-27T00:00:00Z
 duration: 919
-source-git-commit: 1183fc5614f9547b56f22bafd9b54e10279f310f
+source-git-commit: 29ac030f3774da2c514525f7cb85f6f48b84369f
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1467'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ Un programma Cloud Manager può avere solo un tipo di infrastruttura di rete __s
 
 Quando si configura una rete privata virtuale utilizzando le API di Cloud Manager, è necessario quanto segue:
 
-+ Account di Adobe con [autorizzazioni Proprietario business Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
++ Account Adobe con [autorizzazioni Proprietario business Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
 + Accedi alle credenziali di autenticazione dell&#39;API Cloud Manager [](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
    + ID organizzazione (ID organizzazione IMS)
    + ID client (alias chiave API)
@@ -49,9 +49,7 @@ Quando si configura una rete privata virtuale utilizzando le API di Cloud Manage
 + ID dell’ambiente Cloud Manager
 + Una rete privata virtuale **basata su route**, con accesso a tutti i parametri di connessione necessari.
 
-Per ulteriori dettagli, consulta la procedura dettagliata seguente per scoprire come impostare, configurare e ottenere le credenziali API di Cloud Manager e come utilizzarle per effettuare una chiamata API di Cloud Manager.
-
->[!VIDEO](https://video.tv.adobe.com/v/342235?quality=12&learn=on)
+Per ulteriori dettagli [consulta come impostare, configurare e ottenere le credenziali API di Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth), per utilizzarle per effettuare una chiamata API di Cloud Manager.
 
 Questo tutorial utilizza `curl` per creare le configurazioni API di Cloud Manager. I comandi `curl` forniti assumono una sintassi Linux/macOS. Se si utilizza il prompt dei comandi di Windows, sostituire il carattere di interruzione di riga `\` con `^`.
 
