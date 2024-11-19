@@ -9,16 +9,16 @@ last-substantial-update: 2024-11-01T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 924b3bab-e0ed-4b07-bded-344aab61eac5
-source-git-commit: d95c0cfc64f22efa1490fb1e0d787b8d76006add
+source-git-commit: 33e0ded0cdcb5d8ed146fdc59c6f37495cd251eb
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
 
 # Playlist video per la visualizzazione Amministratore
 
-![Visualizzazione amministratore AEM Assets](./assets/admin-view.png){align=center}
+![Visualizzazione amministratore AEM Assets](./assets/admin-view.png){align="center"}
 
 Esplora queste playlist per padroneggiare la vista dell’amministratore as a Cloud Service di AEM Assets: configurazione, ottimizzazione, utilizzo e integrazione perfetta con i flussi di lavoro creativi. Ottieni le informazioni necessarie per avere successo con AEM Assets as a Cloud Service.
 

@@ -9,16 +9,16 @@ last-substantial-update: 2024-11-01T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 76af4062-4d8d-4908-bd3d-ce5a8af2111a
-source-git-commit: d95c0cfc64f22efa1490fb1e0d787b8d76006add
+source-git-commit: 889d9a15041e23fa42d24c508a131690db58738a
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '406'
 ht-degree: 1%
 
 ---
 
 # Playlist video per la visualizzazione Assets
 
-![AEM Assets Assets view](./assets/assets-view.png){align=center}
+![Vista Assets di AEM Assets](./assets/assets-view.png){align="center"}
 
 Esplora queste playlist per acquisire dimestichezza con la vista di AEM Assets as a Cloud Service Assets, inclusa la configurazione, l’ottimizzazione, l’utilizzo e l’integrazione perfetta con i flussi di lavoro creativi. Ottieni le informazioni necessarie per avere successo con AEM Assets as a Cloud Service.
 
