@@ -11,13 +11,13 @@ jira: KT-16515
 thumbnail: KT-16515.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
-source-git-commit: 6b8a8dc5cdcddfa2d8572bfd195bc67906882f67
+exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
+source-git-commit: 316e08e6647d6fd731cd49ae1bc139ce57c3a7f4
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 1%
 
 ---
-
 
 # Panoramica delle API AEM{#aem-apis-overview}
 
@@ -71,7 +71,7 @@ La specifica [OpenAPI](https://swagger.io/specification/) (precedentemente nota 
 
 **Forms**
 
-- [Servizi Forms Acrobat](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/): API per l&#39;utilizzo di moduli e documenti.
+- [API di Forms Communications](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/): API per l&#39;utilizzo di moduli e documenti.
 
 Nelle versioni future, verranno aggiunte più API AEM basate su OpenAPI per supportare casi d’uso aggiuntivi.
 
@@ -89,7 +89,7 @@ Le API AEM basate su OpenAPI supportano i seguenti metodi di autenticazione:
 
 Prima di accedere alle API di Adobe, è essenziale comprendere i seguenti concetti chiave:
 
-- **[Adobe Developer Console](https://developer.adobe.com/)**: hub per sviluppatori per accedere a API Adobe, SDK, eventi in tempo reale, funzioni senza server e altro ancora. Si noti che questo è diverso dal Developer Console _AEM_, utilizzato per il debug delle applicazioni AEM.
+- **[Adobe Developer Console](https://developer.adobe.com/)**: hub per sviluppatori per accedere a API Adobe, SDK, eventi in tempo reale, funzioni senza server e altro ancora. Si noti che è diverso dal Developer Console _AEM_, utilizzato per il debug delle applicazioni AEM.
 
 - **[Progetto Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/projects/)**: posizione centrale per la gestione di integrazioni API, eventi e funzioni di runtime. In questo caso puoi configurare le API, impostare l’autenticazione e generare le credenziali richieste.
 

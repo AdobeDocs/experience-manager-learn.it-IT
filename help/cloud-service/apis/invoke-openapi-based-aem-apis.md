@@ -1,6 +1,6 @@
 ---
 title: Come richiamare le API AEM basate su OpenAPI
-description: Scopri come richiamare le API AEM basate su OpenAPI dall’applicazione.
+description: Scopri come configurare e richiamare le API AEM basate su OpenAPI su AEM as a Cloud Service da applicazioni personalizzate.
 version: Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
@@ -11,17 +11,17 @@ jira: KT-16516
 thumbnail: KT-16516.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
-source-git-commit: 6b8a8dc5cdcddfa2d8572bfd195bc67906882f67
+exl-id: 24c641e7-ab4b-45ee-bbc7-bf6b88b40276
+source-git-commit: 316e08e6647d6fd731cd49ae1bc139ce57c3a7f4
 workflow-type: tm+mt
-source-wordcount: '1751'
+source-wordcount: '1761'
 ht-degree: 0%
 
 ---
 
-
 # Come richiamare le API AEM basate su OpenAPI{#invoke-openapi-based-aem-apis}
 
-Scopri come richiamare le API AEM basate su OpenAPI su AEM as a Cloud Service da applicazioni personalizzate.
+Scopri come configurare e richiamare le API AEM basate su OpenAPI su AEM as a Cloud Service da applicazioni personalizzate.
 
 >[!AVAILABILITY]
 >
@@ -501,4 +501,3 @@ I callout chiave dal codice di esempio dell’applicazione NodeJS sono:
 
 In questo tutorial hai imparato a richiamare le API AEM basate su OpenAPI da applicazioni personalizzate. Hai abilitato l’accesso alle API AEM, hai creato e configurato un progetto Adobe Developer Console (ADC).
 Nel progetto ADC, hai aggiunto le API AEM, ne hai configurato il tipo di autenticazione e hai associato il profilo di prodotto. Hai anche configurato l’istanza AEM per abilitare la comunicazione del progetto ADC e sviluppato un’applicazione NodeJS di esempio che chiama l’API Assets Author.
-
