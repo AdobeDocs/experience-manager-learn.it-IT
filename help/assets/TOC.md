@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: abc6b4df7026f702b3cdaac34fd8ac790670aaa0
+source-git-commit: 30745ba12e9b1bd9e1f3f137c68456efb67cf39a
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 16%
+source-wordcount: '445'
+ht-degree: 15%
 
 ---
 
@@ -76,9 +76,6 @@ ht-degree: 16%
    + [Tag avanzati per video](metadata/video-smart-tags.md)
    + [Importare ed esportare i metadati](metadata/metadata-import-export.md)
 
-+ Edge Delivery Services{#edge-delivery-services}
-   + [plugin Sidekick](./edge-delivery-services/sidekick-plugin.md)
-
 + Content Hub{#content-hub}
    + [Panoramica](./content-hub/overview.md)
    + [Configurazione](./content-hub/set-up.md)
@@ -88,6 +85,12 @@ ht-degree: 16%
    + [Varianti immagine con Adobe Express](./content-hub/image-variants.md)
    + [Raccolte](./content-hub/collections.md)
    + [Condivisione](./content-hub/share.md)
+
++ Edge Delivery Services{#edge-delivery-services}
+   + [plugin Sidekick](./edge-delivery-services/sidekick-plugin.md)
+
++ Adobe GenStudio{#adobe-genstudio}
+   + [AEM Assets e GenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
 
 + Condivisione e distribuzione{#sharing}
    + [Scaricare le risorse](./sharing/download.md)
