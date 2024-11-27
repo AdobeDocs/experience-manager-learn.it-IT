@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: e4a9ed215603e1a1726a5a031c1c18f93d438355
+source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
 workflow-type: tm+mt
-source-wordcount: '1331'
-ht-degree: 15%
+source-wordcount: '1346'
+ht-degree: 16%
 
 ---
 
@@ -275,6 +275,12 @@ ht-degree: 15%
       + [Creare elementi dati](./forms/form-data-analytics/data-elements.md)
       + [Creare le regole](./forms/form-data-analytics/rules.md)
       + [Testare la soluzione](./forms/form-data-analytics/test.md)
+   + Creazione Del Componente A Discesa Paesi{#countries-drop-down}
+      + [Introduzione](./forms/countries-drop-down/introduction.md)
+      + [Crea componente](./forms/countries-drop-down/component.md)
+      + [Crea finestra di dialogo](./forms/countries-drop-down/dialog.md)
+      + [Crea modello Sling](./forms/countries-drop-down/slingmodel.md)
+      + [Generazione e test](./forms/countries-drop-down/build.md)
    + Creazione di varianti di pulsanti{#style-system}
       + [Introduzione](./forms/style-system/introduction.md)
       + [Definisci criterio](./forms/style-system/style-policy.md)
