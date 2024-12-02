@@ -11,7 +11,7 @@ last-substantial-update: 2024-02-27T00:00:00Z
 jira: KT-14903
 thumbnail: KT-14903.jpeg
 exl-id: 563bab0e-21e3-487c-9bf3-de15c3a81aba
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 315bc1029b133f2ae857196f65e39229caaecaa1
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 1%
@@ -24,7 +24,7 @@ Scopri come creare campi personalizzati nell’Editor frammento di contenuto AEM
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
 
-Le estensioni dell&#39;interfaccia utente dell&#39;AEM devono essere sviluppate utilizzando il framework [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html), in quanto mantiene un aspetto coerente con il resto dell&#39;AEM e dispone anche di un&#39;ampia libreria di funzionalità predefinite, riducendo i tempi di sviluppo.
+Le estensioni dell&#39;interfaccia utente dell&#39;AEM devono essere sviluppate utilizzando il framework [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html), in quanto mantiene un aspetto coerente con il resto dell&#39;AEM e dispone inoltre di un&#39;ampia libreria di funzionalità predefinite, riducendo i tempi di sviluppo.
 
 ## Punto di estensione
 
@@ -135,7 +135,7 @@ export default ExtensionRegistration;
 Il componente React di `SkuField` aggiorna l&#39;Editor frammento di contenuto con un&#39;interfaccia utente personalizzata, utilizzando Adobe React Spectrum per il modulo di selezione. Gli elementi di rilievo includono:
 
 + Utilizzo di `useEffect` per l&#39;inizializzazione e la connessione all&#39;Editor frammenti di contenuto dell&#39;AEM, con uno stato di caricamento visualizzato fino al completamento dell&#39;installazione.
-+ Durante il rendering all&#39;interno di un iFrame, l&#39;altezza dell&#39;iFrame viene regolata dinamicamente tramite la funzione `onOpenChange` per adattarsi al menu a discesa del selettore dello spettro di React Adobe.
++ Durante il rendering all&#39;interno di un iFrame, l&#39;altezza dell&#39;iFrame viene regolata dinamicamente tramite la funzione `onOpenChange` per adattarsi al menu a discesa del selettore Spectrum di Adobe React.
 + Comunica le selezioni dei campi all&#39;host utilizzando `connection.host.field.onChange(value)` nella funzione `onSelectionChange`, assicurandosi che il valore selezionato sia convalidato e salvato automaticamente in base alle linee guida del modello per frammenti di contenuto.
 
 I campi personalizzati vengono riprodotti all’interno di un iFrame inserito nell’Editor frammento di contenuto. La comunicazione tra il codice di campo personalizzato e l&#39;Editor frammento di contenuto avviene esclusivamente tramite l&#39;oggetto `connection`, stabilito dalla funzione `attach` dal pacchetto `@adobe/uix-guest`.
@@ -274,3 +274,4 @@ const SkuField = (props) => {
 
 export default SkuField;
 ```
+
