@@ -12,7 +12,7 @@ last-substantial-update: 2024-01-30T00:00:00Z
 jira: KT-14879
 thumbnail: KT-14879.jpeg
 exl-id: c362011e-89e4-479c-9a6c-2e5caa3b6e02
-source-git-commit: 315bc1029b133f2ae857196f65e39229caaecaa1
+source-git-commit: 933493afff905bf27ba3d752c543c2e92732bc4c
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -259,4 +259,3 @@ I requisiti di elaborazione degli eventi differiscono da progetto a progetto, tu
 - L’elaborazione dell’evento può essere eseguita utilizzando Azione di Adobe I/O Runtime.
 - L’azione Runtime può comunicare con sistemi quali applicazioni interne, soluzioni di terze parti e soluzioni Adobe.
 - L’azione runtime funge da punto di ingresso a un processo aziendale progettato per una modifica del contenuto.
-
