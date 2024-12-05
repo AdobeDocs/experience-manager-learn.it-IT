@@ -9,10 +9,10 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 895766fe-aedd-4ae5-b3ba-2ebe769f2db3
 duration: 310
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '59'
-ht-degree: 5%
+source-wordcount: '71'
+ht-degree: 7%
 
 ---
 
@@ -26,3 +26,7 @@ Nella prima parte di una serie in tre parti, esploriamo le nozioni di base di Cl
 
 + Panoramica di Cloud Manager
 + Familiarizzazione dell&#39;interfaccia
+
+## Risorse aggiuntive
+
+Guarda i video correlati nella pagina [Cloud 5 season 2](../cloud5-season-2.md).

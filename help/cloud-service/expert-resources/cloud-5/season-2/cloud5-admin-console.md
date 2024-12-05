@@ -9,10 +9,10 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: eec1764e-1234-4b4c-993f-6584717e3c9e
 duration: 317
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 1%
+source-wordcount: '76'
+ht-degree: 3%
 
 ---
 
@@ -26,3 +26,7 @@ Vi siete mai chiesti come mai ogni voce faccia nel contesto dell&#39;AEM all&#39
 
 + [Comprendere l&#39;Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html)
 + [Panoramica Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html)
+
+## Risorse aggiuntive
+
+Guarda i video correlati nella pagina [Cloud 5 season 2](../cloud5-season-2.md).

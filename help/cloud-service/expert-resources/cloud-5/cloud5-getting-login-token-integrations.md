@@ -9,10 +9,10 @@ hidefromtoc: true
 thumbnail: 341277.jpeg
 exl-id: 41d78e6b-7076-4f4f-8d2c-4bf969b61024
 duration: 314
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 0%
+source-wordcount: '115'
+ht-degree: 1%
 
 ---
 
@@ -33,3 +33,7 @@ Una guida approfondita su come ottenere un token di accesso per le integrazioni 
 + Utilizzo semplice di un token generato
 
 Per informazioni più dettagliate su questo argomento, puoi fare riferimento al tutorial su [autenticazione basata su token](/help/headless-tutorial/authentication/overview.md).
+
+## Risorse aggiuntive
+
+Guarda i video correlati nella pagina [Cloud 5 season 1](cloud5-season-1.md).

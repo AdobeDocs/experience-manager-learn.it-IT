@@ -9,10 +9,10 @@ thumbnail: 340994.jpeg
 hidefromtoc: true
 exl-id: 3d6f3506-e1ec-4eeb-869f-02db2821b8c6
 duration: 311
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 0%
+source-wordcount: '82'
+ht-degree: 2%
 
 ---
 
@@ -30,3 +30,7 @@ La seconda parte dell’utilizzo della rete CDN dell’AEM e approfondisci varie
 + Porta la tua CDN (BYOCDN)
 
 [Visualizza Parte 1](cloud5-aem-cdn-part1.md)
+
+## Risorse aggiuntive
+
+Guarda i video correlati nella pagina [Cloud 5 season 1](cloud5-season-1.md).
