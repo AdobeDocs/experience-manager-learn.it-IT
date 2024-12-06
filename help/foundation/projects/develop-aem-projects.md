@@ -9,7 +9,7 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1417
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 54a7f93637545a4467c4c587bbc3d1d0de5c64a1
 workflow-type: tm+mt
 source-wordcount: '4441'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Questo tutorial illustra il codice necessario per creare un modello di progetto 
 * [Pacchetto tutorial completato](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Archivio completo del codice su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Questo tutorial presuppone una conoscenza di base delle [procedure di sviluppo AEM](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) e una certa familiarità con la [configurazione del progetto Maven AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=en). Tutto il codice menzionato è destinato a essere utilizzato come riferimento e deve essere distribuito solo a [un&#39;istanza AEM di sviluppo locale](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
+Questo tutorial presuppone una conoscenza di base delle [procedure di sviluppo AEM](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) e una certa familiarità con la [configurazione del progetto Maven AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html). Tutto il codice menzionato è destinato a essere utilizzato come riferimento e deve essere distribuito solo a [un&#39;istanza AEM di sviluppo locale](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
 
 ## Struttura di un modello di progetto
 
@@ -90,7 +90,7 @@ Uno dei motivi più interessanti per la creazione di un modello di progetto pers
 
 ## Creazione di un modello di progetto {#creating-project-template}
 
-Poiché stiamo principalmente copiando/configurando nodi, utilizzeremo CRXDE Lite. Nell&#39;istanza AEM locale, apri [CRXDE Liti](http://localhost:4502/crx/de/index.jsp).
+Poiché stiamo principalmente copiando/configurando nodi, utilizzeremo CRXDE Lite. Nell&#39;istanza AEM locale, apri [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
 
 1. Iniziare creando una cartella sotto `/apps/&lt;your-app-folder&gt;` denominata `projects`. Crea un&#39;altra cartella sotto quella denominata `templates`.
 
