@@ -11,22 +11,27 @@ badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 77
-source-git-commit: 7e0d7e87d72aa1e4450649afa6a962099ceb2db4
+source-git-commit: e02c3f66787c78152700b24236c29e9796f721de
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '386'
 ht-degree: 1%
 
 ---
 
 # Integrare AEM Forms e Marketo
 
-Marketo, parte di Adobe fornisce software di automazione del marketing incentrato sul marketing basato sull’account, tra cui e-mail, dispositivi mobili, social, annunci digitali, gestione web e analisi.
+
+Marketo, parte di Adobe, fornisce software di automazione del marketing incentrato sul marketing basato sull’account, tra cui e-mail, dispositivi mobili, social, annunci digitali, gestione web e analisi.
 
 Utilizzando il modello dati del modulo di AEM Forms, ora possiamo integrare facilmente il modulo AEM con Marketo.
 
 [Ulteriori informazioni sul modello dati modulo](https://helpx.adobe.com/experience-manager/6-5/forms/using/data-integration.html)
 
 Marketo espone un’API REST che consente l’esecuzione remota di molte delle funzionalità del sistema. Dalla creazione di programmi all’importazione in blocco di lead, sono disponibili molte opzioni che consentono il controllo dettagliato di un’istanza di Marketo. Utilizzando il modello dati modulo è abbastanza semplice integrare AEM Forms con Marketo.
+
+>[!NOTE]
+>
+>Questa esercitazione è personalizzata specificamente per AEM Forms 6.5. Se desideri integrare AEM Forms as a Cloud Service con Adobe Marketo Engage, consulta la [documentazione dedicata per tale integrazione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-adaptive-form-with-market-engage/integrate-form-to-marketo-engage).
 
 Questo tutorial illustra i passaggi necessari per l’integrazione di AEM Forms con Marketo utilizzando il modello dati del modulo. Al termine dell’esercitazione avrai a disposizione un bundle OSGi che eseguirà l’autenticazione personalizzata in base a Marketo. Avrai anche configurato l’origine dati utilizzando il file swagger fornito.
 
