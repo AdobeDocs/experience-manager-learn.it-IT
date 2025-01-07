@@ -1,6 +1,6 @@
 ---
 title: Come richiamare le API AEM basate su OpenAPI
-description: Scopri come configurare e richiamare le API AEM basate su OpenAPI su AEM as a Cloud Service da applicazioni personalizzate.
+description: Scopri come configurare e richiamare le API AEM basate su OpenAPI su AEM as a Cloud Service da applicazioni personalizzate utilizzando l’autenticazione server-to-server di OAuth.
 version: Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
@@ -12,16 +12,18 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
 exl-id: 24c641e7-ab4b-45ee-bbc7-bf6b88b40276
-source-git-commit: 316e08e6647d6fd731cd49ae1bc139ce57c3a7f4
+source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1800'
 ht-degree: 0%
 
 ---
 
-# Come richiamare le API AEM basate su OpenAPI{#invoke-openapi-based-aem-apis}
+# Richiama API AEM basate su OpenAPI per l’autenticazione server-to-server{#invoke-openapi-based-aem-apis}
 
-Scopri come configurare e richiamare le API AEM basate su OpenAPI su AEM as a Cloud Service da applicazioni personalizzate.
+Scopri come configurare e richiamare le API AEM basate su OpenAPI su AEM as a Cloud Service da applicazioni personalizzate utilizzando l’autenticazione _OAuth Server-to-Server_.
+
+L’autenticazione server-to-server di OAuth è ideale per i servizi back-end che richiedono l’accesso API senza l’interazione dell’utente. Utilizza il tipo di sovvenzione OAuth 2.0 _client_credentials_ per autenticare l&#39;applicazione client.
 
 >[!AVAILABILITY]
 >
@@ -30,7 +32,7 @@ Scopri come configurare e richiamare le API AEM basate su OpenAPI su AEM as a Cl
 In questo tutorial imparerai a:
 
 - Abilita l’accesso alle API AEM basate su OpenAPI per il tuo ambiente AEM as a Cloud Service.
-- Crea e configura un progetto Adobe Developer Console (ADC) per accedere alle API AEM utilizzando l’autenticazione server-to-server OAuth.
+- Crea e configura un progetto Adobe Developer Console (ADC) per accedere alle API AEM utilizzando _Autenticazione server-to-server OAuth_.
 - Sviluppa un’applicazione NodeJS di esempio che chiama l’API Assets Author per recuperare i metadati di una risorsa specifica.
 
 Prima di iniziare, assicurati di aver rivisto la sezione [Accesso alle API Adobe e ai concetti correlati](overview.md#accessing-adobe-apis-and-related-concepts).

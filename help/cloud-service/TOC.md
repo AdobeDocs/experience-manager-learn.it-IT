@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 9c0c0594d8bcecbf1e0daf7f3c5d7146adcdb08f
+source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: '1361'
 ht-degree: 16%
 
 ---
@@ -143,7 +143,8 @@ ht-degree: 16%
          + [Avvisi di attraversamento](./debugging/cloud-service/risks/traversals.md)
 + API AEM{#aem-apis}
    + [Panoramica](./apis/overview.md)
-   + [Richiama API AEM basate su OpenAPI](./apis/invoke-openapi-based-aem-apis.md)
+   + [API AEM basate su OpenAPI (server-to-server)](./apis/invoke-openapi-based-aem-apis.md)
+   + [API AEM basate su OpenAPI (autenticate dall’utente)](./apis/invoke-openapi-based-aem-apis-from-web-app.md)
 + Consegna dei contenuti{#content-delivery}
    + [Nome di dominio personalizzato](./content-delivery/custom-domain-names.md)
    + [Nome di dominio personalizzato con CDN gestito da Adobe](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)

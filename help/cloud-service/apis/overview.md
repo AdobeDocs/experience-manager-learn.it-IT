@@ -12,9 +12,9 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
 exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
-source-git-commit: 316e08e6647d6fd731cd49ae1bc139ce57c3a7f4
+source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '1024'
 ht-degree: 1%
 
 ---
@@ -79,11 +79,21 @@ Nelle versioni future, verranno aggiunte più API AEM basate su OpenAPI per supp
 
 Le API AEM basate su OpenAPI supportano i seguenti metodi di autenticazione:
 
-- **Credenziali server-to-server OAuth**: ideale per i servizi back-end che richiedono l&#39;accesso API senza interazione dell&#39;utente. Utilizza il tipo di concessione _client_credentials_, che consente la gestione degli accessi sicuri a livello di server. Per ulteriori informazioni, vedere [Credenziali server-to-server OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/#oauth-server-to-server-credential).
+- **Credenziali server-to-server OAuth**: ideale per i servizi back-end che richiedono accesso API senza interazione da parte dell&#39;utente. Utilizza il tipo di concessione _client_credentials_, che consente la gestione degli accessi sicuri a livello di server. Per ulteriori informazioni, vedere [Credenziali server-to-server OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/#oauth-server-to-server-credential).
 
 - **Credenziali app Web OAuth**: idonee per applicazioni Web con componenti front-end e _back-end_ che accedono alle API AEM per conto degli utenti. Utilizza il tipo di concessione _authorization_code_, in cui il server backend gestisce in modo sicuro segreti e token. Per ulteriori informazioni, vedere [Credenziali app Web OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation/#oauth-web-app-credential).
 
 - **Credenziali app a pagina singola OAuth**: progettate per l&#39;SPA in esecuzione nel browser, che deve accedere alle API per conto di un utente senza un server back-end. Utilizza il tipo di concessione _authorization_code_ e si basa su meccanismi di sicurezza lato client che utilizzano PKCE (Proof Key for Code Exchange) per proteggere il flusso del codice di autorizzazione. Per ulteriori informazioni, vedere [Credenziali app a pagina singola OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation/#oauth-single-page-app-credential).
+
+### Differenza tra le credenziali server-to-server OAuth e app Web OAuth/app a pagina singola{#difference-between-oauth-server-to-server-and-oauth-web-app-single-page-app-credentials}
+
+| | Server-to-server OAuth | Autenticazione utente OAuth (web-app) |
+| --- | --- | --- |
+| Scopo di autenticazione | Progettato per interazioni macchina-macchina. | Progettato per interazioni guidate dall&#39;utente. |
+| Comportamento del token | Emette i token di accesso che rappresentano l&#39;applicazione client stessa. | Emette i token di accesso per conto di un utente autenticato. |
+| Casi d’uso | Servizi back-end che richiedono accesso API senza interazione dell’utente. | Applicazioni web con componenti front-end e back-end che accedono alle API per conto degli utenti. |
+| Considerazioni sulla sicurezza | Archivia in modo sicuro le credenziali sensibili (`client_id`, `client_secret`) nei sistemi back-end. | L’utente si autentica e riceve il proprio token di accesso temporaneo. Archivia in modo sicuro le credenziali sensibili (`client_id`, `client_secret`) nei sistemi back-end. |
+| Tipo di concessione | _credenziali_client_ | _codice_autorizzazione_ |
 
 ## Accesso alle API di Adobe e ai concetti correlati{#accessing-adobe-apis-and-related-concepts}
 
@@ -102,4 +112,7 @@ Prima di accedere alle API di Adobe, è essenziale comprendere i seguenti concet
 Comprensione dei diversi tipi di API dell’AEM, tra cui
 API AEM basate su OpenAPI, e i concetti chiave per accedere alle API Adobe, ora puoi iniziare a creare applicazioni personalizzate che interagiscono con l’AEM.
 
-Iniziamo con l&#39;esercitazione [Come richiamare le API AEM basate su OpenAPI](invoke-openapi-based-aem-apis.md).
+Iniziamo con:
+
+- [Richiama API AEM basate su OpenAPI per l&#39;autenticazione server-to-server](invoke-openapi-based-aem-apis.md) tutorial che illustra come accedere alle API AEM basate su OpenAPI _utilizzando le credenziali server-to-server OAuth_.
+- [Richiama le API AEM basate su OpenAPI con l&#39;autenticazione utente da un&#39;esercitazione di un&#39;app Web](invoke-openapi-based-aem-apis-from-web-app.md), che illustra come accedere alle API AEM basate su OpenAPI da un&#39;applicazione Web _utilizzando le credenziali OAuth Web App_.
