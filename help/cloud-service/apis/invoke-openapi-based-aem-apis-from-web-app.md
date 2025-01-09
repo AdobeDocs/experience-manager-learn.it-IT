@@ -1,5 +1,5 @@
 ---
-title: Come richiamare API AEM basate su OpenAPI da un’app web
+title: Richiama API AEM basate su OpenAPI con autenticazione dell’utente da un’app web
 description: Scopri come richiamare le API AEM basate su OpenAPI su AEM as a Cloud Service da un’app web personalizzata utilizzando l’autenticazione OAuth Web App.
 version: Cloud Service
 feature: Developing
@@ -9,15 +9,15 @@ level: Intermediate
 doc-type: Tutorial
 jira: KT-16718
 thumbnail: KT-16718.jpeg
-last-substantial-update: 2024-12-17T00:00:00Z
+last-substantial-update: 2025-01-09T00:00:00Z
 duration: 0
-source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
+exl-id: dc35256a-3873-413f-b282-90948efd5f31
+source-git-commit: 3e91387368943b1b0d62c57f8172a0306758b28f
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2433'
 ht-degree: 0%
 
 ---
-
 
 # Richiama API AEM basate su OpenAPI con autenticazione dell’utente da un’app web{#invoke-openapi-based-aem-apis-from-web-app}
 
@@ -36,6 +36,8 @@ Prima di iniziare, cerchiamo di comprendere l’app web di esempio, la gestione 
 L’app PIM WKND è un’applicazione web di esempio progettata per gestire gli attributi del prodotto e i metadati delle relative risorse memorizzati in AEM as a Cloud Service. Questo esempio dimostra come le app web possono integrarsi perfettamente con le API Adobe per fornire flussi di lavoro efficienti e incentrati sull’utente.
 
 Il progetto Adobe Developer Console (ADC) è configurato per accedere all’API di authoring di Assets utilizzando l’autenticazione OAuth Web App. Fornisce il _client_id_ e il _client_secret_ necessari all&#39;app Web WKND-PIM per avviare il flusso di sovvenzione _authorization_code_.
+
+>[!VIDEO](https://video.tv.adobe.com/v/34260?quality=12&learn=on)
 
 Il diagramma seguente illustra il flusso funzionale dell&#39;app Web WKND-PIM _che ottiene token di accesso specifici dell&#39;utente per interagire con l&#39;API di authoring di Assets_.
 
@@ -66,7 +68,7 @@ Prima di iniziare, assicurati di aver rivisto la sezione [Accesso alle API Adobe
 
 ## Come utilizzare questa esercitazione{#how-to-use-this-tutorial}
 
-Puoi consultare la sezione [Revisione dei frammenti di codice chiave dell&#39;app Web](#review-web-app-key-code-snippets) per comprendere il flusso di autenticazione dell&#39;app Web OAuth e i frammenti di codice delle chiamate API utilizzati nell&#39;app Web WKND-PIM. Oppure passa direttamente alla sezione [Configurazione ed esecuzione dell&#39;app Web](#setup-run-web-app) per configurare ed eseguire l&#39;app Web WKND-PIM nel computer locale.
+Puoi consultare la sezione [Revisione dei frammenti di codice chiave dell&#39;app Web](#review-web-app-key-code-snippets) per comprendere il flusso di autenticazione dell&#39;app Web OAuth e i frammenti di codice per le chiamate API utilizzati nell&#39;app Web WKND-PIM. Oppure passare direttamente alla sezione [Configurazione ed esecuzione dell&#39;app Web](#setup-run-web-app) per configurare ed eseguire l&#39;app Web WKND-PIM nel computer locale.
 
 ## Rivedi snippet di codice chiave dell’app web{#review-web-app-key-code-snippets}
 
@@ -404,6 +406,11 @@ Le chiamate API AEM basate su OpenAPI vengono effettuate dal lato server (middle
 
 Per aggiornare il token di accesso prima della scadenza, puoi implementare il flusso del token di aggiornamento. Tuttavia, per semplificare l’esercitazione, l’app web WKND-PIM non implementa il flusso del token di aggiornamento.
 
+
+>[!TIP]
+>
+>Puoi seguire la sezione successiva per provare l’app web WKND-PIM sul computer locale e acquisire un’esperienza pratica con il flusso di autenticazione dell’app web OAuth e le chiamate API.
+
 ## Configurare ed eseguire l’app web
 
 Configuriamo ed eseguiamo l’app web WKND-PIM sul computer locale per comprendere il flusso di autenticazione dell’app web OAuth e le chiamate API.
@@ -526,7 +533,7 @@ Per impostazione predefinita, il progetto WKND Sites non dispone dello schema di
 
    ![Accedi alla cartella](assets/web-app/navigate-to-folder.png)
 
-1. Crea **PIM** e al suo interno crea la cartella **Camping**, quindi carica [immagini di esempio](./assets/web-app/camping-gear-imgs.zip) nella cartella **Camping**.
+1. Crea un **PIM** e al suo interno crea la cartella **Camping**, quindi carica [immagini di esempio](./assets/web-app/camping-gear-imgs.zip) nella cartella **Camping**.
 
    ![Cartella PIM](assets/web-app/pim-folder.png)
 
@@ -644,7 +651,7 @@ Con i passaggi precedenti, le risorse della cartella **PIM** sono pronte per mem
 
 >[!IMPORTANT]
 >
->Se l’utente autenticato non dispone delle autorizzazioni necessarie per rivedere o aggiornare i metadati delle risorse, le API AEM basate su OpenAPI restituiranno l’errore 403 Forbidden. In questo modo, anche se l’utente è autenticato e dispone di un token di accesso IMS valido, non può accedere alle risorse AEM senza le autorizzazioni necessarie.
+>Se l’utente autenticato non dispone delle autorizzazioni necessarie per rivedere o aggiornare i metadati delle risorse, le API AEM basate su OpenAPI restituiscono un errore 403 Forbidden. In questo modo, anche se l’utente è autenticato e dispone di un token di accesso IMS valido, non può accedere alle risorse AEM senza le autorizzazioni necessarie.
 
 
 ### Rivedi il codice dell’applicazione
