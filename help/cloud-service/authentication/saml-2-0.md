@@ -11,9 +11,9 @@ thumbnail: 343040.jpeg
 last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 87dd4873152d4690abb1efcfebd43d10033afa0a
+source-git-commit: a1f7395cc5f83174259d7a993fefc9964368b4bc
 workflow-type: tm+mt
-source-wordcount: '3919'
+source-wordcount: '4037'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Scopri come impostare e autenticare gli utenti finali (non autori AEM) in un IDP
 
 L’integrazione SAML 2.0 con AEM Publish (o Anteprima), consente agli utenti finali di un’esperienza web basata su AEM di autenticarsi in un IDP (Identity Provider) non Adobe e di accedere all’AEM come utente autorizzato con nome.
 
-|                       | Autore AEM | Pubblicazione AEM |
+|                       | AEM Author | AEM Publish |
 |-----------------------|:----------:|:-----------:|
 | Supporto SAML 2.0 | ✘ | ✔ |
 
@@ -43,7 +43,7 @@ Il flusso tipico di un’integrazione AEM-Publish SAML è il seguente:
    + L&#39;IDP richiede all&#39;utente le credenziali.
    + L&#39;utente è già autenticato con l&#39;IDP e non deve fornire ulteriori credenziali.
 1. IDP genera un&#39;asserzione SAML contenente i dati dell&#39;utente e la firma utilizzando il certificato privato dell&#39;IDP.
-1. IDP invia l’asserzione SAML tramite HTTP POST, tramite il browser web dell’utente, a AEM Publish.
+1. IDP invia l’asserzione SAML tramite HTTP POST, tramite il browser web dell’utente (RESPECTIVE_PROTECTED_PATH/saml_login), al Publish AEM.
 1. AEM Publish riceve l&#39;asserzione SAML e ne convalida l&#39;integrità e l&#39;autenticità utilizzando il certificato pubblico IDP.
 1. AEM Publish gestisce il record utente AEM in base alla configurazione OSGi SAML 2.0 e al contenuto della dichiarazione SAML.
    + Crea utente
@@ -402,7 +402,7 @@ Durante il processo di autenticazione SAML, l&#39;IDP avvia un POST HTTP lato cl
 
 L&#39;intestazione `Origin` della richiesta HTTP POST in genere ha un valore diverso rispetto all&#39;host Publish dell&#39;AEM, pertanto è necessaria la configurazione CORS.
 
-Durante il test dell&#39;autenticazione SAML sull&#39;SDK AEM locale (`localhost:4503`), l&#39;IDP può impostare l&#39;intestazione `Origin` su `null`. In tal caso, aggiungere `"null"` all&#39;elenco `alloworigin`.
+Durante il test dell&#39;autenticazione SAML sul SDK AEM locale (`localhost:4503`), l&#39;IDP può impostare l&#39;intestazione `Origin` su `null`. In tal caso, aggiungere `"null"` all&#39;elenco `alloworigin`.
 
 1. Crea un file di configurazione OSGi nel progetto in `/ui.config/src/main/content/jcr_root/wknd-examples/osgiconfig/config.publish/com.adobe.granite.cors.impl.CORSPolicyImpl~saml.cfg.json`
    + Cambia `/wknd-examples/` con il nome del progetto
@@ -439,6 +439,9 @@ Dopo aver eseguito correttamente l&#39;autenticazione nell&#39;IDP, l&#39;IDP or
 # Allow SAML HTTP POST to ../saml_login end points
 /0190 { /type "allow" /method "POST" /url "*/saml_login" }
 ```
+
+>[!NOTE]
+>Quando distribuisci più configurazioni SAML in AEM per vari percorsi protetti ed endpoint IDP distinti, accertati che l’IDP inserisca nell’endpoint RESPECTIVE_PROTECTED_PATH/saml_login per selezionare la configurazione SAML appropriata sul lato AEM. Se sono presenti configurazioni SAML duplicate per lo stesso percorso protetto, la selezione della configurazione SAML verrà eseguita in modo casuale.
 
 Se la riscrittura dell&#39;URL nel server web Apache è configurata (`dispatcher/src/conf.d/rewrites/rewrite.rules`), assicurati che le richieste agli endpoint `.../saml_login` non vengano gestite accidentalmente.
 
@@ -561,6 +564,12 @@ Distribuire il ramo Git Cloud Manager di destinazione (in questo esempio, `devel
 ## Richiamare l’autenticazione SAML
 
 Il flusso di autenticazione SAML può essere richiamato da una pagina web del sito AEM, creando un collegamento creato appositamente o un pulsante. I parametri descritti di seguito possono essere impostati a livello di programmazione in base alle esigenze. Ad esempio, un pulsante di accesso può impostare `saml_request_path`, ovvero il punto in cui l&#39;utente viene indirizzato dopo l&#39;autenticazione SAML, su pagine AEM diverse, in base al contesto del pulsante.
+
+## Memorizzazione in cache protetta durante l’utilizzo di SAML
+
+Nell’istanza di pubblicazione dell’AEM, la maggior parte delle pagine viene generalmente memorizzata nella cache. Tuttavia, per i percorsi protetti da SAML, la memorizzazione nella cache deve essere disabilitata o abilitata utilizzando la configurazione auth_checker. Per ulteriori informazioni, fare riferimento ai dettagli forniti [qui](https://experienceleague.adobe.com/it/docs/experience-manager-dispatcher/using/configuring/permissions-cache)
+
+Tieni presente che se memorizzi nella cache i percorsi protetti senza abilitare auth_checker, potresti riscontrare un comportamento imprevedibile.
 
 ### richiesta GET
 
