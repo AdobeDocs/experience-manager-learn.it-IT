@@ -12,9 +12,9 @@ last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
-source-git-commit: ede52c6c9feb0b35bc3729e28591cb4e7c7600f7
+source-git-commit: 99aa43460a76460175123a5bfe5138767491252b
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Consulta [Abilitare gli eventi AEM nell&#39;ambiente AEM Cloud Service](https://
 
 ## Iscrizione
 
-Per sottoscrivere gli eventi AEM, non è necessario scrivere codice in AEM, ma è configurato un progetto [Adobe Developer Console](https://developer.adobe.com/). Adobe Developer Console è un gateway per Adobe per API, SDK, eventi, runtime e App Builder.
+Per sottoscrivere gli eventi AEM, non è necessario scrivere codice in AEM, ma è configurato un progetto [Adobe Developer Console](https://developer.adobe.com/). Adobe Developer Console è un gateway per API, SDK, eventi, runtime e App Builder di Adobe.
 
 In questo caso, un _progetto_ in Adobe Developer Console ti consente di abbonarti agli eventi emessi dall&#39;ambiente AEM as a Cloud Service e di configurare la consegna degli eventi ai sistemi esterni.
 
@@ -99,7 +99,7 @@ Per ulteriori informazioni, vedere [Elaborazione di eventi AEM tramite eventi Ad
         <a  href="./examples/webhook.md"><img alt="Ricevere eventi AEM su un webhook" src="./assets/examples/webhook/webhook-example.png"/></a>
         <div><strong><a href="./examples/webhook.md">Ricevi eventi AEM su un webhook</a></strong></div>
         <p>
-          Utilizza l’Adobe fornito dal webhook per ricevere gli eventi AEM e rivedere i dettagli dell’evento.
+          Utilizza il webhook fornito da Adobe per ricevere gli eventi AEM e rivedere i dettagli dell’evento.
         </p>
       </td>
       <td>
@@ -125,5 +125,14 @@ Per ulteriori informazioni, vedere [Elaborazione di eventi AEM tramite eventi Ad
           Scopri come elaborare gli eventi AEM ricevuti utilizzando Azione Adobe I/O Runtime. L’elaborazione degli eventi include il callback dell’AEM, la persistenza dei dati dell’evento e la loro visualizzazione nell’SPA.
         </p>
       </td>
-  </tr>    
+  </tr>
+  <tr>
+    <td>
+        <a  href="./examples/assets-pim-integration.md"><img alt="Eventi AEM Assets per l’integrazione con la soluzione PIM" src="./assets/examples/assets-pim-integration/PIM-integration-tile.png"/></a>
+        <div><strong><a href="./examples/assets-pim-integration.md">Eventi AEM Assets per integrazione PIM</a></strong></div>
+        <p>
+          Scopri come integrare i sistemi AEM Assets e Product Information Management (PIM) per gli aggiornamenti dei metadati.
+        </p>
+      </td>
+  </tr> 
 </table>
