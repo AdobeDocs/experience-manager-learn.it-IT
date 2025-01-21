@@ -11,9 +11,9 @@ thumbnail: 343040.jpeg
 last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: a1f7395cc5f83174259d7a993fefc9964368b4bc
+source-git-commit: 6f8d2bdd4ffb1c643cebcdd59fb529d8da1c44cf
 workflow-type: tm+mt
-source-wordcount: '4037'
+source-wordcount: '4262'
 ht-degree: 1%
 
 ---
@@ -445,6 +445,10 @@ Dopo aver eseguito correttamente l&#39;autenticazione nell&#39;IDP, l&#39;IDP or
 
 Se la riscrittura dell&#39;URL nel server web Apache è configurata (`dispatcher/src/conf.d/rewrites/rewrite.rules`), assicurati che le richieste agli endpoint `.../saml_login` non vengano gestite accidentalmente.
 
+## Appartenenza a gruppo dinamico
+
+L&#39;appartenenza al gruppo dinamico è una funzionalità di [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html) che aumenta le prestazioni della valutazione e del provisioning del gruppo. Questa sezione descrive come vengono memorizzati utenti e gruppi quando questa funzione è abilitata e come modificare la configurazione del gestore di autenticazione SAML per abilitarlo per gli ambienti nuovi o esistenti.
+
 ### Abilitare l’iscrizione al gruppo dinamico per gli utenti SAML nei nuovi ambienti
 
 Per migliorare in modo significativo le prestazioni di valutazione dei gruppi nei nuovi ambienti AEM as a Cloud Service, si consiglia di attivare la funzione di iscrizione al gruppo dinamico nei nuovi ambienti.
@@ -518,7 +522,17 @@ Questo è il nodo per un membro utente di quel gruppo:
 }
 ```
 
-### Migrazione automatica all&#39;appartenenza a gruppi dinamici per gli ambienti esistenti
+### Abilitare l’iscrizione al gruppo dinamico per gli utenti SAML negli ambienti esistenti
+
+Come spiegato nella sezione precedente, il formato degli utenti e dei gruppi esterni è leggermente diverso da quello utilizzato per gli utenti e i gruppi locali. È possibile definire un nuovo ACL per i gruppi esterni ed eseguire il provisioning di nuovi utenti esterni, oppure utilizzare lo strumento di migrazione come descritto di seguito.
+
+#### Abilitazione dell’iscrizione dinamica ai gruppi per gli ambienti esistenti con utenti esterni
+
+Il gestore di autenticazione SAML crea utenti esterni quando viene specificata la seguente proprietà: `"identitySyncType": "idp"`. In questo caso, è possibile abilitare l&#39;appartenenza al gruppo dinamico modificando questa proprietà in: `"identitySyncType": "idp_dynamic"`. Non è richiesta alcuna migrazione.
+
+#### Migrazione automatica all&#39;appartenenza a gruppi dinamici per gli ambienti esistenti con utenti locali
+
+Il gestore di autenticazione SAML crea utenti locali quando viene specificata la proprietà seguente: `"identitySyncType": "default"`. Questo è anche il valore predefinito quando la proprietà non è specificata. In questa sezione vengono descritti i passaggi eseguiti dalla procedura di migrazione automatica.
 
 Quando questa migrazione è abilitata, viene eseguita durante l’autenticazione dell’utente e consiste dei seguenti passaggi:
 1. L’utente locale viene migrato a un utente esterno mantenendo il nome utente originale. Ciò implica che gli utenti locali migrati, che ora agiscono come utenti esterni, manterranno il nome utente originale invece di seguire la sintassi di denominazione indicata nella sezione precedente. Verrà aggiunta una proprietà aggiuntiva denominata: `rep:externalId` con il valore di `[user name];[idp]`. Utente `PrincipalName` non modificato.
@@ -533,18 +547,20 @@ Ad esempio, se prima della migrazione `user1` è un utente locale e un membro de
 `group1;idp` è membro del gruppo locale: `group1`.
 `user1` è quindi membro del gruppo locale: `group1` sebbene ereditarietà
 
-L&#39;appartenenza al gruppo per i gruppi esterni è memorizzata nel profilo utente nell&#39;attributo `rep:authorizableId`
+L&#39;appartenenza al gruppo per i gruppi esterni è archiviata nel profilo utente nella proprietà `rep:externalPrincipalNames`
 
 ### Come configurare la migrazione automatica all&#39;appartenenza a un gruppo dinamico
 
-1. Abilitare la proprietà `"identitySyncType": "idp_dynamic_simplified_id"` nel file di configurazione OSGI SAML: `com.adobe.granite.auth.saml.SamlAuthenticationHandler~...cfg.json`:
-2. Configura il nuovo servizio OSGI con PID: `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration~...` con la proprietà:
+1. Abilitare la proprietà `"identitySyncType": "idp_dynamic_simplified_id"` nel file di configurazione OSGi SAML: `com.adobe.granite.auth.saml.SamlAuthenticationHandler~...cfg.json`:
+2. Configurare il nuovo servizio OSGi con PID di fabbrica che inizia con: `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration~`. Ad esempio, un PID può essere: `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration~myIdP`. Imposta la seguente proprietà:
 
 ```
 {
-  "idpIdentifier": "<vaule of identitySyncType of saml configuration to be migrated>"
+  "idpIdentifier": "<value of IDP Identifier (idpIdentifier)" property from the "com.adobe.granite.auth.saml.SamlAuthenticationHandler" configuration to be migrated>"
 }
 ```
+
+Per migrare più configurazioni SAML, è necessario creare più configurazioni OSGi factory per `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration`, ognuna delle quali specifica un `idpIdentifier` per la migrazione.
 
 ## Distribuzione della configurazione SAML
 
