@@ -1,0 +1,39 @@
+---
+title: Creare un progetto di codice
+description: Crea un progetto di codice per Edge Delivery Services, modificabile tramite l’Editor universale.
+version: Cloud Service
+feature: Edge Delivery Services
+topic: Development
+role: Developer
+level: Beginner
+doc-type: Tutorial
+jira: KT-15832
+duration: 900
+source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 1%
+
+---
+
+
+# Creazione di un progetto di codice Edge Delivery Services
+
+Per creare siti Web AEM per Edge Delivery Services e Universal Editor, utilizzare il modello di progetto XWalk standard AEM [di Adobe](https://github.com/adobe-rnd/aem-boilerplate-xwalk). Questo modello crea un nuovo progetto di codice che contiene i file CSS e JavaScript utilizzati per creare l’esperienza del sito web. Questo modello crea un nuovo archivio GitHub e lo carica con il codice e la configurazione standard di Adobe, fornendo una solida base per il progetto del sito web AEM.
+
+Ricorda che [i siti Web AEM consegnati dai Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/edge-delivery-services/overview) hanno solo codice lato client (browser). Il codice del sito web non viene eseguito nei servizi Author o Publish dell’AEM.
+
+![Nuovo progetto Edge Delivery Services](./assets/1-new-project/new-project.png)
+
+Per creare un progetto di codice Edge Delivery Services il cui contenuto è modificabile in Universal Editor, effettua le seguenti operazioni:
+
+1. **Configura un account GitHub.** Se stai creando un progetto per la tua organizzazione, assicurati che questa disponga di un account GitHub e di essere membro.
+2. **Crea un nuovo progetto di codice** utilizzando il [modello di progetto XWalk standard AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
+3. **Installa l&#39;app GitHub di sincronizzazione codice AEM** e concedi l&#39;accesso all&#39;archivio. Puoi trovare l&#39;[app qui](https://github.com/apps/aem-code-sync).
+4. **Configura`fstab.yaml`** del nuovo progetto in modo che punti al servizio di authoring AEM corretto.
+
+   * Per fare delle prove, puoi utilizzare ambienti AEM as a Cloud Service di livello inferiore (Stage, Dev o RDE), tuttavia le implementazioni di siti web reali devono essere configurate per utilizzare un servizio di creazione AEM di produzione.
+
+5. **Modifica il`paths.json`** del nuovo progetto per mappare il percorso del servizio AEM Author alla directory principale del tuo sito Web.
+
+Per istruzioni più dettagliate, consulta la sezione [creare il progetto GitHub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) nella guida introduttiva.

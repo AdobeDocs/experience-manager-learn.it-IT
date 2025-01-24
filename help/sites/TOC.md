@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 4903b0742dca59e621707691f487a430b91e832b
+source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '582'
 ht-degree: 18%
 
 ---
@@ -98,6 +98,16 @@ ht-degree: 18%
       + [Struttura del documento](edge-delivery-services/developing/document-structure.md)
       + [Sviluppo locale](edge-delivery-services/developing/local-development.md)
       + [Git](edge-delivery-services/developing/git.md)
+      + Editor universale {#universal-editor}
+         + [Panoramica](./edge-delivery-services/developing/universal-editor/0-overview.md)
+         + [Nuovo progetto di codice](./edge-delivery-services/developing/universal-editor/1-new-code-project.md)
+         + [Nuovo sito AEM](./edge-delivery-services/developing/universal-editor/2-new-aem-site.md)
+         + [Ambiente di sviluppo locale](./edge-delivery-services/developing/universal-editor/3-local-development-environment.md)
+         + [Marchio del sito web](./edge-delivery-services/developing/universal-editor/4-website-branding.md)
+         + [Nuovo blocco](./edge-delivery-services/developing/universal-editor/5-new-block.md)
+         + [Creare il blocco](./edge-delivery-services/developing/universal-editor/6-author-block.md)
+         + [Blocca solo con CSS](./edge-delivery-services/developing/universal-editor/7a-block-css.md)
+         + [Blocca con CSS e JS](./edge-delivery-services/developing/universal-editor/7b-block-js-css.md)
    + Procedura{#how-to}
       + [Feed RSS](edge-delivery-services/how-to/rss.md)
       + [Condivisione social media](edge-delivery-services/how-to/social-media-sharing.md)
@@ -155,7 +165,7 @@ ht-degree: 18%
 + Integrazioni {#integrations}
    + Experience Platform {#experience-platform}
       + [Genera FPID](integrations/platform/fpid.md)
-      + [SDK per web](integrations/platform/web-sdk.md)
+      + [Web SDK](integrations/platform/web-sdk.md)
       + [Analytics utilizzando Platform Web SDK](integrations/platform/analytics-using-web-sdk.md)
    + Tag in Adobe Experience Platform {#experience-platform-data-collection-tags}
       + [Panoramica](integrations/experience-platform/data-collection/tags/overview.md)
