@@ -11,9 +11,9 @@ thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
 duration: 792
-source-git-commit: 60139d8531d65225fa1aa957f6897a6688033040
+source-git-commit: d199ff3b9f4d995614c193f52dc90270f2283adf
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Utilizzando il [progetto WKND Sites dell&#39;AEM](https://github.com/adobe/aem-g
 
 - Implementazione del pacchetto di codice e contenuti AEM (all, ui.apps)
 - Distribuzione del bundle OSGi e del file di configurazione
-- Apache e Dispatcher configurano la distribuzione come file zip
+- Distribuzione delle configurazioni di Apache e Dispatcher come file zip
 - Singoli file come HTL, `.content.xml` (finestra di dialogo XML) distribuzione
 - Rivedi altri comandi RDE come `status, reset and delete`
 
@@ -96,7 +96,7 @@ Miglioriamo `Hello World Component` e implementiamolo nell&#39;RDE.
    ...
    ```
 
-1. Verifica le modifiche sull’SDK AEM locale eseguendo la build Maven o sincronizzando i singoli file.
+1. Verifica le modifiche sul SDK AEM locale eseguendo la build Maven o sincronizzando i singoli file.
 
 1. Distribuire le modifiche all&#39;RDE tramite il pacchetto `ui.apps` o distribuendo i singoli file Dialog e HTL:
 
@@ -191,7 +191,7 @@ Impossibile distribuire singolarmente i file di configurazione Apache o Dispatch
    ...
    ```
 
-1. Verificare le modifiche localmente. Per ulteriori dettagli, vedere [Eseguire Dispatcher localmente](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#run-dispatcher-locally).
+1. Verificare le modifiche localmente. Per ulteriori dettagli, vedere [Eseguire Dispatcher localmente](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools).
 1. Distribuire le modifiche apportate all&#39;RDE eseguendo il comando seguente:
 
    ```shell
@@ -200,7 +200,49 @@ Impossibile distribuire singolarmente i file di configurazione Apache o Dispatch
    $ aio aem:rde:install target/aem-guides-wknd.dispatcher.cloud-2.1.3-SNAPSHOT.zip
    ```
 
+1. Verificare le modifiche nell&#39;RDE.
+
+### Distribuisci file di configurazione (YAML)
+
+I file di configurazione CDN, delle attività di manutenzione, dell&#39;inoltro del registro e dell&#39;autenticazione API AEM possono essere distribuiti in RDE utilizzando il comando `install`. Queste configurazioni vengono gestite come file YAML nella cartella `config` del progetto AEM. Per ulteriori dettagli, vedere [Configurazioni supportate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations).
+
+Per informazioni su come distribuire i file di configurazione, è possibile migliorare il file di configurazione `cdn` e distribuirlo in RDE.
+
+1. Apri il file `cdn.yaml` dalla cartella `config`
+1. Aggiorna la configurazione desiderata, ad esempio il limite di velocità a 200 richieste al secondo
+
+   ```yaml
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev", "stage", "prod"]
+   data:
+     trafficFilters:
+       rules:
+       #  Block client for 5m when it exceeds an average of 100 req/sec to origin on a time window of 10sec
+       - name: limit-origin-requests-client-ip
+         when:
+           reqProperty: tier
+           equals: 'publish'
+         rateLimit:
+           limit: 200 # updated rate limit
+           window: 10
+           count: fetches
+           penalty: 300
+           groupBy:
+             - reqProperty: clientIp
+         action: log
+   ...
+   ```
+
+1. Distribuire le modifiche all&#39;RDE eseguendo il comando seguente
+
+   ```shell
+   $ aio aem:rde:install -t env-config ./config/cdn.yaml
+   ```
+
 1. Verificare le modifiche nell&#39;RDE
+
 
 ## Comandi aggiuntivi del plug-in AEM RDE
 
@@ -222,7 +264,7 @@ aem rde restart  Restart the author and publish of an RDE
 aem rde status   Get a list of the bundles and configs deployed to the current rde.
 ```
 
-Utilizzando i comandi di cui sopra, il tuo RDE può essere gestito dall’IDE preferito per velocizzare il ciclo di sviluppo/implementazione.
+Utilizzando i comandi di cui sopra, l&#39;RDE può essere gestito dall&#39;IDE preferito per un ciclo di sviluppo/implementazione più rapido.
 
 ## Passaggio successivo
 
@@ -231,8 +273,8 @@ Scopri il ciclo di vita di [sviluppo/distribuzione utilizzando RDE](./developmen
 
 ## Risorse aggiuntive
 
-[Documentazione sui comandi RDE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#rde-cli-commands)
+[Documentazione sui comandi RDE](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
 
 [Plug-in CLI di Adobe I/O Runtime per interazioni con ambienti di sviluppo rapido AEM](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[Configurazione del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)
+[Configurazione del progetto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
