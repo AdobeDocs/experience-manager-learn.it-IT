@@ -13,9 +13,9 @@ badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 18a22f54-da58-4326-a7b0-3b1ac40ea0b5
 duration: 266
-source-git-commit: c638c1e012952f2f43806a325d729cde088ab9f5
+source-git-commit: 241c56d34c851cf9bac553cb9fc545a835e495d2
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ ht-degree: 0%
 # Generare FPID di Experience Platform con AEM Sites
 
 L’integrazione di siti Adobe Experience Manager (AEM) forniti tramite AEM Publish con Adobe Experience Platform (AEP) richiede che l’AEM generi e mantenga un cookie FPID (first party device ID) univoco per poter tenere traccia in modo univoco dell’attività dell’utente.
+
+Il cookie FPID deve essere impostato dal server (AEM Publish) invece di utilizzare JavaScript per creare un cookie lato client. Questo perché i browser moderni, come Safari e Firefox, possono bloccare o far scadere rapidamente i cookie generati da JavaScript.
 
 Leggi la documentazione di supporto per [scoprire i dettagli sulla collaborazione tra gli ID dispositivo di prima parte e gli ID Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=en).
 
