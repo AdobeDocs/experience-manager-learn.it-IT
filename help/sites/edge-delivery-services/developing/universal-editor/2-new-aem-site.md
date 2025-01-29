@@ -9,9 +9,10 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 500
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: d1ebcaf4-cea6-4820-8b05-3a0c71749d33
+source-git-commit: 567d2803c5cee274104b38f847820f7665320195
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -43,3 +44,4 @@ Dopo aver creato il sito in AEM Author, pubblicalo nell&#39;anteprima dei Edge D
 3. Scegli **Anteprima** in **Destinazioni** e fai clic su **Avanti**.
 4. In **Includi impostazioni figlio**, selezionare **Includi elementi figlio**, deselezionare altre opzioni e fare clic su **OK**.
 5. Fai clic su **Publish** per pubblicare il contenuto del sito in anteprima.
+6. Una volta pubblicate per l’anteprima, le pagine sono disponibili nell’ambiente di anteprima Edge Delivery Services (non verranno visualizzate nel servizio di anteprima AEM).
