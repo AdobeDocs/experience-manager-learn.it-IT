@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: 9698c17a-0ac8-426d-bccb-729b048cabd1
-source-git-commit: fcd2d7ae7a0bddb0d80aada2f206be7629b676e3
+source-git-commit: 775821f37df87905ea176b11ecf0ed4a42d00940
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1742'
 ht-degree: 0%
 
 ---
@@ -322,6 +322,8 @@ La definizione del blocco registra il blocco in Universal Editor. Ecco un raggru
 | `definition.plugins.xwalk.page.resourceType` | Definisce il tipo di risorsa Sling per il rendering del componente nell’Editor universale. Utilizza sempre un tipo di risorsa `core/franklin/components/block/v#/block`. |
 | `definition.plugins.xwalk.page.template.name` | Nome del blocco. Deve essere minuscolo e sillabato in modo che corrisponda al nome della cartella del blocco. Questo valore viene utilizzato anche per etichettare l’istanza del blocco nell’Editor universale. |
 | `definition.plugins.xwalk.page.template.model` | Collega questa definizione alla relativa definizione `model`, che controlla i campi di authoring visualizzati per il blocco nell&#39;editor universale. Il valore qui deve corrispondere a un valore `model.id`. |
+| `definition.plugins.xwalk.page.template.classes` | Proprietà facoltativa, il cui valore viene aggiunto all&#39;attributo `class` dell&#39;elemento HTML del blocco. Questo consente varianti dello stesso blocco. Il valore `classes` può essere reso modificabile [aggiungendo un campo di classi](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options) al [modello](#block-model) del blocco. |
+
 
 Di seguito è riportato un esempio di JSON per la definizione del blocco:
 
