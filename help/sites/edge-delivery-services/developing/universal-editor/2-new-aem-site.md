@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 500
 exl-id: d1ebcaf4-cea6-4820-8b05-3a0c71749d33
-source-git-commit: 567d2803c5cee274104b38f847820f7665320195
+source-git-commit: b40bf5afc28cb350c470336e38f8ca127fb05d79
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -25,15 +25,15 @@ Il sito AEM è il luogo in cui il contenuto del sito web viene memorizzato e cre
 
 ![Nuovo sito AEM per Edge Delivery Services ed editor universale](./assets/2-new-aem-site/new-site.png)
 
-Per creare un nuovo sito AEM, segui i passaggi seguenti:
-
+Segui i [passaggi dettagliati descritti nella documentazione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-aem-site) per creare un nuovo sito AEM.  Di seguito è riportato un elenco riepilogativo dei passaggi, inclusi i valori utilizzati in questa esercitazione.
 1. **Crea un nuovo sito** in AEM Author. Questa esercitazione utilizza la seguente denominazione del sito:
    * Titolo sito: `WKND (Universal Editor)`
    * Nome sito: `aem-wknd-eds-ue`
+
+      * Il valore del nome del sito deve corrispondere al nome del percorso del sito [ aggiunto a `paths.json`](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/path-mapping).
+
 2. **Importa il modello più recente** da [Edge Delivery Services con il modello del sito di creazione AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 3. **Assegnare un nome al sito** in modo che corrisponda al nome dell&#39;archivio GitHub e impostare l&#39;URL GitHub come URL dell&#39;archivio.
-
-Per istruzioni dettagliate, consultare la [sezione relativa alla creazione e alla modifica di un nuovo sito AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-aem-site) nella guida introduttiva.
 
 ## Publish il nuovo sito da visualizzare in anteprima
 
