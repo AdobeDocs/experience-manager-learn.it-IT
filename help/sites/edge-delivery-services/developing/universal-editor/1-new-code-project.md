@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: e1fb7a58-2bba-4952-ad53-53ecf80836db
-source-git-commit: 9b10d79190d805b86884f033e040891655c3c890
+source-git-commit: 48b402642738abf512edab68b6074935cb7dd444
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '285'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Ricorda che [i siti Web AEM consegnati dai Edge Delivery Services](https://exper
 
 ![Nuovo progetto Edge Delivery Services](./assets/1-new-project/new-project.png)
 
-Per creare un progetto di codice Edge Delivery Services il cui contenuto è modificabile in Universal Editor, effettua le seguenti operazioni:
+Segui i [passaggi dettagliati descritti nella documentazione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) di un progetto di codice Edge Delivery Services il cui contenuto è modificabile in Universal Editor.  Di seguito è riportato un elenco riepilogativo dei passaggi, inclusi i valori utilizzati in questa esercitazione.
 
 1. **Configura un account GitHub.** Se stai creando un progetto per la tua organizzazione, assicurati che questa disponga di un account GitHub e di essere membro.
 2. **Crea un nuovo progetto di codice** utilizzando il [modello di progetto XWalk standard AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
@@ -36,4 +36,4 @@ Per creare un progetto di codice Edge Delivery Services il cui contenuto è modi
 
 5. **Modifica il`paths.json`** del nuovo progetto per mappare il percorso del servizio AEM Author alla directory principale del tuo sito Web.
 
-Per istruzioni più dettagliate, consulta la sezione [creare il progetto GitHub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) nella guida introduttiva.
+Questo archivio Git viene clonato nel capitolo [Local Development Environment](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/edge-delivery-services/developing/universal-editor/3-local-development-environment) e dove viene sviluppato il codice.
