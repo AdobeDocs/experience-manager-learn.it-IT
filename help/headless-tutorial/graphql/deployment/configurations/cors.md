@@ -10,8 +10,8 @@ jira: KT-10830
 thumbnail: KT-10830.jpg
 exl-id: 394792e4-59c8-43c1-914e-a92cdfde2f8a
 last-substantial-update: 2024-03-22T00:00:00Z
-duration: 184
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+duration: 185
+source-git-commit: 1ad0c609ca0edb34e556c1453462c6d1041f5807
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 2%
@@ -34,7 +34,7 @@ CORS è richiesto per le connessioni basate su browser alle API GraphQL dell’A
 |----------------------------:|:---------------------:|:-------------:|:---------:|:----------------:|
 | Richiede la configurazione CORS | ✔ | ✔ | ✘ | ✘ |
 
-## Autore AEM
+## AEM Author
 
 L’abilitazione di CORS sul servizio di authoring AEM è diversa dai servizi di anteprima AEM Publish e AEM. Il servizio di authoring AEM richiede che una configurazione OSGi venga aggiunta alla cartella della modalità di esecuzione del servizio di authoring AEM e non utilizza una configurazione Dispatcher.
 
@@ -42,7 +42,7 @@ L’abilitazione di CORS sul servizio di authoring AEM è diversa dai servizi di
 
 La Configuration Factory AEM CORS OSGi definisce i criteri consentiti per accettare le richieste HTTP CORS.
 
-| Il client si collega a | Autore AEM | Pubblicazione AEM | Anteprima AEM |
+| Il client si collega a | AEM Author | AEM Publish | Anteprima AEM |
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
 | Richiede la configurazione OSGi CORS | ✔ | ✘ | ✘ |
 
@@ -100,7 +100,7 @@ L’esempio seguente supporta l’utilizzo di query persistenti di AEM GraphQL s
 
 + [Un esempio della configurazione OSGi è disponibile nel progetto WKND.](https://github.com/adobe/aem-guides-wknd/blob/main/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author/com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql.cfg.json)
 
-## Pubblicazione AEM
+## AEM Publish
 
 L’abilitazione di CORS sui servizi AEM Publish (e Anteprima) è diversa dal servizio AEM Author. Il servizio Publish per AEM richiede l&#39;aggiunta di una configurazione AEM Dispatcher alla configurazione Dispatcher del Publish AEM. Il Publish AEM non utilizza una [configurazione OSGi](#osgi-configuration).
 
@@ -113,7 +113,7 @@ Durante la configurazione di CORS su AEM Publish, assicurati:
 
 Il Dispatcher del servizio Publish (e Anteprima) dell’AEM deve essere configurato per supportare CORS.
 
-| Il client si collega a | Autore AEM | Pubblicazione AEM | Anteprima AEM |
+| Il client si collega a | AEM Author | AEM Publish | Anteprima AEM |
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
 | Richiede la configurazione Dispatcher CORS | ✘ | ✔ | ✔ |
 
