@@ -12,9 +12,9 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 1b493d85303e539e07ba8b080ed55ef2af18bfcb
+source-git-commit: 0e8b76b6e870978c6db9c9e7a07a6259e931bdcc
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1924'
 ht-degree: 1%
 
 ---
@@ -31,14 +31,14 @@ Comprendiamo le protezioni DDoS predefinite per il tuo sito web AEM:
 
 - **Memorizzazione in cache:** con criteri di memorizzazione nella cache validi, l&#39;impatto di un attacco DDoS è più limitato perché la rete CDN impedisce alla maggior parte delle richieste di andare all&#39;origine e causare il deterioramento delle prestazioni.
 - **Scalabilità automatica:** i servizi di authoring e pubblicazione dell&#39;AEM eseguono la scalabilità automatica per gestire i picchi di traffico, anche se possono ancora essere influenzati da improvvisi e massicci aumenti del traffico.
-- **Blocco:** La rete CDN Adobe blocca il traffico verso l&#39;origine se supera una frequenza definita dall&#39;Adobe da un indirizzo IP specifico, in base al PoP (punto di presenza) della rete CDN.
-- **Avvisi:** Il Centro azioni invia una notifica di avviso di picco di traffico all&#39;origine quando il traffico supera una determinata velocità. Questo avviso viene attivato quando il traffico verso un determinato PoP CDN supera una frequenza di richieste _definita da Adobe_ per indirizzo IP. Consulta [Avvisi sulle regole del filtro del traffico](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) per ulteriori dettagli.
+- **Blocco:** Adobe CDN blocca il traffico verso l&#39;origine se supera una frequenza definita dall&#39;Adobe da un indirizzo IP specifico, in base al PoP (punto di presenza) CDN.
+- **Avvisi:** Il Centro azioni invia una notifica di avviso di picco di traffico all&#39;origine quando il traffico supera una determinata velocità. Questo avviso viene attivato quando il traffico verso un determinato PoP CDN supera una frequenza di richieste _Adobe_ per indirizzo IP. Consulta [Avvisi sulle regole del filtro del traffico](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) per ulteriori dettagli.
 
-Queste protezioni integrate devono essere considerate una base per la capacità di un&#39;organizzazione di ridurre al minimo l&#39;impatto sulle prestazioni di un attacco DDoS. Poiché ogni sito Web ha caratteristiche di prestazioni diverse e può notare un peggioramento delle prestazioni prima che venga raggiunto il limite di velocità definito dall&#39;Adobe, si consiglia di estendere le protezioni predefinite tramite _configurazione cliente_.
+Queste protezioni integrate devono essere considerate una base per la capacità di un&#39;organizzazione di ridurre al minimo l&#39;impatto sulle prestazioni di un attacco DDoS. Poiché ogni sito Web ha caratteristiche di prestazioni diverse e può notare un peggioramento delle prestazioni prima che venga raggiunto il limite di velocità definito dall&#39;Adobe, si consiglia di estendere le protezioni predefinite tramite _configurazione del cliente_.
 
 Vediamo alcune misure aggiuntive consigliate che i clienti possono adottare per proteggere i propri siti web dagli attacchi DDoS:
 
-- Dichiara **regole filtro traffico limite frequenza** per bloccare il traffico che supera una determinata velocità da un singolo indirizzo IP, per PoP. Si tratta in genere di una soglia inferiore rispetto al limite di velocità definito dall’Adobe.
+- Dichiara **regole filtro traffico limite frequenza** per bloccare il traffico che supera una determinata velocità da un singolo indirizzo IP, per PoP. Si tratta in genere di una soglia inferiore rispetto al limite di velocità definito da Adobe.
 - Configura **avvisi** sulle regole del filtro del traffico del limite di frequenza tramite un&#39;&quot;azione di avviso&quot; in modo che, quando la regola viene attivata, venga inviata una notifica al Centro operativo.
 - Aumentare la copertura della cache dichiarando **trasformazioni richiesta** per ignorare i parametri di query.
 
@@ -53,7 +53,7 @@ Esistono due varianti delle regole di traffico dei limiti di velocità:
 
 I passaggi seguenti riflettono il probabile processo attraverso il quale i clienti dovrebbero proteggere i loro siti web.
 
-1. Riconosci la necessità di una regola per il filtro del traffico del limite di velocità. Questo potrebbe essere il risultato della ricezione di un avviso di picco di traffico preconfigurato da Adobe all’origine, oppure potrebbe essere una decisione proattiva di prendere precauzioni per ridurre il rischio di un DDoS di successo.
+1. Riconosci la necessità di una regola per il filtro del traffico del limite di velocità. Questo potrebbe essere il risultato della ricezione dell’avviso predefinito di picco di traffico di Adobe all’origine, oppure potrebbe essere una decisione proattiva di prendere precauzioni per ridurre il rischio di un DDoS di successo.
 1. Analizza i pattern di traffico utilizzando una dashboard, se il tuo sito è già attivo, per determinare le soglie ottimali per le regole del filtro del traffico del limite di velocità. Se il sito non è ancora attivo, scegli i valori in base alle aspettative di traffico.
 1. Utilizzando i valori del passaggio precedente, configura le regole del filtro del traffico del limite di velocità. Assicurati di abilitare gli avvisi corrispondenti in modo da ricevere notifiche ogni volta che la soglia viene raggiunta.
 1. Ricevi avvisi sulle regole del filtro del traffico ogni volta che si verificano picchi di traffico, per ottenere informazioni utili su come la tua organizzazione potrebbe essere bersaglio di attacchi da parte di attori dannosi.
@@ -63,15 +63,15 @@ Il resto di questa esercitazione ti guida attraverso questo processo.
 
 ## Riconoscere la necessità di configurare le regole {#recognize-the-need}
 
-Come accennato in precedenza, per impostazione predefinita, Adobe blocca il traffico sulla rete CDN che supera una determinata velocità. Tuttavia, alcuni siti web potrebbero riscontrare un calo delle prestazioni al di sotto di tale soglia. Pertanto, è necessario configurare le regole del filtro del traffico del limite di velocità.
+Come accennato in precedenza, Adobe blocca per impostazione predefinita il traffico sulla rete CDN che supera una determinata velocità; tuttavia, alcuni siti web potrebbero riscontrare un calo delle prestazioni al di sotto di tale soglia. Pertanto, è necessario configurare le regole del filtro del traffico del limite di velocità.
 
 Idealmente, puoi configurare le regole prima di andare in produzione dal vivo. In pratica, molte organizzazioni dichiarano le regole in modo reattivo solo una volta avvisate di un picco di traffico che indica un probabile attacco.
 
-L&#39;Adobe invia un avviso di picco di traffico all&#39;origine come [Notifica Centro azioni](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/actions-center) quando viene superata una soglia predefinita di traffico da un singolo indirizzo IP per un determinato POP. Se hai ricevuto un avviso di questo tipo, ti consigliamo di configurare una regola per il filtro del traffico del limite di frequenza. Questo avviso predefinito è diverso dagli avvisi che devono essere abilitati esplicitamente dai clienti quando si definiscono le regole del filtro del traffico, e che verranno trattati in una sezione futura.
+Adobe invia un avviso di picco di traffico all&#39;origine come [Notifica Centro azioni](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/actions-center) quando viene superata una soglia predefinita di traffico da un singolo indirizzo IP per un determinato POP. Se hai ricevuto un avviso di questo tipo, ti consigliamo di configurare una regola per il filtro del traffico del limite di frequenza. Questo avviso predefinito è diverso dagli avvisi che devono essere abilitati esplicitamente dai clienti quando si definiscono le regole del filtro del traffico, e che verranno trattati in una sezione futura.
 
 ## Analisi dei pattern di traffico {#analyze-traffic}
 
-Se il sito è già attivo, puoi analizzare i pattern di traffico utilizzando i registri CDN e i dashboard forniti con gli Adobi.
+Se il sito è già attivo, puoi analizzare i pattern di traffico utilizzando i registri CDN e le dashboard fornite dall’Adobe.
 
 - **Dashboard traffico CDN**: fornisce informazioni sul traffico tramite CDN e il tasso di richieste di origine, i tassi di errore 4xx e 5xx e le richieste non memorizzate nella cache. Fornisce inoltre il numero massimo di richieste CND e Origin al secondo per indirizzo IP del client e ulteriori informazioni per ottimizzare le configurazioni CDN.
 
@@ -109,7 +109,7 @@ Nelle dashboard ELK e Splunk sono disponibili le seguenti visualizzazioni:
   **Dashboard ELK**:
   ![Dashboard ELK - Numero massimo richieste per IP/POP](./assets/elk-edge-max-per-ip-pop.png)
 
-  **Dashboard Splunk**:\
+  **Dashboard Splunk**:
   ![Dashboard Splunk - Numero massimo richieste per IP/POP](./assets/splunk-edge-max-per-ip-pop.png)
 
 - **RPS origine per IP client e POP**: questa visualizzazione mostra il numero massimo di richieste per IP/POP **all&#39;origine**. Il picco nella visualizzazione indica il numero massimo di richieste.
@@ -168,10 +168,10 @@ data:
           count: all # count all requests
           groupBy:
             - reqProperty: clientIp
-        action: 
+        action:
           type: log
-          experimental_alert: true
-    #  Prevent attack at origin by blocking client for 5 minutes if they make more than 100 requests per second on average            
+          alert: true
+    #  Prevent attack at origin by blocking client for 5 minutes if they make more than 100 requests per second on average
       - name: prevent-dos-attacks-origin
         when:
           reqProperty: tier
@@ -183,17 +183,12 @@ data:
           count: fetches # count only fetches
           groupBy:
             - reqProperty: clientIp
-        action: 
+        action:
           type: log
-          experimental_alert: true   
-          
+          alert: true
 ```
 
 Si noti che vengono dichiarate sia le regole di origine che le regole edge e che la proprietà alert è impostata su `true` in modo da poter ricevere gli alert ogni volta che viene raggiunta la soglia, probabilmente a indicare un attacco.
-
->[!NOTE]
->
->Il prefisso _sperimentale__ davanti a experiment_alert verrà rimosso quando la funzione di avviso verrà rilasciata. Per partecipare al programma di adozione anticipata, inviare un&#39;e-mail a **<aemcs-waf-adopter@adobe.com>**.
 
 Si consiglia di impostare il tipo di azione per la registrazione iniziale, in modo da poter monitorare il traffico per alcune ore o giorni, garantendo che il traffico legittimo non superi queste tariffe. Dopo alcuni giorni, passa alla modalità blocco.
 
@@ -211,13 +206,13 @@ Oltre alle regole del filtro del traffico per il limite di frequenza, si consigl
 kind: "CDN"
 version: "1"
 metadata:
-  envTypes: 
+  envTypes:
     - dev
     - stage
-    - prod  
-data:  
-  experimental_requestTransformations:
-    rules:            
+    - prod
+data:
+  requestTransformations:
+    rules:
       - name: unset-all-query-params-except-those-needed
         when:
           reqProperty: tier
@@ -229,7 +224,7 @@ data:
 
 ## Ricezione degli avvisi sulle regole del filtro del traffico {#receiving-alerts}
 
-Come accennato in precedenza, se la regola del filtro del traffico include *experiment_alert: true*, viene ricevuto un avviso quando la regola viene rilevata.
+Come accennato in precedenza, se la regola del filtro del traffico include *avviso: true*, viene ricevuto un avviso quando la regola viene trovata.
 
 ## Intervenire sugli avvisi {#acting-on-alerts}
 
@@ -242,7 +237,7 @@ Questa sezione descrive i metodi per simulare un attacco DoS, che può essere ut
 >[!CAUTION]
 >
 > Non eseguire questi passaggi in un ambiente di produzione. I seguenti passaggi sono solo a scopo di simulazione.
-> 
+>
 >Se hai ricevuto un avviso che indica un picco di traffico, passa alla sezione [Analisi dei pattern di traffico](#analyzing-traffic-patterns).
 
 Per simulare un attacco, è possibile utilizzare strumenti come [Apache Benchmark](https://httpd.apache.org/docs/2.4/programs/ab.html), [Apache JMeter](https://jmeter.apache.org/), [Vegeta](https://github.com/tsenart/vegeta) e altri.
