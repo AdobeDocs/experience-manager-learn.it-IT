@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 700
 exl-id: 187c305a-eb86-4229-9896-a74f5d9d822e
-source-git-commit: ecf37e1f964d0cda90eeca11b224ab950727d2ad
+source-git-commit: 66bc4cb6f992c64b1a7e32310ce3e26515f3d380
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '973'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,11 @@ Gli strumenti e i processi di sviluppo per un progetto di sito web Edge Delivery
 
 ## Topologia di sviluppo
 
-La topologia di sviluppo per un progetto di sito Web Edge Delivery Services modificabile con Editor universale è costituita dai seguenti aspetti:
+Questo video fornisce una panoramica della topologia di sviluppo di un progetto di sito Web Edge Delivery Services modificabile con Universal Editor.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3443978/?learn=on&enablevpops)
+
++++Vedi ulteriori dettagli sulla topologia di sviluppo
 
 - **Archivio GitHub**:
    - **Scopo**: ospita il codice del sito Web (CSS e JavaScript).
@@ -54,6 +58,8 @@ La topologia di sviluppo per un progetto di sito Web Edge Delivery Services modi
       - Clone locale dell&#39;**archivio GitHub** per lo sviluppo basato su ramo.
       - **AEM CLI**, che funge da server di sviluppo, applica le modifiche al codice locale all&#39;**ambiente di anteprima** per un&#39;esperienza di ricaricamento a caldo.
    - **Flusso di lavoro**: gli sviluppatori scrivono il codice localmente, eseguono il commit delle modifiche in un ramo di lavoro, inviano il ramo a GitHub, lo convalidano nell&#39;**Editor universale** (utilizzando il ramo specificato) e lo uniscono nel **ramo principale** quando è pronto per la distribuzione nell&#39;ambiente di produzione.
+
++++
 
 ## Prerequisiti
 
