@@ -11,22 +11,22 @@ doc-type: Tutorial
 last-substantial-update: 2024-05-03T00:00:00Z
 exl-id: 57478aa1-c9ab-467c-9de0-54807ae21fb1
 duration: 158
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 6e08e6830c4e2ab27e813d262f4f51c6aae2909b
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
 
 # Autorizzazioni basate su metadati{#metadata-driven-permissions}
 
-Le autorizzazioni basate sui metadati sono una funzione utilizzata per consentire alle decisioni di controllo degli accessi sull’istanza di AEM Assets Author di basarsi sulle proprietà dei metadati delle risorse anziché sulla struttura delle cartelle. Con questa funzionalità, puoi definire i criteri di controllo dell’accesso che valutano gli attributi come lo stato delle risorse, il tipo o qualsiasi proprietà di metadati personalizzata definita dall’utente.
+Le autorizzazioni basate sui metadati sono una funzione utilizzata per consentire alle decisioni di controllo degli accessi sull’istanza di AEM Assets Author di basarsi sul contenuto delle risorse o sulle proprietà dei metadati anziché sulla struttura delle cartelle. Con questa funzionalità, puoi definire i criteri di controllo dell’accesso che valutano attributi quali lo stato delle risorse, il tipo o qualsiasi proprietà personalizzata definita.
 
-Vediamo un esempio. I creativi caricano il loro lavoro in AEM Assets nella cartella correlata alla campagna; potrebbe trattarsi di una risorsa in corso di lavorazione che non è stata approvata per l’uso. Vogliamo assicurarci che gli addetti al marketing visualizzino solo le risorse approvate per questa campagna. Possiamo utilizzare la proprietà dei metadati per indicare che una risorsa è stata approvata e può essere utilizzata dagli esperti di marketing.
+Vediamo un esempio. I creativi caricano il loro lavoro in AEM Assets nella cartella correlata alla campagna; potrebbe trattarsi di una risorsa in corso di lavorazione che non è stata approvata per l’uso. Vogliamo assicurarci che gli addetti al marketing visualizzino solo le risorse approvate per questa campagna. Possiamo utilizzare una proprietà di metadati per indicare che una risorsa è stata approvata e può essere utilizzata dagli esperti di marketing.
 
 ## Come funziona
 
-L’abilitazione delle autorizzazioni basate sui metadati implica la definizione delle proprietà dei metadati delle risorse che determineranno le restrizioni di accesso, ad esempio &quot;stato&quot; o &quot;marchio&quot;. Queste proprietà possono quindi essere utilizzate per creare voci di controllo dell’accesso che specificano quali gruppi di utenti hanno accesso alle risorse con valori di proprietà specifici.
+L’abilitazione delle autorizzazioni basate sui metadati implica la definizione del contenuto della risorsa o delle proprietà dei metadati che determineranno le restrizioni di accesso, ad esempio &quot;stato&quot; o &quot;marchio&quot;. Queste proprietà possono quindi essere utilizzate per creare voci di controllo dell’accesso che specificano quali gruppi di utenti hanno accesso alle risorse con valori di proprietà specifici.
 
 ## Prerequisiti
 
@@ -34,9 +34,9 @@ Per configurare le autorizzazioni basate sui metadati è necessario accedere a u
 
 ## Configurazione OSGi {#configure-permissionable-properties}
 
-Per implementare le autorizzazioni basate sui metadati, uno sviluppatore deve distribuire una configurazione OSGi in AEM as a Cloud Service che consenta a specifiche proprietà di metadati delle risorse di abilitare le autorizzazioni basate sui metadati.
+Per implementare le autorizzazioni basate sui metadati, uno sviluppatore deve implementare in AEM as a Cloud Service una configurazione OSGi che consenta a contenuti specifici di risorse o proprietà di metadati di abilitare le autorizzazioni basate sui metadati.
 
-1. Determina le proprietà dei metadati della risorsa da utilizzare per il controllo degli accessi. I nomi delle proprietà sono i nomi delle proprietà JCR nella risorsa `jcr:content/metadata` della risorsa. Nel nostro caso sarà una proprietà denominata `status`.
+1. Determina il contenuto della risorsa o le proprietà dei metadati che verranno utilizzati per il controllo degli accessi. I nomi delle proprietà sono i nomi delle proprietà JCR nella risorsa `jcr:content` o `jcr:content/metadata` della risorsa. Nel nostro caso sarà una proprietà denominata `status`.
 1. Crea una configurazione OSGi `com.adobe.cq.dam.assetmetadatarestrictionprovider.impl.DefaultRestrictionProviderConfiguration.cfg.json` nel progetto AEM Maven.
 1. Incolla il seguente JSON nel file creato:
 
@@ -46,11 +46,12 @@ Per implementare le autorizzazioni basate sui metadati, uno sviluppatore deve di
        "status",
        "brand"
      ],
+     "restrictionContentPropertyNames":[],
      "enabled":true
    }
    ```
 
-1. Sostituisci i nomi delle proprietà con i valori richiesti.
+1. Sostituisci i nomi delle proprietà con i valori richiesti.  La proprietà di configurazione `restrictionContentPropertyNames` viene utilizzata per abilitare le autorizzazioni per le proprietà della risorsa `jcr:content`, mentre la proprietà di configurazione `restrictionPropertyNames` abilita le autorizzazioni per le proprietà della risorsa `jcr:content/metadata` per le risorse.
 
 ## Reimposta autorizzazioni risorsa base
 
@@ -90,7 +91,7 @@ La cartella di esempio contiene un paio di risorse.
 
 ![Visualizzazione amministratore](./assets/metadata-driven-permissions/admin-view.png)
 
-Una volta configurate le autorizzazioni e impostate di conseguenza le proprietà dei metadati della risorsa, gli utenti (nel nostro caso, gli utenti addetti al marketing) vedranno solo la risorsa approvata.
+Dopo aver configurato le autorizzazioni e impostato di conseguenza le proprietà dei metadati della risorsa, gli utenti (l’utente addetto al marketing nel nostro caso) visualizzeranno solo la risorsa approvata.
 
 ![Visualizzazione addetto al marketing](./assets/metadata-driven-permissions/marketeer-view.png)
 
@@ -100,13 +101,13 @@ I vantaggi delle autorizzazioni basate sui metadati includono:
 
 - Controllo dettagliato sull’accesso alle risorse in base ad attributi specifici.
 - Separazione dei criteri di controllo dell’accesso dalla struttura di cartelle, consentendo un’organizzazione più flessibile delle risorse.
-- Possibilità di definire regole di controllo di accesso complesse basate su più proprietà di metadati.
+- Possibilità di definire regole di controllo di accesso complesse basate su più contenuti o proprietà di metadati.
 
 >[!NOTE]
 >
 > È importante notare che:
 > 
-> - Le proprietà dei metadati vengono valutate in base alle restrizioni utilizzando __Uguaglianza stringa__ (`=`) (altri tipi di dati o operatori non sono ancora supportati, per valori maggiori di (`>`) o proprietà Data)
+> - Le proprietà vengono valutate in base alle restrizioni utilizzando __Uguaglianza stringa__ (`=`) (altri tipi di dati o operatori non sono ancora supportati, per valori maggiori di (`>`) o proprietà Data)
 > - Per consentire più valori per una proprietà di restrizione, è possibile aggiungere ulteriori restrizioni alla voce di controllo dell&#39;accesso selezionando la stessa proprietà dal menu a discesa &quot;Seleziona tipo&quot; e immettendo un nuovo valore di restrizione (ad esempio `status=approved`, `status=wip`) e facendo clic su &quot;+&quot; per aggiungere la restrizione alla voce
 > ![Consenti più valori](./assets/metadata-driven-permissions/allow-multiple-values.png)
 > - Sono supportate __restrizioni AND__, tramite più restrizioni in una singola voce di controllo di accesso con nomi di proprietà diversi (ad esempio `status=approved`, `brand=Adobe`) verrà valutata come condizione AND, ovvero al gruppo di utenti selezionato verrà concesso l&#39;accesso in lettura alle risorse con `status=approved AND brand=Adobe`
