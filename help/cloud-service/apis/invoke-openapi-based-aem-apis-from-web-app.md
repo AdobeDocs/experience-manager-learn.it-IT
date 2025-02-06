@@ -12,9 +12,9 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-01-09T00:00:00Z
 duration: 0
 exl-id: dc35256a-3873-413f-b282-90948efd5f31
-source-git-commit: 7fe1116de7cf69b3b7ce14ac0b97906f8986546b
+source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2462'
 ht-degree: 0%
 
 ---
@@ -410,7 +410,7 @@ Per aggiornare il token di accesso prima della scadenza, puoi implementare il fl
 
 >[!TIP]
 >
->Puoi seguire la sezione successiva per provare l’app web WKND-PIM sul computer locale e acquisire un’esperienza pratica con il flusso di autenticazione dell’app web OAuth e le chiamate API.
+>Puoi seguire la sezione successiva per provare l’app web WKND-PIM sul computer locale e sperimentare direttamente il flusso di autenticazione e le chiamate API di OAuth Web App.
 
 ## Configurare ed eseguire l’app web
 
@@ -519,6 +519,11 @@ Questa operazione viene eseguita definendo la configurazione nel file `config.ya
    ```
 
    Sostituisci `<ADC Project's OAuth Web App credential ClientID>` con l&#39;ID client effettivo delle credenziali OAuth Web App del progetto ADC. L&#39;endpoint API utilizzato in questa esercitazione è disponibile solo sul livello di authoring, ma per altre API la configurazione yaml può avere anche un nodo _publish_ o _preview_.
+
+   >[!CAUTION]
+   >
+   > A scopo dimostrativo, viene utilizzato lo stesso ClientID per tutti gli ambienti. Si consiglia di utilizzare un ClientID separato per ogni ambiente (dev, stage, prod) per migliorare la sicurezza e il controllo.
+
 
 1. Esegui il commit delle modifiche di configurazione nell’archivio Git e invia le modifiche all’archivio remoto.
 

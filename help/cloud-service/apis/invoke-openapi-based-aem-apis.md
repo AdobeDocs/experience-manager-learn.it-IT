@@ -12,9 +12,9 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
 exl-id: 24c641e7-ab4b-45ee-bbc7-bf6b88b40276
-source-git-commit: 3e91387368943b1b0d62c57f8172a0306758b28f
+source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1831'
 ht-degree: 0%
 
 ---
@@ -194,6 +194,10 @@ Questa operazione viene eseguita definendo la configurazione nel file `config.ya
    ```
 
    Sostituire `<ADC Project's OAuth Server-to-Server credential ClientID>` con l&#39;ID client effettivo delle credenziali server-to-server OAuth del progetto ADC. L&#39;endpoint API utilizzato in questa esercitazione è disponibile solo sul livello di authoring, ma per altre API la configurazione yaml può avere anche un nodo _publish_ o _preview_.
+
+   >[!CAUTION]
+   >
+   > A scopo dimostrativo, viene utilizzato lo stesso ClientID per tutti gli ambienti. Si consiglia di utilizzare un ClientID separato per ogni ambiente (dev, stage, prod) per migliorare la sicurezza e il controllo.
 
 1. Esegui il commit delle modifiche di configurazione nell’archivio Git e invia le modifiche all’archivio remoto.
 

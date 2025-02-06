@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2025-02-05T00:00:00Z
 jira: KT-15739
 thumbnail: KT-15739.jpeg
-source-git-commit: f3e1bef93e53de19cf917a915c0fb836f7d3c194
+source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '962'
 ht-degree: 0%
 
 ---
@@ -236,10 +236,13 @@ Una volta completata la distribuzione, i reindirizzamenti URL sono attivi e il t
 
 Verifichiamo i reindirizzamenti URL utilizzando il browser o il comando `curl`. Accedere all&#39;URL `/ski/westcoast` e verificare che venga reindirizzato a `/us/en/adventures/tahoe-skiing.html`.
 
-
 ## Riepilogo
 
 In questa esercitazione hai imparato a gestire i reindirizzamenti URL utilizzando configurazioni prive di pipeline nell’ambiente AEM as a Cloud Service.
 
 Il team marketing può gestire i reindirizzamenti URL come coppie chiave-valore in un file di testo e caricarli in DAM oppure utilizzare ACS Commons - Redirect Map Manager o Redirect Manager. Le configurazioni di Dispatcher vengono aggiornate per caricare i reindirizzamenti URL come RewriteMap e applicarle alle richieste in ingresso.
 
+## Risorse aggiuntive
+
+- [Reindirizzamenti URL senza pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
+- [Reindirizzamenti URL](url-redirection.md)
