@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: a5cd9906-7e7a-43dd-a6b2-e80f67d37992
-source-git-commit: ceb82c48af10191cece72fe5f53dd79287f805d0
+source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1315'
 ht-degree: 0%
 
 ---
@@ -292,6 +292,8 @@ Infine, aggiorna le variabili CSS `styles/styles.css` per utilizzare i nuovi fon
 I font web spesso influiscono sulle prestazioni a causa delle loro dimensioni, aumentando potenzialmente i punteggi CLS (Cumulative Layout Shift) e riducendo i punteggi complessivi di Lighthouse. Per garantire la visualizzazione immediata del testo durante il caricamento dei font Web, i progetti di Edge Delivery Services utilizzano font di fallback nativi per il browser. Questo approccio consente di mantenere un’esperienza utente fluida mentre viene applicato il font desiderato.
 
 Per selezionare il tipo di carattere di fallback ottimale, utilizzare l&#39;estensione di Adobe [Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), che determina un tipo di carattere strettamente corrispondente per i browser da utilizzare prima del caricamento del tipo di carattere personalizzato. Le dichiarazioni font di fallback risultanti devono essere aggiunte al file `styles/styles.css` per migliorare le prestazioni e garantire un&#39;esperienza fluida per gli utenti.
+
+Estensione ![Helix Font Fallback Chrome](./assets/4-website-branding/font-fallback-chrome-plugin.png){align=center}
 
 Per utilizzare l&#39;estensione [Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), verificare che alla pagina Web siano applicati i tipi di carattere Web nelle stesse varianti utilizzate nel sito Web dei Edge Delivery Services. Questa esercitazione illustra l&#39;estensione in [wknd.site](http://wknd.site/us/en.html). Durante lo sviluppo di un sito Web, applicare l&#39;estensione al sito su cui si sta lavorando anziché a [wknd.site](http://wknd.site/us/en.html).
 
