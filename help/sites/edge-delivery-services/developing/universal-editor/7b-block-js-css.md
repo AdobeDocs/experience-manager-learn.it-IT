@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: 41c4cfcf-0813-46b7-bca0-7c13de31a20e
-source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Questo esempio mostra come migliorare un blocco in tre modi:
 
 Questo approccio è particolarmente utile nei seguenti scenari:
 
-- **Gestione CSS esterna:** quando il CSS del blocco viene gestito all&#39;esterno dei Edge Delivery Services e non è allineato alla struttura HTML.
+- **Gestione CSS esterna:** quando il CSS del blocco viene gestito all&#39;esterno di Edge Delivery Services e non è allineato con la struttura HTML.
 - **Attributi aggiuntivi:** Quando sono necessari attributi aggiuntivi, ad esempio [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) per l&#39;accessibilità o [microdati](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata).
 - **Miglioramenti di JavaScript:** Quando sono necessarie funzionalità interattive, come i listener di eventi.
 
@@ -39,7 +39,7 @@ Questo metodo si basa sulla manipolazione DOM di JavaScript nativa del browser, 
 
 ## Blocca HTML
 
-Per avvicinarti allo sviluppo dei blocchi, inizia esaminando il DOM esposto dai Edge Delivery Services. La struttura viene migliorata con JavaScript e formattata con CSS.
+Per avvicinarti allo sviluppo dei blocchi, inizia esaminando il DOM esposto da Edge Delivery Services. La struttura viene migliorata con JavaScript e formattata con CSS.
 
 >[!BEGINTABS]
 
@@ -85,7 +85,7 @@ Di seguito è riportato il DOM del blocco teaser che è la destinazione da decor
 
 Per trovare il DOM da decorare, apri la pagina con il blocco non decorato nel tuo ambiente di sviluppo locale, seleziona il blocco e controlla il DOM.
 
-![DOM a blocchi Inspect](./assets/7a-block-css/inspect-block-dom.png)
+![Controlla DOM](./assets/7a-block-css/inspect-block-dom.png) del blocco
 
 >[!ENDTABS]
 
@@ -100,7 +100,7 @@ Il file JavaScript deve esportare una funzione predefinita:
 export default function decorate(block) { ... }
 ```
 
-La funzione predefinita utilizza l’elemento/albero DOM che rappresenta il blocco in Edge Delivery Services HTML e contiene il JavaScript personalizzato eseguito al momento del rendering del blocco.
+La funzione predefinita utilizza l’elemento/albero DOM che rappresenta il blocco nel HTML di Edge Delivery Services e contiene il JavaScript personalizzato eseguito al momento del rendering del blocco.
 
 In questo esempio JavaScript esegue tre azioni principali:
 
@@ -195,27 +195,32 @@ Gli elementi nudi possono ancora essere formattati direttamente o con le classi 
     left: 50%; 
     transform: translateX(-50%);
     height: 500px;
+    overflow: hidden; 
 
     /* The teaser image */
-    & .image-wrapper {
+    .image-wrapper {
         position: absolute;
         z-index: -1;
         inset: 0;
         box-sizing: border-box;
         overflow: hidden; 
 
-        & .image {
+        .image {
             object-fit: cover;
             object-position: center;
             width: 100%;
             height: 100%;
             transform: scale(1); 
             transition: transform 0.6s ease-in-out;
+
+            .zoom {
+                transform: scale(1.1);
+            }            
         }
     }
 
     /* The teaser text content */
-    & .content {
+    .content {
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -225,55 +230,51 @@ Gli elementi nudi possono ancora essere formattati direttamente o con le classi 
         width: 80vw;
         max-width: 1200px;
   
-        & .title {
+        .title {
             font-size: var(--heading-font-size-xl);
             margin: 0;
         }
 
-        & .title::after {
+        .title::after {
             border-bottom: 0;
         }
 
-        & p {
+        p {
             font-size: var(--body-font-size-s);
             margin-bottom: 1rem;
             animation: teaser-fade-in .6s;
-        }
-
-        & p.terms-and-conditions {
-            font-size: var(--body-font-size-xs);
-            color: var(--secondary-color);
-            padding: .5rem 1rem;
-            font-style: italic;
-            border: solid var(--light-color);
-            border-width: 0 0 0 10px;
+        
+            &.terms-and-conditions {
+                font-size: var(--body-font-size-xs);
+                color: var(--secondary-color);
+                padding: .5rem 1rem;
+                font-style: italic;
+                border: solid var(--light-color);
+                border-width: 0 0 0 10px;
+            }
         }
 
         /* Add underlines to links in the text */
-        & a:hover {
+        a:hover {
             text-decoration: underline;
         }
 
         /* Add specific spacing to buttons. These button CSS classes are automatically added by Edge Delivery Services. */
-        & .button-container {
+        .button-container {
             margin: 0;
             padding: 0;
+        
+            .button {   
+                background-color: var(--primary-color);
+                border-radius: 0;
+                color: var(--dark-color);
+                font-size: var(--body-font-size-xs);
+                font-weight: bold;
+                padding: 1em 2.5em;
+                margin: 0;
+                text-transform: uppercase;
+            }
         }
-
-        & .button {   
-            background-color: var(--primary-color);
-            border-radius: 0;
-            color: var(--dark-color);
-            font-size: var(--body-font-size-xs);
-            font-weight: bold;
-            padding: 1em 2.5em;
-            margin: 0;
-            text-transform: uppercase;
-        }
-    }
-
-    & .zoom {
-        transform: scale(1.1);
     }
 }
 
@@ -311,7 +312,7 @@ Verifica che nell’ambiente di sviluppo locale venga eseguito il rendering del 
 
 ## Anteprima di sviluppo
 
-Con l’aggiunta di CSS e JavaScript, l’ambiente di sviluppo locale della CLI dell’AEM ricarica a caldo le modifiche, consentendo una visualizzazione rapida e semplice dell’impatto del codice sul blocco. Passa il puntatore del mouse sul CTA e verifica che l’immagine del teaser si ingrandisca e si ingrandisca.
+Con l’aggiunta di CSS e JavaScript, l’ambiente di sviluppo locale della CLI di AEM ricarica a caldo le modifiche, consentendo una visualizzazione rapida e semplice dell’impatto del codice sul blocco. Passa il puntatore del mouse sul CTA e verifica che l’immagine del teaser si ingrandisca e si ingrandisca.
 
 ![Anteprima di sviluppo locale del teaser tramite CSS e JS](./assets/7b-block-js-css/local-development-preview.png)
 
@@ -327,7 +328,7 @@ $ npm run lint
 
 ## Anteprima nell’editor universale
 
-Per visualizzare le modifiche nell’editor universale dell’AEM, aggiungili, esegui il commit e inviali al ramo dell’archivio Git utilizzato dall’editor universale. In questo modo l’implementazione del blocco non interrompe l’esperienza di authoring.
+Per visualizzare le modifiche nell’Editor universale di AEM, aggiungili, esegui il commit e inviali al ramo dell’archivio Git utilizzato dall’Editor universale. In questo modo l’implementazione del blocco non interrompe l’esperienza di authoring.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue

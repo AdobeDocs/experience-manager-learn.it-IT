@@ -1,6 +1,6 @@
 ---
 title: Creare un blocco
-description: Creare un blocco per un sito Web di Edge Delivery Services modificabile con Universal Editor.
+description: Creare un blocco per un sito Web Edge Delivery Services modificabile con Universal Editor.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -10,16 +10,16 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: 9698c17a-0ac8-426d-bccb-729b048cabd1
-source-git-commit: 775821f37df87905ea176b11ecf0ed4a42d00940
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
 
 # Crea un nuovo blocco
 
-In questo capitolo viene descritta la procedura di creazione di un nuovo blocco teaser modificabile per un sito Web di Edge Delivery Services tramite l’Editor universale.
+In questo capitolo viene descritto il processo di creazione di un nuovo blocco teaser modificabile per un sito Web Edge Delivery Services tramite Universal Editor.
 
 ![Nuovo blocco teaser](./assets//5-new-block/teaser-block.png)
 
@@ -70,7 +70,7 @@ Il nome della cartella del blocco funge da ID del blocco e viene utilizzato per 
 Il JSON del blocco definisce tre aspetti chiave del blocco:
 
 - **Definizione**: registra il blocco come componente modificabile nell&#39;editor universale, collegandolo a un modello di blocco e facoltativamente a un filtro.
-- **Modello**: specifica i campi di authoring del blocco e il modo in cui vengono visualizzati come HTML Edge Delivery Services semantici.
+- **Modello**: specifica i campi di creazione del blocco e il modo in cui vengono visualizzati come Edge Delivery Services HTML semantico.
 - **Filtro**: configura le regole di filtro per limitare a quali contenitori è possibile aggiungere il blocco tramite l&#39;editor universale. La maggior parte dei blocchi non sono contenitori, ma i loro ID vengono aggiunti ai filtri di altri blocchi contenitore.
 
 Creare un nuovo file in `/blocks/teaser/_teaser.json` con la seguente struttura iniziale, nell&#39;ordine esatto. Se le chiavi non sono nell&#39;ordine corretto, potrebbero non essere create correttamente.
@@ -102,7 +102,7 @@ Ogni campo nell&#39;array `fields` ha un oggetto JSON che include le seguenti pr
 | Proprietà JSON | Descrizione |
 |---------------|-----------------------------------------------------------------------------------------------------------------------|
 | `component` | Il tipo di campo [](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#component-types), ad esempio `text`, `reference` o `aem-content`. |
-| `name` | Nome del campo, con mapping alla proprietà JCR in cui il valore è memorizzato nell’AEM. |
+| `name` | Nome del campo, con mapping alla proprietà JCR in cui il valore viene memorizzato in AEM. |
 | `label` | Etichetta visualizzata agli autori nell&#39;editor universale. |
 
 Per un elenco completo delle proprietà, incluse quelle facoltative, consulta la [documentazione sui campi dell&#39;editor universale](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#fields).
@@ -140,7 +140,7 @@ Se non hai familiarità con [compressione campo](https://experienceleague.adobe.
 Nell’esempio seguente:
 
 - [L&#39;inferenza dei tipi](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) viene utilizzata per creare automaticamente un elemento HTML `<img>` dal campo `image`. La compressione del campo viene utilizzata con i campi `image` e `imageAlt` per creare un elemento HTML `<img>`. L&#39;attributo `src` è impostato sul valore del campo `image`, mentre l&#39;attributo `alt` è impostato sul valore del campo `imageAlt`.
-- `textContent` è un nome di gruppo utilizzato per categorizzare i campi. Deve essere semantico, ma può essere qualsiasi cosa specifica di questo blocco. Questo comunica all&#39;Editor universale di eseguire il rendering di tutti i campi con questo prefisso all&#39;interno dello stesso elemento `<div>` nell&#39;output HTML finale.
+- `textContent` è un nome di gruppo utilizzato per categorizzare i campi. Deve essere semantico, ma può essere qualsiasi cosa specifica di questo blocco. Questo comunica all&#39;Editor universale di eseguire il rendering di tutti i campi con questo prefisso all&#39;interno dello stesso elemento `<div>` nell&#39;output finale di HTML.
 - La compressione del campo viene applicata anche nel gruppo `textContent` per l&#39;invito all&#39;azione (CTA). Il CTA viene creato come `<a>` tramite [inferenza di tipo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference). Il campo `cta` viene utilizzato per impostare l&#39;attributo `href` dell&#39;elemento `<a>` e il campo `ctaText` fornisce il contenuto di testo per il collegamento all&#39;interno dei tag `<a ...>`.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
@@ -194,7 +194,7 @@ Nell’esempio seguente:
 
 Questo modello definisce gli input di authoring nell’Editor universale per il blocco.
 
-Il HTML Edge Delivery Services risultante per questo blocco inserisce l&#39;immagine nel primo div e i campi gruppo di elementi `textContent` nel secondo div.
+Il HTML Edge Delivery Services risultante per questo blocco inserisce l&#39;immagine nel primo div e i campi del gruppo di elementi `textContent` nel secondo div.
 
 ```html
 <div>
@@ -215,7 +215,7 @@ Il HTML Edge Delivery Services risultante per questo blocco inserisce l&#39;imma
 </div>        
 ```
 
-Come dimostrato [nel prossimo capitolo](./7a-block-css.md), questa struttura HTML semplifica la formattazione del blocco come unità coesiva.
+Come dimostrato [nel prossimo capitolo](./7a-block-css.md), questa struttura HTML semplifica lo stile del blocco come unità coesiva.
 
 Per capire le conseguenze del mancato utilizzo della compressione dei campi e del raggruppamento di elementi, vedi la scheda **Nel modo sbagliato** qui sopra.
 
@@ -276,7 +276,7 @@ Ad esempio, il modello teaser potrebbe essere definito **senza** compressione di
 }
 ```
 
-Il HTML di Edge Delivery Services per il blocco esegue il rendering del valore di ogni campo in un `div` separato, complicando la comprensione del contenuto, l&#39;applicazione dello stile e le regolazioni della struttura dei HTML per ottenere la progettazione desiderata.
+Il HTML Edge Delivery Services per il blocco esegue il rendering del valore di ogni campo in un `div` separato, complicando la comprensione del contenuto, l&#39;applicazione dello stile e le regolazioni della struttura del HTML per ottenere la progettazione desiderata.
 
 ```html
 <div>
@@ -379,7 +379,7 @@ Il componente teaser non è un [blocco contenitore](https://experienceleague.ado
 
 ![Blocca filtri](./assets/5-new-block/filters.png)
 
-I blocchi forniti da Adobe, ad esempio il blocco di sezione, memorizzano i filtri nella cartella `models` del progetto. Per modificare, individuare il file JSON per il blocco fornito dall&#39;Adobe (ad esempio, `/models/_section.json`) e aggiungere l&#39;ID del teaser (`teaser`) all&#39;elenco dei filtri. La configurazione segnala all’Editor universale che il componente teaser può essere aggiunto al blocco del contenitore sezione.
+I blocchi forniti da Adobe, ad esempio il blocco di sezione, memorizzano i filtri nella cartella `models` del progetto. Per modificare, individua il file JSON per il blocco fornito da Adobe (ad esempio, `/models/_section.json`) e aggiungi l&#39;ID del teaser (`teaser`) all&#39;elenco dei filtri. La configurazione segnala all’Editor universale che il componente teaser può essere aggiunto al blocco del contenitore sezione.
 
 [!BADGE /models/_section.json]{type=Neutral tooltip="Nome del file dell’esempio di codice riportato di seguito."}
 
@@ -420,15 +420,11 @@ $ npm run lint:js
 
 ## Generare il progetto JSON
 
-Dopo aver configurato i file JSON di blocco (`blocks/teaser/_teaser.json`, `models/_section.json`), è necessario compilarli nei file `component-models.json`, `component-definitions.json` e `component-filters.json` del progetto. La compilazione viene eseguita eseguendo gli script [build JSON](./3-local-development-environment.md#build-json-fragments) npm del progetto.
+Dopo aver configurato i file JSON di blocco (ad esempio, `blocks/teaser/_teaser.json`, `models/_section.json`), vengono compilati automaticamente nei file `component-models.json`, `component-definitions.json` e `component-filters.json` del progetto. Questa compilazione viene gestita automaticamente da un hook di pre-commit [Husky](https://typicode.github.io/husky/) incluso nel [modello di progetto AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
 
-```bash
-# ~/Code/aem-wknd-eds-ue
+Le build possono inoltre essere attivate manualmente o a livello di programmazione utilizzando gli script NPM [build JSON](./3-local-development-environment.md#build-json-fragments) del progetto.
 
-$ npm run build:json
-```
-
-## Distribuire la definizione del blocco
+## Distribuire il blocco JSON
 
 Per rendere il blocco disponibile nell&#39;editor universale, è necessario eseguire il commit del progetto e inviarlo al ramo di un archivio GitHub, in questo caso il ramo `teaser`.
 
@@ -439,7 +435,8 @@ Il nome del ramo utilizzato da Universal Editor può essere regolato, per utente
 
 $ git add .
 $ git commit -m "Add teaser block JSON files so it is available in Universal Editor"
+# JSON files are compiled automatically and added to the commit via a husky precommit hook
 $ git push origin teaser
 ```
 
-Quando si apre Universal Editor con il parametro di query `?ref=teaser`, il nuovo blocco `teaser` viene visualizzato nella tavolozza dei blocchi. Il blocco non ha uno stile; esegue il rendering dei campi del blocco come HTML semantico, con uno stile solo tramite il [CSS globale](./4-website-branding.md#global-css).
+Quando si apre Universal Editor con il parametro di query `?ref=teaser`, il nuovo blocco `teaser` viene visualizzato nella tavolozza dei blocchi. Il blocco non ha uno stile; esegue il rendering dei campi del blocco come HTML semantico, formattati solo tramite il [CSS globale](./4-website-branding.md#global-css).
