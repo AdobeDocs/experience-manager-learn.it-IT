@@ -1,21 +1,21 @@
 ---
 title: Opzioni di blocco
-description: Sviluppa un blocco che può essere attivato per avere diversi aspetti e comportamenti.
+description: Scopri come creare un blocco con più opzioni di visualizzazione.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
 level: Beginner
 doc-type: Tutorial
-jira: null
+jira: KT-17296
 duration: 700
-source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
+exl-id: f41dff22-bd47-4ea0-98cc-f5ca30b22c4b
+source-git-commit: ae3ade0f31846776aa9bdd3a615d6514b626f48d
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1958'
 ht-degree: 0%
 
 ---
-
 
 # Sviluppare un blocco con opzioni
 
