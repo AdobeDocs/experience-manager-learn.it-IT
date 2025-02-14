@@ -1,6 +1,6 @@
 ---
-title: Creazione della prima comunicazione interattiva per il canale di stampa
-description: Le comunicazioni interattive sono una novità di AEM Forms 6.4. Questo documento illustra i passaggi necessari per creare una comunicazione interattiva per il canale di stampa.
+title: Creare la prima comunicazione interattiva per il canale di stampa
+description: Scopri come creare una comunicazione interattiva per il canale di stampa. Le comunicazioni interattive sono una novità di AEM Forms 6.4.
 feature: Interactive Communication
 doc-type: Tutorial
 version: 6.4,6.5
@@ -10,20 +10,20 @@ level: Beginner
 exl-id: 1949aeff-ae56-4abd-8e63-23c2fb4859f2
 last-substantial-update: 2019-08-07T00:00:00Z
 duration: 31
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 61d97738e295d9dc39281cb59e6ef1ca73944387
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '169'
 ht-degree: 4%
 
 ---
 
-# Creazione della prima comunicazione interattiva per il canale di stampa
+# Creare la prima comunicazione interattiva per il canale di stampa
 
 Le comunicazioni interattive sono una novità di AEM Forms 6.4. Questo documento illustra i passaggi necessari per creare una comunicazione interattiva per il canale di stampa.
 
 ## Prerequisiti {#prerequistes}
 
-[Scaricare e importare la risorsa correlata a questa esercitazione in AEM utilizzando Gestione pacchetti.](assets/gettingstartedassets.zip)Questo file zip contiene immagini, frammenti di documenti, file di configurazione e layout delle cartelle controllate (xdp) come parte del pacchetto risorse
+[Scarica e importa la risorsa correlata a questa esercitazione in AEM utilizzando Gestione pacchetti.](assets/gettingstartedassets.zip)Questo file zip contiene immagini, frammenti di documenti, file di configurazione e layout delle cartelle controllate (xdp) come parte del pacchetto risorse
 
 [Scarica e decomprimi il file.](assets/warfileandswaggerfile.zip) Questo file contiene il file SampleRest.war che deve essere distribuito su Tomcat e sul file swagger che deve essere utilizzato per la configurazione dell&#39;origine dati.
 
