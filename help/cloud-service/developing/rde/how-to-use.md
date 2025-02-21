@@ -11,7 +11,7 @@ thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
 duration: 792
-source-git-commit: d199ff3b9f4d995614c193f52dc90270f2283adf
+source-git-commit: 98d67d5b624b386c6a579cd03117372bc9058acb
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 0%
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Scopri **come utilizzare** l&#39;ambiente di sviluppo rapido (RDE) in AEM as a Cloud Service. Distribuisci codice e contenuti per velocizzare i cicli di sviluppo del codice quasi finale nell’RDE, dall’ambiente di sviluppo integrato (IDE) preferito.
 
-Utilizzando il [progetto WKND Sites dell&#39;AEM](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project), imparerai a distribuire vari artefatti dell&#39;AEM nell&#39;RDE eseguendo il comando `install` dell&#39;AEM-RDE dall&#39;IDE preferito.
+Utilizzando il [progetto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) imparerai a distribuire vari artefatti AEM nell&#39;RDE eseguendo il comando `install` di AEM-RDE dall&#39;IDE preferito.
 
-- Implementazione del pacchetto di codice e contenuti AEM (all, ui.apps)
+- Distribuzione di pacchetti di codice e contenuti di AEM (tutti, ui.apps)
 - Distribuzione del bundle OSGi e del file di configurazione
 - Distribuzione delle configurazioni di Apache e Dispatcher come file zip
 - Singoli file come HTL, `.content.xml` (finestra di dialogo XML) distribuzione
@@ -47,11 +47,11 @@ $ cd aem-guides-wknd/
 $ mvn clean package
 ```
 
-## Distribuire gli artefatti AEM utilizzando il plug-in AEM-RDE
+## Distribuire gli artefatti di AEM utilizzando il plug-in AEM-RDE
 
 Verificare innanzitutto che sia installato il [più recente modulo CLI `aio`](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli).
 
-Quindi, utilizzare il comando `aio aem:rde:install` per distribuire vari artefatti AEM. Ora che devi
+Quindi, utilizzare il comando `aio aem:rde:install` per distribuire vari artefatti di AEM. Ora che devi
 
 ### Distribuisci `all` e `dispatcher` pacchetti
 
@@ -96,7 +96,7 @@ Miglioriamo `Hello World Component` e implementiamolo nell&#39;RDE.
    ...
    ```
 
-1. Verifica le modifiche sul SDK AEM locale eseguendo la build Maven o sincronizzando i singoli file.
+1. Verifica le modifiche sul SDK AEM locale eseguendo la build Maven o sincronizzando singoli file.
 
 1. Distribuire le modifiche all&#39;RDE tramite il pacchetto `ui.apps` o distribuendo i singoli file Dialog e HTL:
 
@@ -144,7 +144,7 @@ Per informazioni su come distribuire il bundle OSGi, miglioriamo la classe Java�
    ...
    ```
 
-1. Verificare le modifiche su AEM-SDK locale distribuendo il bundle `core` tramite il comando maven
+1. Verifica le modifiche su AEM-SDK locale distribuendo il bundle `core` tramite il comando maven
 1. Distribuire le modifiche all&#39;RDE eseguendo il comando seguente
 
    ```shell
@@ -204,7 +204,7 @@ Impossibile distribuire singolarmente i file di configurazione Apache o Dispatch
 
 ### Distribuisci file di configurazione (YAML)
 
-I file di configurazione CDN, delle attività di manutenzione, dell&#39;inoltro del registro e dell&#39;autenticazione API AEM possono essere distribuiti in RDE utilizzando il comando `install`. Queste configurazioni vengono gestite come file YAML nella cartella `config` del progetto AEM. Per ulteriori dettagli, vedere [Configurazioni supportate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations).
+I file di configurazione CDN, delle attività di manutenzione, dell&#39;inoltro del registro e dell&#39;autenticazione API AEM possono essere distribuiti in RDE utilizzando il comando `install`. Queste configurazioni vengono gestite come file YAML nella cartella `config` del progetto AEM. Per ulteriori dettagli, vedi [Configurazioni supportate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations).
 
 Per informazioni su come distribuire i file di configurazione, è possibile migliorare il file di configurazione `cdn` e distribuirlo in RDE.
 
@@ -238,7 +238,7 @@ Per informazioni su come distribuire i file di configurazione, è possibile migl
 1. Distribuire le modifiche all&#39;RDE eseguendo il comando seguente
 
    ```shell
-   $ aio aem:rde:install -t env-config ./config/cdn.yaml
+   $ aio aem:rde:install -t env-config ./config
    ```
 
 1. Verificare le modifiche nell&#39;RDE
@@ -246,7 +246,7 @@ Per informazioni su come distribuire i file di configurazione, è possibile migl
 
 ## Comandi aggiuntivi del plug-in AEM RDE
 
-Esaminiamo i comandi aggiuntivi del plug-in AEM RDE per gestire e interagire con l’RDE dal computer locale.
+Esaminiamo i comandi aggiuntivi del plug-in RDE di AEM per gestire e interagire con l’RDE dal computer locale.
 
 ```shell
 $ aio aem:rde --help
