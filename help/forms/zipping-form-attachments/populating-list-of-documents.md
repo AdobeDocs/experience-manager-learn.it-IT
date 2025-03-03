@@ -1,6 +1,6 @@
 ---
-title: Passaggio di processo personalizzato per compilare le variabili elenco
-description: Passaggio di processo personalizzato per popolare le variabili elenco di tipo documento e stringa
+title: Passaggio di processo personalizzato per popolare le variabili elenco
+description: Scopri come creare un passaggio di processo personalizzato per popolare le variabili elenco di tipo documento e stringa in Adobe Experience Manager.
 feature: Workflow
 topic: Development
 version: 6.5
@@ -9,28 +9,29 @@ level: Beginner
 kt: kt-8063
 exl-id: 09d9eabf-4815-4159-b6c7-cf2ebc8a2df5
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 52b7e6afbfe448fd350e84c3e8987973c87c4718
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '170'
 ht-degree: 1%
 
 ---
 
+
 # Passaggio processo personalizzato
 
+Questa guida illustra come creare un passaggio di processo personalizzato per popolare le variabili elenco di tipo Elenco array con allegati e nomi di allegati in Adobe Experience Manager. Queste variabili sono essenziali per il componente del flusso di lavoro Invia e-mail.
 
-È stato implementato un passaggio di processo personalizzato per popolare le variabili del flusso di lavoro di tipo Elenco array con gli allegati e i nomi degli allegati. Questa variabile viene quindi utilizzata nel componente del flusso di lavoro Invia e-mail. Se non conosci la creazione del bundle OSGi, [segui queste istruzioni](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+Se non conosci la creazione di un bundle OSGi, segui queste [istruzioni](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en).
 
-Il codice nel passaggio del processo personalizzato esegue le seguenti operazioni
+Il codice nel passaggio del processo personalizzato esegue le azioni seguenti:
 
-* Esegui una query per tutti gli allegati del modulo adattivo nella cartella del payload. Il nome della cartella viene passato come argomento del processo al passaggio del processo.
-
-* Popola variabile flusso di lavoro `listOfDocuments`
-* Popola variabile flusso di lavoro `attachmentNames`
-* Imposta il valore della variabile del flusso di lavoro (`no_of_attachments`)
+1. Esegue la query di tutti gli allegati del modulo adattivo nella cartella del payload. Il nome della cartella viene passato come argomento del processo al passaggio.
+2. Popola la variabile del flusso di lavoro `listOfDocuments`.
+3. Popola la variabile del flusso di lavoro `attachmentNames`.
+4. Imposta il valore della variabile `no_of_attachments` del flusso di lavoro.
 
 ```java
- package com.aemforms.formattachments.core;
+package com.aemforms.formattachments.core;
 
 import java.io.InputStream;
 import java.util.HashMap;
@@ -57,9 +58,8 @@ import com.day.cq.search.result.SearchResult;
 
 @Component(property = {
         Constants.SERVICE_DESCRIPTION + "=PopulateListOfDocuments",
-        "process.label" + "=PopulateListOfDocuments"
+        "process.label=PopulateListOfDocuments"
 })
-
 public class PopulateListOfDocuments implements WorkflowProcess {
 
         private static final Logger log = LoggerFactory.getLogger(PopulateListOfDocuments.class);
@@ -70,7 +70,7 @@ public class PopulateListOfDocuments implements WorkflowProcess {
         public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) throws WorkflowException
         {
                 String payloadPath = workItem.getWorkflowData().getPayload().toString();
-                log.debug("The payload path  is" + payloadPath);
+                log.debug("The payload path is" + payloadPath);
                 MetaDataMap metaDataMap = workItem.getWorkflow().getWorkflowData().getMetaDataMap();
                 Session session = workflowSession.adaptTo(Session.class);
                 Map < String, String > map = new HashMap < String, String > ();
@@ -112,10 +112,11 @@ public class PopulateListOfDocuments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> Assicurati che nel flusso di lavoro siano definite le seguenti variabili affinché il codice funzioni
-> *listOfDocuments* - variabile di tipo ArrayList of Documents
-> *attachmentNames* - variabile di tipo ArrayList of String
-> *no_of_attachments* - variabile di tipo Double
+> Assicurati che nel flusso di lavoro siano definite le seguenti variabili affinché il codice funzioni:
+> 
+> - `listOfDocuments`: variabile di tipo ArrayList of Documents
+> - `attachmentNames`: variabile di tipo ArrayList of String
+> - `no_of_attachments`: variabile di tipo Double
 
 ## Passaggi successivi
 

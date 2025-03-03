@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-17296
 duration: 700
 exl-id: f41dff22-bd47-4ea0-98cc-f5ca30b22c4b
-source-git-commit: ae3ade0f31846776aa9bdd3a615d6514b626f48d
+source-git-commit: 52b7e6afbfe448fd350e84c3e8987973c87c4718
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1961'
 ht-degree: 0%
 
 ---
@@ -404,7 +404,7 @@ La finestra di dialogo di blocco ora include un elenco a discesa **Opzioni tease
 
 ### Pubblica in anteprima
 
-Una volta aggiunto il blocco Teaser alla pagina, [pubblica la pagina in anteprima](../6-author-block.md) utilizzando **Gestisci pubblicazioni** e Amministratore sito di AEM Author.
+Una volta aggiunto il blocco Teaser alla pagina, [pubblica la pagina in anteprima](../6-author-block.md) utilizzando il pulsante **Pubblica** e scegliendo Pubblica in **Anteprima** in Universal Editor.
 
 ## Blocca HTML
 
