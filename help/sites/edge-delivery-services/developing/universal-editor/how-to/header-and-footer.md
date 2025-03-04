@@ -9,13 +9,13 @@ level: Intermediate, Experienced
 doc-type: Tutorial
 jira: KT-17470
 duration: 300
-source-git-commit: 52b7e6afbfe448fd350e84c3e8987973c87c4718
+exl-id: 70ed4362-d4f1-4223-8528-314b2bf06c7c
+source-git-commit: d201afc730010f0bf202a1d72af4dfa3867239bc
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1207'
 ht-degree: 0%
 
 ---
-
 
 # Sviluppare un’intestazione e un piè di pagina
 
@@ -370,7 +370,7 @@ Il piè di pagina deve essere implementato con un layout a tre colonne contenent
 
 ![Anteprime piè di pagina](./assets/header-and-footer/footer-preview.png){align="center"}
 
->[!TAB Creare il piè di pagina]
+>[!TAB Contenuto piè di pagina]
 
 Utilizzare il blocco delle colonne nella pagina Piè di pagina per creare l&#39;effetto a tre colonne.
 
