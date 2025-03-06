@@ -10,7 +10,7 @@ jira: KT-9685
 exl-id: 07fed661-0995-41ab-90c4-abde35a14a4c
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 286
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: a72f533b36940ce735d5c01d1625c6f477ef4850
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Per definire la prima funzione personalizzata, procedere come segue:
 * Crea un file denominato **js.txt** nella cartella **clientlibs**. Salva le modifiche.
 * La struttura delle cartelle deve essere simile alla schermata seguente.
 
-![Editor regole](assets/folder-structure.png)
+![Editor di regole](assets/folder-structure.png)
 
 * Fai doppio clic su functions.js per aprire l’editor.
 Copia il seguente codice in functions.js e salva le modifiche.
@@ -44,18 +44,11 @@ Copia il seguente codice in functions.js e salva le modifiche.
 /**
 * Get List of County names
 * @name getCountyNamesList Get list of county names
-* @return {OPTIONS} drop down options 
+* @returns {string[]} An array of county names
  */
 function getCountyNamesList()
 {
-    var countyNames= [];
-    countyNames[0] = "Santa Clara";
-    countyNames[1] = "Alameda";
-    countyNames[2] = "Buxor";
-    countyNames[3] = "Contra Costa";
-    countyNames[4] = "Merced";
-
-    return countyNames;
+    return ["Santa Clara", "Alameda", "Buxor", "Contra Costa", "Merced"];
 
 }
 /**
@@ -87,7 +80,7 @@ functions.js
 La riga #base=js specifica in quale directory si trovano i file JavaScript.
 Le righe seguenti indicano la posizione del file JavaScript rispetto alla posizione di base.
 
-Se non riesci a creare le funzioni personalizzate, puoi [scaricare e installare questo pacchetto](assets/custom-functions.zip) nella tua istanza AEM.
+In caso di problemi durante la creazione delle funzioni personalizzate, puoi [scaricare e installare questo pacchetto](assets/custom-functions.zip) nella tua istanza di AEM.
 
 ## Utilizzo delle funzioni personalizzate
 
