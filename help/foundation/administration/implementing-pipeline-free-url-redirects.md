@@ -11,21 +11,21 @@ duration: 0
 last-substantial-update: 2025-02-05T00:00:00Z
 jira: KT-15739
 thumbnail: KT-15739.jpeg
-source-git-commit: bc2f4655631f28323a39ed5b4c7878613296a0ba
+exl-id: 3b0f5971-38b8-4b9e-b90e-9de7432e0e9d
+source-git-commit: bc4f1d7dd345dbaf7532367425c90fe1a718249c
 workflow-type: tm+mt
 source-wordcount: '973'
 ht-degree: 0%
 
 ---
 
-
 # Implementazione dei reindirizzamenti URL privi di pipeline
 
 Scopri come implementare [reindirizzamenti URL senza pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) in AEM as a Cloud Service per consentire al team marketing di gestire i reindirizzamenti senza dover ricorrere a uno sviluppatore.
 
-There are multiple options to manage URL redirects in AEM, for more information, see [URL redirects](url-redirection.md).
+Esistono diverse opzioni per gestire i reindirizzamenti URL in AEM. Per ulteriori informazioni, vedi [Reindirizzamenti URL](url-redirection.md).
 
-The tutorial focuses on creating URL redirects as key-value pairs in a text file like [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) and uses AEM as a Cloud Service specific configuration to load them into the Apache/Dispatcher module.
+L&#39;esercitazione si concentra sulla creazione di reindirizzamenti URL come coppie chiave-valore in un file di testo come [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) e utilizza la configurazione specifica di AEM as a Cloud Service per caricarli nel modulo Apache/Dispatcher.
 
 ## Prerequisiti
 
@@ -37,11 +37,11 @@ Per completare questa esercitazione, è necessario:
 
 ## Caso di utilizzo del tutorial
 
-Ai fini della demo, supponiamo che il team di marketing WKND stia lanciando una nuova campagna di sci. Vorrebbe creare brevi URL per le pagine di avventura sciistica e gestirle in modo autonomo, come nel caso di come gestiscono il contenuto. They decided to use the [pipeline-free URL redirects](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) approach to manage the URL redirects.
+Ai fini della demo, supponiamo che il team di marketing WKND stia lanciando una nuova campagna di sci. Vorrebbe creare brevi URL per le pagine di avventura sciistica e gestirle in modo autonomo, come nel caso di come gestiscono il contenuto. Hanno deciso di utilizzare l&#39;approccio [reindirizzamenti URL senza pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) per gestire i reindirizzamenti URL.
 
-Based on the marketing team&#39;s requirements, the following are the URL redirects that need to be created.
+In base ai requisiti del team di marketing, di seguito sono riportati i reindirizzamenti URL da creare.
 
-| Source URL | URL destinazione |
+| URL SOURCE | URL destinazione |
 |------------|------------|
 | /ski | /us/en/adventures.html |
 | /ski/northamerica | /us/en/adventures/downhill-skiing-wyoming.html |
@@ -52,7 +52,7 @@ Ora vediamo come gestire questi reindirizzamenti URL e le configurazioni Dispatc
 
 ## Come gestire i reindirizzamenti URL{#manage-redirects}
 
-To manage the URL redirects there are multiple options available, let&#39;s explore them.
+Per gestire i reindirizzamenti URL sono disponibili più opzioni, esaminiamole.
 
 ### File di testo in DAM
 
@@ -72,15 +72,15 @@ Ad esempio, i reindirizzamenti URL di cui sopra possono essere salvati in un fil
 
 ### ACS Commons - Gestione mappa di reindirizzamento
 
-The [ACS Commons - Redirect Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) provides a user-friendly interface to manage the URL redirects.
+Il [ACS Commons - Redirect Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) fornisce un&#39;interfaccia intuitiva per gestire i reindirizzamenti URL.
 
-For example, the marketing team can create a new *Redirect Maps* page named `SkiCampaign` and add the above URL redirects using the **Edit Entries** tab. The URL redirects are available at `/etc/acs-commons/redirect-maps/skicampaign/jcr:content.redirectmap.txt`.
+Ad esempio, il team marketing può creare una nuova pagina *Mappe di reindirizzamento* denominata `SkiCampaign` e aggiungere i reindirizzamenti URL precedenti utilizzando la scheda **Modifica voci**. I reindirizzamenti URL sono disponibili in `/etc/acs-commons/redirect-maps/skicampaign/jcr:content.redirectmap.txt`.
 
-![Redirect Map Manager](./assets/pipeline-free-redirects/redirect-map-manager.png)
+![Gestione mappa di reindirizzamento](./assets/pipeline-free-redirects/redirect-map-manager.png)
 
 >[!IMPORTANT]
 >
->The ACS Commons version **6.7.0 or higher** is required to use the Redirect Map Manager, for more information, see the [ACS Commons - Redirect Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html).
+>Per utilizzare il gestore delle mappe di reindirizzamento è necessario disporre della versione di ACS Commons **6.7.0 o successiva**. Per ulteriori informazioni, vedere [ACS Commons - Redirect Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html).
 
 ### ACS Commons - Gestione reindirizzamento
 
@@ -94,11 +94,11 @@ Ad esempio, il team marketing può creare una nuova configurazione denominata `/
 >
 >Per utilizzare Redirect Manager è necessario disporre della versione di ACS Commons **6.10.0 o successiva**. Per ulteriori informazioni, vedere [ACS Commons - Redirect Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html).
 
-## How to configure the Dispatcher
+## Come configurare Dispatcher
 
-To load the URL redirects as a RewriteMap and apply them to the incoming requests, the following Dispatcher configurations are required.
+Per caricare i reindirizzamenti URL come RewriteMap e applicarli alle richieste in ingresso, sono necessarie le seguenti configurazioni di Dispatcher.
 
-### Enable Dispatcher module for flexible mode
+### Abilita modulo Dispatcher per la modalità flessibile
 
 Verificare innanzitutto che il modulo Dispatcher sia abilitato per la _modalità flessibile_. La presenza del file `USE_SOURCES_DIRECTLY` nella cartella `dispatcher/src/opt-in` indica che Dispatcher è in modalità flessibile.
 
@@ -120,9 +120,9 @@ Durante la distribuzione, Dispatcher crea il file `<MAPNAME>.map` nella cartella
 >
 > Il nome file (`managed-rewrite-maps.yaml`) e la posizione (`dispatcher/src/opt-in`) devono corrispondere esattamente a quanto indicato sopra. Consideralo come una convenzione da seguire.
 
-### Apply URL redirects to incoming requests
+### Applicare i reindirizzamenti URL alle richieste in ingresso
 
-Finally, create or update the Apache rewrite config file to use the above map (`<MAPNAME>.map`). For example, let&#39;s use the `rewrite.rules` file from the `dispatcher/src/conf.d/rewrites` folder to apply the URL redirects.
+Infine, crea o aggiorna il file di configurazione di riscrittura Apache per utilizzare la mappa precedente (`<MAPNAME>.map`). Ad esempio, utilizziamo il file `rewrite.rules` della cartella `dispatcher/src/conf.d/rewrites` per applicare i reindirizzamenti URL.
 
 ```
 ...
@@ -161,8 +161,8 @@ maps:
 RewriteMap skicampaign dbm=sdbm:/tmp/rewrites/skicampaign.map
 
 # Apply the RewriteMap for matching request URIs
-RewriteCond ${skicampaign:%{$1}} !=""
-RewriteRule ^(.*)$ ${skicampaign:%{$1}|/} [L,R=301]
+RewriteCond ${skicampaign:$1} !=""
+RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 
 ...
 ```
@@ -188,8 +188,8 @@ maps:
 RewriteMap skicampaign dbm=sdbm:/tmp/rewrites/skicampaign.map
 
 # Apply the RewriteMap for matching request URIs
-RewriteCond ${skicampaign:%{$1}} !=""
-RewriteRule ^(.*)$ ${skicampaign:%{$1}|/} [L,R=301]
+RewriteCond ${skicampaign:$1} !=""
+RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 
 ...
 ```
@@ -215,19 +215,19 @@ maps:
 RewriteMap skicampaign dbm=sdbm:/tmp/rewrites/skicampaign.map
 
 # Apply the RewriteMap for matching request URIs
-RewriteCond ${skicampaign:%{$1}} !=""
-RewriteRule ^(.*)$ ${skicampaign:%{$1}|/} [L,R=301]
+RewriteCond ${skicampaign:$1} !=""
+RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 
 ...
 ```
 
 >[!ENDTABS]
 
-## How to deploy the configurations
+## Come distribuire le configurazioni
 
 >[!IMPORTANT]
 >
->The *pipeline-free* term is used to emphasize that the configurations are *deployed only once* and the marketing team can manage the URL redirects by updating the text file.
+>Il termine *senza pipeline* viene utilizzato per sottolineare che le configurazioni sono *distribuite una sola volta* e che il team di marketing può gestire i reindirizzamenti URL aggiornando il file di testo.
 
 Per distribuire le configurazioni, utilizzare la pipeline [full-stack](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) o [configurazione a livello web](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines) in [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
@@ -250,4 +250,3 @@ Il team marketing può gestire i reindirizzamenti URL come coppie chiave-valore 
 
 - [Reindirizzamenti URL senza pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
 - [Reindirizzamenti URL](url-redirection.md)
-
