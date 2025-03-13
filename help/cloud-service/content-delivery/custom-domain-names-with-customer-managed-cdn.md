@@ -12,7 +12,7 @@ last-substantial-update: 2024-06-21T00:00:00Z
 jira: KT-15945
 thumbnail: KT-15945.jpeg
 exl-id: fa9ee14f-130e-491b-91b6-594ba47a7278
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 98f1996dbeb6a683f98ae654e8fa13f6c7a2f9b2
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 0%
@@ -40,8 +40,8 @@ I passaggi di alto livello sono i seguenti:
    - Autorità di certificazione (CA): per richiedere il certificato firmato per il dominio del sito, ad esempio [DigitCert](https://www.digicert.com/)
    - CDN cliente: per configurare la CDN cliente e aggiungere certificati SSL e dettagli del dominio, come AWS CloudFront, Azure CDN o Akamai.
    - Servizio di hosting DNS (Domain Name System): consente di aggiungere record DNS per il dominio personalizzato, ad esempio DNS di Azure o Route 53 di AWS.
-- Accesso a [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/) per distribuire la regola CDN di convalida dell&#39;intestazione HTTP nell&#39;ambiente AEM as a Cloud Service.
-- Il sito [AEM WKND](https://github.com/adobe/aem-guides-wknd) di esempio è stato distribuito nell&#39;ambiente AEM as a Cloud Service di tipo [programma di produzione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
+- Accedi a [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/) per distribuire la regola CDN di convalida dell&#39;intestazione HTTP nell&#39;ambiente AEM as a Cloud Service.
+- Il sito di esempio [AEM WKND](https://github.com/adobe/aem-guides-wknd) è stato distribuito nell&#39;ambiente AEM as a Cloud Service di tipo [programma di produzione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
 
 Se non hai accesso a servizi di terze parti, _collabora con il tuo team di sicurezza o di hosting per completare i passaggi_.
 
@@ -76,7 +76,7 @@ $ openssl crl2pkcs7 -nocrl -certfile <YOUR-SIGNED-CERT>.crt | openssl pkcs7 -pri
 
 Il certificato firmato può contenere la catena di certificati, che include i certificati radice e intermedi insieme al certificato dell’entità finale.
 
-L&#39;Adobe Cloud Manager accetta il certificato dell&#39;entità finale e la catena di certificati _in campi modulo separati_, pertanto è necessario estrarre il certificato dell&#39;entità finale e la catena di certificati dal certificato firmato.
+Adobe Cloud Manager accetta il certificato dell&#39;entità finale e la catena di certificati _in campi modulo separati_, pertanto è necessario estrarre il certificato dell&#39;entità finale e la catena di certificati dal certificato firmato.
 
 In questa esercitazione, il certificato firmato [DigitCert](https://www.digicert.com/) rilasciato per il dominio `*.enablementadobe.com` viene utilizzato come esempio. L&#39;entità finale e la catena di certificati vengono estratte aprendo il certificato firmato in un editor di testo e copiando il contenuto tra i marcatori `-----BEGIN CERTIFICATE-----` e `-----END CERTIFICATE-----`.
 
@@ -90,7 +90,7 @@ Configura la rete CDN del cliente, come AWS CloudFront, Azure CDN o Akamai, e ag
 - Aggiungi il nome di dominio personalizzato alla rete CDN.
 - Configura la rete CDN per memorizzare in cache il contenuto, come immagini, file CSS e JavaScript.
 - Aggiungi l&#39;intestazione HTTP `X-Forwarded-Host` alle impostazioni della rete CDN in modo che la rete CDN includa tale intestazione in tutte le richieste che invia all&#39;origine AEMCD.
-- Assicurarsi che il valore dell&#39;intestazione `Host` sia impostato sul dominio AEM as a Cloud Service predefinito contenente l&#39;ID del programma e dell&#39;ambiente e che termini con `adobeaemcloud.com`. Il valore dell’intestazione dell’host HTTP passato dalla rete CDN del cliente alla rete CDN dell’Adobe deve essere il dominio predefinito di AEM as a Cloud Service. Qualsiasi altro valore genera uno stato di errore.
+- Assicurarsi che il valore dell&#39;intestazione `Host` sia impostato sul dominio AEM as a Cloud Service predefinito contenente l&#39;ID del programma e dell&#39;ambiente e che termini con `adobeaemcloud.com`. Il valore dell’intestazione dell’host HTTP passato dalla rete CDN del cliente alla rete CDN di Adobe deve essere il dominio predefinito di AEM as a Cloud Service. Qualsiasi altro valore restituisce uno stato di errore.
 
 ## Configurare i record DNS
 
@@ -201,16 +201,16 @@ Per configurare e distribuire la regola CDN di convalida dell’intestazione HTT
   kind: "CDN"
   version: "1"
   metadata:
-  envTypes: ["prod"]
+    envTypes: ["prod"]
   data:
-  authentication:
+    authentication:
       authenticators:
-      - name: edge-auth
+        - name: edge-auth
           type: edge
           edgeKey1: ${{CDN_EDGEKEY_080124}}
           edgeKey2: ${{CDN_EDGEKEY_110124}}
       rules:
-      - name: edge-auth-rule
+        - name: edge-auth-rule
           when: { reqProperty: tier, equals: "publish" }
           action:
           type: authenticate
@@ -224,7 +224,7 @@ Per configurare e distribuire la regola CDN di convalida dell’intestazione HTT
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432567?quality=12&learn=on)
 
-Aggiorna la rete CDN del cliente in modo che passi il segreto nell&#39;intestazione HTTP `X-AEM-Edge-Key`. Il segreto viene utilizzato dal CDN Adobe per convalidare la richiesta proveniente dal CDN cliente e trasformare il valore dell&#39;intestazione `Host` nel valore di `X-Forwarded-Host` ricevuto dal CDN cliente.
+Aggiorna la rete CDN del cliente in modo che passi il segreto nell&#39;intestazione HTTP `X-AEM-Edge-Key`. Il segreto viene utilizzato dal CDN di Adobe per verificare che la richiesta provenga dal CDN del cliente e trasformare il valore dell&#39;intestazione `Host` nel valore di `X-Forwarded-Host` ricevuto dal CDN del cliente.
 
 ## Video end-to-end
 
