@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: efaf77a9f8e68f679be3469c39697b57366684b3
+source-git-commit: 77beb9f543bc6dc8c1ab4993c969375ce3e238e8
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '450'
 ht-degree: 15%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 15%
 + Ricerca e individuazione{#search-and-discovery}
    + [Ricerca](./search-and-discovery/search.md)
    + [Ricerca contestuale](./search-and-discovery/contextual-search.md)
-   + [Integrazione Adobe Firefly](./search-and-discovery/adobe-firefly.md)
+   + [Integrazione con Adobe Firefly](./search-and-discovery/adobe-firefly.md)
    + [Raccolte](./search-and-discovery/collections.md)
    + [Incremento della ricerca](./search-and-discovery/search-boost.md)
    + [Trova immagini simili](./search-and-discovery/find-similar-images.md)
@@ -62,7 +62,7 @@ ht-degree: 15%
    + [risorse 3D](./advanced/3d-assets.md)
    + [Output PDF delle annotazioni](./advanced/customizing-annotations-pdf-output.md)
    + [Rapporti di Assets](./advanced/asset-reports.md)
-   + [Content credentials](./advanced/content-credentials.md)
+   + [Credenziali contenuto](./advanced/content-credentials.md)
    + [Tag bloccati](./advanced/blocked-tags.md)
    + [Estrai archivio](./advanced/extract-archive.md)
    + [Autorizzazioni (CUG)](./advanced/closed-user-groups.md)
@@ -83,12 +83,12 @@ ht-degree: 15%
    + [Configura](./content-hub/configure.md)
    + [Aggiungi risorse](./content-hub/add-assets.md)
    + [Scaricare le risorse](./content-hub/download-assets.md)
-   + [Varianti immagine con Adobe Express](./content-hub/image-variants.md)
+   + [Varianti di immagini con Adobe Express](./content-hub/image-variants.md)
    + [Raccolte](./content-hub/collections.md)
    + [Condivisione](./content-hub/share.md)
 
 + Edge Delivery Services{#edge-delivery-services}
-   + [plugin Sidekick](./edge-delivery-services/sidekick-plugin.md)
+   + [Plug-in Sidekick](./edge-delivery-services/sidekick-plugin.md)
 
 + Adobe GenStudio{#adobe-genstudio}
    + [AEM Assets e GenStudio for Performance Marketing](https://experienceleague.adobe.com/en/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
@@ -96,7 +96,7 @@ ht-degree: 15%
 + Condivisione e distribuzione{#sharing}
    + [Scaricare le risorse](./sharing/download.md)
    + [Esportare le risorse](./sharing/export.md)
-   + [Risorse Publish](./sharing/publish.md)
+   + [Pubblicare le risorse](./sharing/publish.md)
 
    + Brand Portal{#brand-portal}
       + [Brand Portal](./sharing/brand-portal.md)
@@ -105,12 +105,12 @@ ht-degree: 15%
 
    + Condivisione risorse{#assets-share}
       + [Asset Share Commons](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
-      + [Configurare Asset Share Commons (Condivisione risorse) sull’AEM locale](./sharing/asset-share-commons-technical-video-setup.md)
+      + [Configurare Asset Share Commons su AEM locale](./sharing/asset-share-commons-technical-video-setup.md)
       + [Virgole condivisione risorse tempistiche](./sharing/asset-share-commons-feature-video-theming.md)
       + [Kit di risorse Asset Share Commons](./sharing/asset-share/asset-share-commons-asset-kits.md)
 
-+ Flussi di lavoro creativi{#creative-workflows}
-   + [Integrazione Adobe Express](./creative-workflows/adobe-express.md)
++ Flussi di lavoro di Creative{#creative-workflows}
+   + [Integrazione con Adobe Express](./creative-workflows/adobe-express.md)
    + [ADOBE EXPRESS e AEM ASSETS](./creative-workflows/adobe-express-aem-assets.md)
    + [App desktop AEM](./creative-workflows/aem-desktop-app.md)
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
@@ -118,7 +118,7 @@ ht-degree: 15%
 
 + Adobe Asset Link{#adobe-asset-link}
    + [Configurazione](./adobe-asset-link/setup.md)
-   + [Accedi ad Adobe Asset Link](./adobe-asset-link/launch-adobe-asset-link.md)
+   + [Accedere ad Adobe Asset Link](./adobe-asset-link/launch-adobe-asset-link.md)
    + [Panoramica del pannello](./adobe-asset-link/panel-overview.md)
    + [File e raccolte](./adobe-asset-link/files-and-collections.md)
    + [Scaricare e caricare](./adobe-asset-link/download-and-upload.md)
@@ -131,14 +131,15 @@ ht-degree: 15%
 
 + Automazione dei contenuti{#content-automation}
    + [Panoramica](./content-automation/overview.md)
-   + [Operazioni creative](./content-automation/creative-operations.md)
+   + [Operazioni Creative](./content-automation/creative-operations.md)
    + [Azioni Photoshop](./content-automation/photoshop-actions.md)
 
-+ Dynamic Media{#dynamic-media}
++ Elemento multimediale dinamico{#dynamic-media}
    + [Panoramica di Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Applicazione desktop Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Immagini {#images}
-      + [Snapshot Dynamic Media](dynamic-media/dynamic-media-snapshot.md)
+      + [Modelli Dynamic Media](dynamic-media/dynamic-media-templates.md)
+      + [Snapshot elementi multimediali dinamici](dynamic-media/dynamic-media-snapshot.md)
       + [Ritaglio avanzato](dynamic-media/smart-crop-feature-video-use.md)
       + [Nitidezza immagine](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
       + [Gestione colore](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
@@ -158,7 +159,7 @@ ht-degree: 15%
       + [Frammenti di esperienza](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Componenti core Dynamic Media](dynamic-media/dynamic-media-core-components.md)
 
-   + Tutorials {#tutorials}
+   + Esercitazioni {#tutorials}
       + [Creazione di set carosello](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
       + [Creazione di set di immagini](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
       + [Creazione di predefiniti immagine](dynamic-media/tutorials/creating-image-presets.md)
@@ -170,7 +171,7 @@ ht-degree: 15%
       + [Attivazione di un processo di esportazione](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
       + [Annullamento della validità della cache CDN](dynamic-media/tutorials/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
       + [Utilizzo dei componenti core di Dynamic Media](dynamic-media/tutorials/using-dm-components-on-site-page.md)
-      + [Eliminazione della configurazione di Dynamic Media](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
+      + [Eliminazione della configurazione Dynamic Media](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
       + [Download di Assets nell’app Dynamic Media Classic](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [API IPS di Dynamic Media Classic](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
 
