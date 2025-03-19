@@ -1,6 +1,6 @@
 ---
 title: Impostare gli strumenti di sviluppo per lo sviluppo AEM as a Cloud Service
-description: Configurare un computer di sviluppo locale con tutti gli strumenti di base necessari per lo sviluppo locale contro l'AEM.
+description: Imposta un computer di sviluppo locale con tutti gli strumenti di base necessari per lo sviluppo locale in AEM.
 feature: Developer Tools
 version: Cloud Service
 jira: KT-4267
@@ -11,9 +11,9 @@ level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
 duration: 3508
-source-git-commit: e7a85e8d072d808683580a201dd10b3a847efaaa
+source-git-commit: b865156776865b1155af7c7f3bd234bd337be796
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1308'
 ht-degree: 6%
 
 ---
@@ -25,18 +25,18 @@ ht-degree: 6%
 >title="Configurare gli strumenti di sviluppo"
 >abstract="Per sviluppare per Adobe Experience Manager (AEM) è necessario installare e configurare un set minimo di strumenti specifici nel computer dello sviluppatore, compresi Java, Maven, Adobe I/O CLI, IDE di sviluppo e altri."
 >additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines" text="Linee guida per lo sviluppo"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk" text="Nozioni di base sullo sviluppo"
+>additional-url="https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk" text="Nozioni di base sullo sviluppo"
 
-Per sviluppare per Adobe Experience Manager (AEM) è necessario installare e configurare un set minimo di strumenti specifici nel computer dello sviluppatore, Questi strumenti sostengono lo sviluppo e la creazione di progetti AEM.
+Per sviluppare per Adobe Experience Manager (AEM) è necessario installare e configurare un set minimo di strumenti specifici nel computer dello sviluppatore, Questi strumenti supportano lo sviluppo e la creazione di progetti AEM.
 
 `~` viene utilizzato come abbreviazione per la directory dell&#39;utente. In Windows equivale a `%HOMEPATH%`.
 
 ## Installare Java
 
-Experience Manager è un’applicazione Java e pertanto richiede SDK Java per supportare lo sviluppo e l’SDK AEM as a Cloud Service.
+Experience Manager è un’applicazione Java e pertanto richiede Java SDK per supportare lo sviluppo e AEM as a Cloud Service SDK.
 
 1. [Scarica e installa la versione più recente Java 11 SDK](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-1. Verifica che l’SDK di Java 11 Oracle sia installato eseguendo il comando:
+1. Verifica che Oracle Java 11 SDK sia installato eseguendo il comando:
 
 >[!BEGINTABS]
 
@@ -146,13 +146,13 @@ Se utilizzi Homebrew, segui le istruzioni __Installa utilizzando Homebrew__ nell
 
 >[!TIP]
 >
->I progetti AEM basati su [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype) installano una versione isolata di Node.js al momento della compilazione. È consigliabile mantenere sincronizzata (o vicina) la versione del sistema di sviluppo locale con le versioni di Node.js e npm specificate nel progetto Reactor pom.xml del progetto AEM Maven.
+>I progetti AEM basati su [Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype) installano una versione isolata di Node.js al momento della compilazione. È consigliabile mantenere sincronizzata (o vicina) la versione del sistema di sviluppo locale con le versioni di Node.js e npm specificate nel file pom.xml del progetto Reactor di AEM Maven.
 >
 >Consulta questo esempio [AEM Project Reactor pom.xml](https://github.com/adobe/aem-guides-wknd/blob/9ac94f3f40c978a53ec88fae79fbc17dd2db72f2/pom.xml#L117-L118) per sapere dove individuare le versioni di Node.js e npm.
 
 ## Installare Maven
 
-Apache Maven è lo strumento da riga di comando Java open-source utilizzato per creare progetti AEM generati dall’archetipo Maven del progetto AEM. Tutti gli IDE principali ([IntelliJ IDEA](https://www.jetbrains.com/idea/), [Visual Studio Code](https://code.visualstudio.com/), [Eclipse](https://www.eclipse.org/), ecc.) dispongono del supporto Maven integrato.
+Apache Maven è lo strumento da riga di comando Java open-source utilizzato per creare progetti AEM generati dall’archetipo Maven del progetto AEM. Tutti gli IDE principali ([IntelliJ IDEA](https://www.jetbrains.com/idea/), [Visual Studio Code](https://code.visualstudio.com/), [Eclipse](https://www.eclipse.org/) e così via) dispongono del supporto Maven integrato.
 
 
 >[!BEGINTABS]
@@ -176,79 +176,64 @@ Apache Maven è lo strumento da riga di comando Java open-source utilizzato per 
 
 ## Configurare Adobe I/O CLI{#aio-cli}
 
-[Adobe I/O CLI](https://github.com/adobe/aio-cli) o `aio` fornisce l&#39;accesso alla riga di comando a diversi servizi Adobe, tra cui [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) e [Asset Compute](https://github.com/adobe/aio-cli-plugin-asset-compute). L’interfaccia CLI di Adobe I/O svolge un ruolo fondamentale nello sviluppo su AEM as a Cloud Service, in quanto consente agli sviluppatori di:
+[Adobe I/O CLI](https://github.com/adobe/aio-cli) o `aio` fornisce l&#39;accesso alla riga di comando a diversi servizi Adobe, tra cui [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) e [Asset Compute](https://github.com/adobe/aio-cli-plugin-asset-compute). Adobe I/O CLI svolge un ruolo fondamentale nello sviluppo su AEM as a Cloud Service in quanto consente agli sviluppatori di:
 
-+ Registri di coda da AEM as a Cloud Service Services
++ Registri di coda dai servizi di AEM as a Cloud Services
 + Gestire le pipeline Cloud Manager da CLI
 + Distribuisci in [ambienti di sviluppo rapido AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
 
 ### Installare Adobe I/O CLI
 
-1. Verificare che [Node.js sia installato](#node-js) poiché l&#39;interfaccia CLI di Adobe I/O è un modulo npm
+1. Verificare che [Node.js sia installato](#node-js) poiché Adobe I/O CLI è un modulo npm
    + Esegui `node --version` per confermare
 1. Eseguire `npm install -g @adobe/aio-cli` per installare il modulo npm `aio` a livello globale
 
 ### Configurare il plug-in Adobe I/O CLI Cloud Manager{#aio-cloud-manager}
 
-Il plug-in Cloud Manager Adobe I/O consente all&#39;interfaccia CLI dell&#39;aio di interagire con Adobe Cloud Manager tramite il comando `aio cloudmanager`.
+Il plug-in Cloud Manager di Adobe I/O consente all&#39;interfaccia della riga di comando aio di interagire con Adobe Cloud Manager tramite il comando `aio cloudmanager`.
 
 1. Eseguire `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` per installare il plug-in di Cloud Manager [aio](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
-#### Configurare l’autenticazione CLI Adobe I/O
+#### Configurare l’autenticazione CLI di Adobe I/O
 
-Affinché Adobe I/O CLI possa comunicare con Cloud Manager, è necessario creare un&#39;integrazione di [Cloud Manager in Adobe I/O Console](https://github.com/adobe/aio-cli-plugin-cloudmanager) e ottenere le credenziali per l&#39;autenticazione.
+Affinché Adobe I/O CLI possa comunicare con Cloud Manager, è necessario creare un&#39;integrazione di [Cloud Manager nella console di Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager) e ottenere le credenziali per l&#39;autenticazione.
 
 1. Accedi a [console.adobe.io](https://console.adobe.io)
 1. Assicurati che l’organizzazione che include il prodotto Cloud Manager a cui connettersi sia attiva nello switcher dell’organizzazione Adobe
-1. Crea un nuovo programma di Adobe I/O [esistente](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md) o aprilo
-   + I progetti Adobe I/O Console sono semplicemente raggruppamenti organizzativi di integrazioni, creazione o utilizzo di e progetti esistenti in base a come desideri gestire le integrazioni.
+1. Crea un nuovo programma [Adobe I/O](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md) o apri un programma esistente
+   + I progetti della console Adobe I/O sono semplicemente raggruppamenti organizzativi di integrazioni, creano o utilizzano e progetti esistenti in base a come desideri gestire le integrazioni.
    + Se crei un nuovo progetto, seleziona &quot;Progetto vuoto&quot; se richiesto (anziché &quot;Crea da modello&quot;).
-   + I programmi Adobe I/O Console sono concetti diversi rispetto ai programmi Cloud Manager
+   + I programmi della console Adobe I/O sono concetti diversi rispetto ai programmi Cloud Manager
 1. Creare una nuova integrazione API Cloud Manager
-   + Seleziona il tipo di autenticazione &quot;Service Account (JWT)&quot; obsoleto (OAuth non è al momento supportato per CLI).
-   + Crea o carica le chiavi.
-   + Seleziona il profilo di prodotto &quot;Sviluppatore - Cloud Service&quot;
-1. Per ottenere le credenziali dell&#39;account di servizio (JWT) è necessario compilare [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication) di Adobe I/O CLI
-
-   ```json
-   //config.json 
-   {
-      "client_id": "Client ID from Service Account (JWT) credential",
-      "client_secret": "Client Secret from Service Account (JWT) credential",
-      "technical_account_id": "Technical Account ID from Service Account (JWT) credential",
-      "ims_org_id": "Organization ID from Service Account (JWT) credential",
-      "meta_scopes": [
-        "ent_cloudmgr_sdk"
-      ]
-   }
-   ```
-
+   + Selezionare il tipo di credenziali &quot;Oauth Server-to-server&quot;.
+   + Seleziona il profilo di prodotto &quot;Deployment Manager - Cloud Service&quot;.
+   + Salva API configurata
+1. Per ottenere le credenziali necessarie per popolare il file [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication) di Adobe I/O CLI, apri le credenziali &quot;OAuth Server-to-server&quot; appena create e seleziona &quot;Scarica JSON&quot; dalla barra delle azioni in alto a destra.
+1. Apri il file JSON scaricato e rinominato tutte le chiavi in minuscolo. `CLIENT_ID`, ad esempio, diventa `client_id`.
 1. Carica il file `config.json` in Adobe I/O CLI
-   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager ./path/to/config.json --file --json`
-1. Carica il file `private.key` in Adobe I/O CLI
-   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager.private_key ./path/to/private.key --file`
+   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager /path/to/downloaded/json --file --json`
 
 Inizia [l&#39;esecuzione dei comandi](https://github.com/adobe/aio-cli-plugin-cloudmanager#commands) per Cloud Manager tramite Adobe I/O CLI.
 
 ### Configurare il plug-in AEM Rapid Development Environment{#rde}
 
-Il plug-in AEM Rapid Development Environment consente all&#39;interfaccia della riga di comando aio di interagire con AEM as a Cloud Service [Rapid Development Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html) tramite il comando `aio aem:rde`.
+Il plug-in AEM Rapid Development Environment consente all&#39;interfaccia CLI dell&#39;aio di interagire con AEM as a Cloud Service [Rapid Development Environments](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html) tramite il comando `aio aem:rde`.
 
 1. Eseguire `aio plugins:install @adobe/aio-cli-plugin-aem-rde` per installare il plug-in [AEM Rapid Development Environments](https://github.com/adobe/aio-cli-plugin-aem-rde).
 
-### Configurare il plug-in di Asset compute CLI Adobe I/O{#aio-asset-compute}
+### Configurare il plug-in Adobe I/O CLI Asset Compute{#aio-asset-compute}
 
-Il plug-in Cloud Manager Adobe I/O consente all&#39;interfaccia CLI dell&#39;aio di generare ed eseguire processi di lavoro Asset Compute tramite il comando `aio asset-compute`.
+Il plug-in Adobe I/O Cloud Manager consente all&#39;interfaccia della riga di comando aio di generare ed eseguire processi di lavoro Asset Compute tramite il comando `aio asset-compute`.
 
-1. Eseguire `aio plugins:install @adobe/aio-cli-plugin-asset-compute` per installare il plug-in di Asset compute [aio](https://github.com/adobe/aio-cli-plugin-asset-compute).
+1. Eseguire `aio plugins:install @adobe/aio-cli-plugin-asset-compute` per installare il plug-in Asset Compute [aio](https://github.com/adobe/aio-cli-plugin-asset-compute).
 
 ## Configurare l’IDE di sviluppo
 
-Lo sviluppo AEM consiste principalmente nello sviluppo Java e front-end (JavaScript, CSS, ecc.) e nella gestione XML. Di seguito sono riportati gli IDE più popolari per lo sviluppo dell’AEM.
+Lo sviluppo AEM consiste principalmente nello sviluppo Java e front-end (JavaScript, CSS, ecc.) e nella gestione XML. Di seguito sono riportati gli IDE più comuni per lo sviluppo AEM.
 
 ### IDEA IntelliJ
 
-__[IntelliJ IDEA](https://www.jetbrains.com/idea/)__ è un potente IDE per lo sviluppo Java. IntelliJ IDEA è disponibile in due versioni, una versione Community gratuita e una versione Ultimate commerciale (a pagamento). La versione gratuita di Community è sufficiente per lo sviluppo di AEM, tuttavia Ultimate [espande il suo set di funzionalità](https://www.jetbrains.com/idea/download).
+__[IntelliJ IDEA](https://www.jetbrains.com/idea/)__ è un potente IDE per lo sviluppo Java. IntelliJ IDEA è disponibile in due versioni, una versione Community Edition gratuita e una versione Ultimate commerciale (a pagamento). La versione gratuita della community è sufficiente per lo sviluppo di AEM, tuttavia Ultimate [espande il set di funzionalità](https://www.jetbrains.com/idea/download).
 
 >[!VIDEO](https://video.tv.adobe.com/v/26089?quality=12&learn=on)
 
@@ -266,11 +251,11 @@ Visual Studio Code è la scelta ideale per gli sviluppatori front-end che creano
 + [Scarica codice Visual Studio](https://code.visualstudio.com/Download)
 + [Scarica lo strumento repository](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)
 + [Scarica l&#39;estensione codice VS aemfed](https://aemfed.io/)
-+ [Scarica estensione codice VS sincronizzazione AEM](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)
++ [Scarica estensione codice VS di AEM Sync](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)
 
 ### Eclipse
 
-__[Eclipse IDE](https://www.eclipse.org/ide/)__ è uno dei più diffusi IDE per lo sviluppo Java e supporta il plug-in __[Strumenti per sviluppatori AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)__ fornito da Adobe, che fornisce un&#39;interfaccia grafica interna all&#39;IDE per la creazione e la sincronizzazione dei contenuti JCR con un&#39;istanza AEM locale.
+__[Eclipse IDE](https://www.eclipse.org/ide/)__ è uno dei più diffusi IDE per lo sviluppo Java e supporta il plug-in __[Strumenti per sviluppatori AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)__ fornito da Adobe, che fornisce un&#39;interfaccia grafica interna all&#39;IDE per l&#39;authoring e la sincronizzazione dei contenuti JCR con un&#39;istanza AEM locale.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
