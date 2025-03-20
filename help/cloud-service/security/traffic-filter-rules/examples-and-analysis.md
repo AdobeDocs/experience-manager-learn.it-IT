@@ -1,6 +1,6 @@
 ---
-title: Esempi e analisi dei risultati delle regole del filtro del traffico, incluse le regole WAF
-description: Scopri diverse regole del filtro del traffico, inclusi esempi di regole WAF. Inoltre, come analizzare i risultati utilizzando i registri CDN di AEM as a Cloud Service (AEMCS).
+title: Esempi e analisi dei risultati delle regole del filtro del traffico, incluse le regole di WAF
+description: Scopri diverse regole del filtro del traffico, inclusi esempi di regole di WAF. Inoltre, come analizzare i risultati utilizzando i registri CDN di AEM as a Cloud Service (AEMCS).
 version: Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
@@ -12,20 +12,20 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 49becbcb-7965-4378-bb8e-b662fda716b7
 duration: 532
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 67091c068634e6c309afaf78942849db626128f6
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 0%
 
 ---
 
-# Esempi e analisi dei risultati delle regole del filtro del traffico, incluse le regole WAF
+# Esempi e analisi dei risultati delle regole del filtro del traffico, incluse le regole di WAF
 
 Scopri come dichiarare vari tipi di regole del filtro del traffico e analizzare i risultati utilizzando i registri CDN e gli strumenti della dashboard di Adobe Experience Manager as a Cloud Service (AEMCS).
 
-In questa sezione verranno illustrati alcuni esempi pratici delle regole del filtro del traffico, incluse le regole WAF. Scoprirai come registrare, consentire e bloccare le richieste in base a URI (o percorso), indirizzo IP, numero di richieste e tipi di attacco diversi utilizzando [Progetto siti WKND AEM](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
+In questa sezione verranno illustrati alcuni esempi pratici delle regole del filtro del traffico, incluse le regole di WAF. Scoprirai come registrare, consentire e bloccare le richieste in base a URI (o percorso), indirizzo IP, numero di richieste e tipi di attacco diversi utilizzando [AEM WKND Sites Project](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
 
-Inoltre, scoprirai come utilizzare gli strumenti della dashboard che acquisiscono i registri CDN di AEMCS per visualizzare le metriche essenziali attraverso gli esempi di dashboard forniti da Adobe.
+Inoltre, scoprirai come utilizzare gli strumenti delle dashboard che acquisiscono i registri CDN di AEMCS per visualizzare le metriche essenziali tramite le dashboard di esempio fornite da Adobe.
 
 Per allinearsi ai requisiti specifici, puoi migliorare e creare dashboard personalizzate, ottenendo informazioni più approfondite e ottimizzando le configurazioni delle regole per i siti AEM.
 
@@ -33,11 +33,11 @@ Per allinearsi ai requisiti specifici, puoi migliorare e creare dashboard person
 
 ## Esempi
 
-Esaminiamo vari esempi di regole del filtro del traffico, incluse le regole WAF. Assicurati di aver completato il processo di installazione richiesto come descritto nel precedente capitolo [su come configurare](./how-to-setup.md) e di aver clonato il [progetto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
+Esaminiamo vari esempi di regole del filtro del traffico, incluse le regole di WAF. Assicurati di aver completato il processo di installazione richiesto come descritto nel precedente capitolo [su come configurare](./how-to-setup.md) e di aver clonato il [progetto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
 
 ### Registrazione delle richieste
 
-Iniziare **registrando le richieste dei percorsi di accesso e disconnessione WKND** rispetto al servizio Publish AEM.
+Inizia con **registrando le richieste dei percorsi di accesso e disconnessione WKND** rispetto al servizio di pubblicazione AEM.
 
 - Aggiungi la regola seguente al file `/config/cdn.yaml` del progetto WKND.
 
@@ -71,7 +71,7 @@ data:
 
   ![Pipeline di configurazione Cloud Manager](./assets/cloud-manager-config-pipeline.png)
 
-- Verifica la regola effettuando l&#39;accesso e la disconnessione dal sito WKND del programma nel servizio Publish (ad esempio, `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html`). È possibile utilizzare `asmith/asmith` come nome utente e password.
+- Verifica la regola effettuando l&#39;accesso e la disconnessione dal sito WKND del programma nel servizio di pubblicazione (ad esempio, `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html`). È possibile utilizzare `asmith/asmith` come nome utente e password.
 
   ![Accesso WKND](./assets/wknd-login.png)
 
@@ -79,7 +79,7 @@ data:
 
 Analizziamo i risultati della regola `publish-auth-requests` scaricando i registri CDN di AEMCS da Cloud Manager e utilizzando gli strumenti del [dashboard](how-to-setup.md#analyze-results-using-elk-dashboard-tool), impostati nel capitolo precedente.
 
-- Dalla scheda **Ambienti** di [Cloud Manager](https://my.cloudmanager.adobe.com/), scarica i registri CDN del servizio **Publish** AEMCS.
+- Dalla scheda **Ambienti** di [Cloud Manager](https://my.cloudmanager.adobe.com/), scarica i registri CDN del servizio **Pubblica** AEMCS.
 
   ![Download dei registri CDN di Cloud Manager](./assets/cloud-manager-cdn-log-downloads.png)
 
@@ -200,7 +200,7 @@ data:
 - Per simulare l&#39;attacco DoS, utilizzare il seguente comando [Vegeta](https://github.com/tsenart/vegeta).
 
   ```shell
-  $ echo "GET https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html" | vegeta attack -rate=120 -duration=5s | vegeta report
+  $ echo "GET https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html" | vegeta attack -rate=120 -duration=60s | vegeta report
   ```
 
   Questo comando effettua 120 richieste per 5 secondi ed restituisce un rapporto. Come puoi vedere, il tasso di successo è del 32,5%; per il resto viene ricevuto un codice di risposta HTTP 406, a dimostrazione che il traffico era bloccato.
@@ -225,13 +225,13 @@ Per ulteriori informazioni su come prevenire gli attacchi DoS e DDoS, vedere l&#
 
 Gli esempi di regole del filtro del traffico finora possono essere configurati da tutti i clienti Sites e Forms.
 
-Esaminiamo ora l’esperienza di un cliente che ha ottenuto una licenza di sicurezza avanzata o protezione WAF-DDoS, che consente di configurare regole avanzate per proteggere i siti web da attacchi più sofisticati.
+Esaminiamo ora l&#39;esperienza di un cliente che ha ottenuto una licenza di protezione avanzata o WAF-DDoS, che consente di configurare regole avanzate per proteggere i siti Web da attacchi più sofisticati.
 
-Prima di continuare, abilitare la protezione WAF-DDoS per il programma, come descritto nella documentazione sulle regole del filtro del traffico [passaggi di configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup).
+Prima di continuare, abilitare la protezione WAF-DDoS per il programma, come descritto nella documentazione sulle regole del filtro del traffico [passaggi di installazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup).
 
 #### Senza WAFFlags
 
-Vediamo innanzitutto l’esperienza anche prima che vengano dichiarate le regole WAF. Quando il WAF-DDoS è abilitato nel programma, i registri CDN per impostazione predefinita registrano qualsiasi corrispondenza di traffico dannoso, in modo da avere le informazioni giuste per trovare le regole appropriate.
+Vediamo l’esperienza prima ancora che vengano dichiarate le regole di WAF. Quando WAF-DDoS è abilitato nel programma, i registri CDN per impostazione predefinita registrano qualsiasi corrispondenza di traffico dannoso, in modo da avere le informazioni giuste per trovare le regole appropriate.
 
 Iniziamo attaccando il sito WKND senza aggiungere una regola WAF (o utilizzando la proprietà `wafFlags`) e analizzando i risultati.
 
@@ -251,20 +251,20 @@ Per analizzare i risultati della simulazione dell&#39;attacco, seguire gli stess
 
 Tuttavia, questa volta dovresti visualizzare le **richieste con flag** e i valori corrispondenti nelle colonne IP client (cli_ip), host, URL, azione (waf_action) e nome regola (waf_match). Queste informazioni ti consentono di analizzare i risultati e ottimizzare la configurazione della regola.
 
-![Richiesta contrassegnata WAF dashboard strumenti ELK](./assets/elk-tool-dashboard-waf-flagged.png)
+![Richiesta contrassegnata da WAF nel dashboard dello strumento ELK](./assets/elk-tool-dashboard-waf-flagged.png)
 
 I pannelli **Distribuzione flag WAF** e **Attacchi principali** mostrano ulteriori dettagli che possono essere utilizzati per ottimizzare ulteriormente la configurazione della regola.
 
-![Richiesta di flag di attacchi WAF dashboard strumento ELK](./assets/elk-tool-dashboard-waf-flagged-top-attacks-1.png)
+![Dashboard dello strumento ELK: richiesta flag di WAF per gli attacchi](./assets/elk-tool-dashboard-waf-flagged-top-attacks-1.png)
 
 ![Richiesta attacchi principali WAF dashboard strumenti ELK](./assets/elk-tool-dashboard-waf-flagged-top-attacks-2.png)
 
 
 #### Con WAFFlags
 
-Aggiungiamo ora una regola WAF che contiene la proprietà `wafFlags` come parte della proprietà `action` e **blocchiamo le richieste di attacchi simulati**.
+Aggiungiamo ora una regola di WAF che contiene la proprietà `wafFlags` come parte della proprietà `action` e **blocca le richieste di attacchi simulati**.
 
-Dal punto di vista della sintassi, le regole WAF sono simili a quelle visualizzate in precedenza, tuttavia, la proprietà `action` fa riferimento a uno o più valori `wafFlags`. Per ulteriori informazioni su `wafFlags`, consulta la sezione [Elenco flag WAF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#waf-flags-list).
+Dal punto di vista della sintassi, le regole di WAF sono simili a quelle visualizzate in precedenza, tuttavia, la proprietà `action` fa riferimento a uno o più valori `wafFlags`. Per ulteriori informazioni su `wafFlags`, consulta la sezione [Elenco flag WAF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#waf-flags-list).
 
 - Aggiungi la seguente regola nel file `/config/cdn.yaml` del progetto WKND. Si noti che la regola `block-waf-flags` include alcuni dei wafFlags visualizzati nella dashboard quando vengono attaccati con traffico dannoso simulato. In effetti, è buona prassi nel tempo analizzare i registri per determinare quali nuove regole dichiarare, man mano che il panorama delle minacce si evolve.
 
@@ -321,11 +321,11 @@ Ripeti gli stessi passaggi descritti nell&#39;[esempio precedente](#analyzing).
 
 Questa volta dovresti visualizzare le voci in **Richieste bloccate** e i valori corrispondenti nelle colonne IP client (cli_ip), host, URL, azione (waf_action) e nome regola (waf_match).
 
-![Richiesta bloccata WAF dashboard strumenti ELK](./assets/elk-tool-dashboard-waf-blocked.png)
+![Richiesta bloccata da WAF per il dashboard dello strumento ELK](./assets/elk-tool-dashboard-waf-blocked.png)
 
 Inoltre, i pannelli **Distribuzione flag WAF** e **Attacchi principali** mostrano ulteriori dettagli.
 
-![Richiesta di flag di attacchi WAF dashboard strumento ELK](./assets/elk-tool-dashboard-waf-blocked-top-attacks-1.png)
+![Dashboard dello strumento ELK: richiesta flag di WAF per gli attacchi](./assets/elk-tool-dashboard-waf-blocked-top-attacks-1.png)
 
 ![Richiesta attacchi principali WAF dashboard strumenti ELK](./assets/elk-tool-dashboard-waf-blocked-top-attacks-2.png)
 
@@ -335,7 +335,7 @@ Nelle sezioni _analysis_ precedenti hai imparato ad analizzare i risultati di re
 
 
 - Richieste analizzate, contrassegnate e bloccate
-- Distribuzione dei flag WAF nel tempo
+- Distribuzione dei flag di WAF nel tempo
 - Attivazione delle regole del filtro del traffico nel tempo
 - Primi attacchi per ID flag WAF
 - Filtro del traffico attivato più alto
