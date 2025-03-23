@@ -1,7 +1,7 @@
 ---
 title: Opzioni del nome di dominio personalizzato
 description: Scopri come gestire e implementare nomi di dominio personalizzati per il sito web ospitato da AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Cloud Manager, Custom Domain Names
 topic: Architecture, Migration
 role: Admin, Architect, Developer
@@ -12,9 +12,9 @@ last-substantial-update: 2024-08-09T00:00:00Z
 jira: KT-15946
 thumbnail: KT-15946.jpeg
 exl-id: e11ff38c-e823-4631-a5b0-976c2d11353e
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '599'
 ht-degree: 1%
 
 ---
@@ -31,11 +31,11 @@ Prima di iniziare a implementare i nomi di dominio personalizzati, assicurati di
 
 ### Che cos’è un nome di dominio
 
-Un nome di dominio è il nome descrittivo del sito web, come adobe.com, che punta a una posizione specifica (indirizzo IP come 170.2.14.16) su Internet.
+Un nome di dominio è il nome descrittivo del sito Web, ad esempio adobe.com, che punta a una posizione specifica (indirizzo IP come 170.2.14.16) su Internet.
 
 ### Nomi di dominio predefiniti in AEM as a Cloud Service
 
-Per impostazione predefinita, ad AEM as a Cloud Service viene fornito un nome di dominio predefinito, che termina con `*.adobeaemcloud.com`. Il certificato SSL con caratteri jolly emesso nei confronti di `*.adobeaemcloud.com` viene applicato automaticamente a tutti gli ambienti e questo certificato con caratteri jolly è responsabilità dell&#39;Adobe.
+Per impostazione predefinita, ad AEM as a Cloud Service viene fornito un nome di dominio predefinito, che termina con `*.adobeaemcloud.com`. Il certificato SSL con caratteri jolly emesso nei confronti di `*.adobeaemcloud.com` viene applicato automaticamente a tutti gli ambienti e questo certificato con caratteri jolly è di responsabilità di Adobe.
 
 I nomi di dominio predefiniti sono nel formato `https://<SERVICE-TYPE>-p<PROGRAM-ID>-e<ENVIRONMENT-ID>.adobeaemcloud.com`.
 
@@ -47,7 +47,7 @@ In sintesi, una volta eseguito il provisioning di tutti gli ambienti AEM as a Cl
 
 ### CDN gestita da Adobe e CDN gestita dal cliente
 
-Per ridurre la latenza e migliorare le prestazioni del sito web, AEM as a Cloud Service è integrato con una rete CDN (Content Delivery Network) gestita da un Adobe. La rete CDN gestita da Adobe viene abilitata automaticamente per tutti gli ambienti. Per ulteriori dettagli, vedi [Memorizzazione in cache di AEM as a Cloud Service](../caching/overview.md).
+Per ridurre la latenza e migliorare le prestazioni del sito web, AEM as a Cloud Service è integrato con una rete CDN (Content Delivery Network) gestita da Adobe. La rete CDN gestita da Adobe viene abilitata automaticamente per tutti gli ambienti. Per ulteriori dettagli, vedi [Memorizzazione in cache di AEM as a Cloud Service](../caching/overview.md).
 
 Tuttavia, i clienti possono anche utilizzare la propria rete CDN, denominata **rete CDN gestita dal cliente**. Non è necessario, ma pochi clienti lo utilizzano per politiche aziendali o altri motivi. In questo caso, il cliente è responsabile della gestione delle configurazioni e delle impostazioni CDN.
 
@@ -67,7 +67,7 @@ In genere, i clienti utilizzano un nome di dominio personalizzato per gli ambien
 
 ## Implementazione dei nomi di dominio
 
-Per implementare i nomi di dominio utilizzando CDN gestita da Adobe o CDN gestita dal cliente, il seguente diagramma di flusso ti guida attraverso la procedura:
+Per implementare i nomi di dominio utilizzando una rete CDN gestita da Adobe o una rete CDN gestita dal cliente, il seguente diagramma di flusso ti guida attraverso la procedura:
 
 ![Diagramma di flusso della gestione dei nomi di dominio](./assets/domain-name-management-flowchart.png){width="800" zoomable="yes"}
 
@@ -75,12 +75,12 @@ Inoltre, la tabella seguente ti guida dove gestire le configurazioni specifiche:
 
 | Nome di dominio personalizzato con | Aggiungi certificato SSL a | Aggiungi nome dominio a | Configurare i record DNS in | Hai bisogno della regola CDN di convalida dell’intestazione HTTP? |
 |---------------------|:-----------------------:|-----------------------:|-----------------------:|-----------------------:|
-| CDN gestito da Adobe | Adobe Cloud Manager | Adobe Cloud Manager | Servizio di hosting DNS | ✘ |
+| CDN gestita da Adobe | Adobe Cloud Manager | Adobe Cloud Manager | Servizio di hosting DNS | ✘ |
 | CDN gestita dal cliente | Fornitore CDN | Fornitore CDN | Servizio di hosting DNS | ✔ |
 
 ### Tutorial dettagliati
 
 Ora che conosci il processo di gestione dei nomi di dominio, puoi implementare nomi di dominio personalizzati per il tuo sito web AEM as a Cloud Service seguendo le esercitazioni seguenti:
 
-**[Nomi di dominio personalizzati con CDN gestita da Adobe](./custom-domain-name-with-adobe-managed-cdn.md)**: in questa esercitazione imparerai ad aggiungere un nome di dominio personalizzato a un sito Web di **AEM as a Cloud Service con CDN gestita da Adobe**.
+**[Nomi di dominio personalizzati con rete CDN gestita da Adobe](./custom-domain-name-with-adobe-managed-cdn.md)**: in questa esercitazione imparerai ad aggiungere un nome di dominio personalizzato a un sito Web di **AEM as a Cloud Service con rete CDN gestita da Adobe**.
 **[Nomi di dominio personalizzati con CDN gestita dal cliente](./custom-domain-names-with-customer-managed-cdn.md)**: in questa esercitazione imparerai ad aggiungere un nome di dominio personalizzato a un **sito Web AEM as a Cloud Service con CDN gestita dal cliente**.

@@ -1,7 +1,7 @@
 ---
 title: Come lavorare con set di risultati di grandi dimensioni in AEM Headless
-description: Scopri come lavorare con set di risultati di grandi dimensioni con AEM Headless.
-version: Cloud Service
+description: Scopri come utilizzare i set di risultati di grandi dimensioni con AEM Headless.
+version: Experience Manager as a Cloud Service
 topic: Headless
 feature: GraphQL API
 role: Architect, Developer
@@ -12,18 +12,18 @@ jira: KT-13102
 thumbnail: 3418381.jpeg
 exl-id: 304b4d80-27bd-4336-b2ff-4b613a30f712
 duration: 308
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 1%
 
 ---
 
-# Grandi set di risultati in AEM Headless
+# Set di risultati di grandi dimensioni in AEM Headless
 
-Le query GraphQL headless dell’AEM possono restituire risultati di grandi dimensioni. Questo articolo descrive come lavorare con risultati di grandi dimensioni in AEM Headless per garantire le migliori prestazioni per la tua applicazione.
+Le query AEM Headless GraphQL possono restituire risultati di grandi dimensioni. Questo articolo descrive come lavorare con risultati di grandi dimensioni in AEM Headless per garantire le migliori prestazioni per la tua applicazione.
 
-AEM Headless supporta [offset/limit](#list-query) e [impaginazione basata su cursore](#paginated-query) query in sottoinsiemi più piccoli di un set di risultati più grande. È possibile effettuare più richieste per raccogliere tutti i risultati necessari.
+AEM Headless supporta query [offset/limit](#list-query) e [impaginazione basata su cursore](#paginated-query) in sottoinsiemi più piccoli di un set di risultati più grande. È possibile effettuare più richieste per raccogliere tutti i risultati necessari.
 
 Gli esempi seguenti utilizzano piccoli sottoinsiemi di risultati (quattro record per richiesta) per dimostrare le tecniche. In un’applicazione reale, utilizzeresti un numero maggiore di record per richiesta per migliorare le prestazioni. 50 record per richiesta è una buona linea di base.
 

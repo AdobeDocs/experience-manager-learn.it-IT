@@ -3,14 +3,14 @@ title: Utilizzo del modello Sightly per visualizzare i dati della casella in ent
 description: Aggiungi colonne personalizzate per visualizzare dati aggiuntivi del flusso di lavoro utilizzando il modello Sightly
 feature: Adaptive Forms
 doc-type: article
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-5830
 topic: Development
 role: Developer
 level: Experienced
 exl-id: d09b46ed-3516-44cf-a616-4cb6e9dfdf41
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## Modello Sightly
 
-Di seguito è riportato il modello Sightly. Il codice nel modello visualizza l’icona a seconda del reddito. Le icone sono disponibili come parte della [libreria di icone dell&#39;interfaccia utente coral](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) fornita con AEM.
+Di seguito è riportato il modello Sightly. Il codice nel modello visualizza l’icona a seconda del reddito. Le icone sono disponibili come parte della [libreria di icone dell&#39;interfaccia utente Coral](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) fornita con AEM.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
@@ -84,7 +84,7 @@ return val;
 
 * [Accedi a crx come utente amministratore](http://localhost:4502/crx/de/index.jsp)
 * [importa modello sightly](assets/sightly-template.zip)
-* [Accesso alla console Web AEM](http://localhost:4502/system/console/bundles)
+* [Accedi alla console web di AEM](http://localhost:4502/system/console/bundles)
 * [Distribuire e avviare il bundle di personalizzazione della casella in entrata](assets/income-column-customization.jar)
 * [Apri la tua casella in entrata](http://localhost:4502/aem/inbox)
 * Per aprire Admin Control (Controllo amministratore), fai clic su List View (Vista elenco) accanto al pulsante Create (Crea).

@@ -1,7 +1,7 @@
 ---
 title: Layout dei file di base di AMS Dispatcher
 description: Comprendere il layout di base dei file Apache e Dispatcher.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration, Development
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 8a3f2bb9-3895-45c6-8bb5-15a6d2aac50e
 duration: 308
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1130'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Seguendo e rispettando la progettazione/struttura dell&#39;installazione, otteni
 
 >[!BEGINSHADEBOX &quot;Nota&quot;]
 
-Le immagini dei server Managed Services di Adobe hanno in genere unità radice del sistema operativo di piccole dimensioni.  I dati vengono inseriti in un volume separato, in genere montato in `/mnt`
+Le immagini dei server Adobe Managed Services in genere dispongono di piccole unità radice del sistema operativo.  I dati vengono inseriti in un volume separato, in genere montato in `/mnt`
 Quindi utilizziamo quel volume invece dei valori predefiniti per le seguenti directory predefinite
 
 `DocumentRoot`
@@ -86,7 +86,7 @@ AMS aggiunge all’installazione di base del server web Apache.
 Directory principali documenti predefinite AMS:
 - Autore:
    - `/mnt/var/www/author/`
-- Publish:
+- Pubblicazione:
    - `/mnt/var/www/html/`
 - Manutenzione di Catch-All e Health Check
    - `/mnt/var/www/default/`
@@ -151,13 +151,13 @@ Questa directory contiene tutti i `_cache.any`, `_invalidate.any` file creati ch
 
 #### Directory intestazioni client
 
-Questa directory può contenere tutti i file `_clientheaders.any` creati che contengono gli elenchi delle intestazioni client da passare all&#39;AEM quando arriva una richiesta.  Ulteriori dettagli su questa sezione sono [qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it)
+Questa directory può contenere tutti i file `_clientheaders.any` creati che contengono gli elenchi delle intestazioni client da passare ad AEM quando arriva una richiesta.  Ulteriori dettagli su questa sezione sono [qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it)
 
 - `/etc/httpd/conf.dispatcher.d/clientheaders/`
 
 #### Directory filtri
 
-Questa directory può contenere tutti i file `_filters.any` creati che contengono tutte le regole del filtro per bloccare o consentire il traffico attraverso Dispatcher per raggiungere l&#39;AEM
+Questa directory può contenere tutti i file `_filters.any` creati che contengono tutte le regole del filtro per bloccare o consentire il traffico attraverso Dispatcher per raggiungere AEM
 
 - `/etc/httpd/conf.dispatcher.d/filters/`
 

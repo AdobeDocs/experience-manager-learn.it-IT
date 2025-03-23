@@ -1,7 +1,7 @@
 ---
-title: Scaricamento del Dispatcher dell’AEM
-description: Comprendere in che modo l’AEM invalida i vecchi file della cache da Dispatcher.
-version: 6.5
+title: Scaricamento di AEM Dispatcher
+description: Scopri in che modo AEM invalida i vecchi file della cache da Dispatcher.
+version: Experience Manager 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 461873a1-1edf-43a3-b4a3-14134f855d86
 duration: 520
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2225'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Quando l’editore riceve il file, questo ha un agente di replica configurato pe
 ### AGENTE DI REPLICA AUTORE
 
 Ecco alcuni esempi di schermate di un agente di replica standard configurato
-![schermata dell&#39;agente di replica standard dalla pagina Web AEM /etc/replication.html](assets/disp-flushing/author-rep-agent-example.png "author-rep-agent-example")
+![schermata dell&#39;agente di replica standard dalla pagina Web di AEM /etc/replication.html](assets/disp-flushing/author-rep-agent-example.png "author-rep-agent-example")
 
 In genere sono configurati 1 o 2 agenti di replica sull’autore per ogni editore a cui replicano il contenuto.
 
@@ -54,11 +54,11 @@ Il secondo è l&#39;agente inverso.  Questo è facoltativo ed è impostato per 
 ### AGENTE DI REPLICA DEL SERVER DI PUBBLICAZIONE
 
 Ecco un esempio di schermata di un agente di replica di scaricamento standard configurato
-![schermata dell&#39;agente di replica di scaricamento standard dalla pagina Web AEM /etc/replication.html](assets/disp-flushing/publish-flush-rep-agent-example.png "esempio di pubblicazione-scaricamento-rep-agente")
+![schermata dell&#39;agente di replica di scaricamento standard dalla pagina Web di AEM /etc/replication.html](assets/disp-flushing/publish-flush-rep-agent-example.png "publish-flush-rep-agent-example")
 
 ### REPLICA DI SVUOTAMENTO DEL Dispatcher CHE RICEVE L&#39;HOST VIRTUALE
 
-Il modulo Dispatcher cerca intestazioni particolari per sapere se una richiesta POST è da passare ai rendering AEM o se si tratta di una richiesta serializzata come richiesta di scaricamento e deve essere gestita dal gestore Dispatcher stesso.
+Il modulo Dispatcher cerca intestazioni particolari per sapere se una richiesta POST è da passare ai rendering di AEM o se si tratta di una richiesta serializzata come richiesta di scaricamento e deve essere gestita dal gestore Dispatcher stesso.
 
 Ecco una schermata della pagina di configurazione che mostra questi valori:
 ![immagine della scheda delle impostazioni della schermata di configurazione principale con il tipo di serializzazione indicato come Dispatcher Flush](assets/disp-flushing/disp-flush-agent1.png "disp-flush-agent1")
@@ -69,7 +69,7 @@ La pagina di impostazione predefinita mostra `Serialization Type` come `Dispatch
 
 Nella scheda `Transport` è possibile vedere `URI` impostato per indicare l&#39;indirizzo IP del Dispatcher che riceverà le richieste di scaricamento.  Il percorso `/dispatcher/invalidate.cache` non è il modo in cui il modulo determina se si tratta di uno scaricamento, è solo un endpoint ovvio che puoi vedere nel registro di accesso per sapere se si tratta di una richiesta di scaricamento.  Nella scheda `Extended` verranno esaminati gli elementi disponibili per qualificare questa richiesta come una richiesta di scaricamento al modulo Dispatcher.
 
-![Schermata della scheda Extended dell&#39;agente di replica.  Nota le intestazioni che vengono inviate con la richiesta POST inviata per indicare a Dispatcher di eseguire lo scaricamento](assets/disp-flushing/disp-flush-agent3.png "disp-flush-agent3")
+![Schermata della scheda Extended dell&#39;agente di replica.  Nota le intestazioni che vengono inviate con la richiesta POST per indicare a Dispatcher di eseguire lo scaricamento](assets/disp-flushing/disp-flush-agent3.png "disp-flush-agent3")
 
 `HTTP Method` per le richieste di scaricamento è solo una richiesta `GET` con alcune intestazioni di richiesta speciali:
 - CQ-Action
@@ -150,7 +150,7 @@ In questo esempio, utilizza un’impostazione del livello del file stat pari a 4
 Quando una richiesta di contenuto arriva nella stessa routine, si verifica
 
 1. La marca temporale del file `.stat` viene confrontata con la marca temporale del file richiesto
-2. Se il file `.stat` è più recente del file richiesto, elimina il contenuto della cache, ne recupera uno nuovo dall&#39;AEM e lo memorizza nella cache.  Quindi fornisce il contenuto
+2. Se il file `.stat` è più recente del file richiesto, elimina il contenuto memorizzato nella cache, ne recupera uno nuovo da AEM e lo memorizza nella cache.  Quindi fornisce il contenuto
 3. Se il file `.stat` è più vecchio del file richiesto, riconosce che il file è nuovo e può distribuire il contenuto.
 
 ### CACHE HANDSHAKE - ESEMPIO 1
@@ -171,7 +171,7 @@ L&#39;ora del file `logo.jpg` è 2019-10-31 @ 1:13PM
 
 L&#39;ora del file `.stat` più vicino è 2019-11-01 @ 12:22PM
 
-Come si può vedere in questo esempio, il file è più vecchio del file `.stat` e verrà rimosso e uno nuovo estratto dall&#39;AEM per sostituirlo nella cache prima di essere servito all&#39;utente finale che lo ha richiesto.
+Come puoi vedere in questo esempio, il file è più vecchio del file `.stat` e verrà rimosso e uno nuovo estratto da AEM per sostituirlo nella cache prima di essere servito all&#39;utente finale che lo ha richiesto.
 
 ## Impostazioni file farm
 

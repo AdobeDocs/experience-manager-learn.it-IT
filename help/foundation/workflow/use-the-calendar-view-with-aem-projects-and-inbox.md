@@ -1,14 +1,14 @@
 ---
-title: Utilizzare la Vista calendario con Progetti AEM e Casella in entrata
-description: La Vista calendario dell'AEM tiene traccia dei progetti e delle attività in una vista calendario per semplificare la gestione e la programmazione dei progetti. Nella vista Calendario, l’utente avrà una visibilità generale sui progetti e sulle attività attualmente in corso, pianificate, in scadenza e scadute.
-version: 6.4, 6.5
+title: Utilizzare la Vista calendario con AEM Projects e la Casella in entrata
+description: La vista Calendario di AEM tiene traccia dei progetti e delle attività in una vista calendario per facilitarne la gestione e la pianificazione. Nella vista Calendario, l’utente avrà una visibilità generale sui progetti e sulle attività attualmente in corso, pianificate, in scadenza e scadute.
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Workflow, Projects
 doc-type: Feature Video
 topic: Collaboration
 role: User
 level: Beginner
 duration: 478
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 0%
@@ -16,9 +16,9 @@ ht-degree: 0%
 ---
 
 
-# Utilizzare la Vista calendario con Progetti AEM e Casella in entrata
+# Utilizzare la Vista calendario con AEM Projects e la Casella in entrata
 
-La Vista calendario dell&#39;AEM tiene traccia dei progetti e delle attività in una vista calendario per semplificare la gestione e la programmazione dei progetti. Nella vista Calendario, l’utente avrà una visibilità generale sui progetti e sulle attività attualmente in corso, pianificate, in scadenza e scadute.
+La vista Calendario di AEM tiene traccia dei progetti e delle attività in una vista calendario per facilitarne la gestione e la pianificazione. Nella vista Calendario, l’utente avrà una visibilità generale sui progetti e sulle attività attualmente in corso, pianificate, in scadenza e scadute.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16804?quality=12&learn=on)
 

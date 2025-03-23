@@ -1,7 +1,7 @@
 ---
-title: Installare IDE GraphiQL su AEM 6.5
-description: Scopri come installare e configurare IDE GraphiQL su AEM 6.5
-version: 6.5
+title: Installare IDE GraphiQL in AEM 6.5
+description: Scopri come installare e configurare l’IDE GraphiQL in AEM 6.5
+version: Experience Manager 6.5
 topic: Headless
 feature: GraphQL API
 role: Developer
@@ -10,14 +10,14 @@ jira: KT-11614
 thumbnail: KT-10253.jpeg
 exl-id: 04fcc24c-7433-4443-a109-f01840ef1a89
 duration: 41
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 14%
 
 ---
 
-# Installare IDE GraphiQL su AEM 6.5
+# Installare IDE GraphiQL in AEM 6.5
 
 In AEM 6.5 lo strumento IDE GraphiQL deve essere installato manualmente.
 
@@ -29,12 +29,12 @@ In AEM 6.5 lo strumento IDE GraphiQL deve essere installato manualmente.
 
    Il file zip è un pacchetto AEM che può essere installato direttamente.
 
-1. Dal menu Start AEM, passare a **Strumenti** > **Distribuzione** > **Pacchetti**.
+1. Dal menu Start di AEM, passa a **Strumenti** > **Distribuzione** > **Pacchetti**.
 1. Fai clic su **Carica pacchetto**, quindi seleziona il pacchetto scaricato nel passaggio precedente. Per installare il pacchetto, fai clic su **Installa**.
 
    ![Installa pacchetto GraphiQL](assets/graphiql/install-graphiql-package.png)
 
-1. Passa a **CRXDE Liti** > **Pannello archivio** > seleziona il nodo `/content/graphiql` (ad esempio, <http://localhost:4502/crx/de/index.jsp#/content/graphiql>).
+1. Passa a **CRXDE Lite** > **Pannello archivio** > seleziona il nodo `/content/graphiql` (ad esempio, <http://localhost:4502/crx/de/index.jsp#/content/graphiql>).
 1. Nella scheda **Proprietà** modificare il valore della proprietà `endpoint` in `/content/_cq_graphql/wknd-shared/endpoint.json`.
    ![Modifica valore proprietà endpoint](assets/graphiql/endpoint-prop-value-change.png)
 

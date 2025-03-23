@@ -1,7 +1,7 @@
 ---
-title: Registrazione di variabili nel flusso di lavoro AEM[Part6]
-description: Registra il valore delle variabili del flusso di lavoro AEM
-version: 6.5
+title: Registrazione di variabili nel flusso di lavoro di AEM [Part6]
+description: Registra il valore delle variabili del flusso di lavoro di AEM
+version: Experience Manager 6.5
 topic: Development
 feature: Adaptive Forms, Workflow
 role: Developer
@@ -9,7 +9,7 @@ level: Beginner
 jira: KT-13783
 exl-id: 6afb3a52-9879-4393-8efd-ec3e5c303063
 duration: 84
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Registra il valore delle variabili nel flusso di lavoro AEM
 
-La registrazione del valore delle variabili è una pratica comune nello sviluppo di software. Aiuta gli sviluppatori a tenere traccia e comprendere come viene eseguito un flusso di lavoro AEM, diagnosticare i problemi e monitorare il flusso di dati all’interno di un flusso di lavoro AEM.
+La registrazione del valore delle variabili è una pratica comune nello sviluppo di software. Aiuta gli sviluppatori a tenere traccia e comprendere come viene eseguito un flusso di lavoro AEM, a diagnosticare i problemi e a monitorare il flusso di dati all’interno di un flusso di lavoro AEM.
 
 
 
@@ -180,4 +180,4 @@ public class LogWorkflowVariables implements WorkflowProcess {
 ## Distribuire il bundle di esempio
 
 [Distribuisci il bundle del logger delle variabili](assets/VariableLogger.core-1.0.0-SNAPSHOT.jar) utilizzando la console Web Felix.
-Associa questo bundle a un passaggio del processo nel flusso di lavoro AEM per registrare il valore della variabile String e Document.
+Associa questo bundle a un passaggio del processo nel flusso di lavoro AEM per registrare il valore della variabile Stringa e Documento.

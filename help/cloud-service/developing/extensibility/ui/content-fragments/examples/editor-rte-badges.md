@@ -1,8 +1,8 @@
 ---
 title: Aggiungere badge all’editor Rich Text
-description: Scopri come aggiungere badge all’Editor Rich Text (RTE) nell’Editor frammenti di contenuto AEM
+description: Scopri come aggiungere badge all’Editor Rich Text (RTE) nell’Editor frammenti di contenuto di AEM
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 83acbddb-9168-4d8b-84b5-97577d8a1ead
 duration: 538
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Aggiungere badge all’editor Rich Text
 
-Scopri come aggiungere badge all’Editor Rich Text (RTE) nell’Editor frammenti di contenuto AEM.
+Scopri come aggiungere badge all’editor Rich Text nell’editor di frammenti di contenuto di AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420831?quality=12&learn=on)
 
@@ -43,7 +43,7 @@ Per semplificare, in questo esempio viene utilizzato il framework [Adobe React S
 
 Questo esempio si estende fino al punto di estensione `rte` per aggiungere un badge all’editor Rich Text nell’Editor frammenti di contenuto.
 
-| Interfaccia utente AEM estesa | Punti dell’estensione |
+| Interfaccia utente di AEM estesa | Punti dell’estensione |
 | ------------------------ | --------------------- | 
 | [Editor frammento di contenuto](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Badge editor Rich Text](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) e [Widget editor Rich Text](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
 
@@ -144,10 +144,10 @@ Il codice del componente React quando si aggiungono i dettagli del servizio clie
 Di seguito sono riportati gli elementi di rilievo del codice `LargeBookingsCustomerService`:
 
 + Il rendering dell&#39;interfaccia utente viene eseguito utilizzando i componenti Spectrum di React, ad esempio [ComboBox](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ButtonGroup](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html), [Button](https://react-spectrum.adobe.com/react-spectrum/Button.html)
-+ L&#39;array `largeGroupCustomerServiceList` ha una mappatura hardcoded del nome e del numero di telefono del rappresentante. In uno scenario reale, questi dati possono essere recuperati da un’azione Adobe AppBuilder o da sistemi esterni o da un gateway API basato su provider cloud o sviluppato in casa.
-+ `guestConnection` è inizializzato con l&#39;hook `useEffect` [React](https://react.dev/reference/react/useEffect) ed è gestito come stato del componente. Viene utilizzato per comunicare con l’ospite dell’AEM.
++ L&#39;array `largeGroupCustomerServiceList` ha una mappatura hardcoded del nome e del numero di telefono del rappresentante. In uno scenario reale, questi dati possono essere recuperati dall’azione Adobe AppBuilder o da sistemi esterni o da gateway API basati su provider cloud o home-end.
++ `guestConnection` è inizializzato con l&#39;hook `useEffect` [React](https://react.dev/reference/react/useEffect) ed è gestito come stato del componente. Viene utilizzato per comunicare con l’host AEM.
 + La funzione `handleCustomerServiceChange` ottiene il nome e il numero di telefono del rappresentante e aggiorna le variabili dello stato del componente.
-+ La funzione `addCustomerServiceDetails` che utilizza l&#39;oggetto `guestConnection` fornisce istruzioni RTE da eseguire. In questo caso, `insertContent` istruzione e snippet di codice HTML.
++ La funzione `addCustomerServiceDetails` che utilizza l&#39;oggetto `guestConnection` fornisce istruzioni RTE da eseguire. In questo caso, istruzione `insertContent` e snippet di codice HTML.
 + Per rendere non modificabile il numero di telefono **** utilizzando i badge, viene aggiunto il carattere speciale `#` prima e dopo la variabile `phoneNumber`, ad esempio `...<div><p>Phone Number: #${phoneNumber}#</strong></p></div>`.
 
 `src/aem-cf-editor-1/web-src/src/components/LargeBookingsCustomerService.js`

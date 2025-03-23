@@ -1,7 +1,7 @@
 ---
-title: Comprendere Sling Model Exporter nell’AEM
+title: Comprendere Sling Model Exporter in AEM
 description: Apache Sling Models 1.3.0 introduce Sling Model Exporter, un modo elegante per esportare o serializzare oggetti Sling Model in astrazioni personalizzate. Questo articolo giustappone il caso d’uso tradizionale di utilizzo dei modelli Sling per popolare gli script HTL, con l’utilizzo del framework Sling Model Exporter per serializzare un modello Sling in JSON.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
 doc-type: Article
@@ -10,7 +10,7 @@ role: Developer
 level: Beginner
 exl-id: 03cdf5d1-3253-44c9-ae1f-ec5d3c562427
 duration: 133
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Apache [!DNL Sling Models] 1.3.0 introduce [!DNL Sling Model Exporter], un modo 
 
 Il caso d&#39;uso tradizionale per [!DNL Sling Models] consiste nel fornire un&#39;astrazione aziendale per una risorsa o una richiesta, che fornisce script HTL (o in precedenza JSP) un&#39;interfaccia per l&#39;accesso alle funzioni aziendali.
 
-I pattern comuni sono lo sviluppo di [!DNL Sling Models] che rappresentano componenti o pagine AEM e l&#39;utilizzo di oggetti [!DNL Sling Model] per alimentare gli script HTL con i dati, con un risultato finale di HTML visualizzato nel browser.
+I pattern comuni sono lo sviluppo di [!DNL Sling Models] che rappresentano componenti o pagine di AEM e l&#39;utilizzo di oggetti [!DNL Sling Model] per alimentare gli script HTL con i dati, con un risultato finale di HTML visualizzato nel browser.
 
 ### Flusso richiesta HTTP modello Sling
 
@@ -49,7 +49,7 @@ Questo modello tradizionale funziona bene nel contesto della generazione di HTML
 
 Apache [!DNL Sling Model Exporter] viene fornito con Jackson Exporter fornito da Sling che serializza automaticamente un oggetto [!DNL Sling Model] &quot;ordinario&quot; in JSON. Jackson Exporter, pur essendo configurabile, analizza l&#39;oggetto [!DNL Sling Model] e genera JSON utilizzando qualsiasi metodo &quot;getter&quot; come chiavi JSON, mentre il getter restituisce valori come valori JSON.
 
-La serializzazione diretta di [!DNL Sling Models] consente di soddisfare entrambe le normali richieste Web con le risposte HTML create utilizzando il flusso di richieste [!DNL Sling Model] tradizionale (vedi sopra), ma anche di esporre rappresentazioni JSON che possono essere utilizzate dai servizi Web o dalle applicazioni JavaScript.
+La serializzazione diretta di [!DNL Sling Models] consente di soddisfare entrambe le normali richieste Web con le risposte HTML create utilizzando il flusso di richieste [!DNL Sling Model] tradizionale (vedere sopra), ma anche di esporre rappresentazioni JSON che possono essere utilizzate dai servizi Web o dalle applicazioni JavaScript.
 
 ![Flusso richiesta HTTP esportazione modello Sling](./assets/understand-sling-model-exporter/sling-model-exporter-request-flow.png)
 

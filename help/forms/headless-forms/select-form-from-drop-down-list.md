@@ -2,14 +2,14 @@
 title: Selezionare un modulo da un elenco di moduli disponibili
 description: Utilizzare l’API listforms per compilare l’elenco a discesa
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-13346
 topic: Development
 role: User
 level: Intermediate
 exl-id: 49b6a172-8c96-4fc6-8d31-c2109f65faac
 duration: 88
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 1%
@@ -129,7 +129,7 @@ Per creare questa interfaccia utente sono state utilizzate le due seguenti chiam
 * [ListForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms). La chiamata per recuperare i moduli viene effettuata una sola volta quando viene eseguito il rendering del componente. I risultati della chiamata API sono memorizzati nella variabile afForms.
 Nel codice riportato sopra, scorriamo i moduli af utilizzando la funzione di mappatura. Per ogni elemento nell’array afForms, viene creato e aggiunto al componente Select un componente MenuItem.
 
-* Recupera modulo: viene effettuata una chiamata GET a [getForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition), dove l’ID è l’ID del modulo adattivo selezionato dall’utente nell’elenco a discesa. Il risultato di questa chiamata di GET viene memorizzato in selectedForm.
+* Recupera modulo: viene effettuata una chiamata GET a [getForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition), dove l’ID è l’ID del modulo adattivo selezionato dall’utente nell’elenco a discesa. Il risultato di questa chiamata GET viene memorizzato in selectedForm.
 
 ```
 const resp = await fetch(`/adobe/forms/af/${formID}`);

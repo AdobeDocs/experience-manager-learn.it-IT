@@ -1,7 +1,7 @@
 ---
 title: Configurazione sviluppo locale
 description: Scopri come impostare un ambiente di sviluppo locale per Universal Editor per modificare il contenuto di un’app React di esempio.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developer Tools, Headless
 topic: Development, Content Management
 role: Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15359
 thumbnail: KT-15359.png
 exl-id: 47bef697-5253-493a-b9f9-b26c27d2db56
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 1%
@@ -21,32 +21,32 @@ ht-degree: 1%
 
 # Configurazione sviluppo locale
 
-Scopri come impostare un ambiente di sviluppo locale per modificare i contenuti di un’app React utilizzando l’editor universale dell’AEM.
+Scopri come impostare un ambiente di sviluppo locale per modificare i contenuti di un’app React utilizzando AEM Universal Editor.
 
 ## Prerequisiti
 
 Per seguire questa esercitazione sono necessari i seguenti elementi:
 
-- Competenze di base in ambito HTML e JavaScript.
+- Competenze di base in HTML e JavaScript.
 - I seguenti strumenti devono essere installati localmente:
    - [Node.js](https://nodejs.org/it/download/)
    - [Git](https://git-scm.com/downloads)
    - Un IDE o un editor di codice, ad esempio [Visual Studio Code](https://code.visualstudio.com/)
 - Scarica e installa quanto segue:
-   - [SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): contiene il file JAR Quickstart utilizzato per eseguire l&#39;istanza di authoring dell&#39;AEM e Publish localmente a scopo di sviluppo.
+   - [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#download-the-aem-as-a-cloud-service-sdk): contiene il file JAR Quickstart utilizzato per eseguire AEM Author e Publish localmente a scopo di sviluppo.
    - [Servizio Editor universale](https://experienceleague.adobe.com/en/docs/experience-cloud/software-distribution/home): copia locale del servizio Editor universale, con un sottoinsieme di funzionalità e scaricabile dal portale di distribuzione software.
-   - [local-ssl-proxy](https://www.npmjs.com/package/local-ssl-proxy#local-ssl-proxy): un semplice proxy HTTP SSL locale che utilizza un certificato autofirmato per lo sviluppo locale. L’editor universale dell’AEM richiede l’URL HTTPS dell’app React per caricarlo nell’editor.
+   - [local-ssl-proxy](https://www.npmjs.com/package/local-ssl-proxy#local-ssl-proxy): un semplice proxy HTTP SSL locale che utilizza un certificato autofirmato per lo sviluppo locale. AEM Universal Editor richiede l’URL HTTPS dell’app React per caricarlo nell’editor.
 
 ## Configurazione locale
 
 Per configurare l’ambiente di sviluppo locale, segui i passaggi seguenti:
 
-### SDK AEM
+### AEM SDK
 
-Per fornire i contenuti per l’app WKND Teams React, installa i seguenti pacchetti nell’SDK AEM locale.
+Per fornire i contenuti per l’app WKND Teams React, installa i seguenti pacchetti nel SDK AEM locale.
 
 - [Team WKND - Pacchetto di contenuti](./assets/basic-tutorial-solution.content.zip): contiene i modelli per frammenti di contenuto, frammenti di contenuto e query GraphQL persistenti.
-- [Team WKND - Pacchetto di configurazione](./assets/basic-tutorial-solution.ui.config.zip): contiene le configurazioni CORS (Cross-Origin Resource Sharing) e del gestore di autenticazione token. Il CORS facilita l’esecuzione di chiamate lato client alle API GraphQL dell’AEM da parte di proprietà web non AEM, mentre il gestore di autenticazione token viene utilizzato per autenticare ogni richiesta all’AEM.
+- [Team WKND - Pacchetto di configurazione](./assets/basic-tutorial-solution.ui.config.zip): contiene le configurazioni CORS (Cross-Origin Resource Sharing) e del gestore di autenticazione token. CORS facilita l’esecuzione di chiamate lato client non AEM alle API GraphQL di AEM basate su browser e il gestore di autenticazione token viene utilizzato per autenticare ogni richiesta in AEM.
 
   ![Team WKND - Pacchetti](./assets/wknd-teams-packages.png)
 
@@ -74,7 +74,7 @@ Per configurare l’app WKND Teams React, effettua le seguenti operazioni:
    $ npm start
    ```
 
-1. Apri l&#39;app WKND Teams React nel browser in [http://localhost:3000](http://localhost:3000). Viene visualizzato un elenco dei membri del team e dei relativi dettagli. Il contenuto dell&#39;app React è fornito dall&#39;SDK AEM locale tramite le API GraphQL (`/graphql/execute.json/my-project/all-teams`), verificabili tramite la scheda di rete del browser.
+1. Apri l&#39;app WKND Teams React nel browser in [http://localhost:3000](http://localhost:3000). Viene visualizzato un elenco dei membri del team e dei relativi dettagli. Il contenuto dell&#39;app React è fornito dal SDK AEM locale tramite le API GraphQL (`/graphql/execute.json/my-project/all-teams`), che puoi verificare utilizzando la scheda di rete del browser.
 
    ![Team WKND - App di reazione](./assets/wknd-teams-react-app.png)
 
@@ -119,9 +119,9 @@ Universal Editor Service listening on port 8000 as HTTP Server
 
 ### Proxy HTTP SSL locale
 
-L’editor universale dell’AEM richiede che l’app React sia gestita tramite HTTPS. Configuriamo un proxy HTTP SSL locale che utilizza un certificato autofirmato per lo sviluppo locale.
+AEM Universal Editor richiede che l’app React sia gestita tramite HTTPS. Configuriamo un proxy HTTP SSL locale che utilizza un certificato autofirmato per lo sviluppo locale.
 
-Segui i passaggi seguenti per configurare il proxy HTTP SSL locale e distribuire l’SDK AEM e il servizio Universal Editor tramite HTTPS:
+Segui i passaggi seguenti per configurare il proxy HTTP SSL locale e distribuire il servizio AEM SDK e Universal Editor tramite HTTPS:
 
 1. Installa il pacchetto `local-ssl-proxy` a livello globale.
 
@@ -131,7 +131,7 @@ Segui i passaggi seguenti per configurare il proxy HTTP SSL locale e distribuire
 
 1. Avvia due istanze del proxy HTTP SSL locale per i servizi seguenti:
 
-   - Proxy HTTP SSL locale dell&#39;SDK AEM sulla porta `8443`.
+   - Proxy HTTP SSL locale di AEM SDK sulla porta `8443`.
    - Proxy HTTP SSL locale del servizio Universal Editor sulla porta `8001`.
 
    ```bash
@@ -156,7 +156,7 @@ Per abilitare HTTPS per l’app WKND Teams React, effettua le seguenti operazion
    }
    ```
 
-1. Aggiornare `REACT_APP_HOST_URI` nel file `.env.development` per utilizzare il protocollo HTTPS e la porta proxy HTTP SSL locale dell&#39;SDK AEM.
+1. Aggiornare `REACT_APP_HOST_URI` nel file `.env.development` per utilizzare il protocollo HTTPS e la porta proxy HTTP SSL locale di AEM SDK.
 
    ```bash
    REACT_APP_HOST_URI=https://localhost:8443
@@ -196,7 +196,7 @@ Dopo aver configurato l’ambiente di sviluppo locale seguendo i passaggi preced
 Assicurati che i seguenti servizi siano in esecuzione localmente su HTTPS. Potrebbe essere necessario accettare l’avviso di sicurezza nel browser per il certificato autofirmato:
 
 1. App di reazione team WKND su [https://localhost:3000](https://localhost:3000)
-1. SDK AEM su [https://localhost:8443](https://localhost:8443)
+1. AEM SDK su [https://localhost:8443](https://localhost:8443)
 1. Servizio Editor universale su [https://localhost:8001](https://localhost:8001)
 
 ### Caricare l’app WKND Teams React nell’editor universale

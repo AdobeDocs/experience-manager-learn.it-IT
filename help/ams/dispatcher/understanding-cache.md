@@ -2,14 +2,14 @@
 title: Informazioni sul caching in Dispatcher
 description: 'Scopri come funziona il modulo Dispatcher: è la cache.'
 topic: Administration, Performance
-version: 6.5
+version: Experience Manager 6.5
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: 66ce0977-1b0d-4a63-a738-8a2021cf0bd5
 duration: 407
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1708'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Quando ogni richiesta attraversa il Dispatcher, le richieste seguono le regole c
 
 >[!NOTE]
 >
->Il carico di lavoro pubblicato viene intenzionalmente tenuto separato dal carico di lavoro dell’autore perché quando Apache cerca un file in DocumentRoot non sa da quale istanza AEM proviene. Pertanto, anche se la cache è disabilitata nella farm di authoring, se DocumentRoot dell’autore è uguale a publisher, i file presenti nella cache verranno distribuiti. Ciò significa che distribuirai i file di authoring per dalla cache pubblicata e che farai un’esperienza di mix davvero terribile per i visitatori.
+>Il carico di lavoro pubblicato è intenzionalmente separato dal carico di lavoro dell’autore perché quando Apache cerca un file in DocumentRoot non sa da quale istanza di AEM proviene. Pertanto, anche se la cache è disabilitata nella farm di authoring, se DocumentRoot dell’autore è uguale a publisher, i file presenti nella cache verranno distribuiti. Ciò significa che distribuirai i file di authoring per dalla cache pubblicata e che farai un’esperienza di mix davvero terribile per i visitatori.
 >
 >Anche mantenere directory DocumentRoot separate per contenuti pubblicati diversi è una pessima idea. Dovrai creare più elementi re-memorizzati nella cache che non differiscano tra i siti come clientlibs, nonché impostare un agente di svuotamento della replica per ogni DocumentRoot configurato. Aumentare la quantità di svuotamento sopra la testina con ogni attivazione della pagina. Utilizza lo spazio dei nomi dei file e i relativi percorsi nella cache completa ed evita più DocumentRoot per i siti pubblicati.
 
@@ -132,11 +132,11 @@ L&#39;istruzione include delle regole della cache include il file `/etc/httpd/co
 ```
 
 In uno scenario di authoring, il contenuto cambia continuamente e di proposito. Desideri memorizzare nella cache solo gli elementi che non verranno modificati di frequente.
-Sono presenti regole per memorizzare in cache `/libs` perché fanno parte dell&#39;installazione AEM della linea di base e verranno modificate finché non si installa un Service Pack, un Cumulative Fix Pack, un aggiornamento o un hotfix. La memorizzazione in cache di questi elementi ha molto senso e offre agli utenti finali che utilizzano il sito enormi vantaggi in termini di esperienza di authoring.
+Sono presenti regole per memorizzare in cache `/libs` perché fanno parte dell&#39;installazione di base di AEM e cambiano finché non viene installato un Service Pack, un Cumulative Fix Pack, un aggiornamento o un hotfix. La memorizzazione in cache di questi elementi ha molto senso e offre agli utenti finali che utilizzano il sito enormi vantaggi in termini di esperienza di authoring.
 
 >[!NOTE]
 >
->Tieni presente che queste regole memorizzano nella cache anche <b>`/apps`</b>, dove risiede il codice personalizzato dell&#39;applicazione. Se stai sviluppando il codice in questa istanza, allora si dimostrerà molto confuso quando salvi il file e non vedi se si riflette nell&#39;interfaccia utente a causa di esso che serve una copia memorizzata nella cache. L’intenzione qui è che se esegui una distribuzione del codice nell’AEM, anche questa sarebbe infrequente e parte dei passaggi di distribuzione dovrebbe consistere nel cancellare la cache di authoring. Anche in questo caso, il vantaggio è enorme e rende il codice memorizzabile in cache più veloce per gli utenti finali.
+>Tieni presente che queste regole memorizzano nella cache anche <b>`/apps`</b>, dove risiede il codice personalizzato dell&#39;applicazione. Se stai sviluppando il codice in questa istanza, allora si dimostrerà molto confuso quando salvi il file e non vedi se si riflette nell&#39;interfaccia utente a causa di esso che serve una copia memorizzata nella cache. L’intenzione qui è che, se esegui una distribuzione del codice in AEM, anche questa non sarebbe frequente e parte dei passaggi di distribuzione dovrebbe consistere nel cancellare la cache di authoring. Anche in questo caso, il vantaggio è enorme e rende il codice memorizzabile in cache più veloce per gli utenti finali.
 
 ## ServeOnStale (o Serve su Stale/SOS)
 
@@ -144,7 +144,7 @@ Questa è una delle gemme di una funzionalità di Dispatcher. Se l’editore è 
 
 >[!NOTE]
 >
->Tieni presente che se il renderer del server di pubblicazione ha un timeout del socket o un messaggio di errore 500, questa funzione non verrà attivata. Se l&#39;AEM è semplicemente irraggiungibile questa funzione non fa nulla
+>Tieni presente che se il renderer del server di pubblicazione ha un timeout del socket o un messaggio di errore 500, questa funzione non verrà attivata. Se AEM è semplicemente irraggiungibile questa funzione non fa nulla
 
 Questa impostazione può essere impostata in qualsiasi farm, ma ha senso applicarla solo ai file farm di pubblicazione. Di seguito è riportato un esempio di sintassi della funzione abilitata in un file farm:
 
@@ -157,7 +157,7 @@ Questa impostazione può essere impostata in qualsiasi farm, ma ha senso applica
 
 >[!NOTE]
 >
->Uno dei comportamenti normali del modulo Dispatcher è che se una richiesta ha un parametro di query nell&#39;URI (in genere mostrato come `/content/page.html?myquery=value`), questo salta la memorizzazione in cache del file e passa direttamente all&#39;istanza AEM. Sta considerando questa richiesta come una pagina dinamica e non deve essere memorizzata in cache. Questo può causare effetti negativi sull’efficienza della cache.
+>Uno dei comportamenti normali del modulo Dispatcher è che se una richiesta ha un parametro di query nell&#39;URI (in genere visualizzato come `/content/page.html?myquery=value`), questo salta la memorizzazione in cache del file e passa direttamente all&#39;istanza di AEM. Sta considerando questa richiesta come una pagina dinamica e non deve essere memorizzata in cache. Questo può causare effetti negativi sull’efficienza della cache.
 
 Consulta questo [articolo](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner) che mostra come importanti parametri di query possono influenzare le prestazioni del tuo sito.
 
@@ -232,7 +232,7 @@ Ecco quindi la sorgente html di ogni ricerca:
 Se hai visitato `/search.html?q=fruit` prima, allora memorizzerebbe nella cache l&#39;html con i risultati che mostrano i frutti.
 
 Poi si visita `/search.html?q=vegetables` secondo, ma mostrerebbe i risultati di frutta.
-Questo perché il parametro query di `q` viene ignorato per quanto riguarda il caching.  Per evitare questo problema è necessario prendere nota delle pagine che eseguono il rendering di diversi HTML in base ai parametri di query e negare il caching per tali pagine.
+Questo perché il parametro query di `q` viene ignorato per quanto riguarda il caching.  Per evitare questo problema è necessario prendere nota delle pagine che eseguono il rendering di diversi HTML in base a parametri di query e negare il caching per tali pagine.
 
 Esempio:
 
@@ -254,7 +254,7 @@ Le pagine che utilizzano parametri di query tramite JavaScript continueranno a f
 
 È ovvio che Dispatcher memorizza nella cache `.html` pagine e clientlibs (ad esempio `.js`, `.css`), ma sapevi che può anche memorizzare nella cache determinate intestazioni di risposta accanto al contenuto in un file con lo stesso nome ma con estensione `.h`. Questo consente di rispondere successivamente non solo al contenuto, ma anche alle intestazioni di risposta che devono accompagnarlo dalla cache.
 
-L&#39;AEM può gestire più della semplice codifica UTF-8
+AEM è in grado di gestire più della semplice codifica UTF-8
 
 A volte gli elementi hanno intestazioni speciali che aiutano a controllare i dettagli di codifica della cache TTL e le ultime marche temporali modificate.
 
@@ -278,7 +278,7 @@ Ecco un esempio di farm con le intestazioni da memorizzare in cache specificate:
 ```
 
 
-Nell’esempio hanno configurato l’AEM per distribuire le intestazioni che la rete CDN cerca per sapere quando annullare la validità della cache. Ciò significa che ora l’AEM può determinare correttamente quali file vengono invalidati in base alle intestazioni.
+Nell’esempio hanno configurato AEM per distribuire le intestazioni che la rete CDN cerca per sapere quando annullare la validità della cache. Ciò significa che ora AEM può determinare correttamente quali file vengono invalidati in base alle intestazioni.
 
 >[!NOTE]
 >
@@ -286,7 +286,7 @@ Nell’esempio hanno configurato l’AEM per distribuire le intestazioni che la 
 
 ## Invalida automaticamente periodo di tolleranza
 
-Sui sistemi AEM con un’elevata attività da parte di autori che eseguono molte attivazioni di pagina, si può verificare una race condition che causa ripetuti invalidamenti. Le richieste di scaricamento ripetute in modo massiccio non sono necessarie e puoi introdurre una certa tolleranza per non ripetere uno scaricamento finché il periodo di tolleranza non è trascorso.
+Sui sistemi AEM con un’elevata attività da parte di autori che eseguono molte attivazioni di pagine è possibile riscontrare una race condition in cui si verificano ripetuti invalidamenti. Le richieste di scaricamento ripetute in modo massiccio non sono necessarie e puoi introdurre una certa tolleranza per non ripetere uno scaricamento finché il periodo di tolleranza non è trascorso.
 
 ### Esempio di come funziona:
 
@@ -316,7 +316,7 @@ Ecco un esempio della funzione configurata nel file di configurazione della farm
 
 >[!NOTE]
 >
->Tieni presente che l’AEM deve ancora essere configurato per inviare intestazioni TTL a Dispatcher affinché le rispetti. L’attivazione di questa funzione consente solo al Dispatcher di sapere quando rimuovere i file per i quali l’AEM ha inviato le intestazioni di controllo cache. Se l’AEM non inizia a inviare intestazioni TTL, Dispatcher non farà nulla di speciale qui.
+>Tieni presente che AEM deve ancora essere configurato per inviare le intestazioni TTL affinché Dispatcher le rispetti. L’attivazione di questa funzione consente solo a Dispatcher di sapere quando rimuovere i file per i quali AEM ha inviato le intestazioni di controllo cache. Se AEM non inizia a inviare intestazioni TTL, Dispatcher non farà nulla di speciale qui.
 
 ## Regole filtro cache
 

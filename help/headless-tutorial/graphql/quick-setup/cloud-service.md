@@ -1,7 +1,7 @@
 ---
 title: Configurazione rapida AEM Headless per AEM as a Cloud Service
-description: La configurazione rapida AEM Headless ti consente di utilizzare AEM Headless utilizzando il contenuto del progetto di esempio del sito WKND e un’app React che consuma il contenuto rispetto alle API GraphQL AEM Headless.
-version: Cloud Service
+description: La configurazione rapida AEM Headless ti consente di utilizzare AEM Headless utilizzando il contenuto del progetto di esempio del sito WKND e un’app React che utilizza il contenuto rispetto alle API AEM Headless GraphQL.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
 duration: 781
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1078'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Configurazione rapida AEM Headless per AEM as a Cloud Service
 
-La configurazione rapida AEM Headless ti consente di utilizzare AEM Headless utilizzando il contenuto del progetto di esempio del sito WKND e un esempio di app React (SPA) che consuma il contenuto rispetto alle API AEM Headless GraphQL.
+La configurazione rapida AEM Headless ti consente di utilizzare AEM Headless utilizzando il contenuto del progetto di esempio del sito WKND e un esempio di app React (a SPA) che consuma il contenuto rispetto alle API AEM Headless GraphQL.
 
 ## Prerequisiti
 
@@ -36,7 +36,7 @@ Per eseguire questa configurazione rapida sono necessari i seguenti elementi:
 
 ## 1. Creare un archivio Git di Cloud Manager
 
-Innanzitutto, crea un archivio Git di Cloud Manager utilizzato per distribuire il sito WKND. Il sito WKND è un progetto di esempio per un sito web AEM che contiene contenuti (frammenti di contenuto) e un endpoint AEM GraphQL utilizzato dall’app React della configurazione rapida.
+Innanzitutto, crea un archivio Git di Cloud Manager utilizzato per distribuire il sito WKND. Il sito WKND è un progetto di esempio per un sito web AEM che contiene contenuti (frammenti di contenuto) e un endpoint GraphQL AEM utilizzato dall’app React della configurazione rapida.
 
 _Schermata dei passaggi_
 >[!VIDEO](https://video.tv.adobe.com/v/339073?quality=12&learn=on)
@@ -47,7 +47,7 @@ _Schermata dei passaggi_
    1. Seleziona __Archivi__ nella navigazione superiore
    1. Seleziona __Aggiungi archivio__ nella barra delle azioni superiore
    1. Denomina il nuovo archivio Git: `aem-headless-quick-setup-wknd`
-      + I nomi degli archivi Git devono essere univoci per ogni organizzazione di Adobe,
+      + I nomi degli archivi Git devono essere univoci per ciascuna organizzazione Adobe,
    1. Seleziona __Salva__ e attendi l&#39;inizializzazione dell&#39;archivio Git
 
 ## 2. Invia il progetto di esempio del sito WKND all’archivio Git di Cloud Manager
@@ -87,7 +87,7 @@ _Schermata dei passaggi_
 
 Quando il progetto del sito WKND viene inviato all’archivio Git di Cloud Manager, non può essere distribuito ad AEM as a Cloud Service utilizzando le pipeline di Cloud Manager.
 
-Nota: il progetto del sito WKND fornisce contenuti di esempio che l’app React utilizza rispetto alle API GraphQL headless dell’AEM.
+Nota: il progetto del sito WKND fornisce contenuti di esempio che l’app React utilizza rispetto alle API GraphQL headless di AEM.
 
 _Schermata dei passaggi_
 >[!VIDEO](https://video.tv.adobe.com/v/339075?quality=12&learn=on)
@@ -118,7 +118,7 @@ _Schermata dei passaggi_
 
 ## 4. Scaricare ed eseguire l’app WKND React
 
-Con AEM as a Cloud Service avviato con il contenuto del progetto del sito WKND, scarica e avvia l’app di reazione WKND di esempio che utilizza il contenuto del sito WKND sulle API GraphQL headless dell’AEM.
+Con AEM as a Cloud Service avviato con il contenuto del progetto del sito WKND, scarica e avvia l’app di reazione WKND di esempio che utilizza il contenuto del sito WKND sulle API GraphQL headless di AEM.
 
 _Schermata dei passaggi_
 >[!VIDEO](https://video.tv.adobe.com/v/339076?quality=12&learn=on)
@@ -132,19 +132,19 @@ _Schermata dei passaggi_
 
 1. Aprire la cartella `~/Code/aem-guides-wknd-graphql/react-app` nell&#39;IDE.
 1. Nell&#39;IDE aprire il file `.env.development`.
-1. Scegliere l&#39;URI host del servizio AEM as a Cloud Service __Publish__ dalla proprietà `REACT_APP_HOST_URI`.
+1. Puntare all&#39;URI host del servizio __Pubblica__ di AEM as a Cloud Service dalla proprietà `REACT_APP_HOST_URI`.
 
    ```plain
    REACT_APP_HOST_URI=https://publish-pXXXX-eYYYY.adobeaemcloud.com
    ...
    ```
 
-   Per trovare l’URI host del servizio AEM as a Cloud Service Publish:
+   Per trovare l’URI host del servizio di pubblicazione di AEM as a Cloud Service:
 
    1. In Cloud Manager, seleziona __Ambienti__ nella navigazione superiore
    1. Seleziona ambiente __Sviluppo__
-   1. Individua la tabella __Servizio Publish (AEM e Dispatcher)__ collegamento __Segmenti di ambiente__
-   1. Copia l’indirizzo del collegamento e utilizzalo come URI del servizio AEM as a Cloud Service Publish
+   1. Individua la tabella __Servizio di pubblicazione (AEM e Dispatcher)__ collegamento __Segmenti di ambiente__
+   1. Copia l’indirizzo del collegamento e utilizzalo come URI del servizio di pubblicazione di AEM as a Cloud Service
 
 1. Nell&#39;IDE, salvare le modifiche apportate a `.env.development`
 1. Dalla riga di comando, esegui React App
@@ -159,7 +159,7 @@ _Schermata dei passaggi_
 
 ## 5. Modificare i contenuti in AEM
 
-Con l’app di esempio WKND React che si connette e utilizza i contenuti delle API GraphQL headless dell’AEM, crea contenuti nel servizio di authoring dell’AEM e scopri come l’esperienza dell’app React si aggiorna insieme.
+Con l’app di esempio WKND React che si connette e utilizza i contenuti delle API AEM Headless GraphQL, crea contenuti nel servizio AEM Author e scopri come l’esperienza dell’app React si aggiorna insieme.
 
 _Schermata dei passaggi_
 >[!VIDEO](https://video.tv.adobe.com/v/339077?quality=12&learn=on)
@@ -175,11 +175,11 @@ _Schermata dei passaggi_
    + Prezzo: `3500`
    + Immagine principale: `/content/dam/wknd-shared/en/activities/cycling/mountain-biking.jpg`
 1. Seleziona __Salva__ nella barra delle azioni superiore
-1. Seleziona __Publish rapido__ dal __della barra delle azioni superiore...__
+1. Seleziona __Pubblicazione rapida__ dalla barra delle azioni superiore __...__
 1. Aggiorna l&#39;app React in esecuzione su [http://localhost:3000](http://localhost:3000).
 1. Nell’app React, seleziona l’avventura Ciclismo ora aggiornata e verifica le modifiche al contenuto apportate al frammento di contenuto.
 
-1. Con lo stesso approccio, nel servizio di authoring dell’AEM:
+1. Con lo stesso approccio, nel servizio AEM Author:
    1. Annulla la pubblicazione di un frammento di contenuto Adventure esistente e verifica che sia stato rimosso dall’esperienza di app di React
    1. Crea e pubblica un nuovo frammento di contenuto Avventura e verificane la visualizzazione nell’esperienza di React App
 
@@ -189,10 +189,10 @@ _Schermata dei passaggi_
 
 ## Congratulazioni.
 
-Congratulazioni Hai utilizzato correttamente AEM Headless per alimentare un’app React.
+Congratulazioni Hai utilizzato con successo AEM Headless per alimentare un’app React.
 
-Per informazioni dettagliate su come l&#39;app React utilizza i contenuti di AEM as a Cloud Service, consulta [l&#39;esercitazione AEM headless](../multi-step/overview.md). Il tutorial esplora come vengono creati i frammenti di contenuto in AEM e come questa app React utilizza i contenuti come JSON.
+Per informazioni dettagliate su come l&#39;app React utilizza i contenuti da AEM as a Cloud Service, consulta [l&#39;esercitazione AEM Headless](../multi-step/overview.md). Il tutorial esplora come vengono creati i frammenti di contenuto in AEM e come questa app React utilizza i contenuti come JSON.
 
 ### Passaggi successivi
 
-+ [Avvia l’esercitazione su AEM headless](../multi-step/overview.md)
++ [Avvia l’esercitazione di AEM Headless](../multi-step/overview.md)

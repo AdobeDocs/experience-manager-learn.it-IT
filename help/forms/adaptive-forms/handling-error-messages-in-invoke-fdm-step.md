@@ -1,15 +1,15 @@
 ---
 title: Acquisizione dei messaggi di errore nel servizio del modello dati del modulo come passaggio nel flusso di lavoro
-description: A partire da AEM Forms 6.5.1, ora è possibile acquisire i messaggi di errore generati utilizzando il Servizio modello dati modulo di chiamata come passaggio nel flusso di lavoro AEM. Flusso di lavoro
+description: A partire dalla versione 6.5.1 di AEM Forms, è ora possibile acquisire i messaggi di errore generati utilizzando il servizio Richiama modello dati modulo come passaggio nel flusso di lavoro di AEM. Flusso di lavoro
 feature: Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 8cae155c-c393-4ac3-a412-bf14fc411aac
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 51
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%

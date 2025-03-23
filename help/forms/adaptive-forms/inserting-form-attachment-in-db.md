@@ -1,8 +1,8 @@
 ---
 title: Inserisci allegato modulo nel database
-description: Inserire un allegato modulo nel database utilizzando il flusso di lavoro AEM.
+description: Inserire l’allegato del modulo nel database utilizzando il flusso di lavoro AEM.
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -10,7 +10,7 @@ jira: KT-10488
 exl-id: e8a6cab8-423b-4a8e-b2b7-9b24ebe23834
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 82
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 1%
@@ -33,12 +33,12 @@ Per eseguire questo caso d’uso sono stati seguiti i seguenti passaggi
 
 È stato creato un modello dati modulo per comunicare con il database MySQL. Dovrai creare i seguenti elementi
 
-* [Origine dati JDBC nell’AEM](./data-integration-technical-video-setup.md)
+* [Origine dati JDBC in AEM](./data-integration-technical-video-setup.md)
 * [Modello dati modulo basato sull&#39;origine dati JDBC](./jdbc-data-model-technical-video-use.md)
 
 ## Crea flusso di lavoro
 
-Se si configura il modulo adattivo per l’invio a un flusso di lavoro AEM, è possibile salvare gli allegati del modulo in una variabile del flusso di lavoro o salvarli in una cartella specificata sotto il payload. Per questo caso d’uso, è necessario salvare gli allegati in una variabile di flusso di lavoro di tipo ArrayList of Document. Da questo ArrayList è necessario estrarre il primo elemento e inizializzare una variabile di documento. Sono state create le variabili del flusso di lavoro **listOfDocuments** e **employeePhoto**.
+Se si configura un modulo adattivo per l’invio a un flusso di lavoro AEM, è possibile salvare gli allegati del modulo in una variabile del flusso di lavoro o salvarli in una cartella specifica sotto il payload. Per questo caso d’uso, è necessario salvare gli allegati in una variabile di flusso di lavoro di tipo ArrayList of Document. Da questo ArrayList è necessario estrarre il primo elemento e inizializzare una variabile di documento. Sono state create le variabili del flusso di lavoro **listOfDocuments** e **employeePhoto**.
 Quando il modulo adattivo viene inviato per attivare il flusso di lavoro, un passaggio nel flusso di lavoro inizializza la variabile employeePhoto utilizzando lo script ECMA. Di seguito è riportato il codice di script ECMA
 
 ```javascript

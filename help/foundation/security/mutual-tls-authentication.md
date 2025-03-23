@@ -1,8 +1,8 @@
 ---
-title: Autenticazione Mutual Transport Layer Security (mTLS) dall’AEM
+title: Autenticazione Mutual Transport Layer Security (mTLS) da AEM
 description: Scopri come effettuare chiamate HTTPS da AEM alle API web che richiedono l’autenticazione Mutual Transport Layer Security (mTLS).
 feature: Security
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Security, Development
 role: Admin, Architect, Developer
 level: Experienced
@@ -12,14 +12,14 @@ doc-type: Article
 last-substantial-update: 2023-10-10T00:00:00Z
 exl-id: 7238f091-4101-40b5-81d9-87b4d57ccdb2
 duration: 495
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 0%
 
 ---
 
-# Autenticazione Mutual Transport Layer Security (mTLS) dall’AEM
+# Autenticazione Mutual Transport Layer Security (mTLS) da AEM
 
 Scopri come effettuare chiamate HTTPS da AEM alle API web che richiedono l’autenticazione Mutual Transport Layer Security (mTLS).
 
@@ -38,9 +38,9 @@ Questo problema si verifica quando il client non presenta un certificato per l�
 Scopri come chiamare correttamente le API che richiedono l’autenticazione mTLS utilizzando [Apache HttpClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) e **AEM KeyStore e TrustStore**.
 
 
-## HttpClient e caricamento del materiale KeyStore dell’AEM
+## HttpClient e carica il materiale KeyStore di AEM
 
-Ad alto livello, per richiamare un’API protetta da mTLS dall’AEM sono necessari i seguenti passaggi.
+Ad alto livello, per richiamare un’API protetta da mTLS da AEM sono necessari i seguenti passaggi.
 
 ### Generazione di certificati AEM
 
@@ -71,7 +71,7 @@ A scopo dimostrativo, genera i dettagli relativi al certificato come chiave, ric
   openssl verify -CAfile internal-ca-cert.pem client-cert.pem
   ```
 
-- Converti la chiave privata dell&#39;AEM in formato DER, l&#39;AEM KeyStore richiede la chiave privata in formato DER.
+- Converti la chiave privata di AEM in formato DER, il KeyStore di AEM richiede la chiave privata in formato DER.
 
   ```shell
   openssl pkcs8 -topk8 -inform PEM -outform DER -in client-key.pem -out client-key.der -nocrypt
@@ -90,11 +90,11 @@ Inoltre, se il provider API utilizza un certificato CA autofirmato, riceverà il
 
 ### Importazione certificati
 
-Per importare il certificato AEM, effettua le seguenti operazioni:
+Per importare il certificato di AEM, effettua le seguenti operazioni:
 
-1. Accedi a **Autore AEM** come **amministratore**.
+1. Accedi a **AEM Author** come **amministratore**.
 
-1. Passa a **Autore AEM > Strumenti > Sicurezza > Utenti > Crea o seleziona un utente esistente**.
+1. Passa a **AEM Author > Strumenti > Sicurezza > Utenti > Crea o seleziona un utente esistente**.
 
    ![Crea o seleziona un utente esistente](assets/mutual-tls-authentication/create-or-select-user.png)
 
@@ -120,15 +120,15 @@ Per importare il certificato AEM, effettua le seguenti operazioni:
 
 1. Verifica che il certificato sia stato importato correttamente.
 
-   ![Chiave privata AEM e certificato importati](assets/mutual-tls-authentication/aem-privatekey-cert-imported.png)
+   ![Chiave privata e certificato AEM importati](assets/mutual-tls-authentication/aem-privatekey-cert-imported.png)
 
-Se il provider API utilizza un certificato CA autofirmato, importa il certificato ricevuto nel TrustStore dell&#39;AEM. Segui i passaggi descritti in [qui](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html#httpclient-and-load-aem-truststore-material).
+Se il provider API utilizza un certificato CA autofirmato, importa il certificato ricevuto nel TrustStore di AEM. Segui i passaggi descritti in [qui](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html#httpclient-and-load-aem-truststore-material).
 
-Allo stesso modo, se l’AEM utilizza un certificato CA autofirmato, richiedi al provider API di importarlo.
+Allo stesso modo, se AEM utilizza un certificato CA autofirmato, richiedi al provider API di importarlo.
 
 ### Codice di chiamata API mTLS prototipo utilizzando HttpClient
 
-Aggiorna il codice Java™ come segue. Per utilizzare l&#39;annotazione `@Reference` per ottenere il servizio `KeyStoreService` dell&#39;AEM, il codice chiamante deve essere un componente/servizio OSGi o un modello Sling (in cui è utilizzato `@OsgiService`).
+Aggiorna il codice Java™ come segue. Per utilizzare l&#39;annotazione `@Reference` per ottenere il servizio `KeyStoreService` di AEM, il codice chiamante deve essere un componente/servizio OSGi o un modello Sling (in cui è utilizzato `@OsgiService`).
 
 
 ```java
@@ -213,20 +213,20 @@ private KeyStore getAEMTrustStore(KeyStoreService keyStoreService, ResourceResol
 ```
 
 - Inserisci il servizio OSGi `com.adobe.granite.keystore.KeyStoreService` OOTB nel componente OSGi.
-- Ottenere il registro chiavi AEM dell&#39;utente utilizzando `KeyStoreService` e `ResourceResolver`. Questa operazione viene eseguita dal metodo `getAEMKeyStore(...)`.
-- Se il provider API utilizza un certificato CA autofirmato, ottenere il TrustStore AEM globale, il metodo `getAEMTrustStore(...)` esegue questa operazione.
+- Ottieni il KeyStore AEM dell&#39;utente utilizzando `KeyStoreService` e `ResourceResolver`. Questa operazione viene eseguita dal metodo `getAEMKeyStore(...)`.
+- Se il provider API utilizza un certificato CA autofirmato, ottenere il TrustStore AEM globale con il metodo `getAEMTrustStore(...)`.
 - Creare un oggetto di `SSLContextBuilder`. Vedere Java™ [Dettagli API](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html).
-- Caricare il registro chiavi AEM dell&#39;utente in `SSLContextBuilder` utilizzando il metodo `loadKeyMaterial(final KeyStore keystore,final char[] keyPassword)`.
+- Carica il KeyStore AEM dell&#39;utente in `SSLContextBuilder` utilizzando il metodo `loadKeyMaterial(final KeyStore keystore,final char[] keyPassword)`.
 - La password del keystore è la password impostata durante la creazione del keystore. Deve essere memorizzata nella configurazione OSGi. Vedere [Valori di configurazione segreti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values).
 
 ## Evita le modifiche al keystore JVM
 
 Un approccio convenzionale per richiamare in modo efficace le API mTLS con certificati privati comporta la modifica del keystore JVM. Ciò si ottiene importando i certificati privati mediante il comando Java™ [keytool](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549).
 
-Tuttavia, questo metodo non è allineato con le best practice di sicurezza e l&#39;AEM offre un&#39;opzione superiore tramite l&#39;utilizzo di **KeyStores specifici dell&#39;utente e Global TrustStore** e [KeyStoreService](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html).
+Tuttavia, questo metodo non è allineato con le best practice di sicurezza e AEM offre un&#39;opzione superiore tramite l&#39;utilizzo di **KeyStores specifici dell&#39;utente e Global TrustStore** e [KeyStoreService](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html).
 
 ## Pacchetto soluzione
 
 Il progetto Node.js di esempio demo nel video può essere scaricato da [qui](assets/internal-api-call/REST-APIs.zip).
 
-Il codice del servlet AEM è disponibile nel ramo `tutorial/web-api-invocation` del progetto WKND Sites, [vedi](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).
+Il codice servlet AEM è disponibile nel ramo `tutorial/web-api-invocation` del progetto WKND Sites, [vedi](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).

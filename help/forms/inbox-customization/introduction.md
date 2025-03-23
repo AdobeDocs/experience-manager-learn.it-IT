@@ -3,7 +3,7 @@ title: Casella in entrata AEM
 description: Personalizza la casella in entrata aggiungendo nuove colonne basate sui dati del flusso di lavoro
 feature: Adaptive Forms
 doc-type: article
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-5830
 topic: Development
 role: Developer
@@ -11,7 +11,7 @@ level: Experienced
 exl-id: 3e1d86ab-e0c4-45d4-b998-75a44a7e4a3f
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 42
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 5%
@@ -24,7 +24,7 @@ La Casella in entrata AEM consolida le notifiche e le attività da vari componen
 
 L&#39;interfaccia utente Casella in entrata fornisce viste elenco e calendario per visualizzare le attività. È inoltre possibile configurare le impostazioni di visualizzazione. Puoi filtrare le attività in base a vari parametri.
 
-È possibile personalizzare la casella in entrata di un Experience Manager per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare colonne aggiuntive in base ai dati di un flusso di lavoro.
+Puoi personalizzare una casella in entrata di Experience Manager per modificare il titolo predefinito di una colonna, riordinare la posizione di una colonna e visualizzare colonne aggiuntive in base ai dati di un flusso di lavoro.
 
 >[!NOTE]
 >

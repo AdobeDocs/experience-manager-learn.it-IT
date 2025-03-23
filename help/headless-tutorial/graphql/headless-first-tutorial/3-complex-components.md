@@ -1,7 +1,7 @@
 ---
-title: 'Creare un componente Elenco immagini complesso: prima esercitazione senza intestazione AEM'
+title: 'Creare un componente Elenco immagini complesso: prima esercitazione di AEM Headless'
 description: Scopri come utilizzare Frammento di contenuto, riferimenti a contenuti e immagini.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: ad06b0f3-afa7-4661-aa66-0674d2e6bb43
 duration: 732
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Benvenuti in questo capitolo di esercitazione in cui esploreremo la creazione di un componente Elenco immagini complesso che esegue il rendering di frammenti di contenuto, riferimenti a frammenti di contenuto nidificati e risorse di immagini di riferimento. Faremo un ulteriore passo avanti rendendo modificabile l’app React tramite l’editor universale.
 
-I Frammenti di contenuto in Adobe Experience Manager (AEM) forniscono un approccio strutturato alla gestione dei contenuti. Sfruttiamo i Frammenti di contenuto per popolare il componente Elenco immagini, gestire i riferimenti nidificati e visualizzare le risorse di immagini di riferimento.
+I frammenti di contenuto in Adobe Experience Manager (AEM) forniscono un approccio strutturato alla gestione dei contenuti. Sfruttiamo i Frammenti di contenuto per popolare il componente Elenco immagini, gestire i riferimenti nidificati e visualizzare le risorse di immagini di riferimento.
 
 In questa esercitazione, ti guideremo attraverso la creazione del componente Elenco immagini, la gestione dei riferimenti nidificati, il rendering delle risorse immagine di riferimento e l’integrazione di Universal Editor. Scoprirai come impostare le dipendenze, progettare la struttura dei componenti, recuperare e analizzare i frammenti di contenuto e rendere l’app modificabile tramite l’editor universale.
 
@@ -422,4 +422,4 @@ export default Home;
 
 ## Congratulazioni.
 
-Hai creato con successo un’esperienza AEM headless completamente basata sulle API AEM headless e modificabile con l’editor universale.
+Hai creato correttamente un’esperienza AEM Headless che è completamente basata sulle API AEM Headless e che può essere modificata con Universal Editor.

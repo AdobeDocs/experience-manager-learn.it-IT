@@ -3,14 +3,14 @@ title: Passaggi semplificati per l’installazione di AEM Forms su Windows
 description: Passaggi semplici e veloci per installare AEM Forms su Windows
 feature: Adaptive Forms
 type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Admin
 level: Beginner
 exl-id: 80288765-0b51-44a9-95d3-3bdb2da38615
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 113
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Se intendi utilizzare AEM Forms, non fare mai doppio clic sul file jar di Avvio rapido dell’AEM.
+>Se intendi utilizzare AEM, non fare mai doppio clic sul file jar di avvio rapido di AEM Forms.
 >
 >Inoltre, accertati che nel percorso della cartella di installazione di AEM Forms non siano presenti spazi.
 >
@@ -39,9 +39,9 @@ ht-degree: 1%
 Sebbene sia consigliabile seguire la [documentazione ufficiale](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) per l&#39;installazione di AEM Forms. Per installare e configurare AEM Forms in un ambiente Windows è possibile seguire la procedura descritta di seguito.
 
 * Assicurarsi di aver installato il JDK appropriato
-   * AEM 6.2 richiesto: Oracle SE 8 JDK 1.8.x (64 bit)
-   * AEM 6.3 e AEM 6.4: Oracle SE 8 JDK 1.8.x (64 bit)
-   * AEM 6.5 sono necessari JDK 8 o JDK 11
+   * AEM 6.2 è necessario: Oracle SE 8 JDK 1.8.x (64 bit)
+   * AEM 6.3 e AEM 6.4 sono necessari: Oracle SE 8 JDK 1.8.x (64 bit)
+   * AEM 6.5: è necessario JDK 8 o JDK 11
    * [I requisiti JDK ufficiali](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=it) sono elencati qui
 * Verificare che JAVA_HOME sia impostato in modo da puntare al JDK installato.
    * Per creare la variabile JAVA_HOME in Windows, effettuare le seguenti operazioni:
@@ -54,7 +54,7 @@ Sebbene sia consigliabile seguire la [documentazione ufficiale](https://helpx.ad
 * Copiare il file license.properties in questa cartella AEMForms
 * Crea un file batch denominato &quot;StartAemForms.bat&quot; con il seguente contenuto:
    * `java -d64 -Xmx2048M -jar AEM_6.5_Quickstart.jar -gui`
-      * Qui AEM_6.5_Quickstart.jar è il nome del file jar quickstart dell&#39;AEM.
+      * Qui AEM_6.5_Quickstart.jar è il nome del file jar quickstart di AEM.
    * Puoi rinominare il file jar con qualsiasi nome, ma assicurati che tale nome sia riportato nel file batch. Salvate il file batch nella cartella AEMForms.
 
 * Apri un nuovo prompt dei comandi e passa a _c:\aemforms_.
@@ -86,4 +86,4 @@ Sebbene sia consigliabile seguire la [documentazione ufficiale](https://helpx.ad
 1. Salva le modifiche.
 
 Complimenti!!! Ora hai installato e configurato AEM Forms sul tuo sistema.
-A seconda delle tue esigenze puoi configurare [Estensioni di Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) o [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) sul server
+A seconda delle tue esigenze puoi configurare [Estensioni Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) o [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) sul server

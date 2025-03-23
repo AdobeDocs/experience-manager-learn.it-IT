@@ -1,7 +1,7 @@
 ---
-title: Utilizzo degli strumenti di modernizzazione dell’AEM per passare ad AEM as a Cloud Service
-description: Scopri come gli strumenti di modernizzazione dell’AEM vengono utilizzati per aggiornare un progetto AEM esistente e i contenuti affinché siano compatibili con AEM as a Cloud Service.
-version: Cloud Service
+title: Utilizzo degli strumenti di modernizzazione AEM per il passaggio ad AEM as a Cloud Service
+description: Scopri come gli Strumenti di modernizzazione AEM vengono utilizzati per aggiornare un progetto AEM esistente e il contenuto affinché siano compatibili con AEM as a Cloud Service.
+version: Experience Manager as a Cloud Service
 topic: Migration, Upgrade
 feature: Migration
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8629
 thumbnail: 336965.jpeg
 exl-id: 310f492c-0095-4015-81a4-27d76f288138
 duration: 2502
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Strumenti AEM Modernization Tools
 
-Scopri come gli strumenti di modernizzazione dell’AEM vengono utilizzati per aggiornare un contenuto AEM Sites esistente affinché sia compatibile con AEM as a Cloud Service e in linea con le best practice.
+Scopri come gli strumenti di modernizzazione AEM vengono utilizzati per aggiornare un contenuto AEM Sites esistente affinché sia compatibile con AEM as a Cloud Service e in linea con le best practice.
 
 ## Convertitore all-in-one
 
@@ -38,15 +38,15 @@ Scopri come gli strumenti di modernizzazione dell’AEM vengono utilizzati per a
 
 >[!VIDEO](https://video.tv.adobe.com/v/338797?quality=12&learn=on)
 
-## Utilizzo degli strumenti di modernizzazione dell’AEM
+## Utilizzo degli strumenti di modernizzazione AEM
 
 ![Ciclo di vita degli strumenti di modernizzazione AEM](./assets/aem-modernization-tools.png)
 
-Gli strumenti di modernizzazione dell’AEM convertono automaticamente le pagine AEM esistenti composte da modelli statici legacy, componenti di base e parsys, per utilizzare approcci moderni quali modelli modificabili, componenti WCM di base dell’AEM e contenitori di layout.
+Gli strumenti di modernizzazione AEM convertono automaticamente le pagine AEM esistenti composte da modelli statici legacy, componenti di base e parsys, per utilizzare approcci moderni quali modelli modificabili, componenti WCM core di AEM e contenitori di layout.
 
 ## Attività chiave
 
-+ Clonare la produzione di AEM 6.x per eseguire gli strumenti di modernizzazione dell’AEM su
++ Clona la produzione di AEM 6.x per eseguire gli strumenti di modernizzazione AEM su
 + Scarica e installa gli [strumenti di modernizzazione AEM più recenti](https://github.com/adobe/aem-modernize-tools/releases/latest) sul clone di produzione AEM 6.x tramite Gestione pacchetti
 
 + [Il convertitore struttura pagine](https://opensource.adobe.com/aem-modernize-tools/pages/structure/about.html) aggiorna il contenuto della pagina esistente da modello statico a modello modificabile mappato utilizzando i contenitori di layout
@@ -60,7 +60,7 @@ Gli strumenti di modernizzazione dell’AEM convertono automaticamente le pagine
 + [Importazione criteri](https://opensource.adobe.com/aem-modernize-tools/pages/policy/about.html) crea criteri dalla configurazione di progettazione
    + Definire le regole di conversione utilizzando le definizioni dei nodi JCR/XML
    + Eseguire Importazione criteri in base alle definizioni di progettazione esistenti
-   + Applicare i criteri importati ai componenti e ai contenitori AEM
+   + Applicare i criteri importati a componenti e contenitori AEM
 
 ## Esercizio pratico
 
@@ -86,9 +86,9 @@ Inoltre, assicurati di aver completato il precedente esercizio pratico:
             </a>        
         </td>
         <td style="width:100%;margin-bottom:1rem;">
-            <div style="font-size:1.25rem;font-weight:400;">Modernizzazione dell'AEM</div>
+            <div style="font-size:1.25rem;font-weight:400;">Modernizzazione di AEM</div>
             <p style="margin:1rem 0">
-                Scopri come utilizzare gli strumenti di modernizzazione dell’AEM per aggiornare un sito WKND legacy in base alle best practice di AEM as a Cloud Service.
+                Scopri come utilizzare gli strumenti di modernizzazione AEM per aggiornare un sito WKND legacy in base alle best practice di AEM as a Cloud Service.
             </p>
             <a  rel="noreferrer"
                 target="_blank"
@@ -103,7 +103,7 @@ Inoltre, assicurati di aver completato il precedente esercizio pratico:
 
 + [Scarica strumenti di modernizzazione AEM](https://github.com/adobe/aem-modernize-tools/releases/latest)
 + [Documentazione sugli strumenti di modernizzazione AEM](https://opensource.adobe.com/aem-modernize-tools/)
-+ [AEM Gems - Introduzione della suite di modernizzazione AEM](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
++ [AEM Gems - Introduzione alla suite di modernizzazione AEM](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
 
-1. Distribuisci il sito wknd-legacy appena modernizzato sull’SDK AEM locale. AEM ASK disponibile per il download qui:
+1. Distribuisci il sito wknd-legacy appena modernizzato sul SDK AEM locale. AEM ASK disponibile per il download qui:
    + [Portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).

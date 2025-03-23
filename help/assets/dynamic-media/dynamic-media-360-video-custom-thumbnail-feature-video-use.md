@@ -1,42 +1,42 @@
 ---
-title: Utilizzo di video Dynamic Medie 360 e miniatura video personalizzata con AEM Assets
-description: I miglioramenti apportati al visualizzatore Dynamic Medie nell'AEM 6.5 includono il supporto per il rendering video 360, 360 visualizzatori di contenuti multimediali (video360Social e video360VR) e la possibilità di selezionare miniature video personalizzate.
+title: Utilizzo dei video Dynamic Media 360 e della miniatura video personalizzata con AEM Assets
+description: I miglioramenti apportati al visualizzatore Dynamic Media in AEM 6.5 includono il supporto per il rendering video 360, 360 visualizzatori di contenuti multimediali (video360Social e video360VR) e la possibilità di selezionare miniature video personalizzate.
 feature: Video Profiles
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 4ee0b68f-3897-4104-8615-9de8dbb8f327
 duration: 656
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 3%
 
 ---
 
-# Utilizzo di video Dynamic Medie 360 e miniatura video personalizzata con AEM Assets
+# Utilizzo dei video Dynamic Media 360 e della miniatura video personalizzata con AEM Assets
 
-I miglioramenti apportati al visualizzatore Dynamic Medie nell&#39;AEM 6.5 includono il supporto per il rendering video 360, 360 visualizzatori di contenuti multimediali (video360Social e video360VR) e la possibilità di selezionare miniature video personalizzate.
+I miglioramenti apportati al visualizzatore Dynamic Media in AEM 6.5 includono il supporto per il rendering video 360, 360 visualizzatori di contenuti multimediali (video360Social e video360VR) e la possibilità di selezionare miniature video personalizzate.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26391?quality=12&learn=on)
 
 >[!NOTE]
 >
->Video presuppone che l’istanza AEM sia in esecuzione in modalità Dynamic Medie S7.  [Le istruzioni per la configurazione di AEM con Dynamic Medie sono disponibili qui](https://helpx.adobe.com/it/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). Quando caricate un video, per impostazione predefinita, Dynamic Medie elabora il metraggio come video 360, se ha proporzioni 2:1. ovvero un rapporto larghezza/altezza di 2:1.
+>Video presuppone che l’istanza di AEM sia in esecuzione in modalità Dynamic Media S7.  [Le istruzioni per la configurazione di AEM con Dynamic Media sono disponibili qui](https://helpx.adobe.com/it/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). Quando caricate un video, per impostazione predefinita, Dynamic Media elabora il metraggio come video 360, se ha proporzioni 2:1. ovvero un rapporto larghezza/altezza di 2:1.
 
 >[!NOTE]
 >
->I componenti Dynamic Medie 360 Media supportano solo video 360.
+>I componenti Dynamic Media 360 Media supportano solo video 360.
 
-## Video su Dynamic Medie 360
+## Video su Dynamic Media 360
 
 I video a 360 gradi, noti anche come video sferici, sono registrazioni video in cui una visione in ogni direzione viene registrata contemporaneamente, girata utilizzando una fotocamera omnidirezionale o una raccolta di telecamere. Durante la riproduzione su uno schermo piatto, l&#39;utente ha il controllo della direzione di visualizzazione, e la riproduzione su dispositivi mobili in genere sfrutta il controllo integrato del giroscopio.  Ti consente di andare oltre i limiti della fotografia singola. Gli addetti al marketing possono fornire agli utenti un’esperienza coinvolgente con l’aiuto di 360 video.  Cominciamo. Il criterio delle proporzioni dell’immagine panoramica può essere modificato nella configurazione DMS7 dell’azienda specificando la doppia proprietà s7PanoramicAR in /conf/global/settings/cloudconfigs/dmscene7/jcr:content.
 
-## Video su Dynamic Medie 360
+## Video su Dynamic Media 360
 
-Il video Dynamic Medie ora supporta la possibilità di selezionare una miniatura personalizzata per il video. L’utente può selezionare una risorsa esistente da AEM Assets oppure selezionare un fotogramma video come miniatura.
+Il video Dynamic Media ora supporta la possibilità di selezionare una miniatura personalizzata per il video. L’utente può selezionare una risorsa esistente da AEM Assets oppure selezionare un fotogramma video come miniatura.
 
 ## Visualizzatori Dynamic 360 Media
 
@@ -48,9 +48,9 @@ Il video Dynamic Medie ora supporta la possibilità di selezionare una miniatura
       <td>**Visualizzatore Video360VR**</td>
    </tr>
    <tr>
-      <td>Modalità di esecuzione Dynamic Medie</td>
-      <td>Solo modalità Scene7 Dynamic Medie</td>
-      <td>Solo modalità Scene7 Dynamic Medie<br>
+      <td>Modalità di esecuzione Dynamic Media</td>
+      <td>Solo modalità Dynamic Media Scene7</td>
+      <td>Solo modalità Scene7 per elementi multimediali dinamici<br>
          <br>
       </td>
    </tr>
@@ -104,4 +104,4 @@ Il video Dynamic Medie ora supporta la possibilità di selezionare una miniatura
 
 ## Risorse aggiuntive{#additional-resources}
 
-[Configurazione di Dynamic Medie in modalità Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[Configurazione di Dynamic Media in modalità Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)

@@ -1,8 +1,8 @@
 ---
-title: Mappare i componenti dell’SPA ai componenti dell’AEM | Guida introduttiva all’Editor SPA dell’AEM e React
-description: Scopri come mappare i componenti React ai componenti Adobe Experience Manager (AEM) con l’SDK JS dell’editor AEM SPA. La mappatura dei componenti consente agli utenti di apportare aggiornamenti dinamici ai componenti SPA nell’Editor SPA dell’AEM, in modo simile all’authoring AEM tradizionale. Scoprirai anche come utilizzare i componenti core React dell’AEM preconfigurati.
+title: Mappare i componenti dell’applicazione a pagina singola ai componenti di AEM | Guida introduttiva dell’Editor SPA di AEM e React
+description: Scopri come mappare i componenti React ai componenti Adobe Experience Manager (AEM) con AEM SPA Editor JS SDK. La mappatura dei componenti consente agli utenti di apportare aggiornamenti dinamici ai componenti delle applicazioni a pagina singola nell’Editor delle applicazioni a pagina singola di AEM, in modo simile all’authoring tradizionale AEM. Scoprirai anche come utilizzare i componenti core React di AEM forniti con il prodotto.
 feature: SPA Editor
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-4854
 thumbnail: 4854-spa-react.jpg
 topic: SPA
@@ -11,59 +11,59 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
 duration: 477
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2123'
 ht-degree: 0%
 
 ---
 
-# Mappare i componenti dell’SPA ai componenti dell’AEM {#map-components}
+# Mappare i componenti dell’applicazione a pagina singola ai componenti di AEM {#map-components}
 
-Scopri come mappare i componenti React ai componenti Adobe Experience Manager (AEM) con l’SDK JS dell’editor AEM SPA. La mappatura dei componenti consente agli utenti di apportare aggiornamenti dinamici ai componenti SPA nell’Editor SPA dell’AEM, in modo simile all’authoring AEM tradizionale.
+Scopri come mappare i componenti React ai componenti Adobe Experience Manager (AEM) con AEM SPA Editor JS SDK. La mappatura dei componenti consente agli utenti di apportare aggiornamenti dinamici ai componenti delle applicazioni a pagina singola nell’Editor delle applicazioni a pagina singola di AEM, in modo simile all’authoring tradizionale AEM.
 
-Questo capitolo approfondisce l’analisi dell’API del modello JSON AEM e di come il contenuto JSON esposto da un componente AEM possa essere inserito automaticamente in un componente React come prop.
+Questo capitolo approfondisce l’analisi dell’API del modello JSON AEM e di come il contenuto JSON esposto da un componente AEM può essere inserito automaticamente in un componente React come prop.
 
 ## Obiettivo
 
-1. Scopri come mappare i componenti dell’AEM ai componenti dell’SPA.
-1. Inspect come un componente React utilizza le proprietà dinamiche passate dall’AEM.
+1. Scopri come mappare i componenti di AEM ai componenti SPA.
+1. Esamina il modo in cui un componente React utilizza le proprietà dinamiche passate da AEM.
 1. Scopri come utilizzare [React AEM Core Components](https://github.com/adobe/aem-react-core-wcm-components-examples) pronto all&#39;uso.
 
 ## Cosa verrà creato
 
-In questo capitolo viene verificato il modo in cui il componente SPA `Text` fornito è mappato al componente `Text` dell&#39;AEM. I componenti core React come il componente SPA `Image` vengono utilizzati nell&#39;SPA e creati nell&#39;AEM. Le funzionalità predefinite dei criteri **Contenitore di layout** e **Editor modelli** consentono inoltre di creare una visualizzazione con un aspetto leggermente più variabile.
+In questo capitolo viene verificato il modo in cui il componente SPA `Text` fornito è mappato al componente `Text` di AEM. I componenti core React come il componente `Image` per applicazioni a pagina singola vengono utilizzati nell&#39;applicazione a pagina singola e creati in AEM. Le funzionalità predefinite dei criteri **Contenitore di layout** e **Editor modelli** consentono inoltre di creare una visualizzazione con un aspetto leggermente più variabile.
 
 ![Authoring finale del capitolo](./assets/map-components/final-page.png)
 
 ## Prerequisiti
 
-Esaminare gli strumenti e le istruzioni necessari per configurare un [ambiente di sviluppo locale](overview.md#local-dev-environment). Questo capitolo è una continuazione del capitolo [Integrare l&#39;SPA](integrate-spa.md), tuttavia seguire tutto ciò che ti serve è un progetto AEM abilitato per l&#39;SPA.
+Esaminare gli strumenti e le istruzioni necessari per configurare un [ambiente di sviluppo locale](overview.md#local-dev-environment). Questo capitolo è una continuazione del capitolo [Integrare l&#39;applicazione a pagina singola](integrate-spa.md), tuttavia seguire tutto ciò che ti serve è un progetto AEM abilitato per l&#39;applicazione a pagina singola.
 
 ## Approccio di mappatura
 
-Il concetto di base è quello di mappare un componente SPA a un componente AEM. I componenti AEM, esegui lato server, esportano contenuti come parte dell’API del modello JSON. Il contenuto JSON viene utilizzato dall’SPA, che esegue il lato client nel browser. Viene creata una mappatura 1:1 tra i componenti SPA e un componente AEM.
+Il concetto di base è quello di mappare un componente SPA a un componente AEM. I componenti AEM, esegui lato server, esportano contenuti come parte dell’API del modello JSON. Il contenuto JSON viene utilizzato dall’applicazione a pagina singola, che esegue sul lato client nel browser. Viene creata una mappatura 1:1 tra i componenti SPA e un componente AEM.
 
 ![Panoramica di alto livello sulla mappatura di un componente AEM a un componente React](./assets/map-components/high-level-approach.png)
 
 *Panoramica di alto livello sulla mappatura di un componente AEM a un componente React*
 
-## Inspect il componente Testo
+## Controllare il componente Testo
 
-L&#39;[Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype) fornisce un componente `Text` mappato al [Componente testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) dell&#39;AEM. Questo è un esempio di un componente **content**, in quanto esegue il rendering di *content* dall&#39;AEM.
+L&#39;[Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype) fornisce un componente `Text` mappato al [Componente testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) di AEM. Questo è un esempio di un componente **content**, in quanto esegue il rendering di *content* da AEM.
 
 Vediamo come funziona il componente.
 
-### Inspect il modello JSON
+### Verifica il modello JSON
 
-1. Prima di passare al codice SPA, è importante comprendere il modello JSON fornito dall’AEM. Passa alla [libreria dei componenti core](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html) e visualizza la pagina per il componente Testo. La libreria dei componenti core fornisce esempi di tutti i componenti core dell’AEM.
+1. Prima di passare al codice SPA, è importante comprendere il modello JSON fornito da AEM. Passa alla [libreria dei componenti core](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html) e visualizza la pagina per il componente Testo. La libreria dei componenti core fornisce esempi di tutti i componenti core di AEM.
 1. Selezionare la scheda **JSON** per uno degli esempi:
 
    ![Modello JSON di testo](./assets/map-components/text-json.png)
 
    Dovrebbero essere visualizzate tre proprietà: `text`, `richText` e `:type`.
 
-   `:type` è una proprietà riservata che elenca `sling:resourceType` (o percorso) del componente AEM. Il valore di `:type` è quello utilizzato per mappare il componente AEM al componente SPA.
+   `:type` è una proprietà riservata che elenca `sling:resourceType` (o percorso) del componente AEM. Il valore di `:type` è ciò che viene utilizzato per mappare il componente AEM al componente SPA.
 
    `text` e `richText` sono proprietà aggiuntive esposte al componente SPA.
 
@@ -79,9 +79,9 @@ Vediamo come funziona il componente.
       }
    ```
 
-### Inspect il componente Testo SPA
+### Controllare il componente Text SPA
 
-1. Nell&#39;IDE che preferisci, apri il Progetto AEM per l&#39;SPA. Espandere il modulo `ui.frontend` e aprire il file `Text.js` in `ui.frontend/src/components/Text/Text.js`.
+1. Nell’IDE che preferisci, apri il progetto AEM per l’applicazione a pagina singola. Espandere il modulo `ui.frontend` e aprire il file `Text.js` in `ui.frontend/src/components/Text/Text.js`.
 
 1. La prima area da controllare è `class Text` a ~riga 40:
 
@@ -122,7 +122,7 @@ Vediamo come funziona il componente.
    };
    ```
 
-   Il codice di cui sopra è responsabile di determinare quando eseguire il rendering del segnaposto nell’ambiente di authoring dell’AEM. Se il metodo `isEmpty` restituisce **true**, viene eseguito il rendering del segnaposto.
+   Il codice di cui sopra è responsabile di determinare quando eseguire il rendering del segnaposto nell’ambiente di authoring di AEM. Se il metodo `isEmpty` restituisce **true**, viene eseguito il rendering del segnaposto.
 
 1. Infine, dare un&#39;occhiata alla chiamata `MapTo` a ~riga 94:
 
@@ -130,16 +130,16 @@ Vediamo come funziona il componente.
    export default MapTo('wknd-spa-react/components/text')(LazyTextComponent, TextEditConfig);
    ```
 
-   `MapTo` è fornito dall&#39;SDK JS dell&#39;editor SPA dell&#39;AEM (`@adobe/aem-react-editable-components`). Il percorso `wknd-spa-react/components/text` rappresenta `sling:resourceType` del componente AEM. Questo percorso viene confrontato con `:type` esposto dal modello JSON osservato in precedenza. `MapTo` si occupa di analizzare la risposta del modello JSON e di passare i valori corretti come `props` al componente SPA.
+   `MapTo` è fornito da AEM SPA Editor JS SDK (`@adobe/aem-react-editable-components`). Il percorso `wknd-spa-react/components/text` rappresenta `sling:resourceType` del componente AEM. Questo percorso viene confrontato con `:type` esposto dal modello JSON osservato in precedenza. `MapTo` si occupa di analizzare la risposta del modello JSON e di passare i valori corretti come `props` al componente SPA.
 
-   La definizione del componente `Text` dell&#39;AEM è disponibile in `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/text`.
+   La definizione del componente AEM `Text` è disponibile in `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/text`.
 
 ## Utilizzare i componenti core React
 
-[Componenti WCM AEM - Implementazione React Core](https://github.com/adobe/aem-react-core-wcm-components-base) e [Componenti WCM AEM - Editor SPA - Implementazione React Core](https://github.com/adobe/aem-react-core-wcm-components-spa). Si tratta di un set di componenti riutilizzabili dell’interfaccia utente mappati su componenti AEM predefiniti. La maggior parte dei progetti può riutilizzare questi componenti come punto di partenza per la propria implementazione.
+[Componenti AEM WCM - Implementazione React Core](https://github.com/adobe/aem-react-core-wcm-components-base) e [Componenti AEM WCM - Editor SPA - Implementazione React Core](https://github.com/adobe/aem-react-core-wcm-components-spa). Si tratta di un set di componenti riutilizzabili dell’interfaccia utente mappati su componenti AEM predefiniti. La maggior parte dei progetti può riutilizzare questi componenti come punto di partenza per la propria implementazione.
 
 1. Nel codice del progetto apri il file `import-components.js` in `ui.frontend/src/components`.
-Questo file importa tutti i componenti SPA mappati ai componenti AEM. Data la natura dinamica dell’implementazione dell’Editor SPA, è necessario fare riferimento esplicito a qualsiasi componente SPA associato ai componenti compatibili con l’AEM. Questo consente all’autore di AEM di scegliere di utilizzare un componente in qualsiasi posizione all’interno dell’applicazione.
+Questo file importa tutti i componenti SPA mappati ai componenti AEM. Data la natura dinamica dell’implementazione dell’editor di applicazioni a pagina singola, è necessario fare riferimento esplicito a qualsiasi componente di applicazioni a pagina singola associato ai componenti Author di AEM. Questo consente all’autore di AEM di scegliere di utilizzare un componente in qualsiasi posizione all’interno dell’applicazione.
 1. Le seguenti istruzioni di importazione includono i componenti SPA scritti nel progetto:
 
    ```js
@@ -151,19 +151,19 @@ Questo file importa tutti i componenti SPA mappati ai componenti AEM. Data la na
 
 1. Ci sono molti altri `imports` da `@adobe/aem-core-components-react-spa` e `@adobe/aem-core-components-react-base`. Questi componenti importano i componenti core React e li rendono disponibili nel progetto corrente. Questi vengono quindi mappati a componenti AEM specifici del progetto utilizzando `MapTo`, come nell&#39;esempio precedente del componente `Text`.
 
-### Aggiornamento delle politiche AEM
+### Aggiornare i criteri di AEM
 
-Le policy sono una funzione dei modelli AEM che offre agli sviluppatori e agli utenti avanzati un controllo granulare sui componenti disponibili per l’utilizzo. I componenti core React sono inclusi nel codice SPA, ma devono essere abilitati tramite una policy prima di poter essere utilizzati nell’applicazione.
+I criteri sono una funzione dei modelli di AEM e offrono agli sviluppatori e agli utenti avanzati un controllo granulare sui componenti disponibili per l’utilizzo. I componenti core React sono inclusi nel codice SPA, ma devono essere abilitati tramite un criterio prima di poter essere utilizzati nell’applicazione.
 
-1. Dalla schermata iniziale dell&#39;AEM, passa a **Strumenti** > **Modelli** > **[WKND SPA React](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-react)**.
+1. Dalla schermata iniziale di AEM, passa a **Strumenti** > **Modelli** > **[Reazione SPA WKND](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd-spa-react)**.
 
-1. Seleziona e apri il modello **Pagina SPA** per la modifica.
+1. Seleziona e apri il modello **Pagina applicazione a pagina singola** per la modifica.
 
 1. Seleziona il **Contenitore di layout** e fai clic sulla relativa icona **criterio** per modificare il criterio:
 
    ![criterio contenitore layout](assets/map-components/edit-spa-page-template.png)
 
-1. In **Componenti consentiti** > **Reazione SPA WKND - Contenuto** > selezionare **Immagine**, **Teaser** e **Titolo**.
+1. In **Componenti consentiti** > **Reazione SPA WKND - Contenuto** > seleziona **Immagine**, **Teaser** e **Titolo**.
 
    ![Componenti aggiornati disponibili](assets/map-components/update-components-available.png)
 
@@ -205,13 +205,13 @@ Le policy sono una funzione dei modelli AEM che offre agli sviluppatori e agli u
 
 1. Esperienza con i componenti **Title** e **Teaser**.
 
-1. Aggiungi le tue immagini tramite [AEM Assets](http://localhost:4502/assets.html/content/dam) o installa la base di codice completata per il [sito di riferimento WKND standard](https://github.com/adobe/aem-guides-wknd/releases/latest). Il [sito di riferimento WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) include molte immagini che possono essere riutilizzate nell&#39;SPA WKND. È possibile installare il pacchetto utilizzando [Gestione pacchetti AEM](http://localhost:4502/crx/packmgr/index.jsp).
+1. Aggiungi le tue immagini tramite [AEM Assets](http://localhost:4502/assets.html/content/dam) o installa la base di codice completata per il [sito di riferimento WKND standard](https://github.com/adobe/aem-guides-wknd/releases/latest). Il [sito di riferimento WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) include molte immagini che possono essere riutilizzate nell&#39;applicazione a pagina singola WKND. È possibile installare il pacchetto utilizzando [Gestione pacchetti di AEM](http://localhost:4502/crx/packmgr/index.jsp).
 
    ![Gestione pacchetti installa wknd.all](./assets/map-components/package-manager-wknd-all.png)
 
-## Inspect il contenitore di layout
+## Ispezionare il contenitore di layout
 
-Il supporto per **Contenitore di layout** viene fornito automaticamente dall&#39;SDK dell&#39;editor SPA dell&#39;AEM. Il **contenitore di layout**, come indicato dal nome, è un componente **contenitore**. I componenti contenitore sono componenti che accettano strutture JSON che rappresentano *altri* componenti e ne creano un&#39;istanza dinamica.
+Il supporto per **Contenitore di layout** viene fornito automaticamente da AEM SPA Editor SDK. Il **contenitore di layout**, come indicato dal nome, è un componente **contenitore**. I componenti contenitore sono componenti che accettano strutture JSON che rappresentano *altri* componenti e ne creano un&#39;istanza dinamica.
 
 Esaminiamo ulteriormente il Contenitore di layout.
 
@@ -221,7 +221,7 @@ Esaminiamo ulteriormente il Contenitore di layout.
 
    Il componente **Contenitore di layout** ha `sling:resourceType` di `wcm/foundation/components/responsivegrid` ed è riconosciuto dall&#39;editor SPA tramite la proprietà `:type`, proprio come i componenti `Text` e `Image`.
 
-   Con l&#39;editor SPA sono disponibili le stesse funzionalità di ridimensionamento di un componente mediante la [modalità layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode).
+   Le stesse funzionalità di ridimensionamento di un componente mediante la [modalità Layout](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) sono disponibili con l&#39;editor SPA.
 
 2. Torna a [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Aggiungi altri componenti **Immagine** e prova a ridimensionarli utilizzando l&#39;opzione **Layout**:
 
@@ -247,13 +247,13 @@ Congratulazioni, hai imparato a mappare i componenti SPA ai componenti AEM e hai
 
 ### Passaggi successivi {#next-steps}
 
-[Navigazione e indirizzamento](navigation-routing.md) - Scopri come è possibile supportare più visualizzazioni nell&#39;SPA effettuando il mapping alle pagine AEM con l&#39;SDK dell&#39;editor SPA. La navigazione dinamica viene implementata utilizzando React Router e React Core Components.
+[Navigazione e indirizzamento](navigation-routing.md) - Scopri come è possibile supportare più visualizzazioni nell&#39;applicazione a pagina singola effettuando il mapping alle pagine di AEM con l&#39;editor di applicazioni a pagina singola SDK. La navigazione dinamica viene implementata utilizzando React Router e React Core Components.
 
 ## (Bonus) Mantenere le configurazioni per il controllo del codice sorgente {#bonus-configs}
 
-In molti casi, soprattutto all’inizio di un progetto AEM, è utile mantenere le configurazioni, come i modelli e le relative policy di contenuto, per il controllo del codice sorgente. In questo modo tutti gli sviluppatori lavorano sullo stesso set di contenuti e configurazioni e possono garantire ulteriore coerenza tra gli ambienti. Quando un progetto raggiunge un certo livello di maturità, la pratica di gestione dei modelli può essere affidata a uno speciale gruppo di utenti esperti.
+In molti casi, soprattutto all’inizio di un progetto AEM, è utile mantenere le configurazioni, come i modelli e i criteri dei contenuti correlati, nel controllo del codice sorgente. In questo modo tutti gli sviluppatori lavorano sullo stesso set di contenuti e configurazioni e possono garantire ulteriore coerenza tra gli ambienti. Quando un progetto raggiunge un certo livello di maturità, la pratica di gestione dei modelli può essere affidata a uno speciale gruppo di utenti esperti.
 
-I passaggi successivi verranno eseguiti utilizzando l&#39;IDE del codice di Visual Studio e [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync), ma potrebbero essere eseguiti utilizzando qualsiasi strumento e qualsiasi IDE configurato per **richiamare** o **importare** contenuto da un&#39;istanza locale di AEM.
+I passaggi successivi verranno eseguiti utilizzando l&#39;IDE del codice di Visual Studio e [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync), ma potrebbero essere eseguiti utilizzando qualsiasi strumento e IDE configurato per **richiamare** o **importare** contenuto da un&#39;istanza locale di AEM.
 
 1. Nell&#39;IDE di Visual Studio Code verificare che sia installato **VSCode AEM Sync** tramite l&#39;estensione Marketplace:
 
@@ -261,13 +261,13 @@ I passaggi successivi verranno eseguiti utilizzando l&#39;IDE del codice di Visu
 
 2. Espandi il modulo **ui.content** in Esplora progetti e passa a `/conf/wknd-spa-react/settings/wcm/templates`.
 
-3. **Fare clic con il pulsante destro del mouse** sulla cartella `templates` e selezionare **Importa da server AEM**:
+3. **Fare clic con il pulsante destro del mouse** sulla cartella `templates` e selezionare **Importa da AEM Server**:
 
    ![Modello di importazione VSCode](./assets/map-components/import-aem-servervscode.png)
 
 4. Ripeti i passaggi per importare il contenuto, ma seleziona la cartella **criteri** che si trova in `/conf/wknd-spa-react/settings/wcm/templates/policies`.
 
-5. Inspect il file `filter.xml` che si trova in `ui.content/src/main/content/META-INF/vault/filter.xml`.
+5. Controllare il file `filter.xml` che si trova in `ui.content/src/main/content/META-INF/vault/filter.xml`.
 
    ```xml
    <!--ui.content filter.xml-->
@@ -286,17 +286,17 @@ I passaggi successivi verranno eseguiti utilizzando l&#39;IDE del codice di Visu
 
 ## (Bonus) Creare un componente immagine personalizzato {#bonus-image}
 
-I componenti core React hanno già fornito un componente Immagine SPA. Tuttavia, se desideri ulteriore pratica, crea la tua implementazione React che mappi al [componente immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=it) dell&#39;AEM. Il componente `Image` è un altro esempio di un componente **content**.
+I componenti core React hanno già fornito un componente immagine SPA. Tuttavia, se desideri ulteriore pratica, crea la tua implementazione React che viene mappata sul [componente immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=it) di AEM. Il componente `Image` è un altro esempio di un componente **content**.
 
-### Inspect il JSON
+### Ispezionare JSON
 
-Prima di passare al codice SPA, controlla il modello JSON fornito dall’AEM.
+Prima di passare al codice SPA, controlla il modello JSON fornito da AEM.
 
 1. Passa a [Esempi di immagini nella libreria dei componenti core](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html).
 
    ![Componente core immagine JSON](./assets/map-components/image-json.png)
 
-   Le proprietà di `src`, `alt` e `title` vengono utilizzate per popolare il componente SPA `Image`.
+   Le proprietà di `src`, `alt` e `title` sono utilizzate per popolare il componente SPA `Image`.
 
    >[!NOTE]
    >
@@ -359,7 +359,7 @@ Prima di passare al codice SPA, controlla il modello JSON fornito dall’AEM.
 
    Il codice riportato sopra eseguirà il rendering di `<img>` in base alle proprietà `src`, `alt` e `title` trasmesse dal modello JSON.
 
-1. Aggiungere il codice `MapTo` per mappare il componente React al componente AEM:
+1. Aggiungi il codice `MapTo` per mappare il componente React al componente AEM:
 
    ```js
    MapTo('wknd-spa-react/components/image')(Image, ImageEditConfig);
@@ -404,14 +404,14 @@ Prima di passare al codice SPA, controlla il modello JSON fornito dall’AEM.
 
    In questo modo verrà utilizzato il componente immagine personalizzato.
 
-1. Dalla directory principale del progetto, distribuisci il codice SPA all’AEM utilizzando Maven:
+1. Dalla directory principale del progetto, distribuisci il codice SPA in AEM utilizzando Maven:
 
    ```shell
    $ cd aem-guides-wknd-spa.react
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. Inspect l&#39;SPA nell&#39;AEM. Tutti i componenti Immagine sulla pagina continueranno a funzionare. Inspect ha eseguito il rendering dell’output e dovresti visualizzare il markup per il componente immagine personalizzato anziché il componente core React.
+1. Ispeziona l’applicazione a pagina singola in AEM. Tutti i componenti Immagine sulla pagina continueranno a funzionare. Ispeziona l’output renderizzato e dovresti visualizzare il markup per il componente immagine personalizzato anziché il componente core React.
 
    *Markup del componente immagine personalizzato*
 

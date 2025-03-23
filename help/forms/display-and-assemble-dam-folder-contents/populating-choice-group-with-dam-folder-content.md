@@ -2,17 +2,17 @@
 title: Aggiunta di elementi cartella DAM al componente gruppo di scelta
 description: Aggiungi elementi al componente gruppo di scelta in modo dinamico
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: User
 level: Beginner
 last-substantial-update: 2023-01-01T00:00:00Z
 exl-id: 29f56d13-c2e2-4bc2-bfdc-664c848dd851
 duration: 80
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '230'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 In AEM Forms 6.5 è stata introdotta la possibilità di aggiungere elementi in modo dinamico a un componente del gruppo di scelta di Forms adattivo, ad esempio CheckBox, Pulsante di scelta ed Elenco immagini. In questo articolo esamineremo il caso d’uso per compilare un componente del gruppo di scelta con il contenuto della cartella DAM. Nella schermata i 3 file si trovano nella cartella denominata newsletter.Ogni volta che una nuova newsletter viene aggiunta alla cartella, il componente del gruppo di scelta verrà aggiornato per elencare automaticamente il suo contenuto. L&#39;utente può selezionare una o più newsletter da scaricare.
 
-![Editor regole](assets/newsletters-download.png)
+![Editor di regole](assets/newsletters-download.png)
 
 ## Crea un servlet per restituire il contenuto della cartella DAM
 

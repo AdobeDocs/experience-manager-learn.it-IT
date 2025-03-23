@@ -1,7 +1,7 @@
 ---
 title: Integrare AEM Sites con Adobe Analytics con l’estensione tag Adobe Analytics
 description: Integra AEM Sites con Adobe Analytics, utilizzando Adobe Client Data Layer basato sugli eventi per raccogliere i dati sull’attività dell’utente su un sito web creato con Adobe Experience Manager. Scopri come utilizzare le regole di tag per ascoltare questi eventi e inviare dati a una suite di rapporti di Adobe Analytics.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer
 role: Developer
@@ -12,7 +12,7 @@ badgeIntegration: label="Integrazione" type="positive"
 doc-type: Tutorial
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
 duration: 490
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2262'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Integrare AEM Sites e Adobe Analytics
 
-Scopri come integrare AEM Sites e Adobe Analytics con l’estensione tag Adobe Analytics, utilizzando le funzioni integrate di [Adobe Client Data Layer con i componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it) per raccogliere i dati su una pagina in Adobe Experience Manager Sites. [I tag nell&#39;Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) e l&#39;estensione [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) vengono utilizzati per creare regole per inviare dati di pagina ad Adobe Analytics.
+Scopri come integrare AEM Sites e Adobe Analytics con l’estensione tag Adobe Analytics, utilizzando le funzioni integrate di [Adobe Client Data Layer con i componenti core di AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it) per raccogliere i dati su una pagina in Adobe Experience Manager Sites. [I tag in Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) e l&#39;estensione [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) vengono utilizzati per creare regole per inviare dati di pagina ad Adobe Analytics.
 
 ## Cosa intendi creare {#what-build}
 
@@ -41,7 +41,7 @@ Sono necessari i seguenti elementi:
 
 * **Proprietà tag** in Experience Platform
 * **Adobe Analytics** ID suite di rapporti test/dev e server di tracciamento. Consulta la seguente documentazione per [creare una suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
-* [Estensione del browser Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html). Schermate di questo tutorial acquisite dal browser Chrome.
+* Estensione del browser [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html). Schermate di questo tutorial acquisite dal browser Chrome.
 * (Facoltativo) Sito AEM con [Adobe Client Data Layer abilitato](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation). Questa esercitazione utilizza il sito pubblico [WKND](https://wknd.site/us/en.html), ma puoi utilizzare un sito personale.
 
 >[!NOTE]
@@ -54,7 +54,7 @@ Sono necessari i seguenti elementi:
 
 Invece di configurare un ambiente AEM e installare la base di codice WKND, puoi utilizzare il debugger di Experience Platform per **cambiare** il [sito WKND](https://wknd.site/us/en.html) live in *proprietà tag*. Tuttavia, puoi utilizzare il tuo sito AEM se dispone già di [Adobe Client Data Layer abilitato](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
 
-1. Accedi a Experience Platform e [crea una proprietà tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) (se non lo hai già fatto).
+1. Accedi ad Experience Platform e [crea una proprietà tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) (se non lo hai già fatto).
 1. Assicurati che sia stata creata una libreria [ di JavaScript con tag iniziale](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) e promossa al tag [environment](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=it).
 1. Copia il codice di incorporamento di JavaScript dall’ambiente di tag in cui è stata pubblicata la libreria.
 
@@ -63,7 +63,7 @@ Invece di configurare un ambiente AEM e installare la base di codice WKND, puoi 
 1. Nel browser, apri una nuova scheda e passa a [Sito WKND](https://wknd.site/us/en.html)
 1. Apri l’estensione del browser Experience Platform Debugger
 
-   ![Debugger Experience Platform](assets/collect-data-analytics/experience-platform-debugger-extension.png)
+   ![Experience Platform Debugger](assets/collect-data-analytics/experience-platform-debugger-extension.png)
 
 1. Passa a **Tag di Experience Platform** > **Configurazione** e in **Codici di incorporamento inseriti** sostituisci il codice di incorporamento esistente con *il codice di incorporamento* copiato dal passaggio 3.
 
@@ -73,9 +73,9 @@ Invece di configurare un ambiente AEM e installare la base di codice WKND, puoi 
 
    ![Registrazione console](assets/collect-data-analytics/console-logging-lock-debugger.png)
 
-## Verifica Adobe Client Data Layer nel sito WKND
+## Verificare Adobe Client Data Layer nel sito WKND
 
-Il [progetto di riferimento WKND](https://github.com/adobe/aem-guides-wknd) è stato creato con i componenti core AEM e per impostazione predefinita ha abilitato [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation). Successivamente, verifica che Adobe Client Data Layer sia abilitato.
+Il [progetto di riferimento WKND](https://github.com/adobe/aem-guides-wknd) è stato creato con i componenti core di AEM e per impostazione predefinita ha abilitato [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation). Successivamente, verifica che Adobe Client Data Layer sia abilitato.
 
 1. Passa a [Sito WKND](https://wknd.site/us/en.html).
 1. Apri gli strumenti per sviluppatori del browser e passa alla **console**. Esegui il comando seguente:
@@ -86,7 +86,7 @@ Il [progetto di riferimento WKND](https://github.com/adobe/aem-guides-wknd) è s
 
    Il codice riportato sopra restituisce lo stato corrente di Adobe Client Data Layer.
 
-   ![Stato Adobe del livello dati](assets/collect-data-analytics/adobe-data-layer-state.png)
+   ![Stato di Adobe Data Layer](assets/collect-data-analytics/adobe-data-layer-state.png)
 
 1. Espandere la risposta ed esaminare la voce `page`. Dovresti visualizzare uno schema di dati come il seguente:
 
@@ -114,7 +114,7 @@ Il [progetto di riferimento WKND](https://github.com/adobe/aem-guides-wknd) è s
 
 Adobe Client Data Layer è un livello dati **basato su eventi**. Quando il livello dati della pagina AEM viene caricato, attiva un evento `cmp:show`. Creare una regola che viene attivata quando l&#39;evento `cmp:show` viene attivato dal livello dati della pagina.
 
-1. Passa a Experience Platform e accedi alla proprietà tag integrata con il sito AEM.
+1. Passa ad Experience Platform e accedi alla proprietà tag integrata con il sito AEM.
 1. Passare alla sezione **Rules** nell&#39;interfaccia utente di Tag Property, quindi fare clic su **Create New Rule**.
 
    ![Crea regola](assets/collect-data-analytics/analytics-create-rule.png)
@@ -181,7 +181,7 @@ Adobe Client Data Layer è un livello dati **basato su eventi**. Quando il livel
 
    >[!NOTE]
    >
-   > Può essere utile utilizzare l&#39;[Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) per cambiare il codice da incorporare in un ambiente **Sviluppo**.
+   > Può essere utile utilizzare [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) per passare il codice da incorporare a un ambiente **Development**.
 
 1. Vai al tuo sito AEM e apri gli strumenti per sviluppatori per visualizzare la console. Aggiorna la pagina per verificare che i messaggi della console siano stati registrati:
 
@@ -189,13 +189,13 @@ Adobe Client Data Layer è un livello dati **basato su eventi**. Quando il livel
 
 ## Creare elementi dati
 
-Quindi crea diversi elementi dati per acquisire valori diversi dal livello dati client di Adobe. Come mostrato nell’esercizio precedente, è possibile accedere alle proprietà del livello dati direttamente tramite il codice personalizzato. Il vantaggio di utilizzare gli elementi dati è che possono essere riutilizzati in più regole di tag.
+Quindi crea diversi elementi dati per acquisire valori diversi da Adobe Client Data Layer. Come mostrato nell’esercizio precedente, è possibile accedere alle proprietà del livello dati direttamente tramite il codice personalizzato. Il vantaggio di utilizzare gli elementi dati è che possono essere riutilizzati in più regole di tag.
 
 Gli elementi dati sono mappati alle proprietà `@type`, `dc:title` e `xdm:template`.
 
 ### Tipo risorsa componente
 
-1. Passa a Experience Platform e accedi alla proprietà tag integrata con il sito AEM.
+1. Passa ad Experience Platform e accedi alla proprietà tag integrata con il sito AEM.
 1. Passare alla sezione **Elementi dati** e fare clic su **Crea nuovo elemento dati**.
 1. Per il campo **Nome**, immettere il **Tipo risorsa componente**.
 1. Per il campo **Tipo elemento dati**, selezionare **Codice personalizzato**.
@@ -254,7 +254,7 @@ Gli elementi dati sono mappati alle proprietà `@type`, `dc:title` e `xdm:templa
 
 Quindi aggiungi l’estensione Analytics alla proprietà tag per inviare dati a una suite di rapporti.
 
-1. Passa a Experience Platform e accedi alla proprietà tag integrata con il sito AEM.
+1. Passa ad Experience Platform e accedi alla proprietà tag integrata con il sito AEM.
 1. Vai a **Estensioni** > **Catalogo**
 1. Individua l&#39;estensione **Adobe Analytics** e fai clic su **Installa**
 
@@ -272,7 +272,7 @@ Quindi aggiungi l’estensione Analytics alla proprietà tag per inviare dati a 
    >
    >È consigliabile utilizzare l&#39;opzione *Gestisci la libreria per me* come impostazione di Gestione libreria, in quanto consente di mantenere la libreria `AppMeasurement.js` aggiornata in modo molto più semplice.
 
-1. Seleziona la casella per abilitare **Usa Activity Map**.
+1. Seleziona la casella per abilitare **Utilizza Activity Map**.
 
    ![Abilita Usa Activity Map](assets/track-clicked-component/analytic-track-click.png)
 
@@ -345,7 +345,7 @@ Attualmente la regola **Pagina caricata** restituisce semplicemente un&#39;istru
 
 ## Convalidare la chiamata del beacon Visualizzazione pagina e di Analytics
 
-Ora che la regola **Page Loaded** invia il beacon Analytics, dovresti essere in grado di visualizzare le variabili di tracciamento di Analytics utilizzando il debugger Experience Platform.
+Ora che la regola **Page Loaded** invia il beacon Analytics, dovresti essere in grado di visualizzare le variabili di tracciamento di Analytics utilizzando Experience Platform Debugger.
 
 1. Apri il [sito WKND](https://wknd.site/us/en.html) nel browser.
 1. Fai clic sull&#39;icona Debugger ![icona Experience Platform Debugger](assets/collect-data-analytics/experience-cloud-debugger.png) per aprire Experience Platform Debugger.
@@ -370,14 +370,14 @@ Ora che la regola **Page Loaded** invia il beacon Analytics, dovresti essere in 
 
    >[!NOTE]
    >
-   > Se non trovi alcun registro della console, assicurati che **Registrazione console** sia selezionato in **Tag Experience Platform** nel debugger Experience Platform.
+   > Se non trovi alcun registro della console, assicurati che **Registrazione console** sia selezionato in **Tag Experience Platform** nel debugger di Experience Platform.
 
 1. Passa a una pagina di articolo come [Australia occidentale](https://wknd.site/us/en/magazine/western-australia.html). Osserva che il Nome pagina e il Tipo di modello cambiano.
 
 ## Congratulazioni.
 
-Hai appena utilizzato Adobe Client Data Layer e i tag basati sull’evento nell’Experience Platform per raccogliere i dati della pagina di dati da un sito AEM e inviarli ad Adobe Analytics.
+Hai appena utilizzato Adobe Client Data Layer e i tag basati sugli eventi in Experience Platform per raccogliere i dati della pagina da un sito AEM e inviarli ad Adobe Analytics.
 
 ### Passaggi successivi
 
-Consulta il seguente tutorial per scoprire come utilizzare Adobe Client Data Layer basato su eventi per [tenere traccia dei clic di componenti specifici su un sito Adobe Experience Manager](track-clicked-component.md).
+Consulta il seguente tutorial per scoprire come utilizzare Adobe Client Data Layer basato sugli eventi per [tenere traccia dei clic di componenti specifici su un sito Adobe Experience Manager](track-clicked-component.md).

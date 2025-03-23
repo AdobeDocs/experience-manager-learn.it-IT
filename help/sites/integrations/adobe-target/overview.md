@@ -2,7 +2,7 @@
 title: Integrare AEM Sites e Adobe Target
 description: Scopri come integrare AEM Sites e Adobe Target per offrire esperienze personalizzate.
 feature: Experience Fragments, Core Components, Adobe Client Data Layer
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-6043
 thumbnail: 41241.jpg
 topic: Integrations, Personalization
@@ -13,7 +13,7 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: 2bc6cd90-7b23-4dde-bb07-bca0de9fa509
 duration: 262
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -32,22 +32,22 @@ Adobe Experience Manager (AEM) e Adobe Target sono soluzioni potenti con funzion
 
 Questo video illustra tre approcci per l’utilizzo di AEM e Target e spiega cosa funziona meglio per la tua organizzazione.
 
-* __Scenario 1:__ Personalization utilizzando le offerte dei frammenti di esperienza AEM
+* __Scenario 1:__ Personalization con offerte basate su frammenti di esperienza AEM
 
-   1. [Aggiungere Adobe Target al sito Web AEM](./add-target-launch-extension.md)
+   1. [Aggiungere Adobe Target al sito web AEM](./add-target-launch-extension.md)
    1. [Attivare una chiamata Adobe Target dai tag](./load-and-fire-target.md)
    1. [Integrare il servizio AEM Author con Adobe Target](./setup-aem-target-cloud-service.md)
-   1. [Esportare i frammenti esperienza AEM in Adobe Target](./export-experience-fragment-target.md)
+   1. [Esportare frammenti esperienza AEM in Adobe Target](./export-experience-fragment-target.md)
    1. [Personalizzare parte di una pagina web utilizzando le offerte dei frammenti di esperienza](./create-target-activity.md)
 
 * __Scenario 2:__ Personalization con Compositore esperienza visivo
 
-   1. [Aggiungere Adobe Target al sito Web AEM](./add-target-launch-extension.md)
+   1. [Aggiungere Adobe Target al sito web AEM](./add-target-launch-extension.md)
    1. [Attivare una chiamata Adobe Target dai tag](./load-and-fire-target.md)
    1. [Personalizzare parte di una pagina web utilizzando il Compositore esperienza visivo](./personalization-using-vec.md)
 
 * __Scenario 3:__ Personalization di esperienze di pagine Web complete
 
-   1. [Aggiungere Adobe Target al sito Web AEM](./add-target-launch-extension.md)
+   1. [Aggiungere Adobe Target al sito web AEM](./add-target-launch-extension.md)
    1. [Attivare una chiamata Adobe Target dai tag](./load-and-fire-target.md)
    1. [Personalizzare l’esperienza dell’intera pagina web](./personalization-web-page.md)

@@ -2,7 +2,7 @@
 title: Archivia invio modulo in Azure Storage
 description: Archiviare i dati del modulo in Azure Storage tramite API REST
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -10,7 +10,7 @@ last-substantial-update: 2023-08-14T00:00:00Z
 jira: KT-13781
 exl-id: 2bec5953-2e0c-4ae6-ae98-34492d4cfbe4
 duration: 143
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 0%
@@ -55,10 +55,10 @@ Verificare che / sia presente alla fine dell&#39;URI di archiviazione e che il t
 
 ## Crea richiesta PUT
 
-Il passaggio successivo consiste nel creare una richiesta PUT per memorizzare i dati del modulo inviati nell’archiviazione di Azure. Ogni invio di moduli deve essere identificato da un ID BLOB univoco. L’ID BLOB univoco viene in genere creato nel codice e inserito nell’URL della richiesta PUT.
+Il passaggio successivo consiste nel creare una richiesta PUT per archiviare i dati del modulo inviati nell’archiviazione di Azure. Ogni invio di moduli deve essere identificato da un ID BLOB univoco. L’ID BLOB univoco viene in genere creato nel codice e inserito nell’URL della richiesta PUT.
 Di seguito è riportato l’URL parziale della richiesta PUT. `aemformstutorial` è il nome dell&#39;account di archiviazione, formsubmissions è il contenitore in cui verranno archiviati i dati con ID BLOB univoco. Il resto dell’URL rimarrà invariato.
 https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken
-Di seguito è riportata una funzione scritta per memorizzare i dati del modulo inviato nell’archiviazione di Azure utilizzando una richiesta PUT. Osserva l’utilizzo del nome del contenitore e dell’UUID nell’URL. Puoi creare un servizio OSGi o un servlet Sling utilizzando il codice di esempio elencato di seguito e archiviare gli invii dei moduli nell’archiviazione di Azure.
+Di seguito è riportata una funzione scritta per memorizzare i dati del modulo inviati nell’archiviazione di Azure utilizzando una richiesta PUT. Osserva l’utilizzo del nome del contenitore e dell’UUID nell’URL. Puoi creare un servizio OSGi o un servlet Sling utilizzando il codice di esempio elencato di seguito e archiviare gli invii dei moduli nell’archiviazione di Azure.
 
 ```java
  public String saveFormDatainAzure(String formData) {

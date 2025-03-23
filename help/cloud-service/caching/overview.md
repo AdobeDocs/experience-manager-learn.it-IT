@@ -1,7 +1,7 @@
 ---
 title: caching di AEM as a Cloud Service
 description: Panoramica generale sul caching di AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Dispatcher, Developer Tools
 topic: Performance
 role: Architect, Developer
@@ -12,7 +12,7 @@ jira: KT-13858
 thumbnail: KT-13858.jpeg
 exl-id: e76ed4c5-3220-4274-a315-a75e549f8b40
 duration: 36
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
@@ -27,9 +27,9 @@ AEM as a Cloud Service dispone di più livelli di caching e strategie che differ
 
 ![Panoramica sulla memorizzazione nella cache di AEM as a Cloud Service](./assets/overview/all.png){align="center"}
 
-## Memorizzazione in cache AEM
+## caching di AEM
 
-AEM as a Cloud Service dispone di una solida strategia di caching a più livelli configurabile, che include una rete CDN, un Dispatcher AEM e, facoltativamente, una rete CDN gestita dal cliente. La memorizzazione nella cache tra i livelli può essere ottimizzata per ottimizzare le prestazioni, garantendo che l’AEM offra solo le migliori esperienze. AEM ha diversi problemi di caching per i servizi Author e Publish. Esplora le strategie di caching per ciascun servizio di seguito.
+AEM as a Cloud Service dispone di una solida strategia di caching a più livelli configurabile, che include una rete CDN, AEM Dispatcher e, facoltativamente, una rete CDN gestita dal cliente. La memorizzazione nella cache tra i livelli può essere ottimizzata per ottimizzare le prestazioni, garantendo in tal modo che AEM fornisca solo le migliori esperienze. AEM presenta diversi problemi di caching per i servizi Author e Publish. Esplora le strategie di caching per ciascun servizio di seguito.
 
 
 <div class="columns is-multiline" style="margin-top: 2rem">
@@ -37,15 +37,15 @@ AEM as a Cloud Service dispone di una solida strategia di caching a più livelli
     <div class="card is-padded-small is-padded-big-mobile" style="height: 100%">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./publish.md" title="Servizio Publish AEM" tabindex="-1">
-              <img class="is-bordered-r-small" src="./assets/overview/publish-card.png" alt="Memorizzazione in cache del servizio Publish AEM">
+            <a href="./publish.md" title="Servizio di pubblicazione AEM" tabindex="-1">
+              <img class="is-bordered-r-small" src="./assets/overview/publish-card.png" alt="Memorizzazione in cache del servizio di pubblicazione AEM">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
-            <p class="headline is-size-6 has-text-weight-bold"><a href="./publish.md" title="Memorizzazione in cache del servizio Publish AEM">Memorizzazione in cache del servizio Publish AEM</a></p>
-            <p class="is-size-6">Il servizio Publish AEM utilizza una rete CDN gestita e un Dispatcher AEM per ottimizzare le esperienze web degli utenti finali.</p>
+            <p class="headline is-size-6 has-text-weight-bold"><a href="./publish.md" title="Memorizzazione in cache del servizio di pubblicazione AEM">Memorizzazione in cache del servizio di pubblicazione AEM</a></p>
+            <p class="is-size-6">Il servizio di pubblicazione di AEM utilizza una rete CDN gestita e AEM Dispatcher per ottimizzare le esperienze web degli utenti finali.</p>
             <a href="./publish.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
               <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri</span>
             </a>
@@ -57,15 +57,15 @@ AEM as a Cloud Service dispone di una solida strategia di caching a più livelli
         <div class="card is-padded-small is-padded-big-mobile" style="height: 100%">
             <div class="card-image">
             <figure class="image is-16by9">
-                <a href="./author.md" title="Memorizzazione in cache del servizio di authoring AEM" tabindex="-1">
-                <img class="is-bordered-r-small" src="./assets/overview/author-card.png" alt="Memorizzazione in cache del servizio di authoring AEM">
+                <a href="./author.md" title="Memorizzazione in cache del servizio AEM Author" tabindex="-1">
+                <img class="is-bordered-r-small" src="./assets/overview/author-card.png" alt="Memorizzazione in cache del servizio AEM Author">
                 </a>
             </figure>
             </div>
             <div class="card-content is-padded-small">
             <div class="content">
-                <p class="headline is-size-6 has-text-weight-bold"><a href="./author.md" title="Memorizzazione in cache del servizio di authoring AEM">Memorizzazione in cache del servizio di authoring AEM</a></p>
-                <p class="is-size-6">Il servizio di authoring AEM utilizza una rete CDN gestita per fornire esperienze di authoring ottimizzate.</p>
+                <p class="headline is-size-6 has-text-weight-bold"><a href="./author.md" title="Memorizzazione in cache del servizio AEM Author">Memorizzazione in cache del servizio AEM Author</a></p>
+                <p class="is-size-6">Il servizio Author di AEM utilizza una rete CDN gestita per fornire esperienze di authoring ottimizzate.</p>
                 <a href="./author.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Scopri</span>
                 </a>

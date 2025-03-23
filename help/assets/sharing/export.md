@@ -2,7 +2,7 @@
 title: Esportare le risorse
 description: Scopri come esportare e scaricare in blocco le risorse nel computer locale.
 feature: Asset Management
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 role: Developer
 level: Experienced
@@ -12,7 +12,7 @@ jira: KT-15313
 thumbnail: KT-15313.jpeg
 exl-id: d04c3316-6f8f-4fd1-9df1-3fe09d44f735
 duration: 256
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 Scopri come esportare le risorse nel computer locale utilizzando uno script Node.js personalizzabile. Questo script di esportazione fornisce un esempio di come scaricare in modo programmatico le risorse da AEM utilizzando [API HTTP di AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), concentrandosi in particolare sulle rappresentazioni originali per garantire la massima qualità. È progettato per replicare la struttura di cartelle di AEM Assets sull&#39;unità locale, semplificando il backup o la migrazione delle risorse.
 
-Lo script scarica solo le rappresentazioni originali della risorsa, senza metadati associati, a meno che tali metadati non siano stati incorporati nella risorsa come XMP. Ciò significa che eventuali informazioni descrittive, categorizzazioni o tag memorizzati nell’AEM ma non integrati nei file delle risorse non vengono inclusi nel download. È possibile scaricare anche altre rappresentazioni modificando lo script in modo da includerle. Assicurati di disporre di spazio sufficiente per archiviare le risorse esportate.
+Lo script scarica solo le rappresentazioni originali della risorsa, senza metadati associati, a meno che tali metadati non siano stati incorporati nella risorsa come XMP. Ciò significa che eventuali informazioni descrittive, categorizzazioni o tag memorizzati in AEM ma non integrati nei file delle risorse non saranno inclusi nel download. È possibile scaricare anche altre rappresentazioni modificando lo script in modo da includerle. Assicurati di disporre di spazio sufficiente per archiviare le risorse esportate.
 
 Lo script viene in genere eseguito con AEM Author, ma può essere eseguito anche con AEM Publish, purché gli endpoint API HTTP di AEM Assets e le rappresentazioni delle risorse siano accessibili tramite Dispatcher.
 
-Prima di eseguire lo script è necessario configurarlo con l’URL dell’istanza AEM, le credenziali utente (token di accesso) e il percorso della cartella da esportare.
+Prima di eseguire lo script è necessario configurarlo con l’URL dell’istanza di AEM, le credenziali utente (token di accesso) e il percorso della cartella da esportare.
 
 ## Esporta script
 
@@ -294,6 +294,6 @@ Downloaded asset: exported-assets/wknd-shared/en/magazine/western-australia/adob
 Download AEM assets: 24.770s
 ```
 
-Le risorse esportate si trovano nella cartella locale specificata nella configurazione `LOCAL_DOWNLOAD_FOLDER`. La struttura di cartelle rispecchia la struttura di cartelle di AEM Assets, con le risorse scaricate nelle sottocartelle appropriate. Questi file possono essere caricati in [provider di archiviazione cloud supportati](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view), per [importazione in blocco](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/bulk-import) in altre istanze AEM o per scopi di backup.
+Le risorse esportate si trovano nella cartella locale specificata nella configurazione `LOCAL_DOWNLOAD_FOLDER`. La struttura di cartelle rispecchia la struttura di cartelle di AEM Assets, con le risorse scaricate nelle sottocartelle appropriate. Questi file possono essere caricati in [provider di archiviazione cloud supportati](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view), per [importazione in massa](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/bulk-import) in altre istanze di AEM o per scopi di backup.
 
 ![Risorse esportate](./assets/export/exported-assets.png)

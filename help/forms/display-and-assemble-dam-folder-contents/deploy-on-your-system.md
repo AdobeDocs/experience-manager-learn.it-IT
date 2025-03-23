@@ -1,15 +1,15 @@
 ---
 title: Distribuire le risorse localmente
-description: Distribuire le risorse del tutorial sull’istanza AEM locale
+description: Distribuire le risorse dei tutorial nell’istanza AEM locale
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2023-01-04T00:00:00Z
 exl-id: d23b51ba-1efb-4505-b5b3-44a02177e467
 duration: 27
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Implementare sul sistema
 
-Segui i passaggi elencati di seguito per far sì che questo caso d’uso funzioni sull’istanza AEM locale.
+Per utilizzare questo caso d’uso nell’istanza AEM locale, segui i passaggi elencati di seguito.
 
 * [Distribuisci il bundle DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip) contenuto nel file zip.
 

@@ -2,14 +2,14 @@
 title: Modelli di flusso di lavoro AEM Forms riutilizzabili
 description: Scopri come creare modelli di flusso di lavoro indipendenti da Adaptive Forms.
 feature: Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 3354a58b-d58e-4ddb-8f90-648554a64db8
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 58
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -22,7 +22,7 @@ A partire dalla versione 6.5 di AEM Forms, ora è possibile creare modelli di fl
 
 Per progettare tale flusso di lavoro, esegui i seguenti passaggi
 
-1. Accedere a AEM
+1. Accedere ad AEM
 1. Puntare il browser al [modello flusso di lavoro](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
 1. Fai clic su __Crea > Crea modello__ per aggiungere un modello di flusso di lavoro
 1. Specifica il nome e il titolo appropriati per il modello di flusso di lavoro, quindi fai clic su Fine

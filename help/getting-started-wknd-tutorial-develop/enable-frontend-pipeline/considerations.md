@@ -1,7 +1,7 @@
 ---
 title: Considerazioni sullo sviluppo
 description: Considera l’impatto sul processo di sviluppo front-end e back-end una volta abilitata la pipeline front-end.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: a3b27d5b-b167-4c60-af49-8f2e8d814c86
 duration: 79
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
@@ -37,9 +37,9 @@ Dopo aver abilitato la pipeline front-end per distribuire solo le risorse front-
 
 ## Approccio di sviluppo adattato
 
-* Per lo sviluppo locale che utilizza l’SDK dell’AEM, il team di sviluppo back-end ha ancora bisogno della generazione clientlib tramite il modulo `ui.frontend`, ma durante l’implementazione di Cloud Manager nell’ambiente AEM as a Cloud Service devi saltarla. Questo rende difficile isolare le modifiche di configurazione del progetto descritte nel capitolo [Aggiorna progetto](update-project.md).
+* Per lo sviluppo locale con AEM SDK, il team di sviluppo back-end ha ancora bisogno della generazione clientlib tramite il modulo `ui.frontend`, ma durante la distribuzione di Cloud Manager nell’ambiente AEM as a Cloud Service devi saltarla. Questo rende difficile isolare le modifiche di configurazione del progetto descritte nel capitolo [Aggiorna progetto](update-project.md).
 
-Una __soluzione__ potrebbe essere quella di regolare il modello di diramazione Git e di assicurarsi che le modifiche alla configurazione del progetto AEM non rifluiscano mai nel ramo di __sviluppo locale__ utilizzato dagli sviluppatori back-end AEM.
+Una __soluzione__ potrebbe essere quella di regolare il modello di diramazione Git e di assicurarsi che le modifiche alla configurazione del progetto AEM non tornino mai al ramo di __sviluppo locale__ utilizzato dagli sviluppatori back-end di AEM.
 
 
 * Come parte di un miglioramento continuo del progetto AEM, se introduci nuovi componenti o aggiorni un componente esistente con modifiche sia nel modulo `ui.app` che nel modulo `ui.frontend`, devi eseguire entrambe le pipeline full stack e front-end.

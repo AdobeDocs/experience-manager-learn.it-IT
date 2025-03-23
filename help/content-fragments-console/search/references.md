@@ -1,7 +1,7 @@
 ---
 title: Riferimenti - Frammenti di contenuto
-description: Scopri come la console e l’editor dei frammenti di contenuto dell’AEM semplificano la gestione dei contenuti di riferimento.
-version: Cloud Service
+description: Scopri in che modo la console e l’editor dei frammenti di contenuto di AEM semplificano la gestione dei contenuti di riferimento.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments
 topic: Content Management
 role: Data Architect, User
@@ -12,7 +12,7 @@ jira: KT-13556
 thumbnail: 3420950.jpeg
 exl-id: 5af2456b-5255-40b3-a6a5-b953c8d76fc9
 duration: 174
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 2%
@@ -21,6 +21,6 @@ ht-degree: 2%
 
 # Riferimenti
 
-Scopri come la console e l’editor dei frammenti di contenuto dell’AEM semplificano la comprensione e la gestione dei contenuti di riferimento.
+Scopri in che modo la console e l’editor dei frammenti di contenuto di AEM semplificano la comprensione e la gestione dei contenuti di riferimento.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420950/?learn=on)

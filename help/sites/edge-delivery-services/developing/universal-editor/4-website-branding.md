@@ -1,7 +1,7 @@
 ---
 title: Aggiungere il marchio del sito Web
 description: Definisci le variabili CSS, CSS e i font Web globali per un sito Edge Delivery Services.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: a5cd9906-7e7a-43dd-a6b2-e80f67d37992
-source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 0%
@@ -96,7 +96,7 @@ Quando sviluppi un sito web e ti ritrovi a ripetere gli stessi valori CSS, puoi 
 
 Gli elementi nudi sono formattati direttamente tramite il nome del loro elemento invece di utilizzare una classe CSS. Ad esempio, anziché applicare lo stile a una classe CSS `.page-heading`, gli stili vengono applicati all&#39;elemento `h1` utilizzando `h1 { ... }`.
 
-Nel file `styles/styles.css`, un set di stili di base viene applicato agli elementi bare HTML. I siti web di Edge Delivery Services assegnano la priorità utilizzando gli elementi nudi perché sono allineati con il HTML semantico nativo del servizio Edge Delivery.
+Nel file `styles/styles.css`, un set di stili di base viene applicato agli elementi HTML nudi. I siti web di Edge Delivery Services danno la priorità all’utilizzo di elementi nudi perché si allineano con la HTML semantica nativa del servizio Edge Delivery.
 
 Per allinearsi al branding WKND, diamo uno stile ad alcuni elementi nudi in `styles.css`:
 
@@ -123,11 +123,11 @@ Questi stili garantiscono che `h2` elementi, a meno che non vengano sostituiti, 
 
 ### Elementi dedotti
 
-In Edge Delivery Services, il codice `scripts.js` e `aem.js` del progetto ottimizza automaticamente elementi bare HTML specifici in base al loro contesto all&#39;interno del HTML.
+In Edge Delivery Services, il codice `scripts.js` e `aem.js` del progetto ottimizza automaticamente elementi HTML bare specifici in base al loro contesto all&#39;interno di HTML.
 
 Ad esempio, gli elementi di ancoraggio (`<a>`) creati sulla propria riga, anziché in linea con il testo circostante, sono considerati pulsanti basati su questo contesto. Questi ancoraggi vengono racchiusi automaticamente in un contenitore `div` con classe CSS `button-container` e all&#39;elemento di ancoraggio viene aggiunta una classe CSS `button`.
 
-Ad esempio, quando un collegamento viene creato su una propria riga, Edge Delivery Services JavaScript aggiorna il DOM come segue:
+Ad esempio, quando un collegamento viene creato sulla propria riga, Edge Delivery Services JavaScript aggiorna il DOM come segue:
 
 ```html
 <p class="button-container">
@@ -174,7 +174,7 @@ Questo CSS definisce gli stili dei pulsanti di base e include trattamenti specif
 
 ## Font web
 
-I progetti di Edge Delivery Services ottimizzano l’uso dei font per web al fine di mantenere prestazioni elevate e ridurre al minimo l’impatto sui punteggi di Lighthouse. Questo metodo assicura un rendering rapido senza compromettere l’identità visiva del sito. Ecco come implementare i font web in modo efficiente per ottenere prestazioni ottimali.
+I progetti Edge Delivery Services ottimizzano l’uso dei font per web al fine di mantenere prestazioni elevate e ridurre al minimo l’impatto sui punteggi di Lighthouse. Questo metodo assicura un rendering rapido senza compromettere l’identità visiva del sito. Ecco come implementare i font web in modo efficiente per ottenere prestazioni ottimali.
 
 ### Facce font
 
@@ -289,13 +289,13 @@ Infine, aggiorna le variabili CSS `styles/styles.css` per utilizzare i nuovi fon
 
 ### Font di fallback
 
-I font web spesso influiscono sulle prestazioni a causa delle loro dimensioni, aumentando potenzialmente i punteggi CLS (Cumulative Layout Shift) e riducendo i punteggi complessivi di Lighthouse. Per garantire la visualizzazione immediata del testo durante il caricamento dei font Web, i progetti di Edge Delivery Services utilizzano font di fallback nativi per il browser. Questo approccio consente di mantenere un’esperienza utente fluida mentre viene applicato il font desiderato.
+I font web spesso influiscono sulle prestazioni a causa delle loro dimensioni, aumentando potenzialmente i punteggi CLS (Cumulative Layout Shift) e riducendo i punteggi complessivi di Lighthouse. Per garantire la visualizzazione immediata del testo durante il caricamento dei caratteri Web, nei progetti Edge Delivery Services vengono utilizzati caratteri di fallback nativi per il browser. Questo approccio consente di mantenere un’esperienza utente fluida mentre viene applicato il font desiderato.
 
 Per selezionare il tipo di carattere di fallback ottimale, utilizzare l&#39;estensione di Adobe [Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), che determina un tipo di carattere strettamente corrispondente per i browser da utilizzare prima del caricamento del tipo di carattere personalizzato. Le dichiarazioni font di fallback risultanti devono essere aggiunte al file `styles/styles.css` per migliorare le prestazioni e garantire un&#39;esperienza fluida per gli utenti.
 
 Estensione ![Helix Font Fallback Chrome](./assets/4-website-branding/font-fallback-chrome-plugin.png){align=center}
 
-Per utilizzare l&#39;estensione [Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), verificare che alla pagina Web siano applicati i tipi di carattere Web nelle stesse varianti utilizzate nel sito Web dei Edge Delivery Services. Questa esercitazione illustra l&#39;estensione in [wknd.site](http://wknd.site/us/en.html). Durante lo sviluppo di un sito Web, applicare l&#39;estensione al sito su cui si sta lavorando anziché a [wknd.site](http://wknd.site/us/en.html).
+Per utilizzare l&#39;estensione [Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), verificare che alla pagina Web siano applicati i tipi di carattere Web nelle stesse varianti utilizzate nel sito Web Edge Delivery Services. Questa esercitazione illustra l&#39;estensione in [wknd.site](http://wknd.site/us/en.html). Durante lo sviluppo di un sito Web, applicare l&#39;estensione al sito su cui si sta lavorando anziché a [wknd.site](http://wknd.site/us/en.html).
 
 ```css
 /* styles/styles.css */
@@ -336,7 +336,7 @@ Aggiungere i nomi delle famiglie di font di fallback alle variabili CSS font in 
 
 ## Anteprima di sviluppo
 
-Quando si aggiunge un file CSS, l’ambiente di sviluppo locale della CLI dell’AEM ricarica automaticamente le modifiche, rendendo più rapido e semplice vedere in che modo il file CSS influisce sul blocco.
+Quando si aggiunge un file CSS, l’ambiente di sviluppo locale di AEM CLI ricarica automaticamente le modifiche, rendendo più rapido e semplice vedere in che modo il file CSS influisce sul blocco.
 
 ![Anteprima di sviluppo del marchio WKND CSS](./assets/4-website-branding/preview.png)
 
@@ -388,7 +388,7 @@ Dopo il push delle modifiche al ramo `wknd-styles`, crea una richiesta pull su G
    * Gli URL di test indicano a AEM Code Sync quali rami utilizzare per la convalida e il confronto. L&#39;URL &quot;After&quot; (Dopo) utilizza il ramo di lavoro `wknd-styles` per verificare in che modo le modifiche al codice influiscono sulle prestazioni del sito Web.
 
 6. Fai clic su **Crea richiesta di pull**.
-7. Attendi che l&#39;app GitHub ](./1-new-code-project.md) per la sincronizzazione del codice AEM [completi i controlli di qualità&#x200B;**.** In caso contrario, risolvere gli errori ed eseguire nuovamente i controlli.
+7. Attendi che l&#39;app GitHub ](./1-new-code-project.md) per la sincronizzazione del codice di AEM [ sia **completa per i controlli di qualità**. In caso contrario, risolvere gli errori ed eseguire nuovamente i controlli.
 8. Al termine dei controlli, **unisci la richiesta di pull** in `main`.
 
 Le modifiche unite in `main` non vengono considerate distribuite in produzione e il nuovo sviluppo può procedere in base a questi aggiornamenti.

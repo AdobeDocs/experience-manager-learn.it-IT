@@ -1,16 +1,16 @@
 ---
 title: Configurazione di IntelliJ con lo strumento Repo
-description: Preparare IntelliJ per la sincronizzazione con l'istanza AEM cloud ready
+description: Preparare IntelliJ per la sincronizzazione con l'istanza di AEM Cloud Ready
 solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 jira: KT-8844
 exl-id: 9a7ed792-ca0d-458f-b8dd-9129aba37df6
 duration: 92
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
@@ -71,22 +71,22 @@ Apri il file .gitignore e aggiungi quanto segue nella parte inferiore del file e
 
 Seleziona qualsiasi progetto all’interno del progetto aem-banking-application, ad esempio ui.content e fai clic con il pulsante destro del mouse; dovresti vedere l’opzione archivio e sotto l’opzione archivio visualizzerai i 4 comandi aggiunti in precedenza.
 
-## Configura istanza autore AEM{#set-up-aem-author-instance}
+## Configura istanza di authoring di AEM{#set-up-aem-author-instance}
 
 Per configurare rapidamente l’istanza Cloud Ready sul sistema locale, segui i passaggi seguenti.
-* [Scarica l&#39;SDK AEM più recente](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html)
+* [Scarica la versione più recente di AEM SDK](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html)
 
 * [Scarica il più recente componente aggiuntivo di AEM Forms](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html)
 
 * Crea la seguente struttura di cartelle
 c:\aemformscs\aem-sdk\author
 
-* Estrai il file aem-sdk-quickstart-xxxxxxx.jar dal file zip dell’SDK dell’AEM e inseriscilo nella cartella c:\aemformscs\aem-sdk\author.Rinomina il file jar in aem-author-p4502.jar
+* Estrai il file aem-sdk-quickstart-xxxxxxx.jar dal file zip SDK di AEM e inseriscilo nella cartella c:\aemformscs\aem-sdk\author.Rinomina il file jar in aem-author-p4502.jar
 
 * Apri il prompt dei comandi e passa a c:\aemformscs\aem-sdk\author
-immetti il seguente comando java -jar aem-author-p4502.jar -gui. In questo modo verrà avviata l’installazione dell’AEM.
+immetti il seguente comando java -jar aem-author-p4502.jar -gui. Verrà avviata l’installazione di AEM.
 * Accedi con le credenziali di amministratore/amministratore
-* Interrompere l’istanza AEM
+* Arresta l’istanza di AEM
 * Crea la seguente struttura di cartelle.C:\aemformscs\aem-sdk\author\crx-quickstart\install
 * Copia aem-forms-addon-xxxxxx.far nella cartella di installazione
 * Apri il prompt dei comandi e passa a c:\aemformscs\aem-sdk\author
@@ -94,4 +94,4 @@ immetti il seguente comando java -jar aem-author-p4502.jar -gui. Questo distribu
 
 ## Passaggi successivi
 
-[Sincronizzare i moduli e i modelli AEM con il progetto AEM](./deploy-your-first-form.md)
+[Sincronizzare i moduli e i modelli di AEM con il progetto AEM](./deploy-your-first-form.md)

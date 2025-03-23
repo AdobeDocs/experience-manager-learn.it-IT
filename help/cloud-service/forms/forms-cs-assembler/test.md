@@ -4,12 +4,12 @@ description: Eseguire ExecuteAssemblerService.java per testare la soluzione
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 exl-id: 5139aa84-58d5-40e3-936a-0505bd407ee8
 duration: 55
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ![file-risorse](./assets/resources.png)
 
-## Test dei file PDF di assemblaggio
+## Prova ad assemblare i file PDF
 
 * Copia e incolla le credenziali del servizio nel file di risorse service_token.json nel progetto.
 * Aprire il file AssemblePDFFiles.java e specificare la cartella in cui si desidera salvare i file PDF generati
@@ -38,7 +38,7 @@ ht-degree: 0%
 ### Test delle utilità PDFA
 
 * Copia e incolla le credenziali del servizio nel file di risorse service_token.json nel progetto.
-* Aprire il file PDFAUtilities.java e specificare la cartella in cui si desidera salvare i file PDF generati.
+* Aprire il file PDFAUtilities.java e specificare la cartella in cui salvare i file PDF generati.
 * Aprire ExecuteAssemblerService.java. Imposta il valore della variabile _AEM_FORMS_CS_ per puntare all&#39;istanza.
 * Rimuovi il commento dalle righe appropriate per testare le operazioni PDFA.
 * Eseguire ExecuteAssemblerService.java come applicazione Java.

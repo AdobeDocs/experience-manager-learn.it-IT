@@ -1,23 +1,23 @@
 ---
-title: Esplora l’API GraphQL dell’AEM - Concetti avanzati di AEM Headless - GraphQL
+title: Esplora l’API GraphQL di AEM - Concetti avanzati di AEM Headless - GraphQL
 description: Invia query GraphQL tramite IDE GraphiQL. Scopri le query avanzate utilizzando filtri, variabili e direttive. Eseguire una query per i riferimenti a frammenti e contenuti, inclusi i riferimenti da campi di testo su più righe.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: bd7916be-8caa-4321-add0-4c9031306d60
 duration: 438
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1307'
 ht-degree: 0%
 
 ---
 
-# Esplorare l’API GraphQL dell’AEM
+# Esplorare l’API GraphQL di AEM
 
-L’API GraphQL nell’AEM consente di esporre i dati dei frammenti di contenuto alle applicazioni a valle. Nell&#39;esercitazione di base [esercitazione di GraphQL in più passaggi](../multi-step/explore-graphql-api.md), hai utilizzato GraphiQL Explorer per testare e perfezionare le query GraphQL.
+L’API GraphQL in AEM consente di esporre i dati dei frammenti di contenuto alle applicazioni a valle. Nell&#39;esercitazione di base [esercitazione di GraphQL in più passaggi](../multi-step/explore-graphql-api.md), hai utilizzato GraphiQL Explorer per testare e perfezionare le query GraphQL.
 
 In questo capitolo, puoi utilizzare GraphiQL Explorer per definire query più avanzate per raccogliere i dati dei frammenti di contenuto creati nel [capitolo precedente](../advanced-graphql/author-content-fragments.md).
 
@@ -40,15 +40,15 @@ In questo capitolo imparerai a:
 
 Lo strumento [GraphiQL Explorer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) consente agli sviluppatori di creare e testare query sul contenuto nell&#39;ambiente AEM corrente. Lo strumento GraphiQL consente inoltre agli utenti di **salvare o mantenere** le query da utilizzare dalle applicazioni client in un&#39;impostazione di produzione.
 
-Quindi, esplora la potenza dell’API GraphQL dell’AEM utilizzando l’Explorer GraphiQL integrato.
+Quindi, esplora la potenza dell’API GraphQL di AEM utilizzando GraphiQL Explorer incorporato.
 
-1. Dalla schermata iniziale AEM, passa a **Strumenti** > **Generale** > **Editor query GraphQL**.
+1. Dalla schermata iniziale di AEM, passa a **Strumenti** > **Generale** > **Editor query GraphQL**.
 
    ![Passa a IDE GraphiQL](assets/explore-graphql-api/navigate-graphql-query-editor.png)
 
 >[!IMPORTANT]
 >
->In, alcune versioni di AEM (6.X.X) lo strumento GraphiQL Explorer (o IDE GraphiQL) devono essere installate manualmente, segui [le istruzioni da qui](../how-to/install-graphiql-aem-6-5.md).
+>In, alcune versioni di AEM (6.X.X) con lo strumento GraphiQL Explorer (o IDE GraphiQL) devono essere installate manualmente, segui [le istruzioni qui](../how-to/install-graphiql-aem-6-5.md).
 
 1. Nell&#39;angolo in alto a destra, accertarsi che l&#39;endpoint sia impostato su **Endpoint condiviso WKND**. Se si modifica il valore dell&#39;elenco a discesa _Endpoint_, nell&#39;angolo in alto a sinistra verranno visualizzate le _query persistenti_ esistenti.
 
@@ -61,7 +61,7 @@ Tutte le query verranno estese ai modelli creati nel progetto **WKND Shared**.
 
 Nell&#39;[esercitazione di GraphQL in più passaggi](../multi-step/explore-graphql-api.md) precedente hai definito e utilizzato query persistenti di base per ottenere i dati dei frammenti di contenuto. In questo caso, espandi questa conoscenza e filtra i dati dei frammenti di contenuto passando le variabili alle query persistenti.
 
-Durante lo sviluppo di applicazioni client, in genere è necessario filtrare i frammenti di contenuto in base a argomenti dinamici. L’API GraphQL dell’AEM consente di trasmettere questi argomenti come variabili in una query per evitare la costruzione di stringhe sul lato client in fase di esecuzione. Per ulteriori informazioni sulle variabili di GraphQL, consulta la [documentazione di GraphQL](https://graphql.org/learn/queries/#variables).
+Durante lo sviluppo di applicazioni client, in genere è necessario filtrare i frammenti di contenuto in base a argomenti dinamici. L’API GraphQL di AEM consente di trasmettere questi argomenti come variabili in una query per evitare la costruzione di stringhe sul lato client in fase di esecuzione. Per ulteriori informazioni sulle variabili di GraphQL, consulta la [documentazione di GraphQL](https://graphql.org/learn/queries/#variables).
 
 Per questo esempio, esegui una query su tutti gli Istruttori con una particolare abilità.
 
@@ -151,7 +151,7 @@ Premi il pulsante **Riproduci** nel menu principale per eseguire la query. Dovre
 
 ## Filtrare il contenuto all’interno di un riferimento a un frammento
 
-L’API GraphQL dell’AEM consente di eseguire query sui frammenti di contenuto nidificati. Nel capitolo precedente sono stati aggiunti tre nuovi riferimenti di frammento a un frammento di contenuto Adventure: `location`, `instructorTeam` e `administrator`. Ora, filtriamo tutte le avventure per qualsiasi amministratore che ha un nome specifico.
+L’API GraphQL di AEM consente di eseguire query sui frammenti di contenuto nidificati. Nel capitolo precedente sono stati aggiunti tre nuovi riferimenti di frammento a un frammento di contenuto Adventure: `location`, `instructorTeam` e `administrator`. Ora, filtriamo tutte le avventure per qualsiasi amministratore che ha un nome specifico.
 
 >[!CAUTION]
 >
@@ -230,7 +230,7 @@ L’API GraphQL dell’AEM consente di eseguire query sui frammenti di contenuto
 
 ## Eseguire una query per i riferimenti in linea da un campo di testo su più righe {#query-rte-reference}
 
-L’API GraphQL dell’AEM consente di eseguire query per contenuti e riferimenti a frammenti all’interno di campi di testo su più righe. Nel capitolo precedente, hai aggiunto entrambi i tipi di riferimento nel campo **Descrizione** del frammento di contenuto del team di Yosemite. Ora, recuperiamo questi riferimenti.
+L’API GraphQL di AEM consente di eseguire query per contenuti e riferimenti a frammenti all’interno di campi di testo su più righe. Nel capitolo precedente, hai aggiunto entrambi i tipi di riferimento nel campo **Descrizione** del frammento di contenuto del team di Yosemite. Ora, recuperiamo questi riferimenti.
 
 1. Nell’IDE GraphiQL, incolla la seguente query nel pannello a sinistra:
 
@@ -349,7 +349,7 @@ L’API GraphQL dell’AEM consente di eseguire query per contenuti e riferiment
 
 ## Eseguire query tramite direttive
 
-A volte, durante lo sviluppo di applicazioni client, è necessario modificare la struttura delle query in modo condizionale. In questo caso, l’API GraphQL dell’AEM consente di utilizzare le direttive GraphQL per modificare il comportamento delle query in base ai criteri forniti. Per ulteriori informazioni sulle direttive di GraphQL, consulta la [documentazione di GraphQL](https://graphql.org/learn/queries/#directives).
+A volte, durante lo sviluppo di applicazioni client, è necessario modificare la struttura delle query in modo condizionale. In questo caso, l’API GraphQL di AEM consente di utilizzare le direttive GraphQL per modificare il comportamento delle query in base ai criteri forniti. Per ulteriori informazioni sulle direttive di GraphQL, consulta la [documentazione di GraphQL](https://graphql.org/learn/queries/#directives).
 
 Nella [sezione precedente](#query-rte-reference), hai imparato a eseguire query per riferimenti in linea all&#39;interno di campi di testo su più righe. Il contenuto è stato recuperato dal campo `description` nel formato `plaintext`. Quindi, espandiamo la query e utilizziamo una direttiva per recuperare `description` in modo condizionale anche nel formato `json`.
 
@@ -603,7 +603,7 @@ Ricorda che nel capitolo precedente sull’authoring dei frammenti di contenuto,
 
 ## Esegui query per tutto il contenuto contemporaneamente
 
-Finora sono state eseguite più query per illustrare le funzionalità dell’API GraphQL dell’AEM.
+Finora sono state eseguite più query per illustrare le funzionalità dell’API GraphQL di AEM.
 
 Gli stessi dati possono essere recuperati con una sola query, che in seguito viene utilizzata nell’applicazione client per recuperare informazioni aggiuntive come posizione, nome del team e membri del team di un’avventura:
 

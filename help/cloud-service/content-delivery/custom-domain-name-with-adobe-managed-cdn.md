@@ -1,7 +1,7 @@
 ---
-title: Nome di dominio personalizzato con rete CDN gestita Adobe
-description: Scopri come implementare un nome di dominio personalizzato nel sito web di AEM as a Cloud Service che utilizza un Adobe di CDN gestito.
-version: Cloud Service
+title: Nome di dominio personalizzato con CDN gestito da Adobe
+description: Scopri come implementare un nome di dominio personalizzato nel sito web di AEM as a Cloud Service che utilizza una rete CDN gestita da Adobe.
+version: Experience Manager as a Cloud Service
 feature: Cloud Manager, Operations
 topic: Administration, Architecture
 role: Admin, Architect, Developer
@@ -12,14 +12,14 @@ last-substantial-update: 2024-08-12T00:00:00Z
 jira: KT-15121
 thumbnail: KT-15121.jpeg
 exl-id: 8936c3ae-2daf-4d0f-b260-28376ae28087
-source-git-commit: f92e66d6edc929bff1e8cae6adb7f408352aeb77
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 0%
 
 ---
 
-# Nome di dominio personalizzato con CDN Adobe
+# Nome di dominio personalizzato con Adobe CDN
 
 Scopri come implementare un nome di dominio personalizzato per un sito web AEM as a Cloud Service che utilizza la rete CDN (Content Delivery Network) di Adobe.
 
@@ -40,7 +40,7 @@ I passaggi di alto livello sono i seguenti:
    - Autorità di certificazione (CA): per richiedere il certificato firmato per il dominio del sito, ad esempio [DigitCert](https://www.digicert.com/)
    - Servizio di hosting DNS (Domain Name System): consente di aggiungere record DNS per il dominio personalizzato, ad esempio DNS di Azure o Route 53 di AWS.
 - Accesso a [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/) come **Proprietario business** o **Responsabile della distribuzione**.
-- Il sito [AEM WKND](https://github.com/adobe/aem-guides-wknd) di esempio è stato distribuito nell&#39;ambiente AEM as a Cloud Service di tipo [programma di produzione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
+- Il sito di esempio [AEM WKND](https://github.com/adobe/aem-guides-wknd) è stato distribuito nell&#39;ambiente AEM as a Cloud Service di tipo [programma di produzione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
 
 Se non hai accesso a servizi di terze parti, _collabora con il tuo team di sicurezza o di hosting per completare i passaggi_.
 
@@ -75,7 +75,7 @@ $ openssl crl2pkcs7 -nocrl -certfile <YOUR-SIGNED-CERT>.crt | openssl pkcs7 -pri
 
 Il certificato firmato può contenere la catena di certificati, che include i certificati radice e intermedi insieme al certificato dell’entità finale.
 
-Adobe Cloud Manager accetta il certificato dell&#39;entità finale e la catena di certificati _in campi modulo separati_, pertanto è necessario estrarre il certificato dell&#39;entità finale e la catena di certificati dal certificato firmato.
+Adobe Cloud Manager accetta il certificato dell&#39;entità finale e la catena di certificati _in campi di modulo separati_, pertanto è necessario estrarre il certificato dell&#39;entità finale e la catena di certificati dal certificato firmato.
 
 In questa esercitazione, il certificato firmato [DigitCert](https://www.digicert.com/) rilasciato per il dominio `*.enablementadobe.com` viene utilizzato come esempio. L&#39;entità finale e la catena di certificati vengono estratte aprendo il certificato firmato in un editor di testo e copiando il contenuto tra i marcatori `-----BEGIN CERTIFICATE-----` e `-----END CERTIFICATE-----`.
 

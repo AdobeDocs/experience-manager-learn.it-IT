@@ -1,8 +1,8 @@
 ---
-title: Verificare un'estensione dell'interfaccia utente AEM
-description: Scopri come visualizzare in anteprima, testare e verificare un’estensione dell’interfaccia utente AEM prima di distribuirla in produzione.
+title: Verificare un’estensione dell’interfaccia utente di AEM
+description: Scopri come visualizzare in anteprima, testare e verificare un’estensione dell’interfaccia utente di AEM prima di distribuirla in produzione.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-11603, KT-13382
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: c5c1df23-1c04-4c04-b0cd-e126c31d5acc
 duration: 600
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -20,39 +20,39 @@ ht-degree: 0%
 
 # Verificare un’estensione
 
-Le estensioni dell’interfaccia utente AEM possono essere verificate in base a qualsiasi ambiente AEM as a Cloud Service nell’organizzazione di Adobe a cui appartiene l’estensione.
+Le estensioni dell’interfaccia utente di AEM possono essere verificate in base a qualsiasi ambiente AEM as a Cloud Service nell’organizzazione Adobe a cui appartiene l’estensione.
 
-Il test di un’estensione viene eseguito tramite un URL appositamente creato che indica all’AEM di caricarla, solo per tale richiesta.
+Il test di un’estensione viene eseguito tramite un URL appositamente creato che indica ad AEM di caricarla, solo per tale richiesta.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3412877?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
-> Il video precedente illustra l’utilizzo di un’estensione della Console Frammenti di contenuto per illustrare l’anteprima e la verifica dell’app dell’estensione App Builder. Tuttavia, è importante notare che i concetti descritti possono essere applicati a tutte le estensioni dell’interfaccia utente dell’AEM.
+> Il video precedente illustra l’utilizzo di un’estensione della Console Frammenti di contenuto per illustrare l’anteprima e la verifica dell’app dell’estensione App Builder. Tuttavia, è importante notare che i concetti descritti possono essere applicati a tutte le estensioni dell’interfaccia utente di AEM.
 
 ## URL interfaccia utente AEM
 
 ![URL console Frammenti di contenuto AEM](./assets/verify/content-fragment-console-url.png){align="center"}
 
-Per creare un URL che monti l’estensione non di produzione in AEM, è necessario ottenere l’URL dell’interfaccia utente dell’AEM in cui viene inserita l’estensione. Passa all’ambiente AEM as a Cloud Service per verificare l’estensione su e apri l’interfaccia utente su cui deve essere visualizzata l’estensione.
+Per creare un URL che monti l’estensione non di produzione in AEM, è necessario ottenere l’URL dell’interfaccia utente di AEM in cui viene inserita l’estensione. Passa all’ambiente AEM as a Cloud Service per verificare l’estensione su e apri l’interfaccia utente su cui deve essere visualizzata l’estensione.
 
 Ad esempio, per visualizzare in anteprima un’estensione per la console Frammenti di contenuto:
 
 1. Accedi all’ambiente AEM as a Cloud Service desiderato.
 1. Seleziona l&#39;icona __Frammenti di contenuto__.
-1. Attendi che la console Frammenti di contenuto AEM venga caricata nel browser.
-1. Copia l’URL della console Frammenti di contenuto AEM dalla barra degli indirizzi del browser; dovrebbe essere simile al seguente:
+1. Attendi che la console Frammenti di contenuto di AEM venga caricata nel browser.
+1. Copia l’URL della Console Frammenti di contenuto di AEM dalla barra degli indirizzi del browser; dovrebbe essere simile al seguente:
 
    ```
    https://experience.adobe.com/?repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
    ```
 
-Questo URL viene utilizzato di seguito per la creazione degli URL per lo sviluppo e la verifica dell’area di visualizzazione. Se verifichi l’estensione rispetto ad altre interfacce utente dell’AEM, ottieni tali URL e applica gli stessi passaggi indicati di seguito.
+Questo URL viene utilizzato di seguito per la creazione degli URL per lo sviluppo e la verifica dell’area di visualizzazione. Se verifichi l’estensione rispetto ad altre interfacce utente di AEM, ottieni tali URL e applica gli stessi passaggi indicati di seguito.
 
 ## Verificare le build di sviluppo locali
 
 1. Apri una riga di comando nella directory principale del progetto di estensione.
-1. Eseguire l’estensione dell’interfaccia utente AEM come app App Builder locale
+1. Eseguire l’estensione dell’interfaccia utente di AEM come app App Builder locale
 
    ```shell
    $ aio app run
@@ -68,11 +68,11 @@ Questo URL viene utilizzato di seguito per la creazione degli URL per lo svilupp
 Prendi nota dell&#39;URL dell&#39;applicazione locale, indicato sopra come `-> https://localhost:9080`
 
 1. Inizialmente (e ogni volta che viene visualizzato un errore di connessione) apri `https://localhost:9080` (o qualsiasi URL dell&#39;applicazione locale sia) nel browser Web e accetta manualmente [il certificato HTTPS](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users).
-1. Aggiungi i due parametri di query seguenti all&#39;URL dell&#39;interfaccia utente [AEM](#aem-ui-url)
+1. Aggiungi i due parametri di query seguenti all&#39;URL dell&#39;interfaccia utente di [AEM](#aem-ui-url)
    + `&devMode=true`
    + `&ext=<LOCAL APPLICATION URL>`, in genere `&ext=https://localhost:9080`.
 
-   Aggiungere i due parametri di query sopra indicati (`devMode` e `ext`) come __primi__ parametri di query nell&#39;URL. L&#39;interfaccia utente estensibile dell&#39;AEM utilizza route hash (`#/@wknd/aem/...`), pertanto non corregge correttamente la post-correzione dei parametri dopo che `#` non funziona.
+   Aggiungere i due parametri di query sopra indicati (`devMode` e `ext`) come __primi__ parametri di query nell&#39;URL. L&#39;interfaccia utente estensibile di AEM utilizza route hash (`#/@wknd/aem/...`), pertanto non corregge correttamente la post-correzione dei parametri dopo che `#` non funziona.
 
    L’URL di anteprima deve essere simile al seguente:
 
@@ -84,11 +84,11 @@ Prendi nota dell&#39;URL dell&#39;applicazione locale, indicato sopra come `-> h
 
    + Potrebbe essere necessario inizialmente e quindi periodicamente [accettare il certificato HTTPS](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) per l&#39;host dell&#39;applicazione locale (`https://localhost:9080`).
 
-1. L’interfaccia utente dell’AEM viene caricata con la versione locale dell’estensione inserita per la verifica.
+1. L’interfaccia utente di AEM viene caricata con la versione locale dell’estensione inserita per la verifica.
 
 >[!IMPORTANT]
 >
->Quando si utilizza questo approccio, l’estensione in fase di sviluppo influisce solo sull’esperienza e tutti gli altri utenti dell’interfaccia utente dell’AEM usufruiscono dell’interfaccia utente senza l’estensione inserita.
+>Quando utilizzi questo approccio, l’estensione in fase di sviluppo influisce solo sull’esperienza e tutti gli altri utenti dell’interfaccia utente di AEM usufruiscono dell’interfaccia utente senza l’estensione inserita.
 
 ## Verifica le build della fase
 
@@ -117,11 +117,11 @@ Prendi nota dell&#39;URL dell&#39;applicazione locale, indicato sopra come `-> h
    Successful deployment 🏄
    ```
 
-1. Aggiungi i due parametri di query seguenti all&#39;URL dell&#39;interfaccia utente [AEM](#aem-ui-url)
+1. Aggiungi i due parametri di query seguenti all&#39;URL dell&#39;interfaccia utente di [AEM](#aem-ui-url)
    + `&devMode=true`
    + `&ext=<DEPLOYED APPLICATION URL>`
 
-   Aggiungere i due parametri di query sopra indicati (`devMode` e `ext`) come __primi__ parametri di query nell&#39;URL, poiché le interfacce utente AEM estensibili utilizzano una route hash (`#/@wknd/aem/...`), pertanto non è corretto postfissare i parametri dopo che `#` non funziona.
+   Aggiungi i due parametri di query sopra riportati (`devMode` e `ext`) come __primi__ parametri di query nell&#39;URL, poiché le interfacce utente estensibili di AEM utilizzano una route hash (`#/@wknd/aem/...`), pertanto dopo la mancata esecuzione di `#` i parametri non vengono corretti.
 
    L’URL di anteprima deve essere simile al seguente:
 
@@ -130,9 +130,9 @@ Prendi nota dell&#39;URL dell&#39;applicazione locale, indicato sopra come `-> h
    ```
 
 1. Copia e incolla l’URL di anteprima nel browser.
-1. La console Frammenti di contenuto AEM inserisce la versione dell’estensione distribuita nell’area di lavoro Stage in. L’URL di questa fase può essere condiviso per il controllo qualità o per gli utenti aziendali per la verifica.
+1. La console Frammenti di contenuto di AEM inserisce la versione dell’estensione distribuita nell’area di lavoro dello stage in. L’URL di questa fase può essere condiviso per il controllo qualità o per gli utenti aziendali per la verifica.
 
-Quando si utilizza questo approccio, l’estensione Staged viene inserita solo nella console Frammenti di contenuto AEM quando si accede con l’URL della fase dell’mestiere.
+Quando si utilizza questo approccio, l’estensione Staged viene inserita solo nella console Frammenti di contenuto di AEM quando si accede con l’URL di stage dell’mestiere.
 
 1. È possibile aggiornare le estensioni distribuite eseguendo nuovamente `aio app deploy`. Queste modifiche verranno applicate automaticamente quando si utilizza l&#39;URL di anteprima.
 1. Per rimuovere un&#39;estensione per la verifica, eseguire `aio app undeploy`.

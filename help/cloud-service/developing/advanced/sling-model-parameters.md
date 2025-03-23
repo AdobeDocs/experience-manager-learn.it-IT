@@ -1,14 +1,14 @@
 ---
 title: Parametrizza modelli Sling da HTL
-description: Scopri come trasmettere parametri da HTL a un modello Sling in AEM.
-version: Cloud Service
+description: Scopri come passare parametri da HTL a un modello Sling in AEM.
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Sling Model
 role: Developer
 jira: KT-15923
 level: Intermediate, Experienced
 exl-id: 5d852617-720a-4a00-aecd-26d0ab77d9b3
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -126,4 +126,4 @@ Con i parametri `"Hello"` e `"World"`, lo script HTL genera il seguente output:
 </p>
 ```
 
-Questo dimostra come i modelli Sling con parametri nell’AEM possono essere influenzati in base ai parametri di input forniti tramite HTL.
+Questo dimostra come i modelli Sling con parametri in AEM possono essere influenzati in base ai parametri di input forniti tramite HTL.

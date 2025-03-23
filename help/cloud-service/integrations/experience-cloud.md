@@ -1,7 +1,7 @@
 ---
 title: Integrazioni di AEM as a Cloud Service con Adobe Experience Cloud
 description: Scopri le integrazioni supportate da AEM as a Cloud Service con altri prodotti Adobe Experience Cloud.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Integrations
 topic: Integrations
 role: Leader, Architect, Admin, Developer
@@ -14,7 +14,7 @@ badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
 duration: 135
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '682'
 ht-degree: 12%
@@ -24,7 +24,7 @@ ht-degree: 12%
 # Integrazioni di AEM as a Cloud Service con Adobe Experience Cloud
 
 Scopri le integrazioni supportate da AEM as a Cloud Service con altri prodotti Adobe Experience Cloud.
-Fai clic sul prodotto di Experience Cloud per la documentazione su come configurare e utilizzare le integrazioni.
+Fai clic sul prodotto Experience Cloud per la documentazione su come configurare e utilizzare le integrazioni.
 
 |                                                                   | AEM Sites | AEM Assets | AEM Forms |
 |-------------------------------------------------------------------|:---------:|:----------:|:---------:|
@@ -36,7 +36,7 @@ Fai clic sul prodotto di Experience Cloud per la documentazione su come configur
 | Campaign Standard |           |            |          |
 | [Commerce](#adobe-commerce) | ✔ | ✔ |          |
 | Customer Journey Analytics |           |            |          |
-| [Tag di Experience Platform](#adobe-experience-platform-tags) | ✔ |            | ✔ |
+| [Tag Experience Platform](#adobe-experience-platform-tags) | ✔ |            | ✔ |
 | [Journey Optimizer](#adobe-journey-optimizer) |           | ✔ |          |
 | [Learning Manager](#adobe-learning-manager) | ✔ |            |          |
 | Marketo Engage |           |            |          |
@@ -65,10 +65,10 @@ L’integrazione di Adobe Analytics con AEM as a Cloud Service consente di monit
 + [Esercitazione su AEM Sites e Analytics](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/analytics/collect-data-analytics.html?lang=it)
 + Adobe Client Data Layer (ACDL)
 
-   + [Estendere l&#39;ACDL nei componenti core WCM dell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html)
-   + [Integrare ACDL con i componenti core WCM dell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html)
+   + [Estendere l&#39;ACDL nei componenti core WCM di AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html)
+   + [Integrare ACDL con i componenti core WCM di AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html)
    + [Gestione dei dati basata su eventi con ACDL](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/adobe-client-data-layer.html)
-   + [Esercitazione Adobe Client Data Layer (ACDL)](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=it)
+   + [Tutorial su Adobe Client Data Layer (ACDL)](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=it)
 
 ### AEM Assets
 
@@ -84,29 +84,29 @@ L’integrazione di Adobe Analytics con AEM as a Cloud Service consente di monit
 
 + [Integrazione con Adobe Campaign Classic](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-campaign-classic.html#configure-user)
 + [Creazione di una newsletter Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/creating-newsletter.html)
-+ [Documentazione dei componenti core E-mail per l&#39;AEM](https://github.com/adobe/aem-core-email-components#aem-email-core-components)
++ [Documentazione dei componenti core E-mail di AEM](https://github.com/adobe/aem-core-email-components#aem-email-core-components)
 
 ## Adobe Commerce
 
-L’integrazione di Adobe Commerce con AEM as a Cloud Service consente ai brand di scalare e innovare più rapidamente per differenziare le esperienze di e-commerce e acquisire un’accelerazione della spesa online. L’AEM con Commerce combina esperienze immersive, omnicanale e personalizzate, Experience Manager a qualsiasi numero di soluzioni commerce per portare esperienze differenziate in tutte le parti del percorso, riducendo il time-to-value e favorendo una conversione più elevata.
+L’integrazione di Adobe Commerce con AEM as a Cloud Service consente ai brand di scalare e innovare più rapidamente per differenziare le esperienze di e-commerce e acquisire un’accelerazione della spesa online. AEM con Commerce combina le esperienze immersive, omnicanale e personalizzate in Experience Manager con qualsiasi numero di soluzioni commerce per offrire esperienze differenziate a tutte le parti del percorso, riducendo il time-to-value e favorendo una conversione più elevata.
 
 ### AEM Sites
 
-+ [Contenuto AEM e guida utente di Commerce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=it)
++ [Guida utente di AEM Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=it)
 
 
 ## Tag in Adobe Experience Platform
 
-I tag in Adobe Experience Platform si integrano perfettamente con l&#39;AEM, fornendo un modo semplice di distribuire e gestire i tag di [analisi](#adobe-analytics), [targeting](#adobe-target), marketing e annunci pubblicitari necessari per coinvolgere le esperienze dei clienti.
+I tag in Adobe Experience Platform si integrano perfettamente con AEM, fornendo un modo semplice di distribuire e gestire i tag di [analisi](#adobe-analytics), [targeting](#adobe-target), marketing e annunci pubblicitari necessari per coinvolgere le esperienze dei clienti.
 
 ### AEM Sites
 
-+ [Guida utente di Experienci Platform di tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
++ [Guida utente dei tag di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 + [Esercitazione sui tag di Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=it)
 
 ### AEM Forms
 
-+ [Guida utente di Experienci Platform di tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
++ [Guida utente dei tag di Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 + [Esercitazione sui tag di Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=it)
 
 ## Adobe Journey Optimizer
@@ -144,27 +144,27 @@ Ritaglio, ricerca visiva e altro ancora.
 
 ### AEM Forms
 
-+ [Servizio di Automated forms conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=it)
++ [Servizio automatizzato di conversione moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=it)
 
 
 ## Adobe Target
 
-Adobe Target si integra con AEM as a Cloud Service per fornire un’esperienza web ottimizzata per ogni utente finale, grazie ai contenuti forniti dall’AEM.
+Adobe Target si integra con AEM as a Cloud Service per fornire un’esperienza web ottimizzata per ogni utente finale, basata sui contenuti di AEM.
 
 ### AEM Sites
 
 + [Configurare l&#39;integrazione di Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
 + Frammenti esperienza in Target
 
-   + [Frammenti esperienza Publish in Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
-   + [Frammenti esperienza Publish come JSON in Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
+   + [Pubblicare frammenti esperienza in Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
+   + [Pubblicare frammenti esperienza come JSON in Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
 
 + [Utilizza AEM Context Hub con Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/audiences.html#creating-an-adobe-target-audience-using-the-audience-console)
 + [Esercitazione su AEM Sites e Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/target/overview.html)
 
 ## Adobe Workfront
 
-Le integrazioni di Adobe Workfront con l’AEM sono un Cloud Service che semplifica la creazione di risorse digitali, la collaborazione e la gestione del ciclo di vita.
+Le integrazioni di Adobe Workfront con AEM s a Cloud Service semplificano il processo di creazione di risorse digitali, collaborazione e gestione del ciclo di vita.
 
 ### AEM Assets
 
@@ -172,5 +172,5 @@ Le integrazioni di Adobe Workfront con l’AEM sono un Cloud Service che semplif
 + [Video del connettore avanzato Workfront](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html)
 + AEM Assets Essentials
 
-   + [Guida utente di Adobe Workfront for Assets Essentials](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2F_workfront-for-aem-asset-essentials.htm)
+   + [Guida utente di Adobe Workfront per Assets Essentials](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2F_workfront-for-aem-asset-essentials.htm)
    + [Video su Adobe Workfront e Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html?lang=it)

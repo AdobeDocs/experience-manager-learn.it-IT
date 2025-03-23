@@ -1,7 +1,7 @@
 ---
 title: Flusso di lavoro Theming | Creazione rapida di siti AEM
 description: Scopri come aggiornare le origini del tema di un sito Adobe Experience Manager per applicare stili specifici per il brand. Scopri come utilizzare un server proxy per visualizzare un’anteprima live degli aggiornamenti CSS e JavaScript. Questo tutorial illustra anche come distribuire aggiornamenti del tema in un sito AEM utilizzando la pipeline front-end di Adobe Cloud Manager.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Core Components
 topic: Content Management, Development
 role: Developer
@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
 recommendations: noDisplay, noCatalog
 duration: 1275
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 1%
@@ -43,8 +43,8 @@ Quindi, apporta modifiche alle sorgenti del tema in modo che il sito corrisponda
 
 Passaggi di alto livello per il video:
 
-1. Creare un utente locale in AEM da utilizzare con un server di sviluppo proxy.
-1. Scarica le sorgenti del tema dall’AEM e aprile utilizzando un IDE locale, come VSCode.
+1. Crea un utente locale in AEM da utilizzare con un server di sviluppo proxy.
+1. Scarica le sorgenti del tema da AEM e aprile utilizzando un IDE locale, come VSCode.
 1. Modifica le origini del tema e utilizza un server di sviluppo proxy per visualizzare in anteprima le modifiche a CSS e JavaScript in tempo reale.
 1. Aggiorna le sorgenti del tema in modo che l’articolo della rivista corrisponda agli stili e ai modelli del marchio WKND.
 
@@ -83,8 +83,8 @@ Esistono un paio di esempi di repository GitHub che possono essere utilizzati co
 
 ## Congratulazioni. {#congratulations}
 
-Congratulazioni, hai appena aggiornato e implementato un tema per AEM!
+Congratulazioni, hai appena aggiornato e implementato un tema in AEM.
 
 ### Passaggi successivi {#next-steps}
 
-Approfondisci lo sviluppo dell&#39;AEM e comprendi meglio la tecnologia sottostante creando un sito utilizzando [Archetipo progetto AEM](../project-archetype/overview.md).
+Approfondisci lo sviluppo di AEM e comprendi meglio la tecnologia sottostante creando un sito utilizzando [Archetipo progetto AEM](../project-archetype/overview.md).

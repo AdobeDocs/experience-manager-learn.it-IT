@@ -2,14 +2,14 @@
 title: Best practice per i sistemi di stili con AEM Sites
 description: Un articolo dettagliato che illustra le best practice per l’implementazione del sistema di stili con Adobe Experience Manager Sites.
 feature: Style System
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate, Experienced
 doc-type: Article
 exl-id: c51da742-5ce7-499a-83da-227a25fb78c9
 duration: 328
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1522'
 ht-degree: 0%
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Rivedi il contenuto all&#39;indirizzo [Informazioni su come codificare per il sistema di stili](style-system-technical-video-understand.md), per conoscere le convenzioni di tipo BEM utilizzate dal sistema di stili dell&#39;AEM.
+>Consulta il contenuto all&#39;indirizzo [Informazioni su come codificare per il sistema di stili](style-system-technical-video-understand.md), per comprendere le convenzioni di tipo BEM utilizzate dal sistema di stili di AEM.
 
-Per il sistema di stili dell’AEM sono implementati due gusti o stili principali:
+Per il sistema di stili di AEM sono disponibili due tipi o stili principali:
 
 * **Stili layout**
 * **Stili di visualizzazione**
@@ -33,7 +33,7 @@ Per il sistema di stili dell’AEM sono implementati due gusti o stili principal
 
 ## Best practice per l’organizzazione degli stili {#style-organization-best-practices}
 
-Quando definisci i nomi degli stili disponibili per gli autori AEM, è meglio:
+Quando definisci i nomi degli stili disponibili per gli autori di AEM, è consigliabile:
 
 * Assegnare un nome agli stili utilizzando un vocabolario comprensibile per gli autori
 * Riduci al minimo il numero di opzioni di stile
@@ -41,17 +41,17 @@ Quando definisci i nomi degli stili disponibili per gli autori AEM, è meglio:
 * Mostra solo le combinazioni di stili con effetto
    * Se vengono esposte combinazioni inefficaci, assicurarsi che non abbiano almeno un effetto dannoso
 
-Con l’aumento del numero di possibili combinazioni di stili disponibili per gli autori di AEM, esistono più permutazioni che devono essere sottoposte a QA e convalidate in base agli standard di marchio. Troppe opzioni possono inoltre confondere gli autori, in quanto potrebbe non essere chiaro quale opzione o combinazione è necessaria per produrre l’effetto desiderato.
+Con l’aumento del numero di combinazioni di stili disponibili per gli autori di AEM, esistono sempre più permutazioni che devono essere sottoposte a controllo qualità e convalidate in base agli standard del brand. Troppe opzioni possono inoltre confondere gli autori, in quanto potrebbe non essere chiaro quale opzione o combinazione è necessaria per produrre l’effetto desiderato.
 
 ### Nomi di stile e classi CSS {#style-names-vs-css-classes}
 
-I nomi degli stili, o le opzioni presentate agli autori AEM, e i nomi delle classi CSS implementanti sono disaccoppiati nell&#39;AEM.
+In AEM, i nomi degli stili o le opzioni presentate agli autori di AEM e i nomi delle classi CSS implementati sono separati.
 
-Questo consente alle opzioni di stile di essere etichettate in un vocabolario chiaro e compreso dagli autori dell’AEM, ma consente agli sviluppatori CSS di denominare le classi CSS in modo semantico e a prova di futuro. Ad esempio:
+Questo consente alle opzioni di stile di essere etichettate in un vocabolario chiaro e compreso dagli autori di AEM, ma consente agli sviluppatori CSS di denominare le classi CSS in modo semantico e a prova di futuro. Ad esempio:
 
-Un componente deve avere le opzioni per essere colorato con i colori **primario** e **secondario** del brand, tuttavia gli autori dell&#39;AEM conoscono i colori come **verde** e **giallo**, piuttosto che il linguaggio di progettazione primario e secondario.
+Un componente deve avere le opzioni per essere colorato con i colori **primario** e **secondario** del brand, tuttavia gli autori di AEM conoscono i colori come **verde** e **giallo**, anziché il linguaggio di progettazione primario e secondario.
 
-Il sistema di stili dell&#39;AEM può esporre questi stili di visualizzazione a colori utilizzando etichette descrittive dell&#39;autore **Verde** e **Giallo**, consentendo agli sviluppatori CSS di utilizzare la denominazione semantica di `.cmp-component--primary-color` e `.cmp-component--secondary-color` per definire l&#39;implementazione effettiva dello stile in CSS.
+Il sistema di stili di AEM può esporre questi stili di visualizzazione a colori utilizzando le etichette descrittive dell&#39;autore **Verde** e **Giallo**, consentendo al contempo agli sviluppatori CSS di utilizzare la denominazione semantica di `.cmp-component--primary-color` e `.cmp-component--secondary-color` per definire l&#39;implementazione effettiva dello stile in CSS.
 
 Il nome stile di **Verde** è mappato a `.cmp-component--primary-color` e **Giallo** a `.cmp-component--secondary-color`.
 
@@ -93,7 +93,7 @@ Se le regole di stile predefinite si applicano il più delle volte a tutte le va
 
 >[!NOTE]
 >
->Lo stile di layout predefinito NON ha un nome di stile di visualizzazione, tuttavia l’autore può selezionare un’opzione di visualizzazione nello strumento di selezione del sistema di stili dell’AEM.
+>Lo stile di layout predefinito NON ha un nome di stile di visualizzazione, tuttavia l’autore può selezionare un’opzione di visualizzazione nello strumento di selezione del sistema di stili di AEM.
 >
 >In violazione della best practice:
 >
@@ -117,7 +117,7 @@ Se le regole di stile predefinite si applicano il più delle volte a tutte le va
 
 Lo stile di layout **Promo** viene utilizzato per promuovere contenuti di alto valore nel sito ed è disposto orizzontalmente per occupare una banda di spazio nella pagina Web e deve essere personalizzabile in base ai colori del marchio, con lo stile di layout Promo predefinito che utilizza il testo nero.
 
-A questo scopo, nel sistema di stili AEM per il componente Teaser sono configurati uno **stile di layout** di **Promo** e **stili di visualizzazione** di **Verde** e **Giallo**.
+A questo scopo, nel sistema di stili di AEM per il componente Teaser sono configurati uno **stile di layout** di **Promo** e **stili di visualizzazione** di **Verde** e **Giallo**.
 
 #### Valore predefinito promozione
 
@@ -158,7 +158,7 @@ A questo scopo, nel sistema di stili AEM per il componente Teaser sono configura
 
 Lo stile di layout **Promo allineato a destra** è una variante dello stile Promo che inverte la posizione dell&#39;immagine e del testo (immagine a destra, testo a sinistra).
 
-L’allineamento a destra, nel suo nucleo, è uno stile di visualizzazione, che potrebbe essere inserito nel Sistema di stili AEM come uno stile di visualizzazione selezionato insieme allo stile di layout Promo. Ciò viola la best practice di:
+L’allineamento a destra, nella parte centrale, è uno stile di visualizzazione, che potrebbe essere inserito nel Sistema di stili di AEM come stile di visualizzazione selezionato insieme allo stile di layout Promo. Ciò viola la best practice di:
 
 **Mostra solo le combinazioni di stili con effetto**
 
@@ -213,7 +213,7 @@ Per colorare lo stile di layout Eroe con i colori del marchio, è possibile util
 
 Per ogni componente, il nome dello stile è mappato al singolo set di classi CSS, il che significa che i nomi delle classi CSS che colorano lo sfondo dello stile di layout Promo devono colorare il testo e il collegamento dello stile di layout Eroe.
 
-Questo può essere ottenuto in modo banale definendo l’ambito delle regole CSS, tuttavia, questo richiede agli sviluppatori CSS di capire come queste permutazioni vengono emanate sull’AEM.
+Questo può essere ottenuto in modo banale definendo l’ambito delle regole CSS; tuttavia, questo richiede agli sviluppatori CSS di capire come queste permutazioni vengono applicate su AEM.
 
 CSS per colorare lo sfondo dello stile di layout **Promuovi** con il colore principale (verde):
 
@@ -273,7 +273,7 @@ CSS per colorare il testo dello stile di layout **Hero** con il colore primario 
 ## Risorse aggiuntive {#additional-resources}
 
 * [Documentazione del sistema di stili](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html)
-* [Creazione di librerie client AEM](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [Creazione di librerie client di AEM](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * Sito Web della documentazione di [BEM (Block Element Modifier)](https://getbem.com/)
 * [Sito Web della documentazione di minore entità](https://lesscss.org/)
 * [jQuery sito Web](https://jquery.com/)

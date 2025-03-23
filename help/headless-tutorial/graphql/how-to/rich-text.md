@@ -1,7 +1,7 @@
 ---
-title: Utilizzo del testo RTF con AEM headless
-description: Scopri come creare e incorporare contenuti a cui si fa riferimento utilizzando un editor Rich Text su più righe con Frammenti di contenuto di Adobe Experience Manager e come il testo Rich Text viene distribuito dalle API GraphQL dell’AEM come JSON per essere utilizzato dalle applicazioni headless.
-version: Cloud Service
+title: Utilizzo del testo RTF con AEM Headless
+description: Scopri come creare e incorporare contenuti a cui si fa riferimento utilizzando un editor Rich Text su più righe con Frammenti di contenuto di Adobe Experience Manager e come il testo Rich Text viene distribuito dalle API GraphQL di AEM come JSON per essere utilizzato dalle applicazioni headless.
+version: Experience Manager as a Cloud Service
 doc-type: article
 jira: KT-9985
 feature: Content Fragments, GraphQL API
@@ -10,7 +10,7 @@ level: Intermediate
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
 duration: 785
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Il campo di testo su più righe è un tipo di dati Frammenti di contenuto che consente agli autori di creare contenuto in formato Rich Text. I riferimenti ad altri contenuti, come immagini o altri frammenti di contenuto, possono essere inseriti dinamicamente in linea all’interno del flusso del testo. Il campo di testo a riga singola è un altro tipo di dati Frammenti di contenuto che deve essere utilizzato per elementi di testo semplici.
 
-L’API GraphQL dell’AEM offre una solida funzionalità per restituire testo formattato come HTML, testo normale o come JSON puro. La rappresentazione JSON è potente in quanto offre all’applicazione client il controllo completo su come eseguire il rendering del contenuto.
+L’API GraphQL di AEM offre una solida funzionalità per restituire testo RTF come HTML, testo normale o come JSON puro. La rappresentazione JSON è potente in quanto offre all’applicazione client il controllo completo su come eseguire il rendering del contenuto.
 
 ## Editor multiriga
 
@@ -131,7 +131,7 @@ La variabile `$path` utilizzata nel filtro `_path` richiede il percorso completo
 
 Di seguito sono riportati diversi esempi di tipi di risposta di un campo con più righe denominato `main` che contiene un paragrafo: &quot;Questo è un paragrafo che include il contenuto **importante**&quot;. dove &quot;importante&quot; è contrassegnato come **bold**.
 
-+++HTML esempio
+Esempio +++HTML
 
 **Query persistente GraphQL:**
 
@@ -249,7 +249,7 @@ L&#39;opzione di rendering `plaintext` elimina la formattazione.
 
 La risposta JSON Rich Text del campo su più righe è strutturata come una struttura gerarchica. Ogni oggetto o nodo rappresenta un diverso blocco HTML del testo RTF.
 
-Di seguito è riportato un esempio di risposta JSON di un campo di testo su più righe. Si noti che ogni oggetto o nodo include un `nodeType` che rappresenta il blocco HTML dal testo RTF come `paragraph`, `link` e `text`. Ogni nodo contiene facoltativamente `content`, che è una sottomatrice contenente qualsiasi elemento secondario del nodo corrente.
+Di seguito è riportato un esempio di risposta JSON di un campo di testo su più righe. Ogni oggetto o nodo include un `nodeType` che rappresenta il blocco HTML dal testo RTF come `paragraph`, `link` e `text`. Ogni nodo contiene facoltativamente `content`, che è una sottomatrice contenente qualsiasi elemento secondario del nodo corrente.
 
 ```json
 "json": [// root "content" or child nodes
@@ -329,7 +329,7 @@ const nodeMap = {
 }
 ```
 
-`nodeMap` è un valore letterale di oggetto JavaScript utilizzato come mappa. Ognuna delle &quot;chiavi&quot; rappresenta un `nodeType` diverso. I parametri di `node` e `children` possono essere trasmessi alle funzioni risultanti che eseguono il rendering del nodo. Il tipo restituito utilizzato in questo esempio è JSX, tuttavia l’approccio potrebbe essere adattato per creare una stringa letterale che rappresenta il contenuto HTML.
+`nodeMap` è un valore letterale di oggetto JavaScript utilizzato come mappa. Ognuna delle &quot;chiavi&quot; rappresenta un `nodeType` diverso. I parametri di `node` e `children` possono essere trasmessi alle funzioni risultanti che eseguono il rendering del nodo. Il tipo restituito utilizzato in questo esempio è JSX, tuttavia l’approccio potrebbe essere adattato per creare una stringa letterale che rappresenta il contenuto di HTML.
 
 ### Esempio di codice completo
 
@@ -355,12 +355,12 @@ La schermata precedente mostra un altro frammento di contenuto, Ultimate Guide t
 
 ## Eseguire query sui riferimenti in linea con GraphQL
 
-L’API di GraphQL consente agli sviluppatori di creare una query che include proprietà aggiuntive su eventuali riferimenti inseriti in un campo su più righe. La risposta JSON include un oggetto `_references` separato in cui sono elencate queste proprietà aggiuntive. La risposta JSON offre agli sviluppatori il controllo completo su come eseguire il rendering dei riferimenti o dei collegamenti invece di dover trattare con HTML categorici.
+L’API di GraphQL consente agli sviluppatori di creare una query che include proprietà aggiuntive su eventuali riferimenti inseriti in un campo su più righe. La risposta JSON include un oggetto `_references` separato in cui sono elencate queste proprietà aggiuntive. La risposta JSON offre agli sviluppatori il controllo completo su come eseguire il rendering dei riferimenti o dei collegamenti invece di dover gestire HTML con opinioni.
 
 Ad esempio, potrebbe essere utile:
 
 * Includere una logica di indirizzamento personalizzata per la gestione dei collegamenti ad altri frammenti di contenuto durante l’implementazione di un’applicazione a pagina singola, ad esempio utilizzando React Router o Next.js
-* Eseguire il rendering di un&#39;immagine in linea utilizzando il percorso assoluto di un ambiente Publish AEM come valore `src`.
+* Eseguire il rendering di un&#39;immagine in linea utilizzando il percorso assoluto di un ambiente di pubblicazione AEM come valore `src`.
 * Determina come eseguire il rendering di un riferimento incorporato in un altro frammento di contenuto con proprietà personalizzate aggiuntive.
 
 Utilizzare il tipo restituito `json` e includere l&#39;oggetto `_references` durante la costruzione di una query GraphQL:
@@ -545,4 +545,4 @@ Il video precedente mostra un esempio end-to-end:
 1. Aggiornamento del campo di testo su più righe di un modello per frammenti di contenuto per consentire i riferimenti ai frammenti
 2. Utilizzo dell’Editor frammento di contenuto per includere un’immagine e un riferimento a un altro frammento in un campo di testo su più righe.
 3. Creazione di una query GraphQL che include la risposta di testo su più righe come JSON e qualsiasi `_references` utilizzato.
-4. Scrittura di un SPA React che esegue il rendering dei riferimenti in linea della risposta Rich Text.
+4. Scrittura di un’applicazione a pagina singola React che esegue il rendering dei riferimenti in linea della risposta in formato Rich Text.

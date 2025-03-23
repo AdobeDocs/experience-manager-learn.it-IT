@@ -1,7 +1,7 @@
 ---
 title: Sviluppare esportatori di modelli Sling in AEM
 description: Questa guida tecnica illustra come configurare AEM per l’utilizzo con Sling Model Exporter, migliorare un modello Sling esistente utilizzando il framework Exporter per il rendering come JSON e come utilizzare le opzioni Exporter e le annotazioni Jackson per personalizzare ulteriormente l’output.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
 doc-type: Technical Video
@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: fc321ed1-5cf7-4bbe-adc6-c4905af7b43c
 duration: 932
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Apache Sling fornisce una funzione di esportazione JSON di Jackson per coprire i
 
 >[!VIDEO](https://video.tv.adobe.com/v/16863?quality=12&learn=on)
 
-[!DNL Sling Model Exporter] è perfetto per sfruttare modelli Sling che contengono già regole business che supportano le rappresentazioni HTML tramite HTL (o in precedenza JSP) ed esporre la stessa rappresentazione business di JSON per l&#39;utilizzo da parte di servizi Web programmatici o applicazioni JavaScript.
+[!DNL Sling Model Exporter] è perfetto per sfruttare modelli Sling che contengono già regole business che supportano le rappresentazioni di HTML tramite HTL (o in precedenza JSP) ed esporre la stessa rappresentazione aziendale di JSON per l&#39;utilizzo da parte di servizi Web programmatici o applicazioni JavaScript.
 
 ## Creazione di un’esportazione di modelli Sling
 

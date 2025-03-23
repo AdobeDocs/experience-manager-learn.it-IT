@@ -1,7 +1,7 @@
 ---
-title: Best practice per l’indicizzazione nell’AEM
-description: Scopri le best practice per l’indicizzazione in AEM.
-version: 6.4, 6.5, Cloud Service
+title: Best practice per l’indicizzazione in AEM
+description: Scopri le best practice di indicizzazione in AEM.
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 sub-product: Experience Manager, Experience Manager Sites
 feature: Search
 doc-type: Article
@@ -13,33 +13,33 @@ last-substantial-update: 2024-01-04T00:00:00Z
 jira: KT-14745
 thumbnail: KT-14745.jpeg
 exl-id: 3fd4c404-18e9-44e5-958f-15235a3091d5
-source-git-commit: 54a7f93637545a4467c4c587bbc3d1d0de5c64a1
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 1%
 
 ---
 
-# Best practice per l’indicizzazione nell’AEM
+# Best practice per l’indicizzazione in AEM
 
-Scopri le best practice di indicizzazione in Adobe Experience Manager (AEM). Apache [Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/query.html) potenzia la ricerca dei contenuti nell&#39;AEM e i punti chiave sono i seguenti:
+Scopri le best practice di indicizzazione in Adobe Experience Manager (AEM). Apache [Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/query.html) attiva la ricerca dei contenuti in AEM e i punti chiave sono i seguenti:
 
-- Per supportare la funzionalità di ricerca e query, AEM fornisce vari indici, ad esempio `damAssetLucene`, `cqPageLucene` e altro ancora.
+- Per supportare le funzionalità di ricerca e query, AEM fornisce diversi indici predefiniti, ad esempio `damAssetLucene`, `cqPageLucene` e altro ancora.
 - Tutte le definizioni degli indici sono archiviate nell&#39;archivio nel nodo `/oak:index`.
 - AEM as a Cloud Service supporta solo gli indici Oak Lucene.
-- La configurazione dell’indice deve essere gestita nella base di codice del progetto AEM e implementata utilizzando le pipeline CI/CD di Cloud Manager.
+- La configurazione dell’indice deve essere gestita nella base di codice del progetto AEM e distribuita utilizzando le pipeline CI/CD di Cloud Manager.
 - Se per una determinata query sono disponibili più indici, viene utilizzato l&#39;**indice con il costo stimato più basso**.
 - Se non è disponibile alcun indice per una determinata query, la struttura del contenuto viene attraversata per trovare il contenuto corrispondente. Tuttavia, il limite predefinito tramite `org.apache.jackrabbit.oak.query.QueryEngineSettingsService` è quello di attraversare solo 10.000 nodi.
 - I risultati di una query sono **filtrati almeno** per garantire che l&#39;utente corrente disponga dell&#39;accesso in lettura. Ciò significa che i risultati della query potrebbero essere inferiori al numero di nodi indicizzati.
 - La reindicizzazione dell’archivio dopo le modifiche della definizione dell’indice richiede tempo e dipende dalle dimensioni dell’archivio.
 
-Per disporre di una funzionalità di ricerca efficiente e corretta che non influisca sulle prestazioni dell’istanza AEM, è importante comprendere le best practice per l’indicizzazione.
+Per disporre di una funzionalità di ricerca efficiente e corretta che non influisca sulle prestazioni dell’istanza di AEM, è importante comprendere le best practice per l’indicizzazione.
 
 ## Indice personalizzato e OOTB
 
 A volte, è necessario creare indici personalizzati per supportare i requisiti di ricerca. Tuttavia, segui le linee guida riportate di seguito prima di creare indici personalizzati:
 
-- Comprendi i requisiti di ricerca e verifica se gli indici OOTB possono supportare i requisiti di ricerca. Utilizza **Strumento Prestazioni query**, disponibile presso [SDK locale](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) e AEMCS tramite Developer Console o `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`.
+- Comprendi i requisiti di ricerca e verifica se gli indici OOTB possono supportare i requisiti di ricerca. Utilizza **Strumento Prestazioni query**, disponibile in [SDK locale](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) e AEMCS tramite Developer Console o `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`.
 
 - Definisci una query ottimale, utilizza il [diagramma di flusso dell&#39;ottimizzazione delle query](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) e [Scheda di riferimento rapido per le query JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) per riferimento.
 
@@ -51,9 +51,9 @@ A volte, è necessario creare indici personalizzati per supportare i requisiti d
 
 - In **AEMCS**, per personalizzare l&#39;indice OOTB, utilizzare la convenzione di denominazione **\&lt;NomeIndiceOOTBI>-\&lt;VersioneProdotto>-custom-\&lt;VersionePersonalizzata>**. Ad esempio, `cqPageLucene-custom-1` o `damAssetLucene-8-custom-1`. Questo consente di unire la definizione dell’indice personalizzato ogni volta che l’indice OOTB viene aggiornato. Per ulteriori dettagli, vedi [Modifiche agli indici predefiniti](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/indexing).
 
-- In **AEM 6.X**, la denominazione _non funziona_, ma è sufficiente aggiornare l&#39;indice OOTB con le proprietà necessarie nel nodo `indexRules`.
+- In **AEM 6.X**, la denominazione _indicata sopra non funziona_, ma è sufficiente aggiornare l&#39;indice OOTB con le proprietà necessarie nel nodo `indexRules`.
 
-- Copiate sempre la definizione dell&#39;indice OOTB più recente dall&#39;istanza AEM utilizzando Gestione pacchetti di CRX DE (/crx/packmgr/), rinominatela e aggiungete personalizzazioni all&#39;interno del file XML.
+- Copia sempre la definizione più recente dell’indice OOTB dall’istanza di AEM utilizzando Gestione pacchetti di CRX DE (/crx/packmgr/), rinominala e aggiungi personalizzazioni all’interno del file XML.
 
 - Archivia la definizione dell&#39;indice nel progetto AEM in `ui.apps/src/main/content/jcr_root/_oak_index` e distribuiscila con le pipeline CI/CD di Cloud Manager. Per ulteriori dettagli, vedere [Distribuzione delle definizioni di indice personalizzato](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/operations/indexing).
 
@@ -168,7 +168,7 @@ L&#39;immagine seguente mostra l&#39;indice personalizzato con il nodo `suggesti
 
 ## Ottimizzazione dell’indice disabilitando Apache Tika
 
-L&#39;AEM utilizza [Apache Tika](https://tika.apache.org/) per _estrarre metadati e contenuto di testo da file_ di tipo PDF, Word, Excel e altro. Il contenuto estratto viene memorizzato nell’archivio e indicizzato dall’indice Oak Lucene.
+AEM utilizza [Apache Tika](https://tika.apache.org/) per _estrarre metadati e contenuto di testo da file_ di tipo PDF, Word, Excel e altro. Il contenuto estratto viene memorizzato nell’archivio e indicizzato dall’indice Oak Lucene.
 
 A volte gli utenti non hanno bisogno della possibilità di cercare all’interno del contenuto di un file o di una risorsa; in questi casi, puoi migliorare le prestazioni di indicizzazione disabilitando Apache Tika. I vantaggi sono i seguenti:
 
@@ -211,7 +211,7 @@ Per disabilitare Apache Tika per tipo mime, procedi come segue:
 
 - Per aggiornare l&#39;indice archiviato, impostare la proprietà `refresh` su `true` nel nodo di definizione dell&#39;indice. Per ulteriori dettagli, vedere [Proprietà definizione indice](https://jackrabbit.apache.org/oak/docs/query/lucene.html#index-definition:~:text=Defaults%20to%2010000-,refresh,-Optional%20boolean%20property).
 
-L&#39;immagine seguente mostra l&#39;indice OOTB `damAssetLucene` con il nodo `tika` e il file `config.xml` che disabilita il PDF e altri tipi MIME.
+L&#39;immagine seguente mostra l&#39;indice OOTB `damAssetLucene` con il nodo `tika` e il file `config.xml` che disabilita PDF e altri tipi MIME.
 
 ![Indice damAssetLucene OOTB con nodo tika](./assets/understand-indexing-best-practices/ootb-index-with-tika-node.png)
 
@@ -253,11 +253,11 @@ Lo strumento [Index Definition Analyzer](https://oakutils.appspot.com/analyze/in
 
 ### Strumento Prestazioni query
 
-Lo strumento per le prestazioni delle query _OOTB_ disponibile in [Local SDK](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) e AEMCS tramite Developer Console o `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell` consente a **di analizzare le prestazioni delle query** e [JCR Query Cheat Sheet](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en) di definire la query ottimale.
+Lo _strumento Prestazioni query_ OOTB disponibile in [SDK locale](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) e AEMCS tramite Developer Console o `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell` consente a **di analizzare le prestazioni delle query** e [Scheda di riferimento rapido per le query JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=en) di definire la query ottimale.
 
 ### Strumenti e suggerimenti per la risoluzione dei problemi
 
-La maggior parte dei seguenti sono applicabili per AEM 6.X e per la risoluzione dei problemi locali.
+La maggior parte delle seguenti opzioni è applicabile per AEM 6.X e per la risoluzione dei problemi locali.
 
 - Gestione indici disponibile in `http://host:port/libs/granite/operations/content/diagnosistools/indexManager.html` per ottenere informazioni sull&#39;indice come tipo, ultimo aggiornamento, dimensione.
 

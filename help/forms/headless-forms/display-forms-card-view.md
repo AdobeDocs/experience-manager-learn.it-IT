@@ -2,14 +2,14 @@
 title: Visualizzare i moduli recuperati nella vista a schede
 description: Utilizzare l’API listforms per visualizzare i moduli
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-13311
 topic: Development
 role: User
 level: Intermediate
 exl-id: c01ad68e-23c9-4564-8e3e-1924af34a493
 duration: 91
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -27,7 +27,7 @@ In questo articolo utilizzeremo l&#39;API [listforms](https://opensource.adobe.c
 
 ## Modello scheda
 
-Il codice seguente è stato utilizzato per progettare il modello di scheda. Nel modello di scheda vengono visualizzati il titolo e la descrizione del modulo adattivo e il logo di Adobe. [Componenti dell&#39;interfaccia utente materiali](https://mui.com/) sono stati utilizzati nella creazione di questo layout.
+Il codice seguente è stato utilizzato per progettare il modello di scheda. Nel modello di scheda vengono visualizzati il titolo e la descrizione del modulo adattivo e il logo Adobe. [Componenti dell&#39;interfaccia utente materiali](https://mui.com/) sono stati utilizzati nella creazione di questo layout.
 
 
 
@@ -85,7 +85,7 @@ La seguente route è stata definita in Main.js per passare a DisplayForm.js
 
 ## Recuperare i moduli
 
-L’API listforms è stata utilizzata per recuperare i moduli dal server AEM. L’API restituisce un array di oggetti JSON; ogni oggetto JSON rappresenta un modulo.
+L’API listforms veniva utilizzata per recuperare i moduli dal server AEM. L’API restituisce un array di oggetti JSON; ogni oggetto JSON rappresenta un modulo.
 
 ```javascript
 import { useState,useEffect } from "react";

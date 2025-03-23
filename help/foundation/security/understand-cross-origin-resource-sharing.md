@@ -1,7 +1,7 @@
 ---
-title: Comprendere la condivisione CORS (Cross-Origin Resource Sharing) con l’AEM
-description: La condivisione CORS (Cross-Origin Resource Sharing) di Adobe Experience Manager facilita le proprietà web non AEM a effettuare chiamate lato client all'AEM, sia autenticate che non autenticate, per recuperare contenuto o interagire direttamente con l'AEM.
-version: 6.4, 6.5
+title: Comprendere la condivisione CORS (Cross-Origin Resource Sharing) con AEM
+description: La condivisione CORS (Cross-Origin Resource Sharing) di Adobe Experience Manager facilita le proprietà web non AEM a effettuare chiamate lato client ad AEM, autenticate e non autenticate, per recuperare contenuto o interagire direttamente con AEM.
+version: Experience Manager 6.4, Experience Manager 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: Security, APIs
 doc-type: Article
@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
 duration: 240
-source-git-commit: 6922d885c25d0864560ab3b8e38907060ff3cc70
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 1%
@@ -19,22 +19,22 @@ ht-degree: 1%
 
 # Comprendere la condivisione delle risorse tra le origini ([!DNL CORS])
 
-La condivisione delle risorse tra le origini di Adobe Experience Manager ([!DNL CORS]) facilita le proprietà Web non AEM per effettuare chiamate lato client all&#39;AEM, autenticate e non autenticate, per recuperare contenuto o interagire direttamente con l&#39;AEM.
+La condivisione delle risorse tra le origini di Adobe Experience Manager ([!DNL CORS]) facilita le proprietà web non AEM a effettuare chiamate lato client ad AEM, autenticate e non autenticate, per recuperare contenuto o interagire direttamente con AEM.
 
 La configurazione OSGI descritta in questo documento è sufficiente per:
 
-1. Condivisione di risorse a origine singola su AEM Publish
-2. Accesso CORS all’istanza di creazione dell’AEM
+1. Condivisione di risorse a origine singola in AEM Publish
+2. Accesso CORS ad AEM Author
 
-Se è necessario l&#39;accesso CORS a più origini nel Publish AEM, consulta [questa documentazione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
+Se è richiesto l&#39;accesso CORS per più origini in AEM Publish, consulta [questa documentazione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
 
-## Adobe di configurazione OSGi dei criteri di condivisione delle risorse tra origini diverse di Granite
+## Configurazione OSGi dei criteri di condivisione delle risorse tra diverse origini di Adobe Granite
 
-Le configurazioni CORS sono gestite come factory di configurazione OSGi in AEM, dove ogni criterio è rappresentato come un&#39;istanza della factory.
+Le configurazioni CORS sono gestite come factory di configurazione OSGi in AEM, dove ogni criterio è rappresentato come un’istanza della factory.
 
 * `http://<host>:<port>/system/console/configMgr > Adobe Granite Cross Origin Resource Sharing Policy`
 
-![Configurazione OSGi dei criteri di condivisione risorse tra origini diverse di Adobe Granite](./assets/understand-cross-origin-resource-sharing/cors-osgi-config.png)
+![Configurazione OSGi dei criteri di condivisione risorse tra origini di Adobe Granite](./assets/understand-cross-origin-resource-sharing/cors-osgi-config.png)
 
 [!DNL Adobe Granite Cross-Origin Resource Sharing Policy] (`com.adobe.granite.cors.impl.CORSPolicyImpl`)
 
@@ -181,13 +181,13 @@ In generale, le stesse considerazioni per la memorizzazione in cache del contenu
 
 | Memorizzabile in cache | Ambiente | Stato di autenticazione | Spiegazione |
 |-----------|-------------|-----------------------|-------------|
-| No | Pubblicazione AEM | Autenticato | Il caching di Dispatcher nell’istanza di authoring dell’AEM è limitato alle risorse statiche non create. Questo rende difficile e poco pratico memorizzare nella cache la maggior parte delle risorse su AEM Author, incluse le intestazioni di risposta HTTP. |
-| No | Pubblicazione AEM | Autenticato | Evita di memorizzare nella cache le intestazioni CORS nelle richieste autenticate. Questo si allinea alla linea guida comune di non memorizzare in cache le richieste autenticate, in quanto è difficile determinare in che modo lo stato di autenticazione/autorizzazione dell’utente richiedente influirà sulla risorsa consegnata. |
-| Sì | Pubblicazione AEM | Anonimo | Le intestazioni di risposta delle richieste anonime memorizzabili nella cache di Dispatcher possono essere memorizzate anche nella cache, in modo che le richieste CORS future possano accedere al contenuto memorizzato nella cache. Qualsiasi modifica alla configurazione CORS nel Publish AEM **deve** essere seguita da un annullamento della validità delle risorse memorizzate nella cache interessate. Le best practice impongono distribuzioni di codice o configurazione per cui la cache del dispatcher viene eliminata, in quanto è difficile determinare quale contenuto memorizzato in cache può essere influenzato. |
+| No | AEM Publish | Autenticato | La memorizzazione nella cache di Dispatcher in AEM Author è limitata alle risorse statiche non create. Questo rende difficile e poco pratico memorizzare in cache la maggior parte delle risorse su AEM Author, incluse le intestazioni di risposta HTTP. |
+| No | AEM Publish | Autenticato | Evita di memorizzare nella cache le intestazioni CORS nelle richieste autenticate. Questo si allinea alla linea guida comune di non memorizzare in cache le richieste autenticate, in quanto è difficile determinare in che modo lo stato di autenticazione/autorizzazione dell’utente richiedente influirà sulla risorsa consegnata. |
+| Sì | AEM Publish | Anonimo | Le intestazioni di risposta delle richieste anonime memorizzabili nella cache di Dispatcher possono essere memorizzate anche nella cache, in modo che le richieste CORS future possano accedere al contenuto memorizzato nella cache. Qualsiasi modifica alla configurazione CORS nella pubblicazione AEM **deve** essere seguita da un&#39;invalidazione delle risorse memorizzate nella cache interessate. Le best practice impongono distribuzioni di codice o configurazione per cui la cache del dispatcher viene eliminata, in quanto è difficile determinare quale contenuto memorizzato in cache può essere influenzato. |
 
 ### Consentire le intestazioni di richiesta CORS
 
-Per consentire alle intestazioni di richiesta HTTP [di passare all&#39;AEM per l&#39;elaborazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders), è necessario che siano consentite nella configurazione di Dispatcher `/clientheaders`.
+Per consentire alle intestazioni di richiesta HTTP [di passare ad AEM per l&#39;elaborazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders), devono essere consentite nella configurazione di Dispatcher `/clientheaders`.
 
 ```
 /clientheaders {
@@ -200,7 +200,7 @@ Per consentire alle intestazioni di richiesta HTTP [di passare all&#39;AEM per l
 
 ### Memorizzazione nella cache delle intestazioni di risposta CORS
 
-Per consentire il caching e il serving delle intestazioni CORS sul contenuto memorizzato nella cache, aggiungere la seguente configurazione [/cache /headers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#caching-http-response-headers) al file AEM Publish `dispatcher.any`.
+Per consentire il caching e il serving delle intestazioni CORS sul contenuto memorizzato nella cache, aggiungi la seguente configurazione [/cache /headers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#caching-http-response-headers) al file `dispatcher.any` di pubblicazione di AEM.
 
 ```
 /publishfarm {
@@ -247,6 +247,6 @@ Registrazione disponibile in `com.adobe.granite.cors`:
 
 ## Materiali di supporto
 
-* [Configurazione factory OSGi AEM per i criteri di condivisione risorse tra diverse origini](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
+* [AEM OSGi Configuration Factory per i criteri di condivisione risorse tra diverse origini](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
 * [Condivisione risorse tra le origini (W3C)](https://www.w3.org/TR/cors/)
 * [Controllo accesso HTTP (Mozilla MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)

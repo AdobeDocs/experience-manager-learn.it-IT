@@ -2,14 +2,14 @@
 title: Visualizza messaggio di ringraziamento all'invio del modulo
 description: Utilizza il gestore onSubmitSuccess per visualizzare il messaggio di ringraziamento configurato nell’app react
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-13490
 topic: Development
 role: User
 level: Intermediate
 exl-id: 489970a6-1b05-4616-84e8-52b8c87edcda
 duration: 61
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 0%

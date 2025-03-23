@@ -1,7 +1,7 @@
 ---
 title: Integrare AEM Headless e Target
-description: Scopri come integrare AEM Headless e Adobe Target per personalizzare le esperienze headless utilizzando l’SDK per web di Experience Platform.
-version: Cloud Service
+description: Scopri come integrare AEM Headless e Adobe Target per personalizzare le esperienze headless tramite Experience Platform Web SDK.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, Integrations
 topic: Personalization, Headless
 role: Admin, Developer
@@ -11,10 +11,10 @@ last-substantial-update: 2023-05-09T00:00:00Z
 jira: KT-12433
 thumbnail: KT-12433.jpeg
 badgeIntegration: label="Integrazione" type="positive"
-badgeVersions: label="AEM headless as a Cloud Service" before-title="false"
+badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: be886c64-9b8e-498d-983c-75f32c34be4b
 duration: 1549
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1618'
 ht-degree: 0%
@@ -23,20 +23,20 @@ ht-degree: 0%
 
 # Integrare AEM Headless e Target
 
-Scopri come integrare AEM headless con Adobe Target esportando frammenti di contenuto AEM in Adobe Target e utilizzarli per personalizzare esperienze headless utilizzando alloy.js dell’SDK web Adobe Experience Platform. L&#39;[app WKND React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) viene utilizzata per esplorare come aggiungere all&#39;esperienza un&#39;attività Target personalizzata che utilizza offerte con frammenti di contenuto, per promuovere un&#39;avventura WKND.
+Scopri come integrare AEM Headless con Adobe Target esportando frammenti di contenuto AEM in Adobe Target e utilizzarli per personalizzare esperienze headless utilizzando Adobe Experience Platform Web SDK alloy.js. L&#39;[app WKND React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) viene utilizzata per esplorare come aggiungere all&#39;esperienza un&#39;attività Target personalizzata che utilizza offerte con frammenti di contenuto, per promuovere un&#39;avventura WKND.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416585/?quality=12&learn=on)
 
 Il tutorial illustra i passaggi necessari per configurare AEM e Adobe Target:
 
-1. [Crea configurazione Adobe IMS per Adobe Target](#adobe-ims-configuration) nell&#39;istanza di creazione AEM
-2. [Crea Cloud Service Adobe Target](#adobe-target-cloud-service) nell&#39;Autore AEM
-3. [Applicare il Cloud Service Adobe Target alle cartelle di AEM Assets](#configure-asset-folders) in AEM Author
-4. [Autorizzazione per il Cloud Service Adobe Target](#permission) in Adobe Admin Console
+1. [Creare una configurazione Adobe IMS per Adobe Target](#adobe-ims-configuration) in AEM Author
+2. [Creare Adobe Target Cloud Service](#adobe-target-cloud-service) in AEM Author
+3. [Applicare Adobe Target Cloud Service alle cartelle di AEM Assets](#configure-asset-folders) in AEM Author
+4. [Autorizzazione per Adobe Target Cloud Service](#permission) in Adobe Admin Console
 5. [Esporta frammenti di contenuto](#export-content-fragments) da AEM Author a Target
 6. [Crea un&#39;attività utilizzando le offerte dei frammenti di contenuto](#activity) in Adobe Target
 7. [Creazione di uno stream di dati di Experience Platform](#datastream-id) in Experience Platform
-8. [Integra la personalizzazione in un&#39;app headless AEM basata su React](#code) tramite Adobe Web SDK.
+8. [Integra la personalizzazione in un&#39;app AEM headless basata su React](#code) tramite Adobe Web SDK.
 
 ## Configurazione Adobe IMS{#adobe-ims-configuration}
 
@@ -46,26 +46,26 @@ Consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416495/?quality=12&learn=on)
 
-## Cloud Service Adobe Target{#adobe-target-cloud-service}
+## Adobe Target Cloud Service{#adobe-target-cloud-service}
 
-Nell’AEM viene creato un Cloud Service Adobe Target per facilitare l’esportazione dei frammenti di contenuto in Adobe Target.
+In AEM viene creato un Cloud Service di Adobe Target per facilitare l’esportazione dei frammenti di contenuto in Adobe Target.
 
-Consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html) per istruzioni dettagliate su come creare un Cloud Service Adobe Target.
+Consulta [la documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html) per istruzioni dettagliate su come creare un Cloud Service di Adobe Target.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416499/?quality=12&learn=on)
 
 
 ## Configurare le cartelle di risorse{#configure-asset-folders}
 
-Il Cloud Service Adobe Target, configurato in una configurazione in base al contesto, deve essere applicato alla gerarchia di cartelle di AEM Assets che contiene i frammenti di contenuto da esportare in Adobe Target.
+Adobe Target Cloud Service, configurato in una configurazione in base al contesto, deve essere applicato alla gerarchia di cartelle di AEM Assets che contiene i frammenti di contenuto da esportare in Adobe Target.
 
 +++Espandi per istruzioni dettagliate
 
 1. Accedi al servizio __AEM Author__ come amministratore DAM
 1. Passa a __Assets > File__, individua la cartella risorse a cui è applicato `/conf`
 1. Seleziona la cartella delle risorse e fai clic su __Proprietà__ nella barra delle azioni in alto
-1. Seleziona la scheda __Cloud Service__
-1. Verificare che la configurazione cloud sia impostata sulla configurazione in base al contesto (`/conf`) che contiene la configurazione dei Cloud Service Adobe Target.
+1. Seleziona la scheda __Servizi cloud__
+1. Verificare che la configurazione cloud sia impostata sulla configurazione in base al contesto (`/conf`) che contiene la configurazione di Adobe Target Cloud Services.
 1. Seleziona __Adobe Target__ dal menu a discesa __Configurazioni Cloud Service__.
 1. Seleziona __Salva e chiudi__ in alto a destra
 
@@ -75,7 +75,7 @@ Il Cloud Service Adobe Target, configurato in una configurazione in base al cont
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416504/?quality=12&learn=on)
 
-## Autorizzare l’integrazione di AEM Target{#permission}
+## Autorizzare l’integrazione con AEM Target{#permission}
 
 Per esportare i frammenti di contenuto in Adobe Target, è necessario assegnare all&#39;integrazione Adobe Target, che si presenta come progetto developer.adobe.com, il ruolo di prodotto __Editor__ in Adobe Admin Console.
 
@@ -111,13 +111,13 @@ I frammenti di contenuto presenti nella gerarchia di cartelle di AEM Assets [con
       + Seleziona l&#39;icona __Anteprima__ nel pannello laterale sinistro
       + La rappresentazione JSON esportata in Adobe Target viene visualizzata nella vista principale
 1. Accedi a [Adobe Experience Cloud](https://experience.adobe.com) con un utente con il ruolo di editor per Adobe Target
-1. Dall&#39;[Experience Cloud](https://experience.adobe.com), seleziona __Target__ dal commutatore del prodotto in alto a destra per aprire Adobe Target.
+1. Da [Experience Cloud](https://experience.adobe.com), seleziona __Target__ dal selettore prodotti in alto a destra per aprire Adobe Target.
 1. Assicurati che il Workspace predefinito sia selezionato nel __commutatore Workspace__ in alto a destra.
 1. Seleziona la scheda __Offerte__ nella navigazione superiore
 1. Seleziona il menu a discesa __Tipo__ e seleziona __Frammenti di contenuto__
-1. Verifica che il frammento di contenuto esportato dall’AEM venga visualizzato nell’elenco
+1. Verifica che il frammento di contenuto esportato da AEM venga visualizzato nell’elenco
    + Passa il puntatore del mouse sull&#39;offerta e seleziona il pulsante __Visualizza__
-   + Rivedi le __Informazioni sull&#39;offerta__ e osserva il __collegamento diretto AEM__ che apre il frammento di contenuto direttamente nel servizio di authoring AEM
+   + Rivedi le __Informazioni sull&#39;offerta__ e osserva il __collegamento profondo AEM__ che apre il frammento di contenuto direttamente nel servizio AEM Author
 
 +++
 
@@ -127,7 +127,7 @@ I frammenti di contenuto presenti nella gerarchia di cartelle di AEM Assets [con
 
 ## Attività Target con offerte per frammenti di contenuto{#activity}
 
-In Adobe Target, è possibile creare un’attività che utilizza come contenuto il codice JSON per l’offerta di frammenti di contenuto, consentendo esperienze personalizzate in app headless con contenuti creati e gestiti nell’AEM.
+In Adobe Target, è possibile creare un’attività che utilizza come contenuto il codice JSON per l’offerta di frammenti di contenuto, per creare esperienze personalizzate in app headless con contenuti creati e gestiti in AEM.
 
 In questo esempio utilizziamo una semplice attività A/B, ma è possibile utilizzare qualsiasi attività Target.
 
@@ -156,7 +156,7 @@ In questo esempio utilizziamo una semplice attività A/B, ma è possibile utiliz
 1. Seleziona __Salva e chiudi__ e assegnagli un nome significativo
 1. Dall&#39;attività in Adobe Target, seleziona __Attiva__ dal menu a discesa Inattivo/Attiva/Archivia in alto a destra.
 
-L&#39;attività Adobe Target che esegue il targeting della posizione `wknd-adventure-promo` può ora essere integrata ed esposta in un&#39;app headless AEM.
+L&#39;attività Adobe Target che esegue il targeting della posizione `wknd-adventure-promo` può ora essere integrata ed esposta in un&#39;app AEM Headless.
 
 +++
 
@@ -166,7 +166,7 @@ L&#39;attività Adobe Target che esegue il targeting della posizione `wknd-adven
 
 ## ID dello stream di dati di Experience Platform{#datastream-id}
 
-È necessario un ID [Adobe Experience Platform Datastream](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html) per consentire alle app headless AEM di interagire con Adobe Target utilizzando [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).
+È necessario un ID [Adobe Experience Platform Datastream](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html) per consentire alle app AEM Headless di interagire con Adobe Target utilizzando [Adobe Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).
 
 +++Espandi per istruzioni dettagliate
 
@@ -194,17 +194,17 @@ L&#39;attività Adobe Target che esegue il targeting della posizione `wknd-adven
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416500/?quality=12&learn=on)
 
-## Aggiungere personalizzazione a un’app AEM headless{#code}
+## Aggiungere personalizzazione a un’app AEM Headless{#code}
 
 Questo tutorial illustra come personalizzare una semplice app React utilizzando le offerte relative ai frammenti di contenuto in Adobe Target tramite [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html). Questo approccio può essere utilizzato per personalizzare qualsiasi esperienza web basata su JavaScript.
 
-Le esperienze mobili Android™ e iOS possono essere personalizzate seguendo modelli simili utilizzando l&#39;[SDK mobile di Adobe](https://developer.adobe.com/client-sdks/documentation/).
+Le esperienze mobili Android™ e iOS possono essere personalizzate seguendo modelli simili utilizzando [Adobe Mobile SDK](https://developer.adobe.com/client-sdks/documentation/).
 
 ### Prerequisiti
 
 + Node.js 14
 + Git
-+ Installazione di [WKND Shared 2.1.4+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) in AEM as a Cloud Author e nei servizi Publish
++ Installazione di [WKND Shared 2.1.4+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) in AEM as a Cloud Author e Publish Services
 
 ### Configurazione
 
@@ -239,14 +239,14 @@ Le esperienze mobili Android™ e iOS possono essere personalizzate seguendo mod
    $ npm install @adobe/alloy
    ```
 
-   L’SDK per web può essere utilizzato nel codice per recuperare il JSON offerta frammento di contenuto per posizione di attività.
+   Il SDK web può essere utilizzato nel codice per recuperare il JSON offerta frammento di contenuto per posizione di attività.
 
-   Durante la configurazione dell’SDK web, sono necessari due ID:
+   Durante la configurazione del Web SDK sono necessari due ID:
 
    + `edgeConfigId` che è l&#39;[ID Datastream](#datastream-id)
-   + `orgId` l&#39;ID organizzazione Adobe AEM as a Cloud Service/Target disponibile all&#39;indirizzo __Experience Cloud > Profilo > Informazioni account > ID organizzazione corrente__
+   + `orgId` l&#39;ID organizzazione AEM as a Cloud Service/Target Adobe reperibile in __Experience Cloud > Profilo > Informazioni account > ID organizzazione corrente__
 
-   Quando si richiama Web SDK, la posizione dell&#39;attività Adobe Target (nel nostro esempio, `wknd-adventure-promo`) deve essere impostata come valore nell&#39;array `decisionScopes`.
+   Quando si richiama il Web SDK, la posizione dell&#39;attività di Adobe Target (nel nostro esempio, `wknd-adventure-promo`) deve essere impostata come valore nell&#39;array `decisionScopes`.
 
    ```javascript
    import { createInstance } from "@adobe/alloy";
@@ -466,4 +466,4 @@ Le esperienze mobili Android™ e iOS possono essere personalizzate seguendo mod
 
 ## Congratulazioni.
 
-Ora che abbiamo configurato AEM as a Cloud Service per esportare frammenti di contenuto in Adobe Target, abbiamo utilizzato le Offerte di frammenti di contenuto in un’attività Adobe Target e abbiamo visualizzato tale attività in un’app AEM headless, personalizzando l’esperienza.
+Ora che abbiamo configurato AEM as a Cloud Service per esportare frammenti di contenuto in Adobe Target, abbiamo utilizzato le Offerte di frammenti di contenuto in un’attività Adobe Target e abbiamo visualizzato tale attività in un’app headless AEM, personalizzando l’esperienza.

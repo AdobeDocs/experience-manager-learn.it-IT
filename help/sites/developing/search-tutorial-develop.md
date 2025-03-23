@@ -1,7 +1,7 @@
 ---
 title: Guida all’implementazione della ricerca semplice
-description: L’implementazione di Simple Search è costituita dai materiali del laboratorio AEM Search Demystified del Summit 2017. Questa pagina contiene i materiali di questo laboratorio. Per una visita guidata del laboratorio, visualizzare la cartella di lavoro del laboratorio nella sezione Presentazione di questa pagina.
-version: 6.4, 6.5
+description: L’implementazione di Ricerca semplice è costituita dai materiali del laboratorio AEM Search Demystified del Summit 2017. Questa pagina contiene i materiali di questo laboratorio. Per una visita guidata del laboratorio, visualizzare la cartella di lavoro del laboratorio nella sezione Presentazione di questa pagina.
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Search
 topic: Development
 role: Developer
@@ -11,7 +11,7 @@ exl-id: aa268c5f-d29e-4868-a58b-444379cb83be
 last-substantial-update: 2022-08-10T00:00:00Z
 thumbnail: 32090.jpg
 duration: 138
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 2%
@@ -35,7 +35,7 @@ L&#39;implementazione della ricerca semplice è costituita dai materiali di **Ad
 
 * [Gestione indice](http://localhost:4502/libs/granite/operations/content/diagnosis/tool.html/granite_oakindexmanager)
 * [Spiega query](http://localhost:4502/libs/granite/operations/content/diagnosis/tool.html/granite_queryperformance)
-* [CRXDE Liti](http://localhost:4502/crx/de/index.jsp#/oak%3Aindex/cqPageLucene) > /oak:index/cqPageLucene
+* [CRXDE Lite](http://localhost:4502/crx/de/index.jsp#/oak%3Aindex/cqPageLucene) > /oak:index/cqPageLucene
 * [Gestione pacchetti CRX](http://localhost:4502/crx/packmgr/index.jsp)
 * [Debugger QueryBuilder](http://localhost:4502/libs/cq/search/content/querydebug.html?)
 * [Generatore definizione indice Oak](https://oakutils.appspot.com/generate/index)
@@ -78,7 +78,7 @@ L&#39;implementazione della ricerca semplice è costituita dai materiali di **Ad
 * [Modelli Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Esportatore modello Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
 * [API QueryBuilder](https://experienceleague.adobe.com/docs/)
-* [Plug-in Chrome AEM](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) ([Pagina documentazione](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
+* [Plug-in di AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) ([Pagina documentazione](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## Correzioni e follow-up {#corrections-and-follow-up}
 
@@ -107,11 +107,11 @@ Correzioni e chiarimenti delle discussioni di laboratorio e risposte alle domand
    * Le query DEVONO specificare una restrizione di percorso uguale all&#39;ambito del percorso di query dell&#39;indice oppure essere discendenti di.
    * Anche indici con ambito più ampio (ad esempio `/oak:index/cqPageLucene`) indicizzeranno i dati, con conseguente inserimento di duplicati e costo di utilizzo del disco.
    * Può essere necessaria una gestione duplicativa della configurazione (ad es. l’aggiunta degli stessi indexRules a più indici tenant se questi devono soddisfare gli stessi set di query)
-   * Questo approccio è consigliato sul livello Publish dell’AEM per la ricerca personalizzata del sito, in quanto nell’Autore dell’AEM è comune che le query vengano eseguite in alto nella struttura del contenuto per tenant diversi (ad esempio, tramite OmniSearch); definizioni di indice diverse possono causare comportamenti diversi solo in base alla restrizione del percorso.
+   * Questo approccio è consigliato sul livello di pubblicazione di AEM per la ricerca personalizzata del sito, come in AEM Author, in genere le query vengono eseguite in cima alla struttura del contenuto per tenant diversi (ad esempio, tramite OmniSearch); definizioni di indice diverse possono causare comportamenti diversi solo in base alla restrizione del percorso.
 
 3. **Dove si trova un elenco di tutti gli analizzatori disponibili?**
 
-   Oak espone un set di elementi di configurazione dell’analizzatore forniti da Lucene da utilizzare nell’AEM.
+   Oak espone un set di elementi di configurazione dell’analizzatore forniti da lucene da utilizzare in AEM.
 
    * [Documentazione di Apache Oak Analyzers](https://jackrabbit.apache.org/oak/docs/query/lucene.html#analyzers)
       * [Tokenizer](https://cwiki.apache.org/confluence/display/solr/Tokenizers)
@@ -138,7 +138,7 @@ Correzioni e chiarimenti delle discussioni di laboratorio e risposte alle domand
    PLAN: [cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* */ union [dam:Asset] as [a] /* lucene:damAssetLucene(/oak:index/damAssetLucene) *:* */
    ```
 
-   Esplora la query e i risultati tramite [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) e [AEM plug-in Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   Esplora query e risultati tramite [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) e [AEM Chrome Plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
 
 5. **Come eseguire ricerche in più percorsi nella stessa query?**
 
@@ -162,4 +162,4 @@ Correzioni e chiarimenti delle discussioni di laboratorio e risposte alle domand
    PLAN: [cq:Page] as [a] /* traverse "/content/docs/en/6-2//*" where isdescendantnode([a], [/content/docs/en/6-2]) */ union [cq:Page] as [a] /* traverse "/content/docs/en/6-3//*" where isdescendantnode([a], [/content/docs/en/6-3]) */
    ```
 
-   Esplora la query e i risultati tramite [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) e [AEM plug-in Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
+   Esplora query e risultati tramite [QueryBuilder Debugger](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) e [AEM Chrome Plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).

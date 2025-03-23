@@ -1,25 +1,25 @@
 ---
-title: Concetti avanzati di AEM headless - GraphQL
-description: Tutorial end-to-end che illustra concetti avanzati delle API GraphQL di Adobe Experience Manager (AEM).
-version: Cloud Service
+title: Concetti avanzati di AEM Headless - GraphQL
+description: Tutorial end-to-end che illustra i concetti avanzati delle API GraphQL di Adobe Experience Manager (AEM).
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
 duration: 441
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
 
 ---
 
-# Concetti avanzati di AEM headless
+# Concetti avanzati di AEM Headless
 
 {{aem-headless-trials-promo}}
 
-Questo tutorial end-to-end continua il [tutorial di base](../multi-step/overview.md) che ha trattato le nozioni di base di Adobe Experience Manager (AEM) Headless e GraphQL. Il tutorial avanzato illustra gli aspetti approfonditi dell’utilizzo dei modelli per frammenti di contenuto, dei frammenti di contenuto e delle query persistenti GraphQL dell’AEM, incluso l’utilizzo delle query persistenti GraphQL in un’applicazione client.
+Questo tutorial end-to-end continua il [tutorial di base](../multi-step/overview.md) che ha trattato le nozioni di base di Adobe Experience Manager (AEM) Headless e GraphQL. Il tutorial avanzato illustra gli aspetti approfonditi dell’utilizzo dei modelli per frammenti di contenuto, dei frammenti di contenuto e delle query persistenti di AEM GraphQL, incluso l’utilizzo delle query persistenti GraphQL in un’applicazione client.
 
 ## Prerequisiti
 
@@ -29,7 +29,7 @@ Ti consigliamo di completare le [esercitazioni di base](../multi-step/overview.m
 
 >[!CAUTION]
 >
->Se non hai accesso all&#39;ambiente AEM as a Cloud Service, puoi completare la [Configurazione rapida AEM Headless tramite l&#39;SDK locale](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html). Tuttavia, è importante notare che alcune pagine dell’interfaccia utente del prodotto, come la navigazione per frammenti di contenuto, sono diverse.
+>Se non hai accesso all&#39;ambiente AEM as a Cloud Service, puoi completare [la configurazione rapida di AEM Headless utilizzando il SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html) locale. Tuttavia, è importante notare che alcune pagine dell’interfaccia utente del prodotto, come la navigazione per frammenti di contenuto, sono diverse.
 
 
 
@@ -39,29 +39,29 @@ Questo tutorial tratta i seguenti argomenti:
 
 * Crea modelli per frammenti di contenuto utilizzando le regole di convalida e tipi di dati più avanzati, ad esempio Segnaposto scheda, riferimenti a frammenti nidificati, oggetti JSON e tipi di dati Data e ora.
 * Creare frammenti di contenuto quando si lavora con contenuti nidificati e riferimenti a frammenti e configurare criteri di cartella per la governance dell’authoring dei frammenti di contenuto.
-* Esplora le funzionalità API GraphQL dell’AEM utilizzando le query GraphQL con variabili e direttive.
-* Mantenere le query GraphQL con i parametri nell’AEM e imparare a utilizzare i parametri di controllo cache con le query persistenti.
-* Integra le richieste di query persistenti nell’app di esempio WKND GraphQL React di utilizzando l’SDK di JavaScript headless dell’AEM.
+* Esplora le funzionalità API di AEM GraphQL utilizzando le query GraphQL con variabili e direttive.
+* Rendere persistenti le query GraphQL con i parametri in AEM e imparare a utilizzare i parametri di controllo cache con le query persistenti.
+* Integra le richieste di query persistenti nell’app WKND GraphQL React di esempio utilizzando AEM Headless JavaScript SDK.
 
-## Panoramica sui concetti avanzati di AEM headless
+## Panoramica sui concetti avanzati di AEM Headless
 
-Il video seguente offre una panoramica di alto livello dei concetti descritti in questa esercitazione. Il tutorial include la definizione di modelli per frammenti di contenuto con tipi di dati più avanzati, la nidificazione di frammenti di contenuto e le query GraphQL persistenti nell’AEM.
+Il video seguente offre una panoramica di alto livello dei concetti descritti in questa esercitazione. Il tutorial include la definizione di modelli per frammenti di contenuto con tipi di dati più avanzati, la nidificazione di frammenti di contenuto e le query GraphQL persistenti in AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340035?quality=12&learn=on)
 
 >[!CAUTION]
 >
->Questo video (al minuto 2:25) parla dell’installazione dell’editor di query GraphiQL tramite Gestione pacchetti per esplorare le query GraphQL. Tuttavia, nelle versioni più recenti di AEM come Cloud Service viene fornito un **GraphiQL Explorer** incorporato, pertanto l&#39;installazione del pacchetto non è richiesta. Per ulteriori informazioni, vedere [Utilizzo dell&#39;IDE GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html).
+>Questo video (al minuto 2:25) parla dell’installazione dell’editor di query GraphiQL tramite Gestione pacchetti per esplorare le query GraphQL. Tuttavia, nelle versioni più recenti di AEM as Cloud Service è fornito un **GraphiQL Explorer** incorporato, pertanto l&#39;installazione del pacchetto non è richiesta. Per ulteriori informazioni, vedere [Utilizzo dell&#39;IDE GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html).
 
 
 ## Configurazione del progetto
 
-Il progetto del sito WKND dispone di tutte le configurazioni necessarie, quindi puoi avviare l&#39;esercitazione subito dopo aver completato la [configurazione rapida](../quick-setup/cloud-service.md). In questa sezione vengono evidenziati solo alcuni passaggi importanti che puoi utilizzare per creare un tuo progetto AEM headless.
+Il progetto del sito WKND dispone di tutte le configurazioni necessarie, quindi puoi avviare l&#39;esercitazione subito dopo aver completato la [configurazione rapida](../quick-setup/cloud-service.md). In questa sezione vengono evidenziati solo alcuni passaggi importanti che puoi utilizzare per creare un tuo progetto AEM Headless.
 
 
 ### Verifica configurazione esistente
 
-Il primo passo per avviare un nuovo progetto in AEM è la creazione della relativa configurazione, come area di lavoro e per creare endpoint API GraphQL. Per rivedere o creare una configurazione, passa a **Strumenti** > **Generale** > **Browser configurazioni**.
+Il primo passaggio per avviare un nuovo progetto in AEM consiste nel crearne la configurazione, come area di lavoro e per creare endpoint API GraphQL. Per rivedere o creare una configurazione, passa a **Strumenti** > **Generale** > **Browser configurazioni**.
 
 ![Passa a Browser configurazioni](assets/overview/create-configuration.png)
 
@@ -81,13 +81,13 @@ Osservare che `WKND Shared Endpoint` è già stato creato. Per creare un endpoin
 
 >[!NOTE]
 >
-> Dopo aver salvato l’endpoint, viene visualizzata una finestra modale per la visita alla console Sicurezza, che consente di regolare le impostazioni di sicurezza se si desidera configurare l’accesso all’endpoint. Tuttavia, le autorizzazioni di sicurezza stesse non rientrano nell’ambito di questa esercitazione. Per ulteriori informazioni, consulta la [documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
+> Dopo aver salvato l’endpoint, viene visualizzata una finestra modale per la visita alla console Sicurezza, che consente di regolare le impostazioni di sicurezza se si desidera configurare l’accesso all’endpoint. Tuttavia, le autorizzazioni di sicurezza stesse non rientrano nell’ambito di questa esercitazione. Per ulteriori informazioni, consulta la [documentazione di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
 
 ### Rivedi la struttura del contenuto WKND e la cartella principale della lingua
 
-Una struttura dei contenuti ben definita è fondamentale per il successo dell’implementazione headless dell’AEM. È utile per la scalabilità, l’usabilità e la gestione delle autorizzazioni dei contenuti.
+Una struttura dei contenuti ben definita è fondamentale per il successo dell’implementazione headless di AEM. È utile per la scalabilità, l’usabilità e la gestione delle autorizzazioni dei contenuti.
 
-Una cartella principale della lingua è una cartella il cui nome contiene un codice della lingua ISO, ad esempio EN o FR. Il sistema di gestione della traduzione AEM utilizza queste cartelle per definire la lingua principale dei contenuti e le lingue per la traduzione dei contenuti.
+Una cartella principale della lingua è una cartella il cui nome contiene un codice della lingua ISO, ad esempio EN o FR. Il sistema di gestione della traduzione di AEM utilizza queste cartelle per definire la lingua principale dei contenuti e le lingue per la traduzione dei contenuti.
 
 Vai a **Navigazione** > **Assets** > **File**.
 
@@ -107,7 +107,7 @@ Per assegnare la cartella principale della lingua alla configurazione, seleziona
 
 ![Seleziona proprietà](assets/overview/properties.png)
 
-Quindi, passa alla scheda **Cloud Service** e seleziona l&#39;icona della cartella nel campo **Configurazione cloud**.
+Quindi, passa alla scheda **Servizi cloud** e seleziona l&#39;icona della cartella nel campo **Configurazione cloud**.
 
 ![Configurazione cloud](assets/overview/cloud-conf.png)
 
@@ -115,7 +115,7 @@ Nella finestra modale visualizzata, seleziona la configurazione creata in preced
 
 ### Best practice
 
-Di seguito sono riportate le best practice da seguire per creare un progetto personalizzato in AEM:
+Di seguito sono riportate le best practice per la creazione di un progetto personalizzato in AEM:
 
 * La gerarchia delle cartelle deve essere modellata tenendo presente la localizzazione e la traduzione. In altre parole, le cartelle delle lingue devono essere nidificate all’interno delle cartelle di configurazione, il che consente di tradurre facilmente il contenuto all’interno di tali cartelle.
 * La gerarchia delle cartelle deve essere semplice e lineare. Evita di spostare o rinominare cartelle e frammenti in un secondo momento, soprattutto dopo la pubblicazione per l’utilizzo live, in quanto modifica i percorsi che possono influenzare i riferimenti ai frammenti e le query GraphQL.
@@ -128,7 +128,7 @@ Sono disponibili due **pacchetti** AEM che possono essere installati tramite [Ge
 * [Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip) contiene la soluzione completata per i capitoli 1-4, inclusi i nuovi modelli per frammenti di contenuto, frammenti di contenuto e query GraphQL persistenti. Utile per chi desidera passare direttamente al capitolo [Integrazione applicazioni client](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md).
 
 
-Il progetto [React App - Advanced Tutorial - WKND Adventures](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/advanced-tutorial/README.md) è disponibile per esaminare ed esplorare l&#39;applicazione di esempio. Questa applicazione di esempio recupera il contenuto dall’AEM richiamando le query GraphQL persistenti ed esegue il rendering in un’esperienza coinvolgente.
+Il progetto [React App - Advanced Tutorial - WKND Adventures](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/advanced-tutorial/README.md) è disponibile per esaminare ed esplorare l&#39;applicazione di esempio. Questa applicazione di esempio recupera il contenuto da AEM richiamando le query GraphQL persistenti ed esegue il rendering in un’esperienza coinvolgente.
 
 ## Guida introduttiva
 

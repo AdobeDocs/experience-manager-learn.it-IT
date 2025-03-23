@@ -1,8 +1,8 @@
 ---
 title: Esporta frammento di contenuto in XML
-description: Scopri come esportare un frammento di contenuto dall’Editor frammento di contenuto AEM
+description: Scopri come esportare un frammento di contenuto dall’Editor frammento di contenuto di AEM
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 70adb2c1-9e08-4a4b-b8f1-16bddd84c23d
 duration: 307
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 1%
@@ -31,7 +31,7 @@ I pulsanti di intestazione possono esistere come un singolo pulsante o come un p
 
 Questo esempio si estende al punto di estensione `headerBar` per aggiungere un pulsante personalizzato all’Editor frammento di contenuto.
 
-| Interfaccia utente AEM estesa | Punto di estensione |
+| Interfaccia utente di AEM estesa | Punto di estensione |
 | ------------------------ | --------------------- | 
 | [Editor frammento di contenuto](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Menu intestazione](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/header-menu/) |
 
@@ -45,7 +45,7 @@ Il codice mostra come è possibile ottenere il contenuto del frammento di conten
 
 `ExtensionRegistration.js`, mappato alla route index.html, è il punto di ingresso per l&#39;estensione AEM e definisce:
 
-+ La posizione del pulsante di estensione viene visualizzata (`headerMenu`) nell&#39;esperienza di creazione AEM
++ La posizione del pulsante dell&#39;estensione viene visualizzata (`headerMenu`) nell&#39;esperienza di authoring di AEM
 + Definizione del pulsante di estensione nella funzione getButton()
 + Il gestore di clic per il pulsante, nella funzione onClick() o un elenco di elementi secondari e i relativi gestori di clic.
 

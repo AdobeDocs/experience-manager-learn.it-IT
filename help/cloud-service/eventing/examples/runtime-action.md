@@ -1,7 +1,7 @@
 ---
 title: Azione Adobe I/O Runtime ed eventi AEM
 description: Scopri come ricevere eventi AEM utilizzando l’azione Adobe I/O Runtime e rivedere i dettagli dell’evento come payload, intestazioni e metadati.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
 role: Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-01-29T00:00:00Z
 jira: KT-14878
 thumbnail: KT-14878.jpeg
 exl-id: b1c127a8-24e7-4521-b535-60589a1391bf
-source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Scopri come ricevere eventi AEM utilizzando l&#39;azione [Adobe I/O Runtime](htt
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427053?quality=12&learn=on)
 
-Adobe I/O Runtime è una piattaforma senza server che consente l’esecuzione del codice in risposta a eventi Adobi I/O. In questo modo è possibile creare applicazioni basate su eventi senza preoccuparsi dell&#39;infrastruttura.
+Adobe I/O Runtime è una piattaforma senza server che consente l’esecuzione del codice in risposta a Adobe I/O Events. In questo modo è possibile creare applicazioni basate su eventi senza preoccuparsi dell&#39;infrastruttura.
 
 In questo esempio si crea un&#39;azione [Azione](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) Adobe I/O Runtime che riceve eventi AEM e registra i dettagli dell&#39;evento.
 https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/
@@ -80,7 +80,7 @@ Per aggiungere un&#39;azione Adobe I/O Runtime al progetto, è necessario inizia
 
 - Apri il progetto nell’IDE preferito, ad esempio VSCode.
 
-- Il _modello di estendibilità_ (`@adobe/generator-app-excshell`) selezionato fornisce un&#39;azione di runtime generica. Il codice si trova nel file `src/dx-excshell-1/actions/generic/index.js`. Aggiorniamolo per semplificarlo, registra i dettagli dell’evento e restituisce una risposta di successo. Tuttavia, nell’esempio successivo, viene migliorato per elaborare gli Eventi AEM ricevuti.
+- Il _modello di estendibilità_ (`@adobe/generator-app-excshell`) selezionato fornisce un&#39;azione di runtime generica. Il codice si trova nel file `src/dx-excshell-1/actions/generic/index.js`. Aggiorniamolo per semplificarlo, registra i dettagli dell’evento e restituisce una risposta di successo. Tuttavia, nell’esempio successivo, viene migliorato per elaborare gli eventi AEM ricevuti.
 
   ```javascript
   const fetch = require("node-fetch");
@@ -141,7 +141,7 @@ Per ricevere gli eventi AEM ed eseguire l’azione Adobe I/O Runtime creata nel 
 
   ![Aggiungi servizio - Configura progetto](../assets/examples/runtime-action/add-io-management-api.png)
 
-- Fare clic sul pulsante **Aggiungi servizio** e selezionare l&#39;opzione **Evento**. Nella finestra di dialogo **Aggiungi eventi**, seleziona **Experience Cloud** > **AEM Sites**, quindi fai clic su **Avanti**. Segui i passaggi di configurazione aggiuntivi, seleziona l’istanza AEMCS, i tipi di evento e altri dettagli.
+- Fare clic sul pulsante **Aggiungi servizio** e selezionare l&#39;opzione **Evento**. Nella finestra di dialogo **Aggiungi eventi**, seleziona **Experience Cloud** > **AEM Sites** e fai clic su **Avanti**. Segui i passaggi di configurazione aggiuntivi, seleziona l’istanza AEMCS, i tipi di evento e altri dettagli.
 
 - Infine, nel passaggio **Ricezione degli eventi**, espandi l&#39;opzione **Azione di runtime** e seleziona l&#39;azione _generica_ creata nel passaggio precedente. Fai clic su **Salva eventi configurati**.
 
@@ -152,9 +152,9 @@ Per ricevere gli eventi AEM ed eseguire l’azione Adobe I/O Runtime creata nel 
   ![Dettagli registrazione evento](../assets/examples/runtime-action/debug-tracing-challenge-probe.png)
 
 
-## Attivare gli eventi AEM
+## Attivare eventi AEM
 
-Per attivare gli eventi AEM dall’ambiente AEM as a Cloud Service registrato nel progetto Adobe Developer Console precedente, effettua le seguenti operazioni:
+Per attivare gli eventi di AEM dall’ambiente AEM as a Cloud Service registrato nel progetto Adobe Developer Console precedente, effettua le seguenti operazioni:
 
 - Accedi all&#39;ambiente di authoring AEM as a Cloud Service tramite [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
@@ -162,7 +162,7 @@ Per attivare gli eventi AEM dall’ambiente AEM as a Cloud Service registrato ne
 
 ## Rivedi dettagli evento
 
-Dopo aver completato i passaggi precedenti, dovresti vedere gli Eventi AEM consegnati all’azione generica.
+Dopo aver completato i passaggi precedenti, dovresti vedere gli eventi AEM consegnati all’azione generica.
 
 È possibile esaminare i dettagli dell&#39;evento nella scheda **Traccia debug** dei dettagli Registrazione evento.
 
@@ -171,4 +171,4 @@ Dopo aver completato i passaggi precedenti, dovresti vedere gli Eventi AEM conse
 
 ## Passaggi successivi
 
-Nell’esempio successivo, miglioriamo questa azione per elaborare gli eventi AEM, richiamare il servizio di authoring AEM per ottenere i dettagli del contenuto, archiviare i dettagli nell’archiviazione Adobe I/O Runtime e visualizzarli tramite l’applicazione a pagina singola (SPA).
+Nell’esempio successivo, miglioriamo questa azione per elaborare gli eventi AEM, richiamare il servizio AEM Author per ottenere i dettagli del contenuto, archiviare i dettagli nell’archiviazione Adobe I/O Runtime e visualizzarli tramite l’applicazione a pagina singola (SPA).

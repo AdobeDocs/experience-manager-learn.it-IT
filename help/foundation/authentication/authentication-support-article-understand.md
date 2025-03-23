@@ -1,7 +1,7 @@
 ---
 title: Supporto dell’autenticazione in AEM 6.x
-description: Una visione consolidata dei meccanismi di autenticazione supportati da AEM 6.x.
-version: 6.4, 6.5
+description: Una vista consolidata dei meccanismi di autenticazione supportati da AEM 6.x.
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: User and Groups
 doc-type: Article
 jira: KT-406
@@ -12,7 +12,7 @@ exl-id: 96c542ae-6ab6-4d8a-94df-a58b03469320
 last-substantial-update: 2022-09-10T00:00:00Z
 thumbnail: KT-406.jpg
 duration: 22
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 7%
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 # Supporto dell’autenticazione in AEM 6.x
 
-Una visione consolidata dei meccanismi di autenticazione (e occasionalmente di autorizzazione) supportati dall’AEM.
+Una visualizzazione consolidata dei meccanismi di autenticazione (e occasionalmente di autorizzazione) supportati da AEM.
 
 *Nella tabella seguente viene descritto come gli utenti possono eseguire l&#39;autenticazione in AEM.*
 
@@ -95,4 +95,4 @@ Una visione consolidata dei meccanismi di autenticazione (e occasionalmente di a
     </tbody>
 </table>
 
-⁕ *Fornito tramite progetti community, ma non direttamente supportato dall&#39;Adobe.*
+⁕ *Fornito tramite progetti community, ma non direttamente supportato da Adobe.*

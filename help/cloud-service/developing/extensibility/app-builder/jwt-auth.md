@@ -2,7 +2,7 @@
 title: Generare un token di accesso JWT nell’azione App Builder
 description: Scopri come generare un token di accesso utilizzando le credenziali JWT per l’utilizzo in un’azione App Builder.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Intermediate
@@ -10,7 +10,7 @@ jira: KT-11743
 last-substantial-update: 2023-01-17T00:00:00Z
 exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
 duration: 151
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Generare un token di accesso JWT nell’azione App Builder
 
-Potrebbe essere necessario che le azioni App Builder interagiscano con le API Adobe associate ai progetti Adobe Developer Console in cui viene distribuita anche l’app App Builder.
+Potrebbe essere necessario che le azioni di App Builder interagiscano con le API di Adobe associate ai progetti Adobe Developer Console in cui viene distribuita anche l’app App Builder.
 
 Potrebbe essere necessario che l’azione App Builder generi un token di accesso JWT associato al progetto Adobe Developer Console desiderato.
 
@@ -50,7 +50,7 @@ I valori per `JWT_CLIENT_ID`, `JWT_CLIENT_SECRET`, `JWT_TECHNICAL_ACCOUNT_ID`, `
 
 ### Metascopi
 
-Determina le API Adobe e i relativi metascopi con cui l’azione App Builder interagisce. Elenca i metascopi con delimitatori di virgola nella chiave `JWT_METASCOPES`. I metascopi validi sono elencati nella [documentazione JWT Metascope di Adobe](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/).
+Determina le API di Adobe e i relativi metascopi con cui l’azione di App Builder interagisce. Elenca i metascopi con delimitatori di virgola nella chiave `JWT_METASCOPES`. I metascopi validi sono elencati nella [documentazione sul metascopio JWT di Adobe](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/).
 
 
 Ad esempio, il seguente valore potrebbe essere aggiunto alla chiave `JWT_METASCOPES` in `.env`:

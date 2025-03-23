@@ -1,7 +1,7 @@
 ---
-title: Utilizzo dell’SDK headless dell’AEM
-description: Scopri come eseguire query GraphQL utilizzando l’SDK headless dell’AEM.
-version: Cloud Service
+title: Utilizzo di AEM Headless SDK
+description: Scopri come eseguire query GraphQL utilizzando AEM Headless SDK.
+version: Experience Manager as a Cloud Service
 topic: Headless
 feature: GraphQL API
 role: Developer
@@ -10,18 +10,18 @@ jira: KT-10269
 thumbnail: KT-10269.jpeg
 exl-id: 922a464a-2286-4132-9af8-f5a1fb5ce268
 duration: 200
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 6%
 
 ---
 
-# SDK headless per AEM
+# AEM Headless SDK
 
-L’SDK headless dell’AEM è un set di librerie che possono essere utilizzate dai client per interagire in modo rapido e semplice con le API headless dell’AEM tramite HTTP.
+AEM Headless SDK è un set di librerie che possono essere utilizzate dai client per interagire in modo rapido e semplice con le API AEM Headless tramite HTTP.
 
-L’SDK headless dell’AEM è disponibile per diverse piattaforme:
+AEM Headless SDK è disponibile per varie piattaforme:
 
 + [SDK headless di AEM per browser lato client (JavaScript)](https://github.com/adobe/aem-headless-client-js)
 + [SDK headless di AEM per lato server/Node.js (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
@@ -29,13 +29,13 @@ L’SDK headless dell’AEM è disponibile per diverse piattaforme:
 
 ## Query GraphQL persistenti
 
-L&#39;esecuzione di query AEM tramite GraphQL tramite query persistenti (anziché [query GraphQL definite dal client](#graphl-queries)) consente agli sviluppatori di rendere persistente una query (ma non i relativi risultati) nell&#39;AEM e quindi di richiedere l&#39;esecuzione della query per nome. Le query persistenti sono simili al concetto di stored procedure nei database SQL.
+L&#39;esecuzione di query in AEM tramite GraphQL tramite query persistenti (anziché [query GraphQL definite dal client](#graphl-queries)) consente agli sviluppatori di rendere persistente una query (ma non i relativi risultati) in AEM e quindi di richiedere l&#39;esecuzione della query per nome. Le query persistenti sono simili al concetto di stored procedure nei database SQL.
 
-Le query persistenti sono più performanti delle query GraphQL definite dal client, in quanto vengono eseguite utilizzando HTTP GET, che può essere memorizzato nella cache ai livelli CDN e AEM Dispatcher. Anche le query persistenti diventano effettive, definiscono un’API e riducono la necessità per lo sviluppatore di comprendere i dettagli di ciascun modello per frammenti di contenuto.
+Le query persistenti sono più performanti delle query GraphQL definite dal client, in quanto vengono eseguite utilizzando HTTP GET, che è possibile memorizzare nella cache ai livelli CDN e AEM Dispatcher. Anche le query persistenti diventano effettive, definiscono un’API e riducono la necessità per lo sviluppatore di comprendere i dettagli di ciascun modello per frammenti di contenuto.
 
 ### Esempi di codice{#persisted-graphql-queries-code-examples}
 
-Di seguito sono riportati alcuni esempi di codice per l’esecuzione di una query persistente di GraphQL nei confronti dell’AEM.
+Di seguito sono riportati alcuni esempi di codice per l’esecuzione di una query persistente di GraphQL su AEM.
 
 +++ Esempio di JavaScript
 
@@ -45,7 +45,7 @@ Installa [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-c
 $ npm i @adobe/aem-headless-client-js
 ```
 
-In questo esempio di codice viene illustrato come eseguire query su AEM utilizzando il modulo npm [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) utilizzando la sintassi `async/await`. L&#39;SDK headless dell&#39;AEM per JavaScript supporta anche la sintassi [Promise](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client).
+In questo esempio di codice viene illustrato come eseguire query in AEM utilizzando il modulo npm [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) utilizzando la sintassi `async/await`. AEM Headless SDK per JavaScript supporta anche la sintassi [Promise](https://github.com/adobe/aem-headless-client-js#use-aemheadless-client).
 
 Questo codice presuppone che una query persistente con il nome `wknd/adventureNames` sia stata creata in AEM Author e pubblicata in AEM Publish.
 
@@ -88,7 +88,7 @@ let { data, errors } = executePersistedQuery('wknd-shared/adventures-by-slug', {
 
 +++
 
-+++ React useEffect(..) esempio
++++ Esempio di React useEffect(..)
 
 Installa [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) eseguendo il comando `npm install` dalla radice del progetto React.
 
@@ -96,12 +96,12 @@ Installa [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-c
 $ npm i @adobe/aem-headless-client-js
 ```
 
-In questo esempio di codice viene illustrato come utilizzare [React useEffect(..) hook](https://reactjs.org/docs/hooks-effect.html) per eseguire una chiamata asincrona a AEM GraphQL.
+In questo esempio di codice viene illustrato come utilizzare l&#39;hook [React useEffect(..)](https://reactjs.org/docs/hooks-effect.html) per eseguire una chiamata asincrona ad AEM GraphQL.
 
 L&#39;utilizzo di `useEffect` per effettuare la chiamata GraphQL asincrona in React è utile perché:
 
-1. Fornisce il wrapper sincrono per la chiamata asincrona all&#39;AEM.
-1. Riduce l’AEM che richiede inutilmente.
+1. Fornisce il wrapper sincrono per la chiamata asincrona ad AEM.
+1. Riduce la necessità di richiedere inutilmente AEM.
 
 Questo codice presuppone che una query persistente con il nome `wknd-shared/adventure-by-slug` sia stata creata in AEM Author e pubblicata in AEM Publish utilizzando GraphiQL.
 
@@ -202,11 +202,11 @@ let { data, errors } = useAdventureBySlug('bali-surf-camp');
 
 ## Query GraphQL
 
-AEM supporta le query GraphQL definite dal client, tuttavia è consigliabile AEM utilizzare [query GraphQL persistenti](#persisted-graphql-queries).
+AEM supporta le query GraphQL definite dal client, tuttavia è consigliabile utilizzare [query GraphQL persistenti](#persisted-graphql-queries) in AEM.
 
 ## Webpack 5+
 
-L&#39;SDK JS di AEM headless ha dipendenze da `util` che non è incluso in Webpack 5+ per impostazione predefinita. Se utilizzi Webpack 5+ e ricevi il seguente errore:
+AEM Headless JS SDK ha dipendenze da `util` che non è incluso in Webpack 5+ per impostazione predefinita. Se utilizzi Webpack 5+ e ricevi il seguente errore:
 
 ```
 Compiled with problems:

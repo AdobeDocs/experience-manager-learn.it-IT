@@ -1,8 +1,8 @@
 ---
 title: Utilizzo del sistema di stili con AEM Sites
-description: Il sistema di stili di Adobe Experience Manager consente varianti visive di componenti senza sviluppo back-end, consentendo un migliore riutilizzo dei componenti AEM e una maggiore versatilità ed efficienza nell’authoring dei contenuti. Il sistema di stili, se utilizzato insieme ai componenti core, all’editor di modelli e al layout reattivo dell’AEM, offre funzionalità potenti per comporre rapidamente esperienze avanzate.
+description: Il sistema di stili di Adobe Experience Manager consente varianti visive di componenti senza sviluppo back-end, consentendo un migliore riutilizzo dei componenti AEM e un authoring più versatile ed efficiente dei contenuti. Il sistema di stili, se utilizzato insieme ai componenti core, all’editor di modelli e al layout reattivo di AEM, offre funzionalità potenti per comporre rapidamente esperienze avanzate.
 feature: Style System
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-974
 thumbnail: 21750.jpg
 topic: Content Management
@@ -11,7 +11,7 @@ level: Intermediate
 doc-type: Feature Video
 exl-id: 12490c29-91f4-4bb7-b7b6-7ed7cd3fb76d
 duration: 220
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 3%
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 {{edge-delivery-services-and-page-editor}}
 
-Il sistema di stili di Adobe Experience Manager consente varianti visive di componenti senza sviluppo back-end, consentendo un migliore riutilizzo dei componenti AEM e una maggiore versatilità ed efficienza nell’authoring dei contenuti. Il sistema di stili, se utilizzato insieme ai componenti core AEM, all’editor di modelli e al layout reattivo, offre funzionalità potenti per comporre rapidamente esperienze avanzate.
+Il sistema di stili di Adobe Experience Manager consente varianti visive di componenti senza sviluppo back-end, consentendo un migliore riutilizzo dei componenti AEM e un authoring più versatile ed efficiente dei contenuti. Il sistema di stili, se utilizzato insieme ai componenti core di AEM, all’editor di modelli e al layout reattivo, offre funzionalità potenti per comporre rapidamente esperienze avanzate.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21750?quality=12&learn=on)
 

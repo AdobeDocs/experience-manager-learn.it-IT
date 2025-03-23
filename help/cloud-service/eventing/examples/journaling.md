@@ -1,7 +1,7 @@
 ---
-title: Giornale di registrazione ed eventi AEM
+title: Eventi di journaling e AEM
 description: Scopri come recuperare il set iniziale di eventi AEM dal diario ed esplorare i dettagli di ogni evento.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
 role: Architect, Developer
@@ -12,24 +12,24 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14734
 thumbnail: KT-14734.jpeg
 exl-id: 33eb0757-f0ed-4c2d-b8b9-fa6648e87640
-source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 0%
 
 ---
 
-# Giornale di registrazione ed eventi AEM
+# Eventi di journaling e AEM
 
 Scopri come recuperare il set iniziale di eventi AEM dal diario ed esplorare i dettagli di ogni evento.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427052?quality=12&learn=on)
 
-Il journal è un metodo pull per utilizzare gli eventi AEM e un journal è un elenco ordinato di eventi. Utilizzando l’API di inserimento nel journal degli eventi di Adobe I/O, puoi recuperare gli eventi AEM dal journal ed elaborarli nell’applicazione. Questo approccio consente di gestire gli eventi in base a una frequenza specifica ed elaborarli in modo efficiente in blocco. Per informazioni approfondite, incluse considerazioni essenziali come periodi di conservazione, impaginazione e altro ancora, consulta la [funzione di diario](https://developer.adobe.com/events/docs/guides/journaling_intro/).
+Il journal è un metodo pull per utilizzare gli eventi AEM e un journal è un elenco ordinato di eventi. Utilizzando l’API di Adobe I/O Events Journaling, puoi recuperare gli eventi AEM dal diario ed elaborarli nell’applicazione. Questo approccio consente di gestire gli eventi in base a una frequenza specifica ed elaborarli in modo efficiente in blocco. Per informazioni approfondite, incluse considerazioni essenziali come periodi di conservazione, impaginazione e altro ancora, consulta la [funzione di diario](https://developer.adobe.com/events/docs/guides/journaling_intro/).
 
 All&#39;interno del progetto Adobe Developer Console, la registrazione di ogni evento viene abilitata automaticamente per il journaling, consentendo un&#39;integrazione perfetta.
 
-In questo esempio, l&#39;utilizzo di un&#39;applicazione Web _ospitata_ fornita dall&#39;Adobe consente di recuperare il primo batch di eventi AEM dal giornale di registrazione senza dover configurare l&#39;applicazione. Questa applicazione Web fornita dall&#39;Adobe è ospitata su [Glitch](https://glitch.com/), una piattaforma nota per offrire un ambiente basato su Web che favorisce la creazione e la distribuzione di applicazioni Web. Tuttavia, se preferisci, è anche disponibile l’opzione per utilizzare la tua applicazione.
+In questo esempio, l&#39;utilizzo di un&#39;_applicazione Web ospitata_ fornita da Adobe consente di recuperare il primo batch di eventi AEM dal giornale di registrazione senza dover configurare l&#39;applicazione. Questa applicazione Web fornita da Adobe è ospitata su [Glitch](https://glitch.com/), una piattaforma nota per offrire un ambiente basato su Web che favorisce la creazione e la distribuzione di applicazioni Web. Tuttavia, se preferisci, è anche disponibile l’opzione per utilizzare la tua applicazione.
 
 ## Prerequisiti
 
@@ -41,7 +41,7 @@ Per completare questa esercitazione, è necessario:
 
 ## Accedere all’applicazione web
 
-Per accedere all’applicazione web fornita dall’Adobe, effettua le seguenti operazioni:
+Per accedere all’applicazione web fornita da Adobe, effettua le seguenti operazioni:
 
 - Verificare che sia possibile accedere a [Glitch - applicazione Web ospitata](https://indigo-speckle-antler.glitch.me/) in una nuova scheda del browser.
 
@@ -63,26 +63,26 @@ Per recuperare gli eventi AEM dal giornale di registrazione, sono necessarie cre
 
   ![Credenziali copia progetto Adobe Developer Console](../assets/examples/journaling/adobe-developer-console-project-copy-credentials.png)
 
-- Ogni registrazione di evento viene automaticamente abilitata per la registrazione nel journal. Per ottenere l&#39;_endpoint API di inserimento nel journal univoco_ della registrazione dell&#39;evento, fare clic sulla scheda evento sottoscritta agli eventi AEM. Dalla scheda **Dettagli registrazione**, copia l&#39;ENDPOINT API UNIVOCO PER IL JOURNAL ****.
+- Ogni registrazione di evento viene automaticamente abilitata per la registrazione nel journal. Per ottenere l&#39;_endpoint API di inserimento nel journal univoco_ della registrazione dell&#39;evento, fare clic sulla scheda evento sottoscritta agli eventi di AEM. Dalla scheda **Dettagli registrazione**, copia l&#39;ENDPOINT API UNIVOCO PER IL JOURNAL ****.
 
   ![Scheda Eventi progetto Adobe Developer Console](../assets/examples/journaling/adobe-developer-console-project-events-card.png)
 
-## Carica giornale di registrazione eventi AEM
+## Carica giornale di registrazione eventi di AEM
 
-Per semplificare, questa applicazione web in hosting recupera solo il primo batch di eventi AEM dal giornale. Si tratta dei più vecchi eventi disponibili nel giornale di registrazione. Per ulteriori dettagli, vedere [primo batch di eventi](https://developer.adobe.com/events/docs/guides/api/journaling_api/#fetching-your-first-batch-of-events-from-the-journal).
+Per semplificare, questa applicazione Web in hosting recupera solo il primo batch di eventi AEM dal giornale di registrazione. Si tratta dei più vecchi eventi disponibili nel giornale di registrazione. Per ulteriori dettagli, vedere [primo batch di eventi](https://developer.adobe.com/events/docs/guides/api/journaling_api/#fetching-your-first-batch-of-events-from-the-journal).
 
 - Nell&#39;applicazione Web [Glitch - ospitato](https://indigo-speckle-antler.glitch.me/), immettere l&#39;**ID organizzazione IMS**, l&#39;**ID client** e il **Token di accesso** copiati in precedenza dal progetto Adobe Developer Console e fare clic su **Invia**.
 
-- In caso di esito positivo, il componente tabella visualizza i dati del giornale di registrazione eventi AEM.
+- In caso di esito positivo, il componente tabella visualizza i dati del giornale di registrazione eventi di AEM.
 
   ![Dati diario eventi AEM](../assets/examples/journaling/load-journal.png)
 
 - Per visualizzare il payload completo dell’evento, fai doppio clic sulla riga. Puoi vedere che i dettagli dell’evento AEM contengono tutte le informazioni necessarie per elaborare l’evento nel webhook. Ad esempio, il tipo di evento (`type`), l&#39;origine evento (`source`), l&#39;ID evento (`event_id`), l&#39;ora evento (`time`) e i dati evento (`data`).
 
-  ![Payload completo evento AEM](../assets/examples/journaling/complete-journal-data.png)
+  ![Payload evento AEM completo](../assets/examples/journaling/complete-journal-data.png)
 
 ## Risorse aggiuntive
 
 - [Il codice sorgente del webhook Glitch](https://glitch.com/edit/#!/indigo-speckle-antler) è disponibile come riferimento. Si tratta di una semplice applicazione React che utilizza [componenti Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) per eseguire il rendering dell&#39;interfaccia utente.
 
-- [L&#39;API di inserimento nel journal degli eventi di Adobe I/O](https://developer.adobe.com/events/docs/guides/api/journaling_api/) fornisce informazioni dettagliate sull&#39;API, ad esempio il primo, il successivo e l&#39;ultimo batch di eventi, la paginazione e altro ancora.
+- [API di Adobe I/O Events Journaling](https://developer.adobe.com/events/docs/guides/api/journaling_api/) fornisce informazioni dettagliate sull&#39;API, ad esempio il primo, il successivo e l&#39;ultimo batch di eventi, la paginazione e altro ancora.

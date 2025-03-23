@@ -1,7 +1,7 @@
 ---
 title: Anteprima e pubblicazione di contenuti con Edge Delivery Services
 description: Anteprima e pubblicazione di contenuti con Edge Delivery Services con AEM Sidekick
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-14480
 thumbnail: 3425714.jpeg
 duration: 136
 exl-id: e8ec372e-622e-4954-80df-9c4d73265837
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 0%
@@ -21,6 +21,6 @@ ht-degree: 0%
 
 # Anteprima e pubblicazione dei contenuti
 
-Anteprima e pubblicazione di contenuti con Edge Delivery Services tramite [AEM Sidekick](./sidekick.md).
+Anteprima e pubblicazione di contenuti con Edge Delivery Services utilizzando [AEM Sidekick](./sidekick.md).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425714/?learn=on)

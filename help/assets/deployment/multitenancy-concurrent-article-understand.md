@@ -2,14 +2,14 @@
 title: Informazioni sulla multitenancy e sullo sviluppo simultaneo
 description: Scopri i vantaggi, le sfide e le tecniche per gestire un’implementazione multi-tenant con Adobe Experience Manager Assets.
 feature: Connected Assets
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 doc-type: Article
 exl-id: c9ee29d4-a8a5-4e61-bc99-498674887da5
 duration: 437
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 0%
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Quando più team distribuiscono il codice negli stessi ambienti AEM, è consigliabile seguire alcune procedure per garantire che i team possano lavorare nel modo più indipendente possibile, senza dover intervenire sulle attività degli altri team. Anche se non possono mai essere completamente eliminate, queste tecniche ridurranno al minimo le dipendenze tra i team. Affinché un modello di sviluppo simultaneo abbia successo, è fondamentale che vi sia una buona comunicazione tra i team di sviluppo.
 
-Inoltre, quando più team di sviluppo lavorano sullo stesso ambiente AEM, è probabile che ci sia un certo grado di multi-tenancy in gioco. Molto è stato scritto sulle considerazioni pratiche relative al tentativo di supportare più tenant in un ambiente AEM, in particolare sulle sfide affrontate durante la gestione della governance, delle operazioni e dello sviluppo. Questo documento esplora alcune delle sfide tecniche relative all’implementazione dell’AEM in un ambiente multi-tenant, ma molte di queste raccomandazioni saranno valide per qualsiasi organizzazione con più team di sviluppo.
+Inoltre, quando più team di sviluppo lavorano sullo stesso ambiente AEM, è probabile che in gioco ci sia un certo grado di multi-tenancy. Molto è stato scritto sulle considerazioni pratiche relative al tentativo di supportare più tenant in un ambiente AEM, in particolare sulle sfide affrontate durante la gestione della governance, delle operazioni e dello sviluppo. Questo documento esplora alcune delle sfide tecniche relative all’implementazione di AEM in un ambiente multi-tenant, ma molte di queste raccomandazioni sono valide per qualsiasi organizzazione con più team di sviluppo.
 
-È importante notare fin da subito che, sebbene l’AEM possa supportare più siti e anche più marchi implementati in un unico ambiente, non offre una vera multi-tenancy. Alcune configurazioni di ambiente e risorse di sistema verranno sempre condivise tra tutti i siti distribuiti in un ambiente. Il presente documento fornisce orientamenti per ridurre al minimo l&#39;impatto di queste risorse condivise e offre suggerimenti per semplificare la comunicazione e la collaborazione in questi settori.
+È importante notare fin da subito che, sebbene AEM possa supportare più siti e anche più marchi implementati in un unico ambiente, non offre una vera multi-tenancy. Alcune configurazioni di ambiente e risorse di sistema verranno sempre condivise tra tutti i siti distribuiti in un ambiente. Il presente documento fornisce orientamenti per ridurre al minimo l&#39;impatto di queste risorse condivise e offre suggerimenti per semplificare la comunicazione e la collaborazione in questi settori.
 
 ## Vantaggi e sfide {#benefits-and-challenges}
 
@@ -94,7 +94,7 @@ Per garantire che le modifiche apportate a questo pacchetto di base non interrom
 
 ## Gestione dell’ambito di implementazione {#managing-deployment-scope}
 
-Poiché i diversi team distribuiscono il codice nello stesso archivio, è importante che non si sovrascrivano reciprocamente le modifiche. L’AEM dispone di un meccanismo per controllare questo fenomeno durante la distribuzione dei pacchetti di contenuti, il filtro. file xml. È importante che non vi sia sovrapposizione tra i filtri.  file xml, altrimenti la distribuzione di un team potrebbe potenzialmente cancellare la precedente distribuzione di un altro team. Per illustrare questo punto, vedi i seguenti esempi di file di filtro ben creati e problematici:
+Poiché i diversi team distribuiscono il codice nello stesso archivio, è importante che non si sovrascrivano reciprocamente le modifiche. AEM dispone di un meccanismo per controllare questo fenomeno durante la distribuzione dei pacchetti di contenuti, il filtro. file xml. È importante che non vi sia sovrapposizione tra i filtri.  file xml, altrimenti la distribuzione di un team potrebbe potenzialmente cancellare la precedente distribuzione di un altro team. Per illustrare questo punto, vedi i seguenti esempi di file di filtro ben creati e problematici:
 
 /apps/my-company vs. /apps/my-company/my-site
 
@@ -110,17 +110,17 @@ Poiché si tratta di un percorso di sistema globale e non specifico di un sito, 
 
 ### Sovrapposizioni {#overlays}
 
-Le sovrapposizioni vengono spesso utilizzate per estendere o sostituire la funzionalità AEM predefinita, ma l’utilizzo di una sovrapposizione influisce sull’intera applicazione AEM (ovvero, qualsiasi modifica della funzionalità sovrapposta è disponibile per tutti i tenant). Questo sarebbe ancora più complicato se i tenant avessero requisiti diversi per la sovrapposizione. Idealmente, i gruppi di business dovrebbero collaborare per concordare la funzionalità e l&#39;aspetto delle console amministrative dell&#39;AEM.
+Le sovrapposizioni vengono spesso utilizzate per estendere o sostituire la funzionalità AEM, ma l’utilizzo di una sovrapposizione influisce sull’intera applicazione AEM (ovvero, tutte le modifiche alla funzionalità sovrapposte sono rese disponibili per tutti i tenant). Questo sarebbe ancora più complicato se i tenant avessero requisiti diversi per la sovrapposizione. Idealmente, i gruppi aziendali dovrebbero collaborare per concordare la funzionalità e l&#39;aspetto delle console amministrative di AEM.
 
 Se non si riesce a raggiungere un consenso tra le varie unità aziendali, una possibile soluzione sarebbe semplicemente quella di non utilizzare le sovrapposizioni. Al contrario, crea una copia personalizzata della funzionalità e la espone tramite un percorso diverso per ogni tenant. Questo consente a ogni tenant di avere un’esperienza utente completamente diversa, ma questo approccio aumenta anche il costo dell’implementazione e delle successive attività di aggiornamento.
 
 ### Moduli di avvio per flusso di lavoro {#workflow-launchers}
 
-L’AEM utilizza i moduli di avvio dei flussi di lavoro per attivare automaticamente l’esecuzione dei flussi di lavoro quando vengono apportate modifiche specificate nell’archivio. AEM fornisce diversi moduli di avvio predefiniti, ad esempio per eseguire la generazione di rendering e i processi di estrazione dei metadati su risorse nuove e aggiornate. Anche se è possibile lasciare invariati questi moduli di avvio, in un ambiente multi-tenant, se i tenant hanno requisiti diversi per quanto riguarda il modulo di avvio e/o il modello di flusso di lavoro, è probabile che sarà necessario creare e gestire singoli moduli di avvio per ciascun tenant. Questi moduli di avvio dovranno essere configurati per l&#39;esecuzione sugli aggiornamenti del tenant e lasciare intatti i contenuti di altri tenant. Questo è possibile applicando moduli di avvio a specifici percorsi dell’archivio specifici per il tenant.
+AEM utilizza i moduli di avvio dei flussi di lavoro per attivare automaticamente l’esecuzione dei flussi di lavoro quando vengono apportate modifiche specificate nell’archivio. AEM fornisce diversi moduli di avvio pronti all’uso, ad esempio per eseguire la generazione di rendering e i processi di estrazione dei metadati su risorse nuove e aggiornate. Anche se è possibile lasciare invariati questi moduli di avvio, in un ambiente multi-tenant, se i tenant hanno requisiti diversi per quanto riguarda il modulo di avvio e/o il modello di flusso di lavoro, è probabile che sarà necessario creare e gestire singoli moduli di avvio per ciascun tenant. Questi moduli di avvio dovranno essere configurati per l&#39;esecuzione sugli aggiornamenti del tenant e lasciare intatti i contenuti di altri tenant. Questo è possibile applicando moduli di avvio a specifici percorsi dell’archivio specifici per il tenant.
 
 ### Gli URL personalizzati {#vanity-urls}
 
-L’AEM fornisce funzionalità per URL personalizzati che possono essere impostati per ogni pagina. Il problema di questo approccio in uno scenario multi-tenant è che l’AEM non garantisce l’univocità tra gli URL personalizzati configurati in questo modo. Se due utenti diversi configurano lo stesso percorso personalizzato per pagine diverse, si può verificare un comportamento imprevisto. Per questo motivo, consigliamo di utilizzare le regole mod_rewrite nelle istanze del dispatcher Apache, che consentono un punto di configurazione centrale insieme alle regole del Resource Resolver in uscita.
+AEM fornisce funzionalità di URL personalizzati che possono essere impostate su base di pagina. Il problema di questo approccio in uno scenario multi-tenant è che AEM non garantisce l’univocità tra gli URL personalizzati configurati in questo modo. Se due utenti diversi configurano lo stesso percorso personalizzato per pagine diverse, si può verificare un comportamento imprevisto. Per questo motivo, consigliamo di utilizzare le regole mod_rewrite nelle istanze del dispatcher Apache, che consentono un punto di configurazione centrale insieme alle regole del Resource Resolver in uscita.
 
 ### Gruppi di componenti {#component-groups}
 
@@ -134,15 +134,15 @@ Anche se una buona architettura e canali di comunicazione aperti possono aiutare
 
 ### Risorse condivise {#shared-resources}
 
-L&#39;AEM viene eseguito all&#39;interno di una singola JVM; tutte le applicazioni AEM implementate condividono intrinsecamente le risorse tra loro, oltre alle risorse già utilizzate nella normale esecuzione dell&#39;AEM. All&#39;interno dello spazio JVM stesso, non vi è alcuna separazione logica dei thread e vengono condivise anche le risorse limitate disponibili per l&#39;AEM, come memoria, CPU e I/O del disco. Qualsiasi tenant che consuma risorse influirà inevitabilmente su altri tenant di sistema.
+AEM viene eseguito all’interno di una singola JVM; tutte le applicazioni AEM implementate condividono intrinsecamente le risorse tra loro, oltre alle risorse già utilizzate nella normale esecuzione di AEM. All&#39;interno dello spazio JVM stesso, non esiste alcuna separazione logica dei thread e vengono condivise anche le risorse limitate disponibili in AEM, come memoria, CPU e I/O su disco. Qualsiasi tenant che consuma risorse influirà inevitabilmente su altri tenant di sistema.
 
 ### Prestazioni {#performance}
 
-Se non si seguono le best practice per l’AEM, è possibile sviluppare applicazioni che consumano risorse al di là di quanto è considerato normale. Ad esempio, vengono attivate molte operazioni complesse per il flusso di lavoro (come Aggiorna risorsa DAM), operazioni push-on-modify di MSM su più nodi o query JCR costose per eseguire il rendering del contenuto in tempo reale. Ciò avrà inevitabilmente un impatto sulle prestazioni di altre applicazioni tenant.
+Se non si seguono le best practice di AEM, è possibile sviluppare applicazioni che consumano risorse al di là di quanto è considerato normale. Ad esempio, vengono attivate molte operazioni complesse per il flusso di lavoro (come Aggiorna risorsa DAM), operazioni push-on-modify di MSM su più nodi o query JCR costose per eseguire il rendering del contenuto in tempo reale. Ciò avrà inevitabilmente un impatto sulle prestazioni di altre applicazioni tenant.
 
 ### Registrazione {#logging}
 
-L’AEM fornisce interfacce pronte all’uso per una solida configurazione dei logger che può essere utilizzata a nostro vantaggio in scenari di sviluppo condiviso. Specificando logger separati per ogni marchio, in base al nome del pacchetto, possiamo ottenere un certo grado di separazione del registro. Anche se le operazioni a livello di sistema come la replica e l’autenticazione verranno comunque registrate in una posizione centrale, il codice personalizzato non condiviso può essere registrato separatamente, semplificando le attività di monitoraggio e debug per il team tecnico di ciascun marchio.
+AEM fornisce interfacce pronte all’uso per una solida configurazione dei logger che può essere utilizzata a nostro vantaggio in scenari di sviluppo condiviso. Specificando logger separati per ogni marchio, in base al nome del pacchetto, possiamo ottenere un certo grado di separazione del registro. Anche se le operazioni a livello di sistema come la replica e l’autenticazione verranno comunque registrate in una posizione centrale, il codice personalizzato non condiviso può essere registrato separatamente, semplificando le attività di monitoraggio e debug per il team tecnico di ciascun marchio.
 
 ### Backup e ripristino {#backup-and-restore}
 

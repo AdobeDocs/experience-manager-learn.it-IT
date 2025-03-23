@@ -5,13 +5,13 @@ topic: Development
 feature: Core Components
 role: Developer
 level: Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-243
 thumbnail: 25173.jpg
 doc-type: Technical Video
 exl-id: 500f4e07-2686-42a2-8e44-d96dde02a112
 duration: 488
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 1%
@@ -32,4 +32,4 @@ Puoi utilizzare il [pacchetto di esempio delle proprietà della pagina WKND](./a
 
 Tuttavia, a scopo di apprendimento, è possibile puntare il componente Pagina WKND alla versione V2 dei Componenti core WCM utilizzando il valore della proprietà `sling:resourceSuperType` e sovrapporre la scheda [Social Media](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/page/v2/page/_cq_dialog/.content.xml#L95). Per ulteriori informazioni, vedere [Configurazione delle proprietà di pagina](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/page-properties-views.html#configuring-your-page-properties)
 
-Questo pacchetto di esempio deve essere installato sull’SDK AEM locale o sull’istanza AEM 6.X.X a scopo di apprendimento.
+Questo pacchetto di esempio deve essere installato sull’istanza locale di AEM SDK o AEM 6.X.X a scopo di apprendimento.

@@ -1,10 +1,10 @@
 ---
 title: Utilizzo della ricerca in AEM Assets
-description: In questi video vengono descritti alcuni miglioramenti introdotti nella ricerca di Assets nell’AEM. Gli autori possono aumentare il numero di determinate risorse nei risultati della ricerca per parola chiave aggiornando le rispettive proprietà dei metadati. Vengono inoltre esaminate alcune configurazioni avanzate per i predicati Assets OmniSearch.
-version: 6.4, 6.5
+description: In questi video vengono descritti alcuni miglioramenti introdotti in AEM nella funzione di ricerca di Assets. Gli autori possono aumentare il numero di determinate risorse nei risultati della ricerca per parola chiave aggiornando le rispettive proprietà dei metadati. Vengono inoltre esaminate alcune configurazioni avanzate per i predicati Assets OmniSearch.
+version: Experience Manager 6.4, Experience Manager 6.5
 doc-type: Feature Video
 duration: 373
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Utilizzo della ricerca in AEM Assets{#using-search-in-aem-assets}
 
-In questi video vengono descritti alcuni miglioramenti introdotti nella ricerca di Assets nell’AEM. Gli autori possono aumentare il numero di determinate risorse nei risultati della ricerca per parola chiave aggiornando le rispettive proprietà dei metadati. Vengono inoltre esaminate alcune configurazioni avanzate per i predicati Assets OmniSearch.
+In questi video vengono descritti alcuni miglioramenti introdotti in AEM nella funzione di ricerca di Assets. Gli autori possono aumentare il numero di determinate risorse nei risultati della ricerca per parola chiave aggiornando le rispettive proprietà dei metadati. Vengono inoltre esaminate alcune configurazioni avanzate per i predicati Assets OmniSearch.
 
 ## Ottimizzazione delle ricerche con i metadati delle risorse {#search-boost-asset}
 

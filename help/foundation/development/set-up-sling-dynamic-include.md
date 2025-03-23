@@ -1,7 +1,7 @@
 ---
 title: Configurare Sling Dynamic Include per AEM
-description: Un video che illustra come installare e utilizzare Apache Sling Dynamic Include con AEM Dispatcher in esecuzione sul server web Apache HTTP.
-version: 6.4, 6.5
+description: Una procedura video per l’installazione e l’utilizzo di Apache Sling Dynamic Include con AEM Dispatcher in esecuzione sul server web Apache HTTP.
+version: Experience Manager 6.4, Experience Manager 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
 doc-type: Technical Video
@@ -10,7 +10,7 @@ role: Developer
 level: Experienced
 exl-id: 6c504710-be8f-4b44-bd8a-aaf480ae6d8a
 duration: 863
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -25,12 +25,12 @@ Procedura video per l&#39;installazione e l&#39;utilizzo di [!DNL Apache Sling D
 
 >[!NOTE]
 >
-> Verificare che la versione più recente del Dispatcher AEM sia installata localmente.
+> Assicurati che la versione più recente di AEM Dispatcher sia installata localmente.
 
 1. Scarica e installa il [[!DNL Sling Dynamic Include] bundle](https://sling.apache.org/downloads.cgi).
 1. Configura [!DNL Sling Dynamic Include] tramite [!DNL OSGi Configuration Factory] in **http://&lt;host>:&lt;port>/system/console/configMgr/org.apache.sling.dynamicinclude.Configuration**.
 
-   In alternativa, per aggiungere a una base di codice AEM, crea il nodo **sling:OsgiConfig** appropriato in:
+   In alternativa, per aggiungere a una base di codice di AEM, crea il nodo **sling:OsgiConfig** appropriato in:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>

@@ -2,7 +2,7 @@
 title: Generare un token di accesso server-to-server nell’azione di App Builder
 description: Scopri come generare un token di accesso utilizzando le credenziali server-to-server OAuth per l’utilizzo in un’azione App Builder.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Intermediate
@@ -10,7 +10,7 @@ jira: KT-14724
 last-substantial-update: 2024-02-29T00:00:00Z
 duration: 122
 exl-id: 919cb9de-68f8-4380-940a-17274183298f
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -19,17 +19,17 @@ ht-degree: 0%
 
 # Generare un token di accesso server-to-server nell’azione di App Builder
 
-Le azioni App Builder potrebbero dover interagire con le API Adobe che supportano **credenziali server-to-server OAuth** e sono associate a progetti Adobe Developer Console in cui è distribuita l&#39;app App Builder.
+Le azioni di App Builder potrebbero dover interagire con le API di Adobe che supportano **credenziali server-to-server OAuth** e sono associate a progetti Adobe Developer Console in cui è distribuita l&#39;app App Builder.
 
 Questa guida spiega come generare un token di accesso utilizzando _credenziali server-to-server OAuth_ per l&#39;utilizzo in un&#39;azione App Builder.
 
 >[!IMPORTANT]
 >
-> Le credenziali dell’account di servizio (JWT) sono state dichiarate obsolete e sostituite dalle credenziali server-to-server OAuth. Tuttavia, esistono ancora alcune API di Adobe che supportano solo le credenziali dell’account di servizio (JWT) e la migrazione a OAuth Server-to-Server è in corso. Consulta la documentazione API di Adobe per capire quali credenziali sono supportate.
+> Le credenziali dell’account di servizio (JWT) sono state dichiarate obsolete e sostituite dalle credenziali server-to-server OAuth. Tuttavia, alcune API di Adobe supportano solo le credenziali dell’account di servizio (JWT) e la migrazione a OAuth Server-to-Server è ancora in corso. Consulta la documentazione API di Adobe per capire quali credenziali sono supportate.
 
 ## Configurazioni dei progetti Adobe Developer Console
 
-Durante l&#39;aggiunta dell&#39;API Adobe desiderata al progetto Adobe Developer Console, nel passaggio _Configura API_ selezionare il tipo di autenticazione **OAuth Server-to-Server**.
+Durante l&#39;aggiunta dell&#39;API Adobe desiderata al progetto Adobe Developer Console, nel passaggio _Configura API_, selezionare il tipo di autenticazione **OAuth Server-to-Server**.
 
 ![Adobe Developer Console - Server-to-Server OAuth](./assets/s2s-auth/oauth-server-to-server.png)
 
@@ -87,9 +87,9 @@ Le chiavi definite in `inputs` sono disponibili nell&#39;oggetto `params` fornit
 
 ## Credenziali server-to-server OAuth per accedere al token
 
-Nell&#39;azione App Builder, le credenziali server-to-server OAuth sono disponibili nell&#39;oggetto `params`. Utilizzando queste credenziali il token di accesso può essere generato utilizzando [Librerie OAuth 2.0](https://oauth.net/code/). Oppure puoi utilizzare la [libreria Node Fetch](https://www.npmjs.com/package/node-fetch) per effettuare una richiesta POST all&#39;endpoint del token Adobe IMS per ottenere il token di accesso.
+Nell&#39;azione App Builder, le credenziali server-to-server OAuth sono disponibili nell&#39;oggetto `params`. Utilizzando queste credenziali il token di accesso può essere generato utilizzando [Librerie OAuth 2.0](https://oauth.net/code/). Oppure puoi utilizzare la [libreria di recupero nodi](https://www.npmjs.com/package/node-fetch) per effettuare una richiesta POST all&#39;endpoint del token Adobe IMS per ottenere il token di accesso.
 
-Nell&#39;esempio seguente viene illustrato come utilizzare la libreria `node-fetch` per effettuare una richiesta POST all&#39;endpoint token Adobe IMS per ottenere il token di accesso.
+Nell&#39;esempio seguente viene illustrato come utilizzare la libreria `node-fetch` per effettuare una richiesta POST all&#39;endpoint del token Adobe IMS per ottenere il token di accesso.
 
 ```javascript
 const fetch = require("node-fetch");

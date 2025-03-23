@@ -1,7 +1,7 @@
 ---
-title: Definizione dei modelli per frammenti di contenuto - Guida introduttiva a AEM headless - GraphQL
+title: Definizione dei modelli per frammenti di contenuto - Guida introduttiva ad AEM Headless - GraphQL
 description: Introduzione a Adobe Experience Manager (AEM) e GraphQL. Scopri come modellare il contenuto e creare uno schema con i modelli per frammenti di contenuto in AEM. Rivedi i modelli esistenti e crea un modello. Scopri i diversi tipi di dati utilizzabili per definire uno schema.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 jira: KT-6712
 thumbnail: 22452.jpg
@@ -11,10 +11,10 @@ role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
 duration: 228
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1110'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -40,8 +40,8 @@ Questo è un tutorial in più parti e si presume che sia disponibile un ambiente
 
 Una configurazione di progetto contiene tutti i modelli di Frammento di contenuto associati a un particolare progetto e fornisce un mezzo per organizzare i modelli. È necessario creare almeno un progetto **prima** di creare il modello per frammenti di contenuto.
 
-1. Accedi all&#39;ambiente **Author** dell&#39;AEM (es. `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
-1. Dalla schermata iniziale AEM, passa a **Strumenti** > **Generale** > **Browser configurazioni**.
+1. Accedi all&#39;ambiente AEM **Author** (es. `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
+1. Dalla schermata iniziale di AEM, passa a **Strumenti** > **Generale** > **Browser configurazioni**.
 
    ![Passa a Browser configurazioni](assets/content-fragment-models/navigate-config-browser.png)
 1. Fai clic su **Crea**, nell&#39;angolo in alto a destra
@@ -62,7 +62,7 @@ Quindi, crea due modelli per un **Team** e una **Persona**.
 
 Crea un modello per una **Persona**, che è il modello dati che rappresenta una persona che fa parte di un team.
 
-1. Dalla schermata iniziale AEM, passa a **Strumenti** > **Generale** > **Modelli per frammenti di contenuto**.
+1. Dalla schermata iniziale di AEM, passa a **Strumenti** > **Generale** > **Modelli per frammenti di contenuto**.
 
    ![Passa a modelli per frammenti di contenuto](assets/content-fragment-models/navigate-cf-models.png)
 
@@ -163,23 +163,23 @@ Crea un modello per un **Team**, che è il modello dati per un team di persone. 
 
    ![Due modelli](assets/content-fragment-models/two-new-models.png)
 
-## Configurazione del progetto Publish e modelli per frammenti di contenuto
+## Pubblica configurazione progetto e modelli per frammenti di contenuto
 
 Al momento della revisione e della verifica, pubblicare `Project Configuration` e `Content Fragment Model`
 
-1. Dalla schermata iniziale AEM, passa a **Strumenti** > **Generale** > **Browser configurazioni**.
+1. Dalla schermata iniziale di AEM, passa a **Strumenti** > **Generale** > **Browser configurazioni**.
 
-1. Tocca la casella di controllo accanto a **Il mio progetto** e tocca **Publish**
+1. Tocca la casella di controllo accanto a **Il mio progetto** e tocca **Pubblica**
 
-   ![Configurazione progetto Publish](assets/content-fragment-models/publish-project-config.png)
+   ![Pubblica configurazione progetto](assets/content-fragment-models/publish-project-config.png)
 
-1. Dalla schermata iniziale AEM, passa a **Strumenti** > **Generale** > **Modelli per frammenti di contenuto**.
+1. Dalla schermata iniziale di AEM, passa a **Strumenti** > **Generale** > **Modelli per frammenti di contenuto**.
 
 1. Passare alla cartella **Progetto personale**.
 
-1. Tocca i modelli **Persona** e **Team** e tocca **Publish**
+1. Tocca i modelli **Persona** e **Team** e tocca **Pubblica**
 
-   ![Modelli per frammenti di contenuto Publish](assets/content-fragment-models/publish-content-fragment-model.png)
+   ![Pubblica modelli per frammenti di contenuto](assets/content-fragment-models/publish-content-fragment-model.png)
 
 ## Congratulazioni. {#congratulations}
 

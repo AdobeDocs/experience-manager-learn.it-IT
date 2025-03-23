@@ -1,11 +1,11 @@
 ---
-title: Creazione di un Cloud Service di configurazione cloud Acrobat Sign
+title: Crea Cloud Service di configurazione cloud di Acrobat Sign
 description: Crea l’integrazione tra AEM Forms e Acrobat Sign utilizzando la configurazione dei servizi cloud.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-7428
@@ -14,7 +14,7 @@ badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: a55773a5-0486-413f-ada6-bb589315f0b1
 duration: 222
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 La configurazione dei servizi cloud in AEM consente di creare un’integrazione tra AEM e altre applicazioni cloud.
 
-Il video seguente illustra i passaggi necessari per creare la configurazione dei servizi cloud per integrare l’AEM con Acrobat Sign
+Il video seguente illustra i passaggi necessari per creare la configurazione dei servizi cloud per integrare AEM con Acrobat Sign
 
 >[!VIDEO](https://video.tv.adobe.com/v/332437?quality=12&learn=on)
 

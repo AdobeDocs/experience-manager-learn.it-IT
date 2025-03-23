@@ -1,14 +1,14 @@
 ---
-title: Integrazione delle applicazioni client - Concetti avanzati di AEM headless - GraphQL
+title: Integrazione delle applicazioni client - Concetti avanzati di AEM Headless - GraphQL
 description: Implementa le query persistenti e integrale nell’app WKND.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: d0576962-a86a-4742-8635-02be1ec3243f
 duration: 241
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 1%
@@ -19,11 +19,11 @@ ht-degree: 1%
 
 Nel capitolo precedente, hai creato e aggiornato le query persistenti utilizzando GraphiQL Explorer.
 
-Questo capitolo illustra i passaggi necessari per integrare le query persistenti con l&#39;applicazione client WKND (o app WKND) utilizzando richieste HTTP GET all&#39;interno di **componenti React** esistenti. Fornisce inoltre una sfida opzionale per applicare le tue conoscenze headless AEM, competenze di codifica per migliorare l’applicazione client WKND.
+Questo capitolo illustra i passaggi necessari per integrare le query persistenti con l&#39;applicazione client WKND (o app WKND) utilizzando le richieste HTTP GET all&#39;interno dei **componenti React** esistenti. Fornisce inoltre una sfida opzionale per applicare le tue conoscenze headless di AEM, competenze di codifica per migliorare l’applicazione client WKND.
 
 ## Prerequisiti {#prerequisites}
 
-Questo documento fa parte di un&#39;esercitazione in più parti. Prima di procedere con questo capitolo, assicurati che i capitoli precedenti siano stati completati. L&#39;applicazione client WKND si connette al servizio di pubblicazione AEM, pertanto è importante che **abbia pubblicato quanto segue nel servizio di pubblicazione AEM**.
+Questo documento fa parte di un&#39;esercitazione in più parti. Prima di procedere con questo capitolo, assicurati che i capitoli precedenti siano stati completati. L&#39;applicazione client WKND si connette al servizio di pubblicazione AEM, pertanto è importante che **abbiate pubblicato quanto segue nel servizio di pubblicazione AEM**.
 
 * Configurazioni progetto
 * Endpoint GraphQL
@@ -35,16 +35,16 @@ Le schermate dell&#39;_IDE in questo capitolo provengono da [Visual Studio Code]
 
 ### Capitolo 1-4 Pacchetto di soluzioni (facoltativo) {#solution-package}
 
-È disponibile un pacchetto di soluzione da installare che completa i passaggi descritti nell’interfaccia utente dell’AEM per i capitoli 1-4. Questo pacchetto è **non necessario** se i capitoli precedenti sono stati completati.
+È disponibile un pacchetto di soluzione da installare che completa i passaggi descritti nell’interfaccia utente di AEM per i capitoli 1-4. Questo pacchetto è **non necessario** se i capitoli precedenti sono stati completati.
 
 1. Scarica [Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip).
 1. In AEM, passa a **Strumenti** > **Distribuzione** > **Pacchetti** per accedere a **Gestione pacchetti**.
 1. Carica e installa il pacchetto (file zip) scaricato nel passaggio precedente.
-1. Replica del pacchetto nel servizio Publish dell&#39;AEM
+1. Replica il pacchetto nel servizio di pubblicazione AEM
 
 ## Obiettivi {#objectives}
 
-In questa esercitazione imparerai a integrare le richieste di query persistenti nell&#39;app di esempio WKND GraphQL React utilizzando [Client headless AEM per JavaScript](https://github.com/adobe/aem-headless-client-js).
+In questa esercitazione imparerai a integrare le richieste di query persistenti nell&#39;app di esempio WKND GraphQL React utilizzando [AEM Headless Client for JavaScript](https://github.com/adobe/aem-headless-client-js).
 
 ## Clonare ed eseguire l&#39;applicazione client di esempio {#clone-client-app}
 
@@ -56,7 +56,7 @@ Per accelerare l’esercitazione, viene fornita un’app JS di React iniziale.
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Modifica il file `aem-guides-wknd-graphql/advanced-tutorial/.env.development` e imposta `REACT_APP_HOST_URI` in modo che punti al servizio di pubblicazione AEM di destinazione.
+1. Modifica il file `aem-guides-wknd-graphql/advanced-tutorial/.env.development` e imposta `REACT_APP_HOST_URI` in modo che punti al servizio AEM Publish di destinazione.
 
    Se ti connetti a un’istanza Autore, aggiorna il metodo di autenticazione.
 
@@ -84,9 +84,9 @@ Per accelerare l’esercitazione, viene fornita un’app JS di React iniziale.
 
    >[!NOTE]
    > 
-   > Le istruzioni di cui sopra consistono nel collegare l&#39;app React al servizio **AEM Publish**, ma nel connettersi al servizio **AEM Author** è necessario ottenere un token di sviluppo locale per l&#39;ambiente AEM as a Cloud Service di destinazione.
+   > Le istruzioni precedenti indicano di connettere l&#39;app React al servizio di pubblicazione **AEM**. Tuttavia, per connettersi al servizio di authoring **AEM** è necessario ottenere un token di sviluppo locale per l&#39;ambiente AEM as a Cloud Service di destinazione.
    >
-   > È inoltre possibile connettere l&#39;app a un&#39;istanza Autore [locale utilizzando l&#39;SDK AEMaaCS](/help/headless-tutorial/graphql/quick-setup/local-sdk.md) mediante l&#39;autenticazione di base.
+   > È inoltre possibile connettere l&#39;app a un&#39;istanza Autore [locale utilizzando AEMaaCS SDK](/help/headless-tutorial/graphql/quick-setup/local-sdk.md) utilizzando l&#39;autenticazione di base.
 
 
 1. Apri un terminale ed esegui i comandi:
@@ -106,18 +106,18 @@ Per accelerare l’esercitazione, viene fornita un’app JS di React iniziale.
 
 1. Apri gli strumenti per sviluppatori del browser ed esamina la richiesta `XHR`
 
-   ![POST GraphQL](assets/client-application-integration/graphql-persisted-query.png)
+   ![PUBBLICA GraphQL](assets/client-application-integration/graphql-persisted-query.png)
 
    Dovrebbero essere presenti `GET` richieste all&#39;endpoint GraphQL con il nome di configurazione del progetto (`wknd-shared`), il nome di query persistente (`adventure-by-slug`), il nome della variabile (`slug`), il valore (`yosemite-backpacking`) e codifiche di caratteri speciali.
 
 >[!IMPORTANT]
 >
->    Se ti stai chiedendo perché la richiesta API di GraphQL viene effettuata contro `http://localhost:3000` e NON contro il dominio del servizio Publish dell&#39;AEM, rivedi [Sotto l&#39;hood](../multi-step/graphql-and-react-app.md#under-the-hood) dall&#39;esercitazione di base.
+>    Se ti stai chiedendo perché la richiesta API di GraphQL viene effettuata contro `http://localhost:3000` e NON contro il dominio del servizio di pubblicazione di AEM, controlla [Sotto il cappuccio](../multi-step/graphql-and-react-app.md#under-the-hood) dall&#39;esercitazione di base.
 
 
 ## Rivedi il codice
 
-Nel passaggio [Esercitazione di base - Creare un&#39;app React che utilizza le API GraphQL dell&#39;AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#review-the-aemheadless-object) abbiamo esaminato e migliorato alcuni file chiave per acquisire competenze pratiche. Prima di migliorare l’app WKND, controlla i file chiave.
+Nel passaggio [Esercitazione di base - Creare un&#39;app React che utilizza le API GraphQL di AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#review-the-aemheadless-object) abbiamo rivisto e migliorato alcuni file chiave per acquisire esperienza pratica. Prima di migliorare l’app WKND, controlla i file chiave.
 
 * [Rivedi l&#39;oggetto AEMHeadless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#review-the-aemheadless-object)
 
@@ -133,9 +133,9 @@ La visualizzazione principale dell&#39;app WKND React è l&#39;elenco di tutte l
 
 * L&#39;hook utilizza la funzione principale `fetchPersistedQuery(..)` che delega l&#39;esecuzione della query a `AEMHeadless` tramite `aemHeadlessClient.js`.
 
-* L&#39;hook restituisce inoltre solo i dati rilevanti della risposta GraphQL dell&#39;AEM in `response.data?.adventureList?.items`, consentendo ai componenti della visualizzazione React di `Adventures` di essere agnostici delle strutture JSON padre.
+* L&#39;hook restituisce inoltre solo i dati rilevanti della risposta di AEM GraphQL in `response.data?.adventureList?.items`, consentendo ai componenti della visualizzazione React di `Adventures` di essere agnostici delle strutture JSON padre.
 
-* Dopo l&#39;esecuzione corretta della query, la funzione di rendering `AdventureListItem(..)` di `Adventures.js` aggiunge l&#39;elemento HTML per visualizzare le informazioni _Immagine, Durata viaggio, Prezzo e Titolo_.
+* Dopo la corretta esecuzione della query, la funzione di rendering `AdventureListItem(..)` di `Adventures.js` aggiunge l&#39;elemento HTML per visualizzare le informazioni relative a _Immagine, Durata viaggio, Prezzo e Titolo_.
 
 ### Rivedi `AdventureDetail` componente React
 

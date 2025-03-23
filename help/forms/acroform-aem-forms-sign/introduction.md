@@ -3,11 +3,11 @@ title: Acroforms con AEM Forms
 description: Tutorial che illustra come creare un modulo adattivo utilizzando Acroform e unire i dati per ottenere un PDF. Il PDF con i dati uniti può quindi essere inviato per la firma utilizzando Acrobat Sign.
 feature: adaptive-forms
 doc-type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 45
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Le organizzazioni dispongono di un&#39;ampia varietà di forme. Alcuni di questi
 
 >[!NOTE]
 >
->Se utilizzi AEM Forms 6.5, utilizza la funzionalità di Automated forms conversion.
+>Se utilizzi AEM Forms 6.5, utilizza la funzionalità di conversione automatica dei moduli.
 
 ## Prerequisiti
 
@@ -35,7 +35,7 @@ Le organizzazioni dispongono di un&#39;ampia varietà di forme. Alcuni di questi
 * [DocumentServicesBundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * [DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [AcroFormsToAEMFormsBundle](https://forms.enablementadobe.com/content/DemoServerBundles/AcroFormToAEMForm.core-1.0-SNAPSHOT.jar)
-* [Scaricare e importare il pacchetto in AEM](assets/acro-form-aem-form.zip). Questo pacchetto contiene il flusso di lavoro di esempio e la pagina HTML per creare XSD da acroform
+* [Scarica e importa il pacchetto in AEM](assets/acro-form-aem-form.zip). Questo pacchetto contiene il flusso di lavoro di esempio e la pagina HTML per creare XSD da acroform
 * Apri [configMgr](http://localhost:4502/system/console/configMgr)
    * Cerca &quot;Apache Sling Service User Mapper Service&quot; e fai clic per aprire le proprietà
    * Fai clic sull&#39;icona `+` (segno più) per aggiungere il seguente mapping dei servizi

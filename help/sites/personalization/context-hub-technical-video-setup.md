@@ -2,14 +2,14 @@
 title: Configurare ContextHub per Personalization con AEM Sites
 description: ContextHub è un framework per l’archiviazione, la manipolazione e la presentazione dei dati contestuali. L’API JavaScript di ContextHub consente di accedere agli store per creare, aggiornare ed eliminare i dati in base alle esigenze. ContextHub rappresenta un livello dati sulle pagine. Questa pagina descrive come aggiungere context hub alle pagine del sito AEM.
 feature: Context Hub
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Personalization
 role: Developer
 level: Intermediate
 doc-type: Technical Video
 exl-id: 89308dd3-a7e5-4fec-bffb-5f0974125c0a
 duration: 357
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 2%
@@ -24,7 +24,7 @@ ContextHub è un framework per l’archiviazione, la manipolazione e la presenta
 
 >[!NOTE]
 >
->Per questo video utilizziamo il sito di riferimento WKND e non fa parte del rilascio dell’AEM. Puoi scaricare la [versione più recente qui](https://github.com/adobe/aem-guides-wknd/releases).
+>Per questo video utilizziamo il sito di riferimento WKND e non fa parte della versione di AEM. Puoi scaricare la [versione più recente qui](https://github.com/adobe/aem-guides-wknd/releases).
 
 Aggiungi ContextHub alle pagine per abilitare le funzioni di ContextHub e per collegare le librerie JavaScript di ContextHub. L’API JavaScript di ContextHub consente di accedere ai dati contestuali gestiti da ContextHub.
 
@@ -43,7 +43,7 @@ ContextHub include un motore di segmentazione che gestisce i segmenti e determin
 
 ## Creare segmenti {#create-segments}
 
-Crea segmenti AEM che fungano da regole per i teaser. In altre parole, definiscono quando il contenuto all’interno di un teaser viene visualizzato in una pagina web. Il contenuto può quindi essere mirato in modo specifico per le esigenze e gli interessi del visitatore, a seconda dei segmenti di corrispondenza.
+Crea segmenti di AEM che fungono da regole per i teaser. In altre parole, definiscono quando il contenuto all’interno di un teaser viene visualizzato in una pagina web. Il contenuto può quindi essere mirato in modo specifico per le esigenze e gli interessi del visitatore, a seconda dei segmenti di corrispondenza.
 
 ## Assegnazione della configurazione cloud, del percorso del segmento e del percorso ContextHub al sito {#assigning-cloud-configuration-segment-path-and-contexthub-path-to-your-site}
 

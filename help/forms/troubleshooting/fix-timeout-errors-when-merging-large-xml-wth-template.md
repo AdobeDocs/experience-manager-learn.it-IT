@@ -4,13 +4,13 @@ description: Unione di file XML di grandi dimensioni con un modello in AEM Forms
 type: Troubleshooting
 role: Admin
 level: Intermediate
-version: 6.5
+version: Experience Manager 6.5
 feature: Output Service,Forms Service
 topic: Administration
 jira: KT-11091
 exl-id: 933ec5f6-3e9c-4271-bc35-4ecaf6dbc434
 duration: 37
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Per correggere l&#39;errore precedente, eseguire le operazioni seguenti
 ## Modificare il timeout di aries
 
 * Arresta server AEM
-* Crea una cartella denominata **install** nella cartella crx-quickstart dell&#39;installazione AEM
+* Crea una cartella denominata **install** nella cartella crx-quickstart dell&#39;installazione di AEM
 * Crea un file denominato **org.apache.aries.transaction.config** con il seguente contenuto
 aries.transaction.timeout=&quot;1200&quot;
 nella cartella di installazione. Puoi modificare il valore di timeout in base alle tue esigenze. Il valore di timeout è in secondi

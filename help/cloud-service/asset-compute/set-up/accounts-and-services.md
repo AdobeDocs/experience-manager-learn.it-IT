@@ -1,8 +1,8 @@
 ---
-title: Impostare account e servizi per l'estensibilità di Asset compute
+title: Configurare account e servizi per l’estensibilità di Asset Compute
 description: Lo sviluppo di processi di lavoro Asset Compute richiede l’accesso ad account e servizi tra cui AEM as a Cloud Service, App Builder e l’archiviazione cloud fornita da Microsoft o Amazon.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6264
 thumbnail: 40377.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 707657ad-221e-4dab-ac2a-46a4fcbc55bc
 duration: 212
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 2%
@@ -43,11 +43,11 @@ Tutti i servizi Adobe devono essere accessibili tramite la stessa organizzazione
 
 È consigliabile poter utilizzare un programma sandbox o un ambiente di sviluppo non sandbox.
 
-Tieni presente che un SDK per AEM locale non è sufficiente per completare questa esercitazione, poiché l’SDK per AEM locale non è in grado di comunicare con i microservizi Asset Compute, è necessario un vero ambiente AEM as a Cloud Service.
+Tieni presente che un SDK di AEM locale non è sufficiente per completare questa esercitazione, poiché l’SDK di AEM locale non è in grado di comunicare con i microservizi di Asset Compute, è necessario un vero ambiente AEM as a Cloud Service.
 
 ## App Builder{#app-builder}
 
-Il framework [App Builder](https://developer.adobe.com/app-builder/) viene utilizzato per la creazione e la distribuzione di azioni personalizzate in Adobe I/O Runtime, la piattaforma senza server di Adobe. I progetti di Asset compute AEM sono progetti App Builder appositamente creati che si integrano con AEM Assets tramite i Profili di elaborazione e forniscono la possibilità di accedere ed elaborare i dati binari delle risorse.
+Il framework [App Builder](https://developer.adobe.com/app-builder/) viene utilizzato per la creazione e la distribuzione di azioni personalizzate in Adobe I/O Runtime, la piattaforma senza server di Adobe. I progetti AEM Asset Compute sono progetti App Builder appositamente creati e integrati con AEM Assets tramite i Profili di elaborazione, che consentono di accedere ed elaborare i dati binari delle risorse.
 
 Per accedere ad App Builder, iscriviti per l’anteprima.
 
@@ -59,7 +59,7 @@ Per accedere ad App Builder, iscriviti per l’anteprima.
 
 L’archiviazione cloud è necessaria per lo sviluppo locale di progetti Asset Compute.
 
-Quando i processi di lavoro Asset Compute vengono distribuiti in Adobe I/O Runtime per l’utilizzo diretto da parte di AEM as a Cloud Service, questa archiviazione cloud non è strettamente necessaria in quanto AEM fornisce l’archiviazione cloud da cui la risorsa viene letta e in cui viene scritto il rendering.
+Quando i processi di lavoro di Asset Compute vengono implementati in Adobe I/O Runtime per l’utilizzo diretto da parte di AEM as a Cloud Service, questa archiviazione cloud non è strettamente necessaria in quanto AEM fornisce l’archiviazione cloud da cui la risorsa viene letta e in cui viene scritto il rendering.
 
 ### Archiviazione BLOB di Microsoft Azure{#azure-blob-storage}
 
@@ -76,7 +76,7 @@ _Click-through del provisioning di Azure Blob Storage (nessun audio)_
 1. Tocca __+ Aggiungi__ per creare un nuovo account di archiviazione BLOB
 1. Crea un nuovo __gruppo di risorse__ in base alle esigenze, ad esempio: `aem-as-a-cloud-service`
 1. Fornisci un __nome account di archiviazione__, ad esempio: `aemguideswkndassetcomput`
-   + Il __nome account di archiviazione__ utilizzato per [la configurazione dell&#39;archiviazione cloud](../develop/environment-variables.md) nello strumento di sviluppo Asset compute locale
+   + Il __nome account di archiviazione__ utilizzato per [la configurazione dell&#39;archiviazione cloud](../develop/environment-variables.md) nello strumento di sviluppo Asset Compute locale
    + Le __chiavi di accesso__ associate all&#39;account di archiviazione sono necessarie anche durante la [configurazione dell&#39;archiviazione cloud](../develop/environment-variables.md).
 1. Lascia tutto il resto come predefinito e tocca il pulsante __Rivedi + crea__
    + Se necessario, seleziona la __posizione__ vicina.

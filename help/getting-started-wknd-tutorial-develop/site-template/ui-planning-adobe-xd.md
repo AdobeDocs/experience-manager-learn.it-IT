@@ -1,7 +1,7 @@
 ---
 title: Pianificazione dell’interfaccia utente con Adobe XD | Creazione rapida di siti AEM
 description: Scopri come utilizzare i kit di interfaccia utente di Adobe XD per progettare e accelerare l’implementazione di Adobe Experience Manager Sites.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 feature: Core Components
 role: Developer
@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
 recommendations: noDisplay, noCatalog
 duration: 646
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 # Pianificazione dell’interfaccia utente con Adobe XD {#ui-planning-adobe-xd}
 
-Nella maggior parte dei casi, la pianificazione di un nuovo sito web inizia con modelli e progetti statici. [Adobe XD](https://www.adobe.com/products/xd.html) è uno strumento di progettazione all&#39;avanguardia per la creazione di esperienze utente. L’Adobe consiglia di pianificare l’implementazione di Sites tramite i modelli dell’interfaccia utente di utilizzo tramite Adobe XD o altro strumento.
+Nella maggior parte dei casi, la pianificazione di un nuovo sito web inizia con modelli e progetti statici. [Adobe XD](https://www.adobe.com/products/xd.html) è uno strumento di progettazione all&#39;avanguardia per la creazione di esperienze utente. Adobe consiglia di pianificare l’implementazione di Sites tramite i modelli dell’interfaccia utente di utilizzo tramite Adobe XD o altro strumento.
 
 ## Prerequisiti {#prerequisites}
 
@@ -46,7 +46,7 @@ In questo capitolo vengono esaminati due file Adobe XD, uno per il [modello di s
 Passaggi di alto livello:
 
 1. Scarica il [file XD del modello di sito standard](https://github.com/adobe/aem-site-template-standard/raw/main/files/wireframe.xd).
-1. Inspect il kit di interfaccia utente in Adobe XD.
+1. Ispeziona il kit dell’interfaccia utente in Adobe XD.
 1. Simula la consegna delle progettazioni a uno sviluppatore front-end.
 
 ## Kit interfaccia WKND {#wknd-ui-kit}
@@ -56,7 +56,7 @@ Passaggi di alto livello:
 Passaggi di alto livello:
 
 1. Scarica il file XD dell&#39;articolo [WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd).
-1. Inspect progetta il modello di articolo WKND.
+1. Esamina le progettazioni del modello di articolo WKND.
 
 ## Congratulazioni. {#congratulations}
 

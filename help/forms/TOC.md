@@ -6,9 +6,9 @@ user-guide-description: Raccolta di risorse AEM Forms per sviluppatori principia
 solution: Experience Manager, Experience Manager Forms
 breadcrumb-title: Tutorial su AEM Forms
 sub-product: Experience Manager Forms
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 index: y
-source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2101'
 ht-degree: 1%
@@ -39,7 +39,7 @@ ht-degree: 1%
    + [Invio a un endpoint esterno](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
    + [Invio e-mail](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
    + [Flusso di lavoro per richiesta di indisponibilità a pagamento](handling-form-submissions/paid-time-off-request-workflow.md)
-   + [Configurazione del modulo adattivo per attivare il flusso di lavoro AEM - video](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
+   + [Configurazione del modulo adattivo per attivare il flusso di lavoro di AEM: video](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
    + [Personalizza notifica di assegnazione attività](handling-form-submissions/customize-assign-task-notification.md)
 + Integrazioni utili{#some-useful-integrations}
    + [Autenticazione a due fattori](some-useful-integrations/two-factor-authentication.md)
@@ -91,16 +91,16 @@ ht-degree: 1%
    + [Inserimento di un allegato modulo nel database](adaptive-forms/inserting-form-attachment-in-db.md)
    + [Modifica configurazione Source dati](adaptive-forms/modify-data-source-configuration-settings-article.md)
    + [Sovrascrivi proprietà modello dati modulo](adaptive-forms/override-fdm-values.md)
-   + [Servizio modello dati modulo nel flusso di lavoro AEM 6.4](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
+   + [Servizio modello dati modulo nel flusso di lavoro di AEM 6.4](adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md)
    + [Gestione dei messaggi di errore nel passaggio del servizio del modello di dati del modulo](adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)
-   + [Servizio modello dati modulo nel flusso di lavoro AEM 6.5.1](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)
+   + [Servizio modello dati modulo nel flusso di lavoro di AEM 6.5.1](adaptive-forms/form-data-model-service-as-step-in-aem65-workflow-video-use.md)
    + [Modello dati modulo senza Data Source](adaptive-forms/form-data-model-without-data-source-feature-video-use.md)
    + [Elemento modello dati modulo calcolato](adaptive-forms/computed-form-data-model-elements-aem-forms-feature-video.md)
    + [Configurazione di JDBC Data Source in AEM Forms](adaptive-forms/data-integration-technical-video-setup.md)
    + [Modello dati modulo basato su JDBC](adaptive-forms/jdbc-data-model-technical-video-use.md)
    + [Creare associazioni tra 2 entità nel modello dati modulo](adaptive-forms/association-data-model-technical-video-use.md)
    + [Utilizzo del servizio invoke del modello dati modulo nell’editor di regole](adaptive-forms/service-data-model-technical-video-use.md)
-   + [Pubblicare dati binari in AEM DAM utilizzando il modello dati modulo](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
+   + [Pubblicare dati binari in AEM DAM tramite il modello dati del modulo](adaptive-forms/form-data-model-to-post-binary-data-tutorial-use.md)
    + [Creazione di modelli di flussi di lavoro riutilizzabili](adaptive-forms/re-usable-aem-forms-workflow-models-article.md)
    + [Flusso di lavoro AEM passaggio processo personalizzato](adaptive-forms/custom-process-step-aem-workflow.md)
    + [Pre-popolamento di HTML5 Forms](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
@@ -175,8 +175,8 @@ ht-degree: 1%
    + [Creare e configurare un modulo adattivo](aem-forms-and-adobe-sign/create-and-configure-adaptive-form.md)
    + [Configura modulo adattivo per firmatario singolo](aem-forms-and-adobe-sign/configure-adaptive-form-for-single-signer.md)
    + [Configurare un modulo adattivo per due firmatari](aem-forms-and-adobe-sign/configure-adaptive-form-for-two-signers.md)
-   + [Configura servizio di Automated forms conversion](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
-   + [Converti modulo PDF in modulo adattivo](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
+   + [Configurazione del servizio di conversione automatica dei moduli](aem-forms-and-adobe-sign/configure-automated-forms-conversion-service.md)
+   + [Conversione di PDF Form in Form adattivo](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Configurare un modulo adattivo convertito](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Utilizzo dei modelli XDP con Acrobat Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
    + [Utilizzo dei metodi helper di Acrobat Sign](aem-forms-and-adobe-sign/send-documents-signing-using-sign-api.md)
@@ -201,14 +201,14 @@ ht-degree: 1%
    + [1-Introduzione](custom-workflow-component/introduction.md)
    + [Codice Java a 2 scritture](custom-workflow-component/custom-process-step-aem-workflow.md)
    + [3-Creare un componente del flusso di lavoro](custom-workflow-component/custom-workflow-component.md)
-+ Variabili nel flusso di lavoro AEM{#variables-aem-workflow}
++ Variabili nel flusso di lavoro di AEM{#variables-aem-workflow}
    + [Introduzione - Variabili nel flusso di lavoro](variables-aem-workflow/introduction.md)
    + [Variabili XML](variables-aem-workflow/part1.md)
    + [Variabili JSON](variables-aem-workflow/part2.md)
    + [Variabili documento](variables-aem-workflow/part3.md)
    + [Variabile ArrayList](variables-aem-workflow/part4.md)
    + [Variabile modello dati modulo](variables-aem-workflow/form-data-model.md)
-   + [Editor regole nel flusso di lavoro AEM](variables-aem-workflow/part5.md)
+   + [Editor regole nel flusso di lavoro di AEM](variables-aem-workflow/part5.md)
    + [Registra variabili del flusso di lavoro](variables-aem-workflow/part6.md)
 + Rivedi dati modulo{#review-form-data}
    + [1 - Introduzione](review-form-data/introduction.md)
@@ -222,14 +222,14 @@ ht-degree: 1%
    + [Libreria client](storing-retrieving-form-data/part4.md)
    + [Modello modulo adattivo](storing-retrieving-form-data/part5.md)
    + [Distribuire risorse di esempio](storing-retrieving-form-data/part6.md)
-+ Attivazione del flusso di lavoro AEM nell&#39;invio del modulo PDF{#offline-mobile-form-submission}
++ Attivazione del flusso di lavoro di AEM nell&#39;invio tramite PDF Form{#offline-mobile-form-submission}
    + [Parte - 1](offline-mobile-form-submission/introduction.md)
    + [Parte - 2](offline-mobile-form-submission/custom-profile.md)
    + [Parte - 3](offline-mobile-form-submission/handle-form-submission.md)
    + [Parte - 4](offline-mobile-form-submission/author-servlet.md)
    + [Parte - 5](offline-mobile-form-submission/review-workflow.md)
    + [Parte - 6](offline-mobile-form-submission/deploy-assets.md)
-+ Attiva il flusso di lavoro AEM per l&#39;invio di moduli mobili{#trigger-aem-workflow-on-mobile-form-submission}
++ Attiva il flusso di lavoro di AEM per l&#39;invio di moduli mobili{#trigger-aem-workflow-on-mobile-form-submission}
    + [Parte - 1](trigger-aem-workflow-on-mobile-form-submission/introduction.md)
    + [Parte - 2](trigger-aem-workflow-on-mobile-form-submission/handle-form-submission.md)
    + [Parte - 3](trigger-aem-workflow-on-mobile-form-submission/author-servlet.md)
@@ -281,7 +281,7 @@ ht-degree: 1%
 + Servizi documentali {#document-services}
    + [Tipi di PDF forms](document-services/pdf-forms-and-documents.md)
    + [Incorpora PDF in modulo adattivo](document-services/embed-pdf-inline.md)
-   + [Componente PDF in carosello](document-services/display-pdf-in-carousel.md)
+   + [Componente carosello PDF](document-services/display-pdf-in-carousel.md)
    + [Utilizzo del servizio Assembler in AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
    + [Unione XDP con il servizio Assembler](document-services/xdp-stitching-using-assembler-service.md)
    + [Utilizzo della cartella controllata in AEM Forms](document-services/watched-folders-document-services-article-use.md)
@@ -292,13 +292,13 @@ ht-degree: 1%
    + [Utilizzo dei frammenti xdp nel servizio di output](document-services/using-fragments-in-output-service.md)
    + [Script ECMA per generare PDF con frammenti](document-services/using-fragments-in-output-service-watched-folder.md)
    + [Generazione di più PDF da un file di dati](document-services/generate-multi-record-pdf.md)
-   + [Genera PDF per l’invio di moduli mobili](document-services/generate-pdf-from-mobile-form-submission-article.md)
-   + [Generare PDF per l’invio di moduli basati su componenti core](document-services/generate-pdf-from-core-component-form-submission.md)
+   + [Genera PDF all’invio di moduli per dispositivi mobili](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [Generare PDF sull’invio di moduli basati su Componenti core](document-services/generate-pdf-from-core-component-form-submission.md)
    + [Genera PDF interattivo da modulo mobile](document-services/render-interactive-form-using-api.md)
    + [Genera DoR interattivo da modulo adattivo](document-services/generate-interactive-dor.md)
-   + [Configura credenziali estensioni di Reader](document-services/configuring-reader-extension-osgi.md)
-   + [Applica diritti di utilizzo a PDF nella rappresentazione XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)
-   + [Applicare i diritti di utilizzo a Uploaded PDF](document-services/apply-reader-extension-rights-to-pdf.md)
+   + [Configurare le credenziali delle estensioni Reader](document-services/configuring-reader-extension-osgi.md)
+   + [Applicazione dei diritti di utilizzo a PDF nella rappresentazione XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)
+   + [Applicare i diritti di utilizzo a PDF caricato](document-services/apply-reader-extension-rights-to-pdf.md)
    + [Documenti di certificazione](document-services/certifying-documents-aem-forms-tutorial.md)
    + [Assembla allegati modulo](document-services/assemble-form-attachments.md)
    + [Utili servizi di utilità](document-services/useful-utility-services.md)
@@ -400,8 +400,8 @@ ht-degree: 1%
    + [Workbench: come modificare i parametri della memoria del workbench](troubleshooting/how-to-tweak-workbench-memory-parameters.md)
    + [Workbench: come modificare i parametri delle prestazioni del workbench](troubleshooting/how-to-tweak-workbench-performance-parameters.md)
    + [Designer: dipendenza di Designer da C++ ridistribuibile](troubleshooting/dependency-of-vc-on-designer.md)
-   + [Designer: come abilitare HTML Preview](troubleshooting/how-to-enable-html-preview.md)
-   + [Designer: come abilitare PDF Preview](troubleshooting/how-to-enable-pdf-preview.md)
+   + [Designer: abilitare l’anteprima di HTML](troubleshooting/how-to-enable-html-preview.md)
+   + [Designer: abilitare l’anteprima di PDF](troubleshooting/how-to-enable-pdf-preview.md)
    + [Designer: come installare le patch di Designer](troubleshooting/how-to-install-designer-patches.md)
    + [JEE Foundation: come modificare il valore dell’entropia](troubleshooting/how-to-change-the-value-of-entropy.md)
    + [JEE Foundation: come modificare il timeout delle transazioni di qualsiasi servizio in AEM Forms JEE](troubleshooting/how-to-change-transaction-timeout-of-any-service-in-aem-forms-jee.md)
@@ -424,8 +424,8 @@ ht-degree: 1%
    + [Generale: passaggi per abilitare la registrazione di debug per tutte le classi in WebSphere Application Server](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-websphere-application-server.md)
    + [Generale: passaggi per abilitare SSL per AEM Forms OSGi](troubleshooting/steps-to-enable-ssl-for-aem-forms-osgi.md)
    + [Generale: passaggi per crittografare la password del keystore da utilizzare in lc_turnkey.xml](troubleshooting/steps-to-encrypt-keystore-password-to-be-used-in-lc-turnkey-xml.md)
-   + [Generale: passaggi per reimpostare la password predefinita per gli utenti in AEM-Forms-JEE](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-jee.md)
-   + [Generale: passaggi per reimpostare la password predefinita per gli utenti in AEM-Forms-OSGI](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-osgi.md)
+   + [Generale: passaggi per reimpostare la password predefinita per gli utenti in AEM Forms JEE](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-jee.md)
+   + [Generale: passaggi per reimpostare la password predefinita per gli utenti in AEM Forms OSGI](troubleshooting/steps-to-reset-default-password-for-users-in-aem-forms-osgi.md)
    + [Generale: passaggi per impostare i localizzatori di incendio in un cluster ed eseguire la configurazione correlata](troubleshooting/steps-to-set-up-gemfire-locators-in-a-cluster-and-perform-related-configuration.md)
 
 

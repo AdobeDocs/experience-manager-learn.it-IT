@@ -1,15 +1,15 @@
 ---
 title: Crea componente kit di benvenuto
-description: Crea una pagina dei siti AEM con collegamenti per scaricare risorse in base ai dati del modulo inviato.
+description: Crea una pagina AEM Sites con collegamenti per scaricare risorse in base ai dati del modulo inviati.
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2022-12-14T00:00:00Z
 exl-id: 66496f0e-c121-4b6d-b371-084393ece3ca
 duration: 20
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 0%

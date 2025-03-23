@@ -1,7 +1,7 @@
 ---
 title: Punti di interruzione reattivi
-description: Scopri come configurare nuovi punti di interruzione reattivi per l’Editor pagina reattivo per AEM.
-version: Cloud Service
+description: Scopri come configurare nuovi punti di interruzione reattivi per l’Editor pagina reattivo di AEM.
+version: Experience Manager as a Cloud Service
 feature: Page Editor
 topic: Mobile, Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-11664
 thumbnail: kt-11664.jpeg
 exl-id: 8b48c28f-ba7f-4255-be96-a7ce18ca208b
 duration: 52
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 # Punti di interruzione reattivi
 
-Scopri come configurare nuovi punti di interruzione reattivi per l’Editor pagina reattivo per AEM.
+Scopri come configurare nuovi punti di interruzione reattivi per l’Editor pagina reattivo di AEM.
 
 ## Creare punti di interruzione CSS
 
-Innanzitutto, crea punti di interruzione multimediali nel CSS della griglia reattiva dell’AEM a cui aderisce il sito dell’AEM reattivo.
+Innanzitutto, crea punti di interruzione multimediali nel CSS AEM Responsive Grid a cui il sito responsive di AEM aderisce.
 
-Nel file `/ui.apps/src/main/content/jcr_root/apps/[app name]/clientlibs/clientlib-grid/less/grid.less`, creare i punti di interruzione da utilizzare insieme all&#39;emulatore mobile. Prendere nota di `max-width` per ogni punto di interruzione, in quanto i punti di interruzione CSS vengono mappati ai punti di interruzione dell&#39;Editor pagina reattivo dell&#39;AEM.
+Nel file `/ui.apps/src/main/content/jcr_root/apps/[app name]/clientlibs/clientlib-grid/less/grid.less`, creare i punti di interruzione da utilizzare insieme all&#39;emulatore mobile. Prendi nota di `max-width` per ogni punto di interruzione, in quanto esegue il mapping dei punti di interruzione CSS ai punti di interruzione dell’Editor pagina reattivo di AEM.
 
 ![Crea nuovi punti di interruzione reattivi](./assets/responsive-breakpoints/create-new-breakpoints.jpg)
 
@@ -39,7 +39,7 @@ Apri il file `ui.content/src/main/content/jcr_root/conf/<app name>/settings/wcm/
 
 ## Creare emulatori
 
-È necessario definire gli emulatori AEM che consentano agli autori di selezionare la vista reattiva da modificare nell’Editor pagina.
+È necessario definire gli emulatori di AEM che consentano agli autori di selezionare la vista reattiva da modificare nell’Editor pagina.
 
 Crea nodi emulatori in `/ui.apps/src/main/content/jcr_root/apps/<app name>/emulators`
 
@@ -49,7 +49,7 @@ Ad esempio, `/ui.apps/src/main/content/jcr_root/apps/wknd-examples/emulators/pho
 
 ## Crea gruppo di dispositivi
 
-Raggruppa gli emulatori per [renderli disponibili nell&#39;Editor pagina AEM](#update-the-templates-device-group).
+Raggruppa gli emulatori per [renderli disponibili in AEM Page Editor](#update-the-templates-device-group).
 
 Crea la struttura del nodo `/apps/settings/mobile/groups/<name of device group>` in `/ui.apps/src/main/content/jcr_root`.
 

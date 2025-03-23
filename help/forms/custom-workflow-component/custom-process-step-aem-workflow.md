@@ -2,14 +2,14 @@
 title: Implementazione del passaggio del processo personalizzato con la finestra di dialogo
 description: Scrittura di allegati del modulo adattivo nel file system mediante un passaggio del processo personalizzato
 feature: Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2021-06-09T00:00:00Z
 exl-id: 149d2c8c-bf44-4318-bba8-bec7e25da01b
 duration: 135
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Per scrivere la classe Java e distribuirla come bundle OSGi, sono necessari i se
 
 ## Crea progetto Maven
 
-Il primo passaggio consiste nel creare un progetto Maven utilizzando l’archetipo Maven di Adobe appropriato. I passaggi dettagliati sono elencati in questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una volta importato il progetto Maven nell’eclissi, sei pronto per iniziare a scrivere il primo componente OSGi che può essere utilizzato nel passaggio del processo.
+Il primo passaggio consiste nel creare un progetto Maven utilizzando l’archetipo Adobe Maven appropriato. I passaggi dettagliati sono elencati in questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una volta importato il progetto Maven nell’eclissi, sei pronto per iniziare a scrivere il primo componente OSGi che può essere utilizzato nel passaggio del processo.
 
 
 ### Crea classe che implementa WorkflowProcess
@@ -32,7 +32,7 @@ Il primo passaggio consiste nel creare un progetto Maven utilizzando l’archeti
 Apri il progetto Maven nell’IDE dell’eclissi. Espandere la cartella **projectname** > **core**. Espandi la cartella src/main/java. Dovresti vedere un pacchetto che termina con &quot;core&quot;. Creare la classe Java che implementa WorkflowProcess in questo pacchetto. Dovrai sovrascrivere il metodo di esecuzione. La firma del metodo execute è la seguente
 public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) genera WorkflowException
 
-In questa esercitazione scriveremo gli allegati aggiunti al modulo adattivo nel file system come parte del flusso di lavoro AEM.
+In questa esercitazione scriveremo gli allegati aggiunti al modulo adattivo nel file system come parte del flusso di lavoro di AEM.
 
 Per eseguire questo caso d’uso, è stata scritta la seguente classe java
 
@@ -118,7 +118,7 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
 ```
 
 
-* attachmentsPath: si tratta della stessa posizione specificata nel modulo adattivo quando è stata configurata l’azione di invio del modulo adattivo per richiamare il flusso di lavoro AEM. Questo è il nome della cartella in cui si desidera salvare gli allegati in AEM rispetto al payload del flusso di lavoro.
+* attachmentPath: si tratta della stessa posizione specificata nel modulo adattivo quando è stata configurata l’azione di invio del modulo adattivo per richiamare AEM Workflow. Questo è il nome della cartella in cui vuoi salvare gli allegati in AEM, relativo al payload del flusso di lavoro.
 
 * saveToLocation: è la posizione in cui si desidera salvare gli allegati nel file system del server AEM.
 

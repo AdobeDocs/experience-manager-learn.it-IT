@@ -1,7 +1,7 @@
 ---
 title: 'Guida introduttiva ad AEM Sites: nozioni di base sui componenti'
-description: Comprendi la tecnologia sottostante di un componente Adobe Experience Manager (AEM) Sites attraverso un semplice esempio di "HelloWorld". Vengono esplorati gli argomenti di HTL, modelli Sling, librerie lato client e finestre di dialogo per l’authoring.
-version: 6.5, Cloud Service
+description: Comprendi la tecnologia sottostante di un componente Sites di Adobe Experience Manager (AEM) tramite un semplice esempio di "HelloWorld". Vengono esplorati gli argomenti di HTL, modelli Sling, librerie lato client e finestre di dialogo per l’authoring.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Core Components, Developer Tools
 topic: Content Management, Development
 role: Developer
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
 duration: 1715
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Nozioni di base sui componenti {#component-basics}
 
-In questo capitolo, analizziamo la tecnologia di base di un componente Sites di Adobe Experience Manager (AEM) tramite un semplice esempio di `HelloWorld`. Sono state apportate piccole modifiche a un componente esistente, riguardanti argomenti quali authoring, HTL, modelli Sling e librerie lato client.
+In questo capitolo, esaminiamo la tecnologia sottostante di un componente Sites di Adobe Experience Manager (AEM) tramite un semplice esempio di `HelloWorld`. Sono state apportate piccole modifiche a un componente esistente, riguardanti argomenti quali authoring, HTL, modelli Sling e librerie lato client.
 
 ## Prerequisiti {#prerequisites}
 
@@ -38,7 +38,7 @@ L&#39;IDE utilizzato nei video è [Visual Studio Code](https://code.visualstudio
 
 ## Cosa intendi creare {#what-build}
 
-In questo capitolo vengono apportate diverse modifiche a un semplice componente `HelloWorld`. Durante l&#39;aggiornamento del componente `HelloWorld`, si apprendono le aree chiave dello sviluppo dei componenti AEM.
+In questo capitolo vengono apportate diverse modifiche a un semplice componente `HelloWorld`. Durante l&#39;esecuzione degli aggiornamenti al componente `HelloWorld`, si apprendono le aree chiave dello sviluppo dei componenti AEM.
 
 ## Progetto capitolo iniziale {#starter-project}
 
@@ -68,7 +68,7 @@ Apri un nuovo terminale della riga di comando ed esegui le azioni seguenti.
    $ cd aem-guides-wknd
    ```
 
-1. Genera e implementa il progetto in un’istanza locale dell’AEM con il seguente comando:
+1. Genera e implementa il progetto in un’istanza locale di AEM con il seguente comando:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -86,7 +86,7 @@ Apri un nuovo terminale della riga di comando ed esegui le azioni seguenti.
 
 ## Authoring dei componenti {#component-authoring}
 
-I componenti possono essere considerati come piccoli blocchi predefiniti modulari di una pagina web. Per poter riutilizzare i componenti, questi devono essere configurabili. Questa operazione viene eseguita tramite la finestra di dialogo di authoring. Ora creiamo un componente semplice e analizziamo come i valori provenienti dalla finestra di dialogo vengono mantenuti nell’AEM.
+I componenti possono essere considerati come piccoli blocchi predefiniti modulari di una pagina web. Per poter riutilizzare i componenti, questi devono essere configurabili. Questa operazione viene eseguita tramite la finestra di dialogo di authoring. Ora creiamo un componente semplice e analizziamo come i valori della finestra di dialogo vengono mantenuti in AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330986?quality=12&learn=on)
 
@@ -111,7 +111,7 @@ Aggiorniamo quindi lo script HTL `HelloWorld` per visualizzare un saluto aggiunt
 Di seguito sono riportati i passaggi di alto livello eseguiti nel video precedente.
 
 1. Passare all&#39;IDE e aprire il progetto al modulo `ui.apps`.
-1. Aprire il file `helloworld.html` e aggiornare il markup HTML.
+1. Aprire il file `helloworld.html` e aggiornare il codice HTML.
 1. Utilizza gli strumenti IDE come [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) per sincronizzare la modifica del file con l&#39;istanza AEM locale.
 1. Torna al browser e osserva come è cambiato il rendering del componente.
 1. Apri il file `.content.xml` che definisce la finestra di dialogo per il componente `HelloWorld` in:
@@ -168,11 +168,11 @@ Di seguito sono riportati i passaggi di alto livello eseguiti nel video preceden
    </div>
    ```
 
-1. Distribuisci le modifiche in un’istanza locale dell’AEM utilizzando il plug-in per sviluppatori o Maven.
+1. Distribuisci le modifiche in un’istanza locale di AEM utilizzando il plug-in per sviluppatori o Maven.
 
 ## Modelli Sling {#sling-models}
 
-I modelli Sling sono Java™ &quot;POJO&quot; (Plain Old Java™ Objects) basati su annotazioni che facilitano la mappatura dei dati dalle variabili JCR a Java™. Forniscono anche molti altri vantaggi quando si sviluppano nel contesto dell&#39;AEM.
+I modelli Sling sono Java™ &quot;POJO&quot; (Plain Old Java™ Objects) basati su annotazioni che facilitano la mappatura dei dati dalle variabili JCR a Java™. Forniscono anche diversi altri vantaggi quando si sviluppa nel contesto di AEM.
 
 Quindi, apportiamo alcuni aggiornamenti al modello Sling `HelloWorldModel` per applicare una logica di business ai valori memorizzati nel JCR prima di eseguirne l&#39;output sulla pagina.
 
@@ -279,11 +279,11 @@ Quindi, apportiamo alcuni aggiornamenti al modello Sling `HelloWorldModel` per a
    </div>
    ```
 
-1. Implementa le modifiche in un’istanza locale dell’AEM utilizzando il plug-in per sviluppatori Eclipse o utilizzando le tue competenze Maven.
+1. Distribuisci le modifiche in un’istanza locale di AEM utilizzando il plug-in per sviluppatori Eclipse o utilizzando le tue competenze Maven.
 
 ## Librerie lato client {#client-side-libraries}
 
-Le librerie lato client, `clientlibs` in breve, forniscono un meccanismo per organizzare e gestire i file CSS e JavaScript necessari per un&#39;implementazione AEM Sites. Le librerie lato client sono il modo standard per includere CSS e JavaScript in una pagina nell’AEM.
+Le librerie lato client, `clientlibs` in breve, forniscono un meccanismo per organizzare e gestire i file CSS e JavaScript necessari per un&#39;implementazione AEM Sites. Le librerie lato client sono il modo standard per includere CSS e JavaScript in una pagina in AEM.
 
 Il modulo [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) è un progetto [webpack](https://webpack.js.org/) disaccoppiato integrato nel processo di compilazione. Questo consente l’utilizzo delle librerie front-end più popolari come Sass, LESS e TypeScript. Il modulo `ui.frontend` viene approfondito nel [capitolo Librerie lato client](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
 
@@ -314,7 +314,7 @@ Di seguito sono riportati i passaggi di alto livello eseguiti nel video preceden
    }
    ```
 
-1. Nel terminale dovrebbe essere presente un&#39;attività che indica che il modulo `ui.frontend` sta compilando e sincronizzando le modifiche con l&#39;istanza locale dell&#39;AEM.
+1. Nel terminale dovrebbe essere presente un&#39;attività che indica che il modulo `ui.frontend` sta compilando e sincronizzando le modifiche con l&#39;istanza locale di AEM.
 
    ```shell
    Entrypoint site 214 KiB = clientlib-site/site.css 8.45 KiB clientlib-site/site.js 206 KiB

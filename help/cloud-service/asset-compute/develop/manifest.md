@@ -1,8 +1,8 @@
 ---
-title: Configurare il file manifest.yml di un progetto Asset compute
-description: Il file manifest.yml del progetto di Asset compute descrive tutti i processi di lavoro del progetto da distribuire.
+title: Configurare il file manifest.yml di un progetto Asset Compute
+description: Il file manifest.yml del progetto Asset Compute descrive tutti i processi di lavoro del progetto da distribuire.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6281
 thumbnail: KT-6281.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 766bfaff-ade0-41c8-a395-e79dfb4b3d76
 duration: 115
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Configurare manifest.yml
 
-Il `manifest.yml`, che si trova nella directory principale del progetto Asset Compute, descrive tutti i processi di lavoro di questo progetto da distribuire.
+`manifest.yml`, che si trova nella directory principale del progetto Asset Compute, descrive tutti i processi di lavoro di questo progetto da distribuire.
 
 ![manifest.yml](./assets/manifest/manifest.png)
 
@@ -30,7 +30,7 @@ I processi di lavoro sono definiti come voci di azioni Adobe I/O Runtime in `act
 
 I processi di lavoro che accedono ad altre integrazioni Adobe I/O devono impostare la proprietà `annotations -> require-adobe-auth` su `true` in quanto [espone le credenziali Adobe I/O del processo di lavoro](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) tramite l&#39;oggetto `params.auth`. Questo è in genere necessario quando il lavoratore effettua una chiamata alle API di Adobe I/O, come le API di Adobe Photoshop, Lightroom o Sensei, e può essere attivato per lavoratore.
 
-1. Aprire e rivedere il processo di lavoro generato automaticamente `manifest.yml`. I progetti che contengono più processi di lavoro di Asset compute devono definire una voce per ogni processo di lavoro sotto l&#39;array `actions`.
+1. Aprire e rivedere il processo di lavoro generato automaticamente `manifest.yml`. I progetti che contengono più processi di lavoro Asset Compute devono definire una voce per ogni processo di lavoro sotto l&#39;array `actions`.
 
 ```yml
 packages:
@@ -51,9 +51,9 @@ packages:
 
 Ogni lavoratore può configurare i [limiti](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) per il proprio contesto di esecuzione in Adobe I/O Runtime. Questi valori devono essere regolati in modo da fornire al lavoratore un dimensionamento ottimale, in base al volume, al tasso e al tipo di risorse che calcolerà, nonché al tipo di lavoro svolto.
 
-Rivedi [Adobe di istruzioni per il dimensionamento](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) prima di impostare i limiti. I lavoratori Asset compute possono esaurire la memoria durante l’elaborazione delle risorse, causando l’interruzione dell’esecuzione di Adobe I/O Runtime, in modo da garantire che il lavoratore venga ridimensionato in modo appropriato per gestire tutte le risorse candidate.
+Rivedi le [linee guida per il dimensionamento di Adobe](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) prima di impostare i limiti. I processi di lavoro di Asset Compute possono esaurire la memoria durante l’elaborazione delle risorse, causando l’interruzione dell’esecuzione di Adobe I/O Runtime, in modo da garantire che il processo di lavoro venga ridimensionato in modo appropriato per gestire tutte le risorse candidate.
 
-1. Aggiungere una sezione `inputs` alla nuova voce delle azioni `wknd-asset-compute`. Ciò consente di ottimizzare le prestazioni complessive e l&#39;allocazione delle risorse del lavoratore Asset compute.
+1. Aggiungere una sezione `inputs` alla nuova voce delle azioni `wknd-asset-compute`. Questo consente di ottimizzare le prestazioni complessive e l’allocazione delle risorse del processo di lavoro Asset Compute.
 
 ```yml
 packages:
@@ -103,22 +103,22 @@ Il `.manifest.yml` finale è disponibile su Github all&#39;indirizzo:
 
 ## Convalida del manifesto.yml
 
-Una volta aggiornato l&#39;Asset compute generato `manifest.yml`, eseguire lo strumento di sviluppo locale e verificare che venga avviato correttamente con le impostazioni aggiornate di `manifest.yml`.
+Una volta aggiornato l&#39;Asset Compute `manifest.yml` generato, eseguire lo strumento di sviluppo locale e verificare che inizi correttamente con le impostazioni `manifest.yml` aggiornate.
 
-Per avviare lo strumento di sviluppo Asset Compute per il progetto Asset Compute:
+Per avviare Asset Compute Development Tool per il progetto Asset Compute:
 
-1. Apri una riga di comando nella directory principale del progetto di Asset compute (in Codice VS può essere aperto direttamente nell’IDE tramite Terminal > New Terminal) ed esegui il comando:
+1. Apri una riga di comando nella directory principale del progetto Asset Compute (in VS Code può essere aperta direttamente nell’IDE tramite Terminal > New Terminal) ed esegui il comando:
 
    ```
    $ aio app run
    ```
 
-1. Lo strumento di sviluppo Asset compute locale verrà aperto nel browser Web predefinito all&#39;indirizzo __http://localhost:9000__.
+1. Lo strumento di sviluppo Asset Compute locale verrà aperto nel browser Web predefinito all&#39;indirizzo __http://localhost:9000__.
 
    ![esecuzione app aio](assets/environment-variables/aio-app-run.png)
 
 1. Esaminare l&#39;output della riga di comando e il browser Web per i messaggi di errore durante l&#39;inizializzazione dello strumento di sviluppo.
-1. Per arrestare lo strumento di sviluppo Asset Compute, toccare `Ctrl-C` nella finestra che ha eseguito `aio app run` per terminare il processo.
+1. Per arrestare lo strumento di sviluppo Asset Compute, tocca `Ctrl-C` nella finestra che ha eseguito `aio app run` per terminare il processo.
 
 ## Risoluzione dei problemi
 

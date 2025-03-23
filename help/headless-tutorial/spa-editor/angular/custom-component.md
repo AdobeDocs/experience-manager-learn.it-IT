@@ -1,8 +1,8 @@
 ---
-title: Creare un componente personalizzato | Guida introduttiva dell’Editor SPA e Angular dell’AEM
-description: Scopri come creare un componente personalizzato da utilizzare con l’Editor SPA dell’AEM. Scopri come sviluppare finestre di dialogo di authoring e modelli Sling per estendere il modello JSON e popolare un componente personalizzato.
+title: Creare un componente personalizzato | Guida introduttiva dell’Editor SPA di AEM e di Angular
+description: Scopri come creare un componente personalizzato da utilizzare con l’Editor SPA di AEM. Scopri come sviluppare finestre di dialogo di authoring e modelli Sling per estendere il modello JSON e popolare un componente personalizzato.
 feature: SPA Editor
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-5831
 thumbnail: 5831-spa-angular.jpg
 topic: SPA
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 6c1c7f2b-f574-458c-b744-b92419c46f23
 duration: 308
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 0%
@@ -20,17 +20,17 @@ ht-degree: 0%
 
 # Creare un componente personalizzato {#custom-component}
 
-Scopri come creare un componente personalizzato da utilizzare con l’Editor SPA dell’AEM. Scopri come sviluppare finestre di dialogo di authoring e modelli Sling per estendere il modello JSON e popolare un componente personalizzato.
+Scopri come creare un componente personalizzato da utilizzare con l’Editor SPA di AEM. Scopri come sviluppare finestre di dialogo di authoring e modelli Sling per estendere il modello JSON e popolare un componente personalizzato.
 
 ## Obiettivo
 
-1. Comprendi il ruolo dei modelli Sling nella manipolazione dell’API del modello JSON fornita dall’AEM.
-2. Scopri come creare finestre di dialogo per i componenti AEM.
+1. Comprendi il ruolo dei modelli Sling nella manipolazione dell’API del modello JSON fornita da AEM.
+2. Scopri come creare le finestre di dialogo dei componenti di AEM.
 3. Scopri come creare un componente AEM **personalizzato** compatibile con il framework dell’editor SPA.
 
 ## Cosa verrà creato
 
-L&#39;obiettivo dei capitoli precedenti era lo sviluppo di componenti SPA e la loro mappatura su *esistenti* componenti core AEM. Questo capitolo illustra come creare ed estendere *nuovi* componenti AEM e manipolare il modello JSON gestito dall&#39;AEM.
+L&#39;obiettivo dei capitoli precedenti era lo sviluppo di componenti SPA e il loro mapping a *esistenti* componenti core AEM. Questo capitolo illustra come creare ed estendere *nuovi* componenti AEM e manipolare il modello JSON gestito da AEM.
 
 Un semplice `Custom Component` illustra i passaggi necessari per creare un nuovo componente AEM.
 
@@ -50,7 +50,7 @@ Esaminare gli strumenti e le istruzioni necessari per configurare un [ambiente d
    $ git checkout Angular/custom-component-start
    ```
 
-2. Distribuisci la base di codice in un’istanza AEM locale utilizzando Maven:
+2. Implementa la base di codice in un’istanza AEM locale utilizzando Maven:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -62,7 +62,7 @@ Esaminare gli strumenti e le istruzioni necessari per configurare un [ambiente d
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-3. Installa il pacchetto finito per il [sito di riferimento WKND tradizionale](https://github.com/adobe/aem-guides-wknd/releases/latest). Le immagini fornite dal [sito di riferimento WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) vengono riutilizzate nell&#39;SPA WKND. È possibile installare il pacchetto utilizzando [Gestione pacchetti AEM](http://localhost:4502/crx/packmgr/index.jsp).
+3. Installa il pacchetto finito per il [sito di riferimento WKND tradizionale](https://github.com/adobe/aem-guides-wknd/releases/latest). Le immagini fornite dal [sito di riferimento WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) sono riutilizzate nell&#39;applicazione a pagina singola WKND. È possibile installare il pacchetto utilizzando [Gestione pacchetti di AEM](http://localhost:4502/crx/packmgr/index.jsp).
 
    ![Gestione pacchetti installa wknd.all](./assets/map-components/package-manager-wknd-all.png)
 
@@ -74,7 +74,7 @@ Un componente AEM è definito come nodo e proprietà. Nel progetto, questi nodi 
 
 >[!NOTE]
 >
-> Un rapido aggiornamento sulle [nozioni di base dei componenti AEM potrebbe essere utile](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html).
+> Un rapido aggiornamento sulle [nozioni di base dei componenti di AEM potrebbe essere utile](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html).
 
 1. Aprire la cartella `ui.apps` nell&#39;IDE desiderato.
 2. Passare a `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components` e creare una cartella denominata `custom-component`.
@@ -90,7 +90,7 @@ Un componente AEM è definito come nodo e proprietà. Nel progetto, questi nodi 
 
    ![Crea definizione componente personalizzato](assets/custom-component/aem-custom-component-definition.png)
 
-   `jcr:primaryType="cq:Component"` - identifica che questo nodo è un componente AEM.
+   `jcr:primaryType="cq:Component"` - identifica che questo nodo è un componente di AEM.
 
    `jcr:title` è il valore visualizzato agli autori di contenuti e `componentGroup` determina il raggruppamento di componenti nell&#39;interfaccia utente di creazione.
 
@@ -156,13 +156,13 @@ Un componente AEM è definito come nodo e proprietà. Nel progetto, questi nodi 
    >
    > Puoi visualizzare molti più [esempi di finestre di dialogo visualizzando le definizioni dei Componenti core](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components). Puoi anche visualizzare altri campi modulo, come `select`, `textarea`, `pathfield`, disponibili sotto `/libs/granite/ui/components/coral/foundation/form` in [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/libs/granite/ui/components/coral/foundation/form).
 
-   Con un componente AEM tradizionale, in genere è necessario uno script [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it). Poiché l’SPA esegue il rendering del componente, non è necessario alcuno script HTL.
+   Con un componente AEM tradizionale, in genere è necessario uno script [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it). Poiché l’applicazione a pagina singola esegue il rendering del componente, non è necessario alcuno script HTL.
 
 ## Creare il modello Sling
 
 I modelli Sling sono Java™ &quot;POJO&quot; (Plain Old Java™ Objects) basati su annotazioni che facilitano la mappatura dei dati dalle variabili JCR a Java™. [I modelli Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models) in genere funzionano per incapsulare una logica di business lato server complessa per i componenti AEM.
 
-Nel contesto dell&#39;editor SPA, i modelli Sling espongono il contenuto di un componente tramite il modello JSON tramite una funzione che utilizza [Sling Model Exporter](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=it).
+Nel contesto dell&#39;Editor SPA, i modelli Sling espongono il contenuto di un componente tramite il modello JSON tramite una funzione che utilizza [Sling Model Exporter](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=it).
 
 1. Nell&#39;IDE scelto aprire il modulo `core`. `CustomComponent.java` e `CustomComponentImpl.java` sono già stati creati e sottoposti a stub come parte del codice iniziale del capitolo.
 
@@ -203,7 +203,7 @@ Nel contesto dell&#39;editor SPA, i modelli Sling espongono il contenuto di un c
    static final String RESOURCE_TYPE = "wknd-spa-angular/components/custom-component";
    ```
 
-   Il tipo di risorsa del componente è ciò che associa il modello Sling al componente AEM e alla fine lo associa al componente Angular.
+   Il tipo di risorsa del componente è ciò che associa il modello Sling al componente AEM e alla fine lo mappa al componente Angular.
 
 6. Aggiungere il metodo `getExportedType()` alla classe `CustomComponentImpl` per restituire il tipo di risorsa del componente:
 
@@ -239,11 +239,11 @@ Nel contesto dell&#39;editor SPA, i modelli Sling espongono il contenuto di un c
 
 ## Aggiornare il componente Angular
 
-Il codice di Angular per il componente personalizzato è già stato creato. Quindi, effettua alcuni aggiornamenti per mappare il componente Angular al componente AEM.
+Il codice Angular per il componente personalizzato è già stato creato. Quindi, effettua alcuni aggiornamenti per mappare il componente Angular al componente AEM.
 
 1. Nel modulo `ui.frontend` apri il file `ui.frontend/src/app/components/custom/custom.component.ts`
 2. Osservare la riga `@Input() message: string;`. È previsto che il valore in maiuscolo trasformato sia mappato a questa variabile.
-3. Importare l&#39;oggetto `MapTo` dall&#39;SDK JS dell&#39;editor SPA AEM e utilizzarlo per eseguire il mapping al componente AEM:
+3. Importare l&#39;oggetto `MapTo` dal SDK JS dell&#39;editor di applicazioni a pagina singola di AEM e utilizzarlo per eseguire il mapping al componente AEM:
 
    ```diff
    + import {MapTo} from '@adobe/cq-angular-editable-components';
@@ -265,9 +265,9 @@ Il codice di Angular per il componente personalizzato è già stato creato. Quin
    }
    ```
 
-   Affinché il segnaposto dell&#39;editor AEM venga visualizzato correttamente quando il componente è vuoto, è necessario impostare `:host-context` o un altro `<div>` su `display: block;`.
+   Affinché il segnaposto dell&#39;editor di AEM venga visualizzato correttamente quando il componente è vuoto, è necessario impostare `:host-context` o un altro `<div>` su `display: block;`.
 
-6. Distribuisci gli aggiornamenti a un ambiente AEM locale dalla directory principale del progetto, utilizzando le tue competenze Maven:
+6. Distribuisci gli aggiornamenti a un ambiente AEM locale dalla directory principale del progetto, utilizzando le abilità Maven:
 
    ```shell
    $ cd aem-guides-wknd-spa
@@ -276,7 +276,7 @@ Il codice di Angular per il componente personalizzato è già stato creato. Quin
 
 ## Aggiornare il criterio del modello
 
-Passare quindi all&#39;AEM per verificare gli aggiornamenti e consentire l&#39;aggiunta di `Custom Component` all&#39;SPA.
+Quindi, passa ad AEM per verificare gli aggiornamenti e consentire l&#39;aggiunta di `Custom Component` all&#39;applicazione a pagina singola.
 
 1. Verifica la registrazione del nuovo modello Sling passando a [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels).
 
@@ -299,7 +299,7 @@ Passare quindi all&#39;AEM per verificare gli aggiornamenti e consentire l&#39;a
 
 ## Creare il componente personalizzato
 
-Quindi, creare `Custom Component` utilizzando l&#39;editor SPA dell&#39;AEM.
+Quindi, creare `Custom Component` utilizzando l&#39;editor SPA di AEM.
 
 1. Passa a [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html).
 2. In modalità `Edit`, aggiungere `Custom Component` a `Layout Container`:
@@ -329,10 +329,10 @@ Quindi, creare `Custom Component` utilizzando l&#39;editor SPA dell&#39;AEM.
 
 ## Congratulazioni. {#congratulations}
 
-Congratulazioni, hai imparato a creare un componente AEM personalizzato e il funzionamento dei modelli e delle finestre di dialogo Sling con il modello JSON.
+Congratulazioni, hai imparato a creare un componente AEM personalizzato e come funzionano i modelli e le finestre di dialogo Sling con il modello JSON.
 
 Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/custom-component-solution) o estrarre il codice localmente passando al ramo `Angular/custom-component-solution`.
 
 ### Passaggi successivi {#next-steps}
 
-[Estendere un componente core](extend-component.md) - Scopri come estendere un componente core esistente da utilizzare con l&#39;editor SPA dell&#39;AEM. Comprendere come aggiungere proprietà e contenuti a un componente esistente è una tecnica efficace per espandere le funzionalità di un’implementazione dell’Editor SPA dell’AEM.
+[Estendere un componente core](extend-component.md) - Scopri come estendere un componente core esistente da utilizzare con l&#39;editor SPA di AEM. Scopri come aggiungere proprietà e contenuto a un componente esistente per espandere le funzionalità di un’implementazione dell’Editor SPA di AEM.

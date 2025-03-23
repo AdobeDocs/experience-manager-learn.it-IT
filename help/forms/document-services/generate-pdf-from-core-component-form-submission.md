@@ -1,7 +1,7 @@
 ---
-title: Generare PDF con dati da un modulo adattivo basato su componenti core
+title: Genera PDF con dati da moduli adattivi basati su componenti core
 description: Unire i dati dall’invio di moduli basati su componenti core con il modello XDP nel flusso di lavoro
-version: 6.5
+version: Experience Manager 6.5
 feature: Forms Service
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-15025
 last-substantial-update: 2024-02-26T00:00:00Z
 exl-id: cae160f2-21a5-409c-942d-53061451b249
 duration: 97
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Ecco il testo rivisto con l’iniziale maiuscola &quot;Componenti core&quot;:
 
-Uno scenario tipico prevede la generazione di un PDF dai dati inviati tramite un modulo adattivo basato su Componenti core. Questi dati sono sempre in formato JSON. Per generare un PDF utilizzando l’API di Render PDF, è necessario convertire i dati JSON in formato XML. Per questa conversione viene utilizzato il metodo `toString` di `org.json.XML`. Per ulteriori dettagli, fare riferimento alla [documentazione del metodo `org.json.XML.toString`](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-).
+Uno scenario tipico prevede la generazione di un PDF dai dati inviati tramite un modulo adattivo basato su Componenti core. Questi dati sono sempre in formato JSON. Per generare un PDF utilizzando l’API di rendering di PDF, è necessario convertire i dati JSON in formato XML. Per questa conversione viene utilizzato il metodo `toString` di `org.json.XML`. Per ulteriori dettagli, fare riferimento alla [documentazione del metodo `org.json.XML.toString`](https://www.javadoc.io/doc/org.json/json/20171018/org/json/XML.html#toString-java.lang.Object-).
 
 ## Moduli adattivi basati su schema JSON
 
@@ -119,10 +119,10 @@ Per gestire l’invio di un modulo, crea un flusso di lavoro che includa due pas
 
 Per eseguire il test sul server locale, segui questi passaggi semplificati:
 
-1. [Scarica e installa il bundle personalizzato tramite la console Web OSGi dell&#39;AEM](assets/convertJsonToXML.core-1.0.0-SNAPSHOT.jar).
+1. [Scarica e installa il bundle personalizzato tramite la console Web AEM OSGi](assets/convertJsonToXML.core-1.0.0-SNAPSHOT.jar).
 1. [Importa il pacchetto del flusso di lavoro](assets/workflow_to_render_pdf.zip).
 1. [Importa il modulo adattivo di esempio e il modello XDP](assets/adaptive_form_and_xdp_template.zip).
 1. [Anteprima del modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/f23/jcr:content?wcmmode=disabled).
 1. Completa alcuni campi modulo.
 1. Invia il modulo per avviare il flusso di lavoro AEM.
-1. Trova il PDF renderizzato nella cartella del payload del flusso di lavoro.
+1. Trova il PDF sottoposto a rendering nella cartella del payload del flusso di lavoro.

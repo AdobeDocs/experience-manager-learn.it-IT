@@ -1,7 +1,7 @@
 ---
 title: Cloud 5 - Pianificazione processi Sling
-description: Pianificazione dei processi AEM nel cloud
-version: Cloud Service
+description: Pianificazione dei processi di AEM nel cloud
+version: Experience Manager as a Cloud Service
 role: Admin, Developer
 level: Intermediate
 thumbnail: 343473.jpeg
@@ -9,7 +9,7 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 8784d77f-1c70-4694-bd08-79b71adbda48
 duration: 309
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Cloud 5 - Pianificazione processi Sling
 
-La pianificazione e l’utilizzo dei processi sono diversi da una distribuzione AEM non cluster. Questo video mostra alcuni errori e aspetti da considerare durante l’esecuzione di queste attività.
+La pianificazione e l’utilizzo dei processi sono diversi da quelli di una distribuzione AEM non cluster. Questo video mostra alcuni errori e aspetti da considerare durante l’esecuzione di queste attività.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343473?quality=12&learn=on)
 

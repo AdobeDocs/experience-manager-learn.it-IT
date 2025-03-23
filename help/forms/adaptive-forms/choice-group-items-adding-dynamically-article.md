@@ -2,14 +2,14 @@
 title: Aggiunta di articoli al componente gruppo di scelta
 description: Aggiungi elementi al componente gruppo di scelta in modo dinamico
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: User
 level: Beginner
 exl-id: 8fbea634-7949-417f-a4d6-9e551fff63f3
 last-substantial-update: 2021-09-10T00:00:00Z
 duration: 337
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Puoi aggiungere elementi utilizzando l’editor visivo e l’editor di codice, a
 
 Nella schermata seguente, stiamo impostando le opzioni di Periodo(anni) di prestito sui risultati di una chiamata al servizio denominata getLoanPeriods.
 
-![Editor regole](assets/ruleeditor.png)
+![Editor di regole](assets/ruleeditor.png)
 
 **Utilizzo dell&#39;editor di codice**: quando si desidera impostare gli elementi nel gruppo di scelta in modo dinamico in base ai valori immessi nel modulo. Ad esempio, il seguente frammento di codice imposta gli elementi della casella di controllo sui valori immessi nei campi del nome del candidato e del coniuge del modulo adattivo.
 
@@ -100,4 +100,4 @@ Per provare questo sul sistema:
 * Compilare la tabella di ammortamento. La pianificazione dell’ammortamento viene recuperata utilizzando una chiamata REST.
 
 >[!NOTE]
-> Si presume che tomcat sia in esecuzione sulla porta 8080 e AEM sulla porta 4502
+> Si presume che tomcat funzioni sulla porta 8080 e AEM sulla porta 4502

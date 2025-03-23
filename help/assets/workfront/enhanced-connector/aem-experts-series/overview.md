@@ -1,7 +1,7 @@
 ---
 title: Integrare Workfront e AEM Assets utilizzando il connettore avanzato
 description: Scopri le nozioni di base sull’integrazione avanzata del connettore Adobe Workfront e Experience Manager Assets.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management, Integrations
 feature: Asset Management
 role: Admin, User
@@ -13,7 +13,7 @@ badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 4f279c0d-270f-433e-b047-88c02f5b1e78
 duration: 49
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -22,16 +22,16 @@ ht-degree: 0%
 
 # Integrare Workfront e AEM Assets con il connettore avanzato
 
-![Serie di esperti AEM](./assets/banner.png)
+![AEM Experts Series](./assets/banner.png)
 
-Unisciti agli esperti Workfront e Experience Manager Assets di Adobe in questa serie di video in quattro parti mentre mostrano e discutono i pro e i contro dell’integrazione di Workfront e AEM Assets utilizzando il connettore avanzato.
+Unisciti agli esperti Adobe di Workfront e Experience Manager Assets in questa serie di video in quattro parti mentre mostrano e discutono i pro e i contro dell’integrazione di Workfront e AEM Assets utilizzando il connettore avanzato.
 
-Questa serie di esperti in quattro parti fa seguito a un gruppo di Adobi - dai product manager ai consulenti e ai partner di Adobi - che discute di:
+Questa serie di esperti in quattro parti fa seguito a un gruppo di esperti Adobe, dai product manager ai consulenti e ai partner Adobe, che tratta i seguenti argomenti:
 
 1. [Esecuzione delle configurazioni di configurazione iniziali in Workfront e AEM](./setup.md)
 2. [Configurazione della sincronizzazione dei metadati tra i moduli personalizzati di Workfront e AEM](./custom-forms.md)
-3. [Utilizzo di tag AEM, cartelle collegate a progetti, schemi di metadati di Adobe Asset Link e cartelle per massimizzare il valore](./aem-tags-project-linked-folders-and-folder-metadata.md)
-4. [Utilizzo di un flusso di lavoro AEM avanzato per semplificare i processi aziendali in AEM e Workfront e altre impostazioni avanzate](./advanced-settings-and-workflows.md)
+3. [Utilizzo di tag di AEM, cartelle collegate a progetti, Adobe Asset Link e schemi di metadati delle cartelle per massimizzare il valore](./aem-tags-project-linked-folders-and-folder-metadata.md)
+4. [Utilizzo del flusso di lavoro avanzato di AEM per semplificare i processi aziendali in AEM e Workfront e altre impostazioni avanzate](./advanced-settings-and-workflows.md)
 
 <table>
   <td>
@@ -45,7 +45,7 @@ Questa serie di esperti in quattro parti fa seguito a un gruppo di Adobi - dai p
       </div>
       <p>
         <br/>
-         Scopri come impostare ed eseguire la configurazione iniziale di Workfront, ad Experience Manager il connettore avanzato.
+         Scopri come impostare ed eseguire la configurazione iniziale del connettore avanzato di Workfront for Experience Manager.
       </p>
    </td>
    <!-- Workfront custom forms and metadata mapping -->
@@ -66,7 +66,7 @@ Questa serie di esperti in quattro parti fa seguito a un gruppo di Adobi - dai p
     <!-- AEM Tags, project linked folders, and folder metadata -->
     <td>
       <a href="./aem-tags-project-linked-folders-and-folder-metadata.md">
-        <img alt="Tag AEM, cartelle collegate a un progetto e metadati di cartelle" 
+        <img alt="Tag di AEM, cartelle collegate a un progetto e metadati di cartelle" 
              src="./assets/aem-tags.png">
       </a>
       <div>
@@ -75,7 +75,7 @@ Questa serie di esperti in quattro parti fa seguito a un gruppo di Adobi - dai p
       </div>
       <p>
         <br/>
-            Scopri come gestire la tassonomia dell’AEM da Workfront, utilizzare cartelle collegate a progetti e dati per i metadati delle cartelle di risorse AEM.
+            Scopri come gestire la tassonomia di AEM da Workfront, utilizzare cartelle collegate a progetti e dati per i metadati delle cartelle di risorse di AEM.
       </p>
    </td>   
    <!-- Advanced workflows -->
@@ -90,7 +90,7 @@ Questa serie di esperti in quattro parti fa seguito a un gruppo di Adobi - dai p
       </div>
       <p>
         <br/>
-            Scopri le impostazioni avanzate del connettore ottimizzato di Workfront per AEM e come gestire la sincronizzazione dei dati utilizzando flussi di lavoro avanzati.
+            Scopri le impostazioni avanzate del connettore avanzato Workfront per AEM e come gestire la sincronizzazione dei dati utilizzando flussi di lavoro avanzati.
       </p>
    </td>
   </tr>  

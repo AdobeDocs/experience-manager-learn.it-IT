@@ -1,7 +1,7 @@
 ---
 title: Tracciare il componente su cui è stato fatto clic con Adobe Analytics
-description: Utilizza Adobe Client Data Layer basato su eventi per monitorare i clic di componenti specifici su un sito Adobe Experience Manager. Scopri come utilizzare le regole di tag per ascoltare questi eventi e inviare dati a una suite di rapporti di Adobe Analytics utilizzando un beacon di tracciamento dei collegamenti.
-version: Cloud Service
+description: Utilizza Adobe Client Data Layer basato sugli eventi per tenere traccia dei clic su componenti specifici in un sito Adobe Experience Manager. Scopri come utilizzare le regole di tag per ascoltare questi eventi e inviare dati a una suite di rapporti di Adobe Analytics utilizzando un beacon di tracciamento dei collegamenti.
+version: Experience Manager as a Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer
 role: Developer
@@ -12,7 +12,7 @@ badgeIntegration: label="Integrazione" type="positive"
 doc-type: Tutorial
 exl-id: ab051363-d3e8-4c07-b1fa-3a5d24757496
 duration: 394
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1750'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Tracciare il componente su cui è stato fatto clic con Adobe Analytics
 
-Utilizza [Adobe Client Data Layer basato sugli eventi con i componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it) per tenere traccia dei clic su componenti specifici in un sito Adobe Experience Manager. Scopri come utilizzare le regole nella proprietà tag per rilevare gli eventi di clic, filtrare per componente e inviare i dati a un Adobe Analytics con un beacon di tracciamento dei collegamenti.
+Utilizza [Adobe Client Data Layer basato sugli eventi con i componenti core di AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it) per tenere traccia dei clic su componenti specifici in un sito Adobe Experience Manager. Scopri come utilizzare le regole nella proprietà tag per rilevare gli eventi di clic, filtrare per componente e inviare i dati a un Adobe Analytics con un beacon di tracciamento dei collegamenti.
 
 ## Cosa intendi creare {#what-build}
 
@@ -41,9 +41,9 @@ Questo tutorial è una continuazione di [Raccogli dati di pagina con Adobe Analy
 
 * Una proprietà **Tag** con l&#39;estensione [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) abilitata
 * **Adobe Analytics** ID suite di rapporti test/dev e server di tracciamento. Consulta la seguente documentazione per [creare una suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
-* [Estensione del browser Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) configurata con la proprietà tag caricata nel [sito WKND](https://wknd.site/us/en.html) o in un sito AEM con il livello dati Adobe abilitato.
+* Estensione del browser [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) configurata con la proprietà tag caricata nel [sito WKND](https://wknd.site/us/en.html) o in un sito AEM con Adobe Data Layer abilitato.
 
-## Schema Pulsante e teaser di Inspect
+## Controllare lo schema Button e Teaser
 
 Prima di creare regole nella proprietà tag, è utile rivedere lo schema [per Button e Teaser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item) e analizzarli nell&#39;implementazione del livello dati.
 
@@ -83,17 +83,17 @@ Prima di creare regole nella proprietà tag, è utile rivedere lo schema [per Bu
 
    I dettagli dei dati di cui sopra si basano sullo schema [Componente/Contenitore](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item). La nuova regola di tag utilizza questo schema.
 
-## Creare una regola con clic su CTA
+## Creare una regola su cui è stato fatto clic in CTA
 
 Adobe Client Data Layer è un livello dati basato su **evento**. Ogni volta che si fa clic su un Componente core, viene inviato un evento `cmp:click` tramite Data Layer. Per ascoltare l&#39;evento `cmp:click`, creiamo una regola.
 
-1. Passa a Experience Platform e accedi alla proprietà tag integrata con il sito AEM.
+1. Passa ad Experience Platform e accedi alla proprietà tag integrata con il sito AEM.
 1. Passa alla sezione **Regole** nell&#39;interfaccia utente della proprietà Tag, quindi fai clic su **Aggiungi regola**.
 1. Denomina la regola **CTA selezionata**.
 1. Fai clic su **Eventi** > **Aggiungi** per aprire la procedura guidata **Configurazione evento**.
 1. Per il campo **Tipo evento**, selezionare **Codice personalizzato**.
 
-   ![Denomina la regola CTA su cui hai fatto clic e aggiungi l&#39;evento del codice personalizzato](assets/track-clicked-component/custom-code-event.png)
+   ![Denomina la regola su cui CTA ha fatto clic e aggiungi l&#39;evento del codice personalizzato](assets/track-clicked-component/custom-code-event.png)
 
 1. Fai clic su **Apri editor** nel pannello principale e immetti il seguente snippet di codice:
 
@@ -151,17 +151,17 @@ Adobe Client Data Layer è un livello dati basato su **evento**. Ogni volta che 
 
    >[!NOTE]
    >
-   > Può essere utile utilizzare l&#39;[Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) per cambiare il codice da incorporare in un ambiente **Sviluppo**.
+   > Può essere utile utilizzare [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) per passare il codice da incorporare a un ambiente **Development**.
 
 1. Passa al [sito WKND](https://wknd.site/us/en.html) e apri gli strumenti per sviluppatori per visualizzare la console. Selezionare inoltre la casella di controllo **Mantieni registro**.
 
-1. Fai clic su uno dei pulsanti **Teaser** o **Pulsante** CTA per passare a un&#39;altra pagina.
+1. Fare clic su uno dei pulsanti di CTA **Teaser** o **Pulsante** per passare a un&#39;altra pagina.
 
    ![Pulsante CTA su cui fare clic](assets/track-clicked-component/cta-button-to-click.png)
 
-1. Osserva nella console per sviluppatori che la regola **CTA clicked** è stata attivata:
+1. Osserva nella console per sviluppatori che la regola **CTA Clicked** è stata attivata:
 
-   ![Pulsante CTA selezionato](assets/track-clicked-component/cta-button-clicked-log.png)
+   ![Pulsante CTA Selezionato](assets/track-clicked-component/cta-button-clicked-log.png)
 
 ## Creare elementi dati
 
@@ -169,7 +169,7 @@ Quindi crea un elemento dati per acquisire l’ID componente e il titolo su cui 
 
 ### ID componente
 
-1. Passa a Experience Platform e accedi alla proprietà tag integrata con il sito AEM.
+1. Passa ad Experience Platform e accedi alla proprietà tag integrata con il sito AEM.
 1. Passa alla sezione **Elementi dati** e fai clic su **Aggiungi nuovo elemento dati**.
 1. Per il campo **Nome**, immettere **ID componente**.
 1. Per il campo **Tipo elemento dati**, selezionare **Codice personalizzato**.
@@ -209,13 +209,13 @@ Quindi crea un elemento dati per acquisire l’ID componente e il titolo su cui 
 
 ## Aggiungi una condizione alla regola CTA Clicked
 
-Quindi, aggiorna la regola **CTA clicked** per assicurarti che la regola venga attivata solo quando l&#39;evento `cmp:click` viene attivato per un **Teaser** o un **Button**. Poiché il CTA del teaser è considerato un oggetto separato nel livello dati, è importante controllare l’elemento principale per verificare che provenga da un teaser.
+Quindi, aggiorna la regola **CTA Clicked** per assicurarti che la regola venga attivata solo quando l&#39;evento `cmp:click` viene attivato per un **Teaser** o un **Button**. Poiché il CTA del teaser è considerato un oggetto separato nel livello dati, è importante controllare l’elemento principale per verificare che provenga da un teaser.
 
 1. Nell&#39;interfaccia utente della proprietà Tag, passa alla regola **CTA Clicked** creata in precedenza.
 1. In **Condizioni** fare clic su **Aggiungi** per aprire la procedura guidata **Configurazione condizione**.
 1. Per il campo **Tipo condizione**, selezionare **Codice personalizzato**.
 
-   ![Codice personalizzato condizione CTA selezionata](assets/track-clicked-component/custom-code-condition.png)
+   ![Codice personalizzato condizione per clic su CTA](assets/track-clicked-component/custom-code-condition.png)
 
 1. Fai clic su **Apri editor** e immetti quanto segue nell&#39;editor di codice personalizzato:
 
@@ -233,7 +233,7 @@ Quindi, aggiorna la regola **CTA clicked** per assicurarti che la regola venga a
    return false;
    ```
 
-   Il codice riportato sopra controlla innanzitutto se il tipo di risorsa proviene da un **Button** o se il tipo di risorsa proviene da un CTA all&#39;interno di un **Teaser**.
+   Il codice sopra riportato verifica innanzitutto se il tipo di risorsa proviene da un **Button** o se il tipo di risorsa proviene da un CTA all&#39;interno di un **Teaser**.
 
 1. Salva le modifiche.
 
@@ -241,7 +241,7 @@ Quindi, aggiorna la regola **CTA clicked** per assicurarti che la regola venga a
 
 Attualmente la regola **CTA Clicked** restituisce semplicemente un&#39;istruzione della console. Quindi, utilizza gli elementi dati e l&#39;estensione Analytics per impostare le variabili Analytics come **azione**. Impostiamo inoltre un&#39;azione aggiuntiva per attivare il **collegamento di tracciamento** e inviare i dati raccolti ad Adobe Analytics.
 
-1. Nella regola **CTA clicked**, **rimuovi** l&#39;azione **Core - Codice personalizzato** (le istruzioni della console):
+1. Nella regola **CTA Clicked**, **rimuovi** l&#39;azione **Core - Custom Code** (istruzioni della console):
 
    ![Rimuovi azione codice personalizzato](assets/track-clicked-component/remove-console-statements.png)
 
@@ -254,11 +254,11 @@ Attualmente la regola **CTA Clicked** restituisce semplicemente un&#39;istruzion
    * `prop8` - `%Component ID%`
    * `event8`
 
-   ![Imposta proprietà ed eventi eVar](assets/track-clicked-component/set-evar-prop-event.png)
+   ![Imposta proprietà ed eventi di eVar](assets/track-clicked-component/set-evar-prop-event.png)
 
    >[!NOTE]
    >
-   > Qui `%Component ID%` viene utilizzato perché garantisce un identificatore univoco per il CTA su cui è stato fatto clic. Un potenziale svantaggio dell&#39;utilizzo di `%Component ID%` è che il report di Analytics contiene valori come `button-2e6d32893a`. Se si utilizza `%Component Title%`, verrà fornito un nome più descrittivo, ma il valore potrebbe non essere univoco.
+   > `%Component ID%` viene utilizzato in quanto garantisce un identificatore univoco per il CTA su cui è stato fatto clic. Un potenziale svantaggio dell&#39;utilizzo di `%Component ID%` è che il report di Analytics contiene valori come `button-2e6d32893a`. Se si utilizza `%Component Title%`, verrà fornito un nome più descrittivo, ma il valore potrebbe non essere univoco.
 
 1. Quindi, aggiungi un&#39;azione aggiuntiva a destra di **Adobe Analytics - Imposta variabili** toccando l&#39;icona **più**:
 
@@ -272,7 +272,7 @@ Attualmente la regola **CTA Clicked** restituisce semplicemente un&#39;istruzion
 
    La configurazione precedente combina la variabile dinamica dell&#39;elemento dati **Component Title** e la stringa statica **CTA Clicked**.
 
-1. Salva le modifiche. La regola **CTA clicked** ora deve avere la seguente configurazione:
+1. Salva le modifiche. La regola **CTA Clicked** deve ora avere la seguente configurazione:
 
    ![Configurazione regola tag finale](assets/track-clicked-component/final-page-loaded-config.png)
 
@@ -285,7 +285,7 @@ Attualmente la regola **CTA Clicked** restituisce semplicemente un&#39;istruzion
 
 ## Convalidare la chiamata Track Link Beacon and Analytics
 
-Ora che la regola **CTA Clicked** invia il beacon Analytics, dovresti essere in grado di visualizzare le variabili di tracciamento di Analytics utilizzando il debugger Experience Platform.
+Ora che la regola **CTA Clicked** invia il beacon Analytics, dovresti essere in grado di visualizzare le variabili di tracciamento di Analytics utilizzando Experience Platform Debugger.
 
 1. Apri il [sito WKND](https://wknd.site/us/en.html) nel browser.
 1. Fai clic sull&#39;icona Debugger ![icona Experience Platform Debugger](assets/track-clicked-component/experience-cloud-debugger.png) per aprire Experience Platform Debugger.
@@ -294,11 +294,11 @@ Ora che la regola **CTA Clicked** invia il beacon Analytics, dovresti essere in 
 
    ![Debugger scheda Analytics](assets/track-clicked-component/analytics-tab-debugger.png)
 
-1. Nel browser, fai clic su uno dei pulsanti CTA **Teaser** o **Button** per passare a un&#39;altra pagina.
+1. Nel browser, fare clic su uno dei pulsanti di CTA **Teaser** o **Button** per passare a un&#39;altra pagina.
 
    ![Pulsante CTA su cui fare clic](assets/track-clicked-component/cta-button-to-click.png)
 
-1. Torna a Debugger Experience Platform, scorri verso il basso ed espandi **Richieste di rete** > *Suite di rapporti*. Dovresti trovare il set **eVar**, **prop** e **event**.
+1. Torna a Experience Platform Debugger, scorri verso il basso ed espandi **Richieste di rete** > *La tua suite di rapporti*. Dovresti trovare il set **eVar**, **prop** e **event**.
 
    ![Eventi, evar e prop di Analytics tracciati al clic](assets/track-clicked-component/evar-prop-link-clicked-tracked-debugger.png)
 
@@ -306,13 +306,13 @@ Ora che la regola **CTA Clicked** invia il beacon Analytics, dovresti essere in 
 
    ![Fare clic sul collegamento di spostamento nel piè di pagina](assets/track-clicked-component/click-navigation-link-footer.png)
 
-1. Osserva che nella console del browser il messaggio *&quot;Custom Code&quot; per la regola &quot;CTA cliccato&quot; non è stato soddisfatto*.
+1. Osserva che nella console del browser il messaggio *&quot;Custom Code&quot; per la regola &quot;CTA Clicked&quot; non è stato soddisfatto*.
 
    Il messaggio sopra riportato è dovuto al fatto che il componente Navigazione attiva un evento `cmp:click` *ma* a causa della [condizione alla regola](#add-a-condition-to-the-cta-clicked-rule) che controlla il tipo di risorsa senza intraprendere alcuna azione.
 
    >[!NOTE]
    >
-   > Se non trovi alcun registro della console, assicurati che **Registrazione console** sia selezionato in **Tag Experience Platform** nel debugger Experience Platform.
+   > Se non trovi alcun registro della console, assicurati che **Registrazione console** sia selezionato in **Tag Experience Platform** nel debugger di Experience Platform.
 
 ## Congratulazioni.
 

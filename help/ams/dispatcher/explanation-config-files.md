@@ -1,7 +1,7 @@
 ---
 title: Spiegazione dei file di configurazione di Dispatcher
 description: Comprendi i file di configurazione, le convenzioni di denominazione e altro ancora.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: ec8e2804-1fd6-4e95-af6d-07d840069c8b
 duration: 379
-source-git-commit: ef9c70e7895176e3cd535141a5de3c49886e666e
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Apache Web Server non si preoccupa effettivamente dell’estensione di un file q
 
 | File | Destinazione file | Descrizione |
 | --- | --- | --- |
-| NOME FILE`.any` | `/etc/httpd/conf.dispatcher.d/` | Il modulo Apache Dispatcher dell&#39;AEM rileva le impostazioni dai file `*.any`. Il file di inclusione padre predefinito è `conf.dispatcher.d/dispatcher.any` |
+| NOME FILE`.any` | `/etc/httpd/conf.dispatcher.d/` | Il modulo Apache di AEM Dispatcher origina le impostazioni da `*.any` file. Il file di inclusione padre predefinito è `conf.dispatcher.d/dispatcher.any` |
 | NOME FILE`_farm.any` | In attesa: `/etc/httpd/conf.dispatcher.d/available_farms/`<br>Attivo: `/etc/httpd/conf.dispatcher.d/enabled_farms/`<br><br><b>Nota:</b> questi file della farm non devono essere copiati nella cartella `enabled_farms` ma utilizzano `symlinks` in un percorso relativo al file `available_farms/*_farm.any` <br/>`*_farm.any` sono inclusi nel file `conf.dispatcher.d/dispatcher.any`. Questi file della farm padre consentono di controllare il comportamento del modulo per ogni tipo di rendering o sito Web. I file vengono creati nella directory `available_farms` e abilitati con `symlink` nella directory `enabled_farms`.  <br/>Le include automaticamente per nome dal file `dispatcher.any`.<br/><b>Previsione</b> i file della farm iniziano con `000_` per assicurarsi che vengano caricati per primi.<br><b>I file di farm personalizzati</b> devono essere caricati dopo avviando lo schema numerico in `100_` per garantire il corretto comportamento di inclusione. |
 | NOME FILE`_filters.any` | `/etc/httpd/conf.dispatcher.d/filters/` | `*_filters.any` file inclusi nei file `conf.dispatcher.d/enabled_farms/*_farm.any`. Ogni farm dispone di un set di regole che modificano il traffico da filtrare e non da inviare ai renderer. |
 | NOME FILE`_vhosts.any` | `/etc/httpd/conf.dispatcher.d/vhosts/` | `*_vhosts.any` file inclusi nei file `conf.dispatcher.d/enabled_farms/*_farm.any`. Questi file sono un elenco di nomi host o percorsi URI a cui deve corrispondere la corrispondenza BLOB per determinare quale renderer utilizzare per soddisfare tale richiesta |

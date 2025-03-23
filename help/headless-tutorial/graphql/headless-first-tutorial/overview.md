@@ -1,7 +1,7 @@
 ---
-title: Primo tutorial su AEM Headless
-description: Scopri come essere una prima applicazione headless per AEM.
-version: Cloud Service
+title: Prima esercitazione su AEM Headless
+description: Scopri come diventare una prima applicazione AEM Headless.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
 role: Developer
@@ -12,30 +12,30 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: b0ac4b50-5fe5-41a1-9530-8e593d7000c9
 duration: 89
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 3%
 
 ---
 
-# Primo tutorial su AEM Headless
+# Prima esercitazione su AEM Headless
 
 {{aem-headless-trials-promo}}
 
-Ti diamo il benvenuto al tutorial su come creare un’esperienza web utilizzando React, completamente basato sulle API headless dell’AEM e su GraphQL. In questa esercitazione, ti guideremo attraverso il processo di creazione di un’applicazione web dinamica e interattiva, combinando la potenza di React, delle API headless di Adobe Experience Manager (AEM) e di GraphQL.
+Ti diamo il benvenuto al tutorial su come creare un’esperienza web utilizzando React, completamente basato sulle API AEM Headless e GraphQL. In questa esercitazione, ti guideremo attraverso il processo di creazione di un’applicazione web dinamica e interattiva, combinando la potenza delle API headless di React, Adobe Experience Manager (AEM) e GraphQL.
 
-React è una popolare libreria JavaScript per la creazione di interfacce utente, nota per la sua semplicità, riutilizzabilità e architettura basata su componenti. L’AEM fornisce solide funzionalità di gestione dei contenuti ed espone API headless che consentono agli sviluppatori di accedere ai contenuti e ai dati memorizzati nell’AEM tramite una varietà di canali e applicazioni.
+React è una popolare libreria JavaScript per la creazione di interfacce utente, nota per la sua semplicità, riutilizzabilità e architettura basata su componenti. AEM fornisce solide funzionalità di gestione dei contenuti ed espone API headless che consentono agli sviluppatori di accedere ai contenuti e ai dati memorizzati in AEM tramite una varietà di canali e applicazioni.
 
-Sfruttando le API headless dell’AEM, puoi recuperare contenuti, risorse e dati dall’istanza AEM e utilizzarli per potenziare l’applicazione React. GraphQL, un linguaggio di query flessibile per le API, offre un modo efficiente e preciso per richiedere dati specifici all’istanza AEM, consentendo un’integrazione perfetta tra React e AEM.
+Sfruttando le API AEM Headless, puoi recuperare contenuti, risorse e dati dall’istanza AEM e utilizzarli per potenziare l’applicazione React. GraphQL, un linguaggio di query flessibile per le API, offre un modo efficiente e preciso per richiedere dati specifici all’istanza di AEM, consentendo un’integrazione perfetta tra React e AEM.
 
-![Primo tutorial su AEM headless](./assets/overview/overview.png)
+![Prima esercitazione AEM Headless](./assets/overview/overview.png)
 
-In questo tutorial, ti guideremo attraverso il processo passo passo per creare un’esperienza web utilizzando le API React e AEM Headless con GraphQL. Scopri come configurare l’ambiente di sviluppo, stabilire una connessione tra React e AEM, recuperare contenuti utilizzando query GraphQL ed eseguirne il rendering in modo dinamico nell’applicazione web.
+In questo tutorial, ti guideremo attraverso il processo passo passo per creare un’esperienza web utilizzando le API headless React e AEM con GraphQL. Scopri come configurare l’ambiente di sviluppo, stabilire una connessione tra React e AEM, recuperare contenuti utilizzando query GraphQL ed eseguirne il rendering in modo dinamico nell’applicazione web.
 
-Verranno trattati argomenti quali la configurazione del progetto React, l’impostazione dell’autenticazione con AEM, l’esecuzione di query sul contenuto da AEM tramite GraphQL, la gestione dei dati nei componenti React e l’ottimizzazione delle prestazioni tramite caching e impaginazione.
+Tratteremo argomenti quali la configurazione del progetto React, l’impostazione dell’autenticazione con AEM, l’esecuzione di query sul contenuto da AEM tramite GraphQL, la gestione dei dati nei componenti React e l’ottimizzazione delle prestazioni tramite caching e impaginazione.
 
-Al termine di questa esercitazione, avrai una solida conoscenza di come sfruttare React, le API headless dell’AEM e GraphQL per creare un’esperienza web potente e coinvolgente. Quindi, immergiamoci e iniziamo a creare la tua prossima applicazione web!
+Al termine di questa esercitazione, avrai una solida conoscenza di come sfruttare React, le API AEM Headless e GraphQL per creare un’esperienza web potente e coinvolgente. Quindi, immergiamoci e iniziamo a creare la tua prossima applicazione web!
 
 ## Prerequisiti
 

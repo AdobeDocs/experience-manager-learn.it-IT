@@ -1,7 +1,7 @@
 ---
 title: Personalizzare Adobe Client Data Layer con i componenti AEM
-description: Scopri come personalizzare Adobe Client Data Layer con i contenuti dei componenti AEM personalizzati. Scopri come utilizzare le API fornite dai componenti core AEM per estendere e personalizzare il livello di dati.
-version: Cloud Service
+description: Scopri come personalizzare Adobe Client Data Layer con i contenuti dei componenti personalizzati di AEM. Scopri come utilizzare le API fornite dai componenti core di AEM per estendere e personalizzare il livello dati.
+version: Experience Manager as a Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer, Core Components
 role: Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2022-09-20T00:00:00Z
 doc-type: Tutorial
 exl-id: 80e4cf2e-dff6-41e8-b09b-187cf2e18e00
 duration: 452
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1813'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Personalizzare Adobe Client Data Layer con i componenti AEM {#customize-data-layer}
 
-Scopri come personalizzare Adobe Client Data Layer con i contenuti dei componenti AEM personalizzati. Scopri come utilizzare le API fornite da [Componenti core AEM per estendere](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html) e personalizzare il livello dati.
+Scopri come personalizzare Adobe Client Data Layer con i contenuti dei componenti personalizzati di AEM. Scopri come utilizzare le API fornite da [Componenti core AEM per estendere](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html) e personalizzare il livello dati.
 
 ## Cosa intendi creare
 
@@ -37,24 +37,24 @@ In questa esercitazione esploreremo varie opzioni per estendere Adobe Client Dat
 
 ## Prerequisiti {#prerequisites}
 
-Per completare questa esercitazione è necessario un **ambiente di sviluppo locale**. Le schermate e i video vengono acquisiti mediante l’SDK di AEM as a Cloud Service in esecuzione su un macOS. I comandi e il codice sono indipendenti dal sistema operativo locale, salvo diversa indicazione.
+Per completare questa esercitazione è necessario un **ambiente di sviluppo locale**. Le schermate e i video vengono acquisiti utilizzando AEM as a Cloud Service SDK in esecuzione su un macOS. I comandi e il codice sono indipendenti dal sistema operativo locale, salvo diversa indicazione.
 
 **Ti avvicini adesso ad AEM as a Cloud Service?** Consulta la [seguente guida per configurare un ambiente di sviluppo locale utilizzando SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it).
 
-**Nuovo AEM 6.5?** Consulta la [guida seguente per configurare un ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it).
+**Ti avvicini ora ad AEM 6.5?** Consulta la [guida seguente per configurare un ambiente di sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=it).
 
 ## Scarica e distribuisci il sito di riferimento WKND {#set-up-wknd-site}
 
 Questa esercitazione estende il componente Byline nel sito di riferimento WKND. Clona e installa la base di codice WKND nell’ambiente locale.
 
-1. Avvia un&#39;istanza locale Quickstart **author** dell&#39;AEM in esecuzione alle [http://localhost:4502](Http://localhost:4502).
+1. Avvia un&#39;istanza Quickstart **author** locale di AEM in esecuzione su [http://localhost:4502](Http://localhost:4502).
 1. Apri una finestra del terminale e clona la base di codice WKND utilizzando Git:
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd.git
    ```
 
-1. Distribuisci la base di codice WKND in un’istanza locale di AEM:
+1. Implementa la base di codice WKND in un’istanza locale di AEM:
 
    ```shell
    $ cd aem-guides-wknd
@@ -67,7 +67,7 @@ Questa esercitazione estende il componente Byline nel sito di riferimento WKND. 
    >
    > `mvn clean install -PautoInstallSinglePackage -Pclassic`
 
-1. Apri una nuova finestra del browser e accedi all’AEM. Apri una pagina di **Rivista** come: [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
+1. Apri una nuova finestra del browser e accedi ad AEM. Apri una pagina di **Rivista** come: [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
 
    ![Componente Byline a pagina](assets/adobe-client-data-layer/byline-component-onpage.png)
 
@@ -119,7 +119,7 @@ Per inserire dati sul componente nel livello dati, aggiorniamo prima il modello 
    import com.adobe.cq.wcm.core.components.util.ComponentUtils;
    ```
 
-   Le API `fasterxml.jackson` vengono utilizzate per serializzare i dati da esporre come JSON. `ComponentUtils` dei componenti core AEM vengono utilizzati per verificare se Data Layer è abilitato.
+   Le API `fasterxml.jackson` vengono utilizzate per serializzare i dati da esporre come JSON. `ComponentUtils` dei componenti core di AEM vengono utilizzati per verificare se il livello dati è abilitato.
 
 1. Aggiungere il metodo non implementato `getData()` a `BylineImple.java`:
 
@@ -175,7 +175,7 @@ Per inserire dati sul componente nel livello dati, aggiorniamo prima il modello 
 
 Quindi, aggiorna `Byline` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=en). HTL (HTML Template Language) è il modello utilizzato per eseguire il rendering del HTML del componente.
 
-Per esporre il proprio livello di dati viene utilizzato un attributo di dati speciale `data-cmp-data-layer` per ogni componente AEM. Il JavaScript fornito dai componenti core AEM cerca questo attributo di dati. Il valore di questo attributo di dati viene popolato con la stringa JSON restituita dal metodo `getData()` del modello Sling Byline e inserita nel livello dati client Adobe.
+Per esporre il livello di dati corrispondente viene utilizzato un attributo di dati speciale `data-cmp-data-layer` per ogni componente di AEM. JavaScript fornito dai componenti core di AEM cerca questo attributo di dati. Il valore di questo attributo di dati viene popolato con la stringa JSON restituita dal metodo `getData()` del modello Sling Byline e inserita nel livello dati client di Adobe.
 
 1. Aprire il progetto `aem-guides-wknd` nell&#39;IDE. Passare al modulo `ui.apps`.
 1. Aprire il file `byline.html` in `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/byline.html`.
@@ -235,7 +235,7 @@ Per esporre il proprio livello di dati viene utilizzato un attributo di dati spe
 
 ## Aggiungi un evento di clic {#click-event}
 
-Adobe Client Data Layer è basato su eventi e uno degli eventi più comuni per attivare un&#39;azione è l&#39;evento `cmp:click`. I componenti core AEM semplificano la registrazione del componente con l&#39;aiuto dell&#39;elemento dati: `data-cmp-clickable`.
+Adobe Client Data Layer è basato su eventi e uno degli eventi più comuni per attivare un&#39;azione è l&#39;evento `cmp:click`. I componenti core di AEM semplificano la registrazione del componente con l&#39;aiuto dell&#39;elemento dati: `data-cmp-clickable`.
 
 Gli elementi cliccabili sono in genere un pulsante CTA o un collegamento di navigazione. Sfortunatamente, il componente Byline non ha nessuno di questi componenti, ma è comunque possibile registrarlo, in quanto potrebbe essere comune per altri componenti personalizzati.
 
@@ -260,7 +260,7 @@ Gli elementi cliccabili sono in genere un pulsante CTA o un collegamento di navi
 
 1. Tornare al browser e riaprire la pagina con il componente Byline aggiunto: [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html).
 
-   Per testare il nostro evento, aggiungeremo manualmente un po’ di JavaScript utilizzando la Developer Console. Per un video su come eseguire questa operazione, vedi [Utilizzo di Adobe Client Data Layer con i componenti core AEM](data-layer-overview.md).
+   Per testare il nostro evento, aggiungeremo manualmente un po’ di JavaScript utilizzando la Developer Console. Per un video su come eseguire questa operazione, vedi [Utilizzo di Adobe Client Data Layer con i componenti core di AEM](data-layer-overview.md).
 
 1. Apri gli strumenti per sviluppatori del browser e immetti il metodo seguente nella **Console**:
 
@@ -300,7 +300,7 @@ Gli elementi cliccabili sono in genere un pulsante CTA o un collegamento di navi
 
 ## Utilizzare l&#39;utilità DataLayerBuilder {#data-layer-builder}
 
-Quando il modello Sling era [aggiornato](#sling-model) in precedenza nel capitolo, abbiamo scelto di creare la stringa JSON utilizzando un `HashMap` e impostando manualmente ciascuna proprietà. Questo metodo funziona bene per i componenti una tantum di piccole dimensioni, tuttavia per i componenti che estendono i Componenti core AEM ciò potrebbe comportare un notevole aumento del codice.
+Quando il modello Sling era [aggiornato](#sling-model) in precedenza nel capitolo, abbiamo scelto di creare la stringa JSON utilizzando un `HashMap` e impostando manualmente ciascuna proprietà. Questo metodo funziona bene per i componenti una tantum di piccole dimensioni, tuttavia per i componenti che estendono i Componenti core di AEM ciò potrebbe comportare un notevole aumento del codice.
 
 Esiste una classe di utilità, `DataLayerBuilder`, per eseguire la maggior parte del sollevamento pesante. Questo consente alle implementazioni di estendere solo le proprietà che desiderano. Aggiorniamo il modello Sling per utilizzare `DataLayerBuilder`.
 
@@ -321,7 +321,7 @@ Esiste una classe di utilità, `DataLayerBuilder`, per eseguire la maggior parte
    }
    ```
 
-   `ComponentData` è un oggetto fornito dai componenti core AEM. Genera una stringa JSON, come nell’esempio precedente, ma esegue anche un sacco di lavoro aggiuntivo.
+   `ComponentData` è un oggetto fornito dai componenti core di AEM. Genera una stringa JSON, come nell’esempio precedente, ma esegue anche un sacco di lavoro aggiuntivo.
 
 1. Aprire il file `BylineImpl.java` in `core/src/main/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImpl.java`.
 
@@ -428,10 +428,10 @@ Esiste una classe di utilità, `DataLayerBuilder`, per eseguire la maggior parte
 
 ## Congratulazioni. {#congratulations}
 
-Hai appena esplorato alcuni modi per estendere e personalizzare Adobe Client Data Layer con i componenti AEM.
+Hai appena esplorato alcuni modi per estendere e personalizzare Adobe Client Data Layer con i componenti di AEM.
 
 ## Risorse aggiuntive {#additional-resources}
 
 * [Documentazione di Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki)
 * [Integrazione di Data Layer con i Componenti core](https://github.com/adobe/aem-core-wcm-components/blob/main/DATA_LAYER_INTEGRATION.md)
-* [Utilizzo della documentazione Adobe Client Data Layer e Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it)
+* [Utilizzo della documentazione di Adobe Client Data Layer e Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it)

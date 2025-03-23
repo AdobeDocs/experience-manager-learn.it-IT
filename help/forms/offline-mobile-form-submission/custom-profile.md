@@ -1,9 +1,9 @@
 ---
-title: Attivare il flusso di lavoro AEM all’invio del modulo HTML5 - Creare un profilo personalizzato
-description: Creare un profilo personalizzato per scaricare un pdf interattivo con i dati del modulo parzialmente compilato di HTML5
+title: Attivare il flusso di lavoro di AEM per l’invio di moduli HTML5 - Creare un profilo personalizzato
+description: Creare un profilo personalizzato per scaricare un pdf interattivo con i dati del modulo HTML5 parzialmente compilato
 feature: Mobile Forms
 doc-type: article
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ jira: kt-16133
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: b6e3acee-4a07-4d00-b3a1-f7aedda21e6e
 duration: 102
-source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
@@ -64,7 +64,7 @@ var suc = function(obj) {
 }
 ```
 
-## Genera Interactive PDF
+## Genera PDF interattivo
 
 Di seguito è riportato il codice servlet responsabile del rendering del pdf interattivo e della restituzione del pdf all’applicazione chiamante. Il servlet richiama il metodo `mobileFormToInteractivePdf` del servizio OSGi DocumentServices personalizzato.
 
@@ -125,9 +125,9 @@ public class GeneratePDFFromMobileFormData extends SlingAllMethodsServlet implem
 }
 ```
 
-### Rendering di Interactive PDF
+### Rendering PDF interattivo
 
-Il codice seguente utilizza l&#39;[API del servizio Forms](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) per eseguire il rendering di Interactive PDF con i dati del modulo mobile.
+Il codice seguente utilizza l&#39;[API del servizio Forms](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) per eseguire il rendering di PDF interattivo con i dati del modulo mobile.
 
 ```java
 package com.aemforms.mobileforms.core.documentservices.impl;

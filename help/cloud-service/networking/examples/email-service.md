@@ -1,7 +1,7 @@
 ---
 title: Servizio e-mail
 description: Scopri come configurare AEM as a Cloud Service per la connessione a un servizio e-mail utilizzando le porte di uscita.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-9353
 thumbnail: KT-9353.jpeg
 exl-id: 5f919d7d-e51a-41e5-90eb-b1f6a9bf77ba
 duration: 76
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Servizio e-mail
 
-Invia e-mail da AEM as a Cloud Service configurando `DefaultMailService` dell&#39;AEM per utilizzare porte di uscita di rete avanzate.
+Invia e-mail da AEM as a Cloud Service configurando l&#39;elemento `DefaultMailService` di AEM per utilizzare porte di uscita di rete avanzate.
 
 Poiché la maggior parte dei servizi di posta non viene eseguita su HTTP/HTTPS, le connessioni ai servizi di posta da AEM as a Cloud Service devono essere escluse.
 
@@ -31,9 +31,9 @@ Poiché la maggior parte dei servizi di posta non viene eseguita su HTTP/HTTPS, 
 
 Poiché i segreti non devono essere archiviati nel codice, è consigliabile fornire il nome utente e la password del servizio e-mail utilizzando [variabili di configurazione OSGi segrete](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), impostate utilizzando la CLI AIO o l&#39;API Cloud Manager.
 
-In genere, [l&#39;uscita da porta flessibile](../flexible-port-egress.md) viene utilizzata per soddisfare l&#39;integrazione con un servizio e-mail a meno che non sia necessario `allowlist` l&#39;IP Adobe, nel qual caso è possibile utilizzare [l&#39;indirizzo IP in uscita dedicato](../dedicated-egress-ip-address.md).
+In genere, [l&#39;uscita da porta flessibile](../flexible-port-egress.md) viene utilizzata per soddisfare l&#39;integrazione con un servizio e-mail a meno che non sia necessario `allowlist` l&#39;IP di Adobe, nel qual caso è possibile utilizzare [l&#39;indirizzo IP in uscita dedicato](../dedicated-egress-ip-address.md).
 
-Inoltre, esaminare la documentazione AEM in [invio di posta elettronica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+Inoltre, consulta la documentazione di AEM in [invio di posta elettronica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 ## Supporto di rete avanzato
 
@@ -61,7 +61,7 @@ Questo esempio di configurazione OSGi configura il servizio OSGi Mail di AEM per
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/config/com.day.cq.mailer.DefaultMailService.cfg.json`
 
-Configura il [DefaultMailService](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email) dell&#39;AEM come richiesto dal tuo provider di posta elettronica (ad esempio `smtp.ssl`, ecc.).
+Configura il [DefaultMailService](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email) di AEM come richiesto dal tuo provider di posta elettronica (ad esempio `smtp.ssl`, ecc.).
 
 ```json
 {

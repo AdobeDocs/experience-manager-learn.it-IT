@@ -1,7 +1,7 @@
 ---
 title: Adobe CDN - Funzioni avanzate oltre il caching
 description: Scopri le funzioni avanzate di Adobe CDN oltre la memorizzazione in cache, ad esempio la configurazione del traffico sulla CDN, la configurazione di token e credenziali, le pagine di errore CDN e altro ancora.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Website Performance, CDN Cache
 topic: Architecture, Performance, Content Management
 role: Developer, Architect, User, Leader
@@ -12,7 +12,7 @@ last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
 exl-id: 8948a900-01e9-49ed-9ce5-3a057f5077e4
-source-git-commit: 0e8b76b6e870978c6db9c9e7a07a6259e931bdcc
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Scopri le funzioni avanzate di Adobe Content Delivery Network (CDN), oltre alla memorizzazione in cache, come la configurazione del traffico sulla CDN, la configurazione di token e credenziali, le pagine di errore CDN e altro ancora.
 
-Oltre alla memorizzazione in cache dei contenuti, Adobe CDN offre diverse funzioni avanzate che possono aiutare a ottimizzare le prestazioni del sito web. Queste caratteristiche includono:
+Oltre a memorizzare in cache i contenuti, Adobe CDN offre diverse funzioni avanzate che possono aiutare a ottimizzare le prestazioni del sito web. Queste caratteristiche includono:
 
 - Configurazione del traffico sulla rete CDN
 - Configurazione delle credenziali e dell’autenticazione CDN
@@ -37,7 +37,7 @@ Queste funzionalità sono **funzionalità self-service**. Configurato nel file `
 
 Comprendiamo le funzionalità chiave relative a _Configurazione del traffico sulla rete CDN_:
 
-- **Prevenzione attacchi DoS:** Adobe CDN assorbe gli attacchi DoS a livello di rete, impedendo loro di raggiungere il server di origine.
+- **Prevenzione attacchi DoS:** la rete CDN di Adobe assorbe gli attacchi DoS a livello di rete, impedendo loro di raggiungere il server di origine.
 - **Limitazione di frequenza:** Per evitare che il server di origine venga sovraccaricato da un numero eccessivo di richieste, è possibile configurare la limitazione di frequenza nella rete CDN.
 - **Firewall applicazione Web (WAF):** WAF protegge il sito Web da vulnerabilità comuni alle applicazioni Web, ad esempio SQL injection, vulnerabilità cross-site scripting e altro ancora. Per utilizzare questa funzione è necessaria la licenza Protezione avanzata o la licenza Protezione WAF-DDoS.
 - **Trasformazione richiesta:** Modificare le richieste in ingresso, ad esempio impostando o disimpostando le intestazioni, modificando i parametri di query, i cookie e altro ancora.
@@ -51,13 +51,13 @@ Comprendiamo le funzionalità chiave relative a _Configurazione delle credenzial
 
 - **Rimuovi token API**: consente di creare una chiave di eliminazione personalizzata per rimuovere un singolo o un gruppo o tutte le risorse dalla cache.
 - **Autenticazione di base**: meccanismo di autenticazione leggero che consente di limitare l&#39;accesso al sito Web o a parte di esso. Richiesto principalmente come parte di vari processi di revisione prima di andare &quot;live&quot;.
-- **Convalida intestazione HTTP**: utilizzato quando una rete CDN gestita dal cliente instrada il traffico verso Adobe CDN. Adobe CDN convalida la richiesta in ingresso in base al valore dell&#39;intestazione `X-AEM-Edge-Key`. Consente di creare un valore personalizzato per l&#39;intestazione `X-AEM-Edge-Key`.
+- **Convalida intestazione HTTP**: utilizzato quando una rete CDN gestita dal cliente sta indirizzando il traffico a Adobe CDN. Il CDN di Adobe convalida la richiesta in ingresso in base al valore dell&#39;intestazione `X-AEM-Edge-Key`. Consente di creare un valore personalizzato per l&#39;intestazione `X-AEM-Edge-Key`.
 
 ## Pagine di errore CDN
 
 Comprendiamo le funzionalità chiave relative alle _pagine di errore CDN_:
 
-- **Pagine di errore con marchio**: visualizza una pagina di errore con marchio agli utenti nello _scenario improbabile_ quando Adobe CDN non è in grado di raggiungere il server di origine.
+- **Pagine di errore con marchio**: visualizza una pagina di errore con marchio agli utenti nello _scenario improbabile_ quando la rete CDN di Adobe non è in grado di raggiungere il server di origine.
 
 ## Come implementare
 
@@ -87,7 +87,7 @@ data:
           location: /us/en/top3.html
 ```
 
-## Tutorials correlati
+## Tutorial correlati
 
 [Protezione dei siti Web con regole filtro traffico](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
 

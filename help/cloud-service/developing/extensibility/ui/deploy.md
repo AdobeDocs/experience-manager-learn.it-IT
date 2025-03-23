@@ -1,8 +1,8 @@
 ---
-title: Distribuire un'estensione dell'interfaccia utente AEM
-description: Scopri come distribuire un’estensione dell’interfaccia utente dell’AEM.
+title: Distribuire un’estensione dell’interfaccia utente di AEM
+description: Scopri come distribuire un’estensione dell’interfaccia utente di AEM.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 2e37165d-c003-4206-8133-54e37ca35b8e
 duration: 166
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 0%
@@ -28,9 +28,9 @@ Ci sono diverse considerazioni di cui tenere conto durante la distribuzione dell
    + L&#39;area di lavoro __Produzione__ contiene distribuzioni di estensioni disponibili in tutte le AEM as a Cloud Service.
    + L&#39;area di lavoro __Stage__ funge da area di lavoro per sviluppatori. Le estensioni distribuite nell’area di lavoro dello stage non sono disponibili in AEM as a Cloud Service.
 Le aree di lavoro di Adobe Developer Console non hanno alcuna correlazione diretta con i tipi di ambiente AEM as a Cloud Service.
-+ Un’estensione distribuita nell’area di lavoro di produzione viene visualizzata in tutti gli ambienti AEM as a Cloud Service nell’organizzazione di Adobe in cui esiste l’estensione.
++ Un’estensione distribuita nell’area di lavoro di produzione viene visualizzata in tutti gli ambienti AEM as a Cloud Service dell’organizzazione Adobe in cui esiste l’estensione.
 Un&#39;estensione non può essere limitata agli ambienti con cui è registrata aggiungendo [logica condizionale che controlla il nome host di AEM as a Cloud Service](https://developer.adobe.com/uix/docs/guides/publication/#enabling-extension-only-on-specific-aem-environments).
-+ È possibile utilizzare più estensioni in AEM as a Cloud Service. L’Adobe consiglia di utilizzare ogni estensione dell’app App Builder per risolvere un singolo obiettivo di business. Detto questo, un’app App Builder con una singola estensione può implementare più punti di estensione che supportano un obiettivo aziendale comune.
++ È possibile utilizzare più estensioni in AEM as a Cloud Service. Adobe consiglia di utilizzare ogni estensione dell’app App Builder per risolvere un singolo obiettivo di business. Detto questo, un’app App Builder con una singola estensione può implementare più punti di estensione che supportano un obiettivo aziendale comune.
 
 ## Distribuzione iniziale
 
@@ -89,7 +89,7 @@ L&#39;aggiornamento e l&#39;estensione dell&#39;app App Builder seguono lo stess
 
 ### Revocare l’estensione
 
-Per distribuire una nuova versione di un&#39;estensione, è necessario prima revocarla o rimuoverla. L’estensione è revocata ma non è disponibile nelle console AEM.
+Per distribuire una nuova versione di un&#39;estensione, è necessario prima revocarla o rimuoverla. Quando l’estensione è revocata, non è disponibile nelle console AEM.
 
 1. Accedi a [Adobe Exchange](https://exchange.adobe.com/)
 1. Passa a __Gestisci__ > __App App Builder__
@@ -141,7 +141,7 @@ Una volta approvata la richiesta di estensione, questa diventa immediatamente at
 
 ![Rimuovere un&#39;estensione](./assets/deploy/revoke.png)
 
-Per rimuovere un&#39;estensione, revocala (o rimuoverla) dall&#39;Adobe Exchange. Quando l’estensione viene revocata, viene rimossa da tutti i servizi di authoring di AEM as a Cloud Service.
+Per rimuovere un’estensione, revocala (o rimuoverla) da Adobe Exchange. Quando l’estensione viene revocata, viene rimossa da tutti i servizi di authoring di AEM as a Cloud Service.
 
 1. Accedi a [Adobe Exchange](https://exchange.adobe.com/)
 1. Passa a __Gestisci__ > __App App Builder__

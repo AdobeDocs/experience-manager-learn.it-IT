@@ -5,23 +5,23 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16517
-source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
+exl-id: f4a18f02-61a2-4fa3-bfbb-41bf696cd2a8
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
-
 # Creare un modello Sling per il componente
 
-Un modello Sling nell’AEM è un framework basato su Java utilizzato per semplificare lo sviluppo di logiche back-end per i componenti. Consente agli sviluppatori di mappare i dati dalle risorse AEM (nodi JCR) agli oggetti Java utilizzando le annotazioni, fornendo un modo pulito ed efficiente di gestire i dati dinamici per i componenti.
-Questa classe, CountriesDropDownImpl, è un&#39;implementazione dell&#39;interfaccia CountriesDropDown in un progetto AEM (Adobe Experience Manager). Attiva un componente a discesa in cui gli utenti possono selezionare un paese in base al continente selezionato. I dati a discesa vengono caricati in modo dinamico da un file JSON memorizzato in AEM DAM (Digital Asset Manager).
+Un modello Sling in AEM è un framework basato su Java utilizzato per semplificare lo sviluppo di logiche back-end per i componenti. Consente agli sviluppatori di mappare i dati dalle risorse AEM (nodi JCR) agli oggetti Java utilizzando le annotazioni, fornendo un modo pulito ed efficiente di gestire i dati dinamici per i componenti.
+Questa classe, CountriesDropDownImpl, è un’implementazione dell’interfaccia CountriesDropDown in un progetto AEM (Adobe Experience Manager). Attiva un componente a discesa in cui gli utenti possono selezionare un paese in base al continente selezionato. I dati dell’elenco a discesa vengono caricati in modo dinamico da un file JSON memorizzato in AEM DAM (Digital Asset Manager).
 
 **Campi nella classe**
 
@@ -38,7 +38,7 @@ Inserito dalla finestra di dialogo delle proprietà del componente, con il valor
 * **getContinent()** Metodo semplice per restituire il valore del campo continente.
 Registra il valore restituito a scopo di debug.
 * **init()** metodo del ciclo di vita con annotazioni di @PostConstruct, eseguito dopo la costruzione della classe e l&#39;inserimento delle dipendenze.Costruisce dinamicamente il percorso del file JSON in base al valore continente.
-Recupera il file JSON dal DAM AEM utilizzando resourceResolver.
+Recupera il file JSON dal DAM di AEM utilizzando resourceResolver.
 Adatta il file a una risorsa, ne legge il contenuto e lo analizza in un oggetto JSONO.
 Registra eventuali errori o avvisi durante il processo.
 * **getEnums()** Recupera tutte le chiavi (codici paese) dai dati JSON analizzati.

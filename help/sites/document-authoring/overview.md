@@ -1,7 +1,7 @@
 ---
 title: Video sull’authoring dei documenti
 description: Scopri come impostare e configurare l’authoring dei documenti in AEM.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User
@@ -11,7 +11,7 @@ doc-type: Catalog
 duration: 40
 last-substantial-update: 2023-12-01T00:00:00Z
 exl-id: 172a477f-d277-43c1-8e47-68870b02203c
-source-git-commit: 6a22f523c5cf997a59a5b8579c168b641c009b20
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 9%
@@ -20,7 +20,7 @@ ht-degree: 9%
 
 # Video sull’authoring dei documenti
 
-Scopri come configurare l’authoring dei documenti consentendo agli autori di AEM di modificare e pubblicare documenti utilizzando i documenti di Microsoft Word o Google.
+Scopri come configurare l’authoring dei documenti consentendo agli autori di AEM di modificare e pubblicare documenti utilizzando Microsoft Word o Google Docs.
 
 Rivedi la [documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=it) per i dettagli completi sulla configurazione dell&#39;authoring dei documenti.
 
@@ -80,7 +80,7 @@ Rivedi la [documentazione](https://experienceleague.adobe.com/docs/experience-ma
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="preview-and-publish.md" title="Anteprima e pubblicazione dei contenuti">Panoramica dell'editor</a>
             </p>
-            <p class="is-size-6">Breve panoramica sull’anteprima e la pubblicazione dei contenuti utilizzando AEM Sidekick.</p>
+            <p class="is-size-6">Breve panoramica sull’anteprima e la pubblicazione dei contenuti tramite AEM Sidekick.</p>
             <a href="preview-and-publish.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -593,9 +593,9 @@ Rivedi la [documentazione](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/using-dynamic-media.md" title="Dynamic Media">Dynamic Medie</a>
+              <a href="./how-to/using-dynamic-media.md" title="Dynamic Media">Dynamic Media</a>
             </p>
-            <p class="is-size-6">Scopri come utilizzare Dynamic Medie per una consegna delle immagini ottimizzata.</p>
+            <p class="is-size-6">Scopri come utilizzare Dynamic Media per una consegna delle immagini ottimizzata.</p>
             <a href="./how-to/using-dynamic-media.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -627,7 +627,7 @@ Rivedi la [documentazione](https://experienceleague.adobe.com/docs/experience-ma
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/migration-using-importer.md" title="Migrazione del sito tramite Importazione">Migrazione del sito tramite Importer</a>
             </p>
-            <p class="is-size-6">Scopri come migrare i siti in Edge Delivery Services utilizzando lo strumento Importazione AEM.</p>
+            <p class="is-size-6">Scopri come migrare i siti in Edge Delivery Services utilizzando lo strumento AEM Importer.</p>
             <a href="./how-to/migration-using-importer.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -726,9 +726,9 @@ Rivedi la [documentazione](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/overview.md" title="Generare varianti">Generare varianti</a>
+              <a href="./how-to/generate-variations/overview.md" title="Generare varianti">Genera varianti</a>
             </p>
-            <p class="is-size-6">Introduzione a Generare varianti nei Edge Delivery Services e informazioni su come può essere utile agli esperti marketing.</p>
+            <p class="is-size-6">Introduzione a Generare varianti in Edge Delivery Services e informazioni su come può essere utile agli esperti di marketing.</p>
             <a href="./how-to/generate-variations/overview.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -760,7 +760,7 @@ Rivedi la [documentazione](https://experienceleague.adobe.com/docs/experience-ma
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/generate-variations/configure-sidekick.md" title="Genera varianti - Configura Sidekick">Genera varianti - Configura Sidekick</a>
             </p>
-            <p class="is-size-6">Scopri come configurare la barra laterale per Generare varianti nell’authoring dei documenti Edge Delivery Services.</p>
+            <p class="is-size-6">Scopri come configurare la barra laterale per Generare varianti nell’authoring dei documenti di Edge Delivery Services.</p>
             <a href="./how-to/generate-variations/configure-sidekick.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -937,11 +937,11 @@ Rivedi la [documentazione](https://experienceleague.adobe.com/docs/experience-ma
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Genera varianti - Utilizza Adobe Firefly"
+            <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Genera varianti - Usa Adobe Firefly"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3428794/?format=jpeg"
-                alt="Genera varianti - Utilizza Adobe Firefly">
+                alt="Genera varianti - Usa Adobe Firefly">
             </a>
           </figure>
         </div>
@@ -950,7 +950,7 @@ Rivedi la [documentazione](https://experienceleague.adobe.com/docs/experience-ma
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuti</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Genera varianti - Utilizza Adobe Firefly">Genera varianti - Utilizza Adobe Firefly</a>
+              <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Genera varianti - Usa Adobe Firefly">Genera varianti - Usa Adobe Firefly</a>
             </p>
             <p class="is-size-6">Scopri come utilizzare Adobe Firefly per creare le immagini utilizzate nelle varianti di contenuto.</p>
             <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" class="spectrum-Button
@@ -1016,7 +1016,7 @@ Rivedi la [documentazione](https://experienceleague.adobe.com/docs/experience-ma
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/generate-variations/trust-privacy.md" title="Genera varianti: attendibilità e privacy">Genera varianti - Attendibilità e privacy</a>
             </p>
-            <p class="is-size-6">Esplorare il modo in cui Adobe gestisce l’affidabilità e la privacy per Genera varianti.</p>
+            <p class="is-size-6">Esplorare il modo in cui Adobe gestisce l’affidabilità e la privacy per Generate Variations (Genera varianti).</p>
             <a href="./how-to/generate-variations/trust-privacy.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -1080,7 +1080,7 @@ Rivedi la [documentazione](https://experienceleague.adobe.com/docs/experience-ma
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/setup-experimentation-framework.md" title="Impostazione del quadro di sperimentazione">Configurazione del framework di sperimentazione</a>
             </p>
-            <p class="is-size-6">Scopri come impostare il framework di sperimentazione nell’authoring di documenti in Edge Delivery Services.</p>
+            <p class="is-size-6">Scopri come impostare il framework di sperimentazione nell’authoring dei documenti di Edge Delivery Services.</p>
             <a href="./how-to/setup-experimentation-framework.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">

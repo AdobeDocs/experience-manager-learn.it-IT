@@ -5,12 +5,13 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16517
-source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
+exl-id: aef151bc-daf1-4abd-914a-6299f3fb58e4
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 1%
@@ -33,12 +34,12 @@ Immergiamo e creiamo questo componente dinamico e potente!
 
 ## Prerequisiti
 
-La creazione di un nuovo componente core in Adobe Experience Manager (AEM) richiede il rispetto di diversi prerequisiti per garantire un processo di sviluppo senza intoppi. Ecco cosa serve prima di iniziare:
+La creazione di un nuovo componente core in Adobe Experience Manager (AEM) richiede il rispetto di diversi prerequisiti per garantire un processo di sviluppo fluido. Ecco cosa serve prima di iniziare:
 
-* Ambiente di sviluppo AEM: un’installazione funzionale predisposta per il cloud in esecuzione a livello locale
-* Accesso agli strumenti di sviluppo AEM come Visual Studio Code o IntelliJ
+* Ambiente di sviluppo AEM: un’installazione funzionale predisposta per il cloud in esecuzione in locale
+* Accesso agli strumenti di sviluppo di AEM come Visual Studio Code o IntelliJ
 * Configurazione di MAven e progetto AEM con archetipo più recente
-* Conoscenza di base dei concetti dell’AEM
+* Conoscenza di base dei concetti di AEM
 * Strumenti e impostazioni di base, ad esempio archivio Git, versione corretta di JDK
 
 

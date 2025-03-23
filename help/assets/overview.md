@@ -1,14 +1,14 @@
 ---
 title: Video e tutorial su AEM Assets
-description: Guarda i nostri video per ricevere supporto e assistenza sulle risorse dell’AEM.
+description: Guarda i nostri video per ricevere supporto e assistenza su AEM Asset.
 sub-product: Experience Manager Assets
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 doc-type: Catalog
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: d0e1513b4e6ea536b40f3dbb69a0f512f7521164
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 20%
+ht-degree: 21%
 
 ---
 
@@ -61,7 +61,7 @@ Scopri AEM Assets e come utilizzarlo per raggiungere gli obiettivi aziendali del
    </a>
    <div>
       <a href="../assets-essentials/overview.md">
-      <strong>Guida introduttiva agli Assets Essentials</strong>
+      <strong>Guida introduttiva ad Assets Essentials</strong>
       </a>
    </div>
    <p>
@@ -70,15 +70,15 @@ Scopri AEM Assets e come utilizzarlo per raggiungere gli obiettivi aziendali del
 </td>
 <td>
    <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-   <img alt="Panoramica di Dynamic Medie" src="./assets/overview/dynamic-media.png" />
+   <img alt="Panoramica di Dynamic Media" src="./assets/overview/dynamic-media.png" />
    </a>
    <div>
       <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-      <strong>Panoramica di Dynamic Medie</strong>
+      <strong>Panoramica di Dynamic Media</strong>
       </a>
    </div>
    <p>
-      <em>Gestione e accesso ai contenuti multimediali tramite Dynamic Medie</em>
+      <em>Gestione e accesso ai contenuti multimediali tramite Dynamic Media</em>
    <p>
 </td>
 </table>

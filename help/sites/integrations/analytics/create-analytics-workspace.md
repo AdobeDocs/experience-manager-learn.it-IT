@@ -1,7 +1,7 @@
 ---
 title: Analizzare i dati con Analysis Workspace
 description: Scopri come mappare i dati acquisiti da un sito Adobe Experience Manager a metriche e dimensioni nelle suite di rapporti di Adobe Analytics. Scopri come creare un dashboard di reporting dettagliato utilizzando la funzione Analysis Workspace di Adobe Analytics.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer
 role: User
@@ -13,7 +13,7 @@ exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
 badgeIntegration: label="Integrazione" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
 duration: 443
-source-git-commit: 606607b85fae012e76d57b0b35820247a6862e32
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2072'
 ht-degree: 0%
@@ -55,11 +55,11 @@ Questo tutorial è una continuazione del componente [Traccia clic con Adobe Anal
 
 * **Proprietà tag** con [estensione Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) abilitata
 * **Adobe Analytics** ID suite di rapporti test/dev e server di tracciamento. Consulta la seguente documentazione per [creare una suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
-* [Estensione del browser Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) configurata con una proprietà tag caricata nel [sito WKND](https://wknd.site/us/en.html) o in un sito AEM con Adobe Data Layer abilitato.
+* Estensione del browser [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) configurata con una proprietà tag caricata nel [sito WKND](https://wknd.site/us/en.html) o in un sito AEM con Adobe Data Layer abilitato.
 
 ## Variabili di conversione (eVar) ed Eventi di successo (Evento)
 
-La variabile di conversione Custom Insight (o eVar) viene inserita nel codice dell’Adobe nelle pagine web selezionate del sito. Il suo scopo principale è segmentare le metriche di successo della conversione nei rapporti di marketing personalizzati. Un eVar può essere basato su visite e funziona in modo simile ai cookie. I valori trasmessi nelle variabili eVar seguono l’utente per un periodo predeterminato.
+La variabile di conversione Custom Insight (o eVar) viene inserita nel codice Adobe nelle pagine web selezionate del sito. Il suo scopo principale è segmentare le metriche di successo della conversione nei rapporti di marketing personalizzati. Un’eVar può essere basata su visite e funziona in modo simile ai cookie. I valori trasmessi nelle variabili di eVar seguono l’utente per un periodo predeterminato.
 
 Quando un eVar è impostato sul valore di un visitatore, Adobe ricorda automaticamente tale valore fino alla scadenza. Eventuali eventi di successo riscontrati da un visitatore mentre il valore eVar è attivo vengono conteggiati per il valore eVar.
 
@@ -122,7 +122,7 @@ Quindi, crea un [progetto](https://experienceleague.adobe.com/docs/analytics/ana
 
    ![Workspace](assets/create-analytics-workspace/create-workspace.png)
 
-1. Scegli di iniziare da un **progetto vuoto** o seleziona uno dei modelli predefiniti, forniti dai modelli Adobe o personalizzati creati dalla tua organizzazione. Sono disponibili diversi modelli, a seconda dell’analisi o del caso d’uso a cui stai pensando. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) sulle diverse opzioni di modello disponibili.
+1. Scegli di iniziare da un **progetto vuoto** o seleziona uno dei modelli predefiniti, forniti da Adobe o dai modelli personalizzati creati dalla tua organizzazione. Sono disponibili diversi modelli, a seconda dell’analisi o del caso d’uso a cui stai pensando. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) sulle diverse opzioni di modello disponibili.
 
    Nel progetto Workspace, puoi accedere a pannelli, tabelle, visualizzazioni e componenti dalla barra a sinistra. Costituiscono gli elementi di base del progetto.
 
@@ -146,27 +146,27 @@ Quindi, creare una tabella per creare una rappresentazione visiva del modo in cu
 
 1. Trascina il componente dimensione **Pagina** nella tabella a forma libera. Ora dovresti essere in grado di visualizzare una visualizzazione che mostra il Nome pagina (eVar9) e le Visualizzazioni pagina corrispondenti (Occorrenze) visualizzati all’interno della tabella.
 
-   ![Dimension di pagine](assets/create-analytics-workspace/evar9-dimension.png)
+   ![Pagina Dimension](assets/create-analytics-workspace/evar9-dimension.png)
 
-1. Trascina la metrica **Clic su CTA** (evento8) nella metrica delle occorrenze e sostituiscila. Ora puoi visualizzare una visualizzazione in cui vengono visualizzati il Nome pagina (eVar9) e il numero corrispondente di eventi di clic CTA su una pagina.
+1. Trascina la metrica **Clic su CTA** (evento8) nella metrica delle occorrenze e sostituiscila. Ora puoi visualizzare una visualizzazione che visualizza il Nome pagina (eVar9) e un numero corrispondente di eventi di clic CTA su una pagina.
 
    ![Metrica pagina - Clic su CTA](assets/create-analytics-workspace/evar8-cta-click.png)
 
 1. Suddividiamo la pagina in base al tipo di modello. Seleziona la metrica del modello di pagina dai componenti, quindi trascina la metrica Modello pagina nella dimensione Nome pagina. Ora puoi visualizzare il nome della pagina suddiviso per il relativo tipo di modello.
 
    * **Prima**
-     ![eVar 5](assets/create-analytics-workspace/evar5.png)
+     ![eVar5](assets/create-analytics-workspace/evar5.png)
 
    * **Dopo**
      ![Metriche eVar5](assets/create-analytics-workspace/evar5-metrics.png)
 
 1. Per capire come gli utenti interagiscono con i pulsanti di CTA quando si trovano nelle pagine del sito WKND, è necessario aggiungere la metrica ID pulsante (eVar8).
 
-   ![eVar 8](assets/create-analytics-workspace/evar8.png)
+   ![eVar8](assets/create-analytics-workspace/evar8.png)
 
 1. Di seguito è riportata una rappresentazione visiva del sito WKND suddivisa per il modello di pagina e per l’interazione dell’utente con i pulsanti Click to Action (CTA) del sito WKND.
 
-   ![eVar 8](assets/create-analytics-workspace/evar8-metric.png)
+   ![eVar8](assets/create-analytics-workspace/evar8-metric.png)
 
 1. Puoi sostituire il valore ID pulsante con un nome più semplice utilizzando le classificazioni di Adobe Analytics. Ulteriori informazioni su come creare una classificazione per una metrica specifica [qui](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html). In questo caso, è stata impostata una metrica di classificazione `Button Section (Button ID)` per `eVar8` che mappa l&#39;ID pulsante su un nome intuitivo.
 
@@ -185,7 +185,7 @@ Quindi, creiamo una variabile di classificazione per Analytics.
 
    ![Classificazione conversione](assets/create-analytics-workspace/conversion-classification.png)
 
-1. Dall&#39;elenco a discesa **Seleziona tipo di classificazione**, seleziona la variabile (ID eVar8-Button) per aggiungere una classificazione.
+1. Dall&#39;elenco a discesa **Seleziona tipo di classificazione**, seleziona la variabile (ID pulsante eVar8) per aggiungere una classificazione.
 1. Fai clic sulla freccia accanto alla variabile di classificazione elencata nella sezione Classificazioni per aggiungere una nuova classificazione.
 
    ![Tipo di classificazione conversione](assets/create-analytics-workspace/select-classification-variable.png)
@@ -224,8 +224,8 @@ Quindi, scariciamo il modello di classificazione per la variabile Button Id (eVa
 1. **Salva** il file delimitato da tabulazioni.
 1. Passare alla scheda **Importa file**.
 1. Configura la destinazione per l’importazione del file.
-   * **Seleziona suite di rapporti**: sito WKND AEM (suite di rapporti)
-   * **Set di dati da classificare**: ID pulsante (eVar variabile di conversione)
+   * **Seleziona suite di rapporti** : AEM del sito WKND (suite di rapporti)
+   * **Set di dati da classificare**: ID pulsante (variabile di conversione eVar8)
 1. Fare clic sull&#39;opzione **Scegli file** per caricare il file delimitato da tabulazioni dal sistema e quindi fare clic su **Importa file**
 
    ![Importazione file](assets/create-analytics-workspace/file-importer.png)

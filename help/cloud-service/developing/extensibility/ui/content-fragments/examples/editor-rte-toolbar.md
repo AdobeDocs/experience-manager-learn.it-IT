@@ -1,8 +1,8 @@
 ---
 title: Pulsante personalizzato sulla barra degli strumenti dell’Editor Rich Text
-description: Scopri come aggiungere un pulsante personalizzato alla barra degli strumenti dell’Editor Rich Text (RTE) nell’Editor frammenti di contenuto AEM
+description: Scopri come aggiungere un pulsante personalizzato alla barra degli strumenti Editor Rich Text (RTE) nell’Editor frammenti di contenuto di AEM
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 6fd93d3b-6d56-43c5-86e6-2e2685deecc9
 duration: 345
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Pulsante personalizzato sulla barra degli strumenti dell’Editor Rich Text
 
-Scopri come aggiungere un pulsante personalizzato alla barra degli strumenti dell’Editor Rich Text (RTE) nell’Editor frammenti di contenuto AEM.
+Scopri come aggiungere un pulsante personalizzato alla barra degli strumenti Editor Rich Text (RTE) nell’Editor frammenti di contenuto di AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420768?quality=12&learn=on)
 
@@ -35,7 +35,7 @@ In questo esempio viene illustrato come inserire una nota o un suggerimento evid
 
 Questo esempio si estende al punto di estensione `rte` per aggiungere un pulsante personalizzato alla barra degli strumenti dell’editor Rich Text nell’Editor frammento di contenuto.
 
-| Interfaccia utente AEM estesa | Punto di estensione |
+| Interfaccia utente di AEM estesa | Punto di estensione |
 | ------------------------ | --------------------- | 
 | [Editor frammento di contenuto](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Barra degli strumenti Editor Rich Text](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/) |
 

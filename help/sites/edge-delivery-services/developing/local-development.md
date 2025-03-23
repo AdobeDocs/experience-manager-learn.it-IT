@@ -1,7 +1,7 @@
 ---
-title: Configurare un ambiente di sviluppo locale per i Edge Delivery Services
-description: Come impostare un ambiente di sviluppo locale per i Edge Delivery Services.
-version: 6.5, Cloud Service
+title: Configurare un ambiente di sviluppo locale per Edge Delivery Services
+description: Come impostare un ambiente di sviluppo locale per Edge Delivery Services.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-14483
 thumbnail: 3425717.jpeg
 duration: 169
 exl-id: 0f3e50f0-88d8-46be-be8b-0f547c3633a6
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Configurare un ambiente di sviluppo locale
 
-Come impostare un ambiente di sviluppo locale per i Edge Delivery Services.
+Come impostare un ambiente di sviluppo locale per Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425717/?learn=on)
 
@@ -34,7 +34,7 @@ Come impostare un ambiente di sviluppo locale per i Edge Delivery Services.
    $ sudo npm install -g @adobe/aem-cli
    ```
 
-1. Cambia la directory nella directory del progetto che è un archivio Git creato dal modello [Piastra di avvio AEM](https://github.com/adobe/aem-boilerplate).
+1. Cambia la directory nella directory del progetto che è un archivio Git creato dal modello [AEM boilerplate](https://github.com/adobe/aem-boilerplate).
 
    ```
    $ git clone git@github.com:my-org/my-project.git
@@ -60,4 +60,4 @@ Come impostare un ambiente di sviluppo locale per i Edge Delivery Services.
    opening default browser: http://localhost:3000/
    ```
 
-1. Apri http://localhost:3000/ nel browser per visualizzare il sito Web AEM.
+1. Apri http://localhost:3000/ nel browser per visualizzare il tuo sito web AEM.

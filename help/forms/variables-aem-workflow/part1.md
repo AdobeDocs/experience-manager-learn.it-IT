@@ -1,14 +1,14 @@
 ---
-title: Variabili nel flusso di lavoro dell’AEM[Parte1]
-description: Utilizzo di variabili di tipo XML, JSON, ArrayList, Document in un flusso di lavoro AEM
+title: Variabili nel flusso di lavoro di AEM[Part1]
+description: Utilizzo di variabili di tipo XML, JSON, ArrayList, Document in un flusso di lavoro di AEM
 feature: Adaptive Forms, Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: f9782684-3a74-4080-9680-589d3f901617
 duration: 561
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -55,7 +55,7 @@ I dati del modulo adattivo vengono memorizzati sotto l’elemento dati come most
 
 Per far sì che le risorse funzionino sul sistema, segui i passaggi seguenti:
 
-* [Scaricare e importare le risorse in AEM utilizzando Gestione pacchetti](assets/xmlandstringvariable.zip)
+* [Scaricare e importare le risorse in AEM tramite Gestione pacchetti](assets/xmlandstringvariable.zip)
 * [Esplora il modello di flusso di lavoro](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) per comprendere le variabili utilizzate nel flusso di lavoro
 * [Configura il servizio e-mail](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Apri il modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)

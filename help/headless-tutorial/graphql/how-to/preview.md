@@ -1,7 +1,7 @@
 ---
 title: Anteprima frammento di contenuto
-description: Scopri come utilizzare l’anteprima dei frammenti di contenuto per tutti gli autori per vedere rapidamente in che modo le modifiche al contenuto influiscono sulle esperienze AEM headless.
-version: Cloud Service
+description: Scopri come utilizzare l’anteprima dei frammenti di contenuto per tutti gli autori per vedere rapidamente in che modo le modifiche al contenuto influiscono sulle esperienze AEM Headless.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments
 topic: Headless, Content Management, Development
 role: Architect, Developer
@@ -12,7 +12,7 @@ jira: KT-10841
 thumbnail: 3416906.jpeg
 exl-id: 247d40a3-ff67-4c1f-86bf-3794d7ce3e32
 duration: 463
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -21,14 +21,14 @@ ht-degree: 0%
 
 # Anteprima frammento di contenuto
 
-Le applicazioni headless AEM supportano l’anteprima integrata dell’authoring. L’esperienza di anteprima collega l’editor dei frammenti di contenuto dell’autore AEM con l’app personalizzata (indirizzabile tramite HTTP), consentendo un collegamento diretto nell’app che esegue il rendering del frammento di contenuto visualizzato in anteprima.
+Le applicazioni AEM Headless supportano l’anteprima integrata dell’authoring. L’esperienza di anteprima collega l’editor dei frammenti di contenuto dell’Autore di AEM con l’app personalizzata (indirizzabile tramite HTTP), consentendo un collegamento diretto nell’app che esegue il rendering del frammento di contenuto visualizzato in anteprima.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
 
 Per utilizzare l’anteprima del frammento di contenuto, è necessario soddisfare diverse condizioni:
 
 1. L’app deve essere distribuita in un URL accessibile agli autori
-1. L’app deve essere configurata per la connessione al servizio di authoring AEM (anziché al servizio Publish AEM)
+1. L’app deve essere configurata per la connessione al servizio AEM Author (anziché al servizio AEM Publish)
 1. L&#39;app deve essere progettata con URL o route che possono utilizzare [ID o percorso frammento di contenuto](#url-expressions) per selezionare i frammenti di contenuto da visualizzare in anteprima nell&#39;esperienza dell&#39;app.
 
 ## URL di anteprima
@@ -37,11 +37,11 @@ Gli URL di anteprima, che utilizzano [espressioni URL](#url-expressions), sono i
 
 ![URL anteprima modello frammento di contenuto](./assets/preview/cf-model-preview-url.png)
 
-1. Accedere al servizio di creazione AEM come amministratore
+1. Accedi al servizio AEM Author come amministratore
 1. Passa a __Strumenti > Generale > Modelli per frammenti di contenuto__
 1. Seleziona il __Modello per frammenti di contenuto__ e fai clic su __Proprietà__ nella barra delle azioni superiore.
 1. Immetti l&#39;URL di anteprima per il modello per frammenti di contenuto utilizzando [espressioni URL](#url-expressions)
-   + L’URL di anteprima deve puntare a una distribuzione dell’app che si connette al servizio di authoring AEM.
+   + L’URL di anteprima deve puntare a una distribuzione dell’app che si connette al servizio AEM Author.
 
 ### Espressioni URL
 
@@ -70,7 +70,7 @@ Esegui un aggiornamento rigido (cancellazione della cache locale del browser) qu
 
 ## Esempio di React
 
-Esploriamo l’app WKND, una semplice applicazione React che mostra le avventure dell’AEM utilizzando le API GraphQL headless dell’AEM.
+Esploriamo l’app WKND, una semplice applicazione React che mostra le avventure di AEM utilizzando le API GraphQL headless di AEM.
 
 Il codice di esempio è disponibile in [Github.com](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/preview-tutorial).
 

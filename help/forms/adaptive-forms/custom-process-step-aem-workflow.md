@@ -2,14 +2,14 @@
 title: Implementazione passaggio processo personalizzato
 description: Scrittura degli allegati del modulo adattivo nel file system mediante un passaggio di processo personalizzato
 feature: Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 879518db-3f05-4447-86e8-5802537584e5
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 203
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Questo tutorial è destinato ai clienti di AEM Forms che devono implementare un passaggio di processo personalizzato. Un passaggio del processo può eseguire uno script ECMA o richiamare un codice Java™ personalizzato per eseguire le operazioni. Questo tutorial illustra i passaggi necessari per implementare WorkflowProcess che viene eseguito dal passaggio del processo.
 
-Il motivo principale per l’implementazione di una fase di processo personalizzata è l’estensione del flusso di lavoro AEM. Ad esempio, se utilizzi i componenti AEM Forms nel modello di flusso di lavoro, potrebbe essere utile eseguire le seguenti operazioni
+Il motivo principale per l’implementazione di un passaggio di processo personalizzato è l’estensione del flusso di lavoro di AEM. Ad esempio, se utilizzi i componenti AEM Forms nel modello di flusso di lavoro, potrebbe essere utile eseguire le seguenti operazioni
 
 * Salva gli allegati del modulo adattivo nel file system
 * Manipolare i dati inviati
@@ -29,7 +29,7 @@ Per eseguire il caso d’uso precedente, in genere si scrive un servizio OSGi ch
 
 ## Crea progetto Maven
 
-Il primo passaggio consiste nel creare un progetto Maven utilizzando l’archetipo Maven di Adobe appropriato. I passaggi dettagliati sono elencati in questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una volta importato il progetto Maven in Eclipse, sei pronto per iniziare a scrivere il primo componente OSGi che può essere utilizzato nel passaggio del processo.
+Il primo passaggio consiste nel creare un progetto Maven utilizzando l’archetipo Adobe Maven appropriato. I passaggi dettagliati sono elencati in questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una volta importato il progetto Maven in Eclipse, sei pronto per iniziare a scrivere il primo componente OSGi che può essere utilizzato nel passaggio del processo.
 
 
 ### Crea classe che implementa WorkflowProcess
@@ -48,7 +48,7 @@ Il metodo execute consente di accedere alle tre variabili seguenti:
 
 **MetaDataMap**: tutti i metadati associati al flusso di lavoro. Tutti gli argomenti di processo passati alla fase del processo sono disponibili utilizzando l&#39;oggetto MetaDataMap.[Documentazione API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
-In questa esercitazione scriveremo gli allegati aggiunti al modulo adattivo nel file system come parte del flusso di lavoro AEM.
+In questa esercitazione scriveremo gli allegati aggiunti al modulo adattivo nel file system come parte del flusso di lavoro di AEM.
 
 Per eseguire questo caso d’uso, è stata scritta la seguente classe Java™
 
@@ -137,7 +137,7 @@ Riga 1 - definisce le proprietà del componente. La proprietà `process.label` �
 
 Righe 13-15 - Gli argomenti di processo passati a questo componente OSGi vengono suddivisi utilizzando il separatore &quot;,&quot;. I valori per attachmentPath e saveToLocation vengono quindi estratti dalla matrice di stringhe.
 
-* attachmentPath: si tratta della stessa posizione specificata nel modulo adattivo quando è stata configurata l’azione di invio del modulo adattivo per richiamare il flusso di lavoro AEM. Questo è il nome della cartella in cui si desidera salvare gli allegati in AEM rispetto al payload del flusso di lavoro.
+* attachmentPath: si tratta della stessa posizione specificata nel modulo adattivo quando è stata configurata l’azione di invio del modulo adattivo per richiamare AEM Workflow. Questo è il nome della cartella in cui vuoi salvare gli allegati in AEM, relativo al payload del flusso di lavoro.
 
 * saveToLocation: è la posizione in cui si desidera salvare gli allegati nel file system del server AEM.
 

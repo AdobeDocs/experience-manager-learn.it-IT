@@ -1,7 +1,7 @@
 ---
 title: Modelli di pagina
 description: Scopri come creare e modificare i modelli di pagina. Comprendere la relazione tra un modello di pagina e una pagina. Scopri come configurare i criteri di un modello di pagina per fornire governance granulare e coerenza del brand per i contenuti.  Viene creato un modello di articolo ben strutturato per la rivista, basato su un modello fornito da Adobe XD.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 feature: Core Components, Editable Templates, Page Editor
 role: Developer
@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
 recommendations: noDisplay, noCatalog
 duration: 1561
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Sono disponibili 3 aree principali di [Modelli di pagina](https://experienceleag
 1. **Contenuto iniziale** - definisce i componenti con cui inizia il modello, che possono essere modificati e/o eliminati dagli autori di contenuto
 1. **Criteri**: definisce le configurazioni sul comportamento dei componenti e sulle opzioni disponibili per gli autori.
 
-Quindi, crea un nuovo modello in AEM che corrisponda alla struttura dei modelli. Ciò si verificherà in un’istanza locale dell’AEM. Segui i passaggi descritti nel video seguente:
+Quindi, crea un nuovo modello in AEM che corrisponda alla struttura dei modelli. Ciò si verificherà in un’istanza locale di AEM. Segui i passaggi descritti nel video seguente:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332915?quality=12&learn=on)
 

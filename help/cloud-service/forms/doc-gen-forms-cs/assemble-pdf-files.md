@@ -1,16 +1,16 @@
 ---
-title: Assembla file PDF
+title: Assemblare file PDF
 description: Utilizza l’operazione invokeDDX per manipolare i file pdf.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-9958
 thumbnail: 332439.jpg
 duration: 50
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 0%

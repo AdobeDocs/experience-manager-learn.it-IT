@@ -1,7 +1,7 @@
 ---
 title: Informazioni sulla prevenzione DoS/DoS
-description: Scopri come prevenire e attenuare gli attacchi DoS e DoS contro l’AEM.
-version: 6.5, Cloud Service
+description: Scopri come prevenire e attenuare gli attacchi DoS e DDoS contro AEM.
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Development
 role: Admin, Architect, Developer
@@ -11,14 +11,14 @@ duration: 75
 last-substantial-update: 2024-03-30T00:00:00Z
 jira: KT-15219
 exl-id: 1d7dd829-e235-4884-a13f-b6ea8f6b4b0b
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 1%
 
 ---
 
-# Informazioni sulla prevenzione DoS/DDoS nell’AEM
+# Informazioni sulla prevenzione DoS/DDoS in AEM
 
 Scopri le opzioni disponibili per prevenire e attenuare gli attacchi DoS e DDoS nell’ambiente AEM. Prima di immergerti nei meccanismi di prevenzione, una breve panoramica di [DoS](https://developer.mozilla.org/en-US/docs/Glossary/DOS_attack) e [DDoS](https://developer.mozilla.org/en-US/docs/Glossary/Distributed_Denial_of_Service).
 
@@ -36,7 +36,7 @@ La tabella seguente descrive come prevenire e attenuare gli attacchi DoS e DDoS:
             <td><strong>Descrizione</strong></td>
             <td><strong>AEM as a Cloud Service</strong></td>
             <td><strong>AEM 6.5 (AMS)</strong></td>
-            <td><strong>AEM 6.5 (On-prem)</strong></td>
+            <td><strong>AEM 6.5 (on-premise)</strong></td>
         </tr>
         <tr>
             <td>Firewall applicazione Web (WAF)</td>
@@ -44,7 +44,7 @@ La tabella seguente descrive come prevenire e attenuare gli attacchi DoS e DDoS:
             <td>
             <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank">Licenza di protezione WAF-DDoS</a></td>
             <td><a href="https://docs.aws.amazon.com/waf/" target="_blank">AWS</a> o <a href="https://azure.microsoft.com/en-us/products/web-application-firewall" target="_blank">Azure</a> WAF tramite contratto AMS.</td>
-            <td>WAF preferito</td>
+            <td>Il WAF preferito</td>
         </tr>
         <tr>
             <td>ModSecurity</td>
@@ -61,7 +61,7 @@ La tabella seguente descrive come prevenire e attenuare gli attacchi DoS e DDoS:
     </tbody>
 </table>
 
-## Analisi degli incidenti Post e miglioramento continuo
+## Analisi post-incidente e miglioramento continuo
 
 Anche se non esiste un flusso standard universale per identificare e prevenire gli attacchi DoS/DDoS e dipende dal processo di sicurezza della tua organizzazione. L&#39;analisi **post-incidente e il miglioramento continuo** è un passaggio cruciale del processo. Di seguito sono riportate alcune best practice da considerare:
 

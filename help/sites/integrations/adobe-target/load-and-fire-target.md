@@ -2,7 +2,7 @@
 title: Caricare e attivare una chiamata Target
 description: Scopri come caricare, trasmettere parametri alla richiesta di pagina e attivare una chiamata Target dalla pagina del sito utilizzando una regola di tag.
 feature: Core Components, Adobe Client Data Layer
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-6133
 thumbnail: 41243.jpg
 topic: Integrations
@@ -13,7 +13,7 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
 duration: 588
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 # Caricare e attivare una chiamata Target {#load-fire-target}
 
-Scopri come caricare, trasmettere parametri alla richiesta di pagina e attivare una chiamata Target dalla pagina del sito utilizzando una regola di tag. Le informazioni della pagina web vengono recuperate e trasmesse come parametri utilizzando Adobe Client Data Layer, che consente di raccogliere e memorizzare dati sull’esperienza dei visitatori in una pagina web e quindi di semplificarne l’accesso.
+Scopri come caricare, trasmettere parametri alla richiesta di pagina e attivare una chiamata Target dalla pagina del sito utilizzando una regola di tag. Le informazioni della pagina web vengono recuperate e trasmesse come parametri utilizzando Adobe Client Data Layer, che consente di raccogliere e archiviare dati sull’esperienza dei visitatori in una pagina web e quindi di semplificare l’accesso a tali dati.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41243?quality=12&learn=on)
 
@@ -80,7 +80,7 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Una funzione personalizzata definisce `pageShownEventHandler` e ascolta gli eventi emessi dai Componenti core AEM, ricava le informazioni rilevanti dal Componente core, le inserisce in un oggetto evento e attiva i tag Event con le informazioni derivate dell&#39;evento al suo payload.
+Una funzione personalizzata definisce `pageShownEventHandler` e ascolta gli eventi emessi dai Componenti core di AEM, ricava le informazioni rilevanti dal Componente core, le inserisce in un oggetto evento e attiva l&#39;evento tag Event con le informazioni derivate dell&#39;evento al suo payload.
 
 La regola dei tag viene attivata utilizzando la funzione `trigger(...)` dei tag, che è __only__ disponibile nella definizione dello snippet di codice personalizzato dell&#39;evento di una regola.
 
@@ -162,5 +162,5 @@ window.targetGlobalSettings = {
 
 + [Documentazione di Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki)
 + [Debugger Adobe Experience Cloud - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-+ [Utilizzo della documentazione Adobe Client Data Layer e Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it)
-+ [Introduzione all&#39;Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [Utilizzo della documentazione di Adobe Client Data Layer e Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it)
++ [Introduzione ad Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

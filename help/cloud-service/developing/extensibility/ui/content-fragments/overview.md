@@ -1,8 +1,8 @@
 ---
-title: Estensioni dei frammenti di contenuto AEM
+title: Estensioni dei frammenti di contenuto di AEM
 description: Scopri come generare e distribuire le estensioni dei frammenti di contenuto di AEM as a Cloud Service
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,24 +12,24 @@ thumbnail: KT-11603.png
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 9164423b-a609-4bc5-9777-112d229ae748
 duration: 126
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 1%
 
 ---
 
-# Estensibilità dei frammenti di contenuto AEM
+# Estensibilità dei frammenti di contenuto di AEM
 
-L’interfaccia utente Frammenti di contenuto dell’AEM è una potente interfaccia utente estensibile per la gestione della creazione, della gestione e della modifica di Frammenti di contenuto. Sono disponibili diversi punti di estensione per personalizzare l’interfaccia utente in base alle tue esigenze. Sono disponibili diversi punti di estensione in base all’interfaccia utente che stai estendendo.
+L’interfaccia utente di Frammenti di contenuto di AEM è una potente interfaccia utente estensibile per la gestione della creazione, della gestione e della modifica di Frammenti di contenuto. Sono disponibili diversi punti di estensione per personalizzare l’interfaccia utente in base alle tue esigenze. Sono disponibili diversi punti di estensione in base all’interfaccia utente che stai estendendo.
 
 ## Punti di estensione della console Frammenti di contenuto
 
-La Console Frammenti di contenuto nell’AEM (Adobe Experience Manager) è un’interfaccia utente che fornisce una posizione centralizzata per la gestione e l’organizzazione dei frammenti di contenuto. Offre un set completo di strumenti e funzioni per creare, modificare, pubblicare e tenere traccia dei frammenti di contenuto, consentendo agli utenti di gestire in modo efficiente contenuti strutturati su vari canali e punti di contatto.
+La console Frammenti di contenuto in AEM (Adobe Experience Manager) è un’interfaccia utente che fornisce una posizione centralizzata per la gestione e l’organizzazione dei frammenti di contenuto. Offre un set completo di strumenti e funzioni per creare, modificare, pubblicare e tenere traccia dei frammenti di contenuto, consentendo agli utenti di gestire in modo efficiente contenuti strutturati su vari canali e punti di contatto.
 
 ![Console Frammenti di contenuto](./assets/overview/cfc.png)
 
-[Console Frammenti di contenuto AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=it) è l&#39;interfaccia utente estensibile per l&#39;elenco e la gestione dei frammenti di contenuto. [Sono state create le estensioni della console Frammenti di contenuto AEM](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) utilizzando il modello App Builder `@adobe/aem-cf-admin-ui-ext-tpl`.
+[Console Frammenti di contenuto di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=it) è l&#39;interfaccia utente estensibile per l&#39;elenco e la gestione dei frammenti di contenuto. [Sono state create le estensioni della Console Frammenti di contenuto di AEM](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/code-generation) utilizzando il modello di App Builder `@adobe/aem-cf-admin-ui-ext-tpl`.
 
 Sono disponibili i seguenti punti di estensione della console Frammenti di contenuto:
 
@@ -98,11 +98,11 @@ Sono disponibili i seguenti punti di estensione della console Frammenti di conte
 
 ## Punti di estensione dell’Editor frammenti di contenuto
 
-L’Editor frammenti di contenuto nell’AEM (Adobe Experience Manager) è un componente dell’interfaccia utente che consente agli utenti di creare, modificare e gestire frammenti di contenuto. Offre un ambiente visivamente intuitivo e facile da usare per lavorare con contenuti strutturati, consentendo agli utenti di definire e organizzare gli elementi di contenuto, applicare modelli, gestire le varianti e visualizzare in anteprima come il contenuto viene visualizzato tra canali diversi. L’Editor frammento di contenuto semplifica il processo di creazione di contenuti riutilizzabili e modulari che possono essere facilmente distribuiti e pubblicati in più esperienze digitali.
+L’Editor frammenti di contenuto in AEM (Adobe Experience Manager) è un componente dell’interfaccia utente che consente agli utenti di creare, modificare e gestire frammenti di contenuto. Offre un ambiente visivamente intuitivo e facile da usare per lavorare con contenuti strutturati, consentendo agli utenti di definire e organizzare gli elementi di contenuto, applicare modelli, gestire le varianti e visualizzare in anteprima come il contenuto viene visualizzato tra canali diversi. L’Editor frammento di contenuto semplifica il processo di creazione di contenuti riutilizzabili e modulari che possono essere facilmente distribuiti e pubblicati in più esperienze digitali.
 
 ![Editor frammenti di contenuto](./assets/overview/cfe.png)
 
-L’editor di frammenti di contenuto AEM è l’interfaccia utente estensibile per la modifica di frammenti di contenuto. [Sono state create le estensioni dell&#39;Editor frammenti di contenuto AEM](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/) utilizzando il modello App Builder `@adobe/aem-cf-editor-ui-ext-tpl`.
+L’Editor frammenti di contenuto di AEM è l’interfaccia utente estensibile per la modifica di frammenti di contenuto. [Sono state create le estensioni dell&#39;Editor frammenti di contenuto di AEM](https://developer.adobe.com/uix/docs/services/aem-cf-editor/code-generation/) utilizzando il modello di App Builder `@adobe/aem-cf-editor-ui-ext-tpl`.
 
 Sono disponibili i seguenti punti di estensione dell’Editor frammenti di contenuto:
 
@@ -192,7 +192,7 @@ Sono disponibili i seguenti punti di estensione dell’Editor frammenti di conte
 
 ## Esempi di estensione
 
-Ti diamo il benvenuto in una raccolta di esempi di codice di estensibilità dell’interfaccia utente AEM. Questa risorsa è progettata per fornire dimostrazioni pratiche e informazioni approfondite sull’estensione dell’interfaccia utente di Adobe Experience Manager (AEM). Che tu sia uno sviluppatore interessato a migliorare la funzionalità dell’AEM, questi esempi di codice fungono da riferimento prezioso.
+Ti diamo il benvenuto in una raccolta di esempi di codice di estensibilità dell’interfaccia utente di AEM. Questa risorsa è progettata per fornire dimostrazioni pratiche e informazioni approfondite sull’estensione dell’interfaccia utente di Adobe Experience Manager (AEM). Che tu sia uno sviluppatore interessato a migliorare le funzionalità di AEM, questi esempi di codice fungono da riferimento prezioso.
 
 <div class="columns is-multiline">
   <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Bulk property update">
@@ -227,7 +227,7 @@ Ti diamo il benvenuto in una raccolta di esempi di codice di estensibilità dell
             <div class="card-content is-padded-small">
                 <div class="content">
                     <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/console-image-generation-and-image-upload.md" title="Generazione di immagini basate su OpenAI e caricamento nell’estensione AEM">Generazione di immagini OpenAPI</a></p>
-                    <p class="is-size-6">Esplora un esempio di estensione della barra delle azioni che genera un’immagine utilizzando OpenAI, la carica sull’AEM e aggiorna la proprietà dell’immagine nel frammento di contenuto selezionato.</p>
+                    <p class="is-size-6">Esplora un’estensione della barra delle azioni di esempio che genera un’immagine utilizzando OpenAI, la carica su AEM e aggiorna la proprietà dell’immagine sul frammento di contenuto selezionato.</p>
                     <a href="./examples/console-image-generation-and-image-upload.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Visualizza l'esempio</span>
                     </a>

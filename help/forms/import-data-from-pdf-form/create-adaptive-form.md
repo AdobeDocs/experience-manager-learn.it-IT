@@ -2,14 +2,14 @@
 title: Crea schema
 description: Creare uno schema basato sui dati da importare nel modulo adattivo
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 jira: KT-14196
 exl-id: b286c3e9-70df-46e8-b0bc-21599ab1ec06
 duration: 41
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 1%
@@ -42,7 +42,7 @@ Crea un modulo adattivo basato sullo schema del passaggio precedente.
 Dati inviati da un modulo adattivo
 ![dati inviati](./assets/af-submitted-data.png)
 
-Dati esportati dal PDF
+Dati esportati da PDF
 ![dati-esportati](./assets/exported-data.png)
 
 Dai dati esportati, dovrai estrarre il nodo **_topmostSubform_** con i namespace appropriati conservati per unire correttamente i dati con il modulo adattivo.

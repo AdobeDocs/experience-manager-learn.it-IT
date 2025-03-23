@@ -1,7 +1,7 @@
 ---
-title: Genera varianti - Utilizzo dei tipi di pubblico dei file CSV nei Edge Delivery Services
-description: Scopri come utilizzare i tipi di pubblico dei file CSV per rivolgerti al pubblico giusto con i contenuti pertinenti nell’authoring dei documenti in Edge Delivery Services.
-version: Cloud Service
+title: Generare varianti - Utilizzo dei tipi di pubblico dei file CSV in Edge Delivery Services
+description: Scopri come utilizzare i tipi di pubblico dei file CSV per rivolgerti al pubblico giusto con i contenuti pertinenti nell’authoring dei documenti Edge Delivery Services.
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: Admin, Developer, Leader, User
@@ -11,17 +11,17 @@ duration: 62
 last-substantial-update: 2024-05-08T00:00:00Z
 jira: KT-15431
 exl-id: 13cd9302-bee4-46b7-adb6-5716dc5d3844
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 0%
 
 ---
 
-# Genera varianti - Utilizzo dei tipi di pubblico dei file CSV nei Edge Delivery Services
+# Generare varianti - Utilizzo dei tipi di pubblico dei file CSV in Edge Delivery Services
 
 {{edge-delivery-services}}
 
-Scopri come utilizzare i tipi di pubblico dei file CSV per rivolgerti al pubblico giusto con i contenuti pertinenti nell’authoring dei documenti in Edge Delivery Services.
+Scopri come utilizzare i tipi di pubblico dei file CSV per rivolgerti al pubblico giusto con i contenuti pertinenti nell’authoring dei documenti Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428793/?learn=on)

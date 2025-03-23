@@ -1,22 +1,22 @@
 ---
-title: Utilizzo della miniatura video personalizzata con AEM Dynamic Medie
+title: Utilizzo della miniatura video personalizzata con AEM Dynamic Media
 description: Le miniature video personalizzate di AEM Assets consentono agli autori di selezionare una miniatura appropriata da un set di miniature generate. Il numero di miniature generate per un video può essere facilmente personalizzato.
 feature: Video Profiles
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: da3190bb-f350-420f-bf24-a6dede296efa
 duration: 376
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 1%
 
 ---
 
-# Utilizzo della miniatura video personalizzata con AEM Dynamic Medie{#using-custom-video-thumbnail-with-aem-dynamic-media}
+# Utilizzo della miniatura video personalizzata con AEM Dynamic Media{#using-custom-video-thumbnail-with-aem-dynamic-media}
 
 Le miniature video personalizzate di AEM Assets consentono agli autori di selezionare una miniatura appropriata da un set di miniature generate. Il numero di miniature generate per un video può essere facilmente personalizzato.
 
@@ -28,4 +28,4 @@ Le miniature video personalizzate di AEM Assets consentono agli autori di selezi
 
 >[!NOTE]
 >
->Esegui l&#39;istanza [AEM in modalità Dynamic Medie](https://experienceleague.adobe.com/docs/)
+>Esegui l&#39;istanza [AEM in modalità Dynamic Media](https://experienceleague.adobe.com/docs/)

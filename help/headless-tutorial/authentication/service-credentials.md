@@ -1,7 +1,7 @@
 ---
 title: Credenziali del servizio
-description: Scopri come utilizzare le credenziali del servizio utilizzate per facilitare l’interazione programmatica di applicazioni, sistemi e servizi esterni con i servizi Author o Publish tramite HTTP.
-version: Cloud Service
+description: Scopri come utilizzare le credenziali del servizio utilizzate per facilitare l’interazione programmatica tra applicazioni, sistemi e servizi esterni e i servizi Author o Publish tramite HTTP.
+version: Experience Manager as a Cloud Service
 feature: APIs
 jira: KT-6785
 thumbnail: 330519.jpg
@@ -12,7 +12,7 @@ last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 duration: 881
-source-git-commit: 1a745f4b11007df5636c2fc0bea05d56393ef9c6
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1963'
 ht-degree: 0%
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 # Credenziali del servizio
 
-Le integrazioni con Adobe Experience Manager (AEM) as a Cloud Service devono essere in grado di eseguire l’autenticazione in modo sicuro al servizio AEM. Il Developer Console dell’AEM consente l’accesso alle credenziali del servizio, utilizzate per facilitare l’interazione programmatica tra applicazioni, sistemi e servizi esterni e l’AEM Author o i servizi Publish tramite HTTP.
+Le integrazioni con Adobe Experience Manager (AEM) as a Cloud Service devono essere in grado di eseguire l’autenticazione al servizio AEM in modo sicuro. Il Developer Console di AEM consente di accedere alle credenziali del servizio, utilizzate per facilitare l’interazione programmatica tra applicazioni, sistemi e servizi esterni e AEM Author o Publish Services tramite HTTP.
 
-AEM si integra con altri prodotti Adobe utilizzando [S2S OAuth gestito tramite Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service). Per le integrazioni personalizzate con gli account di servizio, le credenziali JWT vengono utilizzate e gestite nel Developer Console dell’AEM.
+AEM si integra con altri prodotti Adobe utilizzando [S2S OAuth gestito tramite Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service). Per le integrazioni personalizzate con gli account del servizio, le credenziali JWT vengono utilizzate e gestite in AEM Developer Console.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
@@ -33,7 +33,7 @@ Le credenziali del servizio potrebbero essere simili [Token di accesso per lo sv
 + Le credenziali del servizio sono _non_ token di accesso, ma sono credenziali utilizzate per _ottenere_ token di accesso.
 + Le credenziali del servizio sono più permanenti (il loro certificato scade ogni 365 giorni) e non cambiano se non revocate, mentre i token di accesso per lo sviluppo locale scadono ogni giorno.
 + Le credenziali di servizio per un ambiente AEM as a Cloud Service vengono mappate a un singolo utente di account tecnico AEM, mentre i token di accesso per lo sviluppo locale vengono autenticati come utente AEM che ha generato il token di accesso.
-+ Un ambiente AEM as a Cloud Service può disporre di un massimo di dieci account tecnici, ciascuno con le proprie credenziali di servizio, ciascuno dei quali corrisponde a un utente AEM con account tecnico discreto.
++ Un ambiente AEM as a Cloud Service può avere fino a dieci account tecnici, ciascuno con le proprie credenziali di servizio, ciascuno dei quali mappato a un utente AEM di account tecnico discreto.
 
 Sia le credenziali del servizio che i token di accesso generati e i token di accesso per lo sviluppo locale devono essere tenuti segreti. Poiché tutti e tre possono essere utilizzati per ottenere, l’accesso al rispettivo ambiente AEM as a Cloud Service.
 
@@ -46,7 +46,7 @@ La generazione delle credenziali del servizio è suddivisa in due passaggi:
 
 ### Creare un account tecnico
 
-A differenza dei token di accesso per lo sviluppo locale, le credenziali del servizio richiedono la creazione di un account tecnico da parte di un amministratore IMS dell’organizzazione di Adobi prima che sia possibile scaricarle. Devono essere creati conti tecnici discreti per ogni cliente che richiede un accesso programmatico all’AEM.
+A differenza dei token di accesso per lo sviluppo locale, le credenziali del servizio richiedono la creazione di un account tecnico da parte di un amministratore IMS dell’organizzazione Adobe prima che sia possibile scaricarle. È necessario creare account tecnici discreti per ogni client che richiede l’accesso programmatico ad AEM.
 
 ![Crea un account tecnico](assets/service-credentials/initialize-service-credentials.png)
 
@@ -63,9 +63,9 @@ Gli account tecnici vengono creati una volta, tuttavia le chiavi private utilizz
 1. Tocca __Crea nuovo account tecnico__
 1. Le credenziali di servizio dell’account tecnico vengono inizializzate e visualizzate come JSON
 
-![Developer Console AEM - Integrazioni - Ottieni credenziali servizio](./assets/service-credentials/developer-console.png)
+![AEM Developer Console - Integrazioni - Ottieni credenziali servizio](./assets/service-credentials/developer-console.png)
 
-Una volta inizializzate le credenziali del servizio dell’ambiente AEM as Cloud Service, possono essere scaricate da altri sviluppatori AEM della tua organizzazione Adobe IMS.
+Una volta inizializzate le credenziali del servizio dell’ambiente AEM as Cloud Service, puoi scaricarle da altri sviluppatori AEM nella tua organizzazione Adobe IMS.
 
 ### Scarica credenziali servizio
 
@@ -88,7 +88,7 @@ Il download delle credenziali del servizio segue la stessa procedura dell&#39;in
 
 ## Installare le credenziali del servizio
 
-Le credenziali del servizio forniscono i dettagli necessari per generare un JWT, che viene scambiato con un token di accesso utilizzato per l’autenticazione con AEM as a Cloud Service. Le credenziali del servizio devono essere archiviate in una posizione sicura accessibile dalle applicazioni, dai sistemi o dai servizi esterni che le utilizzano per accedere all&#39;AEM. La modalità e la posizione di gestione delle credenziali del servizio sono univoche per cliente.
+Le credenziali del servizio forniscono i dettagli necessari per generare un JWT, che viene scambiato con un token di accesso utilizzato per l’autenticazione con AEM as a Cloud Service. Le credenziali del servizio devono essere archiviate in un percorso sicuro accessibile dalle applicazioni, dai sistemi o dai servizi esterni che le utilizzano per accedere ad AEM. La modalità e la posizione di gestione delle credenziali del servizio sono univoche per cliente.
 
 Per semplicità, questo tutorial trasmette le credenziali del servizio in tramite la riga di comando. Tuttavia, rivolgiti al tuo team di sicurezza IT per scoprire come memorizzare e accedere a queste credenziali in conformità alle linee guida di sicurezza della tua organizzazione.
 
@@ -101,7 +101,7 @@ Le credenziali del servizio, un oggetto JSON completo, non corrispondono al JWT 
 
 ![Credenziali servizio - Applicazione esterna](assets/service-credentials/service-credentials-external-application.png)
 
-1. Scaricare le credenziali del servizio dal Developer Console AEM in un percorso sicuro
+1. Scarica le credenziali del servizio da AEM Developer Console in un percorso sicuro
 1. L’applicazione esterna deve interagire a livello di programmazione con l’ambiente AEM as a Cloud Service
 1. L&#39;applicazione esterna legge le credenziali del servizio da un percorso sicuro
 1. L’applicazione esterna utilizza le informazioni contenute nelle credenziali del servizio per creare un token JWT
@@ -186,7 +186,7 @@ Questa applicazione di esempio è basata su Node.js, quindi è consigliabile uti
     
     Ricorda che mentre le credenziali del servizio scadono ogni 365 giorni, il JWT e il token di accesso corrispondente scadono di frequente e devono essere aggiornati prima della scadenza. Questa operazione può essere eseguita utilizzando un &quot;refresh_token&quot; [fornito da Adobe IMS](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens).
 
-1. Con queste modifiche implementate, il codice JSON per le credenziali del servizio è stato scaricato dal Developer Console AEM e, per semplicità, salvato come `service_token.json` nella stessa cartella di `index.js`. Ora eseguiamo l&#39;applicazione sostituendo il parametro della riga di comando `file` con `service_token.json` e aggiornando `propertyValue` in un nuovo valore in modo che gli effetti siano evidenti in AEM.
+1. Con queste modifiche implementate, il codice JSON per le credenziali del servizio è stato scaricato da AEM Developer Console e per semplicità è stato salvato come `service_token.json` nella stessa cartella di `index.js`. Ora eseguiamo l&#39;applicazione sostituendo il parametro della riga di comando `file` con `service_token.json` e aggiornando `propertyValue` in un nuovo valore in modo che gli effetti siano evidenti in AEM.
 
    ```shell
    $ node index.js \
@@ -209,25 +209,25 @@ Questa applicazione di esempio è basata su Node.js, quindi è consigliabile uti
 
    Le righe __403 - Non consentito__ indicano errori nelle chiamate API HTTP ad AEM as a Cloud Service. Questi errori 403 Forbidden si verificano quando si tenta di aggiornare i metadati delle risorse.
 
-   Il motivo è che il token di accesso derivato dalle credenziali del servizio autentica la richiesta all’AEM utilizzando un utente AEM con account tecnico creato automaticamente che, per impostazione predefinita, dispone solo dell’accesso in lettura. Per fornire all’applicazione l’accesso in scrittura all’AEM, l’utente AEM dell’account tecnico associato al token di accesso deve ottenere l’autorizzazione nell’AEM.
+   Il motivo è che il token di accesso derivato dalle credenziali del servizio autentica la richiesta ad AEM utilizzando un utente AEM con account tecnico creato automaticamente che, per impostazione predefinita, dispone solo dell’accesso in lettura. Per fornire all’applicazione l’accesso in scrittura a AEM, all’utente AEM dell’account tecnico associato al token di accesso deve essere concessa l’autorizzazione in AEM.
 
 ## Configurare l’accesso in AEM
 
-Il token di accesso derivato dalle credenziali del servizio utilizza un utente AEM dell&#39;account tecnico con appartenenza al gruppo di utenti AEM __Collaboratori__.
+Il token di accesso derivato dalle credenziali del servizio utilizza un account tecnico AEM User con appartenenza al gruppo di utenti AEM __Contributors__.
 
 ![Credenziali servizio - Utente AEM account tecnico](./assets/service-credentials/technical-account-user.png)
 
-Una volta che l’utente AEM dell’account tecnico esiste nell’AEM (dopo la prima richiesta HTTP con il token di accesso), le autorizzazioni di questo utente AEM possono essere gestite come quelle di altri utenti AEM.
+Una volta che l’utente AEM dell’account tecnico esiste in AEM (dopo la prima richiesta HTTP con il token di accesso), le autorizzazioni di questo utente AEM possono essere gestite come quelle di altri utenti AEM.
 
-1. Innanzitutto, individuare il nome di accesso AEM dell&#39;account tecnico aprendo il file JSON delle credenziali del servizio scaricato da AEM Developer Console e individuare il valore `integration.email`, che dovrebbe essere simile a: `12345678-abcd-9000-efgh-0987654321c@techacct.adobe.com`.
-1. Accedere al servizio Author dell’ambiente AEM corrispondente come amministratore AEM
+1. Innanzitutto, individua il nome di accesso AEM dell&#39;account tecnico aprendo il file JSON delle credenziali del servizio scaricato da AEM Developer Console, quindi individua il valore `integration.email`, che dovrebbe essere simile a: `12345678-abcd-9000-efgh-0987654321c@techacct.adobe.com`.
+1. Accedi al servizio Author dell’ambiente AEM corrispondente come amministratore AEM
 1. Passa a __Strumenti__ > __Sicurezza__ > __Utenti__
 1. Individua l&#39;utente AEM con il __Nome di accesso__ identificato nel passaggio 1 e apri le relative __Proprietà__
 1. Passa alla scheda __Gruppi__ e aggiungi il gruppo __Utenti DAM__ (che dispone dell&#39;accesso in scrittura alle risorse)
-   + [Visualizza l&#39;elenco dei gruppi di utenti AEM ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups) ai quali aggiungere l&#39;utente del servizio per ottenere le autorizzazioni ottimali. Se nessun gruppo di utenti AEM fornito è sufficiente, creane uno tuo e aggiungi le autorizzazioni appropriate.
+   + [Consulta l&#39;elenco dei gruppi di utenti forniti da AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups) a cui aggiungere l&#39;utente del servizio per ottenere le autorizzazioni ottimali. Se nessun gruppo di utenti fornito da AEM è sufficiente, creane uno tuo e aggiungi le autorizzazioni appropriate.
 1. Tocca __Salva e chiudi__
 
-Se l&#39;account tecnico è autorizzato in AEM a disporre delle autorizzazioni di scrittura per le risorse, eseguire nuovamente l&#39;applicazione:
+Con l’account tecnico consentito in AEM per disporre delle autorizzazioni di scrittura per le risorse, esegui nuovamente l’applicazione:
 
 ```shell
 $ node index.js \

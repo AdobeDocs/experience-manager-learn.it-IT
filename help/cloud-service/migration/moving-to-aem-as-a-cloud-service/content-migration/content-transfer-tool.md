@@ -1,7 +1,7 @@
 ---
 title: Migrazione dei contenuti tramite lo strumento Content Transfer (Trasferimento contenuti)
-description: Scopri come lo strumento Content Transfer consente di migrare i contenuti ad AEM as a Cloud Service dall’AEM 6.
-version: Cloud Service
+description: Scopri come lo strumento Content Transfer consente di migrare i contenuti ad AEM as a Cloud Service da AEM 6.
+version: Experience Manager as a Cloud Service
 topic: Migration, Upgrade
 feature: Migration
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8919
 thumbnail: 336970.jpeg
 exl-id: c51ce8e3-e83c-4f8b-a835-70335ed3a5b9
 duration: 1362
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 3%
@@ -33,11 +33,11 @@ Lo strumento Content Transfer (Trasferimento contenuti) è installato in AEM 6.3
 ## Attività chiave
 
 + Scarica lo [strumento Content Transfer più recente](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=Content*+Transfer*+Tool*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2).
-+ Trasferisci i contenuti finali di AEM Author 6.3+ al servizio AEM as a Cloud Service Author.
-   + Installa lo strumento Content Transfer (Trasferimento contenuti) in AEM 6.3+ Author contenente i contenuti finali da trasferire.
++ Trasferisci il contenuto finale di AEM Author 6.3+ al servizio AEM as a Cloud Service Author.
+   + Installa lo strumento Content Transfer (Trasferimento contenuti) in AEM 6.3+ Author contenente il contenuto finale da trasferire.
    + Esegui lo strumento Content Transfer (Trasferimento contenuti) in batch, trasferendo set di contenuti.
-+ Trasferisci i contenuti finali di AEM Publish 6.3+ al servizio AEM as a Cloud Service Publish.
-   + Installa lo strumento Content Transfer (Trasferimento contenuti) sul Publish AEM 6.3+ contenente i contenuti finali da trasferire.
++ Trasferisci il contenuto finale di AEM Publish 6.3+ al servizio di pubblicazione AEM as a Cloud Service.
+   + Installa lo strumento Content Transfer (Trasferimento contenuti) nella pubblicazione AEM 6.3+ contenente il contenuto finale da trasferire.
    + Esegui lo strumento Content Transfer (Trasferimento contenuti) in batch, trasferendo set di contenuti.
 + Facoltativamente, contenuti &quot;integrativi&quot; su AEM as a Cloud Service, trasferendo nuovi contenuti dall’ultimo trasferimento di contenuti
 
@@ -66,7 +66,7 @@ Inoltre, assicurati di aver completato il precedente esercizio pratico:
         <td style="width:100%;margin-bottom:1rem;">
             <div style="font-size:1.25rem;font-weight:400;">Strumento di trasferimento dei contenuti</div>
             <p style="margin:1rem 0">
-                Scopri in che modo lo strumento Content Transfer (Trasferimento contenuti) può spostare automaticamente il contenuto dall’AEM 6 ad AEM as a Cloud Service.
+                Scopri come lo strumento Content Transfer (Trasferimento contenuti) può spostare automaticamente il contenuto da AEM 6 ad AEM as a Cloud Service.
             </p>
             <a  rel="noreferrer"
                 target="_blank"

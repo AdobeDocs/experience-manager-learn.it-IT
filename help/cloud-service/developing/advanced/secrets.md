@@ -1,14 +1,14 @@
 ---
 title: Gestire i segreti in AEM as a Cloud Service
-description: Scopri le best practice per la gestione dei segreti in AEM as a Cloud Service, utilizzando gli strumenti e le tecniche forniti dall’AEM per proteggere le informazioni sensibili, garantendo la sicurezza e la riservatezza dell’applicazione.
-version: Cloud Service
+description: Scopri le best practice per la gestione dei segreti in AEM as a Cloud Service, utilizzando gli strumenti e le tecniche forniti da AEM per proteggere le informazioni sensibili, garantendo la sicurezza e la riservatezza dell’applicazione.
+version: Experience Manager as a Cloud Service
 topic: Development, Security
 feature: OSGI, Cloud Manager
 role: Developer
 jira: KT-15880
 level: Intermediate, Experienced
 exl-id: 856b7da4-9ee4-44db-b245-4fdd220e8a4e
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # Gestione dei segreti in AEM as a Cloud Service
 
-La gestione dei segreti, come le chiavi API e le password, è fondamentale per mantenere la sicurezza delle applicazioni. Adobe Experience Manager (AEM) as a Cloud Service offre strumenti affidabili per gestire i segreti in modo sicuro.
+La gestione dei segreti, come le chiavi API e le password, è fondamentale per mantenere la sicurezza delle applicazioni. Adobe Experience Manager (AEM) as a Cloud Service offre solidi strumenti per gestire i segreti in modo sicuro.
 
-Questa esercitazione illustra le best practice per la gestione dei segreti in AEM. Verranno illustrati gli strumenti e le tecniche forniti dall&#39;AEM per proteggere le informazioni riservate dell&#39;utente, garantendo la protezione e la riservatezza dell&#39;applicazione.
+Questa esercitazione illustra le best practice per la gestione dei segreti in AEM. Verranno illustrati gli strumenti e le tecniche forniti da AEM per proteggere le informazioni riservate, garantendo la protezione e la riservatezza dell&#39;applicazione.
 
-Questo tutorial presuppone una conoscenza operativa dello sviluppo Java AEM, dei servizi OSGi, dei modelli Sling e di Adobe Cloud Manager.
+Questo tutorial presuppone una conoscenza operativa dello sviluppo Java di AEM, dei servizi OSGi, dei modelli Sling e di Adobe Cloud Manager.
 
 ## Servizio OSGi di gestione segreti
 
@@ -127,7 +127,7 @@ public class ExampleDatabaseModelImpl implements ExampleDatabaseModel {
 
 ### Da servizio OSGi
 
-I servizi OSGi spesso espongono una logica di business riutilizzabile all’interno dell’AEM, utilizzata dai modelli Sling, dai servizi AEM come Flussi di lavoro o da altri servizi OSGi personalizzati. Il servizio OSGi `SecretsManager` può essere utilizzato tramite l&#39;annotazione `@Reference` e utilizzato all&#39;interno del servizio OSGi per recuperare il valore segreto.
+I servizi OSGi spesso espongono una logica di business riutilizzabile all’interno di AEM, utilizzata dai modelli Sling, dai servizi AEM come Flussi di lavoro o da altri servizi OSGi personalizzati. Il servizio OSGi `SecretsManager` può essere utilizzato tramite l&#39;annotazione `@Reference` e utilizzato all&#39;interno del servizio OSGi per recuperare il valore segreto.
 
 ```java
 import com.example.core.util.SecretsManager;
@@ -156,7 +156,7 @@ I valori per i segreti possono essere impostati tramite [API Cloud Manager](http
 ![Configurazione segreti Cloud Manager](./assets/secrets/cloudmanager-configuration.png)
 
 1. Accedi a [Adobe Cloud Manager](https://my.cloudmanager.adobe.com).
-1. Seleziona il Programma AEM e l’Ambiente per cui desideri impostare il segreto.
+1. Seleziona il programma e l’ambiente AEM per i quali desideri impostare il segreto.
 1. Nella visualizzazione Dettagli ambiente, selezionare la scheda **Configurazione**.
 1. Seleziona **Aggiungi**.
 1. Nella finestra di dialogo Configurazione ambiente:
@@ -165,6 +165,6 @@ I valori per i segreti possono essere impostati tramite [API Cloud Manager](http
    - Seleziona il servizio AEM a cui si applica il segreto.
    - Seleziona **Segreto** come tipo.
 1. Seleziona **Aggiungi** per mantenere il segreto.
-1. Aggiungi tutti i segreti necessari. Al termine, selezionare **Salva** per applicare immediatamente le modifiche all&#39;ambiente AEM.
+1. Aggiungi tutti i segreti necessari. Al termine, seleziona **Salva** per applicare immediatamente le modifiche all&#39;ambiente AEM.
 
-L’utilizzo delle configurazioni Cloud Manager per i segreti offre il vantaggio di applicare valori diversi per ambienti o servizi diversi e di ruotare i segreti senza ridistribuire l’applicazione AEM.
+L’utilizzo delle configurazioni di Cloud Manager per i segreti offre il vantaggio di applicare valori diversi per ambienti o servizi diversi e di ruotare i segreti senza ridistribuire l’applicazione AEM.

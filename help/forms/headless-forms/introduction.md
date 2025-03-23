@@ -1,15 +1,15 @@
 ---
-title: Utilizzo di un modulo adattivo headless nell’SPA
-description: Implementare un modulo di contatto headless in SPA
+title: Utilizzo di moduli adattivi headless nelle applicazioni a pagina singola
+description: Implementare un modulo per contattarci headless in applicazioni a pagina singola
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 jira: KT-13285
 topic: Development
 role: User
 level: Intermediate
 exl-id: 7b457ce8-f11a-4e2b-8548-6ac3910cb61e
 duration: 24
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Questo articolo tratta le varie API headless fornite per consentirti di elencare
 
 Questo articolo presuppone che tu disponga di un’app a pagina singola esistente e desideri elencare e visualizzare i moduli adattivi headless nel sito web dell’applicazione a pagina singola.
 
-La schermata seguente mostra un modulo per contattarci incorporato nell’SPA
+La schermata seguente mostra un modulo per contattarci incorporato nell’applicazione a pagina singola
 
 ![modulo per i contatti](./assets/contact-us-form.png)
 

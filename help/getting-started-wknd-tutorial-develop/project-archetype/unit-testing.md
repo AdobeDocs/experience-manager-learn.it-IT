@@ -1,7 +1,7 @@
 ---
 title: Test di unità
 description: Implementa uno unit test che convalida il comportamento del modello Sling del componente Byline, creato nell’esercitazione del componente personalizzato.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: APIs, AEM Project Archetype
 topic: Content Management, Development
 role: Developer
@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
 recommendations: noDisplay, noCatalog
 duration: 706
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2923'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Consulta il codice della riga di base su cui si basa l’esercitazione:
    $ git checkout tutorial/unit-testing-start
    ```
 
-1. Implementa la base di codice in un’istanza AEM locale utilizzando le tue competenze Maven:
+1. Implementa la base di codice in un’istanza AEM locale utilizzando le abilità Maven:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -65,19 +65,19 @@ Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/a
 
 1. Comprendere le nozioni di base sul testing di unità.
 1. Scopri i framework e gli strumenti comunemente utilizzati per testare il codice AEM.
-1. Comprendi le opzioni per deridere o simulare le risorse AEM durante la scrittura degli unit test.
+1. Comprendi le opzioni per deridere o simulare le risorse AEM durante la scrittura di unit test.
 
 ## Informazioni di base {#unit-testing-background}
 
 In questa esercitazione verrà illustrato come scrivere [unit test](https://en.wikipedia.org/wiki/Unit_testing) per il [modello Sling](https://sling.apache.org/documentation/bundles/models.html) del componente Byline (creato in [Creazione di un componente AEM personalizzato](custom-component.md)). Gli unit test sono test di build-time scritti in Java™ che verificano il comportamento previsto del codice Java™. Ogni unit test è in genere piccolo e convalida l&#39;output di un metodo (o unità di lavoro) in base ai risultati previsti.
 
-Utilizziamo le best practice per l’AEM e utilizziamo:
+Utilizziamo le best practice di AEM e utilizziamo:
 
 * [JUnit 5](https://junit.org/junit5/)
 * [Framework di test Mockito](https://site.mockito.org/)
 * [wcm.io Test Framework](https://wcm.io/testing/) (che si basa su [Apache Sling Mocks](https://sling.apache.org/documentation/development/sling-mock.html))
 
-## Test di unità e Cloud Manager Adobe {#unit-testing-and-adobe-cloud-manager}
+## Test di unità e Adobe Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
 [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=it) integra l&#39;esecuzione di unit test e il [reporting sulla copertura del codice](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html) nella propria pipeline CI/CD per incoraggiare e promuovere la best practice per il codice AEM di unit test.
 
@@ -90,11 +90,11 @@ Il primo passaggio consiste nell’esaminare le dipendenze Maven per supportare 
 1. JUnit5
 1. Framework di prova Mockito
 1. Apache Sling Mocks
-1. Framework di test AEM-Mocks (di io.wcm)
+1. Framework di test di AEM Mocks (di io.wcm)
 
-Le dipendenze dei test **JUnit5**, **Mockito e **AEM Mocks** vengono aggiunte automaticamente al progetto durante l&#39;installazione utilizzando l&#39;[archetipo Maven AEM](project-setup.md).
+Le dipendenze dei test **JUnit5**, **Mockito e **AEM Mocks** vengono aggiunte automaticamente al progetto durante l&#39;installazione utilizzando l&#39;[archetipo AEM Maven](project-setup.md).
 
-1. Per visualizzare queste dipendenze, apri il POM Reactor padre all&#39;indirizzo **aem-guides-wknd/pom.xml**, passa a `<dependencies>..</dependencies>` e visualizza le dipendenze per JUnit, Mockito, Apache Sling Mocks e AEM Mock Test di io.wcm in `<!-- Testing -->`.
+1. Per visualizzare queste dipendenze, apri il POM Reactor padre in **aem-guides-wknd/pom.xml**, passa a `<dependencies>..</dependencies>` e visualizza le dipendenze per JUnit, Mockito, Apache Sling Mocks e AEM Mock Test di io.wcm in `<!-- Testing -->`.
 1. Verificare che `io.wcm.testing.aem-mock.junit5` sia impostato su **4.1.0**:
 
    ```xml
@@ -211,15 +211,15 @@ Durante la scrittura degli unit test, esistono due approcci principali:
 * [TDD o sviluppo basato su test](https://en.wikipedia.org/wiki/Test-driven_development), che prevede la scrittura degli unit test in modo incrementale, immediatamente prima dello sviluppo dell&#39;implementazione; scrivere un test, scrivere l&#39;implementazione per far sì che il test venga superato.
 * Implementazione-prima Sviluppo, che comporta lo sviluppo del codice di lavoro prima e la scrittura di test che convalidano tale codice.
 
-In questo tutorial viene utilizzato quest&#39;ultimo approccio (in quanto è già stato creato un **BylineImpl.java** funzionante in un capitolo precedente). Per questo motivo, dobbiamo rivedere e comprendere i comportamenti dei suoi metodi pubblici, ma anche alcuni dei suoi dettagli di implementazione. Ciò può sembrare contrario, poiché un buon test dovrebbe preoccuparsi solo degli input e degli output, tuttavia quando si lavora in AEM, vi sono varie considerazioni di implementazione che devono essere comprese per costruire test di funzionamento.
+In questo tutorial viene utilizzato quest&#39;ultimo approccio (in quanto è già stato creato un **BylineImpl.java** funzionante in un capitolo precedente). Per questo motivo, dobbiamo rivedere e comprendere i comportamenti dei suoi metodi pubblici, ma anche alcuni dei suoi dettagli di implementazione. Questo può sembrare contrario, poiché un buon test dovrebbe preoccuparsi solo degli input e degli output, tuttavia quando si lavora in AEM, ci sono varie considerazioni di implementazione che devono essere comprese per costruire test di lavoro.
 
-Il TDD nel contesto dell&#39;AEM richiede un livello di competenza ed è meglio se adottato da sviluppatori dell&#39;AEM esperti nello sviluppo dell&#39;AEM e nel test di unità del codice AEM.
+Il TDD nel contesto di AEM richiede un livello di esperienza ed è adottato al meglio da sviluppatori AEM esperti nello sviluppo AEM e nel testing di unità del codice AEM.
 
-## Impostazione del contesto dei test AEM  {#setting-up-aem-test-context}
+## Configurazione del contesto di test di AEM  {#setting-up-aem-test-context}
 
-La maggior parte del codice scritto per l’AEM si basa sulle API JCR, Sling o AEM, che a loro volta richiedono il contesto di un AEM in esecuzione per essere eseguito correttamente.
+La maggior parte del codice scritto per AEM si basa sulle API JCR, Sling o AEM, che a loro volta richiedono la corretta esecuzione del contesto di un AEM in esecuzione.
 
-Poiché gli unit test vengono eseguiti al momento della compilazione, al di fuori del contesto di un’istanza AEM in esecuzione, tale contesto non esiste. Per facilitare questa fase, [wcm.io&#39;s AEM Mocks](https://wcm.io/testing/aem-mock/usage.html) crea un contesto fittizio che consente a queste API di _agire principalmente_ come se fossero in esecuzione nell&#39;AEM.
+Poiché gli unit test vengono eseguiti al momento della compilazione, al di fuori del contesto di un’istanza AEM in esecuzione, tale contesto non esiste. Per facilitare questa fase, AEM Mocks](https://wcm.io/testing/aem-mock/usage.html) di [wcm.io crea un contesto fittizio che consente a queste API di _agire principalmente_ come se fossero in esecuzione in AEM.
 
 1. Creare un contesto AEM utilizzando **wcm.io&#39;s** `AemContext` in **BylineImplTest.java** aggiungendolo come estensione JUnit decorata con `@ExtendWith` al file **BylineImplTest.java**. L&#39;estensione si occupa di tutte le attività di inizializzazione e pulizia necessarie. Creare una variabile di classe per `AemContext` che può essere utilizzata per tutti i metodi di test.
 
@@ -235,12 +235,12 @@ Poiché gli unit test vengono eseguiti al momento della compilazione, al di fuor
        private final AemContext ctx = new AemContext();
    ```
 
-   Questa variabile, `ctx`, espone un contesto AEM fittizio che fornisce alcune astrazioni AEM e Sling:
+   Questa variabile, `ctx`, espone un contesto AEM fittizio che fornisce alcune astrazioni di AEM e Sling:
 
    * Il modello Sling BylineImpl è registrato in questo contesto
    * In questo contesto vengono create strutture di contenuto JCR fittizie
    * I servizi OSGi personalizzati possono essere registrati in questo contesto
-   * Fornisce vari oggetti fittizi e helper comuni richiesti, come oggetti SlingHttpServletRequest, vari servizi fittizi Sling e AEM OSGi come ModelFactory, PageManager, Page, Template, ComponentManager, Component, TagManager, Tag, ecc.
+   * Fornisce vari oggetti e helper fittizi richiesti, come oggetti SlingHttpServletRequest, vari servizi simil Sling e AEM OSGi come ModelFactory, PageManager, Page, Template, ComponentManager, Component, TagManager, Tag, ecc.
       * *Non tutti i metodi per questi oggetti sono implementati!*
    * E [molto di più](https://wcm.io/testing/aem-mock/usage.html)!
 

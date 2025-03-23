@@ -1,7 +1,7 @@
 ---
 title: Connessioni SQL con API Java™
 description: Scopri come connettersi ai database SQL da AEM as a Cloud Service utilizzando le API Java™ SQL e le porte di uscita.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-9356
 thumbnail: KT-9356.jpeg
 exl-id: ec9d37cb-70b6-4414-a92b-3b84b3f458ab
 duration: 124
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Connessioni SQL con API Java™
 
-Le connessioni ai database SQL (e ad altri servizi non HTTP/HTTPS) devono essere escluse dall&#39;AEM.
+Le connessioni ai database SQL (e ad altri servizi non HTTP/HTTPS) devono essere escluse da AEM.
 
 L&#39;eccezione a questa regola si verifica quando [l&#39;indirizzo IP in uscita dedicato](../dedicated-egress-ip-address.md) è in uso e il servizio è in Adobe o Azure.
 

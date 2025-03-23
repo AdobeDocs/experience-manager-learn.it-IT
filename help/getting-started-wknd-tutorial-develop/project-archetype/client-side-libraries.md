@@ -1,7 +1,7 @@
 ---
 title: Librerie client e workflow front-end
 description: Scopri come utilizzare le librerie client per distribuire e gestire CSS e JavaScript per un’implementazione di Adobe Experience Manager (AEM) Sites. Scopri come il modulo ui.frontend, un progetto webpack, può essere integrato nel processo di build end-to-end.
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Core Components, AEM Project Archetype
 topic: Content Management, Development
 role: Developer
@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
 duration: 557
-source-git-commit: 58ef1c482f127981083c07e5de5a1aba2f7c3aec
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Scopri come le librerie o le clientlibs lato client vengono utilizzate per distr
 
 Esaminare gli strumenti e le istruzioni necessari per configurare un [ambiente di sviluppo locale](overview.md#local-dev-environment).
 
-Si consiglia inoltre di rivedere l&#39;esercitazione sulle nozioni di base dei [componenti](component-basics.md#client-side-libraries) per comprendere le nozioni di base delle librerie lato client e dell&#39;AEM.
+Si consiglia inoltre di rivedere l&#39;esercitazione sulle nozioni di base dei [componenti](component-basics.md#client-side-libraries) per comprendere le nozioni di base delle librerie lato client e di AEM.
 
 ### Progetto iniziale
 
@@ -44,7 +44,7 @@ Consulta il codice della riga di base su cui si basa l’esercitazione:
    $ git checkout tutorial/client-side-libraries-start
    ```
 
-1. Implementa la base di codice in un’istanza AEM locale utilizzando le tue competenze Maven:
+1. Implementa la base di codice in un’istanza AEM locale utilizzando le abilità Maven:
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage
@@ -68,7 +68,7 @@ Puoi sempre visualizzare il codice finito su [GitHub](https://github.com/adobe/a
 
 ## Cosa intendi creare {#what-build}
 
-In questo capitolo, aggiungi alcuni stili di base per il sito WKND e il modello della pagina dell&#39;articolo per avvicinare l&#39;implementazione ai [modelli di progettazione dell&#39;interfaccia utente](assets/pages-templates/wknd-article-design.xd). Puoi utilizzare un flusso di lavoro front-end avanzato per integrare un progetto Webpack in una libreria client AEM.
+In questo capitolo, aggiungi alcuni stili di base per il sito WKND e il modello della pagina dell&#39;articolo per avvicinare l&#39;implementazione ai [modelli di progettazione dell&#39;interfaccia utente](assets/pages-templates/wknd-article-design.xd). Puoi utilizzare un flusso di lavoro front-end avanzato per integrare un progetto Webpack in una libreria client di AEM.
 
 ![Stili completati](assets/client-side-libraries/finished-styles.png)
 
@@ -86,7 +86,7 @@ Ulteriori informazioni sull&#39;utilizzo di [Librerie lato client sono disponibi
 
 Le librerie lato client presentano alcune limitazioni. In particolare, è un supporto limitato per i linguaggi front-end più popolari come Sass, LESS e TypeScript. Nell&#39;esercitazione, vediamo in che modo il modulo **ui.frontend** può contribuire a risolvere questo problema.
 
-Distribuire la base di codice iniziale in un&#39;istanza AEM locale e passare a [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). Questa pagina non è formattata. Implementiamo le librerie lato client per il brand WKND per aggiungere CSS e JavaScript alla pagina.
+Distribuisci la base di codice iniziale in un&#39;istanza AEM locale e passa a [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). Questa pagina non è formattata. Implementiamo le librerie lato client per il brand WKND per aggiungere CSS e JavaScript alla pagina.
 
 ## Organizzazione delle librerie lato client {#organization}
 
@@ -98,7 +98,7 @@ Esaminiamo ora l&#39;organizzazione delle clientlibs generate da [Archetipo prog
 
 >[!NOTE]
 >
-> La seguente organizzazione di librerie lato client è generata da Archetipo di progetto AEM ma rappresenta solo un punto di partenza. Il modo in cui un progetto gestisce e distribuisce CSS e JavaScript a un’implementazione di Sites può variare notevolmente in base a risorse, set di competenze e requisiti.
+> La seguente organizzazione di librerie lato client è generata da Archetipo progetto AEM ma rappresenta solo un punto di partenza. Il modo in cui un progetto gestisce e distribuisce CSS e JavaScript a un’implementazione di Sites può variare notevolmente in base a risorse, set di competenze e requisiti.
 
 1. Utilizzando VSCode o un altro IDE, apri il modulo **ui.apps**.
 1. Espandere il percorso `/apps/wknd/clientlibs` per visualizzare le clientlibs generate dall&#39;archetipo.
@@ -131,19 +131,19 @@ Le librerie lato client non supportano linguaggi più avanzati come [Sass](https
 
    `main.scss` è il punto di ingresso ai file Sass nel modulo `ui.frontend`. Include il file `_variables.scss`, che contiene una serie di variabili del brand da utilizzare nei diversi file Sass del progetto. Il file `_base.scss` è incluso e definisce alcuni stili di base per gli elementi HTML. Un&#39;espressione regolare include gli stili dei singoli componenti in `src/main/webpack/components`. Un&#39;altra espressione regolare include i file in `src/main/webpack/site/styles`.
 
-1. Inspect il file `main.ts`. Include `main.scss` e un&#39;espressione regolare per raccogliere qualsiasi file `.js` o `.ts` nel progetto. Questo punto di ingresso viene utilizzato dai [file di configurazione Webpack](https://webpack.js.org/configuration/) come punto di ingresso per l&#39;intero modulo `ui.frontend`.
+1. Controllare il file `main.ts`. Include `main.scss` e un&#39;espressione regolare per raccogliere qualsiasi file `.js` o `.ts` nel progetto. Questo punto di ingresso viene utilizzato dai [file di configurazione Webpack](https://webpack.js.org/configuration/) come punto di ingresso per l&#39;intero modulo `ui.frontend`.
 
-1. Inspect i file sotto `src/main/webpack/site/styles`:
+1. Esaminare i file sotto `src/main/webpack/site/styles`:
 
    ![File di stile](assets/client-side-libraries/style-files.png)
 
-   Questi file contengono stili per gli elementi globali del modello, come il contenitore Intestazione, Piè di pagina e Contenuto principale. Le regole CSS in questi file sono destinate a diversi elementi HTML `header`, `main` e `footer`. Questi elementi HTML sono stati definiti dai criteri del precedente capitolo [Pagine e modelli](./pages-templates.md).
+   Questi file contengono stili per gli elementi globali del modello, come il contenitore Intestazione, Piè di pagina e Contenuto principale. Le regole CSS in questi file hanno come destinazione diversi elementi HTML `header`, `main` e `footer`. Questi elementi di HTML sono stati definiti dai criteri del precedente capitolo [Pagine e modelli](./pages-templates.md).
 
 1. Espandere la cartella `components` in `src/main/webpack` ed esaminare i file.
 
    ![File Sass componenti](assets/client-side-libraries/component-sass-files.png)
 
-   Ogni file è associato a un componente core come [Componente Pannello a soffietto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/accordion.html?lang=en). Ogni Componente core è generato con [Block Element Modifier](https://getbem.com/) o notazione BEM per semplificare il targeting di classi CSS specifiche con regole di stile. I file sotto `/components` sono stati sottoposti a stubb da Archetipo di progetto AEM con diverse regole BEM per ogni componente.
+   Ogni file è associato a un componente core come [Componente Pannello a soffietto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/accordion.html?lang=en). Ogni Componente core è generato con [Block Element Modifier](https://getbem.com/) o notazione BEM per semplificare il targeting di classi CSS specifiche con regole di stile. I file sotto `/components` sono stati sottoposti a stubb da Archetipo progetto AEM con diverse regole BEM per ogni componente.
 
 1. Scarica il file WKND Base Styles **[wknd-base-styles-src-v3.zip](/help/getting-started-wknd-tutorial-develop/project-archetype/assets/client-side-libraries/wknd-base-styles-src-v3.zip)** e **unzip**.
 
@@ -163,15 +163,15 @@ Le librerie lato client non supportano linguaggi più avanzati come [Sass](https
 
    ![File modificati](assets/client-side-libraries/changed-files-uifrontend.png)
 
-   Per visualizzare i dettagli dell’implementazione dello stile WKND, Inspect ha modificato i file.
+   Ispeziona i file modificati per visualizzare i dettagli dell’implementazione dello stile WKND.
 
-## Integrazione ui.frontend in Inspect {#ui-frontend-integration}
+## Controllare l’integrazione ui.frontend {#ui-frontend-integration}
 
-Un elemento di integrazione chiave integrato nel modulo **ui.frontend**, [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator), prende gli artefatti CSS e JS compilati da un progetto webpack/npm e li trasforma in librerie AEM lato client.
+Elemento di integrazione chiave incorporato nel modulo **ui.frontend**, [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) prende gli artefatti CSS e JS compilati da un progetto webpack/npm e li trasforma in librerie lato client di AEM.
 
 ![integrazione dell&#39;architettura ui.frontend](assets/client-side-libraries/ui-frontend-architecture.png)
 
-L’Archetipo progetto AEM configura automaticamente questa integrazione. Quindi, esplora come funziona.
+L’Archetipo progetto AEM imposta automaticamente questa integrazione. Quindi, esplora come funziona.
 
 
 1. Aprire un terminale della riga di comando e installare il modulo **ui.frontend** utilizzando il comando `npm install`:
@@ -201,7 +201,7 @@ L’Archetipo progetto AEM configura automaticamente questa integrazione. Quindi
    $ npm run watch
    ```
 
-1. Compila i file di origine dal modulo `ui.frontend` e sincronizza le modifiche con AEM in [http://localhost:4502](Http://localhost:4502)
+1. In questo modo vengono compilati i file di origine dal modulo `ui.frontend` e le modifiche vengono sincronizzate con AEM in [http://localhost:4502](Http://localhost:4502)
 
    ```shell
    + jcr_root/apps/wknd/clientlibs/clientlib-site/js/site.js
@@ -216,25 +216,25 @@ L’Archetipo progetto AEM configura automaticamente questa integrazione. Quindi
    http://admin:admin@localhost:4502 > OK
    ```
 
-1. Il comando `npm run watch` popola infine il **clientlib-site** e le **clientlib-dependencies** nel modulo **ui.apps**, che viene quindi sincronizzato automaticamente con l&#39;AEM.
+1. Il comando `npm run watch` popola infine il **clientlib-site** e le **clientlib-dependencies** nel modulo **ui.apps**, che viene quindi sincronizzato automaticamente con AEM.
 
    >[!NOTE]
    >
    >Esiste anche un profilo `npm run prod` che minimizza JS e CSS. Questa è la compilazione standard ogni volta che la build del webpack viene attivata tramite Maven. Ulteriori dettagli sul modulo [ui.frontend sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
 
-1. Inspect il file `site.css` sotto `ui.frontend/dist/clientlib-site/site.css`. Si tratta del CSS compilato basato sui file di origine Sass.
+1. Controllare il file `site.css` sotto `ui.frontend/dist/clientlib-site/site.css`. Si tratta del CSS compilato basato sui file di origine Sass.
 
    ![CSS sito distribuito](assets/client-side-libraries/ui-frontend-dist-site-css.png)
 
-1. Inspect il file `ui.frontend/clientlib.config.js`. Questo è il file di configurazione per un plug-in npm, [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator), che trasforma il contenuto di `/dist` in una libreria client e lo sposta nel modulo `ui.apps`.
+1. Controllare il file `ui.frontend/clientlib.config.js`. Questo è il file di configurazione per un plug-in npm, [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator), che trasforma il contenuto di `/dist` in una libreria client e lo sposta nel modulo `ui.apps`.
 
-1. Inspect ha aggiunto il file `site.css` nel modulo **ui.apps** in `ui.apps/src/main/content/jcr_root/apps/wknd/clientlibs/clientlib-site/css/site.css`. Deve essere una copia identica del file `site.css` dal modulo **ui.frontend**. Ora che si trova nel modulo **ui.apps**, può essere distribuito all&#39;AEM.
+1. Controllare il file `site.css` nel modulo **ui.apps** in `ui.apps/src/main/content/jcr_root/apps/wknd/clientlibs/clientlib-site/css/site.css`. Deve essere una copia identica del file `site.css` dal modulo **ui.frontend**. Ora che si trova nel modulo **ui.apps**, può essere distribuito ad AEM.
 
    ![ui.apps clientlib-site](assets/client-side-libraries/ui-apps-clientlib-site-css.png)
 
    >[!NOTE]
    >
-   > Poiché **clientlib-site** viene compilato durante il tempo di compilazione, utilizzando **npm** o **maven**, può essere ignorato dal controllo del codice sorgente nel modulo **ui.apps**. Inspect il file `.gitignore` sotto **ui.apps**.
+   > Poiché **clientlib-site** viene compilato durante il tempo di compilazione, utilizzando **npm** o **maven**, può essere ignorato dal controllo del codice sorgente nel modulo **ui.apps**. Controllare il file `.gitignore` sotto **ui.apps**.
 
 1. Apri l&#39;articolo LA Skatepark in AEM all&#39;indirizzo: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html).
 
@@ -246,11 +246,11 @@ L’Archetipo progetto AEM configura automaticamente questa integrazione. Quindi
 
    >[!NOTE]
    >
-   > I passaggi sopra descritti per generare e distribuire il codice ui.frontend in AEM vengono eseguiti automaticamente quando viene attivata una build Maven dalla radice del progetto `mvn clean install -PautoInstallSinglePackage`.
+   > I passaggi eseguiti in precedenza per generare e distribuire il codice ui.frontend in AEM vengono eseguiti automaticamente quando viene attivata una build Maven dalla radice del progetto `mvn clean install -PautoInstallSinglePackage`.
 
 ## Modifica dello stile
 
-Quindi, apportare una piccola modifica al modulo `ui.frontend` per visualizzare `npm run watch` distribuire automaticamente gli stili all&#39;istanza AEM locale.
+Apportare quindi una piccola modifica al modulo `ui.frontend` per visualizzare `npm run watch` e distribuire automaticamente gli stili all&#39;istanza AEM locale.
 
 1. Dal modulo `ui.frontend` aprire il file: `ui.frontend/src/main/webpack/site/_variables.scss`.
 1. Aggiorna la variabile di colore `$brand-primary`:
@@ -276,7 +276,7 @@ Quindi, apportare una piccola modifica al modulo `ui.frontend` per visualizzare 
 
 ## Inclusione di pagine e modelli {#page-inclusion}
 
-Quindi, esaminiamo come si fa riferimento alle clientlibs nella pagina AEM. Una best practice comune nello sviluppo web consiste nell&#39;includere CSS nell&#39;intestazione HTML `<head>` e in JavaScript subito prima di chiudere il tag `</body>`.
+Quindi, esaminiamo come si fa riferimento alle clientlibs nella pagina di AEM. Una best practice comune nello sviluppo web consiste nell&#39;includere CSS nell&#39;intestazione HTML `<head>` e nel JavaScript immediatamente prima di chiudere il tag `</body>`.
 
 1. Passa al modello per pagina articolo in [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)
 
@@ -296,7 +296,7 @@ Quindi, esaminiamo come si fa riferimento alle clientlibs nella pagina AEM. Una 
 
 1. Passa alla pagina **La Skateparks** creata utilizzando il **modello pagina articolo**: [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html).
 
-1. Fai clic sull&#39;icona **Informazioni pagina** e nel menu seleziona **Visualizza come pubblicato** per aprire la pagina dell&#39;articolo all&#39;esterno dell&#39;editor AEM.
+1. Fai clic sull&#39;icona **Informazioni pagina** e nel menu seleziona **Visualizza come pubblicato** per aprire la pagina dell&#39;articolo all&#39;esterno dell&#39;editor di AEM.
 
    ![Visualizza come pubblicato](assets/client-side-libraries/view-as-published-article-page.png)
 
@@ -324,7 +324,7 @@ Quindi, esaminiamo come si fa riferimento alle clientlibs nella pagina AEM. Una 
 
    >[!NOTE]
    >
-   > Per AEM 6.5/6.4 le librerie lato client non vengono minimizzate automaticamente. Per abilitare la minimizzazione, consulta la documentazione su [HTML Library Manager (scelta consigliata)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors).
+   > In AEM 6.5/6.4 le librerie lato client non vengono minimizzate automaticamente. Consulta la documentazione su [Gestione librerie HTML per abilitare la minimizzazione (consigliata)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors).
 
    >[!WARNING]
    >
@@ -332,7 +332,7 @@ Quindi, esaminiamo come si fa riferimento alle clientlibs nella pagina AEM. Una 
 
 ### Passaggi successivi {#next-steps}
 
-Scopri come implementare singoli stili e riutilizzare i Componenti core utilizzando il Sistema di stili di Experience Manager. [Sviluppare con il sistema di stili](style-system.md) include l&#39;utilizzo del sistema di stili per estendere i componenti core con CSS specifici per il brand e configurazioni di criteri avanzate dell&#39;Editor modelli.
+Scopri come implementare singoli stili e riutilizzare i Componenti core utilizzando il sistema di stili di Experience Manager. [Sviluppare con il sistema di stili](style-system.md) include l&#39;utilizzo del sistema di stili per estendere i componenti core con CSS specifici per il brand e configurazioni di criteri avanzate dell&#39;Editor modelli.
 
 Visualizza il codice finito in [GitHub](https://github.com/adobe/aem-guides-wknd) oppure rivedi e distribuisci il codice localmente in nel ramo Git `tutorial/client-side-libraries-solution`.
 
@@ -343,9 +343,9 @@ Visualizza il codice finito in [GitHub](https://github.com/adobe/aem-guides-wknd
 
 ### Webpack DevServer - Markup statico {#webpack-dev-static}
 
-Nella coppia di esercizi precedente, diversi file Sass nel modulo **ui.frontend** sono stati aggiornati e attraverso un processo di compilazione, alla fine vedi che queste modifiche si riflettono nell&#39;AEM. Esaminiamo ora una tecnica che utilizza un [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) per sviluppare rapidamente gli stili front-end rispetto a **static** HTML.
+Nella coppia di esercizi precedente, diversi file Sass nel modulo **ui.frontend** sono stati aggiornati e attraverso un processo di compilazione, alla fine vedi che queste modifiche si riflettono in AEM. Esaminiamo ora una tecnica che utilizza un [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) per sviluppare rapidamente gli stili front-end rispetto a **static** HTML.
 
-Questa tecnica è utile se la maggior parte degli stili e del codice front-end viene eseguita da uno sviluppatore front-end dedicato che potrebbe non avere un facile accesso a un ambiente AEM. Questa tecnica consente inoltre alla FED di apportare modifiche direttamente alle HTML, che possono poi essere consegnate a uno sviluppatore AEM per implementarle come componenti.
+Questa tecnica è utile se la maggior parte degli stili e del codice front-end viene eseguita da uno sviluppatore front-end dedicato che potrebbe non avere un facile accesso a un ambiente AEM. Questa tecnica consente inoltre alla FED di apportare modifiche direttamente a HTML, che possono quindi essere consegnate a uno sviluppatore AEM per implementarle come componenti.
 
 1. Copia l&#39;origine della pagina dell&#39;articolo di skatepark LA all&#39;indirizzo [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html?wcmmode=disabled](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html?wcmmode=disabled).
 1. Riapri l’IDE. Incolla il markup copiato da AEM in `index.html` nel modulo **ui.frontend** sotto `src/main/webpack/static`.
@@ -387,11 +387,11 @@ Questa tecnica è utile se la maggior parte degli stili e del codice front-end v
 
    ![Modifiche al server di sviluppo Webpack locale](assets/client-side-libraries/local-webpack-dev-server.png)
 
-1. Esaminare il file `/aem-guides-wknd.ui.frontend/webpack.dev.js`. Contiene la configurazione del webpack utilizzata per avviare il webpack-dev-server. Esegue il proxy dei percorsi `/content` e `/etc.clientlibs` da un&#39;istanza dell&#39;AEM in esecuzione locale. In questo modo vengono rese disponibili le immagini e altre clientlibs (non gestite dal codice **ui.frontend**).
+1. Esaminare il file `/aem-guides-wknd.ui.frontend/webpack.dev.js`. Contiene la configurazione del webpack utilizzata per avviare il webpack-dev-server. Esegue il proxy dei percorsi `/content` e `/etc.clientlibs` da un&#39;istanza di AEM in esecuzione locale. In questo modo vengono rese disponibili le immagini e altre clientlibs (non gestite dal codice **ui.frontend**).
 
    >[!CAUTION]
    >
-   > L’SRC immagine del markup statico punta a un componente immagine live su un’istanza AEM locale. Le immagini appaiono interrotte se il percorso cambia, se l’AEM non viene avviato o se il browser non ha effettuato l’accesso all’istanza AEM locale. Se si consegna a una risorsa esterna, è anche possibile sostituire le immagini con riferimenti statici.
+   > L’SRC immagine del markup statico punta a un componente immagine live in un’istanza AEM locale. Le immagini appaiono interrotte se il percorso cambia, se AEM non viene avviato o se il browser non ha effettuato l’accesso all’istanza AEM locale. Se si consegna a una risorsa esterna, è anche possibile sostituire le immagini con riferimenti statici.
 
 1. È possibile **arrestare** il server Webpack dalla riga di comando digitando `CTRL+C`.
 
@@ -405,7 +405,7 @@ Se lavori molto nel modulo **ui.apps**, modificando gli script HTL e creando com
 
 ### Debug delle librerie lato client {#debugging-clientlibs}
 
-Se si utilizzano metodi diversi di **categorie** e **incorpora** per includere più librerie client, la risoluzione dei problemi può risultare laboriosa. L&#39;AEM espone diversi strumenti per aiutarlo. Uno degli strumenti più importanti è **Ricostruisci librerie client** che obbliga l&#39;AEM a ricompilare i file LESS e generare il CSS.
+Se si utilizzano metodi diversi di **categorie** e **incorpora** per includere più librerie client, la risoluzione dei problemi può risultare laboriosa. AEM espone diversi strumenti per facilitare questa fase. Uno degli strumenti più importanti è **Ricostruisci librerie client** che forza AEM a ricompilare eventuali file LESS e generare il CSS.
 
 * [**Dump librerie**](http://localhost:4502/libs/granite/ui/content/dumplibs.html) - Elenca le librerie client registrate nell&#39;istanza AEM. `<host>/libs/granite/ui/content/dumplibs.html`
 
@@ -413,6 +413,6 @@ Se si utilizzano metodi diversi di **categorie** e **incorpora** per includere p
 
 * [**Convalida dipendenze librerie**](http://localhost:4502/libs/granite/ui/content/dumplibs.validate.html) - evidenzia le dipendenze o le categorie incorporate che non è possibile trovare. `<host>/libs/granite/ui/content/dumplibs.validate.html`
 
-* [**Rigenera librerie client**](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) - consente a un utente di forzare l&#39;AEM a rigenerare le librerie client o invalidare la cache delle librerie client. Questo strumento è efficace quando si sviluppa con MENO in quanto può costringere l’AEM a ricompilare il CSS generato. In generale, è più efficace annullare la validità delle cache ed eseguire quindi l’aggiornamento di una pagina anziché ricostruire le librerie. `<host>/libs/granite/ui/content/dumplibs.rebuild.html`
+* [**Rigenera librerie client**](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) - consente a un utente di forzare AEM a rigenerare le librerie client o a invalidare la cache delle librerie client. Questo strumento è efficace per lo sviluppo con LESS, in quanto può costringere AEM a ricompilare i CSS generati. In generale, è più efficace annullare la validità delle cache ed eseguire quindi l’aggiornamento di una pagina anziché ricostruire le librerie. `<host>/libs/granite/ui/content/dumplibs.rebuild.html`
 
 ![rigenera libreria client](assets/client-side-libraries/rebuild-clientlibs.png)

@@ -1,7 +1,7 @@
 ---
-title: 'Modellazione dei contenuti: primo tutorial su AEM headless'
-description: Scopri come sfruttare i frammenti di contenuto, creare modelli di frammenti e utilizzare gli endpoint di GraphQL nell’AEM.
-version: Cloud Service
+title: 'Modellazione dei contenuti: prima esercitazione AEM Headless'
+description: Scopri come sfruttare i frammenti di contenuto, creare modelli di frammenti e utilizzare gli endpoint di GraphQL in AEM.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
 role: Developer
@@ -12,7 +12,7 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: 6e5e3cb4-9a47-42af-86af-da33fd80cb47
 duration: 175
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 9%
@@ -21,9 +21,9 @@ ht-degree: 9%
 
 # Modellazione dei contenuti
 
-Benvenuti nel capitolo del tutorial su Frammenti di contenuto ed endpoint GraphQL in Adobe Experience Manager (AEM). Scopriremo come sfruttare i frammenti di contenuto, creare modelli di frammenti e utilizzare gli endpoint di GraphQL nell’AEM.
+Benvenuti nel capitolo del tutorial su Frammenti di contenuto ed endpoint GraphQL in Adobe Experience Manager (AEM). Scopriremo come sfruttare i frammenti di contenuto, creare modelli di frammenti e utilizzare gli endpoint di GraphQL in AEM.
 
-I frammenti di contenuto offrono un approccio strutturato alla gestione dei contenuti attraverso i canali, garantendo flessibilità e riutilizzabilità. L’abilitazione dei frammenti di contenuto nell’AEM consente la creazione di contenuti modulari, migliorando la coerenza e l’adattabilità.
+I frammenti di contenuto offrono un approccio strutturato alla gestione dei contenuti attraverso i canali, garantendo flessibilità e riutilizzabilità. L’abilitazione di Frammenti di contenuto in AEM consente la creazione di contenuti modulari, migliorando la coerenza e l’adattabilità.
 
 Innanzitutto, ti guideremo attraverso l’abilitazione dei frammenti di contenuto in AEM, coprendo le configurazioni e le impostazioni necessarie per un’integrazione fluida.
 
@@ -31,9 +31,9 @@ Vengono quindi descritti la creazione di modelli per frammenti, che definiscono 
 
 Quindi, verrà fornita una dimostrazione della creazione di frammenti di contenuto dai modelli, con istruzioni dettagliate sull’authoring e la pubblicazione.
 
-Inoltre, esploreremo la definizione degli endpoint AEM-GraphQL. GraphQL recupera in modo efficiente i dati dall’AEM e configurerà gli endpoint per esporre i dati desiderati. Le query persistenti ottimizzano le prestazioni e la memorizzazione in cache.
+Inoltre, esploreremo la definizione degli endpoint di AEM GraphQL. GraphQL recupera i dati da AEM in modo efficiente e configurerà gli endpoint per esporre i dati desiderati. Le query persistenti ottimizzano le prestazioni e la memorizzazione in cache.
 
-Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggerimenti pratici. Entro la fine, avrai le competenze necessarie per abilitare Frammenti di contenuto, creare Modelli di frammenti, generare Frammenti e definire endpoint GraphQL AEM e query persistenti. Iniziamo!
+Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggerimenti pratici. Entro la fine, avrai acquisito le competenze necessarie per abilitare Frammenti di contenuto, creare Modelli di frammenti, generare Frammenti e definire endpoint AEM GraphQL e query persistenti. Iniziamo!
 
 ## Configurazione in base al contesto
 
@@ -89,7 +89,7 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
 1. Dopo aver creato la cartella, selezionala e apri le relative __proprietà__.
 1. Nella scheda __Configurazioni cloud__ della cartella, seleziona la configurazione [creata in precedenza](#enable-content-fragments-and-graphql).
 
-   ![Configurazione cloud AEM headless cartella risorse](./assets/1/cloud-config.png)
+   ![Configurazione cloud AEM headless per cartella risorse](./assets/1/cloud-config.png)
 
    Fai clic su nella nuova cartella e crea un teaser. Fai clic su __Crea__ e __Frammento di contenuto__ e seleziona il modello __Teaser__. Denomina il modello __Hero__ e fai clic su __Crea__.
 
@@ -111,7 +111,7 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
 
 1. Fai clic su __Crea__, assegna un nome al nuovo endpoint e scegli la configurazione appena creata.
 
-   ![Endpoint GraphQL headless AEM](./assets/1/endpoint.png)
+   ![Endpoint AEM Headless GraphQL](./assets/1/endpoint.png)
 
 ## Query persistenti GraphQL
 
@@ -132,7 +132,7 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
 
    Dovresti ottenere un elenco contenente il singolo frammento creato [sopra](#create-content).
 
-   Per questo esercizio, crea una query completa utilizzata dall’app AEM headless. Crea una query che restituisce un singolo teaser per percorso. Nell’editor delle query, immetti la seguente query:
+   Per questo esercizio, crea una query completa utilizzata dall’app headless di AEM. Crea una query che restituisce un singolo teaser per percorso. Nell’editor delle query, immetti la seguente query:
 
    ```graphql
    query TeaserByPath($path: String!) {
@@ -195,4 +195,4 @@ Nel corso dell’esercitazione forniremo spiegazioni, esempi di codice e suggeri
 
 Congratulazioni Hai configurato correttamente AEM as a Cloud Service per consentire la creazione di frammenti di contenuto ed endpoint GraphQL. Hai anche creato un modello per frammenti di contenuto e un frammento di contenuto, definito un endpoint GraphQL e una query persistente. Ora puoi passare al prossimo capitolo dell’esercitazione, dove scoprirai come creare un’applicazione AEM Headless React che utilizza i frammenti di contenuto e l’endpoint GraphQL creati in questo capitolo.
 
-[Prossimo capitolo: API headless AEM e React](./2-aem-headless-apis-and-react.md)
+[Prossimo capitolo: API headless di AEM e React](./2-aem-headless-apis-and-react.md)

@@ -1,8 +1,8 @@
 ---
-title: Debug dell’SDK AEM tramite i registri
-description: I registri fungono da strumenti di prima linea per il debug delle applicazioni AEM, ma dipendono dalla registrazione adeguata nell’applicazione AEM implementata.
+title: Debug di AEM SDK tramite i registri
+description: I registri fungono da strumenti di prima linea per il debug delle applicazioni AEM, ma dipendono dalla registrazione appropriata nell’applicazione AEM implementata.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-5252
 topic: Development
@@ -10,22 +10,22 @@ role: Developer
 level: Beginner, Intermediate
 exl-id: 91aa4a10-47fe-4313-acd2-ca753e5484d9
 duration: 411
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
 
 ---
 
-# Debug dell’SDK AEM tramite i registri
+# Debug di AEM SDK tramite i registri
 
-Accedendo ai registri dell’SDK dell’AEM, il file Jar per l’avvio rapido locale dell’SDK dell’AEM o gli strumenti Dispatcher possono fornire informazioni chiave sul debug delle applicazioni AEM.
+Accedendo ai registri di AEM SDK, il file JAR quickstart locale di AEM SDK o gli strumenti Dispatcher possono fornire informazioni chiave sul debug delle applicazioni AEM.
 
-## Registri AEM
+## Registri di AEM
 
 >[!VIDEO](https://video.tv.adobe.com/v/34334?quality=12&learn=on)
 
-I registri fungono da strumenti di prima linea per il debug delle applicazioni AEM, ma dipendono dalla registrazione adeguata nell’applicazione AEM implementata. L’Adobe consiglia di mantenere le configurazioni di sviluppo locale e di registrazione di AEM as a Cloud Service Dev il più simile possibile, in quanto normalizza la visibilità del registro negli ambienti quickstart locali dell’SDK dell’AEM e di sviluppo AEM as a Cloud Service, riducendo il raggruppamento e la ridistribuzione della configurazione.
+I registri fungono da strumenti di prima linea per il debug delle applicazioni AEM, ma dipendono dalla registrazione appropriata nell’applicazione AEM implementata. Adobe consiglia di mantenere le configurazioni di sviluppo locale e di registrazione di AEM as a Cloud Service Dev il più simile possibile, in quanto normalizza la visibilità dei registri negli ambienti quickstart locali di AEM SDK e AEM as a Cloud Service Dev, riducendo le modifiche e la ridistribuzione della configurazione.
 
 L&#39;[Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype) configura la registrazione a livello DEBUG per i pacchetti Java dell&#39;applicazione AEM per lo sviluppo locale tramite la configurazione OSGi Sling Logger trovata in
 
@@ -33,7 +33,7 @@ L&#39;[Archetipo progetto AEM](https://github.com/adobe/aem-project-archetype) c
 
 che accede a `error.log`.
 
-Se la registrazione predefinita non è sufficiente per lo sviluppo locale, la registrazione ad hoc può essere configurata tramite la console web locale quickstart del supporto log dell&#39;SDK dell&#39;AEM, all&#39;indirizzo ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)). Si consiglia tuttavia di non salvare le modifiche ad hoc in modo permanente su Git, a meno che non siano necessarie le stesse configurazioni di registro anche negli ambienti di sviluppo AEM as a Cloud Service. Tieni presente che le modifiche tramite la console Log Support vengono salvate in modo permanente direttamente nell’archivio quickstart locale dell’SDK dell’AEM.
+Se la registrazione predefinita non è sufficiente per lo sviluppo locale, la registrazione ad hoc può essere configurata tramite la console web Log Support di AEM SDK locale, all&#39;indirizzo ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)). Si consiglia tuttavia di non salvare le modifiche ad hoc in modo permanente su Git, a meno che non siano necessarie le stesse configurazioni di registro anche negli ambienti di sviluppo AEM as a Cloud Service. Tieni presente che le modifiche tramite la console Log Support vengono salvate in modo permanente direttamente nell’archivio quickstart locale di AEM SDK.
 
 Le istruzioni di registro Java possono essere visualizzate nel file `error.log`:
 

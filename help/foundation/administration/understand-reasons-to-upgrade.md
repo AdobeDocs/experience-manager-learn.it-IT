@@ -1,7 +1,7 @@
 ---
 title: Perché effettuare l'aggiornamento
 description: Analisi dettagliata delle funzioni chiave per i clienti che intendono effettuare l'aggiornamento all'ultima versione di Adobe Experience Manager 6.
-version: 6.5
+version: Experience Manager 6.5
 topic: Upgrade
 feature: Release Information
 role: Leader, Architect, Developer, Admin, User
@@ -9,7 +9,7 @@ level: Beginner
 doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
 duration: 538
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2588'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Analisi dettagliata delle funzioni chiave per i clienti che intendono effettuare l&#39;aggiornamento all&#39;ultima versione di Adobe Experience Manager 6.
 
-## Funzioni chiave per l’aggiornamento a AEM 6.5
+## Funzioni chiave per l’aggiornamento ad AEM 6.5
 
 + [Note sulla versione di Adobe Experience Manager 6.5](https://helpx.adobe.com/it/experience-manager/6-5/release-notes.html)
 
@@ -34,18 +34,18 @@ Adobe Experience Manager 6.5 continua a migliorare la stabilità, le prestazioni
 
 AEM Sites presenta una serie di funzioni progettate per accelerare la creazione e l’espansione di siti web:
 
-+ Il supporto per **SPA Editor** consente di creare completamente SPA (applicazioni a pagina singola) nell&#39;AEM, supportando un&#39;esperienza di authoring avanzata e intuitiva per gli addetti al marketing.
-+_ **JavaScript SDK**, un kit di avvio per progetti SPA e strumenti di supporto per la creazione, consente agli sviluppatori front-end di sviluppare applicazioni a pagina singola compatibili con l&#39;editor SPA indipendentemente dall&#39;AEM.
++ Il supporto dell&#39;**Editor di applicazioni a pagina singola** consente di creare completamente applicazioni a pagina singola in AEM, supportando un&#39;esperienza di authoring avanzata e intuitiva per gli addetti al marketing.
++_ **JavaScript SDK**, un kit di avvio per progetti SPA e strumenti di supporto per la creazione, consente agli sviluppatori front-end di sviluppare applicazioni a pagina singola compatibili con SPA Editor indipendentemente da AEM.
 + **Componenti core** aggiunge una moltitudine di nuovi componenti, una **Libreria componenti** e una serie di miglioramenti ai Componenti core esistenti.
 + Ulteriori miglioramenti alle **traduzioni** consentono di semplificare la traduzione di AEM Sites.
 
 ### Esperienze fluide
 
-L’AEM continua a utilizzare le esperienze fluide con strumenti nuovi e migliorati che facilitano l’utilizzo di contenuti al di fuori dell’AEM.
+AEM continua ad abbracciare le esperienze fluide con strumenti nuovi e migliorati che facilitano l’utilizzo di contenuti al di fuori di AEM.
 
 + **I frammenti di contenuto** supportano il confronto delle versioni/le differenze e le annotazioni.
-+ L&#39;API HTTP Assets **di** AEM supporta l&#39;esposizione di **frammenti di contenuto** direttamente in DAM come **JSON**.
-  **I frammenti di esperienza** supportano **la ricerca full-text** e **l&#39;annullamento della validità della cache di Dispatcher dell&#39;AEM** per fare riferimento a **pagine**.
++ **L&#39;API HTTP Assets di AEM** supporta l&#39;esposizione di **Frammenti di contenuto** direttamente in DAM come **JSON**.
+  **I frammenti di esperienza** supportano **la ricerca full-text** e **l&#39;annullamento della validità della cache di AEM Dispatcher** per il riferimento a **pagine**.
 
 ### Gestione risorse
 
@@ -53,19 +53,19 @@ AEM Assets continua a sfruttare la ricca serie di funzionalità per la gestione 
 
 + **Adobe Asset Link** collega i contenuti creativi direttamente ad AEM Assets dagli strumenti di Adobe Creative Cloud.
 + L&#39;integrazione di **Adobe Stock** consente l&#39;accesso diretto alle immagini Adobe Stock direttamente dall&#39;esperienza AEM Assets, creando un&#39;esperienza di individuazione dei contenuti senza soluzione di continuità.
-+ **L&#39;app desktop AEM** rilascia la versione 2.0 e si ripensa migliorando le prestazioni e la stabilità.
++ **L&#39;app desktop AEM** rilascia la versione 2.0 e si rivede migliorando al contempo le prestazioni e la stabilità.
 + **Assets** connesso supporta istanze AEM Sites discrete per accedere e utilizzare in modo semplice le risorse di un&#39;istanza AEM Assets diversa.
-+ Supporto video aggiornato in **Dynamic Medie**, inclusi **360 video** e **anteprime video personalizzate**.
++ Supporto video aggiornato in **Dynamic Media**, inclusi **360 Video** e **Anteprime video personalizzate**.
 
 ### Informazioni sui contenuti
 
-L’AEM continua a costruire la sua integrazione con le tecnologie intelligenti, sfruttando l’apprendimento automatico e l’intelligenza artificiale per migliorare tutte le esperienze.
+AEM continua a sviluppare la sua integrazione con le tecnologie intelligenti, sfruttando l’apprendimento automatico e l’intelligenza artificiale per migliorare tutte le esperienze.
 
-+ **Adobe Asset Link** aggiunge **Visual Similarity Search**, che consente di individuare e utilizzare immagini simili in modo semplice in **strumenti di Adobe Creative Cloud**.
++ **Adobe Asset Link** aggiunge **Visual Similarity Search**, consentendo di individuare e utilizzare immagini simili in modo semplice in **strumenti di Adobe Creative Cloud**.
 
 ### Integrazioni
 
-L’AEM aumenta la sua capacità di integrazione con altri servizi Adobe:
+AEM aumenta la capacità di integrarsi con altri servizi Adobe:
 
 + **Frammenti di esperienza** approfondisce l&#39;integrazione con **Adobe Target** supportando **Esporta come JSON** in Adobe Target e la possibilità di **eliminare le offerte basate su frammenti di esperienza** da **Adobe Target**.
 
@@ -73,14 +73,14 @@ L’AEM aumenta la sua capacità di integrazione con altri servizi Adobe:
 
 [Cloud Manager](https://adobe.ly/2HODmsv), esclusivo per i clienti Adobe Managed Services (AMS), offre le seguenti funzionalità:
 
-+ Cloud Manager supporta l&#39;estensione del supporto per la distribuzione AEM da AEM Sites a **AEM Assets**, incluso **test delle prestazioni automatizzati per l&#39;elaborazione delle risorse**.
-+ **Ridimensionamento automatico** del livello Publish AEM a soglie predefinite, per garantire un&#39;esperienza utente ottimale.
++ Cloud Manager supporta l&#39;estensione del supporto per la distribuzione di AEM da AEM Sites a **AEM Assets**, incluso **test delle prestazioni automatizzati per l&#39;elaborazione delle risorse**.
++ **Ridimensionamento automatico** del livello di pubblicazione AEM a soglie predefinite, per garantire un&#39;esperienza utente ottimale.
 + **Pipeline non di produzione** consentono ai team di sviluppo di sfruttare Cloud Manager per verificare continuamente la qualità del codice e distribuirle in ambienti di livello inferiore (sviluppo e controllo qualità).
 + Le **API della pipeline CI/CD** consentono ai clienti di interagire in modo programmatico con Cloud Manager, approfondendo le possibilità di integrazione con l&#39;infrastruttura di sviluppo on-premise.
 
 ## Funzioni di base
 
-Di seguito è riportata una matrice delle principali funzionalità di base offerte dall’AEM. Alcune di queste funzioni sono state introdotte nelle versioni precedenti con miglioramenti incrementali aggiunti in ciascuna versione.
+Di seguito è riportata una matrice delle funzioni principali di base offerte da AEM. Alcune di queste funzioni sono state introdotte nelle versioni precedenti con miglioramenti incrementali aggiunti in ciascuna versione.
 
 + [Note sulla versione di AEM Foundation](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html)
 
@@ -104,7 +104,7 @@ Di seguito è riportata una matrice delle principali funzionalità di base offer
     <tbody>
         <tr>
             <td>
-                <strong>Supporto Java 11:</strong> L'AEM supporta Java 11 (oltre a Java 8).
+                <strong>Supporto Java 11:</strong> AEM supporta Java 11 (oltre a Java 8).
             </td>
             <td> </td>
             <td> </td>
@@ -215,7 +215,7 @@ Di seguito è riportata una matrice delle principali funzionalità di base offer
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html" target="_blank">Dashboard operazioni</a>:</strong>
- Eseguire interventi di manutenzione, monitorare lo stato del server e analizzare le prestazioni dall'interno di AEM.</td>
+ Esegui la manutenzione, monitora lo stato del server e analizza le prestazioni dall’interno di AEM.</td>
             <td></td>
             <td>✔</td>
             <td>✔</td>
@@ -226,7 +226,7 @@ Di seguito è riportata una matrice delle principali funzionalità di base offer
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/upgrade.html" target="_blank">Miglioramenti all'aggiornamento</a>:</strong>
-            I miglioramenti degli aggiornamenti consentono aggiornamenti in sede più semplici e rapidi dell’AEM.</td>
+            I miglioramenti degli aggiornamenti consentono aggiornamenti AEM più semplici e rapidi.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -274,7 +274,7 @@ Di seguito è riportata una matrice delle principali funzionalità di base offer
 
 ## Funzioni di sicurezza
 
-Di seguito è riportata una matrice delle principali funzioni di sicurezza offerte dall&#39;AEM. Alcune di queste funzioni sono state introdotte nelle versioni precedenti con miglioramenti incrementali aggiunti in ciascuna versione.
+Di seguito è riportata una matrice delle funzioni di sicurezza principali offerte da AEM. Alcune di queste funzioni sono state introdotte nelle versioni precedenti con miglioramenti incrementali aggiunti in ciascuna versione.
 
 + [Note sulla versione di sicurezza](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html#Security)
 
@@ -410,7 +410,7 @@ Di seguito è riportata una matrice delle principali funzioni di sicurezza offer
     </tr>
     <tr>
         <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Supporto per l'autenticazione Adobe IMS</a><br>
- </strong>Esclusivo per Adobe Managed Services (AMS), consente di gestire centralmente l'accesso alle istanze di AEM Author tramite Adobe IMS (Identity Management System).</td>
+ </strong>Esclusivo per Adobe Managed Services (AMS), gestisce centralmente l’accesso alle istanze di AEM Author tramite Adobe IMS (Identity Management System).</td>
         <td> </td>
         <td> </td>
         <td> </td>
@@ -424,7 +424,7 @@ Di seguito è riportata una matrice delle principali funzioni di sicurezza offer
 
 ## Funzioni di Sites
 
-Di seguito è riportata una matrice delle funzioni principali di Sites offerte dall&#39;AEM. Alcune di queste funzioni sono state introdotte nelle versioni precedenti con miglioramenti incrementali aggiunti in ciascuna versione.
+Di seguito è riportata una matrice delle funzioni chiave di Sites offerte da AEM. Alcune di queste funzioni sono state introdotte nelle versioni precedenti con miglioramenti incrementali aggiunti in ciascuna versione.
 
 + [Note sulla versione di AEM Sites](https://helpx.adobe.com/experience-manager/6-5/release-notes/sites.html)
 
@@ -435,7 +435,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
 <table>
     <thead>
         <tr>
-            <td><strong>Funzione Sites</strong></td>
+            <td><strong>Funzione di Sites</strong></td>
             <td>5.6.x</td>
             <td>6,0</td>
             <td>6,1</td>
@@ -492,7 +492,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/spa-overview.html" target="_blank">Editor SPA</a>:</strong>
-            Creare esperienze web personalizzabili utilizzando framework per applicazioni a pagina singola (SPA) basati su React.</td>
+            Crea esperienze web coinvolgenti e personalizzabili utilizzando framework per applicazioni a pagina singola (SPA) basati su React.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -503,7 +503,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
         </tr>
         <tr>
             <td><strong>Sistema di stili:</strong>
-            Aumenta il riutilizzo dei componenti AEM definendone l’aspetto visivo utilizzando il sistema di stili nel contesto.</td>
+            Aumenta il riutilizzo dei componenti di AEM definendone l’aspetto visivo mediante il sistema di stili nel contesto.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -580,7 +580,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
         </tr>
         <tr>
             <td><strong>Servizi contenuto:</strong>
-            Esporta contenuti dall’AEM come JSON per il consumo tra dispositivi e applicazioni.</td>
+            Esporta contenuti da AEM come JSON per l’utilizzo su dispositivi e applicazioni.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -672,7 +672,7 @@ Di seguito è riportata una matrice delle funzioni principali di Sites offerte d
 
 ## Funzioni di Assets
 
-Di seguito è riportata una matrice delle principali funzioni di Assets offerte dall’AEM. Alcune di queste funzioni sono state introdotte nelle versioni precedenti con miglioramenti incrementali aggiunti in ciascuna versione.
+Di seguito è riportata una matrice delle funzioni chiave di Assets offerte da AEM. Alcune di queste funzioni sono state introdotte nelle versioni precedenti con miglioramenti incrementali aggiunti in ciascuna versione.
 
 + [Note sulla versione di AEM Assets](https://helpx.adobe.com/experience-manager/6-5/release-notes/assets.html)
 
@@ -718,7 +718,7 @@ Di seguito è riportata una matrice delle principali funzioni di Assets offerte 
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank">Attività</a> e Gestione flussi di lavoro:</strong>
-            Flussi di lavoro e compiti predefiniti per la revisione e l’approvazione delle risorse digitali che sfruttano i progetti AEM.</td>
+            Flussi di lavoro e attività predefiniti per la revisione e l’approvazione delle risorse digitali che sfruttano AEM Projects.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -784,7 +784,7 @@ Di seguito è riportata una matrice delle principali funzioni di Assets offerte 
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/touch-ui-asset-insights.html" target="_blank">Informazioni sulla risorsa</a>:</strong>
-            Sfrutta Adobe Analytics per acquisire l’interazione dei clienti con le risorse digitali e visualizzarle nell’AEM.</td>
+            Sfrutta Adobe Analytics per acquisire l’interazione dei clienti con le risorse digitali e visualizzarle in AEM.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -828,7 +828,7 @@ Di seguito è riportata una matrice delle principali funzioni di Assets offerte 
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/indesign.html" target="_blank">Integrazione Adobe InDesign Server</a>:</strong>
-            Genera cataloghi di prodotti. Creazione di brochure, volantini e annunci di stampa in base ai modelli InDesign.</td>
+            Genera cataloghi di prodotti. Creazione di brochure, volantini e annunci di stampa in base ai modelli di InDesign.</td>
             <td> </td>
             <td> </td>
             <td>✔</td>
@@ -839,7 +839,7 @@ Di seguito è riportata una matrice delle principali funzioni di Assets offerte 
         </tr>
         <tr>
             <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it" target="_blank">App desktop AEM</a>:</strong>
-            Sincronizza le risorse con il desktop locale per la modifica con i prodotti Creative Suite.
+            Sincronizza le risorse sul desktop locale per l’editing con i prodotti Creative Suite.
             </td>
             <td> </td>
             <td> </td>
@@ -850,8 +850,8 @@ Di seguito è riportata una matrice delle principali funzioni di Assets offerte 
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Libreria immagini Adobe</a>:</strong>
-                <br> librerie Photoshop e Acrobat PDF utilizzate per la manipolazione di file di alta qualità.</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Libreria di imaging Adobe</a>:</strong>
+                <br> librerie Photoshop e Acrobat PDF utilizzate per manipolare file di alta qualità.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -861,7 +861,7 @@ Di seguito è riportata una matrice delle principali funzioni di Assets offerte 
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://www.adobe.com/it/creativecloud/business/enterprise/adobe-asset-link.html" target="_blank">Adobe collegamento risorsa</a>:</strong>
+            <td><strong><a href="https://www.adobe.com/it/creativecloud/business/enterprise/adobe-asset-link.html" target="_blank">Adobe Asset Link</a>:</strong>
             Accedi ad AEM Assets direttamente dalle applicazioni Adobe Create Cloud.</td>
             <td> </td>
             <td> </td>
@@ -873,7 +873,7 @@ Di seguito è riportata una matrice delle principali funzioni di Assets offerte 
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/aem-assets-adobe-stock.html" target="_blank">Integrazione Adobe Stock</a>:</strong>
-            Accedi e utilizza senza problemi le immagini Adobe Stock direttamente dall’AEM.</td>
+            Accedi e utilizza facilmente le immagini Adobe Stock direttamente da AEM.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -885,7 +885,7 @@ Di seguito è riportata una matrice delle principali funzioni di Assets offerte 
     </tbody>
 </table>
 
-### AEM Assets Dynamic Medie
+### Dynamic Media di AEM Assets
 
 ***✔<sup>+</sup> miglioramenti significativi alla funzionalità in questa versione.***
 
@@ -895,7 +895,7 @@ Di seguito è riportata una matrice delle principali funzioni di Assets offerte 
 <table>
     <thead>
         <tr>
-            <td>Funzione Dynamic Medie</td>
+            <td>Funzione elemento multimediale dinamico</td>
             <td>5.6.x</td>
             <td>6,0</td>
             <td>6,1</td>
@@ -964,7 +964,7 @@ Di seguito è riportata una matrice delle principali funzioni di Assets offerte 
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/delivering-dynamic-media-assets.html" target="_blank">Consegna</a>:</strong>
-            Opzioni flessibili per il collegamento o l'incorporamento di contenuti Dynamic Medie e la distribuzione tramite il protocollo HTTP/2.</td>
+            Opzioni flessibili per il collegamento o l’incorporamento di contenuti Dynamic Media e la distribuzione tramite il protocollo HTTP/2.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -974,7 +974,7 @@ Di seguito è riportata una matrice delle principali funzioni di Assets offerte 
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong>Aggiornamento da Scene7 a Dynamic Medie:</strong>
+            <td><strong>Aggiornamento da Scene7 a Dynamic Media:</strong>
             Possibilità di migrare le risorse principali e continuare a utilizzare gli URL S7 esistenti.</td>
             <td> </td>
             <td> </td>
@@ -989,7 +989,7 @@ Di seguito è riportata una matrice delle principali funzioni di Assets offerte 
 
 ## Funzioni di Forms
 
-Di seguito è riportata una matrice delle principali funzioni del componente aggiuntivo AEM Forms offerte dall’AEM. Alcune di queste funzioni sono state introdotte nelle versioni precedenti con miglioramenti incrementali aggiunti in ciascuna versione.
+Di seguito è riportata una matrice delle principali funzioni del componente aggiuntivo AEM Forms offerte da AEM. Alcune di queste funzioni sono state introdotte nelle versioni precedenti con miglioramenti incrementali aggiunti in ciascuna versione.
 
 ***✔<sup>+</sup> miglioramenti significativi alla funzionalità in questa versione.***
 
@@ -1100,7 +1100,7 @@ Di seguito è riportata una matrice delle principali funzioni del componente agg
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/user-guide.html?topic=/experience-manager/6-5/forms/morehelp/integrations.ug.js" target="_blank">Integrazione con il Marketing Cloud</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/user-guide.html?topic=/experience-manager/6-5/forms/morehelp/integrations.ug.js" target="_blank">Integrazione con Marketing Cloud</a>:</strong>
             Integrazione con Adobe Analytics e Adobe Target per migliorare e misurare le esperienze dei clienti.</td>
             <td> </td>
             <td> </td>
@@ -1157,7 +1157,7 @@ Di seguito è riportata una matrice delle principali funzioni del componente agg
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedDocumentSecurity" target="_blank">AEM Forms Document Security</a>:</strong>
-            Accesso sicuro e autorizzazione dei documenti PDF e Office.
+            Accesso sicuro e autorizzazione dei documenti di PDF e Office.
             </td>
             <td> </td>
             <td>✔</td>

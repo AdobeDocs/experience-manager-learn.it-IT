@@ -1,7 +1,7 @@
 ---
 title: AEM Assets Content Hub
 description: Scopri il Content Hub di AEN Assets as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Asset Management, Upload, Marketing Campaigns
 topic: Content Supply Chain, Content Management
 role: User
@@ -10,10 +10,10 @@ doc-type: Catalog
 duration: 60
 last-substantial-update: 2024-11-20T00:00:00Z
 exl-id: ea7b852e-b40d-44ef-ba63-69081e68456e
-source-git-commit: 3a64b985bac3e13755a37064f5e55547b0eb8496
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 7%
+ht-degree: 10%
 
 ---
 
@@ -247,8 +247,8 @@ Esplora la documentazione di prodotto di Content Hub per comprendere e utilizzar
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/deploy-content-hub" title="Distribuire l’hub di contenuti" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/deploy-content-hub./media_13f7f053438556286beebdf1266b2d2bf18469b68.png?width=400&format=png&optimize=medium" alt="Distribuire l’hub di contenuti"
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/deploy-content-hub" title="Implementare Content Hub" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/deploy-content-hub./media_13f7f053438556286beebdf1266b2d2bf18469b68.png?width=400&format=png&optimize=medium" alt="Implementare Content Hub"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -256,7 +256,7 @@ Esplora la documentazione di prodotto di Content Hub per comprendere e utilizzar
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/deploy-content-hub" target="_blank" rel="referrer" title="Distribuire l’hub di contenuti">Distribuisci Content Hub</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/deploy-content-hub" target="_blank" rel="referrer" title="Implementare Content Hub">Distribuisci Content Hub</a>
                     </p>
                     <p class="is-size-6">Scopri come distribuire e attivare Content Hub, fornendo agli utenti vari privilegi, tra cui il caricamento delle risorse e l’accesso come amministratore.</p>
                 </div>
@@ -281,7 +281,7 @@ Esplora la documentazione di prodotto di Content Hub per comprendere e utilizzar
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/frequently-asked-questions-content-hub" target="_blank" rel="referrer" title="Domande frequenti su Content Hub">Domande frequenti su Content Hub</a>
                     </p>
-                    <p class="is-size-6">Risposte ad alcune delle domande più frequenti su Content Hub.</p>
+                    <p class="is-size-6">Ricevi risposte ad alcune delle domande più frequenti su Content Hub.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/frequently-asked-questions-content-hub" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>

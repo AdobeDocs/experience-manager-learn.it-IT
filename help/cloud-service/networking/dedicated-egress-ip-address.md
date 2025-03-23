@@ -1,7 +1,7 @@
 ---
 title: Indirizzo IP di uscita dedicato
-description: Scopri come impostare e utilizzare l’indirizzo IP in uscita dedicato, che consente alle connessioni in uscita dall’AEM di provenire da un IP dedicato.
-version: Cloud Service
+description: Scopri come impostare e utilizzare l’indirizzo IP in uscita dedicato, che consente alle connessioni in uscita da AEM di provenire da un IP dedicato.
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 891
-source-git-commit: 29ac030f3774da2c514525f7cb85f6f48b84369f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Indirizzo IP di uscita dedicato
 
-Scopri come impostare e utilizzare l’indirizzo IP in uscita dedicato, che consente alle connessioni in uscita dall’AEM di provenire da un IP dedicato.
+Scopri come impostare e utilizzare l’indirizzo IP in uscita dedicato, che consente alle connessioni in uscita da AEM di provenire da un IP dedicato.
 
 ## Cos’è l’indirizzo IP in uscita dedicato?
 
@@ -206,18 +206,18 @@ Una volta creato l’indirizzo IP in uscita dedicato, puoi configurarlo utilizza
 
    L’indirizzo IP in uscita dedicato è condiviso da tutti gli ambienti AEM as a Cloud Service del programma.
 
-1. Ora puoi utilizzare l’indirizzo IP in uscita dedicato nel codice AEM e nella configurazione personalizzati. Spesso, quando si utilizza un indirizzo IP in uscita dedicato, i servizi esterni a cui AEM as a Cloud Service si connette sono configurati per consentire solo il traffico da questo indirizzo IP dedicato.
+1. Ora puoi utilizzare l’indirizzo IP in uscita dedicato nel codice e nella configurazione personalizzati di AEM. Spesso, quando si utilizza un indirizzo IP in uscita dedicato, i servizi esterni a cui AEM as a Cloud Service si connette sono configurati per consentire solo il traffico da questo indirizzo IP dedicato.
 
 ## Connessione a servizi esterni tramite indirizzo IP in uscita dedicato
 
-Con l’indirizzo IP in uscita dedicato abilitato, il codice e la configurazione AEM possono utilizzare l’IP in uscita dedicato per effettuare chiamate a servizi esterni. Esistono due tipi di chiamate esterne che l’AEM tratta in modo diverso:
+Con l’indirizzo IP in uscita dedicato abilitato, il codice e la configurazione di AEM possono utilizzare l’IP in uscita dedicato per effettuare chiamate a servizi esterni. Esistono due tipi di chiamate esterne che AEM tratta in modo diverso:
 
 1. Chiamate HTTP/HTTPS a servizi esterni
    + Include le chiamate HTTP/HTTPS effettuate a servizi in esecuzione su porte diverse dalle porte standard 80 o 443.
 1. chiamate non HTTP/HTTPS a servizi esterni
    + Include tutte le chiamate non HTTP, ad esempio le connessioni con i server di posta, i database SQL o i servizi eseguiti su altri protocolli non HTTP/HTTPS.
 
-Le richieste HTTP/HTTPS dall’AEM sulle porte standard (80/443) sono consentite per impostazione predefinita, ma non utilizzano l’indirizzo IP in uscita dedicato se non configurate in modo appropriato come descritto di seguito.
+Per impostazione predefinita, le richieste HTTP/HTTPS provenienti da AEM su porte standard (80/443) sono consentite, ma non utilizzano l’indirizzo IP in uscita dedicato se non sono configurate in modo appropriato come descritto di seguito.
 
 >[!TIP]
 >
@@ -226,7 +226,7 @@ Le richieste HTTP/HTTPS dall’AEM sulle porte standard (80/443) sono consentite
 
 ### HTTP/HTTPS
 
-Quando si creano connessioni HTTP/HTTPS dall’AEM, quando si utilizza un indirizzo IP in uscita dedicato, le connessioni HTTP/HTTPS vengono automaticamente escluse dall’AEM utilizzando l’indirizzo IP in uscita dedicato. Per supportare le connessioni HTTP/HTTPS non è necessario alcun codice o configurazione aggiuntivi.
+Durante la creazione di connessioni HTTP/HTTPS da AEM, quando si utilizza un indirizzo IP in uscita dedicato, le connessioni HTTP/HTTPS vengono automaticamente escluse da AEM utilizzando l’indirizzo IP in uscita dedicato. Per supportare le connessioni HTTP/HTTPS non è necessario alcun codice o configurazione aggiuntivi.
 
 #### Esempi di codice
 
@@ -246,7 +246,7 @@ Quando si creano connessioni HTTP/HTTPS dall’AEM, quando si utilizza un indiri
 
 ### Connessioni non HTTP/HTTPS a servizi esterni
 
-Durante la creazione di connessioni non HTTP/HTTPS (ad es. SQL, SMTP e così via) dall’AEM, la connessione deve essere effettuata attraverso uno speciale nome host fornito dall’AEM.
+Durante la creazione di connessioni non HTTP/HTTPS (ad es. SQL, SMTP e così via) da AEM, la connessione deve essere effettuata tramite uno speciale nome host fornito da AEM.
 
 | Nome variabile | Utilizzare | Codice Java™ | Configurazione OSGi |
 | - |  - | - | - |
@@ -266,7 +266,7 @@ Le connessioni ai servizi esterni vengono quindi chiamate tramite `AEM_PROXY_HOS
       <a  href="./examples/sql-datasourcepool.md"><img alt="Connessione SQL tramite DataSourcePool JDBC" src="./assets//code-examples__sql-osgi.png"/></a>
       <div><strong><a href="./examples/sql-datasourcepool.md">Connessione SQL tramite DataSourcePool JDBC</a></strong></div>
       <p>
-            Esempio di codice Java™ connessione a database SQL esterni tramite la configurazione del pool di origini dati JDBC dell'AEM.
+            Esempio di codice Java™ di connessione a database SQL esterni tramite la configurazione del pool di origini dati JDBC di AEM.
       </p>
     </td>   
    <td>

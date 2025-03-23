@@ -1,23 +1,23 @@
 ---
-title: Come effettuare una chiamata al servizio web dal modulo HTML5
+title: Come effettuare chiamate al servizio web da HTML5 form
 description: passaggi per configurare il servizio web dal modulo HTML5
 type: Troubleshooting
 role: Developer
 level: Intermediate
-version: 6.5
+version: Experience Manager 6.5
 feature: Mobile Forms
 topic: Development
 index: y
 exl-id: 28fa5597-bab5-4fb9-8d30-e9fd41820749
 duration: 56
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '41'
 ht-degree: 0%
 
 ---
 
-# Come effettuare una chiamata al servizio web dal modulo HTML5
+# Come effettuare chiamate al servizio web da HTML5 form
 
 *Questo video illustra la procedura per effettuare chiamate al servizio Web dal modulo HTML5.*
 

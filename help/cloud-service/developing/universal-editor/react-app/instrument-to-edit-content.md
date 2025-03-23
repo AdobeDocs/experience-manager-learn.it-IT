@@ -1,7 +1,7 @@
 ---
 title: App Instrument React per modificare i contenuti tramite Editor universale
 description: Scopri come dotare l’app React per modificare il contenuto utilizzando l’editor universale.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developer Tools, Headless
 topic: Development, Content Management
 role: Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15359
 thumbnail: KT-15359.png
 exl-id: 2a25cd44-cbd1-465e-ae3f-d3876e915114
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1606'
 ht-degree: 0%
@@ -87,7 +87,7 @@ Per questa esercitazione, utilizziamo l’approccio tag Script.
 
 Per connettere l&#39;app WKND Teams React _all&#39;origine di contenuto_ per la modifica, è necessario fornire i metadati della connessione. Il servizio Universal Editor utilizza questi metadati per stabilire una connessione con l&#39;origine di contenuto.
 
-I metadati della connessione sono memorizzati come `<meta>` tag nel file HTML. La sintassi per i metadati della connessione è la seguente:
+I metadati della connessione sono memorizzati come tag `<meta>` nel file HTML. La sintassi per i metadati della connessione è la seguente:
 
 ```html
 <meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
@@ -129,7 +129,7 @@ export default App;
 
 ## Aggiungi metadati - configurazione del servizio Universal Editor locale
 
-Al posto del servizio Universal Editor ospitato dagli Adobi, viene utilizzata una copia locale del servizio Universal Editor per lo sviluppo locale. Il servizio locale associa l’editor universale e l’SDK dell’AEM; pertanto, aggiungiamo i metadati del servizio dell’editor universale locale all’app WKND Teams React.
+Al posto del servizio Universal Editor ospitato da Adobe, viene utilizzata una copia locale del servizio Universal Editor per lo sviluppo locale. Il servizio locale associa Universal Editor e AEM SDK, quindi aggiungiamo i metadati del servizio Universal Editor locale all’app WKND Teams React.
 
 Queste impostazioni di configurazione vengono memorizzate anche come tag `<meta>` nel file HTML. La sintassi per i metadati del servizio Universal Editor locale è la seguente:
 
@@ -178,11 +178,11 @@ export default App;
 
 ## Strumentazione dei componenti React
 
-Per modificare il contenuto dell&#39;app WKND Teams React, ad esempio _titolo team e descrizione team_, è necessario dotare di strumenti i componenti React. La strumentazione comporta l&#39;aggiunta di attributi di dati rilevanti (`data-aue-*`) agli elementi HTML che si desidera rendere modificabili utilizzando l&#39;Editor universale. Per ulteriori informazioni sugli attributi dei dati, vedere [Attributi e tipi](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types).
+Per modificare il contenuto dell&#39;app WKND Teams React, ad esempio _titolo team e descrizione team_, è necessario dotare di strumenti i componenti React. La strumentazione comporta l&#39;aggiunta di attributi di dati rilevanti (`data-aue-*`) agli elementi di HTML che si desidera rendere modificabili utilizzando l&#39;Editor universale. Per ulteriori informazioni sugli attributi dei dati, vedere [Attributi e tipi](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types).
 
 ### Definire gli elementi modificabili
 
-Iniziamo definendo gli elementi che desideri modificare utilizzando l’Editor universale. Nell’app WKND Teams React, il titolo e la descrizione del team sono memorizzati nel frammento di contenuto del team in AEM, che rappresenta quindi i candidati migliori per la modifica.
+Iniziamo definendo gli elementi che desideri modificare utilizzando l’Editor universale. Nell’app WKND Teams React, il titolo e la descrizione del team sono memorizzati nel frammento di contenuto Team in AEM, che rappresenta quindi i candidati migliori per la modifica.
 
 Strumentalizziamo il componente React `Teams` per rendere modificabili il titolo e la descrizione del team.
 
@@ -220,9 +220,9 @@ In sintesi, le modifiche di cui sopra contrassegnano gli elementi titolo e descr
 
 ### Definire i dettagli delle risorse AEM
 
-Per salvare nuovamente in AEM il contenuto modificato e caricarlo nella barra delle proprietà, è necessario fornire i dettagli della risorsa AEM all’editor universale.
+Per salvare di nuovo il contenuto modificato in AEM e anche per caricarlo nella barra delle proprietà, devi fornire i dettagli della risorsa AEM all’editor universale.
 
-In questo caso, la risorsa AEM è il percorso del frammento di contenuto del team. Aggiungere quindi i dettagli della risorsa al componente React `Teams` al livello superiore `<div>`.
+In questo caso, la risorsa AEM è il percorso del frammento di contenuto del team. Pertanto, aggiungiamo i dettagli della risorsa al componente React `Teams` al livello superiore `<div>`.
 
 1. Aggiornare il file `src/components/Teams.js` per aggiungere gli attributi `data-aue-resource`, `data-aue-type` e `data-aue-label` all&#39;elemento `<div>` di primo livello.
 
@@ -256,7 +256,7 @@ In questo caso, la risorsa AEM è il percorso del frammento di contenuto del tea
 
    ![Editor universale - Team WKND modificabile](./assets/universal-editor-wknd-teams-team-editable.png)
 
-1. Per correggere l&#39;errore 401 Unauthorized, è necessario fornire i dettagli di autenticazione dell&#39;SDK AEM locale nell&#39;editor universale utilizzando l&#39;opzione **Intestazioni di autenticazione** nell&#39;editor universale. Come SDK AEM locale, impostare il valore su `Basic YWRtaW46YWRtaW4=` per le credenziali `admin:admin`.
+1. Per correggere l&#39;errore 401 Unauthorized, è necessario fornire i dettagli di autenticazione AEM SDK locale nell&#39;editor universale utilizzando l&#39;opzione **Intestazioni di autenticazione** nell&#39;editor universale. Come SDK AEM locale, impostare il valore su `Basic YWRtaW46YWRtaW4=` per le credenziali `admin:admin`.
 
    ![Editor universale - Aggiunta intestazioni di autenticazione](./assets/universal-editor-wknd-teams-team-editable-auth.png)
 
@@ -323,7 +323,7 @@ Come sopra, il recupero e il salvataggio dei contenuti vengono eseguiti dal serv
 
 ### Definire l’aggiunta e l’eliminazione di contenuti
 
-Finora hai reso modificabile il contenuto esistente, ma cosa succede se desideri aggiungere nuovo contenuto? Aggiungiamo la possibilità di aggiungere o eliminare membri del gruppo al team WKND utilizzando l’editor universale. Pertanto, gli autori dei contenuti non devono necessariamente rivolgersi all’AEM per aggiungere o eliminare membri del gruppo.
+Finora hai reso modificabile il contenuto esistente, ma cosa succede se desideri aggiungere nuovo contenuto? Aggiungiamo la possibilità di aggiungere o eliminare membri del gruppo al team WKND utilizzando l’editor universale. Pertanto, gli autori dei contenuti non devono passare all’AEM per aggiungere o eliminare membri del gruppo.
 
 Tuttavia, per ricapitolare rapidamente, i membri del team WKND sono memorizzati come `Person` frammenti di contenuto in AEM e sono associati al frammento di contenuto del team utilizzando la proprietà `teamMembers`. Per rivedere la definizione del modello in AEM, visita [il mio progetto](http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf/my-project).
 
@@ -413,7 +413,7 @@ Tuttavia, per ricapitolare rapidamente, i membri del team WKND sono memorizzati 
 
 #### Sotto il cofano
 
-Le operazioni di aggiunta ed eliminazione dei contenuti vengono eseguite dal servizio Universal Editor locale. La richiesta POST a `/add` o `/remove` con un payload dettagliato viene inviata al servizio Universal Editor locale per l&#39;aggiunta o l&#39;eliminazione del contenuto all&#39;AEM.
+Le operazioni di aggiunta ed eliminazione dei contenuti vengono eseguite dal servizio Universal Editor locale. La richiesta POST a `/add` o `/remove` con un payload dettagliato viene effettuata al servizio Universal Editor locale per aggiungere o eliminare il contenuto in AEM.
 
 ## File di soluzione
 

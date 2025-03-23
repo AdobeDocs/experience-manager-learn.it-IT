@@ -1,14 +1,14 @@
 ---
-title: Frammenti di contenuto dell’autore - Concetti avanzati di AEM headless - GraphQL
+title: Creazione di frammenti di contenuto - Concetti avanzati di AEM Headless - GraphQL
 description: In questo capitolo di Concetti avanzati di Adobe Experience Manager (AEM) Headless, scopri come utilizzare le schede, la data e l’ora, gli oggetti JSON e i riferimenti ai frammenti nei frammenti di contenuto. Imposta i criteri delle cartelle per limitare i modelli per frammenti di contenuto che possono essere inclusi.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 998d3678-7aef-4872-bd62-0e6ea3ff7999
 duration: 609
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '2931'
 ht-degree: 1%
@@ -46,7 +46,7 @@ Installa un pacchetto AEM contenente diverse cartelle e immagini di esempio util
 
 ## Creare cartelle e impostare limiti utilizzando i criteri delle cartelle
 
-Dalla home page dell&#39;AEM, selezionare **Assets** > **File** > **WKND Shared** > **English**. Qui puoi vedere le varie categorie di Frammenti di contenuto, tra cui Avventure e Collaboratori.
+Dalla home page di AEM, seleziona **Assets** > **File** > **WKND Shared** > **Inglese**. Qui puoi vedere le varie categorie di Frammenti di contenuto, tra cui Avventure e Collaboratori.
 
 ### Creare cartelle {#create-folders}
 

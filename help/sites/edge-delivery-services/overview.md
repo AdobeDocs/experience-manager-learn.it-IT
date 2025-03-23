@@ -1,7 +1,7 @@
 ---
-title: Video sui Edge Delivery Services
-description: Scopri come rendere i siti web veloci con i Edge Delivery Services.
-version: Cloud Service
+title: Video su Edge Delivery Services
+description: Scopri come rendere veloci i siti web con Edge Delivery Services.
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -11,20 +11,20 @@ doc-type: Catalog
 duration: 660
 last-substantial-update: 2024-03-20T00:00:00Z
 exl-id: 4f08bc07-0c9c-42fc-af42-3d51af9f37c4
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 16%
 
 ---
 
-# Video sui Edge Delivery Services
+# Video su Edge Delivery Services
 
-Scopri come rendere i siti web veloci con i Edge Delivery Services.
+Scopri come rendere veloci i siti web con Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427989/?learn=on)
 
-Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/overview) per informazioni complete sui Edge Delivery Services e sulle relative funzionalità.
+Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/overview) per informazioni complete su Edge Delivery Services e sulle sue funzionalità.
 
 
 ## Tutorial per sviluppatori di Edge Delivery Services
@@ -48,8 +48,8 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" title="Tutorial sull’authoring basato su documenti e sui Edge Delivery Services" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial./media_18d1c2a9ecd6557f129e41b42a03a8dfbff1e27e9.png?width=400&format=png&optimize=medium" alt="Tutorial sull’authoring basato su documenti e sui Edge Delivery Services"
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" title="Authoring basato su documenti e tutorial su Edge Delivery Services" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial./media_18d1c2a9ecd6557f129e41b42a03a8dfbff1e27e9.png?width=400&format=png&optimize=medium" alt="Authoring basato su documenti e tutorial su Edge Delivery Services"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -57,9 +57,9 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" target="_blank" rel="referrer" title="Tutorial sull’authoring basato su documenti e sui Edge Delivery Services">Esercitazione su authoring e Edge Delivery Services basati su documenti</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" target="_blank" rel="referrer" title="Authoring basato su documenti e tutorial su Edge Delivery Services">Authoring basato su documenti e tutorial su Edge Delivery Services</a>
                     </p>
-                    <p class="is-size-6">Scopri come creare siti web di Edge Delivery Services creati utilizzando l’authoring basato su documenti.</p>
+                    <p class="is-size-6">Scopri come creare siti web Edge Delivery Services creati utilizzando l’authoring basato su documenti.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Avvia l'esercitazione</span>
@@ -71,8 +71,8 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./developing/universal-editor/0-overview.md" title="Tutorial su Editor universale e Edge Delivery Services" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="developing/universal-editor/assets/0-overview/hero.png" alt="Tutorial su Editor universale e Edge Delivery Services"
+                    <a href="./developing/universal-editor/0-overview.md" title="Tutorial su Universal Editor e Edge Delivery Services" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="developing/universal-editor/assets/0-overview/hero.png" alt="Tutorial su Universal Editor e Edge Delivery Services"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -80,9 +80,9 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./developing/universal-editor/0-overview.md" target="_blank" rel="referrer" title="Tutorial su Editor universale e Edge Delivery Services">Esercitazione Editor universale e Edge Delivery Services</a>
+                        <a href="./developing/universal-editor/0-overview.md" target="_blank" rel="referrer" title="Tutorial su Universal Editor e Edge Delivery Services">Esercitazione su Universal Editor e Edge Delivery Services</a>
                     </p>
-                    <p class="is-size-6">Scopri le nozioni di base sulla creazione di siti web di Edge Delivery Services creati con Universal Editor.</p>
+                    <p class="is-size-6">Scopri le nozioni di base sulla creazione di siti web Edge Delivery Services creati con Universal Editor.</p>
                 </div>
                 <a href="./developing/universal-editor/0-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Avvia l'esercitazione</span>
@@ -120,7 +120,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./developing/prerequisites.md" title="Prerequisiti">Prerequisiti per gli sviluppatori</a>
             </p>
-            <p class="is-size-6">Quello di cui hai bisogno per iniziare a sviluppare con i Edge Delivery Services.</p>
+            <p class="is-size-6">Cosa è necessario per iniziare a sviluppare con Edge Delivery Services.</p>
             <a href="./developing/prerequisites.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -152,7 +152,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./developing/aem-boilerplate.md" title="Usa modello boilerplate">Piastra riscaldante AEM</a>
             </p>
-            <p class="is-size-6">Utilizza il modello standard AEM per configurare l’archivio del codice.</p>
+            <p class="is-size-6">Utilizza il modello AEM Boilerplate per impostare l’archivio del codice.</p>
             <a href="./developing/aem-boilerplate.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -231,10 +231,10 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./developing/preview-and-publish.md" title="Anteprima e contenuti Publish"
+            <a href="./developing/preview-and-publish.md" title="Anteprima e pubblicazione dei contenuti"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Anteprima e contenuti Publish">
+                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Anteprima e pubblicazione dei contenuti">
             </a>
           </figure>
         </div>
@@ -243,9 +243,9 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/preview-and-publish.md" title="Anteprima e contenuti Publish">Anteprima e pubblicazione del contenuto</a>
+              <a href="./developing/preview-and-publish.md" title="Anteprima e pubblicazione dei contenuti">Anteprima e pubblicazione del contenuto</a>
             </p>
-            <p class="is-size-6">Visualizzare in anteprima e pubblicare i contenuti utilizzando AEM Sidekick.</p>
+            <p class="is-size-6">Visualizzare in anteprima e pubblicare i contenuti tramite AEM Sidekick.</p>
             <a href="./developing/preview-and-publish.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -275,9 +275,9 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minuto</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/sidekick.md" title="Utilizzare Sidekick">Utilizza il AEM Sidekick</a>
+              <a href="./developing/sidekick.md" title="Utilizzare Sidekick">Utilizza AEM Sidekick</a>
             </p>
-            <p class="is-size-6">Scopri come utilizzare il AEM Sidekick.</p>
+            <p class="is-size-6">Scopri come utilizzare AEM Sidekick.</p>
             <a href="./developing/sidekick.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">

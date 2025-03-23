@@ -2,7 +2,7 @@
 title: Colonne personalizzate della griglia nella console Frammenti di contenuto
 description: Scopri come aggiungere una colonna della griglia personalizzata alla console Frammenti di contenuto.
 feature: Developer Tools, Content Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -12,7 +12,7 @@ doc-type: article
 last-substantial-update: 2023-06-07T00:00:00Z
 exl-id: 87143cf9-e932-4ad6-afe2-cce093c520f4
 duration: 198
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 Questo esempio si estende al punto di estensione `contentFragmentGrid` per aggiungere una colonna personalizzata alla console Frammenti di contenuto.
 
-| Interfaccia utente AEM estesa | Punto di estensione |
+| Interfaccia utente di AEM estesa | Punto di estensione |
 | ------------------------ | --------------------- | 
 | [Console Frammenti di contenuto](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Colonne griglia](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/) |
 
@@ -45,7 +45,7 @@ In questo esempio viene utilizzata la libreria [Luxon](https://moment.github.io/
 
 `ExtensionRegistration.js`, mappato alla route index.html, è il punto di ingresso per l&#39;estensione AEM e definisce:
 
-+ La posizione dell&#39;estensione si inietta (`contentFragmentGrid`) nell&#39;esperienza di creazione AEM
++ La posizione dell&#39;estensione si inserisce (`contentFragmentGrid`) nell&#39;esperienza di authoring di AEM
 + Definizione della colonna personalizzata nella funzione `getColumns()`
 + I valori di ogni colonna personalizzata, per riga
 
@@ -204,13 +204,13 @@ Esempio di JSON per frammenti di contenuto disponibile come elemento del paramet
 }
 ```
 
-Se sono necessari altri dati per compilare la colonna personalizzata, è possibile effettuare richieste HTTP all’autore AEM per recuperare i dati.
+Se sono necessari altri dati per compilare la colonna personalizzata, è possibile effettuare richieste HTTP ad AEM Author per recuperare i dati.
 
 >[!IMPORTANT]
 >
-> Assicurati che l&#39;istanza di authoring dell&#39;AEM sia configurata in modo da consentire [richieste tra origini diverse](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) dalle origini su cui è in esecuzione l&#39;app AppBuilder. Le origini consentite includono `https://localhost:9080`, l&#39;origine dello stage di AppBuilder e l&#39;origine della produzione di AppBuilder.
+> Assicurati che l&#39;istanza Autore AEM sia configurata per consentire [richieste tra origini diverse](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) dalle origini su cui è in esecuzione l&#39;app AppBuilder. Le origini consentite includono `https://localhost:9080`, l&#39;origine dello stage di AppBuilder e l&#39;origine della produzione di AppBuilder.
 >
-> In alternativa, l&#39;estensione può chiamare un&#39;azione [AppBuilder](../../runtime-action.md) personalizzata che invia la richiesta all&#39;autore AEM per conto dell&#39;estensione.
+> In alternativa, l&#39;estensione può chiamare un&#39;azione [AppBuilder](../../runtime-action.md) personalizzata che effettua la richiesta ad AEM Author per conto dell&#39;estensione.
 
 
 ```javascript

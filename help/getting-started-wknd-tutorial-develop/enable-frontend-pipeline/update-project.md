@@ -1,7 +1,7 @@
 ---
 title: Aggiorna il progetto AEM full stack per utilizzare la pipeline front-end
 description: Scopri come aggiornare il progetto AEM full stack per abilitarlo per la pipeline front-end, in modo da creare e distribuire solo gli artefatti front-end.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: c4a961fb-e440-4f78-b40d-e8049078b3c0
 duration: 307
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -37,7 +37,7 @@ In questo capitolo vengono apportate modifiche di configurazione al progetto __W
 Questo è un tutorial in più parti e si presume che tu abbia rivisto il modulo [&#39;ui.frontend&#39;](./review-uifrontend-module.md).
 
 
-## Modifiche al progetto full stack AEM
+## Modifiche al progetto full stack di AEM
 
 Per l’esecuzione di un test, sono disponibili tre modifiche di configurazione relative al progetto e una modifica di stile da distribuire, per un totale quindi di quattro modifiche specifiche nel progetto WKND per abilitarlo per il contratto della pipeline front-end.
 
@@ -176,16 +176,16 @@ Per l’esecuzione di un test, sono disponibili tre modifiche di configurazione 
 
    >[!TIP]
    >
-   >    Vedi [SiteConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.aem.wcm.site.manager.config.SiteConfig/.content.xml) completo nel __progetto WKND Sites dell&#39;AEM__.
+   >    Vedi [SiteConfig](https://github.com/adobe/aem-guides-wknd/blob/feature/frontend-pipeline/ui.content/src/main/content/jcr_root/conf/wknd/_sling_configs/com.adobe.aem.wcm.site.manager.config.SiteConfig/.content.xml) completo nel __progetto AEM WKND Sites__.
 
-1. Uno o più stili cambiano per la distribuzione tramite pipeline front-end per un&#39;esecuzione dei test. Stiamo cambiando `text-color` in rosso Adobe (o puoi sceglierne uno tuo) aggiornando `ui.frontend/src/main/webpack/base/sass/_variables.scss`.
+1. Uno o più stili cambiano per la distribuzione tramite pipeline front-end per un&#39;esecuzione dei test. Stiamo cambiando `text-color` in rosso Adobe (oppure puoi sceglierne uno tuo) aggiornando `ui.frontend/src/main/webpack/base/sass/_variables.scss`.
 
    ```css
        $black:     #a40606;
        ...
    ```
 
-Infine, invia queste modifiche all’archivio Git di Adobe del programma.
+Infine, invia queste modifiche all’archivio Git Adobe del programma.
 
 
 >[!AVAILABILITY]

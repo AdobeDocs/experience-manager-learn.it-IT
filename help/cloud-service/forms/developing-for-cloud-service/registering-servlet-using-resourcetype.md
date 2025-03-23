@@ -5,13 +5,13 @@ solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Developer Tools
 jira: KT-14581
 duration: 90
 exl-id: 2a33a9a9-1eef-425d-aec5-465030ee9b74
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 2%
@@ -24,7 +24,7 @@ I servlet di binding per percorsi presentano diversi svantaggi rispetto all’as
 
 * I servlet associati al percorso non possono essere controllati per l’accesso utilizzando gli ACL predefiniti dell’archivio JCR
 * I servlet associati al percorso possono essere registrati solo in un percorso e non in un tipo di risorsa (ovvero senza gestione dei suffissi)
-* Se un servlet associato al percorso non è attivo, ad esempio se il bundle manca o non viene avviato, un POST potrebbe produrre risultati imprevisti. in genere viene creato un nodo in `/bin/xyz` che successivamente sovrappone l&#39;associazione del percorso dei servlet
+* Se un servlet associato al percorso non è attivo, ad esempio se il bundle manca o non viene avviato, un POST potrebbe causare risultati imprevisti. in genere viene creato un nodo in `/bin/xyz` che successivamente sovrappone l&#39;associazione del percorso dei servlet
 la mappatura non è trasparente per uno sviluppatore che guarda solo l’archivio
 Dati questi inconvenienti, si consiglia di associare i servlet ai tipi di risorse anziché ai percorsi
 
@@ -111,7 +111,7 @@ Il percorso `/content/fetchchoices/jcr:content` è il percorso della risorsa ed 
 1. Crea una cartella denominata `fetchchoices` in `\aem-banking-application\ui.content\src\main\content\jcr_root\content`
 1. Fare clic con il pulsante destro del mouse sulla cartella `fetchchoices` e selezionare `repo | Get Command` (questa voce di menu è impostata in un capitolo precedente di questa esercitazione).
 
-Questo dovrebbe sincronizzare il nodo dall’AEM al progetto AEM locale.
+Questo dovrebbe sincronizzare questo nodo da AEM al progetto AEM locale.
 
 La struttura del progetto AEM deve essere simile alla seguente
 ![risolutore risorse](assets/mapping-servlet-resource.png)

@@ -2,14 +2,14 @@
 title: Modifica le impostazioni di configurazione di Data Source.
 description: Modifica il nome host e altre impostazioni in Impostazioni configurazione Data Source.
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 6c63787c-e511-4764-9a03-2c85c394bcc0
 last-substantial-update: 2019-06-09T00:00:00Z
 duration: 28
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Con il rilascio di AEM Forms 6.5, ora puoi modificare facilmente le proprietà d
 
 Le schermate seguenti mostrano le impostazioni di configurazione dell’origine dati in AEM Forms 6.4 e Forms 6.5
 
-**Configurazione Source dati nell&#39;AEM 6.4**
+Configurazione di **Data Source in AEM 6.4**
 
 Configurazione ![64DataSource](assets/64release.gif)
 **Configurazione di Data Source modificabile in AEM 6.5 e versioni successive**

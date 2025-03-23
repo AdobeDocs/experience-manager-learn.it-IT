@@ -1,21 +1,21 @@
 ---
-title: Variabili nel flusso di lavoro dell’AEM[Parte4]
-description: Utilizzo di variabili di tipo XML, JSON, ArrayList, Document in un flusso di lavoro AEM
-version: 6.5
+title: Variabili nel flusso di lavoro di AEM [Part4]
+description: Utilizzo di variabili di tipo XML, JSON, ArrayList, Document in un flusso di lavoro di AEM
+version: Experience Manager 6.5
 topic: Development
 feature: Adaptive Forms, Workflow
 role: Developer
 level: Beginner
 exl-id: 269e43f7-24cf-4786-9439-f51bfe91d39c
 duration: 102
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
-# Variabile ArrayList nel flusso di lavoro AEM
+# Variabile ArrayList nel flusso di lavoro di AEM
 
 Variabili di tipo ArrayList sono state introdotte in AEM Forms 6.5. Un caso d’uso comune per l’utilizzo della variabile ArrayList consiste nel definire route personalizzate da utilizzare in AssignTask.
 
@@ -73,7 +73,7 @@ Una volta inizializzata la variabile CustomRoutes ArrayList con i valori dei dat
 Per testare questo flusso di lavoro sul sistema, segui i passaggi seguenti
 
 * Scaricare e salvare il file ArrayListVariable.zip nel file system
-* [Importa il file zip](assets/arraylistvariable.zip) tramite Gestione pacchetti AEM
+* [Importa il file zip](assets/arraylistvariable.zip) tramite Gestione pacchetti di AEM
 * [Apri il modulo TravelExpenseReport](http://localhost:4502/content/dam/formsanddocuments/helpx/travelexpensereport/jcr:content?wcmmode=disabled)
 * Inserire un paio di spese e i nomi dei due responsabili
 * Premi il pulsante Invia

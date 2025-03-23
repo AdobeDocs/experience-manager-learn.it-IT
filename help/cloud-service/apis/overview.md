@@ -1,7 +1,7 @@
 ---
 title: Panoramica delle API di AEM
 description: Scopri i diversi tipi di API in Adobe Experience Manager (AEM) e quali API scegliere per l’integrazione.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
 role: Architect, Developer, Leader
@@ -12,7 +12,7 @@ thumbnail: KT-17425.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
-source-git-commit: e4cf47e14fa7dfc39ab4193d35ba9f604eabf99f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 2%
@@ -58,7 +58,7 @@ Quando selezioni un’API per l’integrazione, considera i seguenti fattori:
 
 Confrontiamo JSON Web Token (JWT) e OAuth 2.0, due meccanismi di autenticazione comuni utilizzati nelle API di AEM:
 
-| Funzione obsoleta | Token web JSON (JWT) | OAuth 2.0 |
+| Funzione | Token web JSON (JWT) | OAuth 2.0 |
 | --- | --- | --- |
 | Utilizzato in | API RESTful | API AEM basate su OpenAPI (non supportate nelle API RESTful o di altro tipo) |
 | Scopo | Autenticazione del servizio | Autenticazione utente o servizio |

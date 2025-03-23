@@ -1,14 +1,14 @@
 ---
-title: Creare modelli per frammenti di contenuto - Concetti avanzati di AEM headless - GraphQL
-description: In questo capitolo di Concetti avanzati di Adobe Experience Manager (AEM) Headless, scopri come modificare un modello per frammenti di contenuto aggiungendo segnaposto per schede, data e ora, oggetti JSON, riferimenti a frammenti e riferimenti a contenuti.
-version: Cloud Service
+title: 'Creare modelli per frammenti di contenuto: concetti avanzati di AEM Headless - GraphQL'
+description: In questo capitolo di Concetti avanzati di Adobe Experience Manager (AEM) Headless, scopri come modificare un modello per frammenti di contenuto aggiungendo segnaposto di tabulazione, data e ora, oggetti JSON, riferimenti a frammenti e riferimenti a contenuti.
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
 duration: 757
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 1%
@@ -236,5 +236,5 @@ Congratulazioni Ora hai aggiunto le schede, hai utilizzato i tipi di dati di ogg
 
 Il prossimo capitolo di questa serie tratta [la creazione di frammenti di contenuto](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md) dai modelli creati in questo capitolo. Scopri come utilizzare i tipi di dati introdotti in questo capitolo e creare criteri per cartelle per limitare quali modelli per frammenti di contenuto possono essere creati in una cartella di risorse.
 
-Anche se è opzionale per questo tutorial, assicurati di pubblicare tutti i contenuti in situazioni di produzione reali. Per una panoramica degli ambienti Author e Publish nell’AEM, consulta
-[Serie di video headless AEM e GraphQL](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md).
+Anche se è opzionale per questo tutorial, assicurati di pubblicare tutti i contenuti in situazioni di produzione reali. Per una panoramica degli ambienti di authoring e pubblicazione in AEM, consulta
+[Serie video AEM Headless e GraphQL](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md).

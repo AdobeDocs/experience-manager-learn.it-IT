@@ -1,16 +1,16 @@
 ---
 title: Credenziali del servizio AEM
-description: Scarica le credenziali del servizio dal Developer Console dell’AEM.
+description: Scarica le credenziali del servizio dal Developer Console di AEM.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-9980
 exl-id: 4c5173f1-d57d-43ac-83e6-399ce4ead203
 duration: 453
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Credenziali servizio
 
-Le integrazioni con AEM as a Cloud Service devono essere in grado di eseguire l’autenticazione all’AEM in modo sicuro. Il Developer Console dell’AEM genera le Credenziali di servizio, che vengono utilizzate da applicazioni, sistemi e servizi esterni per interagire in modo programmatico con i servizi AEM Author o Publish tramite HTTP.
+Le integrazioni con AEM as a Cloud Service devono essere in grado di autenticare in modo sicuro in AEM. Il Developer Console di AEM genera le Credenziali di servizio, utilizzate da applicazioni, sistemi e servizi esterni per interagire in modo programmatico con i servizi di authoring o pubblicazione di AEM tramite HTTP.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 

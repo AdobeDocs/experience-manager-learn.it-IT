@@ -1,8 +1,8 @@
 ---
-title: Estensione modale dell’interfaccia utente AEM
-description: Scopri come creare un’estensione modale dell’interfaccia utente dell’AEM.
+title: Estensione modale dell’interfaccia utente di AEM
+description: Scopri come creare un’estensione modale dell’interfaccia utente di AEM.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: e7376eaf-f7d7-48fe-9387-a0e4089806c2
 duration: 127
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 # Finestra modale di estensione
 
-![Estensione dell&#39;interfaccia utente AEM modale](./assets/modal/modal.png){align="center"}
+![Estensione modale dell&#39;interfaccia utente di AEM](./assets/modal/modal.png){align="center"}
 
-L&#39;estensione modale dell&#39;interfaccia utente AEM consente di collegare un&#39;interfaccia utente personalizzata alle estensioni dell&#39;interfaccia utente AEM.
+L’estensione modale dell’interfaccia utente di AEM consente di allegare un’interfaccia utente personalizzata alle estensioni dell’interfaccia utente di AEM.
 
 I moduli sono applicazioni React basate su [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/) e possono creare qualsiasi interfaccia utente personalizzata richiesta dall&#39;estensione, tra cui:
 
@@ -185,7 +185,7 @@ export default function MyModal() {
 
 ## Chiudi il modale
 
-![Pulsante di chiusura modale dell&#39;estensione dell&#39;interfaccia utente AEM](./assets/modal/close.png){align="center"}
+![Pulsante di chiusura modale dell&#39;estensione dell&#39;interfaccia utente di AEM](./assets/modal/close.png){align="center"}
 
 I moduli devono fornire il proprio stretto controllo. A tale scopo, richiamare `guestConnection.host.modal.close()`.
 

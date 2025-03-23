@@ -1,7 +1,7 @@
 ---
-title: Best practice per le regole del filtro del traffico, incluse le regole WAF
-description: Scopri le best practice consigliate per le regole del filtro del traffico, incluse le regole WAF.
-version: Cloud Service
+title: Best practice per le regole del filtro del traffico, incluse le regole di WAF
+description: Scopri le best practice consigliate per le regole del filtro del traffico, incluse le regole di WAF.
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
 role: Admin, Architect
@@ -12,16 +12,16 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 4a7acdd2-f442-44ee-8560-f9cb64436acf
 duration: 170
-source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
 
 ---
 
-# Best practice per le regole del filtro del traffico, incluse le regole WAF
+# Best practice per le regole del filtro del traffico, incluse le regole di WAF
 
-Scopri le best practice consigliate per le regole del filtro del traffico, incluse le regole WAF. È importante notare che le best practice descritte in questo articolo non sono esaustive e non intendono sostituirsi alle politiche e alle procedure di sicurezza aziendali.
+Scopri le best practice consigliate per le regole del filtro del traffico, incluse le regole di WAF. È importante notare che le best practice descritte in questo articolo non sono esaustive e non intendono sostituirsi alle politiche e alle procedure di sicurezza aziendali.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425408?quality=12&learn=on)
 
@@ -89,11 +89,11 @@ data:
 >
 >Per l&#39;ambiente di produzione, collaborare con il team di sicurezza Web per determinare i valori appropriati per `rateLimit`
 
-## Best practice per le regole WAF
+## Best practice per le regole di WAF
 
-Una volta che WAF è concesso in licenza e abilitato per il programma, i flag WAF corrispondenti al traffico vengono visualizzati nei grafici e nei registri delle richieste, anche se non sono stati dichiarati in una regola. Quindi, sei sempre a conoscenza di traffico potenzialmente nuovo dannoso e può creare regole in base alle esigenze. Esaminare i flag WAF che non si riflettono nelle regole dichiarate e considerare la dichiarazione.
+Una volta che WAF è concesso in licenza e abilitato per il programma, i flag di corrispondenza del traffico di WAF vengono visualizzati nei grafici e nei registri delle richieste, anche se non sono stati dichiarati in una regola. Quindi, sei sempre a conoscenza di traffico potenzialmente nuovo dannoso e può creare regole in base alle esigenze. Osserva i flag di WAF che non si riflettono nelle regole dichiarate e prendi in considerazione la loro dichiarazione.
 
-Prendi in considerazione le regole WAF riportate di seguito per il tuo progetto AEM. Tuttavia, i valori desiderati per la proprietà `action` e `wafFlags` devono essere determinati in collaborazione con il team di sicurezza.
+Considera le regole di WAF riportate di seguito per il progetto AEM. Tuttavia, i valori desiderati per la proprietà `action` e `wafFlags` devono essere determinati in collaborazione con il team di sicurezza.
 
 ```yaml
 kind: CDN

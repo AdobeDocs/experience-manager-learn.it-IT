@@ -1,7 +1,7 @@
 ---
 title: Sitemap
 description: Scopri come incrementare l’ottimizzazione SEO (Search Engine Optimization) creando sitemap per AEM Sites.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Core Components
 topic: Content Management
 role: Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2022-10-03T00:00:00Z
 doc-type: Technical Video
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
 duration: 937
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 5%
@@ -33,7 +33,7 @@ Scopri come incrementare l’ottimizzazione SEO (Search Engine Optimization) cre
 
 ### URL sitemap assoluti{#absolute-sitemap-urls}
 
-La mappa del sito AEM supporta gli URL assoluti utilizzando [Mapping Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Ciò avviene attraverso la creazione di nodi di mappatura sui servizi dell’AEM che generano sitemap (in genere il servizio Publish dell’AEM).
+La mappa del sito di AEM supporta gli URL assoluti utilizzando [Mapping Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Ciò avviene attraverso la creazione di nodi di mappatura nei servizi AEM che generano sitemap (in genere il servizio AEM Publish).
 
 Un esempio di definizione del nodo di mappatura Sling per `https://wknd.com` può essere definito in `/etc/map/https` come segue:
 
@@ -77,7 +77,7 @@ Consenti richieste HTTP per i file di indice e mappa del sito della mappa del si
 
 ### Regola di riscrittura server web Apache
 
-Assicurarsi che `.xml` richieste HTTP sitemap vengano indirizzate alla pagina AEM sottostante corretta. Se non si utilizza l’abbreviazione degli URL o si utilizzano mappature Sling per ottenere l’abbreviazione degli URL, questa configurazione non è necessaria.
+Assicurati che `.xml` richieste HTTP sitemap vengano indirizzate alla pagina AEM sottostante corretta. Se non si utilizza l’abbreviazione degli URL o si utilizzano mappature Sling per ottenere l’abbreviazione degli URL, questa configurazione non è necessaria.
 
 `dispatcher/src/conf.d/rewrites/rewrite.rules`
 
@@ -89,7 +89,7 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## Riferimenti
 
-+ [Documentazione Sitemap AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
++ [Documentazione di AEM Sitemap](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
 + [Documentazione di Apache Sling Sitemap](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
 + [Sitemap.org Documentazione sitemap](https://www.sitemaps.org/protocol.html)
 + [Sitemap.org Documentazione del file di indice Sitemap](https://www.sitemaps.org/protocol.html#index)

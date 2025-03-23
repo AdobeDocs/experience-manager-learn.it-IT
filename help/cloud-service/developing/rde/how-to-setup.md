@@ -2,7 +2,7 @@
 title: Come impostare un ambiente di sviluppo rapido
 description: Scopri come impostare l’ambiente di sviluppo rapido per AEM as a Cloud Service.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ thumbnail: KT-11861.png
 last-substantial-update: 2024-06-04T00:00:00Z
 exl-id: ab9ee81a-176e-4807-ba39-1ea5bebddeb2
 duration: 485
-source-git-commit: f714adaa9bb637c0c7b17837c1d4b9f2be737c5c
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 2%
@@ -69,7 +69,7 @@ Installare e configurare i plug-in AEM RDE utilizzando il comando `plugins:insta
 
    Il plug-in AEM RDE consente agli sviluppatori di distribuire codice e contenuto dal computer locale.
 
-2. Accedi a Adobe I/O Runtime Extensible CLI eseguendo il seguente comando per ottenere il token di accesso. Assicurati di accedere alla stessa organizzazione di Adobe del tuo Cloud Manager.
+2. Accedi a Adobe I/O Runtime Extensible CLI eseguendo il seguente comando per ottenere il token di accesso. Assicurati di accedere alla stessa organizzazione Adobe del tuo Cloud Manager.
 
    ```shell
    $ aio login
@@ -154,7 +154,7 @@ I plug-in CLI dell&#39;aio devono essere configurati per interagire con l&#39;RD
 
 ## Verifica accesso RDE
 
-Verificare l&#39;installazione e la configurazione del plug-in AEM RDE eseguendo il comando seguente.
+Verifica l’installazione e la configurazione del plug-in AEM RDE eseguendo il comando seguente.
 
 ```shell
 $ aio aem:rde:status
@@ -175,6 +175,6 @@ Impostazione di [Adobe I/O Runtime Extensible CLI](https://developer.adobe.com/r
 
 [Comandi e utilizzo CLI aio](https://github.com/adobe/aio-cli#usage)
 
-[Plug-in CLI Adobe I/O Runtime per interazioni con ambienti di sviluppo rapido AEM](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
+[Plug-in CLI di Adobe I/O Runtime per interazioni con ambienti di sviluppo rapido AEM](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
 [Plug-in Cloud Manager aio CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)

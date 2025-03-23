@@ -5,13 +5,13 @@ feature: Adaptive Forms
 type: Documentation
 role: Developer
 level: Beginner
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations
 jira: KT-15126
 exl-id: b369ed05-ba25-4b0e-aa3b-e7fc1621067d
 duration: 52
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 # Inserire dati nell’elenco SharePoint utilizzando il passaggio del flusso di lavoro FDM di richiamo
 
 
-Questo articolo illustra i passaggi necessari per inserire i dati nell’elenco di SharePoint utilizzando il passaggio FDM di richiamo nel flusso di lavoro AEM.
+Questo articolo illustra i passaggi necessari per inserire i dati nell’elenco di SharePoint utilizzando il passaggio Richiama FDM nel flusso di lavoro di AEM.
 
 In questo articolo si presuppone che [il modulo adattivo sia stato configurato correttamente per l&#39;invio di dati all&#39;elenco di SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=en#connect-af-sharepoint-list)
 
@@ -92,7 +92,7 @@ Il formato dei dati inviati è il seguente. Estrarre l’oggetto JSON ContactUS 
 
 ![modulo basato su Foundation](assets/foundation-based-form.png)
 
-## Configurare un modulo adattivo per attivare il flusso di lavoro AEM
+## Configurare un modulo adattivo per attivare il flusso di lavoro di AEM
 
 * Crea un modulo adattivo utilizzando il modello dati modulo creato nel passaggio precedente.
 * Trascinare alcuni campi dall&#39;origine dati al modulo.

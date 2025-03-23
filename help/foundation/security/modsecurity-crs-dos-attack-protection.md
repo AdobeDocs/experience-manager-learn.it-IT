@@ -1,8 +1,8 @@
 ---
-title: Utilizzare ModSecurity per proteggere il sito AEM da attacchi DoS
-description: Scopri come abilitare ModSecurity per proteggere il tuo sito dall’attacco Denial of Service (DoS) utilizzando il set di regole di base (CRS) OWASP ModSecurity.
+title: Usa ModSecurity per proteggere il tuo sito AEM da attacchi DoS
+description: Scopri come abilitare ModSecurity per proteggere il tuo sito dall’attacco Denial of Service (DoS) utilizzando OWASP ModSecurity Core Rule Set (CRS).
 feature: Security
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Security, Development
 role: Admin, Architect
 level: Experienced
@@ -12,27 +12,27 @@ doc-type: Article
 last-substantial-update: 2023-08-18T00:00:00Z
 exl-id: 9f689bd9-c846-4c3f-ae88-20454112cf9a
 duration: 783
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
 
 # Utilizzare ModSecurity per proteggere il sito AEM dagli attacchi DoS
 
-Scopri come abilitare ModSecurity per proteggere il tuo sito dagli attacchi Denial of Service (DoS) utilizzando **OWASP ModSecurity Core Rule Set (CRS)** nel Dispatcher Publish di Adobe Experience Manager (AEM).
+Scopri come abilitare ModSecurity per proteggere il tuo sito dagli attacchi Denial of Service (DoS) utilizzando **OWASP ModSecurity Core Rule Set (CRS)** nel Dispatcher di pubblicazione Adobe Experience Manager (AEM).
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422976?quality=12&learn=on)
 
 ## Panoramica
 
-La base [Open Web Application Security Project® (OWASP)](https://owasp.org/) fornisce [**OWASP Top 10**](https://owasp.org/www-project-top-ten/) che delinea i dieci problemi di sicurezza più critici per le applicazioni Web.
+La base [Open Web Application Security Project® (OWASP)](https://owasp.org/) fornisce la [**OWASP Top 10**](https://owasp.org/www-project-top-ten/) che descrive i dieci problemi di sicurezza più critici per le applicazioni web.
 
 ModSecurity è una soluzione open-source e multipiattaforma che fornisce protezione da una serie di attacchi contro le applicazioni web. Consente inoltre il monitoraggio del traffico HTTP, la registrazione e l’analisi in tempo reale.
 
-OWSAP® fornisce anche il [set di regole di base OWASP® ModSecurity ](https://github.com/coreruleset/coreruleset). CRS è un set di regole generiche di **rilevamento degli attacchi** da utilizzare con ModSecurity. In questo modo CRS mira a proteggere le applicazioni web da un&#39;ampia gamma di attacchi, tra cui i primi dieci OWASP, con un minimo di falsi allarmi.
+OWSAP® fornisce anche [OWASP® ModSecurity Core Rule Set (CRS)](https://github.com/coreruleset/coreruleset). CRS è un set di regole generiche di **rilevamento degli attacchi** da utilizzare con ModSecurity. Il CRS mira quindi a proteggere le applicazioni web da un’ampia gamma di attacchi, tra cui i Top Ten di OWASP, con un minimo di falsi avvisi.
 
 Questo tutorial illustra come abilitare e configurare la regola CRS **DOS-PROTECTION** per proteggere il sito da un potenziale attacco DoS.
 
@@ -42,7 +42,7 @@ Questo tutorial illustra come abilitare e configurare la regola CRS **DOS-PROTEC
 
 ## Aggiungere CRS al modulo di progetto Dispatcher
 
-1. Scaricare ed estrarre il [set di regole di base OWASP ModSecurity più recente](https://github.com/coreruleset/coreruleset/releases).
+1. Scarica ed estrai il [set di regole core di OWASP ModSecurity più recente](https://github.com/coreruleset/coreruleset/releases).
 
    ```shell
    # Replace the X.Y.Z with relevent version numbers.
@@ -55,7 +55,7 @@ Questo tutorial illustra come abilitare e configurare la regola CRS **DOS-PROTEC
    $ tar -xvzf coreruleset-3.3.5.tar.gz
    ```
 
-1. Crea le cartelle `modsec/crs` in `dispatcher/src/conf.d/` nel codice del progetto AEM. Ad esempio, nella copia locale del progetto [AEM WKND Sites](https://github.com/adobe/aem-guides-wknd).
+1. Crea le cartelle `modsec/crs` in `dispatcher/src/conf.d/` nel codice del progetto AEM. Ad esempio, nella copia locale del [progetto AEM WKND Sites](https://github.com/adobe/aem-guides-wknd).
 
    ![Cartella CRS nel codice progetto AEM - ModSecurity](assets/modsecurity-crs/crs-folder-in-aem-dispatcher-module.png){width="200" zoomable="yes"}
 
@@ -152,7 +152,7 @@ Per inizializzare il CRS, rimuovere i falsi positivi comuni e aggiungere eccezio
 
 >[!TIP]
 >
->Durante la configurazione su AEM 6.5, assicurati di sostituire i percorsi precedenti con i rispettivi percorsi AMS o locali che verificano lo stato dell’AEM (percorsi heartbeat).
+>Durante la configurazione in AEM 6.5, assicurati di sostituire i percorsi precedenti con i rispettivi percorsi AMS o locali che verificano lo stato di AEM (percorsi heartbeat).
 
 ## Aggiungi configurazione Apache ModSecurity
 
@@ -208,7 +208,7 @@ Per abilitare ModSecurity (o modulo Apache `mod_security`), effettuare le seguen
    SecDataDir /tmp
    ```
 
-1. Selezionare il `.vhost` desiderato dal modulo Dispatcher `dispatcher/src/conf.d/available_vhosts` del progetto AEM, ad esempio `wknd.vhost`, aggiungere la voce seguente all&#39;esterno del blocco `<VirtualHost>`.
+1. Seleziona il `.vhost` desiderato dal modulo Dispatcher del progetto AEM `dispatcher/src/conf.d/available_vhosts`, ad esempio `wknd.vhost`, aggiungi la voce seguente all&#39;esterno del blocco `<VirtualHost>`.
 
    ```
    # Enable the ModSecurity and OWASP CRS
@@ -224,11 +224,11 @@ Per abilitare ModSecurity (o modulo Apache `mod_security`), effettuare le seguen
    </VirtualHost>
    ```
 
-Tutte le configurazioni di _ModSecurity CRS_ e _DOS-PROTECTION_ sono disponibili nel ramo [tutorial/enable-modsecurity-crs-dos-protection](https://github.com/adobe/aem-guides-wknd/tree/tutorial/enable-modsecurity-crs-dos-protection) del progetto WKND Sites dell&#39;AEM per la revisione.
+Tutte le configurazioni di _ModSecurity CRS_ e _DOS-PROTECTION_ sopra indicate sono disponibili nel ramo [tutorial/enable-modsecurity-crs-dos-protection](https://github.com/adobe/aem-guides-wknd/tree/tutorial/enable-modsecurity-crs-dos-protection) del progetto AEM WKND Sites per la revisione.
 
 ### Convalida configurazione Dispatcher
 
-Quando si lavora con AEM as a Cloud Service, prima di distribuire le _modifiche alla configurazione di Dispatcher_, è consigliabile convalidarle localmente utilizzando lo script `validate` degli strumenti Dispatcher dell&#39;SDK [AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=it).
+Quando si lavora con AEM as a Cloud Service, prima di distribuire le _modifiche alla configurazione di Dispatcher_, è consigliabile convalidarle localmente utilizzando lo script `validate` degli [strumenti Dispatcher di AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=it).
 
 ```
 # Go inside Dispatcher SDK 'bin' directory
@@ -262,7 +262,7 @@ Per simulare un attacco DoS utilizzando JMeter, procedere come segue:
 
 1. Aggiorna il valore del campo **Nome server o IP** in _Home Page_ e _Adventure Page_ HTTP Request sampler che corrispondono all&#39;URL dell&#39;ambiente AEM di prova. Rivedi altri dettagli dello script JMeter di esempio.
 
-   ![Nome server AEM richiesta HTTP JMetere - ModSecurity](assets/modsecurity-crs/aem-server-name-http-request.png)
+   ![Richiesta HTTP nome server AEM JMetere - ModSecurity](assets/modsecurity-crs/aem-server-name-http-request.png)
 
 1. Eseguire lo script premendo il pulsante **Start** dal menu Strumenti. Lo script invia 50 richieste HTTP (5 utenti e 10 conteggi di loop) rispetto alla _home page_ e alla _pagina di avventura_ del sito WKND. In totale, quindi, 100 richieste a file non statici qualificano l&#39;attacco DoS per la configurazione personalizzata della regola CRS **DOS-PROTECTION**.
 
@@ -280,7 +280,7 @@ Per simulare un attacco DoS utilizzando JMeter, procedere come segue:
 
 La configurazione del logger ModSecurity registra i dettagli dell’incidente di attacco DoS. Per visualizzare i dettagli, effettua le seguenti operazioni:
 
-1. Scarica e apri il file di registro `httpderror` di **Publish Dispatcher**.
+1. Scarica e apri il file di registro `httpderror` di **Pubblica Dispatcher**.
 1. Cerca la parola `burst` nel file di registro per visualizzare le righe di **errore**
 
    ```

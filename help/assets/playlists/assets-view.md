@@ -1,7 +1,7 @@
 ---
 title: Playlist video per la visualizzazione Assets di AEM Assets
-description: Scopri come navigare nell’as a Cloud Service di AEM Assets nella vista Assets con questa selezione selezionata di playlist video volte a migliorare la conoscenza del tuo prodotto.
-version: Cloud Service
+description: Scopri come navigare in AEM Assets as a Cloud Service nella vista Assets con questa selezione selezionata di playlist video per migliorare la conoscenza del tuo prodotto.
+version: Experience Manager as a Cloud Service
 topic: Content Management
 role: User
 level: Beginner
@@ -9,7 +9,7 @@ last-substantial-update: 2024-11-20T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 76af4062-4d8d-4908-bd3d-ce5a8af2111a
-source-git-commit: cce071c22a14669344318ad00d57a4fccc956a33
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 1%
@@ -20,11 +20,11 @@ ht-degree: 1%
 
 ![Vista Assets di AEM Assets](./assets/assets-view.png){align="center"}
 
-Esplora queste playlist per acquisire dimestichezza con la vista di AEM Assets as a Cloud Service Assets, inclusa la configurazione, l’ottimizzazione, l’utilizzo e l’integrazione perfetta con i flussi di lavoro creativi. Ottieni le informazioni necessarie per avere successo con AEM Assets as a Cloud Service.
+Esplora queste playlist per acquisire dimestichezza con la vista Assets di AEM Assets as a Cloud Service: configurazione, ottimizzazione, utilizzo e integrazione perfetta con i flussi di lavoro creativi. Ottieni le informazioni necessarie per avere successo con AEM Assets as a Cloud Service.
 
 ## Configurare la vista Assets
 
-Inizia con le configurazioni e le impostazioni essenziali per consentire ad AEM Assets as a Cloud Service di funzionare perfettamente per il tuo team e per i tuoi progetti.
+Inizia con le configurazioni e le impostazioni essenziali per far funzionare AEM Assets as a Cloud Service senza problemi per il tuo team e i tuoi progetti.
 
 <!-- CARDS
 
@@ -38,8 +38,8 @@ Inizia con le configurazioni e le impostazioni essenziali per consentire ad AEM 
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access" title="Configurare l’accesso amministrativo per Experience Manager" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1130bb3c4cd41705ba451f3219632a7d57f9b3f85.jpeg?width=400&format=pjpg&optimize=medium" alt="Configurare l’accesso amministrativo per Experience Manager"
+                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access" title="Configurare l’accesso amministrativo ad Experience Manager" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1130bb3c4cd41705ba451f3219632a7d57f9b3f85.jpeg?width=400&format=pjpg&optimize=medium" alt="Configurare l’accesso amministrativo ad Experience Manager"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -47,9 +47,9 @@ Inizia con le configurazioni e le impostazioni essenziali per consentire ad AEM 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access" target="_blank" rel="referrer" title="Configurare l’accesso amministrativo per Experience Manager">Configurare l'accesso amministrativo per Experience Manager</a>
+                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access" target="_blank" rel="referrer" title="Configurare l’accesso amministrativo ad Experience Manager">Configurare l'accesso amministrativo ad Experience Manager</a>
                     </p>
-                    <p class="is-size-6">Scopri in che modo gli utenti effettuano l’autenticazione utilizzando Adobe IMS per AEM as a Cloud Service e in che modo gli utenti Adobe IMS, i gruppi di utenti e i profili di prodotto vengono utilizzati per controllare l’accesso all’AEM e alle relative funzioni e funzionalità.</p>
+                    <p class="is-size-6">Scopri in che modo gli utenti effettuano l’autenticazione utilizzando Adobe IMS per AEM as a Cloud Service e in che modo gli utenti Adobe IMS, i gruppi di utenti e i profili di prodotto vengono utilizzati per controllare l’accesso a AEM e alle relative funzioni e funzionalità.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Osserva</span>
@@ -108,8 +108,8 @@ Naviga nell’interfaccia di visualizzazione di Assets come un professionista e 
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly" title="Genera Assets Immagine Con Adobe Firefly" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_16fdb25830809ba4c0fe9fda9afa150b64b0f83f5.jpeg?width=400&format=pjpg&optimize=medium" alt="Genera Assets Immagine Con Adobe Firefly"
+                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly" title="Generare Assets Per Immagini Con Adobe Firefly" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_16fdb25830809ba4c0fe9fda9afa150b64b0f83f5.jpeg?width=400&format=pjpg&optimize=medium" alt="Generare Assets Per Immagini Con Adobe Firefly"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -117,7 +117,7 @@ Naviga nell’interfaccia di visualizzazione di Assets come un professionista e 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly" target="_blank" rel="referrer" title="Genera Assets Immagine Con Adobe Firefly">Genera Assets Immagine Utilizzando Adobe Firefly</a>
+                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly" target="_blank" rel="referrer" title="Generare Assets Per Immagini Con Adobe Firefly">Genera Assets Immagine Con Adobe Firefly</a>
                     </p>
                     <p class="is-size-6">Scopri come AEM Assets può aumentare la velocità dei contenuti utilizzando Adobe Firefly e Gen AI.</p>
                 </div>
@@ -157,7 +157,7 @@ Naviga nell’interfaccia di visualizzazione di Assets come un professionista e 
 
 ## Collegare i flussi di lavoro creativi con AEM Assets
 
-Collaborazione fluida grazie all’integrazione di AEM Assets as a Cloud Service con i tuoi strumenti creativi, per flussi di lavoro coerenti ed efficienti.
+Collaborazione fluida grazie all’integrazione di AEM Assets as a Cloud Service con i tuoi strumenti creativi, per flussi di lavoro coesi ed efficienti.
 
 <!-- CARDS
 
@@ -172,8 +172,8 @@ Collaborazione fluida grazie all’integrazione di AEM Assets as a Cloud Service
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" title="Gestire i flussi di lavoro creativi con Workfront e Assets Essentials" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1781139425d77174a992697a33d097a8bd5b54d5b.jpeg?width=400&format=pjpg&optimize=medium" alt="Gestire i flussi di lavoro creativi con Workfront e Assets Essentials"
+                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" title="Gestire i flussi di lavoro di Creative tramite Workfront e Assets Essentials" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1781139425d77174a992697a33d097a8bd5b54d5b.jpeg?width=400&format=pjpg&optimize=medium" alt="Gestire i flussi di lavoro di Creative tramite Workfront e Assets Essentials"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -181,7 +181,7 @@ Collaborazione fluida grazie all’integrazione di AEM Assets as a Cloud Service
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" title="Gestire i flussi di lavoro creativi con Workfront e Assets Essentials">Gestione dei flussi di lavoro creativi tramite Workfront e AEM Assets</a>
+                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" title="Gestire i flussi di lavoro di Creative tramite Workfront e Assets Essentials">Gestire i flussi di lavoro di Creative con Workfront e AEM Assets</a>
                     </p>
                     <p class="is-size-6">Scopri in che modo Adobe Workfront e AEM Assets aiutano la tua organizzazione a gestire il flusso di lavoro creativo.</p>
                 </div>

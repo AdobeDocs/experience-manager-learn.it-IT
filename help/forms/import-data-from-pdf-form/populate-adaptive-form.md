@@ -2,14 +2,14 @@
 title: Compilare un modulo adattivo utilizzando il metodo setData
 description: Invia il file pdf caricato per l’estrazione dei dati e compila il modulo adattivo con i dati estratti
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 jira: KT-14196
 exl-id: f380d589-6520-4955-a6ac-2d0fcd5aaf3f
 duration: 32
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 1%
@@ -58,7 +58,7 @@ function handleFiles(formData) {
 }
 ```
 
-Il servlet montato su **_/bin/ExtractDataFromPDF_** estrae i dati dal file PDF e restituisce il percorso del nodo crx in cui sono memorizzati i dati estratti.
+Il servlet montato su **_/bin/ExtractDataFromPDF_** estrae i dati dal file PDF e restituisce il percorso del nodo crx in cui vengono memorizzati i dati estratti.
 Viene quindi utilizzato il metodo [GuideBridge setData](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html#setData__anchor) per impostare i dati del modulo adattivo.
 
 ## Passaggi successivi

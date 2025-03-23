@@ -1,7 +1,7 @@
 ---
 title: Personalizzazione delle icone dei componenti in Adobe Experience Manager Sites
 description: Le icone dei componenti consentono agli autori di identificare rapidamente un componente con icone o abbreviazioni significative. Gli autori possono ora individuare i componenti necessari per creare le proprie esperienze web in modo più rapido che mai.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Core Components
 topic: Development
 role: User
@@ -9,7 +9,7 @@ level: Intermediate
 doc-type: Technical Video
 exl-id: 37dc26aa-0773-4749-8c8b-4544bd4d5e5f
 duration: 379
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 0%
@@ -49,7 +49,7 @@ L&#39;abbreviazione può essere personalizzata tramite la proprietà **[cq:Compo
 
 ### Icone di CoralUI {#coralui-icons}
 
-Le icone di CoralUI fornite dall’AEM possono essere utilizzate per le icone dei componenti. Per configurare un&#39;icona di CoralUI, impostare una proprietà **[cq:Component]@cq:icon** sul valore dell&#39;attributo dell&#39;icona HTML dell&#39;icona di CoralUI desiderata (enumerato nella [documentazione di CoralUI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html).
+Le icone di CoralUI fornite da AEM possono essere utilizzate per le icone dei componenti. Per configurare un&#39;icona di CoralUI, impostare una proprietà **[cq:Component]@cq:icon** sul valore dell&#39;attributo dell&#39;icona di CoralUI HTML desiderato (enumerato nella [documentazione di CoralUI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html).
 
 ```plain
 /apps/.../components/content/my-component

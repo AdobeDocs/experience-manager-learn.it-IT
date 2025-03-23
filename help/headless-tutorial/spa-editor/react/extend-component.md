@@ -1,8 +1,8 @@
 ---
-title: Estendere un componente core | Guida introduttiva all’Editor SPA dell’AEM e React
-description: Scopri come estendere il modello JSON per un Componente core esistente da utilizzare con l’Editor SPA dell’AEM. Comprendere come aggiungere proprietà e contenuti a un componente esistente è una tecnica efficace per espandere le funzionalità di un’implementazione dell’Editor SPA dell’AEM. Scopri come utilizzare il pattern di delega per estendere i modelli Sling e le funzioni di Sling Resource Merger.
+title: Estendere un componente core | Guida introduttiva dell’Editor SPA di AEM e React
+description: Scopri come estendere il modello JSON per un componente core esistente da utilizzare con l’editor SPA di AEM. Scopri come aggiungere proprietà e contenuto a un componente esistente per espandere le funzionalità di un’implementazione dell’Editor SPA di AEM. Scopri come utilizzare il pattern di delega per estendere i modelli Sling e le funzioni di Sling Resource Merger.
 feature: SPA Editor, Core Components
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-5879
 thumbnail: 5879-spa-react.jpg
 topic: SPA
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
 duration: 316
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Estendere un componente core {#extend-component}
 
-Scopri come estendere un Componente core esistente da utilizzare con l’Editor SPA dell’AEM. Scopri come estendere un componente esistente è una tecnica potente per personalizzare ed espandere le funzionalità di un’implementazione dell’Editor SPA dell’AEM.
+Scopri come estendere un Componente core esistente da utilizzare con l’Editor SPA di AEM. Scopri come estendere un componente esistente è una tecnica potente per personalizzare ed espandere le funzionalità di un’implementazione dell’Editor SPA di AEM.
 
 ## Obiettivo
 
@@ -36,11 +36,11 @@ Questo capitolo illustra il codice aggiuntivo necessario per aggiungere una prop
 
 ## Prerequisiti
 
-Esaminare gli strumenti e le istruzioni necessari per configurare un [ambiente di sviluppo locale](overview.md#local-dev-environment). A questo punto, si presume che gli utenti abbiano una solida conoscenza della funzione dell’Editor SPA dell’AEM.
+Esaminare gli strumenti e le istruzioni necessari per configurare un [ambiente di sviluppo locale](overview.md#local-dev-environment). A questo punto, nell’esercitazione si presume che gli utenti abbiano una solida conoscenza della funzione Editor applicazioni a pagina singola di AEM.
 
 ## Ereditarietà con super tipo di risorsa Sling {#sling-resource-super-type}
 
-Per estendere un componente esistente, impostare una proprietà denominata `sling:resourceSuperType` nella definizione del componente.  `sling:resourceSuperType`è una [proprietà](https://sling.apache.org/documentation/the-sling-engine/resources.html#resource-properties) che può essere impostata sulla definizione di un componente AEM che punta a un altro componente. In questo modo il componente eredita in modo esplicito tutte le funzionalità del componente identificato come `sling:resourceSuperType`.
+Per estendere un componente esistente, impostare una proprietà denominata `sling:resourceSuperType` nella definizione del componente.  `sling:resourceSuperType`è una [proprietà](https://sling.apache.org/documentation/the-sling-engine/resources.html#resource-properties) che può essere impostata sulla definizione di un componente di AEM che punta a un altro componente. In questo modo il componente eredita in modo esplicito tutte le funzionalità del componente identificato come `sling:resourceSuperType`.
 
 Se si desidera estendere il componente `Image` in `wknd-spa-react/components/image`, è necessario aggiornare il codice nel modulo `ui.apps`.
 
@@ -60,7 +60,7 @@ Se si desidera estendere il componente `Image` in `wknd-spa-react/components/ima
 
 ## cq:editConfig {#cq-edit-config}
 
-Il file `_cq_editConfig.xml` determina il comportamento di trascinamento nell&#39;interfaccia utente di creazione AEM. Quando si estende il componente Immagine, è importante che il tipo di risorsa corrisponda al componente stesso.
+Il file `_cq_editConfig.xml` determina il comportamento di trascinamento nell&#39;interfaccia utente di authoring di AEM. Quando si estende il componente Immagine, è importante che il tipo di risorsa corrisponda al componente stesso.
 
 1. Nel modulo `ui.apps` creare un altro file sotto `banner` denominato `_cq_editConfig.xml`.
 1. Popolare `_cq_editConfig.xml` con il seguente XML:
@@ -296,9 +296,9 @@ Per utilizzare il componente Banner con l&#39;editor SPA, è necessario creare u
    MapTo('wknd-spa-react/components/banner')(Banner, BannerEditConfig);
    ```
 
-   Questo componente SPA è mappato al componente AEM `wknd-spa-react/components/banner` creato in precedenza.
+   Questo componente SPA viene mappato al componente AEM `wknd-spa-react/components/banner` creato in precedenza.
 
-1. Aggiorna `import-components.js` alle `ui.frontend/src/components/import-components.js` per includere il nuovo componente SPA `Banner`:
+1. Aggiorna `import-components.js` alle `ui.frontend/src/components/import-components.js` per includere il nuovo componente per applicazioni a pagina singola `Banner`:
 
    ```diff
      import './ExperienceFragment/ExperienceFragment';
@@ -306,16 +306,16 @@ Per utilizzare il componente Banner con l&#39;editor SPA, è necessario creare u
    + import './Banner/Banner';
    ```
 
-1. A questo punto il progetto può essere implementato all&#39;AEM e il dialogo può essere testato. Distribuisci il progetto utilizzando le abilità Maven:
+1. A questo punto il progetto può essere distribuito ad AEM ed è possibile testare la finestra di dialogo. Distribuisci il progetto utilizzando le abilità Maven:
 
    ```shell
    $ cd aem-guides-wknd-spa.react
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. Aggiornare i criteri del modello SPA per aggiungere il componente `Banner` come **componente consentito**.
+1. Aggiornare i criteri del modello di applicazioni a pagina singola per aggiungere il componente `Banner` come **componente consentito**.
 
-1. Passare a una pagina SPA e aggiungere il componente `Banner` a una delle pagine SPA:
+1. Passare a una pagina di applicazioni a pagina singola e aggiungere il componente `Banner` a una delle pagine di applicazioni a pagina singola:
 
    ![Aggiungi componente banner](assets/extend-component/add-banner-component.png)
 
@@ -325,7 +325,7 @@ Per utilizzare il componente Banner con l&#39;editor SPA, è necessario creare u
 
 ## Aggiungi interfaccia Java {#java-interface}
 
-Per esporre in definitiva i valori della finestra di dialogo del componente al componente React, è necessario aggiornare il modello Sling che compila il JSON per il componente `Banner`. Questa operazione viene eseguita nel modulo `core` che contiene tutto il codice Java per il nostro progetto SPA.
+Per esporre in definitiva i valori della finestra di dialogo del componente al componente React, è necessario aggiornare il modello Sling che compila il JSON per il componente `Banner`. Questa operazione viene eseguita nel modulo `core` che contiene tutto il codice Java per il progetto SPA.
 
 Innanzitutto verrà creata una nuova interfaccia Java per `Banner` che estende l&#39;interfaccia Java `Image`.
 
@@ -461,7 +461,7 @@ Successivamente, implementare il modello Sling per l&#39;interfaccia `BannerMode
 
 ## Tutti gli elementi insieme {#put-together}
 
-1. Tornare all&#39;AEM e aprire la pagina SPA contenente il componente `Banner`.
+1. Tornare ad AEM e aprire la pagina dell&#39;applicazione a pagina singola con il componente `Banner`.
 1. Aggiorna il componente `Banner` per includere **Testo banner**:
 
    ![Testo banner](assets/extend-component/banner-text-dialog.png)
@@ -491,4 +491,4 @@ Successivamente, implementare il modello Sling per l&#39;interfaccia `BannerMode
 
 ## Congratulazioni. {#congratulations}
 
-Congratulazioni, hai imparato a estendere un componente AEM utilizzando e come i modelli e le finestre di dialogo Sling funzionano con il modello JSON.
+Congratulazioni, hai imparato a estendere un componente AEM utilizzando e il funzionamento dei modelli e delle finestre di dialogo Sling con il modello JSON.

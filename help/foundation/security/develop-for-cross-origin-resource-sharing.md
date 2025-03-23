@@ -1,7 +1,7 @@
 ---
 title: Sviluppare per la condivisione CORS (Cross-Origin Resource Sharing) con AEM
-description: Un breve esempio di utilizzo di CORS per accedere ai contenuti AEM da un’applicazione web esterna tramite JavaScript lato client.
-version: 6.4, 6.5
+description: Un breve esempio di utilizzo di CORS per accedere ai contenuti di AEM da un’applicazione web esterna tramite JavaScript lato client.
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Security, Development
 role: Developer
 level: Beginner
@@ -9,7 +9,7 @@ feature: Security
 doc-type: Technical Video
 exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
 duration: 333
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%
@@ -18,12 +18,12 @@ ht-degree: 0%
 
 # Sviluppo per la condivisione CORS (Cross-Origin Resource Sharing)
 
-Breve esempio di utilizzo di [!DNL CORS] per accedere ai contenuti AEM da un&#39;applicazione Web esterna tramite JavaScript lato client. In questo esempio viene utilizzata la configurazione OSGi CORS per abilitare l’accesso CORS all’AEM. L’approccio di configurazione OSGi è fattibile quando:
+Breve esempio di utilizzo di [!DNL CORS] per accedere al contenuto di AEM da un&#39;applicazione Web esterna tramite JavaScript lato client. In questo esempio viene utilizzata la configurazione OSGi CORS per abilitare l’accesso CORS su AEM. L’approccio di configurazione OSGi è fattibile quando:
 
-* Una singola origine accede ai contenuti Publish dell’AEM
-* Per l’authoring AEM è necessario l’accesso CORS
+* Una singola origine accede al contenuto AEM Publish
+* Per AEM Author è necessario l’accesso a CORS
 
-Se è richiesto l&#39;accesso a più origini al Publish AEM, consulta [questa documentazione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
+Se è necessario l&#39;accesso multiorigine alla pubblicazione AEM, consulta [questa documentazione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837?quality=12&learn=on)
 
@@ -103,7 +103,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ### Consentire le intestazioni di richiesta CORS
 
-Per consentire alle intestazioni di richiesta HTTP [di passare all&#39;AEM per l&#39;elaborazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders), è necessario che siano consentite nella configurazione `/clientheaders` di Dispatcher.
+Per consentire alle intestazioni di richiesta HTTP [di passare ad AEM per l&#39;elaborazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders), devono essere consentite nella configurazione `/clientheaders` di Dispatcher.
 
 ```
 /clientheaders {
@@ -116,7 +116,7 @@ Per consentire alle intestazioni di richiesta HTTP [di passare all&#39;AEM per l
 
 ### Memorizzazione nella cache delle intestazioni di risposta CORS
 
-Per consentire il caching e il serving delle intestazioni CORS sul contenuto memorizzato nella cache, aggiungere la seguente configurazione [/cache /headers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#caching-http-response-headers) al file AEM Publish `dispatcher.any`.
+Per consentire il caching e il serving delle intestazioni CORS sul contenuto memorizzato nella cache, aggiungi la seguente configurazione [/cache /headers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#caching-http-response-headers) al file `dispatcher.any` di pubblicazione di AEM.
 
 ```
 /publishfarm {
@@ -149,6 +149,6 @@ Per consentire il caching e il serving delle intestazioni CORS sul contenuto mem
 * [Jeeves per macOS](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)
 * [Python SimpleHTTPServer](https://docs.python.o:qrg/2/library/simplehttpserver.html) (compatibile con Windows/macOS/Linux)
 
-* [Condivisione CORS (Cross-Origin Resource Sharing) nell’AEM](./understand-cross-origin-resource-sharing.md)
+* [Condivisione CORS (Cross-Origin Resource Sharing) in AEM](./understand-cross-origin-resource-sharing.md)
 * [Condivisione risorse tra le origini (W3C)](https://www.w3.org/TR/cors/)
 * [Controllo accesso HTTP (Mozilla MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)

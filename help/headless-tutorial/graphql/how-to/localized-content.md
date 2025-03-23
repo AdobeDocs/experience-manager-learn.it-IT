@@ -1,7 +1,7 @@
 ---
-title: Utilizzo di contenuti localizzati con AEM headless
+title: Utilizzo di contenuti localizzati con AEM Headless
 description: Scopri come utilizzare GraphQL per eseguire query su AEM per contenuti localizzati.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless
 role: Developer
@@ -10,20 +10,20 @@ jira: KT-10254
 thumbnail: KT-10254.jpeg
 exl-id: 5e3d115b-f3a1-4edc-86ab-3e0713a36d54
 duration: 130
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 0%
 
 ---
 
-# Contenuto localizzato con AEM headless
+# Contenuto localizzato con AEM Headless
 
 AEM fornisce un [framework di integrazione della traduzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) per contenuti headless, che consente di tradurre facilmente frammenti di contenuto e risorse di supporto per l&#39;utilizzo in più lingue. Si tratta dello stesso framework utilizzato per tradurre altri contenuti AEM, come pagine, frammenti di esperienza, Assets e Forms. Una volta tradotto [il contenuto headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=it) e pubblicato, è pronto per essere utilizzato dalle applicazioni headless.
 
 ## Struttura delle cartelle di Assets{#assets-folder-structure}
 
-Assicurarsi che i frammenti di contenuto localizzati nell&#39;AEM seguano la [struttura di localizzazione consigliata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure).
+Assicurati che i frammenti di contenuto localizzati in AEM seguano la [struttura di localizzazione consigliata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure).
 
 ![Cartelle risorse AEM localizzate](./assets/localized-content/asset-folders.jpg)
 
@@ -39,7 +39,7 @@ Il codice locale è anche il valore utilizzato per filtrare i Frammenti di conte
 
 ## Query persistente GraphQL
 
-AEM fornisce un filtro GraphQL `_locale` che filtra automaticamente il contenuto in base al codice locale. Ad esempio, è possibile eseguire una query su tutte le avventure in inglese nel [progetto del sito WKND](https://github.com/adobe/aem-guides-wknd) con una nuova query persistente `wknd-shared/adventures-by-locale` definita come:
+AEM fornisce un filtro di GraphQL `_locale` che filtra automaticamente il contenuto in base al codice locale. Ad esempio, è possibile eseguire una query su tutte le avventure in inglese nel [progetto del sito WKND](https://github.com/adobe/aem-guides-wknd) con una nuova query persistente `wknd-shared/adventures-by-locale` definita come:
 
 ```graphql
 query($locale: String!) {
@@ -52,11 +52,11 @@ query($locale: String!) {
 }
 ```
 
-La variabile `$locale` utilizzata nel filtro `_locale` richiede il codice locale (ad esempio `en`, `en_us` o `de`) specificato nella convenzione di localizzazione basata su cartelle di risorse [AEM](#assets-folder-structure).
+La variabile `$locale` utilizzata nel filtro `_locale` richiede il codice locale (ad esempio `en`, `en_us` o `de`) specificato nella [convenzione di localizzazione basata su cartelle di risorse di AEM](#assets-folder-structure).
 
 ## Esempio di React
 
-Creiamo una semplice applicazione React che controlla quale contenuto Adventure eseguire query dall&#39;AEM in base a un selettore delle impostazioni internazionali utilizzando il filtro `_locale`.
+Creiamo una semplice applicazione React che controlla quale contenuto Adventure eseguire query da AEM in base a un selettore delle impostazioni internazionali utilizzando il filtro `_locale`.
 
 Quando __Inglese__ è selezionato nel selettore delle impostazioni internazionali, vengono restituiti i frammenti di contenuto di avventura in inglese in `/content/dam/wknd/en`, quando è selezionato __Spagnolo__, quindi i frammenti di contenuto in spagnolo in `/content/dam/wknd/es` e così via e così via.
 
@@ -109,11 +109,11 @@ export default function LocaleSwitcher() {
 
 ### Eseguire query sul contenuto utilizzando il filtro `_locale`{#adventures}
 
-Il componente Avventure richiede all’AEM tutte le avventure per lingua ed elenca i relativi titoli. Ciò si ottiene passando il valore delle impostazioni locali memorizzato nel contesto React alla query utilizzando il filtro `_locale`.
+Il componente Avventure richiede ad AEM tutte le avventure per lingua ed elenca i relativi titoli. Ciò si ottiene passando il valore delle impostazioni locali memorizzato nel contesto React alla query utilizzando il filtro `_locale`.
 
 Questo approccio può essere esteso ad altre query nell’applicazione, garantendo che tutte le query includano solo il contenuto specificato dalla selezione locale di un utente.
 
-L&#39;esecuzione della query sull&#39;AEM viene eseguita nell&#39;hook React personalizzato [getAdventuresByLocale, descritto più dettagliatamente nella documentazione relativa alla query su AEM GraphQL](./aem-headless-sdk.md).
+La query su AEM viene eseguita nell&#39;hook React personalizzato [getAdventuresByLocale, descritto più dettagliatamente nella documentazione relativa alla query su AEM GraphQL](./aem-headless-sdk.md).
 
 ```javascript
 // src/Adventures.js

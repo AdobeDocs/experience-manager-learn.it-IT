@@ -4,13 +4,13 @@ description: Creare e convalidare file PDF/A nella CA di Forms utilizzando gli e
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-10105
 exl-id: a4955104-8a87-4add-85c7-c3e3395f5f1a
 duration: 65
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 3%
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 # Creazione e convalida di documenti PDF/A
 
-PDF/A è una versione standard ISO del formato di documento portatile (PDF) specializzata nell’archiviazione e nella conservazione a lungo termine di documenti elettronici. PDF/A differisce da PDF in quanto vieta funzioni non adatte per l’archiviazione a lungo termine, come il collegamento dei caratteri (anziché l’incorporamento dei caratteri) e la crittografia.
+PDF/A è una versione standard ISO del formato di documento portatile (PDF) specializzata nell&#39;archiviazione e nella conservazione a lungo termine di documenti elettronici. PDF/A differisce da PDF in quanto proibisce funzioni non adatte per l&#39;archiviazione a lungo termine, come il collegamento dei caratteri (anziché l&#39;incorporamento dei caratteri) e la crittografia.
 
 ## Converti in PDF/A
 

@@ -1,7 +1,7 @@
 ---
 title: Uscita da porta flessibile
 description: Scopri come impostare e utilizzare l’uscita flessibile della porta per supportare connessioni esterne da AEM as a Cloud Service a servizi esterni.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 870
-source-git-commit: 29ac030f3774da2c514525f7cb85f6f48b84369f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Scopri come impostare e utilizzare l’uscita flessibile della porta per support
 
 ## Cos’è l’uscita con porta flessibile?
 
-L’uscita di porta flessibile consente di collegare ad AEM as a Cloud Service regole specifiche e personalizzate per l’inoltro delle porte, consentendo di effettuare connessioni dall’AEM a servizi esterni.
+L’uscita di porta flessibile consente di collegare ad AEM as a Cloud Service regole specifiche e personalizzate per l’inoltro delle porte, consentendo di effettuare connessioni da AEM a servizi esterni.
 
 Un programma Cloud Manager può avere solo un tipo di infrastruttura di rete __singolo__. Prima di eseguire i seguenti comandi, assicurati che l&#39;uscita da porta flessibile sia il tipo di infrastruttura di rete ](./advanced-networking.md) più [appropriato per il tuo AEM as a Cloud Service.
 
@@ -190,26 +190,26 @@ Con l’uscita della porta flessibile creata, ora puoi configurare le regole di 
 
 1. Le configurazioni di uscita della porta flessibile possono essere aggiornate utilizzando l&#39;operazione API [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) di Cloud Manager. Ricorda che `enableEnvironmentAdvancedNetworkingConfiguration` è un&#39;operazione `PUT`, pertanto tutte le regole devono essere fornite con ogni chiamata di questa operazione.
 
-1. Ora puoi utilizzare la configurazione dell’uscita della porta flessibile nel codice AEM e nella configurazione personalizzati.
+1. Ora puoi utilizzare la configurazione dell’uscita della porta flessibile nel codice e nella configurazione AEM personalizzati.
 
 
 ## Connessione a servizi esterni tramite uscita porta flessibile
 
-Con il proxy di uscita con porta flessibile abilitato, il codice e la configurazione AEM possono utilizzarli per effettuare chiamate a servizi esterni. Esistono due tipi di chiamate esterne che l’AEM tratta in modo diverso:
+Con il proxy di uscita con porta flessibile abilitato, il codice e la configurazione di AEM possono utilizzarli per effettuare chiamate a servizi esterni. Esistono due tipi di chiamate esterne che AEM tratta in modo diverso:
 
 1. Chiamate HTTP/HTTPS a servizi esterni su porte non standard
    + Include le chiamate HTTP/HTTPS effettuate a servizi in esecuzione su porte diverse dalle porte standard 80 o 443.
 1. chiamate non HTTP/HTTPS a servizi esterni
    + Include tutte le chiamate non HTTP, ad esempio le connessioni con i server di posta, i database SQL o i servizi eseguiti su altri protocolli non HTTP/HTTPS.
 
-Le richieste HTTP/HTTPS da AEM sulle porte standard (80/443) sono consentite per impostazione predefinita e non richiedono configurazioni o considerazioni aggiuntive.
+Le richieste HTTP/HTTPS provenienti da AEM su porte standard (80/443) sono consentite per impostazione predefinita e non richiedono configurazioni o considerazioni aggiuntive.
 
 
 ### HTTP/HTTPS su porte non standard
 
-Quando si creano connessioni HTTP/HTTPS a porte non standard (non-80/443) dall’AEM, le connessioni devono essere effettuate tramite host e porte speciali, forniti tramite segnaposto.
+Quando si creano connessioni HTTP/HTTPS a porte non standard (non-80/443) da AEM, le connessioni devono essere effettuate tramite host e porte speciali, forniti tramite segnaposto.
 
-L&#39;AEM fornisce due set di variabili speciali di sistema Java™ mappate ai proxy HTTP/HTTPS dell&#39;AEM.
+AEM fornisce due set di variabili speciali Java™ che vengono mappate sui proxy HTTP/HTTPS di AEM.
 
 | Nome variabile | Utilizzare | Codice Java™ | Configurazione OSGi |
 | - |  - | - | - |
@@ -241,7 +241,7 @@ Quando si eseguono chiamate HTTP/HTTPS a servizi esterni su porte non standard, 
 
 ### Connessioni non HTTP/HTTPS a servizi esterni
 
-Durante la creazione di connessioni non HTTP/HTTPS (ad es. SQL, SMTP e così via) dall’AEM, la connessione deve essere effettuata attraverso uno speciale nome host fornito dall’AEM.
+Durante la creazione di connessioni non HTTP/HTTPS (ad es. SQL, SMTP e così via) da AEM, la connessione deve essere effettuata tramite uno speciale nome host fornito da AEM.
 
 | Nome variabile | Utilizzare | Codice Java™ | Configurazione OSGi |
 | - |  - | - | - |
@@ -261,7 +261,7 @@ Le connessioni ai servizi esterni vengono quindi chiamate tramite `AEM_PROXY_HOS
       <a  href="./examples/sql-datasourcepool.md"><img alt="Connessione SQL tramite DataSourcePool JDBC" src="./assets/code-examples__sql-osgi.png"/></a>
       <div><strong><a href="./examples/sql-datasourcepool.md">Connessione SQL tramite DataSourcePool JDBC</a></strong></div>
       <p>
-            Esempio di codice Java™ connessione a database SQL esterni tramite la configurazione del pool di origini dati JDBC dell'AEM.
+            Esempio di codice Java™ di connessione a database SQL esterni tramite la configurazione del pool di origini dati JDBC di AEM.
       </p>
     </td>   
    <td>

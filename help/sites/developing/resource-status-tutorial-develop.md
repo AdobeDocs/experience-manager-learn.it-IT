@@ -1,10 +1,10 @@
 ---
 title: Sviluppo degli stati delle risorse in AEM Sites
-description: Le API di Stato risorse di Adobe Experience Manager sono un framework collegabile per l’esposizione dei messaggi di stato nelle varie interfacce web dell’editor dell’AEM.
+description: Le API di Stato risorse di Adobe Experience Manager sono un framework collegabile per l’esposizione dei messaggi di stato nelle varie interfacce web dell’editor di AEM.
 doc-type: Tutorial
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 duration: 88
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 2%
@@ -14,13 +14,13 @@ ht-degree: 2%
 
 # Sviluppo degli stati delle risorse {#developing-resource-statuses-in-aem-sites}
 
-Le API di Stato risorse di Adobe Experience Manager sono un framework collegabile per l’esposizione dei messaggi di stato nelle varie interfacce web dell’editor dell’AEM.
+Le API di Stato risorse di Adobe Experience Manager sono un framework collegabile per l’esposizione dei messaggi di stato nelle varie interfacce web dell’editor di AEM.
 
 ## Panoramica {#overview}
 
 Il framework Resource Status for Editors fornisce API lato server e lato client per visualizzare e interagire con gli stati dell&#39;editor in modo standard e uniforme.
 
-Le barre di stato dell’editor sono disponibili in modo nativo negli editor di pagine, frammenti di esperienza e modelli dell’AEM.
+Le barre di stato dell’editor sono disponibili in modo nativo negli editor di pagine, frammenti di esperienza e modelli di AEM.
 
 Di seguito sono riportati alcuni esempi di casi d&#39;uso per i provider di stato delle risorse personalizzati:
 
@@ -28,7 +28,7 @@ Di seguito sono riportati alcuni esempi di casi d&#39;uso per i provider di stat
 * Avviso agli autori che una pagina è stata attivata negli ultimi 15 minuti
 * Avviso agli autori della modifica di una pagina negli ultimi 5 minuti e indicazione di chi ha eseguito la modifica
 
-![Panoramica sullo stato delle risorse dell&#39;editor AEM](assets/sample-editor-resource-status-screenshot.png)
+![Panoramica sullo stato delle risorse dell&#39;editor di AEM](assets/sample-editor-resource-status-screenshot.png)
 
 ## Framework provider stato risorse {#resource-status-provider-framework}
 

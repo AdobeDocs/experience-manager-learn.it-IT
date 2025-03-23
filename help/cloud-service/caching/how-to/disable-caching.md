@@ -1,7 +1,7 @@
 ---
 title: Disabilitare il caching CDN
 description: Scopri come disattivare la memorizzazione nella cache delle risposte HTTP nella rete CDN di AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
 role: Admin, Architect, Developer
@@ -12,7 +12,7 @@ jira: KT-14224
 thumbnail: KT-14224.jpeg
 exl-id: 22b1869e-5bb5-437d-9cb5-2d27f704c052
 duration: 100
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 Scopri come disattivare la memorizzazione nella cache delle risposte HTTP nella rete CDN di AEM as a Cloud Service. La memorizzazione nella cache delle risposte è controllata da `Cache-Control`, `Surrogate-Control` o `Expires` intestazioni cache di risposta HTTP.
 
-Queste intestazioni di cache sono in genere impostate nelle configurazioni vhost di Dispatcher AEM utilizzando `mod_headers`, ma possono anche essere impostate nel codice Java™ personalizzato in esecuzione nello stesso Publish AEM.
+Queste intestazioni di cache sono in genere impostate nelle configurazioni vhost di AEM Dispatcher utilizzando `mod_headers`, ma possono anche essere impostate nel codice Java™ personalizzato in esecuzione nella stessa pubblicazione di AEM.
 
 ## Comportamento di caching predefinito
 
-Rivedi il comportamento di caching predefinito per Publish AEM e Author quando viene distribuito un progetto AEM basato su [AEM Project Archetype](./enable-caching.md#default-caching-behavior).
+Rivedi il comportamento di caching predefinito per AEM Publish e Author quando viene distribuito un progetto AEM basato su [Archetipo progetto AEM](./enable-caching.md#default-caching-behavior).
 
 ## Disattiva caching
 
@@ -40,8 +40,8 @@ Tuttavia, in alcuni casi può essere utile disattivare la memorizzazione in cach
 
 Per disabilitare il caching, puoi aggiornare le intestazioni della cache in due modi.
 
-1. **Configurazione vhost Dispatcher:** disponibile solo per Publish AEM.
-1. **Codice Java™ personalizzato:** Disponibile per AEM Publish e Author.
+1. **Configurazione vhost Dispatcher:** disponibile solo per AEM Publish.
+1. **Codice Java™ personalizzato:** Disponibile sia per AEM Publish che per Author.
 
 Esaminiamo ognuna di queste opzioni.
 

@@ -1,7 +1,7 @@
 ---
-title: Informazioni sui file e i modelli di risorse InDesign in AEM Assets
-description: Questo tutorial video illustra come definire un file InDesign e tutte le considerazioni che lo accompagnano, da utilizzare nella funzione Modelli di risorse di AEM Assets.
-version: 6.4, 6.5
+title: Informazioni sui file e i modelli di risorse di InDesign in AEM Assets
+description: Questo tutorial video illustra come definire un file InDesign e tutte le relative considerazioni da utilizzare nella funzione Modelli di risorse di AEM Assets.
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 feature: Templates
 role: User
@@ -9,23 +9,23 @@ level: Intermediate
 doc-type: Tutorial
 exl-id: c418e94a-b18e-429a-b41c-2bf32e158598
 duration: 909
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
 
 ---
 
-# Informazioni sui file e i modelli di risorse InDesign in AEM Assets {#understanding-indesign-files-and-asset-templates-in-aem-assets}
+# Informazioni sui file e i modelli di risorse di InDesign in AEM Assets {#understanding-indesign-files-and-asset-templates-in-aem-assets}
 
-Questo tutorial video illustra come definire un file InDesign e tutte le considerazioni che lo accompagnano, da utilizzare nella funzione Modelli di risorse di AEM Assets.
+Questo tutorial video illustra come definire un file InDesign e tutte le relative considerazioni da utilizzare nella funzione Modelli di risorse di AEM Assets.
 
-## Creazione del file modello InDesign {#constructing-the-indesign-template-file}
+## Creazione del file di modello di InDesign {#constructing-the-indesign-template-file}
 
 >[!VIDEO](https://video.tv.adobe.com/v/19293?quality=12&learn=on)
 
 1. Scarica e apri il [**modello di file InDesign**](assets/asset-templates-tutorial-video--supporting-files.zip)
-2. **Aprire il pannello Tag,** rivedere la convenzione di denominazione dei tag e notare che gli elementi modificabili nel file InDesign sono già contrassegnati. Ricorda che solo gli elementi taggati sono modificabili in AEM.
+2. **Aprire il pannello Tag,** rivedere la convenzione di denominazione dei tag e notare che gli elementi modificabili nel file InDesign sono già contrassegnati. In AEM è possibile modificare solo gli elementi con tag.
 
    * **Finestra > Utilità > Tag**
 
@@ -47,11 +47,11 @@ Questo tutorial video illustra come definire un file InDesign e tutte le conside
    * Dalla pagina master, copia l’intestazione nella pagina 1 tramite Incolla nella posizione
    * Ripeti i passaggi per Pagina 2
 
-6. Aprite il pannello Struttura, facendo doppio clic su ciascuno di essi, assicuratevi che tutti gli elementi strutturali corrispondano a elementi reali nel file InDesign. Rimuovere eventuali elementi non utilizzati o non necessari. Assicurati che tutti i tag siano semantici e che gli elementi siano contrassegnati correttamente.
+6. Apri il pannello Struttura facendo doppio clic su ciascuno di essi e assicurati che tutti gli elementi strutturali corrispondano agli elementi reali nel file di InDesign. Rimuovere eventuali elementi non utilizzati o non necessari. Assicurati che tutti i tag siano semantici e che gli elementi siano contrassegnati correttamente.
 
    >[!NOTE]
    >
-   >Tieni presente che la causa più comune di problemi con i modelli di risorse AEM è un file InDesign mal costruito, quindi assicurati che l’assegnazione tag e la struttura siano pulite e corrette.
+   >Tieni presente che la causa più comune di problemi con i modelli di risorse di AEM è un file InDesign mal costruito, quindi assicurati che l’assegnazione tag e la struttura siano pulite e corrette.
 
 ## Creazione e authoring di un modello di risorse in AEM Assets {#creating-and-authoring-an-asset-template-in-aem-assets}
 
@@ -65,16 +65,16 @@ Questo tutorial video illustra come definire un file InDesign e tutte le conside
    * [Configurazione OSGi di AEM Externalizer](http://localhost:4502/system/console/configMgr)
 
 3. **Il file InDesign è stato caricato in AEM Assets** e i flussi di lavoro AEM e InDesign Server sono stati autorizzati a elaborare completamente le risorse.
-4. **Crea un nuovo modello** in **Assets > Modelli** e seleziona il file InDesign caricato su AEM nel passaggio #4.
+4. **Crea un nuovo modello** in **Assets > Modelli** e seleziona il file InDesign caricato in AEM nel passaggio #4.
 5. **Modifica il modello di risorsa** creato nel passaggio #5 e crea i campi modificabili.
 6. Fai clic su **Fine** per generare le rappresentazioni finali ad alta fedeltà del modello di risorsa.
 7. Fai clic sulla scheda Modello risorse per aprire ed esaminare Rappresentazioni risorse per scaricare le rappresentazioni ad alta fedeltà.
 
 ## Risorse aggiuntive {#additional-resources}
 
-File modello InDesign e immagini di supporto
+File di modello InDesign e immagini di supporto
 
 Scarica [file modello InDesign e immagini di supporto](assets/asset-templates-tutorial-video--supporting-files-1.zip)
 
-* [Download di prova CC InDesign](https://creative.adobe.com/products/download/indesign)
-* La versione di prova InDesign Server può essere scaricata da [Adobe sito prerelease](https://www.adobeprerelease.com/) o [CC I clienti Enterprise possono contattare il proprio Account Executive per richiedere una licenza di prova InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
+* [Download di prova di InDesign CC](https://creative.adobe.com/products/download/indesign)
+* La versione di prova di InDesign Server può essere scaricata dal [sito prerelease di Adobe](https://www.adobeprerelease.com/) o [CC I clienti Enterprise possono contattare il proprio Account Executive per richiedere la licenza di prova di InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)

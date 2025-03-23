@@ -1,7 +1,7 @@
 ---
 title: Configurare il progetto BPA e CAM
 description: Scopri come Best Practices Analyzer e Cloud Acceleration Manager forniscono una guida personalizzata per la migrazione ad AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developer Tools
 topic: Migration, Upgrade
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-8627
 thumbnail: 336957.jpeg
 exl-id: f8289dd4-b293-4b8f-b14d-daec091728c0
 duration: 680
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 2%

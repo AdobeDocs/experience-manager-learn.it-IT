@@ -4,21 +4,21 @@ description: Effettuare una richiesta POST al punto finale con i parametri neces
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-8185
 thumbnail: 332439.jpg
 exl-id: d144b3f6-7c7a-46a7-bc5f-1767895749d0
 duration: 49
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
 
 ---
 
-# Effettua la chiamata POST
+# Effettuare la chiamata POST
 
 
 Il passaggio successivo consiste nell’effettuare una chiamata HTTP POST all’endpoint con i parametri necessari. Il modello e i file di dati vengono forniti come file di risorse. Le proprietà del PDF generato sono specificate tramite il parametro dell’opzione nella richiesta. La proprietà embedFonts viene utilizzata per incorporare font personalizzati nel PDF generato.[Segui questa documentazione per distribuire i font personalizzati nella tua istanza cloud di Forms.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html?lang=en) Le proprietà sono specificate nel file di risorse options.json. Poiché, l’endpoint dispone dell’autenticazione basata su token, il token di accesso viene trasmesso nell’intestazione della richiesta.

@@ -5,13 +5,13 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-13520
 exl-id: c23275d7-daf7-4a42-83b6-4d04b297c470
 duration: 115
-source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%
@@ -118,7 +118,7 @@ Il codice verrà distribuito come un singolo pacchetto nell’istanza di authori
 ## Invia il codice a Cloud Manager e distribuiscilo
 
 Dopo aver verificato il codice nell’istanza locale, invialo all’istanza cloud.
-Invia le modifiche all’archivio Git locale e quindi all’archivio di Cloud Manager. È possibile fare riferimento agli articoli [Configurazione Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git.html), [Invio del progetto AEM nell&#39;archivio di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git.html) e [Distribuzione nell&#39;ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/deploy-to-dev-environment.html).
+Invia le modifiche all’archivio Git locale e quindi all’archivio di Cloud Manager. È possibile fare riferimento agli articoli [Configurazione Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git.html), [Push del progetto AEM nell&#39;archivio di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git.html) e [Distribuzione nell&#39;ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/deploy-to-dev-environment.html).
 
 Dopo aver eseguito correttamente la pipeline, dovresti essere in grado di associare l’azione di invio del modulo al gestore di invio personalizzato, come illustrato nella schermata seguente
 ![submit-action](./assets/configure-submit-action.png)

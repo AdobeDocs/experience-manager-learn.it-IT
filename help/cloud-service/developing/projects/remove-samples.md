@@ -1,7 +1,7 @@
 ---
-title: Rimozione di campioni da un progetto AEM Maven
-description: Scopri come pulire e rimuovere il codice di esempio da un progetto AEM generato dall’archetipo del progetto AEM.
-version: Cloud Service
+title: Rimozione di esempi da un progetto AEM Maven
+description: Scopri come pulire e rimuovere il codice di esempio da un progetto AEM generato dall’archetipo di progetto AEM.
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: AEM Project Archetype
 role: Developer
@@ -10,27 +10,27 @@ jira: KT-9092
 thumbnail: 337263.jpeg
 exl-id: 4e10c2b7-41b6-41a0-b8d4-9207a9d3f9c8
 duration: 341
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 3%
 
 ---
 
-# Rimozione di campioni da un progetto AEM Maven
+# Rimozione di esempi da un progetto AEM Maven
 
-Scopri come pulire e rimuovere il codice di esempio generato da un progetto AEM generato dall’archetipo del progetto AEM.
+Scopri come pulire e rimuovere il codice di esempio generato da un progetto AEM generato dall’archetipo di progetto AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337263?quality=12&learn=on)
 
 
 ## Riferimenti
 
-+ [Archetipo progetto Maven AEM](https://github.com/adobe/aem-project-archetype)
++ [Archetipo progetto AEM Maven](https://github.com/adobe/aem-project-archetype)
 
 ## Comandi
 
-Per rimuovere i file di esempio generati dal progetto Maven AEM, è possibile eseguire i seguenti comandi:
+Per rimuovere i file di esempio generati dal progetto AEM Maven, è possibile eseguire i seguenti comandi:
 
 ```
 rm -rf core/src/main/java/com/adobe/aem/wknd/examples/core/filters \

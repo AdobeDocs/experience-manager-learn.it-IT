@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Integrations, Development
 jira: KT-12557
@@ -13,7 +13,7 @@ badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 43665a1e-4101-4b54-a6e0-d189e825073e
 duration: 38
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Errori di convalida campo
 
 ## Debugging
 
-Assicurati che il modulo adattivo utilizzi lo stesso contenitore di configurazione che contiene l’Adobe Configurazione di Launch.
+Assicurati che il modulo adattivo utilizzi lo stesso contenitore di configurazione che contiene la configurazione di Adobe Launch.
 
 Per confermare che il modulo invia dati ad Adobe Analytics, effettua le seguenti operazioni
 
@@ -53,7 +53,7 @@ Interagisci con il modulo mantenendo aperta la finestra della console. Dovresti 
 
 ![console-debug](assets/debug.png)
 
-## Utilizza Adobe Experience Platform Debugger
+## Utilizzare Adobe Experience Platform Debugger
 
 Aggiungi l&#39;estensione [AEP Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) al browser (è necessario effettuare l&#39;accesso) per ottenere ulteriori informazioni di debug
 

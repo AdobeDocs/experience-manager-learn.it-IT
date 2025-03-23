@@ -1,7 +1,7 @@
 ---
-title: Come impostare le regole del filtro del traffico, incluse le regole WAF
-description: Scopri come configurare per creare, distribuire, testare e analizzare i risultati delle regole del filtro del traffico, incluse le regole WAF.
-version: Cloud Service
+title: Come impostare le regole del filtro del traffico, incluse le regole di WAF
+description: Scopri come impostare per creare, distribuire, testare e analizzare i risultati delle regole del filtro del traffico, incluse le regole di WAF.
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
 role: Admin, Architect
@@ -12,16 +12,16 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: b67bf642-3341-48d0-8ea9-5f262febf414
 duration: 292
-source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 3%
 
 ---
 
-# Come impostare le regole del filtro del traffico, incluse le regole WAF
+# Come impostare le regole del filtro del traffico, incluse le regole di WAF
 
-Scopri **come impostare** regole del filtro del traffico, incluse le regole WAF. Scopri come creare, distribuire, testare e analizzare i risultati.
+Scopri **come impostare** le regole del filtro del traffico, incluse le regole di WAF. Scopri come creare, distribuire, testare e analizzare i risultati.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425407?quality=12&learn=on)
 
@@ -38,7 +38,7 @@ Il processo di configurazione prevede quanto segue:
 
 Per creare le regole, effettua le seguenti operazioni:
 
-1. Creare una cartella `config` al livello superiore del progetto AEM.
+1. Al livello principale del progetto AEM, creare una cartella `config`.
 
 1. Nella cartella `config` creare un nuovo file denominato `cdn.yaml`.
 
@@ -59,7 +59,7 @@ data:
 
 Vedi un esempio del file `cdn.yaml` all&#39;interno del progetto AEM Guides WKND Sites:
 
-![File e cartella delle regole del progetto AEM WKND](./assets/wknd-rules-file-and-folder.png){width="800" zoomable="yes"}
+![File e cartella delle regole di progetto WKND AEM](./assets/wknd-rules-file-and-folder.png){width="800" zoomable="yes"}
 
 ### Distribuire le regole tramite Cloud Manager {#deploy-rules-through-cloud-manager}
 
@@ -121,7 +121,7 @@ Per testare le regole, sono disponibili vari strumenti di terze parti e la tua o
 
 Dopo aver creato, distribuito e testato le regole, puoi analizzare i risultati utilizzando i registri **CDN** e **AEMCS-CDN-Log-Analysis-Tooling**. Gli strumenti forniscono un set di dashboard per visualizzare i risultati per lo stack Splunk e ELK (Elasticsearch, Logstash e Kibana).
 
-È possibile clonare gli strumenti dall&#39;archivio GitHub [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Segui quindi le istruzioni per installare e caricare le dashboard **CDN Traffic Dashboard** e **WAF Dashboard** per lo strumento di osservabilità preferito.
+È possibile clonare gli strumenti dall&#39;archivio GitHub [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Quindi, segui le istruzioni per installare e caricare le dashboard **CDN Traffic Dashboard** e **WAF Dashboard** per lo strumento di osservabilità preferito.
 
 In questa esercitazione utilizzeremo lo stack ELK. Segui le istruzioni del contenitore Docker [ELK per l&#39;analisi del registro CDN di AEMCS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) per configurare lo stack ELK.
 
@@ -136,4 +136,4 @@ In questa esercitazione utilizzeremo lo stack ELK. Segui le istruzioni del conte
 
 ## Passaggio successivo
 
-Scopri come dichiarare le regole del filtro del traffico, incluse le regole WAF, nel capitolo [Esempi e analisi dei risultati](./examples-and-analysis.md), utilizzando il progetto WKND Sites dell’AEM.
+Scopri come dichiarare le regole del filtro del traffico, incluse le regole di WAF nel capitolo [Esempi e analisi dei risultati](./examples-and-analysis.md), utilizzando il progetto AEM WKND Sites.

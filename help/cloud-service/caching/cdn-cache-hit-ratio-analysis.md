@@ -1,7 +1,7 @@
 ---
 title: Analisi del rapporto di hit della cache CDN
 description: Scopri come analizzare i registri CDN forniti da AEM as a Cloud Service. Ottieni informazioni approfondite come il rapporto hit della cache e i principali URL di tipi di cache MISS e PASS a scopo di ottimizzazione.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
 role: Admin, Architect, Developer
@@ -12,7 +12,7 @@ jira: KT-13312
 thumbnail: KT-13312.jpeg
 exl-id: 43aa7133-7f4a-445a-9220-1d78bb913942
 duration: 276
-source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Analisi del rapporto di hit della cache CDN
 
-Il contenuto memorizzato nella cache della rete CDN riduce la latenza per gli utenti del sito web che non devono attendere che la richiesta torni ad Apache/Dispatcher o che venga pubblicata l’AEM. Tenendo presente questo aspetto, vale la pena ottimizzare il rapporto di hit della cache CDN per massimizzare la quantità di contenuto memorizzabile in cache sulla CDN.
+Il contenuto memorizzato nella cache della rete CDN riduce la latenza per gli utenti del sito web che non devono attendere che la richiesta torni al servizio di pubblicazione di Apache/Dispatcher o AEM. Tenendo presente questo aspetto, vale la pena ottimizzare il rapporto di hit della cache CDN per massimizzare la quantità di contenuto memorizzabile in cache sulla CDN.
 
 Scopri come analizzare i **registri CDN** forniti da AEM as a Cloud Service e ottenere informazioni quali **proporzioni di hit della cache** e **URL principali di _tipi di cache MISS_ e _PASS_**, a scopo di ottimizzazione.
 
@@ -34,7 +34,7 @@ I registri CDN sono disponibili in formato JSON, che contiene vari campi tra cui
 | SIGNORINA | I dati richiesti sono _non trovati nella cache CDN e devono essere richiesti_ dal server AEM. |
 | PASS | I dati richiesti sono _impostati in modo esplicito per non essere memorizzati nella cache_ e per essere sempre recuperati dal server AEM. |
 
-Ai fini di questa esercitazione, il [progetto WKND AEM](https://github.com/adobe/aem-guides-wknd) viene distribuito nell&#39;ambiente AEM as a Cloud Service e viene attivato un piccolo test delle prestazioni utilizzando [Apache JMeter](https://jmeter.apache.org/).
+Ai fini di questa esercitazione, il [progetto AEM WKND](https://github.com/adobe/aem-guides-wknd) viene distribuito nell&#39;ambiente AEM as a Cloud Service e viene attivato un piccolo test delle prestazioni utilizzando [Apache JMeter](https://jmeter.apache.org/).
 
 Questo tutorial è strutturato in modo da illustrare il processo seguente:
 
@@ -52,7 +52,7 @@ Per scaricare i registri CDN, effettua le seguenti operazioni:
 
    ![Scarica registri - Cloud Manager](assets/cdn-logs-analysis/download-logs.png){width="500" zoomable="yes"}
 
-1. Nella finestra di dialogo **Scarica registri**, seleziona il servizio **Publish** dal menu a discesa, quindi fai clic sull&#39;icona di download accanto alla riga **CDN**.
+1. Nella finestra di dialogo **Scarica registri**, seleziona il servizio **Pubblica** dal menu a discesa, quindi fai clic sull&#39;icona di download accanto alla riga **CDN**.
 
    ![Registri CDN - Cloud Manager](assets/cdn-logs-analysis/download-cdn-logs.png){width="500" zoomable="yes"}
 
@@ -153,18 +153,18 @@ Per coloro che preferiscono non installare il software localmente (ovvero, gli s
 
 #### Download del file del blocco appunti Python interattivo
 
-Scarica innanzitutto il file [AEM-as-a-CloudService - Analisi dei registri CDN - Jupyter Notebook](./assets/cdn-logs-analysis/aemcs_cdn_logs_analysis.ipynb), utile per l&#39;analisi dei registri CDN. Questo file &quot;Interactive Python Notebook&quot; è auto-esplicativo, tuttavia, gli elementi di rilievo di ogni sezione sono:
+Scarica innanzitutto il file [AEM-as-a-CloudService - CDN Logs Analysis - Jupyter Notebook](./assets/cdn-logs-analysis/aemcs_cdn_logs_analysis.ipynb), utile per l&#39;analisi dei registri CDN. Questo file &quot;Interactive Python Notebook&quot; è auto-esplicativo, tuttavia, gli elementi di rilievo di ogni sezione sono:
 
 - **Installa librerie aggiuntive**: installa le librerie Python `termcolor` e `tabulate`.
 - **Carica registri CDN**: carica il file di registro CDN utilizzando il valore della variabile `log_file`. Assicurarsi di aggiornarne il valore. Trasforma inoltre questo registro CDN in [DataFrame Pandas](https://pandas.pydata.org/docs/reference/frame.html).
-- **Esegui analisi**: il primo blocco di codice è _Visualizza risultati analisi per richieste totali, HTML, JS/CSS e immagini_. Fornisce i grafici percentuale hit nella cache, a barre e a torta.
+- **Esegui analisi**: il primo blocco di codice è _Visualizza risultati analisi per richieste totali, HTML, JS/CSS e immagini_. Fornisce i grafici percentuale hit della cache, a barre e a torta.
 Il secondo blocco di codice è _Primi 5 URL di richiesta non recapitati e passati per HTML, JS/CSS e Image_. Vengono visualizzati gli URL e i relativi conteggi in formato tabella.
 
 #### Esecuzione del blocco appunti Jupyter
 
 Quindi, esegui Jupyter Notebook in Adobe Experience Platform, seguendo questi passaggi:
 
-1. Accedi a [Adobe Experience Cloud](https://experience.adobe.com/), nella home page > **sezione Accesso rapido** > fai clic sull&#39;**Experience Platform**
+1. Accedi a [Adobe Experience Cloud](https://experience.adobe.com/), nella home page > **sezione Accesso rapido** > fai clic su **Experience Platform**
 
    ![Experience Platform](assets/cdn-logs-analysis/experience-platform.png){width="500" zoomable="yes"}
 
@@ -198,8 +198,8 @@ Puoi migliorare Jupyter Notebook per analizzare i registri CDN in base alle tue 
 
 ## Ottimizzazione della configurazione della cache CDN
 
-Dopo aver analizzato i registri CDN, puoi ottimizzare la configurazione della cache CDN per migliorare le prestazioni del sito. La best practice per l’AEM prevede un rapporto di hit della cache pari o superiore al 90%.
+Dopo aver analizzato i registri CDN, puoi ottimizzare la configurazione della cache CDN per migliorare le prestazioni del sito. La best practice di AEM prevede un rapporto hit cache del 90% o superiore.
 
 Per ulteriori informazioni, vedere [Ottimizzare la configurazione della cache CDN](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching).
 
-Il progetto WKND AEM dispone di una configurazione CDN di riferimento. Per ulteriori informazioni, vedere [Configurazione CDN](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L137-L190) dal file `wknd.vhost`.
+Il progetto AEM WKND dispone di una configurazione CDN di riferimento. Per ulteriori informazioni, vedere [Configurazione CDN](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L137-L190) dal file `wknd.vhost`.

@@ -1,7 +1,7 @@
 ---
 title: Aggiunta corretta di collegamenti simbolici a GIT
 description: Istruzioni su come e dove aggiungere symlink quando si lavora sulle configurazioni del Dispatcher.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 6e751586-e92e-482d-83ce-6fcae4c1102c
 duration: 295
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1231'
 ht-degree: 0%
@@ -176,7 +176,7 @@ Il valore predefinito è true, ad eccezione di `git-clone[1]` o `git-init[1] wil
 
 Il comportamento di Git su Windows è ben spiegato qui: Collegamenti simbolici · Git-for-windows/git Wiki · GitHub
 
-> `Info`: i presupposti elencati nella documentazione qui sopra sembrano essere corretti con una possibile configurazione di AEM Developer su Windows, in particolare NTFS e il fatto che abbiamo solo file symlink rispetto a directory symlink
+> `Info`: i presupposti elencati nella documentazione collegata in precedenza sembrano essere corretti con una possibile configurazione di AEM Developer su Windows, in particolare NTFS e il fatto che sono presenti solo collegamenti simbolici file e collegamenti simbolici directory
 
 Ecco la buona notizia, dal momento che [Git per Windows versione 2.10.2](https://github.com/git-for-windows/git/releases/tag/v2.10.2.windows.1) il programma di installazione ha un&#39;opzione [esplicita per abilitare il supporto di collegamenti simbolici.](https://github.com/git-for-windows/git/issues/921)
 

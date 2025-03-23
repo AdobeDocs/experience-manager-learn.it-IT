@@ -1,8 +1,8 @@
 ---
 title: Esportare frammenti esperienza in Adobe Target
-description: Scopri come pubblicare ed esportare Frammenti di esperienza AEM come Offerte Adobe Target.
+description: Scopri come pubblicare ed esportare i frammenti di esperienza di AEM come offerte di Adobe Target.
 feature: Experience Fragments
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-6350
 thumbnail: 41245.jpg
 topic: Integrations
@@ -13,7 +13,7 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title=
 doc-type: Tutorial
 exl-id: 2c01cda8-f72f-47f7-a36b-95afd241906e
 duration: 213
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 3%
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 # Esporta frammento esperienza in Adobe Target {#experience-fragment-target}
 
-Scopri come esportare Frammenti di esperienza AEM come offerte Adobe Target.
+Scopri come esportare i frammenti di esperienza di AEM come offerte di Adobe Target.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41245?quality=12&learn=on)
 
@@ -36,7 +36,7 @@ Scopri come esportare Frammenti di esperienza AEM come offerte Adobe Target.
 
 #### Errore
 
-Se si esporta un frammento di esperienza in Adobe Target senza le autorizzazioni corrette in Adobe Admin Console, si verifica il seguente errore nel servizio di authoring dell’AEM:
+Se si esporta un frammento di esperienza in Adobe Target senza le autorizzazioni corrette in Adobe Admin Console, si verifica il seguente errore nel servizio AEM Author:
 
 ![Errore nell&#39;interfaccia utente API di Target](assets/error-target-offer.png)
 
@@ -46,7 +46,7 @@ Se si esporta un frammento di esperienza in Adobe Target senza le autorizzazioni
 
 #### Risoluzione
 
-1. Accedi a [Admin Console](https://adminconsole.adobe.com/) con diritti di amministratore per il profilo di prodotto Adobe Target utilizzato ma con integrazione AEM
+1. Accedi a [Admin Console](https://adminconsole.adobe.com/) con diritti di amministratore per il profilo di prodotto Adobe Target utilizzato, ma con l&#39;integrazione AEM
 2. Seleziona __Prodotti > Adobe Target > Profilo prodotto__
 3. Nella scheda __Integrazioni__, seleziona l&#39;integrazione per il tuo ambiente AEM as a Cloud Service (con lo stesso nome del progetto Adobe Developer).
 4. Assegna la mansione __Editor__ o __Approvatore__

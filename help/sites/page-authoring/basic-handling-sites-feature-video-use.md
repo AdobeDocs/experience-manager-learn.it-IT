@@ -1,8 +1,8 @@
 ---
 title: Operazioni di base in AEM Sites
-description: Il video seguente offre una panoramica delle operazioni di base nell’ambiente di authoring AEM. Utilizza la console Sites come base.
+description: Il video seguente offre una panoramica delle operazioni di base nell’ambiente di authoring di AEM. Utilizza la console Sites come base.
 feature: Page Editor, Editable Templates
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-4495
 thumbnail: 31784.jpg
 topic: Content Management
@@ -11,7 +11,7 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 896d378c-c20e-4343-b592-277f4c71065e
 duration: 269
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 9%
@@ -22,7 +22,7 @@ ht-degree: 9%
 
 {{edge-delivery-services-and-page-editor}}
 
-Il video seguente offre una panoramica delle operazioni di base nell’ambiente di authoring AEM. Utilizza la console Sites come base.
+Il video seguente offre una panoramica delle operazioni di base nell’ambiente di authoring di AEM. Utilizza la console Sites come base.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31784?quality=12&learn=on)
 
@@ -34,7 +34,7 @@ In questo video vengono trattate le seguenti funzionalità:
 
      | Console | Scopo |
      |---|---|
-     | Risorse | Queste console consentono di importare e gestire le risorse digitali quali immagini, video, documenti e file audio. Queste risorse possono quindi essere utilizzate da qualsiasi sito web in esecuzione sulla stessa istanza AEM | Communities | Questa console consente di creare e gestire i siti della community per il coinvolgimento e l&#39;abilitazione | Commerce | Questo consente di gestire prodotti, cataloghi di prodotti e ordini relativi ai siti Commerce |
+     | Risorse | Queste console consentono di importare e gestire le risorse digitali quali immagini, video, documenti e file audio. Queste risorse possono quindi essere utilizzate da qualsiasi sito web in esecuzione nella stessa istanza di AEM | Communities | Questa console consente di creare e gestire i siti della community per il coinvolgimento e l&#39;abilitazione | Commerce | Questo consente di gestire prodotti, cataloghi di prodotti e ordini relativi ai siti Commerce |
      | Frammenti di esperienza | Un frammento di esperienza è un’esperienza autonoma che può essere riutilizzata su tutti i canali, supporta le varianti e non richiede di copiare e incollare le esperienze o parti di esse |
      | Moduli | Questa console consente di creare, gestire ed elaborare moduli e documenti |
      | Personalizzazione | Questa console fornisce un framework di strumenti per la creazione e modifica di contenuti mirati e la presentazione di esperienze personalizzate |
@@ -48,7 +48,7 @@ In questo video vengono trattate le seguenti funzionalità:
 * Notifiche
 * Proprietà utente
 * Selettore della barra
-* Visualizzazioni della console del sito AEM
+* Visualizzazioni della console del sito di AEM
    * Vista a elenco
    * Vista a colonne
    * Vista a schede

@@ -1,7 +1,7 @@
 ---
 title: Virtual Private Network (VPN)
-description: Scopri come collegare AEM as a Cloud Service alla tua VPN per creare canali di comunicazione sicuri tra AEM e servizi interni.
-version: Cloud Service
+description: Scopri come collegare AEM as a Cloud Service alla tua VPN per creare canali di comunicazione sicuri tra AEM e i servizi interni.
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
 last-substantial-update: 2024-04-27T00:00:00Z
 duration: 919
-source-git-commit: 29ac030f3774da2c514525f7cb85f6f48b84369f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Virtual Private Network (VPN)
 
-Scopri come collegare AEM as a Cloud Service alla tua VPN per creare canali di comunicazione sicuri tra AEM e servizi interni.
+Scopri come collegare AEM as a Cloud Service alla tua VPN per creare canali di comunicazione sicuri tra AEM e i servizi interni.
 
 ## Che cos&#39;è Virtual Private Network?
 
@@ -265,22 +265,22 @@ Una volta creata la VPN, ora puoi configurarla utilizzando le API di Cloud Manag
 
 3. Le configurazioni proxy di rete privata virtuale possono essere aggiornate utilizzando l&#39;operazione [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) dell&#39;API Cloud Manager. Ricorda che `enableEnvironmentAdvancedNetworkingConfiguration` è un&#39;operazione `PUT`, pertanto tutte le regole devono essere fornite con ogni chiamata di questa operazione.
 
-4. Ora puoi utilizzare la configurazione di uscita Virtual Private Network nel codice AEM e nella configurazione personalizzati.
+4. Ora puoi utilizzare la configurazione di uscita Virtual Private Network nel codice e nella configurazione personalizzati di AEM.
 
 ## Connessione a servizi esterni tramite la rete privata virtuale
 
-Con la rete privata virtuale abilitata, il codice e la configurazione AEM possono utilizzarli per effettuare chiamate a servizi esterni tramite la VPN. Esistono due tipi di chiamate esterne che l’AEM tratta in modo diverso:
+Con la rete privata virtuale abilitata, il codice e la configurazione di AEM possono utilizzarli per effettuare chiamate a servizi esterni tramite la VPN. Esistono due tipi di chiamate esterne che AEM tratta in modo diverso:
 
 1. Chiamate HTTP/HTTPS a servizi esterni
    + Include le chiamate HTTP/HTTPS effettuate a servizi in esecuzione su porte diverse dalle porte standard 80 o 443.
 1. chiamate non HTTP/HTTPS a servizi esterni
    + Include tutte le chiamate non HTTP, ad esempio le connessioni con i server di posta, i database SQL o i servizi eseguiti su altri protocolli non HTTP/HTTPS.
 
-Le richieste HTTP/HTTPS dall’AEM sulle porte standard (80/443) sono consentite per impostazione predefinita, ma non utilizzano la connessione VPN se non configurate in modo appropriato come descritto di seguito.
+Le richieste HTTP/HTTPS provenienti da AEM su porte standard (80/443) sono consentite per impostazione predefinita, ma non utilizzano la connessione VPN se non configurate in modo appropriato come descritto di seguito.
 
 ### HTTP/HTTPS
 
-Quando si creano connessioni HTTP/HTTPS dall’AEM, quando si utilizza la VPN le connessioni HTTP/HTTPS vengono automaticamente escluse dall’AEM. Per supportare le connessioni HTTP/HTTPS non è necessario alcun codice o configurazione aggiuntivi.
+Durante la creazione di connessioni HTTP/HTTPS da AEM, quando si utilizza la VPN, le connessioni HTTP/HTTPS vengono automaticamente escluse da AEM. Per supportare le connessioni HTTP/HTTPS non è necessario alcun codice o configurazione aggiuntivi.
 
 >[!TIP]
 >
@@ -304,7 +304,7 @@ Quando si creano connessioni HTTP/HTTPS dall’AEM, quando si utilizza la VPN le
 
 ### Esempi di codice di connessioni non HTTP/HTTPS
 
-Durante la creazione di connessioni non HTTP/HTTPS (ad es. SQL, SMTP e così via) dall’AEM, la connessione deve essere effettuata attraverso uno speciale nome host fornito dall’AEM.
+Durante la creazione di connessioni non HTTP/HTTPS (ad es. SQL, SMTP e così via) da AEM, la connessione deve essere effettuata tramite uno speciale nome host fornito da AEM.
 
 | Nome variabile | Utilizzare | Codice Java™ | Configurazione OSGi |
 | - |  - | - | - |
@@ -325,7 +325,7 @@ Le connessioni ai servizi esterni vengono quindi chiamate tramite `AEM_PROXY_HOS
       <a  href="./examples/sql-datasourcepool.md"><img alt="Connessione SQL tramite DataSourcePool JDBC" src="./assets//code-examples__sql-osgi.png"/></a>
       <div><strong><a href="./examples/sql-datasourcepool.md">Connessione SQL tramite DataSourcePool JDBC</a></strong></div>
       <p>
-            Esempio di codice Java™ connessione a database SQL esterni tramite la configurazione del pool di origini dati JDBC dell'AEM.
+            Esempio di codice Java™ di connessione a database SQL esterni tramite la configurazione del pool di origini dati JDBC di AEM.
       </p>
     </td>
    <td>
@@ -355,14 +355,14 @@ La configurazione di Virtual Private Network limita l’accesso agli ambienti AE
       <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list"><img alt="Applicazione di un elenco consentiti IP" src="./assets/code_examples__vpn-allow-list.png"/></a>
       <div><strong><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list">Applicazione di un inserisco nell'elenco Consentiti di</a></strong></div>
       <p>
-            Inserire nell'elenco Consentiti Configura un IP in modo che solo il traffico VPN possa accedere all’AEM.
+            Inserire nell'elenco Consentiti Configura un IP in modo che solo il traffico VPN possa accedere ad AEM.
       </p>
     </td>
    <td>
-      <a  href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking"><img alt="Restrizioni all’accesso VPN basato su percorsi per AEM Publish" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking">Restrizioni all'accesso VPN basato su percorso a AEM Publish</a></strong></div>
+      <a  href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking"><img alt="Limitazioni dell’accesso VPN basato su percorsi per AEM Publish" src="./assets/code_examples__vpn-path-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking">Restrizioni all'accesso VPN basato su percorsi per AEM Publish</a></strong></div>
       <p>
-            Richiedi accesso VPN per percorsi specifici sul Publish AEM.
+            Richiedi accesso VPN per percorsi specifici in AEM Publish.
       </p>
     </td>
    <td></td>

@@ -1,25 +1,25 @@
 ---
-title: Utilizzo del Servizio modello dati modulo come passaggio nel flusso di lavoro AEM 6.5
-description: AEM Forms 6.5 ha introdotto la possibilità di creare variabili nel flusso di lavoro AEM. Con questa nuova funzionalità, usare "Invoke Form Data Model Service" nel flusso di lavoro AEM è diventato molto semplice. Il video seguente illustra i passaggi necessari per utilizzare il servizio Richiama modello dati modulo nel flusso di lavoro AEM.
+title: Utilizzo del servizio del modello dati modulo come passaggio nel flusso di lavoro di AEM 6.5
+description: AEM Forms 6.5 ha introdotto la possibilità di creare variabili nel flusso di lavoro di AEM. Con questa nuova funzionalità, è diventato molto semplice utilizzare "Invoke Form Data Model Service" in AEM Workflow. Il video seguente illustra i passaggi necessari per utilizzare il servizio Richiama modello dati modulo nel flusso di lavoro di AEM.
 feature: Workflow
 type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 1f13d82e-c1d0-4c8c-8468-b4a4c5897c71
 last-substantial-update: 2021-02-09T00:00:00Z
 duration: 239
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
 
 ---
 
-# Utilizzo del Servizio modello dati modulo come passaggio nel flusso di lavoro AEM 6.5 {#using-form-data-model-service-as-step-in-workflow}
+# Utilizzo del servizio del modello dati modulo come passaggio nel flusso di lavoro di AEM 6.5 {#using-form-data-model-service-as-step-in-workflow}
 
-A partire da AEM Forms 6.4, ora è possibile utilizzare il Servizio modello dati modulo come parte del flusso di lavoro AEM. Il video seguente illustra i passaggi necessari per configurare il passaggio Modello dati modulo nel flusso di lavoro AEM
+A partire da AEM Forms 6.4, ora è possibile utilizzare il Servizio modello dati modulo come parte del flusso di lavoro AEM. Il video seguente illustra i passaggi necessari per configurare il passaggio Modello dati modulo nel flusso di lavoro di AEM
 
 >La funzionalità illustrata in questo video richiede AEM Forms 6.5.1
 

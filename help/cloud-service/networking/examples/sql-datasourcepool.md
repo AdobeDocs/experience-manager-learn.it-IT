@@ -1,7 +1,7 @@
 ---
 title: Connessioni SQL con DataSourcePool JDBC
-description: Scopri come connettersi ai database SQL da AEM as a Cloud Service utilizzando le porte di uscita e il DataSourcePool JDBC dell’AEM.
-version: Cloud Service
+description: Scopri come connettersi ai database SQL da AEM as a Cloud Service utilizzando le porte di uscita e il DataSourcePool JDBC di AEM.
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-9355
 thumbnail: KT-9355.jpeg
 exl-id: c1a26dcb-b2ae-4015-b865-2ce32f4fa869
 duration: 117
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Connessioni SQL con DataSourcePool JDBC
 
-Le connessioni ai database SQL (e ad altri servizi non HTTP/HTTPS) devono essere escluse dall&#39;AEM, incluse quelle effettuate utilizzando il servizio OSGi DataSourcePool dell&#39;AEM per gestire le connessioni.
+Le connessioni ai database SQL (e ad altri servizi non HTTP/HTTPS) devono essere escluse da AEM, incluse quelle effettuate utilizzando il servizio OSGi DataSourcePool di AEM per gestire le connessioni.
 
 ## Supporto di rete avanzato
 
@@ -60,7 +60,7 @@ $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONME
 
 ## Esempio di codice
 
-Questo esempio di codice Java™ è di un servizio OSGi che effettua una connessione a un database MySQL esterno tramite il servizio OSGi DataSourcePool dell’AEM.
+Questo esempio di codice Java™ è di un servizio OSGi che effettua una connessione a un database MySQL esterno tramite il servizio OSGi DataSourcePool di AEM.
 La configurazione del factory OSGi DataSourcePool specifica a sua volta una porta (`30001`) mappata tramite la regola `portForwards` nell&#39;operazione [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) all&#39;host e alla porta esterni, `mysql.example.com:3306`.
 
 ```json

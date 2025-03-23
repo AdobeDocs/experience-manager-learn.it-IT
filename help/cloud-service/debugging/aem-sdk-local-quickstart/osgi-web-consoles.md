@@ -1,8 +1,8 @@
 ---
-title: Debug dell’SDK AEM tramite la console web OSGi
-description: L’avvio rapido locale dell’SDK dell’AEM dispone di una console web OSGi che fornisce una serie di informazioni e introspezioni nel runtime dell’AEM locale che sono utili per comprendere in che modo l’applicazione viene riconosciuta da e funziona nell’AEM.
+title: Debug di AEM SDK tramite la console web OSGi
+description: L’avvio rapido locale di AEM SDK dispone di una console web OSGi che fornisce una serie di informazioni e introspezioni nel runtime AEM locale che sono utili per comprendere in che modo l’applicazione viene riconosciuta da e funziona in AEM.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 kt: 5265, 5366, 5267
 topic: Development
@@ -10,24 +10,24 @@ role: Developer
 level: Beginner, Intermediate
 exl-id: 0929bc1a-376c-4e16-a540-a276fd5af164
 duration: 486
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 1%
 
 ---
 
-# Debug dell’SDK AEM tramite la console web OSGi
+# Debug di AEM SDK tramite la console web OSGi
 
-L’avvio rapido locale dell’SDK dell’AEM dispone di una console web OSGi che fornisce una serie di informazioni e introspezioni nel runtime dell’AEM locale che sono utili per comprendere in che modo l’applicazione viene riconosciuta da e funziona nell’AEM.
+L’avvio rapido locale di AEM SDK dispone di una console web OSGi che fornisce una serie di informazioni e introspezioni nel runtime AEM locale che sono utili per comprendere in che modo l’applicazione viene riconosciuta da e funziona in AEM.
 
-AEM fornisce molte console OSGi, ciascuna delle quali fornisce informazioni chiave su diversi aspetti dell’AEM; tuttavia, i seguenti elementi sono in genere i più utili per il debug dell’applicazione.
+AEM fornisce diverse console OSGi, ciascuna con informazioni chiave su diversi aspetti di AEM. Tuttavia, i seguenti sono in genere i più utili per il debug dell’applicazione.
 
 ## Bundle
 
 >[!VIDEO](https://video.tv.adobe.com/v/34335?quality=12&learn=on)
 
-La console Bundle è un catalogo dei bundle OSGi e dei relativi dettagli, distribuiti all’AEM, insieme alla possibilità specifica di avviarli e interromperli.
+La console Bundle è un catalogo dei bundle OSGi e dei relativi dettagli, implementato in AEM, insieme alla possibilità di avviarli e interromperli ad hoc.
 
 La console Bundles si trova in:
 
@@ -44,7 +44,7 @@ Facendo clic su ciascun bundle, si forniscono dettagli utili per il debug dell�
 
 >[!VIDEO](https://video.tv.adobe.com/v/34336?quality=12&learn=on)
 
-La console Componenti è un catalogo di tutti i componenti OSGi distribuiti a AEM e fornisce tutte le informazioni su di essi, dal ciclo di vita definito dei componenti OSGi a quali servizi OSGi possono fare riferimento
+La console Componenti è un catalogo di tutti i componenti OSGi distribuiti in AEM e fornisce tutte le informazioni su di essi, dal ciclo di vita definito dei componenti OSGi a quali servizi OSGi possono fare riferimento
 
 La console Componenti si trova in:
 

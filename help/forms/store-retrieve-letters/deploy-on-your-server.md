@@ -3,14 +3,14 @@ title: Distribuire le risorse di esempio sul server
 description: Verificare la funzionalità Salva come bozza per le comunicazioni interattive
 feature: Interactive Communication
 doc-type: article
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 jira: KT-10208
 exl-id: 9053ee29-436a-439a-b592-c3fef9852ea4
 duration: 28
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # Distribuire le risorse di esempio sul server
 
-Seguire le istruzioni riportate di seguito per utilizzare questa funzionalità sul proprio server AEM
+Segui le istruzioni seguenti per utilizzare questa funzionalità sul tuo server AEM
 
 * [Creare lo schema del database](assets/icdrafts.sql)
 * [Importare la libreria client](assets/icdrafts.zip)
@@ -41,6 +41,6 @@ Seguire le istruzioni riportate di seguito per utilizzare questa funzionalità s
 * [Visualizza bozze salvate](http://localhost:4502/content/dam/formsanddocuments/saveddrafts/jcr:content?wcmmode=disabled)
 
 >[!NOTE]
->I file xml vengono memorizzati nella cartella principale dell&#39;installazione del server AEM. Il progetto di eclissi >è fornito per personalizzare la soluzione in base alle tue esigenze.
+>I file xml vengono memorizzati nella cartella principale dell’installazione del server AEM. Il progetto di eclissi >è fornito per personalizzare la soluzione in base alle tue esigenze.
 
 Il progetto eclipse con implementazione di esempio può essere [scaricato da qui](assets/icdrafts-eclipse-project.zip)

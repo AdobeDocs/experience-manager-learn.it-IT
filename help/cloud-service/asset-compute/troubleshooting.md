@@ -1,8 +1,8 @@
 ---
-title: Risolvere i problemi relativi all’estensibilità degli Asset compute per AEM Assets
-description: Di seguito è riportato un indice dei problemi e degli errori più comuni, insieme alle relative risoluzioni, che possono verificarsi durante lo sviluppo e la distribuzione di processi di lavoro di Asset compute personalizzati per AEM Assets.
+title: Risoluzione dei problemi di estensibilità di Asset Compute per AEM Assets
+description: Di seguito è riportato un indice dei problemi e degli errori comuni, insieme alle risoluzioni, che possono essere riscontrati durante lo sviluppo e la distribuzione di processi di lavoro Asset Compute personalizzati per AEM Assets.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-5802
 thumbnail: KT-5802.jpg
@@ -11,16 +11,16 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
 duration: 260
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 0%
 
 ---
 
-# Risoluzione dei problemi di estensibilità degli Asset compute
+# Risolvere i problemi relativi all’estensibilità di Asset Compute
 
-Di seguito è riportato un indice dei problemi e degli errori più comuni, insieme alle relative risoluzioni, che possono verificarsi durante lo sviluppo e la distribuzione di processi di lavoro di Asset compute personalizzati per AEM Assets.
+Di seguito è riportato un indice dei problemi e degli errori comuni, insieme alle risoluzioni, che possono essere riscontrati durante lo sviluppo e la distribuzione di processi di lavoro Asset Compute personalizzati per AEM Assets.
 
 ## Sviluppa{#develop}
 
@@ -39,10 +39,10 @@ Di seguito è riportato un indice dei problemi e degli errori più comuni, insie
 
 + __Errore:__ Errore: file richiesti mancanti alla convalida (`.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY`) in setupAssetCompute asincrono (`.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY`)
 + __Causa:__ file `console.json` mancante nella radice del progetto Asset Compute
-+ __Risoluzione:__ Scarica un nuovo `console.json` dal tuo progetto di Adobe I/O
++ __Risoluzione:__ Scarica un nuovo `console.json` dal tuo progetto Adobe I/O
    1. In console.adobe.io, apri il progetto Adobe I/O per il quale il progetto Asset Compute è configurato
    1. Tocca il pulsante __Scarica__ in alto a destra
-   1. Salvare il file scaricato nella directory principale del progetto di Asset compute utilizzando il nome file `console.json`
+   1. Salva il file scaricato nella directory principale del progetto Asset Compute utilizzando il nome file `console.json`
 
 ### Rientro YAML non corretto in manifest.yml{#incorrect-yaml-indentation}
 
@@ -52,7 +52,7 @@ Di seguito è riportato un indice dei problemi e degli errori più comuni, insie
 
 ### Il limite memorySize è impostato su un valore troppo basso{#memorysize-limit-is-set-too-low}
 
-+ __Errore:__ OpenWhiskError del server di sviluppo locale: PUT https://adobeioruntime.net/api/v1/namespaces/xxx-xxx-xxx/actions/xxx-0.0.1/__secured_workeroverwrite=true ha restituito HTTP 400 (richiesta non valida) —> &quot;Il contenuto della richiesta non è valido:requisito non riuscito: memoria inferiore di 64 MB alla soglia consentita di 134217728 B&quot;
++ __Errore:__ OpenWhiskError del server di sviluppo locale: PUT https://adobeioruntime.net/api/v1/namespaces/xxx-xxx-xxx/actions/xxx-0.0.1/__secured_workeroverwrite=true ha restituito HTTP 400 (richiesta non valida) —> &quot;Il contenuto della richiesta non era corretto:requisito non riuscito: memoria inferiore di 64 MB alla soglia consentita di 134217728 B&quot;
 + __Causa:__ Un limite `memorySize` per il processo di lavoro in `manifest.yml` è stato impostato al di sotto della soglia minima consentita, come riportato dal messaggio di errore in byte.
 + __Risoluzione:__ Rivedi i limiti di `memorySize` in `manifest.yml` e assicurati che siano tutti grandi rispetto alla soglia minima consentita.
 
@@ -64,7 +64,7 @@ Di seguito è riportato un indice dei problemi e degli errori più comuni, insie
 
 ### Menu a discesa dei file di Source non corretto{#source-files-dropdown-incorrect}
 
-Lo strumento di sviluppo Asset Compute può entrare in uno stato in cui vengono estratti dati non aggiornati ed è più evidente nel menu a discesa __Source file__ che mostra elementi non corretti.
+Lo strumento di sviluppo Asset Compute potrebbe entrare in uno stato in cui vengono estratti dati non aggiornati ed è più evidente nel menu a discesa __Source file__ che mostra elementi non corretti.
 
 + __Errore:__ nel menu a discesa del file Source vengono visualizzati elementi non corretti.
 + __Causa:__ lo stato non aggiornato del browser nella cache causa la
@@ -72,9 +72,9 @@ Lo strumento di sviluppo Asset Compute può entrare in uno stato in cui vengono 
 
 ### Parametro query devToolToken mancante o non valido{#missing-or-invalid-devtooltoken-query-parameter}
 
-+ __Errore:__ notifica &quot;Non autorizzato&quot; nello strumento di sviluppo Asset compute
++ __Errore:__ notifica &quot;Non autorizzato&quot; nello strumento di sviluppo Asset Compute
 + __Causa:__ `devToolToken` mancante o non valido
-+ __Risoluzione:__ Chiudere la finestra del browser dello strumento di sviluppo Asset Compute, terminare tutti i processi dello strumento di sviluppo in esecuzione avviati tramite il comando `aio app run` e riavviare lo strumento di sviluppo (utilizzando `aio app run`).
++ __Risoluzione:__ Chiudere la finestra del browser Strumenti di sviluppo di Asset Compute, terminare tutti i processi dello strumento di sviluppo in esecuzione avviati tramite il comando `aio app run` e riavviare lo strumento di sviluppo (utilizzando `aio app run`).
 
 ### Impossibile rimuovere i file di origine{#unable-to-remove-source-files}
 
@@ -98,7 +98,7 @@ Lo strumento di sviluppo Asset Compute può entrare in uno stato in cui vengono 
 
 + __Errore:__ Errore: la rappresentazione &#39;rendition.xxx&#39; non è quella prevista.
 + __Causa:__ Il processo di lavoro ha generato una rappresentazione diversa da quella fornita per `rendition.<extension>` nel test case.
-   + Se il file `rendition.<extension>` previsto non viene creato esattamente nello stesso modo della rappresentazione generata localmente nel test case, il test potrebbe non riuscire in quanto ci potrebbe essere una qualche differenza nei bit. Ad esempio, se il processo di lavoro Asset Compute modifica il contrasto utilizzando le API e il risultato atteso viene creato regolando il contrasto in Adobe Photoshop CC, i file possono apparire gli stessi, ma le variazioni minori nei bit possono essere diverse.
+   + Se il file `rendition.<extension>` previsto non viene creato esattamente nello stesso modo della rappresentazione generata localmente nel test case, il test potrebbe non riuscire in quanto ci potrebbe essere una qualche differenza nei bit. Ad esempio, se il processo di lavoro di Asset Compute modifica il contrasto utilizzando le API e il risultato atteso viene creato regolando il contrasto in Adobe Photoshop CC, i file possono apparire gli stessi, ma le variazioni minori nei bit possono essere diverse.
 + __Risoluzione:__ esaminare l&#39;output del rendering dal test passando a `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>` e confrontarlo con il file di rendering previsto nel test case. Per creare una risorsa prevista esatta:
    + Utilizza lo strumento di sviluppo per generare una rappresentazione, convalidarla correttamente e utilizzarla come file di rappresentazione previsto
    + In alternativa, convalidare il file generato da test in `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`, verificarne la correttezza e utilizzarlo come file di rendering previsto
@@ -113,7 +113,7 @@ Lo strumento di sviluppo Asset Compute può entrare in uno stato in cui vengono 
 
 ### Punti di interruzione non in pausa{#breakpoints-no-pausing}
 
-+ __Errore__: durante l&#39;esecuzione del processo di lavoro Asset Compute dallo strumento di sviluppo con debug, il codice VS non viene messo in pausa nei punti di interruzione.
++ __Errore__: quando si esegue il processo di lavoro Asset Compute dallo strumento di sviluppo con debug, il codice VS non viene messo in pausa nei punti di interruzione.
 
 #### Debugger codice VS non collegato{#vs-code-debugger-not-attached}
 
@@ -123,7 +123,7 @@ Lo strumento di sviluppo Asset Compute può entrare in uno stato in cui vengono 
 #### Debugger del codice VS collegato dopo l&#39;avvio dell&#39;esecuzione del processo di lavoro{#vs-code-debugger-attached-after-worker-execution-began}
 
 + __Causa:__ il debugger del codice di Visual Studio non è stato collegato prima di toccare __Esegui__ nello strumento di sviluppo.
-+ __Risoluzione:__ Verificare che il debugger sia collegato esaminando la console di debug di VS Code (Visualizza > Console di debug), quindi eseguire nuovamente il processo di lavoro Asset Compute da Strumento di sviluppo.
++ __Risoluzione:__ Verificare che il debugger sia collegato esaminando la console di debug di VS Code (Visualizza > Console di debug), quindi eseguire nuovamente Asset Compute worker da Development Tool.
 
 ### Timeout del processo di lavoro durante il debug{#worker-times-out-while-debugging}
 
@@ -145,7 +145,7 @@ Lo strumento di sviluppo Asset Compute può entrare in uno stato in cui vengono 
 
 ## Distribuzione{#deploy}
 
-### Rappresentazione personalizzata mancante dalla risorsa in AEM{#custom-rendition-missing-from-asset}
+### Rappresentazione personalizzata mancante nella risorsa in AEM{#custom-rendition-missing-from-asset}
 
 + __Errore:__ le risorse nuove ed elaborate nuovamente sono state elaborate correttamente, ma manca la rappresentazione personalizzata
 
@@ -159,7 +159,7 @@ Lo strumento di sviluppo Asset Compute può entrare in uno stato in cui vengono 
 + __Causa:__ la risorsa si trova in una cartella alla quale è stato applicato il profilo di elaborazione del processo di lavoro personalizzato. Tra la cartella e la risorsa è stato tuttavia applicato un profilo di elaborazione diverso che non utilizza il processo di lavoro del cliente.
 + __Risoluzione:__ combinare o altrimenti riconciliare i due profili di elaborazione e rimuovere il profilo di elaborazione intermedio
 
-### Elaborazione delle risorse non riuscita in AEM{#asset-processing-fails}
+### L’elaborazione delle risorse in AEM non riesce{#asset-processing-fails}
 
 + __Errore:__ visualizzazione del badge Elaborazione risorsa non riuscita sulla risorsa
 + __Causa:__ Errore durante l&#39;esecuzione del processo di lavoro personalizzato

@@ -1,7 +1,7 @@
 ---
 title: Connessioni HTTP/HTTPS per indirizzo IP in uscita dedicato e VPN
 description: Scopri come effettuare richieste HTTP/HTTPS da AEM as a Cloud Service a servizi web esterni in esecuzione per indirizzo IP in uscita dedicato e VPN
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -10,7 +10,7 @@ jira: KT-9354
 thumbnail: KT-9354.jpeg
 exl-id: a565bc3a-675f-4d5e-b83b-c14ad70a800b
 duration: 70
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Prima di seguire questa esercitazione, assicurati che la configurazione di rete 
 Questo esempio di codice Java™ fa parte di un servizio OSGi che può essere eseguito in AEM as a Cloud Service e che effettua una connessione HTTP a un server web esterno su 8080. Le connessioni HTTPS (o HTTP) vengono automaticamente escluse da AEM as a Cloud Service e non richiedono uno sviluppo speciale.
 
 >[!NOTE]
-> Si consiglia di utilizzare le [API Java™ 11 HTTP](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) per effettuare chiamate HTTP/HTTPS dall&#39;AEM.
+> Si consiglia di utilizzare le [API Java™ 11 HTTP](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) per effettuare chiamate HTTP/HTTPS da AEM.
 
 + `core/src/com/adobe/aem/wknd/examples/connections/impl/HttpExternalServiceImpl.java`
 

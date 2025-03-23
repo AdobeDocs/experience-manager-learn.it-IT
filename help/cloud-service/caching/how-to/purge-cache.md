@@ -1,7 +1,7 @@
 ---
 title: Come eliminare la cache CDN
 description: Scopri come eliminare o rimuovere la risposta HTTP dalla cache dal CDN di AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
 role: Admin, Architect, Developer
@@ -12,7 +12,7 @@ last-substantial-update: 2024-08-13T00:00:00Z
 jira: KT-15963
 thumbnail: KT-15963.jpeg
 exl-id: 5d81f6ee-a7df-470f-84b9-12374c878a1b
-source-git-commit: 0639217a3bab7799eec3bbcc40c1a69ed1b12682
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Scopri come impostare Purge API Token per eliminare la cache CDN.
 
 Il token API di eliminazione viene creato configurando la regola CDN nel codice del progetto AEM.
 
-1. Aprire il file `cdn.yaml` dalla cartella principale `config` del progetto AEM. Ad esempio, il file cdn.yaml](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) del progetto [WKND.
+1. Apri il file `cdn.yaml` dalla cartella principale `config` del progetto AEM. Ad esempio, il file cdn.yaml](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) del progetto [WKND.
 
 1. Aggiungi la seguente regola CDN al file `cdn.yaml`:
 
@@ -71,7 +71,7 @@ data:
 
 Nella regola precedente, sia `purgeKey1` che `purgeKey2` vengono aggiunti dall&#39;inizio per supportare la rotazione dei segreti senza interruzioni. Tuttavia, è possibile iniziare con solo `purgeKey1` e aggiungere `purgeKey2` in un secondo momento durante la rotazione dei segreti.
 
-1. Salva, conferma e invia le modifiche all’archivio Adobe a monte.
+1. Salva, conferma e invia le modifiche all’archivio a monte di Adobe.
 
 ### Creare la variabile di ambiente Cloud Manager
 

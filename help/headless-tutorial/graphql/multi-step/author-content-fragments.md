@@ -1,7 +1,7 @@
 ---
-title: Authoring di frammenti di contenuto - Guida introduttiva a AEM headless - GraphQL
+title: Authoring di frammenti di contenuto - Guida introduttiva ad AEM Headless - GraphQL
 description: Introduzione a Adobe Experience Manager (AEM) e GraphQL. Crea e modifica un nuovo frammento di contenuto basato su un modello di frammento di contenuto. Scopri come creare varianti di Frammenti di contenuto.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 jira: KT-6713
 thumbnail: 22451.jpg
@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
 duration: 173
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 2%
@@ -35,7 +35,7 @@ Questo è un tutorial in più parti e si presume che i passaggi descritti in [De
 
 I frammenti di contenuto sono memorizzati in cartelle in AEM Assets. Per creare frammenti di contenuto dai modelli creati nel capitolo precedente, è necessario creare una cartella per memorizzarli. È necessaria una configurazione della cartella per abilitare la creazione di frammenti da modelli specifici.
 
-1. Dalla schermata iniziale AEM, passa a **Assets** > **File**.
+1. Dalla schermata iniziale di AEM, passa a **Assets** > **File**.
 
    ![Accedi ai file di risorse](assets/author-content-fragments/navigate-assets-files.png)
 
@@ -50,7 +50,7 @@ I frammenti di contenuto sono memorizzati in cartelle in AEM Assets. Per creare 
 
    ![Apri proprietà cartella](assets/author-content-fragments/open-folder-properties.png)
 
-1. Tocca la scheda **Cloud Service**. Nella scheda Configurazione cloud, utilizza Trova percorso per selezionare la configurazione **Il mio progetto**. Il valore deve essere `/conf/my-project`.
+1. Tocca la scheda **Servizi cloud**. Nella scheda Configurazione cloud, utilizza Trova percorso per selezionare la configurazione **Il mio progetto**. Il valore deve essere `/conf/my-project`.
 
    ![Imposta configurazione cloud](assets/author-content-fragments/set-cloud-config-my-project.png)
 
@@ -78,11 +78,11 @@ I frammenti di contenuto sono memorizzati in cartelle in AEM Assets. Per creare 
 
 >[!TIP]
 >
->Per gli utenti locali dell’SDK AEM: utilizza l’interfaccia utente di AEM Assets per creare e creare frammenti di contenuto, invece dell’interfaccia utente Frammenti di contenuto descritta di seguito. Per istruzioni dettagliate, consulta la [documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html).
+>Per gli utenti AEM SDK locali: utilizza l’interfaccia utente di AEM Assets per creare e creare frammenti di contenuto, invece dell’interfaccia utente Frammenti di contenuto descritta di seguito. Per istruzioni dettagliate, consulta la [documentazione di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html).
 
 Successivamente vengono creati diversi frammenti di contenuto in base ai modelli **Team** e **Persona**.
 
-1. Dalla schermata iniziale dell&#39;AEM, tocca **Frammenti di contenuto** per aprire l&#39;interfaccia utente Frammenti di contenuto.
+1. Dalla schermata iniziale di AEM, tocca **Frammenti di contenuto** per aprire l&#39;interfaccia utente Frammenti di contenuto.
 
    ![Interfaccia utente frammento di contenuto](assets/author-content-fragments/cf-fragment-ui.png)
 
@@ -105,11 +105,11 @@ Successivamente vengono creati diversi frammenti di contenuto in base ai modelli
 
    Tocca **Crea** per creare il frammento Persona.
 
-1. Ripeti quindi i passaggi per creare un frammento **Team** che rappresenta **Alpha team**:
+1. Ripeti quindi i passaggi per creare un frammento **Team** che rappresenta **Team Alpha**:
 
    * Percorso: `/content/dam/my-project/en`
    * Modello per frammenti di contenuto: **Team**
-   * Titolo: **Alpha team**
+   * Titolo: **Team Alpha**
    * Nome: `team-alpha`
 
    Tocca **Crea** per creare il frammento Team.
@@ -136,7 +136,7 @@ Quindi popola i frammenti appena creati con i dati.
 
 ## Modifica frammento di contenuto team {#edit-team-content-fragment}
 
-1. Apri il frammento di contenuto **Alpha team** tramite l&#39;interfaccia utente Frammento di contenuto.
+1. Apri il frammento di contenuto **Team Alpha** tramite l&#39;interfaccia utente Frammento di contenuto.
 1. Compila i campi per **Titolo**, **Nome breve** e **Descrizione**.
 1. Seleziona i **Frammenti di contenuto John Doe** e **Alison Smith** per popolare il campo **Membri team**:
 
@@ -146,22 +146,22 @@ Quindi popola i frammenti appena creati con i dati.
    >
    >Puoi anche creare frammenti di contenuto in linea utilizzando il pulsante **Nuovo frammento di contenuto**.
 
-1. Tocca **Salva e chiudi** per salvare le modifiche apportate al frammento di Alpha del team.
+1. Tocca **Salva e chiudi** per salvare le modifiche apportate al frammento Team Alpha.
 
-## Frammenti di contenuto Publish
+## Pubblicare frammenti di contenuto
 
 >[!TIP]
 >
->Per gli utenti locali dell’SDK AEM: utilizza l’interfaccia utente di AEM Assets per pubblicare frammenti di contenuto, invece dell’interfaccia utente Frammenti di contenuto descritta di seguito. Per istruzioni dettagliate, consulta la [documentazione AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html#publishing-and-referencing-a-fragment).
+>Per gli utenti AEM SDK locali: utilizza l’interfaccia utente di AEM Assets per pubblicare frammenti di contenuto, invece dell’interfaccia utente Frammenti di contenuto descritta di seguito. Per istruzioni dettagliate, consulta la [documentazione di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html#publishing-and-referencing-a-fragment).
 
 Al momento della revisione e della verifica, pubblica `Content Fragments` creato
 
-1. Dalla schermata iniziale dell&#39;AEM, tocca **Frammenti di contenuto** per aprire l&#39;interfaccia utente Frammenti di contenuto.
+1. Dalla schermata iniziale di AEM, tocca **Frammenti di contenuto** per aprire l&#39;interfaccia utente Frammenti di contenuto.
 
 1. Nella barra a sinistra, espandi **Il mio progetto** e tocca **Inglese**.
 
-1. Tocca la casella di controllo accanto ai frammenti di contenuto e tocca **Publish**.
-   ![Frammento di contenuto Publish](assets/author-content-fragments/publish-content-fragment.png)
+1. Tocca la casella di controllo accanto ai frammenti di contenuto e tocca **Pubblica**.
+   ![Pubblica frammento di contenuto](assets/author-content-fragments/publish-content-fragment.png)
 
 ## Congratulazioni. {#congratulations}
 
@@ -169,7 +169,7 @@ Congratulazioni, hai creato più frammenti di contenuto e creato una variante.
 
 ## Passaggi successivi {#next-steps}
 
-Nel prossimo capitolo, [Esplora le API GraphQL](explore-graphql-api.md), esplorerai le API GraphQL dell&#39;AEM utilizzando lo strumento GrapiQL integrato. Scopri come l’AEM genera automaticamente uno schema GraphQL basato su un modello di Frammento di contenuto. Sperimenterai la costruzione di query di base utilizzando la sintassi GraphQL.
+Nel prossimo capitolo, [Esplora le API di GraphQL](explore-graphql-api.md), esplorerai le API di AEM GraphQL utilizzando lo strumento GrapiQL integrato. Scopri come AEM genera automaticamente uno schema GraphQL basato su un modello di Frammento di contenuto. Sperimenterai la costruzione di query di base utilizzando la sintassi GraphQL.
 
 ## Documentazione correlata
 

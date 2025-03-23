@@ -1,14 +1,14 @@
 ---
-title: 'Query GraphQL persistenti: concetti avanzati di AEM headless, GraphQL'
-description: In questo capitolo di Advanced concepts of Adobe Experience Manager (AEM) Headless, scopri come creare e aggiornare query GraphQL persistenti con i parametri. Scopri come trasmettere i parametri di controllo cache nelle query persistenti.
-version: Cloud Service
+title: 'Query GraphQL persistenti: concetti avanzati di AEM Headless - GraphQL'
+description: In questo capitolo di Concetti avanzati di Adobe Experience Manager (AEM) Headless, scopri come creare e aggiornare query GraphQL persistenti con parametri. Scopri come trasmettere i parametri di controllo cache nelle query persistenti.
+version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 6a8e90ae-0765-4066-9df4-a3e4d2cda285
 duration: 183
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 1%
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 # Query GraphQL persistenti
 
-Le query persistenti sono query memorizzate nel server Adobe Experience Manager (AEM). I client possono inviare una richiesta HTTP GET con il nome della query per eseguirla. Il vantaggio di questo approccio è la possibilità di memorizzazione in cache. Mentre le query GraphQL lato client possono essere eseguite anche utilizzando richieste HTTP POST, che non possono essere memorizzate nella cache, le query persistenti possono essere memorizzate nella cache da cache HTTP o da una rete CDN, migliorando le prestazioni. Le query persistenti consentono di semplificare le richieste e migliorare la sicurezza, in quanto sono incapsulate nel server e l’amministratore AEM ne ha il pieno controllo. È **buona prassi ed è vivamente consigliato** utilizzare query persistenti quando si lavora con l&#39;API GraphQL dell&#39;AEM.
+Le query persistenti sono query memorizzate sul server Adobe Experience Manager (AEM). I client possono inviare una richiesta HTTP GET con il nome della query per eseguirla. Il vantaggio di questo approccio è la possibilità di memorizzazione in cache. Mentre le query GraphQL lato client possono essere eseguite anche utilizzando richieste HTTP POST, che non possono essere memorizzate nella cache, le query persistenti possono essere memorizzate nella cache da cache HTTP o da una rete CDN, migliorando le prestazioni. Le query persistenti ti consentono di semplificare le richieste e migliorare la sicurezza, in quanto sono incapsulate nel server e l’amministratore di AEM ne ha il pieno controllo. È **buona prassi ed è vivamente consigliato** utilizzare le query persistenti quando si lavora con l&#39;API GraphQL di AEM.
 
-Nel capitolo precedente, hai esplorato alcune query GraphQL avanzate per raccogliere dati per l’app WKND. In questo capitolo, rendi le query persistenti a AEM e scopri come utilizzare il controllo della cache sulle query persistenti.
+Nel capitolo precedente, hai esplorato alcune query GraphQL avanzate per raccogliere dati per l’app WKND. In questo capitolo, rendi le query persistenti in AEM e scopri come utilizzare il controllo della cache sulle query persistenti.
 
 ## Prerequisiti {#prerequisites}
 
@@ -34,7 +34,7 @@ In questo capitolo, scopri come:
 
 ## Rivedi l&#39;impostazione di configurazione _Query GraphQL persistenti_
 
-Esaminiamo che _le query persistenti di GraphQL_ sono abilitate per il progetto del sito WKND nell&#39;istanza dell&#39;AEM.
+Esaminiamo che _le query persistenti di GraphQL_ sono abilitate per il progetto del sito WKND nell&#39;istanza di AEM.
 
 1. Passa a **Strumenti** > **Generale** > **Browser configurazioni**.
 
@@ -165,7 +165,7 @@ In questa sezione, rendiamo persistente la query GraphQL che viene successivamen
 
 Comprendiamo in che modo le query persistenti con variabili vengono eseguite dall’applicazione lato client codificando i caratteri speciali.
 
-Per eseguire una query persistente, l’applicazione client effettua una richiesta di GET utilizzando la seguente sintassi:
+Per eseguire una query persistente, l’applicazione client effettua una richiesta GET utilizzando la seguente sintassi:
 
 ```
 GET <AEM_HOST>/graphql/execute.json/<Project-Config-Name>/<Persisted-Query-Name>
@@ -207,13 +207,13 @@ Eseguendo la query `getAllAdventureDetailsBySlug` dal terminale della riga di co
 
 >[!TIP]
 >
->    Se esegui la query di cui sopra nell’ambiente di authoring AEM, devi inviare le credenziali. Consulta [Token di accesso per lo sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html) per una dimostrazione e [Chiamata dell&#39;API AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api) per i dettagli della documentazione.
+>    Se esegui la query di cui sopra nell’ambiente AEM Author, devi inviare le credenziali. Consulta [Token di accesso per lo sviluppo locale](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token.html) per una dimostrazione e [Chiamata dell&#39;API AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#calling-the-aem-api) per i dettagli della documentazione.
 
 Rivedi inoltre [Come eseguire una query persistente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#execute-persisted-query), [Utilizzando le variabili di query](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#query-variables) e [Codificare l&#39;URL della query per l&#39;utilizzo da parte di un&#39;app](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html#encoding-query-url) per apprendere l&#39;esecuzione di query persistenti da parte delle applicazioni client.
 
 ## Aggiornamento dei parametri di controllo cache nelle query persistenti {#cache-control-all-adventures}
 
-L’API GraphQL dell’AEM ti consente di aggiornare i parametri predefiniti di controllo cache alle query per migliorare le prestazioni. I valori predefiniti per il controllo della cache sono:
+L’API GraphQL di AEM ti consente di aggiornare i parametri predefiniti di controllo cache alle query per migliorare le prestazioni. I valori predefiniti per il controllo della cache sono:
 
 * 60 secondi è il valore TTL predefinito (maxage=60) per il client (ad esempio, un browser)
 

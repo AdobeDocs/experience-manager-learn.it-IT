@@ -2,14 +2,14 @@
 title: Sviluppo per differenza di pagina in AEM Sites
 description: Questo video mostra come fornire stili personalizzati per la funzionalità Differenza pagina di AEM Sites.
 feature: Authoring
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 doc-type: Technical Video
 exl-id: 7d600b16-bbb3-4f21-ae33-4df59b1bb39d
 duration: 281
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Questo video mostra come fornire stili personalizzati per la funzionalità Diffe
 >
 >Questo video aggiunge file CSS personalizzati alla libreria client we.Retail, dove le modifiche devono essere apportate al progetto AEM Sites del personalizzatore, nel codice di esempio seguente: `my-project`.
 
-La differenza di pagina dell&#39;AEM ottiene il CSS OOTB tramite un caricamento diretto di `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
+La differenza di pagina di AEM ottiene il CSS OOTB tramite un caricamento diretto di `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
 
 A causa di questo carico diretto di CSS, anziché utilizzare una categoria di librerie client, è necessario trovare un altro punto di inserimento per gli stili personalizzati, e questo punto di inserimento personalizzato è la libreria client di authoring del progetto.
 
@@ -122,5 +122,5 @@ Il risultato finale di una pagina con differenze e gli stili sopra applicati sar
 ## Risorse aggiuntive {#additional-resources}
 
 * [Scarica il sito di esempio we.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
-* [Utilizzo delle librerie client AEM](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/clientlibs.html)
+* [Utilizzo delle librerie client di AEM](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * [Meno documentazione CSS](https://lesscss.org/)

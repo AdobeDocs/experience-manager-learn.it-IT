@@ -5,12 +5,13 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16276
-source-git-commit: 86d282b426402c9ad6be84e9db92598d0dc54f85
+exl-id: 52205a93-d03c-430c-a707-b351ab333939
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 3%
@@ -19,7 +20,7 @@ ht-degree: 3%
 
 # Definisci lo stile nel criterio per il componente
 
-* Accedi all’istanza AEM locale predisposta per il cloud e passa a Strumenti | Generale | Modelli | il nome del progetto.
+* Accedi all’istanza AEM di Cloud Ready locale e passa a Strumenti. | Generale | Modelli | il nome del progetto.
 
 * Seleziona e apri il modello **Vuoto con componenti core** in modalità di modifica.
 * Fai clic sull’icona del componente pulsante per aprire l’editor dei criteri.

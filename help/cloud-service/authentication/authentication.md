@@ -1,7 +1,7 @@
 ---
 title: Autenticazione in AEM as a Cloud Service
 description: Scopri l’autenticazione in AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Integrations, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: KT-10436.png
 last-substantial-update: 2022-10-14T00:00:00Z
 exl-id: 4dba6c09-2949-4153-a9bc-d660a740f8f7
 duration: 28
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 3%
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 AEM as a Cloud Service supporta più opzioni di autenticazione e varia in base al tipo di servizio.
 
-|                       | Autore AEM | Pubblicazione AEM |
+|                       | AEM Author | AEM Publish |
 |-----------------------|:----------:|:-----------:|
 | [Adobe IMS](../accessing/overview.md) | ✔ | ✘ |
 | · [SAML 2.0 tramite Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#how-to-set-up) | ✔ | ✘ |
@@ -42,14 +42,14 @@ Per informazioni dettagliate su come impostare e utilizzare l’approccio di aut
       <a  href="../accessing/overview.md"><img alt="Adobe IMS" src="./assets/card--adobe-ims.png"/></a>
       <div><strong><a href="../accessing/overview.md">Adobe IMS</a></strong></div>
       <p>
-          Gestisci l’accesso di creazione AEM tramite Adobe IMS tramite Adobe Admin Console.
+          Gestisci l’accesso Autore AEM tramite Adobe IMS tramite Adobe Admin Console.
       </p>
     </td>   
    <td>
       <a  href="./saml-2-0.md"><img alt="SAML 2.0" src="./assets/card--saml-2-0.png"/></a>
       <div><strong><a href="./saml-2-0.md">SAML 2.0</a></strong></div>
       <p>
-        Autentica l’utente del sito web in un IDP utilizzando l’integrazione SAML 2.0 del servizio Publish dell’AEM.
+        Autentica l’utente del sito web in un IDP utilizzando l’integrazione SAML 2.0 del servizio di pubblicazione di AEM.
       </p>
     </td>   
    <td>

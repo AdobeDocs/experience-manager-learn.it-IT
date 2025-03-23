@@ -1,7 +1,7 @@
 ---
 title: Registri comuni di AEM Dispatcher
 description: Dai un’occhiata alle voci di registro comuni da Dispatcher e scopri cosa significano e come gestirle.
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration, Performance
 feature: Dispatcher
 role: Admin
@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7fe1b4a5-6813-4ece-b3da-40af575ea0ed
 duration: 229
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 0%
@@ -109,9 +109,9 @@ Fri Jul 20 22:31:15 2018 W pid 3648 Unable to connect socket to 10.43.3.40:4502:
 Fri Jul 20 22:31:15 2018 W pid 3648 Unable to connect to any backend in farm authorfarm
 ```
 
-Ciò si verifica quando l’indirizzo IP configurato nella sezione relativa ai rendering della farm è errato. Oppure l&#39;istanza dell&#39;AEM ha smesso di rispondere o di ascoltare e la Dispatcher non è in grado di raggiungerla.
+Ciò si verifica quando l’indirizzo IP configurato nella sezione relativa ai rendering della farm è errato. Oppure l’istanza di AEM ha smesso di rispondere o di ascoltare e Dispatcher non è in grado di raggiungerla.
 
-Controlla le regole del firewall e che l’istanza AEM sia in esecuzione e integra.
+Controlla le regole del firewall, che l’istanza di AEM sia integra e in esecuzione.
 
 Voci di registro di esempio di timeout del gateway:
 
@@ -120,7 +120,7 @@ Fri Jul 20 22:32:42 2018 I pid 3648 "GET /favicon.ico" 502 - 54034ms authorfarm/
 Fri Jul 20 22:35:45 2018 I pid 3648 "GET /favicon.ico" 503 - 54234ms authorfarm/-
 ```
 
-Ciò significa che l’istanza dell’AEM aveva un socket aperto che poteva raggiungere e che si è interrotta con la risposta. Ciò significa che l’istanza dell’AEM era troppo lenta o non integra e che Dispatcher ha raggiunto le impostazioni di timeout configurate nella sezione relativa al rendering della farm. Aumenta l’impostazione di timeout oppure integra l’istanza dell’AEM.
+Ciò significa che l’istanza di AEM aveva un socket aperto che poteva raggiungere e che si è interrotta con la risposta. Ciò significa che l’istanza di AEM era troppo lenta o non integra e Dispatcher ha raggiunto le impostazioni di timeout configurate nella sezione relativa al rendering della farm. Aumenta l’impostazione di timeout oppure integra l’istanza di AEM.
 
 ## Livello di memorizzazione in cache
 
@@ -169,7 +169,7 @@ Thu Sep 27 17:35:11 2018 W pid 18936 Unable to fetch vanity URLs from 10.43.0.42
 
 Questo errore si verifica quando il Dispatcher è stato configurato per l’utilizzo del filtro automatico dinamico per consentire gli URL personalizzati, ma la configurazione non è stata completata con l’installazione del pacchetto sul renderer AEM.
 
-Per risolvere questo problema, installa il feature pack per gli URL personalizzati nell’istanza AEM e consenti che sia pronto per l’utente anonimo. Dettagli [qui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html)
+Per risolvere questo problema, installa il feature pack per gli URL personalizzati nell’istanza di AEM e consenti che sia pronto per l’utente anonimo. Dettagli [qui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html)
 
 L’impostazione di un URL personalizzato funzionante è simile al seguente:
 
@@ -201,6 +201,6 @@ Voce di registro di esempio:
 Tue Nov 26 16:41:34 2019 I pid 9208 (tid 140112092391168) "GET /content/we-retail/us/en.html" - + 24034ms publishfarm/0
 ```
 
-La pagina è stata recuperata tramite il metodo GET http per il contenuto `/content/we-retail/us/en.html` e ha richiesto 24034 millisecondi. La parte a cui prestare attenzione è alla fine di `publishfarm/0`. Noterai che la destinazione e la corrispondenza coincidono con `publishfarm`. Richiesta recuperata dal rendering 0. Ciò significa che questa pagina doveva essere richiesta all’AEM e quindi memorizzata nella cache. Richiediamo di nuovo questa pagina e vediamo cosa succede al registro.
+La pagina è stata recuperata tramite il metodo http GET per il contenuto `/content/we-retail/us/en.html` e ha richiesto 24034 millisecondi. La parte a cui prestare attenzione è alla fine di `publishfarm/0`. Noterai che la destinazione e la corrispondenza coincidono con `publishfarm`. Richiesta recuperata dal rendering 0. Ciò significa che questa pagina doveva essere richiesta ad AEM e quindi memorizzata nella cache. Richiediamo di nuovo questa pagina e vediamo cosa succede al registro.
 
 [Avanti -> File di sola lettura](./immutable-files.md)

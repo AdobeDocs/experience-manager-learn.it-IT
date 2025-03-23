@@ -1,7 +1,7 @@
 ---
 title: Installare artefatti di terze parti - non disponibile nell’archivio Maven pubblico
 description: Scopri come installare artefatti di terze parti *non disponibili nell’archivio Maven pubblico* durante la creazione e la distribuzione di un progetto AEM.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: OSGI
 topic: Development
 role: Architect, Developer
@@ -11,13 +11,13 @@ duration: 0
 last-substantial-update: 2024-09-13T00:00:00Z
 jira: KT-16207
 thumbnail: KT-16207.jpeg
-source-git-commit: 33415305f6aa183373eaef4bb4978a59325c8a32
+exl-id: 0cec14b3-4be5-4666-a36c-968ea2fc634f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 0%
 
 ---
-
 
 # Installare artefatti di terze parti - non disponibile nell’archivio Maven pubblico
 
@@ -35,7 +35,7 @@ In genere si installa il bundle di terze parti, pacchetto che *è disponibile* n
 
 Ad esempio:
 
-- [Componenti core WCM per AEM](https://github.com/adobe/aem-core-wcm-components) **bundle** aggiunto come dipendenza nel file `pom.xml` del progetto [WKND](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753). In questo caso, l&#39;ambito `provided` viene utilizzato poiché il bundle dei Componenti core WCM dell&#39;AEM è fornito dal runtime dell&#39;AEM. Se il bundle non viene fornito dal runtime AEM, viene utilizzato l&#39;ambito `compile` che è quello predefinito.
+- [AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components) **bundle** è stato aggiunto come dipendenza nel file `pom.xml` ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) del progetto [WKND. In questo caso, l&#39;ambito `provided` viene utilizzato poiché il bundle dei Componenti core WCM AEM viene fornito dal runtime AEM. Se il bundle non viene fornito dal runtime di AEM, viene utilizzato l&#39;ambito `compile` che è l&#39;ambito predefinito.
 
 - [Pacchetto **pacchetto** condiviso WKND](https://github.com/adobe/aem-guides-wknd-shared) aggiunto come dipendenza nel file `pom.xml` del progetto [WKND](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773).
 
@@ -43,7 +43,7 @@ Ad esempio:
 
 ## Scenario raro
 
-Talvolta, durante la creazione e la distribuzione di un progetto AEM, potrebbe essere necessario installare un pacchetto di terze parti, un file jar o un pacchetto **non disponibile** nell&#39;[archivio centrale Maven](https://mvnrepository.com/) o nell&#39;[archivio pubblico Adobe](https://repo.adobe.com/index.html).
+Talvolta, durante la creazione e la distribuzione di un progetto AEM, potrebbe essere necessario installare un bundle, un file jar o un pacchetto di terze parti **non disponibile** nell&#39;[archivio centrale Maven](https://mvnrepository.com/) o nell&#39;[archivio pubblico Adobe](https://repo.adobe.com/index.html).
 
 I motivi potrebbero essere:
 
@@ -59,13 +59,13 @@ Per seguire questa esercitazione, è necessario:
 
 - Configurazione di [ambiente di sviluppo AEM locale](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) o [ambiente di sviluppo rapido (RDE)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview).
 
-- Il [progetto WKND dell&#39;AEM](https://github.com/adobe/aem-guides-wknd) _per aggiungere il bundle, il file jar o il pacchetto di terze parti_ e verificare le modifiche.
+- Il [progetto AEM WKND](https://github.com/adobe/aem-guides-wknd) _per aggiungere il bundle, il file jar o il pacchetto di terze parti_ e verificare le modifiche.
 
 ## Configurazione
 
-- Configurare l’ambiente di sviluppo locale AEM 6.X o AEM as a Cloud Service (AEMCS) o l’ambiente RDE.
+- Configura l’ambiente di sviluppo locale o l’ambiente RDE di AEM 6.X o AEM as a Cloud Service (AEMCS).
 
-- Clona e implementa il progetto WKND dell’AEM.
+- Clona e implementa il progetto AEM WKND.
 
   ```
   $ git clone git@github.com:adobe/aem-guides-wknd.git
@@ -77,7 +77,7 @@ Per seguire questa esercitazione, è necessario:
 
 ## Installare un bundle di terze parti in un progetto AEM{#install-third-party-bundle}
 
-Installiamo e utilizziamo un OSGi demo [my-example-bundle](./assets/install-third-party-articafcts/my-example-bundle.zip) che _non è disponibile nell&#39;archivio Maven pubblico_ per il progetto WKND dell&#39;AEM.
+Installiamo e utilizziamo un OSGi [my-example-bundle](./assets/install-third-party-articafcts/my-example-bundle.zip) demo che _non è disponibile nell&#39;archivio Maven pubblico_ per il progetto WKND di AEM.
 
 Il **my-example-bundle** esporta il servizio OSGi `HelloWorldService`. Il relativo metodo `sayHello()` restituisce il messaggio `Hello Earth!`.
 
@@ -85,11 +85,11 @@ Per ulteriori dettagli, fare riferimento al file README.md nel file [my-example-
 
 ### Aggiungi il bundle al modulo `all`
 
-Il primo passaggio consiste nell&#39;aggiungere `my-example-bundle` al modulo `all` del progetto WKND AEM.
+Il primo passaggio consiste nell&#39;aggiungere `my-example-bundle` al modulo `all` del progetto WKND di AEM.
 
 - Scarica ed estrai il file [my-example-bundle.zip](./assets/install-third-party-articafcts/my-example-bundle.zip).
 
-- Nel modulo `all` del progetto WKND AEM, creare la struttura di directory `all/src/main/content/jcr_root/apps/wknd-vendor-packages/container/install`. La directory `/all/src/main/content` esiste. È sufficiente creare le directory `jcr_root/apps/wknd-vendor-packages/container/install`.
+- Nel modulo `all` del progetto WKND di AEM, creare la struttura di directory `all/src/main/content/jcr_root/apps/wknd-vendor-packages/container/install`. La directory `/all/src/main/content` esiste. È sufficiente creare le directory `jcr_root/apps/wknd-vendor-packages/container/install`.
 
 - Copiare il file `my-example-bundle-1.0-SNAPSHOT.jar` dalla directory `target` estratta nella directory `all/src/main/content/jcr_root/apps/wknd-vendor-packages/container/install` precedente.
 
@@ -97,9 +97,9 @@ Il primo passaggio consiste nell&#39;aggiungere `my-example-bundle` al modulo `a
 
 ### Utilizza il servizio dal bundle
 
-Utilizziamo il servizio OSGi `HelloWorldService` di `my-example-bundle` nel progetto WKND dell&#39;AEM.
+Utilizziamo il servizio OSGi `HelloWorldService` di `my-example-bundle` nel progetto AEM WKND.
 
-- Nel modulo `core` del progetto WKND AEM, crea il servlet Sling `SayHello.java` @ `core/src/main/java/com/adobe/aem/guides/wknd/core/servlet`.
+- Nel modulo `core` del progetto WKND di AEM, crea il servlet Sling `SayHello.java` @ `core/src/main/java/com/adobe/aem/guides/wknd/core/servlet`.
 
   ```java
   package com.adobe.aem.guides.wknd.core.servlet;
@@ -138,7 +138,7 @@ Utilizziamo il servizio OSGi `HelloWorldService` di `my-example-bundle` nel prog
   }
   ```
 
-- Nel file `pom.xml` principale del progetto WKND AEM, aggiungi `my-example-bundle` come dipendenza.
+- Nel file radice `pom.xml` del progetto AEM WKND, aggiungi `my-example-bundle` come dipendenza.
 
   ```xml
   ...
@@ -155,10 +155,10 @@ Utilizziamo il servizio OSGi `HelloWorldService` di `my-example-bundle` nel prog
 
   Qui:
    - L&#39;ambito `system` indica che la dipendenza non deve essere cercata nell&#39;archivio Maven pubblico.
-   - `systemPath` è il percorso del file `my-example-bundle` nel modulo `all` del progetto WKND AEM.
+   - `systemPath` è il percorso del file `my-example-bundle` nel modulo `all` del progetto WKND di AEM.
    - `${maven.multiModuleProjectDirectory}` è una proprietà Maven che punta alla directory principale del progetto con più moduli.
 
-- Nel file `core/pom.xml` del modulo `core` del progetto WKND dell&#39;AEM, aggiungi `my-example-bundle` come dipendenza.
+- Nel file `core/pom.xml` del modulo `core` del progetto WKND di AEM, aggiungi `my-example-bundle` come dipendenza.
 
   ```xml
   ...
@@ -170,7 +170,7 @@ Utilizziamo il servizio OSGi `HelloWorldService` di `my-example-bundle` nel prog
   ...
   ```
 
-- Genera e implementa il progetto WKND dell’AEM utilizzando il seguente comando:
+- Genera e distribuisci il progetto AEM WKND utilizzando il seguente comando:
 
   ```
   $ mvn clean install -PautoInstallPackage
@@ -178,17 +178,17 @@ Utilizziamo il servizio OSGi `HelloWorldService` di `my-example-bundle` nel prog
 
 - Verificare che il servlet `SayHello` funzioni come previsto accedendo all&#39;URL `http://localhost:4502/bin/sayhello` nel browser.
 
-- Apporta le modifiche precedenti all’archivio del progetto WKND dell’AEM. Verifica quindi le modifiche nell’ambiente RDE o AEM eseguendo la pipeline Cloud Manager.
+- Apporta le modifiche precedenti all’archivio del progetto AEM WKND. Verifica quindi le modifiche nell’ambiente RDE o AEM eseguendo la pipeline Cloud Manager.
 
   ![Verifica il servlet SayHello - Bundle Service](./assets/install-third-party-articafcts/verify-sayhello-servlet-bundle-service.png)
 
-Il ramo [tutorial/install-3rd-party-bundle](https://github.com/adobe/aem-guides-wknd/compare/main...tutorial/install-3rd-party-bundle) del progetto WKND dell&#39;AEM presenta le modifiche precedenti come riferimento.
+Il ramo [tutorial/install-3rd-party-bundle](https://github.com/adobe/aem-guides-wknd/compare/main...tutorial/install-3rd-party-bundle) del progetto WKND di AEM presenta le modifiche precedenti per riferimento.
 
 ### Apprendimenti chiave{#key-learnings-bundle}
 
 I bundle OSGi che non sono disponibili nell’archivio Maven pubblico possono essere installati in un progetto AEM seguendo questi passaggi:
 
-- Copiare il bundle OSGi nella directory `jcr_root/apps/<PROJECT-NAME>-vendor-packages/container/install` del modulo `all`. Questo passaggio è necessario per creare un pacchetto e distribuire il bundle nell’istanza AEM.
+- Copiare il bundle OSGi nella directory `jcr_root/apps/<PROJECT-NAME>-vendor-packages/container/install` del modulo `all`. Questo passaggio è necessario per creare un pacchetto e distribuire il bundle nell’istanza di AEM.
 
 - Aggiorna i file `pom.xml` del modulo radice e core per aggiungere il bundle OSGi come dipendenza con l&#39;ambito `system` e `systemPath` che puntano al file del bundle. Questo passaggio è necessario per compilare il progetto.
 
@@ -196,7 +196,7 @@ I bundle OSGi che non sono disponibili nell’archivio Maven pubblico possono es
 
 In questo esempio, `my-example-jar` non è un bundle OSGi, ma un file Java JAR.
 
-Installiamo e utilizziamo una demo [my-example-jar](./assets/install-third-party-articafcts/my-example-jar.zip) che _non è disponibile nell&#39;archivio Maven pubblico_ per il progetto WKND dell&#39;AEM.
+Installiamo e utilizziamo una demo [my-example-jar](./assets/install-third-party-articafcts/my-example-jar.zip) che _non è disponibile nell&#39;archivio Maven pubblico_ per il progetto WKND di AEM.
 
 **my-example-jar** è un file Java jar che contiene una classe `MyHelloWorldService` con un metodo `sayHello()` che restituisce il messaggio `Hello World!`.
 
@@ -204,11 +204,11 @@ Per ulteriori dettagli, fare riferimento al file README.md nel file [my-example-
 
 ### Aggiungi il file jar al modulo `all`
 
-Il primo passaggio consiste nell&#39;aggiungere `my-example-jar` al modulo `all` del progetto WKND AEM.
+Il primo passaggio consiste nell&#39;aggiungere `my-example-jar` al modulo `all` del progetto WKND di AEM.
 
 - Scarica ed estrai il file [my-example-jar.zip](./assets/install-third-party-articafcts/my-example-jar.zip).
 
-- Nel modulo `all` del progetto WKND AEM, creare la struttura di directory `all/resource/jar`.
+- Nel modulo `all` del progetto WKND di AEM, creare la struttura di directory `all/resource/jar`.
 
 - Copiare il file `my-example-jar-1.0-SNAPSHOT.jar` dalla directory `target` estratta nella directory `all/resource/jar` precedente.
 
@@ -216,9 +216,9 @@ Il primo passaggio consiste nell&#39;aggiungere `my-example-jar` al modulo `all`
 
 ### Utilizza il servizio dal file jar
 
-Utilizziamo `MyHelloWorldService` da `my-example-jar` nel progetto WKND dell&#39;AEM.
+Usiamo `MyHelloWorldService` da `my-example-jar` nel progetto WKND di AEM.
 
-- Nel modulo `core` del progetto WKND AEM, crea il servlet Sling `SayHello.java` @ `core/src/main/java/com/adobe/aem/guides/wknd/core/servlet`.
+- Nel modulo `core` del progetto WKND di AEM, crea il servlet Sling `SayHello.java` @ `core/src/main/java/com/adobe/aem/guides/wknd/core/servlet`.
 
   ```java
   package com.adobe.aem.guides.wknd.core.servlet;
@@ -258,7 +258,7 @@ Utilizziamo `MyHelloWorldService` da `my-example-jar` nel progetto WKND dell&#39
   }    
   ```
 
-- Nel file `pom.xml` principale del progetto WKND AEM, aggiungi `my-example-jar` come dipendenza.
+- Nel file radice `pom.xml` del progetto AEM WKND, aggiungi `my-example-jar` come dipendenza.
 
   ```xml
   ...
@@ -275,10 +275,10 @@ Utilizziamo `MyHelloWorldService` da `my-example-jar` nel progetto WKND dell&#39
 
   Qui:
    - L&#39;ambito `system` indica che la dipendenza non deve essere cercata nell&#39;archivio Maven pubblico.
-   - `systemPath` è il percorso del file `my-example-jar` nel modulo `all` del progetto WKND AEM.
+   - `systemPath` è il percorso del file `my-example-jar` nel modulo `all` del progetto WKND di AEM.
    - `${maven.multiModuleProjectDirectory}` è una proprietà Maven che punta alla directory principale del progetto con più moduli.
 
-- Nel file `core/pom.xml` del modulo `core` del progetto WKND dell&#39;AEM, apporta due modifiche:
+- Nel file `core/pom.xml` del modulo `core` del progetto WKND di AEM, apporta due modifiche:
 
    - Aggiungi `my-example-jar` come dipendenza.
 
@@ -319,7 +319,7 @@ Utilizziamo `MyHelloWorldService` da `my-example-jar` nel progetto WKND dell&#39
      ...
      ```
 
-- Genera e implementa il progetto WKND dell’AEM utilizzando il seguente comando:
+- Genera e distribuisci il progetto AEM WKND utilizzando il seguente comando:
 
   ```
   $ mvn clean install -PautoInstallPackage
@@ -327,17 +327,17 @@ Utilizziamo `MyHelloWorldService` da `my-example-jar` nel progetto WKND dell&#39
 
 - Verificare che il servlet `SayHello` funzioni come previsto accedendo all&#39;URL `http://localhost:4502/bin/sayhello` nel browser.
 
-- Apporta le modifiche precedenti all’archivio del progetto WKND dell’AEM. Verifica quindi le modifiche nell’ambiente RDE o AEM eseguendo la pipeline Cloud Manager.
+- Apporta le modifiche precedenti all’archivio del progetto AEM WKND. Verifica quindi le modifiche nell’ambiente RDE o AEM eseguendo la pipeline Cloud Manager.
 
   ![Verifica il servlet SayHello - Servizio JAR](./assets/install-third-party-articafcts/verify-sayhello-servlet-jar-service.png)
 
-Il ramo [tutorial/install-3rd-party-jar](https://github.com/adobe/aem-guides-wknd/compare/main...tutorial/install-3rd-party-jar) del progetto WKND dell&#39;AEM presenta le modifiche precedenti come riferimento.
+Il ramo [tutorial/install-3rd-party-jar](https://github.com/adobe/aem-guides-wknd/compare/main...tutorial/install-3rd-party-jar) del progetto AEM WKND presenta le modifiche precedenti per riferimento.
 
 Negli scenari in cui il file Java jar _è disponibile nell&#39;archivio Maven pubblico ma NON è un bundle OSGi_, puoi seguire i passaggi precedenti eccetto l&#39;ambito `system` di `<dependency>` e gli elementi `systemPath` non sono necessari.
 
 ### Apprendimenti chiave{#key-learnings-jar}
 
-I file JAR Java che non sono bundle OSGi e che possono essere o meno disponibili nell’archivio Maven pubblico possono essere installati in un progetto AEM seguendo questi passaggi:
+I Java JAR che non sono bundle OSGi e che possono essere o meno disponibili nell’archivio Maven pubblico possono essere installati in un progetto AEM seguendo questi passaggi:
 
 - Aggiorna la configurazione `bnd-maven-plugin` nel file `pom.xml` del modulo core per includere il file jar Java come risorsa in linea nel bundle OSGi in fase di generazione.
 
@@ -351,15 +351,15 @@ I passaggi seguenti sono necessari solo se Java jar non è disponibile nell’ar
 
 Installiamo la versione [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) _SNAPSHOT_ generata localmente dal ramo principale.
 
-Viene eseguito solo per illustrare i passaggi necessari per installare un pacchetto AEM non disponibile nell’archivio Maven pubblico.
+Questa operazione viene eseguita solo per illustrare i passaggi necessari per installare un pacchetto AEM non disponibile nell’archivio Maven pubblico.
 
 Il pacchetto ACS AEM Commons è disponibile nell’archivio Maven pubblico. Fai riferimento a [Aggiungi ACS AEM Commons al tuo progetto AEM Maven](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) per aggiungerlo al tuo progetto AEM.
 
 ### Aggiungi il pacchetto al modulo `all`
 
-Il primo passaggio consiste nell&#39;aggiungere il pacchetto al modulo `all` del progetto WKND dell&#39;AEM.
+Il primo passaggio consiste nell&#39;aggiungere il pacchetto al modulo `all` del progetto WKND di AEM.
 
-- Commenta o rimuovi la dipendenza di rilascio ACS AEM Commons dal file POM. Fai riferimento a [Aggiungi ACS AEM Commons al tuo progetto Maven AEM](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) per identificare la dipendenza.
+- Commenta o rimuovi la dipendenza di rilascio ACS AEM Commons dal file POM. Fai riferimento a [Aggiungi ACS AEM Commons al tuo progetto AEM Maven](https://adobe-consulting-services.github.io/acs-aem-commons/pages/maven.html) per identificare la dipendenza.
 
 - Clona il ramo `master` dell&#39;archivio [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-commons) nel computer locale.
 
@@ -371,11 +371,11 @@ Il primo passaggio consiste nell&#39;aggiungere il pacchetto al modulo `all` del
 
 - Il pacchetto generato localmente si trova in `all/target`, sono presenti due file .zip, uno che termina con `-cloud` è destinato ad AEM as a Cloud Service e l&#39;altro è per AEM 6.X.
 
-- Nel modulo `all` del progetto WKND AEM, creare la struttura di directory `all/src/main/content/jcr_root/apps/wknd-vendor-packages/container/install`. La directory `/all/src/main/content` esiste. È sufficiente creare le directory `jcr_root/apps/wknd-vendor-packages/container/install`.
+- Nel modulo `all` del progetto WKND di AEM, creare la struttura di directory `all/src/main/content/jcr_root/apps/wknd-vendor-packages/container/install`. La directory `/all/src/main/content` esiste. È sufficiente creare le directory `jcr_root/apps/wknd-vendor-packages/container/install`.
 
 - Copiare il file del pacchetto creato localmente (zip) nella directory `/all/src/main/content/jcr_root/apps/mysite-vendor-packages/container/install`.
 
-- Genera e implementa il progetto WKND dell’AEM utilizzando il seguente comando:
+- Genera e distribuisci il progetto AEM WKND utilizzando il seguente comando:
 
   ```
   $ mvn clean install -PautoInstallPackage
@@ -385,19 +385,19 @@ Il primo passaggio consiste nell&#39;aggiungere il pacchetto al modulo `all` del
 
    - Gestione pacchetti CRX alle `http://localhost:4502/crx/packmgr/index.jsp`
 
-     ![Pacchetto versione SNAPSHOT AEM Commons ACS](./assets/install-third-party-articafcts/acs-aem-commons-snapshot-package.png)
+     ![Pacchetto versione SNAPSHOT ACS AEM Commons](./assets/install-third-party-articafcts/acs-aem-commons-snapshot-package.png)
 
    - La console OSGi alle `http://localhost:4502/system/console/bundles`
 
-     ![Pacchetto versione SNAPSHOT AEM Commons ACS](./assets/install-third-party-articafcts/acs-aem-commons-snapshot-bundle.png)
+     ![Pacchetto versione SNAPSHOT ACS AEM Commons](./assets/install-third-party-articafcts/acs-aem-commons-snapshot-bundle.png)
 
-- Apporta le modifiche precedenti all’archivio del progetto WKND dell’AEM. Verifica quindi le modifiche nell’ambiente RDE o AEM eseguendo la pipeline Cloud Manager.
+- Apporta le modifiche precedenti all’archivio del progetto AEM WKND. Verifica quindi le modifiche nell’ambiente RDE o AEM eseguendo la pipeline Cloud Manager.
 
 ### Apprendimenti chiave{#key-learnings-package}
 
-I pacchetti AEM non disponibili nell’archivio Maven pubblico possono essere installati in un progetto AEM seguendo la procedura riportata di seguito:
+I pacchetti AEM che non sono disponibili nell’archivio Maven pubblico possono essere installati in un progetto AEM seguendo questi passaggi:
 
-- Copiare il pacchetto nella directory `jcr_root/apps/<PROJECT-NAME>-vendor-packages/container/install` del modulo `all`. Questo passaggio è necessario per creare un pacchetto e distribuirlo all’istanza AEM.
+- Copiare il pacchetto nella directory `jcr_root/apps/<PROJECT-NAME>-vendor-packages/container/install` del modulo `all`. Questo passaggio è necessario per creare un pacchetto e distribuirlo all’istanza di AEM.
 
 
 ## Riepilogo

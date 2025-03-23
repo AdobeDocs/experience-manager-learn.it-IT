@@ -1,7 +1,7 @@
 ---
-title: App iOS - Esempio di AEM headless
-description: Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Questa applicazione iOS illustra come eseguire query sui contenuti che utilizzano le API GraphQL dell’AEM utilizzando query persistenti.
-version: Cloud Service
+title: App iOS - Esempio AEM Headless
+description: Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Questa applicazione iOS illustra come eseguire query sui contenuti che utilizzano le API GraphQL di AEM utilizzando query persistenti.
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 2
 jira: KT-10587
 thumbnail: KT-10587.jpg
@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
-badgeVersions: label="AEM headless as a Cloud Service" before-title="false"
+badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
 duration: 278
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 # app iOS
 
-Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Questa applicazione iOS illustra come eseguire query sui contenuti che utilizzano le API GraphQL dell’AEM utilizzando query persistenti.
+Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità headless di Adobe Experience Manager (AEM). Questa applicazione iOS illustra come eseguire query sui contenuti che utilizzano le API GraphQL di AEM utilizzando query persistenti.
 
-![App iOS SwiftUI con AEM headless](./assets/ios-swiftui-app/ios-app.png)
+![App iOS SwiftUI con AEM Headless](./assets/ios-swiftui-app/ios-app.png)
 
 Visualizza il [codice sorgente in GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app)
 
@@ -35,12 +35,12 @@ I seguenti strumenti devono essere installati localmente:
 + [Xcode](https://developer.apple.com/xcode/) (richiede macOS)
 + [Git](https://git-scm.com/)
 
-## Requisiti AEM
+## Requisiti di AEM
 
-L’applicazione iOS funziona con le seguenti opzioni di distribuzione dell’AEM. Tutte le distribuzioni richiedono l&#39;installazione del sito [WKND v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest).
+L’applicazione iOS funziona con le seguenti opzioni di distribuzione AEM. Tutte le distribuzioni richiedono l&#39;installazione del sito [WKND v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest).
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
-+ Configurazione locale con [SDK AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it)
++ Configurazione locale con [AEM Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it)
 
 L&#39;applicazione iOS è progettata per connettersi a un ambiente __AEM Publish__, tuttavia può creare contenuto da AEM Author se l&#39;autenticazione viene fornita nella configurazione dell&#39;applicazione iOS.
 
@@ -53,7 +53,7 @@ L&#39;applicazione iOS è progettata per connettersi a un ambiente __AEM Publish
    ```
 
 1. Apri [Xcode](https://developer.apple.com/xcode/) e la cartella `ios-app`
-1. Modificare il file `Config.xcconfig` e aggiornare `AEM_SCHEME` e `AEM_HOST` in modo che corrispondano al servizio Publish AEM di destinazione.
+1. Modifica il file `Config.xcconfig` e aggiorna `AEM_SCHEME` e `AEM_HOST` in modo che corrispondano al servizio di pubblicazione AEM di destinazione.
 
    ```plain
    // The http/https protocol scheme used to access the AEM_HOST
@@ -62,7 +62,7 @@ L&#39;applicazione iOS è progettata per connettersi a un ambiente __AEM Publish
    AEM_HOST = publish-p123-e456.adobeaemcloud.com
    ```
 
-   Se ci si connette a AEM Author, aggiungere `AEM_AUTH_TYPE` e le proprietà di autenticazione di supporto a `Config.xcconfig`.
+   Se ti connetti ad AEM Author, aggiungi `AEM_AUTH_TYPE` e le proprietà di autenticazione di supporto a `Config.xcconfig`.
 
    __Autenticazione di base__
 
@@ -84,17 +84,17 @@ L&#39;applicazione iOS è progettata per connettersi a un ambiente __AEM Publish
    ```
 
 1. Crea l’applicazione utilizzando Xcode e distribuisci l’app sul simulatore iOS
-1. Nell’applicazione deve essere visualizzato un elenco di avventure dal sito WKND. Selezionando un’avventura si aprono i relativi dettagli. Nella vista a elenco avventure, seleziona per aggiornare i dati dall’AEM.
+1. Nell’applicazione deve essere visualizzato un elenco di avventure dal sito WKND. Selezionando un’avventura si aprono i relativi dettagli. Nella vista a elenco avventure, seleziona per aggiornare i dati da AEM.
 
 ## Il codice
 
-Di seguito è riportato un riepilogo di come viene creata l’applicazione iOS, di come si connette a AEM Headless per recuperare contenuti utilizzando query persistenti di GraphQL e di come vengono presentati tali dati. Il codice completo si trova su [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app).
+Di seguito è riportato un riepilogo di come viene creata l’applicazione iOS, di come si connette ad AEM Headless per recuperare contenuti tramite query persistenti GraphQL e di come vengono presentati tali dati. Il codice completo si trova su [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app).
 
 ### Query persistenti
 
-Seguendo le best practice di AEM Headless, l’applicazione iOS utilizza query persistenti AEM GraphQL per eseguire query sui dati di avventura. L’applicazione utilizza due query persistenti:
+Seguendo le best practice di AEM Headless, l’applicazione iOS utilizza query persistenti di AEM GraphQL per eseguire query sui dati di avventura. L’applicazione utilizza due query persistenti:
 
-+ Query persistente `wknd/adventures-all`, che restituisce tutte le avventure in AEM con un set abbreviato di proprietà. Questa query persistente guida l’elenco di avventure della visualizzazione iniziale.
++ Query persistente `wknd/adventures-all`, che restituisce tutte le avventure in AEM con un set ridotto di proprietà. Questa query persistente guida l’elenco di avventure della visualizzazione iniziale.
 
 ```
 # Retrieves a list of all Adventures
@@ -193,15 +193,15 @@ query ($slug: String!, $imageFormat:AssetTransformFormat=JPG, $imageSeoName: Str
 
 ### Esegui query persistente GraphQL
 
-Le query persistenti dell’AEM vengono eseguite su HTTP GET e pertanto non è possibile utilizzare le librerie GraphQL comuni che utilizzano HTTP POST, come Apollo. Creare invece una classe personalizzata che esegua le richieste HTTP di query persistenti a AEM GET.
+Le query persistenti di AEM vengono eseguite su HTTP GET e pertanto non è possibile utilizzare le librerie GraphQL comuni che utilizzano HTTP POST, come Apollo. Crea invece una classe personalizzata che esegue la query persistente HTTP GET richieste ad AEM.
 
 `AEM/Aem.swift` crea un&#39;istanza della classe `Aem` utilizzata per tutte le interazioni con AEM Headless. Il pattern è:
 
 1. A ogni query persistente corrisponde un func pubblico (ad es. `getAdventures(..)` o `getAdventureBySlug(..)`) le visualizzazioni dell&#39;applicazione iOS vengono richiamate per ottenere i dati relativi all&#39;avventura.
-1. Il func pubblico chiama un func privato `makeRequest(..)` che richiama una richiesta HTTP GET asincrona a AEM Headless e restituisce i dati JSON.
+1. Il func pubblico chiama un func privato `makeRequest(..)` che richiama una richiesta HTTP GET asincrona ad AEM Headless e restituisce i dati JSON.
 1. Ogni funzione pubblica decodifica quindi i dati JSON ed esegue tutte le verifiche o trasformazioni necessarie, prima di restituire i dati di Adventure alla visualizzazione.
 
-   + I dati JSON GraphQL dell&#39;AEM vengono decodificati utilizzando le strutture/classi definite in `AEM/Models.swift`, che corrispondono agli oggetti JSON restituiti dall&#39;AEM headless.
+   + I dati JSON GraphQL di AEM vengono decodificati utilizzando le strutture/classi definite in `AEM/Models.swift`, che vengono mappate agli oggetti JSON restituiti da AEM Headless.
 
 ```swift
     /// # getAdventures(..)
@@ -274,19 +274,19 @@ SwiftUI viene utilizzato per le varie visualizzazioni nell’applicazione. Apple
 
 + `Views/AdventureDetailView.swift`
 
-  Visualizza i dettagli di un&#39;avventura, tra cui il titolo, la descrizione, il prezzo, il tipo di attività e l&#39;immagine primaria. Questa visualizzazione richiede all&#39;AEM i dettagli completi dell&#39;avventura utilizzando `aem.getAdventureBySlug(slug: slug)`, dove il parametro `slug` viene passato in base alla riga dell&#39;elenco di selezione.
+  Visualizza i dettagli di un&#39;avventura, tra cui il titolo, la descrizione, il prezzo, il tipo di attività e l&#39;immagine primaria. Questa visualizzazione richiede ad AEM i dettagli completi dell&#39;avventura utilizzando `aem.getAdventureBySlug(slug: slug)`, dove il parametro `slug` viene trasmesso in base alla riga dell&#39;elenco di selezione.
 
 ### Immagini remote
 
-Le immagini a cui si fa riferimento nei frammenti di contenuto dell’avventura sono servite dall’AEM. Questa app iOS utilizza il campo percorso `_dynamicUrl` nella risposta di GraphQL e aggiunge i prefissi `AEM_SCHEME` e `AEM_HOST` per creare un URL completo. Se si sviluppa in base all&#39;SDK AE, `_dynamicUrl` restituisce null, quindi per lo sviluppo il fallback al campo `_path` dell&#39;immagine.
+Le immagini a cui si fa riferimento nei frammenti di contenuto dell’avventura sono gestite da AEM. Questa app iOS utilizza il campo percorso `_dynamicUrl` nella risposta di GraphQL e aggiunge i prefissi `AEM_SCHEME` e `AEM_HOST` per creare un URL completo. Se si sviluppa in base al SDK AE, `_dynamicUrl` restituisce null, quindi per lo sviluppo il fallback al campo `_path` dell&#39;immagine.
 
-Se ti connetti a risorse protette su AEM che richiedono un’autorizzazione, è necessario aggiungere le credenziali anche alle richieste di immagini.
+Se ti connetti a risorse protette su AEM che richiedono un’autorizzazione, è necessario aggiungere anche le credenziali alle richieste di immagini.
 
-[SDWebImageSwiftUI](https://github.com/SDWebImage/SDWebImageSwiftUI) e [SDWebImage](https://github.com/SDWebImage/SDWebImage) vengono utilizzati per caricare le immagini remote da AEM che popolano l&#39;immagine Adventure nelle visualizzazioni `AdventureListItemView` e `AdventureDetailView`.
+[SDWebImageSwiftUI](https://github.com/SDWebImage/SDWebImageSwiftUI) e [SDWebImage](https://github.com/SDWebImage/SDWebImage) vengono utilizzati per caricare da AEM le immagini remote che popolano l&#39;immagine Adventure nelle visualizzazioni `AdventureListItemView` e `AdventureDetailView`.
 
 La classe `aem` (in `AEM/Aem.swift`) facilita l&#39;utilizzo delle immagini AEM in due modi:
 
-1. `aem.imageUrl(path: String)` viene utilizzato nelle visualizzazioni per anteporre lo schema AEM e ospitare il percorso dell&#39;immagine, creando un URL completo.
+1. `aem.imageUrl(path: String)` viene utilizzato nelle visualizzazioni per anteporre lo schema di AEM e ospitare il percorso dell&#39;immagine, creando un URL completo.
 
    ```swift
    // adventure.image() => /adobe/dynamicmedia/deliver/dm-aid--741ed388-d5f8-4797-8095-10c896dc9f1d/example.jpg?quality=80&preferwebp=true
@@ -333,5 +333,5 @@ Un approccio simile può essere utilizzato con [AsyncImage](https://developer.ap
 
 ## Risorse aggiuntive
 
-+ [Guida introduttiva di AEM headless - Tutorial GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=it)
++ [Guida introduttiva di AEM Headless - Esercitazione GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=it)
 + [Elenchi SwiftUI e tutorial di navigazione](https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation)

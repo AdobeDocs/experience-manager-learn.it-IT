@@ -5,13 +5,13 @@ feature: Adaptive Forms
 type: Documentation
 role: Developer
 level: Beginner
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations
 jira: KT-14795
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 duration: 46
 exl-id: 9abe9f9d-8fb3-4e01-a830-1dad1c27274d
-source-git-commit: 426020f59c7103829b7b7b74acb0ddb7159b39fa
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Precompila il modulo adattivo con i dati dell’elenco dei punti di condivisione
 
-Nella versione precedente di AEM Form(6.5), era necessario scrivere un codice personalizzato per precompilare un modulo adattivo basato sul modello di dati del modulo utilizzando l’attributo di richiesta. In AEM Forms as a Cloud Service non è più necessario scrivere codice personalizzato.
+Nella versione precedente di AEM Form(6.5), era necessario scrivere il codice personalizzato per precompilare il modulo adattivo basato sul modello di dati del modulo utilizzando l’attributo di richiesta. In AEM Forms as a Cloud Service non è più necessario scrivere codice personalizzato.
 
 Questo articolo illustra i passaggi necessari per precompilare/precompilare un modulo adattivo con dati recuperati dall’elenco di SharePoint utilizzando il servizio di precompilazione del modello dati del modulo.
 

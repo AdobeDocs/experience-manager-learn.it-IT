@@ -4,24 +4,24 @@ description: Effettuare una richiesta POST per richiamare l’endpoint DDX con i
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Output Service
 topic: Development
 jira: KT-9980
 exl-id: 693dac88-84f3-4051-8e46-3105093711a3
 duration: 56
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 0%
 
 ---
 
-# Effettua la chiamata POST
+# Effettuare la chiamata POST
 
 
 Il passaggio successivo consiste nell’effettuare una chiamata HTTP POST all’endpoint con i parametri necessari. I file DDX e pdf vengono forniti come file di risorse. Il punto finale dispone dell’autenticazione basata su token; il token di accesso viene passato nell’intestazione della richiesta.
-Quando si utilizza il servizio Assembler, utilizzare un linguaggio basato su XML denominato Document Description XML (DDX) per descrivere l&#39;output desiderato. DDX è un linguaggio di markup dichiarativo i cui elementi rappresentano blocchi predefiniti di documenti.Il seguente DDX è stato utilizzato per unire i due documenti pdf identificati negli elementi sorgente PDF.
+Quando si utilizza il servizio Assembler, utilizzare un linguaggio basato su XML denominato Document Description XML (DDX) per descrivere l&#39;output desiderato. DDX è un linguaggio di markup dichiarativo i cui elementi rappresentano blocchi predefiniti di documenti. Il DDX seguente è stato utilizzato per unire i due documenti pdf identificati negli elementi di origine di PDF.
 
 ```xml
 <DDX xmlns="http://ns.adobe.com/DDX/1.0/">
