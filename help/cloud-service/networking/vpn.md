@@ -11,9 +11,9 @@ thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
 last-substantial-update: 2024-04-27T00:00:00Z
 duration: 919
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: e1bea4320ed7a8b6d45f674649ba9ba946054b17
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1556'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,13 @@ ht-degree: 1%
 
 Scopri come collegare AEM as a Cloud Service alla tua VPN per creare canali di comunicazione sicuri tra AEM e i servizi interni.
 
-## Che cos&#39;è Virtual Private Network?
+>[!IMPORTANT]
+>
+>Puoi configurare le VPN e l’inoltro delle porte tramite l’interfaccia utente di Cloud Manager o utilizzando le chiamate API. Questa esercitazione si concentra sul metodo API.
+>
+>Se preferisci utilizzare l&#39;interfaccia utente, consulta [Configurare reti avanzate per AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
+
+## Che cos&#39;è una rete privata virtuale?
 
 Virtual Private Network (VPN) consente a un cliente AEM as a Cloud Service di connettere **gli ambienti AEM** all&#39;interno di un programma Cloud Manager a una VPN esistente [supportata](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking). La VPN consente connessioni sicure e controllate tra AEM as a Cloud Service e i servizi all’interno della rete del cliente.
 
@@ -51,7 +57,11 @@ Quando si configura una rete privata virtuale utilizzando le API di Cloud Manage
 
 Per ulteriori dettagli [consulta come impostare, configurare e ottenere le credenziali API di Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth), per utilizzarle per effettuare una chiamata API di Cloud Manager.
 
-Questo tutorial utilizza `curl` per creare le configurazioni API di Cloud Manager. I comandi `curl` forniti assumono una sintassi Linux/macOS. Se si utilizza il prompt dei comandi di Windows, sostituire il carattere di interruzione di riga `\` con `^`.
+>[!IMPORTANT]
+>
+>Questo tutorial utilizza `curl` per creare le configurazioni dell&#39;API Cloud Manager:*se preferisci un approccio programmatico*. I comandi `curl` forniti assumono una sintassi Linux® o macOS. Se si utilizza il prompt dei comandi di Windows, sostituire il carattere di interruzione di riga `\` con `^`.
+>
+>In alternativa, puoi completare la stessa attività tramite l’interfaccia utente di Cloud Manager. *Se preferisci l&#39;approccio dell&#39;interfaccia utente*, consulta [Configurare reti avanzate per AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 ## Abilita rete privata virtuale per programma
 
@@ -71,7 +81,7 @@ L’uscita dalla porta flessibile può essere abilitata utilizzando Cloud Manage
 
    ![Aggiungi infrastruttura di rete](./assets/cloud-manager__add-network-infrastructure.png)
 
-1. Nella finestra di dialogo __Aggiungi infrastruttura di rete__, seleziona l&#39;opzione __Rete privata virtuale__. Compila i campi e seleziona __Continua__. Rivolgiti all’amministratore di rete della tua organizzazione per ottenere i valori corretti.
+1. Nella finestra di dialogo __Aggiungi infrastruttura di rete__ selezionare l&#39;opzione __Rete privata virtuale__. Compila i campi e seleziona __Continua__. Rivolgiti all’amministratore di rete della tua organizzazione per ottenere i valori corretti.
 
    ![Aggiungi VPN](./assets/vpn/select-type.png)
 
@@ -128,7 +138,7 @@ Una volta creata la VPN, ora puoi configurarla utilizzando le API di Cloud Manag
        -d @./vpn-create.json
    ```
 
-   Definisci i parametri JSON in un `vpn-create.json` e forniti per curl tramite `... -d @./vpn-create.json`.
+   Definisci i parametri JSON in un `vpn-create.json` e forniti a curl tramite `... -d @./vpn-create.json`.
 
    [Scarica l&#39;esempio vpn-create.json](./assets/vpn-create.json).  Questo file è solo un esempio. Configura il file come richiesto in base ai campi facoltativi/obbligatori documentati in [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
 
@@ -215,7 +225,7 @@ Una volta creata la VPN, ora puoi configurarla utilizzando le API di Cloud Manag
        -d @./vpn-configure.json
    ```
 
-   Definisci i parametri JSON in un `vpn-configure.json` e forniti per curl tramite `... -d @./vpn-configure.json`.
+   Definisci i parametri JSON in un `vpn-configure.json` e forniti a curl tramite `... -d @./vpn-configure.json`.
 
 [Scarica l’esempio vpn-configure.json](./assets/vpn-configure.json)
 
@@ -240,7 +250,7 @@ Una volta creata la VPN, ora puoi configurarla utilizzando le API di Cloud Manag
    }
    ```
 
-   `nonProxyHosts` dichiara un set di host per i quali la porta 80 o 443 deve essere instradata attraverso gli intervalli di indirizzi IP condivisi predefiniti anziché attraverso l&#39;IP in uscita dedicato. `nonProxyHosts` può essere utile in quanto il traffico in uscita attraverso gli IP condivisi viene ottimizzato automaticamente da Adobe.
+   `nonProxyHosts` dichiara un set di host per i quali la porta 80 o 443 deve essere instradata attraverso gli intervalli di indirizzi IP condivisi predefiniti anziché attraverso l&#39;IP in uscita dedicato. `nonProxyHosts` può essere utile come traffico in uscita attraverso gli IP condivisi che Adobe ottimizza automaticamente.
 
    Per ogni mappatura `portForwards`, la rete avanzata definisce la seguente regola di inoltro:
 
@@ -263,7 +273,7 @@ Una volta creata la VPN, ora puoi configurarla utilizzando le API di Cloud Manag
        -H 'Content-Type: application/json'
    ```
 
-3. Le configurazioni proxy di rete privata virtuale possono essere aggiornate utilizzando l&#39;operazione [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) dell&#39;API Cloud Manager. Ricorda che `enableEnvironmentAdvancedNetworkingConfiguration` è un&#39;operazione `PUT`, pertanto tutte le regole devono essere fornite con ogni chiamata di questa operazione.
+3. È possibile aggiornare le configurazioni proxy di rete privata virtuale utilizzando l&#39;operazione [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) dell&#39;API Cloud Manager. Ricorda che `enableEnvironmentAdvancedNetworkingConfiguration` è un&#39;operazione `PUT`, pertanto tutte le regole devono essere fornite con ogni chiamata di questa operazione.
 
 4. Ora puoi utilizzare la configurazione di uscita Virtual Private Network nel codice e nella configurazione personalizzati di AEM.
 
@@ -272,9 +282,9 @@ Una volta creata la VPN, ora puoi configurarla utilizzando le API di Cloud Manag
 Con la rete privata virtuale abilitata, il codice e la configurazione di AEM possono utilizzarli per effettuare chiamate a servizi esterni tramite la VPN. Esistono due tipi di chiamate esterne che AEM tratta in modo diverso:
 
 1. Chiamate HTTP/HTTPS a servizi esterni
-   + Include le chiamate HTTP/HTTPS effettuate a servizi in esecuzione su porte diverse dalle porte standard 80 o 443.
-1. chiamate non HTTP/HTTPS a servizi esterni
-   + Include tutte le chiamate non HTTP, ad esempio le connessioni con i server di posta, i database SQL o i servizi eseguiti su altri protocolli non HTTP/HTTPS.
+   + Questi servizi esterni includono le chiamate HTTP/HTTPS effettuate a servizi in esecuzione su porte diverse dalle porte standard 80 o 443.
+1. Chiamate non HTTP/HTTPS a servizi esterni
+   + Questi servizi esterni includono qualsiasi chiamata non HTTP, ad esempio connessioni a server di posta, database SQL o servizi che utilizzano protocolli diversi da HTTP/HTTPS.
 
 Le richieste HTTP/HTTPS provenienti da AEM su porte standard (80/443) sono consentite per impostazione predefinita, ma non utilizzano la connessione VPN se non configurate in modo appropriato come descritto di seguito.
 
