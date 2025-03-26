@@ -1,7 +1,7 @@
 ---
 title: Inclusione di file JAR di terze parti
 description: Scopri come utilizzare il file jar di terze parti nel progetto AEM
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Adaptive Forms
 topic: Development
 role: Developer
@@ -11,7 +11,7 @@ last-substantial-update: 2022-10-15T00:00:00Z
 thumbnail: third-party.jpg
 exl-id: e8841c63-3159-4f13-89a1-d8592af514e3
 duration: 53
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -62,5 +62,5 @@ Prendere nota dell&#39;attributo root dell&#39;elemento filter.
 mvn clean install -PautoInstallSinglePackage
 ```
 
-Se tutto va bene, il pacchetto viene installato insieme al bundle di terze parti nell’istanza AEM. Puoi controllare il bundle utilizzando [console Web Felix](http://localhost:4502/system/console/bundles). Il bundle di terze parti è disponibile nella cartella /apps dell&#39;archivio `crx` come mostrato di seguito
+Se tutto va bene, il pacchetto viene installato insieme al bundle di terze parti nella tua istanza di AEM. Puoi controllare il bundle utilizzando [console Web Felix](http://localhost:4502/system/console/bundles). Il bundle di terze parti è disponibile nella cartella /apps dell&#39;archivio `crx` come mostrato di seguito
 ![terze parti](assets/custom-bundle1.png)

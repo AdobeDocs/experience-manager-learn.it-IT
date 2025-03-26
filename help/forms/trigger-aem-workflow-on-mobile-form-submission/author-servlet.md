@@ -1,26 +1,26 @@
 ---
-title: Attivare il flusso di lavoro AEM all’invio del modulo HTML5 - Gestire l’invio del modulo
-description: Scopri come attivare il flusso di lavoro AEM quando il modulo HTML5 viene inviato e memorizzare i dati inviati nell’archivio.
+title: Attivare il flusso di lavoro di AEM per l’invio di moduli HTML5 - Gestire l’invio di moduli
+description: Scopri come attivare il flusso di lavoro di AEM quando il modulo HTML5 viene inviato e memorizzare i dati inviati nell’archivio.
 feature: Mobile Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 level: Experienced
 jira: kt-16215
-source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
+exl-id: e0bde892-1da0-4b72-a408-ad7b84086939
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 1%
 
 ---
 
-
 # Archivia dati inviati
 
-Il passaggio successivo consiste nell’archiviare i dati inviati nell’archivio dell’autore dell’AEM. Il servlet installato su `/bin/startworkflow` salva i dati inviati.
-Un modulo di avvio del flusso di lavoro AEM è configurato per essere attivato ogni volta che viene creata una nuova risorsa di tipo `nt:file` nel nodo &lt;node_to_store_mitted_data>. Questo flusso di lavoro creerà un PDF non interattivo o statico unendo i dati inviati con il modello xdp. Il pdf generato viene quindi assegnato a un utente per la revisione e l’approvazione.
+Il passaggio successivo consiste nell’archiviare i dati inviati nell’archivio di AEM Author. Il servlet installato su `/bin/startworkflow` salva i dati inviati.
+Un modulo di avvio del flusso di lavoro di AEM è configurato per essere attivato ogni volta che viene creata una nuova risorsa di tipo `nt:file` sotto il nodo &lt;node_to_store_mitted_data>. Questo flusso di lavoro creerà un PDF non interattivo o statico unendo i dati inviati con il modello xdp. Il pdf generato viene quindi assegnato a un utente per la revisione e l’approvazione.
 
 Per memorizzare i dati inviati nel nodo &lt;node_to_store_mitted_data>, si utilizza il servizio OSGi `GetResolver`, che consente di salvare i dati inviati utilizzando l&#39;utente di sistema `fd-service` disponibile in ogni installazione di AEM Forms.
 
@@ -124,4 +124,3 @@ public class StartWorkflow extends SlingAllMethodsServlet {
 ## Passaggi successivi
 
 [Avvio e flusso di lavoro del flusso di lavoro](./review-workflow.md)
-

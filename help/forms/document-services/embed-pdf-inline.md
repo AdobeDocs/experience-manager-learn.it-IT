@@ -1,7 +1,7 @@
 ---
 title: Visualizza documento di record in linea
-description: Unisci i dati del modulo adattivo con il modello XDP e visualizza il PDF in linea utilizzando l’API pdf per l’incorporamento di document cloud.
-version: 6.4,6.5
+description: Unisci i dati dei moduli adattivi con il modello XDP e visualizza PDF in linea utilizzando l’API pdf per l’incorporamento di document cloud.
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Forms Service
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ jira: KT-9411
 exl-id: 327ffe26-e88e-49f0-9f5a-63e2a92e1c8a
 last-substantial-update: 2021-07-07T00:00:00Z
 duration: 165
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Per eseguire questo caso d&#39;uso è stata utilizzata l&#39;[API di incorporame
 
 Per completare l’integrazione sono stati eseguiti i seguenti passaggi
 
-## Crea un componente personalizzato per visualizzare le PDF in linea
+## Crea un componente personalizzato per visualizzare il PDF in linea
 
 È stato creato un componente personalizzato (embed-pdf) per incorporare il pdf restituito dalla chiamata POST.
 
@@ -108,7 +108,7 @@ Accertatevi di denominare la casella di controllo viewPDF.
 Configura il componente incorpora-pdf come illustrato nella schermata seguente
 ![pdf-incorporato](assets/embed-pdf-configuration.png)
 
-**Incorpora chiave API PDF**: è la chiave che puoi utilizzare per incorporare il PDF. Questa chiave funziona solo con localhost. Puoi creare [la tua chiave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) e associarla ad un altro dominio.
+**Incorpora chiave API PDF**: è la chiave che puoi usare per incorporare il pdf. Questa chiave funziona solo con localhost. Puoi creare [la tua chiave](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html) e associarla ad un altro dominio.
 
 **Endpoint che restituisce il pdf**: questo è il servlet personalizzato che unirà i dati con il modello xdp e restituirà il pdf.
 
@@ -230,9 +230,9 @@ Per eseguire il test sul server locale, attieniti alla seguente procedura:
 
 1. [Scarica e installa il bundle di incorporpdf](assets/embedpdf.core-1.0-SNAPSHOT.jar).
 Questo ha il servlet per unire i dati con il modello XDP e riportare in streaming il pdf.
-1. Aggiungere il percorso /bin/getPDFToEmbed nella sezione percorsi esclusi del filtro CSRF di Adobe Granite utilizzando [AEM ConfigMgr](http://localhost:4502/system/console/configMgr). Nell&#39;ambiente di produzione è consigliabile utilizzare il [framework di protezione CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
+1. Aggiungi il percorso /bin/getPDFToEmbed nella sezione percorsi esclusi del filtro CSRF di Adobe Granite utilizzando [AEM ConfigMgr](http://localhost:4502/system/console/configMgr). Nell&#39;ambiente di produzione è consigliabile utilizzare il [framework di protezione CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
 1. [Importare la libreria client e il componente personalizzato](assets/embed-pdf.zip)
 1. [Importare il modulo e il modello adattivo](assets/embed-pdf-form-and-xdp.zip)
 1. [Anteprima modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)
 1. Compila alcuni campi del modulo
-1. Consente di passare alla scheda Visualizza PDF. Selezionare la casella di controllo Visualizza PDF. Dovresti visualizzare un pdf nel modulo compilato con i dati del modulo adattivo
+1. Passa alla scheda Visualizza PDF. Selezionare la casella di controllo Visualizza PDF. Dovresti visualizzare un pdf nel modulo compilato con i dati del modulo adattivo

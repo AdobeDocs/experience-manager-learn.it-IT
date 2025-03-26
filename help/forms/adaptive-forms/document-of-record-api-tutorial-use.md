@@ -2,14 +2,14 @@
 title: Utilizzo dell’API per generare un documento di record con AEM Forms
 description: Genera documento di record (DOR) a livello di programmazione
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 9a3b2128-a383-46ea-bcdc-6015105c70cc
 last-substantial-update: 2023-01-26T00:00:00Z
 duration: 67
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Genera documento di record (DOR) a livello di programmazione
 
-In questo articolo viene illustrato l&#39;utilizzo di `com.adobe.aemds.guide.addon.dor.DoRService API` per generare **Documento di record** a livello di programmazione. [Il documento di record](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) è una versione PDF dei dati acquisiti nel modulo adattivo.
+In questo articolo viene illustrato l&#39;utilizzo di `com.adobe.aemds.guide.addon.dor.DoRService API` per generare **Documento di record** a livello di programmazione. [Il documento record](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) è una versione PDF dei dati acquisiti in un modulo adattivo.
 
 1. Di seguito è riportato lo snippet di codice. La prima riga ottiene il servizio DOR.
 1. Impostare le opzioni DoRO.
@@ -80,6 +80,6 @@ Per provare questa operazione sul sistema locale, attenersi alla seguente proced
 PDF non viene visualizzato nella nuova scheda del browser:
 
 1. Assicurati di non bloccare i popup nel browser
-1. Assicurarsi di avviare il server AEM come amministratore (almeno in Windows)
+1. Assicurati di avviare il server AEM come amministratore (almeno su Windows)
 1. Assicurati che il bundle &#39;DevelopingWithServiceUser&#39; sia in *stato attivo*
 1. [Assicurarsi che l&#39;utente di sistema](http://localhost:4502/useradmin) &#39; fd-service&#39; disponga delle autorizzazioni di lettura, modifica e creazione per il seguente nodo `/content/usergenerated/content/aemformsenablement`

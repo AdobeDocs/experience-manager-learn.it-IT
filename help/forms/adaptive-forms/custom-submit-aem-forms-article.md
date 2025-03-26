@@ -2,14 +2,14 @@
 title: Scrittura di un invio personalizzato in AEM Forms
 description: Modo rapido e semplice per creare un’azione di invio personalizzata per il modulo adattivo
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 64b586a6-e9ef-4a3d-8528-55646ab03cc4
 last-substantial-update: 2021-04-09T00:00:00Z
 duration: 51
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 1%
@@ -40,7 +40,7 @@ Questo articolo illustra i passaggi necessari per creare un’azione di invio pe
 
 
 * Salva le modifiche
-* Crea un nuovo file denominato post.POST.jsp sotto il nodo CustomSubmitHelpx. Quando viene inviato un modulo adattivo, viene chiamato questo JSP. Puoi scrivere il codice JSP in base alle tue esigenze in questo file. Il codice seguente inoltra la richiesta al servlet.
+* Crea un nuovo file denominato POST.POST.jsp sotto il nodo CustomSubmitHelpx. Quando viene inviato un modulo adattivo, viene chiamato questo JSP. Puoi scrivere il codice JSP in base alle tue esigenze in questo file. Il codice seguente inoltra la richiesta al servlet.
 
 ```java
 <%

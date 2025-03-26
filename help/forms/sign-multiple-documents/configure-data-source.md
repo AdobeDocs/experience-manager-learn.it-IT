@@ -5,12 +5,12 @@ feature: Adaptive Forms
 topic: Development
 role: Developer
 level: Beginner
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6899
 thumbnail: 6899.jpg
 exl-id: 2e851ae5-6caa-42e3-8af2-090766a6f36a
 duration: 39
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 3%
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 # Configurare l’origine dati
 
-Esistono molti modi in cui l’AEM consente l’integrazione con un database esterno. Uno dei modi più comuni per integrare un database consiste nell&#39;utilizzare le proprietà di configurazione DataSource in pool di connessione Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
+AEM consente l’integrazione con un database esterno in diversi modi. Uno dei modi più comuni per integrare un database consiste nell&#39;utilizzare le proprietà di configurazione DataSource in pool di connessione Apache Sling tramite [configMgr](http://localhost:4502/system/console/configMgr).
 Il primo passaggio consiste nel scaricare e distribuire i [driver MySql](https://mvnrepository.com/artifact/mysql/mysql-connector-java) appropriati in AEM.
 Crea un’origine dati in pool di connessione Apache Sling e fornisci le proprietà come specificato nella schermata seguente. Lo schema di database viene fornito come parte di queste risorse di esercitazione.
 

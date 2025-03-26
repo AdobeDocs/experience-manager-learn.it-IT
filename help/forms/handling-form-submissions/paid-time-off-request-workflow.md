@@ -1,9 +1,9 @@
 ---
 title: Flusso di lavoro semplice per richiesta di indisponibilità a pagamento
-description: Nascondere e mostrare i pannelli dei moduli adattivi nel flusso di lavoro AEM
+description: Nascondere e mostrare i pannelli dei moduli adattivi nel flusso di lavoro di AEM
 feature: Adaptive Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: 1c4822e6-76ce-446b-98cb-408900d68b24
 topic: Development
 role: Developer
@@ -11,7 +11,7 @@ level: Experienced
 exl-id: 9342bd2f-2ba9-42ee-9224-055649ac3c90
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 592
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -23,13 +23,13 @@ ht-degree: 0%
 In questo articolo viene esaminato un semplice flusso di lavoro utilizzato per richiedere il periodo di inattività retribuito. I requisiti aziendali sono i seguenti:
 
 * L’utente A richiede un’indisponibilità compilando un modulo adattivo.
-* Il modulo viene inviato all’utente amministratore dell’AEM (nella vita reale viene inviato al manager dell’autore del modulo)
+* Il modulo viene inviato all’utente amministratore di AEM (in tempo reale viene inviato al manager dell’autore dell’invio)
 * L’amministratore apre il modulo. L’amministratore non deve essere in grado di modificare le informazioni compilate dall’autore dell’invio.
-* La sezione Responsabile approvazione deve essere visibile all&#39;approvatore (in questo caso si tratta dell&#39;utente amministratore AEM).
+* La sezione Responsabile approvazione deve essere visibile all’approvatore (in questo caso si tratta dell’utente amministratore di AEM).
 
 Per soddisfare questo requisito, nel modulo viene utilizzato un campo nascosto denominato **initialstep** e il relativo valore predefinito è impostato su Sì.Quando il modulo viene inviato, il primo passaggio del flusso di lavoro imposta il valore di initialstep su No. Il modulo include regole business per nascondere e visualizzare le sezioni appropriate in base al valore del passo iniziale.
 
-**Configura modulo per attivare il flusso di lavoro AEM**
+**Configura modulo per attivare flusso di lavoro AEM**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28406?quality=12&learn=on)
 

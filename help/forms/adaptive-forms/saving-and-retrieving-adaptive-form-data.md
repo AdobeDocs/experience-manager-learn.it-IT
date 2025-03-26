@@ -5,10 +5,10 @@ feature: Adaptive Forms
 topic: Development
 role: Developer
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 last-substantial-update: 2019-06-09T00:00:00Z
 duration: 711
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 0%
@@ -277,7 +277,7 @@ public class AemformWithDB implements AemFormsAndDB {
 
 ## Crea libreria client {#create-client-library}
 
-La libreria client AEM gestisce tutto il codice JavaScript lato client. Per questo articolo, ho creato un semplice JavaScript per recuperare i dati del Modulo adattivo utilizzando l’API del ponte guida. Una volta recuperati i dati del modulo adattivo, viene effettuata la chiamata POST al servlet per inserire o aggiornare i dati del modulo adattivo nel database. La funzione getALLUrlParams restituisce i parametri nell’URL. Viene utilizzato quando si desidera aggiornare i dati. Il resto della funzionalità viene gestito nel codice associato all&#39;evento click della classe .savebutton. Se il parametro guid è presente nell’URL, è necessario eseguire l’operazione di aggiornamento, in caso contrario si tratta di un’operazione di inserimento.
+La libreria client di AEM gestisce tutto il codice JavaScript lato client. Per questo articolo, ho creato un semplice JavaScript per recuperare i dati del Modulo adattivo utilizzando l’API del ponte guida. Una volta recuperati i dati del modulo adattivo, viene effettuata la chiamata POST al servlet per inserire o aggiornare i dati del modulo adattivo nel database. La funzione getALLUrlParams restituisce i parametri nell’URL. Viene utilizzato quando si desidera aggiornare i dati. Il resto della funzionalità viene gestito nel codice associato all&#39;evento click della classe .savebutton. Se il parametro guid è presente nell’URL, è necessario eseguire l’operazione di aggiornamento, in caso contrario si tratta di un’operazione di inserimento.
 
 ```javascript
 function getAllUrlParams(url) {
@@ -419,7 +419,7 @@ Per testare questa funzionalità nell’istanza di AEM Forms, segui i passaggi s
 * [Scarica e decomprimi DemoAssets.zip sul sistema locale](assets/demoassets.zip)
 * Implementa e avvia i bundle techmarketingdemos.jar e mysqldriver.jar utilizzando la console web Felix.
 *** Importare aemformstutorial.sql utilizzando MYSQL Workbench. Verranno creati lo schema e le tabelle necessari nel database
-* Importa StoreAndRetrieve.zip utilizzando Gestione pacchetti AEM. Questo pacchetto contiene il modello di modulo adattivo, la libreria client del componente Pagina e un esempio di configurazione del modulo adattivo e dell’origine dati.
+* Importa StoreAndRetrieve.zip utilizzando Gestione pacchetti di AEM. Questo pacchetto contiene il modello di modulo adattivo, la libreria client del componente Pagina e un esempio di configurazione del modulo adattivo e dell’origine dati.
 * Accedi a configMgr. Cerca &quot;Apache Sling Connection Pooled DataSource&quot;. Aprire la voce dell&#39;origine dati associata a aemformstutorial e immettere il nome utente e la password specifici per l&#39;istanza di database.
 * Aprire il modulo adattivo
 * Immettere alcuni dettagli e fare clic sul pulsante Salva e continua in seguito

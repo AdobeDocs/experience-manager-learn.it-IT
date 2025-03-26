@@ -2,7 +2,7 @@
 title: Autenticazione a due fattori SMS
 description: Aggiungi un ulteriore livello di sicurezza per confermare l’identità di un utente quando desidera eseguire determinate attività
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6317
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Experienced
 exl-id: c2c55406-6da6-42be-bcc0-f34426b3291a
 last-substantial-update: 2021-07-07T00:00:00Z
 duration: 115
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
@@ -59,13 +59,13 @@ Il modello dati del modulo completato può essere [scaricato da qui](assets/sms-
 
 ## Creare un modulo adattivo
 
-Integra le chiamate POST del modello dati modulo con il modulo adattivo per verificare il numero di telefono cellulare immesso dall’utente nel modulo. Puoi creare un modulo adattivo personalizzato e utilizzare la chiamata POST del modello di dati del modulo per inviare e verificare il codice OTP in base alle tue esigenze.
+Integra le chiamate POST del modello dati del modulo con il modulo adattivo per verificare il numero di telefono cellulare immesso dall’utente nel modulo. Puoi creare un modulo adattivo personalizzato e utilizzare la chiamata POST del modello di dati del modulo per inviare e verificare il codice OTP in base alle tue esigenze.
 
 Se desideri utilizzare le risorse di esempio con le tue chiavi API, segui i passaggi seguenti:
 
 * [Scarica il modello dati del modulo](assets/sms-2fa-fdm.zip) e importa in AEM utilizzando [Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 * Il modulo adattivo di esempio scaricabile può essere [scaricato da qui](assets/sms-2fa-verification-af.zip). In questo modulo di esempio vengono utilizzate le chiamate di servizio del modello dati del modulo fornito come parte di questo articolo.
-* Importa il modulo in AEM dall&#39;[interfaccia utente Forms e Document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Importa il modulo in AEM da [Forms e interfaccia utente documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Apri il modulo in modalità di modifica. Apri l’editor di regole per il campo seguente
 
 ![sms-send](assets/check-sms.PNG)

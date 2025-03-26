@@ -3,14 +3,14 @@ title: Creazione della prima comunicazione interattiva per il canale web
 description: Le comunicazioni interattive sono una novità di AEM Forms 6.4. Questo documento illustra i passaggi necessari per creare una comunicazione interattiva per il canale web.
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 65b1af30-9e22-4df0-ab91-479d5406df61
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 28
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 4%
@@ -23,7 +23,7 @@ Le comunicazioni interattive sono una novità di AEM Forms 6.4. Questo documento
 
 ## Prerequisiti {#prerequistes}
 
-[Scaricare e importare la risorsa correlata a questa esercitazione in AEM utilizzando Gestione pacchetti.](assets/gettingstartedassets.zip). Questo file zip contiene immagini e frammenti di documento utilizzati in questa esercitazione
+[Scarica e importa la risorsa correlata a questa esercitazione in AEM utilizzando Gestione pacchetti.](assets/gettingstartedassets.zip). Questo file zip contiene immagini e frammenti di documento utilizzati in questa esercitazione
 
 [Scarica e decomprimi il file.](assets/warfileandswaggerfile.zip) Questo file contiene il file SampleRest.war che deve essere distribuito su Tomcat e sul file swagger che deve essere utilizzato per la configurazione dell&#39;origine dati.
 

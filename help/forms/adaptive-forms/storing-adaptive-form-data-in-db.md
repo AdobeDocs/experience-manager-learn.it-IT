@@ -1,15 +1,15 @@
 ---
 title: Memorizzazione dei dati del modulo adattivo
-description: Memorizzazione dei dati del modulo adattivo in DataBase come parte del flusso di lavoro AEM
+description: Memorizzazione dei dati del modulo adattivo in DataBase come parte del flusso di lavoro di AEM
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 3dd552da-fc7c-4fc7-97ec-f20b6cc33df0
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 146
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Memorizzazione di invii di moduli adattivi nel database
 
-Esistono diversi modi per memorizzare i dati del modulo inviato nel database desiderato. È possibile utilizzare un&#39;origine dati JDBC per memorizzare direttamente i dati nel database. È possibile scrivere un bundle OSGI personalizzato per memorizzare i dati nel database. Questo articolo utilizza la fase del processo personalizzato nel flusso di lavoro AEM per memorizzare i dati.
+Esistono diversi modi per memorizzare i dati del modulo inviato nel database desiderato. È possibile utilizzare un&#39;origine dati JDBC per memorizzare direttamente i dati nel database. È possibile scrivere un bundle OSGI personalizzato per memorizzare i dati nel database. Questo articolo utilizza la fase del processo personalizzato nel flusso di lavoro di AEM per memorizzare i dati.
 Il caso d’uso prevede l’attivazione di un flusso di lavoro AEM all’invio di un modulo adattivo e un passaggio nel flusso di lavoro archivia i dati inviati nel database.
 
 
@@ -213,9 +213,9 @@ public class InsertAfData implements WorkflowProcess {
 * Specificare i dettagli del database utilizzando configMgr
 * [Scarica il file ZIP ed estrae il suo contenuto sul disco rigido](assets/article-assets.zip)
 
-   * Distribuisci il file JAR utilizzando [console Web AEM](http://localhost:4502/system/console/bundles). Questo file jar contiene il codice per memorizzare i dati del modulo nel database.
+   * Distribuisci il file jar utilizzando [la console Web AEM](http://localhost:4502/system/console/bundles). Questo file jar contiene il codice per memorizzare i dati del modulo nel database.
 
-   * Importa i due file zip in [AEM utilizzando Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp). Questo ti permetterà di ottenere il [flusso di lavoro di esempio](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) e il [modulo adattivo di esempio](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) che attiveranno il flusso di lavoro all&#39;invio del modulo. Osserva gli argomenti del processo nel passaggio del flusso di lavoro. Questi argomenti indicano il nome del modulo e il nome del file di dati che conterrà i dati del modulo adattivo. Il file di dati viene memorizzato nella cartella del payload nell’archivio crx. Nota come il [modulo adattivo](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) è configurato per attivare il flusso di lavoro AEM all&#39;invio e la configurazione del file di dati (data.xml)
+   * Importa i due file zip in [AEM utilizzando Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp). Questo ti permetterà di ottenere il [flusso di lavoro di esempio](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) e il [modulo adattivo di esempio](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) che attiveranno il flusso di lavoro all&#39;invio del modulo. Osserva gli argomenti del processo nel passaggio del flusso di lavoro. Questi argomenti indicano il nome del modulo e il nome del file di dati che conterrà i dati del modulo adattivo. Il file di dati viene memorizzato nella cartella del payload nell’archivio crx. Nota come il [modulo adattivo](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) è configurato per attivare il flusso di lavoro di AEM all&#39;invio e la configurazione del file di dati (data.xml)
 
    * Visualizza l’anteprima, compila il modulo e invia. Dovresti visualizzare una nuova riga creata nel database
 

@@ -2,7 +2,7 @@
 title: Integrare AEM Forms e Marketo
 description: Scopri come integrare AEM Forms e Marketo utilizzando AEM Forms Form Data Model.
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
@@ -11,7 +11,7 @@ badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 77
-source-git-commit: e02c3f66787c78152700b24236c29e9796f721de
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Marketo, parte di Adobe, fornisce software di automazione del marketing incentrato sul marketing basato sull’account, tra cui e-mail, dispositivi mobili, social, annunci digitali, gestione web e analisi.
 
-Utilizzando il modello dati del modulo di AEM Forms, ora possiamo integrare facilmente il modulo AEM con Marketo.
+Utilizzando il modello dati del modulo di AEM Forms, ora possiamo integrare AEM Form con Marketo senza problemi.
 
 [Ulteriori informazioni sul modello dati modulo](https://helpx.adobe.com/experience-manager/6-5/forms/using/data-integration.html)
 
@@ -40,7 +40,7 @@ Per iniziare, ti consigliamo vivamente di conoscere i seguenti argomenti elencat
 ## Prerequisito
 
 1. [Server AEM con pacchetto AEM Forms Add on installato](/help/forms/adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
-1. Ambiente locale di sviluppo AEM
+1. Ambiente di sviluppo AEM locale
 1. Familiarità con il modello dati del modulo
 1. Conoscenza di base dei file Swagger
 1. Creazione di un Forms adattivo

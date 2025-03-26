@@ -2,14 +2,14 @@
 title: Unione XDP tramite il servizio Assembler
 description: Utilizzo del servizio Assembler in AEM Forms per unire xdp
 feature: Assembler
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2022-12-19T00:00:00Z
 exl-id: e116038f-7d86-41ee-b1b0-7b8569121d6d
 duration: 91
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 # Stitching XDP tramite il servizio Assembler
 
 Questo articolo fornisce le risorse per dimostrare la capacità di unire i documenti XDP utilizzando il servizio Assembler.
-Il seguente codice jsp è stato scritto per inserire un sottomodulo denominato **address** da un documento xdp denominato address.xdp in un punto di inserimento denominato **address** nel documento master.xdp. L’XDP risultante è stato salvato nella cartella principale dell’installazione AEM.
+Il seguente codice jsp è stato scritto per inserire un sottomodulo denominato **address** da un documento xdp denominato address.xdp in un punto di inserimento denominato **address** nel documento master.xdp. L’XDP risultante è stato salvato nella cartella principale dell’installazione di AEM.
 
 Il servizio Assembler si basa su documenti DDX validi per descrivere la manipolazione dei documenti PDF. È possibile fare riferimento al documento di riferimento [DDX qui](assets/ddxRef.pdf).La pagina 40 contiene informazioni sull&#39;unione xdp.
 
@@ -72,11 +72,11 @@ Per utilizzare questa funzionalità sul server AEM
 * Carica e installa il pacchetto utilizzando [Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 * [Estrai il contenuto di questo file zip](assets/xdp-and-ddx.zip) per ottenere il file xdp e DDX di esempio
 
-**Dopo aver installato il pacchetto, sarà necessario inserire nell&#39;elenco Consentiti i seguenti URL in Adobe Granite CSRF Filter.**
+**Dopo aver installato il pacchetto, sarà necessario inserire nell&#39;elenco Consentiti i seguenti URL nel filtro CSRF di Adobe Granite.**
 
 1. Segui i passaggi indicati di seguito per inserire nell&#39;elenco Consentiti i percorsi menzionati in precedenza.
 1. [Accesso a configMgr](http://localhost:4502/system/console/configMgr)
-1. Cerca Adobe di filtro CSRF Granite
+1. Cerca filtro CSRF di Adobe Granite
 1. Aggiungi il seguente percorso nelle sezioni escluse e salva `/content/AemFormsSamples/assemblerservice`
 1. Cerca &quot;Sling Referrer filter&quot; (Filtro referrer Sling)
 1. Selezionare la casella di controllo Consenti vuoto. (questa impostazione deve essere utilizzata solo a scopo di test)

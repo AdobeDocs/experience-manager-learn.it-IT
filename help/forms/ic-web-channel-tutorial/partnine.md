@@ -3,14 +3,14 @@ title: Aggiunta di una tabella al pannello dei saldi dei conti
 description: Questa è la parte 9 del tutorial a più passaggi per creare il tuo primo documento di comunicazione interattivo.In questa parte, aggiungeremo una tabella al pannello Bilanciamento account.
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: 28a9d88d-635b-47a2-8a78-54ddeabc4406
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 1e43c459-8824-40e8-8f05-24b8b0646346
 duration: 454
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Con AEM Forms versione 6.4 è stata introdotta la possibilità di visualizzare d
 
 >[!VIDEO](https://video.tv.adobe.com/v/22360?quality=12&learn=on)
 
-Configurazione della tabella nel documento del canale web - Modulo AEM 6.5
+Configurazione della tabella nel documento del canale web: AEM Form 6.5
 
 >[!VIDEO](https://video.tv.adobe.com/v/27847?quality=12&learn=on)
 

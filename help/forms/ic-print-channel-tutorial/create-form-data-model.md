@@ -3,7 +3,7 @@ title: Creazione modello dati modulo
 description: Questa è la parte 3 di un tutorial in più passaggi per creare il tuo primo documento di comunicazione interattiva. In questa parte verrà creato il modello dati modulo. Il modello dati modulo consente di configurare e connettersi a diverse origini dati.Fornisce un'interfaccia utente intuitiva per creare uno schema di rappresentazione dei dati unificato di entità e servizi aziendali tra origini dati connesse.Il video seguente illustra i passaggi per creare il modello dati modulo.
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-5952
 thumbnail: 27763.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: Developer
 level: Beginner
 exl-id: 4e64aa99-0b1c-49e9-95a7-d254017b80f4
 duration: 248
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%

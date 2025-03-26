@@ -1,15 +1,15 @@
 ---
 title: Assegnazione di tag e archiviazione di AEM Forms DoR in DAM
-description: Questo articolo illustra il caso d’uso per l’archiviazione e l’assegnazione tag del documento record generato da AEM Forms in AEM DAM. L’assegnazione tag al documento viene eseguita in base ai dati del modulo inviato.
+description: Questo articolo illustra il caso d’uso per l’archiviazione e l’assegnazione di tag al DoR generato da AEM Forms in AEM DAM. L’assegnazione tag al documento viene eseguita in base ai dati del modulo inviato.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 191
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Assegnazione di tag e archiviazione di AEM Forms DoR in DAM {#tagging-and-storing-aem-forms-dor-in-dam}
 
-Questo articolo illustra il caso d’uso per l’archiviazione e l’assegnazione tag del documento record generato da AEM Forms in AEM DAM. L’assegnazione tag al documento viene eseguita in base ai dati del modulo inviato.
+Questo articolo illustra il caso d’uso per l’archiviazione e l’assegnazione di tag al DoR generato da AEM Forms in AEM DAM. L’assegnazione tag al documento viene eseguita in base ai dati del modulo inviato.
 
 I clienti chiedono spesso di archiviare e assegnare tag al documento record (DoR) generato da AEM Forms in AEM DAM. L’assegnazione tag del documento deve essere basata sui dati inviati da Adaptive Forms. Ad esempio, se lo stato di impiego nei dati inviati è &quot;Ritirato&quot;, si desidera assegnare al documento il tag &quot;Ritirato&quot; e archiviarlo in DAM.
 
@@ -168,7 +168,7 @@ Per fare in modo che questo esempio funzioni sul tuo sistema, segui i passaggi e
 
 * Fai clic su Crea | File Carica e carica il file tag-and-store-in-dam-adaptive-form.zip
 
-* [Importa le risorse dell&#39;articolo](assets/tag-and-store-in-dam-assets.zip) tramite Gestione pacchetti AEM
+* [Importa le risorse dell&#39;articolo](assets/tag-and-store-in-dam-assets.zip) tramite Gestione pacchetti di AEM
 * Apri il [modulo di esempio in modalità anteprima](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Compila tutti i campi** e invia il modulo.
 * [Vai alla cartella dei picchi in DAM](http://localhost:4502/assets.html/content/dam/Peak). Dovresti vedere DoR nella cartella Peak. Controllare le proprietà del documento. Deve essere contrassegnato in modo appropriato.
 Complimenti!! L&#39;esempio è stato installato correttamente nel sistema

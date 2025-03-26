@@ -2,14 +2,14 @@
 title: Popolare tabella modulo adattivo
 description: Popolare la tabella del modulo adattivo con i risultati delle chiamate al servizio del modello dati modulo
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: User
 level: Intermediate
 exl-id: 6e4b901a-6534-4c34-b315-2f2620b74247
 last-substantial-update: 2019-06-09T00:00:00Z
 duration: 45
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Row1 è configurato per l’aumento di dimensione a seconda dei dati restituiti 
 
 [Installa Tomcat come specificato qui](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
 [Distribuisci il file SampleRest.war contenuto in questo file zip nel tuo Tomcat](assets/sample-rest.zip)
-[Installare le risorse](assets/amortizationschedule.zip) tramite Gestione pacchetti AEM
+[Installare le risorse](assets/amortizationschedule.zip) tramite Gestione pacchetti di AEM
 [Aprire il modulo di pianificazione ammortamento](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
 Immetti il valore appropriato e fai clic su calcola
 La pianificazione dell&#39;ammortamento dovrebbe essere compilata nel modulo

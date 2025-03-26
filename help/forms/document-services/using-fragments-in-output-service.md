@@ -2,14 +2,14 @@
 title: Utilizzo dei frammenti nel servizio di output
 description: Generare documenti PDF con frammenti residenti nell’archivio crx
 feature: Output Service
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2022-07-09T00:00:00Z
 exl-id: d7887e2e-c2d4-4f0c-b117-ba7c41ea539a
 duration: 106
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 # Generazione di documenti PDF tramite frammenti{#developing-with-output-and-forms-services-in-aem-forms}
 
 
-In questo articolo utilizzeremo il servizio di output per generare file pdf utilizzando frammenti xdp. L’xdp principale e i frammenti risiedono nell’archivio crx. È importante simulare la struttura delle cartelle del file system in AEM. Ad esempio, se utilizzi un frammento nella cartella Frammenti nel tuo XDP, devi creare una cartella denominata **frammenti** nella cartella base in AEM. La cartella base conterrà il modello xdp di base. Ad esempio, se nel file system è presente la seguente struttura
+In questo articolo utilizzeremo il servizio di output per generare file pdf utilizzando frammenti xdp. L’xdp principale e i frammenti risiedono nell’archivio crx. È importante simulare la struttura di cartelle del file system in AEM. Ad esempio, se utilizzi un frammento nella cartella Frammenti del tuo XDP, devi creare una cartella denominata **frammenti** nella cartella base in AEM. La cartella base conterrà il modello xdp di base. Ad esempio, se nel file system è presente la seguente struttura
 * c:\xdptemplates - Conterrà il modello xdp di base
 * c:\xdptemplates\fragments - Questa cartella conterrà frammenti e il modello principale farà riferimento al frammento come mostrato di seguito
   ![frammento-xdp](assets/survey-fragment.png).
@@ -67,23 +67,23 @@ out.println("Document genreated and saved to " + filePath);
 **Per eseguire il test del pacchetto di esempio nel sistema**
 
 * [Scarica e importa i file xdp di esempio in AEM](assets/xdp-templates-fragments.zip)
-* [Scaricare e installare il pacchetto utilizzando Gestione pacchetti AEM](assets/using-fragments-assets.zip)
+* [Scaricare e installare il pacchetto utilizzando Gestione pacchetti di AEM](assets/using-fragments-assets.zip)
 * [L’XDP e i frammenti di esempio possono essere scaricati da qui](assets/xdptemplates.zip)
 
-**Dopo aver installato il pacchetto, sarà necessario inserire nell&#39;elenco Consentiti i seguenti URL in Adobe Granite CSRF Filter.**
+**Dopo aver installato il pacchetto, sarà necessario inserire nell&#39;elenco Consentiti i seguenti URL nel filtro CSRF di Adobe Granite.**
 
 1. Segui i passaggi indicati di seguito per inserire nell&#39;elenco Consentiti i percorsi menzionati in precedenza.
 1. [Accesso a configMgr](http://localhost:4502/system/console/configMgr)
-1. Cerca Adobe di filtro CSRF Granite
+1. Cerca filtro CSRF di Adobe Granite
 1. Aggiungi il seguente percorso nelle sezioni escluse e salva
 1. /content/AemFormsSamples/usingfragments
 
 Esistono diversi modi per testare il codice di esempio. Il metodo più rapido e semplice consiste nell’utilizzare l’app Postman. Postman consente di effettuare richieste POST al server. Installa l’app Postman sul sistema.
 Avvia l’app e immetti il seguente URL per testare l’API di esportazione dei dati
 
-Accertati di aver selezionato &quot;POST&quot; dall’elenco a discesa
+Assicurarsi di aver selezionato &quot;POST&quot; dall&#39;elenco a discesa
 http://localhost:4502/content/AemFormsSamples/usingfragments.html
-Assicurarsi di specificare Autorizzazione come Autenticazione di base. Specificare il nome utente e la password del server AEM
+Assicurarsi di specificare Autorizzazione come Autenticazione di base. Specificare il nome utente e la password di AEM Server
 Passa alla scheda &quot;Corpo&quot; e specifica i parametri di richiesta come mostrato nell’immagine seguente
 ![esporta](assets/using-fragment-postman.png)
 Quindi fare clic sul pulsante Invia

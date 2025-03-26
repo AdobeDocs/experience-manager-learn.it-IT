@@ -3,14 +3,14 @@ title: Introduzione all'archiviazione e al recupero di dati da database MySQL
 description: Tutorial in più parti per illustrare i passaggi necessari per l’archiviazione e il recupero dei dati del modulo
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 95795102-4278-4556-8e0f-1b8a359ab093
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 236
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Memorizzazione e recupero di dati di moduli adattivi dal database MySQL
 
-Questo tutorial illustra i passaggi necessari per salvare e recuperare i dati dei moduli adattivi dal database. Questa esercitazione utilizzava il database MySQL per memorizzare i dati di Moduli adattivi. Il database desiderato può essere utilizzato per memorizzare i dati, purché siano stati distribuiti driver specifici del database in AEM. A un livello avanzato, per ottenere il caso d’uso sono necessari i seguenti passaggi:
+Questo tutorial illustra i passaggi necessari per salvare e recuperare i dati dei moduli adattivi dal database. Questa esercitazione utilizzava il database MySQL per memorizzare i dati di Moduli adattivi. Il database scelto può essere utilizzato per memorizzare i dati purché siano stati distribuiti driver specifici del database in AEM. A un livello avanzato, per ottenere il caso d’uso sono necessari i seguenti passaggi:
 
 * Utilizzare l’API GuideBridge per accedere ai dati del modulo adattivo
 

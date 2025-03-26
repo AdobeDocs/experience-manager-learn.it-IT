@@ -3,13 +3,13 @@ title: AEM Forms con schema JSON e dati[Part4]
 description: Tutorial in più parti per illustrare i passaggi necessari per creare un modulo adattivo con schema JSON e interrogare i dati inviati.
 feature: Adaptive Forms
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: a8d8118d-f4a1-483f-83b4-77190f6a42a4
 duration: 99
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -35,7 +35,7 @@ L’interfaccia utente di esempio per eseguire query sui dati inviati non utiliz
 >
 >La versione corrente di questa esercitazione non supporta l&#39;esecuzione di query su più colonne.
 
-Quando si seleziona un modulo per eseguire la query, viene effettuata una chiamata di GET a **/bin/getdatakeysfromschema**. Questa chiamata di GET restituisce i campi obbligatori associati allo schema dei moduli. I campi obbligatori vengono quindi inseriti nell&#39;elenco a discesa di QueryBuilder per consentire la creazione della query.
+Quando si seleziona un modulo per eseguire la query, viene effettuata una chiamata GET a **/bin/getdatakeysfromschema**. Questa chiamata di GET restituisce i campi obbligatori associati allo schema dei moduli. I campi obbligatori vengono quindi inseriti nell&#39;elenco a discesa di QueryBuilder per consentire la creazione della query.
 
 Il seguente frammento di codice effettua una chiamata al metodo getRequiredColumnsFromSchema del servizio JSONSchemaOperations. Trasmettiamo le proprietà e gli elementi richiesti dello schema a questa chiamata del metodo. L’array restituito da questa chiamata di funzione viene quindi utilizzato per popolare l’elenco a discesa Query Builder
 
@@ -69,7 +69,7 @@ Il risultato di questa query viene quindi restituito per popolare la tabella nel
 Per eseguire questo esempio sul sistema locale, attenersi alla seguente procedura
 
 1. [Assicurarsi di aver seguito tutti i passaggi qui indicati](part2.md)
-1. [Importare il file Dashboardv2.zip utilizzando Gestione pacchetti AEM.](assets/dashboardv2.zip) Questo pacchetto contiene tutti i bundle necessari, le impostazioni di configurazione, l&#39;invio personalizzato e la pagina di esempio per eseguire query sui dati.
+1. [Importa il file Dashboardv2.zip utilizzando Gestione pacchetti di AEM.](assets/dashboardv2.zip) Questo pacchetto contiene tutti i bundle necessari, le impostazioni di configurazione, l&#39;invio personalizzato e la pagina di esempio per eseguire query sui dati.
 1. Creare un modulo adattivo utilizzando lo schema json di esempio
 1. Configurare il modulo adattivo per l’invio all’azione di invio personalizzata &quot;customsubmithelpx&quot;
 1. Compila il modulo e invia

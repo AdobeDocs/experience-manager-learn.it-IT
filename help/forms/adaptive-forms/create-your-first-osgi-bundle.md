@@ -1,15 +1,15 @@
 ---
-title: Creazione del primo bundle OSGi con moduli AEM
+title: Creazione del primo bundle OSGi con AEM Forms
 description: Crea il tuo primo bundle OSGi utilizzando Maven ed Eclipse
 feature: Adaptive Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 177
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Aggiungere %JAVA_HOME%/bin al percorso
 ![origine dati](assets/java-home.JPG)
 
 >[!NOTE]
-> Non usi JDK 15. Non è supportato dall&#39;AEM.
+> Non usi JDK 15. Non è supportato da AEM.
 
 ### Verifica la versione JDK
 
@@ -118,7 +118,7 @@ Espandere `src/main/java` nella cartella `learningaemforms.core`. Questa è la c
 
 ## Creare il progetto
 
-Dopo aver scritto il servizio OSGi, o servlet, devi creare il progetto per generare il bundle OSGi che può essere distribuito utilizzando la console web Felix. Fai riferimento a [AEMFD Client SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) per includere l&#39;SDK client appropriato nel progetto Maven. È necessario includere l&#39;SDK del client AEM FD nella sezione delle dipendenze di `pom.xml` del progetto principale, come illustrato di seguito.
+Dopo aver scritto il servizio OSGi, o servlet, devi creare il progetto per generare il bundle OSGi che può essere distribuito utilizzando la console web Felix. Fai riferimento a [SDK client AEMFD](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) per includere il SDK client appropriato nel progetto Maven. È necessario includere AEM FD Client SDK nella sezione delle dipendenze di `pom.xml` del progetto di base, come illustrato di seguito.
 
 ```xml
 <dependency>
@@ -133,4 +133,4 @@ Per creare il progetto, effettua le seguenti operazioni:
 * Apri **finestra del prompt dei comandi**
 * Passa a `c:\aemformsbundles\learningaemforms\core`
 * Esegui il comando `mvn clean install`
-Se tutto va bene, dovresti vedere il bundle nella seguente posizione `C:\AEMFormsBundles\learningaemforms\core\target`. Questo pacchetto è ora pronto per essere implementato in AEM utilizzando la console web Felix.
+Se tutto va bene, dovresti vedere il bundle nella seguente posizione `C:\AEMFormsBundles\learningaemforms\core\target`. Questo bundle è ora pronto per essere implementato in AEM utilizzando la console web Felix.

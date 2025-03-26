@@ -2,7 +2,7 @@
 title: Estrazione dati OCR
 description: Estrai dati dai documenti governativi emessi per compilare i moduli.
 feature: Barcoded Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6679
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: 1532a865-4664-40d9-964a-e64463b49587
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 145
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
@@ -108,7 +108,7 @@ Se desideri utilizzare le risorse di esempio con la tua chiave API, segui i segu
 * [Scarica il modello dati del modulo](assets/drivers-license-fdm.zip) e importa in AEM utilizzando [Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 * [Scarica la libreria client](assets/drivers-license-client-lib.zip)
 * Il modulo adattivo di esempio scaricabile può essere [scaricato da qui](assets/adaptive-form-dl.zip). In questo modulo di esempio vengono utilizzate le chiamate di servizio del modello dati del modulo fornito come parte di questo articolo.
-* Importa il modulo in AEM dall&#39;[interfaccia utente Forms e Document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Importa il modulo in AEM da [Forms e interfaccia utente documento](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Apri il modulo in modalità [modifica.](http://localhost:4502/editor.html/content/forms/af/driverslicenseandpassport.html)
 * Specifica la chiave API come valore predefinito nel campo apikey e salva le modifiche
 * Apri l’editor di regole per il campo Stringa Base 64. Osserva la chiamata del servizio quando il valore di questo campo viene modificato.

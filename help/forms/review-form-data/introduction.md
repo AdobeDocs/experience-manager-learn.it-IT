@@ -3,14 +3,14 @@ title: Verifica i dati del modulo prima dell’invio
 description: Tutorial per creare un componente di riepilogo per la revisione dei dati del modulo prima dell’invio.
 feature: Adaptive Forms
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2023-01-22T00:00:00Z
 exl-id: fa971850-0e89-4f74-a747-ec99051be2f1
 duration: 17
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 2%
@@ -25,9 +25,9 @@ Tutorial in più parti che illustra i passaggi necessari per creare un component
 
 Per seguire questa esercitazione, si consiglia di installare quanto segue:
 
-* AEM 6.5 o versione successiva con moduli appropriati e pacchetto aggiuntivo
+* AEM 6.5 o versione successiva con pacchetto aggiuntivo per moduli appropriato
 
-Si consiglia inoltre di avere un certo livello di esperienza di sviluppo con AEM e AEM Forms.
+È inoltre consigliabile avere un certo livello di esperienza di sviluppo con AEM e AEM Forms.
 
 ## Passaggi successivi
 

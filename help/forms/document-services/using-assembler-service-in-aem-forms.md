@@ -2,14 +2,14 @@
 title: Utilizzo del servizio Assembler in AEM Forms
 description: Utilizzo del servizio Assembler in AEM Forms per assemblare più file PDF
 feature: Assembler
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 18da12ea-b1ea-48e4-979e-3cb59584dfbd
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 76
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Utilizzo del servizio Assembler in AEM Forms{#using-assembler-service-in-aem-forms}
 
-Questo articolo fornisce le risorse per dimostrare la possibilità di trascinare e rilasciare più file PDF nel browser e salvare il file pdf assemblato nel file system. Di seguito è riportato il codice per il servlet che assembla i file pdf caricati utilizzando il browser.
+Questo articolo fornisce le risorse per dimostrare la capacità di trascinare e rilasciare più file PDF nel browser e salvare il file pdf assemblato nel file system. Di seguito è riportato il codice per il servlet che assembla i file pdf caricati utilizzando il browser.
 
 ```java
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
@@ -121,6 +121,6 @@ Per utilizzare questa funzionalità sul server AEM
 >
 > * Il codice non gestisce documenti PDF basati su XFA
 >
-> * Assicurati di trascinare e rilasciare solo i file di PDF
+> * Assicurati di trascinare e rilasciare solo i file PDF
 >
 >

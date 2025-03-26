@@ -2,7 +2,7 @@
 title: Crea Forms per la firma
 description: Crea i moduli da includere nel pacchetto di firma.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6893
 thumbnail: 6893.jpg
 topic: Development
@@ -10,7 +10,7 @@ role: User
 level: Beginner
 exl-id: 565d81a4-2918-44ea-a3e9-ed79f246f08a
 duration: 71
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Il passaggio successivo consiste nel creare i moduli adattivi da includere nel p
 * I moduli devono essere associati anche a clientLib denominata **getnextform**
 * I moduli devono utilizzare il componente Passaggio di firma.
 * Il modulo deve inoltre utilizzare il componente **Firma più moduli** personalizzato. Questo componente consente di passare al modulo successivo per accedere al pacchetto.
-* L&#39;invio del modulo deve essere configurato per attivare il flusso di lavoro AEM **Aggiorna stato firma**
+* L&#39;invio del modulo deve essere configurato per attivare il flusso di lavoro di AEM **Aggiorna stato firma**
 * Verificare che il percorso del file di dati sia impostato su **Data.xml**. Questo è molto importante, poiché il codice di esempio cerca un file denominato Data.xml nel payload del processo di invio del modulo.
 
 Dopo aver creato il modulo, includi nel modulo il frammento di modulo adattivo **commonfields**. Il frammento è contrassegnato come nascosto. Questo frammento contiene i campi seguenti.

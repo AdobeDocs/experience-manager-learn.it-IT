@@ -2,7 +2,7 @@
 title: Elenchi a discesa a cascata
 description: Compila gli elenchi a discesa in base a una selezione precedente.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-9724
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
 last-substantial-update: 2021-02-07T00:00:00Z
 duration: 185
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -66,7 +66,7 @@ L&#39;integrazione dei dati di AEM Forms fornisce un&#39;interfaccia utente intu
 
 ## Creare un modulo adattivo
 
-Integra le chiamate GET del modello dati modulo con il modulo adattivo per compilare gli elenchi a discesa.
+Integra le chiamate GET del modello dati del modulo con il modulo adattivo per compilare gli elenchi a discesa.
 Crea un modulo adattivo con 2 elenchi a discesa. Uno per elencare i paesi e uno per elencare gli stati/province a seconda del paese selezionato.
 
 ### Elenco a discesa Popola paesi

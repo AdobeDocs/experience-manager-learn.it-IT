@@ -1,15 +1,15 @@
 ---
-title: PrePopolare HTML5 Forms utilizzando l’attributo dei dati.
+title: PrePopolare HTML5 Forms utilizzando l’attributo dati.
 description: Popola i moduli HTML5 recuperando i dati dall’origine back-end.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: ab0f5282-383b-4be6-9c57-cded6ab37528
 last-substantial-update: 2020-01-09T00:00:00Z
 duration: 94
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 # PrePopolare HTML5 Forms utilizzando l’attributo dei dati {#prepopulate-html-forms-using-data-attribute}
 
 
-I modelli XDP di cui è stato eseguito il rendering in formato HTML utilizzando AEM Forms sono denominati HTML5 o Mobile Forms. Un caso d’uso comune consiste nel precompilare questi moduli durante il rendering.
+I modelli XDP renderizzati in formato HTML utilizzando AEM Forms sono denominati HTML5 o Mobile Forms. Un caso d’uso comune consiste nel precompilare questi moduli durante il rendering.
 
 Esistono 2 modi per unire i dati con il modello xdp quando viene eseguito il rendering come HTML.
 
@@ -44,7 +44,7 @@ Durante il rendering dell’XDP, puoi anche trasmettere alcuni parametri all’x
 La JSP che scrivi avrà accesso al parametro name attraverso request.getParameter(&quot;name&quot;). Puoi quindi passare il valore di questo parametro al processo di backend per recuperare i dati richiesti.
 Per utilizzare questa funzionalità sul sistema, attenersi alla procedura indicata di seguito:
 
-* [Scaricare e importare le risorse in AEM utilizzando Gestione pacchetti](assets/prepopulatemobileform.zip)
+* [Scarica e importa le risorse in AEM tramite Gestione pacchetti](assets/prepopulatemobileform.zip)
 Il pacchetto installerà i seguenti elementi
 
    * ProfiloPersonalizzato

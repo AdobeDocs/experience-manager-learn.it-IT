@@ -2,7 +2,7 @@
 title: Creazione di un profilo campagna all’invio di un modulo adattivo
 description: Questo articolo illustra i passaggi necessari per creare un profilo in Adobe Campaign Standard all’invio di un modulo adattivo. Questo processo utilizza un meccanismo di invio personalizzato per gestire l’invio del modulo adattivo.
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
@@ -10,7 +10,7 @@ badgeIntegration: label="Integrazione" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: deef09d9-82ec-4e61-b7ee-e72d1cd4e9e0
 duration: 182
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -23,13 +23,13 @@ Questo articolo illustra i passaggi necessari per creare un profilo in Adobe Cam
 
 Questo tutorial illustra i passaggi necessari per creare il profilo Campaign all’invio di moduli adattivi. Per eseguire questo caso d’uso è necessario effettuare le seguenti operazioni
 
-* Creare un servizio AEM (Campaign Service) per creare il profilo Adobe Campaign Standard utilizzando l’API REST
+* Creare un servizio AEM (Campaign Service) per creare un profilo Adobe Campaign Standard utilizzando l’API REST
 * Creare un’azione di invio personalizzata per la gestione dell’invio di moduli adattivi
 * Richiama il metodo createProfile di CampaignService
 
-## Crea servizio AEM {#create-aem-service}
+## Creare un servizio AEM {#create-aem-service}
 
-Crea un servizio AEM per creare un profilo Adobe Campaign. Questo servizio AEM recupererà le credenziali di Adobe Campaign dalla configurazione OSGI. Una volta ottenute le credenziali della campagna, viene generato il token di accesso e viene eseguita la chiamata HTTP Post per creare il profilo in Adobe Campaign. Di seguito è riportato il codice per la creazione del profilo.
+Crea un servizio AEM per creare un profilo Adobe Campaign. Questo servizio AEM recupererà le credenziali di Adobe Campaign dalla configurazione OSGI. Una volta ottenute le credenziali della campagna, viene generato il token di accesso e viene eseguita la chiamata HTTP Post per creare il profilo in Adobe Campaign utilizzando il token di accesso. Di seguito è riportato il codice per la creazione del profilo.
 
 ```java
 package aemformwithcampaign.core.services.impl;

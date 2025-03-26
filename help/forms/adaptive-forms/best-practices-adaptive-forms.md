@@ -2,14 +2,14 @@
 title: Convenzioni di denominazione e best practice da seguire per la creazione di moduli adattivi
 description: Convenzioni di denominazione e best practice da seguire per la creazione di moduli adattivi
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: fbfc74d7-ba7c-495a-9e3b-63166a3025ab
 last-substantial-update: 2020-09-10T00:00:00Z
 duration: 57
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Best practice
 
-I moduli di Adobe Experience Manager (AEM) possono aiutarti a trasformare transazioni complesse in esperienze digitali semplici e deliziose. Il documento seguente descrive alcune best practice aggiuntive da seguire durante lo sviluppo di Adaptive Forms. Questo documento deve essere utilizzato insieme a [questo documento](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
+I moduli di Adobe Experience Manager (AEM) consentono di trasformare transazioni complesse in esperienze digitali semplici e straordinarie. Il documento seguente descrive alcune best practice aggiuntive da seguire durante lo sviluppo di Adaptive Forms. Questo documento deve essere utilizzato insieme a [questo documento](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
 
 ## Convenzioni di denominazione
 

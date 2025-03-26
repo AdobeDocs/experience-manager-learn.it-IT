@@ -3,7 +3,7 @@ title: Distribuire l’esempio
 description: Ottieni un caso d’uso in esecuzione sull’istanza AEM Forms locale
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6602
 thumbnail: 6602.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: Developer
 level: Intermediate
 exl-id: cdfae631-86d7-438f-9baf-afd621802723
 duration: 186
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 1%
@@ -54,11 +54,11 @@ Nell&#39;esempio vengono utilizzate 2 librerie client. Importa queste [librerie 
 
 ## Importare il modello di modulo adattivo personalizzato
 
-I moduli di esempio utilizzati in questa demo sono basati su un modello personalizzato. Importa il modello personalizzato [ in AEM](assets/custom-template-with-page-component.zip)
+I moduli di esempio utilizzati in questa demo sono basati su un modello personalizzato. Importa il [modello personalizzato in AEM](assets/custom-template-with-page-component.zip)
 
 ## Importare i moduli adattivi di esempio
 
-I 2 moduli che costituiscono questo campione devono essere importati nell’AEM. I moduli di esempio possono essere [scaricati da qui](assets/sample-forms.zip)
+I 2 moduli che compongono questo esempio devono essere importati in AEM. I moduli di esempio possono essere [scaricati da qui](assets/sample-forms.zip)
 
 Apri [ModuloAccount](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) in modalità di modifica. Specifica i valori Chiave API vonage e Segreto API nei campi appropriati del modulo adattivo.
 

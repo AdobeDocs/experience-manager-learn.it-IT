@@ -3,7 +3,7 @@ title: Visualizza l’ID di invio all’invio del modulo
 description: Visualizzare la risposta di un modello dati modulo nella pagina di ringraziamento
 feature: Adaptive Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -11,7 +11,7 @@ jira: KT-13900
 last-substantial-update: 2023-09-09T00:00:00Z
 exl-id: 18648914-91cc-470d-8f27-30b750eb2f32
 duration: 72
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Personalizza pagina di ringraziamento
 
-Quando invii un modulo adattivo a un endpoint REST, vuoi mostrare un messaggio di conferma per informare l’utente che l’invio del modulo è andato a buon fine. La risposta del POST contiene dettagli sull’invio, ad esempio l’ID invio, e un messaggio di conferma ben progettato include l’ID invio, contribuendo a migliorare l’esperienza utente. Questa risposta può essere visualizzata nella pagina di ringraziamento configurata con il modulo adattivo.
+Quando invii un modulo adattivo a un endpoint REST, vuoi mostrare un messaggio di conferma per informare l’utente che l’invio del modulo è andato a buon fine. La risposta POST contiene dettagli sull’invio, ad esempio l’ID invio, e un messaggio di conferma ben progettato include l’ID invio, contribuendo a migliorare l’esperienza utente. Questa risposta può essere visualizzata nella pagina di ringraziamento configurata con il modulo adattivo.
 
 La schermata seguente mostra un modulo inviato utilizzando l’azione Invia modello dati modulo con una pagina di ringraziamento configurata
 

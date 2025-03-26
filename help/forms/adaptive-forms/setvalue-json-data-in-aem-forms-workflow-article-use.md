@@ -1,15 +1,15 @@
 ---
 title: Impostazione del valore dell’elemento dati Json nel flusso di lavoro di AEM Forms
-description: Poiché un modulo adattivo viene indirizzato a utenti diversi nel flusso di lavoro AEM, è necessario nascondere o disabilitare alcuni campi o pannelli in base alla persona che lo revisiona. Per soddisfare questi casi d’uso, in genere si imposta il valore di un campo nascosto. In base al valore di questo campo nascosto, le regole business possono essere create per nascondere/disabilitare i pannelli o i campi appropriati.
+description: Poiché un modulo adattivo viene instradato a utenti diversi in AEM Workflow, è necessario nascondere o disabilitare alcuni campi o pannelli in base alla persona che rivede il modulo. Per soddisfare questi casi d’uso, in genere si imposta il valore di un campo nascosto. In base al valore di questo campo nascosto, le regole business possono essere create per nascondere/disabilitare i pannelli o i campi appropriati.
 feature: Adaptive Forms
-version: 6.4
+version: Experience Manager 6.4
 topic: Development
 role: Developer
 level: Experienced
 exl-id: fbe6d341-7941-46f5-bcd8-58b99396d351
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 126
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 0%
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Impostazione del valore dell’elemento dati JSON nel flusso di lavoro AEM Forms {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
-Poiché un modulo adattivo viene indirizzato a utenti diversi nel flusso di lavoro AEM, è necessario nascondere o disabilitare alcuni campi o pannelli in base alla persona che lo revisiona. Per soddisfare questi casi d’uso, in genere si imposta il valore di un campo nascosto. In base al valore di questo campo nascosto, le regole business possono essere create per nascondere/disabilitare i pannelli o i campi appropriati.
+Poiché un modulo adattivo viene instradato a utenti diversi in AEM Workflow, è necessario nascondere o disabilitare alcuni campi o pannelli in base alla persona che rivede il modulo. Per soddisfare questi casi d’uso, in genere si imposta il valore di un campo nascosto. In base al valore di questo campo nascosto, le regole business possono essere create per nascondere/disabilitare i pannelli o i campi appropriati.
 
 ![Impostazione del valore di un elemento nei dati JSON](assets/capture-3.gif)
 
 In AEM Forms OSGi - dobbiamo creare un bundle OSGi personalizzato per impostare il valore dell’elemento dati JSON. Il bundle viene fornito come parte di questa esercitazione.
 
-Utilizziamo Process Step nel flusso di lavoro dell’AEM. Associamo il bundle OSGi &quot;Set Value of Element in Json&quot; a questo passaggio del processo.
+Utilizziamo Passaggio del processo nel flusso di lavoro di AEM. Associamo il bundle OSGi &quot;Set Value of Element in Json&quot; a questo passaggio del processo.
 
 È necessario trasmettere due argomenti al bundle del valore impostato. Il primo argomento è il percorso dell’elemento di cui è necessario impostare il valore. Il secondo argomento è il valore che deve essere impostato.
 

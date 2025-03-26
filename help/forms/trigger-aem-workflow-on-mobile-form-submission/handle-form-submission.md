@@ -1,15 +1,16 @@
 ---
-title: Attiva il flusso di lavoro AEM all’invio del modulo HTML5
+title: Attiva il flusso di lavoro di AEM per l’invio di moduli HTML5
 description: Gestire l’invio del modulo HTML5
 feature: Mobile Forms
 doc-type: article
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 jira: kt-16215
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 level: Experienced
-source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
+exl-id: 5fbc0cb9-5b55-4269-9172-039414db89cc
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 1%
@@ -18,12 +19,12 @@ ht-degree: 1%
 
 # Gestire l’invio di moduli
 
-In questa parte verrà creato un semplice servlet che verrà eseguito su Publish AEM per gestire l’invio del modulo HTML5. Questo servlet invia una richiesta HTTP POST a un servlet in esecuzione in un’istanza di authoring AEM responsabile del salvataggio dei dati inviati come nodo `nt:file` nell’archivio di authoring AEM.
+In questa parte verrà creato un semplice servlet che viene eseguito su AEM Publish per gestire l’invio del modulo HTML5. Questo servlet invia una richiesta HTTP POST a un servlet in esecuzione in un’istanza di authoring di AEM responsabile del salvataggio dei dati inviati come nodo `nt:file` nell’archivio di authoring di AEM.
 
-Di seguito è riportato il codice del servlet che gestisce l’invio del modulo HTML5. In questo servlet effettuiamo una chiamata POST a un servlet montato su **/bin/startworkflow** in un&#39;istanza Autore AEM. Questo servlet salva i dati del modulo nell’archivio dell’Autore dell’AEM.
+Di seguito è riportato il codice del servlet che gestisce l’invio del modulo HTML5. In questo servlet effettuiamo una chiamata POST a un servlet montato su **/bin/startworkflow** in un&#39;istanza di AEM Author. Questo servlet salva i dati del modulo nell’archivio di AEM Author.
 
 
-## Servlet Publish per AEM
+## Servlet di pubblicazione AEM
 
 Il codice seguente gestisce l’invio del modulo HTML5. Questo codice viene eseguito sull’istanza Publish.
 

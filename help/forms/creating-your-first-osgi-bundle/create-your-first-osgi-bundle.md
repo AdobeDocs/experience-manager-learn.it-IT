@@ -1,7 +1,7 @@
 ---
 title: Creazione del primo bundle OSGi con AEM Forms
 description: Crea il tuo primo bundle OSGi utilizzando Maven ed Eclipse
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Adaptive Forms
 topic: Development
 role: Developer
@@ -9,7 +9,7 @@ level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
 last-substantial-update: 2021-04-23T00:00:00Z
 duration: 145
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Aggiungere %JAVA_HOME%/bin al percorso
 ![origine dati](assets/java-home.JPG)
 
 >[!NOTE]
-> Non usi JDK 15. Non è supportato dall&#39;AEM.
+> Non usi JDK 15. Non è supportato da AEM.
 
 ### Verifica la versione JDK
 
@@ -101,9 +101,9 @@ Espandere `src/main/java` nella cartella `mysite.core`. Questa è la cartella in
 
 ![origine dati](assets/mysite-core-project.png)
 
-## Includi AEMFD Client SDK
+## Includi SDK client AEMFD
 
-Devi includere l’sdk del client AEMFD nel progetto per sfruttare i vari servizi forniti con AEM Forms. Fai riferimento a [AEMFD Client SDK](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) per includere l&#39;SDK client appropriato nel progetto Maven. È necessario includere l&#39;SDK del client AEM FD nella sezione delle dipendenze di `pom.xml` del progetto principale, come illustrato di seguito.
+Devi includere l’sdk del client AEMFD nel progetto per sfruttare i vari servizi forniti con AEM Forms. Fai riferimento a [SDK client AEMFD](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) per includere il SDK client appropriato nel progetto Maven. È necessario includere AEM FD Client SDK nella sezione delle dipendenze di `pom.xml` del progetto di base, come illustrato di seguito.
 
 ```xml
 <dependency>

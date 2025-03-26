@@ -1,22 +1,22 @@
 ---
-title: Crittografa PDF con una password di autorizzazione
+title: Crittografare PDF con una password di autorizzazione
 description: Utilizzare DocAssuranceService per crittografare un PDF
 feature: Document Services
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 jira: KT-15849
 last-substantial-update: 2024-07-19T00:00:00Z
 exl-id: 5df8581c-a44c-449c-bf3b-8cdf57635c4d
-source-git-commit: d01a56cd1fd3085b0230918b15b4635ba375e346
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
 
 ---
 
-# Crittografa PDF con una password di autorizzazione
+# Crittografare PDF con una password di autorizzazione
 
 Per copiare, modificare o stampare un documento PDF è necessaria una password di autorizzazione, nota anche come password del proprietario o master. Scopri come utilizzare l&#39;API [DocAssuranceService](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/fd/docassurance/client/api/DocAssuranceService.html) per applicare una password di autorizzazione a un PDF a livello di programmazione.
 
@@ -61,17 +61,17 @@ Il seguente codice JSP crittografa un PDF con una password di autorizzazione:
 
 **Per eseguire il test del pacchetto di esempio nel sistema**
 
-[Scaricare e installare il pacchetto utilizzando Gestione pacchetti AEM](assets/encryptpdf.zip)
+[Scaricare e installare il pacchetto utilizzando Gestione pacchetti di AEM](assets/encryptpdf.zip)
 
-**Dopo aver installato il pacchetto, aggiungi i seguenti URL alla configurazione OSGi del filtro Adobe inserire nell&#39;elenco Consentiti Granite CSRF:**
+**Dopo aver installato il pacchetto, aggiungi i seguenti URL al Adobe di configurazione OSGi del filtro inserire nell&#39;elenco Consentiti Granite CSRF:**
 
 1. [Accesso a configMgr](http://localhost:4502/system/console/configMgr)
-1. Cerca Adobe di filtro CSRF Granite
+1. Cerca filtro CSRF di Adobe Granite
 1. Aggiungi il seguente percorso nelle sezioni escluse e salva
 1. /content/AemFormsSamples/encrypt
 
 ## Verifica del campione
 
-Esistono diversi modi per testare il codice di esempio. Il metodo più rapido e semplice consiste nell’utilizzare l’app Postman. Postman ti consente di effettuare richieste POST al server.Nella schermata seguente vengono mostrati i parametri di richiesta necessari per il funzionamento della richiesta post. Prima di inviare la richiesta, assicurati di specificare il tipo di autorizzazione appropriato.
+Esistono diversi modi per testare il codice di esempio. Il metodo più rapido e semplice consiste nell’utilizzare l’app Postman. Postman consente di effettuare richieste POST al server.Nella schermata seguente vengono mostrati i parametri di richiesta necessari per il funzionamento della richiesta POST. Prima di inviare la richiesta, assicurati di specificare il tipo di autorizzazione appropriato.
 
 ![crittografa-pdf-postman](assets/encrypt-pdf-postman.png)

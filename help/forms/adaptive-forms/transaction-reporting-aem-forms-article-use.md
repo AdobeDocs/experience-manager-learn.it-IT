@@ -2,14 +2,14 @@
 title: Utilizzo del reporting delle transazioni in AEM Forms
 description: I rapporti sulle transazioni in AEM Forms ti consentono di tenere un conteggio di tutte le transazioni effettuate a partire da una data specificata nella distribuzione AEM Forms.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Nella schermata precedente Documento elaborato indica il numero di documenti gen
 
 Una transazione rimane nel buffer per un periodo specificato (tempo buffer di scaricamento + tempo replica inversa). Per impostazione predefinita, occorrono circa 90 secondi prima che il conteggio delle transazioni venga visualizzato nel rapporto sulle transazioni.
 
-Azioni quali l’invio di un modulo PDF, l’utilizzo dell’interfaccia utente dell’agente per visualizzare in anteprima una comunicazione interattiva o l’utilizzo di metodi di invio di moduli non standard non vengono considerate transazioni. AEM Forms fornisce un’API per registrare tali transazioni. Chiama l’API dalle implementazioni personalizzate per registrare una transazione.
+Azioni quali l’invio di un PDF Form, l’utilizzo dell’interfaccia utente dell’agente per visualizzare in anteprima una comunicazione interattiva o l’utilizzo di metodi di invio di moduli non standard non vengono considerate transazioni. AEM Forms fornisce un’API per registrare tali transazioni. Chiama l’API dalle implementazioni personalizzate per registrare una transazione.
 
 Se visualizzi il rapporto sulle transazioni nell’istanza di authoring, assicurati che la replica inversa sia configurata su tutte le istanze di pubblicazione.
 

@@ -2,7 +2,7 @@
 title: Creare un flusso di lavoro principale per attivare il processo di firma
 description: Crea un flusso di lavoro per memorizzare i moduli per la firma nel database
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 thumbnail: 6887.jpg
 jira: KT-6887
 topic: Development
@@ -10,7 +10,7 @@ role: Developer
 level: Intermediate
 exl-id: 338d9522-f6da-4aa7-b5d8-b9fff39ea94b
 duration: 70
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Il workflow principale viene attivato quando l&#39;utente invia il modulo inizia
 
 **Archivia Forms per la firma** è un passaggio del processo personalizzato.
 
-La motivazione per implementare un passaggio di processo personalizzato è quella di estendere un flusso di lavoro AEM. Il codice seguente implementa un passaggio di processo personalizzato. Il codice estrae i nomi dei moduli da firmare e trasmette i dati del modulo inviati al metodo `insertData` nel servizio SignMultipleForms. Il metodo `insertData` inserisce quindi le righe nel database identificato dall&#39;origine dati **aemformstutorial**.
+La motivazione per l’implementazione di un passaggio di processo personalizzato è l’estensione di un flusso di lavoro AEM. Il codice seguente implementa un passaggio di processo personalizzato. Il codice estrae i nomi dei moduli da firmare e trasmette i dati del modulo inviati al metodo `insertData` nel servizio SignMultipleForms. Il metodo `insertData` inserisce quindi le righe nel database identificato dall&#39;origine dati **aemformstutorial**.
 
 Il codice in questo passaggio del processo personalizzato fa riferimento al servizio `SignMultipleForms`.
 

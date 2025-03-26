@@ -3,13 +3,13 @@ title: Memorizzazione e recupero dei dati del modulo dal database MySQL - Crea l
 description: Tutorial in più parti per illustrare i passaggi necessari per l’archiviazione e il recupero dei dati del modulo
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: eef98a55-80d0-4598-abf2-02a6c5247b64
 duration: 90
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Creare una libreria client
 
-La libreria client AEM gestisce tutto il codice JavaScript lato client. Per questo articolo, ho creato un semplice JavaScript per recuperare i dati del modulo adattivo utilizzando l’API del ponte guida. Una volta recuperati i dati del modulo adattivo, viene effettuata la chiamata POST al servlet per inserire o aggiornare i dati del modulo adattivo nel database. La funzione getALLUrlParams restituisce i parametri nell’URL. Se il parametro guid è presente nell’URL, è necessario eseguire l’operazione di aggiornamento, in caso contrario si tratta di un’operazione di inserimento. Il resto della funzionalità viene gestito nel codice associato all’evento click della classe .savebutton.
+La libreria client di AEM gestisce tutto il codice JavaScript lato client. Per questo articolo, ho creato un semplice JavaScript per recuperare i dati del modulo adattivo utilizzando l’API del ponte guida. Una volta recuperati i dati del modulo adattivo, viene effettuata la chiamata POST al servlet per inserire o aggiornare i dati del modulo adattivo nel database. La funzione getALLUrlParams restituisce i parametri nell’URL. Se il parametro guid è presente nell’URL, è necessario eseguire l’operazione di aggiornamento, in caso contrario si tratta di un’operazione di inserimento. Il resto della funzionalità viene gestito nel codice associato all’evento click della classe .savebutton.
 
 >[!NOTE]
 >

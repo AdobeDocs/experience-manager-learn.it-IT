@@ -3,7 +3,7 @@ title: Creare MyAccountForm
 description: Crea il modulo myaccount per recuperare il modulo parzialmente completato in seguito alla verifica dell’ID applicazione e del numero di telefono.
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-6599
 thumbnail: 6599.jpg
 topic: Development
@@ -11,7 +11,7 @@ role: User
 level: Beginner
 exl-id: 1ecd8bc0-068f-4557-bce4-85347c295ce0
 duration: 53
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Il codice nel servlet installato su **/bin/renderaf** inoltra la richiesta di es
 
 * MyAccountForm può essere [scaricato da qui](assets/my-account-form.zip)
 
-* I moduli di esempio si basano su [modello di modulo adattivo personalizzato](assets/custom-template-with-page-component.zip) che deve essere importato in AEM affinché il rendering dei moduli di esempio sia corretto.
+* I moduli di esempio si basano su [modello di modulo adattivo personalizzato](assets/custom-template-with-page-component.zip) che deve essere importato in AEM affinché i moduli di esempio vengano riprodotti correttamente.
 
 * [È necessario importare in AEM il gestore di invio personalizzato](assets/custom-submit-my-account-form.zip) associato all&#39;invio MyAccountForm.
 

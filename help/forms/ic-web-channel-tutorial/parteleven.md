@@ -3,14 +3,14 @@ title: Configurazione del pannello Investment Mix
 description: Questa è la parte 11 di un tutorial a più passaggi per creare il tuo primo documento di comunicazione interattiva.In questa parte, aggiungeremo dei grafici a torta per visualizzare il mix di investimenti attuale e di modello.
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: 77de4e76-53ee-467c-a71c-d1d3ea15283b
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 774d7a6e-2b8f-4a70-98c5-e7712478ff75
 duration: 69
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 0%

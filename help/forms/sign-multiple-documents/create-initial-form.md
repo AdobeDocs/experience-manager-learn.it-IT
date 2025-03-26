@@ -2,7 +2,7 @@
 title: Creare il modulo iniziale per attivare il processo
 description: Crea un modulo iniziale per attivare la notifica e-mail per avviare il processo di firma.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: User
 level: Intermediate
@@ -10,18 +10,18 @@ jira: KT-6892
 thumbnail: 6892.jpg
 exl-id: d7c55dc8-d886-4629-bb50-d927308d12e3
 duration: 35
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
 # Crea modulo iniziale
 
-Il modulo iniziale (Modulo di rifinanziamento) viene utilizzato per la firma di più moduli attivando il flusso di lavoro AEM **Firma più Forms**. È possibile immettere i valori desiderati, ma assicurarsi che i campi riportati di seguito vengano aggiunti al modulo.
+Il modulo iniziale (Modulo di rifinanziamento) viene utilizzato per la firma di più moduli attivando il flusso di lavoro di AEM **Firma più Forms**. È possibile immettere i valori desiderati, ma assicurarsi che i campi riportati di seguito vengano aggiunti al modulo.
 
-| Tipo di campo | Nome | Scopo | Nascosto | Valore predefinito |
+| Tipo campo | Nome | Scopo | Nascosto | Valore predefinito |
 | ------------------------|---------------------------------------|--------------------|--------|----------------- |
 | TextField | firmato | Per indicare lo stato di firma | Y | N |
 | TextField | GUID | Per identificare in modo univoco il modulo | Y | 3889 |
