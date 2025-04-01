@@ -1,6 +1,6 @@
 ---
-title: Tutorials per headless nell'AEM
-description: Una raccolta di tutorial CMS headless per Adobe Experience Manager. Esplora i tutorial per API, framework e applicazioni di esempio.
+title: Tutorial su Headless in AEM
+description: Una raccolta di tutorial su CMS headless per Adobe Experience Manager. Esplora i tutorial per API, framework e applicazioni di esempio.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
@@ -8,24 +8,22 @@ level: Beginner
 doc-type: Catalog
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: bd0f42fa37b7bbe19bf0d7fc65801198e64cbcd9
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 1%
 
 ---
 
-# Tutorials per headless nell&#39;AEM{#aem-headless-tutorials}
-
-{{aem-headless-trials-promo}}
+# Tutorial su Headless in AEM{#aem-headless-tutorials}
 
 Adobe Experience Manager (AEM) dispone di più opzioni per definire endpoint headless e distribuirne il contenuto come JSON. Segui questi pratici tutorial per scoprire come utilizzare le varie opzioni e scegliere ciò che fa per te.
 
 >[!TIP]
 >
->Questa raccolta di tutorial è stata progettata per coloro che preferiscono **imparare facendo**. Se preferisci imparare concetti fin dall&#39;inizio, consulta il [Percorso di sviluppatori headless AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Questa serie di esercitazioni e il percorso si completano a vicenda.
+>Questa raccolta di tutorial è stata progettata per coloro che preferiscono **imparare facendo**. Se preferisci imparare concetti fin dall&#39;inizio, consulta il [Percorso di sviluppatori AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Questa serie di esercitazioni e il percorso si completano a vicenda.
 
-## Tutorials per API
+## Tutorial per API
 
 <table>
 <tr>
@@ -39,7 +37,7 @@ Adobe Experience Manager (AEM) dispone di più opzioni per definire endpoint hea
     </a>
     </div>
     <p>
-    <em>Scopri come un'applicazione può utilizzare l'API GraphQL dell'AEM per eseguire query sul contenuto.</em>
+    <em>Scopri come un'applicazione può utilizzare l'API GraphQL di AEM per eseguire query sul contenuto.</em>
     <p>
   </td>
   <td>
@@ -87,7 +85,7 @@ Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità he
     </a>
     </div>
     <p>
-    <em>Applicazione iOS fornita dalle API GraphQL dell'AEM.</em>
+    <em>Applicazione iOS fornita dalle API GraphQL di AEM.</em>
     <p>
   </td>
   <td>
@@ -100,7 +98,7 @@ Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità he
     </a>
     </div>
     <p>
-    <em>Applicazione Android™ basata sulle API GraphQL dell'AEM.</em>
+    <em>Applicazione Android™ basata sulle API GraphQL di AEM.</em>
     </p>
   </td>
   <td>
@@ -113,15 +111,15 @@ Le applicazioni di esempio sono un ottimo modo per esplorare le funzionalità he
       </a>
     </div>
     <p>
-    <em>Applicazione React fornita dalle API GraphQL dell'AEM.</em>
+    <em>Applicazione React fornita dalle API GraphQL di AEM.</em>
     <p>
   </td>
 </tr>
 </table>
 
-## Tutorials per framework
+## Tutorial per framework
 
-Sfoglia i seguenti tutorial in base alla tecnologia utilizzata. Scopri come l’AEM può andare oltre un caso d’uso headless, con opzioni per l’authoring nel contesto e la gestione delle esperienze.
+Sfoglia i seguenti tutorial in base alla tecnologia utilizzata. Scopri come AEM può andare oltre un caso d’uso headless, con opzioni per l’authoring nel contesto e la gestione delle esperienze.
 
 <table>
 <tr>
@@ -161,7 +159,7 @@ Sfoglia i seguenti tutorial in base alla tecnologia utilizzata. Scopri come l’
       </a>
     </div>
     <p>
-    <em>Utilizza l'editor SPA dell'AEM per gestire l'esperienza completa dell'app React.</em>
+    <em>Utilizza l'editor SPA di AEM per gestire l'esperienza completa dell'app React.</em>
     <p>
   </td>
 </tr>
