@@ -12,7 +12,7 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
+source-git-commit: 22d3c0058c04a1d812a95a47472f96efaa597513
 workflow-type: tm+mt
 source-wordcount: '2104'
 ht-degree: 0%
@@ -61,6 +61,9 @@ Il progetto Adobe Developer Console (ADC) è configurato per abilitare l&#39;aut
 >[!IMPORTANT]
 >
 >Il progetto ADC NON fornisce un _client_secret_. L&#39;applicazione a pagina singola genera invece un _code_verifier_ e un _code_challenge_ per scambiare in modo sicuro il codice di autorizzazione per un _token di accesso_. Elimina la necessità di memorizzare un segreto client sul lato client, migliorando la sicurezza.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3456964?quality=12&learn=on)
+
 
 Il diagramma seguente illustra il flusso funzionale dell&#39;applicazione a pagina singola WKND _che ottiene il token di accesso specifico dell&#39;utente per richiamare le API AEM basate su OpenAPI_:
 
