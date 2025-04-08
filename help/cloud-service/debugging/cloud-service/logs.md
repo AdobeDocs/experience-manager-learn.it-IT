@@ -1,6 +1,6 @@
 ---
 title: Registri
-description: I registri fungono da strumenti di prima linea per il debug delle applicazioni AEM in AEM as a Cloud Service, ma dipendono dalla registrazione appropriata nell’applicazione AEM implementata.
+description: I log fungono da prima linea per il debug delle applicazioni AEM in AEM come Cloud Service, ma dipendono da registrazione adeguati nel applicazione AEM distribuito.
 feature: Developer Tools
 version: Experience Manager as a Cloud Service
 doc-type: Tutorial
@@ -11,18 +11,18 @@ role: Developer
 level: Beginner
 exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
 duration: 229
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 0363505b426d6e4733c57409e17e9d69f7a567c7
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '962'
 ht-degree: 1%
 
 ---
 
-# Debug di AEM as a Cloud Service tramite i registri
+# Il debug di AEM come Cloud Service l&#39;utilizzo dei registri
 
-I registri fungono da strumenti di prima linea per il debug delle applicazioni AEM in AEM as a Cloud Service, ma dipendono dalla registrazione appropriata nell’applicazione AEM implementata.
+I log fungono da prima linea per il debug delle applicazioni AEM in AEM come Cloud Service, ma dipendono da registrazione adeguati nel applicazione AEM distribuito.
 
-Tutte le attività di registro per il servizio AEM di un dato ambiente (Author, Publish/Publish Dispatcher) sono consolidate in un unico file di registro, anche se i pod diversi all’interno di tale servizio generano le istruzioni di registro.
+Tutte le attività di registro per il servizio AEM di un determinato ambiente (Autore, Publish/Publish Dispatcher) vengono consolidate in un singolo file di registro, lineare se diversi pod all&#39;interno di tale servizio generano le istruzioni di log.
 
 Gli ID dei pod vengono forniti in ogni istruzione di registro e consentono di filtrare o fascicolare le istruzioni di registro. Gli ID pod sono nel formato di:
 
@@ -61,9 +61,9 @@ I servizi Author e Publish di AEM forniscono i registri del server di runtime di
 Solo AEM Publish Dispatcher fornisce il server web Apache e i registri di Dispatcher, in quanto questi aspetti esistono solo nel livello di pubblicazione di AEM e non nel livello di authoring di AEM.
 
 + `httpdaccess` elenca le richieste HTTP effettuate al server web Apache/Dispatcher del servizio AEM.
-+ `httperror` elenca i messaggi di registro dal server web Apache e fornisce assistenza per il debug dei moduli Apache supportati, ad esempio `mod_rewrite`.
++ `httperror`  elenca i messaggi di log dal server Web Apache e aiuta con il debug dei moduli Apache supportati come `mod_rewrite`.
    + Sviluppo: `DEBUG`
-   + Fase: `WARN`
+   + Palco: `WARN`
    + Produzione: `ERROR`
 + `aemdispatcher` elenca i messaggi di registro provenienti dai moduli di Dispatcher, inclusi il filtraggio e la distribuzione dai messaggi della cache.
    + Sviluppo: `DEBUG`
@@ -84,7 +84,7 @@ Adobe Cloud Manager supporta l&#39;accesso ai registri di AEM as a Cloud Service
 
 Innanzitutto, [imposta il plug-in Adobe I/O con Cloud Manager](../../local-development-environment/development-tools.md#aio-cli).
 
-Verifica che l&#39;ID programma e l&#39;ID ambiente pertinenti siano stati identificati e utilizza [list-available-log-options](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerlist-available-log-options-environmentid) per elencare le opzioni di registro utilizzate per [tail](#aio-cli-tail-logs) o [download](#aio-cli-download-logs) registri.
+Verificare che siano stati identificati l&#39;ID programma e l&#39;ID ambiente pertinenti e utilizzare [list-available-log-options](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerlist-available-log-options-environmentid) per elencare le opzioni di registro utilizzate per [coda](#aio-cli-tail-logs) o [scaricare](#aio-cli-download-logs) registri.
 
 ```
 $ aio cloudmanager:list-programs
@@ -114,16 +114,16 @@ Environment Id Service    Name
 22295          dispatcher aemdispatcher 
 ```
 
-### Registri di coda{#aio-cli-tail-logs}
+### Tronchi di coda{#aio-cli-tail-logs}
 
-Adobe I/O CLI consente di visualizzare i registri in tempo reale da AEM as a Cloud Service utilizzando il comando [tail-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagertail-log-environmentid-service-name). La coda è utile per guardare l’attività di registro in tempo reale mentre le azioni vengono eseguite nell’ambiente AEM as a Cloud Service.
+Adobe Systems interfaccia a riga di comando I/O consente di coda i log in tempo reale da AEM come Cloud Service utilizzando il [comando coda-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagertail-log-environmentid-service-name) . La taina è utile per osservare l&#39;attività dei log in tempo reale mentre vengono eseguite azioni sull&#39;ambiente AEM come Cloud Service.
 
 ```
 $ aio config:set cloudmanager_programid <PROGRAM ID>
 $ aio cloudmanager:tail-logs <ENVIRONMENT ID> <SERVICE> <NAME>
 ```
 
-Altri strumenti della riga di comando, come `grep`, possono essere utilizzati insieme a `tail-logs` per isolare le istruzioni di registro di interesse, ad esempio:
+Altri strumenti da riga di comando, come quelli `grep` che possono essere utilizzati insieme `tail-logs` per aiutare a isolare le istruzioni di registro delle interesse, ad esempio:
 
 ```
 $ aio cloudmanager:tail-logs 12345 author | grep com.example.MySlingModel
@@ -167,14 +167,7 @@ __Pod cm-p12345-e56789-aem-author-abcdefg-2222__
 
 ## Livelli di registro consigliati{#log-levels}
 
-Le linee guida generali di Adobe sui livelli di registro per ambiente AEM as a Cloud Service sono:
-
-+ Sviluppo locale (AEM SDK): `DEBUG`
-+ Sviluppo: `DEBUG`
-+ Fase: `WARN`
-+ Produzione: `ERROR`
-
-Impostando il livello di registro più appropriato per ogni tipo di ambiente con AEM as a Cloud Service, i livelli di registro vengono mantenuti nel codice
+Le linee guida generali di Adobe sui livelli di registro per ambiente AEM as a Cloud Service consistono nel rispettare le impostazioni di registro predefinite di AEM (con il livello di registro predefinito di `INFO`). Adobe consiglia inoltre di dotare il codice personalizzato di istruzioni di registro, che consentono di eseguirlo con il livello di registro di `INFO`. I livelli di registro vengono mantenuti nel codice
 
 + Le configurazioni del registro Java vengono mantenute nelle configurazioni OSGi
 + Livelli del server web Apache e del registro Dispatcher nel progetto dispatcher
@@ -185,7 +178,7 @@ Impostando il livello di registro più appropriato per ogni tipo di ambiente con
 
 Un&#39;alternativa all&#39;impostazione di livelli di registro Java noti statici per ogni ambiente consiste nell&#39;utilizzare le [variabili specifiche dell&#39;ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values) di AEM as Cloud Service per parametrizzare i livelli di registro, consentendo la modifica dinamica dei valori tramite [Adobe I/O CLI con plug-in Cloud Manager](#aio-cli).
 
-A tal fine, è necessario aggiornare le configurazioni OSGi di registrazione per utilizzare segnaposto di variabili specifici per l’ambiente. [I valori predefiniti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#default-values) per i livelli di registro devono essere impostati come da [consigli di Adobe](#log-levels). Ad esempio:
+Ciò richiede l&#39;aggiornamento delle configurazioni registrazione OSGi per utilizzare i segnaposto delle variabili specifiche dell&#39;ambiente. [I valori](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#default-values) predefiniti per i livelli di registro devono essere impostati in base ai [consigli Adobe Systems](#log-levels). Ad esempio:
 
 `/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json`
 
@@ -198,10 +191,10 @@ A tal fine, è necessario aggiornare le configurazioni OSGi di registrazione per
 }
 ```
 
-Questo approccio presenta aspetti negativi che devono essere presi in considerazione:
+Questo approccio ha degli aspetti negativi che devono essere presi in considerazione account:
 
-+ [È consentito un numero limitato di variabili di ambiente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#number-of-variables). La creazione di una variabile per gestire il livello di registro ne utilizzerà una.
-+ Le variabili di ambiente possono essere gestite a livello di programmazione tramite [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html), [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) e [Cloud Manager HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties).
++ [È consentito](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#number-of-variables) un numero limitato di variabili di ambiente e la creazione di una variabile per gestire il livello di registro ne utilizzerà una.
++ Le variabili di ambiente possono essere gestite a livello di programmazione tramite [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html), [Adobe Systems CLI di I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) e [API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties) di Cloud Manager.
 + Le modifiche alle variabili di ambiente devono essere reimpostate manualmente da uno strumento supportato. Se si dimentica di reimpostare un ambiente con traffico elevato, come ad esempio quello di produzione, su un livello di registro meno dettagliato, i registri potrebbero essere inondati e avere un impatto sulle prestazioni di AEM.
 
 _Le variabili specifiche dell&#39;ambiente non funzionano per le configurazioni del server web Apache o del registro di Dispatcher, in quanto non sono configurate tramite la configurazione OSGi._
