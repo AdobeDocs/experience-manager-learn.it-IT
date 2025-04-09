@@ -12,7 +12,7 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: b17e228c33ff2e3f2ee2d7e13da65a648c5df79d
+source-git-commit: 7ec2db883ba485b4062db84630cf94c8ed0967ee
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 0%
@@ -27,6 +27,9 @@ Scopri come configurare l’ambiente AEM as a Cloud Service per abilitare l’ac
 >
 >Le API AEM basate su OpenAPI sono disponibili come parte di un programma di accesso anticipato. Se ti interessa accedervi, ti invitiamo a inviare un&#39;e-mail a [aem-apis@adobe.com](mailto:aem-apis@adobe.com) con una descrizione del tuo caso d&#39;uso.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
+
+
 Il processo di configurazione ad alto livello prevede le seguenti fasi:
 
 1. Modernizzazione dell’ambiente AEM as a Cloud Service.
@@ -35,42 +38,42 @@ Il processo di configurazione ad alto livello prevede le seguenti fasi:
 1. Configura progetto ADC
 1. Configura l’istanza di AEM per abilitare la comunicazione al progetto ADC.
 
-## Modernizzazione dell’ambiente AEM as a Cloud Service
+## Modernizzazione dell’ambiente AEM as a Cloud Service{#modernization-of-aem-as-a-cloud-service-environment}
 
 La modernizzazione dell’ambiente AEM as a Cloud Service è un’attività una tantum per ogni ambiente che prevede i seguenti passaggi:
 
 - Aggiornamento ad AEM versione **2024.10.18459.20241031T210302Z** o successiva.
 - Aggiungi nuovi profili di prodotto, se l’ambiente è stato creato prima della versione 2024.10.18459.20241031T210302Z.
 
-### Aggiorna istanza AEM
+### Aggiorna istanza AEM{#update-aem-instance}
 
 Per aggiornare l&#39;istanza di AEM, nella sezione _Ambienti_ di Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/), seleziona l&#39;icona _puntini di sospensione_ accanto al nome dell&#39;ambiente e seleziona l&#39;opzione **Aggiorna**.
 
 ![Aggiorna istanza AEM](./assets/setup/update-aem-instance.png)
 
-Quindi fai clic sull&#39;pulsante **Invia** ed esegui la _pipeline Fullstack suggerita_ .
+Quindi fai clic sul pulsante **Invia** ed esegui la _pipeline suggerita_ Fullstack.
 
-![Seleziona l&#39;ultima versione AEM release](./assets/setup/select-latest-aem-release.png)
+![Seleziona la versione più recente di AEM](./assets/setup/select-latest-aem-release.png)
 
-Nel mio caso, la pipeline Fullstack si chiama **Dev:: Fullstack-Deploy**, e l&#39;ambiente AEM si chiama **wknd-program-dev**. I tuoi nomi potrebbero essere diversi.
+Nel mio caso, la pipeline full stack si chiama **Dev :: Fullstack-Deploy** e l&#39;ambiente AEM si chiama **wknd-program-dev**. I tuoi nomi possono essere diversi.
 
-### Aggiungere nuovi profili di prodotto
+### Aggiungi nuovi profili di prodotto{#add-new-product-profiles}
 
-Per aggiungere nuovi profili di prodotto all&#39;istanza di AEM, nella sezione _Ambienti_ di Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/), seleziona l&#39;icona _puntini di sospensione_ accanto al nome dell&#39;ambiente e l&#39;opzione **Aggiungi profili di prodotto**.
+Per aggiungere nuovi profili di prodotto al istanza AEM, nella sezione Ambienti di Adobe Systems [Cloud Manager](https://my.cloudmanager.adobe.com/) seleziona l&#39;icona con i _puntini_ di _sospensione accanto al nome dell&#39;ambiente e seleziona l&#39;opzione **Aggiungi profili**di_ prodotto.
 
 ![Aggiungi nuovi profili di prodotto](./assets/setup/add-new-product-profiles.png)
 
-Puoi esaminare i profili di prodotto appena aggiunti facendo clic sull&#39;icona con i _puntini di sospensione_ accanto al nome dell&#39;ambiente e selezionando **Gestisci** accesso **>** profili Autore.
+Puoi rivedere i profili di prodotto appena aggiunti facendo clic sull&#39;icona _puntini di sospensione_ accanto al nome dell&#39;ambiente e selezionando **Gestisci accesso** > **Profili autore**.
 
-Nella _finestra Admin Console_ vengono visualizzati i profili di prodotto appena aggiunti.
+Nella finestra _Admin Console_ sono visualizzati i profili di prodotto appena aggiunti.
 
-![Esamina i nuovi profili di prodotto](./assets/setup/review-new-product-profiles.png)
+![Verifica nuovi profili di prodotto](./assets/setup/review-new-product-profiles.png)
 
-I passaggi precedenti completano la modernizzazione del AEM come ambiente Cloud Service.
+I passaggi precedenti completano la modernizzazione dell’ambiente AEM as a Cloud Service.
 
-## Abilita accesso alle API di AEM{#enable-aem-apis-access}
+## Abilitare le API AEM accesso{#enable-aem-apis-access}
 
-La presenza di _nuovi profili di prodotto_ abilita l&#39;accesso API AEM basato su OpenAPI in Adobe Developer Console (ADC). Ricorda che [Adobe Developer Console (ADC)](./overview.md#accessing-adobe-apis-and-related-concepts) è l&#39;hub di sviluppo per accedere alle API di Adobe, agli SDK, agli eventi in tempo reale, alle funzioni senza server e altro ancora.
+La presenza dei nuovi profili _di prodotto abilita la_ accesso API AEM basata su OpenAPI nella Adobe Systems Developer Console (ADC). Ricorda che [Adobe Systems Console per sviluppatori (ADC)](./overview.md#accessing-adobe-apis-and-related-concepts) è l&#39;hub di sviluppo per l&#39;accesso ad API Adobe Systems, SDK, eventi in tempo reale, funzioni serverless e altro ancora.
 
 I nuovi profili di prodotto aggiunti sono associati ai _Servizi_ che rappresentano _gruppi di utenti AEM con elenchi di controllo di accesso (ACL) predefiniti_. I _servizi_ vengono utilizzati per controllare il livello di accesso alle API di AEM.
 
@@ -80,15 +83,15 @@ Rivedi l&#39;associazione facendo clic sull&#39;icona _Visualizza dettagli_ acca
 
 ![Servizi di revisione associati al profilo di prodotto](./assets/setup/review-services-associated-with-product-profile.png)
 
-Per impostazione predefinita, il servizio **Utenti API AEM Assets** non è associato ad alcun profilo di prodotto. Associamolo al profilo di prodotto **Utenti AEM Assets Collaborator - Autore - Programma XXX - Ambiente XXX** appena aggiunto. Dopo questa associazione, l&#39;_API Asset Author_ del progetto ADC può impostare l&#39;autenticazione server-to-server desiderata e associare l&#39;account di autenticazione dal progetto ADC (creato nel passaggio successivo) al profilo di prodotto.
+Per impostazione predefinita, il servizio Utenti **API** AEM Assets non è associato ad alcun profilo di prodotto. Associamolo al nuovo AEM Assets Utenti **collaboratori - autore - Programma XXX - Profilo prodotto Ambiente XXX** . Dopo questa associazione, l&#39;API _Asset Autore del progetto ADC può impostare l&#39;autenticazione_ da server a server desiderata e associare il account di autenticazione dal progetto ADC (creato nel passaggio successivo) al profilo di prodotto.
 
-![Associa il servizio Utenti API di AEM Assets al profilo di prodotto](./assets/setup/associate-aem-assets-api-users-service-with-product-profile.png)
+![Associa AEM Assets servizio utenti API al profilo prodotto](./assets/setup/associate-aem-assets-api-users-service-with-product-profile.png)
 
 >[!IMPORTANT]
 >
->Il passaggio precedente è fondamentale per abilitare l’autenticazione server-to-server per l’API di AEM Assets. Senza questa associazione, l’API di AEM Assets non può essere utilizzata con il metodo di autenticazione server-to-server.
+>Il passaggio precedente è critico abilitare l&#39;autenticazione da server a server per l&#39;API AEM Assets. Senza questa associazione, l&#39;API AEM Assets non può essere utilizzata con il metodo di autenticazione da server a server.
 
-## Crea progetto Adobe Developer Console (ADC)
+## Crea progetto Adobe Developer Console (ADC){#adc-project}
 
 Il progetto ADC viene utilizzato per aggiungere le API desiderate, configurarne l’autenticazione e associare l’account di autenticazione al profilo di prodotto.
 
@@ -110,15 +113,15 @@ Per creare un progetto ADC:
 
    ![Modifica nome progetto](./assets/setup/edit-project-name.png)
 
-## Configura progetto ADC
+## Configura progetto ADC{#configure-adc-project}
 
-Dopo aver creato il progetto ADC, devi aggiungere le API AEM desiderate, configurarne l’autenticazione e associare l’account di autenticazione al profilo di prodotto.
+Dopo aver creato il progetto ADC, è necessario aggiungere le API di AEM desiderate, impostarne l&#39;autenticazione e associare il account di autenticazione al profilo di prodotto.
 
-1. Per aggiungere le API di AEM, fai clic sul pulsante **Aggiungi API**.
+1. Per aggiungere AEM API, fai clic su **Aggiungi API** pulsante.
 
    ![Aggiungi API](./assets/s2s/add-api.png)
 
-1. Nella finestra di dialogo _Aggiungi API_, filtra per _Experience Cloud_ e seleziona l&#39;API AEM desiderata. Ad esempio, in questo caso, è selezionata l&#39;API _Asset Author_.
+1. Nella finestra di _dialogo Aggiungi API_ , filtrare per _Experience Cloud_ e selezionare l&#39;API AEM desiderata. Ad esempio, in questo caso, è selezionata l&#39;API _Asset Author_.
 
    ![Aggiungi API AEM](./assets/s2s/add-aem-api.png)
 
@@ -144,7 +147,7 @@ Dopo aver creato il progetto ADC, devi aggiungere le API AEM desiderate, configu
 
 Se si sceglie il metodo di autenticazione **OAuth Web App** o **OAuth Single Page App**, l&#39;associazione del profilo di prodotto non viene richiesta, ma è necessario l&#39;URI di reindirizzamento dell&#39;applicazione. L’URI di reindirizzamento dell’applicazione viene utilizzato per reindirizzare l’utente all’applicazione dopo l’autenticazione con un codice di autorizzazione. Le esercitazioni sui casi d’uso pertinenti descrivono tali configurazioni specifiche per l’autenticazione.
 
-## Configura l’istanza di AEM per abilitare la comunicazione del progetto ADC
+## Configura l’istanza di AEM per abilitare la comunicazione del progetto ADC{#configure-aem-instance}
 
 Per abilitare l’ID client del progetto ADC alla comunicazione con l’istanza AEM, devi configurare l’istanza AEM.
 
@@ -168,21 +171,21 @@ il progetto AEM e distribuirlo utilizzando la pipeline di configurazione in Clou
            - "<ADC Project's Credentials ClientID>"
    ```
 
-   `<ADC Project's Credentials ClientID>` Sostituisci con l&#39;ID client effettivo del valore Credenziali del progetto ADC. L&#39;endpoint API utilizzato in questo esercitazione è disponibile solo nel livello di authoring, ma per altre API, la configurazione yaml può anche avere un _nodo pubblicare_ o _di anteprima_ .
+   Sostituire `<ADC Project's Credentials ClientID>` con l&#39;ID client effettivo del valore Credenziali del progetto ADC. L&#39;endpoint API utilizzato in questa esercitazione è disponibile solo sul livello di authoring, ma per altre API la configurazione yaml può avere anche un nodo _publish_ o _preview_.
 
    >[!CAUTION]
    >
-   > A scopo dimostrativo, lo stesso ClientID viene utilizzato per tutti gli ambienti. Si consiglia di utilizzare un ClientID separato per ogni ambiente (dev, stage, prod) per migliorare la sicurezza e il controllo.
+   > A scopo dimostrativo, viene utilizzato lo stesso ClientID per tutti gli ambienti. Si consiglia di utilizzare ClientID separato per ambiente (dev, fase, prod) per migliorare la sicurezza e il controllo.
 
-1. Apporta le modifiche alla configurazione e le invia all’archivio Git remoto a cui è connessa la pipeline Cloud Manager.
+1. Esegui il commit delle modifiche di configurazione ed esegui il push delle modifiche al Git remoto archivio a cui è connessa la pipeline di Cloud Manager.
 
-1. Distribuisci le modifiche precedenti utilizzando la pipeline di configurazione in Cloud Manager. Il file `config.yaml` può essere installato anche in un RDE, utilizzando gli strumenti della riga di comando.
+1. Distribuisci le modifiche di cui sopra utilizzando la pipeline di configurazione in Cloud Manager. Nota che il file può anche essere installato in un RDE, utilizzando gli `config.yaml` strumenti della riga di comando.
 
-   ![Distribuire config.yaml](./assets/setup/config-pipeline.png)
+   ![Distribuisci config.yaml](./assets/setup/config-pipeline.png)
 
 ## Passaggi successivi
 
-Una volta configurato il istanza AEM per abilitare la comunicazione del progetto ADC, è possibile iniziare a utilizzare le API AEM basate su OpenAPI. Scopri come utilizzare le API AEM basate su OpenAPI utilizzando diversi metodi di autenticazione OAuth:
+Una volta configurata l’istanza di AEM per abilitare la comunicazione con il progetto ADC, puoi iniziare a utilizzare le API AEM basate su OpenAPI. Scopri come utilizzare le API AEM basate su OpenAPI utilizzando diversi metodi di autenticazione OAuth:
 
 <!-- CARDS
 {target = _self}
@@ -206,8 +209,8 @@ Una volta configurato il istanza AEM per abilitare la comunicazione del progetto
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./use-cases/invoke-api-using-oauth-s2s.md" title="Richiamare l&apos;API utilizzando l&apos;autenticazione da server a server" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/s2s/OAuth-S2S.png" alt="Richiamare l&apos;API utilizzando l&apos;autenticazione da server a server"
+                    <a href="./use-cases/invoke-api-using-oauth-s2s.md" title="Richiama API tramite autenticazione server-to-server" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/s2s/OAuth-S2S.png" alt="Richiama API tramite autenticazione server-to-server"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -215,7 +218,7 @@ Una volta configurato il istanza AEM per abilitare la comunicazione del progetto
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" title="Richiama API tramite autenticazione server-to-server">Richiama API tramite autenticazione server-to-server</a>
+                        <a href="./use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" title="Richiamare l&apos;API utilizzando l&apos;autenticazione da server a server">Richiama API tramite autenticazione server-to-server</a>
                     </p>
                     <p class="is-size-6">Scopri come richiamare le API AEM basate su OpenAPI da un’applicazione NodeJS personalizzata utilizzando l’autenticazione server-to-server di OAuth.</p>
                 </div>
@@ -230,7 +233,7 @@ Una volta configurato il istanza AEM per abilitare la comunicazione del progetto
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./use-cases/invoke-api-using-oauth-web-app.md" title="Richiama l’API tramite l’autenticazione tramite app web" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/web-app/OAuth-WebApp.png" alt="Richiama l’API tramite l’autenticazione tramite app web"
+                        <img class="is-bordered-r-small" src="./assets/web-app/OAuth-WebApp.png" alt="Richiamare l&apos;API utilizzando l&apos;autenticazione app Web"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -238,9 +241,9 @@ Una volta configurato il istanza AEM per abilitare la comunicazione del progetto
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" title="Richiamare l&apos;API utilizzando l&apos;autenticazione app Web">Richiamare l'API utilizzando l'autenticazione app Web</a>
+                        <a href="./use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" title="Richiama l’API tramite l’autenticazione tramite app web">Richiama l'API tramite l'autenticazione dell'app Web</a>
                     </p>
-                    <p class="is-size-6">Scopri come richiamare API AEM basate su OpenAPI da un applicazione web personalizzato utilizzando l'autenticazione Web app OAuth.</p>
+                    <p class="is-size-6">Scopri come richiamare le API AEM basate su OpenAPI da un’applicazione web personalizzata utilizzando l’autenticazione OAuth Web App.</p>
                 </div>
                 <a href="./use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
@@ -252,8 +255,8 @@ Una volta configurato il istanza AEM per abilitare la comunicazione del progetto
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" title="Richiamare l&apos;API utilizzando l&apos;autenticazione in Pagina singola app" target="_self" rel="referrer">
-                        <img class="is-bordered-r-small" src="./assets/spa/OAuth-SPA.png" alt="Richiamare l&apos;API utilizzando l&apos;autenticazione in Pagina singola app"
+                    <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" title="Richiama API tramite autenticazione app a pagina singola" target="_self" rel="referrer">
+                        <img class="is-bordered-r-small" src="./assets/spa/OAuth-SPA.png" alt="Richiama API tramite autenticazione app a pagina singola"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -261,9 +264,9 @@ Una volta configurato il istanza AEM per abilitare la comunicazione del progetto
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" target="_self" rel="referrer" title="Richiamare l&apos;API utilizzando l&apos;autenticazione in Pagina singola app">Richiamare l'API utilizzando l'autenticazione in Pagina singola app</a>
+                        <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" target="_self" rel="referrer" title="Richiama API tramite autenticazione app a pagina singola">Richiama API tramite autenticazione app a pagina singola</a>
                     </p>
-                    <p class="is-size-6">Scopri come richiamare API AEM basate su OpenAPI da una Single Pagina app (SPA) personalizzata utilizzando il flusso PKCE OAuth 2.0.</p>
+                    <p class="is-size-6">Scopri come richiamare le API AEM basate su OpenAPI da un’app a pagina singola personalizzata (SPA) utilizzando il flusso PKCE di OAuth 2.0.</p>
                 </div>
                 <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
