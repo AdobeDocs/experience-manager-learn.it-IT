@@ -12,9 +12,9 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: b17e228c33ff2e3f2ee2d7e13da65a648c5df79d
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1719'
 ht-degree: 2%
 
 ---
@@ -73,6 +73,11 @@ Le fasi di sviluppo di alto livello sono:
 ## Configura progetto ADC
 
 Il passaggio di configurazione del progetto ADC è _repeat_ dalle [API AEM basate su OpenAPI](../setup.md). Viene ripetuto per aggiungere l’API di authoring di Assets e configurare il relativo metodo di autenticazione come server-to-server OAuth.
+
+>[!TIP]
+>
+>Assicurati di aver completato il passaggio **Abilita accesso API di AEM** dall&#39;articolo [Configura API di AEM basate su OpenAPI](../setup.md#enable-aem-apis-access). Senza di esso, l’opzione di autenticazione server-to-server non è disponibile.
+
 
 1. Da [Adobe Developer Console](https://developer.adobe.com/console/projects), apri il progetto desiderato.
 
