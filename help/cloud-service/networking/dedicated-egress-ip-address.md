@@ -11,9 +11,9 @@ thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 891
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 24d634fd1e62e873bc1dbb3ac0cd18f70129ee86
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1370'
 ht-degree: 1%
 
 ---
@@ -226,7 +226,7 @@ Per impostazione predefinita, le richieste HTTP/HTTPS provenienti da AEM su port
 
 ### HTTP/HTTPS
 
-Durante la creazione di connessioni HTTP/HTTPS da AEM, quando si utilizza un indirizzo IP in uscita dedicato, le connessioni HTTP/HTTPS vengono automaticamente escluse da AEM utilizzando l’indirizzo IP in uscita dedicato. Per supportare le connessioni HTTP/HTTPS non è necessario alcun codice o configurazione aggiuntivi.
+Durante la creazione di connessioni HTTP/HTTPS da AEM, quando si utilizza un indirizzo IP in uscita dedicato, le connessioni HTTP/HTTPS vengono automaticamente escluse da AEM utilizzando l’indirizzo IP in uscita dedicato. Per supportare le connessioni HTTP/HTTPS non è necessario alcun codice o configurazione aggiuntivo, ad eccezione della configurazione della rete avanzata dell’indirizzo IP in uscita dedicato.
 
 #### Esempi di codice
 
