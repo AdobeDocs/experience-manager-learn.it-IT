@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
+source-git-commit: 380bd2b3121db5810e4d295a5f7f9d1139d22402
 workflow-type: tm+mt
-source-wordcount: '1383'
-ht-degree: 15%
+source-wordcount: '1385'
+ht-degree: 18%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 15%
 # Tutorial su Adobe Experience Manager as a Cloud Service {#cloud-service}
 
 + [Panoramica](./overview.md)
-+ Versioni di prova di AEM {#aem-trials}
++ Prove AEM {#aem-trials}
    + [Immagini](./aem-trials/images.md)
 + Playlist{#playlists}
    + [Sviluppo AEM](./playlists/development.md)
@@ -27,10 +27,10 @@ ht-degree: 15%
    + [Cloud Manager](./introduction/cloud-manager.md)
    + Strategia e leadership di pensiero{#strategy}
       + [Experience Manager - Modelli e archetipi per governance e personale](./introduction/experience-manager-governance-and-staffing-models.md)
-+ Integrazioni Experience Cloud{#integrations}
++ Integrazioni di Experience Cloud{#integrations}
    + [Integrazioni](./integrations/experience-cloud.md)
-   + [Adobe Target](./integrations/target.md)
-+ Tecnologia sottostante {#underlying-technology}
+   + [AEM Headless e Target](./integrations/target.md)
++ Tecnologia di base {#underlying-technology}
    + [Architettura di AEM](./underlying-technology/introduction-architecture.md)
    + [OSGi](./underlying-technology/introduction-osgi.md)
    + [Archivio dei contenuti Java](./underlying-technology/introduction-jcr.md)
@@ -56,18 +56,18 @@ ht-degree: 15%
       + [Analizzare i risultati del test](./cloud-manager/devops/analyze-test-results.md)
       + [Configurazioni di Dispatcher](./cloud-manager/devops/dispatcher-configurations.md)
       + [Analisi del registro CDN](./cloud-manager/devops/cdn-log-analysis.md)
-+ Impostazione ambiente di sviluppo locale {#local-development-environment-set-up}
++ Configurazione dell’ambiente di sviluppo locale {#local-development-environment-set-up}
    + [Panoramica](./local-development-environment/overview.md)
    + [Strumenti di sviluppo](./local-development-environment/development-tools.md)
    + [SDK AEM locale](./local-development-environment/aem-runtime.md)
    + [Strumenti Dispatcher locali](./local-development-environment/dispatcher-tools.md)
-+ Sviluppo di {#developing}
-   + Estendibilità{#extensibility}
++ Sviluppo{#developing}
+   + Estensibilità{#extensibility}
       + App Builder{#app-builder}
          + [Genera token di accesso JWT](./developing/extensibility/app-builder/jwt-auth.md)
          + [Genera token di accesso server-to-server](./developing/extensibility/app-builder/server-to-server-auth.md)
          + [Verifica webhook Github](./developing/extensibility/app-builder/github-webhook-verification.md)
-      + Estendibilità interfaccia utente{#ui}
+      + Estensibilità dell’interfaccia utente{#ui}
          + [Panoramica](./developing/extensibility/ui/overview.md)
          + [Progetto Adobe Developer Console](./developing/extensibility/ui/adobe-developer-console-project.md)
          + [Inizializza app](./developing/extensibility/ui/app-initialization.md)
@@ -105,7 +105,7 @@ ht-degree: 15%
       + [Ciclo di vita del componente OSGi](./developing/osgi-services/lifecycle.md)
       + [Nozioni di base sulle configurazioni OSGi](./developing/osgi-services/configurations.md)
       + [Configurazioni OSGi con OCD](./developing/osgi-services/configurations-ocd.md)
-   + Avanzate{#advanced}
+   + Avanzate {#advanced}
       + [Caching delle varianti di pagina](./developing/advanced/variant-caching.md)
       + [Protezione CSRF](./developing/advanced/csrf-protection.md)
       + [Spazi dei nomi personalizzati](./developing/advanced/custom-namespaces.md)
@@ -141,7 +141,7 @@ ht-degree: 15%
       + [Browser dell’archivio](./debugging/cloud-service/repository-browser.md)
       + Rischi{#risks}
          + [Avvisi di attraversamento](./debugging/cloud-service/risks/traversals.md)
-+ API di AEM{#aem-apis}
++ API AEM{#aem-apis}
    + [Panoramica](./apis/overview.md)
    + OpenAPI{#openapis}
       + [Panoramica](./apis/openapis/overview.md)
@@ -149,7 +149,7 @@ ht-degree: 15%
       + [Autenticazione server-to-server](./apis/openapis/use-cases/invoke-api-using-oauth-s2s.md)
       + [Autenticazione utente (app web)](./apis/openapis/use-cases/invoke-api-using-oauth-web-app.md)
       + [Autenticazione utente (SPA)](./apis/openapis/use-cases/invoke-api-using-oauth-single-page-app.md)
-      + Come{#how-to}
+      + Procedura{#how-to}
          + [Gestione di credenziali e profili di prodotto](./apis/openapis/how-to/credentials-and-product-profile-management.md)
          + [Gestione delle autorizzazioni](./apis/openapis/how-to/services-user-group-permission-management.md)
 + Consegna dei contenuti{#content-delivery}
@@ -165,7 +165,7 @@ ht-degree: 15%
    + [Servizio di pubblicazione AEM](./caching/publish.md)
    + [Servizio AEM Author](./caching/author.md)
    + [Analisi percentuale riscontri cache CDN](./caching/cdn-cache-hit-ratio-analysis.md)
-   + Come{#how-to}
+   + Procedura{#how-to}
       + [Abilita caching](./caching/how-to/enable-caching.md)
       + [Disattiva caching](./caching/how-to/disable-caching.md)
       + [Elimina cache](./caching/how-to/purge-cache.md)
@@ -239,7 +239,7 @@ ht-degree: 15%
       + [Navigazione in Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
       + [Utilizzo di Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
 + [Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
-+ Forms{#forms}
++ Moduli{#forms}
    + Sviluppo per Forms as a Cloud Service{#developing-for-cloud-service}
       + [1 - Guida introduttiva](./forms/developing-for-cloud-service/getting-started.md)
       + [2 - Installazione di IntelliJ](./forms/developing-for-cloud-service/intellij-set-up.md)
@@ -254,7 +254,7 @@ ht-degree: 15%
       + [11 - Invia a Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [12 - Implementazione nell’ambiente di sviluppo](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
       + [13 - Aggiornamento dell’archetipo Maven](./forms/developing-for-cloud-service/updating-project-archetype.md)
-   + Crea modulo adattivo{#create-first-af}
+   + Creare un modulo adattivo{#create-first-af}
       + [Introduzione](./forms/create-first-af/introduction.md)
       + [Crea tema](./forms/create-first-af/create-theme.md)
       + [Crea modello](./forms/create-first-af/create-template.md)
@@ -284,7 +284,7 @@ ht-degree: 15%
       + [Creare elementi dati](./forms/form-data-analytics/data-elements.md)
       + [Creare le regole](./forms/form-data-analytics/rules.md)
       + [Testare la soluzione](./forms/form-data-analytics/test.md)
-   + Creazione Del Componente A Discesa Paesi{#countries-drop-down}
+   + Componente a discesa Creazione di paesi{#countries-drop-down}
       + [Introduzione](./forms/countries-drop-down/introduction.md)
       + [Crea componente](./forms/countries-drop-down/component.md)
       + [Crea finestra di dialogo](./forms/countries-drop-down/dialog.md)
@@ -295,12 +295,12 @@ ht-degree: 15%
       + [Definisci criterio](./forms/style-system/style-policy.md)
       + [Definisci varianti](./forms/style-system/create-variations.md)
       + [Varianti di prova](./forms/style-system/build.md)
-   + Utilizzo di tabulazioni verticali{#using-vertical-tabs}
+   + Utilizzo di schede verticali{#using-vertical-tabs}
       + [1. Introduzione](./forms/using-vertical-tabs/introduction.md)
       + [2. Crea modulo](./forms/using-vertical-tabs/create-af.md)
       + [3. Navigazione](./forms/using-vertical-tabs/navigation.md)
       + [4. Aggiunta di icone](./forms/using-vertical-tabs/icons.md)
-   + Utilizzo del servizio di output e moduli{#forms-cs-output-and-forms-service}
+   + Utilizzo del servizio di output e forms{#forms-cs-output-and-forms-service}
       + [Genera PDF](./forms/forms-cs-output-and-forms-service/outputservice.md)
    + Generazione di documenti in AEM Forms CS{#doc-gen-formscs}
       + [Introduzione](./forms/doc-gen-forms-cs/introduction.md)
@@ -310,7 +310,7 @@ ht-degree: 15%
       + [Unisci dati con modello](./forms/doc-gen-forms-cs/merge-data-with-template.md)
       + [Testare la soluzione](./forms/doc-gen-forms-cs/test.md)
       + [Sfida](./forms/doc-gen-forms-cs/challenge.md)
-   + Utilizzo dell&#39;API di Forms Document Services{#forms-document-services-api}
+   + Utilizzo dell’API di Forms Document Services{#forms-document-services-api}
       + [Introduzione](./forms/forms-document-services/introduction.md)
       + [Configurare OpenAPI](./forms/forms-document-services/using-open-api.md)
       + [Genera token di accesso](./forms/forms-document-services/generate-access-token.md)
@@ -335,7 +335,7 @@ ht-degree: 15%
       + [Introduzione](./forms/forms-cs-with-marketo/part1.md)
       + [Creazione di Data Source](./forms/forms-cs-with-marketo/part2.md)
       + [Crea modello dati modulo](./forms/forms-cs-with-marketo/part3.md)
-   + Archivia invii modulo con tag indice BLOB{#store-submiited-data-with-metadata-tags}
+   + Memorizza invii modulo con tag indice BLOB{#store-submiited-data-with-metadata-tags}
       + [Introduzione](./forms/store-submiited-data-with-metadata-tags/introduction.md)
       + [Estendi componente gruppo di scelta](./forms/store-submiited-data-with-metadata-tags/extend-choice-group-components.md)
       + [Crea configurazione OSGi](./forms/store-submiited-data-with-metadata-tags/create-osgi-configuration.md)
@@ -388,14 +388,14 @@ ht-degree: 15%
       + [Crea modello dati modulo](./forms/integrate-with-salesforce/create-form-data-model.md)
       + [Invio modulo di prova](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
       + [Evento clic di prova](./forms/integrate-with-salesforce/create-lead-click-event.md)
-   + Archivia gli invii di moduli in un&#39;unità e SharePoint{#one-drive}
+   + Memorizzare gli invii di moduli in un&#39;unica unità e SharePoint{#one-drive}
       + [Memorizzare i dati del modulo in un&#39;unica unità](./forms/forms-cs-one-drive/store-form-submission-one-drive.md)
       + [Memorizzare i dati del modulo in sharepoint](./forms/forms-cs-sharepoint/store-form-submission-in-sharepoint.md)
       + [Precompila modulo con dati da elenco SharePoint](./forms/forms-cs-sharepoint/prefill-data-from-sharepoint-list.md)
       + [Inserire dati nell’elenco di SharePoint tramite il flusso di lavoro](./forms/forms-cs-sharepoint/submit-data-sharepoint-list-workflow.md)
-+ Estendibilità Asset Compute{#asset-compute}
++ Estensibilità di Asset Compute{#asset-compute}
    + [Panoramica](./asset-compute/overview.md)
-   + Configura{#set-up}
+   + Configurazione{#set-up}
       + [Provisioning di account e servizi](./asset-compute/set-up/accounts-and-services.md)
       + [Ambiente di sviluppo locale](./asset-compute/set-up/development-environment.md)
       + [App Builder](./asset-compute/set-up/app-builder.md)
@@ -408,10 +408,10 @@ ht-degree: 15%
    + Test e debug{#test-debug}
       + [Eseguire il test di un lavoratore](./asset-compute/test-debug/test.md)
       + [Debug di un processo di lavoro](./asset-compute/test-debug/debug.md)
-   + Distribuisci{#deploy}
+   + Distribuzione{#deploy}
       + [Implementare in Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
       + [Integrare con AEM](./asset-compute/deploy/processing-profiles.md)
-   + Avanzate{#advanced}
+   + Avanzate {#advanced}
       + [Lavoratori metadati](./asset-compute/advanced/metadata.md)
    + [Risoluzione dei problemi](./asset-compute/troubleshooting.md)
 
@@ -421,8 +421,8 @@ ht-degree: 15%
    + [Editor SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
    + [AEM Sites e Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
    + [Autenticazione basata su token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html){target=_blank}
-+ Risorse esperti {#expert-resources}
-   + Campioni AEM {#aem-champions}
++ Risorse di esperti {#expert-resources}
+   + AEM Champions {#aem-champions}
       + [Playbook di onboarding Cloud Manager](./expert-resources/aem-champions/onboarding-playbook.md)
       + [Tipi di ambiente Cloud Manager](./expert-resources/aem-champions/environment-types.md)
       + [Interfaccia utente Cloud Manager](./expert-resources/aem-champions/cloud-manager-ui.md)

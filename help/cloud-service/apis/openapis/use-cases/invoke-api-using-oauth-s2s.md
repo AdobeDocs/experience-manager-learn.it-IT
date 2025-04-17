@@ -12,9 +12,9 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: b17e228c33ff2e3f2ee2d7e13da65a648c5df79d
+source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1687'
 ht-degree: 2%
 
 ---
@@ -24,10 +24,6 @@ ht-degree: 2%
 Scopri come richiamare le API AEM basate su OpenAPI su AEM as a Cloud Service da applicazioni personalizzate utilizzando l’autenticazione _OAuth Server-to-Server_.
 
 L’autenticazione server-to-server di OAuth è ideale per i servizi back-end che richiedono l’accesso API senza l’interazione dell’utente. Utilizza il tipo di sovvenzione OAuth 2.0 _client_credentials_ per autenticare l&#39;applicazione client.
-
->[!AVAILABILITY]
->
->Le API AEM basate su OpenAPI sono disponibili come parte di un programma di accesso anticipato. Se ti interessa accedervi, ti invitiamo a inviare un&#39;e-mail a [aem-apis@adobe.com](mailto:aem-apis@adobe.com) con una descrizione del tuo caso d&#39;uso.
 
 ## Cosa impara{#what-you-learn}
 

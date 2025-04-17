@@ -12,9 +12,9 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
 workflow-type: tm+mt
-source-wordcount: '1517'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -106,13 +106,13 @@ Per ricevere gli eventi AEM Assets ed eseguire l’azione Adobe I/O Runtime crea
 
 Per abilitare le credenziali server-to-server OAuth del progetto ADC ClientID per la comunicazione con l&#39;istanza di AEM, è necessario configurare l&#39;istanza di AEM.
 
-Questa operazione viene eseguita definendo la configurazione nel file `config.yaml` nel progetto AEM. Quindi, distribuisci il file `config.yaml` utilizzando la pipeline di configurazione in Cloud Manager.
+Questa operazione viene eseguita definendo la configurazione nel file `api.yaml` nel progetto AEM. Quindi, distribuisci il file `api.yaml` utilizzando la pipeline di configurazione in Cloud Manager.
 
-- In AEM Project individuare o creare il file `config.yaml` dalla cartella `config`.
+- In AEM Project individuare o creare il file `api.yaml` dalla cartella `config`.
 
-  ![Individua YAML configurazione](../assets/examples/assets-pim-integration/locate-config-yaml.png)
+  ![Individua API YAML](../assets/examples/assets-pim-integration/locate-api-yaml.png)
 
-- Aggiungi la seguente configurazione al file `config.yaml`.
+- Aggiungi la seguente configurazione al file `api.yaml`.
 
   ```yaml
   kind: "API"
@@ -134,9 +134,9 @@ Questa operazione viene eseguita definendo la configurazione nel file `config.ya
 
 - Esegui il commit delle modifiche di configurazione nell’archivio Git e invia le modifiche all’archivio remoto.
 
-- Distribuisci le modifiche precedenti utilizzando la pipeline di configurazione in Cloud Manager. Il file `config.yaml` può essere installato anche in un RDE, utilizzando gli strumenti della riga di comando.
+- Distribuisci le modifiche precedenti utilizzando la pipeline di configurazione in Cloud Manager. Il file `api.yaml` può essere installato anche in un RDE, utilizzando gli strumenti della riga di comando.
 
-  ![Distribuisci config.yaml](../assets/examples/assets-pim-integration/config-pipeline.png)
+  ![Distribuisci API YAML](../assets/examples/assets-pim-integration/config-pipeline.png)
 
 ### Azione di sviluppo runtime
 

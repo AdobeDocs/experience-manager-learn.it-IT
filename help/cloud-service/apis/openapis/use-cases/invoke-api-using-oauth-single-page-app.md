@@ -12,9 +12,9 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: 3d42029f193f293631585314983956618d707244
+source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2081'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,6 @@ Scopri come richiamare le API AEM basate su OpenAPI su AEM as a Cloud Service ut
 L’autenticazione tramite app a pagina singola OAuth è ideale per le applicazioni basate su JavaScript in esecuzione nel browser. Se non dispongono di un server back-end o se devono recuperare i token di accesso per interagire con le API di AEM per conto di un utente.
 
 Il flusso PKCE estende il tipo di concessione _authorization_code_ di OAuth 2.0, migliorando la sicurezza impedendo l’intercettazione del codice di autorizzazione. Per ulteriori informazioni, consulta la sezione [Differenza tra le credenziali da server a server OAuth e da app Web e credenziali app a pagina singola](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
-
->[!AVAILABILITY]
->
->Le API AEM basate su OpenAPI sono disponibili come parte di un programma di accesso anticipato. Se ti interessa accedervi, ti invitiamo a inviare un&#39;e-mail a [aem-apis@adobe.com](mailto:aem-apis@adobe.com) con una descrizione del tuo caso d&#39;uso.
 
 ## Cosa impara{#what-you-learn}
 
