@@ -12,10 +12,10 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 0eb0054d-0c0a-4ac0-b7b2-fdaceaa6479b
-source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
+source-git-commit: 182d7b76411ab885ab93b7724b97bf75cc52323c
 workflow-type: tm+mt
-source-wordcount: '1015'
-ht-degree: 0%
+source-wordcount: '1002'
+ht-degree: 1%
 
 ---
 
@@ -45,10 +45,6 @@ La specifica [OpenAPI](https://swagger.io/specification/) (precedentemente nota 
 
 Nelle versioni future, verranno aggiunte più API AEM basate su OpenAPI per supportare casi d’uso aggiuntivi.
 
->[!AVAILABILITY]
->
->Le API AEM basate su OpenAPI sono disponibili come parte di un programma di accesso anticipato. Se ti interessa accedervi, ti invitiamo a inviare un&#39;e-mail a [aem-apis@adobe.com](mailto:aem-apis@adobe.com) con una descrizione del tuo caso d&#39;uso.
-
 ## Supporto dell’autenticazione{#authentication-support}
 
 Le API AEM basate su OpenAPI supportano l’autenticazione OAuth 2.0, inclusi i seguenti tipi di sovvenzione:
@@ -71,6 +67,7 @@ La tabella seguente riepiloga le differenze tra i tre metodi di autenticazione O
 | **Considerazioni sulla sicurezza** | Archivia in modo sicuro le credenziali sensibili (`client_id`, `client_secret`) nei sistemi back-end. | Dopo l&#39;autenticazione dell&#39;utente, gli viene concesso il proprio token di accesso _temporaneo tramite una chiamata di back-end_. Archivia in modo sicuro le credenziali sensibili (`client_id`, `client_secret`) nei sistemi back-end per scambiare il codice di autorizzazione per il token di accesso. | Dopo l&#39;autenticazione dell&#39;utente, gli viene concesso il proprio token di accesso _temporaneo tramite una chiamata front-end_. Non utilizza `client_secret`, poiché l&#39;archiviazione nelle app front-end non è sicura. Si basa su PKCE per scambiare il codice di autorizzazione per il token di accesso. |
 | **Tipo di concessione** | _credenziali_client_ | _codice_autorizzazione_ | _codice_autorizzazione_ con **PKCE** |
 | **Tipo di credenziali Adobe Developer Console** | OAuth Server-to-Server | App Web OAuth | App a pagina singola OAuth |
+| **Esercitazione** | [Richiama API tramite autenticazione server-to-server](./use-cases/invoke-api-using-oauth-s2s.md) | [Richiama l&#39;API tramite l&#39;autenticazione dell&#39;app Web](./use-cases/invoke-api-using-oauth-web-app.md) | [Richiama API tramite autenticazione app a pagina singola](./use-cases/invoke-api-using-oauth-single-page-app.md) |
 
 ## Accesso alle API di Adobe e ai concetti correlati{#accessing-adobe-apis-and-related-concepts}
 
