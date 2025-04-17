@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: ebc609ae621ea5d4d0eba0e28202448b6eaeb8cc
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 15%
+source-wordcount: '454'
+ht-degree: 20%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 15%
    + [Vista risorse](playlists/assets-view.md)
    + [Visualizzazione amministratore](playlists/admin-view.md)
 
-+ Configurazione di {#configuring}
++ Configurazione{#configuring}
    + [Cartelle della linea di base](configuring/baseline-folders.md)
    + [Autorizzazioni linea di base](configuring/baseline-permissions.md)
    + [Assegnazione dei tag](configuring/tagging.md)
@@ -42,7 +42,7 @@ ht-degree: 15%
    + [Rappresentazioni](./authoring/renditions.md)
    + [Correlare e non correlare](./authoring/relate-unrelate.md)
 
-+ Collaboration{#collaboration}
++ Collaborazione{#collaboration}
    + [Osserva](./collaboration/watch.md)
    + [Timeline e casella in entrata](./collaboration/timeline-and-inbox.md)
    + [Commenti e annotazioni](./collaboration/comments-and-annotations.md)
@@ -50,7 +50,7 @@ ht-degree: 15%
    + [Versioni](./collaboration/versions.md)
    + [Attività di revisione](./collaboration/review-task.md)
 
-+ Ricerca e individuazione{#search-and-discovery}
++ Ricerca e rilevamento{#search-and-discovery}
    + [Ricerca](./search-and-discovery/search.md)
    + [Ricerca contestuale](./search-and-discovery/contextual-search.md)
    + [Integrazione con Adobe Firefly](./search-and-discovery/adobe-firefly.md)
@@ -77,7 +77,7 @@ ht-degree: 15%
    + [Tag avanzati per video](metadata/video-smart-tags.md)
    + [Importare ed esportare i metadati](metadata/metadata-import-export.md)
 
-+ Content Hub{#content-hub}
++ Hub di contenuti{#content-hub}
    + [Panoramica](./content-hub/overview.md)
    + [Configurazione](./content-hub/set-up.md)
    + [Configura](./content-hub/configure.md)
@@ -86,6 +86,8 @@ ht-degree: 15%
    + [Varianti di immagini con Adobe Express](./content-hub/image-variants.md)
    + [Raccolte](./content-hub/collections.md)
    + [Condivisione](./content-hub/share.md)
+   + Casi di utilizzo{#use-cases}
+      + [Gestire le risorse](./content-hub/use-cases/manage-assets.md)
 
 + Edge Delivery Services{#edge-delivery-services}
    + [Plug-in Sidekick](./edge-delivery-services/sidekick-plugin.md)
@@ -109,7 +111,7 @@ ht-degree: 15%
       + [Virgole condivisione risorse tempistiche](./sharing/asset-share-commons-feature-video-theming.md)
       + [Kit di risorse Asset Share Commons](./sharing/asset-share/asset-share-commons-asset-kits.md)
 
-+ Flussi di lavoro di Creative{#creative-workflows}
++ Flussi di lavoro Creative{#creative-workflows}
    + [Integrazione con Adobe Express](./creative-workflows/adobe-express.md)
    + [ADOBE EXPRESS e AEM ASSETS](./creative-workflows/adobe-express-aem-assets.md)
    + [App desktop AEM](./creative-workflows/aem-desktop-app.md)
@@ -134,7 +136,7 @@ ht-degree: 15%
    + [Operazioni Creative](./content-automation/creative-operations.md)
    + [Azioni Photoshop](./content-automation/photoshop-actions.md)
 
-+ Elemento multimediale dinamico{#dynamic-media}
++ Dynamic Media{#dynamic-media}
    + [Panoramica di Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Applicazione desktop Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Immagini {#images}
@@ -155,11 +157,11 @@ ht-degree: 15%
       + [Visualizzatori con Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
    + 3D {#3d}
       + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + Utilizzo con AEM Sites {#dm-with-aem-sites}
+   + Utilizzo di con AEM Sites {#dm-with-aem-sites}
       + [Frammenti di esperienza](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Componenti core Dynamic Media](dynamic-media/dynamic-media-core-components.md)
 
-   + Esercitazioni {#tutorials}
+   + Tutorial {#tutorials}
       + [Creazione di set carosello](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
       + [Creazione di set di immagini](dynamic-media/tutorials/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
       + [Creazione di predefiniti immagine](dynamic-media/tutorials/creating-image-presets.md)
@@ -175,7 +177,7 @@ ht-degree: 15%
       + [Download di Assets nell’app Dynamic Media Classic](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [API IPS di Dynamic Media Classic](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
 
-+ Integrazione Workfront{#workfront}
++ Integrazione con Workfront{#workfront}
    + Connettore avanzato{#enhanced-connector}
       + [Nozioni di base sui connettori migliorate](./workfront/enhanced-connector/basics.md)
       + [Cartelle di progetto](./workfront/enhanced-connector/project-folders.md)
@@ -189,7 +191,7 @@ ht-degree: 15%
 + Traduzione {#translation}
    + [Traduzione file Source](translation/source-file-translation-feature-video-use.md)
 
-+ Modelli risorse{#asset-templates}
++ Modelli per risorse{#asset-templates}
    + [Informazioni sui modelli di risorse](asset-templates/asset-templates-tutorial-understand.md)
    + [Utilizzo dei modelli di risorse](asset-templates/asset-templates-feature-video-use.md)
    + [Configurare i modelli di risorse](asset-templates/asset-templates-technical-video-setup.md)
