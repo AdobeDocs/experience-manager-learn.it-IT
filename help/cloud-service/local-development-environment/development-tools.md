@@ -11,9 +11,9 @@ level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
 duration: 3508
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 3ad201aad77e71b42d46d69fdda50bcc77316151
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1302'
 ht-degree: 6%
 
 ---
@@ -250,7 +250,6 @@ Visual Studio Code è la scelta ideale per gli sviluppatori front-end che creano
 
 + [Scarica codice Visual Studio](https://code.visualstudio.com/Download)
 + [Scarica lo strumento repository](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)
-+ [Scarica l&#39;estensione codice VS aemfed](https://aemfed.io/)
 + [Scarica estensione codice VS di AEM Sync](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)
 
 ### Eclipse

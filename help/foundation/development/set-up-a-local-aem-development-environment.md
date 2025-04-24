@@ -11,9 +11,9 @@ last-substantial-update: 2022-07-20T00:00:00Z
 doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
 duration: 4537
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 3ad201aad77e71b42d46d69fdda50bcc77316151
 workflow-type: tm+mt
-source-wordcount: '2423'
+source-wordcount: '2408'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,6 @@ Quando, utilizzando un IDE, assicurati di controllare `classic` nella scheda Pro
 
 * [**Scarica**](https://code.visualstudio.com/Download) **Codice Visual Studio**
 * **[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)** - Strumento simile a FTP per il contenuto JCR
-* **[aemfed](https://aemfed.io/)** - Velocizza il flusso di lavoro front-end di AEM
 * **[AEM Sync](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - Estensione &#42; supportata dalla community per Visual Studio Code
 * **[Progetto WKND](https://github.com/adobe/aem-guides-wknd)** - Esempio di progetto AEM mostrato in questo video.
 
@@ -189,8 +188,7 @@ Quando, utilizzando un IDE, assicurati di controllare `classic` nella scheda Pro
 * 00:53 - Creare e distribuire il codice sorgente con Maven
 * 04:03 - Effettuare il push delle modifiche al codice con lo strumento della riga di comando Repo
 * 08:29 - Modifiche al codice di pull con lo strumento della riga di comando Repo
-* 10:40 - Cambiamenti nel codice push con lo strumento aemfed
-* 14:24 - Risoluzione dei problemi, Rigenera librerie client
+* 10:32 - Risoluzione dei problemi, Rigenera librerie client
 
 ### [!DNL CRXDE Lite]
 

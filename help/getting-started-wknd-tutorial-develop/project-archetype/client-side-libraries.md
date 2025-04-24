@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
 duration: 557
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 3ad201aad77e71b42d46d69fdda50bcc77316151
 workflow-type: tm+mt
-source-wordcount: '2554'
-ht-degree: 0%
+source-wordcount: '2432'
+ht-degree: 1%
 
 ---
 
@@ -394,14 +394,6 @@ Questa tecnica è utile se la maggior parte degli stili e del codice front-end v
    > L’SRC immagine del markup statico punta a un componente immagine live in un’istanza AEM locale. Le immagini appaiono interrotte se il percorso cambia, se AEM non viene avviato o se il browser non ha effettuato l’accesso all’istanza AEM locale. Se si consegna a una risorsa esterna, è anche possibile sostituire le immagini con riferimenti statici.
 
 1. È possibile **arrestare** il server Webpack dalla riga di comando digitando `CTRL+C`.
-
-### aemfed {#develop-aemfed}
-
-**[aemfed](https://aemfed.io/)** è uno strumento da riga di comando open-source che può essere utilizzato per velocizzare lo sviluppo front-end. È alimentato da [aemsync](https://www.npmjs.com/package/aemsync), [Browsersync](https://browsersync.io/) e [Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html).
-
-A un livello avanzato, `aemfed`è progettato per ascoltare le modifiche dei file all&#39;interno del modulo **ui.apps** e sincronizzarli automaticamente direttamente in un&#39;istanza AEM in esecuzione. In base alle modifiche, un browser locale si aggiorna automaticamente, velocizzando così lo sviluppo front-end. È inoltre progettato per funzionare con Sling Log Tracer per visualizzare automaticamente eventuali errori lato server direttamente nel terminale.
-
-Se lavori molto nel modulo **ui.apps**, modificando gli script HTL e creando componenti personalizzati, **aemfed** può essere uno strumento potente da utilizzare. [La documentazione completa è disponibile qui](https://github.com/abmaonline/aemfed).
 
 ### Debug delle librerie lato client {#debugging-clientlibs}
 
