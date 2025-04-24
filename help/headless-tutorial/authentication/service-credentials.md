@@ -12,7 +12,7 @@ last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 duration: 881
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
 workflow-type: tm+mt
 source-wordcount: '1963'
 ht-degree: 0%
@@ -149,7 +149,7 @@ function getCommandLineParams() {
 
 Una volta lette le credenziali del servizio, queste vengono utilizzate per generare un JWT che viene quindi scambiato con le API Adobe IMS per un token di accesso. Questo token di accesso può quindi essere utilizzato per accedere ad AEM as a Cloud Service.
 
-Questa applicazione di esempio è basata su Node.js, quindi è consigliabile utilizzare il modulo [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) npm per facilitare la generazione (1) di JWT e lo scambio (20 con Adobe IMS. Se l&#39;applicazione è stata sviluppata utilizzando un altro linguaggio, esaminare [gli esempi di codice appropriati](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/) su come creare la richiesta HTTP ad Adobe IMS utilizzando altri linguaggi di programmazione.
+Questa applicazione di esempio è basata su Node.js, quindi è consigliabile utilizzare il modulo [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) npm per facilitare la generazione (1) di JWT e lo scambio (20 con Adobe IMS. Se l&#39;applicazione è stata sviluppata utilizzando un altro linguaggio, esaminare [gli esempi di codice appropriati](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples) su come creare la richiesta HTTP ad Adobe IMS utilizzando altri linguaggi di programmazione.
 
 1. Aggiornare `getAccessToken(..)` per esaminare il contenuto del file JSON e determinare se rappresenta un token di accesso per lo sviluppo locale o credenziali del servizio. Ciò può essere facilmente ottenuto verificando l&#39;esistenza della proprietà `.accessToken`, che esiste solo per il token di accesso per lo sviluppo locale JSON.
 

@@ -10,7 +10,7 @@ jira: KT-11743
 last-substantial-update: 2023-01-17T00:00:00Z
 exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
 duration: 151
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 1%
@@ -50,7 +50,7 @@ I valori per `JWT_CLIENT_ID`, `JWT_CLIENT_SECRET`, `JWT_TECHNICAL_ACCOUNT_ID`, `
 
 ### Metascopi
 
-Determina le API di Adobe e i relativi metascopi con cui l’azione di App Builder interagisce. Elenca i metascopi con delimitatori di virgola nella chiave `JWT_METASCOPES`. I metascopi validi sono elencati nella [documentazione sul metascopio JWT di Adobe](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/).
+Determina le API di Adobe e i relativi metascopi con cui l’azione di App Builder interagisce. Elenca i metascopi con delimitatori di virgola nella chiave `JWT_METASCOPES`. I metascopi validi sono elencati nella [documentazione sul metascopio JWT di Adobe](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/scopes).
 
 
 Ad esempio, il seguente valore potrebbe essere aggiunto alla chiave `JWT_METASCOPES` in `.env`:
