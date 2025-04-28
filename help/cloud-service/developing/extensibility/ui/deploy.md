@@ -11,9 +11,9 @@ jira: KT-11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 2e37165d-c003-4206-8133-54e37ca35b8e
 duration: 166
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 1049f605eb1c3b68e70e34d4cdad31858b076858
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -94,6 +94,22 @@ Per distribuire una nuova versione di un&#39;estensione, è necessario prima rev
 1. Accedi a [Adobe Exchange](https://exchange.adobe.com/)
 1. Passa a __Gestisci__ > __App App Builder__
 1. __Revoca__ dell&#39;estensione da aggiornare
+
+Dopo aver revocato l’estensione, questa rimane visibile con lo stato revocato in Gestione estensioni. Per rimuoverlo completamente è necessario rimuovere il progetto.
+
+Il pulsante per rimuovere il progetto si trova in alto a destra:
+
+![Pulsante Elimina](./assets/deploy/extension-delete-button.png){align="center"}
+
+Fino a quando l’estensione non viene revocata non sarà possibile eliminare il progetto:
+
+![Impossibile eliminare il progetto](./assets/deploy/extension-can-not-delete-project.png){align="center"}
+
+Quando l&#39;estensione viene revocata, il progetto può essere rimosso:
+
+![Impossibile eliminare il progetto](./assets/deploy/extension-delete-procject.png){align="center"}
+
+Dopo la rimozione del progetto, l’estensione non è più visibile in Extension Manager.
 
 ### Distribuire l’estensione
 
