@@ -12,9 +12,9 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 0eb0054d-0c0a-4ac0-b7b2-fdaceaa6479b
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 58ae9e503bd278479d78d4df6ffe39356d5ec59b
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1100'
 ht-degree: 1%
 
 ---
@@ -54,6 +54,15 @@ Le API AEM basate su OpenAPI supportano l’autenticazione OAuth 2.0, inclusi i 
 - **Credenziali app Web OAuth**: adatte per applicazioni Web con componenti front-end e _back-end_ che accedono alle API AEM per conto degli utenti. Utilizza il tipo di concessione _authorization_code_, in cui il server backend gestisce in modo sicuro segreti e token. Per ulteriori informazioni, vedere [Credenziali app Web OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential).
 
 - **Credenziali app a pagina singola OAuth**: progettate per applicazioni a pagina singola in esecuzione nel browser, che devono accedere alle API per conto di un utente senza un server back-end. Utilizza il tipo di concessione _authorization_code_ e si basa su meccanismi di sicurezza lato client che utilizzano PKCE (Proof Key for Code Exchange) per proteggere il flusso del codice di autorizzazione. Per ulteriori informazioni, vedere [Credenziali app a pagina singola OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential).
+
+## Metodo di autenticazione da utilizzare{#auth-method-decision}
+
+Quando decidi quale metodo di autenticazione utilizzare, considera quanto segue:
+
+![Quale metodo di autenticazione utilizzare?](./assets/overview/which-authentication-method-to-use.png)
+
+L’autenticazione utente (app web o app a pagina singola) deve essere la scelta predefinita ogni volta che viene coinvolto un contesto utente di AEM. In questo modo tutte le azioni nell’archivio vengono attribuite correttamente all’utente autenticato e l’utente è limitato solo alle autorizzazioni a cui ha diritto.
+L&#39;utilizzo di Server-to-Server (o account di sistema tecnico) per eseguire azioni per conto di un singolo utente ignora il modello di sicurezza e introduce rischi quali l&#39;escalation dei privilegi e il controllo non accurato.
 
 ## Differenza tra le credenziali server-to-server e app Web di OAuth e le credenziali app a pagina singola{#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials}
 
