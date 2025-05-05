@@ -263,13 +263,13 @@ L’app Next.js utilizza due pagine per presentare i dati dell’avventura.
 
 + `src/pages/index.js`
 
-  Utilizza getServerSideProps()](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) di [Next.js per chiamare `getAllAdventures()` e visualizza ogni avventura come una scheda.
+  Utilizza getServerSideProps() [&#128279;](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) di Next.js per chiamare `getAllAdventures()` e visualizza ogni avventura come una scheda.
 
   L&#39;utilizzo di `getServerSiteProps()` consente il rendering lato server della pagina Next.js.
 
 + `src/pages/adventures/[...slug].js`
 
-  Percorso dinamico [Next.js](https://nextjs.org/docs/routing/dynamic-routes) che visualizza i dettagli di una singola avventura. Questa route dinamica preacquisisce i dati di ogni avventura utilizzando getStaticProps()](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) di [Next.js tramite una chiamata a `getAdventureBySlug(slug, queryVariables)` tramite il parametro `slug` trasmesso tramite la selezione dell&#39;avventura nella pagina `adventures/index.js` e `queryVariables` per controllare il formato, la larghezza e la qualità dell&#39;immagine.
+  Percorso dinamico [Next.js](https://nextjs.org/docs/routing/dynamic-routes) che visualizza i dettagli di una singola avventura. Questa route dinamica preacquisisce i dati di ogni avventura utilizzando getStaticProps() [&#128279;](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) di Next.js tramite una chiamata a `getAdventureBySlug(slug, queryVariables)` tramite il parametro `slug` trasmesso tramite la selezione dell&#39;avventura nella pagina `adventures/index.js` e `queryVariables` per controllare il formato, la larghezza e la qualità dell&#39;immagine.
 
   La route dinamica è in grado di prerecuperare i dettagli per tutte le avventure utilizzando [GetStaticPaths()](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) di Next.js e popolando tutte le permutazioni di route possibili in base all&#39;elenco completo delle avventure restituite dalla query GraphQL `getAdventurePaths()`
 

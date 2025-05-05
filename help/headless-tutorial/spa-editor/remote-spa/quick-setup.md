@@ -66,7 +66,7 @@ Scarica e installa Quickstart dell&#39;SDK AEM sulla porta 4502, con le credenzi
    # Provide `admin` as the admin user's password
    ```
 
-L&#39;SDK per AEM viene avviato e avviato automaticamente il [http://localhost:4502](Http://localhost:4502). Accedi utilizzando le seguenti credenziali:
+L&#39;SDK per AEM viene avviato e avviato automaticamente il [http://localhost:4502](http://localhost:4502). Accedi utilizzando le seguenti credenziali:
 
 + Nome utente: `admin`
 + Password: `admin`
@@ -128,7 +128,7 @@ Verificare che l&#39;SPA sia in esecuzione in [http://localhost:3000](http://loc
 
 Prima dell&#39;authoring, disporre le finestre del browser in modo che l&#39;istanza Autore AEM (`http://localhost:4502`) sia a sinistra e che l&#39;SPA remoto (`http://localhost:3000`) sia a destra. Questa disposizione consente di vedere come le modifiche ai contenuti originati dall’AEM vengono immediatamente riportate nell’SPA.
 
-1. Accedi a [servizio di authoring SDK per AEM](Http://localhost:4502) come `admin`
+1. Accedi a [servizio di authoring SDK per AEM](http://localhost:4502) come `admin`
 1. Passa a __Sites > App WKND > us > en__
 1. Modifica __Home page app WKND__
 1. Passa alla modalità __Modifica__

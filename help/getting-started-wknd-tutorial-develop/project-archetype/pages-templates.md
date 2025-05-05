@@ -262,7 +262,7 @@ Utilizza lo strumento CRXDE-Lite su un’istanza AEM locale per visualizzare la 
 
    Ci sono solo due script HTL, `customfooterlibs.html` e `customheaderlibs.html` sotto il componente page. *Come viene eseguito il rendering della pagina da questo componente?*
 
-   La proprietà `sling:resourceSuperType` punta a `core/wcm/components/page/v2/page`. Questa proprietà consente al componente page del WKND di ereditare **tutte** le funzionalità del componente page del componente core. Questo è il primo esempio di un modello di componente proxy [](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Ulteriori informazioni sono disponibili [qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
+   La proprietà `sling:resourceSuperType` punta a `core/wcm/components/page/v2/page`. Questa proprietà consente al componente page del WKND di ereditare **tutte** le funzionalità del componente page del componente core. Questo è il primo esempio di un modello di componente proxy [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Ulteriori informazioni sono disponibili [qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
 
 1. Inspect è un altro componente all&#39;interno dei componenti WKND, il componente `Breadcrumb` di: `/apps/wknd/components/breadcrumb`. È possibile trovare la stessa proprietà `sling:resourceSuperType`, ma questa volta punta a `core/wcm/components/breadcrumb/v2/breadcrumb`. Questo è un altro esempio di utilizzo del modello di componente Proxy per includere un Componente core. Infatti, tutti i componenti nella base di codice WKND sono proxy dei Componenti core AEM (ad eccezione del componente demo personalizzato HelloWorld). È consigliabile riutilizzare quante più funzionalità dei Componenti core possibili *prima* della scrittura di codice personalizzato.
 
@@ -312,7 +312,7 @@ Utilizza lo strumento CRXDE-Lite su un’istanza AEM locale per visualizzare la 
 
    L’altro motivo per suddividere HTL in più script è quello di consentire ai componenti proxy di ignorare singoli script per implementare una logica di business personalizzata. Gli script HTL `customfooterlibs.html` e `customheaderlibs.html` sono creati allo scopo esplicito di essere sostituiti dall’implementazione dei progetti.
 
-   Leggi questo articolo](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=it) per saperne di più sul modo in cui il modello modificabile influisce sul rendering della pagina di contenuto [.
+   Leggi questo articolo[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=it) per saperne di più sul modo in cui il modello modificabile influisce sul rendering della pagina di contenuto .
 
 1. Inspect è un altro componente core, come il Breadcrumb in `/libs/core/wcm/components/breadcrumb/v2/breadcrumb`. Visualizza lo script `breadcrumb.html` per comprendere come viene generato il markup per il componente Breadcrumb.
 

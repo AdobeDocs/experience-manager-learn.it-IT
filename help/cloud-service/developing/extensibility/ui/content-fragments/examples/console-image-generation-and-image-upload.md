@@ -76,7 +76,7 @@ L&#39;app di estensione App Builder generata viene aggiornata come descritto di 
 
 ### Configurazione iniziale
 
-1. Registrati per un account API ](https://openai.com/api/) OpenAI gratuito [e crea una [chiave API](https://beta.openai.com/account/api-keys)
+1. Registrati per un account API [&#128279;](https://openai.com/api/) OpenAI gratuito e crea una [chiave API](https://beta.openai.com/account/api-keys)
 1. Aggiungi questa chiave al file `.env` del progetto App Builder
 
    ```

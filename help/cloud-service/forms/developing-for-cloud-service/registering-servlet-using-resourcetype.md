@@ -35,7 +35,7 @@ Avvia il progetto di aem-banking in IntelliJ. Crea un servlet denominato GetFiel
 
 ## Servlet di esempio
 
-Il seguente servlet è associato al tipo di risorsa Sling: _**azure/fetchoptions**_
+Il seguente servlet è associato al tipo di risorsa Sling: _&#x200B;**azure/fetchoptions**&#x200B;_
 
 
 

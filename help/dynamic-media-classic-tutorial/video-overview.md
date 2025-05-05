@@ -220,6 +220,7 @@ Talvolta potresti aver bisogno di un predefinito per video speciale che non corr
 
    - Ogni account video in streaming ha decine di predefiniti pronti all’uso e, se crei dei tuoi predefiniti personalizzati, li vedi anche qui.
    - Puoi filtrare per tipo utilizzando il menu a discesa. I predefiniti sono divisi in Computer, Mobile e Tablet.
+
      ![immagine](assets/video-overview/video-overview-4.jpg)
 
 2. La colonna Attivo consente di scegliere se visualizzare tutti i predefiniti al momento del caricamento o solo quelli selezionati. Se siete negli Stati Uniti, potete deselezionare i predefiniti PAL europei e, se siete nel Regno Unito/area EMEA, deselezionare i predefiniti NTSC.

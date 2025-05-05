@@ -92,7 +92,7 @@ Il primo passaggio consiste nell’esaminare le dipendenze Maven per supportare 
 1. Apache Sling Mocks
 1. Framework di test di AEM Mocks (di io.wcm)
 
-Le dipendenze dei test **JUnit5**, **Mockito e **AEM Mocks** vengono aggiunte automaticamente al progetto durante l&#39;installazione utilizzando l&#39;[archetipo AEM Maven](project-setup.md).
+Le dipendenze dei test **JUnit5**, **Mockito e &#x200B;** AEM Mocks** vengono aggiunte automaticamente al progetto durante l&#39;installazione utilizzando l&#39;[archetipo AEM Maven](project-setup.md).
 
 1. Per visualizzare queste dipendenze, apri il POM Reactor padre in **aem-guides-wknd/pom.xml**, passa a `<dependencies>..</dependencies>` e visualizza le dipendenze per JUnit, Mockito, Apache Sling Mocks e AEM Mock Test di io.wcm in `<!-- Testing -->`.
 1. Verificare che `io.wcm.testing.aem-mock.junit5` sia impostato su **4.1.0**:
@@ -219,7 +219,7 @@ Il TDD nel contesto di AEM richiede un livello di esperienza ed è adottato al m
 
 La maggior parte del codice scritto per AEM si basa sulle API JCR, Sling o AEM, che a loro volta richiedono la corretta esecuzione del contesto di un AEM in esecuzione.
 
-Poiché gli unit test vengono eseguiti al momento della compilazione, al di fuori del contesto di un’istanza AEM in esecuzione, tale contesto non esiste. Per facilitare questa fase, AEM Mocks](https://wcm.io/testing/aem-mock/usage.html) di [wcm.io crea un contesto fittizio che consente a queste API di _agire principalmente_ come se fossero in esecuzione in AEM.
+Poiché gli unit test vengono eseguiti al momento della compilazione, al di fuori del contesto di un’istanza AEM in esecuzione, tale contesto non esiste. Per facilitare questa fase, AEM Mocks[&#128279;](https://wcm.io/testing/aem-mock/usage.html) di wcm.io crea un contesto fittizio che consente a queste API di _agire principalmente_ come se fossero in esecuzione in AEM.
 
 1. Creare un contesto AEM utilizzando **wcm.io&#39;s** `AemContext` in **BylineImplTest.java** aggiungendolo come estensione JUnit decorata con `@ExtendWith` al file **BylineImplTest.java**. L&#39;estensione si occupa di tutte le attività di inizializzazione e pulizia necessarie. Creare una variabile di classe per `AemContext` che può essere utilizzata per tutti i metodi di test.
 

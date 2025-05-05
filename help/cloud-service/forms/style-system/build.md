@@ -29,7 +29,7 @@ Al terzo pulsante verrà applicato lo stile predefinito.
 
 ## Creare il progetto tema
 
-Il passaggio successivo è quello di costruire il progetto tematico. Passa alla cartella principale del progetto tema ed esegui il comando _**npm run build**_ come mostrato nella schermata seguente.
+Il passaggio successivo è quello di costruire il progetto tematico. Passa alla cartella principale del progetto tema ed esegui il comando _&#x200B;**npm run build**&#x200B;_ come mostrato nella schermata seguente.
 
 ![build-theme](assets/build-theme.png)
 

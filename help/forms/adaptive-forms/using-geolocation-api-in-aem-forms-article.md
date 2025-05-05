@@ -95,12 +95,12 @@ Per attivare questa funzionalità sul server, attieniti alla seguente procedura
 
 * Installa e avvia il server AEM Forms.
 > Questa funzionalità è stata testata su AEM Forms 6.3 e versioni successive
-* [Ottieni chiave API Google](https://developers.google.com/maps/documentation/javascript/get-api-key).
-* [Importa le risorse correlate a questo articolo in AEM.](assets/geolocationapi.zip)
-* [Apri il frammento del modulo adattivo in modalità di modifica.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
-* Apri l’editor di regole per il componente Scelta immagine.
-* Sostituisci &lt;your_api_key> con la chiave API di Google.
-* Salva le modifiche.
-* [Anteprima modulo](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
-* Fai clic sull’icona &quot;geolocalizzazione&quot;.
-* Il modulo deve essere compilato con la posizione corrente.
+>* [Ottieni chiave API Google](https://developers.google.com/maps/documentation/javascript/get-api-key).
+>* [Importa le risorse correlate a questo articolo in AEM.](assets/geolocationapi.zip)
+>* [Apri il frammento del modulo adattivo in modalità di modifica.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
+>* Apri l’editor di regole per il componente Scelta immagine.
+>* Sostituisci &lt;your_api_key> con la chiave API di Google.
+>* Salva le modifiche.
+>* [Anteprima modulo](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
+>* Fai clic sull’icona &quot;geolocalizzazione&quot;.
+>* Il modulo deve essere compilato con la posizione corrente.

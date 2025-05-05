@@ -243,7 +243,7 @@ console.timeEnd('Download AEM assets');
 
 Con lo script scaricato, aggiorna le variabili di configurazione nella parte inferiore dello script.
 
-È possibile ottenere `AEM_ACCESS_TOKEN` seguendo i passaggi descritti nell&#39;esercitazione sull&#39;autenticazione basata su token per AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview). [ Spesso il token sviluppatore di 24 ore è sufficiente, purché il completamento dell’esportazione richieda meno di 24 ore e l’utente che genera il token abbia accesso in lettura alle risorse da esportare.
+È possibile ottenere `AEM_ACCESS_TOKEN` seguendo i passaggi descritti nell&#39;esercitazione sull&#39;autenticazione basata su token per AEM as a Cloud Service[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview).  Spesso il token sviluppatore di 24 ore è sufficiente, purché il completamento dell’esportazione richieda meno di 24 ore e l’utente che genera il token abbia accesso in lettura alle risorse da esportare.
 
 ```javascript
 ...

@@ -256,7 +256,7 @@ Per evitare problemi e confusione nell’authoring quando si utilizza la selezio
 
 **Questo approccio non viene utilizzato in questa esercitazione, ma illustra un metodo alternativo e opzioni di blocco avanzate.**
 
-Le opzioni di blocco possono essere impostate come predefinite quando si aggiunge una nuova istanza di blocco a una pagina in Universal Editor. Questa operazione viene eseguita impostando il valore predefinito della proprietà `classes` nella definizione del blocco [](../5-new-block.md#block-definition).
+Le opzioni di blocco possono essere impostate come predefinite quando si aggiunge una nuova istanza di blocco a una pagina in Universal Editor. Questa operazione viene eseguita impostando il valore predefinito della proprietà `classes` nella definizione del blocco [&#128279;](../5-new-block.md#block-definition).
 
 #### Definizione blocco
 

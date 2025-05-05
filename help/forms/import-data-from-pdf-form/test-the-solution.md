@@ -23,4 +23,4 @@ Puoi distribuire le risorse di esempio per far funzionare questa soluzione nellâ
 * Scarica e distribuisci il bundle utilizzando la console Web OSGi[Bundle servizi documentali personalizzati](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 * Scarica e distribuisci il bundle utilizzando la console Web OSGi [Sviluppo con Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * Scarica e distribuisci il bundle utilizzando la console Web OSGi[importa dati dal file pdf](./assets/onlineToOffline.core-1.0.0-SNAPSHOT.jar)
-* Aggiungi la voce _**DevelopingWithServiceUser.core:getresourceresolver=data**_ nella console di configurazione OSGi _**Apache Sling Service User Mapper Service**_
+* Aggiungi la voce _&#x200B;**DevelopingWithServiceUser.core:getresourceresolver=data**&#x200B;_ nella console di configurazione OSGi _&#x200B;**Apache Sling Service User Mapper Service**&#x200B;_

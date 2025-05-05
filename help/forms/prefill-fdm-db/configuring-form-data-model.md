@@ -58,8 +58,8 @@ Il primo passaggio nella creazione del modello dati del modulo basato su RDBMS c
 * ![get-service](assets/get-service.png)
 >[!NOTE]
 > Il servizio get richiede un valore mappato alla colonna empID di newhire entity.Esistono diversi modi per trasmettere questo valore e in questa esercitazione l&#39;empID viene trasmesso attraverso il parametro di richiesta denominato empID.
-* Fai clic su _Fine_ per salvare gli argomenti per il servizio di recupero
-* Fai clic su _Fine_ per salvare le modifiche apportate al modello dati del modulo
+>* Fai clic su _Fine_ per salvare gli argomenti per il servizio di recupero
+>* Fai clic su _Fine_ per salvare le modifiche apportate al modello dati del modulo
 
 ## Aggiungi associazione tra 2 entità
 

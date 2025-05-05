@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Creare un blocco
 
-Dopo aver inviato il JSON](./5-new-block.md) del blocco del teaser [ al ramo `teaser`, il blocco diventa modificabile in AEM Universal Editor.
+Dopo aver inviato il JSON[&#128279;](./5-new-block.md) del blocco del teaser  al ramo `teaser`, il blocco diventa modificabile in AEM Universal Editor.
 
 L’authoring di un blocco in sviluppo è importante per diversi motivi:
 

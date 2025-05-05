@@ -388,7 +388,7 @@ Dopo il push delle modifiche al ramo `wknd-styles`, crea una richiesta pull su G
    * Gli URL di test indicano a AEM Code Sync quali rami utilizzare per la convalida e il confronto. L&#39;URL &quot;After&quot; (Dopo) utilizza il ramo di lavoro `wknd-styles` per verificare in che modo le modifiche al codice influiscono sulle prestazioni del sito Web.
 
 6. Fai clic su **Crea richiesta di pull**.
-7. Attendi che l&#39;app GitHub ](./1-new-code-project.md) per la sincronizzazione del codice di AEM [ sia **completa per i controlli di qualità**. In caso contrario, risolvere gli errori ed eseguire nuovamente i controlli.
+7. Attendi che l&#39;app GitHub [&#128279;](./1-new-code-project.md) per la sincronizzazione del codice di AEM  sia **completa per i controlli di qualità**. In caso contrario, risolvere gli errori ed eseguire nuovamente i controlli.
 8. Al termine dei controlli, **unisci la richiesta di pull** in `main`.
 
 Le modifiche unite in `main` non vengono considerate distribuite in produzione e il nuovo sviluppo può procedere in base a questi aggiornamenti.

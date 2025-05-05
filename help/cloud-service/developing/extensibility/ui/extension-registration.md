@@ -55,7 +55,7 @@ function App(props) {
 
 `ExtensionRegistration.js` deve essere caricato immediatamente tramite la route dell&#39;indice dell&#39;estensione e agisce come punto di registrazione dell&#39;estensione.
 
-In base al modello di estensione dell&#39;interfaccia utente di AEM selezionato al momento dell&#39;inizializzazione dell&#39;estensione dell&#39;app App Builder](./app-initialization.md), sono supportati diversi punti di estensione.[
+In base al modello di estensione dell&#39;interfaccia utente di AEM selezionato al momento dell&#39;inizializzazione dell&#39;estensione dell&#39;app App Builder[&#128279;](./app-initialization.md), sono supportati diversi punti di estensione.
 
 + [Punti di estensione dell’interfaccia utente per frammenti di contenuto](./content-fragments/overview.md#extension-points)
 

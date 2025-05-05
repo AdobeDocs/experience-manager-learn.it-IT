@@ -28,7 +28,7 @@ Il caso d’uso è il seguente:
 * All’invio del modulo, viene attivato un flusso di lavoro AEM. Questo flusso di lavoro assegna al documento i tag relativi allo stato civile (Single) e allo stato di impiego (Retired) e lo memorizza in DAM.
 * Una volta memorizzato il documento in DAM, l’amministratore dovrebbe essere in grado di eseguire ricerche nel documento utilizzando questi tag. Ad esempio, la ricerca su Singolo o Ritirato recupera i DoR appropriati.
 
-Per soddisfare questo caso d’uso è stato scritto un passaggio di processo personalizzato. In questo passaggio recuperiamo i valori degli elementi dati appropriati dai dati inviati. Costruiamo quindi la sezione tag utilizzando questo valore. Ad esempio, se il valore dell&#39;elemento stato civile è &quot;Single&quot;, il titolo del tag diventa **Peak:EmploymentStatus/Single. **Utilizzando l’API TagManager, troviamo il tag e lo applichiamo al DoR.
+Per soddisfare questo caso d’uso è stato scritto un passaggio di processo personalizzato. In questo passaggio recuperiamo i valori degli elementi dati appropriati dai dati inviati. Costruiamo quindi la sezione tag utilizzando questo valore. Ad esempio, se il valore dell&#39;elemento stato civile è &quot;Single&quot;, il titolo del tag diventa **Peak:EmploymentStatus/Single. &#x200B;** Utilizzando l’API TagManager, troviamo il tag e lo applichiamo al DoR.
 
 Di seguito è riportato il codice completo per assegnare tag e memorizzare il documento di record in AEM DAM.
 

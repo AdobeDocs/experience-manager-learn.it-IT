@@ -31,7 +31,7 @@ Nella proprietà Tags sono state create 2 nuove [regole](https://experienceleagu
 
 La regola **Errore di convalida campo** viene attivata ogni volta che si verifica un errore di convalida nel campo del modulo adattivo. Ad esempio, nel modulo, se il numero di telefono o l’e-mail non sono nel formato previsto, viene visualizzato un messaggio di errore di convalida.
 
-La regola Errore di convalida campo è configurata impostando l&#39;evento su _**Adobe Experience Manager Forms-Error**_ come mostrato nella schermata
+La regola Errore di convalida campo è configurata impostando l&#39;evento su _&#x200B;**Adobe Experience Manager Forms-Error**&#x200B;_ come mostrato nella schermata
 
 
 
@@ -45,11 +45,11 @@ Adobe Analytics - Imposta variabili è configurato come segue
 
 La regola di invio del modulo viene attivata ogni volta che un modulo adattivo viene inviato correttamente.
 
-La regola di invio del modulo è configurata utilizzando l&#39;evento _**Adobe Experience Manager Forms - Submit**_
+La regola di invio del modulo è configurata utilizzando l&#39;evento _&#x200B;**Adobe Experience Manager Forms - Submit**&#x200B;_
 
 ![regola-invio-modulo](assets/form-submit-rule.png)
 
-Nella regola Form Submit, il valore dell&#39;elemento dati _**ApplicantsStateOfResidence**_ è mappato a prop5 e il valore dell&#39;elemento dati FormTitle è mappato a prop8.
+Nella regola Form Submit, il valore dell&#39;elemento dati _&#x200B;**ApplicantsStateOfResidence**&#x200B;_ è mappato a prop5 e il valore dell&#39;elemento dati FormTitle è mappato a prop8.
 
 Adobe Analytics - Imposta variabili è configurato come segue.
 ![form-submit-rule-set-variables](assets/form-submit-set-variable.png)

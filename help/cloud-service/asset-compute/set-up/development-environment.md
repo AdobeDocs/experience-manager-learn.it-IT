@@ -48,7 +48,7 @@ Per ulteriori informazioni sulle istruzioni di installazione in forma abbreviata
 
 ## Installare Visual Studio Code{#vscode}
 
-[Microsoft Visual Studio Code](https://code.visualstudio.com/download) viene utilizzato per lo sviluppo e il debug dei processi di lavoro di Asset Compute. Mentre è possibile utilizzare un altro IDE](../../local-development-environment/development-tools.md#set-up-the-development-ide) compatibile con JavaScript per sviluppare il processo di lavoro, solo Visual Studio Code può essere integrato nel processo di lavoro Asset Compute [debug](../test-debug/debug.md).[
+[Microsoft Visual Studio Code](https://code.visualstudio.com/download) viene utilizzato per lo sviluppo e il debug dei processi di lavoro di Asset Compute. Mentre è possibile utilizzare un altro IDE[&#128279;](../../local-development-environment/development-tools.md#set-up-the-development-ide) compatibile con JavaScript per sviluppare il processo di lavoro, solo Visual Studio Code può essere integrato nel processo di lavoro Asset Compute [debug](../test-debug/debug.md).
 
 Questo tutorial presuppone l&#39;utilizzo del codice di Visual Studio in quanto fornisce la migliore esperienza di sviluppo per estendere Asset Compute.
 

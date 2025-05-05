@@ -176,7 +176,7 @@ $ aio aem:rde:install target/aem-guides-wknd.ui.config-2.1.3-SNAPSHOT.zip
 
 ### Distribuire la configurazione di Apache o Dispatcher
 
-Impossibile distribuire singolarmente i file di configurazione Apache o Dispatcher ****, ma è necessario distribuire l&#39;intera struttura di cartelle Dispatcher sotto forma di file ZIP.
+Impossibile distribuire singolarmente i file di configurazione Apache o Dispatcher **&#x200B;**, ma è necessario distribuire l&#39;intera struttura di cartelle Dispatcher sotto forma di file ZIP.
 
 1. Apportare la modifica desiderata nel file di configurazione del modulo `dispatcher`. A scopo dimostrativo, aggiornare `dispatcher/src/conf.d/available_vhosts/wknd.vhost` in modo da memorizzare nella cache i file `html` solo per 60 secondi.
 

@@ -196,7 +196,7 @@ Per distribuire le modifiche all’ambiente AEMCS, effettua le seguenti operazio
 
 - Esegui il commit e invia le modifiche precedenti all’archivio Git di Cloud Manager.
 - Distribuisci le modifiche nell’ambiente AEMCS utilizzando la pipeline di configurazione di Cloud Manager. Per ulteriori dettagli, consultare [Distribuire le regole tramite Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
-- Per verificare che la regola del filtro del traffico del limite di frequenza **** funzioni come previsto, è possibile simulare un attacco come descritto nella sezione [Simulazione attacco](#attack-simulation). Limita il numero di richieste a un valore superiore al valore del limite di velocità impostato nella regola.
+- Per verificare che la regola del filtro del traffico del limite di frequenza **&#x200B;**&#x200B;funzioni come previsto, è possibile simulare un attacco come descritto nella sezione [Simulazione attacco](#attack-simulation). Limita il numero di richieste a un valore superiore al valore del limite di velocità impostato nella regola.
 
 ### Configurazione delle regole di trasformazione delle richieste {#configure-request-transform-rules}
 

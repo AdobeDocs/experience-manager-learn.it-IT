@@ -33,7 +33,7 @@ I frammenti di contenuto e i frammenti di esperienza di Adobe Experience Manager
 </ul>
 </td>
 <td><ul>
-<li>Riutilizzabile, composito di uno o più componenti AEM che definiscono contenuto e presentazione e costituiscono un'esperienza <strong>1} significativa da sola</strong></li>
+<li>Riutilizzabile, composito di uno o più componenti AEM che definiscono contenuto e presentazione e costituiscono un'esperienza <strong>1&rbrace; significativa da sola</strong></li>
 </ul>
 </td>
 </tr><tr><td><strong>Principi di base</strong></td>

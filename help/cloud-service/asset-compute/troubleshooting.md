@@ -127,7 +127,7 @@ Lo strumento di sviluppo Asset Compute potrebbe entrare in uno stato in cui veng
 
 ### Timeout del processo di lavoro durante il debug{#worker-times-out-while-debugging}
 
-+ __Errore__: nella console di debug viene segnalato che &quot;l&#39;azione verrà interrotta tra -XXX millisecondi&quot; oppure che l&#39;anteprima della copia trasformata ](./develop/development-tool.md) di [Asset Compute Development Tool si estende per un tempo indefinito oppure
++ __Errore__: nella console di debug viene segnalato che &quot;l&#39;azione verrà interrotta tra -XXX millisecondi&quot; oppure che l&#39;anteprima della copia trasformata [&#128279;](./develop/development-tool.md) di Asset Compute Development Tool si estende per un tempo indefinito oppure
 + __Causa__: il timeout del processo di lavoro definito in [manifest.yml](./develop/manifest.md) è stato superato durante il debug.
 + __Risoluzione__: aumenta temporaneamente il timeout del lavoratore in [manifest.yml](./develop/manifest.md) o accelera le attività di debug.
 

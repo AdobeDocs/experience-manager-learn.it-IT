@@ -134,7 +134,7 @@ Distribuisci il componente verticaltabs aggiornato nell’istanza cloud.
 Distribuisci il tema aggiornato utilizzando la pipeline front-end.
 Create una variante di stile per i componenti linguetta verticale come mostrato di seguito
 ![stile-variante](assets/verticaltab-style-variation.png)
-È stata creata una variante di stile denominata Marketing associata alla classe CSS _**cmp-verticaltabs—marketing**_.
+È stata creata una variante di stile denominata Marketing associata alla classe CSS _&#x200B;**cmp-verticaltabs—marketing**&#x200B;_.
 Crea un modulo adattivo con un componente scheda verticale. Associa il componente Scheda verticale alla variante di stile Marketing.
 Aggiungi un paio di schede alle tabulazioni verticali e denominale in modo che corrispondano alle immagini definite nella mappa delle icone, ad esempio home,family.
 ![home-icon](assets/tab-name.png)

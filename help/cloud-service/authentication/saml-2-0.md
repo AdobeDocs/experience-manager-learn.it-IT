@@ -191,7 +191,7 @@ Tutte le comunicazioni HTTP tra IDP e AEM Publish devono essere effettuate trami
 
 +++
 
-Sia la firma AuthnRequest che la crittografia delle asserzioni SAML sono facoltative, ma entrambe sono abilitate, utilizzando la proprietà di configurazione OSGi `useEncryption`](#saml-20-authenticationsaml-2-0-authentication) del gestore di autenticazione [SAML 2.0, che indica che è possibile utilizzare entrambe o nessuna delle due.
+Sia la firma AuthnRequest che la crittografia delle asserzioni SAML sono facoltative, ma entrambe sono abilitate, utilizzando la proprietà di configurazione OSGi `useEncryption`[&#128279;](#saml-20-authenticationsaml-2-0-authentication) del gestore di autenticazione SAML 2.0, che indica che è possibile utilizzare entrambe o nessuna delle due.
 
 ![Archivio chiavi del servizio di autenticazione AEM](./assets/saml-2-0/authentication-service-key-store.png)
 
@@ -597,7 +597,7 @@ e fornendo parametri di query:
 
 | Nome parametro query | Valore parametro query |
 |----------------------|-----------------------|
-| `resource` | Qualsiasi percorso JCR, o percorso secondario, su cui è in ascolto il gestore di autenticazione SAML, come definito nella proprietà `path` ](#configure-saml-2-0-authentication-handler) del gestore di autenticazione OSGi [Adobe Granite SAML 2.0 Authentication Handler. |
+| `resource` | Qualsiasi percorso JCR, o percorso secondario, su cui è in ascolto il gestore di autenticazione SAML, come definito nella proprietà `path` [&#128279;](#configure-saml-2-0-authentication-handler) del gestore di autenticazione OSGi Adobe Granite SAML 2.0 Authentication Handler. |
 | `saml_request_path` | Percorso URL a cui deve essere indirizzato l’utente dopo l’autenticazione SAML riuscita. |
 
 Questo collegamento HTML, ad esempio, attiverà il flusso di accesso SAML e, in caso di esito positivo, porterà l&#39;utente a `/content/wknd/us/en/protected/page.html`. Questi parametri di query possono essere impostati a livello di programmazione in base alle esigenze.
@@ -618,7 +618,7 @@ e fornendo i dati del modulo:
 
 | Nome dati modulo | Valore dati modulo |
 |----------------------|-----------------------|
-| `resource` | Qualsiasi percorso JCR, o percorso secondario, su cui è in ascolto il gestore di autenticazione SAML, come definito nella proprietà `path` ](#configure-saml-2-0-authentication-handler) del gestore di autenticazione OSGi [Adobe Granite SAML 2.0 Authentication Handler. |
+| `resource` | Qualsiasi percorso JCR, o percorso secondario, su cui è in ascolto il gestore di autenticazione SAML, come definito nella proprietà `path` [&#128279;](#configure-saml-2-0-authentication-handler) del gestore di autenticazione OSGi Adobe Granite SAML 2.0 Authentication Handler. |
 | `saml_request_path` | Percorso URL a cui deve essere indirizzato l’utente dopo l’autenticazione SAML riuscita. |
 
 

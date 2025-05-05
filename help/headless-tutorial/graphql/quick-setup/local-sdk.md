@@ -55,7 +55,7 @@ Questa installazione utilizza [AEM as a Cloud Service SDK](https://experiencelea
    ```
 
 1. Specificare una password amministratore come `admin`. Qualsiasi password amministratore è accettabile, tuttavia si consiglia di utilizzare `admin` per lo sviluppo locale per ridurre la necessità di riconfigurare.
-1. Al termine dell&#39;installazione del servizio AEM, dovrebbe essere aperta una nuova finestra del browser all&#39;indirizzo [http://localhost:4502](Http://localhost:4502).
+1. Al termine dell&#39;installazione del servizio AEM, dovrebbe essere aperta una nuova finestra del browser all&#39;indirizzo [http://localhost:4502](http://localhost:4502).
 1. Accedi con il nome utente `admin` e la password selezionati durante l&#39;avvio iniziale di AEM (in genere `admin`).
 
 ## 2. Installare il contenuto di esempio {#install-sample-content}
@@ -154,7 +154,7 @@ Uno degli obiettivi di questo tutorial è mostrare come utilizzare i contenuti A
 
 Quando l’app React è in esecuzione, aggiorna il contenuto in AEM e osserva che la modifica si riflette nell’app.
 
-1. Passa a AEM [http://localhost:4502](Http://localhost:4502).
+1. Passa a AEM [http://localhost:4502](http://localhost:4502).
 1. Passa a **Assets** > **File** > **WKND Shared** > **Inglese** > **Avventure** > **[Bali Surf Camp](http://localhost:4502/assets.html/content/dam/wknd-shared/en/adventures/bali-surf-camp)**.
 
    ![Cartella campo di Bali](assets/setup/bali-surf-camp-folder.png)

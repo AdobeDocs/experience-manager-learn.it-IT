@@ -78,7 +78,7 @@ Questo caso di test afferma l&#39;input con parametri (`params.json`) per il fil
    }
    ```
 
-   Questi sono gli stessi valori di chiave passati nella definizione del profilo Asset Compute](../develop/development-tool.md) dello strumento di sviluppo [, meno la chiave `worker`.
+   Questi sono gli stessi valori di chiave passati nella definizione del profilo Asset Compute[&#128279;](../develop/development-tool.md) dello strumento di sviluppo , meno la chiave `worker`.
 
 1. Aggiungi il [file di rendering](./assets/test/success-parameterized/rendition.png) previsto a questo test case e denominalo `rendition.png`. Questo file rappresenta l&#39;output previsto del processo di lavoro per l&#39;input specificato `file.jpg`.
 1. Dalla riga di comando, eseguire i test della directory principale del progetto eseguendo `aio app test`

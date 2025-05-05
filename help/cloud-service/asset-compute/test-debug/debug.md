@@ -98,6 +98,7 @@ _Click-through del debug di un processo di lavoro Asset Compute tramite wskdebug
 1. Verificare che le [variabili di ambiente specifiche dell&#39;area di lavoro](../deploy/runtime.md) siano impostate tramite `AIO_runtime_namespace` e `AIO_runtime_auth`, in base all&#39;area di lavoro che richiede il debug.
 1. Dalla riga di comando, eseguire `aio app logs`
    + Se il traffico dell&#39;area di lavoro è intenso, espandere il numero di registri di attivazione tramite il flag `--limit`:
+
      `$ aio app logs --limit=25`
 1. I registri di attivazioni più recenti (fino a `--limit`) forniti vengono restituiti come output del comando per la revisione.
 

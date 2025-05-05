@@ -26,7 +26,7 @@ Scopri come impostare e utilizzare l’uscita flessibile della porta per support
 
 L’uscita di porta flessibile consente di collegare ad AEM as a Cloud Service regole specifiche e personalizzate per l’inoltro delle porte, consentendo di effettuare connessioni da AEM a servizi esterni.
 
-Un programma Cloud Manager può avere solo un tipo di infrastruttura di rete __singolo__. Prima di eseguire i seguenti comandi, assicurati che l&#39;uscita da porta flessibile sia il tipo di infrastruttura di rete ](./advanced-networking.md) più [appropriato per il tuo AEM as a Cloud Service.
+Un programma Cloud Manager può avere solo un tipo di infrastruttura di rete __singolo__. Prima di eseguire i seguenti comandi, assicurati che l&#39;uscita da porta flessibile sia il tipo di infrastruttura di rete [&#128279;](./advanced-networking.md) più appropriato per il tuo AEM as a Cloud Service.
 
 >[!MORELIKETHIS]
 >
@@ -38,7 +38,7 @@ Un programma Cloud Manager può avere solo un tipo di infrastruttura di rete __s
 Quando si imposta o si configura l’uscita di porta flessibile con le API di Cloud Manager, è necessario quanto segue:
 
 + Progetto Adobe Developer Console con API Cloud Manager abilitata e [autorizzazioni Proprietario business Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
-+ Accedi alle credenziali di autenticazione dell&#39;API Cloud Manager [](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
++ Accedi alle credenziali di autenticazione dell&#39;API Cloud Manager [&#128279;](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
    + ID organizzazione (ID organizzazione IMS)
    + ID client (alias chiave API)
    + Token di accesso (token Bearer)

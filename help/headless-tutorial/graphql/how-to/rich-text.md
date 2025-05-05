@@ -131,7 +131,7 @@ La variabile `$path` utilizzata nel filtro `_path` richiede il percorso completo
 
 Di seguito sono riportati diversi esempi di tipi di risposta di un campo con più righe denominato `main` che contiene un paragrafo: &quot;Questo è un paragrafo che include il contenuto **importante**&quot;. dove &quot;importante&quot; è contrassegnato come **bold**.
 
-Esempio +++HTML
++++Esempio HTML
 
 **Query persistente GraphQL:**
 

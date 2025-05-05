@@ -447,7 +447,7 @@ Creare un&#39;interfaccia Java™ pubblica per il nome del destinatario. `Byline
    import org.osgi.annotation.versioning.Version;
    ```
 
-Ogni volta che si apportano modifiche ai file di questo pacchetto, è necessario regolare semanticamente la versione del pacchetto [](https://semver.org/). In caso contrario, [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd) del progetto Maven rileva una versione del pacchetto non valida e interrompe la generazione. Fortunatamente, in caso di errore, il plug-in Maven segnala la versione del pacchetto Java™ non valida e la versione corretta. Aggiornare la dichiarazione `@Version("...")` nel pacchetto Java™ `package-info.java` violato alla versione consigliata dal plug-in per la correzione.
+Ogni volta che si apportano modifiche ai file di questo pacchetto, è necessario regolare semanticamente la versione del pacchetto [&#128279;](https://semver.org/). In caso contrario, [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd) del progetto Maven rileva una versione del pacchetto non valida e interrompe la generazione. Fortunatamente, in caso di errore, il plug-in Maven segnala la versione del pacchetto Java™ non valida e la versione corretta. Aggiornare la dichiarazione `@Version("...")` nel pacchetto Java™ `package-info.java` violato alla versione consigliata dal plug-in per la correzione.
 
 ### Implementazione in linea {#byline-implementation}
 
@@ -644,7 +644,7 @@ Usiamo l&#39;approccio **second**. Il primo approccio è probabilmente sufficien
    >
    >In un&#39;implementazione reale, l&#39;approccio &quot;Uno&quot;, che utilizza `@Self`, è da preferirsi in quanto è la soluzione più semplice ed elegante. In questo tutorial viene utilizzato il secondo approccio, in quanto richiede di esplorare più facet di modelli Sling che sono utili è componenti più complessi!
 
-   Poiché i modelli Sling sono Java™ POJO e non OSGi Services, non è possibile utilizzare le consuete annotazioni di iniezione OSGi `@Reference` **2}, ma i modelli Sling forniscono un&#39;annotazione speciale**[@OSGiService](https://sling.apache.org/documentation/bundles/models.html#injector-specific-annotations)**che offre funzionalità simili.**
+   Poiché i modelli Sling sono Java™ POJO e non OSGi Services, non è possibile utilizzare le consuete annotazioni di iniezione OSGi `@Reference` **2&rbrace;, ma i modelli Sling forniscono un&#39;annotazione speciale**&#x200B;[@OSGiService](https://sling.apache.org/documentation/bundles/models.html#injector-specific-annotations)**che offre funzionalità simili.**
 
 1. Aggiorna `BylineImpl.java` per includere l&#39;annotazione `OSGiService` per inserire `ModelFactory`:
 

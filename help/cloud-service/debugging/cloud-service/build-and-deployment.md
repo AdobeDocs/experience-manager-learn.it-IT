@@ -207,6 +207,7 @@ Per convalidare questo problema, la causa è il comportamento errato:
 1. Determinando che almeno un pacchetto di contenuti che fa parte della distribuzione, scrive in `/var`.
 1. Verifica che la coda di distribuzione primaria (in grassetto) sia bloccata in:
    + AEM Author > Strumenti > Implementazione > Distribuzione
+
      ![Coda di distribuzione bloccata](./assets/build-and-deployment/deploy-to__var--distribution.png)
 1. In caso di mancata distribuzione successiva, scarica i registri di Cloud Manager &quot;Deploy to&quot; utilizzando il pulsante Download Log (Scarica registro):
 

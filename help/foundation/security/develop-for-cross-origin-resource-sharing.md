@@ -31,7 +31,7 @@ In questo video:
 
 * **www.example.com** è mappato a localhost tramite `/etc/hosts`
 * **aem-publish.local** è mappato a localhost tramite `/etc/hosts`
-* SimpleHTTPServer (un wrapper per SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html) di [[!DNL Python]) sta distribuendo la pagina HTML tramite la porta 8000.
+* SimpleHTTPServer (un wrapper per SimpleHTTPServer[&#128279;](https://docs.python.org/2/library/simplehttpserver.html) di [!DNL Python]) sta distribuendo la pagina HTML tramite la porta 8000.
    * _Non più disponibile in Mac App Store. Usa simili come [Jeeves](https://apps.apple.com/us/app/jeeves-local-http-server/id980824182?mt=12)._
 * [!DNL AEM Dispatcher] è in esecuzione in [!DNL Apache HTTP Web Server] 2.4 e la richiesta di reverse-proxying a `aem-publish.local` in `localhost:4503` è in esecuzione.
 

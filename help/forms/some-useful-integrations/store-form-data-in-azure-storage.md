@@ -48,7 +48,7 @@ Assicurarsi di specificare le autorizzazioni appropriate e la data di fine appro
 
 ## Fornisci il token SAS Blob e l’URI di archiviazione
 
-Per rendere il codice più generico, le due proprietà possono essere configurate utilizzando la configurazione OSGi come mostrato di seguito. _**aemformstutorial**_ è il nome dell&#39;account di archiviazione, _**formsubmissions**_ è il contenitore in cui verranno archiviati i dati.
+Per rendere il codice più generico, le due proprietà possono essere configurate utilizzando la configurazione OSGi come mostrato di seguito. _&#x200B;**aemformstutorial**&#x200B;_ è il nome dell&#39;account di archiviazione, _&#x200B;**formsubmissions**&#x200B;_ è il contenitore in cui verranno archiviati i dati.
 Verificare che / sia presente alla fine dell&#39;URI di archiviazione e che il token SAS inizi con?
 ![configurazione osgi](./assets/azure-portal-osgi-configuration.png)
 

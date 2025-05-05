@@ -44,7 +44,7 @@ Anche se l’estensione dell’interfaccia utente di AEM viene visualizzata in s
 
 Le azioni Adobe I/O Runtime vengono richiamate principalmente da due posizioni in un’estensione dell’interfaccia utente di AEM:
 
-1. Gestore `onClick(..)` della registrazione dell&#39;estensione [](./extension-registration.md)
+1. Gestore `onClick(..)` della registrazione dell&#39;estensione [&#128279;](./extension-registration.md)
 1. All&#39;interno di un [modale](./modal.md)
 
 ### Dalla registrazione dell&#39;estensione

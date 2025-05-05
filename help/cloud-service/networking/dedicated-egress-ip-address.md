@@ -26,7 +26,7 @@ Scopri come impostare e utilizzare l’indirizzo IP in uscita dedicato, che cons
 
 L’indirizzo IP in uscita dedicato consente alle richieste di AEM as a Cloud Service di utilizzare un indirizzo IP dedicato, consentendo ai servizi esterni di filtrare le richieste in ingresso in base a tale indirizzo IP. Come [porte di uscita flessibili](./flexible-port-egress.md), l&#39;IP di uscita dedicato consente di uscire su porte non standard.
 
-Un programma Cloud Manager può avere solo un tipo di infrastruttura di rete __singolo__. Prima di eseguire i seguenti comandi, assicurati che l&#39;indirizzo IP in uscita dedicato sia il tipo di infrastruttura di rete ](./advanced-networking.md) più [appropriato per il tuo AEM as a Cloud Service.
+Un programma Cloud Manager può avere solo un tipo di infrastruttura di rete __singolo__. Prima di eseguire i seguenti comandi, assicurati che l&#39;indirizzo IP in uscita dedicato sia il tipo di infrastruttura di rete [&#128279;](./advanced-networking.md) più appropriato per il tuo AEM as a Cloud Service.
 
 >[!MORELIKETHIS]
 >

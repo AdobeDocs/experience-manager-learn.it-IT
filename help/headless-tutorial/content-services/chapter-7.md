@@ -27,7 +27,7 @@ L&#39;utilizzo di [Android](https://developer.android.com/) è in gran parte poc
 
 Android è utilizzato per i tutorial a causa della capacità di eseguire un emulatore Android su Windows, macOs e Linux, della sua popolarità e del fatto che può essere scritto come Java, un linguaggio ben compreso dagli sviluppatori AEM.
 
-*L&#39;app mobile Android del tutorial è&#x200B;**non**concepita per istruire su come creare app mobili Android o trasmettere le best practice per lo sviluppo Android, ma piuttosto per illustrare come AEM Content Services può essere utilizzato da un&#39;applicazione mobile.*
+*L&#39;app mobile Android del tutorial è&#x200B;**non**&#x200B;concepita per istruire su come creare app mobili Android o trasmettere le best practice per lo sviluppo Android, ma piuttosto per illustrare come AEM Content Services può essere utilizzato da un&#39;applicazione mobile.*
 
 ### Come AEM Content Services guida l&#39;esperienza dell&#39;app mobile
 
@@ -159,7 +159,7 @@ public class LogoViewBinder implements ViewBinder {
 
 La prima riga di `bind(...)` passa alla risposta JSON tramite le chiavi **:items → root → :items** che rappresenta il contenitore di layout AEM a cui sono stati aggiunti i componenti.
 
-Da qui viene eseguito un controllo per una chiave denominata **image**, che rappresenta il componente Immagine (di nuovo, è importante che il nome del nodo → la chiave JSON siano stabili). Se questo oggetto esiste, viene letto e mappato al POJO ](#image-pojo) dell&#39;immagine personalizzata [tramite la libreria Jackson `ObjectMapper`. Il POJO Immagine viene illustrato di seguito.
+Da qui viene eseguito un controllo per una chiave denominata **image**, che rappresenta il componente Immagine (di nuovo, è importante che il nome del nodo → la chiave JSON siano stabili). Se questo oggetto esiste, viene letto e mappato al POJO [&#128279;](#image-pojo) dell&#39;immagine personalizzata tramite la libreria Jackson `ObjectMapper`. Il POJO Immagine viene illustrato di seguito.
 
 Infine, il logo `src` viene caricato in Android ImageView utilizzando la libreria helper [!DNL Glide].
 

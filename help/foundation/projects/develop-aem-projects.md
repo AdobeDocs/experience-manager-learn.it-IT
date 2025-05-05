@@ -69,7 +69,7 @@ Il nodo principale del modello di progetto è di tipo **cq:Template**. In questo
 
 ### Gadget {#gadgets}
 
-Su questo nodo non sono presenti proprietà aggiuntive, ma i figli del nodo gadget controllano quali tessere di progetto popolano il dashboard del progetto quando viene creato un nuovo progetto. [I riquadri del progetto](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) (noti anche come gadget o pod) sono schede semplici che popolano l&#39;area di lavoro di un progetto. Un elenco completo delle tessere ootb è disponibile in: **/libs/cq/gui/components/projects/admin/pod. **I proprietari dei progetti possono sempre aggiungere/rimuovere tessere dopo la creazione di un progetto.
+Su questo nodo non sono presenti proprietà aggiuntive, ma i figli del nodo gadget controllano quali tessere di progetto popolano il dashboard del progetto quando viene creato un nuovo progetto. [I riquadri del progetto](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) (noti anche come gadget o pod) sono schede semplici che popolano l&#39;area di lavoro di un progetto. Un elenco completo delle tessere ootb è disponibile in: **/libs/cq/gui/components/projects/admin/pod. &#x200B;** I proprietari dei progetti possono sempre aggiungere/rimuovere tessere dopo la creazione di un progetto.
 
 ### Ruoli {#roles}
 
@@ -77,7 +77,7 @@ Ci sono tre [Ruoli predefiniti](https://experienceleague.adobe.com/en/docs/exper
 
 ### Flussi di lavoro {#workflows}
 
-Uno dei motivi più interessanti per la creazione di un modello di progetto personalizzato è la possibilità di configurare i flussi di lavoro disponibili per l’utilizzo con il progetto. che possono generare flussi di lavoro integrati o personalizzati. Sotto il nodo **workflow** deve esserci un nodo **models** (anche `nt:unstructured`) e i nodi figlio sotto specificano i modelli di flusso di lavoro disponibili. La proprietà **modelId **punta al modello di flusso di lavoro in /etc/workflow e la proprietà **wizard** punta alla finestra di dialogo utilizzata all&#39;avvio del flusso di lavoro. Un vantaggio significativo di Projects è la possibilità di aggiungere una finestra di dialogo personalizzata (procedura guidata) per acquisire metadati specifici dell’azienda all’inizio del flusso di lavoro, che può stimolare ulteriori azioni all’interno del flusso di lavoro.
+Uno dei motivi più interessanti per la creazione di un modello di progetto personalizzato è la possibilità di configurare i flussi di lavoro disponibili per l’utilizzo con il progetto. che possono generare flussi di lavoro integrati o personalizzati. Sotto il nodo **workflow** deve esserci un nodo **models** (anche `nt:unstructured`) e i nodi figlio sotto specificano i modelli di flusso di lavoro disponibili. La proprietà **modelId &#x200B;** punta al modello di flusso di lavoro in /etc/workflow e la proprietà **wizard** punta alla finestra di dialogo utilizzata all&#39;avvio del flusso di lavoro. Un vantaggio significativo di Projects è la possibilità di aggiungere una finestra di dialogo personalizzata (procedura guidata) per acquisire metadati specifici dell’azienda all’inizio del flusso di lavoro, che può stimolare ulteriori azioni all’interno del flusso di lavoro.
 
 ```shell
 <projects-template-root> (cq:Template)
@@ -290,7 +290,7 @@ Il primo passaggio consiste nel creare un&#39;attività per completare la modifi
 
 Una volta completata la prima attività, l’assegnatario disporrà di tre opzioni per l’instradamento del flusso di lavoro:
 
-**Normale **: il ciclo normale crea un&#39;attività assegnata al gruppo Approvatore del progetto da esaminare e approvare. La priorità dell&#39;attività è Normale e la data di scadenza è di cinque giorni dalla data di creazione.
+**Normale &#x200B;**: il ciclo normale crea un&#39;attività assegnata al gruppo Approvatore del progetto da esaminare e approvare. La priorità dell&#39;attività è Normale e la data di scadenza è di cinque giorni dalla data di creazione.
 
 **Rush** - Il routing di fretta crea anche un&#39;attività assegnata al gruppo di approvatori del progetto. La priorità dell&#39;attività è Alta e la data di scadenza è di un solo giorno.
 
@@ -391,7 +391,7 @@ Posizione del modello di flusso di lavoro in 6.4+
       Pre-Create Task Script = "/apps/aem-guides/projects/scripts/start-task-config.ecma"
    ```
 
-1. Nel passaggio precedente si faceva riferimento a uno script di pre-creazione attività. Ora verrà creato lo script in cui l&#39;assegnatario dell&#39;attività verrà impostato in base al valore di un valore di metadati del flusso di lavoro &quot;**assegnatario**&quot;. Il valore **&quot;assegnatario&quot;** viene impostato all&#39;avvio del flusso di lavoro. Leggeremo inoltre i metadati del flusso di lavoro per scegliere in modo dinamico la priorità dell&#39;attività leggendo il valore &quot;**taskPriority&quot;** dei metadati del flusso di lavoro e il **&quot;taskDueDate&quot; **per impostare in modo dinamico la scadenza della prima attività.
+1. Nel passaggio precedente si faceva riferimento a uno script di pre-creazione attività. Ora verrà creato lo script in cui l&#39;assegnatario dell&#39;attività verrà impostato in base al valore di un valore di metadati del flusso di lavoro &quot;**assegnatario**&quot;. Il valore **&quot;assegnatario&quot;** viene impostato all&#39;avvio del flusso di lavoro. Leggeremo inoltre i metadati del flusso di lavoro per scegliere in modo dinamico la priorità dell&#39;attività leggendo il valore &quot;**taskPriority&quot;** dei metadati del flusso di lavoro e il **&quot;taskDueDate&quot; &#x200B;** per impostare in modo dinamico la scadenza della prima attività.
 
    Per motivi organizzativi, è stata creata una cartella sotto la cartella dell&#39;app che contiene tutti gli script relativi al progetto: **/apps/aem-guides/projects-tasks/projects/scripts**. Creare un file nella cartella **&quot;start-task-config.ecma&quot;**. &#42;Verificare che il percorso del file start-task-config.ecma corrisponda al percorso impostato nella scheda Impostazioni avanzate al passaggio 4.
 
@@ -482,7 +482,7 @@ Posizione del modello di flusso di lavoro in 6.4+
 
 Nelle sezioni precedenti di questo tutorial è stato creato un modello di progetto con un ruolo Approvatori. Ogni volta che viene creato un nuovo progetto da questo modello, viene creato un gruppo specifico per il progetto per il ruolo Approvatori. Proprio come un Passaggio Partecipante, un&#39;attività può essere assegnata solo a un Utente o a un Gruppo. Questa attività deve essere assegnata al gruppo di progetti che corrisponde al gruppo di approvatori. Tutti i flussi di lavoro avviati all’interno di un progetto avranno metadati che mappano i Ruoli del progetto al gruppo specifico del progetto.
 
-Copiare e incollare il codice seguente nell&#39;area di testo **Script** della scheda **Impostazioni avanzate **. Questo codice legge i metadati del flusso di lavoro e assegna l’attività al gruppo Approvatori del progetto. Se non è possibile trovare il valore del gruppo approvatori, verrà eseguito il fallback assegnando l&#39;attività al gruppo Administrators.
+Copiare e incollare il codice seguente nell&#39;area di testo **Script** della scheda **Impostazioni avanzate &#x200B;**. Questo codice legge i metadati del flusso di lavoro e assegna l’attività al gruppo Approvatori del progetto. Se non è possibile trovare il valore del gruppo approvatori, verrà eseguito il fallback assegnando l&#39;attività al gruppo Administrators.
 
 ```
 var projectApproverGrp = workflowData.getMetaDataMap().get("project.group.approvers","administrators");
@@ -522,7 +522,7 @@ task.setCurrentAssignee(projectApproverGrp);
    task.setCurrentAssignee(projectApproverGrp);
    ```
 
-1. Trascina + rilascia un componente** nessuna operazione** all’estrema destra del ramo (Ramo 3). Il componente Nessuna operazione non esegue alcuna azione e avanza immediatamente, rappresentando il desiderio dell’editor originale di ignorare il passaggio di approvazione. Tecnicamente potremmo lasciare questo ramo senza alcun passaggio del flusso di lavoro, ma come best practice aggiungeremo un passaggio Nessuna operazione. Questo chiarisce agli altri sviluppatori qual è lo scopo del ramo 3.
+1. Trascina + rilascia un componente **&#x200B; nessuna operazione** all’estrema destra del ramo (Ramo 3). Il componente Nessuna operazione non esegue alcuna azione e avanza immediatamente, rappresentando il desiderio dell’editor originale di ignorare il passaggio di approvazione. Tecnicamente potremmo lasciare questo ramo senza alcun passaggio del flusso di lavoro, ma come best practice aggiungeremo un passaggio Nessuna operazione. Questo chiarisce agli altri sviluppatori qual è lo scopo del ramo 3.
 
    Fai doppio clic sul passaggio del flusso di lavoro e configura il Titolo e la Descrizione:
 

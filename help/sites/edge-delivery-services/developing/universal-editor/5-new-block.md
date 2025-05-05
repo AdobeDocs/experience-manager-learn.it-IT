@@ -95,13 +95,13 @@ Il modello di blocco è una parte critica della configurazione del blocco, in qu
 
 2. Come vengono riprodotti i valori del campo in Edge Delivery Services HTML.
 
-Ai modelli viene assegnato un `id` che corrisponde alla definizione del blocco [](#block-definition) e include un array `fields` per specificare i campi modificabili.
+Ai modelli viene assegnato un `id` che corrisponde alla definizione del blocco [&#128279;](#block-definition) e include un array `fields` per specificare i campi modificabili.
 
 Ogni campo nell&#39;array `fields` ha un oggetto JSON che include le seguenti proprietà obbligatorie:
 
 | Proprietà JSON | Descrizione |
 |---------------|-----------------------------------------------------------------------------------------------------------------------|
-| `component` | Il tipo di campo [](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#component-types), ad esempio `text`, `reference` o `aem-content`. |
+| `component` | Il tipo di campo [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#component-types), ad esempio `text`, `reference` o `aem-content`. |
 | `name` | Nome del campo, con mapping alla proprietà JCR in cui il valore viene memorizzato in AEM. |
 | `label` | Etichetta visualizzata agli autori nell&#39;editor universale. |
 
@@ -357,7 +357,7 @@ Di seguito è riportato un esempio di JSON per la definizione del blocco:
 In questo esempio:
 
 - Il blocco è denominato &quot;Teaser&quot; e utilizza il modello `teaser` che determina i campi disponibili per la modifica nell&#39;editor universale.
-- Il blocco include il contenuto predefinito per il campo `textContent_text`, che è un&#39;area Rich Text per il titolo e il corpo del testo, e `textContent_cta` e `textContent_ctaText` per il collegamento e l&#39;etichetta CTA (invito all&#39;azione). I nomi dei campi del modello contenenti il contenuto iniziale corrispondono ai nomi dei campi definiti nella matrice dei campi del modello di contenuto [](#block-model);
+- Il blocco include il contenuto predefinito per il campo `textContent_text`, che è un&#39;area Rich Text per il titolo e il corpo del testo, e `textContent_cta` e `textContent_ctaText` per il collegamento e l&#39;etichetta CTA (invito all&#39;azione). I nomi dei campi del modello contenenti il contenuto iniziale corrispondono ai nomi dei campi definiti nella matrice dei campi del modello di contenuto [&#128279;](#block-model);
 
 Questa struttura garantisce che il blocco sia configurato nell’Editor universale con i campi, il modello di contenuto e il tipo di risorsa appropriati per il rendering.
 

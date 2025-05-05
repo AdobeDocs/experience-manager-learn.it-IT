@@ -59,7 +59,7 @@ Quando una risorsa in AEM viene eliminata, il riferimento al record dell’archi
 
 Minimizzare il numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione.
 
-#### [Manutenzione del registro di controllo](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-audit-log.html
+#### [Manutenzione del registro di controllo] (https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-audit-log.html
 
 Gli eventi AEM idonei per la registrazione di audit generano molti dati archiviati. Questi dati possono crescere rapidamente nel tempo a causa di repliche, caricamenti di risorse e altre attività del sistema.
 

@@ -189,7 +189,7 @@ Quindi crea un elemento dati per acquisire l’ID componente e il titolo su cui 
 
    >[!NOTE]
    >
-   > Ricorda che l&#39;oggetto `event` è reso disponibile e con ambito in base all&#39;evento che ha attivato la **regola** nella proprietà tag. Il valore di un elemento dati non viene impostato finché all&#39;elemento dati non viene fatto riferimento ** in una regola. Pertanto, è sicuro utilizzare questo elemento dati all&#39;interno di una regola come la regola **Pagina caricata** creata nel passaggio precedente *ma* non sarebbe sicuro da utilizzare in altri contesti.
+   > Ricorda che l&#39;oggetto `event` è reso disponibile e con ambito in base all&#39;evento che ha attivato la **regola** nella proprietà tag. Il valore di un elemento dati non viene impostato finché all&#39;elemento dati non viene fatto riferimento **&#x200B; in una regola. Pertanto, è sicuro utilizzare questo elemento dati all&#39;interno di una regola come la regola &#x200B;** Pagina caricata** creata nel passaggio precedente *ma* non sarebbe sicuro da utilizzare in altri contesti.
 
 
 ### Titolo componente

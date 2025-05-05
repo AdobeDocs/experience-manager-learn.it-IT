@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Aggiungi tag indice BLOB
 
-Con l’aumento delle dimensioni dei set di dati, può essere difficile trovare un oggetto specifico in un mare di dati. I tag di indice BLOB forniscono funzionalità di gestione e individuazione dei dati utilizzando gli attributi dei tag di indice chiave-valore. È possibile categorizzare e trovare oggetti all&#39;interno di un singolo contenitore o in tutti i contenitori nell&#39;account di archiviazione. Ad esempio, tag indice BLOB _**CustomerType=Platinum**_, dove Platinum è il valore del campo CustomerType.
+Con l’aumento delle dimensioni dei set di dati, può essere difficile trovare un oggetto specifico in un mare di dati. I tag di indice BLOB forniscono funzionalità di gestione e individuazione dei dati utilizzando gli attributi dei tag di indice chiave-valore. È possibile categorizzare e trovare oggetti all&#39;interno di un singolo contenitore o in tutti i contenitori nell&#39;account di archiviazione. Ad esempio, tag indice BLOB _&#x200B;**CustomerType=Platinum**&#x200B;_, dove Platinum è il valore del campo CustomerType.
 
 ![tag-indice](assets/blob-with-index-tags1.png)
 Il codice seguente crea la stringa dei tag dei dati dell&#39;indice BLOB con i valori corrispondenti dai dati inviati

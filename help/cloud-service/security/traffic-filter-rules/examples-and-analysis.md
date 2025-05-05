@@ -163,7 +163,7 @@ Tuttavia, questa volta dovresti visualizzare le **richieste bloccate** e i valor
 
 Impediamo **attacchi DoS** bloccando le richieste provenienti da un indirizzo IP che effettua 100 richieste al secondo, causandone il blocco per 5 minuti.
 
-- Aggiungi la seguente regola ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#ratelimit-structure) del filtro del traffico del limite di frequenza [ nel file `/config/cdn.yaml` del progetto WKND.
+- Aggiungi la seguente regola [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#ratelimit-structure) del filtro del traffico del limite di frequenza  nel file `/config/cdn.yaml` del progetto WKND.
 
 ```yaml
 kind: CDN

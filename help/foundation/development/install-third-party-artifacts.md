@@ -35,7 +35,7 @@ In genere si installa il bundle di terze parti, pacchetto che *è disponibile* n
 
 Ad esempio:
 
-- [AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components) **bundle** è stato aggiunto come dipendenza nel file `pom.xml` ](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) del progetto [WKND. In questo caso, l&#39;ambito `provided` viene utilizzato poiché il bundle dei Componenti core WCM AEM viene fornito dal runtime AEM. Se il bundle non viene fornito dal runtime di AEM, viene utilizzato l&#39;ambito `compile` che è l&#39;ambito predefinito.
+- [AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components) **bundle** è stato aggiunto come dipendenza nel file `pom.xml` [&#128279;](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753) del progetto WKND. In questo caso, l&#39;ambito `provided` viene utilizzato poiché il bundle dei Componenti core WCM AEM viene fornito dal runtime AEM. Se il bundle non viene fornito dal runtime di AEM, viene utilizzato l&#39;ambito `compile` che è l&#39;ambito predefinito.
 
 - [Pacchetto **pacchetto** condiviso WKND](https://github.com/adobe/aem-guides-wknd-shared) aggiunto come dipendenza nel file `pom.xml` del progetto [WKND](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773).
 

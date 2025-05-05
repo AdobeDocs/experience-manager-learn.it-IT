@@ -22,6 +22,6 @@ In questi video vengono descritti alcuni miglioramenti introdotti in AEM nella f
 
 ## Configurazione avanzata di predicati di ricerca con più valori e tag {#multi-value-tag-predicates}
 
-Il predicato di ricerca multivalore **** è disponibile per una semplice corrispondenza del testo nei risultati di ricerca. Sono stati apportati diversi miglioramenti al predicato Tag per filtrare in modo più efficiente i risultati della ricerca di risorse.
+Il predicato di ricerca multivalore **&#x200B;**&#x200B;è disponibile per una semplice corrispondenza del testo nei risultati di ricerca. Sono stati apportati diversi miglioramenti al predicato Tag per filtrare in modo più efficiente i risultati della ricerca di risorse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16457?quality=12&learn=on)

@@ -88,7 +88,7 @@ Il servizio di authoring locale di AEM offre agli sviluppatori un’esperienza l
       + Specificare la password amministratore come `admin`. Qualsiasi password amministratore è accettabile, tuttavia si consiglia di utilizzare l’impostazione predefinita per lo sviluppo locale per ridurre la necessità di riconfigurare.
 
    *impossibile* avviare AEM as Cloud Service Quickstart Jar [facendo doppio clic](#troubleshooting-double-click).
-1. Accedi al servizio AEM Author locale all&#39;indirizzo [http://localhost:4502](Http://localhost:4502) in un browser Web
+1. Accedi al servizio AEM Author locale all&#39;indirizzo [http://localhost:4502](http://localhost:4502) in un browser Web
 
 >[!BEGINTABS]
 

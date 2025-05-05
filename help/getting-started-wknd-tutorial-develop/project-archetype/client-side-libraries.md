@@ -201,7 +201,7 @@ L’Archetipo progetto AEM imposta automaticamente questa integrazione. Quindi, 
    $ npm run watch
    ```
 
-1. In questo modo vengono compilati i file di origine dal modulo `ui.frontend` e le modifiche vengono sincronizzate con AEM in [http://localhost:4502](Http://localhost:4502)
+1. In questo modo vengono compilati i file di origine dal modulo `ui.frontend` e le modifiche vengono sincronizzate con AEM in [http://localhost:4502](http://localhost:4502)
 
    ```shell
    + jcr_root/apps/wknd/clientlibs/clientlib-site/js/site.js

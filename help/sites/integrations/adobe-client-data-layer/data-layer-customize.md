@@ -47,7 +47,7 @@ Per completare questa esercitazione è necessario un **ambiente di sviluppo loca
 
 Questa esercitazione estende il componente Byline nel sito di riferimento WKND. Clona e installa la base di codice WKND nell’ambiente locale.
 
-1. Avvia un&#39;istanza Quickstart **author** locale di AEM in esecuzione su [http://localhost:4502](Http://localhost:4502).
+1. Avvia un&#39;istanza Quickstart **author** locale di AEM in esecuzione su [http://localhost:4502](http://localhost:4502).
 1. Apri una finestra del terminale e clona la base di codice WKND utilizzando Git:
 
    ```shell

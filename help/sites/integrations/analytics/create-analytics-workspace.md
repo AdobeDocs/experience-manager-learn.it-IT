@@ -155,9 +155,11 @@ Quindi, creare una tabella per creare una rappresentazione visiva del modo in cu
 1. Suddividiamo la pagina in base al tipo di modello. Seleziona la metrica del modello di pagina dai componenti, quindi trascina la metrica Modello pagina nella dimensione Nome pagina. Ora puoi visualizzare il nome della pagina suddiviso per il relativo tipo di modello.
 
    * **Prima**
+
      ![eVar5](assets/create-analytics-workspace/evar5.png)
 
    * **Dopo**
+
      ![Metriche eVar5](assets/create-analytics-workspace/evar5-metrics.png)
 
 1. Per capire come gli utenti interagiscono con i pulsanti di CTA quando si trovano nelle pagine del sito WKND, è necessario aggiungere la metrica ID pulsante (eVar8).
@@ -245,8 +247,10 @@ Quindi, scariciamo il modello di classificazione per la variabile Button Id (eVa
 1. Dal Finder dei componenti, cercare **Pulsanti CTA WKND** e trascinare la dimensione **Pulsanti CTA WKND (ID pulsante)** nella metrica ID pulsante e sostituirla.
 
    * **Prima**
+
      ![Pulsante Workspace Prima](assets/create-analytics-workspace/wknd-button-before.png)
    * **Dopo**
+
      ![Pulsante Workspace dopo](assets/create-analytics-workspace/wknd-button-after.png)
 
 1. Puoi notare che la metrica Id pulsante che conteneva l’ID pulsante di un pulsante di invito all’azione (CTA) ora viene sostituita con un nome corrispondente fornito nel modello di classificazione.
