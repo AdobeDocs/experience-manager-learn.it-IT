@@ -22,7 +22,7 @@ ht-degree: 1%
 
 # Definire la regola
 
-Nella proprietà Tags sono state create 2 nuove [regole](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html) (**Errore di convalida campo e FormSubmit**).
+Nella proprietà Tags sono state create 2 nuove [regole](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html?lang=it) (**Errore di convalida campo e FormSubmit**).
 
 ![modulo adattivo](assets/rules.png)
 
@@ -54,7 +54,7 @@ Nella regola Form Submit, il valore dell&#39;elemento dati _&#x200B;**Applicants
 Adobe Analytics - Imposta variabili è configurato come segue.
 ![form-submit-rule-set-variables](assets/form-submit-set-variable.png)
 
-Quando sei pronto a testare il codice dei tag,[pubblica le modifiche apportate ai tag](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html) utilizzando il flusso di pubblicazione.
+Quando sei pronto a testare il codice dei tag,[pubblica le modifiche apportate ai tag](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html?lang=it) utilizzando il flusso di pubblicazione.
 
 ## Passaggi successivi
 

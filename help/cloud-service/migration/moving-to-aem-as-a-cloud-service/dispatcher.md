@@ -28,7 +28,7 @@ Scopri AEM Dispatcher per AEM as a Cloud Service, concentrandoti sulle modifiche
 
 ![Dispatcher Converter](./assets/dispatcher-converter-diagram.png)
 
-Come parte del refactoring della base di codice, utilizza [AEM Dispatcher Converter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html) per eseguire il refactoring delle configurazioni esistenti di Dispatcher on-premise o Adobe Managed Services alla configurazione di Dispatcher compatibile con AEM as a Cloud Service.
+Come parte del refactoring della base di codice, utilizza [AEM Dispatcher Converter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/dispatcher-transformation-utility-tools.html?lang=it) per eseguire il refactoring delle configurazioni esistenti di Dispatcher on-premise o Adobe Managed Services alla configurazione di Dispatcher compatibile con AEM as a Cloud Service.
 
 ## Attività chiave
 

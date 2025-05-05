@@ -39,13 +39,13 @@ Il team di marketing WKND è interessato a sapere quali pulsanti `Call to Action
 
 Questo tutorial è una continuazione di [Raccogli dati di pagina con Adobe Analytics](./collect-data-analytics.md) e presuppone che tu abbia:
 
-* Una proprietà **Tag** con l&#39;estensione [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html) abilitata
-* **Adobe Analytics** ID suite di rapporti test/dev e server di tracciamento. Consulta la seguente documentazione per [creare una suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html).
-* Estensione del browser [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) configurata con la proprietà tag caricata nel [sito WKND](https://wknd.site/us/en.html) o in un sito AEM con Adobe Data Layer abilitato.
+* Una proprietà **Tag** con l&#39;estensione [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=it) abilitata
+* **Adobe Analytics** ID suite di rapporti test/dev e server di tracciamento. Consulta la seguente documentazione per [creare una suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html?lang=it).
+* Estensione del browser [Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=it) configurata con la proprietà tag caricata nel [sito WKND](https://wknd.site/us/en.html) o in un sito AEM con Adobe Data Layer abilitato.
 
 ## Controllare lo schema Button e Teaser
 
-Prima di creare regole nella proprietà tag, è utile rivedere lo schema [per Button e Teaser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item) e analizzarli nell&#39;implementazione del livello dati.
+Prima di creare regole nella proprietà tag, è utile rivedere lo schema [per Button e Teaser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it#item) e analizzarli nell&#39;implementazione del livello dati.
 
 1. Passa a [Home page WKND](https://wknd.site/us/en.html)
 1. Apri gli strumenti per sviluppatori del browser e passa alla **console**. Esegui il comando seguente:
@@ -81,7 +81,7 @@ Prima di creare regole nella proprietà tag, è utile rivedere lo schema [per Bu
        xdm:linkURL: "/content/wknd/us/en/magazine/san-diego-surf.html"
    ```
 
-   I dettagli dei dati di cui sopra si basano sullo schema [Componente/Contenitore](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item). La nuova regola di tag utilizza questo schema.
+   I dettagli dei dati di cui sopra si basano sullo schema [Componente/Contenitore](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it#item). La nuova regola di tag utilizza questo schema.
 
 ## Creare una regola su cui è stato fatto clic in CTA
 
@@ -147,11 +147,11 @@ Adobe Client Data Layer è un livello dati basato su **evento**. Ogni volta che 
 
    L&#39;oggetto `event` è passato dal metodo `trigger()` chiamato nell&#39;evento personalizzato. L&#39;oggetto `component` è lo stato corrente del componente derivato dal metodo `getState()` del livello dati ed è l&#39;elemento che ha attivato il clic.
 
-1. Salva le modifiche ed esegui una [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) nella proprietà tag per promuovere il codice nell&#39;[ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=it) utilizzato nel tuo sito AEM.
+1. Salva le modifiche ed esegui una [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html?lang=it) nella proprietà tag per promuovere il codice nell&#39;[ambiente](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=it) utilizzato nel tuo sito AEM.
 
    >[!NOTE]
    >
-   > Può essere utile utilizzare [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) per passare il codice da incorporare a un ambiente **Development**.
+   > Può essere utile utilizzare [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=it) per passare il codice da incorporare a un ambiente **Development**.
 
 1. Passa al [sito WKND](https://wknd.site/us/en.html) e apri gli strumenti per sviluppatori per visualizzare la console. Selezionare inoltre la casella di controllo **Mantieni registro**.
 

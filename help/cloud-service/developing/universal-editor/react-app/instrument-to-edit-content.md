@@ -178,7 +178,7 @@ export default App;
 
 ## Strumentazione dei componenti React
 
-Per modificare il contenuto dell&#39;app WKND Teams React, ad esempio _titolo team e descrizione team_, è necessario dotare di strumenti i componenti React. La strumentazione comporta l&#39;aggiunta di attributi di dati rilevanti (`data-aue-*`) agli elementi di HTML che si desidera rendere modificabili utilizzando l&#39;Editor universale. Per ulteriori informazioni sugli attributi dei dati, vedere [Attributi e tipi](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types).
+Per modificare il contenuto dell&#39;app WKND Teams React, ad esempio _titolo team e descrizione team_, è necessario dotare di strumenti i componenti React. La strumentazione comporta l&#39;aggiunta di attributi di dati rilevanti (`data-aue-*`) agli elementi di HTML che si desidera rendere modificabili utilizzando l&#39;Editor universale. Per ulteriori informazioni sugli attributi dei dati, vedere [Attributi e tipi](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types).
 
 ### Definire gli elementi modificabili
 

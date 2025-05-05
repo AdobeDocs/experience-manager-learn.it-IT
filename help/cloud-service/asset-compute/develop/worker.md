@@ -43,7 +43,7 @@ I processi di lavoro Asset Compute implementano il contratto API del processo di
 1. Il processo di lavoro Asset Compute salva i dati binari della nuova rappresentazione in `rendition.path`.
 1. I dati binari scritti in `rendition.path` vengono trasportati tramite Asset Compute SDK al servizio AEM Author ed esposti come __(4a)__ una rappresentazione di testo e __(4b)__ persistenti al nodo di metadati della risorsa.
 
-Il diagramma precedente illustra le preoccupazioni degli sviluppatori di Asset Compute e il flusso logico alla chiamata di Asset Compute worker. Per curiosità, sono disponibili [i dettagli interni dell&#39;esecuzione di Asset Compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html), tuttavia solo i contratti API pubblici di Asset Compute SDK possono dipendere da.
+Il diagramma precedente illustra le preoccupazioni degli sviluppatori di Asset Compute e il flusso logico alla chiamata di Asset Compute worker. Per curiosità, sono disponibili [i dettagli interni dell&#39;esecuzione di Asset Compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html?lang=it), tuttavia solo i contratti API pubblici di Asset Compute SDK possono dipendere da.
 
 ## Anatomia di un lavoratore
 

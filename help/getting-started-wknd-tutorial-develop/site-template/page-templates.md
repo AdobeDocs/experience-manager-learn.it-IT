@@ -62,7 +62,7 @@ Puoi utilizzare la miniatura seguente per identificare il modello (o caricarne u
 
 ## Aggiornare intestazione e piè di pagina con frammenti esperienza {#experience-fragments}
 
-Per la creazione di contenuto globale, ad esempio un&#39;intestazione o un piè di pagina, è in genere consigliabile utilizzare un [frammento di esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Frammenti di esperienza, consente agli utenti di combinare più componenti per creare un singolo componente di riferimento. I frammenti di esperienza hanno il vantaggio di supportare la gestione multisito e la [localizzazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
+Per la creazione di contenuto globale, ad esempio un&#39;intestazione o un piè di pagina, è in genere consigliabile utilizzare un [frammento di esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=it). Frammenti di esperienza, consente agli utenti di combinare più componenti per creare un singolo componente di riferimento. I frammenti di esperienza hanno il vantaggio di supportare la gestione multisito e la [localizzazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=it#localized-site-structure).
 
 Il modello Sito ha generato un&#39;intestazione e un piè di pagina. Quindi, aggiorna i Frammenti esperienza in modo che corrispondano ai modelli. Segui i passaggi descritti nel video seguente:
 

@@ -60,7 +60,7 @@ Distribuire gli aggiornamenti a un tema in un ambiente AEM utilizzando la pipeli
 
 Passaggi di alto livello per il video:
 
-1. Crea un nuovo archivio Git [ in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html)
+1. Crea un nuovo archivio Git [ in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/cloud-manager-repositories.html?lang=it)
 1. Aggiungi il progetto origini tema all’archivio Git Cloud Manager:
 
    ```shell
@@ -71,7 +71,7 @@ Passaggi di alto livello per il video:
    $ git remote add origin <CLOUD_MANAGER_GIT_REPOSITORY_URL>
    ```
 
-1. Configura una [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html) in Cloud Manager per distribuire il codice front-end.
+1. Configura una [pipeline front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=it) in Cloud Manager per distribuire il codice front-end.
 1. Esegui la pipeline front-end per distribuire gli aggiornamenti all’ambiente AEM di destinazione.
 
 ### Esempio di pronti contro termine

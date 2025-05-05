@@ -272,7 +272,7 @@ CSS per colorare il testo dello stile di layout **Hero** con il colore primario 
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Documentazione del sistema di stili](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html)
+* [Documentazione del sistema di stili](https://helpx.adobe.com/it/experience-manager/6-5/sites/authoring/using/style-system.html)
 * [Creazione di librerie client di AEM](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/clientlibs.html)
 * Sito Web della documentazione di [BEM (Block Element Modifier)](https://getbem.com/)
 * [Sito Web della documentazione di minore entità](https://lesscss.org/)

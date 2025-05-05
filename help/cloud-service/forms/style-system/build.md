@@ -49,4 +49,4 @@ Una volta creato correttamente il progetto tematico, puoi testare le modifiche.
 
 ## Effettua il push delle modifiche
 
-Se sei soddisfatto delle modifiche, puoi inviare le modifiche all&#39;istanza cloud utilizzando la [pipeline front-end](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline)
+Se sei soddisfatto delle modifiche, puoi inviare le modifiche all&#39;istanza cloud utilizzando la [pipeline front-end](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline)

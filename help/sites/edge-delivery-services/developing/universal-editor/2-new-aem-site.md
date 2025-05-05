@@ -25,12 +25,12 @@ Il sito AEM è il luogo in cui il contenuto del sito web viene memorizzato e cre
 
 ![Nuovo sito AEM per Edge Delivery Services e Universal Editor](./assets/2-new-aem-site/new-site.png)
 
-Segui i [passaggi dettagliati descritti nella documentazione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-aem-site) per creare un nuovo sito AEM.  Di seguito è riportato un elenco riepilogativo dei passaggi, inclusi i valori utilizzati in questa esercitazione.
+Segui i [passaggi dettagliati descritti nella documentazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-aem-site) per creare un nuovo sito AEM.  Di seguito è riportato un elenco riepilogativo dei passaggi, inclusi i valori utilizzati in questa esercitazione.
 1. **Crea un nuovo sito** in AEM Author. Questa esercitazione utilizza la seguente denominazione del sito:
    * Titolo sito: `WKND (Universal Editor)`
    * Nome sito: `aem-wknd-eds-ue`
 
-      * Il valore del nome del sito deve corrispondere al nome del percorso del sito [ aggiunto a `paths.json`](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/path-mapping).
+      * Il valore del nome del sito deve corrispondere al nome del percorso del sito [ aggiunto a `paths.json`](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/path-mapping).
 
 2. **Importa il modello più recente** da [Edge Delivery Services con il modello del sito di authoring AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 3. **Assegnare un nome al sito** in modo che corrisponda al nome dell&#39;archivio GitHub e impostare l&#39;URL GitHub come URL dell&#39;archivio.

@@ -60,6 +60,6 @@ In questo video vengono trattati i seguenti elementi delle proprietà della pagi
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Modifica della documentazione sulle proprietà della pagina](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html)
-* [Modifica della documentazione sul contenuto delle pagine](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guida rapida all’authoring delle pagine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
+* [Modifica della documentazione sulle proprietà della pagina](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html?lang=it)
+* [Modifica della documentazione sul contenuto delle pagine](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html?lang=it)
+* [Guida rapida all’authoring delle pagine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=it)

@@ -20,13 +20,13 @@ ht-degree: 2%
 
 Se hai già configurato l’ambiente di sviluppo, puoi tranquillamente saltare questa parte dell’esercitazione.
 
-[Crea progetto Maven](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started)
+[Crea progetto Maven](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started)
 
-[Installa IntelliJ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up) - È possibile saltare l&#39;aggiunta del modulo font per questa esercitazione.
+[Installa IntelliJ](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up) - È possibile saltare l&#39;aggiunta del modulo font per questa esercitazione.
 
-[Inizializza Git](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git)
+[Inizializza Git](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git)
 
-[Sincronizza IntelliJ con l&#39;istanza cloud locale di AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync)
+[Sincronizza IntelliJ con l&#39;istanza cloud locale di AEM Forms](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync)
 
 ## Passaggi successivi
 

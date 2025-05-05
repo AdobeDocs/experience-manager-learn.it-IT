@@ -39,15 +39,15 @@ Molti clienti eseguono i backup delle istantanee, che richiedono solo pochi minu
 
 ### Manutenzione ordinaria
 
-#### [manutenzione indice](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en)
+#### [manutenzione indice](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=it)
 
 Gli indici consentono di eseguire le query il più rapidamente possibile, liberando risorse per altre operazioni. Assicurati che gli indici siano in forma di punta! L’AEM annulla le query che eseguono invece di utilizzare un indice per evitare che una query non valida influisca sulle prestazioni complessive dell’AEM.
 
-#### [Compattazione TAR/Pulizia revisioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=en)
+#### [Compattazione TAR/Pulizia revisioni](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=it)
 
 Ogni aggiornamento del repository crea una nuova revisione del contenuto. Di conseguenza, con ogni aggiornamento aumenta la dimensione dell’archivio. Per evitare una crescita incontrollata dell&#39;archivio, è necessario pulire le vecchie revisioni per liberare le risorse su disco.
 
-#### [Pulizia binari Lucene](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-dashboard.html#automated-maintenance-tasks)
+#### [Pulizia binari Lucene](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-dashboard.html?lang=it#automated-maintenance-tasks)
 
 Elimina i file binari Lucene e riduci i requisiti di dimensione dell’archivio dati in esecuzione.
 
@@ -55,15 +55,15 @@ Elimina i file binari Lucene e riduci i requisiti di dimensione dell’archivio 
 
 Quando una risorsa in AEM viene eliminata, il riferimento al record dell’archivio dati sottostante può essere rimosso dalla gerarchia dei nodi, ma il record dell’archivio dati stesso rimane. Questo record dell’archivio dati senza riferimenti diventa &quot;spazzatura&quot; e non deve essere mantenuto. Nei casi in cui esistono numerose risorse senza riferimenti, è utile eliminarle, preservare lo spazio, ottimizzare il backup e le prestazioni di manutenzione del file system.
 
-#### [Eliminazione flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html)
+#### [Eliminazione flusso di lavoro](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=it)
 
 Minimizzare il numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione.
 
-#### [Manutenzione del registro di controllo] (https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-audit-log.html
+#### [Manutenzione del registro di controllo] (https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/operations-audit-log.html?lang=it
 
 Gli eventi AEM idonei per la registrazione di audit generano molti dati archiviati. Questi dati possono crescere rapidamente nel tempo a causa di repliche, caricamenti di risorse e altre attività del sistema.
 
-#### [Sicurezza](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en)
+#### [Sicurezza](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=it)
 
 Accertati che le best practice relative agli elenchi di controllo per la sicurezza siano seguite attentamente per garantire l’istanza più sicura dell’AEM.
 
@@ -75,19 +75,19 @@ Monitora lo spazio su disco per assicurarti di averne a sufficienza per l’arch
 
 Provare a non utilizzare componenti personalizzati. Utilizzare [componenti core](https://www.aemcomponents.dev/). L’obiettivo dovrebbe essere quello di utilizzare l’80-90% dei componenti core e i componenti personalizzati solo con moderazione. Questo spesso richiede un nuovo modo di esaminare i componenti su una pagina: è necessario rendersi conto che i componenti possono essere facilmente rinominati da uno sviluppatore front-end che utilizza CSS. Tieni presente che questi componenti core possono essere incorporati l’uno nell’altro per ottenere risultati piuttosto complessi. Diventa creativo!
 
-### [Sistemi di stili](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en)
+### [Sistemi di stili](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=it)
 
 I sistemi di stile consentono ai componenti core, e anche ai componenti personalizzati, di avere il loro aspetto e la sensazione di cambiamento a discrezione degli autori, per creare componenti completamente nuovi. Queste modifiche stilistiche in genere coinvolgono solo un designer front-end e un autore esperto (spesso denominato &quot;Super Author&quot;)
 
-### [Lanci](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/launches/overview.html?lang=en)
+### [Lanci](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/launches/overview.html?lang=it)
 
 I lanci consentono di completare il lavoro per una nuova promozione, vendita o rollout di siti web senza influire sulle pagine attualmente distribuite. Inoltre, possono essere programmati per andare in diretta automaticamente, senza partecipazione o supervisione, consentendo agli autori di fare il lavoro della settimana prossima (o del trimestre prossimo) oggi e non affrettarsi nello sviluppo della pagina il giorno prima che dovrebbe andare in diretta - è veramente il regalo del TEMPO!)
 
-### [Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
+### [Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html?lang=it)
 
 I frammenti di contenuto sono &quot;blocchi&quot; di informazioni personalizzabili che possono essere facilmente riutilizzati in tutto il sito. Se hai bisogno di una modifica, devi solo cambiare il blocco originale e l’aggiornamento viene visualizzato ovunque venga utilizzato, immediatamente!
 
-### [Frammenti esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en)
+### [Frammenti esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=it)
 
 Anche se sembrano quasi identici ai frammenti di contenuto, i frammenti di esperienza sono piccole parti visibili di una pagina. Questi possono essere riutilizzati ampiamente in tutto il sito e mantenuti in una posizione centrale all&#39;interno dell&#39;AEM per facilitare il compito di apportare modifiche potenzialmente globali in tutto il sito in pochi secondi, non in giorni o settimane.
 
@@ -95,7 +95,7 @@ Pensa a lungo e scopri cosa potrebbe essere riutilizzato. Un piè di pagina? Una
 
 ## Generale
 
-Rimani al passo con i cambiamenti AEM continuando ad imparare - non rimanere bloccati nel passato. Utilizza [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en) e [Adobe Digital Learning Services (ADLS)](https://learning.adobe.com/) per affinare le tue abilità.
+Rimani al passo con i cambiamenti AEM continuando ad imparare - non rimanere bloccati nel passato. Utilizza [Experience League](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=it) e [Adobe Digital Learning Services (ADLS)](https://learning.adobe.com/) per affinare le tue abilità.
 
 ## Conclusione
 

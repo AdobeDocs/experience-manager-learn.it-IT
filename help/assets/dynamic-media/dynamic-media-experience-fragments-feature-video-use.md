@@ -25,7 +25,7 @@ AEM Assets Dynamic Media integra i punti attivi delle risorse con i frammenti di
 
 >[!NOTE]
 >
->L&#39;utilizzo dei frammenti di esperienza AEM con gli hotspot AEM Assets Dynamic Media richiede l&#39;esecuzione di [AEM in modalità Dynamic Media](https://experienceleague.adobe.com/docs/).
+>L&#39;utilizzo dei frammenti di esperienza AEM con gli hotspot AEM Assets Dynamic Media richiede l&#39;esecuzione di [AEM in modalità Dynamic Media](https://experienceleague.adobe.com/docs/?lang=it).
 
 La variante del frammento di esperienza a comparsa mostrata nel video è disponibile come pacchetto AEM di seguito.
 

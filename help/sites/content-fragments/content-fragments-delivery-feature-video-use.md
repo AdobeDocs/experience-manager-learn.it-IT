@@ -42,7 +42,7 @@ Lo stile dei componenti dei frammenti di contenuto può essere impostato utilizz
 
 AEM Content Services semplifica la creazione di endpoint HTTP basati su pagina di AEM per il rendering del contenuto in formato JSON normalizzato.
 
-Il video precedente utilizza il [componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) per esporre singoli frammenti di contenuto. Il [componente Elenco frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html) è un nuovo componente che consente all&#39;autore di definire una query che popolerà dinamicamente la pagina con un elenco di frammenti di contenuto. Il componente Elenco frammenti di contenuto è da preferirsi quando è necessario esporre più frammenti di contenuto.
+Il video precedente utilizza il [componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) per esporre singoli frammenti di contenuto. Il [componente Elenco frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html?lang=it) è un nuovo componente che consente all&#39;autore di definire una query che popolerà dinamicamente la pagina con un elenco di frammenti di contenuto. Il componente Elenco frammenti di contenuto è da preferirsi quando è necessario esporre più frammenti di contenuto.
 
 *Esempio di payload JSON endpoint di Content Services:*\
 **[atleti.json](assets/athletes.json)**

@@ -56,7 +56,7 @@ I dettagli del team come titolo, descrizione e membri del team sono memorizzati 
 
 Il contenuto per l’app React viene fornito da AEM tramite le API GraphQL e l’interfaccia utente viene creata utilizzando due componenti React, `Teams` e `Person`.
 
-È disponibile un tutorial corrispondente per scoprire come creare l&#39;app React **WKND Teams**. L&#39;esercitazione [è disponibile qui](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview).
+È disponibile un tutorial corrispondente per scoprire come creare l&#39;app React **WKND Teams**. L&#39;esercitazione [è disponibile qui](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview).
 
 ## Passaggio successivo
 

@@ -21,9 +21,9 @@ Uno dei punti di forza principali del concetto di immagine principale di Dynamic
 
 Entro la fine di questa sezione dell’esercitazione saprai come:
 
-- Ritagliare le immagini in Dynamic Media Classic e salvarle come nuovi file master o come immagini virtuali. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html).
-- Salvate le immagini regolate virtuali e utilizzatele al posto delle risorse principali. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/adjusting-image.html).
-- Crea destinazioni di zoom sulle immagini per evidenziarle. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html).
+- Ritagliare le immagini in Dynamic Media Classic e salvarle come nuovi file master o come immagini virtuali. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html?lang=it).
+- Salvate le immagini regolate virtuali e utilizzatele al posto delle risorse principali. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/adjusting-image.html?lang=it).
+- Crea destinazioni di zoom sulle immagini per evidenziarle. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html?lang=it).
 
 ## Ritaglio
 
@@ -42,8 +42,8 @@ Dynamic Media Classic dispone di alcuni strumenti di modifica delle immagini con
 
 Puoi accedere allo strumento di ritaglio in Dynamic Media Classic dalla pagina Dettagli di una risorsa o facendo clic sul pulsante **Modifica**. È possibile utilizzare lo strumento per ritagliare in due modi:
 
-- Modalità di ritaglio predefinita in cui vengono trascinati i quadratini di ridimensionamento della finestra di ritaglio o i valori nella casella Dimensione. Scopri come [Ritagliare manualmente](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
-- Rifila. Usate questa opzione per rimuovere spazio vuoto aggiuntivo attorno all&#39;immagine calcolando il numero di pixel che non corrispondono all&#39;immagine. Scopri come [Ritagliare tramite Trimming](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
+- Modalità di ritaglio predefinita in cui vengono trascinati i quadratini di ridimensionamento della finestra di ritaglio o i valori nella casella Dimensione. Scopri come [Ritagliare manualmente](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html?lang=it#select-an-area-to-crop).
+- Rifila. Usate questa opzione per rimuovere spazio vuoto aggiuntivo attorno all&#39;immagine calcolando il numero di pixel che non corrispondono all&#39;immagine. Scopri come [Ritagliare tramite Trimming](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html?lang=it#crop-to-remove-white-space-around-an-image).
 
 ### _Ritaglio manuale_
 
@@ -134,7 +134,7 @@ Il processo è molto semplice: fai clic sulla funzione, assegna un nome descritt
 
 Un altro fattore nel decidere se utilizzare Zoom Target è la scelta del visualizzatore. Non tutti i tipi di visualizzatore possono visualizzare Destinazioni di zoom (ad esempio, il visualizzatore a comparsa non li supporta).
 
-Scopri come [creare destinazioni di zoom](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets).
+Scopri come [creare destinazioni di zoom](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html?lang=it#creating-and-editing-zoom-targets).
 
 ![immagine](assets/crop-adjusted-zoom-targets/zoom-targets.jpg)
 

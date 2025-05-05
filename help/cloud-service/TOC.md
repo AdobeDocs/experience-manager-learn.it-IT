@@ -38,7 +38,7 @@ ht-degree: 18%
    + [Servizi di authoring e pubblicazione](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Edge Delivery Services {#edge-delivery-services}
-   + [Plug-in AEM Assets Sidekick](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
+   + [Plug-in AEM Assets Sidekick](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html?lang=it){target=_blank}
 + Cloud Manager {#cloud-manager}
    + [Programmi](./cloud-manager/programs.md)
    + [Ambienti](./cloud-manager/environments.md)
@@ -46,7 +46,7 @@ ht-degree: 18%
    + [Pipeline CI/CD di produzione](./cloud-manager/cicd-production-pipeline.md)
    + [Pipeline CI/CD non di produzione](./cloud-manager/cicd-non-production-pipeline.md)
    + [Attività](./cloud-manager/activity.md)
-   + [Nomi dominio personalizzati](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names){target=_blank}
+   + [Nomi dominio personalizzati](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names){target=_blank}
    + [Ripristino contenuto](./cloud-manager/content-restore.md)
    + Operazioni di sviluppo{#devops}
       + [Distribuzione del codice](./cloud-manager/devops/deploy-code.md)
@@ -156,10 +156,10 @@ ht-degree: 18%
    + [Nome di dominio personalizzato](./content-delivery/custom-domain-names.md)
    + [Nome di dominio personalizzato con CDN gestito da Adobe](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)
    + [Nome di dominio personalizzato con CDN cliente](./content-delivery/custom-domain-names-with-customer-managed-cdn.md)
-   + [Memorizzazione in cache](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/overview){target=_blank}
+   + [Memorizzazione in cache](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/caching/overview){target=_blank}
    + [CDN Adobe - oltre la memorizzazione nella cache](./content-delivery/adobe-cdn-beyond-caching.md)
    + [Pagine di errore personalizzate](./content-delivery/custom-error-pages.md)
-   + [Reindirizzamenti URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html){target=_blank}
+   + [Reindirizzamenti URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html?lang=it){target=_blank}
 + Memorizzazione in cache{#caching}
    + [Panoramica](./caching/overview.md)
    + [Servizio di pubblicazione AEM](./caching/publish.md)
@@ -238,7 +238,7 @@ ht-degree: 18%
       + [Strumento Migrazione dei flussi di lavoro delle risorse](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Navigazione in Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
       + [Utilizzo di Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
-+ [Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
++ [Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=it){target=_blank}
 + Moduli{#forms}
    + Sviluppo per Forms as a Cloud Service{#developing-for-cloud-service}
       + [1 - Guida introduttiva](./forms/developing-for-cloud-service/getting-started.md)
@@ -418,9 +418,9 @@ ht-degree: 18%
 + Tutorial con più passaggi{#multi-step-tutorials}
    + [Sviluppo AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it){target=_blank}
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it){target=_blank}
-   + [Editor SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html){target=_blank}
-   + [AEM Sites e Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html){target=_blank}
-   + [Autenticazione basata su token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html){target=_blank}
+   + [Editor SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html?lang=it){target=_blank}
+   + [AEM Sites e Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html?lang=it){target=_blank}
+   + [Autenticazione basata su token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=it){target=_blank}
 + Risorse di esperti {#expert-resources}
    + AEM Champions {#aem-champions}
       + [Playbook di onboarding Cloud Manager](./expert-resources/aem-champions/onboarding-playbook.md)

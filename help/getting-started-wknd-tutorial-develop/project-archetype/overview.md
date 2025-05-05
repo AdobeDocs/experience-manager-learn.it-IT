@@ -31,7 +31,7 @@ Il tutorial è progettato per funzionare con **AEM as a Cloud Service** ed è co
 
 * [Archetipo di progetto AEM Maven](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
 * [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html?lang=it)
 * [Modelli Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Modelli modificabili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=it)
 * [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=it)

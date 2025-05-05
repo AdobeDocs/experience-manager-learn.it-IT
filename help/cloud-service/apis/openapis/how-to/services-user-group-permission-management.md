@@ -90,7 +90,7 @@ Per aggiornare le autorizzazioni del gruppo di utenti dei servizi (ad esempio `A
 
 - Esegui il commit e invia le modifiche all’archivio.
 
-- Distribuisci le modifiche all&#39;istanza di AEM utilizzando la [pipeline full stack di Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline).
+- Distribuisci le modifiche all&#39;istanza di AEM utilizzando la [pipeline full stack di Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline).
 
 - Puoi anche verificare le autorizzazioni del gruppo di utenti utilizzando la visualizzazione **Autorizzazioni**. Passa a **Strumenti** > **Sicurezza** > **Autorizzazioni** nell&#39;istanza di AEM.
 

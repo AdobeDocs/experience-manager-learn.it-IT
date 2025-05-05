@@ -49,11 +49,11 @@ Utilizza l&#39;[editor Swagger](https://editor.swagger.io/) per creare il file S
 
 ## Creazione di Data Source
 
-Per integrare AEM/AEM Forms con applicazioni di terze parti, è necessario [l&#39;origine dati basata su REST utilizzando il file swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) nella configurazione dei servizi cloud. L’origine dati completata viene fornita come parte delle risorse di questo corso.
+Per integrare AEM/AEM Forms con applicazioni di terze parti, è necessario [l&#39;origine dati basata su REST utilizzando il file swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=it) nella configurazione dei servizi cloud. L’origine dati completata viene fornita come parte delle risorse di questo corso.
 
 ## Crea modello dati modulo
 
-L&#39;integrazione dei dati di AEM Forms fornisce un&#39;interfaccia utente intuitiva per la creazione e l&#39;utilizzo di [modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Un modello per dati modulo si basa su origini dati per lo scambio di dati.
+L&#39;integrazione dei dati di AEM Forms fornisce un&#39;interfaccia utente intuitiva per la creazione e l&#39;utilizzo di [modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=it). Un modello per dati modulo si basa su origini dati per lo scambio di dati.
 Il modello dati del modulo completato può essere [scaricato da qui](assets/sms-2fa-fdm.zip)
 
 ![fdm](assets/2FA-fdm.PNG)

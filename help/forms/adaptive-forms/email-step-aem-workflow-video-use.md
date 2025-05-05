@@ -43,7 +43,7 @@ Per eseguire l&#39;esempio sul sistema, eseguire le operazioni seguenti:
 1. [Distribuire il bundle Developingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
 1. [Scarica e installa il bundle setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)Questo bundle contiene il codice per la creazione delle proprietà dei metadati come parte del passaggio del flusso di lavoro.
-1. [Configura servizio di posta Day CQ](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html)
+1. [Configura servizio di posta Day CQ](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/notification.html)
 1. [Importa e installa in CRX le risorse associate a questo articolo utilizzando Gestione pacchetti](assets/emaildoraemformskt.zip)
 1. Avvia il [modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled). Compila i campi obbligatori e invia.
 1. Dovresti ricevere un’e-mail con DocumentOfRecord come allegato

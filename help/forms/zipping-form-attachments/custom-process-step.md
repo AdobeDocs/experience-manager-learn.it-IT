@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Passaggio processo personalizzato
 
-È stato implementato un passaggio di processo personalizzato per creare il file zip contenente gli allegati del modulo. Se non conosci la creazione di un bundle OSGi, [segui queste istruzioni](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en).
+È stato implementato un passaggio di processo personalizzato per creare il file zip contenente gli allegati del modulo. Se non conosci la creazione di un bundle OSGi, [segui queste istruzioni](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=it).
 
 Il codice nel passaggio del processo personalizzato esegue le seguenti operazioni:
 

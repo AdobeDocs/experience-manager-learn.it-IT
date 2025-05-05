@@ -39,7 +39,7 @@ Questo tutorial video illustra come definire un file InDesign e tutte le relativ
 
    * **Fare clic con il pulsante destro del mouse su** e selezionare **Raccordo > Opzioni raccordo cornice... > Raccordo contenuto > Riempi cornice in modo proporzionale**
 
-   [Ulteriori informazioni sulle opzioni di Frame Fitting](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames) e su quale sia il caso d&#39;uso più adatto.
+   [Ulteriori informazioni sulle opzioni di Frame Fitting](https://helpx.adobe.com/it/indesign/using/frames-objects.html#fitting_objects_to_frames) e su quale sia il caso d&#39;uso più adatto.
 
 5. Copiare l&#39;intestazione (Logo e Nome società) dal modello principale in Pagina e Pagina tramite Incolla nella posizione.
 

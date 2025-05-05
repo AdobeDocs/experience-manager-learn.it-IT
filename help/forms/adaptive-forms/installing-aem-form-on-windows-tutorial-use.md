@@ -69,7 +69,7 @@ Sebbene sia consigliabile seguire la [documentazione ufficiale](https://helpx.ad
    * **sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa&#42;** **sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.&#42;**
 * Queste due proprietà sono necessarie per il funzionamento dei servizi documentali
 * Salvare il file sling.properties
-* [Scaricare il pacchetto aggiuntivo dei moduli appropriato](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)
+* [Scaricare il pacchetto aggiuntivo dei moduli appropriato](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it)
 * Installa il pacchetto per l&#39;aggiunta di moduli utilizzando [Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp).
 * Dopo aver installato il pacchetto add on, è necessario seguire i seguenti passaggi
 
@@ -86,4 +86,4 @@ Sebbene sia consigliabile seguire la [documentazione ufficiale](https://helpx.ad
 1. Salva le modifiche.
 
 Complimenti!!! Ora hai installato e configurato AEM Forms sul tuo sistema.
-A seconda delle tue esigenze puoi configurare [Estensioni Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) o [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) sul server
+A seconda delle tue esigenze puoi configurare [Estensioni Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=it) o [PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=it) sul server

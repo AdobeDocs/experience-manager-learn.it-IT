@@ -22,7 +22,7 @@ L’interfaccia utente per la configurazione della traduzione consente a un uten
 
 >[!NOTE]
 >
-> Il video seguente è stato registrato su AEM 6.3. AEM 6.4+ introduce una nuova struttura dell’archivio per l’archiviazione del file XML delle regole di traduzione. Quando si utilizza l&#39;interfaccia utente di configurazione della traduzione in AEM 6.4+, le regole vengono salvate nel percorso `/conf/global/settings/translation/rules/translation_rules.xml`. Per ulteriori dettagli, vedere [Identificazione del contenuto da tradurre](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html).
+> Il video seguente è stato registrato su AEM 6.3. AEM 6.4+ introduce una nuova struttura dell’archivio per l’archiviazione del file XML delle regole di traduzione. Quando si utilizza l&#39;interfaccia utente di configurazione della traduzione in AEM 6.4+, le regole vengono salvate nel percorso `/conf/global/settings/translation/rules/translation_rules.xml`. Per ulteriori dettagli, vedere [Identificazione del contenuto da tradurre](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/tc-rules.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/18135?quality=12&learn=on)
 
@@ -44,7 +44,7 @@ Nelle versioni precedenti di AEM le regole di traduzione sono state aggiornate m
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Identificazione del contenuto da tradurre](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html)
-* [Traduzione di contenuti per siti multilingue](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html)
-* [https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html)
-* [Best practice per la traduzione](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-bp.html)
+* [Identificazione del contenuto da tradurre](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/tc-rules.html)
+* [Traduzione di contenuti per siti multilingue](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/translation.html)
+* [https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/tc-manage.html)
+* [Best practice per la traduzione](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/tc-bp.html)

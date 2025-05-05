@@ -25,7 +25,7 @@ I flussi di lavoro vengono in genere utilizzati per instradare i dati inviati pe
 
 ## Prerequisito
 
-Assicurati di disporre di un’istanza funzionante di AEM Forms. Segui la [guida all&#39;installazione](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) per installare e configurare AEM Forms
+Assicurati di disporre di un’istanza funzionante di AEM Forms. Segui la [guida all&#39;installazione](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html?lang=it) per installare e configurare AEM Forms
 
 Il video seguente illustra la creazione del flusso di lavoro Revisione e approvazione tramite i componenti di AEM Forms
 >[!VIDEO](https://video.tv.adobe.com/v/40242?quality=12&learn=on)

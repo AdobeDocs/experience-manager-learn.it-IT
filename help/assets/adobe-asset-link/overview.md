@@ -55,7 +55,7 @@ Adobe Asset Link fornisce il supporto per collegamenti diretti tra InDesign e Ad
 
 >[!NOTE]
 >
->Utilizza solo il tuo Adobe Creative Cloud Enterprise ID o Federated ID. Assicurati di [configurare AEM per Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html).
+>Utilizza solo il tuo Adobe Creative Cloud Enterprise ID o Federated ID. Assicurati di [configurare AEM per Adobe Asset Link](https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html).
 
 Puoi inserire una risorsa nel layout di InDesign utilizzando una delle opzioni seguenti:
 

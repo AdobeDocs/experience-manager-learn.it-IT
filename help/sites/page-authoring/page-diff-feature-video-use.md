@@ -47,4 +47,4 @@ La funzione Differenza pagina può essere utilizzata anche per identificare la d
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Documentazione sulle differenze di pagina](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/page-diff.html)
+* [Documentazione sulle differenze di pagina](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/page-diff.html?lang=it)

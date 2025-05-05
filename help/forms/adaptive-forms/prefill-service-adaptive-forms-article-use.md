@@ -20,7 +20,7 @@ ht-degree: 0%
 
 È possibile precompilare i campi di un modulo adattivo utilizzando dati esistenti. Quando un utente apre un modulo, i valori di tali campi vengono precompilati. Esistono diversi modi per precompilare i campi dei moduli adattivi. In questo articolo, esamineremo la precompilazione dei moduli adattivi utilizzando il servizio di precompilazione di AEM Forms.
 
-Per ulteriori informazioni sui vari metodi di precompilazione dei moduli adattivi, [consulta questa documentazione](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
+Per ulteriori informazioni sui vari metodi di precompilazione dei moduli adattivi, [consulta questa documentazione](https://helpx.adobe.com/it/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
 Per precompilare un modulo adattivo utilizzando il servizio di precompilazione, è necessario creare una classe che implementi l&#39;interfaccia `com.adobe.forms.common.service.DataXMLProvider`. Il metodo `getDataXMLForDataRef` avrà la logica per generare e restituire i dati che il modulo adattivo utilizzerà per precompilare i campi. Con questo metodo, puoi recuperare i dati da qualsiasi origine e restituire il flusso di input del documento di dati. Il codice di esempio seguente recupera le informazioni sul profilo utente dell’utente connesso e crea un documento XML il cui flusso di input viene restituito per essere utilizzato dai moduli adattivi.
 

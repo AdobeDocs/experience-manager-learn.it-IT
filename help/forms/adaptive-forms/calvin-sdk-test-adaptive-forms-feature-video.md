@@ -30,5 +30,5 @@ AEM 6.3 Forms introduce la funzionalità di creazione di test case in AEM per Fo
 >
 >**Collegamenti utili**
 >
->* [Spazio dei nomi Calvin SDK](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
+>* [Spazio dei nomi Calvin SDK](https://helpx.adobe.com/it/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 >* [Documentazione di Hobbes.js](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it)

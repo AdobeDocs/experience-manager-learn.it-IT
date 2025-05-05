@@ -208,7 +208,7 @@ Se sono necessari altri dati per compilare la colonna personalizzata, è possibi
 
 >[!IMPORTANT]
 >
-> Assicurati che l&#39;istanza Autore AEM sia configurata per consentire [richieste tra origini diverse](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) dalle origini su cui è in esecuzione l&#39;app AppBuilder. Le origini consentite includono `https://localhost:9080`, l&#39;origine dello stage di AppBuilder e l&#39;origine della produzione di AppBuilder.
+> Assicurati che l&#39;istanza Autore AEM sia configurata per consentire [richieste tra origini diverse](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=it) dalle origini su cui è in esecuzione l&#39;app AppBuilder. Le origini consentite includono `https://localhost:9080`, l&#39;origine dello stage di AppBuilder e l&#39;origine della produzione di AppBuilder.
 >
 > In alternativa, l&#39;estensione può chiamare un&#39;azione [AppBuilder](../../runtime-action.md) personalizzata che effettua la richiesta ad AEM Author per conto dell&#39;estensione.
 

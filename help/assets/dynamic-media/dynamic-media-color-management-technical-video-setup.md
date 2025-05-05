@@ -125,4 +125,4 @@ Di seguito è riportato il modello XML per il nodo di configurazione Gestione co
 
 ## Risorse aggiuntive{#additional-resources}
 
-* [Configurazione gestione colore elementi multimediali dinamici](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
+* [Configurazione gestione colore elementi multimediali dinamici](https://helpx.adobe.com/it/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)

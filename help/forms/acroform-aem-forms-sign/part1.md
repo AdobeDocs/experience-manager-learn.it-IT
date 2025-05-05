@@ -34,7 +34,7 @@ Le acroforme sono moduli creati con Acrobat. È possibile creare un nuovo modulo
 >
 >Se si invia un documento basato su XFA, è necessario appiattire il documento e i tag di firma Acrobat Sign devono essere presenti come testo statico nel documento.
 
-[Documento tag di testo Acrobat Sign](https://helpx.adobe.com/sign/using/text-tag.html)
+[Documento tag di testo Acrobat Sign](https://helpx.adobe.com/it/sign/using/text-tag.html)
 
 >[!NOTE]
 >

@@ -55,7 +55,7 @@ Nelle farm di configurazione della linea di base di AMS, troverai le nostre incl
 ```
 
 
-Quando crei le regole per ciò che deve essere memorizzato in cache o meno, consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Quando crei le regole per ciò che deve essere memorizzato in cache o meno, consulta la documentazione [qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#configuring-the-dispatcher-cache-cache)
 
 
 ## Caching di Author
@@ -336,6 +336,6 @@ Di seguito è riportato un esempio di configurazione di base per la quale gli el
 
 Vogliamo rendere il nostro sito pubblicato il più greedy possibile e memorizzare tutto in cache.
 
-Se vi sono elementi che interrompono l’esperienza quando vengono memorizzati nella cache, puoi aggiungere regole per rimuovere l’opzione di memorizzare in cache tale elemento. Come vedi nell’esempio precedente, i token csrf non devono mai essere memorizzati in cache e sono stati esclusi. Ulteriori dettagli sulla scrittura di queste regole sono disponibili [qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Se vi sono elementi che interrompono l’esperienza quando vengono memorizzati nella cache, puoi aggiungere regole per rimuovere l’opzione di memorizzare in cache tale elemento. Come vedi nell’esempio precedente, i token csrf non devono mai essere memorizzati in cache e sono stati esclusi. Ulteriori dettagli sulla scrittura di queste regole sono disponibili [qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#configuring-the-dispatcher-cache-cache)
 
 [Successivo -> Utilizzo e nozioni di base sulle variabili](./variables.md)

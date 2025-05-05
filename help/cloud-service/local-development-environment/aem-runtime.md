@@ -208,7 +208,7 @@ $ java -jar aem-publish-p4503.jar -r prerelease
 
 ## Simula distribuzione contenuto {#content-distribution}
 
-In un ambiente Cloud Service vero e proprio, il contenuto viene distribuito dal servizio di authoring al servizio di pubblicazione utilizzando [Distribuzione contenuto Sling](https://sling.apache.org/documentation/bundles/content-distribution.html) e la pipeline di Adobe. La [pipeline di Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=en#content-distribution) è un microservizio isolato disponibile solo nell&#39;ambiente cloud.
+In un ambiente Cloud Service vero e proprio, il contenuto viene distribuito dal servizio di authoring al servizio di pubblicazione utilizzando [Distribuzione contenuto Sling](https://sling.apache.org/documentation/bundles/content-distribution.html) e la pipeline di Adobe. La [pipeline di Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=it#content-distribution) è un microservizio isolato disponibile solo nell&#39;ambiente cloud.
 
 Durante lo sviluppo, può essere opportuno simulare la distribuzione dei contenuti utilizzando il servizio Author e Publish locale. Ciò può essere ottenuto abilitando gli agenti di replica legacy.
 
@@ -271,7 +271,7 @@ Per arrestare un runtime AEM locale, AEM Author o Publish, aprire la finestra de
 
 ## Attività di configurazione runtime locale AEM facoltative
 
-+ __Le variabili dell&#39;ambiente di configurazione OSGi e le variabili segrete__ sono [impostate appositamente per il runtime locale di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development), anziché gestirle utilizzando CLI dell&#39;aio.
++ __Le variabili dell&#39;ambiente di configurazione OSGi e le variabili segrete__ sono [impostate appositamente per il runtime locale di AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=it#local-development), anziché gestirle utilizzando CLI dell&#39;aio.
 
 ## Quando aggiornare Quickstart Jar
 

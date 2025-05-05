@@ -27,7 +27,7 @@ Scopri la modernizzazione dell’archivio, i contenuti mutabili e immutabili, la
 
 ![Modernizzatore archivio](./assets/repository-modernizer.png)
 
-Come parte del refactoring della base di codice, utilizza lo strumento [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) per ristrutturare una base di codice 6.x in una struttura più moderna.
+Come parte del refactoring della base di codice, utilizza lo strumento [Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=it) per ristrutturare una base di codice 6.x in una struttura più moderna.
 
 ## Attività chiave
 

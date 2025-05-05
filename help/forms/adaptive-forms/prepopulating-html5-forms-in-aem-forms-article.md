@@ -33,7 +33,7 @@ slingRequest.setAttribute(&quot;data&quot;, contenuto);
 
 In questo esempio, stiamo impostando l’attributo dati con il contenuto. Il contenuto rappresenta i dati con cui si desidera precompilare il modulo. In genere, per recuperare il &quot;contenuto&quot; si effettua una chiamata REST a un servizio interno.
 
-Per ottenere questo caso d’uso è necessario creare un profilo personalizzato. I dettagli sulla creazione di un profilo personalizzato sono chiaramente documentati nella [documentazione AEM Forms disponibile qui](https://helpx.adobe.com/aem-forms/6/html5-forms/custom-profile.html).
+Per ottenere questo caso d’uso è necessario creare un profilo personalizzato. I dettagli sulla creazione di un profilo personalizzato sono chiaramente documentati nella [documentazione AEM Forms disponibile qui](https://helpx.adobe.com/it/aem-forms/6/html5-forms/custom-profile.html).
 
 Una volta creato il profilo personalizzato, creerai un file JSP che recupererà i dati effettuando chiamate al sistema backend. Una volta recuperati i dati, utilizzerai slingRequest.setAttribute(&quot;dati&quot;, contenuto); per precompilare il modulo
 

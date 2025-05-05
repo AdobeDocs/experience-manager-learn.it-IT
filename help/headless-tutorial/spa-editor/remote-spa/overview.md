@@ -47,7 +47,7 @@ Il tutorial è progettato per funzionare con **AEM as a Cloud Service** ed è co
 
 Questo tutorial richiede quanto segue:
 
-+ [SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en)
++ [SDK di AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=it)
 + [Node.js v18](https://nodejs.org/it/)
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)

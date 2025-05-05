@@ -40,4 +40,4 @@ Scarica e installa il [pacchetto SPA WKND](https://github.com/adobe/aem-guides-w
 
 Per un tutorial dettagliato sullo sviluppo con l’editor SPA, consulta:
 
-* [Guida introduttiva all&#39;Editor SPA di AEM e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+* [Guida introduttiva all&#39;Editor SPA di AEM e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=it)

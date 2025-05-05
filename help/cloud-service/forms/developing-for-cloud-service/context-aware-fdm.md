@@ -27,7 +27,7 @@ Per creare la configurazione cloud in base al contesto, sono necessari i seguent
 
 ## Creare variabili di ambiente
 
-È possibile configurare e gestire le variabili di ambiente standard tramite Cloud Manager. Vengono fornite all’ambiente di runtime e possono essere utilizzate nelle configurazioni OSGi. [Le variabili di ambiente possono essere valori specifici dell&#39;ambiente o segreti dell&#39;ambiente, in base alle modifiche apportate.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en)
+È possibile configurare e gestire le variabili di ambiente standard tramite Cloud Manager. Vengono fornite all’ambiente di runtime e possono essere utilizzate nelle configurazioni OSGi. [Le variabili di ambiente possono essere valori specifici dell&#39;ambiente o segreti dell&#39;ambiente, in base alle modifiche apportate.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=it)
 
 
 

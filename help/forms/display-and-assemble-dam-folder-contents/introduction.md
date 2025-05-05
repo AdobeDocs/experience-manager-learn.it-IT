@@ -28,7 +28,7 @@ Avrà bisogno di quanto segue:
 
 * Un’istanza funzionante di AEM con il pacchetto del componente aggiuntivo Form installato
 
-* [Ambiente di sviluppo configurato in base a questo documento](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+* [Ambiente di sviluppo configurato in base a questo documento](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=it)
 
 ## Passaggi successivi
 

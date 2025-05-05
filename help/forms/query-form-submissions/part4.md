@@ -24,7 +24,7 @@ Quando l&#39;**Amministratore** fa clic su ViewLink nella tabella dei risultati 
 
 È stato utilizzato un servizio di precompilazione per recuperare i dati associati all’ID BLOB dal portale di Azure.
 
-[Un articolo separato sulla precompilazione del modulo con dati e allegati è disponibile qui.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html)
+[Un articolo separato sulla precompilazione del modulo con dati e allegati è disponibile qui.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=it)
 
 ## Passaggi successivi
 

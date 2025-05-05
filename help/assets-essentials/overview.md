@@ -38,11 +38,11 @@ Guarda questi video su come utilizzare gli Assets Essentials per gestire le tue 
    </p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html">
+   <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=it">
    <img alt="Documentazione sugli Assets Essentials" src="./assets/overview/assets-essentials-docs.png"/>
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=it">
       <strong>Documentazione Assets Essentials</strong>
       </a>
    </div>

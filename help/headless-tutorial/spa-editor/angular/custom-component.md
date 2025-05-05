@@ -74,7 +74,7 @@ Un componente AEM è definito come nodo e proprietà. Nel progetto, questi nodi 
 
 >[!NOTE]
 >
-> Un rapido aggiornamento sulle [nozioni di base dei componenti di AEM potrebbe essere utile](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html).
+> Un rapido aggiornamento sulle [nozioni di base dei componenti di AEM potrebbe essere utile](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=it).
 
 1. Aprire la cartella `ui.apps` nell&#39;IDE desiderato.
 2. Passare a `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components` e creare una cartella denominata `custom-component`.
@@ -160,7 +160,7 @@ Un componente AEM è definito come nodo e proprietà. Nel progetto, questi nodi 
 
 ## Creare il modello Sling
 
-I modelli Sling sono Java™ &quot;POJO&quot; (Plain Old Java™ Objects) basati su annotazioni che facilitano la mappatura dei dati dalle variabili JCR a Java™. [I modelli Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models) in genere funzionano per incapsulare una logica di business lato server complessa per i componenti AEM.
+I modelli Sling sono Java™ &quot;POJO&quot; (Plain Old Java™ Objects) basati su annotazioni che facilitano la mappatura dei dati dalle variabili JCR a Java™. [I modelli Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=it#sling-models) in genere funzionano per incapsulare una logica di business lato server complessa per i componenti AEM.
 
 Nel contesto dell&#39;Editor SPA, i modelli Sling espongono il contenuto di un componente tramite il modello JSON tramite una funzione che utilizza [Sling Model Exporter](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=it).
 

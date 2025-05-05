@@ -34,7 +34,7 @@ La schermata seguente mostra un modulo per contattarci incorporato nell’applic
 
 * Istanza in esecuzione di AEM Forms 6.5.16
 
-* [Abilita i moduli headless nell&#39;istanza di authoring e pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en)
+* [Abilita i moduli headless nell&#39;istanza di authoring e pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=it)
 
 ## Passaggi successivi
 

@@ -87,7 +87,7 @@ Scopri AEM Assets e come utilizzarlo per raggiungere gli obiettivi aziendali del
 
 ## Risorse aggiuntive
 
-* [Documentazione di AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en)
+* [Documentazione di AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=it)
 * [Tutorial su AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutorial su AEM Sites](/help/sites/overview.md)
 * [Tutorial su AEM Forms](/help/forms/overview.md)

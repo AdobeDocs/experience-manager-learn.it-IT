@@ -31,7 +31,7 @@ Scopri come utilizzare un approccio low-code per creare il tuo primo sito in Ado
 
 ## Ambiente AEM as a Cloud Service {#environment}
 
-I passaggi descritti in questo tutorial si svolgono in un ambiente Adobe Experience Manager as a Cloud Service. Assicurati di disporre dell’accesso amministrativo all’ambiente AEM. Per completare questa esercitazione, si consiglia di utilizzare un [programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) e un [ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html).
+I passaggi descritti in questo tutorial si svolgono in un ambiente Adobe Experience Manager as a Cloud Service. Assicurati di disporre dell’accesso amministrativo all’ambiente AEM. Per completare questa esercitazione, si consiglia di utilizzare un [programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html?lang=it) e un [ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=it).
 
 ## Passaggi successivi {#next-steps}
 

@@ -34,7 +34,7 @@ Di seguito è riportato il flusso del caso d’uso
 Affinché il caso d’uso funzioni è necessario quanto segue:
 
 * Un server AEM con pacchetto del componente aggiuntivo Forms
-* Una chiave di integrazione [per un&#39;applicazione Acrobat Sign](https://helpx.adobe.com/sign/kb/how-to-create-an-integration-key.html)
+* Una chiave di integrazione [per un&#39;applicazione Acrobat Sign](https://helpx.adobe.com/it/sign/kb/how-to-create-an-integration-key.html)
 
 ## Passaggi successivi
 

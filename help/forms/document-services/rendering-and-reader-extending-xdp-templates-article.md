@@ -25,10 +25,10 @@ Ad esempio, nel portale Forms di AEM Forms, quando un utente fa clic su XDP, pos
 
 Per eseguire questo caso d’uso è necessario effettuare le seguenti operazioni.
 
-* Aggiungi il certificato Reader Extensions all&#39;utente &quot;fd-service&quot;. I passaggi per aggiungere le credenziali delle estensioni Reader sono elencati [qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=en)
+* Aggiungi il certificato Reader Extensions all&#39;utente &quot;fd-service&quot;. I passaggi per aggiungere le credenziali delle estensioni Reader sono elencati [qui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=it)
 
 
-* È inoltre possibile fare riferimento al video su [configurazione delle credenziali delle estensioni di Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
+* È inoltre possibile fare riferimento al video su [configurazione delle credenziali delle estensioni di Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=it)
 
 
 * Crea un servizio OSGi personalizzato che esegue il rendering e applica i diritti di utilizzo. Il codice per eseguire questa operazione è elencato di seguito

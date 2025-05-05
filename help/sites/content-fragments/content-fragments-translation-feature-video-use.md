@@ -28,7 +28,7 @@ Scopri come localizzare e tradurre i frammenti di contenuto con Adobe Experience
 
 I frammenti di contenuto sono un tipo di contenuto riconosciuto che AEM estrae per inviarlo a un servizio di traduzione esterno. Sono supportati diversi casi d’uso preconfigurati:
 
-1. Un frammento di contenuto può essere [selezionato direttamente nella console Assets per la copia e la traduzione in lingua](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
+1. Un frammento di contenuto può essere [selezionato direttamente nella console Assets per la copia e la traduzione in lingua](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=it).
 2. I frammenti di contenuto a cui si fa riferimento in una pagina Sites vengono copiati nella cartella della lingua appropriata ed estratti per la traduzione quando la pagina Sites è selezionata per la copia per lingua.
 3. Le risorse multimediali in linea incorporate in un frammento di contenuto possono essere estratte e tradotte.
 4. Le raccolte di risorse associate a un frammento di contenuto possono essere estratte e tradotte.

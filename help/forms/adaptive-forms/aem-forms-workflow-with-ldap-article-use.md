@@ -22,7 +22,7 @@ Assegnazione dell&#39;attività del flusso di lavoro di AEM Forms al manager del
 
 Quando si utilizza un modulo adattivo nel flusso di lavoro di AEM, è necessario assegnare dinamicamente un’attività al manager dell’autore dell’invio del modulo. Per eseguire questo caso d’uso, dovremo configurare AEM con Ldap.
 
-I passaggi necessari per configurare AEM con LDAP sono illustrati in [dettagli qui.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
+I passaggi necessari per configurare AEM con LDAP sono illustrati in [dettagli qui.](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/ldap-config.html)
 
 Ai fini del presente articolo, allego i file di configurazione utilizzati per configurare AEM con Adobe Ldap. Questi file sono inclusi nel pacchetto che può essere importato utilizzando Gestione pacchetti.
 

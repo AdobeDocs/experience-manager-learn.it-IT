@@ -49,4 +49,4 @@ Azioni quali l’invio di un PDF Form, l’utilizzo dell’interfaccia utente de
 
 Se visualizzi il rapporto sulle transazioni nell’istanza di authoring, assicurati che la replica inversa sia configurata su tutte le istanze di pubblicazione.
 
-Per ulteriori informazioni sulla segnalazione delle transazioni [fai clic qui](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
+Per ulteriori informazioni sulla segnalazione delle transazioni [fai clic qui](https://helpx.adobe.com/it/experience-manager/6-4/forms/using/transaction-reports-overview.html)

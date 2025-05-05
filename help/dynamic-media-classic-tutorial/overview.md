@@ -42,7 +42,7 @@ In questa guida verranno illustrate le seguenti funzionalità principali di Dyna
 - **Video.** Carica i video finali, pubblicali e scaricali progressivamente in visualizzatori video configurabili.
 - **Imaging avanzato.Tecnologia** che sfrutta le funzionalità di intelligenza artificiale di Adobe Sensei e funziona con i &quot;predefiniti immagine&quot; esistenti per migliorare le prestazioni di consegna delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
 
-Per scoprire ulteriori funzionalità della soluzione, visita la [documentazione di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
+Per scoprire ulteriori funzionalità della soluzione, visita la [documentazione di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html?lang=it).
 
 ## Interfaccia utente di Dynamic Media Classic
 
@@ -72,4 +72,4 @@ _Interfaccia utente di Dynamic Media Classic_
 >
 >Seleziona la casella di controllo **Publish dopo il caricamento** nella finestra di dialogo Carica per pubblicare automaticamente le risorse al momento del caricamento.
 
-Ulteriori informazioni su [Navigazione nell&#39;interfaccia utente di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).
+Ulteriori informazioni su [Navigazione nell&#39;interfaccia utente di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html?lang=it).

@@ -42,7 +42,7 @@ La tabella seguente descrive come prevenire e attenuare gli attacchi DoS e DDoS:
             <td>Firewall applicazione Web (WAF)</td>
             <td>Una soluzione di sicurezza progettata per proteggere le applicazioni web da vari tipi di attacchi.</td>
             <td>
-            <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank">Licenza di protezione WAF-DDoS</a></td>
+            <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis#waf-rules" target="_blank">Licenza di protezione WAF-DDoS</a></td>
             <td><a href="https://docs.aws.amazon.com/waf/" target="_blank">AWS</a> o <a href="https://azure.microsoft.com/en-us/products/web-application-firewall" target="_blank">Azure</a> WAF tramite contratto AMS.</td>
             <td>Il WAF preferito</td>
         </tr>
@@ -54,7 +54,7 @@ La tabella seguente descrive come prevenire e attenuare gli attacchi DoS e DDoS:
         <tr>
             <td>Regole filtro traffico</td>
             <td>Le regole del filtro del traffico possono essere utilizzate per bloccare o consentire le richieste a livello CDN.</td>
-            <td><a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis" target="_blank">Esempio di regole del filtro del traffico</a></td>
+            <td><a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/examples-and-analysis" target="_blank">Esempio di regole del filtro del traffico</a></td>
             <td><a href="https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-rate-based.html" target="_blank">Funzionalità di limitazione delle regole di AWS</a> o <a href="https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/rate-limiting-overview" target="_blank">Azure</a>.</td>
             <td>La soluzione preferita</td>
         </tr>

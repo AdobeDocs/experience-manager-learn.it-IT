@@ -30,7 +30,7 @@ Scopri come supportare più visualizzazioni nell’applicazione a pagina singola
 
 ## Cosa verrà creato
 
-Questo capitolo aggiungerà la navigazione a un’applicazione a pagina singola in AEM. Il menu di navigazione è gestito dalla gerarchia di pagine di AEM e utilizzerà il modello JSON fornito dal [componente core Navigazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html).
+Questo capitolo aggiungerà la navigazione a un’applicazione a pagina singola in AEM. Il menu di navigazione è gestito dalla gerarchia di pagine di AEM e utilizzerà il modello JSON fornito dal [componente core Navigazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=it).
 
 ![Navigazione aggiunta](assets/navigation-routing/navigation-added.png)
 

@@ -34,6 +34,6 @@ Le interfacce Panoramica Live Copy e Gestione configurazione blueprint sono inte
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Console Panoramica Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
-* [Creazione e sincronizzazione di Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
-* [Best practice MSM](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-best-practices.html)
+* [Console Panoramica Live Copy](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
+* [Creazione e sincronizzazione di Live Copy](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
+* [Best practice MSM](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/msm-best-practices.html)

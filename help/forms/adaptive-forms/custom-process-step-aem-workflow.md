@@ -29,7 +29,7 @@ Per eseguire il caso d’uso precedente, in genere si scrive un servizio OSGi ch
 
 ## Crea progetto Maven
 
-Il primo passaggio consiste nel creare un progetto Maven utilizzando l’archetipo Adobe Maven appropriato. I passaggi dettagliati sono elencati in questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una volta importato il progetto Maven in Eclipse, sei pronto per iniziare a scrivere il primo componente OSGi che può essere utilizzato nel passaggio del processo.
+Il primo passaggio consiste nel creare un progetto Maven utilizzando l’archetipo Adobe Maven appropriato. I passaggi dettagliati sono elencati in questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=it). Una volta importato il progetto Maven in Eclipse, sei pronto per iniziare a scrivere il primo componente OSGi che può essere utilizzato nel passaggio del processo.
 
 
 ### Crea classe che implementa WorkflowProcess
@@ -42,9 +42,9 @@ public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaData
 
 Il metodo execute consente di accedere alle tre variabili seguenti:
 
-**WorkItem**: la variabile workItem consentirà l&#39;accesso ai dati relativi al flusso di lavoro. La documentazione API pubblica è disponibile [qui.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkItem**: la variabile workItem consentirà l&#39;accesso ai dati relativi al flusso di lavoro. La documentazione API pubblica è disponibile [qui.](https://helpx.adobe.com/it/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**WorkflowSession**: questa variabile workflowSession consente di controllare il flusso di lavoro. La documentazione API pubblica è disponibile [qui](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html).
+**WorkflowSession**: questa variabile workflowSession consente di controllare il flusso di lavoro. La documentazione API pubblica è disponibile [qui](https://helpx.adobe.com/it/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html).
 
 **MetaDataMap**: tutti i metadati associati al flusso di lavoro. Tutti gli argomenti di processo passati alla fase del processo sono disponibili utilizzando l&#39;oggetto MetaDataMap.[Documentazione API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
@@ -154,7 +154,7 @@ Il servizio QueryBuilder viene utilizzato per eseguire query sui nodi di tipo `n
 
 #### Creare e distribuire
 
-[Crea il bundle come descritto qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+[Crea il bundle come descritto qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=it)
 [Assicurarsi che il bundle sia distribuito e in stato attivo](http://localhost:4502/system/console/bundles)
 
 Crea un modello di flusso di lavoro. Trascina e rilascia il passaggio del processo nel modello di flusso di lavoro. Associare la fase del processo con &quot;Salva allegati modulo adattivo nel file system&quot;.

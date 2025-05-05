@@ -26,5 +26,5 @@ Il componente Immagine, che fa parte dei componenti core di Experience Manager, 
 
 ## Risorse aggiuntive
 
-* [Documentazione dei componenti core immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=en#dynamic-media)
-* [Riferimento comando Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en#image-serving-api)
+* [Documentazione dei componenti core immagine](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=it#dynamic-media)
+* [Riferimento comando Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=it#image-serving-api)

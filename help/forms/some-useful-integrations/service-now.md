@@ -24,8 +24,8 @@ Crea e visualizza l&#39;incidente in [!DNL ServiceNow] utilizzando il modello da
 ## Prerequisiti
 
 * Account [!DNL ServiceNow].
-* Ha familiarità con [creazione origini dati](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)
-* Ha familiarità con [Modello dati modulo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html)
+* Ha familiarità con [creazione origini dati](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=it)
+* Ha familiarità con [Modello dati modulo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=it)
 
 ## Assets di esempio
 

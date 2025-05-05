@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Puoi utilizzare l’API Batch per produrre più comunicazioni interattive da un modello. Il modello è una comunicazione interattiva senza alcun dato. L’API Batch combina i dati con un modello per produrre una comunicazione interattiva. L’API è utile nella produzione di massa di comunicazioni interattive. Ad esempio, bollette telefoniche, estratti conto delle carte di credito per più clienti.
 
-[Ulteriori informazioni sull&#39;API di generazione batch](https://experienceleague.adobe.com/docs/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html)
+[Ulteriori informazioni sull&#39;API di generazione batch](https://experienceleague.adobe.com/docs/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html?lang=it)
 
 Questo articolo fornisce risorse di esempio per generare documenti di comunicazione interattiva utilizzando l’API Batch.
 
@@ -45,7 +45,7 @@ Questo articolo fornisce risorse di esempio per generare documenti di comunicazi
 
 ## Generazione batch con richieste REST
 
-È possibile richiamare l&#39;[API batch](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) tramite richieste REST. È possibile esporre gli endpoint REST per altre applicazioni per richiamare l’API per generare documenti.
+È possibile richiamare l&#39;[API batch](https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/index.html) tramite richieste REST. È possibile esporre gli endpoint REST per altre applicazioni per richiamare l’API per generare documenti.
 Le risorse di esempio fornite espongono l’endpoint REST per la generazione di documenti di comunicazione interattiva. Il servlet accetta i seguenti parametri:
 
 * fileName: posizione del file di dati nel file system.

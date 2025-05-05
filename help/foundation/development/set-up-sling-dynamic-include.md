@@ -54,7 +54,7 @@ Procedura video per l&#39;installazione e l&#39;utilizzo di [!DNL Apache Sling D
    -->
    ```
 
-1. (Facoltativo) Ripetere l&#39;ultimo passaggio per consentire che i componenti in [contenuto bloccato (iniziale) di modelli modificabili](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html) vengano serviti anche tramite [!DNL SDI]. Il motivo della configurazione aggiuntiva è che il contenuto bloccato dei modelli modificabili viene distribuito da `/conf` anziché da `/content`.
+1. (Facoltativo) Ripetere l&#39;ultimo passaggio per consentire che i componenti in [contenuto bloccato (iniziale) di modelli modificabili](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/page-templates-editable.html) vengano serviti anche tramite [!DNL SDI]. Il motivo della configurazione aggiuntiva è che il contenuto bloccato dei modelli modificabili viene distribuito da `/conf` anziché da `/content`.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -148,7 +148,7 @@ Procedura video per l&#39;installazione e l&#39;utilizzo di [!DNL Apache Sling D
 
 >[!NOTE]
 >
->Se utilizzi [!DNL Sling Dynamic Includes] per il server delle inclusioni lato perimetro (ESI), assicurati di memorizzare nella cache le [intestazioni di risposta rilevanti](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders). Le intestazioni possibili includono:
+>Se utilizzi [!DNL Sling Dynamic Includes] per il server delle inclusioni lato perimetro (ESI), assicurati di memorizzare nella cache le [intestazioni di risposta rilevanti](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#CachingHTTPResponseHeaders). Le intestazioni possibili includono:
 >
 >* &quot;Cache-Control&quot;
 >* &quot;Content-Disposition&quot;

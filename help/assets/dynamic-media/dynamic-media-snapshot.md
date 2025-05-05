@@ -30,5 +30,5 @@ Dynamic Media Snapshot è uno strumento di dimostrazione visiva, progettato per 
 
 ## Risorse aggiuntive
 
-* [Comandi del protocollo HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)
-* [Imaging avanzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq.html)
+* [Comandi del protocollo HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=it)
+* [Imaging avanzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq.html?lang=it)

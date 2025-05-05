@@ -34,4 +34,4 @@ URL della console componenti (Autore AEM locale): [http://localhost:4502/libs/wc
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Documentazione della console Componenti](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/default-components-console.html)
+* [Documentazione della console Componenti](https://helpx.adobe.com/it/experience-manager/6-5/sites/authoring/using/default-components-console.html)

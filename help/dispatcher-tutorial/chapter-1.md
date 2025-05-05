@@ -1302,11 +1302,11 @@ Se installi un autore di AEM e Publish preconfigurato, la topologia è un po&#39
 
 Se un client richiede tale contenuto nel frattempo, Dispatcher richiederà e memorizzerà il contenuto non aggiornato.
 
-Una configurazione più affidabile sta inviando la richiesta di annullamento della validità dai sistemi Publish _dopo_ che hanno ricevuto il contenuto. L&#39;articolo &quot;[Annullamento della validità della cache di Dispatcher da un&#39;istanza Publish](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)&quot; descrive i dettagli.
+Una configurazione più affidabile sta inviando la richiesta di annullamento della validità dai sistemi Publish _dopo_ che hanno ricevuto il contenuto. L&#39;articolo &quot;[Annullamento della validità della cache di Dispatcher da un&#39;istanza Publish](https://helpx.adobe.com/it/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)&quot; descrive i dettagli.
 
 **Riferimenti**
 
-[helpx.adobe.com - Annullamento della validità della cache di Dispatcher da un&#39;istanza Publish](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)
+[helpx.adobe.com - Annullamento della validità della cache di Dispatcher da un&#39;istanza Publish](https://helpx.adobe.com/it/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)
 
 ### Memorizzazione in cache di intestazioni e intestazioni HTTP
 
@@ -1454,7 +1454,7 @@ Avere una directory principale dei documenti comune aveva anche un&#39;altra bel
 
 * [apache.org - Mod Riscrittura](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
 
-* [helpx.adobe.com - Mappatura risorse](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/resource-mapping.html)
+* [helpx.adobe.com - Mappatura risorse](https://helpx.adobe.com/it/experience-manager/6-4/sites/deploying/using/resource-mapping.html)
 
 ### Gestione degli errori
 
@@ -1506,11 +1506,11 @@ E naturalmente, potete applicare la vostra combinazione di tutti e tre gli appro
 
 **Opzione 2**. &quot;Non memorizzare in cache&quot; in genere è una cattiva idea. Se procedi in questo modo, assicurati che la quantità di traffico e il numero di risorse sensibili escluse siano limitati. In alternativa, assicurarsi di disporre di una cache in memoria nel sistema Publish installata, che i sistemi Publish possano gestire il carico risultante, per ulteriori informazioni sulla parte III di questa serie.
 
-**Opzione 3**. Il &quot;caching sensibile alle autorizzazioni&quot; è un approccio interessante. Il Dispatcher sta memorizzando nella cache una risorsa, ma prima di distribuirla, chiede al sistema AEM se può farlo. Questo crea una richiesta aggiuntiva dal Dispatcher al Publish, ma in genere evita al sistema Publish di eseguire nuovamente il rendering di una pagina se è già memorizzata nella cache. Tuttavia, questo approccio richiede un’implementazione personalizzata. I dettagli sono disponibili qui nell&#39;articolo [Memorizzazione in cache sensibile alle autorizzazioni](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html).
+**Opzione 3**. Il &quot;caching sensibile alle autorizzazioni&quot; è un approccio interessante. Il Dispatcher sta memorizzando nella cache una risorsa, ma prima di distribuirla, chiede al sistema AEM se può farlo. Questo crea una richiesta aggiuntiva dal Dispatcher al Publish, ma in genere evita al sistema Publish di eseguire nuovamente il rendering di una pagina se è già memorizzata nella cache. Tuttavia, questo approccio richiede un’implementazione personalizzata. I dettagli sono disponibili qui nell&#39;articolo [Memorizzazione in cache sensibile alle autorizzazioni](https://helpx.adobe.com/it/experience-manager/dispatcher/using/permissions-cache.html).
 
 **Riferimenti**
 
-* [helpx.adobe.com - Memorizzazione in cache sensibile alle autorizzazioni](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html)
+* [helpx.adobe.com - Memorizzazione in cache sensibile alle autorizzazioni](https://helpx.adobe.com/it/experience-manager/dispatcher/using/permissions-cache.html)
 
 ### Impostazione del periodo di tolleranza
 
@@ -1635,7 +1635,7 @@ Se si esamina la directory della cache di Dispatcher, verranno visualizzati i fi
 
 **Riferimenti**
 
-[helpx.adobe.com - Annullamento della validità delle pagine in cache da AEM](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)
+[helpx.adobe.com - Annullamento della validità delle pagine in cache da AEM](https://helpx.adobe.com/it/experience-manager/dispatcher/using/page-invalidate.html)
 
 ### Schermatura del sistema Publish
 
@@ -1690,7 +1690,7 @@ Ma proponiamo di considerare la possibilità di restringere lo spazio URL il pi�
 
 [apache.org- direttiva sethandler](https://httpd.apache.org/docs/2.4/mod/core.html#sethandler)
 
-[helpx.adobe.com - Configurazione dell&#39;accesso al filtro dei contenuti](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#ConfiguringAccesstoContentfilter)
+[helpx.adobe.com - Configurazione dell&#39;accesso al filtro dei contenuti](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html#ConfiguringAccesstoContentfilter)
 
 ### Filtrare utilizzando espressioni regolari e globi
 
@@ -1843,7 +1843,7 @@ Puoi quindi denominare e raggruppare le regole di conseguenza e fornire al letto
 
 **Riferimenti**
 
-[helpx.adobe.com - Progettazione di modelli per le proprietà glob](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#DesigningPatternsforglobProperties)
+[helpx.adobe.com - Progettazione di modelli per le proprietà glob](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html#DesigningPatternsforglobProperties)
 
 ### Specifiche del protocollo
 
@@ -1906,17 +1906,17 @@ Elenca gli URL che desideri recuperare immediatamente dopo l’annullamento dell
 
 ## Risorse aggiuntive
 
-Panoramica e introduzione al caching di Dispatcher: [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
+Panoramica e introduzione al caching di Dispatcher: [https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher.html)
 
-Documentazione di Dispatcher con tutte le direttive spiegate: [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html)
+Documentazione di Dispatcher con tutte le direttive spiegate: [https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher-configuration.html)
 
-Alcune domande frequenti: [https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/it/experience-manager/using/dispatcher-faq.html)
+Alcune domande frequenti: [https://helpx.adobe.com/it/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/it/experience-manager/using/dispatcher-faq.html)
 
 Registrazione di un webinar sull&#39;ottimizzazione di Dispatcher. Si consiglia di effettuare le seguenti operazioni: [https://my.adobeconnect.com/p7th2gf8k43?proto=true](https://my.adobeconnect.com/p7th2gf8k43?proto=true)
 
 Presentazione &quot;Il potere sottovalutato dell&#39;invalidazione dei contenuti&quot;, conferenza &quot;adaptTo()&quot; a Potsdam 2018 [https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html](https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html)
 
-Annullamento della validità delle pagine in cache da AEM: [https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)
+Annullamento della validità delle pagine in cache da AEM: [https://helpx.adobe.com/it/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/it/experience-manager/dispatcher/using/page-invalidate.html)
 
 ## Passaggio successivo
 

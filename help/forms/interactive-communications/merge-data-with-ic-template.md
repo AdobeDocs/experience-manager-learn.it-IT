@@ -162,7 +162,7 @@ String params = arg2.get("PROCESS_ARGS","string").toString();
 
 Per eseguire il test sul server, attieniti alla seguente procedura:
 
-* [Configura il servizio di posta Day CQ.](https://helpx.adobe.com/experience-manager/6-5/communities/using/email.html) Questo è necessario per inviare un messaggio e-mail con il documento generato come allegato.
+* [Configura il servizio di posta Day CQ.](https://helpx.adobe.com/it/experience-manager/6-5/communities/using/email.html) Questo è necessario per inviare un messaggio e-mail con il documento generato come allegato.
 * [Distribuire il bundle per lo sviluppo con l’utente del servizio](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * Assicurati di aver aggiunto la seguente voce nella configurazione del servizio User Mapper di Apache Sling Service
 * **Sviluppo con ServiceUser.core:getformsresourceresolver=fd-service**

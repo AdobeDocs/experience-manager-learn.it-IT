@@ -26,7 +26,7 @@ Un rapido esempio di come utilizzare la convalida del dispatcher nei flussi di l
 ## Contenuto trattato in questo video
 
 + Panoramica di Dispatcher e SDK
-+ [Strumenti di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html)
++ [Strumenti di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/validation-debug.html?lang=it)
 + Risoluzione dei problemi di errore
 + Utilizzo dei registri del dispatcher e delle modalità di esecuzione per il debug
 

@@ -104,4 +104,4 @@ Il video Dynamic Media ora supporta la possibilità di selezionare una miniatura
 
 ## Risorse aggiuntive{#additional-resources}
 
-[Configurazione di Dynamic Media in modalità Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[Configurazione di Dynamic Media in modalità Scene7](https://helpx.adobe.com/it/experience-manager/6-5/assets/using/config-dms7.html)

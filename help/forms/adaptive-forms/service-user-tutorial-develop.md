@@ -21,7 +21,7 @@ Questo articolo illustra il processo di creazione di un utente di servizio in AE
 
 Nelle versioni precedenti di Adobe Experience Manager (AEM), il risolutore risorse amministrativo veniva utilizzato per l’elaborazione back-end che richiedeva l’accesso all’archivio. L’utilizzo del risolutore risorse amministrativo è diventato obsoleto in AEM 6.3. Viene invece utilizzato un utente di sistema con autorizzazioni specifiche nell’archivio.
 
-Ulteriori informazioni sui dettagli di [creazione e utilizzo di utenti del servizio in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
+Ulteriori informazioni sui dettagli di [creazione e utilizzo di utenti del servizio in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html?lang=it).
 
 Questo articolo illustra come creare un utente di sistema e configurare le proprietà di mappatura utente.
 

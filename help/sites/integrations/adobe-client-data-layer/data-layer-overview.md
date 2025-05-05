@@ -26,7 +26,7 @@ Adobe Client Data Layer introduce un metodo standard per raccogliere e memorizza
 
 >[!NOTE]
 >
-> Abilitare Adobe Client Data Layer nel sito AEM? [Consulta le istruzioni](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
+> Abilitare Adobe Client Data Layer nel sito AEM? [Consulta le istruzioni](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=it#installation-activation).
 
 ## Esplorare Data Layer
 

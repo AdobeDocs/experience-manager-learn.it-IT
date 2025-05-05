@@ -211,7 +211,7 @@ Gli effetti di mappatura Sling AEM in esecuzione su `http` e `localhost`, pertan
 
 ## Criteri di sicurezza per la condivisione delle risorse tra diverse origini
 
-Quindi, configura l’AEM per proteggere il contenuto in modo che solo questo SPA possa accedere al contenuto dell’AEM. Configura [la condivisione delle risorse tra le origini in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html).
+Quindi, configura l’AEM per proteggere il contenuto in modo che solo questo SPA possa accedere al contenuto dell’AEM. Configura [la condivisione delle risorse tra le origini in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=it).
 
 1. Nell&#39;IDE aprire il sottoprogetto Maven `ui.config`
 1. Passa a `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`

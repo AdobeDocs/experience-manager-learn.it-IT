@@ -61,7 +61,7 @@ Alla fine, sono in esecuzione tre server locali:
 
 Attualmente è in esecuzione un&#39;istanza di SDK in modalità **Autore**. È inoltre possibile avviare SDK in modalità **Pubblica** per simulare un ambiente di pubblicazione AEM.
 
-Una guida più dettagliata per la configurazione di un ambiente di sviluppo locale [è disponibile qui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=en#local-development-environment-set-up).
+Una guida più dettagliata per la configurazione di un ambiente di sviluppo locale [è disponibile qui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it#local-development-environment-set-up).
 
 1. Nel file system locale creare una cartella dedicata per installare l&#39;istanza Publish, ovvero `~/aem-sdk/publish`.
 1. Copiare il file jar Quickstart utilizzato per l&#39;istanza di authoring nei capitoli precedenti e incollarlo nella directory `publish`. In alternativa, accedi al [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aemcloud.html), scarica l&#39;ultima versione di SDK ed estrai il file jar Quickstart.
@@ -312,7 +312,7 @@ Quindi, simula la pubblicazione di contenuti tra le istanze Autore locale e Pubb
 1. Avvia l&#39;istanza di authoring (se non è già stata avviata) e passa a Gestione pacchetti all&#39;indirizzo [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp)
 1. Scaricare il pacchetto [EnableReplicationAgent.zip](./assets/publish-deployment/EnableReplicationAgent.zip) e installarlo tramite Gestione pacchetti.
 
-   Questo pacchetto installa una configurazione che consente all’istanza di authoring di pubblicare i contenuti nell’istanza di pubblicazione. I passaggi manuali per [questa configurazione sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en#content-distribution).
+   Questo pacchetto installa una configurazione che consente all’istanza di authoring di pubblicare i contenuti nell’istanza di pubblicazione. I passaggi manuali per [questa configurazione sono disponibili qui](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=it#content-distribution).
 
    >[!NOTE]
    >
@@ -410,5 +410,5 @@ Per ulteriori dettagli su Frammenti di contenuto e GraphQL, consulta le risorse 
 
 * [Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html?lang=it)
 * [API GraphQL di AEM per l’utilizzo con Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html?lang=it)
-* [Autenticazione basata su token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=en#authentication)
-* [Distribuzione del codice in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=en#cloud-manager)
+* [Autenticazione basata su token](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=it#authentication)
+* [Distribuzione del codice in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=it#cloud-manager)

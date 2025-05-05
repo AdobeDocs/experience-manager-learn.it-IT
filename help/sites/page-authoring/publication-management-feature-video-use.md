@@ -39,4 +39,4 @@ AEM Sites fornisce diversi metodi per pubblicare e annullare la pubblicazione de
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Pubblicazione della documentazione delle pagine](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/publishing-pages.html)
+* [Pubblicazione della documentazione delle pagine](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/publishing-pages.html?lang=it)

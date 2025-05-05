@@ -26,7 +26,7 @@ L’integrazione di siti Adobe Experience Manager (AEM) distribuiti tramite AEM 
 
 Il cookie FPID deve essere impostato dal server (AEM Publish) invece di utilizzare JavaScript per creare un cookie lato client. Questo perché i browser moderni, come Safari e Firefox, possono bloccare o far scadere rapidamente i cookie generati da JavaScript.
 
-Leggi la documentazione di supporto per [scoprire i dettagli sulla collaborazione tra gli ID dispositivo di prima parte e gli ID Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=en).
+Leggi la documentazione di supporto per [scoprire i dettagli sulla collaborazione tra gli ID dispositivo di prima parte e gli ID Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=it).
 
 Di seguito è riportata una panoramica del funzionamento degli FPID quando si utilizza AEM come host web.
 
@@ -163,8 +163,8 @@ public class FpidServlet extends SlingAllMethodsServlet {
 
 Questo script di JavaScript viene in genere aggiunto alla pagina utilizzando uno dei seguenti metodi:
 
-+ [Tag in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [Libreria client AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/clientlibs.html?lang=en)
++ [Tag in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
++ [Libreria client AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/clientlibs.html?lang=it)
 
 La chiamata XHR al servlet FPID di AEM personalizzato è veloce, anche se asincrona, quindi è possibile per un utente visitare una pagina web fornita da AEM e spostarsi prima che la richiesta possa essere completata.
 In questo caso, lo stesso processo tenterà nuovamente al successivo caricamento di una pagina web da AEM.
@@ -172,9 +172,9 @@ In questo caso, lo stesso processo tenterà nuovamente al successivo caricamento
 Il GET HTTP al servlet FPID di AEM (`/bin/aep/fpid`) è parametrizzato con un parametro di query casuale per garantire che qualsiasi infrastruttura tra il browser e il servizio AEM Publish non memorizzi la risposta della richiesta nella cache.
 Analogamente, viene aggiunta l&#39;intestazione di richiesta `Cache-Control: no-store` per supportare l&#39;eliminazione del caching.
 
-Quando si richiama il servlet FPID di AEM, l&#39;FPID viene recuperato dalla risposta JSON e utilizzato da [Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/tags-configuration/install-web-sdk.html?lang=en) per inviarlo alle API di Experience Platform.
+Quando si richiama il servlet FPID di AEM, l&#39;FPID viene recuperato dalla risposta JSON e utilizzato da [Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/tags-configuration/install-web-sdk.html?lang=it) per inviarlo alle API di Experience Platform.
 
-Consulta la documentazione di Experience Platform per ulteriori informazioni sull&#39;utilizzo di [FPID in identityMap](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html#identityMap)
+Consulta la documentazione di Experience Platform per ulteriori informazioni sull&#39;utilizzo di [FPID in identityMap](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=it#identityMap)
 
 ```javascript
 ...
@@ -239,6 +239,6 @@ Se questa configurazione di Dispatcher non è implementata correttamente, le ric
 
 Consulta la seguente documentazione di Experience Platform per gli ID dispositivo di prime parti (FPID, First-party Device ID) e gestire i dati di identità con Platform Web SDK.
 
-+ [Genera ID dispositivo di prime parti](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html)
-+ [ID dispositivo di prime parti in Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html)
-+ [Dati di identità in Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html)
++ [Genera ID dispositivo di prime parti](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=it)
++ [ID dispositivo di prime parti in Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=it)
++ [Dati di identità in Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=it)

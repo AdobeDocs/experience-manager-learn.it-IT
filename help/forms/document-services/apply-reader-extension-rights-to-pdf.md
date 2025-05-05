@@ -21,7 +21,7 @@ ht-degree: 0%
 Le estensioni Reader consentono di manipolare i diritti di utilizzo sui documenti PDF. I diritti di utilizzo si riferiscono alle funzionalità disponibili in Acrobat ma non in Adobe Reader. Le funzionalità controllate dalle estensioni di Reader includono la possibilità di aggiungere commenti a un documento, compilare moduli e salvare il documento. I documenti PDF a cui sono stati aggiunti diritti di utilizzo sono denominati documenti abilitati per i diritti. L’utente che apre un documento PDF con abilitazione per i diritti in Adobe Reader può eseguire le operazioni abilitate per tale documento.
 
 Per eseguire questo caso d’uso è necessario effettuare le seguenti operazioni:
-* [Aggiungere il certificato delle estensioni di Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) all&#39;utente `fd-service`.
+* [Aggiungere il certificato delle estensioni di Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=it) all&#39;utente `fd-service`.
 
 ## Creare un servizio OSGi personalizzato
 

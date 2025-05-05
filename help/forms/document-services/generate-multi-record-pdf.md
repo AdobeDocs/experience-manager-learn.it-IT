@@ -25,7 +25,7 @@ Di seguito è riportata la schermata di un file xml contenente più record.
 
 ![multi-record-xml](assets/multi-record-xml.PNG)
 
-L’XML dati ha 2 record. Ogni record è rappresentato dall&#39;elemento form1. Questo xml viene passato al metodo OutputService [generatePDFOutputBatch](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html). Viene visualizzato un elenco di documenti PDF (uno per record)
+L’XML dati ha 2 record. Ogni record è rappresentato dall&#39;elemento form1. Questo xml viene passato al metodo OutputService [generatePDFOutputBatch](https://helpx.adobe.com/it/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html). Viene visualizzato un elenco di documenti PDF (uno per record)
 La firma del metodo generatePDFOutputBatch accetta i seguenti parametri
 
 * modelli: mappa contenente il modello, identificato da una chiave

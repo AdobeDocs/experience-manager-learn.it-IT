@@ -51,6 +51,6 @@ Per l’integrazione dei tag di raccolta dati Experience Platform sono necessari
 
 ## Risorse aggiuntive {#additional-resources}
 
-+ [Integrazioni Experience Platform con applicazioni Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
-+ [Panoramica sui tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [Implementazione dell&#39;Experience Cloud nei siti Web con tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html)
++ [Integrazioni Experience Platform con applicazioni Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html?lang=it)
++ [Panoramica sui tag](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it)
++ [Implementazione dell&#39;Experience Cloud nei siti Web con tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=it)

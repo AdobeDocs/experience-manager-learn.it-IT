@@ -32,5 +32,5 @@ Gli utenti che richiedono l&#39;accesso al servizio AEM Author vengono gestiti c
 
 ## Risorse aggiuntive
 
-+ [Onboarding degli utenti nella documentazione di Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#onboarding-users-in-admin-console)
++ [Onboarding degli utenti nella documentazione di Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=it#onboarding-users-in-admin-console)
 + [Documentazione di panoramica di Adobe Admin Console Identity](https://helpx.adobe.com/it/enterprise/using/identity.html)

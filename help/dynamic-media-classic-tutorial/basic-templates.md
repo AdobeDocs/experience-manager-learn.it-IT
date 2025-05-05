@@ -63,8 +63,8 @@ Poiché i modelli di base sono generalmente progettati in Photoshop ma distribui
 
 I progetti modello possono essere relativamente semplici o estremamente complessi a seconda delle regole e delle esigenze aziendali dell’applicazione. I modelli di base vengono chiamati dal server immagini. Tuttavia, a causa della flessibilità dell’ambiente Dynamic Media Classic, è possibile nidificare modelli anche all’interno di altri modelli, consentendo di creare immagini abbastanza complesse che possono essere collegate da variabili comunemente denominate.
 
-- Ulteriori informazioni su [Nozioni di base sui modelli](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html).
-- Scopri come creare un [modello base](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template).
+- Ulteriori informazioni su [Nozioni di base sui modelli](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html?lang=it).
+- Scopri come creare un [modello base](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html?lang=it#creating_a_template).
 
 ## Creazione di un modello di base
 
@@ -186,7 +186,7 @@ Per aggiungere un effetto, fare clic su **Aggiungi effetto** e scegliere un effe
 
 Gli effetti ombra vengono spostati orizzontalmente o verticalmente dal livello, mentre gli effetti alone vengono applicati uniformemente in tutte le direzioni. Gli effetti interni agiscono sopra le parti opache del livello, mentre gli effetti esterni influiscono solo sulle aree trasparenti.
 
-Ulteriori informazioni sull&#39;aggiunta di [effetti livello](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#using-shadow-and-glow-effects-on-layers).
+Ulteriori informazioni sull&#39;aggiunta di [effetti livello](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html?lang=it#using-shadow-and-glow-effects-on-layers).
 
 ### Aggiunta di parametri
 
@@ -223,7 +223,7 @@ Questo è il flusso di lavoro per la creazione dei parametri:
 >
 >Impossibile aggiungere un parametro perché la proprietà non è visualizzata? È sufficiente modificare la proprietà del livello dal suo valore predefinito (spostando, ridimensionando, nascondendo, ecc.). A questo punto la proprietà dovrebbe essere esposta.
 
-Ulteriori informazioni su [Parametri modello](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html).
+Ulteriori informazioni su [Parametri modello](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html?lang=it).
 
 ## Creazione di un modello con livelli di testo
 
@@ -312,7 +312,7 @@ Potete vedere la frase Sandalo al cioccolato — è il testo stesso.
 - È possibile visualizzare un valore RGB: \red56\green53\blue4, che corrisponde al colore del testo.
 - Anche se la dimensione del carattere è 20, non viene visualizzato il numero 20. Viene tuttavia visualizzato un comando \fs40. Per qualche motivo, RTF misura i caratteri come punti intermedi. \fs40 è quindi la dimensione del carattere.
 
-Sebbene siano disponibili informazioni sufficienti per creare i parametri, nella documentazione di Image Server è disponibile un riferimento completo di tutti i comandi RTF. Visita la [documentazione di Image Server](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html#concept-0d3136db7f6f49668274541cd4b6364c).
+Sebbene siano disponibili informazioni sufficienti per creare i parametri, nella documentazione di Image Server è disponibile un riferimento completo di tutti i comandi RTF. Visita la [documentazione di Image Server](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html?lang=it#concept-0d3136db7f6f49668274541cd4b6364c).
 
 #### Aggiunta di parametri ai livelli di testo
 
@@ -330,7 +330,7 @@ Ecco i passaggi per aggiungere parametri ai livelli di testo.
 >
 >Per aggiungere parametri al colore del testo, aggiungete separatamente i parametri per il rosso, il verde e il blu. Ad esempio, se il valore RTF è `\red56\green53\blue46`, aggiungere parametri separati di colore rosso, verde e blu per i valori 56, 53 e 46. Nell&#39;URL, è necessario modificare il colore chiamando tutti e tre: `&$red=56&$green=53&$blue=46`.
 
-Scopri come [creare parametri di testo dinamico](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html#creating-dynamic-text-parameters).
+Scopri come [creare parametri di testo dinamico](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html?lang=it#creating-dynamic-text-parameters).
 
 ## Pubblicazione e creazione di URL di modelli
 
@@ -344,7 +344,7 @@ Un predefinito immagine per un modello non contiene informazioni speciali. Se di
 
 Per visualizzare le modifiche inviate live al server immagini, è necessario eseguire una pubblicazione. Tieni presente cosa deve essere pubblicato: i vari livelli delle risorse immagine, i font per il testo dinamico e il modello stesso. Analogamente ad altre risorse rich media di Dynamic Media Classic come i set di immagini e i set 360 gradi, un modello base è una costruzione artificiale: è una riga nel database che fa riferimento alle immagini e ai font utilizzando una serie di comandi Image Server. Quando pubblichi il modello, tutto ciò che fai è aggiornare i dati sul server immagini.
 
-Ulteriori informazioni sulla [pubblicazione del modello](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/publishing-templates.html).
+Ulteriori informazioni sulla [pubblicazione del modello](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/publishing-templates.html?lang=it).
 
 ### Costruzione URL modello
 

@@ -29,4 +29,4 @@ Il video seguente fornisce una panoramica dei concetti di base dell’authoring 
 ## Risorse aggiuntive {#additional-resources}
 
 * [Modifica della documentazione sul contenuto delle pagine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it)
-* [Guida rapida all’authoring delle pagine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
+* [Guida rapida all’authoring delle pagine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=it)

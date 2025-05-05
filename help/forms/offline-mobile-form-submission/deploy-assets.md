@@ -32,7 +32,7 @@ Per utilizzare questo caso d’uso nel sistema locale, effettua le seguenti oper
 
 * [Importa il profilo personalizzato](assets/customprofile.zip) che unisce i dati del modulo HTML5 con XDP e restituisce un pdf interattivo.
 
-* [Distribuire il bundle di sviluppo con l&#39;utente del servizio](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=en)
+* [Distribuire il bundle di sviluppo con l&#39;utente del servizio](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=it)
 Aggiungi la seguente voce nel servizio User Mapper di Apache Sling Service utilizzando configMgr
 
 ```
@@ -52,7 +52,7 @@ DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 * Specifica il nome utente/password per l&#39;istanza di authoring e una posizione **esistente nel tuo archivio AEM** per archiviare i dati inviati nelle credenziali di AEM Server utilizzando [configMgr](http://localhost:4503/system/console/configMgr). Puoi lasciare invariato l’URL dell’endpoint su AEM Workflow Server. Endpoint che estrae e memorizza i dati dall&#39;invio nel nodo specificato.
   ![publish-config](assets/publish-config.png)
 
-* [Distribuire il bundle di sviluppo con l&#39;utente del servizio](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=en)
+* [Distribuire il bundle di sviluppo con l&#39;utente del servizio](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=it)
 * [Aprire la configurazione osgi](http://localhost:4503/system/console/configMgr).
 * Cerca **Filtro referrer Apache Sling**. Assicurati che la casella di controllo Consenti vuoto sia selezionata.
 * [Importa il profilo personalizzato](assets/customprofile.zip) che unisce i dati del modulo HTML5 con XDP e restituisce un pdf interattivo.

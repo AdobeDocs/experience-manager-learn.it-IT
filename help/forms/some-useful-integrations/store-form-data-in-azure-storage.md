@@ -23,7 +23,7 @@ Questo articolo illustra come effettuare chiamate REST per archiviare i dati AEM
 Per memorizzare i dati del modulo inviati nell’archiviazione di Azure, è necessario seguire la procedura seguente.
 
 >[!NOTE]
->Il codice di questo articolo non funziona con un modulo adattivo basato su componenti core. [L&#39;articolo equivalente per il modulo adattivo basato su componenti core è disponibile qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
+>Il codice di questo articolo non funziona con un modulo adattivo basato su componenti core. [L&#39;articolo equivalente per il modulo adattivo basato su componenti core è disponibile qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=it)
 
 
 ## Crea account di archiviazione Azure
@@ -104,7 +104,7 @@ Di seguito è riportata una funzione scritta per memorizzare i dati del modulo i
 
 * [Importare il modulo adattivo di esempio](./assets/bank-account-sample-form.zip)
 
-* [Specificare i valori appropriati nella configurazione del portale di Azure utilizzando la console di configurazione OSGi](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
+* [Specificare i valori appropriati nella configurazione del portale di Azure utilizzando la console di configurazione OSGi](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=it#provide-the-blob-sas-token-and-storage-uri)
 
 * [Anteprima e invio del modulo BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 

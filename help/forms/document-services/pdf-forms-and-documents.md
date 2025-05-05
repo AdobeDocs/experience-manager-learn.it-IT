@@ -61,7 +61,7 @@ I PDF XFA dinamici possono modificare il layout in fase di runtime, pertanto le 
 * I moduli dinamici supportano script lato client che modificano il layout e l’impaginazione del modulo. Ad esempio, il file Purchase Order.xdp si espanderà e impaginerà per contenere una quantità infinita di dati se vengono salvati come modulo dinamico
 * I moduli dinamici supportano tutte le proprietà del modulo in fase di esecuzione, mentre i moduli statici supportano solo un sottoinsieme
 
-* [Consulta questo documento per comprendere le differenze tra i moduli pdf statici e dinamici](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents.html#:~:text=Dynamic%20forms%20support%20all%20the,forms%20support%20only%20a%20subset)
+* [Consulta questo documento per comprendere le differenze tra i moduli pdf statici e dinamici](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents.html?lang=it#:~:text=Dynamic%20forms%20support%20all%20the,forms%20support%20only%20a%20subset)
 
 >[!NOTE]
 >

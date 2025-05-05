@@ -24,7 +24,7 @@ Ti sei mai chiesto perché ogni elemento fa nel contesto di AEM all’interno di
 
 ## Contenuto trattato in questo video
 
-+ [Comprendere Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html)
++ [Comprendere Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html?lang=it)
 + [Panoramica di Admin Console](https://helpx.adobe.com/it/enterprise/using/admin-console.html)
 
 ## Risorse aggiuntive

@@ -27,9 +27,9 @@ Risposte alle domande frequenti sulla migrazione dei contenuti ad AEM as a Cloud
 + **AEMaaCS**: [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/introduction.html?lang=it)
 + **BPA**: [Analisi delle best practice](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=it)
 + **CTT**: [Strumento Trasferimento contenuti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=it)
-+ **CAM**: [Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html)
-+ **IMS**: [Sistema Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html)
-+ **DM**: [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1.html)
++ **CAM**: [Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=it)
++ **IMS**: [Sistema Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=it)
++ **DM**: [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1.html?lang=it)
 
 Utilizza il modello seguente per fornire ulteriori dettagli durante la creazione dei ticket di supporto Adobe relativi a CTT.
 
@@ -53,7 +53,7 @@ Per ulteriori informazioni, consulta [prerequisiti per la migrazione cloud](http
 
 ### D: Ho il report BPA più recente dal mio sistema di origine, cosa devo fare con esso?
 
-Esporta il rapporto come CSV e caricalo in Cloud Acceleration Manager, [associato alla tua organizzazione IMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html). Seguire quindi il processo di revisione come [descritto nella fase di preparazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).
+Esporta il rapporto come CSV e caricalo in Cloud Acceleration Manager, [associato alla tua organizzazione IMS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=it). Seguire quindi il processo di revisione come [descritto nella fase di preparazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=it).
 
 Rivedi la valutazione della complessità del codice e dei contenuti fornita dallo strumento e prendi nota delle azioni associate che portano al backlog di refactoring del codice o alla valutazione della migrazione cloud.
 
@@ -79,9 +79,9 @@ Se per la migrazione vengono utilizzati ambienti clone, questo non influirà sul
 
 ### D: Cosa significano i termini &quot;cancella&quot; e &quot;sovrascrivi&quot; nel contesto del CTT?
 
-Nel contesto della [fase di estrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#extraction-setup-phase), le opzioni sono sovrascrivere i dati nel contenitore di staging dai cicli di estrazione precedenti o aggiungervi il differenziale (aggiunto/aggiornato/eliminato). Il contenitore di staging non è un elemento valido, ma è il contenitore di archiviazione BLOB associato al set di migrazione. Ogni set di migrazione ottiene il proprio contenitore di staging.
+Nel contesto della [fase di estrazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=it#extraction-setup-phase), le opzioni sono sovrascrivere i dati nel contenitore di staging dai cicli di estrazione precedenti o aggiungervi il differenziale (aggiunto/aggiornato/eliminato). Il contenitore di staging non è un elemento valido, ma è il contenitore di archiviazione BLOB associato al set di migrazione. Ogni set di migrazione ottiene il proprio contenitore di staging.
 
-Nel contesto della [fase di acquisizione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html), le opzioni sono + per sostituire l&#39;intero archivio dei contenuti di AEMaaCS o sincronizzare il contenuto differenziale (aggiunto/aggiornato/eliminato) dal contenitore di migrazione dell&#39;area di gestione temporanea.
+Nel contesto della [fase di acquisizione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=it), le opzioni sono + per sostituire l&#39;intero archivio dei contenuti di AEMaaCS o sincronizzare il contenuto differenziale (aggiunto/aggiornato/eliminato) dal contenitore di migrazione dell&#39;area di gestione temporanea.
 
 ### D: nel sistema di origine sono presenti più siti web, risorse associate, utenti e gruppi. È possibile migrarli in più fasi in AEMaaCS?
 
@@ -109,7 +109,7 @@ Quando `jcr:content` non è presente a livello di cartella, qualsiasi azione per
 
 ### D: ho creato un set di migrazione. è possibile controllarne la dimensione?
 
-Sì, esiste una funzionalità [Verifica dimensione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size) che fa parte del CTT.
+Sì, esiste una funzionalità [Verifica dimensione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=it#migration-set-size) che fa parte del CTT.
 
 ### D: eseguo la migrazione (estrazione, acquisizione). È possibile verificare che tutto il contenuto estratto sia stato acquisito in Target?
 
@@ -146,7 +146,7 @@ Il processo CTT richiede connettività alle risorse seguenti:
 + Ambiente AEM as a Cloud Service di destinazione: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 + Servizio di archiviazione BLOB di Azure: `casstorageprod.blob.core.windows.net`
 
-Per ulteriori informazioni sulla [connettività di origine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#source-environment-connectivity), consultare la documentazione.
+Per ulteriori informazioni sulla [connettività di origine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=it#source-environment-connectivity), consultare la documentazione.
 
 ## Elaborazione delle risorse in domande relative a Dynamic Media
 
@@ -209,6 +209,6 @@ L&#39;approccio di cui sopra può essere utilizzato solo per misurare la durata 
 
 + [Suggerimenti per la migrazione ad Experience Manager nel cloud ( Summit 2022)](https://business.adobe.com/summit/2022/sessions/tips-and-tricks-for-migrating-to-experience-manage-tw109.html)
 
-+ [Video serie esperti CTT](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.html)
++ [Video serie esperti CTT](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.html?lang=it)
 
-+ [Video della serie Expert su altri argomenti di AEMaaCS](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-experts-series.html)
++ [Video della serie Expert su altri argomenti di AEMaaCS](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-experts-series.html?lang=it)

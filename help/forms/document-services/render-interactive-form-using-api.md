@@ -24,7 +24,7 @@ In questo articolo esamineremo il seguente servizio
 
 * FormsService: si tratta di un servizio molto versatile che consente di esportare/importare dati da e in file PDF e anche generare PDF interattivi unendo i dati xml in un modello XDP
 
-Il [javadoc ufficiale per l&#39;API AEM Forms è elencato qui](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
+Il [javadoc ufficiale per l&#39;API AEM Forms è elencato qui](https://helpx.adobe.com/it/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 
 Il seguente snippet di codice esegue il rendering del PDF interattivo utilizzando l’operazione renderPDFForm di FormsService. Il file schengen.xdp è un modello utilizzato per unire i dati xml.
 

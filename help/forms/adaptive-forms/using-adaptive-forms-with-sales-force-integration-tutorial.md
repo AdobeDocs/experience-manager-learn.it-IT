@@ -27,8 +27,8 @@ Prerequisiti per questa esercitazione:
 * Scorri fino alla parte inferiore della pagina, scarica il file swagger e salvalo sul disco rigido.
 * AEM Forms con SSL abilitato
 
-   * [Documentazione ufficiale per l&#39;abilitazione di SSL su AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
-   * [Documentazione ufficiale per l&#39;abilitazione di SSL su AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
+   * [Documentazione ufficiale per l&#39;abilitazione di SSL su AEM 6.3](https://helpx.adobe.com/it/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
+   * [Documentazione ufficiale per l&#39;abilitazione di SSL su AEM 6.4](https://helpx.adobe.com/it/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
 
 * Devi avere un account Salesforce
 * Devi creare un’app connessa. La documentazione ufficiale di Salesforce per la creazione dell&#39;app è elencata [qui](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
@@ -73,7 +73,7 @@ Il passaggio successivo consiste nel creare Data Source in AEM Forms. Segui i se
 * Gestore autenticazione: Bearer di autorizzazione
 * Fai clic su &quot;Connetti a OAUTH &quot;.Se tutto va bene, non dovresti vedere alcun errore
 
-Dopo aver creato il modello dati modulo con Salesforce, puoi creare l’integrazione dati modulo utilizzando il Source dati appena creato. La documentazione ufficiale per la creazione dell&#39;integrazione dei dati del modulo è [qui](https://helpx.adobe.com/aem-forms/6-3/data-integration.html).
+Dopo aver creato il modello dati modulo con Salesforce, puoi creare l’integrazione dati modulo utilizzando il Source dati appena creato. La documentazione ufficiale per la creazione dell&#39;integrazione dei dati del modulo è [qui](https://helpx.adobe.com/it/aem-forms/6-3/data-integration.html).
 
 Assicurati di configurare il modello dati modulo per includere il servizio POST per creare un oggetto Lead in SFDC.
 
@@ -106,7 +106,7 @@ Dopo aver creato il modello dati modulo, puoi creare un Forms adattivo basato su
    * Gestore autenticazione: Bearer di autorizzazione
    * Fai clic sul pulsante &quot;Connetti a OAuth&quot;. In caso di errori, controlla i passaggi precedenti per assicurarti che tutte le informazioni siano state inserite correttamente.
 
-Dopo aver creato il Data Source utilizzando Salesforce, puoi creare l’integrazione dei dati del modulo utilizzando il Data Source appena creato. Il collegamento alla documentazione per questo è [qui](https://helpx.adobe.com/experience-manager/6-4/forms/using/create-form-data-models.html)
+Dopo aver creato il Data Source utilizzando Salesforce, puoi creare l’integrazione dei dati del modulo utilizzando il Data Source appena creato. Il collegamento alla documentazione per questo è [qui](https://helpx.adobe.com/it/experience-manager/6-4/forms/using/create-form-data-models.html)
 
 Assicurati di configurare il modello dati modulo per includere il servizio POST per creare un oggetto Lead in SFDC.
 

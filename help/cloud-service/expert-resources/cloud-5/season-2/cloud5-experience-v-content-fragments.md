@@ -24,9 +24,9 @@ Un confronto tra le differenze tra un frammento di esperienza e un frammento di 
 
 ## Contenuto trattato in questo video
 
-+ [Utilizzo dei frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments.html)
-+ [Utilizzo di Frammenti esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html)
-+ [Documentazione frammento esperienza](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/experience-fragments.html)
++ [Utilizzo dei frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments.html?lang=it)
++ [Utilizzo di Frammenti esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=it)
++ [Documentazione frammento esperienza](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/experience-fragments.html?lang=it)
 
 ## Risorse aggiuntive
 

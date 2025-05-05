@@ -29,12 +29,12 @@ ht-degree: 53%
 
 ## Configurazione
 
-La configurazione della [pipeline CI/CD di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/pipelines/configuring-production-pipelines.html) definisce il trigger che avvierà la pipeline, i parametri che controllano la distribuzione di produzione e i parametri di test delle prestazioni.
+La configurazione della [pipeline CI/CD di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/pipelines/configuring-production-pipelines.html?lang=it) definisce il trigger che avvierà la pipeline, i parametri che controllano la distribuzione di produzione e i parametri di test delle prestazioni.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314?quality=12&learn=on)
 
 ### Esecuzione delle pipeline
 
-La pipeline di produzione [CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) viene utilizzata per generare e distribuire il codice nell&#39;ambiente di produzione tramite Stage, riducendo il time-to-value.
+La pipeline di produzione [CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=it) viene utilizzata per generare e distribuire il codice nell&#39;ambiente di produzione tramite Stage, riducendo il time-to-value.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317?quality=12&learn=on)

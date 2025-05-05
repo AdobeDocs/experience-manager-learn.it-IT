@@ -25,7 +25,7 @@ Ai fini di questa esercitazione verrà creato un nuovo modello di modulo adattiv
 
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=12&learn=on)
 
-[Segui questo articolo per comprendere il processo di creazione di un modello di modulo adattivo e di un componente pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=en#storing-and-retrieving-form-data)
+[Segui questo articolo per comprendere il processo di creazione di un modello di modulo adattivo e di un componente pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/storing-and-retrieving-form-data/part5.html?lang=it#storing-and-retrieving-form-data)
 
 
 ## Risorse

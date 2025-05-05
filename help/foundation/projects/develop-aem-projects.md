@@ -26,9 +26,9 @@ Questo tutorial di sviluppo illustra come sviluppare per [!DNL AEM Projects]. In
 
 ## Introduzione {#introduction}
 
-[[!DNL AEM Projects]](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) è una funzionalità di AEM progettata per semplificare la gestione e il raggruppamento di tutti i flussi di lavoro e le attività associati alla creazione di contenuti come parte di un&#39;implementazione di AEM Sites o Assets.
+[[!DNL AEM Projects]](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/sites/authoring/projects/projects) è una funzionalità di AEM progettata per semplificare la gestione e il raggruppamento di tutti i flussi di lavoro e le attività associati alla creazione di contenuti come parte di un&#39;implementazione di AEM Sites o Assets.
 
-AEM Projects include diversi [modelli di progetto OOTB](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects). Durante la creazione di un progetto, gli autori possono scegliere tra questi modelli disponibili. Le implementazioni AEM di grandi dimensioni con requisiti aziendali specifici richiedono la creazione di modelli di progetto personalizzati, personalizzati in base alle esigenze. Creando un modello di progetto personalizzato, gli sviluppatori possono configurare il dashboard del progetto, connettersi ai flussi di lavoro personalizzati e creare ruoli di business aggiuntivi per un progetto. Esamineremo la struttura di un modello di progetto e ne creeremo uno di esempio.
+AEM Projects include diversi [modelli di progetto OOTB](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/sites/authoring/projects/projects). Durante la creazione di un progetto, gli autori possono scegliere tra questi modelli disponibili. Le implementazioni AEM di grandi dimensioni con requisiti aziendali specifici richiedono la creazione di modelli di progetto personalizzati, personalizzati in base alle esigenze. Creando un modello di progetto personalizzato, gli sviluppatori possono configurare il dashboard del progetto, connettersi ai flussi di lavoro personalizzati e creare ruoli di business aggiuntivi per un progetto. Esamineremo la struttura di un modello di progetto e ne creeremo uno di esempio.
 
 ![Scheda Progetto Personalizzata](./assets/develop-aem-projects/custom-project-card.png)
 
@@ -39,7 +39,7 @@ Questo tutorial illustra il codice necessario per creare un modello di progetto 
 * [Pacchetto tutorial completato](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Archivio completo del codice su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Questo tutorial presuppone una conoscenza di base delle [procedure di sviluppo AEM](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) e una certa familiarità con la [configurazione del progetto AEM Maven](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html). Tutto il codice menzionato è destinato a essere utilizzato come riferimento e deve essere distribuito solo a [un&#39;istanza AEM di sviluppo locale](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
+Questo tutorial presuppone una conoscenza di base delle [procedure di sviluppo AEM](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) e una certa familiarità con la [configurazione del progetto AEM Maven](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=it). Tutto il codice menzionato è destinato a essere utilizzato come riferimento e deve essere distribuito solo a [un&#39;istanza AEM di sviluppo locale](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
 
 ## Struttura di un modello di progetto
 
@@ -69,11 +69,11 @@ Il nodo principale del modello di progetto è di tipo **cq:Template**. In questo
 
 ### Gadget {#gadgets}
 
-Su questo nodo non sono presenti proprietà aggiuntive, ma i figli del nodo gadget controllano quali tessere di progetto popolano il dashboard del progetto quando viene creato un nuovo progetto. [I riquadri del progetto](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) (noti anche come gadget o pod) sono schede semplici che popolano l&#39;area di lavoro di un progetto. Un elenco completo delle tessere ootb è disponibile in: **/libs/cq/gui/components/projects/admin/pod. &#x200B;** I proprietari dei progetti possono sempre aggiungere/rimuovere tessere dopo la creazione di un progetto.
+Su questo nodo non sono presenti proprietà aggiuntive, ma i figli del nodo gadget controllano quali tessere di progetto popolano il dashboard del progetto quando viene creato un nuovo progetto. [I riquadri del progetto](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/sites/authoring/projects/projects) (noti anche come gadget o pod) sono schede semplici che popolano l&#39;area di lavoro di un progetto. Un elenco completo delle tessere ootb è disponibile in: **/libs/cq/gui/components/projects/admin/pod. &#x200B;** I proprietari dei progetti possono sempre aggiungere/rimuovere tessere dopo la creazione di un progetto.
 
 ### Ruoli {#roles}
 
-Ci sono tre [Ruoli predefiniti](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) per ogni progetto: **Osservatori**, **Editor** e **Proprietari**. Aggiungendo nodi secondari sotto il nodo dei ruoli, puoi aggiungere ulteriori Ruoli di progetto specifici per l’azienda per il modello. Puoi quindi collegare questi ruoli a flussi di lavoro specifici associati al progetto.
+Ci sono tre [Ruoli predefiniti](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/sites/authoring/projects/projects) per ogni progetto: **Osservatori**, **Editor** e **Proprietari**. Aggiungendo nodi secondari sotto il nodo dei ruoli, puoi aggiungere ulteriori Ruoli di progetto specifici per l’azienda per il modello. Puoi quindi collegare questi ruoli a flussi di lavoro specifici associati al progetto.
 
 ### Flussi di lavoro {#workflows}
 
@@ -129,7 +129,7 @@ Poiché stiamo principalmente copiando/configurando nodi, utilizzeremo CRXDE Lit
    1. Aggiungi un nuovo nodo **nt:unstructured** sotto il progetto/gadget di authoring denominato **tasks**.
    1. Aggiungi proprietà stringa al nodo attività per **cardWeight** = &quot;100&quot;, **jcr:title**=&quot;Attività&quot; e **sling:resourceType**=&quot;cq/gui/components/projects/admin/pod/taskpod&quot;.
 
-   Ora il riquadro [Attività](https://experienceleague.adobe.com/en/docs) verrà visualizzato per impostazione predefinita quando viene creato un nuovo progetto.
+   Ora il riquadro [Attività](https://experienceleague.adobe.com/it/docs) verrà visualizzato per impostazione predefinita quando viene creato un nuovo progetto.
 
    ```shell
    ../projects/templates/authoring-project
@@ -152,7 +152,7 @@ Poiché stiamo principalmente copiando/configurando nodi, utilizzeremo CRXDE Lit
    1. Aggiungi un altro nodo **nt:unstructured** etichettato come approvatori come figlio del nodo roles.
    1. Aggiungi proprietà stringa **jcr:title** = &quot;**Approvers**&quot;, **roleclass** =&quot;**owner**&quot;, **roleid**=&quot;**approvers**&quot;.
       1. Il nome del nodo approvatori, nonché jcr:title e roleid possono essere qualsiasi valore stringa (purché roleid sia univoco).
-      1. **roleclass** gestisce le autorizzazioni applicate per tale ruolo in base ai [tre ruoli OOTB](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects): **owner**, **editor** e **observer**.
+      1. **roleclass** gestisce le autorizzazioni applicate per tale ruolo in base ai [tre ruoli OOTB](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/sites/authoring/projects/projects): **owner**, **editor** e **observer**.
       1. In generale, se il ruolo personalizzato è più di un ruolo manageriale, la classe a rotelle può essere **proprietario;** se è un ruolo di authoring più specifico come Fotografo o Designer, la classe a rotelle **editor** dovrebbe essere sufficiente. La grande differenza tra **owner** e **editor** è che i proprietari del progetto possono aggiornare le proprietà del progetto e aggiungere nuovi utenti al progetto.
 
    ```shell
@@ -308,7 +308,7 @@ L’ultimo passaggio del flusso di lavoro utilizza il passaggio del processo di 
 
    ![Finestra di dialogo per creazione flusso di lavoro](./assets/develop-aem-projects/workflow-create-dialog.png)
 
-   [Per ulteriori informazioni sulla creazione di flussi di lavoro, consulta questa pagina](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-models).
+   [Per ulteriori informazioni sulla creazione di flussi di lavoro, consulta questa pagina](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-models).
 
 1. Come best practice, i flussi di lavoro personalizzati devono essere raggruppati in una cartella separata sotto /etc/workflow/models. In CRXDE Lite, crea una **&#39;nt:folder&#39;** sotto /etc/workflow/models denominata **&quot;aem-guides&quot;**. L’aggiunta di una sottocartella assicura che i flussi di lavoro personalizzati non vengano accidentalmente sovrascritti durante gli aggiornamenti o le installazioni di Service Pack.
 
@@ -320,7 +320,7 @@ L’ultimo passaggio del flusso di lavoro utilizza il passaggio del processo di 
 
    >[!NOTE]
    >
-   >Se utilizzi AEM 6.4+, la posizione del flusso di lavoro è cambiata. Per ulteriori dettagli, consulta [qui.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
+   >Se utilizzi AEM 6.4+, la posizione del flusso di lavoro è cambiata. Per ulteriori dettagli, consulta [qui.](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
 
    Se si utilizza AEM 6.4+, il modello di flusso di lavoro viene creato in `/conf/global/settings/workflow/models`. Ripetere i passaggi precedenti con la directory /conf, aggiungere una sottocartella denominata `aem-guides` e spostare `content-approval-workflow` sotto di essa.
 
@@ -629,13 +629,13 @@ La creazione di una procedura guidata personalizzata può essere molto utile in 
 
 1. In CRXDE-Lite verrà creata una sottocartella sotto la cartella `/apps/aem-guides/projects-tasks/projects` denominata &quot;procedure guidate&quot;. Copiare la procedura guidata predefinita da: `/libs/cq/core/content/projects/workflowwizards/default_workflow` sotto la cartella delle procedure guidate appena create e rinominarla in **content-approval-start**. Il percorso completo dovrebbe essere: `/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start`.
 
-   La procedura guidata predefinita è una procedura guidata a due colonne la cui prima colonna mostra Titolo, Descrizione e Miniatura del modello di flusso di lavoro selezionato. La seconda colonna include campi per Titolo flusso di lavoro, Commento iniziale e Percorso payload. La procedura guidata è un modulo interfaccia utente touch standard e utilizza [componenti modulo interfaccia utente Granite](https://experienceleague.adobe.com/en/docs) standard per compilare i campi.
+   La procedura guidata predefinita è una procedura guidata a due colonne la cui prima colonna mostra Titolo, Descrizione e Miniatura del modello di flusso di lavoro selezionato. La seconda colonna include campi per Titolo flusso di lavoro, Commento iniziale e Percorso payload. La procedura guidata è un modulo interfaccia utente touch standard e utilizza [componenti modulo interfaccia utente Granite](https://experienceleague.adobe.com/it/docs) standard per compilare i campi.
 
    ![procedura guidata flusso di lavoro approvazione contenuti](./assets/develop-aem-projects/content-approval-start-wizard.png)
 
 1. Verrà aggiunto un campo aggiuntivo alla procedura guidata utilizzato per impostare l&#39;assegnatario della prima attività nel flusso di lavoro (vedere [Crea modello flusso di lavoro](#create-workflow-model): passaggio 5).
 
-   Sotto `../content-approval-start/jcr:content/items/column2/items` creare un nuovo nodo di tipo `nt:unstructured` denominato **&quot;assign&quot;**. Verrà utilizzato il componente Selettore utente Progetti (basato sul [componente Selettore utente Granite](https://experienceleague.adobe.com/en/docs)). Questo campo modulo consente di limitare facilmente la selezione di utenti e gruppi solo a quelli appartenenti al progetto corrente.
+   Sotto `../content-approval-start/jcr:content/items/column2/items` creare un nuovo nodo di tipo `nt:unstructured` denominato **&quot;assign&quot;**. Verrà utilizzato il componente Selettore utente Progetti (basato sul [componente Selettore utente Granite](https://experienceleague.adobe.com/it/docs)). Questo campo modulo consente di limitare facilmente la selezione di utenti e gruppi solo a quelli appartenenti al progetto corrente.
 
    Di seguito è riportata la rappresentazione XML del nodo **assign**:
 
@@ -691,7 +691,7 @@ La creazione di una procedura guidata personalizzata può essere molto utile in 
    </priority>
    ```
 
-1. Consentiremo all’iniziatore del flusso di lavoro di impostare la scadenza dell’attività iniziale. Per acquisire questo input verrà utilizzato il campo modulo [Granite UI DatePicker](https://experienceleague.adobe.com/en/docs). Verrà inoltre aggiunto un campo nascosto con un [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) per garantire che l&#39;input venga memorizzato come proprietà di tipo Data nel JCR.
+1. Consentiremo all’iniziatore del flusso di lavoro di impostare la scadenza dell’attività iniziale. Per acquisire questo input verrà utilizzato il campo modulo [Granite UI DatePicker](https://experienceleague.adobe.com/it/docs). Verrà inoltre aggiunto un campo nascosto con un [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) per garantire che l&#39;input venga memorizzato come proprietà di tipo Data nel JCR.
 
    Aggiungi due nodi **nt:unstructured** con le seguenti proprietà rappresentate in XML:
 
@@ -738,7 +738,7 @@ La configurazione del flusso di lavoro è un&#39;area di un modello di progetto 
    >Se utilizzi AEM 6.4, la posizione del flusso di lavoro è cambiata. Puntare la proprietà `modelId` alla posizione del modello di flusso di lavoro di runtime in `/var/workflow/models/aem-guides/content-approval-workflow`
    >
    >
-   >Per ulteriori dettagli sulla modifica del percorso del flusso di lavoro, consulta [qui.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
+   >Per ulteriori dettagli sulla modifica del percorso del flusso di lavoro, consulta [qui.](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
 
    ```xml
    <contentapproval
@@ -754,4 +754,4 @@ La configurazione del flusso di lavoro è un&#39;area di un modello di progetto 
 
 * [Scarica pacchetto di esercitazione completato](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Archivio completo del codice su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
-* [Documentazione dei progetti AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects)
+* [Documentazione dei progetti AEM](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/sites/authoring/projects/projects)

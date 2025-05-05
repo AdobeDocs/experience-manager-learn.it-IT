@@ -223,7 +223,7 @@ Nell&#39;app di esempio è presente un componente React modale (`GenerateImageMo
 È importante sottolineare che qualsiasi interazione con AEM da parte dell&#39;estensione deve essere delegata a un&#39;azione [AppBuilder Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/), che è un processo separato senza server in esecuzione in [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/).
 L’utilizzo delle azioni di Adobe I/O Runtime per comunicare con AEM consiste nell’evitare problemi di connettività CORS (Cross-Origin Resource Sharing).
 
-Quando il modulo _Genera immagine_ viene inviato, un `onSubmitHandler()` personalizzato richiama l&#39;azione Adobe I/O Runtime, trasmettendo la descrizione dell&#39;immagine, l&#39;host AEM corrente (dominio) e il token di accesso AEM dell&#39;utente. L&#39;azione chiama quindi l&#39;API [Image generation](https://beta.openai.com/docs/guides/images/image-generation-beta) di OpenAI per generare un&#39;immagine utilizzando la descrizione dell&#39;immagine inviata. Successivamente, utilizzando la classe `DirectBinaryUpload` del modulo nodo [Caricamento AEM](https://github.com/adobe/aem-upload), carica l&#39;immagine generata in AEM e infine utilizza l&#39;[API Frammento di contenuto AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html) per aggiornare i frammenti di contenuto.
+Quando il modulo _Genera immagine_ viene inviato, un `onSubmitHandler()` personalizzato richiama l&#39;azione Adobe I/O Runtime, trasmettendo la descrizione dell&#39;immagine, l&#39;host AEM corrente (dominio) e il token di accesso AEM dell&#39;utente. L&#39;azione chiama quindi l&#39;API [Image generation](https://beta.openai.com/docs/guides/images/image-generation-beta) di OpenAI per generare un&#39;immagine utilizzando la descrizione dell&#39;immagine inviata. Successivamente, utilizzando la classe `DirectBinaryUpload` del modulo nodo [Caricamento AEM](https://github.com/adobe/aem-upload), carica l&#39;immagine generata in AEM e infine utilizza l&#39;[API Frammento di contenuto AEM](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=it) per aggiornare i frammenti di contenuto.
 
 Quando viene ricevuta la risposta dall’azione Adobe I/O Runtime, il modale viene aggiornato per visualizzare i risultati dell’operazione di generazione dell’immagine.
 
@@ -482,7 +482,7 @@ export default function GenerateImageModal() {
 
 >[!NOTE]
 >
->Nella funzione `buildAssetDetailsURL()`, il valore della variabile `aemAssetdetailsURL` presuppone che [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html#overview) sia abilitato. Se Unified Shell è stato disabilitato, è necessario rimuovere `/ui#/aem` dal valore della variabile.
+>Nella funzione `buildAssetDetailsURL()`, il valore della variabile `aemAssetdetailsURL` presuppone che [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=it#overview) sia abilitato. Se Unified Shell è stato disabilitato, è necessario rimuovere `/ui#/aem` dal valore della variabile.
 
 
 ### Azione Adobe I/O Runtime

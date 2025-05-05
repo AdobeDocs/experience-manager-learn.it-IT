@@ -115,7 +115,7 @@ Per utilizzare questa funzionalità sul server AEM
 >
 >Assicurati che l’installazione di AEM Forms sia stata completata. Tutti i bundle devono essere in stato attivo.
 >
->Assicurati di aver aggiunto le librerie BouncyCastle e RSA del delegato di avvio, come indicato in questa [Installazione di AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>Assicurati di aver aggiunto le librerie BouncyCastle e RSA del delegato di avvio, come indicato in questa [Installazione di AEM Forms](https://helpx.adobe.com/it/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
 >
 >**Avvertenze per questa demo**
 >

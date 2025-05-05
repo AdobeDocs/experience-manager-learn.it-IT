@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Testare un processo di lavoro Asset Compute
 
-Il progetto Asset Compute definisce un modello per la creazione e l&#39;esecuzione di [test dei processi di lavoro Asset Compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html).
+Il progetto Asset Compute definisce un modello per la creazione e l&#39;esecuzione di [test dei processi di lavoro Asset Compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html?lang=it).
 
 ## Anatomia di un test di lavoro
 

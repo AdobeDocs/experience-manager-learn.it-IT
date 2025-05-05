@@ -33,7 +33,7 @@ Il servizio di importazione in blocco viene utilizzato per trasferire i file arc
 
 >[!TIP]
 >
-> Le origini di input in questo video mostrano solo Azure Blob Storage e Amazon S3; tuttavia, le origini disponibili continuano a crescere nel tempo. Per un elenco completo delle origini di input supportate, fare riferimento alle opzioni disponibili nel prodotto o alla [documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
+> Le origini di input in questo video mostrano solo Azure Blob Storage e Amazon S3; tuttavia, le origini disponibili continuano a crescere nel tempo. Per un elenco completo delle origini di input supportate, fare riferimento alle opzioni disponibili nel prodotto o alla [documentazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=it#bulk-upload).
 
 ## Attività chiave
 
@@ -43,6 +43,6 @@ Il servizio di importazione in blocco viene utilizzato per trasferire i file arc
 
 ## Altre risorse
 
-+ [Opzioni di configurazione del servizio di importazione in blocco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#configure-bulk-ingestor-tool)
-+ [Sessione Adobe Developers Live per l&#39;acquisizione delle risorse](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html)
++ [Opzioni di configurazione del servizio di importazione in blocco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=it#configure-bulk-ingestor-tool)
++ [Sessione Adobe Developers Live per l&#39;acquisizione delle risorse](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html?lang=it)
 

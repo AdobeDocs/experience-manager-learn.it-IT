@@ -24,5 +24,5 @@ Con il miglioramento della traduzione del sito della procedura guidata Crea copi
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Documentazione della Creazione guidata copia lingua](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-wizard.html)
-* [Best practice MSM](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-best-practices.html)
+* [Documentazione della Creazione guidata copia lingua](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/tc-wizard.html)
+* [Best practice MSM](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/msm-best-practices.html)

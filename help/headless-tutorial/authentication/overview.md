@@ -37,7 +37,7 @@ Prima di seguire questa esercitazione, assicurati che siano presenti i seguenti 
 
 ## Panoramica dell’applicazione esterna
 
-Questa esercitazione utilizza un&#39;[applicazione Node.js semplice](./assets/aem-guides_token-authentication-external-application.zip) eseguita dalla riga di comando per aggiornare i metadati delle risorse in AEM as a Cloud Service utilizzando [API HTTP Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html).
+Questa esercitazione utilizza un&#39;[applicazione Node.js semplice](./assets/aem-guides_token-authentication-external-application.zip) eseguita dalla riga di comando per aggiornare i metadati delle risorse in AEM as a Cloud Service utilizzando [API HTTP Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=it).
 
 Il flusso di esecuzione dell’applicazione Node.js è il seguente:
 

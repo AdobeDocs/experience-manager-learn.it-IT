@@ -122,7 +122,7 @@ Per importare il certificato di AEM, effettua le seguenti operazioni:
 
    ![Chiave privata e certificato AEM importati](assets/mutual-tls-authentication/aem-privatekey-cert-imported.png)
 
-Se il provider API utilizza un certificato CA autofirmato, importa il certificato ricevuto nel TrustStore di AEM. Segui i passaggi descritti in [qui](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html#httpclient-and-load-aem-truststore-material).
+Se il provider API utilizza un certificato CA autofirmato, importa il certificato ricevuto nel TrustStore di AEM. Segui i passaggi descritti in [qui](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/call-internal-apis-having-private-certificate.html?lang=it#httpclient-and-load-aem-truststore-material).
 
 Allo stesso modo, se AEM utilizza un certificato CA autofirmato, richiedi al provider API di importarlo.
 
@@ -217,7 +217,7 @@ private KeyStore getAEMTrustStore(KeyStoreService keyStoreService, ResourceResol
 - Se il provider API utilizza un certificato CA autofirmato, ottenere il TrustStore AEM globale con il metodo `getAEMTrustStore(...)`.
 - Creare un oggetto di `SSLContextBuilder`. Vedere Java™ [Dettagli API](https://javadoc.io/static/org.apache.httpcomponents/httpcore/4.4.8/index.html?org/apache/http/ssl/SSLContextBuilder.html).
 - Carica il KeyStore AEM dell&#39;utente in `SSLContextBuilder` utilizzando il metodo `loadKeyMaterial(final KeyStore keystore,final char[] keyPassword)`.
-- La password del keystore è la password impostata durante la creazione del keystore. Deve essere memorizzata nella configurazione OSGi. Vedere [Valori di configurazione segreti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values).
+- La password del keystore è la password impostata durante la creazione del keystore. Deve essere memorizzata nella configurazione OSGi. Vedere [Valori di configurazione segreti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=it#secret-configuration-values).
 
 ## Evita le modifiche al keystore JVM
 

@@ -43,5 +43,5 @@ Per ulteriori informazioni su Dynamic Media Classic, consulta le risorse seguent
 
 - [Dynamic Media Classic su Experience League - Valore](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
 - [Dynamic Media Classic su Experience League - Ulteriori operazioni](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
-- [Archivi newsletter Dynamic Medie](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html)
-- [Documentazione di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)
+- [Archivi newsletter Dynamic Medie](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/dynamic-media-newsletter.html?lang=it)
+- [Documentazione di Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=it)

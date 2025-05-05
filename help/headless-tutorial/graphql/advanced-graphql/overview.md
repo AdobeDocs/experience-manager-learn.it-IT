@@ -27,7 +27,7 @@ Ti consigliamo di completare le [esercitazioni di base](../multi-step/overview.m
 
 >[!CAUTION]
 >
->Se non hai accesso all&#39;ambiente AEM as a Cloud Service, puoi completare [la configurazione rapida di AEM Headless utilizzando il SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html) locale. Tuttavia, è importante notare che alcune pagine dell’interfaccia utente del prodotto, come la navigazione per frammenti di contenuto, sono diverse.
+>Se non hai accesso all&#39;ambiente AEM as a Cloud Service, puoi completare [la configurazione rapida di AEM Headless utilizzando il SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/quick-setup/local-sdk.html?lang=it) locale. Tuttavia, è importante notare che alcune pagine dell’interfaccia utente del prodotto, come la navigazione per frammenti di contenuto, sono diverse.
 
 
 
@@ -49,7 +49,7 @@ Il video seguente offre una panoramica di alto livello dei concetti descritti in
 
 >[!CAUTION]
 >
->Questo video (al minuto 2:25) parla dell’installazione dell’editor di query GraphiQL tramite Gestione pacchetti per esplorare le query GraphQL. Tuttavia, nelle versioni più recenti di AEM as Cloud Service è fornito un **GraphiQL Explorer** incorporato, pertanto l&#39;installazione del pacchetto non è richiesta. Per ulteriori informazioni, vedere [Utilizzo dell&#39;IDE GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html).
+>Questo video (al minuto 2:25) parla dell’installazione dell’editor di query GraphiQL tramite Gestione pacchetti per esplorare le query GraphQL. Tuttavia, nelle versioni più recenti di AEM as Cloud Service è fornito un **GraphiQL Explorer** incorporato, pertanto l&#39;installazione del pacchetto non è richiesta. Per ulteriori informazioni, vedere [Utilizzo dell&#39;IDE GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html?lang=it).
 
 
 ## Configurazione del progetto
@@ -79,7 +79,7 @@ Osservare che `WKND Shared Endpoint` è già stato creato. Per creare un endpoin
 
 >[!NOTE]
 >
-> Dopo aver salvato l’endpoint, viene visualizzata una finestra modale per la visita alla console Sicurezza, che consente di regolare le impostazioni di sicurezza se si desidera configurare l’accesso all’endpoint. Tuttavia, le autorizzazioni di sicurezza stesse non rientrano nell’ambito di questa esercitazione. Per ulteriori informazioni, consulta la [documentazione di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
+> Dopo aver salvato l’endpoint, viene visualizzata una finestra modale per la visita alla console Sicurezza, che consente di regolare le impostazioni di sicurezza se si desidera configurare l’accesso all’endpoint. Tuttavia, le autorizzazioni di sicurezza stesse non rientrano nell’ambito di questa esercitazione. Per ulteriori informazioni, consulta la [documentazione di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=it).
 
 ### Rivedi la struttura del contenuto WKND e la cartella principale della lingua
 

@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Best practice
 
-I moduli di Adobe Experience Manager (AEM) consentono di trasformare transazioni complesse in esperienze digitali semplici e straordinarie. Il documento seguente descrive alcune best practice aggiuntive da seguire durante lo sviluppo di Adaptive Forms. Questo documento deve essere utilizzato insieme a [questo documento](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
+I moduli di Adobe Experience Manager (AEM) consentono di trasformare transazioni complesse in esperienze digitali semplici e straordinarie. Il documento seguente descrive alcune best practice aggiuntive da seguire durante lo sviluppo di Adaptive Forms. Questo documento deve essere utilizzato insieme a [questo documento](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
 
 ## Convenzioni di denominazione
 

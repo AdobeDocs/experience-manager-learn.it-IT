@@ -31,9 +31,9 @@ Una parte fondamentale dell’onboarding consiste nella creazione di programmi A
 
 ## Attività chiave
 
-+ Un amministratore di sistema utilizza [Admin Console](https://adminconsole.adobe.com/) per assegnare uno o più utenti al profilo di prodotto [Cloud Manager - Proprietario business](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html).
-+ Gli utenti assegnati al profilo di prodotto Proprietario business utilizzano le funzionalità self-service di [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=it) per [creare programmi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html) e [aggiungere ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html)
-+ Utilizza [Admin Console](https://adminconsole.adobe.com/) per assegnare sviluppatori e utenti a diversi [ruoli Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) e concedere autorizzazioni per vari ambienti AEM.
++ Un amministratore di sistema utilizza [Admin Console](https://adminconsole.adobe.com/) per assegnare uno o più utenti al profilo di prodotto [Cloud Manager - Proprietario business](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=it).
++ Gli utenti assegnati al profilo di prodotto Proprietario business utilizzano le funzionalità self-service di [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=it) per [creare programmi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html?lang=it) e [aggiungere ambienti](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=it)
++ Utilizza [Admin Console](https://adminconsole.adobe.com/) per assegnare sviluppatori e utenti a diversi [ruoli Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=it) e concedere autorizzazioni per vari ambienti AEM.
 
 ## Esercizio pratico
 

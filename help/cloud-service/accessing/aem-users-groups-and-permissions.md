@@ -26,11 +26,11 @@ ht-degree: 74%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=it" text="Supporto IMS per Adobe Experience Manager as a Cloud Service"
 >additional-url="https://helpx.adobe.com/it/enterprise/admin-guide.html/enterprise/using/identity.html" text="Gruppi di utenti forniti da AEM e relative autorizzazioni"
 
-Adobe Experience Manager si basa sugli utenti, i gruppi di utenti e i profili di prodotto di Adobe IMS per consentire agli utenti di accedere ad AEM con autorizzazioni personalizzabili. Scopri come definire i gruppi e le autorizzazioni di AEM, che si basano sui [gruppi di utenti forniti da AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/security#built-in-users-and-groups), e come funzionano insieme alle astrazioni di Adobe IMS per fornire un accesso semplice e personalizzabile ad AEM.
+Adobe Experience Manager si basa sugli utenti, i gruppi di utenti e i profili di prodotto di Adobe IMS per consentire agli utenti di accedere ad AEM con autorizzazioni personalizzabili. Scopri come definire i gruppi e le autorizzazioni di AEM, che si basano sui [gruppi di utenti forniti da AEM](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/security/security#built-in-users-and-groups), e come funzionano insieme alle astrazioni di Adobe IMS per fornire un accesso semplice e personalizzabile ad AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39151?quality=12&learn=on)
 
 ## Risorse aggiuntive
 
-+ [Supporto IMS per Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html)
-+ [Gruppi di utenti forniti da AEM e relative autorizzazioni](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/security.html)
++ [Supporto IMS per Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=it)
++ [Gruppi di utenti forniti da AEM e relative autorizzazioni](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/security.html?lang=it)

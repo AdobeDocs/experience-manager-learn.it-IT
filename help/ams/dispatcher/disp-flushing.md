@@ -175,7 +175,7 @@ Come puoi vedere in questo esempio, il file è più vecchio del file `.stat` e v
 
 ## Impostazioni file farm
 
-La documentazione qui presente è valida per tutte le opzioni di configurazione: [https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it)
+La documentazione qui presente è valida per tutte le opzioni di configurazione: [https://docs.adobe.com/content/help/it-IT/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-dispatcher_configuring-the-dispatcher-cache-cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it)
 
 Vogliamo evidenziarne alcune che riguardano lo scaricamento della cache
 

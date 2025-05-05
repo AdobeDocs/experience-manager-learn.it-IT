@@ -44,4 +44,4 @@ Il componente Indirizzo può ora essere utilizzato in un modulo adattivo
 
 ## Distribuire il progetto in un ambiente cloud
 
-Se tutto si presenta correttamente nell&#39;ambiente di sviluppo locale, il passaggio successivo consiste nella distribuzione all&#39;istanza cloud [tramite Cloud Manager.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git)
+Se tutto si presenta correttamente nell&#39;ambiente di sviluppo locale, il passaggio successivo consiste nella distribuzione all&#39;istanza cloud [tramite Cloud Manager.](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git)

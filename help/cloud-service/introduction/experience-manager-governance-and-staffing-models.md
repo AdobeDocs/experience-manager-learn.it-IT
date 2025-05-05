@@ -134,4 +134,4 @@ Di seguito sono riportati alcuni esempi di ruolo per uno scenario client leggero
 
 Per una discussione più approfondita su modelli e archetipi di governance e assegnazione del personale, ascolta questa discussione sul pannello di un&#39;ora: [Archetipi di ruolo e Creazione di un framework operativo per [!DNL AEM Assets] e [!DNL Sites]](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
 
-Ulteriori informazioni su strategia e leadership di pensiero nell&#39;hub [Customer Success](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html).
+Ulteriori informazioni su strategia e leadership di pensiero nell&#39;hub [Customer Success](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html?lang=it).

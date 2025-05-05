@@ -38,6 +38,6 @@ Il progetto include i seguenti file nella cartella delle risorse:
 * Eseguire l’applicazione Java Main.java come
 
 >[!NOTE]
-> La prima volta che esegui il programma Java, riceverai un errore HTTP 403. Per superare questo limite, assicurati di assegnare le [autorizzazioni appropriate all&#39;utente dell&#39;account tecnico in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+> La prima volta che esegui il programma Java, riceverai un errore HTTP 403. Per superare questo limite, assicurati di assegnare le [autorizzazioni appropriate all&#39;utente dell&#39;account tecnico in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=it#configure-access-in-aem).
 
 **Utenti AEM Forms** è il ruolo che ho usato per questo corso.

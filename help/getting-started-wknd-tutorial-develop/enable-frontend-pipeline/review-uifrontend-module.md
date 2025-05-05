@@ -56,14 +56,14 @@ Di seguito è riportata una rappresentazione di alto livello del flusso __svilup
 
 Durante la fase di sviluppo, le modifiche front-end come lo stile e il rebranding vengono eseguite aggiornando i file CSS e JS dalla cartella `ui.frontend/src/main/webpack`. Quindi, durante la fase di creazione, il modulo-bundler [webpack](https://webpack.js.org/) e il plug-in maven trasformano questi file in clientlibs ottimizzati di AEM nel modulo `ui.apps`.
 
-Le modifiche front-end vengono distribuite nell&#39;ambiente AEM as a Cloud Service durante l&#39;esecuzione della pipeline [__Full-stack__ in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html).
+Le modifiche front-end vengono distribuite nell&#39;ambiente AEM as a Cloud Service durante l&#39;esecuzione della pipeline [__Full-stack__ in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=it).
 
 Le risorse front-end vengono distribuite ai browser web tramite percorsi URI che iniziano con `/etc.clientlibs/` e sono in genere memorizzate nella cache in AEM Dispatcher e CDN.
 
 
 >[!NOTE]
 >
-> Analogamente, nel __Percorso di Creazione Rapida dei Siti AEM__, le [modifiche front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/customize-theme.html) vengono distribuite nell&#39;ambiente AEM as a Cloud Service eseguendo la pipeline __front-end__. Vedere [Configurazione della pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup.html)
+> Analogamente, nel __Percorso di Creazione Rapida dei Siti AEM__, le [modifiche front-end](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/customize-theme.html?lang=it) vengono distribuite nell&#39;ambiente AEM as a Cloud Service eseguendo la pipeline __front-end__. Vedere [Configurazione della pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup.html?lang=it)
 
 ### Verifica configurazioni webpack nel progetto WKND Sites {#development-frontend-webpack-clientlib}
 
@@ -134,7 +134,7 @@ Le risorse front-end vengono distribuite ai browser web tramite percorsi URI che
 
 ### Implementazione in AEM as a Cloud Service {#deployment-frontend-aemaacs}
 
-La pipeline [__full stack__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#full-stack-pipeline) distribuisce queste modifiche in un ambiente AEM as a Cloud Service.
+La pipeline [__full stack__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=it&#full-stack-pipeline) distribuisce queste modifiche in un ambiente AEM as a Cloud Service.
 
 
 ### Consegna da AEM as a Cloud Service {#delivery-frontend-aemaacs}

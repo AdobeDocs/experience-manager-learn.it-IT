@@ -22,14 +22,14 @@ ht-degree: 0%
 # Personalizza notifica di assegnazione attività
 
 Il componente Assegna attività viene utilizzato per assegnare attività ai partecipanti al flusso di lavoro. Quando un’attività viene assegnata a un utente o a un gruppo, viene inviata una notifica e-mail all’utente o al gruppo definito.
-In genere, questa notifica e-mail contiene dati dinamici relativi all’attività. Questi dati dinamici vengono recuperati utilizzando le [proprietà metadati](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification) generate dal sistema.
+In genere, questa notifica e-mail contiene dati dinamici relativi all’attività. Questi dati dinamici vengono recuperati utilizzando le [proprietà metadati](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html?lang=it#using-system-generated-metadata-in-an-email-notification) generate dal sistema.
 Per includere i valori dei dati del modulo inviati nella notifica e-mail, è necessario creare una proprietà di metadati personalizzata e quindi utilizzare tali proprietà nel modello e-mail
 
 
 
 ## Creazione di proprietà di metadati personalizzate
 
-L&#39;approccio consigliato consiste nel creare un componente OSGI che implementa il metodo getUserMetadata di [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
+L&#39;approccio consigliato consiste nel creare un componente OSGI che implementa il metodo getUserMetadata di [WorkitemUserMetadataService](https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
 
 Il codice seguente crea 4 proprietà di metadati (_firstName_,_lastName_,_reason_ e _amountRequested_) e imposta il relativo valore dai dati inviati. Ad esempio, il valore della proprietà dei metadati _firstName_ è impostato sul valore dell&#39;elemento denominato firstName dai dati inviati. Il codice seguente presuppone che i dati inviati del modulo adattivo siano in formato xml. I Forms adattivi basati su schema JSON o modello dati modulo generano dati in formato JSON.
 
@@ -128,7 +128,7 @@ Dopo aver generato e distribuito il componente OSGi nel server AEM, configura il
 
 ## Per provare questa operazione sul server
 
-* [Configura servizio di posta Day CQ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
+* [Configura servizio di posta Day CQ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=it#configuring-the-mail-service)
 * Associa un ID di posta elettronica valido a [utente amministratore](http://localhost:4502/security/users.html)
 * Scarica e installa [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) tramite [Gestione pacchetti](http://localhost:4502/crx/packmgr/index.jsp)
 * Scarica [Modulo adattivo](assets/request-travel-authorization.zip) e importa in AEM dall&#39;interfaccia utente [moduli e documenti](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).

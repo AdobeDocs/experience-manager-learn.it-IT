@@ -23,7 +23,7 @@ Si consiglia sempre di utilizzare la versione più recente dei componenti core W
 * Componenti core WCM AEM 2.4.0 o versione successiva
    * Incluso nel pacchetto di contenuti dell&#39;applicazione mobile AEM [WKND di seguito](#wknd-mobile-application-packages)
 
-Prima di avviare questo tutorial, assicurati che le seguenti istanze AEM siano [installate e in esecuzione nel computer locale](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install):
+Prima di avviare questo tutorial, assicurati che le seguenti istanze AEM siano [installate e in esecuzione nel computer locale](https://helpx.adobe.com/it/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install):
 
 * **Autore AEM** su **porta 4502**
 * **Publish AEM** sulla **porta 4503**

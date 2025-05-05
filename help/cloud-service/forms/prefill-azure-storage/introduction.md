@@ -34,7 +34,7 @@ In questo tutorial verrà implementato un semplice caso d’uso per consentire a
 
 Per implementare il caso d’uso precedente in AEM Forms CS, è necessario quanto segue
 
-* [Istanza AEM Forms CS cloud ready](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync.html?lang=en#set-up-aem-author-instance)
+* [Istanza AEM Forms CS cloud ready](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync.html?lang=it#set-up-aem-author-instance)
 * [Account del portale di Azure](https://portal.azure.com/)
 * [Account SendGrid](https://sendgrid.com/)
 

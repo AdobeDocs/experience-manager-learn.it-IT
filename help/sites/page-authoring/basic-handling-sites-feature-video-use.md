@@ -61,4 +61,4 @@ In questo video vengono trattate le seguenti funzionalità:
 ## Risorse aggiuntive {#additional-resources}
 
 * [Modifica della documentazione sul contenuto delle pagine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=it)
-* [Guida rapida all’authoring delle pagine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
+* [Guida rapida all’authoring delle pagine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=it)

@@ -31,12 +31,12 @@ Il flusso di lavoro nelle soluzioni Dynamic Media Classic consiste in tre passag
 
 Inizio del flusso di lavoro. In questo passaggio, raccogli o crei il contenuto sorgente che si adatta al flusso di lavoro che stai utilizzando e lo carichi in Dynamic Media Classic. Il sistema supporta più tipi di file per immagini, video e font, ma anche per PDF, Adobe Illustrator e Adobe InDesign.
 
-Vedere l&#39;elenco completo dei [tipi di file supportati](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
+Vedere l&#39;elenco completo dei [tipi di file supportati](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=it#supported-asset-file-formats).
 
 Puoi caricare il contenuto sorgente in diversi modi:
 
-- Direttamente dal desktop o dalla rete locale. [Scopri come](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-sps-desktop-application).
-- Da un server FTP di Dynamic Media Classic. [Scopri come](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
+- Direttamente dal desktop o dalla rete locale. [Scopri come](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=it#upload-files-using-sps-desktop-application).
+- Da un server FTP di Dynamic Media Classic. [Scopri come](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=it#upload-files-using-via-ftp).
 
 La modalità predefinita è Da desktop, in cui è possibile cercare i file nella rete locale e avviare il caricamento.
 
@@ -64,11 +64,11 @@ Richiede che l’immagine sostitutiva abbia la stessa estensione del nome file d
 - **Sovrascrivi in qualsiasi cartella, con lo stesso nome della risorsa di base, indipendentemente dall&#39;estensione**.
 Questa opzione è la regola di sostituzione più inclusiva. È possibile caricare un&#39;immagine sostitutiva in una cartella diversa da quella originale, caricare un file con un&#39;estensione diversa e sostituire il file originale. Se il file originale si trova in una cartella diversa, l&#39;immagine sostitutiva risiede nella nuova cartella in cui è stata caricata.
 
-Ulteriori informazioni sull&#39;opzione [Sovrascrivi immagini](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
+Ulteriori informazioni sull&#39;opzione [Sovrascrivi immagini](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=it#using-the-overwrite-images-option).
 
 Sebbene non sia obbligatorio, durante il caricamento utilizzando uno dei due metodi descritti sopra, è possibile specificare le Opzioni processo per quel particolare caricamento, ad esempio per pianificare un caricamento ricorrente, impostare le opzioni di ritaglio al momento del caricamento e molte altre ancora. Questi possono essere utili per alcuni flussi di lavoro, quindi vale la pena considerare se possono esserlo per i tuoi.
 
-Ulteriori informazioni su [Opzioni processo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
+Ulteriori informazioni su [Opzioni processo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=it#upload-options).
 
 Il caricamento è il primo passaggio necessario in qualsiasi flusso di lavoro perché Dynamic Media Classic non può funzionare con contenuti non già presenti nel sistema. Dietro le quinte durante il caricamento, il sistema registra ogni risorsa caricata con il database Dynamic Media Classic centralizzato, assegna un ID e lo copia nell&#39;archiviazione. Inoltre, il sistema converte i file di immagine in un formato che consente il ridimensionamento e lo zoom dinamici e converte i file video nel formato MP4 compatibile con il Web.
 
@@ -97,7 +97,7 @@ Allo stesso modo, potete caricare il vostro video sorgente principale su Dynamic
 
 **Non esiste un valore minimo per la dimensione dell&#39;immagine, tuttavia si sconsiglia di caricare immagini giganti.** Un&#39;immagine gigante può essere considerata di oltre 4000 pixel. Caricare immagini di queste dimensioni può mostrare potenziali difetti come granelli di polvere o peli nell&#39;immagine. Tali immagini occupano più spazio sul server Dynamic Media Classic, il che può comportare il superamento dei limiti di archiviazione previsti dal contratto.
 
-Ulteriori informazioni su [Caricamento dei file](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
+Ulteriori informazioni su [Caricamento dei file](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=it#uploading-your-files).
 
 ## Passaggio 2: Autore (e Publish)
 
@@ -145,8 +145,8 @@ Scopri come [cancellare manualmente la cache per gli URL da aggiornare](https://
 >
 >Per evitare problemi di ritardo nella memorizzazione in cache, lavora sempre in anticipo: una sera, un giorno, due settimane, ecc. Costruisci in tempo per il QA/l&#39;accettazione da parte delle parti interne per comprovare il tuo lavoro prima di rilasciarlo al pubblico. Lavorare ancora una sera prima consente di apportare modifiche e ripubblicare quella sera. La mattina sono trascorse 10 ore e la cache viene aggiornata con l’immagine corretta.
 
-- Ulteriori informazioni sulla [creazione di un processo di pubblicazione](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
-- Ulteriori informazioni sulla [pubblicazione](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html).
+- Ulteriori informazioni sulla [creazione di un processo di pubblicazione](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html?lang=it#creating-a-publish-job).
+- Ulteriori informazioni sulla [pubblicazione](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html?lang=it).
 
 ## Passaggio 3: consegnare
 
@@ -184,4 +184,4 @@ Puoi visualizzare l&#39;anteprima delle immagini in più dimensioni utilizzando 
 
 È inoltre possibile utilizzare l&#39;opzione **Zoom** per visualizzare l&#39;anteprima dell&#39;immagine in uno dei numerosi predefiniti di zoom predefiniti, basati su visualizzatori di zoom inclusi diversi.
 
-Ulteriori informazioni su [Anteprima di Assets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/previewing-asset.html).
+Ulteriori informazioni su [Anteprima di Assets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/previewing-asset.html?lang=it).

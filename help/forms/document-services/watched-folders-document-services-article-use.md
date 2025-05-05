@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Un amministratore può configurare una cartella di rete, nota come cartella controllata, in modo che, quando un utente inserisce un file (ad esempio un file PDF) nella cartella controllata, venga avviato un flusso di lavoro, un servizio o un’operazione di script preconfigurati per elaborare il file aggiunto. Dopo aver eseguito l&#39;operazione specificata, il servizio salva il file dei risultati in una cartella di output specificata. Per ulteriori informazioni su flusso di lavoro, servizio e script.
 
-Per ulteriori informazioni sulla creazione di una cartella controllata, [fai clic qui](https://helpx.adobe.com/experience-manager/6-4/forms/using/Creating-Configure-watched-folder.html)
+Per ulteriori informazioni sulla creazione di una cartella controllata, [fai clic qui](https://helpx.adobe.com/it/experience-manager/6-4/forms/using/Creating-Configure-watched-folder.html)
 
 Le cartelle controllate vengono utilizzate per generare documenti in modalità batch. Utilizzando il meccanismo di cartelle controllate, puoi generare comunicazioni interattive per il canale di stampa o utilizzare il servizio di output per unire i dati con il modello.
 
@@ -28,7 +28,7 @@ Questo articolo tratta il caso di utilizzo dell’unione di dati con un modello 
 
 Il servizio di output è un servizio OSGi incluso in AEM Document Services. Il servizio di output supporta vari formati di output e funzioni di progettazione dell’output di AEM Forms Designer. Il servizio di output può convertire modelli XFA e dati XML per generare documenti di stampa in vari formati.
 
-Per ulteriori informazioni sul servizio di output, [fare clic qui](https://helpx.adobe.com/aem-forms/6/output-service.html).
+Per ulteriori informazioni sul servizio di output, [fare clic qui](https://helpx.adobe.com/it/aem-forms/6/output-service.html).
 Per impostare la cartella controllata sul sistema, attenersi alla seguente procedura:
 * [Scarica ed estrai il contenuto del file zip](assets/outputservicewatchedfolderkt.zip). Questo file zip contiene un pacchetto per la creazione di cartelle controllate e file di esempio per testare il servizio di output utilizzando il meccanismo delle cartelle controllate
    * Sistema Windows

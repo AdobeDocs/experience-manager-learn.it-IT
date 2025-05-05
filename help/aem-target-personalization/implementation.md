@@ -22,7 +22,7 @@ ht-degree: 1%
 In questa sezione verrà illustrato come configurare Adobe Experience Manager Sites con Adobe Target per diversi scenari. In base allo scenario e ai requisiti organizzativi.
 
 * **Aggiungi libreria JavaScript di Adobe Target (richiesta per tutti gli scenari)**
-Per i siti ospitati su AEM, puoi aggiungere librerie Target al tuo sito utilizzando, [tag in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). I tag offrono un modo semplice di implementare e gestire tutti i tag necessari per fornire ai clienti esperienze personalizzate significative.
+Per i siti ospitati su AEM, puoi aggiungere librerie Target al tuo sito utilizzando, [tag in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=it). I tag offrono un modo semplice di implementare e gestire tutti i tag necessari per fornire ai clienti esperienze personalizzate significative.
 * **Aggiungi i Cloud Service Adobe Target (necessari per lo scenario Frammenti esperienza)**
 Per i clienti AEM che desiderano utilizzare le offerte dei frammenti di esperienza per creare un’attività in Adobe Target, dovranno integrare Adobe Target con AEM utilizzando i Cloud Service legacy. Questa integrazione è necessaria per inviare i frammenti di esperienza dall’AEM a Target come offerte HTML/JSON e per mantenere la sincronizzazione con l’AEM. *Questa integrazione è necessaria per implementare lo scenario 1.*
 
@@ -58,7 +58,7 @@ Per completare questa esercitazione, è necessario che l’istanza di authoring 
 
 #### Configurare le istanze di AEM Author e Publish
 
-1. Ottieni una copia del file JAR Quickstart di [AEM e una licenza.](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware)
+1. Ottieni una copia del file JAR Quickstart di [AEM e una licenza.](https://helpx.adobe.com/it/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware)
 2. Crea nel computer una struttura di cartelle come quella riportata di seguito:
    ![Struttura cartella](assets/implementation/aem-setup-1.png)
 3. Rinomina il file jar Quickstart in `aem-author-p4502.jar` e inseriscilo sotto la directory `/author`. Aggiungere il file `license.properties` sotto la directory `/author`.

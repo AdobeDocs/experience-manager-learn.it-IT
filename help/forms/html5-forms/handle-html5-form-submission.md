@@ -39,7 +39,7 @@ while ((line = reader.readLine()) != null) {
 System.out.println("The submitted form data is " + stringBuffer.toString());
 ```
 
-Verificare di aver configurato la [configurazione SDK client Adobe LiveCycle](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) se si intende utilizzare il codice per richiamare un processo J2EE.
+Verificare di aver configurato la [configurazione SDK client Adobe LiveCycle](https://helpx.adobe.com/it/aem-forms/6/submit-form-data-livecycle-process.html) se si intende utilizzare il codice per richiamare un processo J2EE.
 
 ## Configurare l’URL di invio del modulo HTML5
 
@@ -65,5 +65,5 @@ Verificare di aver configurato la [configurazione SDK client Adobe LiveCycle](ht
 
 ### Letture aggiuntive
 
-Per ulteriori informazioni sulla generazione di PDF da invii di moduli HTML5, consulta questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html).
+Per ulteriori informazioni sulla generazione di PDF da invii di moduli HTML5, consulta questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html?lang=it).
 

@@ -55,7 +55,7 @@ Interagisci con il modulo mantenendo aperta la finestra della console. Dovresti 
 
 ## Utilizzare Adobe Experience Platform Debugger
 
-Aggiungi l&#39;estensione [AEP Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) al browser (è necessario effettuare l&#39;accesso) per ottenere ulteriori informazioni di debug
+Aggiungi l&#39;estensione [AEP Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=it) al browser (è necessario effettuare l&#39;accesso) per ottenere ulteriori informazioni di debug
 
 ![platform-debugger](assets/platform-debugger.png)
 

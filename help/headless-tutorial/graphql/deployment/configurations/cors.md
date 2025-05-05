@@ -59,7 +59,7 @@ Le proprietà chiave di configurazione sono:
 + `supportedheaders` include `"Authorization"` perché le richieste ad AEM Author devono essere autorizzate.
 + `supportscredentials` è impostato su `true` perché la richiesta ad AEM Author deve essere autorizzata.
 
-[Ulteriori informazioni sulla configurazione OSGi CORS.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+[Ulteriori informazioni sulla configurazione OSGi CORS.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=it)
 
 L’esempio seguente supporta l’utilizzo di query persistenti di AEM GraphQL in AEM Author. Per utilizzare le query GraphQL definite dal client, aggiungere un URL dell&#39;endpoint GraphQL in `allowedpaths` e `POST` in `supportedmethods`.
 

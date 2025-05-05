@@ -26,9 +26,9 @@ Le valutazioni della maturità consentono la valutazione e il rispetto degli sta
 
 Per le best practice sull’amministrazione, lo sviluppo o l’authoring, consulta le risorse seguenti:
 
-* [Best practice per l&#39;amministrazione](https://experienceleague.adobe.com/docs/experience-manager-65/administering/bestpractices/administer-best-practices.html?lang=en)
-* [Sviluppo delle best practice](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html?lang=en)
-* [Best practice per l&#39;authoring](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/best-practices.html?lang=en)
+* [Best practice per l&#39;amministrazione](https://experienceleague.adobe.com/docs/experience-manager-65/administering/bestpractices/administer-best-practices.html?lang=it)
+* [Sviluppo delle best practice](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html?lang=it)
+* [Best practice per l&#39;authoring](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/best-practices.html?lang=it)
 
 Ognuna di queste aree di best practice include anche ulteriori best practice per l’authoring, lo sviluppo e la distribuzione di AEM.
 

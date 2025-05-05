@@ -26,7 +26,7 @@ Questo video offre informazioni approfondite sulla rete CDN fornita come parte d
 
 ## Contenuto della prima parte della serie
 
-+ CDN AEM [Panoramica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)
++ CDN AEM [Panoramica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=it)
 + Funzionalità di Web Application Firewall (WAF)
 + Restrizioni IP
 + Protezione DDOS

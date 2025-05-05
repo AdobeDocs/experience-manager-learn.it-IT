@@ -42,9 +42,9 @@ Per accedere a Developer Console e utilizzarlo, è necessario concedere le segue
 
 1. Assicurati che nel selettore dell’organizzazione Adobe sia visibile l’organizzazione Adobe relativa agli ambienti che desideri ispezionare in Developer Console.
 1. Per accedere a Developer Console, lo sviluppatore deve essere membro di uno dei seguenti ruoli:
-   + [Prodotto Cloud Manager __Sviluppatore - Profilo prodotto Cloud Service__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer): in questo caso, lo sviluppatore visualizzerà l&#39;elenco completo degli ambienti disponibili nell&#39;URL Developer Console selezionato; se è stato selezionato un ambiente di sviluppo o un RDE in Cloud Manager, è possibile che vengano visualizzati altri ambienti di sviluppo o RDE nello stesso programma.
-   + [__Amministratori AEM__ profilo di prodotto in __AEM Author__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles): in questo caso, l&#39;elenco degli ambienti descritti nel punto precedente sarà limitato ai profili di prodotto correlati a cui è assegnato questo ruolo.
-1. Lo sviluppatore deve essere membro del profilo di prodotto [__Utenti AEM__ o __Amministratori AEM__ in AEM Author e/o Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles).
+   + [Prodotto Cloud Manager __Sviluppatore - Profilo prodotto Cloud Service__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html?lang=it#assign-developer): in questo caso, lo sviluppatore visualizzerà l&#39;elenco completo degli ambienti disponibili nell&#39;URL Developer Console selezionato; se è stato selezionato un ambiente di sviluppo o un RDE in Cloud Manager, è possibile che vengano visualizzati altri ambienti di sviluppo o RDE nello stesso programma.
+   + [__Amministratori AEM__ profilo di prodotto in __AEM Author__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=it#aem-product-profiles): in questo caso, l&#39;elenco degli ambienti descritti nel punto precedente sarà limitato ai profili di prodotto correlati a cui è assegnato questo ruolo.
+1. Lo sviluppatore deve essere membro del profilo di prodotto [__Utenti AEM__ o __Amministratori AEM__ in AEM Author e/o Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=it#aem-product-profiles).
    + Se l&#39;appartenenza non esiste, le immagini di stato [stato](#status) si interromperanno con un errore 401 Non autorizzato.
 
 ### Risoluzione dei problemi di accesso a Developer Console
@@ -54,7 +54,7 @@ Per accedere a Developer Console e utilizzarlo, è necessario concedere le segue
 Verifica quanto segue:
 
 + Hai selezionato l’URL Developer Console corretto facendo clic sui tre punti per l’ambiente selezionato tramite Cloud Manager e seleziona Developer Console.
-+ Hai [il profilo di prodotto __Sviluppatore - Cloud Service__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer) di Cloud Manager per visualizzare l&#39;elenco completo degli ambienti oppure fai parte del profilo di prodotto [__Amministratori AEM__ in __AEM Author__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles) per l&#39;ambiente che non trovi.
++ Hai [il profilo di prodotto __Sviluppatore - Cloud Service__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html?lang=it#assign-developer) di Cloud Manager per visualizzare l&#39;elenco completo degli ambienti oppure fai parte del profilo di prodotto [__Amministratori AEM__ in __AEM Author__](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=it#aem-product-profiles) per l&#39;ambiente che non trovi.
 
 #### 401 Errore non autorizzato durante il dumping dello stato
 
@@ -110,7 +110,7 @@ I componenti facilitano il debug mediante:
 + Fornire lo stato di ciascun componente OSGi, anche se è attivo o non soddisfatto
 + Se si forniscono dettagli sui riferimenti di servizio non soddisfatti, i componenti OSGi potrebbero diventare attivi
 + Elenco delle proprietà OSGi e dei relativi valori associati al componente OSGi.
-   + Verranno visualizzati i valori effettivi inseriti tramite [variabili di configurazione dell&#39;ambiente OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values).
+   + Verranno visualizzati i valori effettivi inseriti tramite [variabili di configurazione dell&#39;ambiente OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=it#environment-specific-configuration-values).
 
 ### Configurazioni
 
@@ -119,7 +119,7 @@ Configurazioni elenca tutte le configurazioni del componente OSGi (proprietà e 
 Le configurazioni aiutano a eseguire il debug:
 
 + Elenco delle proprietà OSGi e dei relativi valori per componente OSGi
-   + I valori effettivi inseriti tramite [variabili di configurazione dell&#39;ambiente OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values) NON verranno visualizzati. Vedere [Componenti](#components) sopra, per i valori inseriti.
+   + I valori effettivi inseriti tramite [variabili di configurazione dell&#39;ambiente OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=it#environment-specific-configuration-values) NON verranno visualizzati. Vedere [Componenti](#components) sopra, per i valori inseriti.
 + Individuazione e identificazione delle proprietà non configurate correttamente
 
 ### Indici Oak

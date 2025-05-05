@@ -30,7 +30,7 @@ ht-degree: 2%
       * [Adobe Developer Console](https://developer.adobe.com/console/)
 
      >[!NOTE]
-     >È necessario disporre delle autorizzazioni per sviluppare, approvare, Publish, gestire le estensioni e gestire gli ambienti nella raccolta dati. Se non riesci a completare nessuna di queste operazioni perché le opzioni dell’interfaccia utente non sono disponibili, rivolgiti al tuo amministratore Experience Cloud per richiedere l’accesso. Per ulteriori informazioni sulle autorizzazioni per i tag, [consulta la documentazione](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+     >È necessario disporre delle autorizzazioni per sviluppare, approvare, Publish, gestire le estensioni e gestire gli ambienti nella raccolta dati. Se non riesci a completare nessuna di queste operazioni perché le opzioni dell’interfaccia utente non sono disponibili, rivolgiti al tuo amministratore Experience Cloud per richiedere l’accesso. Per ulteriori informazioni sulle autorizzazioni per i tag, [consulta la documentazione](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=it).
 
 * **Estensioni browser Chrome**
    * Adobe Experience Cloud Debugger(https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
@@ -75,7 +75,7 @@ Una proprietà è un contenitore che si riempie con estensioni, regole, elementi
 1. Accertati di essere nell’organizzazione corretta, quindi procedi con la creazione di una proprietà di tag.
    ![Experience Cloud - tag](assets/using-launch-adobe-io/launch-create-property.png)
 
-   *Per ulteriori informazioni sulla creazione delle proprietà, vedere [Creare una proprietà](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property) nella documentazione del prodotto.*
+   *Per ulteriori informazioni sulla creazione delle proprietà, vedere [Creare una proprietà](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=it#create-or-configure-a-property) nella documentazione del prodotto.*
 1. Fai clic sul pulsante **Nuova proprietà**
 1. Specifica un nome per la proprietà (ad esempio, *esercitazione su Target AEM*)
 1. Come dominio, immetti *localhost.com* poiché è il dominio in cui è in esecuzione il sito demo WKND. Anche se il campo &#39;*Dominio*&#39; è obbligatorio, la proprietà tags funzionerà in qualsiasi dominio in cui è implementato. Lo scopo principale di questo campo è precompilare le opzioni di menu nel Generatore di regole.
@@ -87,7 +87,7 @@ Una proprietà è un contenitore che si riempie con estensioni, regole, elementi
 
 #### Aggiunta dell’estensione Target
 
-L&#39;estensione Adobe Target supporta implementazioni lato client tramite Target JavaScript SDK per il moderno Web, `at.js`. I clienti che usano ancora la libreria Target precedente, `mbox.js`, [devono effettuare l&#39;aggiornamento ad at.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/upgrading-from-atjs-1x-to-atjs-20.html) per utilizzare i tag.
+L&#39;estensione Adobe Target supporta implementazioni lato client tramite Target JavaScript SDK per il moderno Web, `at.js`. I clienti che usano ancora la libreria Target precedente, `mbox.js`, [devono effettuare l&#39;aggiornamento ad at.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/upgrading-from-atjs-1x-to-atjs-20.html?lang=it) per utilizzare i tag.
 
 L’estensione Target è costituita da due parti principali:
 
@@ -137,7 +137,7 @@ L’estensione Target è costituita da due parti principali:
 
 >[!NOTE]
 >
-> Concedi all&#39;integrazione Adobe Developer l&#39;accesso a specifiche aree di lavoro con il ruolo [ appropriato per consentire a un team centrale di apportare modifiche basate su API solo a poche aree di lavoro](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html).
+> Concedi all&#39;integrazione Adobe Developer l&#39;accesso a specifiche aree di lavoro con il ruolo [ appropriato per consentire a un team centrale di apportare modifiche basate su API solo a poche aree di lavoro](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html?lang=it).
 
 1. Crea l’integrazione IMS nell’AEM utilizzando le credenziali di Adobe Developer. (01:12 alle 03:55)
 2. In Raccolta dati, crea una proprietà. (ha coperto [sopra](#create-launch-property))

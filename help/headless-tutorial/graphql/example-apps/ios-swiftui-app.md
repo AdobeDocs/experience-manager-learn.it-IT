@@ -39,7 +39,7 @@ I seguenti strumenti devono essere installati localmente:
 
 L’applicazione iOS funziona con le seguenti opzioni di distribuzione AEM. Tutte le distribuzioni richiedono l&#39;installazione del sito [WKND v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest).
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=it)
 + Configurazione locale con [AEM Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it)
 
 L&#39;applicazione iOS è progettata per connettersi a un ambiente __AEM Publish__, tuttavia può creare contenuto da AEM Author se l&#39;autenticazione viene fornita nella configurazione dell&#39;applicazione iOS.
@@ -76,7 +76,7 @@ L&#39;applicazione iOS è progettata per connettersi a un ambiente __AEM Publish
 
    __Autenticazione token__
 
-   `AEM_TOKEN` è un [token di accesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html) che esegue l&#39;autenticazione a un utente AEM con accesso al contenuto WKND GraphQL.
+   `AEM_TOKEN` è un [token di accesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=it) che esegue l&#39;autenticazione a un utente AEM con accesso al contenuto WKND GraphQL.
 
    ```plain
    AEM_AUTH_TYPE = token

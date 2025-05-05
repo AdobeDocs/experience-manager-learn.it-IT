@@ -46,4 +46,4 @@ Il video illustra le seguenti attività necessarie per configurare il servizio A
 
 ## Risorse aggiuntive
 
-* [Documentazione dei tag avanzati di AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/smart-tags.html)
+* [Documentazione dei tag avanzati di AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/smart-tags.html?lang=it)

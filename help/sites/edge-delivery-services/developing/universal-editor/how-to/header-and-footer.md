@@ -471,4 +471,4 @@ Ora hai esplorato come le intestazioni e i piè di pagina vengono gestiti e svil
 
 Questo modello fornisce un approccio flessibile e gestibile per l’implementazione di componenti di navigazione a livello di sito.
 
-Per ulteriori best practice e tecniche avanzate, consulta la [documentazione di Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).
+Per ulteriori best practice e tecniche avanzate, consulta la [documentazione di Universal Editor](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).

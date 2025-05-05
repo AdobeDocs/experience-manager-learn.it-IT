@@ -41,7 +41,7 @@ I seguenti strumenti devono essere installati localmente:
 
 L’applicazione React funziona con le seguenti opzioni di distribuzione di AEM. Tutte le distribuzioni richiedono l&#39;installazione del sito [WKND v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest).
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=it)
 + Configurazione locale con [AEM Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it)
    + Richiede [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=tipo di software%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
 
@@ -314,4 +314,4 @@ Se ci si connette a un ambiente di authoring AEM, è necessario configurare il m
 
 ### Condivisione delle risorse tra le origini (CORS)
 
-Questa applicazione React si basa su una configurazione CORS basata su AEM in esecuzione nell&#39;ambiente AEM di destinazione e presuppone che l&#39;app React venga eseguita su `http://localhost:3000` in modalità di sviluppo.  Consulta la[documentazione sulla distribuzione AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa.html) per ulteriori informazioni su come configurare CORS.
+Questa applicazione React si basa su una configurazione CORS basata su AEM in esecuzione nell&#39;ambiente AEM di destinazione e presuppone che l&#39;app React venga eseguita su `http://localhost:3000` in modalità di sviluppo.  Consulta la[documentazione sulla distribuzione AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa.html?lang=it) per ulteriori informazioni su come configurare CORS.

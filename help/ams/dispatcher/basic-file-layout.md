@@ -145,7 +145,7 @@ Sono disponibili parti aggiuntive che costituiscono sottosezioni delle configura
 
 #### Directory cache
 
-Questa directory contiene tutti i `_cache.any`, `_invalidate.any` file creati che contengono le regole su come si desidera che il modulo gestisca gli elementi di caching provenienti da AEM, nonché la sintassi delle regole di invalidazione.  Ulteriori dettagli su questa sezione sono disponibili qui [qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Questa directory contiene tutti i `_cache.any`, `_invalidate.any` file creati che contengono le regole su come si desidera che il modulo gestisca gli elementi di caching provenienti da AEM, nonché la sintassi delle regole di invalidazione.  Ulteriori dettagli su questa sezione sono disponibili qui [qui](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#configuring-the-dispatcher-cache-cache)
 
 - `/etc/httpd/conf.dispatcher.d/cache/`
 

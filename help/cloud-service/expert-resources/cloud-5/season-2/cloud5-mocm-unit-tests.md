@@ -25,7 +25,7 @@ Un passaggio spesso trascurato nello sviluppo di software, gli unit test sono un
 ## Contenuto trattato in questo video
 
 + Panoramica di Controlli automatizzati
-+ [Regole per la qualità del codice personalizzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html)
++ [Regole per la qualità del codice personalizzato](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=it)
 
 ## Risorse aggiuntive
 

@@ -32,8 +32,8 @@ Segui le istruzioni dettagliate riportate in questo documento per sfruttare la p
 Prima di procedere con l’invio di e-mail utilizzando i modelli dinamici SendGrid da AEM Forms, assicurati di aver soddisfatto i seguenti prerequisiti:
 
 1. **Account SendGrid**: registrati a un account SendGrid all&#39;indirizzo [https://sendgrid.com](https://sendgrid.com) per accedere ai servizi di consegna e-mail. Per integrare SendGrid con AEM Forms sono necessarie le credenziali dell’account.
-1. **Familiarità con la creazione di origini dati**: acquisisci conoscenze pratiche sulla creazione di origini dati in AEM Forms. Se necessario, consultare la documentazione relativa alla [creazione di origini dati](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) per istruzioni dettagliate.
-1. **Familiarità con il modello dati modulo**: comprendere il concetto di modello dati modulo in AEM Forms. Se necessario, consulta la documentazione sulla [creazione di modelli di dati del modulo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html) per assicurarti di avere le informazioni necessarie.
+1. **Familiarità con la creazione di origini dati**: acquisisci conoscenze pratiche sulla creazione di origini dati in AEM Forms. Se necessario, consultare la documentazione relativa alla [creazione di origini dati](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=it) per istruzioni dettagliate.
+1. **Familiarità con il modello dati modulo**: comprendere il concetto di modello dati modulo in AEM Forms. Se necessario, consulta la documentazione sulla [creazione di modelli di dati del modulo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=it) per assicurarti di avere le informazioni necessarie.
 
 Soddisfacendo questi prerequisiti, avrai a disposizione le conoscenze e le risorse essenziali per inviare efficacemente le e-mail utilizzando i modelli dinamici SendGrid di AEM Forms.
 

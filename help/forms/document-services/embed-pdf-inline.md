@@ -230,7 +230,7 @@ Per eseguire il test sul server locale, attieniti alla seguente procedura:
 
 1. [Scarica e installa il bundle di incorporpdf](assets/embedpdf.core-1.0-SNAPSHOT.jar).
 Questo ha il servlet per unire i dati con il modello XDP e riportare in streaming il pdf.
-1. Aggiungi il percorso /bin/getPDFToEmbed nella sezione percorsi esclusi del filtro CSRF di Adobe Granite utilizzando [AEM ConfigMgr](http://localhost:4502/system/console/configMgr). Nell&#39;ambiente di produzione è consigliabile utilizzare il [framework di protezione CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=en)
+1. Aggiungi il percorso /bin/getPDFToEmbed nella sezione percorsi esclusi del filtro CSRF di Adobe Granite utilizzando [AEM ConfigMgr](http://localhost:4502/system/console/configMgr). Nell&#39;ambiente di produzione è consigliabile utilizzare il [framework di protezione CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=it)
 1. [Importare la libreria client e il componente personalizzato](assets/embed-pdf.zip)
 1. [Importare il modulo e il modello adattivo](assets/embed-pdf-form-and-xdp.zip)
 1. [Anteprima modulo adattivo](http://localhost:4502/content/dam/formsanddocuments/from1040/jcr:content?wcmmode=disabled)

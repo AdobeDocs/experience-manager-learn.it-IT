@@ -77,15 +77,15 @@ In questo capitolo viene utilizzata la funzionalità [Sistema di stili](https://
 
 ## Informazioni di base {#background}
 
-Il [sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) consente agli sviluppatori e agli editor di modelli di creare più varianti visive di un componente. Gli autori possono quindi decidere quale stile utilizzare durante la composizione di una pagina. Il sistema di stili viene utilizzato in tutto il resto dell’esercitazione per ottenere diversi stili univoci utilizzando i Componenti core in un approccio a basso codice.
+Il [sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=it) consente agli sviluppatori e agli editor di modelli di creare più varianti visive di un componente. Gli autori possono quindi decidere quale stile utilizzare durante la composizione di una pagina. Il sistema di stili viene utilizzato in tutto il resto dell’esercitazione per ottenere diversi stili univoci utilizzando i Componenti core in un approccio a basso codice.
 
 L’idea generale del sistema di stili è che gli autori possano scegliere vari stili per definire l’aspetto di un componente. Gli &quot;stili&quot; sono supportati da classi CSS aggiuntive che vengono inserite nell’elemento div esterno di un componente. Nelle librerie client vengono aggiunte regole CSS basate su queste classi di stile in modo che il componente cambi aspetto.
 
-Puoi trovare [la documentazione dettagliata per il sistema di stili qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=it). C&#39;è anche un ottimo [video tecnico per comprendere il sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
+Puoi trovare [la documentazione dettagliata per il sistema di stili qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=it). C&#39;è anche un ottimo [video tecnico per comprendere il sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html?lang=it).
 
 ## Stile sottolineatura - Titolo {#underline-style}
 
-Il componente [Titolo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html) è stato aggiunto al progetto in `/apps/wknd/components/title` come parte del modulo **ui.apps**. Gli stili predefiniti degli elementi Titolo (`H1`, `H2`, `H3`...) sono già stati implementati nel modulo **ui.frontend**.
+Il componente [Titolo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html?lang=it) è stato aggiunto al progetto in `/apps/wknd/components/title` come parte del modulo **ui.apps**. Gli stili predefiniti degli elementi Titolo (`H1`, `H2`, `H3`...) sono già stati implementati nel modulo **ui.frontend**.
 
 Le progettazioni dell&#39;articolo [WKND](assets/pages-templates/wknd-article-design.xd) contengono uno stile univoco per il componente Titolo con una sottolineatura. Invece di creare due componenti o modificare la finestra di dialogo del componente, è possibile utilizzare il sistema di stili per consentire agli autori di aggiungere uno stile sottolineato.
 
@@ -195,7 +195,7 @@ Quindi, implementa lo stile Sottolineato utilizzando il modulo **ui.frontend** d
 
 ## Stile blocco preventivo - Testo {#text-component}
 
-Ripetere quindi i passaggi simili per applicare uno stile univoco al [componente testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html). Il componente Testo è stato aggiunto come proxy al progetto in `/apps/wknd/components/text` come parte del modulo **ui.apps**. Gli stili predefiniti degli elementi paragrafo sono già stati implementati in **ui.frontend**.
+Ripetere quindi i passaggi simili per applicare uno stile univoco al [componente testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=it). Il componente Testo è stato aggiunto come proxy al progetto in `/apps/wknd/components/text` come parte del modulo **ui.apps**. Gli stili predefiniti degli elementi paragrafo sono già stati implementati in **ui.frontend**.
 
 Le progettazioni dell&#39;articolo [WKND](assets/pages-templates/wknd-article-design.xd) contengono uno stile univoco per il componente Testo con un blocco di virgolette:
 

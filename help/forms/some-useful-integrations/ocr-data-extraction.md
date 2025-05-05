@@ -83,11 +83,11 @@ Di seguito è riportato un riferimento alla definizione requestBody.
 
 ## Creazione di Data Source
 
-Per integrare AEM/AEM Forms con applicazioni di terze parti, è necessario [creare l&#39;origine dati](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) nella configurazione dei servizi cloud. Utilizza il [file Swagger](assets/drivers-license-swagger.zip) per creare l&#39;origine dati.
+Per integrare AEM/AEM Forms con applicazioni di terze parti, è necessario [creare l&#39;origine dati](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=it) nella configurazione dei servizi cloud. Utilizza il [file Swagger](assets/drivers-license-swagger.zip) per creare l&#39;origine dati.
 
 ## Crea modello dati modulo
 
-L&#39;integrazione dei dati di AEM Forms fornisce un&#39;interfaccia utente intuitiva per la creazione e l&#39;utilizzo di [modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Basare il modello dati del modulo sull&#39;origine dati creata nel passaggio precedente.
+L&#39;integrazione dei dati di AEM Forms fornisce un&#39;interfaccia utente intuitiva per la creazione e l&#39;utilizzo di [modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=it). Basare il modello dati del modulo sull&#39;origine dati creata nel passaggio precedente.
 
 ![fdm](assets/test-dl-fdm.PNG)
 

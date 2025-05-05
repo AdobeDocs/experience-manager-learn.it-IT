@@ -35,7 +35,7 @@ L’obiettivo di questo tutorial in più parti è insegnare a uno sviluppatore c
 Il tutorial è progettato per funzionare con **AEM as a Cloud Service** ed è compatibile con le versioni precedenti di **AEM 6.5.4+** e **AEM 6.4.8+**. L’applicazione a pagina singola viene implementata utilizzando:
 
 * [Archetipo di progetto AEM Maven](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
-* [Editor SPA di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-walkthrough.html#content-editing-experience-with-spa)
+* [Editor SPA di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-walkthrough.html?lang=it#content-editing-experience-with-spa)
 * [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Angular](https://angular.io/)
 
@@ -53,7 +53,7 @@ Prima di iniziare questa esercitazione, è necessario disporre dei seguenti elem
 
 * Conoscenza di base di HTML, CSS e JavaScript
 * Familiarità di base con [Angular](https://angular.io/)
-* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk), [AEM 6.5.4+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#65) o [AEM 6.4.8+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#64)
+* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=it#download-the-aem-as-a-cloud-service-sdk), [AEM 6.5.4+](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html#65) o [AEM 6.4.8+](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html#64)
 * [Java](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 o successivo)
 * [Node.js](https://nodejs.org/it/) e [npm](https://www.npmjs.com/)
@@ -78,7 +78,7 @@ Cosa state aspettando?! Avvia l&#39;esercitazione passando al capitolo [Progetto
 
 Il codice del progetto per questa esercitazione è stato creato per AEM as a Cloud Service. Per rendere il codice del progetto compatibile con le versioni precedenti per **6.5.4+** e **6.4.8+** sono state apportate diverse modifiche.
 
-[UberJar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#what-is-the-uberjar) **v6.4.4** è stato incluso come dipendenza:
+[UberJar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=it#what-is-the-uberjar) **v6.4.4** è stato incluso come dipendenza:
 
 ```xml
 <!-- Adobe AEM 6.x Dependencies -->

@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Questa guida illustra come creare un passaggio di processo personalizzato per popolare le variabili elenco di tipo Elenco array con allegati e nomi di allegati in Adobe Experience Manager. Queste variabili sono essenziali per il componente del flusso di lavoro Invia e-mail.
 
-Se non conosci la creazione di un bundle OSGi, segui queste [istruzioni](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en).
+Se non conosci la creazione di un bundle OSGi, segui queste [istruzioni](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=it).
 
 Il codice nel passaggio del processo personalizzato esegue le azioni seguenti:
 

@@ -30,7 +30,7 @@ In questa esercitazione verrà descritto il caso di utilizzo della precompilazio
 
 Per implementare il caso d’uso precedente in AEM Forms CS, è necessario quanto segue
 
-* [Istanza AEM Forms CS cloud ready](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync.html?lang=en#set-up-aem-author-instance)
+* [Istanza AEM Forms CS cloud ready](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync.html?lang=it#set-up-aem-author-instance)
 
 ### Passaggi successivi
 

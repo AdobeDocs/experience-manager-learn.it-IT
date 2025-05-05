@@ -23,7 +23,7 @@ ht-degree: 0%
 
 {{edge-delivery-services-and-page-editor}}
 
-In questo capitolo, esaminiamo la relazione tra un componente della pagina base e i modelli modificabili. Scopri come creare un modello di articolo senza stili basato su alcuni modelli di [Adobe XD](https://helpx.adobe.com/support/xd.html). Durante la creazione del modello, sono trattati i Componenti core e le configurazioni avanzate dei criteri dei modelli modificabili.
+In questo capitolo, esaminiamo la relazione tra un componente della pagina base e i modelli modificabili. Scopri come creare un modello di articolo senza stili basato su alcuni modelli di [Adobe XD](https://helpx.adobe.com/it/support/xd.html). Durante la creazione del modello, sono trattati i Componenti core e le configurazioni avanzate dei criteri dei modelli modificabili.
 
 ## Prerequisiti {#prerequisites}
 
@@ -74,7 +74,7 @@ In questa parte dell&#39;esercitazione verrà creato un nuovo Modello per pagina
 
 ## Pianificazione dell’interfaccia utente con Adobe XD {#adobexd}
 
-Di solito, la pianificazione di un nuovo sito web inizia con modelli e progetti statici. [Adobe XD](https://helpx.adobe.com/support/xd.html) è uno strumento di progettazione che crea l&#39;esperienza utente. Ora esaminiamo un kit di interfaccia utente e modelli per aiutare a pianificare la struttura del modello della pagina dell’articolo.
+Di solito, la pianificazione di un nuovo sito web inizia con modelli e progetti statici. [Adobe XD](https://helpx.adobe.com/it/support/xd.html) è uno strumento di progettazione che crea l&#39;esperienza utente. Ora esaminiamo un kit di interfaccia utente e modelli per aiutare a pianificare la struttura del modello della pagina dell’articolo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
@@ -82,7 +82,7 @@ Di solito, la pianificazione di un nuovo sito web inizia con modelli e progetti 
 
 >[!NOTE]
 >
-> È disponibile anche un generico kit di interfaccia utente per i componenti core [AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) come punto di partenza per i progetti personalizzati.
+> È disponibile anche un generico kit di interfaccia utente per i componenti core [AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd?lang=it) come punto di partenza per i progetti personalizzati.
 
 ## Creare il modello per la pagina dell’articolo
 
@@ -160,7 +160,7 @@ Passaggi di alto livello per il video precedente:
 
 ## Aggiornare intestazione e piè di pagina con frammenti esperienza {#experience-fragments}
 
-Per la creazione di contenuto globale, ad esempio un&#39;intestazione o un piè di pagina, è in genere consigliabile utilizzare un [frammento di esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Frammenti di esperienza, consente agli utenti di combinare più componenti per creare un singolo componente di riferimento. I frammenti di esperienza hanno il vantaggio di supportare la gestione multisito e la [localizzazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=en).
+Per la creazione di contenuto globale, ad esempio un&#39;intestazione o un piè di pagina, è in genere consigliabile utilizzare un [frammento di esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=it). Frammenti di esperienza, consente agli utenti di combinare più componenti per creare un singolo componente di riferimento. I frammenti di esperienza hanno il vantaggio di supportare la gestione multisito e la [localizzazione](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=it).
 
 L’Archetipo progetto AEM ha generato un’intestazione e un piè di pagina. Quindi, aggiorna i Frammenti esperienza in modo che corrispondano ai modelli. Segui i passaggi descritti nel video seguente:
 
@@ -262,7 +262,7 @@ Utilizza lo strumento CRXDE-Lite su un’istanza AEM locale per visualizzare la 
 
    Ci sono solo due script HTL, `customfooterlibs.html` e `customheaderlibs.html` sotto il componente page. *Come viene eseguito il rendering della pagina da questo componente?*
 
-   La proprietà `sling:resourceSuperType` punta a `core/wcm/components/page/v2/page`. Questa proprietà consente al componente page del WKND di ereditare **tutte** le funzionalità del componente page del componente core. Questo è il primo esempio di un modello di componente proxy [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Ulteriori informazioni sono disponibili [qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
+   La proprietà `sling:resourceSuperType` punta a `core/wcm/components/page/v2/page`. Questa proprietà consente al componente page del WKND di ereditare **tutte** le funzionalità del componente page del componente core. Questo è il primo esempio di un modello di componente proxy [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=it#ProxyComponentPattern). Ulteriori informazioni sono disponibili [qui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=it).
 
 1. Inspect è un altro componente all&#39;interno dei componenti WKND, il componente `Breadcrumb` di: `/apps/wknd/components/breadcrumb`. È possibile trovare la stessa proprietà `sling:resourceSuperType`, ma questa volta punta a `core/wcm/components/breadcrumb/v2/breadcrumb`. Questo è un altro esempio di utilizzo del modello di componente Proxy per includere un Componente core. Infatti, tutti i componenti nella base di codice WKND sono proxy dei Componenti core AEM (ad eccezione del componente demo personalizzato HelloWorld). È consigliabile riutilizzare quante più funzionalità dei Componenti core possibili *prima* della scrittura di codice personalizzato.
 

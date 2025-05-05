@@ -33,7 +33,7 @@ Voce di registro di esempio:
 
 ```
 Fri Jul 20 03:35:09 2018 W pid 8300 (tid 139937910880384) /etc/httpd/conf/publish-filters.any:5: Allowing requests with globs is considered unsafe.
-Please consult the documentation at 'https://www.adobe.com/go/docs_dispatcher_config_en' on how to use attributes 
+Please consult the documentation at 'https://www.adobe.com/go/docs_dispatcher_config_it' on how to use attributes 
 method/url/query/protocol/path/selectors/extension/suffix instead.
 ```
 
@@ -169,7 +169,7 @@ Thu Sep 27 17:35:11 2018 W pid 18936 Unable to fetch vanity URLs from 10.43.0.42
 
 Questo errore si verifica quando il Dispatcher è stato configurato per l’utilizzo del filtro automatico dinamico per consentire gli URL personalizzati, ma la configurazione non è stata completata con l’installazione del pacchetto sul renderer AEM.
 
-Per risolvere questo problema, installa il feature pack per gli URL personalizzati nell’istanza di AEM e consenti che sia pronto per l’utente anonimo. Dettagli [qui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html)
+Per risolvere questo problema, installa il feature pack per gli URL personalizzati nell’istanza di AEM e consenti che sia pronto per l’utente anonimo. Dettagli [qui](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html?lang=it)
 
 L’impostazione di un URL personalizzato funzionante è simile al seguente:
 

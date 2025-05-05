@@ -38,7 +38,7 @@ Questo tutorial illustra come abilitare e configurare la regola CRS **DOS-PROTEC
 
 >[!TIP]
 >
->È importante notare che la [rete CDN gestita](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) di AEM as a Cloud Service soddisfa i requisiti di prestazioni e sicurezza della maggior parte dei clienti. Tuttavia, ModSecurity fornisce un ulteriore livello di sicurezza e consente regole e configurazioni specifiche per il cliente.
+>È importante notare che la [rete CDN gestita](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=it) di AEM as a Cloud Service soddisfa i requisiti di prestazioni e sicurezza della maggior parte dei clienti. Tuttavia, ModSecurity fornisce un ulteriore livello di sicurezza e consente regole e configurazioni specifiche per il cliente.
 
 ## Aggiungere CRS al modulo di progetto Dispatcher
 
@@ -240,11 +240,11 @@ $ ./validate.sh <YOUR-AEM-PROJECT-CODE-DIR>/dispatcher/src
 
 ## Distribuzione
 
-Distribuisci le configurazioni Dispatcher convalidate localmente utilizzando la pipeline Cloud Manager [Livello Web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?#web-tier-config) o [Full Stack](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?#full-stack-code). È inoltre possibile utilizzare l&#39;[ambiente di sviluppo rapido](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html) per velocizzare i tempi di risposta.
+Distribuisci le configurazioni Dispatcher convalidate localmente utilizzando la pipeline Cloud Manager [Livello Web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=it&#web-tier-config) o [Full Stack](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=it&#full-stack-code). È inoltre possibile utilizzare l&#39;[ambiente di sviluppo rapido](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html?lang=it) per velocizzare i tempi di risposta.
 
 ## Verifica
 
-Per verificare la protezione DoS, in questo esempio inviamo più di 50 richieste (25 soglie di richiesta per due occorrenze) entro un intervallo di 60 secondi. Tuttavia, queste richieste devono passare attraverso l&#39;AEM as a Cloud Service [predefinito](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html) o qualsiasi [altro CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?#point-to-point-CDN) che occupa il tuo sito Web.
+Per verificare la protezione DoS, in questo esempio inviamo più di 50 richieste (25 soglie di richiesta per due occorrenze) entro un intervallo di 60 secondi. Tuttavia, queste richieste devono passare attraverso l&#39;AEM as a Cloud Service [predefinito](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=it) o qualsiasi [altro CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=it&#point-to-point-CDN) che occupa il tuo sito Web.
 
 Una tecnica per ottenere il pass-through CDN consiste nell&#39;aggiungere un parametro di query con un **nuovo valore casuale in ogni richiesta di pagina del sito**.
 

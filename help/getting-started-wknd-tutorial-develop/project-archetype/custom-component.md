@@ -358,7 +358,7 @@ Il modello Sling Byline si basa su diverse API Java™ fornite da AEM. Queste AP
    </dependency>
    ```
 
-   [aem-sdk-api](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=en) contiene tutte le API Java™ pubbliche esposte da AEM. `aem-sdk-api` viene utilizzato per impostazione predefinita durante la creazione di questo progetto. La versione viene mantenuta nel pom del reattore padre dalla radice del progetto in `aem-guides-wknd/pom.xml`.
+   [aem-sdk-api](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=it) contiene tutte le API Java™ pubbliche esposte da AEM. `aem-sdk-api` viene utilizzato per impostazione predefinita durante la creazione di questo progetto. La versione viene mantenuta nel pom del reattore padre dalla radice del progetto in `aem-guides-wknd/pom.xml`.
 
 1. Trova la dipendenza per `uber-jar` - **Solo AEM 6.5/6.4**
 
@@ -374,7 +374,7 @@ Il modello Sling Byline si basa su diverse API Java™ fornite da AEM. Queste AP
 
    `uber-jar` è incluso solo quando viene richiamato il profilo `classic`, ovvero `mvn clean install -PautoInstallSinglePackage -Pclassic`. Anche in questo caso, questo è specifico per questo progetto. In un progetto reale, generato dall&#39;archetipo del progetto AEM, `uber-jar` è l&#39;impostazione predefinita se la versione di AEM specificata è 6.5 o 6.4.
 
-   [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) contiene tutte le API Java™ pubbliche esposte da AEM 6.x. La versione viene mantenuta nel pom del reattore padre dalla radice del progetto `aem-guides-wknd/pom.xml`.
+   [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=it#experience-manager-api-dependencies) contiene tutte le API Java™ pubbliche esposte da AEM 6.x. La versione viene mantenuta nel pom del reattore padre dalla radice del progetto `aem-guides-wknd/pom.xml`.
 
 1. Trovare la dipendenza per `core.wcm.components.core`:
 

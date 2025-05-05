@@ -38,4 +38,4 @@ Scopri come configurare la formazione dei tag avanzati in AEM Assets utilizzando
 
 ## Risorse aggiuntive
 
-* AEM 6.4 richiede il [Service Pack più recente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
+* AEM 6.4 richiede il [Service Pack più recente](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=it#aem-64).

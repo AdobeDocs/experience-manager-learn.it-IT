@@ -32,7 +32,7 @@ Di seguito è riportata la struttura di cartelle per l’XDP di esempio che util
 ![moduli&amp;documento](assets/fragment-folder-structure-ui.png)
 
 
-* Servizio di output: in genere questo servizio viene utilizzato per unire i dati xml con un modello xdp o un PDF per generare un PDF appiattito. Per ulteriori dettagli, fare riferimento a [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) per il servizio di output. In questo esempio utilizziamo frammenti che risiedono nell’archivio crx.
+* Servizio di output: in genere questo servizio viene utilizzato per unire i dati xml con un modello xdp o un PDF per generare un PDF appiattito. Per ulteriori dettagli, fare riferimento a [javadoc](https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) per il servizio di output. In questo esempio utilizziamo frammenti che risiedono nell’archivio crx.
 
 
 Il seguente script ECMA è stato utilizzato per generare PDF. Si noti l&#39;utilizzo di ResourceResolver e ResourceResolverHelper nel codice. ResourceReolver è necessario perché il codice è in esecuzione al di fuori di qualsiasi contesto utente.

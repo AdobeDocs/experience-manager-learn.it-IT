@@ -30,9 +30,9 @@ Il tipo `ImageRef` dispone di quattro opzioni URL per i riferimenti al contenuto
 + `_dynamicUrl` è l&#39;URL di per la consegna ottimizzata per il web della risorsa immagine.
    + `_dynamicUrl` non include un&#39;origine AEM, pertanto il dominio (servizio AEM Author o AEM Publish) deve essere fornito dall&#39;applicazione client.
 + `_authorUrl` è l&#39;URL completo della risorsa immagine in AEM Author
-   + [AEM Author](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) può essere utilizzato per fornire un&#39;anteprima dell&#39;applicazione headless.
+   + [AEM Author](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=it) può essere utilizzato per fornire un&#39;anteprima dell&#39;applicazione headless.
 + `_publishUrl` è l&#39;URL completo della risorsa immagine in AEM Publish
-   + [Pubblicazione AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html) è in genere il luogo in cui la distribuzione di produzione dell&#39;applicazione headless visualizza le immagini da.
+   + [Pubblicazione AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=it) è in genere il luogo in cui la distribuzione di produzione dell&#39;applicazione headless visualizza le immagini da.
 
 `_dynamicUrl` è l&#39;URL consigliato da utilizzare per la consegna delle risorse immagine e dovrebbe sostituire l&#39;utilizzo di `_path`, `_authorUrl` e `_publishUrl` quando possibile.
 
@@ -50,7 +50,7 @@ Il tipo `ImageRef` dispone di quattro opzioni URL per i riferimenti al contenuto
 
 Verifica che il campo Frammento di contenuto contenente il riferimento all&#39;immagine sia del tipo di dati __riferimento contenuto__.
 
-I tipi di campo vengono esaminati nel [Modello per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html), selezionando il campo e controllando la scheda __Proprietà__ a destra.
+I tipi di campo vengono esaminati nel [Modello per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html?lang=it), selezionando il campo e controllando la scheda __Proprietà__ a destra.
 
 ![Modello per frammenti di contenuto con riferimento a un&#39;immagine](./assets/images/content-fragment-model.jpeg)
 

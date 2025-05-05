@@ -21,13 +21,13 @@ ht-degree: 1%
 
 # Personalizzare Adobe Client Data Layer con i componenti AEM {#customize-data-layer}
 
-Scopri come personalizzare Adobe Client Data Layer con i contenuti dei componenti personalizzati di AEM. Scopri come utilizzare le API fornite da [Componenti core AEM per estendere](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html) e personalizzare il livello dati.
+Scopri come personalizzare Adobe Client Data Layer con i contenuti dei componenti personalizzati di AEM. Scopri come utilizzare le API fornite da [Componenti core AEM per estendere](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html?lang=it) e personalizzare il livello dati.
 
 ## Cosa intendi creare
 
 ![Livello dati byte](assets/adobe-client-data-layer/byline-data-layer-html.png)
 
-In questa esercitazione esploreremo varie opzioni per estendere Adobe Client Data Layer aggiornando il componente WKND [Byline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html). Il componente _Byline_ è un **componente personalizzato** e le lezioni apprese in questa esercitazione possono essere applicate ad altri componenti personalizzati.
+In questa esercitazione esploreremo varie opzioni per estendere Adobe Client Data Layer aggiornando il componente WKND [Byline](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/custom-component.html?lang=it). Il componente _Byline_ è un **componente personalizzato** e le lezioni apprese in questa esercitazione possono essere applicate ad altri componenti personalizzati.
 
 ### Obiettivi {#objective}
 
@@ -173,7 +173,7 @@ Per inserire dati sul componente nel livello dati, aggiorniamo prima il modello 
 
 ## Aggiornare il codice HTL della linea di base {#htl}
 
-Quindi, aggiorna `Byline` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=en). HTL (HTML Template Language) è il modello utilizzato per eseguire il rendering del HTML del componente.
+Quindi, aggiorna `Byline` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=it). HTL (HTML Template Language) è il modello utilizzato per eseguire il rendering del HTML del componente.
 
 Per esporre il livello di dati corrispondente viene utilizzato un attributo di dati speciale `data-cmp-data-layer` per ogni componente di AEM. JavaScript fornito dai componenti core di AEM cerca questo attributo di dati. Il valore di questo attributo di dati viene popolato con la stringa JSON restituita dal metodo `getData()` del modello Sling Byline e inserita nel livello dati client di Adobe.
 

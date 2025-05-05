@@ -167,5 +167,5 @@ Nella tabella seguente sono elencati gli eventi di Dynamic Media Viewer e i rela
 ## Risorse aggiuntive{#additional-resources}
 
 * [Integrazione di AEM con i tag in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=it)
-* [Esecuzione di Adobe Experience Manager in modalità Dynamic Media Scene7](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=en)
-* [Integrazione dei visualizzatori Dynamic Media con Adobe Analytics tramite tag](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-extension-use.html)
+* [Esecuzione di Adobe Experience Manager in modalità Dynamic Media Scene7](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=it)
+* [Integrazione dei visualizzatori Dynamic Media con Adobe Analytics tramite tag](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-extension-use.html?lang=it)

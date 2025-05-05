@@ -108,7 +108,7 @@ Gli avvisi di attraversamento attenuati possono essere affrontati utilizzando tr
 
 ## 1. Analizzare{#analyze}
 
-Innanzitutto, identifica quali servizi Publish dell’AEM presentano avvisi trasversali. A tale scopo, da Cloud Manager [scarica i registri `aemerror` dei servizi Publish](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#cloud-manager){target="_blank"} da tutti gli ambienti (sviluppo, staging e produzione) per gli ultimi __tre giorni__.
+Innanzitutto, identifica quali servizi Publish dell’AEM presentano avvisi trasversali. A tale scopo, da Cloud Manager [scarica i registri `aemerror` dei servizi Publish](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=it#cloud-manager){target="_blank"} da tutti gli ambienti (sviluppo, staging e produzione) per gli ultimi __tre giorni__.
 
 ![Scarica registri di AEM as a Cloud Service](./assets/traversals/download-logs.jpg)
 
@@ -159,14 +159,14 @@ Una volta individuate le query che generano l’infrazione e il relativo codice 
 
 __Modificare la query__ per aggiungere nuove restrizioni alle query che risolvono le restrizioni degli indici esistenti. Se possibile, preferisci modificare la query anziché gli indici.
 
-+ [Scopri come ottimizzare le prestazioni delle query](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"}
++ [Scopri come ottimizzare le prestazioni delle query](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html?lang=it#query-performance-tuning){target="_blank"}
 
 ### Regolare l’indice
 
 __Modificare (o creare) un indice AEM__ in modo che le restrizioni delle query esistenti possano essere risolte in base agli aggiornamenti dell&#39;indice.
 
-+ [Scopri come ottimizzare gli indici esistenti](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#query-performance-tuning){target="_blank"}
-+ [Scopri come creare gli indici](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html#create-a-new-index){target="_blank"}
++ [Scopri come ottimizzare gli indici esistenti](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html?lang=it#query-performance-tuning){target="_blank"}
++ [Scopri come creare gli indici](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html?lang=it#create-a-new-index){target="_blank"}
 
 ## 3. Verifica{#verify}
 
@@ -191,14 +191,14 @@ Consulta queste altre risorse utili per comprendere gli indici AEM, la ricerca e
    <div class="card">
        <div class="card-image">
            <figure class="image is-16by9">
-               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-search-and-indexing.html" title="Cloud 5: ricerca e indicizzazione" tabindex="-1"><img class="is-bordered-r-small" src="../../../expert-resources/cloud-5/imgs/009-thumb.png" alt="Cloud 5: ricerca e indicizzazione"></a>
+               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-search-and-indexing.html?lang=it" title="Cloud 5: ricerca e indicizzazione" tabindex="-1"><img class="is-bordered-r-small" src="../../../expert-resources/cloud-5/imgs/009-thumb.png" alt="Cloud 5: ricerca e indicizzazione"></a>
            </figure>
        </div>
        <div class="card-content is-padded-small">
            <div class="content">
-               <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-search-and-indexing.html" title="Cloud 5: ricerca e indicizzazione">Cloud 5: ricerca e indicizzazione</a></p>
+               <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-search-and-indexing.html?lang=it" title="Cloud 5: ricerca e indicizzazione">Cloud 5: ricerca e indicizzazione</a></p>
                <p class="is-size-6">Il team di Cloud 5 mostra come esplorare i pro e i contro della ricerca e dell’indicizzazione su AEM as a Cloud Service.</p>
-               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-search-and-indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-search-and-indexing.html?lang=it" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                </a>
            </div>
@@ -234,16 +234,16 @@ Consulta queste altre risorse utili per comprendere gli indici AEM, la ricerca e
    <div class="card">
        <div class="card-image">
            <figure class="image is-16by9">
-               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html" title="Modernizzazione degli indici Oak" tabindex="-1">
+               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html?lang=it" title="Modernizzazione degli indici Oak" tabindex="-1">
                    <img class="is-bordered-r-small" src="./assets/traversals/resources--aem-experts-series.png" alt="Modernizzazione degli indici Oak">
                </a>
            </figure>
        </div>
        <div class="card-content is-padded-small">
            <div class="content">
-               <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html" title="Modernizzazione degli indici Oak">Modernizzazione degli indici Oak</a></p>
+               <p class="headline is-size-6 has-text-weight-bold"><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html?lang=it" title="Modernizzazione degli indici Oak">Modernizzazione degli indici Oak</a></p>
                <p class="is-size-6">Scopri come convertire le definizioni degli indici Oak di AEM 6 affinché siano compatibili con AEM as a Cloud Service e come mantenere gli indici in futuro.</p>
-               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+               <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.html?lang=it" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ulteriori informazioni</span>
                </a>
            </div>

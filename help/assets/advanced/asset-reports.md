@@ -28,4 +28,4 @@ AEM Assets fornisce un framework di reporting a livello aziendale in grado di ad
 
 >[!IMPORTANT]
 >
->AEM 6.5 fornisce la funzionalità di configurare [rapporti sulle risorse](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html#prerequisite-for-reporting), consentendo agli amministratori di definire ciò che viene tracciato e incluso nei rapporti.
+>AEM 6.5 fornisce la funzionalità di configurare [rapporti sulle risorse](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=it#prerequisite-for-reporting), consentendo agli amministratori di definire ciò che viene tracciato e incluso nei rapporti.

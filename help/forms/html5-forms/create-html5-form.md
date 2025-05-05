@@ -25,7 +25,7 @@ HTML5 forms è una nuova funzionalità di Adobe Experience Manager che offre il 
 
 ## Prerequisito
 
-Assicurati di disporre di un’istanza funzionante di AEM Forms. Segui la [guida all&#39;installazione](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) per installare e configurare AEM Forms
+Assicurati di disporre di un’istanza funzionante di AEM Forms. Segui la [guida all&#39;installazione](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html?lang=it) per installare e configurare AEM Forms
 
 ## Creazione del primo modulo HTML5
 
@@ -57,6 +57,6 @@ Le proprietà avanzate del modello xdp ti consentono di specificare la data di p
 
 **Invia URL** - Questo è l&#39;URL che gestirà l&#39;invio del modulo HTML5. Questo argomento verrà trattato nella prossima lezione. Se non viene specificato un URL di invio, viene richiamato il gestore di invio predefinito che restituisce i dati del modulo al browser.
 
-**Profilo rendering HTML** - I moduli HTML5 hanno il concetto di profili esposti come endpoint REST per abilitare il rendering mobile dei modelli di modulo. La maggior parte delle volte il profilo di rendering predefinito deve essere sufficiente per eseguire il rendering del modulo. Se il profilo di rendering predefinito non soddisfa le tue esigenze, puoi creare un [profilo personalizzato](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/custom-profile.html) e associarlo al modulo.
+**Profilo rendering HTML** - I moduli HTML5 hanno il concetto di profili esposti come endpoint REST per abilitare il rendering mobile dei modelli di modulo. La maggior parte delle volte il profilo di rendering predefinito deve essere sufficiente per eseguire il rendering del modulo. Se il profilo di rendering predefinito non soddisfa le tue esigenze, puoi creare un [profilo personalizzato](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/custom-profile.html?lang=it) e associarlo al modulo.
 
 **Servizio di precompilazione** - Il servizio di precompilazione viene in genere utilizzato per compilare il modulo con dati recuperati da un&#39;origine dati back-end.

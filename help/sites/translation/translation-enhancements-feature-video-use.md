@@ -42,6 +42,6 @@ Gli autori possono ora creare progetti di traduzione multilingue in modo rapido 
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Traduzione di contenuti per siti multilingue](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html)
-* [https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html)
-* [Best practice per la traduzione](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-bp.html)
+* [Traduzione di contenuti per siti multilingue](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/translation.html)
+* [https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/tc-manage.html)
+* [Best practice per la traduzione](https://helpx.adobe.com/it/experience-manager/6-5/sites/administering/using/tc-bp.html)

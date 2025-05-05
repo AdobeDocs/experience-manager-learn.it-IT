@@ -163,7 +163,7 @@ Tuttavia, questa volta dovresti visualizzare le **richieste bloccate** e i valor
 
 Impediamo **attacchi DoS** bloccando le richieste provenienti da un indirizzo IP che effettua 100 richieste al secondo, causandone il blocco per 5 minuti.
 
-- Aggiungi la seguente regola [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#ratelimit-structure) del filtro del traffico del limite di frequenza  nel file `/config/cdn.yaml` del progetto WKND.
+- Aggiungi la seguente regola [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=it#ratelimit-structure) del filtro del traffico del limite di frequenza  nel file `/config/cdn.yaml` del progetto WKND.
 
 ```yaml
 kind: CDN
@@ -227,7 +227,7 @@ Gli esempi di regole del filtro del traffico finora possono essere configurati d
 
 Esaminiamo ora l&#39;esperienza di un cliente che ha ottenuto una licenza di protezione avanzata o WAF-DDoS, che consente di configurare regole avanzate per proteggere i siti Web da attacchi più sofisticati.
 
-Prima di continuare, abilitare la protezione WAF-DDoS per il programma, come descritto nella documentazione sulle regole del filtro del traffico [passaggi di installazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup).
+Prima di continuare, abilitare la protezione WAF-DDoS per il programma, come descritto nella documentazione sulle regole del filtro del traffico [passaggi di installazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=it#setup).
 
 #### Senza WAFFlags
 
@@ -264,7 +264,7 @@ I pannelli **Distribuzione flag WAF** e **Attacchi principali** mostrano ulterio
 
 Aggiungiamo ora una regola di WAF che contiene la proprietà `wafFlags` come parte della proprietà `action` e **blocca le richieste di attacchi simulati**.
 
-Dal punto di vista della sintassi, le regole di WAF sono simili a quelle visualizzate in precedenza, tuttavia, la proprietà `action` fa riferimento a uno o più valori `wafFlags`. Per ulteriori informazioni su `wafFlags`, consulta la sezione [Elenco flag WAF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#waf-flags-list).
+Dal punto di vista della sintassi, le regole di WAF sono simili a quelle visualizzate in precedenza, tuttavia, la proprietà `action` fa riferimento a uno o più valori `wafFlags`. Per ulteriori informazioni su `wafFlags`, consulta la sezione [Elenco flag WAF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=it#waf-flags-list).
 
 - Aggiungi la seguente regola nel file `/config/cdn.yaml` del progetto WKND. Si noti che la regola `block-waf-flags` include alcuni dei wafFlags visualizzati nella dashboard quando vengono attaccati con traffico dannoso simulato. In effetti, è buona prassi nel tempo analizzare i registri per determinare quali nuove regole dichiarare, man mano che il panorama delle minacce si evolve.
 
@@ -352,7 +352,7 @@ Acquisisci familiarità con le [best practice](./best-practices.md) consigliate 
 
 ## Risorse aggiuntive
 
-[Sintassi delle regole filtro traffico](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#rules-syntax)
+[Sintassi delle regole filtro traffico](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=it#rules-syntax)
 
-[Formato registro CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#cdn-log-format)
+[Formato registro CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=it#cdn-log-format)
 

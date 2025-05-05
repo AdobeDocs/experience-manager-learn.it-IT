@@ -55,6 +55,6 @@ Questo video tocca anche la console [!UICONTROL Attività] in Cloud Manager, che
 ## Materiali di supporto
 
 * [Guida utente di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=it)
-* [Scarica analisi codice [!DNL SonarQube] regole](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)
+* [Scarica analisi codice [!DNL SonarQube] regole](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html?lang=it)
    * *XLSX disponibile nella parte inferiore della sezione collegata*
 * [[!DNL SonarQube] Indice regole Java™](https://rules.sonarsource.com/java/)

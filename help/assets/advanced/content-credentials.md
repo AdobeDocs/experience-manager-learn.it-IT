@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Credenziali contenuto
 
-Scopri in che modo le [credenziali del contenuto](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/content-credentials) di AEM Assets forniscono metadati verificabili per garantire l’autenticità e l’integrità delle risorse digitali, promuovendo la fiducia e la trasparenza nella creazione di contenuti.
+Scopri in che modo le [credenziali del contenuto](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-view/content-credentials) di AEM Assets forniscono metadati verificabili per garantire l’autenticità e l’integrità delle risorse digitali, promuovendo la fiducia e la trasparenza nella creazione di contenuti.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441700/?learn=on&enablevpops)

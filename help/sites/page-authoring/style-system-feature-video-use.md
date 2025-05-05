@@ -34,4 +34,4 @@ Gli stili visualizzati sono forniti dall&#39;applicazione [WKND](https://github.
 
 Vuoi scoprire come sviluppare con il sistema di stili? Consulta le seguenti esercitazioni:
 
-* [Sviluppo con il sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
+* [Sviluppo con il sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html?lang=it)

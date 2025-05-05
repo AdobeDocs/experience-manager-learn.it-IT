@@ -36,4 +36,4 @@ Utilizza AEM Desktop App per semplificare l’accesso a qualsiasi risorsa gestit
 
 ## Risorse aggiuntive
 
-+ [Scarica l&#39;ultima app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)
++ [Scarica l&#39;ultima app desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=it)

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Genera documento di record (DOR) a livello di programmazione
 
-In questo articolo viene illustrato l&#39;utilizzo di `com.adobe.aemds.guide.addon.dor.DoRService API` per generare **Documento di record** a livello di programmazione. [Il documento record](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) è una versione PDF dei dati acquisiti in un modulo adattivo.
+In questo articolo viene illustrato l&#39;utilizzo di `com.adobe.aemds.guide.addon.dor.DoRService API` per generare **Documento di record** a livello di programmazione. [Il documento record](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=it) è una versione PDF dei dati acquisiti in un modulo adattivo.
 
 1. Di seguito è riportato lo snippet di codice. La prima riga ottiene il servizio DOR.
 1. Impostare le opzioni DoRO.

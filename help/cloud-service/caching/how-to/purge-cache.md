@@ -104,7 +104,7 @@ Infine, distribuisci la regola CDN configurata nell’ambiente AEM as a Cloud Se
 
 1. In Cloud Manager, passa alla sezione **Pipeline**.
 
-1. Crea una nuova pipeline o seleziona la pipeline esistente che distribuisce solo i file **Config**. Per i passaggi dettagliati, vedere [Creare una pipeline di configurazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
+1. Crea una nuova pipeline o seleziona la pipeline esistente che distribuisce solo i file **Config**. Per i passaggi dettagliati, vedere [Creare una pipeline di configurazione](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
 
 1. Fai clic sul pulsante **Esegui** per distribuire la regola CDN.
 

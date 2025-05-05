@@ -35,12 +35,12 @@ Questo video illustra le seguenti funzionalità del componente Condivisione soci
 
 [http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl](http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl)
 
-[L&#39;esternalizzatore di AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) deve essere impostato sia su AEM Author che su AEM Publish, per mappare la modalità di esecuzione di pubblicazione al dominio accessibile al pubblico utilizzato per accedere a AEM Publish.
+[L&#39;esternalizzatore di AEM](https://helpx.adobe.com/it/experience-manager/6-5/sites/developing/using/externalizer.html) deve essere impostato sia su AEM Author che su AEM Publish, per mappare la modalità di esecuzione di pubblicazione al dominio accessibile al pubblico utilizzato per accedere a AEM Publish.
 
-In questo video, `/etc/hosts` viene utilizzato per falsificare *www.example.com* per risolvere in localhost e viene utilizzata una [configurazione di base di AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) per consentire a www.example.com di avviare AEM Publish.
+In questo video, `/etc/hosts` viene utilizzato per falsificare *www.example.com* per risolvere in localhost e viene utilizzata una [configurazione di base di AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=it) per consentire a www.example.com di avviare AEM Publish.
 
 ## Materiali di supporto {#supporting-materials}
 
 * [Scarica i componenti core di AEM](https://github.com/adobe/aem-core-wcm-components/releases)
 * [Scarica We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)
-* [Installazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
+* [Installazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=it)

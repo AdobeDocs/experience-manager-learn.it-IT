@@ -35,7 +35,7 @@ Prima di seguire questa esercitazione, assicurati che la configurazione di rete 
 
 La stringa di connessione della configurazione OSGi utilizza:
 
-+ Valore `AEM_PROXY_HOST` tramite la [variabile di ambiente di configurazione OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` come host della connessione
++ Valore `AEM_PROXY_HOST` tramite la [variabile di ambiente di configurazione OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=it#environment-specific-configuration-values) `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` come host della connessione
 + `30001` che è il valore `portOrig` per il mapping di inoltro delle porte Cloud Manager `30001` → `mysql.example.com:3306`
 
 Poiché i segreti non devono essere archiviati nel codice, è consigliabile fornire il nome utente e la password della connessione SQL tramite le variabili di configurazione OSGi, impostate con CLI AIO o API Cloud Manager.

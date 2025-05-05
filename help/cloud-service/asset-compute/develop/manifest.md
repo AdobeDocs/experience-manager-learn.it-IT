@@ -28,7 +28,7 @@ ht-degree: 0%
 
 I processi di lavoro sono definiti come voci di azioni Adobe I/O Runtime in `actions` e sono costituiti da un set di configurazioni.
 
-I processi di lavoro che accedono ad altre integrazioni Adobe I/O devono impostare la proprietà `annotations -> require-adobe-auth` su `true` in quanto [espone le credenziali Adobe I/O del processo di lavoro](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) tramite l&#39;oggetto `params.auth`. Questo è in genere necessario quando il lavoratore effettua una chiamata alle API di Adobe I/O, come le API di Adobe Photoshop, Lightroom o Sensei, e può essere attivato per lavoratore.
+I processi di lavoro che accedono ad altre integrazioni Adobe I/O devono impostare la proprietà `annotations -> require-adobe-auth` su `true` in quanto [espone le credenziali Adobe I/O del processo di lavoro](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=it#access-adobe-apis) tramite l&#39;oggetto `params.auth`. Questo è in genere necessario quando il lavoratore effettua una chiamata alle API di Adobe I/O, come le API di Adobe Photoshop, Lightroom o Sensei, e può essere attivato per lavoratore.
 
 1. Aprire e rivedere il processo di lavoro generato automaticamente `manifest.yml`. I progetti che contengono più processi di lavoro Asset Compute devono definire una voce per ogni processo di lavoro sotto l&#39;array `actions`.
 
@@ -51,7 +51,7 @@ packages:
 
 Ogni lavoratore può configurare i [limiti](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) per il proprio contesto di esecuzione in Adobe I/O Runtime. Questi valori devono essere regolati in modo da fornire al lavoratore un dimensionamento ottimale, in base al volume, al tasso e al tipo di risorse che calcolerà, nonché al tipo di lavoro svolto.
 
-Rivedi le [linee guida per il dimensionamento di Adobe](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) prima di impostare i limiti. I processi di lavoro di Asset Compute possono esaurire la memoria durante l’elaborazione delle risorse, causando l’interruzione dell’esecuzione di Adobe I/O Runtime, in modo da garantire che il processo di lavoro venga ridimensionato in modo appropriato per gestire tutte le risorse candidate.
+Rivedi le [linee guida per il dimensionamento di Adobe](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=it#sizing-workers) prima di impostare i limiti. I processi di lavoro di Asset Compute possono esaurire la memoria durante l’elaborazione delle risorse, causando l’interruzione dell’esecuzione di Adobe I/O Runtime, in modo da garantire che il processo di lavoro venga ridimensionato in modo appropriato per gestire tutte le risorse candidate.
 
 1. Aggiungere una sezione `inputs` alla nuova voce delle azioni `wknd-asset-compute`. Questo consente di ottimizzare le prestazioni complessive e l’allocazione delle risorse del processo di lavoro Asset Compute.
 

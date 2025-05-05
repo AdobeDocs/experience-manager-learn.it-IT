@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Contenuto localizzato con AEM Headless
 
-AEM fornisce un [framework di integrazione della traduzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) per contenuti headless, che consente di tradurre facilmente frammenti di contenuto e risorse di supporto per l&#39;utilizzo in più lingue. Si tratta dello stesso framework utilizzato per tradurre altri contenuti AEM, come pagine, frammenti di esperienza, Assets e Forms. Una volta tradotto [il contenuto headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=it) e pubblicato, è pronto per essere utilizzato dalle applicazioni headless.
+AEM fornisce un [framework di integrazione della traduzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html?lang=it) per contenuti headless, che consente di tradurre facilmente frammenti di contenuto e risorse di supporto per l&#39;utilizzo in più lingue. Si tratta dello stesso framework utilizzato per tradurre altri contenuti AEM, come pagine, frammenti di esperienza, Assets e Forms. Una volta tradotto [il contenuto headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=it) e pubblicato, è pronto per essere utilizzato dalle applicazioni headless.
 
 ## Struttura delle cartelle di Assets{#assets-folder-structure}
 
-Assicurati che i frammenti di contenuto localizzati in AEM seguano la [struttura di localizzazione consigliata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure).
+Assicurati che i frammenti di contenuto localizzati in AEM seguano la [struttura di localizzazione consigliata](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html?lang=it#recommended-structure).
 
 ![Cartelle risorse AEM localizzate](./assets/localized-content/asset-folders.jpg)
 

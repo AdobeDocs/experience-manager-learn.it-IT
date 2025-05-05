@@ -28,4 +28,4 @@ Adobe Experience Manager Sites consente all’autore di gestire la larghezza di 
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Documentazione di layout reattivo](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html)
+* [Documentazione di layout reattivo](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=it)

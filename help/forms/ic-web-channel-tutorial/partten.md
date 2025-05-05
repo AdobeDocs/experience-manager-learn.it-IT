@@ -55,7 +55,7 @@ ht-degree: 0%
 
 * Fai clic sull’icona Assets e applica il filtro per visualizzare le risorse di tipo &quot;Frammenti di documento&quot;. Trascinare il frammento di documento RetirementIncomeOutlook nell&#39;area di destinazione del pannello sinistro.
 
-* Puoi fare riferimento a [a questa pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) quando aggiungi un frammento di documento alle aree di contenuto.
+* Puoi fare riferimento a [a questa pagina](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html?lang=it) quando aggiungi un frammento di documento alle aree di contenuto.
 
 ## Grafico Ad Entrate Mensili Stimate {#adding-estimated-monthly-income-chart}
 

@@ -76,7 +76,7 @@ Il documento sul documento SDR fornisce una panoramica completa del piano di att
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419874?quality=12&learn=on)
 
-Per ulteriori informazioni sui concetti e sui vari elementi da includere nel documento SDR, visitare il documento [Creazione e manutenzione di un riferimento alla progettazione della soluzione (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html). Puoi anche scaricare un modello Excel di esempio, tuttavia è disponibile anche la versione specifica per WKND [qui](./assets/Initial-WKND-WebSDK-BRD-SDR.xlsx).
+Per ulteriori informazioni sui concetti e sui vari elementi da includere nel documento SDR, visitare il documento [Creazione e manutenzione di un riferimento alla progettazione della soluzione (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=it). Puoi anche scaricare un modello Excel di esempio, tuttavia è disponibile anche la versione specifica per WKND [qui](./assets/Initial-WKND-WebSDK-BRD-SDR.xlsx).
 
 ## Configurazione di Analytics: suite di rapporti, Analysis Workspace
 
@@ -90,10 +90,10 @@ Per analizzare, raccogliere informazioni e condividerle con altri dai dati racco
 
 Per ulteriori informazioni sulla configurazione e i concetti di Analytics, si consiglia vivamente di utilizzare le risorse seguenti:
 
-+ [Suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html)
-+ [Variabili di conversione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html)
-+ [Eventi di successo](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event)
-+ [Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)
++ [Suite di rapporti](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html?lang=it)
++ [Variabili di conversione](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=it)
++ [Eventi di successo](https://experienceleague.adobe.com/it/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event)
++ [Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=it)
 
 ## Aggiornare lo stream di dati - Aggiungere il servizio Analytics
 
@@ -273,9 +273,9 @@ Implementando i passaggi consigliati e utilizzando le risorse fornite, come il d
 
 ## Risorse aggiuntive
 
-+ [Integrare Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform/web-sdk.html)
++ [Integrare Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform/web-sdk.html?lang=it)
 + [Utilizzo di Adobe Client Data Layer con i Componenti core](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=it)
 + [Integrazione dei tag di raccolta dati di Experience Platform e AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=it)
-+ [Panoramica di Adobe Experience Platform Web SDK e Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
-+ [Esercitazioni sulla raccolta dati](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
-+ [Panoramica di Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [Panoramica di Adobe Experience Platform Web SDK e Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=it)
++ [Esercitazioni sulla raccolta dati](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=it)
++ [Panoramica di Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=it)

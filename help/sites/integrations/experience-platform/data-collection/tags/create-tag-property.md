@@ -42,7 +42,7 @@ La procedura seguente illustra come creare una proprietà Tag.
 
 ## Creare una nuova regola
 
-Apri la proprietà Tag appena creata facendo clic sul nome nella visualizzazione **Proprietà tag**. Inoltre, sotto l&#39;intestazione _My Recent Activity_ dovresti vedere che l&#39;estensione Core vi è stata aggiunta. L&#39;estensione tag Core è l&#39;estensione predefinita e fornisce tipi di eventi fondamentali come caricamento pagina, browser, modulo e altri tipi di eventi. Per ulteriori informazioni, consulta [Panoramica dell&#39;estensione Core](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html).
+Apri la proprietà Tag appena creata facendo clic sul nome nella visualizzazione **Proprietà tag**. Inoltre, sotto l&#39;intestazione _My Recent Activity_ dovresti vedere che l&#39;estensione Core vi è stata aggiunta. L&#39;estensione tag Core è l&#39;estensione predefinita e fornisce tipi di eventi fondamentali come caricamento pagina, browser, modulo e altri tipi di eventi. Per ulteriori informazioni, consulta [Panoramica dell&#39;estensione Core](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=it).
 
 Le regole ti consentono di specificare cosa deve accadere quando il visitatore interagisce con il tuo sito AEM. Per semplificare, registriamo due messaggi nella console del browser per dimostrare come l’integrazione dei tag di raccolta dati possa inserire codice JavaScript nel sito AEM senza aggiornare il codice del progetto AEM.
 
@@ -93,4 +93,4 @@ Il passaggio precedente completa la semplice creazione della proprietà Tag che 
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [Creare una proprietà tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html)
+* [Creare una proprietà tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=it)

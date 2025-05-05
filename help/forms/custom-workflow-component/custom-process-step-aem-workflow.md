@@ -24,7 +24,7 @@ Per scrivere la classe Java e distribuirla come bundle OSGi, sono necessari i se
 
 ## Crea progetto Maven
 
-Il primo passaggio consiste nel creare un progetto Maven utilizzando l’archetipo Adobe Maven appropriato. I passaggi dettagliati sono elencati in questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Una volta importato il progetto Maven nell’eclissi, sei pronto per iniziare a scrivere il primo componente OSGi che può essere utilizzato nel passaggio del processo.
+Il primo passaggio consiste nel creare un progetto Maven utilizzando l’archetipo Adobe Maven appropriato. I passaggi dettagliati sono elencati in questo [articolo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=it). Una volta importato il progetto Maven nell’eclissi, sei pronto per iniziare a scrivere il primo componente OSGi che può essere utilizzato nel passaggio del processo.
 
 
 ### Crea classe che implementa WorkflowProcess
@@ -143,7 +143,7 @@ Il servizio QueryBuilder viene utilizzato per eseguire query sui nodi di tipo nt
 
 #### Creare e distribuire
 
-[Crea il bundle come descritto qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+[Crea il bundle come descritto qui](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=it)
 [Assicurarsi che il bundle sia distribuito e in stato attivo](http://localhost:4502/system/console/bundles)
 
 ## Passaggi successivi

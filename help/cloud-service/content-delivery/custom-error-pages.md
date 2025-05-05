@@ -80,7 +80,7 @@ Per personalizzare le pagine di errore sono disponibili le seguenti opzioni:
 
 In questa esercitazione imparerai a personalizzare le pagine di errore utilizzando la direttiva _ErrorDocument_, il _Gestore pagine di errore ACS AEM Commons_ e le opzioni _Pagine di errore CDN_. Per seguire questa esercitazione, è necessario:
 
-- [ambiente di sviluppo AEM locale](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) o ambiente AEM as a Cloud Service. L&#39;opzione _Pagine errore CDN_ è applicabile all&#39;ambiente AEM as a Cloud Service.
+- [ambiente di sviluppo AEM locale](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) o ambiente AEM as a Cloud Service. L&#39;opzione _Pagine errore CDN_ è applicabile all&#39;ambiente AEM as a Cloud Service.
 
 - Il [progetto AEM WKND](https://github.com/adobe/aem-guides-wknd) per personalizzare le pagine di errore.
 
@@ -95,7 +95,7 @@ In questa esercitazione imparerai a personalizzare le pagine di errore utilizzan
   $ mvn clean install -PautoInstallSinglePackage -PautoInstallSinglePackagePublish
   ```
 
-- Per l&#39;ambiente AEM as a Cloud Service, distribuire il progetto WKND di AEM eseguendo la [pipeline full stack](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline). Vedere l&#39;esempio [pipeline non di produzione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-non-production-pipeline).
+- Per l&#39;ambiente AEM as a Cloud Service, distribuire il progetto WKND di AEM eseguendo la [pipeline full stack](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline). Vedere l&#39;esempio [pipeline non di produzione](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/cloud-manager/cicd-non-production-pipeline).
 
 - Verifica che il rendering delle pagine del sito WKND sia corretto.
 
@@ -375,7 +375,7 @@ Infine, distribuisci la regola CDN configurata nell’ambiente AEM as a Cloud Se
 
 1. In Cloud Manager, passa alla sezione **Pipeline**.
 
-1. Crea una nuova pipeline o seleziona la pipeline esistente che distribuisce solo i file **Config**. Per i passaggi dettagliati, vedere [Creare una pipeline di configurazione](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
+1. Crea una nuova pipeline o seleziona la pipeline esistente che distribuisce solo i file **Config**. Per i passaggi dettagliati, vedere [Creare una pipeline di configurazione](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
 
 1. Fai clic sul pulsante **Esegui** per distribuire la regola CDN.
 
@@ -401,6 +401,6 @@ In questo tutorial hai imparato quali sono le pagine di errore predefinite, da d
 
 ## Risorse aggiuntive
 
-- [Configurazione delle pagine di errore CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
+- [Configurazione delle pagine di errore CDN](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
 
-- [Cloud Manager - Config pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)
+- [Cloud Manager - Config pipeline](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#config-deployment-pipeline)

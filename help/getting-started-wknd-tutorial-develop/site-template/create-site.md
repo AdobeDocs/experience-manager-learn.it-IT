@@ -25,13 +25,13 @@ Come parte della Creazione Rapida dei Siti, utilizza la Creazione guidata Siti i
 
 ## Prerequisiti {#prerequisites}
 
-I passaggi descritti in questo capitolo si svolgono in un ambiente Adobe Experience Manager as a Cloud Service. Assicurati di disporre dell’accesso amministrativo all’ambiente AEM. Per completare questa esercitazione, si consiglia di utilizzare un [programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html) e un [ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html).
+I passaggi descritti in questo capitolo si svolgono in un ambiente Adobe Experience Manager as a Cloud Service. Assicurati di disporre dell’accesso amministrativo all’ambiente AEM. Per completare questa esercitazione, si consiglia di utilizzare un [programma sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/sandbox-programs/introduction-sandbox-programs.html?lang=it) e un [ambiente di sviluppo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=it).
 
-Per questa esercitazione è possibile utilizzare anche gli ambienti del [programma di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html); tuttavia, assicurati che le attività di questa esercitazione non influiscano sul lavoro eseguito sugli ambienti di destinazione, poiché questa esercitazione distribuisce il contenuto e il codice nell&#39;ambiente AEM di destinazione.
+Per questa esercitazione è possibile utilizzare anche gli ambienti del [programma di produzione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html?lang=it); tuttavia, assicurati che le attività di questa esercitazione non influiscano sul lavoro eseguito sugli ambienti di destinazione, poiché questa esercitazione distribuisce il contenuto e il codice nell&#39;ambiente AEM di destinazione.
 
-È possibile utilizzare [AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html) per alcune parti di questa esercitazione. Aspetti di questo tutorial che si basano su servizi cloud, come [la distribuzione di temi con la pipeline front-end di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html), non possono essere eseguiti su AEM SDK.
+È possibile utilizzare [AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=it) per alcune parti di questa esercitazione. Aspetti di questo tutorial che si basano su servizi cloud, come [la distribuzione di temi con la pipeline front-end di Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html?lang=it), non possono essere eseguiti su AEM SDK.
 
-Per ulteriori dettagli, consulta la [documentazione sull&#39;onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html).
+Per ulteriori dettagli, consulta la [documentazione sull&#39;onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=it).
 
 ## Obiettivo {#objective}
 
@@ -76,7 +76,7 @@ La maggior parte dell&#39;esercitazione si svolgerà utilizzando il servizio **A
 
 >[!NOTE]
 >
-> Problemi di accesso ad Experience Manager? Consulta la [documentazione sull&#39;onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html)
+> Problemi di accesso ad Experience Manager? Consulta la [documentazione sull&#39;onboarding](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=it)
 
 ## Scarica il modello di sito di base
 

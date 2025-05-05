@@ -41,4 +41,4 @@ URL modelli modificabili (istanza AEM locale): [http://localhost:4502/libs/wcm/c
 ## Risorse aggiuntive {#additional-resources}
 
 * [Modelli di pagina modificabili - Documentazione](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=it)
-* [Creazione di modelli di pagina - Documentazione](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html)
+* [Creazione di modelli di pagina - Documentazione](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/templates.html?lang=it)

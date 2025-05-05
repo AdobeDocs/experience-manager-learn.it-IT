@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Per utilizzare questo caso d’uso nell’istanza AEM locale, segui i passaggi elencati di seguito.
 
-* [Distribuisci il bundle DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip) contenuto nel file zip.
+* [Distribuisci il bundle DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=it) contenuto nel file zip.
 
 * Aggiungi la seguente voce nel servizio User Mapper di Apache Sling Service **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** utilizzando [configMgr](http://localhost:4502/system/console/configMgr).
 

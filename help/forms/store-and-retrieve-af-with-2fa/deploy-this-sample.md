@@ -45,7 +45,7 @@ Crea un account sviluppatore con [Nexmo](https://dashboard.nexmo.com/) per invia
 ## Distribuisci i seguenti bundle OSGi
 
 Distribuisci il bundle con [codice per archiviare e recuperare dati dal database](assets/SaveAndResume.core-1.0.0-SNAPSHOT.jar)
-Scarica e decomprimi [develingwithserviceuser.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip).
+Scarica e decomprimi [develingwithserviceuser.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=it).
 Distribuisci il file DevelopingWithServiceUser.jar utilizzando la console web Felix.
 
 ## Distribuire la libreria client

@@ -24,7 +24,7 @@ Le seguenti risorse/configurazioni sono state distribuite su un server di pubbli
 * [Bundle wrapper Adobe Sign](assets/AcrobatSign.core-1.0.0-SNAPSHOT.jar)
 
 * [Esempio di modello di comunicazione interattiva](assets/waiver-interactive-communication.zip)
-* [Distribuire il bundle DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip)
+* [Distribuire il bundle DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=it)
 * Aggiungi la seguente voce nel servizio User Mapper di Apache Sling Service utilizzando OSGi configMgr
   **Sviluppo con ServiceUser.core:getformsresourceresolver=fd-service**
 
@@ -61,4 +61,4 @@ Per abilitare l’esecuzione di chiamate POST all’endpoint AEM dall’app REAC
 
 ![cors-setting](assets/cors-settings.png)
 
-Per ulteriori dettagli sulle opzioni di configurazione CORS, vedi [informazioni su CORS con AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html).
+Per ulteriori dettagli sulle opzioni di configurazione CORS, vedi [informazioni su CORS con AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=it).

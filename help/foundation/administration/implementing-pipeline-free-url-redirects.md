@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Implementazione dei reindirizzamenti URL privi di pipeline
 
-Scopri come implementare [reindirizzamenti URL senza pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) in AEM as a Cloud Service per consentire al team marketing di gestire i reindirizzamenti senza dover ricorrere a uno sviluppatore.
+Scopri come implementare [reindirizzamenti URL senza pipeline](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) in AEM as a Cloud Service per consentire al team marketing di gestire i reindirizzamenti senza dover ricorrere a uno sviluppatore.
 
 Esistono diverse opzioni per gestire i reindirizzamenti URL in AEM. Per ulteriori informazioni, vedi [Reindirizzamenti URL](url-redirection.md).
 
@@ -37,7 +37,7 @@ Per completare questa esercitazione, è necessario:
 
 ## Caso di utilizzo del tutorial
 
-Ai fini della demo, supponiamo che il team di marketing WKND stia lanciando una nuova campagna di sci. Vorrebbe creare brevi URL per le pagine di avventura sciistica e gestirle in modo autonomo, come nel caso di come gestiscono il contenuto. Hanno deciso di utilizzare l&#39;approccio [reindirizzamenti URL senza pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) per gestire i reindirizzamenti URL.
+Ai fini della demo, supponiamo che il team di marketing WKND stia lanciando una nuova campagna di sci. Vorrebbe creare brevi URL per le pagine di avventura sciistica e gestirle in modo autonomo, come nel caso di come gestiscono il contenuto. Hanno deciso di utilizzare l&#39;approccio [reindirizzamenti URL senza pipeline](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) per gestire i reindirizzamenti URL.
 
 In base ai requisiti del team di marketing, di seguito sono riportati i reindirizzamenti URL da creare.
 
@@ -229,7 +229,7 @@ RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 >
 >Il termine *senza pipeline* viene utilizzato per sottolineare che le configurazioni sono *distribuite una sola volta* e che il team di marketing può gestire i reindirizzamenti URL aggiornando il file di testo.
 
-Per distribuire le configurazioni, utilizzare la pipeline [full-stack](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) o [configurazione a livello web](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines) in [Cloud Manager](https://my.cloudmanager.adobe.com/).
+Per distribuire le configurazioni, utilizzare la pipeline [full-stack](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) o [configurazione a livello web](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines) in [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
 ![Distribuzione tramite pipeline full stack](./assets/pipeline-free-redirects/deploy-full-stack-pipeline.png)
 
@@ -248,5 +248,5 @@ Il team marketing può gestire i reindirizzamenti URL come coppie chiave-valore 
 
 ## Risorse aggiuntive
 
-- [Reindirizzamenti URL senza pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
+- [Reindirizzamenti URL senza pipeline](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)
 - [Reindirizzamenti URL](url-redirection.md)

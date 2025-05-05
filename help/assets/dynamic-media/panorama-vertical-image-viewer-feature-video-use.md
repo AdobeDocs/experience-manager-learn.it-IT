@@ -65,7 +65,7 @@ Con i campioni orizzontali, a seconda delle dimensioni dello schermo del desktop
  </tbody>
 </table>
 
-[Configurazione di Dynamic Media in modalità Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[Configurazione di Dynamic Media in modalità Scene7](https://helpx.adobe.com/it/experience-manager/6-5/assets/using/config-dms7.html)
 
 [Configurazione di Dynamic Media in modalità ibrida](https://helpx.adobe.com/it/experience-manager/6-5/assets/using/config-dynamic.html)
 

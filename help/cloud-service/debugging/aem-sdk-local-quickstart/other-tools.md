@@ -83,7 +83,7 @@ Spiega query si trova in:
 
 ![Debugger QueryBuilder](./assets/other-tools/query-debugger.png)
 
-QueryBuilder Debugger è uno strumento basato sul Web che consente di eseguire il debug e comprendere le query di ricerca utilizzando la sintassi [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) di AEM.
+QueryBuilder Debugger è uno strumento basato sul Web che consente di eseguire il debug e comprendere le query di ricerca utilizzando la sintassi [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=it) di AEM.
 
 QueryBuilder Debugger si trova in:
 
