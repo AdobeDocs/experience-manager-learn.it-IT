@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Un rapido esempio di come utilizzare la convalida del dispatcher nei flussi di lavoro di sviluppo di AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/342358?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448427?quality=12&learn=on&captions=ita)
 
 ## Contenuto trattato in questo video
 

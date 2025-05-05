@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Scopri come personalizzare AEM Importer per massimizzare l’efficienza e la precisione durante la migrazione di un sito all’authoring di documenti con Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429596/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444253/?learn=on&captions=ita)

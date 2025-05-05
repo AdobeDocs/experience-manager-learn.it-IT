@@ -22,4 +22,4 @@ ht-degree: 0%
 
 I **programmi** di Cloud Manager rappresentano insiemi di ambienti AEM che supportano set logici di iniziative aziendali, in genere corrispondenti a un Service level agreement (SLA) acquistato. Ad esempio, un programma può rappresentare le risorse AEM per supportare i siti Web pubblici globali, mentre un altro programma può rappresentare un DAM centrale interno.
 
->[!VIDEO](https://video.tv.adobe.com/v/26313?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328126?quality=12&learn=on&captions=ita)

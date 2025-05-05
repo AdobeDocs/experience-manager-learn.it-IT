@@ -26,7 +26,7 @@ Scopri il ciclo di vita dei componenti OSGi e come associare un servizio OSGi a:
 
 ...eventi del ciclo di vita.
 
->[!VIDEO](https://video.tv.adobe.com/v/335475?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417191?quality=12&learn=on&captions=ita)
 
 ## Riferimenti
 

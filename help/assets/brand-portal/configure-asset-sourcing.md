@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra il processo di configurazione dell&#39;origine delle risorse con Brand Portal.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335451?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418295?quality=12&learn=on&captions=ita)

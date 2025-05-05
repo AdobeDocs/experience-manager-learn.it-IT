@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Esplora le azioni che possono essere utilizzate in una variante di contenuto generato, tra cui salvataggio, copia, valutazione e altro nell’authoring di documenti Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428795/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437296/?learn=on&captions=ita)

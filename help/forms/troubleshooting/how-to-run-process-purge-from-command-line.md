@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per eseguire lo strumento di eliminazione dei processi dalla riga di comando.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335508?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438375?quality=12&learn=on&captions=ita)

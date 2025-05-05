@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per analizzare i problemi correlati all&#39;indicizzazione in AEM.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335465?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418307?quality=12&learn=on&captions=ita)

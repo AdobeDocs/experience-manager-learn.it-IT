@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra il processo per abilitare l&#39;output di debug per Workbench .*
 
->[!VIDEO](https://video.tv.adobe.com/v/335497?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417691?quality=12&learn=on&captions=ita)

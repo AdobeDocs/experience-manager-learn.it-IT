@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per modificare le dimensioni del pool bmc per XMLFormService(2 di 2).*
 
->[!VIDEO](https://video.tv.adobe.com/v/335553?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439059?quality=12&learn=on&captions=ita)

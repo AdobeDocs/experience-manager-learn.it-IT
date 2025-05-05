@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Crea modello dati modulo back-end archiviazione BLOB di Azure.
 
->[!VIDEO](https://video.tv.adobe.com/v/335423?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419011?quality=12&learn=on&captions=ita)

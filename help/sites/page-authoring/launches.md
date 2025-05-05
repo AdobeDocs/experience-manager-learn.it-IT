@@ -24,4 +24,4 @@ ht-degree: 1%
 
 I lanci in AEM Sites consentono di creare, scrivere e rivedere contenuti per siti web per le versioni future. Durante la creazione del lancio, il sito web di produzione può continuare a evolvere e cambiare giorno dopo giorno, come di consueto.
 
->[!VIDEO](https://video.tv.adobe.com/v/331285?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346839?quality=12&learn=on&captions=ita)

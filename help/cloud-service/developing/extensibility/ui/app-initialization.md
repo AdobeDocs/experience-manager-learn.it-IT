@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Inizializza un’app App Builder per l’estensione dell’interfaccia utente di AEM che definisce dove viene visualizzata l’estensione e il lavoro che esegue.
 
->[!VIDEO](https://video.tv.adobe.com/v/3412876?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447084?quality=12&learn=on&captions=ita)
 
 >[!IMPORTANT]
 >

@@ -24,7 +24,7 @@ Le estensioni dell’interfaccia utente di AEM possono essere verificate in base
 
 Il test di un’estensione viene eseguito tramite un URL appositamente creato che indica ad AEM di caricarla, solo per tale richiesta.
 
->[!VIDEO](https://video.tv.adobe.com/v/3412877?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417481?quality=12&learn=on&captions=ita)
 
 >[!IMPORTANT]
 >

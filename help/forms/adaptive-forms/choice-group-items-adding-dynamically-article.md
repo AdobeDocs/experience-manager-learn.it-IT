@@ -67,7 +67,7 @@ I dati presentati sono i seguenti
 
 **Aggiunta di elementi tramite l&#39;editor di regole**
 
->[!VIDEO](https://video.tv.adobe.com/v/26847?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36338?quality=12&learn=on&captions=ita)
 
 **Aggiunta di elementi tramite l&#39;editor di codice**
 

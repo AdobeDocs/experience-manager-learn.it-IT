@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Il miglioramento del catalogo di AEM 6.4 consente di creare pagine di catalogo utilizzando AEM Asset Templates e InDesign Server.  Un utente può creare una pagina di catalogo utilizzando il modello InDesign e mappare le proprietà dei prodotti su campi modificabili, che possono essere successivamente utilizzati per creare pagine simili per prodotti diversi.
 
->[!VIDEO](https://video.tv.adobe.com/v/22540?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326977?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >

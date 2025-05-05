@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come aggiungere un lavoro di traduzione a un progetto di traduzione esistente.
 
->[!VIDEO](https://video.tv.adobe.com/v/36488?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41643?quality=12&learn=on&captions=ita)

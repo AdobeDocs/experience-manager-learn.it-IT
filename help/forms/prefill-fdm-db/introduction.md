@@ -29,7 +29,7 @@ Al completamento di questo corso avrai imparato quanto segue.
 * Usa attributo di richiesta del modello dati modulo
 
 Il video seguente offre una panoramica del corso
->[!VIDEO](https://video.tv.adobe.com/v/36387?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3409945?quality=12&learn=on&captions=ita)
 
 ## Prerequisiti
 

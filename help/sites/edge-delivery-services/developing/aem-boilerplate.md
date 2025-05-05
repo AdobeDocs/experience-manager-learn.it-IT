@@ -23,4 +23,4 @@ ht-degree: 2%
 
 Configura l&#39;archivio Git del codice con il [modello standard AEM](https://github.com/adobe/aem-boilerplate) per Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425713/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434619/?learn=on&captions=ita)

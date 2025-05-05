@@ -23,7 +23,7 @@ Accedendo ai registri di AEM SDK, il file JAR quickstart locale di AEM SDK o gli
 
 ## Registri di AEM
 
->[!VIDEO](https://video.tv.adobe.com/v/34334?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38173?quality=12&learn=on&captions=ita)
 
 I registri fungono da strumenti di prima linea per il debug delle applicazioni AEM, ma dipendono dalla registrazione appropriata nell’applicazione AEM implementata. Adobe consiglia di mantenere le configurazioni di sviluppo locale e di registrazione di AEM as a Cloud Service Dev il più simile possibile, in quanto normalizza la visibilità dei registri negli ambienti quickstart locali di AEM SDK e AEM as a Cloud Service Dev, riducendo le modifiche e la ridistribuzione della configurazione.
 

@@ -24,7 +24,7 @@ ht-degree: 2%
 
 Esplora gli eventi attivati al momento della pubblicazione e dell’annullamento della pubblicazione in Edge Delivery Services, nonché i casi d’uso e gli esempi per l’utilizzo di tali eventi.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427681?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446664?learn=on&captions=ita)
 
 ## Risorse aggiuntive
 

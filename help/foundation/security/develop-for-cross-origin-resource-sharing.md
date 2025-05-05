@@ -25,7 +25,7 @@ Breve esempio di utilizzo di [!DNL CORS] per accedere al contenuto di AEM da un&
 
 Se è necessario l&#39;accesso multiorigine alla pubblicazione AEM, consulta [questa documentazione](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=it#dispatcher-configuration).
 
->[!VIDEO](https://video.tv.adobe.com/v/18837?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326687?quality=12&learn=on&captions=ita)
 
 In questo video:
 

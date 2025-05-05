@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come i campi Contenuto frammento di contenuto supportano il riferimento a vari tipi di contenuto AEM, ad esempio Frammenti di esperienza e Pagine.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419313/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436770/?learn=on&captions=ita)

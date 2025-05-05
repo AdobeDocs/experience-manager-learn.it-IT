@@ -28,4 +28,4 @@ In questo video:
 + Scopri i vari tipi di dati utilizzati per creare il modello per frammenti di contenuto
 + Comprendere in che modo il modello per frammenti di contenuto guida l’API di GraphQL
 
->[!VIDEO](https://video.tv.adobe.com/v/332858?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412906?quality=12&learn=on&captions=ita)

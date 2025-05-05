@@ -20,7 +20,7 @@ ht-degree: 3%
 
 I miglioramenti apportati al visualizzatore Dynamic Media in AEM 6.5 includono il supporto per il rendering video 360, 360 visualizzatori di contenuti multimediali (video360Social e video360VR) e la possibilità di selezionare miniature video personalizzate.
 
->[!VIDEO](https://video.tv.adobe.com/v/26391?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328132?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >

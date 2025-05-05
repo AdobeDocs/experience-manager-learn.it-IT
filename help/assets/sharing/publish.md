@@ -23,6 +23,6 @@ ht-degree: 2%
 
 Scopri come pubblicare le risorse e i relativi rendering da AEM Author ad AEM Publish.
 
->[!VIDEO](https://video.tv.adobe.com/v/330932?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/344741?quality=12&learn=on&captions=ita)
 
 _Prima di pubblicare le risorse, assicurati che la distribuzione AEM Assets disponga di un servizio di pubblicazione AEM concesso in licenza._

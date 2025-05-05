@@ -23,7 +23,7 @@ ht-degree: 0%
 
 AEM Assets fornisce un framework di reporting a livello aziendale in grado di adattarsi per archivi di grandi dimensioni tramite un’esperienza utente intuitiva.
 
->[!VIDEO](https://video.tv.adobe.com/v/22140?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410282?quality=12&learn=on&captions=ita)
 
 
 >[!IMPORTANT]

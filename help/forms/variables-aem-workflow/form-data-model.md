@@ -23,4 +23,4 @@ Le variabili del tipo di modello per dati modulo vengono generalmente utilizzate
 
 
 
->[!VIDEO](https://video.tv.adobe.com/v/41238?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328986?quality=12&learn=on&captions=ita)

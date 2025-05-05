@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Questo video illustra il processo di creazione di un set carosello con AEM Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335380?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418229?quality=12&learn=on&captions=ita)

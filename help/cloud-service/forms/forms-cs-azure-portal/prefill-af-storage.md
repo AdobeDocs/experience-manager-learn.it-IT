@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come utilizzare il servizio di precompilazione di AEM Forms per compilare i moduli adattivi dall’archiviazione BLOB di Azure.
 
->[!VIDEO](https://video.tv.adobe.com/v/335714?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419006?quality=12&learn=on&captions=ita)

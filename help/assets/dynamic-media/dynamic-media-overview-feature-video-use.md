@@ -28,7 +28,7 @@ Esplora le possibilità di Adobe Dynamic Media con la nostra [**demo live**](htt
 
 ## Panoramica di Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/27144?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328562?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Questo video descrive come gestire e accedere ai contenuti multimediali utilizza
 
 ## Utilizzo con AEM Sites
 
->[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328564?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Questo video descrive come il contenuto multimediale viene gestito in Adobe Expe
 
 ## Creare una raccolta di file multimediali diversi
 
->[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328560?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Questo video descrive il semplice processo di creazione di una raccolta di visua
 
 ## Predefiniti immagini
 
->[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328144?quality=12&learn=on&captions=ita)
 
 Questo video descrive come vengono creati i predefiniti immagine e cos’è un predefinito immagine, un URL abbreviato per una serie di argomenti del server immagini che operano su un’immagine ogni volta che un URL lo richiede. Scopri tecniche utili per estendere e modificare i predefiniti immagine.
 
@@ -84,7 +84,7 @@ Questo video descrive come vengono creati i predefiniti immagine e cos’è un p
 
 ## Modificatori URL avanzati
 
->[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328143?quality=12&learn=on&captions=ita)
 
 Questo video descrive come andare oltre il ridimensionamento delle immagini, sfruttando le funzioni del file sorgente stesso: trasparenza di sfondo, tracciati di ritaglio incorporati, ritaglio e testo come variabili con i modificatori URL di Dynamic Media.
 
@@ -96,7 +96,7 @@ Questo video descrive come andare oltre il ridimensionamento delle immagini, sfr
 
 ## Gestione dimensioni file JPEG
 
->[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328253?quality=12&learn=on&captions=ita)
 
 
 >[!NOTE]
@@ -107,7 +107,7 @@ Bilanciare la qualità dell&#39;immagine jpeg rispetto alle dimensioni del file 
 
 ## Sottotitoli
 
->[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328808?quality=12&learn=on&captions=ita)
 
 Aggiungi facilmente i sottotitoli codificati ai video Dynamic Media aggiungendo l’URL della copia a un documento aggiuntivo del file dei sottotitoli codificati, un file sidecar web.VTT, contenente le informazioni CC per qualsiasi video.
 

@@ -28,5 +28,5 @@ In questo video:
 + Scopri come eseguire query su un elenco di frammenti di contenuto e un singolo frammento di contenuto
 + Scopri come filtrare e richiedere attributi di dati specifici
 
->[!VIDEO](https://video.tv.adobe.com/v/332860?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412893?quality=12&learn=on&captions=ita)
 

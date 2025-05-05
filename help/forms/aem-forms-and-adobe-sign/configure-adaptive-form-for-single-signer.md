@@ -23,7 +23,7 @@ ht-degree: 4%
 
 Il video illustra i vari passaggi necessari per configurare un modulo adattivo con un singolo firmatario.
 
->[!VIDEO](https://video.tv.adobe.com/v/39475?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327739?quality=12&learn=on&captions=ita)
 
 Assets relativo a questo video può essere scaricato dal seguente collegamento
 

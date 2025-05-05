@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Racconti trendy: scopri come integrare i servizi di consegna edge con Google Maps e come ottimizzare le prestazioni con le integrazioni.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440977/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440997/?learn=on&enablevpops&captions=ita)

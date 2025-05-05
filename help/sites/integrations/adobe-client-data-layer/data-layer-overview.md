@@ -22,7 +22,7 @@ ht-degree: 6%
 
 Adobe Client Data Layer introduce un metodo standard per raccogliere e memorizzare i dati sull’esperienza di un visitatore in una pagina web e semplifica l’accesso a tali dati. Adobe Client Data Layer è indipendente dalla piattaforma, ma è completamente integrato nei Componenti core per l’utilizzo con AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/41195?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330115?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >

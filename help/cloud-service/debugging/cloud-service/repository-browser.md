@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Il Browser dell’archivio è un potente strumento che fornisce visibilità all’archivio dati sottostante di AEM, consentendo un facile debug dell’ambiente AEM as a Cloud Service. Il Browser dell’archivio supporta una visualizzazione di sola lettura delle risorse e delle proprietà di AEM in Produzione, Stage e Sviluppo, nonché dei servizi Author, Publish e Preview.
 
->[!VIDEO](https://video.tv.adobe.com/v/341464?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447062?quality=12&learn=on&captions=ita)
 
 Il Browser dell&#39;archivio è __ONLY__ disponibile negli ambienti AEM as a Cloud Service (utilizza [CRXDE Lite](../aem-sdk-local-quickstart/other-tools.md#crxde-lite) per eseguire il debug del SDK AEM locale).
 

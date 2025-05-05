@@ -70,4 +70,4 @@ Inserisci il numero di cellulare, compreso il prefisso internazionale, inserisci
 
 ## Dimostrazione del caso d’uso
 
->[!VIDEO](https://video.tv.adobe.com/v/327122?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346930?quality=12&learn=on&captions=ita)

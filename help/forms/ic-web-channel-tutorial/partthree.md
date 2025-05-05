@@ -25,7 +25,7 @@ In questa parte verrà creato il modello dati modulo. Modello dati modulo consen
 
 **Creazione del modello dati modulo in AEM Forms 6.5 e versioni successive**
 
->[!VIDEO](https://video.tv.adobe.com/v/27765?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328809?quality=12&learn=on&captions=ita)
 
 Il modello dati del modulo dipende da un Source dati configurato correttamente. Utilizzeremo il Data Source configurato nel passaggio precedente come base per questo modello di dati del modulo.
 

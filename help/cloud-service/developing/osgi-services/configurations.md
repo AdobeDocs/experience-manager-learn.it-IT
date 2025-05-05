@@ -20,7 +20,7 @@ ht-degree: 3%
 
 Scopri l’approccio di basso livello consistente nell’utilizzare coppie chiave/valore di configurazione OSGi per definire ed esporre i dati di configurazione OSGi ai servizi OSGi.
 
->[!VIDEO](https://video.tv.adobe.com/v/335729?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417823?quality=12&learn=on&captions=ita)
 
 ## Riferimenti
 

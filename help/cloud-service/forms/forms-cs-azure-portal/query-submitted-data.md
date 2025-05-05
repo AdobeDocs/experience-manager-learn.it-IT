@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come eseguire query per i dati dei moduli adattivi nell’archiviazione BLOB di Azure utilizzando il servizio metadati di AEM Forms.
 
->[!VIDEO](https://video.tv.adobe.com/v/335717?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419016?quality=12&learn=on&captions=ita)

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Questo video illustra il processo di creazione dei set di immagini con AEM Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335581?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418211?quality=12&learn=on&captions=ita)

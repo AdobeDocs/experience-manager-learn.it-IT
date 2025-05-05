@@ -22,7 +22,7 @@ ht-degree: 4%
 
 Scopri AEM Dispatcher per AEM as a Cloud Service, concentrandoti sulle modifiche di rilievo apportate da Dispatcher per AEM 6, sullo strumento di conversione Dispatcher e su come utilizzare Dispatcher Tools SDK.
 
->[!VIDEO](https://video.tv.adobe.com/v/336962?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3455406?quality=12&learn=on&captions=ita)
 
 ## Dispatcher Converter
 

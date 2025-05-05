@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Scopri come autorizzare i documenti con l’authoring di documenti AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425724/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438109/?learn=on&captions=ita)

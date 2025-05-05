@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Una guida approfondita su come ottenere un token di accesso per le integrazioni Cloud Service e alcuni casi d’uso.
 
->[!VIDEO](https://video.tv.adobe.com/v/341277?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448645?quality=12&learn=on&captions=ita)
 
 ## Contenuto trattato in questo video
 

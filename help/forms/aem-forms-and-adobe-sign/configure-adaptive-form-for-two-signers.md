@@ -22,7 +22,7 @@ ht-degree: 8%
 
 Il video illustra i vari passaggi necessari per configurare un modulo adattivo con 2 firmatari.
 
->[!VIDEO](https://video.tv.adobe.com/v/39294?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327748?quality=12&learn=on&captions=ita)
 
 Assets relativo a questo video può essere scaricato dai seguenti collegamenti
 

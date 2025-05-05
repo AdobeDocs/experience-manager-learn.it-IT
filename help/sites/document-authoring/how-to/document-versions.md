@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Scopri come creare versioni di documenti creati con AEM Document Authoring.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425728/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438804/?learn=on&captions=ita)

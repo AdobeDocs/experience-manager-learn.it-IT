@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Eseguire il debug remoto dell’SDK dell’AEM
 
->[!VIDEO](https://video.tv.adobe.com/v/34338?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38174?quality=12&learn=on&captions=ita)
 
 L’avvio rapido locale dell’SDK dell’AEM consente il debug Java remoto dall’IDE, che consente di analizzare l’esecuzione del codice in tempo reale nell’AEM per comprendere l’esatto flusso di esecuzione.
 

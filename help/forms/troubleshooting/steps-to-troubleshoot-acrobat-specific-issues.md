@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra la procedura per la risoluzione dei problemi specifici di acrobat in una configurazione di Windows per AEM Forms PDFG.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335480?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417627?quality=12&learn=on&captions=ita)

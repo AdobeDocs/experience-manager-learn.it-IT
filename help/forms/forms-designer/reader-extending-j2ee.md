@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Breve video che descrive come utilizzare le estensioni di AEM Forms Reader in modo che gli utenti finali possano riempire e salvare PDF forms da Adobe Acrobat Reader
 
->[!VIDEO](https://video.tv.adobe.com/v/3427629/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439523/?learn=on&captions=ita)

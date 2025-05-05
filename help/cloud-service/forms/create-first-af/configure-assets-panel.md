@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Acquisisci le risorse del candidato utilizzando un pannello ripetibile con un layout a soffietto.
 
->[!VIDEO](https://video.tv.adobe.com/v/336473?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445186?quality=12&learn=on&captions=ita)

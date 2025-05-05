@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Scopri in che modo il collegamento di condivisione di AEM Assets consente agli utenti di condividere risorse con soggetti interessati interni ed esterni, riducendo al contempo il rischio di condividere risorse o informazioni errate.
 
->[!VIDEO](https://video.tv.adobe.com/v/341025?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345007?quality=12&learn=on&captions=ita)

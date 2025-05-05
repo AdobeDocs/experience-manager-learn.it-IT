@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Scopri come funziona la pubblicazione dei contenuti in AEM as a Cloud Service, compresi i concetti di Distribuzione dei contenuti e la pipeline di Adobe.
 
->[!VIDEO](https://video.tv.adobe.com/v/330554?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346189?quality=12&learn=on&captions=ita)

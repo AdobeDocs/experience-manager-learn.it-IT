@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Sono disponibili diversi modelli predefiniti che puoi utilizzare così come sono o personalizzare a tuo piacimento. I modelli possono essere creati e gestiti anche in AEM Forms Designer. È possibile iniziare con una pagina vuota, un modello, un foglio di calcolo, un PDF o un file di Microsoft Word. Questo video illustra tutte queste opzioni e le funzionalità pronte all’uso
 
->[!VIDEO](https://video.tv.adobe.com/v/3427678/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439156/?learn=on&captions=ita)

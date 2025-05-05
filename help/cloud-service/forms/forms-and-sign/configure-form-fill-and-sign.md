@@ -25,4 +25,4 @@ ht-degree: 1%
 
 Questo video configura il modulo in cui la stessa persona compila e firma
 
->[!VIDEO](https://video.tv.adobe.com/v/332439?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411757?quality=12&learn=on&captions=ita)

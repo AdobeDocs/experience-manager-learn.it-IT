@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Gli schemi di cartelle di metadati consentono agli utenti di gestire e rivedere essi stessi i metadati associati alle cartelle di risorse, anziché direttamente sulle risorse.
 
->[!VIDEO](https://video.tv.adobe.com/v/34071?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37299?quality=12&learn=on&captions=ita)

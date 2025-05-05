@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Il video seguente illustra i passaggi necessari per creare e configurare un modulo adattivo per creare e visualizzare oggetti lead.
 
->[!VIDEO](https://video.tv.adobe.com/v/340791?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449316?quality=12&learn=on&captions=ita)

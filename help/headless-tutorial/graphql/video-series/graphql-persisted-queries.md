@@ -28,4 +28,4 @@ In questo video:
 + Scopri come creare, aggiornare ed eseguire query GraphQL
 + Comprendere i vantaggi delle query persistenti rispetto alle query lato client
 
->[!VIDEO](https://video.tv.adobe.com/v/333429?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447385?quality=12&learn=on&captions=ita)

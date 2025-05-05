@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra il processo di raccolta dei registri di Workbench dal menu ?.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335501?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417221?quality=12&learn=on&captions=ita)

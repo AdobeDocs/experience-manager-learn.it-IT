@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Tramite il pannello Adobe Asset Link è possibile accedere ai dettagli dei file delle risorse in AEM Assets, ad esempio miniature, metadati di base e versioni direttamente dal pannello. Scopri come creare, visualizzare in anteprima e confrontare le versioni dei file.
 
->[!VIDEO](https://video.tv.adobe.com/v/34048?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38634?quality=12&learn=on&captions=ita)

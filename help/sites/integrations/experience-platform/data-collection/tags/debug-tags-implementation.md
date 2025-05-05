@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Introduzione agli strumenti e alle tecniche comuni utilizzati per eseguire il debug di un’implementazione di tag. Scopri come utilizzare la Developer Console del browser e l’estensione Debugger di Experience Platform per identificare gli aspetti chiave di un’implementazione di Tag e risolvere problemi relativi a essi.
 
->[!VIDEO](https://video.tv.adobe.com/v/38567?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327405?quality=12&learn=on&captions=ita)
 
 ## Debug lato client tramite oggetto Satellite
 

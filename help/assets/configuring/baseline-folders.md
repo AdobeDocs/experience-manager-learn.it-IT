@@ -23,4 +23,4 @@ ht-degree: 0%
 
 La definizione delle cartelle di base in AEM Assets consente di stabilire un’architettura di contenuti solida e una base per la gestione delle risorse digitali.
 
->[!VIDEO](https://video.tv.adobe.com/v/33496?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37334?quality=12&learn=on&captions=ita)

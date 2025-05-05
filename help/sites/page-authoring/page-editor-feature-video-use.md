@@ -26,7 +26,7 @@ L’Editor pagina del sito AEM è uno strumento utile per la creazione e la modi
 
 Il video seguente evidenzia alcune delle funzioni principali dell’Editor pagina.
 
->[!VIDEO](https://video.tv.adobe.com/v/32011?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37198?quality=12&learn=on&captions=ita)
 
 
 Consulta la [documentazione di AEM per una panoramica completa delle funzionalità dell&#39;Editor pagina](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=it).

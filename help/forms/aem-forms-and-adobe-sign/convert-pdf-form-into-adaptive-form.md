@@ -24,7 +24,7 @@ Il servizio di Automated forms conversion AEM Forms, basato su Adobe Sensei, con
 
 Il video seguente illustra i passaggi necessari per convertire un modulo PDF in un modulo adattivo tramite il servizio di Automated forms conversion
 
->[!VIDEO](https://video.tv.adobe.com/v/39495?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327719?quality=12&learn=on&captions=ita)
 
 ## Passaggi successivi
 

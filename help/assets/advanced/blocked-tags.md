@@ -23,4 +23,4 @@ ht-degree: 6%
 
 Scopri come migliorare la gestione delle risorse in AEM as a Cloud Service utilizzando i tag bloccati per impedire l’applicazione di tag avanzati culturalmente sensibili, irrilevanti o controversi.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426839/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448508/?learn=on&captions=ita)

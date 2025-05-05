@@ -20,7 +20,7 @@ ht-degree: 1%
 
 AEM 6.3 Forms introduce la funzionalità di creazione di test case in AEM per Forms adattivo tramite Calvin SDK basato sul framework hobbes.js.
 
->[!VIDEO](https://video.tv.adobe.com/v/19700?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327261?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >

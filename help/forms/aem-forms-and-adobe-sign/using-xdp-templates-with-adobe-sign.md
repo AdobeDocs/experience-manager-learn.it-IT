@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Utilizzo dei modelli XDP esistenti con l’integrazione di AEM Forms e Sign.
 
->[!VIDEO](https://video.tv.adobe.com/v/39705?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327808?quality=12&learn=on&captions=ita)
 
 Assets relativo a questo video può essere scaricato dai seguenti collegamenti
 

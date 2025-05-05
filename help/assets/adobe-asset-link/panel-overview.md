@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Adobe Asset Link consente ai creativi di sfogliare, cercare, estrarre e archiviare le risorse memorizzate in AEM Assets tramite il pannello in-app in InDesign, Photoshop e Illustrator. Scopri l’interfaccia utente e le funzionalità del pannello Adobe Asset Link.
 
->[!VIDEO](https://video.tv.adobe.com/v/33734?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38675?quality=12&learn=on&captions=ita)

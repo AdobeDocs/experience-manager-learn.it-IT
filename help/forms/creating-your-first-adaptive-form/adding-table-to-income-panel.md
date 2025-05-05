@@ -23,7 +23,7 @@ Verrà aggiunta una tabella al pannello Entrate. Configura le righe della tabell
 
 **Aggiungi e configura componente tabella**
 
->[!VIDEO](https://video.tv.adobe.com/v/22198?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326909?quality=12&learn=on&captions=ita)
 
 
 
@@ -44,7 +44,7 @@ Verrà aggiunta una tabella al pannello Entrate. Configura le righe della tabell
 ## Crea regola per calcolare il totale complessivo {#create-rule-to-calculate-grand-total}
 
 
->[!VIDEO](https://video.tv.adobe.com/v/22197?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326898?quality=12&learn=on&captions=ita)
 
 ## Passaggi successivi
 

@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Ottieni una panoramica su come creare un sito multilingue utilizzando una copia in lingua in AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/36487?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41619?quality=12&learn=on&captions=ita)

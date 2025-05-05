@@ -24,5 +24,5 @@ ht-degree: 0%
 
 Scopri come configurare la barra laterale per Generare varianti nell’authoring dei documenti di Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428306/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436997/?learn=on&captions=ita)
 

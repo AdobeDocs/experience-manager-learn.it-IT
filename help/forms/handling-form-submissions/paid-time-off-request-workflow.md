@@ -31,11 +31,11 @@ Per soddisfare questo requisito, nel modulo viene utilizzato un campo nascosto d
 
 **Configura modulo per attivare flusso di lavoro AEM**
 
->[!VIDEO](https://video.tv.adobe.com/v/28406?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329222?quality=12&learn=on&captions=ita)
 
 **Procedura dettagliata sul flusso di lavoro**
 
->[!VIDEO](https://video.tv.adobe.com/v/28407?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329223?quality=12&learn=on&captions=ita)
 
 **Visualizzazione del mittente del modulo di richiesta di indisponibilità**
 

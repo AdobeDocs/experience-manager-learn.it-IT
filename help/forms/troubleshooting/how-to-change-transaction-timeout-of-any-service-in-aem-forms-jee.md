@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per modificare il timeout della transazione di un servizio in AEM Forms JEE.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335495?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436803?quality=12&learn=on&captions=ita)

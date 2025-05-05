@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Scopri come utilizzare le risorse da AEM Assets utilizzando l’operazione Inserisci copia.
 
->[!VIDEO](https://video.tv.adobe.com/v/34049?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38623?quality=12&learn=on&captions=ita)

@@ -29,7 +29,7 @@ In particolare, a settembre 2019 Brand Portal introduce Asset Sourcing, che velo
 
 Asset Sourcing di Brand Portal viene utilizzato per raccogliere risorse da agenzie e team di terze parti, sincronizzandole facilmente con Experience Manager Author per la revisione e l’utilizzo.
 
->[!VIDEO](https://video.tv.adobe.com/v/29365?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39142?quality=12&learn=on&captions=ita)
 
 *Per utilizzare Asset Sourcing è richiesto Experience Manager Author 6.5 SP2 (6.5.2) o versione successiva*
 
@@ -37,7 +37,7 @@ Rivedi [Abilita l&#39;istanza di authoring di Experience Manager per Asset Sourc
 
 ## Funzionalità e miglioramenti di Brand Portal febbraio 2019{#brand-portal-features-and-enhancements-644}
 
->[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327942?quality=12&learn=on&captions=ita)
 
 La versione di febbraio 2019 di Brand Portal si concentra sui miglioramenti apportati alla ricerca di testo e alle principali richieste dei clienti.
 
@@ -165,7 +165,7 @@ Brand Portal utilizza l&#39;interfaccia Adobe I/O [https://legacy-oauth.cloud.ad
 
 Nuove funzionalità ottimizzate orientate all’allineamento di Brand Portal con AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327942?quality=12&learn=on&captions=ita)
 
 ### Miglioramenti alla navigazione
 

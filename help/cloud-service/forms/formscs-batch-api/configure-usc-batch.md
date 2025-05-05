@@ -22,4 +22,4 @@ ht-degree: 0%
 
 La configurazione dei dati in batch consente di configurare un’istanza specifica di archiviazione BLOB per le API Batch. Consente di specificare i percorsi di input e output nell’archiviazione BLOB di Microsoft Azure di proprietà del cliente.
 
->[!VIDEO](https://video.tv.adobe.com/v/340128?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343714?quality=12&learn=on&captions=ita)

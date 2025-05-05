@@ -28,5 +28,5 @@ In questo video:
 + Scopri come le varianti possono essere utilizzate in uno scenario reale
 + Controlla la sintassi GraphQL per richiedere una variante specifica
 
->[!VIDEO](https://video.tv.adobe.com/v/333295?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449328?quality=12&learn=on&captions=ita)
 

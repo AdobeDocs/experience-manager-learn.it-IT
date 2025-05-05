@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come scaricare e caricare i file di risorse da e verso AEM Assets utilizzando il pannello Asset Link.
 
->[!VIDEO](https://video.tv.adobe.com/v/33885?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38658?quality=12&learn=on&captions=ita)

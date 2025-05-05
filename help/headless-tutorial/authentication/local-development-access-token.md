@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Gli sviluppatori che creano integrazioni che richiedono l’accesso programmatico ad AEM as a Cloud Service hanno bisogno di un modo semplice e rapido per ottenere token di accesso temporanei per AEM per facilitare le attività di sviluppo locale. Per soddisfare questa esigenza, la Developer Console di AEM consente agli sviluppatori di generare autonomamente token di accesso temporanei che possono essere utilizzati per accedere a AEM a livello di programmazione.
 
->[!VIDEO](https://video.tv.adobe.com/v/330477?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345202?quality=12&learn=on&captions=ita)
 
 ## Generare un token di accesso per lo sviluppo locale
 

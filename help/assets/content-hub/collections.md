@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come creare e utilizzare le raccolte in AEM Assets Content Hub per semplificare l’accesso alle risorse e promuovere la condivisione collaborativa delle risorse, garantendo un lavoro di squadra efficiente e organizzato in vari progetti.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445308/?learn=on&captions=ita)

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Un modello di modulo adattivo è un modello di pagina AEM specializzato, con determinate proprietà e struttura di contenuto utilizzate per creare il modulo adattivo. Il modello dispone di layout, stili e struttura di contenuto iniziale di base preconfigurati. Ogni modulo adattivo si basa su un modello.
 
->[!VIDEO](https://video.tv.adobe.com/v/332223?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424985?quality=12&learn=on&captions=ita)

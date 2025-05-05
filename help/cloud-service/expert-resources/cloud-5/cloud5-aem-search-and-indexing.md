@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Immergiti rapidamente nelle profondità della ricerca e dell’indicizzazione. Un argomento impegnativo che speriamo di poter aiutare a trasmettere in modo più efficace.
 
->[!VIDEO](https://video.tv.adobe.com/v/342374?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448114?quality=12&learn=on&captions=ita)
 
 ## Contenuto trattato in questo video
 

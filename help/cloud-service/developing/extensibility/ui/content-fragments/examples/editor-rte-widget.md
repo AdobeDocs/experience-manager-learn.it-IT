@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Scopri come aggiungere widget all’Editor Rich Text nell’Editor frammenti di contenuto di AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3420822?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447440?quality=12&learn=on&captions=ita)
 
 Per aggiungere contenuto dinamico nell&#39;editor Rich Text, è possibile utilizzare la funzionalità **widget**. I widget consentono di integrare l’interfaccia utente semplice o complessa nell’editor Rich Text e l’interfaccia utente tramite il framework JS scelto. Possono essere considerate finestre di dialogo aperte premendo il tasto speciale `{` nell&#39;editor Rich Text.
 

@@ -161,7 +161,7 @@ Quando, utilizzando un IDE, assicurati di controllare `classic` nella scheda Pro
 1. Scarica e installa [!DNL IntelliJ IDEA]: [https://www.jetbrains.com/idea/download](https://www.jetbrains.com/idea/download)
 1. Installa [!DNL Repo] (strumento da riga di comando): [https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#installation)
 
->[!VIDEO](https://video.tv.adobe.com/v/26089?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327239?quality=12&learn=on&captions=ita)
 
 * 00:00 - Importa progetto Maven
 * 05:47 - Creare e distribuire il codice sorgente con Maven

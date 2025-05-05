@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per eseguire test di carico dall&#39;interfaccia utente utilizzando FormsIVS e OutputIVS.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335507?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441492?quality=12&learn=on&captions=ita)

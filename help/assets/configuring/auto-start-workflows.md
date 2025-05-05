@@ -23,7 +23,7 @@ ht-degree: 0%
 
 I flussi di lavoro con avvio automatico estendono l’elaborazione delle risorse in AEM as a Cloud Service richiamando automaticamente il flusso di lavoro personalizzato al momento del caricamento o della rielaborazione al termine dell’elaborazione delle risorse.
 
->[!VIDEO](https://video.tv.adobe.com/v/37323?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326767?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >

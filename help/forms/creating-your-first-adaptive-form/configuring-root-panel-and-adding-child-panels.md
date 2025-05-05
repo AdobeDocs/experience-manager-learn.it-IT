@@ -22,7 +22,7 @@ ht-degree: 2%
 Aggiungete i pannelli secondari al pannello principale.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/28536?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326918?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >Quando aggiungi pannelli secondari al pannello principale, **Assicurati di essere in modalità di modifica. Il pulsante Modifica si trova nella parte superiore destra del browser.**

@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Per i clienti con Dynamic Media e Adobe Analytics, ora puoi monitorare l’utilizzo dei visualizzatori Dynamic Media sul tuo sito web utilizzando l’estensione Dynamic Media Viewer.
 
->[!VIDEO](https://video.tv.adobe.com/v/29308?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39143?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >

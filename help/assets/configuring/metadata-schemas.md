@@ -23,4 +23,4 @@ ht-degree: 7%
 
 Gli schemi di metadati definiscono l’interfaccia che gli utenti interagiscono con i metadati delle risorse in AEM e la loro definizione e applicazione alle risorse sono fondamentali per la gestione delle risorse digitali.
 
->[!VIDEO](https://video.tv.adobe.com/v/33696?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37308?quality=12&learn=on&captions=ita)

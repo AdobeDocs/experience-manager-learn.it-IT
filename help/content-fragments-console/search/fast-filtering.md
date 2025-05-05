@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Scopri in che modo l’interfaccia utente Frammenti di contenuto di AEM semplifica l’individuazione dei Frammenti di contenuto mediante un filtro rapido. Con questa funzione, trovare frammenti di contenuto specifici diventa rapido e semplice.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419310/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436704/?learn=on&captions=ita)

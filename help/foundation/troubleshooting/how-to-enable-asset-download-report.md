@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per abilitare il report di download delle risorse.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335463?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418283?quality=12&learn=on&captions=ita)

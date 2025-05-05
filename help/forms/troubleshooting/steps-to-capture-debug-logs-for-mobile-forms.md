@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per acquisire i registri di debug per i moduli mobili.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335516?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438595?quality=12&learn=on&captions=ita)

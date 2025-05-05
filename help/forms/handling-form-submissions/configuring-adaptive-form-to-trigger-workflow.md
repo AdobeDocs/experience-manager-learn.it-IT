@@ -39,8 +39,8 @@ Il modulo di esempio utilizzato in questo flusso di lavoro è basato su un model
 * Il modulo adattivo di esempio si trova in una cartella denominata [Application Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
 Il video seguente spiega come configurare un modulo adattivo per attivare un flusso di lavoro AEM
->[!VIDEO](https://video.tv.adobe.com/v/40258?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329443?quality=12&learn=on&captions=ita)
 
 Il video seguente mostra il payload del flusso di lavoro e altri dettagli nell’archivio crx
 
->[!VIDEO](https://video.tv.adobe.com/v/40259?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329451?quality=12&learn=on&captions=ita)

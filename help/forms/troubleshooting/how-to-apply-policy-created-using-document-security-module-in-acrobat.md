@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra come applicare i criteri creati utilizzando il modulo Document Security in Acrobat.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335486?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417201?quality=12&learn=on&captions=ita)

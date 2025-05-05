@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Questo video illustra come utilizzare i Componenti core abilitati per Dynamic Media in una pagina web di AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/335461?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417723?quality=12&learn=on&captions=ita)

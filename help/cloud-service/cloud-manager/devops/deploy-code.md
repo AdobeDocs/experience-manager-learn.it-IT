@@ -28,4 +28,4 @@ ht-degree: 68%
 
 Integra l’archivio Git di Cloud Manager con un archivio Git esterno e distribuisci un progetto in AEM as a Cloud Service
 
->[!VIDEO](https://video.tv.adobe.com/v/330534?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345865?quality=12&learn=on&captions=ita)

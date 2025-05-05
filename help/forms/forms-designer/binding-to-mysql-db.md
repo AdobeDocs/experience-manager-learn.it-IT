@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Breve video che descrive l&#39;associazione di un AEM Form a un database MySql
 
->[!VIDEO](https://video.tv.adobe.com/v/3427624/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439567/?learn=on&captions=ita)

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 La barra degli strumenti viene in genere aggiunta a livello del contenitore del modulo. La barra degli strumenti può contenere pulsanti per passare ai pannelli successivi e precedenti del modulo, inviare il modulo, salvare i dati del modulo e così via.
 
->[!VIDEO](https://video.tv.adobe.com/v/332236?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424947?quality=12&learn=on&captions=ita)

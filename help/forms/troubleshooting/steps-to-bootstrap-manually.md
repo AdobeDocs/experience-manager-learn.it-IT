@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Questo video illustra il processo di avvio manuale se l&#39;inizializzazione del database non funziona.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335515?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436277?quality=12&learn=on&captions=ita)

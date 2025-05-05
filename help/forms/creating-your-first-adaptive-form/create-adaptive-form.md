@@ -22,7 +22,7 @@ Verrà creato un modulo adattivo basato sul modello creato nella lezione precede
 
 **Crea il tuo primo modulo adattivo**
 
->[!VIDEO](https://video.tv.adobe.com/v/22173?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327848?quality=12&learn=on&captions=ita)
 
 ## Passaggi successivi
 

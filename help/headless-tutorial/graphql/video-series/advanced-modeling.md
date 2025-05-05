@@ -28,4 +28,4 @@ In questo video:
 + Scopri come creare collegamenti profondi ad altri frammenti di contenuto all’interno di un campo in formato Rich Text
 + Creare query GraphQL che restituiscono dati dall’interno di frammenti di contenuto di riferimento
 
->[!VIDEO](https://video.tv.adobe.com/v/332859?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412900?quality=12&learn=on&captions=ita)

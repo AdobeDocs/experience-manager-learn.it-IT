@@ -36,13 +36,13 @@ Questa serie di video tratta il ciclo di vita dell’authoring dei frammenti di 
 
 ## Definizione dei modelli per frammenti di contenuto {#defining-content-fragment-models}
 
->[!VIDEO](https://video.tv.adobe.com/v/22452?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326706?quality=12&learn=on&captions=ita)
 
 I modelli per frammenti di contenuto di AEM, o schemi di dati dei frammenti di contenuto, devono essere abilitati tramite il [[!UICONTROL browser configurazioni]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=it) di AEM, che consente di definire i modelli per frammenti di contenuto in base alla configurazione.
 
 ## Creare frammenti di contenuto {#creating-content-fragments}
 
->[!VIDEO](https://video.tv.adobe.com/v/22451?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326707?quality=12&learn=on&captions=ita)
 
 Le configurazioni di AEM vengono applicate alle gerarchie di cartelle di AEM Assets per consentire la creazione dei relativi modelli per frammenti di contenuto come frammenti di contenuto. I frammenti di contenuto supportano un’esperienza di authoring avanzata basata su moduli che consente di modellare il contenuto come una raccolta di elementi.
 
@@ -53,7 +53,7 @@ I frammenti di contenuto possono avere più varianti, ciascuna delle quali è de
 
 ## Download di frammenti di contenuto {#downloading-content-fragments}
 
->[!VIDEO](https://video.tv.adobe.com/v/22450?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326709?quality=12&learn=on&captions=ita)
 
 I frammenti di contenuto di AEM possono essere scaricati da AEM Author come file ZIP contenente varianti, elementi e metadati.
 
@@ -62,7 +62,7 @@ I frammenti di contenuto di AEM possono essere scaricati da AEM Author come file
 
 ## Funzionalità editoriali per frammenti di contenuto {#editorial-capabilities}
 
->[!VIDEO](https://video.tv.adobe.com/v/25891?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327230?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >

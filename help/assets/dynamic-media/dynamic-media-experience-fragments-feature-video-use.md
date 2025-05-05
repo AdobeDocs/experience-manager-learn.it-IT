@@ -21,7 +21,7 @@ ht-degree: 0%
 
 AEM Assets Dynamic Media integra i punti attivi delle risorse con i frammenti di esperienza tramite visualizzatori di contenuti multimediali interattivi. Gli addetti al marketing possono creare il frammento di esperienza con testo, immagini e collegamenti per popolare il pop-up personalizzato e associarlo agli hotspot su banner, caroselli o video.
 
->[!VIDEO](https://video.tv.adobe.com/v/22115?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327279?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >

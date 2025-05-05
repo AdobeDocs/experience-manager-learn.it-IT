@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Esplora come un documento Edge Delivery Services viene creato utilizzando sezioni, contenuto predefinito e altro ancora.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425716/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445197/?learn=on&captions=ita)

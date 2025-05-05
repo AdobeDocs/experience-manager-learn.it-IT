@@ -23,4 +23,4 @@ ht-degree: 7%
 
 Scopri le rappresentazioni in AEM Assets e come visualizzarle in anteprima.
 
->[!VIDEO](https://video.tv.adobe.com/v/32047?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36975?quality=12&learn=on&captions=ita)

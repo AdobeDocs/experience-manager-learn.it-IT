@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Scopri come i blocchi e i blocchi automatici vengono utilizzati nell’authoring dei documenti e come possono migliorare l’esperienza di authoring e sito.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425703/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439512/?learn=on&captions=ita)

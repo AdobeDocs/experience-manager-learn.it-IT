@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Le funzionalità per filigrane di AEM as a Cloud Service consentono di applicare una filigrana alle rappresentazioni di immagini personalizzate utilizzando qualsiasi immagine PNG.
 
->[!VIDEO](https://video.tv.adobe.com/v/41536?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329459?quality=12&learn=on&captions=ita)

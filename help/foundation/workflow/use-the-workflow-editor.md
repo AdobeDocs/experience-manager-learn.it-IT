@@ -23,4 +23,4 @@ ht-degree: 0%
 
 I flussi di lavoro consentono la gestione dei processi aziendali in Experience Manager e vengono utilizzati per l’elaborazione automatica dei contenuti e per facilitare la governance e i processi che richiedono decisioni umane. Il flusso di lavoro viene definito tramite modelli di flusso di lavoro composti da una serie di passaggi e creati e gestiti nell&#39;[!UICONTROL Editor modelli flusso di lavoro].
 
->[!VIDEO](https://video.tv.adobe.com/v/22201?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/347049?quality=12&learn=on&captions=ita)

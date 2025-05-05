@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Breve video che descrive l’aggiunta di una firma scarabocchio ad AEM Forms
 
->[!VIDEO](https://video.tv.adobe.com/v/3427626/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437328/?learn=on&captions=ita)

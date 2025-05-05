@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come aggiornare, rivedere e approvare le modifiche in una copia in lingua con l’aiuto di Launches.
 
->[!VIDEO](https://video.tv.adobe.com/v/36683?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41635?quality=12&learn=on&captions=ita)

@@ -25,4 +25,4 @@ ht-degree: 1%
 
 Scopri come utilizzare il plug-in [AEM Assets Sidekick](https://www.hlx.live/developer/configuring-aem-assets-sidekick-plugin) per incorporare risorse gestite in esperienze ad alto impatto distribuite tramite Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424615/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3435830/?learn=on&captions=ita)

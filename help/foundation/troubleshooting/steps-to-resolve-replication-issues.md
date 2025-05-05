@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per risolvere i problemi di replica in AEM.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335471?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418325?quality=12&learn=on&captions=ita)

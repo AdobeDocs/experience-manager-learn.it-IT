@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Scopri le operazioni di base di AEM Assets, tra cui come creare cartelle, nonché caricare, copiare, spostare ed eliminare risorse.
 
->[!VIDEO](https://video.tv.adobe.com/v/32044?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37164?quality=12&learn=on&captions=ita)

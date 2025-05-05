@@ -25,7 +25,7 @@ Il video seguente illustra come collegare AEM as a Cloud Service ad Adobe Target
 
 Questa integrazione consente al servizio di authoring dell’AEM di comunicare direttamente con Adobe Target e di inviare frammenti di esperienza dall’AEM a Target come offerte.  Questa integrazione *non* aggiunge Adobe Target JavaScript (AT.js) alle pagine Web di AEM Sites, per le quali integra [AEM e i tag utilizzando l&#39;estensione Target](../experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md).
 
->[!VIDEO](https://video.tv.adobe.com/v/41244?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329019?quality=12&learn=on&captions=ita)
 
 >[!CAUTION]
 >

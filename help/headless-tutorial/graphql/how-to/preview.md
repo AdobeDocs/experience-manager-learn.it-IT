@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Le applicazioni AEM Headless supportano l’anteprima integrata dell’authoring. L’esperienza di anteprima collega l’editor dei frammenti di contenuto dell’Autore di AEM con l’app personalizzata (indirizzabile tramite HTTP), consentendo un collegamento diretto nell’app che esegue il rendering del frammento di contenuto visualizzato in anteprima.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449596?quality=12&learn=on&captions=ita)
 
 Per utilizzare l’anteprima del frammento di contenuto, è necessario soddisfare diverse condizioni:
 

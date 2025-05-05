@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Ottieni il punteggio del faro a 100 acquisti utilizzando l’ottimizzazione delle query e delle ricerche quando gestisci un numero elevato di record. Utilizzare tecniche per ottimizzare l&#39;indice delle query, migliorare le funzionalità di ricerca e suddividere gli indici delle query per ottimizzare le prestazioni
 
->[!VIDEO](https://video.tv.adobe.com/v/3440976/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440986/?learn=on&enablevpops&captions=ita)

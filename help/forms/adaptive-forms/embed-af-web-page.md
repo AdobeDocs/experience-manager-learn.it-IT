@@ -24,7 +24,7 @@ Il modulo adattivo incorporato è completamente funzionante e gli utenti possono
 
 Il video seguente illustra i passaggi necessari per incorporare un modulo adattivo o HTML5 in una pagina web.
 Fai riferimento alla [documentazione](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=it) per i prerequisiti e le best practice, ecc.
->[!VIDEO](https://video.tv.adobe.com/v/335893?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418457?quality=12&learn=on&captions=ita)
 
 Puoi scaricare i file di esempio usati nel video [da qui](assets/embedding-af-web-page.zip)
 

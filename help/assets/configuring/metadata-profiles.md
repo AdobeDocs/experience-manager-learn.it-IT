@@ -23,4 +23,4 @@ ht-degree: 6%
 
 I profili metadati consentono l’applicazione automatica dei metadati predefiniti alle risorse all’interno delle cartelle di risorse, riducendo il carico di gestione dei metadati per gli utenti di AEM e aumentando la coerenza dei metadati.
 
->[!VIDEO](https://video.tv.adobe.com/v/33974?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37284?quality=12&learn=on&captions=ita)

@@ -21,5 +21,5 @@ ht-degree: 0%
 
 Migliora il caso d’uso, come illustrato in questo video
 
->[!VIDEO](https://video.tv.adobe.com/v/335800?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436571?quality=12&learn=on&captions=ita)
 

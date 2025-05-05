@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Questo video illustra come annullare la validità della cache CDN tramite Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335457?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418223?quality=12&learn=on&captions=ita)

@@ -23,7 +23,7 @@ ht-degree: 2%
 Crea un flusso di lavoro AEM utilizzando il componente documento di firma. Utilizza il DoR generato automaticamente per inviare firme utilizzando il componente Sign.
 Il video illustra i vari passaggi necessari per creare un flusso di lavoro efficace per inviare documenti per la firma.
 
->[!VIDEO](https://video.tv.adobe.com/v/38182?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327824?quality=12&learn=on&captions=ita)
 
 ## Passaggi successivi
 

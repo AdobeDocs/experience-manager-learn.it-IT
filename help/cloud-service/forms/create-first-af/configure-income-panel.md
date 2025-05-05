@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Aggiungere un componente tabella al pannello reddito per acquisire le fonti di reddito del richiedente.
 
->[!VIDEO](https://video.tv.adobe.com/v/332233?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3425122?quality=12&learn=on&captions=ita)

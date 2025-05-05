@@ -23,4 +23,4 @@ ht-degree: 0%
 
 La gestione dell&#39;accesso degli utenti alle [cartelle di risorse di base](./baseline-folders.md) è un aspetto fondamentale della governance e garantisce il supporto corretto dei processi.
 
->[!VIDEO](https://video.tv.adobe.com/v/37696?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327053?quality=12&learn=on&captions=ita)

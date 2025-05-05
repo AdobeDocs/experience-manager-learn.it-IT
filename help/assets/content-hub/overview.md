@@ -69,7 +69,7 @@ Questi video illustrano le funzioni chiave di AEM Assets Content Hub: dalla gest
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/content-hub/configure" title="Configura" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3439311/?format=jpeg&nocache=1744751768916" alt="Configura"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3439319/?format=jpeg&nocache=1744751768916&captions=ita" alt="Configura"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -92,7 +92,7 @@ Questi video illustrano le funzioni chiave di AEM Assets Content Hub: dalla gest
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/content-hub/add-assets" title="Aggiungi risorse" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432980/?format=jpeg&nocache=1744751769952" alt="Aggiungi risorse"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450290/?format=jpeg&nocache=1744751769952&captions=ita" alt="Aggiungi risorse"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -161,7 +161,7 @@ Questi video illustrano le funzioni chiave di AEM Assets Content Hub: dalla gest
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/content-hub/collections" title="Raccolte" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435687/?format=jpeg&nocache=1744751769136" alt="Raccolte"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445308/?format=jpeg&nocache=1744751769136&captions=ita" alt="Raccolte"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -184,7 +184,7 @@ Questi video illustrano le funzioni chiave di AEM Assets Content Hub: dalla gest
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/content-hub/share" title="Condivisione" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435685/?format=jpeg&nocache=1744751769933" alt="Condivisione"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445363/?format=jpeg&nocache=1744751769933&captions=ita" alt="Condivisione"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -22,4 +22,4 @@ ht-degree: 6%
 
 Scopri come gestire la tassonomia dei tag nella vista Assets di AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431081/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447374/?learn=on&captions=ita)

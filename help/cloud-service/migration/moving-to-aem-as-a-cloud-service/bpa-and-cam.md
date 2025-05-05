@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Scopri come Best Practices Analyzer (BPA) e Cloud Acceleration Manager (CAM) forniscono una guida personalizzata per la migrazione ad AEM as a Cloud Service. 
 
->[!VIDEO](https://video.tv.adobe.com/v/336957?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453357?quality=12&learn=on&captions=ita)
 
 ## Utilizzo di BPA e CAM
 

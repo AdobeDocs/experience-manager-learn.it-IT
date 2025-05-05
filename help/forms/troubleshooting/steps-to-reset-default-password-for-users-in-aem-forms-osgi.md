@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per reimpostare la password predefinita per l&#39;amministratore in AEM Forms OSGi.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335542?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417713?quality=12&learn=on&captions=ita)

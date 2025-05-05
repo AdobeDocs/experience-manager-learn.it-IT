@@ -22,4 +22,4 @@ ht-degree: 16%
 
 Comprendi i diversi stati associati a un processo di traduzione o a un elemento del processo.
 
->[!VIDEO](https://video.tv.adobe.com/v/36685?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41561?quality=12&learn=on&captions=ita)

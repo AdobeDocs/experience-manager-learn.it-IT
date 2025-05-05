@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Breve video che illustra il debug del processo Forms in Workbench
 
->[!VIDEO](https://video.tv.adobe.com/v/3429495/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439823/?learn=on&captions=ita)

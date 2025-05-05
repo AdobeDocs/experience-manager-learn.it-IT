@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra il processo di verifica e installazione dei redistribuibili Microsoft Visual C++ a 32 bit richiesti.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335520?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417662?quality=12&learn=on&captions=ita)

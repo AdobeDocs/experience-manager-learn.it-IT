@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Scopri come utilizzare la ricerca contestuale in Adobe Experience Manager Assets per trovare in modo efficiente le risorse con query in linguaggio naturale.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428667/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438962/?learn=on&captions=ita)
 
 ## Attiva/disattiva ricerca contestuale
 

@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come creare un sito del paese da copie in lingua esistenti utilizzando la procedura guidata Crea sito.
 
->[!VIDEO](https://video.tv.adobe.com/v/36684?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41545?quality=12&learn=on&captions=ita)

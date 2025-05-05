@@ -59,4 +59,4 @@ Ad esempio, è possibile utilizzare le funzioni di riduzione per visualizzare il
 
 Il video seguente illustra i passaggi necessari per utilizzare le funzioni di riduzione.
 
->[!VIDEO](https://video.tv.adobe.com/v/21368?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38216?quality=12&learn=on&captions=ita)

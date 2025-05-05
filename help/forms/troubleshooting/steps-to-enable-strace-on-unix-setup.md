@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per abilitare la traccia dello strace nella configurazione Unix per AEM Forms PDFG.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335525?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417637?quality=12&learn=on&captions=ita)

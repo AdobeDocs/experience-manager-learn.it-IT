@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra il processo di modifica dei parametri di memoria di Workbench .*
 
->[!VIDEO](https://video.tv.adobe.com/v/335509?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417241?quality=12&learn=on&captions=ita)

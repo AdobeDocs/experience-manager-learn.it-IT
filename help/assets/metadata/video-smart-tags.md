@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Experience Manager Assets sfrutta Adobe Sensei per assegnare tag intelligenti alle risorse video con parole chiave che descrivono elementi chiave del video, facilitandone la ricerca tramite parole chiave da parte degli utenti di AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/327005?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340530?quality=12&learn=on&captions=ita)

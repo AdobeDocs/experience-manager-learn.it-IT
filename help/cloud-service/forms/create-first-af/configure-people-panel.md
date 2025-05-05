@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Aggiungi il frammento dei dettagli del coniuge al pannello persone.
 
->[!VIDEO](https://video.tv.adobe.com/v/332234?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3425104?quality=12&learn=on&captions=ita)

@@ -49,7 +49,7 @@ Sono disponibili 3 aree principali di [Modelli di pagina](https://experienceleag
 
 Quindi, crea un nuovo modello in AEM che corrisponda alla struttura dei modelli. Ciò si verificherà in un’istanza locale di AEM. Segui i passaggi descritti nel video seguente:
 
->[!VIDEO](https://video.tv.adobe.com/v/332915?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412999?quality=12&learn=on&captions=ita)
 
 Puoi utilizzare la miniatura seguente per identificare il modello (o caricarne uno tuo!)
 
@@ -66,7 +66,7 @@ Per la creazione di contenuto globale, ad esempio un&#39;intestazione o un piè 
 
 Il modello Sito ha generato un&#39;intestazione e un piè di pagina. Quindi, aggiorna i Frammenti esperienza in modo che corrispondano ai modelli. Segui i passaggi descritti nel video seguente:
 
->[!VIDEO](https://video.tv.adobe.com/v/332916?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447807?quality=12&learn=on&captions=ita)
 
 Passaggi di alto livello per il video seguente:
 
@@ -78,7 +78,7 @@ Passaggi di alto livello per il video seguente:
 
 Quindi, crea una nuova pagina utilizzando il modello Pagina articolo rivista. Crea il contenuto della pagina in modo che corrisponda ai modelli del sito. Segui i passaggi descritti nel video seguente:
 
->[!VIDEO](https://video.tv.adobe.com/v/332917?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343384?quality=12&learn=on&captions=ita)
 
 Utilizza il testo [fornito](./assets/page-templates/la-skateparks-copy.txt) per popolare il corpo dell&#39;articolo.
 

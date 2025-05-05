@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Personalizzare lo stile del testo nel componente testo statico utilizzando l’editor Rich Text.
 
->[!VIDEO](https://video.tv.adobe.com/v/332235?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440123?quality=12&learn=on&captions=ita)

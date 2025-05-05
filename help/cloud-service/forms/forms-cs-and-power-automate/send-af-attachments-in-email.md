@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Estrarre gli allegati del modulo e inviarli tramite posta elettronica in un flusso di lavoro Power Automate.
 Il video seguente illustra i passaggi necessari per creare allegati dai dati inviati.
->[!VIDEO](https://video.tv.adobe.com/v/3409017?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413029?quality=12&learn=on&captions=ita)
 
 Di seguito è riportato lo schema dell’oggetto allegato da utilizzare nel passaggio Analizza schema JSON.
 

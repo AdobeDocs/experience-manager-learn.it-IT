@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Scopri come eliminare una pagina in Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425973/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438098/?learn=on&captions=ita)

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Scopri in che modo AEM Forms as a Cloud Service supporta il caso d’uso dell’iscrizione digitale.
 
->[!VIDEO](https://video.tv.adobe.com/v/336966?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3455142?quality=12&learn=on&captions=ita)

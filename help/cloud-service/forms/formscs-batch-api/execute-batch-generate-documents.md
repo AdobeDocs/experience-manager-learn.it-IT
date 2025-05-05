@@ -32,4 +32,4 @@ Una richiesta GET a questo URL univoco ti dirà lo stato dell’esecuzione batch
 
 Il video seguente illustra l’attivazione della configurazione batch
 
->[!VIDEO](https://video.tv.adobe.com/v/340242?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343707?quality=12&learn=on&captions=ita)

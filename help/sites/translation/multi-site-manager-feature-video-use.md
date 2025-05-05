@@ -22,13 +22,13 @@ Le interfacce Panoramica Live Copy e Gestione configurazione blueprint sono inte
 
 ## Panoramica Live Copy {#live-copy-overview}
 
->[!VIDEO](https://video.tv.adobe.com/v/17054?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41142?quality=12&learn=on&captions=ita)
 
 *Panoramica Live Copy è un&#39;interfaccia utente touch utilizzata per la gestione delle Live Copy e delle relative blueprint. Questa funzione, introdotta in AEM 6.3, sostituisce il Centro controllo blueprint dell&#39;interfaccia classica.*
 
 ## Gestione configurazione blueprint - Interfaccia utente touch {#blueprint-config-mgr}
 
->[!VIDEO](https://video.tv.adobe.com/v/17056?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41724?quality=12&learn=on&captions=ita)
 
 *AEM 6.3 introduce un&#39;interfaccia utente touch per gestire le configurazioni blueprint da utilizzare in Multi Site Manager.*
 

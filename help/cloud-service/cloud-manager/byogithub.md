@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come collegare un archivio GitHub privato ad AEM Cloud Manager per semplificare la gestione della qualità del codice e i flussi di lavoro automatizzati. Migliora il tuo processo di sviluppo con controlli integrati e collaborazione fluida.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429302/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452423/?learn=on&captions=ita)

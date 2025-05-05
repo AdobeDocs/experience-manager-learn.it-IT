@@ -23,4 +23,4 @@ ht-degree: 18%
 
 Un tema contiene dettagli sullo stile di componenti e pannelli ed è possibile riutilizzare un tema in diversi moduli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando si applica il tema al modulo, lo stile specificato viene applicato ai componenti corrispondenti del modulo.
 
->[!VIDEO](https://video.tv.adobe.com/v/332229?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424885?quality=12&learn=on&captions=ita)

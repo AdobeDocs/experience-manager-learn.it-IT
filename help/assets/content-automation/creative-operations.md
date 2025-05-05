@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come utilizzare il componente aggiuntivo di automazione dei contenuti che integra Adobe Experience Manager Assets as a Cloud Service con le API dei servizi Adobe Creative Cloud per elaborare le risorse.
 
->[!VIDEO](https://video.tv.adobe.com/v/336540?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423910?quality=12&learn=on&captions=ita)

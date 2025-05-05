@@ -21,4 +21,4 @@ ht-degree: 1%
 
 Scopri l&#39;importanza e le differenze di [contenuti mutabili e immutabili](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=it) in AEM as a Cloud e come influiscono sullo sviluppo.
 
->[!VIDEO](https://video.tv.adobe.com/v/330555?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345903?quality=12&learn=on&captions=ita)

@@ -23,4 +23,4 @@ ht-degree: 5%
 
 Scopri come scaricare le risorse e i relativi rendering nel computer locale per utilizzarle e condividerle.
 
->[!VIDEO](https://video.tv.adobe.com/v/35090?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39513?quality=12&learn=on&captions=ita)

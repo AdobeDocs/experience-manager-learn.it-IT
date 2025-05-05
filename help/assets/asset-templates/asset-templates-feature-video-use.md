@@ -30,10 +30,10 @@ AEM Assets Template consente agli addetti al marketing di creare, gestire e dist
 
 Questo video illustra i concetti e i passaggi necessari per generare risorse pronte per la stampa in AEM con Adobe InDesign, Adobe InDesign Server e AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/25170?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328820?quality=12&learn=on&captions=ita)
 
 ## Panoramica tecnica {#technical-overview}
 
 Questo video offre una panoramica tecnica della funzionalità di AEM Assets Assert Template e del modo in cui AEM facilita la composizione di AEM Assets e dei contenuti tramite InDesign per creare esperienze di stampa avanzate e coinvolgenti.
 
->[!VIDEO](https://video.tv.adobe.com/v/17071?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41674?quality=12&learn=on&captions=ita)

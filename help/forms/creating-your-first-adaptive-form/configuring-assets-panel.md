@@ -23,10 +23,10 @@ Configura il layout del Pannello a soffietto per il pannello Assets. Il layout d
 
 **Configura pannello Assets**
 
->[!VIDEO](https://video.tv.adobe.com/v/22200?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326890?quality=12&learn=on&captions=ita)
 
 **Imposta titolo riepilogo**
->[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329221?quality=12&learn=on&captions=ita)
 
 ## Passaggi successivi
 

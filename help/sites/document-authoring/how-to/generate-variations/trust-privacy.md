@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri in che modo Adobe gestisce l’affidabilità e la privacy per Generate Variations (Genera varianti) nell’authoring dei documenti Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429060/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440022/?learn=on&captions=ita)

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Scopri come la gestione delle autorizzazioni di AEM Assets consente alle organizzazioni di controllare l’accesso alle risorse, proteggere il proprio marchio e garantire la conformità.
 
->[!VIDEO](https://video.tv.adobe.com/v/342113?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345460?quality=12&learn=on&captions=ita)

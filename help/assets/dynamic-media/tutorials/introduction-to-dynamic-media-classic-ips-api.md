@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Questo video illustra le API IPS di Dynamic Media Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/335453?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417848?quality=12&learn=on&captions=ita)

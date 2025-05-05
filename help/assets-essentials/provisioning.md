@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come distribuire Assets Essentials utilizzando Cloud Manager ed eseguire il provisioning dell’accesso utente.
 
->[!VIDEO](https://video.tv.adobe.com/v/335952?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418815?quality=12&learn=on&captions=ita)

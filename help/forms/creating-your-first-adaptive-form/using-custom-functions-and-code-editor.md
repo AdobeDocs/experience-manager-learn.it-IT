@@ -28,15 +28,15 @@ In genere, una libreria client è costituita da file CSS e JavaScript. Questa li
 
 ## Funzione per popolare l&#39;elenco a discesa {#function-to-populate-drop-down-list}
 
->[!VIDEO](https://video.tv.adobe.com/v/22282?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326882?quality=12&learn=on&captions=ita)
 
 ### Imposta il titolo di riepilogo del pannello {#set-the-summary-title-of-panels}
 
->[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329221?quality=12&learn=on&captions=ita)
 
 #### Convalida pannello {#validate-panels-using-rule-editor}
 
->[!VIDEO](https://video.tv.adobe.com/v/28409?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329220?quality=12&learn=on&captions=ita)
 
 Di seguito è riportato il codice utilizzato per convalidare i campi del pannello
 

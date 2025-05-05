@@ -23,4 +23,4 @@ ht-degree: 0%
 
 I profili di elaborazione definiscono le rappresentazioni da creare per le risorse in AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/35597?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40085?quality=12&learn=on&captions=ita)

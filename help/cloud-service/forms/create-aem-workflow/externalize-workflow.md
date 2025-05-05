@@ -23,4 +23,4 @@ ht-degree: 0%
 
 AEM Forms CS dispone di una nuova funzionalità per memorizzare i dati del flusso di lavoro, ad esempio variabili, allegati e così via, in un account di archiviazione esterno. Questo video illustra come memorizzare i dati del flusso di lavoro nell’archiviazione di Azure
 
->[!VIDEO](https://video.tv.adobe.com/v/339610?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342965?quality=12&learn=on&captions=ita)

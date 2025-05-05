@@ -43,7 +43,7 @@ Questo è un tutorial avanzato. Prima di procedere con questo capitolo, assicura
 
 Il video seguente fornisce una breve introduzione ai modelli per frammenti di contenuto e spiega come vengono utilizzati in questa esercitazione.
 
->[!VIDEO](https://video.tv.adobe.com/v/340037?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449527?quality=12&learn=on&captions=ita)
 
 ## Creare modelli di frammenti di contenuto {#create-models}
 

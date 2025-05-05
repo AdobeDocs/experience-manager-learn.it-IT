@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Scopri come creare un nuovo progetto di applicazione AEM utilizzando l’archetipo del progetto Maven dell’AEM, per allinearsi alle best practice e accelerare l’inizio dello sviluppo dell’AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/330551?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345910?quality=12&learn=on&captions=ita)

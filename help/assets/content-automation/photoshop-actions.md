@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Scopri come gli autori di contenuti possono eseguire azioni Photoshop all’interno di AEM Assets utilizzando le API di Creative Cloud con il componente aggiuntivo di automazione dei contenuti.
 
->[!VIDEO](https://video.tv.adobe.com/v/336539?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423925?quality=12&learn=on&captions=ita)

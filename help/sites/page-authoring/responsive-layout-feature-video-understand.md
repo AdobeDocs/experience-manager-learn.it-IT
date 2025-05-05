@@ -24,7 +24,7 @@ ht-degree: 7%
 
 Adobe Experience Manager Sites consente all’autore di gestire la larghezza di un componente in base alla larghezza del dispositivo per facilitare la progettazione di un sito reattivo. Con la modalità Layout e il Contenitore di layout gli utenti possono creare contenuti reattivi per dispositivi diversi e visualizzare in anteprima l’esperienza dell’utente finale, senza uscire dall’interfaccia utente di AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/32012?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37179?quality=12&learn=on&captions=ita)
 
 ## Risorse aggiuntive {#additional-resources}
 

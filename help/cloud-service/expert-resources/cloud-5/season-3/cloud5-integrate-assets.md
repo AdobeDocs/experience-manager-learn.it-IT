@@ -23,7 +23,7 @@ ht-degree: 3%
 
 Scopri come integrare AEM Assets con l’authoring dei documenti per offrire esperienze eccezionali con Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428302/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448948/?quality=12&learn=on&captions=ita)
 
 
 ## Risorse aggiuntive

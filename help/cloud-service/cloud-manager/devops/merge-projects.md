@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Scopri come unire più progetti in un unico progetto da distribuire in AEM as a Cloud Service utilizzando Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/330535?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345858?quality=12&learn=on&captions=ita)

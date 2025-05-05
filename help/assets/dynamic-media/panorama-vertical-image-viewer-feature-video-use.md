@@ -20,7 +20,7 @@ ht-degree: 0%
 
 I miglioramenti apportati al visualizzatore Dynamic Media in AEM 6.4 includono l&#39;aggiunta del visualizzatore di immagini panoramiche, del visualizzatore di immagini panoramiche di realtà virtuale e del visualizzatore di immagini verticali. Il visualizzatore panoramico offre un modo semplice per offrire un&#39;esperienza coinvolgente e coinvolgente della stanza, della proprietà, della posizione o del paesaggio senza alcuno sviluppo personalizzato.
 
->[!VIDEO](https://video.tv.adobe.com/v/24156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327278?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >

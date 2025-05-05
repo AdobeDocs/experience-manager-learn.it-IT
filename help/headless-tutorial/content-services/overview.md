@@ -25,7 +25,7 @@ AEM Content Services consente di utilizzare le stesse astrazioni di contenuto ut
 
 Un tutorial end-to-end che illustra come creare ed esporre contenuti utilizzando l’AEM e utilizzati da un’app mobile nativa, in uno scenario CMS headless.
 
->[!VIDEO](https://video.tv.adobe.com/v/28315?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329219?quality=12&learn=on&captions=ita)
 
 Questo tutorial esplora come utilizzare i servizi di contenuti AEM per potenziare l’esperienza di un’app mobile che visualizza informazioni sugli eventi (musica, prestazioni, immagini, ecc.) curata dal team WKND.
 

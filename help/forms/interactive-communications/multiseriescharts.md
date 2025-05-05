@@ -29,11 +29,11 @@ Per creare grafici a serie multiple in AEM Forms, è necessario creare un modell
 
 ## Crea modello dati modulo per grafici a più serie
 
->[!VIDEO](https://video.tv.adobe.com/v/26352?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329213?quality=12&learn=on&captions=ita)
 
 ### Configurare i grafici a linee
 
->[!VIDEO](https://video.tv.adobe.com/v/26353?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329214?quality=12&learn=on&captions=ita)
 
 Per eseguire il test sul sistema, attieniti alla seguente procedura
 

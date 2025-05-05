@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video descrive il processo di aggiornamento del timeout CORBA in Forms PDFG per attenuare i problemi di rollback delle transazioni.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335512?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417231?quality=12&learn=on&captions=ita)

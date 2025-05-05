@@ -76,7 +76,7 @@ In questa parte dell&#39;esercitazione verrà creato un nuovo Modello per pagina
 
 Di solito, la pianificazione di un nuovo sito web inizia con modelli e progetti statici. [Adobe XD](https://helpx.adobe.com/it/support/xd.html) è uno strumento di progettazione che crea l&#39;esperienza utente. Ora esaminiamo un kit di interfaccia utente e modelli per aiutare a pianificare la struttura del modello della pagina dell’articolo.
 
->[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36172?quality=12&learn=on&captions=ita)
 
 **Scarica il [file di progettazione dell&#39;articolo WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)**.
 
@@ -96,7 +96,7 @@ Sono disponibili tre aree principali di [Modelli modificabili](https://experienc
 
 Quindi, crea un modello in AEM che corrisponda alla struttura dei modelli. Ciò si verifica in un’istanza locale dell’AEM. Segui i passaggi descritti nel video seguente:
 
->[!VIDEO](https://video.tv.adobe.com/v/330991?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36173?quality=12&learn=on&captions=ita)
 
 Passaggi di alto livello per il video precedente:
 
@@ -164,7 +164,7 @@ Per la creazione di contenuto globale, ad esempio un&#39;intestazione o un piè 
 
 L’Archetipo progetto AEM ha generato un’intestazione e un piè di pagina. Quindi, aggiorna i Frammenti esperienza in modo che corrispondano ai modelli. Segui i passaggi descritti nel video seguente:
 
->[!VIDEO](https://video.tv.adobe.com/v/330992?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447497?quality=12&learn=on&captions=ita)
 
 Passaggi di alto livello per il video precedente:
 
@@ -210,7 +210,7 @@ Passaggi di alto livello per il video precedente:
 
 Quindi, crea una pagina utilizzando il modello Pagina articolo. Crea il contenuto della pagina in modo che corrisponda ai modelli del sito. Segui i passaggi descritti nel video seguente:
 
->[!VIDEO](https://video.tv.adobe.com/v/330993?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446450?quality=12&learn=on&captions=ita)
 
 Passaggi di alto livello per il video precedente:
 

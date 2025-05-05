@@ -24,7 +24,7 @@ Dopo aver convertito un modulo PDF in modulo adattivo, in genere è necessario f
 
 Il video seguente illustra i passaggi necessari per configurare il modulo per l’esperienza di firma sul posto
 
->[!VIDEO](https://video.tv.adobe.com/v/39574?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327710?quality=12&learn=on&captions=ita)
 
 ## Complimenti
 

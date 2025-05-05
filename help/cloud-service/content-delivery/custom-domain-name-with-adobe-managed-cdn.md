@@ -46,7 +46,7 @@ Se non hai accesso a servizi di terze parti, _collabora con il tuo team di sicur
 
 ## Genera certificato SSL
 
->[!VIDEO](https://video.tv.adobe.com/v/3427908?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441497?quality=12&learn=on&captions=ita)
 
 Sono disponibili due opzioni:
 

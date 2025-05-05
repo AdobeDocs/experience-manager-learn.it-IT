@@ -30,7 +30,7 @@ Quando crei una variabile di tipo JSON per acquisire i dati inviati nel modello 
 
 Puoi mappare lo schema con la variabile di tipo JSON nel modello di flusso di lavoro. Puoi quindi utilizzare il browser schemi per mappare gli elementi dello schema con le variabili stringa/numero nel modello di flusso di lavoro
 
->[!VIDEO](https://video.tv.adobe.com/v/28097?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328814?quality=12&learn=on&captions=ita)
 
 Per far sì che le risorse funzionino sul sistema, segui i passaggi seguenti:
 

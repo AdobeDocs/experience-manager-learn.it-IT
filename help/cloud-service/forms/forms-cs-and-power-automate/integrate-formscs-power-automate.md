@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Richiama l’alimentazione automatizza i flussi all’invio di un modulo adattivo. Il video seguente illustra i passaggi necessari per configurare e integrare Forms CS con Microsoft Power Automate.
 
->[!VIDEO](https://video.tv.adobe.com/v/345675?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412131?quality=12&learn=on&captions=ita)

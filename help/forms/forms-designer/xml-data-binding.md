@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Breve video che descrive l&#39;associazione di un AEM Form a un XML Data Source
 
->[!VIDEO](https://video.tv.adobe.com/v/3427625/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439834/?learn=on&captions=ita)

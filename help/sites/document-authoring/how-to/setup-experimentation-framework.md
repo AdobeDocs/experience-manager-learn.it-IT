@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Scopri come impostare il framework di sperimentazione nell’authoring dei documenti di Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429062/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438936/?learn=on&captions=ita)

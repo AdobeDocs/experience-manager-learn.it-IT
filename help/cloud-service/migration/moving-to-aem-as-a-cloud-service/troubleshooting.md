@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Scopri come risolvere i problemi ed eseguire il debug di AEM SDK, AEM as a Cloud Service e il processo di build e distribuzione.
 
->[!VIDEO](https://video.tv.adobe.com/v/336964?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454667?quality=12&learn=on&captions=ita)

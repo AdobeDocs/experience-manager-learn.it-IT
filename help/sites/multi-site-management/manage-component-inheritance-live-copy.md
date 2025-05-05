@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come gestire l’ereditarietà tra una Live Copy e la relativa blueprint a livello di componente.
 
->[!VIDEO](https://video.tv.adobe.com/v/36678?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41603?quality=12&learn=on&captions=ita)

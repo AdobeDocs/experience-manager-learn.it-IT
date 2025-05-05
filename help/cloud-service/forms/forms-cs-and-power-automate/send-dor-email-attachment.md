@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Estrai e invia un documento record (DoR) come allegato e-mail nel flusso di lavoro Power Automate.
 Il video seguente spiega i passaggi necessari per estrarre un documento record dai dati inviati
->[!VIDEO](https://video.tv.adobe.com/v/346731?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413035?quality=12&learn=on&captions=ita)

@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri le nozioni di base sulla creazione di una struttura di cartelle, sulle operazioni di base come spostamento, copia e ridenominazione e sulle raccolte.
 
->[!VIDEO](https://video.tv.adobe.com/v/335733?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413851?quality=12&learn=on&captions=ita)

@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Configurare un modulo adattivo per attivare il flusso di lavoro di revisione
 
->[!VIDEO](https://video.tv.adobe.com/v/332435?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446512?quality=12&learn=on&captions=ita)

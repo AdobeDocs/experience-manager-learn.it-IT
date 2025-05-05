@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Scopri come importare in blocco le pagine web utilizzando lo strumento AEM Importer durante la migrazione del sito.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429597/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445893/?learn=on&captions=ita)

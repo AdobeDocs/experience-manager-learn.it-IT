@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Scopri come creare e utilizzare una rappresentazione solo posizionamento (FPO) per le risorse AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/34259?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38604?quality=12&learn=on&captions=ita)

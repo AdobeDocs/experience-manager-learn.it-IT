@@ -20,7 +20,7 @@ ht-degree: 0%
 
 AEM 6.3 introduce diverse nuove funzioni e miglioramenti in questa versione per semplificare l’esperienza di authoring di moduli e documenti adattivi. I miglioramenti consentono di ridurre i tempi di commercializzazione e consentono agli utenti aziendali di utilizzare moduli e documenti
 
->[!VIDEO](https://video.tv.adobe.com/v/19500?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41150?quality=12&learn=on&captions=ita)
 
 **Alcuni dei principali miglioramenti apportati all&#39;editor di moduli adattivi includono:**
 

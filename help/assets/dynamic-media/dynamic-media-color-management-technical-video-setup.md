@@ -20,7 +20,7 @@ ht-degree: 11%
 
 Questo video illustra Dynamic Media Color Management e come può essere utilizzato per fornire funzionalità di anteprima della correzione del colore in per AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/16792?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41731?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >

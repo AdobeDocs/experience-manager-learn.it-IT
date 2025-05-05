@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi per risolvere i problemi di dipendenza con le librerie C++ in Designer.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335576?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417622?quality=12&learn=on&captions=ita)

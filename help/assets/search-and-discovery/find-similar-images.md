@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Scopri in che modo Trova immagine simile di AEM Assets consente di trovare facilmente l’immagine migliore per le tue esigenze.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426796/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438485/?learn=on&captions=ita)

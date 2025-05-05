@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Panoramica sullo sviluppo di componenti con Adobe Experience Manager Sites. Include un’introduzione a Finestre di dialogo, Modelli Sling, Script HTL e Librerie lato client.
 
->[!VIDEO](https://video.tv.adobe.com/v/32547?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36502?quality=12&learn=on&captions=ita)

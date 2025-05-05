@@ -23,4 +23,4 @@ ht-degree: 10%
 
 Creare un modello dati modulo basato sull’origine dati configurata nel passaggio precedente
 
->[!VIDEO](https://video.tv.adobe.com/v/331756?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411545?quality=12&learn=on&captions=ita)

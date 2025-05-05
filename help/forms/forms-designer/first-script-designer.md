@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Breve video che descrive la creazione e il test di script in AEM Forms Designer
 
->[!VIDEO](https://video.tv.adobe.com/v/3427627/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443715/?learn=on&captions=ita)

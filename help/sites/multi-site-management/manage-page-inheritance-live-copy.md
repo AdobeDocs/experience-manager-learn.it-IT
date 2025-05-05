@@ -21,4 +21,4 @@ ht-degree: 0%
 # Gestire l’ereditarietà di una Live Copy su una pagina {#manage-live-copy-page}
 
 Scopri come gestire l’ereditarietà tra una Live Copy e la relativa blueprint a livello di pagina.
->[!VIDEO](https://video.tv.adobe.com/v/36679?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41595?quality=12&learn=on&captions=ita)

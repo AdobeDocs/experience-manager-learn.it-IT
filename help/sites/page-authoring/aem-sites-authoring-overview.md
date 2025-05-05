@@ -24,7 +24,7 @@ ht-degree: 13%
 
 Il video seguente fornisce una panoramica dei concetti di base dell’authoring in un ambiente di authoring AEM per AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/33594?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36879?quality=12&learn=on&captions=ita)
 
 ## Risorse aggiuntive {#additional-resources}
 

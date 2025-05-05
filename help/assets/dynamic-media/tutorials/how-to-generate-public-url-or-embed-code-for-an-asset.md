@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Questo video illustra i passaggi per generare un URL pubblico o un codice di incorporamento per una risorsa.
 
->[!VIDEO](https://video.tv.adobe.com/v/335364?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417843?quality=12&learn=on&captions=ita)

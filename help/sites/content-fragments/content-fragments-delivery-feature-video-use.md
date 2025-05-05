@@ -30,7 +30,7 @@ Questa serie di video illustra le opzioni di consegna per l’utilizzo dei framm
 
 ## Utilizzo di frammenti di contenuto nelle pagine web {#using-content-fragments-in-web-pages}
 
->[!VIDEO](https://video.tv.adobe.com/v/22449?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326980?quality=12&learn=on&captions=ita)
 
 I frammenti di contenuto possono essere utilizzati nelle pagine di AEM Sites o in modo simile, frammenti di esperienza, utilizzando il [componente Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=it) dei componenti core WCM di AEM.
 
@@ -38,7 +38,7 @@ Lo stile dei componenti dei frammenti di contenuto può essere impostato utilizz
 
 ## Esposizione di frammenti di contenuto come JSON {#exposing-content-fragments-as-json}
 
->[!VIDEO](https://video.tv.adobe.com/v/22448?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326987?quality=12&learn=on&captions=ita)
 
 AEM Content Services semplifica la creazione di endpoint HTTP basati su pagina di AEM per il rendering del contenuto in formato JSON normalizzato.
 
@@ -49,7 +49,7 @@ Il video precedente utilizza il [componente Frammento di contenuto](https://expe
 
 ## Utilizzo dell’API HTTP di Assets
 
->[!VIDEO](https://video.tv.adobe.com/v/26390?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327941?quality=12&learn=on&captions=ita)
 
 Introdotto inizialmente in AEM 6.5, è stato migliorato il supporto dei frammenti di contenuto con l’API HTTP di Assets. Questo offre agli sviluppatori un modo semplice per eseguire operazioni di creazione, lettura, aggiornamento ed eliminazione (CRUD) sui frammenti di contenuto.
 

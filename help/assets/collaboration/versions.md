@@ -23,4 +23,4 @@ ht-degree: 11%
 
 Scopri come AEM crea e gestisce le versioni delle risorse.
 
->[!VIDEO](https://video.tv.adobe.com/v/32052?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37148?quality=12&learn=on&captions=ita)

@@ -20,7 +20,7 @@ ht-degree: 1%
 
 La console Componenti fornisce agli sviluppatori e all’amministratore una posizione centrale per gestire tutti i vari componenti di un’implementazione Sites. Il video seguente illustra le funzioni della console Componenti.
 
->[!VIDEO](https://video.tv.adobe.com/v/17417?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41679?quality=12&learn=on&captions=ita)
 
 La console Componenti offre le seguenti funzionalità:
 

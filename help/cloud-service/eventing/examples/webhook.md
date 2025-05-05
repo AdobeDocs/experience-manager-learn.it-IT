@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Scopri come ricevere eventi AEM su un webhook e rivedere i dettagli dell’evento come payload, intestazioni e metadati.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449756?quality=12&learn=on&captions=ita)
 
 In questo esempio, l&#39;utilizzo di un _webhook ospitato_ fornito da Adobe consente di ricevere eventi AEM senza dover configurare un webhook personalizzato. Questo webhook fornito da Adobe è ospitato su [Glitch](https://glitch.com/), una piattaforma nota per offrire un ambiente basato su Web che favorisce la creazione e la distribuzione di applicazioni Web. Tuttavia, se preferisci, è anche disponibile l’opzione per utilizzare il tuo webhook.
 

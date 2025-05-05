@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Esplora la configurazione e l’utilizzo del componente Condivisione social media.
 
->[!VIDEO](https://video.tv.adobe.com/v/18897?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329908?quality=12&learn=on&captions=ita)
 
 Questo video illustra le seguenti funzionalità del componente Condivisione social media (parte di [Componenti core AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)) tramite il sito Web di esempio [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail).
 

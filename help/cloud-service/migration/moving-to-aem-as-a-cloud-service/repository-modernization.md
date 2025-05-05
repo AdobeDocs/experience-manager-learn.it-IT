@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Scopri la modernizzazione dell’archivio, i contenuti mutabili e immutabili, la struttura del pacchetto e lo strumento CLI del modernizzatore dell’archivio.
 
->[!VIDEO](https://video.tv.adobe.com/v/336958?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454800?quality=12&learn=on&captions=ita)
 
 ## Strumento Repository Modernizer
 

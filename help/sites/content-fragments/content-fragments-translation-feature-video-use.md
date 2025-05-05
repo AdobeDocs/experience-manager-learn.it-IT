@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Scopri come localizzare e tradurre i frammenti di contenuto con Adobe Experience Manager. È inoltre possibile estrarre e tradurre le risorse multimediali diverse associate a un frammento di contenuto.
 
->[!VIDEO](https://video.tv.adobe.com/v/18131?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410325?quality=12&learn=on&captions=ita)
 
 ## Casi di utilizzo della traduzione di frammenti di contenuto {#content-fragment-translation-use-cases}
 

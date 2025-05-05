@@ -190,7 +190,7 @@ Utilizzando l&#39;estensione Adobe Experience Platform Debugger [Chrome](https:/
 + Versione della libreria di Platform Web SDK, ID Datastream
 + Oggetto XDM come parte dell&#39;attributo `events` in Experience Platform Web SDK
 
->[!VIDEO](https://video.tv.adobe.com/v/3418897?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454507?quality=12&learn=on&captions=ita)
 
 ## Crea set di dati - Experience Platform
 

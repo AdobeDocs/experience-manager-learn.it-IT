@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi per connettere Workbench al server AEM Forms utilizzando HTTPS.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335482?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417667?quality=12&learn=on&captions=ita)

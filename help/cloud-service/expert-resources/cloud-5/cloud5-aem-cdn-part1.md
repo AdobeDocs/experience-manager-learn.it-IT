@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Questo video offre informazioni approfondite sulla rete CDN fornita come parte di AEM as a Cloud Service, tra cui di cosa è capace e se desideri utilizzare una tua rete CDN. Questa è la parte 1 di 2.
 
->[!VIDEO](https://video.tv.adobe.com/v/340760?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447845?quality=12&learn=on&captions=ita)
 
 ## Contenuto della prima parte della serie
 

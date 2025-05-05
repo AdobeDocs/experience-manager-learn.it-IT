@@ -24,7 +24,7 @@ ht-degree: 3%
 
 Esplora gli indici di query e come scrivere formule di Excel per manipolare e ordinare i set di dati con Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427787/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453771/?learn=on&captions=ita)
 
 ## Risorse aggiuntive
 

@@ -25,4 +25,4 @@ ht-degree: 6%
 
 Scopri come configurare la mappatura dei metadati tra i campi di Workfront e le proprietà di Assets Essentials, nonché come configurare Assets Essentials per visualizzare i valori mappati.
 
->[!VIDEO](https://video.tv.adobe.com/v/336458?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422623?quality=12&learn=on&captions=ita)

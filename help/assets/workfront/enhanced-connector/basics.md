@@ -31,4 +31,4 @@ Scopri le nozioni di base del connettore Adobe Workfront e Experience Manager As
 + Risorse versione
 + Pubblicazione automatica delle risorse
 
->[!VIDEO](https://video.tv.adobe.com/v/337575?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454303?quality=12&learn=on&captions=ita)

@@ -30,19 +30,19 @@ Introduzione rapida ai programmi Cloud Manager e Cloud Manager.
 >
 >In tutti questi video, i tempi di build, test e implementazione sono stati velocizzati per ridurre il tempo dedicato al video. Un’esecuzione completa della pipeline richiede in genere 45 minuti o più (incluso il test delle prestazioni obbligatorio di 30 minuti), a seconda delle dimensioni del progetto, del numero di istanze AEM e dei processi UAT.
 
->[!VIDEO](https://video.tv.adobe.com/v/23082?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326979?quality=12&learn=on&captions=ita)
 
 ## Configurazione della pipeline CI/CD
 
 Questo video illustra la configurazione della pipeline per il programma in Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/23083?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326981?quality=12&learn=on&captions=ita)
 
 ## Esecuzione di una pipeline non riuscita
 
 Questo video illustra l’esecuzione della pipeline CI/CD utilizzando un codice che non supera i controlli di qualità richiesti da Cloud Manager, utilizzando il ramo dell’archivio **[!DNL yellow]**.
 
->[!VIDEO](https://video.tv.adobe.com/v/23084?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326982?quality=12&learn=on&captions=ita)
 
 ## Esecuzione della pipeline riuscita
 
@@ -50,7 +50,7 @@ Questo video illustra l’esecuzione corretta della pipeline CI/CD utilizzando i
 
 Questo video tocca anche la console [!UICONTROL Attività] in Cloud Manager, che consente il rientro nelle esecuzioni attive o la revisione delle esecuzioni completate o non riuscite.
 
->[!VIDEO](https://video.tv.adobe.com/v/23085?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326983?quality=12&learn=on&captions=ita)
 
 ## Materiali di supporto
 

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 Scopri come installare ed eseguire un’istanza locale di Adobe Experience Manager in pochi minuti con AEM Quickstart Jar. Il file jar Quickstart di AEM è un runtime di AEM che può essere installato ed eseguito su un computer locale.
 
->[!VIDEO](https://video.tv.adobe.com/v/32551?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36958?quality=12&learn=on&captions=ita)
 
 Per una configurazione più dettagliata

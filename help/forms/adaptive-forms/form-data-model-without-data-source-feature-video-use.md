@@ -20,7 +20,7 @@ ht-degree: 0%
 
 A partire da AEM Forms 6.4, ora è possibile definire il modello dati del modulo (FDM) senza associarlo a un’origine dati. Il video seguente illustra i passaggi necessari per creare FDM senza alcuna origine dati.
 
->[!VIDEO](https://video.tv.adobe.com/v/21414?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326990?quality=12&learn=on&captions=ita)
 
 Questo offre i seguenti vantaggi:
 

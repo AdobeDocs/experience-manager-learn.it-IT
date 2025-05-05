@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come creare una Live Copy per il sito da una blueprint utilizzando la procedura guidata Crea Live Copy.
 
->[!VIDEO](https://video.tv.adobe.com/v/36677?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41586?quality=12&learn=on&captions=ita)

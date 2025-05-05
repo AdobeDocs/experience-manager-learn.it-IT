@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Scopri come utilizzare le funzioni di check-in e check-out di AEM per facilitare la collaborazione tra più utenti sulle risorse.
 
->[!VIDEO](https://video.tv.adobe.com/v/32048?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36907?quality=12&learn=on&captions=ita)

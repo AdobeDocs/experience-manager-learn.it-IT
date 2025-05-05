@@ -28,8 +28,8 @@ La schermata seguente mostra gli elementi calcolati StateandZip e monthSalary
 
 ## Creazione elemento calcolato stipendio mensile
 
->[!VIDEO](https://video.tv.adobe.com/v/23855?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327270?quality=12&learn=on&captions=ita)
 
 ### Creazione dell&#39;elemento calcolato StateandZip
 
->[!VIDEO](https://video.tv.adobe.com/v/23856?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327271?quality=12&learn=on&captions=ita)

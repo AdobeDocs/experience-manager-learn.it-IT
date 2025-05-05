@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Aggiunta e utilizzo di un CAPTCHA con AEM Adaptive Forms.
 
->[!VIDEO](https://video.tv.adobe.com/v/18336?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327009?quality=12&learn=on&captions=ita)
 
 *Questo video illustra il processo di aggiunta di un CAPTCHA a un modulo adattivo di AEM utilizzando sia il servizio AEM CAPTCHA integrato che il servizio Google reCAPTCHA.*
 

@@ -22,7 +22,7 @@ Ogni modulo adattivo è basato su un modello di modulo adattivo. Il modello defi
 Il modello creato qui è la base per il modulo adattivo che verrà presentato.
 Il video seguente illustra il processo di base per la creazione di un modello di modulo adattivo
 
->[!VIDEO](https://video.tv.adobe.com/v/37324?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326696?quality=12&learn=on&captions=ita)
 
 Per ulteriori informazioni, consulta la [documentazione del modello di modulo adattivo](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=it)
 

@@ -24,7 +24,7 @@ Devi creare un’applicazione API sul tuo Acrobat Sign da integrare con la tua p
 
 Il video seguente illustra i passaggi necessari per creare un’applicazione API Acrobat Sign
 
->[!VIDEO](https://video.tv.adobe.com/v/38178?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327840?quality=12&learn=on&captions=ita)
 
 ## Passaggi successivi
 

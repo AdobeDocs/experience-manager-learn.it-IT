@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Crea un modello di flusso di lavoro utilizzando i componenti di flusso di lavoro di AEM Forms. utilizza il componente Or-Split per diramare il flusso di lavoro in base al valore della variabile di stato.
 
->[!VIDEO](https://video.tv.adobe.com/v/332434?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453199?quality=12&learn=on&captions=ita)

@@ -23,7 +23,7 @@ Un elenco a discesa a cascata è una serie di controlli DropDownList dipendenti 
 
 ## Dimostrazione del caso d’uso
 
->[!VIDEO](https://video.tv.adobe.com/v/340344?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437317?quality=12&learn=on&captions=ita)
 
 Ai fini di questa esercitazione, ho utilizzato [API REST Geonames](https://www.geonames.org/export/web-services.html) per dimostrare questa funzionalità.
 Esistono diverse organizzazioni che forniscono questo tipo di servizio e, purché dispongano di API REST ben documentate, puoi facilmente integrarle con AEM Forms utilizzando la funzionalità di integrazione dei dati

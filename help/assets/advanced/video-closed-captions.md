@@ -21,4 +21,4 @@ ht-degree: 0%
 
 I sottotitoli codificati vengono generati automaticamente una volta caricato un file video in AEM Assets con Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432627/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446395/?learn=on&captions=ita)

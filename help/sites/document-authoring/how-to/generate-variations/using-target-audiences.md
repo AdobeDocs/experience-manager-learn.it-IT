@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Scopri come utilizzare i tipi di pubblico di Adobe Target per rivolgerti al pubblico giusto con i contenuti pertinenti nell’authoring dei documenti Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428792/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437763/?learn=on&captions=ita)

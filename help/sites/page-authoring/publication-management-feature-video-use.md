@@ -25,7 +25,7 @@ ht-degree: 1%
 
 AEM Sites offre diverse opzioni per la pubblicazione e l’annullamento della pubblicazione dei contenuti. Questo video esplora i vari metodi e le loro funzionalità.
 
->[!VIDEO](https://video.tv.adobe.com/v/32193?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36881?quality=12&learn=on&captions=ita)
 
 AEM Sites fornisce diversi metodi per pubblicare e annullare la pubblicazione dei contenuti, in base al flusso di lavoro dell’autore.
 

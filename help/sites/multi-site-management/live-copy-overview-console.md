@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come visualizzare o gestire l’ereditarietà in un sito o eseguire operazioni di rollout utilizzando la console Panoramica Live Copy.
 
->[!VIDEO](https://video.tv.adobe.com/v/36680?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326739?quality=12&learn=on&captions=ita)

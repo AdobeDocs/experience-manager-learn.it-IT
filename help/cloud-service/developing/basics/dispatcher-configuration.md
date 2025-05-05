@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Panoramica delle differenze nelle configurazioni del dispatcher, nonché suggerimenti e trucchi per la migrazione del dispatcher da Adobe Managed Services (AMS) ad AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/330556?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345896?quality=12&learn=on&captions=ita)

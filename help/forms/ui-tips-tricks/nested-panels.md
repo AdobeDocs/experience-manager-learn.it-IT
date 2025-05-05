@@ -36,7 +36,7 @@ Il comportamento predefinito di questo modulo consiste nel visualizzare tutti i 
 
 Per modificare questo comportamento predefinito, è necessario effettuare le seguenti operazioni
 
->[!VIDEO](https://video.tv.adobe.com/v/338369?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438639?quality=12&learn=on&captions=ita)
 
 
 Aggiungi il codice seguente all&#39;evento click del pulsante **Next** utilizzando l&#39;editor di codice
@@ -57,7 +57,7 @@ Il codice riportato sopra consente di spostarsi tra le schede e i pannelli secon
 
 Utilizza l’editor di stili per nascondere il titolo delle schede nei pannelli secondari.
 
->[!VIDEO](https://video.tv.adobe.com/v/338370?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439137?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >

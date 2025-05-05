@@ -22,7 +22,7 @@ Il solido framework di traduzione di AEM consente ai fornitori di servizi di tra
 
 ## Miglioramenti della traduzione in AEM 6.5
 
->[!VIDEO](https://video.tv.adobe.com/v/27405?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328611?quality=12&learn=on&captions=ita)
 
 I miglioramenti alla traduzione in AEM 6.5 includono:
 
@@ -36,7 +36,7 @@ I miglioramenti alla traduzione in AEM 6.5 includono:
 
 ## Miglioramenti della traduzione in AEM 6.4
 
->[!VIDEO](https://video.tv.adobe.com/v/21309?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41139?quality=12&learn=on&captions=ita)
 
 Gli autori possono ora creare progetti di traduzione multilingue in modo rapido e semplice direttamente dall’amministratore Sites o dall’amministratore Progetti, impostare tali progetti in modo da promuovere automaticamente i lanci e persino impostare pianificazioni per l’automazione.
 

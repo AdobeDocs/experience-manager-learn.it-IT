@@ -23,7 +23,7 @@ Questo video illustra l’anatomia del CSS (o [!DNL LESS]) e di JavaScript utili
 
 ## Informazioni su come codificare per il sistema di stili {#understanding-how-to-code-for-the-style-system}
 
->[!VIDEO](https://video.tv.adobe.com/v/21538?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327266?quality=12&learn=on&captions=ita)
 
 Il pacchetto AEM fornito (**technical-review.sites.style-system-1.0.0.zip**) installa lo stile del titolo dell&#39;esempio, i criteri di esempio per i componenti Contenitore di layout We.Retail e Titolo e una pagina di esempio.
 

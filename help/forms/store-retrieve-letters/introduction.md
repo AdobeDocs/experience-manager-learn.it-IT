@@ -26,7 +26,7 @@ In questo articolo viene utilizzato il database MySQL per memorizzare i metadati
 
 Il video seguente illustra il caso d’uso:
 
->[!VIDEO](https://video.tv.adobe.com/v/342129?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441448?quality=12&learn=on&captions=ita)
 
 ## Prerequisiti
 

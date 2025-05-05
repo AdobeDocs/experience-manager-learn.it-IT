@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Aggiungi i pannelli secondari al pannello principale e configura il layout dei pannelli secondari.
 
->[!VIDEO](https://video.tv.adobe.com/v/332238?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447284?quality=12&learn=on&captions=ita)

@@ -26,7 +26,7 @@ Le funzionalità di AEM Sites per la visualizzazione delle differenze di pagina 
 
 ## Confronto delle versioni di una pagina {#comparing-page-versions}
 
->[!VIDEO](https://video.tv.adobe.com/v/32152?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36802?quality=12&learn=on&captions=ita)
 
 **Modifiche a HTML**
 

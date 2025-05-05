@@ -23,7 +23,7 @@ ht-degree: 4%
 
 Utilizza AEM Desktop App per semplificare l’accesso a qualsiasi risorsa gestita in AEM sul desktop, per qualsiasi applicazione e formato di file.
 
->[!VIDEO](https://video.tv.adobe.com/v/28868?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36418?quality=12&learn=on&captions=ita)
 
 + Scopri le risorse in AEM tramite navigazione e ricerca con un’applicazione desktop dedicata
 + La gestione ottimizzata della larghezza di banda consente di caricare e scaricare molte risorse di grandi dimensioni

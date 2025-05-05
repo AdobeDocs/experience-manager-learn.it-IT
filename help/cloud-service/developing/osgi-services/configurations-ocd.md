@@ -20,7 +20,7 @@ ht-degree: 3%
 
 Scopri come creare e designare ObjectClassDefinitions come rappresentazioni di configurazione OSGi in un servizio OSGi.
 
->[!VIDEO](https://video.tv.adobe.com/v/335730?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417817?quality=12&learn=on&captions=ita)
 
 ## Riferimenti
 

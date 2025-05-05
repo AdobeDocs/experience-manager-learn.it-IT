@@ -24,7 +24,7 @@ Creazione di un modello di documento per canale web in AEM Forms 6.4
 >[!VIDEO](https://video.tv.adobe.com/v/22342?quality=12&learn=on)
 
 Creazione di un modello di documento per canale web in AEM Forms 6.5
->[!VIDEO](https://video.tv.adobe.com/v/27807?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328810?quality=12&learn=on&captions=ita)
 
 Il modello avrà aree di destinazione/segnaposto che conterrà vari tipi di frammenti di documenti. Ad esempio, un modello può avere aree di destinazione per i loghi e un’altra area di destinazione per il contenuto di testo.
 

@@ -100,7 +100,7 @@ Scopri come configurare l’ambiente di sviluppo locale per abilitare lo svilupp
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./3-local-development-environment.md" title="Configurare un ambiente di sviluppo locale" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443978/?format=jpeg&nocache=1741027443737" alt="Configurare un ambiente di sviluppo locale"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443986/?format=jpeg&nocache=1741027443737&captions=ita" alt="Configurare un ambiente di sviluppo locale"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

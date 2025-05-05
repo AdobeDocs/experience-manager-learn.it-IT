@@ -23,7 +23,7 @@ ht-degree: 0%
 
 I gruppi chiusi di utenti (CUG) sono una funzione utilizzata per limitare l’accesso al contenuto a un gruppo selezionato di utenti su un sito pubblicato. Questo video mostra come i gruppi chiusi di utenti possono essere utilizzati con Adobe Experience Manager Assets per limitare l’accesso a una specifica cartella di risorse. Il supporto per gruppi chiusi di utenti con AEM Assets è stato introdotto per la prima volta in AEM 6.4.
 
->[!VIDEO](https://video.tv.adobe.com/v/22155?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410276?quality=12&learn=on&captions=ita)
 
 ## Gruppo utenti chiuso (CUG) con AEM Assets
 

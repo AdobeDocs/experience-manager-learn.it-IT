@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Esplora i modelli Dynamic Media, una risorsa di immagine componibile, le loro best practice e come soddisfare la domanda per la distribuzione di contenuti personalizzati. Scopri come creare e gestire i modelli e come utilizzarli per distribuire contenuti personalizzati su larga scala.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451727/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451735/?learn=on&enablevpops&captions=ita)

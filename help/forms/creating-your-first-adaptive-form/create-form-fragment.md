@@ -21,7 +21,7 @@ ht-degree: 3%
 Un frammento è una parte riutilizzabile di un modulo. Ad esempio, un frammento può includere un blocco di indirizzi o un testo legale. L’utilizzo di frammenti semplifica e velocizza la creazione e la manutenzione di un gran numero di moduli.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/37325?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326684?quality=12&learn=on&captions=ita)
 
 
 

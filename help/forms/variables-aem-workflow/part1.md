@@ -47,11 +47,11 @@ I dati del modulo adattivo vengono memorizzati sotto l’elemento dati come most
 
 **Mappatura di una variabile XML con lo schema. Utilizza questa funzionalità con AEM Forms 6.5.1 e versioni successive**
 
->[!VIDEO](https://video.tv.adobe.com/v/28098?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328816?quality=12&learn=on&captions=ita)
 
 #### Utilizzo della variabile nell’e-mail di invio
 
->[!VIDEO](https://video.tv.adobe.com/v/26441?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328817?quality=12&learn=on&captions=ita)
 
 Per far sì che le risorse funzionino sul sistema, segui i passaggi seguenti:
 

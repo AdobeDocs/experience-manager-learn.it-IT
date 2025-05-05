@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per aggiornare XDP e file di dati personalizzati in FormsIVS e OutputIVS a scopo di test.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335513?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439745?quality=12&learn=on&captions=ita)

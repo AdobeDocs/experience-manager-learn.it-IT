@@ -23,7 +23,7 @@ ht-degree: 0%
 
 In questa parte verrà creato un frammento di documento contenente il nome e l’indirizzo del destinatario.
 
->[!VIDEO](https://video.tv.adobe.com/v/22350?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36342?quality=12&learn=on&captions=ita)
 
 I frammenti di documento contengono il contenuto testuale dei documenti di comunicazione interattivi. Questo contenuto di testo può essere testo statico o inserito dai valori degli elementi del modello dati sottostante. Ad esempio **Gentile _{name}_**, dove Gentile è il testo statico e Nome è il nome dell&#39;elemento del modello dati del modulo. In fase di runtime, verrà risolto in **Gentile Gloria Rios**&#x200B;o **Gentile John Jacobs**&#x200B;a seconda del valore dell&#39;elemento name.
 

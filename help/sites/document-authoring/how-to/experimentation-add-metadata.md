@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Esplora l’aggiunta di metadati per la sperimentazione nell’authoring di documenti Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428796/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440119/?learn=on&captions=ita)

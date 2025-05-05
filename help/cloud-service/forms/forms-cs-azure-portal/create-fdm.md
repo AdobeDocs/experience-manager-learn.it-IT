@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Crea modello dati modulo di archiviazione con backup di Azure
 
->[!VIDEO](https://video.tv.adobe.com/v/335385?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419021?quality=12&learn=on&captions=ita)

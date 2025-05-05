@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Creare un modulo adattivo basato sul modello dati del modulo forza vendita e verificare la creazione di un lead in Salesforce in corrispondenza dell’evento clic di un pulsante
 
->[!VIDEO](https://video.tv.adobe.com/v/331892?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411581?quality=12&learn=on&captions=ita)

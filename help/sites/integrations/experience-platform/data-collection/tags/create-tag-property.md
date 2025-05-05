@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Scopri come creare una proprietà Tag con la configurazione minima da integrare con Adobe Experience Manager. Gli utenti vengono introdotti nell’interfaccia utente Tag e scopri le estensioni, le regole e i flussi di lavoro di pubblicazione.
 
->[!VIDEO](https://video.tv.adobe.com/v/38553?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327447?quality=12&learn=on&captions=ita)
 
 ## Creazione di proprietà tag
 

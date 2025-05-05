@@ -27,7 +27,7 @@ Mentre in AEM 6.x i processi di flusso di lavoro personalizzati di AEM venivano 
 
 ## Come procedere
 
->[!VIDEO](https://video.tv.adobe.com/v/40965?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410022?quality=12&learn=on&captions=ita)
 
 Questo tutorial illustra la creazione di un semplice processo di lavoro Asset Compute che crea il rendering di una risorsa ritagliando la risorsa originale in un cerchio e applicando contrasto e luminosità configurabili. Anche se il worker è di base, questo tutorial lo utilizza per esplorare la creazione, lo sviluppo e la distribuzione di un worker Asset Compute personalizzato da utilizzare con AEM as a Cloud Service.
 

@@ -23,4 +23,4 @@ ht-degree: 0%
 
 L’utilizzo di frammenti semplifica e velocizza la creazione e la manutenzione di un gran numero di moduli. Durante la creazione di un modulo, viene inserito un riferimento al frammento richiesto e il frammento viene visualizzato nel modulo.
 
->[!VIDEO](https://video.tv.adobe.com/v/332231?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438425?quality=12&learn=on&captions=ita)

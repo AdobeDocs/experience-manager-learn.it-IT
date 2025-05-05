@@ -23,7 +23,7 @@ ht-degree: 12%
 
 Scopri come ricevere notifiche ogni volta che una risorsa, cartella o raccolta vista viene modificata in AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427646/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439633/?learn=on&captions=ita)
 
 >[!TIP]
 >

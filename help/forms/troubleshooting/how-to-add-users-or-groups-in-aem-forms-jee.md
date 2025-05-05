@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra il processo di aggiunta di utenti e gruppi in Gestione utenti.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335485?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417657?quality=12&learn=on&captions=ita)

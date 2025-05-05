@@ -24,4 +24,4 @@ ht-degree: 0%
 
 La barra di ricerca dell’amministratore di Assets consente di cercare le risorse utilizzando criteri personalizzati in Omnisearch.
 
->[!VIDEO](https://video.tv.adobe.com/v/35842?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40077?quality=12&learn=on&captions=ita)

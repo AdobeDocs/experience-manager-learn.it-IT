@@ -26,7 +26,7 @@ Per utilizzare un’API batch, crea una configurazione batch ed esegui un’esec
 >Assicurarsi che l&#39;utente AEM appartenga al gruppo ```forms-users``` per effettuare chiamate API.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/340241?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343700?quality=12&learn=on&captions=ita)
 
 ## Crea configurazione batch
 

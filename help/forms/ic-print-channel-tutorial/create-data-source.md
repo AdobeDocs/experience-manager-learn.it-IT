@@ -23,7 +23,7 @@ ht-degree: 1%
 
 In questa parte verrà creata un&#39;origine dati supportata REST.  Il video seguente illustra i passaggi necessari per creare l’origine dati.
 
->[!VIDEO](https://video.tv.adobe.com/v/27765?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328809?quality=12&learn=on&captions=ita)
 
 Utilizza il file Swagger fornito come parte delle risorse relative a questa esercitazione. Le risorse sono disponibili in [introduction](introduction.md) di questa esercitazione.
 

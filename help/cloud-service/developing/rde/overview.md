@@ -27,7 +27,7 @@ Questo video:
 - Cosa sono gli RDE?
 - In che modo contribuiscono a velocizzare i cicli di sviluppo e distribuzione?
 
->[!VIDEO](https://video.tv.adobe.com/v/3414128?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453606?quality=12&learn=on&captions=ita)
 
 ## Passaggio successivo
 

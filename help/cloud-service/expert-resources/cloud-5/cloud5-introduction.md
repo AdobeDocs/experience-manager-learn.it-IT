@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Benvenuto nella serie Cloud 5 di AEM Engineering. Uno dei problemi principali nella fase di implementazione di qualsiasi prodotto è la disponibilità di un numero sufficiente di campioni di codice e/o di dimostrazioni in tempo reale di tali campioni, strumenti o API. L’obiettivo di questa serie è quello di fornire informazioni utili su AEM as a Cloud Service in 5 minuti o meno.
 
->[!VIDEO](https://video.tv.adobe.com/v/340667?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447831?quality=12&learn=on&captions=ita)

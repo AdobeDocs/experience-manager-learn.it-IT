@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per acquisire le immagini heap di una JVM in un server Windows.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335493?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418289?quality=12&learn=on&captions=ita)

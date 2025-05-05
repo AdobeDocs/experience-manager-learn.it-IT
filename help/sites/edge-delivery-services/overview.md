@@ -22,7 +22,7 @@ ht-degree: 16%
 
 Scopri come rendere veloci i siti web con Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427989/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453459/?learn=on&captions=ita)
 
 Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/edge-delivery/overview) per informazioni complete su Edge Delivery Services e sulle sue funzionalità.
 
@@ -108,7 +108,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./developing/prerequisites.md" title="Prerequisiti"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425709/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3434592/?format=jpeg&captions=ita"
                 alt="Prerequisiti">
             </a>
           </figure>
@@ -140,7 +140,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./developing/aem-boilerplate.md" title="Usa modello boilerplate"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="Configurazione
+                src="https://video.tv.adobe.com/v/3434619/?format=jpeg&captions=ita" alt="Configurazione
                 Piastra calda">
             </a>
           </figure>
@@ -172,7 +172,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./developing/content-repository.md" title="Collega unità Google"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425711/?format=jpeg" alt="Collega unità Google">
+                src="https://video.tv.adobe.com/v/3434728/?format=jpeg&captions=ita" alt="Collega unità Google">
             </a>
           </figure>
         </div>
@@ -202,7 +202,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
           <figure class="image is-16by9">
             <a href="./developing/content-repository.md" title="Collega Sharepoint" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425712/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3446036/?format=jpeg&captions=ita"
                 alt="Collega Sharepoint">
             </a>
           </figure>
@@ -234,7 +234,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./developing/preview-and-publish.md" title="Anteprima e pubblicazione dei contenuti"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Anteprima e pubblicazione dei contenuti">
+                src="https://video.tv.adobe.com/v/3434717/?format=jpeg&captions=ita" alt="Anteprima e pubblicazione dei contenuti">
             </a>
           </figure>
         </div>
@@ -265,7 +265,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./developing/sidekick.md" title="Utilizzare Sidekick"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425715/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441294/?format=jpeg&captions=ita"
                 alt="Utilizzare Sidekick">
             </a>
           </figure>
@@ -297,7 +297,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./developing/document-structure.md" title="Struttura documento"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425716/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3445197/?format=jpeg&captions=ita"
                 alt="Struttura documento">
             </a>
           </figure>
@@ -329,7 +329,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./developing/local-development.md" title="Sviluppo locale"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425717/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3434739/?format=jpeg&captions=ita"
                 alt="Sviluppo locale">
             </a>
           </figure>
@@ -361,7 +361,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./developing/git.md" title="Integrare con Git"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425718/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441834/?format=jpeg&captions=ita"
                 alt="Integrare con Git">
             </a>
           </figure>
@@ -398,7 +398,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./how-to/rss.md" title="Crea feed RSS"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425725/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438007/?format=jpeg&captions=ita"
                 alt="Crea feed RSS">
             </a>
           </figure>
@@ -430,7 +430,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./how-to/social-media-sharing.md" title="Condivisione sui social media"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425974/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3439445/?format=jpeg&captions=ita"
                 alt="Condivisione sui social media">
             </a>
           </figure>
@@ -462,7 +462,7 @@ Consulta la [documentazione](https://experienceleague.adobe.com/it/docs/experien
             <a href="./how-to/delete-page.md" title="Eliminazione di pagine"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425973/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438098/?format=jpeg&captions=ita"
                 alt="Eliminazione di pagine">
             </a>
           </figure>

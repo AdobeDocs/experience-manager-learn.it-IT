@@ -22,7 +22,7 @@ ht-degree: 2%
 Il passaggio successivo consiste nel creare l’integrazione tra AEM Forms CS e la soluzione di archiviazione Azure utilizzando il modello dati del modulo.
 Il video seguente illustra i passaggi necessari per creare l’integrazione.
 
->[!VIDEO](https://video.tv.adobe.com/v/335385?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419021?quality=12&learn=on&captions=ita)
 
 Ai fini di questa esercitazione è stato creato un modello di dati modulo denominato SaveAndRetrieveFromAzurePortal con un&#39;entità denominata CreditApplications
 ![fdm-entity](./assets/fdm-entity.png)

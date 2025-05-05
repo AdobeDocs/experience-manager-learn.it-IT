@@ -22,4 +22,4 @@ ht-degree: 0%
 
 La Casella in entrata di AEM facilita una maggiore collaborazione e visibilità sulle attività e sul flusso di lavoro. La vista Calendario della casella in entrata consente di tenere traccia dei progetti e delle attività in una vista temporale per semplificare la gestione e la programmazione dei progetti. Nella vista Calendario, l’utente avrà una visibilità generale sui progetti e sulle attività attualmente in corso, pianificate, in scadenza e scadute.
 
->[!VIDEO](https://video.tv.adobe.com/v/16827?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410098?quality=12&learn=on&captions=ita)

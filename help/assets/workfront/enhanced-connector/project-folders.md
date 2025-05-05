@@ -29,4 +29,4 @@ Scopri le cartelle di progetto quando utilizzi il connettore avanzato di Adobe W
 + Mappatura metadati cartelle
 + Ereditarietà metadati cartelle
 
->[!VIDEO](https://video.tv.adobe.com/v/337586?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454767?quality=12&learn=on&captions=ita)

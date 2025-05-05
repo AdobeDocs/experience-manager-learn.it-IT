@@ -23,4 +23,4 @@ ht-degree: 3%
 
 I tag sono uno strumento integrale per la gestione delle risorse nella gerarchia di cartelle di Assets. La definizione di una tassonomia dei tag è fondamentale per consentire agli utenti di individuare e utilizzare le risorse e organizzarle all’interno di AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/34073?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37320?quality=12&learn=on&captions=ita)

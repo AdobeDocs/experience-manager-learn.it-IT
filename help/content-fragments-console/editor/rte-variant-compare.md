@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come AEM consente di confrontare e sincronizzare facilmente i campi Editor Rich Text all’interno delle varianti di Frammento di contenuto. Confrontando e sincronizzando queste varianti, puoi garantire una messaggistica coerente su tutti i canali che utilizzano il frammento di contenuto.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419314/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437558/?learn=on&captions=ita)

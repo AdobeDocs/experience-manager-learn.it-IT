@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Questo video illustra i passaggi necessari per creare un profilo immagine di ritaglio avanzato in AEM Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335460?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418217?quality=12&learn=on&captions=ita)

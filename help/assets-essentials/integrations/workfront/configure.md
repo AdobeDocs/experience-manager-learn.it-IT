@@ -26,4 +26,4 @@ ht-degree: 11%
 Scopri come configurare l’integrazione di Adobe Workfront e Assets Essentials.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/336254?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423886?quality=12&learn=on&captions=ita)

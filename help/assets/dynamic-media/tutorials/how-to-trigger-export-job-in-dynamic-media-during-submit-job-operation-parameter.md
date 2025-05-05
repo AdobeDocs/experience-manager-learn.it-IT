@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Questo video illustra i passaggi per attivare il processo di esportazione in Dynamic Media durante il parametro dell’operazione di invio del processo.
 
->[!VIDEO](https://video.tv.adobe.com/v/335454?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417838?quality=12&learn=on&captions=ita)

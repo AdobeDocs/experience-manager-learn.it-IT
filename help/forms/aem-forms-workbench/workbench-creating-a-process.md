@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Breve video che illustra la creazione di un semplice processo di modulo in Workbench
 
->[!VIDEO](https://video.tv.adobe.com/v/3429494/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440233/?learn=on&captions=ita)

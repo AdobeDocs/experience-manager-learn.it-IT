@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Breve introduzione alla funzione di pulizia delle revisioni online, che riduce la necessità di eseguire frequenti operazioni di pulizia delle revisioni offline.
 
->[!VIDEO](https://video.tv.adobe.com/v/17004?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36345?quality=12&learn=on&captions=ita)
 
 ## Materiali di supporto
 

@@ -24,7 +24,7 @@ ht-degree: 2%
 
 Timewarp è una funzione di Adobe Experience Manager Sites che offre agli autori un modo rapido per rivedere lo stato di una pagina in un momento specifico nel passato.
 
->[!VIDEO](https://video.tv.adobe.com/v/17453?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410306?quality=12&learn=on&captions=ita)
 
 ## Altre risorse {#more-resources}
 

@@ -21,7 +21,7 @@ ht-degree: 0%
 
 I miglioramenti apportati al visualizzatore Dynamic Media di AEM consentono agli autori di AEM di definire e personalizzare il modo in cui le risorse vengono presentate agli utenti del sito web.
 
->[!VIDEO](https://video.tv.adobe.com/v/17783?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327258?quality=12&learn=on&captions=ita)
 
 Alcuni miglioramenti importanti includono:
 

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video descrive il processo di modifica del timeout della transazione di un server applicazioni nel servizio PDFG di Forms.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335555?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417602?quality=12&learn=on&captions=ita)

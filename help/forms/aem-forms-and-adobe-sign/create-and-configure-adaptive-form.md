@@ -22,7 +22,7 @@ ht-degree: 3%
 
 Il video seguente illustra i passaggi necessari per creare e configurare un modulo adattivo per la generazione automatica di un documento record. Il video illustra inoltre i passaggi necessari per configurare un modulo adattivo per attivare un flusso di lavoro AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/38348?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327816?quality=12&learn=on&captions=ita)
 
 ## Passaggi successivi
 

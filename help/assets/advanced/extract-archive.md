@@ -23,4 +23,4 @@ ht-degree: 5%
 
 Scopri come padroneggiare una gestione efficiente delle risorse digitali in AEM Assets con il nostro video informativo che mostra la funzione Extract ZIP (Estrai ZIP) per organizzare e caricare facilmente le gerarchie di risorse direttamente in DAM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426368/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447150/?learn=on&captions=ita)

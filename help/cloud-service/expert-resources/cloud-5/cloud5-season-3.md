@@ -31,7 +31,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
     <tr>
         <td>
             <a href="./season-3/cloud5-3rd-party-search.md">
-                <img alt="Ricerca di terze parti" src="https://video.tv.adobe.com/v/3427040?format=jpeg"/>
+                <img alt="Ricerca di terze parti" src="https://video.tv.adobe.com/v/3452624?format=jpeg&captions=ita"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-3rd-party-search.md">
@@ -45,7 +45,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
         </td>   
         <td>
             <a href="./season-3/cloud5-edge-workers.md">
-                <img alt="Lavoratori Edge" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
+                <img alt="Lavoratori Edge" src="https://video.tv.adobe.com/v/3448141?format=jpeg&captions=ita"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-edge-workers.md">
@@ -59,7 +59,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
         </td>   
         <td>
             <a href="./season-3/cloud5-publish-events.md">
-                <img alt="Publish, annulla la pubblicazione di eventi in Edge Delivery Services" src="https://video.tv.adobe.com/v/3427681?format=jpeg"/>
+                <img alt="Publish, annulla la pubblicazione di eventi in Edge Delivery Services" src="https://video.tv.adobe.com/v/3446664?format=jpeg&captions=ita"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-publish-events.md">
@@ -75,7 +75,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
     <tr>
         <td>
             <a href="./season-3/cloud5-query-indexes.md">
-                <img alt="Indici di query e formule di Excel in Edge Delivery Services" src="https://video.tv.adobe.com/v/3427787?format=jpeg"/>
+                <img alt="Indici di query e formule di Excel in Edge Delivery Services" src="https://video.tv.adobe.com/v/3453771?format=jpeg&captions=ita"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-query-indexes.md">
@@ -89,7 +89,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
         </td>  
         <td>
             <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
-                <img alt="Porta la tua CDN di Cloudflare" src="https://video.tv.adobe.com/v/3428100?format=jpeg"/>
+                <img alt="Porta la tua CDN di Cloudflare" src="https://video.tv.adobe.com/v/3452544?format=jpeg&captions=ita"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
@@ -103,7 +103,7 @@ Ogni stagione varia in lunghezza e viene rilasciata su un programma fisso. Gli a
         </td>           
         <td>
             <a href="./season-3/cloud5-integrate-assets.md">
-                <img alt="Integrare AEM Assets con l’authoring dei documenti" src="https://video.tv.adobe.com/v/3428302?format=jpeg"/>
+                <img alt="Integrare AEM Assets con l’authoring dei documenti" src="https://video.tv.adobe.com/v/3448948?format=jpeg&captions=ita"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-integrate-assets.md">

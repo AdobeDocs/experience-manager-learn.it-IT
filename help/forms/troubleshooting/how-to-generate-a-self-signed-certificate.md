@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per generare un certificato autofirmato.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335539?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417171?quality=12&learn=on&captions=ita)

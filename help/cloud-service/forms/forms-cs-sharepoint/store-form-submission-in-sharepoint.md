@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come configurare e memorizzare i dati dei moduli adattivi in Microsoft Sharepoint.
 
->[!VIDEO](https://video.tv.adobe.com/v/3415793/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452533/?quality=12&learn=on&captions=ita)

@@ -24,7 +24,7 @@ ht-degree: 0%
 Un’app connessa è un framework che consente a un’applicazione esterna di integrarsi con Salesforce utilizzando API e protocolli standard, come SAML, OAuth e OpenID Connect. Le app collegate utilizzano questi protocolli per autenticare, autorizzare e fornire Single Sign-On (SSO) per le app esterne.
 <!--- 331757 was the old video -->
 
->[!VIDEO](https://video.tv.adobe.com/v/3447257?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447265?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >Assicurarsi di creare un account in [Salesforce Developer Edition](https://developer.salesforce.com/signup) in quanto le API REST sono abilitate per impostazione predefinita nell&#39;edizione per sviluppatori.

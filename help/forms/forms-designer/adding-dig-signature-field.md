@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Breve video che descrive l’aggiunta di firme digitali ad AEM Forms
 
->[!VIDEO](https://video.tv.adobe.com/v/3427623/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439534/?learn=on&captions=ita)

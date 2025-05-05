@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra il processo di modifica dei parametri delle prestazioni di Workbench.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335511?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417196?quality=12&learn=on&captions=ita)

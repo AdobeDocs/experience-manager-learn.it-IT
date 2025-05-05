@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per configurare i localizzatori di falsi in un cluster ed eseguire la configurazione correlata.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335544?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417181?quality=12&learn=on&captions=ita)

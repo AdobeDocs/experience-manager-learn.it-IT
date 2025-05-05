@@ -23,13 +23,13 @@ ht-degree: 0%
 
 Parte 1 - Aggiunta di titoli, immagini, campi di testo e campi data
 
->[!VIDEO](https://video.tv.adobe.com/v/3427620/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439734/?learn=on&captions=ita)
 
 Parte 2 - Aggiunta e creazione di oggetti personalizzati e frammenti di modulo
 
->[!VIDEO](https://video.tv.adobe.com/v/3427621/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439589/?learn=on&captions=ita)
 
 Accesso al contenuto dell’Aiuto
 
->[!VIDEO](https://video.tv.adobe.com/v/3427622/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437242/?learn=on&captions=ita)
 

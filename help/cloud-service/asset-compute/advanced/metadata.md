@@ -30,7 +30,7 @@ I casi d’uso comuni includono:
 
 ## Come procedere
 
->[!VIDEO](https://video.tv.adobe.com/v/327313?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437019?quality=12&learn=on&captions=ita)
 
 In questo tutorial verrà creato un processo di lavoro sui metadati di Asset Compute che deriva i colori più comunemente utilizzati in una risorsa di immagine e riscrive i nomi dei colori nei metadati della risorsa in AEM. Anche se il processo di lavoro è di base, questo tutorial lo utilizza per esplorare come i processi di lavoro di Asset Compute possono essere utilizzati per riscrivere i metadati nelle risorse in AEM as a Cloud Service.
 

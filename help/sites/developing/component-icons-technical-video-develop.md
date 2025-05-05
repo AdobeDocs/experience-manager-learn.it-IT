@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Le icone dei componenti consentono agli autori di identificare rapidamente un componente con icone o abbreviazioni significative. Gli autori possono ora individuare i componenti necessari per creare le proprie esperienze web in modo più rapido che mai.
 
->[!VIDEO](https://video.tv.adobe.com/v/16778?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41681?quality=12&learn=on&captions=ita)
 
 Il browser Componenti ora visualizza in un tema grigio coerente, con i seguenti elementi:
 

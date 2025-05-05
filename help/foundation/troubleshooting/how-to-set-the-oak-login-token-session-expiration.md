@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per impostare la scadenza della sessione del token di accesso di Oak.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335468?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418253?quality=12&learn=on&captions=ita)

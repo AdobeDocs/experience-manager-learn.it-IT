@@ -21,7 +21,7 @@ ht-degree: 5%
 
 Il lettore video AEM Dynamic Media, utilizzato per supportare lo streaming video adattivo su client desktop e browser, era più aggressivo nello streaming di contenuti basati su flash. Con l’introduzione di HLS (HTTP Live Streaming video delivery protocol di Apple), il contenuto può ora essere inviato in streaming senza ricorrere al flash.
 
->[!VIDEO](https://video.tv.adobe.com/v/16791?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41666?quality=12&learn=on&captions=ita)
 
 ## Ricerca rapida in Video Player non Flash {#quick-look-into-non-flash-video-player}
 

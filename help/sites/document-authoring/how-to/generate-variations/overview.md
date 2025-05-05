@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Introduzione a Generare varianti in Edge Delivery Services e informazioni su come può essere utile agli esperti di marketing.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428304/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438562/?learn=on&captions=ita)

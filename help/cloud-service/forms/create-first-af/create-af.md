@@ -23,4 +23,4 @@ ht-degree: 13%
 
 Crea un modulo adattivo e associalo al tema creato.
 
->[!VIDEO](https://video.tv.adobe.com/v/332237?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424909?quality=12&learn=on&captions=ita)

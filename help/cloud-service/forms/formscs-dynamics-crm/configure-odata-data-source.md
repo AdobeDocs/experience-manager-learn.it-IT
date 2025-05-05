@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Il video seguente illustra i passaggi necessari per creare la configurazione dei servizi cloud per la connessione a Microsoft Dynamics.
 
->[!VIDEO](https://video.tv.adobe.com/v/340758?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448306?quality=12&learn=on&captions=ita)

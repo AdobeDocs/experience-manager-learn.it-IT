@@ -23,4 +23,4 @@ ht-degree: 1%
 Un account di archiviazione Azure contiene tutti gli oggetti dati di archiviazione Azure, inclusi BLOB, condivisioni di file, code, tabelle e dischi. L’account di archiviazione fornisce uno spazio dei nomi univoco per i dati di archiviazione di Azure, accessibile da qualsiasi parte del mondo tramite HTTP o HTTPS. I dati dell&#39;account di storage sono duraturi e altamente disponibili, sicuri e ampiamente scalabili.
 Il video seguente illustra il processo di configurazione dell’account di archiviazione di Azure.
 
->[!VIDEO](https://video.tv.adobe.com/v/340127?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343721?quality=12&learn=on&captions=ita)

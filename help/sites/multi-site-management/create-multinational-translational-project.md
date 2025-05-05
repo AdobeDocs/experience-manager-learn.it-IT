@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come creare, modificare e gestire un progetto di traduzione multilingue per la copia in lingua dalla console dei progetti AEM
 
->[!VIDEO](https://video.tv.adobe.com/v/36485?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326747?quality=12&learn=on&captions=ita)

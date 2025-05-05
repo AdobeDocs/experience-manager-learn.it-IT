@@ -20,7 +20,7 @@ ht-degree: 0%
 
 La [!UICONTROL Panoramica del sistema] di Adobe Experience Manager (AEM) fornisce una panoramica di alto livello della configurazione, dell&#39;hardware e dello stato dell&#39;istanza di AEM, il tutto da un singolo dashboard.
 
->[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327265?quality=12&learn=on&captions=ita)
 
 1. È possibile accedere alla panoramica del sistema da: **AEM Start** > **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Panoramica del sistema]**
 

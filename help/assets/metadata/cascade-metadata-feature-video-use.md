@@ -23,7 +23,7 @@ ht-degree: 0%
 
 La gestione avanzata dei metadati consente agli utenti di creare regole di campi a cascata per creare relazioni contestuali tra i metadati in AEM Assets. Il video seguente illustra nuove regole dinamiche per requisiti di campo, visibilità e scelte contestuali. Il video illustra inoltre i passaggi necessari affinché un amministratore possa applicare queste regole a uno schema di metadati personalizzato.
 
->[!VIDEO](https://video.tv.adobe.com/v/20702?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/347043?quality=12&learn=on&captions=ita)
 
 Per un determinato campo di metadati è possibile abilitare tre set di regole dinamiche:
 

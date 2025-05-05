@@ -20,7 +20,7 @@ ht-degree: 5%
 
 Questo articolo approfondisce le modalità di accesso ai registri in AEM as a Cloud Service, incluso come accedervi tramite l’interfaccia utente e dalle API.
 
->[!VIDEO](https://video.tv.adobe.com/v/341156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448486?quality=12&learn=on&captions=ita)
 
 ## Contenuto trattato in questo video
 

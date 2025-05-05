@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per modificare il valore dell&#39;entropia.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335494?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437686?quality=12&learn=on&captions=ita)

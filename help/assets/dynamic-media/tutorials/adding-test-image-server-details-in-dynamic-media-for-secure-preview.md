@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Questo video illustra come aggiungere i dettagli di un server immagini di prova (filtri IP del client) in Dynamic Media per un’anteprima protetta tramite l’app Dynamic Media Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/335462?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418277?quality=12&learn=on&captions=ita)

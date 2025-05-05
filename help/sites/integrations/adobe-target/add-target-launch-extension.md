@@ -26,7 +26,7 @@ Per seguire questo video, devi avere già [tag integrati in Adobe Experience Pla
 
 Scopri come abilitare Adobe Target al tuo sito web AEM utilizzando i tag.
 
->[!VIDEO](https://video.tv.adobe.com/v/41247?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329010?quality=12&learn=on&captions=ita)
 
 ## Passaggi successivi
 

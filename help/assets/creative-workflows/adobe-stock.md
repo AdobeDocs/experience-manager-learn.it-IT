@@ -21,7 +21,7 @@ ht-degree: 1%
 
 AEM 6.4.2 consente agli utenti di cercare, visualizzare in anteprima, salvare e concedere in licenza le risorse Adobe Stock direttamente da AEM. Le organizzazioni possono ora integrare il piano aziendale di Adobe Stock con AEM Assets per garantire che le risorse concesse in licenza siano ora ampiamente disponibili per i loro progetti creativi e di marketing, con le potenti funzionalità di gestione delle risorse di AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/24678?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327280?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ L’integrazione tra Adobe Stock e AEM Assets consente agli autori di contenuti 
 
 AEM 6.4.2 consente agli utenti di cercare, visualizzare in anteprima, salvare e concedere in licenza le risorse Adobe Stock direttamente da AEM. Questo video illustra brevemente come configurare Adobe Stock con AEM Assets utilizzando la console Adobe I/O.
 
->[!VIDEO](https://video.tv.adobe.com/v/25043?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329675?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >

@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi per incorporare i tipi di carattere per Forms e le conversioni dei servizi di output.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335496?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436482?quality=12&learn=on&captions=ita)

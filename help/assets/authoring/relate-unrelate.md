@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Scopri come stabilire e gestire le relazioni tra le risorse in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/331107?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346825?quality=12&learn=on&captions=ita)

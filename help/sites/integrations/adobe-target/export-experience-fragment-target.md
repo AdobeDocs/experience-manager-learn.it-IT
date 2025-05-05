@@ -24,7 +24,7 @@ ht-degree: 3%
 
 Scopri come esportare i frammenti di esperienza di AEM come offerte di Adobe Target.
 
->[!VIDEO](https://video.tv.adobe.com/v/41245?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328977?quality=12&learn=on&captions=ita)
 
 ## Passaggi successivi
 

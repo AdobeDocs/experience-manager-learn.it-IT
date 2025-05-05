@@ -23,7 +23,7 @@ Scopri come usare il servizio di importazione in blocco di AEM as a Cloud Servic
 
 
 
->[!VIDEO](https://video.tv.adobe.com/v/336969?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453287?quality=12&learn=on&captions=ita)
 
 ## Utilizzo del servizio di importazione in blocco
 

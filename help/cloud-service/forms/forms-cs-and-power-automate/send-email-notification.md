@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Invia una notifica e-mail a un mittente di moduli adattivi con Microsoft Power Automate estraendo i valori dei campi dall’invio del modulo.
 
->[!VIDEO](https://video.tv.adobe.com/v/345957?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431481?quality=12&learn=on&captions=ita)

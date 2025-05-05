@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Il passaggio Invia e-mail è stato introdotto in AEM Forms 6.4. Utilizzando questo passaggio possiamo creare processi aziendali o flussi di lavoro che ti consentiranno di inviare e-mail con o senza allegati. Il video seguente illustra i passaggi per la configurazione del componente Invia e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/21499?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41155?quality=12&learn=on&captions=ita)
 
 Come parte di questo articolo, ti guideremo attraverso il seguente caso d’uso:
 

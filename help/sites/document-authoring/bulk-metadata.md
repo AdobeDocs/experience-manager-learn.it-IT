@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Scopri come vengono gestiti i metadati in blocco nell’authoring dei documenti e come gli autori possono aggiornare i metadati in blocco senza alcuna esperienza tecnica.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425705/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438430/?learn=on&captions=ita)

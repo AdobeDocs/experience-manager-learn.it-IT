@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Questo video illustra il processo di creazione di un profilo video per l’elaborazione di video in Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335382?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417802?quality=12&learn=on&captions=ita)

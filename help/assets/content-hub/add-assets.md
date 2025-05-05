@@ -23,4 +23,4 @@ ht-degree: 0%
 
 Scopri come caricare le risorse, applicare i tag e comprendere il flusso di lavoro di approvazione in Adobe Experience Manager Assets Content Hub.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3450290/?learn=on&captions=ita)

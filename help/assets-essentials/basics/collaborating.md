@@ -23,4 +23,4 @@ ht-degree: 3%
 
 Scopri come collaborare alla gestione delle risorse utilizzando commenti, annotazioni e attività.
 
->[!VIDEO](https://video.tv.adobe.com/v/335856?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418446?quality=12&learn=on&captions=ita)

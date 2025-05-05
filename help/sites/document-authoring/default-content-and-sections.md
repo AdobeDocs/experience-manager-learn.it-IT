@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Approfondisci i concetti di authoring dei documenti relativi alle sezioni e ai contenuti predefiniti e scopri come questi consentono di creare un sito migliore.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425702/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437983/?learn=on&captions=ita)

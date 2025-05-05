@@ -24,7 +24,7 @@ Scopri le nozioni di base sullo sviluppo dei servizi OSGi, tra cui:
 + Come convertire un Java POJO in un servizio OSGi
 + Associare un servizio OSGi a un’interfaccia Java
 
->[!VIDEO](https://video.tv.adobe.com/v/335476?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417186?quality=12&learn=on&captions=ita)
 
 ## Riferimenti
 

@@ -25,7 +25,7 @@ Scopri come utilizzare le funzioni di importazione ed esportazione dei metadati 
 
 ## Esportazione metadati {#metadata-export}
 
->[!VIDEO](https://video.tv.adobe.com/v/22132?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326988?quality=12&learn=on&captions=ita)
 
 >[!TIP]
 >
@@ -45,7 +45,7 @@ Scopri come utilizzare le funzioni di importazione ed esportazione dei metadati 
 
 ## Importazione metadati {#metadata-import}
 
->[!VIDEO](https://video.tv.adobe.com/v/21374?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413184?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >

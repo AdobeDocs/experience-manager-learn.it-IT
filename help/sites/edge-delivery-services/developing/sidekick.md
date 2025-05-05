@@ -23,4 +23,4 @@ ht-degree: 6%
 
 Utilizza AEM Sidekick in Edge Delivery Services per trasmettere i contenuti in diretta.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425715/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441294/?learn=on&captions=ita)

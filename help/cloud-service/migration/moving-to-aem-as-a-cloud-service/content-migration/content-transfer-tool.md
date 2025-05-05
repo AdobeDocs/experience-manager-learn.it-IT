@@ -22,7 +22,7 @@ ht-degree: 3%
 
 Scopri come lo strumento Content Transfer consente di migrare i contenuti ad AEM as a Cloud Service da AEM 6.3+.
 
->[!VIDEO](https://video.tv.adobe.com/v/336970?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454755?quality=12&learn=on&captions=ita)
 
 ## Utilizzo dello strumento Content Transfer (Trasferimento contenuti)
 

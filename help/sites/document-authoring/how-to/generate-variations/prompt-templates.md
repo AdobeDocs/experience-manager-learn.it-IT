@@ -24,5 +24,5 @@ ht-degree: 0%
 
 Scopri come utilizzare i modelli di prompt per Generare varianti nell’authoring dei documenti di Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428307/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441340/?learn=on&captions=ita)
 

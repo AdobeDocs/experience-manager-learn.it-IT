@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Il video seguente descrive il caso d’uso
 
->[!VIDEO](https://video.tv.adobe.com/v/3427096?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443504?learn=on&captions=ita)
 
 
 Per seguire questa esercitazione, si consiglia di avere accesso ai seguenti

@@ -35,7 +35,7 @@ Gli spazi dei nomi possono essere utilizzati per indicare l’ambito e l’inten
 
 Gli spazi dei nomi personalizzati vengono gestiti negli script [Sling Repository Initialization (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html), distribuiti in AEM as a Cloud Service come configurazioni OSGi e aggiunti al progetto [AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) `ui.config`.
 
->[!VIDEO](https://video.tv.adobe.com/v/3412319?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3416846?quality=12&learn=on&captions=ita)
 
 ## Riferimenti
 

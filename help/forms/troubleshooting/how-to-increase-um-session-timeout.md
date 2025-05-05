@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *Questo video illustra il processo di aumento del timeout della sessione di messaggistica unificata.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335503?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417652?quality=12&learn=on&captions=ita)

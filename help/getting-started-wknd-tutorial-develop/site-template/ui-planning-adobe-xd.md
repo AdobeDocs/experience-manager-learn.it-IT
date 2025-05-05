@@ -41,7 +41,7 @@ In questo capitolo vengono esaminati due file Adobe XD, uno per il [modello di s
 
 ## Kit interfaccia utente modello sito standard {#standard-site-template-uikit}
 
->[!VIDEO](https://video.tv.adobe.com/v/338680?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448438?quality=12&learn=on&captions=ita)
 
 Passaggi di alto livello:
 
@@ -51,7 +51,7 @@ Passaggi di alto livello:
 
 ## Kit interfaccia WKND {#wknd-ui-kit}
 
->[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36172?quality=12&learn=on&captions=ita)
 
 Passaggi di alto livello:
 

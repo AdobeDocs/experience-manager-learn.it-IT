@@ -24,5 +24,5 @@ ht-degree: 0%
 
 Scopri come salvare i modelli di prompt personalizzati per Generate Variations (Genera varianti) nell’authoring dei documenti di Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428317/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437515/?learn=on&captions=ita)
 

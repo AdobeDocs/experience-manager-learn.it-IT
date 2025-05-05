@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Il video seguente illustra i passaggi necessari per creare e configurare il modello dati del modulo.
 
->[!VIDEO](https://video.tv.adobe.com/v/340790?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444800?quality=12&learn=on&captions=ita)

@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Guida alla configurazione dell&#39;authoring dei documenti per gli autori.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425699/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438870/?learn=on&captions=ita)

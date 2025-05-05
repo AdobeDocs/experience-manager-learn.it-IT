@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per abilitare l&#39;anteprima di PDF in Designer.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335500?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417686?quality=12&learn=on&captions=ita)

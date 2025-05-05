@@ -20,4 +20,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi per reimpostare la password predefinita per l&#39;amministratore in AEM Forms JEE.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335541?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417718?quality=12&learn=on&captions=ita)

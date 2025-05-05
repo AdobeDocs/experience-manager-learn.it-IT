@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Dai un’occhiata alla struttura e ai sottoprogetti di un progetto AEM Maven e a cosa serve.
 
->[!VIDEO](https://video.tv.adobe.com/v/334280?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417166?quality=12&learn=on&captions=ita)

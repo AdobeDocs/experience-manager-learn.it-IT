@@ -28,4 +28,4 @@ In questo video:
 + Scopri come eseguire query GraphQL sugli endpoint
 + Come pubblicare gli endpoint di GraphQL
 
->[!VIDEO](https://video.tv.adobe.com/v/333339?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445031?quality=12&learn=on&captions=ita)

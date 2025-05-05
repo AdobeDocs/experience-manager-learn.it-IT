@@ -24,7 +24,7 @@ AEM espone una varietà di endpoint HTTP che possono essere interagiti in modo h
 
 In questo tutorial, esplora come un’applicazione esterna può autenticare e interagire a livello di programmazione con AEM as a Cloud Service tramite HTTP utilizzando i token di accesso.
 
->[!VIDEO](https://video.tv.adobe.com/v/330460?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410080?quality=12&learn=on&captions=ita)
 
 ## Prerequisiti
 

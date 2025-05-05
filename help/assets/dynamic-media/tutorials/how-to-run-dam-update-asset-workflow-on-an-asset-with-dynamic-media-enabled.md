@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Questo video illustra il processo per eseguire il flusso di lavoro Aggiorna risorsa DAM su una risorsa con Dynamic Media abilitato.
 
->[!VIDEO](https://video.tv.adobe.com/v/335456?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418271?quality=12&learn=on&captions=ita)

@@ -23,7 +23,7 @@ ht-degree: 4%
 
 Scopri come configurare una tua rete CDN Cloudflare in Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428100/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452544/?quality=12&learn=on&captions=ita)
 
 ## Risorse aggiuntive
 

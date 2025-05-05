@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Scopri come creare e testare un’attività di Adobe Target utilizzando le offerte dei frammenti di esperienza di AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/41246?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328969?quality=12&learn=on&captions=ita)
 
 ## Prerequisiti
 

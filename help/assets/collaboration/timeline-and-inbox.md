@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Acquisisci familiarità con le console web chiave in AEM Assets utilizzate per la collaborazione.
 
->[!VIDEO](https://video.tv.adobe.com/v/32051?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36878?quality=12&learn=on&captions=ita)

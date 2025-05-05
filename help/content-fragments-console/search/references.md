@@ -23,4 +23,4 @@ ht-degree: 2%
 
 Scopri in che modo la console e l’editor dei frammenti di contenuto di AEM semplificano la comprensione e la gestione dei contenuti di riferimento.
 
->[!VIDEO](https://video.tv.adobe.com/v/3420950/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423639/?learn=on&captions=ita)

@@ -85,4 +85,4 @@ In caso di problemi durante la creazione delle funzioni personalizzate, puoi [sc
 ## Utilizzo delle funzioni personalizzate
 
 Il video seguente illustra i passaggi necessari per utilizzare la funzione personalizzata nell’editor di regole di un modulo adattivo
->[!VIDEO](https://video.tv.adobe.com/v/340305?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445849?quality=12&learn=on&captions=ita)

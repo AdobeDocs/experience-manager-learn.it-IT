@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Questo video illustra i passaggi per creare predefiniti per immagini in Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335459?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418241?quality=12&learn=on&captions=ita)

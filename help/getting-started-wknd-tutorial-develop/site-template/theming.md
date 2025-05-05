@@ -39,7 +39,7 @@ Questo è un tutorial in più parti e si presume che i passaggi descritti nel ca
 
 Quindi, apporta modifiche alle sorgenti del tema in modo che il sito corrisponda all’aspetto del marchio WKND.
 
->[!VIDEO](https://video.tv.adobe.com/v/332918?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453628?quality=12&learn=on&captions=ita)
 
 Passaggi di alto livello per il video:
 

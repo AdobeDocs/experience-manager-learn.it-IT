@@ -27,4 +27,4 @@ ht-degree: 86%
 
 Comprendi le best practice e l’integrazione continua nell’utilizzo di Adobe Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/330536?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345851?quality=12&learn=on&captions=ita)

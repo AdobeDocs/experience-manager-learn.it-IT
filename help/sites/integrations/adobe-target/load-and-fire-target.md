@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Scopri come caricare, trasmettere parametri alla richiesta di pagina e attivare una chiamata Target dalla pagina del sito utilizzando una regola di tag. Le informazioni della pagina web vengono recuperate e trasmesse come parametri utilizzando Adobe Client Data Layer, che consente di raccogliere e archiviare dati sull’esperienza dei visitatori in una pagina web e quindi di semplificare l’accesso a tali dati.
 
->[!VIDEO](https://video.tv.adobe.com/v/41243?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329002?quality=12&learn=on&captions=ita)
 
 ## Regola di caricamento pagina
 

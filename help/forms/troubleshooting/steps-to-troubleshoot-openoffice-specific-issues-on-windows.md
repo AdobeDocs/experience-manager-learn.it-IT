@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra il processo di risoluzione dei problemi relativi a errori specifici di OpenOffice in una configurazione di Windows.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335481?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417647?quality=12&learn=on&captions=ita)

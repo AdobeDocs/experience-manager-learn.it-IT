@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Miglioramenti all’Editor temi per i moduli adattivi in AEM 6.3
 
->[!VIDEO](https://video.tv.adobe.com/v/19497?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327011?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >

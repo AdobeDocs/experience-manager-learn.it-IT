@@ -22,7 +22,7 @@ ht-degree: 3%
 Per richiedere un mutuo o aprire un nuovo conto bancario è necessario compilare e firmare più moduli. L’integrazione tra AEM Forms e Acrobat Sign semplifica la compilazione e la firma di più moduli.
 Il video seguente illustra il caso d’uso della firma di più moduli.
 
->[!VIDEO](https://video.tv.adobe.com/v/330165?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444976?quality=12&learn=on&captions=ita)
 
 ## Prerequisiti
 

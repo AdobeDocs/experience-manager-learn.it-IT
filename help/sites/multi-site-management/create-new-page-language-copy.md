@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come creare una pagina in una copia in lingua esistente e tradurre il contenuto in un’altra copia in lingua.
 
->[!VIDEO](https://video.tv.adobe.com/v/36682?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41553?quality=12&learn=on&captions=ita)

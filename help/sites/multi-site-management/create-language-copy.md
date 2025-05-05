@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come creare una copia in lingua per il tuo sito AEM utilizzando la procedura guidata Crea copia in lingua.
 
->[!VIDEO](https://video.tv.adobe.com/v/36483?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41611?quality=12&learn=on&captions=ita)

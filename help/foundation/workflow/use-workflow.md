@@ -22,7 +22,7 @@ ht-degree: 0%
 
 AEM Workflow consente di collaborare, gestire ed elaborare i contenuti in AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/27848?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410288?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >

@@ -23,15 +23,15 @@ Configura il pannello Persone aggiungendo il frammento dei dettagli del coniuge.
 
 **Configurare il pannello Persone in AEM Forms 6.3 e 6.4**
 
->[!VIDEO](https://video.tv.adobe.com/v/22193?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326926?quality=12&learn=on&captions=ita)
 
 **Configurare il pannello Persone in AEM Forms 6.5 e versioni successive**
 
->[!VIDEO](https://video.tv.adobe.com/v/28385?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326942?quality=12&learn=on&captions=ita)
 
 **Regole dettagli coniuge**
 
->[!VIDEO](https://video.tv.adobe.com/v/22195?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326934?quality=12&learn=on&captions=ita)
 
 ## Passaggi successivi
 

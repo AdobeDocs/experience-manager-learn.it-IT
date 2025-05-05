@@ -20,4 +20,4 @@ ht-degree: 3%
 
 Scopri in che modo l’editor dei frammenti di contenuto di AEM semplifica l’individuazione dei frammenti di contenuto mediante un filtro rapido. Con questa funzione, trovare frammenti di contenuto specifici diventa rapido e semplice.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419311/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436964/?learn=on&captions=ita)

@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per risolvere i problemi relativi alle prestazioni in AEM.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335472?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418313?quality=12&learn=on&captions=ita)

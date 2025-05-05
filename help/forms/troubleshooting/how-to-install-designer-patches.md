@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra il processo di installazione delle patch di Designer.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335504?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417617?quality=12&learn=on&captions=ita)

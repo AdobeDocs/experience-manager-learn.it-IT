@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per forzare la ricompilazione di tutti gli script Sling JSP, Java e Sightly.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335464?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418259?quality=12&learn=on&captions=ita)

@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Scopri come gestire e organizzare le pagine web in Adobe Experience Manager utilizzando i tag.
 
->[!VIDEO](https://video.tv.adobe.com/v/32150?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36828?quality=12&learn=on&captions=ita)

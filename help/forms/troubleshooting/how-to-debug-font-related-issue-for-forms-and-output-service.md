@@ -21,4 +21,4 @@ ht-degree: 0%
 
 *Questo video illustra il processo di acquisizione dei materiali collaterali per eseguire il debug del problema relativo ai tipi di carattere con le conversioni del servizio Forms e Output.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335487?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439912?quality=12&learn=on&captions=ita)

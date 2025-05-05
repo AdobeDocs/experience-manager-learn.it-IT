@@ -29,7 +29,7 @@ Creare due cartelle denominate (FormTemplates e BankingApplication).È possibile
 
 Per sincronizzare queste risorse nel progetto AEM utilizzando IntelliJ e lo strumento Repo, guarda il seguente video
 
->[!VIDEO](https://video.tv.adobe.com/v/336937?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448630?quality=12&learn=on&captions=ita)
 
 ## Passaggi successivi
 

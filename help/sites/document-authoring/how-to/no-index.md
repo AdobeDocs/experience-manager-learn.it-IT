@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Scopri come evitare che le pagine web create utilizzando AEM document authoring vengano indicizzate dai motori di ricerca.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425726/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438124/?learn=on&captions=ita)

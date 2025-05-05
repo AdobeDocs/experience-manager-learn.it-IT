@@ -22,4 +22,4 @@ ht-degree: 0%
 
 *Questo video illustra i passaggi necessari per abilitare l&#39;anteprima di HTML in Designer.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335498?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417216?quality=12&learn=on&captions=ita)

@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Scopri come controllare i documenti creati con AEM Document Authoring.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425722/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437719/?learn=on&captions=ita)

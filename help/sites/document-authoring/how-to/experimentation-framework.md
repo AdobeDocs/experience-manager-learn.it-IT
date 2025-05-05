@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Esplora il framework di sperimentazione che consente agli addetti al marketing di testare quali varianti di contenuto sono più efficaci nell’authoring dei documenti Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429061/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437862/?learn=on&captions=ita)

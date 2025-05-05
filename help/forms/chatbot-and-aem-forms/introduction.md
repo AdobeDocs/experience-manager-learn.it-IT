@@ -26,7 +26,7 @@ Ai fini di questa esercitazione, verranno uniti i dati acquisiti in ChatBot con 
 
 Il video seguente illustra il caso d’uso.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428432?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441800?learn=on&captions=ita)
 
 ## Prerequisito
 

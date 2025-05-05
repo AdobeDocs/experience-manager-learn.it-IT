@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Project Masters semplifica notevolmente la gestione di utenti e team con [!DNL AEM Projects].
 
->[!VIDEO](https://video.tv.adobe.com/v/17740?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410331?quality=12&learn=on&captions=ita)
 
 Gli amministratori ora possono creare un **[!DNL Master Project]** e assegnare gli utenti a ruoli/autorizzazioni come parte di un team di progetto. I progetti possono essere creati da un progetto principale ed ereditano automaticamente l’iscrizione Team. Questo offre diversi vantaggi:
 

@@ -533,7 +533,7 @@ Un esempio completo di scrittura di un renderer di riferimenti personalizzato è
 
 ## Esempio completo
 
->[!VIDEO](https://video.tv.adobe.com/v/342105?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449708?quality=12&learn=on&captions=ita)
 
 >[!NOTE]
 >
