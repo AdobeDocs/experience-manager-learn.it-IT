@@ -28,7 +28,7 @@ Una moderna API di distribuzione dei contenuti è fondamentale per l’efficienz
 
 Per superare queste sfide, GraphQL fornisce un’API basata su query che consente ai client di eseguire query su AEM solo per il contenuto di cui hanno bisogno e di ricevere utilizzando una singola chiamata API.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452887?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/328618?quality=12&learn=on)
 
 Questo video offre una panoramica dell’API GraphQL implementata in AEM. L’API GraphQL in AEM è progettata principalmente per distribuire i Frammenti di contenuto AEM alle applicazioni a valle come parte di una distribuzione headless.
 
@@ -36,7 +36,7 @@ Questo video offre una panoramica dell’API GraphQL implementata in AEM. L’AP
 >id="aemcloud_learn_headless_graphql_overview"
 >title="Guida introduttiva ad AEM Headless: GraphQL"
 >abstract="Scopri come distribuire frammenti di contenuto utilizzando GraphQL."
->additional-url="https://video.tv.adobe.com/v/3452887/?captions=ita" text="Panoramica di GraphQL in AEM"
+>additional-url="https://video.tv.adobe.com/v/328618/?captions=ita" text="Panoramica di GraphQL in AEM"
 
 ## Serie video GraphQL headless di AEM
 
