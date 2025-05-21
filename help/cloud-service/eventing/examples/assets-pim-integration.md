@@ -12,7 +12,7 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: ab499385a1df8c4b0ac58b6a382faa29b262e3ba
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 0%
@@ -57,8 +57,8 @@ Per completare questa esercitazione, è necessario:
 
 Le fasi di sviluppo di alto livello sono:
 
-1. [Modernizzazione dell&#39;ambiente AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#modernization-of-aem-as-a-cloud-service-environment)
-1. [Abilitare l&#39;accesso alle API di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access)
+1. [Modernizzazione dell&#39;ambiente AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#modernization-of-aem-as-a-cloud-service-environment)
+1. [Abilitare l&#39;accesso alle API di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis#enable-aem-apis-access)
 1. [Creare un progetto in Adobe Developer Console (ADC)](./runtime-action.md#Create-project-in-Adobe-Developer-Console)
 1. [Inizializzare il progetto per lo sviluppo locale](./runtime-action.md#initialize-project-for-local-development)
 1. Configurare il progetto in ADC
@@ -221,7 +221,7 @@ Per il codice completo, fai riferimento al file [WKND-Assets-PIM-Integration.zip
         'Content-Type': 'application/json-patch+json',
         'If-Match': '*',
         'X-Adobe-Accept-Experimental': '1',
-        'X-Api-Key': 'aem-assets-management-api', // temporary value
+        'X-Api-Key': '12345676', // Use the `ClientID` value from the ADC Project's credentials section
         Authorization: `Bearer ${access_token}`,
       },
       body: JSON.stringify(transformedMetadata),
@@ -293,7 +293,7 @@ Per il codice completo, fai riferimento al file [WKND-Assets-PIM-Integration.zip
 
 Per impostazione predefinita, il progetto WKND Sites non dispone dello schema metadati risorse per visualizzare i metadati specifici PIM come SKU, Nome fornitore, ecc. Creiamo e applichiamo lo schema di metadati di risorse a una cartella di risorse nell’istanza di AEM.
 
-1. Accedi all&#39;istanza di AEM as a Cloud Service Asset e accedi alla [visualizzazione risorse](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/authoring/switch-views).
+1. Accedi all&#39;istanza di AEM as a Cloud Service Asset e accedi alla [visualizzazione risorse](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views).
 
    ![Vista AEM Assets](../assets/examples/assets-pim-integration/aem-assets-view.png)
 
