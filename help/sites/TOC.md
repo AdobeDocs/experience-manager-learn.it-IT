@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 17aa4aeb053a0bc0beca5e005185c49cf7a06a67
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 18%
+source-wordcount: '594'
+ht-degree: 22%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 18%
 # Video e tutorial su AEM Sites {#sites}
 
 + [Panoramica](overview.md)
-+ Authoring di documenti {#document-authoring}
++ Authoring dei documenti {#document-authoring}
    + [Panoramica](document-authoring/overview.md)
    + [Configurazione](document-authoring/set-up.md)
    + [Anteprima e pubblicazione](document-authoring/preview-and-publish.md)
@@ -28,7 +28,7 @@ ht-degree: 18%
    + [Metadati in blocco](document-authoring/bulk-metadata.md)
    + [Metadati pagina](document-authoring/page-metadata.md)
    + [Autenticazione autore](document-authoring/author-authentication.md)
-   + Come{#how-to}
+   + Procedura{#how-to}
       + [Audit del documento](./document-authoring/how-to/document-audit.md)
       + [Autorizzazioni documento](./document-authoring/how-to/document-permissions.md)
       + [Versioni del documento](./document-authoring/how-to/document-versions.md)
@@ -41,7 +41,7 @@ ht-degree: 18%
       + [Migrazione del sito tramite Importazione](./document-authoring/how-to/migration-using-importer.md)
       + [Personalizzazione dell’importazione](./document-authoring/how-to/customizing-importer.md)
       + [Importazione in blocco tramite Importazione](./document-authoring/how-to/bulk-importing-using-importer.md)
-      + Genera varianti{#generate-variations}
+      + Generare varianti{#generate-variations}
          + [Panoramica](./document-authoring/how-to/generate-variations/overview.md)
          + [Configurare Sidekick](./document-authoring/how-to/generate-variations/configure-sidekick.md)
          + [Modelli di richiesta](./document-authoring/how-to/generate-variations/prompt-templates.md)
@@ -73,12 +73,12 @@ ht-degree: 18%
    + [Sistema di stili](page-authoring/style-system-feature-video-use.md)
    + [Timewarp  ](page-authoring/timewarp-feature-video-use.md)
    + [Lanci](page-authoring/launches.md)
-   + Scopri Dai Tuoi Colleghi {#expert-advice}
+   + Impara Dai Tuoi Colleghi {#expert-advice}
       + [Suggerimenti gerarchia siti](page-authoring/expert-advice/site-hierarchy.md)
 + Intelligenza artificiale generativa {#generative-ai}
    + [Generare varianti](./generative-ai/generate-variations.md)
 + Frammenti di contenuto {#content-fragments}
-   + [Console Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=it){target=_blank}
+   + [Console Frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [Authoring dei frammenti di contenuto](content-fragments/content-fragments-feature-video-use.md)
    + [Distribuzione di frammenti di contenuto](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [Traduzione di frammenti di contenuto](content-fragments/content-fragments-translation-feature-video-use.md)
@@ -86,10 +86,10 @@ ht-degree: 18%
 + Frammenti di esperienza {#experience-fragments}
    + [Utilizzo di Frammenti esperienza](experience-fragments/experience-fragments-feature-video-use.md)
    + [Blocchi predefiniti](experience-fragments/building-blocks.md)
-   + [Frammenti di contenuto e frammenti di esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=it){target=_blank}
+   + [Frammenti di contenuto e frammenti di esperienza](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [Panoramica](./edge-delivery-services/overview.md)
-   + Sviluppo di {#developing}
+   + Sviluppo{#developing}
       + [Prerequisiti](edge-delivery-services/developing/prerequisites.md)
       + [AEM boilerplate](edge-delivery-services/developing/aem-boilerplate.md)
       + [Archivio dei contenuti](edge-delivery-services/developing/content-repository.md)
@@ -118,9 +118,9 @@ ht-degree: 18%
 + Sviluppo {#developing}
    + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [Archetipo progetto AEM](developing/aem-project-archetype.md)
-   + [Guida introduttiva ad AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it){target=_blank}
+   + [Guida introduttiva di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it){target=_blank}
    + [Guida introduttiva di AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it){target=_blank}
-   + [Guida introduttiva dell&#39;Editor SPA di AEM e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=it){target=_blank}
+   + [Guida introduttiva dell&#39;Editor SPA di AEM e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
    + [Estensione delle proprietà di pagina](developing/page-properties-technical-video-develop.md)
    + [Punti di interruzione reattivi](developing/responsive-breakpoints.md)
    + [Sviluppo con il sistema di stili](developing/style-system-technical-video-understand.md)
@@ -131,7 +131,7 @@ ht-degree: 18%
    + [Condivisione sui social media](developing/social-media-sharing-technical-video-use.md)
    + [Personalizzazione delle icone dei componenti](developing/component-icons-technical-video-develop.md)
 + Personalizzazione {#personalization}
-   + [Integrazione con Adobe Target](https://helpx.adobe.com/it/marketing-cloud/how-to/aem-target.html){target=_blank}
+   + [Integrazione con Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html){target=_blank}
    + [Configurare Frammenti esperienza e Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Utilizzo di Frammenti di esperienza con Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [Configura ContextHub](personalization/context-hub-technical-video-setup.md)
@@ -144,7 +144,7 @@ ht-degree: 18%
    + [Sitemap](./seo/sitemaps.md)
 + Applicazioni a pagina singola {#spa-editor}
    + [Utilizzo dell’Editor SPA](spa-editor/spa-editor-framework-feature-video-use.md)
-   + [Guida introduttiva dell&#39;Editor SPA di AEM e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=it){target=_blank}
+   + [Guida introduttiva dell&#39;Editor SPA di AEM e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html){target=_blank}
 + Gestione multisito {#multi-site-management}
    + [Introduzione alla copia per lingua](./multi-site-management/language-copy-overview.md)
    + [Live Copy e blueprint](./multi-site-management/live-copy-and-blueprint.md)
@@ -179,7 +179,7 @@ ht-degree: 18%
    + Adobe Client Data Layer {#adobe-client-data-layer}
       + [Utilizzo di Adobe Client Data Layer](integrations/adobe-client-data-layer/data-layer-overview.md)
       + [Personalizzare Adobe Client Data Layer](integrations/adobe-client-data-layer/data-layer-customize.md)
-   + Analytics {#analytics}
+   + Analisi {#analytics}
       + [Raccogliere dati di pagina con Adobe Analytics](integrations/analytics/collect-data-analytics.md)
       + [Tracciare il componente su cui è stato fatto clic con Adobe Analytics](integrations/analytics/track-clicked-component.md)
       + [Analizzare i dati con Analysis Workspace](integrations/analytics/create-analytics-workspace.md)
@@ -192,8 +192,9 @@ ht-degree: 18%
       + [Creare attività Target tramite le offerte dei frammenti di esperienza](integrations/adobe-target/create-target-activity.md)
       + [Personalization con Compositore esperienza visivo](integrations/adobe-target/personalization-using-vec.md)
       + [Personalization dell’esperienza di pagina web completa](integrations/adobe-target/personalization-web-page.md)
-+ Scopri Dai Tuoi Colleghi {#expert-resources}
++ Impara Dai Tuoi Colleghi {#expert-resources}
    + [Panoramica](expert-resources/learn-from-your-peers-overview.md)
+   + [Guida Alla Creazione In AEM Sites](expert-resources/authoring-guide-in-sites.md)
    + [Valutazione della maturità di AEM Sites](expert-resources/maturity-assessment.md)
    + [Manutenzione sito](expert-resources/site-maintenance.md)
    + [Suggerimenti e trucchi per i campioni di AEM: prima sessione](expert-resources/champion-tips-1.md)
