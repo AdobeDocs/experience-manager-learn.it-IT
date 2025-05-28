@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: c4a961fb-e440-4f78-b40d-e8049078b3c0
 duration: 307
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: b395b3b84e63fe6c24e597d1628f4aed5ba47469
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -30,7 +30,7 @@ In questo capitolo vengono apportate modifiche di configurazione al progetto __W
 
 ## Panoramica delle modifiche alla configurazione nel progetto AEM full stack
 
->[!VIDEO](https://video.tv.adobe.com/v/3453617?quality=12&learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3409419?quality=12&learn=on)
 
 ## Prerequisiti {#prerequisites}
 
@@ -94,7 +94,7 @@ Per l’esecuzione di un test, sono disponibili tre modifiche di configurazione 
            }),
        new CopyWebpackPlugin({
            patterns: [
-               { from: path.resolve(__dirname, SOURCE_ROOT + '/resources'), to: './clientlib-site' }
+               { from: path.resolve(__dirname, SOURCE_ROOT + '/resources'), to: './theme' }
            ]
        })
    ...
@@ -195,7 +195,7 @@ Infine, invia queste modifiche all’archivio Git Adobe del programma.
 
 ## Attenzione: _pulsante Abilita pipeline front-end_
 
-L&#39;opzione [Sito](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=it) del selettore della barra[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html?lang=it) mostra il pulsante **Abilita pipeline front-end** quando selezioni la directory principale del sito o la pagina del sito.  Facendo clic sul pulsante **Abilita pipeline front-end**, verranno ignorate le **configurazioni Sling precedenti**. Assicurarsi che **non si faccia clic su questo pulsante** dopo aver distribuito le modifiche precedenti tramite l&#39;esecuzione della pipeline Cloud Manager.
+L&#39;opzione [Sito](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) del selettore della barra](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/basic-handling.html) mostra il pulsante **Abilita pipeline front-end** quando selezioni la directory principale del sito o la pagina del sito. [ Facendo clic sul pulsante **Abilita pipeline front-end**, verranno ignorate le **configurazioni Sling precedenti**. Assicurarsi che **non si faccia clic su questo pulsante** dopo aver distribuito le modifiche precedenti tramite l&#39;esecuzione della pipeline Cloud Manager.
 
 ![Pulsante Abilita pipeline front-end](assets/enable-front-end-Pipeline-button.png)
 
