@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Scopri come BambooHR ha utilizzato l’intelligenza artificiale per identificare e correggere i backlink interrotti, portando a un aumento del 4% del traffico organico.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459238/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461995/?learn=on&enablevpops&captions=ita)

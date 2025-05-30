@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Scopri in che modo l’Assistente all’intelligenza artificiale di AEM semplifica la ricerca delle conoscenze sui prodotti e automatizza la creazione di ticket di supporto.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459225/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461928/?learn=on&enablevpops&captions=ita)

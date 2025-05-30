@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Scopri in che modo i metadati favoriscono flussi di lavoro, ricerche e informazioni approfondite e come l’automazione può arricchire i metadati per allinearli agli standard del marchio.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459218/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461973/?learn=on&enablevpops&captions=ita)

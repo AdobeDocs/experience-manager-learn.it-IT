@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Scopri come IA per la gestione dei contenuti consente di creare varianti di contenuto coinvolgenti in modo rapido ed efficiente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459227/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461885/?learn=on&enablevpops&captions=ita)
