@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Scopri come utilizzare AEM Assets Content Hub per gestire e condividere facilmente le risorse del brand approvate, consentendo ai team di eseguire campagne di marketing più rapidamente che mai.
 
->[!VIDEO](https://video.tv.adobe.com/v/3457638/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3463065/?learn=on&enablevpops&captions=ita)
