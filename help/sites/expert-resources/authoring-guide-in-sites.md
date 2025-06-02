@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Brett Birschbach, AEM Champion, condivide alcune best practice per la creazione di una guida all’authoring live all’interno di Sites Adobe Experience Manager (AEM).
 
->[!VIDEO](https://video.tv.adobe.com/v/3459572/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3463141/?learn=on&enablevpops&captions=ita)
