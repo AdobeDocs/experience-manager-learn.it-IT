@@ -12,7 +12,7 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: 34a22580db6dc32b5c4c5945af83600be2e0a852
+source-git-commit: 9a5d811cf92a09da27057f99e1b6b2ed8df2a414
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 1%
@@ -139,9 +139,9 @@ Per recuperare i metadati di una risorsa specifica, sono necessari i valori `buc
 
 ### Richiama l’API tramite il browser
 
-Prima di sviluppare l&#39;applicazione, richiamiamo l&#39;API utilizzando la funzionalità **Prova** nella [documentazione API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/).
+Prima di sviluppare l&#39;applicazione, richiamiamo l&#39;API utilizzando la funzionalità **Prova** nella [documentazione API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/author/).
 
-1. Apri la [documentazione dell&#39;API Assets Author](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/) nel browser.
+1. Apri la [documentazione dell&#39;API Assets Author](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/author/) nel browser.
 
 1. Espandi la sezione _Metadati_ e fai clic sull&#39;opzione **Distribuisce i metadati della risorsa specificata**.
 
